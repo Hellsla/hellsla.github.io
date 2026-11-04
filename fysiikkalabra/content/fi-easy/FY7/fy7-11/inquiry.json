@@ -1,0 +1,393 @@
+{
+  "version": 1,
+  "contribution": "Taitekerroin riippuu aallonpituudesta (dispersio). Prisma hajottaa valkoisen valon spektriksi, ja poikkeamakulma on $\\delta = \\alpha_1 + \\alpha_4 - A$. Sateenkaari syntyy, kun valo taittuu pisaraan, heijastuu sen takapinnasta ja taittuu ulos: $\\theta = 4\\beta - 2\\alpha$. Punainen näkyy noin $42^\\circ$:n ja violetti $40{,}6^\\circ$:n kulmassa vastapisteestä. Simulaatiolla opiskelija huomaa, että violetti poikkeaa aina eniten ja että värien ero kasvaa huippukulman mukana.",
+  "learn": [
+    "selittämään, miksi prisma hajottaa valkoisen valon ja mikä väri taittuu eniten.",
+    "laskemaan eri värien taitekulmia ja prisman poikkeamakulmia taitekertoimien avulla.",
+    "selittämään, miten sateenkaari syntyy ja miksi punainen on sen ulkoreunalla."
+  ],
+  "prior": [
+    "Valo taittuu rajapinnassa taittumislain $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ mukaan, ja $n = c : v$ (luku *Valon heijastuminen ja taittuminen*)",
+    "Näkyvän valon aallonpituudet ovat noin $400$–$700\\,\\text{nm}$, ja $c = f\\lambda$ (luku *Sähkömagneettinen säteily ja mustan kappaleen spektri*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kesäsateen jälkeen taivaalla on sateenkaari. Sen ulkoreuna on punainen ja sisäreuna violetti. Joskus sen ulkopuolella näkyy toinen, himmeämpi kaari. Samat värit näkyvät, kun aurinko paistaa lasiprisman tai kattokruunun kristallin läpi. Sadepisarat ja lasi ovat värittömiä, ja auringonvalo on valkoista.",
+      "question": "Mistä sateenkaaren värit tulevat, ja miksi ne ovat aina samassa järjestyksessä?"
+    },
+    {
+      "id": "kertaus-taittuminen",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: taittuminen",
+      "prompt": "Valo tulee ilmasta vinosti lasilevyn pintaan. Mitä valon kulkusuunnalle tapahtuu rajapinnassa?",
+      "choices": [
+        {
+          "text": "Se taittuu kohti pinnan normaalia, koska valo hidastuu lasissa.",
+          "correct": true,
+          "feedback": "Oikein. Lasin taitekerroin on suurempi kuin ilman taitekerroin. Siksi yhtälöstä $\\sin\\alpha_1 = n \\sin\\alpha_2$ saadaan taitekulmaksi pienempi kulma kuin tulokulma (luku *Valon heijastuminen ja taittuminen*). Tässä luvussa näet, että taitekerroin on hieman eri suuri eri väreille."
+        },
+        {
+          "text": "Se taittuu poispäin pinnan normaalista, koska lasi on tiheämpää kuin ilma.",
+          "feedback": "Taittumislain $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ mukaan kulma normaaliin on pienempi aineessa, jonka taitekerroin on suurempi. Siksi valo taittuu kohti normaalia (luku *Valon heijastuminen ja taittuminen*)."
+        },
+        {
+          "text": "Se jatkaa suoraan samaan suuntaan, koska lasi on läpinäkyvää.",
+          "feedback": "Läpinäkyvyys tarkoittaa, että valo pääsee läpi. Suunta muuttuu silti, koska valo hidastuu lasissa ja taittuu kohti normaalia. Vain valo, joka tulee kohtisuoraan pintaan, jatkaa suoraan (luku *Valon heijastuminen ja taittuminen*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-vari",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: mikä väri poikkeaa eniten?",
+      "prompt": "Kapea valkoisen valon kimppu osuu lasiprisman sivuun, ja prismasta tulee ulos värien viuhka. Mikä väri poikkeaa eniten valkoisen valon alkuperäisestä suunnasta?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Punainen, koska sen aallonpituus on pisin.",
+          "feedback": "Mallin arvot kumoavat tämän. Kun huippukulma on $60^\\circ$ ja tulokulma $50^\\circ$, punainen poikkeaa $38{,}4^\\circ$ ja violetti $39{,}8^\\circ$. Pitkä aallonpituus ei tarkoita suurta taittumista. Lasissa punaisen taitekerroin $1{,}5143$ on pienin, joten punainen taittuu vähiten."
+        },
+        {
+          "text": "Violetti, koska sen taitekerroin lasissa on suurin.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Jokaisella huippukulmalla violetin poikkeamakulma on suurempi kuin punaisen, esimerkiksi $39{,}8^\\circ$ ja $38{,}4^\\circ$, kun huippukulma on $60^\\circ$. Violetin taitekerroin $1{,}5302$ on suurempi kuin punaisen taitekerroin $1{,}5143$, joten violetti taittuu kummassakin pinnassa eniten."
+        },
+        {
+          "text": "Kaikki värit poikkeavat yhtä paljon; prisma vain värjää valon reunat.",
+          "feedback": "Mallin arvot kumoavat tämän. Punaisen ja violetin poikkeamakulmat ovat erilaiset, ja ero kasvaa huippukulman mukana $0{,}53^\\circ$:sta $4{,}4^\\circ$:een. Prisma ei värjää valoa. Se erottaa värit, jotka ovat jo valkoisessa valossa, koska taitekerroin on eri väreille eri suuri."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kaari",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: mistä sateenkaarta etsitään?",
+      "prompt": "On iltapäivä, aurinko paistaa matalalta lännestä, ja jossain lähistöllä sataa. Mihin suuntaan kannattaa katsoa, jos haluaa nähdä sateenkaaren?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet lukenut Teoriatiivistelmän kohdan Ydinajatus."
+      },
+      "choices": [
+        {
+          "text": "Itään, selkä aurinkoon päin, kohti sadetta.",
+          "correct": true,
+          "feedback": "Oikein. Pisaroissa valo heijastuu takapinnasta ja palaa takaisin aurinkoa kohti, kääntyneenä noin $42^\\circ$. Siksi sateenkaari näkyy ympyränä vastapisteen eli oman pään varjon ympärillä, auringon vastakkaisella puolella."
+        },
+        {
+          "text": "Länteen, auringon ympärille, koska valo tulee sieltä.",
+          "feedback": "Pisaroissa valo heijastuu takapinnasta ja palaa takaisin aurinkoa kohti. Jos katsot kohti aurinkoa, pisaroiden heijastama valo menee sinusta poispäin. Sateenkaari näkyy vastapisteen ympärillä, kun seisot selkä aurinkoon päin."
+        },
+        {
+          "text": "Suoraan ylös, koska pisarat putoavat ylhäältä.",
+          "feedback": "Sateenkaaren suunta ei riipu siitä, mistä pisarat putoavat. Se riippuu auringon suunnasta. Pisarat lähettävät kirkkaimman valon noin $42^\\circ$:n kulmassa vastapisteestä. Vastapiste on auringon vastakkaisella puolella horisontin alapuolella."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Kapea valkoisen valon kimppu osuu prismaan pimennetyssä huoneessa. Säädä huippukulmaa, tulokulmaa ja ainetta. Seuraa, kuinka paljon kukin väri poikkeaa.",
+      "howto": "Säädä prisman huippukulmaa $A$ ja tulokulmaa $\\alpha_1$ ja valitse aine. Valkoinen säde tulee vasemmalta. Prismassa se hajoaa seitsemäksi värisäteeksi, jotka näyttävät päällekkäin valkoisilta. Oikealla olevaan varjostimeen osuu spektri. Katkoviivat ovat pintojen normaalit ja tulevan säteen jatke. Värisäteen ja jatkeen välinen kulma on poikkeamakulma. Lukemat-riviltä näet punaisen ($656\\,\\text{nm}$) ja violetin ($405\\,\\text{nm}$) poikkeamakulmat, niiden eron ja taitekertoimet.",
+      "model": "Malli käsittelee valoa säteinä. Kapea kimppu osuu prisman vasemman sivun keskelle. Jokaisen värin suunta lasketaan taittumislaista $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ kummassakin pinnassa. Prisma on ilmassa, ja ilman taitekerroin on $1$. Taitekerroin saadaan käyrästä, joka on sovitettu aineen taulukkoarvoihin. Kruunulasin ja veden punaisen ja violetin taitekertoimet ovat luvun taulukon arvot. Pinnoista heijastuvaa osaa valosta ei piirretä. Jos väri ei pääse ulos toisesta pinnasta, sen säde piirretään heijastuneena takaisin lasiin. Lukemat ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Ensimmäisessä pinnassa $\\sin\\alpha_2 = \\sin\\alpha_1 : n$. Lasin sisällä $\\alpha_3 = A - \\alpha_2$, ja toisessa pinnassa $\\sin\\alpha_4 = n \\sin\\alpha_3$. Poikkeamakulma on\n\n$$\\delta = \\alpha_1 + \\alpha_4 - A$$\n\nja värien ero on $\\Delta\\delta = \\delta_\\text{v} - \\delta_\\text{p}$. Jos $n \\sin\\alpha_3 > 1$, väri ei pääse ulos."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: huippukulma kasvaa",
+      "intro": "Testaa ennuste 1. Prisma on kruunulasia ja tulokulma on $\\alpha_1 = 50^\\circ$. Muuta vain huippukulmaa $A$. Kirjaa ainakin huippukulmat $30^\\circ$, $40^\\circ$, $50^\\circ$, $60^\\circ$ ja $70^\\circ$. Vertaa punaisen ja violetin poikkeamakulmia ja niiden eroa.",
+      "initial": {
+        "A": 30,
+        "a1": 50,
+        "aine": "kruunu"
+      },
+      "locked": [
+        "a1",
+        "aine"
+      ],
+      "vary": "A",
+      "names": {
+        "A": "huippukulma A",
+        "a1": "tulokulma α₁",
+        "aine": "aine"
+      },
+      "units": {
+        "A": "°",
+        "a1": "°"
+      },
+      "values": {
+        "aine": {
+          "kruunu": "kruunulasi"
+        }
+      },
+      "measure": [
+        {
+          "key": "dP",
+          "label": "punaisen poikkeama (°)"
+        },
+        {
+          "key": "dV",
+          "label": "violetin poikkeama (°)"
+        },
+        {
+          "key": "dd",
+          "label": "ero (°)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: tulokulma ja pienin poikkeama",
+      "intro": "Prisma on kruunulasia ja huippukulma on $A = 60^\\circ$. Muuta vain tulokulmaa $\\alpha_1$. Kirjaa ainakin tulokulmat $40^\\circ$, $45^\\circ$, $50^\\circ$, $55^\\circ$, $60^\\circ$, $70^\\circ$ ja $80^\\circ$. Seuraa punaisen poikkeamakulmaa $\\delta_\\text{p}$.",
+      "initial": {
+        "A": 60,
+        "a1": 40,
+        "aine": "kruunu"
+      },
+      "locked": [
+        "A",
+        "aine"
+      ],
+      "vary": "a1",
+      "names": {
+        "A": "huippukulma A",
+        "a1": "tulokulma α₁",
+        "aine": "aine"
+      },
+      "units": {
+        "A": "°",
+        "a1": "°"
+      },
+      "values": {
+        "aine": {
+          "kruunu": "kruunulasi"
+        }
+      },
+      "measure": [
+        {
+          "key": "dP",
+          "label": "punaisen poikkeama (°)"
+        },
+        {
+          "key": "dV",
+          "label": "violetin poikkeama (°)"
+        }
+      ],
+      "min": 4,
+      "question": {
+        "type": "choice",
+        "prompt": "Miten punaisen poikkeamakulma muuttuu, kun tulokulma kasvaa $40^\\circ$:sta $80^\\circ$:een?",
+        "choices": [
+          {
+            "text": "Se pienenee ensin, on pienin noin $50^\\circ$:n kohdalla ja kasvaa sitten.",
+            "correct": true,
+            "feedback": "Oikein. Mallin arvoissa $\\delta_\\text{p}$ on $40{,}0^\\circ$ tulokulmalla $40^\\circ$. Pienimmillään se on $38{,}4^\\circ$ tulokulmalla, joka on noin $49$–$50^\\circ$. Tulokulmalla $80^\\circ$ se on $50{,}3^\\circ$. Pienimmän poikkeaman lähellä tulokulman muutos tuskin muuttaa suuntaa. Sama ilmiö kokoaa sateenkaaren valon yhteen suuntaan."
+          },
+          {
+            "text": "Se kasvaa koko ajan samassa suhteessa kuin tulokulma kasvaa.",
+            "feedback": "Mallin arvot kumoavat tämän. Kun tulokulma kasvaa $40^\\circ$:sta $50^\\circ$:een, poikkeamakulma pienenee $40{,}0^\\circ$:sta $38{,}4^\\circ$:een. Vasta sen jälkeen se kasvaa. Poikkeamakulmalla on pienin arvo."
+          },
+          {
+            "text": "Se pysyy samana, koska prisma ja sen aine eivät muutu.",
+            "feedback": "Mallin arvot kumoavat tämän. $\\delta_\\text{p}$ vaihtelee välillä $38{,}4^\\circ$–$50{,}3^\\circ$. Kun tulokulma muuttuu, muuttuvat myös $\\alpha_2$, $\\alpha_3$ ja $\\alpha_4$. Niiden mukana muuttuu $\\delta = \\alpha_1 + \\alpha_4 - A$."
+          }
+        ]
+      },
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: värit erkanevat",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "Kirjoita taulukkosi perusteella: mikä väri poikkeaa eniten ja mikä vähiten? Miten värien ero $\\Delta\\delta$ muuttuu, kun huippukulma kasvaa? Mistä erot johtuvat? Kokeile lopuksi vapaasti, kuinka suuri ero on flinttilasilla ja vedellä, kun $A = 60^\\circ$ ja $\\alpha_1 = 50^\\circ$.",
+      "model": "Violetti poikkeaa jokaisella huippukulmalla eniten ja punainen vähiten. Esimerkiksi huippukulmalla $60^\\circ$ poikkeamakulmat ovat $39{,}8^\\circ$ ja $38{,}4^\\circ$. Ero kasvaa huippukulman mukana: huippukulmalla $30^\\circ$ se on $0{,}53^\\circ$, huippukulmalla $60^\\circ$ se on $1{,}40^\\circ$ ja huippukulmalla $70^\\circ$ se on $4{,}4^\\circ$.\n\nErot johtuvat siitä, että lasin taitekerroin on violetille suurempi ($1{,}5302$) kuin punaiselle ($1{,}5143$). Siksi violetti taittuu kummassakin pinnassa enemmän. Suurempi huippukulma kasvattaa toisen pinnan tulokulmaa $\\alpha_3$. Kun $\\alpha_3$ lähestyy kokonaisheijastumisen rajakulmaa, kulmien $\\alpha_3$ pieni ero kasvaa suureksi eroksi kulmissa $\\alpha_4$. Siksi ero kasvaa jyrkästi huippukulmien $60^\\circ$ ja $70^\\circ$ välillä. Flinttilasilla ero on $3{,}9^\\circ$ ja vedellä $0{,}85^\\circ$, joten dispersio on aineen ominaisuus. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Kerroin, että violetti poikkeaa eniten ja punainen vähiten, ja tuin sen taulukon arvoilla.",
+        "Kerroin, että värien ero kasvaa huippukulman kasvaessa.",
+        "Selitin eron sillä, että taitekerroin on violetille suurempi kuin punaiselle.",
+        "Totesin, että ero riippuu myös aineesta, esimerkiksi flinttilasissa se on suurempi kuin vedessä."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeen mallin arvoihin ja teoriaan. Palaa sitten alun kysymykseen: miksi sateenkaaren punainen on ulkoreunalla ja violetti sisäreunalla? Ja miksi kaari näkyy vain silloin, kun seisot selkä aurinkoon päin?",
+      "predictions": [
+        "ennuste-vari",
+        "ennuste-kaari"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Violetti valo tulee ilmasta kruunulasiin tulokulmassa $60{,}0^\\circ$. Lasin taitekerroin violetille valolle on $1{,}5302$. Opiskelija laskee taitekulman\n\n$$\\begin{aligned} \\alpha_2 &= \\frac{\\alpha_1}{n} \\\\ &= \\frac{60{,}0^\\circ}{1{,}5302} \\\\ &= 39{,}2^\\circ \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Taittumislaki koskee kulmien sinejä, ei kulmia itse: $\\sin\\alpha_2 = \\sin\\alpha_1 : n$, josta $\\alpha_2 = 34{,}5^\\circ$.",
+          "correct": true,
+          "feedback": "Oikein. $\\sin\\alpha_2 = \\sin 60{,}0^\\circ : 1{,}5302 = 0{,}5660$, joten $\\alpha_2 = 34{,}5^\\circ$. Kulman jakaminen taitekertoimella antaa väärän tuloksen, koska sini ei ole verrannollinen kulmaan, kun kulma on suuri."
+        },
+        {
+          "text": "Taitekerroin olisi pitänyt kertoa eikä jakaa. Silloin taitekulmaksi saadaan $91{,}8^\\circ$.",
+          "feedback": "Taitekulma ei voi olla yli $90^\\circ$. Lisäksi valo taittuu kohti normaalia, kun se tulee lasiin, joten kulman täytyy pienentyä. Virhe on siinä, että taittumislaki koskee sinejä: $\\sin\\alpha_2 = \\sin\\alpha_1 : n$, josta $\\alpha_2 = 34{,}5^\\circ$."
+        },
+        {
+          "text": "Laskutapa on oikein, mutta violetille valolle olisi pitänyt käyttää punaisen valon taitekerrointa.",
+          "feedback": "Jokainen väri taittuu oman taitekertoimensa mukaan, joten violetille käytetään arvoa $1{,}5302$. Virhe on laskutavassa: taittumislaki koskee sinejä, $\\sin\\alpha_2 = \\sin\\alpha_1 : n$, josta $\\alpha_2 = 34{,}5^\\circ$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen: värit uima-altaan pohjalla",
+      "prompt": "Auringonvalo tulee tyynen uima-altaan pintaan tulokulmassa $60{,}0^\\circ$. Allas on $2{,}00\\,\\text{m}$ syvä. Punaisen valon taitekerroin vedessä on $1{,}3315$ ja violetin $1{,}3431$. Valo tulee pintaan samasta kohdasta. Kuinka kaukana toisistaan punainen ja violetti valo osuvat altaan pohjaan? Vastaa millimetreinä.",
+      "answer": 25.396,
+      "unit": "mm",
+      "tolerance": 0.02,
+      "hints": [
+        "Laske ensin kummankin värin taitekulma vedessä. Kumpi väri taittuu enemmän?",
+        "Kun taitekulma $\\beta$ tunnetaan, säde etenee syvyydellä $h$ vaakasuunnassa matkan $x = h \\tan\\beta$.",
+        "$\\beta_\\text{p} = 40{,}57^\\circ$ ja $\\beta_\\text{v} = 40{,}15^\\circ$, joten $\\Delta x = 2{,}00\\,\\text{m} \\cdot (\\tan 40{,}57^\\circ - \\tan 40{,}15^\\circ)$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.025396,
+          "feedback": "Tulos on oikein metreinä. Muunna se millimetreiksi: $1\\,\\text{m} = 1000\\,\\text{mm}$."
+        },
+        {
+          "value": 11.23,
+          "feedback": "Käytit sinejä tangenttien sijaan. Vaakasuora matka syvyydellä $h$ on $x = h \\tan\\beta$. Säde, pohja ja pinnan normaali muodostavat suorakulmaisen kolmion, jonka pystysivu on $h$."
+        },
+        {
+          "value": 3464.1,
+          "feedback": "Laskit, mihin valo osuisi, jos se ei taittuisi lainkaan. Laske ensin taitekulmat $\\sin\\beta = \\sin 60{,}0^\\circ : n$. Laske sitten kummankin värin vaakasuora matka $h \\tan\\beta$ ja niiden erotus."
+        }
+      ],
+      "solution": "**Annettu:** tulokulma $\\alpha = 60{,}0^\\circ$, altaan syvyys $h = 2{,}00\\,\\text{m}$, punaisen taitekerroin $n_\\text{p} = 1{,}3315$, violetin $n_\\text{v} = 1{,}3431$\n\n**Kysytty:** punaisen ja violetin osumakohtien etäisyys $\\Delta x$ millimetreinä\n\n**Periaate:** Kumpikin väri taittuu pinnassa taittumislain $\\sin\\alpha = n \\sin\\beta$ mukaan omalla taitekertoimellaan, koska taitekerroin riippuu aallonpituudesta. Vedessä valo kulkee suoraan. Säde, pinnan normaali ja pohja muodostavat suorakulmaisen kolmion, joten vaakasuora matka pohjaan on $x = h \\tan\\beta$.\n\n**Kaava:** $\\sin\\beta = \\dfrac{\\sin\\alpha}{n}$ ja $x = h \\tan\\beta$, joten $\\Delta x = h \\left(\\tan\\beta_\\text{p} - \\tan\\beta_\\text{v}\\right)$\n\n**Muunnokset:** Lopuksi $1\\,\\text{m} = 1000\\,\\text{mm}$.\n\n**Sijoitus:** $\\sin\\beta_\\text{p} = \\dfrac{\\sin 60{,}0^\\circ}{1{,}3315} = 0{,}65041$, joten $\\beta_\\text{p} = 40{,}573^\\circ$; $\\sin\\beta_\\text{v} = \\dfrac{\\sin 60{,}0^\\circ}{1{,}3431} = 0{,}64480$, joten $\\beta_\\text{v} = 40{,}150^\\circ$. $\\Delta x = 2{,}00\\,\\text{m} \\cdot (0{,}85628 - 0{,}84358) = 0{,}02540\\,\\text{m} = 25\\,\\text{mm}$\n\n**Vastaus:** noin $25\\,\\text{mm}$. Vastauksessa on kaksi merkitsevää numeroa, koska tulos on kahden lähes yhtä suuren luvun erotus, jossa merkitseviä numeroita häviää.\n\n**Järkevyys:** Violetti taittuu enemmän, joten se osuu lähemmäs pinnan tulokohtaa, ja ero on positiivinen. Kumpikin väri etenee vaakasuunnassa noin $2{,}00\\,\\text{m} \\cdot 0{,}85 \\approx 1{,}7\\,\\text{m}$. Ero on alle $2\\,\\%$ tästä, mikä sopii taitekertoimien pieneen eroon. Siksi pohjalla näkyy kapeita värireunoja."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 2 tehtävissä yhdistetään kaksi vaihetta, kuten taittumislaki ja prisman geometria. Taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite: miksi prisma hajottaa valon",
+      "prompt": "Valkoinen valo kulkee lasiprisman läpi ja hajoaa spektriksi. Mikä selittää värien erottumisen?",
+      "choices": [
+        {
+          "text": "Lasin taitekerroin on eri aallonpituuksille eri suuri, joten värit taittuvat eri kulmiin.",
+          "correct": true,
+          "feedback": "Oikein. Taitekerroin riippuu aallonpituudesta (dispersio). Violetin taitekerroin on suurin, joten violetti taittuu eniten. Prisman vinot pinnat kasvattavat värien kulmaeroa."
+        },
+        {
+          "text": "Lasi muuttaa valkoisen valon aallonpituuksia, jolloin syntyy uusia värejä.",
+          "feedback": "Lasi ei tee uusia värejä. Rajapinnassa valon taajuus ja siis väri pysyvät samoina. Värit ovat valmiina valkoisessa valossa, ja prisma erottaa ne, koska taitekerroin on eri väreille eri suuri."
+        },
+        {
+          "text": "Värit erottuvat, kun valo heijastuu monta kertaa edestakaisin prisman sisäpinnoista.",
+          "feedback": "Prismassa säde taittuu kahdesti: sisään tullessa ja ulos lähtiessä. Heijastuminen ei erota värejä, koska heijastuslaki on sama kaikille väreille. Värit erottuvat taittumisessa, koska taitekerroin riippuu aallonpituudesta."
+        },
+        {
+          "text": "Punainen valo kulkee ilmassa nopeammin kuin violetti, joten punainen ehtii prismaan ensin.",
+          "feedback": "Ilmassa kaikki värit kulkevat käytännössä samalla nopeudella. Ero syntyy lasissa, jossa violetti hidastuu enemmän. Siksi violetin taitekerroin on suurempi ja violetti taittuu eniten."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske: punainen ja violetti vedessä",
+      "prompt": "Veden taitekerroin on punaiselle valolle $1{,}3315$ ja violetille valolle $1{,}3431$. Kuinka paljon suurempi punaisen valon nopeus vedessä on kuin violetin valon nopeus? Vastaa kilometreinä sekunnissa.",
+      "answer": 1945.94,
+      "unit": "km/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Valon nopeus aineessa saadaan taitekertoimesta. Millä kaavalla?",
+        "$v = c : n$, missä $c = 3{,}00 \\cdot 10^8\\,\\text{m/s}$. Laske kummankin värin nopeus ja vähennä.",
+        "Pidä välituloksissa kuusi numeroa: $v_\\text{p} = 225\\,310\\,\\text{km/s}$ ja $v_\\text{v} = 223\\,364\\,\\text{km/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2000,
+          "feedback": "Pyöristit nopeudet liian aikaisin, esimerkiksi $225\\,000\\,\\text{km/s}$ ja $223\\,000\\,\\text{km/s}$. Kun lasketaan kahden lähes yhtä suuren luvun erotus, välitulokset pitää pitää tarkkoina: $225\\,310\\,\\text{km/s} - 223\\,364\\,\\text{km/s}$."
+        },
+        {
+          "value": 1945940,
+          "feedback": "Tulos on oikein metreinä sekunnissa. Muunna se kilometreiksi sekunnissa: $1\\,\\text{km/s} = 1000\\,\\text{m/s}$."
+        }
+      ],
+      "solution": "**Annettu:** punaisen taitekerroin $n_\\text{p} = 1{,}3315$, violetin $n_\\text{v} = 1{,}3431$, valon nopeus tyhjiössä $c = 3{,}00 \\cdot 10^8\\,\\text{m/s}$\n\n**Kysytty:** nopeuksien erotus $\\Delta v = v_\\text{p} - v_\\text{v}$ kilometreinä sekunnissa\n\n**Periaate:** Taitekerroin kertoo, kuinka monta kertaa hitaammin valo kulkee aineessa kuin tyhjiössä, $n = c : v$. Taitekerroin riippuu aallonpituudesta, joten punaisella ja violetilla on vedessä eri nopeudet.\n\n**Kaava:** $n = \\dfrac{c}{v}$, josta $v = \\dfrac{c}{n}$, ja $\\Delta v = \\dfrac{c}{n_\\text{p}} - \\dfrac{c}{n_\\text{v}}$\n\n**Muunnokset:** $c = 3{,}00 \\cdot 10^8\\,\\text{m/s} = 3{,}00 \\cdot 10^5\\,\\text{km/s}$, koska $1\\,\\text{km} = 1000\\,\\text{m}$.\n\n**Sijoitus:** $v_\\text{p} = \\dfrac{3{,}00 \\cdot 10^5\\,\\text{km/s}}{1{,}3315} = 225\\,310\\,\\text{km/s}$ ja $v_\\text{v} = \\dfrac{3{,}00 \\cdot 10^5\\,\\text{km/s}}{1{,}3431} = 223\\,364\\,\\text{km/s}$, joten $\\Delta v = 225\\,310\\,\\text{km/s} - 223\\,364\\,\\text{km/s} = 1946\\,\\text{km/s}$\n\n**Vastaus:** $1{,}95 \\cdot 10^3\\,\\text{km/s}$. Vastauksessa on kolme merkitsevää numeroa, koska valon nopeudessa $3{,}00 \\cdot 10^8\\,\\text{m/s}$ on kolme.\n\n**Järkevyys:** Ero on noin $1\\,\\%$ nopeudesta, koska myös taitekertoimet eroavat noin prosentin: $1{,}3431 : 1{,}3315 \\approx 1{,}009$. Punainen on nopeampi, koska sen taitekerroin on pienempi."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: sateenkaaren värien järjestys",
+      "prompt": "Selitä, miten sateenkaari syntyy vesipisaroissa. Selitä myös, miksi punainen on kaaren ulkoreunalla ja violetti sisäreunalla. Kerro lisäksi, miksi kaaren näkee vain, kun aurinko on selän takana.",
+      "model": "Auringonvalo taittuu pisaraan, heijastuu pisaran takapinnasta ja taittuu ulos. Siksi valo palaa takaisin aurinkoa kohti kääntyneenä. Veden taitekerroin on violetille suurempi kuin punaiselle, joten värit erkanevat taittumisissa. Pisaroista lähtee punaista valoa voimakkaimmin noin $42^\\circ$:n kulmassa ja violettia noin $40{,}6^\\circ$:n kulmassa siihen suuntaan nähden, josta auringonvalo tuli.\n\nKatsojan silmään tulee punaista valoa niistä pisaroista, jotka näkyvät $42^\\circ$:n kulmassa vastapisteestä eli oman pään varjon suunnasta. Violettia valoa tulee pisaroista, jotka näkyvät $40{,}6^\\circ$:n kulmassa. Punaisen ympyrä on suurempi, joten punainen on ulkoreunalla. Valo palaa pisarasta aurinkoa kohti, ja kaaren keskipiste on vastapiste. Siksi kaari näkyy vain, kun seisot selkä aurinkoon päin.",
+      "criteria": [
+        "Kerron, että valo taittuu pisaraan, heijastuu sen takapinnasta ja taittuu ulos.",
+        "Selitän, että veden taitekerroin on violetille suurempi, joten värit lähtevät pisarasta eri kulmissa.",
+        "Kerron, että punainen näkyy noin $42^\\circ$:n kulmassa ja violetti noin $40{,}6^\\circ$:n kulmassa vastapisteestä, joten punainen on ulkoreunalla.",
+        "Perustelen, että kaaren keskipiste on vastapiste auringon vastakkaisella puolella, joten aurinko on selän takana."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

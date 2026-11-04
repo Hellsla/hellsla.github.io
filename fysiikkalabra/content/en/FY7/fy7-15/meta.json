@@ -1,0 +1,22 @@
+{
+  "id": "fy7-15",
+  "course": "FY7",
+  "title": "Polarisation of light",
+  "goals": [
+    "LOPS FY7: polarisation of light, qualitatively",
+    "Clarification: polarisation in a polariser and on reflection from an insulator, Brewster's law"
+  ],
+  "prerequisites": [
+    "fy7-10"
+  ],
+  "glossary": [
+    "polarisaatio",
+    "polarisaattori",
+    "Malusin laki",
+    "Brewsterin laki",
+    "polaroidut aurinkolasit"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

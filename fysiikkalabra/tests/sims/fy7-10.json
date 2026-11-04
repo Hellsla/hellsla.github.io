@@ -1,0 +1,143 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.m1==='ilma' && S.m2==='vesi' && S.alpha1===40 && Math.abs(S.alpha2-28.901085)<1e-4 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: air above, water below, α1 = 40°, α2 = 28,9° (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='0' && R[0].max==='89' && R[0].step==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: α1 0–89° by 1°"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===2 && L[0]==='ilma,vesi,akryyli,lasi,timantti' && L[1]===L[0] ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two selects (material above, below) with air, water, acrylic, glass, diamond"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=k.findIndex(x=>x==='canvas'||/sim-canvas/.test(x)); return c>=0 && c<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='alpha,m1,m2' && P.alpha.unit==='°' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares alpha (°), m1 and m2"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'ilma'); I(L[1],'vesi'); I(R,60);",
+  "expr": "window.simState.beta",
+  "expected": 60,
+  "tol": 0.001,
+  "note": "law of reflection: β = α1 = 60°"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'ilma'); I(L[1],'vesi'); I(R,60);",
+  "expr": "window.simState.alpha2",
+  "expected": 40.6281,
+  "tol": 0.001,
+  "note": "air -> water at 60°: α2 = 40,6°"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'ilma'); I(L[1],'vesi'); I(R,60);",
+  "expr": "window.simState.sin1",
+  "expected": 0.86603,
+  "tol": 0.001,
+  "note": "sin α1 = sin 60° = 0,866"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'ilma'); I(L[1],'vesi'); I(R,60);",
+  "expr": "window.simState.sin2",
+  "expected": 0.65115,
+  "tol": 0.001,
+  "note": "sin α2 = sin 60° : 1,33 = 0,651"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'ilma'); I(L[1],'vesi'); I(R,0);",
+  "expr": "window.simState.R",
+  "expected": 2.0059,
+  "tol": 0.01,
+  "note": "air -> water at normal incidence: about 2,0 % reflects"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'ilma'); I(L[1],'vesi'); I(R,80);",
+  "expr": "window.simState.R",
+  "expected": 34.6916,
+  "tol": 0.01,
+  "note": "at 80° about 35 % reflects (grazing incidence)"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'ilma'); I(L[1],'vesi'); I(R,80);",
+  "expr": "window.simState.R + window.simState.T",
+  "expected": 100,
+  "tol": 0.001,
+  "note": "R + T = 100 %"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'ilma'); I(L[1],'timantti'); I(R,50);",
+  "expr": "window.simState.alpha2",
+  "expected": 18.4542,
+  "tol": 0.001,
+  "note": "air -> diamond at 50°: α2 = 18,5°"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'ilma'); I(L[1],'akryyli'); I(R,50);",
+  "expr": "window.simState.n2",
+  "expected": 1.49,
+  "tol": 0.001,
+  "note": "acrylic n = 1,49"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'ilma'); I(L[1],'lasi'); I(R,50);",
+  "expr": "window.simState.alpha2",
+  "expected": 30.2634,
+  "tol": 0.001,
+  "note": "air -> glass at 50°: α2 = 30,3°"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'vesi'); I(L[1],'ilma'); I(R,30);",
+  "expr": "window.simState.alpha2",
+  "expected": 41.6823,
+  "tol": 0.001,
+  "note": "water -> air at 30°: α2 = 41,7°, away from the normal"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'vesi'); I(L[1],'ilma'); I(R,30);",
+  "expr": "window.simState.n1",
+  "expected": 1.33,
+  "tol": 0.001,
+  "note": "n1 of water 1,33"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'vesi'); I(L[1],'ilma'); I(R,60);",
+  "expr": "(() => { const S=window.simState; return S.tir===true && S.alpha2===null && S.R===100 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "water -> air at 60° (> 48,8°): no refracted ray, all light reflects"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'vesi'); I(L[1],'ilma'); I(R,60);",
+  "expr": "(() => /ei taittunutta sädettä/.test(document.querySelector('#sim-root .readout').textContent) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout says that there is no refracted ray"
+ },
+ {
+  "setup": "const L=[...document.querySelectorAll('#sim-root select')]; const R=document.querySelector('#sim-root input[type=range]'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'lasi'); I(L[1],'lasi'); I(R,35);",
+  "expr": "window.simState.alpha2",
+  "expected": 35,
+  "tol": 0.001,
+  "note": "the same material on both sides: no refraction"
+ }
+]

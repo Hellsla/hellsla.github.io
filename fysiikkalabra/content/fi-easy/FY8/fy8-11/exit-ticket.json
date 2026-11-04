@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Miksi kevytvesireaktorissa neutroneja hidastetaan vedellä?",
+    "a": "Fissiossa syntyvät neutronit ovat nopeita, mutta uraani-235 jakautuu paljon todennäköisemmin hitaan neutronin osuessa. Vesi hidastaa neutroneja, kun ne törmäilevät vetyytimiin. Siksi ketjureaktio voi jatkua, vaikka polttoaineessa on uraani-235:tä vain muutama prosentti."
+  },
+  {
+    "q": "Miksi deuterium–tritium-polttoaine on kuumennettava fuusiovoimalassa noin $1{,}5 \\cdot 10^{8}\\,\\text{K}$:n lämpötilaan?",
+    "a": "Ytimet ovat positiivisesti varattuja ja hylkivät toisiaan. Vain hyvin suurella nopeudella törmäävät ytimet pääsevät niin lähelle toisiaan, että vahva vuorovaikutus yhdistää ne. Suuri nopeus tarkoittaa hyvin korkeaa lämpötilaa."
+  }
+]

@@ -1,0 +1,343 @@
+{
+  "version": 1,
+  "contribution": "Electric power and Ohm's law are applied to safety: the total current of a circuit and its fuse, the heating of a cable, earthing, protection classes, the residual current device (RCD), the current through the body on dry and wet skin, dielectric strength, high-voltage lines and step voltage, and the electrical work a layperson is allowed to do in Finland.",
+  "learn": [
+    "calculate a circuit's total current from the device powers and decide if the fuse's rated current is exceeded.",
+    "calculate the current through the body and compare it with dangerous currents for dry and wet skin.",
+    "explain how earthing, protection classes, the residual current device (RCD) and insulation protect against electric shock."
+  ],
+  "prior": [
+    "Electric power is $P = UI$, and a conductor produces thermal power $P = RI^2$ (chapter *Electric power and the heating of a resistor*)",
+    "In a parallel connection every branch has the same voltage and the currents of the branches add up (chapter *Resistors in series and in parallel*)",
+    "An insulator withstands an electric field only up to its dielectric strength (chapter *The capacitor and its energy*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a Saturday morning in the kitchen, coffee is brewing, the kettle is boiling water for tea, the toaster is on and porridge is heating in the microwave oven. After a moment the kitchen goes dark: one circuit breaker in the fuse board has tripped. No device is broken.",
+      "question": "Why did the circuit breaker trip, and does the same fuse also protect a person from electric shock?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: the current of a device",
+      "optional": true,
+      "prompt": "The power of a kettle is $2000\\,\\text{W}$, and it is plugged into a $230\\,\\text{V}$ socket. How large a current does the kettle draw?",
+      "choices": [
+        {
+          "text": "About $8.7\\,\\text{A}$, because current is power divided by voltage.",
+          "correct": true,
+          "feedback": "Correct. $P = UI$, so $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8.7\\,\\text{A}$ (chapter *Electric power and the heating of a resistor*). Today you calculate what happens when many such devices are on the same circuit."
+        },
+        {
+          "text": "About $0.12\\,\\text{A}$, because current is voltage divided by power.",
+          "feedback": "Voltage divided by power is not current, and its unit is not the ampere. Solve $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8.7\\,\\text{A}$ from $P = UI$ (chapter *Electric power and the heating of a resistor*)."
+        },
+        {
+          "text": "About $2000\\,\\text{A}$, because the current of a device is the same number as its power.",
+          "feedback": "Power and current are different quantities. The same power is obtained with a small current when the voltage is large: $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8.7\\,\\text{A}$ (chapter *Electric power and the heating of a resistor*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: fuse or residual current device?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when you have studied the tables and the Summary of theory is visible."
+      },
+      "prompt": "A person touches the live frame of a faulty device, and a current of $0.1\\,\\text{A}$ flows through them to the ground. The circuit has a $10\\,\\text{A}$ fuse and a $30\\,\\text{mA}$ residual current device (RCD). What cuts off the current?",
+      "choices": [
+        {
+          "text": "The fuse, because the current through the person is dangerously large.",
+          "feedback": "The current is dangerous to a person, but small for a fuse: $0.1\\,\\text{A}$ is one hundredth of the fuse's rated current $10\\,\\text{A}$. A fuse protects the cables from overheating and does not notice the current through a person. The RCD notices that $100\\,\\text{mA}$ does not return along the neutral conductor and cuts off the current."
+        },
+        {
+          "text": "The RCD, because the difference between the currents of the line and neutral conductors is over $30\\,\\text{mA}$.",
+          "correct": true,
+          "feedback": "The theory supports this: an RCD compares the current going to the device with the current returning from it. The $100\\,\\text{mA}$ that goes through the person to the ground is missing from the neutral conductor, and the difference exceeds $30\\,\\text{mA}$. The fuse does not react, because $0.1\\,\\text{A}$ is only one hundredth of its rated current."
+        },
+        {
+          "text": "Both at the same time, because both are made to cut off a dangerous current.",
+          "feedback": "The protective devices are made for different purposes. A fuse cuts off an overcurrent or short circuit that heats the cable, and it does not notice a current of $0.1\\,\\text{A}$, which is one hundredth of its rated current. The small current through a person is cut off by the RCD, which trips at a fault current of about $30\\,\\text{mA}$; a fuse protects a person only together with protective earthing."
+        },
+        {
+          "text": "Neither cuts off the current, because $0.1\\,\\text{A}$ is such a small current.",
+          "feedback": "The current is too small for the fuse, but not for the RCD: it trips when about $30\\,\\text{mA}$ is lost to the ground, and $0.1\\,\\text{A} = 100\\,\\text{mA}$ is over three times that. Flowing through the body, $100\\,\\text{mA}$ is a life-threatening current."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a bird on a conductor",
+      "layout": "models",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when the Summary of theory is visible."
+      },
+      "prompt": "A bird sits on a bare $20\\,\\text{kV}$ conductor and does not get an electric shock. Which explanation is correct?",
+      "choices": [
+        {
+          "text": "The bird's dry feet insulate it from the conductor.",
+          "feedback": "The bird's feet conduct electricity, and the bird sits safe even when wet. What matters is that both feet are at the same potential: there is no voltage between the feet, so no current flows through the bird."
+        },
+        {
+          "text": "There is no voltage between the bird's feet, so no current flows through it.",
+          "correct": true,
+          "feedback": "The theory supports this: a current flows through a body only when the body connects two points at different potentials. The bird's feet are on the same conductor at almost the same potential. If a wing touched another conductor or an earthed pole at the same time, a current would flow through the bird."
+        },
+        {
+          "text": "The current flows entirely in the conductor, because it always chooses the path of least resistance.",
+          "feedback": "In parallel paths the current divides among all the paths and does not choose just one. No significant current flows through the bird because there is no voltage between its feet: the feet are on the same conductor at almost the same potential."
+        },
+        {
+          "text": "A high-voltage conductor has a thin insulating sheath around it that protects the bird.",
+          "feedback": "High-voltage conductors are bare metal conductors, insulated only by the surrounding air. The bird is safe because both its feet are at the same potential, so no current flows through it."
+        }
+      ]
+    },
+    {
+      "id": "keittio",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Which devices fit in the same circuit?",
+      "source": "example",
+      "source_note": "Invented example data: typical powers of home appliances, not a measurement.",
+      "text": "The sockets of a kitchen are on the same circuit, which is protected by a $10\\,\\text{A}$ fuse. The mains voltage is $230\\,\\text{V}$, and the devices are connected in parallel.\n\n| device | $P$ |\n| --- | --- |\n| kettle | $2000\\,\\text{W}$ |\n| coffee maker | $1000\\,\\text{W}$ |\n| microwave oven (input power) | $1200\\,\\text{W}$ |\n| toaster | $900\\,\\text{W}$ |\n| refrigerator | $100\\,\\text{W}$ |\n\nCalculate the current of each device, $I = P : U$. Then find which combinations of two devices fit in the circuit without exceeding the rated current of the fuse, and how large a current would flow if all the devices were on at the same time.",
+      "question": {
+        "type": "numeric",
+        "prompt": "How large a current flows in the circuit cable when the kettle and the microwave oven are on at the same time?",
+        "answer": 13.913043,
+        "unit": "A",
+        "tolerance": 0.02,
+        "hints": [
+          "The devices are in parallel. How do the currents of devices in parallel combine in the circuit cable?",
+          "The current in the circuit cable is the sum of the currents of the devices, that is, the total power divided by the voltage.",
+          "$I = (2000\\,\\text{W} + 1200\\,\\text{W}) : 230\\,\\text{V}$."
+        ],
+        "mistakes": [
+          {
+            "value": 8.695652,
+            "feedback": "This is only the current of the kettle. The current of both devices flows through the fuse: $8.7\\,\\text{A} + 5.2\\,\\text{A} \\approx 13.9\\,\\text{A}$."
+          },
+          {
+            "value": 0.071875,
+            "feedback": "You divided the voltage by the power. Current is power divided by voltage: $3200\\,\\text{W} : 230\\,\\text{V} \\approx 13.9\\,\\text{A}$."
+          }
+        ],
+        "solution": "**Given:** power of the kettle $P_1 = 2000\\,\\text{W}$, input power of the microwave oven $P_2 = 1200\\,\\text{W}$, voltage $U = 230\\,\\text{V}$\n\n**Find:** the current $I$ in the circuit cable in amperes\n\n**Principle:** The devices are connected in parallel, so the voltage across each is $230\\,\\text{V}$ and their currents add up in the circuit cable. The total current is therefore obtained from the total power of the devices.\n\n**Formula:** $I = \\dfrac{P_1 + P_2}{U}$\n\n**Conversions:** None needed: $1\\,\\text{W} : 1\\,\\text{V} = 1\\,\\text{A}$.\n\n**Substitution:** $I = \\dfrac{2000\\,\\text{W} + 1200\\,\\text{W}}{230\\,\\text{V}} = \\dfrac{3200\\,\\text{W}}{230\\,\\text{V}} = 13.91\\,\\text{A}$\n\n**Answer:** $14\\,\\text{A}$, two significant figures like the power $1200\\,\\text{W}$. The current is larger than the rated current of the fuse, $10\\,\\text{A}$, so the circuit is overloaded.\n\n**Reasonableness:** The currents of the devices are $8.7\\,\\text{A}$ and $5.2\\,\\text{A}$, and their sum is the same $13.9\\,\\text{A}$. Each device fits in the circuit alone, but not together. All five devices together would draw $5200\\,\\text{W} : 230\\,\\text{V} \\approx 23\\,\\text{A}$."
+      }
+    },
+    {
+      "id": "iho",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Dry or wet skin?",
+      "source": "example",
+      "source_note": "Invented example data: the resistances of the current path are indicative orders of magnitude. The effect limits are approximate values for the effects of current described in the standard IEC 60479-1.",
+      "text": "A person touches the frame of a faulty device whose voltage relative to the ground is $230\\,\\text{V}$. A current flows from the hand through the body to the feet and the ground. The table gives the resistance of the whole current path in three situations. The first row holds only if the shoes and the floor are dry and undamaged and the person does not touch anything earthed at the same time, such as a tap.\n\n| situation | $R$ |\n| --- | --- |\n| dry hands, rubber-soled shoes, dry floor | $200\\,\\text{k}\\Omega$ |\n| dry hands, bare feet on a dry floor | $20\\,\\text{k}\\Omega$ |\n| wet hands, bare feet on a wet floor | $1.0\\,\\text{k}\\Omega$ |\n\nCalculate the current through the body in each situation, in milliamperes. Compare the currents with the approximate effect limits: a current of about $0.5\\,\\text{mA}$ can be felt, with about $10\\,\\text{mA}$ you may not be able to let go, and from about $50\\,\\text{mA}$ upward the danger of ventricular fibrillation of the heart increases.",
+      "question": {
+        "type": "numeric",
+        "prompt": "How large a current flows through the body in wet conditions? Answer in milliamperes.",
+        "answer": 230.0,
+        "unit": "mA",
+        "tolerance": 0.02,
+        "hints": [
+          "The body is part of the circuit. Which law gives the current when the voltage and the resistance are known?",
+          "$I = U : R$ when the resistance is in ohms: $1.0\\,\\text{k}\\Omega = 1000\\,\\Omega$.",
+          "$I = 230\\,\\text{V} : 1000\\,\\Omega$, and $1\\,\\text{A} = 1000\\,\\text{mA}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.23,
+            "feedback": "The result is in amperes. In milliamperes it is $0.23 \\cdot 1000\\,\\text{mA} = 230\\,\\text{mA}$."
+          },
+          {
+            "value": 230000,
+            "feedback": "You did not convert kilohms to ohms. $1.0\\,\\text{k}\\Omega = 1000\\,\\Omega$, so the current is $0.23\\,\\text{A} = 230\\,\\text{mA}$."
+          }
+        ],
+        "solution": "**Given:** touch voltage $U = 230\\,\\text{V}$, resistance of the current path in wet conditions $R = 1.0\\,\\text{k}\\Omega$\n\n**Find:** the current $I$ through the body in milliamperes\n\n**Principle:** The body is part of the circuit between the frame of the device and the ground, so the current through it is obtained from Ohm's law with the resistance of the whole current path.\n\n**Formula:** $U = RI$, so $I = \\dfrac{U}{R}$\n\n**Conversions:** $R = 1.0\\,\\text{k}\\Omega = 1.0 \\cdot 1000\\,\\Omega = 1000\\,\\Omega$; $1\\,\\text{A} = 1000\\,\\text{mA}$.\n\n**Substitution:** $I = \\dfrac{230\\,\\text{V}}{1000\\,\\Omega} = 0.23\\,\\text{A} = 230\\,\\text{mA}$\n\n**Answer:** $230\\,\\text{mA}$, two significant figures like the resistance $1.0\\,\\text{k}\\Omega$.\n\n**Reasonableness:** The current is more than four times the limit for the danger of ventricular fibrillation, $50\\,\\text{mA}$. With rubber-soled shoes the current would be $230\\,\\text{V} : 200\\,\\text{k}\\Omega = 1.15\\,\\text{mA}$ and with bare feet on a dry floor $11.5\\,\\text{mA}$; in wet conditions the resistance becomes $200$ times smaller, so the current grows $200$-fold. Shoes reduce the current like this only if they are undamaged and dry, the floor is dry and the person does not touch a tap or an earthed device at the same time; otherwise the current bypasses the shoes, and shoes must not be relied on as protection."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what protects the cable, what protects a person?",
+      "prompt": "Write, on the basis of the calculations in the tables: why does the fuse trip even though no device is broken, and why does the same fuse not protect a person? Why does wet skin make an electric shock more dangerous?",
+      "model": "The devices of the circuit are in parallel, so their currents add up in the fuse. The kettle draws $8.7\\,\\text{A}$ and the microwave oven $5.2\\,\\text{A}$; each fits alone in a $10\\,\\text{A}$ circuit, but together the current is $13.9\\,\\text{A}$, so the fuse cuts off the current before the cable overheats. A fuse reacts to currents of amperes, but a current dangerous to a person is tens of milliamperes, one hundredth of the rated current of the fuse. The small current through a person is therefore cut off by the residual current device (RCD). The current through the body is $I = U : R$. When the skin and the floor are wet, the resistance falls from about $200\\,\\text{k}\\Omega$ to about $1\\,\\text{k}\\Omega$, and the current grows from about $1\\,\\text{mA}$ to about $230\\,\\text{mA}$, which is life-threatening. The numbers have been calculated from invented example data.",
+      "criteria": [
+        "The answer says that the currents of devices connected in parallel add up in the fuse, and justifies it with the numbers of the kitchen table.",
+        "The answer explains that a fuse protects the cable from overheating and does not notice a current of milliamperes that is dangerous to a person.",
+        "The answer names a protective device that reacts to currents of milliamperes, for example the residual current device (RCD).",
+        "The answer justifies the danger of wet skin with Ohm's law: smaller resistance, larger current, and compares the current with the effect limits."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the theory and the currents you calculated. Then return to the opening question: why did the kitchen circuit breaker trip, and what protects a person?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student checks whether a kettle ($2000\\,\\text{W}$) and a toaster ($900\\,\\text{W}$) can be used at the same time in a $10\\,\\text{A}$ circuit:\n\n$$\\begin{aligned} I_1 &= \\frac{2000\\,\\text{W}}{230\\,\\text{V}} \\approx 8.7\\,\\text{A} \\\\ I_2 &= \\frac{900\\,\\text{W}}{230\\,\\text{V}} \\approx 3.9\\,\\text{A} \\end{aligned}$$\n\n“Each current is below $10\\,\\text{A}$, so the devices can be on at the same time.” Where is the error?",
+      "choices": [
+        {
+          "text": "The current through the fuse is the sum of the currents, about $12.6\\,\\text{A}$, which exceeds $10\\,\\text{A}$.",
+          "correct": true,
+          "feedback": "Correct. The devices are in parallel and the fuse is at the start of the circuit cable, so the current of both flows through it: $2900\\,\\text{W} : 230\\,\\text{V} \\approx 12.6\\,\\text{A}$. The currents are calculated correctly, but the conclusion compares the wrong current with the fuse."
+        },
+        {
+          "text": "The currents are calculated wrongly: current is voltage divided by power.",
+          "feedback": "The currents are calculated correctly, since $P = UI$ gives $I = P : U$. The error is in the conclusion: the fuse carries the current of both devices, $8.7\\,\\text{A} + 3.9\\,\\text{A} \\approx 12.6\\,\\text{A}$, which exceeds $10\\,\\text{A}$."
+        },
+        {
+          "text": "There are no errors, because each device has its own socket.",
+          "feedback": "Sockets of the same circuit are behind the same circuit cable and the same fuse. The current of all the devices of the circuit together therefore flows through the fuse, here about $12.6\\,\\text{A}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "On a building site, a site heater ($2.0\\,\\text{kW}$) and an angle grinder ($1.4\\,\\text{kW}$) are connected to a $16\\,\\text{A}$ circuit through the same extension cord. The total resistance of the two conductors of the extension cord is $0.60\\,\\Omega$. Assume that the currents of the devices are the same as when they are connected directly to a $230\\,\\text{V}$ socket. How large a thermal power is produced in the extension cord?",
+      "answer": 131.115312,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "The current of both devices flows through the extension cord. How large is it?",
+        "$I = (2000\\,\\text{W} + 1400\\,\\text{W}) : 230\\,\\text{V}$. The thermal power produced in the cord depends on the resistance of the cord and the current.",
+        "$P = RI^2 = 0.60\\,\\Omega \\cdot (14.8\\,\\text{A})^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 8.869565,
+          "feedback": "You calculated $RI$, which is the voltage across the cord in volts, not power. The thermal power is $RI^2$: the current must be squared."
+        },
+        {
+          "value": 45.36862,
+          "feedback": "You used only the current of the heater. The current of both devices together flows through the extension cord, $3400\\,\\text{W} : 230\\,\\text{V} \\approx 14.8\\,\\text{A}$."
+        },
+        {
+          "value": 88166.666667,
+          "feedback": "You used the formula $U^2 : R$ with the mains voltage. The voltage across the extension cord is not $230\\,\\text{V}$ but only a few volts. Calculate the current in the cord from the powers of the devices and use the formula $P = RI^2$."
+        }
+      ],
+      "solution": "**Given:** powers $P_1 = 2.0\\,\\text{kW}$ and $P_2 = 1.4\\,\\text{kW}$, voltage $U = 230\\,\\text{V}$, resistance of the extension cord $R = 0.60\\,\\Omega$\n\n**Find:** the thermal power $P_\\text{c}$ produced in the extension cord\n\n**Principle:** The devices are in parallel at the end of the extension cord, so the sum of their currents flows through the cord, and it is obtained from the total power. In the resistance of the cord, electrical energy is transformed into internal energy at the rate $RI^2$. By the assumption, the small voltage drop in the cord does not change the currents of the devices.\n\n**Formula:** $I = \\dfrac{P_1 + P_2}{U}$ and $P_\\text{c} = RI^2$, so $P_\\text{c} = R\\left(\\dfrac{P_1 + P_2}{U}\\right)^2$\n\n**Conversions:** $P_1 + P_2 = 2.0\\,\\text{kW} + 1.4\\,\\text{kW} = 3.4\\,\\text{kW} = 3.4 \\cdot 1000\\,\\text{W} = 3400\\,\\text{W}$\n\n**Substitution:** $I = \\dfrac{3400\\,\\text{W}}{230\\,\\text{V}} = 14.78\\,\\text{A}$ and $P_\\text{c} = 0.60\\,\\Omega \\cdot (14.78\\,\\text{A})^2 = 131.1\\,\\text{W}$\n\n**Answer:** $130\\,\\text{W}$, two significant figures like the resistance $0.60\\,\\Omega$ and the powers.\n\n**Reasonableness:** The current $14.8\\,\\text{A}$ is below $16\\,\\text{A}$, so the fuse does not trip, but the cord heats with a power of $130\\,\\text{W}$. The voltage across the cord is $0.60\\,\\Omega \\cdot 14.8\\,\\text{A} \\approx 8.9\\,\\text{V}$, small compared with $230\\,\\text{V}$, so the assumption holds. Wound on a reel, a cord cannot cool, so on a building site the cord is unwound from the reel completely."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. In level 1 tasks you calculate the current of a device, the greatest power of a circuit, the current through the body or the thermal power of a cable with one formula; in level 2 tasks you combine two steps or rearrange a formula; level 3 requires reasoning about a fuse, resistances in series and step voltage."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Step voltage",
+      "prompt": "A high-voltage conductor has fallen to the ground in a storm. Why do you move away from it with short steps, feet together?",
+      "choices": [
+        {
+          "text": "The potential of the ground decreases with distance, so a long step puts a large voltage between the feet.",
+          "correct": true,
+          "feedback": "Correct. The current spreads into the ground, and the potential of the ground decreases away from the point of contact. The step voltage between the feet grows with the length of the step, and with the feet together it is almost zero."
+        },
+        {
+          "text": "Fast movement builds up an electric charge in the body, which can discharge to the ground as a spark.",
+          "feedback": "The danger does not come from the speed of movement. The potential of the ground decreases away from the point of contact, and if the feet are at different distances, there is a step voltage between them that drives a current from one foot to the other through the body."
+        },
+        {
+          "text": "The ground is an insulator, so the current flows only where the conductor touches, and short steps keep you far from it.",
+          "feedback": "The ground conducts electricity, and that is exactly why the current spreads over a wide area of ground. The potential of the ground decreases away from the point of contact, and a long step spans two different potentials."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. The sign of a protection class",
+      "layout": "figures",
+      "prompt": "The rating plate of a hair dryer has a sign that tells that the device has double or reinforced insulation and is not earthed. Which sign is it?",
+      "choices": [
+        {
+          "text": "",
+          "figure": "fy6-15/merkki-2",
+          "correct": true,
+          "feedback": "Correct. Two nested squares are the sign of protection class II: double or reinforced insulation separates the live parts from the user, so earthing is not needed."
+        },
+        {
+          "text": "",
+          "figure": "fy6-15/merkki-1",
+          "feedback": "The earth symbol inside a circle means protection class I: the frame of the device is protectively earthed. The sign for double insulation is two nested squares."
+        },
+        {
+          "text": "",
+          "figure": "fy6-15/merkki-3",
+          "feedback": "A diamond with III inside means protection class III: the device works at a protective extra-low voltage. The sign for double insulation is two nested squares."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain protective earthing",
+      "optional": true,
+      "prompt": "Inside a washing machine the insulation of the line conductor has worn, and the conductor touches the metal frame of the machine. Explain how protective earthing and the fuse protect a person who touches the machine. Why is earthing not needed in a protection class II device?",
+      "model": "A washing machine is a protection class I device, so its metal frame is connected to earth with a yellow-green protective earth conductor. When the line conductor touches the frame, a current can flow along the protective earth conductor, whose resistance is very small. The fault current is then large, much larger than the rated current of the fuse, and the fuse cuts off the current quickly. Without earthing, the frame would stay live, and a current would flow to the ground through a person touching the frame. A protection class II device has no touchable conductive parts to which a fault could bring voltage, because double or reinforced insulation separates the live parts from the user.",
+      "criteria": [
+        "The answer says that the protective earth conductor connects the frame to earth and the fault current flows along it.",
+        "The answer explains that the fault current is large, so the fuse cuts off the current.",
+        "The answer says what would happen without earthing: a current would flow through the person.",
+        "The answer justifies the safety of a class II device with double or reinforced insulation."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first and only then open the answer."
+    }
+  ]
+}

@@ -9,8 +9,8 @@ For every language, from the pages that are actually in site/ (so nothing here h
     guide there
   - every row is one link, to its module page, with icon, code, title and the Miksi question (whole in its title),
     the arrow hidden from screen readers; the module page's lesson links all resolve (two clicks to a lesson)
-  - the <title>, og:title and description stay as they were; the header links Näin opiskelet (the study guide, now at
-    the top of Lukuvinkit with the six stages under the lessons' names) and the footer Tietoa sivustosta, which has
+  - the <title>, og:title and description stay as they were; the header links Näin opiskelet and Sivustosta (the study guide, now at
+    the top of Lukuvinkit with the six stages under the lessons' names) and the footer Sivustosta (the teacher's text, content/<lang>/tietoa.md), which has
     the portfolio link the front page no longer has
   - every language link resolves, and a link to a page the other language has not published goes to that
     language's module page, to a note that exists there
@@ -110,6 +110,12 @@ for lang in i18n.languages():
            'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr and T("site.back_to_portfolio") not in ftr and "../index.html" not in ftr, ftr)
     about = (out / "tietoa.html").read_text() if (out / "tietoa.html").is_file() else ""
     expect(f"{lang}: tietoa.html exists and links back to the portfolio", T("site.back_to_portfolio") in about and re.search(r'href="(\.\./)+index\.html"', about))
+    expect(f"{lang}: the front page header links Sivustosta after Lukuvinkit",
+           f'<a class="nav-reading" href="lukuvinkit.html">{_h.escape(T("site.reading_tips"))}</a><a class="nav-about" href="tietoa.html">{_h.escape(T("site.about"))}</a>' in hdr, hdr[-400:])
+    src = next((f for f in (ROOT / "content" / lang / "tietoa.md", ROOT / "content" / "fi" / "tietoa.md") if f.is_file()), None)
+    heads = re.findall(r"^#+ (.+)$", src.read_text(), re.M) if src else []
+    expect(f"{lang}: Sivustosta shows the teacher's text (content/{lang}/tietoa.md) with all its headings and bold parts",
+           bool(heads) and all(_h.escape(h) in about for h in heads) and about.count("<strong>") == src.read_text().count("**") // 2, heads)
     rp = (out / "lukuvinkit.html").read_text()
     guide = re.search(r'<main[^>]*><section class="path" id="nain-opiskelet".*?</section>', rp, re.S)
     stages = re.findall(r"<li><strong>(.*?)</strong>", guide.group(0)) if guide else []
@@ -133,14 +139,24 @@ for lang in i18n.languages():
             hrefs = re.findall(r'href="([^"]+)"', prep.group(1)) if prep else []
             expect(f"{lang} {code}: chapters to prepare with link only published pages ({len(hrefs)})", all((out / h).is_file() for h in hrefs), hrefs)
             expect(f"{lang} {code}: not a national module row", code not in codes)
-            inv = re.search(r'<ol class="lessons local-inv">(.*?)</ol>', pg, re.S)
+            inv = re.search(r'<ol class="lessons ch-cards local-inv bank-list" id="bank-list">(.*?)</ol>', pg, re.S)   # the bank's cards by topic
             ihrefs = re.findall(r'href="([^"]+)"', inv.group(1)) if inv else []
             expect(f"{lang} {code}: listed investigations are published pages that name this course ({len(ihrefs)})",
                    all((out / h).is_file() and code in investigations.load(h[:-5], lang)["courses"] for h in ihrefs), ihrefs)
             if ihrefs:                   # the bank (teacher 2026-10-31): every item carries its filter data, the form starts hidden
-                items = re.findall(r'<li class="live bank-item" data-topic="(\w+)" data-f="([F123 ]+)" data-e="([E123 ]+)" data-mode="([OI ]+)"', inv.group(1))
+                items = re.findall(r'<li class="live ch-card bank-item" data-topic="(\w+)" data-f="([F123 ]+)" data-e="([E123 ]+)" data-mode="([OI ]+)"', inv.group(1))
                 expect(f"{lang} {code}: every investigation in the bank has topic, F, E and modes ({len(items)})", len(items) == len(ihrefs), len(items))
                 expect(f"{lang} {code}: the filter form starts hidden (all shown without scripts)", '<form class="bank-filter" id="bank-filter" hidden' in pg)
+                cards = re.findall(r'<li class="live ch-card bank-item"[^>]*>(.*?)</li>', inv.group(1), re.S)
+                expect(f"{lang} {code}: every investigation is a card with its opening illustration and its question (teacher 2026-11-04)",
+                       len(cards) == len(ihrefs) and all('class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in cards))
+            if local[code].get("chapters"):  # units as cards under the course's chapters (teacher 2026-11-04, scripts/cardgrid.py)
+                uc = re.search(r'<ol class="lessons ch-cards" id="unit-cards">(.*?)</ol>', pg, re.S)
+                live = re.findall(r'<li class="live ch-card">(.*?)</li>', uc.group(1), re.S) if uc else []
+                expect(f"{lang} {code}: one section per chapter with its question", uc and uc.group(1).count('class="ch-theme"') == len(local[code]["chapters"]) == uc.group(1).count('class="ch-theme-q"'))
+                expect(f"{lang} {code}: every published unit is a card with one link, its opening illustration and its question ({len(live)})",
+                       all(len(re.findall(r"<a ", c)) == 1 and 'class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in live)
+                       and all((out / h).resolve().is_file() for c in live for h in re.findall(r'href="([^"]+)"', c)))
             ghrefs = re.findall(r'href="(tvt-[\w-]+\.html)"', pg)
             expect(f"{lang} {code}: listed TVT-ohjeet are published pages ({len(ghrefs)})", all((out / h).is_file() for h in ghrefs), ghrefs)
     else: expect(f"{lang}: no local-course section without a course in this language", not sec)

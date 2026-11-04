@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The charge of an object is $+3.2 \\cdot 10^{-19}\\,\\text{C}$. How many electrons is the object missing?",
+    "a": "Charge is made of elementary charges, so $n = Q : e = 3.2 \\cdot 10^{-19}\\,\\text{C} : 1.602 \\cdot 10^{-19}\\,\\text{C} \\approx 2$. The object is missing two electrons, and that is why it is positive."
+  },
+  {
+    "q": "Both charges of two point charges are doubled, and at the same time the distance between them is doubled. How does the force between them change?",
+    "a": "The force does not change. The product of the charges becomes four times as large, and the denominator $r^2$ of Coulomb's law also becomes four times as large, so they cancel: $\\tfrac{2 \\cdot 2}{2^2} = 1$."
+  }
+]

@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "contribution": "Säteilyn käyttö lääketieteessä ja teknologiassa: röntgensäteilyn synty, röntgenkuvan ja TT:n kontrasti kerrosten vaimenemisena, merkkiaineet (teknetium-$99\\text{m}$, fluori-18), PET:n annihilaatiofotonit $E_\\gamma = m_e c^2 = 511\\,\\text{keV}$ ja paikantaminen koinsidenssien avulla simulaatiossa, sädehoito monesta suunnasta, tekniset käytöt sekä oikeutus, optimointi ja henkilökunnan suojautuminen.",
+  "learn": [
+    "selittämään, miten röntgenkuvan kontrasti syntyy, ja laskemaan kudoskerrosten läpi pääsevän säteilyn osuuden.",
+    "selittämään, miten PET-laite paikantaa merkkiaineen sen avulla, että fotonit lähtevät vastakkaisiin suuntiin.",
+    "perustelemaan sädehoidon ja säteilyn muiden käyttöjen ratkaisuja potilaan ja henkilökunnan turvallisuuden kannalta."
+  ],
+  "prior": [
+    "Gammasäteilyn intensiteetti puolittuu jokaisessa puoliintumispaksuuden $d_{1/2}$ paksuisessa kerroksessa (luku *Ionisoiva säteily ja elimistö*)",
+    "Aktiivisuus pienenee hajoamislain $A = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$ mukaan (luku *Hajoamislaki ja puoliintumisaika*)",
+    "Efektiivinen annos mitataan sievertteinä. Suojautua voi ajalla, etäisyydellä ja suojalla (luku *Säteilyannos ja säteilyturvallisuus Suomessa*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Sairaalan PET-kuvauksessa potilaaseen ruiskutetaan pieni määrä radioaktiivista sokeria. Tunnin kuluttua potilas makaa renkaan muotoisen laitteen sisällä. Ruudulle piirtyy kuva, jossa syöpäkasvain hehkuu kirkkaana. Laite ei näe kehon sisään. Se havaitsee vain fotoneja, jotka tulevat kehosta ulos. Toisessa huoneessa sama sairaala hoitaa syöpää säteilyllä. Säteily tappaa kasvaimen soluja mutta säästää ympäröivän kudoksen.",
+      "question": "Miten kehon ulkopuolinen laite voi päätellä, mistä kohdasta kehon sisältä säteily tuli? Miten säteilyllä voi tuhota kasvaimen niin, ettei terve kudos vahingoitu liikaa?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Kertaa: puoliintumispaksuus",
+      "prompt": "Gammasäteilyn intensiteetti on lyijylevyn takana neljäsosa siitä, mitä se on ilman levyä. Kuinka paksu levy on?",
+      "choices": [
+        {
+          "text": "Kaksi puoliintumispaksuutta, koska ensimmäinen puolittaa säteilyn ja toinen puolittaa jäljelle jääneen säteilyn.",
+          "correct": true,
+          "feedback": "Oikein. Jokainen puoliintumispaksuus päästää läpi puolet siihen tulevasta säteilystä: $\\tfrac{1}{2} \\cdot \\tfrac{1}{2} = \\tfrac{1}{4}$. Tässä luvussa lasketaan samalla periaatteella, kuinka paljon röntgensäteilyä pääsee kudoksen ja luun läpi."
+        },
+        {
+          "text": "Neljä puoliintumispaksuutta, koska jokainen kerros vähentää säteilyä saman määrän.",
+          "feedback": "Kerros vaimentaa saman *osuuden* siihen tulevasta säteilystä. Se ei vaimenna samaa määrää. Neljän puoliintumispaksuuden takana läpi pääsisi $\\left(\\tfrac{1}{2}\\right)^4 = \\tfrac{1}{16}$. Neljäsosaan riittää kaksi kerrosta."
+        },
+        {
+          "text": "Kolme neljäsosaa puoliintumispaksuudesta, koska levy pysäyttää kolme neljäsosaa säteilystä.",
+          "feedback": "Jo yksi puoliintumispaksuus päästää läpi puolet säteilystä. Ohuempi levy päästäisi läpi siis yli puolet. Neljäsosaan tarvitaan kaksi puoliintumispaksuutta: $\\tfrac{1}{2} \\cdot \\tfrac{1}{2} = \\tfrac{1}{4}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: mitä yksi havainto kertoo",
+      "prompt": "PET-laitteen ilmaisinrenkaan kaksi vastakkaista ilmaisinta havaitsee kumpikin $511\\,\\text{keV}$:n fotonin lähes samalla hetkellä. Mitä tästä yhdestä havainnosta voi päätellä annihilaation paikasta?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Annihilaatio tapahtui jossain ilmaisimien välisellä janalla. Yksi havainto ei kerro, missä kohdassa janaa.",
+          "correct": true,
+          "feedback": "Simulaatio tukee tätä. Jokaisesta koinsidenssista piirtyy jana kahden ilmaisimen välille, ja janat kulkevat koko kehon poikki. Fotonit lähtevät vastakkaisiin suuntiin, joten lähde on janalla. Mallissa ei mitata saapumisaikojen eroa. Siksi yksi havainto ei kerro kohtaa janalla. Paikka selviää vasta monen janan leikkauskohdista."
+        },
+        {
+          "text": "Annihilaatio tapahtui tarkalleen ilmaisimien välisen janan keskipisteessä, koska fotonit saapuivat yhtä aikaa.",
+          "feedback": "Simulaatiossa janat kulkevat kasvaimen kautta myös silloin, kun kasvain ei ole janan keskellä. Fotonit saapuvat ilmaisimiin muutaman nanosekunnin sisällä. Koinsidenssi-ilmaisu pitää niitä samanaikaisina, vaikka toinen fotoni kulki pidemmän matkan. Valo kulkee nanosekunnissa noin $30\\,\\text{cm}$. Nykyaikainen laite mittaa aikaeron noin $0{,}3\\,\\text{ns}$:n tarkkuudella. Silloin lähde rajautuu janalla muutaman senttimetrin matkalle, mutta ei yhteen pisteeseen. Kuva syntyy silti monista janoista."
+        },
+        {
+          "text": "Annihilaatio tapahtui jommankumman ilmaisimen lähellä, koska fotoni syntyy siellä, missä se havaitaan.",
+          "feedback": "Simulaatiossa fotonit syntyvät kehon sisällä annihilaatiopisteessä ja lentävät sieltä ilmaisimiin. Ilmaisin vain havaitsee fotonin. Fotonit lähtevät vastakkaisiin suuntiin, joten lähde on jossain ilmaisimien välisellä janalla."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kuinka monta havaintoa tarvitaan",
+      "prompt": "Potilaan keuhkossa on kasvain. Siihen on kertynyt merkkiainetta enemmän kuin muuhun kehoon, mutta merkkiainetta on myös muualla kehossa. Kuinka monta koinsidenssia tarvitaan, jotta kuvan kirkkain kohta osuu kasvaimeen?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Kymmeniä, koska vain osa janoista kulkee kasvaimen kautta. Muut janat leikkaavat toisiaan satunnaisissa kohdissa.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Kun koinsidensseja oli $10$, kirkkain kohta oli noin $18\\,\\text{cm}$:n päässä kasvaimesta. Kun niitä oli $20$, etäisyys oli $4{,}0\\,\\text{cm}$. Kun niitä oli $50$, etäisyys oli enää $1{,}4\\,\\text{cm}$, ja kun niitä oli $200$, etäisyys oli $0\\,\\text{cm}$. Kasvaimen kautta kulki vain noin neljäsosa janoista. Pienillä $N$:n arvoilla tulos vaihtelee sattumalta. Toisessa arvontajärjestyksessä kirkkain kohta voisi osua kasvaimeen jo $20$ koinsidenssilla tai vasta noin $100$ koinsidenssilla."
+        },
+        {
+          "text": "Kaksi riittää, koska kaksi janaa leikkaa toisensa yhdessä pisteessä.",
+          "feedback": "Mallin arvot kumoavat tämän. Vielä $20$ koinsidenssin jälkeen kirkkain kohta oli $4{,}0\\,\\text{cm}$:n päässä kasvaimesta. Merkkiainetta on koko kehossa, joten suurin osa janoista ei kulje kasvaimen kautta. Niiden satunnaiset leikkauskohdat peittävät kasvaimen, kunnes janoja on kymmeniä."
+        },
+        {
+          "text": "Yksi riittää, koska jana kulkee aina sen kohdan kautta, johon merkkiainetta on kertynyt eniten.",
+          "feedback": "Mallin arvot kumoavat tämän. Kasvaimen kautta kulki vain noin neljäsosa janoista. Kun koinsidensseja oli $10$, kirkkain kohta oli noin $18\\,\\text{cm}$:n päässä kasvaimesta. Yksi jana alkaa siitä kohdasta, jossa yksittäinen ydin sattui hajoamaan. Se voi olla missä tahansa kehossa."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: sädehoito monesta suunnasta",
+      "prompt": "Sädehoidossa syvällä kehossa olevaa kasvainta säteilytetään usein viidestä tai useammasta suunnasta. Säteily ehtisi kasvaimeen yhdestäkin suunnasta. Miksi säteilytetään silti monesta suunnasta?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet lukenut Teoriatiivistelmän kohdan Sädehoito."
+      },
+      "choices": [
+        {
+          "text": "Vain kasvain saa kaikkien keilojen annoksen. Terve kudos kunkin keilan varrella saa vain yhden keilan annoksen.",
+          "correct": true,
+          "feedback": "Oikein. Viidellä keilalla kukin keila antaa kasvaimeen $0{,}40\\,\\text{Gy}$. Kasvain saa silloin $5 \\cdot 0{,}40\\,\\text{Gy} = 2{,}0\\,\\text{Gy}$. Terve kudos kunkin keilan varrella saa vain noin $0{,}40\\,\\text{Gy}$. Yhdestä suunnasta sama $2{,}0\\,\\text{Gy}$ kulkisi kokonaan saman terveen kudoksen läpi."
+        },
+        {
+          "text": "Säteily ei läpäise kasvainta, joten sitä on säteilytettävä joka puolelta, jotta koko kasvain saa annoksen.",
+          "feedback": "Sädehoidon röntgensäteilyllä on paljon energiaa, ja se läpäisee koko kehon, myös kasvaimen. Monta suuntaa tarvitaan siksi, että keilat leikkaavat vain kasvaimen kohdalla. Kasvain saa kaikkien keilojen annoksen, mutta terve kudos saa vain yhden keilan annoksen."
+        },
+        {
+          "text": "Monesta suunnasta hoito valmistuu nopeammin, koska jokainen keila tarvitsee vähemmän aikaa.",
+          "feedback": "Hoitoaika ei ole syy. Keilat annetaan yleensä peräkkäin, joten kokonaisaika ei lyhene. Syy on terveen kudoksen säästäminen. Kasvain saa kaikkien keilojen annoksen, mutta kunkin keilan varrella oleva terve kudos saa vain yhden keilan annoksen."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Potilaan poikkileikkaus on PET-laitteen ilmaisinrenkaassa. Kerää koinsidensseja. Seuraa, miten janoista syntyy kuva oikealle ja missä kuvan kirkkain kohta on.",
+      "howto": "*Käynnistä keruu* kerää koinsidensseja, ja *Pysäytä* pysäyttää keruun. *Koinsidensseja* asettaa kerättyjen koinsidenssien määrän $N$ suoraan väliltä $0$–$2000$. *Potilas* valitsee, onko kehossa yksi kasvain, kaksi kasvainta vai ei kasvainta. Kasvainta ei ole piirretty kehoon, vaan se löytyy kuvasta. *Ilmaisu* vaihtaa koinsidenssi-ilmaisun ja yksittäisten fotonien laskemisen välillä. Vasemmalla annihilaatiopisteestä lentää kaksi oranssia fotonia vastakkaisiin suuntiin. Osutut ilmaisimet välähtävät, ja niiden välille piirtyy jana. Oikealla on janoista laskettu kuva. Mitä useampi jana kulkee kuvapisteen kautta, sitä kirkkaampi piste on. *Nopeus* muuttaa vain keruun tahtia.",
+      "model": "Merkkiaine on jakautunut tasaisesti kehoon. Kasvaimesta tulee $25\\,\\%$ annihilaatioista (kahdella kasvaimella $20\\,\\%$ kummastakin). Kasvaimen säde on noin $1\\,\\text{cm}$, joten sen merkkiainepitoisuus on monikymmenkertainen muuhun kehoon verrattuna. Fotonit lähtevät tarkalleen vastakkaisiin suuntiin satunnaiseen suuntaan tasossa. Keho ei vaimenna eikä sirota niitä. Positronin kulkemaa matkaa ja satunnaisia koinsidensseja ei ole mukana. Rengas on kaksiulotteinen ja havaitsee jokaisen fotoniparin. Malli ei käytä fotonien saapumisaikojen eroa. Todellinen laite kerää kymmeniä miljoonia koinsidensseja. Lukemat ovat mallin arvoja eivätkä mittauksia.",
+      "calc": "Annihilaatiot arvotaan aina samassa järjestyksessä, joten sama $N$ antaa aina saman kuvan. Toinen arvontajärjestys antaisi pienillä $N$:n arvoilla toisenlaisen tuloksen, koska janojen satunnaiset leikkauskohdat vaihtelevat. Kuva on $41 \\cdot 41$ pisteen ruudukko, jonka pisteiden väli on $1\\,\\text{cm}$. Jokainen jana lisää yhden osuman jokaiseen kuvapisteeseen, jonka etäisyys janasta on alle $0{,}6\\,\\text{cm}$. Kirkkain kohta on se piste, jossa osumia on eniten. Lukema *etäisyys kasvaimesta* on kirkkaimman kohdan etäisyys lähimmän kasvaimen keskipisteestä. Lukema *Kasvaimen kautta kulkevia viivoja* kertoo niiden janojen osuuden, jotka kulkevat alle $1{,}0\\,\\text{cm}$:n päästä kasvaimen keskipisteestä. Yksittäisten fotonien ilmaisussa kustakin parista havaitaan vain toinen fotoni. Silloin tiedetään vain ilmaisin, ei janaa."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: kuinka monta janaa tarvitaan",
+      "intro": "Testaa ennusteet 1 ja 2. Potilaalla on yksi kasvain, ja ilmaisu on koinsidenssi. Muuta vain koinsidenssien määrää $N$. Kirjaa kuvan kirkkaimman kohdan etäisyys kasvaimesta ainakin arvoilla $N = 10$, $20$, $50$ ja $200$. Katso samalla, millaisia janoja renkaaseen piirtyy.",
+      "initial": {
+        "N": 0,
+        "kohde": "1",
+        "ilmaisu": "1"
+      },
+      "locked": [
+        "kohde",
+        "ilmaisu"
+      ],
+      "vary": "N",
+      "min": 3,
+      "units": {
+        "N": "",
+        "kohde": "",
+        "ilmaisu": ""
+      },
+      "names": {
+        "N": "koinsidensseja $N$",
+        "kohde": "potilas",
+        "ilmaisu": "ilmaisu"
+      },
+      "values": {
+        "kohde": {
+          "1": "yksi kasvain"
+        },
+        "ilmaisu": {
+          "1": "koinsidenssi"
+        }
+      },
+      "measure": [
+        {
+          "key": "virhe",
+          "label": "$\\text{etäisyys kasvaimesta}\\ (\\text{cm})$"
+        },
+        {
+          "key": "osuus",
+          "label": "$\\text{kasvaimen kautta}\\ (\\%)$"
+        }
+      ]
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: miten PET paikantaa",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "Kirjoita taulukkosi perusteella vastaus kolmeen kysymykseen. Mitä yksi koinsidenssi kertoo lähteen paikasta? Miten kirkkaimman kohdan etäisyys kasvaimesta muuttui, kun koinsidensseja kertyi lisää, ja miksi? Mitä tämä merkitsee potilaan annokselle?",
+      "model": "Yksi koinsidenssi kertoo, että annihilaatio tapahtui jossain kahden ilmaisimen välisellä janalla, koska fotonit lähtevät vastakkaisiin suuntiin. Malli ei käytä saapumisaikojen eroa. Mallin arvoilla kuvan kirkkain kohta oli $10$ koinsidenssin jälkeen noin $18\\,\\text{cm}$:n päässä kasvaimesta ja $20$ koinsidenssin jälkeen $4{,}0\\,\\text{cm}$:n päässä. Kun koinsidensseja oli $50$, etäisyys oli enää $1{,}4\\,\\text{cm}$, ja kun niitä oli $200$, etäisyys oli $0\\,\\text{cm}$. Suurilla $N$:n arvoilla kasvaimen kautta kulki noin neljäsosa janoista, koska merkkiainetta on koko kehossa. Kun janoja on vähän, satunnaiset leikkauskohdat ovat yhtä kirkkaita kuin kasvain. Vasta kymmenien janojen jälkeen kasvaimen kautta kulkevat janat erottuvat. Pienillä $N$:n arvoilla tulos vaihtelee sattumalta. Hyvä kuva vaatii siis paljon hajoamisia eli riittävän suuren aktiivisuuden. Tämä on optimointia: aktiivisuus valitaan niin suureksi, että kuva vastaa kysymykseen, mutta ei suuremmaksi.",
+      "criteria": [
+        "Kerron, että yksi koinsidenssi rajaa lähteen kahden ilmaisimen väliselle janalle, ja perustelen sen sillä, että fotonit lähtevät vastakkaisiin suuntiin.",
+        "Kerron mallin arvoilla, että kirkkain kohta osui kasvaimeen vasta, kun koinsidensseja oli kymmeniä. Kerron myös, että pienillä määrillä tulos vaihtelee sattumalta.",
+        "Selitän, että vain osa janoista kulkee kasvaimen kautta, koska merkkiainetta on myös muualla kehossa.",
+        "Yhdistän tarvittavan koinsidenssien määrän aktiivisuuteen ja potilaan annokseen.",
+        "Kutsun simulaation lukuja mallin arvoiksi enkä mittauksiksi."
+      ]
+    },
+    {
+      "id": "rontgen",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Tutki: millä energialla röntgenkuva otetaan",
+      "text": "Taulukossa on pehmytkudoksen ja luun puoliintumispaksuus $d_{1/2}$ kolmella röntgenfotonien energialla. Puoliintumispaksuus on paksuus, joka päästää läpi puolet säteilystä. Viimeinen sarake kertoo, kuinka suuri osa säteilystä pääsee $20\\,\\text{cm}$:n pehmytkudoskerroksen läpi. Se vastaa aikuisen vartaloa.\n\n| Energia | $d_{1/2}$ kudos | $d_{1/2}$ luu | $20\\,\\text{cm}$ kudosta |\n| --- | --- | --- | --- |\n| $30\\,\\text{keV}$ | $1{,}8\\,\\text{cm}$ | $0{,}27\\,\\text{cm}$ | $0{,}05\\,\\%$ |\n| $60\\,\\text{keV}$ | $3{,}4\\,\\text{cm}$ | $1{,}1\\,\\text{cm}$ | $1{,}6\\,\\%$ |\n| $100\\,\\text{keV}$ | $4{,}1\\,\\text{cm}$ | $1{,}9\\,\\text{cm}$ | $3{,}3\\,\\%$ |",
+      "source": "statistics",
+      "source_note": "laskettu NIST XCOM -tietokannan vaimennuskertoimista kapealle säteelle (pehmytkudoksena vesi, luuna tiivis luu), pyöristetty",
+      "question": {
+        "type": "choice",
+        "prompt": "Millä energialla luu ja pehmytkudos eroavat toisistaan eniten? Miksi vartalon röntgenkuvaus tehdään silti suuremmalla energialla?",
+        "choices": [
+          {
+            "text": "Ero on suurin $30\\,\\text{keV}$:llä. Silloin vartalon läpi pääsee kuitenkin vain $0{,}05\\,\\%$, joten lähes kaikki säteily jää potilaaseen.",
+            "correct": true,
+            "feedback": "Oikein. Puoliintumispaksuuksien suhde on $30\\,\\text{keV}$:llä $1{,}8 : 0{,}27 \\approx 7$ ja $100\\,\\text{keV}$:llä vain $4{,}1 : 1{,}9 \\approx 2$. Kontrasti on siis paras pienellä energialla. Paksun vartalon läpi pienienerginen säteily ei kuitenkaan juuri pääse. Se absorboituu eli imeytyy potilaaseen, antaa annoksen eikä tuota kuvaa. Pienintä energiaa käytetään ohuissa kohteissa, kuten rintojen kuvauksessa."
+          },
+          {
+            "text": "Ero on suurin $100\\,\\text{keV}$:llä, koska suurienerginen säteily läpäisee luun paremmin kuin pienienerginen.",
+            "feedback": "Suurienerginen säteily läpäisee paremmin sekä luun että pehmytkudoksen. Niiden ero pienenee. Puoliintumispaksuuksien suhde on $100\\,\\text{keV}$:llä $4{,}1 : 1{,}9 \\approx 2$ ja $30\\,\\text{keV}$:llä $1{,}8 : 0{,}27 \\approx 7$. Suurempaa energiaa käytetään, jotta säteily pääsee vartalon läpi."
+          },
+          {
+            "text": "Ero on kaikilla energioilla sama, koska luu on aina saman verran tiheämpää kuin pehmytkudos.",
+            "feedback": "Tiheyksien suhde pysyy samana. Vaimeneminen riippuu kuitenkin myös fotonin energiasta ja atomien elektronimäärästä. Puoliintumispaksuuksien suhde on $30\\,\\text{keV}$:llä noin $7$ ja $100\\,\\text{keV}$:llä noin $2$. Ero pienenee siis energian kasvaessa."
+          }
+        ]
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mallin arvoihin ja teoriaan. Palaa sitten alun kysymykseen. Miten PET-laite päättelee merkkiaineen paikan? Miten sädehoito säästää tervettä kudosta?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2",
+        "ennuste-3"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Säde kulkee $5{,}0\\,\\text{cm}$ pehmytkudosta ja $3{,}0\\,\\text{cm}$ luuta. Opiskelija laskee: ”Pehmytkudoksen läpi pääsee $0{,}36$ ja luun läpi $0{,}15$, joten yhteensä läpi pääsee $0{,}36 + 0{,}15 = 0{,}51$ eli noin puolet säteilystä.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Osuudet pitää kertoa. Luun läpi pääsee $0{,}15$ siitä, mikä pääsi pehmytkudoksen läpi, eli $0{,}36 \\cdot 0{,}15 \\approx 0{,}054$.",
+          "correct": true,
+          "feedback": "Oikein. Luuhun tulee vain se osuus $0{,}36$, joka pääsi pehmytkudoksen läpi. Luu päästää siitä läpi osuuden $0{,}15$. Läpi pääsee siis $0{,}36 \\cdot 0{,}15 \\approx 0{,}054$ eli noin $5\\,\\%$. Summa ei voi olla oikein: kahden kerroksen läpi ei pääse enempää säteilyä kuin kummankaan kerroksen läpi yksinään."
+        },
+        {
+          "text": "Kerrosten paksuudet pitää laskea ensin yhteen ja käyttää yhtä puoliintumispaksuutta koko $8{,}0\\,\\text{cm}$:lle.",
+          "feedback": "Pehmytkudoksella ja luulla on eri puoliintumispaksuus, joten yhtä arvoa ei voi käyttää. Kumpikin kerros lasketaan omalla puoliintumispaksuudellaan, ja läpi päässeet osuudet kerrotaan: $0{,}36 \\cdot 0{,}15 \\approx 0{,}054$."
+        },
+        {
+          "text": "Osuudet pitää jakaa, koska luu vaimentaa enemmän: $0{,}36 : 0{,}15 = 2{,}4$.",
+          "feedback": "Osuus ei voi olla yli $1$, koska kerros ei lisää säteilyä. Luu päästää läpi osuuden $0{,}15$ siitä säteilystä, joka pääsi pehmytkudoksen läpi. Osuudet siis kerrotaan: $0{,}36 \\cdot 0{,}15 \\approx 0{,}054$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella: merkkiaineen matka sairaalaan",
+      "prompt": "PET-kuvauksen merkkiaine valmistetaan syklotronilla toisessa kaupungissa kello $8.30$. Potilaalle ruiskutetaan $300\\,\\text{MBq}$ kello $11.00$. Fluori-18:n puoliintumisaika on $110\\,\\text{min}$. Kuinka suuri aktiivisuus potilaan annokseen on valmistettava kello $8.30$? Vastaa megabecquereleinä.",
+      "answer": 770,
+      "unit": "MBq",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuinka kauan valmistuksesta kuluu ruiskutukseen? Kuinka monta puoliintumisaikaa se on?",
+        "Hajoamislaki $A = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$ antaa ruiskutushetken aktiivisuuden $A$. Nyt $A$ tunnetaan, ja kysytään $A_0$.",
+        "Aikaa kuluu $150\\,\\text{min}$ eli $\\tfrac{150}{110} = 1{,}36$ puoliintumisaikaa, joten $A_0 = 300\\,\\text{MBq} \\cdot 2^{1{,}36}$."
+      ],
+      "mistakes": [
+        {
+          "value": 116.6,
+          "feedback": "Laskit, kuinka paljon $300\\,\\text{MBq}$:stä on jäljellä $150\\,\\text{min}$:n kuluttua. Nyt $300\\,\\text{MBq}$ tarvitaan *lopussa*. Alussa aktiivisuuden on siis oltava suurempi: $A_0 = A \\cdot 2^{t/T_{1/2}}$."
+        },
+        {
+          "value": 600,
+          "feedback": "Otit huomioon vain yhden puoliintumisajan. Aikaa kuluu $150\\,\\text{min}$, joka on $\\tfrac{150}{110} = 1{,}36$ puoliintumisaikaa. Kerroin on siis $2^{1{,}36} \\approx 2{,}57$."
+        },
+        {
+          "value": 304.8,
+          "feedback": "Ajalla ja puoliintumisajalla on oltava sama yksikkö. Kulunut aika on $2{,}5\\,\\text{h} = 150\\,\\text{min}$, ei $2{,}5\\,\\text{min}$."
+        }
+      ],
+      "solution": "**Annettu:** tarvittava aktiivisuus ruiskutushetkellä $A = 300\\,\\text{MBq}$, valmistus kello $8.30$, ruiskutus kello $11.00$, fluori-18:n puoliintumisaika $T_{1/2} = 110\\,\\text{min}$\n\n**Kysytty:** valmistushetken aktiivisuus $A_0$ megabecquereleinä\n\n**Periaate:** Aktiivisuus on verrannollinen hajoamattomien ytimien määrään. Se pienenee siis hajoamislain mukaan: jokainen puoliintumisaika puolittaa sen. Matkan aikana ainetta ei lisätä eikä poisteta, joten laki kuvaa koko kuljetuksen.\n\n**Kaava:** $A = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$, josta $A_0 = A \\cdot 2^{t/T_{1/2}}$\n\n**Muunnokset:** Kulunut aika on $t = 11.00 - 8.30 = 2\\,\\text{h}\\ 30\\,\\text{min} = 2 \\cdot 60\\,\\text{min} + 30\\,\\text{min} = 150\\,\\text{min}$. Aika on nyt samassa yksikössä kuin puoliintumisaika.\n\n**Sijoitus:** $A_0 = 300\\,\\text{MBq} \\cdot 2^{150\\,\\text{min} / 110\\,\\text{min}} = 300\\,\\text{MBq} \\cdot 2^{1{,}3636} = 300\\,\\text{MBq} \\cdot 2{,}5733 = 772{,}0\\,\\text{MBq}$\n\n**Vastaus:** $770\\,\\text{MBq}$. Vastauksessa on kaksi merkitsevää numeroa, koska annos $300\\,\\text{MBq}$ on annettu kahden tai kolmen merkitsevän numeron tarkkuudella.\n\n**Järkevyys:** Aikaa kuluu vähän yli yksi puoliintumisaika ja selvästi alle kaksi. Kertoimen on siis oltava $2$:n ja $4$:n välissä, ja $2{,}57$ on. Yhden puoliintumisajan jälkeen $772\\,\\text{MBq}$:stä olisi jäljellä $386\\,\\text{MBq}$. Seuraavat $40\\,\\text{min}$ pienentävät sen $300\\,\\text{MBq}$:iin. Puoliintumisaika on lyhyt, joten syklotronin on oltava muutaman tunnin matkan päässä."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä yhtälöä. Tason 2 tehtävissä muunnetaan yksiköitä tai yhdistetään kaksi yhtälöä. Taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Miksi isotooppikuvauksen merkkiaineeksi sopii teknetium-$99\\text{m}$? Se lähettää $140\\,\\text{keV}$:n gammasäteilyä, ja sen puoliintumisaika on $6{,}01\\,\\text{h}$.",
+      "choices": [
+        {
+          "text": "Gammasäteily pääsee kehosta ulos ilmaisimeen. Muutaman tunnin puoliintumisaika riittää kuvaukseen, mutta aktiivisuus pienenee pian pieneksi.",
+          "correct": true,
+          "feedback": "Oikein. Kuva syntyy kehon ulkopuolella, joten säteilyn on päästävä kehosta ulos. Gammasäteily ionisoi matkallaan harvakseltaan. Vuorokauden kuluttua aktiivisuudesta on jäljellä vain noin $6\\,\\%$, joten potilaan annos jää pieneksi."
+        },
+        {
+          "text": "Gammasäteily pysähtyy elimeen, johon merkkiaine on kertynyt. Pitkä puoliintumisaika antaa aikaa kuvata potilas monta kertaa.",
+          "feedback": "Jos säteily pysähtyisi elimeen, kehon ulkopuolinen ilmaisin ei havaitsisi sitä, eikä kuvaa syntyisi. Gammasäteily pääsee kehosta ulos. Puoliintumisaika $6{,}01\\,\\text{h}$ on lyhyt: vuorokauden kuluttua aktiivisuudesta on jäljellä vain noin $6\\,\\%$."
+        },
+        {
+          "text": "Gammasäteily ionisoi tiheämmin kuin alfasäteily, joten pienikin aktiivisuus näkyy kuvassa selvästi.",
+          "feedback": "Alfasäteily ionisoi tiheimmin. Juuri siksi se pysähtyy kudokseen muutaman solun matkalle eikä pääse kehosta ulos. Gammasäteily ionisoi harvakseltaan, joten se pääsee ilmaisimeen ja antaa potilaalle pienen annoksen."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske annihilaatiofotonin taajuus",
+      "prompt": "Annihilaatiossa syntyvän fotonin energia on $511\\,\\text{keV}$. Kuinka suuri on fotonin taajuus? Vastaa hertseinä.",
+      "answer": 1.24e+20,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä yhtälö yhdistää fotonin energian ja taajuuden (luku *Valosähköinen ilmiö ja fotoni*)?",
+        "Muuta energia jouleiksi: $511\\,\\text{keV} = 511 \\cdot 10^{3} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "Energia on $E = 8{,}186 \\cdot 10^{-14}\\,\\text{J}$, ja $f = \\tfrac{E}{h}$, missä $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.24e+17,
+          "feedback": "Etuliite $\\text{k}$ jäi pois. Muista, että $511\\,\\text{keV} = 511 \\cdot 10^{3}\\,\\text{eV}$."
+        },
+        {
+          "value": 7.71e+38,
+          "feedback": "Energia on muutettava elektronivolteista jouleiksi ennen kuin jaat sen Planckin vakiolla: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$."
+        }
+      ],
+      "solution": "**Annettu:** fotonin energia $E = 511\\,\\text{keV}$, Planckin vakio $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** fotonin taajuus $f$ hertseinä\n\n**Periaate:** Fotonin energia on verrannollinen sen taajuuteen, $E = hf$ (luku *Valosähköinen ilmiö ja fotoni*). Annihilaatiofotoni on sähkömagneettisen säteilyn kvantti kuten näkyvän valon fotoni. Sama yhtälö pätee siis myös siihen.\n\n**Kaava:** $E = hf$, josta $f = \\dfrac{E}{h}$\n\n**Muunnokset:** $E = 511\\,\\text{keV} = 511 \\cdot 10^{3}\\,\\text{eV} = 511 \\cdot 10^{3} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 8{,}186 \\cdot 10^{-14}\\,\\text{J}$\n\n**Sijoitus:** $f = \\dfrac{8{,}186 \\cdot 10^{-14}\\,\\text{J}}{6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}} = 1{,}2355 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}}$\n\n**Vastaus:** $1{,}24 \\cdot 10^{20}\\,\\text{Hz}$. Vastauksessa on kolme merkitsevää numeroa, kuten energiassa $511\\,\\text{keV}$.\n\n**Järkevyys:** Näkyvän valon taajuus on noin $5 \\cdot 10^{14}\\,\\text{Hz}$ ja fotonin energia noin $2\\,\\text{eV}$. Nyt energia on noin $2{,}6 \\cdot 10^{5}$-kertainen. Taajuuden pitää siis olla yhtä monta kertaa suurempi: $5 \\cdot 10^{14}\\,\\text{Hz} \\cdot 2{,}6 \\cdot 10^{5} \\approx 1{,}3 \\cdot 10^{20}\\,\\text{Hz}$. Tulos on sama."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "prompt": "PET-potilaalle on juuri ruiskutettu fluori-18-merkkiainetta, ja hän odottaa tunnin ennen kuvausta. Vastaa kolmeen kysymykseen. Miksi hoitaja pysyttelee tänä aikana etäällä potilaasta, vaikka röntgenkuvatun potilaan vieressä voi olla heti kuvauksen jälkeen? Mitkä kaksi muuta keinoa pitävät hoitajan annoksen pienenä? Miksi PET-merkkiaineen ruiskusuojan on oltava paksumpi kuin teknetium-$99\\text{m}$:n suojan?",
+      "model": "Merkkiaine on potilaan elimistössä. Jokaisessa fluori-18:n hajoamisessa syntyy kaksi $511\\,\\text{keV}$:n fotonia, jotka pääsevät kehosta ulos. Potilas on siis säteilylähde, kunnes merkkiaine on hajonnut tai poistunut. Röntgensäteily sen sijaan syntyy vain, kun putki on päällä, eikä potilaaseen jää mitään radioaktiivista. Hoitaja pienentää annostaan etäisyydellä, koska annosnopeus pienenee etäisyyden neliön mukaan. Hän pienentää annostaan myös ajalla, koska annos on annosnopeus kertaa oleskeluaika. Hän tekee potilaan luona vain välttämättömän ja tekee sen nopeasti. Lisäksi merkkiainetta käsitellään lyijy- tai volframisuojan takaa, ja hoitaja kantaa annosmittaria. Fotonit, joiden energia on $511\\,\\text{keV}$, läpäisevät lyijyä paljon paremmin kuin fotonit, joiden energia on $140\\,\\text{keV}$. Lyijyn puoliintumispaksuus on niille noin $3{,}9\\,\\text{mm}$ eikä $0{,}26\\,\\text{mm}$. Saman vaimennuksen saavuttamiseen tarvitaan siis noin $15$ kertaa paksumpi suoja.",
+      "criteria": [
+        "Selitän, että merkkiainetta saanut potilas lähettää säteilyä, kunnes merkkiaine on hajonnut tai poistunut, mutta röntgensäteily loppuu, kun putki sammuu.",
+        "Perustelen etäisyyden ja ajan vaikutuksen: annosnopeus pienenee etäisyyden neliön mukaan, ja annos kasvaa oleskeluajan mukana.",
+        "Mainitsen suojan, kuten suojatun ruiskun tai suojaseinän, tai annosmittarin.",
+        "Perustelen paksumman suojan sillä, että fotonien, joiden energia on $511\\,\\text{keV}$, puoliintumispaksuus lyijyssä on paljon suurempi kuin fotonien, joiden energia on $140\\,\\text{keV}$."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit"
+    }
+  ]
+}

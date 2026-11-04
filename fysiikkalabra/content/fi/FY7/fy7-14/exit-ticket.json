@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Miksi saippuakuplan yläosaan ilmestyy musta laikku juuri ennen kuin kupla puhkeaa?",
+    "a": "Kalvo on ohentunut yläosassa paljon ohuemmaksi kuin valon aallonpituus, joten matkaero $2nd$ on lähes nolla. Yläpinnasta heijastunut aalto on kuitenkin kääntynyt ja alapinnasta heijastunut ei, joten aallot ovat vastakkaisessa vaiheessa ja kumoavat toisensa kaikilla aallonpituuksilla. Kalvo ei heijasta valoa ja näyttää mustalta."
+  },
+  {
+    "q": "Miksi ikkunalasissa ei näy saippuakalvon kaltaisia värejä, vaikka valo heijastuu senkin kahdesta pinnasta?",
+    "a": "Ikkunalasi on millimetrien paksuinen eli tuhansia kertoja aallonpituutta paksumpi. Silloin näkyvän valon alueella on hyvin monta aallonpituutta, jotka vahvistuvat, ja niiden välissä yhtä monta, jotka heikkenevät. Värit sekoittuvat, ja heijastunut valo näyttää valkoiselta."
+  }
+]

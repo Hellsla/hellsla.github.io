@@ -36,7 +36,7 @@ ID = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
 FIELDS = ("id", "moduuli", "luku", "aihe", "kasite", "maaritelma")
 OPTIONAL = ("kaava", "kaava_puhe", "kuva")
 SHOWN = 8          # a lesson's card row shows at most this many; the rest are a link away (teacher 2026-11-03)
-UNICODE_MATH = re.compile(r"[₀-₉ₐ-ₜ⁰-⁹⁻²³ΔΣρηαγμλωφπθτν≈·×−]")   # maths written in Unicode instead of LaTeX
+UNICODE_MATH = re.compile(r"[₀-₉ₐ-ₜ⁰-⁹⁻⁺²³ΔΣρηαγμλωφπθτν≈·×−]")   # maths written in Unicode instead of LaTeX
 
 
 def esc(s): return _h.escape(str(s), quote=True)
@@ -229,7 +229,7 @@ def errors():
                 if not c["kasite"].strip() or not c["maaritelma"].strip(): errs.append(f"{p}: empty kasite or maaritelma")
                 for k in ("kasite", "maaritelma"):
                     if c[k].count("$") % 2: errs.append(f"{p}: unbalanced $ in {k}")
-                    if code not in ("FY6", "FY7", "FY8") and UNICODE_MATH.search(re.sub(r"\$[^$]*\$", "", c[k])):
+                    if not m.get("kesken") and UNICODE_MATH.search(re.sub(r"\$[^$]*\$", "", c[k])):
                         errs.append(f"{p}: maths in Unicode in {k}; write it in LaTeX ($...$ or kaava): {c[k]!r}")
                 if "kaava" in c and ("$" in c["kaava"] or not c["kaava"].strip()): errs.append(f"{p}: kaava is display LaTeX without $")
                 if c.get("kaava") and not c.get("kaava_puhe"): errs.append(f"{p}: kaava without kaava_puhe")

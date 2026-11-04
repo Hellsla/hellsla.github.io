@@ -1,0 +1,23 @@
+{
+  "id": "fy6-16",
+  "course": "FY6",
+  "title": "Applied chapter: the electric car and the home electrical system",
+  "goals": [
+    "LOPS FY6: batteries and the charging circuit of a battery",
+    "LOPS FY6: electric power and Joule's law",
+    "LOPS FY6: electrical safety: fuse, enclosure rating (IP rating) and dielectric strength",
+    "Clarification: an applied chapter, not a review: the ideas of the module are combined in a new, everyday situation"
+  ],
+  "prerequisites": [
+    "fy6-7",
+    "fy6-9",
+    "fy6-15"
+  ],
+  "glossary": [
+    "pääsulake",
+    "kolmivaihesähkö"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

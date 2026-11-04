@@ -1,0 +1,338 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.A===200 && S.d===2 && S.U0===1 && S.eriste==='ilma' && S.lahde==='kytketty' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: A = 200 cm2, d = 2,0 mm, U0 = 1,0 kV, air, connected (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.C",
+  "expected": 88.54,
+  "tol": 0.01,
+  "note": "on load: C = 8,854e-12 · 0,0200 m2 : 0,0020 m = 88,5 pF (lesson-answers sim-C)"
+ },
+ {
+  "expr": "window.simState.Q",
+  "expected": 88.54,
+  "tol": 0.01,
+  "note": "on load: Q = C U0 = 88,5 nC (sim-Q)"
+ },
+ {
+  "expr": "window.simState.U",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "on load: U = U0 = 1,0 kV"
+ },
+ {
+  "expr": "window.simState.E",
+  "expected": 0.5,
+  "tol": 0.01,
+  "note": "on load: E = U : d = 0,50 MV/m (sim-E)"
+ },
+ {
+  "expr": "window.simState.W",
+  "expected": 44.27,
+  "tol": 0.01,
+  "note": "on load: W = 1/2 Q U = 44,3 µJ (sim-W)"
+ },
+ {
+  "expr": "window.simState.lapilyonti",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "on load: no breakdown"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); const ok=(r,a,b,s)=>r.min===a&&r.max===b&&r.step===s; return R.length===3 && ok(R[0],'1','10','0.5') && ok(R[1],'100','400','50') && ok(R[2],'0','4','0.1') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three sliders: d 1,0-10,0 mm by 0,5; A 100-400 cm2 by 50; U0 0-4,0 kV by 0,1"
+ },
+ {
+  "expr": "(() => { const S=[...document.querySelectorAll('#sim-root select')]; return S.length===2 && [...S[0].options].map(o=>o.value).join()==='ilma,teflon,paperi,lasi' && [...S[1].options].map(o=>o.value).join()==='kytketty,irrotettu' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two selects: the dielectric (air, teflon, paper, glass) and the source (connected, disconnected)"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='A,U0,d,eriste,lahde' && P.d.unit==='mm' && P.U0.unit==='kV' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares d (mm), A (cm2), U0 (kV), eriste and lahde"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?1040:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x1040 (plates and graph stacked, larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /Kapasitanssi/.test(t) && /Energia/.test(t) && /läpilyöntilujuus/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the capacitance, the energy and the breakdown strength"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],2.0); I(R[1],200); I(R[2],0.5); I(S[0],'ilma'); I(S[1],'kytketty');",
+  "expr": "window.simState.Q",
+  "expected": 44.27,
+  "tol": 0.01,
+  "note": "koe 1: U0 = 0.5 kV, Q = C U0 (koe1-U0.5-Q)"
+ },
+ {
+  "expr": "window.simState.W",
+  "expected": 11.0675,
+  "tol": 0.01,
+  "note": "koe 1: U0 = 0.5 kV, W = 1/2 Q U (koe1-U0.5-W)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],2.0); I(R[1],200); I(R[2],1.5); I(S[0],'ilma'); I(S[1],'kytketty');",
+  "expr": "window.simState.Q",
+  "expected": 132.81,
+  "tol": 0.01,
+  "note": "koe 1: U0 = 1.5 kV, Q = C U0 (koe1-U1.5-Q)"
+ },
+ {
+  "expr": "window.simState.W",
+  "expected": 99.6075,
+  "tol": 0.01,
+  "note": "koe 1: U0 = 1.5 kV, W = 1/2 Q U (koe1-U1.5-W)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],2.0); I(R[1],200); I(R[2],2.0); I(S[0],'ilma'); I(S[1],'kytketty');",
+  "expr": "window.simState.Q",
+  "expected": 177.08,
+  "tol": 0.01,
+  "note": "koe 1: U0 = 2.0 kV, Q = C U0 (koe1-U2.0-Q)"
+ },
+ {
+  "expr": "window.simState.W",
+  "expected": 177.08,
+  "tol": 0.01,
+  "note": "koe 1: U0 = 2.0 kV, W = 1/2 Q U (koe1-U2.0-W)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],1.0); I(R[1],200); I(R[2],1.0); I(S[0],'ilma'); I(S[1],'kytketty');",
+  "expr": "window.simState.C",
+  "expected": 177.08,
+  "tol": 0.01,
+  "note": "koe 2: d = 1.0 mm, C (koe2-d1.0-C)"
+ },
+ {
+  "expr": "window.simState.Q",
+  "expected": 177.08,
+  "tol": 0.01,
+  "note": "koe 2: d = 1.0 mm, Q in nC equals C in pF at 1 kV"
+ },
+ {
+  "expr": "window.simState.E",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "koe 2: d = 1.0 mm, E = U : d"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],4.0); I(R[1],200); I(R[2],1.0); I(S[0],'ilma'); I(S[1],'kytketty');",
+  "expr": "window.simState.C",
+  "expected": 44.27,
+  "tol": 0.01,
+  "note": "koe 2: d = 4.0 mm, C (koe2-d4.0-C)"
+ },
+ {
+  "expr": "window.simState.Q",
+  "expected": 44.27,
+  "tol": 0.01,
+  "note": "koe 2: d = 4.0 mm, Q in nC equals C in pF at 1 kV"
+ },
+ {
+  "expr": "window.simState.E",
+  "expected": 0.25,
+  "tol": 0.01,
+  "note": "koe 2: d = 4.0 mm, E = U : d"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],8.0); I(R[1],200); I(R[2],1.0); I(S[0],'ilma'); I(S[1],'kytketty');",
+  "expr": "window.simState.C",
+  "expected": 22.135,
+  "tol": 0.01,
+  "note": "koe 2: d = 8.0 mm, C (koe2-d8.0-C)"
+ },
+ {
+  "expr": "window.simState.Q",
+  "expected": 22.135,
+  "tol": 0.01,
+  "note": "koe 2: d = 8.0 mm, Q in nC equals C in pF at 1 kV"
+ },
+ {
+  "expr": "window.simState.E",
+  "expected": 0.125,
+  "tol": 0.01,
+  "note": "koe 2: d = 8.0 mm, E = U : d"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],2.0); I(R[1],400); I(R[2],1.0); I(S[0],'ilma'); I(S[1],'kytketty');",
+  "expr": "window.simState.C",
+  "expected": 177.08,
+  "tol": 0.01,
+  "note": "A = 400 cm2: C doubles to 177 pF"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],2.0); I(R[1],200); I(R[2],1.0); I(S[0],'ilma'); I(S[1],'irrotettu'); I(S[0],'teflon');",
+  "expr": "window.simState.Q",
+  "expected": 88.54,
+  "tol": 0.01,
+  "note": "koe 3: disconnected, teflon: Q stays 88,5 nC"
+ },
+ {
+  "expr": "window.simState.U",
+  "expected": 0.47619,
+  "tol": 0.01,
+  "note": "koe 3: teflon: U = Q : C (koe3-teflon-U)"
+ },
+ {
+  "expr": "window.simState.W",
+  "expected": 21.080952,
+  "tol": 0.01,
+  "note": "koe 3: teflon: W (koe3-teflon-W)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],2.0); I(R[1],200); I(R[2],1.0); I(S[0],'ilma'); I(S[1],'irrotettu'); I(S[0],'paperi');",
+  "expr": "window.simState.Q",
+  "expected": 88.54,
+  "tol": 0.01,
+  "note": "koe 3: disconnected, paperi: Q stays 88,5 nC"
+ },
+ {
+  "expr": "window.simState.U",
+  "expected": 0.27027,
+  "tol": 0.01,
+  "note": "koe 3: paperi: U = Q : C (koe3-paperi-U)"
+ },
+ {
+  "expr": "window.simState.W",
+  "expected": 11.964865,
+  "tol": 0.01,
+  "note": "koe 3: paperi: W (koe3-paperi-W)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],2.0); I(R[1],200); I(R[2],1.0); I(S[0],'ilma'); I(S[1],'irrotettu'); I(S[0],'lasi');",
+  "expr": "window.simState.Q",
+  "expected": 88.54,
+  "tol": 0.01,
+  "note": "koe 3: disconnected, lasi: Q stays 88,5 nC"
+ },
+ {
+  "expr": "window.simState.U",
+  "expected": 0.178571,
+  "tol": 0.01,
+  "note": "koe 3: lasi: U = Q : C (koe3-lasi-U)"
+ },
+ {
+  "expr": "window.simState.W",
+  "expected": 7.905357,
+  "tol": 0.01,
+  "note": "koe 3: lasi: W (koe3-lasi-W)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],2.0); I(R[1],200); I(R[2],1.0); I(S[0],'ilma'); I(S[1],'irrotettu'); I(R[0],4.0);",
+  "expr": "window.simState.U",
+  "expected": 2.0,
+  "tol": 0.01,
+  "note": "disconnected, d doubled to 4,0 mm: U doubles to 2,0 kV"
+ },
+ {
+  "expr": "window.simState.W",
+  "expected": 88.54,
+  "tol": 0.01,
+  "note": "disconnected, d doubled: W doubles to 88,5 µJ"
+ },
+ {
+  "expr": "window.simState.E",
+  "expected": 0.5,
+  "tol": 0.01,
+  "note": "disconnected, d doubled: E stays 0,50 MV/m"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],2.0); I(R[1],200); I(R[2],1.0); I(S[0],'ilma'); I(S[1],'irrotettu'); I(R[2],3.0);",
+  "expr": "window.simState.Q",
+  "expected": 88.54,
+  "tol": 0.01,
+  "note": "disconnected: the source's voltage has no effect"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],2.0); I(R[1],200); I(R[2],1.0); I(S[0],'lasi'); I(S[1],'kytketty');",
+  "expr": "window.simState.Q",
+  "expected": 495.824,
+  "tol": 0.01,
+  "note": "koe 4: connected, glass: Q = 5,6 · 88,5 nC (koe4-lasi-Q)"
+ },
+ {
+  "expr": "window.simState.W",
+  "expected": 247.912,
+  "tol": 0.01,
+  "note": "koe 4: connected, glass: W (koe4-lasi-W)"
+ },
+ {
+  "expr": "window.simState.U",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "koe 4: connected: U stays 1,0 kV"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],1.0); I(R[1],200); I(R[2],3.0); I(S[0],'ilma'); I(S[1],'kytketty');",
+  "expr": "window.simState.lapilyonti",
+  "expected": 0,
+  "tol": 0,
+  "note": "koe 5: air, 1,0 mm, 3,0 kV: E = 3,0 MV/m, no breakdown yet"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],1.0); I(R[1],200); I(R[2],3.1); I(S[0],'ilma'); I(S[1],'kytketty');",
+  "expr": "window.simState.lapilyonti",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 5: 3,1 kV: E = 3,1 MV/m > 3 MV/m, breakdown"
+ },
+ {
+  "expr": "window.simState.E",
+  "expected": 3.1,
+  "tol": 0.01,
+  "note": "koe 5: E = 3,1 MV/m"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],1.0); I(R[1],200); I(R[2],3.1); I(S[0],'lasi'); I(S[1],'kytketty');",
+  "expr": "window.simState.lapilyonti",
+  "expected": 0,
+  "tol": 0,
+  "note": "glass at 3,1 MV/m: no breakdown (14 MV/m)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],1.0); I(R[1],200); I(R[2],4.0); I(S[0],'lasi'); I(S[1],'irrotettu'); I(S[0],'ilma');",
+  "expr": "window.simState.purkautui",
+  "expected": 1,
+  "tol": 0,
+  "note": "charged with glass at 4,0 kV, disconnected, glass removed: E would exceed 3 MV/m, the capacitor discharges"
+ },
+ {
+  "expr": "window.simState.Q",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "after the breakdown Q = 0"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'kytketty'); I(R[0],2.0); I(R[1],200); I(R[2],1.0); I(S[0],'ilma'); I(S[1],'kytketty');",
+  "expr": "window.simState.W",
+  "expected": 44.27,
+  "tol": 0.01,
+  "note": "back to the start: 44,3 µJ"
+ }
+]

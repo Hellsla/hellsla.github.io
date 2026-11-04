@@ -29,7 +29,7 @@ each course in `courses` lists it: the course refers to the investigation, it ne
 """
 import hashlib, importlib.util, json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, guides, i18n
+import cardgrid, courses, guides, i18n
 
 ROOT = courses.ROOT
 DIR = "tutkimukset"
@@ -139,7 +139,7 @@ def levels(d, key):
 def span(ls): return ls[0] if len(ls) == 1 else f"{ls[0]}–{ls[-1]}"
 
 
-def bank(T, items):
+def bank(T, items, lang=i18n.SOURCE):
     """The course page's investigation bank (teacher 2026-10-31): every investigation listed, its name and question
     first, then its topic, F and E levels, working modes and the modules it builds on; above it a small filter form
     (search by name, question or equipment; topic; physics level; experiment level; working mode) that narrows the
@@ -158,20 +158,23 @@ def bank(T, items):
             + opt("mode", T("investigation.filter_mode"), [(m, T("investigation.mode_" + m)) for m in MODES])
             + f'<button type="reset" class="bank-reset">{T("investigation.filter_reset")}</button>'
             f'<p class="bank-count" id="bank-count" aria-live="polite" data-template="{esc(T("investigation.filter_count"))}"></p></form>')
-    rows = ""
-    for i, d in items:
+    order = {t: n for n, t in enumerate(TOPICS)}    # cards under their topics (teacher 2026-11-04, scripts/cardgrid.py), each topic
+    rows = ""; seen = set()                         # in the course's order; the filter moves a topic's label to its first card shown
+    for i, d in sorted(items, key=lambda x: order[x[1]["topic"]]):
         fl, el = levels(d, "physics"), levels(d, "experiment")
         words = " ".join([d["title"], d["question"]] + d.get("equipment", [])).lower()
-        meta = (f'<span class="bank-topic">{T("investigation.topic_" + d["topic"])}</span>'
-                f'<span class="bank-level" title="{T("investigation.level_physics")}">{span(fl)}</span>'
-                f'<span class="bank-level" title="{T("investigation.level_experiment")}">{span(el)}</span>'
-                f'<span class="bank-modes">{", ".join(T("investigation.mode_short_" + m) for m in d["modes"])}</span>'
-                f'<span class="bank-mods">{T("investigation.builds_on")} {", ".join(d.get("modules", []))}</span>')
-        rows += (f'<li class="live bank-item" data-topic="{d["topic"]}" data-f="{" ".join(fl)}" data-e="{" ".join(el)}" '
-                 f'data-mode="{" ".join(d["modes"])}" data-words="{esc(words)}"><a href="{i}.html">{esc(d["title"])}</a>'
-                 f'<span class="local-why">{esc(d["question"])}</span><span class="bank-meta">{meta}</span></li>')
+        num = (f'<span class="bank-level" title="{T("investigation.level_physics")}">{span(fl)}</span> '
+               f'<span class="bank-level" title="{T("investigation.level_experiment")}">{span(el)}</span>')
+        meta = (f'<span class="bank-meta"><span class="bank-modes">{", ".join(T("investigation.mode_short_" + m) for m in d["modes"])}</span>'
+                f'<span class="bank-mods">{T("investigation.builds_on")} {", ".join(d.get("modules", []))}</span></span>')
+        lab = "" if d["topic"] in seen else cardgrid.label(T("investigation.topic_" + d["topic"]), attrs=f' data-topic-label="{d["topic"]}"')
+        seen.add(d["topic"])
+        src = folder(i, lang) / "investigation.md"
+        rows += cardgrid.card(num, esc(d["title"]), f"{i}.html", esc(d["question"]), cardgrid.hero(src.read_text() if src.is_file() else ""), meta,
+                              " bank-item", f' data-topic="{d["topic"]}" data-f="{" ".join(fl)}" data-e="{" ".join(el)}" '
+                              f'data-mode="{" ".join(d["modes"])}" data-words="{esc(words)}"', lab)
     return (form + f'<p class="bank-none" id="bank-none" hidden>{T("investigation.filter_none")}</p>'
-            f'<ol class="lessons local-inv bank-list" id="bank-list">{rows}</ol>')
+            f'<ol class="lessons ch-cards local-inv bank-list" id="bank-list">{rows}</ol>')
 
 
 def render(iid, lang, T, md, chapters, published):

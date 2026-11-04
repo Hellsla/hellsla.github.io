@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kappaleen varaus on $+3{,}2 \\cdot 10^{-19}\\,\\text{C}$. Kuinka monta elektronia kappaleelta puuttuu?",
+    "a": "Varaus koostuu alkeisvarauksista, joten $n = Q : e = 3{,}2 \\cdot 10^{-19}\\,\\text{C} : 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\approx 2$. Kappaleelta puuttuu kaksi elektronia, ja siksi se on positiivinen."
+  },
+  {
+    "q": "Kahden pistevarauksen molemmat varaukset kaksinkertaistetaan, ja samalla niiden etäisyys kaksinkertaistetaan. Miten niiden välinen voima muuttuu?",
+    "a": "Voima ei muutu. Varausten tulo nelinkertaistuu, ja Coulombin lain nimittäjä $r^2$ nelinkertaistuu myös, joten ne kumoavat toisensa: $\\tfrac{2 \\cdot 2}{2^2} = 1$."
+  }
+]

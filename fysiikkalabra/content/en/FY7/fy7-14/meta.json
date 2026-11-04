@@ -1,0 +1,20 @@
+{
+  "id": "fy7-14",
+  "course": "FY7",
+  "title": "Thin-film interference",
+  "goals": [
+    "LOPS FY7: interference and diffraction of light",
+    "Clarification: the colours of a soap film and the anti-reflection coating, qualitatively and with simple calculations"
+  ],
+  "prerequisites": [
+    "fy7-13"
+  ],
+  "glossary": [
+    "interferenssi",
+    "ohut kalvo",
+    "heijastuksenestopinnoite"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

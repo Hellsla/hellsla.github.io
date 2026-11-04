@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Why were almost only hydrogen and helium formed in the minutes after the Big Bang, and not, for example, carbon or iron?",
+    "a": "Fusion was possible only from about minute $3$ to minute $20$, because after that the universe had expanded too cold and too thin for charged nuclei to still collide hard enough. During this time the protons and neutrons managed to combine mostly into helium-4, which is more tightly bound than the other light nuclei. The heavier elements formed only in stars, hundreds of millions of years later."
+  },
+  {
+    "q": "Which observation is dark matter meant to explain? Name one.",
+    "a": "For example, the stars and gas at the edges of galaxies orbit the centre of the galaxy as fast as those closer in, although the gravity of the visible matter would not be enough to keep them in their orbits. The high speeds of the galaxies in galaxy clusters and the bending of light caused by the clusters also require much more mass than can be seen."
+  }
+]

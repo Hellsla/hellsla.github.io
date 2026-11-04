@@ -1,0 +1,24 @@
+{
+  "id": "fy6-13",
+  "course": "FY6",
+  "title": "The capacitor and its energy",
+  "goals": [
+    "LOPS FY6: the capacitor and the energy of a capacitor",
+    "Clarification: the structure of a parallel-plate capacitor; the effect of a dielectric on capacitance through charge, voltage and energy; connections of capacitors are not part of the central contents",
+    "Clarification: charging and discharging curves only qualitatively",
+    "LOPS FY6: electrical safety: dielectric strength"
+  ],
+  "prerequisites": [
+    "fy6-12"
+  ],
+  "glossary": [
+    "kondensaattori",
+    "kapasitanssi",
+    "eriste",
+    "kondensaattorin energia",
+    "läpilyöntilujuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

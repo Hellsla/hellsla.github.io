@@ -1,0 +1,23 @@
+{
+  "id": "fy7-8",
+  "course": "FY7",
+  "title": "Muuntaja ja sähköenergian siirto",
+  "goals": [
+    "LOPS FY7: muuntaja ja energian siirto sähkövirran avulla",
+    "LOPS FY7: ymmärtää sähköenergian tuotannon ja siirron fysikaaliset perusteet ja merkityksen yhteiskunnan toiminnan kannalta",
+    "Laaja-alainen: yhteiskunnallinen osaaminen"
+  ],
+  "prerequisites": [
+    "fy7-7"
+  ],
+  "glossary": [
+    "muuntaja",
+    "muuntosuhde",
+    "siirtohäviö",
+    "sähköverkko",
+    "suurjännite"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

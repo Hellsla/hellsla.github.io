@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kondensaattorin kapasitanssi on $100\\,\\mu\\text{F}$, ja se ladataan $12\\,\\text{V}$:n jännitteeseen. Kuinka suuri on sen varaus?",
+    "a": "$Q = CU = 100 \\cdot 10^{-6}\\,\\text{F} \\cdot 12\\,\\text{V} = 1{,}2 \\cdot 10^{-3}\\,\\text{C} = 1{,}2\\,\\text{mC}$."
+  },
+  {
+    "q": "Miksi kondensaattorin energiassa $W = \\tfrac{1}{2} Q U$ on kerroin $\\tfrac{1}{2}$?",
+    "a": "Latauksessa jännite kasvaa nollasta arvoon $U$ samassa suhteessa kuin varaus. Ensimmäiset varaukset siirtyvät pienen jännitteen yli. Viimeiset siirtyvät koko jännitteen yli. Siksi keskimääräinen jännite on $\\tfrac{U}{2}$. Energia on $(Q, U)$-kuvaajan alle jäävän kolmion pinta-ala."
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "id": "fy8-15",
+  "course": "FY8",
+  "title": "Standardimalli: perushiukkaset ja vuorovaikutukset",
+  "goals": [
+    "LOPS FY8: hiukkasfysiikan standardimalli",
+    "Täsmennys: perusvuorovaikutukset ja perushiukkaset; fotoni sähkömagneettisen vuorovaikutuksen välittäjähiukkasena"
+  ],
+  "prerequisites": [
+    "fy8-14"
+  ],
+  "glossary": [
+    "standardimalli",
+    "kvarkki",
+    "leptoni",
+    "välittäjähiukkanen",
+    "perusvuorovaikutus"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

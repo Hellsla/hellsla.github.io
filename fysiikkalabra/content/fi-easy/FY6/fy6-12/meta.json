@@ -1,0 +1,44 @@
+{
+  "id": "fy6-12",
+  "course": "FY6",
+  "title": "Potentiaalienergia ja potentiaali sähkökentässä",
+  "goals": [
+    "LOPS FY6: potentiaalienergia ja potentiaali homogeenisessa sähkökentässä",
+    "LOPS FY6: osaa käyttää kentän ja potentiaalin käsitteitä sähkökentän kuvaamisessa"
+  ],
+  "prerequisites": [
+    "fy6-11"
+  ],
+  "glossary": [
+    "potentiaali",
+    "potentiaaliero",
+    "potentiaalienergia",
+    "elektronivoltti",
+    "tasapotentiaalipinta"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "potentiaali",
+      "explain": "Kentän kohdan ominaisuus: potentiaalienergia jaettuna varauksella. Se kertoo, kuinka paljon energiaa kohta antaa jokaista varausyksikköä kohti."
+    },
+    {
+      "term": "potentiaaliero",
+      "explain": "Kahden kohdan potentiaalien erotus. Se on sama asia kuin kohtien välinen jännite."
+    },
+    {
+      "term": "potentiaalienergia",
+      "explain": "Varauksen energia, joka riippuu varauksen paikasta kentässä. Kun kenttä tekee työtä, potentiaalienergia pienenee."
+    },
+    {
+      "term": "elektronivoltti",
+      "explain": "Pieni energian yksikkö hiukkasille. Alkeisvarauksen suuruinen varaus saa sen energian, kun se kulkee yhden voltin potentiaalieron läpi."
+    },
+    {
+      "term": "tasapotentiaalipinta",
+      "explain": "Pinta, jonka kaikissa kohdissa potentiaali on sama. Kenttä ei tee työtä, kun varaus liikkuu pintaa pitkin."
+    }
+  ]
+}

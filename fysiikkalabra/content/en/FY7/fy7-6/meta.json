@@ -1,0 +1,19 @@
+{
+  "id": "fy7-6",
+  "course": "FY7",
+  "title": "Lenz's law and eddy currents",
+  "goals": [
+    "LOPS FY7: Lenz's law and eddy currents"
+  ],
+  "prerequisites": [
+    "fy7-5"
+  ],
+  "glossary": [
+    "Lenzin laki",
+    "pyörrevirta",
+    "induktiojarru"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

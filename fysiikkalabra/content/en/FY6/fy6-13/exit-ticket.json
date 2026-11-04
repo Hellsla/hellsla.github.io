@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The capacitance of a capacitor is $100\\,\\mu\\text{F}$, and it is charged to a voltage of $12\\,\\text{V}$. How large is its charge?",
+    "a": "$Q = CU = 100 \\cdot 10^{-6}\\,\\text{F} \\cdot 12\\,\\text{V} = 1.2 \\cdot 10^{-3}\\,\\text{C} = 1.2\\,\\text{mC}$."
+  },
+  {
+    "q": "Why does the energy of a capacitor $W = \\tfrac{1}{2} Q U$ have the factor $\\tfrac{1}{2}$?",
+    "a": "In charging the voltage grows from zero to $U$ in the same proportion as the charge. The first charges move across a small voltage and the last across the whole voltage, so the average voltage is $\\tfrac{U}{2}$. The energy is the area of the triangle under the $(Q, U)$ graph."
+  }
+]

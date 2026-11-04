@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Pöydällä makaavan kuparirenkaan yläpuolelta vedetään sauvamagneetti ylöspäin poispäin renkaasta. Hylkiikö vai vetääkö rengas magneettia, ja miksi?",
+    "a": "Vetää. Renkaan läpi kulkeva vuo pienenee, ja Lenzin lain mukaan induktiovirta vastustaa pienenemistä: renkaan magneetin puoleiseen sivuun syntyy magneetin lähimmän navan vastakkainen napa, joten rengas vetää loittonevaa magneettia puoleensa."
+  },
+  {
+    "q": "Miksi muuntajan rautasydän kootaan ohuista toisistaan eristetyistä levyistä eikä tehdä yhdestä umpinaisesta rautakappaleesta?",
+    "a": "Vaihtuva magneettikenttä synnyttää rautasydämeen pyörrevirtoja, jotka muuttavat sähköenergiaa sydämen sisäenergiaksi. Eristekerrokset katkaisevat suuret virtasilmukat, joten virrat kiertävät vain kapeiden levyjen sisällä, jäävät pieniksi ja energiahäviö pienenee."
+  }
+]

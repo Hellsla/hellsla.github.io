@@ -1,0 +1,379 @@
+{
+  "version": 1,
+  "contribution": "The direction of the induced current by Lenz's law and its justification by conservation of energy; eddy currents in metal bodies, the braking of a magnet falling in a tube and the conversion of energy into the internal energy of the tube, and as applications the eddy-current brake, the induction hob, the metal detector and the laminated core of a transformer.",
+  "learn": [
+    "deduce, using Lenz's law, the direction of an induced current and whether a conductor repels or attracts a magnet.",
+    "explain with conservation of energy why induced currents oppose change, and calculate the energy eddy currents convert.",
+    "explain how an eddy-current brake, an induction hob and a metal detector work, and why transformer cores are laminated."
+  ],
+  "prior": [
+    "When the magnetic flux through a closed conducting loop changes, an induced voltage $e = -N \\Delta\\Phi : \\Delta t$ and an induced current appear in the loop (chapter *Electromagnetic induction*)",
+    "A current-carrying conductor or current loop is itself a magnet with a north and a south pole (chapter *Magnetic field of a wire and a coil*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "When a strong neodymium magnet is dropped into a vertical copper tube one metre long, it does not come out straight away. Several seconds pass, and if you look into the tube from above, you can see the magnet drifting down slowly and steadily. Yet the magnet does not stick to the wall of the tube, and a steel nut of the same size falls through the same tube in the blink of an eye.",
+      "question": "What slows the magnet although nothing touches it, and where does the energy of its fall go?"
+    },
+    {
+      "id": "kertaus-induktio",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: when does an induced voltage appear?",
+      "prompt": "The ends of a coil are connected to a voltmeter. A bar magnet is pushed into the coil and then left at rest inside it. What does the meter show when the magnet is at rest inside the coil?",
+      "choices": [
+        {
+          "text": "Zero, because the magnetic flux through the coil does not change when the magnet is at rest.",
+          "correct": true,
+          "feedback": "Correct. The induced voltage $e = -N \\Delta\\Phi : \\Delta t$ appears only when the flux changes (chapter *Electromagnetic induction*). Today we find out in which direction the induced current flows when the flux changes, and what follows from that."
+        },
+        {
+          "text": "The greatest voltage, because the magnetic flux through the coil is now at its greatest.",
+          "feedback": "The flux is large, but the voltage does not depend on the size of the flux, only on its rate of change $\\Delta\\Phi : \\Delta t$. When the magnet is at rest, the flux does not change and the voltage is zero (chapter *Electromagnetic induction*)."
+        },
+        {
+          "text": "A steady voltage that lasts as long as the magnet is in the coil.",
+          "feedback": "A magnet that stays in place does not produce a lasting voltage in the coil. A voltage appears only while the flux changes: when the magnet is pushed in or pulled out. A magnet at rest does not change the flux, so the voltage is zero (chapter *Electromagnetic induction*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-putket",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: plastic, aluminium and copper tubes",
+      "prompt": "The same neodymium magnet is dropped from rest into three vertical tubes of the same size and a length of one metre: a plastic, an aluminium and a copper tube. Copper conducts electricity better than aluminium, and neither is a ferromagnetic material. How do the falling times differ?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "The falling time is the same in all the tubes, because the magnet does not attract copper or aluminium.",
+          "feedback": "The model's values contradict this: in the plastic tube the falling time is $0.45\\,\\text{s}$, in the aluminium tube $4.24\\,\\text{s}$ and in the copper tube $6.68\\,\\text{s}$. The magnet does not attract the metal, but a moving magnet changes the flux through the wall of the tube, and the eddy currents induced in the wall brake it."
+        },
+        {
+          "text": "In the metal tubes the magnet falls more slowly than in the plastic tube, and most slowly in the copper tube.",
+          "correct": true,
+          "feedback": "The model's values support this: $0.45\\,\\text{s}$ in the plastic tube, $4.24\\,\\text{s}$ in the aluminium tube and $6.68\\,\\text{s}$ in the copper tube. Eddy currents appear in the wall of a metal tube and brake the magnet, and in copper, which conducts better, the currents and the braking are greater."
+        },
+        {
+          "text": "In the metal tubes the magnet falls more slowly than in the plastic tube, and most slowly in the aluminium tube, because aluminium is lighter.",
+          "feedback": "The model's values contradict this: in the aluminium tube the falling time is $4.24\\,\\text{s}$, in the copper tube longer, $6.68\\,\\text{s}$. It is not the mass of the tube that brakes the magnet but the eddy currents induced in the wall. Copper conducts better, so the currents and the braking are greater in it."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-rako",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a copper tube with a slit",
+      "prompt": "A narrow lengthwise slit is sawn along the whole length of the wall of a copper tube. The mass and material of the tube stay almost the same. How does the falling time of the magnet change compared with the intact copper tube?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "It hardly changes, because the tube still contains almost as much copper.",
+          "feedback": "The model's values contradict this: in the intact copper tube the falling time is $6.68\\,\\text{s}$, in the slit tube only $0.82\\,\\text{s}$. The eddy currents circulate around the tube, and the slit cuts their path. What matters is not the amount of copper but whether the current can go round a closed loop."
+        },
+        {
+          "text": "It becomes much shorter, because the slit cuts the currents that circulate around the tube.",
+          "correct": true,
+          "feedback": "The model's values support this: the falling time shortens from $6.68\\,\\text{s}$ to $0.82\\,\\text{s}$, but it is still about twice that of the plastic tube, $0.45\\,\\text{s}$, because smaller eddy currents still circulate in the wall around the slit. An eddy current needs a closed loop. For the same reason the iron core of a transformer is built from insulated laminations."
+        },
+        {
+          "text": "It becomes longer, because more currents appear at the edges of the slit and brake the magnet.",
+          "feedback": "The model's values contradict this: the falling time shortens from $6.68\\,\\text{s}$ to $0.82\\,\\text{s}$. Only small currents circulate at the edges of the slit; the large eddy current that circulated around the tube is cut, because the current cannot cross the slit."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Drop an object into a vertical tube one metre long. Change the material of the tube and the object, and compare the falling times, the graph and the energy bars.",
+      "howto": "Choose a tube and an object and press *Drop*. On the left you see the tube cut lengthwise. When the magnet falls in a metal tube, violet eddy-current rings appear below and above it, and their thickness shows the size of the braking force. The red arrows are the weight $\\overline{G}$ and the braking force $\\overline{F}_\\text{j}$ on the same scale. The graph shows the distance fallen $y$ as a function of time $t$; the latest drop in each tube stays visible. The energy bars show the decrease in potential energy $\\Delta E_\\text{p}$, the kinetic energy $E_\\text{k}$ and the energy converted into internal energy of the tube $Q$. Record a measurement only when the readout says that the object has fallen through the tube.",
+      "model": "The mass of the magnet is $20\\,\\text{g}$ and the length of the tube $1.00\\,\\text{m}$; the magnet starts from rest at the upper end of the tube, and the time is measured until it has fallen the length of the tube. The magnet in the picture is not to scale. There is no air resistance and no friction against the wall, and the effect of the ends of the tube is ignored. In a metal tube the braking force in the model is proportional to the speed, $F_\\text{j} = k v$. The coefficient $k$ is chosen so that in the copper tube the steady final speed of the magnet is $0.15\\,\\text{m/s}$, which is of the same order of magnitude as in school drop experiments. The electrical conductivity of aluminium is about $63\\,\\%$ of that of copper, so $k$ for the aluminium tube is $0.63$ times as large. For the slit tube the model's $k$ is estimated at one tenth of the value for the intact copper tube. The plastic tube and the non-magnetised steel object are not braked. The numbers are values calculated by the model, not measurements.",
+      "calc": "The weight $G = mg$ acts on the magnet downwards and the braking force $F_\\text{j} = k v$ upwards. As the speed grows, the braking force grows until it equals the weight. Then the magnet falls at a steady final speed\n\n$$v_\\text{t} = \\frac{mg}{k}$$\n\nThe energies are calculated from the distance fallen $y$ and the speed $v$: $\\Delta E_\\text{p} = m g y$, $E_\\text{k} = \\tfrac{1}{2} m v^2$ and the energy converted into internal energy of the tube $Q = \\Delta E_\\text{p} - E_\\text{k}$. In the plastic tube the object falls freely: $y = \\tfrac{1}{2} g t^2$ and $v = g t$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the material of the tube",
+      "intro": "Test prediction 1. The object is a neodymium magnet; change only the material of the tube. Drop the magnet into the plastic, aluminium and copper tubes and record for each the falling time, the speed at the end and the energy converted into internal energy of the tube.",
+      "initial": {
+        "putki": "muovi",
+        "kappale": "magneetti"
+      },
+      "locked": [
+        "kappale"
+      ],
+      "vary": "putki",
+      "names": {
+        "putki": "tube",
+        "kappale": "object"
+      },
+      "units": {
+        "putki": "",
+        "kappale": ""
+      },
+      "values": {
+        "putki": {
+          "muovi": "plastic tube",
+          "alumiini": "aluminium tube",
+          "kupari": "copper tube",
+          "rako": "copper tube with a slit"
+        },
+        "kappale": {
+          "magneetti": "neodymium magnet",
+          "teras": "non-magnetised steel object"
+        }
+      },
+      "measure": [
+        {
+          "key": "aika",
+          "label": "t (s)"
+        },
+        {
+          "key": "vLoppu",
+          "label": "v (m/s)"
+        },
+        {
+          "key": "lampo",
+          "label": "Q (mJ)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: a slit in the copper tube",
+      "intro": "Test prediction 2. The object is still a neodymium magnet. Drop it into the intact copper tube and into a copper tube with a lengthwise slit, and record the falling times and the energy converted into internal energy.",
+      "initial": {
+        "putki": "kupari",
+        "kappale": "magneetti"
+      },
+      "locked": [
+        "kappale"
+      ],
+      "vary": "putki",
+      "names": {
+        "putki": "tube",
+        "kappale": "object"
+      },
+      "units": {
+        "putki": "",
+        "kappale": ""
+      },
+      "values": {
+        "putki": {
+          "muovi": "plastic tube",
+          "alumiini": "aluminium tube",
+          "kupari": "copper tube",
+          "rako": "copper tube with a slit"
+        },
+        "kappale": {
+          "magneetti": "neodymium magnet",
+          "teras": "non-magnetised steel object"
+        }
+      },
+      "measure": [
+        {
+          "key": "aika",
+          "label": "t (s)"
+        },
+        {
+          "key": "lampo",
+          "label": "Q (mJ)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what brakes the magnet and where does the energy go?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write, on the basis of your tables: how do the material of the tube and a slit affect the falling time? Compare the internal energy $Q$ of the copper tube with the decrease in potential energy $mgh = 196.2\\,\\text{mJ}$ and explain where the energy of the magnet goes and why the magnet falls at a steady speed in the copper tube.",
+      "model": "In the plastic tube the magnet falls freely in $0.45\\,\\text{s}$ and has a speed of $4.43\\,\\text{m/s}$ at the end, and no internal energy is produced. In the aluminium tube the fall takes $4.24\\,\\text{s}$ and in the copper tube $6.68\\,\\text{s}$; the final speeds are only $0.24\\,\\text{m/s}$ and $0.15\\,\\text{m/s}$. The eddy currents induced in the metal wall brake the magnet, and in copper, which conducts better, the braking is greater. In the slit tube the time shortens to $0.82\\,\\text{s}$, because the slit cuts the currents that circulate around the tube. The braking still does not disappear: even in the slit tube $Q = 173.9\\,\\text{mJ}$, because smaller eddy currents still circulate in the wall. In the copper tube $Q = 196.0\\,\\text{mJ}$, so almost all of the decrease in potential energy, $196.2\\,\\text{mJ}$, has been converted through the eddy currents into internal energy of the tube. The braking force grows with the speed until it equals the weight; after that the net force is zero and the speed stays the same. The values are calculated by the model.",
+      "criteria": [
+        "I said that the fall takes longer in the metal tubes than in the plastic tube and longest in the copper tube, and I gave the falling times from the table.",
+        "I explained that the braking is due to eddy currents induced in the wall of the tube and not to the magnet attracting the metal.",
+        "I said that the slit shortens the falling time because the current cannot circulate around the tube.",
+        "I compared the internal energy $Q$ of the copper tube with the decrease in potential energy and stated that almost all of the energy is converted into internal energy of the tube.",
+        "I explained the steady speed by the braking force growing with the speed until it equals the weight."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the model's values from the experiments and with Lenz's law. Then return to the opening question: what brakes the magnet in the copper tube, and why does a steel nut fall through the same tube without being braked?",
+      "predictions": [
+        "ennuste-putket",
+        "ennuste-rako"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A light aluminium ring hangs from a thread. The north pole of a bar magnet is at first right next to the ring, and the magnet is pulled quickly away from the ring. A student reasons: \"By Lenz's law the field of the induced current is always opposite to the field of the magnet. So the side of the ring facing the magnet is a north pole, and the ring repels the magnet and swings away from it.\" Where is the error?",
+      "choices": [
+        {
+          "text": "The induced current opposes the change in flux, not the field. The flux decreases, so the side of the ring facing the magnet is a south pole and the ring swings after the magnet.",
+          "correct": true,
+          "feedback": "Correct. When the magnet moves away, the flux through the ring decreases. The field of the induced current tries to keep the flux as it was, so at the centre of the ring it points in the same direction as the field of the magnet. The side of the ring facing the magnet is a south pole, and it attracts the north pole of the magnet: the ring opposes the magnet moving away."
+        },
+        {
+          "text": "Aluminium is not a ferromagnetic material, so no induced current appears in the ring and the ring does not move at all when the magnet is pulled away.",
+          "feedback": "An induced current does not need a ferromagnetic material but a closed conducting loop through which the flux changes. Aluminium conducts well, so a current appears in the ring. The student's error is that the induced current opposes the change in flux and not the field."
+        },
+        {
+          "text": "The reasoning is correct, but the ring swings away from the magnet only when the magnet moves south pole first and not north pole first.",
+          "feedback": "The direction of the ring's motion does not depend on which pole is on the side of the ring, but on whether the magnet is approaching or moving away. The ring repels an approaching magnet and attracts one that is moving away. Here the magnet is moving away, so the ring swings after it."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: the brake of a roller coaster",
+      "prompt": "On the final straight of a roller coaster, copper plates fixed under the car pass between strong permanent magnets. The eddy currents slow the $2.4\\,\\text{t}$ car from a speed of $25\\,\\text{m/s}$ to a speed of $10\\,\\text{m/s}$ over a horizontal distance of $30\\,\\text{m}$. Other resistances are ignored. What is the average braking force? Give your answer in kilonewtons.",
+      "answer": 21,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "hints": [
+        "Where does the kinetic energy lost by the car go? Which force does work over the braking distance?",
+        "The work done by the braking force equals the decrease in kinetic energy: $F s = \\tfrac{1}{2} m v_1^2 - \\tfrac{1}{2} m v_2^2$.",
+        "Solve for the force: $F = \\dfrac{m (v_1^2 - v_2^2)}{2 s}$, where $m = 2.4 \\cdot 1000\\,\\text{kg}$, $v_1 = 25\\,\\text{m/s}$, $v_2 = 10\\,\\text{m/s}$ and $s = 30\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 25,
+          "feedback": "You calculated the kinetic energy as if the car stopped completely. The car slows to a speed of $10\\,\\text{m/s}$, so the brakes convert into internal energy only the difference between the kinetic energies."
+        },
+        {
+          "value": 9,
+          "feedback": "You squared the difference of the speeds. Kinetic energy is proportional to the square of the speed, so the difference is $\\tfrac{1}{2} m (v_1^2 - v_2^2)$, not $\\tfrac{1}{2} m (v_1 - v_2)^2$."
+        },
+        {
+          "value": 42,
+          "feedback": "The formula for kinetic energy is missing the factor $\\tfrac{1}{2}$: $E_\\text{k} = \\tfrac{1}{2} m v^2$."
+        }
+      ],
+      "solution": "**Given:** mass of the car $m = 2.4\\,\\text{t}$, initial speed $v_1 = 25\\,\\text{m/s}$, final speed $v_2 = 10\\,\\text{m/s}$, braking distance $s = 30\\,\\text{m}$\n\n**Find:** the average magnitude $F$ of the braking force in kilonewtons\n\n**Principle:** The track is horizontal and other resistances are ignored, so only the braking force of the eddy currents does work. Energy is conserved: the work $F s$ of the force equals the decrease in kinetic energy, and the eddy currents convert this energy into internal energy of the copper plates.\n\n**Formula:** $F s = \\tfrac{1}{2} m v_1^2 - \\tfrac{1}{2} m v_2^2$, so $F = \\dfrac{m (v_1^2 - v_2^2)}{2 s}$\n\n**Conversions:** $m = 2.4\\,\\text{t} = 2.4 \\cdot 1000\\,\\text{kg} = 2400\\,\\text{kg}$. Finally $1\\,\\text{kN} = 1000\\,\\text{N}$.\n\n**Substitution:** $v_1^2 - v_2^2 = (25\\,\\text{m/s})^2 - (10\\,\\text{m/s})^2 = 525\\,\\text{m}^2/\\text{s}^2$, so $F = \\dfrac{2400\\,\\text{kg} \\cdot 525\\,\\text{m}^2/\\text{s}^2}{2 \\cdot 30\\,\\text{m}} = 21\\,000\\,\\text{N} = 21\\,\\text{kN}$\n\n**Answer:** $21\\,\\text{kN}$, two significant figures like the mass $2.4\\,\\text{t}$ and the speeds.\n\n**Reasonableness:** The deceleration is $21\\,000\\,\\text{N} : 2400\\,\\text{kg} \\approx 8.8\\,\\text{m/s}^2$, a little less than $g$, which is strong braking but tolerable for a person. Of the kinetic energy, $630\\,\\text{kJ}$ is converted into internal energy of the plates, so the plates warm up with every braking."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. In level 1 tasks you deduce the direction of an induced current or use one formula for energy or power, in level 2 tasks you combine two steps, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: a ring and a magnet",
+      "prompt": "A light aluminium ring hangs from a thread. The south pole of a bar magnet is pushed quickly towards the ring. What does the ring do while the magnet moves?",
+      "choices": [
+        {
+          "text": "It swings away from the magnet, because a south pole appears on the side of the ring facing the magnet.",
+          "correct": true,
+          "feedback": "Correct. The flux through the ring increases, and the induced current opposes the increase: the side of the ring facing the magnet becomes the same pole as the approaching pole, here a south pole. Like poles repel, so the ring swings away. The result does not depend on which pole approaches."
+        },
+        {
+          "text": "It swings towards the magnet, because a magnet attracts metals.",
+          "feedback": "Aluminium is not a ferromagnetic material, and the magnet does not attract it. The moving magnet induces a current in the ring whose field opposes the increase in flux, so the ring repels an approaching magnet."
+        },
+        {
+          "text": "It does not move, because a south pole does not affect the ring in the same way as a north pole.",
+          "feedback": "Either pole changes the flux through the ring. When a south pole approaches, a south pole appears on the side of the ring facing the magnet, and the ring repels the magnet in the same way as it repels an approaching north pole."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: heating power",
+      "prompt": "An $18\\,\\text{g}$ magnet falls in a vertical aluminium tube at a steady speed of $0.24\\,\\text{m/s}$. At what rate does the internal energy of the tube increase? Give your answer in milliwatts.",
+      "answer": 42,
+      "unit": "mW",
+      "tolerance": 0.02,
+      "hints": [
+        "The speed is steady. What is the braking force then?",
+        "At a steady speed the braking force equals the weight, $F = m g$, and the power is $P = F v$.",
+        "$P = 0.018\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 0.24\\,\\text{m/s}$"
+      ],
+      "mistakes": [
+        {
+          "value": 4.32,
+          "feedback": "You multiplied the mass and the speed, but the braking force is the weight $m g$. Remember to multiply also by the acceleration of free fall $g = 9.81\\,\\text{m/s}^2$."
+        },
+        {
+          "value": 0.518,
+          "feedback": "You calculated the kinetic energy $\\tfrac{1}{2} m v^2$ of the magnet. At a steady speed the kinetic energy does not change; what is converted into internal energy is potential energy, at the rate $P = F v = m g v$."
+        }
+      ],
+      "solution": "**Given:** mass of the magnet $m = 18\\,\\text{g}$, steady speed $v = 0.24\\,\\text{m/s}$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the power $P$ at which the internal energy of the tube increases, in milliwatts\n\n**Principle:** The speed is steady, so the net force is zero and the braking force of the eddy currents equals the weight, $F = m g$. The kinetic energy does not change, so potential energy is converted entirely into internal energy of the tube at the rate at which the braking force does work: $P = F v$.\n\n**Formula:** $F = m g$ and $P = F v$, so $P = m g v$\n\n**Conversions:** $m = 18\\,\\text{g} = 18 \\cdot 0.001\\,\\text{kg} = 0.018\\,\\text{kg}$. Finally $1\\,\\text{W} = 1000\\,\\text{mW}$.\n\n**Substitution:** $P = 0.018\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 0.24\\,\\text{m/s} = 0.042379\\,\\text{W} = 42.379\\,\\text{mW}$\n\n**Answer:** $42\\,\\text{mW}$, two significant figures like the mass $18\\,\\text{g}$ and the speed $0.24\\,\\text{m/s}$.\n\n**Reasonableness:** An estimate with round numbers: the weight is about $0.2\\,\\text{N}$, and $0.2\\,\\text{N} \\cdot 0.2\\,\\text{m/s} = 0.04\\,\\text{W}$. The power is very small, so the tube does not feel warm."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: why does the induced current oppose the change?",
+      "prompt": "Imagine a world in which the induced current flowed against Lenz's law, that is, helped the change. Using conservation of energy, explain what would happen when a magnet is dropped into a copper tube, and why Lenz's law has to hold.",
+      "model": "If the induced current helped the change, the eddy current below the falling magnet would pull the magnet downwards and the one above would push it. The magnet would accelerate faster than in free fall, so the flux would change ever faster, the eddy currents would grow and the force accelerating the magnet would grow. The kinetic energy of the magnet and the internal energy of the tube would increase together by more than the potential energy decreases: energy would be created from nothing, and the tube would give a perpetual motion machine. Conservation of energy prevents this. So the induced current must oppose the change: the eddy currents brake the magnet, and part of the potential energy is converted into internal energy of the tube, but the total amount of energy stays the same.",
+      "criteria": [
+        "I say that a current that helped the change would accelerate the magnet and that the acceleration would increase the current still further.",
+        "I explain that the kinetic energy and internal energy would then increase by more than the potential energy decreases, that is, energy would be created from nothing.",
+        "I state that conservation of energy requires the induced current to oppose the change, so the work done in moving the magnet is converted into electrical energy and internal energy."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and open the answer only after that."
+    }
+  ]
+}

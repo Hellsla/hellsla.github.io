@@ -1,0 +1,379 @@
+{
+  "version": 1,
+  "contribution": "The force of a magnetic field on a moving charge extends to a current-carrying wire: $F = I l B \\sin\\alpha$ with the direction from the right-hand rule, the force between two wires from the field of one wire, and the applications of the direct-current motor and the loudspeaker; the field of a magnet is determined from the reading of a current balance.",
+  "learn": [
+    "calculate the force on a current-carrying wire in a magnetic field and deduce its direction.",
+    "explain why parallel current-carrying wires attract or repel each other, and calculate the force between them.",
+    "explain how a direct-current motor and a loudspeaker work."
+  ],
+  "prior": [
+    "A magnetic field exerts on a moving charged particle a force perpendicular to the velocity and the field (chapter *Charged particle in electric and magnetic fields*)",
+    "The magnetic field of a straight current-carrying wire circles the wire, and its magnitude is $B = \\mu_0 I : (2\\pi r)$ (chapter *Magnetic field of a wire and a coil*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "When a loudspeaker plays a bass note, you can see its cone moving back and forth. The blades of a desk fan start to turn as soon as the plug is pushed into the wall. Nobody touches either of them, and neither has any burning fuel. Both, however, contain a magnet and a wire carrying an electric current.",
+      "question": "How can a magnet make a wire move, if the wire is copper, which a magnet does not attract?"
+    },
+    {
+      "id": "kertaus-kentta",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: the magnetic field of a straight wire",
+      "prompt": "A current flows in a long straight wire. How large is the magnetic flux density at twice the distance from the wire compared with the original distance?",
+      "choices": [
+        {
+          "text": "Half of the original, because $B = \\mu_0 I : (2\\pi r)$ is inversely proportional to the distance.",
+          "correct": true,
+          "feedback": "Correct. The field of a straight wire circles the wire, and its magnitude is inversely proportional to the distance $r$ (chapter *Magnetic field of a wire and a coil*). Today this field is used to explain why two current-carrying wires attract or repel each other."
+        },
+        {
+          "text": "A quarter of the original, because the field weakens with the square of the distance.",
+          "feedback": "It is the electric field of a point charge that weakens with the square of the distance. The field of a long straight wire is $B = \\mu_0 I : (2\\pi r)$, so at twice the distance it is half (chapter *Magnetic field of a wire and a coil*)."
+        },
+        {
+          "text": "The same, because the current is the same everywhere in the wire.",
+          "feedback": "The current is the same, but the field weakens as the distance grows: $B = \\mu_0 I : (2\\pi r)$. At twice the distance the field is half (chapter *Magnetic field of a wire and a coil*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-suunta",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: does the balance feel the current?",
+      "prompt": "In a current balance a magnet stands on a digital balance, and a rigid copper wire is held by a stand between the poles of the magnet. The wire touches neither the magnet nor the balance. What happens to the reading of the balance when a current is switched on in the wire, and when the direction of the current is then reversed (same magnitude of current)?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 4
+      },
+      "choices": [
+        {
+          "text": "The reading does not change with either current, because the wire touches neither the magnet nor the balance.",
+          "feedback": "The values of the model refute this: without a current the reading is $245.30\\,\\text{g}$, but with $6.0\\,\\text{A}$ it is $247.75\\,\\text{g}$. The magnetic field transmits the force without contact, and by Newton's third law the wire pushes the magnet with an equal and opposite force."
+        },
+        {
+          "text": "The reading changes, and when the direction of the current is reversed it changes by the same amount in the opposite direction.",
+          "correct": true,
+          "feedback": "The values of the model support this: with $6.0\\,\\text{A}$ the reading is $247.75\\,\\text{g}$ and with $-6.0\\,\\text{A}$ it is $242.85\\,\\text{g}$, each $2.45\\,\\text{g}$ from the zero reading $245.30\\,\\text{g}$. The direction of the force depends on the direction of the current, and the change is proportional to the current."
+        },
+        {
+          "text": "The reading changes, but the direction of the current does not matter: the change is always in the same direction.",
+          "feedback": "The values of the model refute this: with $6.0\\,\\text{A}$ the reading rises to $247.75\\,\\text{g}$, but with $-6.0\\,\\text{A}$ it falls to $242.85\\,\\text{g}$. The magnetic force is not an attraction but is perpendicular to the current and the field, so reversing the current reverses the force."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the wire oblique to the field",
+      "prompt": "A current of $6.0\\,\\text{A}$ flows in the wire of the current balance, and the wire is at first perpendicular to the field ($\\alpha = 90^\\circ$). The wire is turned in the horizontal plane so that the angle between the wire and the field is $30^\\circ$. The length of wire in the field does not change. How does the change in the reading, that is the reading minus the zero reading, change?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "It stays the same, because the current, the field and the length of the wire are the same.",
+          "feedback": "The values of the model refute this: for the perpendicular wire the change is $2.45\\,\\text{g}$, at $30^\\circ$ only $1.22\\,\\text{g}$. Only the component of the field perpendicular to the wire, $B \\sin\\alpha$, produces a force, and a wire parallel to the field experiences no force at all."
+        },
+        {
+          "text": "It falls to a half.",
+          "correct": true,
+          "feedback": "The values of the model support this: the change falls from $2.45\\,\\text{g}$ to $1.22\\,\\text{g}$. At $60^\\circ$ it is $2.12\\,\\text{g}$ and at $0^\\circ$ zero. The change is proportional to the sine of the angle, and $\\sin 30^\\circ = 0.5$."
+        },
+        {
+          "text": "It falls to a third, because the angle falls to a third.",
+          "feedback": "The values of the model refute this: at $30^\\circ$ the change is $1.22\\,\\text{g}$, which is half of $2.45\\,\\text{g}$, not a third. The force is not proportional to the angle but to the sine of the angle: $\\sin 30^\\circ = 0.5$ and $\\sin 90^\\circ = 1$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the current balance a magnet stands on the balance and a wire is between its poles. Change the current and the angle of the wire and follow the reading of the balance.",
+      "howto": "Adjust the current $I$ and the angle $\\alpha$ between the wire and the field, and choose the magnet and the length $l$ of wire in the field. A negative current means that the current flows in the opposite direction in the wire. The *side view* shows the balance, the magnet and the wire, and the force on the wire as a red arrow whose length shows the magnitude of the force. In the *top view* you see the poles of the magnet from above, the green field lines, the angle of the wire and the violet current arrow. The force points out of the page (a dot in a circle) or into the page (a cross in a circle). The reading of the balance is in the readings row and on the display of the balance.",
+      "model": "The field is uniform between the poles and zero outside them. Only the horizontal lower part of the wire is in the field; the forces on the vertical lead wires are horizontal and do not change the reading of the balance. The wire is rigidly fixed to the stand, so it does not move. The magnitudes of the fields of the magnets are not shown: they are determined from the measurements. The readings are values calculated by the model to a precision of $0.01\\,\\text{g}$, not measurements, and they contain no measurement error.",
+      "calc": "The field exerts on the wire a vertical force $F = I l B \\sin\\alpha$. By Newton's third law the wire exerts on the magnet an equal and opposite force, so the balance shows the reading\n\n$$m = m_0 + \\frac{F}{g}$$\n\nwhere $m_0 = 245.30\\,\\text{g}$ is the reading without a current and $g = 9.81\\,\\text{m/s}^2$. From the change in the reading $\\Delta m = m - m_0$ we obtain the force $F = \\Delta m \\cdot g$ and from it the magnetic flux density $B = F : (I l)$, when the wire is perpendicular to the field."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the current changes",
+      "intro": "Test prediction 1. The wire is perpendicular to the field, and the magnet and the length of wire stay the same; change only the current. First record the reading without a current (the zero reading), then at least one positive and one negative current (a negative current flows in the opposite direction in the wire), for example $3.0\\,\\text{A}$, $6.0\\,\\text{A}$, $-3.0\\,\\text{A}$ and $-6.0\\,\\text{A}$. Calculate the change in the reading for each row.",
+      "initial": {
+        "I": 0,
+        "alpha": 90,
+        "magneetti": "A",
+        "l": "5"
+      },
+      "locked": [
+        "alpha",
+        "magneetti",
+        "l"
+      ],
+      "vary": "I",
+      "names": {
+        "I": "current",
+        "alpha": "angle",
+        "magneetti": "magnet",
+        "l": "wire in the field"
+      },
+      "units": {
+        "I": "A",
+        "alpha": "°",
+        "magneetti": "",
+        "l": "cm"
+      },
+      "values": {
+        "magneetti": {
+          "A": "magnet A",
+          "B": "magnet B"
+        },
+        "l": {
+          "5": "$5.0\\,\\text{cm}$",
+          "2.5": "$2.5\\,\\text{cm}$"
+        }
+      },
+      "measure": [
+        {
+          "key": "lukema",
+          "label": "m (g)"
+        }
+      ],
+      "min": 4
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: only the angle changes",
+      "intro": "Test prediction 2. The current is $6.0\\,\\text{A}$, and the magnet and the length of wire stay the same; change only the angle between the wire and the field. Record the reading at least at the angles $90^\\circ$ and $30^\\circ$, and if you wish also $60^\\circ$ and $0^\\circ$. The zero reading is the same as in experiment 1.",
+      "initial": {
+        "I": 6,
+        "alpha": 90,
+        "magneetti": "A",
+        "l": "5"
+      },
+      "locked": [
+        "I",
+        "magneetti",
+        "l"
+      ],
+      "vary": "alpha",
+      "names": {
+        "I": "current",
+        "alpha": "angle",
+        "magneetti": "magnet",
+        "l": "wire in the field"
+      },
+      "units": {
+        "I": "A",
+        "alpha": "°",
+        "magneetti": "",
+        "l": "cm"
+      },
+      "values": {
+        "magneetti": {
+          "A": "magnet A",
+          "B": "magnet B"
+        },
+        "l": {
+          "5": "$5.0\\,\\text{cm}$",
+          "2.5": "$2.5\\,\\text{cm}$"
+        }
+      },
+      "measure": [
+        {
+          "key": "lukema",
+          "label": "m (g)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: the force and the field of the magnet",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "On the basis of your tables, write how the change in the reading depends on the current and its direction, and how it depends on the angle of the wire. From the numbers of experiment 1, calculate the force that the field exerts on the wire at $6.0\\,\\text{A}$, and determine the magnetic flux density of magnet A when $5.0\\,\\text{cm}$ of wire is in the field.",
+      "model": "Without a current the reading is $245.30\\,\\text{g}$. At $3.0\\,\\text{A}$ the change is $1.22\\,\\text{g}$ and at $6.0\\,\\text{A}$ $2.45\\,\\text{g}$, so the change is proportional to the current; with negative currents the reading falls by the same amount. At $6.0\\,\\text{A}$ the force is $F = \\Delta m \\cdot g = 0.00245\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 0.0240\\,\\text{N}$, so $B = F : (I l) = 0.0240\\,\\text{N} : (6.0\\,\\text{A} \\cdot 0.050\\,\\text{m}) = 0.080\\,\\text{T}$. In experiment 2 the change fell to half, $1.22\\,\\text{g}$, at $30^\\circ$ and to zero at $0^\\circ$, so the force is proportional to the sine of the angle: $F = I l B \\sin\\alpha$. The values are calculated by the model; in a real current balance the readings would vary slightly.",
+      "criteria": [
+        "I stated that the change in the reading is proportional to the current and changes sign when the direction of the current reverses.",
+        "I calculated the force from the change in the reading with the equation $F = \\Delta m \\cdot g$ and converted grams to kilograms.",
+        "I solved the magnetic flux density $B = F : (I l)$ and obtained about $0.080\\,\\text{T}$.",
+        "I stated that the force depends on the sine of the angle and not directly on the angle, and that a wire parallel to the field experiences no force."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the formula $F = I l B \\sin\\alpha$. Then return to the question at the start: how can a magnet move a copper wire that it does not attract? Also explain why the cone of a loudspeaker moves back and forth and not in only one direction.",
+      "predictions": [
+        "ennuste-suunta",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "In a uniform magnetic field $B = 0.30\\,\\text{T}$ there is $20\\,\\text{cm}$ of straight wire carrying a current of $5.0\\,\\text{A}$. The angle between the wire and the field is $30^\\circ$. A student calculates\n\n$$\\begin{aligned} F &= I l B \\cos 30^\\circ \\\\ &= 5.0\\,\\text{A} \\cdot 0.20\\,\\text{m} \\cdot 0.30\\,\\text{T} \\\\ &\\quad \\cdot 0.866 \\\\ &\\approx 0.26\\,\\text{N} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The formula must have $\\sin\\alpha$, because the force is produced by the component of the field perpendicular to the wire. The correct result is $0.15\\,\\text{N}$.",
+          "correct": true,
+          "feedback": "Correct. The angle is between the wire and the field, and the component of the field perpendicular to the wire is $B \\sin\\alpha$. Therefore $F = 5.0\\,\\text{A} \\cdot 0.20\\,\\text{m} \\cdot 0.30\\,\\text{T} \\cdot 0.5 = 0.15\\,\\text{N}$. Check with a limiting case: for a wire parallel to the field ($\\alpha = 0^\\circ$) the force must be zero, but the cosine would give the greatest force."
+        },
+        {
+          "text": "The length of the wire should have been substituted in centimetres, $20\\,\\text{cm}$.",
+          "feedback": "The length has been correctly converted to metres: $20\\,\\text{cm} = 20 \\cdot 0.01\\,\\text{m} = 0.20\\,\\text{m}$. Since $\\text{T} = \\tfrac{\\text{N}}{\\text{A}\\cdot\\text{m}}$, the result is in newtons only if the length is in metres. The error is in the function of the angle."
+        },
+        {
+          "text": "The angle should not be taken into account at all, because the angle affects only the direction of the force: $F = I l B = 0.30\\,\\text{N}$.",
+          "feedback": "The angle affects the magnitude of the force: a wire parallel to the field experiences no force at all. The force $I l B = 0.30\\,\\text{N}$ is obtained only when the wire is perpendicular to the field. Here the angle is $30^\\circ$, so the force is $0.30\\,\\text{N} \\cdot \\sin 30^\\circ = 0.15\\,\\text{N}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: jump leads",
+      "prompt": "A car with a flat battery is started with the help of the battery of another car, using jump leads. When the starter motor turns the engine, a current of $150\\,\\text{A}$ flows in one lead and an equal current back in the other. The leads run parallel for $2.0\\,\\text{m}$, with the distance between their centres $1.5\\,\\text{cm}$. How large is the force between the leads? Answer in newtons.",
+      "answer": 0.6,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "In what field is the second lead? What is the magnetic field of the first lead at the second lead, and in which direction does it point relative to the lead?",
+        "The field of the first lead at the second is $B_1 = \\mu_0 I_1 : (2\\pi r)$, and it is perpendicular to the second lead, so $F = I_2 l B_1$.",
+        "$B_1 = \\dfrac{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 150\\,\\text{A}}{2\\pi \\cdot 0.015\\,\\text{m}} = 2.0 \\cdot 10^{-3}\\,\\text{T}$, and $F = 150\\,\\text{A} \\cdot 2.0\\,\\text{m} \\cdot B_1$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.006,
+          "feedback": "You substituted the distance $1.5$ as if it were in metres. The distance is $1.5\\,\\text{cm} = 1.5 \\cdot 0.01\\,\\text{m} = 0.015\\,\\text{m}$, so the force is a hundred times larger."
+        },
+        {
+          "value": 3.77,
+          "feedback": "Your formula lacks the $2\\pi$ in the denominator. The field of a straight wire is $B_1 = \\mu_0 I_1 : (2\\pi r)$, because the field is spread over the circle around the wire."
+        },
+        {
+          "value": 0.3,
+          "feedback": "You calculated the force over a distance of one metre. The leads run parallel for $2.0\\,\\text{m}$, so the force on the whole parallel part is twice as large."
+        }
+      ],
+      "solution": "**Given:** currents of the leads $I_1 = I_2 = 150\\,\\text{A}$ in opposite directions, length of the parallel part $l = 2.0\\,\\text{m}$, distance $r = 1.5\\,\\text{cm}$, $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$\n\n**Find:** force $F$ between the leads in newtons\n\n**Principle:** Each lead is in the magnetic field of the other. The field of the first lead circles around it, so at the second lead it is perpendicular to the lead and equally strong along the whole parallel stretch. A force $F = I_2 l B_1$ therefore acts on the second lead. The currents are in opposite directions, so the leads repel each other.\n\n**Formula:** $B_1 = \\dfrac{\\mu_0 I_1}{2\\pi r}$ and $F = I_2 l B_1$\n\n**Conversions:** $r = 1.5\\,\\text{cm} = 1.5 \\cdot 0.01\\,\\text{m} = 0.015\\,\\text{m}$\n\n**Substitution:** $B_1 = \\dfrac{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 150\\,\\text{A}}{2\\pi \\cdot 0.015\\,\\text{m}} = 2.0 \\cdot 10^{-3}\\,\\text{T}$ and $F = 150\\,\\text{A} \\cdot 2.0\\,\\text{m} \\cdot 2.0 \\cdot 10^{-3}\\,\\text{T} = 0.60\\,\\text{N}$\n\n**Answer:** $0.60\\,\\text{N}$, two significant figures like the distance $1.5\\,\\text{cm}$ and the length $2.0\\,\\text{m}$. The leads repel each other.\n\n**Reasonableness:** The field at the second lead is $B_1 = 2.0 \\cdot 10^{-3}\\,\\text{T}$, about $40$ times the Earth's field but small compared with a magnet. The force corresponds to the weight of an object of about $60\\,\\text{g}$, so the leads may jerk slightly when the motor starts, but they do not jump."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. The tasks of level 1 use the formula $F = I l B \\sin\\alpha$ directly, the tasks of level 2 combine two steps, such as the field of a wire and the force, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: the commutator",
+      "prompt": "What is the function of the commutator in a direct-current motor?",
+      "choices": [
+        {
+          "text": "It reverses the direction of the current in the loop every half turn, so that the rotation continues.",
+          "correct": true,
+          "feedback": "Correct. Without a commutator, the forces on the sides of the loop would turn the loop back after half a turn, and the loop would end up swinging about the position in which it is perpendicular to the field. When the direction of the current reverses, the direction of the forces reverses too, and the rotation continues."
+        },
+        {
+          "text": "It strengthens the magnetic field, so that a larger force acts on the loop.",
+          "feedback": "The field is strengthened by an iron core or a stronger magnet. The commutator is a split ring through which the current enters the loop; it reverses the direction of the current in the loop every half turn."
+        },
+        {
+          "text": "It changes the direct current of the power supply into an alternating current, which is fed back into the mains.",
+          "feedback": "The motor feeds nothing into the mains: the power supply gives it direct current, and the commutator reverses the current only in the loop, at half-turn intervals. The purpose is to keep the turning effect of the forces on the loop in the same direction."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: an oblique wire",
+      "prompt": "In a uniform magnetic field $B = 0.20\\,\\text{T}$ there is $0.50\\,\\text{m}$ of straight wire carrying a current of $4.0\\,\\text{A}$. The angle between the wire and the field is $30^\\circ$. How large is the force on the wire? Answer in newtons.",
+      "answer": 0.2,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Which component of the field produces the force: the one along the wire or the one perpendicular to it?",
+        "$F = I l B \\sin\\alpha$, where $\\alpha$ is the angle between the wire and the field.",
+        "$F = 4.0\\,\\text{A} \\cdot 0.50\\,\\text{m} \\cdot 0.20\\,\\text{T} \\cdot \\sin 30^\\circ$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.346,
+          "feedback": "You used the cosine. The force is produced by the component of the field perpendicular to the wire, $B \\sin\\alpha$; a wire parallel to the field ($\\alpha = 0^\\circ$) experiences no force."
+        },
+        {
+          "value": 0.4,
+          "feedback": "This is the force on a perpendicular wire. At $30^\\circ$ the force is $\\sin 30^\\circ = 0.5$ times this."
+        }
+      ],
+      "solution": "**Given:** $B = 0.20\\,\\text{T}$, $l = 0.50\\,\\text{m}$, $I = 4.0\\,\\text{A}$, angle between the wire and the field $\\alpha = 30^\\circ$\n\n**Find:** force $F$ on the wire in newtons\n\n**Principle:** The field is uniform and the wire straight, so the force is $F = I l B \\sin\\alpha$. The wire is oblique, so only the component of the field perpendicular to the wire, $B \\sin\\alpha$, produces a force.\n\n**Formula:** $F = I l B \\sin\\alpha$\n\n**Conversions:** None needed: the quantities are in SI units, and $\\text{A} \\cdot \\text{m} \\cdot \\text{T} = \\text{N}$.\n\n**Substitution:** $F = 4.0\\,\\text{A} \\cdot 0.50\\,\\text{m} \\cdot 0.20\\,\\text{T} \\cdot \\sin 30^\\circ = 0.40\\,\\text{N} \\cdot 0.5 = 0.20\\,\\text{N}$\n\n**Answer:** $0.20\\,\\text{N}$, two significant figures like the data.\n\n**Reasonableness:** For a perpendicular wire the force would be $0.40\\,\\text{N}$. For an oblique wire it must be smaller, and at $30^\\circ$ it is exactly half, because $\\sin 30^\\circ = 0.5$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: the loudspeaker",
+      "prompt": "Explain why the cone of a loudspeaker vibrates at the same frequency as the current from the amplifier. Also explain why the field of the loudspeaker magnet is made radial in the gap.",
+      "model": "The voice coil is in the gap of the magnet, and the field exerts on the wire of the coil a force $F = I l B$ along the axis of the coil. The direction of the force depends on the direction of the current. The alternating current from the amplifier changes direction in step with the signal, so the force pushes the coil, and the cone attached to it, alternately forwards and backwards at the same frequency. The cone compresses and rarefies the air, and a sound wave of the same frequency is produced. In a uniform field the forces on opposite sides of a closed coil would be in opposite directions and would cancel, so the coil would not move. In a radial field every part of the coil is perpendicular to the field, so the greatest possible force acts on every part and all the forces point in the same direction, along the axis. Then the coil moves straight back and forth and does not tilt.",
+      "criteria": [
+        "I state that the field exerts a force on the coil carrying a current and that the direction of the force depends on the direction of the current.",
+        "I link the reversing of the alternating current to the back-and-forth motion of the cone at the same frequency.",
+        "I explain that in a uniform field the forces on the coil would cancel, but in a radial field the coil is perpendicular to the field everywhere, so the forces are in the same direction and add up.",
+        "I mention that the motion of the cone produces a sound wave in the air."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and open the answer only afterwards."
+    }
+  ]
+}

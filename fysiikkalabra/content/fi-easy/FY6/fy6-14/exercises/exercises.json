@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-14-L1-01",
+      "level": 1,
+      "text": "Punaisen LEDin jännite on $2{,}0\\,\\text{V}$, ja sen läpi kulkee $15\\,\\text{mA}$:n virta. Kuinka suuri on LEDin teho? Vastaa milliwatteina.",
+      "answer": 30.0,
+      "unit": "mW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L1-02",
+      "level": 1,
+      "text": "Valkoinen LED kytketään $5{,}0\\,\\text{V}$:n USB-virtalähteeseen etuvastuksen kautta. LEDin jännite on $3{,}1\\,\\text{V}$, ja sen virraksi halutaan $20\\,\\text{mA}$. Kuinka suuri etuvastus tarvitaan? Vastaa ohmeina.",
+      "answer": 95.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L1-03",
+      "level": 1,
+      "text": "Piidiodi on kytketty päästösuuntaan $9{,}0\\,\\text{V}$:n paristoon. Diodin kanssa sarjassa on $1{,}0\\,\\text{k}\\Omega$:n vastus. Diodin jännite on $0{,}70\\,\\text{V}$. Kuinka suuri virta piirissä kulkee? Vastaa milliampeereina.",
+      "answer": 8.3,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L1-04",
+      "level": 1,
+      "text": "Mökin aurinkopaneeli lataa akkua. Paneelin jännite on $17{,}5\\,\\text{V}$, ja sen antama virta on $5{,}40\\,\\text{A}$. Kuinka suuri on paneelin teho?",
+      "answer": 94.5,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L1-05",
+      "level": 1,
+      "text": "Kuvaajassa on vihreän LEDin ominaiskäyrä. Lue kuvaajasta LEDin jännite, kun virta on $10\\,\\text{mA}$. Laske sitten LEDin teho tällä virralla. Vastaa milliwatteina.",
+      "figure": "fy6-14/ex-led",
+      "answer": 22.0,
+      "unit": "mW",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-14-L2-01",
+      "level": 2,
+      "text": "Opiskelija kytkee punaisen LEDin ja $470\\,\\Omega$:n etuvastuksen sarjaan $9{,}0\\,\\text{V}$:n paristoon, mutta LED on vahingossa estosuunnassa. Oleta, että LEDin läpi ei kulje virtaa estosuunnassa. Kuinka suuri jännite on LEDin yli? Vastaa voltteina.",
+      "answer": 9.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L2-02",
+      "level": 2,
+      "text": "Kaksi punaista LEDiä ja etuvastus kytketään sarjaan $9{,}0\\,\\text{V}$:n paristoon. Kummankin LEDin jännite on $2{,}0\\,\\text{V}$, ja virraksi halutaan $20\\,\\text{mA}$. Kuinka suuri etuvastus tarvitaan? Vastaa ohmeina.",
+      "answer": 250.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L2-03",
+      "level": 2,
+      "text": "Omakotitalon katolla olevan aurinkopaneelin pinta-ala on $1{,}6\\,\\text{m}^2$. Kun valon voimakkuus on $800\\,\\text{W/m}^2$, paneeli antaa sähkötehon $260\\,\\text{W}$. Mikä on paneelin hyötysuhde? Vastaa prosentteina.",
+      "answer": 20.3125,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L2-04",
+      "level": 2,
+      "text": "Pihavalaisimen aurinkokenno lataa valaisimen akkua päivän aikana. Kennon teho on keskimäärin $0{,}35\\,\\text{W}$, ja se lataa akkua $6{,}0\\,\\text{h}$. Kuinka paljon sähköenergiaa kenno tuottaa tänä aikana? Vastaa kilojouleina.",
+      "answer": 7.56,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-14-L3-01",
+      "level": 3,
+      "text": "Taskulampussa on punainen LED, jonka jännite on $2{,}0\\,\\text{V}$, ja $120\\,\\Omega$:n etuvastus. Uusien paristojen jännite on $4{,}5\\,\\text{V}$, ja käytössä se laskee $3{,}6\\,\\text{V}$:iin. Oleta, että LEDin jännite pysyy samana. Kuinka monta prosenttia LEDin virta pienenee, kun paristojen jännite laskee näin? Vastaa prosentteina.",
+      "answer": 36.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L3-02",
+      "level": 3,
+      "text": "Aurinkopaneelin jännite ja virta mitattiin samassa valaistuksessa usealla eri kuormitusvastuksella. Mittausparit $(U;\\ I)$ olivat: $(0\\,\\text{V};\\ 3{,}30\\,\\text{A})$, $(10{,}0\\,\\text{V};\\ 3{,}25\\,\\text{A})$, $(14{,}0\\,\\text{V};\\ 3{,}18\\,\\text{A})$, $(16{,}0\\,\\text{V};\\ 3{,}05\\,\\text{A})$, $(17{,}0\\,\\text{V};\\ 2{,}90\\,\\text{A})$, $(18{,}0\\,\\text{V};\\ 2{,}55\\,\\text{A})$, $(19{,}0\\,\\text{V};\\ 1{,}90\\,\\text{A})$, $(20{,}0\\,\\text{V};\\ 0{,}95\\,\\text{A})$, $(21{,}0\\,\\text{V};\\ 0\\,\\text{A})$.\n\nMillä kuormitusvastuksella paneeli antaa suurimman tehon näistä mittauksista? Vastaa ohmeina.",
+      "answer": 5.862069,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L3-03",
+      "level": 3,
+      "text": "LED-nauhassa on rinnan monta samanlaista ryhmää. Jokaisessa ryhmässä on kolme sarjaan kytkettyä valkoista LEDiä ja etuvastus. Nauha kytketään $12\\,\\text{V}$:n jännitteeseen. Jokaisen LEDin jännite on $3{,}0\\,\\text{V}$, ja jokaisen ryhmän virta on $20\\,\\text{mA}$. Kuinka monta prosenttia nauhan sähkötehosta muuttuu etuvastusten sisäenergiaksi?",
+      "answer": 25.0,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ]
+}

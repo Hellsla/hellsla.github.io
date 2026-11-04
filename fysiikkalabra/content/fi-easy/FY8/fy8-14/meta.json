@@ -1,0 +1,35 @@
+{
+  "id": "fy8-14",
+  "course": "FY8",
+  "title": "Säteily lääketieteessä ja teknologiassa",
+  "goals": [
+    "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+    "Temaattinen tarkastelu: säteilyn käyttö lääketieteessä, diagnostiikka ja hoito; potilaan ja henkilökunnan turvallisuus",
+    "Laaja-alainen: hyvinvointiosaaminen"
+  ],
+  "prerequisites": [
+    "fy8-13"
+  ],
+  "glossary": [
+    "röntgensäteily",
+    "merkkiaine",
+    "sädehoito"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "röntgensäteily",
+      "explain": "Fotonisäteilyä, jonka fotoneilla on paljon energiaa. Se syntyy, kun nopeat elektronit jarruttavat anodissa tai irrottavat atomin sisäkuoren elektroneja."
+    },
+    {
+      "term": "merkkiaine",
+      "explain": "Radioaktiivinen aine, joka kertyy tutkittavaan elimeen. Kehon ulkopuolinen ilmaisin havaitsee sen säteilyn."
+    },
+    {
+      "term": "sädehoito",
+      "explain": "Syövän hoitoa ionisoivalla säteilyllä. Suuri annos vaurioittaa syöpäsolujen DNA:ta niin, että solut kuolevat."
+    }
+  ]
+}

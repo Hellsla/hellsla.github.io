@@ -1,0 +1,177 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.galaksi===1 && S.d===22 && S.H0===50 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: galaxy 1 at 22 Mpc, the line's slope 50 km/s/Mpc (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.v",
+  "expected": 1800,
+  "tol": 0.001,
+  "note": "galaxy 1: v = 70 · 22 + 260 = 1800 km/s (lesson-answers g1-v)"
+ },
+ {
+  "expr": "window.simState.z",
+  "expected": 0.006004,
+  "tol": 0.001,
+  "note": "galaxy 1: z = v / c = 0,006004 (lesson-answers g1-z)"
+ },
+ {
+  "expr": "window.simState.lam",
+  "expected": 660.2404,
+  "tol": 0.0001,
+  "note": "galaxy 1: Hα at 656,3 · (1 + z) = 660,24 nm (lesson-answers g1-lam)"
+ },
+ {
+  "expr": "window.simState.age",
+  "expected": 19.5564,
+  "tol": 0.001,
+  "note": "slope 50 km/s/Mpc: 1/H0 = 3,086e19 km / 50 km/s = 19,56 · 10⁹ a (lesson-answers sim-age-start)"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); const R=document.querySelector('#sim-root input[type=range]'); return L.length===2 && L[0]==='1,2,3,4,5,6,7,8' && L[1]==='0.5,1,2' && R && +R.min===40 && +R.max===100 && +R.step===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "controls: galaxy 1–8, speed hidas/normaali/nopea, slope slider 40–100 km/s/Mpc in steps of 1"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='H0,galaksi' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares galaksi and H0"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?1100:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x1100 (stacked, larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /Mpc/.test(t) && /660,2/.test(t) && /nm/.test(t) && /km\\/s/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows d in Mpc, λ = 660,2 nm with a decimal comma and v in km/s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=document.querySelector('#sim-root select'); S.value='4'; S.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "window.simAdapter.get().v",
+  "expected": 7560,
+  "tol": 0.001,
+  "note": "galaxy 4: v = 70 · 110 - 140 = 7560 km/s (lesson-answers g4-v)"
+ },
+ {
+  "expr": "window.simState.dlam",
+  "expected": 16.5498,
+  "tol": 0.001,
+  "note": "galaxy 4: Δλ = 656,3 nm · z = 16.55 nm"
+ },
+ {
+  "expr": "window.simState.d",
+  "expected": 110,
+  "tol": 0,
+  "note": "galaxy 4: d = 110 Mpc"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'); S.value='8'; S.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "window.simAdapter.get().v",
+  "expected": 19030,
+  "tol": 0.001,
+  "note": "galaxy 8: v = 70 · 275 - 220 = 19030 km/s (lesson-answers g8-v)"
+ },
+ {
+  "expr": "window.simState.dlam",
+  "expected": 41.6591,
+  "tol": 0.001,
+  "note": "galaxy 8: Δλ = 656,3 nm · z = 41.66 nm"
+ },
+ {
+  "expr": "window.simState.d",
+  "expected": 275,
+  "tol": 0,
+  "note": "galaxy 8: d = 275 Mpc"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'); S.value='3'; S.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "window.simAdapter.get().v",
+  "expected": 5650,
+  "tol": 0.001,
+  "note": "galaxy 3: v = 70 · 78 + 190 = 5650 km/s (lesson-answers g3-v)"
+ },
+ {
+  "expr": "window.simState.dlam",
+  "expected": 12.3686,
+  "tol": 0.001,
+  "note": "galaxy 3: Δλ = 656,3 nm · z = 12.37 nm"
+ },
+ {
+  "expr": "window.simState.d",
+  "expected": 78,
+  "tol": 0,
+  "note": "galaxy 3: d = 78 Mpc"
+ },
+ {
+  "expr": "window.simState.visited",
+  "expected": 4,
+  "tol": 0,
+  "note": "galaxies 1, 4, 8 and 3 picked: four points on the graph"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'); R.value='70'; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "window.simAdapter.get().H0",
+  "expected": 70,
+  "tol": 0,
+  "note": "the slider sets the line's slope to 70 km/s/Mpc"
+ },
+ {
+  "expr": "window.simState.age",
+  "expected": 13.9689,
+  "tol": 0.001,
+  "note": "slope 70: 1/H0 = 13,97 · 10⁹ a (lesson-answers model-age)"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /14,0/.test(t) && /70/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows H0 = 70 and 1/H0 = 14,0 · 10⁹ a"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'); R.value='100'; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "window.simAdapter.get().age",
+  "expected": 9.7782,
+  "tol": 0.001,
+  "note": "slope 100 (slider maximum): 1/H0 = 9,78 · 10⁹ a"
+ },
+ {
+  "setup": "document.querySelector('#sim-root .controls button').click();",
+  "expr": "window.simAdapter.get().visited",
+  "expected": 1,
+  "tol": 0,
+  "note": "Tyhjennä kuvaaja clears the points; the current galaxy stays"
+ },
+ {
+  "setup": "const Sp=document.querySelectorAll('#sim-root select')[1]; Sp.value='2'; Sp.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const a=window.simState.phase; return new Promise((r)=>setTimeout(()=>r(window.simState.phase>a ? 1 : 0),400)); })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the wave moves (speed nopea); speed changes no value"
+ },
+ {
+  "expr": "window.simState.v",
+  "expected": 5650,
+  "tol": 0.001,
+  "note": "speed does not change the model: galaxy 3 still v = 5650 km/s"
+ }
+]

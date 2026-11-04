@@ -1,0 +1,23 @@
+{
+  "id": "fy7-9",
+  "course": "FY7",
+  "title": "Electromagnetic radiation and the black-body spectrum",
+  "goals": [
+    "LOPS FY7: electromagnetic radiation and its spectrum, and the spectrum of black-body radiation",
+    "LOPS FY7: identifies sources and effects of electromagnetic radiation",
+    "Clarification: the sources are a charged particle in accelerated motion and a hot body; the spectrum of black-body radiation depends only on the surface temperature"
+  ],
+  "prerequisites": [
+    "fy7-7"
+  ],
+  "glossary": [
+    "sähkömagneettinen säteily",
+    "spektri",
+    "aallonpituus",
+    "mustan kappaleen säteily",
+    "Wienin siirtymälaki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

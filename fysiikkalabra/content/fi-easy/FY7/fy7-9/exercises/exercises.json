@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-9-L1-01",
+      "level": 1,
+      "text": "FM-radiokanava lähettää taajuudella $94{,}0\\,\\text{MHz}$. Kuinka suuri on radioaallon aallonpituus? Radioaallon nopeus ilmassa on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$.",
+      "answer": 3.1915,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-02",
+      "level": 1,
+      "text": "Mikroaaltouuni lämmittää ruokaa mikroaalloilla. Mikroaaltojen taajuus on $2{,}45\\,\\text{GHz}$. Kuinka suuri on mikroaaltojen aallonpituus? Anna vastaus senttimetreinä.",
+      "answer": 12.2449,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-03",
+      "level": 1,
+      "text": "Ihmisen ihon pintalämpötila on $307\\,\\text{K}$. Iho oletetaan mustaksi kappaleeksi. Millä aallonpituudella ihon lähettämän lämpösäteilyn spektrin huippu on? Anna vastaus mikrometreinä.",
+      "answer": 9.4397,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-04",
+      "level": 1,
+      "text": "Sinivalkoisen tähden säteilyn spektrin huippu on aallonpituudella $290\\,\\text{nm}$. Tähti oletetaan mustaksi kappaleeksi. Kuinka suuri on tähden pintalämpötila?",
+      "answer": 9993.1034,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L1-05",
+      "level": 1,
+      "text": "Vihreän laserosoittimen valon aallonpituus on $532\\,\\text{nm}$. Kuinka suuri on valon taajuus? Anna vastaus terahertseinä ($1\\,\\text{THz} = 10^{12}\\,\\text{Hz}$).",
+      "answer": 563.9098,
+      "unit": "THz",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-9-L2-01",
+      "level": 2,
+      "text": "Puulämmitteisen pizzauunin holvin sisäpinnan lämpötila on $450\\,{}^\\circ\\text{C}$. Holvi oletetaan mustaksi kappaleeksi. Millä aallonpituudella holvin lähettämän säteilyn spektrin huippu on? Anna vastaus mikrometreinä.",
+      "answer": 4.0075,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L2-02",
+      "level": 2,
+      "text": "Kuvaajassa on hehkuvan kappaleen lähettämän säteilyn spektri. Kappale säteilee kuin musta kappale. Määritä kappaleen pintalämpötila. Lue tarvittava arvo kuvaajasta.",
+      "answer": 2415.0,
+      "unit": "K",
+      "tolerance": 0.02,
+      "figure": "fy7-9/spectrum-task"
+    },
+    {
+      "id": "fy7-9-L2-03",
+      "level": 2,
+      "text": "Rautalevy lämmitetään $27\\,{}^\\circ\\text{C}$:sta $327\\,{}^\\circ\\text{C}$:een. Levy oletetaan mustaksi kappaleeksi. Kuinka monta mikrometriä levyn lämpösäteilyn spektrin huippu siirtyy?",
+      "answer": 4.8264,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L2-04",
+      "level": 2,
+      "text": "Tähden säteilyn spektrin huipun kohdalla valon taajuus on $6{,}0 \\cdot 10^{14}\\,\\text{Hz}$. Tähti oletetaan mustaksi kappaleeksi. Kuinka suuri on tähden pintalämpötila?",
+      "answer": 5796.0,
+      "unit": "K",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-9-L3-01",
+      "level": 3,
+      "text": "Avaruudesta tulee joka suunnasta tasaisesti säteilyä. Sen spektri vastaa tarkasti mustan kappaleen säteilyä lämpötilassa $2{,}7255\\,\\text{K}$ (Fixsen 2009). Säteily on peräisin maailmankaikkeuden varhaisvaiheesta, ja sitä kutsutaan kosmiseksi taustasäteilyksi. Millä aallonpituudella sen spektrin huippu on? Anna vastaus millimetreinä ja päättele, mihin spektrin alueeseen säteily kuuluu.",
+      "answer": 1.0633,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L3-02",
+      "level": 3,
+      "text": "Lämpökamera havaitsee infrapunasäteilyä aallonpituuksilla $8{,}0\\,\\mu\\text{m}$–$14\\,\\mu\\text{m}$. Väli on valittu niin, että tavallisten kappaleiden säteilyn spektrin huippu osuu sille. Mikä on korkein lämpötila, jossa mustan kappaleen spektrin huippu on vielä kameran aallonpituusvälillä? Anna vastaus celsiusasteina.",
+      "answer": 89.1,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L3-03",
+      "level": 3,
+      "text": "Apollo-lentojen astronautit jättivät Kuun pinnalle heijastimia. Maasta lähetetty laserpulssi heijastuu niistä takaisin. Pulssin lähtö- ja paluuhetken välinen aika on $2{,}56\\,\\text{s}$. Kuinka kaukana heijastin on Maasta? Valon nopeus on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$. Anna vastaus kilometreinä.",
+      "answer": 384000.0,
+      "unit": "km",
+      "tolerance": 0.02
+    }
+  ]
+}

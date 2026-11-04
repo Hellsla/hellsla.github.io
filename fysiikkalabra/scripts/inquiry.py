@@ -246,21 +246,24 @@ def validate(folder, inquiry, lesson_md):
 def esc(s): return _h.escape(str(s), quote=True)
 
 
-GREEK = {"Σ": r"\Sigma ", "Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha ", "μ": r"\mu ", "λ": r"\lambda ", "ν": r"\nu "}
+GREEK = {"Σ": r"\Sigma ", "Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha ", "μ": r"\mu ", "λ": r"\lambda ", "ν": r"\nu ", "φ": r"\varphi ", "ω": r"\omega "}
 SUBS = dict(zip("₀₁₂₃₄₅₆₇₈₉", "0123456789"))
-SYMBOL = re.compile(r"[A-Za-zΔρθηγαμΣλν](?:[A-Za-zΔρθηγαμΣλν₀-₉/]|_[A-Za-z0-9μ]+)*")
-UNIT = re.compile(r"[A-Za-z/%]+[²³]?")
+SYMBOL = re.compile(r"[A-Za-zΔρθηγαμΣλνφω](?:[A-Za-zΔρθηγαμΣλνφω₀-₉/]|_[A-Za-z0-9μ]+)*")
+UNIT = re.compile(r"[µμ]?[A-Za-zΩ/%]+[²³]?|°")   # µT and ° too (FY7, 2026-11-03); Ω, kΩ (FY6)
 
 
 def unit_tex(u):
     """m/s² -> \\text{m/s}^2, % -> \\%: a unit as maths (teacher 2026-10-28, "kaikki LaTeXilla")."""
     if u == "%": return "\\%"
-    return "\\text{" + u.rstrip("²³") + "}" + ({"²": "^2", "³": "^3"}.get(u[-1], ""))
+    if u == "°": return "^\\circ"
+    if u[0] in "µμ": return "\\mu" + unit_tex(u[1:])   # µT -> \mu\text{T}
+    t = ("\\text{" + u.rstrip("²³") + "}").replace("Ω", "}\\Omega\\text{").replace("\\text{}", "")   # Ω, kΩ: \\Omega in maths
+    return t + ({"²": "^2", "³": "^3"}.get(u[-1], ""))
 
 
 def is_symbol(tok):
     """A quantity symbol or a short formula of symbols (m, ΔL/L₀, p_ref, ρgh, pV), not a Finnish word."""
-    return bool(SYMBOL.fullmatch(tok)) and (len(tok) <= 2 or bool(re.search(r"[Δρθηγαμλν₀-₉_/Σ]", tok)))
+    return bool(SYMBOL.fullmatch(tok)) and (len(tok) <= 2 or bool(re.search(r"[Δρθηγαμλνφω₀-₉_/Σ]", tok)))
 
 
 def sym_tex(tok):
@@ -437,15 +440,15 @@ def experiment_html(a, md, lid):
     bare = lambda k: tex_name(re.sub(r"\s+\([^()]*\)$", "", names.get(k, k)))   # "wavelength λ (nm)" -> "wavelength λ" beside a value that has its unit
     def fmt(k, v):   # name, value and unit on one line; a number and its unit are maths (teacher 2026-10-28, "kaikki LaTeXilla")
         tn = bare
-        if str(v) in words.get(k, {}): return f'<span class="nobr">{tn(k)}: {esc(words[k][str(v)])}</span>'
+        if str(v) in words.get(k, {}): return f'<span>{tn(k)}: {esc(words[k][str(v)])}</span>'   # words may wrap at 360 px ("direction of the current: downwards at the front", FY7 2026-11-04)
         if isinstance(v, str) and str(sim_words.get(v, v)) != v: v = sim_words[v]   # a sim value named in the page's language (lang sims.<id>.values), the Finnish page unchanged
         u = units.get(k, "")
         if isinstance(v, str) and re.fullmatch(r"-?\d+(?:\.\d+)?", v) and (not u or UNIT.fullmatch(u)):   # a select's number ("0.5"):
-            return f'<span class="nobr">{tn(k)} = ${esc(v.replace(".", "{" + T("format.decimal") + "}"))}' + (("\\," + unit_tex(u)) if u else "") + "$</span>"   # maths as written (FY4 audit 2026-11-01)
+            return f'<span class="nobr">{tn(k)} = ${esc(v.replace(".", "{" + T("format.decimal") + "}"))}' + ((("" if u == "°" else "\\,") + unit_tex(u)) if u else "") + "$</span>"   # maths as written (FY4 audit 2026-11-01)
         if isinstance(v, (int, float)) and (not u or UNIT.fullmatch(u)):
             num = fi(v).replace(T("format.decimal"), "{" + T("format.decimal") + "}")
             if isinstance(v, int) and abs(v) >= 10000: num = f"{v:,}".replace(",", "\\,")   # 20\,000
-            unit = ("\\," + unit_tex(u)) if u else ""
+            unit = (("" if u == "°" else "\\,") + unit_tex(u)) if u else ""
             return f'<span class="nobr">{tn(k)} = ${esc(num)}{unit}$</span>'
         return f'<span class="nobr">{tn(k)} = {esc(fi(v))}' + (f" {esc(u)}" if u else "") + "</span>"
     init = ", ".join(fmt(k, v) for k, v in a["initial"].items())

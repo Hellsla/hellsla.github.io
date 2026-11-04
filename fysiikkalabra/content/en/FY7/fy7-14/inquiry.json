@@ -1,0 +1,448 @@
+{
+  "version": 1,
+  "contribution": "The waves reflected from the two surfaces of a thin film interfere, and at normal incidence their path difference is $2nd$; reflection from a material of higher refractive index inverts the wave. With the simulation the student finds that a very thin soap film is black, that a quarter-wave coating reduces the reflection from glass, and that the colour of a film arises when some wavelengths cancel.",
+  "learn": [
+    "explain why the waves reflected from the two surfaces of a thin film strengthen or weaken each other.",
+    "calculate the thickness of a film or a wavelength from the conditions for constructive and destructive interference.",
+    "explain the colours of a soap bubble and how an anti-reflection coating works."
+  ],
+  "prior": [
+    "Two waves that start in phase strengthen each other when their path difference is $k\\lambda$ and weaken each other when it is $(k + \\tfrac{1}{2})\\lambda$ (chapter *Interference and diffraction of light*)",
+    "In a material, light travels at the speed $v = c : n$ (chapter *Reflection and refraction of light*)",
+    "A pulse on a rope is inverted when it reflects from a fixed end (chapter *Reflection and diffraction of waves*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Soapy water is colourless, and you can see through a thin soap film as through a window. Yet when the film reflects sunlight, bright bands of colour appear in it: red, green, blue and magenta. The bands move and change colour as the film drains. Similar colours can be seen in an oil film on a puddle and in the lens of a camera objective.",
+      "question": "Where do the colours come from when the material of the film is itself colourless, and why do they change from one place to another?"
+    },
+    {
+      "id": "kertaus-interferenssi",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: interference",
+      "prompt": "Two waves from the same laser ($\\lambda = 650\\,\\text{nm}$) arrive at the same point on a screen. They start in phase, and their path difference is $975\\,\\text{nm}$. What is observed at that point?",
+      "choices": [
+        {
+          "text": "Destructive interference: the path difference is one and a half wavelengths.",
+          "correct": true,
+          "feedback": "Correct. $975\\,\\text{nm} : 650\\,\\text{nm} = 1.5$, so the waves arrive in opposite phase and cancel each other (chapter *Interference and diffraction of light*). Today the same idea is applied to the waves reflected from the two surfaces of a film."
+        },
+        {
+          "text": "Constructive interference: the path difference is greater than the wavelength.",
+          "feedback": "Constructive interference requires the path difference to be a whole number of wavelengths, $k\\lambda$. Here $975\\,\\text{nm} : 650\\,\\text{nm} = 1.5$, so the waves are in opposite phase and weaken each other."
+        },
+        {
+          "text": "No interference, because the path difference is less than a micrometre.",
+          "feedback": "Interference occurs for any path difference. What matters is how many wavelengths fit into the path difference: $975\\,\\text{nm} : 650\\,\\text{nm} = 1.5$, so the waves weaken each other."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-ohut",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: a very thin film",
+      "prompt": "A soap film in air thins until its thickness is only about $20\\,\\text{nm}$, much less than the wavelength of visible light. What does the film look like in reflected light when the light arrives at normal incidence?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Bright, because the path difference is almost zero and the waves strengthen each other.",
+          "feedback": "The values of the model refute this: at a thickness of $0\\,\\text{nm}$ the reflected fraction is $0\\,\\%$ and at $20\\,\\text{nm}$ only $0.74\\,\\%$, whereas at $103\\,\\text{nm}$ it is $7.71\\,\\%$. The path difference is almost zero, but the wave reflected from the upper surface has been inverted and the wave reflected from the lower surface has not, so the waves cancel each other."
+        },
+        {
+          "text": "Almost black, because the waves reflected from the two surfaces of the film cancel each other.",
+          "correct": true,
+          "feedback": "The values of the model support this: at a thickness of $0\\,\\text{nm}$ the reflected fraction is $0\\,\\%$ and at $20\\,\\text{nm}$ only $0.74\\,\\%$, whereas at $103\\,\\text{nm}$ it is $7.71\\,\\%$. The path difference is almost zero, but only the reflection from the upper surface inverts the wave, so the waves are in opposite phase."
+        },
+        {
+          "text": "The same as a thicker film, because the thickness of the film does not affect the reflection.",
+          "feedback": "The values of the model refute this: the reflected fraction varies with the thickness, $0\\,\\%$ at $0\\,\\text{nm}$, $7.71\\,\\%$ at $103\\,\\text{nm}$ and again almost $0\\,\\%$ at $207\\,\\text{nm}$. The thickness determines the path difference $2nd$ and therefore whether the waves strengthen or weaken each other."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-pinnoite",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a layer on glass",
+      "prompt": "A layer of magnesium fluoride ($n = 1.38$) is evaporated onto glass ($n = 1.52$), with a thickness such that $2nd = \\tfrac{1}{2}\\lambda$ when $\\lambda = 550\\,\\text{nm}$. Under the same condition a soap film reflects this light most strongly. Does the coated glass reflect light of $550\\,\\text{nm}$ more or less than bare glass?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "More, because under the same condition a soap film also reflects most strongly.",
+          "feedback": "The values of the model refute this: bare glass reflects $4.26\\,\\%$, but glass coated with a $100\\,\\text{nm}$ layer only $1.26\\,\\%$. In a soap film only the reflection from the upper surface inverts the wave; in the layer both do ($1.00 \\to 1.38 \\to 1.52$). The inversions cancel each other, so the same path difference now gives destructive interference."
+        },
+        {
+          "text": "Less, because the wave reflected from each surface of the layer is inverted.",
+          "correct": true,
+          "feedback": "The values of the model support this: bare glass reflects $4.26\\,\\%$, but glass coated with a $100\\,\\text{nm}$ layer only $1.26\\,\\%$. Both reflections occur at a material of higher refractive index, so the inversions cancel each other, and the path difference $\\tfrac{1}{2}\\lambda$ leaves the waves in opposite phase."
+        },
+        {
+          "text": "The same, because a thin transparent layer does not change the reflection from glass.",
+          "feedback": "The values of the model refute this: bare glass reflects $4.26\\,\\%$, but glass coated with a $100\\,\\text{nm}$ layer only $1.26\\,\\%$. The waves reflected from the two surfaces of the layer interfere, and at this thickness they weaken each other. The reflection is the same as for bare glass only for a $199\\,\\text{nm}$ layer."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Light arrives from air at normal incidence on a thin film. Change the thickness of the film and the wavelength and follow the sum of the two reflected waves.",
+      "howto": "Choose the situation: a soap film in air or an $\\text{MgF}_2$ coating on glass. Adjust the thickness $d$ of the film and the wavelength $\\lambda$ under study. On the left the film is shown in cross-section; the rays are drawn slanted so that they can be told apart, although the model calculates normal incidence. A label shows which reflection inverts the wave. On the right are the reflected waves 1 and 2 and their sum at the chosen wavelength. The graph shows the reflected fraction $R$ over the whole visible range, and the box shows the colour of the reflected white light. The readout gives the state of the interference, the path difference $2nd$, the ratio $2nd : \\lambda$, the number of inverting reflections and the reflected fraction $R$.",
+      "model": "Light arrives from air at normal incidence on the film. The refractive index of the soap film is $1.33$, and there is air on both sides of it. The coating has a refractive index of $1.38$ and lies on thick glass with a refractive index of $1.52$; the reflection from the back surface of the glass is not included. The refractive indices do not depend on the wavelength, and the film does not absorb light. The thickness of the film is exaggerated in the picture. The brightness of the colour box is scaled: the strongest reflection of the soap film and the reflection of bare glass appear white. The readings are values calculated by the model, not measurements.",
+      "calc": "The path difference of wave 2 relative to wave 1 is $2nd$. Reflection from a material of higher refractive index inverts the wave. The amplitudes of the waves reflected at the two interfaces are calculated from the normal-incidence formula $r = (n_a - n_b) : (n_a + n_b)$, where a negative $r$ means inversion. The reflected fraction $R$ is calculated from the exact formula for a single layer, which also takes into account the weak waves reflected several times inside the film. Bare glass reflects $R = \\left(\\tfrac{1.52 - 1.00}{1.52 + 1.00}\\right)^2 \\approx 4.26\\,\\%$. The colour is obtained by calculating $R$ at every wavelength from $400$ to $700\\,\\text{nm}$ and combining the values with the sensitivity curves of the eye (CIE 1931) into a screen colour."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: thickness of a soap film",
+      "intro": "Test prediction 1. The situation is a soap film in air and the wavelength is $550\\,\\text{nm}$; change only the thickness $d$ of the film. Record at least the thicknesses $0$, $20$, $50$, $103$, $150$ and $207\\,\\text{nm}$. At which thicknesses do the waves strengthen each other and at which do they weaken each other?",
+      "initial": {
+        "tilanne": "saippua",
+        "d": 0,
+        "lam": 550
+      },
+      "locked": [
+        "tilanne",
+        "lam"
+      ],
+      "vary": "d",
+      "names": {
+        "tilanne": "situation",
+        "d": "film thickness d",
+        "lam": "wavelength λ"
+      },
+      "values": {
+        "tilanne": {
+          "saippua": "soap film in air",
+          "pinnoite": "coating on glass"
+        }
+      },
+      "units": {
+        "tilanne": "",
+        "d": "nm",
+        "lam": "nm"
+      },
+      "measure": [
+        {
+          "key": "q",
+          "label": "$2nd : \\lambda$"
+        },
+        {
+          "key": "R",
+          "label": "R (%)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "At which thickness between $0$ and $200\\,\\text{nm}$ does the soap film reflect light of $550\\,\\text{nm}$ most strongly? Give your answer in nanometres.",
+        "answer": 103.383459,
+        "unit": "nm",
+        "tolerance": 0.02,
+        "hints": [
+          "Find in the table and with the slider the thickness at which $R$ is greatest.",
+          "Also look at the ratio $2nd : \\lambda$. What is its value at the strongest reflection?",
+          "A soap film has one inverting reflection, so the reflection is strongest when $2nd = \\tfrac{1}{2}\\lambda$."
+        ],
+        "mistakes": [
+          {
+            "value": 206.766917,
+            "feedback": "At this thickness $2nd = \\lambda$, and the reflection is almost zero. With one inverting reflection, a path difference of a whole wavelength is destructive. The strongest reflection is at half this thickness."
+          },
+          {
+            "value": 137.5,
+            "feedback": "You forgot the refractive index: $\\lambda : 4 = 137.5\\,\\text{nm}$. In the film the wavelength is $\\lambda : n$, so the path difference is $2nd$ and the thickness is $d = \\lambda : (4n)$."
+          }
+        ],
+        "solution": "**Given:** refractive index of the soap film $n = 1.33$, air on both sides, wavelength $\\lambda = 550\\,\\text{nm}$; readings of the simulation: $d = 50\\,\\text{nm}$: $R = 3.81\\,\\%$, $d = 103\\,\\text{nm}$: $R = 7.71\\,\\%$, $d = 150\\,\\text{nm}$: $R = 4.60\\,\\%$\n\n**Find:** the thickness $d$ in nanometres at which the reflection is strongest\n\n**Principle:** The reflection from the upper surface, from air into the film, inverts the wave; the reflection from the lower surface, from the film into air, does not. Because of the single inversion, the waves strengthen each other when the path difference is a half-integer number of wavelengths, and the thinnest such film is the one with $2nd = \\tfrac{1}{2}\\lambda$. In the simulation $R$ is greatest exactly where $2nd : \\lambda = 0.5$.\n\n**Formula:** $2nd = \\tfrac{1}{2}\\lambda$, so $d = \\dfrac{\\lambda}{4n}$\n\n**Conversions:** Not needed: the wavelength and the thickness are both in nanometres, and the refractive index has no unit.\n\n**Substitution:** $d = \\dfrac{550\\,\\text{nm}}{4 \\cdot 1.33} = 103.38\\,\\text{nm}$\n\n**Answer:** $103\\,\\text{nm}$, three significant figures like the refractive index $1.33$ and the wavelength $550\\,\\text{nm}$.\n\n**Reasonableness:** The greatest reading of the simulation, $R = 7.71\\,\\%$, is at a thickness of $103\\,\\text{nm}$, and $R$ decreases on both sides of it. The thickness is about a fifth of the wavelength, as is fitting for a thin film. Check: $2 \\cdot 1.33 \\cdot 103.38\\,\\text{nm} = 275\\,\\text{nm} = \\tfrac{1}{2} \\cdot 550\\,\\text{nm}$."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: coating on glass",
+      "intro": "Test prediction 2. The situation is an $\\text{MgF}_2$ coating on glass and the wavelength is $550\\,\\text{nm}$; change only the thickness $d$ of the coating. Record at least the thicknesses $0$ (bare glass), $50$, $100$, $150$ and $199\\,\\text{nm}$. Compare the reflection with that of bare glass.",
+      "initial": {
+        "tilanne": "pinnoite",
+        "d": 0,
+        "lam": 550
+      },
+      "locked": [
+        "tilanne",
+        "lam"
+      ],
+      "vary": "d",
+      "names": {
+        "tilanne": "situation",
+        "d": "coating thickness d",
+        "lam": "wavelength λ"
+      },
+      "values": {
+        "tilanne": {
+          "saippua": "soap film in air",
+          "pinnoite": "coating on glass"
+        }
+      },
+      "units": {
+        "tilanne": "",
+        "d": "nm",
+        "lam": "nm"
+      },
+      "measure": [
+        {
+          "key": "q",
+          "label": "$2nd : \\lambda$"
+        },
+        {
+          "key": "R",
+          "label": "R (%)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: colour of a film",
+      "intro": "The situation is a soap film in air with a thickness of $200\\,\\text{nm}$; change only the wavelength $\\lambda$. Record at least the wavelengths $400$, $450$, $500$, $532$, $600$, $650$ and $700\\,\\text{nm}$. Which colours are reflected and which is missing? Also look at the colour box.",
+      "initial": {
+        "tilanne": "saippua",
+        "d": 200,
+        "lam": 400
+      },
+      "locked": [
+        "tilanne",
+        "d"
+      ],
+      "vary": "lam",
+      "names": {
+        "tilanne": "situation",
+        "d": "film thickness d",
+        "lam": "wavelength λ"
+      },
+      "values": {
+        "tilanne": {
+          "saippua": "soap film in air",
+          "pinnoite": "coating on glass"
+        }
+      },
+      "units": {
+        "tilanne": "",
+        "d": "nm",
+        "lam": "nm"
+      },
+      "measure": [
+        {
+          "key": "q",
+          "label": "$2nd : \\lambda$"
+        },
+        {
+          "key": "R",
+          "label": "R (%)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: film thickness and colour",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Using your tables, write: at which thicknesses does a soap film reflect light of $550\\,\\text{nm}$ most strongly and at which most weakly? Why does the coating behave differently? Where does the colour of a $200\\,\\text{nm}$ soap film come from?",
+      "model": "The soap film did not reflect at all when $d = 0$, and at a thickness of $207\\,\\text{nm}$ the reflection was again almost zero. The strongest reflection, $R = 7.71\\,\\%$, was at $103\\,\\text{nm}$, where $2nd : \\lambda = 0.50$. In a soap film only the reflection from the upper surface inverts the wave, so a path difference of $\\tfrac{1}{2}\\lambda$ is constructive and $\\lambda$ is destructive. In the coating both reflections invert the wave: bare glass reflected $4.26\\,\\%$, a $100\\,\\text{nm}$ coating only $1.26\\,\\%$, and a $199\\,\\text{nm}$ coating again $4.26\\,\\%$. The same condition $2nd = \\tfrac{1}{2}\\lambda$ is therefore destructive in the coating. In a $200\\,\\text{nm}$ soap film the path difference is $532\\,\\text{nm}$, so green light of $532\\,\\text{nm}$ was cancelled completely ($R = 0\\,\\%$), while violet light was reflected $5.83\\,\\%$ and red light $3.77\\,\\%$. The film looks magenta because green is missing. The values are calculated by the model.",
+      "criteria": [
+        "I said that a soap film reflects most strongly when $2nd = \\tfrac{1}{2}\\lambda$ and most weakly when $2nd$ is $0$ or $\\lambda$, and I used the values of the table.",
+        "I explained the difference by saying that in a soap film one reflection inverts the wave but in the coating two do.",
+        "I said that the coating reflected less than bare glass and gave the readings.",
+        "I explained the colour of the film by saying that some wavelengths cancel and the others are reflected."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the theory and the values of the model in the experiments. Then return to the opening question: where do the colours of a soap film come from, and why do they change from one place to another?",
+      "predictions": [
+        "ennuste-ohut",
+        "ennuste-pinnoite"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student designs an $\\text{MgF}_2$ coating ($n = 1.38$) for glass ($n = 1.52$) and writes: “In destructive interference the waves are in opposite phase. The wave reflected from each surface of the coating is inverted, so the inversions cancel each other, and the waves are in opposite phase when $2nd = \\lambda$. When $\\lambda = 550\\,\\text{nm}$, the thickness of the coating is $d = \\lambda : (2n) = 199\\,\\text{nm}$.” Where is the error?",
+      "choices": [
+        {
+          "text": "When the inversions cancel each other, a path difference of $\\lambda$ leaves the waves in phase.",
+          "correct": true,
+          "feedback": "Correct. When there are two inversions, only the path difference matters, and a whole wavelength gives constructive interference. The destructive condition is $2nd = \\tfrac{1}{2}\\lambda$, so $d = \\lambda : (4n) = 99.6\\,\\text{nm}$. The student's $199\\,\\text{nm}$ coating reflects $4.26\\,\\%$, the same as bare glass."
+        },
+        {
+          "text": "The thickness of the coating is calculated with the refractive index $1.52$ of the glass, not that of the coating.",
+          "feedback": "The path difference arises in the coating, so the refractive index $1.38$ of the coating belongs in the formula. The error is in the condition: after two inversions, a path difference of $\\lambda$ is constructive. The destructive condition is $2nd = \\tfrac{1}{2}\\lambda$, so $d = 99.6\\,\\text{nm}$."
+        },
+        {
+          "text": "The reasoning is correct, but the answer should be given more precisely: $199.3\\,\\text{nm}$.",
+          "feedback": "The reasoning is not correct. After two inversions, a path difference of $\\lambda$ leaves the waves in phase, and a $199\\,\\text{nm}$ coating reflects $4.26\\,\\%$, like bare glass. The correct thickness is $d = \\lambda : (4n) = 99.6\\,\\text{nm}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: an oil film on a puddle",
+      "prompt": "A thin oil film with a refractive index of $1.47$ lies on the surface of a puddle ($n = 1.33$). Light arrives at normal incidence on the film. At one point the reflected white light lacks orange light with a wavelength of $600\\,\\text{nm}$. Assume that the film is the thinnest possible one that is not almost of zero thickness. How thick is the film at this point? Give your answer in nanometres.",
+      "answer": 204.081633,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "hints": [
+        "Which reflection inverts the wave: from air into oil ($1.00 \\to 1.47$) or from oil into water ($1.47 \\to 1.33$)?",
+        "There is one inverting reflection, as in a soap film, so the destructive condition is $2nd = k\\lambda$. A film of almost zero thickness is $k = 0$, so now $k = 1$.",
+        "$2nd = \\lambda$, so $d = \\lambda : (2n) = 600\\,\\text{nm} : (2 \\cdot 1.47)$."
+      ],
+      "mistakes": [
+        {
+          "value": 300.0,
+          "feedback": "You forgot the refractive index of the oil. In the film the wavelength is $\\lambda : n$, so the path difference is $2nd$ and the thickness is $d = \\lambda : (2n)$."
+        },
+        {
+          "value": 102.040816,
+          "feedback": "You used the condition $2nd = \\tfrac{1}{2}\\lambda$, which in this film is constructive: at this thickness orange light is reflected most strongly. Because of the single inversion, the destructive condition is $2nd = k\\lambda$."
+        },
+        {
+          "value": 408.163265,
+          "feedback": "This is the thickness at which $2nd = 2\\lambda$. Orange is cancelled then too, but the thinnest film that is not almost of zero thickness is the one with $2nd = \\lambda$."
+        }
+      ],
+      "solution": "**Given:** refractive index of the oil $n = 1.47$, of water $1.33$, of air $1.00$, missing wavelength $\\lambda = 600\\,\\text{nm}$, normal incidence\n\n**Find:** the thickness $d$ of the oil film in nanometres\n\n**Principle:** The reflection from the upper surface, from air into oil ($1.00 \\to 1.47$), inverts the wave, but the reflection from the lower surface, from oil into water ($1.47 \\to 1.33$), does not. Because of the single inversion, the waves weaken each other when the path difference is a whole number of wavelengths, $2nd = k\\lambda$. The value $k = 0$ is a film of almost zero thickness, so the thinnest other film is given by $k = 1$.\n\n**Formula:** $2nd = k\\lambda$ and $k = 1$, so $d = \\dfrac{\\lambda}{2n}$\n\n**Conversions:** Not needed: the wavelength and the thickness are both in nanometres, and the refractive index has no unit.\n\n**Substitution:** $d = \\dfrac{600\\,\\text{nm}}{2 \\cdot 1.47} = 204.08\\,\\text{nm}$\n\n**Answer:** $204\\,\\text{nm}$, three significant figures like the refractive index $1.47$ and the wavelength $600\\,\\text{nm}$.\n\n**Reasonableness:** Check: $2 \\cdot 1.47 \\cdot 204.08\\,\\text{nm} = 600\\,\\text{nm} = 1 \\cdot \\lambda$. The thickness is of the same order of magnitude as the wavelength of light, as it should be in a thin film. The film is a little thinner than a soap film that cancels the same colour, $600\\,\\text{nm} : (2 \\cdot 1.33) = 226\\,\\text{nm}$, because the refractive index of oil is greater."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. In level 1 tasks you use one formula, in level 2 tasks you first work out the number of inverting reflections and solve the condition, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: inverting reflections",
+      "prompt": "A thin film of water ($n = 1.33$) lies on a glass plate ($n = 1.52$), and light arrives from air at normal incidence on the film. At which reflections is the reflected wave inverted?",
+      "choices": [
+        {
+          "text": "At both: from air to water and from water to glass.",
+          "correct": true,
+          "feedback": "Correct. At both reflections the material beyond the interface has a higher refractive index ($1.00 \\to 1.33 \\to 1.52$). The inversions cancel each other, so the conditions are the same as in an anti-reflection coating."
+        },
+        {
+          "text": "Only at the upper surface, where light is reflected from air to water.",
+          "feedback": "At the upper surface the wave is inverted because the refractive index of water is greater than that of air. At the lower surface too the light is reflected at a material of higher refractive index, since $1.52$ for glass is greater than $1.33$ for water, so the wave is inverted there as well."
+        },
+        {
+          "text": "Only at the lower surface, where light is reflected from water to glass.",
+          "feedback": "At the lower surface the wave is inverted because the refractive index of glass is greater than that of water. At the upper surface too the material beyond the interface has a higher refractive index, water $1.33$ after air $1.00$, so the wave is inverted there as well."
+        },
+        {
+          "text": "At neither, because the water film is transparent.",
+          "feedback": "Transparency does not prevent reflection. The wave is inverted when the material beyond the interface has a higher refractive index, and that is the case at both surfaces here ($1.00 \\to 1.33 \\to 1.52$)."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: colour of a film",
+      "prompt": "The thickness of a soap film ($n = 1.33$) is $250\\,\\text{nm}$ at one point, and there is air on both sides of it. White light arrives at normal incidence on the film. Which wavelength of visible light ($400$–$700\\,\\text{nm}$) is reflected most strongly? Give your answer in nanometres.",
+      "answer": 443.333333,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "hints": [
+        "How many of the reflections invert the wave? What is then the condition for constructive interference?",
+        "The constructive condition is $2nd = (k + \\tfrac{1}{2})\\lambda$, so $\\lambda = 2nd : (k + \\tfrac{1}{2})$.",
+        "$2nd = 665\\,\\text{nm}$. Try the values $k = 0, 1, 2$ and choose the one between $400$ and $700\\,\\text{nm}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1330.0,
+          "feedback": "This is the value $k = 0$, but $1330\\,\\text{nm}$ is infrared. Try the next value, $k = 1$."
+        },
+        {
+          "value": 665.0,
+          "feedback": "This is the path difference $2nd$. The condition $2nd = \\lambda$ is destructive in a soap film because one reflection inverts the wave: light of $665\\,\\text{nm}$ is cancelled. The constructive condition is $2nd = (k + \\tfrac{1}{2})\\lambda$."
+        },
+        {
+          "value": 266.0,
+          "feedback": "This is the value $k = 2$, but $266\\,\\text{nm}$ is ultraviolet. The value $k = 1$ falls in the visible range."
+        }
+      ],
+      "solution": "**Given:** thickness of the film $d = 250\\,\\text{nm}$, refractive index $n = 1.33$, air on both sides, visible light $400$–$700\\,\\text{nm}$\n\n**Find:** the most strongly reflected wavelength $\\lambda$ in nanometres\n\n**Principle:** The reflection from the upper surface, from air into the film, inverts the wave; the reflection from the lower surface, from the film into air, does not. Because of the single inversion, the waves strengthen each other when $2nd = (k + \\tfrac{1}{2})\\lambda$. We calculate $\\lambda$ for $k = 0, 1, 2$ and choose the one in the visible range.\n\n**Formula:** $2nd = (k + \\tfrac{1}{2})\\lambda$, so $\\lambda = \\dfrac{2nd}{k + \\frac{1}{2}}$\n\n**Conversions:** Not needed: the thickness and the wavelength are both in nanometres, and the refractive index has no unit.\n\n**Substitution:** $k = 1$: $\\lambda = \\dfrac{2 \\cdot 1.33 \\cdot 250\\,\\text{nm}}{1.5} = \\dfrac{665\\,\\text{nm}}{1.5} = 443.3\\,\\text{nm}$; for $k = 0$ we get $1330\\,\\text{nm}$ (infrared) and for $k = 2$ we get $266\\,\\text{nm}$ (ultraviolet).\n\n**Answer:** $443\\,\\text{nm}$, three significant figures like the refractive index $1.33$ and the thickness $250\\,\\text{nm}$.\n\n**Reasonableness:** Check: $1.5 \\cdot 443.3\\,\\text{nm} = 665\\,\\text{nm} = 2nd$. The wavelength is in the blue-violet range, and the only visible wavelength that is cancelled is $665\\,\\text{nm}$, which is red, so the film looks bluish at this point."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: the anti-reflection coating",
+      "prompt": "Explain how the anti-reflection coating of a spectacle lens reduces reflection. Where does the light that is not reflected go, and why does a coated lens shine faintly purple?",
+      "model": "The coating is a thin transparent film whose refractive index lies between those of air and glass. Light is reflected both from the upper surface of the coating and from the interface between the coating and the glass, and both reflections invert the wave, so the inversions cancel each other. When the thickness of the coating is $d = \\lambda : (4n)$, the path difference is $2nd = \\tfrac{1}{2}\\lambda$, and the reflected waves are in opposite phase and weaken each other. The coating does not absorb light; the light that is not reflected passes through the lens to the eye. The coating is designed for the middle of the visible range, for green light. For violet and red light the path difference is not half a wavelength, so more of them is reflected, and the faint reflection looks purple.",
+      "criteria": [
+        "I say that the waves reflected from the two surfaces of the coating weaken each other.",
+        "I justify the condition $2nd = \\tfrac{1}{2}\\lambda$ by the fact that both reflections invert the wave.",
+        "I say that the light that is not reflected goes through the lens and that the coating does not absorb it.",
+        "I explain the purple shine by saying that the coating cancels green best and more violet and red is reflected."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. First answer them yourself and only then open the answer."
+    }
+  ]
+}

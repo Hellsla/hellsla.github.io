@@ -1,0 +1,23 @@
+{
+  "id": "fy7-2",
+  "course": "FY7",
+  "title": "Varatun hiukkasen liike sähkö- ja magneettikentässä",
+  "goals": [
+    "LOPS FY7: varatun hiukkasen liike homogeenisessa sähkö- ja magneettikentässä",
+    "Täsmennys: magneettinen voima F = qvB, ympyrärata, nopeusvalitsin ja massaspektrometri; sähköinen voima ja työ W = qU kerrataan FY6:sta lyhyesti",
+    "Temaattinen tarkastelu: hiukkaskiihdytin"
+  ],
+  "prerequisites": [
+    "fy7-1"
+  ],
+  "glossary": [
+    "magneettinen voima",
+    "ympyrärata",
+    "nopeusvalitsin",
+    "massaspektrometri",
+    "hiukkaskiihdytin"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
