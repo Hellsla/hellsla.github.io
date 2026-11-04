@@ -176,7 +176,7 @@
 **Kaava:** Yksiköt: $\text{s} = \text{m}^{a}\cdot\left(\tfrac{\text{m}}{\text{s}^2}\right)^{b}\cdot\text{kg}^{c} = \text{m}^{a+b}\,\text{s}^{-2b}\,\text{kg}^{c}$. Kilogramma esiintyy vain massassa, joten $c = 0$. Sekunnit antavat $-2b = 1$, eli $b = -\tfrac{1}{2}$, ja metrit $a + b = 0$, eli $a = \tfrac{1}{2}$. Siis $T = k\sqrt{\dfrac{L}{g}}$, ja koska $k$ ja $g$ pysyvät samoina, $T_2 = T_1\sqrt{\dfrac{L_2}{L_1}}$.
 **Muunnokset:** Ei tarvita: pituudet ovat metreinä ja aika sekunteina.
 **Sijoitus:** $T_2 = 1{,}00\,\text{s}\cdot\sqrt{\dfrac{1{,}00\,\text{m}}{0{,}250\,\text{m}}} = 1{,}00\,\text{s}\cdot\sqrt{4{,}00} = 2{,}00\,\text{s}$
-**Vastaus:** $a = \tfrac{1}{2}$, $b = -\tfrac{1}{2}$ ja $c = 0$; $T_2 = 2{,}00\,\text{s}$, kolme merkitsevää numeroa kuten mittauksessa. Massa ei vaikuta jaksonaikaan. Yksiköt eivät anna kerrointa: tarkka kaava on $T = 2\pi\sqrt{\dfrac{L}{g}}$, jossa $2\pi$ on yksikötön luku, jota yksikkötarkastelu ei voi antaa. Tässä tehtävässä sitä ei tarvita, koska $k$ supistuu suhteesta $T_2/T_1$.
+**Vastaus:** $a = \tfrac{1}{2}$, $b = -\tfrac{1}{2}$ ja $c = 0$; $T_2 = 2{,}00\,\text{s}$, kolme merkitsevää numeroa kuten mittauksessa. Massa ei vaikuta jaksonaikaan. Yksiköt eivät anna kerrointa: pienillä heilahduksilla pätee $T = 2\pi\sqrt{\dfrac{L}{g}}$, jossa $2\pi$ on yksikötön luku, jota yksikkötarkastelu ei voi antaa. Tässä tehtävässä sitä ei tarvita, koska $k$ supistuu suhteesta $T_2/T_1$.
 **Järkevyys:** Heilurin pituus on nelinkertainen ja jaksonaika kaksinkertainen, koska $\sqrt{4} = 2$. Metrin heilurin jakso on noin kaksi sekuntia, mikä sopii seinäkellon heiluriin.
 
 ## fy1-2-L3-05

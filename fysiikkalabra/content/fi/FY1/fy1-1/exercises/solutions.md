@@ -180,7 +180,7 @@
 **Annettu:** vesikerroksen kasvu $5{,}0\,\text{mm/h}$, kuuron kesto $\Delta t = 10\,\text{min}$, kentän ala $A = 6{,}0\cdot10^{3}\,\text{m}^2$, pisaran halkaisija $2{,}0\,\text{mm}$ ja pallon tilavuus $V = 4\pi r^{3}/3$
 **Kysytty:** pisaroiden lukumäärä $N$ miljardeina; oletus, jonka $20\,\%$:n virhe vaikuttaa tulokseen eniten
 **Periaate:** Kentälle satanut veden tilavuus jaetaan yhden pisaran tilavuudella. Arvio on malli, jonka oletukset ovat näkyvissä: pisarat ovat saman kokoisia palloja, ja sade on tasaista.
-**Kaava:** $V_\text{sade} = h\,A \quad V_\text{pisara} = \dfrac{4}{3}\pi r^{3} \quad N = \dfrac{V_\text{sade}}{V_\text{pisara}}$
+**Kaava:** $V_\text{sade} = h\,A$, $V_\text{pisara} = \dfrac{4}{3}\pi r^{3}$ ja $N = \dfrac{V_\text{sade}}{V_\text{pisara}}$
 **Muunnokset:** $h = 5{,}0\,\text{mm/h}\cdot(10 : 60)\,\text{h} = 0{,}833\,\text{mm} = 8{,}33\cdot10^{-4}\,\text{m}$ ja $r = 2{,}0\,\text{mm} : 2 = 1{,}0\cdot10^{-3}\,\text{m}$.
 **Sijoitus:** $V_\text{sade} = 8{,}33\cdot10^{-4}\,\text{m}\cdot6{,}0\cdot10^{3}\,\text{m}^2 = 5{,}0\,\text{m}^3$ ja $V_\text{pisara} = \dfrac{4}{3}\pi\left(1{,}0\cdot10^{-3}\,\text{m}\right)^{3} = 4{,}19\cdot10^{-9}\,\text{m}^3$, joten $N = \dfrac{5{,}0\,\text{m}^3}{4{,}19\cdot10^{-9}\,\text{m}^3} = 1{,}19\cdot10^{9}$
 **Vastaus:** noin $1{,}2$ miljardia pisaraa, kaksi merkitsevää numeroa kuten kaikissa lähtötiedoissa (kenttään sopii $1{,}19$). Jos sade-intensiteetti, kesto tai ala on $20\,\%$ liian suuri, $N$ kasvaa $20\,\%$. Jos pisaran halkaisija on $20\,\%$ liian suuri, pisaran tilavuus kasvaa tekijällä $1{,}2^{3} = 1{,}73$ ja $N$ pienenee noin $42\,\%$. Pisaran koko vaikuttaa eniten, koska tilavuus on halkaisijan kolmannessa potenssissa.

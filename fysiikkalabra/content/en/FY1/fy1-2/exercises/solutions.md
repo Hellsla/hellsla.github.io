@@ -176,7 +176,7 @@
 **Formula:** Units: $\text{s} = \text{m}^{a}\cdot\left(\tfrac{\text{m}}{\text{s}^2}\right)^{b}\cdot\text{kg}^{c} = \text{m}^{a+b}\,\text{s}^{-2b}\,\text{kg}^{c}$. The kilogram appears only in the mass, so $c = 0$. The seconds give $-2b = 1$, so $b = -\tfrac{1}{2}$, and the metres $a + b = 0$, so $a = \tfrac{1}{2}$. Thus $T = k\sqrt{\dfrac{L}{g}}$, and since $k$ and $g$ stay the same, $T_2 = T_1\sqrt{\dfrac{L_2}{L_1}}$.
 **Conversions:** Not needed: the lengths are in metres and the time in seconds.
 **Substitution:** $T_2 = 1.00\,\text{s}\cdot\sqrt{\dfrac{1.00\,\text{m}}{0.250\,\text{m}}} = 1.00\,\text{s}\cdot\sqrt{4.00} = 2.00\,\text{s}$
-**Answer:** $a = \tfrac{1}{2}$, $b = -\tfrac{1}{2}$ and $c = 0$; $T_2 = 2.00\,\text{s}$, three significant figures like the measurement. The mass does not affect the period. Units do not give the coefficient: the exact formula is $T = 2\pi\sqrt{\dfrac{L}{g}}$, in which $2\pi$ is a number without a unit that a unit analysis cannot give. It is not needed in this task, because $k$ cancels from the ratio $T_2/T_1$.
+**Answer:** $a = \tfrac{1}{2}$, $b = -\tfrac{1}{2}$ and $c = 0$; $T_2 = 2.00\,\text{s}$, three significant figures like the measurement. The mass does not affect the period. Units do not give the coefficient: for small swings $T = 2\pi\sqrt{\dfrac{L}{g}}$, in which $2\pi$ is a number without a unit that a unit analysis cannot give. It is not needed in this task, because $k$ cancels from the ratio $T_2/T_1$.
 **Reasonableness:** The length of the pendulum is four times as great and the period twice as great, because $\sqrt{4} = 2$. The period of a one-metre pendulum is about two seconds, which fits the pendulum of a wall clock.
 
 ## fy1-2-L3-05

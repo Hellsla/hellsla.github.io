@@ -180,7 +180,7 @@
 **Given:** growth of the water layer $5.0\,\text{mm/h}$, duration of the shower $\Delta t = 10\,\text{min}$, area of the pitch $A = 6.0\cdot10^{3}\,\text{m}^2$, diameter of a drop $2.0\,\text{mm}$ and volume of a sphere $V = 4\pi r^{3}/3$
 **Find:** the number of drops $N$ in billions; the assumption whose $20\,\%$ error affects the result most
 **Principle:** The volume of water that fell on the pitch is divided by the volume of one drop. The estimate is a model whose assumptions are in plain view: the drops are spheres of the same size, and the rain is steady.
-**Formula:** $V_\text{rain} = h\,A \quad V_\text{drop} = \dfrac{4}{3}\pi r^{3} \quad N = \dfrac{V_\text{rain}}{V_\text{drop}}$
+**Formula:** $V_\text{rain} = h\,A$, $V_\text{drop} = \dfrac{4}{3}\pi r^{3}$ and $N = \dfrac{V_\text{rain}}{V_\text{drop}}$
 **Conversions:** $h = 5.0\,\text{mm/h}\cdot(10 : 60)\,\text{h} = 0.833\,\text{mm} = 8.33\cdot10^{-4}\,\text{m}$ and $r = 2.0\,\text{mm} : 2 = 1.0\cdot10^{-3}\,\text{m}$.
 **Substitution:** $V_\text{rain} = 8.33\cdot10^{-4}\,\text{m}\cdot6.0\cdot10^{3}\,\text{m}^2 = 5.0\,\text{m}^3$ and $V_\text{drop} = \dfrac{4}{3}\pi\left(1.0\cdot10^{-3}\,\text{m}\right)^{3} = 4.19\cdot10^{-9}\,\text{m}^3$, so $N = \dfrac{5.0\,\text{m}^3}{4.19\cdot10^{-9}\,\text{m}^3} = 1.19\cdot10^{9}$
 **Answer:** about $1.2$ billion drops, two significant figures like all the given values ($1.19$ fits in the field). If the intensity of the rain, the duration or the area is $20\,\%$ too large, $N$ increases by $20\,\%$. If the diameter of the drop is $20\,\%$ too large, the volume of the drop increases by the factor $1.2^{3} = 1.73$ and $N$ decreases by about $42\,\%$. The size of the drop matters most because the volume depends on the third power of the diameter.
