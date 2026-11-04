@@ -257,7 +257,7 @@
     {
       "id": "fy3-7-L3-01",
       "level": 3,
-      "text": "Laiturilla juodaan mehua. Lasissa on $0{,}35\\,\\text{kg}$ mehua, jonka lämpötila on $25\\,{}^\\circ\\text{C}$, ja siihen pudotetaan $60\\,\\text{g}$ sulamassa olevia $0\\,{}^\\circ\\text{C}$:n lämpöisiä jääpaloja. Mehun ominaislämpökapasiteetti on sama kuin veden. Mikä on juoman lämpötila, kun kaikki jää on sulanut ja lasin sisältö on lämpötasapainossa? Oleta, että lämpöä ei siirry lasiin eikä ilmaan. Perustele myös, miksi $60\\,\\text{g}$ $0\\,{}^\\circ\\text{C}$:n lämpöistä vettä ei jäähdyttäisi mehua yhtä paljon.",
+      "text": "Laiturilla juodaan mehua.\n\nLasissa on $0{,}35\\,\\text{kg}$ mehua, jonka lämpötila on $25\\,{}^\\circ\\text{C}$, ja siihen pudotetaan $60\\,\\text{g}$ sulamassa olevia $0\\,{}^\\circ\\text{C}$:n lämpöisiä jääpaloja. Mehun ominaislämpökapasiteetti on sama kuin veden.\n\nMikä on juoman lämpötila, kun kaikki jää on sulanut ja lasin sisältö on lämpötasapainossa? Oleta, että lämpöä ei siirry lasiin eikä ilmaan. Perustele myös, miksi $60\\,\\text{g}$ $0\\,{}^\\circ\\text{C}$:n lämpöistä vettä ei jäähdyttäisi mehua yhtä paljon.",
       "answer": 9.7,
       "unit": "°C",
       "tolerance": 0.02
@@ -265,7 +265,7 @@
     {
       "id": "fy3-7-L3-02",
       "level": 3,
-      "text": "Saunassa heitetään kiukaalle löylyä, kauhallinen eli $0{,}25\\,\\text{kg}$ vettä, jonka lämpötila on $20\\,{}^\\circ\\text{C}$. Vesi lämpenee kuumilla kivillä $100\\,{}^\\circ\\text{C}$:seen ja höyrystyy kokonaan. Kiukaassa on $30\\,\\text{kg}$ kiviä, joiden ominaislämpökapasiteetti on $800\\,\\text{J/(kg}\\cdot\\text{K)}$. Oleta, että kaikki veden tarvitsema energia tulee kivistä eikä kiuas lämmitä niitä sillä välin. Kuinka monta kelviniä kivien lämpötila laskee? Perustele, kumpi vaihe, veden lämpeneminen vai höyrystyminen, vie enemmän energiaa.",
+      "text": "Saunassa heitetään kiukaalle löylyä, kauhallinen eli $0{,}25\\,\\text{kg}$ vettä, jonka lämpötila on $20\\,{}^\\circ\\text{C}$. Vesi lämpenee kuumilla kivillä $100\\,{}^\\circ\\text{C}$:seen ja höyrystyy kokonaan.\n\nKiukaassa on $30\\,\\text{kg}$ kiviä, joiden ominaislämpökapasiteetti on $800\\,\\text{J/(kg}\\cdot\\text{K)}$. Oleta, että kaikki veden tarvitsema energia tulee kivistä eikä kiuas lämmitä niitä sillä välin.\n\nKuinka monta kelviniä kivien lämpötila laskee? Perustele, kumpi vaihe, veden lämpeneminen vai höyrystyminen, vie enemmän energiaa.",
       "answer": 27,
       "unit": "K",
       "tolerance": 0.02
@@ -273,7 +273,7 @@
     {
       "id": "fy3-7-L3-03",
       "level": 3,
-      "text": "Ryhmä mittaa veden ominaishöyrystymislämpöä kahdella mittauksella. Vaa'an päällä olevassa avoimessa astiassa vesi kiehuu, ja vedessä on uppokuumennin, jonka tehoa voi säätää. Kun kuumentimen teho on $800\\,\\text{W}$, vaa'an lukema pienenee $10{,}0\\,\\text{min}$:ssa $196\\,\\text{g}$. Kun teho on $400\\,\\text{W}$, lukema pienenee $10{,}0\\,\\text{min}$:ssa $90{,}0\\,\\text{g}$. Vesi on kummassakin mittauksessa $100\\,{}^\\circ\\text{C}$:n lämpöistä, joten astiasta siirtyy ympäröivään ilmaan joka sekunti yhtä paljon energiaa. Laske ominaishöyrystymislämpö kahden mittauksen erotuksen avulla. Perustele, miksi ilmaan siirtyvä energia ei vaikuta tulokseen ja miksi kummastakin mittauksesta erikseen laskettu arvo on liian suuri. Anna vastaus yksikössä MJ/kg.",
+      "text": "Ryhmä mittaa veden ominaishöyrystymislämpöä kahdella mittauksella. Vaa'an päällä olevassa avoimessa astiassa vesi kiehuu, ja vedessä on uppokuumennin, jonka tehoa voi säätää.\n\nKun kuumentimen teho on $800\\,\\text{W}$, vaa'an lukema pienenee $10{,}0\\,\\text{min}$:ssa $196\\,\\text{g}$. Kun teho on $400\\,\\text{W}$, lukema pienenee $10{,}0\\,\\text{min}$:ssa $90{,}0\\,\\text{g}$. Vesi on kummassakin mittauksessa $100\\,{}^\\circ\\text{C}$:n lämpöistä, joten astiasta siirtyy ympäröivään ilmaan joka sekunti yhtä paljon energiaa.\n\nLaske ominaishöyrystymislämpö kahden mittauksen erotuksen avulla. Perustele, miksi ilmaan siirtyvä energia ei vaikuta tulokseen ja miksi kummastakin mittauksesta erikseen laskettu arvo on liian suuri. Anna vastaus yksikössä MJ/kg.",
       "answer": 2.26,
       "unit": "MJ/kg",
       "tolerance": 0.02

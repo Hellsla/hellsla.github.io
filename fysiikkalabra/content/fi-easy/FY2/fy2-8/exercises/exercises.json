@@ -260,7 +260,7 @@
     {
       "id": "fy2-8-L3-01",
       "level": 3,
-      "text": "Bensiiniauto kuluttaa $6{,}0$ litraa $100\\,\\text{km}$:llä. Bensiinin energiasisältö on $32\\,\\text{MJ/}\\textsf{l}$ ja palamisen päästökerroin $69\\,\\text{g/MJ}$. Sähköauto kuluttaa $100\\,\\text{km}$:llä sähköä $18\\,\\text{kWh}$. (Vertailu on karkea. Bensiiniautolle lasketaan vain polttaminen. Sähköautolle lasketaan sähkön elinkaaren päästöt.) Millä sähkön päästökertoimella sähköauton $100\\,\\text{km}$:n matkan päästö olisi yhtä suuri kuin bensiiniauton? Anna vastaus yksikössä $\\text{g/kWh}$. Mitä tulos kertoo sähköauton hyödystä, jos sähkö tuotetaan kivihiilellä?",
+      "text": "Bensiiniauto kuluttaa $6{,}0$ litraa $100\\,\\text{km}$:llä. Bensiinin energiasisältö on $32\\,\\text{MJ/}\\textsf{l}$ ja palamisen päästökerroin $69\\,\\text{g/MJ}$.\n\nSähköauto kuluttaa $100\\,\\text{km}$:llä sähköä $18\\,\\text{kWh}$. (Vertailu on karkea. Bensiiniautolle lasketaan vain polttaminen. Sähköautolle lasketaan sähkön elinkaaren päästöt.)\n\nMillä sähkön päästökertoimella sähköauton $100\\,\\text{km}$:n matkan päästö olisi yhtä suuri kuin bensiiniauton? Anna vastaus yksikössä $\\text{g/kWh}$. Mitä tulos kertoo sähköauton hyödystä, jos sähkö tuotetaan kivihiilellä?",
       "answer": 740,
       "unit": "g/kWh",
       "tolerance": 0.03
@@ -268,7 +268,7 @@
     {
       "id": "fy2-8-L3-02",
       "level": 3,
-      "text": "Esimerkkikaupunki tarvitsee sähköä $100\\,\\text{GWh}$ vuodessa ja vertailee kahta tapaa. Aurinkopuisto tuottaa sähköä noin $0{,}50\\,\\text{GWh}$ vuodessa hehtaaria kohti. Energiaksi kasvatetusta pellosta saadaan voimalassa sähköä noin $0{,}010\\,\\text{GWh}$ vuodessa hehtaaria kohti. (Luvut ovat pyöristettyjä esimerkkiarvoja; $1\\,\\text{ha} = 0{,}01\\,\\text{km}^2$.) Biomassasähkö tarvitsee peltoa. Kuinka moninkertainen peltoala tarvittaisiin aurinkopuiston alaan verrattuna? Mitä maankäyttö kertoo tuotantotavoista sellaista, mitä päästökerroin ei kerro?",
+      "text": "Esimerkkikaupunki tarvitsee sähköä $100\\,\\text{GWh}$ vuodessa ja vertailee kahta tapaa. Aurinkopuisto tuottaa sähköä noin $0{,}50\\,\\text{GWh}$ vuodessa hehtaaria kohti. Energiaksi kasvatetusta pellosta saadaan voimalassa sähköä noin $0{,}010\\,\\text{GWh}$ vuodessa hehtaaria kohti. (Luvut ovat pyöristettyjä esimerkkiarvoja; $1\\,\\text{ha} = 0{,}01\\,\\text{km}^2$.)\n\nBiomassasähkö tarvitsee peltoa. Kuinka moninkertainen peltoala tarvittaisiin aurinkopuiston alaan verrattuna? Mitä maankäyttö kertoo tuotantotavoista sellaista, mitä päästökerroin ei kerro?",
       "answer": 50,
       "unit": "kertaa",
       "tolerance": 0.02

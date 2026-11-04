@@ -130,7 +130,7 @@
     {
       "id": "fy1-1-L2-05",
       "level": 2,
-      "text": "Taulukossa on planeettojen keskimääräinen etäisyys $r$ Auringosta tähtitieteellisinä yksikköinä; yksi tähtitieteellinen yksikkö on $1\\,\\text{AU}$ eli Maan etäisyys Auringosta. Aurinkokunnan pienoismalli piirretään käytävälle niin, että Neptunus on $2{,}0\\,\\text{m}$ päässä Auringosta ja kaikki etäisyydet pienenevät samalla kertoimella. Kuinka kaukana Auringosta Jupiter on pienoismallissa? Anna vastaus senttimetreinä. Mikä planeetta on pienoismallissa lähimpänä käytävän kohtaa, joka on $1{,}0\\,\\text{m}$ päässä Auringosta?",
+      "text": "Taulukossa on planeettojen keskimääräinen etäisyys $r$ Auringosta tähtitieteellisinä yksikköinä; yksi tähtitieteellinen yksikkö on $1\\,\\text{AU}$ eli Maan etäisyys Auringosta.\n\nAurinkokunnan pienoismalli piirretään käytävälle niin, että Neptunus on $2{,}0\\,\\text{m}$ päässä Auringosta ja kaikki etäisyydet pienenevät samalla kertoimella.\n\nKuinka kaukana Auringosta Jupiter on pienoismallissa? Anna vastaus senttimetreinä. Mikä planeetta on pienoismallissa lähimpänä käytävän kohtaa, joka on $1{,}0\\,\\text{m}$ päässä Auringosta?",
       "kind": [
         "data",
         "model"
@@ -225,7 +225,7 @@
     {
       "id": "fy1-1-L2-07",
       "level": 2,
-      "text": "Yksi paperiarkki on paljon ohuempi kuin viivaimen asteikkoväli $1\\,\\text{mm}$, joten sen paksuutta ei voi mitata suoraan. Oppilas pinosi samaa kopiopaperia, painoi pinon kevyesti kasaan ja mittasi korkeuden $h$ viivaimella, jolta hän luki tuloksen puolen millimetrin tarkkuudella. Pino, jossa on $N$ arkkia, on $h = dN$ korkea, missä $d$ on yhden arkin paksuus, joten pisteet asettuvat suoralle, joka kulkee origon kautta ja jonka kulmakerroin on $d$. Piirrä pisteistä kuvaaja ja sovita pisteisiin suora. Lue suoralta pinon korkeus, kun $N = 300$, ja laske yhden arkin paksuus $d$ millimetreinä jakamalla korkeus arkkien määrällä. Selitä, miksi pinon mittaaminen antaa tarkemman tuloksen kuin yhden arkin mittaaminen.",
+      "text": "Yksi paperiarkki on paljon ohuempi kuin viivaimen asteikkoväli $1\\,\\text{mm}$, joten sen paksuutta ei voi mitata suoraan.\n\nOppilas pinosi samaa kopiopaperia, painoi pinon kevyesti kasaan ja mittasi korkeuden $h$ viivaimella, jolta hän luki tuloksen puolen millimetrin tarkkuudella. Pino, jossa on $N$ arkkia, on $h = dN$ korkea, missä $d$ on yhden arkin paksuus, joten pisteet asettuvat suoralle, joka kulkee origon kautta ja jonka kulmakerroin on $d$.\n\nPiirrä pisteistä kuvaaja ja sovita pisteisiin suora. Lue suoralta pinon korkeus, kun $N = 300$, ja laske yhden arkin paksuus $d$ millimetreinä jakamalla korkeus arkkien määrällä. Selitä, miksi pinon mittaaminen antaa tarkemman tuloksen kuin yhden arkin mittaaminen.",
       "kind": [
         "experiment",
         "data",
@@ -297,7 +297,7 @@
     {
       "id": "fy1-1-L3-04",
       "level": 3,
-      "text": "Arvioi, kuinka monta sadepisaraa putoaa jalkapallokentälle yhden sadekuuron aikana. Oletukset: kuuro kasvattaa kentälle kertyvän vesikerroksen paksuutta nopeudella $5{,}0\\,\\text{mm/h}$ ja kestää $10\\,\\text{min}$, kentän ala on $6{,}0\\cdot10^{3}\\,\\text{m}^2$ ja jokainen pisara on pallo, jonka halkaisija on $2{,}0\\,\\text{mm}$. Pallon tilavuus on $V = 4\\pi r^{3}/3$. Kuinka monta pisaraa kentälle putoaa miljardeina? Mikä oletuksista vaikuttaa tulokseen eniten, jos sen arvo on $20\\,\\%$ liian suuri, ja miksi? Perustele laskemalla.",
+      "text": "Arvioi, kuinka monta sadepisaraa putoaa jalkapallokentälle yhden sadekuuron aikana.\n\nOletukset: kuuro kasvattaa kentälle kertyvän vesikerroksen paksuutta nopeudella $5{,}0\\,\\text{mm/h}$ ja kestää $10\\,\\text{min}$, kentän ala on $6{,}0\\cdot10^{3}\\,\\text{m}^2$ ja jokainen pisara on pallo, jonka halkaisija on $2{,}0\\,\\text{mm}$. Pallon tilavuus on $V = 4\\pi r^{3}/3$.\n\nKuinka monta pisaraa kentälle putoaa miljardeina? Mikä oletuksista vaikuttaa tulokseen eniten, jos sen arvo on $20\\,\\%$ liian suuri, ja miksi? Perustele laskemalla.",
       "kind": [
         "reasoning",
         "model"
@@ -309,7 +309,7 @@
     {
       "id": "fy1-1-L3-05",
       "level": 3,
-      "text": "Voyager 2 ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $d_0 = 119{,}7\\,\\text{AU}$ Auringosta, ja sen nopeus Aurinkoon nähden on $v = 15{,}341\\,\\text{km/s}$. Tasaisen liikkeen malli on $d = d_0 + vt$. Oppilas laski mallin ennusteen helmikuulle 2026, jolloin heliopaussin ylityksestä on kulunut $t = 7{,}25\\,\\text{a}$. Oppilaan ratkaisu: ”Matka on $s = vt = 15{,}341\\,\\text{km/s}\\cdot7{,}25 = 111{,}2\\,\\text{km}$. Etäisyys on $d = 119{,}7\\,\\text{AU} + 111{,}2\\,\\text{km} \\approx 119{,}7\\,\\text{AU}$. Voyager olisi siis lähes samassa paikassa kuin 2018, joten malli on väärä.” Käytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$. Mittaus antoi helmikuussa 2026 arvon $143{,}05\\,\\text{AU}$. Etsi oppilaan virhe ja laske mallin oikea ennuste etäisyydelle $d$ tähtitieteellisinä yksikköinä. Selitä, miksi mittaus tukee mallia mutta ei todista, että Voyager liikkuu samalla nopeudella aina.",
+      "text": "Voyager 2 ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $d_0 = 119{,}7\\,\\text{AU}$ Auringosta, ja sen nopeus Aurinkoon nähden on $v = 15{,}341\\,\\text{km/s}$. Tasaisen liikkeen malli on $d = d_0 + vt$.\n\nOppilas laski mallin ennusteen helmikuulle 2026, jolloin heliopaussin ylityksestä on kulunut $t = 7{,}25\\,\\text{a}$. Oppilaan ratkaisu: ”Matka on $s = vt = 15{,}341\\,\\text{km/s}\\cdot7{,}25 = 111{,}2\\,\\text{km}$. Etäisyys on $d = 119{,}7\\,\\text{AU} + 111{,}2\\,\\text{km} \\approx 119{,}7\\,\\text{AU}$. Voyager olisi siis lähes samassa paikassa kuin 2018, joten malli on väärä.”\n\nKäytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$. Mittaus antoi helmikuussa 2026 arvon $143{,}05\\,\\text{AU}$.\n\nEtsi oppilaan virhe ja laske mallin oikea ennuste etäisyydelle $d$ tähtitieteellisinä yksikköinä. Selitä, miksi mittaus tukee mallia mutta ei todista, että Voyager liikkuu samalla nopeudella aina.",
       "kind": [
         "error",
         "model",

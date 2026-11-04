@@ -221,7 +221,7 @@
     {
       "id": "fy3-15-L3-01",
       "level": 3,
-      "text": "The fuel power of a combined heat and power plant is $600\\,\\text{MW}$. When the plant produces only electricity, the electric power is $240\\,\\text{MW}$. When all the heat of the condenser is led into the district heating network, the electric power is $180\\,\\text{MW}$ and the district heating power $348\\,\\text{MW}$. Between these modes the electric power decreases linearly as the district heating power increases. The district heating network now needs $200\\,\\text{MW}$ of heat. How large is the electric power of the plant? Give your answer in megawatts. Also calculate the overall efficiency of the plant and justify why the combined efficiency of electricity and heat still does not tell which way of production is more worthwhile.",
+      "text": "The fuel power of a combined heat and power plant is $600\\,\\text{MW}$.\n\nWhen the plant produces only electricity, the electric power is $240\\,\\text{MW}$. When all the heat of the condenser is led into the district heating network, the electric power is $180\\,\\text{MW}$ and the district heating power $348\\,\\text{MW}$. Between these modes the electric power decreases linearly as the district heating power increases.\n\nThe district heating network now needs $200\\,\\text{MW}$ of heat. How large is the electric power of the plant? Give your answer in megawatts.\n\nAlso calculate the overall efficiency of the plant and justify why the combined efficiency of electricity and heat still does not tell which way of production is more worthwhile.",
       "answer": 206,
       "unit": "MW",
       "tolerance": 0.02
@@ -237,7 +237,7 @@
     {
       "id": "fy3-15-L3-03",
       "level": 3,
-      "text": "Heating a house takes $100\\,\\text{kWh}$ of heat. The electricity is produced in a condensing power plant with an efficiency of 0.400, and $5.0\\,\\%$ of it is lost in power lines and transformers, so the house's electricity meter receives the fraction $0.950 \\cdot 0.400 = 0.380$ of the energy of the fuel. The house has an air-source heat pump with a coefficient of performance of 3.00. How much fuel energy does heating with the pump require at the power plant? Give your answer in kilowatt-hours. Compare the result directly with electric heating and an oil boiler (efficiency 0.900) and conclude which way saves the most fuel.",
+      "text": "Heating a house takes $100\\,\\text{kWh}$ of heat.\n\nThe electricity is produced in a condensing power plant with an efficiency of 0.400, and $5.0\\,\\%$ of it is lost in power lines and transformers, so the house's electricity meter receives the fraction $0.950 \\cdot 0.400 = 0.380$ of the energy of the fuel. The house has an air-source heat pump with a coefficient of performance of 3.00.\n\nHow much fuel energy does heating with the pump require at the power plant? Give your answer in kilowatt-hours.\n\nCompare the result directly with electric heating and an oil boiler (efficiency 0.900) and conclude which way saves the most fuel.",
       "answer": 87.7,
       "unit": "kWh",
       "tolerance": 0.02

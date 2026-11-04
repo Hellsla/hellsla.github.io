@@ -130,7 +130,7 @@
     {
       "id": "fy3-9-L2-03",
       "level": 2,
-      "text": "In a physics lesson the tip of a disposable syringe was connected to a pressure gauge, and the plunger of the syringe was moved slowly so that the temperature of the air stayed the same. The measured volumes $V$ (ml) were 10.0; 12.5; 15.0; 20.0; 25.0 and 30.0, and the corresponding pressures $p$ (kPa) were 203; 159; 134; 99; 81 and 66. Calculate a column $1/V$ in the table, plot $p$ as a function of $1/V$ and fit a straight line through the origin to the points. The slope of the line is $pV$. Give it in joules.",
+      "text": "In a physics lesson the tip of a disposable syringe was connected to a pressure gauge, and the plunger of the syringe was moved slowly so that the temperature of the air stayed the same.\n\nThe measured volumes $V$ (ml) were 10.0; 12.5; 15.0; 20.0; 25.0 and 30.0, and the corresponding pressures $p$ (kPa) were 203; 159; 134; 99; 81 and 66.\n\nCalculate a column $1/V$ in the table, plot $p$ as a function of $1/V$ and fit a straight line through the origin to the points. The slope of the line is $pV$. Give it in joules.",
       "answer": 2.0,
       "unit": "J",
       "tolerance": 0.05
@@ -138,7 +138,7 @@
     {
       "id": "fy3-9-L2-04",
       "level": 2,
-      "text": "The envelope of a hot-air balloon has a volume of $2800\\,\\text{m}^3$, and there is an opening at the bottom of the envelope. The envelope is full of air at $10\\,{}^\\circ\\text{C}$, which is heated with a burner to $100\\,{}^\\circ\\text{C}$. The pressure inside the envelope stays equal to the outside air pressure. All the air that was originally in the envelope warms to $100\\,{}^\\circ\\text{C}$. How many cubic metres of this $100\\,{}^\\circ\\text{C}$ air do not fit in the envelope but have been pushed out through the opening?",
+      "text": "The envelope of a hot-air balloon has a volume of $2800\\,\\text{m}^3$, and there is an opening at the bottom of the envelope. The envelope is full of air at $10\\,{}^\\circ\\text{C}$, which is heated with a burner to $100\\,{}^\\circ\\text{C}$. The pressure inside the envelope stays equal to the outside air pressure.\n\nAll the air that was originally in the envelope warms to $100\\,{}^\\circ\\text{C}$.\n\nHow many cubic metres of this $100\\,{}^\\circ\\text{C}$ air do not fit in the envelope but have been pushed out through the opening?",
       "answer": 890,
       "unit": "m³",
       "tolerance": 0.02
@@ -268,7 +268,7 @@
     {
       "id": "fy3-9-L3-01",
       "level": 3,
-      "text": "A diver is in a lake at a depth of $20.0\\,\\text{m}$ and blows an air bubble whose volume is $2.0\\,\\text{cm}^3$. The bubble rises to the surface. The atmospheric pressure is $101\\,\\text{kPa}$ and the density of water is $1000\\,\\text{kg/m}^3$. Assume that the temperature of the water is the same all the way and that the air of the bubble does not dissolve in water. What is the volume of the bubble at the surface? Using the result, justify why a person diving with compressed air must not hold their breath when rising to the surface.",
+      "text": "A diver is in a lake at a depth of $20.0\\,\\text{m}$ and blows an air bubble whose volume is $2.0\\,\\text{cm}^3$. The bubble rises to the surface.\n\nThe atmospheric pressure is $101\\,\\text{kPa}$ and the density of water is $1000\\,\\text{kg/m}^3$. Assume that the temperature of the water is the same all the way and that the air of the bubble does not dissolve in water.\n\nWhat is the volume of the bubble at the surface? Using the result, justify why a person diving with compressed air must not hold their breath when rising to the surface.",
       "answer": 5.9,
       "unit": "cm³",
       "tolerance": 0.02
@@ -276,7 +276,7 @@
     {
       "id": "fy3-9-L3-02",
       "level": 3,
-      "text": "The tyres of a car are filled in a garage at $20\\,{}^\\circ\\text{C}$, and the tyre pressure gauge shows $250.0\\,\\text{kPa}$. The gauge shows gauge pressure, that is, how much greater the air pressure in the tyre is than the atmospheric pressure. The atmospheric pressure is $101\\,\\text{kPa}$. At night the car stands in the yard, and the air in the tyre cools to $-20\\,{}^\\circ\\text{C}$. The volume of the tyre stays practically the same, and no air escapes. What does the gauge show on a frosty morning? Justify why the reading of the gauge cannot be substituted directly into the formula $p_1/T_1 = p_2/T_2$.",
+      "text": "The tyres of a car are filled in a garage at $20\\,{}^\\circ\\text{C}$, and the tyre pressure gauge shows $250.0\\,\\text{kPa}$. The gauge shows gauge pressure, that is, how much greater the air pressure in the tyre is than the atmospheric pressure. The atmospheric pressure is $101\\,\\text{kPa}$.\n\nAt night the car stands in the yard, and the air in the tyre cools to $-20\\,{}^\\circ\\text{C}$. The volume of the tyre stays practically the same, and no air escapes.\n\nWhat does the gauge show on a frosty morning? Justify why the reading of the gauge cannot be substituted directly into the formula $p_1/T_1 = p_2/T_2$.",
       "answer": 202,
       "unit": "kPa",
       "tolerance": 0.02
@@ -284,7 +284,7 @@
     {
       "id": "fy3-9-L3-03",
       "level": 3,
-      "text": "The cylinder of a bicycle pump is $40.0\\,\\text{cm}$ long and equally wide along its whole length. When the plunger is pulled up, the cylinder is full of outside air at a pressure of $101\\,\\text{kPa}$. The gauge pressure of the tyre is $300.0\\,\\text{kPa}$. The valve of the pump lets air into the tyre only when the air pressure in the cylinder is equal to the air pressure in the tyre. How far must the plunger be pressed before air starts to flow into the tyre? Assume that the temperature stays the same and the volume of the hose is negligible. Justify why pumping a hard tyre feels inefficient.",
+      "text": "The cylinder of a bicycle pump is $40.0\\,\\text{cm}$ long and equally wide along its whole length. When the plunger is pulled up, the cylinder is full of outside air at a pressure of $101\\,\\text{kPa}$. The gauge pressure of the tyre is $300.0\\,\\text{kPa}$.\n\nThe valve of the pump lets air into the tyre only when the air pressure in the cylinder is equal to the air pressure in the tyre.\n\nHow far must the plunger be pressed before air starts to flow into the tyre? Assume that the temperature stays the same and the volume of the hose is negligible. Justify why pumping a hard tyre feels inefficient.",
       "answer": 29.9,
       "unit": "cm",
       "tolerance": 0.02

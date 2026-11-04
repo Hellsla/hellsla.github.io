@@ -284,7 +284,7 @@
     {
       "id": "fy2-6-L3-03",
       "level": 3,
-      "text": "Esimerkkinä oleva kunta ehdottaa aurinkopuistoa, joka korvaisi Olkiluoto 3:n ($1600\\,\\text{MW}$). Aurinkopuiston keskiteho vuoden aikana on $11\\,\\%$ ja Olkiluoto 3:n $90\\,\\%$ nimellistehosta. Kuinka suuri aurinkopuiston nimellistehon pitäisi olla, jotta se tuottaisi vuodessa yhtä paljon energiaa kuin Olkiluoto 3? Anna vastaus gigawatteina. Pohdi lisäksi, korvaisiko tällainen puisto Olkiluoto 3:n tammikuun iltana.",
+      "text": "Esimerkkinä oleva kunta ehdottaa aurinkopuistoa, joka korvaisi Olkiluoto 3:n ($1600\\,\\text{MW}$). Aurinkopuiston keskiteho vuoden aikana on $11\\,\\%$ ja Olkiluoto 3:n $90\\,\\%$ nimellistehosta.\n\nKuinka suuri aurinkopuiston nimellistehon pitäisi olla, jotta se tuottaisi vuodessa yhtä paljon energiaa kuin Olkiluoto 3? Anna vastaus gigawatteina. Pohdi lisäksi, korvaisiko tällainen puisto Olkiluoto 3:n tammikuun iltana.",
       "answer": 13,
       "unit": "GW",
       "tolerance": 0.02
