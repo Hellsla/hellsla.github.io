@@ -39,6 +39,77 @@
       "answer": 0.34,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L1-06",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "Lasipurkin teräskansi on joskus tiukasti kiinni. Kansi irtoaa usein helpommin, kun sen päälle valutetaan hetki kuumaa vettä. Mikä on syy?",
+      "answer": "Teräskansi laajenee lämmetessään enemmän kuin lasi, joten kansi löystyy purkin suun ympärillä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kuuma vesi kutistaa metallikannen, koska metallin hiukkaset painuvat lämmetessään lähemmäs toisiaan.",
+          "feedback": "Väärin: kun aine lämpenee, hiukkasten keskimääräinen etäisyys kasvaa. Siksi kansi laajenee eikä kutistu."
+        },
+        {
+          "text": "Purkin suu pienenee, koska lasin hiukkaset kasvavat lämmetessään ja täyttävät raon.",
+          "feedback": "Väärin: hiukkaset eivät kasva lämmetessä. Niiden keskimääräiset etäisyydet kasvavat. Vesi valutetaan kannen päälle, joten lasi lämpenee vähemmän kuin kansi."
+        },
+        {
+          "text": "Teräskansi laajenee lämmetessään enemmän kuin lasi, joten kansi löystyy purkin suun ympärillä.",
+          "correct": true,
+          "feedback": "Oikein: teräksen $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$ on suurempi kuin lasin $9 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Siksi lämmin kansi kasvaa enemmän kuin lasi ja löystyy."
+        },
+        {
+          "text": "Lasi ja teräs laajenevat yhtä paljon, mutta kuuma vesi tekee kannen reunasta liukkaan.",
+          "feedback": "Väärin: eri aineet laajenevat eri määrän, koska niiden lämpötilakertoimet ovat erilaiset. Teräksellä $\\alpha$ on suurempi kuin lasilla."
+        }
+      ]
+    },
+    {
+      "id": "fy3-8-L1-07",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "Kolme samankokoista näytettä lämpenee $20\\,{}^\\circ\\text{C}$:sta $30\\,{}^\\circ\\text{C}$:seen. Näytteet ovat teräspala, lasillinen vettä ja ilmapallollinen ilmaa. Ilman paine pysyy samana. Mikä näyte laajenee suhteellisesti eniten, ja miksi?",
+      "answer": "Ilma, koska kaasun hiukkasia sitovat toisiinsa vain heikot vuorovaikutukset.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Teräs, koska kiinteän aineen hiukkaset värähtelevät lämmetessään kaikkein voimakkaimmin.",
+          "feedback": "Väärin: kiinteän aineen hiukkaset ovat tiukasti paikoillaan, joten hiukkasvälit kasvavat vähän. Teräksellä $\\gamma \\approx 3\\alpha = 36 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Se on kolmesta pienin."
+        },
+        {
+          "text": "Vesi, koska nesteen hiukkaset pääsevät liikkumaan paikasta toiseen vapaasti.",
+          "feedback": "Väärin: nesteessä hiukkaset ovat yhä lähellä toisiaan ja sitoutuneet toisiinsa. Siksi vesi laajenee paljon vähemmän kuin kaasu. Veden $\\gamma = 0{,}21 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ on paljon pienempi kuin ilman arvo."
+        },
+        {
+          "text": "Kaikki yhtä paljon, koska lämpötilan muutos on kaikilla näytteillä sama.",
+          "feedback": "Väärin: sama lämpötilan muutos ei riitä. Suhteellinen laajeneminen riippuu myös lämpötilakertoimesta, joka on aineelle ominainen. Kerroin on kaasulla suurin ja kiinteällä aineella pienin."
+        },
+        {
+          "text": "Ilma, koska kaasun hiukkasia sitovat toisiinsa vain heikot vuorovaikutukset.",
+          "correct": true,
+          "feedback": "Oikein: kaasun hiukkasia sitovat toisiinsa vain heikot vuorovaikutukset. Siksi hiukkasvälit kasvavat helposti, ja kaasu saa laajentua vapaasti, kun paine pysyy samana. Ilman $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ on paljon suurempi kuin veden $0{,}21 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ tai teräksen $36 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$."
+        }
+      ]
+    },
+    {
+      "id": "fy3-8-L1-08",
+      "level": 1,
+      "kind": [
+        "error"
+      ],
+      "text": "Oppilas laski, kuinka paljon $2{,}0\\,\\text{m}$ pitkä alumiinitanko ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) pitenee. Tangon lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $65\\,{}^\\circ\\text{C}$:seen. Oppilas kirjoitti $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2{,}0\\,\\text{m} \\cdot 65 = 3{,}0\\,\\text{mm}$ (yksiköt jätetty pois).\n\nLaskussa on virhe. Laske tangon pituuden muutos oikein. Anna vastaus millimetreinä.",
+      "answer": 2.3,
+      "unit": "mm",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,112 @@
       "answer": 12,
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-8-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Esimerkkiaineisto: taulukossa on $1{,}000\\,\\text{kg}$ veden tilavuus eri lämpötiloissa. Tilavuus on annettu kuudella merkitsevällä numerolla, koska muutokset ovat pieniä.\n\na) Missä taulukon lämpötilassa vesi vie vähiten tilaa? Mitä se kertoo veden tiheydestä siinä lämpötilassa?\n\nb) Laske veden tilavuuden lämpötilakerroin $\\gamma$ lämpötilavälillä $4\\,{}^\\circ\\text{C} \\ldots 10\\,{}^\\circ\\text{C}$ yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$. Käytä alkutilavuutena tilavuutta lämpötilassa $4\\,{}^\\circ\\text{C}$.\n\nc) Vertaa tulosta arvoon $\\gamma = 210 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, joka pätee lämpötilassa $20\\,{}^\\circ\\text{C}$. Selitä, miksi vesi poikkeaa muista nesteistä lämpötilavälillä $0\\,{}^\\circ\\text{C} \\ldots 4\\,{}^\\circ\\text{C}$. Selitä myös, miksi syvän järven pohjalla veden lämpötila on talvella noin $4\\,{}^\\circ\\text{C}$.\n\nVastauskenttään tulee kohdan b) tulos.",
+      "answer": 45,
+      "unit": "10⁻⁶ 1/K",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "$1{,}000\\,\\text{kg}$ veden tilavuus (esimerkkiaineisto)",
+        "columns": [
+          "$T\\,({}^\\circ\\text{C})$",
+          "$V\\,(\\text{dm}^3)$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1.00016"
+          ],
+          [
+            "2",
+            "1.00006"
+          ],
+          [
+            "4",
+            "1.00003"
+          ],
+          [
+            "6",
+            "1.00006"
+          ],
+          [
+            "8",
+            "1.00015"
+          ],
+          [
+            "10",
+            "1.00030"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-8-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "Esimerkkiaineisto: ryhmä mittasi mittakellolla $0{,}800\\,\\text{m}$ pitkän metallisauvan pituuden muutoksen $\\Delta L$. Sauvaa lämmitettiin lämpötilasta $20\\,{}^\\circ\\text{C}$. Mittakellon lukematarkkuus on $0{,}01\\,\\text{mm}$.\n\na) Laske sauvan aineen pituuden lämpötilakerroin $\\alpha$ yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$. Käytä taulukon ensimmäistä ja viimeistä pistettä.\n\nb) Päättele oppitunnin taulukosta (teräs 12, alumiini 23, kupari 17, kaikki yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$), mistä metallista sauva on tehty. Selitä myös, miksi mittauspisteet eivät yleensä ole täsmälleen samalla suoralla.\n\nVastauskenttään tulee kohdan a) tulos.",
+      "answer": 22.9,
+      "unit": "10⁻⁶ 1/K",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Metallisauvan pituuden muutos (esimerkkiaineisto)",
+        "columns": [
+          "$T\\,({}^\\circ\\text{C})$",
+          "$\\Delta L\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "0.00"
+          ],
+          [
+            "30",
+            "0.19"
+          ],
+          [
+            "40",
+            "0.38"
+          ],
+          [
+            "50",
+            "0.55"
+          ],
+          [
+            "60",
+            "0.75"
+          ],
+          [
+            "70",
+            "0.92"
+          ],
+          [
+            "80",
+            "1.10"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-8-L2-07",
+      "level": 2,
+      "kind": [
+        "experiment",
+        "reasoning"
+      ],
+      "text": "Ryhmä suunnittelee koetta. Siinä mitataan teräksen pituuden lämpötilakerroin ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) teräsputkesta. Putki on $20\\,{}^\\circ\\text{C}$:ssa $1{,}00\\,\\text{m}$ pitkä. Sitä lämmitetään höyryllä $100\\,{}^\\circ\\text{C}$:seen. Ryhmä aikoo mitata pituuden mittanauhalla. Mittanauhan lukematarkkuus on $0{,}5\\,\\text{mm}$.\n\na) Laske, kuinka paljon putki pitenee.\n\nb) Selitä, miksi mittanauha ei sovi tähän mittaukseen. Ehdota väline, jolla pienen pituuden muutoksen voi mitata luotettavasti.\n\nc) Kuinka pitkä teräsputken pitäisi olla, jotta mittanauhan lukematarkkuus olisi enintään $5{,}0\\,\\%$ pituuden muutoksesta? Lämpötilan muutos on sama. Anna vastaus metreinä.\n\nVastauskenttään tulee kohdan c) tulos.",
+      "answer": 10.4,
+      "unit": "m",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -100,6 +277,52 @@
       "answer": 460,
       "unit": "cm³",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "Esimerkkiaineisto: radalle asennetaan teräskiskot ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$). Kiskot ovat $25{,}0\\,\\text{m}$ pitkiä. Taulukossa on kiskon lämpötila asennushetkellä sekä vuoden pienin ja suurin lämpötila. Aurinko lämmittää kiskon ilmaa kuumemmaksi. Oletetaan kuten rautatiekiskoissa yleensä, että raon leveyden muutos on yhtä suuri kuin yhden kiskon pituuden muutos. Rako ei saa sulkeutua kesällä. Rako ei saa olla talvella yli $30\\,\\text{mm}$.\n\na) Laske pienin asennusrako, jolla rako ei sulkeudu.\n\nb) Laske suurin asennusrako, jolla rako ei talvella ole yli $30\\,\\text{mm}$.\n\nc) Perustele laskulla, miksi asennusrako $15\\,\\text{mm}$ kelpaa asennettaessa taulukon lämpötilassa mutta ei asennettaessa talvipakkasella.\n\nVastauskenttään tulee kohdan a) tulos millimetreinä.",
+      "answer": 13.2,
+      "unit": "mm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kiskon lämpötilat (esimerkkiaineisto)",
+        "columns": [
+          "Tilanne",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "talven alin",
+            "−32"
+          ],
+          [
+            "asennus",
+            "8"
+          ],
+          [
+            "kesän ylin",
+            "52"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-8-L3-05",
+      "level": 3,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "Esimerkkiaineisto: nestelämpömittarin lasipallossa on etanolia. Etanolin tilavuus on $10\\,{}^\\circ\\text{C}$:ssa $1{,}00\\,\\text{cm}^3$, ja se täyttää pallon täsmälleen. Etanoli nousee pallosta ohueen lasiputkeen eli kapillaariputkeen. Putken sisäsäde on $0{,}30\\,\\text{mm}$. Käytä etanolille $\\gamma = 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ ja lasille $\\alpha = 9{,}0 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Oleta kertoimet vakioiksi lämpötilavälillä $10\\,{}^\\circ\\text{C} \\ldots 30\\,{}^\\circ\\text{C}$. Pallon sisätilavuus kasvaa kuin yhtä suuri lasikappale. Kapillaarin poikkipinta-ala oletetaan vakioksi.\n\na) Laske, kuinka monta millimetriä etanolipylväs nousee kapillaarissa, kun lämpötila nousee $10\\,{}^\\circ\\text{C}$:sta $30\\,{}^\\circ\\text{C}$:seen.\n\nb) Kuinka monta prosenttia suurempi nousu saataisiin, jos pallon laajeneminen jätettäisiin huomiotta?\n\nc) Laske, kuinka paljon vesi nousisi samassa laitteessa. Perustele laskulla, miksi vesi ei sovi nestelämpömittarin nesteeksi.\n\nVastauskenttään tulee kohdan a) tulos millimetreinä.",
+      "answer": 75.9,
+      "unit": "mm",
+      "tolerance": 0.03
     }
   ]
 }

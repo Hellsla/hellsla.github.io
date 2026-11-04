@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a35e96dac885a3f2
+CONTENT-HASH: a3211c7e2bafd3d5
+Mode: full
+Round: 1
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- exercises/solutions.md — same subscript letters (v, j, s) → w, i, melt, consistent with the lesson and the simulation.
-- exercises/exercises.json L3-01 — clumsy 'to be added to the water, so much that the ice melts' → 'The amount of ice is chosen so that the ice melts exactly completely'.
+- exercises/exercises.json L2-05 — 'draw a straight line between the points' (calque of 'pisteiden lomaan') → 'draw the straight line that fits the points best'; solutions.md L2-05 'fitted between the points' → 'fitted to the points'.
+- exercises/exercises.json L3-04 — 'the ice has been in melting ice water' → 'the ice has been kept in a bath of melting ice and water'.
 
 ## Polish
 - None.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Wording of tasks and complete solution steps with the standard English step labels.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the exercise texts now with LaTeX numbers and units, the new figure task L1-03 (energy bars, answer 60 g) with its solution and figure labels, and the changed Reasonableness lines.
+- Pedagogy of the translation against the reviewed Finnish: the 8 new tasks keep their level, kind tags, misconception feedback (each wrong choice explains why it fails) and the 'Write a solution / answer box' instructions (part a/b/c wording, which part goes into the answer box) unchanged. Solution steps keep the standard step labels and the reasonableness checks.

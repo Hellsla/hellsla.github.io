@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 4cfa8a8208c7ac15
-
-Delta review over the audit's PASS (497163bfee90ee02): L1-03 (water cooling) replaced by a figure task fy3-14/energy-bars (three heats as bars).
+CONTENT-HASH: d5ba7c6f9fd90049
 
 ## Blocking
 - none
+
 ## Polish
-- level: the task needs a comparison (5 ≤ 25 < 65), a subtraction and the division by s, with a conclusion; that is L2 work under an L1 label. Acceptable, but say it in the hint or move it to L2 at the next edit.
-- the solution could add the common mistake 25 kJ / 334 kJ/kg = 75 g (ignoring the warming of the ice).
+- exercises.json L3-04, mittaus 1 — now 0,200 kg, 30,0 °C, 0,0500 kg, 8,2 °C, which is the L2-04 task (8,1 °C) with one digit moved; the L3 task still repeats an L2 measurement. Change the water to e.g. 0,250 kg / 25,0 °C and T = 7,0 °C (recompute s_1 and the solution) so the set has no near-duplicate.
+- L2-05 a) — "Piirrä kuvaaja ja vedä suora" still comes with the two points the line passes through, so the drawing is only a check; drop the points and let the student read (300 s; 133 g), or drop "piirrä".
+- solutions.md L3-05 Vastaus a) — the new parenthesis about "rajatapaus, jossa kaikki jää juuri suli" is confusing next to the plain answer; delete it (c) already shows the rows lie below 29 °C).
+- L2-05 solution Vastaus — the sentence about room heat melting extra ice is correct but sits after the main answer; move it to a separate "Virhelähteet" line so the b) answer stays one sentence.
+
 ## Checked
-- Figure needed: the text names the three heats but gives no numbers; 25, 5 and 60 kJ are read from the bars (grid 5 kJ, numbers every 10 kJ). The description lists them without the answer.
-- (25 − 5) kJ / 334 kJ/kg = 59,9 g; answer 60 g, 2 % band 58,8-61,2; energy balance 25 kJ right.
-- 360 px capture: bars and labels legible, bar ends on grid; colour supplemented by labels.
-- Kuvaajan lukeminen present; Finnish clear; LaTeX in new text.
+- Round 2. Earlier Polish carried: L1-06 now says "Täsmälleen 0 °C" (no longer the longest option, number asked); L3-05 stray sentence deleted; L3-04 structure unchanged.
+- L2-07 distractors replaced: "astia lämpeni" became "lopputilan lämpötila luettiin liian matalaksi"; both wrong options push s the stated wrong direction, correct option (wet ice) physically right.
+- Numbers recomputed: L3-04 s_1 = 331 kJ/kg (8,2 °C), s_2 = 373, corrected 335 (answer 335 unchanged); L3-05 rows 30/40/60 reproduce T = 0,6 / 8,1 / 23,1; T_j = -15,7 °C, T_v,min = 29,2 °C.
+- Solution a) of L3-04 reordered so a), b), c) answers follow the task parts; L2-05 b) 338 kJ/kg and 1 % deviation consistent.
+- Counts 8/7/5, all new tasks have complete model solutions; level fit and scope (no real-gas or FY4 content) unchanged.

@@ -40,6 +40,74 @@
       "answer": 87.3,
       "unit": "kPa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L1-06",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "A sealed amount of air is in a disposable syringe, and the plunger is moved slowly so that the temperature of the air stays the same. What does the graph look like in which the air pressure $p$ is plotted as a function of the volume $V$?",
+      "answer": "A falling curve, because the product $pV$ is constant and the pressure decreases as the volume increases.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "A falling straight line, because the pressure $p$ decreases by the same amount for every added millilitre.",
+          "feedback": "When the volume doubles, the pressure halves. If the graph were a straight line, the pressure would decrease by the same amount for every added millilitre, and it would drop to zero. In Boyle's law the pressure approaches zero but never reaches it."
+        },
+        {
+          "text": "A rising straight line, because when the volume $V$ increases there are more particles in the air and the pressure increases.",
+          "feedback": "The amount of air sealed in stays the same all the time, so the number of particles does not increase. When the volume increases, the particles hit the walls less often and the pressure decreases."
+        },
+        {
+          "text": "A falling curve, because the product $pV$ is constant and the pressure decreases as the volume increases.",
+          "correct": true,
+          "feedback": "Correct: in an isothermal change $pV$ is constant, so $p = \\text{constant} \\cdot \\dfrac{1}{V}$. The graph is a falling curve that approaches the axes but never meets them."
+        },
+        {
+          "text": "A horizontal line, because the temperature $T$ is constant and therefore the pressure is constant too.",
+          "feedback": "A constant temperature does not mean a constant pressure. When the volume is changed, the rate at which particles hit the walls changes, so the pressure changes even though the temperature stays the same."
+        }
+      ]
+    },
+    {
+      "id": "fy3-9-L1-07",
+      "level": 1,
+      "text": "The cylinder of an air compressor contains $1.50\\,\\textsf{l}$ of air at a pressure of $101\\,\\text{kPa}$. The plunger slowly compresses the air into a smaller space until the pressure is $240\\,\\text{kPa}$. The temperature of the air stays the same, and no air escapes from the cylinder. What is the volume of the air now?",
+      "answer": 0.63,
+      "unit": "l",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L1-08",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "A student measures the pressure $p$ of a sealed amount of air at different volumes $V$ at a constant temperature and plots the points in a $(1/V,\\,p)$ graph. Within the measurement uncertainty, the points lie on a straight line through the origin. What does this show?",
+      "answer": "The pressure is inversely proportional to the volume, so the product $pV$ is constant.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The pressure is directly proportional to the volume, because $1/V$ increases with the volume.",
+          "feedback": "When the volume increases, its reciprocal $1/V$ decreases. So a straight line in a $(1/V,\\,p)$ graph means that the pressure is directly proportional to the reciprocal $1/V$, that is, inversely proportional to the volume."
+        },
+        {
+          "text": "The temperature rose during the measurements, because the points $(V,\\,p)$ are not on a curve.",
+          "feedback": "In the measurement the points $(1/V,\\,p)$ were plotted, not the points $(V,\\,p)$. If the temperature had risen, the points would not lie on a straight line through the origin but would deviate from it."
+        },
+        {
+          "text": "The pressure is inversely proportional to the square of the volume, so the product $pV^2$ is constant.",
+          "feedback": "Then the points $(1/V,\\,p)$ would lie on a curve, because $p$ would be directly proportional to the quantity $1/V^2$. A straight graph tells us that $p$ is directly proportional to the quantity $1/V$."
+        },
+        {
+          "text": "The pressure is inversely proportional to the volume, so the product $pV$ is constant.",
+          "correct": true,
+          "feedback": "Correct: a straight line through the origin means $p = k \\cdot \\dfrac{1}{V}$, and the slope is $k = pV$. Boyle's law holds within the measurement uncertainty."
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +142,126 @@
       "answer": 890,
       "unit": "m³",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "Two sealed amounts of air are heated in a water bath. In vessel A the pressure $p$ of the air is measured and in vessel B the volume $V$ of the air. The air in both is at the temperature $\\theta$ of the water bath (table, example data).\n\na) For every row of vessel A calculate the ratios $p/\\theta$ and $p/T$, and for every row of vessel B the ratio $V/T$, where $T$ is the temperature in kelvins. Using your calculations, deduce which vessel shows an isochoric and which an isobaric change of state, and justify why the temperature must be in kelvins.\n\nb) Predict the pressure of vessel A when the water bath boils and its temperature is $100\\,{}^\\circ\\text{C}$.\n\nWrite the result of part b) in the answer box.",
+      "answer": 127,
+      "unit": "kPa",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Air pressure in vessel A and volume in vessel B (example data)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p_\\text{A}\\,(\\text{kPa})$",
+          "$V_\\text{B}\\,(\\text{ml})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "99.8",
+            "14.7"
+          ],
+          [
+            "40.0",
+            "106.4",
+            "15.7"
+          ],
+          [
+            "60.0",
+            "113.4",
+            "16.6"
+          ],
+          [
+            "80.0",
+            "119.8",
+            "17.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-9-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "error"
+      ],
+      "text": "A student verifies Boyle's law. She connects a disposable syringe to a pressure gauge with a thin hose and moves the plunger slowly so that the temperature stays the same. She reads the volume $V$ of the air from the scale of the syringe and the pressure $p$ from the gauge (table, example data). The student calculates the product $pV$ for every row and notices that it is not constant, although the temperature stayed the same. However, the hose and the gauge also contain air, whose volume $V_\\text{h}$ is the same in all the measurements and which the student did not take into account.\n\na) Calculate the product $pV$ for every row and explain why it increases with the volume. Is the error random or systematic? Justify your answer.\n\nb) The total volume of the sealed air is $V + V_\\text{h}$, and Boyle's law holds for it. Determine the volume $V_\\text{h}$ of the air in the hose and the gauge using the first and the last row of the table.\n\nWrite the result of part b) in the answer box.",
+      "answer": 2.0,
+      "unit": "ml",
+      "tolerance": 0.1,
+      "data": {
+        "caption": "Air pressure as a function of the volume of the syringe (example data)",
+        "columns": [
+          "$V\\,(\\text{ml})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "200"
+          ],
+          [
+            "20.0",
+            "109"
+          ],
+          [
+            "30.0",
+            "75.0"
+          ],
+          [
+            "40.0",
+            "57.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-9-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "text": "To determine absolute zero, a tight rigid bottle containing air is heated in a water bath, and the air pressure $p$ is measured as a function of the temperature $\\theta$ (table, example data). The volume of the bottle and the amount of air stay the same.\n\na) Plot the points in a $(\\theta,\\,p)$ graph, fit a straight line to them and extend the line (extrapolate) to the pressure $p = 0$. What temperature in degrees Celsius do you get for absolute zero?\n\nb) Compare the result with the known value $-273.15\\,{}^\\circ\\text{C}$ and explain why a real gas still does not reach this point, although the extension of the line passes through it.\n\nWrite the result of part a) in the answer box.",
+      "answer": -276,
+      "unit": "°C",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Air pressure in a rigid bottle (example data)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "100.1"
+          ],
+          [
+            "20.0",
+            "107.3"
+          ],
+          [
+            "40.0",
+            "114.9"
+          ],
+          [
+            "60.0",
+            "121.8"
+          ],
+          [
+            "80.0",
+            "129.1"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +288,87 @@
       "answer": 29.9,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "text": "A student studies air sealed in a disposable syringe. At first there is $40.0\\,\\text{ml}$ of air at a pressure of $101\\,\\text{kPa}$ and a temperature of $20.0\\,{}^\\circ\\text{C}$. She compresses the air in two ways. In slow compression the temperature stays the same. In fast compression the plunger is pushed down in a fraction of a second and the pressure is read as soon as the plunger has stopped: the air has had time to give only part of the energy to the surroundings (table, example data).\n\na) Calculate the product $pV$ for every row in both series. Deduce in which compression Boyle's law holds.\n\nb) Explain why the pressure in fast compression is greater than Boyle's law predicts. What happens to the pressure when the plunger is held still and the air cools back to the temperature $20.0\\,{}^\\circ\\text{C}$?\n\nc) Think of the fast compression as two steps: first an isothermal compression to the volume $10.0\\,\\text{ml}$ and then the warming of the air at constant volume to the pressure in the table. Use this to calculate the temperature of the air in degrees Celsius right after the fast compression, when the volume is $10.0\\,\\text{ml}$.\n\nWrite the result of part c) in the answer box.",
+      "answer": 76,
+      "unit": "°C",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Air pressure in slow and fast compression (example data)",
+        "columns": [
+          "$V\\,(\\text{ml})$",
+          "$p_\\text{slow}\\,(\\text{kPa})$",
+          "$p_\\text{fast}\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "40.0",
+            "101",
+            "101"
+          ],
+          [
+            "30.0",
+            "135",
+            "141"
+          ],
+          [
+            "20.0",
+            "203",
+            "226"
+          ],
+          [
+            "10.0",
+            "403",
+            "481"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-9-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "text": "A freediver fills her lungs at the surface and dives into a lake holding her breath. The volume $V$ of the air in the lungs was measured at different depths $h$ (table, example data). The atmospheric pressure is $101\\,\\text{kPa}$, the density of water is $1000\\,\\text{kg/m}^3$ and $g = 9.81\\,\\text{m/s}^2$. Assume that the temperature and the amount of the air stay the same and that the pressure of the air in the lungs is all the time the same as the pressure of the surrounding water.\n\na) Calculate the total pressure $p$ of the surroundings at each depth and the product $pV$. Using your calculations, deduce whether the air in the lungs obeys Boyle's law.\n\nb) Assume as a model that the lungs cannot be compressed to less than $1.5\\,\\textsf{l}$. At what depth would the volume of the air in the lungs reach this limit?\n\nc) What is the ratio of the pressure at the depth of part b) to the pressure at the surface, and what is the ratio of the volumes of the lungs at the surface and at this depth? Compare the ratios.\n\nWrite the result of part b) in the answer box.",
+      "answer": 30,
+      "unit": "m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Volume of air in a freediver's lungs (example data)",
+        "columns": [
+          "$h\\,(\\text{m})$",
+          "$V\\,(\\textsf{l})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "6.0"
+          ],
+          [
+            "5.0",
+            "4.0"
+          ],
+          [
+            "10.0",
+            "3.0"
+          ],
+          [
+            "20.0",
+            "2.0"
+          ]
+        ]
+      }
     }
   ]
 }

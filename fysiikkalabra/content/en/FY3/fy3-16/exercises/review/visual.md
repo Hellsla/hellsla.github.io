@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cfdb3fcb022b45aa
+CONTENT-HASH: a9fc9cb18c0434a8
 
 ## Blocking
 (none)
 
+## Fixed
+- (none needed in the exercise files)
+
 ## Polish
-- [Minor] L1-5 Formula and L2-1 Substitution rows (open-exercises-1280-5, L2-1280-2) — stacked fractions in consecutive rows touch (denominator against the next numerator, "t" against "m/t"); legible, but cramped — add row spacing.
-- [Minor] "U = 2.0 W/m²·K" in the task text lacks the brackets (W/(m²·K)); the lesson writes them.
-- [Minor] Plain-text "°C"/"kg" is not used; all good here, but the sub-index "T_initial/T_final" mixes upright words in italic T — fine, only noted.
+- none
 
 ## Checked
-- open-exercises-1280-5, L2-1280-1/2, contact-4/5 (all three levels, answers and solutions open).
-- No figures in the exercise set.
-
-## Scores
-illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
+- Data tables (L2-05, L2-06, L3-04): caption, column headers and cells translated; numbers and units identical; the table renders without overflow in the screenshots (fy3-16-open-exercises-L2/L3 captures).
+- LaTeX identical to the Finnish except translated subscripts (`T_\text{out}` / `T_\text{ulko}`) and decimal point vs comma where the language requires it.
+- Units are wrapped in `\text{}` with thin spaces as in the Finnish; no Finnish left in en.
+- Translation (English): natural, no Finnish words left; terms consistent (thermal conductivity, latent heat of fusion, heat loss coefficient, U-value).
+- check_i18n.py: 0 errors.

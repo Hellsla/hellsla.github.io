@@ -27,4 +27,18 @@ a["fy3-6-L3-01"] = Q_tub / (c_hiekka * (300 - 40))       # stones (c = 800) cool
 a["fy3-6-L3-02"] = 18e6 / (c_vesi * 1000 * 1.2)          # lake bay: per m² the water column is 1,2 m³ = 1200 kg; ΔT = 18 MJ / (4190 · 1200) = 3,58 K (area cancels)
 m_hiekka_per_m3 = 1600                                   # sand: 1600 kg per m³
 a["fy3-6-L3-03"] = (c_vesi * 1000) / (c_hiekka * m_hiekka_per_m3)   # equal Q, same ΔT: V = (4190 · 1000) / (800 · 1600) m³ = 3,27 m³ -> 3,3 m³
+# --- Added exercises (exercise bank) ---
+a["fy3-6-L1-07"] = 15e3 / (c_kupari * 0.50)              # copper pot: ΔT = Q / (c m) = 15 000 J / (385 · 0,50 kg) = 77,9 K -> 78 K
+C_alu = c_al * 0.60                                      # aluminium pan: C = c m = 900 · 0,60 kg = 540 J/K
+a["fy3-6-L1-08"] = C_alu * (78 - 18) / 1e3               # Q = C ΔT = 540 J/K · 60 K = 32 400 J -> 32 kJ
+dT_A = 38.1 - 20.0                                       # L2-06 liquid A after 120 s: 18,1 K
+dT_B = 29.0 - 20.0                                       # liquid B (water) after 120 s: 9,0 K
+a["fy3-6-L2-05"] = 100 * (300 - 0) / (0.50 * (34.5 - 20.0))   # table (0 s; 20,0 °C) to (300 s; 34,5 °C): c = P t/(m ΔT) = 30 000 J/(0,50 kg · 14,5 K) = 4138 J/(kg·K) -> 4100
+a["fy3-6-L2-06"] = c_vesi * dT_B / dT_A                  # same Q and m: c_oil ΔT_A = c_water ΔT_B -> 4190 · 9,0/18,1 = 2083 J/(kg·K) -> 2100
+C_k, C_v = c_kupari * 0.20, c_vesi * 0.50                # copper 77 J/K, water 2095 J/K
+a["fy3-6-L2-07"] = (C_k * 100 + C_v * 20) / (C_k + C_v)  # T = 49 600 / 2172 = 22,84 °C -> 23 °C (the student's mean 60 °C is wrong)
+a["fy3-6-L3-04"] = 200 - c_vesi * 0.50 * (63.6 - 56.8) / 120   # loss power 480–600 s: P − c m ΔT/t = 200 − 14 246/120 = 81,3 W -> 81 W
+T5 = [90.0, 72.5, 59.6, 49.5, 42.3, 36.6, 32.5]          # L3-05 cooling water 0,300 kg, room 20,0 °C, 10 min steps
+Q5 = c_vesi * 0.300 * (T5[0] - T5[1])                    # first interval: 4190 · 0,300 · 17,5 K = 21 997,5 J
+a["fy3-6-L3-05"] = (Q5 / 600) / ((T5[0] + T5[1]) / 2 - 20.0)   # k = P / (T_ka − T_huone) = 36,66 W / 61,25 K = 0,599 W/K -> 0,60
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

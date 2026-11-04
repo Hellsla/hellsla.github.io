@@ -39,6 +39,77 @@
       "answer": 0.34,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L1-06",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "The steel lid of a glass jar that is stuck tight often comes loose more easily when hot water is run over the lid for a moment. What is the reason?",
+      "answer": "The steel lid expands more than the glass when it warms up, so the lid becomes loose around the mouth of the jar.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Hot water makes the metal lid shrink, because the particles of the metal move closer to each other when they warm up.",
+          "feedback": "Wrong: when it warms up, the average distance between the particles grows, so the lid expands and does not shrink."
+        },
+        {
+          "text": "The mouth of the jar gets smaller, because the particles of the glass grow when they warm up and fill the gap.",
+          "feedback": "Wrong: particles do not grow when they warm up; their average distances grow. In addition, the water is run over the lid, so the glass warms up less than the lid."
+        },
+        {
+          "text": "The steel lid expands more than the glass when it warms up, so the lid becomes loose around the mouth of the jar.",
+          "correct": true,
+          "feedback": "Correct: the $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$ of steel is greater than the $9 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$ of glass, so the warm lid grows more than the glass and becomes loose."
+        },
+        {
+          "text": "Glass and steel expand by the same amount, but hot water makes the edge of the lid slippery.",
+          "feedback": "Wrong: different materials expand by different amounts, because their coefficients differ. For steel $\\alpha$ is greater than for glass."
+        }
+      ]
+    },
+    {
+      "id": "fy3-8-L1-07",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "Three samples of the same size, a piece of steel, a glass of water and a balloon full of air (at constant pressure), warm up from $20\\,{}^\\circ\\text{C}$ to $30\\,{}^\\circ\\text{C}$. Which sample expands the most in relative terms, and why?",
+      "answer": "Air, because only weak interactions bind the particles of a gas to each other.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Steel, because the particles of a solid vibrate the most strongly when they warm up.",
+          "feedback": "Wrong: the particles of a solid are bound tightly in place, so the distances between them grow only a little. For steel $\\gamma \\approx 3\\alpha = 36 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, which is the smallest of the three."
+        },
+        {
+          "text": "Water, because the particles of a liquid can move freely from place to place.",
+          "feedback": "Wrong: in a liquid the particles are still close to each other and bound to each other, so water expands much less than a gas. The $\\gamma = 0.21 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ of water is much smaller than the value for air."
+        },
+        {
+          "text": "All equally, because the change in temperature is the same for all the samples.",
+          "feedback": "Wrong: the same change in temperature is not enough; the relative expansion also depends on the temperature coefficient, which is characteristic of the substance. The coefficient is greatest for a gas and smallest for a solid."
+        },
+        {
+          "text": "Air, because only weak interactions bind the particles of a gas to each other.",
+          "correct": true,
+          "feedback": "Correct: only weak interactions bind the particles of a gas to each other, so the distances between the particles grow easily, and at constant pressure the gas is free to expand. The $\\gamma = 3.4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ of air is much greater than that of water, $0.21 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$, or that of steel, $36 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$."
+        }
+      ]
+    },
+    {
+      "id": "fy3-8-L1-08",
+      "level": 1,
+      "kind": [
+        "error"
+      ],
+      "text": "A student calculated how much a $2.0\\,\\text{m}$ long aluminium rod ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) gets longer when its temperature rises from $15\\,{}^\\circ\\text{C}$ to $65\\,{}^\\circ\\text{C}$. The student wrote $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2.0\\,\\text{m} \\cdot 65 = 3.0\\,\\text{mm}$ (units left out).\n\nThere is an error here. Calculate the change in the length of the rod correctly. Give the answer in millimetres.",
+      "answer": 2.3,
+      "unit": "mm",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,112 @@
       "answer": 12,
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-8-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Example data: the table gives the volume of $1.000\\,\\text{kg}$ of water at different temperatures. The volume calculated from a density table is given to six significant figures, because the changes are small.\n\na) At which temperature in the table does water take up the least space, and what does that tell you about the density of water at that temperature?\n\nb) Calculate the temperature coefficient of the volume of water $\\gamma$ over the temperature range $4\\,{}^\\circ\\text{C} \\ldots 10\\,{}^\\circ\\text{C}$ in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$. Use the volume at $4\\,{}^\\circ\\text{C}$ as the initial volume.\n\nc) Compare the result with the value $\\gamma = 210 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$ valid at $20\\,{}^\\circ\\text{C}$ and explain why water differs from other liquids over the temperature range $0\\,{}^\\circ\\text{C} \\ldots 4\\,{}^\\circ\\text{C}$ and why the temperature of the water at the bottom of a deep lake in winter is about $4\\,{}^\\circ\\text{C}$.\n\nThe answer field takes the result of part b).",
+      "answer": 45,
+      "unit": "10⁻⁶ 1/K",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Volume of $1.000\\,\\text{kg}$ of water (example data)",
+        "columns": [
+          "$T\\,({}^\\circ\\text{C})$",
+          "$V\\,(\\text{dm}^3)$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1.00016"
+          ],
+          [
+            "2",
+            "1.00006"
+          ],
+          [
+            "4",
+            "1.00003"
+          ],
+          [
+            "6",
+            "1.00006"
+          ],
+          [
+            "8",
+            "1.00015"
+          ],
+          [
+            "10",
+            "1.00030"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-8-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "Example data: a group used a dial gauge to measure the change in length $\\Delta L$ of a $0.800\\,\\text{m}$ long metal rod when the rod was heated from $20\\,{}^\\circ\\text{C}$. The reading accuracy of the dial gauge is $0.01\\,\\text{mm}$.\n\na) Calculate the temperature coefficient of the length $\\alpha$ of the material of the rod in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$ using the first and the last point of the table.\n\nb) Work out from the table in the lesson (steel 12, aluminium 23, copper 17, all in the unit $10^{-6}\\,\\tfrac{1}{\\text{K}}$) which metal the rod is made of, and explain why the measurement points do not usually lie exactly on the same straight line.\n\nThe answer field takes the result of part a).",
+      "answer": 22.9,
+      "unit": "10⁻⁶ 1/K",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Change in the length of a metal rod (example data)",
+        "columns": [
+          "$T\\,({}^\\circ\\text{C})$",
+          "$\\Delta L\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "0.00"
+          ],
+          [
+            "30",
+            "0.19"
+          ],
+          [
+            "40",
+            "0.38"
+          ],
+          [
+            "50",
+            "0.55"
+          ],
+          [
+            "60",
+            "0.75"
+          ],
+          [
+            "70",
+            "0.92"
+          ],
+          [
+            "80",
+            "1.10"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-8-L2-07",
+      "level": 2,
+      "kind": [
+        "experiment",
+        "reasoning"
+      ],
+      "text": "A group is planning an experiment in which the temperature coefficient of the length of steel ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) is measured from a steel tube. At $20\\,{}^\\circ\\text{C}$ the tube is $1.00\\,\\text{m}$ long, and it is heated with steam to $100\\,{}^\\circ\\text{C}$. The group intends to measure the length with a tape measure whose reading accuracy is $0.5\\,\\text{mm}$.\n\na) Calculate how much the tube gets longer.\n\nb) Explain why the tape measure is not suitable for this measurement, and suggest an instrument with which a small change in length can be measured reliably.\n\nc) How long should the steel tube be so that the reading accuracy of the tape measure is at most $5.0\\,\\%$ of the change in length, when the change in temperature is the same? Give the answer in metres.\n\nThe answer field takes the result of part c).",
+      "answer": 10.4,
+      "unit": "m",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -100,6 +277,52 @@
       "answer": 460,
       "unit": "cm³",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-8-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "Example data: steel rails ($\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) that are $25.0\\,\\text{m}$ long are to be installed on a track. The table gives the temperature of the rail at the time of installation and the lowest and highest temperatures of the year (the sun heats the rail hotter than the air). Assume, as is usual with railway rails, that the change in the width of the gap is equal to the change in the length of one rail. The gap must not close in summer, and it must not exceed $30\\,\\text{mm}$ in winter.\n\na) Calculate the smallest installation gap at which the gap does not close.\n\nb) Calculate the greatest installation gap at which the gap does not exceed $30\\,\\text{mm}$ in winter.\n\nc) Justify with a calculation why an installation gap of $15\\,\\text{mm}$ is acceptable when installing at the temperature in the table but not when installing in a winter frost.\n\nThe answer field takes the result of part a) in millimetres.",
+      "answer": 13.2,
+      "unit": "mm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Temperatures of the rail (example data)",
+        "columns": [
+          "Situation",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "winter minimum",
+            "−32"
+          ],
+          [
+            "installation",
+            "8"
+          ],
+          [
+            "summer maximum",
+            "52"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-8-L3-05",
+      "level": 3,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "Example data: the glass bulb of a liquid thermometer contains ethanol, whose volume at $10\\,{}^\\circ\\text{C}$ is $1.00\\,\\text{cm}^3$ and which fills the bulb exactly. The ethanol rises from the bulb into a glass capillary tube with an inner radius of $0.30\\,\\text{mm}$. Use $\\gamma = 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ for ethanol and $\\alpha = 9.0 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$ for glass, and assume that the coefficients are constant over the temperature range $10\\,{}^\\circ\\text{C} \\ldots 30\\,{}^\\circ\\text{C}$. The inner volume of the bulb grows in the same way as an equal piece of glass, and the cross-sectional area of the capillary is assumed to be constant.\n\na) Calculate how many millimetres the column of ethanol rises in the capillary when the temperature rises from $10\\,{}^\\circ\\text{C}$ to $30\\,{}^\\circ\\text{C}$.\n\nb) By what percentage would the rise be greater if the expansion of the bulb were ignored?\n\nc) Calculate how much water would rise in the same device, and use it to justify why water is not suitable as the liquid of a liquid thermometer.\n\nThe answer field takes the result of part a) in millimetres.",
+      "answer": 75.9,
+      "unit": "mm",
+      "tolerance": 0.03
     }
   ]
 }
