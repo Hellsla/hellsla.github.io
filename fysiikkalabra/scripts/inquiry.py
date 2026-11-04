@@ -678,6 +678,8 @@ def render(folder, inquiry, parts, md):
         body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{inner}</section>')
         toc.append(toc_link(sid, n, title))
         if any(a["type"] == "exit" for a in items): toc.append(f'<a href="#exit" class="toc-sub"><span class="toc-label">{exit_title()}</span></a>')
+    if parts.get("cards"):                             # "Kertaa luvun käsitteet" after the exit ticket (scripts/concept_cards.py)
+        body.append(parts["cards"]); toc.append(parts.get("cards_nav", ""))
     if parts.get("exercises"):                         # the exercises close the page, after the exit ticket
         text = md(ex_act["text"]) if ex_act and ex_act.get("text") else ""
         aid = ex_act["id"] if ex_act else "harjoitukset"

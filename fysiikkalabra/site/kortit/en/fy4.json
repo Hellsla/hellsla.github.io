@@ -1,0 +1,631 @@
+{
+ "moduuli": "FY4",
+ "nimi": "Force and motion",
+ "aiheet": [
+  {
+   "id": "fy4-liikkeen-suureet",
+   "nimi": "Quantities of motion"
+  },
+  {
+   "id": "fy4-liikkeen-kuvaajat",
+   "nimi": "Graphs of motion"
+  },
+  {
+   "id": "fy4-kiihtyva-liike",
+   "nimi": "Accelerated motion"
+  },
+  {
+   "id": "fy4-newtonin-lait",
+   "nimi": "Interaction and Newton's laws"
+  },
+  {
+   "id": "fy4-voimat-ja-liikeyhtalo",
+   "nimi": "Forces and the equation of motion"
+  },
+  {
+   "id": "fy4-kitka-ja-vastusvoimat",
+   "nimi": "Friction, drag and buoyancy"
+  },
+  {
+   "id": "fy4-tyo-ja-mekaaninen-energia",
+   "nimi": "Work and mechanical energy"
+  },
+  {
+   "id": "fy4-liikemaara-ja-tormaykset",
+   "nimi": "Momentum, impulse and collisions"
+  }
+ ],
+ "kortit": [
+  {
+   "id": "fy4-paikka",
+   "moduuli": "FY4",
+   "luku": "fy4-1",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Position",
+   "maaritelma": "Where an object is in a chosen coordinate system at a given instant."
+  },
+  {
+   "id": "fy4-matka",
+   "moduuli": "FY4",
+   "luku": "fy4-1",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Distance travelled",
+   "maaritelma": "The total length of the path an object has travelled."
+  },
+  {
+   "id": "fy4-siirtyma",
+   "moduuli": "FY4",
+   "luku": "fy4-1",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Displacement",
+   "maaritelma": "The change in an object's position, with its direction.",
+   "kaava": "\\Delta x = x_2 - x_1",
+   "kaava_puhe": "delta x equals x two minus x one"
+  },
+  {
+   "id": "fy4-nopeus",
+   "moduuli": "FY4",
+   "luku": "fy4-1",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Velocity",
+   "maaritelma": "The rate of change of position, with the direction of motion."
+  },
+  {
+   "id": "fy4-vauhti",
+   "moduuli": "FY4",
+   "luku": "fy4-1",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Speed",
+   "maaritelma": "The magnitude of the velocity, without its direction."
+  },
+  {
+   "id": "fy4-keskinopeus",
+   "moduuli": "FY4",
+   "luku": "fy4-1",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Average velocity",
+   "maaritelma": "The whole displacement divided by the time it took.",
+   "kaava": "v_{\\text{avg}} = \\dfrac{\\Delta x}{\\Delta t}",
+   "kaava_puhe": "v average equals delta x divided by delta t"
+  },
+  {
+   "id": "fy4-hetkellinen-nopeus",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Instantaneous velocity",
+   "maaritelma": "The velocity of an object at a given instant."
+  },
+  {
+   "id": "fy4-tasainen-liike",
+   "moduuli": "FY4",
+   "luku": "fy4-1",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Uniform motion",
+   "maaritelma": "The velocity stays constant, so the position changes by equal amounts in equal time intervals."
+  },
+  {
+   "id": "fy4-paikan-kuvaaja",
+   "moduuli": "FY4",
+   "luku": "fy4-1",
+   "aihe": "fy4-liikkeen-kuvaajat",
+   "kasite": "Position–time graph",
+   "maaritelma": "Shows an object's position as a function of time."
+  },
+  {
+   "id": "fy4-kuvaajan-tangentti",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-liikkeen-kuvaajat",
+   "kasite": "Tangent to a graph",
+   "maaritelma": "A straight line that touches the curve at the point studied and gives the instantaneous rate of change."
+  },
+  {
+   "id": "fy4-tangentin-kulmakerroin",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-liikkeen-kuvaajat",
+   "kasite": "Slope of the tangent",
+   "maaritelma": "On a position–time graph it gives the object's instantaneous velocity."
+  },
+  {
+   "id": "fy4-nopeuden-kuvaaja",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-liikkeen-kuvaajat",
+   "kasite": "Velocity–time graph",
+   "maaritelma": "Shows an object's velocity as a function of time."
+  },
+  {
+   "id": "fy4-kuvaajan-pinta-ala",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-liikkeen-kuvaajat",
+   "kasite": "Area under a graph",
+   "maaritelma": "The signed area between the velocity–time graph and the time axis gives the displacement."
+  },
+  {
+   "id": "fy4-kiihtyvyyden-kuvaaja",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-liikkeen-kuvaajat",
+   "kasite": "Acceleration–time graph",
+   "maaritelma": "Shows an object's acceleration as a function of time."
+  },
+  {
+   "id": "fy4-nopeuden-muutos",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-liikkeen-kuvaajat",
+   "kasite": "Change in velocity",
+   "maaritelma": "The signed area under the acceleration–time graph gives the change in velocity."
+  },
+  {
+   "id": "fy4-graafinen-derivointi",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-liikkeen-kuvaajat",
+   "kasite": "Graphical differentiation",
+   "maaritelma": "A new graph of the rate of change is made from the slopes of a graph."
+  },
+  {
+   "id": "fy4-kiihtyvyys",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Acceleration",
+   "maaritelma": "The rate of change of velocity.",
+   "kaava": "a = \\dfrac{\\Delta v}{\\Delta t}",
+   "kaava_puhe": "a equals delta v divided by delta t"
+  },
+  {
+   "id": "fy4-keskikiihtyvyys",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Average acceleration",
+   "maaritelma": "The total change in velocity divided by the time it took."
+  },
+  {
+   "id": "fy4-hetkellinen-kiihtyvyys",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Instantaneous acceleration",
+   "maaritelma": "The rate of change of velocity at a given instant."
+  },
+  {
+   "id": "fy4-tasainen-kiihtyvyys",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Constant acceleration",
+   "maaritelma": "The acceleration stays the same, so the velocity changes steadily."
+  },
+  {
+   "id": "fy4-tasaisesti-kiihtyvan-liikkeen-nopeus",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Velocity in uniformly accelerated motion",
+   "maaritelma": "The velocity changes steadily with time.",
+   "kaava": "v = v_0 + at",
+   "kaava_puhe": "v equals v nought plus a times t"
+  },
+  {
+   "id": "fy4-tasaisesti-kiihtyvan-liikkeen-paikka",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Position in uniformly accelerated motion",
+   "maaritelma": "The position follows from the initial position, the initial velocity and the acceleration.",
+   "kaava": "x = x_0 + v_0 t + \\tfrac{1}{2}at^2",
+   "kaava_puhe": "x equals x nought plus v nought times t plus one half a t squared"
+  },
+  {
+   "id": "fy4-putoamiskiihtyvyys",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Acceleration of free fall",
+   "maaritelma": "The magnitude of the acceleration of a freely falling object near the Earth.",
+   "kaava": "g \\approx 9.81\\,\\text{m/s}^2",
+   "kaava_puhe": "g is approximately 9.81 metres per second squared"
+  },
+  {
+   "id": "fy4-vapaa-pudotus",
+   "moduuli": "FY4",
+   "luku": "fy4-2",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Free fall",
+   "maaritelma": "Motion in which only the weight acts on the object and air resistance is neglected."
+  },
+  {
+   "id": "fy4-vuorovaikutus",
+   "moduuli": "FY4",
+   "luku": "fy4-3",
+   "aihe": "fy4-newtonin-lait",
+   "kasite": "Interaction",
+   "maaritelma": "Something between two objects in which they can change each other's motion or shape."
+  },
+  {
+   "id": "fy4-voima",
+   "moduuli": "FY4",
+   "luku": "fy4-3",
+   "aihe": "fy4-newtonin-lait",
+   "kasite": "Force",
+   "maaritelma": "Describes the strength of an interaction; its unit is the newton."
+  },
+  {
+   "id": "fy4-newtonin-ensimmainen-laki",
+   "moduuli": "FY4",
+   "luku": "fy4-3",
+   "aihe": "fy4-newtonin-lait",
+   "kasite": "Newton's first law",
+   "maaritelma": "An object keeps its state of motion if the net force on it is zero; the law of inertia."
+  },
+  {
+   "id": "fy4-inertia",
+   "moduuli": "FY4",
+   "luku": "fy4-3",
+   "aihe": "fy4-newtonin-lait",
+   "kasite": "Inertia",
+   "maaritelma": "The property of an object to resist a change in its state of motion."
+  },
+  {
+   "id": "fy4-newtonin-toinen-laki",
+   "moduuli": "FY4",
+   "luku": "fy4-4",
+   "aihe": "fy4-newtonin-lait",
+   "kasite": "Newton's second law",
+   "maaritelma": "A net force gives an object an acceleration; the fundamental law of dynamics.",
+   "kaava": "\\Sigma\\overline{F} = m\\overline{a}",
+   "kaava_puhe": "the sum of the forces equals m times a"
+  },
+  {
+   "id": "fy4-kokonaisvoima",
+   "moduuli": "FY4",
+   "luku": "fy4-4",
+   "aihe": "fy4-newtonin-lait",
+   "kasite": "Net force",
+   "maaritelma": "The vector sum of the forces acting on an object."
+  },
+  {
+   "id": "fy4-newtonin-kolmas-laki",
+   "moduuli": "FY4",
+   "luku": "fy4-3",
+   "aihe": "fy4-newtonin-lait",
+   "kasite": "Newton's third law",
+   "maaritelma": "In an interaction the objects exert equal but opposite forces on each other."
+  },
+  {
+   "id": "fy4-voima-ja-vastavoima",
+   "moduuli": "FY4",
+   "luku": "fy4-3",
+   "aihe": "fy4-newtonin-lait",
+   "kasite": "Action and reaction",
+   "maaritelma": "Two equal and opposite forces acting on different objects in the same interaction."
+  },
+  {
+   "id": "fy4-voimakuvio",
+   "moduuli": "FY4",
+   "luku": "fy4-5",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Free-body diagram",
+   "maaritelma": "A drawing that shows every force acting on the object studied as an arrow."
+  },
+  {
+   "id": "fy4-paino",
+   "moduuli": "FY4",
+   "luku": "fy4-6",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Weight",
+   "maaritelma": "The gravitational force the Earth exerts on an object.",
+   "kaava": "G = mg",
+   "kaava_puhe": "G equals m times g"
+  },
+  {
+   "id": "fy4-tukivoima",
+   "moduuli": "FY4",
+   "luku": "fy4-5",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Normal force",
+   "maaritelma": "The force a surface exerts on an object, perpendicular to the surface."
+  },
+  {
+   "id": "fy4-jannitysvoima",
+   "moduuli": "FY4",
+   "luku": "fy4-5",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Tension",
+   "maaritelma": "The force a taut string or rope exerts on an object, along the string."
+  },
+  {
+   "id": "fy4-liikeyhtalo",
+   "moduuli": "FY4",
+   "luku": "fy4-5",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Equation of motion",
+   "maaritelma": "Newton's second law applied: the sum of the forces on an object is linked to its acceleration."
+  },
+  {
+   "id": "fy4-voimakomponentti",
+   "moduuli": "FY4",
+   "luku": "fy4-5",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Component of a force",
+   "maaritelma": "The part of a force in a chosen direction of the coordinate system."
+  },
+  {
+   "id": "fy4-komponenttimuoto",
+   "moduuli": "FY4",
+   "luku": "fy4-5",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Component form",
+   "maaritelma": "The equation of motion is written separately, for example in the horizontal and vertical directions."
+  },
+  {
+   "id": "fy4-tasapainoehto",
+   "moduuli": "FY4",
+   "luku": "fy4-5",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Condition of equilibrium",
+   "maaritelma": "In translational equilibrium the vector sum of the forces on an object is zero.",
+   "kaava": "\\Sigma\\overline{F} = \\overline{0}",
+   "kaava_puhe": "the sum of the forces is zero"
+  },
+  {
+   "id": "fy4-kalteva-taso",
+   "moduuli": "FY4",
+   "luku": "fy4-6",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Inclined plane",
+   "maaritelma": "The situation becomes easier when the axes are chosen along the plane and the forces are split into components.",
+   "kuva": "kortit/kuvat/fy4-kalteva-taso.svg"
+  },
+  {
+   "id": "fy4-kitka",
+   "moduuli": "FY4",
+   "luku": "fy4-6",
+   "aihe": "fy4-kitka-ja-vastusvoimat",
+   "kasite": "Friction",
+   "maaritelma": "A force between surfaces in contact that opposes their relative motion or the start of it."
+  },
+  {
+   "id": "fy4-lepokitka",
+   "moduuli": "FY4",
+   "luku": "fy4-6",
+   "aihe": "fy4-kitka-ja-vastusvoimat",
+   "kasite": "Static friction",
+   "maaritelma": "Prevents surfaces from sliding over each other and adjusts to the size needed, up to its maximum."
+  },
+  {
+   "id": "fy4-liikekitka",
+   "moduuli": "FY4",
+   "luku": "fy4-6",
+   "aihe": "fy4-kitka-ja-vastusvoimat",
+   "kasite": "Kinetic friction",
+   "maaritelma": "Opposes the motion of surfaces sliding over each other (sliding friction).",
+   "kaava": "F_{\\mu} = \\mu N",
+   "kaava_puhe": "F mu equals mu times N"
+  },
+  {
+   "id": "fy4-kitkakerroin",
+   "moduuli": "FY4",
+   "luku": "fy4-6",
+   "aihe": "fy4-kitka-ja-vastusvoimat",
+   "kasite": "Coefficient of friction",
+   "maaritelma": "A dimensionless number that depends on the pair of materials and describes the friction between the surfaces."
+  },
+  {
+   "id": "fy4-valiaineen-vastus",
+   "moduuli": "FY4",
+   "luku": "fy4-14",
+   "aihe": "fy4-kitka-ja-vastusvoimat",
+   "kasite": "Drag of the medium",
+   "maaritelma": "A gas or liquid exerts a force on a moving object that opposes its motion."
+  },
+  {
+   "id": "fy4-ilmanvastus",
+   "moduuli": "FY4",
+   "luku": "fy4-14",
+   "aihe": "fy4-kitka-ja-vastusvoimat",
+   "kasite": "Air resistance",
+   "maaritelma": "The drag force of the air on an object usually grows with the speed."
+  },
+  {
+   "id": "fy4-rajanopeus",
+   "moduuli": "FY4",
+   "luku": "fy4-14",
+   "aihe": "fy4-kitka-ja-vastusvoimat",
+   "kasite": "Terminal velocity",
+   "maaritelma": "The constant velocity reached when the drag and the other forces along the motion cancel."
+  },
+  {
+   "id": "fy4-noste",
+   "moduuli": "FY4",
+   "luku": "fy4-6",
+   "aihe": "fy4-kitka-ja-vastusvoimat",
+   "kasite": "Buoyancy",
+   "maaritelma": "The upward force a liquid or gas exerts on an object."
+  },
+  {
+   "id": "fy4-mekaaninen-tyo",
+   "moduuli": "FY4",
+   "luku": "fy4-8",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Mechanical work",
+   "maaritelma": "A force transfers energy to or from an object during a displacement.",
+   "kaava": "W = Fs\\cos\\alpha",
+   "kaava_puhe": "W equals F times s times cosine alpha"
+  },
+  {
+   "id": "fy4-liike-energia",
+   "moduuli": "FY4",
+   "luku": "fy4-7",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Kinetic energy",
+   "maaritelma": "The energy of motion depends on the mass and the speed.",
+   "kaava": "E_{\\text{k}} = \\tfrac{1}{2}mv^2",
+   "kaava_puhe": "E k equals one half m v squared"
+  },
+  {
+   "id": "fy4-potentiaalienergia",
+   "moduuli": "FY4",
+   "luku": "fy4-7",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Potential energy",
+   "maaritelma": "The energy of a conservative interaction depends on the positions of the objects."
+  },
+  {
+   "id": "fy4-painon-potentiaalienergia",
+   "moduuli": "FY4",
+   "luku": "fy4-7",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Gravitational potential energy",
+   "maaritelma": "The energy related to gravity near the Earth.",
+   "kaava": "E_{\\text{p}} = mgh",
+   "kaava_puhe": "E p equals m times g times h"
+  },
+  {
+   "id": "fy4-konservatiivinen-voima",
+   "moduuli": "FY4",
+   "luku": "fy4-8",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Conservative force",
+   "maaritelma": "The work done by the force depends only on the start and end positions, not on the path."
+  },
+  {
+   "id": "fy4-mekaaninen-energia",
+   "moduuli": "FY4",
+   "luku": "fy4-7",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Mechanical energy",
+   "maaritelma": "The sum of kinetic energy and potential energy.",
+   "kaava": "E_{\\text{mech}} = E_{\\text{k}} + E_{\\text{p}}",
+   "kaava_puhe": "E mech equals E k plus E p"
+  },
+  {
+   "id": "fy4-energian-sailyminen",
+   "moduuli": "FY4",
+   "luku": "fy4-8",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Conservation of energy",
+   "maaritelma": "In an isolated system the total energy stays constant."
+  },
+  {
+   "id": "fy4-mekaanisen-energian-sailyminen",
+   "moduuli": "FY4",
+   "luku": "fy4-8",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Conservation of mechanical energy",
+   "maaritelma": "Mechanical energy is conserved when only conservative forces do work."
+  },
+  {
+   "id": "fy4-energiaperiaate",
+   "moduuli": "FY4",
+   "luku": "fy4-8",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Work–energy principle of mechanics",
+   "maaritelma": "The change in mechanical energy equals the work done by the non-conservative forces.",
+   "kaava": "\\Delta E_{\\text{mech}} = W_{\\text{other}}",
+   "kaava_puhe": "delta E mech equals the work done by the other forces"
+  },
+  {
+   "id": "fy4-tyoperiaate",
+   "moduuli": "FY4",
+   "luku": "fy4-8",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Work–kinetic energy principle",
+   "maaritelma": "The work done by the net force on an object equals the change in its kinetic energy.",
+   "kaava": "W_{\\text{total}} = \\Delta E_{\\text{k}}",
+   "kaava_puhe": "the total work equals delta E k"
+  },
+  {
+   "id": "fy4-liikemaara",
+   "moduuli": "FY4",
+   "luku": "fy4-9",
+   "aihe": "fy4-liikemaara-ja-tormaykset",
+   "kasite": "Momentum",
+   "maaritelma": "The product of an object's mass and velocity, a vector quantity.",
+   "kaava": "\\overline{p} = m\\overline{v}",
+   "kaava_puhe": "p equals m times v"
+  },
+  {
+   "id": "fy4-impulssi",
+   "moduuli": "FY4",
+   "luku": "fy4-9",
+   "aihe": "fy4-liikemaara-ja-tormaykset",
+   "kasite": "Impulse",
+   "maaritelma": "Describes the total effect of a force over a time; for a constant force:",
+   "kaava": "\\overline{I} = \\overline{F}\\Delta t",
+   "kaava_puhe": "I equals F times delta t"
+  },
+  {
+   "id": "fy4-impulssiperiaate",
+   "moduuli": "FY4",
+   "luku": "fy4-9",
+   "aihe": "fy4-liikemaara-ja-tormaykset",
+   "kasite": "Impulse–momentum principle",
+   "maaritelma": "The impulse an object receives equals the change in its momentum.",
+   "kaava": "\\overline{I} = \\Delta\\overline{p}",
+   "kaava_puhe": "I equals delta p"
+  },
+  {
+   "id": "fy4-voima-aikakuvaaja",
+   "moduuli": "FY4",
+   "luku": "fy4-9",
+   "aihe": "fy4-liikemaara-ja-tormaykset",
+   "kasite": "Force–time graph",
+   "maaritelma": "The area between the graph and the time axis gives the impulse the object receives."
+  },
+  {
+   "id": "fy4-liikemaaran-sailyminen",
+   "moduuli": "FY4",
+   "luku": "fy4-10",
+   "aihe": "fy4-liikemaara-ja-tormaykset",
+   "kasite": "Conservation of momentum",
+   "maaritelma": "The total momentum of an isolated system does not change in an interaction."
+  },
+  {
+   "id": "fy4-tormays",
+   "moduuli": "FY4",
+   "luku": "fy4-10",
+   "aihe": "fy4-liikemaara-ja-tormaykset",
+   "kasite": "Collision",
+   "maaritelma": "A short interaction in which the velocities and momenta of the objects can change quickly."
+  },
+  {
+   "id": "fy4-kimmoisa-tormays",
+   "moduuli": "FY4",
+   "luku": "fy4-10",
+   "aihe": "fy4-liikemaara-ja-tormaykset",
+   "kasite": "Elastic collision",
+   "maaritelma": "Besides the total momentum, the total kinetic energy of the objects is also conserved."
+  },
+  {
+   "id": "fy4-kimmoton-tormays",
+   "moduuli": "FY4",
+   "luku": "fy4-10",
+   "aihe": "fy4-liikemaara-ja-tormaykset",
+   "kasite": "Inelastic collision",
+   "maaritelma": "The total momentum is conserved, but part of the kinetic energy turns into other forms."
+  },
+  {
+   "id": "fy4-taysin-kimmoton-tormays",
+   "moduuli": "FY4",
+   "luku": "fy4-10",
+   "aihe": "fy4-liikemaara-ja-tormaykset",
+   "kasite": "Perfectly inelastic collision",
+   "maaritelma": "After the collision the objects move together at the same velocity."
+  },
+  {
+   "id": "fy4-yksiulotteinen-tormays",
+   "moduuli": "FY4",
+   "luku": "fy4-10",
+   "aihe": "fy4-liikemaara-ja-tormaykset",
+   "kasite": "One-dimensional collision",
+   "maaritelma": "The objects move along one line, so the directions of momentum can be handled with signs."
+  }
+ ]
+}

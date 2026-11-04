@@ -21,7 +21,7 @@ REAL = snapshot()
 
 T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-i18n-"))
 for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
-for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
+for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests", "kortit"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
 (T / "docs").mkdir(exist_ok=True); shutil.copy(SRC / "docs/visual-baseline.tsv", T / "docs")   # what is published under the visual baseline (2026-10-31)
 for p in [*(T / "lang").glob("*.json"), *(T / "content").iterdir()]:     # Finnish only: the test adds its own "en"
     if p.stem not in ("fi", "_gold"): shutil.rmtree(p) if p.is_dir() else p.unlink()
@@ -39,7 +39,6 @@ expect("one language: nothing to compare", code == 0 and "fi only" in out, out)
 code, out = run("build.py")
 fi_page = (T / "site" / f"{LESSON}.html").read_text()
 site_page = re.sub(r'<details class="lang-menu">.*?</details>', "", (SRC / "site" / f"{LESSON}.html").read_text())  # the real site has languages
-site_page = re.sub(r'<p class="concept-link">.*?</p>', "", site_page)   # and the Käsitetakomo link: the copy has no ../kasitetakomo-data.js
 expect("one language: the build is the committed site, without language links", code == 0 and fi_page == site_page and 'class="lang"' not in fi_page, out[-400:])
 
 # a second language: lang/en.json and content/en/, nothing else

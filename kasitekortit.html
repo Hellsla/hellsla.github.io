@@ -4,22 +4,25 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex, nofollow" />
-<meta http-equiv="refresh" content="0; url=kasitetakomo.html" />
-<link rel="canonical" href="kasitetakomo.html" />
+<meta http-equiv="refresh" content="0; url=fysiikkalabra/site/kasitteet.html" />
+<link rel="canonical" href="https://hellsla.github.io/fysiikkalabra/site/kasitteet.html" />
 <title>Käsitetakomo</title>
 <style>
-  html,body{
-    margin:0; min-height:100%;
-    background:#efe8da; color:#3a3530;
-    font-family:"Karla", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-    display:grid; place-items:center; text-align:center; padding:24px;
-  }
-  a{ color:#012169; font-weight:700; }
+  html,body{ margin:0; min-height:100%; background:#f7f3ec; color:#14171e;
+    font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif; display:grid; place-items:center; text-align:center; padding:24px; }
+  a{ color:#14532d; font-weight:700; }
 </style>
 </head>
 <body>
-  <p>Käsitekortit on nyt <strong>Käsitetakomo</strong>.<br />
-  <a href="kasitetakomo.html">Siirry sivulle</a></p>
-  <script>location.replace("kasitetakomo.html" + location.search + location.hash);</script>
+  <p>Käsitetakomo on nyt osa Ruukkilabraa.<br />
+  <a href="fysiikkalabra/site/kasitteet.html">Siirry Käsitetakomoon</a></p>
+  <script>
+    /* Käsitetakomo moved into Ruukkilabra (teacher 2026-11-03): ?kurssi=FY4&aihe=… becomes ?moduuli=FY4&aihe=… */
+    (function () {
+      var q = location.search;
+      try { var p = new URLSearchParams(q); if (p.has("kurssi") && !p.has("moduuli")) { p.set("moduuli", p.get("kurssi")); p.delete("kurssi"); } q = p.toString() ? "?" + p.toString() : ""; } catch (e) {}
+      location.replace("fysiikkalabra/site/kasitteet.html" + q + location.hash);
+    })();
+  </script>
 </body>
 </html>
