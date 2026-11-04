@@ -184,11 +184,15 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 **Conversions:** The changes in temperature are the same in degrees Celsius and in kelvins: $T_\text{w} - T_1 = 21.8\,\text{K}$ and $T_\text{w} - T_2 = 23.8\,\text{K}$, and for the ice of measurement 2 $\Delta T_\text{i} = 0\,{}^\circ\text{C} - (-18.0\,{}^\circ\text{C}) = 18.0\,\text{K}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** a) Measurement 1: 
 
-$$\begin{aligned} s_1 &= \dfrac{4190 \cdot (0.200 \cdot 21.8 - 0.0500 \cdot 8.2)\,\text{J}}{0.0500\,\text{kg}} \\ &= \dfrac{4190 \cdot 3.95\,\text{J}}{0.0500\,\text{kg}} \\ &= 331\,000\,\tfrac{\text{J}}{\text{kg}} \\ &= 331\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
+First $0.200 \cdot 21.8 - 0.0500 \cdot 8.2 = 3.95$, so
+
+$$\begin{aligned} s_1 &= \dfrac{4190 \cdot 3.95\,\text{J}}{0.0500\,\text{kg}} \\ &= 331\,000\,\tfrac{\text{J}}{\text{kg}} \\ &= 331\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
 
 Measurement 2: 
 
-$$\begin{aligned} s_2 &= \dfrac{4190 \cdot (0.200 \cdot 23.8 - 0.0500 \cdot 6.2)\,\text{J}}{0.0500\,\text{kg}} \\ &= \dfrac{4190 \cdot 4.45\,\text{J}}{0.0500\,\text{kg}} \\ &= 372\,900\,\tfrac{\text{J}}{\text{kg}} \\ &= 373\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
+First $0.200 \cdot 23.8 - 0.0500 \cdot 6.2 = 4.45$, so
+
+$$\begin{aligned} s_2 &= \dfrac{4190 \cdot 4.45\,\text{J}}{0.0500\,\text{kg}} \\ &= 372\,900\,\tfrac{\text{J}}{\text{kg}} \\ &= 373\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
 
 c) The warming of the ice is $c_\text{i} m_\text{i} \Delta T_\text{i} = 2100 \cdot 0.0500 \cdot 18.0\,\text{J} = 1890\,\text{J}$, so 
 

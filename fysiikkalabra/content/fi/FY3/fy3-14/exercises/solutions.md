@@ -185,11 +185,15 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 **Muunnokset:** Lämpötilan muutokset ovat samat celsiusasteina ja kelvineinä: $T_\text{v} - T_1 = 21{,}8\,\text{K}$ ja $T_\text{v} - T_2 = 23{,}8\,\text{K}$, ja mittauksen 2 jäälle $\Delta T_\text{j} = 0\,{}^\circ\text{C} - (-18{,}0\,{}^\circ\text{C}) = 18{,}0\,\text{K}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** a) Mittaus 1: 
 
-$$\begin{aligned} s_1 &= \dfrac{4190 \cdot (0{,}200 \cdot 21{,}8 - 0{,}0500 \cdot 8{,}2)\,\text{J}}{0{,}0500\,\text{kg}} \\ &= \dfrac{4190 \cdot 3{,}95\,\text{J}}{0{,}0500\,\text{kg}} \\ &= 331\,000\,\tfrac{\text{J}}{\text{kg}} \\ &= 331\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
+Ensin $0{,}200 \cdot 21{,}8 - 0{,}0500 \cdot 8{,}2 = 3{,}95$, joten
+
+$$\begin{aligned} s_1 &= \dfrac{4190 \cdot 3{,}95\,\text{J}}{0{,}0500\,\text{kg}} \\ &= 331\,000\,\tfrac{\text{J}}{\text{kg}} \\ &= 331\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
 
 Mittaus 2: 
 
-$$\begin{aligned} s_2 &= \dfrac{4190 \cdot (0{,}200 \cdot 23{,}8 - 0{,}0500 \cdot 6{,}2)\,\text{J}}{0{,}0500\,\text{kg}} \\ &= \dfrac{4190 \cdot 4{,}45\,\text{J}}{0{,}0500\,\text{kg}} \\ &= 372\,900\,\tfrac{\text{J}}{\text{kg}} \\ &= 373\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
+Ensin $0{,}200 \cdot 23{,}8 - 0{,}0500 \cdot 6{,}2 = 4{,}45$, joten
+
+$$\begin{aligned} s_2 &= \dfrac{4190 \cdot 4{,}45\,\text{J}}{0{,}0500\,\text{kg}} \\ &= 372\,900\,\tfrac{\text{J}}{\text{kg}} \\ &= 373\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
 
 c) Jään lämpeneminen on $c_\text{j} m_\text{j} \Delta T_\text{j} = 2100 \cdot 0{,}0500 \cdot 18{,}0\,\text{J} = 1890\,\text{J}$, joten 
 
