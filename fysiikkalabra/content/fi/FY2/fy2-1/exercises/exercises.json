@@ -306,7 +306,7 @@
     {
       "id": "fy2-1-L3-05",
       "level": 3,
-      "text": "Pöydän LED-lamppu saa sähkönsä aurinkopaneelista ja akusta. Taulukossa on yhden päivän energiat ketjun vaiheissa: kunkin vaiheen tulo ja hyödyllinen energia, joka siitä lähtee eteenpäin. Seuraavan vaiheen tulo on edellisen vaiheen hyödyllinen energia. Mallissa loppu energia muuttuu vaiheessa lämpöenergiaksi tai heijastuu (paneelissa osa valosta heijastuu).\n\na) Laske lämpöenergiaksi muuttuva energia jokaisessa vaiheessa ja koko ketjussa yhteensä.\n\nb) Missä vaiheessa lämpöenergiaa syntyy eniten, ja kuinka monta prosenttia kaikesta lämpöenergiasta se on?\n\nc) Tarkista tulos energian säilymislailla ja selitä, miksi paneeliin tullut säteilyenergia ei ole kulunut loppuun, vaikka lampun valo on vain pieni osa siitä.",
+      "text": "Pöydän LED-lamppu saa sähkönsä aurinkopaneelista ja akusta. Taulukossa on yhden päivän energiat ketjun vaiheissa: kunkin vaiheen tulo ja hyödyllinen energia, joka siitä lähtee eteenpäin. Seuraavan vaiheen tulo on edellisen vaiheen hyödyllinen energia. Mallissa oletetaan, että vaiheen loppu energia muuttuu lämpöenergiaksi.\n\na) Laske lämpöenergiaksi muuttuva energia jokaisessa vaiheessa ja koko ketjussa yhteensä.\n\nb) Missä vaiheessa lämpöenergiaa syntyy eniten, ja kuinka monta prosenttia kaikesta lämpöenergiasta se on?\n\nc) Tarkista tulos energian säilymislailla ja selitä, miksi paneeliin tullut säteilyenergia ei ole kulunut loppuun, vaikka lampun valo on vain pieni osa siitä.",
       "kind": [
         "data",
         "model",
