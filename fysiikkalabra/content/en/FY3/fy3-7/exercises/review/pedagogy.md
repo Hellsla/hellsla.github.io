@@ -1,11 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 0588727484a780a3
+CONTENT-HASH: 570add1f37f67fc1
+Mode: full
+Round: 1
 
 ## Blocking
 (none)
+
+## Fixed
+- none
 
 ## Polish
 - none
 
 ## Checked
-- Translation review of the exercise set against the reviewed Finnish: all 12 tasks have the same data, numbers with units (inline LaTeX), answers (401 kJ, 0.9 MJ, 15 MJ, 68 kJ, 333 kJ/kg, 9.4 min, 280 kJ, 36 kg, 0.94 MJ, 9.7 degC, 27 K, 2.26 MJ/kg), tolerances and level order. I recomputed every answer from the task data; solutions.md follows the Finnish step by step with the same physics (no cmDeltaT during a change of state, latent heat, two-stage sums, difference method in L3-03 with the loss power cancelling). Natural British English; symbols P_loss, m_v, c_ice; no Finnish words left (löyly removed).
+- The 8 new tasks keep the Finnish structure: level order, kind tags, parts a)/b)/c), which part goes in the answer box, and the solution sections (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness).
+- Distractor feedback in L1-06 and L1-07 is correct and explains the error, as in the Finnish.
+- Natural English; plain verbs and consistent symbols (T_b, m_s, m_w, P_loss).

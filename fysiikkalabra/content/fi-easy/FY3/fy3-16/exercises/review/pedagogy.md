@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ae77f9e2db3ed613
+CONTENT-HASH: 367c32d54eaac2ac
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- (none needed in the exercise files)
+- solutions.md fy3-16-L1-08 Conversions — typo "joulejaan" → "jouleina" (the Finnish source wording "jotta energia on joulejaan" was also simplified into two short sentences).
 
 ## Polish
 - none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json and solutions.md for all 12 tasks: simplified sentences, no steps or reasoning removed, answers and tasks unchanged.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json (unit wrapping in tasks) and solutions.md (L1-04 principle) against the new Finnish.
+- The tasks, parts a)-d), the instruction which part goes in the answer box and the order of choices match the Finnish; no hint added or removed.
+- Feedback texts keep their role (correct: confirms and explains; wrong: names the misconception). Student-error task L2-07 keeps the quoted solution unchanged.
+- Model answers for open parts (L2-05 b, L2-06 c, L2-07 a, L3-04 c, L3-05 d) are complete and match the Finnish reasoning.
+- Plain Finnish (selkosuomi): short sentences, terms explained (nettomääräisesti eli kokonaisuutena, lämmönjohtavuus); no step or reasoning removed.
+- check_i18n.py: 0 errors.

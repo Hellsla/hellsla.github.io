@@ -74,7 +74,7 @@ P1. +3/+3/+2.
 P1. +3/+3/+2. Luvussa jo aineistolaskuja.
 - Taso 1: monivalinta mitä $n$ kuvaa; $pV = nRT$ suoraan; tilanyhtälö kahden tilan välillä.
 - Taso 2 (aineisto): renkaan paine ja lämpötila ajon aikana → vuotaako rengas, perustelu tilanyhtälöllä; mittaussarja $(T, V)$ vakiopaineessa → $nR$ kulmakertoimesta ja ainemäärä. Kuvaajan tulkinta: kaksi isotermiä, kumpi korkeampi lämpötila.
-- Taso 3: reaalikaasun poikkeama ideaalikaasusta suurella paineella (taulukko $pV/(nRT)$) → milloin malli kelpaa; YO-tyyppinen monivaiheinen tehtävä (sääpallo noustessa: paine ja lämpötila laskevat).
+- Taso 3: YO-tyyppinen monivaiheinen tehtävä: kaasupullo tyhjenee vaiheittain lämpötilan muuttuessa (ainemäärä $pV = nRT$:stä kolmella hetkellä, käytetty massa ja pallojen lukumäärä); sääpallo noustessa (paine ja lämpötila laskevat, tilavuus ja kuoren kestävä korkeus).
 
 ### fy3-11 Kaasun tekemä työ ja lämpövoimakone
 P1. +3/+3/+2.

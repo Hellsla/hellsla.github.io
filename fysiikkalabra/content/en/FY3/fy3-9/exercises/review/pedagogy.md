@@ -1,12 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 023c4ed7a198db13
+CONTENT-HASH: 503e26d6c082c1a1
+Mode: full
+Round: 1
 
 ## Blocking
 (none)
+
+## Fixed
+(none: no translation text needed changes)
 
 ## Polish
 - None.
 
 ## Checked
-- Delta review 2026-11-01: only unit typography changed in task texts and Reasonableness lines.
-- Task texts read naturally; levels, hints, feedback and the teaching sequence are as in the reviewed Finnish; no Finnish words left; check_i18n 0 errors.
+- Full translation review of the 8 new tasks against the Finnish: levels, kinds, hints, feedback to every distractor, sub-task structure (a, b, c) and "write the result of part x" lines match the reviewed source.
+- Teaching sequence and difficulty unchanged; wording is natural English.
+- Solutions keep the house structure (Given, Find, Principle, Formula, Substitution, Answer, Reasonableness).
+- check_i18n.py en: 0 errors.

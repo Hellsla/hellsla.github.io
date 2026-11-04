@@ -118,3 +118,75 @@
 **Substitution:** $\Delta U_\text{A} = 400\,\text{J} + (-150\,\text{J}) = 250\,\text{J}$. So $Q_\text{B} = 250\,\text{J} - (-60\,\text{J}) = 310\,\text{J}$
 **Answer:** $310\,\text{J}$; in the addition the result is as precise as the data, which are given in whole joules.
 **Reasonableness:** In way B the gas does less work, so the same increase in internal energy $250\,\text{J}$ needs less heat than in way A: $310\,\text{J} < 400\,\text{J}$. Balance: $310\,\text{J} + (-60\,\text{J}) = 250\,\text{J} = \Delta U_\text{A}$.
+
+## fy3-5-L1-06
+**Find:** which amount of water has the greater internal energy when the temperature is the same
+**Principle:** Internal energy is the sum of the kinetic energy of the particles of the system and the energy of the interactions between the particles. Temperature tells how vigorously the particles move, but internal energy also depends on the number of particles. Heat is not an amount stored in a body, but the transfer of energy because of a temperature difference.
+**Model answer:** The pot has the greater internal energy, because at the same temperature there are more particles. The claim that the internal energy is the same mixes up temperature and internal energy. The cup cannot have the greater internal energy, because it has fewer particles. The claim that the pot has more heat is wrong, because what is stored in a body is internal energy, not heat.
+
+## fy3-5-L1-07
+**Find:** what happens to energy when hot and cold water are mixed in an insulated container (the warming of the container itself is ignored)
+**Principle:** The total energy of an isolated system stays constant (conservation of energy). Heat is transferred from the hotter to the colder until the temperatures are the same. So the energy given off by the hot water is exactly the energy gained by the cold water.
+**Model answer:** The internal energy of the hot water decreases by as much as the internal energy of the cold water increases, so the total energy is conserved. The claim that energy is lost in the stirring breaks conservation of energy, because no energy is transferred out of the container. The internal energy cannot stay the same in both, because the temperatures change. Nor can the cold water gain more energy than the hot water gives off.
+
+## fy3-5-L1-08
+**Given:** the system is the water; power $P = 0.80\,\text{kW}$, time $t = 45\,\text{s}$, no heat escapes to the surroundings, $W = 0$
+**Find:** the increase in internal energy of the water $\Delta U$ in kilojoules
+**Principle:** Energy is conserved, so $\Delta U = Q + W$. The heater transfers energy to the water as heat at a steady power, so the quantity of heat transferred to the water is the product of power and time. No work is done, so $W = 0$.
+**Formula:** $Q = Pt$ and $\Delta U = Q + W$, so $\Delta U = Pt$
+**Conversions:** $P = 0.80\,\text{kW} = 800\,\text{W}$, so that $Pt$ comes out in joules. Finally $1\,\text{kJ} = 1000\,\text{J}$.
+**Substitution:** $\Delta U = 800\,\text{W} \cdot 45\,\text{s} = 36\,000\,\text{J} = 36\,\text{kJ}$
+**Answer:** $36\,\text{kJ}$, two significant figures, like the data $0.80\,\text{kW}$ and $45\,\text{s}$.
+**Reasonableness:** The heater transfers $800\,\text{J}$ every second, and in a whole minute it would transfer $0.80\,\text{kW} \cdot 60\,\text{s} = 48\,\text{kJ}$. The time $45\,\text{s}$ is shorter than a minute, so the result $36\,\text{kJ}$ is smaller: $36\,\text{kJ} < 48\,\text{kJ}$. The result is positive, because energy comes into the water and none leaves it.
+
+## fy3-5-L2-05
+**Given:** the system is the gas; steps 1–3: $Q_1 = +600\,\text{J}$, $W_1 = -250\,\text{J}$; $Q_2 = -150\,\text{J}$, $W_2 = 0$; $Q_3 = -320\,\text{J}$, $W_3 = +210\,\text{J}$; step 4: $Q_4 = 0$, $W_4$ unknown; the gas returns to its initial state at the end of the cycle
+**Find:** the work $W_4$ in step 4 with its sign
+**Principle:** Energy is conserved, so $\Delta U = Q + W$ for the whole cycle. The gas returns exactly to its initial state, so its internal energy is the same as at the start. Internal energy is a function of state, so in a cycle its change is zero: $\Delta U = 0$. Then the sum of the heats and works of the cycle is zero.
+**Formula:** $\Delta U = (Q_1 + Q_2 + Q_3 + Q_4) + (W_1 + W_2 + W_3 + W_4) = 0$, so $W_4 = -(Q_1 + Q_2 + Q_3 + Q_4) - (W_1 + W_2 + W_3)$
+**Conversions:** None needed: all energies are given in joules.
+**Substitution:** The sum of the heats is $600\,\text{J} - 150\,\text{J} - 320\,\text{J} + 0 = 130\,\text{J}$ and the sum of the known works is $-250\,\text{J} + 0 + 210\,\text{J} = -40\,\text{J}$. So $W_4 = -130\,\text{J} - (-40\,\text{J}) = -90\,\text{J}$
+**Answer:** $-90\,\text{J}$, in whole joules, because the data are given in whole joules. A negative work means that the gas does $90\,\text{J}$ of work on the surroundings.
+**Reasonableness:** In the cycle heat of $130\,\text{J}$ in total comes into the gas, so it must do $130\,\text{J}$ of work on the surroundings in total: $-250\,\text{J} + 0 + 210\,\text{J} - 90\,\text{J} = -130\,\text{J}$, and $130\,\text{J} - 130\,\text{J} = 0$. In step 4 no heat is transferred, so doing work decreases the internal energy of the gas: $\Delta U_4 = 0 + (-90\,\text{J}) = -90\,\text{J}$, and the gas cools.
+
+## fy3-5-L2-06
+**Given:** the system is the air in the pump; $W = +30\,\text{J}$ (the piston does work on the air), a quantity of heat of $10\,\text{J}$ is transferred out of the air; the student's result $\Delta U = 40\,\text{J}$
+**Find:** a) the student's error, b) the correct $\Delta U$ with its sign
+**Principle:** Energy is conserved, so $\Delta U = Q + W$. The signs show the direction: energy into the system is positive and energy out of the system is negative. Heat leaving the air decreases the internal energy, so $Q$ is negative.
+**Formula:** $\Delta U = Q + W$, and the quantity to find $\Delta U$ is already on the left-hand side of the equation
+**Conversions:** None needed: both transfers are given in joules.
+**Substitution:** a) The student gave the heat a plus sign, although heat is transferred out of the air and the correct value is $Q = -10\,\text{J}$. The sign of the work, $W = +30\,\text{J}$, is correct. b) $\Delta U = -10\,\text{J} + 30\,\text{J} = 20\,\text{J}$
+**Answer:** $20\,\text{J}$, in whole joules, because the transfers are given in whole joules.
+**Reasonableness:** The work brought $30\,\text{J}$ into the air and $10\,\text{J}$ left as heat, so the internal energy must increase by less than the work: $20\,\text{J} < 30\,\text{J}$. The student's result was larger than the work, although energy left the air, which cannot be right.
+
+## fy3-5-L2-07
+**Given:** the system is the block and the table; number of pulls $n = 20$, distance per pull $s = 0.600\,\text{m}$, forces $4.1\,\text{N}$, $4.3\,\text{N}$, $4.2\,\text{N}$, $4.0\,\text{N}$ and $4.4\,\text{N}$; $Q = 0$
+**Find:** the increase in internal energy $\Delta U$ during 20 pulls, and why the real increase is smaller
+**Principle:** Energy is conserved, so $\Delta U = Q + W$. By assumption $Q = 0$, so $\Delta U = W$. The pulling force does work $W = Fs$ on the system, and friction changes it into internal energy. The measurements vary slightly, so the mean is used as the pulling force.
+**Formula:** $F_\text{mean} = \dfrac{\text{sum of the measurements}}{5}$, the work of one pull $W_1 = F_\text{mean}\, s$ and for all the pulls $\Delta U = nW_1$
+**Conversions:** None needed: the force is in newtons and the distance in metres, so the product is in joules.
+**Substitution:** The sum of the measurements is $4.1\,\text{N} + 4.3\,\text{N} + 4.2\,\text{N} + 4.0\,\text{N} + 4.4\,\text{N} = 21.0\,\text{N}$, so $F_\text{mean} = \dfrac{21.0\,\text{N}}{5} = 4.20\,\text{N}$. The work of one pull is $W_1 = 4.20\,\text{N} \cdot 0.600\,\text{m} = 2.52\,\text{J}$, so $\Delta U = 20 \cdot 2.52\,\text{J} = 50.4\,\text{J}$
+**Answer:** $50.4\,\text{J}$, that is, about $50\,\text{J}$: the measurements are given to two significant figures and they vary by about $\pm 0.2\,\text{N}$ ($\approx 5\,\%$), so a result with two significant figures is honest. The real increase is probably slightly smaller, because the warmed block and table transfer some heat to the air, so $Q < 0$ and $\Delta U = Q + W < W$.
+**Reasonableness:** The $2.52\,\text{J}$ of one pull is small, which is why the warming caused by friction is hard to notice in everyday life, but the $50.4\,\text{J}$ of $20$ pulls is already clearly measurable. Check: $20 \cdot 0.600\,\text{m} = 12.0\,\text{m}$ of pulling distance multiplied by the force $4.20\,\text{N}$ gives $50.4\,\text{J}$.
+
+## fy3-5-L3-04
+**Given:** the system is the air in the pump; $(s,F)$ table, $s = 0$ … $0.20\,\text{m}$ in steps of $0.04\,\text{m}$; in the quick compression $Q = 0$; in the slow compression the temperature is constant and $W_\text{slow} = 14.0\,\text{J}$
+**Find:** a) the work $W$ with the trapezoid rule, b) the increase in internal energy $\Delta U$ in the quick compression, c) the quantity of heat $Q$ in the slow compression and an explanation
+**Principle:** Energy is conserved, so $\Delta U = Q + W$. The force changes along the distance, so the work is the area under the $(s,F)$ graph, which the trapezoid rule estimates. The piston does work on the air, so $W > 0$. In the quick compression there is no time for heat to be transferred, so $\Delta U = W$. In the slow compression the temperature and the amount of air stay the same, and because the air can be treated as an ideal gas, $\Delta U = 0$ and $Q = -W$.
+**Reading the graph:** The table has five intervals, each of width $h = 0.04\,\text{m}$. The forces at the ends of the intervals are $50$, $62$, $78$, $98$, $125$ and $160\,\text{N}$. The area of each interval is a trapezoid whose parallel sides are the forces at the ends of the interval.
+**Formula:** trapezoid rule: the work is the sum of the areas $h\,\dfrac{F_i + F_{i+1}}{2}$ of all the intervals, where $F_i$ and $F_{i+1}$ are the forces at the ends of the interval. Also $\Delta U_\text{quick} = Q + W = W$ and $Q_\text{slow} = -W_\text{slow}$
+**Conversions:** None needed: the force is in newtons and the distance in metres, so $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
+**Substitution:** Each force has two adjacent intervals around it, except at the ends; that is why half of each end force is taken. The sum is $25\,\text{N} + 62\,\text{N} + 78\,\text{N} + 98\,\text{N} + 125\,\text{N} + 80\,\text{N} = 468\,\text{N}$. So $W = 0.04\,\text{m} \cdot 468\,\text{N} = 18.72\,\text{J}$, and $\Delta U = 0 + 18.72\,\text{J} = 18.72\,\text{J}$. In part c) $Q = -14.0\,\text{J}$.
+**Answer:** a) $W \approx 18.7\,\text{J}$. b) $\Delta U \approx 18.7\,\text{J}$, three significant figures. c) $Q = -14.0\,\text{J}$. In the quick compression there is no time for heat to be transferred out, so all the work stays as internal energy of the air and the temperature rises. In the slow compression the same energy is transferred as heat through the walls of the cylinder to the surroundings, so the internal energy and the temperature stay the same.
+**Reasonableness:** The average force is $\dfrac{18.72\,\text{J}}{0.20\,\text{m}} \approx 94\,\text{N}$, which lies between the initial force $50\,\text{N}$ and the final force $160\,\text{N}$. In the quick compression the internal energy increases more than the work needed in the slow one: $18.7\,\text{J} > 14.0\,\text{J}$. This fits the fact that when the piston is pushed quickly the pump gets hot and the air pressure rises higher, so the compression needs a larger force.
+
+## fy3-5-L3-05
+**Given:** the system is the water; the table values of $E_\text{v}$ and $\Delta U$ at the moments $0$, $30$, $60$, $90$ and $120\,\text{s}$; $W = 0$; the heating element transfers the energy $E_\text{v}$ to the water as heat
+**Find:** a) the mean power $P$, b) the quantity of heat $Q_\text{out}$ transferred from the water to the surroundings at the moment $120\,\text{s}$ and its percentage, c) an explanation using conservation of energy
+**Principle:** Energy is conserved, so $\Delta U = Q + W$. The water is not stirred and no work is done on it, so $W = 0$. The warming of the heating element and of the body of the kettle themselves is assumed to be negligible, so the net heat transferred to the water is the energy transferred by the heating element minus the heat escaping to the surroundings: $Q = E_\text{v} - Q_\text{out}$. So $\Delta U = E_\text{v} - Q_\text{out}$ and $Q_\text{out} = E_\text{v} - \Delta U$. Power is energy divided by time: $P = \dfrac{E_\text{v}}{t}$.
+**Reading the graph:** In the last row $t = 120\,\text{s}$, $E_\text{v} = 239.9\,\text{kJ}$ and $\Delta U = 205.1\,\text{kJ}$. In the first row both are zero.
+**Formula:** $P = \dfrac{E_\text{v}}{t}$, $Q_\text{out} = E_\text{v} - \Delta U$ and the share $= \dfrac{Q_\text{out}}{E_\text{v}} \cdot 100\,\%$
+**Conversions:** $E_\text{v} = 239.9\,\text{kJ} = 239\,900\,\text{J}$, so that the power comes out in watts; $1\,\text{kW} = 1000\,\text{W}$.
+**Substitution:** a) $P = \dfrac{239\,900\,\text{J}}{120\,\text{s}} = 1999\,\text{W} \approx 2.00\,\text{kW}$. b) $Q_\text{out} = 239.9\,\text{kJ} - 205.1\,\text{kJ} = 34.8\,\text{kJ}$ and the share is $\dfrac{34.8\,\text{kJ}}{239.9\,\text{kJ}} \cdot 100\,\% = 14.5\,\%$
+**Answer:** $Q_\text{out} = 34.8\,\text{kJ}$ (part b), three significant figures, like the values of the table, that is, about $14.5\,\%$ of the energy of the heating element. Part a): the mean power is $P = 2.00\,\text{kW}$. Part c): The missing energy has not disappeared: it has been transferred as heat through the wall of the kettle to the surrounding air and the table, whose internal energy has increased by the same amount. The first law holds when the net heat $Q = E_\text{v} - Q_\text{out}$ is used for the water. The accumulated loss $E_\text{v} - \Delta U$ grows on every row of the table: $8.1$, $16.3$, $26.1$ and $34.8\,\text{kJ}$, because the warm water gives off heat to the surroundings all the time.
+**Reasonableness:** The loss is smaller than the energy of the heating element ($34.8\,\text{kJ} < 239.9\,\text{kJ}$), so the internal energy of the water still increases, as in the table. Balance: $205.1\,\text{kJ} + 34.8\,\text{kJ} = 239.9\,\text{kJ}$. In the measurement the power is $2.00\,\text{kW}$ and the loss is on average about $0.29\,\text{kW}$ all the time, which is about $15\,\%$ of the power, that is, a clearly measurable part.

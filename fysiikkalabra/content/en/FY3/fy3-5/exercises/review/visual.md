@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1cf4b7863abb805b
+CONTENT-HASH: fc675ddba93a47b0
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-01 prompt — "120 N" in plain text while "0.15 m" is maths — set as maths.
-- [Minor] L3-02 solution — "h = 1.6989 m" shows excess digits before 1.7 m; show 1.70 m.
-- [Minor] L2-01 graph — origin shows a single "0" for both axes; acceptable, optionally mark it.
+- [Minor] L2-06 solution — in Substitution, "b)" is left at the end of a line before the equation block; same in the Finnish layout, optional break before b).
 
 ## Checked
-- open-exercises L1 (1-6), L2 (1-6), L3 (1-4) at 1280 px, all solutions open; piston-force graph (axes, units, end points marked, data distinct); layout of Given/Find/Principle/Formula/Substitution/Answer consistent; English decimal point; no Finnish.
+- Captures opened (en): open-exercises L2 (cycle task L2-05 solution, L2-06 error task), L3 (L3-04 table and solution, L3-05 table and solution), fy3-5-open-exercises-L2-1280-8 / L3 shots.
+- Tables show the decimal point, units upright, captions translated, no Finnish in en; formulas render, answer boxes and unit fields present.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4

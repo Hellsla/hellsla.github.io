@@ -40,6 +40,58 @@
       "answer": 90.0,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-06",
+      "level": 1,
+      "text": "A condensing power plant and a combined heat and power plant burn the same amount of the same fuel. The overall efficiency of the combined heat and power plant is still clearly higher. What explains this?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The heat of the condenser is used as district heating, so a larger share of the energy is put to use.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "More energy is released when the fuel burns in combined production, so there is enough for both electricity and heat.",
+          "feedback": "The same fuel always releases the same energy, because the heat of combustion is a property of the substance. The difference comes from how large a share of the energy is put to use."
+        },
+        {
+          "text": "In combined production the turbine converts a larger share of the heat into electricity, so less waste heat is left.",
+          "feedback": "A combined heat and power plant usually produces less electricity than a condensing power plant, because part of the energy of the steam stays as heat. The overall efficiency is higher because this heat is also used."
+        },
+        {
+          "text": "The district heating network adds energy as the water circulates in the pipes, so more comes out than goes in.",
+          "feedback": "Energy is not created from nothing: the electricity and heat obtained cannot add up to more than the fuel power supplied, so $\\eta_\\text{tot} \\leq 100\\,\\%$."
+        },
+        {
+          "text": "The heat of the condenser is used as district heating, so a larger share of the energy is put to use.",
+          "correct": true,
+          "feedback": "Correct: in a condensing power plant the heat of the condenser goes to the sea as waste heat. In combined production it warms the water of the district heating network, and the useful power is counted as $P_\\text{s} + P_\\text{k}$."
+        }
+      ]
+    },
+    {
+      "id": "fy3-15-L1-07",
+      "level": 1,
+      "text": "The thermal power of the reactor of a nuclear power plant is $1500\\,\\text{MW}$, and the plant delivers electricity to the grid at a power of $510\\,\\text{MW}$. What is the efficiency of the plant's electricity production? Give your answer as a percentage.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 34.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-08",
+      "level": 1,
+      "text": "The fuel power of a power plant is $500\\,\\text{MW}$, and the plant runs at a steady power for a day. How much fuel energy enters the plant in a day? Give your answer in gigawatt-hours.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 12.0,
+      "unit": "GWh",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,95 @@
       "answer": 7.16,
       "unit": "t/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L2-05",
+      "level": 2,
+      "text": "A combined heat and power plant producing district heating and electricity records every year the energy bound in the fuel and the electricity and district heating it produces (table, example data). The year 2023 was cold.\n\na) Calculate the electrical efficiency $\\eta_\\text{s}$ for each year.\n\nb) Calculate the overall efficiency $\\eta_\\text{tot}$ for each year.\n\nc) Explain why the electrical efficiency decreased but the overall efficiency increased.\n\nIn part b), enter the overall efficiency of 2023 in the answer box as a percentage.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 90.0,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Annual energies of a combined heat and power plant (example data)",
+        "columns": [
+          "Year",
+          "$E_\\text{fuel}\\,(\\text{GWh})$",
+          "$E_\\text{electricity}\\,(\\text{GWh})$",
+          "$E_\\text{district heating}\\,(\\text{GWh})$"
+        ],
+        "rows": [
+          [
+            "2021",
+            "2400",
+            "840",
+            "1190"
+          ],
+          [
+            "2022",
+            "2500",
+            "800",
+            "1410"
+          ],
+          [
+            "2023",
+            "2450",
+            "735",
+            "1470"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-15-L2-06",
+      "level": 2,
+      "text": "The table gives the fuel or reactor power $P_0$ and the electric power $P_\\text{s}$ of three power plants (example data). All the plants are condensing power plants, and the rest of the energy is transferred to the surroundings as waste heat.\n\na) Calculate the efficiency of each plant.\n\nb) Calculate the waste heat power $P_\\text{h}$ of each plant.\n\nc) Does the plant with the lowest efficiency also have the largest waste heat power? Justify your answer.\n\nIn part b), enter the largest waste heat power in the answer box in megawatts.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1560,
+      "unit": "MW",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Powers of three condensing power plants (example data)",
+        "columns": [
+          "Plant",
+          "$P_0\\,(\\text{MW})$",
+          "$P_\\text{s}\\,(\\text{MW})$"
+        ],
+        "rows": [
+          [
+            "Nuclear power plant",
+            "2400",
+            "840"
+          ],
+          [
+            "Coal power plant",
+            "1200",
+            "432"
+          ],
+          [
+            "Bio power plant",
+            "350",
+            "112"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-15-L2-07",
+      "level": 2,
+      "text": "The efficiency of the boiler of a condensing power plant is 0.920, of the steam cycle 0.410 and of the generator 0.970.\n\nStudent's solution: “The efficiencies are added together, because all the steps affect the result: $0.920 + 0.410 + 0.970 = 2.30$. So the efficiency of the plant is $230\\,\\%$.”\n\na) Explain why the student's solution is wrong.\n\nb) Calculate the correct efficiency of the plant.\n\nIn part b), enter the result in the answer box as a percentage.",
+      "kind": [
+        "error"
+      ],
+      "answer": 36.6,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +241,60 @@
       "answer": 87.7,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L3-04",
+      "level": 3,
+      "text": "A city needs electricity of $100\\,\\text{MW}$ and district heating of $200\\,\\text{MW}$. Option A: the electricity is produced in a condensing power plant with an efficiency of 0.400 and the heat in a heating boiler with an efficiency of 0.900. Option B: the electricity and heat are produced in a combined heat and power plant with an electrical efficiency of 0.320 and a district heating power equal to 0.560 times the fuel power. The heat of the plant is not enough for the whole district heating need, so the missing part is produced in a similar heating boiler as in option A. All the numbers are example data.\n\na) Calculate the total fuel power of option A.\n\nb) Calculate the total fuel power of option B.\n\nc) By how much is the fuel power smaller in option B than in option A? Justify where the saving comes from.\n\nIn part c), enter the difference of the fuel powers in the answer box in megawatts.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 132,
+      "unit": "MW",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-15-L3-05",
+      "level": 3,
+      "text": "The thermal power of the reactor of a nuclear power plant is $2700\\,\\text{MW}$ and the electric power $900\\,\\text{MW}$. The flow of sea water cooling the condenser is a constant $38.0\\,\\text{t/s}$. The temperatures of the water entering and leaving the condenser have been measured in four months (table, example data). The specific heat capacity of water is $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Calculate the rise in the temperature of the water $\\Delta T$ in each month and its average $\\Delta T_\\text{avg}$.\n\nb) Calculate the heat power $P_\\text{L}$ transferred to the condenser, using the average $\\Delta T_\\text{avg}$.\n\nc) Compare the result with the waste heat power of the plant $P_\\text{h} = P_0 - P_\\text{s}$. Where does the rest of the waste heat go?\n\nd) Why can the heat of the condenser that warms the sea water no longer be used to produce electricity, and what effect does the heat have on the nearby water in July?\n\nIn part b), enter the result in the answer box in megawatts.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1716,
+      "unit": "MW",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Temperatures of the condenser water (example data)",
+        "columns": [
+          "Month",
+          "$T_\\text{in}\\,({}^\\circ\\text{C})$",
+          "$T_\\text{out}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "January",
+            "1.2",
+            "12.1"
+          ],
+          [
+            "April",
+            "3.5",
+            "14.2"
+          ],
+          [
+            "July",
+            "17.8",
+            "28.4"
+          ],
+          [
+            "September",
+            "12.3",
+            "23.2"
+          ]
+        ]
+      }
     }
   ]
 }

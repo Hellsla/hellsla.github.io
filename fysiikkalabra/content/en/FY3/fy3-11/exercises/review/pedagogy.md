@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 57ff55f2f9cf838b
+CONTENT-HASH: 182fdd9803837d67
 
 ## Blocking
 (none)
@@ -11,4 +11,6 @@ CONTENT-HASH: 57ff55f2f9cf838b
 - None.
 
 ## Checked
-Same levels, task order, figure task, hints, mistakes and staged solutions as the Finnish; nothing added or dropped. Language: natural English; no Finnish words in text, units or names.
+- Same levels, task order, choices, feedback logic and staged solutions as the Finnish; nothing added or dropped. Exactly one correct option in L1-06, L1-07 and L2-06; wrong options keep their reason-why feedback.
+- English is natural and at the right level; sentence length and wording of the multi-part L3-04 and L3-05 tasks match the Finnish, including the "write the result of part b)" instruction.
+- Data tasks keep the "example data" framing, captions and column headers.
