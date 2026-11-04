@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: fbb196b146849b7c
-Mode: delta
-Round: 1
+CONTENT-HASH: 4996355aa35233e4
+Mode: full
+Round: 2
 
 ## Blocking
 (none)
@@ -19,3 +19,4 @@ Round: 1
 - Decimal point used throughout in JSON and LaTeX; no mixed separators.
 - Unit labels ("km", "kJ", "MJ", "times"/"kertaa", "kg") translated correctly.
 - check_i18n.py en: 0 errors. No Finnish left in the English text.
+- Round 2 (figure change only): the L1-05 figure "tikapuut-kohteet" shows the same content (scale 1 J … 1 TJ, three marked points, labels) and the caption "each step is a factor of 10" only moved 5 units lower; it no longer touches the scale labels and stays inside the figure. No text, number, task, answer or solution changed, so the earlier science findings stand. The answer 100 000 (10⁹ J : 10⁴ J) still follows from the figure.

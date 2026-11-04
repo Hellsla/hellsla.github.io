@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e66a67c219672d7e
-
-Delta review over the audit's PASS (4157a622aabadf49): L1-04 (km/s → m/s) replaced by a ruler-reading figure task (fy1-2/ruler-read); numbers with units elsewhere turned into LaTeX.
+CONTENT-HASH: 858946470e7d35ed
 
 ## Blocking
-(none)
+
 ## Polish
-- solutions.md:39 — "kolme merkitsevää numeroa kuten lukemat": 2,0 cm has two figures; the real reason is that both readings are to 0,1 cm, so the difference 11,6 cm keeps the tenths. Say "kuten erotus 11,6 cm, koska lukemat ovat millimetrin tarkkuudella".
-- Figure at 360 px: millimetre ticks are about 1,7 px apart; the dashed guides help, and the tolerance (±2,3 mm) forgives a 1–2 mm misreading, so not blocking.
+- content/fi/FY1/fy1-2/exercises/solutions.md:175 (L3-04) — "k … ei riipu pituudesta tai paikasta" holds within the task's premise. Strictly, k depends on the amplitude, which the premise leaves out. — Optional: "kun heilahdukset ovat yhtä pieniä".
+- content/fi/FY1/fy1-2/exercises/exercises.json:66 and solutions.md:55 (L1-06) — "kilogrammasta etuliitteellä muodostettu osa": the gram itself carries no prefix. — Write: "Gramma on kilogramman tuhannesosa; massan etuliitteet liitetään grammaan (mg, kg)."
+- content/fi/FY1/fy1-2/exercises/solutions.md:54 (L1-06) — "Etuliite … muodostaa perusyksikön osan tai monikerran": prefixes apply to every SI unit (kN, MJ). — Write "yksikön osan tai monikerran".
+
 ## Checked
-- Figure code: rod from X(2,0) to X(13,6) at 36 units/cm, mm/5 mm/cm ticks, numbers 0–15; description matches.
-- Recomputed (13,6 − 2,0) cm = 11,6 cm = 116 mm; answers.py 116; tolerance 0,02 → 113,7…118,3 mm accepts any reasonable reading, rejects the wrong method "right end only" (136 mm).
-- LaTeX conversions (384 400 km, 1,85 m, 0,92 m, 3474 km, 15,341 km/s) leave values unchanged; answers unchanged.
+- The round-2 Blocking item (L3-04, B) is fixed. solutions.md:179 now says "pienillä heilahduksilla pätee T = 2π√(L/g)", and "tarkka" is gone. This was the only change (`git diff HEAD~1 -- content/fi/FY1`).
+- L3-04 recomputed: dimensional analysis gives a = 1/2, b = −1/2, c = 0, and T₂ = 1,00 s·√4 = 2,00 s. The data agree with 2π√(L/g): this gives 1,003 s for 0,250 m and 2,006 s for 1,00 m.
+- Everything else is unchanged since round 2. The round-2 checks still apply: L2-05 speeds, L3-05 at 1,536 h, L1-06 options, L2-07 unit check, and answers.py agreeing with exercises.json.
+- The hash was the same at the start and the end.

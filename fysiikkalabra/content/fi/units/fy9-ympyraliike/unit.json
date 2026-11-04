@@ -1,0 +1,14 @@
+{
+ "id": "fy9-ympyraliike",
+ "course": "FY9",
+ "chapter": 3,
+ "order": 4,
+ "title": "Tasapaino, ympyräliike ja gravitaatio",
+ "description": "Kerrataan FY5-moduulin momentti, kappaleen tasapaino, ympyräliikkeen kierrosaika ja ratanopeus, normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö, gravitaatiolaki sekä satelliittien ja planeettojen ympyräradat ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}

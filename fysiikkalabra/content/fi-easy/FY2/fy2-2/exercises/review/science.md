@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 869c77441391a571
-Mode: delta
-Round: 1
+CONTENT-HASH: dddd0748a061d540
+Mode: full
+Round: 2
 
 ## Blocking
 (none)
@@ -18,3 +18,4 @@ Round: 1
 - Decimal comma in text and LaTeX as in the Finnish; table cells keep the same point values as fi.
 - Unit labels ("km", "kJ", "MJ", "times"/"kertaa", "kg") translated correctly.
 - check_i18n.py fi-easy: 0 errors.
+- Round 2 (figure change only): the L1-05 figure "tikapuut-kohteet" shows the same content (scale 1 J … 1 TJ, three marked points, labels) and the caption "jokainen väli on 10-kertainen" only moved 5 units lower; it no longer touches the scale labels and stays inside the figure. No text, number, task, answer or solution changed, so the earlier science findings stand. The answer 100 000 (10⁹ J : 10⁴ J) still follows from the figure.

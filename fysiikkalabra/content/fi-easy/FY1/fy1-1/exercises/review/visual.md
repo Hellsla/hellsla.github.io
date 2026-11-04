@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: bee5f1eeb618d9b6
+CONTENT-HASH: cfbc0f23d4b0fd14
+Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- (nothing needed)
 
 ## Polish
-- [Minor] solutions.md L1-01 Muunnokset — "joten muuta muokkausta ei tarvita" is awkward — "joten muunnosta ei tarvita".
-- [Minor] solutions.md L2-04 Järkevyys — the last sentence ("Tilavuuksien suhde kertoo, kuinka moneen Maan tilavuuteen …") repeats the Kysytty line — drop it.
-- [Minor] L3-03 Sijoitus (open-exercises-L3-1280-3) — the two aligned blocks (M and w_p) start at different indents inside one box; align or split into two rows.
+(none)
 
 ## Checked
-- open-exercises-1280-1/2 (level 1 incl. the kymmenpotenssiakseli figure with exponents readable and answer not given away), open-exercises-L2-1280-1, open-exercises-L3-1280-1 and -3; solutions.md read in full. Stages Annettu–Järkevyys render in order, chains broken in aligned rows, units upright with thin space, answers set apart with the sig-fig reason.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+- Screenshots of the open exercises (level 2 part 6 with the L2-05 solution): layout, formulas, solution boxes and answer chip render cleanly and like the Finnish; the shorter sentences give no overflow.
+- Data tables of L2-05, L2-06 and L2-07 have the same rows, columns and cells as the Finnish.
+- Unit strings next to the answer fields (suuruusluokkaa, kertaa, miljardia) are the same as in the Finnish and short.
+- Math is identical to the Finnish, with decimal commas in running text and formulas.

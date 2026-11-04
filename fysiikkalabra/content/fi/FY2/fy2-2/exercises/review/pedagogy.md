@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 6527b074c113a0ce
-Round: 2
+CONTENT-HASH: 5c132ea0d45da19e
+Mode: full
+Round: 3
 
 ## Blocking
 - none
@@ -16,3 +17,4 @@ Round: 2
 - Round-1 Polish done: L2-07 data marked as example, line is drawn on paper/graph tool and the two points are said to be taken from the drawn line (least squares gives 250,5 kJ/km, intercept 7,7, so (0; 8) and (5,0; 1260) are right); L2-06 context clarified; L3-05 tolerance remark added; Kaava as a fraction.
 - Recomputed: L1-07 1200 kJ (12 % of 10 MJ, "kahdeksasosa" correct), L2-06 2,5 MJ and its Järkevyys "neljäsosa" correct, L3-05 10,35 MJ, 11,45 MJ, 1,10 MJ, 0,89 kg.
 - Data tasks at level 2: L2-05 and L2-07; conceptual MC L1-06; error analysis L2-06; level 3 modelling L3-05; no duplicates, levels fit.
+- Round 3 (figure change only): the L1-05 figure "tikapuut-kohteet" shows the same content (scale 1 J … 1 TJ, three marked points, labels) and the caption "jokainen väli on 10-kertainen" only moved 5 units lower; it no longer touches the scale labels and stays inside the figure. No text, number, task, answer or solution changed, so the earlier pedagogy findings stand. The answer 100 000 (10⁹ J : 10⁴ J) still follows from the figure.

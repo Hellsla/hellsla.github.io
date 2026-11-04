@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: fbb196b146849b7c
-Mode: delta
-Round: 1
+CONTENT-HASH: 4996355aa35233e4
+Mode: full
+Round: 2
 
 ## Blocking
 (none)
@@ -18,3 +18,4 @@ Round: 1
 - Tasks state what to give (unit, kilometres, kilograms, "times") and do not give the answer away; the error task L2-06 asks to find the error, correct it and explain.
 - Language (English): natural, correct English, short clear sentences, terms as in the Finnish.
 - Solutions keep all seven steps in order, identical to the Finnish.
+- Round 2 (figure change only): the L1-05 figure "tikapuut-kohteet" shows the same content (scale 1 J … 1 TJ, three marked points, labels) and the caption "each step is a factor of 10" only moved 5 units lower; it no longer touches the scale labels and stays inside the figure. No text, number, task, answer or solution changed, so the earlier pedagogy findings stand. The answer 100 000 (10⁹ J : 10⁴ J) still follows from the figure.

@@ -1,14 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 55b9ef12b740c10f
+CONTENT-HASH: ba38d4161484034d
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- none
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish: the 5 / 4 / 3 tasks at levels 1 / 2 / 3 keep the Finnish order, difficulty and contexts (hand stopwatch, toy car, lab-record row, two-line fit, cooling water, time budget).
-- Natural English, units and symbols in maths as in the Finnish; the questions state the unit asked for; no answer disclosed in the task text.
-- Solutions keep the staged form (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) with the formula before the numbers; the notes on rounding and accepted forms (L2-01, L3-01) read clearly.
-- Unit "repeats" is consistent with the lesson terminology.
+- English text of the 8 new tasks reads naturally (natural English, no Finnish left (grep), decimal point in JSON and LaTeX).
+- Distractor feedback in L1-06..08 and L2-06 keeps the fi diagnostic point (dependent, controlled, instrument; results vs discussion; repeats vs confounded variables).
+- L2-05, L2-07, L3-04, L3-05 keep every sub-question of fi (calculate, decide, explain, write two sentences, name three controlled variables).
+- Terms explained in context (uncertainty = half of range; independent = manipulated).
+- Task difficulty and scaffolding unchanged from fi.
