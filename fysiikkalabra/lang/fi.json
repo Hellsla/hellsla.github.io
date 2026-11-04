@@ -117,6 +117,8 @@
     "study": "Näin opiskelet",
     "about": "Sivustosta",
     "about_lead": "Mistä Ruukkilabra sai alkunsa, miksi se on kolmella kielimuodolla, miten tekoälyä käytetään ja kuka sen tekee.",
+    "privacy": "Tietosuoja",
+    "privacy_lead": "Ruukkilabra ei kerää opiskelijoiden tietoja eikä käytä evästeitä. Mitä selaimeen tallentuu ja miksi.",
     "home_lead": "Tee ennuste, tutki ilmiötä simulaatiolla tai aineistolla ja rakenna selitys itse.",
     "home_tagline": "Tutki. Oivalla. Sovella.",
     "modules_lead": "Lukion fysiikan moduulit (LOPS 2019). Määrät kertovat julkaistut oppitunnit, eivät omaa edistymistäsi.",
