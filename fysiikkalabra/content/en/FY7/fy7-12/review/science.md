@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ebb60681fd2ae085
+CONTENT-HASH: c3d2878255784b71
 
 ## Blocking
 
 ## Polish
+- lesson.md:159 — "the fibre delays the signal slightly more than the distance alone would suggest": the factor is 1.47 (5.74 ms against 3.91 ms in siirto), so "slightly" understates it — write "about one and a half times as long as in a vacuum".
 
 ## Checked
-- One script recomputed every lesson and inquiry number from the task data: 41.7° (water→air at 30°), critical angles 48.8°/41.8°/24.4°/80.57°/42.51°/63.98°/69.98°/38.7°, sim α at θ = 0/10/14/15/30° (90/83.26/80.59/79.93/70.25°), the koe-1 limit 14.03° → 14, siirto 5.743 ms and its mistakes 3.91/2.66/0.0057 ms, virhe 40.6°, v = 2.04·10⁸ m/s, check-2 mistakes 20.02° and 0.9396. All agree.
-- The translation keeps every number of the Finnish original (fi vs en multiset of numbers in lesson.md, inquiry.json and exit-ticket.json: identical apart from SVG label-box coordinates); correct flags, initial states, locked parameters and numeric answers are the same.
-- Definitions: critical angle, total internal reflection, n1 = incident side, "only when n1 > n2", angles from the normal: stated correctly and the same everywhere (theory, summary, check-1, tarkistus-3, exit ticket).
-- Causality: fibre guidance by TIR at the core–cladding boundary (not a mirror); steep entry and tight bends lower α; cladding protects the boundary from water/grease; small Δn limits path-length spread. Correct.
-- Fibre facts: ~0.2 dB/km at 1550 nm → half power in ~15 km; amplifier spacing 50–100 km; C-Lion1 1172 km with source. Plausible and sourced.
-- Simulation: sim.js implements sin θ = n1 sin θ1, α = 90° − θ1, sin α_r = n2/n1, leaking rays at β from n1 sin α = n2 sin β; en readout/labels translated correctly ("Angle of incidence on the end face θ" = angle to the axis = face normal); dimming said to be illustration only; readings called model values.
-- Experiments: koe-1 locks n2 = 1.46 and varies θ; koe-2 locks θ = 30° and varies n2; simState gives alpha and alphar. Experiment capture (en) shows θ = 0°, α = 90.00°, α_r = 80.57°.
-- Predictions: exactly one correct option in each; every distractor's feedback is physically right (the air-cladding item correctly says the cladding protects rather than improves reflection).
-- Figures: water figure angles 30°/48.8°/65°, graph points to scale, diamond 38° vs 24.4°/41.8° consistent with the text.
-- Worked example symbolic first, 3 s.f. justified, real reasonableness check.
+- Round-2 changes: in the graph, "water" now sits below-left of the dot at (183.5, 174), and "glass" sits above-right of the dot at (228.5, 190.5). Each label is beside its own point and clear of the curve (capture fig-11 confirms this). The points are to scale. The new legend ("Dashed lines are normals. Not to scale.") is still correct.
+- sim.js is unchanged from the version that passed. It implements sin θ = n1 sin θ1, α = 90° − θ1, sin α_r = n2/n1, and the leak at β. "Angle of incidence on the end face θ" is correct, because the axis is the face's normal.
+- One script recomputed every number in lesson-answers.py with my own formulas, and all of them agree: 41.7°, α_r 48.8/41.8/24.4/80.57/42.51/63.98/71.08°, sim α 90/83.26/80.59/79.93/70.25°, koe-1 limit 14.03 → 14, siirto 5.743 ms with mistakes 3.907/2.658/0.005743, virhe 40.6°, check-2 69.98° with mistakes 20.02° and 0.9396, exit 38.7°.
+- The multiset of numbers in lesson.md, inquiry.json and exit-ticket.json (outside SVG markup) is identical to fi. The correct flags, initial states, locked parameters and numeric answers are the same as in fi.
+- Predictions: exactly one correct option each, and the distractor feedback is right. koe-1 and koe-2 each isolate their varied parameter.
+- Definitions, the n1 > n2 condition, angles measured from the normal, and fibre guidance by total internal reflection (not a mirror) are consistent across the theory, summary, checks and exit ticket.

@@ -1,16 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: bcf19e2f562e7924
+VERDICT: PASS
+CONTENT-HASH: 8cec3736a94d62df
 
 ## Blocking
-- [Major] fig "graph" (fig-11-390) — "vesi" is placed above the second dot (n = 1,5, lasi) and "lasi" below the first (n = 1,33, vesi), with no leader; the reader pairs the labels with the wrong points (vesi 41,8°, lasi 48,8°, the reverse of the text) — move "vesi" to the upper right of the first dot and "lasi" to the lower left of the second, or add leader lines.
+(none)
 
 ## Polish
-- [Minor] Ydinpolku line — "*Valinnainen*-tehtävät" with an italic stem and hyphen reads oddly; write "Valinnaiset tehtävät" (italic) for the marked tasks.
-- [Minor] fig "water" at 390 px — "kokonaisheijastuminen" fills the picture width and touches the right edge; shift left.
-- [Minor] sim readout at 390 px — "rajakulma α_r = 80,57°" wraps with the value alone on the next line; put the readings on separate lines.
+- [Minor] "Exit ticket" heading on the page — English template heading (carried across Finnish pages).
+- [Minor] fig-5/7/9/11 at 390 px — figure text about 9–10 px; enlarge when next edited.
+- [Minor] Exercise level list at 390 px — "4 tehtävää" wraps below the level 2 title.
 
 ## Checked
-- Opened fig-5, 7, 9, 11 at 390; top-390, intro-1280, sim-390, example-390-1, exp-koe-1-390, theory-1280-1/-3, open-ennusta/-tarkista/-exit at 1280. The Finnish reads naturally: short sentences, glossary terms consistent (rajakulma, kokonaisheijastuminen, valokuitu, ydin, kuori), decimal comma and units correct. "Exit ticket" is the deliberate site-wide heading. check_layout 340: OK.
+- contact-1..3, top-390, theory-1280-2 and -3, sim in contact-1, example and inquiry stages in contacts.
+- fig-5 water, fig-7 fibre, fig-9 diamond (enlarged): Finnish labels (ydin, kuori, suojapäällyste, kokonaisheijastuminen) consistent with text and simple vocabulary.
+- fig-11 graph (enlarged): vesi below-left, lasi above-right, timantti above dot; decimal comma on ticks.
+- Prose: short sentences, glossary terms consistent (rajakulma, kokonaisheijastuminen, valokuitu, ydin/kuori), units as LaTeX with Finnish case endings ("15 km:n").
+- Formula block and worked example: aligned rows, no overflow in captures.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

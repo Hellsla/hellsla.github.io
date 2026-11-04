@@ -1,18 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: a39e8dfcd20fe425
+VERDICT: FAIL
+CONTENT-HASH: 6ae8f5d003acc8f8
 
 ## Blocking
-(none)
+- [Major] lesson.md:152 (section on reflection vs angle of incidence, window sentence) — the rewritten sentence repeats a clause word for word: "Huoneesta lasiin osuva valo heijastuu osittain takaisin, ja huoneesta lasiin osuva valo heijastuu osittain takaisin." — a serious language defect in new text, reads as a copy error in a text for weak readers — replace with: "Illalla ikkunasta näkee oman huoneensa heijasteen, koska ulkoa tulee vähän valoa. Huoneesta lasiin osuva valo heijastuu osittain takaisin. Heijastunut ja läpi mennyt osa ovat yhteensä yhtä paljon kuin tuleva valo, kun aine ei absorboi valoa."
 
 ## Polish
-- [Minor] inquiry.json, simulaatio howto — "Lukemista näet kulmat…" — "Lukemissa näet kulmat…" (the readout, not a source).
-- [Minor] Experiment 1 readings table at 390 px (stage-tutki-390-2) — the header "tulokulma α₁" wraps to two lines next to the "(°)" units of the other columns; acceptable, but a shorter "α₁ (°)" would align the row.
-- [Minor] Task figures' labels (ilma, lasi) are Finnish as they should be; no action.
+- [Minor] Carried over from the earlier report, still open: inquiry.json simulaatio howto "Lukemista näet kulmat…" -> "Lukemissa näet kulmat…".
 
 ## Checked
-- top-390; stage-tutki-390-1, -2 (simulation, experiments, readings tables, conclusion); figures 7, 9, 11, 13 at 390 (labels tuleva, heijastunut, taittunut, normaali, ilma, vesi, näennäinen paikka, kolikko, timantti: all Finnish, all legible).
-- Source read in full: lesson (short sentences, one idea per paragraph, terms heijastuslaki, taitekerroin, taittuminen, Snellin laki used consistently; no padding phrases), inquiry texts, exercises and solutions.
-- Layout at 340 px OK; decimal comma in text and in the simulation readout.
+- Delta: the single changed paragraph (diff in packet, source line 152); theory-1280-2 (the refraction section and its wave figure) to see the layout around the change survived: unchanged and fine, all labels Finnish.
+- The two other sentences of the paragraph ("Heijastunut ja läpi mennyt…") read correctly; "Illalla … koska ulkoa tulee vähän valoa" is clear.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 3 · accessibility 4

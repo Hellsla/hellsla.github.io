@@ -149,7 +149,7 @@ Rajapinnassa valo jakautuu aina kahteen osaan. Yksi osa heijastuu, ja toinen men
 
 Mitä suurempi tulokulma on, sitä suurempi osa heijastuu. Suuri tulokulma tarkoittaa, että valo tulee pintaa hipoen. Siksi järven pinta peilaa iltaisin rannan puut, vaikka pohja näkyy, kun katsoo suoraan alas.
 
-Illalla ikkunasta näkee oman huoneensa heijasteen, koska ulkoa tulee vähän valoa. Huoneesta lasiin osuva valo heijastuu osittain takaisin, ja huoneesta lasiin osuva valo heijastuu osittain takaisin. Heijastunut ja läpi mennyt osa ovat yhteensä yhtä paljon kuin tuleva valo, kun aine ei absorboi valoa.
+Illalla ikkunasta näkee oman huoneensa heijasteen, koska ulkoa tulee vähän valoa. Huoneesta lasiin osuva valo heijastuu osittain takaisin. Heijastunut ja läpi mennyt osa ovat yhteensä yhtä paljon kuin tuleva valo, kun aine ei absorboi valoa.
 
 ### Näennäinen syvyys
 Katso uima-altaan pohjassa olevaa kolikkoa. Kolikosta lähtevät säteet taittuvat vedenpinnassa normaalista poispäin. Silmä ja aivot tulkitsevat, että valo on tullut suoraan viivaa pitkin. Kun silmään tulevat säteet jatketaan taaksepäin veteen, ne näyttävät lähtevän kohdasta, joka on ylempänä kuin kolikko. Siksi allas näyttää matalammalta kuin se on, ja kolikko näyttää olevan lähempänä pintaa.

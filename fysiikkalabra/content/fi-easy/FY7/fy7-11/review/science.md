@@ -1,15 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: ba18536e6231f7bf
+VERDICT: PASS
+CONTENT-HASH: 55477a465de9a3d6
 
 ## Blocking
-- lesson.md:73 — B: the added sentence "Aallonpituus kertoo valon värin." is true only for the vacuum wavelength. Two lines later (l. 75) the text says colour depends on frequency and stays the same although the wavelength changes in the material, so the lesson now contradicts itself. The Finnish source does not have this sentence. — Delete it, or write "Valon väri riippuu sen taajuudesta; tyhjiössä väriä vastaa tietty aallonpituus."
 
 ## Polish
-- lesson.md:73 — "punainen valo etenee nopeudella $198\,000\,\text{km/s}$ ja violetti … $196\,000$" drops the source's "noin" (the values are 198 111 and 196 053). Write "noin" back in.
-- lesson.md:310 (theta-graph aria-label) — "n = 1,332", while the text says $n = 1{,}3315$. This is carried over from the Finnish version.
+- lesson.md:310 (theta-graph aria-label) — "n = 1,332", while the text says $n = 1{,}3315$. Carried from the fi version; the peak is 42,3° either way.
 
 ## Checked
-- Every number in lesson.md (text and figure labels), inquiry.json, exit-ticket.json and the sim strings equals the Finnish source. The SVG geometry is identical. The inquiry structure (initial, locked, vary, measure keys, answers, mistakes, correct flags, reveal, min) is identical.
-- Recomputed in one script: the worked example 34.88° / 34.47°; koe-1 Δδ 0.53…4.45°; koe-2 minimum 38.43° near 49–50°; siirto 25.40 mm; tarkistus-2 1946 km/s; rainbow 42.30° / 40.63°, secondary 50.5° / 53.5°; exit ticket −8°.
-- The split sentences keep the physics: the electron-response mechanism, Newton's two-prism experiment, the antisolar point, the sun-height limit, the dark band, θ = 4β − 2α with its derivation, and the prism equations with their exit condition.
-- In inquiry.json every correct option is right, every distractor's feedback is correct, and the model answers say what the theory says.
+- Round-1 blocking fixed: "Aallonpituus kertoo valon värin." is removed. Line 75 ("Väri riippuu taajuudesta, joten väri pysyy samana…") is now the only statement about colour, and the lesson is consistent. No other sentence in lesson.md or inquiry.json ties colour to the in-material wavelength.
+- Round-1 polish fixed: "noin 198 000 / 196 000 km/s" (exact 198 111 / 196 053).
+- One script (scratchpad sci/recompute_r2.py): worked example 34,88° / 34,47°; virhe 39,2° vs 34,5°; koe-1 Δδ 0,53…4,45° (α1 = 50°); koe-2 minimum 38,43° near 49–50°.
+- Rainbow 42,30° / 40,63°, secondary 50,5° / 53,5°; siirto 25,40 mm; tarkistus-2 1946 km/s; exit ticket −8°.
+- Physics kept in simplified sentences: electron-response mechanism, Newton's two prisms, antisolar point and sun-height limit, θ = 4β − 2α with derivation, prism equations with their exit condition.
+- inquiry.json: one correct option per choice item, distractor feedback right, model answers agree with the theory.
+- check_layout.py fy7-11 --width 340: fi-easy OK, no formula overflow.
