@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: e70e30fd94bb0018
-Round: 3
+CONTENT-HASH: d6c4bf6ac501e57b
+Round: 4
 Mode: delta
 
 Round 2 (exercise bank): round-1 Blocking item and the fix diff (HEAD~2..HEAD~1) re-checked; new tasks re-read in full.
@@ -24,3 +24,6 @@ Round 2 (exercise bank): round-1 Blocking item and the fix diff (HEAD~2..HEAD~1)
 
 ## Checked in round 3
 - Delta (HEAD): split aligned rows in solutions.md re-derived against the previous rows. Each "... \\ &= result" is the old row cut at its last "="; all numbers, units, symbols and values identical (mechanical check: old and new rows equal once \\, & and = are removed), and the results still follow from the inputs. No physics or answer changed.
+
+## Checked in round 4
+- Delta (HEAD~3..HEAD, solutions.md display maths only): Sanity pass of the change: the last row was moved out of the aligned block into its own display formula, theta_forehead,corr = 37,6 - 0,6 = 37,0 degC; arithmetic correct and identical to the earlier text, and it matches the Vastaus paragraph below. The aligned block above still closes properly. Rest of the set not re-derived; previous PASS stands, no number or wording changed.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ca2d81baf5a67f35
-Round: 3
+CONTENT-HASH: 881c48cc15dadf41
+Round: 4
 Mode: delta
 
 Round 2. Delta review of the round-1 Polish fixes (HEAD~2..HEAD~1) on the 20-task set; focus on the 8 new tasks.
@@ -26,3 +26,6 @@ Round 2. Delta review of the round-1 Polish fixes (HEAD~2..HEAD~1) on the 20-tas
 
 ## Checked in round 3
 - Delta (HEAD): split aligned rows in solutions.md re-derived against the previous rows. Each "... \\ &= result" is the old row cut at its last "="; all numbers, units, symbols and values identical (mechanical check: old and new rows equal once \\, & and = are removed), and the results still follow from the inputs. No physics or answer changed.
+
+## Checked in round 4
+- Delta (HEAD~3..HEAD, solutions.md display maths only): Re-derived the split rows against the old ones: only line breaks and "\quad" indents were added, every number, unit and symbol is identical (W1 17,6 + W2 16,15 + W3 13,05 + W4 8,5 = 55,3 J still follows). The continuation "&\quad \cdot ..." is a valid break of a product, not a new operation. No physics or answer changed.

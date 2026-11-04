@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 55ab378ed21c9bb5
-Round: 2
+CONTENT-HASH: 8bce250bfd157ad0
+Round: 3
 Mode: delta
 
 ## Blocking
@@ -21,3 +21,6 @@ Mode: delta
 
 ## Checked in round 2
 - Delta (HEAD): split aligned rows in solutions.md re-derived against the previous rows. Each "... \\ &= result" is the old row cut at its last "="; all numbers, units, symbols and values identical (mechanical check: old and new rows equal once \\, & and = are removed), and the results still follow from the inputs. No physics or answer changed.
+
+## Checked in round 3
+- Delta (HEAD~3..HEAD, solutions.md display maths only): Re-derived the split rows against the old ones: only line breaks and "\quad" indents were added, every number, unit and symbol is identical (W1 17,6 + W2 16,15 + W3 13,05 + W4 8,5 = 55,3 J still follows). The continuation "&\quad \cdot ..." is a valid break of a product, not a new operation. No physics or answer changed.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4d8f1c677f9ebb2a
-Round: 2
+CONTENT-HASH: 951cc75ea0f5bc43
+Round: 3
 Mode: delta
 
 ## Blocking
@@ -24,3 +24,6 @@ Mode: delta
 
 ## Checked in round 2
 - Delta (HEAD): only the line breaks of aligned model-solution rows changed (long row split into "..." and "&= result"). The step order, reasoning, numbers and wording are unchanged; the shorter rows read more easily on a phone, the "&=" continuation sits under the first "=". No learning-related change.
+
+## Checked in round 3
+- Delta (HEAD~3..HEAD, solutions.md display maths only): Only layout changed: the corrected forehead temperature now sits in its own display formula after the aligned block; the earlier one-row split "\\ &=" is gone, so the line reads as one calculation. Step order, reasoning and numbers unchanged. No learning-related change.
