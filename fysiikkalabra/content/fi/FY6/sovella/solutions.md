@@ -90,7 +90,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Annettu:** a-kohdan suora, jolta luetaan pisteet $(0{,}10\,\text{A};\ 4{,}48\,\text{V})$ ja $(0{,}60\,\text{A};\ 3{,}88\,\text{V})$
 **Kysytty:** lähdejännite $E$ ja sisäinen resistanssi $R_\text{s}$
 **Periaate:** Mallin mukaan napajännite on $U = E - R_\text{s} I$. Suoran leikkauskohta pystyakselilla on virran arvolla nolla, jolloin pariston sisällä ei synny jännitehäviötä, joten leikkauskohta on $E$. Kulmakerroin kertoo, kuinka paljon napajännite laskee virran kasvaessa, joten se on $-R_\text{s}$.
-**Kuvaajan lukeminen:** Kulmakerroin luetaan kahdesta kaukana toisistaan olevasta suoran pisteestä, ei mittauspisteistä: $(0{,}10\,\text{A};\ 4{,}48\,\text{V})$ ja $(0{,}60\,\text{A};\ 3{,}88\,\text{V})$. Niiden välillä $\Delta I = 0{,}50\,\text{A}$ ja $\Delta U = -0{,}60\,\text{V}$ (kuvaajan kulmakertoimen kolmio). Suora leikkaa pystyakselin kohdassa $4{,}60\,\text{V}$.
+**Kuvaajan lukeminen:** Kulmakerroin luetaan piirretyn suoran kahdesta kaukana toisistaan olevasta pisteestä eikä vierekkäisistä mittauspisteistä: $(0{,}10\,\text{A};\ 4{,}48\,\text{V})$ ja $(0{,}60\,\text{A};\ 3{,}88\,\text{V})$. Niiden välillä $\Delta I = 0{,}50\,\text{A}$ ja $\Delta U = -0{,}60\,\text{V}$ (kuvaajan kulmakertoimen kolmio). Suora leikkaa pystyakselin kohdassa $4{,}60\,\text{V}$.
 **Kaava:** $R_\text{s} = -\dfrac{\Delta U}{\Delta I}$ ja $E = U + R_\text{s} I$ mistä tahansa suoran pisteestä.
 **Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina, ja $1\,\text{V/A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = -\dfrac{-0{,}60\,\text{V}}{0{,}50\,\text{A}} = 1{,}2\,\Omega$ ja $E = 4{,}48\,\text{V} + 1{,}2\,\Omega \cdot 0{,}10\,\text{A} = 4{,}48\,\text{V} + 0{,}12\,\text{V} = 4{,}60\,\text{V}$
@@ -110,17 +110,19 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 ### d)
 **Kysytty:** purkautumisen ja lämpenemisen vaikutus lähdejännitteen ja sisäisen resistanssin tulokseen, hajonnan aiheuttama epävarmuus $R_\text{s}$:ssä ja mittauksen parannus
 **Periaate:** Malli $U = E - R_\text{s} I$ olettaa, että $E$ ja $R_\text{s}$ pysyvät vakioina koko mittauksen ajan. Jos paristo purkautuu tai lämpenee, ne muuttuvat mittauksen aikana, ja kuvaajan suora kuvaa jonkinlaista keskiarvoa. Hajonta kertoo satunnaisista virheistä eli siitä, kuinka paljon sovitettu suora voisi kääntyä.
-**Mallivastaus:** *Systemaattinen virhe.* Virrat mitattiin kasvavassa järjestyksessä ja jokaista lukemaa varten piiri oli kytkettynä noin minuutin. Paristo purkautui koko ajan, joten myöhemmin mitatut jännitteet eli suurimpia virtoja vastaavat jännitteet ovat liian pieniä pelkän virran vaikutukseen verrattuna. Suora laskee siksi liian jyrkästi ja kulmakerroin $-R_\text{s}$ on liian suuri: $R_\text{s}$ tulee liian suureksi. Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin ensin tuoreella paristolla.
+**Mallivastaus:** *Systemaattinen virhe.* Virtaa kasvatettiin koko ajan samaan suuntaan, ja jokaista lukemaa varten piiri oli kytkettynä noin minuutin. Pariston purkautuminen laskee jännitettä ajan myötä, joten myöhemmin mitatut jännitteet eli suurimpia virtoja vastaavat jännitteet ovat liian pieniä. Koska aika ja virta kasvavat yhtä aikaa, ajan vaikutus sekoittuu kulmakertoimeen: suora laskee liian jyrkästi ja $R_\text{s}$ tulee liian suureksi. Lämpeneminen muuttaa myös $R_\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen vaikutuksen suunta on epävarma. Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin ensin tuoreella paristolla.
+
+*Ajautuman suuruus.* Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla, ja kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
 
 *Epävarmuus.* Pisteet poikkeavat sovitetusta suorasta enintään $0{,}02\,\text{V}$. Jos suoran toinen pää nousee ja toinen laskee tämän verran, kulmakerroin muuttuu $\dfrac{2 \cdot 0{,}02\,\text{V}}{0{,}50\,\text{A}} = 0{,}08\,\Omega$ eli $R_\text{s} = (1{,}20 \pm 0{,}08)\,\Omega$. Epävarmuus on pyöristetty yhteen merkitsevään numeroon.
 
 *Parannus.* Virrat mitataan satunnaisessa järjestyksessä tai sarja toistetaan käänteisessä järjestyksessä, ja piiri kytketään päälle vain lukeman ajaksi. Jos tulokset eroavat toisistaan, ero kertoo purkautumisen vaikutuksen suuruuden.
 
-*Johtopäätös.* Sisäinen resistanssi on noin $1{,}2\,\Omega$. Hajonta antaa vain $\pm 0{,}08\,\Omega$, mutta purkautumisen aiheuttama systemaattinen virhe on todennäköisesti sitä suurempi ja suuntautuu ylöspäin, joten arvo $1{,}2\,\Omega$ on pikemmin yläraja kuin tarkka arvo.
+*Johtopäätös.* Ajautuman vaikutus ($0{,}06\,\Omega$) on samaa suuruusluokkaa kuin hajonnan ($0{,}08\,\Omega$), joten $R_\text{s}$ on noin $1{,}1\ldots1{,}2\,\Omega$. Arvo $1{,}2\,\Omega$ on pikemmin yläraja, koska systemaattinen virhe kasvattaa sitä.
 
 ### Hyväksytään myös
 - a-kohdassa kuvaajan pystyakseli voi alkaa nollasta, kunhan pisteet ja $E$ erottuvat; silloin suora voidaan jatkaa myös vaaka-akselille, jossa $I_\text{k} = \dfrac{E}{R_\text{s}} \approx 3{,}8\,\text{A}$.
-- b-kohdassa kulmakertoimen lukema $-1{,}1\ldots-1{,}3\,\text{V/A}$ ja lähdejännite $4{,}5\ldots4{,}7\,\text{V}$ hyväksytään. Myös laskimen tai taulukkolaskennan sovitus hyväksytään.
+- b-kohdassa kulmakertoimen lukema $-1{,}1\ldots-1{,}3\,\text{V/A}$ (vastaus $R_\text{s}$ noin $1{,}1\ldots1{,}3\,\Omega$) ja lähdejännite $4{,}5\ldots4{,}7\,\text{V}$ hyväksytään. Myös laskimen tai taulukkolaskennan sovitus hyväksytään.
 - d-kohdassa epävarmuuden saa arvioida myös sovittamalla ääriviivat ja lukemalla niiden kulmakertoimet.
 
 ### Yleisiä virheitä
@@ -149,7 +151,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Kaava:** $U_\text{L} = E - R_\text{k} I$ ja $P_\text{A} = \dfrac{U_\text{L}^2}{R_\text{A}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $U_\text{L} = 12{,}0\,\text{V} - 0{,}80\,\Omega \cdot 2{,}5\,\text{A} = 12{,}0\,\text{V} - 2{,}0\,\text{V} = 10{,}0\,\text{V}$ ja $P_\text{A} = \dfrac{(10{,}0\,\text{V})^2}{6{,}0\,\Omega} = 16{,}7\,\text{W}$
-**Vastaus:** $P_\text{A} \approx 16{,}7\,\text{W}$, noin $70\,\%$ nimellisarvosta $24\,\text{W}$. Kolme merkitsevää numeroa vastaa lähtötietojen tarkkuutta.
+**Vastaus:** $P_\text{A} \approx 17\,\text{W}$, noin $70\,\%$ nimellisarvosta $24\,\text{W}$, kaksi merkitsevää numeroa kuten lähtötiedoissa ($0{,}80\,\Omega$, $24\,\text{W}$, $12\,\text{V}$).
 **Järkevyys:** Lamppu palaa himmeämmin kuin nimellisjännitteellä, koska sen jännite on vain $10{,}0\,\text{V}$. Tarkistus: lampun B teho on $\dfrac{(10{,}0\,\text{V})^2}{12\,\Omega} = 8{,}3\,\text{W}$ ja kaapeliin siirtyy lämpönä $0{,}80\,\Omega \cdot (2{,}5\,\text{A})^2 = 5{,}0\,\text{W}$. Summa $16{,}7\,\text{W} + 8{,}3\,\text{W} + 5{,}0\,\text{W} = 30\,\text{W}$ on yhtä suuri kuin akuston teho $12{,}0\,\text{V} \cdot 2{,}5\,\text{A} = 30\,\text{W}$.
 
 ### c)
@@ -158,8 +160,6 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Mallivastaus:** *Virta.* Kokonaisresistanssi on nyt $R = 0{,}80\,\Omega + 6{,}0\,\Omega = 6{,}8\,\Omega$ ja virta $I = \dfrac{12{,}0\,\text{V}}{6{,}8\,\Omega} \approx 1{,}8\,\text{A}$, aiemmin $2{,}5\,\text{A}$.
 
 *Kirkkaus.* Pienempi virta pienentää kaapelin jännitehäviötä: $0{,}80\,\Omega \cdot 1{,}76\,\text{A} \approx 1{,}4\,\text{V}$, aiemmin $2{,}0\,\text{V}$. Lampulle A jää siksi suurempi jännite $U_\text{A} \approx 10{,}6\,\text{V}$, ja sen teho on $\dfrac{(10{,}6\,\text{V})^2}{6{,}0\,\Omega} \approx 18{,}7\,\text{W}$, aiemmin $16{,}7\,\text{W}$. Lamppu A siis palaa kirkkaammin, vaikka sen omassa haarassa ei muuttunut mikään.
-
-*Kaapeli.* Kaapeliin siirtyvä lämpöteho on $0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \approx 2{,}5\,\text{W}$, aiemmin $5{,}0\,\text{W}$, eli kaapeli lämpenee vähemmän.
 
 *Johtopäätös.* Rinnankytketyt lamput ovat toisistaan riippumattomia vain, jos jännite niiden yli pysyy vakiona. Kaapelin resistanssi tekee lampuista hieman riippuvaisia toisistaan: jos kaapelin resistanssi olisi nolla, lampun A kirkkaus ei muuttuisi lainkaan.
 
@@ -170,8 +170,8 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Kaava:** $R_\text{C} = \dfrac{U_\text{n}^2}{P_\text{C}}$, $\dfrac{1}{R_\text{r}} = \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}} + \dfrac{1}{R_\text{C}}$ ja $I = \dfrac{E}{R_\text{k} + R_\text{r}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $R_\text{C} = \dfrac{(12\,\text{V})^2}{36\,\text{W}} = 4{,}0\,\Omega$ ja $\dfrac{1}{R_\text{r}} = \dfrac{1}{6{,}0\,\Omega} + \dfrac{1}{12\,\Omega} + \dfrac{1}{4{,}0\,\Omega} = \dfrac{2 + 1 + 3}{12\,\Omega} = \dfrac{1}{2{,}0\,\Omega}$, joten $R_\text{r} = 2{,}0\,\Omega$. Virta on $I = \dfrac{12{,}0\,\text{V}}{0{,}80\,\Omega + 2{,}0\,\Omega} = \dfrac{12{,}0\,\text{V}}{2{,}8\,\Omega} = 4{,}3\,\text{A}$.
-**Vastaus:** $I \approx 4{,}3\,\text{A}$. Virta ylittää sekä sulakkeen nimellisvirran $3{,}15\,\text{A}$ että kaapelin sallitun virran $4{,}0\,\text{A}$, joten sulake palaa ylivirran jatkuessa ja katkaisee piirin. Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvirta on kaapelin sallittua virtaa pienempi, jotta kaapeli ei lämpene vaarallisesti ennen kuin piiri katkeaa.
-**Järkevyys:** Kolmas lamppu pienentää rinnankytkennän resistanssin $4{,}0\,\Omega$:sta $2{,}0\,\Omega$:iin, joten virran täytyy kasvaa $2{,}5\,\text{A}$:sta. Jos sulaketta ei olisi, kaapeliin siirtyisi lämpönä $0{,}80\,\Omega \cdot (4{,}3\,\text{A})^2 \approx 15\,\text{W}$, melkein kolminkertainen teho aiempaan $5{,}0\,\text{W}$:iin verrattuna. Oletuksena on, että lamppujen resistanssit ovat vakioita: tässä ne on laskettu nimellisarvoista käyttölämpötilassa, mutta todellisuudessa hehkulangan resistanssi riippuu lämpötilasta, joten tulos on arvio.
+**Vastaus:** $I \approx 4{,}3\,\text{A}$. Virta ylittää sekä sulakkeen nimellisvirran $3{,}15\,\text{A}$ että kaapelin sallitun virran $4{,}0\,\text{A}$, joten sulake todennäköisesti palaa ylivirran jatkuessa ja katkaisee piirin (todellinen toiminta-aika riippuu sulakkeen tyypistä, joten tämä on yksinkertaistus). Lamppujen jännite on $R_\text{r} I = 2{,}0\,\Omega \cdot 4{,}3\,\text{A} \approx 8{,}6\,\text{V}$, joten ne palavat himmeämmin kuin aiemmin. Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvirta on kaapelin sallittua virtaa pienempi, jotta kaapeli ei lämpene vaarallisesti ennen kuin piiri katkeaa.
+**Järkevyys:** Kolmas lamppu pienentää rinnankytkennän resistanssin $4{,}0\,\Omega$:sta $2{,}0\,\Omega$:iin, joten virran täytyy kasvaa $2{,}5\,\text{A}$:sta. Jos sulaketta ei olisi, kaapeliin siirtyisi lämpönä $0{,}80\,\Omega \cdot (4{,}3\,\text{A})^2 \approx 15\,\text{W}$, melkein kolminkertainen teho aiempaan $5{,}0\,\text{W}$:iin verrattuna. Lamppujen resistanssit on laskettu nimellisarvoista, joten tulos on arvio.
 
 ### Hyväksytään myös
 - a-kohdan voi laskea lampun nimellisvirroista $I = \dfrac{P}{U}$ ja resistansseista $R = \dfrac{U}{I}$, kunhan tulokset ovat samat: $2{,}0\,\text{A}$ ja $1{,}0\,\text{A}$, $6{,}0\,\Omega$ ja $12\,\Omega$.
@@ -216,7 +216,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 
 *Energian kohtalo.* Loput $3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} = 3{,}1 \cdot 10^{-8}\,\text{J}$ siirtyy ilmaan. Ilman sisäenergia kasvaa, ja energia siirtyy edelleen lämpönä ympäristöön. Energia ei siis häviä.
 
-*Oletus.* B-kohdan oletus oli, ettei ilmanvastusta ole. Se tekee nopeudesta liian suuren, mutta sähkökentän tekemä työ $qU$ on silti oikein, koska se riippuu vain varauksesta ja potentiaalierosta eikä ilmanvastuksesta.
+*Johtopäätös.* B-kohdan oletus (ei ilmanvastusta) tekee nopeudesta liian suuren, joten tulos on suurin mahdollinen nopeus. Energia ei häviä, vaan se siirtyy ilmaan.
 
 ### d)
 **Annettu:** $q_1 = q_2 = 6{,}0 \cdot 10^{-13}\,\text{C}$, $r = 1{,}0\,\text{mm}$ ja $k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2}$
@@ -248,7 +248,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Kaava:** $E = \dfrac{1}{2} C U^2$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
 **Sijoitus:** $E = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (300\,\text{V})^2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 90\,000\,\text{V}^2 = 14{,}85\,\text{J}$
-**Vastaus:** $E \approx 14{,}9\,\text{J}$, kolme merkitsevää numeroa kuten kapasitanssissa ja jännitteessä.
+**Vastaus:** $E \approx 15\,\text{J}$ ($14{,}85\,\text{J}$), kaksi merkitsevää numeroa, koska jännitteen $300\,\text{V}$ ja kapasitanssin $330\,\mu\text{F}$ tarkkuus on enintään kaksi tai kolme numeroa.
 **Järkevyys:** Energia on joulen luokkaa, kuten pienen salamalaitteen kondensaattorissa. Jos tämä energia siirtyisi nostamaan kilon painoista kappaletta, se nousisi noin $1{,}5\,\text{m}$.
 
 ### b)
@@ -258,7 +258,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Kaava:** $\Delta E = \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
 **Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $E_2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 = 7{,}99\,\text{J}$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
-**Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}9\,\text{J}$, noin $46\,\%$ varastoidusta energiasta, kaksi merkitsevää numeroa jännitteen $220\,\text{V}$ tarkkuuden mukaan.
+**Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}9\,\text{J}$, noin $46\,\%$ varastoidusta energiasta, kaksi merkitsevää numeroa kuten a-kohdassa.
 **Järkevyys:** Jännite pieneni vain $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, mutta energiaa siirtyi $46\,\%$, koska energia on verrannollinen jännitteen neliöön: $1 - \left(\dfrac{220}{300}\right)^2 = 0{,}46$. Siirtynyt energia on pienempi kuin alkuenergia, kuten pitääkin.
 
 ### c)
@@ -278,7 +278,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 
 *Virta.* Jos kehon resistanssi on $1{,}0\,\text{k}\Omega$, virta olisi aluksi $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1{,}0 \cdot 10^{3}\,\Omega} = 0{,}30\,\text{A}$. Se on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia. Virta pienenee kondensaattorin purkautuessa, mutta alun virta riittää vaaralliseen sähköiskuun.
 
-*Turvallinen purku.* Kondensaattorin napojen väliin kytketään eristetyillä työkaluilla sopiva vastus, esimerkiksi $10\,\text{k}\Omega$. Alkuvirta on silloin $\dfrac{300\,\text{V}}{10\,\text{k}\Omega} = 30\,\text{mA}$, ja kondensaattorin energia siirtyy vastuksen sisäenergiaksi ja siitä lämpönä ympäristöön. Napoja ei oikosulkuteta ruuvimeisselillä, koska silloin virta on hyvin suuri ja syntyy kipinä. Lopuksi jännite varmistetaan mittarilla.
+*Turvallinen purku* (vain ymmärtämiseksi: älä yritä purkaa kondensaattoria itse). Kondensaattorin napojen väliin kytketään eristetyillä työkaluilla sopiva vastus, esimerkiksi $10\,\text{k}\Omega$. Alkuvirta on silloin $\dfrac{300\,\text{V}}{10\,\text{k}\Omega} = 30\,\text{mA}$, ja kondensaattorin energia siirtyy vastuksen sisäenergiaksi ja siitä lämpönä ympäristöön. Vastuksen teho on aluksi $\dfrac{(300\,\text{V})^2}{10\,\text{k}\Omega} = 9\,\text{W}$, joten vastuksen tehonkeston on oltava sen mukainen. Napoja ei oikosulkuteta ruuvimeisselillä, koska silloin virta on hyvin suuri ja syntyy kipinä. Lopuksi jännite varmistetaan mittarilla.
 
 *Johtopäätös.* Laitetta ei saa avata heti. Vaara johtuu kondensaattorin varastoimasta energiasta ja jännitteestä eikä pariston koosta. Kehon resistanssi vaihtelee esimerkiksi ihon kosteuden mukaan, joten laskettu virta on suuruusluokka-arvio.
 

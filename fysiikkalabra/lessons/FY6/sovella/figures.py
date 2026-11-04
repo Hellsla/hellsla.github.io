@@ -145,20 +145,20 @@ def circuit2():
 def field3():
     f = new("fy6-s3-field", 350, "Kaaviokuva, ei mittakaavassa: ruiskumaalauksen sähkökenttä. Ylhäällä on vaakasuora suutinlevy, jonka "
             "potentiaali on +60 kV, ja alhaalla maadoitettu työkappale. Levyjen etäisyys on d. Levyjen välissä homogeenisen "
-            "sähkökentän kenttäviivat ovat vihreitä suoria viivoja ylhäältä alas, ja kenttä on merkitty E-vektorilla. Kenttään "
-            "on piirretty positiivisesti varautunut maalipisara varauksella q.")
-    xl, xr, yt, yb = 110, 470, 70, 290
+            "sähkökentän kenttäviivat ovat vihreitä suoria viivoja ylhäältä alas, ja kenttä on merkitty E-vektorilla. Suutinlevyn "
+            "vieressä on positiivisesti varautunut maalipisara varauksella q, joka lähtee levyltä.")
+    xl, xr, yt, yb = 150, 500, 70, 290
     f.rect(xl, yt - 12, xr - xl, 12, "#adb5bd", INK, 2.5); f.rect(xl, yb, xr - xl, 12, "#adb5bd", INK, 2.5)
-    for x in (150, 230, 310, 390, 440):
+    for x in (200, 280, 360, 440):
         f.arrow(x, yt + 4, x, yb - 4, FIELD, 2.5, 13)
-    f.tex(xl - 14, yt - 6, r"+60\,\text{kV}", "end", w=100); f.tex(xl - 14, yb + 6, r"0\,\text{V}", "end", w=70)
+    f.tex(xl - 22, yt - 6, r"+60\,\text{kV}", "end", w=100); f.tex(xl - 22, yb + 6, r"0\,\text{V}", "end", w=70)
     f.tex(xl + 4, yt - 40, r"\text{suutinlevy}", "start", MUTED, w=120); f.tex(xl + 4, yb + 40, r"\text{työkappale}", "start", MUTED, w=130)
     f.tex(xr - 4, 180, r"\overline{E}", "end", FIELD, w=40)
-    f.arrow(60, yt + 6, 60, yb - 6, MUTED, 2, 11); f.arrow(60, yb - 6, 60, yt + 6, MUTED, 2, 11)
-    f.tex(46, 180, "d", "end", MUTED, w=24)
-    f.circle(270, 130, 16, HOT_LIGHT, INK, 2.5)
-    f.tex(270, 130, "+", "middle", w=24)
-    f.tex(296, 130, "q", "start", w=24)
+    f.arrow(40, 180, 40, yt + 6, MUTED, 2, 11); f.arrow(40, 180, 40, yb - 6, MUTED, 2, 11)
+    f.tex(54, 180, "d", "start", MUTED, w=24)
+    f.circle(280, yt + 22, 16, HOT_LIGHT, INK, 2.5)
+    f.tex(280, yt + 22, "+", "middle", w=24)
+    f.tex(306, yt + 22, "q", "start", w=24)
     return f.svg()
 
 

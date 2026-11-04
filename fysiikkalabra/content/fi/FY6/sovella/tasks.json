@@ -6,7 +6,7 @@
       "title": "Taskulampun paristo",
       "source": "example",
       "source_note": "Mittaustulokset on laadittu tehtävää varten, mutta ne ovat samaa suuruusluokkaa kuin uuden litteän taskulamppupariston mittauksessa.",
-      "text": "Oppilas tutkii uutta litteää taskulamppuparistoa, jonka kyljessä lukee $4{,}5\\,\\text{V}$. Hän kytkee paristoon säädettävän vastuksen ja ampeerimittarin sekä jännitemittarin suoraan pariston napoihin (kuva). Hän säätää vastuksesta virran ja lukee sitä vastaavan napajännitteen $U$. Mittarit näyttävät virran $0{,}01\\,\\text{A}$:n ja jännitteen $0{,}01\\,\\text{V}$:n tarkkuudella. Oppilas mittasi virran kasvavassa järjestyksessä, ja piiri oli kytkettynä kunkin lukeman ajan noin minuutin. Paristo lämpeni mittausten aikana hieman, ja jännite näytti laskevan hitaasti myös silloin, kun virtaa ei muutettu.\n\nMittaustulokset (virta $I$, napajännite $U$):\n\n- $I = 0{,}10\\,\\text{A}$, $U = 4{,}48\\,\\text{V}$\n- $I = 0{,}20\\,\\text{A}$, $U = 4{,}37\\,\\text{V}$\n- $I = 0{,}30\\,\\text{A}$, $U = 4{,}22\\,\\text{V}$\n- $I = 0{,}40\\,\\text{A}$, $U = 4{,}13\\,\\text{V}$\n- $I = 0{,}50\\,\\text{A}$, $U = 3{,}99\\,\\text{V}$\n- $I = 0{,}60\\,\\text{A}$, $U = 3{,}89\\,\\text{V}$",
+      "text": "Oppilas tutkii uutta litteää taskulamppuparistoa, jonka kyljessä lukee $4{,}5\\,\\text{V}$. Hän kytkee paristoon säädettävän vastuksen ja ampeerimittarin sekä jännitemittarin suoraan pariston napoihin (kuva). Hän säätää vastuksesta virran ja lukee sitä vastaavan napajännitteen $U$. Mittarit näyttävät virran $0{,}01\\,\\text{A}$:n ja jännitteen $0{,}01\\,\\text{V}$:n tarkkuudella. Oppilas mittasi virran kasvavassa järjestyksessä, ja piiri oli kytkettynä kunkin lukeman ajan noin minuutin. Paristo lämpeni mittausten aikana hieman, ja jännite näytti laskevan hitaasti myös silloin, kun virtaa ei muutettu. Sarjan jälkeen oppilas mittasi jännitteen vielä kerran virralla $0{,}10\\,\\text{A}$: lukema oli $4{,}45\\,\\text{V}$ eli $0{,}03\\,\\text{V}$ pienempi kuin sarjan alussa.\n\nMittaustulokset (virta $I$, napajännite $U$):\n\n- $I = 0{,}10\\,\\text{A}$, $U = 4{,}48\\,\\text{V}$\n- $I = 0{,}20\\,\\text{A}$, $U = 4{,}37\\,\\text{V}$\n- $I = 0{,}30\\,\\text{A}$, $U = 4{,}22\\,\\text{V}$\n- $I = 0{,}40\\,\\text{A}$, $U = 4{,}13\\,\\text{V}$\n- $I = 0{,}50\\,\\text{A}$, $U = 3{,}99\\,\\text{V}$\n- $I = 0{,}60\\,\\text{A}$, $U = 3{,}89\\,\\text{V}$",
       "figure": "fy6-sovella/fy6-s1-circuit",
       "parts": [
         {
@@ -52,14 +52,14 @@
               "name": "Rs",
               "value": 1.2,
               "unit": "Ω",
-              "tolerance": 0.08
+              "tolerance": 0.09
             }
           ],
           "criteria": [
             {
               "key": "graph_read",
               "points": 1,
-              "detail": "Kulmakerroin $\\dfrac{\\Delta U}{\\Delta I} \\approx -1{,}2\\,\\text{V/A}$ on luettu suoran pisteistä $(0{,}10\\,\\text{A};\\ 4{,}48\\,\\text{V})$ ja $(0{,}60\\,\\text{A};\\ 3{,}88\\,\\text{V})$."
+              "detail": "Kulmakerroin $\\dfrac{\\Delta U}{\\Delta I} \\approx -1{,}2\\,\\text{V/A}$ on luettu piirretyn suoran kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(0{,}10\\,\\text{A};\\ 4{,}48\\,\\text{V})$ ja $(0{,}60\\,\\text{A};\\ 3{,}88\\,\\text{V})$, ei vierekkäisistä mittauspisteistä."
             },
             {
               "key": "equation",
@@ -119,12 +119,12 @@
           "id": "d",
           "kind": "word",
           "points": 4,
-          "text": "Arvioi, miten paristo lämpenemisineen ja jännitteen hitaine laskuineen vaikuttaa b-kohdan tulokseen. Arvioi myös, kuinka paljon pisteiden hajonta jättää $R_\\text{s}$:n arvoon epävarmuutta (pisteet poikkeavat sovitetusta suorasta enintään $0{,}02\\,\\text{V}$), ja ehdota mittaukseen parannus.",
+          "text": "Arvioi, miten pariston purkautuminen ja lämpeneminen vaikuttavat b-kohdan tulokseen. Arvioi myös, kuinka paljon pisteiden hajonta jättää $R_\\text{s}$:n arvoon epävarmuutta (pisteet poikkeavat sovitetusta suorasta enintään $0{,}02\\,\\text{V}$), ja ehdota mittaukseen parannus.",
           "criteria": [
             {
               "key": "error_sources",
               "points": 1,
-              "detail": "Paristo purkautuu ja lämpenee mittauksen aikana, joten myöhemmin mitatut jännitteet (suuremmat virrat) ovat liian pieniä: suora on liian jyrkkä ja $R_\\text{s}$ tulee liian suureksi (systemaattinen virhe). $E$ muuttuu vähän, koska pienimmällä virralla mitattiin ensin tuoreella paristolla."
+              "detail": "Pariston purkautuminen laskee jännitettä sarjan aikana, joten myöhemmin mitatut jännitteet (suuremmat virrat) ovat liian pieniä: suora on liian jyrkkä ja $R_\\text{s}$ tulee liian suureksi (systemaattinen virhe). Koska virtaa kasvatettiin vain yhteen suuntaan, ajan vaikutus sekoittuu kulmakertoimeen. Lämpeneminen muuttaa myös $R_\\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen suunta on epävarma."
             },
             {
               "key": "uncertainty",
@@ -139,7 +139,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Päättelee, että $R_\\text{s}$ on noin $1{,}2\\,\\Omega$, mutta systemaattinen virhe on todennäköisesti hajontaa suurempi, joten tulos on pikemmin yläraja."
+              "detail": "Arvioi ajautuman vaikutuksen: jännite laski sarjan aikana noin $0{,}03\\,\\text{V}$, joten kulmakerroin on enintään noin $\\dfrac{0{,}03\\,\\text{V}}{0{,}50\\,\\text{A}} = 0{,}06\\,\\Omega$ liian suuri. Se on samaa suuruusluokkaa kuin hajonnan $0{,}08\\,\\Omega$, joten $R_\\text{s}$ on noin $1{,}1\\ldots1{,}2\\,\\Omega$ ja arvo $1{,}2\\,\\Omega$ on pikemmin yläraja."
             }
           ]
         }
@@ -233,12 +233,12 @@
               "points": 1
             },
             {
-              "text": "Perustelee, että pienempi virta pienentää jännitehäviötä kaapelissa ($R_\\text{k} I$ pienenee), jolloin lampulle A jää suurempi jännite ja se palaa kirkkaammin, vaikka sen oma haara ei muuttunut; kaapelin lämpöteho $R_\\text{k} I^2$ pienenee.",
+              "text": "Perustelee, että pienempi virta pienentää jännitehäviötä kaapelissa ($R_\\text{k} I$ pienenee), jolloin lampulle A jää suurempi jännite ja se palaa kirkkaammin, vaikka sen oma haara ei muuttunut.",
               "tag": "concept",
               "points": 1
             },
             {
-              "text": "Laskee lampun A tehon: $U_\\text{A} \\approx 10{,}6\\,\\text{V}$ ja $P_\\text{A} \\approx 18{,}7\\,\\text{W}$, aiemmin $16{,}7\\,\\text{W}$; kaapelin teho $2{,}5\\,\\text{W}$, aiemmin $5{,}0\\,\\text{W}$.",
+              "text": "Laskee lampun A tehon: $U_\\text{A} \\approx 10{,}6\\,\\text{V}$ ja $P_\\text{A} \\approx 18{,}7\\,\\text{W}$, aiemmin $16{,}7\\,\\text{W}$.",
               "tag": "math",
               "points": 1
             },
@@ -253,7 +253,7 @@
           "id": "d",
           "kind": "calc",
           "points": 4,
-          "text": "Omistaja lisää piiriin rinnan kolmannen lampun C, joka on merkitty $12\\,\\text{V},\\ 36\\,\\text{W}$. Kuinka suuri virta akustosta tulee nyt kulkemaan? Mitä sulakkeelle tapahtuu, ja miksi sulakkeen nimellisvirta on valittu kaapelin mukaan?",
+          "text": "Omistaja lisää piiriin rinnan kolmannen lampun C, joka on merkitty $12\\,\\text{V},\\ 36\\,\\text{W}$. Kuinka suuri virta akustosta tulee nyt kulkemaan? Mitä sulakkeelle tapahtuu, ja miksi sulakkeen nimellisvirta on valittu kaapelin mukaan? Laske myös lamppujen jännite.",
           "answer": {
             "value": 4.3,
             "unit": "A",
@@ -273,12 +273,12 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Virta $4{,}3\\,\\text{A}$ ylittää sulakkeen $3{,}15\\,\\text{A}$ ja kaapelin sallitun $4{,}0\\,\\text{A}$, joten sulake palaa ylivirran jatkuessa ja katkaisee piirin ennen kaapelin vaarallista lämpenemistä. Sulake mitoitetaan suojaamaan heikointa osaa eli kaapelia, joten sen nimellisvirta on kaapelin sallittua virtaa pienempi."
+              "detail": "Virta $4{,}3\\,\\text{A}$ ylittää sulakkeen $3{,}15\\,\\text{A}$ ja kaapelin sallitun $4{,}0\\,\\text{A}$, joten sulake todennäköisesti palaa ylivirran jatkuessa ja katkaisee piirin; sulakkeen toiminta-aika on yksinkertaistettu, sillä pieni ylivirta voi kestää hetken. Sulake mitoitetaan suojaamaan heikointa osaa eli kaapelia, joten sen nimellisvirta on kaapelin sallittua virtaa pienempi."
             },
             {
-              "key": "assumptions",
+              "key": "calculation",
               "points": 1,
-              "detail": "Nimeää oletuksen, että lamppujen resistanssit ovat vakioita (nimellisarvoista laskettuja käyttölämpötilassa); todellisuudessa hehkulangan resistanssi riippuu lämpötilasta, joten tulos on arvio."
+              "detail": "Lamppujen jännite on $R_\\text{r} I = 2{,}0\\,\\Omega \\cdot 4{,}3\\,\\text{A} \\approx 8{,}6\\,\\text{V}$, joten lamput palavat himmeämmin kuin $10{,}0\\,\\text{V}$:n jännitteellä."
             }
           ]
         }
@@ -371,7 +371,7 @@
           "text": "Mittauksessa pisaroiden osumanopeudeksi saadaan noin $5{,}0\\,\\text{m/s}$. Selitä, miksi se on paljon pienempi kuin b-kohdan tulos, ja päättele, minne sähkökentän tekemä työ jää.",
           "criteria": [
             {
-              "text": "Tunnistaa, että b-kohdan malli jätti ilmanvastuksen pois: ilma vastustaa pisaran liikettä vastakkaiseen suuntaan, ja pisara etenee nopeudella, jolla ilmanvastus on likimain yhtä suuri kuin sähkövoima, joten b-kohdan tulos on suurin mahdollinen nopeus (yläraja).",
+              "text": "Tunnistaa, että b-kohdan malli jätti ilmanvastuksen pois: ilma vastustaa pisaran liikettä, ja nopeuden kasvaessa ilmanvastus kasvaa, kunnes se on likimain yhtä suuri kuin sähkövoima.",
               "tag": "concept",
               "points": 1
             },
@@ -386,9 +386,9 @@
               "points": 1
             },
             {
-              "key": "assumptions",
+              "key": "conclusion",
               "points": 1,
-              "detail": "Nimeää oletuksen (ei ilmanvastusta), toteaa sen vaikutuksen tulokseen (nopeus liian suuri) ja perustelee, miksi malli silti sopi kentän voiman ja työn laskemiseen."
+              "detail": "Päättelee, että b-kohdan tulos on ilmanvastuksen puuttuessa suurin mahdollinen nopeus (yläraja) ja että energia ei häviä vaan siirtyy ilmaan."
             }
           ]
         },
@@ -438,7 +438,7 @@
       "title": "Kameran salama",
       "source": "example",
       "source_note": "Kondensaattorin arvot ovat samaa suuruusluokkaa kuin kameran salamalaitteessa, mutta ne on valittu tehtävää varten.",
-      "text": "Kameran salamalaitteessa pienestä paristosta ladataan kondensaattori jännitteeseen $300\\,\\text{V}$. Kondensaattorin kapasitanssi on $330\\,\\mu\\text{F}$. Kun salama välähtää, kondensaattori purkautuu salamaputken kautta noin $1{,}0\\,\\text{ms}$:ssa, ja sen jännite laskee arvoon $220\\,\\text{V}$. Salamaan siirtynyt energia lähtee laitteesta valona ja lämpönä.",
+      "text": "Kameran salamalaitteessa pieni paristo lataa kondensaattorin jännitettä nostavan piirin avulla jännitteeseen $300\\,\\text{V}$. Kondensaattorin kapasitanssi on $330\\,\\mu\\text{F}$. Kun salama välähtää, kondensaattori purkautuu salamaputken kautta noin $1{,}0\\,\\text{ms}$:ssa, ja sen jännite laskee arvoon $220\\,\\text{V}$. Salamaan siirtynyt energia lähtee laitteesta valona ja lämpönä.",
       "parts": [
         {
           "id": "a",
@@ -464,7 +464,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$E \\approx 14{,}9\\,\\text{J}$"
+              "detail": "$E \\approx 15\\,\\text{J}$"
             }
           ]
         },
@@ -546,7 +546,7 @@
               "points": 1
             },
             {
-              "text": "Kuvaa turvallisen purkamisen: napojen väliin kytketään eristetyillä työkaluilla sopiva vastus, esimerkiksi $10\\,\\text{k}\\Omega$, jolloin energia siirtyy vastuksen sisäenergiaksi ja edelleen lämpönä ympäristöön; alkuvirta on $\\dfrac{300\\,\\text{V}}{10\\,\\text{k}\\Omega} = 30\\,\\text{mA}$. Napoja ei oikosulkuteta, ja jännite varmistetaan mittarilla.",
+              "text": "Kuvaa turvallisen purkamisen: napojen väliin kytketään eristetyillä työkaluilla sopiva vastus, esimerkiksi $10\\,\\text{k}\\Omega$, jolloin energia siirtyy vastuksen sisäenergiaksi ja edelleen lämpönä ympäristöön; alkuvirta on $\\dfrac{300\\,\\text{V}}{10\\,\\text{k}\\Omega} = 30\\,\\text{mA}$. Napoja ei oikosulkuteta, ja jännite varmistetaan mittarilla. Vastuksen on kestettävä alussa noin $\\dfrac{(300\\,\\text{V})^2}{10\\,\\text{k}\\Omega} = 9\\,\\text{W}$, joten sen tehonkesto on valittava sen mukaan. Kuvaus on tarkoitettu ymmärtämiseen: älä yritä purkaa itse.",
               "tag": "concept",
               "points": 1
             },
