@@ -227,3 +227,122 @@ komponentit G
 **Sijoitus:** $\mu = \tan 30^\circ - \dfrac{2{,}0\,\text{m/s}^2}{9{,}81\,\text{m/s}^2\cdot\cos 30^\circ} = 0{,}577 - 0{,}235 = 0{,}342$, ja $a_\text{Kuu} = 1{,}62\,\text{m/s}^2\cdot(\sin 30^\circ - 0{,}342\cdot\cos 30^\circ) = 0{,}330\,\text{m/s}^2$. Suoraan suhteesta: $2{,}0\,\text{m/s}^2\cdot\dfrac{1{,}62}{9{,}81} = 0{,}330\,\text{m/s}^2$
 **Vastaus:** $0{,}33\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten Maan kiihtyvyydessä $2{,}0\,\text{m/s}^2$.
 **Järkevyys:** Sekä paino että kitka ovat Kuussa noin kuudesosan Maan arvosta, joten myös kiihtyvyys on noin kuudesosa. Laatikko liukuu Kuussakin, koska ehto $\tan\alpha > \mu$ ei riipu putoamiskiihtyvyydestä.
+
+## fy4-6-L1-06
+**Kysytty:** lattian laatikkoon kohdistaman kitkavoiman suuruus, kun laatikko pysyy paikallaan
+**Periaate:** Laatikko on levossa, joten Newtonin toisen lain mukaan vaakasuuntaisten voimien summa on nolla. Lepokitka mukautuu tilanteeseen: se on yhtä suuri kuin työntö ja vastakkaissuuntainen, kunhan työntö ei ylitä lepokitkan enimmäisarvoa.
+**Mallivastaus:** Kitkavoiman suuruus on $20\,\text{N}$, koska laatikko on levossa ja kitka kumoaa työnnön. Enimmäisarvo $60\,\text{N}$ on vain yläraja, ja työntö $20\,\text{N}$ jää sen alle. Väite, jonka mukaan kitka olisi aina enimmäisarvon suuruinen, on väärä, koska lepokitka on vain niin suuri kuin tilanne vaatii. Väite, jonka mukaan kitkaa ei olisi lainkaan, on väärä, koska juuri kitka estää laatikkoa liikkumasta. Väite, jonka mukaan kitka olisi enimmäisarvon ja työnnön erotus, on väärä, koska levossa kitka ja työntö ovat yhtä suuret.
+
+## fy4-6-L1-07
+**Annettu:** $m = 50\,\text{kg}$, $\mu_0 = 0{,}45$, laatikko on levossa vaakasuoralla lattialla; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** pienin vaakasuora voima $F$ yksikössä $\text{N}$, jolla laatikko lähtee liikkeelle
+**Periaate:** Laatikko lähtee liikkeelle, kun työntö ylittää lepokitkan enimmäisarvon $\mu_0 N$. Rajatapauksessa työntö on yhtä suuri kuin tämä enimmäisarvo. Pystysuunnassa laatikko ei kiihdy, joten $N = mg$.
+**Voimakuvio:** Laatikko suorakulmiona, $x$ työnnön suuntaan ja $y$ ylös. Työntövoima $\overline{F}$ eteenpäin, lepokitka $\overline{F}_\mu$ taaksepäin ja rajatapauksessa yhtä pitkä, paino $\overline{G}$ alas ja tukivoima $\overline{N}$ ylös yhtä pitkänä.
+```voimakuvio
+pinta 0
+G 490,5
+N 490,5
+F 220,7 oikea työntö
+F_mu 220,7 vasen
+a 0
+akselit 0
+```
+**Kaava:** $y$: $N - mg = 0$ ja $x$: $F - \mu_0 N = 0$, joten $F = \mu_0 mg$
+**Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
+**Sijoitus:** $F = 0{,}45\cdot 50\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 220{,}7\,\text{N}$
+**Vastaus:** $2{,}2\cdot 10^2\,\text{N}$ eli noin $220\,\text{N}$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}45$ ja massassa $50\,\text{kg}$. Tätä pienemmällä voimalla laatikko pysyy paikallaan.
+**Järkevyys:** Laatikon paino on $490\,\text{N}$, ja tarvittava voima on $0{,}45$-kertainen siihen nähden, kuten kitkakerroin edellyttää. Kun laatikko on lähtenyt liikkeelle, liikekitka on yleensä pienempi kuin $\mu_0 N$, joten liikkeessä pitämiseen riittää pienempi voima.
+
+## fy4-6-L1-08
+**Kysytty:** tukivoiman suuruuden $N$ suhde painon suuruuteen $G$ kaltevalla tasolla levossa olevalle kappaleelle
+**Periaate:** Valitaan $y$-akseli kohtisuoraan pintaa vastaan. Siinä suunnassa kappale ei kiihdy, joten voimien summa on nolla. Pintaa vastaan kohtisuorassa vaikuttavat vain tukivoima ja painon komponentti $G_y = mg\cos\alpha$, ja kitka on pinnan suuntainen. Paino osoittaa suoraan alas, ja se jaetaan komponentteihin rinteen suuntaan ja sitä vastaan kohtisuoraan.
+**Mallivastaus:** Tukivoima on painoa pienempi: $N = mg\cos\alpha < G$. Tukivoima kumoaa vain painon pintaa vastaan kohtisuoran komponentin, ja rinteen suuntaisen komponentin kumoaa kitka. Kulmalla $30^\circ$ saadaan $N = G\cos 30^\circ \approx 0{,}87\,G$. Väite, jonka mukaan tukivoima ja paino ovat aina vastakkaiset ja yhtä suuret, pätee vain vaakasuoralla pinnalla. Väite $N > G$ on väärä, koska kitka ei paina kappaletta pintaa vasten. Väite $N = 0$ on väärä, koska painon komponentti $G_y$ painaa kappaletta pintaa vasten.
+
+## fy4-6-L2-05
+**Annettu:** esimerkkiaineiston viisi mittausta $(m, F)$: $(0{,}20\,\text{kg};\,0{,}85\,\text{N})$, $(0{,}40\,\text{kg};\,1{,}62\,\text{N})$, $(0{,}60\,\text{kg};\,2{,}50\,\text{N})$, $(0{,}80\,\text{kg};\,3{,}31\,\text{N})$ ja $(1{,}00\,\text{kg};\,4{,}02\,\text{N})$; palikkaa vedetään vaakasuoraan tasaisella nopeudella; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** liikekitkakerroin $\mu$ (ei yksikköä)
+**Periaate:** Tasaisella nopeudella voimien summa on nolla, joten veto on yhtä suuri kuin liikekitka, $F = F_\mu$. Vaakasuoralla pöydällä tukivoima on yhtä suuri kuin paino, $N = mg$. Koska $F_\mu = \mu N$, $(N, F_\mu)$-kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on $\mu$.
+**Kuvaajan lukeminen:** Lasketaan ensin tukivoimat: $N = mg$ antaa arvot $1{,}96\,\text{N}$, $3{,}92\,\text{N}$, $5{,}89\,\text{N}$, $7{,}85\,\text{N}$ ja $9{,}81\,\text{N}$. Piirretään pisteet $(N, F_\mu)$ ja sovitetaan niihin origon kautta kulkeva suora, joka kulkee mahdollisimman läheltä kaikkia pisteitä. Luetaan suoralta kaukainen piste: tukivoimalla $N = 9{,}81\,\text{N}$ suoran arvo on noin $F_\mu = 4{,}1\,\text{N}$.
+**Kaava:** $\mu = \dfrac{\Delta F_\mu}{\Delta N}$, kun $\Delta F_\mu$ ja $\Delta N$ luetaan sovitetulta suoralta
+**Muunnokset:** Molemmat akselit ovat newtoneina, joten yksiköt supistuvat. Massat ovat kilogrammoina, joten muunnoksia ei tarvita.
+**Sijoitus:** $\mu = \dfrac{4{,}1\,\text{N} - 0\,\text{N}}{9{,}81\,\text{N} - 0\,\text{N}} = 0{,}418$
+**Vastaus:** $0{,}42$, kaksi merkitsevää numeroa, koska vetovoimat on mitattu kolmen numeron tarkkuudella mutta suora piirretään käsin.
+**Järkevyys:** Yksittäisistä pisteistä saadaan suhteet $F : N$ väliltä $0{,}41$–$0{,}43$, esimerkiksi $4{,}02\,\text{N} : 9{,}81\,\text{N} = 0{,}41$, joten sovitetun suoran kulmakerroin osuu niiden väliin. Kerroin on yksikötön ja puun ja pöydän välille tavallista suuruusluokkaa.
+
+## fy4-6-L2-06
+**Annettu:** $m = 0{,}75\,\text{kg}$, esimerkkiaineiston vetovoima $F$ ajan $t$ funktiona; suurin lukema $3{,}3\,\text{N}$ hetkellä $t = 2{,}5\,\text{s}$, tasaisen liikkeen lukemat $2{,}2\,\text{N}$, $2{,}1\,\text{N}$ ja $2{,}2\,\text{N}$ hetkillä $3{,}5\,\text{s}$–$4{,}5\,\text{s}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** liikekitkakerroin $\mu$ (ei yksikköä) sekä lepokitkakerroin $\mu_0$
+**Periaate:** Ennen liikkeellelähtöä veto kasvaa ja lepokitka kasvaa sen mukana. Kun veto ylittää lepokitkan enimmäisarvon $\mu_0 N$, palikka lähtee liikkeelle, ja kuvaajan huippu on tämä enimmäisarvo. Tasaisella nopeudella voimien summa on nolla, joten veto on yhtä suuri kuin liikekitka $\mu N$. Vaakasuoralla pöydällä $N = mg$.
+**Kuvaajan lukeminen:** Veto kasvaa suoraviivaisesti hetkeen $t = 2{,}5\,\text{s}$ asti, jossa on kuvaajan huippu $3{,}3\,\text{N}$. Huipun jälkeen veto putoaa ja pysyy lähes vakiona, noin $2{,}2\,\text{N}$, kun palikka liikkuu tasaisella nopeudella. Vakiovedon lukemien summa on $2{,}2\,\text{N} + 2{,}1\,\text{N} + 2{,}2\,\text{N} = 6{,}5\,\text{N}$, joten niiden keskiarvo on $6{,}5\,\text{N} : 3 = 2{,}17\,\text{N}$.
+**Kaava:** $N = mg$, $\mu_0 = \dfrac{F_{\text{huippu}}}{N}$ ja $\mu = \dfrac{F_{\text{tasainen}}}{N}$
+**Muunnokset:** Massa on kilogrammoina ja voimat newtoneina, joten muunnoksia ei tarvita.
+**Sijoitus:** $N = 0{,}75\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 7{,}36\,\text{N}$, $\mu_0 = \dfrac{3{,}3\,\text{N}}{7{,}36\,\text{N}} = 0{,}449$ ja $\mu = \dfrac{2{,}17\,\text{N}}{7{,}36\,\text{N}} = 0{,}295$
+**Vastaus:** liikekitkakerroin on $\mu = 0{,}29$ ja lepokitkakerroin $\mu_0 = 0{,}45$, kaksi merkitsevää numeroa kuten massassa $0{,}75\,\text{kg}$ ja vetovoiman lukemissa.
+**Järkevyys:** Liikekitkakerroin on pienempi kuin lepokitkakerroin, $0{,}29 < 0{,}45$, kuten yleensä. Siksi veto putoaa, kun palikka on lähtenyt liikkeelle: liikkeessä pitämiseen tarvitaan pienempi voima kuin liikkeelle saamiseen. Kertoimet ovat puun ja pöydän välille tavallista suuruusluokkaa.
+
+## fy4-6-L2-07
+**Annettu:** esimerkkiaineiston viisi kulmaa: $24^\circ$, $26^\circ$, $25^\circ$, $27^\circ$ ja $25^\circ$
+**Kysytty:** lepokitkakerroin $\mu_0$ (ei yksikköä)
+**Periaate:** Laudan kallistuessa painon rinteen suuntainen komponentti $G_x = mg\sin\alpha$ kasvaa, ja lepokitka kasvaa sen mukana. Palikka lähtee liukumaan, kun komponentti ylittää lepokitkan enimmäisarvon $\mu_0 N$. Kohtisuorassa suunnassa palikka ei kiihdy, joten $N = mg\cos\alpha$. Rajakulmalla $\alpha_0$ pätee $mg\sin\alpha_0 = \mu_0\,mg\cos\alpha_0$. Massa supistuu, ja jakamalla puolittain saadaan $\mu_0 = \tan\alpha_0$.
+**Kaava:** $\mu_0 = \tan\alpha_0$, missä $\alpha_0$ on mittausten keskiarvo
+**Muunnokset:** Kulmat ovat asteina, joten muunnoksia ei tarvita. Laskimen on oltava asteiden tilassa.
+**Sijoitus:** Kulmien summa on $24^\circ + 26^\circ + 25^\circ + 27^\circ + 25^\circ = 127^\circ$, joten keskiarvo on $\alpha_{0,\text{ka}} = 127^\circ : 5 = 25{,}4^\circ$ ja $\mu_0 = \tan 25{,}4^\circ = 0{,}4748$
+**Vastaus:** $0{,}47$, kaksi merkitsevää numeroa kuten kulmien keskiarvon tarkkuus antaa.
+**Järkevyys:** Yksittäisistä kulmista saadaan $\tan 24^\circ = 0{,}45$ ja $\tan 27^\circ = 0{,}51$, joten keskiarvo $0{,}47$ on niiden välissä. Kokeessa ei tarvita palikan massaa, koska se supistuu. Tulos on puun ja puun väliselle lepokitkakertoimelle tavallista suuruusluokkaa.
+
+## fy4-6-L3-04
+**Annettu:** alkunopeus $v_0 = 80\,\text{km/h}$, loppunopeus $v = 0$, kiihtyvyys vakio, pyörät lukkiutuvat; esimerkkiaineiston liikekitkakertoimet: kuiva asfaltti $\mu = 0{,}75$, märkä asfaltti $\mu = 0{,}45$; kohdassa c) märkä alamäki $\alpha = 6{,}0^\circ$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** jarrutusmatka $s$ yksikössä $\text{m}$, kohdissa a) kuiva vaakasuora, b) märkä vaakasuora ja c) märkä alamäki
+**Periaate:** Lukkiutuneet pyörät liukuvat tiellä, joten autoon vaikuttaa liikekitka $\mu N$ liikettä vastaan. Newtonin toisen lain mukaan kitka antaa hidastuvuuden, ja matka saadaan tasaisesti kiihtyvän liikkeen yhtälöstä $v^2 = v_0^2 - 2as$, kun $a$ on hidastuvuuden suuruus. Kohtisuorassa suunnassa auto ei kiihdy, joten $N = mg\cos\alpha$.
+**Voimakuvio:** Kohdan c) auto suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan tiestä ulos. Paino $\overline{G}$ suoraan alas ja sen komponentit katkoviivoin, tukivoima $\overline{N}$ kohtisuoraan tiestä ulos ja liikekitka $\overline{F}_\mu$ rinnettä ylös. Nopeus on rinnettä alas, mutta hidastuvuus on rinnettä ylös.
+```voimakuvio
+pinta -6
+G 9,81
+N 9,756
+F_mu 4,390 ylös
+v alas
+a ylös
+akselit -6
+komponentit G
+```
+**Kaava:** vaakasuoralla $N = mg$ ja $\mu mg = ma$, joten $a = \mu g$. Alamäessä $x$: $\mu mg\cos\alpha - mg\sin\alpha = ma$, joten $a = g(\mu\cos\alpha - \sin\alpha)$. Matka on $s = \dfrac{v_0^2}{2a}$
+**Muunnokset:** $v_0 = 80\,\text{km/h} = 80 : 3{,}6\,\text{m/s} = 22{,}22\,\text{m/s}$, ja $v_0^2 = 493{,}8\,\text{m}^2/\text{s}^2$.
+**Sijoitus:** Kohta a): $a_a = 0{,}75\cdot 9{,}81\,\text{m/s}^2 = 7{,}358\,\text{m/s}^2$ ja $s_a = \dfrac{493{,}8\,\text{m}^2/\text{s}^2}{2\cdot 7{,}358\,\text{m/s}^2} = 33{,}6\,\text{m}$. Kohdat b) ja c):
+```latex
+\begin{aligned}
+a_b &= 0{,}45 \cdot 9{,}81\,\text{m/s}^2 = 4{,}415\,\text{m/s}^2 \\
+s_b &= \frac{493{,}8\,\text{m}^2/\text{s}^2}{2 \cdot 4{,}415\,\text{m/s}^2} = 55{,}9\,\text{m} \\[4pt]
+a_c &= 9{,}81\,\text{m/s}^2 \\
+&\quad \cdot (0{,}45\cos 6{,}0^\circ - \sin 6{,}0^\circ) \\
+&= 3{,}365\,\text{m/s}^2 \\
+s_c &= \frac{493{,}8\,\text{m}^2/\text{s}^2}{2 \cdot 3{,}365\,\text{m/s}^2} = 73{,}4\,\text{m}
+\end{aligned}
+```
+**Vastaus:** a) $34\,\text{m}$, b) $56\,\text{m}$ ja c) $73\,\text{m}$ (laskettu $73{,}4\,\text{m}$). Kohdan c) tulos pyöristetään kahteen merkitsevää numeroa kuten kitkakertoimessa $0{,}45$ ja kulmassa $6{,}0^\circ$. Auton massaa ei tarvita, koska se supistuu: sekä kitka että painon komponentti ovat verrannollisia massaan, joten hidastuvuus ei riipu siitä.
+**Järkevyys:** Märällä tiellä matka on $55{,}9 : 33{,}6 = 1{,}66$-kertainen kuivaan verrattuna, ja sama suhde saadaan kitkakertoimista $0{,}75 : 0{,}45 = 1{,}67$. Alamäessä matka on pidempi kuin vaakasuoralla märällä tiellä, $73\,\text{m} > 56\,\text{m}$, koska painon komponentti rinnettä alas pienentää hidastuvuutta. Hidastuvuus $3{,}365\,\text{m/s}^2$ on silti positiivinen, koska $\mu = 0{,}45 > \tan 6{,}0^\circ = 0{,}11$.
+
+## fy4-6-L3-05
+**Annettu:** $m = 20\,\text{kg}$, $\alpha = 30^\circ$, $\mu = 0{,}35$, laatikko lähtee levossa, $t = 3{,}0\,\text{s}$; oppilaan ratkaisussa $N = mg$ ja tulos $1{,}5\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** oppilaan virhe, oikea kiihtyvyys $a$ ja matka $s$ ajassa $3{,}0\,\text{s}$ yksikössä $\text{m}$
+**Periaate:** Oppilas käytti tukivoimana koko painoa, $N = mg$. Rinteellä pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima, ja laatikko ei kiihdy siinä suunnassa, joten $N = mg\cos\alpha$, painoa pienempi. Oppilaan kitka $\mu mg$ on siksi liian suuri ja kiihtyvyys liian pieni. Oikea kiihtyvyys saadaan Newtonin toisesta laista rinteen suuntaan, ja matka tasaisesti kiihtyvän liikkeen yhtälöstä lähtönopeudella nolla.
+**Voimakuvio:** Laatikko suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan pinnasta ulos. Paino $\overline{G}$ suoraan alas ja sen komponentit katkoviivoin, tukivoima $\overline{N}$ kohtisuoraan pinnasta ulos ja painoa lyhyempi, liikekitka $\overline{F}_\mu$ rinnettä ylös. Kiihtyvyys piirretään erikseen rinnettä alas.
+```voimakuvio
+pinta -30
+G 196,2
+N 169,9
+F_mu 59,47 ylös
+a alas
+akselit -30
+komponentit G
+```
+**Kaava:** $y$: $N - mg\cos\alpha = 0$ ja $x$: $mg\sin\alpha - \mu N = ma$, joten $a = g(\sin\alpha - \mu\cos\alpha)$. Matka on $s = \tfrac{1}{2}at^2$, koska alkunopeus on nolla
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita, ja massa supistuu.
+**Sijoitus:** $a = 9{,}81\,\text{m/s}^2\cdot(\sin 30^\circ - 0{,}35\cdot\cos 30^\circ) = 1{,}931\,\text{m/s}^2$ ja
+```latex
+\begin{aligned}
+s &= \tfrac{1}{2} \cdot 1{,}931\,\text{m/s}^2 \cdot (3{,}0\,\text{s})^2 \\
+&= 8{,}69\,\text{m}
+\end{aligned}
+```
+**Vastaus:** oppilaan virhe on $N = mg$ rinteellä, oikea tukivoima on $N = mg\cos\alpha \approx 170\,\text{N}$ ja oikea kiihtyvyys $a \approx 1{,}9\,\text{m/s}^2$. Laatikko liukuu ajassa $3{,}0\,\text{s}$ matkan $8{,}7\,\text{m}$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}35$ ja ajassa $3{,}0\,\text{s}$.
+**Järkevyys:** Oppilaan kiihtyvyys $1{,}5\,\text{m/s}^2$ on liian pieni, koska hän laski kitkan $\mu mg = 69\,\text{N}$ liian suureksi; oikea kitka on $\mu mg\cos\alpha = 59\,\text{N}$. Ilman kitkaa kiihtyvyys olisi $g\sin 30^\circ \approx 4{,}9\,\text{m/s}^2$, joten kitka pienentää sitä. Liukuessaan laatikko kiihtyy alas, koska $\tan 30^\circ = 0{,}58 > \mu = 0{,}35$; tehtävän mukaan se lähtee liikkeelle, joten $\mu_0 < \tan 30^\circ$.

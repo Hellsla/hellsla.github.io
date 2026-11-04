@@ -1,9 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5f6408d1178c112c
+CONTENT-HASH: 58ceb802ed0675d7
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the plain Finnish was already short, clear and matched fi in every number)
 
 ## Polish
+(none)
 
 ## Checked
-Full re-review after the malli-ketju label nudge (figures.py lab= of T_1 and upper T_2; nothing else changed since the last pass). Exercise texts and solutions judged against the reviewed Finnish source: every number in exercises.json (119) and solutions.md (620) equals the Finnish; L2-01 task, solution and voimakuvio blocks match the Finnish and the figure. Rendered malli-ketju in the opened L2-01 solution at 360 px: translated captions and labels readable and clear of each other, arrows to scale (T_1 88 px, G_1 49, T_2 33 in both diagrams, G_2 29,5 at S = 0,10), translated description matches the drawing. Answers recomputed: correct. check_i18n 0 errors.
+All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags (one per concept task), data cells and every number in texts, choices and feedback are identical (decimal comma in text, point in table cells as in fi). Numbers in solutions.md equal the Finnish (1173 each; en differs only in word order of 'cars 1 and 2'). Re-derived L1-07 a=3.92, L2-06 T=3.4 N, L2-07 a=2.0 vs the student's 2.5, L3-04 a=0.50 m/s2 and K12=15 kN, L3-05 mean m1=0.91 kg: all agree with fi. Physics statements (T<G2, weight acts on the hanging mass, kinetic energy is not a force) are the Finnish ones. check_i18n.py fi-easy: 0 errors.

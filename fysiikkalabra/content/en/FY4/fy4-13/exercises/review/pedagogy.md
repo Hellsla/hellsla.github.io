@@ -1,9 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9042a4a4fafbdf5e
+CONTENT-HASH: 170bd6eca2ea5c01
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none beyond the two wording fixes listed in science.md)
 
 ## Polish
+(none)
 
 ## Checked
-Full re-review after the malli-ketju label nudge (figures.py lab= of T_1 and upper T_2; nothing else changed since the last pass). Exercise texts and solutions judged against the reviewed Finnish source: every number in exercises.json (119) and solutions.md (620) equals the Finnish; L2-01 task, solution and voimakuvio blocks match the Finnish and the figure. Rendered malli-ketju in the opened L2-01 solution at 360 px: translated captions and labels readable and clear of each other, arrows to scale (T_1 88 px, G_1 49, T_2 33 in both diagrams, G_2 29,5 at S = 0,10), translated description matches the drawing. Answers recomputed: correct. check_i18n 0 errors.
+Reads as English at the level of the Finnish: the task order, the guided parts a)-c), the 'answer box takes ...' lines and the feedback of each distractor keep the Finnish function (name the error, say why, point to the right idea). Concept tasks L1-06 and L1-08 keep one correct choice and distractors that match the Finnish misconceptions. The L2-07 error task keeps the student's solution intact. Terms are consistent with the lesson (tension, free-body diagram, equation of motion). No Finnish left over, no added or dropped hints compared with fi.

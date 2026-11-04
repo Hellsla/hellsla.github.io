@@ -44,6 +44,75 @@
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-06",
+      "level": 1,
+      "text": "A cart is on a frictionless table and is tied by a string over a pulley to a hanging mass. The mass descends and the cart accelerates. The string and the pulley are light, and air resistance is neglected. How are the tension $T$ in the string and the weight $G_2$ of the hanging mass related?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$T$ is smaller than $G_2$, because the net force on the hanging mass points downward",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$T$ is equal to $G_2$, because the string supports the hanging mass with its full weight",
+          "feedback": "That would be true only if the mass were at rest or moving at a constant speed. Now the mass accelerates downward, so its net force is not zero and $T$ is smaller than the weight."
+        },
+        {
+          "text": "$T$ is greater than $G_2$, because the string also pulls the cart forward",
+          "feedback": "The string pulls the hanging mass upward and the cart forward with the same force $T$, but this does not add any force. If $T$ were greater than the weight, the net force on the hanging mass would point up and the mass would not descend."
+        },
+        {
+          "text": "$T$ is half of $G_2$, because the string shares its force between two bodies",
+          "feedback": "The string does not share its force between the bodies: it pulls each body with the same force $T$. The relation to the weight depends on the masses, not on a fixed half."
+        },
+        {
+          "text": "$T$ is smaller than $G_2$, because the net force on the hanging mass points downward",
+          "correct": true,
+          "feedback": "Correct: the mass accelerates downward, so by Newton's second law $G_2 - T = m_2 a$ and the net force points down. Therefore $T < G_2$."
+        }
+      ]
+    },
+    {
+      "id": "fy4-13-L1-07",
+      "level": 1,
+      "text": "Two bodies of masses $0.30\\,\\text{kg}$ and $0.70\\,\\text{kg}$ hang at the ends of a light, inextensible string over a pulley. The pulley is light and frictionless, and air resistance is neglected. The bodies are released. Draw the free-body diagram of each body. What is the common acceleration of the bodies?",
+      "answer": 3.9,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L1-08",
+      "level": 1,
+      "text": "A cart is on a frictionless table and is tied by a string over a pulley to a descending hanging mass. You are drawing the free-body diagram of the cart. Which forces act on the cart along the table? Which statement is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Only the tension in the string, because the weight of the hanging mass acts on the hanging mass and not on the cart",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The tension in the string and the weight of the hanging mass, because the hanging mass also pulls the cart through the string",
+          "feedback": "The weight of the hanging mass is the force of the Earth on the hanging mass, not on the cart. The string transmits the tension $T$ to the cart, and that is already the whole effect of the string. Drawing the weight in the free-body diagram of the cart would add a force that does not act on the cart."
+        },
+        {
+          "text": "Only the tension in the string, because the weight of the hanging mass acts on the hanging mass and not on the cart",
+          "correct": true,
+          "feedback": "Correct: the free-body diagram of the cart includes only the forces acting on the cart. The weight acts on the hanging mass, and the string transmits the effect to the cart as the tension $T$, which is the only horizontal force on the cart."
+        },
+        {
+          "text": "Only the weight of the hanging mass, because it sets the cart moving and the string merely transmits it to the cart",
+          "feedback": "The string does not transmit the weight as such. If the string pulled the cart with the whole weight $m_2 g$, the net force on the hanging mass would be zero and the mass would not descend. The force $T$ of the string is smaller than the weight."
+        },
+        {
+          "text": "The tension in the string and the force of kinetic energy, because the cart moves forward on the table",
+          "feedback": "Motion does not bring any force of its own: kinetic energy is energy, not a force. The free-body diagram includes only forces that arise from interactions, such as the tension."
+        }
+      ]
     }
   ],
   "level2": [
@@ -83,6 +152,102 @@
       "unit": "kg",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L2-05",
+      "level": 2,
+      "text": "In an Atwood machine, two masses hang at the ends of a light, inextensible string over a pulley, and their total mass is always $M = 0.500\\,\\text{kg}$. The pulley is light and frictionless. The mass difference $\\Delta m = m_2 - m_1$ is changed by moving small masses from one mass to the other, and for each mass difference the acceleration $a$ of the heavier mass is measured. The table shows example data of the measurements.\n\na) From the equations of motion of the two masses, derive a formula for calculating $a$ from the mass difference $\\Delta m$.\n\nb) Draw the $(\\Delta m, a)$ graph and fit a straight line through the origin to it. Determine the acceleration of free fall $g$ from the slope of the line.\n\nThe answer box takes the acceleration of free fall from part b).",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 9.8,
+      "unit": "m/s²",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Acceleration of an Atwood machine at different mass differences (example data)",
+        "columns": [
+          "$\\Delta m\\,(\\text{g})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "50",
+            "0.96"
+          ],
+          [
+            "100",
+            "2.02"
+          ],
+          [
+            "150",
+            "2.88"
+          ],
+          [
+            "200",
+            "3.97"
+          ],
+          [
+            "250",
+            "4.84"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-13-L2-06",
+      "level": 2,
+      "text": "A cart of mass $1.20\\,\\text{kg}$ is on a frictionless track and is tied by a light, inextensible string over a light, frictionless pulley to a hanging mass. The cart is released from rest with different hanging masses, and the acceleration $a$ of the cart is measured each time. The table shows example data of the measurements.\n\nFrom the measurement in which the hanging mass is $0.50\\,\\text{kg}$, determine the tension in the string using the equation of motion of the cart. Check the result with the equation of motion of the hanging mass from the same measurement. First draw the free-body diagram of each body.\n\nThe answer box takes the tension obtained from the equation of motion of the cart.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 3.4,
+      "unit": "N",
+      "tolerance": 0.04,
+      "fbd": "equations",
+      "data": {
+        "caption": "Acceleration of the cart with different hanging masses (example data)",
+        "columns": [
+          "$m_2\\,(\\text{kg})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "0.74"
+          ],
+          [
+            "0.20",
+            "1.40"
+          ],
+          [
+            "0.30",
+            "1.97"
+          ],
+          [
+            "0.50",
+            "2.84"
+          ],
+          [
+            "0.70",
+            "3.60"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-13-L2-07",
+      "level": 2,
+      "text": "A cart of mass $2.0\\,\\text{kg}$ is on a frictionless table. A light, inextensible string tied to it passes over a light, frictionless pulley, and a mass of $0.50\\,\\text{kg}$ hangs from the end of the string. The bodies are released, and air resistance is neglected.\n\nA student's solution: “Only the string acts on the cart in the horizontal direction, so $T = m_1 a$. For the hanging mass, $m_2 g - T = m_2 a$. I substituted the first into the second: $m_2 g - m_1 a = m_2 a$. From this I solved $a = \\dfrac{m_2 g}{m_1} = 2.5\\,\\text{m/s}^2$.”\n\nFind the error in the student's solution and calculate the correct acceleration. Also draw the free-body diagram of each body.\n\nThe answer box takes the correct acceleration.",
+      "kind": [
+        "error"
+      ],
+      "answer": 2.0,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "equations"
     }
   ],
   "level3": [
@@ -112,6 +277,86 @@
       "unit": "s",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-13-L3-04",
+      "level": 3,
+      "text": "A locomotive pulls three cars in a row on a straight horizontal track. The masses of the cars are $m_1 = 24\\,\\text{t}$, $m_2 = 18\\,\\text{t}$ and $m_3 = 12\\,\\text{t}$, and they are connected to each other by couplings. The mass of the locomotive is not counted, and the locomotive pulls the first car with the same force in both orders. Resistive forces are neglected, and the couplings are light and inextensible. The speed of the train is measured after the start. The table shows example data.\n\na) Determine the acceleration of the train from the table. Justify why it can be considered constant.\n\nb) Draw the free-body diagram of each car and calculate the force of the coupling between cars 1 and 2.\n\nc) The cars are rearranged so that the heaviest car is last and the lightest first, and the acceleration is the same. What is now the force of the coupling between the first and second cars? Does a coupling with a greatest permitted force of $20\\,\\text{kN}$ hold? Justify why the force of the coupling changed.\n\nThe answer box takes the force of the coupling from part b) in kilonewtons.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 15,
+      "unit": "kN",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Speed of the train after the start (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "5.0",
+            "2.46"
+          ],
+          [
+            "10.0",
+            "5.03"
+          ],
+          [
+            "15.0",
+            "7.48"
+          ],
+          [
+            "20.0",
+            "10.02"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-13-L3-05",
+      "level": 3,
+      "text": "A cart on a frictionless track has an unknown mass $m_1$. A light, inextensible string tied to it passes over a light, frictionless pulley, and a mass $m_2$ that varies hangs from the end of the string. The cart is released from rest, and the time $t$ that the hanging mass takes to descend $0.80\\,\\text{m}$ to the floor is measured. The table shows example data of the measurements.\n\na) Calculate the acceleration of the hanging mass from each measurement. From the equations of motion of the two bodies, derive a formula for calculating the mass of the cart from the mass $m_2$ and the acceleration $a$.\n\nb) Determine the mass of the cart from each measurement and calculate their mean.\n\nc) The hanging mass of $0.200\\,\\text{kg}$ hits the floor; the track is long enough, so the cart does not hit the pulley. What happens to the cart after that? Justify and calculate the speed of the cart at that moment.\n\nThe answer box takes the mean mass of the cart from part b).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.91,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Descent time of the hanging mass over a distance of $0.80\\,\\text{m}$ (example data)",
+        "columns": [
+          "$m_2\\,(\\text{kg})$",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "0.100",
+            "1.29"
+          ],
+          [
+            "0.200",
+            "0.96"
+          ],
+          [
+            "0.300",
+            "0.80"
+          ],
+          [
+            "0.400",
+            "0.73"
+          ]
+        ]
+      }
     }
   ]
 }

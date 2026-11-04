@@ -111,6 +111,7 @@ for lang in i18n.languages():
            'nav-modules' not in hdr and re.findall(r'<nav [^>]*><a class="nav-study" href="nain-opiskelet.html">([^<]*)</a><a class="nav-reading" href="lukuvinkit.html">', hdr) == [_h.escape(T("site.study"))], hdr[-400:])
     expect(f"{lang}: the footer is Ruukkilabra and Tietosuoja only, no Lukuvinkit or Sivustosta (teacher 2026-11-04)",
            'href="tietoa.html"' not in ftr and 'href="lukuvinkit.html"' not in ftr and 'href="tietosuoja.html"' in ftr and "LOPS" not in ftr, ftr)
+    expect(f"{lang}: the footer ends with © 2026 Lauri Hellsten (teacher 2026-11-04)", ftr.endswith('<span class="copyright">© 2026 Lauri Hellsten</span></footer>'), ftr)
     priv = (out / "tietosuoja.html").read_text() if (out / "tietosuoja.html").is_file() else ""
     psrc = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / "fi" / "tietosuoja.md") if f.is_file()), None)
     pheads = re.findall(r"^#+ (.+)$", psrc.read_text(), re.M) if psrc else []

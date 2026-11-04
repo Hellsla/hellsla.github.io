@@ -42,6 +42,79 @@
       "answer": 59.0,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-6-L1-06",
+      "level": 1,
+      "text": "A box is at rest on a horizontal floor. It is pushed horizontally with a force of $20\\,\\text{N}$, but it does not move.\n\nThe greatest possible value of the static friction between the box and the floor is $60\\,\\text{N}$. Which statement about the static friction $F_{\\mu 0}$ exerted by the floor on the box is correct?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "$F_{\\mu 0} = 20\\,\\text{N}$, because at rest the static friction is equal to the push.",
+      "choices": [
+        {
+          "text": "$F_{\\mu 0} = 20\\,\\text{N}$, because at rest the static friction is equal to the push.",
+          "correct": true,
+          "feedback": "Correct: at rest the sum of the forces is zero, so the static friction is equal in magnitude to the push and opposite in direction. It is smaller than the maximum value."
+        },
+        {
+          "text": "$F_{\\mu 0} = 60\\,\\text{N}$, because static friction is always equal to its maximum value.",
+          "feedback": "Static friction is only as large as the situation requires. The maximum value $\\mu_0 N$ is an upper limit, not the actual value of the friction."
+        },
+        {
+          "text": "$F_{\\mu 0} = 0\\,\\text{N}$, because no friction acts on a body at rest.",
+          "feedback": "It is exactly the friction that keeps the box from moving. If the friction were zero, the push would accelerate the box."
+        },
+        {
+          "text": "$F_{\\mu 0} = 40\\,\\text{N}$, because static friction is the difference between the maximum value and the push.",
+          "feedback": "The magnitude of friction is not obtained by subtracting the push from the maximum value. At rest the friction and the push cancel each other."
+        }
+      ]
+    },
+    {
+      "id": "fy4-6-L1-07",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "A $50\\,\\text{kg}$ box is at rest on a horizontal floor. The coefficient of static friction between the box and the floor is $0.45$. How large a horizontal force must at least be applied to the box for it to start moving?",
+      "answer": 220.0,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L1-08",
+      "level": 1,
+      "text": "A body is at rest on an inclined plane at an angle of $30^\\circ$. Only the weight $\\overline{G}$, the normal force $\\overline{N}$ and friction act on the body.\n\nWhich statement about the magnitude $N$ of the normal force and the magnitude $G$ of the weight is correct?",
+      "kind": [
+        "concept",
+        "error"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "$N < G$, because the normal force cancels only the perpendicular component of the weight.",
+      "choices": [
+        {
+          "text": "$N = G$, because the normal force and the weight are always equal and opposite.",
+          "feedback": "The normal force is perpendicular to the surface, but the weight points straight down. They are not along the same line, and the normal force does not cancel the whole weight."
+        },
+        {
+          "text": "$N > G$, because the slope supports the body and friction presses it against the surface.",
+          "feedback": "Friction is parallel to the surface and does not press the body against it. Perpendicular to the surface only the weight and the normal force act."
+        },
+        {
+          "text": "$N < G$, because the normal force cancels only the perpendicular component of the weight.",
+          "correct": true,
+          "feedback": "Correct: in the direction perpendicular to the surface the body does not accelerate, so $N = G_y = mg\\cos\\alpha$. The component along the slope is cancelled by friction."
+        },
+        {
+          "text": "$N = 0$, because the weight pulls the body down the slope and not against the surface.",
+          "feedback": "The weight does not point along the slope. Its component $G_y$ presses the body against the surface, so the normal force is not zero."
+        }
+      ]
     }
   ],
   "level2": [
@@ -80,6 +153,149 @@
       "unit": "N",
       "tolerance": 0.04,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "text": "Students pulled a wooden block on a horizontal table with a spring balance, horizontally and at a constant velocity. Weights were added on top of the block, and for each mass the pull shown by the balance was read. Below is example data.\n\nDraw the $(N, F_\\mu)$ graph and fit a straight line through the origin to it. Determine the coefficient of kinetic friction between the block and the table from the graph. The normal force is calculated from the mass.",
+      "answer": 0.42,
+      "unit": "",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Combined mass $m$ of the block and the weights and the pull $F$ of the balance (example data)",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "0.85"
+          ],
+          [
+            "0.40",
+            "1.62"
+          ],
+          [
+            "0.60",
+            "2.50"
+          ],
+          [
+            "0.80",
+            "3.31"
+          ],
+          [
+            "1.00",
+            "4.02"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-6-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "text": "A force sensor was used to pull a $0.75\\,\\text{kg}$ wooden block on a horizontal table. The pull was horizontal all the time. The pull was increased slowly until the block started to move, and after that the block was pulled horizontally at a constant velocity. The block moved at a constant velocity from the moment $t = 3.5\\,\\text{s}$ onward. Below is example data.\n\nDraw the $(t, F)$ graph and read from the table the greatest reading as the greatest value of static friction and the pulling force during the uniform motion. Determine the coefficient of static friction $\\mu_0$ and the coefficient of kinetic friction $\\mu$.\n\nWrite the coefficient of kinetic friction $\\mu$ in the answer box.",
+      "answer": 0.29,
+      "unit": "",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Pulling force $F$ measured by the sensor as a function of time $t$ (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "0.5",
+            "0.7"
+          ],
+          [
+            "1.0",
+            "1.4"
+          ],
+          [
+            "1.5",
+            "2.1"
+          ],
+          [
+            "2.0",
+            "2.8"
+          ],
+          [
+            "2.5",
+            "3.3"
+          ],
+          [
+            "3.0",
+            "2.3"
+          ],
+          [
+            "3.5",
+            "2.2"
+          ],
+          [
+            "4.0",
+            "2.1"
+          ],
+          [
+            "4.5",
+            "2.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-6-L2-07",
+      "level": 2,
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "text": "The coefficient of static friction was determined by an experiment: a wooden board was tilted slowly until a wooden block on it started to slide, and the angle was read from an angle gauge. The experiment was repeated five times. Below is example data.\n\nJustify why the coefficient of static friction is $\\mu_0 = \\tan\\alpha_0$, where $\\alpha_0$ is the angle at which the block starts to slide. Calculate the mean of the angles and use it to determine the coefficient of static friction.\n\nWrite the coefficient of static friction $\\mu_0$ in the answer box.",
+      "answer": 0.47,
+      "unit": "",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "The angle $\\alpha_0$ at which the block starts to slide (example data)",
+        "columns": [
+          "Measurement",
+          "$\\alpha_0\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "1",
+            "24"
+          ],
+          [
+            "2",
+            "26"
+          ],
+          [
+            "3",
+            "25"
+          ],
+          [
+            "4",
+            "27"
+          ],
+          [
+            "5",
+            "25"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -107,6 +323,49 @@
       "text": "On Earth a box slides down a $30^\\circ$ slope with an acceleration of $2.0\\,\\text{m/s}^2$. How large would the acceleration of the box be on the same slope and the same surface on the Moon, where the acceleration of free fall is $1.62\\,\\text{m/s}^2$? The Moon has no air, and air drag is ignored on Earth too.",
       "answer": 0.33,
       "unit": "m/s²",
+      "tolerance": 0.03,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-6-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model"
+      ],
+      "text": "The braking distance of a passenger car is calculated with a model in which the wheels lock and kinetic friction acts between the tires and the road. Below is example data on the coefficients of kinetic friction between the tires and the road.\n\nThe car brakes from a speed of $80\\,\\text{km/h}$ to a stop. Air drag is ignored, and the acceleration is constant.\n\na) Determine the braking distance on dry horizontal asphalt.\n\nb) Determine the braking distance on wet horizontal asphalt.\n\nc) The wet road slopes downhill at an angle of $6.0^\\circ$. Determine the braking distance downhill and justify why the mass of the car is not needed.\n\nWrite the braking distance of part c) in the answer box.",
+      "answer": 73,
+      "unit": "m",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Coefficient of kinetic friction $\\mu$ between the tires and the road (example data)",
+        "columns": [
+          "Road surface",
+          "$\\mu$"
+        ],
+        "rows": [
+          [
+            "Dry asphalt",
+            "0.75"
+          ],
+          [
+            "Wet asphalt",
+            "0.45"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-6-L3-05",
+      "level": 3,
+      "kind": [
+        "error",
+        "model"
+      ],
+      "text": "A box of mass $20\\,\\text{kg}$ starts from rest and slides down a slope of $30^\\circ$. The coefficient of kinetic friction between the box and the slope is $0.35$, and air drag is ignored.\n\nA student solved the problem like this: “The normal force is equal to the weight, $N = mg$. The equation of motion along the slope is $mg\\sin\\alpha - \\mu mg = ma$, so $a = g(\\sin\\alpha - \\mu) \\approx 1.5\\,\\text{m/s}^2$.”\n\na) Explain the student’s error and draw the free-body diagram of the box.\n\nb) Calculate the correct acceleration of the box.\n\nc) How long a distance does the box slide during the first $3.0\\,\\text{s}$?\n\nWrite the distance of part c) in the answer box.",
+      "answer": 8.7,
+      "unit": "m",
       "tolerance": 0.03,
       "fbd": "equations"
     }

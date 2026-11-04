@@ -1,11 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a43ca0c07950edcc
+CONTENT-HASH: 046a61ca3dfa2bb5
+Mode: translation review of the 8 new exercises (L1-06..08, L2-05..07, L3-04..05) against the reviewed Finnish
+Round: 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none)
 
 ## Polish
-- Layout check (`check_layout.py fy4-5 --lang fi-easy`, 360 and 1280 px) reports a figure-label overlap "N / F_y" that is identical in the Finnish preview (generated figure, not translation text).
+(none)
 
 ## Checked
-- Delta `git diff a6af45ae` of fi, en and fi-easy for fy4-5; every changed passage compared with the Finnish: L3-03 answer is phrased as in the Finnish: first the two-decimal result and the one-significant-figure-rounded value, then why (difference, decimals); spec blocks sit directly under each Voimakuvio step as in the Finnish. fi-easy: the answer explanation split into short sentences.
-- All `voimakuvio` blocks in solutions.md identical to the Finnish (check_i18n enforces); `check_i18n.py` 0 errors; `build.py fy4-5` builds; `figures.py fy4-5 --lang fi-easy --check` up to date.
+- Selkosuomi: sentences are short, one idea each; long fi sentences are split (for example L3-05 phases, L2-05 rope description). Terms are common (voimakuvio, tukivoima, jännitysvoima, komponentti); "kokonaisvoima" is explained in L1-07 Kysytty.
+- Feedback of the choices in L1-06 and L1-08 is short and names the misconception; correct option marked as in fi.
+- Parts a)-d) and the answer-box sentence correspond to the Finnish in all 8 exercises.
+- The solutions keep the Finnish steps and reasonableness checks, in plainer wording.
