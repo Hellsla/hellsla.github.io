@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e66a67c219672d7e
-
-Delta review over the audit's PASS (4157a622aabadf49): one exercise replaced by a figure task, LaTeX units.
+CONTENT-HASH: 858946470e7d35ed
 
 ## Blocking
-- none
+none
+
 ## Polish
-- exercises.json fy1-2-L1-04 is a two-step (difference of readings plus cm to mm) at L1; acceptable, but nearer L2. L3-02 still has plain '30,07 AU' and '1920 px'.
-- Ruler at 360 px: millimetre ticks are about 2 px apart, so 13,6 cm needs counting from the long tick at 13; the 3 % tolerance (+-3 mm) forgives a 1-2 mm slip.
+- solutions.md fy1-2-L3-05 — carried: "Vastaus" says "noin 1,5 h" while the stored answer is 1,54; write "noin 1,5 h (kenttään sopii 1,54)".
+- exercises.json fy1-2-L3-05 — carried: put "Onko väite oikein? Perustele." last so the question does not end on a yes/no after "Perustele".
+
 ## Checked
-- Figure needed: the text gives no lengths; 2,0 cm and 13,6 cm come from the ruler. Rod does not start at zero, which tests the key idea (difference of readings).
-- (13,6-2,0) cm = 11,6 cm = 116 mm correct; answers.py and solutions.md agree; **Kuvaajan lukeminen:** present.
-- Description lists the ends only in the aria-label, not in the task text; ruler labelled 0-15 with LaTeX numbers.
+- Round 3 delta: L3-04 Vastaus now says "pienillä heilahduksilla pätee T = 2π√(L/g)" instead of "tarkka kaava". This is the correct, honest qualifier (small-amplitude formula) and keeps the point that unit analysis cannot give 2π and that k cancels in T2/T1; it does not disclose or contradict anything the task asks.
+- Rest unchanged since the round-2 PASS (8/7/5, data and error tasks, none repeats the worked example).
+- Capture open-exercises-L3-1280-5 opened: the Vastaus paragraph reads fluently, nothing clipped.
