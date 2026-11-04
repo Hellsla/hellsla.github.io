@@ -117,3 +117,144 @@
 **Substitution:** $\dfrac{F_\text{S}}{F_\text{M}} = \dfrac{1.99 \cdot 10^{30}\,\text{kg}}{7.35 \cdot 10^{22}\,\text{kg}} \cdot \left(\dfrac{3.84 \cdot 10^{5}\,\text{km}}{1.50 \cdot 10^{8}\,\text{km}}\right)^2 = 2.707 \cdot 10^{7} \cdot 6.554 \cdot 10^{-6} = 177.4$
 **Answer:** The Sun attracts the Earth about $177$ times as strongly as the Moon does; three significant figures as in the data.
 **Reasonableness:** The mass of the Sun is about $27$ million times as great, but it is about $390$ times farther away, which reduces the force by a factor $390^2 \approx 150\,000$: $\tfrac{2.7 \cdot 10^{7}}{1.5 \cdot 10^{5}} \approx 180$. The Sun holds the Earth in its orbit, although the Moon is much closer.
+
+## fy5-5-L1-06
+**Find:** how large a force the Moon exerts on the Earth, when the Earth pulls the Moon with a gravitational force.
+**Principle:** Gravitation is an interaction between two bodies. By Newton's third law the two parties of an interaction exert forces of equal magnitude and opposite directions on each other, and by Newton's law of gravitation the magnitude of the force is $F = \gamma \tfrac{m_1 m_2}{r^2}$, in which both masses appear.
+**Model answer:** The Moon pulls the Earth with exactly as large a force as the Earth pulls the Moon, because the forces are the action and reaction of the same interaction. In the law of gravitation the masses are in the symmetric product $m_1 m_2$, so the force is the same for both bodies. The difference in the masses shows up not in the force but in the acceleration: the acceleration of the Moon is about $81$ times that of the Earth, because the same force acts on a body about $81$ times lighter (the mass of the Earth is $81$ times the mass of the Moon). Motion does not affect the force, and even a small body pulls a large one.
+
+## fy5-5-L1-07
+**Find:** what the gravitational force is when the mass of one body and the distance between the bodies both double.
+**Principle:** By Newton's law of gravitation $F = \gamma \tfrac{m_1 m_2}{r^2}$ the force is directly proportional to the product of the masses and inversely proportional to the square of the distance. Each change is multiplied in with its own factor.
+**Model answer:** When one mass doubles, the force doubles. When the distance doubles, the force decreases to a quarter, because the distance is raised to the second power in the formula. The new force is $F' = \tfrac{2}{2^2}\,F = \tfrac{1}{2}\,F$, that is, the force is halved. The changes do not cancel, because the effect of the distance is stronger. The change in the mass alone would give the factor $2$ and the change in the distance alone the factor $\tfrac{1}{4}$, but both changes must be taken into account.
+
+## fy5-5-L1-08
+**Find:** what the error is in the student's calculation, when they use the distance $r = 400\,\text{km}$ and gets too large a force.
+**Principle:** In Newton's law of gravitation $r$ is the distance between the centres of the bodies. A spherically symmetric Earth attracts an outside body as if all its mass were at its centre, so $r$ is measured from the centre of the Earth, not from the surface.
+**Model answer:** The student uses the height above the surface, although the distance must be measured from the centre of the Earth to the satellite. The correct distance is the radius of the Earth plus the height, about $6378\,\text{km} + 400\,\text{km} \approx 6800\,\text{km}$. The student's distance is about $17$ times too small, so the force is about $17^2 \approx 290$ times too large, which fits the information in the task that the result is a multiple of the correct one. The law of gravitation holds in space, the force is not divided by two, and the distance is not given in Earth radii, so these are not errors.
+
+## fy5-5-L2-05
+**Given:** three planets in the table (NASA Planetary Fact Sheet): Saturn $M = 568 \cdot 10^{24}\,\text{kg}$, $R = 58\,232\,\text{km}$; Uranus $M = 86.8 \cdot 10^{24}\,\text{kg}$, $R = 25\,362\,\text{km}$; Neptune $M = 102 \cdot 10^{24}\,\text{kg}$, $R = 24\,622\,\text{km}$; $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
+**Find:** a) the field strength $g$ on the surface of each planet; b) the ratio $\tfrac{g_\text{N}}{g_\text{U}}$; c) why the field of Saturn is almost the same as that of Neptune
+**Principle:** The field on the surface of a spherically symmetric planet is $g = \gamma \tfrac{M}{R^2}$, when $R$ is the radius of the planet. In the ratio $\gamma$ cancels.
+**Reading the graph:** The mass and the radius of each planet are read from the table. The mass is in the unit $10^{24}\,\text{kg}$ and the radius in kilometres.
+**Formula:** $g = \gamma \dfrac{M}{R^2}$ and $\dfrac{g_\text{N}}{g_\text{U}} = \dfrac{M_\text{N}}{M_\text{U}} \cdot \left(\dfrac{R_\text{U}}{R_\text{N}}\right)^2$
+**Conversions:** The masses are $M_\text{S} = 5.68 \cdot 10^{26}\,\text{kg}$, $M_\text{U} = 8.68 \cdot 10^{25}\,\text{kg}$ and $M_\text{N} = 1.02 \cdot 10^{26}\,\text{kg}$. The radii are $R_\text{S} = 5.8232 \cdot 10^{7}\,\text{m}$, $R_\text{U} = 2.5362 \cdot 10^{7}\,\text{m}$ and $R_\text{N} = 2.4622 \cdot 10^{7}\,\text{m}$.
+**Substitution:** Part a, when $g = \gamma \tfrac{M}{R^2}$:
+```latex
+\begin{aligned}
+g_\text{S} &= 6.674 \cdot 10^{-11} \cdot \frac{5.68 \cdot 10^{26}}{(5.8232 \cdot 10^{7})^2}\,\tfrac{\text{m}}{\text{s}^2} \\
+&= 11.18\,\text{m/s}^2 \\
+g_\text{U} &= 6.674 \cdot 10^{-11} \cdot \frac{8.68 \cdot 10^{25}}{(2.5362 \cdot 10^{7})^2}\,\tfrac{\text{m}}{\text{s}^2} \\
+&= 9.006\,\text{m/s}^2 \\
+g_\text{N} &= 6.674 \cdot 10^{-11} \cdot \frac{1.02 \cdot 10^{26}}{(2.4622 \cdot 10^{7})^2}\,\tfrac{\text{m}}{\text{s}^2} \\
+&= 11.23\,\text{m/s}^2
+\end{aligned}
+```
+Part b:
+```latex
+\begin{aligned}
+\frac{g_\text{N}}{g_\text{U}} &= \frac{11.229\,\text{m/s}^2}{9.006\,\text{m/s}^2} \\
+&= 1.2468
+\end{aligned}
+```
+**Answer:** The surface field of Neptune is $1.25$ times that of Uranus, three significant figures as in the masses of the table. The values of part a are $11.2\,\text{m/s}^2$ for Saturn, $9.01\,\text{m/s}^2$ for Uranus and $11.2\,\text{m/s}^2$ for Neptune. Part c explains why the field of Saturn is nevertheless almost the same as that of Neptune.
+**Reasonableness:** The field of all three is of the same order of magnitude as on the Earth ($9.81\,\text{m/s}^2$), because the growth of the mass is compensated by the large radius. Check from the ratio: $\tfrac{102}{86.8} \cdot \left(\tfrac{25\,362}{24\,622}\right)^2 = 1.175 \cdot 1.061 \approx 1.25$. Part c: the mass of Saturn is $\tfrac{568}{102} \approx 5.6$ times the mass of Neptune, but its radius is $\tfrac{58\,232}{24\,622} \approx 2.37$ times as large, and the square of the radius is $2.37^2 \approx 5.6$ times as large. The effects of the mass and of the square of the radius cancel almost completely, so $g_\text{S} \approx g_\text{N}$ (the difference is about $0.4\,\%$).
+
+## fy5-5-L2-06
+**Given:** $M = 1.50\,\text{kg}$ and $m = 20.0\,\text{g}$; measurements $(r, F)$: $(4.0\,\text{cm};\ 1.29\,\text{nN})$, $(5.0\,\text{cm};\ 0.80\,\text{nN})$, $(6.0\,\text{cm};\ 0.56\,\text{nN})$, $(8.0\,\text{cm};\ 0.31\,\text{nN})$
+**Find:** a) $\gamma$ from each measurement and their mean; b) a comparison with the known value and the shape of the graph of $F$ against $\tfrac{1}{r^2}$
+**Principle:** The spheres are spherically symmetric, so $F = \gamma \tfrac{M m}{r^2}$, when $r$ is the distance between the centres. Solving for $\gamma$ gives a value from each measurement, and the random variation is reduced by taking the mean of the values.
+**Reading the graph:** From each row of the table the distance $r$ and the force $F$ are read. After this the units are converted to SI units.
+**Formula:** $\gamma = \dfrac{F r^2}{M m}$ and the mean $\gamma_\text{av} = \dfrac{\gamma_1 + \gamma_2 + \gamma_3 + \gamma_4}{4}$
+**Conversions:** $m = 20.0\,\text{g} = 0.0200\,\text{kg}$; $r = 4.0\,\text{cm} = 0.040\,\text{m}$ and similarly for the others; $F = 1.29\,\text{nN} = 1.29 \cdot 10^{-9}\,\text{N}$ and similarly for the others. The product is $M m = 1.50\,\text{kg} \cdot 0.0200\,\text{kg} = 0.0300\,\text{kg}^2$.
+**Substitution:**
+```latex
+\begin{aligned}
+\gamma_1 &= \frac{1.29 \cdot 10^{-9} \cdot 0.040^2}{0.0300} \\
+&= 6.88 \cdot 10^{-11} \\
+\gamma_2 &= 6.67 \cdot 10^{-11} \\
+\gamma_3 &= 6.72 \cdot 10^{-11} \\
+\gamma_4 &= 6.61 \cdot 10^{-11}
+\end{aligned}
+```
+The sum of the values is $26.88 \cdot 10^{-11}$, so the mean is $\gamma_\text{av} = \tfrac{26.88}{4} \cdot 10^{-11} = 6.72 \cdot 10^{-11}$ (unit $\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$).
+**Answer:** $\gamma_\text{av} \approx 6.72 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$, three significant figures, because the mean of four measurements is more accurate than a single value (the forces and distances have two or three figures). The known value $6.674 \cdot 10^{-11}$ differs from the result by about $0.7\,\%$. Part b: because $F = \gamma M m \cdot \tfrac{1}{r^2}$, the graph of $F$ against $\tfrac{1}{r^2}$ should be a straight line through the origin, with the slope $\gamma M m \approx 2.0 \cdot 10^{-12}\,\text{N}\cdot\text{m}^2$. The graph of $(r, F)$, on the other hand, is a falling curve, not a straight line.
+**Reasonableness:** The individual values lie between $6.61 \cdot 10^{-11}$ and $6.88 \cdot 10^{-11}$, that is, at most about $2.5\,\%$ from the mean, which is a small random variation in an experiment where the forces are of the order of nanonewtons. The mean is close to the known value, so the measurement supports the law of gravitation. Check: $F$ decreases when $r$ grows from $4.0\,\text{cm}$ to $8.0\,\text{cm}$, and $1.29\,\text{nN}$ is about four times $0.31\,\text{nN}$, as it should be.
+
+## fy5-5-L2-07
+**Given:** radius of the Earth $R = 6378\,\text{km}$; measurements $(h, g)$: $(0;\ 9.81\,\text{m/s}^2)$, $(400\,\text{km};\ 8.69\,\text{m/s}^2)$, $(1000\,\text{km};\ 7.33\,\text{m/s}^2)$, $(2000\,\text{km};\ 5.68\,\text{m/s}^2)$, $(3000\,\text{km};\ 4.53\,\text{m/s}^2)$
+**Find:** a) the value of the product $g\,(R + h)^2$ in each row and the mean; b) which quantity the product corresponds to and what its constancy shows
+**Principle:** By the law of gravitation $g = \gamma \tfrac{M}{r^2}$, when $r = R + h$ is the distance from the centre of the Earth. If this holds, the product $g\,r^2$ is equal to $\gamma M$ at all heights.
+**Reading the graph:** From the table the height and the field strength are read. The distance from the centre is $r = R + h$.
+**Formula:** $g\,r^2 = g\,(R + h)^2$ and the mean $\dfrac{p_1 + p_2 + p_3 + p_4 + p_5}{5}$, where $p$ is the product
+**Conversions:** $R = 6378\,\text{km} = 6.378 \cdot 10^{6}\,\text{m}$; $h = 400\,\text{km} = 4.00 \cdot 10^{5}\,\text{m}$ and similarly for the other heights. The distances $r$ are $6.378 \cdot 10^{6}\,\text{m}$, $6.778 \cdot 10^{6}\,\text{m}$, $7.378 \cdot 10^{6}\,\text{m}$, $8.378 \cdot 10^{6}\,\text{m}$ and $9.378 \cdot 10^{6}\,\text{m}$.
+**Substitution:**
+```latex
+\begin{aligned}
+p_1 &= 9.81 \cdot (6.378 \cdot 10^{6})^2 \\
+&= 3.991 \cdot 10^{14} \\
+p_2 &= 8.69 \cdot (6.778 \cdot 10^{6})^2 \\
+&= 3.992 \cdot 10^{14} \\
+p_3 &= 3.990 \cdot 10^{14} \\
+p_4 &= 3.987 \cdot 10^{14} \\
+p_5 &= 3.984 \cdot 10^{14}
+\end{aligned}
+```
+The sum of the products is $19.944 \cdot 10^{14}$, so the mean is $\tfrac{19.944}{5} \cdot 10^{14} = 3.989 \cdot 10^{14}$ (unit $\text{m}^3/\text{s}^2$).
+**Answer:** the mean is $3.99 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, three significant figures as in the field strengths. Part b: the product corresponds to the quantity $\gamma M$. Its staying approximately constant shows that $g$ is inversely proportional to the square of the distance from the centre of the Earth. If $g$ is plotted against $\tfrac{1}{(R + h)^2}$, the points lie on a straight line through the origin whose slope is $\gamma M$.
+**Reasonableness:** The products differ from each other by about $0.2\,\%$. With the known values $\gamma M \approx 3.98 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, which corresponds to the mean. The field decreases with height: at a height of $3000\,\text{km}$ it is only less than half of the surface value, because $\left(\tfrac{6378}{9378}\right)^2 \approx 0.46$.
+
+## fy5-5-L3-04
+**Given:** $g = 9.81\,\text{m/s}^2$, mean radius of the Earth $R = 6371\,\text{km}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; densities of rocks: granite $2700\,\text{kg/m}^3$, basalt $3000\,\text{kg/m}^3$, sandstone $2400\,\text{kg/m}^3$
+**Find:** a) the mass $M$ of the Earth; b) the mean density $\rho$ of the Earth; c) whether the Earth can consist entirely of the rocks of the table and what this tells about its interior
+**Principle:** The Earth is spherically symmetric, so on the surface $g = \gamma \tfrac{M}{R^2}$, from which the mass can be solved. The mean density is the mass divided by the volume of the sphere $V = \tfrac{4}{3}\pi R^3$. The product $g R^2$ is equal to $\gamma M$. Finally the mean density is compared with the densities of the rocks of the crust.
+**Formula:** $M = \dfrac{g R^2}{\gamma}$ and $\rho = \dfrac{M}{V} = \dfrac{M}{\tfrac{4}{3}\pi R^3}$
+**Conversions:** $R = 6371\,\text{km} = 6371 \cdot 10^{3}\,\text{m} = 6.371 \cdot 10^{6}\,\text{m}$
+**Substitution:** Part a:
+```latex
+\begin{aligned}
+M &= \frac{9.81 \cdot (6.371 \cdot 10^{6})^2}{6.674 \cdot 10^{-11}}\,\text{kg} \\
+&= 5.966 \cdot 10^{24}\,\text{kg}
+\end{aligned}
+```
+Part b: the volume is $V = \tfrac{4}{3}\pi\,(6.371 \cdot 10^{6}\,\text{m})^3 = 1.0832 \cdot 10^{21}\,\text{m}^3$, so
+```latex
+\begin{aligned}
+\rho &= \frac{5.966 \cdot 10^{24}\,\text{kg}}{1.0832 \cdot 10^{21}\,\text{m}^3} \\
+&= 5508\,\tfrac{\text{kg}}{\text{m}^3}
+\end{aligned}
+```
+**Answer:** The mean density of the Earth is $5510\,\text{kg/m}^3$, three significant figures as in the field strength and the radius. The mass of the Earth is $5.97 \cdot 10^{24}\,\text{kg}$. Part c: the densities of the rocks are between $2400$ and $3000\,\text{kg/m}^3$, so if the Earth consisted entirely of them, its mean density would be at most $3000\,\text{kg/m}^3$. The real mean density is almost twice as great: $\tfrac{5510}{3000} \approx 1.8$ and $\tfrac{5510}{2700} \approx 2.0$. So the Earth cannot consist only of such rocks. Because the crust is light, the interior must be much denser matter than the crust, for example metallic iron.
+**Reasonableness:** The result is about $5.5$ times the density of water, $1000\,\text{kg/m}^3$, and corresponds to Cavendish's own result, about $5450\,\text{kg/m}^3$ (a difference of about $1\,\%$). The product is $\gamma M \approx 3.98 \cdot 10^{14}\,\text{m}^3/\text{s}^2$.
+
+## fy5-5-L3-05
+**Given:** period $T = 24.0\,\text{h}$, radius $R = 6378\,\text{km}$, $g = 9.81\,\text{m/s}^2$, mass of the person $m = 62.0\,\text{kg}$; in part b the period $T_\text{b} = 6.0\,\text{h}$
+**Find:** a) the centripetal acceleration $a_\text{n}$ and the reading $N$ of the scale at the equator; b) the reading $N_\text{b}$ of the scale when the period is $6.0\,\text{h}$; c) why the reading is smaller at the equator than at the pole
+**Principle:** The person moves along a circular path, so they have a centripetal acceleration $a_\text{n} = \tfrac{v^2}{R}$ towards the centre of the Earth, and $v = \tfrac{2\pi R}{T}$. The positive direction is chosen towards the centre. The forces on the person are the gravitational force $mg$ towards the centre and the support force $N$ of the scale away from the centre. The net force $mg - N$ towards the centre is equal to $m a_\text{n}$. The reading of the scale is the magnitude of the support force $N$.
+**Formula:** $a_\text{n} = \dfrac{(2\pi R / T)^2}{R}$ and $N = m\,(g - a_\text{n})$. The same formula works in part b when $T$ is replaced by the period $T_\text{b}$.
+**Conversions:** $T = 24.0\,\text{h} = 24.0 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $T_\text{b} = 6.0\,\text{h} = 6.0 \cdot 3600\,\text{s} = 21\,600\,\text{s}$; $R = 6378\,\text{km} = 6.378 \cdot 10^{6}\,\text{m}$
+**Substitution:** Part a, when $v = \tfrac{2\pi R}{T}$:
+```latex
+\begin{aligned}
+v &= \frac{2\pi \cdot 6.378 \cdot 10^{6}\,\text{m}}{86\,400\,\text{s}} \\
+&= 463.8\,\tfrac{\text{m}}{\text{s}} \\
+a_\text{n} &= \frac{(463.8\,\text{m/s})^2}{6.378 \cdot 10^{6}\,\text{m}} \\
+&= 0.03373\,\tfrac{\text{m}}{\text{s}^2} \\
+N &= 62.0\,\text{kg} \cdot (9.81 - 0.03373)\,\tfrac{\text{m}}{\text{s}^2} \\
+&= 606.1\,\text{N}
+\end{aligned}
+```
+Part b:
+```latex
+\begin{aligned}
+v_\text{b} &= \frac{2\pi \cdot 6.378 \cdot 10^{6}\,\text{m}}{21\,600\,\text{s}} \\
+&= 1855\,\tfrac{\text{m}}{\text{s}} \\
+a_\text{n,b} &= \frac{(1855\,\text{m/s})^2}{6.378 \cdot 10^{6}\,\text{m}} \\
+&= 0.5397\,\tfrac{\text{m}}{\text{s}^2} \\
+N_\text{b} &= 62.0\,\text{kg} \cdot (9.81 - 0.5397)\,\tfrac{\text{m}}{\text{s}^2} \\
+&= 574.8\,\text{N}
+\end{aligned}
+```
+**Answer:** The reading of the scale at the equator would be $575\,\text{N}$; the two significant figures of the period $6.0\,\text{h}$ limit the accuracy, so $570\,\text{N}$ is also acceptable. Part a: $a_\text{n} = 0.0337\,\text{m/s}^2$ and the reading of the scale is $606\,\text{N}$, whereas at the pole it would be $mg = 608\,\text{N}$. Part c: at the equator the net force $mg - N$ must be $m a_\text{n}$ towards the centre ($m a_\text{n} = 2.09\,\text{N}$), so $N = mg - m a_\text{n}$ is smaller than $mg$. At the pole the person does not move along a circular path, $a_\text{n} = 0$ and $N = mg$. So the scale shows less, although the gravitational force is by assumption equally large.
+**Reasonableness:** The period is a quarter of a day, so the speed is four times as great and $a_\text{n}$ grows $4^2 = 16$-fold: $16 \cdot 0.0337\,\text{m/s}^2 \approx 0.54\,\text{m/s}^2$. The reading then decreases by $62.0\,\text{kg} \cdot 0.54\,\text{m/s}^2 \approx 33\,\text{N}$, that is, about $5.5\,\%$ of $mg = 608\,\text{N}$, and $608\,\text{N} - 33\,\text{N} \approx 575\,\text{N}$. The reading is thus smaller than in part a ($606\,\text{N}$) but clearly positive.

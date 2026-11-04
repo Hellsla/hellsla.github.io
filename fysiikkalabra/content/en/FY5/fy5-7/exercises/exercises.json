@@ -40,6 +40,78 @@
       "answer": 16,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-06",
+      "level": 1,
+      "text": "The period of weight A is $0.25\\,\\text{s}$ and the frequency of weight B is $3.0\\,\\text{Hz}$. Which weight makes more oscillations per second?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Weight A, because the frequency $4.0\\,\\text{Hz}$ corresponding to its period is greater than $3.0\\,\\text{Hz}$.",
+      "choices": [
+        {
+          "text": "Weight B, because the number $3.0$ is greater than the number $0.25$.",
+          "feedback": "The period and the frequency cannot be compared by their numerical values, because they are different quantities in different units. The period must first be converted into a frequency $f = \\tfrac{1}{T}$."
+        },
+        {
+          "text": "Weight B, because its period $0.33\\,\\text{s}$ is longer, and a longer period means faster oscillation.",
+          "feedback": "A longer period means slower oscillation: one oscillation takes more time, so fewer of them fit into a second."
+        },
+        {
+          "text": "They oscillate equally fast, because $0.25\\,\\text{s}$ and $3.0\\,\\text{Hz}$ are the same thing in different units.",
+          "feedback": "They describe the same phenomenon, but they are different quantities, and $0.25\\,\\text{s}$ corresponds to the frequency $4.0\\,\\text{Hz}$, not to $3.0\\,\\text{Hz}$."
+        },
+        {
+          "text": "Weight A, because the frequency $4.0\\,\\text{Hz}$ corresponding to its period is greater than $3.0\\,\\text{Hz}$.",
+          "correct": true,
+          "feedback": "Correct: the frequency is the reciprocal of the period, so $f_A = \\tfrac{1}{0.25\\,\\text{s}} = 4.0\\,\\text{Hz}$. Weight A makes four oscillations per second, weight B three."
+        }
+      ]
+    },
+    {
+      "id": "fy5-7-L1-07",
+      "level": 1,
+      "text": "The frequency of an oscillator is $1.6\\,\\text{Hz}$. How long does it take before it has made $40$ full oscillations?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 25,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-08",
+      "level": 1,
+      "text": "A student claims: “When the frequency of an oscillator doubles, the period also doubles, because both tell about the speed of the oscillation.” Which of the following corrects the claim correctly?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "The period is halved, because then only half of the previous time is left for one oscillation.",
+      "choices": [
+        {
+          "text": "The period doubles, because the period and the frequency are directly proportional.",
+          "feedback": "They are not directly proportional but reciprocals of each other. When there are twice as many oscillations per second, one oscillation must last a shorter time."
+        },
+        {
+          "text": "The period does not change, because it is a fixed property of the oscillator.",
+          "feedback": "The period is the duration of one oscillation, and it changes when the frequency changes. It is not a constant but $T = \\tfrac{1}{f}$."
+        },
+        {
+          "text": "The period is halved, because then only half of the previous time is left for one oscillation.",
+          "correct": true,
+          "feedback": "Correct: when $f$ doubles, $T = \\tfrac{1}{f}$ is halved. The student mixed up the quantities: faster oscillation means a greater frequency but a shorter period."
+        },
+        {
+          "text": "The period grows slightly, because there are more oscillations and they take more time in total.",
+          "feedback": "The period is the duration of one oscillation, not the total of all of them. When more oscillations fit into a second, each of them must be shorter."
+        }
+      ]
     }
   ],
   "level2": [
@@ -75,6 +147,133 @@
       "answer": 7.5,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L2-05",
+      "level": 2,
+      "text": "A motion sensor measured the position of a weight oscillating on a spring, and the times of successive peaks of the graph were read into a table (example data).\n\nWhat is the frequency of the oscillation? Use the whole measurement series.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 1.64,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Times of the peaks of the graph (example data)",
+        "columns": [
+          "Peak",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.42"
+          ],
+          [
+            "2",
+            "1.04"
+          ],
+          [
+            "3",
+            "1.63"
+          ],
+          [
+            "4",
+            "2.25"
+          ],
+          [
+            "5",
+            "2.85"
+          ],
+          [
+            "6",
+            "3.47"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-7-L2-06",
+      "level": 2,
+      "text": "A student measured the period of a pendulum by timing $10$ full swings by hand five times (example data).\n\na) Calculate the period of the pendulum from the mean of the measurements.\n\nb) Estimate the uncertainty of the period as half of the range of the measurement results and explain why timing $10$ swings gives a more accurate period than timing one swing.\n\nWrite the result of part a) in the answer box.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 1.51,
+      "unit": "s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Duration of ten swings (example data)",
+        "columns": [
+          "Measurement",
+          "$t_{10}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "15.2"
+          ],
+          [
+            "2",
+            "14.8"
+          ],
+          [
+            "3",
+            "15.4"
+          ],
+          [
+            "4",
+            "15.0"
+          ],
+          [
+            "5",
+            "15.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-7-L2-07",
+      "level": 2,
+      "text": "From a graph of a motion sensor, the moments were read at which a weight oscillating on a spring passes the equilibrium position (example data).\n\nA student calculated: “Successive passes are $0.37\\,\\text{s}$ apart, so the period is $0.37\\,\\text{s}$ and the frequency $2.7\\,\\text{Hz}$.”\n\nExplain the student’s mistake and calculate the correct frequency. Write the correct frequency in the answer box.",
+      "kind": [
+        "error",
+        "data"
+      ],
+      "answer": 1.34,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Passes of the equilibrium position (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "Direction"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "up"
+          ],
+          [
+            "0.37",
+            "down"
+          ],
+          [
+            "0.75",
+            "up"
+          ],
+          [
+            "1.12",
+            "down"
+          ],
+          [
+            "1.49",
+            "up"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -101,6 +300,120 @@
       "answer": 1.8,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L3-04",
+      "level": 3,
+      "text": "In an electrocardiogram each heartbeat shows up as a sharp R peak. The table gives the times of the R peaks of the same person at rest and right after exercise, six successive beat intervals in each case (example data). The beats repeat approximately evenly, so they can be treated as periodic motion whose period is the beat interval.\n\na) Determine the beat interval at rest and after exercise from the total time of six intervals and calculate the pulse, that is, the number of beats per minute, in both situations.\n\nb) By how many percent did the pulse rise during exercise?\n\nc) Explain why the period should be determined from the total time of six intervals and not from one beat interval.\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 79,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Times of the R peaks (example data)",
+        "columns": [
+          "Beat",
+          "$t_{\\text{rest}}\\,(\\text{s})$",
+          "$t_{\\text{exercise}}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "1",
+            "0.83",
+            "0.47"
+          ],
+          [
+            "2",
+            "1.64",
+            "0.93"
+          ],
+          [
+            "3",
+            "2.49",
+            "1.38"
+          ],
+          [
+            "4",
+            "3.31",
+            "1.86"
+          ],
+          [
+            "5",
+            "4.12",
+            "2.31"
+          ],
+          [
+            "6",
+            "4.96",
+            "2.77"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-7-L3-05",
+      "level": 3,
+      "text": "A motion sensor measures the distance $d$ to a weight oscillating vertically on a spring. The table is example data: the measurement starts at the time $t = 0$, when the weight passes the equilibrium position and the distance starts to increase. Assume that the oscillation is sinusoidal and does not damp.\n\na) Read from the table the distance of the equilibrium position $D$, the amplitude $A$ and the period $T$.\n\nb) Model the distance with the expression $d = D + A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$ and predict the distance at the time $t = 5.0\\,\\text{s}$.\n\nc) The measurement covers only one period. Explain why the reliability of the prediction depends on how accurately the period is known.\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 44,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Distance to the motion sensor (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$d\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "40.1"
+          ],
+          [
+            "0.2",
+            "44.3"
+          ],
+          [
+            "0.4",
+            "46.0"
+          ],
+          [
+            "0.6",
+            "44.1"
+          ],
+          [
+            "0.8",
+            "39.9"
+          ],
+          [
+            "1.0",
+            "35.8"
+          ],
+          [
+            "1.2",
+            "34.0"
+          ],
+          [
+            "1.4",
+            "35.7"
+          ],
+          [
+            "1.6",
+            "40.1"
+          ]
+        ]
+      }
     }
   ]
 }
