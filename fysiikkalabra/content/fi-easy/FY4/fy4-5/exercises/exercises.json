@@ -43,6 +43,80 @@
       "answer": 190,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-5-L1-06",
+      "level": 1,
+      "text": "Laatikko liukuu oikealle vaakasuoralla lattialla. Lattian kitka hidastaa laatikkoa. Ilmanvastusta ei oteta huomioon. Mitkä voimat piirretään laatikon voimakuvioon?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Paino, tukivoima ja kitka, koska kullakin voimalla on aiheuttaja",
+      "unit": "",
+      "tolerance": 0.02,
+      "fbd": "identify",
+      "choices": [
+        {
+          "text": "Paino, tukivoima, kitka ja liikevoima, koska laatikko liikkuu oikealle",
+          "feedback": "Liikkeen suuntaista voimaa ei tarvita, eikä sellaista ole. Mikään kappale ei aiheuta sitä. Voimaa tarvitaan nopeuden muuttamiseen. Liikkeen jatkumiseen sitä ei tarvita."
+        },
+        {
+          "text": "Paino ja kitka, koska tukivoima kumoaa painon eikä näy kuviossa",
+          "feedback": "Voimakuvioon piirretään jokainen kappaleeseen vaikuttava voima. Näin on silloinkin, kun voimat kumoavat toisensa. Tukivoima ja paino ovat yhtä pitkät, mutta molemmat ovat mukana."
+        },
+        {
+          "text": "Paino, tukivoima, kitka ja nopeus, koska nopeus kertoo liikkeen suunnan",
+          "feedback": "Nopeus ei ole voima. Se on suure, joka kuvaa kappaleen liikettä. Tarvittaessa nopeus piirretään voimakuvion viereen omalla värillään. Sitä ei piirretä voimana."
+        },
+        {
+          "text": "Paino, tukivoima ja kitka, koska kullakin voimalla on aiheuttaja",
+          "feedback": "Oikein: Maa vetää laatikkoa (paino), lattia tukee sitä (tukivoima) ja lattia vastustaa liukumista (kitka). Kitka osoittaa vasemmalle. Se on ainoa vaakasuora voima.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy4-5-L1-07",
+      "level": 1,
+      "text": "Kaksi ihmistä työntää kaappia vaakasuoralla lattialla samaan suuntaan. Toinen työntää $120\\,\\text{N}$:n voimalla ja toinen $85\\,\\text{N}$:n voimalla. Lattian kitkavoima kaappiin on $150\\,\\text{N}$ vastakkaiseen suuntaan. Paino ja tukivoima kumoavat toisensa. Kuinka suuri on kaappiin vaikuttava kokonaisvoima?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 55,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L1-08",
+      "level": 1,
+      "text": "Laatikko on vaakasuoralla lattialla. Laatikkoa vedetään narulla vinosti ylöspäin, mutta laatikko pysyy paikallaan. Miten lattian tukivoima $N$ suhtautuu laatikon painoon $G$?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$N$ on painoa pienempi, koska naru kannattelee osaa painosta",
+      "unit": "",
+      "tolerance": 0.02,
+      "fbd": "identify",
+      "choices": [
+        {
+          "text": "$N$ on yhtä suuri kuin $G$, koska laatikko pysyy paikallaan pystysuunnassa",
+          "feedback": "Pystysuunnassa ylöspäin vaikuttaa tukivoiman lisäksi narun pystykomponentti. Kokonaisvoima on nolla. Siksi $N + T_y = G$, ja $N$ on painoa pienempi."
+        },
+        {
+          "text": "$N$ on painoa suurempi, koska naru painaa laatikkoa lattiaa vasten",
+          "feedback": "Naru vetää laatikkoa ylöspäin. Se ei paina laatikkoa lattiaa vasten. Narun pystykomponentti pienentää tukivoimaa."
+        },
+        {
+          "text": "$N$ on painoa pienempi, koska naru kannattelee osaa painosta",
+          "feedback": "Oikein: pystysuunnan yhtälö on $N + T\\sin\\alpha - G = 0$, joten $N = G - T\\sin\\alpha$. Tukivoima ei ole aina yhtä suuri kuin paino.",
+          "correct": true
+        },
+        {
+          "text": "$N$ on nolla, koska naru kannattelee laatikon koko painon",
+          "feedback": "Jos $N$ olisi nolla, myös lattian kitka olisi nolla. Silloin narun vaakakomponentti panisi laatikon liikkeelle. Laatikko kuitenkin pysyy paikallaan. Siksi lattia tukee sitä ja $N > 0$."
+        }
+      ]
     }
   ],
   "level2": [
@@ -82,6 +156,91 @@
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L2-05",
+      "level": 2,
+      "text": "Voima-antureilla tutkitaan rengasta. Rengas pysyy paikallaan kolmen köyden varassa. Köysi A vetää rengasta vaakasuoraan vasemmalle. Köysi C vetää rengasta pystysuoraan alas. Köysi B vetää rengasta vinosti ylös oikealle. Köyden B ja vaakatason välinen kulma on $\\alpha$. Köysien massoja ja renkaan massaa ja painoa ei oteta huomioon. Taulukossa on esimerkkiaineisto kolmesta mittauksesta. Anturit A, B ja C näyttävät voimat $F_\\text{A}$, $F_\\text{B}$ ja $F_\\text{C}$.\n\na) Perustele, miksi renkaaseen vaikuttavien voimien summa on nolla. Kirjoita liikeyhtälöt $x$- ja $y$-suunnassa. Piirrä renkaan voimakuvio suorakulmiona.\n\nb) Laske kulma $\\alpha$ kunkin mittauksen voimista $F_\\text{A}$ ja $F_\\text{C}$. Laske myös kolmen kulman keskiarvo.\n\nc) Tarkista tulos. Laske ensimmäisen mittauksen komponenteista voima $F_\\text{B}$. Vertaa tulosta anturin lukemaan.\n\nVastauslaatikkoon tulee kohdan b) kulmien keskiarvo.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 40.1,
+      "unit": "°",
+      "tolerance": 0.02,
+      "fbd": "equations",
+      "data": {
+        "caption": "Kolmen köyden voimat renkaaseen (esimerkkiaineisto)",
+        "columns": [
+          "$F_\\text{A}\\,(\\text{N})$",
+          "$F_\\text{C}\\,(\\text{N})$",
+          "$F_\\text{B}\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "3.0",
+            "2.5",
+            "3.9"
+          ],
+          [
+            "4.5",
+            "3.8",
+            "5.9"
+          ],
+          [
+            "6.0",
+            "5.1",
+            "7.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-5-L2-06",
+      "level": 2,
+      "text": "Laatikon massa on $12\\,\\text{kg}$. Laatikko potkaistaan liikkeelle vaakasuoralla lattialla. Laatikko liukuu oikealle ja hidastuu. Lattian kitkavoima laatikkoon on $30\\,\\text{N}$ vasemmalle. Ilmanvastusta ei oteta huomioon. Opiskelija ratkaisee kiihtyvyyden näin:\n\n”Laatikko liikkuu oikealle, joten siihen vaikuttaa potkun antama voima $40\\,\\text{N}$ oikealle. Kokonaisvoima on $40\\,\\text{N} - 30\\,\\text{N} = 10\\,\\text{N}$ oikealle, joten $a = 10\\,\\text{N} : 12\\,\\text{kg} \\approx 0{,}83\\,\\text{m/s}^2$ oikealle ja laatikko kiihtyy.”\n\na) Mikä on opiskelijan virhe? Piirrä laatikon oikea voimakuvio.\n\nb) Laske laatikon kiihtyvyyden suuruus oikein.\n\nVastauslaatikkoon tulee kohdan b) kiihtyvyyden suuruus.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 2.5,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "fbd": "error"
+    },
+    {
+      "id": "fy4-5-L2-07",
+      "level": 2,
+      "text": "Opiskelija tutkii kokeellisesti, miten kaksi vinoa voimaa yhdistyvät. Rengas on vaakasuoralla pöydällä. Renkaan paino ja pöydän tukivoima kumoavat toisensa. Opiskelija kiinnittää renkaaseen kolme voima-anturia. Anturit 1 ja 2 vetävät rengasta voimilla $F_1 = 6{,}0\\,\\text{N}$ ja $F_2 = 8{,}0\\,\\text{N}$. Voimien suuntien välinen kulma on $\\varphi$. Anturi 3 vetää rengasta vastakkaiseen suuntaan kuin voimien $\\overline{F}_1$ ja $\\overline{F}_2$ summa. Rengas pysyy paikallaan. Taulukossa on esimerkkiaineisto kolmesta mittauksesta.\n\na) Perustele, miksi anturin 3 lukema $F_3$ on yhtä suuri kuin voimien $\\overline{F}_1$ ja $\\overline{F}_2$ summan suuruus.\n\nb) Laske voimien $\\overline{F}_1$ ja $\\overline{F}_2$ summan suuruus, kun $\\varphi = 60\\,{}^\\circ$. Valitse $x$-akseli voiman $\\overline{F}_1$ suuntaan.\n\nc) Vertaa laskettua arvoa mitattuun arvoon. Kerro, mistä pieni ero voi johtua.\n\nVastauslaatikkoon tulee kohdan b) summan suuruus.",
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "answer": 12.2,
+      "unit": "N",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Anturin 3 lukema eri kulmilla (esimerkkiaineisto)",
+        "columns": [
+          "$\\varphi\\,({}^\\circ)$",
+          "$F_3\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "30",
+            "13.4"
+          ],
+          [
+            "60",
+            "12.3"
+          ],
+          [
+            "90",
+            "10.1"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -112,6 +271,112 @@
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-5-L3-04",
+      "level": 3,
+      "text": "Laatikon massa on $25\\,\\text{kg}$. Laatikkoa vedetään vaakasuoralla lattialla köydellä, joka on $30\\,{}^\\circ$:n kulmassa vaakatasoon nähden. Köyden jännitysvoima on koko ajan $120\\,\\text{N}$. Laatikko lähtee levosta, ja liikeanturi mittaa sen nopeuden. Taulukossa on esimerkkiaineisto mittauksesta. Köyden massaa ja ilmanvastusta ei oteta huomioon.\n\na) Piirrä laatikon voimakuvio. Kirjoita liikeyhtälöt $x$- ja $y$-suunnassa.\n\nb) Määritä laatikon kiihtyvyys taulukon nopeuksista.\n\nc) Laske lattian kitkavoima laatikkoon.\n\nd) Laske lattian tukivoima. Selitä, miksi se on painoa pienempi.\n\nVastauslaatikkoon tulee kohdan c) kitkavoima.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 84,
+      "unit": "N",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Laatikon nopeus köyden vetäessä (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "1.0",
+            "0.78"
+          ],
+          [
+            "2.0",
+            "1.63"
+          ],
+          [
+            "3.0",
+            "2.38"
+          ],
+          [
+            "4.0",
+            "3.22"
+          ],
+          [
+            "5.0",
+            "4.01"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-5-L3-05",
+      "level": 3,
+      "text": "Nosturi nostaa levosta kuorman suoraan ylös ja pysäyttää sen ylhäällä. Kuorman massa on $80\\,\\text{kg}$. Nosto kestää $8{,}0\\,\\text{s}$, ja siinä on kolme vaihetta. Ensimmäisessä vaiheessa kuorma kiihtyy hetkien $0{,}0\\,\\text{s}$ ja $2{,}0\\,\\text{s}$ välillä. Toisessa vaiheessa kuorma liikkuu tasaisella nopeudella hetkien $2{,}0\\,\\text{s}$ ja $6{,}0\\,\\text{s}$ välillä. Kolmannessa vaiheessa kuorma hidastuu pysähtymiseen hetkien $6{,}0\\,\\text{s}$ ja $8{,}0\\,\\text{s}$ välillä. Kiihtyvyys on kussakin vaiheessa likimain vakio. Voima-anturi mittaa köyden voiman kuormaan. Taulukossa on esimerkkiaineisto lukemista. Köyden massaa ja ilmanvastusta ei oteta huomioon.\n\na) Piirrä kuorman voimakuvio ensimmäisessä vaiheessa. Kirjoita liikeyhtälö.\n\nb) Laske kuorman kiihtyvyys kussakin vaiheessa. Käytä vaiheen lukemien keskiarvoa.\n\nc) Selitä, miksi köyden voima on kolmannessa vaiheessa painoa pienempi, vaikka kuorma liikkuu ylöspäin.\n\nd) Kuinka korkealle kuorma nostetaan?\n\nVastauslaatikkoon tulee kohdan d) nostokorkeus.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 14.4,
+      "unit": "m",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Köyden voima kuormaan (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$T\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.5",
+            "881"
+          ],
+          [
+            "1.0",
+            "878"
+          ],
+          [
+            "1.5",
+            "883"
+          ],
+          [
+            "3.0",
+            "786"
+          ],
+          [
+            "4.0",
+            "783"
+          ],
+          [
+            "5.0",
+            "785"
+          ],
+          [
+            "6.5",
+            "691"
+          ],
+          [
+            "7.0",
+            "688"
+          ],
+          [
+            "7.5",
+            "690"
+          ]
+        ]
+      }
     }
   ]
 }

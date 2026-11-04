@@ -208,3 +208,164 @@ a 0
 **Substitution:** $N = 0.10\,\text{N} - 0.0040\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 0.10\,\text{N} - 0.03924\,\text{N} = 0.06076\,\text{N}$
 **Answer:** $0.061\,\text{N} \approx 0.06\,\text{N}$. The normal force is a difference, and in a difference the number of decimals decides: the buoyancy $0.10\,\text{N}$ is known to a hundredth of a newton.
 **Reasonableness:** The buoyancy is larger than the weight, $0.039\,\text{N}$, so without the ceiling the balloon would rise. The ceiling stops it by pushing down exactly by the excess: $0.039\,\text{N} + 0.061\,\text{N} = 0.10\,\text{N}$. Here the normal force points down, not up.
+
+## fy4-5-L1-06
+**Find:** which forces are drawn in the free-body diagram when a box slides on a horizontal floor and slows down because of friction.
+**Principle:** The free-body diagram includes only the forces that act on the chosen object, and every force has a cause: the Earth, a surface, a string or a pusher. Velocity and acceleration are not forces. According to Newton's second law, an object can move without a force in the direction of motion.
+**Model answer:** Three forces act on the box. The Earth pulls the box down (weight), the floor supports it upward (normal force) and the floor resists the sliding to the left (friction). The weight and the normal force are equally long, because the box does not move in the vertical direction, and friction is the only horizontal force, so it slows the box down. There is no motion force pointing to the right, because there is no object that would cause it. Velocity is not drawn as a force, but if needed separately beside the free-body diagram. The normal force must not be left out, even though it cancels the weight.
+
+## fy4-5-L1-07
+**Given:** pushing forces $F_1 = 120\,\text{N}$ and $F_2 = 85\,\text{N}$ in the same direction, friction force $F_\mu = 150\,\text{N}$ in the opposite direction; the weight and the normal force cancel each other
+**Find:** the magnitude of the net force $\Sigma F$ in $\text{N}$
+**Principle:** The net force is the vector sum of the forces. The forces lie on the same line, so the sum is calculated from the horizontal components, with $x$ pointing in the direction of the pushing. In the vertical direction the net force is zero.
+**Free-body diagram:** The cabinet as a rectangle, $x$ in the direction of the pushing and $y$ up. Two pushing forces $\overline{F}_1$ and $\overline{F}_2$ forward, the friction force $\overline{F}_\mu$ backward, and the weight $\overline{G}$ down and the normal force $\overline{N}$ up with equal lengths. The friction force is longer than either pushing force but shorter than their sum.
+**Formula:** $\Sigma F_x = F_1 + F_2 - F_\mu$
+**Conversions:** All forces are in newtons, so no conversions are needed.
+**Substitution:** $\Sigma F_x = 120\,\text{N} + 85\,\text{N} - 150\,\text{N} = 55\,\text{N}$
+**Answer:** $55\,\text{N}$ in the direction of the pushing, two significant figures like the given forces.
+**Reasonableness:** The pushing forces total $205\,\text{N}$, which is greater than the friction $150\,\text{N}$, so the net force points in the direction of the pushing and the cabinet accelerates. If the pushing forces totalled less than $150\,\text{N}$, the cabinet would slow down or stay at rest. The net force is not the sum of the magnitudes of the forces, $355\,\text{N}$.
+
+## fy4-5-L1-08
+**Find:** how the normal force $N$ from the floor compares with the weight $G$ of the box when the box is pulled with a string obliquely upward and does not move.
+**Principle:** The box is at rest, so according to Newton's second law the sum of the forces is zero also in the vertical direction. There are three forces in the vertical direction: the weight down, and the normal force and the vertical component of the tension of the string up.
+**Model answer:** The equation in the vertical direction is $N + T\sin\alpha - G = 0$, so $N = G - T\sin\alpha$. The vertical component of the string supports part of the weight, and the floor needs to support only the rest, so the normal force is smaller than the weight. The normal force is therefore not always equal to the weight: it is exactly as large as the balance in the vertical direction requires. If the string pulled horizontally, the normal force would be equal to the weight, and if the string pulled the box obliquely downward, the normal force would be greater than the weight. The normal force would be zero only when the vertical component of the string were equal to the whole weight, and then the box would be about to lift off the floor.
+
+## fy4-5-L2-05
+**Given:** the ring is at rest; measurements $(F_\text{A}, F_\text{C}, F_\text{B})$: $(3.0;\ 2.5;\ 3.9)\,\text{N}$, $(4.5;\ 3.8;\ 5.9)\,\text{N}$ and $(6.0;\ 5.1;\ 7.9)\,\text{N}$
+**Find:** the mean $\alpha_\text{avg}$ of the angle $\alpha$ in $^\circ$
+**Principle:** The ring is at rest, so according to Newton's second law the sum of the forces acting on it is zero in both the horizontal and the vertical direction. Rope B is oblique, so its force is divided into components.
+**Free-body diagram:** The ring as a rectangle, $x$ to the right and $y$ up. The tension $\overline{F}_\text{A}$ of rope A to the left and the tension $\overline{F}_\text{C}$ of rope C down. The force $\overline{F}_\text{B}$ of rope B starts obliquely up and to the right at an angle $\alpha$, and its components $F_\text{B}\cos\alpha$ and $F_\text{B}\sin\alpha$ are drawn with dashed lines. The components are as long as $F_\text{A}$ and $F_\text{C}$. The weight of the ring is not drawn, because it is ignored in the task.
+**Reading the graph:** The forces $F_\text{A}$ and $F_\text{C}$ of each measurement are read from the table. The reading of sensor B is also taken for comparison.
+**Formula:** $x$: $F_\text{B}\cos\alpha - F_\text{A} = 0$ and $y$: $F_\text{B}\sin\alpha - F_\text{C} = 0$, so $\alpha = \arctan\dfrac{F_\text{C}}{F_\text{A}}$
+**Conversions:** The forces are in newtons and the angle is calculated in degrees, so no conversions are needed; the calculator is in DEG mode.
+**Substitution:** The angles are
+```latex
+\begin{aligned}
+\alpha_1 &= \arctan\dfrac{2.5}{3.0} = 39.8\,{}^\circ \\
+\alpha_2 &= \arctan\dfrac{3.8}{4.5} = 40.2\,{}^\circ \\
+\alpha_3 &= \arctan\dfrac{5.1}{6.0} = 40.4\,{}^\circ
+\end{aligned}
+```
+The sum is $120.4\,{}^\circ$, so the mean is $\alpha_\text{avg} = 120.4\,{}^\circ : 3 = 40.1\,{}^\circ$. Check with the first measurement: $F_\text{B} = \sqrt{(3.0\,\text{N})^2 + (2.5\,\text{N})^2} = 3.9\,\text{N}$.
+**Answer:** a) The free-body diagram and the equations are above. b) $\alpha_\text{avg} = 40.1\,{}^\circ \approx 40\,{}^\circ$, to two significant figures like the readings of the forces. c) The calculated $F_\text{B} = 3.9\,\text{N}$ is the same as the reading of the sensor.
+**Reasonableness:** The three angles differ from each other by at most $0.6\,{}^\circ$, so they describe the same angle and the small variation is random variation of the measurement. The forces grow in the same proportion, and the ratio $F_\text{C} : F_\text{A}$ stays at about $0.84$. The angle is less than $45\,{}^\circ$, so $F_\text{A} > F_\text{C}$ as in the table. The force $F_\text{B}$ is greater than either component but smaller than their sum, $5.5\,\text{N}$.
+
+## fy4-5-L2-06
+**Given:** $m = 12\,\text{kg}$, friction force $F_\mu = 30\,\text{N}$ to the left, the box slides to the right and slows down; there is no air drag
+**Find:** a) the student's error; b) the magnitude of the acceleration $a$ in $\text{m/s}^2$
+**Principle:** The free-body diagram includes only forces that act on the object and have a cause. The student drew a “force from the kick” on the box, although after the kick no object pushes the box to the right, and concluded the direction of the acceleration from the direction of the motion, although the box slows down. The force of the kick acts on the box only while the foot touches it. When the box has left the foot, only friction affects its horizontal motion.
+**Free-body diagram:** The box as a rectangle, $x$ to the right and $y$ up. The weight $\overline{G}$ down and the normal force $\overline{N}$ from the floor up with equal lengths, and the friction force $\overline{F}_\mu$ to the left. No force is drawn to the right. The velocity to the right and the acceleration to the left are drawn separately beside the diagram.
+```voimakuvio
+pinta 0
+G 117,72
+N 117,72
+F_mu 30 vasen
+v oikea
+a vasen
+```
+**Formula:** $x$: $-F_\mu = m a_x$, so $a_x = -\dfrac{F_\mu}{m}$ and the magnitude of the acceleration is $a = \dfrac{F_\mu}{m}$
+**Conversions:** The force is in newtons and the mass in kilograms, so the result comes directly in $\text{m/s}^2$.
+**Substitution:** $a = \dfrac{30\,\text{N}}{12\,\text{kg}} = 2.5\,\text{m/s}^2$
+**Answer:** a) An extra force that has no cause was included in the free-body diagram. b) $a = 2.5\,\text{m/s}^2$ to the left, that is, against the motion, two significant figures like the given values. The box slows down.
+**Reasonableness:** The net force $30\,\text{N}$ points to the left, so the acceleration points to the left and the box slows down, as the task says. The student's result, according to which the box accelerates, contradicts this. Friction is only about a quarter of the weight of the box, $118\,\text{N}$.
+
+## fy4-5-L2-07
+**Given:** $F_1 = 6.0\,\text{N}$, $F_2 = 8.0\,\text{N}$, the angle between their directions $\varphi = 60\,{}^\circ$; from the table $F_3 = 12.3\,\text{N}$ when $\varphi = 60\,{}^\circ$
+**Find:** the magnitude of the sum of the forces $\overline{F}_1$ and $\overline{F}_2$, $\Sigma F$, in $\text{N}$ when $\varphi = 60\,{}^\circ$
+**Principle:** a) The ring is at rest, so according to Newton's second law the sum of the forces $\overline{F}_1$, $\overline{F}_2$ and $\overline{F}_3$ is zero. Therefore the force of sensor 3 is equal in magnitude and opposite in direction to the sum of the forces $\overline{F}_1$ and $\overline{F}_2$, and its reading tells the magnitude of the sum. b) The sum of oblique forces is calculated by components.
+**Free-body diagram:** The ring as a rectangle, $x$ in the direction of the force $\overline{F}_1$. The force $\overline{F}_1$ starts straight in the direction of the $x$ axis and the force $\overline{F}_2$ at an angle of $60\,{}^\circ$ upward. The force $\overline{F}_3$ starts in the direction opposite to their sum. The components $F_{2x}$ and $F_{2y}$ are drawn with dashed lines.
+**Reading the graph:** The row $\varphi = 60\,{}^\circ$ is read from the table: $F_3 = 12.3\,\text{N}$.
+**Formula:** $\Sigma F_x = F_1 + F_2\cos\varphi$ and $\Sigma F_y = F_2\sin\varphi$, so $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$
+**Conversions:** The forces are in newtons and the angle in degrees, so no conversions are needed.
+**Substitution:** First the components:
+```latex
+\begin{aligned}
+\Sigma F_x &= 6.0\,\text{N} + 8.0\,\text{N}\cdot\cos 60\,{}^\circ \\
+&= 10.0\,\text{N} \\
+\Sigma F_y &= 8.0\,\text{N}\cdot\sin 60\,{}^\circ \\
+&= 6.93\,\text{N}
+\end{aligned}
+```
+Then the magnitude: $\Sigma F = \sqrt{(10.0\,\text{N})^2 + (6.93\,\text{N})^2} = 12.2\,\text{N}$
+**Answer:** a) The ring is at rest, so the force $\overline{F}_3$ cancels the sum of the forces $\overline{F}_1$ and $\overline{F}_2$. b) $\Sigma F \approx 12\,\text{N}$, two significant figures like the given forces. c) The measured $12.3\,\text{N}$ differs from the calculated $12.2\,\text{N}$ by about $0.1\,\text{N}$, that is, about one per cent; the difference is of the order of the measurement uncertainty. It may be due to inaccuracy in reading the angle, zeroing of the sensors, or the ring not being completely at rest.
+**Reasonableness:** The sum $12.2\,\text{N}$ is smaller than the sum of the magnitudes of the forces, $14.0\,\text{N}$, and greater than the greater force $8.0\,\text{N}$, as it should be at the angle $60\,{}^\circ$. In the table the reading decreases as the angle grows ($13.4\,\text{N}$, $12.3\,\text{N}$, $10.1\,\text{N}$), and at the angle $90\,{}^\circ$ the sum is $\sqrt{6.0^2 + 8.0^2}\,\text{N} = 10\,\text{N}$ as in the measurement.
+
+## fy4-5-L3-04
+**Given:** $m = 25\,\text{kg}$, $T = 120\,\text{N}$, $\alpha = 30\,{}^\circ$, the box starts from rest; from the table $v = 0$ at $t = 0$ and $v = 4.01\,\text{m/s}$ at $t = 5.0\,\text{s}$; $g = 9.81\,\text{m/s}^2$
+**Find:** the friction force $F_\mu$ in $\text{N}$ and the normal force $N$
+**Principle:** The box accelerates in the horizontal direction and does not move in the vertical direction. The acceleration is obtained from the change in velocity (chapter *Acceleration and uniformly accelerated motion*), and Newton's second law is written by components: in the horizontal direction the net force is $ma$, in the vertical direction zero.
+**Free-body diagram:** The box as a rectangle, $x$ in the direction of motion and $y$ up. The weight $\overline{G}$ down and the normal force $\overline{N}$ from the floor up and shorter than the weight, the tension $\overline{T}$ of the rope obliquely up and forward, and the friction force $\overline{F}_\mu$ backward. The components $T_x$ and $T_y$ with dashed lines. The acceleration forward is drawn separately, not as a force.
+```voimakuvio
+pinta 0
+G 245,25
+N 185,25
+T 120 30
+F_mu 83,87 vasen
+a oikea
+akselit 0
+komponentit T
+```
+**Reading the graph:** The velocity grows by about the same amount every second: the changes of consecutive seconds are $0.78$, $0.85$, $0.75$, $0.84$ and $0.79\,\text{m/s}$. The acceleration is therefore approximately constant, and it is obtained from the change over the whole interval, $\Delta v = 4.01\,\text{m/s} - 0 = 4.01\,\text{m/s}$ and $\Delta t = 5.0\,\text{s}$.
+**Formula:** $a = \dfrac{\Delta v}{\Delta t}$, $x$: $T\cos\alpha - F_\mu = ma$ and $y$: $N + T\sin\alpha - mg = 0$, so $F_\mu = T\cos\alpha - ma$ and $N = mg - T\sin\alpha$
+**Conversions:** All quantities are in SI units, and $\text{N} / \text{kg} = \text{m/s}^2$.
+**Substitution:** The acceleration is $a = \dfrac{4.01\,\text{m/s}}{5.0\,\text{s}} = 0.802\,\text{m/s}^2$. The friction force:
+```latex
+\begin{aligned}
+F_\mu &= 120\,\text{N}\cdot\cos 30\,{}^\circ \\
+&\quad - 25\,\text{kg}\cdot 0.802\,\text{m/s}^2 \\
+&= 103.9\,\text{N} - 20.05\,\text{N} \\
+&= 83.9\,\text{N}
+\end{aligned}
+```
+The normal force:
+```latex
+\begin{aligned}
+N &= 25\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\
+&\quad - 120\,\text{N}\cdot\sin 30\,{}^\circ \\
+&= 245.25\,\text{N} - 60\,\text{N} \\
+&= 185\,\text{N}
+\end{aligned}
+```
+**Answer:** a) The free-body diagram and the equations are above. b) $a \approx 0.80\,\text{m/s}^2$. c) $F_\mu \approx 84\,\text{N}$, two significant figures like the mass and the angle. d) $N \approx 185\,\text{N} \approx 1.9\cdot 10^2\,\text{N}$, two significant figures like the mass and the angle. The normal force is smaller than the weight, $245\,\text{N}$, because the vertical component of the rope, $T\sin\alpha = 60\,\text{N}$, supports part of the weight: the floor needs to support only the rest, $N + T\sin\alpha = mg$.
+**Reasonableness:** The horizontal component of the rope, $104\,\text{N}$, is greater than the friction $84\,\text{N}$, so the net force $20\,\text{N}$ points forward and the box accelerates, as the table shows. The net force $ma = 20\,\text{N}$ is about a fifth of the horizontal component. Check in the vertical direction: $185\,\text{N} + 60\,\text{N} = 245\,\text{N} = mg$.
+
+## fy4-5-L3-05
+**Given:** $m = 80\,\text{kg}$, the load starts from rest and stops; phases $0$–$2.0\,\text{s}$, $2.0$–$6.0\,\text{s}$ and $6.0$–$8.0\,\text{s}$; the force of the rope from the table; $g = 9.81\,\text{m/s}^2$
+**Find:** the lifting height $h$ in $\text{m}$ and the acceleration in each phase
+**Principle:** The weight and the tension of the rope act on the load. According to Newton's second law the acceleration is obtained from the difference of the forces, and the direction of the acceleration is the direction of the net force: up when the force of the rope is greater than the weight, and down when it is smaller than the weight. When the acceleration is known, the height is obtained from the distances of the phases of the motion (chapter *Acceleration and uniformly accelerated motion*).
+**Free-body diagram:** In the first phase the load is a rectangle, $y$ up. The weight $\overline{G}$ down and the tension $\overline{T}$ of the rope up, the tension longer than the weight. The velocity up and the acceleration up are drawn separately beside the diagram, not as forces. In the second phase the arrows are equally long, and in the third phase the tension is shorter than the weight.
+```voimakuvio
+pinta 0
+G 784,8
+T 880,7 ylös
+v ylös
+a ylös
+```
+**Reading the graph:** The readings of the table are divided into phases according to the moments $2.0\,\text{s}$ and $6.0\,\text{s}$. The sum of the readings of phase 1 is $881\,\text{N} + 878\,\text{N} + 883\,\text{N} = 2642\,\text{N}$, so the mean is $880.7\,\text{N}$. In phase 2 the sum is $2354\,\text{N}$ and the mean $784.7\,\text{N}$, and in phase 3 the sum is $2069\,\text{N}$ and the mean $689.7\,\text{N}$.
+**Formula:** $T - mg = m a_y$, so $a_y = \dfrac{T - mg}{m}$. The greatest velocity is $v_\text{max} = a_1 \Delta t_1$, and the distances are $h_1 = \tfrac12 a_1 \Delta t_1^2$, $h_2 = v_\text{max}\,\Delta t_2$ and $h_3 = \tfrac12 v_\text{max}\,\Delta t_3$, because in the third phase the velocity decreases uniformly to zero. The height is $h = h_1 + h_2 + h_3$
+**Conversions:** The forces are in newtons, the mass in kilograms and the times in seconds, so no conversions are needed. The weight is $mg = 80\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 784.8\,\text{N}$.
+**Substitution:** The accelerations:
+```latex
+\begin{aligned}
+a_1 &= \frac{880.7 - 784.8}{80}\,\frac{\text{m}}{\text{s}^2} \\
+&= 1.20\,\text{m/s}^2 \\
+a_2 &= \frac{784.7 - 784.8}{80}\,\frac{\text{m}}{\text{s}^2} \\
+&\approx 0 \\
+a_3 &= \frac{689.7 - 784.8}{80}\,\frac{\text{m}}{\text{s}^2} \\
+&= -1.19\,\text{m/s}^2
+\end{aligned}
+```
+The greatest velocity is $v_\text{max} = 1.198\,\text{m/s}^2\cdot 2.0\,\text{s} = 2.397\,\text{m/s}$. The distances:
+```latex
+\begin{aligned}
+h_1 &= \tfrac12\cdot 1.198\,\tfrac{\text{m}}{\text{s}^2}\cdot (2.0\,\text{s})^2 \\
+&= 2.40\,\text{m} \\
+h_2 &= 2.397\,\tfrac{\text{m}}{\text{s}}\cdot 4.0\,\text{s} \\
+&= 9.59\,\text{m} \\
+h_3 &= \tfrac12\cdot 2.397\,\tfrac{\text{m}}{\text{s}}\cdot 2.0\,\text{s} \\
+&= 2.40\,\text{m}
+\end{aligned}
+```
+The height is $h = 2.40\,\text{m} + 9.59\,\text{m} + 2.40\,\text{m} = 14.38\,\text{m}$.
+**Answer:** a) The free-body diagram and the equation are above. b) $a_1 \approx 1.2\,\text{m/s}^2$ up, $a_2 \approx 0$ and $a_3 \approx -1.2\,\text{m/s}^2$, that is, the acceleration is down. c) In the third phase the net force points down, so the force of the rope is smaller than the weight although the velocity points up: the load slows down. The direction of the acceleration is the direction of the net force, not the direction of the motion. d) $h \approx 14.4\,\text{m}$, which to two significant figures is $14\,\text{m}$ like the mass $80\,\text{kg}$; the more precise value $14.4\,\text{m}$ is accepted in the answer box.
+**Reasonableness:** In the uniform phase the force of the rope, $785\,\text{N}$, is equal to the weight, $785\,\text{N}$, as it should be. The changes in velocity cancel each other: in phase 3 the velocity decreases by $1.19\,\text{m/s}^2\cdot 2.0\,\text{s} = 2.38\,\text{m/s}$, that is, almost from $2.40\,\text{m/s}$ to zero, so the lift ends at rest as in the task. The height is also the product of the greatest velocity and a time: the acceleration and deceleration phases together cover the same distance as uniform velocity in $2.0\,\text{s}$, so $h = v_\text{max}\cdot 6.0\,\text{s} = 2.397\,\text{m/s}\cdot 6.0\,\text{s} = 14.4\,\text{m}$.

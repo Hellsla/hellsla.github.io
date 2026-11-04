@@ -41,6 +41,58 @@
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L1-06",
+      "level": 1,
+      "text": "An elevator moves upward and slows down to stop. The positive direction is up. Which statement about the net force $\\Sigma\\overline{F}$ acting on the elevator is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The net force points down, because the speed decreases and the acceleration points downward.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The net force points up, because the elevator is moving upward and the velocity determines the direction of the force.",
+          "feedback": "The direction of the net force is determined by the direction of the acceleration, not the velocity. When the elevator slows down, the speed decreases, so the acceleration and the net force point opposite to the velocity, that is, down."
+        },
+        {
+          "text": "The net force is zero, because the direction of motion of the elevator stays upward all the time.",
+          "feedback": "The net force is zero only when the velocity does not change. The speed of the elevator decreases, so the acceleration is not zero. The direction of motion staying the same tells nothing about the acceleration."
+        },
+        {
+          "text": "The net force points down, because the speed decreases and the acceleration points downward.",
+          "feedback": "Correct: by Newton's second law $\\Sigma\\overline{F} = m\\overline{a}$, so the net force points in the direction of the acceleration. While slowing down, the elevator has a downward acceleration even though it is still moving upward. The force of the rope is then smaller than the weight.",
+          "correct": true
+        },
+        {
+          "text": "The net force points up, because the force of the rope is always greater than the weight when the elevator rises.",
+          "feedback": "The force of the rope is greater than the weight only when the rise begins. In a steady rise the forces are equal, and while slowing down the force of the rope is smaller than the weight. The net force follows the acceleration, not the direction of motion."
+        }
+      ]
+    },
+    {
+      "id": "fy4-4-L1-07",
+      "level": 1,
+      "kind": [
+        "model"
+      ],
+      "text": "The mass of an ice hockey puck is $170\\,\\text{g}$. The hit of the stick gives the puck a horizontal acceleration of $400\\,\\text{m/s}^2$. What is the net force acting on the puck during the hit?",
+      "answer": 68,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L1-08",
+      "level": 1,
+      "kind": [
+        "model"
+      ],
+      "text": "A horizontal net force of $0.60\\,\\text{kN}$ acts on a snowmobile, and its acceleration is $1.5\\,\\text{m/s}^2$. What is the mass of the snowmobile?",
+      "answer": 400,
+      "unit": "kg",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -78,6 +130,102 @@
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "text": "On an air track a cart was pulled by a horizontal constant force whose magnitude was varied. The mass of the cart stayed the same, and the friction was so small that it can be ignored. For each force $F$ the acceleration $a$ of the cart was measured. The table is an example data set.\n\nDraw the $(F, a)$ graph of the measurement points and fit a straight line through the origin to the points. Determine the slope of the line and use it to find the mass of the cart. Enter the mass of the cart in the answer box.",
+      "answer": 0.5,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Acceleration of the cart with different pulling forces (example data)",
+        "columns": [
+          "$F\\,(\\text{N})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "0.41"
+          ],
+          [
+            "0.40",
+            "0.78"
+          ],
+          [
+            "0.60",
+            "1.22"
+          ],
+          [
+            "0.80",
+            "1.58"
+          ],
+          [
+            "1.00",
+            "2.03"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-4-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "text": "A cart was pulled on a horizontal track every time with the same horizontal force. The mass $m$ of the cart was changed by adding weights to it, and with each mass the acceleration $a$ was measured. Friction was small and is ignored. The table is an example data set.\n\na) For each mass calculate the reciprocal $1/m$ and draw the $(1/m, a)$ graph. Fit a straight line through the origin to the points and determine its slope. What does the slope tell?\n\nb) Which quantities had to be kept constant for the measurement to be a fair test? Enter the magnitude of the pulling force in the answer box.",
+      "answer": 1.2,
+      "unit": "N",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Acceleration of the cart with different masses (example data)",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "6.1"
+          ],
+          [
+            "0.30",
+            "3.9"
+          ],
+          [
+            "0.40",
+            "3.1"
+          ],
+          [
+            "0.50",
+            "2.4"
+          ],
+          [
+            "0.60",
+            "2.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-4-L2-07",
+      "level": 2,
+      "kind": [
+        "error"
+      ],
+      "text": "A crane lowers a concrete element of mass $820\\,\\text{kg}$ onto a quay. The element moves downward and slows down uniformly, and the magnitude of its acceleration is $1.20\\,\\text{m/s}^2$. Air resistance is ignored.\n\nA student calculated the tension in the rope like this: “The element moves downward, so the acceleration points down. Thus $mg - T = ma$, from which $T = m(g - a) = 820\\,\\text{kg}\\cdot(9.81\\,\\text{m/s}^2 - 1.20\\,\\text{m/s}^2) = 7.06\\,\\text{kN}$.”\n\nWhat is the error in the student's solution? Calculate the correct tension in the rope. Enter the magnitude of the tension in the rope in the answer box.",
+      "answer": 9028.2,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "error"
     }
   ],
   "level3": [
@@ -106,6 +254,86 @@
       "unit": "s",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-4-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "graph",
+        "experiment",
+        "model"
+      ],
+      "text": "Students investigate how the acceleration $a$ of a cart pulled along a table depends on the horizontal pulling force $F$. The mass of the cart stayed the same. A constant friction force from the surface acts on the moving cart. The table is an example data set.\n\na) Draw the $(F, a)$ graph of the measurement points and fit a straight line to the points. Justify why the line does not pass through the origin.\n\nb) Determine the mass of the cart from the slope of the line.\n\nc) Determine the magnitude of the friction force from the point where the line crosses the $F$-axis. Enter the magnitude of the friction force in the answer box.",
+      "answer": 1.18,
+      "unit": "N",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Acceleration of the cart with different pulling forces (example data)",
+        "columns": [
+          "$F\\,(\\text{N})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "0.40"
+          ],
+          [
+            "3.0",
+            "0.91"
+          ],
+          [
+            "4.0",
+            "1.42"
+          ],
+          [
+            "5.0",
+            "1.88"
+          ],
+          [
+            "6.0",
+            "2.41"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-4-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "A person of mass $70\\,\\text{kg}$ stands in an elevator. The elevator starts upward from rest and moves in three phases. The accelerations of phases 1 and 2 have been measured with an acceleration sensor (example data), and the positive direction is up.\n\nIn phase 3 the elevator slows down uniformly and stops at the moment $t = 13.0\\,\\text{s}$.\n\na) Calculate the greatest velocity of the elevator.\n\nb) Calculate the acceleration of the elevator in phase 3.\n\nc) Draw the free-body diagram of the person in phase 3 and calculate the normal force from the floor on the person. Compare it with the weight of the person and justify why the normal force differs from the weight. Enter the normal force of part c) in the answer box.",
+      "answer": 634.2,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations",
+      "data": {
+        "caption": "Acceleration of the elevator in phases 1 and 2 (example data)",
+        "columns": [
+          "Phase",
+          "$t_{\\text{start}}\\,(\\text{s})$",
+          "$t_{\\text{end}}\\,(\\text{s})$",
+          "$a\\,(\\text{m/s}^2)$"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.0",
+            "3.0",
+            "1.0"
+          ],
+          [
+            "2",
+            "3.0",
+            "9.0",
+            "0.0"
+          ]
+        ]
+      }
     }
   ]
 }
