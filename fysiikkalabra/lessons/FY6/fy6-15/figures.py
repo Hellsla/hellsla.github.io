@@ -189,7 +189,7 @@ def maadoitus():
             "mikä on merkitty kipinällä ja sanalla vika. Ihminen seisoo maassa ja koskettaa kädellään laitteen runkoa. "
             "Vasemmalla, ilman maadoitusta, violetti katkoviiva ja nuoli näyttävät virran I kulkevan rungosta ihmisen käden ja "
             "kehon kautta jalkoihin ja maahan. Oikealla runkoon on kytketty keltavihreä suojamaadoitusjohdin, ja violetti "
-            "nuoli näyttää vikavirran kulkevan sitä pitkin; teksti: sulake laukeaa. Ihmisen kautta ei kulje virtaa.")
+            "nuoli näyttää vikavirran kulkevan sitä pitkin; teksti: sulake laukeaa. Ihmisen kautta kulkee vain pieni virta, kunnes sulake katkaisee virran.")
     f.tex(150, 24, r"\text{ei maadoitusta}", "middle", w=200)
     f.tex(450, 24, r"\text{suojamaadoitettu}", "middle", w=220)
     _fault_panel(f, 0, False)
@@ -332,7 +332,7 @@ def vaikutukset():
     f = Fig("fy615-vaikutukset", 360, "Asteikko, ei lineaarinen: kehon läpi kulkevan 50 hertsin vaihtovirran I suuruus "
             "milliampeereina logaritmisella pystyakselilla 0,1 mA:sta 1000 mA:iin, jokainen kymmenkertaistus yhtä pitkä väli. "
             "Akselin vieressä väripalkki: alle 0,5 mA vihreä, 0,5–10 mA vaaleanoranssi, 10–50 mA oranssi ja yli 50 mA punainen. "
-            "Merkinnät: 0,5 mA virta tuntuu, 10 mA lihakset kouristuvat, 30 mA vikavirtasuoja laukeaa, 50 mA kammiovärinän "
+            "Merkinnät: 0,5 mA virta tuntuu, 10 mA ote ei irtoa, 30 mA hengitys vaikeutuu, 50 mA kammiovärinän "
             "vaara. Suuntaa antavat arvot.")
     y0, per = 330, 66.0                    # y of 0,1 mA and the length of one decade
 
@@ -348,8 +348,8 @@ def vaikutukset():
     for a, b, col in zones:
         f.rect(xb + 6, Y(b), 26, Y(a) - Y(b), col, INK, 1.5)
     marks = [(0.5, Y(0.5), r"0{,}5\,\text{mA}\ \ \text{virta tuntuu}"),
-             (10, Y(10) + 14, r"10\,\text{mA}\ \ \text{lihakset kouristuvat}"),
-             (30, Y(30) + 6, r"30\,\text{mA}\ \ \text{vikavirtasuoja laukeaa}"),
+             (10, Y(10) + 14, r"10\,\text{mA}\ \ \text{ote ei irtoa}"),
+             (30, Y(30) + 6, r"30\,\text{mA}\ \ \text{hengitys vaikeutuu}"),
              (50, Y(50) - 26, r"50\,\text{mA}\ \ \text{kammiovärinän vaara}")]
     for v, ly, lab in marks:
         f.line(xb + 32, Y(v), xb + 50, Y(v), INK, 2)
@@ -363,7 +363,7 @@ def ex_askel():
     f = Fig("fy615-ex-askel", 360, "Kuvaaja mittakaavassa, laskettu malli: maan potentiaali V voltteina etäisyyden r funktiona "
             "metreinä maahan pudonneen johtimen kosketuskohdasta, kun maaperä on tasalaatuista. Ruudukon välit ovat 1 m ja "
             "200 V. Käyrä laskee jyrkästi lähellä kosketuskohtaa ja loivenee kauempana; se kulkee ruudukon risteyskohtien "
-            "(1 m; 1200 V), (2 m; 600 V), (3 m; 400 V), (4 m; 300 V) ja (6 m; 200 V) kautta.")
+            "(1 m; 1200 V), (2 m; 600 V), (3 m; 400 V) ja (6 m; 200 V) sekä pisteen (4 m; 300 V) kautta.")
     ax = Axes(f, (96, 310), (480, 64), x=(0, 8), y=(0, 1300), xticks=list(range(1, 9)), yticks=[200 * k for k in range(1, 7)],
               xlabel=r"r\ (\text{m})", ylabel=r"V\ (\text{V})",
               yfmt=lambda v: fi(v))

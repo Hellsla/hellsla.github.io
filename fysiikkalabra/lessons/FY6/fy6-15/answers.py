@@ -8,7 +8,7 @@ import json
 U = 230.0
 a = {}
 # Level 1: one formula, values given
-a["fy6-15-L1-01"] = 2000 / U                               # fan heater 2000 W on 230 V: I = P : U = 8,70 A
+a["fy6-15-L1-01"] = 1500 / U                               # fan heater 1500 W on 230 V: I = P : U = 6,52 A
 a["fy6-15-L1-02"] = U * 10                                 # 10 A fuse: P_max = U I_s = 2300 W
 a["fy6-15-L1-03"] = U / 2.3e3 * 1e3                        # 230 V over 2,3 kOhm: I = U : R = 0,100 A = 100 mA
 a["fy6-15-L1-04"] = U / 50e3 * 1e3                         # dry, rubber soles: 230 V over 50 kOhm = 4,6 mA

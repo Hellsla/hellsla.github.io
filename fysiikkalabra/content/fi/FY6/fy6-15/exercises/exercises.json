@@ -3,8 +3,8 @@
     {
       "id": "fy6-15-L1-01",
       "level": 1,
-      "text": "Lämpöpuhaltimen teho on $2000\\,\\text{W}$, ja se on kytketty $230\\,\\text{V}$:n pistorasiaan. Kuinka suuren virran puhallin ottaa?",
-      "answer": 8.695652,
+      "text": "Lämpöpuhaltimen teho on $1500\\,\\text{W}$, ja se on kytketty $230\\,\\text{V}$:n pistorasiaan. Kuinka suuren virran puhallin ottaa?",
+      "answer": 6.521739,
       "unit": "A",
       "tolerance": 0.02
     },
@@ -61,7 +61,7 @@
     {
       "id": "fy6-15-L2-03",
       "level": 2,
-      "text": "Voimajohdon johtimen ja maadoitetun pylvään välinen jännite on suurimmillaan $90\\,\\text{kV}$. Ilman läpilyöntilujuus on $3{,}0\\,\\text{MV/m}$. Kuinka pitkä ilmaväli johtimen ja pylvään välillä vähintään tarvitaan, jottei ilma lyö läpi, kun kenttää välissä pidetään tasaisena? Vastaa senttimetreinä.",
+      "text": "Voimajohdon johtimen ja maadoitetun pylvään välinen jännite on suurimmillaan $90\\,\\text{kV}$. Ilman läpilyöntilujuus on $3{,}0\\,\\text{MV/m}$. Kuinka pitkä ilmaväli johtimen ja pylvään välillä vähintään tarvitaan, jottei ilma lyö läpi, kun kenttää välissä pidetään tasaisena? Laske laskennallinen alaraja. Vastaa senttimetreinä.",
       "answer": 3.0,
       "unit": "cm",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy6-15-L3-02",
       "level": 3,
-      "text": "Ihminen koskettaa vioittuneen laitteen runkoa, jonka jännite maahan nähden on $230\\,\\text{V}$. Kehon resistanssi kädestä jalkoihin on $1{,}5\\,\\text{k}\\Omega$, mutta hänellä on kumipohjaiset kengät, ja kenkien ja kuivan lattian resistanssi on yhteensä $100\\,\\text{k}\\Omega$. Kuinka suuri virta kulkee kehon läpi? Vastaa milliampeereina.",
+      "text": "Ihminen koskettaa vioittuneen laitteen runkoa, jonka jännite maahan nähden on $230\\,\\text{V}$. Kehon resistanssi kädestä jalkoihin on $1{,}5\\,\\text{k}\\Omega$, mutta hänellä on ehjät, kuivat kumipohjaiset kengät, ja kenkien ja kuivan lattian resistanssi on yhteensä $100\\,\\text{k}\\Omega$. Hän ei koske samalla mihinkään muuhun maadoitettuun. Kuinka suuri virta kulkee kehon läpi? Vastaa milliampeereina.",
       "answer": 2.26601,
       "unit": "mA",
       "tolerance": 0.02

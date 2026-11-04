@@ -1,12 +1,12 @@
 ## fy6-15-L1-01
-**Annettu:** teho $P = 2000\,\text{W}$, jännite $U = 230\,\text{V}$
+**Annettu:** teho $P = 1500\,\text{W}$, jännite $U = 230\,\text{V}$
 **Kysytty:** virta $I$ ampeereina
 **Periaate:** Sähköteho on jännite kertaa virta. Verkkojännite $230\,\text{V}$ on vaihtojännitteen tehollinen arvo, joten lämmittävän laitteen teho lasketaan sillä kuten tasajännitteellä.
 **Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$
 **Muunnokset:** Ei tarvita: $1\,\text{W} : 1\,\text{V} = 1\,\text{A}$.
-**Sijoitus:** $I = \dfrac{2000\,\text{W}}{230\,\text{V}} = 8{,}696\,\text{A}$
-**Vastaus:** $8{,}7\,\text{A}$, kaksi merkitsevää numeroa kuten tehossa $2000\,\text{W}$.
-**Järkevyys:** Arvio $2000\,\text{W} : 200\,\text{V} = 10\,\text{A}$ on hieman suurempi, koska jakaja on pienempi. Virta on alle $10\,\text{A}$, joten puhallin mahtuu yksin $10\,\text{A}$:n ryhmään, mutta samaan ryhmään ei mahdu enää paljon muuta.
+**Sijoitus:** $I = \dfrac{1500\,\text{W}}{230\,\text{V}} = 6{,}522\,\text{A}$
+**Vastaus:** $6{,}5\,\text{A}$, kaksi merkitsevää numeroa kuten tehossa $1500\,\text{W}$.
+**Järkevyys:** Arvio $1500\,\text{W} : 200\,\text{V} = 7{,}5\,\text{A}$ on hieman suurempi, koska jakaja on pienempi. Virta on alle $10\,\text{A}$, joten puhallin mahtuu yksin $10\,\text{A}$:n ryhmään, mutta samaan ryhmään ei mahdu enää paljon muuta.
 
 ## fy6-15-L1-02
 **Annettu:** sulakkeen nimellisvirta $I_\text{s} = 10\,\text{A}$, jännite $U = 230\,\text{V}$
@@ -26,7 +26,7 @@
 **Muunnokset:** $R = 2{,}3\,\text{k}\Omega = 2{,}3 \cdot 1000\,\Omega = 2300\,\Omega$; tulos ampeereista milliampeereiksi: $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $I = \dfrac{230\,\text{V}}{2300\,\Omega} = 0{,}100\,\text{A} = 100\,\text{mA}$
 **Vastaus:** $100\,\text{mA}$, kaksi merkitsevää numeroa kuten resistanssissa $2{,}3\,\text{k}\Omega$.
-**Järkevyys:** Kymmenen kertaa jännite on $2300\,\text{V}$, joten virran on oltava kymmenesosa ampeerista. Virta on kaksinkertainen kammiovärinän vaaran rajaan noin $50\,\text{mA}$ verrattuna, joten märin käsin kosketus on hengenvaarallinen.
+**Järkevyys:** Resistanssin $2300\,\Omega$ lukuarvo on kymmenkertainen jännitteen $230\,\text{V}$ lukuarvoon verrattuna, joten virran lukuarvo on kymmenesosa ampeereina eli noin $0{,}1\,\text{A}$. Virta on kaksinkertainen kammiovärinän vaaran rajaan noin $50\,\text{mA}$ verrattuna, joten märin käsin kosketus on hengenvaarallinen.
 
 ## fy6-15-L1-04
 **Annettu:** kosketusjännite $U = 230\,\text{V}$, virtatien resistanssi $R = 50\,\text{k}\Omega$
@@ -36,7 +36,7 @@
 **Muunnokset:** $R = 50\,\text{k}\Omega = 50 \cdot 1000\,\Omega = 50\,000\,\Omega$; $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $I = \dfrac{230\,\text{V}}{50\,000\,\Omega} = 0{,}0046\,\text{A} = 4{,}6\,\text{mA}$
 **Vastaus:** $4{,}6\,\text{mA}$, kaksi merkitsevää numeroa kuten resistanssissa $50\,\text{k}\Omega$.
-**Järkevyys:** Virta tuntuu selvästi, koska se on lähes kymmenkertainen tuntokynnykseen $0{,}5\,\text{mA}$ verrattuna, mutta se jää alle irrottamiskynnyksen $10\,\text{mA}$. Märin käsin resistanssi voi olla kymmenesosa tai vähemmän, jolloin virta on kymmenkertainen.
+**Järkevyys:** Virta tuntuu selvästi, koska se on lähes kymmenkertainen tuntokynnykseen $0{,}5\,\text{mA}$ verrattuna, mutta se jää alle irrottamiskynnyksen $10\,\text{mA}$. Märin käsin resistanssi voi olla kymmenesosa tai vähemmän, jolloin virta on kymmenkertainen. Tulos pätee vain ehjillä, kuivilla kengillä ja kuivalla lattialla, kun ihminen ei koske samalla mihinkään maadoitettuun, kuten hanaan; muuten virta ohittaa kengät. Kenkiä ei pidä pitää suojana.
 
 ## fy6-15-L1-05
 **Annettu:** johtimien resistanssi $R = 0{,}20\,\Omega$, virta $I = 16\,\text{A}$
@@ -76,7 +76,7 @@
 **Muunnokset:** $U = 90\,\text{kV} = 90 \cdot 1000\,\text{V} = 90\,000\,\text{V}$; $E_\text{max} = 3{,}0\,\text{MV/m} = 3{,}0 \cdot 1\,000\,000\,\text{V/m}$; $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $d = \dfrac{90\,000\,\text{V}}{3\,000\,000\,\text{V/m}} = 0{,}030\,\text{m} = 3{,}0\,\text{cm}$
 **Vastaus:** $3{,}0\,\text{cm}$, kaksi merkitsevää numeroa kuten läpilyöntilujuudessa $3{,}0\,\text{MV/m}$.
-**Järkevyys:** Yksi megavoltti metriä kohti on yksi kilovoltti millimetriä kohti, joten ilma kestää noin $3\,\text{kV}$ millimetriltä ja $90\,\text{kV}$ vaatii $30\,\text{mm}$. Todelliset turvaetäisyydet ovat metrejä, koska ohuen johtimen lähellä kenttä on paljon tasaista voimakkaampi, kosteus ja lika heikentävät ilmaa ja verkossa voi esiintyä ylijännitteitä; laskettu väli on vain alaraja.
+**Järkevyys:** Yksi megavoltti metriä kohti on yksi kilovoltti millimetriä kohti, joten ilma kestää noin $3\,\text{kV}$ millimetriltä ja $90\,\text{kV}$ vaatii $30\,\text{mm}$. Todelliset turvaetäisyydet ovat metrejä, koska ohuen johtimen lähellä kenttä on paljon tasaista voimakkaampi, kosteus ja lika heikentävät ilmaa ja verkossa voi esiintyä ylijännitteitä; laskettu väli on vain laskennallinen alaraja.
 
 ## fy6-15-L2-04
 **Annettu:** virtatien resistanssi $R = 1{,}5\,\text{k}\Omega$, suurin sallittu virta $I = 10\,\text{mA}$
@@ -106,7 +106,7 @@
 **Muunnokset:** $R_\text{keho} = 1{,}5 \cdot 1000\,\Omega = 1500\,\Omega$ ja $R_\text{k} = 100 \cdot 1000\,\Omega = 100\,000\,\Omega$; $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $I = \dfrac{230\,\text{V}}{1500\,\Omega + 100\,000\,\Omega} = \dfrac{230\,\text{V}}{101\,500\,\Omega} = 0{,}002266\,\text{A} = 2{,}3\,\text{mA}$
 **Vastaus:** $2{,}3\,\text{mA}$, kaksi merkitsevää numeroa kuten kehon resistanssissa $1{,}5\,\text{k}\Omega$.
-**Järkevyys:** Ilman kenkiä virta olisi $230\,\text{V} : 1500\,\Omega \approx 150\,\text{mA}$, yli kammiovärinän vaaran rajan. Kengät ja kuiva lattia pienentävät virran alle irrottamiskynnyksen $10\,\text{mA}$, mutta virta tuntuu, koska se on yli tuntokynnyksen $0{,}5\,\text{mA}$. Märkä lattia voisi poistaa tämän suojan.
+**Järkevyys:** Ilman kenkiä virta olisi $230\,\text{V} : 1500\,\Omega \approx 150\,\text{mA}$, yli kammiovärinän vaaran rajan. Kengät ja kuiva lattia pienentävät virran alle irrottamiskynnyksen $10\,\text{mA}$, mutta virta tuntuu, koska se on yli tuntokynnyksen $0{,}5\,\text{mA}$. Märkä lattia, vahingoittunut kenkä tai samanaikainen kosketus esimerkiksi hanaan tai maadoitettuun laitteeseen ohittaisi kengät kokonaan, joten kengät eivät ole suoja.
 
 ## fy6-15-L3-03
 **Annettu:** kuvaajan $(r, V)$ maan potentiaali; jalat etäisyyksillä $r_1 = 2{,}0\,\text{m}$ ja $r_2 = 3{,}0\,\text{m}$; virtatien resistanssi $R = 4{,}0\,\text{k}\Omega$
@@ -117,4 +117,4 @@
 **Muunnokset:** $R = 4{,}0\,\text{k}\Omega = 4{,}0 \cdot 1000\,\Omega = 4000\,\Omega$; $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $I = \dfrac{600\,\text{V} - 400\,\text{V}}{4000\,\Omega} = \dfrac{200\,\text{V}}{4000\,\Omega} = 0{,}050\,\text{A} = 50\,\text{mA}$
 **Vastaus:** $50\,\text{mA}$, kaksi merkitsevää numeroa kuten resistanssissa $4{,}0\,\text{k}\Omega$.
-**Järkevyys:** Virta on kammiovärinän vaaran rajalla, vaikka ihminen ei koske johtimeen lainkaan. Jos jalat olisivat yhdessä, potentiaaliero ja virta olisivat lähes nolla. Kauempana käyrä loivenee: kohtien $4{,}0\,\text{m}$ ja $5{,}0\,\text{m}$ välinen jännite on paljon pienempi, joten pois kannattaa siirtyä lyhyin askelin.
+**Järkevyys:** Virta on kammiovärinän vaaran rajalla, vaikka ihminen ei koske johtimeen lainkaan. Jos jalat olisivat yhdessä, potentiaaliero ja virta olisivat lähes nolla. Jalasta toiseen kulkeva virta ei välttämättä kulje sydämen kautta, mutta kaatuminen voi tuoda sydämen virran reitille. Kauempana käyrä loivenee: kohtien $4{,}0\,\text{m}$ ja $6{,}0\,\text{m}$ välinen jännite on vain $100\,\text{V}$, vaikka väli on kaksi metriä, joten pois kannattaa siirtyä lyhyin askelin.

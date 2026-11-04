@@ -4264,7 +4264,7 @@
   },
   {
     "term": "sulake",
-    "definition": "Virtapiirin suojalaite, joka katkaisee virran, kun virta on liian suuri pitkään tai kun syntyy oikosulku. Sulake suojaa johtoja ylikuumenemiselta; kodin ryhmäjohdoissa se on tavallisesti $10\\,\\text{A}$ tai $16\\,\\text{A}$. Sulakkeena toimii sulava lanka (tulppasulake) tai johdonsuojakatkaisija.",
+    "definition": "Virtapiirin suojalaite, joka katkaisee virran, kun virta on liian suuri pitkään tai kun syntyy oikosulku. Sulake suojaa johtoja ylikuumenemiselta eikä huomaa ihmisen kautta kulkevaa virtaa; ihmistä se suojaa vain yhdessä suojamaadoituksen kanssa; kodin ryhmäjohdoissa se on tavallisesti $10\\,\\text{A}$ tai $16\\,\\text{A}$. Sulakkeena toimii sulava lanka (tulppasulake) tai johdonsuojakatkaisija.",
     "lessons": [
       "fy6-15"
     ],
@@ -4300,7 +4300,7 @@
   },
   {
     "term": "maadoitus",
-    "definition": "Laitteen johtavan rungon tai muun osan yhdistäminen maahan suojamaadoitusjohtimella, joka on väriltään keltavihreä. Jos vaihejohdin koskettaa vian takia runkoa, vikavirta kulkee maadoitusjohdinta pitkin ja sulake tai vikavirtasuoja katkaisee virran.",
+    "definition": "Laitteen johtavan rungon tai muun osan yhdistäminen maahan suojamaadoitusjohtimella, joka on uusissa asennuksissa keltavihreä. Jos vaihejohdin koskettaa vian takia runkoa, vikavirta kulkee maadoitusjohdinta pitkin ja sulake tai vikavirtasuoja katkaisee virran.",
     "lessons": [
       "fy6-15"
     ],
