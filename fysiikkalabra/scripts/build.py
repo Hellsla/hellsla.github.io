@@ -404,7 +404,7 @@ def link_languages():
                         if (OUTS[other] / module).is_file(): target = f"{module}#unavailable-{name[:-5]}"
                         else:                    # a local course (or its investigation) this language lacks: the course's front page note
                             home = (OUTS[other] / "index.html").read_text()
-                            guide = (tuple(local_courses.load()) if name.startswith("tvt-") else ())   # a TVT-ohje: its course's note
+                            guide = (("FY10",) if name.startswith("tvt-") else ())   # a TVT-ohje: its course's note (the guides are FY10's, as below)
                             ids = [i for i in (name[:-5], module[:-5]) + guide if f'id="unavailable-{i}"' in home]
                             target = "index.html" + (f"#unavailable-{ids[0]}" if ids else "")
                             key = "site.lang_unavailable_home"
