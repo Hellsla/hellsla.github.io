@@ -5,13 +5,14 @@
    1. Predictions (fieldset.choice with data-reveal): the student commits before any feedback; the feedback
       appears only after the linked experiment has recorded data-reveal-min measurements, or, for a prediction
       the simulation cannot test (an explanation), once the linked theory section has been on screen.
-   2. Plain choices: feedback for the selected option after "Vastaa"; the student may change and re-check.
+   2. Plain choices: feedback for the selected option after "Vastaa" (why it is wrong); one change of answer, then the
+      correct option is shown with its reasoning (teacher 2026-11-03).
    3. Experiments (.experiment): drive window.simAdapter — set the initial conditions, lock the controlled
       parameters, record the varied parameter and the measured quantities into a table, reset. The table is kept in
       localStorage (ruukkilabra:<page>:koe<n>) until Nollaa, and exported: Kopioi taulukko (TSV) and Lataa CSV, both
       with a decimal comma and the headings' data-plain text (teacher 2026-11-03).
-   4. Numeric tasks: common-mistake feedback (data-mistakes) on top of lesson.js, progressive hints.
-   5. Explanations: model answer and self-assessment criteria once the student has written an answer of their own, then
+   4. Numeric tasks: common-mistake feedback (data-mistakes) on top of lesson.js; hints in view, opened in order.
+   5. Explanations: model answer and self-assessment criteria once the student has ticked "Olen tehnyt ratkaisun", then
       the unticked criteria as the reasoning to add and where to practise it; a
       conclusion (data-after) also waits for the measurements of its experiments and copies tables and text for notes.
    6. Reflection: shows the student's own predictions next to the evidence and asks whether to revise.
@@ -112,10 +113,30 @@
       } else show(i);
       if (!silent) bus.dispatchEvent(new CustomEvent('fl:answered', { detail: { id } }));
     };
+    // a plain choice (teacher 2026-11-03): the feedback says why the chosen option is wrong; the answer may be changed
+    // once, and after the second try the correct option is shown with its reasoning. A prediction is committed once.
+    let tries = 0;
+    const finish = () => { radios.forEach((r) => { r.disabled = true; }); btn.hidden = true; };
     btn.addEventListener('click', () => {
       const i = radios.findIndex((r) => r.checked);
       if (i < 0) { out.textContent = msg('choose_first'); out.dataset.state = 'hint'; return; }
       commit(i, false);
+      if (window.flAttempt) window.flAttempt(fs, 'choice', radios[i].dataset.correct === '1' ? 'ok' : 'no');
+      if (reveal) return;
+      tries += 1;
+      if (radios[i].dataset.correct === '1') { finish(); return; }
+      if (tries < 2) { out.textContent = msg('not_quite') + ' ' + msg('choice_one_more'); return; }
+      const c = radios.findIndex((r) => r.dataset.correct === '1');
+      if (c >= 0) {
+        const li = radios[c].closest('li'); li.classList.add('is-answer');
+        const mark = document.createElement('strong'); mark.className = 'answer-mark'; mark.textContent = msg('choice_correct_mark') + ': ';
+        const fb = feedbacks.find((f) => f.dataset.for === String(c));
+        if (fb) { fb.hidden = false; fb.classList.add('is-answer');
+          const first = fb.firstElementChild || fb, t = first.firstChild, ok = msg('correct');   // "Oikein. …" would read oddly after "Oikea vastaus:"
+          if (t && t.nodeType === 3 && t.textContent.trimStart().startsWith(ok)) t.textContent = t.textContent.trimStart().slice(ok.length).trimStart();
+          first.prepend(mark); }
+      }
+      out.textContent = msg('choice_reveal'); finish();
     });
     radios.forEach((r) => r.addEventListener('change', () => { if (!reveal) { feedbacks.forEach((f) => { f.hidden = true; }); out.textContent = ''; delete out.dataset.state; delete fs.dataset.state; } }));
     if (justify) justify.addEventListener('input', () => { const s = store.get(id); if (s) { s.why = justify.value; store.set(id, s); } });
@@ -282,18 +303,26 @@
     const input = form.querySelector('input'), out = form.querySelector('output'), tol = Number(form.dataset.tol);
     form.addEventListener('submit', () => {
       const v = Number(input.value.trim().replace(/\s+/g, '').replace(/−/g, '-').replace(',', '.').replace(/[^\d.eE+-]/g, ''));
-      if (!Number.isFinite(v) || out.dataset.state === 'ok') return;
+      if (!Number.isFinite(v) || out.dataset.state === 'ok' || out.dataset.state === 'close') return;
       const m = mistakes.find((x) => Math.abs(v - x.value) <= (x.value === 0 ? tol : tol * Math.abs(x.value)));
       if (m) { out.textContent = m.feedback; out.dataset.state = 'no'; if (m.feedback.includes('$')) typeset(out); }
     });
   });
+  // hints open in order (teacher 2026-11-03): every hint is in view from the start, a later one locked (dimmed, with
+  // the reason) until the one before it has been opened; lesson.js keeps a locked summary from opening its box
   document.querySelectorAll('.hints').forEach((h) => {
     const items = [...h.querySelectorAll('details.hint')];
-    items.forEach((d, i) => { if (i) d.hidden = true; d.addEventListener('toggle', () => { if (d.open && items[i + 1]) items[i + 1].hidden = false; }); });
+    const unlock = (d) => { delete d.dataset.locked; const s = d.querySelector(':scope > summary'); s.removeAttribute('aria-disabled'); s.querySelector('.lock-note')?.remove(); };
+    items.forEach((d, i) => {
+      if (i && !window.flSolutionsOpen) {
+        d.dataset.locked = '1'; const sum = d.querySelector(':scope > summary'); sum.setAttribute('aria-disabled', 'true');
+        const n = document.createElement('span'); n.className = 'lock-note'; n.textContent = msg('locked_hint', { n: i }); sum.append(n);
+      }
+      d.addEventListener('toggle', () => { if (d.open && items[i + 1]) unlock(items[i + 1]); });
+    });
   });
 
   // 5. explanations
-  const MIN_CHARS = 15;              // an answer of one's own, however short, before the model answer
   const expMin = (eid) => Number(document.querySelector(`#${CSS.escape(eid)} .experiment`)?.dataset.min || 2);
   const tableText = (eid) => {        // an experiment's table as in its own export (TSV), under its title
     const act = document.getElementById(eid), tb = act && act.querySelector('table.exp-table');
@@ -312,12 +341,26 @@
     const saved = store.get(id); if (saved && saved.text) ta.value = saved.text;
     const say = (t) => { if (status) status.textContent = t; };
     const missing = () => after.filter((eid) => (measured[eid] || 0) < expMin(eid));
-    ta.addEventListener('input', () => { store.set(id, { text: ta.value }); if (status && status.textContent && ta.value.trim().length >= MIN_CHARS && !missing().length) say(''); });
+    // the model answer (or model diagram) and the criteria open after the tick "Olen tehnyt ratkaisun" (a drawing task:
+    // "Olen piirtänyt voimakuvion paperille"); the tick alone is enough, the text field is the student's own (teacher
+    // 2026-11-03). The button stays in view, marked unavailable until then; a conclusion still waits for its measurements.
+    const tick = ex.querySelector('.drew input'), draw = ex.classList.contains('draw');
+    const OPEN = !!window.flSolutionsOpen;
+    const ready = () => OPEN || !tick || tick.checked;
+    const lockNote = document.createElement('span'); lockNote.className = 'lock-note'; lockNote.textContent = msg('locked_done');
+    if (draw) lockNote.textContent = msg('locked_drawn');
+    const mark = () => {
+      if (ready()) { btn.removeAttribute('aria-disabled'); lockNote.remove(); }
+      else { btn.setAttribute('aria-disabled', 'true'); btn.after(lockNote); }
+    };
+    if (OPEN && tick) tick.checked = true;
+    mark();
+    ta.addEventListener('input', () => store.set(id, { text: ta.value }));
+    if (tick) tick.addEventListener('change', () => { mark(); if (tick.checked) { if (status && status.textContent && !missing().length) say(''); if (window.flAttempt) window.flAttempt(ex, 'done', 'done'); } });
     btn.addEventListener('click', () => {
-      const m = missing();
+      const m = OPEN ? [] : missing();
       if (m.length) { say(msg('explain_measure_first', { experiments: m.map((eid) => document.getElementById(eid)?.querySelector('h3')?.textContent.trim() || eid).join(', ') })); return; }
-      const drew = ex.querySelector('.drew input');   // a drawing task: drawn on paper, the notes field is optional
-      if (drew ? !drew.checked : ta.value.trim().length < MIN_CHARS) { say(msg(drew ? 'explain_draw_first' : 'explain_write_first')); (drew || ta).focus(); return; }
+      if (!ready()) { say(msg(draw ? 'explain_draw_first' : 'explain_tick_first')); tick.focus(); return; }
       say(''); model.hidden = false; btn.hidden = true; model.querySelector('h4')?.focus?.();
     });
     // own answer → model answer → observable criteria → what is missing → where to practise (teacher 2026-10-28)
