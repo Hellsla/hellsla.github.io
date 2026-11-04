@@ -1,20 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 58c9cf965e5f11f7
+VERDICT: PASS
+CONTENT-HASH: 90710eb33ad30700
 
 ## Blocking
-- [Major] sim canvas (sim-390, lab-1280-1; assets/sims/fy8/fy8-11/sim.js:138,181) — labels "reaktorin sydän" and the axis label "sukupolvi g" are Finnish inside the English page; the same chart shows English controls — the student meets an untranslated axis title in the key investigation tool — render them via the language mechanism (reactor core; generation g).
-- [Major] figures.json, fy8-11/sidosenergia-luku (task figure of check 2) — the figure description is Finnish ("Kuvaaja mittakaavassa: ytimen sidosenergia ... 20:stä 240:een ...") on an English page; screen-reader users get Finnish, and the description is part of the task's accessibility — translate it, keeping the axis-break note.
+(none)
 
 ## Polish
-- [Minor] exercise answer boxes (L2-02, L3-02, siirto) — unit written as plain "10³⁷ 1/s" while the answer line is typeset as $10^{37}\,\tfrac{1}{\text{s}}$; fine if project-wide, otherwise align.
-- [Minor] fig-4 (binding energy graph) — the two arrows overlap the plot area and the "fusion" arrow ends near the curve peak; shorten it slightly so it does not look like a data point.
-- [Minor] fig-10 (reactor) — fuel rods inside the vessel have no label while control rods do; add "fuel rods".
+- [Minor] sim readout 'Growth from the previous generation N_g : N_{g-1} = −' — the colon division is dense on one line at 390 px; acceptable.
+- [Minor] 'Draw' dropdown label (series 1) is terse beside 'Speed'; consider 'Series'.
 
 ## Checked
-- Opened: top-390/top-1280, sim-390, lab-1280-1, example-390-1, fig-1, 4, 6, 8, 10, 12, 14, 16, 18 (390), open-exercises-1280-1 and L2-1280-1 in the lesson set.
-- Figures are uncluttered, labels in LaTeX, consistent palette (orange energy, green fusion, blue water), legible at 390 px; `Q` and units typeset correctly; example steps and equations aligned, no clipping.
-- English is natural and consistent with the glossary terms; units use thin space and \cdot.
-- Hash at start and end: 58c9cf965e5f11f7
+- Contact sheets 1 and 2 (figures 1-18, hero, worked example, Think about it).
+- sim-390 and lab-1280-1 at full size: canvas labels 'reactor core', 'neutrons N = 1 000', 'generation g' now English; fix confirmed; controls, readouts and graph not clipped.
+- Figures in the contact sheets: binding-energy graph, fission, chain reaction (dies out/steady/grows), reactor circuit (control rods, steam generator, turbine, generator, sea water), fusion (repel), mass balance (before/after), Onkalo (canister, bentonite, copper, cast iron, fuel): all English, KaTeX labels, no clipping.
+- Worked example (example-390): aligned, chains broken at equals signs. No Finnish text found in captures.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish (English text) 4 · accessibility 3
+illustrations 5 · typography 5 · English 5 · accessibility 4

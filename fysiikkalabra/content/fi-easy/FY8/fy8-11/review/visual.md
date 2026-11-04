@@ -1,21 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 3c1259f40d3e42b1
+VERDICT: PASS
+CONTENT-HASH: 6c831d112eb86c2a
 
 ## Blocking
-- [Major] lesson.md:613 (theory-1280-5, section "Ydinvoimakeskustelu fysiikan näkökulmasta") — the text "säästä riippumatta.\n\nToisaalta" prints a literal backslash-n on the page and the two paragraphs run together — a visible editorial defect in a finished section — replace the literal "\n\n" with a blank line.
+(none)
 
 ## Polish
-- [Minor] lesson.md "Yleinen virhekäsitys" — "muuttuu energiaksi" is in straight quotes; use Finnish quotes ”…” as the inquiry text does.
-- [Minor] fig-8 (ketju) — the grey neutron dots and the "dies out" label share a weak contrast; "sammuu" in grey is the lightest text of the figure; darken it.
-- [Minor] fig-12 (fuusio) — the orange arrow for the helium nucleus carries no label; add a short "liike-energia".
-- [Minor] fig-10 (reaktori) — fuel rods in the vessel are unlabelled while the control rods have "säätösauvat"; add "polttoainesauvat".
+- [Minor] figure descriptions (aria-label) of the fusion and mass-balance figures contain raw "17{,}6", "236{,}0526", "0{,}1860" (inherited from the fi source); a screen reader says the braces. Write plain "17,6".
+- [Minor] sim readout "Kasvu edellisestä sukupolvesta N_g : N_{g-1} = −" is dense at 390 px.
 
 ## Checked
-- Opened: top-1280, sim-390, lab-1280-1, example-390-1, theory-1280-5, fig-1, 4, 6, 8, 10, 12, 14, 16, 18 at 390 px.
-- Figures are legible, labels Finnish and in LaTeX, colour never alone (words beside arrows); the simulation canvas and controls are Finnish.
-- Maths renders correctly (decimal comma, \cdot, thin-spaced units, colon in division); example staged in seven steps, aligned.
-- Finnish text is plain and consistent with the glossary.
-- Hash at start and end: 3c1259f40d3e42b1
+- Contact-1 (hero, sim, figures 1-6) and theory-1280-5, lab-1280-1 at full size.
+- Round-2 fix: the "\n\n" is gone; the nuclear-debate section shows two paragraphs, nothing literal.
+- Finnish figure labels (fissio, fuusio, sammuu/tasainen/kasvaa, säätösauvat, höyrystin, merivesi) and sim labels (reaktorin sydän, neutroneja N) read well; decimal comma consistent.
+- Figure descriptions in figures.json are short plain sentences (S2 level).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

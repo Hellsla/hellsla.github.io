@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3c1259f40d3e42b1
+CONTENT-HASH: 6c831d112eb86c2a
 
 ## Blocking
 
 ## Polish
-- content/fi-easy/FY8/fy8-11/lesson.md:613 — the paragraph contains a literal `\n\n` ("…säästä riippumatta.\n\nToisaalta…"), which renders as text — replace it with a real blank line (rendering, not physics).
+- content/fi-easy/FY8/fy8-11/figures.json — has no entry for the tarkistus-2 figure fy8-11/sidosenergia-luku (docs/figures/catalog.json: fi-easy "missing 1"), so the standard-Finnish description is used; it is correct physics, but add a plain-Finnish version like the other figures (language, not physics).
 
 ## Checked
-- Every number of lesson.md, inquiry.json, exit-ticket.json and the exercises matches the Finnish source one to one (scripted comparison): nothing changed in the simplification.
-- Recomputed: worked example Q = 0,1860220 u · 931,5 = 173,28 MeV (0,079 %); D-T 17,59 MeV; 3,5 vs 0,85 MeV per nucleon; 1 g U-235 = 8,2·10^10 J = 3,42 t hiiltä.
-- Sim model rerun: koe 1 N20 = 39 387 / 934 / 7 (s = 0/25/50 %); koe 2 N = 1000, 1437, 1987, 3264; 1,04^30 = 3,24; 176 sukupolvea miljoonaan.
-- ITER siirto 1,77·10^20 1/s and both mistake values; tarkistus-2 236 · 0,9 = 212 MeV and mistakes 0,9 / 106; hook 14 400 t hiiltä/vrk.
-- Added explanations are correct: nukleoni = protoni tai neutroni, plasma = ioneiksi ja elektroneiksi hajonnut kaasu, painevesi/kiehutusvesi, nettoteho verkkoon, lämpöarvo, CO2-ekvivalentti.
-- Mechanisms kept when sentences were split: Coulomb-hylkiminen ja tunneloituminen, veden hidastuskyvyn heikkeneminen, jälkilämpö fissiotuotteiden hajoamisesta, viivästyneet neutronit 0,65 %.
-- Every choice item has exactly one correct option; distractor feedback correct; model answers and exit ticket agree with the theory.
-- Glossary terms (fissio, fuusio, ketjureaktio, ydinreaktori) used as defined.
-- Exercises: see exercises/review/science.md.
+- Round-1 polish done: lesson.md:613–615 the literal `\n\n` is now a real paragraph break; the two paragraphs keep 12 g/kWh CO2-ekv., 1,5 % of coal, IPCC 2014, OL3 2005 → 2023, as in the Finnish source.
+- assets/sims/fy8/fy8-11/sim.js:138,181 labels now from lang keys; fi-easy.json gives "reaktorin sydän" and "sukupolvi g", identical to the old literals; model and `simState` unchanged.
+- Scripted comparison against content/fi: every number of lesson.md, inquiry.json, exit-ticket.json, SVG aria-labels and figures.json matches.
+- Sim experiments (koe 1 N20 = 39 387 / 934 / 7; koe 2 1000, 1437, 1987, 3264) and round-1 recomputations (173,28 MeV, 17,59 MeV, 3,5 vs 0,85 MeV/nukleoni) unaffected by the changes.

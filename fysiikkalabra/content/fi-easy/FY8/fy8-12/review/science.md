@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 64f08e977bf97066
+CONTENT-HASH: a59616042b279e74
 
 ## Blocking
 
 ## Polish
-- lesson.md:269 — "Kantama tarkoittaa matkaa, jonka jälkeen hiukkanen pysähtyy varmasti" is acceptable (C); "matka, jonka jälkeen yksikään hiukkanen ei enää pääse läpi" would match the later sentence in Kaava exactly.
-- lesson.md:368 — "Intensiteetti kertoo, kuinka paljon säteilyä tulee läpi tietyssä ajassa" is a fair simplification (C); "... tietyn pinnan läpi tietyssä ajassa" would be more exact.
-- lesson.md (Yleinen virhekäsitys, "Steriloinnissa ja lääketieteessä") — same note as the Finnish review: true for sterilisation and diagnostics; 15–18 MV radiotherapy makes some photoneutrons. C at this level.
+- lesson.md:144 (aria-label of figure jaljet) — "Se irrottaa elektronin, ja se ionisoi lyhyellä matkalla muutaman molekyylin": the second "se" can be read as the gamma photon; it is the released electron that ionises — write "ja tämä elektroni ionisoi" (wording; the figure itself is right).
+- lesson.md (Yleinen virhekäsitys) — carried over: true for sterilisation and diagnostics; 15–18 MV radiotherapy makes some photoneutrons. C at this level.
 
 ## Checked
-- Every number in lesson.md, inquiry.json, exit-ticket.json and figures equals the Finnish original (the only extra digits are the ½ written as \tfrac{1}{2}).
-- Recomputed: 1,6·10⁵ ion pairs; example 23,8 → 24 mm with the 6,25 % / 3,1 % brackets; Al 25 mm 0,60; apron 5,57 % and mistakes 84,7 / 94,4 / 12,0; check 2: 12 mm (400), 24 mm (200), 48 mm (50).
-- Word-level diff against the Finnish original: the simplifications split sentences and add short definitions (positiivinen ioni, viritys, DNA, radikaali, kantama, intensiteetti, nettopulssimäärä); none changes a claim, condition or option.
-- Predictions 1 and 2, Etsi virhe, concept check: exactly one correct option each; feedback and model values (5/550/577, 9/4/535, 590/332/175/89/57; net 586/328/171) unchanged.
-- Model limitations kept (no alpha energy loss in air or window, no bremsstrahlung, ideal detection, no dead time); "Lukemat ovat mallin arvoja".
-- Causality kept: dense alpha track → double-strand breaks; indirect effect via water radicals; neutron moderation by near-equal mass protons.
-- Exit ticket answers say the same as the theory (single-photon energy; gamma does not activate; neutrons mainly do).
+- Rewritten figure descriptions (hero, energia, jaljet, lapaisy, gm, vaimeneminen, tarkistus figure) in figures.json and lesson.md: every number kept (1,7–3,3 eV, 12,6 eV, 60 keV, 662 keV, 0,1 mm, 5 mm, 5 cm, 500 V, 5,5 / 11 / 16,5 mm, 0,6 at 25 mm, 0–48 mm, 2 mm × 50 /min, 800 /min); scripted comparison of keys and values.
+- Physics of the rewrites correct: the photon threshold is the ionisation energy of water; the GM avalanche is caused by the electron accelerated towards the positive wire; "pulssitaajuus ilman taustasäteilyä" is the net rate; the attenuation curve halves every 5,5 mm in lead (μ_Pb ≈ 1,29 1/cm → 5,4 mm) and Al gives ≈ 0,59 at 25 mm.
+- assets/sims/fy8/fy8-12/sim.js:149 label from lang key, fi-easy.json "GM-putki" as before; model and `simState` unchanged.
+- lesson.md, inquiry.json, exit-ticket.json numbers equal the Finnish source; inquiry difference is only ½ written out as \tfrac{1}{2} (10 mm lead → 0,29 ≈ ¼, correct).
