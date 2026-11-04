@@ -121,3 +121,118 @@ $$T = \dfrac{16\,622{,}5}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}
 **Sijoitus:** $r = \dfrac{(800\,\text{W} - 400\,\text{W}) \cdot 600\,\text{s}}{0{,}196\,\text{kg} - 0{,}0900\,\text{kg}} = \dfrac{240\,000\,\text{J}}{0{,}106\,\text{kg}} = 2\,264\,151\,\tfrac{\text{J}}{\text{kg}} = 2{,}264\,\tfrac{\text{MJ}}{\text{kg}}$
 **Vastaus:** $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$, kolme merkitsevää numeroa: erotus $196\,\text{g} - 90{,}0\,\text{g} = 106\,\text{g}$ on gramman tarkkuudella ja sillä on kolme numeroa.
 **Järkevyys:** Ilmaan siirtyvä energia $P_\text{h}t$ on sama kummassakin mittauksessa ja kumoutuu erotuksesta. Yksittäiset mittaukset antaisivat $\dfrac{800\,\text{W} \cdot 600\,\text{s}}{0{,}196\,\text{kg}} \approx 2{,}45\,\tfrac{\text{MJ}}{\text{kg}}$ ja $\dfrac{400\,\text{W} \cdot 600\,\text{s}}{0{,}0900\,\text{kg}} \approx 2{,}67\,\tfrac{\text{MJ}}{\text{kg}}$, liian suuria, koska niissä myös ilmaan siirtynyt energia luettaisiin höyrystymiseen. Häviöteho on $800\,\text{W} - 2{,}264 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot \dfrac{0{,}196\,\text{kg}}{600\,\text{s}} \approx 60\,\text{W}$, ja tulos on taulukon arvon $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$ mukainen.
+
+## fy3-7-L1-06
+**Kysytty:** mitä sulavan jään ja sulamisveden seoksen lämpötilalle tapahtuu, kun jäätä on vielä jäljellä.
+**Periaate:** Vakiopaineessa puhtaan aineen lämpötila pysyy vakiona olomuodon muutoksen ajan. Sulamisen aikana siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa, joten se ei näy lämpötilan nousuna.
+**Mallivastaus:** Lämpötila pysyy samana, koska energia kuluu hiukkasten keskinäisten vuorovaikutusten muuttamiseen eikä hiukkasten liike-energian kasvattamiseen. Vaihtoehto, jonka mukaan lämpötila nousee tasaisesti, unohtaa tämän. Vaihtoehto, jonka mukaan seos jäähtyy, on ristiriidassa sen kanssa, että lämmityksessä energiaa siirtyy seokseen koko ajan. Vaihtoehto, jossa lämpötila ensin nousee ja sitten laskee, ei vastaa mitään sulamisen vaihetta. Vasta kun kaikki jää on sulanut, sulamisvesi alkaa lämmetä.
+
+## fy3-7-L1-07
+**Kysytty:** miksi hien haihtuminen viilentää ihoa.
+**Periaate:** Nesteen höyrystyminen vaatii energiaa, $Q = rm$. Haihtuva hiki ottaa tämän energian ympäristöstään, tässä iholta, joten iho menettää energiaa ja sen lämpötila laskee.
+**Mallivastaus:** Haihtuvat vesimolekyylit ottavat energiaa mukaansa iholta, joten iho menettää energiaa ja viilenee. Höyrystyminen sitoo energiaa eikä luovuta sitä, joten väite, että hiki lämmittäisi ihoa, on väärä. Hiki on yhtä lämmintä kuin iho, joten se ei viilennä ihoa lämpötilaeronsa vuoksi. Haihtuminen ei myöskään kuluta ihon happea. Energian määrä on suuri: yhden grammin haihtuminen vaatii $r m = 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}001\,\text{kg} = 2{,}26\,\text{kJ}$.
+
+## fy3-7-L1-08
+**Annettu:** höyrystymiseen kuluva energia $Q = 1{,}36\,\text{MJ}$; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
+**Kysytty:** pois kiehuva vesimäärä $m$ kilogrammoina
+**Periaate:** Vesi kiehuu jo, joten sen lämpötila ei nouse ja koko energia kuluu höyrystämiseen, $Q = rm$. Höyrystyvä massa on verrannollinen energiaan.
+**Kaava:** $Q = rm$, josta $m = \dfrac{Q}{r}$
+**Muunnokset:** $Q = 1{,}36\,\text{MJ} = 1360\,\text{kJ}$, koska $1\,\text{MJ} = 1000\,\text{kJ}$. Silloin $r$ voidaan pitää kilojouleina kilogrammaa kohti.
+**Sijoitus:** $m = \dfrac{1360\,\text{kJ}}{2260\,\tfrac{\text{kJ}}{\text{kg}}} = 0{,}6018\,\text{kg}$
+**Vastaus:** $0{,}602\,\text{kg}$, kolme merkitsevää numeroa kuten energiassa $1{,}36\,\text{MJ}$.
+**Järkevyys:** Palautuslasku: $0{,}602\,\text{kg} \cdot 2260\,\tfrac{\text{kJ}}{\text{kg}} \approx 1360\,\text{kJ}$. Tulos on pienempi kuin $1\,\text{kg}$, koska $1\,\text{kg}$ vaatisi $2260\,\text{kJ}$, joka on enemmän kuin $1360\,\text{kJ}$. Yksiköt: $\tfrac{\text{kJ}}{\text{kJ/kg}} = \text{kg}$.
+
+## fy3-7-L2-05
+**Annettu:** jään massa $m = 0{,}250\,\text{kg}$, teho $P = 600\,\text{W}$, kaikki energia siirtyy jäähän; taulukosta lämpötila ajan funktiona
+**Kysytty:** a) vaiheet ja lämpötilan pysyminen; b) ominaissulamislämpö $s$ yksikössä $\tfrac{\text{kJ}}{\text{kg}}$
+**Periaate:** Teho on vakio, joten kuumentimen antama energia on $Pt$. Kun lämpötila nousee, energia kuluu lämpenemiseen, $Q = cm\Delta T$. Kun lämpötila pysyy vakiona $0\,{}^\circ\text{C}$:ssa, jää sulaa, ja koko energia kuluu sulamiseen, $Pt = sm$.
+**Mallivastaus a):** Ensin jää lämpenee $0\,{}^\circ\text{C}$:seen. Sitten lämpötila pysyy $0\,{}^\circ\text{C}$:ssa, vaikka kuumennin antaa energiaa: energia kuluu jään sulattamiseen ja kasvattaa hiukkasten välistä vuorovaikutusenergiaa. Lopuksi kaikki jää on sulanut ja vesi lämpenee.
+**Kuvaajan lukeminen:** Alku: rivit $0\,\text{s}$ ja $10\,\text{s}$ antavat nousun $1{,}14\,\tfrac{\text{K}}{\text{s}}$, joten $0\,{}^\circ\text{C}$ saavutetaan noin $18\,\text{s}$:ssa. Loppu: rivillä $160\,\text{s}$ lämpötila on $1{,}9\,{}^\circ\text{C}$ ja rivien $160\,\text{s}$ ja $180\,\text{s}$ nousu on $0{,}575\,\tfrac{\text{K}}{\text{s}}$, joten nousu alkoi noin $3{,}3\,\text{s}$ aiemmin eli noin $157\,\text{s}$:ssa. Sulamisen kesto on $\Delta t = 157\,\text{s} - 18\,\text{s} = 139\,\text{s}$.
+**Kaava:** $Pt = sm$, josta $s = \dfrac{P\,\Delta t}{m}$
+**Muunnokset:** Teho ja aika ovat jo perusyksiköissä, $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:**
+
+$$\begin{aligned}
+s &= \dfrac{600\,\text{W} \cdot 139\,\text{s}}{0{,}250\,\text{kg}} \\
+&= \dfrac{83\,400\,\text{J}}{0{,}250\,\text{kg}} \\
+&= 333\,600\,\tfrac{\text{J}}{\text{kg}}
+\end{aligned}$$
+
+**Vastaus:** $334\,\tfrac{\text{kJ}}{\text{kg}}$. Aika luetaan vain noin sekunnin tarkkuudella, joten hyväksytään $\pm 4\,\%$, ja kolme merkitsevää numeroa annetaan massan ja tehon mukaan.
+**Järkevyys:** Tulos on lähellä taulukon arvoa $334\,\tfrac{\text{kJ}}{\text{kg}}$. Jään lämmitys $-20\,{}^\circ\text{C}$:sta vei noin $18\,\text{s}$ eli $600\,\text{W} \cdot 18\,\text{s} = 10\,800\,\text{J}$. Tarkistus: $c m \Delta T = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}250\,\text{kg} \cdot 20\,\text{K} = 10\,500\,\text{J}$, joten mittaus ja laskenta sopivat yhteen. Sulaminen vei noin $83\,\text{kJ}$, yli kahdeksan kertaa enemmän energiaa kuin jään lämmittäminen.
+
+## fy3-7-L2-06
+**Annettu:** teho $P = 3{,}0\,\text{kW}$, aika $t = 5{,}0\,\text{min}$, kaikki hellan energia siirtyy veteen; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
+**Kysytty:** a) virhe oppilaan päättelyssä; b) pois kiehuvan veden massa $m$ kilogrammoina
+**Periaate:** Avoimessa kattilassa paine on vakio ilmanpaine, ja kiehuvan veden lämpötila pysyy vakiona $100\,{}^\circ\text{C}$:ssa. Koko hellan antama energia $Pt$ kuluu höyrystämiseen, $Q = rm$, joten $Pt = rm$.
+**Mallivastaus a):** Oppilas olettaa, että lisätty energia nostaa kiehuvan veden lämpötilaa. Vakiopaineessa lämpötila ei nouse olomuodon muutoksen aikana: lisäenergia kuluu veden höyrystämiseen. Teho vaikuttaa siihen, kuinka nopeasti vesi höyrystyy, mutta ei veden lämpötilaan. Kaksinkertainen teho höyrystää vettä kaksi kertaa niin monta kilogrammaa samassa ajassa, ja vesi pysyy koko ajan $100\,{}^\circ\text{C}$:ssa.
+**Kaava:** $Pt = rm$, josta $m = \dfrac{Pt}{r}$
+**Muunnokset:** $P = 3{,}0\,\text{kW} = 3000\,\text{W}$, $t = 5{,}0\,\text{min} = 5{,}0 \cdot 60\,\text{s} = 300\,\text{s}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
+**Sijoitus:**
+
+$$\begin{aligned}
+m &= \dfrac{3000\,\text{W} \cdot 300\,\text{s}}{2\,260\,000\,\tfrac{\text{J}}{\text{kg}}} \\
+&= \dfrac{900\,000\,\text{J}}{2\,260\,000\,\tfrac{\text{J}}{\text{kg}}} \\
+&= 0{,}398\,\text{kg}
+\end{aligned}$$
+
+**Vastaus:** $0{,}40\,\text{kg}$, kaksi merkitsevää numeroa kuten teholla $3{,}0\,\text{kW}$ ja ajalla $5{,}0\,\text{min}$.
+**Järkevyys:** Arvio: $900\,\text{kJ}$ jaettuna noin $2300\,\tfrac{\text{kJ}}{\text{kg}}$:lla on noin $0{,}39\,\text{kg}$. Teholla $1{,}5\,\text{kW}$ vettä höyrystyisi samassa ajassa puolet tästä, noin $0{,}2\,\text{kg}$, mikä vastaa sitä, että höyrystyvä massa on suoraan verrannollinen tehoon.
+
+## fy3-7-L2-07
+**Annettu:** kiehumispisteet taulukosta: $T_\text{k} = 100{,}0\,{}^\circ\text{C}$ paineessa $101{,}3\,\text{kPa}$ ja $T_\text{k} = 81{,}3\,{}^\circ\text{C}$ paineessa $50{,}0\,\text{kPa}$
+**Kysytty:** a) kiehumispisteiden erotus $\Delta T$ kelvineinä; b) miksi ruoka kypsyy hitaammin vuoristossa
+**Periaate:** Veden kiehumispiste riippuu paineesta: pienemmässä paineessa vesi kiehuu alemmassa lämpötilassa. Erotus luetaan taulukon kahdesta rivistä.
+**Kaava:** $\Delta T = T_\text{k,normaali} - T_\text{k,vuori}$
+**Muunnokset:** Ei tarvita: lämpötilaero on sama celsiusasteina ja kelvineinä.
+**Sijoitus:** $\Delta T = 100{,}0\,{}^\circ\text{C} - 81{,}3\,{}^\circ\text{C} = 18{,}7\,\text{K}$
+**Vastaus:** $18{,}7\,\text{K}$, kolme merkitsevää numeroa kuten taulukon lämpötiloissa.
+**Mallivastaus b):** Kiehuva vesi pysyy lämpötilassa $T_\text{k}$, vaikka hella antaa lisää energiaa: lisäenergia höyrystää vettä eikä nosta lämpötilaa. Vuoristossa $T_\text{k}$ on vain $81{,}3\,{}^\circ\text{C}$, joten ruoka ympäröivässä vedessä on noin $19\,\text{K}$ viileämpää kuin merenpinnan tasolla. Ruoan kypsyminen riippuu lämpötilasta, joten se kestää kauemmin.
+**Järkevyys:** Taulukon kiehumispiste laskee paineen pienentyessä: $101{,}3\,\text{kPa}$ antaa $100{,}0\,{}^\circ\text{C}$, $70{,}0\,\text{kPa}$ antaa $90{,}0\,{}^\circ\text{C}$ ja $50{,}0\,\text{kPa}$ antaa $81{,}3\,{}^\circ\text{C}$. Erotukset ovat $10{,}0\,\text{K}$ ja $18{,}7\,\text{K}$, joten pienempi paine antaa suuremman erotuksen, kuten pitääkin.
+
+## fy3-7-L3-04
+**Annettu:** steariinin massa $m = 0{,}100\,\text{kg}$; nesteen $c = 2200\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; lämpötila ajan funktiona taulukossa; luovutettu teho $P$ on vakio
+**Kysytty:** a) jähmettymislämpötila; b) teho $P$; c) jähmettymisessä vapautuva energia $Q$ kilojouleina ja $s$
+**Periaate:** Nesteen jäähtyessä luovutettu energia on $Q = cm\Delta T$, joten teho on $P = \dfrac{cm\Delta T}{\Delta t}$. Jähmettymisen aikana lämpötila pysyy vakiona, mutta ympäristöön menee sama teho $P$: jähmettyvä aine luovuttaa energiaa $Q = sm$ ja pitää lämpötilan vakiona.
+**Kuvaajan lukeminen:** Taulukossa lämpötila pysyy välillä $4\ldots 30\,\text{min}$ arvossa $69{,}2\ldots 69{,}4\,{}^\circ\text{C}$ eli noin $69\,{}^\circ\text{C}$. Nestevaiheen rivit $0\,\text{min}$ ja $3\,\text{min}$ antavat jäähtymisen $80{,}0\,{}^\circ\text{C} - 70{,}2\,{}^\circ\text{C} = 9{,}8\,\text{K}$ ajassa $3\,\text{min}$. Jähmettyminen alkaa noin $3{,}2\,\text{min}$:ssa: tasanteelle päästään nesteen jäähtymislinjaa pitkin, noin $\tfrac{0{,}8\,\text{K}}{3{,}27\,\text{K/min}} = 0{,}24\,\text{min}$ rivin $3\,\text{min}$ jälkeen. Se päättyy noin $30{,}9\,\text{min}$:ssa: kiinteän aineen rivit $32\,\text{min}$ ja $34\,\text{min}$ antavat jäähtymisnopeuden $\tfrac{65{,}0\,\text{K} - 57{,}4\,\text{K}}{2\,\text{min}} = 3{,}8\,\tfrac{\text{K}}{\text{min}}$, joten tasanteen lämpötilasta $69{,}2\,{}^\circ\text{C}$ rivin $32\,\text{min}$ lämpötilaan $65{,}0\,{}^\circ\text{C}$ kuluu aikaa $\tfrac{4{,}2\,\text{K}}{3{,}8\,\text{K/min}} = 1{,}1\,\text{min}$. Jähmettymisen kesto on noin $30{,}9\,\text{min} - 3{,}2\,\text{min} = 27{,}7\,\text{min}$.
+**Kaava:** b) $P = \dfrac{cm\Delta T}{\Delta t}$; c) $Q = P\,\Delta t_\text{jähm}$ ja $Q = sm$, josta $s = \dfrac{Q}{m}$
+**Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä. $\Delta t = 3\,\text{min} = 180\,\text{s}$ ja $\Delta t_\text{jähm} = 27{,}7\,\text{min} = 1662\,\text{s}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:**
+
+$$\begin{aligned}
+P &= \dfrac{2200\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}100\,\text{kg} \cdot 9{,}8\,\text{K}}{180\,\text{s}} \\
+&= \dfrac{2156\,\text{J}}{180\,\text{s}} \\
+&= 11{,}98\,\text{W}
+\end{aligned}$$
+
+$$\begin{aligned}
+Q &= 11{,}98\,\text{W} \cdot 1662\,\text{s} \\
+&= 19\,910\,\text{J} \approx 20\,\text{kJ}
+\end{aligned}$$
+
+$$\begin{aligned}
+s &= \dfrac{19\,910\,\text{J}}{0{,}100\,\text{kg}} \\
+&= 199\,100\,\tfrac{\text{J}}{\text{kg}}
+\end{aligned}$$
+
+**Vastaus:** a) $69\,{}^\circ\text{C}$; b) $12\,\text{W}$; c) $Q = 20\,\text{kJ}$ ja $s \approx 200\,\tfrac{\text{kJ}}{\text{kg}}$. Aika luetaan karkeasti, joten hyväksytään $\pm 6\,\%$ ja tulos annetaan kahdella merkitsevällä numerolla.
+**Järkevyys:** Jähmettyminen kestää $27{,}7\,\text{min}$, selvästi kauemmin kuin nesteen $9{,}8\,\text{K}$:n jäähtyminen $3\,\text{min}$:ssa. Vertailu: jos sama energia $19{,}9\,\text{kJ}$ laskisi nestettä, lämpötila laskisi $\dfrac{19\,910\,\text{J}}{2200\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}100\,\text{kg}} \approx 90\,\text{K}$, joten jähmettymisessä vapautuu paljon energiaa. Tasanteella lämpötila ei laske, koska jähmettyminen vapauttaa juuri sen energian, jonka aine luovuttaa ympäristöön: koko vapautuva energia kuluu ympäristön häviöihin.
+
+## fy3-7-L3-05
+**Annettu:** maito $M = 0{,}300\,\text{kg}$, $T_0 = 20{,}0\,{}^\circ\text{C}$, loppulämpötila $T = 65{,}0\,{}^\circ\text{C}$; höyry $100\,{}^\circ\text{C}$:ssa; ei lämpöhäviöitä; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
+**Kysytty:** a) tiivistyvän höyryn massa $m_\text{h}$ grammoina; b) vertailu: tarvittava $100\,{}^\circ\text{C}$:n veden massa
+**Periaate:** Energia säilyy, kun häviöitä ei ole: maidon vastaanottama energia on yhtä suuri kuin höyryn luovuttama. Höyry luovuttaa energiaa kahdessa vaiheessa: tiivistyessään $100\,{}^\circ\text{C}$:n vedeksi ($Q = rm_\text{h}$) ja sitten tiivistynyt vesi jäähtyessään $100\,{}^\circ\text{C}$:sta loppulämpötilaan ($Q = cm_\text{h}\Delta T$).
+**Kaava:** $c M (T - T_0) = r m_\text{h} + c\, m_\text{h}(100\,{}^\circ\text{C} - T)$, josta $m_\text{h} = \dfrac{c M (T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}$. Vertailussa pelkkä $100\,{}^\circ\text{C}$:n vesi luovuttaa vain jäähtyessään: $c M (T - T_0) = c\, m_\text{v}(100\,{}^\circ\text{C} - T)$, josta $m_\text{v} = \dfrac{M (T - T_0)}{100\,{}^\circ\text{C} - T}$.
+**Muunnokset:** Lämpötilaerot ovat samat celsiusasteina ja kelvineinä: $T - T_0 = 45{,}0\,\text{K}$ ja $100\,{}^\circ\text{C} - T = 35{,}0\,\text{K}$. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$ ja lopuksi $1\,\text{kg} = 1000\,\text{g}$.
+**Sijoitus:** Osoittaja on $4190 \cdot 0{,}300 \cdot 45{,}0\,\text{J} = 56\,565\,\text{J}$ ja nimittäjä $2\,260\,000 + 4190 \cdot 35{,}0 = 2\,406\,650\,\tfrac{\text{J}}{\text{kg}}$, joten
+
+$$\begin{aligned}
+m_\text{h} &= \dfrac{56\,565\,\text{J}}{2\,406\,650\,\tfrac{\text{J}}{\text{kg}}} \\
+&= 0{,}0235\,\text{kg} = 23{,}5\,\text{g}
+\end{aligned}$$
+
+$$m_\text{v} = \dfrac{0{,}300 \cdot 45{,}0}{35{,}0}\,\text{kg} = 0{,}386\,\text{kg}$$
+
+**Vastaus:** a) $23{,}5\,\text{g}$, kolme merkitsevää numeroa kuten massassa $0{,}300\,\text{kg}$; b) $0{,}386\,\text{kg}$, ja se on noin $16$ kertaa höyryn massa.
+**Mallivastaus:** Yksi kilogramma höyryä luovuttaa jäähtyessään $65\,{}^\circ\text{C}$:seen yhteensä $2\,406\,650\,\text{J}$, mutta yksi kilogramma samanlämpöistä vettä vain $4190 \cdot 35{,}0\,\text{J} = 146\,650\,\text{J}$. Höyryn luovuttamasta energiasta valtaosa, noin $94\,\%$, vapautuu tiivistymisessä lämpötilan pysyessä vakiona. Iholle osuva höyry tiivistyy ihon pinnalle ja luovuttaa tämän suuren energian iholle, joten sama massa höyryä aiheuttaa paljon pahemman palovamman kuin yhtä kuuma vesi.
+**Järkevyys:** Tulos $23{,}5\,\text{g}$ on pieni verrattuna maidon massaan $300\,\text{g}$, koska tiivistyminen sitoo paljon energiaa. Tarkistus: $23{,}5\,\text{g}$ luovuttaa tiivistyessään $2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}0235\,\text{kg} = 53{,}1\,\text{kJ}$ ja jäähtyessään $4190 \cdot 0{,}0235 \cdot 35{,}0\,\text{J} = 3{,}4\,\text{kJ}$, yhteensä $56{,}6\,\text{kJ}$, ja maito ottaa $56{,}6\,\text{kJ}$. Energiat täsmäävät.

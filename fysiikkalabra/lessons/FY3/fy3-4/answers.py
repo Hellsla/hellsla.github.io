@@ -30,4 +30,26 @@ a["fy3-4-L3-02"] = dp_lid * 0.25 / 1000                # extra force on the lid 
 p_oil = 850 * g * 0.40                                 # oil layer: 3335,4 Pa
 p_water = rho_w * g * 1.60                             # water layer below it: 15 696 Pa
 a["fy3-4-L3-03"] = (p_oil + p_water) / 1000            # overpressure at the bottom = 19,03 kPa -> 19 kPa
+# Exercise-bank additions (L1-06 and L1-08 are multiple-choice tasks without a number)
+a["fy3-4-L1-07"] = 1005 * g * 40 / 1000                # ρgh = 394 362 Pa = 394,4 kPa -> 390 kPa (Baltic Sea, ρ = 1005 kg/m³)
+# L2-05: sukeltajan (h, p) data, line slope k = 9,78 kPa/m (least squares of the table: 9,777)
+h_tab = [0.0, 2.0, 4.0, 6.0, 8.0, 10.0]                # m
+p_tab = [99.6, 119.5, 138.6, 158.7, 178.1, 197.3]      # kPa
+k_fit = 9.78                                           # kPa/m, given in the task
+h_ka = sum(h_tab) / len(h_tab)                         # sum 30,0 m -> 5,0 m
+p_ka = sum(p_tab) / len(p_tab)                         # sum 891,8 kPa -> 148,63 kPa
+a["fy3-4-L2-05"] = p_ka - k_fit * h_ka                 # p0 = p_ka - k h_ka = 148,63 - 48,9 = 99,73 kPa -> 99,7 kPa (ρ = k/g = 997 kg/m³)
+a["fy3-4-L2-06"] = rho_w * g * 0.300 / 1000            # ρgh = 2943 Pa = 2,94 kPa (table 2,9...3,0 kPa)
+dh_ka = (14.2 + 14.8 + 14.5) / 3                       # sum 43,5 cm -> 14,5 cm
+a["fy3-4-L2-07"] = rho_w * g * dh_ka / 100 / 1000      # Δp = ρgΔh = 1422,45 Pa = 1,42 kPa
+# L3-04: layered lake, ρ per layer
+layers = [(5.0, 998.2), (10.0, 999.7), (5.0, 1000.0)]  # (d in m, ρ in kg/m³)
+dp_layers = sum(d_ * r_ * g for d_, r_ in layers) / 1000   # 196,082 kPa
+dp_const = rho_w * g * 20.0 / 1000                     # 196,2 kPa
+a["fy3-4-L3-04"] = dp_const - dp_layers                # difference 0,118 kPa -> 0,12 kPa
+# L3-05: dam wall strip, 4 parts of 5,0 m, width 1,0 m, F = mean pressure of the edges · area
+def F_part(h1, h2):
+    return (rho_w * g * h1 + rho_w * g * h2) / 2 * (5.0 * 1.0) / 1000   # kN
+a["fy3-4-L3-05"] = F_part(15.0, 20.0)                  # (147,15 + 196,2)/2 kPa · 5,0 m² = 858,375 kN -> 858 kN
+assert abs(sum(F_part(5.0 * i, 5.0 * i + 5.0) for i in range(4)) - (196.2 / 2) * 20.0) < 1e-9   # sum 1962 kN = whole-wall check
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

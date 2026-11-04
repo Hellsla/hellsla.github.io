@@ -118,3 +118,75 @@
 **Sijoitus:** $\Delta U_\text{A} = 400\,\text{J} + (-150\,\text{J}) = 250\,\text{J}$. Siis $Q_\text{B} = 250\,\text{J} - (-60\,\text{J}) = 310\,\text{J}$
 **Vastaus:** $310\,\text{J}$; yhteenlaskussa tulos on yhtä tarkka kuin tiedot, jotka on annettu täysinä jouleina.
 **Järkevyys:** Tavassa B kaasu tekee vähemmän työtä, joten sama sisäenergian kasvu $250\,\text{J}$ syntyy pienemmällä lämmöllä kuin tavassa A: $310\,\text{J} < 400\,\text{J}$. Tase: $310\,\text{J} + (-60\,\text{J}) = 250\,\text{J} = \Delta U_\text{A}$.
+
+## fy3-5-L1-06
+**Kysytty:** kummalla vesimäärällä on suurempi sisäenergia, kun lämpötila on sama
+**Periaate:** Sisäenergia on systeemin hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa. Lämpötila kertoo hiukkasten liikkeen voimakkuudesta, mutta sisäenergia riippuu myös hiukkasten määrästä. Lämpö ei ole kappaleeseen varastoitunut määrä, vaan energian siirtymistä lämpötilaeron vuoksi.
+**Mallivastaus:** Kattilassa on suurempi sisäenergia, koska samassa lämpötilassa vettä on enemmän ja hiukkasia on enemmän. Väite, että sisäenergia on sama, sekoittaa lämpötilan ja sisäenergian. Kupin sisäenergian ei voi olla suurempi, koska siinä on vähemmän hiukkasia. Väite, että kattilassa on enemmän lämpöä, on virheellinen, koska kappaleeseen varastoituu sisäenergiaa eikä lämpöä.
+
+## fy3-5-L1-07
+**Kysytty:** mitä energialle tapahtuu, kun kuumaa ja kylmää vettä sekoitetaan eristetyssä astiassa
+**Periaate:** Eristetyn systeemin kokonaisenergia pysyy vakiona (energian säilyminen). Lämpöä siirtyy kuumemmasta kylmempään, kunnes lämpötilat ovat samat. Kuuman veden luovuttama energia on siis täsmälleen se energia, jonka kylmä vesi saa.
+**Mallivastaus:** Kuuman veden sisäenergia pienenee sen verran kuin kylmän veden sisäenergia kasvaa, joten kokonaisenergia säilyy. Väite, että energiaa häviää sekoituksessa, rikkoo energian säilymistä, koska energiaa ei siirry astian ulkopuolelle. Sisäenergia ei voi pysyä kummassakin ennallaan, koska lämpötilat muuttuvat. Kylmä vesi ei myöskään voi saada enempää energiaa kuin kuuma luovuttaa.
+
+## fy3-5-L1-08
+**Annettu:** systeemi on vesi; teho $P = 0{,}80\,\text{kW}$, aika $t = 45\,\text{s}$, lämpöä ei karkaa ympäristöön, $W = 0$
+**Kysytty:** veden sisäenergian kasvu $\Delta U$ kilojouleina
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Kuumennin siirtää veteen energiaa lämpönä tasaisella teholla, joten veteen siirtyvä lämpömäärä on tehon ja ajan tulo. Työtä ei tehdä, joten $W = 0$.
+**Kaava:** $Q = Pt$ ja $\Delta U = Q + W$, joten $\Delta U = Pt$
+**Muunnokset:** $P = 0{,}80\,\text{kW} = 800\,\text{W}$, jolloin $Pt$ tulee jouleina. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:** $\Delta U = 800\,\text{W} \cdot 45\,\text{s} = 36\,000\,\text{J} = 36\,\text{kJ}$
+**Vastaus:** $36\,\text{kJ}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}80\,\text{kW}$ ja $45\,\text{s}$.
+**Järkevyys:** Kuumennin siirtää joka sekunti $800\,\text{J}$, ja koko minuutissa se siirtäisi $0{,}80\,\text{kW} \cdot 60\,\text{s} = 48\,\text{kJ}$. Aika $45\,\text{s}$ on lyhyempi kuin minuutti, joten tulos $36\,\text{kJ}$ on pienempi: $36\,\text{kJ} < 48\,\text{kJ}$. Tulos on positiivinen, koska veteen tulee energiaa eikä sitä lähde.
+
+## fy3-5-L2-05
+**Annettu:** systeemi on kaasu; vaiheet 1–3: $Q_1 = +600\,\text{J}$, $W_1 = -250\,\text{J}$; $Q_2 = -150\,\text{J}$, $W_2 = 0$; $Q_3 = -320\,\text{J}$, $W_3 = +210\,\text{J}$; vaihe 4: $Q_4 = 0$, $W_4$ tuntematon; kaasu palaa kierron lopussa alkutilaansa
+**Kysytty:** työ $W_4$ vaiheessa 4 etumerkkeineen
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$ koko kierrolle. Kaasu palaa alkutilaansa, joten sen lämpötila ja määrä ovat samat kuin alussa, ja koska kaasua voi pitää ideaalikaasuna, sen sisäenergia on sama kuin alussa: $\Delta U = 0$ koko kierrossa. Silloin kierron lämpöjen ja töiden summa on nolla.
+**Kaava:** $\Delta U = (Q_1 + Q_2 + Q_3 + Q_4) + (W_1 + W_2 + W_3 + W_4) = 0$, joten $W_4 = -(Q_1 + Q_2 + Q_3 + Q_4) - (W_1 + W_2 + W_3)$
+**Muunnokset:** Ei tarvita: kaikki energiat on annettu jouleina.
+**Sijoitus:** Lämpöjen summa on $600\,\text{J} - 150\,\text{J} - 320\,\text{J} + 0 = 130\,\text{J}$ ja tunnettujen töiden summa $-250\,\text{J} + 0 + 210\,\text{J} = -40\,\text{J}$. Siis $W_4 = -130\,\text{J} - (-40\,\text{J}) = -90\,\text{J}$
+**Vastaus:** $-90\,\text{J}$, kokonaisina jouleina, koska tiedot on annettu kokonaisina jouleina. Negatiivinen työ tarkoittaa, että kaasu tekee ympäristöön työn $90\,\text{J}$.
+**Järkevyys:** Kierrossa kaasuun tulee lämpöä yhteensä $130\,\text{J}$, joten sen täytyy tehdä ympäristöön työtä yhteensä $130\,\text{J}$: $-250\,\text{J} + 0 + 210\,\text{J} - 90\,\text{J} = -130\,\text{J}$, ja $130\,\text{J} - 130\,\text{J} = 0$. Vaiheessa 4 lämpöä ei siirry, joten työn tekeminen pienentää kaasun sisäenergiaa: $\Delta U_4 = 0 + (-90\,\text{J}) = -90\,\text{J}$, ja kaasu jäähtyy.
+
+## fy3-5-L2-06
+**Annettu:** systeemi on pumpun ilma; $W = +30\,\text{J}$ (mäntä tekee työtä ilmaan), ilmasta siirtyy pois lämpömäärä $10\,\text{J}$; oppilaan tulos $\Delta U = 40\,\text{J}$
+**Kysytty:** a) oppilaan virhe, b) oikea $\Delta U$ etumerkkeineen
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Merkit kertovat suunnan: energia systeemiin on positiivista ja systeemistä pois negatiivista. Ilmasta lähtevä lämpö vähentää sisäenergiaa, joten $Q$ on negatiivinen.
+**Kaava:** $\Delta U = Q + W$, ja kysytty $\Delta U$ on jo yhtälön vasemmalla puolella
+**Muunnokset:** Ei tarvita: kumpikin siirto on annettu jouleina.
+**Sijoitus:** a) Oppilas antoi lämmölle etumerkin plus, vaikka lämpöä siirtyy ilmasta pois ja oikea arvo on $Q = -10\,\text{J}$. Työn etumerkki $W = +30\,\text{J}$ on oikein. b) $\Delta U = -10\,\text{J} + 30\,\text{J} = 20\,\text{J}$
+**Vastaus:** $20\,\text{J}$, kokonaisina jouleina, koska siirrot on annettu kokonaisina jouleina.
+**Järkevyys:** Työ toi ilmaan $30\,\text{J}$ ja lämpönä lähti $10\,\text{J}$, joten sisäenergian on kasvettava vähemmän kuin työn verran: $20\,\text{J} < 30\,\text{J}$. Oppilaan tulos oli suurempi kuin työ, vaikka ilmasta lähti energiaa, mikä ei voi pitää paikkaansa.
+
+## fy3-5-L2-07
+**Annettu:** systeemi on palikka ja pöytä; vetoja $n = 20$, matka vedolla $s = 0{,}600\,\text{m}$, voimat $4{,}1\,\text{N}$, $4{,}3\,\text{N}$, $4{,}2\,\text{N}$, $4{,}0\,\text{N}$ ja $4{,}4\,\text{N}$; $Q = 0$
+**Kysytty:** sisäenergian kasvu $\Delta U$ 20 vedon aikana, ja miksi oikea kasvu on pienempi
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Oletuksen mukaan $Q = 0$, joten $\Delta U = W$. Vetovoima tekee työn $W = Fs$ systeemiin, ja kitka muuttaa sen sisäenergiaksi. Mittaukset vaihtelevat hieman, joten käytetään vetovoimana keskiarvoa.
+**Kaava:** $F_\text{ka} = \dfrac{\text{mittausten summa}}{5}$, yhden vedon työ $W_1 = F_\text{ka}\, s$ ja kaikkien vetojen $\Delta U = nW_1$
+**Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten tulo on jouleina.
+**Sijoitus:** Mittausten summa on $4{,}1\,\text{N} + 4{,}3\,\text{N} + 4{,}2\,\text{N} + 4{,}0\,\text{N} + 4{,}4\,\text{N} = 21{,}0\,\text{N}$, joten $F_\text{ka} = \dfrac{21{,}0\,\text{N}}{5} = 4{,}20\,\text{N}$. Yhden vedon työ on $W_1 = 4{,}20\,\text{N} \cdot 0{,}600\,\text{m} = 2{,}52\,\text{J}$, joten $\Delta U = 20 \cdot 2{,}52\,\text{J} = 50{,}4\,\text{J}$
+**Vastaus:** $50{,}4\,\text{J}$, kolme merkitsevää numeroa kuten keskiarvossa $4{,}20\,\text{N}$ ja matkassa $0{,}600\,\text{m}$. Oikea kasvu on todennäköisesti hieman pienempi, koska osa lämmenneestä palikasta ja pöydästä siirtää lämpöä ilmaan, jolloin $Q < 0$ ja $\Delta U = Q + W < W$.
+**Järkevyys:** Yhden vedon $2{,}52\,\text{J}$ on pieni, ja siksi kitkan aiheuttama lämpeneminen on arjessa vaikea huomata, mutta $20$ vedon $50{,}4\,\text{J}$ on jo selvästi mitattava. Tarkistus: $20 \cdot 0{,}600\,\text{m} = 12{,}0\,\text{m}$ vetomatkaa kerrottuna voimalla $4{,}20\,\text{N}$ antaa $50{,}4\,\text{J}$.
+
+## fy3-5-L3-04
+**Annettu:** systeemi on pumpun ilma; $(s,F)$-taulukko, $s = 0$ … $0{,}20\,\text{m}$ askelin $0{,}04\,\text{m}$; nopeassa puristuksessa $Q = 0$; hitaassa puristuksessa lämpötila vakio ja $W_\text{hidas} = 14{,}0\,\text{J}$
+**Kysytty:** a) työ $W$ puolisuunnikassäännöllä, b) sisäenergian kasvu $\Delta U$ nopeassa puristuksessa, c) lämpömäärä $Q$ hitaassa puristuksessa ja selitys
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Voima muuttuu matkalla, joten työ on $(s,F)$-kuvaajan alle jäävä pinta-ala, jonka puolisuunnikassääntö arvioi. Mäntä tekee ilmaan työtä, joten $W > 0$. Nopeassa puristuksessa lämpöä ei ehdi siirtyä, joten $\Delta U = W$. Hitaassa puristuksessa lämpötila ja ilman määrä pysyvät samoina, ja koska ilmaa voi pitää ideaalikaasuna, $\Delta U = 0$ ja $Q = -W$.
+**Kuvaajan lukeminen:** Jakovälejä on viisi, ja jokaisen leveys on $h = 0{,}04\,\text{m}$. Voimat jakovälien päissä ovat $50$, $62$, $78$, $98$, $125$ ja $160\,\text{N}$. Jokaisen välin pinta-ala on puolisuunnikas, jonka yhdensuuntaiset sivut ovat välin päiden voimat.
+**Kaava:** puolisuunnikassääntö: työ on kaikkien välien pinta-alojen $h\,\dfrac{F_i + F_{i+1}}{2}$ summa, jossa välin päiden voimat ovat $F_i$ ja $F_{i+1}$. Lisäksi $\Delta U_\text{nopea} = Q + W = W$ ja $Q_\text{hidas} = -W_\text{hidas}$
+**Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
+**Sijoitus:** Jokaisen voiman ympärillä on kaksi vierekkäistä väliä, paitsi päissä; siksi päiden voimista lasketaan puolet. Summa on $25\,\text{N} + 62\,\text{N} + 78\,\text{N} + 98\,\text{N} + 125\,\text{N} + 80\,\text{N} = 468\,\text{N}$. Siis $W = 0{,}04\,\text{m} \cdot 468\,\text{N} = 18{,}72\,\text{J}$, joten $\Delta U = 0 + 18{,}72\,\text{J} = 18{,}72\,\text{J}$. Kohdassa c) $Q = -14{,}0\,\text{J}$.
+**Vastaus:** a) $W \approx 18{,}7\,\text{J}$. b) $\Delta U \approx 18{,}7\,\text{J}$, kolme merkitsevää numeroa. c) $Q = -14{,}0\,\text{J}$. Nopeassa puristuksessa lämpöä ei ehdi siirtyä pois, joten kaikki työ jää ilman sisäenergiaksi ja lämpötila nousee. Hitaassa puristuksessa sama energia siirtyy lämpönä sylinterin seinien kautta ympäristöön, joten sisäenergia ja lämpötila pysyvät ennallaan.
+**Järkevyys:** Keskimääräinen voima on $\dfrac{18{,}72\,\text{J}}{0{,}20\,\text{m}} \approx 94\,\text{N}$, mikä on alkuvoiman $50\,\text{N}$ ja loppuvoiman $160\,\text{N}$ välissä. Nopeassa puristuksessa sisäenergia kasvaa enemmän kuin hitaassa tarvittu työ: $18{,}7\,\text{J} > 14{,}0\,\text{J}$. Tämä sopii siihen, että nopeasti painettaessa pumppu kuumenee ja ilman paine nousee korkeammaksi, joten puristus vaatii suuremman voiman.
+
+## fy3-5-L3-05
+**Annettu:** systeemi on vesi; taulukon $E_\text{v}$ ja $\Delta U$ ajanhetkillä $0$, $30$, $60$, $90$ ja $120\,\text{s}$; $W = 0$; vastus siirtää veteen energian $E_\text{v}$ lämpönä
+**Kysytty:** a) keskimääräinen teho $P$, b) vedestä ympäristöön siirtynyt lämpömäärä $Q_\text{ulos}$ ajanhetkellä $120\,\text{s}$ ja sen osuus prosentteina, c) selitys energian säilymisen avulla
+**Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Vettä ei sekoiteta eikä siihen tehdä työtä, joten $W = 0$. Veteen siirtyvä nettolämpö on vastuksen siirtämä energia miinus ympäristöön karkaava lämpö: $Q = E_\text{v} - Q_\text{ulos}$. Siis $\Delta U = E_\text{v} - Q_\text{ulos}$ ja $Q_\text{ulos} = E_\text{v} - \Delta U$. Teho on energia jaettuna ajalla: $P = \dfrac{E_\text{v}}{t}$.
+**Kuvaajan lukeminen:** Viimeisellä rivillä $t = 120\,\text{s}$, $E_\text{v} = 239{,}9\,\text{kJ}$ ja $\Delta U = 205{,}1\,\text{kJ}$. Ensimmäisellä rivillä molemmat ovat nollia.
+**Kaava:** $P = \dfrac{E_\text{v}}{t}$, $Q_\text{ulos} = E_\text{v} - \Delta U$ ja osuus $= \dfrac{Q_\text{ulos}}{E_\text{v}} \cdot 100\,\%$
+**Muunnokset:** $E_\text{v} = 239{,}9\,\text{kJ} = 239\,900\,\text{J}$, jolloin teho tulee watteina; $1\,\text{kW} = 1000\,\text{W}$.
+**Sijoitus:** a) $P = \dfrac{239\,900\,\text{J}}{120\,\text{s}} = 1999\,\text{W} \approx 2{,}00\,\text{kW}$. b) $Q_\text{ulos} = 239{,}9\,\text{kJ} - 205{,}1\,\text{kJ} = 34{,}8\,\text{kJ}$ ja osuus $\dfrac{34{,}8\,\text{kJ}}{239{,}9\,\text{kJ}} \cdot 100\,\% = 14{,}5\,\%$
+**Vastaus:** b) $Q_\text{ulos} = 34{,}8\,\text{kJ}$, kolme merkitsevää numeroa kuten taulukon arvot, eli noin $15\,\%$ vastuksen energiasta; a) keskiteho oli $2{,}00\,\text{kW}$. c) Puuttuva energia ei ole kadonnut: se on siirtynyt lämpönä keittimen kuoren kautta ympäröivään ilmaan ja pöytään, joiden sisäenergia on kasvanut sen verran. Ensimmäinen pääsääntö on voimassa, kun vedelle lasketaan nettolämpö $Q = E_\text{v} - Q_\text{ulos}$. Kertynyt häviö $E_\text{v} - \Delta U$ kasvaa taulukossa jokaisella rivillä: $8{,}1$, $16{,}3$, $26{,}1$ ja $34{,}8\,\text{kJ}$, koska lämmin vesi luovuttaa ympäristöön lämpöä koko ajan.
+**Järkevyys:** Häviö on pienempi kuin vastuksen energia ($34{,}8\,\text{kJ} < 239{,}9\,\text{kJ}$), joten veden sisäenergia kasvaa edelleen, kuten taulukossa. Tase: $205{,}1\,\text{kJ} + 34{,}8\,\text{kJ} = 239{,}9\,\text{kJ}$. Mittauksessa teho on $2{,}00\,\text{kW}$ ja häviö noin $0{,}29\,\text{kW}$ koko ajan keskimäärin, mikä on pieni osa tehosta, kuten hyvin eristetyllä keittimellä pitää.

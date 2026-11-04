@@ -40,6 +40,74 @@
       "answer": 333,
       "unit": "kJ/kg",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-7-L1-06",
+      "level": 1,
+      "text": "Jäälohkoa lämmitetään tasaisesti sen sulamispisteessä, ja lohko sulaa. Mitä jään ja sulamisveden seoksen lämpötilalle tapahtuu, kun jäätä on vielä jäljellä?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Lämpötila pysyy samana, koska energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia.",
+      "choices": [
+        {
+          "text": "Lämpötila nousee tasaisesti, koska siirtyvä energia kasvattaa hiukkasten liike-energiaa.",
+          "feedback": "Sulamisen aikana siirtyvä energia ei kasvata liike-energiaa vaan hiukkasten välistä vuorovaikutusenergiaa. Siksi lämpötila ei nouse, vaikka energiaa siirtyy paljon."
+        },
+        {
+          "text": "Lämpötila pysyy samana, koska energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia.",
+          "correct": true,
+          "feedback": "Oikein: vakiopaineessa lämpötila pysyy vakiona koko olomuodon muutoksen ajan. Energia kuluu hiukkasten välisten sidosten muuttamiseen, ja vasta kun kaikki jää on sulanut, vesi alkaa lämmetä."
+        },
+        {
+          "text": "Lämpötila laskee, koska sulaminen ottaa energiaa seoksesta itsestään.",
+          "feedback": "Lämmityksessä seokseen siirtyy koko ajan energiaa ulkopuolelta, joten seos ei jäähdy. Energia kuluu sulamiseen, ja lämpötila pysyy samana."
+        },
+        {
+          "text": "Lämpötila nousee ensin ja laskee sitten, koska energiaa tarvitaan alussa eniten.",
+          "feedback": "Lämpötila ei muutu sulamisen aikana, ei nousuna eikä laskuna. Se alkaa nousta vasta, kun kaikki jää on sulanut."
+        }
+      ]
+    },
+    {
+      "id": "fy3-7-L1-07",
+      "level": 1,
+      "text": "Kuumana päivänä iholle tulee hikeä, ja hiki haihtuu. Miksi hien haihtuminen viilentää ihoa?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Haihtuvat vesimolekyylit ottavat energiaa mukaansa iholta, joten iho menettää energiaa.",
+      "choices": [
+        {
+          "text": "Haihtuessaan hiki luovuttaa energiaa iholle, ja siksi ihon lämpötila laskee.",
+          "feedback": "Höyrystyminen ei luovuta energiaa vaan sitoo sitä. Jos hiki luovuttaisi energiaa iholle, iho lämpenisi eikä viilenisi."
+        },
+        {
+          "text": "Hikipisarat ovat ihoa kylmempiä, ja ne jäähdyttävät ihoa kuin jääpala.",
+          "feedback": "Hiki tulee kehosta ja on iholla yhtä lämmintä kuin iho. Viilentävä vaikutus syntyy vasta haihtumisesta."
+        },
+        {
+          "text": "Haihtuvat vesimolekyylit ottavat energiaa mukaansa iholta, joten iho menettää energiaa.",
+          "correct": true,
+          "feedback": "Oikein: nesteen höyrystyminen vaatii energiaa, $Q = rm$, ja hiki ottaa sen iholta. Kun iho menettää energiaa, sen lämpötila laskee."
+        },
+        {
+          "text": "Hien haihtuminen kuluttaa ihon happea, ja siksi iho viilenee.",
+          "feedback": "Haihtuminen ei kuluta happea. Viilentävä vaikutus johtuu siitä, että höyrystyminen sitoo energiaa."
+        }
+      ]
+    },
+    {
+      "id": "fy3-7-L1-08",
+      "level": 1,
+      "text": "Mökin hella unohtuu päälle avoimen kattilan alle. Kun vesi kiehuu, veteen siirtyy kiehumisen aikana yhteensä $1{,}36\\,\\text{MJ}$ energiaa, ja kaikki se kuluu veden höyrystämiseen. Kuinka monta kilogrammaa vettä kiehuu pois?",
+      "answer": 0.602,
+      "unit": "kg",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,115 @@
       "answer": 0.94,
       "unit": "MJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-7-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "Oppilas lämmittää $0{,}250\\,\\text{kg}$ jäätä $600\\,\\text{W}$:n uppokuumentimella ja mittaa lämpötilan $T$ ajan $t$ funktiona (taulukko, esimerkkiaineisto). Oleta, että kaikki kuumentimen energia siirtyy jäähän ja siitä syntyvään veteen.\n\na) Selitä taulukon avulla, mitä aineelle tapahtuu eri vaiheissa ja miksi lämpötila ei nouse hetkien $20\\,\\text{s}$ ja $150\\,\\text{s}$ välillä.\n\nb) Määritä sulamiseen kuluva aika taulukosta (arvioi alku ja loppu) ja laske sen avulla jään ominaissulamislämpö.\n\nKirjoita vastauslaatikkoon kohdan b) ominaissulamislämpö yksikössä $\\text{kJ/kg}$.",
+      "answer": 334,
+      "unit": "kJ/kg",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Jään lämmitys $600\\,\\text{W}$:n teholla (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "−20.0"
+          ],
+          [
+            "10",
+            "−8.6"
+          ],
+          [
+            "20",
+            "0.0"
+          ],
+          [
+            "60",
+            "0.0"
+          ],
+          [
+            "100",
+            "0.1"
+          ],
+          [
+            "140",
+            "0.0"
+          ],
+          [
+            "150",
+            "0.0"
+          ],
+          [
+            "160",
+            "1.9"
+          ],
+          [
+            "180",
+            "13.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-7-L2-06",
+      "level": 2,
+      "kind": [
+        "error"
+      ],
+      "text": "Oppilas keittää vettä avoimessa kattilassa sähköhellalla. Vesi kiehuu, ja hän kirjoittaa muistiin: ”Kun nostan hellan tehoa, kiehuva vesi lämpenee yli $100\\,{}^\\circ\\text{C}$:n, koska veteen siirtyy enemmän energiaa, ja siksi se höyrystyy nopeammin.”\n\na) Selitä, mikä oppilaan päättelyssä on virheellistä.\n\nb) Hellan teho on $3{,}0\\,\\text{kW}$. Kuinka monta kilogrammaa vettä kiehuu pois $5{,}0\\,\\text{min}$:ssa, kun kaikki hellan energia siirtyy veteen?\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "answer": 0.4,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-7-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Taulukossa on veden kiehumispiste $T_\\text{k}$ eri paineissa $p$ (vesihöyrytaulukko, arvot pyöristetty). Kattilassa keitetään vettä avoimena korkealla vuoristossa, jossa ilmanpaine on $50{,}0\\,\\text{kPa}$. Normaali ilmanpaine on $101{,}3\\,\\text{kPa}$.\n\na) Kuinka monta kelviniä alempana vesi kiehuu paineessa $50{,}0\\,\\text{kPa}$ kuin normaalipaineessa?\n\nb) Selitä, miksi ruoka kypsyy vuoristossa hitaammin, vaikka vesi kiehuu koko ajan ja hella antaa saman tehon.\n\nKirjoita vastauslaatikkoon kohdan a) tulos.",
+      "answer": 18.7,
+      "unit": "K",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Veden kiehumispiste eri paineissa (vesihöyrytaulukko)",
+        "columns": [
+          "$p\\,(\\text{kPa})$",
+          "$T_\\text{k}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "60.1"
+          ],
+          [
+            "30.0",
+            "69.1"
+          ],
+          [
+            "50.0",
+            "81.3"
+          ],
+          [
+            "70.0",
+            "90.0"
+          ],
+          [
+            "101.3",
+            "100.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +276,87 @@
       "text": "Ryhmä mittaa veden ominaishöyrystymislämpöä kahdella mittauksella. Vaa'an päällä olevassa avoimessa astiassa vesi kiehuu, ja vedessä on uppokuumennin, jonka tehoa voi säätää. Kun kuumentimen teho on $800\\,\\text{W}$, vaa'an lukema pienenee $10{,}0\\,\\text{min}$:ssa $196\\,\\text{g}$. Kun teho on $400\\,\\text{W}$, lukema pienenee $10{,}0\\,\\text{min}$:ssa $90{,}0\\,\\text{g}$. Vesi on kummassakin mittauksessa $100\\,{}^\\circ\\text{C}$:n lämpöistä, joten astiasta siirtyy ympäröivään ilmaan joka sekunti yhtä paljon energiaa. Laske ominaishöyrystymislämpö kahden mittauksen erotuksen avulla. Perustele, miksi ilmaan siirtyvä energia ei vaikuta tulokseen ja miksi kummastakin mittauksesta erikseen laskettu arvo on liian suuri. Anna vastaus yksikössä MJ/kg.",
       "answer": 2.26,
       "unit": "MJ/kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-7-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Kynttilän valmistuksessa käytetty steariini on sulatettu $0{,}100\\,\\text{kg}$:n erä, joka jäähtyy ja jähmettyy ilmassa. Lämpötila $T$ mitataan ajan $t$ funktiona (taulukko, esimerkkiaineisto). Steariini luovuttaa ympäristöön koko ajan saman tehon. Nestemäisen steariinin ominaislämpökapasiteetti on $2200\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Määritä steariinin jähmettymislämpötila taulukosta.\n\nb) Laske nestemäisen steariinin jäähtymisestä ympäristöön luovutettu teho $P$.\n\nc) Arvioi taulukosta jähmettymisen alku- ja loppuhetki ja laske jähmettymisessä vapautuva energia sekä steariinin ominaisjähmettymislämpö (sama kuin ominaissulamislämpö). Perustele, miksi lämpötila ei laske jähmettymisen aikana.\n\nKirjoita vastauslaatikkoon kohdan c) jähmettymisessä vapautuva energia yksikössä $\\text{kJ}$.",
+      "answer": 20,
+      "unit": "kJ",
+      "tolerance": 0.06,
+      "data": {
+        "caption": "Steariinierän jäähtyminen (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "80.0"
+          ],
+          [
+            "1",
+            "76.7"
+          ],
+          [
+            "2",
+            "73.5"
+          ],
+          [
+            "3",
+            "70.2"
+          ],
+          [
+            "4",
+            "69.4"
+          ],
+          [
+            "8",
+            "69.4"
+          ],
+          [
+            "14",
+            "69.3"
+          ],
+          [
+            "20",
+            "69.3"
+          ],
+          [
+            "26",
+            "69.2"
+          ],
+          [
+            "30",
+            "69.2"
+          ],
+          [
+            "32",
+            "65.0"
+          ],
+          [
+            "34",
+            "57.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-7-L3-05",
+      "level": 3,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "Kahvilassa maitoa lämmitetään espressokeittimen höyryputkella. Kannussa on $0{,}300\\,\\text{kg}$ maitoa, jonka lämpötila on $20{,}0\\,{}^\\circ\\text{C}$. Putkesta puhalletaan maitoon $100\\,{}^\\circ\\text{C}$:n lämpöistä vesihöyryä, joka tiivistyy ja jäähtyy maidon loppulämpötilaan. Maitoa lämmitetään, kunnes sen lämpötila on $65{,}0\\,{}^\\circ\\text{C}$. Maidon ominaislämpökapasiteetti on sama kuin veden, ja lämpöä ei siirry kannuun eikä ilmaan.\n\na) Laske, kuinka monta grammaa höyryä maitoon täytyy tiivistyä.\n\nb) Kuinka monta kilogrammaa $100\\,{}^\\circ\\text{C}$:n lämpöistä vettä pitäisi sekoittaa maitoon, jotta maito lämpenisi samoin $65{,}0\\,{}^\\circ\\text{C}$:seen? Käytä vertailua perustellessasi, miksi $100\\,{}^\\circ\\text{C}$:n höyry polttaa ihoa pahemmin kuin yhtä kuuma vesi.\n\nKirjoita vastauslaatikkoon kohdan a) tulos yksikössä $\\text{g}$. Kohdan b) laskun ja perustelun tarkistat mallivastauksesta.",
+      "answer": 23.5,
+      "unit": "g",
       "tolerance": 0.02
     }
   ]

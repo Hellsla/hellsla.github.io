@@ -39,6 +39,74 @@
       "answer": -70,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-06",
+      "level": 1,
+      "text": "Kahvikuppi ja iso kattila on täytetty vedellä, joka on molemmissa $60\\,{}^\\circ\\text{C}$:ssa. Kattilassa vettä on kymmenen kertaa enemmän kuin kupissa. Mikä väite vesien sisäenergiasta on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kattilassa on suurempi sisäenergia, koska samassa lämpötilassa vettä on enemmän.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kattilassa on suurempi sisäenergia, koska samassa lämpötilassa vettä on enemmän.",
+          "feedback": "Oikein: sisäenergia on hiukkasten liike-energian ja vuorovaikutusten energian summa, joten se riippuu myös aineen määrästä. Samassa lämpötilassa hiukkasia on kattilassa enemmän, ja siksi kattilan sisäenergia on suurempi.",
+          "correct": true
+        },
+        {
+          "text": "Molemmilla on sama sisäenergia, koska lämpötila on kummassakin sama.",
+          "feedback": "Lämpötila ja sisäenergia eivät ole sama asia. Lämpötila ei riipu aineen määrästä, mutta sisäenergia riippuu: kattilassa on enemmän hiukkasia, joten sen sisäenergia on suurempi."
+        },
+        {
+          "text": "Kupissa on suurempi sisäenergia, koska pieni vesimäärä kuumenee nopeammin.",
+          "feedback": "Sisäenergia ei riipu siitä, kuinka nopeasti vesi on kuumentunut, vaan siitä, kuinka paljon hiukkasia on ja kuinka voimakkaasti ne liikkuvat. Hiukkasia on kupissa vähemmän, joten sen sisäenergia on pienempi."
+        },
+        {
+          "text": "Kattilassa on enemmän lämpöä, koska lämpö varastoituu veteen sitä enemmän, mitä enemmän vettä on.",
+          "feedback": "Kappaleessa ei ole lämpöä: lämpö on energian siirtymistä lämpötilaeron vuoksi. Veteen varastoitunut energia on sisäenergiaa, ja kattilan sisäenergia on suurempi, koska hiukkasia on enemmän."
+        }
+      ]
+    },
+    {
+      "id": "fy3-5-L1-07",
+      "level": 1,
+      "text": "Eristettyyn astiaan kaadetaan kuumaa ja kylmää vettä, ja vesi sekoitetaan. Astiasta ei siirry energiaa pois, ja sekoituksen tekemä työ on merkityksetön. Mikä väite energiasta on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kuuman veden sisäenergia pienenee sen verran kuin kylmän kasvaa, ja kokonaisenergia säilyy.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kuuman veden sisäenergia pienenee sen verran kuin kylmän kasvaa, ja kokonaisenergia säilyy.",
+          "feedback": "Oikein: lämpöä siirtyy kuumasta vedestä kylmään, kunnes lämpötilat ovat samat. Eristetyssä systeemissä energia säilyy, joten kuuman veden luovuttama energia on täsmälleen kylmän veden saama energia.",
+          "correct": true
+        },
+        {
+          "text": "Kuuma vesi luovuttaa lämpöä, mutta osa siitä häviää sekoituksessa, ja kokonaisenergia pienenee.",
+          "feedback": "Energia ei häviä mihinkään. Eristetyssä systeemissä kokonaisenergia säilyy, joten kaikki kuuman veden luovuttama energia siirtyy kylmään veteen."
+        },
+        {
+          "text": "Kummankin veden sisäenergia pysyy ennallaan, ja vain lämpötilat tasoittuvat keskenään.",
+          "feedback": "Lämpötilan muuttuminen tarkoittaa sisäenergian muuttumista: kuuman veden hiukkaset hidastuvat ja kylmän nopeutuvat. Sisäenergia ei siis voi pysyä kummassakin ennallaan."
+        },
+        {
+          "text": "Kylmä vesi saa enemmän energiaa kuin kuuma luovuttaa, koska kylmässä vedessä on tilaa energialle.",
+          "feedback": "Kylmä vesi ei voi saada enempää energiaa kuin kuuma luovuttaa, koska energiaa ei synny tyhjästä. Eristetyssä systeemissä energia säilyy, joten saatu ja luovutettu energia ovat yhtä suuret."
+        }
+      ]
+    },
+    {
+      "id": "fy3-5-L1-08",
+      "level": 1,
+      "text": "Uppokuumennin siirtää vesiämpärin veteen lämpöä tasaisella $0{,}80\\,\\text{kW}$:n teholla $45\\,\\text{s}$:n ajan. Ämpäri on hyvin eristetty, joten lämpöä ei karkaa ympäristöön, eikä veteen tehdä työtä. Kuinka paljon veden sisäenergia kasvaa? Anna vastaus kilojouleina.",
+      "answer": 36,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,13 +142,107 @@
       "answer": 40,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L2-05",
+      "level": 2,
+      "text": "Suljetussa sylinterissä oleva kaasu käy läpi neljän vaiheen kierron ja palaa neljännen vaiheen jälkeen täsmälleen alkutilaansa: kaasun määrä, lämpötila ja muut tilanmuuttujat ovat samat kuin alussa. Kaasua voi pitää ideaalikaasuna. Taulukossa on esimerkkiaineistona kaasuun siirtynyt lämpömäärä $Q$ ja kaasuun tehty työ $W$ jokaisessa vaiheessa; vaiheen 4 työtä ei tunneta. Kuinka suuri on työ $W$ vaiheessa 4? Anna vastaus etumerkkeineen: negatiivinen $W$ tarkoittaa, että kaasu tekee työtä ympäristöön.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": -90,
+      "unit": "J",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kaasun lämpö ja työ kierron vaiheissa (esimerkkiaineisto)",
+        "columns": [
+          "Vaihe",
+          "$Q\\,(\\text{J})$",
+          "$W\\,(\\text{J})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "600",
+            "-250"
+          ],
+          [
+            "2",
+            "-150",
+            "0"
+          ],
+          [
+            "3",
+            "-320",
+            "210"
+          ],
+          [
+            "4",
+            "0",
+            "?"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-5-L2-06",
+      "level": 2,
+      "text": "Oppilas ratkaisi tehtävän ja sai tuloksen $\\Delta U = 40\\,\\text{J}$. Tehtävä: pyöräpumpun sylinterissä olevaa ilmaa puristetaan, jolloin mäntä tekee ilmaan työn $30\\,\\text{J}$, ja samalla ilmasta siirtyy sylinterin seinien kautta ympäristöön lämpömäärä $10\\,\\text{J}$. Oppilaan ratkaisu: ”Ilmaan tehdään työ, joten $W = +30\\,\\text{J}$. Lämpömäärä on $10\\,\\text{J}$, joten $Q = 10\\,\\text{J}$. Siis $\\Delta U = Q + W = 10\\,\\text{J} + 30\\,\\text{J} = 40\\,\\text{J}$.”\n\na) Mikä virhe oppilaan ratkaisussa on?\n\nb) Laske ilman sisäenergian muutos oikein.\n\nVastauslaatikkoon tulee kohdan b) tulos etumerkkeineen.",
+      "kind": [
+        "error"
+      ],
+      "answer": 20,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L2-07",
+      "level": 2,
+      "text": "Oppilaat vetävät puupalikkaa pöydällä tasaisella nopeudella voimamittarilla. Palikka ja pöytä muodostavat systeemin. Taulukossa on esimerkkiaineistona vetovoima $F$ viidellä vedolla; jokaisella vedolla palikka liikkuu matkan $0{,}600\\,\\text{m}$. Vetovoiman tekemä työ muuttuu kitkan vuoksi sisäenergiaksi. Oletetaan, että lämpöä ei siirry ympäristöön, ja käytetään vetovoimana mittausten keskiarvoa. Kuinka paljon systeemin sisäenergia kasvaa 20 vedon aikana? Perustele lyhyesti, miksi oikea kasvu on todennäköisesti hieman pienempi kuin laskettu.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 50.4,
+      "unit": "J",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Palikan vetovoima viidellä vedolla (esimerkkiaineisto)",
+        "columns": [
+          "Veto",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "4.1"
+          ],
+          [
+            "2",
+            "4.3"
+          ],
+          [
+            "3",
+            "4.2"
+          ],
+          [
+            "4",
+            "4.0"
+          ],
+          [
+            "5",
+            "4.4"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
     {
       "id": "fy3-5-L3-01",
       "level": 3,
-      "text": "Pyöräpumpun suuaukko tukitaan sormella, joten ilmaa ei pääse ulos. Mäntää painetaan hyvin hitaasti, ja mäntä työntää ilmaa $0{,}15\\,\\text{m}$:n matkan keskimääräisellä 120 N:n voimalla. Pumpun ilman lämpötila pysyy koko ajan huoneen lämpötilassa, ja ilmaa voi pitää ideaalikaasuna. Kuinka suuri lämpömäärä $Q$ ilmaan siirtyy? Anna vastaus etumerkkeineen ja perustele, miksi ilman sisäenergia ei muutu.",
+      "text": "Pyöräpumpun suuaukko tukitaan sormella, joten ilmaa ei pääse ulos. Mäntää painetaan hyvin hitaasti, ja mäntä työntää ilmaa $0{,}15\\,\\text{m}$:n matkan keskimääräisellä $120\\,\\text{N}$:n voimalla. Pumpun ilman lämpötila pysyy koko ajan huoneen lämpötilassa, ja ilmaa voi pitää ideaalikaasuna. Kuinka suuri lämpömäärä $Q$ ilmaan siirtyy? Anna vastaus etumerkkeineen ja perustele, miksi ilman sisäenergia ei muutu.",
       "answer": -18,
       "unit": "J",
       "tolerance": 0.02
@@ -100,6 +262,100 @@
       "answer": 310,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L3-04",
+      "level": 3,
+      "text": "Pyöräpumpun sylinterin mäntää työnnetään nopeasti $0{,}20\\,\\text{m}$:n matka, ja pumpun ilma puristuu. Taulukossa on esimerkkiaineistona männän ilmaan kohdistama voima $F$ männän kulkeman matkan $s$ funktiona; voima kasvaa, koska puristuva ilma vastustaa yhä enemmän. Nopeassa puristuksessa lämpöä ei ehdi siirtyä ympäristöön, joten $Q = 0$.\n\na) Laske männän ilmaan tekemä työ $W$ puolisuunnikassäännöllä: jakovälit ovat yhtä pitkät, ja työ on voiman ja matkan kuvaajan alle jäävä pinta-ala.\n\nb) Kuinka paljon ilman sisäenergia kasvaa nopeassa puristuksessa?\n\nc) Sama mäntä puristetaan nyt hitaasti samaan loppuasentoon niin, että ilman lämpötila pysyy huoneen lämpötilassa; ilmaa voi pitää ideaalikaasuna. Hitaassa puristuksessa mäntä tekee ilmaan työn $14{,}0\\,\\text{J}$. Kuinka suuri lämpömäärä $Q$ ilmaan siirtyy, ja miksi ilman lämpötila nousee vain nopeassa puristuksessa?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 18.7,
+      "unit": "J",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Pumpun männän voima matkan funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$s\\,(\\text{m})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "50"
+          ],
+          [
+            "0.04",
+            "62"
+          ],
+          [
+            "0.08",
+            "78"
+          ],
+          [
+            "0.12",
+            "98"
+          ],
+          [
+            "0.16",
+            "125"
+          ],
+          [
+            "0.20",
+            "160"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-5-L3-05",
+      "level": 3,
+      "text": "Vedenkeittimen vastukselle menevä sähköenergia $E_\\text{v}$ mitataan energiamittarilla, ja veden sisäenergian kasvu $\\Delta U$ on laskettu lämpötilan noususta. Taulukossa on esimerkkiaineistona mittaukset eri ajanhetkillä; vastus siirtää veteen energiaa lämpönä, ja vettä ei sekoiteta eikä siihen tehdä työtä. Aineiston mukaan energia ei näytä säilyvän.\n\na) Laske vastuksen keskimääräinen teho $P$ koko mittauksen ajalta.\n\nb) Laske, kuinka suuri lämpömäärä $Q_\\text{ulos}$ on siirtynyt vedestä ympäristöön ajanhetkellä $120\\,\\text{s}$, ja kuinka monta prosenttia vastuksen energiasta se on.\n\nc) Selitä energian säilymisen avulla, mihin ”puuttuva” energia on mennyt ja miksi ensimmäinen pääsääntö $\\Delta U = Q + W$ on aineistossa silti voimassa. Perustele taulukon avulla, että kertynyt häviö kasvaa ajan mukana.\n\nVastauslaatikkoon tulee kohdan b) lämpömäärä $Q_\\text{ulos}$ kilojouleina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 34.8,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Keittimen vastuksen energia ja veden sisäenergian kasvu (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$E_\\text{v}\\,(\\text{kJ})$",
+          "$\\Delta U\\,(\\text{kJ})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0.0",
+            "0.0"
+          ],
+          [
+            "30",
+            "60.1",
+            "52.0"
+          ],
+          [
+            "60",
+            "119.8",
+            "103.5"
+          ],
+          [
+            "90",
+            "180.3",
+            "154.2"
+          ],
+          [
+            "120",
+            "239.9",
+            "205.1"
+          ]
+        ]
+      }
     }
   ]
 }

@@ -36,4 +36,13 @@ P1, P2, t_mitt, dm1, dm2 = 800, 400, 10.0 * 60, 0.196, 0.0900
 r_mitattu = (P1 - P2) * t_mitt / (dm1 - dm2)             # subtract the equations: r = 400 W · 600 s / 0,106 kg = 2 264 151 J/kg
 P_havio = P1 - r_mitattu * dm1 / t_mitt                  # loss power 800 − 739,6 = 60,4 W (sanity check only)
 a["fy3-7-L3-03"] = r_mitattu / 1e6                       # -> 2,26 MJ/kg; single runs alone give 2,45 and 2,67 MJ/kg (too large)
+a["fy3-7-L1-08"] = 1.36e6 / r                          # unattended pot: m = Q/r = 1 360 000 J / 2 260 000 J/kg = 0,602 kg
+# Level 2 additions
+a["fy3-7-L2-05"] = 600 * (157 - 18) / 0.250 / 1e3      # ice heated at 600 W, flat part 18 s -> 157 s read from the table: s = P t/m = 83 400 J/0,250 kg = 333,6 kJ/kg -> 334
+a["fy3-7-L2-06"] = 3000 * 300 / r                      # boil-off at 3,0 kW in 5,0 min: m = P t/r = 900 000 J / 2 260 000 J/kg = 0,398 kg -> 0,40 kg
+a["fy3-7-L2-07"] = 100.0 - 81.3                        # boiling points from the table: 101,3 kPa -> 100,0 °C, 50,0 kPa -> 81,3 °C, difference 18,7 K
+# Level 3 additions
+P_stear = 2200 * 0.100 * (80.0 - 70.2) / (3 * 60)       # liquid stearin cools 9,8 K in 3 min: P = c m ΔT/Δt = 2156 J/180 s = 11,98 W
+a["fy3-7-L3-04"] = P_stear * (30.9 - 3.2) * 60 / 1e3     # solidifying 3,2 -> 30,9 min (27,7 min): Q = P Δt = 19,9 kJ -> 20 kJ (s = Q/m = 199 kJ/kg)
+a["fy3-7-L3-05"] = c_vesi * 0.300 * (65.0 - 20.0) / (r + c_vesi * (100 - 65.0)) * 1e3   # steam: c M (T − T0) = m_h (r + c (100 − T)) -> 56 565 J / 2 406 650 J/kg = 23,5 g
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
