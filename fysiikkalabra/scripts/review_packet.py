@@ -68,6 +68,14 @@ def items(path, section, *leads):
 BRIEF_SECTIONS = ("Kaava", "Esimerkki", "Yleinen virhekäsitys", "Tiivistelmä")
 
 
+def bank_plan(lid):
+    """The chapter's row of the exercise-bank plan (docs/exercise-bank/<COURSE>.md, teacher 2026-11-04): what to add."""
+    f = ROOT / "docs/exercise-bank" / f"{courses.course_of(lid)}.md"
+    if not f.exists(): return ""
+    m = re.search(rf"^### {re.escape(lid)}\b.*?(?=^### |^## |\Z)", f.read_text(), re.S | re.M)
+    return f"\n## Exercise-bank plan for {lid} (`{f.relative_to(ROOT)}`)\n{m.group(0).strip()}\n" if m else ""
+
+
 def exercise_brief(folder):
     """What of the lesson an exercise writer or reviewer needs (module docstring): the lesson's formula sections with
     their symbols and conditions, the worked example (which no exercise repeats), the misconception and the summary,
@@ -79,10 +87,12 @@ def exercise_brief(folder):
     body = SVG.sub(lambda m: "<!-- figure omitted -->", "\n\n".join(parts))
     body = re.sub(r"<foreignObject.*?</foreignObject>|<(?:div|figure|figcaption)[^>]*>|</(?:div|figure|figcaption)>", "", body, flags=re.S)
     levels = courses.course(courses.course_of(folder.name))["exercise_levels"]
-    return (f"\n## Exercise brief: the lesson as far as the exercises need it\nFrom `{f.relative_to(ROOT)}` "
+    plan = bank_plan(folder.name)
+    return (plan + f"\n## Exercise brief: the lesson as far as the exercises need it\nFrom `{f.relative_to(ROOT)}` "
             f"({', '.join(BRIEF_SECTIONS)}; figures left out). Use its symbols and notation; an exercise needs nothing the lesson does not teach "
             f"(Level 3 may combine it with the prerequisites or an unfamiliar context). Do not open the lesson file, inquiry.json or the simulation.\n\n"
-            f"Levels in this course: {', '.join(f'{k} {v}' for k, v in levels.items())} (CLAUDE.md \"Exercise levels\"; ids `{folder.name}-L<level>-NN`).\n\n"
+            f"Levels in this course, at least: {', '.join(f'{k} {v}' for k, v in levels.items())}, {courses.course(courses.course_of(folder.name))['exercise_total']} in all "
+            f"(CLAUDE.md \"Exercise levels\" and the exercise bank; ids `{folder.name}-L<level>-NN`; schema with `choices`, `data` and `kind` in README \"Exercise schema\").\n\n"
             f"~~~~markdown\n{body.strip()}\n~~~~\n")
 
 
@@ -119,7 +129,8 @@ def header(folder, role, mode, part="lesson"):
            f"**Keskeiset sisällöt**\n{bullets(c.get('keskeiset_sisallot', []))}\n")
     if c.get("kokeet"): out += f"\n**Kokeellisuus**\n{bullets(c['kokeet'])}\n"
     if c.get("scope_notes"): out += f"\n**Scope of {c['code']}**\n{bullets(c['scope_notes'])}\n"
-    if c["exercise_levels"] != courses.DEFAULT_LEVELS: out += f"\n**Exercise counts in {c['code']}**: {c['exercise_levels']}\n"
+    if c["exercise_levels"] != courses.DEFAULT_LEVELS or c["exercise_total"] != sum(courses.DEFAULT_LEVELS.values()):
+        out += f"\n**Exercise counts in {c['code']}** (minimums): {c['exercise_levels']}, {c['exercise_total']} in all\n"
     pre = [f"{p} {titles.get(p, '(not in curriculum.json)')}" for p in meta.get("prerequisites", [])]
     out += (f"\n## Lesson slot {lid}\nGoals:\n{bullets(meta.get('goals', []) or s.get('goals', []))}\n"
             f"Prerequisites: {'; '.join(pre) or 'none'}\n"

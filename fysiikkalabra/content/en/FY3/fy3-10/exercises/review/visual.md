@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a453df9185920ff8
-
-Round 2 (round-1 report was for hash 05a774b4eda00d4d; content has changed since).
+CONTENT-HASH: c8e4ec033bea480a
+Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
+Round 1
 
 ## Blocking
-(none) Round-1 Major resolved: every number with a unit in the exercise prose (L1-01 to L3-03, including 0.250 m³, 101 kPa, 7.0 bar, 10.0 l) is now inline maths in the same serif as the symbols; source confirmed in exercises.json. No new problem found.
+(none)
 
 ## Polish
-- [Minor] L3-01 answer-box unit "· 10²²" is plain text; consider maths-rendered \cdot 10^{22}.
-- [Minor] Substitution cards: the first row's "=" sits slightly low beside a tall fraction (L1-01, L1-02, L2-02); readable, optional.
+- [Minor] None beyond fi; layout is the same as the reviewed Finnish (long answer lines wrap normally at 1280 px).
 
 ## Checked
-- open-exercises-1280-1, -2 (L1-01, L1-02 solutions), open-exercises-L2-1280-1 (L2-01), -3 (L2-02/03 solution), -6 (L2-04 graph solution: fraction rows now spaced), open-exercises-L3-1280-1 (L3-01), -4 (L3-02/L3-03). Source text of all 12 exercises.
+- Captures fy3-10-open-exercises-L2-1280-6 and L3-1280-5 (and the new tasks' tables) opened: formulas, units and tables render, English text only, no Finnish left.
+- Tables of L2-05..07 and L3-04..05 keep the same columns as fi, with translated headers.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
+illustrations 4 · typography 4 · English 4 · accessibility 4

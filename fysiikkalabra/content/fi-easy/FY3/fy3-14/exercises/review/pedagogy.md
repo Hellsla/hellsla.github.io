@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 80d40cb8c72efa58
+CONTENT-HASH: ffa203d1e90b934b
+Mode: delta
+Round: 2
 
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- None needed: the 2026-10-28 simplified text is faithful and complete.
 
 ## Polish
-- The Level 3 'Kaava' step of L3-03 is still one long block, but it is a derivation chain and was already split into short sentences.
+- None (carried over from round 1: none).
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): Tasks split into short sentences without changing what is asked; solutions.md simplified, all steps and step labels kept.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the exercise texts now with LaTeX numbers and units, the new figure task L1-03 (energy bars, answer 60 g) with its solution and figure labels, and the changed Reasonableness lines.
+- Round 2 (delta): L3-04 Sijoitus says "Ensin 0,200 · 21,8 − 0,0500 · 8,2 = 3,95, joten" before the s_1 rows (same for mittaus 2). Short, one idea per sentence, fits selkosuomi; the step order (sulkulauseke → murtoluku → J/kg → kJ/kg) is easy to follow.
+- Values unchanged (3,95, 4,45, 331 and 373 kJ/kg, s_2' 335 100 J/kg); Vastaus and Järkevyys untouched.
+- Phone usability: no 360 px exercise capture exists; the 360 px layout check passes and open-exercises-L3-1280-7 shows one = step per row, the widest row about 250 px.

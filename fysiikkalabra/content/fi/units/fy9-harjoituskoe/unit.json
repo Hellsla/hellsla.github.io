@@ -1,0 +1,12 @@
+{
+ "id": "fy9-harjoituskoe",
+ "course": "FY9",
+ "chapter": 7,
+ "order": 1,
+ "title": "Harjoituskoe",
+ "description": "Täysimittainen kuuden tunnin harjoituskoe koko lukion fysiikasta: pakollinen Osa I lyhyistä kohdista, Osan II seitsemästä tehtävästä neljä ja Osan III kolmesta aineistotehtävästä kaksi, mallivastaukset ja pisteytysohjeet itsearviointia varten.",
+ "kind": "review",
+ "minutes": 360,
+ "subjects": ["physics"],
+ "sources": []
+}

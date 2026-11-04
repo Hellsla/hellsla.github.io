@@ -25,4 +25,13 @@ a["fy3-2-L3-02"] = 20 * 2.0 * g * 1.5                  # Joule: Q = n m g h = 20
 W_vesi = 1000 * g * 50                                 # water lifted: W = m g h = 490 500 J
 a["fy3-2-L3-03"] = W_vesi / 180 / 60                   # t = W / P = 2725 s = 45,4 min -> 45 min
 
+# Exercise-bank additions: L1-06 and L1-08 are multiple choice (no number)
+a["fy3-2-L1-07"] = 1.8e3 / 1.2e3                       # belt: v = P / F = 1800 W / 1200 N = 1,5 m/s
+a["fy3-2-L2-05"] = sum((F1 + F2) / 2 * 1.0 for F1, F2 in [(18.0, 17.2), (17.2, 15.1), (15.1, 11.0), (11.0, 6.0)])  # cart: trapezoids 17,6 + 16,15 + 13,05 + 8,5 = 55,3 J
+a["fy3-2-L2-06"] = 62 * g * (18 * 0.17) / ((8.1 + 7.8 + 8.4) / 3)  # stairs: W = m g h = 1861,2 J, t_ka = 8,1 s, P = 229,8 W
+a["fy3-2-L2-07"] = 40 * g * 1.5                        # error analysis: G = m g = 392,4 N, W = G h = 588,6 J
+v_nosto = 6.52 / 8.0                                   # hoist: slope of the fitted line through the origin, 6,52 m / 8,0 s = 0,815 m/s
+a["fy3-2-L3-04"] = 0.5 * 10.0 * 0.100 / (0.20 * g) * 100  # spring: W = ½ F s = 0,500 J, h = W / (m g) = 0,2548 m -> 25 cm
+a["fy3-2-L3-05"] = 450 * g * v_nosto / 1000            # hoist: P = m g v = 4414,5 N · 0,815 m/s = 3598 W -> 3,6 kW
+
 print(json.dumps(a))

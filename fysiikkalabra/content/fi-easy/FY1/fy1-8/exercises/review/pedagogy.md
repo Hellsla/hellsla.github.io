@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: ef643b8afdb8db90
+CONTENT-HASH: 40cf159dbcdb453e
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
-(none left; list what you fixed under Fixed)
+(none)
 
 ## Fixed
-- exercises.json L1-01, L1-03, L1-05, L2-01, L2-02, L2-03, L2-04, L3-01, L3-02, L3-03 — task texts were the dense Finnish originals → split into short sentences, main clause first, same data and question.
-- solutions.md fy1-8-L3-03 Järkevyys — rewritten into two clear sentences (see science.md).
-- Update 2026-10-28: exercises.json level3[1] kept the earlier simplified wording (Kuuma vesi jäähtyy, question split) while taking over the Finnish unit markup.
+(none needed)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): solutions.md was already simplified (split sentences) with every step kept; task demand and difficulty levels unchanged.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json (units in math, wording, tolerances unchanged by translation) and solutions.md (rounding/significant-figure notes, K/min working) against the new Finnish.
+- selkosuomi text of the 8 new tasks reads naturally (short sentences, common words, terms explained; decimal comma in text/LaTeX, point in data cells as in fi).
+- Distractor feedback in L1-06..08 and L2-06 keeps the fi diagnostic point (dependent, controlled, instrument; results vs discussion; repeats vs confounded variables).
+- L2-05, L2-07, L3-04, L3-05 keep every sub-question of fi (calculate, decide, explain, write two sentences, name three controlled variables).
+- Terms explained in context (uncertainty = half of range; independent = manipulated).
+- Task difficulty and scaffolding unchanged from fi.

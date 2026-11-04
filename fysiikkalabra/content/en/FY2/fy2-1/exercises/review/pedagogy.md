@@ -1,11 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 9b2d1c5d3a2e7f48
+CONTENT-HASH: e52cd3df9b30aa2f
+Mode: full
+Round: 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none)
+
 ## Polish
-- (none beyond the Finnish report's own polish items)
+(none)
 
 ## Checked
-- Level progression and question wording match the Finnish; the stepwise solutions are clear, natural English with no Finnish left; the figure-reading task L1-03 and the multi-part L3-03 are unchanged in demands.
+- The wording keeps the task structure of fi: sub-questions a) b) c), what to justify, and what unit to answer in are unchanged.
+- Wrong-choice feedback in L1-06 and L1-07 targets the same misconceptions as fi and does not give away the answer.
+- Level 3 tasks keep the "example figures, not real statistics" marking (L3-04) and the model assumption sentence (L3-05).
+- Language level: natural English, terms as in the glossary (kinetic, potential, radiant, thermal, chemical energy).
+- Solutions follow the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure of fi.

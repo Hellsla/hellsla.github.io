@@ -20,4 +20,10 @@ a["fy4-3-L2-04"] = (5800 + 320 * g) / 1000   # lift at constant velocity: T = G_
 a["fy4-3-L3-01"] = 4.62 - 4.35              # balloon sinking at constant velocity: F_noste + F_v − G = 0 → F_v = 0,27 kN (up)
 a["fy4-3-L3-02"] = 0.30 + 0.30              # upper magnet floats: magnet force 0,30 N; III: it pushes the lower one down 0,30 N; base: 0,60 N
 a["fy4-3-L3-03"] = 1.5 + 0.40               # lower scale at rest: upper hook pulls 1,5 N + 0,40 N; III: the upper scale reads 1,9 N
+# Exercise bank additions: L1-06, L1-07, L2-07 are multiple choice (no number)
+a["fy4-3-L1-08"] = 38.0                      # third law: rope on child = child on rope = 38 N
+a["fy4-3-L2-05"] = max([0.9, 2.6, 4.8, 3.4, 1.2])   # rope at rest: wall on rope = child on rope = F_A max = 4,8 N (F_B = 4,8 N)
+a["fy4-3-L2-06"] = round(sum([0.51, 0.50, 0.49, 0.50, 0.51, 0.49]) / 6 * 6.0, 1)   # v_ka = 3,00/6 = 0,500 m/s; s = 0,500 m/s * 6,0 s = 3,0 m
+a["fy4-3-L3-04"] = (410 + 40) + 30           # cart: T = 410 + 40 = 450 N; III: cart pulls horse back T; horse: F_t = 450 + 30 = 480 N
+a["fy4-3-L3-05"] = round(sum([3.4, 3.5, 3.3]) / 3, 1)   # constant v from t = 4 s: F_k = F_ka = 10,2 N / 3 = 3,40 N
 print(json.dumps(a))

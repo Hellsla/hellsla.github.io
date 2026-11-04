@@ -55,7 +55,19 @@ Sovella tasks and can be filtered by module, competency and task type. English a
 review, as in the other courses. Units support one language per course today, so the translations need units.py to
 allow several languages for a course.
 
-## Open questions for the teacher
-- The course code and name (FY9 "Fysiikan ylioppilaskertaus" is a default).
-- Whether the mock exam is a shortened 75-minute lesson or a full-length separate session.
-- Whether about 320 tasks is enough.
+## Teacher's decisions (2026-11-04)
+- Course code FY9, name "Fysiikan ylioppilaskertaus". About 320 tasks is enough.
+- The mock exam (lesson 16) is full length: 6 h, Osa I compulsory (1 task, 20 p), Osa II 4 of 7 (15 p each), Osa III
+  2 of 3 (20 p each, data tasks), 120 p, 11 tasks of which 7 are answered. This structure is stated in fy9-koe.
+- From stage 2 on, long tasks use the exam's point values: 15 p for calc, word, experiment and cross-module tasks
+  (Osa II type) and 20 p for the data → graph → fit → interpret task (Osa III type).
+
+## Lesson 16: the mock exam (`fy9-harjoituskoe`)
+A full-length mock exam (teacher 2026-11-04), not a review lesson, so the lesson form table does not apply. 6 h, 11
+tasks, 7 answered, 120 p. Osa I (compulsory): one task of short items (multiple choice, claims with justification,
+short open answers) over FY1–FY8, 20 p, in inquiry.json. Osa II: 7 long tasks of 15 p (compare, assess, apply; one
+experimental design), the student chooses 4. Osa III: 3 data tasks of 20 p (read, process and transform data, fit a
+model, conclude; one with a short source text), the student chooses 2. All 10 long tasks in sovella/tasks.json with
+rubrics, complete model answers and skills links; at least three combine modules. No task repeats a long task of
+lessons 1–15. unit.md has the exam instructions and a time plan, teacher.md how to run and grade it (grade bands are
+not official).

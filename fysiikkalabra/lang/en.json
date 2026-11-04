@@ -29,7 +29,6 @@
     "breadcrumb": "Path",
     "footer": "Ruukkilabra · upper secondary school physics, LOPS 2019",
     "back_to_course": "← {{course}} module",
-    "back_to_portfolio": "← Back to the portfolio",
     "course_type_required": "Compulsory",
     "course_type_optional": "Optional",
     "lessons_planned": {
@@ -114,10 +113,12 @@
     "local_status_note_building": "Units are published as they are completed and checked. The scope and assessment have not been confirmed.",
     "local_status_ready": "Ready",
     "home_h1": "Explore. Understand. Apply.",
-    "home_sub": "Upper secondary physics, LOPS 2019. Predict, investigate with a simulation or data, explain it yourself.",
+    "home_sub": "Predict, investigate with a simulation or data, explain it yourself.",
     "study": "How to study",
-    "about": "About this site",
-    "about_lead": "Ruukkilabra is open learning material for upper secondary physics (LOPS 2019).",
+    "about": "About",
+    "about_lead": "How Ruukkilabra began, why it comes in three language forms, how AI is used and who makes it.",
+    "privacy": "Privacy",
+    "privacy_lead": "Ruukkilabra collects no information about students and uses no cookies. What is saved in your browser and why.",
     "home_lead": "Make a prediction, investigate the phenomenon with a simulation or data, and build the explanation yourself.",
     "home_tagline": "Investigate. Understand. Apply.",
     "modules_lead": "Physics modules of the Finnish core curriculum (LOPS 2019). The numbers show published lessons, not your own progress.",
@@ -148,13 +149,15 @@
     "chapter_next": "Next chapter",
     "chapter_up": "Back to the module",
     "chapter_course": "All chapters of {{course}}",
+    "choose": "Choose an option.",
+    "exercise_word": "Exercise",
     "exercise_path": "You do not need to do every exercise. Start with the <strong>core exercises</strong>: they practise the main points of the chapter. The other exercises of levels 1 and 2 are extra practice if you want more certainty, and level 3 is challenging application.",
     "core_exercise": "Core",
     "level_kind_1": "basic practice",
     "level_kind_2": "applied practice",
     "level_kind_3": "challenging",
     "level_lead_1": "One formula or one step of reasoning. Core exercises first, the rest is extra practice.",
-    "level_lead_2": "Two steps, a unit conversion or rearranging a formula. Core exercises first, the rest is extra practice.",
+    "level_lead_2": "Two steps, working with measured data, a unit conversion or rearranging a formula. Core exercises first, the rest is extra practice.",
     "level_lead_3": "Optional: application, two ideas together or a new situation where you reason for yourself.",
     "example_next": "Show the next step",
     "example_all": "Show all",
@@ -256,6 +259,7 @@
     "fold_question_many": "{{n}} questions",
     "self_assess_lead": "Tick the points your own answer already contains.",
     "criteria_done": "What is missing from my answer?",
+    "exit_lead": "Answer on your own first and only then open the answer.",
     "check_practice": "Suggestion: one answer does not show everything you can do, but review the <a href=\"#selita\">theory summary</a> and do the <a href=\"#exercises\">core exercises</a>.",
     "further_practice": "Review the <a href=\"#selita\">theory summary</a> and practise with the <a href=\"#exercises\">exercises</a>.",
     "answer_in": "Answer in {{unit}}",
@@ -348,6 +352,7 @@
     "ra_voice": "Voice",
     "ra_female": "Female",
     "ra_male": "Male",
+    "ra_better": "Better voice (downloads 145 MB once)",
     "ra_loading": "Loading the voice: {{p}} %. This happens only the first time.",
     "ra_fallback": "The voice could not be loaded, so the browser reads with the device's own voice.",
     "stage_done": "done",
@@ -2446,6 +2451,7 @@
     "lead": "In these tasks nobody tells you which formula to use. Decide yourself which phenomena and models belong to the situation, solve the task on paper and justify your solution, as in the matriculation examination.",
     "howto": "Solve the task yourself first, on paper or on a computer. You may use a calculator, a data booklet and graphing software. Write out your reasoning, formulas, substitutions and answers with units.",
     "points": "{{n}} p",
+    "task_n": "task {{n}}",
     "task_points": {
       "one": "{{n}} point",
       "other": "{{n}} points"
@@ -2661,6 +2667,12 @@
         "one": "All cards of the chapter →",
         "other": "All {{n}} cards of the chapter →"
       },
+      "row_left": {
+        "one": "{{n}} card left in the pile",
+        "other": "{{n}} cards left in the pile"
+      },
+      "row_done": "You have gone through all the cards.",
+      "row_restart": "Start again",
       "deck_count": {
         "one": "Your review deck has {{n}} card",
         "other": "Your review deck has {{n}} cards"

@@ -34,4 +34,20 @@ Q1_auto = m_bensa * 43e6                           # fuel energy = 4,5 kg · 43 
 t_auto = 100 / 80 * 3600                           # time for 100 km at 80 km/h: 1,25 h = 4500 s
 a["fy3-11-L3-03"] = 0.28 * Q1_auto / t_auto / 1000 # P_mek = ηQ₁/t = 0,28 · 1,935·10⁸ J / 4500 s = 12 040 W -> 12 kW
 
+# Exercise bank additions (teacher 2026-11-04): L1-06, L1-07, L2-06 are multiple choice (no number)
+a["fy3-11-L1-08"] = 3.90 / 1.20                    # heat pump: ε = P_sisälle/P_s = 3,90 kW / 1,20 kW = 3,25
+H_diesel = 43e6                                    # diesel heating value 43 MJ/kg (L2-05)
+eta_load = [(P * 1e3) / (m / 3600 * H_diesel) * 100 for P, m in [(20.0, 7.9), (40.0, 11.6), (60.0, 16.0), (80.0, 22.5)]]   # η = P/(q_m H): 21,2; 28,9; 31,4; 29,8 %
+a["fy3-11-L2-05"] = max(eta_load)                  # best load 60 kW: 31,4 %
+Es_day = [2.1, 3.0, 4.2, 3.6]                      # L2-07: electricity per day, kWh
+Qin_day = [6.4, 8.1, 10.0, 9.3]                    # heat delivered inside per day, kWh
+a["fy3-11-L2-07"] = sum(Qin_day) - sum(Es_day)     # Q_ulko = Q_sisälle − E_s = 33,8 kWh − 12,9 kWh = 20,9 kWh
+Q_kk = [1.8, 2.6, 4.0, 3.1, 2.2]                   # L3-04: monthly heat demand, MWh
+eps_kk = [3.4, 2.9, 2.4, 2.6, 3.1]                 # monthly coefficients of performance
+Es_kk = [q / e for q, e in zip(Q_kk, eps_kk)]      # E_s = Q/ε per month, sum 4,995 MWh
+a["fy3-11-L3-04"] = sum(Q_kk) / sum(Es_kk)         # ε_kausi = ΣQ/ΣE_s = 13,7 / 4,995 = 2,74 (plain mean of ε would be 2,88)
+Q_vastus = 260 * 4.0                               # L3-05: Q = Pt = 260 W · 4,0 s = 1040 J
+W_ilma = 125e3 * 0.0200 * (0.220 - 0.100)          # W_k = pAΔh = 125 000 Pa · 0,0200 m² · 0,120 m = 300 J
+a["fy3-11-L3-05"] = (Q_vastus - W_ilma) / 1000     # ΔU = Q − W_k = 740 J = 0,74 kJ (W_k/Q = 29 % ≈ 2/7, as for a diatomic gas)
+
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

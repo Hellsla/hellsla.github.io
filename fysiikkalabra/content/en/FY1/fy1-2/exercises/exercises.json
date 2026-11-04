@@ -40,6 +40,78 @@
       "answer": 400.7,
       "unit": "px",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L1-06",
+      "level": 1,
+      "text": "Which of the following units is a base unit of the SI system?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kilogram ($\\text{kg}$), used to measure mass.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Newton ($\\text{N}$), used to measure force.",
+          "feedback": "The newton is a derived unit: it is obtained from base units as a product and a quotient, $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. There are only seven base units, and the unit of force is not one of them."
+        },
+        {
+          "text": "Kilogram ($\\text{kg}$), used to measure mass.",
+          "feedback": "Correct: the SI base unit of mass is the kilogram. Of the base units it is the only one whose name already contains a prefix, kilo.",
+          "correct": true
+        },
+        {
+          "text": "Gram ($\\text{g}$), used to measure mass.",
+          "feedback": "The gram is not a base unit of its own but a part of the kilogram formed with a prefix, $1\\,\\text{g} = 10^{-3}\\,\\text{kg}$. The SI base unit of mass is the kilogram."
+        },
+        {
+          "text": "Litre ($\\textsf{l}$), used to measure volume.",
+          "feedback": "Volume is a derived quantity, because it is obtained as a product of lengths, and its SI unit is $\\text{m}^3$. The litre is not an SI unit but a unit used alongside it, $1\\,\\textsf{l} = 10^{-3}\\,\\text{m}^3$."
+        }
+      ]
+    },
+    {
+      "id": "fy1-2-L1-07",
+      "level": 1,
+      "text": "A cyclist's speed is $18\\,\\text{km/h}$. Give the speed in the unit $\\text{m/s}$.",
+      "kind": [
+        "model"
+      ],
+      "answer": 5.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L1-08",
+      "level": 1,
+      "text": "Density is calculated with the formula $\\rho = \\dfrac{m}{V}$, where $m$ is the mass and $V$ the volume. What is the unit of density when the mass is in kilograms and the volume in cubic metres?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$\\text{kg/m}^3$, because mass is divided by volume",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$\\text{kg}\\cdot\\text{m}^3$, because mass and volume are multiplied",
+          "feedback": "In the formula the mass is divided by the volume, so the units are divided too: the kilogram goes in the numerator and the cubic metre in the denominator. The unit of a product would describe a completely different quantity."
+        },
+        {
+          "text": "$\\text{m}^3/\\text{kg}$, because the volume is written first",
+          "feedback": "Units follow the order of the formula: $m$ is in the numerator, so its unit is in the numerator. The inverse unit $\\text{m}^3/\\text{kg}$ would tell how large a volume there is per kilogram."
+        },
+        {
+          "text": "$\\text{kg/m}^2$, because volume is measured in square metres",
+          "feedback": "The square metre is a unit of area. Volume is a product of three lengths, so its unit is $\\text{m}\\cdot\\text{m}\\cdot\\text{m} = \\text{m}^3$."
+        },
+        {
+          "text": "$\\text{kg/m}^3$, because mass is divided by volume",
+          "feedback": "Correct: the unit is obtained by substituting the units of the quantities into the formula. The unit of mass, $\\text{kg}$, is divided by the unit of volume, $\\text{m}^3$, so the unit of density is $\\text{kg/m}^3$.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +146,101 @@
       "answer": 1.3255,
       "unit": "million km",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L2-05",
+      "level": 2,
+      "text": "The table shows the speeds of four vehicles in different units. Use the value $1\\,\\text{knot} = 1.852\\,\\text{km/h}$. Which vehicle is the fastest? Give its speed in the unit $\\text{m/s}$.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 19.5,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Speeds of vehicles",
+        "columns": [
+          "Vehicle",
+          "$v$",
+          "$\\text{Unit}$"
+        ],
+        "rows": [
+          [
+            "Fast ferry",
+            "38.0",
+            "$\\text{knots}$"
+          ],
+          [
+            "Train",
+            "66.0",
+            "$\\text{km/h}$"
+          ],
+          [
+            "Cyclist",
+            "9.0",
+            "$\\text{m/s}$"
+          ],
+          [
+            "Fishing boat",
+            "12.0",
+            "$\\text{knots}$"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-2-L2-06",
+      "level": 2,
+      "text": "A student weighed five apples of the same variety and recorded the results in a table. Find the error in the table and correct it. Then calculate the mean mass of an apple in kilograms.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 0.1549,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Mass of the apples",
+        "columns": [
+          "Apple",
+          "$m\\,(\\text{kg})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "152.4"
+          ],
+          [
+            "B",
+            "147.9"
+          ],
+          [
+            "C",
+            "160.8"
+          ],
+          [
+            "D",
+            "155.3"
+          ],
+          [
+            "E",
+            "158.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-2-L2-07",
+      "level": 2,
+      "text": "A tap fills a bucket at a steady flow rate $q = 0.20\\,\\textsf{l}/\\text{s}$. A student calculates how long it takes to fill a $12\\,\\textsf{l}$ bucket.\n\nThe student's solution is: “The time is the product of the flow rate and the volume, $t = qV = 0.20\\,\\textsf{l}/\\text{s}\\cdot12\\,\\textsf{l} = 2.4$.” The student concludes that the bucket fills in $2.4$ seconds.\n\nCheck the units of the student's calculation and explain what a unit check reveals about the error. Then calculate the correct time in minutes.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 1.0,
+      "unit": "min",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +267,56 @@
       "answer": 40.2,
       "unit": "h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L3-04",
+      "level": 3,
+      "text": "The period $T$ of a pendulum, that is the time of one full swing, can depend only on the length $L$ of the pendulum, the acceleration of free fall $g$ and the mass $m$ of the pendulum.\n\nAssume that $T = k\\,L^{a}g^{b}m^{c}$, where $k$ is a number without a unit. Use the units to deduce the exponents $a$, $b$ and $c$.\n\nWith a length of $0.250\\,\\text{m}$ the period was measured to be $1.00\\,\\text{s}$. How long is the period in the same place when the length is $1.00\\,\\text{m}$?",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "answer": 2.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L3-05",
+      "level": 3,
+      "text": "A manufacturer gives the specifications of two portable power banks in different units. Both are fully charged, and each powers a device whose power is the operating power in the table.\n\nThe operating time is $t = \\dfrac{E}{P}$, and for power $1\\,\\text{W} = 1\\,\\text{J/s}$. For units of energy $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$.\n\nYour friend claims that device B lasts longer because the numerical value of its energy, $2.20$, is larger than the value $0.65$ of device A.\n\nHow many hours longer does the longer-lasting device run? Justify. Is the claim correct?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.54,
+      "unit": "h",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Specifications given by the manufacturer",
+        "columns": [
+          "Device",
+          "$E$",
+          "Unit",
+          "$P$",
+          "Unit"
+        ],
+        "rows": [
+          [
+            "A",
+            "0.65",
+            "$\\text{kWh}$",
+            "85.0",
+            "$\\text{W}$"
+          ],
+          [
+            "B",
+            "2.20",
+            "$\\text{MJ}$",
+            "0.100",
+            "$\\text{kW}$"
+          ]
+        ]
+      }
     }
   ]
 }

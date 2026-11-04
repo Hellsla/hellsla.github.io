@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 8b0e2df23d46ded5
+CONTENT-HASH: 6adc73b630c26584
+ROUND: 3
+
+Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touches only fy3-7 L2-05 (tolerance and Vastaus line); the rest is covered by the round-2 PASS.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-05 melting-curve graph — x tick numbers (40 … 320) tight under 20-kJ gridlines; label every second tick or widen.
-- [Minor] L3-01 Järkevyys — unit sits both on the fraction row and on the result ("frac °C ≈ 21 °C"); write it once on the result.
-- [Minor] Selected wrong option in tarkista drawn in the green "correct" tint (project style, for the teacher) — neutral tint.
-- [Minor] New "$0\,{}^\circ\text{C}$:n lämpöinen" phrasing is correct but repeated in nearly every task; acceptable, vary only where it reads heavy ("0-asteinen" is gone by design).
+- [Minor] The round-2 polish on L2-05 (tolerance accepting 312 kJ/kg) is resolved: 0,05 gives 317,3..350,7 and the Vastaus says ±5 %.
+- [Minor] Stearin Mallivastaus c): "4190 · 35,0 J = 146 650 J" and "2 406 650 J" lack units on the factors (carried over, verify).
+- [Minor] Data tables: header and number alignment (site-wide; carried over).
+- [Minor] Answer-field wording "Vastauslaatikkoon" vs "Vastauskenttään" in fy3-4 (site-wide; carried over).
 
 ## Checked
-- Delta (numbers with units set as inline LaTeX, "…:n lämpöiseksi/-istä" case endings): open-exercises-1280-1 (L1-01 text, solution Periaate/Sijoitus), open-exercises-L3-1280-2 (L3-01 Järkevyys chain and exercise 2 start), open-exercises-L3-1280-4 (L3 vaporisation task with "10,0 min:ssa", "100 °C:n lämpöistä", stacked-fraction chain).
-- Case endings after maths read naturally; no clipping, spacing between consecutive fraction rows clean, layout intact.
+- Diff HEAD read: one number in exercises.json (0.05) and "\pm 5\,\%" in solutions.md, valid LaTeX with the thin space as elsewhere; no layout impact. No plain-text quantity in the changed text.
+- No new capture; one-character change.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

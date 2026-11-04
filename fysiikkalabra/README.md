@@ -4,8 +4,8 @@ The site is called **Ruukkilabra**, subtitle *Lukion fysiikka* / *Upper secondar
 folder, the URL and the scripts keep the old working name fysiikkalabra. Logos: `assets/shared/brand/`.
 
 A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, p5.js simulations and exercises,
-written and reviewed with Claude Code agents, served by GitHub Pages from the committed `site/` folder at
-`https://hellsla.github.io/fysiikkalabra/site/`. House rules for agents: `CLAUDE.md`; writing rules: `NOTES.md`.
+written and reviewed with Claude Code agents, published from the committed `site/` folder at
+`https://ruukkilab.fi/` (see "Publishing at ruukkilab.fi" below). House rules for agents: `CLAUDE.md`; writing rules: `NOTES.md`.
 
 ## Quick start
 ```bash
@@ -78,6 +78,28 @@ can alter (teacher 2026-11-01): `python scripts/ci_scope.py origin/main` prints 
 (scripts, templates, shared site files, configuration, interface texts, the visual baseline, the workflow) changed. Its
 docstring is the mapping. Main, the weekly run and a manual run (`workflow_dispatch`) test everything.
 
+## Publishing at ruukkilab.fi
+Teacher 2026-11-04: the source stays in this repository, and the public repository `Hellsla/ruukkilabra` holds only
+the published copy, served by its GitHub Pages (branch `main`, folder `/`, custom domain `ruukkilab.fi`).
+`.github/workflows/ruukkilabra-deploy.yml` runs when `fysiikkalabra-ci` has passed on a main commit (a merged pull
+request, the weekly run or a manual run; never a pull request's own run). It takes that commit's committed `site/`,
+puts it at the root of the publishing repository, adds the read-aloud models of `Hellsla/ruukkilabra-models`
+(`supertonic3-v1/`, `ort/`) under `models/`, and pushes. If main already has a newer `site/`, it leaves the publishing
+to that commit's own run. A manual run (Actions → ruukkilabra-deploy → Run workflow) publishes the newest main
+commit whose CI passed.
+
+`python scripts/deploy_site.py OUT [--models DIR]` assembles the copy: `site/` contents, `CNAME`, `.nojekyll`,
+`robots.txt` and `sitemap.xml` for `https://ruukkilab.fi/`. It fails (and nothing is pushed) when a published text
+file names `hellsla.github.io` or `github.com/Hellsla` (Ruukkilabra must never lead to the teacher's other sites),
+when a page's canonical address is not on ruukkilab.fi, or when a relative link, image or script points outside the
+site or to a missing file. CI runs the same check on every pull request. `BASE_URL` in `build.py` and
+`print_book.py` (canonical, og:url, QR codes of the printed book) is `https://ruukkilab.fi/`.
+
+Push access: the repository secret `RUUKKILABRA_DEPLOY_KEY` is the private half of an SSH deploy key with write access
+to `Hellsla/ruukkilabra` only. `Hellsla/ruukkilabra-models` must be public (it is checked out without a token).
+The other sites of this repository (its root GitHub Pages) are not affected; the old copy at
+`/fysiikkalabra/site/` keeps being served from this repository too, with its canonical addresses on ruukkilab.fi.
+
 ## Libraries
 p5.js 1.9.4 and KaTeX 0.16.11 are vendored in `templates/vendor/` and copied to `site/vendor/` on build; fonts
 are self-hosted. Pages and headless tests work without a CDN.
@@ -138,6 +160,27 @@ lessons/<COURSE>/<id>/answers.py                    every exercise answer (lesso
 ```json
 { "id": "fy3-2-L2-03", "level": 2, "text": "...", "answer": 2.0, "unit": "m/s²", "tolerance": 0.05 }
 ```
+Exercise-bank additions (teacher 2026-11-04, CLAUDE.md "Exercise levels"):
+
+```json
+{ "id": "fy1-4-L1-06", "level": 1, "text": "...", "kind": ["concept"], "unit": "", "tolerance": 0.02,
+  "answer": "Suora kulkee pisteiden lomassa.",
+  "choices": [{ "text": "Suora kulkee pisteiden lomassa.", "correct": true, "feedback": "Oikein: ..." },
+              { "text": "Suora kulkee jokaisen pisteen kautta.", "feedback": "Mittauksissa on satunnaisvaihtelua: ..." }] }
+{ "id": "fy1-4-L2-05", "level": 2, "text": "...", "kind": ["data", "graph"], "answer": 0.50, "unit": "m/s", "tolerance": 0.04,
+  "data": { "caption": "Kärryn paikka", "columns": ["$t\\,(\\text{s})$", "$x\\,(\\text{m})$"], "rows": [["0.0", "0.10"], ["1.0", "0.61"]] } }
+```
+
+- `"choices"`: a conceptual multiple-choice exercise, 3–5 options, one `"correct": true`, every option with its own
+  feedback (a wrong one names the misconception); `answer` is the correct option's text and the solution is a
+  written one (Kysytty · Periaate · Mallivastaus). The page shows the inquiry choice component (inquiry.js); the
+  answer and solution open after "Olen tehnyt ratkaisun".
+- `"data"`: a measurement table shown under the task (`build.py data_table`); numbers are strings with a decimal point
+  (`"2.50"`, trailing zeros are significant figures), shown with the page language's decimal sign, the same in
+  every translation (check_i18n.py); other cells, the caption and the column heads are translated text.
+- `"kind"`: what the task practises, a list of `data`, `graph`, `experiment`, `error`, `concept`, `reasoning`,
+  `model` (`courses.EXERCISE_KINDS`); `scripts/exercise_bank.py <COURSE>` counts them per chapter.
+
 Optional `"core": true` marks an exercise as a core exercise (*Ydintehtävä*, teacher 2026-10-29): the page tags it and the exercise path says core first, then extra practice, then the challenging level. Without any `core` flag the first two exercises of levels 1 and 2 are core (build.py `core_ids`).
 
 Force-diagram tasks (docs/force-diagrams.md, teacher 2026-10-29): `"fbd": "identify" | "select" | "error" | "draw" | "equations"` says which force-diagram skill an exercise practises (`coverage.py` checks the lesson's plan in curriculum.json). A drawing task (`"fbd": "draw"`) asks the student to draw on paper and shows its model diagram, `"model_figure": "<owner>/<name>"`, at the top of the solution.

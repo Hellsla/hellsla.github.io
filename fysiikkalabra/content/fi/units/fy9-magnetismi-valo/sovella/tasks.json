@@ -1,0 +1,832 @@
+{
+ "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin magnetismin, induktion ja valon. Ratkaise ne kuten kokeessa: nimeä ilmiö ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "tasks": [
+  {
+   "id": "fy9-magnetismi-valo-s1",
+   "title": "Pienvesivoimalan sähkö",
+   "source": "example",
+   "source_note": "Voimala ja luvut ovat keksitty esimerkki. Todellisessa generaattorissa on useita käämejä ja napapareja; tässä käytetään yhden käämin mallia.",
+   "skills": [
+    "fy7-7",
+    "fy7-8",
+    "fy7-5"
+   ],
+   "text": "Vanha pienvesivoimala kunnostetaan. Vesiturbiini pyörittää generaattoria, jota tarkastellaan yksinkertaisessa mallissa: yksi käämi pyörii tasaisesti homogeenisessa magneettikentässä. Voimalan sähkö siirretään muuntajan kautta $12\\,\\text{km}$:n pituista $20{,}0\\,\\text{kV}$:n linjaa pitkin kylään.\n\n- käämissä $60$ kierrosta, pinta-ala $0{,}060\\,\\text{m}^2$\n- magneettivuon tiheys $0{,}50\\,\\text{T}$, pyörimistaajuus $50\\,\\text{Hz}$\n- siirrettävä teho $150\\,\\text{kW}$, linjan johtimien resistanssi yhteensä $6{,}0\\,\\Omega$\n- muuntaja on ideaalinen",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri on generaattorin jännitteen huippuarvo? Kuinka suuri on sen tehollinen arvo?",
+     "answer": [
+      {
+       "name": "e0",
+       "value": 565.5,
+       "unit": "V",
+       "tolerance": 0.02
+      },
+      {
+       "name": "U",
+       "value": 399.9,
+       "unit": "V",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Perustelee, että käämin läpi kulkeva vuo muuttuu jaksollisesti, ja jännite on huippuarvossaan, kun käämin taso on kentän suuntainen; tehollinen arvo on tasajännite, joka antaa saman keskimääräisen tehon.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$e_0 = NBA \\cdot 2\\pi f$ ja $U = \\dfrac{e_0}{\\sqrt{2}}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$e_0 = 60 \\cdot 0{,}50\\,\\text{T} \\cdot 0{,}060\\,\\text{m}^2 \\cdot 2\\pi \\cdot 50\\,\\text{Hz} \\approx 565\\,\\text{V}$ ja $U \\approx 400\\,\\text{V}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$e_0 \\approx 570\\,\\text{V}$ ja $U \\approx 400\\,\\text{V}$ kahdella merkitsevällä numerolla kuten $0{,}50\\,\\text{T}$ ja $0{,}060\\,\\text{m}^2$"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Generaattorin tehollinen jännite $400\\,\\text{V}$ nostetaan muuntajalla linjan jännitteeksi. Mikä on muuntajan toisio- ja ensiökäämin kierrosten lukumäärien suhde? Kuinka suuret virrat kulkevat muuntajan kummallakin puolella?",
+     "answer": [
+      {
+       "name": "ratio",
+       "value": 50.0,
+       "unit": "",
+       "tolerance": 0.01
+      },
+      {
+       "name": "I1",
+       "value": 375.0,
+       "unit": "A",
+       "tolerance": 0.02
+      },
+      {
+       "name": "I2",
+       "value": 7.5,
+       "unit": "A",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Perustelee, että ideaalisessa muuntajassa jännitteiden suhde on kierrosten suhde ja teho säilyy, joten virta pienenee samassa suhteessa kuin jännite kasvaa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\dfrac{N_2}{N_1} = \\dfrac{U_2}{U_1}$ ja $I = \\dfrac{P}{U}$ kummallakin puolella"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\dfrac{20\\,000\\,\\text{V}}{400\\,\\text{V}} = 50$, $I_1 = \\dfrac{150\\,000\\,\\text{W}}{400\\,\\text{V}} = 375\\,\\text{A}$ ja $I_2 = \\dfrac{150\\,000\\,\\text{W}}{20\\,000\\,\\text{V}} = 7{,}50\\,\\text{A}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$N_2 : N_1 = 50$, $I_1 \\approx 375\\,\\text{A}$ ja $I_2 \\approx 7{,}50\\,\\text{A}$"
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri osa siirrettävästä tehosta muuttuu linjassa lämmöksi? Mitä tapahtuisi, jos sama teho yritettäisiin siirtää samaa linjaa pitkin suoraan generaattorin jännitteellä $400\\,\\text{V}$?",
+     "answer": {
+      "value": 0.225,
+      "unit": "%",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$P_\\text{h} = RI^2$, missä $I = \\dfrac{P}{U}$, ja osuus $\\dfrac{P_\\text{h}}{P}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$P_\\text{h} = 6{,}0\\,\\Omega \\cdot (7{,}50\\,\\text{A})^2 \\approx 340\\,\\text{W}$, joten osuus on $\\dfrac{338\\,\\text{W}}{150\\,000\\,\\text{W}} \\approx 0{,}23\\,\\%$"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Jännitteellä $400\\,\\text{V}$ virta olisi $375\\,\\text{A}$ ja lauseke $RI^2$ antaisi $844\\,\\text{kW}$, enemmän kuin koko teho: jo jännitehäviö $RI = 2250\\,\\text{V}$ olisi suurempi kuin $400\\,\\text{V}$, joten siirto ei onnistuisi lainkaan."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Osuus $0{,}23\\,\\%$ kahdella merkitsevällä numerolla kuten resistanssi $6{,}0\\,\\Omega$"
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Huoltomies ehdottaa, että samaan muuntajaan kytkettäisiin myös kylän aurinkopaneelien tasajännite, jotta senkin jännite saataisiin nostettua linjaan. Arvioi ehdotus.",
+     "criteria": [
+      {
+       "text": "Selittää, että muuntajan toisiojännite syntyy induktiolla rautasydämen muuttuvasta magneettivuosta: tasavirralla vuo on vakio, joten toisioon ei synny jännitettä (paitsi hetkellisesti kytkettäessä).",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Ehdotus ei toimi: tasajännite on ensin muutettava vaihtojännitteeksi vaihtosuuntaajalla, ja vasta sitten muuntaja voi nostaa sen."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "concept": "fy7-8",
+    "math": "fy7-7",
+    "communication": "fy7-8"
+   }
+  },
+  {
+   "id": "fy9-magnetismi-valo-s2",
+   "title": "Valokuitu saareen",
+   "source": "example",
+   "source_note": "Tilanne on keksitty esimerkki. Taitekertoimet ja vaimennus ovat tavallisen tietoliikennekuidun suuruusluokkaa.",
+   "skills": [
+    "fy7-12",
+    "fy7-16",
+    "fy7-10"
+   ],
+   "text": "Saaristokylään vedetään valokuitu mantereelta merenpohjaa pitkin. Kuidun ytimessä etenevä infrapunavalo kuljettaa tietoa lyhyinä pulsseina.\n\n- ytimen taitekerroin $1{,}470$, kuoren taitekerroin $1{,}455$\n- kuidun pituus $14{,}0\\,\\text{km}$, vaimennuskerroin $0{,}22\\,\\text{dB/km}$\n- reitillä on neljä jatkosta, joista kukin vaimentaa $0{,}10\\,\\text{dB}$\n- lähettimen teho kuituun $2{,}0\\,\\text{mW}$\n- valon nopeus tyhjiössä $3{,}00 \\cdot 10^8\\,\\text{m/s}$",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri tulokulma ytimen ja kuoren rajapinnassa vähintään tarvitaan, jotta valo pysyy ytimessä? Kuinka suuri kulma valonsäteen ja kuidun akselin välillä saa silloin enintään olla?",
+     "answer": [
+      {
+       "name": "ar",
+       "value": 81.81,
+       "unit": "°",
+       "tolerance": 0.01
+      },
+      {
+       "name": "axis",
+       "value": 8.19,
+       "unit": "°",
+       "tolerance": 0.05
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Perustelee, että valo pysyy ytimessä kokonaisheijastumalla, joka on mahdollista, koska ytimen taitekerroin on suurempi kuin kuoren, ja että tulokulma mitataan rajapinnan normaalista.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$ ja akselin suhteen $90^\\circ - \\alpha_\\text{r}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\sin\\alpha_\\text{r} = \\dfrac{1{,}455}{1{,}470} = 0{,}9898$, joten $\\alpha_\\text{r} \\approx 81{,}8^\\circ$ ja akselin suhteen enintään $8{,}2^\\circ$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\alpha_\\text{r} \\approx 81{,}8^\\circ$ ja $8{,}2^\\circ$; tai noin $82^\\circ$ ja $8^\\circ$; perustelu tarkkuudelle: taitekertoimien ero tunnetaan vain kahden numeron tarkkuudella"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka kauan valopulssi kulkee kuidun akselin suuntaisesti mantereelta saareen? Kuinka paljon kauemmin kulkee säde, jonka kulma kuidun akseliin on suurin mahdollinen, jolla se vielä pysyy ytimessä?",
+     "answer": [
+      {
+       "name": "t",
+       "value": 68.6,
+       "unit": "µs",
+       "tolerance": 0.02
+      },
+      {
+       "name": "diff",
+       "value": 0.707,
+       "unit": "µs",
+       "tolerance": 0.05
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v = \\dfrac{c}{n_1}$ ja $t = \\dfrac{n_1 s}{c}$"
+      },
+      {
+       "text": "Perustelee, että jyrkimmin etenevä säde kulkee kuidun pituutta kohti matkan $\\dfrac{s}{\\sin\\alpha_\\text{r}}$, koska säteen ja akselin välinen kulma on $90^\\circ - \\alpha_\\text{r}$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$t = \\dfrac{1{,}470 \\cdot 14\\,000\\,\\text{m}}{3{,}00 \\cdot 10^8\\,\\text{m/s}} \\approx 68{,}6\\,\\mu\\text{s}$ ja $\\dfrac{68{,}6\\,\\mu\\text{s}}{0{,}9898} \\approx 69{,}3\\,\\mu\\text{s}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$t \\approx 68{,}6\\,\\mu\\text{s}$ ja ero noin $0{,}7\\,\\mu\\text{s}$"
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri teho saapuu saaren vastaanottimeen?",
+     "answer": {
+      "value": 0.897,
+      "unit": "mW",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$A = aL + 4 \\cdot 0{,}10\\,\\text{dB}$ ja $A = 10\\,\\text{dB} \\cdot \\lg \\dfrac{P_0}{P}$, joten $P = P_0 \\cdot 10^{-A/(10\\,\\text{dB})}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$A = 0{,}22\\,\\tfrac{\\text{dB}}{\\text{km}} \\cdot 14{,}0\\,\\text{km} + 0{,}40\\,\\text{dB} = 3{,}48\\,\\text{dB}$ ja $P = 2{,}0\\,\\text{mW} \\cdot 10^{-0{,}348} \\approx 0{,}90\\,\\text{mW}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$P \\approx 0{,}90\\,\\text{mW}$ kahdella merkitsevällä numerolla kuten $2{,}0\\,\\text{mW}$ ja $0{,}22\\,\\text{dB/km}$"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Noin $3\\,\\text{dB}$ puolittaa tehon, ja $3{,}5\\,\\text{dB}$ jättää vähän alle puolet, $45\\,\\%$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Selitä, miksi valo pysyy kuidussa, vaikka kuitu kaartuu loivasti merenpohjan muotojen mukaan, mutta vuotaa ulos, jos kuitu taitetaan jyrkälle mutkalle.",
+     "criteria": [
+      {
+       "text": "Selittää, että loivassa kaaressa säteen tulokulma rajapinnassa pysyy rajakulmaa suurempana, mutta jyrkässä mutkassa säde osuu ulkokaaren rajapintaan jyrkemmin, tulokulma pienenee alle rajakulman ja valo taittuu kuoreen.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Kuidun pysyminen valojohteena edellyttää, että tulokulma on kaikkialla vähintään $81{,}8^\\circ$; siksi kaapelin taivutussäteellä on alaraja."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "concept": "fy7-12",
+    "math": "fy7-16",
+    "communication": "fy7-12"
+   }
+  },
+  {
+   "id": "fy9-magnetismi-valo-s3",
+   "title": "Suoran johtimen magneettikenttä",
+   "source": "example",
+   "source_note": "Aineisto on keksitty esimerkki: luvut on laskettu pitkän suoran johtimen mallista, kun $I = 12{,}0\\,\\text{A}$, ja niihin on lisätty noin $11\\,\\mu\\text{T}$:n vakiokenttä ja lukemisen kaltaista vaihtelua.",
+   "skills": [
+    "fy7-3",
+    "fy1-4",
+    "fy7-1",
+    "fy1-3"
+   ],
+   "text": "Opiskelijat tutkivat suoran johtimen magneettikenttää. Pystysuorassa, $2{,}0\\,\\text{m}$:n pituisessa johtimessa kulki tasavirta $12{,}0\\,\\text{A}$. Magneettikenttäanturi asetettiin johtimen keskikohdan korkeudelle niin, että se mittasi johdinta kiertävän kentän suuntaista komponenttia. Anturin asento pidettiin samana, ja sen etäisyyttä $r$ johtimen keskiakselista muutettiin. Anturia ei nollattu ennen mittausta.\n\n| $r\\ (\\text{cm})$ | $B\\ (\\mu\\text{T})$ |\n|---|---|\n| $2{,}0$ | $132$ |\n| $3{,}0$ | $90$ |\n| $4{,}0$ | $72$ |\n| $6{,}0$ | $50$ |\n| $8{,}0$ | $41$ |\n| $12{,}0$ | $31$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 4,
+     "text": "Esitä magneettivuon tiheys etäisyyden funktiona kuvaajana. Onko magneettivuon tiheys kääntäen verrannollinen etäisyyteen? Perustele aineiston avulla.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1,
+       "detail": "Vaaka-akselilla $r\\ (\\text{cm})$, pystyakselilla $B\\ (\\mu\\text{T})$; akselit alkavat nollasta."
+      },
+      {
+       "key": "graph_points",
+       "points": 1,
+       "detail": "Kuusi pistettä taulukosta; pisteitä ei yhdistetä murtoviivaksi."
+      },
+      {
+       "text": "Perustelee aineistolla: kenttä pienenee loivenevasti, mutta kaksinkertainen etäisyys ei puolita sitä, esimerkiksi $2{,}0\\,\\text{cm} \\to 4{,}0\\,\\text{cm}$ antaa $132\\,\\mu\\text{T} \\to 72\\,\\mu\\text{T}$. Tulo $Br$ kasvaa $264$:stä $372\\,\\mu\\text{T} \\cdot \\text{cm}$:iin, joten $B$ ei ole kääntäen verrannollinen etäisyyteen.",
+       "tag": "graph",
+       "points": 2
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "graph",
+     "points": 5,
+     "text": "Esitä aineisto niin, että pisteisiin sopii suora. Perustele valintasi ja sovita pisteisiin suora.",
+     "criteria": [
+      {
+       "text": "Perustelee linearisoinnin: pitkän suoran johtimen kenttä on $B = \\dfrac{\\mu_0 I}{2\\pi} \\cdot \\dfrac{1}{r}$, joten $B$ on lineaarinen etäisyyden käänteisluvun $\\dfrac{1}{r}$ suhteen, ja mahdollinen vakiokenttä vain siirtää suoraa.",
+       "tag": "transfer",
+       "points": 2
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\dfrac{1}{r}$ jokaiselle etäisyydelle yksikössä $\\tfrac{1}{\\text{m}}$, esimerkiksi $\\dfrac{1}{0{,}020\\,\\text{m}} = 50\\,\\tfrac{1}{\\text{m}}$."
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Yksi suora pisteiden lomitse; vaaka-akselilla $\\tfrac{1}{r}\\ (\\tfrac{1}{\\text{m}})$, pystyakselilla $B\\ (\\mu\\text{T})$. Suoraa ei pakoteta origon kautta."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 6,
+     "text": "Määritä kuvaajasta tyhjiön permeabiliteetti $\\mu_0$. Vertaa tulosta taulukkoarvoon $4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$.",
+     "answer": {
+      "value": 1.268,
+      "unit": "· 10⁻⁶ Vs/(Am)",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 2,
+       "detail": "Kulmakerroin kahdesta kaukana toisistaan olevasta suoran pisteestä, esimerkiksi $(5{,}0\\,\\tfrac{1}{\\text{m}};\\ 23\\,\\mu\\text{T})$ ja $(50\\,\\tfrac{1}{\\text{m}};\\ 132\\,\\mu\\text{T})$: $k \\approx 2{,}42\\,\\mu\\text{T} \\cdot \\text{m}$."
+      },
+      {
+       "text": "Tulkitsee kulmakertoimen: $k = \\dfrac{\\mu_0 I}{2\\pi}$.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\mu_0 = \\dfrac{2\\pi k}{I}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\mu_0 \\approx 1{,}27 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$; tulokset $1{,}22$–$1{,}32 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$ hyväksytään."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Taulukkoarvo on $1{,}257 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, joten ero on noin $1\\,\\%$, mikä sopii lukemien noin $1\\,\\mu\\text{T}$:n vaihteluun."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 5,
+     "text": "Suora ei kulje origon kautta. Mitä vakiotermi kertoo mittauksesta? Kuinka suuren lukeman anturi näyttäisi mallin mukaan $50\\,\\text{cm}$:n päässä johtimesta, ja miksi tulos on vain arvio?",
+     "answer": {
+      "value": 15.73,
+      "unit": "µT",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "text": "Tulkitsee vakiotermin: suora leikkaa $B$-akselin noin arvossa $11\\,\\mu\\text{T}$, joka on johtimen virrasta riippumaton vakiokenttä: Maan magneettikentän komponentti anturin suunnassa ja anturin nollakohta, koska anturia ei nollattu. Sen voi tarkistaa mittaamalla lukeman virta katkaistuna.",
+       "tag": "experiment",
+       "points": 2
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$B = \\dfrac{k}{r} + b$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$B = \\dfrac{2{,}42\\,\\mu\\text{T} \\cdot \\text{m}}{0{,}50\\,\\text{m}} + 10{,}9\\,\\mu\\text{T} \\approx 4{,}8\\,\\mu\\text{T} + 10{,}9\\,\\mu\\text{T} \\approx 16\\,\\mu\\text{T}$"
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Etäisyys on mitatun alueen ulkopuolella, ja $50\\,\\text{cm}$ ei ole enää pieni johtimen pituuteen $2{,}0\\,\\text{m}$ verrattuna, joten pitkän johtimen malli antaa johtimen kentäksi liian suuren arvon; lukemasta suurin osa on vakiokenttää."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "math": "fy7-3",
+    "transfer": "fy7-3",
+    "experiment": "fy1-3"
+   }
+  },
+  {
+   "id": "fy9-magnetismi-valo-s4",
+   "title": "Värit kuplassa, sateenkaaressa ja CD-levyssä",
+   "source": "example",
+   "source_note": "Tilanne on keksitty esimerkki. Veden taitekertoimet ja CD-levyn uraväli ovat todellisia arvoja.",
+   "skills": [
+    "fy7-11",
+    "fy7-14",
+    "fy7-13"
+   ],
+   "text": "Kesäjuhlissa pihalla näkyy samana iltapäivänä kolmenlaisia värejä. Lasten saippuakuplissa on värikkäitä raitoja. Nurmikon kastelusuihkun pisaroissa näkyy pieni sateenkaari, kun aurinko paistaa katsojan selän takaa. Pöydälle jätetty CD-levy heijastaa auringonvalosta värikkäitä kaaria. Juhlavieras väittää: ”Kaikki kolme syntyvät samalla tavalla: valkoinen valo taittuu vedessä tai muovissa, ja eri värit taittuvat eri määrän.”\n\n- veden taitekerroin punaiselle valolle $1{,}331$ ja violetille $1{,}343$\n- CD-levyn vierekkäisten urien etäisyys $1{,}6\\,\\mu\\text{m}$",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "word",
+     "points": 5,
+     "text": "Selitä, miten sateenkaari syntyy. Kummalla reunalla kaarta punainen on, ja miksi?",
+     "criteria": [
+      {
+       "text": "Selittää, että valo taittuu pisaraan, heijastuu sen takapinnasta ja taittuu ulos, ja että veden taitekerroin riippuu aallonpituudesta (dispersio), joten värit lähtevät pisarasta eri suuntiin.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Perustelee, että punaisen taitekerroin on pienin, joten punainen näkyy suurimmassa kulmassa vastapisteestä, noin $42^\\circ$, ja violetti noin $40{,}6^\\circ$:n kulmassa: punainen on kaaren ulkoreunalla.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Sateenkaaren kohdalla väite pitää paikkansa: värit erottuvat, koska eri värit taittuvat vedessä eri määrän."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "word",
+     "points": 5,
+     "text": "Selitä, miten saippuakuplan värit syntyvät. Miksi kuplan ohuin yläosa näyttää juuri ennen puhkeamista tummalta?",
+     "criteria": [
+      {
+       "text": "Selittää ohuen kalvon interferenssin: kalvon ulko- ja sisäpinnasta heijastuneilla aalloilla on matkaero $2nd$, ja paksuudesta riippuu, mitkä aallonpituudet vahvistuvat ja mitkä heikkenevät; väri on jäljelle jäävien aallonpituuksien sekoitus.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Perustelee tumman kohdan: vain ulkopinnan heijastus kääntää aallon, joten hyvin ohuessa kalvossa ($2nd \\approx 0$) heijastuneet aallot ovat vastakkaisessa vaiheessa ja heikentävät toisiaan kaikilla aallonpituuksilla.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Kuplan kohdalla väite on väärä: värit syntyvät interferenssistä, eivät taittumisesta, ja väri riippuu kalvon paksuudesta."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 5,
+     "text": "Selitä, miten CD-levy synnyttää värit, ja laske, missä kulmissa punainen ($650\\,\\text{nm}$) ja violetti ($400\\,\\text{nm}$) valo näkyvät ensimmäisessä kertaluvussa, kun valo tulee kohtisuoraan levyyn. Arvioi lopuksi juhlavieraan väite kokonaisuutena.",
+     "criteria": [
+      {
+       "text": "Selittää, että tiheät urat toimivat heijastushilana: vierekkäisistä urista heijastuneet aallot vahvistavat toisiaan suunnissa, joille $d\\sin\\theta = k\\lambda$.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\sin\\theta = \\dfrac{650 \\cdot 10^{-9}\\,\\text{m}}{1{,}6 \\cdot 10^{-6}\\,\\text{m}} = 0{,}41$, joten $\\theta \\approx 24^\\circ$; violetille $\\sin\\theta = 0{,}25$ ja $\\theta \\approx 14{,}5^\\circ$."
+      },
+      {
+       "text": "Toteaa, että hilassa punainen poikkeaa eniten, päinvastoin kuin prismassa ja pisarassa, mikä osoittaa eri syntytavan.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Väite pitää paikkansa vain sateenkaaressa. Kuplan ja CD-levyn värit syntyvät interferenssistä: kuplassa kalvon kahden pinnan, CD-levyssä monen uran heijastusten välillä."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "concept": "fy7-14",
+    "math": "fy7-13",
+    "communication": "fy7-11"
+   }
+  },
+  {
+   "id": "fy9-magnetismi-valo-s5",
+   "title": "Laserin aallonpituus hilalla",
+   "source": "example",
+   "source_note": "Raportti ja mittaukset ovat keksitty esimerkki: etäisyydet on laskettu hilasta, jossa on $600$ viivaa millimetrillä, ja aallonpituudesta $532\\,\\text{nm}$, ja ne on pyöristetty mittanauhan lukemiksi.",
+   "skills": [
+    "fy7-13",
+    "fy1-3",
+    "fy1-8"
+   ],
+   "text": "Opiskelijaryhmä mittasi vihreän laserosoittimen aallonpituuden. Laser, hila ja varjostimena toimiva seinä asetettiin riviin niin, että säde osui kohtisuoraan hilaan ja seinään. Hilan pakkauksessa luki $600$ viivaa millimetrillä. Ryhmä mittasi mittanauhalla hilan etäisyyden seinästä sekä keskimaksimin etäisyyden keskimaksimin oikealla puolella olevista maksimeista.\n\n| Mitattu | Arvo |\n|---|---|\n| hilan etäisyys seinästä $L$ | $80{,}0\\,\\text{cm}$ |\n| keskimaksimista 1. kertaluvun maksimiin $x_1$ | $27{,}0\\,\\text{cm}$ |\n| keskimaksimista 2. kertaluvun maksimiin $x_2$ | $66{,}4\\,\\text{cm}$ |\n\nRaportin laskut ja johtopäätökset: ”Pienillä kulmilla $\\sin\\theta \\approx \\tfrac{x}{L}$, joten $\\lambda = \\tfrac{d x_2}{2L} = 692\\,\\text{nm}$. Tulos on punaisen valon aallonpituus, joten laserin ilmoitettu aallonpituus $532\\,\\text{nm}$ on väärä. Kolmannen kertaluvun maksimia emme löytäneet seinältä, joten hila on viallinen.”",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 5,
+     "text": "Laske laserin aallonpituus kummastakin maksimista.",
+     "answer": [
+      {
+       "name": "l1",
+       "value": 533.0,
+       "unit": "nm",
+       "tolerance": 0.02
+      },
+      {
+       "name": "l2",
+       "value": 532.2,
+       "unit": "nm",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$d = \\dfrac{1\\,\\text{mm}}{600}$, $\\tan\\theta_k = \\dfrac{x_k}{L}$ ja $\\lambda = \\dfrac{d\\sin\\theta_k}{k}$"
+      },
+      {
+       "text": "Perustelee, että kulma lasketaan ensin tangentista, koska $\\sin\\theta \\approx \\tan\\theta$ vain pienillä kulmilla, ja tässä $\\theta_2 \\approx 40^\\circ$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "$d = 1{,}667\\,\\mu\\text{m}$; $\\theta_1 = 18{,}65^\\circ$ ja $\\lambda = 533\\,\\text{nm}$; $\\theta_2 = 39{,}69^\\circ$ ja $\\lambda = \\dfrac{1{,}667\\,\\mu\\text{m} \\cdot 0{,}6386}{2} = 532\\,\\text{nm}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\lambda \\approx 533\\,\\text{nm}$ ja $532\\,\\text{nm}$ kolmella merkitsevällä numerolla kuten etäisyydet"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "word",
+     "points": 5,
+     "text": "Arvioi ryhmän johtopäätökset.",
+     "criteria": [
+      {
+       "text": "Osoittaa, että virhe on laskutavassa: pienen kulman oletus antaa $1$. kertaluvusta $562\\,\\text{nm}$ (noin $6\\,\\%$ liikaa) ja $2$. kertaluvusta $692\\,\\text{nm}$ (noin $30\\,\\%$ liikaa), koska ero kasvaa kulman kasvaessa.",
+       "tag": "experiment",
+       "points": 2
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Kun $\\Delta x \\approx 0{,}3\\,\\text{cm}$ ja $\\Delta L \\approx 0{,}3\\,\\text{cm}$, $2$. kertaluvusta saadaan noin $530$–$535\\,\\text{nm}$, joten tulos on sopusoinnussa arvon $532\\,\\text{nm}$ kanssa."
+      },
+      {
+       "text": "Laskee, että $3$. kertaluku on olemassa, koska $3\\lambda < d$: $\\sin\\theta_3 = 0{,}958$, $\\theta_3 \\approx 73^\\circ$ ja $x_3 = L\\tan\\theta_3 \\approx 2{,}7\\,\\text{m}$, joten maksimi on kaukana ja himmeä, ehkä seinän ulkopuolella.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Kumpikaan johtopäätös ei ole perusteltu: laser on $532\\,\\text{nm}$:n vihreä laser, kuten sen värikin kertoo, eikä hila ole viallinen."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 5,
+     "text": "Suunnittele, miten mittausta parannetaan.",
+     "criteria": [
+      {
+       "text": "Mitataan symmetristen maksimien $+k$ ja $-k$ välinen etäisyys ja puolitetaan se: kahden pisteen välin mittaaminen on tarkempaa kuin keskimaksimin keskikohdan arvioiminen, ja symmetria kertoo, onko säde kohtisuorassa.",
+       "tag": "experiment",
+       "points": 2
+      },
+      {
+       "text": "Käytetään kauempaa kertalukua tai suurempaa etäisyyttä $L$, jotta $x$ on suuri ja sen suhteellinen epävarmuus pieni.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Arvioidaan $\\Delta x$ ja $\\Delta L$, lasketaan aallonpituus niiden ääriarvoilla ja ilmoitetaan tulos muodossa $\\lambda \\pm \\Delta\\lambda$, jotta sitä voi verrata valmistajan arvoon."
+      },
+      {
+       "text": "Toistetaan mittaus, mieluiten eri henkilöiden lukemina, ja huolehditaan turvallisuudesta: säteeseen ei katsota, eikä sitä suunnata kenenkään silmiin.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "math": "fy7-13",
+    "concept": "fy7-13",
+    "experiment": "fy1-3",
+    "communication": "fy1-8"
+   }
+  },
+  {
+   "id": "fy9-magnetismi-valo-s6",
+   "title": "Sairaalan syklotroni",
+   "source": "example",
+   "source_note": "Syklotroni ja luvut ovat keksitty esimerkki. Merkkiaineita valmistavien syklotronien kentät ja protonien energiat ovat tätä suuruusluokkaa.",
+   "skills": [
+    "fy7-2",
+    "fy5-3",
+    "fy5-4",
+    "fy6-12"
+   ],
+   "text": "Sairaalan syklotronissa kiihdytetään protoneja, joilla valmistetaan lyhytikäisiä radioaktiivisia merkkiaineita kuvantamista varten. Syklotronissa on kaksi D-kirjaimen muotoista onttoa elektrodia homogeenisessa magneettikentässä, joka on kohtisuorassa protonien rataa vastaan. Elektrodien sisällä protoni kiertää puoliympyrän kerrallaan, ja niiden välisessä kapeassa raossa vaihtojännite kiihdyttää sitä aina, kun se ylittää raon.\n\n- magneettivuon tiheys $1{,}20\\,\\text{T}$\n- protonin massa $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$ ja varaus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$\n- protonin liike-energia syklotronista tullessa $8{,}0\\,\\text{MeV}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n- raon jännitteen huippuarvo $50\\,\\text{kV}$; protoni ylittää raon aina, kun jännite on huippuarvossaan\n- protonin vauhti jää alle viidesosaan valon nopeudesta, joten klassinen mekaniikka riittää",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Osoita, että protonin kierrosaika ei riipu sen vauhdista. Millä taajuudella raon jännitteen on vaihdeltava?",
+     "answer": {
+      "value": 18.29,
+      "unit": "MHz",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Perustelee, että magneettinen voima on kohtisuorassa nopeutta vastaan ja toimii keskeisvoimana, $qvB = \\dfrac{mv^2}{r}$, ja että kierroksella kuljettu matka on $2\\pi r$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$r = \\dfrac{mv}{qB}$ ja $T = \\dfrac{2\\pi r}{v} = \\dfrac{2\\pi m}{qB}$, josta $v$ supistuu; jännitteen taajuus on $f = \\dfrac{1}{T}$, koska suunta vaihtuu joka puolikierroksella"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$T = \\dfrac{2\\pi \\cdot 1{,}673 \\cdot 10^{-27}\\,\\text{kg}}{1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1{,}20\\,\\text{T}} \\approx 5{,}47 \\cdot 10^{-8}\\,\\text{s}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$f \\approx 18{,}3\\,\\text{MHz}$ kolmella merkitsevällä numerolla kuten $1{,}20\\,\\text{T}$"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri on protonin vauhti, kun se tulee ulos syklotronista? Kuinka suuri on silloin radan säde?",
+     "answer": [
+      {
+       "name": "v",
+       "value": 3.914,
+       "unit": "· 10⁷ m/s",
+       "tolerance": 0.02
+      },
+      {
+       "name": "r",
+       "value": 0.3406,
+       "unit": "m",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$E_\\text{k} = \\tfrac12 mv^2$, joten $v = \\sqrt{\\dfrac{2E_\\text{k}}{m}}$, ja $r = \\dfrac{mv}{qB}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$E_\\text{k} = 8{,}0 \\cdot 10^6 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 1{,}28 \\cdot 10^{-12}\\,\\text{J}$, $v \\approx 3{,}9 \\cdot 10^7\\,\\text{m/s}$ ja $r \\approx 0{,}34\\,\\text{m}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$v \\approx 3{,}9 \\cdot 10^7\\,\\text{m/s}$ ja $r \\approx 0{,}34\\,\\text{m}$ kahdella merkitsevällä numerolla kuten $8{,}0\\,\\text{MeV}$"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "$v \\approx 0{,}13c$, joten klassinen malli on riittävä; noin $70\\,\\text{cm}$:n halkaisija sopii sairaalan laitteeseen."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka monta kierrosta protoni tekee syklotronissa? Kuinka kauan kiihdytys kestää?",
+     "answer": [
+      {
+       "name": "n",
+       "value": 80.0,
+       "unit": "",
+       "tolerance": 0.02
+      },
+      {
+       "name": "t",
+       "value": 4.37,
+       "unit": "µs",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Perustelee, että vain raon sähkökenttä tekee työtä, $qU$ jokaisella ylityksellä ja kahdesti kierroksessa, koska magneettinen voima on kohtisuorassa nopeutta vastaan eikä muuta vauhtia.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$n = \\dfrac{E_\\text{k}}{2qU}$ ja $t = nT$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$2qU = 2 \\cdot 50\\,\\text{keV} = 100\\,\\text{keV}$, joten $n = \\dfrac{8{,}0\\,\\text{MeV}}{0{,}100\\,\\text{MeV}} = 80$ ja $t = 80 \\cdot 5{,}47 \\cdot 10^{-8}\\,\\text{s} \\approx 4{,}4\\,\\mu\\text{s}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$n \\approx 80$ kierrosta ja $t \\approx 4{,}4\\,\\mu\\text{s}$"
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri on protonin kiihtyvyys juuri ennen kuin se tulee ulos syklotronista? Mihin suuntaan se osoittaa?",
+     "answer": {
+      "value": 4.498,
+      "unit": "· 10¹⁵ m/s²",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$a_\\text{n} = \\dfrac{v^2}{r}$ tai $a = \\dfrac{qvB}{m}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$a_\\text{n} = \\dfrac{(3{,}914 \\cdot 10^7\\,\\text{m/s})^2}{0{,}3406\\,\\text{m}} \\approx 4{,}5 \\cdot 10^{15}\\,\\text{m/s}^2$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$a \\approx 4{,}5 \\cdot 10^{15}\\,\\text{m/s}^2$ kohti radan keskipistettä"
+      }
+     ]
+    }
+   ],
+   "links": {
+    "concept": "fy7-2",
+    "math": "fy5-4"
+   }
+  }
+ ]
+}

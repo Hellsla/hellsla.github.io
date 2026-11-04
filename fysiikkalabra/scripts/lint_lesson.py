@@ -272,6 +272,46 @@ def numbers_with_units(text):
     return plain + coeff
 
 
+def exercise_choice_errors(e):
+    """A multiple-choice exercise (teacher 2026-11-04): 3–5 options, exactly one correct, every option with feedback
+    that names the reasoning (a wrong one: the misconception behind it); its `answer` is the correct option's text, so
+    the Vastaus box and the written-task rules (solutions.md Kysytty · Periaate · Mallivastaus) apply."""
+    ch = e.get("choices")
+    if not isinstance(ch, list) or not 3 <= len(ch) <= 5: return ["choices: 3–5 options"]
+    out = []
+    for i, c in enumerate(ch):
+        if not (isinstance(c, dict) and isinstance(c.get("text"), str) and c["text"].strip()): out.append(f"choices[{i}].text: a text is required")
+        elif not (isinstance(c.get("feedback"), str) and c["feedback"].strip()): out.append(f"choices[{i}].feedback: every option needs its own feedback")
+        if isinstance(c, dict) and set(c) - {"text", "feedback", "correct"}: out.append(f"choices[{i}]: keys are text, feedback, correct")
+    right = [c for c in ch if isinstance(c, dict) and c.get("correct") is True]
+    if len(right) != 1: out.append("choices: exactly one option has \"correct\": true")
+    elif e.get("answer") != right[0].get("text"): out.append("answer: the correct option's text, word for word")
+    if e.get("unit"): out.append("unit: empty in a multiple-choice task")
+    return out
+
+
+DATA_NUM = re.compile(r"[−-]?\d+(?:\.\d+)?")
+
+
+def data_errors(d):
+    """An exercise's data table ("data", teacher 2026-11-04): {"caption", "columns", "rows"}; a numeric cell is a
+    string with a decimal point ("2.50", trailing zeros kept: they are the significant figures) that build.py shows
+    with the page language's decimal sign, so every language has the same data."""
+    if not isinstance(d, dict) or set(d) - {"caption", "columns", "rows"}: return ["{\"caption\", \"columns\", \"rows\"}"]
+    cols, rows = d.get("columns"), d.get("rows")
+    if not (isinstance(cols, list) and len(cols) >= 2 and all(isinstance(h, str) and h.strip() for h in cols)): return ["columns: at least two heads, as texts"]
+    if not (isinstance(rows, list) and len(rows) >= 2): return ["rows: at least two rows"]
+    out = []
+    for i, r in enumerate(rows):
+        if not (isinstance(r, list) and len(r) == len(cols)): out.append(f"rows[{i}]: {len(cols)} cells, one per column"); continue
+        for j, x in enumerate(r):
+            if not isinstance(x, str): out.append(f"rows[{i}][{j}]: a string (\"2.50\"), so trailing zeros are kept")
+            elif re.fullmatch(r"[−-]?\d+,\d+", x): out.append(f"rows[{i}][{j}]: write {x} with a decimal point; the page shows the comma")
+    for h in cols:
+        if re.search(r"\d\.\d", re.sub(r"\$[^$]*\$", "", h)): out.append(f"columns: decimal point in {h!r}")
+    return out
+
+
 def check_exercises(L, folder):
     f = courses.lesson_file(folder, "exercises.json")
     if not f.exists(): L.err("exercises.json", 1, "missing"); return {}
@@ -279,11 +319,18 @@ def check_exercises(L, folder):
     except json.JSONDecodeError as e: L.err("exercises.json", e.lineno, f"invalid JSON: {e.msg}"); return {}
     raw = f.read_text()
     lid = folder.name
-    want = courses.course(courses.course_of(lid))["exercise_levels"]   # 5/4/3 unless the course config says otherwise
+    c = courses.course(courses.course_of(lid))
+    want = c["exercise_levels"]   # the least per level: 5/4/3 unless the course config says otherwise (teacher 2026-11-04: at least, not exactly)
     answers = {}
+    if set(ex) - set(want): L.err("exercises.json", 1, f"unknown keys {sorted(set(ex) - set(want))}: the exercise set has level1, level2, level3")
+    total = sum(len(ex.get(lvl, [])) for lvl in want)
+    if total < c["exercise_total"]: L.err("exercises.json", 1, f"{total} tasks in all, the course asks for at least {c['exercise_total']} (curriculum.json exercise_total)")
+    if total > courses.MAX_EXERCISES: L.err("exercises.json", 1, f"{total} tasks, more than {courses.MAX_EXERCISES}: split the chapter's practice or cut weak tasks")
     for lvl, n in want.items():
         items = ex.get(lvl, [])
-        if len(items) != n: L.err("exercises.json", 1, f"{lvl} has {len(items)} tasks, expected {n} (CLAUDE.md exercise levels, curriculum.json exercise_levels)")
+        if len(items) < n: L.err("exercises.json", 1, f"{lvl} has {len(items)} tasks, at least {n} expected (CLAUDE.md exercise levels, curriculum.json exercise_levels)")
+        ids = [e.get("id") for e in items]
+        for d in sorted({i for i in ids if ids.count(i) > 1}): L.err("exercises.json", 1, f"id {d} twice")
         for e in items:
             eid = e.get("id", "?")
             line = raw.count("\n", 0, raw.find(f'"{eid}"')) + 1 if eid in raw else 1
@@ -294,6 +341,12 @@ def check_exercises(L, folder):
             if "fbd" in e and e["fbd"] not in ("identify", "select", "error", "draw", "equations"):
                 L.err("exercises.json", line, f"{eid}: fbd is one of identify, select, error, draw, equations (docs/force-diagrams.md)")
             if e.get("fbd") == "draw" and not e.get("model_figure"): L.err("exercises.json", line, f"{eid}: a drawing task shows its model diagram in the solution (\"model_figure\": \"<id>\")")
+            for k in e.get("kind", []) if isinstance(e.get("kind", []), list) else [None]:
+                if k not in courses.EXERCISE_KINDS: L.err("exercises.json", line, f"{eid}: kind is a list of {', '.join(courses.EXERCISE_KINDS)}")
+            if "choices" in e:
+                for msg in exercise_choice_errors(e): L.err("exercises.json", line, f"{eid}: {msg}")
+            if "data" in e:
+                for msg in data_errors(e["data"]): L.err("exercises.json", line, f"{eid}: data: {msg}")
             tol = e.get("tolerance")
             if not isinstance(tol, (int, float)) or tol <= 0: L.err("exercises.json", line, f"{eid}: tolerance must be a positive number")
             text = e.get("text", "")

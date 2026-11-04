@@ -1,0 +1,10 @@
+[
+ {
+  "q": "Elektroni lähtee levosta ja kulkee $500\\,\\text{V}$:n potentiaalieron läpi. Kuinka suuri on sen liike-energia elektronivoltteina ja jouleina?",
+  "a": "Kenttä tekee työn $eU$, joten $E_\\text{k} = 500\\,\\text{eV} = 500 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} \\approx 8{,}0 \\cdot 10^{-17}\\,\\text{J}$. Elektroni liikkuu kohti suurempaa potentiaalia, ja sen potentiaalienergia pienenee yhtä paljon."
+ },
+ {
+  "q": "Lähteeseen kytketyn kondensaattorin jännite kaksinkertaistetaan. Kuinka moninkertaiseksi sen varaus ja energia muuttuvat?",
+  "a": "Kapasitanssi ei muutu, joten $Q = CU$ kaksinkertaistuu ja $W = \\tfrac12 CU^2$ nelinkertaistuu, koska energia on verrannollinen jännitteen neliöön."
+ }
+]

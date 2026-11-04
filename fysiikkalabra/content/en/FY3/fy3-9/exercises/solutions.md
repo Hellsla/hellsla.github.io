@@ -119,3 +119,138 @@
 **Substitution:** $L_2 = \dfrac{101\,\text{kPa} \cdot 40.0\,\text{cm}}{401\,\text{kPa}} = 10.075\,\text{cm}$, so $s = 40.0\,\text{cm} - 10.075\,\text{cm} = 29.925\,\text{cm}$
 **Answer:** $s \approx 29.9\,\text{cm}$, three significant figures. In the difference $40.0\,\text{cm} - 10.1\,\text{cm}$ the decimals are determined by the length $40.0\,\text{cm}$ (tenths of a centimetre), so the result $29.9\,\text{cm}$ has three figures; the pressures $101\,\text{kPa}$ and $401\,\text{kPa}$ also have three figures.
 **Reasonableness:** The pressure ratio is $401/101 \approx 4$, so the air column is compressed to about a quarter: $40.0\,\text{cm} / 4 \approx 10\,\text{cm}$. About three quarters of the stroke is used to compress the air, and only during the last $10\,\text{cm}$ does air flow into the tyre. The harder the tyre, the smaller the part of the stroke that fills it, and that is why pumping feels inefficient.
+
+## fy3-9-L1-06
+**Find:** what the $(V, p)$ graph of an isothermal change looks like.
+**Principle:** The amount of sealed air stays the same and its temperature stays the same, so Boyle's law holds: $pV$ is constant. Then $p = \text{constant} \cdot \dfrac{1}{V}$, that is, the pressure is inversely proportional to the volume.
+**Model answer:** The graph is a falling curve, because the product $pV$ is constant: when the volume doubles, the pressure halves, and when the volume halves, the pressure doubles. The curve approaches the axes but never meets them. A falling straight line would be wrong, because the pressure would not decrease by the same amount for every added millilitre. A rising graph is wrong, because the amount of air is the same all the time, and when the volume increases the particles hit the walls less often. A horizontal graph is wrong, because a constant temperature does not mean a constant pressure: when the volume changes, the pressure changes.
+**Reading the graph:** The shape of the graph is deduced from the product $pV = \text{constant}$: choose the volumes $V$, $2V$ and $4V$, and the corresponding pressures are $p$, $\dfrac{p}{2}$ and $\dfrac{p}{4}$. The points do not lie on one straight line but form a falling curve.
+
+## fy3-9-L1-07
+**Given:** $V_1 = 1.50\,\textsf{l}$, $p_1 = 101\,\text{kPa}$, $p_2 = 240\,\text{kPa}$, temperature constant, no air escapes
+**Find:** the air volume $V_2$ in litres
+**Principle:** The amount and the temperature of the air stay the same, so Boyle's law holds: the pressure is inversely proportional to the volume and the product $pV$ stays constant.
+**Formula:** $p_1 V_1 = p_2 V_2$, so $V_2 = \dfrac{p_1 V_1}{p_2}$
+**Conversions:** No units need to be converted: the kilopascals cancel in the quotient, and the volume comes out directly in litres.
+**Substitution:** $V_2 = \dfrac{101\,\text{kPa} \cdot 1.50\,\textsf{l}}{240\,\text{kPa}} = 0.6312\,\textsf{l}$
+**Answer:** $V_2 \approx 0.63\,\textsf{l}$, two significant figures like the pressure $240\,\text{kPa}$.
+**Reasonableness:** The pressure increases, so the volume must decrease. The pressure ratio is $240 : 101 \approx 2.4$, and $1.50\,\textsf{l} : 2.4 \approx 0.63\,\textsf{l}$. The product $pV$ is $101\,\text{kPa} \cdot 1.50\,\textsf{l} = 151.5\,\text{kPa}\cdot\textsf{l}$ at the start and $240\,\text{kPa} \cdot 0.6312\,\textsf{l} = 151.5\,\text{kPa}\cdot\textsf{l}$ at the end.
+
+## fy3-9-L1-08
+**Find:** what a straight line through the origin in a $(1/V,\,p)$ graph shows.
+**Principle:** A straight line through the origin has the form $p = k \cdot \dfrac{1}{V}$, and its slope is $k = pV$. If the points lie, within the measurement uncertainty, on such a line, the product $pV$ is constant.
+**Model answer:** The line shows that the pressure is inversely proportional to the volume and that the product $pV$ is constant, that is, Boyle's law holds within the measurement uncertainty. The claim of direct proportionality to the volume is wrong, because when the volume increases the quantity $1/V$ decreases. The claim of a rising temperature is wrong, because the points were plotted in a $(1/V,\,p)$ graph and not in a $(V,\,p)$ graph; a rising temperature would take the points off the line. The claim about the square is wrong, because then the points would lie on a curve and not on a line.
+
+## fy3-9-L2-05
+**Given:** from the table the temperatures $\theta = 20.0$; $40.0$; $60.0$; $80.0\,{}^\circ\text{C}$, the pressures of vessel A $p_\text{A} = 99.8$; $106.4$; $113.4$; $119.8\,\text{kPa}$ and the volumes of vessel B $V_\text{B} = 14.7$; $15.7$; $16.6$; $17.6\,\text{ml}$
+**Find:** a) the changes of state and the comparison of the ratios; b) the pressure $p$ of vessel A at $100\,{}^\circ\text{C}$ in kilopascals
+**Principle:** If the pressure of vessel A is directly proportional to the temperature in kelvins, $p/T$ is constant, and the change is isochoric (the volume and the amount of air stay the same). In vessel B the volume changes: if $V/T$ is constant, the pressure is constant and the change is isobaric. The proportionality holds only for the temperature in kelvins.
+**Reading the graph:** The task does not require plotting: the points $(T,\,p)$ and $(T,\,V)$ would lie on straight lines through the origin if the ratios are constant, so the ratios are calculated directly from the rows of the table and compared. The temperatures in kelvins are $T = 293.15$; $313.15$; $333.15$; $353.15\,\text{K}$.
+**Model answer a):** In vessel A the ratio $p/T$ is $0.3404$; $0.3398$; $0.3404$; $0.3392\,\tfrac{\text{kPa}}{\text{K}}$, so it is constant to within about $0.3\,\%$. In vessel B the ratio $V/T$ is $0.0501$; $0.0501$; $0.0498$; $0.0498\,\tfrac{\text{ml}}{\text{K}}$, so it is also constant within the measurement uncertainty. So vessel A shows an isochoric change and vessel B an isobaric change. The small variation is due to the random variation of the measurements.
+In degrees Celsius the ratio of vessel A is $p/\theta = 4.99$; $2.66$; $1.89$; $1.50\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. These decrease sharply, so the pressure is not proportional to the temperature in degrees Celsius but to the temperature in kelvins.
+**Formula:** $\dfrac{p}{T} = k$, so $p = kT$
+**Conversions:** $T = \theta + 273.15\,\text{K}$, so $T_{100} = (100 + 273.15)\,\text{K} = 373.15\,\text{K}$. The coefficient $k$ is the mean of the four ratios of vessel A.
+**Substitution:** The sum of the ratios is $1.3598\,\tfrac{\text{kPa}}{\text{K}}$, so $k = 0.33995\,\tfrac{\text{kPa}}{\text{K}}$.
+
+$$\begin{aligned}
+p &= kT \\
+&= 0.33995\,\tfrac{\text{kPa}}{\text{K}} \cdot 373.15\,\text{K} \\
+&= 126.9\,\text{kPa}
+\end{aligned}$$
+
+**Answer:** $p \approx 127\,\text{kPa}$, three significant figures like the pressures in the table.
+**Reasonableness:** The temperature in kelvins increases from $80\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$ in the ratio $373.15 : 353.15 \approx 1.057$, and $119.8\,\text{kPa} \cdot 1.057 \approx 126.6\,\text{kPa}$. The same calculation from the initial state: $99.8\,\text{kPa} \cdot \dfrac{373.15}{293.15} \approx 127.0\,\text{kPa}$. The result is greater than the last measured value $119.8\,\text{kPa}$, as it should be when the temperature rises.
+
+## fy3-9-L2-06
+**Given:** from the table $V = 10.0$; $20.0$; $30.0$; $40.0\,\text{ml}$ and $p = 200$; $109$; $75.0$; $57.1\,\text{kPa}$, temperature constant; the volume $V_\text{h}$ of the air in the hose and the gauge is constant but unknown
+**Find:** a) the behaviour of the product $pV$ and the type of error; b) the volume $V_\text{h}$ in millilitres
+**Principle:** The sealed air in the syringe and the hose has a total volume $V + V_\text{h}$. The temperature and the amount of air stay the same, so Boyle's law holds for all the air: $p\,(V + V_\text{h})$ is constant. The student calculated the product using only the volume of the syringe.
+**Reading the graph:** From the table the product $pV$ is calculated for every row, and for part b) the first row $(10.0\,\text{ml};\ 200\,\text{kPa})$ and the last row $(40.0\,\text{ml};\ 57.1\,\text{kPa})$ are chosen.
+**Model answer a):** The products are $pV = 2000$; $2180$; $2250$; $2284\,\text{kPa}\cdot\text{ml}$. They increase with the volume, because there is in reality always $V_\text{h}$ more air than is read from the scale. When $V$ is small, this extra volume is a large part of the total volume and the product $pV$ stays smaller than the true value. When $V$ is large, the share is smaller and the product is closer to the true value. The error is systematic: it is in the same direction in every measurement and the volume is the same, so it does not vary randomly. Repeating the measurements would not remove it; it is corrected by taking the volume of the hose into account.
+**Formula:** $p_1 (V_1 + V_\text{h}) = p_4 (V_4 + V_\text{h})$, so $V_\text{h} = \dfrac{p_4 V_4 - p_1 V_1}{p_1 - p_4}$
+**Conversions:** Not needed: the kilopascals and millilitres are the same on both sides of the equation, and the result comes out in millilitres.
+**Substitution:** The products are $p_4 V_4 = 57.1\,\text{kPa} \cdot 40.0\,\text{ml} = 2284\,\text{kPa}\cdot\text{ml}$ and $p_1 V_1 = 200\,\text{kPa} \cdot 10.0\,\text{ml} = 2000\,\text{kPa}\cdot\text{ml}$. The pressure difference is $p_1 - p_4 = 142.9\,\text{kPa}$.
+
+$$\begin{aligned}
+V_\text{h} &= \dfrac{284\,\text{kPa}\cdot\text{ml}}{142.9\,\text{kPa}} \\
+&= 1.99\,\text{ml}
+\end{aligned}$$
+
+**Answer:** $V_\text{h} \approx 2.0\,\text{ml}$, two significant figures. The difference of the products $284\,\text{kPa}\cdot\text{ml}$ is small compared with the products, so the result is sensitive to the readings and cannot be given more precisely.
+**Reasonableness:** The products $p\,(V + V_\text{h})$ with $V_\text{h} = 2.0\,\text{ml}$ are $200 \cdot 12.0 = 2400$; $109 \cdot 22.0 = 2398$; $75.0 \cdot 32.0 = 2400$ and $57.1 \cdot 42.0 = 2398\,\text{kPa}\cdot\text{ml}$. They are constant to within $0.1\,\%$, so the corrected Boyle's law fits all four rows. A hose volume of two millilitres is reasonable: a thin hose and the inside of the gauge fit in a small space.
+
+## fy3-9-L2-07
+**Given:** from the table $\theta = 0.0$; $20.0$; $40.0$; $60.0$; $80.0\,{}^\circ\text{C}$ and $p = 100.1$; $107.3$; $114.9$; $121.8$; $129.1\,\text{kPa}$, volume and amount of air constant
+**Find:** a) the absolute zero $\theta_0$ in degrees Celsius from the extension of the line; b) the comparison with the known value and the behaviour of the gas
+**Principle:** The volume and the amount of air are constant, so the pressure is directly proportional to the temperature in kelvins, $p = kT$. So a line fitted to the $(\theta,\,p)$ points reaches the pressure $p = 0$ at the temperature $T = 0\,\text{K}$, which is absolute zero.
+**Reading the graph:** A line is fitted to the points so that the points lie evenly on both sides of it. Two points far apart are read from the line. The fitted line passes less than $0.04\,\text{kPa}$ from the measured points $(0.0\,{}^\circ\text{C};\ 100.1\,\text{kPa})$ and $(80.0\,{}^\circ\text{C};\ 129.1\,\text{kPa})$, so they are suitable as points of the line. The extension of the line to the left of the graph meets the $\theta$ axis where $p = 0$.
+**Model answer b):** The result differs from the known value $-273.15\,{}^\circ\text{C}$ by about $3\,\text{K}$, that is, about $1\,\%$, which is within the measurement uncertainty when the points are less than $0.3\,\text{kPa}$ from the line. The extrapolation reaches about $276\,\text{K}$ below the measured range, although the measurement interval is only $80\,\text{K}$, so even a small error in the slope changes the result a lot. The extension is a prediction of the model: a real gas condenses into a liquid at a much higher temperature, and then the pressure is no longer proportional to the temperature in kelvins and the extension of the line does not hold.
+**Formula:** The slope of the line $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and the line $p = p_1 + k(\theta - \theta_1)$. From the condition $p = 0$ we get $\theta_0 = \theta_1 - \dfrac{p_1}{k}$.
+**Conversions:** Not needed: a temperature difference is the same in degrees Celsius and in kelvins, and the result is wanted in degrees Celsius.
+**Substitution:** The slope
+
+$$\begin{aligned}
+k &= \dfrac{129.1\,\text{kPa} - 100.1\,\text{kPa}}{80.0\,{}^\circ\text{C} - 0.0\,{}^\circ\text{C}} \\
+&= 0.3625\,\tfrac{\text{kPa}}{\text{K}}
+\end{aligned}$$
+
+and the absolute zero
+
+$$\begin{aligned}
+\theta_0 &= 0.0\,{}^\circ\text{C} - \dfrac{100.1\,\text{kPa}}{0.3625\,\tfrac{\text{kPa}}{\text{K}}} \\
+&= -276.1\,{}^\circ\text{C}
+\end{aligned}$$
+
+**Answer:** $\theta_0 \approx -276\,{}^\circ\text{C}$, three significant figures like the pressures. Reading from a graph and extrapolating are estimates, so $\pm 3\,\%$ is accepted.
+**Reasonableness:** When $\theta = -276\,{}^\circ\text{C}$, the pressure is $100.1\,\text{kPa} + 0.3625\,\tfrac{\text{kPa}}{\text{K}} \cdot (-276.1\,\text{K}) \approx 0\,\text{kPa}$. The result is close to the known value $-273.15\,{}^\circ\text{C}$. If the result were, for example, $-100\,{}^\circ\text{C}$ or $-500\,{}^\circ\text{C}$, the slope would have been read wrongly.
+
+## fy3-9-L3-04
+**Given:** initial state $V_1 = 40.0\,\text{ml}$, $p_1 = 101\,\text{kPa}$, $\theta_1 = 20.0\,{}^\circ\text{C}$; from the table the pressures in slow and fast compression at the volumes $40.0$; $30.0$; $20.0$ and $10.0\,\text{ml}$; final volume of the fast compression $V_2 = 10.0\,\text{ml}$ and pressure $p_2 = 481\,\text{kPa}$
+**Find:** a) in which compression Boyle's law holds; b) why the pressure is greater in the fast compression and what happens as the air cools; c) the temperature $\theta_2$ of the air in degrees Celsius right after the fast compression
+**Principle:** Boyle's law holds when the temperature of the sealed gas stays constant. In fast compression the plunger does work on the gas, but the energy does not have time to transfer completely to the surroundings, so part of the work stays in the gas and the internal energy and the temperature of the gas increase. The amount of air is the same, so the temperature is obtained from two changes of state: first an isothermal compression (Boyle's law) and then warming at constant volume ($p/T$ constant).
+**Reading the graph:** From the row $V = 10.0\,\text{ml}$ of the table the pressure of the fast compression, $481\,\text{kPa}$, is read. The comparison pressure for the isothermal compression is calculated from the initial state, because it contains no reading error.
+**Model answer a):** In slow compression the products are $pV = 4040$; $4050$; $4060$ and $4030\,\text{kPa}\cdot\text{ml}$, so they are constant to within about $1\,\%$ and Boyle's law holds. In fast compression the products are $4040$; $4230$; $4520$ and $4810\,\text{kPa}\cdot\text{ml}$, and they increase by as much as about $19\,\%$ from the initial value, so Boyle's law does not hold.
+**Model answer b):** In fast compression the temperature of the gas rises, because part of the work stays as energy of the gas: the mean kinetic energy of the particles increases. The particles of warmer gas hit the walls more often and harder, so the pressure is greater than at a constant temperature. Boyle's law requires a constant temperature, so it does not describe this situation. When the plunger is held still, the volume is constant and the air gives energy to the surroundings until the temperature is again $20.0\,{}^\circ\text{C}$. The pressure then drops back to the value given by Boyle's law, that is, about $404\,\text{kPa}$.
+**Formula:** Step 1 (isothermal): $p_1 V_1 = p' V_2$, so $p' = \dfrac{p_1 V_1}{V_2}$. Step 2 (isochoric): $\dfrac{p'}{T_1} = \dfrac{p_2}{T_2}$, so $T_2 = \dfrac{T_1 p_2}{p'}$ and $\theta_2 = T_2 - 273.15\,\text{K}$ in degrees Celsius.
+**Conversions:** $T_1 = (20.0 + 273.15)\,\text{K} = 293.15\,\text{K}$. Finally the kelvins are converted back to degrees Celsius by subtracting $273.15$. The pressures and volumes do not need to be converted, because they cancel.
+**Substitution:** The isothermal compression gives the pressure
+
+$$\begin{aligned}
+p' &= \dfrac{101\,\text{kPa} \cdot 40.0\,\text{ml}}{10.0\,\text{ml}} \\
+&= 404\,\text{kPa}
+\end{aligned}$$
+
+and the warming at constant volume gives the temperature
+
+$$\begin{aligned}
+T_2 &= \dfrac{293.15\,\text{K} \cdot 481\,\text{kPa}}{404\,\text{kPa}} \\
+&= 349.0\,\text{K}
+\end{aligned}$$
+
+so $\theta_2 = (349.0 - 273.15)\,{}^\circ\text{C} = 75.9\,{}^\circ\text{C}$.
+**Answer:** $\theta_2 \approx 76\,{}^\circ\text{C}$, in whole degrees Celsius. The pressure $481\,\text{kPa}$ has three figures, and the initial temperature $20.0\,{}^\circ\text{C}$ limits the result to whole degrees.
+**Reasonableness:** The temperature rises by about $56\,\text{K}$ when the compression is fast and the volume decreases to a quarter. A bicycle pump gets warm when pumping, so the order of magnitude is reasonable. Check: when the gas cools back to $293.15\,\text{K}$ at constant volume, the pressure is $481\,\text{kPa} \cdot \dfrac{293.15}{349.0} \approx 404\,\text{kPa}$, the same as the pressure given by Boyle's law. The ratio of the pressures $481 : 404 \approx 1.19$ is the same as the ratio of the temperatures in kelvins $349.0 : 293.15 \approx 1.19$.
+
+## fy3-9-L3-05
+**Given:** from the table the depths $h = 0.0$; $5.0$; $10.0$; $20.0\,\text{m}$ and the volumes $V = 6.0$; $4.0$; $3.0$; $2.0\,\textsf{l}$; $p_0 = 101\,\text{kPa}$, $\rho = 1000\,\tfrac{\text{kg}}{\text{m}^3}$, $g = 9.81\,\tfrac{\text{m}}{\text{s}^2}$, limit $V_\text{limit} = 1.5\,\textsf{l}$; temperature and amount of air constant
+**Find:** a) whether the air in the lungs obeys Boyle's law; b) the depth $h$ in metres at which $V = 1.5\,\textsf{l}$; c) the increase of pressure compared with the surface
+**Principle:** At the depth $h$ the lungs are subject to the hydrostatic pressure of the water in addition to the atmospheric pressure, $p = p_0 + \rho g h$. The pressure in the lungs is the same as the pressure of the surroundings. The temperature and the amount of the air stay the same, so Boyle's law holds if the product $pV$ is constant.
+**Reading the graph:** For each depth in the table the pressure is calculated with the formula $p = p_0 + \rho g h$ and multiplied by the volume. The mean of the products $pV$ gives the constant of Boyle's law, and it is used to calculate the pressure at which $V = 1.5\,\textsf{l}$.
+**Model answer a):** The pressures are $101$; $150$; $199$ and $297\,\text{kPa}$, and the products $pV = 606$; $600$; $597$ and $594\,\text{kPa}\cdot\textsf{l}$. The products decrease steadily, but differ from each other by less than $2\,\%$, which is within the measurement uncertainty, so the air in the lungs obeys Boyle's law.
+**Formula:** $p = p_0 + \rho g h$ and $p V = \text{constant}$. At the limit $p_\text{limit} = \dfrac{pV}{V_\text{limit}}$, and the depth is $h = \dfrac{p_\text{limit} - p_0}{\rho g}$.
+**Conversions:** $\rho g = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} = 9810\,\tfrac{\text{Pa}}{\text{m}} = 9.81\,\tfrac{\text{kPa}}{\text{m}}$. The products $pV$ are calculated in the unit $\text{kPa}\cdot\textsf{l}$, so $V_\text{limit}$ stays in litres and the result comes out in kilopascals.
+**Substitution:** The sum of the products is $2397\,\text{kPa}\cdot\textsf{l}$, so $pV = 599.25\,\text{kPa}\cdot\textsf{l}$.
+
+$$\begin{aligned}
+p_\text{limit} &= \dfrac{599.25\,\text{kPa}\cdot\textsf{l}}{1.5\,\textsf{l}} \\
+&= 399.5\,\text{kPa}
+\end{aligned}$$
+
+$$\begin{aligned}
+h &= \dfrac{399.5\,\text{kPa} - 101\,\text{kPa}}{9.81\,\tfrac{\text{kPa}}{\text{m}}} \\
+&= 30.43\,\text{m}
+\end{aligned}$$
+
+**Answer:** $h \approx 30\,\text{m}$, two significant figures like the limit volume $1.5\,\textsf{l}$. If the product corresponding to the surface, $101\,\text{kPa} \cdot 6.0\,\textsf{l} = 606\,\text{kPa}\cdot\textsf{l}$, is used, the result is $31\,\text{m}$, which is of the same size.
+**Model answer c):** The ratio of the pressures is $399.5 : 101 \approx 4.0$, that is, the pressure is four times that at the surface. A water column of thirty metres adds about $3 \cdot 101\,\text{kPa}$ of pressure, and the atmospheric pressure is added on top of that. The ratio of the volumes is $6.0\,\textsf{l} : 1.5\,\textsf{l} = 4.0$, that is, the volume is a quarter. The ratios are inverse, as Boyle's law requires.
+**Reasonableness:** The row $h = 20.0\,\text{m}$ of the table gives the pressure $297\,\text{kPa}$, that is, about three times the atmospheric pressure, and the volume $2.0\,\textsf{l}$, that is, a third. Every additional $10\,\text{m}$ adds about $98\,\text{kPa}$ of pressure, that is, about one atmospheric pressure, so at the depth $30\,\text{m}$ the pressure is about $4$ times and the volume a quarter, $6.0\,\textsf{l} : 4 = 1.5\,\textsf{l}$. The depth $30\,\text{m}$ is below the deepest row of the table, $20\,\text{m}$, so this is an extrapolation, whose reliability rests on the assumption of a constant temperature and a constant amount of air.

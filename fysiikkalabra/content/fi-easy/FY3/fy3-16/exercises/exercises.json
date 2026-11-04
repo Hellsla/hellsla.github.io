@@ -39,6 +39,74 @@
       "answer": 14,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L1-06",
+      "level": 1,
+      "text": "Huoneessa on pitkään ollut puinen ja metallinen ovenkahva. Molemmat ovat huoneen lämpötilassa. Metallinen kahva tuntuu silti kylmemmältä kuin puinen. Mikä seuraavista selittää tämän?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Metalli johtaa lämpöä iholta pois nopeammin kuin puu, joten ihon lämpötila laskee enemmän.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Metalli on huoneessa alemmassa lämpötilassa kuin puu, koska se ei pysty pitämään lämpöä sisällään.",
+          "feedback": "Pitkään huoneessa olleet kappaleet ovat lämpötilatasapainossa ympäristönsä kanssa. Silloin molempien lämpötila on sama kuin huoneen. Tuntuma johtuu siitä, kuinka nopeasti lämpö siirtyy kädestä pois, ei kahvan omasta lämpötilasta."
+        },
+        {
+          "text": "Metalli tuottaa kylmyyttä, joka virtaa kahvasta käteen, kun kahvaa kosketetaan hetken aikaa.",
+          "feedback": "Kylmyys ei ole mikään, mikä virtaisi. Lämpötilaeron vuoksi energiaa siirtyy nettomääräisesti eli kokonaisuutena lämpimämmästä kappaleesta kylmempään. Tässä energia siirtyy kädestä kahvaan, ja metalli ottaa sitä vastaan nopeammin."
+        },
+        {
+          "text": "Metallin sisäenergia on pienempi kuin puun, joten metalli on kylmempää kuin puu myös huoneessa.",
+          "feedback": "Lämpötila ja sisäenergia ovat eri asioita. Eri aineiden sisäenergioita ei voi päätellä pelkästä lämpötilasta. Tasapainossa molempien lämpötila on sama kuin huoneen, joten sisäenergia ei selitä erilaista tuntumaa."
+        },
+        {
+          "text": "Metalli johtaa lämpöä iholta pois nopeammin kuin puu, joten ihon lämpötila laskee enemmän.",
+          "feedback": "Oikein: metallin lämmönjohtavuus on suuri. Siksi energiaa siirtyy lämpimästä kädestä metalliin nopeammin kuin puuhun. Iho jäähtyy enemmän, ja siksi metalli tuntuu kylmemmältä, vaikka molemmat ovat huoneen lämpötilassa.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy3-16-L1-07",
+      "level": 1,
+      "text": "Kylmälaukun seinän läpi johtuu ulkoa koko ajan lämpöä jääpussiin. Silti laukun sisälämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa, kunnes jää on sulanut. Mikä seuraavista selittää tämän?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Laukkuun tuleva energia sulattaa jäätä eikä nosta lämpötilaa ennen kuin kaikki jää on sulanut.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Jää tuottaa kylmää, joka kumoaa laukkuun tulevan lämmön ja pitää lämpötilan muuttumattomana.",
+          "feedback": "Jää ei tuota kylmää. Se jäähdyttää, koska se ottaa energiaa vastaan, ja saatu energia sulattaa jäätä. Lämpö ei myöskään häviä mihinkään. Se kuluu olomuodon muutokseen."
+        },
+        {
+          "text": "Laukun seinät estävät lämmön johtumisen kokonaan, joten laukkuun ei tule energiaa ennen jään sulamista.",
+          "feedback": "Seinät vain hidastavat johtumista, eivät pysäytä sitä. Seinän läpi tulee teho $P = UA\\Delta T$. Juuri tämä teho sulattaa jään. Ilman sitä jää ei sulaisi lainkaan."
+        },
+        {
+          "text": "Laukkuun tuleva energia sulattaa jäätä eikä nosta lämpötilaa ennen kuin kaikki jää on sulanut.",
+          "feedback": "Oikein: sulamisen aikana energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia eikä nosta lämpötilaa. Siksi sisälämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa, kunnes jää on sulanut, vaikka energiaa tulee koko ajan.",
+          "correct": true
+        },
+        {
+          "text": "Jään ominaislämpökapasiteetti on niin suuri, että laukkuun tuleva energia ei nosta lämpötilaa lainkaan.",
+          "feedback": "Lämpötila pysyy vakiona olomuodon muutoksen takia, ei ominaislämpökapasiteetin takia. Jään $c$ on jopa pienempi kuin veden. Pelkästään lämpenevän aineen lämpötila nousisi aina. Sulamisen aikana energia kuluu sulamislämpöön $s\\,m$."
+        }
+      ]
+    },
+    {
+      "id": "fy3-16-L1-08",
+      "level": 1,
+      "text": "Vedenkeittimen teho on $2{,}0\\,\\text{kW}$. Keittimessä on $1{,}5\\,\\text{kg}$ vettä, jonka lämpötila on $20\\,{}^\\circ\\text{C}$ ja ominaislämpökapasiteetti $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Oleta, että koko sähköteho menee veden lämmittämiseen. Oleta myös, että vesi ei vielä kiehu. Kuinka kauan kestää, ennen kuin vesi on lämmennyt $100\\,{}^\\circ\\text{C}$:seen? Anna vastaus sekunteina.",
+      "answer": 250,
+      "unit": "s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +141,91 @@
       "answer": 91,
       "unit": "g",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L2-05",
+      "level": 2,
+      "text": "Kiukaan vastukset ovat päällä teholla $6{,}0\\,\\text{kW}$. Kiukaassa on $40\\,\\text{kg}$ kiviä ($c = 800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). Taulukossa on esimerkkiaineisto kivien lämpötilasta lämmityksen aikana. Lämmityksen hyötysuhde on kiviin siirtynyt energia jaettuna vastusten käyttämällä sähköenergialla.\n\na) Laske hyötysuhde koko $30$ minuutin lämmitykselle prosentteina.\n\nb) Kivien lämpötila nousee jokaisen $10$ minuutin jakson aikana vähemmän kuin edellisen. Selitä syy.\n\nAnna vastauslaatikkoon kohdan a) tulos.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 76,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kiuaskivien lämpötila lämmityksen aikana (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "20"
+          ],
+          [
+            "10",
+            "112"
+          ],
+          [
+            "20",
+            "196"
+          ],
+          [
+            "30",
+            "275"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-16-L2-06",
+      "level": 2,
+      "text": "Taulukossa on esimerkkiaineisto omakotitalon lämmitysenergiasta $E$ kuukaudessa ja kuukauden keskilämpötilasta ulkona $T_\\text{ulko}$. Oleta nämä asiat. Lämmitysenergia on yhtä suuri kuin rakenteiden läpi poistuva energia. Sisälämpötila on joka kuukausi sama. Kuukaudessa on $720\\,\\text{h}$.\n\na) Piirrä pisteistä $(T_\\text{ulko}, E)$ kuvaaja ja sovita siihen suora.\n\nb) Määritä suoran kulmakertoimesta talon lämpöhäviökerroin $UA$ yksikössä W/K, kun teho on $P = UA\\Delta T$.\n\nc) Missä ulkolämpötilassa suora leikkaa vaaka-akselin, ja mitä se kertoo talosta?\n\nAnna vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 139,
+      "unit": "W/K",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Lämmitysenergia kuukaudessa (esimerkkiaineisto)",
+        "columns": [
+          "$T_\\text{ulko}\\,({}^\\circ\\text{C})$",
+          "$E\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "8",
+            "1210"
+          ],
+          [
+            "2",
+            "1790"
+          ],
+          [
+            "-3",
+            "2340"
+          ],
+          [
+            "-8",
+            "2790"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-16-L2-07",
+      "level": 2,
+      "text": "Oppilas laskee, kuinka kauan $0{,}80\\,\\text{kg}$ jäätä riittää kylmälaukussa. Laukun seinien yhteispinta-ala on $0{,}70\\,\\text{m}^2$ ja U-arvo $1{,}4\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. Jää on $0\\,{}^\\circ\\text{C}$:ssa ja ulkona on $26\\,{}^\\circ\\text{C}$. Laukussa on vain jäätä. Jään sulamislämpö on $s = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$. Oppilaan ratkaisu on tämä:\n\n”Lämpötilat pitää muuttaa kelvineiksi, joten $\\Delta T = 26 + 273 = 299\\,\\text{K}$. Teho on $P = UA\\Delta T = 0{,}98 \\cdot 299\\,\\text{W} \\approx 293\\,\\text{W}$ ja aika $t = \\dfrac{s\\,m}{P} \\approx 910\\,\\text{s} \\approx 0{,}25\\,\\text{h}$.”\n\na) Mikä oppilaan ratkaisussa on virheellistä?\n\nb) Laske jään kestoaika oikein tunteina.\n\nAnna vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": 2.9,
+      "unit": "h",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -95,10 +248,68 @@
     {
       "id": "fy3-16-L3-03",
       "level": 3,
-      "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $1{,}5\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. Laukkuun pakataan $0{,}50\\,\\text{kg}$ juomia. Juomien lämpötila on $24\\,{}^\\circ\\text{C}$ ja ominaislämpökapasiteetti veden arvo $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Laukkuun pakataan myös pakastimesta otettu jääpussi, jonka lämpötila on $-10\\,{}^\\circ\\text{C}$ ($c_\\text{jää} = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). Ulkona on $30\\,{}^\\circ\\text{C}$. Jäätä pitää riittää 6,0 tunniksi. Tee kolme oletusta. Juomat jäähtyvät heti $0\\,{}^\\circ\\text{C}$:seen. Jää lämpenee ensin $0\\,{}^\\circ\\text{C}$:seen ja sulaa sitten. Seinän läpi tulee sama teho koko ajan, kuin sisällä olisi $0\\,{}^\\circ\\text{C}$. Kuinka suuri jääpussin massan vähintään pitää olla? Anna vastaus kilogrammoina.",
+      "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $1{,}5\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$.\n\nLaukkuun pakataan $0{,}50\\,\\text{kg}$ juomia. Juomien lämpötila on $24\\,{}^\\circ\\text{C}$ ja ominaislämpökapasiteetti veden arvo $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Laukkuun pakataan myös pakastimesta otettu jääpussi, jonka lämpötila on $-10\\,{}^\\circ\\text{C}$ ($c_\\text{jää} = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). Ulkona on $30\\,{}^\\circ\\text{C}$.\n\nJäätä pitää riittää 6,0 tunniksi.\n\nTee kolme oletusta. Juomat jäähtyvät heti $0\\,{}^\\circ\\text{C}$:seen. Jää lämpenee ensin $0\\,{}^\\circ\\text{C}$:seen ja sulaa sitten. Seinän läpi tulee sama teho koko ajan, kuin sisällä olisi $0\\,{}^\\circ\\text{C}$.\n\nKuinka suuri jääpussin massan vähintään pitää olla? Anna vastaus kilogrammoina.",
       "answer": 1.5,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L3-04",
+      "level": 3,
+      "text": "Mökin seinien, katon ja ikkunoiden keskimääräinen U-arvo on $0{,}50\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. Niiden pinta-ala on yhteensä $120\\,\\text{m}^2$. Sisälämpötila pidetään koko lämmityskauden ajan vakiona $18\\,{}^\\circ\\text{C}$:ssa. Taulukossa on esimerkkiaineisto lämmityskauden kuukausien keskilämpötiloista ulkona. Kuukaudessa on $720\\,\\text{h}$. Oleta, että lämmitysenergia on yhtä suuri kuin rakenteiden läpi johtuva energia.\n\nLämmitys hoidetaan jommallakummalla tavalla. Vaihtoehto (A) on sähköpatterit. Niiden hyötysuhde on käytännössä $100\\,\\%$ ja sähkön hinta $0{,}15\\,\\tfrac{\\text{€}}{\\text{kWh}}$. Vaihtoehto (B) on puulämmitteinen takka. Sen hyötysuhde on $70\\,\\%$, polttopuun lämpöarvo $15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ ja hinta $0{,}18\\,\\tfrac{\\text{€}}{\\text{kg}}$.\n\na) Laske lämmitysenergian tarve koko lämmityskaudella kilowattitunteina.\n\nb) Laske kummankin ratkaisun kustannus lämmityskaudella.\n\nc) Kumpi ratkaisu on edullisempi, ja kuinka monta euroa se säästää? Perustele kirjallisesti, mitkä oletukset ja hinnat vaikuttavat johtopäätökseen.\n\nAnna vastauslaatikkoon kohdan c) euromäärä.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 480,
+      "unit": "€",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kuukauden keskilämpötila ulkona (esimerkkiaineisto)",
+        "columns": [
+          "Kuukausi",
+          "$T_\\text{ulko}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "Lokakuu",
+            "5"
+          ],
+          [
+            "Marraskuu",
+            "0"
+          ],
+          [
+            "Joulukuu",
+            "-4"
+          ],
+          [
+            "Tammikuu",
+            "-9"
+          ],
+          [
+            "Helmikuu",
+            "-7"
+          ],
+          [
+            "Maaliskuu",
+            "-3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-16-L3-05",
+      "level": 3,
+      "text": "Jäähallin jääkentän pituus on $60\\,\\text{m}$ ja leveys $30\\,\\text{m}$. Kenttä jäädytetään näin: betonilaatalle ruiskutetaan $0{,}030\\,\\text{m}$ paksu kerros vettä, jonka lämpötila on $12\\,{}^\\circ\\text{C}$. Kerros jäädytetään kokonaan, ja valmiin jään lämpötila on $-5{,}0\\,{}^\\circ\\text{C}$. Veden tiheys on $1000\\,\\tfrac{\\text{kg}}{\\text{m}^3}$, veden ominaislämpökapasiteetti $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ ja jään ominaislämpökapasiteetti $2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Jäähdytyskone poistaa energian tasaisella teholla $10$ tunnin aikana. Oleta, että koko teho kuluu kolmeen asiaan: veden jäähdyttämiseen, jäädyttämiseen ja jään jäähdyttämiseen.\n\na) Laske jäädytettävän veden massa.\n\nb) Laske kolmen vaiheen energiat erikseen: veden jäähtyminen $0\\,{}^\\circ\\text{C}$:seen, jäätyminen ja jään jäähtyminen $-5{,}0\\,{}^\\circ\\text{C}$:seen.\n\nc) Laske jäähdytyskoneen tarvittava keskimääräinen teho kilowatteina.\n\nd) Mikä vaihe vaatii eniten energiaa, ja miksi todellinen tarvittava jäähdytysteho on laskettua suurempi?\n\nAnna vastauslaatikkoon kohdan c) tulos.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 590,
+      "unit": "kW",
+      "tolerance": 0.03
     }
   ]
 }

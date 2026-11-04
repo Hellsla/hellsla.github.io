@@ -159,6 +159,8 @@ Albert Einstein explained the observations in 1905. The energy of light is not s
 
 With this model every observation is explained. For light of one colour, the intensity tells how many photons hit the surface each second: brighter light therefore releases more electrons, but a single electron still receives only the energy of one photon. The frequency determines the energy of one photon and therefore the maximum kinetic energy of the electron. There is no delay, because already the first photon with enough energy can release an electron. In this model energy is **quantised**: radiation and matter exchange energy only in whole photon energies.
 
+<figure class="unit-photo"><img src="pics/fy8/photomultiplier-tube.webp" alt="A large round glass bulb with a mirror-like inner surface in a museum display case."><figcaption>A photomultiplier tube from the Super-Kamiokande neutrino detector in a museum in Tokyo. A photon hitting the inner surface of the bulb releases an electron in the photoelectric effect, and the tube amplifies it into a measurable electric pulse.</figcaption></figure>
+
 ### The electronvolt
 The energies of photons and electrons are very small numbers in joules, so they are often given in the unit **electronvolt** ($\text{eV}$). One electronvolt is the energy an electron gains when it is accelerated in an electric field through a voltage of $1\,\text{V}$. Since the magnitude of the charge of the electron is $e = 1.602 \cdot 10^{-19}\,\text{C}$, we have $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} = 1.602 \cdot 10^{-19}\,\text{J}$. The conversion is done by substitution: for example $3.20 \cdot 10^{-19}\,\text{J} = \tfrac{3.20 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} \approx 2.00\,\text{eV}$.
 

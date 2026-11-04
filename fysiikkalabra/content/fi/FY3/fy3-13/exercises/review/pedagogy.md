@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c8f7da1224c3ff71
-
-Delta review over the audit's PASS (0af6ca31258def39): only plain numbers with units turned into LaTeX (L2-01, L2-03, L3-01, L3-02); no exercise was replaced here (the chapter's figure tasks are unchanged).
+CONTENT-HASH: 9c772e8e03edf7ce
+Round: 3
 
 ## Blocking
-- none
+
 ## Polish
-- none
+- solutions.md fy3-13-L3-05 Vastaus — the closing sentence "desimaali annetaan, jotta tulos vastaa vastauskentän arvoa" speaks of the answer box, not of the physics; delete it and state only "−17,5 ± 2,7 °C (käytännössä −17 ± 3 °C)". (Carried over, not blocking.)
+- exercises.json fy3-13-L1-07 — the "concept" kind is dropped; acceptable for a plain conversion. (Carried over.)
+
 ## Checked
-- Maths in the converted text unchanged: 1,050 and 1,360 bar, 101,0 kPa, 9,0 and 31,0 kPa, 105,0-138,0 kPa, 100,0 kPa, 77,0 K, all with right units and decimal commas.
-- No new figure, so no capture to judge; level and answers untouched.
+- This round's change: L1-06 distractor feedback "Väärin: absoluuttisessa nollapisteessä hiukkasten energia on pienin mahdollinen, mutta liike ei pysähdy kokonaan." names the misconception, repairs it in one sentence, and is clearer than the previous wording; the "myöhempään kurssiin" aside is gone. L1-07 answers.py now prints 77.4, equal to the task answer.
+- Nothing else changed since round 2; earlier checks (shuffled MC positions, misconception distractors, set 8/7/5, levels fit the plan) stand.

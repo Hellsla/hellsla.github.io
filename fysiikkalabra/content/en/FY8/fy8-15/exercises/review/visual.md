@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c5bdb6df16d2f7ca
+CONTENT-HASH: 5ed5af187d8f9cb2
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] open-exercises-L3-1280-1 (L3-01 solution) — the Formula block is ragged: the charge line sits outside the box and the B and Q rows are centred oddly with "> 0" stacked — one aligned block, one = step per row.
-- [Minor] L3-01 problem — three numbered reactions run into the sentence; put them on separate lines.
+- [Minor] L3-01 solution Formula block ragged (carried).
+- [Minor] L3-01 problem — three reactions run into the sentence (carried).
 
 ## Checked
-- open-exercises-L3-1280-1 opened; exercises.json and solutions text scanned for plain numbers with units (none), division and decimal rules; displays fit 25 characters per row elsewhere.
+- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (L2-03 Sijoitus) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
+- Result: h · \dfrac{c}{X} wraps after 'h ·' into a 2–4 row block, fraction bar intact, units upright with thin spaces, decimal point; document scrollWidth = 360 = viewport, no clipped KaTeX.
+- LaTeX valid, no red KaTeX; hash at start and end the same.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish n/a · accessibility 4
+illustrations n/a · typography 5 · English 5 · accessibility 4

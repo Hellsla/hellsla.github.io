@@ -5,7 +5,7 @@
     "note": "Moduulien tavoitteet ja keskeiset sisällöt on lainattu LOPS 2019 -perusteista MAOL:n tukimateriaalin mukaisesti. Sisältökuvaukset ovat minimivaatimuksia; moduulien ja oppituntien järjestystä saa muuttaa. Oppituntijako (lessons) on ehdotus, jonka opettaja järjestää ja nimeää."
   },
   "_front_page": {
-    "coming": ["FY6", "FY7", "FY8"],
+    "coming": [],
     "note": "Etusivu (opettaja 3.11.2026): nämä moduulit näytetään himmennettyinä Tulossa-palstassa, vaikka niistä olisi jo julkaistuja lukuja. Poista moduuli listasta, kun se siirretään vasempaan palstaan."
   },
   "FY1": {
@@ -13,6 +13,7 @@
     "op": 1,
     "planned_lessons": 8,
     "type": "pakollinen",
+    "exercise_total": 20,
     "tavoitteet": [
       "tutustuu fysiikkaan systemaattisena, kokeellisuuteen nojautuvana tieteenä",
       "tutustuu aineen rakenteen ja maailmankaikkeuden mittasuhteisiin",
@@ -205,6 +206,7 @@
     "op": 1,
     "planned_lessons": 8,
     "type": "pakollinen",
+    "exercise_total": 20,
     "tavoitteet": [
       "perehtyy energiaan fysiikan keskeisenä käsitteenä",
       "tuntee eri energialajeja ja energiantuotantotapoja",
@@ -391,6 +393,7 @@
     "op": 2,
     "planned_lessons": 16,
     "type": "valtakunnallinen valinnainen",
+    "exercise_total": 20,
     "tavoitteet": [
       "syventää ymmärrystään energiasta fysiikan keskeisenä käsitteenä",
       "osaa tutkia aineen termodynaamiseen tilaan ja olomuodon muutoksiin liittyviä ilmiöitä",

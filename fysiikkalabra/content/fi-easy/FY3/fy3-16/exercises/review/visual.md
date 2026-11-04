@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ae77f9e2db3ed613
+CONTENT-HASH: 367c32d54eaac2ac
 
 ## Blocking
 (none)
 
+## Fixed
+- solutions.md fy3-16-L1-08 Conversions — typo "joulejaan" → "jouleina" (the Finnish source wording "jotta energia on joulejaan" was also simplified into two short sentences).
+
 ## Polish
-- [Minor] L2-03 — "6,0 tunniksi" plain text where other numbers are maths — set as $6{,}0\,\text{h}$ if not already.
-- [Minor] SIJOITUS Q_lämpeneminen / Q_höyrystyminen (L1-02 area) — long subscript words push "=" to a second line — optional shorter subscripts.
+- none
 
 ## Checked
-- Full: contact-4 and contact-5 (levels 1-3 with solutions open, exit ticket); full size open-exercises-L2-1280-3, L3-1280-3; no figures in the set.
-- Inline numbers with units, colon case endings ("0 °C:ssa", "167 000 J:n"), stacked-fraction chains (Osoittaja/Nimittäjä), boxed Vastaus, Järkevyys all legible; aligned "=" rows; no clipping or overflow.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- Data tables (L2-05, L2-06, L3-04): caption, column headers and cells translated; numbers and units identical; the table renders without overflow in the screenshots (fy3-16-open-exercises-L2/L3 captures).
+- LaTeX identical to the Finnish except translated subscripts (`T_\text{out}` / `T_\text{ulko}`) and decimal point vs comma where the language requires it.
+- Units are wrapped in `\text{}` with thin spaces as in the Finnish; no Finnish left in en.
+- Plain Finnish (selkosuomi): short sentences, terms explained (nettomääräisesti eli kokonaisuutena, lämmönjohtavuus); no step or reasoning removed.
+- check_i18n.py: 0 errors.

@@ -51,11 +51,17 @@ for lang in i18n.languages():
         h = f.read_text()
         m = re.search(r'id="exercises"(.*?)(?=<section|<div class="stage|</main>)', h, re.S)
         if not m or "<li" not in m.group(1): continue
-        items = re.findall(r'<li id="[^"]+"[^>]*>(?:<span class="ex-core">[^<]*</span>)?<p class="task"', m.group(1))
+        items = re.findall(r'<li id="[^"]+"[^>]*>(?:<span class="ex-num"><span class="visually-hidden">[^<]*</span>[^<]*</span>)?(?:<span class="ex-core">[^<]*</span>)?<p class="task"', m.group(1))   # the running number "6-3" first (build.py number_label)
         tasks = m.group(1).count('class="task"')
         if tasks: pages.setdefault(lang, []).append(f.relative_to(SITE).as_posix())
         if len(items) != tasks:
             expect(f"{lang} {f.name}: every exercise is an <li id> with its p.task", False, f"{len(items)} of {tasks}")
+        nums = re.findall(r'<li id="[^"]+"[^>]*\bdata-num="([^"]+)"', m.group(1))   # running numbers "luku-tehtävä" (teacher 2026-11-04)
+        if tasks and f.stem.startswith("fy") and f.stem[2:].split("-")[0].isdigit():
+            import courses as _c, json as _j
+            slots = [l["id"] for l in _j.loads((SITE.parent / "curriculum.json").read_text())[_c.course_of(f.stem)]["lessons"]]
+            want = [f"{slots.index(f.stem) + 1}-{k}" for k in range(1, len(nums) + 1)]
+            if not nums or nums != want: expect(f"{lang} {f.name}: exercises numbered {want[:1]}…{want[-1:]} over every level", False, str(nums))
 for lang in pages:
     expect(f"{lang}: {len(pages[lang])} published lessons have exercises", True)
 

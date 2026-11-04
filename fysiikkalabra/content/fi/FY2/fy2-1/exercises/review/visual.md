@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 049706003240df2d
+CONTENT-HASH: 59c94115b15b2cf7
+Round: 3
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy2-1/kitka-pylvaat (open-exercises-1280-3) — the "E (J)" axis title sits right under the half-pipe sketch and its "C" label, cramped; the sketch's A, B, C are not above the bars' A, B, C, and the "0" is set below the baseline — add a few pixels of space and align the sketch columns with the bars, or say the sketch is schematic.
-- [Minor] L1-04 and L3-03 text — parts a), b), c) run on in one paragraph — put each part on its own line so the question and the parts scan.
-- [Minor] L3-03 — the situation and the first question (a) are in one 70-word paragraph — end the situation sentence group and start a) after a break.
-- [Minor] Exercise captures exist only at 1280 px — the figure at 390 px was not seen; the 100 J gridline labels may be small on a phone.
+- [Minor] L3-05 text (L3-1280-6) — the whole second paragraph, now including the model sentence "Mallissa oletetaan ... lämpöenergiaksi", is bold and a), b), c) run together in one block (the "\n\n" and parts do not render as separate lines). Fix: render a), b), c) as separate lines or a list; keep the assumption in plain text and bold only the question. Same in L3-04.
+- [Minor] L3-04 c) Vastaus (L3-1280-6) — a), b), c) run on in one paragraph with a parenthetical; split into lines.
+- [Minor] Kaava of L3-04 — "ehto c)" block breaks before "<"; set on one line or use a colon for the division.
+- [Minor] Tables (L3-04, L3-05, L2-07; L3-1280-7) — headers "E_tulo (MJ)" and "E_ulos (MJ)" are left-aligned over right-aligned numbers; no 360/390 px capture of the new tables exists.
 
 ## Checked
-- open-exercises-1280-1/2/3 (L1: 01, 02, 03 with figure), open-exercises-L2-1280-2 (L2-01 end, L2-02), open-exercises-L3-1280-3 (L3-02 end, L3-03).
-- Solutions: structure Annettu/Kysytty/Periaate/Kaava/Sijoitus/Vastaus/Järkevyys, units upright with thin space, chains aligned at =, decimal comma, answers set apart.
-- Figure kitka-pylvaat: every value for the task readable from the bars (A 700/0, C 0/500), no thermal bar, description matches.
+- Opened fy2-1-open-exercises-L3-1280-6 (L3-04 Vastaus and Järkevyys, L3-05 text) and L3-1280-7 (L3-05 table, Annettu to Sijoitus). The new wording shows; no clipping or overflow, units upright with thin space, decimal comma, chains aligned at =.
+- Round-2 Blocking-free state holds: delta is one sentence in the L3-05 text and Periaate; the layout survived.
+- Not re-opened: other captures unchanged since round 2.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

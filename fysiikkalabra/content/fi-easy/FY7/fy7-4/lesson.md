@@ -170,6 +170,8 @@ Kaiuttimen magneetti on tehty niin, että rengasmaisessa raossa kenttä osoittaa
   <foreignObject x="325" y="207.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Rightarrow F \text{ vaihtelee}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/electric-motor-cutaway.webp" alt="Sininen sähkömoottori, josta osa kuoresta on leikattu pois. Näkyvissä ovat akseli, roottori, kuparikäämit ja tuuletin."><figcaption>Sähkömoottori, josta osa kuoresta on leikattu pois. Kuparikäämeissä kulkee virta. Magneettikenttä tekee voiman roottorin johtimiin, ja akseli pyörii. Tämä moottori toimii vaihtovirralla, joten se on erilainen kuin tunnin tasavirtamoottori. Ilmiö on silti sama: magneettikenttä työntää virtajohdinta.</figcaption></figure>
+
 ## Kaava: Voima virtajohtimeen
 Suora johdin on homogeenisessa magneettikentässä, ja siinä kulkee virta $I$. Silloin kenttä kohdistaa johtimeen voiman, jonka suuruus on
 ```latex

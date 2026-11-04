@@ -40,6 +40,74 @@
       "answer": 87.3,
       "unit": "kPa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L1-06",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "Suljettu ilmamäärä on kertakäyttöruiskussa, ja mäntää liikutetaan hitaasti niin, että ilman lämpötila pysyy samana. Millainen on kuvaaja, jossa ilman paine $p$ on piirretty tilavuuden $V$ funktiona?",
+      "answer": "Laskeva kaari, koska tulo $pV$ on vakio ja paine pienenee tilavuuden kasvaessa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Laskeva suora, koska paine $p$ pienenee saman verran jokaista lisättyä millilitraa kohti.",
+          "feedback": "Kun tilavuus kaksinkertaistuu, paine puolittuu. Jos kuvaaja olisi suora, paine pienenisi saman verran jokaista lisättyä millilitraa kohti, ja se ehtisi pudota nollaan. Boylen laissa paine lähestyy nollaa mutta ei saavuta sitä."
+        },
+        {
+          "text": "Nouseva suora, koska tilavuuden $V$ kasvaessa ilmassa on enemmän hiukkasia ja paine kasvaa.",
+          "feedback": "Ilmaa on suljettuna koko ajan yhtä paljon, joten hiukkasten määrä ei kasva. Kun tilavuus kasvaa, hiukkaset törmäävät seinämiin harvemmin ja paine pienenee."
+        },
+        {
+          "text": "Laskeva kaari, koska tulo $pV$ on vakio ja paine pienenee tilavuuden kasvaessa.",
+          "correct": true,
+          "feedback": "Oikein: isotermisessä tilanmuutoksessa $pV$ on vakio, joten $p = \\text{vakio} \\cdot \\dfrac{1}{V}$. Kuvaaja on laskeva kaari, joka lähestyy akseleita mutta ei kohtaa niitä."
+        },
+        {
+          "text": "Vaakasuora, koska lämpötila $T$ on vakio ja siksi myös paine on vakio.",
+          "feedback": "Vakiolämpötila ei tarkoita vakiopainetta. Kun tilavuutta muutetaan, hiukkasten törmäystiheys seinämiin muuttuu, joten paine muuttuu, vaikka lämpötila pysyy samana."
+        }
+      ]
+    },
+    {
+      "id": "fy3-9-L1-07",
+      "level": 1,
+      "text": "Ilmakompressorin sylinterissä on $1{,}50\\,\\textsf{l}$ ilmaa $101\\,\\text{kPa}$:n paineessa. Mäntä puristaa ilman hitaasti pienempään tilaan, kunnes paine on $240\\,\\text{kPa}$. Ilman lämpötila pysyy samana, eikä ilmaa pääse sylinteristä pois. Mikä on ilman tilavuus nyt?",
+      "answer": 0.63,
+      "unit": "l",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L1-08",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "Oppilas mittaa suljetun ilmamäärän paineen $p$ eri tilavuuksilla $V$ vakiolämpötilassa ja piirtää pisteet $(1/V,\\,p)$-koordinaatistoon. Pisteet asettuvat mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle. Mitä tämä osoittaa?",
+      "answer": "Paine on kääntäen verrannollinen tilavuuteen, joten tulo $pV$ on vakio.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Paine on suoraan verrannollinen tilavuuteen, koska $1/V$ kasvaa tilavuuden mukana.",
+          "feedback": "Kun tilavuus kasvaa, sen käänteisluku $1/V$ pienenee. Suora $(1/V,\\,p)$-kuvaajassa tarkoittaa siis, että paine on suoraan verrannollinen käänteislukuun $1/V$ eli kääntäen verrannollinen tilavuuteen."
+        },
+        {
+          "text": "Lämpötila nousi mittausten aikana, koska pisteet $(V,\\,p)$ eivät ole kaarella.",
+          "feedback": "Mittauksessa piirrettiin $(1/V,\\,p)$-pisteet, ei $(V,\\,p)$-pisteitä. Jos lämpötila olisi noussut, pisteet eivät asettuisi origon kautta kulkevalle suoralle vaan poikkeaisivat siitä."
+        },
+        {
+          "text": "Paine on kääntäen verrannollinen tilavuuden neliöön, joten tulo $pV^2$ on vakio.",
+          "feedback": "Tällöin $(1/V,\\,p)$-pisteet olisivat kaarella, koska $p$ olisi suoraan verrannollinen suureeseen $1/V^2$. Suora kuvaaja kertoo, että $p$ on suoraan verrannollinen suureeseen $1/V$."
+        },
+        {
+          "text": "Paine on kääntäen verrannollinen tilavuuteen, joten tulo $pV$ on vakio.",
+          "correct": true,
+          "feedback": "Oikein: suora, joka kulkee origon kautta, tarkoittaa $p = k \\cdot \\dfrac{1}{V}$, ja kulmakerroin on $k = pV$. Boylen laki pätee mittausepävarmuuden rajoissa."
+        }
+      ]
     }
   ],
   "level2": [
@@ -62,7 +130,7 @@
     {
       "id": "fy3-9-L2-03",
       "level": 2,
-      "text": "Fysiikan tunnilla kertakäyttöruiskun kärki liitettiin painemittariin, ja ruiskun mäntää liikutettiin hitaasti, jotta ilman lämpötila pysyi samana. Mitatut tilavuudet $V$ (ml) olivat 10,0; 12,5; 15,0; 20,0; 25,0 ja 30,0, ja niitä vastaavat paineet $p$ (kPa) olivat 203; 159; 134; 99; 81 ja 66. Laske taulukkoon sarake $1/V$, piirrä $p$ $1/V$:n funktiona ja sovita pisteisiin origon kautta kulkeva suora. Suoran kulmakerroin on $pV$. Anna se jouleina.",
+      "text": "Fysiikan tunnilla kertakäyttöruiskun kärki liitettiin painemittariin, ja ruiskun mäntää liikutettiin hitaasti, jotta ilman lämpötila pysyi samana.\n\nMitatut tilavuudet $V$ (ml) olivat 10,0; 12,5; 15,0; 20,0; 25,0 ja 30,0, ja niitä vastaavat paineet $p$ (kPa) olivat 203; 159; 134; 99; 81 ja 66.\n\nLaske taulukkoon sarake $1/V$, piirrä $p$ $1/V$:n funktiona ja sovita pisteisiin origon kautta kulkeva suora. Suoran kulmakerroin on $pV$. Anna se jouleina.",
       "answer": 2.0,
       "unit": "J",
       "tolerance": 0.05
@@ -70,17 +138,137 @@
     {
       "id": "fy3-9-L2-04",
       "level": 2,
-      "text": "Kuumailmapallon kuoren tilavuus on $2800\\,\\text{m}^3$, ja kuoren alaosassa on aukko. Kuori on täynnä $10\\,{}^\\circ\\text{C}$:n ilmaa, joka lämmitetään polttimella $100\\,{}^\\circ\\text{C}$:seen. Paine kuoren sisällä pysyy ulkoilman paineena. Alun perin kuoressa ollut ilma lämpenee kokonaan $100\\,{}^\\circ\\text{C}$:seen. Kuinka monta kuutiometriä tästä $100\\,{}^\\circ\\text{C}$:n ilmasta ei mahdu kuoreen vaan on työntynyt ulos aukosta?",
+      "text": "Kuumailmapallon kuoren tilavuus on $2800\\,\\text{m}^3$, ja kuoren alaosassa on aukko. Kuori on täynnä $10\\,{}^\\circ\\text{C}$:n ilmaa, joka lämmitetään polttimella $100\\,{}^\\circ\\text{C}$:seen. Paine kuoren sisällä pysyy ulkoilman paineena.\n\nAlun perin kuoressa ollut ilma lämpenee kokonaan $100\\,{}^\\circ\\text{C}$:seen.\n\nKuinka monta kuutiometriä tästä $100\\,{}^\\circ\\text{C}$:n ilmasta ei mahdu kuoreen vaan on työntynyt ulos aukosta?",
       "answer": 890,
       "unit": "m³",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "Kaksi suljettua ilmamäärää lämmitetään vesihauteessa. Astiassa A mitataan ilman paine $p$ ja astiassa B ilman tilavuus $V$. Molempien ilma on vesihauteen lämpötilassa $\\theta$ (taulukko, esimerkkiaineisto).\n\na) Laske astian A jokaiselle riville suhteet $p/\\theta$ ja $p/T$ sekä astian B jokaiselle riville suhde $V/T$, kun $T$ on kelvinlämpötila. Päättele laskujesi avulla, kumpi astia esittää isokoorista ja kumpi isobaarista tilanmuutosta, ja perustele, miksi lämpötilan on oltava kelvineinä.\n\nb) Ennusta astian A paine, kun vesihaude kiehuu ja sen lämpötila on $100\\,{}^\\circ\\text{C}$.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "answer": 127,
+      "unit": "kPa",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Ilman paine astiassa A ja tilavuus astiassa B (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p_\\text{A}\\,(\\text{kPa})$",
+          "$V_\\text{B}\\,(\\text{ml})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "99.8",
+            "14.7"
+          ],
+          [
+            "40.0",
+            "106.4",
+            "15.7"
+          ],
+          [
+            "60.0",
+            "113.4",
+            "16.6"
+          ],
+          [
+            "80.0",
+            "119.8",
+            "17.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-9-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "error"
+      ],
+      "text": "Oppilas todentaa Boylen lakia. Hän liittää kertakäyttöruiskun ohuella letkulla painemittariin ja liikuttaa mäntää hitaasti, jotta lämpötila pysyy samana. Hän lukee ilman tilavuuden $V$ ruiskun asteikolta ja paineen $p$ mittarista (taulukko, esimerkkiaineisto). Oppilas laskee tulon $pV$ jokaiselle riville ja huomaa, ettei se ole vakio, vaikka lämpötila pysyi samana. Letkussa ja mittarissa on kuitenkin lisäksi ilmaa, jonka tilavuus $V_\\text{h}$ on kaikissa mittauksissa sama ja jota oppilas ei ottanut huomioon.\n\na) Laske tulo $pV$ jokaiselle riville ja selitä, miksi se kasvaa tilavuuden mukana. Onko kyse satunnaisesta vai systemaattisesta virheestä? Perustele.\n\nb) Suljettua ilmaa on kaikkiaan tilavuus $V + V_\\text{h}$, ja sille pätee Boylen laki. Määritä letkun ja mittarin ilman tilavuus $V_\\text{h}$ taulukon ensimmäisen ja viimeisen rivin avulla.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "answer": 2.0,
+      "unit": "ml",
+      "tolerance": 0.1,
+      "data": {
+        "caption": "Ilman paine ruiskun tilavuuden funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$V\\,(\\text{ml})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "200"
+          ],
+          [
+            "20.0",
+            "109"
+          ],
+          [
+            "30.0",
+            "75.0"
+          ],
+          [
+            "40.0",
+            "57.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-9-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "text": "Absoluuttisen nollapisteen määrittämiseksi tiivis jäykkä pullo, jossa on ilmaa, lämmitetään vesihauteessa, ja ilman paine $p$ mitataan lämpötilan $\\theta$ funktiona (taulukko, esimerkkiaineisto). Pullon tilavuus ja ilman määrä pysyvät samoina.\n\na) Piirrä pisteet $(\\theta,\\,p)$-koordinaatistoon, sovita niihin suora ja jatka suoraa (ekstrapoloi) paineeseen $p = 0$. Mikä lämpötila celsiusasteina saadaan absoluuttiselle nollapisteelle?\n\nb) Vertaa tulosta tunnettuun arvoon $-273{,}15\\,{}^\\circ\\text{C}$ ja selitä, miksi todellinen kaasu ei kuitenkaan saavuta tätä pistettä, vaikka suoran jatke kulkee sen kautta.\n\nKirjoita vastauslaatikkoon kohdan a) tulos.",
+      "answer": -276,
+      "unit": "°C",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Ilman paine jäykässä pullossa (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "100.1"
+          ],
+          [
+            "20.0",
+            "107.3"
+          ],
+          [
+            "40.0",
+            "114.9"
+          ],
+          [
+            "60.0",
+            "121.8"
+          ],
+          [
+            "80.0",
+            "129.1"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
     {
       "id": "fy3-9-L3-01",
       "level": 3,
-      "text": "Sukeltaja on järvessä $20{,}0\\,\\text{m}$:n syvyydessä ja puhaltaa ilmakuplan, jonka tilavuus on $2{,}0\\,\\text{cm}^3$. Kupla nousee pintaan. Ilmanpaine on $101\\,\\text{kPa}$ ja veden tiheys $1000\\,\\text{kg/m}^3$. Oleta, että veden lämpötila on sama koko matkalla, eikä kuplan ilma liukene veteen. Mikä on kuplan tilavuus pinnalla? Perustele tuloksen avulla, miksi paineilmalla sukeltava ei saa pidättää hengitystään noustessaan pintaan.",
+      "text": "Sukeltaja on järvessä $20{,}0\\,\\text{m}$:n syvyydessä ja puhaltaa ilmakuplan, jonka tilavuus on $2{,}0\\,\\text{cm}^3$. Kupla nousee pintaan.\n\nIlmanpaine on $101\\,\\text{kPa}$ ja veden tiheys $1000\\,\\text{kg/m}^3$. Oleta, että veden lämpötila on sama koko matkalla, eikä kuplan ilma liukene veteen.\n\nMikä on kuplan tilavuus pinnalla? Perustele tuloksen avulla, miksi paineilmalla sukeltava ei saa pidättää hengitystään noustessaan pintaan.",
       "answer": 5.9,
       "unit": "cm³",
       "tolerance": 0.02
@@ -88,7 +276,7 @@
     {
       "id": "fy3-9-L3-02",
       "level": 3,
-      "text": "Auton renkaat täytetään $20\\,{}^\\circ\\text{C}$:n tallissa, ja rengaspainemittari näyttää $250{,}0\\,\\text{kPa}$. Mittari näyttää ylipainetta eli sitä, kuinka paljon renkaan ilman paine on ilmanpainetta suurempi. Ilmanpaine on $101\\,\\text{kPa}$. Yöllä auto seisoo pihalla, ja renkaan ilma jäähtyy $-20\\,{}^\\circ\\text{C}$:seen. Renkaan tilavuus pysyy käytännössä samana, eikä ilmaa pääse ulos. Mitä mittari näyttää pakkasaamuna? Perustele, miksi mittarin lukemaa ei voi sijoittaa suoraan kaavaan $p_1/T_1 = p_2/T_2$.",
+      "text": "Auton renkaat täytetään $20\\,{}^\\circ\\text{C}$:n tallissa, ja rengaspainemittari näyttää $250{,}0\\,\\text{kPa}$. Mittari näyttää ylipainetta eli sitä, kuinka paljon renkaan ilman paine on ilmanpainetta suurempi. Ilmanpaine on $101\\,\\text{kPa}$.\n\nYöllä auto seisoo pihalla, ja renkaan ilma jäähtyy $-20\\,{}^\\circ\\text{C}$:seen. Renkaan tilavuus pysyy käytännössä samana, eikä ilmaa pääse ulos.\n\nMitä mittari näyttää pakkasaamuna? Perustele, miksi mittarin lukemaa ei voi sijoittaa suoraan kaavaan $p_1/T_1 = p_2/T_2$.",
       "answer": 202,
       "unit": "kPa",
       "tolerance": 0.02
@@ -96,10 +284,91 @@
     {
       "id": "fy3-9-L3-03",
       "level": 3,
-      "text": "Polkupyörän pumpun sylinteri on $40{,}0\\,\\text{cm}$ pitkä ja yhtä paksu koko matkalta. Kun mäntä on vedetty ylös, sylinteri on täynnä ulkoilmaa, jonka paine on $101\\,\\text{kPa}$. Renkaan ylipaine on $300{,}0\\,\\text{kPa}$. Pumpun venttiili päästää ilmaa renkaaseen vasta, kun sylinterin ilman paine on yhtä suuri kuin renkaan ilman paine. Kuinka pitkän matkan mäntää on painettava, ennen kuin ilmaa alkaa virrata renkaaseen? Oleta, että lämpötila pysyy samana ja letkun tilavuus on mitätön. Perustele, miksi kovan renkaan pumppaaminen tuntuu tehottomalta.",
+      "text": "Polkupyörän pumpun sylinteri on $40{,}0\\,\\text{cm}$ pitkä ja yhtä paksu koko matkalta. Kun mäntä on vedetty ylös, sylinteri on täynnä ulkoilmaa, jonka paine on $101\\,\\text{kPa}$. Renkaan ylipaine on $300{,}0\\,\\text{kPa}$.\n\nPumpun venttiili päästää ilmaa renkaaseen vasta, kun sylinterin ilman paine on yhtä suuri kuin renkaan ilman paine.\n\nKuinka pitkän matkan mäntää on painettava, ennen kuin ilmaa alkaa virrata renkaaseen? Oleta, että lämpötila pysyy samana ja letkun tilavuus on mitätön. Perustele, miksi kovan renkaan pumppaaminen tuntuu tehottomalta.",
       "answer": 29.9,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "text": "Oppilas tutkii kertakäyttöruiskuun suljettua ilmaa. Aluksi ilmaa on $40{,}0\\,\\text{ml}$ paineessa $101\\,\\text{kPa}$ ja lämpötilassa $20{,}0\\,{}^\\circ\\text{C}$. Hän puristaa ilman kokoon kahdella tavalla. Hitaassa puristuksessa lämpötila pysyy samana. Nopeassa puristuksessa mäntä painetaan kasaan sekunnin murto-osassa, ja paine luetaan heti, kun mäntä on pysähtynyt: ilma on ehtinyt luovuttaa ympäristöön vain osan energiasta (taulukko, esimerkkiaineisto).\n\na) Laske tulo $pV$ jokaiselle riville kummassakin sarjassa. Päättele, kummassa puristuksessa Boylen laki pätee.\n\nb) Selitä, miksi nopeassa puristuksessa paine on suurempi kuin Boylen laki ennustaa. Mitä paineelle tapahtuu, kun mäntä pidetään paikallaan ja ilma jäähtyy takaisin lämpötilaan $20{,}0\\,{}^\\circ\\text{C}$?\n\nc) Ajattele nopea puristus kahtena vaiheena: ensin isoterminen puristus tilavuuteen $10{,}0\\,\\text{ml}$ ja sitten ilman lämpeneminen vakiotilavuudessa taulukon paineeseen. Laske tämän avulla ilman lämpötila celsiusasteina heti nopean puristuksen jälkeen, kun tilavuus on $10{,}0\\,\\text{ml}$.\n\nKirjoita vastauslaatikkoon kohdan c) tulos.",
+      "answer": 76,
+      "unit": "°C",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Ilman paine hitaassa ja nopeassa puristuksessa (esimerkkiaineisto)",
+        "columns": [
+          "$V\\,(\\text{ml})$",
+          "$p_\\text{hidas}\\,(\\text{kPa})$",
+          "$p_\\text{nopea}\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "40.0",
+            "101",
+            "101"
+          ],
+          [
+            "30.0",
+            "135",
+            "141"
+          ],
+          [
+            "20.0",
+            "203",
+            "226"
+          ],
+          [
+            "10.0",
+            "403",
+            "481"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-9-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "text": "Vapaasukeltaja täyttää keuhkonsa pinnalla ja sukeltaa järveen pidättäen hengitystään. Keuhkojen ilman tilavuus $V$ mitattiin eri syvyyksillä $h$ (taulukko, esimerkkiaineisto). Ilmanpaine on $101\\,\\text{kPa}$, veden tiheys $1000\\,\\text{kg/m}^3$ ja $g = 9{,}81\\,\\text{m/s}^2$. Oleta, että ilman lämpötila ja määrä pysyvät samoina ja että keuhkojen ilman paine on koko ajan sama kuin ympäröivän veden paine.\n\na) Laske ympäröivä kokonaispaine $p$ jokaisessa syvyydessä ja tulo $pV$. Päättele laskujesi perusteella, noudattaako keuhkojen ilma Boylen lakia.\n\nb) Oleta mallina, että keuhkot eivät voi puristua pienemmäksi kuin $1{,}5\\,\\textsf{l}$. Missä syvyydessä keuhkojen ilman tilavuus saavuttaisi tämän rajan?\n\nc) Mikä on paineen suhde kohdan b) syvyydessä ja pinnalla, ja mikä on keuhkojen tilavuuksien suhde pinnalla ja tässä syvyydessä? Vertaa suhteita.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "answer": 30,
+      "unit": "m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Vapaasukeltajan keuhkojen ilman tilavuus (esimerkkiaineisto)",
+        "columns": [
+          "$h\\,(\\text{m})$",
+          "$V\\,(\\textsf{l})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "6.0"
+          ],
+          [
+            "5.0",
+            "4.0"
+          ],
+          [
+            "10.0",
+            "3.0"
+          ],
+          [
+            "20.0",
+            "2.0"
+          ]
+        ]
+      }
     }
   ]
 }

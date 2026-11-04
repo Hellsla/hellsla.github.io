@@ -111,6 +111,8 @@ Suoran johtimen kenttäviivat ovat johtimen ympärillä samankeskisiä ympyröit
   <foreignObject x="554" y="65.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/compass-needles-wire.webp" alt="Sininen johdin kulkee levyn läpi, ja sen ympärillä on neljä riviä pieniä kompassineuloja."><figcaption>Pienet kompassineulat virtajohtimen ympärillä. Johtimen lähellä neulat kääntyvät johdinta kiertävien kenttäviivojen suuntaisiksi.</figcaption></figure>
+
 ### Oikean käden sääntö
 Kentän kiertosuunta saadaan **oikean käden säännöllä**: kun oikean käden peukalo osoittaa virran suuntaan, koukistetut sormet kiertävät kenttäviivojen suuntaan. Kuvassa virta kulkee ylöspäin, joten ylhäältä katsottuna kenttä kiertää vastapäivään. Kuvissa virta kohti katsojaa merkitään pisteellä $\odot$ ja virta poispäin katsojasta ristillä $\otimes$, kuten nuolen kärki ja sulat.
 

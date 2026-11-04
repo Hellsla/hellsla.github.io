@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 39b64ad79916fa8d
+CONTENT-HASH: 5a9d2e56890d8159
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the English text already matched fi in every number and was natural)
 
 ## Polish
-- [Minor] L2-01 Given — "$t = 1.84\,\text{s}, \dots$" uses one symbol for a list; write $t_1, \dots, t_6$ and keep the pair together (carried over from round 1).
-- [Minor] L3-01 Find — "reading – true time" uses an en dash; use a minus sign in maths.
+(none)
 
 ## Checked
-- Delta (Formula lines no longer repeat the formula): open-exercises-1280-1 (L1-01 solution: Formula block clean, one formula, no stray text) and open-exercises-L3-1280-1 (L3-01: Formula, Substitution, Answer intact). Layout survived; no clipped or red KaTeX.
-
-## Scores
-illustrations 4 · typography 4 · Finnish (English prose) 4 · accessibility 4
+- The screenshot files listed in packet-visual.md are not present in review/shots/ in this checkout, so no image was viewed. The check was made on the JSON: table captions, column headers (symbols and units) and cell values of L2-05, L2-06 and L3-04 equal fi apart from the translated caption; no table is wider than the fi one (same columns and rows).
+- Texts are of similar length to the fi originals; no overlong unbroken strings; math uses the language's decimal point; no stray Finnish or untranslated markup.
+- Figure reference of L1-03 (fy1-3/pendulum-dots) is unchanged from fi.

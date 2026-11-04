@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 951e7c25a7f12573
+CONTENT-HASH: f1cd5a9ad6dd79af
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] Caption is five sentences; the "vaihtovirta/tasavirta" contrast could name the term simply ("tämä moottori käyttää vaihtovirtaa"), optional.
 
 ## Checked
-- Delta: 'Etsi virhe' prompt (sovella stage), the product row split with \quad \cdot 0,866; rendered at 360 and 390 px from the built page, display opened (details open); sovella-390-1 and -2 captures for the surrounding worked example.
-- Result: rows F = IlB cos 30°, = 5,0 A · 0,20 m · 0,30 T, then an indented · 0,866, then ≈ 0,26 N; equals signs aligned in one column, nothing clipped, display scrollWidth = clientWidth, no page overflow.
-- Only the line breaking of the formula changed; text, numbers and units unchanged (diff read). Deterministic layout checks 360/768/1280 clean per packet.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: rendered preview/fi-easy/fy7-4.html with playwright, lazy images scrolled into view and confirmed loaded; fy7-4 photo (motor cutaway) at 390 and 1280 px. Images load, no horizontal overflow, credit line shown, captions accurate for the images and in plain Finnish.

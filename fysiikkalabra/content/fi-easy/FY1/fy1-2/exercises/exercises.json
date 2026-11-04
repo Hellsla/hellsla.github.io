@@ -40,6 +40,78 @@
       "answer": 400.7,
       "unit": "px",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L1-06",
+      "level": 1,
+      "text": "Mikä seuraavista yksiköistä on SI-järjestelmän perusyksikkö?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kilogramma ($\\text{kg}$), jolla mitataan massaa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Newton ($\\text{N}$), jolla mitataan voimaa.",
+          "feedback": "Newton on johdettu yksikkö. Se saadaan perusyksiköistä tulona ja osamääränä, $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. Perusyksiköitä on vain seitsemän, eikä voiman yksikkö kuulu niihin."
+        },
+        {
+          "text": "Kilogramma ($\\text{kg}$), jolla mitataan massaa.",
+          "feedback": "Oikein. Massan SI-perusyksikkö on kilogramma. Se on ainoa perusyksikkö, jonka nimessä on jo etuliite kilo.",
+          "correct": true
+        },
+        {
+          "text": "Gramma ($\\text{g}$), jolla mitataan massaa.",
+          "feedback": "Gramma ei ole oma perusyksikkönsä. Se on kilogrammasta etuliitteellä muodostettu osa, $1\\,\\text{g} = 10^{-3}\\,\\text{kg}$. Massan SI-perusyksikkö on kilogramma."
+        },
+        {
+          "text": "Litra ($\\textsf{l}$), jolla mitataan tilavuutta.",
+          "feedback": "Tilavuus on johdannaissuure, koska se saadaan pituuksien tulona. Sen SI-yksikkö on $\\text{m}^3$. Litra ei ole SI-yksikkö vaan sen rinnalla käytetty yksikkö, $1\\,\\textsf{l} = 10^{-3}\\,\\text{m}^3$."
+        }
+      ]
+    },
+    {
+      "id": "fy1-2-L1-07",
+      "level": 1,
+      "text": "Pyöräilijän nopeus on $18\\,\\text{km/h}$. Ilmoita nopeus yksikössä $\\text{m/s}$.",
+      "kind": [
+        "model"
+      ],
+      "answer": 5.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L1-08",
+      "level": 1,
+      "text": "Tiheys lasketaan kaavalla $\\rho = \\dfrac{m}{V}$. Tässä $m$ on massa ja $V$ tilavuus. Mikä on tiheyden yksikkö, kun massa on kilogrammoina ja tilavuus kuutiometreinä?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "$\\text{kg/m}^3$, koska massa jaetaan tilavuudella",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$\\text{kg}\\cdot\\text{m}^3$, koska massa ja tilavuus kerrotaan",
+          "feedback": "Kaavassa massa jaetaan tilavuudella, joten myös yksiköt jaetaan. Kilogramma tulee osoittajaan ja kuutiometri nimittäjään. Tulon yksikkö kuvaisi aivan toista suuretta."
+        },
+        {
+          "text": "$\\text{m}^3/\\text{kg}$, koska tilavuus kirjoitetaan ensin",
+          "feedback": "Yksiköt noudattavat kaavan järjestystä. Suure $m$ on osoittajassa, joten sen yksikkö on osoittajassa. Käänteinen yksikkö $\\text{m}^3/\\text{kg}$ kertoisi, kuinka suuri tilavuus on yhtä kilogrammaa kohti."
+        },
+        {
+          "text": "$\\text{kg/m}^2$, koska tilavuus mitataan neliömetreinä",
+          "feedback": "Neliömetri on pinta-alan yksikkö. Tilavuus on kolmen pituuden tulo, joten sen yksikkö on $\\text{m}\\cdot\\text{m}\\cdot\\text{m} = \\text{m}^3$."
+        },
+        {
+          "text": "$\\text{kg/m}^3$, koska massa jaetaan tilavuudella",
+          "feedback": "Oikein. Yksikkö saadaan sijoittamalla suureiden yksiköt kaavaan. Massan yksikkö $\\text{kg}$ jaetaan tilavuuden yksiköllä $\\text{m}^3$. Tiheyden yksikkö on siis $\\text{kg/m}^3$.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +146,101 @@
       "answer": 1.3255,
       "unit": "milj. km",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L2-05",
+      "level": 2,
+      "text": "Taulukossa on neljän kulkuneuvon nopeus ilmoitettuna eri yksiköissä. Käytä arvoa $1\\,\\text{solmu} = 1{,}852\\,\\text{km/h}$. Mikä kulkuneuvo on nopein? Ilmoita sen nopeus yksikössä $\\text{m/s}$.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 19.5,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kulkuneuvojen nopeuksia",
+        "columns": [
+          "Kulkuneuvo",
+          "$v$",
+          "$\\text{Yksikkö}$"
+        ],
+        "rows": [
+          [
+            "Pikalaiva",
+            "38.0",
+            "$\\text{solmua}$"
+          ],
+          [
+            "Juna",
+            "66.0",
+            "$\\text{km/h}$"
+          ],
+          [
+            "Pyöräilijä",
+            "9.0",
+            "$\\text{m/s}$"
+          ],
+          [
+            "Kalastusvene",
+            "12.0",
+            "$\\text{solmua}$"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-2-L2-06",
+      "level": 2,
+      "text": "Oppilas punnitsi viisi saman lajikkeen omenaa ja kirjasi tulokset taulukkoon. Etsi taulukosta virhe ja korjaa se. Laske sen jälkeen omenan keskimassa kilogrammoina.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 0.1549,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Omenoiden massa",
+        "columns": [
+          "Omena",
+          "$m\\,(\\text{kg})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "152.4"
+          ],
+          [
+            "B",
+            "147.9"
+          ],
+          [
+            "C",
+            "160.8"
+          ],
+          [
+            "D",
+            "155.3"
+          ],
+          [
+            "E",
+            "158.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-2-L2-07",
+      "level": 2,
+      "text": "Vesihana täyttää ämpäriä tasaisella virtaamalla $q = 0{,}20\\,\\textsf{l}/\\text{s}$. Oppilas laskee, kauanko $12\\,\\textsf{l}$:n ämpärin täyttäminen kestää.\n\nOppilaan ratkaisu on: ”Aika on virtaaman ja tilavuuden tulo, $t = qV = 0{,}20\\,\\textsf{l}/\\text{s}\\cdot12\\,\\textsf{l} = 2{,}4$.” Hän päättelee, että ämpäri täyttyy $2{,}4$ sekunnissa.\n\nTarkista oppilaan laskun yksiköt. Selitä, mistä yksikkötarkastelu paljastaa virheen. Laske sitten oikea aika minuutteina.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 1.0,
+      "unit": "min",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +267,56 @@
       "answer": 40.2,
       "unit": "h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L3-04",
+      "level": 3,
+      "text": "Heilurin jaksonaika $T$ on aika yhteen täyteen heilahdukseen. Se voi riippua vain heilurin pituudesta $L$, putoamiskiihtyvyydestä $g$ ja heilurin massasta $m$.\n\nOletetaan, että $T = k\\,L^{a}g^{b}m^{c}$, missä $k$ on yksikötön luku. Päättele yksiköiden avulla eksponentit $a$, $b$ ja $c$.\n\nPituudella $0{,}250\\,\\text{m}$ jaksonaika mitattiin $1{,}00\\,\\text{s}$. Kuinka pitkä jaksonaika on samassa paikassa, kun pituus on $1{,}00\\,\\text{m}$?",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "answer": 2.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L3-05",
+      "level": 3,
+      "text": "Valmistaja ilmoittaa kahden kannettavan virtalähteen tiedot eri yksiköissä. Molemmat on ladattu täyteen. Kumpikin syöttää laitetta, jonka teho on taulukon käyttöteho.\n\nToiminta-aika on $t = \\dfrac{E}{P}$, ja teholle pätee $1\\,\\text{W} = 1\\,\\text{J/s}$. Energian yksiköille pätee $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$.\n\nYstäväsi väittää, että laite B kestää kauemmin, koska sen energian lukuarvo $2{,}20$ on suurempi kuin laitteen A lukuarvo $0{,}65$.\n\nKuinka monta tuntia kauemmin pidempään toimiva laite toimii? Perustele. Onko väite oikein?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.54,
+      "unit": "h",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Valmistajan ilmoittamat tiedot",
+        "columns": [
+          "Laite",
+          "$E$",
+          "Yksikkö",
+          "$P$",
+          "Yksikkö"
+        ],
+        "rows": [
+          [
+            "A",
+            "0.65",
+            "$\\text{kWh}$",
+            "85.0",
+            "$\\text{W}$"
+          ],
+          [
+            "B",
+            "2.20",
+            "$\\text{MJ}$",
+            "0.100",
+            "$\\text{kW}$"
+          ]
+        ]
+      }
     }
   ]
 }

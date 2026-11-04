@@ -40,6 +40,58 @@
       "answer": 100000,
       "unit": "kpl",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-06",
+      "level": 1,
+      "text": "Neljän ruokatuotteen energia on ilmoitettu eri yksiköissä. Mikä niistä sisältää eniten energiaa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$0{,}0033\\,\\text{GJ}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$2900\\,\\text{kJ}$",
+          "feedback": "Tämä on $2{,}9\\,\\text{MJ}$, kun $2900\\,\\text{kJ} = 2900 : 1000\\,\\text{MJ}$. Se on pienempi kuin $3{,}3\\,\\text{MJ}$."
+        },
+        {
+          "text": "$3{,}1\\,\\text{MJ}$",
+          "feedback": "Tämä on $3{,}1\\,\\text{MJ}$, mutta $0{,}0033\\,\\text{GJ} = 3{,}3\\,\\text{MJ}$ on vielä suurempi. Vertailussa energiat muunnetaan ensin samaan yksikköön."
+        },
+        {
+          "text": "$3\\,000\\,000\\,\\text{J}$",
+          "feedback": "Tällä on suurin lukuarvo, mutta joule on pieni yksikkö: $3\\,000\\,000\\,\\text{J} = 3{,}0\\,\\text{MJ}$, mikä on pienempi kuin $3{,}3\\,\\text{MJ}$."
+        },
+        {
+          "text": "$0{,}0033\\,\\text{GJ}$",
+          "feedback": "Oikein: $0{,}0033\\,\\text{GJ} = 0{,}0033 \\cdot 1000\\,\\text{MJ} = 3{,}3\\,\\text{MJ}$, mikä on suurempi kuin $2{,}9\\,\\text{MJ}$, $3{,}1\\,\\text{MJ}$ ja $3{,}0\\,\\text{MJ}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy2-2-L1-07",
+      "level": 1,
+      "text": "Pähkinäpussin pakkausmerkinnän mukaan $100\\,\\text{g}$ pähkinöitä sisältää energiaa $2400\\,\\text{kJ}$. Pussissa on pähkinöitä $50\\,\\text{g}$. Kuinka paljon energiaa pussin pähkinät sisältävät? Anna vastaus kilojouleina.",
+      "kind": [
+        "data"
+      ],
+      "answer": 1200,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-08",
+      "level": 1,
+      "text": "Pienen pellettikattilan vuorokaudessa tuottama lämpöenergia on $0{,}35\\,\\text{GJ}$. Ilmoita energia megajouleina.",
+      "kind": [
+        "data"
+      ],
+      "answer": 350,
+      "unit": "MJ",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,95 @@
       "answer": 950,
       "unit": "kpl",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L2-05",
+      "level": 2,
+      "text": "Aamupala koostuu taulukon ruoista. Laske aamupalan energia yhteensä megajouleina. Kuinka pitkän kävelymatkan energia vastaa, kun kävely kuluttaa energiaa $220\\,\\text{kJ}$ kilometriä kohti? Anna vastaus kilometreinä.",
+      "kind": [
+        "data"
+      ],
+      "answer": 7.3,
+      "unit": "km",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Aamupalan ruoat ja niiden energia",
+        "columns": [
+          "Ruoka",
+          "$m\\,(\\text{g})$",
+          "$E_{100}\\,(\\text{kJ})$"
+        ],
+        "rows": [
+          [
+            "Kaurapuuro",
+            "250",
+            "300"
+          ],
+          [
+            "Banaani",
+            "120",
+            "400"
+          ],
+          [
+            "Appelsiinimehu",
+            "200",
+            "190"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-2-L2-06",
+      "level": 2,
+      "text": "Oppilas laskee aamupalan, lounaan ja välipalan energian yhteen: aamupala $0{,}85\\,\\text{MJ}$, lounas $1200\\,\\text{kJ}$ ja välipala $450\\,\\text{kJ}$. Hän kirjoittaa: \"$0{,}85 + 1200 + 450 = 1650{,}85\\,\\text{kJ}$.\" Etsi virhe ja laske oikea yhteenlaskettu energia megajouleina. Selitä, miksi oppilaan tulos ei voi olla oikein.",
+      "kind": [
+        "error"
+      ],
+      "answer": 2.5,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L2-07",
+      "level": 2,
+      "text": "Esimerkkiaineistossa koehenkilö käveli eri pituisia matkoja, ja aktiivisuusrannekkeesta luettiin matkan $s$ aikana kulunut energia $E$. Piirrä mittauspisteistä kuvaaja ja sovita pisteisiin suora. Määritä sen kulmakerroin ja laske sen avulla, kuinka pitkän kävelymatkan energia vastaa $1{,}5\\,\\text{MJ}$:n suklaalevyä. Anna vastaus kilometreinä. Mitä kulmakerroin kertoo?",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 6.0,
+      "unit": "km",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Kävelyn aikana kulunut energia",
+        "columns": [
+          "$s\\,(\\text{km})$",
+          "$E\\,(\\text{kJ})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "262"
+          ],
+          [
+            "2.0",
+            "498"
+          ],
+          [
+            "3.0",
+            "771"
+          ],
+          [
+            "4.0",
+            "1003"
+          ],
+          [
+            "5.0",
+            "1262"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +241,96 @@
       "answer": 12000000.0,
       "unit": "l",
       "tolerance": 0.05
+    },
+    {
+      "id": "fy2-2-L3-04",
+      "level": 3,
+      "text": "Taulukossa on neljän kohteen vuotuinen energia ilmoitettuna kunkin alan omalla yksiköllä.\n\nMuunna energiat gigajouleiksi, kun $1\\,\\text{MWh} = 3{,}6\\,\\text{GJ}$, $1\\,\\text{toe} = 42\\,\\text{GJ}$ ja $1\\,\\text{PJ} = 1\\,000\\,000\\,\\text{GJ}$. Järjestä kohteet pienimmästä suurimpaan. Kuinka monta kertaa suurempi suurin energia on kuin pienin? Perustele, miksi taulukon luvut ($18$, $12$, $1200$ ja $3{,}2$) antavat harhaanjohtavan kuvan energioiden suuruudesta.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 49000,
+      "unit": "kertaa",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Vuotuinen energia eri yksiköissä",
+        "columns": [
+          "Kohde",
+          "Energia",
+          "Yksikkö"
+        ],
+        "rows": [
+          [
+            "Omakotitalon sähkönkulutus",
+            "18",
+            "$\\text{MWh}$"
+          ],
+          [
+            "Maatilan polttoöljy",
+            "12",
+            "$\\text{toe}$"
+          ],
+          [
+            "Pienvesivoimalan tuotanto",
+            "1200",
+            "$\\text{MWh}$"
+          ],
+          [
+            "Kaupungin kaukolämpö",
+            "3.2",
+            "$\\text{PJ}$"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-2-L3-05",
+      "level": 3,
+      "text": "Henkilön päivän ruoan energia on taulukossa. Hän kuluttaa päivässä perusaineenvaihduntaan ja arkitoimiin $10{,}2\\,\\text{MJ}$ ja lisäksi kävelee joka päivä $5{,}0\\,\\text{km}$, mikä kuluttaa energiaa $250\\,\\text{kJ}$ kilometriä kohti.\n\nYlimääräinen tai puuttuva energia varastoituu kehoon rasvana tai kuluu rasvasta, ja yhdessä rasvakilossa on kemiallista energiaa $37\\,\\text{MJ}$.\n\nKuinka paljon rasvaa kuluu $30$ vuorokauden aikana, jos tilanne pysyy samana? Anna vastaus kilogrammoina. Perustele energian säilymisen avulla, mihin kuluva rasva muuttuu.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.89,
+      "unit": "kg",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Päivän ruoan energia",
+        "columns": [
+          "Ateria",
+          "Luku",
+          "Yksikkö"
+        ],
+        "rows": [
+          [
+            "Aamupala",
+            "1.4",
+            "$\\text{MJ}$"
+          ],
+          [
+            "Lounas",
+            "3200",
+            "$\\text{kJ}$"
+          ],
+          [
+            "Välipala",
+            "650",
+            "$\\text{kJ}$"
+          ],
+          [
+            "Päivällinen",
+            "0.0042",
+            "$\\text{GJ}$"
+          ],
+          [
+            "Iltapala",
+            "900",
+            "$\\text{kJ}$"
+          ]
+        ]
+      }
     }
   ]
 }

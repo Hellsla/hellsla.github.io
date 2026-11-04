@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d656d012098aaf16
+CONTENT-HASH: 676595eaffa2a2cb
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions fy8-s3 a) table at 390 px: the fourth column (Rr^2, 10^3 cm^2/min) is still cut off at the right edge (scrolls, with a fade hint). Header and values are unreadable without scrolling; consider dropping the 1/r^2 column or the units from the header.
-- [Minor] fig-4 (s3 a graph) at 390 px: x tick labels 0,05 / 0,10 / 0,15 ... sit close together and the data cluster near the origin; legible, but the axis title is small.
-- [Minor] fy8-s3 b) Kuvaaja: the inline chain with stacked fractions is dense on a phone; readable.
+- [Minor] s3 a) solution table: 4th column (Rr²) 418 px in a 273 px card at 360 px, clips and scrolls (carried; unrelated to this change).
+- [Minor] source box at the top of each task is unevenly rounded (carried).
+- [Minor] figure text ~9-10 px at narrow widths (carried).
 
 ## Checked
-s3 task table header (r (cm), pulsseja 1,0 min:ssa) fits at 390 px with no clipping. Axis labels at 390 px: fig-4 shows R (1/min) and 1/r^2 (1/cm^2); fig-17 shows R^-1/2 (10^-2 min^1/2) and r (cm); quantity and unit on both axes, markers distinct from the dashed model line and the extension to the r-axis, LaTeX labels, no red KaTeX, no horizontal page overflow. Stage captures s3 parts 1, 3, 4, 8 checked.
+- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (s1 a) and d) Sijoitus) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
+- Result: h · \dfrac{c}{X} wraps after 'h ·' into a 2–4 row block, fraction bar intact, units upright with thin spaces, decimal comma; document scrollWidth = 360 = viewport, no clipped KaTeX.
+- LaTeX valid, no red KaTeX; hash at start and end the same.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4

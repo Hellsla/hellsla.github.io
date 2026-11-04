@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9412f7bf229627a3
+CONTENT-HASH: ec256559ecba9230
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] exercise L2-01 graph — origin label 0 stands apart from the tick labels; fine, but the s axis could end at 0,20.
+- [Minor] L2-06 solution — in Substitution, "b)" is left at the end of a line before the equation block; same in the Finnish layout, optional break before b).
 
 ## Checked
-- contact-4/5; open-exercises L1 (1280), L2-1, L2-3, graph in L2-01 (axes with units, end points marked, description matches); solutions: chains aligned, units upright, decimal comma, answer boxes; Finnish instructions clear.
+- Captures opened (fi-easy): open-exercises L2 (cycle task L2-05 solution, L2-06 error task), L3 (L3-04 table and solution, L3-05 table and solution), fy3-5-open-exercises-L2-1280-8 / L3 shots.
+- Tables show the decimal comma, units upright, captions translated; formulas render, answer boxes and unit fields present.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish (Selkeä suomi) 4 · accessibility 4

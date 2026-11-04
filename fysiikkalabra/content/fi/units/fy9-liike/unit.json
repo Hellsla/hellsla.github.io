@@ -1,0 +1,14 @@
+{
+ "id": "fy9-liike",
+ "course": "FY9",
+ "chapter": 3,
+ "order": 1,
+ "title": "Liike kuvaajina",
+ "description": "Kerrataan FY1- ja FY4-moduulien paikka, siirtymä, nopeus ja kiihtyvyys, tasainen ja tasaisesti kiihtyvä liike, kuvaajan kulmakerroin ja pinta-ala sekä kahden kappaleen liikkeiden vertailu ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}

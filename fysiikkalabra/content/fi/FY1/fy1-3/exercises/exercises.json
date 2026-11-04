@@ -40,6 +40,58 @@
       "answer": 0.5,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L1-06",
+      "level": 1,
+      "text": "Mikä seuraavista tilanteista on esimerkki systemaattisesta virheestä?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Lämpömittarin nollakohta on väärin, joten se näyttää jäävedessä joka kerralla noin $1{,}5\\,{}^\\circ\\text{C}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Lämpömittarin nollakohta on väärin, joten se näyttää jäävedessä joka kerralla noin $1{,}5\\,{}^\\circ\\text{C}$.",
+          "feedback": "Oikein: virhe on joka mittauksessa suunnaltaan ja suuruudeltaan sama, joten kaikki lukemat siirtyvät samaan suuntaan. Toistaminen ja keskiarvo eivät pienennä sitä; se huomataan vertaamalla tunnettuun arvoon, ja se korjataan.",
+          "correct": true
+        },
+        {
+          "text": "Käsikellon pysäytys osuu milloin liian aikaisin, milloin liian myöhään, joten ajat vaihtelevat kerrasta toiseen.",
+          "feedback": "Tämä on satunnaisvirhe: reaktioaika vaihtelee ja virhe voi olla kumpaan suuntaan tahansa. Se näkyy hajontana ja pienenee toistamalla ja ottamalla keskiarvo. Systemaattinen virhe olisi joka kerralla sama."
+        },
+        {
+          "text": "Oppilas katsoo asteikkoa milloin vasemmalta, milloin oikealta, ja lukemat vaihtelevat sen mukaan.",
+          "feedback": "Katselusuunnan vaihtelu antaa lukemiin sattumanvaraista hajontaa kumpaankin suuntaan, joten kyse on satunnaisvirheestä. Jos asteikkoa katsottaisiin joka kerralla samasta vinosta suunnasta, virhe olisi systemaattinen."
+        },
+        {
+          "text": "Oppilas kirjaa tuloksen $3{,}42\\,\\text{s}$ muistiin muodossa $34{,}2\\,\\text{s}$.",
+          "feedback": "Tämä on karkea virhe eli yksittäinen erehdys kirjauksessa. Se ei toistu joka mittauksessa samanlaisena, vaan näkyy yhtenä muista selvästi poikkeavana tuloksena, joka tarkistetaan."
+        }
+      ]
+    },
+    {
+      "id": "fy1-3-L1-07",
+      "level": 1,
+      "text": "Puupalikan leveys mitataan viisi kertaa: $5{,}41\\,\\text{cm}$, $5{,}47\\,\\text{cm}$, $5{,}39\\,\\text{cm}$, $5{,}44\\,\\text{cm}$ ja $5{,}43\\,\\text{cm}$. Virhe-arvioksi otetaan vaihteluvälin puolikas ja se pyöristetään yhteen merkitsevään numeroon. Anna keskiarvo pyöristettynä niin, että sen tarkkuus sopii virhe-arvioon.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 5.43,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L1-08",
+      "level": 1,
+      "text": "Levyn paksuus mitataan kahdella välineellä: viivaimella, jonka pienin asteikkoväli on $1{,}0\\,\\text{mm}$, ja digitaalisella työntömitalla, jonka näyttö muuttuu $0{,}01\\,\\text{mm}$:n portain. Lukeman epävarmuudeksi arvioidaan kummallakin puoli pienintä lukemaväliä. Kuinka monta kertaa pienempi on työntömitan lukeman epävarmuus kuin viivaimen?",
+      "kind": [
+        "model"
+      ],
+      "answer": 100,
+      "unit": "kertaa",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,118 @@
       "answer": 10,
       "unit": "kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L2-05",
+      "level": 2,
+      "text": "Levysoittimen levyn kymmenen kierroksen aika mitattiin käsikellolla kahdeksan kertaa, ja tulokset ovat taulukossa. Ota 10 kierroksen ajan virhe-arvioksi vaihteluvälin puolikas ja pyöristä keskiarvo virhe-arvion tarkkuuteen. Ilmoita yhden kierroksen aika muodossa $\\bar{T} \\pm \\Delta T$.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.82,
+      "unit": "s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Levyn 10 kierroksen aika",
+        "columns": [
+          "$n$",
+          "$t_{10}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "18.12"
+          ],
+          [
+            "2",
+            "18.31"
+          ],
+          [
+            "3",
+            "18.05"
+          ],
+          [
+            "4",
+            "18.27"
+          ],
+          [
+            "5",
+            "18.19"
+          ],
+          [
+            "6",
+            "18.35"
+          ],
+          [
+            "7",
+            "18.10"
+          ],
+          [
+            "8",
+            "18.22"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-3-L2-06",
+      "level": 2,
+      "text": "Kaksi ryhmää mittasi saman vesimäärän, jonka tilavuus tunnetaan tarkasti: $50{,}0\\,\\text{ml}$. Tulokset ovat taulukossa. Laske ryhmän A tulosten keskiarvon poikkeama tunnetusta arvosta etumerkkeineen. Kumpi mittaussarja on toistettavampi ja kumpi lähempänä oikeaa arvoa? Perustele vaihteluvälin puolikkailla ja keskiarvoilla.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.94,
+      "unit": "ml",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Mitatut tilavuudet",
+        "columns": [
+          "$n$",
+          "$V_\\text{A}\\,(\\text{ml})$",
+          "$V_\\text{B}\\,(\\text{ml})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "50.9",
+            "49.4"
+          ],
+          [
+            "2",
+            "51.1",
+            "50.5"
+          ],
+          [
+            "3",
+            "50.8",
+            "49.8"
+          ],
+          [
+            "4",
+            "51.0",
+            "50.3"
+          ],
+          [
+            "5",
+            "50.9",
+            "50.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-3-L2-07",
+      "level": 2,
+      "text": "Heilurin heilahdusaika on noin $1{,}5\\,\\text{s}$. Käsin ajanotossa kellon käynnistys ja pysäytys aiheuttavat reaktioajasta yhteensä noin $0{,}2\\,\\text{s}$:n epävarmuuden koko mitattuun aikaan (arvio, joka ei riipu mitatun ajan pituudesta).\n\nSuunnittelet mittauksen, jossa mitataan kerralla $N$ peräkkäistä heilahdusta ja jaetaan aika luvulla $N$.\n\nKuinka monta heilahdusta vähintään on mitattava, jotta heilahdusajan suhteellinen epävarmuus on enintään $1\\,\\%$? Selitä myös, miksi pidemmän ajan mittaaminen pienentää reaktioajan vaikutusta.",
+      "kind": [
+        "experiment",
+        "model"
+      ],
+      "answer": 14,
+      "unit": "heilahdusta",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +263,71 @@
       "text": "Terästangon pituus tunnetaan vertailumittauksesta tarkasti: se on $8{,}00\\,\\text{cm}$. Tanko mitataan työntömitalla viisi kertaa, ja lukemat ovat $8{,}24\\,\\text{cm}$, $8{,}27\\,\\text{cm}$, $8{,}25\\,\\text{cm}$, $8{,}29\\,\\text{cm}$ ja $8{,}25\\,\\text{cm}$. Laske systemaattisen virheen arvio eli keskiarvon ja oikean arvon erotus.",
       "answer": 0.26,
       "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L3-04",
+      "level": 3,
+      "text": "Kärryn kulkuaika radan päästä päähän mitattiin käsikellolla kahdeksan kertaa, ja tulokset ovat taulukossa. Laboratoriopäiväkirjassa on kuudennen mittauksen kohdalla merkintä: ”Katsoin hetkeksi muualle ja pysäytin kellon myöhään.”\n\nSaako tuloksen $2{,}97\\,\\text{s}$ jättää pois? Perustele päiväkirjan merkinnällä ja laske keskiarvo $\\bar{t}$, jota perustellusti käytät.\n\nEntä jos merkintää ei olisi eikä poikkeamalle löytyisi syytä? Laske silloin keskiarvo kaikista kahdeksasta tuloksesta ja vertaa vaihteluvälin puolikasta tuloksen kanssa ja ilman sitä.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 2.41,
+      "unit": "s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kärryn kulkuaika",
+        "columns": [
+          "$n$",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "2.41"
+          ],
+          [
+            "2",
+            "2.38"
+          ],
+          [
+            "3",
+            "2.44"
+          ],
+          [
+            "4",
+            "2.40"
+          ],
+          [
+            "5",
+            "2.43"
+          ],
+          [
+            "6",
+            "2.97"
+          ],
+          [
+            "7",
+            "2.39"
+          ],
+          [
+            "8",
+            "2.42"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-3-L3-05",
+      "level": 3,
+      "text": "Kaksi ryhmää mittasi saman alumiinikappaleen tiheyden. Ryhmä A sai tulokseksi $\\rho_\\text{A} = 2{,}74 \\pm 0{,}05\\,\\text{g/cm}^3$ ja ryhmä B tulokseksi $\\rho_\\text{B} = 2{,}60 \\pm 0{,}05\\,\\text{g/cm}^3$ (epävarmuudet ovat ryhmien arvioita).\n\nOppilas päättelee näin. ”Tulokset eroavat vain $0{,}14\\,\\text{g/cm}^3$ eli noin $5\\,\\%$, joten ne ovat sopusoinnussa.”\n\nEtsi päättelyn virhe ja arvioi epävarmuusväleillä, ovatko tulokset sopusoinnussa. Kuinka suuri on välien väliin jäävä rako?",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 0.04,
+      "unit": "g/cm³",
       "tolerance": 0.02
     }
   ]

@@ -40,6 +40,58 @@
       "answer": 0.5,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L1-06",
+      "level": 1,
+      "text": "Which of the following situations is an example of a systematic error?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The zero point of a thermometer is wrong, so it reads about $1.5\\,{}^\\circ\\text{C}$ in ice water every time.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The zero point of a thermometer is wrong, so it reads about $1.5\\,{}^\\circ\\text{C}$ in ice water every time.",
+          "feedback": "Correct: the error is the same in direction and size in every measurement, so all readings shift in the same direction. Repeating and averaging do not reduce it; it is noticed by comparing with a known value, and it is corrected.",
+          "correct": true
+        },
+        {
+          "text": "A hand-held stopwatch is stopped sometimes too early and sometimes too late, so the times vary from one measurement to the next.",
+          "feedback": "This is a random error: reaction time varies and the error can go in either direction. It shows up as scatter and is reduced by repeating and taking the mean. A systematic error would be the same every time."
+        },
+        {
+          "text": "A student looks at the scale sometimes from the left and sometimes from the right, and the readings vary accordingly.",
+          "feedback": "Varying the viewing direction gives the readings random scatter in both directions, so this is a random error. If the scale were always viewed from the same oblique direction, the error would be systematic."
+        },
+        {
+          "text": "A student records the result $3.42\\,\\text{s}$ as $34.2\\,\\text{s}$.",
+          "feedback": "This is a gross error, that is, a single mistake in recording. It does not repeat in the same way in every measurement but shows up as one result that clearly differs from the others, and it is checked."
+        }
+      ]
+    },
+    {
+      "id": "fy1-3-L1-07",
+      "level": 1,
+      "text": "The width of a wooden block is measured five times: $5.41\\,\\text{cm}$, $5.47\\,\\text{cm}$, $5.39\\,\\text{cm}$, $5.44\\,\\text{cm}$ and $5.43\\,\\text{cm}$. The error estimate is taken to be half of the range and it is rounded to one significant figure. Give the mean rounded so that its precision matches the error estimate.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 5.43,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L1-08",
+      "level": 1,
+      "text": "The thickness of a plate is measured with two instruments: a ruler whose smallest scale division is $1.0\\,\\text{mm}$, and a digital calliper whose display changes in steps of $0.01\\,\\text{mm}$. The uncertainty of the reading is estimated for both as half of the smallest reading interval. How many times smaller is the uncertainty of the calliper reading than that of the ruler?",
+      "kind": [
+        "model"
+      ],
+      "answer": 100,
+      "unit": "times",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,118 @@
       "answer": 10,
       "unit": "times",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L2-05",
+      "level": 2,
+      "text": "The time of ten revolutions of a record on a turntable was measured eight times with a hand-held stopwatch, and the results are in the table. Take half of the range as the error estimate of the time of 10 revolutions and round the mean to the precision of the error estimate. Give the time of one revolution in the form $\\bar{T} \\pm \\Delta T$.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.82,
+      "unit": "s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Time of 10 revolutions of the record",
+        "columns": [
+          "$n$",
+          "$t_{10}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "18.12"
+          ],
+          [
+            "2",
+            "18.31"
+          ],
+          [
+            "3",
+            "18.05"
+          ],
+          [
+            "4",
+            "18.27"
+          ],
+          [
+            "5",
+            "18.19"
+          ],
+          [
+            "6",
+            "18.35"
+          ],
+          [
+            "7",
+            "18.10"
+          ],
+          [
+            "8",
+            "18.22"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-3-L2-06",
+      "level": 2,
+      "text": "Two groups measured the same amount of water, whose volume is known accurately: $50.0\\,\\text{ml}$. The results are in the table. Calculate the deviation of the mean of group A's results from the known value, with its sign. Which series of measurements is more repeatable and which is closer to the true value? Justify with the half-ranges and the means.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.94,
+      "unit": "ml",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Measured volumes",
+        "columns": [
+          "$n$",
+          "$V_\\text{A}\\,(\\text{ml})$",
+          "$V_\\text{B}\\,(\\text{ml})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "50.9",
+            "49.4"
+          ],
+          [
+            "2",
+            "51.1",
+            "50.5"
+          ],
+          [
+            "3",
+            "50.8",
+            "49.8"
+          ],
+          [
+            "4",
+            "51.0",
+            "50.3"
+          ],
+          [
+            "5",
+            "50.9",
+            "50.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-3-L2-07",
+      "level": 2,
+      "text": "The period of a pendulum is about $1.5\\,\\text{s}$. In hand timing, starting and stopping the clock cause, because of reaction time, an uncertainty of about $0.2\\,\\text{s}$ in the whole measured time (an estimate that does not depend on the length of the measured time).\n\nYou plan a measurement in which $N$ consecutive swings are timed at once and the time is divided by $N$.\n\nAt least how many swings must be timed so that the relative uncertainty of the period is at most $1\\,\\%$? Also explain why timing a longer time reduces the effect of reaction time.",
+      "kind": [
+        "experiment",
+        "model"
+      ],
+      "answer": 14,
+      "unit": "swings",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +263,71 @@
       "text": "The length of a steel rod is known exactly from a reference measurement: it is $8.00\\,\\text{cm}$. The rod is measured five times with vernier callipers, and the readings are $8.24\\,\\text{cm}$, $8.27\\,\\text{cm}$, $8.25\\,\\text{cm}$, $8.29\\,\\text{cm}$ and $8.25\\,\\text{cm}$. Calculate the estimate of the systematic error, that is, the difference between the mean and the true value.",
       "answer": 0.26,
       "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L3-04",
+      "level": 3,
+      "text": "The travel time of a cart from one end of a track to the other was measured eight times with a hand-held stopwatch, and the results are in the table. The laboratory notebook has a note at the sixth measurement: “I looked away for a moment and stopped the clock late.”\n\nMay the result $2.97\\,\\text{s}$ be left out? Justify with the notebook note and calculate the mean $\\bar{t}$ that you can justifiably use.\n\nWhat if there were no note and no reason could be found for the deviation? Then calculate the mean of all eight results and compare the half-range with and without the result.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 2.41,
+      "unit": "s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Travel time of the cart",
+        "columns": [
+          "$n$",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "2.41"
+          ],
+          [
+            "2",
+            "2.38"
+          ],
+          [
+            "3",
+            "2.44"
+          ],
+          [
+            "4",
+            "2.40"
+          ],
+          [
+            "5",
+            "2.43"
+          ],
+          [
+            "6",
+            "2.97"
+          ],
+          [
+            "7",
+            "2.39"
+          ],
+          [
+            "8",
+            "2.42"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-3-L3-05",
+      "level": 3,
+      "text": "Two groups measured the density of the same aluminium object. Group A got the result $\\rho_\\text{A} = 2.74 \\pm 0.05\\,\\text{g/cm}^3$ and group B the result $\\rho_\\text{B} = 2.60 \\pm 0.05\\,\\text{g/cm}^3$ (the uncertainties are the groups' estimates).\n\nA student reasons as follows. “The results differ by only $0.14\\,\\text{g/cm}^3$, that is about $5\\,\\%$, so they are consistent.”\n\nFind the error in the reasoning and use the uncertainty intervals to judge whether the results are consistent. How large is the gap between the intervals?",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 0.04,
+      "unit": "g/cm³",
       "tolerance": 0.02
     }
   ]

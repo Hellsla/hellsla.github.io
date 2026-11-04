@@ -121,3 +121,135 @@ $$T = \dfrac{16\,622.5}{1717.9}\,{}^\circ\text{C} = 9.68\,{}^\circ\text{C}$$
 **Substitution:** $r = \dfrac{(800\,\text{W} - 400\,\text{W}) \cdot 600\,\text{s}}{0.196\,\text{kg} - 0.0900\,\text{kg}} = \dfrac{240\,000\,\text{J}}{0.106\,\text{kg}} = 2\,264\,151\,\tfrac{\text{J}}{\text{kg}} = 2.264\,\tfrac{\text{MJ}}{\text{kg}}$
 **Answer:** $2.26\,\tfrac{\text{MJ}}{\text{kg}}$, three significant figures: the difference $196\,\text{g} - 90.0\,\text{g} = 106\,\text{g}$ is accurate to the nearest gram and has three figures.
 **Reasonableness:** The energy passing to the air, $P_\text{loss}t$, is the same in both measurements and cancels in the difference. The individual measurements would give $\dfrac{800\,\text{W} \cdot 600\,\text{s}}{0.196\,\text{kg}} \approx 2.45\,\tfrac{\text{MJ}}{\text{kg}}$ and $\dfrac{400\,\text{W} \cdot 600\,\text{s}}{0.0900\,\text{kg}} \approx 2.67\,\tfrac{\text{MJ}}{\text{kg}}$, both too large, because the energy passing to the air would also be counted as vaporisation. The loss power is $800\,\text{W} - 2.264 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot \dfrac{0.196\,\text{kg}}{600\,\text{s}} \approx 60\,\text{W}$, and the result agrees with the table value $2.26\,\tfrac{\text{MJ}}{\text{kg}}$.
+
+## fy3-7-L1-06
+**Find:** what happens to the temperature of the mixture of melting ice and meltwater while there is still ice left.
+**Principle:** At constant pressure the temperature of a pure substance stays constant throughout a change of state. The energy transferred during melting changes the interactions between the particles and increases the interaction energy between them, so it does not show up as a rise in temperature.
+**Model answer:** The temperature stays the same, because the energy is used to change the interactions between the particles and not to increase the kinetic energy of the particles. The option saying that the temperature rises steadily forgets this. The option saying that the mixture cools contradicts the fact that energy is transferred to the mixture all the time during heating. The option in which the temperature first rises and then falls does not match any stage of melting. Only when all the ice has melted does the meltwater start to warm up.
+
+## fy3-7-L1-07
+**Find:** why the evaporation of sweat cools the skin.
+**Principle:** The vaporisation of a liquid needs energy, $Q = rm$. Evaporating sweat takes this energy from its surroundings, here from the skin, so the skin loses energy and its temperature falls.
+**Model answer:** The evaporating water molecules take energy with them from the skin, so the skin loses energy and cools. Vaporisation absorbs energy and does not give it out, so the claim that sweat would warm the skin is wrong. Sweat is as warm as the skin, so it does not cool the skin because of a temperature difference. Evaporation does not use up the oxygen of the skin either. The quantity of energy is large: the evaporation of one gram needs $r m = 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.001\,\text{kg} = 2.26\,\text{kJ}$.
+
+## fy3-7-L1-08
+**Given:** energy used for vaporisation $Q = 1.36\,\text{MJ}$; from the table $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
+**Find:** the mass $m$ of water that boils away, in kilograms
+**Principle:** The water is already boiling, so its temperature does not rise and all the energy is used for vaporisation, $Q = rm$. The mass that vaporises is proportional to the energy.
+**Formula:** $Q = rm$, from which $m = \dfrac{Q}{r}$
+**Conversions:** $Q = 1.36\,\text{MJ} = 1360\,\text{kJ}$, because $1\,\text{MJ} = 1000\,\text{kJ}$. Then $r$ can be taken in kilojoules per kilogram.
+**Substitution:** $m = \dfrac{1360\,\text{kJ}}{2260\,\tfrac{\text{kJ}}{\text{kg}}} = 0.6018\,\text{kg}$
+**Answer:** $0.602\,\text{kg}$, three significant figures like the energy $1.36\,\text{MJ}$.
+**Reasonableness:** Check by calculating back: $0.602\,\text{kg} \cdot 2260\,\tfrac{\text{kJ}}{\text{kg}} \approx 1360\,\text{kJ}$. The result is less than $1\,\text{kg}$, because $1\,\text{kg}$ would need $2260\,\text{kJ}$, which is more than $1360\,\text{kJ}$. Units: $\tfrac{\text{kJ}}{\text{kJ/kg}} = \text{kg}$.
+
+## fy3-7-L2-05
+**Given:** mass of the ice $m = 0.250\,\text{kg}$, power $P = 600\,\text{W}$, all the energy goes into the ice; the temperature as a function of time from the table
+**Find:** a) the stages and why the temperature stays constant; b) the specific latent heat of fusion $s$ in $\tfrac{\text{kJ}}{\text{kg}}$
+**Principle:** The power is constant, so the energy given by the heater is $Pt$. While the temperature rises, the energy is used for warming, $Q = cm\Delta T$. While the temperature stays constant at $0\,{}^\circ\text{C}$, the ice melts and all the energy is used for melting, $Pt = sm$.
+**Model answer a):** First the ice warms to $0\,{}^\circ\text{C}$. Then the temperature stays at $0\,{}^\circ\text{C}$ even though the heater gives out energy: the energy is used to melt the ice and increases the interaction energy between the particles. Finally all the ice has melted and the water warms up.
+**Reading the table:** The rows $20\,\text{s}$ and $150\,\text{s}$ are already inside the plateau, so the start and end of melting are estimated from the slopes. Start: the rows $0\,\text{s}$ and $10\,\text{s}$ give a rise of $1.14\,\tfrac{\text{K}}{\text{s}}$, so $0\,{}^\circ\text{C}$ is reached at about $18\,\text{s}$. End: at the row $160\,\text{s}$ the temperature is $1.9\,{}^\circ\text{C}$, and the rise between the rows $160\,\text{s}$ and $180\,\text{s}$ is $0.575\,\tfrac{\text{K}}{\text{s}}$, so the rise began about $3.3\,\text{s}$ earlier, at about $157\,\text{s}$. The duration of melting is $\Delta t = 157\,\text{s} - 18\,\text{s} = 139\,\text{s}$.
+**Formula:** $Pt = sm$, from which $s = \dfrac{P\,\Delta t}{m}$
+**Conversions:** The power and time are already in base units, $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
+**Substitution:**
+
+$$\begin{aligned}
+s &= \dfrac{600\,\text{W} \cdot 139\,\text{s}}{0.250\,\text{kg}} \\
+&= \dfrac{83\,400\,\text{J}}{0.250\,\text{kg}} \\
+&= 333\,600\,\tfrac{\text{J}}{\text{kg}}
+\end{aligned}$$
+
+**Answer:** $334\,\tfrac{\text{kJ}}{\text{kg}}$. The time is read only to about a second, so $\pm 5\,\%$ is accepted, and three significant figures are given to match the mass and the power. If the plateau is read directly as the rows $20\,\text{s}$ and $150\,\text{s}$, the time is $130\,\text{s}$ and the result $312\,\tfrac{\text{kJ}}{\text{kg}}$, too small, because melting started before the row $20\,\text{s}$ and ended only after the row $150\,\text{s}$.
+**Reasonableness:** The result matches the known specific latent heat of fusion of ice, $334\,\tfrac{\text{kJ}}{\text{kg}}$. Heating the ice from $-20\,{}^\circ\text{C}$ took about $18\,\text{s}$, that is, $600\,\text{W} \cdot 18\,\text{s} = 10\,800\,\text{J}$. Check: $c m \Delta T = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.250\,\text{kg} \cdot 20\,\text{K} = 10\,500\,\text{J}$, so the measurement and the calculation agree. Melting took about $83\,\text{kJ}$, about eight times more energy than warming the ice.
+
+## fy3-7-L2-06
+**Given:** power $P = 3.0\,\text{kW}$, time $t = 5.0\,\text{min}$, all the energy of the hob goes into the water; from the table $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
+**Find:** a) the error in the student’s reasoning; b) the mass $m$ of water that boils away, in kilograms
+**Principle:** In an open pan the pressure is constant atmospheric pressure, and the temperature of boiling water stays at the boiling point, about $100\,{}^\circ\text{C}$ at normal pressure. All the energy $Pt$ given by the hob is used for vaporisation, $Q = rm$, so $Pt = rm$.
+**Model answer a):** The student assumes that the added energy raises the temperature of boiling water. At constant pressure the temperature does not rise during a change of state: the extra energy is used to vaporise the water. The power affects how fast the water vaporises but not the temperature of the water. Twice the power vaporises twice as many kilograms of water in the same time, and the water stays at $100\,{}^\circ\text{C}$ all the time.
+**Formula:** $Pt = rm$, from which $m = \dfrac{Pt}{r}$
+**Conversions:** $P = 3.0\,\text{kW} = 3000\,\text{W}$, $t = 5.0\,\text{min} = 5.0 \cdot 60\,\text{s} = 300\,\text{s}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
+**Substitution:**
+
+$$\begin{aligned}
+m &= \dfrac{3000\,\text{W} \cdot 300\,\text{s}}{2\,260\,000\,\tfrac{\text{J}}{\text{kg}}} \\
+&= \dfrac{900\,000\,\text{J}}{2\,260\,000\,\tfrac{\text{J}}{\text{kg}}} \\
+&= 0.398\,\text{kg}
+\end{aligned}$$
+
+**Answer:** $0.40\,\text{kg}$, two significant figures like the power $3.0\,\text{kW}$ and the time $5.0\,\text{min}$.
+**Reasonableness:** Estimate: $900\,\text{kJ}$ divided by about $2300\,\tfrac{\text{kJ}}{\text{kg}}$ is about $0.39\,\text{kg}$. At a power of $1.5\,\text{kW}$ half of this would vaporise in the same time, about $0.2\,\text{kg}$, which matches the fact that the mass that vaporises is directly proportional to the power.
+
+## fy3-7-L2-07
+**Given:** boiling points from the table: $T_\text{b} = 100.0\,{}^\circ\text{C}$ at $101.3\,\text{kPa}$, $T_\text{b} = 81.3\,{}^\circ\text{C}$ at $50.0\,\text{kPa}$ and $T_\text{b} = 90.0\,{}^\circ\text{C}$ at $70.0\,\text{kPa}$; in the mountains $p = 60.0\,\text{kPa}$
+**Find:** a) the difference $\Delta T$ in the boiling point in kelvins at $60.0\,\text{kPa}$ compared with normal pressure; b) why food cooks more slowly in the mountains
+**Principle:** The boiling point of water depends on the pressure: at a lower pressure water boils at a lower temperature. The pressure $60.0\,\text{kPa}$ is halfway between the rows $50.0\,\text{kPa}$ and $70.0\,\text{kPa}$ of the table, so the boiling point is estimated as the midpoint of those (linear interpolation).
+**Formula:** $T_\text{b,mountain} = \dfrac{T_{50} + T_{70}}{2}$ and $\Delta T = T_\text{b,normal} - T_\text{b,mountain}$
+**Conversions:** None needed: a temperature difference is the same in degrees Celsius and in kelvins.
+**Substitution:**
+
+$$\begin{aligned}
+T_\text{b,mountain} &= \dfrac{81.3\,{}^\circ\text{C} + 90.0\,{}^\circ\text{C}}{2} \\
+&= 85.65\,{}^\circ\text{C}
+\end{aligned}$$
+
+$$\begin{aligned}
+\Delta T &= 100.0\,{}^\circ\text{C} - 85.65\,{}^\circ\text{C} \\
+&= 14.35\,\text{K}
+\end{aligned}$$
+
+**Answer:** $14.4\,\text{K}$, three significant figures like the temperatures in the table. The interpolation is an estimate, so $\pm 4\,\%$ is accepted.
+**Model answer b):** Boiling water stays at the temperature $T_\text{b}$ even though the hob gives more energy: the extra energy vaporises water and does not raise the temperature. In the mountains $T_\text{b}$ is only about $85.7\,{}^\circ\text{C}$, so the food in the surrounding water is about $14\,\text{K}$ cooler than at sea level. Cooking depends on temperature, so it takes longer.
+**Reasonableness:** The estimate $85.7\,{}^\circ\text{C}$ lies between the rows $81.3\,{}^\circ\text{C}$ and $90.0\,{}^\circ\text{C}$, just as the pressure $60.0\,\text{kPa}$ lies between the rows $50.0\,\text{kPa}$ and $70.0\,\text{kPa}$. The difference $14.4\,\text{K}$ is smaller than at $50.0\,\text{kPa}$ ($18.7\,\text{K}$) and larger than at $70.0\,\text{kPa}$ ($10.0\,\text{K}$), as it should be.
+
+## fy3-7-L3-04
+**Given:** mass of the stearin $m = 0.100\,\text{kg}$; for the liquid $c = 2200\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; the temperature as a function of time in the table; the power given out $P$ is constant
+**Find:** a) the solidification temperature; b) the power $P$; c) the energy released in solidification $Q$ in kilojoules and $s$
+**Principle:** When a liquid cools, the energy given out is $Q = cm\Delta T$, so the power is $P = \dfrac{cm\Delta T}{\Delta t}$. During solidification the temperature stays constant, but the same power $P$ goes to the surroundings: the solidifying substance gives out energy $Q = sm$ and keeps the temperature constant.
+**Reading the table:** In the table the temperature stays at $69.2\ldots 69.4\,{}^\circ\text{C}$ between $4\ldots 30\,\text{min}$, that is, about $69\,{}^\circ\text{C}$. The rows of the liquid stage, $0\,\text{min}$ and $3\,\text{min}$, give a cooling of $80.0\,{}^\circ\text{C} - 70.2\,{}^\circ\text{C} = 9.8\,\text{K}$ in $3\,\text{min}$.
+
+Solidification begins at about $3.2\,\text{min}$: the plateau is reached along the cooling line of the liquid, about $0.8\,\text{K} : 3.27\,\tfrac{\text{K}}{\text{min}} = 0.24\,\text{min}$ after the row $3\,\text{min}$.
+
+Solidification ends at about $30.9\,\text{min}$: the rows of the solid, $32\,\text{min}$ and $34\,\text{min}$, give a cooling rate of $(65.0\,\text{K} - 57.4\,\text{K}) : 2\,\text{min} = 3.8\,\tfrac{\text{K}}{\text{min}}$, so from the plateau temperature $69.2\,{}^\circ\text{C}$ to the temperature $65.0\,{}^\circ\text{C}$ of the row $32\,\text{min}$ takes $4.2\,\text{K} : 3.8\,\tfrac{\text{K}}{\text{min}} = 1.1\,\text{min}$.
+
+The duration of solidification is about $30.9\,\text{min} - 3.2\,\text{min} = 27.7\,\text{min}$.
+**Formula:** b) $P = \dfrac{cm\Delta T}{\Delta t}$; c) $Q = P\,\Delta t_\text{sol}$ and $Q = sm$, from which $s = \dfrac{Q}{m}$
+**Conversions:** The change in temperature is the same in degrees Celsius and in kelvins. $\Delta t = 3\,\text{min} = 180\,\text{s}$ and $\Delta t_\text{sol} = 27.7\,\text{min} = 1662\,\text{s}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
+**Substitution:**
+
+$$\begin{aligned}
+P &= \dfrac{2200\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.100\,\text{kg} \cdot 9.8\,\text{K}}{180\,\text{s}} \\
+&= \dfrac{2156\,\text{J}}{180\,\text{s}} \\
+&= 11.98\,\text{W}
+\end{aligned}$$
+
+$$\begin{aligned}
+Q &= 11.98\,\text{W} \cdot 1662\,\text{s} \\
+&= 19\,910\,\text{J} \approx 20\,\text{kJ}
+\end{aligned}$$
+
+$$\begin{aligned}
+s &= \dfrac{19\,910\,\text{J}}{0.100\,\text{kg}} \\
+&= 199\,100\,\tfrac{\text{J}}{\text{kg}}
+\end{aligned}$$
+
+**Answer:** a) $69\,{}^\circ\text{C}$; b) $12\,\text{W}$; c) $Q = 20\,\text{kJ}$ and $s \approx 200\,\tfrac{\text{kJ}}{\text{kg}}$. The time is read roughly, so $\pm 8\,\%$ is accepted and the result is given to two significant figures.
+**Reasonableness:** Solidification lasts $27.7\,\text{min}$, much longer than the $3\,\text{min}$ in which the liquid cools by $9.8\,\text{K}$. Comparison: if the same energy $19.9\,\text{kJ}$ cooled the liquid, the temperature would fall by $\dfrac{19\,910\,\text{J}}{2200\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.100\,\text{kg}} \approx 90\,\text{K}$, so a lot of energy is released in solidification. On the plateau the temperature does not fall, because solidification releases exactly the energy that the substance gives out to the surroundings: all the energy released goes to cover the losses to the surroundings.
+
+## fy3-7-L3-05
+**Given:** milk $M = 0.300\,\text{kg}$, $T_0 = 20.0\,{}^\circ\text{C}$, final temperature $T = 65.0\,{}^\circ\text{C}$; steam at $100\,{}^\circ\text{C}$; no heat losses; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
+**Find:** a) the mass $m_\text{s}$ of steam that condenses, in grams; b) for comparison: the mass of water at $100\,{}^\circ\text{C}$ needed
+**Principle:** Energy is conserved when there are no losses: the energy absorbed by the milk equals the energy given out by the steam. The steam gives out energy in two stages: as it condenses into water at $100\,{}^\circ\text{C}$ ($Q = rm_\text{s}$) and then as the condensed water cools from $100\,{}^\circ\text{C}$ to the final temperature ($Q = cm_\text{s}\Delta T$).
+**Formula:** $c M (T - T_0) = r m_\text{s} + c\, m_\text{s}(100\,{}^\circ\text{C} - T)$, from which $m_\text{s} = \dfrac{c M (T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}$. In the comparison, water alone at $100\,{}^\circ\text{C}$ gives out energy only as it cools: $c M (T - T_0) = c\, m_\text{w}(100\,{}^\circ\text{C} - T)$, from which $m_\text{w} = \dfrac{M (T - T_0)}{100\,{}^\circ\text{C} - T}$.
+**Conversions:** The temperature differences are the same in degrees Celsius and in kelvins: $T - T_0 = 45.0\,\text{K}$ and $100\,{}^\circ\text{C} - T = 35.0\,\text{K}$. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$ and finally $1\,\text{kg} = 1000\,\text{g}$.
+**Substitution:** The numerator is $4190 \cdot 0.300 \cdot 45.0\,\text{J} = 56\,565\,\text{J}$ and the denominator is $2\,260\,000 + 4190 \cdot 35.0 = 2\,406\,650\,\tfrac{\text{J}}{\text{kg}}$, so
+
+$$\begin{aligned}
+m_\text{s} &= \dfrac{56\,565\,\text{J}}{2\,406\,650\,\tfrac{\text{J}}{\text{kg}}} \\
+&= 0.0235\,\text{kg} = 23.5\,\text{g}
+\end{aligned}$$
+
+$$m_\text{w} = \dfrac{0.300 \cdot 45.0}{35.0}\,\text{kg} = 0.386\,\text{kg}$$
+
+**Answer:** a) $23.5\,\text{g}$, three significant figures like the mass $0.300\,\text{kg}$; b) $0.386\,\text{kg}$, which is about $16$ times the mass of the steam.
+**Model answer:** One kilogram of steam cooling to $65\,{}^\circ\text{C}$ gives out a total of $2\,406\,650\,\text{J}$, but one kilogram of water at the same temperature gives out only $4190 \cdot 35.0\,\text{J} = 146\,650\,\text{J}$. Most of the energy given out by the steam, about $94\,\%$, is released in condensation while the temperature stays constant. Steam that hits the skin condenses on the surface of the skin and gives this large quantity of energy to the skin, so the same mass of steam causes a much worse burn than water that is just as hot.
+**Reasonableness:** The result $23.5\,\text{g}$ is small compared with the mass of the milk, $300\,\text{g}$, because steam gives out a lot of energy as it condenses ($r$ is large). Check: $23.5\,\text{g}$ gives out $2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.0235\,\text{kg} = 53.1\,\text{kJ}$ as it condenses and $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.0235\,\text{kg} \cdot 35.0\,\text{K} = 3.4\,\text{kJ}$ as it cools, $56.6\,\text{kJ}$ in total, and the milk absorbs $56.6\,\text{kJ}$. The energies match.
