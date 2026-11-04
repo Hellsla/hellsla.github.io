@@ -60,7 +60,7 @@
 **Kaava:** $T = \theta + 273{,}15$, ja tämä on jo ratkaistu kysytylle suureelle $T$
 **Muunnokset:** Celsiuslämpötila muutetaan kelvineiksi tässä kaavassa; muita yksikkömuunnoksia ei tarvita.
 **Sijoitus:** $T = -18 + 273{,}15 = 255{,}15\,\text{K}$
-**Vastaus:** $255\,\text{K}$, täysinä kelvineinä, koska lämpötila $-18\,{}^\circ\text{C}$ on annettu täysinä asteina.
+**Vastaus:** $255\,\text{K}$. Vastaus pyöristetään täysiin kelvineihin, koska lämpötila $-18\,{}^\circ\text{C}$ on annettu täysinä asteina.
 **Järkevyys:** Arvio pyöristetyillä luvuilla: $273 - 18 = 255$, joten tulos on sen mukainen. Kelvinlämpötila on positiivinen ja pienempi kuin veden jäätymispistettä vastaava $273{,}15\,\text{K}$, koska pakastin on jäätymispistettä kylmempi. Takaisinlasku: $255{,}15 - 273{,}15 = -18$.
 
 ## fy3-3-L1-08
@@ -125,8 +125,13 @@
 **Periaate:** Lämpötilan lasku tunnissa on edellisen ja seuraavan mittauksen erotus. Lämpötilaero on sama celsiusasteina ja kelvineinä. Vertaamalla ensimmäisen ja viimeisen tunnin laskua nähdään, miten jäähtyminen muuttuu, kun vesi lähestyy huoneen lämpötilaa.
 **Kaava:** $\Delta\theta = \theta_\text{alku} - \theta_\text{loppu}$ ja suhde $\dfrac{\Delta\theta_1}{\Delta\theta_4}$
 **Muunnokset:** Muunnoksia ei tarvita: lämpötilojen erotus on sama celsiusasteina ja kelvineinä, ja suhteessa yksiköt supistuvat.
-**Sijoitus:** ensimmäisen tunnin lasku on $\Delta\theta_1 = 80{,}0 - 69{,}9 = 10{,}1\,\text{K}$ ja viimeisen tunnin lasku $\Delta\theta_4 = 54{,}4 - 48{,}6 = 5{,}8\,\text{K}$. Suhde on $\dfrac{10{,}1\,\text{K}}{5{,}8\,\text{K}} = 1{,}741$
-**Vastaus:** $1{,}7$ kertaa, kaksi merkitsevää numeroa kuten laskuissa $10{,}1\,\text{K}$ ja $5{,}8\,\text{K}$. Selitys: vesi on alussa huonetta $60{,}0\,\text{K}$ lämpimämpi ja lopussa vain $28{,}6\,\text{K}$ lämpimämpi. Kun lämpötilaero huoneeseen pienenee, lasku hidastuu: ensimmäisenä tuntina lasku on $\tfrac{10{,}1}{60{,}0} \approx 0{,}17$ ja viimeisenä $\tfrac{5{,}8}{34{,}4} \approx 0{,}17$ osaa tunnin alun lämpötilaerosta. Vesi hakeutuu kohti huoneen lämpötilaa, mutta ei ylitä sitä.
+**Sijoitus:**
+$$\begin{aligned}
+\Delta\theta_1 &= 80{,}0 - 69{,}9 = 10{,}1\,\text{K} \\
+\Delta\theta_4 &= 54{,}4 - 48{,}6 = 5{,}8\,\text{K} \\
+\frac{\Delta\theta_1}{\Delta\theta_4} &= \frac{10{,}1\,\text{K}}{5{,}8\,\text{K}} = 1{,}741
+\end{aligned}$$
+**Vastaus:** $1{,}7$ kertaa, kaksi merkitsevää numeroa kuten laskuissa $10{,}1\,\text{K}$ ja $5{,}8\,\text{K}$. Selitys: vesi on alussa huonetta $60{,}0\,\text{K}$ lämpimämpi ja lopussa vain $28{,}6\,\text{K}$ lämpimämpi. Kun lämpötilaero huoneeseen pienenee, lasku hidastuu: ensimmäisenä tuntina lasku on $10{,}1 : 60{,}0 \approx 0{,}17$ ja viimeisenä $5{,}8 : 34{,}4 \approx 0{,}17$ osaa tunnin alun lämpötilaerosta. Vesi hakeutuu kohti huoneen lämpötilaa, mutta ei ylitä sitä.
 **Järkevyys:** Jäähtyvän veden lasku hidastuu, joten suhteen on oltava yli $1$, ja $1{,}7 > 1$. Tarkistus: tuntilaskut ovat $10{,}1$, $8{,}6$, $6{,}9$ ja $5{,}8\,\text{K}$, eli pienenevä jono. Veden lämpötila $48{,}6\,{}^\circ\text{C}$ on yhä yli huoneen lämpötilan $20{,}0\,{}^\circ\text{C}$.
 
 ## fy3-3-L2-07
@@ -135,7 +140,13 @@
 **Periaate:** Nestelämpömittari näyttää oman lämpötilansa, ei veden lämpötilaa. Siirron jälkeen mittarin lämpötila lähestyy veden lämpötilaa vähitellen, ja lukema vakiintuu vasta, kun mittari on samassa lämpötilassa vesihauteen kanssa. Aikaisin luettu lukema on liian pieni.
 **Kaava:** $\Delta\theta(t) = \theta_\text{vak} - \theta(t)$, ja etsitään aikaisin $t$, jolla $\Delta\theta(t) < 0{,}5\,\text{K}$
 **Muunnokset:** Muunnoksia ei tarvita: aika on jo sekunteina, ja lämpötilaero on sama celsiusasteina ja kelvineinä.
-**Sijoitus:** $\Delta\theta(10\,\text{s}) = 60{,}2 - 48{,}2 = 12{,}0\,\text{K}$, $\Delta\theta(20\,\text{s}) = 3{,}6\,\text{K}$, $\Delta\theta(30\,\text{s}) = 0{,}9\,\text{K}$ ja $\Delta\theta(40\,\text{s}) = 60{,}2 - 59{,}9 = 0{,}3\,\text{K}$
+**Sijoitus:**
+$$\begin{aligned}
+\Delta\theta(10\,\text{s}) &= 60{,}2 - 48{,}2 = 12{,}0\,\text{K} \\
+\Delta\theta(20\,\text{s}) &= 60{,}2 - 56{,}6 = 3{,}6\,\text{K} \\
+\Delta\theta(30\,\text{s}) &= 60{,}2 - 59{,}3 = 0{,}9\,\text{K} \\
+\Delta\theta(40\,\text{s}) &= 60{,}2 - 59{,}9 = 0{,}3\,\text{K}
+\end{aligned}$$
 **Vastaus:** $40\,\text{s}$, taulukon $10\,\text{s}$ aikavälin tarkkuudella. Lukemaa $30\,\text{s}$:n kohdalla ei voi käyttää, koska ero on silloin $0{,}9\,\text{K}$. Aikaisemmin luettu lukema on liian pieni, koska mittari ei ole vielä lämmennyt veden lämpötilaan ja mittaa omaa lämpötilaansa.
 **Järkevyys:** Ero pienenee koko ajan: $12{,}0$, $3{,}6$, $0{,}9$ ja $0{,}3\,\text{K}$, ja se pienenee jokaisella $10\,\text{s}$ jaksolla noin neljäsosaan tai kolmasosaan edellisestä. Lukemat $50\,\text{s}$ ja $60\,\text{s}$ ovat yhtä suuret, joten vakiintunut lukema $60{,}2\,{}^\circ\text{C}$ on perusteltu.
 
@@ -170,21 +181,56 @@
 **Järkevyys:** Kaasun pitää jäähtyä, joten tulos on alle $20\,{}^\circ\text{C}$, ja se on yli absoluuttisen nollapisteen $-273{,}15\,{}^\circ\text{C}$. Tarkistus: $\tfrac{146{,}575\,\text{K}}{293{,}15\,\text{K}} = 0{,}5$. Celsiusasteiden puolitus antaisi $10\,{}^\circ\text{C}$, mutta siinä kelvinlämpötila olisi vain $283\,\text{K}$ eli $97\,\%$ alkuarvosta, ei puolet.
 
 ## fy3-3-L3-04
-**Annettu:** viiden mittauksen lukemat (esimerkkiaineisto): korvamittari $36{,}9$, $37{,}1$, $36{,}8$, $37{,}0$, $37{,}2$; otsamittari $36{,}2$, $36{,}7$, $36{,}0$, $36{,}5$, $36{,}6$; suumittari (viite) $37{,}0$, $37{,}0$, $37{,}1$, $36{,}9$, $37{,}0$, kaikki $^\circ\text{C}$:ssa; kuumeen raja $37{,}5\,{}^\circ\text{C}$ ja suumittarilla mitattu $37{,}6\,{}^\circ\text{C}$
+**Annettu:** viiden mittauksen lukemat (esimerkkiaineisto): korvamittari $36{,}9$, $37{,}1$, $36{,}8$, $37{,}0$, $37{,}2$; otsamittari $36{,}2$, $36{,}7$, $36{,}0$, $36{,}5$, $36{,}6$; suumittari (viite) $37{,}0$, $37{,}0$, $37{,}1$, $36{,}9$, $37{,}0$, kaikki celsiusasteina; kuumeen raja $37{,}5\,{}^\circ\text{C}$ ja suumittarilla mitattu $37{,}6\,{}^\circ\text{C}$
 **Kysytty:** otsamittarin keskiarvon ero viitemenetelmään, $\Delta\theta = \theta_\text{suu,ka} - \theta_\text{otsa,ka}$, kelvineinä (kohta b)
 **Periaate:** Toistetuista mittauksista lasketaan keskiarvo. Ero viitemenetelmään kertoo menetelmän virheen suunnan ja suuruuden, ja lukemien hajonta kertoo satunnaisen vaihtelun suuruusluokan. Jos ero on suurempi kuin hajonta ja kaikki lukemat poikkeavat samaan suuntaan, virhe on systemaattinen. Hajonnan yksinkertainen arvio on vaihteluvälin puolikas.
-**Kaava:** $\theta_\text{ka} = \dfrac{\sum \theta_i}{n}$, hajonta $s = \dfrac{\theta_\text{max} - \theta_\text{min}}{2}$ ja $\Delta\theta = \theta_\text{suu,ka} - \theta_\text{otsa,ka}$
+**Kaava:** $\theta_\text{ka} = \dfrac{\sum \theta_i}{n}$, hajonnan arvio $s = \dfrac{\theta_\text{max} - \theta_\text{min}}{2}$ ja $\Delta\theta = \theta_\text{suu,ka} - \theta_\text{otsa,ka}$
 **Muunnokset:** Muunnoksia ei tarvita, koska lämpötilaero on sama celsiusasteina ja kelvineinä.
-**Sijoitus:** summat ovat korvalle $185{,}0$, otsalle $182{,}0$ ja suulle $185{,}0\,{}^\circ\text{C}$, joten keskiarvot ovat $37{,}0$, $36{,}4$ ja $37{,}0\,{}^\circ\text{C}$ ($n = 5$). Siis $\Delta\theta = 37{,}0 - 36{,}4 = 0{,}6\,\text{K}$. Hajonta: korva $\tfrac{37{,}2 - 36{,}8}{2} = 0{,}2\,\text{K}$, otsa $\tfrac{36{,}7 - 36{,}0}{2} = 0{,}35\,\text{K}$ ja suu $\tfrac{37{,}1 - 36{,}9}{2} = 0{,}1\,\text{K}$. Otsamittarin korjattu keskiarvo, kun suu näyttää $37{,}6\,{}^\circ\text{C}$: $37{,}6 - 0{,}6 = 37{,}0\,{}^\circ\text{C}$.
+**Sijoitus:**
+$$\begin{aligned}
+\sum\theta_\text{korva} &= 36{,}9 + 37{,}1 + 36{,}8 \\
+&\quad + 37{,}0 + 37{,}2 \\
+&= 185{,}0\,{}^\circ\text{C} \\
+\theta_\text{korva,ka} &= 185{,}0 : 5 = 37{,}0\,{}^\circ\text{C} \\
+\sum\theta_\text{otsa} &= 36{,}2 + 36{,}7 + 36{,}0 \\
+&\quad + 36{,}5 + 36{,}6 \\
+&= 182{,}0\,{}^\circ\text{C} \\
+\theta_\text{otsa,ka} &= 182{,}0 : 5 = 36{,}4\,{}^\circ\text{C} \\
+\sum\theta_\text{suu} &= 37{,}0 + 37{,}0 + 37{,}1 \\
+&\quad + 36{,}9 + 37{,}0 \\
+&= 185{,}0\,{}^\circ\text{C} \\
+\theta_\text{suu,ka} &= 185{,}0 : 5 = 37{,}0\,{}^\circ\text{C}
+\end{aligned}$$
+$$\begin{aligned}
+\Delta\theta &= 37{,}0 - 36{,}4 = 0{,}6\,\text{K} \\
+s_\text{korva} &= (37{,}2 - 36{,}8) : 2 = 0{,}2\,\text{K} \\
+s_\text{otsa} &= (36{,}7 - 36{,}0) : 2 = 0{,}35\,\text{K} \\
+s_\text{suu} &= (37{,}1 - 36{,}9) : 2 = 0{,}1\,\text{K} \\
+\theta_\text{otsa,korj} &= 37{,}6 - 0{,}6 = 37{,}0\,{}^\circ\text{C}
+\end{aligned}$$
 **Vastaus:** $0{,}6\,\text{K}$, yksi merkitsevä numero, koska lukemat on annettu $0{,}1\,\text{K}$:n tarkkuudella. Ero on systemaattinen, koska jokainen otsalukema ($36{,}0\ldots 36{,}7\,{}^\circ\text{C}$) on pienempi kuin jokainen suulukema ($36{,}9\ldots 37{,}1\,{}^\circ\text{C}$), ja ero $0{,}6\,\text{K}$ on suurempi kuin otsamittarin hajonta $0{,}35\,\text{K}$. Kun suu näyttää $37{,}6\,{}^\circ\text{C}$, otsamittari näyttäisi keskimäärin $37{,}0\,{}^\circ\text{C}$ eli alle kuumerajan, joten kuume jäisi havaitsematta, vaikka henkilöllä on kuume.
-**Järkevyys:** Korvamittarin keskiarvo on sama kuin viitteen, ja sen hajonta $0{,}2\,\text{K}$ on pieni, joten korvamittari on tässä aineistossa luotettavin. Otsamittarin keskiarvo $36{,}4\,{}^\circ\text{C}$ on viitettä pienempi, ja kaikki viisi otsalukemaa ovat viitteen pienintä lukemaa $36{,}9\,{}^\circ\text{C}$ pienempiä. Toistaminen pienentää satunnaista hajontaa mutta ei poista systemaattista virhettä, joten viidenkin mittauksen keskiarvo on kuumetta arvioitaessa liian pieni.
+**Järkevyys:** Korvamittarin keskiarvo on sama kuin viitteen, ja sen hajonta $0{,}2\,\text{K}$ on pieni, joten korvamittari on tässä aineistossa luotettavin. Otsamittarin keskiarvo $36{,}4\,{}^\circ\text{C}$ on viitettä pienempi, ja kaikki viisi otsalukemaa ovat viitteen pienintä lukemaa $36{,}9\,{}^\circ\text{C}$ pienempiä. Toistaminen pienentää keskiarvon satunnaista virhettä mutta ei poista systemaattista virhettä, joten viidenkin mittauksen keskiarvo on kuumetta arvioitaessa liian pieni.
 
 ## fy3-3-L3-05
 **Annettu:** ylipaine $p_\text{y1} = 600\,\text{kPa}$ lämpötilassa $\theta_1 = 20{,}0\,{}^\circ\text{C}$, ilmanpaine $p_0 = 101\,\text{kPa}$, venttiilin avautumisraja ylipaineessa $p_\text{y,max} = 900\,\text{kPa}$, $\theta_2 = 60{,}0\,{}^\circ\text{C}$ (esimerkkiaineisto)
 **Kysytty:** lämpötila $\theta_3$ celsiusasteina, jossa varoventtiili avautuu (kohta b); lisäksi kokonaispaine ja ylipaine lämpötilassa $\theta_2$ ja liike-energian kasvu
 **Periaate:** Säiliö on tiivis ja jäykkä, joten ilman määrä ja tilavuus ovat vakiot. Silloin kokonaispaine on suoraan verrannollinen kelvinlämpötilaan. Verrannollisuus koskee kokonaispainetta, ei ylipainetta, joten ylipaineet muutetaan ensin kokonaispaineiksi lisäämällä ilmanpaine. Harvassa kaasussa hiukkasten keskimääräinen liike-energia on myös suoraan verrannollinen kelvinlämpötilaan.
-**Kaava:** $p = p_\text{y} + p_0$ ja $\dfrac{p_2}{p_1} = \dfrac{T_2}{T_1}$, josta $p_2 = p_1\,\dfrac{T_2}{T_1}$ ja $T_3 = T_1\,\dfrac{p_3}{p_1}$, ja $\theta_3 = T_3 - 273{,}15$; liike-energian suhteellinen kasvu on $\dfrac{T_2 - T_1}{T_1}$
+**Kaava:** $p = p_\text{y} + p_0$
+$$p_2 = p_1\,\frac{T_2}{T_1}$$
+$$\frac{\Delta E_\text{k}}{E_\text{k,1}} = \frac{T_2 - T_1}{T_1}$$
+$$T_3 = T_1\,\frac{p_3}{p_1}$$
+$$\theta_3 = T_3 - 273{,}15$$
 **Muunnokset:** $T_1 = 20{,}0 + 273{,}15 = 293{,}15\,\text{K}$ ja $T_2 = 60{,}0 + 273{,}15 = 333{,}15\,\text{K}$. Kokonaispaineet: $p_1 = 600 + 101 = 701\,\text{kPa}$ ja $p_3 = 900 + 101 = 1001\,\text{kPa}$.
-**Sijoitus:** $p_2 = 701\,\text{kPa} \cdot \dfrac{333{,}15\,\text{K}}{293{,}15\,\text{K}} = 796{,}7\,\text{kPa}$, joten ylipaine on $796{,}7 - 101 = 695{,}7\,\text{kPa}$. Venttiili: $T_3 = 293{,}15\,\text{K} \cdot \dfrac{1001\,\text{kPa}}{701\,\text{kPa}} = 418{,}6\,\text{K}$ ja $\theta_3 = 418{,}6 - 273{,}15 = 145{,}5\,{}^\circ\text{C}$. Liike-energia kasvaa $\dfrac{333{,}15 - 293{,}15}{293{,}15} = 0{,}136$ eli $13{,}6\,\%$.
-**Vastaus:** $145\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten ilmanpaineessa $101\,\text{kPa}$. Muut tulokset: kokonaispaine $797\,\text{kPa}$ ja ylipaine $696\,\text{kPa}$ lämpötilassa $60{,}0\,{}^\circ\text{C}$ (venttiili ei avaudu), ja liike-energia kasvaa $13{,}6\,\%$. Kokonaispaine kasvaa $\tfrac{796{,}7}{701} = 1{,}136$-kertaiseksi eli $13{,}6\,\%$, saman verran kuin liike-energia, mutta ylipaine kasvaa $\tfrac{695{,}7}{600} = 1{,}16$-kertaiseksi eli $16\,\%$. Kokonaispaine on verrannollinen kelvinlämpötilaan, koska se syntyy hiukkasten törmäyksistä; ylipaine on kokonaispaineen ja ilmanpaineen erotus.
-**Järkevyys:** Venttiilin avautumisessa kokonaispaine kasvaa suhteessa $\tfrac{1001}{701} = 1{,}43$, joten kelvinlämpötilan on kasvettava samoin: $293 \cdot 1{,}43 \approx 419\,\text{K}$, mikä on noin $146\,{}^\circ\text{C}$ pyöristetyllä suhteella. Auton sisällä oleva $60\,{}^\circ\text{C}$ on selvästi alle $145\,{}^\circ\text{C}$, joten venttiili ei avaudu. Jos ylipainetta pidettäisiin verrannollisena, saataisiin väärin $293{,}15 \cdot 1{,}5 - 273{,}15 \approx 167\,{}^\circ\text{C}$.
+**Sijoitus:**
+$$\begin{aligned}
+p_2 &= 701\,\text{kPa} \cdot \frac{333{,}15\,\text{K}}{293{,}15\,\text{K}} \\
+&= 796{,}7\,\text{kPa} \\
+p_{\text{y},2} &= 796{,}7 - 101 = 695{,}7\,\text{kPa} \\
+T_3 &= 293{,}15\,\text{K} \cdot \frac{1001\,\text{kPa}}{701\,\text{kPa}} \\
+&= 418{,}61\,\text{K} \\
+\theta_3 &= 418{,}61 - 273{,}15 = 145{,}46\,{}^\circ\text{C} \\
+\frac{\Delta E_\text{k}}{E_\text{k,1}} &= \frac{333{,}15 - 293{,}15}{293{,}15} = 0{,}136
+\end{aligned}$$
+Liike-energia kasvaa siis $13{,}6\,\%$.
+**Vastaus:** $145\,{}^\circ\text{C}$ (tarkasti $145{,}46\,{}^\circ\text{C}$), kolme merkitsevää numeroa kuten ilmanpaineessa $101\,\text{kPa}$. Muut tulokset: kokonaispaine $797\,\text{kPa}$ ja ylipaine $696\,\text{kPa}$ lämpötilassa $60{,}0\,{}^\circ\text{C}$ (venttiili ei avaudu), ja liike-energia kasvaa $13{,}6\,\%$. Kokonaispaine kasvaa $796{,}7 : 701 = 1{,}136$-kertaiseksi eli $13{,}6\,\%$, saman verran kuin liike-energia, mutta ylipaine kasvaa $695{,}7 : 600 = 1{,}16$-kertaiseksi eli $16\,\%$. Kokonaispaine on verrannollinen kelvinlämpötilaan, koska se syntyy hiukkasten törmäyksistä; ylipaine on kokonaispaineen ja ilmanpaineen erotus.
+**Järkevyys:** Venttiilin avautumisessa kokonaispaine kasvaa suhteessa $1001 : 701 = 1{,}43$, joten kelvinlämpötilan on kasvettava samoin: $293 \cdot 1{,}43 \approx 419\,\text{K}$, mikä vastaa tuloksen $418{,}61\,\text{K} - 273{,}15 = 145{,}46\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$ suuruusluokkaa. Auton sisällä oleva $60\,{}^\circ\text{C}$ on selvästi alle $145\,{}^\circ\text{C}$, joten venttiili ei avaudu. Jos ylipainetta pidettäisiin verrannollisena, saataisiin väärin $293{,}15 \cdot 1{,}5 - 273{,}15 \approx 167\,{}^\circ\text{C}$.

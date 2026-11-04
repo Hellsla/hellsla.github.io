@@ -84,7 +84,7 @@
 **Kysytty:** kokonaistyö $W$ jouleina
 **Periaate:** Voima muuttuu, joten kaava $W = F s$ ei käy koko matkalle. Työ on $(s,F)$-kuvaajan pinta-ala, ja sen voi laskea osissa: vakiovoiman osuus on suorakulmio ja tasaisesti kasvavan osuus puolisuunnikas.
 **Kuvaajan lukeminen:** Kuvaajassa on vaakasuora jana korkeudella $10\,\text{N}$ välillä $0\ldots 2{,}0\,\text{m}$ ja sen jatkona suora jana korkeudesta $10\,\text{N}$ korkeuteen $30\,\text{N}$ välillä $2{,}0\ldots 6{,}0\,\text{m}$. Suorakulmion korkeus on $10\,\text{N}$ ja leveys $2{,}0\,\text{m}$. Puolisuunnikkaan yhdensuuntaiset sivut ovat $10\,\text{N}$ ja $30\,\text{N}$ ja korkeus (leveys $s$-akselilla) $4{,}0\,\text{m}$.
-**Kaava:** $W = A_\text{suorakulmio} + A_\text{puolisuunnikas}$, joten $W = F_1 s_1 + \tfrac{1}{2}(F_1 + F_2)\, s_2$
+**Kaava:** $W = A_\text{suorakulmio} + A_\text{puolisuunnikas}$, joten $W = F_1 s_1 + 0{,}5 \cdot (F_1 + F_2)\, s_2$
 **Muunnokset:** Voimat ovat newtoneina ja matkat metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $W = 10\,\text{N} \cdot 2{,}0\,\text{m} + \tfrac{1}{2} \cdot (10\,\text{N} + 30\,\text{N}) \cdot 4{,}0\,\text{m} = 20\,\text{J} + 80\,\text{J} = 100\,\text{J}$
 **Vastaus:** $100\,\text{J}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa (esimerkiksi $2{,}0\,\text{m}$).
@@ -99,7 +99,7 @@
 **Muunnokset:** Voimat ovat newtoneina ja matkat metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $W = \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0{,}50\,\text{m} + 40\,\text{N} \cdot 1{,}0\,\text{m} + \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0{,}50\,\text{m} = 10\,\text{J} + 40\,\text{J} + 10\,\text{J} = 60\,\text{J}$; $F_\text{ka} = \dfrac{60\,\text{J}}{2{,}0\,\text{m}} = 30\,\text{N}$
 **Vastaus:** $30\,\text{N}$, kaksi merkitsevää numeroa kuten matkassa $2{,}0\,\text{m}$.
-**Järkevyys:** Keskiarvo on huippuarvoa $40\,\text{N}$ pienempi, koska voima on alussa ja lopussa pieni, mutta suurempi kuin puolet huipusta, koska voima on huipussa puolet matkasta. Puolisuunnikaskaava antaa saman työn: $\tfrac{1}{2}(2{,}0\,\text{m} + 1{,}0\,\text{m}) \cdot 40\,\text{N} = 60\,\text{J}$. Tasaisesti nollasta kasvavan voiman keskiarvo olisi $20\,\text{N}$.
+**Järkevyys:** Keskiarvo on huippuarvoa $40\,\text{N}$ pienempi, koska voima on alussa ja lopussa pieni, mutta suurempi kuin puolet huipusta, koska voima on huipussa puolet matkasta. Puolisuunnikaskaava antaa saman työn: $0{,}5 \cdot (2{,}0\,\text{m} + 1{,}0\,\text{m}) \cdot 40\,\text{N} = 60\,\text{J}$. Tasaisesti nollasta kasvavan voiman keskiarvo olisi $20\,\text{N}$.
 
 ## fy3-2-L3-02
 **Annettu:** massa $m = 2{,}0\,\text{kg}$, putoamiskorkeus $h = 1{,}5\,\text{m}$, pudotuksia $n = 20$, $g = 9{,}81\,\text{m/s}^2$
@@ -139,18 +139,20 @@
 ## fy3-2-L1-08
 **Kysytty:** kumpi nosturi on tehokkaampi ja miksi
 **Periaate:** Kuorma ja nostokorkeus ovat samat, joten nostotyö $W = m g h$ on kummallakin nosturilla sama. Teho on työ aikayksikköä kohti, $P = \dfrac{W}{t}$, joten sama työ lyhyemmässä ajassa tarkoittaa suurempaa tehoa.
-**Mallivastaus:** Nosturin A teho on suurempi, koska työ on sama mutta se tehdään lyhyemmässä ajassa. Nostotyö ei ole suurempi kummallakaan, koska se riippuu vain kuormasta ja korkeudesta eikä nostoon kuluvasta ajasta. Teho ei myöskään ole sama, koska teho kertoo työn tekemisen nopeuden: nosturin A nosto kestää vain puolet nosturin B ajasta, joten sen teho on kaksinkertainen.
+**Mallivastaus:** Nosturin A teho on suurempi, koska työ on sama mutta se tehdään lyhyemmässä ajassa. Nostotyö ei ole suurempi kummallakaan, koska se riippuu vain kuormasta ja korkeudesta eikä nostoon kuluvasta ajasta. Teho ei myöskään ole sama, koska teho kertoo työn tekemisen nopeuden: nosturin A nosto kestää vain puolet nosturin B ajasta, joten sen teho on kaksinkertainen. Tehtävän luvut $500\,\text{kg}$ ja korkeus eivät vaikuta vertailuun, koska nostotyö on molemmilla sama.
 
 ## fy3-2-L2-05
 **Annettu:** taulukosta voima $F$ kohdissa $s = 0{,}0\,\text{m}$, $1{,}0\,\text{m}$, $2{,}0\,\text{m}$, $3{,}0\,\text{m}$ ja $4{,}0\,\text{m}$: $18{,}0\,\text{N}$, $17{,}2\,\text{N}$, $15{,}1\,\text{N}$, $11{,}0\,\text{N}$ ja $6{,}0\,\text{N}$; voima on liikkeen suuntainen
 **Kysytty:** voiman tekemä työ $W$ jouleina matkalla $0\ldots 4{,}0\,\text{m}$
 **Periaate:** Voima muuttuu matkalla, joten työ on $(s,F)$-kuvaajan pinta-ala. Kullakin yhden metrin osalla pinta-ala saadaan puolisuunnikkaana, jonka korkeus on voiman keskiarvo osan päissä, ja osat lasketaan yhteen.
-**Kuvaajan lukeminen:** Taulukon pisteet yhdistetään suorilla janoilla. Osan $0\ldots 1{,}0\,\text{m}$ päissä voima on $18{,}0\,\text{N}$ ja $17{,}2\,\text{N}$, osan $1{,}0\ldots 2{,}0\,\text{m}$ päissä $17{,}2\,\text{N}$ ja $15{,}1\,\text{N}$, osan $2{,}0\ldots 3{,}0\,\text{m}$ päissä $15{,}1\,\text{N}$ ja $11{,}0\,\text{N}$ ja osan $3{,}0\ldots 4{,}0\,\text{m}$ päissä $11{,}0\,\text{N}$ ja $6{,}0\,\text{N}$. Jokaisen osan leveys on $\Delta s = 1{,}0\,\text{m}$.
-**Kaava:** $W = \sum \tfrac{1}{2}(F_\text{alku} + F_\text{loppu})\,\Delta s$, joten $W = W_1 + W_2 + W_3 + W_4$
+**Kuvaajan lukeminen:** Taulukon pisteet ajatellaan yhdistetyiksi suorilla janoilla $(s,F)$-koordinaatistossa. Osan $0\ldots 1{,}0\,\text{m}$ päissä voima on $18{,}0\,\text{N}$ ja $17{,}2\,\text{N}$, osan $1{,}0\ldots 2{,}0\,\text{m}$ päissä $17{,}2\,\text{N}$ ja $15{,}1\,\text{N}$, osan $2{,}0\ldots 3{,}0\,\text{m}$ päissä $15{,}1\,\text{N}$ ja $11{,}0\,\text{N}$ ja osan $3{,}0\ldots 4{,}0\,\text{m}$ päissä $11{,}0\,\text{N}$ ja $6{,}0\,\text{N}$. Jokaisen osan leveys on $\Delta s = 1{,}0\,\text{m}$.
+**Kaava:** $W = \sum 0{,}5 \cdot (F_\text{alku} + F_\text{loppu})\,\Delta s$, joten $W = W_1 + W_2 + W_3 + W_4$
 **Muunnokset:** Voimat ovat newtoneina ja matkat metreinä, joten muunnoksia ei tarvita.
-**Sijoitus:** $W = \tfrac{1}{2}(18{,}0 + 17{,}2)\,\text{N} \cdot 1{,}0\,\text{m} + \tfrac{1}{2}(17{,}2 + 15{,}1)\,\text{N} \cdot 1{,}0\,\text{m} + \tfrac{1}{2}(15{,}1 + 11{,}0)\,\text{N} \cdot 1{,}0\,\text{m} + \tfrac{1}{2}(11{,}0 + 6{,}0)\,\text{N} \cdot 1{,}0\,\text{m} = 17{,}6\,\text{J} + 16{,}15\,\text{J} + 13{,}05\,\text{J} + 8{,}5\,\text{J} = 55{,}3\,\text{J}$
-**Vastaus:** $55\,\text{J}$, kaksi merkitsevää numeroa, koska voiman arvot on mitattu kolmen merkitsevän numeron tarkkuudella mutta viimeinen numero on epävarma ja osien yhdistäminen suorilla on arvio.
-**Järkevyys:** Keskimääräinen voima koko $4{,}0\,\text{m}$:n matkalla on $\dfrac{55{,}3\,\text{J}}{4{,}0\,\text{m}} \approx 14\,\text{N}$, mikä on voiman pienimmän ($6{,}0\,\text{N}$) ja suurimman ($18{,}0\,\text{N}$) arvon välissä. Karkea arvio: $18\,\text{N} \cdot 4{,}0\,\text{m} = 72\,\text{J}$ on yläraja ja $6\,\text{N} \cdot 4{,}0\,\text{m} = 24\,\text{J}$ alaraja, ja tulos on niiden välissä.
+**Sijoitus:**
+
+$$\begin{aligned} W_1 &= 0{,}5 \cdot (18{,}0 + 17{,}2)\,\text{N} \cdot 1{,}0\,\text{m} = 17{,}6\,\text{J} \\ W_2 &= 0{,}5 \cdot (17{,}2 + 15{,}1)\,\text{N} \cdot 1{,}0\,\text{m} = 16{,}15\,\text{J} \\ W_3 &= 0{,}5 \cdot (15{,}1 + 11{,}0)\,\text{N} \cdot 1{,}0\,\text{m} = 13{,}05\,\text{J} \\ W_4 &= 0{,}5 \cdot (11{,}0 + 6{,}0)\,\text{N} \cdot 1{,}0\,\text{m} = 8{,}5\,\text{J} \\ W &= 17{,}6\,\text{J} + 16{,}15\,\text{J} + 13{,}05\,\text{J} + 8{,}5\,\text{J} = 55{,}3\,\text{J} \end{aligned}$$
+**Vastaus:** $55\,\text{J}$, kaksi merkitsevää numeroa, koska osan leveys $\Delta s = 1{,}0\,\text{m}$ ja loppuvoima $6{,}0\,\text{N}$ on annettu kahdella merkitsevällä numerolla.
+**Järkevyys:** Keskimääräinen voima koko $4{,}0\,\text{m}$:n matkalla on $55{,}3\,\text{J} / 4{,}0\,\text{m} \approx 14\,\text{N}$, mikä on voiman pienimmän ($6{,}0\,\text{N}$) ja suurimman ($18{,}0\,\text{N}$) arvon välissä. Karkea arvio: $18\,\text{N} \cdot 4{,}0\,\text{m} = 72\,\text{J}$ on yläraja ja $6\,\text{N} \cdot 4{,}0\,\text{m} = 24\,\text{J}$ alaraja, ja tulos on niiden välissä.
 
 ## fy3-2-L2-06
 **Annettu:** massa $m = 62\,\text{kg}$, askelmia 18 kappaletta, askelman korkeus $0{,}17\,\text{m}$, nousuajat $8{,}1\,\text{s}$, $7{,}8\,\text{s}$ ja $8{,}4\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$
@@ -158,38 +160,47 @@
 **Periaate:** Tasaisella vauhdilla nostovoima on yhtä suuri kuin oppilaan paino, ja työ lasketaan vain painon nostamisesta portaiden korkeudelle: $W = m g h$. Teho on tämä työ jaettuna nousuajalla. Toistetuista ajoista käytetään keskiarvoa, koska yksittäisen ajanoton satunnaisvirhe pienenee keskiarvossa.
 **Kaava:** $h = n\, h_1$, $W = m g h$ ja $P = \dfrac{W}{t_\text{ka}}$, joten $P = \dfrac{m g\, n\, h_1}{t_\text{ka}}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** Aikojen summa on $8{,}1\,\text{s} + 7{,}8\,\text{s} + 8{,}4\,\text{s} = 24{,}3\,\text{s}$, joten $t_\text{ka} = \dfrac{24{,}3\,\text{s}}{3} = 8{,}1\,\text{s}$. Korkeus on $h = 18 \cdot 0{,}17\,\text{m} = 3{,}06\,\text{m}$ ja työ $W = 62\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 3{,}06\,\text{m} = 1861{,}2\,\text{J}$, joten $P = \dfrac{1861{,}2\,\text{J}}{8{,}1\,\text{s}} = 229{,}8\,\text{W}$
+**Sijoitus:**
+
+$$\begin{aligned} \textstyle\sum t &= 8{,}1\,\text{s} + 7{,}8\,\text{s} + 8{,}4\,\text{s} = 24{,}3\,\text{s} \\ t_\text{ka} &= \dfrac{24{,}3\,\text{s}}{3} = 8{,}1\,\text{s} \\ h &= 18 \cdot 0{,}17\,\text{m} = 3{,}06\,\text{m} \\ W &= 62\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2} \cdot 3{,}06\,\text{m} = 1861{,}2\,\text{J} \\ P &= \dfrac{1861{,}2\,\text{J}}{8{,}1\,\text{s}} = 229{,}8\,\text{W} \end{aligned}$$
 **Vastaus:** $230\,\text{W}$, kaksi merkitsevää numeroa kuten massassa $62\,\text{kg}$ ja ajassa $8{,}1\,\text{s}$.
 **Järkevyys:** Karkea arvio: paino on noin $600\,\text{N}$ ja korkeus noin $3\,\text{m}$, joten työ on noin $1800\,\text{J}$ ja teho $\tfrac{1800\,\text{J}}{8\,\text{s}} \approx 225\,\text{W}$. Kolmen aikamittauksen vaihteluväli $7{,}8\ldots 8{,}4\,\text{s}$ vastaa tehoa $222\ldots 239\,\text{W}$, joten tulos $230\,\text{W}$ on tämän välin sisällä. Portaita nopeasti nousevan ihmisen teho on satoja watteja.
 
 ## fy3-2-L2-07
 **Annettu:** massa $m = 40\,\text{kg}$, nostokorkeus $h = 1{,}5\,\text{m}$, nosto hidas, $g = 9{,}81\,\text{m/s}^2$; oppilaan tulos $60\,\text{J}$
+**Mallivastaus:** Virhe: oppilas käytti kaavassa $W = F s$ voimana massan lukuarvoa $40$, vaikka massa ei ole voima. Nostovoima on painon suuruinen, $F = m g$, ja se on laskettava newtoneina. Oikea työ on $W = m g h \approx 590\,\text{J}$.
 **Kysytty:** oppilaan virhe ja nostovoiman tekemä oikea työ $W$ jouleina
 **Periaate:** Oppilas sijoitti kaavaan $W = F s$ voiman paikalle massan luvun $40$. Massa ei ole voima: hitaassa nostossa nostovoima on yhtä suuri kuin paino $G = m g$, ja se on tuotava laskuun newtoneina. Työ on tämän voiman ja nostokorkeuden tulo.
 **Kaava:** $F = G = m g$ ja $W = F h$, joten $W = m g h$
 **Muunnokset:** Massa on kilogrammoina ja korkeus metreinä, joten muunnoksia ei tarvita. Painon yksikkö on newton: $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$.
-**Sijoitus:** $G = 40\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 392{,}4\,\text{N}$; $W = 392{,}4\,\text{N} \cdot 1{,}5\,\text{m} = 588{,}6\,\text{J}$
+**Sijoitus:**
+
+$$\begin{aligned} G &= 40\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2} = 392{,}4\,\text{N} \\ W &= 392{,}4\,\text{N} \cdot 1{,}5\,\text{m} = 588{,}6\,\text{J} \end{aligned}$$
 **Vastaus:** $590\,\text{J}$, kaksi merkitsevää numeroa kuten massassa $40\,\text{kg}$ ja korkeudessa $1{,}5\,\text{m}$.
 **Järkevyys:** Oppilaan tulos on lähes kymmenesosa oikeasta, mikä vastaa tekijää $g \approx 9{,}81\,\text{m/s}^2$, joka jäi pois. Karkea arvio: paino on noin $400\,\text{N}$, joten $400\,\text{N} \cdot 1{,}5\,\text{m} = 600\,\text{J}$. Yksiköt: oppilaan luku $40$ oli massa kilogrammoina eikä newtoneina, joten tulo ei voinut olla jouleja.
 
 ## fy3-2-L3-04
 **Annettu:** taulukosta $(s, F)$: $(2{,}0\,\text{cm};\ 1{,}9\,\text{N})$, $(4{,}0\,\text{cm};\ 4{,}2\,\text{N})$, $(6{,}0\,\text{cm};\ 5{,}8\,\text{N})$, $(8{,}0\,\text{cm};\ 8{,}1\,\text{N})$, $(10{,}0\,\text{cm};\ 10{,}0\,\text{N})$; venymä $s_\text{max} = 10{,}0\,\text{cm}$; nostettava massa $m = 0{,}20\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** a) voiman ja venymän riippuvuus, b) venyttämiseen tehty työ $W$, c) nostokorkeus $h$ senttimetreinä
-**Periaate:** Voima muuttuu venymän mukana, joten työ on $(s,F)$-kuvaajan pinta-ala. Jos voima on verrannollinen venymään, kuvaaja on origon kautta kulkeva suora ja pinta-ala on kolmio. Energia säilyy: jousen venyttämiseen tehty työ voidaan käyttää kappaleen hitaaseen nostamiseen, jolloin nostotyö on $m g h$ ja se on yhtä suuri kuin $W$.
-**Kuvaajan lukeminen:** Voima kasvaa venymän mukana siten, että osamäärä $\tfrac{F}{s}$ on kaikissa pisteissä noin $1{,}0\,\text{N/cm}$: esimerkiksi $\tfrac{1{,}9}{2{,}0} = 0{,}95$ ja $\tfrac{10{,}0}{10{,}0} = 1{,}0$. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten niiden lomaan sovitetaan origon kautta kulkeva suora; origo kuuluu suoralle, koska venymä on mitattu vapaasta pituudesta. Suoran kohdalla $s = 10{,}0\,\text{cm}$ voima on $F = 10{,}0\,\text{N}$. Työ on kolmion pinta-ala, jonka kanta on $s$ ja korkeus $F$.
+**Periaate:** Voima muuttuu venymän mukana, joten työ on $(s,F)$-kuvaajan pinta-ala. Jos voima on verrannollinen venymään, kuvaaja on origon kautta kulkeva suora ja pinta-ala on kolmio. Energia säilyy häviöittä: jousen venyttämiseen tehty työ voidaan käyttää kappaleen hitaaseen nostamiseen, jolloin nostotyö on $m g h$ ja se on yhtä suuri kuin $W$.
+**Kuvaajan lukeminen:** Voima kasvaa venymän mukana siten, että osamäärä $\tfrac{F}{s}$ on kaikissa pisteissä noin $1{,}0\,\text{N/cm}$: esimerkiksi $\tfrac{1{,}9}{2{,}0} = 0{,}95$ ja $\tfrac{10{,}0}{10{,}0} = 1{,}0$. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten niiden lomaan sovitetaan origon kautta kulkeva suora; origo kuuluu suoralle, koska venymä on mitattu vapaasta pituudesta. Suoran kohdalla $s = 10{,}0\,\text{cm}$ voima on $F = 10{,}0\,\text{N}$. Koska voima kasvaa nollasta tasaisesti, kuvaaja on origon kautta kulkeva suora ja sen alle jää kolmio; siksi työ on kolmion pinta-ala, jonka kanta on $s$ ja korkeus $F$.
 **Kaava:** $W = \tfrac{1}{2} F s$ ja $W = m g h$, joten $h = \dfrac{W}{m g}$
 **Muunnokset:** $10{,}0\,\text{cm} = 0{,}100\,\text{m}$, jotta työ tulee jouleina. Lopuksi $h$ muutetaan senttimetreiksi: $1\,\text{m} = 100\,\text{cm}$.
-**Sijoitus:** $W = \tfrac{1}{2} \cdot 10{,}0\,\text{N} \cdot 0{,}100\,\text{m} = 0{,}500\,\text{J}$; $h = \dfrac{0{,}500\,\text{J}}{0{,}20\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} = 0{,}2548\,\text{m} = 25{,}48\,\text{cm}$
-**Vastaus:** a) voima on likimain verrannollinen venymään, $F \approx 1{,}0\,\tfrac{\text{N}}{\text{cm}} \cdot s$; b) $W = 0{,}50\,\text{J}$; c) $25\,\text{cm}$, kaksi merkitsevää numeroa kuten massassa $0{,}20\,\text{kg}$.
-**Järkevyys:** Jos voima olisi koko matkan $10{,}0\,\text{N}$, työ olisi $10{,}0\,\text{N} \cdot 0{,}100\,\text{m} = 1{,}0\,\text{J}$; kolmion työ on tästä puolet, koska keskimääräinen voima on $5{,}0\,\text{N}$. Mittauspisteiden puolisuunnikassumma antaa saman: $0{,}02\,\text{m} \cdot 25{,}0\,\text{N} = 0{,}50\,\text{J}$. Kappaleen paino on $0{,}20\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 2{,}0\,\text{N}$, ja $2{,}0\,\text{N} \cdot 0{,}25\,\text{m} \approx 0{,}50\,\text{J}$.
+**Sijoitus:**
+
+$$\begin{aligned} W &= 0{,}5 \cdot 10{,}0\,\text{N} \cdot 0{,}100\,\text{m} = 0{,}500\,\text{J} \\ h &= \dfrac{0{,}500\,\text{J}}{0{,}20\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2}} = 0{,}2548\,\text{m} = 25{,}48\,\text{cm} \end{aligned}$$
+**Vastaus:** a) voima on likimain verrannollinen venymään, $F \approx 1{,}0\,\tfrac{\text{N}}{\text{cm}} \cdot s$; b) $W = 0{,}50\,\text{J}$; c) $25\,\text{cm}$ ($25{,}5\,\text{cm}$ ennen pyöristystä), kaksi merkitsevää numeroa kuten massassa $0{,}20\,\text{kg}$.
+**Järkevyys:** Jos voima olisi koko matkan $10{,}0\,\text{N}$, työ olisi $10{,}0\,\text{N} \cdot 0{,}100\,\text{m} = 1{,}0\,\text{J}$; kolmion työ on tästä puolet, koska keskimääräinen voima on $5{,}0\,\text{N}$. Mittauspisteiden puolisuunnikassumma antaa saman: $0{,}020\,\text{m} \cdot 25{,}0\,\text{N} = 0{,}50\,\text{J}$. Kappaleen paino on $0{,}20\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 2{,}0\,\text{N}$, ja $2{,}0\,\text{N} \cdot 0{,}25\,\text{m} \approx 0{,}50\,\text{J}$.
 
 ## fy3-2-L3-05
 **Annettu:** massa $m = 450\,\text{kg}$, taulukosta $(t, h)$: $(2{,}0\,\text{s};\ 1{,}6\,\text{m})$, $(4{,}0\,\text{s};\ 3{,}3\,\text{m})$, $(6{,}0\,\text{s};\ 4{,}9\,\text{m})$, $(8{,}0\,\text{s};\ 6{,}5\,\text{m})$, $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** a) kuorman nopeus $v$, b) nostovoiman ja painon suhde, c) moottorin teho $P$ kilowatteina, d) työn tarkistus
-**Periaate:** Jos korkeus kasvaa tasaisesti ajan mukana, kuorma nousee vakionopeudella. Silloin liikkeen suuntainen nostovoima $F$ on yhtä suuri kuin paino $G = m g$, ja teho on voiman ja nopeuden tulo $P = F v$.
-**Kuvaajan lukeminen:** Aikaväleillä $2{,}0\,\text{s}$ korkeus kasvaa $1{,}6\,\text{m}$, $1{,}7\,\text{m}$, $1{,}6\,\text{m}$ ja $1{,}6\,\text{m}$, eli lähes saman verran, joten nopeus on likimain vakio. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten nopeus luetaan sovitetun suoran kulmakertoimesta, ei kahdesta vierekkäisestä mittauspisteestä. Origon kautta kulkeva suora sopii pisteiden lomaan, koska aika ja korkeus lasketaan nostoliikkeen alusta. Suoralta luetaan $h = 6{,}52\,\text{m}$ kohdassa $t = 8{,}0\,\text{s}$, joten kulmakerroin on $v = \tfrac{6{,}52\,\text{m}}{8{,}0\,\text{s}} = 0{,}815\,\tfrac{\text{m}}{\text{s}}$.
-**Kaava:** $F = G = m g$ ja $P = F v$, joten $P = m g v$; tarkistuksessa $W = P t$ ja $W = m g h$
+**Kysytty:** a) kuorman nopeus $v$, b) miksi nostovoima on yhtä suuri kuin paino, c) moottorin teho $P$ kilowatteina, d) työn vertailu taulukon viimeiseen pisteeseen
+**Periaate:** Jos korkeus kasvaa tasaisesti ajan mukana, kuorma nousee vakionopeudella. Tasaisella nopeudella nostovoima $F$ on yhtä suuri kuin paino $G = m g$, ja teho on voiman ja nopeuden tulo $P = F v$.
+**Kuvaajan lukeminen:** Aikaväleillä $2{,}0\,\text{s}$ korkeus kasvaa $1{,}6\,\text{m}$, $1{,}7\,\text{m}$, $1{,}6\,\text{m}$ ja $1{,}6\,\text{m}$, eli lähes saman verran, joten nopeus on likimain vakio. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten nopeus luetaan sovitetun suoran kulmakertoimesta, ei kahdesta vierekkäisestä mittauspisteestä. Origon kautta kulkeva suora sopii pisteiden lomaan, koska aika ja korkeus lasketaan nostoliikkeen alusta. Suoralta luetaan $h = 6{,}52\,\text{m}$ kohdassa $t = 8{,}0\,\text{s}$, joten kulmakerroin on $v = 6{,}52\,\text{m} / 8{,}0\,\text{s} = 0{,}815\,\text{m/s}$.
+**Kaava:** $F = G = m g$ ja $P = F v$, joten $P = m g v$; vertailussa $W = P t$ ja $W = m g h$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
-**Sijoitus:** $G = 450\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 4414{,}5\,\text{N}$; $P = 4414{,}5\,\text{N} \cdot 0{,}815\,\tfrac{\text{m}}{\text{s}} = 3598\,\text{W} = 3{,}598\,\text{kW}$. Tarkistus: $12\,\text{m}$ kestää $t = \tfrac{12\,\text{m}}{0{,}815\,\text{m/s}} = 14{,}72\,\text{s}$, jolloin $P t = 3598\,\text{W} \cdot 14{,}72\,\text{s} = 52\,970\,\text{J}$ ja $m g h = 4414{,}5\,\text{N} \cdot 12\,\text{m} = 52\,974\,\text{J}$
-**Vastaus:** $3{,}6\,\text{kW}$, kaksi merkitsevää numeroa kuten massassa ja korkeusmittauksissa. Perustelut: a) korkeus kasvaa tasaisesti, joten nopeus on likimain vakio, $v \approx 0{,}82\,\text{m/s}$; b) nopeus on vakio, joten kuormaan kohdistuvien voimien summa on nolla ja nostovoima on yhtä suuri kuin paino; d) työt ovat samat, noin $53\,\text{kJ}$.
-**Järkevyys:** Karkea arvio: paino on noin $4400\,\text{N}$ ja nopeus noin $0{,}8\,\text{m/s}$, joten teho on noin $3500\,\text{W}$. Tarkistus d) osoittaa laskun johdonmukaiseksi, koska $P t$ ja $m g h$ antavat saman työn. Kilowattien teho on uskottava rakennusnosturin nostomoottorille, kun vain nostotyö otetaan huomioon.
+**Sijoitus:**
+
+$$\begin{aligned} G &= 450\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2} = 4414{,}5\,\text{N} \\ P &= 4414{,}5\,\text{N} \cdot 0{,}815\,\dfrac{\text{m}}{\text{s}} = 3598\,\text{W} = 3{,}598\,\text{kW} \\ P t &= 3598\,\text{W} \cdot 8{,}0\,\text{s} = 28\,780\,\text{J} \\ m g h &= 4414{,}5\,\text{N} \cdot 6{,}5\,\text{m} = 28\,690\,\text{J} \end{aligned}$$
+**Vastaus:** $3{,}6\,\text{kW}$, kaksi merkitsevää numeroa kuten massassa ja korkeusmittauksissa. Perustelut: a) korkeus kasvaa tasaisesti, joten nopeus on likimain vakio, $v \approx 0{,}82\,\text{m/s}$; b) oppitunnin mukaan tasaisella nopeudella nostovoima on yhtä suuri kuin paino, kuten kaavan $W = m g h$ johdossa; d) työt ovat $28{,}8\,\text{kJ}$ ja $28{,}7\,\text{kJ}$, eli ne eroavat alle prosentin.
+**Järkevyys:** Karkea arvio: paino on noin $4400\,\text{N}$ ja nopeus noin $0{,}8\,\text{m/s}$, joten teho on noin $3500\,\text{W}$. Vertailu d) on johdonmukainen: sovitetun suoran antama työ $P t$ ja taulukon pisteestä laskettu $m g h$ eroavat alle prosentin. Kilowattien teho on uskottava rakennusnosturin nostomoottorille, kun vain nostotyö otetaan huomioon.

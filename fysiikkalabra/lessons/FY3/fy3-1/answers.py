@@ -20,8 +20,8 @@ a["fy3-1-L3-01"] = 18 / g["Maa"] * g["Mars"]      # same mass, weight scales wit
 a["fy3-1-L3-02"] = 22.0 * g["Maa"] / g["Kuu"]     # same force, m = F / g: 133,2 kg -> 133 kg
 a["fy3-1-L3-03"] = 26 * g["Maa"] / g["Mars"]      # scale shows G / 9,81, so G = 26 kg · 9,81 m/s² and m = G / g_Mars: 68,75 kg -> 69 kg
 # Added exercises (bank P1): levels 1-3
-a["fy3-1-L1-08"] = 180 * g["Mars"]                # 667,8 N -> 670 N
-a["fy3-1-L2-05"] = (4.89 - 0.99) / (0.50 - 0.10)  # slope of the (m, G) line from far points: 9,75 -> 9,8 m/s²
+a["fy3-1-L1-08"] = 0.18 * 1000 * g["Mars"]                # 667,8 N -> 670 N
+a["fy3-1-L2-05"] = 4.90 / 0.50                    # slope of the fitted line through the origin, read at (0,50 kg; 4,90 N): 9,8 m/s²
 a["fy3-1-L2-06"] = g["Maa"] * 2.8 / 7.4           # m = 7,4 N / g_Maa, g_Mars = 2,8 N / m: 3,71 -> 3,7 m/s²
 a["fy3-1-L2-07"] = 4.9 / g["Maa"]                 # m = G / g = 0,4995 kg -> 0,50 kg
 a["fy3-1-L3-04"] = g["Maa"] * (1.9 / 0.50) / (sum([1.1, 2.1, 3.2, 4.1, 5.2, 6.1]) / sum([0.1, 0.2, 0.3, 0.4, 0.5, 0.6]))  # x/m ratio of the spring on Earth 10,38 cm/kg, on X 3,8 cm/kg: 3,59 m/s² -> 3,6

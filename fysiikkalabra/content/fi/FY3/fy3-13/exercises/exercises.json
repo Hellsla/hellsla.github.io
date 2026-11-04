@@ -47,26 +47,26 @@
       "kind": [
         "concept"
       ],
-      "answer": "Alin mahdollinen lämpötila, jossa hiukkasten keskimääräinen liike-energia on pienimmillään.",
+      "answer": "Alin mahdollinen lämpötila, koska hiukkasten keskimääräinen liike-energia on silloin pienin.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Alin mahdollinen lämpötila, jossa hiukkasten keskimääräinen liike-energia on pienimmillään.",
-          "correct": true,
-          "feedback": "Oikein: alempaa lämpötilaa ei ole, ja hiukkasten energia on silloin pienimmillään. Liike ei kuitenkaan lopu kokonaan."
-        },
-        {
-          "text": "Lämpötila, jossa hiukkasten liike on kokonaan pysähtynyt eikä niillä ole enää energiaa.",
-          "feedback": "Väärin: absoluuttisessa nollapisteessä hiukkasten energia on pienimmillään, mutta liike ei lopu kokonaan."
-        },
-        {
-          "text": "Lämpötila, jossa vesi jäätyy, koska kelvinasteikko alkaa jään sulamispisteestä.",
+          "text": "Veden jäätymislämpötila, koska kelvinasteikon nollakohta on valittu jään sulamispisteeseen.",
           "feedback": "Väärin: veden jäätymispiste on $0\\,{}^\\circ\\text{C} = 273{,}15\\,\\text{K}$. Kelvinasteikko alkaa paljon alempaa, absoluuttisesta nollapisteestä."
         },
         {
           "text": "Lämpötila, jossa kaikki kaasut tiivistyvät nesteiksi, koska hiukkaset vetävät toisiaan puoleensa.",
           "feedback": "Väärin: kaasut tiivistyvät eri lämpötiloissa, ja absoluuttinen nollapiste on kaikille aineille sama $-273{,}15\\,{}^\\circ\\text{C}$."
+        },
+        {
+          "text": "Alin mahdollinen lämpötila, koska hiukkasten keskimääräinen liike-energia on silloin pienin.",
+          "correct": true,
+          "feedback": "Oikein: alempaa lämpötilaa ei ole, koska hiukkasten keskimääräinen liike-energia on silloin pienimmillään."
+        },
+        {
+          "text": "Lämpötila, jossa hiukkaset pysähtyvät kokonaan, koska niiltä on poistettu kaikki energia.",
+          "feedback": "Väärin: kyse on pienimmästä mahdollisesta energiasta, ei siitä, että liike pysähtyisi sinulle tutun mallin mukaan; tarkka kuva kuuluu myöhempään kurssiin."
         }
       ]
     },
@@ -74,10 +74,7 @@
       "id": "fy3-13-L1-07",
       "level": 1,
       "text": "Nestemäinen typpi kiehuu normaalipaineessa lämpötilassa $-195{,}8\\,{}^\\circ\\text{C}$ (taulukkoarvo). Muunna lämpötila kelvineiksi.",
-      "kind": [
-        "concept"
-      ],
-      "answer": 77.35,
+      "answer": 77.4,
       "unit": "K",
       "tolerance": 0.02
     },
@@ -89,26 +86,26 @@
         "concept",
         "reasoning"
       ],
-      "answer": "Suoran jatkamista mittausalueen ulkopuolelle sillä oletuksella, että paine käyttäytyy siellä samoin.",
+      "answer": "Suoran jatkamista mitatun alueen ulkopuolelle, koska paine oletetaan siellä samanlaiseksi.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
-        {
-          "text": "Suoran jatkamista mittausalueen ulkopuolelle sillä oletuksella, että paine käyttäytyy siellä samoin.",
-          "correct": true,
-          "feedback": "Oikein: ekstrapoloitu arvo on arvio, joka olettaa mallin pätevän mitatun alueen ulkopuolellakin."
-        },
         {
           "text": "Arvon lukemista kahden mitatun pisteen väliltä, koska paine muuttuu pisteiden välillä tasaisesti.",
           "feedback": "Väärin: tämä on interpolointia. Ekstrapoloinnissa mennään mitatun alueen ulkopuolelle."
         },
         {
-          "text": "Mittauksen toistamista useita kertoja, koska keskiarvo on tarkempi kuin yksittäinen mittaus.",
-          "feedback": "Väärin: toistaminen pienentää satunnaisvaihtelun vaikutusta, mutta se ei ole suoran jatkamista mittausalueen ulkopuolelle."
+          "text": "Mittauksen toistamista monta kertaa, koska keskiarvo on tarkempi kuin yksittäinen mittaus.",
+          "feedback": "Väärin: toistaminen pienentää keskiarvon satunnaista virhettä, mutta se ei ole suoran jatkamista mittausalueen ulkopuolelle."
         },
         {
-          "text": "Suoran vetämistä kaikkien pisteiden kautta, koska jokaisen mittauspisteen pitää olla täsmälleen suoralla.",
+          "text": "Suoran vetämistä jokaisen pisteen kautta, koska jokaisen pisteen pitää olla täsmälleen suoralla.",
           "feedback": "Väärin: mittauspisteet eivät yleensä ole täsmälleen suoralla mittausepävarmuuden vuoksi. Suora kulkee pisteiden joukon keskeltä."
+        },
+        {
+          "text": "Suoran jatkamista mitatun alueen ulkopuolelle, koska paine oletetaan siellä samanlaiseksi.",
+          "correct": true,
+          "feedback": "Oikein: ekstrapoloitu arvo on arvio, joka olettaa mallin pätevän mitatun alueen ulkopuolellakin."
         }
       ]
     }
@@ -150,8 +147,7 @@
       "id": "fy3-13-L2-05",
       "level": 2,
       "kind": [
-        "data",
-        "graph"
+        "data"
       ],
       "text": "Esimerkkiaineisto: suljetun pullon ilman paine mitattiin viidessä lämpötilassa. Paineen lukeman epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Pisteisiin sovitettu paras suora kulkee pisteiden keskipisteen $(\\theta_{\\text{ka}}, p_{\\text{ka}})$ kautta, ja sen kulmakerroin on tietokoneella laskettuna $0{,}363\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$.\n\na) Laske taulukon keskipiste $(\\theta_{\\text{ka}}, p_{\\text{ka}})$.\n\nb) Laske sovitetun suoran nollapaineen lämpötila $\\theta_0$.\n\nVastauskenttään tulee kohdan b) tulos celsiusasteina.",
       "answer": -274,
@@ -239,7 +235,7 @@
         "error",
         "data"
       ],
-      "text": "Esimerkkiaineisto: ryhmä lämmitti pulloon suljettua ilmaa ja mittasi paineen neljässä lämpötilassa. Paineen lukeman epävarmuus on $\\pm 0{,}5\\,\\text{kPa}$. Pullon korkki vuoti hieman, mitä ryhmä ei tiennyt. Ryhmä piirsi suoran taulukon ensimmäisen ja viimeisen pisteen kautta ja jatkoi sitä kohtaan $p = 0$.\n\na) Laske ryhmän saama nollapaineen lämpötila $\\theta_0$.\n\nb) Päättele taulukon perusteella, että pullosta vuotaa kaasua, ja selitä, miksi vuoto vääristää tulosta.\n\nVastauskenttään tulee kohdan a) tulos celsiusasteina.",
+      "text": "Esimerkkiaineisto: ryhmä lämmitti pulloon suljettua ilmaa ja mittasi paineen neljässä lämpötilassa. Paineen lukeman epävarmuus on $\\pm 0{,}5\\,\\text{kPa}$. Ryhmä epäilee, että pullon korkki vuotaa. Ryhmä piirsi suoran taulukon ensimmäisen ja viimeisen pisteen kautta ja jatkoi sitä kohtaan $p = 0$.\n\na) Laske ryhmän saama nollapaineen lämpötila $\\theta_0$.\n\nb) Tukeeko taulukko epäilyä? Perustele kulmakertoimien avulla ja selitä, miksi vuoto vääristää tulosta.\n\nVastauskenttään tulee kohdan a) tulos celsiusasteina.",
       "answer": -370,
       "unit": "°C",
       "tolerance": 0.02,

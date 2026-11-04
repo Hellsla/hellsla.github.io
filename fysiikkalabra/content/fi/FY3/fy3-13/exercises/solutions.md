@@ -120,23 +120,23 @@
 
 ## fy3-13-L1-06
 **Kysytty:** mitä lämpötila $0\,\text{K}$ eli absoluuttinen nollapiste tarkoittaa.
-**Periaate:** Lämpötila kuvaa hiukkasten keskimääräistä liike-energiaa. Kelvinasteikko alkaa lämpötilasta, jota alempaa ei ole, koska hiukkasten energia on siinä pienimmillään. Pienintäkin energiaa ei voi poistaa, joten liike ei lopu kokonaan.
-**Mallivastaus:** Absoluuttinen nollapiste on alin mahdollinen lämpötila, $0\,\text{K} = -273{,}15\,{}^\circ\text{C}$, jossa hiukkasten keskimääräinen liike-energia on pienimmillään. Se ei ole veden jäätymispiste ($273{,}15\,\text{K}$), eikä se ole lämpötila, jossa hiukkasten liike olisi kokonaan pysähtynyt. Kaikki kaasut eivät myöskään tiivisty juuri siinä: tiivistymislämpötila riippuu aineesta.
+**Periaate:** Lämpötila kuvaa hiukkasten keskimääräistä liike-energiaa. Kelvinasteikko alkaa lämpötilasta, jota alempaa ei ole, koska hiukkasten energia on siinä pienimmillään.
+**Mallivastaus:** Absoluuttinen nollapiste on alin mahdollinen lämpötila, $0\,\text{K} = -273{,}15\,{}^\circ\text{C}$, jossa hiukkasten keskimääräinen liike-energia on pienimmillään. Se ei ole veden jäätymispiste ($273{,}15\,\text{K}$), eikä sitä pidä ymmärtää niin, että hiukkaset pysähtyisivät: kyse on pienimmästä mahdollisesta energiasta, ja tarkempi kuva kuuluu myöhempään kurssiin. Kaikki kaasut eivät myöskään tiivisty juuri siinä: tiivistymislämpötila riippuu aineesta.
 
 ## fy3-13-L1-07
 **Annettu:** typen kiehumispiste $\theta = -195{,}8\,{}^\circ\text{C}$
 **Kysytty:** sama lämpötila kelvineinä, $T$
 **Periaate:** Celsius- ja kelvinasteikon asteen koko on sama, mutta nollakohdat eroavat: kelvinasteikon nolla on absoluuttinen nollapiste. Muunnos on siis pelkkä siirto.
-**Kaava:** $T = \theta + 273{,}15\,\text{K}$
+**Kaava:** $T = \theta + 273{,}15$
 **Muunnokset:** Lämpötila $0\,{}^\circ\text{C}$ on $273{,}15\,\text{K}$, joten celsiusarvoon lisätään $273{,}15$ ja yksiköksi tulee kelvin.
-**Sijoitus:** $T = -195{,}8 + 273{,}15 = 77{,}35\,\text{K}$
-**Vastaus:** $77{,}35\,\text{K}$, kaksi desimaalia, sillä lukua $273{,}15$ ei pyöristetä ja $-195{,}8$ on annettu kymmenesosan tarkkuudella (tulos $77{,}4\,\text{K}$ käy yhtä hyvin).
-**Järkevyys:** Tulos on positiivinen, kuten kelvinlämpötilan kuuluukin, ja se on selvästi alle veden jäätymispisteen $273{,}15\,\text{K}$. Tarkistus takaisin: $77{,}35\,\text{K} - 273{,}15\,\text{K} = -195{,}80\,{}^\circ\text{C}$.
+**Sijoitus:** $T = (-195{,}8 + 273{,}15)\,\text{K} = 77{,}35\,\text{K} \approx 77{,}4\,\text{K}$
+**Vastaus:** $77{,}4\,\text{K}$, kymmenesosan tarkkuudella kuten $-195{,}8\,{}^\circ\text{C}$; tarkka $273{,}15$ ei rajoita.
+**Järkevyys:** Tulos on positiivinen, kuten kelvinlämpötilan kuuluukin, ja se on selvästi alle veden jäätymispisteen $273{,}15\,\text{K}$. Tarkistus takaisin: $77{,}4\,\text{K} - 273{,}15\,\text{K} = -195{,}75\,{}^\circ\text{C} \approx -195{,}8\,{}^\circ\text{C}$.
 
 ## fy3-13-L1-08
 **Kysytty:** mitä ekstrapolointi tarkoittaa, kun mittauspisteisiin sovitettua suoraa jatketaan kohtaan $p = 0$.
 **Periaate:** Mittaus kattaa vain välin $20\ldots 100\,{}^\circ\text{C}$. Kun suora jatketaan tämän välin ulkopuolelle, tulos ei ole mitattu vaan päätelty, ja päätelmä olettaa, että sama lineaarinen riippuvuus pätee myös mitatun alueen ulkopuolella.
-**Mallivastaus:** Ekstrapolointi on suoran jatkamista mittausalueen ulkopuolelle sillä oletuksella, että paine käyttäytyy siellä samoin kuin mitatulla alueella. Siksi ekstrapoloitu arvo on arvio eikä mittaustulos. Kahden mitatun pisteen välistä lukeminen on interpolointia, toistaminen pienentää satunnaisvaihtelua, ja suora kulkee pisteiden joukon keskeltä eikä jokaisen pisteen kautta.
+**Mallivastaus:** Ekstrapolointi on suoran jatkamista mittausalueen ulkopuolelle sillä oletuksella, että paine käyttäytyy siellä samoin kuin mitatulla alueella. Siksi ekstrapoloitu arvo on arvio eikä mittaustulos. Kahden mitatun pisteen välistä lukeminen on interpolointia, toistaminen pienentää keskiarvon satunnaista virhettä, ja suora kulkee pisteiden joukon keskeltä eikä jokaisen pisteen kautta.
 
 ## fy3-13-L2-05
 **Annettu:** viisi pistettä taulukosta; sovitetun suoran kulmakerroin $k = 0{,}363\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$; suora kulkee keskipisteen $(\theta_{\text{ka}}, p_{\text{ka}})$ kautta
@@ -145,9 +145,12 @@
 **Kuvaajan lukeminen:** Taulukon keskipiste lasketaan keskiarvoina $\theta_{\text{ka}}$ ja $p_{\text{ka}}$. Lämpötilojen summa on $250\,{}^\circ\text{C}$ ja paineiden summa $588{,}9\,\text{kPa}$. Suora kulkee tämän pisteen kautta kulmakertoimella $k$.
 **Kaava:** Suora pisteen $(\theta_{\text{ka}}, p_{\text{ka}})$ kautta on $p = p_{\text{ka}} + k(\theta - \theta_{\text{ka}})$. Kun $p = 0$ ja $\theta = \theta_0$, niin $\theta_0 = \theta_{\text{ka}} - \dfrac{p_{\text{ka}}}{k}$
 **Muunnokset:** Muunnoksia ei tarvita: paineet ovat kilopascaleina, joten osamäärässä $p_{\text{ka}}/k$ kPa supistuu ja jäljelle jää celsiusaste.
-**Sijoitus:** a) $\theta_{\text{ka}} = 250\,{}^\circ\text{C} : 5 = 50\,{}^\circ\text{C}$ ja $p_{\text{ka}} = 588{,}9\,\text{kPa} : 5 = 117{,}78\,\text{kPa}$. b) $\theta_0 = 50\,{}^\circ\text{C} - \dfrac{117{,}78\,\text{kPa}}{0{,}363\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = 50\,{}^\circ\text{C} - 324{,}46\,{}^\circ\text{C} = -274{,}46\,{}^\circ\text{C}$
-**Vastaus:** $-274\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten kulmakertoimessa $0{,}363$. Keskipiste on $(50\,{}^\circ\text{C};\ 117{,}8\,\text{kPa})$.
-**Järkevyys:** Suora antaa pisteessä $\theta = 10\,{}^\circ\text{C}$ paineen $117{,}78\,\text{kPa} + 0{,}363\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-40\,{}^\circ\text{C}) = 103{,}26\,\text{kPa}$, mikä poikkeaa mitatusta $103{,}4\,\text{kPa}$:sta vain $0{,}14\,\text{kPa}$, selvästi alle epävarmuuden $1{,}0\,\text{kPa}$. Tulos on lähellä arvoa $-273{,}15\,{}^\circ\text{C}$, ja $-273{,}15\,{}^\circ\text{C}$ poikkeaa tuloksesta noin $1{,}3\,{}^\circ\text{C}$.
+**Sijoitus:** a) $\theta_{\text{ka}} = 250\,{}^\circ\text{C} : 5 = 50\,{}^\circ\text{C}$ ja $p_{\text{ka}} = 588{,}9\,\text{kPa} : 5 = 117{,}78\,\text{kPa}$. b)
+
+$$\begin{aligned} \theta_0 &= 50\,{}^\circ\text{C} - \dfrac{117{,}78\,\text{kPa}}{0{,}363\,\text{kPa}/{}^\circ\text{C}} \\ &= 50\,{}^\circ\text{C} - 324{,}46\,{}^\circ\text{C} \\ &= -274{,}46\,{}^\circ\text{C} \end{aligned}$$
+
+**Vastaus:** $-274\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten kulmakertoimessa $0{,}363$. Keskipiste on $(50\,{}^\circ\text{C};\ 117{,}78\,\text{kPa})$.
+**Järkevyys:** Suora antaa pisteessä $\theta = 10\,{}^\circ\text{C}$ paineen $117{,}78\,\text{kPa} + 0{,}363\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-40\,{}^\circ\text{C}) = 103{,}26\,\text{kPa}$, mikä poikkeaa mitatusta $103{,}4\,\text{kPa}$:sta vain $0{,}14\,\text{kPa}$, selvästi alle epävarmuuden $1{,}0\,\text{kPa}$. Tulos poikkeaa hyväksytystä arvosta $-273{,}15\,{}^\circ\text{C}$ vain noin $1{,}3\,{}^\circ\text{C}$.
 
 ## fy3-13-L2-06
 **Annettu:** ryhmä B käyttää pisteitä $(\theta_1, p_1) = (20\,{}^\circ\text{C};\ 107{,}4\,\text{kPa})$ ja $(\theta_2, p_2) = (35\,{}^\circ\text{C};\ 112{,}4\,\text{kPa})$; ryhmän A tulos $-270\,{}^\circ\text{C}$; paineen epävarmuus $\pm 1{,}0\,\text{kPa}$
@@ -156,21 +159,27 @@
 **Kuvaajan lukeminen:** Ryhmä B lukee taulukosta vain kaksi ensimmäistä riviä, lämpötilat $20\,{}^\circ\text{C}$ ja $35\,{}^\circ\text{C}$.
 **Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
 **Muunnokset:** Muunnoksia ei tarvita: paineet ovat kilopascaleina, joten kPa supistuu osamäärässä $p_1/k$. Lämpötilaero $15\,{}^\circ\text{C}$ on sama kelvineinä.
-**Sijoitus:** $k = \dfrac{(112{,}4 - 107{,}4)\,\text{kPa}}{(35 - 20)\,{}^\circ\text{C}} = \dfrac{5{,}0\,\text{kPa}}{15\,{}^\circ\text{C}} = 0{,}3333\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $\theta_0 = 20\,{}^\circ\text{C} - \dfrac{107{,}4\,\text{kPa}}{0{,}3333\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = 20\,{}^\circ\text{C} - 322{,}2\,{}^\circ\text{C} = -302{,}2\,{}^\circ\text{C}$
-**Vastaus:** $-302\,{}^\circ\text{C}$, kolme merkitsevää numeroa, koska paine-ero $5{,}0\,\text{kPa}$ rajoittaa kulmakerrointa kahteen numeroon, mutta tulos annetaan kokonaisina asteina.
-**Mallivastaus (b):** Ryhmä B laskee kulmakertoimen vain $15\,{}^\circ\text{C}$:n välistä, jolla paine kasvaa $5{,}0\,\text{kPa}$. Kummankin paineen epävarmuus $1{,}0\,\text{kPa}$ voi muuttaa paine-eroa jopa $2{,}0\,\text{kPa}$, joten kulmakerroin on epävarma noin $2{,}0 : 15 = 0{,}13\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, eli noin $40\,\%$ itse arvosta. Ekstrapolointimatka on yli $300\,{}^\circ\text{C}$, joten pieni kulmakertoimen virhe kasvaa suureksi. Ryhmä A käyttää kuutta pistettä välillä $75\,{}^\circ\text{C}$, jolloin hajonta tasoittuu ja kulmakerroin $0{,}370\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ on luotettavampi.
+**Sijoitus:**
+
+$$\begin{aligned} k &= \dfrac{(112{,}4 - 107{,}4)\,\text{kPa}}{(35 - 20)\,{}^\circ\text{C}} \\ &= \dfrac{5{,}0\,\text{kPa}}{15\,{}^\circ\text{C}} \\ &= 0{,}3333\,\text{kPa}/{}^\circ\text{C} \\ \theta_0 &= 20\,{}^\circ\text{C} - \dfrac{107{,}4\,\text{kPa}}{0{,}3333\,\text{kPa}/{}^\circ\text{C}} \\ &= 20\,{}^\circ\text{C} - 322{,}2\,{}^\circ\text{C} \\ &= -302{,}2\,{}^\circ\text{C} \end{aligned}$$
+
+**Vastaus:** $-302\,{}^\circ\text{C}$, mutta vain noin kahden numeron tarkkuudella ($-3{,}0 \cdot 10^{2}\,{}^\circ\text{C}$), koska kulmakerroin $0{,}33\,\text{kPa}/{}^\circ\text{C}$ tunnetaan kahdella numerolla.
+**Mallivastaus (b):** Ryhmä B laskee kulmakertoimen vain $15\,{}^\circ\text{C}$:n välistä, jolla paine kasvaa $5{,}0\,\text{kPa}$. Kummankin paineen epävarmuus $1{,}0\,\text{kPa}$ voi muuttaa paine-eroa jopa $2{,}0\,\text{kPa}$, joten kulmakerroin on epävarma noin $2{,}0 : 15 = 0{,}13\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, eli noin $40\,\%$ itse arvosta. Ekstrapolointimatka on yli $300\,{}^\circ\text{C}$, joten pieni kulmakertoimen virhe kasvaa suureksi. Ryhmä A käyttää kuutta pistettä $75\,{}^\circ\text{C}$:n levyiseltä väliltä, jolloin hajonta tasoittuu ja kulmakerroin $0{,}370\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ on luotettavampi.
 **Järkevyys:** Ryhmän B suora antaisi lämpötilassa $95\,{}^\circ\text{C}$ paineen $107{,}4\,\text{kPa} + 0{,}3333\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 75\,{}^\circ\text{C} = 132{,}4\,\text{kPa}$, mutta mitattu on $135{,}0\,\text{kPa}$. Ero $2{,}6\,\text{kPa}$ on suurempi kuin epävarmuus $1{,}0\,\text{kPa}$, joten ryhmän B suora ei sovi muihin pisteisiin. Ryhmän A erotus mitatusta olisi alle $0{,}2\,\text{kPa}$.
 
 ## fy3-13-L2-07
 **Annettu:** pisteet $(20\,{}^\circ\text{C};\ 104{,}0\,\text{kPa})$, $(40\,{}^\circ\text{C};\ 110{,}6\,\text{kPa})$, $(60\,{}^\circ\text{C};\ 116{,}0\,\text{kPa})$ ja $(80\,{}^\circ\text{C};\ 120{,}0\,\text{kPa})$; paineen epävarmuus $\pm 0{,}5\,\text{kPa}$; suora ensimmäisen ja viimeisen pisteen kautta
-**Kysytty:** a) ryhmän saama nollapaineen lämpötila $\theta_0$ celsiusasteina; b) miksi taulukko paljastaa vuodon ja miksi se vääristää tulosta
+**Kysytty:** a) ryhmän saama nollapaineen lämpötila $\theta_0$ celsiusasteina; b) tukeeko taulukko vuotoepäilyä ja miksi vuoto vääristää tulosta
 **Periaate:** Vuodottomassa suljetussa pullossa ainemäärä on vakio ja paine kasvaa lämpötilan mukana lineaarisesti. Jos kaasua pääsee pois, ainemäärä pienenee eikä lineaarinen malli enää päde. Ekstrapolointi olettaa mallin pätevän, joten tulos vääristyy.
 **Kuvaajan lukeminen:** Luetaan taulukosta ensimmäinen piste $(20\,{}^\circ\text{C};\ 104{,}0\,\text{kPa})$ ja viimeinen piste $(80\,{}^\circ\text{C};\ 120{,}0\,\text{kPa})$.
 **Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
 **Muunnokset:** Muunnoksia ei tarvita: kilopascalit supistuvat osamäärässä, ja lämpötilaero $60\,{}^\circ\text{C}$ on sama kelvineinä.
-**Sijoitus:** $k = \dfrac{(120{,}0 - 104{,}0)\,\text{kPa}}{(80 - 20)\,{}^\circ\text{C}} = \dfrac{16{,}0\,\text{kPa}}{60\,{}^\circ\text{C}} = 0{,}2667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $\theta_0 = 20\,{}^\circ\text{C} - \dfrac{104{,}0\,\text{kPa}}{0{,}2667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = 20\,{}^\circ\text{C} - 390\,{}^\circ\text{C} = -370\,{}^\circ\text{C}$
+**Sijoitus:**
+
+$$\begin{aligned} k &= \dfrac{(120{,}0 - 104{,}0)\,\text{kPa}}{(80 - 20)\,{}^\circ\text{C}} \\ &= \dfrac{16{,}0\,\text{kPa}}{60\,{}^\circ\text{C}} \\ &= 0{,}2667\,\text{kPa}/{}^\circ\text{C} \\ \theta_0 &= 20\,{}^\circ\text{C} - \dfrac{104{,}0\,\text{kPa}}{0{,}2667\,\text{kPa}/{}^\circ\text{C}} \\ &= 20\,{}^\circ\text{C} - 390\,{}^\circ\text{C} \\ &= -370\,{}^\circ\text{C} \end{aligned}$$
+
 **Vastaus:** $-370\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten paineissa; tulos on selvästi alle $-273{,}15\,{}^\circ\text{C}$.
-**Mallivastaus (b):** Paine kasvaa jokaisella $20\,{}^\circ\text{C}$:n välillä vähemmän: $6{,}6\,\text{kPa}$, $5{,}4\,\text{kPa}$ ja $4{,}0\,\text{kPa}$, eli kulmakerroin pienenee arvoista $0{,}33$ ja $0{,}27$ arvoon $0{,}20\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. Erot ovat paljon suurempia kuin epävarmuus $\pm 0{,}5\,\text{kPa}$, joten kyse ei ole hajonnasta vaan mallin rikkoutumisesta: pisteet eivät ole suoralla. Vuodossa kuumasta pullosta poistuu kaasua, joten ainemäärä pienenee ja paine kasvaa vähemmän kuin vuodottomassa pullossa. Päätepisteiden suoran kulmakerroin $0{,}267\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ on liian pieni, ja pieni kulmakerroin vie nollapaineen liian kauas, kohtaan $-370\,{}^\circ\text{C}$.
+**Mallivastaus (b):** Taulukko tukee epäilyä. Paine kasvaa jokaisella $20\,{}^\circ\text{C}$:n välillä vähemmän: $6{,}6\,\text{kPa}$, $5{,}4\,\text{kPa}$ ja $4{,}0\,\text{kPa}$, eli kulmakerroin pienenee arvoista $0{,}33$ ja $0{,}27$ arvoon $0{,}20\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. Erot ovat paljon suurempia kuin epävarmuus $\pm 0{,}5\,\text{kPa}$, joten kyse ei ole hajonnasta vaan mallin rikkoutumisesta: pisteet eivät ole suoralla. Vuodossa kuumasta pullosta poistuu kaasua, joten ainemäärä pienenee ja paine kasvaa vähemmän kuin vuodottomassa pullossa. Päätepisteiden suoran kulmakerroin $0{,}267\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ on liian pieni, ja pieni kulmakerroin vie nollapaineen liian kauas, kohtaan $-370\,{}^\circ\text{C}$.
 **Järkevyys:** Kahden ensimmäisen pisteen kulmakerroin $0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ antaisi $20\,{}^\circ\text{C} - 104{,}0\,\text{kPa} : 0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}} = -295\,{}^\circ\text{C}$, joka on lähempänä oikeaa arvoa, koska vuotoa on ehtinyt tapahtua vähemmän. Tulos $-370\,{}^\circ\text{C}$ poikkeaa hyväksytystä arvosta $-273{,}15\,{}^\circ\text{C}$ lähes sadalla asteella, mikä on liikaa pelkäksi mittausepävarmuudeksi.
 
 ## fy3-13-L3-04
@@ -178,12 +187,33 @@
 **Kysytty:** a) kummankin sarjan nollapaineen lämpötilan epävarmuus $\Delta\theta_0$ celsiusasteina; b) mittausalueen leveyden vaikutus ja yhteensopivuus arvon $-273{,}15\,{}^\circ\text{C}$ kanssa
 **Periaate:** Jokaisen pisteen paine tunnetaan välillä $p \pm \Delta p$. Jyrkin suora kulkee alemman pisteen alapään ja ylemmän pisteen yläpään kautta, loivin päinvastoin; molemmat sopivat aineistoon. Niiden nollapaineen lämpötilat rajaavat välin, ja epävarmuus on välin puolikas. Malli olettaa, että paine on lämpötilan lineaarinen funktio suljetussa jäykässä astiassa myös mitatun alueen ulkopuolella.
 **Kuvaajan lukeminen:** Kustakin sarjasta luetaan kaksi pistettä. Jyrkin suora kulkee pisteiden $(\theta_1;\ p_1 - \Delta p)$ ja $(\theta_2;\ p_2 + \Delta p)$ kautta, loivin pisteiden $(\theta_1;\ p_1 + \Delta p)$ ja $(\theta_2;\ p_2 - \Delta p)$ kautta.
-**Kaava:** $k = \dfrac{p_b - p_a}{\theta_2 - \theta_1}$, $\theta_0 = \theta_1 - \dfrac{p_a}{k}$ ja $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$, missä $p_a$ on suoran paine pisteessä $\theta_1$ ja $p_b$ pisteessä $\theta_2$
+**Kaava:** Suoran paine pisteessä $\theta_1$ on $p_a$ ja pisteessä $\theta_2$ on $p_b$. Silloin $k = \dfrac{p_b - p_a}{\theta_2 - \theta_1}$, $\theta_0 = \theta_1 - \dfrac{p_a}{k}$ ja $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
 **Muunnokset:** Muunnoksia ei tarvita: kilopascalit supistuvat osamäärässä $p_a/k$, ja lämpötilaerot ovat samat kelvineinä.
-**Sijoitus:** Sarja A, jyrkin: $k = \dfrac{131{,}0 - 107{,}0}{85 - 25}\,\tfrac{\text{kPa}}{{}^\circ\text{C}} = 0{,}4000\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $\theta_0 = 25\,{}^\circ\text{C} - \dfrac{107{,}0}{0{,}4000}\,{}^\circ\text{C} = -242{,}5\,{}^\circ\text{C}$. Sarja A, loivin: $k = \dfrac{129{,}0 - 109{,}0}{60}\,\tfrac{\text{kPa}}{{}^\circ\text{C}} = 0{,}3333\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $\theta_0 = 25\,{}^\circ\text{C} - \dfrac{109{,}0}{0{,}3333}\,{}^\circ\text{C} = -302{,}0\,{}^\circ\text{C}$, joten $\Delta\theta_{0,\text{A}} = \dfrac{-242{,}5 - (-302{,}0)}{2}\,{}^\circ\text{C} = 29{,}75\,{}^\circ\text{C}$. Sarja B, jyrkin: $k = \dfrac{182{,}5 - 107{,}0}{200}\,\tfrac{\text{kPa}}{{}^\circ\text{C}} = 0{,}3775\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $\theta_0 = 25\,{}^\circ\text{C} - \dfrac{107{,}0}{0{,}3775}\,{}^\circ\text{C} = -258{,}44\,{}^\circ\text{C}$. Sarja B, loivin: $k = \dfrac{180{,}5 - 109{,}0}{200}\,\tfrac{\text{kPa}}{{}^\circ\text{C}} = 0{,}3575\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $\theta_0 = 25\,{}^\circ\text{C} - \dfrac{109{,}0}{0{,}3575}\,{}^\circ\text{C} = -279{,}90\,{}^\circ\text{C}$, joten $\Delta\theta_{0,\text{B}} = \dfrac{-258{,}44 - (-279{,}90)}{2}\,{}^\circ\text{C} = 10{,}73\,{}^\circ\text{C}$
-**Vastaus:** $10{,}7\,{}^\circ\text{C}$ (sarja B), kolme merkitsevää numeroa, koska paineet on annettu neljällä ja ääriarvojen erotus $21{,}46\,{}^\circ\text{C}$ tunnetaan kolmella. Sarjan A epävarmuus on noin $30\,{}^\circ\text{C}$. Tulokset ovat $\theta_{0,\text{A}} = -272 \pm 30\,{}^\circ\text{C}$ ja $\theta_{0,\text{B}} = -269 \pm 11\,{}^\circ\text{C}$.
+**Sijoitus:**
+
+Sarja A, jyrkin:
+
+$$\begin{aligned} k &= \dfrac{(131{,}0 - 107{,}0)\,\text{kPa}}{(85 - 25)\,{}^\circ\text{C}} \\ &= 0{,}4000\,\text{kPa}/{}^\circ\text{C} \\ \theta_0 &= 25\,{}^\circ\text{C} - \dfrac{107{,}0\,\text{kPa}}{0{,}4000\,\text{kPa}/{}^\circ\text{C}} \\ &= -242{,}5\,{}^\circ\text{C} \end{aligned}$$
+
+Sarja A, loivin:
+
+$$\begin{aligned} k &= \dfrac{(129{,}0 - 109{,}0)\,\text{kPa}}{(85 - 25)\,{}^\circ\text{C}} \\ &= 0{,}3333\,\text{kPa}/{}^\circ\text{C} \\ \theta_0 &= 25\,{}^\circ\text{C} - \dfrac{109{,}0\,\text{kPa}}{0{,}3333\,\text{kPa}/{}^\circ\text{C}} \\ &= -302{,}0\,{}^\circ\text{C} \end{aligned}$$
+
+Siis $\Delta\theta_{0,\text{A}} = \dfrac{(-242{,}5 + 302{,}0)\,{}^\circ\text{C}}{2} = 29{,}75\,{}^\circ\text{C}$.
+
+Sarja B, jyrkin:
+
+$$\begin{aligned} k &= \dfrac{(182{,}5 - 107{,}0)\,\text{kPa}}{(225 - 25)\,{}^\circ\text{C}} \\ &= 0{,}3775\,\text{kPa}/{}^\circ\text{C} \\ \theta_0 &= 25\,{}^\circ\text{C} - \dfrac{107{,}0\,\text{kPa}}{0{,}3775\,\text{kPa}/{}^\circ\text{C}} \\ &= -258{,}44\,{}^\circ\text{C} \end{aligned}$$
+
+Sarja B, loivin:
+
+$$\begin{aligned} k &= \dfrac{(180{,}5 - 109{,}0)\,\text{kPa}}{(225 - 25)\,{}^\circ\text{C}} \\ &= 0{,}3575\,\text{kPa}/{}^\circ\text{C} \\ \theta_0 &= 25\,{}^\circ\text{C} - \dfrac{109{,}0\,\text{kPa}}{0{,}3575\,\text{kPa}/{}^\circ\text{C}} \\ &= -279{,}90\,{}^\circ\text{C} \end{aligned}$$
+
+$$\begin{aligned} \Delta\theta_{0,\text{B}} &= \dfrac{(-258{,}44 + 279{,}90)\,{}^\circ\text{C}}{2} \\ &= 10{,}73\,{}^\circ\text{C} \end{aligned}$$
+
+**Vastaus:** Sarjan B epävarmuus on $10{,}7\,{}^\circ\text{C}$; kolme merkitsevää numeroa, koska paineet on annettu neljällä ja ääriarvojen erotus $21{,}46\,{}^\circ\text{C}$ tunnetaan kolmella. Sarjan A epävarmuus on noin $30\,{}^\circ\text{C}$. Tulokset ovat $\theta_{0,\text{A}} = -272 \pm 30\,{}^\circ\text{C}$ ja $\theta_{0,\text{B}} = -269 \pm 11\,{}^\circ\text{C}$.
 **Mallivastaus (b):** Sarjan B mittausalue on $200\,{}^\circ\text{C}$ leveä ja sarjan A $60\,{}^\circ\text{C}$, ja B:n epävarmuus on vain noin kolmasosa A:n epävarmuudesta. Sama paineen epävarmuus $\pm 1{,}0\,\text{kPa}$ vaikuttaa kulmakertoimeen sitä vähemmän, mitä pidemmältä väliltä se lasketaan, ja pieni kulmakertoimen virhe kasvaa ekstrapoloitaessa. Leveämpi mittausalue siis pienentää epävarmuutta. Kummankin sarjan väli sisältää arvon $-273{,}15\,{}^\circ\text{C}$ (A: $-302\ldots -243\,{}^\circ\text{C}$, B: $-280\ldots -258\,{}^\circ\text{C}$), joten tulokset sopivat yhteen hyväksytyn arvon kanssa. Väli on arvio, ja se olettaa, että paine pysyy lineaarisena myös mitatun alueen ulkopuolella.
-**Järkevyys:** Alueiden leveyksien suhde on $200:60 \approx 3{,}3$ ja epävarmuuksien suhde $29{,}75:10{,}73 \approx 2{,}8$, eli epävarmuus pienenee suunnilleen leveyden kasvun mukana. Ääriviivat osuvat kumpikin samaan keskimääräiseen nollapisteeseen: välien keskikohdat $-272\,{}^\circ\text{C}$ ja $-269\,{}^\circ\text{C}$ ovat lähellä toisiaan ja lähellä arvoa $-273{,}15\,{}^\circ\text{C}$.
+**Järkevyys:** Alueiden leveyksien suhde on $200:60 \approx 3{,}3$ ja epävarmuuksien suhde $29{,}75:10{,}73 \approx 2{,}8$, eli epävarmuus pienenee suunnilleen leveyden kasvun mukana. Sarjojen välien keskikohdat $-272\,{}^\circ\text{C}$ ja $-269\,{}^\circ\text{C}$ ovat lähellä toisiaan ja lähellä arvoa $-273{,}15\,{}^\circ\text{C}$.
 
 ## fy3-13-L3-05
 **Annettu:** kalibrointipisteet taulukosta, ensimmäinen $(\theta_1, p_1) = (0\,{}^\circ\text{C};\ 100{,}4\,\text{kPa})$ ja viimeinen $(\theta_2, p_2) = (100\,{}^\circ\text{C};\ 137{,}0\,\text{kPa})$; pakastimessa luettu paine $p = 94{,}0\,\text{kPa}$ ja sen epävarmuus $\Delta p = 1{,}0\,\text{kPa}$
@@ -192,7 +222,18 @@
 **Kuvaajan lukeminen:** Luetaan taulukosta kaukaisimmat pisteet $(0\,{}^\circ\text{C};\ 100{,}4\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 137{,}0\,\text{kPa})$. Muut pisteet toimivat tarkistuksena.
 **Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja suoran $p = p_1 + k(\theta - \theta_1)$ ratkaisu $\theta = \theta_1 + \dfrac{p - p_1}{k}$. Painelukeman epävarmuutta vastaa lämpötilan epävarmuus $\Delta\theta = \dfrac{\Delta p}{k}$.
 **Muunnokset:** Muunnoksia ei tarvita: kilopascalit supistuvat, joten tulos on celsiusasteina. Lämpötilaero $100\,{}^\circ\text{C}$ on sama kelvineinä.
-**Sijoitus:** $k = \dfrac{(137{,}0 - 100{,}4)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}3660\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. a) $\theta = 0\,{}^\circ\text{C} + \dfrac{(94{,}0 - 100{,}4)\,\text{kPa}}{0{,}3660\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -17{,}49\,{}^\circ\text{C}$. b) $\Delta\theta = \dfrac{1{,}0\,\text{kPa}}{0{,}3660\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = 2{,}73\,{}^\circ\text{C}$
-**Vastaus:** $-17{,}5\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten kalibrointipaineissa; epävarmuus on noin $2{,}7\,{}^\circ\text{C}$ eli tulos on noin $-17{,}5 \pm 2{,}7\,{}^\circ\text{C}$.
+**Sijoitus:**
+
+$$\begin{aligned} k &= \dfrac{(137{,}0 - 100{,}4)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} \\ &= 0{,}3660\,\text{kPa}/{}^\circ\text{C} \end{aligned}$$
+
+a)
+
+$$\begin{aligned} \theta &= 0\,{}^\circ\text{C} + \dfrac{(94{,}0 - 100{,}4)\,\text{kPa}}{0{,}3660\,\text{kPa}/{}^\circ\text{C}} \\ &= -17{,}49\,{}^\circ\text{C} \end{aligned}$$
+
+b)
+
+$$\begin{aligned} \Delta\theta &= \dfrac{1{,}0\,\text{kPa}}{0{,}3660\,\text{kPa}/{}^\circ\text{C}} \\ &= 2{,}73\,{}^\circ\text{C} \end{aligned}$$
+
+**Vastaus:** $-17{,}5\,{}^\circ\text{C}$ ja epävarmuus noin $2{,}7\,{}^\circ\text{C}$, eli tulos on $-17{,}5 \pm 2{,}7\,{}^\circ\text{C}$. Rajoittava tieto on paine-ero $94{,}0 - 100{,}4 = -6{,}4\,\text{kPa}$ (kaksi numeroa), joten yksinkertaisimmillaan tulos on $-17 \pm 3\,{}^\circ\text{C}$; desimaali annetaan, jotta tulos vastaa vastauskentän arvoa.
 **Mallivastaus (c):** Pakastimen lämpötila on kalibroidun alueen $0\ldots 100\,{}^\circ\text{C}$ ulkopuolella, joten suoraa jatketaan mitatun alueen yli ja tulos on ekstrapolointia, joka olettaa paineen pysyvän lineaarisena. Jatke on kuitenkin vain noin $17{,}5\,{}^\circ\text{C}$ pitkä, kun nollapisteen määrityksessä suoraa jatketaan yli $270\,{}^\circ\text{C}$. Kalibrointisuoran kulmakertoimen epävarmuus vaikuttaa tulokseen vain jatkeen pituudelta, joten sen vaikutus on muutaman asteen osa. Lisäksi lämpötila $-17{,}5\,{}^\circ\text{C}$ on kaukana lämpötilasta, jossa ilma alkaisi tiivistyä, joten lineaarinen malli on järkevä.
 **Järkevyys:** Tulos on tyypillinen pakastimen lämpötila. Välipiste tarkistaa suoran: $100{,}4\,\text{kPa} + 0{,}3660\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 50\,{}^\circ\text{C} = 118{,}7\,\text{kPa}$, kun mitattu on $118{,}6\,\text{kPa}$. Kelvineinä lämpötila on $T = 273{,}15\,\text{K} - 17{,}49\,\text{K} = 255{,}66\,\text{K}$, ja paineiden suhde $94{,}0:100{,}4 = 0{,}936$ on sama kuin lämpötilojen suhde $255{,}66:273{,}15 = 0{,}936$.

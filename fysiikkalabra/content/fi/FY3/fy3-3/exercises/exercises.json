@@ -52,17 +52,17 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Suljettu, koska ainetta ei siirry systeemin rajan yli; energiaa voi silti siirtyä.",
-          "feedback": "Oikein: systeemi on suljettu, kun ainetta ei pääse sen rajan yli. Rajan yli voi silti siirtyä energiaa, ja mäntää liikuttamalla myös tilavuus voi muuttua.",
-          "correct": true
-        },
-        {
           "text": "Avoin, koska mäntä liikkuu; tilavuus voi muuttua, joten aine pääsee rajan yli.",
           "feedback": "Männän liike muuttaa systeemin tilavuutta, mutta aine ei silti pääse ulos eikä sisään. Avoimen systeemin tunnistaa aineen siirtymisestä rajan yli, ei tilavuuden muutoksesta."
         },
         {
           "text": "Avoin, koska lämmitys siirtää energiaa rajan yli; suljetussa systeemissä energia ei siirry.",
           "feedback": "Suljettu systeemi voi vaihtaa energiaa ympäristönsä kanssa. Ratkaisevaa on vain se, siirtyykö ainetta rajan yli."
+        },
+        {
+          "text": "Suljettu, koska ainetta ei siirry systeemin rajan yli; energiaa voi silti siirtyä.",
+          "feedback": "Oikein: systeemi on suljettu, kun ainetta ei pääse sen rajan yli. Rajan yli voi silti siirtyä energiaa, ja mäntää liikuttamalla myös tilavuus voi muuttua.",
+          "correct": true
         },
         {
           "text": "Suljettu, koska lämpötila pysyy samana; lämpötilan muuttuessa systeemi olisi avoin.",
@@ -90,21 +90,21 @@
       "tolerance": 0.02,
       "choices": [
         {
+          "text": "Paine, koska astiasta ei pääse kaasua ulos lämmitettäessä.",
+          "feedback": "Kun lämpötila nousee, hiukkaset liikkuvat nopeammin ja törmäävät seinään useammin ja kovemmin, joten paine kasvaa. Suljettu astia pitää vain hiukkasten määrän samana."
+        },
+        {
           "text": "Tilavuus, koska jäykän astian seinät eivät siirry lämmitettäessä.",
           "feedback": "Oikein: jäykän astian tilavuus pysyy samana, joten kaasun tilavuus ei muutu, vaikka lämpötila ja paine muuttuvat.",
           "correct": true
         },
         {
-          "text": "Paine, koska astiasta ei pääse kaasua ulos lämmitettäessä.",
-          "feedback": "Kun lämpötila nousee, hiukkaset liikkuvat nopeammin ja törmäävät seinään useammin ja kovemmin, joten paine kasvaa. Suljettu astia pitää vain hiukkasten määrän samana."
+          "text": "Hiukkasten keskimääräinen liike-energia, koska hiukkasmäärä ei muutu.",
+          "feedback": "Harvassa kaasussa keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan, joten se kasvaa lämpötilan mukana. Hiukkasmäärä ei vaikuta siihen."
         },
         {
           "text": "Lämpötila, koska astian seinät estävät kaasun lämpenemisen.",
           "feedback": "Seinät eivät estä lämpenemistä: lämmitys nostaa kaasun lämpötilaa, ja juuri lämpötilan nousu muuttaa muita tilanmuuttujia."
-        },
-        {
-          "text": "Hiukkasten keskimääräinen liike-energia, koska hiukkasmäärä ei muutu.",
-          "feedback": "Harvassa kaasussa keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan, joten se kasvaa lämpötilan mukana. Hiukkasmäärä ei vaikuta siihen."
         }
       ]
     }
@@ -146,7 +146,7 @@
     {
       "id": "fy3-3-L2-05",
       "level": 2,
-      "text": "Lämpömittaria A verrataan kalibroinnissa tarkkaan vertailulämpömittariin. Molemmat pidetään samassa vesihauteessa eri lämpötiloissa. Taulukko on esimerkkiaineistoa.\n\na) Laske mittarin A lukeman keskimääräinen ero vertailulukemaan, $\\theta_\\text{A} - \\theta_\\text{vert}$, kelvineinä.\n\nb) Onko ero systemaattinen vai satunnainen? Perustele taulukon avulla.\n\nc) Mittari A näyttää kylpyveden lämpötilaksi $38{,}6\\,{}^\\circ\\text{C}$. Mikä on lämpötila korjattuna?\n\nSyötä vastauslaatikkoon kohdan a) tulos.",
+      "text": "Lämpömittaria A verrataan kalibroinnissa tarkkaan vertailulämpömittariin. Molemmat pidetään samassa vesihauteessa eri lämpötiloissa. Taulukko on esimerkkiaineistoa.\n\na) Laske mittarin A lukeman keskimääräinen ero vertailulukemaan, $\\theta_\\text{A} - \\theta_\\text{vert}$, kelvineinä.\n\nb) Onko ero systemaattinen vai satunnainen? Perustele taulukon avulla. Systemaattinen virhe poikkeaa joka mittauksessa samaan suuntaan, satunnainen virhe vaihtelee suuntaan ja toiseen.\n\nc) Mittari A näyttää kylpyveden lämpötilaksi $38{,}6\\,{}^\\circ\\text{C}$. Mikä on lämpötila korjattuna?\n\nSyötä vastauslaatikkoon kohdan a) tulos.",
       "kind": [
         "data",
         "error"
@@ -187,7 +187,7 @@
     {
       "id": "fy3-3-L2-06",
       "level": 2,
-      "text": "Kuumaa vettä kaadettiin termospulloon, ja veden lämpötila mitattiin tunnin välein. Huoneen lämpötila oli koko ajan $20{,}0\\,{}^\\circ\\text{C}$. Taulukko on esimerkkiaineistoa.\n\na) Laske veden lämpötilan lasku ensimmäisen tunnin aikana ja viimeisen tunnin aikana.\n\nb) Kuinka monta kertaa suurempi lasku oli ensimmäisellä tunnilla kuin viimeisellä?\n\nc) Selitä taulukon avulla, miksi lämpötilan lasku hidastuu, kun vesi lähestyy huoneen lämpötilaa.\n\nSyötä vastauslaatikkoon kohdan b) tulos.",
+      "text": "Kuumaa vettä kaadettiin termospulloon, ja veden lämpötila mitattiin tunnin välein. Huoneen lämpötila oli koko ajan $20{,}0\\,{}^\\circ\\text{C}$. Taulukko on esimerkkiaineistoa.\n\na) Laske veden lämpötilan lasku ensimmäisen tunnin aikana ja viimeisen tunnin aikana.\n\nb) Kuinka monta kertaa suurempi lasku oli ensimmäisellä tunnilla kuin viimeisellä?\n\nc) Selitä taulukon avulla, miksi lämpötilan lasku hidastuu, kun vesi lähestyy huoneen lämpötilaa. Vihje: laske kunkin tunnin lasku jaettuna tunnin alun lämpötilaerolla huoneeseen.\n\nSyötä vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "data",
         "reasoning"
@@ -303,7 +303,7 @@
     {
       "id": "fy3-3-L3-04",
       "level": 3,
-      "text": "Henkilön kehon lämpötilaa mitattiin viisi kertaa kolmella menetelmällä lyhyessä ajassa. Suuhun asetettava digitaalinen lämpömittari on tässä viitemenetelmä. Taulukko on esimerkkiaineistoa.\n\na) Laske kunkin menetelmän lukemien keskiarvo. Kirjoita summa ennen jakamista.\n\nb) Laske otsamittarin keskiarvon ero viitemenetelmän keskiarvoon, $\\theta_\\text{suu} - \\theta_\\text{otsa}$, kelvineinä.\n\nc) Arvioi kunkin menetelmän hajontaa lukemien vaihteluvälin puolikkaalla. Onko otsamittarin ero systemaattista vai satunnaista virhettä? Perustele.\n\nd) Henkilön lämpötila on suuhun mitattuna $37{,}6\\,{}^\\circ\\text{C}$, ja kuumeen raja on $37{,}5\\,{}^\\circ\\text{C}$. Oleta, että otsamittarin ero on aina sama. Mitä otsamittari näyttäisi keskimäärin, ja havaittaisiinko kuume?\n\nSyötä vastauslaatikkoon kohdan b) tulos.",
+      "text": "Henkilön kehon lämpötilaa mitattiin viisi kertaa kolmella menetelmällä lyhyessä ajassa. Suuhun asetettava digitaalinen lämpömittari on tässä viitemenetelmä. Taulukko on esimerkkiaineistoa.\n\na) Laske kunkin menetelmän lukemien keskiarvo. Kirjoita summa ennen jakamista. Muut kohdat tarkistat ratkaisusta.\n\nb) Laske otsamittarin keskiarvon ero viitemenetelmän keskiarvoon, $\\theta_\\text{suu} - \\theta_\\text{otsa}$, kelvineinä.\n\nc) Arvioi kunkin menetelmän hajontaa lukemien vaihteluvälin puolikkaalla. Onko otsamittarin ero systemaattista vai satunnaista virhettä? Perustele. Systemaattinen virhe poikkeaa joka mittauksessa samaan suuntaan, satunnainen virhe vaihtelee suuntaan ja toiseen.\n\nd) Henkilön lämpötila on suuhun mitattuna $37{,}6\\,{}^\\circ\\text{C}$, ja kuumeen raja on $37{,}5\\,{}^\\circ\\text{C}$. Oleta, että otsamittarin ero on aina sama. Mitä otsamittari näyttäisi keskimäärin, ja havaittaisiinko kuume?\n\nSyötä vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "data",
         "error",
@@ -357,7 +357,7 @@
     {
       "id": "fy3-3-L3-05",
       "level": 3,
-      "text": "Esimerkkiaineisto: teräksinen, jäykkä ja tiivis ilmasäiliö täytetään lämpötilassa $20{,}0\\,{}^\\circ\\text{C}$ niin, että säiliön ylipaine on $600\\,\\text{kPa}$. Ilmanpaine on $101\\,\\text{kPa}$. Säiliön varoventtiili avautuu, kun ylipaine on $900\\,\\text{kPa}$. Oleta, että ilmaa ei vuoda ja että paine on suoraan verrannollinen kelvinlämpötilaan.\n\na) Säiliö jätetään kuumaan autoon, jossa sen lämpötila nousee arvoon $60{,}0\\,{}^\\circ\\text{C}$. Laske säiliön kokonaispaine ja ylipaine.\n\nb) Missä lämpötilassa varoventtiili avautuisi?\n\nc) Kuinka monta prosenttia ilman hiukkasten keskimääräinen liike-energia kasvaa lämpötilasta $20{,}0\\,{}^\\circ\\text{C}$ lämpötilaan $60{,}0\\,{}^\\circ\\text{C}$? Vertaa kokonaispaineen ja ylipaineen suhteellista kasvua ja perustele, kumpi on verrannollinen kelvinlämpötilaan.\n\nSyötä vastauslaatikkoon kohdan b) tulos celsiusasteina.",
+      "text": "Teräksinen, jäykkä ja tiivis ilmasäiliö täytetään lämpötilassa $20{,}0\\,{}^\\circ\\text{C}$ niin, että säiliön ylipaine on $600\\,\\text{kPa}$. Ilmanpaine on $101\\,\\text{kPa}$, ja ylipaine tarkoittaa kokonaispaineen ja ilmanpaineen erotusta. Säiliön varoventtiili avautuu, kun ylipaine on $900\\,\\text{kPa}$. Oleta, että ilmaa ei vuoda ja että kokonaispaine on suoraan verrannollinen kelvinlämpötilaan. Tiedot ovat esimerkkiaineistoa.\n\na) Säiliö jätetään kuumaan autoon, jossa sen lämpötila nousee arvoon $60{,}0\\,{}^\\circ\\text{C}$. Laske säiliön kokonaispaine ja ylipaine.\n\nb) Missä lämpötilassa varoventtiili avautuisi?\n\nc) Kuinka monta prosenttia ilman hiukkasten keskimääräinen liike-energia kasvaa lämpötilasta $20{,}0\\,{}^\\circ\\text{C}$ lämpötilaan $60{,}0\\,{}^\\circ\\text{C}$? Vertaa kokonaispaineen ja ylipaineen suhteellista kasvua ja perustele, kumpi on verrannollinen kelvinlämpötilaan.\n\nSyötä vastauslaatikkoon kohdan b) tulos celsiusasteina.",
       "kind": [
         "model",
         "reasoning"
