@@ -40,7 +40,7 @@ a["fy3-7-L1-08"] = 1.36e6 / r                          # unattended pot: m = Q/r
 # Level 2 additions
 a["fy3-7-L2-05"] = 600 * (157 - 18) / 0.250 / 1e3      # ice heated at 600 W, flat part 18 s -> 157 s read from the table: s = P t/m = 83 400 J/0,250 kg = 333,6 kJ/kg -> 334
 a["fy3-7-L2-06"] = 3000 * 300 / r                      # boil-off at 3,0 kW in 5,0 min: m = P t/r = 900 000 J / 2 260 000 J/kg = 0,398 kg -> 0,40 kg
-a["fy3-7-L2-07"] = 100.0 - 81.3                        # boiling points from the table: 101,3 kPa -> 100,0 °C, 50,0 kPa -> 81,3 °C, difference 18,7 K
+a["fy3-7-L2-07"] = 100.0 - (81.3 + 90.0) / 2             # 60,0 kPa is midway between 50,0 kPa (81,3 °C) and 70,0 kPa (90,0 °C): 85,65 °C, difference 14,35 K -> 14,4 K
 # Level 3 additions
 P_stear = 2200 * 0.100 * (80.0 - 70.2) / (3 * 60)       # liquid stearin cools 9,8 K in 3 min: P = c m ΔT/Δt = 2156 J/180 s = 11,98 W
 a["fy3-7-L3-04"] = P_stear * (30.9 - 3.2) * 60 / 1e3     # solidifying 3,2 -> 30,9 min (27,7 min): Q = P Δt = 19,9 kJ -> 20 kJ (s = Q/m = 199 kJ/kg)

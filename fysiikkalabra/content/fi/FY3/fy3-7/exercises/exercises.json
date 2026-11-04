@@ -53,13 +53,8 @@
       "answer": "Lämpötila pysyy samana, koska energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia.",
       "choices": [
         {
-          "text": "Lämpötila nousee tasaisesti, koska siirtyvä energia kasvattaa hiukkasten liike-energiaa.",
+          "text": "Lämpötila nousee tasaisesti, koska energia kasvattaa hiukkasten liike-energiaa.",
           "feedback": "Sulamisen aikana siirtyvä energia ei kasvata liike-energiaa vaan hiukkasten välistä vuorovaikutusenergiaa. Siksi lämpötila ei nouse, vaikka energiaa siirtyy paljon."
-        },
-        {
-          "text": "Lämpötila pysyy samana, koska energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia.",
-          "correct": true,
-          "feedback": "Oikein: vakiopaineessa lämpötila pysyy vakiona koko olomuodon muutoksen ajan. Energia kuluu hiukkasten välisten sidosten muuttamiseen, ja vasta kun kaikki jää on sulanut, vesi alkaa lämmetä."
         },
         {
           "text": "Lämpötila laskee, koska sulaminen ottaa energiaa seoksesta itsestään.",
@@ -68,6 +63,11 @@
         {
           "text": "Lämpötila nousee ensin ja laskee sitten, koska energiaa tarvitaan alussa eniten.",
           "feedback": "Lämpötila ei muutu sulamisen aikana, ei nousuna eikä laskuna. Se alkaa nousta vasta, kun kaikki jää on sulanut."
+        },
+        {
+          "text": "Lämpötila pysyy samana, koska energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia.",
+          "correct": true,
+          "feedback": "Oikein: vakiopaineessa lämpötila pysyy vakiona koko olomuodon muutoksen ajan. Energia kuluu hiukkasten keskinäisten vuorovaikutusten muuttamiseen, ja vasta kun kaikki jää on sulanut, vesi alkaa lämmetä."
         }
       ]
     },
@@ -80,10 +80,10 @@
       ],
       "unit": "",
       "tolerance": 0.02,
-      "answer": "Haihtuvat vesimolekyylit ottavat energiaa mukaansa iholta, joten iho menettää energiaa.",
+      "answer": "Haihtuva hiki ottaa energiaa iholta, joten iho viilenee.",
       "choices": [
         {
-          "text": "Haihtuessaan hiki luovuttaa energiaa iholle, ja siksi ihon lämpötila laskee.",
+          "text": "Hiki luovuttaa haihtuessaan energiaa iholle, ja siksi ihon lämpötila laskee.",
           "feedback": "Höyrystyminen ei luovuta energiaa vaan sitoo sitä. Jos hiki luovuttaisi energiaa iholle, iho lämpenisi eikä viilenisi."
         },
         {
@@ -91,12 +91,12 @@
           "feedback": "Hiki tulee kehosta ja on iholla yhtä lämmintä kuin iho. Viilentävä vaikutus syntyy vasta haihtumisesta."
         },
         {
-          "text": "Haihtuvat vesimolekyylit ottavat energiaa mukaansa iholta, joten iho menettää energiaa.",
+          "text": "Haihtuva hiki ottaa energiaa iholta, joten iho viilenee.",
           "correct": true,
           "feedback": "Oikein: nesteen höyrystyminen vaatii energiaa, $Q = rm$, ja hiki ottaa sen iholta. Kun iho menettää energiaa, sen lämpötila laskee."
         },
         {
-          "text": "Hien haihtuminen kuluttaa ihon happea, ja siksi iho viilenee.",
+          "text": "Haihtuminen kuluttaa ihon happea, ja siksi iho viilenee.",
           "feedback": "Haihtuminen ei kuluta happea. Viilentävä vaikutus johtuu siitä, että höyrystyminen sitoo energiaa."
         }
       ]
@@ -150,10 +150,10 @@
         "data",
         "experiment"
       ],
-      "text": "Oppilas lämmittää $0{,}250\\,\\text{kg}$ jäätä $600\\,\\text{W}$:n uppokuumentimella ja mittaa lämpötilan $T$ ajan $t$ funktiona (taulukko, esimerkkiaineisto). Oleta, että kaikki kuumentimen energia siirtyy jäähän ja siitä syntyvään veteen.\n\na) Selitä taulukon avulla, mitä aineelle tapahtuu eri vaiheissa ja miksi lämpötila ei nouse hetkien $20\\,\\text{s}$ ja $150\\,\\text{s}$ välillä.\n\nb) Määritä sulamiseen kuluva aika taulukosta (arvioi alku ja loppu) ja laske sen avulla jään ominaissulamislämpö.\n\nKirjoita vastauslaatikkoon kohdan b) ominaissulamislämpö yksikössä $\\text{kJ/kg}$.",
+      "text": "Oppilas lämmittää $0{,}250\\,\\text{kg}$ jäätä $600\\,\\text{W}$:n uppokuumentimella ja mittaa lämpötilan $T$ ajan $t$ funktiona (taulukko, esimerkkiaineisto). Oleta, että kaikki kuumentimen energia siirtyy jäähän ja siitä syntyvään veteen.\n\na) Selitä taulukon avulla, mitä aineelle tapahtuu eri vaiheissa ja miksi lämpötila ei nouse noin hetkien $20\\,\\text{s}$ ja $150\\,\\text{s}$ välillä.\n\nb) Määritä sulamiseen kuluva aika taulukosta ja laske sen avulla jään ominaissulamislämpö. Taulukon rivit $20\\,\\text{s}$ ja $150\\,\\text{s}$ ovat jo tasanteen sisällä: arvioi nousujen kulmakertoimista, milloin lämpötila tarkalleen saavuttaa $0\\,{}^\\circ\\text{C}$ ja milloin se alkaa taas nousta.\n\nKirjoita vastauslaatikkoon kohdan b) ominaissulamislämpö yksikössä $\\text{kJ/kg}$.",
       "answer": 334,
       "unit": "kJ/kg",
-      "tolerance": 0.04,
+      "tolerance": 0.08,
       "data": {
         "caption": "Jään lämmitys $600\\,\\text{W}$:n teholla (esimerkkiaineisto)",
         "columns": [
@@ -218,10 +218,10 @@
         "data",
         "reasoning"
       ],
-      "text": "Taulukossa on veden kiehumispiste $T_\\text{k}$ eri paineissa $p$ (vesihöyrytaulukko, arvot pyöristetty). Kattilassa keitetään vettä avoimena korkealla vuoristossa, jossa ilmanpaine on $50{,}0\\,\\text{kPa}$. Normaali ilmanpaine on $101{,}3\\,\\text{kPa}$.\n\na) Kuinka monta kelviniä alempana vesi kiehuu paineessa $50{,}0\\,\\text{kPa}$ kuin normaalipaineessa?\n\nb) Selitä, miksi ruoka kypsyy vuoristossa hitaammin, vaikka vesi kiehuu koko ajan ja hella antaa saman tehon.\n\nKirjoita vastauslaatikkoon kohdan a) tulos.",
-      "answer": 18.7,
+      "text": "Taulukossa on veden kiehumispiste $T_\\text{k}$ eri paineissa $p$ (vesihöyrytaulukko, arvot pyöristetty). Kattilassa keitetään vettä avoimena korkealla vuoristossa, jossa ilmanpaine on $60{,}0\\,\\text{kPa}$. Normaali ilmanpaine on $101{,}3\\,\\text{kPa}$.\n\na) Arvioi kiehumispiste paineessa $60{,}0\\,\\text{kPa}$ taulukon kahden viereisen rivin avulla. Kuinka monta kelviniä alempana vesi kiehuu paineessa $60{,}0\\,\\text{kPa}$ kuin normaalipaineessa?\n\nb) Selitä, miksi ruoka kypsyy vuoristossa hitaammin, vaikka vesi kiehuu koko ajan ja hella antaa saman tehon.\n\nKirjoita vastauslaatikkoon kohdan a) tulos.",
+      "answer": 14.4,
       "unit": "K",
-      "tolerance": 0.03,
+      "tolerance": 0.04,
       "data": {
         "caption": "Veden kiehumispiste eri paineissa (vesihöyrytaulukko)",
         "columns": [
@@ -288,7 +288,7 @@
       "text": "Kynttilän valmistuksessa käytetty steariini on sulatettu $0{,}100\\,\\text{kg}$:n erä, joka jäähtyy ja jähmettyy ilmassa. Lämpötila $T$ mitataan ajan $t$ funktiona (taulukko, esimerkkiaineisto). Steariini luovuttaa ympäristöön koko ajan saman tehon. Nestemäisen steariinin ominaislämpökapasiteetti on $2200\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Määritä steariinin jähmettymislämpötila taulukosta.\n\nb) Laske nestemäisen steariinin jäähtymisestä ympäristöön luovutettu teho $P$.\n\nc) Arvioi taulukosta jähmettymisen alku- ja loppuhetki ja laske jähmettymisessä vapautuva energia sekä steariinin ominaisjähmettymislämpö (sama kuin ominaissulamislämpö). Perustele, miksi lämpötila ei laske jähmettymisen aikana.\n\nKirjoita vastauslaatikkoon kohdan c) jähmettymisessä vapautuva energia yksikössä $\\text{kJ}$.",
       "answer": 20,
       "unit": "kJ",
-      "tolerance": 0.06,
+      "tolerance": 0.08,
       "data": {
         "caption": "Steariinierän jäähtyminen (esimerkkiaineisto)",
         "columns": [

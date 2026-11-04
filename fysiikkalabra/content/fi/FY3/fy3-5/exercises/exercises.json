@@ -43,29 +43,29 @@
     {
       "id": "fy3-5-L1-06",
       "level": 1,
-      "text": "Kahvikuppi ja iso kattila on täytetty vedellä, joka on molemmissa $60\\,{}^\\circ\\text{C}$:ssa. Kattilassa vettä on kymmenen kertaa enemmän kuin kupissa. Mikä väite vesien sisäenergiasta on oikein?",
+      "text": "Kahvikuppi ja iso kattila ovat täynnä vettä, jonka lämpötila on kummassakin $60\\,{}^\\circ\\text{C}$. Kattilassa vettä on kymmenen kertaa enemmän kuin kupissa. Mikä väite vesien sisäenergiasta on oikein?",
       "kind": [
         "concept"
       ],
-      "answer": "Kattilassa on suurempi sisäenergia, koska samassa lämpötilassa vettä on enemmän.",
+      "answer": "Kattilassa on suurempi sisäenergia, koska samassa lämpötilassa hiukkasia on enemmän.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Kattilassa on suurempi sisäenergia, koska samassa lämpötilassa vettä on enemmän.",
+          "text": "Kupissa on suurempi sisäenergia, koska pieni vesimäärä kuumenee nopeammin kuin suuri.",
+          "feedback": "Sisäenergia ei riipu siitä, kuinka nopeasti vesi on kuumentunut, vaan siitä, kuinka paljon hiukkasia on ja kuinka voimakkaasti ne liikkuvat. Hiukkasia on kupissa vähemmän, joten sen sisäenergia on pienempi."
+        },
+        {
+          "text": "Molemmilla on sama sisäenergia, koska lämpötila on kummassakin vedessä sama.",
+          "feedback": "Lämpötila ja sisäenergia eivät ole sama asia. Lämpötila ei riipu aineen määrästä, mutta sisäenergia riippuu: kattilassa on enemmän hiukkasia, joten sen sisäenergia on suurempi."
+        },
+        {
+          "text": "Kattilassa on suurempi sisäenergia, koska samassa lämpötilassa hiukkasia on enemmän.",
           "feedback": "Oikein: sisäenergia on hiukkasten liike-energian ja vuorovaikutusten energian summa, joten se riippuu myös aineen määrästä. Samassa lämpötilassa hiukkasia on kattilassa enemmän, ja siksi kattilan sisäenergia on suurempi.",
           "correct": true
         },
         {
-          "text": "Molemmilla on sama sisäenergia, koska lämpötila on kummassakin sama.",
-          "feedback": "Lämpötila ja sisäenergia eivät ole sama asia. Lämpötila ei riipu aineen määrästä, mutta sisäenergia riippuu: kattilassa on enemmän hiukkasia, joten sen sisäenergia on suurempi."
-        },
-        {
-          "text": "Kupissa on suurempi sisäenergia, koska pieni vesimäärä kuumenee nopeammin.",
-          "feedback": "Sisäenergia ei riipu siitä, kuinka nopeasti vesi on kuumentunut, vaan siitä, kuinka paljon hiukkasia on ja kuinka voimakkaasti ne liikkuvat. Hiukkasia on kupissa vähemmän, joten sen sisäenergia on pienempi."
-        },
-        {
-          "text": "Kattilassa on enemmän lämpöä, koska lämpö varastoituu veteen sitä enemmän, mitä enemmän vettä on.",
+          "text": "Kattilassa on enemmän lämpöä, koska lämpö varastoituu veteen vesimäärän mukaan.",
           "feedback": "Kappaleessa ei ole lämpöä: lämpö on energian siirtymistä lämpötilaeron vuoksi. Veteen varastoitunut energia on sisäenergiaa, ja kattilan sisäenergia on suurempi, koska hiukkasia on enemmän."
         }
       ]
@@ -73,19 +73,14 @@
     {
       "id": "fy3-5-L1-07",
       "level": 1,
-      "text": "Eristettyyn astiaan kaadetaan kuumaa ja kylmää vettä, ja vesi sekoitetaan. Astiasta ei siirry energiaa pois, ja sekoituksen tekemä työ on merkityksetön. Mikä väite energiasta on oikein?",
+      "text": "Eristettyyn astiaan kaadetaan kuumaa ja kylmää vettä, ja vesi sekoitetaan. Astiasta ei siirry energiaa pois, sekoituksen tekemä työ on merkityksetön ja astian oman lämpenemisen voi jättää huomiotta. Mikä väite energiasta on oikein?",
       "kind": [
         "concept"
       ],
-      "answer": "Kuuman veden sisäenergia pienenee sen verran kuin kylmän kasvaa, ja kokonaisenergia säilyy.",
+      "answer": "Kuuman veden sisäenergia pienenee yhtä paljon kuin kylmän kasvaa, joten energia säilyy.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
-        {
-          "text": "Kuuman veden sisäenergia pienenee sen verran kuin kylmän kasvaa, ja kokonaisenergia säilyy.",
-          "feedback": "Oikein: lämpöä siirtyy kuumasta vedestä kylmään, kunnes lämpötilat ovat samat. Eristetyssä systeemissä energia säilyy, joten kuuman veden luovuttama energia on täsmälleen kylmän veden saama energia.",
-          "correct": true
-        },
         {
           "text": "Kuuma vesi luovuttaa lämpöä, mutta osa siitä häviää sekoituksessa, ja kokonaisenergia pienenee.",
           "feedback": "Energia ei häviä mihinkään. Eristetyssä systeemissä kokonaisenergia säilyy, joten kaikki kuuman veden luovuttama energia siirtyy kylmään veteen."
@@ -95,8 +90,13 @@
           "feedback": "Lämpötilan muuttuminen tarkoittaa sisäenergian muuttumista: kuuman veden hiukkaset hidastuvat ja kylmän nopeutuvat. Sisäenergia ei siis voi pysyä kummassakin ennallaan."
         },
         {
-          "text": "Kylmä vesi saa enemmän energiaa kuin kuuma luovuttaa, koska kylmässä vedessä on tilaa energialle.",
+          "text": "Kylmä vesi saa enemmän energiaa kuin kuuma luovuttaa, koska kylmässä vedessä on tilaa.",
           "feedback": "Kylmä vesi ei voi saada enempää energiaa kuin kuuma luovuttaa, koska energiaa ei synny tyhjästä. Eristetyssä systeemissä energia säilyy, joten saatu ja luovutettu energia ovat yhtä suuret."
+        },
+        {
+          "text": "Kuuman veden sisäenergia pienenee yhtä paljon kuin kylmän kasvaa, joten energia säilyy.",
+          "feedback": "Oikein: lämpöä siirtyy kuumasta vedestä kylmään, kunnes lämpötilat ovat samat. Eristetyssä systeemissä energia säilyy, joten kuuman veden luovuttama energia on täsmälleen kylmän veden saama energia.",
+          "correct": true
         }
       ]
     },
@@ -146,7 +146,7 @@
     {
       "id": "fy3-5-L2-05",
       "level": 2,
-      "text": "Suljetussa sylinterissä oleva kaasu käy läpi neljän vaiheen kierron ja palaa neljännen vaiheen jälkeen täsmälleen alkutilaansa: kaasun määrä, lämpötila ja muut tilanmuuttujat ovat samat kuin alussa. Kaasua voi pitää ideaalikaasuna. Taulukossa on esimerkkiaineistona kaasuun siirtynyt lämpömäärä $Q$ ja kaasuun tehty työ $W$ jokaisessa vaiheessa; vaiheen 4 työtä ei tunneta. Kuinka suuri on työ $W$ vaiheessa 4? Anna vastaus etumerkkeineen: negatiivinen $W$ tarkoittaa, että kaasu tekee työtä ympäristöön.",
+      "text": "Suljetussa sylinterissä oleva kaasu käy läpi neljän vaiheen kierron ja palaa neljännen vaiheen jälkeen täsmälleen alkutilaansa: kaasun määrä, lämpötila ja muut tilanmuuttujat ovat samat kuin alussa. Taulukossa on esimerkkiaineistona kaasuun siirtynyt lämpömäärä $Q$ ja kaasuun tehty työ $W$ jokaisessa vaiheessa; vaiheen 4 työtä ei tunneta. Kuinka suuri on työ $W$ vaiheessa 4? Anna vastaus etumerkkeineen: negatiivinen $W$ tarkoittaa, että kaasu tekee työtä ympäristöön.",
       "kind": [
         "data",
         "reasoning"
@@ -312,7 +312,7 @@
     {
       "id": "fy3-5-L3-05",
       "level": 3,
-      "text": "Vedenkeittimen vastukselle menevä sähköenergia $E_\\text{v}$ mitataan energiamittarilla, ja veden sisäenergian kasvu $\\Delta U$ on laskettu lämpötilan noususta. Taulukossa on esimerkkiaineistona mittaukset eri ajanhetkillä; vastus siirtää veteen energiaa lämpönä, ja vettä ei sekoiteta eikä siihen tehdä työtä. Aineiston mukaan energia ei näytä säilyvän.\n\na) Laske vastuksen keskimääräinen teho $P$ koko mittauksen ajalta.\n\nb) Laske, kuinka suuri lämpömäärä $Q_\\text{ulos}$ on siirtynyt vedestä ympäristöön ajanhetkellä $120\\,\\text{s}$, ja kuinka monta prosenttia vastuksen energiasta se on.\n\nc) Selitä energian säilymisen avulla, mihin ”puuttuva” energia on mennyt ja miksi ensimmäinen pääsääntö $\\Delta U = Q + W$ on aineistossa silti voimassa. Perustele taulukon avulla, että kertynyt häviö kasvaa ajan mukana.\n\nVastauslaatikkoon tulee kohdan b) lämpömäärä $Q_\\text{ulos}$ kilojouleina.",
+      "text": "Vedenkeittimen vastukselle menevä sähköenergia $E_\\text{v}$ mitataan energiamittarilla, ja veden sisäenergian kasvu $\\Delta U$ on laskettu lämpötilan noususta. Taulukossa on esimerkkiaineistona mittaukset eri ajanhetkillä; vastus siirtää veteen energiaa lämpönä, ja vettä ei sekoiteta eikä siihen tehdä työtä. Oletetaan, että vastuksen ja keittimen rungon oma lämpeneminen on merkityksetön. Aineiston mukaan energia ei näytä säilyvän.\n\na) Laske vastuksen keskimääräinen teho $P$ koko mittauksen ajalta.\n\nb) Laske, kuinka suuri lämpömäärä $Q_\\text{ulos}$ on siirtynyt vedestä ympäristöön ajanhetkellä $120\\,\\text{s}$, ja kuinka monta prosenttia vastuksen energiasta se on.\n\nc) Selitä energian säilymisen avulla, mihin ”puuttuva” energia on mennyt ja miksi ensimmäinen pääsääntö $\\Delta U = Q + W$ on aineistossa silti voimassa. Perustele taulukon avulla, että kertynyt häviö kasvaa ajan mukana.\n\nVastauslaatikkoon tulee kohdan b) lämpömäärä $Q_\\text{ulos}$ kilojouleina.",
       "kind": [
         "data",
         "model",

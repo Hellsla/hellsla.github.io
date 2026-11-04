@@ -47,26 +47,26 @@
       "kind": [
         "concept"
       ],
-      "answer": "Veden ominaislämpökapasiteetti on suurempi, joten sama lämpömäärä nostaa vesimassan lämpötilaa vähemmän kuin saman hiekkamassan.",
+      "answer": "Veden ominaislämpökapasiteetti on suurempi, joten sama lämpömäärä nostaa sen lämpötilaa vähemmän.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Veden ominaislämpökapasiteetti on pienempi, joten sama lämpömäärä nostaa vesimassan lämpötilaa vähemmän kuin saman hiekkamassan.",
-          "feedback": "Suunta on väärinpäin. Kun $Q$ ja $m$ ovat samat, $\\Delta T = \\dfrac{Q}{c m}$ on sitä pienempi, mitä suurempi $c$ on. Veden $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ on suurempi kuin hiekan $800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$."
-        },
-        {
-          "text": "Vesi heijastaa auringonvalon kokonaan takaisin, joten siihen ei siirry lämpöä, vaikka hiekkaan siirtyy.",
+          "text": "Vesi heijastaa auringonvalon takaisin, joten siihen siirtyy vähemmän lämpöä kuin hiekkaan.",
           "feedback": "Tehtävässä vesi ja hiekka saavat saman lämpömäärän, joten heijastuminen ei selitä eroa. Vesikin lämpenee, vain vähemmän."
-        },
-        {
-          "text": "Veden ominaislämpökapasiteetti on suurempi, joten sama lämpömäärä nostaa vesimassan lämpötilaa vähemmän kuin saman hiekkamassan.",
-          "correct": true,
-          "feedback": "Oikein: lämpötilan muutos on $\\Delta T = \\dfrac{Q}{c m}$. Kun $Q$ ja $m$ ovat samat, suuri $c$ tarkoittaa pientä $\\Delta T$:ta. Veden $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ on noin viisinkertainen hiekan arvoon $800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ verrattuna."
         },
         {
           "text": "Lämpötilan muutos riippuu vain massasta ja lämpömäärästä, joten aine ei vaikuta siihen.",
           "feedback": "Aine vaikuttaa: kaavassa $Q = c m \\Delta T$ on ominaislämpökapasiteetti $c$, joka on eri aineilla eri suuri. Siksi sama $Q$ ja sama $m$ antavat eri aineille eri $\\Delta T$:n."
+        },
+        {
+          "text": "Hiekka on tiheämpää kuin vesi, joten sama lämpömäärä nostaa sen lämpötilaa enemmän.",
+          "feedback": "Tiheys ei ratkaise, koska massat ovat samat. Kaavassa $\\Delta T = \\dfrac{Q}{c m}$ on massa $m$ eikä tiheyttä, ja ero tulee aineen ominaislämpökapasiteetista $c$. Veden $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ on suurempi kuin hiekan $800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$."
+        },
+        {
+          "text": "Veden ominaislämpökapasiteetti on suurempi, joten sama lämpömäärä nostaa sen lämpötilaa vähemmän.",
+          "correct": true,
+          "feedback": "Oikein: lämpötilan muutos on $\\Delta T = \\dfrac{Q}{c m}$. Kun $Q$ ja $m$ ovat samat, suuri $c$ tarkoittaa pientä $\\Delta T$:ta. Veden $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ on noin viisinkertainen hiekan arvoon $800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ verrattuna."
         }
       ]
     },
@@ -253,7 +253,7 @@
     {
       "id": "fy3-6-L3-04",
       "level": 3,
-      "text": "Kalorimetrissä lämmitetään sähkövastuksella $0{,}50\\,\\text{kg}$ vettä tasaisella $200\\,\\text{W}$:n teholla. Veden lämpötila mitataan minuutin välein (esimerkkiaineisto). Astian oma lämpökapasiteetti jätetään huomiotta.\n\na) Laske veden ominaislämpökapasiteetti ensimmäisen minuutin mittauksesta olettaen, että lämpöhäviöt ovat vielä mitättömiä, ja vertaa sitä taulukkoarvoon.\n\nb) Selitä, miksi kuvaaja kaartuu, vaikka teho on vakio, ja perustele, miksi ominaislämpökapasiteetti kannattaa sovittaa kuvaajan alkuosaan.\n\nc) Käytä veden taulukkoarvoa ja laske, kuinka suuri keskimääräinen lämpöhäviön teho on välillä $480\\text{–}600\\,\\text{s}$. Anna c)-kohdan tulos watteina vastauslaatikkoon.",
+      "text": "Kalorimetrissä lämmitetään sähkövastuksella $0{,}50\\,\\text{kg}$ vettä tasaisella $200\\,\\text{W}$:n teholla. Veden lämpötila mitataan minuutin välein (esimerkkiaineisto). Huoneen lämpötila on $20\\,{}^\\circ\\text{C}$. Astian oma lämpökapasiteetti jätetään huomiotta.\n\na) Laske veden ominaislämpökapasiteetti ensimmäisen minuutin mittauksesta olettaen, että lämpöhäviöt ovat vielä mitättömiä, ja vertaa sitä taulukkoarvoon.\n\nb) Selitä, miksi kuvaaja kaartuu, vaikka teho on vakio, ja perustele, miksi ominaislämpökapasiteetti kannattaa sovittaa kuvaajan alkuosaan.\n\nc) Käytä veden taulukkoarvoa ja laske, kuinka suuri keskimääräinen lämpöhäviön teho on välillä $480\\text{–}600\\,\\text{s}$. Anna c)-kohdan tulos watteina vastauslaatikkoon.",
       "kind": [
         "data",
         "experiment",

@@ -47,7 +47,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Kärjen pinta-ala on pieni, joten sama voima aiheuttaa siinä suuren paineen.",
+      "answer": "Kärjen pinta-ala on pieni, joten sama voima aiheuttaa kärjessä suuremman paineen.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -56,17 +56,17 @@
           "feedback": "Väärin: naula on tasapainossa, joten voima on kärjessä yhtä suuri kuin peukalolla. Naula ei vahvista voimaa, vaan sen kärjen pieni ala kasvattaa painetta."
         },
         {
-          "text": "Kärjen pinta-ala on pieni, joten sama voima aiheuttaa siinä suuren paineen.",
-          "correct": true,
-          "feedback": "Oikein: paine on voima jaettuna alalla, $p = F/A$. Kun voima on sama ja kärjen ala pieni, kärjen paine on suuri."
-        },
-        {
-          "text": "Kannan pinta-ala on suuri, joten kantaan kohdistuva paine on suurempi kuin kärkeen.",
+          "text": "Kannan pinta-ala on suuri, joten kantaan kohdistuu suurempi paine kuin kärkeen.",
           "feedback": "Väärin: suuri ala pienentää painetta. Samalla voimalla paine on suurempi siellä, missä ala on pienempi eli kärjessä."
         },
         {
           "text": "Paine on kärjessä ja kannassa yhtä suuri, joten ero johtuu vain naulan omasta painosta.",
           "feedback": "Väärin: paine ei ole sama, koska ala on eri. Naulan oma paino on peukalon voimaan verrattuna mitätön."
+        },
+        {
+          "text": "Kärjen pinta-ala on pieni, joten sama voima aiheuttaa kärjessä suuremman paineen.",
+          "correct": true,
+          "feedback": "Oikein: paine on voima jaettuna alalla, $p = F/A$. Kun voima on sama ja kärjen ala pieni, kärjen paine on suuri."
         }
       ]
     },
@@ -81,30 +81,30 @@
     {
       "id": "fy3-4-L1-08",
       "level": 1,
-      "text": "Oppilas väittää: \"Järvessä $10\\,\\text{m}$:n syvyydessä kokonaispaine on kaksi kertaa niin suuri kuin $5\\,\\text{m}$:n syvyydessä, koska syvyys on kaksinkertainen.\" Mikä virhe päättelyssä on?",
+      "text": "Oppilas väittää: ”Järvessä $10\\,\\text{m}$:n syvyydessä kokonaispaine on kaksi kertaa niin suuri kuin $5\\,\\text{m}$:n syvyydessä, koska syvyys on kaksinkertainen.” Mikä virhe päättelyssä on?",
       "kind": [
         "error",
         "concept"
       ],
-      "answer": "Vain veden osuus kaksinkertaistuu, koska ilmanpaine on molemmissa syvyyksissä sama.",
+      "answer": "Vain veden osuus kaksinkertaistuu, koska ilmanpaine on kummassakin syvyydessä sama.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
+        {
+          "text": "Vain veden osuus kaksinkertaistuu, koska ilmanpaine on kummassakin syvyydessä sama.",
+          "correct": true,
+          "feedback": "Oikein: kokonaispaine on $p = p_0 + \\rho g h$, ja vain osa $\\rho g h$ on suoraan verrannollinen syvyyteen. Vakiotermi $p_0$ ei kaksinkertaistu."
+        },
         {
           "text": "Paine ei riipu syvyydestä, koska nesteen paine määräytyy vain tiheydestä ja ilmanpaineesta.",
           "feedback": "Väärin: paine kasvaa syvyyden mukana, koska syvemmällä päällä on enemmän vettä. Hydrostaattinen paine on $\\rho g h$."
         },
         {
-          "text": "Syvemmällä vesi on kevyempää, joten paine kasvaa hitaammin kuin syvyys.",
+          "text": "Syvemmällä vesi on kevyempää, joten paine kasvaa hitaammin kuin syvyys kasvaa.",
           "feedback": "Väärin: vesi on käytännössä kokoonpuristumatonta ja sen tiheys on joka syvyydessä sama, joten hydrostaattinen paine kasvaa suoraan syvyyden mukana."
         },
         {
-          "text": "Vain veden osuus kaksinkertaistuu, koska ilmanpaine on molemmissa syvyyksissä sama.",
-          "correct": true,
-          "feedback": "Oikein: kokonaispaine on $p = p_0 + \\rho g h$, ja vain osa $\\rho g h$ on suoraan verrannollinen syvyyteen. Vakiotermi $p_0$ ei kaksinkertaistu."
-        },
-        {
-          "text": "Paine kasvaa syvyyden neliön mukaan, joten paine on yli kaksinkertainen, vaikka syvyys kaksinkertaistuu.",
+          "text": "Paine kasvaa syvyyden neliön mukaan, joten se on yli kaksinkertainen kaksinkertaisessa syvyydessä.",
           "feedback": "Väärin: hydrostaattinen paine kasvaa suoraan syvyyden mukana, ei neliöllisesti. Kuvaaja $(h, p)$ on suora."
         }
       ]
@@ -148,8 +148,7 @@
       "id": "fy3-4-L2-05",
       "level": 2,
       "kind": [
-        "data",
-        "graph"
+        "data"
       ],
       "text": "Esimerkkiaineisto: sukeltaja mittasi järvessä painemittarilla paineen eri syvyyksillä. Pisteisiin sovitetun suoran kulmakerroin on tietokoneella laskettuna $9{,}78\\,\\tfrac{\\text{kPa}}{\\text{m}}$, ja suora kulkee pisteiden keskipisteen $(h_{\\text{ka}}, p_{\\text{ka}})$ kautta. Mittarin lukeman epävarmuus on $\\pm 0{,}5\\,\\text{kPa}$.\n\na) Laske veden tiheys $\\rho$ kulmakertoimesta.\n\nb) Laske taulukon keskipiste ja sen avulla suoran vakiotermi eli ilmanpaine $p_0$ pinnalla.\n\nVastauskenttään tulee kohdan b) ilmanpaine kilopascaleina.",
       "answer": 99.7,
