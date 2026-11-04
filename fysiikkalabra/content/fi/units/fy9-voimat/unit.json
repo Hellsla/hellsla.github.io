@@ -1,0 +1,14 @@
+{
+ "id": "fy9-voimat",
+ "course": "FY9",
+ "chapter": 3,
+ "order": 2,
+ "title": "Newtonin lait ja voimakuvio",
+ "description": "Kerrataan FY4-moduulin Newtonin lait, voimakuvion piirtäminen, paino, kitka, kalteva taso, kytketyt kappaleet ja ilmanvastus ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}

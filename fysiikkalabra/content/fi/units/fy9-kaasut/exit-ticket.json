@@ -1,0 +1,10 @@
+[
+ {
+  "q": "Renkaan painemittari näyttää $220\\,\\text{kPa}$, ja ilmanpaine on $101\\,\\text{kPa}$. Mikä paine sijoitetaan tilanyhtälöön renkaan ilmasta?",
+  "a": "Kokonaispaine $p = p_0 + \\Delta p = 101\\,\\text{kPa} + 220\\,\\text{kPa} = 321\\,\\text{kPa} = 321\\,000\\,\\text{Pa}$. Mittari näyttää vain ylipaineen, mutta hiukkasten törmäykset tuottavat koko paineen."
+ },
+ {
+  "q": "Miksi lämpöpumpun lämpökerroin voi olla yli $1$, vaikka lämpövoimakoneen hyötysuhde on aina alle $1$?",
+  "a": "Lämpöpumppu ei muuta lämpöä työksi, vaan siirtää sähkön avulla lämpöä ulkoilmasta sisälle. Sisälle tulee sähköenergia ja ulkoa siirretty lämpö yhteensä, joten lämpö on sähköä suurempi. Energia säilyy silti: mitään ei synny tyhjästä."
+ }
+]

@@ -1,0 +1,522 @@
+{
+ "version": 1,
+ "contribution": "Kertaustunti kokoaa FY3-moduulin paineen ja hydrostaattisen paineen, Boylen lain ja kaasujen tilanmuutokset, ideaalikaasun tilanyhtälön, absoluuttisen nollapisteen määrittämisen sekä kaasun työn ja lämpövoimakoneen yhdeksi malliksi ja harjoittaa niistä ylioppilaskokeen tyyppisiä tehtäviä: kokonaispaine ja ylipaine, kelvinlämpötilat, mittausaineiston suoran jatkaminen, kaasun työ ja lämpövoimakoneen energiavirrat sekä paineen voima yhdessä FY4:n voimien kanssa.",
+ "learn": [
+  "ratkaisemaan paine-, kaasu- ja lämpövoimakonetehtäviä kelvinlämpötiloilla ja kokonaispaineella",
+  "laatimaan ja tulkitsemaan kaasun mittausaineiston kuvaajia ja niiden jatkeita",
+  "arvioimaan kaasumallien oletuksia, mittausraportteja ja keksijöiden väitteitä perustellusti"
+ ],
+ "prior": [
+  "Paine on voima jaettuna pinta-alalla, ja nesteessä se kasvaa syvyyden mukana (luku *Paine ja hydrostaattinen paine*)",
+  "Vakiolämpötilassa suljetun kaasun paine on kääntäen verrannollinen tilavuuteen (luku *Kaasujen tilanmuutokset ja Boylen laki*)",
+  "Tilanyhtälö $pV = nRT$ yhdistää paineen, tilavuuden, ainemäärän ja kelvinlämpötilan (luku *Ideaalikaasun tilanyhtälö $pV = nRT$*)",
+  "Absoluuttinen nollapiste arvioidaan jatkamalla mittaussuoraa nollapaineeseen (luku *Absoluuttisen nollapisteen määrittäminen*)",
+  "Lämpövoimakone muuttaa osan lämmöstä työksi ja luovuttaa loput kylmempään (luku *Kaasun tekemä työ ja lämpövoimakone*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Auton renkaat pumpattiin illalla lämpimässä autotallissa, jossa oli $+20\\,{}^\\circ\\text{C}$. Rengaspainemittari näytti $230\\,\\text{kPa}$, kuten auton ohjekirjassa neuvotaan. Yöllä auto seisoi pihalla $-20\\,{}^\\circ\\text{C}$:n pakkasessa, eikä renkaista vuotanut ilmaa. Ilmanpaine on $101\\,\\text{kPa}$. Ylioppilaskokeessa tällainen tilanne voi olla tehtävän alku: luvut on annettu, mutta kaavoja ei.",
+   "question": "Mitä mittari näyttää aamulla, ja miksi lukema muuttuu suhteessa enemmän kuin kelvinlämpötila?"
+  },
+  {
+   "id": "lt-1",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 1: lumikengät",
+   "prompt": "Retkeilijä seisoo hangessa ensin tavallisilla kengillä ja sitten lumikengillä, joiden pohjan pinta-ala on noin viisinkertainen. Kengillä hän uppoaa, lumikengillä ei. Mikä selitys on oikein?",
+   "choices": [
+    {
+     "text": "Lumikengillä hanki tukee häntä pienemmällä voimalla kuin kengillä.",
+     "feedback": "Hän seisoo paikallaan kummallakin kerralla, joten hangen tukivoima on yhtä suuri kuin hänen painonsa. Muuttuu ala, jolle sama voima jakautuu: paine $p = F/A$ pienenee. Kertaa luvussa *Paine ja hydrostaattinen paine*."
+    },
+    {
+     "text": "Sama voima jakautuu suuremmalle alalle, joten paine pienenee.",
+     "feedback": "Oikein. Tukivoima on sama, mutta viisinkertaisella alalla paine on noin viidesosa, eikä hanki enää anna periksi. Kertaa tarvittaessa luvussa *Paine ja hydrostaattinen paine*.",
+     "correct": true
+    },
+    {
+     "text": "Paine pysyy samana, koska hänen painonsa ei muutu lainkaan.",
+     "feedback": "Paino ei muutu, mutta paine on voima jaettuna alalla, $p = F/A$. Viisinkertainen ala antaa noin viidesosan paineesta. Kertaa luvussa *Paine ja hydrostaattinen paine*."
+    }
+   ]
+  },
+  {
+   "id": "lt-2",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 2: kapea ja leveä",
+   "prompt": "Kapeassa putkessa ja leveässä altaassa on vettä samaan korkeuteen, $2{,}0\\,\\text{m}$. Altaassa vettä on tuhat kertaa enemmän. Missä veden paine pohjalla on suurempi?",
+   "choices": [
+    {
+     "text": "Altaassa, koska siinä on tuhat kertaa enemmän vettä.",
+     "feedback": "Altaan vesi painaa enemmän, mutta paino jakautuu myös tuhatkertaiselle pohjalle. Paine pohjalla on $p_0 + \\rho g h$: se riippuu vain syvyydestä ja tiheydestä. Kertaa luvussa *Paine ja hydrostaattinen paine*."
+    },
+    {
+     "text": "Putkessa, koska vesi on siinä paljon ahtaammalla.",
+     "feedback": "Ahtaus ei kasvata painetta. Pohjaan kohdistuu sen yläpuolisen vesipatsaan paino, ja patsaan korkeus on molemmissa $2{,}0\\,\\text{m}$. Kertaa luvussa *Paine ja hydrostaattinen paine*."
+    },
+    {
+     "text": "Yhtä suuri, koska paine riippuu vain syvyydestä.",
+     "feedback": "Oikein. $p = p_0 + \\rho g h$, ja syvyys ja tiheys ovat samat, joten paine on sama astian muodosta riippumatta. Kertaa tarvittaessa luvussa *Paine ja hydrostaattinen paine*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "lt-3",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 3: puristettu ilma",
+   "prompt": "Suljetun ruiskun ilma puristetaan hitaasti kolmasosaan alkuperäisestä tilavuudesta, ja ilman lämpötila pysyy samana. Miten ilman paine muuttuu?",
+   "choices": [
+    {
+     "text": "Paine kasvaa kolminkertaiseksi.",
+     "feedback": "Oikein. Vakiolämpötilassa $p_1V_1 = p_2V_2$, joten kolmasosatilavuudessa paine on kolminkertainen. Samat hiukkaset osuvat seinämiin kolme kertaa niin usein. Kertaa tarvittaessa luvussa *Kaasujen tilanmuutokset ja Boylen laki*.",
+     "correct": true
+    },
+    {
+     "text": "Paine pienenee kolmasosaan alkuarvosta.",
+     "feedback": "Paine ja tilavuus muuttuvat vastakkaisiin suuntiin: kun tilavuus pienenee, samat hiukkaset osuvat seinämiin useammin ja paine kasvaa. $p_2 = p_1V_1/V_2 = 3p_1$. Kertaa luvussa *Kaasujen tilanmuutokset ja Boylen laki*."
+    },
+    {
+     "text": "Paine pysyy samana, koska $T$ on vakio.",
+     "feedback": "Vakio lämpötila tarkoittaa, että hiukkaset liikkuvat yhtä nopeasti, mutta pienemmässä tilassa ne osuvat seinämiin useammin. Boylen lain mukaan $pV$ pysyy vakiona, ei $p$. Kertaa luvussa *Kaasujen tilanmuutokset ja Boylen laki*."
+    },
+    {
+     "text": "Paine kasvaa yhdeksänkertaiseksi.",
+     "feedback": "Paine on kääntäen verrannollinen tilavuuteen, ei sen neliöön: $p_2 = p_1 \\cdot V_1/V_2 = 3p_1$. Kertaa luvussa *Kaasujen tilanmuutokset ja Boylen laki*."
+    }
+   ]
+  },
+  {
+   "id": "lt-4",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 4: lämmitetty pullo",
+   "prompt": "Suljetun, jäykän lasipullon ilma lämpenee $20\\,{}^\\circ\\text{C}$:sta $40\\,{}^\\circ\\text{C}$:seen. Miten ilman paine muuttuu?",
+   "choices": [
+    {
+     "text": "Paine kaksinkertaistuu, koska lämpötila kaksinkertaistuu.",
+     "feedback": "Paine on verrannollinen kelvinlämpötilaan, ja se kasvaa vain $293\\,\\text{K}$:sta $313\\,\\text{K}$:iin eli noin $7\\,\\%$. Celsiusasteiden suhde ei kerro mitään, koska asteikon nolla on valittu sopimuksella. Kertaa luvussa *Kaasujen tilanmuutokset ja Boylen laki*."
+    },
+    {
+     "text": "Paine pysyy samana, koska ilmaa on yhtä paljon.",
+     "feedback": "Ilmaa on yhtä paljon, mutta lämpimät hiukkaset liikkuvat nopeammin ja törmäävät seinämiin useammin ja voimakkaammin. Vakiotilavuudessa $p_1/T_1 = p_2/T_2$. Kertaa luvussa *Kaasujen tilanmuutokset ja Boylen laki*."
+    },
+    {
+     "text": "Paine pienenee, koska lämmin ilma on harvempaa.",
+     "feedback": "Lämmin ilma on harvempaa vain, jos se pääsee laajenemaan. Jäykässä pullossa tilavuus pysyy samana, joten paine kasvaa kelvinlämpötilan mukana. Kertaa luvussa *Kaasujen tilanmuutokset ja Boylen laki*."
+    },
+    {
+     "text": "Paine kasvaa noin $7\\,\\%$, kuten kelvinlämpötila.",
+     "feedback": "Oikein. $p_2/p_1 = T_2/T_1 = 313\\,\\text{K} : 293\\,\\text{K} \\approx 1{,}07$. Kertaa tarvittaessa luvussa *Kaasujen tilanmuutokset ja Boylen laki*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "lt-5",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 5: helium ja hiilidioksidi",
+   "prompt": "Kaksi samankokoista ilmapalloa täytetään samassa paineessa ja samassa lämpötilassa, toinen heliumilla ja toinen hiilidioksidilla. Kummassa pallossa on enemmän kaasua mooleina?",
+   "choices": [
+    {
+     "text": "Hiilidioksidipallossa, koska se on painavampi.",
+     "feedback": "Hiilidioksidipallo on painavampi, koska sen hiukkaset ovat raskaampia, ei siksi, että niitä olisi enemmän. $n = pV/(RT)$ ei riipu kaasun laadusta. Kertaa luvussa *Ideaalikaasun tilanyhtälö $pV = nRT$*."
+    },
+    {
+     "text": "Yhtä paljon, koska $p$, $V$ ja $T$ ovat samat.",
+     "feedback": "Oikein. Tilanyhtälöstä $n = \\dfrac{pV}{RT}$, eikä siinä ole kaasun laatua. Massat ovat eri, koska moolimassat ovat eri. Kertaa tarvittaessa luvussa *Ideaalikaasun tilanyhtälö $pV = nRT$*.",
+     "correct": true
+    },
+    {
+     "text": "Heliumpallossa, koska heliumhiukkaset ovat pienempiä.",
+     "feedback": "Ideaalikaasussa hiukkasten koko ei vaikuta: ne ovat kaukana toisistaan, ja ainemäärä on $n = pV/(RT)$ kaikille kaasuille. Kertaa luvussa *Ideaalikaasun tilanyhtälö $pV = nRT$*."
+    }
+   ]
+  },
+  {
+   "id": "lt-6",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 6: täydellinen moottori",
+   "prompt": "Insinööri sanoo: ”Kun moottorista poistetaan kaikki kitka, se muuttaa kaiken polttoaineesta saamansa lämmön työksi.” Mikä arvio on oikein?",
+   "choices": [
+    {
+     "text": "Väite pitää, koska energia säilyy aina kokonaan.",
+     "feedback": "Energian säilyminen sallisi sen, mutta ei riitä: lämpövoimakoneen on luovutettava osa lämmöstä kylmempään ympäristöön, jotta se voi toistaa kiertonsa. Kertaa luvussa *Kaasun tekemä työ ja lämpövoimakone*."
+    },
+    {
+     "text": "Väite ei pidä, koska energiaa katoaa aina vähän.",
+     "feedback": "Energia ei katoa koskaan. Väite ei pidä siksi, että osa lämmöstä on luovutettava kylmempään ympäristöön, ja tämä lämpö on yhä energiaa. Kertaa luvussa *Kaasun tekemä työ ja lämpövoimakone*."
+    },
+    {
+     "text": "Väite ei pidä: osa lämmöstä menee kylmempään.",
+     "feedback": "Oikein. Kitkattomankin lämpövoimakoneen on luovutettava lämpö $Q_2$ kylmempään, joten $W = Q_1 - Q_2 < Q_1$. Kertaa tarvittaessa luvussa *Kaasun tekemä työ ja lämpövoimakone*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "aineisto",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Kaksi jäykkää astiaa",
+   "source": "example",
+   "figure": "fy3-10/pt-suorat",
+   "text": "Kuvaajassa on kahden samanlaisen, suljetun ja jäykän astian kaasun paine kelvinlämpötilan funktiona, kun astioita lämmitetään. Kummankin astian tilavuus on $2{,}0\\,\\textsf{l}$. Lue kuvaajasta kaasun A paine yhdessä lämpötilassa ja laske, kuinka paljon kaasua astiassa A on. Mallivastauksessa verrataan myös astioita A ja B ja tarkastellaan, miksi suorien jatkeet kulkevat origon kautta.",
+   "question": {
+    "type": "numeric",
+    "prompt": "Kuinka suuri on astian A kaasun ainemäärä $n_\\text{A}$? Vastaa mooleina.",
+    "answer": 0.06017,
+    "unit": "mol",
+    "tolerance": 0.03,
+    "hints": [
+     "Valitse suoralta piste, joka on ruudukon viivojen risteyksessä, esimerkiksi lämpötilassa $200\\,\\text{K}$.",
+     "Ratkaise tilanyhtälöstä $pV = nRT$ ainemäärä $n$, ja muuta paine pascaleiksi ja tilavuus kuutiometreiksi.",
+     "$n_\\text{A} = \\dfrac{50\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 200\\,\\text{K}}$"
+    ],
+    "mistakes": [
+     {
+      "value": 6.017e-05,
+      "feedback": "Paine oli kilopascaleina mutta tilavuus kuutiometreinä. Muuta paine pascaleiksi: $50\\,\\text{kPa} = 50\\,000\\,\\text{Pa}$."
+     },
+     {
+      "value": 60.17,
+      "feedback": "Paine oli pascaleina mutta tilavuus litroina. Muuta tilavuus kuutiometreiksi: $2{,}0\\,\\textsf{l} = 0{,}0020\\,\\text{m}^3$."
+     },
+     {
+      "value": 0.0361,
+      "feedback": "Tämä on astian B ainemäärä. Kaasun A suora on jyrkempi: lämpötilassa $200\\,\\text{K}$ sen paine on $50\\,\\text{kPa}$."
+     },
+     {
+      "value": 0.03008,
+      "feedback": "Luit paineen ja lämpötilan eri pisteistä. Paine ja lämpötila on luettava suoran samasta pisteestä, esimerkiksi $(200\\,\\text{K};\\ 50\\,\\text{kPa})$."
+     }
+    ],
+    "solution": "**Annettu:** kuvaajasta kaasun A suoran piste $T = 200\\,\\text{K}$, $p = 50\\,\\text{kPa}$ (ja $400\\,\\text{K}$, $100\\,\\text{kPa}$); astian tilavuus $V = 2{,}0\\,\\textsf{l}$; $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$\n\n**Kysytty:** astian A kaasun ainemäärä $n_\\text{A}$ mooleina\n\n**Periaate:** Astia on suljettu ja jäykkä, joten kaasun määrä ja tilavuus pysyvät samoina, ja kaasun tila noudattaa ideaalikaasun tilanyhtälöä. Mistä tahansa suoran pisteestä saadaan sama ainemäärä, koska $p/T$ on suoralla vakio (luku *Ideaalikaasun tilanyhtälö $pV = nRT$*).\n\n**Kuvaajan lukeminen:** Kaasun A suora kulkee ruudukon risteysten $(200\\,\\text{K};\\ 50\\,\\text{kPa})$ ja $(400\\,\\text{K};\\ 100\\,\\text{kPa})$ kautta. Käytetään ensimmäistä pistettä.\n\n**Kaava:** $pV = nRT$, joten $n_\\text{A} = \\dfrac{pV}{RT}$\n\n**Muunnokset:** $50\\,\\text{kPa} = 50 \\cdot 1000\\,\\text{Pa} = 50\\,000\\,\\text{Pa}$ ja $2{,}0\\,\\textsf{l} = 2{,}0 \\cdot 0{,}001\\,\\text{m}^3 = 0{,}0020\\,\\text{m}^3$. Lämpötila on jo kelvineinä.\n\n**Sijoitus:** $n_\\text{A} = \\dfrac{50\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 200\\,\\text{K}} = \\dfrac{100\\,\\text{J}}{1662\\,\\tfrac{\\text{J}}{\\text{mol}}} = 0{,}0602\\,\\text{mol}$\n\n**Vastaus:** $n_\\text{A} \\approx 0{,}060\\,\\text{mol}$, kaksi merkitsevää numeroa kuten tilavuus $2{,}0\\,\\textsf{l}$.\n\n**Järkevyys:** Toinen piste antaa saman: $100\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3 : (8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 400\\,\\text{K}) = 0{,}0602\\,\\text{mol}$. Astian B suora on loivempi, $30\\,\\text{kPa}$ lämpötilassa $200\\,\\text{K}$, joten siinä on kaasua $\\tfrac{30}{50}$ kertaa niin paljon, noin $0{,}036\\,\\text{mol}$. Kummankin suoran jatke kulkee origon kautta, koska $p = \\tfrac{nR}{V}\\,T$ on suoraan verrannollinen kelvinlämpötilaan; todellinen kaasu tiivistyisi nesteeksi ennen nollaa."
+   }
+  },
+  {
+   "id": "teoriatiivistelma",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Kaava",
+    "Virheet",
+    "Kertaa"
+   ]
+  },
+  {
+   "id": "celsius",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Etsi virhe: lämmin pullo",
+   "prompt": "Opiskelija laski, kuinka suureksi suljetun lasipullon ilman paine kasvaa, kun pullo lämpenee auringossa $20\\,{}^\\circ\\text{C}$:sta $60\\,{}^\\circ\\text{C}$:seen. Alussa paine oli $100\\,\\text{kPa}$: ”$p_2 = p_1 \\cdot \\tfrac{T_2}{T_1} = 100\\,\\text{kPa} \\cdot \\tfrac{60}{20} = 300\\,\\text{kPa}$.” Mikä ratkaisussa on väärin?",
+   "choices": [
+    {
+     "text": "Paine pienenee lämmetessä, joten oikein on $33\\,\\text{kPa}$.",
+     "feedback": "Jäykässä pullossa paine kasvaa lämpötilan mukana, koska hiukkaset liikkuvat nopeammin. Kaava on oikein; virhe on se, että lämpötilat ovat celsiusasteina."
+    },
+    {
+     "text": "Lämpötilat pitää muuttaa kelvineiksi: $p_2 \\approx 114\\,\\text{kPa}$.",
+     "feedback": "Oikein. $p_2 = 100\\,\\text{kPa} \\cdot \\tfrac{333\\,\\text{K}}{293\\,\\text{K}} \\approx 114\\,\\text{kPa}$. Verrannollisuus alkaa absoluuttisesta nollapisteestä, joten suhde lasketaan kelvineistä.",
+     "correct": true
+    },
+    {
+     "text": "Ratkaisu on oikein, koska asteet supistuvat pois.",
+     "feedback": "Yksiköt supistuvat, mutta celsiusasteiden suhde $60 : 20$ ei ole lämpötilojen todellinen suhde, koska celsiusasteikon nolla ei ole absoluuttinen nolla. Kelvineinä suhde on vain $333 : 293$."
+    }
+   ]
+  },
+  {
+   "id": "kuvaaja",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Mikä kuvaaja?",
+   "prompt": "Opiskelija mittaa ruiskuun suljetun ilman paineen $p$ eri tilavuuksilla $V$ vakiolämpötilassa. Millä tavalla piirretty kuvaaja osoittaa suoraan, että paine on kääntäen verrannollinen tilavuuteen?",
+   "choices": [
+    {
+     "text": "$(V, p)$-kuvaaja, jossa pisteet ovat tasaisesti laskevalla suoralla",
+     "feedback": "Laskeva suora tarkoittaisi, että paine pienenee yhtä paljon jokaista tilavuuden lisäystä kohti. Kääntäen verrannollisuudessa $(V, p)$-pisteet ovat kaarella, ja suora syntyy vasta muuttujalla $1/V$."
+    },
+    {
+     "text": "$(V, p)$-kuvaaja, jossa pisteet ovat laskevalla kaarella",
+     "feedback": "Kääntäen verrannollisuus antaa laskevan kaaren, mutta niin antavat monet muutkin riippuvuudet. Kaaresta ei voi nähdä, onko kyse juuri muodosta $p = \\text{vakio}/V$. Piirrä $p$ muuttujan $1/V$ funktiona."
+    },
+    {
+     "text": "$(1/V, p)$-kuvaaja, jossa pisteet ovat suoralla origon kautta",
+     "feedback": "Oikein. Boylen laista $p = \\text{vakio} \\cdot \\tfrac{1}{V}$, joten $(1/V, p)$-pisteet ovat mittausepävarmuuden rajoissa origon kautta kulkevalla suoralla, jonka kulmakerroin on $pV$.",
+     "correct": true
+    },
+    {
+     "text": "$(1/V, p)$-kuvaaja, jossa pisteet ovat vaakasuoralla suoralla",
+     "feedback": "Vaakasuora suora tarkoittaisi, että paine ei muutu lainkaan tilavuuden mukana. Kääntäen verrannollisuudessa $p$ kasvaa suoraan verrannollisesti muuttujaan $1/V$."
+    }
+   ]
+  },
+  {
+   "id": "mittari",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Perusteltu väite: tyhjä kaasupullo",
+   "prompt": "Retkikeittimen kaasupullo on käytetty loppuun, ja sen venttiili on auki ulkoilmaan. Pulloon kiinnitetty painemittari näyttää $0\\,\\text{kPa}$. Mikä väite on perusteltu?",
+   "choices": [
+    {
+     "text": "Pullossa ei ole enää lainkaan kaasua, koska paine on nolla.",
+     "feedback": "Mittari näyttää ylipainetta eli sitä, kuinka paljon paine on ilmanpainetta suurempi. Lukema $0\\,\\text{kPa}$ tarkoittaa, että pullon paine on sama kuin ilmanpaine, noin $101\\,\\text{kPa}$, ja pullossa on kaasua."
+    },
+    {
+     "text": "Pullossa on alipaine, koska kaasu on kulunut kokonaan loppuun.",
+     "feedback": "Kun venttiili on auki, kaasua virtaa, kunnes paineet ovat samat. Pullon paine on siis ilmanpaine, ei sitä pienempi; mittari näyttäisi alipaineessa negatiivista lukemaa."
+    },
+    {
+     "text": "Pullossa on yhä kaasua, koska mittari näyttää vain ylipaineen.",
+     "feedback": "Oikein. Kokonaispaine on $p = p_0 + \\Delta p = 101\\,\\text{kPa} + 0\\,\\text{kPa}$. Tilanyhtälöön sijoitetaan aina kokonaispaine, joten pullossa on kaasua $n = p_0V/(RT)$.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "tyo",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Lue kuvaaja: kaasun työ",
+   "figure": "fy3-11/pv-isobaari",
+   "prompt": "Kuvaajassa sylinterissä olevan kaasun paine pysyy vakiona, kun kaasu laajenee ja työntää mäntää. Kuinka suuren työn kaasu tekee mäntään?",
+   "choices": [
+    {
+     "text": "$1000\\,\\text{J}$",
+     "feedback": "Kerroit paineen lopputilavuudella $4{,}0\\,\\textsf{l}$. Työ on kuvaajan alle jäävä pinta-ala laajenemisen kohdalta, eli paine kertaa tilavuuden *muutos* $3{,}0\\,\\textsf{l}$."
+    },
+    {
+     "text": "$750\\,\\text{J}$",
+     "feedback": "Oikein. $W_\\text{k} = p\\,\\Delta V = 250\\,\\text{kPa} \\cdot 3{,}0\\,\\textsf{l} = 250\\,000\\,\\text{Pa} \\cdot 0{,}0030\\,\\text{m}^3 = 750\\,\\text{J}$, kuvaajan alle jäävä suorakulmio.",
+     "correct": true
+    },
+    {
+     "text": "$0\\,\\text{J}$",
+     "feedback": "Vakiopaine ei tarkoita, ettei työtä tehdä. Työtä tehdään, kun tilavuus muuttuu ja mäntä liikkuu: $W_\\text{k} = p\\,\\Delta V$."
+    },
+    {
+     "text": "$750\\,\\text{kJ}$",
+     "feedback": "Laskit kilopascaleilla ja litroilla oikein $750$, mutta yksikkö on joule: $1\\,\\text{kPa} \\cdot 1\\,\\textsf{l} = 1000\\,\\text{Pa} \\cdot 0{,}001\\,\\text{m}^3 = 1\\,\\text{J}$."
+    }
+   ]
+  },
+  {
+   "id": "luukku",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Hyppyaltaan huoltoluukku",
+   "prompt": "Uimahallin hyppyaltaan pohjassa $5{,}0\\,\\text{m}$:n syvyydessä on neliön muotoinen huoltoluukku, jonka sivu on $0{,}60\\,\\text{m}$. Luukun alla on huoltotila, jossa on sama ilmanpaine kuin hallissa. Kuinka suuri kokonaisvoima vedestä ja ilmasta luukkuun kohdistuu? Vastaa kilonewtoneina.",
+   "answer": 17.66,
+   "unit": "kN",
+   "tolerance": 0.02,
+   "hints": [
+    "Ilmanpaine painaa luukkua ylhäältä veden kautta ja alhaalta huoltotilasta. Mikä osa paineesta jää jäljelle?",
+    "Ylipaine syvyydellä $h$ on $\\rho g h$, ja voima on paine kertaa ala.",
+    "$F = \\rho g h A = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 5{,}0\\,\\text{m} \\cdot 0{,}36\\,\\text{m}^2$"
+   ],
+   "mistakes": [
+    {
+     "value": 54.02,
+     "feedback": "Käytit kokonaispainetta $p_0 + \\rho g h$. Ilmanpaine vaikuttaa luukkuun myös alhaalta, joten sen voimat kumoavat toisensa: jäljelle jää ylipaineen voima."
+    },
+    {
+     "value": 29.43,
+     "feedback": "Kerroit paineen luukun sivulla $0{,}60\\,\\text{m}$. Voima on paine kertaa pinta-ala: $A = 0{,}60\\,\\text{m} \\cdot 0{,}60\\,\\text{m} = 0{,}36\\,\\text{m}^2$."
+    },
+    {
+     "value": 1.8,
+     "feedback": "Unohdit putoamiskiihtyvyyden. Ylipaine on $\\rho g h$, ja $g = 9{,}81\\,\\text{m/s}^2$."
+    }
+   ],
+   "solution": "**Annettu:** syvyys $h = 5{,}0\\,\\text{m}$, luukun sivu $a = 0{,}60\\,\\text{m}$, veden tiheys $\\rho = 1000\\,\\text{kg/m}^3$, $g = 9{,}81\\,\\text{m/s}^2$; ilmanpaine sama veden pinnalla ja luukun alla\n\n**Kysytty:** luukkuun kohdistuva kokonaisvoima $F$ kilonewtoneina\n\n**Periaate:** Vesi on levossa, joten paine luukun yläpinnalla on $p_0 + \\rho g h$. Alhaalta luukkuun vaikuttaa ilmanpaine $p_0$. Ilmanpaineen voimat kumoavat toisensa, joten kokonaisvoima syntyy ylipaineesta $\\rho g h$, ja se on kohtisuorassa luukkua vastaan eli alaspäin (luku *Paine ja hydrostaattinen paine*).\n\n**Kaava:** $\\Delta p = \\rho g h$ ja $p = \\dfrac{F}{A}$, joten $F = \\rho g h\\,a^2$\n\n**Muunnokset:** Kaikki suureet ovat perusyksiköissä. Lopuksi $1\\,\\text{N} = 0{,}001\\,\\text{kN}$.\n\n**Sijoitus:** $F = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 5{,}0\\,\\text{m} \\cdot (0{,}60\\,\\text{m})^2 = 49\\,050\\,\\text{Pa} \\cdot 0{,}36\\,\\text{m}^2 = 17\\,658\\,\\text{N} = 17{,}7\\,\\text{kN}$\n\n**Vastaus:** $F \\approx 18\\,\\text{kN}$, kaksi merkitsevää numeroa kuten syvyys $5{,}0\\,\\text{m}$ ja sivu $0{,}60\\,\\text{m}$.\n\n**Järkevyys:** Luukun päällä on vesipatsas $0{,}36\\,\\text{m}^2 \\cdot 5{,}0\\,\\text{m} = 1{,}8\\,\\text{m}^3$, jonka massa on $1800\\,\\text{kg}$ ja paino noin $18\\,\\text{kN}$: sama tulos. Voima vastaa lähes kahden henkilöauton painoa, joten luukku on tehtävä tukevaksi."
+  },
+  {
+   "id": "pumppu",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Pyöränpumpun mittari",
+   "prompt": "Pyöränpumpun sylinterissä on $0{,}30\\,\\textsf{l}$ ilmaa ilmanpaineessa $101\\,\\text{kPa}$. Pumpun suutin on tukittu, ja mäntää painetaan hitaasti niin, että ilman tilavuus pienenee $0{,}12\\,\\textsf{l}$:aan. Lämpötila pysyy samana. Pumpun painemittari näyttää ylipainetta. Mitä mittari näyttää? Vastaa kilopascaleina.",
+   "answer": 151.5,
+   "unit": "kPa",
+   "tolerance": 0.02,
+   "hints": [
+    "Lämpötila ja ilman määrä pysyvät samoina. Mikä laki pätee?",
+    "Boylen laissa käytetään kokonaispainetta. Mittari näyttää kokonaispaineen ja ilmanpaineen erotuksen.",
+    "$p_2 = \\dfrac{101\\,\\text{kPa} \\cdot 0{,}30\\,\\textsf{l}}{0{,}12\\,\\textsf{l}}$, ja mittarin lukema on $p_2 - 101\\,\\text{kPa}$."
+   ],
+   "mistakes": [
+    {
+     "value": 252.5,
+     "feedback": "Tämä on ilman kokonaispaine. Mittari näyttää ylipaineen, joten vähennä ilmanpaine: $\\Delta p = p_2 - p_0$."
+    },
+    {
+     "value": 40.4,
+     "feedback": "Kerroit väärin päin. Kun tilavuus pienenee, paine kasvaa: $p_2 = p_1 \\cdot \\tfrac{V_1}{V_2}$, ja $\\tfrac{V_1}{V_2} = 2{,}5$."
+    },
+    {
+     "value": 100.0,
+     "feedback": "Boylen lakiin sijoitetaan kokonaispaine, ei ylipaine. Alussa kokonaispaine on $101\\,\\text{kPa}$, vaikka mittari näyttää silloin nollaa."
+    }
+   ],
+   "solution": "**Annettu:** alkutilavuus $V_1 = 0{,}30\\,\\textsf{l}$, alkupaine $p_1 = 101\\,\\text{kPa}$ (ilmanpaine), lopputilavuus $V_2 = 0{,}12\\,\\textsf{l}$; lämpötila vakio\n\n**Kysytty:** mittarin lukema eli ylipaine $\\Delta p$ kilopascaleina\n\n**Periaate:** Suutin on tukittu, joten ilman määrä pysyy samana, ja hidas puristus pitää lämpötilan vakiona. Silloin pätee Boylen laki, johon sijoitetaan kokonaispaine. Mittari näyttää kokonaispaineen ja ilmanpaineen erotuksen (luku *Kaasujen tilanmuutokset ja Boylen laki*).\n\n**Kaava:** $p_1V_1 = p_2V_2$, joten $p_2 = \\dfrac{p_1V_1}{V_2}$ ja $\\Delta p = p_2 - p_1 = \\dfrac{p_1V_1}{V_2} - p_1$\n\n**Muunnokset:** Ei tarvita: litrat supistuvat, ja paine saadaan suoraan kilopascaleina.\n\n**Sijoitus:** $p_2 = \\dfrac{101\\,\\text{kPa} \\cdot 0{,}30\\,\\textsf{l}}{0{,}12\\,\\textsf{l}} = 252{,}5\\,\\text{kPa}$ ja $\\Delta p = 252{,}5\\,\\text{kPa} - 101\\,\\text{kPa} = 151{,}5\\,\\text{kPa}$\n\n**Vastaus:** Mittari näyttää noin $150\\,\\text{kPa}$, kaksi merkitsevää numeroa kuten tilavuudet $0{,}30\\,\\textsf{l}$ ja $0{,}12\\,\\textsf{l}$.\n\n**Järkevyys:** Tilavuus pienenee $2{,}5$-osaan, joten kokonaispaine kasvaa $2{,}5$-kertaiseksi, noin $250\\,\\text{kPa}$:iin. Ylipaine on tätä ilmanpaineen verran pienempi. Lukema on polkupyörän renkaalle tavallista suuruusluokkaa."
+  },
+  {
+   "id": "pallo",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Kuumailmapallo",
+   "prompt": "Kuumailmapallon kuori on alhaalta auki, joten pallon sisällä on sama paine kuin ulkona, $100\\,\\text{kPa}$. Kuoren tilavuus on $2800\\,\\text{m}^3$. Ilma kuoren sisällä lämmitetään $10\\,{}^\\circ\\text{C}$:sta $100\\,{}^\\circ\\text{C}$:seen. Ilman moolimassa on $29{,}0\\,\\text{g/mol}$. Kuinka monta kilogrammaa ilmaa poistuu pallosta lämmityksen aikana?",
+   "answer": 832.3,
+   "unit": "kg",
+   "tolerance": 0.02,
+   "hints": [
+    "Paine ja tilavuus pysyvät samoina, mutta ilman määrä muuttuu. Laske ilman massa kuoressa ennen ja jälkeen lämmityksen.",
+    "Tilanyhtälöstä ja ainemäärästä $n = m/M$ saadaan $m = \\dfrac{pVM}{RT}$, kun $T$ on kelvineinä.",
+    "$m_1 = \\dfrac{100\\,000\\,\\text{Pa} \\cdot 2800\\,\\text{m}^3 \\cdot 0{,}0290\\,\\tfrac{\\text{kg}}{\\text{mol}}}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 283{,}15\\,\\text{K}} \\approx 3450\\,\\text{kg}$"
+   ],
+   "mistakes": [
+    {
+     "value": 87942,
+     "feedback": "Käytit celsiusasteita. Tilanyhtälössä lämpötila on aina kelvineinä: $10\\,{}^\\circ\\text{C} = 283{,}15\\,\\text{K}$ ja $100\\,{}^\\circ\\text{C} = 373{,}15\\,\\text{K}$."
+    },
+    {
+     "value": 3451,
+     "feedback": "Tämä on kuoressa alussa oleva ilma. Kysytty on lämmityksessä poistuva osa, eli massojen erotus ennen ja jälkeen lämmityksen."
+    },
+    {
+     "value": 2619,
+     "feedback": "Tämä on kuoreen jäävä ilma. Poistuva ilma on alkumassan ja tämän erotus."
+    },
+    {
+     "value": 28701,
+     "feedback": "Tämä on poistuva ainemäärä mooleina. Muunna se massaksi: $m = nM$, kun $M = 0{,}0290\\,\\text{kg/mol}$."
+    }
+   ],
+   "solution": "**Annettu:** paine $p = 100\\,\\text{kPa}$ (sama ennen ja jälkeen), tilavuus $V = 2800\\,\\text{m}^3$, lämpötilat $\\theta_1 = 10\\,{}^\\circ\\text{C}$ ja $\\theta_2 = 100\\,{}^\\circ\\text{C}$, moolimassa $M = 29{,}0\\,\\text{g/mol}$, $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$\n\n**Kysytty:** poistuvan ilman massa $\\Delta m$ kilogrammoina\n\n**Periaate:** Kuori on auki, joten sisällä on koko ajan ulkoilman paine, ja kuoren tilavuus pysyy samana. Kun ilma lämpenee, sama tilavuus mahtuu samaan paineeseen vähemmän hiukkasia, ja ylimäärä virtaa ulos alhaalta. Ilmaa kuvataan ideaalikaasuna, mikä sopii tavalliseen paineeseen (luku *Ideaalikaasun tilanyhtälö $pV = nRT$*).\n\n**Kaava:** $pV = nRT$ ja $n = \\dfrac{m}{M}$, joten $m = \\dfrac{pVM}{RT}$ ja $\\Delta m = \\dfrac{pVM}{R}\\left(\\dfrac{1}{T_1} - \\dfrac{1}{T_2}\\right)$\n\n**Muunnokset:** $p = 100 \\cdot 1000\\,\\text{Pa} = 100\\,000\\,\\text{Pa}$, $M = 29{,}0 \\cdot 0{,}001\\,\\text{kg/mol} = 0{,}0290\\,\\text{kg/mol}$, $T_1 = (10 + 273{,}15)\\,\\text{K} = 283{,}15\\,\\text{K}$ ja $T_2 = (100 + 273{,}15)\\,\\text{K} = 373{,}15\\,\\text{K}$\n\n**Sijoitus:** $m_1 = \\dfrac{100\\,000\\,\\text{Pa} \\cdot 2800\\,\\text{m}^3 \\cdot 0{,}0290\\,\\tfrac{\\text{kg}}{\\text{mol}}}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 283{,}15\\,\\text{K}} = 3451\\,\\text{kg}$ ja $m_2 = m_1 \\cdot \\dfrac{T_1}{T_2} = 3451\\,\\text{kg} \\cdot \\dfrac{283{,}15\\,\\text{K}}{373{,}15\\,\\text{K}} = 2619\\,\\text{kg}$, joten $\\Delta m = 3451\\,\\text{kg} - 2619\\,\\text{kg} = 832\\,\\text{kg}$\n\n**Vastaus:** $\\Delta m \\approx 832\\,\\text{kg}$, kolme merkitsevää numeroa kuten moolimassassa $29{,}0\\,\\text{g/mol}$; lämpötilaerot tunnetaan kelvineinä vähintään tällä tarkkuudella.\n\n**Järkevyys:** Ilmaa poistuu noin neljännes, koska kelvinlämpötila kasvaa suhteessa $373 : 283 \\approx 1{,}32$ ja massa pienenee suhteessa $283 : 373 \\approx 0{,}76$. Alkumassa $3450\\,\\text{kg}$ vastaa ilman tiheyttä $3450\\,\\text{kg} : 2800\\,\\text{m}^3 \\approx 1{,}2\\,\\text{kg/m}^3$, joka on ilman tavallinen tiheys."
+  },
+  {
+   "id": "manta",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Mäntä nousee",
+   "prompt": "Sylinterin kaasu saa lämpöä $1{,}20\\,\\text{kJ}$ ja laajenee samalla vakiopaineessa $150\\,\\text{kPa}$ niin, että sen tilavuus kasvaa $2{,}0\\,\\textsf{l}$:sta $5{,}0\\,\\textsf{l}$:aan. Kuinka paljon kaasun sisäenergia muuttuu? Vastaa jouleina.",
+   "answer": 750,
+   "unit": "J",
+   "tolerance": 0.02,
+   "hints": [
+    "Kaasu saa energiaa lämpönä mutta luovuttaa sitä tekemällä työtä mäntään.",
+    "Vakiopaineessa kaasun työ on $W_\\text{k} = p\\,\\Delta V$, ja sisäenergian muutos on $\\Delta U = Q - W_\\text{k}$.",
+    "$W_\\text{k} = 150\\,000\\,\\text{Pa} \\cdot 0{,}0030\\,\\text{m}^3 = 450\\,\\text{J}$"
+   ],
+   "mistakes": [
+    {
+     "value": 1650,
+     "feedback": "Laskit työn ja lämmön yhteen. Laajeneva kaasu tekee työtä ja luovuttaa siinä energiaa, joten työ vähennetään: $\\Delta U = Q - W_\\text{k}$."
+    },
+    {
+     "value": 1200,
+     "feedback": "Tämä on kaasun saama lämpö. Osa siitä kuluu työhön, jonka kaasu tekee mäntään: $W_\\text{k} = p\\,\\Delta V$."
+    },
+    {
+     "value": 450,
+     "feedback": "Tämä on kaasun tekemä työ. Sisäenergian muutos on lämmön ja työn erotus: $\\Delta U = Q - W_\\text{k}$."
+    },
+    {
+     "value": 450000,
+     "feedback": "Paine pascaleina ja tilavuus litroina antaa tuhatkertaisen työn. Muunna tilavuuden muutos: $3{,}0\\,\\textsf{l} = 0{,}0030\\,\\text{m}^3$."
+    }
+   ],
+   "solution": "**Annettu:** lämpö $Q = 1{,}20\\,\\text{kJ}$, paine $p = 150\\,\\text{kPa}$ (vakio), tilavuus $V_1 = 2{,}0\\,\\textsf{l}$ ja $V_2 = 5{,}0\\,\\textsf{l}$\n\n**Kysytty:** kaasun sisäenergian muutos $\\Delta U$ jouleina\n\n**Periaate:** Energia säilyy: kaasun sisäenergia kasvaa saadun lämmön verran ja pienenee sen työn verran, jonka laajeneva kaasu tekee mäntään. Paine on vakio, joten työ on paine kertaa tilavuuden muutos (luku *Kaasun tekemä työ ja lämpövoimakone*).\n\n**Kaava:** $W_\\text{k} = p\\,(V_2 - V_1)$ ja $\\Delta U = Q - W_\\text{k}$, joten $\\Delta U = Q - p\\,(V_2 - V_1)$\n\n**Muunnokset:** $Q = 1{,}20 \\cdot 1000\\,\\text{J} = 1200\\,\\text{J}$, $p = 150 \\cdot 1000\\,\\text{Pa} = 150\\,000\\,\\text{Pa}$ ja $V_2 - V_1 = 3{,}0\\,\\textsf{l} = 3{,}0 \\cdot 0{,}001\\,\\text{m}^3 = 0{,}0030\\,\\text{m}^3$\n\n**Sijoitus:** $W_\\text{k} = 150\\,000\\,\\text{Pa} \\cdot 0{,}0030\\,\\text{m}^3 = 450\\,\\text{J}$ ja $\\Delta U = 1200\\,\\text{J} - 450\\,\\text{J} = 750\\,\\text{J}$\n\n**Vastaus:** $\\Delta U \\approx 750\\,\\text{J}$ (sisäenergia kasvaa), kaksi merkitsevää numeroa kuten tilavuudet $2{,}0\\,\\textsf{l}$ ja $5{,}0\\,\\textsf{l}$.\n\n**Järkevyys:** Sisäenergian kasvu on positiivinen ja pienempi kuin saatu lämpö, kuten pitää, kun kaasu samalla tekee työtä. Tarkistus kilopascaleilla ja litroilla: $150\\,\\text{kPa} \\cdot 3{,}0\\,\\textsf{l} = 450\\,\\text{J}$, koska $1\\,\\text{kPa} \\cdot 1\\,\\textsf{l} = 1\\,\\text{J}$."
+  },
+  {
+   "id": "lisaa",
+   "stage": "sovella",
+   "type": "exercises",
+   "text": "Tunnin lopussa ovat ylioppilaskokeen tyyliset tehtävät. Kirjoita ratkaisu vihkoon tai koneelle kuten kokeessa, ja arvioi se vasta sitten mallivastauksen ja pisteytyksen avulla."
+  },
+  {
+   "id": "tarkistus-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Käsite",
+   "prompt": "Ryhmä mittasi suljetun lasipullon ilman paineen lämpötiloissa $10$–$90\\,{}^\\circ\\text{C}$ ja jatkoi sovitettua suoraa nollapaineeseen. Ääriviivojen avulla tulokseksi saatiin $\\theta_0 = (-262 \\pm 15)\\,{}^\\circ\\text{C}$. Mikä johtopäätös on perusteltu?",
+   "choices": [
+    {
+     "text": "Tulos sopii yhteen arvon $-273{,}15\\,{}^\\circ\\text{C}$ kanssa epävarmuuden rajoissa.",
+     "feedback": "Oikein. Väli $-277$…$-247\\,{}^\\circ\\text{C}$ sisältää hyväksytyn arvon, joten mittaus ei osoita eroa. Epävarmuus on suuri, koska suoraa jatketaan kauas mittausalueen ulkopuolelle. Kertaa tarvittaessa luvussa *Absoluuttisen nollapisteen määrittäminen*.",
+     "correct": true
+    },
+    {
+     "text": "Koe epäonnistui, koska tulos poikkeaa hyväksytystä arvosta $-273{,}15\\,{}^\\circ\\text{C}$.",
+     "feedback": "Mittaustulos ei ole koskaan täsmälleen oikea arvo. Ratkaisevaa on, onko hyväksytty arvo arvioidun epävarmuusvälin sisällä, ja tässä se on. Kertaa luvussa *Absoluuttisen nollapisteen määrittäminen*."
+    },
+    {
+     "text": "Pullon ilman paine olisi todella nolla jo lämpötilassa $-262\\,{}^\\circ\\text{C}$.",
+     "feedback": "Suoran jatke on mallin ennuste, ei mittaus. Todellinen ilma tiivistyy nesteeksi kauan ennen tätä lämpötilaa, joten paine ei laske suoraa pitkin nollaan. Kertaa luvussa *Absoluuttisen nollapisteen määrittäminen*."
+    }
+   ],
+   "practice": "Kertaa suoran jatkaminen ja ääriviivat luvussa [*Absoluuttisen nollapisteen määrittäminen*](fy3-13.html)."
+  },
+  {
+   "id": "tarkistus-2",
+   "stage": "tarkista",
+   "type": "numeric",
+   "title": "2. Laskeminen",
+   "prompt": "Auton moottori antaa maantiellä mekaanista tehoa $25\\,\\text{kW}$, ja sen hyötysuhde on $30\\,\\%$. Kuinka suurella teholla moottori luovuttaa lämpöä ympäristöön pakokaasujen ja jäähdyttimen kautta? Vastaa kilowatteina.",
+   "answer": 58.33,
+   "unit": "kW",
+   "tolerance": 0.02,
+   "hints": [
+    "Moottori on lämpövoimakone: polttoaineesta saatu teho jakautuu työksi ja ympäristöön luovutetuksi lämmöksi.",
+    "Laske ensin polttoaineteho hyötysuhteesta $\\eta = P / P_1$.",
+    "$P_1 = 25\\,\\text{kW} : 0{,}30 \\approx 83\\,\\text{kW}$, ja lämpöteho on $P_1 - P$."
+   ],
+   "mistakes": [
+    {
+     "value": 83.33,
+     "feedback": "Tämä on polttoaineteho. Siitä $25\\,\\text{kW}$ tulee työksi, ja vain loput luovutetaan lämpönä."
+    },
+    {
+     "value": 17.5,
+     "feedback": "Laskit $70\\,\\%$ mekaanisesta tehosta. Hyötysuhde ja häviöt lasketaan polttoainetehosta, joka on suurempi: $P_1 = P : \\eta$."
+    },
+    {
+     "value": 7.5,
+     "feedback": "Kerroit mekaanisen tehon hyötysuhteella. Polttoaineteho on mekaanista tehoa suurempi, joten jaa hyötysuhteella."
+    }
+   ],
+   "practice": "Kertaa lämpövoimakoneen energiavirrat luvussa [*Kaasun tekemä työ ja lämpövoimakone*](fy3-11.html) ja hyötysuhteen nimittäjä luvussa [*Energiantuotanto ja voimalaitosten hyötysuhde*](fy3-15.html).",
+   "solution": "**Annettu:** mekaaninen teho $P = 25\\,\\text{kW}$, hyötysuhde $\\eta = 30\\,\\% = 0{,}30$\n\n**Kysytty:** ympäristöön luovutettu lämpöteho $P_2$ kilowatteina\n\n**Periaate:** Moottori on lämpövoimakone. Energia säilyy, joten polttoaineesta saatu teho $P_1$ on työteho ja ympäristöön luovutettu lämpöteho yhteensä. Hyötysuhde on työtehon osuus polttoainetehosta (luku *Kaasun tekemä työ ja lämpövoimakone*).\n\n**Kaava:** $\\eta = \\dfrac{P}{P_1}$ ja $P_1 = P + P_2$, joten $P_2 = \\dfrac{P}{\\eta} - P$\n\n**Muunnokset:** Ei tarvita: tehot ovat kilowatteina, ja $30\\,\\% = 0{,}30$.\n\n**Sijoitus:** $P_2 = \\dfrac{25\\,\\text{kW}}{0{,}30} - 25\\,\\text{kW} = 83{,}33\\,\\text{kW} - 25\\,\\text{kW} = 58{,}3\\,\\text{kW}$\n\n**Vastaus:** $P_2 \\approx 58\\,\\text{kW}$, kaksi merkitsevää numeroa kuten teho $25\\,\\text{kW}$ ja hyötysuhde $30\\,\\%$.\n\n**Järkevyys:** Lämpöä luovutetaan yli kaksi kertaa niin paljon kuin työtä tehdään, kuten $70\\,\\%$:n häviöosuudesta odottaa: $0{,}70 \\cdot 83{,}3\\,\\text{kW} \\approx 58\\,\\text{kW}$. Siksi auton jäähdytin ja pakoputki kuumenevat, ja talvella sama lämpö lämmittää matkustamon."
+  },
+  {
+   "id": "tarkistus-3",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "3. Selitä",
+   "prompt": "Mökin kaivon vedenpinta on $12\\,\\text{m}$ maanpinnan alapuolella. Maan pinnalla oleva imupumppu ei saa vettä nousemaan putkessa ylös asti, vaikka pumppu on tehokas ja täysin tiivis. Selitä, miksi vesi nousee imuputkessa ja miksi se ei nouse yli noin $10\\,\\text{m}$:n korkeudelle. Kerro myös, miten vesi saadaan ylös.",
+   "criteria": [
+    "Vastaus kertoo, että pumppu ei vedä vettä, vaan pienentää painetta putken yläosassa, ja kaivon pinnalla vaikuttava ilmanpaine työntää vettä ylös.",
+    "Vastaus kertoo, että vesi nousee, kunnes vesipatsaan paine $\\rho g h$ ja putken yläosan paine ovat yhteensä ilmanpaineen suuruiset.",
+    "Vastaus laskee tai arvioi rajan: pienimmilläänkin putken paine on nolla, joten $h = p_0 : (\\rho g) \\approx 10\\,\\text{m}$, eikä tehokkaampi pumppu muuta sitä.",
+    "Vastaus kertoo ratkaisun: pumppu sijoitetaan kaivoon veden alle, jolloin se työntää vettä ylös ylipaineella."
+   ],
+   "model": "Imupumppu ei vedä vettä ylös. Se poistaa ilmaa putken yläosasta, jolloin paine siellä pienenee. Kaivon vedenpinnalla vaikuttaa ilmanpaine $p_0 \\approx 101\\,\\text{kPa}$, ja se työntää vettä putkeen. Vesi nousee, kunnes putkessa olevan vesipatsaan ylipaine $\\rho g h$ ja putken yläosan paine ovat yhteensä ilmanpaineen suuruiset. Paras pumppu voi pienentää putken yläosan paineen lähes nollaan, mutta ei sen alle, joten suurin nousukorkeus on $h = \\dfrac{p_0}{\\rho g} = \\dfrac{101\\,000\\,\\text{Pa}}{1000\\,\\text{kg/m}^3 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 10{,}3\\,\\text{m}$. Käytännössä vähän vähemmän, koska vesi alkaa kiehua matalassa paineessa. Tehokkaampi imupumppu ei siis auta $12\\,\\text{m}$:n kaivossa. Vesi saadaan ylös uppopumpulla, joka on kaivossa veden alla ja työntää vettä ylipaineella putkea pitkin ylös: työntävälle pumpulle ei ole samaa rajaa.",
+   "practice": "Kertaa ilmanpaine ja paine syvyydellä luvussa [*Paine ja hydrostaattinen paine*](fy3-4.html)."
+  },
+  {
+   "id": "lahtolippu",
+   "stage": "tarkista",
+   "type": "exit",
+   "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+  }
+ ]
+}

@@ -1,0 +1,707 @@
+{
+ "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin lämpömäärän, olomuodon muutokset, lämpötasapainon, lämpölaajenemisen ja lämmön siirtymisen. Ratkaise ne kuten kokeessa: kerro, mihin energia menee, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "tasks": [
+  {
+   "id": "fy9-lampo-s1",
+   "title": "Jäähallin uusi jää",
+   "source": "example",
+   "source_note": "Halli ja sen luvut ovat keksittyjä esimerkkejä. Jääkerroksen paksuus ja jäähdytysteho vastaavat suuruusluokaltaan tavallisen jäähallin arvoja.",
+   "skills": [
+    "fy3-6",
+    "fy3-7",
+    "fy2-3"
+   ],
+   "text": "Kesätauon jälkeen jäähallin kaukaloon tehdään uusi jää. Jäähdytetyn betonilaatan päälle ruiskutetaan vettä ohuina kerroksina, kunnes jäätä on koko alalla $3{,}00\\,\\text{cm}$. Hallin kylmäkone poistaa vedestä ja jäästä lämpöä teholla $350\\,\\text{kW}$.\n\n- jäädytettävä ala $1800\\,\\text{m}^2$\n- veden lämpötila letkussa $15{,}0\\,{}^\\circ\\text{C}$, valmiin jään lämpötila $-4{,}0\\,{}^\\circ\\text{C}$\n- veden tiheys $1000\\,\\text{kg/m}^3$, veden $c = 4190\\,\\text{J/(kg}\\cdot\\text{K)}$, jään $c = 2100\\,\\text{J/(kg}\\cdot\\text{K)}$, jään ominaissulamislämpö $334\\,\\text{kJ/kg}$\n\nJäämestari sanoo: ”Kun vesi on jäähtynyt nollaan asteeseen, jäätyminen käy nopeasti, koska lämpötilaa ei tarvitse enää laskea.”",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 6,
+     "text": "Kuinka paljon lämpöä kylmäkoneen on vähintään poistettava, jotta koko vesimäärästä tulee $-4{,}0\\,{}^\\circ\\text{C}$:sta jäätä?",
+     "answer": {
+      "value": 21.88,
+      "unit": "GJ",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Jakaa prosessin kolmeen vaiheeseen: vesi jäähtyy $0\\,{}^\\circ\\text{C}$:seen, jäätyy vakiolämpötilassa ja jää jäähtyy $-4{,}0\\,{}^\\circ\\text{C}$:seen.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$m = \\rho A d$ ja $Q = c_\\text{v} m \\Delta T_\\text{v} + s m + c_\\text{j} m \\Delta T_\\text{j}$"
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "$m = 54\\,000\\,\\text{kg}$; vaiheet $3{,}39\\,\\text{GJ}$, $18{,}0\\,\\text{GJ}$ ja $0{,}454\\,\\text{GJ}$; senttimetrit muunnettu metreiksi sijoittamalla."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$Q \\approx 21{,}9\\,\\text{GJ}$ kolmella merkitsevällä numerolla"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka kauan jäädyttäminen vähintään kestää?",
+     "answer": {
+      "value": 17.37,
+      "unit": "h",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$t = \\dfrac{Q}{P}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$t = 21{,}9 \\cdot 10^{9}\\,\\text{J} : 350\\,000\\,\\text{W} \\approx 62\\,500\\,\\text{s}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "noin $17{,}4\\,\\text{h}$"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Todellinen aika on pidempi, koska kylmäkone poistaa myös hallin ilmasta ja betonista johtuvaa lämpöä; tulos on alaraja."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 5,
+     "text": "Arvioi jäämestarin väite a-kohdan tulosten avulla.",
+     "criteria": [
+      {
+       "text": "Laskee vaiheiden osuudet: jäätyminen noin $82\\,\\%$, veden jäähtyminen noin $16\\,\\%$ ja jään jäähtyminen noin $2\\,\\%$ kokonaislämmöstä.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "text": "Selittää, että jäätymisessä vapautuu sulamislämpö $sm$, joka on poistettava, vaikka lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa; jäätymisessä hiukkasten vuorovaikutusenergia pienenee.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Vertaa aikoina: veden jäähdyttäminen kestää noin $2{,}7\\,\\text{h}$, jäätyminen noin $14\\,\\text{h}$.",
+       "tag": "communication",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Väite on väärä: jäätyminen on jäädytyksen hitain vaihe."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "concept": "fy3-7",
+    "math": "fy3-6",
+    "communication": "fy3-7"
+   }
+  },
+  {
+   "id": "fy9-lampo-s2",
+   "title": "Varaava takka",
+   "source": "example",
+   "source_note": "Talo ja takka ovat keksittyjä esimerkkejä. Vuolukiven ominaislämpökapasiteetti noin $980\\,\\text{J/(kg}\\cdot\\text{K)}$ ja ilmakuivan koivuklapin lämpöarvo noin $15\\,\\text{MJ/kg}$ ovat tyypillisiä pyöristettyjä arvoja.",
+   "skills": [
+    "fy3-6",
+    "fy3-12",
+    "fy2-5",
+    "fy2-4"
+   ],
+   "text": "Omakotitalossa on vuolukivestä muurattu varaava takka. Iltaisin takassa poltetaan $12{,}0\\,\\text{kg}$ ilmakuivaa koivuklapia, ja tulen sammuttua pelti suljetaan. Kivimassa luovuttaa lämpöä huoneisiin seuraavan vuorokauden aikana ja jäähtyy takaisin alkulämpötilaansa.\n\n| Tieto | Arvo |\n|---|---|\n| kivimassa | $1800\\,\\text{kg}$ |\n| vuolukiven $c$ | $980\\,\\text{J/(kg}\\cdot\\text{K)}$ |\n| koivun lämpöarvo | $15\\,\\text{MJ/kg}$ |\n| kiveen siirtyvä osuus | $80\\,\\%$ |\n\nTalo menettää lämpöä seinien, ikkunoiden, katon ja ilmanvaihdon kautta yhteensä $150\\,\\text{W}$ jokaista sisä- ja ulkolämpötilan eron kelviniä kohti. Sisälämpötila pidetään $21\\,{}^\\circ\\text{C}$:ssa.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 5,
+     "text": "Kuinka paljon kivimassan keskimääräinen lämpötila nousee yhden lämmityskerran aikana?",
+     "answer": {
+      "value": 81.63,
+      "unit": "K",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Q = \\eta H m_\\text{puu}$ ja $\\Delta T = \\dfrac{Q}{c\\,m_\\text{kivi}}$"
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "$Q = 0{,}80 \\cdot 15\\,\\text{MJ/kg} \\cdot 12{,}0\\,\\text{kg} = 144\\,\\text{MJ}$; megajoulet muunnettu jouleiksi."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\Delta T \\approx 82\\,\\text{K}$ kahdella merkitsevällä numerolla kuten lämpöarvo ja osuus"
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Kivimassan lämpötila ei ole tasainen: sisäosat lämpenevät enemmän ja pinta vähemmän, joten tulos on keskiarvo."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suurella keskimääräisellä teholla takka lämmittää taloa seuraavan vuorokauden aikana?",
+     "answer": {
+      "value": 1.667,
+      "unit": "kW",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$P = \\dfrac{Q}{t}$, missä $t = 24\\,\\text{h}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$P = 144 \\cdot 10^{6}\\,\\text{J} : 86\\,400\\,\\text{s}$; tunnit muunnettu sekunneiksi."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$P \\approx 1{,}7\\,\\text{kW}$"
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 3,
+     "text": "Pakkasvuorokauden keskilämpötila on $-10\\,{}^\\circ\\text{C}$. Kuinka suuren osan talon lämmöntarpeesta takka kattaa?",
+     "answer": {
+      "value": 35.8,
+      "unit": "%",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Häviöteho $P_\\text{h} = 150\\,\\tfrac{\\text{W}}{\\text{K}} \\cdot \\Delta T$, ja energiatasapainossa lämmityksen teho on yhtä suuri kuin häviöteho."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\Delta T = 21\\,{}^\\circ\\text{C} - (-10\\,{}^\\circ\\text{C}) = 31\\,\\text{K}$ ja $P_\\text{h} = 4650\\,\\text{W}$; osuus $1667\\,\\text{W} : 4650\\,\\text{W}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "noin $36\\,\\%$"
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 4,
+     "text": "Naapurin ohutseinäinen peltikamiina lämpenee nopeasti, mutta huone viilenee pian tulen sammuttua. Selitä ero varaavaan takkaan.",
+     "criteria": [
+      {
+       "text": "Selittää lämpökapasiteetilla $C = cm$: suuri kivimassa sitoo saman energian pienellä lämpötilan nousulla, ohut pelti nousee kuumaksi mutta varastoi vähän.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Kytkee lämpötilaeron tehoon: kamiinan kuuma pinta luovuttaa energian nopeasti suurella teholla, takan maltillisen lämmin pinta hitaasti koko vuorokauden.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Takka tasaa lämmitystä ajassa: sama polttoaineen energia jakautuu tasaisemmin, ja huone pysyy lämpimänä tulen sammuttua."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "math": "fy3-6",
+    "transfer": "fy3-6",
+    "concept": "fy3-12",
+    "communication": "fy3-12"
+   }
+  },
+  {
+   "id": "fy9-lampo-s3",
+   "title": "Kiehuvan veden höyrystyminen",
+   "source": "example",
+   "source_note": "Aineisto on keksitty esimerkki: luvut on laskettu mallista, jossa ominaishöyrystymislämpö on $2{,}26\\,\\text{MJ/kg}$ ja astiasta johtuu huoneeseen noin $70\\,\\text{W}$ lämpöä tehosta riippumatta, ja niihin on lisätty mittausten kaltaista vaihtelua.",
+   "skills": [
+    "fy3-7",
+    "fy1-4",
+    "fy3-12"
+   ],
+   "text": "Ryhmä määritti veden ominaishöyrystymislämmön. Avoin teräsastia, jossa oli vettä, oli vaa'an päällä, ja vedessä oli uppokuumennin, jonka tehon sai säädettyä. Kun vesi kiehui tasaisesti, ryhmä luki vaa'an lukeman muutoksen $\\Delta m$ viiden minuutin ($300\\,\\text{s}$) aikana. Mittaus toistettiin viidellä teholla $P$.\n\n| $P\\ (\\text{W})$ | $\\Delta m\\ (\\text{g})$ |\n|---|---|\n| $200$ | $17{,}9$ |\n| $400$ | $43{,}1$ |\n| $600$ | $70{,}8$ |\n| $800$ | $96{,}4$ |\n| $1000$ | $123{,}8$ |\n\nRyhmän jäsen laski tuloksen pelkästä $600\\,\\text{W}$:n mittauksesta: $r = \\dfrac{P\\,t}{\\Delta m} \\approx 2{,}54\\,\\text{MJ/kg}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 5,
+     "text": "Esitä höyrystyneen veden massa kuumentimen tehon funktiona kuvaajana, ja sovita pisteisiin sopiva malli.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1,
+       "detail": "Vaaka-akselilla $P\\ (\\text{W})$, pystyakselilla $\\Delta m\\ (\\text{g})$, asteikot alkavat nollasta."
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Pisteisiin on sovitettu nouseva suora, joka kulkee pisteiden lomitse; suoraa ei ole pakotettu origon kautta."
+      },
+      {
+       "text": "Jatkaa suoraa katkoviivana vaaka-akselille asti c-kohtaa varten.",
+       "tag": "graph",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 6,
+     "text": "Määritä veden ominaishöyrystymislämpö kuvaajan avulla.",
+     "answer": {
+      "value": 2.256,
+      "unit": "MJ/kg",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 2,
+       "detail": "Kulmakerroin kahdesta kaukana toisistaan olevasta suoran pisteestä, esimerkiksi $(100\\,\\text{W};\\ 4{,}0\\,\\text{g})$ ja $(1100\\,\\text{W};\\ 137{,}0\\,\\text{g})$: noin $0{,}133\\,\\text{g/W}$."
+      },
+      {
+       "text": "Perustelee mallin: energia säilyy, joten $(P - P_\\text{h})\\,t = r\\,\\Delta m$, ja suoran kulmakerroin on $\\dfrac{t}{r}$.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$r = \\dfrac{t}{k} = \\dfrac{300\\,\\text{s}}{0{,}133 \\cdot 10^{-3}\\,\\text{kg/W}}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$r \\approx 2{,}26\\,\\text{MJ/kg}$; tulos $2{,}2$–$2{,}3\\,\\text{MJ/kg}$ hyväksytään."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Suora ei kulje origon kautta. Määritä kuvaajasta, millä teholla vesi ei höyrystyisi lainkaan, ja tulkitse tulos.",
+     "answer": {
+      "value": 69.9,
+      "unit": "W",
+      "tolerance": 0.3
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Suora leikkaa vaaka-akselin noin teholla $70\\,\\text{W}$; $50$–$90\\,\\text{W}$ hyväksytään."
+      },
+      {
+       "text": "Tulkitsee leikkauskohdan: osa kuumentimen tehosta johtuu astian seinien ja pinnan kautta huoneeseen eikä höyrystä vettä; häviöteho on noin $70\\,\\text{W}$.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$P_\\text{h} \\approx 70\\,\\text{W}$ yhdellä tai kahdella merkitsevällä numerolla"
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 5,
+     "text": "Arvioi, miksi yhdestä mittauksesta laskettu $2{,}54\\,\\text{MJ/kg}$ eroaa kuvaajan tuloksesta, ja kumpi tulos on luotettavampi.",
+     "criteria": [
+      {
+       "key": "error_sources",
+       "points": 2,
+       "detail": "Yhden mittauksen laskussa koko teho oletetaan höyrystämiseen, vaikka noin $70\\,\\text{W}$ johtuu huoneeseen. Silloin energiaa on laskettu liikaa, ja tulos on liian suuri, noin $12\\,\\%$."
+      },
+      {
+       "key": "conclusion",
+       "points": 2,
+       "detail": "Kuvaajan kulmakerroin on luotettavampi: vakiona pysyvä häviö siirtää vain suoraa eikä muuta kulmakerrointa, ja viisi pistettä pienentää satunnaisvirheen vaikutusta."
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Menetelmä olettaa, että häviöteho on sama kaikilla tehoilla; se on perusteltua, koska kiehuva vesi on aina $100\\,{}^\\circ\\text{C}$:ssa ja lämpötilaero huoneeseen pysyy samana."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "concept": "fy3-7",
+    "math": "fy3-7",
+    "experiment": "fy3-7",
+    "transfer": "fy3-12",
+    "communication": "fy1-4"
+   }
+  },
+  {
+   "id": "fy9-lampo-s4",
+   "title": "Järvi talvella",
+   "source": "example",
+   "source_note": "Tilanne on keksitty esimerkki. Pilkkijän väite on keksitty arkiuskomus, jota tehtävässä arvioidaan.",
+   "skills": [
+    "fy3-8",
+    "fy3-7",
+    "fy3-12"
+   ],
+   "text": "Syvä järvi jäätyy marraskuussa. Kevättalvella jää on $40\\,\\text{cm}$ paksua, mutta järven pohjalla vesi on yhä noin $4\\,{}^\\circ\\text{C}$:ista, ja kalat elävät siellä koko talven. Jään yläpinta on pakkasen lämpötilassa ja alapinta $0\\,{}^\\circ\\text{C}$:ssa.\n\nPilkkijä sanoo: ”Paksu lumipeite jään päällä vahvistaa jäätä, koska lumi on kylmää ja jäähdyttää jäätä.”",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "word",
+     "points": 5,
+     "text": "Selitä, miksi järvi jäätyy pinnalta alkaen ja miksi pohjalla on talvellakin noin $4\\,{}^\\circ\\text{C}$:ista vettä.",
+     "criteria": [
+      {
+       "text": "Kertoo, että veden tiheys on suurin noin $4\\,{}^\\circ\\text{C}$:ssa: $0\\,{}^\\circ\\text{C}$:n ja $4\\,{}^\\circ\\text{C}$:n välillä vesi kutistuu lämmetessään.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Selittää kerrostumisen: syksyllä jäähtyvä pintavesi painuu pohjalle, kunnes koko järvi on noin $4\\,{}^\\circ\\text{C}$:ista; sen jälkeen kylmempi ja kevyempi vesi jää pinnalle ja jäätyy.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Pohjan $4\\,{}^\\circ\\text{C}$:inen vesi on tihein, joten se pysyy alhaalla jään alla."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "word",
+     "points": 5,
+     "text": "Selitä energian säilymisen ja lämmön siirtymisen avulla, mihin jäätyvän veden energia menee ja miksi jää kasvaa sitä hitaammin, mitä paksumpaa se on.",
+     "criteria": [
+      {
+       "text": "Kertoo, että jäätyessään vesi luovuttaa sulamislämmön, noin $334\\,\\text{kJ}$ kilogrammaa kohti, vaikka lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Selittää, että tämä energia johtuu jään läpi kylmään ilmaan; jää kasvaa vain sitä mukaa kuin energiaa johtuu pois.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Perustelee, että paksun jääkerroksen läpi johtuu sama lämpötilaero huomioiden pienempi teho (paksumman kerroksen U-arvo on pienempi), joten jäätä syntyy hitaammin.",
+       "tag": "transfer",
+       "points": 2
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 5,
+     "text": "Arvioi pilkkijän väite.",
+     "criteria": [
+      {
+       "text": "Huomaa, että lumi on huono lämmönjohde, koska siinä on paljon ilmaa: se eristää jään pakkasesta eikä jäähdytä sitä.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Päättelee, että lumen alla jään alapinnalta johtuu vähemmän energiaa pois, joten jää kasvaa hitaammin ja jää ohuemmaksi.",
+       "tag": "transfer",
+       "points": 2
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Väite on väärä: lumipeite hidastaa jään kasvua. Lisäksi raskas lumi voi painaa jäätä alas, jolloin vettä nousee jään päälle ja syntyy heikkoa sohjojäätä."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "concept": "fy3-8",
+    "transfer": "fy3-12",
+    "communication": "fy3-12"
+   }
+  },
+  {
+   "id": "fy9-lampo-s5",
+   "title": "Jään sulamislämpö kalorimetrillä",
+   "source": "example",
+   "source_note": "Raportti ja sen mittaustulokset ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy3-14",
+    "fy3-6",
+    "fy1-3"
+   ],
+   "text": "Ote opiskelijaryhmän raportista:\n\n> Kaadoimme styroksimukiin $0{,}200\\,\\text{kg}$ vettä, jonka lämpötila oli $40{,}0\\,{}^\\circ\\text{C}$. Otimme pakastimesta jääpaloja, punnitsimme ne nopeasti ($0{,}0500\\,\\text{kg}$) ja pudotimme ne veteen. Sekoitimme, kunnes jää oli sulanut, ja lämpötila asettui arvoon $14{,}3\\,{}^\\circ\\text{C}$. Laskimme jään ominaissulamislämmöksi $371\\,\\text{kJ/kg}$. Taulukkoarvo $334\\,\\text{kJ/kg}$ on siis väärä, tai muki ottaa lämpöä.\n\nPakastimen lämpötila oli $-18{,}0\\,{}^\\circ\\text{C}$. Veden $c = 4190\\,\\text{J/(kg}\\cdot\\text{K)}$ ja jään $c = 2100\\,\\text{J/(kg}\\cdot\\text{K)}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 5,
+     "text": "Näytä, miten ryhmä sai tulokseksi $371\\,\\text{kJ/kg}$. Mitä ryhmä oletti jään alkulämpötilasta?",
+     "answer": {
+      "value": 370.8,
+      "unit": "kJ/kg",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$c_\\text{v} m_\\text{v} (T_\\text{v} - T) = s m_\\text{j} + c_\\text{v} m_\\text{j} T$, josta $s$ ratkaistuna"
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "Veden luovuttama $21\\,537\\,\\text{J}$ ja sulamisveden lämpeneminen $2996\\,\\text{J}$; $s = 18\\,541\\,\\text{J} : 0{,}0500\\,\\text{kg}$"
+      },
+      {
+       "text": "Toteaa, että laskussa jään oletetaan olleen $0\\,{}^\\circ\\text{C}$:ista, koska jään lämpenemistä ei ole otettu huomioon.",
+       "tag": "experiment",
+       "points": 2
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Laske tulos uudelleen, kun otat huomioon jään todellisen alkulämpötilan. Arvioi ryhmän johtopäätös.",
+     "answer": {
+      "value": 333.0,
+      "unit": "kJ/kg",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Energiataseeseen lisätään jään lämpeneminen $c_\\text{j} m_\\text{j} \\cdot 18{,}0\\,\\text{K}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$c_\\text{j} m_\\text{j} \\Delta T_\\text{j} = 1890\\,\\text{J}$ ja $s = (18\\,541 - 1890)\\,\\text{J} : 0{,}0500\\,\\text{kg}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$s \\approx 333\\,\\text{kJ/kg}$, kolme merkitsevää numeroa"
+      },
+      {
+       "key": "conclusion",
+       "points": 2,
+       "detail": "Johtopäätös ei pidä: korjattu tulos on taulukkoarvon mukainen, ja ero johtui virheellisestä oletuksesta eikä taulukosta. Muki ei selitä eroa, koska sen lämmön ottaminen pienentäisi tulosta."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 5,
+     "text": "Ryhmä haluaa toistaa mittauksen luotettavammin. Ehdota kolme parannusta ja perustele, mihin virhelähteeseen kukin vaikuttaa.",
+     "criteria": [
+      {
+       "text": "Käyttää jäätä, joka on sulamassa $0\\,{}^\\circ\\text{C}$:ssa, ja kuivaa sen pinnan ennen punnitsemista, tai mittaa jään lämpötilan ja ottaa sen huomioon (jään lämpeneminen, jään pinnalla oleva vesi).",
+       "tag": "experiment",
+       "points": 2
+      },
+      {
+       "text": "Määrittää jään massan erotuksena punnitsemalla mukin ennen jään lisäämistä ja sen jälkeen.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Pienentää lämmönvaihtoa ympäristön kanssa: kansi, alkulämpötila yhtä paljon huoneenlämmön yläpuolella kuin loppulämpötila sen alapuolella, tai mukin lämpökapasiteetin huomioon ottaminen.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Toistaa mittauksen useita kertoja ja ilmoittaa keskiarvon ja tulosten vaihtelun."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "math": "fy3-14",
+    "experiment": "fy1-3",
+    "communication": "fy3-14"
+   }
+  },
+  {
+   "id": "fy9-lampo-s6",
+   "title": "Jarrut tunturitiellä",
+   "source": "example",
+   "source_note": "Auto, tie ja luvut ovat keksittyjä esimerkkejä. Jarrulevyihin siirtyvä osuus $85\\,\\%$ ja ajovastus $450\\,\\text{N}$ ovat pyöristettyjä suuruusluokka-arvoja.",
+   "skills": [
+    "fy4-7",
+    "fy4-8",
+    "fy3-6",
+    "fy3-12"
+   ],
+   "text": "Henkilöauton massa matkustajineen on $1600\\,\\text{kg}$. Auton neljän valurautaisen jarrulevyn massa on yhteensä $30\\,\\text{kg}$, ja raudan ominaislämpökapasiteetti on $450\\,\\text{J/(kg}\\cdot\\text{K)}$. Jarrutettaessa noin $85\\,\\%$ jarruihin siirtyvästä energiasta lämmittää levyjä ja loput jarrupaloja.\n\nTunturitie laskee $4{,}0\\,\\text{km}$:n matkalla $250\\,\\text{m}$. Kuljettaja laskee mäen tasaisella nopeudella $60\\,\\text{km/h}$ ja käyttää pelkkiä jarruja. Ilmanvastus ja vierimisvastus jarruttavat autoa yhteensä keskimäärin $450\\,\\text{N}$:n voimalla.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Auto pysäytetään tasaisella tiellä nopeudesta $90\\,\\text{km/h}$. Kuinka paljon jarrulevyjen lämpötila nousee?",
+     "answer": {
+      "value": 31.48,
+      "unit": "K",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$E_\\text{k} = \\tfrac{1}{2} m v^2$ ja $0{,}85\\,E_\\text{k} = c\\,m_\\text{levyt}\\,\\Delta T$"
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "$90\\,\\text{km/h} = 90 \\cdot \\dfrac{1000\\,\\text{m}}{3600\\,\\text{s}} = 25\\,\\text{m/s}$ ja $E_\\text{k} = 500\\,\\text{kJ}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\Delta T \\approx 31\\,\\text{K}$"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Kuinka paljon jarrulevyjen lämpötila nousisi alamäessä, jos levyt eivät luovuttaisi lämpöä ilmaan?",
+     "answer": {
+      "value": 133.7,
+      "unit": "K",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "text": "Perustelee energiaperiaatteella: nopeus on vakio, joten liike-energia ei muutu, ja potentiaalienergian väheneminen kuluu ajovastusten työhön ja jarruihin.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Q_\\text{jarrut} = mgh - F s$ ja $\\Delta T = \\dfrac{0{,}85\\,Q_\\text{jarrut}}{c\\,m_\\text{levyt}}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$mgh = 3{,}92\\,\\text{MJ}$, $Fs = 1{,}80\\,\\text{MJ}$ ja levyihin $1{,}81\\,\\text{MJ}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\Delta T \\approx 130\\,\\text{K}$ kahdella merkitsevällä numerolla"
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 3,
+     "text": "Mäen alla mitattiin, että levyjen lämpötila oli noussut vain $80\\,\\text{K}$. Kuinka suuri osa levyihin tulleesta energiasta siirtyi mäen aikana ilmaan, ja millä tavoilla se siirtyi?",
+     "answer": {
+      "value": 40.2,
+      "unit": "%",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Levyihin jäi $c\\,m\\,\\Delta T = 1{,}08\\,\\text{MJ}$, ilmaan siirtyi $1{,}81\\,\\text{MJ} - 1{,}08\\,\\text{MJ} \\approx 0{,}73\\,\\text{MJ}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "noin $40\\,\\%$"
+      },
+      {
+       "text": "Nimeää siirtymistavat: pääosin konvektio levyn ohi virtaavaan ilmaan, lisäksi lämpösäteily ja johtuminen navan ja vanteen kautta.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Kuljettajalle neuvotaan: ”Käytä pitkässä alamäessä moottorijarrutusta, ettei jarru kuumene.” Perustele neuvo energian avulla.",
+     "criteria": [
+      {
+       "text": "Selittää, että moottorijarrutuksessa potentiaalienergia muuttuu moottorin kitkan ja pumppaustyön kautta sisäenergiaksi moottorissa, ja moottorin jäähdytysjärjestelmä luovuttaa sen ilmaan.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Jarrulevyt pysyvät viileämpinä ja jarrutusteho säilyy, kun jarruja tarvitaan; energia ei katoa, vaan sen lämmittämä kohde vaihtuu."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "math": "fy4-8",
+    "concept": "fy3-12",
+    "communication": "fy4-8"
+   }
+  }
+ ]
+}
