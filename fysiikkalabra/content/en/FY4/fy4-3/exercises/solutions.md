@@ -258,8 +258,8 @@ $s = 0.500\,\text{m/s}\cdot 6.0\,\text{s} = 3.0\,\text{m}$.
 **Model answer:** The student considers two forces, the force of the fist on the wall and the force of the wall on the fist, but they act on different objects. The force of the fist on the wall acts on the wall, so it does not cancel anything acting on the fist. The force of the wall acts on the fist, and it is against the motion of the fist, so the fist slows down and stops. The forces are nevertheless equally large even though the wall does not move, and they appear at the same time. No force is needed to maintain motion.
 
 ## fy4-3-L3-04
-**Given:** rolling resistance on the cart $F_\text{r} = 410\,\text{N}$, air resistance on the cart $F_\text{dc} = 40\,\text{N}$, air resistance on the horse $F_\text{dh} = 30\,\text{N}$, the velocity is constant and straight forwards, example data
-**Find:** a) the force of the rope on the cart $T$; b) the force of the road on the hooves of the horse $F_\text{road}$ in $\text{N}$; c) why the forces do not cancel each other
+**Given:** rolling resistance on the cart $F_\text{r} = 410\,\text{N}$, air resistance on the cart $F_\text{k} = 40\,\text{N}$, air resistance on the horse $F_\text{h} = 30\,\text{N}$, the velocity is constant and straight forwards, example data
+**Find:** a) the force of the rope on the cart $T$; b) the force of the road on the hooves of the horse $F_\text{t}$ in $\text{N}$; c) why the forces do not cancel each other
 **Principle:** Both the cart and the horse move at constant velocity, so the net force on each is zero (first law). The cart gives the force of the rope. By the third law the cart pulls the horse backwards with a force $T$ as large as the rope pulls the cart forwards, and this is used in the equilibrium of the horse. The force of the road on the hooves is an external force that carries the pair forwards.
 **Force diagram:** For the cart draw: the force of the rope $\overline{T}$ forwards, the rolling resistance and the air resistance backwards. For the horse: the force of the road $\overline{F}_\text{road}$ forwards, the force of the rope $\overline{T}$ and the air resistance backwards. The forces on the horse and on the cart are in different diagrams.
 ```voimakuvio
@@ -276,10 +276,10 @@ T 450 vasen
 F_h 30 vasen
 a 0
 ```
-**Formula:** Cart: $T - F_\text{r} - F_\text{dc} = 0$, so $T = F_\text{r} + F_\text{dc}$. Horse: $F_\text{road} - T - F_\text{dh} = 0$, so $F_\text{road} = T + F_\text{dh}$.
+**Formula:** Cart: $T - F_\text{r} - F_\text{k} = 0$, so $T = F_\text{r} + F_\text{k}$. Horse: $F_\text{t} - T - F_\text{h} = 0$, so $F_\text{t} = T + F_\text{h}$.
 **Conversions:** The forces are in newtons, so no conversions are needed.
 **Substitution:** $T = 410\,\text{N} + 40\,\text{N} = 450\,\text{N}$ and
-$F_\text{road} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
+$F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
 **Answer:** a) $450\,\text{N}$ and b) $480\,\text{N}$ forwards, two significant figures like the given forces. c) The force of the horse on the cart and the force of the cart on the horse are equally large and oppositely directed, but they act on different objects, so they do not cancel each other. The motion of the cart is decided only by the forces acting on the cart, and the motion of the horse only by the forces acting on the horse. The horse gets going because the road pushes its hooves forwards with a force that is larger than the force of the cart on the horse.
 **Reasonableness:** The force of the road $480\,\text{N}$ is as large as the sum of all the resistances $410\,\text{N} + 40\,\text{N} + 30\,\text{N} = 480\,\text{N}$, so the whole system moves at constant velocity. The friction between the road and the hooves points forwards, because it opposes the hoof slipping backwards.
 
