@@ -39,6 +39,74 @@
       "answer": 51.2,
       "unit": "W",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-06",
+      "level": 1,
+      "text": "The metal frame of a washing machine is connected to the ground with a protective earth conductor. Which statement about the purpose of protective earthing is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "It leads the fault current to the ground, so the fuse or the residual current device cuts off the current.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "It reduces the electricity consumption of the device, because part of the current returns to the ground uselessly.",
+          "feedback": "Earthing does not affect the normal electricity consumption of the device: in normal use no current flows in the earth conductor at all. It comes into use only when a fault occurs."
+        },
+        {
+          "text": "It leads the fault current to the ground, so the fuse or the residual current device cuts off the current.",
+          "correct": true,
+          "feedback": "Correct: when the live conductor touches the frame because of a fault, the earth conductor carries a large fault current to the ground. The current grows so large that the protective device cuts it off, and the frame does not stay live."
+        },
+        {
+          "text": "It insulates the frame from the ground, so a fault cannot let current flow in the frame.",
+          "feedback": "Earthing does the opposite: it connects the frame to the ground with a conductor. If the frame were insulated, the fault current could not get away and the frame could stay live."
+        },
+        {
+          "text": "It keeps the frame live all the time, so a fault is noticed before the device breaks.",
+          "feedback": "The purpose of earthing is to prevent the frame from staying live. A live frame would be an electric shock hazard, not a useful sign of a fault."
+        }
+      ]
+    },
+    {
+      "id": "fy6-15-L1-07",
+      "level": 1,
+      "text": "A hair dryer belongs to protection class II. Which statement about a class II device is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The device has double insulation, so the casing does not become live because of a single fault.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The metal frame of the device is connected to an earth conductor, so the fault current flows along the conductor to the ground.",
+          "feedback": "This describes class I, whose metal frame is protectively earthed. A class II device has no protective earthing but double or reinforced insulation."
+        },
+        {
+          "text": "The device operates at a low safety voltage, so there is no dangerous voltage in it at all.",
+          "feedback": "This describes class III, where the device operates at a low safety voltage. A class II device is connected to the mains voltage $230\\,\\text{V}$, and its protection lies in the insulation."
+        },
+        {
+          "text": "The casing of the device is tight and watertight, so it can be used safely in a shower.",
+          "feedback": "The protection class tells about protection against electric shock, not about resistance to moisture. Suitability for a wet room is determined by other markings, and a class II hair dryer must still not be used in a shower."
+        },
+        {
+          "text": "The device has double insulation, so the casing does not become live because of a single fault.",
+          "correct": true,
+          "feedback": "Correct: a class II device has double or reinforced insulation, so a single insulation fault does not yet bring the mains voltage to the casing the user can touch. That is why it does not need protective earthing."
+        }
+      ]
+    },
+    {
+      "id": "fy6-15-L1-08",
+      "level": 1,
+      "text": "Two metal plates are $2.0\\,\\text{mm}$ apart in air, and the electric field between them is uniform. The dielectric strength of air is $3.0\\,\\text{MV/m}$. How large may the voltage between the plates be at most so that the air does not break down? Answer in kilovolts.",
+      "answer": 6.0,
+      "unit": "kV",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +141,95 @@
       "answer": 15.0,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L2-05",
+      "level": 2,
+      "text": "The table gives the resistance $R$ of the current path in four situations when a person touches a live part and the touch voltage is $230\\,\\text{V}$ (example data).\n\nEffects of current (indicative values of the IEC 60479-1 type): threshold of perception $0.5\\,\\text{mA}$, let-go threshold $10\\,\\text{mA}$, breathing becomes difficult at $30\\,\\text{mA}$ and danger of ventricular fibrillation above $50\\,\\text{mA}$.\n\na) Calculate the current through the body in each situation and state which effect of current is involved.\n\nb) How many times as large is the current in the bathtub compared with dry skin and rubber shoes?\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 61.11,
+      "unit": "times",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Resistance $R$ of the current path in different situations (example data)",
+        "columns": [
+          "Situation",
+          "$R\\,(\\text{k}\\Omega)$"
+        ],
+        "rows": [
+          [
+            "Dry skin, rubber shoes",
+            "55"
+          ],
+          [
+            "Dry skin, bare feet",
+            "12"
+          ],
+          [
+            "Wet hands",
+            "2.4"
+          ],
+          [
+            "In a bathtub",
+            "0.90"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-15-L2-06",
+      "level": 2,
+      "text": "The circuit cable of a home is protected by a $10\\,\\text{A}$ fuse, and the mains voltage is $230\\,\\text{V}$. The table lists the devices that can be connected to the circuit and their input powers (example data).\n\na) Which combinations of two devices exceed the rated current of the fuse when both are on at the same time?\n\nb) Choose the pair of devices whose total power is as large as possible but does not exceed the limit of the fuse. How large a current then flows in the circuit cable? Answer in amperes.\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 9.565,
+      "unit": "A",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Input powers $P$ of the devices (example data)",
+        "columns": [
+          "Device",
+          "$P\\,(\\text{W})$"
+        ],
+        "rows": [
+          [
+            "Kettle",
+            "2000"
+          ],
+          [
+            "Vacuum cleaner",
+            "1400"
+          ],
+          [
+            "Iron",
+            "1100"
+          ],
+          [
+            "Toaster",
+            "800"
+          ],
+          [
+            "Coffee maker",
+            "600"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-15-L2-07",
+      "level": 2,
+      "text": "A student writes: “The fuse of my circuit is $16\\,\\text{A}$, so it protects me from electric shock. If I touch the live frame of a faulty device, the fuse cuts off the current immediately.”\n\nThe touch voltage is $230\\,\\text{V}$, and the resistance of the current path of a wet person is $2.00\\,\\text{k}\\Omega$.\n\na) What is the error in the student's claim? Name the device that cuts off the small current flowing through a person.\n\nb) Calculate the current through the body in milliamperes.\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "error"
+      ],
+      "answer": 115.0,
+      "unit": "mA",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +257,86 @@
       "answer": 50.0,
       "unit": "mA",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L3-04",
+      "level": 3,
+      "text": "An extension cord warms up when a current flows in it. The total resistance of the conductors of the cord is $0.40\\,\\Omega$. The rise in temperature $\\Delta T$ of the cord's sheath relative to the surroundings was measured at different currents after the temperature had settled (example data). Assume that the rise in temperature depends on the thermal power produced in the cord in the same way at all currents.\n\na) Calculate the thermal power $P = RI^2$ for each current and plot the points $(P,\\, \\Delta T)$. Justify from the graph that the rise in temperature is directly proportional to the thermal power, and fit a straight line through the origin to the points. Determine its slope $k$ in the unit $\\text{K/W}$.\n\nb) The insulation of the cord withstands a rise in temperature of at most $50\\,\\text{K}$. Calculate the current at which this limit is reached. Answer in amperes.\n\nc) Reason by calculation whether a $16\\,\\text{A}$ fuse is enough to protect the cord from overheating. What about a $25\\,\\text{A}$ fuse?\n\nWrite the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 20.5,
+      "unit": "A",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Rise in temperature $\\Delta T$ of the extension cord's sheath as a function of the current $I$ (example data)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$\\Delta T\\,(\\text{K})$"
+        ],
+        "rows": [
+          [
+            "4.0",
+            "2.1"
+          ],
+          [
+            "8.0",
+            "7.6"
+          ],
+          [
+            "12.0",
+            "17.2"
+          ],
+          [
+            "16.0",
+            "30.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-15-L3-05",
+      "level": 3,
+      "text": "The protective earth conductor of a washing machine has broken, so the frame of the machine is not earthed. The insulation of the heating element has started to weaken: if the live conductor leaks through the insulation to the frame, the resistance $R_\\text{e}$ of the leakage path is in series with the person touching the frame. The insulation resistance was measured at two-week intervals (example data).\n\nAssume that a person standing on a wet floor touches the frame and the resistance of their current path is $R_\\text{k} = 1.5\\,\\text{k}\\Omega$. The voltage is $230\\,\\text{V}$, and the residual current device trips when the current to the ground exceeds $30\\,\\text{mA}$.\n\na) Calculate the current through the person in each measurement week.\n\nb) In which measurement does the residual current device trip? Justify from the data why the residual current device alone still does not make the situation safe in the earlier weeks.\n\nc) Calculate the greatest insulation resistance $R_\\text{e}$ at which the residual current device still trips. Answer in kilohms.\n\nWrite the result of part c) in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 6.167,
+      "unit": "kΩ",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Insulation resistance $R_\\text{e}$ of the heating element (example data)",
+        "columns": [
+          "Week",
+          "$R_\\text{e}\\,(\\text{k}\\Omega)$"
+        ],
+        "rows": [
+          [
+            "1",
+            "900"
+          ],
+          [
+            "3",
+            "120"
+          ],
+          [
+            "5",
+            "40"
+          ],
+          [
+            "7",
+            "12"
+          ],
+          [
+            "9",
+            "4.0"
+          ]
+        ]
+      }
     }
   ]
 }
