@@ -1,11 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 0bb0ddc1c2480ef4
+CONTENT-HASH: 6e95f62f7996146a
+Mode: full
+Round: 1
+
 ## Blocking
+(none)
+
+## Fixed
+- exercises.json L3-04 — "the initial levels are different levels" -> "each line has a different initial level"; "limiting wavelength" -> "threshold wavelength".
+- exercises.json L3-05 — "level of excitation" -> "excitation level" (also in solutions.md).
+- solutions.md L2-06 Answer — "$3$ photons" was split by the answer box into "3" + "Photons. ..."; now "$3$. The atom absorbs three photons: ...".
+- solutions.md L3-04 — "limiting wavelength" -> "threshold wavelength".
+
 ## Polish
+- L3-05 solution Substitution is one long paragraph (same in fi); structure left as in the reviewed Finnish.
+
 ## Checked
-- exercises.json and solutions.md compared line by line with content/fi/FY8/fy8-3/exercises: all numbers, formulas and conditions identical; answer/unit/tolerance/figure fields identical.
-- Exercise brief was empty (tool bug); judged against the exercise set and the source lesson.
-- Recomputed with own formulas: L1 −0.85, 12.75 → 12.8, 2.551, 1.511, 456.95 THz; L2 434.2 nm, n = 6.02 → 6, 620 nm, 1.90 eV; L3 2 levels → 3 lines, He⁺ 468.9 nm, 6.80 eV — all match.
-- L3-01 English text keeps the condition "only the share of energy that corresponds to the difference of some pair of its levels" and the single-collision assumption in the solution.
-- L2-03 figure caption (levels −8.0/−5.0/−3.0/−2.0 eV, 1 eV grid) matches figures.py; does not give the answer.
-- Significant-figure reasons (13.6 eV, 2.0 eV read from figure, one-decimal differences) translated faithfully.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) compared with content/fi by script: ids, answers, units, tolerances, correct flags, choices, feedback, data cells and every number identical (decimal point in JSON, LaTeX per language).
+- solutions.md of the new tasks: all numbers and formulas equal the Finnish; check_i18n.py en: 0 errors.
+- Recomputed: L1-06 4->1 (97.3 nm), L1-07 121.6 nm, L1-08 2.55 eV, L2-05 13.6 eV, L2-06 3 photons, L2-07 13.06 eV, L3-04 n=3 and 365 THz, L3-05 n=4 and 97.25 nm; all match.
+- No Finnish left in the English text where it should not be.

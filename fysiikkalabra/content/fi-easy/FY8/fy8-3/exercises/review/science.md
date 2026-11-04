@@ -1,11 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 272945607465e323
+CONTENT-HASH: 8824874f7b9c2f5a
+Mode: full
+Round: 1
+
 ## Blocking
+(none)
+
+## Fixed
+- exercises.json L3-04 — "Lähtötasot ovat kuitenkin eri tasoja" -> "Jokaisella viivalla on kuitenkin eri lähtötaso"; "ionisoi atomin" explained ("eli irrottaa elektronin"); question about the limit wavelength shortened.
+- exercises.json L3-05 — "virityksen taso" -> "viritystaso"; L2-06 — condition reworded ("perustilan ja jonkin ylemmän tason energioiden erotus").
+- solutions.md L2-06 — "vastaavuuden raja" -> "sallittu poikkeama"; Answer "$3$ fotonia" -> "$3$. Atomi absorboi kolme fotonia:" (answer box split the old text).
+- solutions.md L3-05 — "kaskadi" -> "siirtymäketju".
+
 ## Polish
+- L3-05 solution Substitution is one long paragraph (same in fi); structure left as in the reviewed Finnish.
+
 ## Checked
-- exercises.json and solutions.md compared line by line with content/fi/FY8/fy8-3/exercises: all numbers, formulas, answers, units, tolerances and figure ids identical.
-- L3-01 split text keeps both conditions: atom takes only an energy equal to a level-pair difference; count transitions via intermediate levels.
-- L2-03 reasonableness rewrite ("Vedyn punaisessa viivassa energiaero on pienempi (1,89 eV) ja aallonpituus pidempi") is correct physics.
-- L2-04 rewrite keeps "fotonin energian ei tarvitse olla minkään tasoparin erotus. Sen täytyy vain olla vähintään ionisaatioenergia".
-- Gloss "kvantittunut eli sillä on vain tietyt sallitut arvot" correct.
-- Answers recomputed with own formulas (−0.85, 12.8, 2.55, 1.51, 457, 434, 6, 620, 1.9, 3, 469, 6.8): all match.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) compared with content/fi by script: ids, answers, units, tolerances, correct flags, choices, feedback, data cells and every number identical (decimal point in JSON, LaTeX per language).
+- solutions.md of the new tasks: all numbers and formulas equal the Finnish; check_i18n.py fi-easy: 0 errors.
+- Recomputed: L1-06 4->1 (97.3 nm), L1-07 121.6 nm, L1-08 2.55 eV, L2-05 13.6 eV, L2-06 3 photons, L2-07 13.06 eV, L3-04 n=3 and 365 THz, L3-05 n=4 and 97.25 nm; all match.
+- No Finnish left in the plain Finnish (selkosuomi) text where it should not be.

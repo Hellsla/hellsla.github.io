@@ -1,12 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 3368be04849a1804
+CONTENT-HASH: 606a681d63f9ae65
+Mode: delta (new exercises L1-06..08, L2-05..07, L3-04..05)
+Round: 1
 
 ## Blocking
 
+## Fixed
+- exercises.json (L3-04 e) and solutions.md (L3-04 Vastaus): "kulkee tunnetusti" was hard to read in plain Finnish; now "kulkee vain toisen raon kautta ja sen voi tietää".
+
 ## Polish
-- solutions.md:89 (L2-04 Järkevyys, unchanged sentence on the edited line, inherited from content/fi) — "Tällainen valo on silmälle näkymättömän heikkoa" holds only for a light-adapted eye or light spread over a large area: 2,4·10⁴ photons/s ≈ 8,7·10⁻¹⁵ W is roughly 20 times the ≈10³ photons/s that a dark-adapted eye detects from the faintest naked-eye stars — "Tällainen valo on niin heikkoa, että tavallisessa valaistuksessa sitä ei näe" (or drop the sentence); fix the source the same way.
 
 ## Checked
-- Diff (L2-04 Järkevyys): "yli satatuhatta kertaa pienempi kuin yksi miljardisosa wattia" is correct — 1·10⁻⁹ W / 8,668·10⁻¹⁵ W = 1,15·10⁵; replaces the old compound word without changing any number or formula.
-- Same line: back-check 8,668·10⁻¹⁵ W / 3,6118·10⁻¹⁹ J = 2,40·10⁴ 1/s recomputed; P = (N/t)·hc/λ = 8,668·10⁻¹⁵ W recomputed, matches the answer and the three-significant-figure reason.
-- No other file in the exercise set changed since the passed version (hash 3368be04849a1804 at start and end).
+- Scripted comparison against content/fi: all 20 exercise ids, answers, units, tolerances, correct flags, choice order, kind lists and data-table cells equal; every number in texts, feedback and solutions equal (decimal comma in text and LaTeX, point in JSON and tables as in fi).
+- All 8 solutions have the same numbers and steps as the Finnish; no formula or number differs (only the order of 1.5 m and 5 ns in L3-04 Reasonableness, same values).
+- Answers rechecked: 3.06 eV, 11.4, 4.85 pm, 6.4e15 1/s, 15.6 s, 1.57e-23 kg m/s.
+- Physics terms follow the Finnish (photon, momentum, probability of detection, Compton scattering).
+- Plain Finnish: short sentences, terms as in fi.
+- check_i18n.py fi-easy: 0 errors.
