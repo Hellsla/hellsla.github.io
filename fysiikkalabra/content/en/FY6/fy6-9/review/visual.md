@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 1d62021e1bd5520a
+CONTENT-HASH: b57c3875fe94cbd2
+Mode: delta (en lesson wording change in inquiry.json)
+Round 2
 
 ## Blocking
 (none)
@@ -15,3 +17,4 @@ CONTENT-HASH: 1d62021e1bd5520a
 ## Scores
 illustrations 4 · typography 4 · English 4 · accessibility 4
 - Re-review after the concept-review commit: howto wording (electrical energy transformed into internal energy), efficiency paragraph (often below 100 %, charging always, R and R_s), L3-03 sisäenergiaksi, matching the Finnish; no numbers changed; $ counts equal.
+- Delta re-review: slider label for R is shorter ('charger and wire resistance'), the intended 360 px overflow fix; wording only, no numbers or symbols changed; layout of the sim panel is not harmed by the shorter text (it is shorter than the earlier label that already fit at 390 px).

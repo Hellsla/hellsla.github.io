@@ -157,7 +157,7 @@
 **Conversions:** $U = 1.8\,\text{kV} = 1800\,\text{V}$, $d = 6.0\,\text{cm} = 0.060\,\text{m}$; finally $1\,\text{N} = 1000\,\text{mN}$.
 **Substitution:** a) In the formula $E = U : d$ the student used the distance of the ball from the plate, $0.015\,\text{m}$, although the distance of the plates $0.060\,\text{m}$ must be used. The student also concluded wrongly that the force grows closer to the plate. b) $E = \dfrac{1800\,\text{V}}{0.060\,\text{m}} = 3.0 \cdot 10^{4}\,\text{V/m}$ and $F = 4.0 \cdot 10^{-9}\,\text{C} \cdot 3.0 \cdot 10^{4}\,\text{V/m} = 1.2 \cdot 10^{-4}\,\text{N} = 0.12\,\text{mN}$
 **Answer:** $0.12\,\text{mN}$, two significant figures like the given values.
-**Reasonableness:** The student's force $0.48\,\text{mN}$ is four times the correct one, because he divided the voltage by a distance four times shorter ($6.0\,\text{cm} : 1.5\,\text{cm} = 4$). The correct force is the same everywhere between the plates, also when the ball is next to a plate.
+**Reasonableness:** The student's force $0.48\,\text{mN}$ is four times the correct one, because the student divided the voltage by a distance four times shorter ($6.0\,\text{cm} : 1.5\,\text{cm} = 4$). The correct force is the same everywhere between the plates, also when the ball is next to a plate.
 
 ## fy6-11-L2-07
 **Given:** example data: distance of the plates $d = 2.0\,\text{cm}$, voltage $U = 600\,\text{V}$, test charge $q = 2.0\,\text{nC}$, forces $F = 60.2$; $59.8$; $59.5$; $59.0$; $58.0$ and $33.0\,\mu\text{N}$ at the distances $x = 0$; $2.0$; $4.0$; $6.0$; $8.0$ and $10.0\,\text{cm}$ from the centre

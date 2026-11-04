@@ -1,16 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: dc685bf962f617f6
+CONTENT-HASH: 9dbe67314c91de71
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
 (none)
 
 ## Polish
 (none)
 
 ## Checked
-- Delta: L1-05 Reasonableness ('The line was fitted through the origin because, by the model $F = qE$, ...'). Opened fy6-11-open-exercises-1280-6 and -5 (en): inline formula renders, no clipping, graph and solution intact.
-- The sentence is clear English; no unit or symbol problems.
-- Hash at start and end: dc685bf962f617f6. Captures re-made for this hash (screenshot.py --if-stale); no layout change around the edited sentence.
+- Opened en shots fy6-11-open-exercises-L2-1280-5 and L3-1280-4: LaTeX, tables, captions and answer boxes render without clipping; decimal point in numbers and units.
+- Fix applied is one plain-text word in solutions.md; no layout effect.
+- No Finnish text visible in the en captures.
+- Quotation marks in L2-06 are typographic and render correctly.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish n/a · accessibility 4
