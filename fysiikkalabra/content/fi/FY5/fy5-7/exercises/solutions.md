@@ -128,14 +128,14 @@
 **Kaava:** $t_{\text{ka}} = \dfrac{\text{aikojen summa}}{5}$ ja $T = \dfrac{t_{\text{ka}}}{10}$
 **Muunnokset:** Ei tarvita: kaikki ajat ovat sekunteina.
 **Sijoitus:** Aikojen summa on $75{,}5\,\text{s}$, joten $t_{\text{ka}} = \dfrac{75{,}5\,\text{s}}{5} = 15{,}1\,\text{s}$ ja $T = \dfrac{15{,}1\,\text{s}}{10} = 1{,}51\,\text{s}$
-**Vastaus:** $1{,}51\,\text{s}$, kolme merkitsevää numeroa kuten mittausajoissa.
-**Järkevyys:** Kohta b): mittausten vaihteluväli on $15{,}4\,\text{s} - 14{,}8\,\text{s} = 0{,}6\,\text{s}$, joten hajonnan arvio on sen puolikas $0{,}3\,\text{s}$ kymmenelle heilahdukselle. Jaksonajalle se on $\tfrac{0{,}3\,\text{s}}{10} = 0{,}03\,\text{s}$, eli $T \approx 1{,}51\,\text{s} \pm 0{,}03\,\text{s}$. Käsin ajanotossa virhe on samaa suuruusluokkaa riippumatta heilahdusten määrästä, mutta kymmenen heilahduksen aika jaetaan kymmenellä, joten virhe jaksonajassa pienenee kymmenesosaan. Yhden heilahduksen ajanotossa sama $0{,}3\,\text{s}$ olisi lähes viidesosa jaksonajasta.
+**Vastaus:** a) $1{,}51\,\text{s}$, kolme merkitsevää numeroa kuten mittausajoissa. Kohta b): mittausten vaihteluväli on $15{,}4\,\text{s} - 14{,}8\,\text{s} = 0{,}6\,\text{s}$, joten hajonnan arvio on sen puolikas $0{,}3\,\text{s}$ kymmenelle heilahdukselle. Jaksonajalle se on $\tfrac{0{,}3\,\text{s}}{10} = 0{,}03\,\text{s}$, eli $T \approx 1{,}51\,\text{s} \pm 0{,}03\,\text{s}$. Käsin ajanotossa virhe on samaa suuruusluokkaa riippumatta heilahdusten määrästä, mutta kymmenen heilahduksen aika jaetaan kymmenellä, joten virhe jaksonajassa pienenee kymmenesosaan. Yhden heilahduksen ajanotossa sama $0{,}3\,\text{s}$ olisi lähes viidesosa jaksonajasta.
+**Järkevyys:** Jaksonaika $1{,}51\,\text{s}$ on lähellä jokaista yksittäistä mittausta jaettuna kymmenellä ($1{,}48\,\text{s}$ … $1{,}54\,\text{s}$), ja heilurin tavallinen jaksonaika on muutama sekunti tai alle, joten tulos on uskottava.
 
 
 ## fy5-7-L2-07
 **Annettu:** tasapainoaseman ohitukset hetkinä $0{,}00\,\text{s}$ (ylös), $0{,}37\,\text{s}$ (alas), $0{,}75\,\text{s}$ (ylös), $1{,}12\,\text{s}$ (alas) ja $1{,}49\,\text{s}$ (ylös); oppilaan tulos $T = 0{,}37\,\text{s}$
 **Kysytty:** oppilaan virhe ja oikea taajuus $f$ hertseinä
-**Periaate:** Jaksonaika on aika, jonka kuluttua kappale on samassa paikassa ja liikkuu samaan suuntaan. Peräkkäisissä ohituksissa suunta vaihtuu, kun taulukon suunta vuorottelee ylös ja alas, joten niiden väli on vain puoli jaksoa. Täysi jakso mitataan saman suuntaisten ohitusten väliltä.
+**Periaate:** Jaksonaika on aika, jonka kuluttua kappale on samassa paikassa ja liikkuu samaan suuntaan. Peräkkäisissä ohituksissa suunta vaihtuu (taulukossa ylös ja alas vuorotellen), joten niiden väli on vain puoli jaksoa. Täysi jakso mitataan saman suuntaisten ohitusten väliltä.
 **Kuvaajan lukeminen:** Taulukosta valitaan vain ylöspäin tapahtuvat ohitukset hetkinä $0{,}00\,\text{s}$, $0{,}75\,\text{s}$ ja $1{,}49\,\text{s}$; ensimmäisen ja viimeisen väliin mahtuu kaksi täyttä jaksoa.
 **Kaava:** $T = \dfrac{t_5 - t_1}{2}$ ja $f = \dfrac{1}{T}$
 **Muunnokset:** Ei tarvita: ajat ovat sekunteina.
@@ -174,7 +174,7 @@
 **Järkevyys:** Ajassa $1{,}8\,\text{s}$ ensimmäinen tekee $\tfrac{1{,}8}{0{,}60} = 3$ ja toinen $\tfrac{1{,}8}{0{,}90} = 2$ täyttä värähdystä, joten molemmat ovat taas lähtötilassa. Aiemmin se ei onnistu: hetkellä $0{,}90\,\text{s}$ ensimmäinen on tehnyt vasta puolitoista värähdystä ja ohittaa tasapainoaseman alaspäin.
 
 ## fy5-7-L3-04
-**Annettu:** R-piikkien ajat taulukossa: levossa kuudes piikki $t_{\text{lepo}} = 4{,}96\,\text{s}$ ja rasituksen jälkeen $t_{\text{rasitus}} = 2{,}77\,\text{s}$, kumpikin laskettuna ensimmäisestä piikistä $0\,\text{s}$; lyöntivälejä $n = 6$
+**Annettu:** R-piikkien ajat taulukossa: levossa lyönti 6 eli kuudennen lyöntivälin loppu $t_{\text{lepo}} = 4{,}96\,\text{s}$ ja rasituksen jälkeen $t_{\text{rasitus}} = 2{,}77\,\text{s}$, kumpikin laskettuna lyönnistä 0 eli ajasta $0\,\text{s}$; lyöntivälejä $n = 6$
 **Kysytty:** pulssin (taajuuden) kasvu $p$ prosentteina levosta rasitukseen
 **Periaate:** Lyönnit toistuvat likimain tasaisesti, joten niitä käsitellään jaksollisena liikkeenä: lyöntiväli on jaksonaika $T$ ja pulssi on taajuus $f = \tfrac{1}{T}$ lyöntiä aikayksikössä. Jaksonaika määritetään koko kuudesta välistä, koska silloin yksittäisen välin vaihtelu keskiarvoistuu. Pulssin kasvu on taajuuksien erotus suhteessa lepotaajuuteen.
 **Kaava:** $T = \dfrac{t_6}{6}$, $f = \dfrac{1}{T}$ ja $p = \dfrac{f_{\text{rasitus}} - f_{\text{lepo}}}{f_{\text{lepo}}} \cdot 100\,\%$
@@ -187,9 +187,9 @@
 **Annettu:** taulukon $(t, d)$-arvot: suurin etäisyys $46{,}0\,\text{cm}$ hetkellä $0{,}4\,\text{s}$, pienin $34{,}0\,\text{cm}$ hetkellä $1{,}2\,\text{s}$; etäisyys on $40{,}1\,\text{cm}$ hetkillä $0$ ja $1{,}6\,\text{s}$; ennustehetki $t = 5{,}0\,\text{s}$
 **Kysytty:** etäisyys $d$ hetkellä $5{,}0\,\text{s}$ senttimetreinä
 **Periaate:** Värähtely oletetaan sinimuotoiseksi ja vaimenemattomaksi, ja mittaus alkaa tasapainoaseman ohituksesta etäisyyden kasvaessa, joten malli on $d = D + A \sin\left(\tfrac{2\pi t}{T}\right)$ ilman vaihetermiä. Parametrit luetaan taulukosta, ja malli ennustaa tulevan arvon.
-**Kuvaajan lukeminen:** Etäisyys palaa lähtöarvoonsa $40{,}1\,\text{cm}$ ja alkaa taas kasvaa hetkellä $1{,}6\,\text{s}$, joten yksi värähdys kestää $T = 1{,}6\,\text{s}$.
+**Taulukon lukeminen:** Etäisyys palaa lähtöarvoonsa $40{,}1\,\text{cm}$ ja alkaa taas kasvaa hetkellä $1{,}6\,\text{s}$, joten yksi värähdys kestää $T = 1{,}6\,\text{s}$.
 **Kaava:** $D = \dfrac{d_{\max} + d_{\min}}{2}$, $A = \dfrac{d_{\max} - d_{\min}}{2}$ ja $d = D + A \sin\left(\dfrac{2\pi t}{T}\right)$
 **Muunnokset:** Ei tarvita: etäisyydet ovat senttimetreinä ja ajat sekunteina. Laskin on radiaanitilassa.
 **Sijoitus:** $D = \dfrac{46{,}0\,\text{cm} + 34{,}0\,\text{cm}}{2} = 40{,}0\,\text{cm}$ ja $A = \dfrac{46{,}0\,\text{cm} - 34{,}0\,\text{cm}}{2} = 6{,}0\,\text{cm}$. Hetkellä $5{,}0\,\text{s}$ sinin argumentti on $19{,}63$, ja $d = 40{,}0\,\text{cm} + 6{,}0\,\text{cm} \cdot \sin 19{,}63 = 40{,}0\,\text{cm} + 6{,}0\,\text{cm} \cdot 0{,}7071 = 44{,}24\,\text{cm}$
-**Vastaus:** $44{,}2\,\text{cm}$, kolme merkitsevää numeroa kuten ääriarvoissa $46{,}0\,\text{cm}$ ja $34{,}0\,\text{cm}$.
-**Järkevyys:** Aika $5{,}0\,\text{s}$ on $3{,}125$ jaksoa eli kolme täyttä jaksoa ja $45\,{}^\circ$, ja $\sin 45\,{}^\circ = 0{,}7071$. Kohta c): ennuste ulottuu yli kaksi jaksoa mittausalueen ohi, joten jaksonajan virhe kertautuu. Jos jaksonaika olisi $1{,}62\,\text{s}$, ennuste olisi $43{,}1\,\text{cm}$, yli sentin eri, ja vaimeneminen kasvattaisi virhettä.
+**Vastaus:** $44\,\text{cm}$, kaksi merkitsevää numeroa, koska jaksonaika $1{,}6\,\text{s}$ on luettu taulukosta $0{,}2\,\text{s}$:n välein ja ennuste on ekstrapolointia. $D$ kelpaa sekä $40{,}0\,\text{cm}$ että $40{,}1\,\text{cm}$.
+**Järkevyys:** Aika $5{,}0\,\text{s}$ on $3{,}125$ jaksoa eli kolme täyttä jaksoa ja $45\,{}^\circ$, ja $\sin 45\,{}^\circ = 0{,}7071$. Kohta c): ennuste ulottuu yli kolme jaksoa mittausalueen ohi, joten jaksonajan virhe kertautuu: jaksonajalla $1{,}62\,\text{s}$ ennuste olisi $43{,}1\,\text{cm}$.

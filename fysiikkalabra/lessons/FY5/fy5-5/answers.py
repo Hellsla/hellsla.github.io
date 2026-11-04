@@ -35,5 +35,5 @@ gh = [(0, 9.81), (400, 8.69), (1000, 7.33), (2000, 5.68), (3000, 4.53)]   # (h i
 a["fy5-5-L2-07"] = sum(g * (6.378e6 + h * 1e3) ** 2 for h, g in gh) / len(gh) / 1e14   # mean of g(R+h)^2 = 3,99e14
 M_earth = 9.81 * 6.371e6 ** 2 / gamma                        # Earth's mass from g and R: 5,966e24 kg
 a["fy5-5-L3-04"] = M_earth / (4 / 3 * math.pi * 6.371e6 ** 3)   # mean density 5508 -> 5510 kg/m3
-a["fy5-5-L3-05"] = 2 * math.pi * math.sqrt(6.378e6 / 9.81) / 60  # T' for zero scale reading: a_n = g, 84,4 min
+a["fy5-5-L3-05"] = 62.0 * (9.81 - 4 * math.pi ** 2 * 6.378e6 / (6.0 * 3600) ** 2)  # scale reading at the equator, T = 6,0 h: N = m(g - a_n) = 574,8 N
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

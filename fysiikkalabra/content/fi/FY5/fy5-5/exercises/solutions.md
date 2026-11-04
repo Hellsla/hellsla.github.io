@@ -121,12 +121,12 @@
 ## fy5-5-L1-06
 **Kysytty:** kuinka suurella voimalla Kuu vetää Maata, kun Maa vetää Kuuta gravitaatiovoimalla.
 **Periaate:** Gravitaatio on kahden kappaleen välinen vuorovaikutus. Newtonin kolmannen lain mukaan vuorovaikutuksen osapuolet vaikuttavat toisiinsa yhtä suurilla ja vastakkaissuuntaisilla voimilla, ja Newtonin gravitaatiolain mukaan voiman suuruus on $F = \gamma \tfrac{m_1 m_2}{r^2}$, jossa kumpikin massa on tulossa mukana.
-**Mallivastaus:** Kuu vetää Maata täsmälleen yhtä suurella voimalla kuin Maa vetää Kuuta, koska voimat ovat saman vuorovaikutuksen vastavoimia. Gravitaatiolaissa massat ovat symmetrisessä tulossa $m_1 m_2$, joten voima on kummallekin kappaleelle sama. Massojen ero ei näy voimassa vaan kiihtyvyydessä: Kuun kiihtyvyys on Maan kiihtyvyyttä noin $81$-kertainen, koska sama voima vaikuttaa Maata noin $81$ kertaa kevyempään kappaleeseen. Liike ei vaikuta voimaan, ja pienikin kappale vetää suurta.
+**Mallivastaus:** Kuu vetää Maata täsmälleen yhtä suurella voimalla kuin Maa vetää Kuuta, koska voimat ovat saman vuorovaikutuksen vastavoimia. Gravitaatiolaissa massat ovat symmetrisessä tulossa $m_1 m_2$, joten voima on kummallekin kappaleelle sama. Massojen ero ei näy voimassa vaan kiihtyvyydessä: Kuun kiihtyvyys on Maan kiihtyvyyttä noin $81$-kertainen, koska sama voima vaikuttaa Maata noin $81$ kertaa kevyempään kappaleeseen (Maan massa on $81$ Kuun massaa). Liike ei vaikuta voimaan, ja pienikin kappale vetää suurta.
 
 ## fy5-5-L1-07
 **Kysytty:** mikä on gravitaatiovoima, kun toisen kappaleen massa ja kappaleiden etäisyys kaksinkertaistuvat.
 **Periaate:** Newtonin gravitaatiolain $F = \gamma \tfrac{m_1 m_2}{r^2}$ mukaan voima on suoraan verrannollinen massojen tuloon ja kääntäen verrannollinen etäisyyden neliöön. Kumpikin muutos kerrotaan omalla kertoimellaan.
-**Mallivastaus:** Kun toinen massa kaksinkertaistuu, voima kaksinkertaistuu. Kun etäisyys kaksinkertaistuu, voima pienenee neljäsosaan, koska etäisyys on kaavassa toisessa potenssissa. Uusi voima on $F' = \tfrac{2}{2^2}\,F = \tfrac{1}{2}\,F$ eli voima puolittuu. Muutokset eivät kumoa toisiaan, koska etäisyyden vaikutus on voimakkaampi. Pelkkä massan tai pelkkä etäisyyden muutos antaisi kertoimen $2$ tai $\tfrac{1}{4}$, mutta kumpaakin ei voi jättää huomiotta.
+**Mallivastaus:** Kun toinen massa kaksinkertaistuu, voima kaksinkertaistuu. Kun etäisyys kaksinkertaistuu, voima pienenee neljäsosaan, koska etäisyys on kaavassa toisessa potenssissa. Uusi voima on $F' = \tfrac{2}{2^2}\,F = \tfrac{1}{2}\,F$ eli voima puolittuu. Muutokset eivät kumoa toisiaan, koska etäisyyden vaikutus on voimakkaampi. Pelkkä massan muutos antaisi kertoimen $2$ ja pelkkä etäisyyden muutos kertoimen $\tfrac{1}{4}$, mutta kumpikin muutos on huomioitava.
 
 ## fy5-5-L1-08
 **Kysytty:** mikä virhe opiskelijan laskussa on, kun hän käyttää etäisyytenä $r = 400\,\text{km}$ ja saa liian suuren voiman.
@@ -159,7 +159,7 @@ Kohta b:
 \end{aligned}
 ```
 **Vastaus:** Neptunuksen pintakenttä on $1{,}25$-kertainen Uranuksen kenttään verrattuna, kolme merkitsevää numeroa kuten taulukon massoissa. Kohdan a arvot ovat Saturnukselle $11{,}2\,\text{m/s}^2$, Uranukselle $9{,}01\,\text{m/s}^2$ ja Neptunukselle $11{,}2\,\text{m/s}^2$. Kohdassa c selitetään, miksi Saturnuksen kenttä on silti lähes sama kuin Neptunuksen.
-**Järkevyys:** Kenttä on kaikilla kolmella samaa suuruusluokkaa kuin Maalla ($9{,}81\,\text{m/s}^2$), koska massan kasvu kompensoituu suurella säteellä. Tarkistus suhteesta: $\tfrac{102}{86{,}8} \cdot \left(\tfrac{25\,362}{24\,622}\right)^2 = 1{,}175 \cdot 1{,}061 \approx 1{,}25$. Kohta c: Saturnuksen massa on $\tfrac{568}{102} \approx 5{,}6$-kertainen Neptunuksen massaan verrattuna, mutta säde on $\tfrac{58\,232}{24\,622} \approx 2{,}4$-kertainen, ja säteen neliö on $2{,}4^2 \approx 5{,}6$-kertainen. Massan ja säteen neliön vaikutukset kumoavat toisensa lähes täysin, joten $g_\text{S} \approx g_\text{N}$ (ero on noin $0{,}4\,\%$).
+**Järkevyys:** Kenttä on kaikilla kolmella samaa suuruusluokkaa kuin Maalla ($9{,}81\,\text{m/s}^2$), koska massan kasvu kompensoituu suurella säteellä. Tarkistus suhteesta: $\tfrac{102}{86{,}8} \cdot \left(\tfrac{25\,362}{24\,622}\right)^2 = 1{,}175 \cdot 1{,}061 \approx 1{,}25$. Kohta c: Saturnuksen massa on $\tfrac{568}{102} \approx 5{,}6$-kertainen Neptunuksen massaan verrattuna, mutta säde on $\tfrac{58\,232}{24\,622} \approx 2{,}37$-kertainen, ja säteen neliö on $2{,}37^2 \approx 5{,}6$-kertainen. Massan ja säteen neliön vaikutukset kumoavat toisensa lähes täysin, joten $g_\text{S} \approx g_\text{N}$ (ero on noin $0{,}4\,\%$).
 
 ## fy5-5-L2-06
 **Annettu:** $M = 1{,}50\,\text{kg}$ ja $m = 20{,}0\,\text{g}$; mittaukset $(r, F)$: $(4{,}0\,\text{cm};\ 1{,}29\,\text{nN})$, $(5{,}0\,\text{cm};\ 0{,}80\,\text{nN})$, $(6{,}0\,\text{cm};\ 0{,}56\,\text{nN})$, $(8{,}0\,\text{cm};\ 0{,}31\,\text{nN})$
@@ -179,13 +179,13 @@ Kohta b:
 \end{aligned}
 ```
 Arvojen summa on $26{,}88 \cdot 10^{-11}$, joten keskiarvo on $\gamma_\text{ka} = \tfrac{26{,}88}{4} \cdot 10^{-11} = 6{,}72 \cdot 10^{-11}$ (yksikkö $\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$).
-**Vastaus:** $\gamma_\text{ka} \approx 6{,}72 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$, kolme merkitsevää numeroa kuten voimissa. Tunnettu arvo $6{,}674 \cdot 10^{-11}$ eroaa tuloksesta noin $0{,}7\,\%$. Kohta b: koska $F = \gamma M m \cdot \tfrac{1}{r^2}$, kuvaajan $F$ suhteessa $\tfrac{1}{r^2}$ pitäisi olla origon kautta kulkeva suora, jonka kulmakerroin on $\gamma M m \approx 2{,}0 \cdot 10^{-12}\,\text{N}\cdot\text{m}^2$. Kuvaaja $(r, F)$ taas on laskeva käyrä, ei suora.
-**Järkevyys:** Yksittäiset arvot ovat välillä $6{,}61 \cdot 10^{-11}$ ja $6{,}88 \cdot 10^{-11}$, eli noin $\pm 2\,\%$ keskiarvosta, mikä on pieni satunnaisvaihtelu kokeessa, jossa voimat ovat nanonewtonien luokkaa. Keskiarvo on lähellä tunnettua arvoa, joten mittaus tukee gravitaatiolakia. Tarkistus: $F$ pienenee, kun $r$ kasvaa $4{,}0\,\text{cm}$:sta $8{,}0\,\text{cm}$:iin, ja $1{,}29\,\text{nN}$ on noin nelinkertainen arvoon $0{,}31\,\text{nN}$ verrattuna, kuten pitääkin.
+**Vastaus:** $\gamma_\text{ka} \approx 6{,}72 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$, kolme merkitsevää numeroa, koska neljän mittauksen keskiarvo on tarkempi kuin yksittäinen arvo (voimissa ja etäisyyksissä on kaksi tai kolme numeroa). Tunnettu arvo $6{,}674 \cdot 10^{-11}$ eroaa tuloksesta noin $0{,}7\,\%$. Kohta b: koska $F = \gamma M m \cdot \tfrac{1}{r^2}$, kuvaajan $F$ suhteessa $\tfrac{1}{r^2}$ pitäisi olla origon kautta kulkeva suora, jonka kulmakerroin on $\gamma M m \approx 2{,}0 \cdot 10^{-12}\,\text{N}\cdot\text{m}^2$. Kuvaaja $(r, F)$ taas on laskeva käyrä, ei suora.
+**Järkevyys:** Yksittäiset arvot ovat välillä $6{,}61 \cdot 10^{-11}$ ja $6{,}88 \cdot 10^{-11}$, eli enintään noin $2{,}5\,\%$ keskiarvosta, mikä on pieni satunnaisvaihtelu kokeessa, jossa voimat ovat nanonewtonien luokkaa. Keskiarvo on lähellä tunnettua arvoa, joten mittaus tukee gravitaatiolakia. Tarkistus: $F$ pienenee, kun $r$ kasvaa $4{,}0\,\text{cm}$:sta $8{,}0\,\text{cm}$:iin, ja $1{,}29\,\text{nN}$ on noin nelinkertainen arvoon $0{,}31\,\text{nN}$ verrattuna, kuten pitääkin.
 
 ## fy5-5-L2-07
 **Annettu:** Maan säde $R = 6378\,\text{km}$; mittaukset $(h, g)$: $(0;\ 9{,}81\,\text{m/s}^2)$, $(400\,\text{km};\ 8{,}69\,\text{m/s}^2)$, $(1000\,\text{km};\ 7{,}33\,\text{m/s}^2)$, $(2000\,\text{km};\ 5{,}68\,\text{m/s}^2)$, $(3000\,\text{km};\ 4{,}53\,\text{m/s}^2)$
 **Kysytty:** a) tulon $g\,(R + h)^2$ arvo kullakin rivillä ja keskiarvo; b) mitä suuretta tulo vastaa ja mitä sen vakioisuus osoittaa
-**Periaate:** Gravitaatiolain mukaan $g = \gamma \tfrac{M}{r^2}$, kun $r = R + h$ on etäisyys Maan keskipisteestä. Jos tämä pätee, tulo $g\,r^2 = \gamma M$ on sama kaikilla korkeuksilla.
+**Periaate:** Gravitaatiolain mukaan $g = \gamma \tfrac{M}{r^2}$, kun $r = R + h$ on etäisyys Maan keskipisteestä. Jos tämä pätee, tulo $g\,r^2$ on sama kuin $\gamma M$ kaikilla korkeuksilla.
 **Kuvaajan lukeminen:** Taulukosta luetaan korkeus ja kentän voimakkuus. Etäisyys keskipisteestä on $r = R + h$.
 **Kaava:** $g\,r^2 = g\,(R + h)^2$ ja keskiarvo $\dfrac{p_1 + p_2 + p_3 + p_4 + p_5}{5}$, missä $p$ on tulo
 **Muunnokset:** $R = 6378\,\text{km} = 6{,}378 \cdot 10^{6}\,\text{m}$; $h = 400\,\text{km} = 4{,}00 \cdot 10^{5}\,\text{m}$ ja samoin muut korkeudet. Etäisyydet $r$ ovat $6{,}378 \cdot 10^{6}\,\text{m}$, $6{,}778 \cdot 10^{6}\,\text{m}$, $7{,}378 \cdot 10^{6}\,\text{m}$, $8{,}378 \cdot 10^{6}\,\text{m}$ ja $9{,}378 \cdot 10^{6}\,\text{m}$.
@@ -203,12 +203,12 @@ p_5 &= 3{,}984 \cdot 10^{14}
 ```
 Tulojen summa on $19{,}944 \cdot 10^{14}$, joten keskiarvo on $\tfrac{19{,}944}{5} \cdot 10^{14} = 3{,}989 \cdot 10^{14}$ (yksikkö $\text{m}^3/\text{s}^2$).
 **Vastaus:** keskiarvo on $3{,}99 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, kolme merkitsevää numeroa kuten kentän voimakkuuksissa. Kohta b: tulo vastaa suuretta $\gamma M$. Sen pysyminen likimain vakiona osoittaa, että $g$ on kääntäen verrannollinen etäisyyden neliöön Maan keskipisteestä. Jos piirretään $g$ suhteessa $\tfrac{1}{(R + h)^2}$, pisteet ovat suoralla, joka kulkee origon kautta ja jonka kulmakerroin on $\gamma M$.
-**Järkevyys:** Tulot poikkeavat toisistaan alle $0{,}2\,\%$. Tunnetuilla arvoilla $\gamma M \approx 3{,}98 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, mikä vastaa keskiarvoa. Kenttä pienenee korkeuden mukana: $3000\,\text{km}$:n korkeudella se on enää alle puolet pinta-arvosta, koska $\left(\tfrac{6378}{9378}\right)^2 \approx 0{,}46$.
+**Järkevyys:** Tulot poikkeavat toisistaan noin $0{,}2\,\%$. Tunnetuilla arvoilla $\gamma M \approx 3{,}98 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, mikä vastaa keskiarvoa. Kenttä pienenee korkeuden mukana: $3000\,\text{km}$:n korkeudella se on enää alle puolet pinta-arvosta, koska $\left(\tfrac{6378}{9378}\right)^2 \approx 0{,}46$.
 
 ## fy5-5-L3-04
 **Annettu:** $g = 9{,}81\,\text{m/s}^2$, Maan keskimääräinen säde $R = 6371\,\text{km}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; kivilajien tiheydet: graniitti $2700\,\text{kg/m}^3$, basaltti $3000\,\text{kg/m}^3$, hiekkakivi $2400\,\text{kg/m}^3$
 **Kysytty:** a) Maan massa $M$; b) Maan keskitiheys $\rho$; c) voiko Maa koostua kokonaan taulukon kivilajeista ja mitä tämä kertoo sisuksesta
-**Periaate:** Maa on pallosymmetrinen, joten pinnalla $g = \gamma \tfrac{M}{R^2}$, josta massa saadaan ratkaistua. Keskitiheys on massa jaettuna pallon tilavuudella $V = \tfrac{4}{3}\pi R^3$. Lopuksi keskitiheys verrataan kuoren kivilajien tiheyksiin.
+**Periaate:** Maa on pallosymmetrinen, joten pinnalla $g = \gamma \tfrac{M}{R^2}$, josta massa saadaan ratkaistua. Keskitiheys on massa jaettuna pallon tilavuudella $V = \tfrac{4}{3}\pi R^3$. Tulo $g R^2$ on sama kuin $\gamma M$. Lopuksi keskitiheys verrataan kuoren kivilajien tiheyksiin.
 **Kaava:** $M = \dfrac{g R^2}{\gamma}$ ja $\rho = \dfrac{M}{V} = \dfrac{M}{\tfrac{4}{3}\pi R^3}$
 **Muunnokset:** $R = 6371\,\text{km} = 6371 \cdot 10^{3}\,\text{m} = 6{,}371 \cdot 10^{6}\,\text{m}$
 **Sijoitus:** Kohta a:
@@ -229,11 +229,11 @@ Kohta b: tilavuus on $V = \tfrac{4}{3}\pi\,(6{,}371 \cdot 10^{6}\,\text{m})^3 = 
 **Järkevyys:** Tulos on noin $5{,}5$-kertainen veden tiheyteen $1000\,\text{kg/m}^3$ verrattuna ja vastaa Cavendishin omaa tulosta, noin $5450\,\text{kg/m}^3$ (ero noin $1\,\%$). Tulo on $\gamma M \approx 3{,}98 \cdot 10^{14}\,\text{m}^3/\text{s}^2$.
 
 ## fy5-5-L3-05
-**Annettu:** jakso $T = 24{,}0\,\text{h}$, säde $R = 6378\,\text{km}$, $g = 9{,}81\,\text{m/s}^2$, ihmisen massa $m = 62{,}0\,\text{kg}$
-**Kysytty:** a) normaalikiihtyvyys $a_\text{n}$ ja vaa'an lukema $N$ päiväntasaajalla; b) jakso $T'$, jolla lukema olisi nolla, minuutteina; c) miksi lukema on päiväntasaajalla pienempi kuin navalla
-**Periaate:** Ihminen kulkee ympyrärataa, joten hänellä on normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{R}$ kohti Maan akselia eli päiväntasaajalla kohti Maan keskipistä, ja $v = \tfrac{2\pi R}{T}$. Valitaan positiiviseksi suunnaksi kohti keskipistä. Ihmiseen vaikuttavat gravitaatiovoima $mg$ kohti keskipistä ja vaa'an tukivoima $N$ poispäin keskipisteestä. Liikeyhtälö on $m g - N = m a_\text{n}$.
-**Kaava:** $a_\text{n} = \dfrac{(2\pi R / T)^2}{R}$ ja $N = m\,(g - a_\text{n})$. Lukema on nolla, kun $a_\text{n} = g$, eli $\dfrac{4\pi^2 R}{T'^2} = g$, josta $T' = 2\pi\sqrt{\dfrac{R}{g}}$.
-**Muunnokset:** $T = 24{,}0\,\text{h} = 24{,}0 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $R = 6378\,\text{km} = 6{,}378 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{min} = 60\,\text{s}$
+**Annettu:** jakso $T = 24{,}0\,\text{h}$, säde $R = 6378\,\text{km}$, $g = 9{,}81\,\text{m/s}^2$, ihmisen massa $m = 62{,}0\,\text{kg}$; kohdassa b jakso $T_\text{b} = 6{,}0\,\text{h}$
+**Kysytty:** a) normaalikiihtyvyys $a_\text{n}$ ja vaa'an lukema $N$ päiväntasaajalla; b) vaa'an lukema $N_\text{b}$, kun jakso on $6{,}0\,\text{h}$; c) miksi lukema on päiväntasaajalla pienempi kuin navalla
+**Periaate:** Ihminen kulkee ympyrärataa, joten hänellä on normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{R}$ kohti Maan keskipistä, ja $v = \tfrac{2\pi R}{T}$. Valitaan positiiviseksi suunnaksi kohti keskipistä. Ihmiseen vaikuttavat gravitaatiovoima $mg$ kohti keskipistä ja vaa'an tukivoima $N$ poispäin keskipisteestä. Kokonaisvoima $mg - N$ kohti keskipistä on yhtä suuri kuin $m a_\text{n}$. Vaa'an lukema on tukivoiman suuruus $N$.
+**Kaava:** $a_\text{n} = \dfrac{(2\pi R / T)^2}{R}$ ja $N = m\,(g - a_\text{n})$. Sama kaava toimii kohdassa b, kun $T$ vaihdetaan jaksoksi $T_\text{b}$.
+**Muunnokset:** $T = 24{,}0\,\text{h} = 24{,}0 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $T_\text{b} = 6{,}0\,\text{h} = 6{,}0 \cdot 3600\,\text{s} = 21\,600\,\text{s}$; $R = 6378\,\text{km} = 6{,}378 \cdot 10^{6}\,\text{m}$
 **Sijoitus:** Kohta a, kun $v = \tfrac{2\pi R}{T}$:
 ```latex
 \begin{aligned}
@@ -248,11 +248,13 @@ N &= 62{,}0\,\text{kg} \cdot (9{,}81 - 0{,}03373)\,\tfrac{\text{m}}{\text{s}^2} 
 Kohta b:
 ```latex
 \begin{aligned}
-T' &= 2\pi \sqrt{\frac{6{,}378 \cdot 10^{6}\,\text{m}}{9{,}81\,\text{m/s}^2}} \\
-&= 5066\,\text{s} \\
-&= \frac{5066}{60}\,\text{min} \\
-&= 84{,}4\,\text{min}
+v_\text{b} &= \frac{2\pi \cdot 6{,}378 \cdot 10^{6}\,\text{m}}{21\,600\,\text{s}} \\
+&= 1855\,\tfrac{\text{m}}{\text{s}} \\
+a_\text{n,b} &= \frac{(1855\,\text{m/s})^2}{6{,}378 \cdot 10^{6}\,\text{m}} \\
+&= 0{,}5397\,\tfrac{\text{m}}{\text{s}^2} \\
+N_\text{b} &= 62{,}0\,\text{kg} \cdot (9{,}81 - 0{,}5397)\,\tfrac{\text{m}}{\text{s}^2} \\
+&= 574{,}8\,\text{N}
 \end{aligned}
 ```
-**Vastaus:** Jakson pitäisi olla $84{,}4\,\text{min}$, kolme merkitsevää numeroa kuten arvossa $g = 9{,}81\,\text{m/s}^2$. Kohta a: $a_\text{n} = 0{,}0337\,\text{m/s}^2$ ja vaa'an lukema on $606\,\text{N}$, kun navalla se olisi $mg = 608\,\text{N}$. Kohta c: päiväntasaajalla gravitaatiovoimasta osa kuluu ympyräliikkeen keskeisvoimaksi ($m a_\text{n} = 2{,}09\,\text{N}$), joten tukivoima $N = mg - m a_\text{n}$ on pienempi. Navalla ihminen ei kierry ympyrärataa, $a_\text{n} = 0$ ja $N = mg$. Vaaka näyttää siis vähemmän, vaikka gravitaatiovoima on oletuksen mukaan yhtä suuri.
-**Järkevyys:** Normaalikiihtyvyys on vain noin $0{,}34\,\%$ arvosta $g$ ($\tfrac{0{,}0337}{9{,}81} \approx 0{,}0034$), joten ero lukemassa on pieni, noin $2{,}1\,\text{N}$. Painottomuuteen vaadittava jakso on noin $17$ kertaa lyhyempi kuin vuorokausi ($\tfrac{86\,400}{5066} \approx 17{,}1$). Silloin päiväntasaajan nopeus olisi $\tfrac{2\pi R}{T'} \approx 7{,}9\,\text{km/s}$, ja nopeuden kasvaessa $17$-kertaiseksi $a_\text{n}$ kasvaa $17^2 \approx 290$-kertaiseksi: $290 \cdot 0{,}0337 \approx 9{,}8\,\text{m/s}^2$.
+**Vastaus:** Vaa'an lukema olisi päiväntasaajalla $575\,\text{N}$; jakson $6{,}0\,\text{h}$ kaksi merkitsevää numeroa rajoittaa tarkkuutta, joten myös $570\,\text{N}$ kelpaa. Kohta a: $a_\text{n} = 0{,}0337\,\text{m/s}^2$ ja vaa'an lukema on $606\,\text{N}$, kun navalla se olisi $mg = 608\,\text{N}$. Kohta c: päiväntasaajalla kokonaisvoiman $mg - N$ on oltava $m a_\text{n}$ kohti keskipistettä ($m a_\text{n} = 2{,}09\,\text{N}$), joten $N = mg - m a_\text{n}$ on pienempi kuin $mg$. Navalla ihminen ei kierrä ympyrärataa, $a_\text{n} = 0$ ja $N = mg$. Vaaka näyttää siis vähemmän, vaikka gravitaatiovoima on oletuksen mukaan yhtä suuri.
+**Järkevyys:** Jakso on neljäsosa vuorokaudesta, joten nopeus on nelinkertainen ja $a_\text{n}$ kasvaa $4^2 = 16$-kertaiseksi: $16 \cdot 0{,}0337\,\text{m/s}^2 \approx 0{,}54\,\text{m/s}^2$. Lukema pienenee tällöin $62{,}0\,\text{kg} \cdot 0{,}54\,\text{m/s}^2 \approx 33\,\text{N}$ eli noin $5{,}5\,\%$ arvosta $mg = 608\,\text{N}$, ja $608\,\text{N} - 33\,\text{N} \approx 575\,\text{N}$. Lukema on siis pienempi kuin kohdassa a ($606\,\text{N}$) mutta selvästi positiivinen.

@@ -57,17 +57,17 @@
           "feedback": "Jousen oma massa jätetään huomiotta, ja verrannollisuus pätee myös pystysuoralle jouselle: punnuksen paino $mg$ on juuri jousta venyttävä voima, josta jousivakio mitataan."
         },
         {
-          "text": "Kun jousta ei venytetä liian pitkälle, koska liian suurella venymällä voima ei enää kasva tasaisesti.",
-          "correct": true,
-          "feedback": "Oikein. Harmoninen voima on malli, joka pätee pienillä venymillä. Kun jousta venytetään liikaa, jousen aine alkaa venyä eri tavalla tai jäädä pysyvästi vääntyneeksi, eikä mittauspisteiden suora enää jatku."
-        },
-        {
           "text": "Aina, koska jousivakio on vakio ja voima on siksi verrannollinen venymään kaikilla venymillä.",
-          "feedback": "Jousivakio on vakio vain jousen toiminta-alueella. Liian suurella venymällä $(x, F_\\text{v})$-kuvaaja taipuu pois suoralta, eikä jousi palaa enää lepopituuteensa."
+          "feedback": "Jousivakio on vakio vain jousen toiminta-alueella. Liian suurella venymällä $(x, F_\\text{v})$-kuvaaja taipuu pois suoralta, eikä jousi välttämättä palaa enää lepopituuteensa."
         },
         {
           "text": "Vain jos jousta puristetaan eikä venytetä, koska venytettäessä voima on aina pienempi.",
           "feedback": "Harmoninen voima pätee yhtä hyvin venytetylle kuin puristetulle jouselle: voiman suuruus on $k|x|$ kummassakin tapauksessa, ja vain suunta vaihtuu."
+        },
+        {
+          "text": "Kun jousta ei venytetä liian pitkälle, koska liian suurella venymällä voima ei enää kasva tasaisesti.",
+          "correct": true,
+          "feedback": "Oikein. Harmoninen voima on malli, joka pätee pienillä venymillä. Kun jousta venytetään liikaa, jousen aine alkaa venyä eri tavalla tai jäädä pysyvästi vääntyneeksi, eikä mittauspisteiden suora enää jatku."
         }
       ]
     },
@@ -188,7 +188,7 @@
       },
       "answer": 24.4,
       "unit": "N/m",
-      "tolerance": 0.05
+      "tolerance": 0.03
     },
     {
       "id": "fy5-8-L2-06",
@@ -244,7 +244,7 @@
     {
       "id": "fy5-8-L3-04",
       "level": 3,
-      "text": "Kuminauhan venyttämistä tutkittiin ripustamalla siihen eri suuruisia voimia ja mittaamalla nauhan venymä. Taulukossa on esimerkkiaineisto; voima $F_\\text{v}$ on nauhaa venyttävä voima ja kuvaajan piste $(0;\\ 0)$ kuuluu mittaukseen.\n\na) Laske osamäärä $\\dfrac{F_\\text{v}}{x}$ jokaiselle muulle mittauspisteelle kuin origolle ja perustele sen avulla, voidaanko kuminauhaa kuvata Hooken lailla $F_\\text{v} = kx$ ja yhdellä jousivakiolla.\n\nb) Arvioi nauhaan varastoitunut energia venymällä $12\\,\\text{cm}$ laskemalla $(x, F_\\text{v})$-kuvaajan ja $x$-akselin väliin jäävä pinta-ala. Jaa ala mittauspisteiden välisiin puolisuunnikkaisiin: puolisuunnikkaan pinta-ala on välin leveys kertaa välin päiden voimien keskiarvo.\n\nc) Vertaa tulosta energiaan, jonka saisit kaavalla $E_\\text{p} = \\tfrac{1}{2}kx^2$, kun $k$ lasketaan ensimmäisestä mittauspisteestä.\n\nAnna kohdan b) tulos vastauslaatikkoon.",
+      "text": "Kuminauhan venyttämistä tutkittiin ripustamalla siihen eri suuruisia voimia ja mittaamalla nauhan venymä. Taulukossa on esimerkkiaineisto; voima $F_\\text{v}$ on nauhaa venyttävä voima ja kuvaajan piste $(0;\\ 0)$ kuuluu mittaukseen.\n\na) Laske osamäärä $\\dfrac{F_\\text{v}}{x}$ jokaiselle muulle mittauspisteelle kuin origolle ja perustele sen avulla, voidaanko kuminauhaa kuvata harmonisella voimalla $F_\\text{v} = kx$ ja yhdellä jousivakiolla.\n\nb) Arvioi nauhaa venyttävän voiman tekemä työ venymällä $12\\,\\text{cm}$ laskemalla $(x, F_\\text{v})$-kuvaajan ja $x$-akselin väliin jäävä pinta-ala. Jaa ala mittauspisteiden välisiin puolisuunnikkaisiin: puolisuunnikkaan pinta-ala on välin leveys kertaa välin päiden voimien keskiarvo.\n\nc) Vertaa tulosta energiaan, jonka saisit kaavalla $E_\\text{p} = \\tfrac{1}{2}kx^2$, kun $k$ lasketaan ensimmäisestä mittauspisteestä.\n\nAnna kohdan b) tulos vastauslaatikkoon.",
       "kind": [
         "data",
         "graph",
@@ -283,7 +283,7 @@
     {
       "id": "fy5-8-L3-05",
       "level": 3,
-      "text": "Jousipyssyn jänteen vetovoimaa mitattiin voimamittarilla, kun jänne vedettiin lepoasennostaan eri matkoille. Taulukossa on esimerkkiaineisto. Pyssyn jousen oletetaan noudattavan Hooken lakia koko mitatulla alueella ja jänteen ja jousen massa jätetään huomiotta.\n\nSen jälkeen pyssystä ammuttiin vaakasuoraan nuoli, jonka massa on $25\\,\\text{g}$, kun jänne oli vedetty $50\\,\\text{cm}$. Nopeusmittari näytti nuolen lähtönopeudeksi $47{,}0\\,\\text{m/s}$.\n\na) Määritä jousivakio mittauspisteisiin sovitetusta suorasta ja laske sen avulla pyssyyn varastoitunut energia vedetyssä asennossa.\n\nb) Laske nuolen liike-energia lähdössä.\n\nc) Kuinka monta prosenttia varastoituneesta energiasta muuttui nuolen liike-energiaksi? Mihin loppu energia todennäköisesti meni?\n\nAnna kohdan c) prosenttiosuus vastauslaatikkoon.",
+      "text": "Jousipyssyn jänteen vetovoimaa mitattiin voimamittarilla, kun jänne vedettiin lepoasennostaan eri matkoille. Taulukossa on esimerkkiaineisto. Pyssyn jousen oletetaan noudattavan harmonista voimaa $F_\\text{v} = kx$ koko mitatulla alueella.\n\nSen jälkeen pyssystä ammuttiin vaakasuoraan nuoli, jonka massa on $25\\,\\text{g}$, kun jänne oli vedetty $50\\,\\text{cm}$. Nopeusmittari näytti nuolen lähtönopeudeksi $47{,}0\\,\\text{m/s}$.\n\na) Määritä jousivakio mittauspisteisiin sovitetusta suorasta ja laske sen avulla pyssyyn varastoitunut energia vedetyssä asennossa.\n\nb) Laske nuolen liike-energia lähdössä.\n\nc) Kuinka monta prosenttia varastoituneesta energiasta muuttui nuolen liike-energiaksi? Mihin loppu energia todennäköisesti meni?\n\nAnna kohdan c) prosenttiosuus vastauslaatikkoon.",
       "kind": [
         "data",
         "model",

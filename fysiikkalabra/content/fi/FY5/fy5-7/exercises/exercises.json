@@ -12,7 +12,7 @@
       "id": "fy5-7-L1-02",
       "level": 1,
       "text": "Kitaran kieli värähtelee taajuudella $196\\,\\text{Hz}$. Mikä on kielen värähtelyn jaksonaika? Anna vastaus millisekunteina.",
-      "answer": 5.10,
+      "answer": 5.1,
       "unit": "ms",
       "tolerance": 0.02
     },
@@ -50,10 +50,10 @@
       ],
       "unit": "",
       "tolerance": 0.02,
-      "answer": "Punnus A, koska sen taajuus $4{,}0\\,\\text{Hz}$ on suurempi kuin punnuksen B taajuus $3{,}0\\,\\text{Hz}$.",
+      "answer": "Punnus A, koska sen jaksonaikaa vastaava taajuus $4{,}0\\,\\text{Hz}$ on suurempi kuin $3{,}0\\,\\text{Hz}$.",
       "choices": [
         {
-          "text": "Punnus B, koska sen $3{,}0\\,\\text{Hz}$ on suurempi luku kuin $0{,}25\\,\\text{s}$.",
+          "text": "Punnus B, koska lukuarvo $3{,}0$ on suurempi kuin lukuarvo $0{,}25$.",
           "feedback": "Jaksonaikaa ja taajuutta ei voi verrata lukuarvojen perusteella, koska ne ovat eri suureita eri yksiköissä. Jaksonaika pitää ensin muuttaa taajuudeksi $f = \\tfrac{1}{T}$."
         },
         {
@@ -61,13 +61,13 @@
           "feedback": "Pidempi jaksonaika tarkoittaa hitaampaa värähtelyä: yhteen värähdykseen kuluu enemmän aikaa, joten niitä ehditään sekunnissa vähemmän."
         },
         {
-          "text": "Punnus A, koska sen taajuus $4{,}0\\,\\text{Hz}$ on suurempi kuin punnuksen B taajuus $3{,}0\\,\\text{Hz}$.",
-          "correct": true,
-          "feedback": "Oikein: taajuus on jaksonajan käänteisluku, joten $f_A = \\tfrac{1}{0{,}25\\,\\text{s}} = 4{,}0\\,\\text{Hz}$. Punnus A tekee neljä värähdystä sekunnissa, punnus B kolme."
+          "text": "Ne värähtelevät yhtä nopeasti, koska $0{,}25\\,\\text{s}$ ja $3{,}0\\,\\text{Hz}$ ovat sama asia eri yksiköissä.",
+          "feedback": "Ne kuvaavat samaa ilmiötä, mutta ne ovat eri suureita, ja $0{,}25\\,\\text{s}$ vastaa taajuutta $4{,}0\\,\\text{Hz}$, ei taajuutta $3{,}0\\,\\text{Hz}$."
         },
         {
-          "text": "Ne värähtelevät yhtä nopeasti, koska $0{,}25\\,\\text{s}$ ja $3{,}0\\,\\text{Hz}$ kuvaavat samaa asiaa eri yksiköillä.",
-          "feedback": "Ne kuvaavat samaa ilmiötä, mutta ne ovat eri suureita, ja $0{,}25\\,\\text{s}$ vastaa taajuutta $4{,}0\\,\\text{Hz}$, ei taajuutta $3{,}0\\,\\text{Hz}$."
+          "text": "Punnus A, koska sen jaksonaikaa vastaava taajuus $4{,}0\\,\\text{Hz}$ on suurempi kuin $3{,}0\\,\\text{Hz}$.",
+          "correct": true,
+          "feedback": "Oikein: taajuus on jaksonajan käänteisluku, joten $f_A = \\tfrac{1}{0{,}25\\,\\text{s}} = 4{,}0\\,\\text{Hz}$. Punnus A tekee neljä värähdystä sekunnissa, punnus B kolme."
         }
       ]
     },
@@ -85,27 +85,27 @@
     {
       "id": "fy5-7-L1-08",
       "level": 1,
-      "text": "Oppilas väittää: \"Kun värähtelijän taajuus kaksinkertaistuu, myös jaksonaika kaksinkertaistuu, koska molemmat kertovat värähtelyn nopeudesta.\" Mikä seuraavista korjaa väitteen oikein?",
+      "text": "Oppilas väittää: ”Kun värähtelijän taajuus kaksinkertaistuu, myös jaksonaika kaksinkertaistuu, koska molemmat kertovat värähtelyn nopeudesta.” Mikä seuraavista korjaa väitteen oikein?",
       "kind": [
         "error",
         "concept"
       ],
       "unit": "",
       "tolerance": 0.02,
-      "answer": "Jaksonaika puolittuu, koska jaksonaika on taajuuden käänteisluku $T = \\tfrac{1}{f}$.",
+      "answer": "Jaksonaika puolittuu, koska yhteen värähdykseen jää silloin vain puolet entisestä ajasta.",
       "choices": [
         {
           "text": "Jaksonaika kaksinkertaistuu, koska jaksonaika ja taajuus ovat suoraan verrannolliset.",
           "feedback": "Ne eivät ole suoraan verrannolliset vaan käänteisluvut. Kun värähdyksiä tulee kaksi kertaa enemmän sekunnissa, yhden värähdyksen on kestettävä lyhyemmän aikaa."
         },
         {
-          "text": "Jaksonaika puolittuu, koska jaksonaika on taajuuden käänteisluku $T = \\tfrac{1}{f}$.",
-          "correct": true,
-          "feedback": "Oikein: kun $f$ kaksinkertaistuu, $T = \\tfrac{1}{f}$ puolittuu. Oppilas sekoitti suureet: nopeampi värähtely tarkoittaa suurempaa taajuutta mutta lyhyempää jaksonaikaa."
+          "text": "Jaksonaika ei muutu, koska se on värähtelijän oma kiinteä ominaisuus.",
+          "feedback": "Jaksonaika on yhden värähdyksen kesto, ja se muuttuu, kun taajuus muuttuu. Se ei ole vakio, vaan $T = \\tfrac{1}{f}$."
         },
         {
-          "text": "Jaksonaika ei muutu, koska jaksonaika on värähtelijän oma kiinteä ominaisuus.",
-          "feedback": "Jaksonaika on yhden värähdyksen kesto, ja se muuttuu, kun taajuus muuttuu. Se ei ole vakio, vaan $T = \\tfrac{1}{f}$."
+          "text": "Jaksonaika puolittuu, koska yhteen värähdykseen jää silloin vain puolet entisestä ajasta.",
+          "correct": true,
+          "feedback": "Oikein: kun $f$ kaksinkertaistuu, $T = \\tfrac{1}{f}$ puolittuu. Oppilas sekoitti suureet: nopeampi värähtely tarkoittaa suurempaa taajuutta mutta lyhyempää jaksonaikaa."
         },
         {
           "text": "Jaksonaika kasvaa hieman, koska värähdyksiä on enemmän ja ne vievät yhteensä enemmän aikaa.",
@@ -144,7 +144,7 @@
       "id": "fy5-7-L2-04",
       "level": 2,
       "text": "Liiketunnistin mittaa etäisyyden jousen varassa värähtelevään punnukseen. Pienin mitattu etäisyys on $32{,}0\\,\\text{cm}$ ja suurin $47{,}0\\,\\text{cm}$. Mikä on värähtelyn amplitudi?",
-      "answer": 7.50,
+      "answer": 7.5,
       "unit": "cm",
       "tolerance": 0.02
     },
@@ -364,10 +364,9 @@
       "text": "Liiketunnistin mittaa etäisyyden $d$ jousen varassa pystysuunnassa värähtelevään punnukseen. Taulukko on esimerkkiaineisto: mittaus alkaa hetkellä $t = 0$, jolloin punnus ohittaa tasapainoaseman ja etäisyys alkaa kasvaa. Oletetaan, että värähtely on sinimuotoista eikä vaimene.\n\na) Lue taulukosta tasapainoaseman etäisyys $D$, amplitudi $A$ ja jaksonaika $T$.\n\nb) Mallinna etäisyys lausekkeella $d = D + A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$ ja ennusta etäisyys hetkellä $t = 5{,}0\\,\\text{s}$.\n\nc) Mittaus kattaa vain yhden jakson. Perustele, miksi ennusteen luotettavuus riippuu siitä, kuinka tarkasti jaksonaika tunnetaan.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "data",
-        "model",
-        "graph"
+        "model"
       ],
-      "answer": 44.2,
+      "answer": 44,
       "unit": "cm",
       "tolerance": 0.02,
       "data": {

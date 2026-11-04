@@ -47,25 +47,25 @@
       "kind": [
         "concept"
       ],
-      "answer": "Yhtä suurella voimalla, koska voimat ovat saman vuorovaikutuksen vastavoimia (Newtonin kolmas laki).",
+      "answer": "Yhtä suurella voimalla, koska voimat ovat saman vuorovaikutuksen vastavoimia.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Paljon pienemmällä voimalla, koska voima riippuu vain vetävän kappaleen massasta ja Kuun massa on pieni.",
-          "feedback": "Voima riippuu molempien kappaleiden massoista, tulosta $m_1 m_2$, ei vain vetävän kappaleen massasta."
-        },
-        {
-          "text": "Suuremmalla voimalla, koska Kuu liikkuu ja liikkuva kappale vetää voimakkaammin kuin paikallaan oleva.",
-          "feedback": "Gravitaatiovoima ei riipu kappaleen liikkeestä, vaan massoista ja keskipisteiden etäisyydestä."
-        },
-        {
-          "text": "Yhtä suurella voimalla, koska voimat ovat saman vuorovaikutuksen vastavoimia (Newtonin kolmas laki).",
+          "text": "Yhtä suurella voimalla, koska voimat ovat saman vuorovaikutuksen vastavoimia.",
           "correct": true,
           "feedback": "Oikein: gravitaatio on kappaleiden välinen vuorovaikutus, joten voimat ovat yhtä suuret ja vastakkaissuuntaiset. Massojen ero näkyy vain kiihtyvyyksissä."
         },
         {
-          "text": "Ei lainkaan, koska vain suuri massa voi vetää toista kappaletta ja Kuu on Maata paljon pienempi.",
+          "text": "Paljon pienemmällä voimalla, koska voima riippuu vain vetävän kappaleen massasta.",
+          "feedback": "Voima riippuu molempien kappaleiden massoista, tulosta $m_1 m_2$, ei vain vetävän kappaleen massasta."
+        },
+        {
+          "text": "Suuremmalla voimalla, koska liikkuva kappale vetää voimakkaammin kuin paikallaan oleva.",
+          "feedback": "Gravitaatiovoima ei riipu kappaleen liikkeestä, vaan massoista ja keskipisteiden etäisyydestä."
+        },
+        {
+          "text": "Ei lainkaan, koska vain Maata suurempi kappale voi vetää toista kappaletta.",
           "feedback": "Kaikki kappaleet vetävät toisiaan, myös kevyempi raskaampaa. Maakin kiihtyy Kuun vedosta, vaikka kiihtyvyys on hyvin pieni."
         }
       ]
@@ -77,26 +77,26 @@
       "kind": [
         "concept"
       ],
-      "answer": "Voima on $\\tfrac{F}{2}$, koska massa kaksinkertaistaa voiman ja etäisyys neljännesosaa sen.",
+      "answer": "Voima on $\\tfrac{F}{2}$, koska massa kaksinkertaistaa voiman ja etäisyys pienentää sen neljäsosaan.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Voima on $F$, koska massan ja etäisyyden kaksinkertaistuminen kumoavat toisensa täsmälleen.",
+          "text": "Voima on $F$, koska massan ja etäisyyden muutokset kumoavat toisensa täsmälleen.",
           "feedback": "Muutokset eivät kumoa toisiaan, koska massa on kaavassa ensimmäisessä potenssissa ja etäisyys toisessa."
         },
         {
-          "text": "Voima on $\\tfrac{F}{4}$, koska etäisyyden kaksinkertaistuminen pienentää voiman neljäsosaan.",
+          "text": "Voima on $\\tfrac{F}{2}$, koska massa kaksinkertaistaa voiman ja etäisyys pienentää sen neljäsosaan.",
+          "correct": true,
+          "feedback": "Oikein: kerroin on $\\tfrac{2}{2^2} = \\tfrac{1}{2}$, koska voima on suoraan verrannollinen massaan ja kääntäen verrannollinen etäisyyden neliöön."
+        },
+        {
+          "text": "Voima on $\\tfrac{F}{4}$, koska etäisyys pienentää voiman neljäsosaan eikä massa vaikuta siihen.",
           "feedback": "Etäisyyden kaksinkertaistuminen pienentää voiman neljäsosaan, mutta massan kaksinkertaistuminen kaksinkertaistaa sen, ja se jäi huomiotta."
         },
         {
-          "text": "Voima on $2F$, koska gravitaatiovoima on suoraan verrannollinen kappaleiden massoihin.",
+          "text": "Voima on $2F$, koska voima on suoraan verrannollinen massaan eikä etäisyys vaikuta siihen.",
           "feedback": "Massa kaksinkertaistaa voiman, mutta etäisyyden kaksinkertaistuminen pienentää sitä, ja se jäi huomiotta."
-        },
-        {
-          "text": "Voima on $\\tfrac{F}{2}$, koska massa kaksinkertaistaa voiman ja etäisyys neljännesosaa sen.",
-          "correct": true,
-          "feedback": "Oikein: kerroin on $\\tfrac{2}{2^2} = \\tfrac{1}{2}$, koska voima on suoraan verrannollinen massaan ja kääntäen verrannollinen etäisyyden neliöön."
         }
       ]
     },
@@ -108,7 +108,7 @@
         "error",
         "concept"
       ],
-      "answer": "Hän mittaa etäisyyden pinnalta, vaikka $r$ on etäisyys Maan keskipisteestä: säde plus korkeus.",
+      "answer": "Hän mittaa etäisyyden pinnalta, vaikka sen pitää olla etäisyys Maan keskipisteestä.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -117,17 +117,17 @@
           "feedback": "Gravitaatiolaki pätee kaikkialla, myös avaruudessa. Gravitaatio heikkenee etäisyyden kasvaessa mutta ei lopu."
         },
         {
-          "text": "Hän jättää jakamatta voiman kahdella, vaikka sekä Maa että satelliitti vetävät toisiaan.",
+          "text": "Hän jättää voiman jakamatta kahdella, vaikka sekä Maa että satelliitti vetävät toisiaan.",
           "feedback": "Kumpaankin kappaleeseen vaikuttaa koko voima $F$, ja se on yhtä suuri molemmille. Voimaa ei jaeta kahtia."
         },
         {
-          "text": "Hän mittaa etäisyyden pinnalta, vaikka $r$ on etäisyys Maan keskipisteestä: säde plus korkeus.",
-          "correct": true,
-          "feedback": "Oikein: pallosymmetrinen Maa vetää kuin sen massa olisi keskipisteessä, joten $r = R + h \\approx 6800\\,\\text{km}$. Pienellä $r$:llä voima tulee aivan liian suureksi."
+          "text": "Hän antaa etäisyyden kilometreinä, vaikka lain etäisyys pitää antaa Maan säteen monikertoina.",
+          "feedback": "Etäisyys pitää antaa SI-yksikössä metreinä. Kaava ei vaadi Maan sädettä yksiköksi."
         },
         {
-          "text": "Hän käyttää kilometrejä, vaikka gravitaatiolain etäisyys pitää aina antaa Maan säteen monikertoina.",
-          "feedback": "Etäisyys pitää antaa SI-yksikössä metreinä. Kaava ei vaadi Maan sädettä yksiköksi."
+          "text": "Hän mittaa etäisyyden pinnalta, vaikka sen pitää olla etäisyys Maan keskipisteestä.",
+          "correct": true,
+          "feedback": "Oikein: pallosymmetrinen Maa vetää kuin sen massa olisi keskipisteessä, joten $r = R + h \\approx 6800\\,\\text{km}$. Pienellä $r$:llä voima tulee aivan liian suureksi."
         }
       ]
     }
@@ -207,8 +207,7 @@
       "text": "Cavendishin tyyppisessä kokeessa mitataan suuren pallon ($M = 1{,}50\\,\\text{kg}$) ja pienen pallon ($m = 20{,}0\\,\\text{g}$) välistä gravitaatiovoimaa $F$ keskipisteiden etäisyyden $r$ funktiona. Taulukossa on esimerkkiaineisto.\n\na) Laske gravitaatiovakion $\\gamma$ arvo jokaisesta mittauksesta ja laske arvojen keskiarvo.\n\nb) Vertaa keskiarvoa tunnettuun arvoon $6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$ ja kerro, minkä muotoinen kuvaajan $F$ suhteessa $\\tfrac{1}{r^2}$ pitäisi olla.\n\nKirjoita a-kohdan keskiarvo vastauslaatikkoon yksikössä $10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$.",
       "kind": [
         "data",
-        "experiment",
-        "graph"
+        "experiment"
       ],
       "answer": 6.72,
       "unit": "10⁻¹¹ N·m²/kg²",
@@ -244,8 +243,7 @@
       "level": 2,
       "text": "Taulukossa on Maan gravitaatiokentän voimakkuus $g$ eri korkeuksilla $h$ Maan pinnan yläpuolella (esimerkkiaineisto). Maan säde on $R = 6378\\,\\text{km}$.\n\na) Laske jokaiselle riville tulo $g\\,(R + h)^2$ yksikössä $\\text{m}^3/\\text{s}^2$ ja laske tulojen keskiarvo.\n\nb) Mitä suuretta tulo vastaa gravitaatiolain mukaan ja mitä sen pysyminen likimain vakiona osoittaa?\n\nKirjoita a-kohdan keskiarvo vastauslaatikkoon yksikössä $10^{14}\\,\\text{m}^3/\\text{s}^2$.",
       "kind": [
-        "data",
-        "graph"
+        "data"
       ],
       "answer": 3.99,
       "unit": "10¹⁴ m³/s²",
@@ -343,13 +341,13 @@
     {
       "id": "fy5-5-L3-05",
       "level": 3,
-      "text": "Maa pyörähtää akselinsa ympäri ajassa $T = 24{,}0\\,\\text{h}$. Päiväntasaajalla seisova ihminen kulkee tällöin ympyrärataa, jonka säde on Maan säde $R = 6378\\,\\text{km}$. Mallinna ihminen pistemäisenä ja Maa pallona. Oleta, että Maan gravitaatiokentän voimakkuus on $g = 9{,}81\\,\\text{m/s}^2$ sekä päiväntasaajalla että navalla. Ihmisen massa on $62{,}0\\,\\text{kg}$, ja vaaka mittaa hänen painoaan vaa'an tukivoimalla.\n\na) Laske ihmisen normaalikiihtyvyys pyörimisen takia ja vaa'an lukema newtoneina päiväntasaajalla.\n\nb) Kuinka lyhyt Maan pyörimisjakson pitäisi olla, jotta vaa'an lukema olisi päiväntasaajalla nolla? Anna vastaus minuutteina.\n\nc) Selitä sanoin, miksi vaaka näyttää päiväntasaajalla vähemmän kuin navalla, vaikka gravitaatiovoima on oletuksen mukaan yhtä suuri.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
+      "text": "Maa pyörähtää akselinsa ympäri ajassa $T = 24{,}0\\,\\text{h}$. Päiväntasaajalla seisova ihminen kulkee tällöin ympyrärataa, jonka säde on Maan säde $R = 6378\\,\\text{km}$. Mallinna ihminen pistemäisenä ja Maa pallona. Oleta, että Maan gravitaatiokentän voimakkuus on $g = 9{,}81\\,\\text{m/s}^2$ sekä päiväntasaajalla että navalla. Ihmisen massa on $62{,}0\\,\\text{kg}$, ja vaa'an lukema on vaa'an tukivoiman suuruus.\n\na) Laske ihmisen normaalikiihtyvyys pyörimisen takia ja vaa'an lukema newtoneina päiväntasaajalla.\n\nb) Kuinka suuri olisi vaa'an lukema päiväntasaajalla, jos Maa pyörähtäisi akselinsa ympäri kerran $6{,}0\\,\\text{h}$:ssa? Anna vastaus newtoneina.\n\nc) Selitä sanoin, miksi vaaka näyttää päiväntasaajalla vähemmän kuin navalla, vaikka gravitaatiovoima on oletuksen mukaan yhtä suuri.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
       "kind": [
         "model",
         "reasoning"
       ],
-      "answer": 84.4,
-      "unit": "min",
+      "answer": 575,
+      "unit": "N",
       "tolerance": 0.02
     }
   ]

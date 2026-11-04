@@ -27,7 +27,7 @@ h = 0.5 * 200 * 0.030 ** 2 / (0.050 * g)                  # jumping toy: 1/2 k x
 a["fy5-8-L3-02"] = h
 a["fy5-8-L3-03"] = (30 + 50) * 0.040                      # two springs: both forces towards equilibrium, (k1 + k2) x = 3,2 N
 # Exercise-bank additions
-a["fy5-8-L1-08"] = 2.5 / 0.10                             # graph ex-kaksi: spring B through (0,10 m, 2,5 N), 25 N/m
+a["fy5-8-L1-08"] = (3.0 - 2.0) / (0.12 - 0.08)           # graph ex-kaksi: spring B through grid points (0,08 m; 2,0 N) and (0,12 m; 3,0 N), 25 N/m
 xs = [0.041, 0.079, 0.121, 0.161]                         # L2-05: linear points 100..400 g (example data), x in m
 Fs = [m * g / 1000 for m in (100, 200, 300, 400)]
 a["fy5-8-L2-05"] = sum(F * x for F, x in zip(Fs, xs)) / sum(x * x for x in xs)   # least squares through origin, 24,4 N/m
