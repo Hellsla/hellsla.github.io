@@ -1,0 +1,153 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.N0===400 && S.T===20 && S.t===0 && S.sarja===1 && S.N===400 && S.running===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: 400 nuclei, T½ = 20 s, t = 0, series 1, none decayed, not running (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=[...document.querySelectorAll('#sim-root input[type=range]')]; return R.length===2 && R[0].min==='10' && R[0].max==='40' && R[0].step==='5' && R[1].min==='0' && R[1].max==='120' && R[1].step==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two sliders: half-life 10–40 s in steps of 5, time 0–120 s in steps of 1"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===3 && L[0]==='20,100,400,1600' && L[1]==='1,2,3,4,5' && L[2]==='1,4,12' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three selects: N0 20/100/400/1600, series 1–5, speed hidas 1 · normaali 4 · nopea 12 simulated s per s"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=document.querySelector('#sim-root .controls'); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') && c.firstElementChild.tagName==='BUTTON' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls (main button first), readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='N0,T,sarja,t' && P.T.unit==='s' && P.t.unit==='s' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares N0, T (s), t (s) and sarja"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?820:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x820 (stacked, larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /s/.test(t) && /N/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the time in s and the numbers N"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1600'); I(R[0],20); I(S[1],'1'); I(R[1],0);",
+  "expr": "window.simState.N",
+  "expected": 1600,
+  "tol": 0,
+  "note": "koe 1: at t = 0 all 1600 nuclei are undecayed"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1600'); I(R[0],20); I(S[1],'1'); I(R[1],20);",
+  "expr": "window.simState.N",
+  "expected": 792,
+  "tol": 0,
+  "note": "koe 1 and prediction 1: series 1 after one half-life, N = 792 (lesson-answers koe1-N-20)"
+ },
+ {
+  "expr": "window.simState.frac",
+  "expected": 0.495,
+  "tol": 0.001,
+  "note": "koe 1: N : N0 = 792 : 1600 = 0,495"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1600'); I(R[0],20); I(S[1],'1'); I(R[1],40);",
+  "expr": "window.simState.N",
+  "expected": 399,
+  "tol": 0,
+  "note": "koe 1 and prediction 1: after two half-lives N = 399, about a quarter, not zero (lesson-answers koe1-N-40)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1600'); I(R[0],20); I(S[1],'1'); I(R[1],60);",
+  "expr": "window.simState.N",
+  "expected": 208,
+  "tol": 0,
+  "note": "koe 1: after three half-lives N = 208, about an eighth (lesson-answers koe1-N-60)"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.decayed===S.N0-S.N && Math.abs(S.frac-S.N/S.N0)<1e-12 && Math.abs(S.halves-3)<1e-9 && Math.abs(S.model-200)<1e-9 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "decayed = N0 - N, frac = N / N0, t : T½ = 3 and the decay law gives 200"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1600'); I(R[0],40); I(S[1],'1'); I(R[1],40);",
+  "expr": "window.simState.N",
+  "expected": 792,
+  "tol": 0,
+  "note": "the half-life scales the same series: T½ = 40 s at t = 40 s gives the same 792 as T½ = 20 s at 20 s"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'20'); I(R[0],20); I(S[1],'1'); I(R[1],20);",
+  "expr": "window.simState.N",
+  "expected": 7,
+  "tol": 0,
+  "note": "koe 2 and prediction 2: 20 nuclei, series 1, one half-life: 7 left (lesson-answers koe2-N-s1)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'20'); I(R[0],20); I(S[1],'2'); I(R[1],20);",
+  "expr": "window.simState.N",
+  "expected": 12,
+  "tol": 0,
+  "note": "koe 2: series 2: 12 left"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'20'); I(R[0],20); I(S[1],'3'); I(R[1],20);",
+  "expr": "window.simState.N",
+  "expected": 13,
+  "tol": 0,
+  "note": "koe 2: series 3: 13 left"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'20'); I(R[0],20); I(S[1],'5'); I(R[1],20);",
+  "expr": "window.simState.N",
+  "expected": 10,
+  "tol": 0,
+  "note": "koe 2: series 5: 10 left"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1600'); I(R[0],20); I(S[1],'3'); I(R[1],20);",
+  "expr": "window.simState.N",
+  "expected": 783,
+  "tol": 0,
+  "note": "koe 3: 1600 nuclei, series 3: 783, fraction 0,489 (lesson-answers koe3-N-s3)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1600'); I(R[0],20); I(S[1],'4'); I(R[1],20);",
+  "expr": "window.simState.frac",
+  "expected": 0.509375,
+  "tol": 0.001,
+  "note": "koe 3: series 4: 815 : 1600 = 0,509"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'400'); I(R[0],20); I(S[1],'1'); I(R[1],0); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => setTimeout(() => { const S=window.simState; ok(S.running===1 && S.t>0 && S.t<120 ? 1 : 0); }, 600)))()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Käynnistä runs the time forward"
+ },
+ {
+  "setup": "document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => new Promise((ok) => setTimeout(() => { const S=window.simState; ok(S.running===0 ? 1 : 0); }, 200)))()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Pysäytä stops it"
+ }
+]

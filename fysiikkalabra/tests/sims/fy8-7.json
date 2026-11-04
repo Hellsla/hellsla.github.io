@@ -1,0 +1,176 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.levels===3 && S.mirrors===1 && S.P===0.5 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: three levels, mirrors, P_p = 0,5 W (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.n2",
+  "expected": 33.333333,
+  "tol": 0.01,
+  "note": "on load: N2 = W tau / (1 + W tau) = 0,5 / 1,5 = 33,3 % (lesson-answers koe1-0.5-n2)"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return Math.abs(S.n1 + S.n2 - 100) < 1e-9 && S.Pout===0 && S.inv===0 && S.lasing===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: N1 + N2 = 100 %, below threshold: no beam, no inversion"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='0' && R[0].max==='5' && R[0].step==='0.1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: pump power 0-5,0 W in steps of 0,1 W"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===3 && L[0]==='3,2' && L[1]==='1,0' && L[2]==='0.5,1,2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three selects: medium (3 or 2 levels), mirrors (on, off), speed hidas/normaali/nopea"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=document.querySelector('#sim-root .controls'); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') && c.firstElementChild.tagName==='BUTTON' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls (main button first), readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='P,levels,mirrors' && P.P.unit==='W' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares levels, mirrors and P (W)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?1000:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x1000 (stacked, larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /%/.test(t) && /mW/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the populations in % and the beam's power in mW"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'3'); I(S[1],'1'); I(R[0],1.0);",
+  "expr": "(() => { const S=window.simState; return Math.abs(S.n2-50)<1e-6 && S.Pout===0 && S.inv===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 1: 1,0 W: N2 = 50 %, no inversion yet, no beam (threshold 1,22 W)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'3'); I(S[1],'1'); I(R[0],2.0);",
+  "expr": "window.simState.Pout",
+  "expected": 35,
+  "tol": 0.01,
+  "note": "koe 1: 2,0 W above threshold: P_out = 100 mW (2 · 0,45 - 0,55) = 35 mW (lesson-answers koe1-2.0-P)"
+ },
+ {
+  "expr": "window.simState.n2",
+  "expected": 55,
+  "tol": 0.01,
+  "note": "koe 1: lasing clamps the inversion: N2 = 55 % (lesson-answers koe1-2.0-n2)"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.inv===1 && S.lasing===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 1: inversion and beam at 2,0 W"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'3'); I(S[1],'1'); I(R[0],5);",
+  "expr": "window.simState.Pout",
+  "expected": 170,
+  "tol": 0.01,
+  "note": "koe 1: 5,0 W: P_out = 170 mW (lesson-answers koe1-5.0-P)"
+ },
+ {
+  "expr": "window.simState.n2",
+  "expected": 55,
+  "tol": 0.01,
+  "note": "koe 1: N2 stays 55 % at 5,0 W"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'3'); I(S[1],'1'); I(R[0],1.5);",
+  "expr": "window.simState.Pout",
+  "expected": 12.5,
+  "tol": 0.01,
+  "note": "koe 1: 1,5 W: 12,5 mW just above threshold (lesson-answers koe1-1.5-P)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'2'); I(S[1],'1'); I(R[0],5);",
+  "expr": "window.simState.n2",
+  "expected": 45.454545,
+  "tol": 0.01,
+  "note": "koe 2: two levels, 5,0 W: N2 = 5 / 11 = 45,5 % < 50 % (lesson-answers koe2-5.0-n2)"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.levels===2 && S.Pout===0 && S.inv===0 && S.lasing===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 2: two levels: no inversion, no beam even at full pump"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'2'); I(S[1],'1'); I(R[0],2);",
+  "expr": "window.simState.n2",
+  "expected": 40,
+  "tol": 0.01,
+  "note": "koe 2: two levels, 2,0 W: N2 = 2 / 5 = 40 % (lesson-answers koe2-2.0-n2)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'2'); I(S[1],'1'); I(R[0],1);",
+  "expr": "window.simState.n2",
+  "expected": 33.333333,
+  "tol": 0.01,
+  "note": "koe 2: two levels, 1,0 W: N2 = 1 / 3 = 33,3 % (lesson-answers koe2-1.0-n2)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'3'); I(S[1],'0'); I(R[0],5);",
+  "expr": "window.simState.n2",
+  "expected": 83.333333,
+  "tol": 0.01,
+  "note": "koe 3: no mirrors, 5,0 W: N2 = 5 / 6 = 83,3 % (lesson-answers koe3-5.0-n2)"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.mirrors===0 && S.inv===1 && S.Pout===0 && S.photons===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 3: inversion without mirrors gives no beam and no photons along the axis"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'3'); I(S[1],'0'); I(R[0],2);",
+  "expr": "window.simState.n2",
+  "expected": 66.666667,
+  "tol": 0.01,
+  "note": "koe 3: no mirrors, 2,0 W: N2 = 2 / 3 = 66,7 % (lesson-answers koe3-2.0-n2)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'3'); I(S[1],'1'); I(R[0],0);",
+  "expr": "(() => { const S=window.simState; return S.n2===0 && S.n1===100 && S.Pout===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no pump: every atom in the ground state"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'3'); I(S[1],'1'); I(R[0],3); document.querySelector('#sim-root .controls button').click();",
+  "expr": "(() => { const S=window.simState; return S.running===0 && Math.abs(S.Pout-80)<1e-6 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Pysäytä stops the animation; the model values stay (3,0 W: 80 mW)"
+ },
+ {
+  "setup": "document.querySelector('#sim-root .controls button').click();",
+  "expr": "window.simState.running",
+  "expected": 1,
+  "tol": 0,
+  "note": "Jatka resumes the animation"
+ }
+]

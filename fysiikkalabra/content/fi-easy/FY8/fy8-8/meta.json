@@ -1,0 +1,44 @@
+{
+  "id": "fy8-8",
+  "course": "FY8",
+  "title": "Atomiydin ja radioaktiivinen hajoaminen",
+  "goals": [
+    "LOPS FY8: atomiytimen rakenne ja muutokset, radioaktiivinen hajoaminen",
+    "Täsmennys: ytimen kvantittuneet energiatilat tunnistetaan gammahajoamisen spektrin kautta analogisesti atomin energiatasojen kanssa; alfa-, beeta- ja gammahajoaminen ja hajoamisyhtälöt"
+  ],
+  "prerequisites": [
+    "fy8-7"
+  ],
+  "glossary": [
+    "nukleoni",
+    "isotooppi",
+    "alfahajoaminen",
+    "beetahajoaminen",
+    "gammasäteily"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "nukleoni",
+      "explain": "Protoni tai neutroni. Se on atomiytimen rakenneosa."
+    },
+    {
+      "term": "isotooppi",
+      "explain": "Saman alkuaineen ydin, jossa on eri määrä neutroneja. Protonien määrä on sama."
+    },
+    {
+      "term": "alfahajoaminen",
+      "explain": "Ydin lähettää alfahiukkasen eli heliumytimen. Silloin ytimen protonien ja neutronien määrät pienenevät."
+    },
+    {
+      "term": "beetahajoaminen",
+      "explain": "Ytimen neutroni muuttuu protoniksi tai protoni neutroniksi. Samalla ytimestä lähtee elektroni tai positroni."
+    },
+    {
+      "term": "gammasäteily",
+      "explain": "Viritystilassa oleva ydin lähettää gammafotonin ja siirtyy alemmalle energiatasolle. Alkuaine ei muutu."
+    }
+  ]
+}

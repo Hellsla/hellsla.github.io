@@ -1,0 +1,503 @@
+{
+  "version": 1,
+  "contribution": "Lasers and quantum structures take the energy levels of the atom into technology: stimulated emission, population inversion and mirrors explain laser light, and quantum structures a few nanometres in size show how the size of a structure determines the energy levels and the colour of the light.",
+  "learn": [
+    "explain the roles of stimulated emission, population inversion and mirrors in a laser.",
+    "calculate the laser wavelength and the photons per second from the laser levels and power.",
+    "describe how the size of a quantum dot determines the colour of its light, and name applications of quantum structures."
+  ],
+  "prior": [
+    "An atom emits or absorbs a photon whose energy is the difference of the levels, $hf = E_\\text{u} - E_\\text{l}$ (chapter *Energy levels of the hydrogen atom and the Bohr model*)",
+    "In a confined space, such as a fixed string, standing waves can have only certain wavelengths, and the states of an electron resemble them (chapter *The wave-mechanical model of the atom and orbitals*)",
+    "The colour of the light of an LED and a laser diode is determined by the energy gap of the semiconductor (chapter *Light from an LED and measuring the Planck constant*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In a darkened classroom, a laser pointer and a torch are aimed at the same wall from five metres away. The light of the laser pointer shows on the wall as a bright red dot a few millimetres across. The light of the torch spreads into a dim patch a metre wide, although the torch emits light at many times the power. The power of the laser pointer is only about $1\\,\\text{mW}$.",
+      "question": "What makes the light of a laser such a narrow, single-coloured beam, and how is such light produced?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the photon of a transition",
+      "optional": true,
+      "prompt": "An electron of a hydrogen atom moves from the level $n = 3$ to the level $n = 2$, and the atom emits a photon of red light with a wavelength of $656\\,\\text{nm}$. Which statement is true?",
+      "choices": [
+        {
+          "text": "All the photons of this transition have the same colour, because the energy is the difference of the levels.",
+          "correct": true,
+          "feedback": "Correct. The energy of the photon is $E_3 - E_2 = 1.89\\,\\text{eV}$ (chapter *Energy levels of the hydrogen atom and the Bohr model*). The same idea is at the heart of the laser: all the photons of a laser are produced in the same transition."
+        },
+        {
+          "text": "The energy of the photon is the energy of the upper level $n = 3$, so it is $1.51\\,\\text{eV}$.",
+          "feedback": "The photon carries not the energy of one level but the difference of the levels: $E_3 - E_2 = -1.51\\,\\text{eV} + 3.40\\,\\text{eV} = 1.89\\,\\text{eV}$, which corresponds to the wavelength $656\\,\\text{nm}$."
+        },
+        {
+          "text": "The photon always leaves in the same direction, because the transition is exactly the same every time.",
+          "feedback": "The energy of the photon is always the same, but the direction is not. When an excited atom emits a photon by itself, the direction is random. That is why the light of a lamp spreads everywhere."
+        },
+        {
+          "text": "An atom emits a photon only when some other photon has hit it first.",
+          "feedback": "An excited atom returns to a lower level by itself, usually in about $10^{-8}\\,\\text{s}$, and emits a photon then. Emission caused by another photon is the new thing in this chapter."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the pumping is increased",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 4
+      },
+      "prompt": "A laser medium has three energy levels, and the mirrors are in place. The pump power is increased gradually from zero. How does the power of the laser beam change?",
+      "choices": [
+        {
+          "text": "The power of the beam grows in direct proportion to the pump power right from zero.",
+          "feedback": "The values of the model refute this: at the powers $0.5\\,\\text{W}$ and $1.0\\,\\text{W}$ there is no beam at all, and at $2.0\\,\\text{W}$ the power of the beam is $35\\,\\text{mW}$. Light is amplified only when the upper level has enough more atoms than the lower level."
+        },
+        {
+          "text": "No beam appears until the pumping exceeds a certain limit, and after that the power grows steadily.",
+          "correct": true,
+          "feedback": "The values of the model support this: $0\\,\\text{mW}$ at $1.0\\,\\text{W}$, $12.5\\,\\text{mW}$ at $1.5\\,\\text{W}$, $35\\,\\text{mW}$ at $2.0\\,\\text{W}$ and $80\\,\\text{mW}$ at $3.0\\,\\text{W}$. The threshold in the model is about $1.22\\,\\text{W}$: only then does the amplification make up for the light lost through the mirror and elsewhere."
+        },
+        {
+          "text": "The power of the beam first grows quickly and levels off when all the atoms are in the upper state.",
+          "feedback": "The values of the model refute this: after the threshold the power of the beam grows by the same amount for every watt, from $35\\,\\text{mW}$ to $80\\,\\text{mW}$ and from that to $125\\,\\text{mW}$. The upper state has only $55\\,\\%$ of the atoms all the time, because stimulated emission empties the level."
+        },
+        {
+          "text": "A beam appears as soon as the pumping starts, but it is weak until the pumping is full.",
+          "feedback": "The values of the model refute this: at $1.0\\,\\text{W}$ there is no beam at all, although atoms have been excited. A laser needs a population inversion and, in addition, so much amplification that it makes up for the losses."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: only two levels",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "A laser medium has only two energy levels, and the energy of the photons of the pump light is exactly the difference of the levels. The pumping is increased as much as possible. What share of the atoms can be brought to the upper level?",
+      "choices": [
+        {
+          "text": "Almost all the atoms, when the pumping is strong enough.",
+          "feedback": "The values of the model refute this: $33.3\\,\\%$, $40.0\\,\\%$ and $45.5\\,\\%$ at the powers $1.0\\,\\text{W}$, $2.0\\,\\text{W}$ and $5.0\\,\\text{W}$. The share approaches a half but does not exceed it, because the pump light also makes the atoms of the upper state emit."
+        },
+        {
+          "text": "At most a half, because the pump light also makes the atoms of the upper state emit.",
+          "correct": true,
+          "feedback": "The values of the model support this: $33.3\\,\\%$, $40.0\\,\\%$ and $45.5\\,\\%$. The same photon is equally likely to excite an atom in the ground state or to cause stimulated emission in an excited atom, so the upper state cannot fill more than the lower state. That is why a laser medium needs at least three levels."
+        },
+        {
+          "text": "No atoms at all, because a two-level atom cannot absorb the pump light.",
+          "feedback": "The values of the model refute this: already at $1.0\\,\\text{W}$, $33.3\\,\\%$ of the atoms are in the upper state. An atom absorbs a photon whose energy is the difference of the levels."
+        },
+        {
+          "text": "Exactly a half of the atoms as soon as the pumping is switched on.",
+          "feedback": "The values of the model refute this: at $1.0\\,\\text{W}$ the share is $33.3\\,\\%$ and it grows towards a half with the pumping, since excited atoms also return to the ground state by themselves."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose the laser medium and the mirrors and adjust the pump power. Follow the colours of the atoms in the rod, the bars of the levels and the power of the beam in the graph.",
+      "howto": "*Laser medium* chooses a three-level medium, such as ruby, or a two-level medium. *Mirrors* puts the mirrors of the resonator in place or removes them. The slider changes the pump power $P_\\text{p}$ between $0$ and $5.0\\,\\text{W}$. In the rod, orange atoms are on the upper laser level and blue ones on the lower. At the bottom left, bars show what share of the atoms is on each level, and the dashed line marks $50\\,\\%$. On the right, the graph shows the power of the beam $P_\\text{out}$ as a function of the pump power: the faint curve is the curve of the model and the dot is the present state. *Stop* stops the animation, and *Speed* changes only its pace.",
+      "model": "The model calculates the steady state that the laser settles into within a few milliseconds; the animation only illustrates it. The lifetime of the upper laser level is $1.0\\,\\text{ms}$. In a three-level medium the pumping lifts atoms to the short-lived level $E_3$, from which they move at once to the level $E_2$, so there are no atoms on the level $E_3$. With the mirrors, the laser starts when $N_2 - N_1$ exceeds $10\\,\\%$ of the number of atoms; this corresponds to the light lost through the mirror and elsewhere. Without mirrors the threshold is not reached. In a two-level medium the pump light excites and stimulates with equal probability. The heating of the medium is ignored. The values are calculated by the model, not measured.",
+      "calc": "The pumping rate is $W = \\tfrac{P_\\text{p}}{1\\,\\text{W} \\cdot \\tau}$, where $\\tau = 1.0\\,\\text{ms}$. In the steady state, atoms are pumped to the upper level as fast as they leave it. With three levels, before the threshold\n\n$$N_2 = \\frac{W\\tau}{1 + W\\tau},$$\n\nand with two levels $N_2 = \\tfrac{W\\tau}{1 + 2W\\tau}$, which always stays below $50\\,\\%$. When the laser works, $N_2$ stays at the threshold value $55\\,\\%$, and the energy pumped beyond it goes into the beam: $P_\\text{out} = 100\\,\\text{mW} \\cdot (W\\tau N_1 - N_2)$, when $N_1$ and $N_2$ are shares."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: a three-level laser",
+      "intro": "Test prediction 1. The laser medium is three-level and the mirrors are in place; change only the pump power. Record at least the powers $1.0\\,\\text{W}$, $1.5\\,\\text{W}$, $2.0\\,\\text{W}$ and $3.0\\,\\text{W}$. Also follow how $N_2$ changes when the beam appears.",
+      "initial": {
+        "levels": 3,
+        "mirrors": 1,
+        "P": 1.0
+      },
+      "locked": [
+        "levels",
+        "mirrors"
+      ],
+      "vary": "P",
+      "names": {
+        "levels": "laser medium",
+        "mirrors": "mirrors",
+        "P": "pump power $P_\\text{p}$"
+      },
+      "units": {
+        "P": "W"
+      },
+      "values": {
+        "levels": {
+          "3": "three levels",
+          "2": "two levels"
+        },
+        "mirrors": {
+          "1": "in place",
+          "0": "no mirrors"
+        },
+        "inv": {
+          "1": "yes",
+          "0": "no"
+        }
+      },
+      "measure": [
+        {
+          "key": "n2",
+          "label": "$N_2$ (%)"
+        },
+        {
+          "key": "inv",
+          "label": "inversion"
+        },
+        {
+          "key": "Pout",
+          "label": "$P_\\text{out}$ (mW)"
+        }
+      ],
+      "min": 4
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: a two-level medium",
+      "intro": "Test prediction 2. The laser medium is now two-level, and the mirrors are in place. Record at least the powers $1.0\\,\\text{W}$, $2.0\\,\\text{W}$ and $5.0\\,\\text{W}$. What value does the share $N_2$ approach?",
+      "initial": {
+        "levels": 2,
+        "mirrors": 1,
+        "P": 1.0
+      },
+      "locked": [
+        "levels",
+        "mirrors"
+      ],
+      "vary": "P",
+      "names": {
+        "levels": "laser medium",
+        "mirrors": "mirrors",
+        "P": "pump power $P_\\text{p}$"
+      },
+      "units": {
+        "P": "W"
+      },
+      "values": {
+        "levels": {
+          "3": "three levels",
+          "2": "two levels"
+        },
+        "mirrors": {
+          "1": "in place",
+          "0": "no mirrors"
+        },
+        "inv": {
+          "1": "yes",
+          "0": "no"
+        }
+      },
+      "measure": [
+        {
+          "key": "n2",
+          "label": "$N_2$ (%)"
+        },
+        {
+          "key": "inv",
+          "label": "inversion"
+        },
+        {
+          "key": "Pout",
+          "label": "$P_\\text{out}$ (mW)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: without mirrors",
+      "optional": true,
+      "intro": "Remove the mirrors and repeat the experiment with the three-level medium. Record at least the powers $2.0\\,\\text{W}$ and $5.0\\,\\text{W}$. Does a population inversion appear? What about a laser beam?",
+      "initial": {
+        "levels": 3,
+        "mirrors": 0,
+        "P": 2.0
+      },
+      "locked": [
+        "levels",
+        "mirrors"
+      ],
+      "vary": "P",
+      "names": {
+        "levels": "laser medium",
+        "mirrors": "mirrors",
+        "P": "pump power $P_\\text{p}$"
+      },
+      "units": {
+        "P": "W"
+      },
+      "values": {
+        "levels": {
+          "3": "three levels",
+          "2": "two levels"
+        },
+        "mirrors": {
+          "1": "in place",
+          "0": "no mirrors"
+        },
+        "inv": {
+          "1": "yes",
+          "0": "no"
+        }
+      },
+      "measure": [
+        {
+          "key": "n2",
+          "label": "$N_2$ (%)"
+        },
+        {
+          "key": "inv",
+          "label": "inversion"
+        },
+        {
+          "key": "Pout",
+          "label": "$P_\\text{out}$ (mW)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: when does a laser work?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "On the basis of your tables, write: when does a laser start to emit a beam, and why can a laser not be made of a two-level medium?",
+      "model": "In a three-level medium no beam appears at the pump powers $1.0\\,\\text{W}$ and below; then $N_2 \\leq 50\\,\\%$ and there is no inversion. After the threshold, in the model from about $1.22\\,\\text{W}$ on, the power of the beam grows steadily: $12.5\\,\\text{mW}$, $35\\,\\text{mW}$ and $80\\,\\text{mW}$ at the powers $1.5\\,\\text{W}$, $2.0\\,\\text{W}$ and $3.0\\,\\text{W}$. At the same time $N_2$ stops at $55\\,\\%$, because stimulated emission empties the upper level as fast as the pumping fills it, and the extra pump power goes into the beam. In a two-level medium $N_2$ stays below $50\\,\\%$ ($33.3\\,\\%$, $40.0\\,\\%$, $45.5\\,\\%$), because the pump light makes excited atoms emit just as likely as it excites atoms in the ground state. Without inversion light is not amplified. According to the optional experiment 3, inversion alone is not enough: without mirrors the light does not pass through the medium enough times. The values are calculated by the model.",
+      "criteria": [
+        "I named the threshold: the beam appears only after a certain pump power and then grows steadily.",
+        "I connected the appearance of the beam to the population inversion $N_2 > N_1$.",
+        "I explained why $N_2$ stays below $50\\,\\%$ in a two-level medium: the pump light also causes stimulated emission."
+      ]
+    },
+    {
+      "id": "kvanttipisteet",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "The colours of quantum dots",
+      "source": "example",
+      "source_note": "An invented example data set that follows the typical values of cadmium selenide quantum dots.",
+      "text": "In a laboratory there are five bottles with the same substance, cadmium selenide, as quantum dots. The bottles differ from one another only in the size of the dots. When the bottles are lit with an ultraviolet lamp, they glow in different colours:\n\n| Diameter $d$ (nm) | Wavelength $\\lambda$ (nm) |\n| --- | --- |\n| $2.0$ | $480$ |\n| $3.0$ | $530$ |\n| $4.0$ | $570$ |\n| $5.0$ | $600$ |\n| $6.0$ | $620$ |\n\nThe energy gap of a large cadmium selenide crystal is $1.74\\,\\text{eV}$.",
+      "question": {
+        "type": "choice",
+        "prompt": "Calculate the photon energies of the smallest and the largest dot with the formula $E = \\tfrac{hc}{\\lambda}$. What conclusion follows from the data?",
+        "choices": [
+          {
+            "text": "A smaller dot has a larger energy gap, and the values of large dots approach the value of a large crystal.",
+            "correct": true,
+            "feedback": "Correct. The photon energy of the dot of $2.0\\,\\text{nm}$ is $2.58\\,\\text{eV}$ and of the dot of $6.0\\,\\text{nm}$ $2.00\\,\\text{eV}$. As the dot grows, the energy approaches the energy gap of a large crystal, $1.74\\,\\text{eV}$, because in a large dot the electrons have so much room that the size hardly matters any more."
+          },
+          {
+            "text": "The photons of a larger dot are more energetic, because a large dot has more atoms.",
+            "feedback": "The data shows the opposite: a longer wavelength means a smaller photon energy, $2.58\\,\\text{eV}$ for the dot of $2.0\\,\\text{nm}$ and $2.00\\,\\text{eV}$ for the dot of $6.0\\,\\text{nm}$."
+          },
+          {
+            "text": "The colours are not due to size, but the quantum dots in the bottles are different substances.",
+            "feedback": "All the dots are the same cadmium selenide; the only difference is size. The size determines how tight a space the electrons are confined in, and that changes the allowed energies."
+          },
+          {
+            "text": "The photon energy is inversely proportional to the diameter of the dot.",
+            "feedback": "The diameter triples from $2.0\\,\\text{nm}$ to $6.0\\,\\text{nm}$, but the energy decreases only from $2.58\\,\\text{eV}$ to $2.00\\,\\text{eV}$. So the energy is not inversely proportional to the size but approaches the value of a large crystal, $1.74\\,\\text{eV}$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "tunneli",
+      "stage": "selita",
+      "type": "theory",
+      "title": "Tunnelling",
+      "optional": true,
+      "sections": [
+        "Tunneloituminen"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model. Then return to the question at the start: why is the light of a laser a narrow, single-coloured beam, while the light of a torch spreads?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates how many photons per second a green laser pointer with the power $5.0\\,\\text{mW}$ and the wavelength $532\\,\\text{nm}$ emits:\n\n$$\\begin{aligned} &\\frac{N}{t} = \\frac{P \\lambda}{hc} \\\\ &= \\frac{5.0 \\cdot 10^{-3}\\,\\text{W} \\cdot 532}{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}} \\\\ &\\approx 1.3 \\cdot 10^{25}\\,\\tfrac{1}{\\text{s}} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The wavelength was substituted in nanometres, although it has to be converted to metres.",
+          "correct": true,
+          "feedback": "Correct. $\\lambda = 532\\,\\text{nm} = 532 \\cdot 10^{-9}\\,\\text{m}$, which gives $\\tfrac{N}{t} \\approx 1.3 \\cdot 10^{16}\\,\\tfrac{1}{\\text{s}}$. The error is revealed by a unit check: $\\tfrac{\\text{W} \\cdot \\text{m}}{\\text{J}\\,\\text{m}} = \\tfrac{1}{\\text{s}}$ only if the wavelength is in metres."
+        },
+        {
+          "text": "The power should have been substituted in milliwatts and not in watts.",
+          "feedback": "The power is substituted in watts, because $h$ has the unit $\\text{J}\\,\\text{s}$ and $1\\,\\text{W} = 1\\,\\tfrac{\\text{J}}{\\text{s}}$. The conversion $5.0\\,\\text{mW} = 5.0 \\cdot 10^{-3}\\,\\text{W}$ is correct."
+        },
+        {
+          "text": "The formula is upside down, since the photon rate is $\\tfrac{P h c}{\\lambda}$.",
+          "feedback": "The formula is correct: $P = \\tfrac{N}{t} \\cdot \\tfrac{hc}{\\lambda}$, so $\\tfrac{N}{t} = \\tfrac{P\\lambda}{hc}$. The unit of the expression $\\tfrac{Phc}{\\lambda}$ would not be $\\tfrac{1}{\\text{s}}$."
+        },
+        {
+          "text": "There is no error in the calculation, since a laser emits an enormous number of photons.",
+          "feedback": "The number is enormous, but not this big: $1.3 \\cdot 10^{25}$ photons per second, each $3.7 \\cdot 10^{-19}\\,\\text{J}$, would be about $5\\,\\text{MW}$, not $5.0\\,\\text{mW}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "In industry, metal is cut with a fibre laser whose beam has the power $1.0\\,\\text{kW}$ and the wavelength $1070\\,\\text{nm}$. The laser is pumped with the light of laser diodes whose wavelength is $976\\,\\text{nm}$. Each pump photon can produce at most one laser photon, and the energy difference stays in the fibre as heat. At least how much heat is produced in the fibre per second? Give the answer in watts.",
+      "answer": 96.3,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate how much pump power is needed at least. When each pump photon produces one laser photon, there are equally many photons per second.",
+        "With the same number of photons per second, the power is proportional to the energy of a photon $\\tfrac{hc}{\\lambda}$: $P_\\text{p} = P_\\text{L} \\cdot \\tfrac{\\lambda_\\text{L}}{\\lambda_\\text{p}}$.",
+        "$P_\\text{p} = 1000\\,\\text{W} \\cdot \\tfrac{1070\\,\\text{nm}}{976\\,\\text{nm}} = 1096.3\\,\\text{W}$; the heat produced equals the difference of the pump power and the power of the beam."
+      ],
+      "mistakes": [
+        {
+          "value": 87.9,
+          "feedback": "You calculated $1000\\,\\text{W} \\cdot \\left(1 - \\tfrac{976}{1070}\\right)$, that is you used the power of the beam as the pump power. The pump power has to be greater than the power of the beam: $P_\\text{p} = 1000\\,\\text{W} \\cdot \\tfrac{1070}{976}$."
+        },
+        {
+          "value": 1096,
+          "feedback": "This is the smallest pump power. The heat produced equals only the difference of the pump power and the power of the beam."
+        }
+      ],
+      "solution": "**Given:** power of the beam $P_\\text{L} = 1.0\\,\\text{kW}$, wavelength of the laser light $\\lambda_\\text{L} = 1070\\,\\text{nm}$, wavelength of the pump light $\\lambda_\\text{p} = 976\\,\\text{nm}$; one pump photon produces at most one laser photon\n\n**Asked:** the heat produced in the fibre per second, that is the heating power $P_\\text{heat}$ in watts, the smallest possible value\n\n**Principle:** Energy is conserved: the power of the pump light divides into the beam and heat. The least heat is produced when each pump photon produces a laser photon. Then there are equally many photons per second, and since $P = \\tfrac{N}{t} \\cdot \\tfrac{hc}{\\lambda}$, the powers are in the same ratio as the energies of the photons.\n\n**Formula:** $\\tfrac{N}{t} = \\tfrac{P_\\text{L} \\lambda_\\text{L}}{hc}$ and $P_\\text{p} = \\tfrac{N}{t} \\cdot \\tfrac{hc}{\\lambda_\\text{p}} = P_\\text{L} \\cdot \\tfrac{\\lambda_\\text{L}}{\\lambda_\\text{p}}$, so\n\n$$P_\\text{heat} = P_\\text{p} - P_\\text{L} = P_\\text{L} \\left(\\frac{\\lambda_\\text{L}}{\\lambda_\\text{p}} - 1\\right)$$\n\n**Conversions:** $P_\\text{L} = 1.0\\,\\text{kW} = 1.0 \\cdot 1000\\,\\text{W} = 1000\\,\\text{W}$. The wavelengths are in the same unit, so their ratio can be calculated in nanometres.\n\n**Substitution:** $P_\\text{heat} = 1000\\,\\text{W} \\cdot \\left(\\dfrac{1070\\,\\text{nm}}{976\\,\\text{nm}} - 1\\right) = 1000\\,\\text{W} \\cdot 0.096311 = 96.311\\,\\text{W}$\n\n**Answer:** $96\\,\\text{W}$, two significant figures like the power of the beam $1.0\\,\\text{kW}$.\n\n**Reasonableness:** The energies of the pump photon and the laser photon are $1.27\\,\\text{eV}$ and $1.16\\,\\text{eV}$, so they differ by about $10\\,\\%$, and the heat produced is about a tenth of the power of the beam. In reality not all the pump photons produce a laser photon, so more heat is produced, and that is why the fibre is cooled."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. The tasks of level 1 use one formula, the tasks of level 2 combine the energy of a photon and the power of a laser, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Stimulated emission",
+      "prompt": "A photon whose energy is exactly the difference of the levels of the atom hits an excited atom, and stimulated emission takes place. Which statement is true?",
+      "choices": [
+        {
+          "text": "Two photons leave the atom with the same energy, the same direction and the same phase.",
+          "correct": true,
+          "feedback": "Correct. The incoming photon continues on its way, and the atom emits an identical photon beside it. That is why laser light is amplified and is coherent."
+        },
+        {
+          "text": "The atom absorbs the incoming photon and then emits two new photons.",
+          "feedback": "The incoming photon is not absorbed. The atom loses only the energy $E_2 - E_1$, and that is enough for one new photon; one of the leaving photons is the incoming photon."
+        },
+        {
+          "text": "One photon leaves the atom with twice the energy compared with the incoming one.",
+          "feedback": "Energy is conserved: the atom gives up only the difference of the levels $E_2 - E_1$. Two photons leave, and the energy of each is $E_2 - E_1$."
+        },
+        {
+          "text": "The new photon leaves in a random direction, as in spontaneous emission.",
+          "feedback": "In spontaneous emission the direction is random, but a stimulated photon travels in the direction of the incoming photon. That is exactly why only light along the axis is amplified between the mirrors."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. The wavelength of laser light",
+      "prompt": "The energy of the upper laser level of an imaginary laser medium is $-3.12\\,\\text{eV}$ and that of the lower level $-5.45\\,\\text{eV}$. Calculate the wavelength of the laser light. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. Give the answer in nanometres.",
+      "answer": 532,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "hints": [
+        "The energy of a laser photon is the difference of the levels $E_2 - E_1$, not the energy of either level.",
+        "$E_2 - E_1 = -3.12\\,\\text{eV} - (-5.45\\,\\text{eV}) = 2.33\\,\\text{eV}$.",
+        "$\\lambda = \\dfrac{hc}{E_2 - E_1} = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2.33 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 397,
+          "feedback": "You used the magnitude of the energy of the upper level, $3.12\\,\\text{eV}$, as the energy of the photon. The energy of the photon is the difference of the levels, $2.33\\,\\text{eV}$."
+        },
+        {
+          "value": 228,
+          "feedback": "You used the magnitude of the energy of the lower level, $5.45\\,\\text{eV}$, as the energy of the photon. The energy of the photon is the difference of the levels, $2.33\\,\\text{eV}$."
+        }
+      ],
+      "solution": "**Given:** energy of the upper laser level $E_2 = -3.12\\,\\text{eV}$, of the lower $E_1 = -5.45\\,\\text{eV}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Asked:** the wavelength of the laser light $\\lambda$ in nanometres\n\n**Principle:** All the photons of a laser are produced in the transition from the upper laser level to the lower. Energy is conserved, so the energy of each photon is the difference of the levels, $\\tfrac{hc}{\\lambda} = E_2 - E_1$.\n\n**Formula:** $\\dfrac{hc}{\\lambda} = E_2 - E_1$, from which\n\n$$\\lambda = \\frac{hc}{E_2 - E_1}$$\n\n**Conversions:** $E_2 - E_1 = -3.12\\,\\text{eV} + 5.45\\,\\text{eV} = 2.33\\,\\text{eV} = 2.33 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 3.7327 \\cdot 10^{-19}\\,\\text{J}$; finally $1\\,\\text{m} = 10^{9}\\,\\text{nm}$.\n\n**Substitution:** $hc = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2.998 \\cdot 10^{8}\\,\\text{m/s} = 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$. $\\lambda = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{3.7327 \\cdot 10^{-19}\\,\\text{J}} = 5.3219 \\cdot 10^{-7}\\,\\text{m} = 532.19\\,\\text{nm}$\n\n**Answer:** $532\\,\\text{nm}$, three significant figures like the energy difference $2.33\\,\\text{eV}$.\n\n**Reasonableness:** The photon energy $2.33\\,\\text{eV}$ is within the photon energies of visible light, $1.7$–$3.3\\,\\text{eV}$, and $532\\,\\text{nm}$ is green light, the wavelength of green laser pointers. The points of the graph, $405\\,\\text{nm}$ ($3.06\\,\\text{eV}$) and $650\\,\\text{nm}$ ($1.91\\,\\text{eV}$), bracket the result sensibly.",
+      "practice": "Practise calculating the energy and the wavelength of a photon in the tasks of level 1."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. The colour of a quantum dot",
+      "prompt": "Two quantum dots are made of the same material, but one glows blue and the other red. Explain in three or four sentences what causes the difference and which of the dots is smaller.",
+      "model": "In a quantum dot, the electrons are confined in a space a few nanometres in size. In the same way as the standing waves of a shorter string are higher, in a smaller dot the allowed energies of an electron are farther apart and the energy gap is larger. The energy of the photon emitted by the dot equals the energy gap, and the energy of a photon of blue light is greater than that of red light. So the dot that glows blue is smaller.",
+      "criteria": [
+        "I said that the electrons are confined in a space of nanometre size, so their energies depend on the size.",
+        "I justified that in a smaller dot the energy gap and the photon energy are larger.",
+        "I concluded that the blue dot is smaller, because the energy of a photon of blue light is greater than that of red light."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and open the answer only then."
+    }
+  ]
+}

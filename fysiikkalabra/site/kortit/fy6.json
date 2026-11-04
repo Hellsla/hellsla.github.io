@@ -1,0 +1,211 @@
+{
+ "moduuli": "FY6",
+ "nimi": "Sähkö",
+ "kesken": true,
+ "aiheet": [
+  {
+   "id": "fy6-varaus-ja-kentta",
+   "nimi": "Varaus ja kenttä"
+  },
+  {
+   "id": "fy6-virtapiirit",
+   "nimi": "Virtapiirit"
+  },
+  {
+   "id": "fy6-sahkoenergia-ja-komponentit",
+   "nimi": "Sähköenergia ja komponentit"
+  }
+ ],
+ "kortit": [
+  {
+   "id": "fy6-sahkovaraus",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-varaus-ja-kentta",
+   "kasite": "Sähkövaraus",
+   "maaritelma": "Aineen ominaisuus, joka aiheuttaa sähköisen vuorovaikutuksen; yksikkö coulombi."
+  },
+  {
+   "id": "fy6-alkeisvaraus",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-varaus-ja-kentta",
+   "kasite": "Alkeisvaraus",
+   "maaritelma": "Pienin vapaana esiintyvä varaus.",
+   "kaava": "e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}",
+   "kaava_puhe": "e on 1,602 kertaa 10 potenssiin miinus 19 coulombia"
+  },
+  {
+   "id": "fy6-coulombin-laki",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-varaus-ja-kentta",
+   "kasite": "Coulombin laki",
+   "maaritelma": "Kahden pistevarauksen välinen voima.",
+   "kaava": "F = k\\dfrac{q_1 q_2}{r^2}",
+   "kaava_puhe": "F on k kertaa q yksi q kaksi jaettuna r toiseen"
+  },
+  {
+   "id": "fy6-sahkokentta",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-varaus-ja-kentta",
+   "kasite": "Sähkökenttä",
+   "maaritelma": "Varauksen ympäristö, jossa toiseen varaukseen kohdistuu voima.",
+   "kaava": "E = \\dfrac{F}{q}",
+   "kaava_puhe": "E on F jaettuna q:lla"
+  },
+  {
+   "id": "fy6-jannite",
+   "moduuli": "FY6",
+   "luku": "fy6-1",
+   "aihe": "fy6-varaus-ja-kentta",
+   "kasite": "Jännite",
+   "maaritelma": "Kahden pisteen välinen sähköinen potentiaaliero.",
+   "kaava": "U = \\dfrac{W}{q}",
+   "kaava_puhe": "U on W jaettuna q:lla"
+  },
+  {
+   "id": "fy6-varauksen-sailymislaki",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-varaus-ja-kentta",
+   "kasite": "Varauksen säilymislaki",
+   "maaritelma": "Suljetun systeemin kokonaisvaraus pysyy vakiona."
+  },
+  {
+   "id": "fy6-sahkovirta",
+   "moduuli": "FY6",
+   "luku": "fy6-1",
+   "aihe": "fy6-virtapiirit",
+   "kasite": "Sähkövirta",
+   "maaritelma": "Varauksen kulkeutuminen aikayksikköä kohti.",
+   "kaava": "I = \\dfrac{Q}{t}",
+   "kaava_puhe": "I on Q jaettuna t:llä"
+  },
+  {
+   "id": "fy6-resistanssi",
+   "moduuli": "FY6",
+   "luku": "fy6-3",
+   "aihe": "fy6-virtapiirit",
+   "kasite": "Resistanssi",
+   "maaritelma": "Komponentin kyky vastustaa sähkövirtaa.",
+   "kaava": "R = \\dfrac{U}{I}",
+   "kaava_puhe": "R on U jaettuna I:llä"
+  },
+  {
+   "id": "fy6-ohmin-laki",
+   "moduuli": "FY6",
+   "luku": "fy6-3",
+   "aihe": "fy6-virtapiirit",
+   "kasite": "Ohmin laki",
+   "maaritelma": "Virta on suoraan verrannollinen jännitteeseen, kun resistanssi on vakio."
+  },
+  {
+   "id": "fy6-resistiivisyys",
+   "moduuli": "FY6",
+   "luku": "fy6-3",
+   "aihe": "fy6-virtapiirit",
+   "kasite": "Resistiivisyys",
+   "maaritelma": "Aineelle ominainen suure, joka kertoo sen sähkönjohtavuudesta."
+  },
+  {
+   "id": "fy6-sarjaankytkenta",
+   "moduuli": "FY6",
+   "luku": "fy6-4",
+   "aihe": "fy6-virtapiirit",
+   "kasite": "Sarjaankytkentä",
+   "maaritelma": "Kytkentä, jossa virta on sama ja jännitteet summautuvat.",
+   "kaava": "R = R_1 + R_2",
+   "kaava_puhe": "R on R yksi plus R kaksi"
+  },
+  {
+   "id": "fy6-rinnankytkenta",
+   "moduuli": "FY6",
+   "luku": "fy6-4",
+   "aihe": "fy6-virtapiirit",
+   "kasite": "Rinnankytkentä",
+   "maaritelma": "Kytkentä, jossa jännite on sama ja virrat summautuvat.",
+   "kaava": "\\dfrac{1}{R} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}",
+   "kaava_puhe": "yksi per R on yksi per R yksi plus yksi per R kaksi"
+  },
+  {
+   "id": "fy6-kirchhoffin-virtalaki",
+   "moduuli": "FY6",
+   "luku": "fy6-5",
+   "aihe": "fy6-virtapiirit",
+   "kasite": "Kirchhoffin virtalaki",
+   "maaritelma": "Solmuun tulevien virtojen summa on yhtä suuri kuin siitä lähtevien."
+  },
+  {
+   "id": "fy6-kirchhoffin-jannitelaki",
+   "moduuli": "FY6",
+   "luku": "fy6-5",
+   "aihe": "fy6-virtapiirit",
+   "kasite": "Kirchhoffin jännitelaki",
+   "maaritelma": "Suljetun silmukan jännitteiden summa on nolla."
+  },
+  {
+   "id": "fy6-lahdejannite",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-virtapiirit",
+   "kasite": "Lähdejännite",
+   "maaritelma": "Virtalähteen napojen välinen jännite ilman kuormaa."
+  },
+  {
+   "id": "fy6-sahkoteho",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-sahkoenergia-ja-komponentit",
+   "kasite": "Sähköteho",
+   "maaritelma": "Sähkövirran tekemä työ aikayksikössä.",
+   "kaava": "P = UI",
+   "kaava_puhe": "P on U kertaa I"
+  },
+  {
+   "id": "fy6-joulen-laki",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-sahkoenergia-ja-komponentit",
+   "kasite": "Joulen laki",
+   "maaritelma": "Resistanssissa kehittyvä lämpöteho.",
+   "kaava": "P = RI^2",
+   "kaava_puhe": "P on R kertaa I toiseen"
+  },
+  {
+   "id": "fy6-kondensaattori",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-sahkoenergia-ja-komponentit",
+   "kasite": "Kondensaattori",
+   "maaritelma": "Komponentti, joka varastoi energiaa sähkökenttään."
+  },
+  {
+   "id": "fy6-kapasitanssi",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-sahkoenergia-ja-komponentit",
+   "kasite": "Kapasitanssi",
+   "maaritelma": "Kondensaattorin kyky varata varausta jännitettä kohti.",
+   "kaava": "C = \\dfrac{Q}{U}",
+   "kaava_puhe": "C on Q jaettuna U:lla"
+  },
+  {
+   "id": "fy6-puolijohde",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-sahkoenergia-ja-komponentit",
+   "kasite": "Puolijohde",
+   "maaritelma": "Aine, jonka johtavuus on eristeen ja johteen välillä ja säädettävissä."
+  },
+  {
+   "id": "fy6-diodi",
+   "moduuli": "FY6",
+   "luku": null,
+   "aihe": "fy6-sahkoenergia-ja-komponentit",
+   "kasite": "Diodi",
+   "maaritelma": "Komponentti, joka päästää virran kulkemaan vain toiseen suuntaan."
+  }
+ ]
+}

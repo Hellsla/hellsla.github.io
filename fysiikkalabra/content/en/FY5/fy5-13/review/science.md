@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1bfec28580220a85
+CONTENT-HASH: 705d3af808b796fe
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); opening illustration restyled (no SVG text changed); no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
+- delta review: the only change since my last PASS is the organ-pipe Find-the-error prompt, whose display formula is split with `aligned` into two rows; f_1 = v/(2L) = 340 m/s / (2 * 0.85 m) = 200 Hz is unchanged, still the deliberate error (closed pipe: v/(4L) = 100 Hz).
+- Choices, correct flags and feedback untouched; exactly one correct option remains.

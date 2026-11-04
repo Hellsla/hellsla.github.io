@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 12ab68f96df1b29d
+CONTENT-HASH: 0f6af944a640a38a
 
 ## Blocking
 (none)
 
 ## Polish
-- valosähköinen ilmiö: the lesson's central result is that only light of high enough frequency frees electrons; "kun valon taajuus on riittävän suuri" would carry it into the key concept. As written it matches the lesson's own naming sentence.
+(none)
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: valosähköinen ilmiö, fotoni (whole energy to one electron), irrotustyö (smallest energy, depends on the metal), Planckin vakio (E = hf) and elektronivoltti (1 V) agree with the lesson.
+- lesson fi-easy: hc derivation recomputed: 6.626e-34 x 2.998e8 = 1.986e-25 J m; /1.602e-19 = 1.240e-6 eV m = 1240 eV nm. Correct; the split changes layout only.
+- git diff HEAD~1: nothing else changed.
