@@ -11,8 +11,16 @@
     "fy7-6",
     "fy7-12"
   ],
-  "glossary": [],
-  "sim": false,
+  "glossary": [
+    "langaton lataus",
+    "induktioliesi",
+    "vaimennus",
+    "pyörrevirta",
+    "kokonaisheijastuminen",
+    "valokuitu",
+    "desibeli"
+  ],
+  "sim": true,
   "solutions": "all",
   "image": false
 }

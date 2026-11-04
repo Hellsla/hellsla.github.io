@@ -1,0 +1,474 @@
+{
+  "version": 1,
+  "contribution": "Valo osoitetaan aaltoliikkeeksi interferenssin ja diffraktion avulla: koherentti valo, rako ja kaksoisrako kvalitatiivisesti ja hilayhtälö $d\\sin\\theta = k\\lambda$ määrällisesti. Simulaatiolla opiskelija havaitsee, että tiheämpi hila ja pidempi aallonpituus suurentavat kulmaa ja että $d\\sin\\theta_1$ on aallonpituus; laserin aallonpituuden mittaus hilalla epävarmuuksineen ja CD- ja DVD-levy heijastushilana.",
+  "learn": [
+    "selittämään, miten valon interferenssi ja diffraktio syntyvät raoissa ja hilassa.",
+    "laskemaan hilayhtälöllä maksimien suunnat, hilavakion ja valon aallonpituuden.",
+    "määrittämään laserin aallonpituuden hilan ja varjostimelta mitattujen etäisyyksien avulla."
+  ],
+  "prior": [
+    "Kahden samassa vaiheessa värähtelevän lähteen aallot vahvistavat toisiaan, kun matkaero on kokonainen määrä aallonpituuksia (luku *Aaltojen interferenssi*)",
+    "Valo on sähkömagneettista aaltoliikettä, ja näkyvän valon aallonpituus on $400$–$700\\,\\text{nm}$ (luku *Sähkömagneettinen säteily ja mustan kappaleen spektri*)",
+    "Prismassa violetti valo taittuu eniten, koska lasin taitekerroin on sille suurin (luku *Dispersio: prisma ja sateenkaari*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Fysiikan tunnilla opettaja sammuttaa valot ja ohjaa punaisen laserosoittimen säteen diakehyksen läpi. Kehyksessä on ohut läpinäkyvä kalvo, joka näyttää aivan tavalliselta muovilta. Seinälle ei ilmestykään yksi valopiste, vaan vaakasuora rivi tasavälisiä punaisia pisteitä.",
+      "question": "Miten yksi suora valonsäde voi jakautua moneen suuntaan, ja mikä määrää pisteiden paikat?"
+    },
+    {
+      "id": "kertaus-interferenssi",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: interferenssi",
+      "prompt": "Kaksi samassa vaiheessa värähtelevää, saman taajuuden lähdettä lähettää aaltoja. Pisteeseen P on toisesta lähteestä $1{,}5$ aallonpituutta pidempi matka kuin toisesta. Mitä pisteessä P tapahtuu?",
+      "choices": [
+        {
+          "text": "Aallot vahvistavat toisiaan, koska matkaero on suurempi kuin yksi aallonpituus.",
+          "feedback": "Vahvistavaan interferenssiin tarvitaan matkaero, joka on kokonainen määrä aallonpituuksia: $0$, $\\lambda$, $2\\lambda$ ja niin edelleen. Matkaero $1{,}5\\lambda$ on puolikkaan yli, joten aallot saapuvat vastakkaisissa vaiheissa ja heikentävät toisiaan."
+        },
+        {
+          "text": "Mitään erityistä ei tapahdu, koska interferenssi syntyy vain, kun matkat ovat yhtä pitkät.",
+          "feedback": "Interferenssi syntyy kaikkialla, missä aallot ovat päällekkäin. Matkaero ratkaisee, vahvistavatko vai heikentävätkö aallot toisiaan. Matkaerolla $1{,}5\\lambda$ ne heikentävät toisiaan."
+        },
+        {
+          "text": "Aallot heikentävät toisiaan, koska ne saapuvat vastakkaisissa vaiheissa.",
+          "correct": true,
+          "feedback": "Oikein. Matkaero $1{,}5\\lambda$ on puoli aallonpituutta yli kokonaisen määrän, joten toisen aallon harja kohtaa toisen aallon pohjan (luku *Aaltojen interferenssi*). Tänään sama ehto selittää valon kirkkaat ja tummat kohdat."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-tiheys",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: tiheämpi hila",
+      "prompt": "Punaisen laserin säde kulkee hilan läpi varjostimelle. Hila vaihdetaan tiheämpään: viivoja on millimetrillä $300$:n sijaan $600$. Varjostin ja laser pysyvät paikallaan. Miten keskimaksimin viereiset valopisteet $k = \\pm 1$ muuttuvat?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Ne pysyvät paikallaan, mutta niitä tulee enemmän, koska rakoja on enemmän.",
+          "feedback": "Mallin arvot kumoavat tämän: piste siirtyy $19{,}9\\,\\text{cm}$:stä $42{,}4\\,\\text{cm}$:iin. Maksimien suunnat riippuvat rakojen välistä $d$, eivät rakojen määrästä. Itse asiassa maksimeja syntyy tiheämmällä hilalla vähemmän: $600$ viivan hilalla vain $k = 0, \\pm 1, \\pm 2$."
+        },
+        {
+          "text": "Ne siirtyvät kauemmas keskimaksimista.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: kun $L = 1{,}00\\,\\text{m}$, piste on $300$ viivan hilalla $19{,}9\\,\\text{cm}$:n ja $600$ viivan hilalla $42{,}4\\,\\text{cm}$:n päässä keskimaksimista. Tiheämmässä hilassa rakojen väli $d$ on pienempi, joten saman matkaeron $\\lambda$ saavuttamiseen tarvitaan suurempi kulma."
+        },
+        {
+          "text": "Ne siirtyvät lähemmäs keskimaksimia.",
+          "feedback": "Mallin arvot kumoavat tämän: $300$ viivan hilalla piste on $19{,}9\\,\\text{cm}$:n ja $600$ viivan hilalla $42{,}4\\,\\text{cm}$:n päässä keskimaksimista. Kun rakojen väli $d$ pienenee, matkaero $d\\sin\\theta$ kasvaa hitaammin kulman mukana, joten maksimi on suuremmassa kulmassa."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-vari",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: valon väri",
+      "prompt": "Samaan hilaan, jossa on $600$ viivaa millimetrillä, ohjataan vuorotellen sinisen ($450\\,\\text{nm}$), vihreän ($532\\,\\text{nm}$) ja punaisen ($650\\,\\text{nm}$) laserin valo. Minkä värin ensimmäisen kertaluvun maksimi on suurimmassa kulmassa?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Sinisen, koska sininen valo taipuu prismassakin eniten.",
+          "feedback": "Mallin arvot kumoavat tämän: sinisen maksimi on $15{,}66^\\circ$:n ja punaisen $22{,}95^\\circ$:n kulmassa. Prismassa sininen taittuu eniten, koska lasin taitekerroin on sille suurin. Hilassa kulman määrää matkaero: pidempi aallonpituus vaatii suuremman matkaeron ja siksi suuremman kulman."
+        },
+        {
+          "text": "Punaisen, koska sen aallonpituus on pisin.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: kulmat ovat $15{,}66^\\circ$ ($450\\,\\text{nm}$), $18{,}61^\\circ$ ($532\\,\\text{nm}$) ja $22{,}95^\\circ$ ($650\\,\\text{nm}$). Maksimissa matkaero $d\\sin\\theta$ on yksi aallonpituus, joten pidempi aallonpituus tarvitsee suuremman kulman. Järjestys on päinvastainen kuin prismassa."
+        },
+        {
+          "text": "Kaikkien yhtä suuressa, koska hila on sama.",
+          "feedback": "Mallin arvot kumoavat tämän: kulmat ovat $15{,}66^\\circ$, $18{,}61^\\circ$ ja $22{,}95^\\circ$. Sama hila antaa saman rakojen välin $d$, mutta maksimin matkaeron on oltava juuri yksi aallonpituus, joten kulma riippuu aallonpituudesta."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Laserin säde kulkee hilan läpi varjostimelle. Muuta hilan viivatiheyttä, valon aallonpituutta ja varjostimen etäisyyttä ja seuraa, mihin valopisteet osuvat.",
+      "howto": "Säädä hilan viivatiheyttä $N$ eli viivojen määrää millimetrillä, laserin aallonpituutta $\\lambda$ ja varjostimen etäisyyttä $L$ hilasta. Kuva on ylhäältä: laser on vasemmalla, hila sen edessä ja varjostin oikealla. Varjostimen asteikko näyttää etäisyyden $x$ keskimaksimista senttimetreinä. Kaari näyttää ensimmäisen kertaluvun kulman $\\theta_1$ säteen suunnasta. Himmeä säde, joka ei osu varjostimeen, on maksimi, joka menee varjostimen reunan ohi. Lukemista näet hilavakion $d$, kahden ensimmäisen kertaluvun kulmat ja etäisyydet sekä maksimien määrän.",
+      "model": "Laserin säde tulee kohtisuoraan hilaan, ja varjostin on kohtisuorassa säteeseen nähden. Valo on yhtä aallonpituutta. Kuva on mittakaavassa: varjostin on $1{,}80\\,\\text{m}$ leveä. Malli laskee vain maksimien suunnat. Korkeampien kertalukujen pisteiden himmeneminen on vain havainnollistus, ei laskettu arvo, eikä mallissa näy rakojen leveyden vaikutusta. Lukemat ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Hilavakio lasketaan viivatiheydestä:\n\n$$d = \\frac{1\\,\\text{mm}}{N}$$\n\nKertaluvun $k$ maksimi on suunnassa, jolle $d\\sin\\theta = k\\lambda$. Maksimi syntyy vain, kun $k\\lambda < d$, joten maksimeja on $2k_\\text{max} + 1$, missä $k_\\text{max}$ on suurin tämän ehdon täyttävä kokonaisluku. Varjostimella maksimin etäisyys keskimaksimista on $x = L\\tan\\theta$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: hilan viivatiheys",
+      "intro": "Testaa ennuste 1. Aallonpituus on $650\\,\\text{nm}$ ja varjostimen etäisyys $1{,}00\\,\\text{m}$; muuta vain viivatiheyttä $N$. Kirjaa ainakin arvot $300$, $600$ ja $1000$. Seuraa kulmaa $\\theta_1$ ja etäisyyttä $x_1$.",
+      "initial": {
+        "N": 300,
+        "lambda": 650,
+        "L": 1.0
+      },
+      "locked": [
+        "lambda",
+        "L"
+      ],
+      "vary": "N",
+      "names": {
+        "N": "viivatiheys N",
+        "lambda": "aallonpituus λ",
+        "L": "varjostimen etäisyys L"
+      },
+      "units": {
+        "N": "1/mm",
+        "lambda": "nm",
+        "L": "m"
+      },
+      "measure": [
+        {
+          "key": "theta1",
+          "label": "θ_1 (°)"
+        },
+        {
+          "key": "x1",
+          "label": "x_1 (cm)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske rivin $N = 600$ lukemista vierekkäisten rakojen matkaero $\\Delta s = d\\sin\\theta_1$, kun hilavakio on $d = 1\\,\\text{mm} : 600$. Vastaa nanometreinä ja vertaa tulosta laserin aallonpituuteen.",
+        "answer": 650,
+        "unit": "nm",
+        "tolerance": 0.02,
+        "hints": [
+          "Hilavakio on $d = 1\\,\\text{mm} : 600$. Kuinka paljon se on nanometreinä?",
+          "$1\\,\\text{mm} = 1\\,000\\,000\\,\\text{nm}$, joten $d = 1\\,000\\,000\\,\\text{nm} : 600 = 1667\\,\\text{nm}$.",
+          "Kerro hilavakio taulukon kulman sinillä: $1667\\,\\text{nm} \\cdot \\sin 22{,}95^\\circ$."
+        ],
+        "mistakes": [
+          {
+            "value": 705.9,
+            "feedback": "Käytit tangenttia. Matkaero saadaan rakojen välisestä suorakulmaisesta kolmiosta, jossa $d$ on hypotenuusa, joten $\\Delta s = d\\sin\\theta_1$."
+          }
+        ],
+        "solution": "**Annettu:** viivatiheys $N = 600$ viivaa millimetrillä, simulaation lukema $\\theta_1 = 22{,}95^\\circ$, laserin aallonpituus $\\lambda = 650\\,\\text{nm}$\n\n**Kysytty:** vierekkäisten rakojen matkaero $\\Delta s$ ensimmäisen kertaluvun maksimin suunnassa nanometreinä\n\n**Periaate:** Kun valo tulee kohtisuoraan hilaan, kulmassa $\\theta$ lähtevien säteiden matkaero vierekkäisistä raoista on $d\\sin\\theta$. Ensimmäisen kertaluvun maksimissa aaltojen pitäisi saapua samassa vaiheessa, joten matkaeron pitäisi olla yksi aallonpituus.\n\n**Kaava:** $d = \\dfrac{1\\,\\text{mm}}{N}$ ja $\\Delta s = d\\sin\\theta_1$\n\n**Muunnokset:** $1\\,\\text{mm} = 1\\,000\\,000\\,\\text{nm}$, joten $d = 1\\,000\\,000\\,\\text{nm} : 600 = 1666{,}7\\,\\text{nm}$.\n\n**Sijoitus:** $\\Delta s = 1666{,}7\\,\\text{nm} \\cdot \\sin 22{,}95^\\circ = 1666{,}7\\,\\text{nm} \\cdot 0{,}3900 = 650\\,\\text{nm}$\n\n**Vastaus:** $650\\,\\text{nm}$, kolme merkitsevää numeroa kuten aallonpituus; matkaero on täsmälleen laserin aallonpituus.\n\n**Järkevyys:** Muilla riveillä tulee sama: $3333\\,\\text{nm} \\cdot \\sin 11{,}24^\\circ = 650\\,\\text{nm}$ ja $1000\\,\\text{nm} \\cdot \\sin 40{,}54^\\circ = 650\\,\\text{nm}$. Tiheämmässä hilassa $d$ on pienempi, joten $\\sin\\theta_1$:n on oltava suurempi, jotta tulo pysyy aallonpituuden suuruisena."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: aallonpituus",
+      "intro": "Testaa ennuste 2. Hilassa on $600$ viivaa millimetrillä, ja varjostimen etäisyys on $1{,}00\\,\\text{m}$; muuta vain aallonpituutta $\\lambda$. Kirjaa ainakin sininen $450\\,\\text{nm}$, vihreä $532\\,\\text{nm}$ ja punainen $650\\,\\text{nm}$.",
+      "initial": {
+        "N": 600,
+        "lambda": 450,
+        "L": 1.0
+      },
+      "locked": [
+        "N",
+        "L"
+      ],
+      "vary": "lambda",
+      "names": {
+        "N": "viivatiheys N",
+        "lambda": "aallonpituus λ",
+        "L": "varjostimen etäisyys L"
+      },
+      "units": {
+        "N": "1/mm",
+        "lambda": "nm",
+        "L": "m"
+      },
+      "measure": [
+        {
+          "key": "theta1",
+          "label": "θ_1 (°)"
+        },
+        {
+          "key": "x1",
+          "label": "x_1 (cm)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske hilayhtälöstä, kuinka suuressa kulmassa vihreän valon ($532\\,\\text{nm}$) ensimmäisen kertaluvun maksimi on, kun hilassa on $600$ viivaa millimetrillä. Vertaa tulosta simulaation lukemaan.",
+        "answer": 18.6146,
+        "unit": "°",
+        "tolerance": 0.02,
+        "hints": [
+          "Laske ensin hilavakio $d = 1\\,\\text{mm} : 600$ metreinä.",
+          "Hilayhtälöstä $\\sin\\theta_1 = \\lambda : d$, kun $k = 1$.",
+          "$\\sin\\theta_1 = 532 \\cdot 10^{-9}\\,\\text{m} : (1{,}667 \\cdot 10^{-6}\\,\\text{m}) = 0{,}3192$. Ota tuloksesta käänteinen sini."
+        ],
+        "mistakes": [
+          {
+            "value": 17.7031,
+            "feedback": "Käytit käänteistä tangenttia. Hilayhtälössä on kulman sini: $\\sin\\theta_1 = \\lambda : d$."
+          },
+          {
+            "value": 0.3192,
+            "feedback": "Tämä on kulman sini. Laske kulma käänteisellä sinillä: $\\theta_1 = \\sin^{-1} 0{,}3192$."
+          }
+        ],
+        "solution": "**Annettu:** viivatiheys $N = 600$ viivaa millimetrillä, aallonpituus $\\lambda = 532\\,\\text{nm}$, kertaluku $k = 1$\n\n**Kysytty:** ensimmäisen kertaluvun maksimin kulma $\\theta_1$ keskimaksimin suunnasta asteina\n\n**Periaate:** Valo tulee kohtisuoraan hilaan, joten maksimi on suunnassa, jossa vierekkäisten rakojen matkaero $d\\sin\\theta$ on kokonainen määrä aallonpituuksia. Ensimmäisessä kertaluvussa matkaero on yksi aallonpituus.\n\n**Kaava:** $d = \\dfrac{1\\,\\text{mm}}{N}$ ja $d\\sin\\theta_1 = k\\lambda$, josta $\\theta_1 = \\sin^{-1}\\dfrac{k\\lambda}{d}$\n\n**Muunnokset:** $d = 1 \\cdot 10^{-3}\\,\\text{m} : 600 = 1{,}667 \\cdot 10^{-6}\\,\\text{m}$ ja $532\\,\\text{nm} = 532 \\cdot 10^{-9}\\,\\text{m}$.\n\n**Sijoitus:** $\\theta_1 = \\sin^{-1}\\dfrac{1 \\cdot 532 \\cdot 10^{-9}\\,\\text{m}}{1{,}667 \\cdot 10^{-6}\\,\\text{m}} = \\sin^{-1} 0{,}3192 = 18{,}61^\\circ$\n\n**Vastaus:** $18{,}6^\\circ$, kolme merkitsevää numeroa kuten aallonpituus $532\\,\\text{nm}$; sama kuin simulaation lukema $18{,}61^\\circ$.\n\n**Järkevyys:** Vihreän aallonpituus on sinisen $450\\,\\text{nm}$ ja punaisen $650\\,\\text{nm}$ välissä, ja niin on kulmakin: $15{,}66^\\circ < 18{,}61^\\circ < 22{,}95^\\circ$. Tarkistus: $1{,}667\\,\\mu\\text{m} \\cdot \\sin 18{,}61^\\circ = 0{,}532\\,\\mu\\text{m}$."
+      }
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Lisäkoe: varjostimen etäisyys",
+      "intro": "Hilassa on $300$ viivaa millimetrillä, ja aallonpituus on $650\\,\\text{nm}$; muuta vain varjostimen etäisyyttä $L$. Kirjaa ainakin arvot $0{,}50\\,\\text{m}$, $1{,}00\\,\\text{m}$ ja $2{,}00\\,\\text{m}$. Muuttuuko kulma $\\theta_1$, ja miten etäisyys $x_1$ muuttuu?",
+      "initial": {
+        "N": 300,
+        "lambda": 650,
+        "L": 0.5
+      },
+      "locked": [
+        "N",
+        "lambda"
+      ],
+      "vary": "L",
+      "names": {
+        "N": "viivatiheys N",
+        "lambda": "aallonpituus λ",
+        "L": "varjostimen etäisyys L"
+      },
+      "units": {
+        "N": "1/mm",
+        "lambda": "nm",
+        "L": "m"
+      },
+      "measure": [
+        {
+          "key": "theta1",
+          "label": "θ_1 (°)"
+        },
+        {
+          "key": "x1",
+          "label": "x_1 (cm)"
+        },
+        {
+          "key": "x2",
+          "label": "x_2 (cm)"
+        }
+      ],
+      "min": 3,
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä määrää maksimien suunnat",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten hilan viivatiheys ja valon aallonpituus vaikuttavat ensimmäisen kertaluvun maksimin kulmaan? Mikä suure pysyi kokeessa 1 samana, vaikka hila vaihtui?",
+      "model": "Kokeessa 1 tiheämpi hila suurensi kulmaa: $300$ viivan hilalla $\\theta_1 = 11{,}24^\\circ$ ja $x_1 = 19{,}9\\,\\text{cm}$, $600$ viivan hilalla $22{,}95^\\circ$ ja $42{,}4\\,\\text{cm}$ ja $1000$ viivan hilalla $40{,}54^\\circ$ ja $85{,}5\\,\\text{cm}$. Tulo $d\\sin\\theta_1$ oli joka rivillä $650\\,\\text{nm}$ eli laserin aallonpituus: maksimissa vierekkäisten rakojen matkaero on yksi aallonpituus. Kokeessa 2 pidempi aallonpituus suurensi kulmaa: sininen $450\\,\\text{nm}$ $15{,}66^\\circ$, vihreä $532\\,\\text{nm}$ $18{,}61^\\circ$ ja punainen $650\\,\\text{nm}$ $22{,}95^\\circ$. Hilassa punainen valo poikkeaa siis eniten, toisin kuin prismassa. Tulokset sopivat ehtoon $d\\sin\\theta = k\\lambda$. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Kerroin, että tiheämpi hila eli pienempi hilavakio suurentaa maksimin kulmaa, ja käytin taulukon arvoja.",
+        "Kerroin, että pidempi aallonpituus suurentaa kulmaa, joten punainen poikkeaa enemmän kuin sininen.",
+        "Totesin, että tulo $d\\sin\\theta_1$ on sama kuin aallonpituus eli matkaero on yksi aallonpituus."
+      ]
+    },
+    {
+      "id": "mittaus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Mittaus: vihreän laserin aallonpituus",
+      "source": "example",
+      "text": "Opiskelijat mittasivat vihreän laserosoittimen aallonpituuden hilalla. Laser, hila ja varjostin asetettiin riviin niin, että säde osui kohtisuoraan sekä hilaan että varjostimeen. Mittanauhalla mitattiin hilan etäisyys varjostimesta ja symmetristen maksimien välit. Valopisteen keskikohdan arvioiminen oli epävarminta, joten välin mittausepävarmuudeksi arvioitiin $0{,}3\\,\\text{cm}$. Silloin keskimaksimista mitatun etäisyyden $x$ epävarmuus on puolet siitä, $\\Delta x = 0{,}15\\,\\text{cm}$.\n\n| suure | arvo | mittausepävarmuus |\n|---|---|---|\n| hilan viivatiheys $N$ | $300$ viivaa millimetrillä | (valmistajan arvo) |\n| hilan etäisyys varjostimesta $L$ | $1{,}500\\,\\text{m}$ | $\\Delta L = 0{,}005\\,\\text{m}$ |\n| maksimien $+1$ ja $-1$ väli | $48{,}4\\,\\text{cm}$ | $0{,}3\\,\\text{cm}$ |\n| maksimien $+2$ ja $-2$ väli | $101{,}2\\,\\text{cm}$ | $0{,}3\\,\\text{cm}$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske laserin aallonpituus toisen kertaluvun maksimeista. Vastaa nanometreinä. Arvioi ratkaisun lopuksi, kuinka suuri tuloksen epävarmuus on.",
+        "answer": 532.728,
+        "unit": "nm",
+        "tolerance": 0.02,
+        "hints": [
+          "Maksimien $+2$ ja $-2$ väli on kaksi kertaa toisen kertaluvun maksimin etäisyys $x_2$ keskimaksimista.",
+          "Laske ensin kulma yhtälöstä $\\tan\\theta_2 = x_2 : L$ ja sitten aallonpituus hilayhtälöstä, jossa $k = 2$.",
+          "$\\theta_2 = \\tan^{-1}(0{,}506\\,\\text{m} : 1{,}500\\,\\text{m}) = 18{,}64^\\circ$ ja $d = 1 \\cdot 10^{-3}\\,\\text{m} : 300$."
+        ],
+        "mistakes": [
+          {
+            "value": 1065.46,
+            "feedback": "Unohdit kertaluvun. Toisen kertaluvun maksimissa matkaero on kaksi aallonpituutta, joten $\\lambda = d\\sin\\theta_2 : 2$."
+          },
+          {
+            "value": 932.14,
+            "feedback": "Käytit maksimien välin $101{,}2\\,\\text{cm}$ etäisyytenä $x_2$. Etäisyys mitataan keskimaksimista, joten $x_2$ on puolet välistä."
+          },
+          {
+            "value": 562.22,
+            "feedback": "Käytit sinin paikalla suhdetta $x_2 : L$, joka on kulman tangentti. Kulmassa $18{,}6^\\circ$ tangentti on jo selvästi siniä suurempi, joten laske ensin kulma ja vasta sitten sen sini."
+          }
+        ],
+        "solution": "**Annettu:** viivatiheys $N = 300$ viivaa millimetrillä, hilan etäisyys varjostimesta $L = 1{,}500\\,\\text{m}$ ($\\Delta L = 0{,}005\\,\\text{m}$), maksimien $\\pm 2$ väli $101{,}2\\,\\text{cm}$, kertaluku $k = 2$, $\\Delta x = 0{,}15\\,\\text{cm}$\n\n**Kysytty:** laserin valon aallonpituus $\\lambda$ nanometreinä ja sen epävarmuus\n\n**Periaate:** Säde tulee kohtisuoraan hilaan, joten maksimit noudattavat hilayhtälöä. Varjostin on kohtisuorassa säteeseen nähden, joten kulma saadaan suorakulmaisesta kolmiosta, jonka kateetit ovat $x_2$ ja $L$. Kauempi maksimi antaa pienemmän suhteellisen epävarmuuden, koska sen $x$ on suurempi.\n\n**Kaava:** $\\tan\\theta_2 = \\dfrac{x_2}{L}$ ja $d\\sin\\theta_2 = k\\lambda$, josta $\\lambda = \\dfrac{d\\sin\\theta_2}{k}$, missä $d = \\dfrac{1\\,\\text{mm}}{N}$\n\n**Muunnokset:** $d = 1 \\cdot 10^{-3}\\,\\text{m} : 300 = 3{,}333 \\cdot 10^{-6}\\,\\text{m}$ ja $x_2 = 101{,}2\\,\\text{cm} : 2 = 50{,}6\\,\\text{cm} = 50{,}6 \\cdot 0{,}01\\,\\text{m} = 0{,}506\\,\\text{m}$.\n\n**Sijoitus:** $\\theta_2 = \\tan^{-1}\\dfrac{0{,}506\\,\\text{m}}{1{,}500\\,\\text{m}} = 18{,}64^\\circ$, joten $\\lambda = \\dfrac{3{,}333 \\cdot 10^{-6}\\,\\text{m} \\cdot \\sin 18{,}64^\\circ}{2} = 5{,}327 \\cdot 10^{-7}\\,\\text{m} = 533\\,\\text{nm}$. Epävarmuus: suurin arvo saadaan, kun $x_2 = 50{,}75\\,\\text{cm}$ ja $L = 1{,}495\\,\\text{m}$, ja se on $536\\,\\text{nm}$; pienin arvo, kun $x_2 = 50{,}45\\,\\text{cm}$ ja $L = 1{,}505\\,\\text{m}$, on $530\\,\\text{nm}$.\n\n**Vastaus:** $533\\,\\text{nm}$, epävarmuus noin $3\\,\\text{nm}$; kolme merkitsevää numeroa, koska epävarmuus on muutaman nanometrin luokkaa.\n\n**Järkevyys:** Vihreän laserosoittimen ilmoitettu aallonpituus $532\\,\\text{nm}$ on välillä $530$–$536\\,\\text{nm}$. Ensimmäisen kertaluvun maksimeista ($x_1 = 24{,}2\\,\\text{cm}$) samalla tavalla saadaan $531\\,\\text{nm}$ ja väli $526$–$536\\,\\text{nm}$ eli epävarmuus noin $5\\,\\text{nm}$: kauempi maksimi todella antaa tarkemman tuloksen."
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi teoriaan ja kokeiden mallin arvoihin. Palaa sitten alun kysymykseen: miksi läpinäkyvän kalvon läpi kulkenut laserin säde piirsi seinälle rivin pisteitä, ja mikä määräsi pisteiden välit?",
+      "predictions": [
+        "ennuste-tiheys",
+        "ennuste-vari"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee punaisen laserin ($650\\,\\text{nm}$) ensimmäisen kertaluvun maksimin kulman hilalle, jossa on $600$ viivaa millimetrillä: ”$d = 1\\,\\text{mm} : 600 = 1{,}67 \\cdot 10^{-3}\\,\\text{m}$, joten $\\sin\\theta = 650 \\cdot 10^{-9}\\,\\text{m} : (1{,}67 \\cdot 10^{-3}\\,\\text{m}) = 3{,}9 \\cdot 10^{-4}$ ja $\\theta = 0{,}022^\\circ$. Maksimit ovat siis lähes päällekkäin.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Kulma pitää laskea tangentista, koska maksimin paikka mitataan varjostimelta.",
+          "feedback": "Hilayhtälössä on kulman sini, $d\\sin\\theta = k\\lambda$; tangentti tarvitaan vasta, kun kulma lasketaan varjostimen etäisyyksistä. Virhe on hilavakiossa: $1\\,\\text{mm} : 600 = 1{,}667 \\cdot 10^{-6}\\,\\text{m}$, joten $\\theta = 22{,}95^\\circ$."
+        },
+        {
+          "text": "Hilavakio pitää laskea kertomalla: $d = 600 \\cdot 1\\,\\text{mm}$.",
+          "feedback": "Hilavakio on vierekkäisten viivojen etäisyys. Kun millimetrille mahtuu $600$ viivaa, väli on millimetrin kuudessadasosa. Virhe on muunnoksessa: $1\\,\\text{mm} : 600 = 1{,}667 \\cdot 10^{-6}\\,\\text{m}$."
+        },
+        {
+          "text": "Hilavakio on väärin: $1\\,\\text{mm} : 600$ on $1{,}67 \\cdot 10^{-6}\\,\\text{m}$, ei $1{,}67 \\cdot 10^{-3}\\,\\text{m}$.",
+          "correct": true,
+          "feedback": "Oikein. $1\\,\\text{mm} = 1 \\cdot 10^{-3}\\,\\text{m}$, joten $d = 1 \\cdot 10^{-3}\\,\\text{m} : 600 = 1{,}667 \\cdot 10^{-6}\\,\\text{m}$. Silloin $\\sin\\theta = 0{,}390$ ja $\\theta = 22{,}95^\\circ$, mikä sopii koulun hilaan. Kulma $0{,}022^\\circ$ olisi liian pieni näkyäkseen."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen: DVD-levy heijastushilana",
+      "prompt": "DVD-levyn tietoraidan vierekkäisten kierrosten etäisyys on $0{,}74\\,\\mu\\text{m}$ (standardi ECMA-267, 2001). Punaisen laserin säde, jonka aallonpituus on $650\\,\\text{nm}$, osuu kohtisuoraan levyn pintaan. Oletetaan, että levy toimii heijastushilana, jonka hilavakio on raitojen etäisyys. Kuinka suuressa kulmassa tulevaan säteeseen nähden ensimmäisen kertaluvun maksimi heijastuu?",
+      "answer": 61.4474,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "Heijastushilassa maksimien suunnat noudattavat samaa hilayhtälöä kuin läpäisyhilassa. Mikä on hilavakio?",
+        "Hilavakio on $d = 0{,}74\\,\\mu\\text{m}$, ja ensimmäisessä kertaluvussa $\\sin\\theta = \\lambda : d$.",
+        "$\\sin\\theta = 650 \\cdot 10^{-9}\\,\\text{m} : (0{,}74 \\cdot 10^{-6}\\,\\text{m}) = 0{,}878$. Ota tuloksesta käänteinen sini."
+      ],
+      "mistakes": [
+        {
+          "value": 23.9695,
+          "feedback": "Käytit CD-levyn raitaväliä $1{,}6\\,\\mu\\text{m}$. DVD-levyn raidat ovat tiheämmässä, $0{,}74\\,\\mu\\text{m}$:n välein, joten kulma on paljon suurempi."
+        },
+        {
+          "value": 41.2954,
+          "feedback": "Käytit käänteistä tangenttia. Hilayhtälössä on kulman sini: $\\sin\\theta = \\lambda : d$."
+        }
+      ],
+      "solution": "**Annettu:** raitojen etäisyys $d = 0{,}74\\,\\mu\\text{m}$ (ECMA-267, 2001), aallonpituus $\\lambda = 650\\,\\text{nm}$, kertaluku $k = 1$, valo kohtisuoraan levyyn\n\n**Kysytty:** ensimmäisen kertaluvun maksimin kulma $\\theta$ tulevaan säteeseen nähden asteina\n\n**Periaate:** Tasavälisistä raidoista heijastuneet aallot interferoivat samoin kuin hilan raoista tulleet. Kun valo tulee kohtisuoraan, vierekkäisistä raidoista kulmassa $\\theta$ heijastuneiden aaltojen matkaero on $d\\sin\\theta$, ja maksimi syntyy, kun se on kokonainen määrä aallonpituuksia.\n\n**Kaava:** $d\\sin\\theta = k\\lambda$, josta $\\theta = \\sin^{-1}\\dfrac{k\\lambda}{d}$\n\n**Muunnokset:** $650\\,\\text{nm} = 650 \\cdot 10^{-9}\\,\\text{m}$ ja $0{,}74\\,\\mu\\text{m} = 0{,}74 \\cdot 10^{-6}\\,\\text{m}$.\n\n**Sijoitus:** $\\theta = \\sin^{-1}\\dfrac{1 \\cdot 650 \\cdot 10^{-9}\\,\\text{m}}{0{,}74 \\cdot 10^{-6}\\,\\text{m}} = \\sin^{-1} 0{,}8784 = 61{,}45^\\circ$\n\n**Vastaus:** $61^\\circ$, kaksi merkitsevää numeroa kuten raitaväli $0{,}74\\,\\mu\\text{m}$.\n\n**Järkevyys:** Aallonpituus on lähes raitavälin suuruinen, joten kulman on oltava suuri. CD-levyllä ($1{,}6\\,\\mu\\text{m}$) sama maksimi olisi vain $24^\\circ$:n kulmassa. Toista kertalukua DVD-levyltä ei synny, koska $\\sin\\theta = 2 \\cdot 0{,}650 : 0{,}74 = 1{,}76 > 1$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, tason 2 tehtävissä yhdistetään hilayhtälö ja varjostimelta mitatut etäisyydet, ja taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite: kapea rako",
+      "prompt": "Laserin säde kulkee säädettävän raon läpi varjostimelle. Rako on jo niin kapea, että valo leviää sen takana selvästi. Rakoa kavennetaan vielä. Miten varjostimen kirkas keskialue muuttuu?",
+      "choices": [
+        {
+          "text": "Se pysyy yhtä leveänä, mutta himmenee, koska läpi pääsee vähemmän valoa.",
+          "feedback": "Kuvio himmenee, mutta myös sen leveys muuttuu: kapeammassa raossa diffraktio on voimakkaampaa, joten valo leviää laajemmalle ja keskialue levenee."
+        },
+        {
+          "text": "Se levenee, koska kapeammassa raossa diffraktio on voimakkaampaa.",
+          "correct": true,
+          "feedback": "Oikein. Kun raon leveys on aallonpituuden suuruusluokkaa, valo leviää raon taakse sitä laajemmalle, mitä kapeampi rako on. Siksi keskialue levenee, vaikka rakoon pääsee vähemmän valoa ja kuvio himmenee."
+        },
+        {
+          "text": "Se kapenee, koska kapeampi rako päästää läpi kapeamman valokimpun.",
+          "feedback": "Näin kävisi, jos valo kulkisi aina suoraan, kuten leveästä aukosta. Kun rako on aallonpituuden suuruusluokkaa, diffraktio levittää valoa sitä enemmän, mitä kapeampi rako on, joten keskialue levenee."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske: natriumvalo hilassa",
+      "prompt": "Natriumlampun keltaisen valon aallonpituus on $589\\,\\text{nm}$. Valo osuu kohtisuoraan hilaan, jossa on $500$ viivaa millimetrillä. Kuinka suuressa kulmassa keskimaksimin suunnasta on toisen kertaluvun maksimi? Vastaa asteina.",
+      "answer": 36.0861,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "Laske ensin hilavakio $d = 1\\,\\text{mm} : 500$ metreinä.",
+        "Hilayhtälöstä $\\sin\\theta = k\\lambda : d$, missä $k = 2$.",
+        "$\\sin\\theta = 2 \\cdot 589 \\cdot 10^{-9}\\,\\text{m} : (2{,}00 \\cdot 10^{-6}\\,\\text{m}) = 0{,}589$. Ota tuloksesta käänteinen sini."
+      ],
+      "mistakes": [
+        {
+          "value": 17.1276,
+          "feedback": "Tämä on ensimmäisen kertaluvun maksimin kulma. Toisessa kertaluvussa matkaero on kaksi aallonpituutta: $\\sin\\theta = 2\\lambda : d$."
+        },
+        {
+          "value": 0.589,
+          "feedback": "Tämä on kulman sini. Laske kulma käänteisellä sinillä: $\\theta = \\sin^{-1} 0{,}589$."
+        }
+      ],
+      "solution": "**Annettu:** aallonpituus $\\lambda = 589\\,\\text{nm}$, viivatiheys $N = 500$ viivaa millimetrillä, kertaluku $k = 2$\n\n**Kysytty:** toisen kertaluvun maksimin kulma $\\theta$ keskimaksimin suunnasta asteina\n\n**Periaate:** Valo tulee kohtisuoraan hilaan, joten maksimit ovat suunnissa, joissa vierekkäisten rakojen matkaero $d\\sin\\theta$ on kokonainen määrä aallonpituuksia. Toisen kertaluvun maksimissa matkaero on kaksi aallonpituutta.\n\n**Kaava:** $d = \\dfrac{1\\,\\text{mm}}{N}$ ja $d\\sin\\theta = k\\lambda$, josta $\\theta = \\sin^{-1}\\dfrac{k\\lambda}{d}$\n\n**Muunnokset:** $d = 1 \\cdot 10^{-3}\\,\\text{m} : 500 = 2{,}00 \\cdot 10^{-6}\\,\\text{m}$ ja $589\\,\\text{nm} = 589 \\cdot 10^{-9}\\,\\text{m}$.\n\n**Sijoitus:** $\\theta = \\sin^{-1}\\dfrac{2 \\cdot 589 \\cdot 10^{-9}\\,\\text{m}}{2{,}00 \\cdot 10^{-6}\\,\\text{m}} = \\sin^{-1} 0{,}589 = 36{,}09^\\circ$\n\n**Vastaus:** $36{,}1^\\circ$, kolme merkitsevää numeroa kuten aallonpituus $589\\,\\text{nm}$.\n\n**Järkevyys:** Ensimmäisen kertaluvun maksimi on $17{,}13^\\circ$:n kulmassa. Toisen kertaluvun kulma on suurempi mutta ei kaksinkertainen, koska kulman sini kaksinkertaistuu, ei kulma. Tarkistus: $2{,}00\\,\\mu\\text{m} \\cdot \\sin 36{,}09^\\circ = 1{,}178\\,\\mu\\text{m} = 2 \\cdot 0{,}589\\,\\mu\\text{m}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: CD-levyn värit",
+      "prompt": "Selitä, miksi valkoisessa valossa CD-levyn pinnalla näkyy sateenkaaren värejä ja miksi värit vaihtuvat, kun levyä kallistetaan.",
+      "model": "CD-levyn tietoraita kiertää pinnalla tasavälisenä spiraalina, ja vierekkäisten kierrosten etäisyys on $1{,}6\\,\\mu\\text{m}$. Levy toimii heijastushilana: tasavälisistä raidoista heijastuneet aallot interferoivat, ja aalto vahvistuu suunnassa, jossa vierekkäisistä raidoista heijastuneiden aaltojen matkaero on kokonainen määrä aallonpituuksia. Valkoisessa valossa on kaikkia näkyvän valon aallonpituuksia, ja kukin vahvistuu omassa suunnassaan: pidempi aallonpituus eli punainen suuremmassa kulmassa kuin sininen. Siksi silmään tulee eri kohdista ja eri kulmista eri värejä. Kun levyä kallistetaan, silmän suunta levyyn nähden muuttuu, ja silmään osuu toisen aallonpituuden maksimi.",
+      "criteria": [
+        "Kerron, että CD-levyn tasaväliset raidat toimivat heijastushilana.",
+        "Selitän, että raidoista heijastuneet aallot interferoivat ja vahvistuvat, kun matkaero on kokonainen määrä aallonpituuksia.",
+        "Selitän, että eri aallonpituudet vahvistuvat eri suunnissa, joten katselukulma määrää näkyvän värin."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

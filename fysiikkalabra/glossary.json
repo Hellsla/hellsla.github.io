@@ -2927,7 +2927,9 @@
     "term": "interferenssi",
     "definition": "Kahden tai useamman aallon yhteisvaikutus samassa kohdassa superpositioperiaatteen mukaan. Kahden samassa vaiheessa värähtelevän saman taajuuden lähteen aallot muodostavat pysyvän kuvion, jossa vahvistavan ja heikentävän interferenssin kohdat vuorottelevat.",
     "lessons": [
-      "fy5-12"
+      "fy5-12",
+      "fy7-14",
+      "fy7-13"
     ],
     "see_also": [
       "superpositio",
@@ -3179,7 +3181,8 @@
     "term": "diffraktio",
     "definition": "Aallon taipuminen raon tai esteen taakse, alueelle, jonne suoraan etenevä aalto ei osuisi. Diffraktio on voimakasta, kun raon tai esteen leveys on aallonpituuden suuruusluokkaa tai pienempi.",
     "lessons": [
-      "fy5-11"
+      "fy5-11",
+      "fy7-13"
     ],
     "see_also": [
       "Huygensin periaate"
@@ -3956,6 +3959,162 @@
     ],
     "see_also": [
       "sateenkaari"
+    ],
+    "locked": false
+  },
+  {
+    "term": "polarisaatio",
+    "definition": "Poikittaisen aallon värähtelysuunnan järjestäytyminen. Valo on lineaarisesti polarisoitunutta, kun sen sähkökenttä värähtelee vain yhdessä etenemissuuntaa vastaan kohtisuorassa suunnassa. Auringon ja hehkulampun valo on polarisoimatonta: värähtelysuunta vaihtelee satunnaisesti. Pitkittäistä aaltoa, kuten ääntä, ei voi polarisoida.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaattori",
+      "poikittainen aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "polarisaattori",
+    "definition": "Kalvo tai suodatin, joka päästää läpi sähkökentän läpäisysuuntaisen komponentin ja absorboi siihen nähden kohtisuoran komponentin. Ihanteellinen polarisaattori päästää läpi puolet polarisoimattoman valon intensiteetistä, ja läpi tullut valo on polarisoitunutta läpäisysuuntaan. Toista polarisaattoria, jolla tutkitaan valon polarisaatiota, sanotaan analysaattoriksi.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaatio",
+      "Malusin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Malusin laki",
+    "definition": "Polarisoituneen valon intensiteetti polarisaattorin jälkeen on I = I₀ cos² θ, missä I₀ on tulevan polarisoituneen valon intensiteetti ja θ valon polarisaatiosuunnan ja polarisaattorin läpäisysuunnan välinen kulma.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaattori",
+      "intensiteetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Brewsterin laki",
+    "definition": "Kun valo heijastuu eristeen, kuten veden tai lasin, pinnasta Brewsterin kulmassa α_B, jolle tan α_B = n₂ : n₁, heijastunut valo on täysin polarisoitunutta pinnan suuntaisesti. Silloin heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaatio",
+      "taitekerroin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "polaroidut aurinkolasit",
+    "definition": "Aurinkolasit, joiden linsseissä on polarisaattorikalvo, jonka läpäisysuunta on pystysuora. Ne himmentävät erityisesti vaakasuorista pinnoista, kuten vedestä ja märästä tiestä, heijastuvaa häikäisyä, koska heijastunut valo on osittain polarisoitunutta vaakasuunnassa.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaattori",
+      "Brewsterin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ohut kalvo",
+    "definition": "Läpinäkyvä kerros, jonka paksuus on samaa suuruusluokkaa kuin valon aallonpituus, noin $100$–$1000\\,\\text{nm}$, esimerkiksi saippuakuplan seinämä tai öljykalvo veden pinnalla. Kalvon kahdesta pinnasta heijastuneet aallot interferoivat; kohtisuorassa tulossa niiden matkaero on $2nd$.",
+    "lessons": [
+      "fy7-14"
+    ],
+    "see_also": [
+      "interferenssi",
+      "heijastuksenestopinnoite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heijastuksenestopinnoite",
+    "definition": "Lasin tai linssin pinnalle tehty ohut läpinäkyvä kalvo, jonka kahdesta pinnasta heijastuneet aallot heikentävät toisiaan, joten pinnasta heijastuu vähemmän valoa ja sen läpi pääsee enemmän. Ohuimman pinnoitteen paksuus on neljäsosa aallonpituudesta pinnoitteessa, $d = \\lambda : (4n)$.",
+    "lessons": [
+      "fy7-14"
+    ],
+    "see_also": [
+      "ohut kalvo",
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "langaton lataus",
+    "definition": "Akun lataaminen ilman johtoa: laturin lähetinkäämin vaihtovirta synnyttää vaihtuvan magneettikentän, jonka vuo indusoi laitteen vastaanotinkäämiin jännitteen. Toimii kuin muuntaja ilman rautasydäntä, joten siirto heikkenee jyrkästi käämien välin kasvaessa.",
+    "lessons": [
+      "fy7-16"
+    ],
+    "see_also": [
+      "induktio",
+      "muuntaja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktioliesi",
+    "definition": "Liesi, jonka lasilevyn alla olevan kelan vaihtovirta synnyttää vaihtuvan magneettikentän. Kenttä indusoi kattilan pohjaan pyörrevirtoja, jotka muuttavat sähköenergiaa pohjan sisäenergiaksi. Lämmittää tehokkaasti ferromagneettista, kuten teräksistä, pohjaa; sähköä johtamaton lasi ei lämpene itsestään.",
+    "lessons": [
+      "fy7-16"
+    ],
+    "see_also": [
+      "pyörrevirta",
+      "ferromagnetismi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaimennus",
+    "definition": "Signaalin tehon pieneneminen siirtotiellä, esimerkiksi valokuidussa, ilmoitettuna desibeleinä: $A = 10\\,\\text{dB} \\cdot \\lg (P_0 : P)$. Jokainen $10\\,\\text{dB}$ pienentää tehon kymmenesosaan. Kuidun vaimennuskerroin ilmoitetaan yksikössä $\\text{dB/km}$.",
+    "lessons": [
+      "fy7-16"
+    ],
+    "see_also": [
+      "desibeli",
+      "valokuitu"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hila",
+    "definition": "Levy tai kalvo, jossa on suuri määrä tasavälisiä kapeita rakoja tai viivoja. Kun valo tulee kohtisuoraan hilaan, kirkkaat maksimit syntyvät suuntiin, joille d sin θ = kλ, missä d on hilavakio, θ maksimin suunta keskimaksimin suunnasta ja k kokonaisluku. Heijastava tasavälinen pinta, kuten CD-levy, on heijastushila.",
+    "lessons": [
+      "fy7-13"
+    ],
+    "see_also": [
+      "hilavakio",
+      "interferenssi",
+      "diffraktio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hilavakio",
+    "definition": "Hilan vierekkäisten rakojen tai viivojen etäisyys d. Jos hilassa on N viivaa millimetrillä, hilavakio on d = 1 mm : N; esimerkiksi 300 viivaa millimetrillä antaa d = 3,33 µm.",
+    "lessons": [
+      "fy7-13"
+    ],
+    "see_also": [
+      "hila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kaksoisrako",
+    "definition": "Kaksi kapeaa, lähekkäistä rakoa, joihin tulee saman lähteen valoa. Raoista lähtevät aallot ovat koherentteja ja interferoivat, joten varjostimelle syntyy tasavälisiä kirkkaita ja tummia juovia. Thomas Young osoitti kaksoisraolla 1800-luvun alussa, että valo on aaltoliikettä.",
+    "lessons": [
+      "fy7-13"
+    ],
+    "see_also": [
+      "interferenssi",
+      "hila"
     ],
     "locked": false
   }
