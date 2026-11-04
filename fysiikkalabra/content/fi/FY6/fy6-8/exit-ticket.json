@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Miksi pariston napajännite on pienempi kuin sen lähdejännite, kun paristosta otetaan virtaa?",
+    "a": "Virta kulkee myös pariston sisällä, ja pariston sisäisessä resistanssissa potentiaali laskee jännitteen $R_\\text{s} I$ verran. Siksi napojen välille jää $U = E - R_\\text{s} I$. Ilman virtaa napajännite on lähdejännite."
+  },
+  {
+    "q": "Pariston lähdejännite on $9{,}0\\,\\text{V}$ ja sisäinen resistanssi $1{,}8\\,\\Omega$. Kuinka suuri on sen oikosulkuvirta, ja miksi oikosulku on vaarallinen?",
+    "a": "Oikosulkuvirta on $I_\\text{k} = E : R_\\text{s} = 9{,}0\\,\\text{V} : 1{,}8\\,\\Omega = 5{,}0\\,\\text{A}$. Virtaa rajoittaa vain sisäinen resistanssi, joten lähteen koko teho muuttuu pariston ja johtimen sisäenergiaksi: ne kuumenevat, ja paristo voi vuotaa tai syttyä."
+  }
+]

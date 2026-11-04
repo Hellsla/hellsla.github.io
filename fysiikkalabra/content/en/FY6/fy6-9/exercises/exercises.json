@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-9-L1-01",
+      "level": 1,
+      "text": "The rear light of a bicycle draws a steady current of $0.25\\,\\text{A}$ from its battery, and a fully charged battery runs down in $8.0$ hours. What is the capacity of the battery? Answer in ampere-hours.",
+      "answer": 2.0,
+      "unit": "Ah",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-02",
+      "level": 1,
+      "text": "The capacity of a battery is $3000\\,\\text{mAh}$. How large a charge passes through the battery when it discharges from full to empty? Answer in coulombs.",
+      "answer": 10800,
+      "unit": "C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-03",
+      "level": 1,
+      "text": "The nominal voltage of an electric-bike battery is $36\\,\\text{V}$ and its capacity is $13\\,\\text{Ah}$. How much energy is stored in the fully charged battery? Answer in watt-hours.",
+      "answer": 468,
+      "unit": "Wh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-04",
+      "level": 1,
+      "text": "The capacity of a flashlight battery is $2.4\\,\\text{Ah}$, and the lamp draws a current of $0.15\\,\\text{A}$ from the battery. How long does the lamp stay on with a fully charged battery? Answer in hours.",
+      "answer": 16,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L1-05",
+      "level": 1,
+      "text": "The graph shows the charging current of a battery as a function of time. How large a charge passed through the battery during charging? Read the values you need from the graph. Answer in ampere-hours.",
+      "figure": "fy6-9/ex-current",
+      "answer": 4.0,
+      "unit": "Ah",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-9-L2-01",
+      "level": 2,
+      "text": "The source voltage of a motorcycle battery is $12.4\\,\\text{V}$ and its internal resistance is $40\\,\\text{m}\\Omega$. The battery is charged with a charger whose voltage is $14.4\\,\\text{V}$, and the resistance of the charger and wires is $0.36\\,\\Omega$. How large is the charging current?",
+      "answer": 5.0,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-02",
+      "level": 2,
+      "text": "A battery cell is charged with a charger whose voltage is $5.0\\,\\text{V}$. The source voltage of the cell is $3.8\\,\\text{V}$, the resistance of the charger and the wire is $0.80\\,\\Omega$, and an ammeter shows a charging current of $1.2\\,\\text{A}$. What is the internal resistance of the cell?",
+      "answer": 0.2,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-03",
+      "level": 2,
+      "text": "The capacity of a phone battery is $4500\\,\\text{mAh}$. The battery is charged from a charge level of $15\\,\\%$ to a charge level of $80\\,\\%$, and the charging current is on average $1.8\\,\\text{A}$. How long does charging take? Answer in minutes.",
+      "answer": 97.5,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-04",
+      "level": 2,
+      "text": "The nominal voltage of an electric-bike battery is $36\\,\\text{V}$ and its capacity is $14\\,\\text{Ah}$. Charging the empty battery full takes $600\\,\\text{Wh}$ of energy from the mains. Assume that the energy stored in the battery is the nominal voltage times the capacity. What is the efficiency of charging? Answer in percent.",
+      "answer": 84,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-9-L3-01",
+      "level": 3,
+      "text": "A car starter battery has a nominal voltage of $12\\,\\text{V}$ and a capacity of $60\\,\\text{Ah}$, but only half of its capacity can be drawn from a lead-acid battery without damaging it. An electric-scooter battery has a nominal voltage of $36\\,\\text{V}$ and a capacity of $7.8\\,\\text{Ah}$, and it can be used completely. The ratio of the ampere-hours is almost eight. How many times as much usable energy can be drawn from the car battery as from the scooter battery?",
+      "answer": 1.28,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L3-02",
+      "level": 3,
+      "text": "The voltage of a charger stays at $13.8\\,\\text{V}$ during charging. The source voltage of a battery is $12.0\\,\\text{V}$ at the start of charging and $12.6\\,\\text{V}$ at the end. The resistances of the charger, wires and battery are together $0.30\\,\\Omega$ and stay constant. By how many percent does the charging current decrease during charging?",
+      "answer": 33.3,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L3-03",
+      "level": 3,
+      "text": "A phone battery is charged for $1.5$ hours with a constant current of $2.0\\,\\text{A}$. The internal resistance of the battery is $0.15\\,\\Omega$. How much energy becomes internal energy in the internal resistance of the battery during charging? Answer in kilojoules.",
+      "answer": 3.24,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ]
+}

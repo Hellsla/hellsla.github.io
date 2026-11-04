@@ -1,0 +1,22 @@
+{
+  "id": "fy6-9",
+  "course": "FY6",
+  "title": "Akut ja latauspiiri",
+  "goals": [
+    "LOPS FY6: akut ja akun latauspiiri",
+    "Temaattinen tarkastelu: sähköenergian varastoiminen",
+    "Täsmennys: akun kapasiteetti (Ah, Wh), lataaminen ja latauspiiri"
+  ],
+  "prerequisites": [
+    "fy6-8"
+  ],
+  "glossary": [
+    "akku",
+    "paristo",
+    "latauspiiri",
+    "akun kapasiteetti"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

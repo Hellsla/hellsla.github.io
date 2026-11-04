@@ -1,0 +1,429 @@
+{
+  "version": 1,
+  "contribution": "Akku latauspiirissä: kapasiteetti varauksena (Ah) ja energiana (Wh), latausvirta jännitelaista lähdejännitteen ja sisäisen resistanssin avulla, virran suunnan kääntyminen akussa ja latauksen energiahäviöt; malli selittää, miksi vakiojännitteinen lataus hidastuu loppua kohti.",
+  "learn": [
+    "laskemaan akun kapasiteetista sen varauksen ja energian sekä vertailemaan akkuja wattitunneilla.",
+    "laskemaan latausvirran ja akun napajännitteen latauspiirin jännitelain avulla.",
+    "selittämään, miksi latausvirta pienenee akun täyttyessä ja miksi osa energiasta muuttuu sisäenergiaksi."
+  ],
+  "prior": [
+    "Kun paristosta otetaan virtaa, sen napajännite on $U = E - R_\\text{s} I$ (luku *Lähdejännite ja sisäinen resistanssi*)",
+    "Silmukan potentiaalin muutosten summa on nolla (luku *Kirchhoffin lait ja potentiaali virtapiirissä*)",
+    "Sähköteho on $P = UI$, ja energia on teho kertaa aika (luku *Sähköteho ja vastuksen lämpeneminen*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Illalla puhelimen akussa on jäljellä $10\\,\\%$. Kun puhelin kytketään laturiin, varaustaso nousee puolessa tunnissa noin puoleen. Viimeiset kymmenen prosenttia vievät kuitenkin lähes yhtä kauan kuin koko alkuosa, ja puhelin tuntuu latauksen aikana lämpimältä. Laturi on koko ajan sama.",
+      "question": "Mikä latauksen aikana muuttuu niin, että akkuun kulkeva virta pienenee, vaikka laturi pysyy samana?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: napajännite",
+      "optional": true,
+      "prompt": "Paristosta otetaan virtaa. Pariston lähdejännite on $E$ ja sisäinen resistanssi $R_\\text{s}$. Mikä pitää paikkansa pariston napajännitteestä $U$?",
+      "choices": [
+        {
+          "text": "$U$ on pienempi kuin $E$, koska osa lähdejännitteestä jää pariston sisäiseen resistanssiin.",
+          "correct": true,
+          "feedback": "Oikein. Kun paristosta otetaan virtaa $I$, napajännite on $U = E - R_\\text{s} I$ (luku *Lähdejännite ja sisäinen resistanssi*). Tänään virta kulkee akun läpi toiseen suuntaan, ja nähdään, mitä napajännitteelle silloin tapahtuu."
+        },
+        {
+          "text": "$U$ on yhtä suuri kuin $E$, koska lähdejännite on pariston oma ominaisuus.",
+          "feedback": "Napajännite on yhtä suuri kuin lähdejännite vain, kun virtaa ei kulje. Kun virtaa otetaan, sisäisen resistanssin jännite $R_\\text{s} I$ pienentää napajännitettä: $U = E - R_\\text{s} I$ (luku *Lähdejännite ja sisäinen resistanssi*)."
+        },
+        {
+          "text": "$U$ on suurempi kuin $E$, koska virta kasvattaa pariston napojen välistä jännitettä.",
+          "feedback": "Purkautuessa käy päinvastoin: virta kulkee sisäisen resistanssin läpi, ja napajännite on pienempi, $U = E - R_\\text{s} I$ (luku *Lähdejännite ja sisäinen resistanssi*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: miten latausvirta muuttuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "Tyhjää akkukennoa ladataan laturilla, jonka jännite pysyy koko ajan $4{,}5\\,\\text{V}$:ssa. Latauksen alussa virta on $2{,}2\\,\\text{A}$. Miten virta muuttuu, kun lataus jatkuu?",
+      "choices": [
+        {
+          "text": "Virta pysyy $2{,}2\\,\\text{A}$:ssa, kunnes kenno on täynnä, koska laturin jännite ei muutu.",
+          "feedback": "Mallin arvot kumoavat tämän: puolen tunnin kuluttua virta on noin $1{,}5\\,\\text{A}$ ja tunnin kuluttua noin $1{,}0\\,\\text{A}$. Virtaa ei määrää laturin jännite yksin vaan laturin jännitteen ja kennon lähdejännitteen erotus, ja lähdejännite kasvaa kennon latautuessa."
+        },
+        {
+          "text": "Virta kasvaa, koska täyttyvä kenno ottaa vastaan yhä enemmän varausta ja vetää virtaa.",
+          "feedback": "Mallissa virta pienenee: $2{,}2\\,\\text{A}$:sta noin $1{,}0\\,\\text{A}$:iin tunnissa. Kennoon ei kerry varausta, vaan sama varaus kulkee sen läpi. Kennon lähdejännite kasvaa latautuessa, ja laturin ja kennon jännite-ero pienenee."
+        },
+        {
+          "text": "Virta pienenee, koska kennon lähdejännite kasvaa ja sen ero laturin jännitteeseen pienenee.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: lähdejännite nousee $3{,}40\\,\\text{V}$:sta noin $4{,}0\\,\\text{V}$:iin tunnissa, ja virta pienenee $2{,}2\\,\\text{A}$:sta noin $1{,}0\\,\\text{A}$:iin. Virtaa ajaa laturin jännitteen ja lähdejännitteen erotus, joten erotuksen pienentyessä virta pienenee."
+        },
+        {
+          "text": "Virta pienenee, koska kennon sisäinen resistanssi kasvaa nopeasti latauksen aikana.",
+          "feedback": "Mallissa sisäinen resistanssi pysyy $0{,}10\\,\\Omega$:ssa, ja silti virta pienenee $2{,}2\\,\\text{A}$:sta noin $1{,}0\\,\\text{A}$:iin tunnissa. Syy on lähdejännitteen kasvu $3{,}40\\,\\text{V}$:sta noin $4{,}0\\,\\text{V}$:iin, joka pienentää laturin ja kennon jännite-eroa."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: liian pieni laturin jännite",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "Akkukennon varaustaso on $80\\,\\%$, ja sen lähdejännite on $4{,}04\\,\\text{V}$. Kenno kytketään laturiin, jonka jännite on vain $3{,}6\\,\\text{V}$. Laturissa ei ole diodia, joka estäisi virran toiseen suuntaan. Mitä tapahtuu?",
+      "choices": [
+        {
+          "text": "Kenno latautuu, mutta hitaammin kuin suuremmalla laturin jännitteellä.",
+          "feedback": "Mallissa virta on $-0{,}88\\,\\text{A}$: se kulkee kennon läpi miinusnavalta plusnavalle eli samaan suuntaan kuin purkautuessa. Laturi lataa kennoa vain, kun laturin jännite on suurempi kuin kennon lähdejännite."
+        },
+        {
+          "text": "Virtaa ei kulje, koska laturi ja kenno ovat kytketty toisiaan vastaan.",
+          "feedback": "Mallissa virta on $-0{,}88\\,\\text{A}$. Virta on nolla vain, kun laturin jännite on täsmälleen kennon lähdejännite. Nyt kennon lähdejännite on suurempi, ja kenno ajaa virtaa laturin läpi."
+        },
+        {
+          "text": "Virta kulkee kennosta laturiin, ja kenno purkautuu.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: virta on $-0{,}88\\,\\text{A}$ eli toiseen suuntaan kuin latauksessa, ja varaustaso laskee. Kennon lähdejännite $4{,}04\\,\\text{V}$ on suurempi kuin laturin $3{,}6\\,\\text{V}$, joten kenno toimii jännitelähteenä ja laturi kuormana."
+        },
+        {
+          "text": "Kenno latautuu yhtä nopeasti kuin ennenkin, koska laturista virta kulkee aina akkuun.",
+          "feedback": "Mallissa virta kääntyy, ja se on $-0{,}88\\,\\text{A}$. Virran suunnan ratkaisee, kumpi on suurempi, laturin jännite vai kennon lähdejännite, eikä se, kumpi laitteista on laturi."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Siirrä latauksen kestoa ja muuta laturin jännitettä, resistanssia ja alkutilaa. Seuraa virtaa, jännitteitä, varaustasoa ja energiaa.",
+      "howto": "*Latauksen kesto* $t$ näyttää tilanteen, kun laturi on ollut kytkettynä $t$ tuntia. Kuvaaja näyttää koko latauksen virran haaleana ja kuluneen osan vahvana, ja nykyhetki on rengastettu. *Laturin jännite* $U_\\text{lat}$ ja *laturin ja johtojen resistanssi* $R$ asetetaan liukusäätimillä. *Varaustaso alussa* kertoo, kuinka suuri osa kapasiteetista on käytettävissä latauksen alkaessa. Violetit nuolet näyttävät virran suunnan sovitusti plusnavalta miinusnavalle, vihreä täyttö kennon varaustason ja oranssi hehku sen, kuinka paljon sähköenergiaa muuttuu kennon sisäisessä resistanssissa sisäenergiaksi. Negatiivinen virta tarkoittaa, että kenno purkautuu laturiin.",
+      "model": "Akkukennon kapasiteetti on $2{,}0\\,\\text{Ah}$ ja sisäinen resistanssi $R_\\text{s} = 0{,}10\\,\\Omega$. Kennon lähdejännite kasvaa tasaisesti varaustason mukana, $3{,}40\\,\\text{V}$:sta tyhjänä $4{,}20\\,\\text{V}$:iin täytenä; todellisen litiumioniakun lähdejännite muuttuu epätasaisemmin. Laturin jännite pysyy vakiona, ja kun kenno on täynnä, laturi katkaisee virran. Laturissa ei ole diodia, joten liian pieni laturin jännite purkaa kennoa, kunnes kennon lähdejännite on laskenut laturin jännitteeseen; vasta alle $3{,}40\\,\\text{V}$:n laturi tyhjentää sen. Todellinen puhelimen laturi lataa ensin vakiovirralla ja vasta loppuvaiheessa vakiojännitteellä. Luvut ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Jännitelain mukaan $U_\\text{lat} - RI - R_\\text{s} I - E = 0$, joten\n\n$$I = \\frac{U_\\text{lat} - E}{R + R_\\text{s}}$$\n\nKun kennon läpi kulkee varaus, sen lähdejännite kasvaa $0{,}40\\,\\text{V}$ ampeerituntia kohti, ja virta pienenee sitä mukaa kuin kenno latautuu. Malli laskee virran ja lähdejännitteen yhdessä latauksen alusta hetkeen $t$. Napajännite on $U = E + R_\\text{s} I$. Laturi antaa energian $W_\\text{lat} = U_\\text{lat}\\,\\Delta Q$, kun kennon läpi on kulkenut varaus $\\Delta Q$. Kennoon varastoituu kemiallisena energiana lähdejännitteen osuus, ja erotus muuttuu resistanssien $R$ ja $R_\\text{s}$ sisäenergiaksi. Hyötysuhde on $\\eta = W_\\text{akku} : W_\\text{lat}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: virta latauksen aikana",
+      "intro": "Testaa ennuste 1. Laturin jännite, resistanssi ja varaustaso alussa pysyvät vakioina; muuta vain latauksen kestoa. Kirjaa virta, lähdejännite ja varaustaso ainakin kolmella kestolla, esimerkiksi $0$, $0{,}5$, $1{,}0$ ja $1{,}5$ tuntia. Miten virta muuttuu, ja mikä muuttuu samaan aikaan?",
+      "initial": {
+        "t": 0,
+        "Ulat": 4.5,
+        "R": 0.4,
+        "alku": 0
+      },
+      "locked": [
+        "Ulat",
+        "R",
+        "alku"
+      ],
+      "vary": "t",
+      "names": {
+        "t": "latauksen kesto",
+        "Ulat": "laturin jännite",
+        "R": "laturin ja johtojen resistanssi",
+        "alku": "varaustaso alussa"
+      },
+      "units": {
+        "t": "h",
+        "Ulat": "V",
+        "R": "Ω",
+        "alku": "%"
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        },
+        {
+          "key": "E",
+          "label": "E (V)"
+        },
+        {
+          "key": "soc",
+          "label": "varaustaso (%)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: liian pieni laturin jännite",
+      "intro": "Testaa ennuste 2. Varaustaso alussa ($80\\,\\%$), latauksen kesto $0$ ja resistanssi pysyvät vakioina; muuta vain laturin jännitettä. Kirjaa virta ja lähdejännite ainakin kahdella laturin jännitteellä, joista toinen on alle ja toinen yli $4{,}04\\,\\text{V}$, esimerkiksi $3{,}6\\,\\text{V}$, $4{,}0\\,\\text{V}$, $4{,}2\\,\\text{V}$ ja $4{,}6\\,\\text{V}$. Millä laturin jännitteellä virta vaihtaa suuntaa?",
+      "initial": {
+        "t": 0,
+        "Ulat": 3.6,
+        "R": 0.4,
+        "alku": 80
+      },
+      "locked": [
+        "t",
+        "R",
+        "alku"
+      ],
+      "vary": "Ulat",
+      "names": {
+        "t": "latauksen kesto",
+        "Ulat": "laturin jännite",
+        "R": "laturin ja johtojen resistanssi",
+        "alku": "varaustaso alussa"
+      },
+      "units": {
+        "t": "h",
+        "Ulat": "V",
+        "R": "Ω",
+        "alku": "%"
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        },
+        {
+          "key": "E",
+          "label": "E (V)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: pikalataus ja häviöt",
+      "optional": true,
+      "intro": "Lataa kenno tyhjästä täyteen eri laturin jännitteillä. Latauksen kesto on $4{,}0$ tuntia, jolloin kenno ehtii täyttyä, ja resistanssi pysyy vakiona; muuta vain laturin jännitettä välillä $4{,}4$–$5{,}0\\,\\text{V}$. Kirjaa latausaika, laturin antama energia ja hyötysuhde. Kennoon varastoituu joka kerta sama energia, $7{,}6\\,\\text{Wh}$. Mitä nopeampi lataus maksaa?",
+      "initial": {
+        "t": 4.0,
+        "Ulat": 4.4,
+        "R": 0.4,
+        "alku": 0
+      },
+      "locked": [
+        "t",
+        "R",
+        "alku"
+      ],
+      "vary": "Ulat",
+      "names": {
+        "t": "latauksen kesto",
+        "Ulat": "laturin jännite",
+        "R": "laturin ja johtojen resistanssi",
+        "alku": "varaustaso alussa"
+      },
+      "units": {
+        "t": "h",
+        "Ulat": "V",
+        "R": "Ω",
+        "alku": "%"
+      },
+      "measure": [
+        {
+          "key": "tFull",
+          "label": "latausaika (h)"
+        },
+        {
+          "key": "Wlat",
+          "label": "W_lat (Wh)"
+        },
+        {
+          "key": "eta",
+          "label": "η (%)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: latausvirta ja sen suunta",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten latausvirta ja kennon lähdejännite muuttuivat latauksen aikana, ja miksi virta pieneni? Millä ehdolla kenno latautuu, ja mitä tapahtui, kun ehto ei täyttynyt?",
+      "model": "Latauksen aikana kennon lähdejännite kasvoi $3{,}40\\,\\text{V}$:sta noin $4{,}17\\,\\text{V}$:iin puolessatoista tunnissa, ja samalla virta pieneni $2{,}2\\,\\text{A}$:sta noin $0{,}66\\,\\text{A}$:iin. Laturin jännite pysyi $4{,}5\\,\\text{V}$:ssa, joten laturin jännitteen ja lähdejännitteen erotus pieneni, ja virta pieneni sen mukana. Siksi lataus hidastuu loppua kohti. Kokeessa 2 kenno latautui vain, kun laturin jännite oli suurempi kuin kennon lähdejännite $4{,}04\\,\\text{V}$. Kun laturin jännite oli pienempi, virta muuttui negatiiviseksi, esimerkiksi $-0{,}88\\,\\text{A}$ jännitteellä $3{,}6\\,\\text{V}$, ja kenno purkautui laturiin. Arvot ovat mallin laskemia: mallin kennon lähdejännite kasvaa tasaisesti varaustason mukana.",
+      "criteria": [
+        "Vastaus kertoo taulukon luvuilla, että virta pieneni ja lähdejännite kasvoi latauksen aikana.",
+        "Vastaus selittää virran pienenemisen laturin jännitteen ja lähdejännitteen erotuksen pienenemisellä.",
+        "Vastaus kertoo, että kenno latautuu vain, kun laturin jännite on suurempi kuin kennon lähdejännite.",
+        "Vastaus kertoo, että liian pienellä laturin jännitteellä virta kääntyy ja kenno purkautuu."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja latauspiirin jännitelakiin. Palaa sitten alun kysymykseen: miksi puhelimen viimeiset prosentit latautuvat hitaasti, ja miksi puhelin lämpenee latauksen aikana?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Auton akun lähdejännite on $12{,}4\\,\\text{V}$ ja sisäinen resistanssi $0{,}050\\,\\Omega$. Akkua ladataan laturilla, jonka jännite on $14{,}0\\,\\text{V}$, ja laturin ja johtojen resistanssi on $0{,}35\\,\\Omega$. Opiskelija laskee latausvirran näin:\n\n$$I = \\frac{14{,}0\\,\\text{V}}{0{,}35\\,\\Omega + 0{,}050\\,\\Omega} = 35\\,\\text{A}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Virtaa ajaa laturin jännitteen ja akun lähdejännitteen erotus: $I = (14{,}0\\,\\text{V} - 12{,}4\\,\\text{V}) : 0{,}40\\,\\Omega = 4{,}0\\,\\text{A}$.",
+          "correct": true,
+          "feedback": "Oikein. Virta kulkee akun läpi plusnavalta miinusnavalle, joten potentiaali laskee akussa myös lähdejännitteen verran. Jännitelaki antaa $14{,}0\\,\\text{V} - 0{,}40\\,\\Omega \\cdot I - 12{,}4\\,\\text{V} = 0$. Opiskelijan virta $35\\,\\text{A}$ kulkisi vain, jos akun lähdejännite olisi nolla."
+        },
+        {
+          "text": "Resistanssit pitää yhdistää rinnankytkennän kaavalla, koska akku ja laturi ovat rinnakkain toistensa kanssa.",
+          "feedback": "Laturin ja johtojen resistanssi ja akun sisäinen resistanssi ovat samassa silmukassa peräkkäin, ja sama virta kulkee kummankin läpi. Ne ovat sarjassa, ja $0{,}35\\,\\Omega + 0{,}050\\,\\Omega = 0{,}40\\,\\Omega$ on oikein. Virhe on akun lähdejännitteen unohtaminen."
+        },
+        {
+          "text": "Laskutapa on muuten oikea, mutta akun sisäinen resistanssi pitää jättää pois, koska se on akun sisällä.",
+          "feedback": "Sisäinen resistanssi kuuluu silmukkaan siinä missä laturin resistanssi, ja virta kulkee sen läpi. Sen pois jättäminen muuttaisi tulosta noin $15\\,\\%$; varsinainen virhe on, että akun lähdejännite $12{,}4\\,\\text{V}$ puuttuu laskusta."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Varavirtalähteen kapasiteetiksi on merkitty $10\\,000\\,\\text{mAh}$, ja sen kennojen nimellisjännite on $3{,}7\\,\\text{V}$. Puhelimen akun kapasiteetti on $4000\\,\\text{mAh}$ ja nimellisjännite $3{,}85\\,\\text{V}$. Siirrossa $30\\,\\%$ energiasta muuttuu jännitteenmuuntimen, johtojen ja akkujen sisäenergiaksi. Kuinka monta kertaa varavirtalähde lataa tyhjän puhelimen akun täyteen?",
+      "answer": 1.68,
+      "unit": "kertaa",
+      "tolerance": 0.02,
+      "hints": [
+        "Varavirtalähde ja puhelin toimivat eri jännitteillä. Kumpaa kannattaa verrata: ampeerituntimääriä vai energioita?",
+        "Laske kummankin energia $W = UQ$ wattitunteina. Puhelimeen päätyy vain $70\\,\\%$ varavirtalähteen energiasta.",
+        "Varavirtalähteessä on $3{,}7\\,\\text{V} \\cdot 10\\,\\text{Ah} = 37\\,\\text{Wh}$, ja siitä puhelimeen päätyy $0{,}70 \\cdot 37\\,\\text{Wh}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2.5,
+          "feedback": "Vertasit milliampeeritunteja: $10\\,000 : 4000 = 2{,}5$. Ampeeritunti on varauksen yksikkö, ja akkujen jännitteet ovat erisuuret, joten verrataan energioita. Lisäksi $30\\,\\%$ energiasta ei päädy puhelimeen."
+        },
+        {
+          "value": 2.4,
+          "feedback": "Vertasit energioita oikein, $37\\,\\text{Wh} : 15{,}4\\,\\text{Wh} \\approx 2{,}4$, mutta unohdit häviöt. Puhelimeen päätyy vain $70\\,\\%$ varavirtalähteen energiasta."
+        },
+        {
+          "value": 1.75,
+          "feedback": "Otit häviöt huomioon, mutta vertasit milliampeeritunteja. Akkujen jännitteet ovat erisuuret, joten vertaa energioita $W = UQ$."
+        }
+      ],
+      "solution": "**Annettu:** varavirtalähde $Q_1 = 10\\,000\\,\\text{mAh}$ ja $U_1 = 3{,}7\\,\\text{V}$, puhelimen akku $Q_2 = 4000\\,\\text{mAh}$ ja $U_2 = 3{,}85\\,\\text{V}$, häviöt $30\\,\\%$ eli puhelimeen päätyy osuus $0{,}70$\n\n**Kysytty:** latauskertojen määrä $N$\n\n**Periaate:** Akkujen jännitteet ovat erisuuret, joten niitä verrataan energian eikä varauksen perusteella. Akun energia on jännite kertaa varaus. Puhelimeen päätyy $70\\,\\%$ varavirtalähteen energiasta, koska loput muuttuvat sisäenergiaksi.\n\n**Kaava:** $W = UQ$ ja $N \\cdot U_2 Q_2 = 0{,}70 \\cdot U_1 Q_1$, josta $N = \\dfrac{0{,}70\\, U_1 Q_1}{U_2 Q_2}$\n\n**Muunnokset:** $Q_1 = 10\\,000\\,\\text{mAh} = 10\\,000 \\cdot 0{,}001\\,\\text{Ah} = 10\\,\\text{Ah}$ ja $Q_2 = 4000\\,\\text{mAh} = 4{,}0\\,\\text{Ah}$\n\n**Sijoitus:** $N = \\dfrac{0{,}70 \\cdot 3{,}7\\,\\text{V} \\cdot 10\\,\\text{Ah}}{3{,}85\\,\\text{V} \\cdot 4{,}0\\,\\text{Ah}} = \\dfrac{25{,}9\\,\\text{Wh}}{15{,}4\\,\\text{Wh}} \\approx 1{,}68$\n\n**Vastaus:** $1{,}7$ kertaa, kaksi merkitsevää numeroa kuten jännitteessä $3{,}7\\,\\text{V}$ ja häviöosuudessa $30\\,\\%$.\n\n**Järkevyys:** Milliampeeritunteja vertaamalla saisi $2{,}5$, mutta puhelimen akun jännite on hieman suurempi ja lähes kolmannes energiasta menee hukkaan, joten kertoja on selvästi vähemmän. Yhden täyden latauksen jälkeen varavirtalähteessä on jäljellä energiaa noin kahteen kolmasosaan toisesta latauksesta."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä lasketaan kapasiteetti, energia tai aika yhdellä kaavalla, tason 2 tehtävissä käytetään latauspiirin jännitelakia ja muunnoksia, ja taso 3 vaatii akkujen vertailua ja päättelyä latauksen aikana muuttuvista suureista."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Auton akkua ladataan laturilla. Mikä seuraavista kuvaa oikein akkua latauksen aikana?",
+      "choices": [
+        {
+          "text": "Virta kulkee akun läpi plusnavalta miinusnavalle, ja napajännite on suurempi kuin lähdejännite.",
+          "correct": true,
+          "feedback": "Oikein. Laturi pakottaa virran akun läpi toiseen suuntaan kuin purkautuessa, ja virta kulkee myös sisäisen resistanssin läpi, joten napajännite on $U = E + R_\\text{s} I$."
+        },
+        {
+          "text": "Virta kulkee akun läpi miinusnavalta plusnavalle, ja napajännite on pienempi kuin lähdejännite.",
+          "feedback": "Näin on purkautuessa. Latauksessa laturi pakottaa virran akun läpi plusnavalta miinusnavalle, ja napajännite on $U = E + R_\\text{s} I$ eli lähdejännitettä suurempi."
+        },
+        {
+          "text": "Virta kulkee akun läpi plusnavalta miinusnavalle, ja napajännite on yhtä suuri kuin lähdejännite.",
+          "feedback": "Suunta on oikein, mutta virta kulkee myös akun sisäisen resistanssin läpi, joten napajännite on lähdejännitettä suurempi: $U = E + R_\\text{s} I$. Yhtä suuret ne ovat vain, kun virtaa ei kulje."
+        },
+        {
+          "text": "Akkuun kertyy latauksen aikana positiivista varausta, ja siksi sen napajännite kasvaa.",
+          "feedback": "Akku pysyy sähköisesti neutraalina: plusnapaan tulee yhtä paljon varausta kuin miinusnavasta lähtee. Napajännite kasvaa latauksen aikana, koska lähdejännite kasvaa akun kemiallisen energian kasvaessa."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Latausvirta",
+      "prompt": "Auton akun lähdejännite on $12{,}6\\,\\text{V}$ ja sisäinen resistanssi $0{,}050\\,\\Omega$. Akkua ladataan laturilla, jonka jännite on $14{,}4\\,\\text{V}$. Laturin ja johtojen resistanssi on $0{,}25\\,\\Omega$. Kuinka suuri on latausvirta? Vastaa ampeereina.",
+      "answer": 6.0,
+      "unit": "A",
+      "tolerance": 0.02,
+      "hints": [
+        "Mitkä potentiaalin nousut ja laskut silmukassa on, kun virta kulkee akun läpi plusnavalta miinusnavalle?",
+        "Jännitelaki: $U_\\text{lat} - RI - R_\\text{s} I - E = 0$.",
+        "$I = (14{,}4\\,\\text{V} - 12{,}6\\,\\text{V}) : (0{,}25\\,\\Omega + 0{,}050\\,\\Omega)$."
+      ],
+      "mistakes": [
+        {
+          "value": 48,
+          "feedback": "Jätit akun lähdejännitteen pois. Virtaa ajaa laturin jännitteen ja lähdejännitteen erotus $14{,}4\\,\\text{V} - 12{,}6\\,\\text{V} = 1{,}8\\,\\text{V}$."
+        },
+        {
+          "value": 7.2,
+          "feedback": "Jätit akun sisäisen resistanssin pois. Virta kulkee sekä laturin ja johtojen että akun sisäisen resistanssin läpi: $0{,}25\\,\\Omega + 0{,}050\\,\\Omega = 0{,}30\\,\\Omega$."
+        }
+      ],
+      "solution": "**Annettu:** $E = 12{,}6\\,\\text{V}$, $R_\\text{s} = 0{,}050\\,\\Omega$, $U_\\text{lat} = 14{,}4\\,\\text{V}$, $R = 0{,}25\\,\\Omega$\n\n**Kysytty:** latausvirta $I$ ampeereina\n\n**Periaate:** Piirissä on yksi silmukka, joten jännitelain mukaan laturin jännite on yhtä suuri kuin potentiaalin laskujen summa. Virta kulkee akun läpi plusnavalta miinusnavalle, joten potentiaali laskee akussa sekä sisäisessä resistanssissa että lähdejännitteen verran.\n\n**Kaava:** $U_\\text{lat} - RI - R_\\text{s} I - E = 0$, josta $I = \\dfrac{U_\\text{lat} - E}{R + R_\\text{s}}$\n\n**Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja resistanssit ohmeina, ja $1\\,\\text{V} : 1\\,\\Omega = 1\\,\\text{A}$.\n\n**Sijoitus:** $I = \\dfrac{14{,}4\\,\\text{V} - 12{,}6\\,\\text{V}}{0{,}25\\,\\Omega + 0{,}050\\,\\Omega} = \\dfrac{1{,}8\\,\\text{V}}{0{,}30\\,\\Omega} = 6{,}0\\,\\text{A}$\n\n**Vastaus:** $6{,}0\\,\\text{A}$, kaksi merkitsevää numeroa kuten jännite-erotuksessa $1{,}8\\,\\text{V}$ ja resistanssissa $0{,}25\\,\\Omega$.\n\n**Järkevyys:** Napajännite on $12{,}6\\,\\text{V} + 0{,}050\\,\\Omega \\cdot 6{,}0\\,\\text{A} = 12{,}9\\,\\text{V}$, ja laturin puolelta $14{,}4\\,\\text{V} - 0{,}25\\,\\Omega \\cdot 6{,}0\\,\\text{A} = 12{,}9\\,\\text{V}$. Tulokset täsmäävät, ja napajännite on lähdejännitteen ja laturin jännitteen välissä."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä latauksen häviöt",
+      "optional": true,
+      "prompt": "Selitä energian avulla, miksi akkuun varastoituu vähemmän energiaa kuin laturi antaa. Miksi pikalataus suurella virralla lämmittää akkua enemmän kuin hidas lataus?",
+      "model": "Laturi antaa jokaista akun läpi kulkevaa varausyksikköä kohti energiaa laturin jännitteen verran, mutta akkuun varastoituu kemiallisena energiana vain lähdejännitteen osuus. Erotus muuttuu laturin, johtojen ja akun sisäisen resistanssin sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Siksi latauksen hyötysuhde on alle $100\\,\\%$. Pikalatauksessa laturin jännitteen ja lähdejännitteen erotus on suurempi, jotta virta olisi suuri. Silloin jokaista varausyksikköä kohti sisäenergiaksi muuttuu enemmän energiaa, ja akun sisäisessä resistanssissa teho $R_\\text{s} I^2$ kasvaa virran neliön mukana, joten akku lämpenee enemmän.",
+      "criteria": [
+        "Vastaus kertoo, että laturi antaa energiaa laturin jännitteen mukaan ja akkuun varastoituu vain lähdejännitteen osuus.",
+        "Vastaus kertoo, että erotus muuttuu resistanssien sisäenergiaksi, joka siirtyy lämpönä ympäristöön.",
+        "Vastaus perustelee pikalatauksen lämpenemisen suuremmalla virralla ja sisäisen resistanssin teholla $R_\\text{s} I^2$ tai suuremmalla jännite-erolla."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

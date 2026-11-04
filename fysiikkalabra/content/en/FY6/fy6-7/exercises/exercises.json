@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-7-L1-01",
+      "level": 1,
+      "text": "The power of a laptop is $45\\,\\text{W}$. The computer is used for $4.0\\,\\text{h}$. How much electrical energy does it use? Answer in kilowatt-hours.",
+      "answer": 0.18,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-02",
+      "level": 1,
+      "text": "A kettle uses $0.15\\,\\text{kWh}$ of electrical energy in one boiling. How large is the energy in megajoules?",
+      "answer": 0.54,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-03",
+      "level": 1,
+      "text": "The rated power of an iron is $1200\\,\\text{W}$, and it is connected to a $230\\,\\text{V}$ socket. How large a current does the iron draw?",
+      "answer": 5.217391,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-04",
+      "level": 1,
+      "text": "The electrical energy consumption of a home in a month was $350\\,\\text{kWh}$. Energy and transmission cost $15.0\\,\\text{c/kWh}$ together. How much does the energy used cost? Basic charges are not taken into account.",
+      "answer": 52.5,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-05",
+      "level": 1,
+      "text": "The power of an LED lamp in a hallway is $6.0\\,\\text{W}$, and it burns $5.0\\,\\text{h}$ every day. How much electrical energy does the lamp use in a year ($365$ days)? Answer in kilowatt-hours.",
+      "answer": 10.95,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-7-L2-01",
+      "level": 2,
+      "text": "The graph shows the power of a washing machine during one wash program. How much electrical energy does the washing machine use during the program? Read the needed values from the graph and answer in kilowatt-hours.",
+      "figure": "fy6-7/washer",
+      "answer": 0.8,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L2-02",
+      "level": 2,
+      "text": "A kettle is connected to the $230\\,\\text{V}$ mains, and a current of $8.7\\,\\text{A}$ flows through it. The water boils in $4.0\\,\\text{min}$. How much electrical energy does the kettle use? Answer in kilojoules.",
+      "answer": 480.24,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L2-03",
+      "level": 2,
+      "text": "The television, set-top box and game console in the living room are in standby mode all year, and their combined standby power is $4.5\\,\\text{W}$. Electricity costs $17\\,\\text{c/kWh}$ including transmission. How much does the standby mode cost in a year ($365$ days)? Answer in euros.",
+      "answer": 6.7014,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L2-04",
+      "level": 2,
+      "text": "A $60\\,\\text{W}$ filament lamp on a desk is replaced with an equally bright LED lamp whose power is $8.0\\,\\text{W}$. The lamp burns $4.0\\,\\text{h}$ a day. How much electrical energy does the replacement save in a year ($365$ days)? Answer in kilowatt-hours.",
+      "answer": 75.92,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-7-L3-01",
+      "level": 3,
+      "text": "A kettle whose power is $2200\\,\\text{W}$ is on for $3.0\\,\\text{min}$. For how long could a $15\\,\\text{W}$ lamp burn with the same energy? Answer in hours.",
+      "answer": 7.333333,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L3-02",
+      "level": 3,
+      "text": "The total of a monthly electricity bill is $64.20\\,\\text{€}$. It includes the basic charges of energy and transmission, $8.50\\,\\text{€}$ in total. Energy and transmission cost $15.0\\,\\text{c/kWh}$ together. How much electrical energy was used at home during the month?",
+      "answer": 371.333333,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L3-03",
+      "level": 3,
+      "text": "The resistance of the heating resistor of a water heater is $26.5\\,\\Omega$, and it is connected to a voltage of $230\\,\\text{V}$. The heater warms water at night for $2.50\\,\\text{h}$. Assume that the resistance of the resistor stays constant. How much electrical energy does the heater use during the night? Answer in kilowatt-hours.",
+      "answer": 4.990566,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ]
+}

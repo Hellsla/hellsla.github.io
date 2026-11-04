@@ -461,7 +461,7 @@ def experiment_html(a, md, lid):
             f'<p class="exp-setup"><strong>{T("inquiry.setup")}</strong> {init}. <strong>{T("inquiry.locked")}</strong> {locked}. <strong>{T("inquiry.varied")}</strong> {tn(a["vary"])}.</p>'
             f'<div class="exp-controls"><button type="button" class="exp-start">{T("inquiry.exp_start")}</button><button type="button" class="exp-record">{T("inquiry.exp_record")}</button>'
             f'<button type="button" class="exp-reset">{T("inquiry.exp_reset")}</button>'
-            f'<button type="button" class="exp-copy" disabled>{T("inquiry.exp_copy")}</button><button type="button" class="exp-csv" disabled>{T("inquiry.exp_csv")}</button>'
+            f'<button type="button" class="exp-copy" disabled>{T("inquiry.exp_copy")}</button>'
             f'<span class="exp-export-status" role="status" aria-live="polite"></span></div>'   # the table's export (teacher 2026-11-03, templates/inquiry.js part 3)
             f'<table class="exp-table"><caption>{T("inquiry.exp_table")}</caption><thead><tr><th data-plain="{esc(vary_plain)}">{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
             f'<p class="exp-status" role="status" aria-live="polite"></p>{q}</div>')
@@ -681,7 +681,7 @@ def render(folder, inquiry, parts, md):
     if parts.get("cards"):                             # "Kertaa luvun käsitteet" after the exit ticket (scripts/concept_cards.py)
         body.append(parts["cards"]); toc.append(parts.get("cards_nav", ""))
     if parts.get("exercises"):                         # the exercises close the page, after the exit ticket
-        text = md(ex_act["text"]) if ex_act and ex_act.get("text") else ""
+        text = ""                                      # the exercises' own lead text is not shown (teacher 2026-11-04: "turhia")
         aid = ex_act["id"] if ex_act else "harjoitukset"
         body.append(f'<section class="stage stage-practice" id="exercises" data-stage="exercises"><h2>{exercises_title()}</h2>'
                     f'<div class="activity act-exercises" id="{esc(aid)}" data-type="exercises">{text}{parts["exercises"]}</div></section>')
