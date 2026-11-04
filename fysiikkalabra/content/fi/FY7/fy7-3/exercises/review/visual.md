@@ -1,19 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 624f7552329ed5be
+VERDICT: FAIL
+CONTENT-HASH: 005b36e1c19fdf68
 
 ## Blocking
-(none)
+- [Major] solutions.md fy7-3-L2-06, "Kuvaajan lukeminen" — "Ne poikkeavat toisistaan alle $2\,\%$" is false: the products $161$, $158$ and $164\,\mu\text{T}\,\text{cm}$ differ by $6/161 = 3{,}7\,\%$ from each other (they differ from the mean by under $2\,\%$) — the model solution justifies "inversely proportional" with a wrong number — write "Ne poikkeavat keskiarvostaan $161\,\mu\text{T}\,\text{cm}$ alle $2\,\%$" (or "toisistaan alle $4\,\%$").
 
 ## Polish
-- [Minor] exercises L3-01 — the situation text is the longest block before the question (carried) — optional: split into two short paragraphs.
-- [Minor] answer boxes — unit beside the input is plain text (µT, cm): interface input unit, no action unless the template is touched.
-- [Minor] figure inventory lists `fy7-3/coil-fit` although no exercise uses a figure — check the packet list.
+- [Minor] L1-07 — the assumption "Käämi on pitkä paksuuteensa verrattuna." and the unit request follow the question; the situation-then-question order is broken — move the assumption before "Kuinka suuri…".
+- [Minor] L1-08 — a two-formula ratio is the upper end of level 1.
+- [Minor] L2-05, L3-04, L3-05 — "Vastauslaatikkoon tulee kohdan b) tulos" differs from "Anna vastauskenttään…" in the other chapters; keep one phrase.
 
 ## Checked
-- Delta (solutions.md, three wording edits) read in the packet diff: L1-03 Järkevyys now ends after the Earth-field comparison, L2 Periaate "täsmälleen yhdellä etäisyydellä", L3-02 Järkevyys split into two sentences.
-- open-exercises-1280-3 (L1-03 solution complete, Järkevyys renders in its block, chains aligned, nothing clipped at 664 px).
-- open-exercises-L3-1280-3 (L3-02 solution end: the split Järkevyys paragraph reads clearly; L3-03 start intact).
-- Hash run at start and end: identical.
+- Contact sheets 6 and 7 (#61–#84): L1-06..L1-08, L2-05 (3-13 table and answer), L2-06 (3-14), L2-07 (3-15, wrong answer state with feedback), L3-04 (3-19) and L3-05 (3-20), solutions open.
+- Tables, decimal commas, aligned chains and units render cleanly; the multi-part tasks keep a), b), c), d) on separate lines.
+- Recomputed every new answer (4,7 mT; 314; 1,26; 54 µT; 16 µT; 5,3 mT) against its solution: all agree.
+- No plain quantity, no ×; check_layout 360 px is clean in the packet.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

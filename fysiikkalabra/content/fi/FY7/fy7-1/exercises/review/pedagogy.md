@@ -1,19 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: aca1e5e86a2b06fb
+CONTENT-HASH: 6b96bf94e77d0b06
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json:fy7-1-L3-03 — Helsinki is 53 µT here but 52 µT in the lesson table and example; "82,5°" suggests false precision for a "noin" value. Fix: use 52 µT and 82° with answer 1,87 as before, or say "kurssin arvo 52 µT" in the lesson.
-- exercises.json:fy7-1-L3-01 — answer is now -11 µT; the sign convention is stated, but a student may enter 11. Fix: add "(vastaus voi olla negatiivinen)" or accept the sign as the graded part in the solution note.
-- exercises.json:fy7-1-L2-01 — still repeats the worked example with unknown and given swapped (earlier Polish, unchanged).
-- exercises.json:fy7-1-L2-02 — three-component Pythagoras not in the lesson (earlier Polish, unchanged).
+- exercises.json fy7-1-L2-05 b) — the 10 cm / 20 cm comparison repeats L2-04 (same distances, same question "how many times larger"); a student gets the same insight twice at level 2 — change b) to ask for B_m r^3 at two other table points, or move the distances in L2-04 (old task, so prefer changing L2-05 b) to 8 cm and 16 cm).
+- exercises.json fy7-1-L1-08 — near twin of L1-02 (B sin I instead of B cos I, almost the same numbers); acceptable as the vertical-component counterpart, but a different place and angle (e.g. 58 µT, 71°) or asking for both components would add more.
+- exercises.json fy7-1-L3-04 c) — overlaps L3-03 (horizontal component shrinks northwards, compass gets weaker); the new twist (deflection grows) is good, but say so in the question: "Selitä, miksi kulma kasvaa, vaikka koko kenttä ei muutu".
+- solutions.md fy7-1-L3-05 — the mean k = 59,1·10^3 is shown only as a sum; list the six products in the solution's own sentence (already done) and add one sentence why the mean is used (scatter from reading angles), so a weak student sees why r_0 is "about 16 cm", not exactly.
+- exercises.json fy7-1-L2-06 — answer field wants the desk value only; the iron-conclusion in b) is the real learning goal and is not checkable, fine, but consider a short note "(vertaa Maan kenttään 50 µT)" to avoid guessing.
 
 ## Checked
-- L1-05: "Maan kenttä jätetään huomiotta" removes the earlier ambiguity; the answer (away from the magnet) is now unambiguous.
-- L2-03: 52/sin 77° = 53,4 µT recomputed; 53,4 cos 77° = 12,0 µT, so the sanity check is true.
-- L3-01: the north-positive sign convention makes the key insight (needle flips) part of the checked value; solution explains how the sign gives the direction.
-- L3-02: "riittävän kuumaksi" replaces "punahehkuinen", which is more accurate; the model answer names the Curie temperature and random re-formation of domains.
-- L3-03: 53 cos 74° / (55 cos 82,5°) = 14,61 / 7,179 = 2,03 recomputed; the "miksi" part now has a model answer with a criterion (horizontal component, not total field).
-- answers.py agrees with exercises.json and solutions.md for all changed tasks.
-- Finnish: "$53\,\mu\text{T}$", "$770\,{}^\circ\text{C}$" formatting and cases correct.
+- New tasks L1-06..08, L2-05..07, L3-04..05 recomputed: all answers match solutions (50,5; 14,5; 70,7; 65,0; 61,6; 16,2 cm; r^3 products 53–63 k).
+- Levels fit: L1 recall/one-step, L2 data tables and error analysis, L3 multi-part YO-style modelling; counts 8/7/5.
+- Kinds covered: conceptual MC with misconception distractors (L1-06, L1-07), data (L2-05, L2-06, L3-04, L3-05), error analysis (L2-07), experiment (L3-05), model.
+- MC distractors are real misconceptions (conductivity, density, wrong pole, rotation) with feedback that repairs them.
+- L3-05 physics: N pole facing the compass gives field to the south, opposing Earth's field; sign discussion in c) correct.
+- L2-07 error (inverted tangent) is realistic and the solution explains the principle.
+- Solutions have given/asked/principle/formula/units/substitution/answer/sanity check throughout; Finnish reads correctly.
+- No duplicate of the worked example (52°, 14 µT); goals (dipole, ferromagnetism, field vector sum, Earth's field) all practised.
+- Screenshots not opened; phone fit relied on the passed 360 px layout check.

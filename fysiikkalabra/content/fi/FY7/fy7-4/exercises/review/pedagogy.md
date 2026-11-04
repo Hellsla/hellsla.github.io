@@ -1,20 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: a3578858afaf37ff
+VERDICT: FAIL
+CONTENT-HASH: e1d566ce1d59da9e
 
 ## Blocking
+- solutions.md fy7-4-L3-05, Sijoitus (a) — the display chain `I = \sqrt{\dfrac{2\pi \cdot 0{,}010\,\text{m} \cdot 0{,}0030\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 0{,}50\,\text{m}}} = \sqrt{2943\,\text{A}^2} = 54{,}25\,\text{A}` overflows a 360 px phone by 6 px (`check_layout.py` FAIL, "cannot wrap"; the only deterministic failure, also reported by the visual reviewer) — split it: first the denominator `\mu_0 l = 6{,}28 \cdot 10^{-7}\,\text{Vs/A}`, then `I = \sqrt{\dfrac{2\pi \cdot 0{,}010 \cdot 0{,}0030 \cdot 9{,}81}{6{,}28 \cdot 10^{-7}}}\,\text{A}`, and put `= \sqrt{2943}\,\text{A} = 54{,}25\,\text{A}` on its own row.
 
 ## Polish
-1. exercises.json — still no task on the slot's applications or on direction: nothing asks for the force direction by the right-hand rule (only the exit ticket does) and none treats a motor loop or speaker coil — add one L1 direction task and one L2 coil task (the example's coil with another current, or force on a loop side).
-2. exercises.json fy7-4-L3-02 — the question is not last and the sign convention ("positiivisena... negatiivisena") makes "kuinka suuri voima" answer -270 N; a third parallel-wire calculation after L2-01 and the starttikaapelit task — ask for the magnitude, end with the question, and add a demand (force per metre as a mass the bar mounts must hold, or unequal currents).
-3. solutions.md fy7-4-L1-04 Järkevyys — "Voima on noin 100 g:n kappaleen painon suuruinen koko 100 m:n matkalla eli mitätön verrattuna..." is clumsy; write "Voima vastaa vain noin 100 g:n kappaleen painoa, kun $100\,\text{m}$:n johdinosan paino on noin $1000\,\text{N}$, joten Maan kenttä ei nosta johdinta."
-4. exercises.json fy7-4-L2-03 — a single rearrangement with arcsin is Level-1 demand; make it Level 2 by giving the force as a weight (e.g. the bar's mass instead of $0{,}50\,\text{N}$) or the direction of travel.
-5. solutions.md fy7-4-L3-03 — the long Sijoitus line (four fractions) is only captured at 1280 px; check it at 360 px that it wraps, or split it over two lines.
+- solutions.md fy7-4-L2-07 Järkevyys — uses a coil radius of 1,2 cm (about 70 turns, "lähellä 60"); the lesson example has 1,3 cm and 60 turns (l = 4,9 m). Use 1,3 cm: 5,3 m is then about 65 turns, and the students' check against the lesson example works.
+- exercises.json fy7-4-L2-05, L2-07, L3-04 captions — "(esimerkkiaineisto)" plus maths in the caption makes the tables scroll at 360 px; shorten the caption and keep "esimerkkiaineisto" in the task text.
+- solutions.md fy7-4-L1-08 Periaate — "verrannollinen sini $\sin\alpha$ eikä kulmaan" is ungrammatical: "verrannollinen kulman siniin $\sin\alpha$ eikä itse kulmaan $\alpha$".
+- exercises.json fy7-4-L2-06 — the pupil's quoted solution uses straight quotes and a rounded F (3,04·10^-3 N); use ”…” and mark what is wrong in a), not only in the solution, by saying "Etsi virhe" with the numbers 6,0 cm and 2,5 cm left visible (already so); consider letting b) ask for the percentage error of the pupil's result.
+- exercises.json fy7-4-L3-05 b) — only the vertical stability is asked; add one sentence to the solution that sideways the arrangement is unstable (the wires would flip), so the word "vakaa" is not taken as a general result.
 
 ## Checked
-- Counts 5/4/3 match the course; none repeats the coil example; L1 direct formula, L2 two steps, graph, inverse and Newton 2, L3 equilibrium and component reasoning.
-- Round 1 fixes confirmed: "virtavaa'an johdinosa" wording, scatter in the L2-02 points (0,27 to 1,47 g) with the fitted line, 74 degrees consistent in task and solution.
-- All 12 answers recomputed (0,24 N; 0,19 N; 0,10 T; 1,0 N; 3,0 A; 3,2 mN; 0,074 T; 30 deg; 18 m/s2; 2,4 A; -270 N; 1,8 kA); tolerances fit.
-- L2-02 figure and description give the same values (5 points, grid point 5,0 A; 1,50 g), no slope or B given; legible in the 1280 px capture.
-- L3-01 and L3-03 force directions verified by cross product; L3-03 correctly uses only the horizontal component.
-- Solutions follow the house order, principle explained, unit conversion visible, Järkevyys with true comparisons.
-- Finnish: cases after number+unit correct, context tasks recognisable (voimalinja, starttikaapelit, kiskot), situation first.
+- New tasks L1-06..08, L2-05..07, L3-04..05 recomputed: 0,30 N; 0,094 N; B values 0,0858/0,0834/0,0871/0,0844/0,0850 T, mean 0,085 T; 0,0405 T (pupil's 0,017 T explained by 2,5 : 6,0); 5,3 m; 0,351 T and μ = 0,20; 54,25 A. All match answers and tolerances.
+- L1-06 direction: current east, field north gives force up (I × B), correct; distractors are real misconceptions with repairing feedback.
+- Levels fit: L2 error analysis (the plan's "koko johtimen pituus" error), data with mean and spread, graph of the speaker coil; L3 friction rail model and levitating wire in YO style; counts 8/7/5.
+- No duplicate of the speaker-coil worked example; L3-04 builds on L2-04 without repeating it.
+- Solutions have all steps and sanity checks; Finnish otherwise correct.
+- Screenshots not opened; phone fit judged from the 360 px layout check output.
