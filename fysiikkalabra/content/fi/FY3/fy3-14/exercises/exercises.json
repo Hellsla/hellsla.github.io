@@ -48,26 +48,26 @@
       "kind": [
         "concept"
       ],
-      "answer": "Jään sulamislämpötila, koska niin kauan kuin jäätä on jäljellä, siirtyvä lämpö kuluu sulamiseen.",
+      "answer": "Täsmälleen $0\\,{}^\\circ\\text{C}$, koska lämpö kuluu jään sulamiseen.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Alle jään sulamislämpötilan, koska kylmä jää jäähdyttää koko lasin sisällön.",
+          "text": "Alle $0\\,{}^\\circ\\text{C}$, koska kylmä jää jäähdyttää koko lasin sisällön.",
           "feedback": "Niin kauan kuin lasissa on sekä jäätä että vettä, lämpötila ei voi olla jään sulamislämpötilaa alempi. Jään jäähdyttämä vesi alkaisi jäätyä, ja jäätyminen vapauttaa lämpöä, joka pitää lämpötilan sulamislämpötilassa."
         },
         {
-          "text": "Jään ja veden alkulämpötilojen keskiarvo, koska lämpötilat tasoittuvat kosketuksessa.",
+          "text": "Noin puolivälissä alkulämpötilojen välillä, koska lämpötilat tasoittuvat kosketuksessa.",
           "feedback": "Lämpötilat eivät tasoitu keskiarvoon, koska osa lämmöstä kuluu jään sulattamiseen. Sulamisen aikana lämpötila ei muutu, ja lämpötasapainossa jäätä ja vettä on yhtä aikaa vain jään sulamislämpötilassa."
         },
         {
-          "text": "Jään sulamislämpötilan yläpuolella, koska vesi on lämpimämpää kuin jää.",
+          "text": "Yli $0\\,{}^\\circ\\text{C}$, koska vesi on lämpimämpää kuin jää.",
           "feedback": "Jos lämpötila olisi sulamislämpötilaa korkeampi, jää sulaisi edelleen ja lämpötila laskisi sulamisen takia. Lämpötasapainossa ei siirry lämpöä, joten jäätä ei voisi olla jäljellä."
         },
         {
-          "text": "Jään sulamislämpötila, koska niin kauan kuin jäätä on jäljellä, siirtyvä lämpö kuluu sulamiseen.",
+          "text": "Täsmälleen $0\\,{}^\\circ\\text{C}$, koska lämpö kuluu jään sulamiseen.",
           "correct": true,
-          "feedback": "Oikein: lämpötasapainossa jäätä ja vettä on yhtä aikaa vain jään sulamislämpötilassa. Lämpö kuluu olomuodon muutokseen eikä muuta lämpötilaa."
+          "feedback": "Oikein: lämpötasapainossa jäätä ja vettä on yhtä aikaa vain jään sulamislämpötilassa $0\\,{}^\\circ\\text{C}$. Lämpö kuluu olomuodon muutokseen eikä muuta lämpötilaa."
         }
       ]
     },
@@ -150,7 +150,7 @@
     {
       "id": "fy3-14-L2-05",
       "level": 2,
-      "text": "Jään ominaissulamislämpöä määritetään kokeella. Hienonnettua jäätä, jonka lämpötila on $0\\,{}^\\circ\\text{C}$, lämmitetään suppilossa $150\\,\\text{W}$:n lämmittimellä. Suppilosta valuu sulanutta vettä mittalasiin. Sulaneen veden massa mitataan minuutin välein (esimerkkiaineisto). Oleta, että kaikki lämmittimen energia sulattaa jäätä.\n\na) Vedä kuvaajaan $(t,\\ m)$ suora pisteiden lomaan. Se kulkee likimain pisteiden $(0\\,\\text{s};\\ 0\\,\\text{g})$ ja $(300\\,\\text{s};\\ 133\\,\\text{g})$ kautta. Laske suoran kulmakertoimen avulla jään ominaissulamislämpö.\n\nb) Vertaa tulosta taulukkoarvoon $334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$ ja nimeä yksi syy eroon.\n\nAnna a)-kohdan tulos vastauslaatikkoon.",
+      "text": "Jään ominaissulamislämpöä määritetään kokeella. Hienonnettua jäätä, jonka lämpötila on $0\\,{}^\\circ\\text{C}$, lämmitetään suppilossa $150\\,\\text{W}$:n lämmittimellä. Suppilosta valuu sulanutta vettä mittalasiin. Sulaneen veden massa mitataan minuutin välein (esimerkkiaineisto). Oleta, että kaikki lämmittimen energia sulattaa jäätä.\n\na) Piirrä $(t,\\ m)$-kuvaaja ja vedä siihen suora pisteiden lomaan. Suora kulkee likimain pisteiden $(0\\,\\text{s};\\ 0\\,\\text{g})$ ja $(300\\,\\text{s};\\ 133\\,\\text{g})$ kautta. Laske suoran kulmakertoimen avulla jään ominaissulamislämpö.\n\nb) Vertaa tulosta taulukkoarvoon $334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$ ja nimeä yksi syy eroon.\n\nAnna a)-kohdan tulos vastauslaatikkoon.",
       "kind": [
         "data",
         "graph",
@@ -196,7 +196,7 @@
     {
       "id": "fy3-14-L2-06",
       "level": 2,
-      "text": "Eristetyssä astiassa on $0{,}30\\,\\text{kg}$ vettä, jonka lämpötila on $20\\,{}^\\circ\\text{C}$. Veteen lisätään $0{,}15\\,\\text{kg}$ jäätä, jonka lämpötila on $-15\\,{}^\\circ\\text{C}$. Opiskelija ratkaisee, kuinka paljon jäätä sulaa, ja kirjoittaa:\n\n\"Vesi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen lämmön $Q_\\text{v} = 4190 \\cdot 0{,}30 \\cdot 20\\,\\text{J} = 25\\,140\\,\\text{J}$. Koko jään sulattaminen vaatisi $334\\,000 \\cdot 0{,}15\\,\\text{J} = 50\\,100\\,\\text{J}$, joten kaikki jää ei sula. Sulaneen jään massa on $25\\,140\\,\\text{J} / 334\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} = 75\\,\\text{g}$.\"\n\na) Mikä virhe laskussa on? Tarkista myös, että opiskelijan päätelmä \"kaikki jää ei sula\" pitää paikkansa.\n\nb) Laske sulaneen jään massa oikein. Anna b)-kohdan tulos grammoina vastauslaatikkoon.",
+      "text": "Eristetyssä astiassa on $0{,}30\\,\\text{kg}$ vettä, jonka lämpötila on $20\\,{}^\\circ\\text{C}$. Veteen lisätään $0{,}15\\,\\text{kg}$ jäätä, jonka lämpötila on $-15\\,{}^\\circ\\text{C}$. Opiskelija ratkaisee, kuinka paljon jäätä sulaa, ja kirjoittaa:\n\n”Vesi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen lämmön $Q_\\text{v} = 25\\,140\\,\\text{J}$. Koko jään sulattaminen vaatisi lämmön $50\\,100\\,\\text{J}$, joten kaikki jää ei sula. Sulaneen jään massa on $m = \\dfrac{25\\,140\\,\\text{J}}{334\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}} = 75\\,\\text{g}$.”\n\na) Mikä virhe laskussa on? Tarkista myös, että opiskelijan päätelmä ”kaikki jää ei sula” pitää paikkansa.\n\nb) Laske sulaneen jään massa oikein. Anna b)-kohdan tulos grammoina vastauslaatikkoon.",
       "kind": [
         "error",
         "reasoning"
@@ -214,25 +214,25 @@
         "experiment",
         "error"
       ],
-      "answer": "Jään pintaan oli tarttunut sulaa vettä, joten jäätä oli vähemmän kuin punnittiin ja sulamiseen kului vähemmän lämpöä.",
+      "answer": "Jään pintaan oli tarttunut sulaa vettä, joten sulavaa jäätä oli vähemmän kuin punnittiin.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Jään pintaan oli tarttunut sulaa vettä, joten jäätä oli vähemmän kuin punnittiin ja sulamiseen kului vähemmän lämpöä.",
+          "text": "Jää oli kylmempää kuin $0\\,{}^\\circ\\text{C}$, joten sen lämmittämiseen kului lisälämpöä.",
+          "feedback": "Tämä muuttaisi tuloksen väärään suuntaan. Jos jää olisi kylmempää, sen lämmittämiseen kuluisi lisälämpöä, ja laskettu sulamislämpö tulisi liian suureksi eikä liian pieneksi."
+        },
+        {
+          "text": "Jään pintaan oli tarttunut sulaa vettä, joten sulavaa jäätä oli vähemmän kuin punnittiin.",
           "correct": true,
           "feedback": "Oikein: vesi punnitaan jään mukana, mutta sen ei tarvitse sulaa. Laskussa kaikkien $0{,}050\\,\\text{kg}$:n oletetaan sulaneen, vaikka lämpöä kului vähemmän, joten tulos jää liian pieneksi."
         },
         {
-          "text": "Jää oli ennen kalorimetriin laittamista kylmempää kuin $0\\,{}^\\circ\\text{C}$, joten sen lämmittämiseen kului lisälämpöä.",
-          "feedback": "Tämä muuttaisi tuloksen väärään suuntaan. Jos jää olisi kylmempää, sen lämmittämiseen kuluisi lisälämpöä, ja laskettu sulamislämpö tulisi liian suureksi eikä liian pieneksi."
+          "text": "Lopputilan lämpötila luettiin liian matalaksi, joten veden lämpötilan lasku näytti suuremmalta.",
+          "feedback": "Tämä muuttaisi tuloksen väärään suuntaan. Jos lopputilan lämpötila luettiin liian matalaksi, veden lämpötilan muutos $T_\\text{v} - T$ näytti todellista suuremmalta, ja laskettu sulamislämpö tulisi liian suureksi eikä liian pieneksi."
         },
         {
-          "text": "Kalorimetrin astia lämpeni veden mukana, joten vesi luovutti osan lämmöstään astiaan.",
-          "feedback": "Tämäkin muuttaisi tuloksen väärään suuntaan. Jos astia ottaa lämpöä, vesi jäähtyy enemmän ja lasku antaa liian suuren sulamislämmön."
-        },
-        {
-          "text": "Veden ominaislämpökapasiteetti on suurempi kuin jään, joten vesi luovuttaa liian vähän lämpöä ja tulos jää pieneksi.",
+          "text": "Veden ominaislämpökapasiteetti on suurempi kuin jään, joten vesi luovuttaa liian vähän lämpöä.",
           "feedback": "Ominaislämpökapasiteettien ero on mukana laskussa, eikä se aiheuta virhettä: vesi luovuttaa juuri sen lämmön, jonka $c_\\text{v} m_\\text{v} \\Delta T$ antaa. Virhe syntyy siitä, että jään massa tai lämpötila poikkeaa oletetusta."
         }
       ]
@@ -286,11 +286,11 @@
           [
             "1",
             "0.0",
-            "8.1"
+            "8.2"
           ],
           [
             "2",
-            "-18.0",
+            "−18.0",
             "6.2"
           ]
         ]

@@ -36,6 +36,7 @@ a["fy3-14-L3-02"] = (0.30 - melted) * 1e3                # ice left = 0,30 kg �
 # to reach 0 °C, so all water freezes and everything ends below 0 °C:
 # c_j m_j (T − T_j) = c_v m_v T_v + s m_v − c_j m_v T  ->  T = (c_v m_v T_v + s m_v + c_j m_j T_j) / (c_j (m_j + m_v))
 a["fy3-14-L3-03"] = (c_v * 0.10 * 10 + s * 0.10 + c_j * 0.50 * (-40)) / (c_j * (0.50 + 0.10))   # (4190 + 33 400 − 42 000) / 1260 = −3,5 °C
+# run 1 (ice 0,0 °C, T = 8,2 °C): s_1 = 4190 · (0,200 · 21,8 − 0,0500 · 8,2) / 0,0500 = 331 010 J/kg -> 331 kJ/kg
 # run 2 (ice −18,0 °C, T = 6,2 °C): s = [c_v m_v (T_v − T) − c_v m_j T − c_j m_j ΔT_j] / m_j
 a["fy3-14-L3-04"] = (c_v * 0.200 * (30.0 - 6.2) - c_v * 0.0500 * 6.2 - c_j * 0.0500 * 18.0) / 0.0500 / 1e3   # 4190 · 4,45 = 18 645,5 J; − 1890 J = 16 755,5 J; / 0,0500 = 335 110 J/kg -> 335 kJ/kg
 # row T_v = 40 °C, T = 8,1 °C (all ice melted): Q_j = c_v m_v T_v − c_v (m_v + m_j) T = 50 280 − 13 575,6 = 36 704,4 J; ice just melts when c_v m_v T_v,min = Q_j

@@ -47,26 +47,26 @@
         "concept"
       ],
       "text": "Tiukkaan kiinni jäänyt lasipurkin teräskansi irtoaa usein helpommin, kun kantta valutetaan hetken kuumalla vedellä. Mikä on syy?",
-      "answer": "Metallikansi laajenee lämmetessään enemmän kuin lasi, joten kansi väljenee purkin suun ympärillä.",
+      "answer": "Teräskansi laajenee lämmetessään lasia enemmän, joten kansi löystyy purkin suun ympärillä.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Metallikansi laajenee lämmetessään enemmän kuin lasi, joten kansi väljenee purkin suun ympärillä.",
-          "correct": true,
-          "feedback": "Oikein: teräksen $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$ on suurempi kuin lasin $9 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, joten lämmin kansi kasvaa lasia enemmän ja löystyy."
-        },
-        {
-          "text": "Kuuma vesi kutistaa metallikantta, koska metallin hiukkaset painuvat lämmetessään lähemmäs toisiaan.",
+          "text": "Kuuma vesi kutistaa metallikannen, koska metallin hiukkaset painuvat lämmetessään lähemmäs toisiaan.",
           "feedback": "Väärin: lämmetessään hiukkasten keskimääräinen etäisyys kasvaa, joten kansi laajenee eikä kutistu."
-        },
-        {
-          "text": "Lasi ja metalli laajenevat yhtä paljon, mutta kuuma vesi tekee kannen reunan liukkaaksi.",
-          "feedback": "Väärin: aineet laajenevat eri määrän, koska niiden lämpötilakertoimet eroavat. Teräksellä $\\alpha$ on suurempi kuin lasilla."
         },
         {
           "text": "Purkin suu pienenee, koska lasin hiukkaset kasvavat lämmetessään ja täyttävät raon.",
           "feedback": "Väärin: hiukkaset eivät kasva lämmetessään, vaan niiden keskimääräiset etäisyydet kasvavat. Lisäksi vesi valutetaan kannen päälle, joten lasi lämpenee vähemmän kuin kansi."
+        },
+        {
+          "text": "Teräskansi laajenee lämmetessään lasia enemmän, joten kansi löystyy purkin suun ympärillä.",
+          "correct": true,
+          "feedback": "Oikein: teräksen $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$ on suurempi kuin lasin $9 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, joten lämmin kansi kasvaa lasia enemmän ja löystyy."
+        },
+        {
+          "text": "Lasi ja teräs laajenevat yhtä paljon, mutta kuuma vesi tekee kannen reunasta liukkaan.",
+          "feedback": "Väärin: aineet laajenevat eri määrän, koska niiden lämpötilakertoimet eroavat. Teräksellä $\\alpha$ on suurempi kuin lasilla."
         }
       ]
     },
@@ -82,11 +82,6 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Ilma, koska kaasun hiukkasia sitovat toisiinsa vain heikot vuorovaikutukset.",
-          "correct": true,
-          "feedback": "Oikein: kaasun hiukkasia sitovat toisiinsa vain heikot vuorovaikutukset, joten hiukkasvälit kasvavat helposti. Ilman $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ on paljon suurempi kuin veden $0{,}21 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ tai teräksen $36 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$."
-        },
-        {
           "text": "Teräs, koska kiinteän aineen hiukkaset värähtelevät lämmetessään kaikkein voimakkaimmin.",
           "feedback": "Väärin: kiinteän aineen hiukkaset ovat sitoutuneet tiukasti paikoilleen, joten hiukkasvälit kasvavat vähän. Teräksellä $\\gamma \\approx 3\\alpha = 36 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$, joka on pienin kolmesta."
         },
@@ -97,6 +92,11 @@
         {
           "text": "Kaikki yhtä paljon, koska lämpötilan muutos on kaikilla näytteillä sama.",
           "feedback": "Väärin: sama lämpötilan muutos ei riitä, vaan suhteellinen laajeneminen riippuu myös lämpötilakertoimesta, joka on aineelle ominainen. Kerroin on kaasulla suurin ja kiinteällä aineella pienin."
+        },
+        {
+          "text": "Ilma, koska kaasun hiukkasia sitovat toisiinsa vain heikot vuorovaikutukset.",
+          "correct": true,
+          "feedback": "Oikein: kaasun hiukkasia sitovat toisiinsa vain heikot vuorovaikutukset, joten hiukkasvälit kasvavat helposti ja vakiopaineessa kaasu saa laajentua vapaasti. Ilman $\\gamma = 3{,}4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ on paljon suurempi kuin veden $0{,}21 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ tai teräksen $36 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$."
         }
       ]
     },
@@ -106,7 +106,7 @@
       "kind": [
         "error"
       ],
-      "text": "Oppilas laski, kuinka paljon $2{,}0\\,\\text{m}$ pitkä alumiinitanko ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) pitenee, kun sen lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $65\\,{}^\\circ\\text{C}$:seen. Hän kirjoitti $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2{,}0\\,\\text{m} \\cdot 65 = 3{,}0\\,\\text{mm}$.\n\nTässä on virhe. Laske tangon pituuden muutos oikein. Anna vastaus millimetreinä.",
+      "text": "Oppilas laski, kuinka paljon $2{,}0\\,\\text{m}$ pitkä alumiinitanko ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) pitenee, kun sen lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $65\\,{}^\\circ\\text{C}$:seen. Hän kirjoitti $\\Delta L = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2{,}0\\,\\text{m} \\cdot 65 = 3{,}0\\,\\text{mm}$ (yksiköt jätetty pois).\n\nTässä on virhe. Laske tangon pituuden muutos oikein. Anna vastaus millimetreinä.",
       "answer": 2.3,
       "unit": "mm",
       "tolerance": 0.02
@@ -198,7 +198,7 @@
         "data",
         "experiment"
       ],
-      "text": "Esimerkkiaineisto: ryhmä mittasi mittakellolla $0{,}800\\,\\text{m}$ pitkän metallisauvan pituuden muutoksen $\\Delta L$, kun sauvaa lämmitettiin lämpötilasta $20\\,{}^\\circ\\text{C}$. Mittakellon lukematarkkuus on $0{,}01\\,\\text{mm}$.\n\na) Laske sauvan aineen pituuden lämpötilakerroin $\\alpha$ yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$ taulukon ensimmäisen ja viimeisen pisteen avulla.\n\nb) Päättele oppitunnin taulukosta (teräs 12, alumiini 23, kupari 17, kaikki yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$), mistä metallista sauva on tehty, ja selitä, miksi pisteiden ei tarvitse olla täsmälleen suoralla.\n\nVastauskenttään tulee kohdan a) tulos.",
+      "text": "Esimerkkiaineisto: ryhmä mittasi mittakellolla $0{,}800\\,\\text{m}$ pitkän metallisauvan pituuden muutoksen $\\Delta L$, kun sauvaa lämmitettiin lämpötilasta $20\\,{}^\\circ\\text{C}$. Mittakellon lukematarkkuus on $0{,}01\\,\\text{mm}$.\n\na) Laske sauvan aineen pituuden lämpötilakerroin $\\alpha$ yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$ taulukon ensimmäisen ja viimeisen pisteen avulla.\n\nb) Päättele oppitunnin taulukosta (teräs 12, alumiini 23, kupari 17, kaikki yksikössä $10^{-6}\\,\\tfrac{1}{\\text{K}}$), mistä metallista sauva on tehty, ja selitä, miksi mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla.\n\nVastauskenttään tulee kohdan a) tulos.",
       "answer": 22.9,
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.03,
@@ -299,7 +299,7 @@
         "rows": [
           [
             "talven alin",
-            "-32"
+            "−32"
           ],
           [
             "asennus",

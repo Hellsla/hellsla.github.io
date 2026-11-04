@@ -44,15 +44,16 @@ a["fy3-10-L3-03"] = dn * 0.029                           # Δm = Δn M = 24,80 m
 # Added exercises (bank P1)
 # L1-07: balloon, n constant: V₂ = V₁ p₁T₂/(p₂T₁) = 2,50 l · 101 · 264,15 / (98 · 294,15) = 2,314 l -> 2,31 l
 a["fy3-10-L1-07"] = 2.50 * 101 * K(-9) / (98 * K(21))
-# L2-05: tyre, V constant: n₂/n₁ = p₂T₁/(p₁T₂) = 224 · 278,15 / (220 · 299,15) = 0,9467; leaked share 1 − 0,9467 = 5,33 %
-a["fy3-10-L2-05"] = (1 - 224 * K(5.0) / (220 * K(26.0))) * 100
+# L2-05: tyre, V constant: n₂/n₁ = p₂T₁/(p₁T₂) = 305 · 278,15 / (300 · 299,15) = 0,9453; leaked share 1 − 0,9453 = 5,47 %
+a["fy3-10-L2-05"] = (1 - 305 * K(5.0) / (300 * K(26.0))) * 100
 # L2-06: slope read from the fitted line (280 K; 115,4 cm³) and (360 K; 148,0 cm³): k = 0,4075 cm³/K, n = k p / R = 4,953 mmol
 k_ruisku = (148.0 - 115.4) * 1e-6 / (360 - 280)           # m³/K
 a["fy3-10-L2-06"] = k_ruisku * 101e3 / R * 1000           # mmol
-# L3-04: CO₂ 15,0 bar, 10,0 l, 27 °C; Z interpolated between 10 bar (0,92) and 20 bar (0,84) = 0,88
-n_id_co2 = 15.0e5 * 0.0100 / (R * K(27))                  # ideal n = pV/(RT) = 6,014 mol
-Z_15 = (0.92 + 0.84) / 2                                  # linear interpolation: 0,88
-a["fy3-10-L3-04"] = n_id_co2 / Z_15                       # real n = n_ideal / Z = 6,834 mol -> 6,8 mol
+# L3-04: helium cylinder 20,0 l: (5,0 °C; 14,2 bar), (21,0 °C; 11,0 bar), (21,0 °C; 6,5 bar); n = pV/(RT) at each moment
+n_h1 = 14.2e5 * 0.0200 / (R * K(5.0))                     # 12,29 mol
+n_h3 = 6.5e5 * 0.0200 / (R * K(21.0))                     # 5,318 mol
+a["fy3-10-L3-04"] = (n_h1 - n_h3) * 4.0                   # used mass m = Δn M = 6,968 mol · 4,0 g/mol = 27,87 g -> 28 g
+# (c) balloon n = 101 kPa · 5,0 l / (R 294,15 K) = 0,2066 mol: 33,7 balloons used; 21,7 more down to 101 kPa
 # L3-05: weather balloon, n = p₀V₀/(RT₀) = 105,4 mol; V₁₀ = nRT/p at 10 km (26,5 kPa, −50,0 °C) = 7,379 m³ (V₁₅ = 15,69 m³ > 12,0 m³)
 n_pallo = 101e3 * 2.50 / (R * K(15.0))
 a["fy3-10-L3-05"] = n_pallo * R * K(-50.0) / 26.5e3

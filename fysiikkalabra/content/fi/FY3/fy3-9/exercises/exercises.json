@@ -53,11 +53,11 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Laskeva suora, koska paine pienenee saman verran jokaista lisättyä millilitraa kohti.",
+          "text": "Laskeva suora, koska paine $p$ pienenee saman verran jokaista lisättyä millilitraa kohti.",
           "feedback": "Kun tilavuus kaksinkertaistuu, paine puolittuu. Jos kuvaaja olisi suora, paine pienenisi saman verran jokaista lisättyä millilitraa kohti, ja se ehtisi pudota nollaan. Boylen laissa paine lähestyy nollaa mutta ei saavuta sitä."
         },
         {
-          "text": "Nouseva suora, koska suuremmassa tilavuudessa on enemmän hiukkasia ja paine kasvaa.",
+          "text": "Nouseva suora, koska tilavuuden $V$ kasvaessa ilmassa on enemmän hiukkasia ja paine kasvaa.",
           "feedback": "Ilmaa on suljettuna koko ajan yhtä paljon, joten hiukkasten määrä ei kasva. Kun tilavuus kasvaa, hiukkaset törmäävät seinämiin harvemmin ja paine pienenee."
         },
         {
@@ -66,7 +66,7 @@
           "feedback": "Oikein: isotermisessä tilanmuutoksessa $pV$ on vakio, joten $p = \\text{vakio} \\cdot \\dfrac{1}{V}$. Kuvaaja on laskeva kaari, joka lähestyy akseleita mutta ei kohtaa niitä."
         },
         {
-          "text": "Vaakasuora, koska lämpötila $T$ on vakio ja siksi myös paine $p$ on vakio.",
+          "text": "Vaakasuora, koska lämpötila $T$ on vakio ja siksi myös paine on vakio.",
           "feedback": "Vakiolämpötila ei tarkoita vakiopainetta. Kun tilavuutta muutetaan, hiukkasten törmäystiheys seinämiin muuttuu, joten paine muuttuu, vaikka lämpötila pysyy samana."
         }
       ]
@@ -95,17 +95,17 @@
           "feedback": "Kun tilavuus kasvaa, sen käänteisluku $1/V$ pienenee. Suora $(1/V,\\,p)$-kuvaajassa tarkoittaa siis, että paine on suoraan verrannollinen käänteislukuun $1/V$ eli kääntäen verrannollinen tilavuuteen."
         },
         {
-          "text": "Paine on kääntäen verrannollinen tilavuuteen, joten tulo $pV$ on vakio.",
-          "correct": true,
-          "feedback": "Oikein: suora, joka kulkee origon kautta, tarkoittaa $p = k \\cdot \\dfrac{1}{V}$, ja kulmakerroin on $k = pV$. Boylen laki pätee mittausepävarmuuden rajoissa."
-        },
-        {
           "text": "Lämpötila nousi mittausten aikana, koska pisteet $(V,\\,p)$ eivät ole kaarella.",
           "feedback": "Mittauksessa piirrettiin $(1/V,\\,p)$-pisteet, ei $(V,\\,p)$-pisteitä. Jos lämpötila olisi noussut, pisteet eivät asettuisi origon kautta kulkevalle suoralle vaan poikkeaisivat siitä."
         },
         {
           "text": "Paine on kääntäen verrannollinen tilavuuden neliöön, joten tulo $pV^2$ on vakio.",
           "feedback": "Tällöin $(1/V,\\,p)$-pisteet olisivat kaarella, koska $p$ olisi suoraan verrannollinen suureeseen $1/V^2$. Suora kuvaaja kertoo, että $p$ on suoraan verrannollinen suureeseen $1/V$."
+        },
+        {
+          "text": "Paine on kääntäen verrannollinen tilavuuteen, joten tulo $pV$ on vakio.",
+          "correct": true,
+          "feedback": "Oikein: suora, joka kulkee origon kautta, tarkoittaa $p = k \\cdot \\dfrac{1}{V}$, ja kulmakerroin on $k = pV$. Boylen laki pätee mittausepävarmuuden rajoissa."
         }
       ]
     }
@@ -147,10 +147,9 @@
       "id": "fy3-9-L2-05",
       "level": 2,
       "kind": [
-        "data",
-        "graph"
+        "data"
       ],
-      "text": "Kaksi suljettua ilmamäärää lämmitetään vesihauteessa. Astiassa A on tiivis jäykkä pullo, ja siinä mitataan ilman paine $p$. Astiassa B on ruisku, jonka mäntä liikkuu vapaasti ulkoilman paineessa, ja siinä luetaan ilman tilavuus $V$. Molempien ilma on vesihauteen lämpötilassa $\\theta$ (taulukko, esimerkkiaineisto).\n\na) Laske pullon A jokaiselle riville suhteet $p/\\theta$ ja $p/T$ sekä ruiskun B jokaiselle riville suhde $V/T$, kun $T$ on kelvinlämpötila. Päättele, kumpi sarja esittää isokoorista ja kumpi isobaarista tilanmuutosta, ja perustele laskujesi avulla, miksi lämpötilan on oltava kelvineinä.\n\nb) Ennusta pullon A paine, kun vesihaude kiehuu ja sen lämpötila on $100\\,{}^\\circ\\text{C}$.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "text": "Kaksi suljettua ilmamäärää lämmitetään vesihauteessa. Astiassa A mitataan ilman paine $p$ ja astiassa B ilman tilavuus $V$. Molempien ilma on vesihauteen lämpötilassa $\\theta$ (taulukko, esimerkkiaineisto).\n\na) Laske astian A jokaiselle riville suhteet $p/\\theta$ ja $p/T$ sekä astian B jokaiselle riville suhde $V/T$, kun $T$ on kelvinlämpötila. Päättele laskujesi avulla, kumpi astia esittää isokoorista ja kumpi isobaarista tilanmuutosta, ja perustele, kun $T$ on kelvinlämpötila,, miksi lämpötilan on oltava kelvineinä.\n\nb) Ennusta astian A paine, kun vesihaude kiehuu ja sen lämpötila on $100\\,{}^\\circ\\text{C}$.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "answer": 127,
       "unit": "kPa",
       "tolerance": 0.02,
@@ -298,7 +297,7 @@
         "reasoning",
         "model"
       ],
-      "text": "Oppilas tutkii kertakäyttöruiskuun suljettua ilmaa. Aluksi ilmaa on $40{,}0\\,\\text{ml}$ paineessa $101\\,\\text{kPa}$ ja lämpötilassa $20{,}0\\,{}^\\circ\\text{C}$. Hän puristaa ilman kokoon kahdella tavalla. Hitaassa puristuksessa lämpötila pysyy samana. Nopeassa puristuksessa mäntä painetaan kasaan sekunnin murto-osassa, ja paine luetaan heti, kun mäntä on pysähtynyt: ilma ei ole ehtinyt luovuttaa energiaa ympäristöön (taulukko, esimerkkiaineisto).\n\na) Laske tulo $pV$ jokaiselle riville kummassakin sarjassa. Päättele, kummassa puristuksessa Boylen laki pätee.\n\nb) Selitä, miksi nopeassa puristuksessa paine on suurempi kuin Boylen laki ennustaa. Mitä paineelle tapahtuu, kun mäntä pidetään paikallaan ja ilma jäähtyy takaisin lämpötilaan $20{,}0\\,{}^\\circ\\text{C}$?\n\nc) Ajattele nopea puristus kahtena vaiheena: ensin isoterminen puristus tilavuuteen $10{,}0\\,\\text{ml}$ ja sitten ilman lämpeneminen vakiotilavuudessa taulukon paineeseen. Laske tämän avulla ilman lämpötila celsiusasteina heti nopean puristuksen jälkeen, kun tilavuus on $10{,}0\\,\\text{ml}$.\n\nKirjoita vastauslaatikkoon kohdan c) tulos.",
+      "text": "Oppilas tutkii kertakäyttöruiskuun suljettua ilmaa. Aluksi ilmaa on $40{,}0\\,\\text{ml}$ paineessa $101\\,\\text{kPa}$ ja lämpötilassa $20{,}0\\,{}^\\circ\\text{C}$. Hän puristaa ilman kokoon kahdella tavalla. Hitaassa puristuksessa lämpötila pysyy samana. Nopeassa puristuksessa mäntä painetaan kasaan sekunnin murto-osassa, ja paine luetaan heti, kun mäntä on pysähtynyt: ilma on ehtinyt luovuttaa ympäristöön vain osan energiasta (taulukko, esimerkkiaineisto).\n\na) Laske tulo $pV$ jokaiselle riville kummassakin sarjassa. Päättele, kummassa puristuksessa Boylen laki pätee.\n\nb) Selitä, miksi nopeassa puristuksessa paine on suurempi kuin Boylen laki ennustaa. Mitä paineelle tapahtuu, kun mäntä pidetään paikallaan ja ilma jäähtyy takaisin lämpötilaan $20{,}0\\,{}^\\circ\\text{C}$?\n\nc) Ajattele nopea puristus kahtena vaiheena: ensin isoterminen puristus tilavuuteen $10{,}0\\,\\text{ml}$ ja sitten ilman lämpeneminen vakiotilavuudessa taulukon paineeseen. Laske tämän avulla ilman lämpötila celsiusasteina heti nopean puristuksen jälkeen, kun tilavuus on $10{,}0\\,\\text{ml}$.\n\nKirjoita vastauslaatikkoon kohdan c) tulos.",
       "answer": 76,
       "unit": "°C",
       "tolerance": 0.03,
@@ -341,7 +340,7 @@
         "reasoning",
         "model"
       ],
-      "text": "Vapaasukeltaja täyttää keuhkonsa pinnalla ja sukeltaa järveen pidättäen hengitystään. Keuhkojen ilman tilavuus $V$ mitattiin eri syvyyksillä $h$ (taulukko, esimerkkiaineisto). Ilmanpaine on $101\\,\\text{kPa}$, veden tiheys $1000\\,\\text{kg/m}^3$ ja $g = 9{,}81\\,\\text{m/s}^2$. Oleta, että ilman lämpötila ja määrä pysyvät samoina ja että keuhkojen ilman paine on koko ajan sama kuin ympäröivän veden paine.\n\na) Laske ympäröivä kokonaispaine $p$ jokaisessa syvyydessä ja tulo $pV$. Päättele laskujesi perusteella, noudattaako keuhkojen ilma Boylen lakia.\n\nb) Oleta mallina, että keuhkot eivät voi puristua pienemmäksi kuin $1{,}5\\,\\textsf{l}$. Missä syvyydessä keuhkojen ilman tilavuus saavuttaisi tämän rajan?\n\nc) Kuinka monta kertaa suurempi paine on kohdan b) syvyydessä kuin pinnalla? Perustele tämän avulla, miksi tilavuus on pienentynyt juuri $6{,}0\\,\\textsf{l}$:sta $1{,}5\\,\\textsf{l}$:aan.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "text": "Vapaasukeltaja täyttää keuhkonsa pinnalla ja sukeltaa järveen pidättäen hengitystään. Keuhkojen ilman tilavuus $V$ mitattiin eri syvyyksillä $h$ (taulukko, esimerkkiaineisto). Ilmanpaine on $101\\,\\text{kPa}$, veden tiheys $1000\\,\\text{kg/m}^3$ ja $g = 9{,}81\\,\\text{m/s}^2$. Oleta, että ilman lämpötila ja määrä pysyvät samoina ja että keuhkojen ilman paine on koko ajan sama kuin ympäröivän veden paine.\n\na) Laske ympäröivä kokonaispaine $p$ jokaisessa syvyydessä ja tulo $pV$. Päättele laskujesi perusteella, noudattaako keuhkojen ilma Boylen lakia.\n\nb) Oleta mallina, että keuhkot eivät voi puristua pienemmäksi kuin $1{,}5\\,\\textsf{l}$. Missä syvyydessä keuhkojen ilman tilavuus saavuttaisi tämän rajan?\n\nc) Mikä on paineen suhde kohdan b) syvyydessä ja pinnalla, ja mikä on keuhkojen tilavuuksien suhde pinnalla ja tässä syvyydessä? Vertaa suhteita.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "answer": 30,
       "unit": "m",
       "tolerance": 0.05,
