@@ -1043,3 +1043,7 @@ ul.cmap-words>li{margin:.35rem 0}
 ul.cmap-words ul{margin:.1rem 0 0;padding-left:1.1rem;list-style:none}
 ul.cmap-words .cmap-phrase{font-style:italic;color:var(--ink-2)}
 a.cmap-node .fig-tex{color:#1f2933}
+.cmap-key{display:flex;flex-wrap:wrap;gap:.4rem 2rem;margin:.7rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
+.cmap-key>ul{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin:0;padding:0;list-style:none}
+.cmap-key li{display:flex;align-items:center;gap:.4rem}
+.cmap-key-icon{flex:none;display:block}

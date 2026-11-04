@@ -3001,8 +3001,14 @@
     "title": "Käsitekartta",
     "focus": "Kartan kysymys:",
     "region": "Moduulin käsitekartta",
-    "caption": "Lue kartta ylhäältä alas: kaksi käsitettä ja niiden välinen sana muodostavat väitteen, esimerkiksi ”mittaustulos sisältää aina mittausvirheen”. Katkoviiva yhdistää eri haaroja. Käsitteen laatikko vie luvun alkuun.",
+    "caption": "Lue kartta ylhäältä alas: kaksi käsitettä ja niiden välinen sana muodostavat väitteen, esimerkiksi ”mittaustulos sisältää aina mittausvirheen”. Laatikon muoto kertoo, onko käsite ilmiö, suure, laki tai jokin muu, ja väri kertoo moduulin aihealueen. Katkoviiva yhdistää eri haaroja. Käsitteen laatikko vie luvun alkuun.",
     "scroll": "Vieritä karttaa sivusuunnassa tai avaa kartta sanoina alta.",
-    "words": "Kartta sanoina"
+    "words": "Kartta sanoina",
+    "type_ilmio": "ilmiö",
+    "type_suure": "suure",
+    "type_laki": "laki tai malli",
+    "type_kasite": "muu käsite tai työtapa",
+    "key_types": "Laatikon muoto kertoo käsitteen lajin",
+    "key_themes": "Väri kertoo aihealueen"
   }
 }

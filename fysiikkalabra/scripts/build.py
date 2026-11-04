@@ -781,7 +781,7 @@ def build_language(lang):
                 f'<p class="lead">{esc(T("site.module_question." + code))}</p>'
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
                 + f'<h2>{T("site.course_lessons")}</h2>{items}'
-                + conceptmaps.section(code, T, lang, lambda ch: f"{ch}.html" if ch in built_ids else None)   # Käsitekartta (teacher 2026-11-04)
+                + conceptmaps.section(code, T, lang, lambda ch: f"{ch}.html" if ch in built_ids else None, mod)   # Käsitekartta (teacher 2026-11-04)
                 + '<div class="mod-more">'
                 + (f'<section><h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
                    f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul></section>' if code in practice_built else "")

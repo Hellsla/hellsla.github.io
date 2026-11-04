@@ -3001,8 +3001,14 @@
     "title": "Concept map",
     "focus": "Focus question:",
     "region": "Concept map of the module",
-    "caption": "Read the map from top to bottom: two concepts and the words between them make a statement, for example “a measurement result always contains a measurement error”. A dashed line joins different branches. A concept’s box takes you to its chapter.",
+    "caption": "Read the map from top to bottom: two concepts and the words between them make a statement, for example “a measurement result always contains a measurement error”. The shape of a box tells whether the concept is a phenomenon, a quantity, a law or something else, and its colour gives the module’s topic. A dashed line joins different branches. A concept’s box takes you to its chapter.",
     "scroll": "Scroll the map sideways, or open the map in words below.",
-    "words": "The map in words"
+    "words": "The map in words",
+    "type_ilmio": "phenomenon",
+    "type_suure": "quantity",
+    "type_laki": "law or model",
+    "type_kasite": "other concept or method",
+    "key_types": "The shape of a box tells the kind of concept",
+    "key_themes": "The colour tells the topic"
   }
 }

@@ -11,13 +11,15 @@ The data is `kasitekartat/<MODULE>.json`, written by hand (the layout is part of
     {"module": "FY1", "width": 1200, "height": 900,
      "focus": {"fi": "...?", "en": "...?", "fi-easy": "...?"},
      "nodes": [{"id": "fysiikka", "x": 600, "y": 60, "kind": "root" | "concept" | "example",
-                "label": {"fi": "fysiikka", "en": "physics"}, "chapter": "fy1-1", "quantity": "velocity"}],
+                "type": "ilmio" | "suure" | "laki" | "kasite", "label": {"fi": "fysiikka", "en": "physics"}, "chapter": "fy1-1"}],
      "links": [{"from": "fysiikka", "to": "ilmio", "label": {"fi": "tutkii", "en": "studies"},
                 "cross": false, "via": [[x, y]], "at": 0.5, "dx": 0, "dy": 0}]}
 
 A label is a LaTeX string inside `$…$` or plain words (drawn as `\\text{}`); `\\n` breaks a box onto two lines.
 fi-easy falls back to fi, any other language to its own text and then to fi (the check reports a missing one).
-`quantity` colours a box's border by the course rule (velocity blue, acceleration orange, force red, CLAUDE.md).
+A concept's `type` gives its box's shape (ilmio, suure, laki for a law or model, kasite for anything else) and its
+chapter's theme (curriculum.json "themes") the box's colour; the key under the map names both. A symbol of velocity,
+acceleration or force in a label is coloured by the course rule (\\textcolor{#1971c2}{v}, #e8590c, #c92a2a).
 `chapter` is the chapter that teaches the concept: on the page the box links to it when it is published.
 
 `python scripts/conceptmaps.py check` validates every map; `python scripts/conceptmaps.py svg FY1 [lang]` prints one.
@@ -35,6 +37,13 @@ VELOCITY, ACCEL, FORCE = "#1971c2", "#e8590c", "#c92a2a"   # scripts/fbd.py: the
 QUANTITY = {"velocity": VELOCITY, "acceleration": ACCEL, "force": FORCE}
 ACCENT, ACCENT_SOFT, PAPER, LINK, CROSS = "#1a4d2e", "#ecf5ee", "#f6f1e6", "#5b6472", "#8a5a1f"
 SIZE = {"root": 22, "concept": 19, "example": 17}
+# Box shape by type (teacher 2026-11-04: "eri laatikoilla erotettuna ilmiöt, lait ja suureet"): a phenomenon a pill,
+# a quantity a square-cornered box, a law or model a double frame, any other concept (a way of working, an idea) a
+# rounded box. Colour by the module's theme (curriculum.json "themes", the chapter cards' headings; "samoin väreillä
+# eri aihealueet"); none of them is the blue, orange or red of velocity, acceleration and force.
+TYPES = ("ilmio", "suure", "laki", "kasite")
+THEMES = [("#0b7285", "#e3f5f8"), ("#6741d9", "#f0ecff"), ("#8f6a0c", "#fbf2d9"), ("#a61e4d", "#fcebf1"), ("#2b8a3e", "#e8f6eb")]
+CURRICULUM = json.loads((ROOT / "curriculum.json").read_text())
 LINK_SIZE = 15.5
 PAD_X, LINE_H = 16, 26
 
@@ -67,17 +76,37 @@ def tex(s):
 def width_of(s, size):
     """About the rendered width of a label line (KaTeX Main); the browser check measures the real one."""
     words = len(re.sub(r"\$[^$]*\$", "", s))
-    maths = sum(visible_len(m) for m in re.findall(r"\$([^$]*)\$", s))
+    maths = sum(visible_len(re.sub(r"\\textcolor\{[^{}]*\}", "", m)) for m in re.findall(r"\$([^$]*)\$", s))
     return (words * 0.5 + maths * 0.55) * size
 
 
 def box(node, lang):
     lines = text_of(node["label"], lang).split("\n")
     size = SIZE[node.get("kind", "concept")]
-    w = max(width_of(l, size) for l in lines) + 2 * PAD_X + (8 if node.get("kind") == "root" else 0)
+    h = len(lines) * size * 1.35 + (22 if node.get("kind") == "root" else 16 if node.get("type") != "laki" else 22)
+    w = max(width_of(l, size) for l in lines) + 2 * PAD_X + (8 if node.get("kind") == "root" else 0) \
+        + (h * 0.3 if node.get("type") == "ilmio" else 8 if node.get("type") == "laki" else 0)
     w = max(w, node.get("min_w", 0))
-    h = len(lines) * size * 1.35 + (22 if node.get("kind") == "root" else 16)
     return lines, size, w, h
+
+
+def theme_of(code, node):
+    """The index of the module theme the node's chapter belongs to (or its own "theme")."""
+    if "theme" in node: return node["theme"]
+    mod = CURRICULUM.get(code, {}); order = [l["id"] for l in mod.get("lessons", [])]
+    firsts = [order.index(th["first"]) for th in mod.get("themes", []) if th["first"] in order]
+    if node.get("chapter") not in order or not firsts: return 0
+    i = order.index(node["chapter"])
+    return max(k for k, f in enumerate(firsts) if f <= i) if any(f <= i for f in firsts) else 0
+
+
+def shape(kind_type, x, y, w, h, stroke, fill, sw=2):
+    """The outline of a box of this type."""
+    if kind_type == "ilmio": return f'<rect x="{n(x)}" y="{n(y)}" width="{n(w)}" height="{n(h)}" rx="{n(h / 2)}" fill="{fill}" stroke="{stroke}" stroke-width="{sw:g}"/>'
+    if kind_type == "suure": return f'<rect x="{n(x)}" y="{n(y)}" width="{n(w)}" height="{n(h)}" rx="2" fill="{fill}" stroke="{stroke}" stroke-width="{sw:g}"/>'
+    if kind_type == "laki": return (f'<rect x="{n(x)}" y="{n(y)}" width="{n(w)}" height="{n(h)}" rx="5" fill="{fill}" stroke="{stroke}" stroke-width="{sw:g}"/>'
+                                    f'<rect x="{n(x + 4)}" y="{n(y + 4)}" width="{n(w - 8)}" height="{n(h - 8)}" rx="3" fill="none" stroke="{stroke}" stroke-width="1.25"/>')
+    return f'<rect x="{n(x)}" y="{n(y)}" width="{n(w)}" height="{n(h)}" rx="5" fill="{fill}" stroke="{stroke}" stroke-width="{sw:g}"/>'
 
 
 def edge_point(cx, cy, w, h, tx, ty, gap=3):
@@ -162,11 +191,12 @@ def svg(m, lang="fi", href=None):
         x, y = nd["x"] - w / 2, nd["y"] - h / 2
         if kind == "root": fill, stroke, sw, color, dash = ACCENT, ACCENT, 2, WHITE, ""
         elif kind == "example": fill, stroke, sw, color, dash = PAPER, "#b9ae95", 1.5, INK, ' stroke-dasharray="5 4"'
-        else: fill, stroke, sw, color, dash = WHITE, QUANTITY.get(nd.get("quantity"), INK), 2.5 if nd.get("quantity") else 2, INK, ""
-        rect = f'<rect x="{n(x)}" y="{n(y)}" width="{n(w)}" height="{n(h)}" rx="{12 if kind != "example" else 8}" fill="{fill}" stroke="{stroke}" stroke-width="{sw:g}"{dash}/>'
+        else:
+            stroke, fill = THEMES[theme_of(m["module"], nd) % len(THEMES)]; sw, color, dash = 2, INK, ""
+        if kind == "concept": rect = shape(nd.get("type", "kasite"), x, y, w, h, stroke, fill, sw)
+        else: rect = f'<rect x="{n(x)}" y="{n(y)}" width="{n(w)}" height="{n(h)}" rx="{12 if kind != "example" else 8}" fill="{fill}" stroke="{stroke}" stroke-width="{sw:g}"{dash}/>'
         top = nd["y"] - len(lines) * size * 1.35 / 2
-        txt = "".join(fo(x + 4, top + i * size * 1.35, w - 8, size * 1.35, l, size, QUANTITY.get(nd.get("quantity"), color) if kind == "concept" and nd.get("quantity") else color)
-                      for i, l in enumerate(lines))
+        txt = "".join(fo(x + 4, top + i * size * 1.35, w - 8, size * 1.35, l, size, color) for i, l in enumerate(lines))
         g = rect + txt
         url = href(nd["chapter"]) if href and nd.get("chapter") else None
         if url:
@@ -198,14 +228,28 @@ def propositions(m, lang):
     return f'<ul class="cmap-words">{"".join(out)}</ul>'
 
 
-def section(code, T, lang, href=None):
-    """The module page's Käsitekartta section, or "" when the module has no map."""
+def legend(m, T, mod):
+    """The key under the map: the four box shapes and the module's themes in their colours (HTML, so it wraps on a phone)."""
+    def sw(t, stroke, fill):
+        return f'<svg class="cmap-key-icon" viewBox="0 0 56 30" width="48" height="26" aria-hidden="true">{shape(t, 3, 3, 50, 24, stroke, fill, 2)}</svg>'
+    used = {nd.get("type", "kasite") for nd in m["nodes"] if nd.get("kind", "concept") == "concept"}
+    kinds = "".join(f'<li>{sw(t, INK, WHITE)}{T("cmap.type_" + t)}</li>' for t in TYPES if t in used)
+    themes = {theme_of(m["module"], nd) for nd in m["nodes"] if nd.get("kind", "concept") == "concept"}
+    ths = "".join(f'<li>{sw("kasite", *THEMES[i % len(THEMES)])}{html.escape(th["title"])}</li>' for i, th in enumerate(mod.get("themes", [])) if i in themes)
+    return (f'<div class="cmap-key"><ul aria-label="{T("cmap.key_types")}">{kinds}</ul>'
+            + (f'<ul aria-label="{T("cmap.key_themes")}">{ths}</ul>' if ths else "") + "</div>")
+
+
+def section(code, T, lang, href=None, mod=None):
+    """The module page's Käsitekartta section, or "" when the module has no map. mod: the module in this language
+    (its themes' titles for the key)."""
     m = load(code)
     if not m: return ""
+    mod = mod or CURRICULUM.get(code, {})
     return (f'<section class="cmap" id="kasitekartta"><h2>{T("cmap.title")}</h2>'
             f'<p class="cmap-focus"><span class="cmap-focus-label">{T("cmap.focus")}</span> {html.escape(text_of(m["focus"], lang))}</p>'
             f'<figure class="cmap-fig"><div class="cmap-scroll" tabindex="0" role="region" aria-label="{T("cmap.region")}">{svg(m, lang, href)}</div>'
-            f'<figcaption>{T("cmap.caption")} <span class="cmap-scroll-hint">{T("cmap.scroll")}</span></figcaption></figure>'
+            + legend(m, T, mod) + f'<figcaption>{T("cmap.caption")} <span class="cmap-scroll-hint">{T("cmap.scroll")}</span></figcaption></figure>'
             f'<details class="cmap-text"><summary>{T("cmap.words")}</summary>{propositions(m, lang)}</details></section>')
 
 
@@ -246,7 +290,8 @@ def check():
             for lang, t in (nd["label"].items() if isinstance(nd["label"], dict) else []):
                 if re.search(r"[×÷→]|\\vec|\\mathbf", t): errors.append(f"{code}: node {nd['id']} {lang}: notation (× ÷ \\vec \\mathbf)")
                 if re.search(r"[α-ωΔρ²³]", re.sub(r"\$[^$]*\$", "", t)): errors.append(f"{code}: node {nd['id']} {lang}: Unicode maths outside LaTeX")
-            if nd.get("quantity") and nd["quantity"] not in QUANTITY: errors.append(f"{code}: node {nd['id']}: unknown quantity")
+            if nd.get("kind", "concept") == "concept" and nd.get("type") not in TYPES: errors.append(f"{code}: node {nd['id']}: type must be one of {TYPES}")
+            if nd.get("chapter") and nd["chapter"] not in [l["id"] for l in CURRICULUM.get(code, {}).get("lessons", [])]: errors.append(f"{code}: node {nd['id']}: unknown chapter")
         for ln in m["links"]:
             for end in ("from", "to"):
                 if ln[end] not in ids: errors.append(f"{code}: link to unknown node {ln[end]}")
