@@ -39,6 +39,74 @@
       "answer": 14,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L1-06",
+      "level": 1,
+      "text": "A wooden door handle and a metal door handle have been in a room for a long time, and both are at room temperature. The metal handle still feels colder than the wooden one. Which of the following explains this?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The metal conducts heat away from the skin faster than the wood does, so the temperature of the skin drops more.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The metal is at a lower temperature than the wood in the room, because it cannot keep heat inside itself.",
+          "feedback": "Objects that have been in a room for a long time are in thermal equilibrium with their surroundings, so both are at the same temperature as the room. The sensation depends on how fast heat moves away from the hand, not on the handle's own temperature."
+        },
+        {
+          "text": "The metal produces cold, which flows from the handle into the hand when the handle is touched for a moment.",
+          "feedback": "Cold is not something that flows. Because of the temperature difference, there is a net transfer of energy from the warmer object to the colder one, here from the hand to the handle, and the metal takes it in faster."
+        },
+        {
+          "text": "The internal energy of the metal is smaller than that of the wood, so the metal is colder than the wood even in the room.",
+          "feedback": "Temperature and internal energy are different things, and the internal energies of different materials cannot be deduced from temperature alone. In equilibrium both are at the temperature of the room, so internal energy does not explain the different feel."
+        },
+        {
+          "text": "The metal conducts heat away from the skin faster than the wood does, so the temperature of the skin drops more.",
+          "feedback": "Correct: the thermal conductivity of metal is large, so energy moves from the warm hand into the metal faster than into the wood. The skin cools more, and so the metal feels colder even though both are at room temperature.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy3-16-L1-07",
+      "level": 1,
+      "text": "Heat is conducted through the wall of a cool bag from outside into the ice pack all the time. Still, the temperature inside the bag stays at $0\\,{}^\\circ\\text{C}$ until the ice has melted. Which of the following explains this?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The energy entering the bag melts ice and does not raise the temperature until all the ice has melted.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The ice produces cold, which cancels the heat entering the bag and keeps the temperature unchanged.",
+          "feedback": "Ice does not produce cold. It cools because it absorbs energy, and the energy it receives melts the ice. Heat does not disappear anywhere either; it is used up in the change of state."
+        },
+        {
+          "text": "The walls of the bag prevent heat from being conducted at all, so no energy enters the bag before the ice melts.",
+          "feedback": "The walls only slow down conduction; they do not stop it. A power $P = UA\\Delta T$ comes through the wall, and this power is exactly what melts the ice; without it the ice would not melt at all."
+        },
+        {
+          "text": "The energy entering the bag melts ice and does not raise the temperature until all the ice has melted.",
+          "feedback": "Correct: during melting, energy changes the interactions between the particles and does not raise the temperature. So the temperature inside stays at $0\\,{}^\\circ\\text{C}$ until the ice has melted, even though energy keeps arriving.",
+          "correct": true
+        },
+        {
+          "text": "The specific heat capacity of ice is so large that the energy entering the bag does not raise the temperature at all.",
+          "feedback": "The temperature stays constant because of the change of state, not because of the specific heat capacity. The $c$ of ice is even smaller than that of water, and a substance that is only warming would always rise in temperature. During melting, the energy is used as the latent heat of fusion $s\\,m$."
+        }
+      ]
+    },
+    {
+      "id": "fy3-16-L1-08",
+      "level": 1,
+      "text": "An electric kettle has a power of $2.0\\,\\text{kW}$ and contains $1.5\\,\\text{kg}$ of water at $20\\,{}^\\circ\\text{C}$ with a specific heat capacity of $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Assume that all of the electric power goes into heating the water and that the water does not yet boil. How long does it take for the water to warm to $100\\,{}^\\circ\\text{C}$? Give your answer in seconds.",
+      "answer": 250,
+      "unit": "s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +141,91 @@
       "answer": 91,
       "unit": "g",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L2-05",
+      "level": 2,
+      "text": "The heating elements of a sauna stove are switched on at a power of $6.0\\,\\text{kW}$, and the stove contains $40\\,\\text{kg}$ of stones ($c = 800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). The table gives sample data on the temperature of the stones during heating. The efficiency of the heating is the energy transferred to the stones divided by the electrical energy used by the elements.\n\na) Calculate the efficiency for the whole $30$ minutes of heating, as a percentage.\n\nb) During each $10$-minute period the temperature of the stones rises less than during the previous one. Explain why.\n\nGive the result of part a) in the answer box.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 76,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Temperature of the sauna stones during heating (sample data)",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "20"
+          ],
+          [
+            "10",
+            "112"
+          ],
+          [
+            "20",
+            "196"
+          ],
+          [
+            "30",
+            "275"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-16-L2-06",
+      "level": 2,
+      "text": "The table gives sample data on the heating energy $E$ used per month by a detached house and the mean outdoor temperature of the month, $T_\\text{out}$. Assume that the heating energy equals the energy lost through the structures, that the indoor temperature is the same every month, and that a month has $720\\,\\text{h}$.\n\na) Draw a graph of the points $(T_\\text{out}, E)$ and fit a straight line to it.\n\nb) From the slope of the line, determine the heat loss coefficient $UA$ of the house in W/K, when the power is $P = UA\\Delta T$.\n\nc) At what outdoor temperature does the line cross the horizontal axis, and what does it tell you about the house?\n\nGive the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 139,
+      "unit": "W/K",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Heating energy per month (sample data)",
+        "columns": [
+          "$T_\\text{out}\\,({}^\\circ\\text{C})$",
+          "$E\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "8",
+            "1210"
+          ],
+          [
+            "2",
+            "1790"
+          ],
+          [
+            "-3",
+            "2340"
+          ],
+          [
+            "-8",
+            "2790"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-16-L2-07",
+      "level": 2,
+      "text": "A student calculates how long $0.80\\,\\text{kg}$ of ice lasts in a cool bag. The total area of the walls of the bag is $0.70\\,\\text{m}^2$ and the U-value is $1.4\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$, the ice is at $0\\,{}^\\circ\\text{C}$, and it is $26\\,{}^\\circ\\text{C}$ outside. The bag contains only ice, and the latent heat of fusion of ice is $s = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$. The student's solution is this:\n\n“Temperatures must be converted to kelvins, so $\\Delta T = 26 + 273 = 299\\,\\text{K}$. The power is $P = UA\\Delta T = 0.98 \\cdot 299\\,\\text{W} \\approx 293\\,\\text{W}$ and the time is $t = \\dfrac{s\\,m}{P} \\approx 910\\,\\text{s} \\approx 0.25\\,\\text{h}$.”\n\na) What is wrong in the student's solution?\n\nb) Calculate correctly how long the ice lasts, in hours.\n\nGive the result of part b) in the answer box.",
+      "kind": [
+        "error"
+      ],
+      "answer": 2.9,
+      "unit": "h",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +252,64 @@
       "answer": 1.5,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L3-04",
+      "level": 3,
+      "text": "The average U-value of the walls, roof and windows of a cottage is $0.50\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ and their total area is $120\\,\\text{m}^2$. The indoor temperature is kept constant at $18\\,{}^\\circ\\text{C}$ throughout the heating season. The table gives sample data on the mean outdoor temperatures of the months of the heating season, and a month has $720\\,\\text{h}$. Assume that the heating energy equals the energy conducted through the structures.\n\nHeating is provided either (A) by electric radiators, whose efficiency is practically $100\\,\\%$ and the price of electricity is $0.15\\,\\tfrac{\\text{€}}{\\text{kWh}}$, or (B) by a wood-burning fireplace, whose efficiency is $70\\,\\%$, the heating value of firewood is $15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ and the price is $0.18\\,\\tfrac{\\text{€}}{\\text{kg}}$.\n\na) Calculate the heating energy needed over the whole heating season, in kilowatt-hours.\n\nb) Calculate the cost of each option over the heating season.\n\nc) Which option is cheaper, and how many euros does it save? Justify in writing which assumptions and prices affect the conclusion.\n\nGive the amount in euros from part c) in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 480,
+      "unit": "€",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Mean outdoor temperature of the month (sample data)",
+        "columns": [
+          "Month",
+          "$T_\\text{out}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "October",
+            "5"
+          ],
+          [
+            "November",
+            "0"
+          ],
+          [
+            "December",
+            "-4"
+          ],
+          [
+            "January",
+            "-9"
+          ],
+          [
+            "February",
+            "-7"
+          ],
+          [
+            "March",
+            "-3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-16-L3-05",
+      "level": 3,
+      "text": "The ice sheet of an ice rink is $60\\,\\text{m}$ long and $30\\,\\text{m}$ wide. The rink is frozen by spraying a layer of water $0.030\\,\\text{m}$ thick, at a temperature of $12\\,{}^\\circ\\text{C}$, onto a concrete slab. The layer is frozen completely, and the temperature of the finished ice is $-5.0\\,{}^\\circ\\text{C}$. The density of water is $1000\\,\\tfrac{\\text{kg}}{\\text{m}^3}$, the specific heat capacity of water is $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ and that of ice is $2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. The refrigeration machine removes the energy at a constant power over $10$ hours. Assume that all of the power is used to cool the water, freeze it and cool the ice.\n\na) Calculate the mass of water to be frozen.\n\nb) Calculate the energies of the three stages separately: cooling of the water to $0\\,{}^\\circ\\text{C}$, freezing, and cooling of the ice to $-5.0\\,{}^\\circ\\text{C}$.\n\nc) Calculate the average power the refrigeration machine needs, in kilowatts.\n\nd) Which stage requires the most energy, and why is the real cooling power needed greater than the calculated one?\n\nGive the result of part c) in the answer box.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 590,
+      "unit": "kW",
+      "tolerance": 0.03
     }
   ]
 }
