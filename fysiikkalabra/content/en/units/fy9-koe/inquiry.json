@@ -1,0 +1,973 @@
+{
+  "version": 1,
+  "contribution": "The opening lesson of the course brings answer technique together: the seven steps of a complete solution, the command words, making graphs and formulas on the computer and thinking in marking points, and its 24-question review test tells each student which chapters of FY1–FY8 to review first.",
+  "learn": [
+    "write a complete solution with its justifications, units and reasonableness check.",
+    "assess answers with a marking scheme and find the steps missing from them.",
+    "solve the questions of the review test and use the results to choose the chapters you review."
+  ],
+  "prior": [
+    "A final result has as many significant figures as the least precise given value (chapter *Measuring and the reliability of a measurement*)",
+    "A straight line is fitted to measured points, and its slope is read from the line (chapter *Graphing and fitting a straight line*)",
+    "In an experiment one variable is changed and the others are kept constant (chapter *Your own experimental investigation: planning, carrying out and reporting*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Aino and Eetu solve the same problem: how large an average force accelerates a bicycle and its rider from rest. Both end up with the number $71$. Aino's answer is two lines of numbers. Eetu writes what is known, which law applies and why, solves the formula, substitutes the values with their units and compares the result with the rider's weight. The examiner gives Eetu clearly more points.",
+      "question": "What must a physics answer contain besides the right number, and why?"
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 1: the unit",
+      "prompt": "A student calculates the speed of a car correctly and writes on the last line of the solution $v = 14$. Which statement about the answer is true?",
+      "choices": [
+        {
+          "text": "Incomplete: without a unit the reader cannot tell whether the speed is in $\\text{m/s}$ or $\\text{km/h}$.",
+          "correct": true,
+          "feedback": "Correct. A quantity is a number times a unit: $14\\,\\text{m/s}$ is about $50\\,\\text{km/h}$, but $14\\,\\text{km/h}$ is a cycling speed. Without the unit the reader does not know which you mean. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "Complete, because the unit appears in the intermediate steps and the reader can work it out.",
+          "feedback": "The final result is the most important line of an answer, and it is read on its own. If it has no unit, it is not a quantity. Always write $v \\approx 14\\,\\text{m/s}$. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "Complete, because the unit of speed is always metres per second.",
+          "feedback": "Speed can be given in many units: $\\text{m/s}$, $\\text{km/h}$ or knots. That is exactly why the unit tells what the number means. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "Incomplete only in its presentation, because the number itself is calculated correctly.",
+          "feedback": "Without a unit the number could mean anything: $14\\,\\text{m/s}$ and $14\\,\\text{km/h}$ differ by a factor of almost four. The unit is part of the result, not a decoration. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 2: the justification",
+      "prompt": "In a problem a sledge slides down an icy hill. A student's solution starts straight away with the line $mgh = \\tfrac{1}{2}mv^2$, followed by the substitution and the answer. What is missing from the solution?",
+      "choices": [
+        {
+          "text": "A justification of why energy is conserved: friction and air resistance are neglected.",
+          "correct": true,
+          "feedback": "Correct. The energy equation $mgh = \\tfrac{1}{2}mv^2$ holds only if the weight is the only force doing work. Write that friction and air resistance are neglected, and why that is reasonable here: the ice is slippery and the speed is small. Review this in the chapter [*Conservation of mechanical energy and the work–energy principle*](fy4-8.html)."
+        },
+        {
+          "text": "A derivation of the formula from the beginning, from Newton's laws and the equations of motion.",
+          "feedback": "The law does not have to be derived, but using it has to be justified. One sentence is enough: which law applies and why it applies in exactly this situation. Review this in the chapter [*Conservation of mechanical energy and the work–energy principle*](fy4-8.html)."
+        },
+        {
+          "text": "Nothing, because the right formula already shows which principle is used.",
+          "feedback": "A formula does not say whether its conditions hold. If there were friction on the hill, the same line would give too large a speed. The principle and its condition are written out. Review this in the chapter [*Conservation of mechanical energy and the work–energy principle*](fy4-8.html)."
+        },
+        {
+          "text": "A picture of the sledge and the hill, because a picture replaces a justification in words.",
+          "feedback": "A sketch of the situation helps, but it does not say why energy is conserved. The justification says that only the weight does work, because friction and air resistance are neglected. Review this in the chapter [*Conservation of mechanical energy and the work–energy principle*](fy4-8.html)."
+        }
+      ]
+    },
+    {
+      "id": "pred-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 3: intermediate results",
+      "prompt": "A calculation has three steps in a row. A student rounds every intermediate result to two significant figures, because the given values have two as well. What follows from this?",
+      "choices": [
+        {
+          "text": "The rounding errors build up, and the final result may be off in its last digit.",
+          "correct": true,
+          "feedback": "Correct. Keep the intermediate results unrounded, or at least a couple of digits more precise, and round only the final result. For example $64 \\cdot 1.1 \\approx 70$, but $64 \\cdot 1.111 \\approx 71$. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "It does no harm, because the final result is rounded to two figures anyway.",
+          "feedback": "Every rounding shifts the result a little, and the shifts build up. For example $64 \\cdot 1.1 \\approx 70$, but with a more precise intermediate result $64 \\cdot 1.111 \\approx 71$. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "The final result becomes more precise, because needless digits do not clutter the calculation.",
+          "feedback": "Rounding does not add precision; it removes information. Intermediate results are kept precise, and the precision is decided only in the final result, by the given values. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "The intermediate results should be left out altogether and only the final result written in the solution.",
+          "feedback": "It is worth writing the intermediate results out, because they show how the solution proceeds. They are just left unrounded, and the final result is rounded. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        }
+      ]
+    },
+    {
+      "id": "pred-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 4: precision",
+      "prompt": "The mass of a body is $2.0\\,\\text{kg}$ and its acceleration $1.5\\,\\text{m/s}^2$. For the net force $F = ma$ the calculator shows the number $3$. How is the final result written?",
+      "choices": [
+        {
+          "text": "$F = 3.0\\,\\text{N}$, like the two significant figures of the given values.",
+          "correct": true,
+          "feedback": "Correct. A final result has as many significant figures as the least precise given value. The calculator does not show the trailing zero, but $3.0\\,\\text{N}$ says that the result is known to a tenth. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "$F = 3\\,\\text{N}$, because this is exactly the number the calculator shows.",
+          "feedback": "A calculator leaves out trailing zeros. $3\\,\\text{N}$ shows a precision of one significant figure, although the given values have two. Write $3.0\\,\\text{N}$. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "$F = 3.000\\,\\text{N}$, because a more precise number is always a better result.",
+          "feedback": "Four significant figures claim the result is more precise than the measurements are. The mass $2.0\\,\\text{kg}$ is known only to two figures, so the answer is $3.0\\,\\text{N}$. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "$F = 3.0$, because the unit can be seen straight from the formula $F = ma$.",
+          "feedback": "The precision is right, but the final result has no unit. Write $F = 3.0\\,\\text{N}$. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        }
+      ]
+    },
+    {
+      "id": "pred-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 5: the slope",
+      "prompt": "A problem asks you to determine the speed of a trolley graphically from a $(t, x)$ graph. There are seven measured points, and a straight line has been fitted to them. Where should the speed be read from?",
+      "choices": [
+        {
+          "text": "From the slope of the fitted line, using two points of the line far apart.",
+          "correct": true,
+          "feedback": "Correct. The fit gathers the information of all the points, and points far apart make the relative error of reading smaller. Show the points you read in your answer. Review this in the chapter [*Graphing and fitting a straight line*](fy1-4.html)."
+        },
+        {
+          "text": "From the difference of two neighbouring measured points, because they are real measurements.",
+          "feedback": "Single points contain measurement error, and in the difference of two neighbouring points it is magnified. The fit smooths out the random variation, so the slope is read from the line. Review this in the chapter [*Graphing and fitting a straight line*](fy1-4.html)."
+        },
+        {
+          "text": "From the last measured point, by dividing its position by the corresponding time.",
+          "feedback": "The division $x : t$ gives the speed only if the line passes through the origin. When the trolley does not start from the position $x = 0$, the result is wrong. The slope is read from the line. Review this in the chapter [*Graphing and fitting a straight line*](fy1-4.html)."
+        },
+        {
+          "text": "By calculating the mean of all the positions and dividing it by the time.",
+          "feedback": "The mean of the positions does not tell how fast the position changes. Speed is the change in position divided by the change in time, that is the slope of the fitted line. Review this in the chapter [*Graphing and fitting a straight line*](fy1-4.html)."
+        }
+      ]
+    },
+    {
+      "id": "pred-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 6: estimate",
+      "prompt": "A problem asks you to estimate how much energy it takes to heat the water for one shower. The problem gives neither the amount of water nor the temperatures. What is expected of the answer?",
+      "choices": [
+        {
+          "text": "Justified assumptions about the amount of water and the temperatures, a calculation and a rough result.",
+          "correct": true,
+          "feedback": "Correct. In an estimation task you choose sensible starting values yourself and state them, for example $40\\,\\text{kg}$ of water warming from $10\\,{}^\\circ\\text{C}$ to $40\\,{}^\\circ\\text{C}$. The result is given to one or two figures. Review this in the chapter [*Heating and cooling of matter*](fy3-6.html)."
+        },
+        {
+          "text": "Just an order of magnitude without a calculation, because an estimate needs no justifications or assumptions.",
+          "feedback": "An estimate is a solution too: the assumptions and the calculation are shown so that the reader can check where the number comes from. Without them the number is a guess. Review this in the chapter [*Heating and cooling of matter*](fy3-6.html)."
+        },
+        {
+          "text": "Nothing: the problem cannot be answered, because some of the data needed is missing.",
+          "feedback": "This is exactly what an estimation task is about: the missing values are chosen from experience, and the choices are justified. Review this in the chapter [*Heating and cooling of matter*](fy3-6.html)."
+        },
+        {
+          "text": "A result as precise as possible, for example to five significant figures.",
+          "feedback": "When the starting values are your own estimates, a precise result claims information that does not exist. Give the result roughly, for example about $5\\,\\text{MJ}$. Review this in the chapter [*Heating and cooling of matter*](fy3-6.html)."
+        }
+      ]
+    },
+    {
+      "id": "vastaukset",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Two answers, one problem",
+      "source": "example",
+      "text": "**Problem (6 p.)** An electric scooter and its rider, $64\\,\\text{kg}$ together, accelerate uniformly from rest to the speed $20\\,\\text{km/h}$ in $5.0\\,\\text{s}$. How large is the average net force acting on them?\n\n**Marking scheme.** Each item gives one point: the principle and its justification, the formula solved for the unknown, the unit conversion, the substitution with units (no point without units), the right answer with the right precision and unit, the reasonableness check. The items are the steps of a complete solution, reviewed in the Theory summary.\n\n**Answer A.** $20 : 3.6 : 5 = 1.11$ and $64 \\cdot 1.11 = 71.04$\n\n**Answer B.**\n\n- The net force gives a body an acceleration according to Newton's second law, $F = ma$. The acceleration is uniform, so $a = \\tfrac{\\Delta v}{\\Delta t}$ and $F = \\tfrac{m\\Delta v}{\\Delta t}$.\n- Conversion: $20\\,\\text{km/h} = \\tfrac{20}{3.6}\\,\\text{m/s} = 5.556\\,\\text{m/s}$\n- Substitution: $a = \\tfrac{5.556\\,\\text{m/s}}{5.0\\,\\text{s}} = 1.111\\,\\text{m/s}^2$\n- $F = 64\\,\\text{kg} \\cdot 1.111\\,\\text{m/s}^2 = 7.1\\,\\text{N}$\n- Answer: $F \\approx 7.1\\,\\text{N}$",
+      "question": {
+        "type": "explain",
+        "prompt": "Mark both answers with the scheme. Which one gets more points, and what should each add or correct?",
+        "criteria": [
+          "The answer says that A gets only the point for the conversion, because it lacks the principle, the symbolic formula, the units and the reasonableness check.",
+          "The answer says that B gets the points for the principle, the formula, the conversion and the substitution, but the answer $7.1\\,\\text{N}$ is a calculation error.",
+          "The answer says that B gets more points, although A's number $71$ is closer to the right result $71\\,\\text{N}$.",
+          "The answer says that a reasonableness check would have revealed B's error, for example by comparing the result with the weight or with the acceleration."
+        ],
+        "model": "Answer A gets one point: it has the conversion $20 : 3.6$. The principle and its justification are missing, the formula is not solved in symbols, the substitution has no units, and the final result $71.04$ has no unit and too many digits. There is no reasonableness check. Answer B gets four points: the principle is justified, the formula is solved, and the conversion and the substitution with units are right. The last multiplication, however, has a decimal-point error, since $64 \\cdot 1.111 \\approx 71$, so the point for the answer is lost. There is no reasonableness check, and that is exactly what would have revealed the error: a force of $7.1\\,\\text{N}$ would give a $64\\,\\text{kg}$ body an acceleration of only $0.11\\,\\text{m/s}^2$, not the calculated $1.1\\,\\text{m/s}^2$. So B gets more points, although A's number is more nearly right. A should write the principle and the steps with units and the answer $F \\approx 71\\,\\text{N}$. B should check the result by comparing it with experience or by calculating the acceleration back.",
+        "practice": "Review the steps of a complete solution in the chapter [*Heating and cooling of matter*](fy3-6.html) and Newton's second law in the chapter [*Newton's second law*](fy4-4.html)."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Koe",
+        "Ydinajatus",
+        "Tehtavasanat",
+        "Kuvaajat",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "testi-ohje",
+      "stage": "sovella",
+      "type": "text",
+      "text": "The review test covers the modules FY1–FY8, three questions from each. Open the questions of one module at a time. The multiple-choice questions are quick; solve the calculation questions completely in your notebook, at home if the lesson is not long enough. The feedback of each question tells you which chapter you can review. Note the chapters where you answered wrong: that is where you start reviewing."
+    },
+    {
+      "id": "testi-1",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY1",
+      "title": "1. Kind of error",
+      "prompt": "A timekeeper measures with a stopwatch the time a ball takes to roll along a channel and starts the watch a little late every time. The measurement is repeated ten times, and the mean of the results is calculated. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The error is systematic: every time is too short, and repeating does not help.",
+          "correct": true,
+          "feedback": "Correct. A late start shortens every time in the same direction, so the mean is too small as well. Repeating reduces only the random error. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "The error is random, so it cancels out when the mean of the results is calculated.",
+          "feedback": "A random error varies in both directions. Here the watch always starts late, so the error always has the same direction, that is it is systematic, and the mean does not remove it. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "The error is gross, so all ten results must be rejected at once and measured again.",
+          "feedback": "A gross error is a single clear mistake, such as a misread reading. A late start every time is a systematic error, corrected by changing the method, for example with light gates. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        },
+        {
+          "text": "Repeating reduces the error, because the delays are of different lengths.",
+          "feedback": "The length of the delays may vary, but they always shorten the time. So the mean is too short as well. Repeating reduces only the random variation. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
+        }
+      ]
+    },
+    {
+      "id": "testi-2",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY1",
+      "title": "2. The fitted line",
+      "prompt": "A student fitted a straight line to eight measured points. The line passes between the points but through none of them. Which interpretation is best?",
+      "choices": [
+        {
+          "text": "Normal: because of measurement uncertainty the points are usually not on the same line.",
+          "correct": true,
+          "feedback": "Correct. The fit describes the model, and the small scatter of the points on both sides of it is random variation of the measurement. The line may pass through a point, but it does not have to. Review this in the chapter [*Graphing and fitting a straight line*](fy1-4.html)."
+        },
+        {
+          "text": "The fit is wrong, because a good line has to pass through as many points as possible.",
+          "feedback": "A good fit runs through the middle of the points, so that there are points on both sides of it. A line forced through two points may describe the whole data set worse. Review this in the chapter [*Graphing and fitting a straight line*](fy1-4.html)."
+        },
+        {
+          "text": "The points should be joined into a zigzag line, so that every measurement shows in the graph.",
+          "feedback": "A zigzag line repeats the measurement errors and is not a model. The fitted line shows the relationship, and its slope can be read from it. Review this in the chapter [*Graphing and fitting a straight line*](fy1-4.html)."
+        },
+        {
+          "text": "The measurements have failed, so the whole series has to be done again from the start.",
+          "feedback": "A small scatter of the points around the line is to be expected. A measurement is repeated only if a point differs clearly and a reason for it is found. Review this in the chapter [*Graphing and fitting a straight line*](fy1-4.html)."
+        }
+      ]
+    },
+    {
+      "id": "testi-3",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY1",
+      "title": "3. Density",
+      "prompt": "A student measures the mass of a metal piece as $54.0\\,\\text{g}$ and, by immersion, its volume as $20.0\\,\\text{cm}^3$. Calculate the density of the piece in the unit $\\text{kg/m}^3$.",
+      "answer": 2700,
+      "unit": "kg/m³",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the definition of density? Which is divided by which?",
+        "Convert first: $1\\,\\text{g} = 10^{-3}\\,\\text{kg}$ and $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$.",
+        "$\\rho = \\dfrac{54.0 \\cdot 10^{-3}\\,\\text{kg}}{20.0 \\cdot 10^{-6}\\,\\text{m}^3}$"
+      ],
+      "mistakes": [
+        {
+          "value": 2.7,
+          "feedback": "This is the density in the unit $\\text{g/cm}^3$. Convert the mass to kilograms and the volume to cubic metres: the result is a thousand times larger. Review this in the chapter [*Density*](fy1-7.html)."
+        },
+        {
+          "value": 2700000.0,
+          "feedback": "You converted the volume to cubic metres but not the mass to kilograms: $54.0\\,\\text{g} = 0.0540\\,\\text{kg}$. Review this in the chapter [*Density*](fy1-7.html)."
+        },
+        {
+          "value": 0.37,
+          "feedback": "You divided the volume by the mass. Density is $\\rho = \\tfrac{m}{V}$. Review this in the chapter [*Density*](fy1-7.html)."
+        }
+      ],
+      "solution": "**Given:** mass $m = 54.0\\,\\text{g}$, volume $V = 20.0\\,\\text{cm}^3$\n\n**Find:** the density $\\rho$ in the unit $\\text{kg/m}^3$\n\n**Principle:** Density is the mass of a substance per unit volume. The piece is of one substance, so its density is its mass divided by its volume.\n\n**Formula:** $m = \\rho V$, so $\\rho = \\dfrac{m}{V}$\n\n**Conversions:** $54.0\\,\\text{g} = 54.0 \\cdot 10^{-3}\\,\\text{kg}$ and $20.0\\,\\text{cm}^3 = 20.0 \\cdot (10^{-2}\\,\\text{m})^3 = 20.0 \\cdot 10^{-6}\\,\\text{m}^3$\n\n**Substitution:** $\\rho = \\dfrac{54.0 \\cdot 10^{-3}\\,\\text{kg}}{20.0 \\cdot 10^{-6}\\,\\text{m}^3} = 2700\\,\\text{kg/m}^3$\n\n**Answer:** $\\rho \\approx 2.70 \\cdot 10^{3}\\,\\text{kg/m}^3$, three significant figures like the mass and the volume.\n\n**Reasonableness:** The result is $2.70\\,\\text{g/cm}^3$, about $2.7$ times the density of water, which fits a metal. According to the table it is the density of aluminium."
+    },
+    {
+      "id": "testi-4",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY2",
+      "title": "4. Power",
+      "prompt": "A washing machine uses $0.90\\,\\text{kWh}$ of electrical energy during one programme. The programme lasts $1\\,\\text{h}\\ 30\\,\\text{min}$. Calculate the average power of the washing machine in kilowatts.",
+      "answer": 0.6,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "hints": [
+        "Which quantity is energy divided by time?",
+        "How many hours is $1\\,\\text{h}\\ 30\\,\\text{min}$? Not $1.30\\,\\text{h}$.",
+        "$P = \\dfrac{0.90\\,\\text{kWh}}{1.5\\,\\text{h}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 0.69,
+          "feedback": "You wrote the time as $1.30\\,\\text{h}$. Half an hour is $0.5\\,\\text{h}$, so the time is $1.5\\,\\text{h}$. Review this in the chapter [*Power*](fy2-3.html)."
+        },
+        {
+          "value": 0.9,
+          "feedback": "This is the energy, not the power. Power is the energy divided by the time. Review this in the chapter [*Power*](fy2-3.html)."
+        },
+        {
+          "value": 1.35,
+          "feedback": "You multiplied the energy by the time. Power is energy divided by time. Review this in the chapter [*Power*](fy2-3.html)."
+        }
+      ],
+      "solution": "**Given:** energy $E = 0.90\\,\\text{kWh}$, time $t = 1\\,\\text{h}\\ 30\\,\\text{min}$\n\n**Find:** the average power $P$ in kilowatts\n\n**Principle:** Power tells how much energy is converted per unit time. The machine does not draw the same power all the time, so the energy divided by the whole time gives the average power.\n\n**Formula:** $P = \\dfrac{E}{t}$\n\n**Conversions:** $30\\,\\text{min} = 0.5\\,\\text{h}$, so $t = 1.5\\,\\text{h}$. The energy is already in kilowatt-hours, so the result comes straight out in kilowatts.\n\n**Substitution:** $P = \\dfrac{0.90\\,\\text{kWh}}{1.5\\,\\text{h}} = 0.60\\,\\text{kW}$\n\n**Answer:** $P \\approx 0.60\\,\\text{kW}$, two significant figures like the energy $0.90\\,\\text{kWh}$.\n\n**Reasonableness:** $0.60\\,\\text{kW}$ is $600\\,\\text{W}$. The heating element of a washing machine draws about $2\\,\\text{kW}$ for a while, but most of the time only the drum turns, so the average is much smaller. Check: $0.60\\,\\text{kW} \\cdot 1.5\\,\\text{h} = 0.90\\,\\text{kWh}$."
+    },
+    {
+      "id": "testi-5",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY2",
+      "title": "5. The fireplace",
+      "prompt": "In a fireplace $2.5\\,\\text{kg}$ of birch logs are burnt, with a heating value of $15\\,\\text{MJ/kg}$. The efficiency of the fireplace is $70\\,\\%$: that is the share of the energy released in burning that heats the room. How much energy does the fireplace give to the room? Answer in megajoules.",
+      "answer": 26.25,
+      "unit": "MJ",
+      "tolerance": 0.02,
+      "hints": [
+        "How much energy does the wood release when it burns?",
+        "How large a share of it stays in the room? Multiply by the efficiency.",
+        "$E_\\text{useful} = 0.70 \\cdot 15\\,\\text{MJ/kg} \\cdot 2.5\\,\\text{kg}$"
+      ],
+      "mistakes": [
+        {
+          "value": 37.5,
+          "feedback": "This is all the energy released in burning. Only the efficiency's share of it stays in the room. Review this in the chapter [*Efficiency*](fy2-4.html)."
+        },
+        {
+          "value": 53.57,
+          "feedback": "You divided by the efficiency. The useful energy is smaller than the energy released, so multiply: $E_\\text{useful} = \\eta E$. Review this in the chapter [*Efficiency*](fy2-4.html)."
+        }
+      ],
+      "solution": "**Given:** mass of the fuel $m = 2.5\\,\\text{kg}$, heating value $H = 15\\,\\text{MJ/kg}$, efficiency $\\eta = 70\\,\\% = 0.70$\n\n**Find:** the energy transferred to the room $E_\\text{useful}$ in megajoules\n\n**Principle:** When it burns, the wood releases the energy $E = Hm$. The efficiency tells how large a share of it goes to the useful purpose, here heating the room; the rest goes out with the flue gases.\n\n**Formula:** $E = Hm$ and $\\eta = \\dfrac{E_\\text{useful}}{E}$, so $E_\\text{useful} = \\eta H m$\n\n**Conversions:** The percentage as a decimal: $70\\,\\% = 0.70$. The heating value is already in the unit $\\text{MJ/kg}$, so the result comes out in megajoules.\n\n**Substitution:** $E_\\text{useful} = 0.70 \\cdot 15\\,\\text{MJ/kg} \\cdot 2.5\\,\\text{kg} = 26.25\\,\\text{MJ}$\n\n**Answer:** $E_\\text{useful} \\approx 26\\,\\text{MJ}$, two significant figures like the given values.\n\n**Reasonableness:** In all, the wood releases $15 \\cdot 2.5\\,\\text{MJ} \\approx 38\\,\\text{MJ}$, and the useful part is less, as it should be. $26\\,\\text{MJ}$ is about $7\\,\\text{kWh}$, which matches an electric heater switched on for a few hours."
+    },
+    {
+      "id": "testi-6",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY2",
+      "title": "6. Efficiency",
+      "prompt": "The efficiency of an LED lamp is $35\\,\\%$: that is the share of the electrical energy it takes in that becomes light. What happens to the rest of the energy?",
+      "choices": [
+        {
+          "text": "It becomes heat in the lamp and its surroundings; no energy disappears.",
+          "correct": true,
+          "feedback": "Correct. Energy is always conserved. The efficiency only tells how large a share of the energy ends up in the wanted form; the rest heats the lamp and the room. Review this in the chapter [*Efficiency*](fy2-4.html)."
+        },
+        {
+          "text": "It disappears completely, because the efficiency is below $100\\,\\%$ and no energy is left.",
+          "feedback": "Energy does not disappear in any device. An efficiency below one hundred per cent means that part of the energy turns into something other than the useful form, here heat. Review this in the chapter [*Efficiency*](fy2-4.html)."
+        },
+        {
+          "text": "It is stored inside the lamp and released when the lamp is switched off.",
+          "feedback": "A lamp has no energy store. The energy that does not become light becomes heat at once in the lamp and its surroundings. Review this in the chapter [*Efficiency*](fy2-4.html)."
+        },
+        {
+          "text": "It flows back along the wires into the electricity grid unused.",
+          "feedback": "A lamp does not feed energy into the grid. The electrical energy it takes in becomes light and heat, and their sum equals the energy taken in. Review this in the chapter [*Efficiency*](fy2-4.html)."
+        }
+      ]
+    },
+    {
+      "id": "testi-7",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY3",
+      "title": "7. Water for tea",
+      "prompt": "In a kettle $1.50\\,\\text{kg}$ of water is heated from $12.0\\,{}^\\circ\\text{C}$ to $85.0\\,{}^\\circ\\text{C}$ for tea. The specific heat capacity of water is $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. How much heat is transferred to the water? Answer in kilojoules.",
+      "answer": 458.8,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "hints": [
+        "Does the state of the water change? Which law applies then?",
+        "Calculate the change in temperature: $85.0\\,{}^\\circ\\text{C} - 12.0\\,{}^\\circ\\text{C}$.",
+        "$Q = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 1.50\\,\\text{kg} \\cdot 73.0\\,\\text{K}$"
+      ],
+      "mistakes": [
+        {
+          "value": 534.2,
+          "feedback": "You used the final temperature $85.0\\,{}^\\circ\\text{C}$ instead of the change in temperature. The heat depends on the change $\\Delta T = 73.0\\,\\text{K}$. Review this in the chapter [*Heating and cooling of matter*](fy3-6.html)."
+        },
+        {
+          "value": 2251,
+          "feedback": "You used the final temperature in kelvins. The formula has the change in temperature $\\Delta T$, not the temperature. Review this in the chapter [*Heating and cooling of matter*](fy3-6.html)."
+        },
+        {
+          "value": 0.4588,
+          "feedback": "This is the result in megajoules. The question asks for kilojoules: the result is a thousand times larger. Review this in the chapter [*Heating and cooling of matter*](fy3-6.html)."
+        }
+      ],
+      "solution": "**Given:** $m = 1.50\\,\\text{kg}$, $T_1 = 12.0\\,{}^\\circ\\text{C}$, $T_2 = 85.0\\,{}^\\circ\\text{C}$, $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$\n\n**Find:** the heat $Q$ transferred to the water in kilojoules\n\n**Principle:** The water warms up and its state does not change, because it does not boil. So the heat is proportional to the mass and to the change in temperature.\n\n**Formula:** $Q = cm\\Delta T$, where $\\Delta T = T_2 - T_1$\n\n**Conversions:** A temperature difference is the same in kelvins and in degrees Celsius: $\\Delta T = 85.0\\,{}^\\circ\\text{C} - 12.0\\,{}^\\circ\\text{C} = 73.0\\,\\text{K}$. Finally $1\\,\\text{kJ} = 1000\\,\\text{J}$.\n\n**Substitution:** $Q = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 1.50\\,\\text{kg} \\cdot 73.0\\,\\text{K} = 458\\,805\\,\\text{J} = 458.805\\,\\text{kJ}$\n\n**Answer:** $Q \\approx 459\\,\\text{kJ}$, three significant figures like the mass and the temperature difference.\n\n**Reasonableness:** Roughly $4000 \\cdot 1.5 \\cdot 75\\,\\text{J} = 450\\,\\text{kJ}$, close to the result. A $2\\,\\text{kW}$ kettle would give this energy in about four minutes, which fits experience."
+    },
+    {
+      "id": "testi-8",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY3",
+      "title": "8. Tyre pressure",
+      "prompt": "The absolute pressure of the air in a car tyre is $315\\,\\text{kPa}$ when the temperature is $+20.0\\,{}^\\circ\\text{C}$. At night the tyre cools to $-15.0\\,{}^\\circ\\text{C}$. The volume of the tyre and the amount of air stay the same. How large is the pressure at night? Answer in kilopascals.",
+      "answer": 277.4,
+      "unit": "kPa",
+      "tolerance": 0.02,
+      "hints": [
+        "Which quantities stay constant? What relationship between pressure and temperature is there then?",
+        "Convert the temperatures to kelvins before you divide.",
+        "$p_2 = 315\\,\\text{kPa} \\cdot \\dfrac{258.15\\,\\text{K}}{293.15\\,\\text{K}}$"
+      ],
+      "mistakes": [
+        {
+          "value": -236.25,
+          "feedback": "You used degrees Celsius. The pressure is proportional to the absolute temperature, so the temperatures are converted to kelvins. Review this in the chapter [*Ideal gas law*](fy3-10.html)."
+        },
+        {
+          "value": 357.7,
+          "feedback": "You turned the ratio of the temperatures upside down. When a gas cools, its pressure decreases: $p_2 = p_1 \\tfrac{T_2}{T_1}$. Review this in the chapter [*Ideal gas law*](fy3-10.html)."
+        }
+      ],
+      "solution": "**Given:** $p_1 = 315\\,\\text{kPa}$, $T_1 = 20.0\\,{}^\\circ\\text{C}$, $T_2 = -15.0\\,{}^\\circ\\text{C}$; volume and amount of substance constant\n\n**Find:** the pressure $p_2$ in kilopascals\n\n**Principle:** The air in the tyre is a dilute gas far from condensing, so it obeys the ideal gas law $pV = nRT$. When $V$ and $n$ are constant, the pressure is proportional to the absolute temperature.\n\n**Formula:** $\\dfrac{p_1}{T_1} = \\dfrac{p_2}{T_2}$, so $p_2 = \\dfrac{p_1 T_2}{T_1}$\n\n**Conversions:** The temperatures in kelvins, because the pressure is proportional to the absolute temperature: $T_1 = (20.0 + 273.15)\\,\\text{K} = 293.15\\,\\text{K}$ and $T_2 = (-15.0 + 273.15)\\,\\text{K} = 258.15\\,\\text{K}$\n\n**Substitution:** $p_2 = \\dfrac{315\\,\\text{kPa} \\cdot 258.15\\,\\text{K}}{293.15\\,\\text{K}} = 277.39\\,\\text{kPa}$\n\n**Answer:** $p_2 \\approx 277\\,\\text{kPa}$, three significant figures like the pressure $315\\,\\text{kPa}$.\n\n**Reasonableness:** In the cold the pressure decreases, as it should. The absolute temperature decreases by about $12\\,\\%$, and the pressure decreases by the same proportion, by about $38\\,\\text{kPa}$ from $315\\,\\text{kPa}$."
+    },
+    {
+      "id": "testi-9",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY3",
+      "title": "9. Melting ice",
+      "prompt": "A glass holds a mixture of ice and water at $0\\,{}^\\circ\\text{C}$. The glass is heated slowly and the mixture is stirred. The temperature stays at $0\\,{}^\\circ\\text{C}$ as long as there is ice left. Why?",
+      "choices": [
+        {
+          "text": "The energy increases the interaction energy between the particles, not their kinetic energy.",
+          "correct": true,
+          "feedback": "Correct. During melting the energy transferred to the substance changes the interactions between the particles and increases the interaction energy between them. The temperature starts to rise only when all the ice has melted. Review this in the chapter [*Changes of state*](fy3-7.html)."
+        },
+        {
+          "text": "The heat escapes at once to the surroundings, so no energy at all is transferred to the mixture.",
+          "feedback": "When the mixture is heated, energy is transferred to it: the ice keeps melting. The energy goes into the change of state, so the temperature does not rise. Review this in the chapter [*Changes of state*](fy3-7.html)."
+        },
+        {
+          "text": "The chemical bonds of the ice molecules break, and breaking them uses up the energy.",
+          "feedback": "In melting the molecules do not break apart; the interactions between the water molecules change. The energy increases the interaction energy between the particles. Review this in the chapter [*Changes of state*](fy3-7.html)."
+        },
+        {
+          "text": "The thermometer is too slow to show the rise in temperature during melting.",
+          "feedback": "The temperature stays constant however long you measure. A pure substance melts at constant pressure at a constant temperature, because the energy goes into the change of state. Review this in the chapter [*Changes of state*](fy3-7.html)."
+        }
+      ]
+    },
+    {
+      "id": "testi-10",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY4",
+      "title": "10. Braking",
+      "prompt": "A car moving at $25.0\\,\\text{m/s}$ brakes uniformly and stops in a distance of $40.0\\,\\text{m}$. How large is the deceleration of the car, that is the magnitude of its acceleration? Answer in the unit $\\text{m/s}^2$.",
+      "answer": 7.8125,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "hints": [
+        "The time is not known. Which equation of uniformly accelerated motion does not contain the time?",
+        "$v^2 = v_0^2 + 2as$, and the final speed is zero.",
+        "$a = -\\dfrac{(25.0\\,\\text{m/s})^2}{2 \\cdot 40.0\\,\\text{m}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 15.625,
+          "feedback": "You forgot the factor $2$: $v_0^2 = 2|a|s$. Review this in the chapter [*Acceleration and uniformly accelerated motion*](fy4-2.html)."
+        },
+        {
+          "value": 0.625,
+          "feedback": "You divided the speed by the distance, which is not an acceleration. Use the equation $v^2 = v_0^2 + 2as$. Review this in the chapter [*Acceleration and uniformly accelerated motion*](fy4-2.html)."
+        }
+      ],
+      "solution": "**Given:** initial speed $v_0 = 25.0\\,\\text{m/s}$, final speed $v = 0$, braking distance $s = 40.0\\,\\text{m}$; acceleration constant\n\n**Find:** the magnitude of the acceleration $|a|$ in the unit $\\text{m/s}^2$\n\n**Principle:** The car brakes uniformly, so its acceleration is constant and the equations of uniformly accelerated motion hold. The time is not known, so the equation without it is used.\n\n**Formula:** $v^2 = v_0^2 + 2as$, where $v = 0$ gives $a = -\\dfrac{v_0^2}{2s}$\n\n**Conversions:** None needed: the speed is in the unit $\\text{m/s}$ and the distance in metres.\n\n**Substitution:** $a = -\\dfrac{(25.0\\,\\text{m/s})^2}{2 \\cdot 40.0\\,\\text{m}} = -\\dfrac{625\\,\\text{m}^2/\\text{s}^2}{80.0\\,\\text{m}} = -7.8125\\,\\text{m/s}^2$\n\n**Answer:** $|a| \\approx 7.81\\,\\text{m/s}^2$, three significant figures like the speed and the distance. The minus sign says that the acceleration is against the motion.\n\n**Reasonableness:** The deceleration is about $0.8\\,g$, which is possible in an emergency stop on dry asphalt. The braking time would be $\\tfrac{25.0}{7.81}\\,\\text{s} \\approx 3.2\\,\\text{s}$, and the average speed $12.5\\,\\text{m/s}$ times $3.2\\,\\text{s}$ gives the distance $40\\,\\text{m}$."
+    },
+    {
+      "id": "testi-11",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY4",
+      "title": "11. Collision",
+      "prompt": "A heavy lorry and a small car collide. How does the force the lorry exerts on the car compare with the force the car exerts on the lorry during the collision?",
+      "choices": [
+        {
+          "text": "Equal and opposite; the car accelerates more because of its smaller mass.",
+          "correct": true,
+          "feedback": "Correct. The forces are the force pair of the same interaction, so by Newton's third law they are equal in size. The same force gives a smaller mass a larger acceleration. Review this in the chapter [*Interaction and force: Newton's first and third laws*](fy4-3.html)."
+        },
+        {
+          "text": "The lorry's force is larger, because the lorry has much more mass.",
+          "feedback": "Mass does not make the forces of an interaction unequal. A force pair is always equal in size; the mass affects only how much each one accelerates. Review this in the chapter [*Interaction and force: Newton's first and third laws*](fy4-3.html)."
+        },
+        {
+          "text": "The force of the faster vehicle is larger, because it has more speed.",
+          "feedback": "Speed does not make the forces of a pair unequal. The forces of an interaction are equal in size and opposite in direction whatever the state of motion. Review this in the chapter [*Interaction and force: Newton's first and third laws*](fy4-3.html)."
+        },
+        {
+          "text": "The car's force is larger, because the car is damaged more in the collision.",
+          "feedback": "The damage tells about the acceleration and the structure, not about a difference in the forces. The car gets the same force, but its smaller mass accelerates more. Review this in the chapter [*Interaction and force: Newton's first and third laws*](fy4-3.html)."
+        }
+      ]
+    },
+    {
+      "id": "testi-12",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY4",
+      "title": "12. A collision where the cars stick together",
+      "prompt": "On a slippery road a car of mass $1250\\,\\text{kg}$ moving at $15.0\\,\\text{m/s}$ hits a stationary $850\\,\\text{kg}$ car. The cars stick together. How large is their common speed just after the collision? The friction of the tyres is neglected during the short collision.",
+      "answer": 8.9286,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Which quantity is conserved in a short collision when the external forces are small?",
+        "Before the collision only the moving car has momentum; afterwards the cars move together.",
+        "$v' = \\dfrac{1250\\,\\text{kg} \\cdot 15.0\\,\\text{m/s}}{2100\\,\\text{kg}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 15.0,
+          "feedback": "The momentum is shared by the mass of both cars, so the speed decreases. Review this in the chapter [*Conservation of momentum and one-dimensional collisions*](fy4-10.html)."
+        },
+        {
+          "value": 7.5,
+          "feedback": "The mean of the speeds is not the common speed: the masses of the cars are different. Use conservation of momentum. Review this in the chapter [*Conservation of momentum and one-dimensional collisions*](fy4-10.html)."
+        },
+        {
+          "value": 11.57,
+          "feedback": "This would come from conservation of kinetic energy. In a collision where the bodies stick together kinetic energy is not conserved, momentum is. Review this in the chapter [*Conservation of momentum and one-dimensional collisions*](fy4-10.html)."
+        }
+      ],
+      "solution": "**Given:** $m_1 = 1250\\,\\text{kg}$, $v_1 = 15.0\\,\\text{m/s}$, $m_2 = 850\\,\\text{kg}$, $v_2 = 0$; the cars stick together\n\n**Find:** the common speed $v'$ just after the collision\n\n**Principle:** The collision lasts a short time, and the external horizontal forces, such as the friction of the tyres, are small compared with the forces between the cars. So the total momentum of the cars is conserved. Kinetic energy is not conserved, because the cars are deformed.\n\n**Formula:** $m_1 v_1 + m_2 v_2 = (m_1 + m_2)v'$, so $v' = \\dfrac{m_1 v_1}{m_1 + m_2}$ when $v_2 = 0$\n\n**Conversions:** None needed: the masses are in kilograms and the speed in the unit $\\text{m/s}$.\n\n**Substitution:** $v' = \\dfrac{1250\\,\\text{kg} \\cdot 15.0\\,\\text{m/s}}{1250\\,\\text{kg} + 850\\,\\text{kg}} = \\dfrac{18\\,750\\,\\text{kg}\\cdot\\text{m/s}}{2100\\,\\text{kg}} = 8.9286\\,\\text{m/s}$\n\n**Answer:** $v' \\approx 8.93\\,\\text{m/s}$, three significant figures like the speed $15.0\\,\\text{m/s}$.\n\n**Reasonableness:** The common speed is smaller than the speed of the moving car, because the same momentum is shared by a larger mass. The mass becomes $1.68$ times larger, and the speed decreases in the same ratio: $15.0 : 1.68 \\approx 8.9$."
+    },
+    {
+      "id": "testi-13",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY5",
+      "title": "13. Roundabout",
+      "prompt": "A car drives round a roundabout at a constant speed. Which statement about the acceleration of the car is correct?",
+      "choices": [
+        {
+          "text": "Towards the centre of the circle, because the direction of the velocity changes all the time.",
+          "correct": true,
+          "feedback": "Correct. Velocity is a vector, and a change in its direction is acceleration. In uniform circular motion the acceleration is the centripetal acceleration, which points towards the centre of the path. Review this in the chapter [*Centripetal acceleration and the equation of motion in a circle*](fy5-4.html)."
+        },
+        {
+          "text": "The acceleration is zero, because the magnitude of the velocity, the speed, does not change.",
+          "feedback": "The magnitude of the velocity stays the same, but its direction changes, and that is acceleration too. Without acceleration the car would go straight on. Review this in the chapter [*Centripetal acceleration and the equation of motion in a circle*](fy5-4.html)."
+        },
+        {
+          "text": "Away from the centre, because the passengers are pressed outwards in the bend.",
+          "feedback": "The passengers tend to go straight on, and the car turns under them. The car's acceleration points towards the centre, and it is caused by the friction between the tyres and the road. Review this in the chapter [*Centripetal acceleration and the equation of motion in a circle*](fy5-4.html)."
+        },
+        {
+          "text": "In the direction of motion, because the car moves forwards along the circle all the time.",
+          "feedback": "An acceleration along the motion would change the speed, but the speed is constant. The acceleration is perpendicular to the velocity, towards the centre. Review this in the chapter [*Centripetal acceleration and the equation of motion in a circle*](fy5-4.html)."
+        }
+      ]
+    },
+    {
+      "id": "testi-14",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY5",
+      "title": "14. Sound wave",
+      "prompt": "A tuning fork vibrates at the frequency $440\\,\\text{Hz}$. The speed of sound in the air of the room is $343\\,\\text{m/s}$. How long is the wavelength of the sound wave produced?",
+      "answer": 0.7795,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "Which equation connects the speed, the frequency and the wavelength of a wave?",
+        "$v = f\\lambda$; solve for $\\lambda$.",
+        "$\\lambda = \\dfrac{343\\,\\text{m/s}}{440\\,\\text{Hz}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 1.283,
+          "feedback": "You divided the frequency by the speed. The wavelength is $\\lambda = \\tfrac{v}{f}$. Review this in the chapter [*How waves form and travel*](fy5-10.html)."
+        },
+        {
+          "value": 150920,
+          "feedback": "You multiplied the speed by the frequency. The speed is the wavelength times the frequency, so the wavelength is $\\tfrac{v}{f}$. Review this in the chapter [*How waves form and travel*](fy5-10.html)."
+        }
+      ],
+      "solution": "**Given:** frequency $f = 440\\,\\text{Hz}$, speed of sound $v = 343\\,\\text{m/s}$\n\n**Find:** the wavelength $\\lambda$ in metres\n\n**Principle:** In one period the wave travels one wavelength. So the speed of the wave is the wavelength times the frequency, and the frequency is that of the vibrating source.\n\n**Formula:** $v = f\\lambda$, so $\\lambda = \\dfrac{v}{f}$\n\n**Conversions:** None needed: $1\\,\\text{Hz} = 1\\,\\tfrac{1}{\\text{s}}$, so $\\tfrac{\\text{m/s}}{\\text{Hz}} = \\text{m}$.\n\n**Substitution:** $\\lambda = \\dfrac{343\\,\\text{m/s}}{440\\,\\text{Hz}} = 0.77955\\,\\text{m}$\n\n**Answer:** $\\lambda \\approx 0.780\\,\\text{m}$, three significant figures like the given values.\n\n**Reasonableness:** The wavelengths of audible sound range from centimetres to metres, and $440\\,\\text{Hz}$ is a note in the middle range. Check: $0.780\\,\\text{m} \\cdot 440\\,\\tfrac{1}{\\text{s}} \\approx 343\\,\\text{m/s}$."
+    },
+    {
+      "id": "testi-15",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY5",
+      "title": "15. Two loudspeakers",
+      "prompt": "One loudspeaker produces at a listener a sound with the intensity level $70\\,\\text{dB}$. A second, identical loudspeaker is switched on beside it, producing equally loud noise independent of the first. What is the intensity level now?",
+      "choices": [
+        {
+          "text": "About $73\\,\\text{dB}$, because the intensity doubles.",
+          "correct": true,
+          "feedback": "Correct. The intensities of two independent sources add up, so the intensity doubles. The decibel scale is logarithmic: double the intensity raises the level by $10 \\cdot \\lg 2\\,\\text{dB} \\approx 3\\,\\text{dB}$. Review this in the chapter [*Intensity and the decibel scale*](fy5-15.html)."
+        },
+        {
+          "text": "$140\\,\\text{dB}$, because two loudspeakers give double the level.",
+          "feedback": "Decibels do not add up directly, because the scale is logarithmic. The intensity doubles, and that raises the level by only about three decibels. Review this in the chapter [*Intensity and the decibel scale*](fy5-15.html)."
+        },
+        {
+          "text": "$80\\,\\text{dB}$, because every new source raises the level by ten decibels.",
+          "feedback": "An increase of ten decibels would need ten times the intensity, that is ten loudspeakers. Two loudspeakers give about $73\\,\\text{dB}$. Review this in the chapter [*Intensity and the decibel scale*](fy5-15.html)."
+        },
+        {
+          "text": "Still $70\\,\\text{dB}$, because the loudspeakers are identical.",
+          "feedback": "Two sources bring the listener double the intensity, so the level rises although the loudspeakers are identical. The rise is about three decibels. Review this in the chapter [*Intensity and the decibel scale*](fy5-15.html)."
+        }
+      ]
+    },
+    {
+      "id": "testi-16",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY6",
+      "title": "16. Meters",
+      "prompt": "A student wants to measure the electric current through a desk lamp and the voltage across the lamp's terminals with multimeters. How are the meters connected?",
+      "choices": [
+        {
+          "text": "The ammeter in series with the lamp and the voltmeter in parallel with the lamp.",
+          "correct": true,
+          "feedback": "Correct. The same current as through the lamp must flow through the ammeter, so it is in series. The voltmeter measures the potential difference between two points, so it is connected in parallel across the lamp's terminals. Review this in the chapter [*Measurements in an electric circuit*](fy6-2.html)."
+        },
+        {
+          "text": "Both meters in series with the lamp, so that the current flows through them.",
+          "feedback": "The resistance of a voltmeter is very large. Connected in series it almost stops the current, and the lamp does not light. The voltmeter is connected in parallel with the lamp. Review this in the chapter [*Measurements in an electric circuit*](fy6-2.html)."
+        },
+        {
+          "text": "The ammeter in parallel with the lamp and the voltmeter in series with it.",
+          "feedback": "The resistance of an ammeter is very small. Connected in parallel it short-circuits the lamp, and the large current may damage the meter. The ammeter belongs in series. Review this in the chapter [*Measurements in an electric circuit*](fy6-2.html)."
+        },
+        {
+          "text": "Both meters in parallel with the lamp, because a meter must not change the circuit.",
+          "feedback": "An ammeter connected in parallel short-circuits the lamp. The ammeter is in series and the voltmeter in parallel; that is exactly why each changes the circuit only a little. Review this in the chapter [*Measurements in an electric circuit*](fy6-2.html)."
+        }
+      ]
+    },
+    {
+      "id": "testi-17",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY6",
+      "title": "17. Ohm's law",
+      "prompt": "The voltage across a resistor is raised from $3.0\\,\\text{V}$ to $6.0\\,\\text{V}$. The temperature of the resistor stays the same, so its resistance is constant. How does the current through the resistor change?",
+      "choices": [
+        {
+          "text": "The current doubles, because it is proportional to the voltage.",
+          "correct": true,
+          "feedback": "Correct. By Ohm's law $U = RI$, at a constant resistance the current is proportional to the voltage: $I = \\tfrac{U}{R}$. Review this in the chapter [*Resistance and Ohm's law*](fy6-3.html)."
+        },
+        {
+          "text": "The current halves, because a larger voltage resists the current more.",
+          "feedback": "Voltage does not resist current; it drives the current round the circuit. What resists is the resistance, and when it is constant the current grows with the voltage: $I = \\tfrac{U}{R}$. Review this in the chapter [*Resistance and Ohm's law*](fy6-3.html)."
+        },
+        {
+          "text": "The current stays the same, because a voltage source always gives the same current.",
+          "feedback": "The current is set by the voltage and the resistance of the circuit, not by the source alone. When the voltage doubles and the resistance stays the same, the current doubles. Review this in the chapter [*Resistance and Ohm's law*](fy6-3.html)."
+        },
+        {
+          "text": "The current becomes four times larger, because the current depends on the square of the voltage.",
+          "feedback": "What is proportional to the square of the voltage is the power of the resistor $P = \\tfrac{U^2}{R}$, not the current. The current is proportional to the voltage. Review this in the chapter [*Resistance and Ohm's law*](fy6-3.html)."
+        }
+      ]
+    },
+    {
+      "id": "testi-18",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY6",
+      "title": "18. Parallel connection",
+      "prompt": "Two resistors, $120\\,\\Omega$ and $180\\,\\Omega$, are connected in parallel. How large is the total resistance of the connection?",
+      "answer": 72.0,
+      "unit": "Ω",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the same for resistors in parallel, and how do the currents combine?",
+        "$\\dfrac{1}{R} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}$: remember to take the reciprocal at the end.",
+        "$R = \\dfrac{120\\,\\Omega \\cdot 180\\,\\Omega}{300\\,\\Omega}$"
+      ],
+      "mistakes": [
+        {
+          "value": 300,
+          "feedback": "This is the resistance of a series connection. In a parallel connection the reciprocals add up, and the result is smaller than either resistor. Review this in the chapter [*Resistors in series and in parallel*](fy6-4.html)."
+        },
+        {
+          "value": 150,
+          "feedback": "The mean of the resistances is not the resistance of the parallel connection. Use the sum of the reciprocals. Review this in the chapter [*Resistors in series and in parallel*](fy6-4.html)."
+        },
+        {
+          "value": 0.013889,
+          "feedback": "This is $\\tfrac{1}{R}$ in the unit $\\tfrac{1}{\\Omega}$. Take the reciprocal as well. Review this in the chapter [*Resistors in series and in parallel*](fy6-4.html)."
+        }
+      ],
+      "solution": "**Given:** $R_1 = 120\\,\\Omega$, $R_2 = 180\\,\\Omega$, connected in parallel\n\n**Find:** the total resistance $R$ in ohms\n\n**Principle:** In a parallel connection the resistors have the same voltage, and the total current is the sum of the branch currents. So the reciprocals of the resistances add up.\n\n**Formula:** $\\dfrac{1}{R} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}$, so $R = \\dfrac{R_1 R_2}{R_1 + R_2}$\n\n**Conversions:** None needed: both resistances are in ohms.\n\n**Substitution:** $R = \\dfrac{120\\,\\Omega \\cdot 180\\,\\Omega}{120\\,\\Omega + 180\\,\\Omega} = \\dfrac{21\\,600\\,\\Omega^2}{300\\,\\Omega} = 72.0\\,\\Omega$\n\n**Answer:** $R \\approx 72.0\\,\\Omega$, three significant figures like the resistances.\n\n**Reasonableness:** The resistance of a parallel connection is smaller than the smallest single resistance $120\\,\\Omega$, because the current gets a new path. Check: $\\tfrac{1}{120} + \\tfrac{1}{180} = \\tfrac{5}{360} = \\tfrac{1}{72}$."
+    },
+    {
+      "id": "testi-19",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY7",
+      "title": "19. Refraction of light",
+      "prompt": "A ray of light comes from air to the surface of water at an angle of incidence of $40.0^\\circ$ to the normal of the surface. The refractive index of water is $1.33$ and that of air $1.00$. How large is the angle of refraction?",
+      "answer": 28.9,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "In which direction does light bend when it slows down?",
+        "The law of refraction: $n_1 \\sin\\alpha = n_2 \\sin\\beta$.",
+        "$\\sin\\beta = \\dfrac{\\sin 40.0^\\circ}{1.33}$, and the angle comes from the inverse function on the calculator."
+      ],
+      "mistakes": [
+        {
+          "value": 58.75,
+          "feedback": "You multiplied by the refractive index, so the angle grew. Entering water, light bends towards the normal: $\\sin\\beta = \\tfrac{n_1 \\sin\\alpha}{n_2}$. Review this in the module FY7."
+        },
+        {
+          "value": 30.08,
+          "feedback": "You divided the angle by the refractive index. The law of refraction is about the sines of the angles, not the angles. Review this in the module FY7."
+        }
+      ],
+      "solution": "**Given:** angle of incidence $\\alpha = 40.0^\\circ$, refractive index of air $n_1 = 1.00$, of water $n_2 = 1.33$\n\n**Find:** the angle of refraction $\\beta$ in degrees from the normal\n\n**Principle:** Light slows down when it passes from air into water, so it bends towards the normal at the boundary. The law of refraction connects the angles of incidence and refraction.\n\n**Formula:** $n_1 \\sin\\alpha = n_2 \\sin\\beta$, so $\\sin\\beta = \\dfrac{n_1 \\sin\\alpha}{n_2}$\n\n**Conversions:** None needed: the angles are in degrees, and refractive indices have no unit.\n\n**Substitution:** $\\sin\\beta = \\dfrac{1.00 \\cdot \\sin 40.0^\\circ}{1.33} = \\dfrac{0.64279}{1.33} = 0.48330$, so $\\beta = 28.901^\\circ$\n\n**Answer:** $\\beta \\approx 28.9^\\circ$, three significant figures like the angle of incidence and the refractive index.\n\n**Reasonableness:** The angle of refraction is smaller than the angle of incidence, because light bends towards the normal in an optically denser medium."
+    },
+    {
+      "id": "testi-20",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY7",
+      "title": "20. Induction",
+      "prompt": "A bar magnet has been pushed into a coil and is held still there. A voltmeter connected to the ends of the coil reads zero. Which statement is correct?",
+      "choices": [
+        {
+          "text": "A voltage is induced only when the magnetic flux through the coil changes.",
+          "correct": true,
+          "feedback": "Correct. By the law of induction the induced voltage is proportional to the rate of change of the magnetic flux. A magnet held still gives a constant flux, so the voltage is zero. Review this in the module FY7."
+        },
+        {
+          "text": "The magnet is too weak; a stronger magnet held still would induce a voltage.",
+          "feedback": "Even a strong magnet held still gives a constant flux, and no voltage is induced. What matters is the change of the flux, not its size. Review this in the module FY7."
+        },
+        {
+          "text": "A voltage would be induced if a current from a battery first flowed in the coil.",
+          "feedback": "Induction does not need a battery: a changing magnetic flux induces the voltage by itself. Here the flux does not change, so the voltage is zero. Review this in the module FY7."
+        },
+        {
+          "text": "Inside the magnet the coil is short-circuited, so the meter cannot show a voltage.",
+          "feedback": "The magnet does not short-circuit the coil. The voltage is zero because the magnetic flux does not change. Move the magnet, and the meter needle swings. Review this in the module FY7."
+        }
+      ]
+    },
+    {
+      "id": "testi-21",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY7",
+      "title": "21. A current-carrying wire in a field",
+      "prompt": "A straight wire is in a uniform magnetic field, perpendicular to the field. The length of the wire in the field is $25\\,\\text{cm}$, the current in it is $3.0\\,\\text{A}$, and the magnetic flux density is $0.40\\,\\text{T}$. How large is the magnetic force on the wire?",
+      "answer": 0.3,
+      "unit": "N",
+      "tolerance": 0.02,
+      "hints": [
+        "Which quantities does the force on the wire depend on when the wire is perpendicular to the field?",
+        "$F = IlB$; convert the length to metres.",
+        "$F = 3.0\\,\\text{A} \\cdot 0.25\\,\\text{m} \\cdot 0.40\\,\\text{T}$"
+      ],
+      "mistakes": [
+        {
+          "value": 30,
+          "feedback": "You used the length in centimetres. Convert: $25\\,\\text{cm} = 0.25\\,\\text{m}$. Review this in the module FY7."
+        },
+        {
+          "value": 0.75,
+          "feedback": "You forgot the flux density: $F = IlB$. Review this in the module FY7."
+        }
+      ],
+      "solution": "**Given:** $l = 25\\,\\text{cm}$, $I = 3.0\\,\\text{A}$, $B = 0.40\\,\\text{T}$; the wire perpendicular to the field\n\n**Find:** the magnetic force $F$ on the wire\n\n**Principle:** A magnetic field exerts a force on the charges moving in the wire. When the wire is perpendicular to the field, the force is at its largest and proportional to the current, the length and the flux density.\n\n**Formula:** $F = IlB$\n\n**Conversions:** $25\\,\\text{cm} = 25 \\cdot 10^{-2}\\,\\text{m} = 0.25\\,\\text{m}$\n\n**Substitution:** $F = 3.0\\,\\text{A} \\cdot 0.25\\,\\text{m} \\cdot 0.40\\,\\text{T} = 0.30\\,\\text{N}$\n\n**Answer:** $F \\approx 0.30\\,\\text{N}$, two significant figures like the given values.\n\n**Reasonableness:** Units: $\\text{A}\\cdot\\text{m}\\cdot\\text{T} = \\text{N}$. The force equals the weight of about $30\\,\\text{g}$, which fits a school experiment with a magnet and a current of a few amperes."
+    },
+    {
+      "id": "testi-22",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY8",
+      "title": "22. The photoelectric effect",
+      "prompt": "A clean zinc plate is lit first by bright red light and then by the weak light of an ultraviolet lamp. Electrons are emitted from the plate only in the ultraviolet light. What explains the observation?",
+      "choices": [
+        {
+          "text": "The energy of an ultraviolet photon exceeds the work function of zinc; that of a red photon does not.",
+          "correct": true,
+          "feedback": "Correct. Light gives up its energy as photons with the energy $E = hf$. One photon releases one electron only if its energy is at least as large as the work function. The brightness tells only the number of photons. Review this in the chapter [*The photoelectric effect and the photon*](fy8-1.html)."
+        },
+        {
+          "text": "There is too little red light; even brighter red light would release electrons.",
+          "feedback": "Brighter light brings more photons, but the energy of each photon stays the same. If one red photon is not enough, many of them separately are not enough either. Review this in the chapter [*The photoelectric effect and the photon*](fy8-1.html)."
+        },
+        {
+          "text": "The red light warms the plate, and the heat binds the electrons more tightly to the metal.",
+          "feedback": "Warming does not explain the effect. What matters is the energy $hf$ of one photon, which for red light is smaller than the work function of zinc. Review this in the chapter [*The photoelectric effect and the photon*](fy8-1.html)."
+        },
+        {
+          "text": "Ultraviolet light always has more photons than red light.",
+          "feedback": "Weak ultraviolet light has few photons. Electrons are emitted because every ultraviolet photon has enough energy. Review this in the chapter [*The photoelectric effect and the photon*](fy8-1.html)."
+        }
+      ]
+    },
+    {
+      "id": "testi-23",
+      "stage": "sovella",
+      "type": "choice",
+      "fold": "Kertaustesti FY8",
+      "title": "23. Line spectrum",
+      "prompt": "The light of a discharge tube containing hydrogen gas is spread out by a grating. Only a few separate coloured lines appear in the spectrum. What does this tell about the hydrogen atom?",
+      "choices": [
+        {
+          "text": "The energy of the atom can have only certain values; the photon's energy is the difference of the levels.",
+          "correct": true,
+          "feedback": "Correct. When an electron moves from a higher energy level to a lower one, the atom emits a photon whose energy is the difference of the levels $hf = E_\\text{upper} - E_\\text{lower}$. Separate levels give separate lines. Review this in the chapter [*Spectra reveal the energy levels of atoms*](fy8-2.html)."
+        },
+        {
+          "text": "The grating lets only some of the colours through, so the other colours are missing from the spectrum.",
+          "feedback": "A grating spreads all the wavelengths of the light in different directions; it does not remove colours. The lines tell that hydrogen emits only certain wavelengths. Review this in the chapter [*Spectra reveal the energy levels of atoms*](fy8-2.html)."
+        },
+        {
+          "text": "The hydrogen gas is too cold to radiate a continuous spectrum at all wavelengths.",
+          "feedback": "The lines are not due to the temperature of the gas but to the energy levels of the atom. The atoms of a dilute gas emit only photons that match the differences of the levels. Review this in the chapter [*Spectra reveal the energy levels of atoms*](fy8-2.html)."
+        },
+        {
+          "text": "The atom can radiate any energy, but the eye distinguishes only a few colours.",
+          "feedback": "A spectrometer would distinguish all the colours of a continuous spectrum. Separate lines appear because the energy levels of the atom are separate. Review this in the chapter [*Spectra reveal the energy levels of atoms*](fy8-2.html)."
+        }
+      ]
+    },
+    {
+      "id": "testi-24",
+      "stage": "sovella",
+      "type": "numeric",
+      "fold": "Kertaustesti FY8",
+      "title": "24. The red line of hydrogen",
+      "prompt": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. An electron moves from the level $n = 3$ to the level $n = 2$. Calculate the wavelength of the photon emitted in nanometres. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.",
+      "answer": 656.5,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the energy of the photon when an electron moves from one level to another?",
+        "$E_3 - E_2 = 13.6\\,\\text{eV} \\cdot (\\tfrac{1}{4} - \\tfrac{1}{9})$; convert to joules.",
+        "$\\lambda = \\dfrac{hc}{E_3 - E_2}$"
+      ],
+      "mistakes": [
+        {
+          "value": 91.2,
+          "feedback": "You used the whole ionisation energy $13.6\\,\\text{eV}$. The photon's energy is the difference of the levels $3$ and $2$. Review this in the chapter [*Energy levels of the hydrogen atom and the Bohr model*](fy8-3.html)."
+        },
+        {
+          "value": 364.7,
+          "feedback": "You used only the energy $3.40\\,\\text{eV}$ of level $2$. The photon's energy is the difference of the levels $E_3 - E_2$. Review this in the chapter [*Energy levels of the hydrogen atom and the Bohr model*](fy8-3.html)."
+        }
+      ],
+      "solution": "**Given:** $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$, transition $n = 3 \\to n = 2$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$\n\n**Find:** the wavelength $\\lambda$ of the photon in nanometres\n\n**Principle:** When an electron moves to a lower level, the atom emits a photon whose energy is the difference of the levels. The energy and the wavelength of a photon are connected by the equation $E = \\tfrac{hc}{\\lambda}$.\n\n**Formula:** $E = E_3 - E_2$ and $E = \\dfrac{hc}{\\lambda}$, so $\\lambda = \\dfrac{hc}{E_3 - E_2}$\n\n**Conversions:** The energy in joules: $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. Finally $1\\,\\text{nm} = 10^{-9}\\,\\text{m}$.\n\n**Substitution:** $E_3 - E_2 = 13.6\\,\\text{eV} \\cdot (\\tfrac{1}{4} - \\tfrac{1}{9}) = 1.8889\\,\\text{eV} = 1.8889 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 3.0260 \\cdot 10^{-19}\\,\\text{J}$ The numerator is $hc = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2.998 \\cdot 10^{8}\\,\\text{m/s} = 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$, so $\\lambda = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{3.0260 \\cdot 10^{-19}\\,\\text{J}} = 6.5647 \\cdot 10^{-7}\\,\\text{m}$\n\n**Answer:** $\\lambda \\approx 656\\,\\text{nm}$, three significant figures like the energy $13.6\\,\\text{eV}$.\n\n**Reasonableness:** $656\\,\\text{nm}$ is visible red light, and the red line is exactly the brightest visible line of the hydrogen spectrum. The photon energy $1.89\\,\\text{eV}$ is within the range $1.6$–$3.3\\,\\text{eV}$ of the energies of visible light."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Command word",
+      "prompt": "A problem gives a table of the extension of a spring under different loads and asks you to determine the spring constant graphically. Which answer meets the task?",
+      "choices": [
+        {
+          "text": "The points in a graph, a straight line fitted to them, and the spring constant is the slope of the line.",
+          "correct": true,
+          "feedback": "Correct. Determining graphically means that the result is read from the line fitted to the graph and the reading is shown: two points of the line, or the equation of the program's fit."
+        },
+        {
+          "text": "The spring constant is calculated from each row of the table, and the mean of the results is taken.",
+          "feedback": "Calculating row by row is not a graphical determination, and it does not reveal an outlying point or where the line crosses the axis. Draw the graph and read the slope from the fit."
+        },
+        {
+          "text": "The points are joined into a zigzag line, and the spring constant is read from the last point.",
+          "feedback": "A zigzag line is not a model, and one point contains the error of one measurement. Fit a straight line to the points and read its slope."
+        },
+        {
+          "text": "The spring constant is calculated as a slope from the first two rows of the table.",
+          "feedback": "A slope calculated from two neighbouring measured points magnifies the measurement errors, and it is not a graphical determination. Read the slope from the line fitted to all the points."
+        }
+      ],
+      "practice": "Review drawing a graph and the slope in the chapter [*Graphing and fitting a straight line*](fy1-4.html)."
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. A complete solution",
+      "prompt": "A local train accelerates uniformly from rest at a station to the speed $72\\,\\text{km/h}$ in $45\\,\\text{s}$. Solve it completely in your notebook, and give the acceleration of the train in the unit $\\text{m/s}^2$ with the right precision.",
+      "answer": 0.4444,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the definition of acceleration when the acceleration is constant?",
+        "Convert the speed: $72\\,\\text{km/h} = \\tfrac{72}{3.6}\\,\\text{m/s}$.",
+        "$a = \\dfrac{20\\,\\text{m/s}}{45\\,\\text{s}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 0.4,
+          "feedback": "You rounded too much: the given values have two significant figures, so the answer is $0.44\\,\\text{m/s}^2$."
+        },
+        {
+          "value": 1.6,
+          "feedback": "You forgot to convert the speed: $72\\,\\text{km/h} = 20\\,\\text{m/s}$."
+        },
+        {
+          "value": 900,
+          "feedback": "You multiplied the speed by the time. Acceleration is the change in velocity divided by the time."
+        }
+      ],
+      "solution": "**Given:** initial speed $v_0 = 0$, final speed $v = 72\\,\\text{km/h}$, time $\\Delta t = 45\\,\\text{s}$; uniform acceleration\n\n**Find:** the acceleration $a$ in the unit $\\text{m/s}^2$\n\n**Principle:** The train accelerates uniformly, so its acceleration is constant and equal to the change in velocity divided by the time taken.\n\n**Formula:** $a = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v - v_0}{\\Delta t}$\n\n**Conversions:** $72\\,\\text{km/h} = \\dfrac{72 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 20\\,\\text{m/s}$\n\n**Substitution:** $a = \\dfrac{20\\,\\text{m/s} - 0}{45\\,\\text{s}} = 0.4444\\,\\text{m/s}^2$\n\n**Answer:** $a \\approx 0.44\\,\\text{m/s}^2$, two significant figures like the speed $72\\,\\text{km/h}$ and the time $45\\,\\text{s}$.\n\n**Reasonableness:** The acceleration is less than $5\\,\\%$ of the free-fall acceleration, which fits a train with standing passengers. Check: $0.444\\,\\text{m/s}^2 \\cdot 45\\,\\text{s} = 20\\,\\text{m/s}$.",
+      "practice": "Review acceleration in the chapter [*Acceleration and uniformly accelerated motion*](fy4-2.html)."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "A cyclist falls and hits their head on the street. Explain with the concepts of physics why a cycling helmet reduces the force on the head.",
+      "criteria": [
+        "The answer says that the momentum of the head changes in the impact in the same way with and without a helmet: the velocity changes to zero.",
+        "The answer says that the change in momentum equals the impulse of the force $F\\Delta t$.",
+        "The answer says that the soft layer of the helmet is compressed and lengthens the stopping time.",
+        "The answer concludes that when the time is longer, the same change in momentum needs a smaller average force."
+      ],
+      "model": "In the impact the velocity of the head changes to zero in a short time, so its momentum changes by the same amount with and without a helmet. By the impulse principle the change in momentum equals the impulse of the force on the head: $F\\Delta t = \\Delta p$. The hard shell of the helmet spreads the impact, and the foam under it is compressed. Then the head takes longer to stop, that is $\\Delta t$ grows. Since $\\Delta p$ stays the same, the average force $F = \\tfrac{\\Delta p}{\\Delta t}$ decreases. A smaller force means a smaller deceleration and fewer injuries.",
+      "practice": "Review impulse in the chapter [*Momentum and impulse*](fy4-9.html) and safety equipment in the chapter [*Road safety: braking, seat belts and airbags*](fy4-11.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer first yourself and only then open the answer."
+    }
+  ]
+}

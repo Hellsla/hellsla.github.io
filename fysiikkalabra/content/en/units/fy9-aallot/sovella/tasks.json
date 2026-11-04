@@ -1,0 +1,789 @@
+{
+  "intro": "Six matriculation-exam-style problems bring together the oscillations, waves and sound of the lesson. Solve them as in the exam: name the phenomenon and the model and justify why the model fits the situation, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
+  "tasks": [
+    {
+      "id": "fy9-aallot-s1",
+      "title": "A guitar string and tuning",
+      "source": "example",
+      "source_note": "The situation is an invented example. The length of the string and the frequencies of the notes A and B match an ordinary guitar.",
+      "skills": [
+        "fy5-13",
+        "fy5-10",
+        "fy5-14"
+      ],
+      "text": "The vibrating part of the A string of a guitar, from the nut to the bridge, is $648\\,\\text{mm}$, and played open the string sounds at its fundamental frequency $110.0\\,\\text{Hz}$. When the string is pressed against a fret, the vibrating part of the string reaches from the fret to the bridge. The guitarist tunes the string against the note A of a keyboard, whose frequency is $110.0\\,\\text{Hz}$.\n\n- speed of sound in room air $343\\,\\text{m/s}$\n- the tension of the string stays the same in parts a and b",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "At what speed does a wave travel along the string? How long is the wavelength of the fundamental in the string and in the sound leaving the guitar through the air?",
+          "answer": [
+            {
+              "name": "v",
+              "value": 142.6,
+              "unit": "m/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "lam",
+              "value": 3.118,
+              "unit": "m",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies that there are nodes at the ends of the string, so at the fundamental frequency the length of the string is half the wavelength, and that in air the sound has the same frequency but travels at a different speed.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\lambda_1 = 2L$, $v = f_1 \\lambda_1 = 2Lf_1$ and in air $\\lambda_\\text{air} = \\dfrac{v_\\text{air}}{f_1}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\lambda_1 = 1.296\\,\\text{m}$, $v = 110.0\\,\\text{Hz} \\cdot 1.296\\,\\text{m} \\approx 142.6\\,\\text{m/s}$ and $\\lambda_\\text{air} = \\dfrac{343\\,\\text{m/s}}{110.0\\,\\text{Hz}} \\approx 3.12\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Three significant figures: $v \\approx 143\\,\\text{m/s}$, $1.30\\,\\text{m}$ and $3.12\\,\\text{m}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How long must the vibrating part of the string be for the string to sound the note B, $123.5\\,\\text{Hz}$? How far from the nut is the fret?",
+          "answer": [
+            {
+              "name": "L",
+              "value": 577.2,
+              "unit": "mm",
+              "tolerance": 0.02
+            },
+            {
+              "name": "d",
+              "value": 70.8,
+              "unit": "mm",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies that the speed of the wave in the string stays the same, because the string and its tension do not change; only the vibrating length becomes shorter.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$f' = \\dfrac{v}{2L'}$, so $L' = \\dfrac{v}{2f'}$, and the distance of the fret from the nut is $L - L'$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$L' = \\dfrac{142.6\\,\\text{m/s}}{2 \\cdot 123.5\\,\\text{Hz}} \\approx 0.577\\,\\text{m}$ and $648\\,\\text{mm} - 577\\,\\text{mm} \\approx 71\\,\\text{mm}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$L' \\approx 577\\,\\text{mm}$ to three significant figures; the distance $71\\,\\text{mm}$ as a difference to the nearest millimetre"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "When the string and the keyboard note sound at the same time, the guitarist hears $6$ beats in $4.0$ seconds. He tightens the string slightly, and the beats become slower. What was the frequency of the string before it was tightened?",
+          "answer": {
+            "value": 108.5,
+            "unit": "Hz",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$f_\\text{h} = |f_\\text{string} - 110.0\\,\\text{Hz}|$ and $f_\\text{h} = \\dfrac{6}{4.0\\,\\text{s}} = 1.5\\,\\text{Hz}$, so the frequency of the string is $108.5\\,\\text{Hz}$ or $111.5\\,\\text{Hz}$"
+            },
+            {
+              "text": "Justifies the choice: tightening increases the speed of the wave in the string and raises the frequency. The beats became slower, so the frequency difference became smaller, and the frequency of the string was below $110.0\\,\\text{Hz}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$f_\\text{string} = 108.5\\,\\text{Hz}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The guitarist lightly touches the open, sounding string exactly at its midpoint, and the string goes on sounding an octave higher. Explain why this happens.",
+          "criteria": [
+            {
+              "text": "Explains that the finger forces a node at the midpoint of the string, so only the natural frequencies with a node at the midpoint remain in the string: $n = 2, 4, 6, \\ldots$",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The lowest one left is $f_2 = 2f_1 = 220\\,\\text{Hz}$: the string vibrates as two antinodes, and twice the frequency is an octave up."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-13",
+        "math": "fy5-13",
+        "communication": "fy5-13"
+      }
+    },
+    {
+      "id": "fy9-aallot-s2",
+      "title": "A bat hunting",
+      "source": "example",
+      "source_note": "The situation and the numbers are an invented example. The frequency of the northern bat's echolocation calls is of the order of the real species.",
+      "skills": [
+        "fy5-17",
+        "fy5-14",
+        "fy5-11"
+      ],
+      "text": "On a summer night a northern bat hunts insects on a lake shore. It sends short ultrasound pulses and listens to where and when their echoes come back.\n\n- frequency of the pulse $30.0\\,\\text{kHz}$\n- speed of sound in air $340\\,\\text{m/s}$, the air is still\n- length of an ordinary mosquito about $5\\,\\text{mm}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "How long is the wavelength of the pulse in air?",
+          "answer": {
+            "value": 11.33,
+            "unit": "mm",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = f\\lambda$, so $\\lambda = \\dfrac{v}{f}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\lambda = \\dfrac{340\\,\\text{m/s}}{30\\,000\\,\\text{Hz}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\lambda \\approx 11.3\\,\\text{mm}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "The bat hears the echo reflected from an insect $12.0\\,\\text{ms}$ after sending the pulse. How far away is the insect? Estimate how much the result is affected by the bat flying all the time at the speed $6.0\\,\\text{m/s}$.",
+          "answer": {
+            "value": 2.04,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the pulse travels the distance to the insect twice, on the way there and back as an echo.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$d = \\dfrac{vt}{2}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$d = \\dfrac{340\\,\\text{m/s} \\cdot 0.0120\\,\\text{s}}{2} \\approx 2.04\\,\\text{m}$"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "During the echo the bat moves $6.0\\,\\text{m/s} \\cdot 0.0120\\,\\text{s} \\approx 7\\,\\text{cm}$, so the distance changes by only a few per cent; the effect is small but shows in the third figure."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "The bat flies at the speed $6.0\\,\\text{m/s}$ straight towards the wall of a barn. At what frequency does it hear the echo reflected from the wall?",
+          "answer": {
+            "value": 31.08,
+            "unit": "kHz",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "text": "Justifies two stages: the wall at rest receives the sound of a moving source and reflects it as a source at rest, whose sound the bat hears as an approaching listener.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$f_\\text{s} = f_0 \\cdot \\dfrac{v}{v - v_\\text{b}}$ and $f = f_\\text{s} \\cdot \\dfrac{v + v_\\text{b}}{v}$, so $f = f_0 \\cdot \\dfrac{v + v_\\text{b}}{v - v_\\text{b}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$f_\\text{s} \\approx 30.54\\,\\text{kHz}$ and $f = 30.0\\,\\text{kHz} \\cdot \\dfrac{346\\,\\text{m/s}}{334\\,\\text{m/s}} \\approx 31.08\\,\\text{kHz}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$f \\approx 31.1\\,\\text{kHz}$, that is about $1.1\\,\\text{kHz}$ higher than the pulse"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Explain why the bat could not detect a mosquito if it used an audible sound with the frequency $3\\,\\text{kHz}$.",
+          "criteria": [
+            {
+              "text": "Calculates that the wavelength at $3\\,\\text{kHz}$ is about $11\\,\\text{cm}$, more than twenty times the length of the mosquito, but at $30\\,\\text{kHz}$ about $11\\,\\text{mm}$, of the order of the mosquito's size.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Explains with diffraction that an obstacle much smaller than the wavelength hardly reflects or casts a shadow, because the wave bends round it.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "A short wavelength is a condition for detecting small prey; that is why the bat uses ultrasound."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy5-17",
+        "concept": "fy5-14",
+        "transfer": "fy5-11",
+        "communication": "fy5-11"
+      }
+    },
+    {
+      "id": "fy9-aallot-s3",
+      "title": "The period of a pendulum and the acceleration of free fall",
+      "source": "example",
+      "source_note": "The data are an invented example: the numbers have been calculated from the pendulum model with $g = 9.81\\,\\text{m/s}^2$ and a true pendulum length $1.5\\,\\text{cm}$ greater than the measured one, and variation like that of hand timing has been added.",
+      "skills": [
+        "fy5-9",
+        "fy1-4",
+        "fy1-3"
+      ],
+      "text": "A group of students studied the period of a pendulum. A small steel ball was hung from a thin string, and the length of the string was changed. The length $l$ was measured with a tape measure from the point where the string was fixed to the top of the ball. The ball was pulled to an angle of about $5^\\circ$ and released, and the time of ten swings $t_{10}$ was measured with a stopwatch.\n\n| $l\\ (\\text{m})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $0.200$ | $9.36$ |\n| $0.350$ | $12.07$ |\n| $0.500$ | $14.44$ |\n| $0.650$ | $16.29$ |\n| $0.800$ | $18.14$ |\n| $0.950$ | $19.76$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Show the period of the pendulum as a function of the length of the string in a graph. Is the period directly proportional to the length? Justify with the graph.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$l\\ (\\text{m})$ on the horizontal axis, $T\\ (\\text{s})$ on the vertical axis; the axes start from zero."
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "The periods $T = \\dfrac{t_{10}}{10}$ for each length."
+            },
+            {
+              "text": "Justifies with the graph: the points do not lie on a straight line through the origin, but the graph levels off; for example, four times the length $0.200\\,\\text{m} \\to 0.800\\,\\text{m}$ gives only about twice the period.",
+              "tag": "graph",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 5,
+          "text": "Present the data so that a straight line fits the points when the swings are small. Justify your choice and fit a straight line to the points.",
+          "criteria": [
+            {
+              "text": "Justifies the linearisation: squaring $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$ gives $T^2 = \\dfrac{4\\pi^2}{g}\\,l$, so $T^2$ is directly proportional to the length.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T^2$ for each measurement in the unit $\\text{s}^2$, for example $(0.936\\,\\text{s})^2 = 0.876\\,\\text{s}^2$."
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "One straight line among the points; $l\\ (\\text{m})$ on the horizontal axis, $T^2\\ (\\text{s}^2)$ on the vertical axis. The line is not forced through the origin."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 6,
+          "text": "Determine the acceleration of free fall from the graph. Compare the result with the value $9.81\\,\\text{m/s}^2$.",
+          "answer": {
+            "value": 9.78,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "The slope from two points of the line far apart, for example $(0.10\\,\\text{m};\\ 0.46\\,\\text{s}^2)$ and $(0.90\\,\\text{m};\\ 3.69\\,\\text{s}^2)$: $k \\approx 4.04\\,\\text{s}^2\\text{/m}$."
+            },
+            {
+              "text": "Interprets the slope: $k = \\dfrac{4\\pi^2}{g}$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$g = \\dfrac{4\\pi^2}{k}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$g \\approx 9.8\\,\\text{m/s}^2$; results $9.6$–$10.0\\,\\text{m/s}^2$ are accepted."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The difference from the value $9.81\\,\\text{m/s}^2$ is less than $1\\,\\%$, which is within the precision of hand timing."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "The line does not pass through the origin. What does that tell you about the measurement? To what length $l$, measured the group's way, must the pendulum be set for its period to be $2.00\\,\\text{s}$?",
+          "answer": {
+            "value": 0.976,
+            "unit": "m",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Interprets the constant term: the line crosses the $l$ axis at about $-0.014\\,\\text{m}$, so the true length of the pendulum is about $1.4\\,\\text{cm}$ greater than the measured one. The length was measured to the top of the ball, not to its centre, so this is a systematic error the size of the radius of the ball.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T^2 = kl + b$, so $l = \\dfrac{T^2 - b}{k}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$l = \\dfrac{(2.00\\,\\text{s})^2 - 0.056\\,\\text{s}^2}{4.04\\,\\text{s}^2\\text{/m}} \\approx 0.976\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$l \\approx 0.98\\,\\text{m}$; with values read from the line, results $0.97$–$0.98\\,\\text{m}$ are accepted."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy5-9",
+        "transfer": "fy5-9",
+        "experiment": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-aallot-s4",
+      "title": "A festival in the lakeside park",
+      "source": "example",
+      "source_note": "The festival, the distances and the measured result are an invented example.",
+      "skills": [
+        "fy5-15",
+        "fy5-16",
+        "fy5-11"
+      ],
+      "text": "A summer festival is held in the town's lakeside park. The nearest houses are $400\\,\\text{m}$ from the stage, and the festival area is fenced with a wooden fence $2\\,\\text{m}$ high. In the organiser's measurement the intensity level $20\\,\\text{m}$ in front of the loudspeaker tower was $106\\,\\text{dB}$. At a residents' evening three claims were made.\n\n1. \"When the distance doubles, the decibel reading halves, so already $40\\,\\text{m}$ away the level is $53\\,\\text{dB}$, and hardly anything can be heard at the houses.\"\n2. \"Mainly bass can be heard behind the fence, because bass sounds are always louder than high sounds.\"\n3. \"In front of the stage, at a level of $100\\,\\text{dB}$, you can stay for the whole four-hour concert without hearing protectors, because the level is only $15\\,\\text{dB}$ above $85\\,\\text{dB}$.\"\n\nAssume that the loudspeaker tower is a point source and that the sound travels without reflections or absorption. The speed of sound is $340\\,\\text{m/s}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess claim 1. According to the model, how high is the level at the nearest houses?",
+          "criteria": [
+            {
+              "text": "Explains that the intensity of a point source $I = \\dfrac{P}{4\\pi r^2}$ drops to a quarter at twice the distance, so the level falls by $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$ and not by half.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "About $100\\,\\text{dB}$ at $40\\,\\text{m}$; at $400\\,\\text{m}$, $106\\,\\text{dB} - 10\\,\\text{dB} \\cdot \\lg 20^2 \\approx 80\\,\\text{dB}$."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The model is a rough estimate: the air and the terrain absorb sound, but a following wind and reflections can raise the level."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is false: the decibel scale is logarithmic, and at the houses the music can be heard clearly."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess claim 2. Explain with waves why low sounds are heard most behind the fence.",
+          "criteria": [
+            {
+              "text": "Explains diffraction: a wave bends behind an obstacle the more strongly, the greater the wavelength is compared with the size of the obstacle.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "For example, the wavelength at $60\\,\\text{Hz}$ is $\\tfrac{340\\,\\text{m/s}}{60\\,\\text{Hz}} \\approx 5.7\\,\\text{m}$, more than the height of the fence, but at $4\\,\\text{kHz}$ only about $9\\,\\text{cm}$, so high sounds are left with a shadow behind the fence."
+            },
+            {
+              "text": "Concludes that the fence protects mainly against high sounds, so reducing the bass needs measures at the source, for example limiting the level or pointing the loudspeakers in another direction.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The observation is true, but the reasoning is wrong: bass sounds are not always louder; they bend over the fence."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess claim 3. How long an exposure does the rule of thumb for noise permit, and what would hearing protectors with an attenuation of $20\\,\\text{dB}$ change?",
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$t_\\text{allowed} = \\dfrac{t_0}{2^{\\,n}}$, where $n = \\dfrac{L - 85\\,\\text{dB}}{3\\,\\text{dB}}$ and $t_0 = 8\\,\\text{h}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$n = 5$, so $t_\\text{allowed} = 8\\,\\text{h} : 32 = 0.25\\,\\text{h} = 15\\,\\text{min}$"
+            },
+            {
+              "text": "Explains that $15\\,\\text{dB}$ means $10^{1.5} \\approx 32$ times the intensity, so the same dose harmful to hearing builds up in about $\\tfrac{1}{32}$ of the time.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Concludes that with well-fitted protectors the level at the ear is about $80\\,\\text{dB}$, below $85\\,\\text{dB}$, so four hours is within the rule of thumb when the protectors are worn the whole time.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is false: without protectors the permitted time is only about $15\\,\\text{min}$, and even the rule of thumb is an estimate, not a guarantee."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-15",
+        "math": "fy5-16",
+        "transfer": "fy5-11",
+        "communication": "fy5-15"
+      }
+    },
+    {
+      "id": "fy9-aallot-s5",
+      "title": "The speed of sound from an echo",
+      "source": "example",
+      "source_note": "The report and the measurements are an invented example.",
+      "skills": [
+        "fy5-14",
+        "fy5-17",
+        "fy1-3",
+        "fy1-8"
+      ],
+      "text": "A group of students measured the speed of sound in the school yard in November, when the air temperature was $5\\,{}^\\circ\\text{C}$ and the weather was calm. The group stood $85.0\\,\\text{m}$ from the brick wall of the school; the distance was measured with a measuring wheel. One student struck two boards together, and another started a stopwatch on seeing the strike and stopped it on hearing the echo.\n\n| Measurement | $t\\ (\\text{s})$ |\n|---|---|\n| 1 | $0.45$ |\n| 2 | $0.52$ |\n| 3 | $0.41$ |\n| 4 | $0.55$ |\n| 5 | $0.47$ |\n\nThe group's conclusion: \"The speed of sound was $354\\,\\text{m/s}$. It is greater than the book value $343\\,\\text{m/s}$, so sound travels faster in cold air than in warm air.\"",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Calculate the speed of sound from the mean of the measurements and estimate the uncertainty of the result.",
+          "answer": {
+            "value": 354.2,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = \\dfrac{2d}{\\bar{t}}$, where $\\bar{t}$ is the mean; $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\bar{t} = 0.48\\,\\text{s}$, so $v = \\dfrac{170\\,\\text{m}}{0.48\\,\\text{s}} \\approx 354\\,\\text{m/s}$; $\\Delta t = 0.07\\,\\text{s}$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Relative uncertainty $\\tfrac{0.07}{0.48} \\approx 15\\,\\%$, so $\\Delta v \\approx 50\\,\\text{m/s}$; with the extreme values $v$ is about $310$–$415\\,\\text{m/s}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v = (350 \\pm 50)\\,\\text{m/s}$: the uncertainty to one significant figure and the result to the same precision."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess the group's conclusion.",
+          "criteria": [
+            {
+              "text": "States that the book's $343\\,\\text{m/s}$ applies to air at $20\\,{}^\\circ\\text{C}$ and that in a gas the speed of sound grows as the temperature rises, by about $0.6\\,\\text{m/s}$ per degree, so at $5\\,{}^\\circ\\text{C}$ about $334\\,\\text{m/s}$ is expected.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "The uncertainty of about $\\pm 50\\,\\text{m/s}$ covers both $334\\,\\text{m/s}$ and $343\\,\\text{m/s}$, so the measurement cannot tell them apart; the data show no difference at all."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "In hand timing the reaction time on starting and stopping is of the order of tenths of a second, as large as the variation of the results, and it does not necessarily cancel; the uncertainty of the distance is insignificant."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The conclusion is not justified: sound travels more slowly in cold air, and the precision of the measurement is not enough to detect the effect of temperature."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 6,
+          "text": "Plan how to improve the measurement so that the effect of temperature on the speed of sound can be detected.",
+          "criteria": [
+            {
+              "text": "The time is measured without reaction time: one microphone, for example a phone, records both the strike and the echo, and the time difference is read from the graph of the sound; or two microphones a known distance apart.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Measurements are made at several distances and the distance is plotted as a function of time: the slope gives the speed, and a constant delay shows in the constant term and does not distort the result.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Estimates the precision needed: $334\\,\\text{m/s}$ and $343\\,\\text{m/s}$ differ by about $3\\,\\%$, so the uncertainty of the time must be below about $1\\,\\%$, for example below $5\\,\\text{ms}$ for a travel time of $0.5\\,\\text{s}$."
+            },
+            {
+              "text": "The air temperature is measured during each measurement, the measurements are repeated, they are made in calm weather or in both directions to remove the effect of the wind, and the result is given with its uncertainty.",
+              "tag": "experiment",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy5-17",
+        "concept": "fy5-14",
+        "experiment": "fy1-8",
+        "communication": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-aallot-s6",
+      "title": "A bungee jump from a bridge",
+      "source": "example",
+      "source_note": "The jump and the numbers of the cord are an invented example. The force of a real rubber cord is not exactly harmonic.",
+      "skills": [
+        "fy4-8",
+        "fy5-8",
+        "fy5-9",
+        "fy4-4"
+      ],
+      "text": "In a bungee jump the jumper falls from a bridge above a river. The rubber cord tied to their ankles starts to stretch when the jumper has fallen the unstretched length of the cord, and it stops them before the water.\n\n- mass of the jumper with equipment $72.0\\,\\text{kg}$\n- unstretched length of the cord $18.0\\,\\text{m}$\n- in the manufacturer's test the cord stretched like a spring with the spring constant $120\\,\\text{N/m}$\n- air resistance and the mass of the cord are neglected, and the jumper is treated as a point-like body that starts from rest",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the speed of the jumper when the cord starts to stretch?",
+          "answer": {
+            "value": 18.79,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Mechanical energy is conserved: $mgL_0 = \\tfrac12 mv^2$, so $v = \\sqrt{2gL_0}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\sqrt{2 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 18.0\\,\\text{m}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 18.8\\,\\text{m/s}$ to three significant figures"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "How deep below the bridge does the jumper fall?",
+          "answer": {
+            "value": 39.59,
+            "unit": "m",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies the conservation of energy for the whole fall: at the lowest point the speed is zero, and the change in the gravitational potential energy $mg(L_0 + x)$ has turned into the elastic potential energy of the cord $\\tfrac12 kx^2$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$mg(L_0 + x) = \\tfrac12 kx^2$, the quadratic equation $\\tfrac12 kx^2 - mgx - mgL_0 = 0$ and its positive solution"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$60\\,\\tfrac{\\text{N}}{\\text{m}} \\cdot x^2 - 706.3\\,\\text{N} \\cdot x - 12\\,714\\,\\text{J} = 0$, so $x \\approx 21.6\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Depth $L_0 + x \\approx 39.6\\,\\text{m}$ to three significant figures"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "What are the size and direction of the jumper's acceleration at the lowest point?",
+          "answer": {
+            "value": 26.17,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Newton's second law with upwards positive: $kx - mg = ma$, so $a = \\dfrac{kx}{m} - g$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$kx \\approx 2590\\,\\text{N}$ and $a = \\dfrac{2590\\,\\text{N} - 706\\,\\text{N}}{72.0\\,\\text{kg}} \\approx 26.2\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx 26.2\\,\\text{m/s}^2$ upwards"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The acceleration is about $2.7g$ and the force of the cord about $3.7$ times the weight: strong but brief, and the harness spreads the force."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "In the end the jumper is left hanging on the cord and bobs up and down in small oscillations. What is the period of the oscillation?",
+          "answer": {
+            "value": 4.867,
+            "unit": "s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T = 2\\pi\\sqrt{\\dfrac{m}{k}}$; the weight only shifts the equilibrium position $x_0 = \\dfrac{mg}{k}$ lower"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T = 2\\pi\\sqrt{\\dfrac{72.0\\,\\text{kg}}{120\\,\\text{N/m}}} \\approx 4.87\\,\\text{s}$"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The result is an estimate: the force of the rubber cord is not exactly harmonic, and air resistance damps the oscillation."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-8",
+        "concept": "fy4-8",
+        "transfer": "fy5-9"
+      }
+    }
+  ]
+}

@@ -1,0 +1,747 @@
+{
+  "intro": "Six matriculation-exam-style problems bring together the lesson's motion, graphs and measurement data. Solve them as in the exam: choose the coordinate system and the positive direction, justify the choice of model, solve for the quantity asked before substituting numbers and assess whether the result is reasonable. Open the model answer and the marking only when your solution is ready.",
+  "tasks": [
+    {
+      "id": "fy9-liike-s1",
+      "title": "The acceleration lane",
+      "source": "example",
+      "source_note": "The junction, the vehicles and the numbers are invented examples that correspond to the usual magnitudes of a motorway junction.",
+      "skills": [
+        "fy4-2",
+        "fy4-12",
+        "fy1-5"
+      ],
+      "text": "A car enters the acceleration lane of a motorway at $54\\,\\text{km/h}$. The lane is $270\\,\\text{m}$ long, and on it the car accelerates uniformly so that its velocity at the end of the lane is $108\\,\\text{km/h}$. In the right-hand lane of the motorway a lorry is travelling at a constant velocity of $81\\,\\text{km/h}$. At the moment when the car is at the beginning of the acceleration lane, the lorry is $40\\,\\text{m}$ behind it. The lanes are parallel, so the positions can be measured along the same road.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "How long does the car's acceleration on the lane last?",
+          "answer": {
+            "value": 12.0,
+            "unit": "s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The displacement is the area of the $(t,v)$ graph: $\\Delta x = \\dfrac{v_0 + v}{2}\\,t$, from which $t = \\dfrac{2\\,\\Delta x}{v_0 + v}$ (or the equation of position and $v = v_0 + a\\,t$ together)."
+            },
+            {
+              "text": "Converts the velocities by substituting the units: $54\\,\\text{km/h} = \\dfrac{54 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 15\\,\\text{m/s}$ and $108\\,\\text{km/h} = 30\\,\\text{m/s}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$t = \\dfrac{2 \\cdot 270\\,\\text{m}}{15\\,\\text{m/s} + 30\\,\\text{m/s}} = 12.0\\,\\text{s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 12\\,\\text{s}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "How large is the car's acceleration?",
+          "answer": {
+            "value": 1.25,
+            "unit": "m/s²",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{\\Delta v}{\\Delta t}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$a = \\dfrac{30\\,\\text{m/s} - 15\\,\\text{m/s}}{12.0\\,\\text{s}} = 1.25\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx 1.3\\,\\text{m/s}^2$ (or $1.25\\,\\text{m/s}^2$)"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Does the lorry draw level with the car during the acceleration? How small is the distance between the lorry and the car at its smallest?",
+          "answer": {
+            "value": 17.5,
+            "unit": "m",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "text": "Writes both positions in the same coordinate system: origin at the beginning of the lane, $x_\\text{A} = v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$ and $x_\\text{L} = -40\\,\\text{m} + v_\\text{L}\\,t$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Justifies that the distance decreases as long as the lorry is faster and is at its smallest when the velocities are equal: $v_0 + a\\,t = v_\\text{L}$, $t = 6.0\\,\\text{s}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$x_\\text{A} = 112.5\\,\\text{m}$ and $x_\\text{L} = 95\\,\\text{m}$, distance $17.5\\,\\text{m}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The lorry does not draw level: the car stays at least about $18\\,\\text{m}$ ahead, and at the end of the lane the gap is $40\\,\\text{m}$ again. (Also: the equation $x_\\text{A} = x_\\text{L}$ has no real solutions.)"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Another driver accelerates uniformly on the same lane over the whole length of the lane, but only to $72\\,\\text{km/h}$. Explain with graphs why the lorry then catches up with him, and why it is worth accelerating to the speed of the traffic on an acceleration lane.",
+          "criteria": [
+            {
+              "text": "Explains that the car is slower than the lorry for the whole lane ($72\\,\\text{km/h} < 81\\,\\text{km/h}$), so in the $(t,v)$ graph the area of the lorry's rectangle grows faster than the car's area, and justifies this quantitatively: the acceleration lasts about $15.4\\,\\text{s}$ and the car's average velocity is $17.5\\,\\text{m/s}$, so the lorry travels on average about $5\\,\\text{m/s}$ faster and makes up about $77\\,\\text{m}$, more than the gap of $40\\,\\text{m}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The lorry catches up with and overtakes the car before the end of the lane (the lorry is at about $307\\,\\text{m}$ when the car reaches the end of the lane at $270\\,\\text{m}$), so the car would have to merge behind the lorry or brake; a driver who has accelerated to the speed of the traffic stays ahead."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-2",
+        "concept": "fy4-12",
+        "communication": "fy4-12"
+      }
+    },
+    {
+      "id": "fy9-liike-s2",
+      "title": "Two balls in the lobby",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples. Air resistance is neglected.",
+      "skills": [
+        "fy4-2",
+        "fy4-12",
+        "fy1-6"
+      ],
+      "text": "An experiment for a PE lesson is done in the school lobby. A student throws a tennis ball straight up from a height of $1.5\\,\\text{m}$ above the floor at $12.0\\,\\text{m/s}$. At exactly the same moment another student drops a second ball from rest from the railing of the third floor, at a height of $9.0\\,\\text{m}$ above the floor. The balls move along adjacent vertical lines, so they do not collide. Air resistance is neglected.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "How high above the floor does the thrown ball rise?",
+          "answer": {
+            "value": 8.84,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies that at the highest point the velocity is zero but the acceleration is still $g$ downwards, and chooses the coordinate system (up positive).",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$t_\\text{top} = \\dfrac{v_0}{g}$ and $y = y_0 + v_0\\,t_\\text{top} - \\tfrac{1}{2}\\,g\\,t_\\text{top}^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$t_\\text{top} \\approx 1.22\\,\\text{s}$ and a rise of $7.34\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$y \\approx 8.8\\,\\text{m}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "When and at what height do the balls pass each other?",
+          "answer": [
+            {
+              "name": "t",
+              "value": 0.625,
+              "unit": "s",
+              "tolerance": 0.03
+            },
+            {
+              "name": "y",
+              "value": 7.08,
+              "unit": "m",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 2,
+              "detail": "The meeting condition $y_\\text{A}(t) = y_\\text{B}(t)$: $y_{0\\text{A}} + v_0\\,t - \\tfrac{1}{2}\\,g\\,t^2 = y_{0\\text{B}} - \\tfrac{1}{2}\\,g\\,t^2$, from which $t = \\dfrac{y_{0\\text{B}} - y_{0\\text{A}}}{v_0}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$t = 7.5\\,\\text{m} : 12.0\\,\\text{m/s} = 0.625\\,\\text{s}$ and $y = 9.0\\,\\text{m} - \\tfrac{1}{2} \\cdot 9.81\\,\\text{m/s}^2 \\cdot (0.625\\,\\text{s})^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 0.63\\,\\text{s}$ and $y \\approx 7.1\\,\\text{m}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "A check with the other position function gives the same height, and the passing happens before the thrown ball is at its highest point or the dropped one on the floor."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Explain why the moment of passing does not depend on the acceleration of free fall. Would the balls pass each other at the same moment on the Moon?",
+          "criteria": [
+            {
+              "text": "Explains that both balls have the same acceleration, so the difference of their velocities stays $12.0\\,\\text{m/s}$ all the time and the distance of $7.5\\,\\text{m}$ between them decreases uniformly.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "On the Moon the moment of passing is the same $0.63\\,\\text{s}$, but the height of passing is greater (about $8.7\\,\\text{m}$), because each ball falls less."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "What are the velocities of the balls at the moment of passing?",
+          "answer": [
+            {
+              "name": "vA",
+              "value": 5.87,
+              "unit": "m/s",
+              "tolerance": 0.03
+            },
+            {
+              "name": "vB",
+              "value": -6.13,
+              "unit": "m/s",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = v_0 - g\\,t$ for both, up positive"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v_\\text{A} = 12.0\\,\\text{m/s} - 9.81\\,\\text{m/s}^2 \\cdot 0.625\\,\\text{s} \\approx 5.87\\,\\text{m/s}$ and $v_\\text{B} \\approx -6.13\\,\\text{m/s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{A} \\approx 5.9\\,\\text{m/s}$ upwards and $v_\\text{B} \\approx -6.1\\,\\text{m/s}$, that is, downwards; signs and directions stated"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-2",
+        "math": "fy4-12",
+        "communication": "fy4-12"
+      }
+    },
+    {
+      "id": "fy9-liike-s3",
+      "title": "A local train arrives at the station",
+      "source": "example",
+      "source_note": "The data are an invented example to which variation like that of phone positioning has been added.",
+      "skills": [
+        "fy1-4",
+        "fy4-2",
+        "fy1-3"
+      ],
+      "text": "A passenger recorded the velocity of a local train every four seconds with the positioning app of her phone as the train approached a station. The app gives the velocity in kilometres per hour as whole numbers. According to the manufacturer, the uncertainty of the displayed velocity is about $\\pm 1\\,\\text{km/h}$.\n\n| $t\\ (\\text{s})$ | $v\\ (\\text{km/h})$ |\n|---|---|\n| $0$ | $91$ |\n| $4$ | $89$ |\n| $8$ | $90$ |\n| $12$ | $84$ |\n| $16$ | $77$ |\n| $20$ | $67$ |\n| $24$ | $56$ |\n| $28$ | $49$ |\n| $32$ | $39$ |\n| $36$ | $28$ |\n| $40$ | $21$ |\n\nThe recording stopped at $40\\,\\text{s}$, when the train was still moving.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 6,
+          "text": "Present the train's velocity as a function of time as a graph, and fit a suitable model to the points.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$t\\ (\\text{s})$ on the horizontal axis, $v\\ (\\text{km/h})$ on the vertical axis; the time axis extends at least to $50\\,\\text{s}$ for part c."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "A horizontal straight line at the first three points and a falling straight line through the braking points, passing between them; the points are not joined into a broken line."
+            },
+            {
+              "text": "Identifies two stages in the data and justifies why the first three points are not included in the braking line: in them the velocity is constant.",
+              "tag": "graph",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Determine the train's acceleration during the braking. Give the answer in $\\text{m/s}^2$.",
+          "answer": {
+            "value": -0.645,
+            "unit": "m/s²",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope from two points of the fitted line far apart, for example $(12\\,\\text{s};\\ 85\\,\\text{km/h})$ and $(40\\,\\text{s};\\ 20\\,\\text{km/h})$: about $-2.3\\,\\text{km/h}$ per second."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{\\Delta v}{\\Delta t}$"
+            },
+            {
+              "text": "Converts the change in velocity by substituting the units: $-65\\,\\text{km/h} = \\dfrac{-65 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\approx -18.1\\,\\text{m/s}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx -0.65\\,\\text{m/s}^2$; a result of $-0.61$…$-0.68\\,\\text{m/s}^2$ is accepted."
+            },
+            {
+              "text": "Interprets the sign: the acceleration is opposite to the velocity, so the speed decreases.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Use the graph to estimate when the train stops and how far it travels from the beginning of the braking until it stops.",
+          "answer": {
+            "value": 481,
+            "unit": "m",
+            "tolerance": 0.07
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The beginning of the braking from the crossing point of the horizontal and the falling line (about $10\\,\\text{s}$) and the stop from the crossing point of the braking line and the time axis (about $48$–$49\\,\\text{s}$, the line is extended)."
+            },
+            {
+              "text": "Justifies that the distance is the area between the $(t,v)$ graph and the time axis, here the triangle $\\tfrac{1}{2}\\,v_0\\,\\Delta t$.",
+              "tag": "graph",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\tfrac{1}{2} \\cdot 25\\,\\text{m/s} \\cdot 38.5\\,\\text{s} \\approx 481\\,\\text{m}$, with the velocity converted, $90\\,\\text{km/h} = 25\\,\\text{m/s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "about $480\\,\\text{m}$; a result of $450$–$520\\,\\text{m}$ is accepted"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "The passenger concludes that the train stopped exactly at the distance of part c from the beginning of the braking. Assess how reliable the conclusion is.",
+          "criteria": [
+            {
+              "key": "assumptions",
+              "points": 2,
+              "detail": "The moment of stopping is an extrapolation outside the measured range: the model assumes that the braking continued in the same way after $40\\,\\text{s}$, although a driver often eases the braking just before stopping."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The uncertainty of the slope: the steepest and the gentlest line that fit the points give a range for the moment of stopping and the distance (about $\\pm 20\\,\\text{m}$); the velocity uncertainty $\\pm 1\\,\\text{km/h}$ is small compared with the change in velocity."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The result is reliable in its order of magnitude (about $480\\,\\text{m}$), but not “exact”: it should be given to two significant figures and with its uncertainty."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy4-2",
+        "concept": "fy4-2",
+        "transfer": "fy1-4",
+        "experiment": "fy1-3",
+        "communication": "fy1-4"
+      }
+    },
+    {
+      "id": "fy9-liike-s4",
+      "title": "Average speed enforcement",
+      "source": "example",
+      "source_note": "The enforcement section and the numbers are invented examples. In average speed enforcement a vehicle's travel time is measured by cameras at the beginning and the end of the section.",
+      "skills": [
+        "fy4-1",
+        "fy4-2",
+        "fy1-3"
+      ],
+      "text": "A municipality is considering average speed enforcement on a straight $3.0\\,\\text{km}$ section of road with a speed limit of $80\\,\\text{km/h}$. At the beginning and the end of the section there is a camera that records the moment a vehicle passes. The system calculates the vehicle's average velocity on the section and reports an offence if the average velocity is over $80\\,\\text{km/h}$. In the municipal council's debate three opinions were put forward:\n\n1. “The enforcement is unfair: the average velocity does not prove that anyone drove too fast at any single point.”\n2. “I drove $2.0\\,\\text{km}$ of the section at $100\\,\\text{km/h}$ and the remaining $1.0\\,\\text{km}$ at $60\\,\\text{km/h}$, so my average velocity was $80\\,\\text{km/h}$.”\n3. “The cameras could be placed only $100\\,\\text{m}$ apart, so the enforcement would be easier to build.”\n\nThe cameras record the moment of passing to within $0.5\\,\\text{s}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess the first opinion. Justify your answer with a $(t,x)$ or $(t,v)$ graph.",
+          "criteria": [
+            {
+              "text": "Explains that the average velocity is the displacement divided by the time, that is, in the $(t,x)$ graph the slope of the line through the points of the beginning and the end of the section.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Justifies with a graph: if the velocity were at most $80\\,\\text{km/h}$ all the time, the area under the $(t,v)$ graph would be at most $80\\,\\text{km/h}$ times the time, so the average velocity could not exceed the limit (or: the $(t,x)$ graph cannot rise more steeply on average than at its steepest point).",
+              "tag": "graph",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The opinion is wrong: an average velocity over $80\\,\\text{km/h}$ proves that the velocity has been over $80\\,\\text{km/h}$ at some point. The converse does not hold: an average velocity below the limit does not prove that there was no speeding."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Assess the second opinion by calculating the driver's average velocity on the section.",
+          "answer": {
+            "value": 81.8,
+            "unit": "km/h",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v_\\text{av} = \\dfrac{\\Delta x}{t_1 + t_2}$, where $t_1 = \\dfrac{\\Delta x_1}{v_1}$ and $t_2 = \\dfrac{\\Delta x_2}{v_2}$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$t_1 = 2.0\\,\\text{km} : 100\\,\\text{km/h} = 0.020\\,\\text{h} = 72\\,\\text{s}$ and $t_2 = 1.0\\,\\text{km} : 60\\,\\text{km/h} = 60\\,\\text{s}$; $v_\\text{av} = 3.0\\,\\text{km} : 132\\,\\text{s} \\approx 81.8\\,\\text{km/h}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{av} \\approx 82\\,\\text{km/h}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The opinion is wrong: the mean of the velocities would do only if each velocity were driven for equally long. The driver drove faster for the longer distance, and the average velocity exceeds the limit."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess the third opinion. How large is the uncertainty of the average velocity on the $3.0\\,\\text{km}$ section and on a $100\\,\\text{m}$ section when the car is driving at $80\\,\\text{km/h}$?",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "Because of the two records the uncertainty of the travel time is about $1\\,\\text{s}$. On the $3.0\\,\\text{km}$ section the time is $135\\,\\text{s}$, so the uncertainty of the average velocity is about $80\\,\\text{km/h} \\cdot 1\\,\\text{s} : 135\\,\\text{s} \\approx 0.6\\,\\text{km/h}$."
+            },
+            {
+              "text": "Calculates the short section: the time is $4.5\\,\\text{s}$, so an error of one second changes the average velocity by about $18\\,\\text{km/h}$, that is, by over $20\\,\\%$.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The opinion does not hold: on a short section the uncertainty of the timing is too large compared with the travel time, so the enforcement section must be long."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-1",
+        "graph": "fy4-2",
+        "math": "fy4-1",
+        "experiment": "fy1-3",
+        "communication": "fy4-1"
+      }
+    },
+    {
+      "id": "fy9-liike-s5",
+      "title": "A trolley on a sloping track",
+      "source": "example",
+      "source_note": "The report and its results are invented examples.",
+      "skills": [
+        "fy4-2",
+        "fy1-3",
+        "fy1-4",
+        "fy1-8"
+      ],
+      "text": "A group of students investigated whether the motion of a trolley on a sloping track is uniformly accelerated. An extract from the group's report:\n\n> We released the trolley from rest at the top of the track. One member of the group started a stopwatch when the trolley set off and stopped it when the trolley passed the $1.20\\,\\text{m}$ mark of the measuring tape. The time was $1.6\\,\\text{s}$. We calculated the acceleration to be $0.94\\,\\text{m/s}^2$. Because we got a value for the acceleration, the trolley's motion is uniformly accelerated.\n\nThe group estimated that the uncertainty of the hand timing is about $0.2\\,\\text{s}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Show how the group got the acceleration, and estimate how much the result can change because of the uncertainty of the timing.",
+          "answer": {
+            "value": 0.9375,
+            "unit": "m/s²",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "For a body starting from rest $x = \\tfrac{1}{2}\\,a\\,t^2$, so $a = \\dfrac{2x}{t^2}$; here the group already assumes a uniform acceleration."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$a = \\dfrac{2 \\cdot 1.20\\,\\text{m}}{(1.6\\,\\text{s})^2} \\approx 0.94\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "The times $1.4\\,\\text{s}$ and $1.8\\,\\text{s}$ give $1.22\\,\\text{m/s}^2$ and $0.74\\,\\text{m/s}^2$, so $a \\approx 0.9 \\pm 0.3\\,\\text{m/s}^2$; the relative uncertainty of the time, about $13\\,\\%$, doubles, because the time is squared."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess the group's conclusion. Name the main weaknesses of the measurement.",
+          "criteria": [
+            {
+              "text": "Notices that the reasoning is circular: the formula $a = \\dfrac{2x}{t^2}$ assumes a uniform acceleration, so a number obtained with it cannot show that the motion is uniformly accelerated. A single $(t,x)$ point fits any accelerated motion.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "For example the reaction time at the beginning and the end of the timing, the trolley possibly being pushed at the start, judging the point of passing from the side, only one measurement without repeats."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The conclusion is not justified: showing a uniform acceleration requires many measurement points at different moments and a check of how well the model fits."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 6,
+          "text": "Plan an experiment that can reliably find out whether the trolley's motion is uniformly accelerated and determine its acceleration.",
+          "criteria": [
+            {
+              "text": "Measures the trolley's position at many moments, for example by video analysis (known frame rate, scale in the plane of the track) or with light gates at different points.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Presents the results as a graph and fits a model: a quadratic polynomial to the $(t,x)$ points, so that $a = 2A$, or a straight line to the $(t,v)$ points, whose slope is $a$; checks whether the points lie on the model.",
+              "tag": "graph",
+              "points": 2
+            },
+            {
+              "text": "Repeats the measurements, keeps the slope of the track and the way of starting the same (the trolley is released from rest without a push) and estimates the uncertainty of the acceleration from the spread of the repeats or from the fit.",
+              "tag": "experiment",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-2",
+        "experiment": "fy1-3",
+        "concept": "fy4-2",
+        "graph": "fy1-4",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-liike-s6",
+      "title": "A drop on a phone video",
+      "source": "example",
+      "source_note": "The measurement and the numbers are invented examples.",
+      "skills": [
+        "fy4-2",
+        "fy1-4",
+        "fy1-3",
+        "fy1-6"
+      ],
+      "text": "A student dropped a ball from rest and filmed the fall with a phone at $60$ frames per second. In a video analysis program she set the scale with a metre stick. The stick was on a stand $3.00\\,\\text{m}$ from the camera, and the ball fell $0.30\\,\\text{m}$ behind the stick, $3.30\\,\\text{m}$ from the camera.\n\nThe program gave the ball's height $y$ above the floor from every third frame, that is, every $0.05\\,\\text{s}$:\n\n| $t\\ (\\text{s})$ | $y\\ (\\text{m})$ |\n|---|---|\n| $0.00$ | $1.653$ |\n| $0.10$ | $1.607$ |\n| $0.20$ | $1.469$ |\n| $0.30$ | $1.253$ |\n| $0.40$ | $0.939$ |\n| $0.50$ | $0.538$ |\n\nThe table shows every second point. A spreadsheet program fitted a quadratic polynomial $y = A\\,t^2 + B\\,t + C$ to all eleven points and gave $A = (-4.44 \\pm 0.05)\\,\\text{m/s}^2$, $B = -0.007\\,\\text{m/s}$ and $C = 1.651\\,\\text{m}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Use the fit to determine the ball's acceleration of free fall.",
+          "answer": {
+            "value": 8.88,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Compares the polynomial with the equation of position $y = y_0 + v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$ and concludes that $A = \\tfrac{1}{2}\\,a$ and $B \\approx 0$ (the ball started from rest).",
+              "tag": "graph",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$a = 2A = 2 \\cdot (-4.44\\,\\text{m/s}^2) = -8.88\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The acceleration of free fall is $8.88\\,\\text{m/s}^2$ downwards (minus sign: $y$ grows upwards)."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large is the uncertainty of the result based on the fit? Does the result agree with the table value $9.81\\,\\text{m/s}^2$?",
+          "answer": {
+            "value": 0.1,
+            "unit": "m/s²",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta a = 2\\,\\Delta A$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta a = 2 \\cdot 0.05\\,\\text{m/s}^2 = 0.10\\,\\text{m/s}^2$, that is, $a = (8.88 \\pm 0.10)\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "conclusion",
+              "points": 2,
+              "detail": "The difference from the table value is $0.93\\,\\text{m/s}^2$, about nine times the uncertainty, so the result does not agree with the table value. The small scatter of the points says nothing about a systematic error."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Explain what causes the systematic error and in which direction it changes the result, and correct the result.",
+          "answer": {
+            "value": 9.77,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "The scale was set in the plane of the metre stick, but the ball moved further from the camera than the stick. The ball's distances look smaller in the picture, so the program gives too small distances and too small an acceleration."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The true distances are $3.30 : 3.00 = 1.10$ times as large, so $a = 1.10 \\cdot 8.88\\,\\text{m/s}^2 \\approx 9.77\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx (9.8 \\pm 0.1)\\,\\text{m/s}^2$, which agrees with the table value $9.81\\,\\text{m/s}^2$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The student's partner suggests calculating the acceleration from the first and the last point only, with the formula $a = \\dfrac{2\\,\\Delta y}{t^2}$. Assess the suggestion.",
+          "criteria": [
+            {
+              "text": "Explains that the fit uses all the points, so the random error of a single point has less effect, and the fit also gives the uncertainty and shows whether the model fits.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The two-point calculation gives almost the same result here ($8.92\\,\\text{m/s}^2$), but it is more sensitive to an error in a single point and in the starting moment and does not correct the scale error; the fit is better."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy4-2",
+        "experiment": "fy1-3",
+        "communication": "fy1-3"
+      }
+    }
+  ]
+}

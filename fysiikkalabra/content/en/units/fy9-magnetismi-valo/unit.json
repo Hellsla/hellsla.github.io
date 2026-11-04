@@ -1,0 +1,14 @@
+{
+  "id": "fy9-magnetismi-valo",
+  "course": "FY9",
+  "chapter": 5,
+  "order": 3,
+  "title": "Magnetism, induction and light",
+  "description": "Revises the FY7 module: the magnetic field, the motion of a charged particle in electric and magnetic fields, the field of a wire and a coil, the force on a current-carrying wire, induction and Lenz's law, the generator, alternating current and the transformer, electromagnetic radiation, and the reflection, refraction, dispersion, total internal reflection, interference, grating, thin film and polarisation of light, and solves matriculation-exam-style problems on them.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

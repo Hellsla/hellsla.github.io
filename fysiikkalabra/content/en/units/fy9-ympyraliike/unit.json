@@ -1,0 +1,14 @@
+{
+  "id": "fy9-ympyraliike",
+  "course": "FY9",
+  "chapter": 3,
+  "order": 4,
+  "title": "Equilibrium, circular motion and gravitation",
+  "description": "A review of moments, the equilibrium of a body, the period and speed of circular motion, centripetal acceleration and the equation of motion in a circle, the law of gravitation and the circular orbits of satellites and planets from module FY5, with matriculation-exam-style problems on them.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

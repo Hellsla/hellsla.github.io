@@ -1,0 +1,513 @@
+{
+  "version": 1,
+  "contribution": "This review lesson gathers the FY1 skills of measuring and graphing from the point of view of the exam's problem types: the uncertainty and precision of a result, a graph from a table, fitting a straight line and linearisation, the units and meaning of the slope and the constant term, interpolation and extrapolation, and original long problems, one of which combines measuring with the ideal gas law.",
+  "learn": [
+    "draw a graph of a data set and choose a suitable fit for it.",
+    "interpret the slope and the constant term with their units and their physical meaning.",
+    "estimate the uncertainty of a result and state the result to a justified precision."
+  ],
+  "prior": [
+    "A result is stated in the form $\\bar{x} \\pm \\Delta x$, and the uncertainty is rounded to one significant figure (chapter *Measuring and the reliability of a measurement*)",
+    "A straight line is fitted to the measurement points, and its slope is read from two points of the line far apart (chapter *Graphing and fitting a straight line*)",
+    "The mass of a substance is directly proportional to its volume, and the slope of the $(V, m)$ line is the density (chapter *Density*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "An exam problem has a table of measurements. Liquid was poured into a measuring cylinder $20\\,\\text{ml}$ at a time, and after each addition the cylinder and the liquid were weighed together on a balance. Aino calculates the ratio of mass to volume on every row and takes the mean of the ratios. Eetu draws a $(V, m)$ graph, fits a straight line to the points and reads its slope. They get very different results, although the data are the same.",
+      "question": "Whose method gives the density of the liquid, and what does the other method ignore?"
+    },
+    {
+      "id": "lahto-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 1: precision",
+      "prompt": "The mass of a stone is $32.46\\,\\text{g}$. When the stone is lowered into a measuring cylinder, the reading rises from $52\\,\\text{ml}$ to $64\\,\\text{ml}$. How is the density of the stone stated to a justified precision?",
+      "choices": [
+        {
+          "text": "$\\rho \\approx 2.705\\,\\text{g/cm}^3$",
+          "feedback": "Not all the digits of the calculator are reliable. The volume is the difference of the readings, $64\\,\\text{ml} - 52\\,\\text{ml} = 12\\,\\text{ml}$, which has only two significant figures, so the density has two as well: $2.7\\,\\text{g/cm}^3$. Review significant figures in the chapter *Quantities, units and the SI system*."
+        },
+        {
+          "text": "$\\rho \\approx 2.7\\,\\text{g/cm}^3$",
+          "correct": true,
+          "feedback": "Correct. The volume is the difference of the readings, $12\\,\\text{ml} = 12\\,\\text{cm}^3$, which has two significant figures. The result of a division gets as many significant figures as the least precise starting value, so $32.46\\,\\text{g} : 12\\,\\text{cm}^3 = 2.705\\,\\text{g/cm}^3 \\approx 2.7\\,\\text{g/cm}^3$. The precision of a difference is discussed in the chapter *Density*."
+        },
+        {
+          "text": "$\\rho \\approx 2.71\\,\\text{g/cm}^3$",
+          "feedback": "Three figures would be right if the volume were known to three figures. The readings $52\\,\\text{ml}$ and $64\\,\\text{ml}$ have two figures, and their difference $12\\,\\text{ml}$ also has only two. Review the precision of a difference in the chapter *Density*."
+        },
+        {
+          "text": "$\\rho \\approx 3\\,\\text{g/cm}^3$",
+          "feedback": "One figure is too few: it shifts the result by more than $10\\,\\%$. The volume $12\\,\\text{ml}$ has two significant figures, so the density is stated with two: $2.7\\,\\text{g/cm}^3$. Review significant figures in the chapter *Quantities, units and the SI system*."
+        }
+      ]
+    },
+    {
+      "id": "lahto-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 2: repetition",
+      "prompt": "A kitchen scale shows $0.8\\,\\text{g}$ when empty, but it is not zeroed. A student weighs the same object ten times and calculates the mean of the results. What can be said about the mean?",
+      "choices": [
+        {
+          "text": "The repetitions remove the zero error, because the errors cancel each other.",
+          "feedback": "Only random errors, which are sometimes positive and sometimes negative, cancel each other. The zero error adds the same $0.8\\,\\text{g}$ to every weighing, so it is in the mean too. Review the types of error in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "The mean still has a systematic error of about $0.8\\,\\text{g}$.",
+          "correct": true,
+          "feedback": "Correct. The zero error is systematic: it shifts every reading in the same direction, so repetition and the mean do not remove it. The error is corrected by subtracting $0.8\\,\\text{g}$ or by zeroing the scale. Systematic error is discussed in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "It is a gross error, so the mean is useless.",
+          "feedback": "A gross error is a single mistake that shows as a result different from the others. The zero error is the same in every weighing, so it is systematic, and it can be corrected: the result does not have to be discarded. Review the types of error in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "The mean is correct, because the resolution of the scale is $0.1\\,\\text{g}$.",
+          "feedback": "The resolution only tells how small a change shows on the display. It does not tell whether the zero is right: a scale can show tenths and still be $0.8\\,\\text{g}$ off. The difference between resolution and uncertainty is discussed in the chapter *Measuring and the reliability of a measurement*."
+        }
+      ]
+    },
+    {
+      "id": "lahto-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 3: the slope",
+      "prompt": "A student has fitted a straight line to eight measurement points. How should the student determine the slope of the line?",
+      "choices": [
+        {
+          "text": "From two adjacent measurement points that are close to the line.",
+          "feedback": "The differences between adjacent points are small, so the random error of either point changes the slope a lot. The slope is read from the fitted line at two points far apart. Review in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "From the first and the last measurement point, which are farthest apart.",
+          "feedback": "The points are far apart, but they are measurement points with errors of their own: the result does not use the other six points at all. The points are read from the fitted line. Review in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "From two points of the fitted line that are far apart.",
+          "correct": true,
+          "feedback": "Correct. The line is fitted to all the points, so its slope uses the whole data set. Points far apart make the differences large, so a reading error matters little. Reading the slope is discussed in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "By calculating the ratio $y : x$ for every point and taking their mean.",
+          "feedback": "The ratio $y : x$ is the slope only if the line passes through the origin. If the constant term is not zero, the ratios are wrong and change from point to point. Review the meaning of the constant term in the chapter *Graphing and fitting a straight line*."
+        }
+      ]
+    },
+    {
+      "id": "lahto-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 4: the constant term",
+      "prompt": "The length $h$ of a burning candle was measured every half hour. The equation of the line fitted to the points is $h = -0.80\\,\\tfrac{\\text{cm}}{\\text{h}} \\cdot t + 18.0\\,\\text{cm}$, when the time $t$ is counted from lighting the candle. What does the constant term $18.0\\,\\text{cm}$ tell?",
+      "choices": [
+        {
+          "text": "A measurement error, which is removed by forcing the line through the origin.",
+          "feedback": "Here the constant term has a physical meaning: it is the value of the line when $t = 0$. Forcing the line through the origin would claim that the candle had zero length when it was lit, and it would also change the slope. Review the meaning of the constant term in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "The length of the candle at the moment it was lit, when the time is zero.",
+          "correct": true,
+          "feedback": "Correct. When $t = 0$, only the constant term is left of the equation of the line, so $18.0\\,\\text{cm}$ is the length of the candle when it was lit. The slope $-0.80\\,\\text{cm/h}$ tells how much the candle shortens in an hour. This is discussed in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "How many centimetres the candle shortens in one hour.",
+          "feedback": "The shortening per hour is the slope $0.80\\,\\text{cm/h}$, not the constant term. The constant term is the value of the line when $t = 0$: the length of the candle when it was lit. Review in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "That the length of the candle and the time are directly proportional.",
+          "feedback": "Direct proportionality is described by a line through the origin, whose constant term is zero. Here the constant term is $18.0\\,\\text{cm}$, and the length decreases as time passes. Review in the chapter *Graphing and fitting a straight line*."
+        }
+      ]
+    },
+    {
+      "id": "lahto-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 5: linearisation",
+      "prompt": "A trolley starts from rest and accelerates uniformly. Light gates measure the distance $s$ travelled by the trolley and the time $t$ from the start. The points of which graph lie on a straight line?",
+      "choices": [
+        {
+          "text": "The $(t, s)$ graph, because the distance grows as time passes.",
+          "feedback": "The distance grows, but faster and faster, because the speed grows. The $(t, s)$ graph curves upwards. Since $s = \\tfrac{1}{2}at^2$, the straight line is given by the $(t^2, s)$ graph. Review in the chapter *Acceleration and uniformly accelerated motion* and in the ICT guide *Fitting a straight line to measurement points*."
+        },
+        {
+          "text": "The $(t^2, s)$ graph, because the distance is $s = \\tfrac{1}{2}at^2$.",
+          "correct": true,
+          "feedback": "Correct. The distance is proportional to the square of the time, so the $(t^2, s)$ graph is a straight line through the origin with slope $\\tfrac{a}{2}$. The equations of motion are reviewed in the chapter *Acceleration and uniformly accelerated motion*."
+        },
+        {
+          "text": "The $(\\sqrt{t}, s)$ graph, because the speed grows uniformly.",
+          "feedback": "A square root would straighten a graph that curves downwards. In uniformly accelerated motion the $(t, s)$ graph curves upwards, and $s = \\tfrac{1}{2}at^2$, so the right horizontal axis is $t^2$. Review in the chapter *Acceleration and uniformly accelerated motion*."
+        },
+        {
+          "text": "The $(\\tfrac{1}{t}, s)$ graph, because the speed changes.",
+          "feedback": "The quantity $\\tfrac{1}{t}$ straightens the graph when $y$ is inversely proportional to $x$, as in Boyle's law. In uniformly accelerated motion $s = \\tfrac{1}{2}at^2$, so the right horizontal axis is $t^2$. Review in the chapter *Acceleration and uniformly accelerated motion*."
+        }
+      ]
+    },
+    {
+      "id": "lahto-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 6: outside the measured range",
+      "prompt": "The extension of a spring was measured with forces $0$–$10\\,\\text{N}$, and the points lie on a straight line through the origin. What can be said about the extension when the force is $40\\,\\text{N}$?",
+      "choices": [
+        {
+          "text": "The extension is certainly four times as large, because the measured line passes through the origin.",
+          "feedback": "The measurements show that the line is valid only in the range $0$–$10\\,\\text{N}$. A large force can stretch the spring permanently, and then the relationship is no longer a straight line. Extrapolation is discussed in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "The extension of the line is only an estimate, since forces above $10\\,\\text{N}$ were not measured.",
+          "correct": true,
+          "feedback": "Correct. Extrapolation assumes that the relationship stays the same outside the measured range. The estimate is justified only if we know that the spring can take $40\\,\\text{N}$ without stretching permanently. This is discussed in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "The extension cannot be estimated at all, because it has not been measured.",
+          "feedback": "An estimate can be made by extending the line, as long as you remember that it is only an estimate. The reliability of the extrapolation has to be justified, for example by knowing where the spring begins to stretch permanently. Review in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "The extension is smaller, because the slope of a spring always decreases as the load grows.",
+          "feedback": "Nothing in the measurements says that the slope decreases. On the contrary, an overloaded spring can stretch more, and permanently. Outside the measured range the result is only an estimate. Review in the chapter *Graphing and fitting a straight line*."
+        }
+      ]
+    },
+    {
+      "id": "tutki-kaasu",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Pressure and temperature of a gas",
+      "source": "example",
+      "figure": "fy3-3/extrapolation-points",
+      "text": "The air in a closed, rigid container was heated in a water bath, and the pressure was measured with a sensor at five temperatures. The graph shows the measurement points without a fitted line. Fit a straight line to the points in your notebook or in a graphing program. Read its slope and constant term with their units, and think about what each tells about the gas in the container.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Extend the fitted line outside the measured range. At what temperature does the line cross the horizontal axis, that is, at what temperature would the pressure be zero according to the model? Answer in degrees Celsius.",
+        "answer": -270,
+        "unit": "°C",
+        "tolerance": 0.05,
+        "hints": [
+          "Read two points of the line far apart, for example at $0\\,{}^\\circ\\text{C}$ and $100\\,{}^\\circ\\text{C}$.",
+          "The equation of the line is $p = k\\theta + b$. The pressure is zero when $k\\theta + b = 0$.",
+          "$\\theta_0 = -\\dfrac{b}{k}$, where $b \\approx 75\\,\\text{kPa}$ and $k = \\dfrac{\\Delta p}{\\Delta \\theta}$ in the unit $\\text{kPa}/{}^\\circ\\text{C}$."
+        ],
+        "mistakes": [
+          {
+            "value": 270,
+            "feedback": "The number has the right size, but the sign is missing. The line falls to the left, so it meets the horizontal axis at a negative temperature: $\\theta_0 = -\\tfrac{b}{k}$."
+          },
+          {
+            "value": -75,
+            "feedback": "$75\\,\\text{kPa}$ is the constant term, that is, the pressure at $0\\,{}^\\circ\\text{C}$, not a temperature. Divide the constant term by the slope: $\\theta_0 = -\\tfrac{b}{k}$."
+          }
+        ],
+        "solution": "**Given:** the five measurement points of the graph at temperatures $0$–$100\\,{}^\\circ\\text{C}$; the container is closed and rigid, so the amount and the volume of the gas stay the same\n\n**Find:** the temperature $\\theta_0$ at which the pressure is zero according to the line, in ${}^\\circ\\text{C}$\n\n**Principle:** The points lie approximately on a straight line, so the pressure depends linearly on the temperature: $p = k\\theta + b$. The slope tells by how many kilopascals the pressure grows per degree Celsius, and the constant term is the pressure at $0\\,{}^\\circ\\text{C}$. The temperature asked for is found by extending the line, that is, by extrapolating far outside the measured range.\n\n**Reading the graph:** The line fitted among the points passes through the points $(0\\,{}^\\circ\\text{C};\\ 75.0\\,\\text{kPa})$ and $(100\\,{}^\\circ\\text{C};\\ 102.6\\,\\text{kPa})$, so the constant term is $b = 75.0\\,\\text{kPa}$.\n\n**Formula:** $k = \\dfrac{\\Delta p}{\\Delta\\theta}$, and the pressure is zero when $k\\theta_0 + b = 0$, so $\\theta_0 = -\\dfrac{b}{k}$\n\n**Conversions:** Not needed: the temperatures are in degrees Celsius and the pressures in kilopascals, and $\\text{kPa}$ cancels.\n\n**Substitution:** $k = \\dfrac{102.6\\,\\text{kPa} - 75.0\\,\\text{kPa}}{100\\,{}^\\circ\\text{C} - 0\\,{}^\\circ\\text{C}} = 0.276\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$ and $\\theta_0 = -\\dfrac{75.0\\,\\text{kPa}}{0.276\\,\\text{kPa}/{}^\\circ\\text{C}} = -271.7\\,{}^\\circ\\text{C}$\n\n**Answer:** $\\theta_0 \\approx -270\\,{}^\\circ\\text{C}$, two significant figures, because the pressures of the points are read from the graph to about two figures and the line is extended almost three times the length of the measured range. The slope $0.28\\,\\text{kPa}/{}^\\circ\\text{C}$ tells how fast the pressure grows on heating, and the constant term $75\\,\\text{kPa}$ is the pressure at the freezing point.\n\n**Reasonableness:** The result is close to absolute zero, $-273.15\\,{}^\\circ\\text{C}$ (chapter *Thermodynamic system, state variables and temperature*). The extrapolation is, however, only a prediction of the model: a real gas condenses into a liquid long before its pressure would fall to zero, so in practice the pressure does not follow the line that far. A small change in the slope of the line moves the crossing point by tens of degrees, which shows in the precision of the answer."
+      }
+    },
+    {
+      "id": "tiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Kokonaiskuva",
+        "Kaava",
+        "Yleisiä virheitä",
+        "Kertaa tarvittaessa"
+      ]
+    },
+    {
+      "id": "virhe-tulos",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error: the form of the result",
+      "prompt": "A student determined the acceleration of free fall from a graph and wrote the answer $g = (9.7634 \\pm 0.38)\\,\\text{m/s}^2$. What is the correctly rounded form of the result?",
+      "choices": [
+        {
+          "text": "$g = (9.76 \\pm 0.38)\\,\\text{m/s}^2$",
+          "feedback": "The first digit of the uncertainty is $3$, so it is rounded to one significant figure: $0.4\\,\\text{m/s}^2$. The second digit $8$ is not reliable when already the first is uncertain. Review rounding in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "$g = (9.8 \\pm 0.4)\\,\\text{m/s}^2$",
+          "correct": true,
+          "feedback": "Correct. The uncertainty is rounded to one significant figure, $0.4\\,\\text{m/s}^2$, and the result to the same decimal place, $9.8\\,\\text{m/s}^2$. The rounding rule is in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "$g = (9.7634 \\pm 0.4)\\,\\text{m/s}^2$",
+          "feedback": "The uncertainty is right, but the result is rounded to a different precision. If already the tenths are uncertain, the hundredths and thousandths have no meaning: the result is rounded to the same decimal place, $9.8\\,\\text{m/s}^2$. Review in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "$g = (10 \\pm 0.4)\\,\\text{m/s}^2$",
+          "feedback": "The result is rounded too much: the tenths are included in the uncertainty, so they also belong in the result. The right form is $(9.8 \\pm 0.4)\\,\\text{m/s}^2$. Review in the chapter *Measuring and the reliability of a measurement*."
+        }
+      ]
+    },
+    {
+      "id": "aika-kuvaaja",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Choose the straight-line graph",
+      "prompt": "A toy car drives along a $2.0\\,\\text{m}$ track at a constant speed. The track is driven many times at different speeds $v$, and each time the time $t$ taken to drive the track is measured. The points of which graph should lie on a straight line through the origin?",
+      "choices": [
+        {
+          "text": "The points of the $(v, t)$ graph",
+          "feedback": "When the speed grows, the time gets shorter, so the $(v, t)$ graph is a falling curve, not a straight line. The distance is the same every time, so $t = \\tfrac{s}{v}$, that is, $t$ is proportional to the quantity $\\tfrac{1}{v}$. Review linearisation in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "The points of the $(v^2, t)$ graph",
+          "feedback": "A square would straighten the graph if the time were proportional to the square of the speed. But the time gets shorter as the speed grows: $t = \\tfrac{s}{v}$. Review in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "The points of the $(\\tfrac{1}{v}, t)$ graph",
+          "correct": true,
+          "feedback": "Correct. The distance is constant, so $t = s \\cdot \\tfrac{1}{v}$, and the $(\\tfrac{1}{v}, t)$ graph is a straight line through the origin whose slope is the length of the track $s$. Linearisation is discussed in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "The points of the $(\\sqrt{v}, t)$ graph",
+          "feedback": "A square root does not remove the inverse proportionality: the time still gets shorter as $\\sqrt{v}$ grows. Since $t = \\tfrac{s}{v}$, the horizontal axis gets $\\tfrac{1}{v}$. Review in the chapter *Graphing and fitting a straight line*."
+        }
+      ]
+    },
+    {
+      "id": "vakiotermi",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Evaluate the conclusion",
+      "prompt": "According to the model, the extension $x$ of a spring is directly proportional to the force $F$. The constant term of the line fitted to the measurement points is, however, $0.4\\,\\text{cm}$, and the uncertainty of the extensions is $\\pm 0.1\\,\\text{cm}$. Which conclusion is best justified?",
+      "choices": [
+        {
+          "text": "The constant term clearly exceeds the uncertainty, so a reason is looked for, such as the zero point.",
+          "correct": true,
+          "feedback": "Correct. The constant term $0.4\\,\\text{cm}$ is four times the uncertainty of the extensions, so random error does not explain it. The likely cause is systematic, for example the extensions were measured from the wrong zero point. The slope can still be right. Review in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "The line is forced through the origin, because according to the model it should go there.",
+          "feedback": "A forced line would miss the points and change the slope. The data say that something has happened, and the reason is found out before the line is forced through the origin. Review in the chapter *Graphing and fitting a straight line*."
+        },
+        {
+          "text": "The constant term shows that the spring does not follow the linear model at all with any force.",
+          "feedback": "The points are on a straight line, so the relationship is linear: only the position of the line has shifted. The shift points to a systematic error, such as the zero point, not to the model. Review the types of error in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "The constant term is small, so it is rounded to zero and not dealt with further.",
+          "feedback": "Small and insignificant are not the same thing. The constant term is compared with the uncertainty, not with zero: $0.4\\,\\text{cm}$ is four times the uncertainty $0.1\\,\\text{cm}$. Review in the chapter *Measuring and the reliability of a measurement*."
+        }
+      ]
+    },
+    {
+      "id": "virhelaji",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Identify the type of error",
+      "prompt": "A student reads the scale of a measuring cylinder standing on the table every time while standing, from obliquely above, and not with the eyes at the level of the liquid surface. What kind of error appears in the results?",
+      "choices": [
+        {
+          "text": "A random error, which gets smaller in the mean when more readings are taken.",
+          "feedback": "A random error is sometimes positive and sometimes negative. A reading taken from obliquely above is wrong in the same direction every time, so the mean does not correct it. Review the types of error in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "A systematic error: every reading is wrong in the same direction.",
+          "correct": true,
+          "feedback": "Correct. When the scale is always read from the same wrong angle, all the readings shift in the same direction. Repetition does not remove the error; it is corrected by reading with the eyes at the level of the liquid surface. Systematic error is discussed in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "A gross error, which shows as one reading clearly different from the others.",
+          "feedback": "A gross error is a single mistake. Here the same way of reading is repeated every time, so no reading differs from the others: they are all wrong in the same direction. Review in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "No error, because the way of reading stays exactly the same every time.",
+          "feedback": "The same way of reading is exactly what makes the error systematic: it repeats in the same way every time. The results can be close together but in the wrong place. Review repeatability and accuracy in the chapter *Measuring and the reliability of a measurement*."
+        }
+      ]
+    },
+    {
+      "id": "kolikot",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A stack of coins",
+      "prompt": "With a ruler, a student measures the height of a stack of ten identical coins as $18.5\\,\\text{mm}$. The smallest scale division of the ruler is $1\\,\\text{mm}$, so the uncertainty of the height of the stack is estimated as $0.5\\,\\text{mm}$. How large is the relative uncertainty of the thickness of one coin? Answer in percent.",
+      "answer": 2.7,
+      "unit": "%",
+      "tolerance": 0.12,
+      "hints": [
+        "How thick is one coin, and how large is the uncertainty of its thickness, when there are ten coins in the stack?",
+        "Both the thickness and its uncertainty are divided by ten: $d = 1.85\\,\\text{mm}$ and $\\Delta d = 0.05\\,\\text{mm}$.",
+        "$\\varepsilon = \\dfrac{\\Delta d}{d} \\cdot 100\\,\\% = \\dfrac{0.05\\,\\text{mm}}{1.85\\,\\text{mm}} \\cdot 100\\,\\%$"
+      ],
+      "mistakes": [
+        {
+          "value": 27,
+          "feedback": "You divided the uncertainty of the stack, $0.5\\,\\text{mm}$, by the thickness of one coin. When the height of the stack is divided by ten, its uncertainty is also divided by ten: $\\Delta d = 0.05\\,\\text{mm}$. That is exactly why it pays to measure a stack."
+        },
+        {
+          "value": 0.27,
+          "feedback": "You divided the uncertainty of one coin, $0.05\\,\\text{mm}$, by the height of the whole stack. Compare the numbers of the same coin: $\\tfrac{\\Delta d}{d} = \\tfrac{0.05\\,\\text{mm}}{1.85\\,\\text{mm}}$."
+        },
+        {
+          "value": 0.027,
+          "feedback": "This is the relative uncertainty as a decimal number. Multiply the ratio $\\tfrac{\\Delta d}{d} = 0.027$ by a hundred percent, since the answer is asked in percent."
+        }
+      ],
+      "solution": "**Given:** height of the stack $h = 18.5\\,\\text{mm}$, its uncertainty $\\Delta h = 0.5\\,\\text{mm}$, number of coins $N = 10$\n\n**Find:** the relative uncertainty $\\varepsilon$ of the thickness of one coin in percent\n\n**Principle:** The coins are identical, so the thickness of one coin is the height of the stack divided by ten. The height of the stack is read once, so the uncertainty of the whole reading is shared by ten coins. The relative uncertainty compares the uncertainty with the result itself.\n\n**Formula:** $d = \\dfrac{h}{N}$ and $\\Delta d = \\dfrac{\\Delta h}{N}$, so $\\varepsilon = \\dfrac{\\Delta d}{d} \\cdot 100\\,\\% = \\dfrac{\\Delta h}{h} \\cdot 100\\,\\%$\n\n**Conversions:** Not needed: the millimetres cancel in the ratio.\n\n**Substitution:** $d = 18.5\\,\\text{mm} : 10 = 1.85\\,\\text{mm}$, $\\Delta d = 0.5\\,\\text{mm} : 10 = 0.05\\,\\text{mm}$ and $\\varepsilon = \\dfrac{0.05\\,\\text{mm}}{1.85\\,\\text{mm}} \\cdot 100\\,\\% = 2.70\\,\\%$\n\n**Answer:** $\\varepsilon \\approx 3\\,\\%$ ($2.7\\,\\%$). The uncertainty $0.5\\,\\text{mm}$ is a one-significant-figure estimate, so one figure is enough; two figures are fine for an intermediate result. The thickness of a coin is $(1.85 \\pm 0.05)\\,\\text{mm}$.\n\n**Reasonableness:** If one coin were measured with the same ruler, the uncertainty would be $0.5\\,\\text{mm} : 1.85\\,\\text{mm} \\approx 27\\,\\%$, ten times as large. Measuring a stack reduces the uncertainty for one coin, because the uncertainty of one reading is shared by ten coins."
+    },
+    {
+      "id": "jousi-suora",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The line of a spring",
+      "prompt": "Different weights were hung from a spring, and with each load the total length $L$ of the spring was measured. The $(L, F)$ line fitted to the points passes through the points $(15.0\\,\\text{cm};\\ 1.2\\,\\text{N})$ and $(35.0\\,\\text{cm};\\ 17.0\\,\\text{N})$, where $F$ is the force stretching the spring. What is the spring constant of the spring? Answer in the unit $\\text{N/m}$.",
+      "answer": 79,
+      "unit": "N/m",
+      "tolerance": 0.02,
+      "hints": [
+        "The extension of the spring is $L - L_0$, where $L_0$ is the length of the spring without a load. Which quantity of the line is the spring constant: the slope or the constant term?",
+        "$F = k(L - L_0) = kL - kL_0$, so the spring constant is the slope $k = \\dfrac{\\Delta F}{\\Delta L}$.",
+        "$k = \\dfrac{17.0\\,\\text{N} - 1.2\\,\\text{N}}{0.350\\,\\text{m} - 0.150\\,\\text{m}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 0.79,
+          "feedback": "The number is right in the unit $\\text{N/cm}$. Convert the lengths to metres before dividing: $20.0\\,\\text{cm} = 0.200\\,\\text{m}$."
+        },
+        {
+          "value": 48.6,
+          "feedback": "You divided the force of one point by the total length of the spring. The length is not the extension, because the spring has a length even without a load. Calculate the slope from the differences between two points of the line: $k = \\tfrac{\\Delta F}{\\Delta L}$."
+        },
+        {
+          "value": 8,
+          "feedback": "You divided the force of the first point by the total length of the spring. The length is not the extension, because the spring has a length even without a load. Calculate the slope from the differences between two points of the line: $k = \\tfrac{\\Delta F}{\\Delta L}$."
+        }
+      ],
+      "solution": "**Given:** points of the fitted line $(L_1;\\ F_1) = (15.0\\,\\text{cm};\\ 1.2\\,\\text{N})$ and $(L_2;\\ F_2) = (35.0\\,\\text{cm};\\ 17.0\\,\\text{N})$; $L$ is the total length of the spring\n\n**Find:** the spring constant $k$ in the unit $\\text{N/m}$\n\n**Principle:** The extension of the spring is $L - L_0$, where $L_0$ is the length of the spring without a load, and the stretching force is proportional to the extension. Then $F = kL - kL_0$ is a straight line whose slope is the spring constant and whose constant term is $-kL_0$. The ratio $F : L$ is not the spring constant, because $L$ is not the extension.\n\n**Formula:** $k = \\dfrac{\\Delta F}{\\Delta L} = \\dfrac{F_2 - F_1}{L_2 - L_1}$\n\n**Conversions:** $L_1 = 15.0\\,\\text{cm} = 15.0 \\cdot 0.01\\,\\text{m} = 0.150\\,\\text{m}$ and $L_2 = 35.0 \\cdot 0.01\\,\\text{m} = 0.350\\,\\text{m}$\n\n**Substitution:** $k = \\dfrac{17.0\\,\\text{N} - 1.2\\,\\text{N}}{0.350\\,\\text{m} - 0.150\\,\\text{m}} = \\dfrac{15.8\\,\\text{N}}{0.200\\,\\text{m}} = 79.0\\,\\tfrac{\\text{N}}{\\text{m}}$\n\n**Answer:** $k \\approx 79.0\\,\\text{N/m}$, three significant figures as in the differences $15.8\\,\\text{N}$ and $0.200\\,\\text{m}$.\n\n**Reasonableness:** The length of the spring without a load is $L_0 = L_1 - \\tfrac{F_1}{k} = 0.150\\,\\text{m} - \\tfrac{1.2\\,\\text{N}}{79.0\\,\\text{N/m}} \\approx 0.135\\,\\text{m}$, which is shorter than any measured length, as it should be. A spring constant of $79\\,\\text{N/m}$ is of the usual order of magnitude for a school extension spring."
+    },
+    {
+      "id": "kuula-kouru",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "A ball in a channel",
+      "prompt": "A ball rolls from rest down a sloping channel, and the time is measured from the moment of release. A student drew a $(t^2, s)$ graph and fitted to the points a straight line through the origin, which also passes through the point $(4.0\\,\\text{s}^2;\\ 2.48\\,\\text{m})$. How large is the acceleration of the ball?",
+      "answer": 1.24,
+      "unit": "m/s²",
+      "tolerance": 0.04,
+      "hints": [
+        "What is the slope of the line, and what is its unit?",
+        "The equation of motion is $s = \\tfrac{1}{2}at^2$. When the horizontal axis has $t^2$, the slope is $k = \\tfrac{a}{2}$.",
+        "$a = 2k = 2 \\cdot \\dfrac{2.48\\,\\text{m}}{4.0\\,\\text{s}^2}$"
+      ],
+      "mistakes": [
+        {
+          "value": 0.62,
+          "feedback": "This is the slope $k$ of the line. Since $s = \\tfrac{1}{2}at^2$, the slope is only half of the acceleration: $a = 2k$."
+        },
+        {
+          "value": 0.31,
+          "feedback": "The result is a quarter of the right one. Either you divided the slope by two, or you squared the value $4.0$ of the horizontal axis again, although the axis already has $t^2 = 4.0\\,\\text{s}^2$. In the equation $s = \\tfrac{1}{2}at^2$ the slope is $k = \\tfrac{a}{2}$, so $a = 2k$."
+        }
+      ],
+      "solution": "**Given:** a $(t^2, s)$ line through the origin, which passes through the point $(t^2;\\ s) = (4.0\\,\\text{s}^2;\\ 2.48\\,\\text{m})$; the ball starts from rest\n\n**Find:** the acceleration $a$ of the ball in the unit $\\text{m/s}^2$\n\n**Principle:** The $(t^2, s)$ points are on a straight line, so the acceleration is constant. In uniformly accelerated motion from rest, $s = \\tfrac{1}{2}at^2$ when the time is counted from the start. The equation has the form $y = kx$, where $y = s$, $x = t^2$ and the slope $k = \\tfrac{a}{2}$.\n\n**Formula:** $k = \\dfrac{\\Delta s}{\\Delta (t^2)}$ and $k = \\dfrac{a}{2}$, so $a = 2k$\n\n**Conversions:** Not needed: $\\tfrac{\\text{m}}{\\text{s}^2}$ is already the unit of acceleration.\n\n**Substitution:** The line passes through the origin and the given point: $k = \\dfrac{2.48\\,\\text{m} - 0\\,\\text{m}}{4.0\\,\\text{s}^2 - 0\\,\\text{s}^2} = 0.620\\,\\tfrac{\\text{m}}{\\text{s}^2}$ and $a = 2 \\cdot 0.620\\,\\tfrac{\\text{m}}{\\text{s}^2} = 1.24\\,\\tfrac{\\text{m}}{\\text{s}^2}$\n\n**Answer:** $a \\approx 1.2\\,\\text{m/s}^2$, two significant figures as in the number $4.0\\,\\text{s}^2$.\n\n**Reasonableness:** The unit of the slope, $\\tfrac{\\text{m}}{\\text{s}^2}$, is the unit of acceleration, as it should be. The acceleration is much smaller than $g = 9.81\\,\\text{m/s}^2$, which suits a gently sloping channel. Check: in two seconds the ball travels $\\tfrac{1}{2} \\cdot 1.24\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot (2.0\\,\\text{s})^2 = 2.48\\,\\text{m}$."
+    },
+    {
+      "id": "kattila",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Read from the equation of the line",
+      "prompt": "The temperature of the water in a pan was measured every minute for $12$ minutes. The equation of the line fitted to the points is $\\theta = 4.6\\,\\tfrac{{}^\\circ\\text{C}}{\\text{min}} \\cdot t + 14\\,{}^\\circ\\text{C}$. When was the temperature of the water $60\\,{}^\\circ\\text{C}$ according to the model? Answer in minutes.",
+      "answer": 10.0,
+      "unit": "min",
+      "tolerance": 0.03,
+      "hints": [
+        "Substitute $\\theta = 60\\,{}^\\circ\\text{C}$ into the equation of the line and solve for $t$.",
+        "$t = \\dfrac{\\theta - b}{k}$, where $b = 14\\,{}^\\circ\\text{C}$ and $k = 4.6\\,\\tfrac{{}^\\circ\\text{C}}{\\text{min}}$.",
+        "$t = \\dfrac{60\\,{}^\\circ\\text{C} - 14\\,{}^\\circ\\text{C}}{4.6\\,{}^\\circ\\text{C/min}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 13.0,
+          "feedback": "You divided the temperature $60\\,{}^\\circ\\text{C}$ by the slope. At the start the water was not at $0\\,{}^\\circ\\text{C}$ but at $14\\,{}^\\circ\\text{C}$, so the constant term is subtracted first: $t = \\tfrac{\\theta - b}{k}$."
+        },
+        {
+          "value": 16.1,
+          "feedback": "You added the constant term, although it has to be subtracted. From the equation $\\theta = kt + b$ we get $t = \\tfrac{\\theta - b}{k}$."
+        }
+      ],
+      "solution": "**Given:** the fitted line $\\theta = kt + b$, where $k = 4.6\\,\\tfrac{{}^\\circ\\text{C}}{\\text{min}}$ and $b = 14\\,{}^\\circ\\text{C}$; measured range $0$–$12\\,\\text{min}$; temperature $\\theta = 60\\,{}^\\circ\\text{C}$\n\n**Find:** the moment $t$ when the temperature is $60\\,{}^\\circ\\text{C}$, in minutes\n\n**Principle:** The fitted line is a model of the heating, so the moment is solved from the equation of the line. The slope is the rate of heating and the constant term the initial temperature of the water.\n\n**Formula:** $\\theta = kt + b$, from which $t = \\dfrac{\\theta - b}{k}$\n\n**Conversions:** Not needed: the degrees Celsius cancel and the time comes out in minutes.\n\n**Substitution:** $t = \\dfrac{60\\,{}^\\circ\\text{C} - 14\\,{}^\\circ\\text{C}}{4.6\\,\\tfrac{{}^\\circ\\text{C}}{\\text{min}}} = \\dfrac{46\\,{}^\\circ\\text{C}}{4.6\\,\\tfrac{{}^\\circ\\text{C}}{\\text{min}}} = 10.0\\,\\text{min}$\n\n**Answer:** $t \\approx 10\\,\\text{min}$, two significant figures as in the slope $4.6\\,{}^\\circ\\text{C/min}$.\n\n**Reasonableness:** The moment is inside the measured range $0$–$12\\,\\text{min}$, so this is interpolation and the model has been tested there. In ten minutes the temperature rises by $46\\,{}^\\circ\\text{C}$ from the initial temperature $14\\,{}^\\circ\\text{C}$, and $14 + 46 = 60$."
+    },
+    {
+      "id": "tarkista-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Repeatability and accuracy",
+      "prompt": "Two groups measured the length of the same table. Group A got the results $1.803\\,\\text{m}$, $1.804\\,\\text{m}$ and $1.803\\,\\text{m}$, group B the results $1.79\\,\\text{m}$, $1.82\\,\\text{m}$ and $1.80\\,\\text{m}$. A check measurement with a much more precise instrument gave $1.800\\,\\text{m}$. Which statement is correct?",
+      "practice": "Review repeatability, accuracy and the types of error in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html).",
+      "choices": [
+        {
+          "text": "The result of group A is more accurate, because its results are closer to each other.",
+          "feedback": "A tight group shows good repeatability, not accuracy. The mean of group A, $1.803\\,\\text{m}$, is $3\\,\\text{mm}$ from the check value, which is many times its spread. Review in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "The measurement of group A is repeatable, but it has a systematic error.",
+          "correct": true,
+          "feedback": "Correct. The result of group A is $(1.8033 \\pm 0.0005)\\,\\text{m}$, and the interval does not contain the value $1.800\\,\\text{m}$: all the results have shifted in the same direction. The result of group B, $(1.803 \\pm 0.015)\\,\\text{m}$, agrees with the check value, although its spread is larger."
+        },
+        {
+          "text": "The measurement of group B is worse, because its large spread is a systematic error.",
+          "feedback": "Spread is caused by random error, not systematic error. The result of group B, $(1.803 \\pm 0.015)\\,\\text{m}$, contains the check value, so no systematic error shows in it. Review in the chapter *Measuring and the reliability of a measurement*."
+        },
+        {
+          "text": "Neither measurement has an error, because the means are the same.",
+          "feedback": "Equal means do not mean that there is no error. Both differ from the check value by $3\\,\\text{mm}$, and what matters is the size of the deviation compared with the uncertainty: for group A it is many times the uncertainty. Review in the chapter *Measuring and the reliability of a measurement*."
+        }
+      ]
+    },
+    {
+      "id": "tarkista-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Uncertainty of the slope",
+      "prompt": "A student determined the density of a liquid from a $(V, m)$ graph. The slope of the fitted line is $0.920\\,\\tfrac{\\text{g}}{\\text{cm}^3}$. The slope of the steepest line through the uncertainty bars is $0.948\\,\\tfrac{\\text{g}}{\\text{cm}^3}$ and that of the shallowest $0.892\\,\\tfrac{\\text{g}}{\\text{cm}^3}$. How large is the uncertainty $\\Delta\\rho$ of the density? Answer in the unit $\\text{kg/m}^3$.",
+      "answer": 28,
+      "unit": "kg/m³",
+      "tolerance": 0.08,
+      "practice": "Review estimating and rounding the uncertainty in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html) and in the ICT guide *Uncertainty of the slope*.",
+      "hints": [
+        "The steepest and the shallowest line bound the estimated range. What is half of it?",
+        "$\\Delta\\rho = \\dfrac{k_\\text{max} - k_\\text{min}}{2}$",
+        "Finally convert: $1\\,\\tfrac{\\text{g}}{\\text{cm}^3} = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3}$."
+      ],
+      "mistakes": [
+        {
+          "value": 56,
+          "feedback": "This is the whole range $k_\\text{max} - k_\\text{min}$. The uncertainty is half of it, because the result is stated in the form $\\rho \\pm \\Delta\\rho$."
+        },
+        {
+          "value": 0.028,
+          "feedback": "The number is right in the unit $\\text{g/cm}^3$. Convert it to the unit $\\text{kg/m}^3$ by multiplying by a thousand."
+        }
+      ],
+      "solution": "**Given:** slope of the fitted line $k = 0.920\\,\\tfrac{\\text{g}}{\\text{cm}^3}$, of the steepest line $k_\\text{max} = 0.948\\,\\tfrac{\\text{g}}{\\text{cm}^3}$ and of the shallowest $k_\\text{min} = 0.892\\,\\tfrac{\\text{g}}{\\text{cm}^3}$\n\n**Find:** the uncertainty of the density $\\Delta\\rho$ in the unit $\\text{kg/m}^3$\n\n**Principle:** The slope of the $(V, m)$ line is the density. The steepest and the shallowest line that still pass through the uncertainty bars bound the estimated range of the slope, and half of it is taken as the uncertainty.\n\n**Formula:** $\\Delta\\rho = \\dfrac{k_\\text{max} - k_\\text{min}}{2}$\n\n**Conversions:** $1\\,\\tfrac{\\text{g}}{\\text{cm}^3} = \\dfrac{10^{-3}\\,\\text{kg}}{10^{-6}\\,\\text{m}^3} = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Substitution:** $\\Delta\\rho = \\dfrac{0.948\\,\\tfrac{\\text{g}}{\\text{cm}^3} - 0.892\\,\\tfrac{\\text{g}}{\\text{cm}^3}}{2} = 0.028\\,\\tfrac{\\text{g}}{\\text{cm}^3} = 0.028 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} = 28\\,\\tfrac{\\text{kg}}{\\text{m}^3}$\n\n**Answer:** $\\Delta\\rho \\approx 30\\,\\text{kg/m}^3$, when the uncertainty is rounded to one significant figure ($28\\,\\text{kg/m}^3$ before rounding). The result is stated in the form $\\rho = (920 \\pm 30)\\,\\text{kg/m}^3$.\n\n**Reasonableness:** The relative uncertainty is $28 : 920 \\approx 3\\,\\%$, which is typical of a school measurement. The slope of the fitted line is almost halfway between the steepest and the shallowest, as it usually is."
+    },
+    {
+      "id": "tarkista-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Go back to the problem at the start of the lesson. Explain why the density of the liquid should be determined from the slope of the $(V, m)$ graph and not by calculating the ratio $m : V$ on every row, when the balance weighs the measuring cylinder and the liquid together.",
+      "practice": "Review the mass of the container as the constant term in the chapter [*Density*](fy1-7.html) and reading the slope in the chapter [*Graphing and fitting a straight line*](fy1-4.html).",
+      "criteria": [
+        "The answer says that the weighed mass includes the mass of the measuring cylinder, so the ratio $m : V$ is too large and changes with the volume.",
+        "The answer says that the slope $\\tfrac{\\Delta m}{\\Delta V}$ comes only from the change in the mass of the liquid, so the mass of the measuring cylinder cancels out.",
+        "The answer says that the constant term of the line is the mass of the empty measuring cylinder.",
+        "The answer says that the line is fitted to all the points, so the random errors of single points affect the result less."
+      ],
+      "model": "The balance weighs the measuring cylinder and the liquid together: $m = \\rho V + m_0$, where $m_0$ is the mass of the measuring cylinder. The ratio $m : V = \\rho + \\tfrac{m_0}{V}$ is therefore always larger than the density, and it decreases as liquid is added, so Aino's mean is wrong. When liquid is added, the mass of the measuring cylinder stays the same, so the change in mass comes only from the liquid: the slope $\\tfrac{\\Delta m}{\\Delta V}$ is the density of the liquid, and $m_0$ cancels out. The constant term of the line gives the mass of the empty measuring cylinder. In addition, the line is fitted to all the points, so the random error of one point affects the result less than in a value calculated from one row. So Eetu's method gives the density."
+    },
+    {
+      "id": "lopuksi",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, answer two quick questions without notes."
+    }
+  ]
+}

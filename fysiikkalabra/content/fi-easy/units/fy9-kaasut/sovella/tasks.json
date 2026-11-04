@@ -1,0 +1,680 @@
+{
+  "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin aiheet: paineen, kaasut ja lämpövoimakoneen. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, miksi valitset mallin. Tarkista, että lämpötila on kelvineinä ja paine on kokonaispaine. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "tasks": [
+    {
+      "id": "fy9-kaasut-s1",
+      "title": "Paineilmanostin",
+      "source": "example",
+      "source_note": "Nostin ja sen luvut ovat keksitty esimerkki.",
+      "skills": [
+        "fy3-4",
+        "fy3-11",
+        "fy3-9"
+      ],
+      "text": "Pienkorjaamon autonostin toimii paineilmalla. Nostimessa on pystysuora sylinteri ja mäntä. Männän halkaisija on $0{,}200\\,\\text{m}$. Mäntä kannattaa eli pitää ylhäällä nostolavaa, jolla auto on. Auton ja lavan massa on yhteensä $1800\\,\\text{kg}$. Männän yläpuolella on ulkoilmaa, jonka paine on $101\\,\\text{kPa}$. Paineilma tulee kompressorin säiliöstä. Säiliön tilavuus on $100\\,\\textsf{l}$. Kun kompressori sammuu, säiliön mittari näyttää ylipainetta $900\\,\\text{kPa}$.\n\nAuto nostetaan hitaasti ja tasaisella nopeudella $1{,}20\\,\\text{m}$ ylös. Ennen nostoa sylinterissä männän alla ei ole juuri lainkaan ilmaa. Oletetaan, että ilman lämpötila pysyy koko ajan samana. Oletetaan myös, että männän kitka on niin pieni, ettei sillä ole merkitystä.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suuri ylipaine sylinterissä on noston aikana?",
+          "answer": {
+            "value": 562.1,
+            "unit": "kPa",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Kun nopeus on tasainen, voimat ovat tasapainossa: $\\Delta p\\,A = mg$. Tässä $\\Delta p$ on sylinterin ilman ja ulkoilman paine-ero."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$A = \\pi r^2 = \\pi \\cdot (0{,}100\\,\\text{m})^2 \\approx 0{,}0314\\,\\text{m}^2$ ja $mg \\approx 17{,}7\\,\\text{kN}$, joten $\\Delta p \\approx 562\\,\\text{kPa}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Säde lasketaan halkaisijasta, ja paine muutetaan pascaleista kilopascaleiksi; kolme merkitsevää numeroa."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Ylipaine on pienempi kuin säiliön $900\\,\\text{kPa}$. Siksi ilma virtaa säiliöstä sylinteriin."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suuren työn nostin tekee autoon ja lavaan? Perustele tulos niin, että lasket sen kahdella eri tavalla. Selitä, miksi sylinterin ilma tekee silti enemmän työtä.",
+          "answer": {
+            "value": 21.19,
+            "unit": "kJ",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$W = mgh$ ja $W = \\Delta p\\,\\Delta V$, missä $\\Delta V = Ah$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W = 1800\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 1{,}20\\,\\text{m} \\approx 21{,}2\\,\\text{kJ}$ ja $562\\,\\text{kPa} \\cdot 37{,}7\\,\\textsf{l} \\approx 21{,}2\\,\\text{kJ}$."
+            },
+            {
+              "text": "Selittää, että sylinterin ilma työntää mäntää kokonaispaineella $663\\,\\text{kPa}$ ja tekee työn $p\\,\\Delta V \\approx 25{,}0\\,\\text{kJ}$. Erotus $3{,}8\\,\\text{kJ}$ kuluu siihen, että mäntä työntää yläpuolellaan olevaa ulkoilmaa pois tieltä.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\text{kPa} \\cdot \\textsf{l} = \\text{J}$ tai muunnos perusyksiköihin; kolme merkitsevää numeroa."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Mitä säiliön mittari näyttää yhden noston jälkeen? Riittääkö säiliön ilma toiseen samanlaiseen nostoon, jos kompressori ei käynnisty välillä? Arvioi myös, miten oletus lämpötilasta vaikuttaa tulokseen.",
+          "answer": {
+            "value": 650.0,
+            "unit": "kPa",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ilman määrä säilyy, kun lämpötila on vakio: $p_1V_\\text{s} = p_2V_\\text{s} + p_\\text{c}\\,\\Delta V$. Tässä $p_\\text{c} = 663\\,\\text{kPa}$ on sylinterin kokonaispaine."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$p_1 = 1001\\,\\text{kPa}$, joten $p_2 = 1001\\,\\text{kPa} - 663\\,\\text{kPa} \\cdot 0{,}377 \\approx 751\\,\\text{kPa}$ eli mittarissa noin $650\\,\\text{kPa}$."
+            },
+            {
+              "text": "Perustelee, että ilma virtaa vain suuremmasta paineesta pienempään. Siksi säiliössä on oltava koko noston ajan vähintään $663\\,\\text{kPa}$. Toisen noston jälkeen paine olisi noin $501\\,\\text{kPa}$. Toinen nosto jää siis kesken, noin $0{,}4\\,\\text{m}$:n korkeudelle.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Säiliöstä purkautuva eli ulos virtaava ilma jäähtyy, kun se laajenee. Siksi paine on hetken vielä pienempi, kunnes ilma lämpenee huoneen lämpötilaan."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy3-4",
+        "concept": "fy3-11",
+        "transfer": "fy3-9"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s2",
+      "title": "Maatilan biokaasumoottori",
+      "source": "example",
+      "source_note": "Laitos ja sen luvut ovat keksitty esimerkki; metaanin lämpöarvo on pyöristetty taulukkoarvo.",
+      "skills": [
+        "fy3-10",
+        "fy3-11",
+        "fy3-15"
+      ],
+      "text": "Maatilalla on biokaasulaitos. Siellä lannasta syntyy kaasua, joka puhdistetaan melkein puhtaaksi metaaniksi. Metaani poltetaan moottorissa. Moottori pyörittää generaattoria, joka tuottaa sähköä. Kaasumittarin mukaan moottoriin virtaa tunnissa $52{,}0\\,\\text{m}^3$ metaania. Mittarin kohdalla kaasun lämpötila on $25\\,{}^\\circ\\text{C}$ ja paine $104\\,\\text{kPa}$.\n\nMoottorin ja generaattorin yhteinen sähköhyötysuhde on $36\\,\\%$. Pakokaasuissa ja moottorin jäähdytysvedessä on lämpöä. Siitä saadaan lämmönvaihtimilla talteen $75\\,\\%$. Tällä lämmöllä lämmitetään navettaa ja asuinrakennusta. Metaanin moolimassa on $16{,}0\\,\\text{g/mol}$, ja sen lämpöarvo on $50{,}0\\,\\text{MJ/kg}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka monta kilogrammaa metaania moottori polttaa tunnissa?",
+          "answer": {
+            "value": 34.92,
+            "unit": "kg",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$n = \\dfrac{pV}{RT}$ ja $m = nM$"
+            },
+            {
+              "key": "units_precision",
+              "points": 2,
+              "detail": "$T = 298{,}15\\,\\text{K}$, paine pascaleina, $M = 0{,}0160\\,\\text{kg/mol}$; vastauksessa kolme merkitsevää numeroa."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$n \\approx 2180\\,\\text{mol}$ tunnissa, $m \\approx 34{,}9\\,\\text{kg}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Metaanin tiheys on $34{,}9\\,\\text{kg} : 52{,}0\\,\\text{m}^3 \\approx 0{,}67\\,\\text{kg/m}^3$. Se on pienempi kuin ilman tiheys, koska metaanin moolimassa on pienempi."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suuri on laitoksen sähköteho?",
+          "answer": {
+            "value": 174.6,
+            "unit": "kW",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P_0 = \\dfrac{Hm}{t}$ ja $P_\\text{s} = \\eta_\\text{s} P_0$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "Tunnissa vapautuu energiaa $Hm \\approx 1746\\,\\text{MJ}$, joten $P_0 \\approx 485\\,\\text{kW}$ ja $P_\\text{s} \\approx 175\\,\\text{kW}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Tunti muutetaan sekunneiksi, $1\\,\\text{h} = 3600\\,\\text{s}$; kolme merkitsevää numeroa."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Sähköteho on alle puolet polttoainetehosta. Niin lämpövoimakoneessa kuuluu olla."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Miksi moottori ei voi muuttaa koko polttoainetehoa sähköksi, vaikka kaikki kitka poistettaisiin? Kuinka suuri osa polttoainetehosta saadaan hyötyyn sähkönä ja lämpönä yhteensä?",
+          "answer": {
+            "value": 84.0,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Selittää, että moottori on lämpövoimakone. Se voi tehdä työtä vain, jos se luovuttaa osan lämmöstä kylmempään ympäristöön (pakokaasu, jäähdytysvesi). Siksi tätä lämpöä ei voi välttää edes kitkattomassa koneessa.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "Luovutettu lämpöteho on $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, ja siitä saadaan talteen $0{,}75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$. Siksi $\\eta_\\text{kok} = (175 + 233) : 485 \\approx 84\\,\\%$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kokonaishyötysuhde on suuri, koska luovutettu lämpö käytetään lämmitykseen. Sähkön osuus ei kuitenkaan kasva."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy3-10",
+        "concept": "fy3-11",
+        "communication": "fy3-15"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s3",
+      "title": "Ilma lasiruiskussa",
+      "source": "example",
+      "source_note": "Aineisto on keksitty esimerkki. Luvut on laskettu mallista, jossa ilman tilavuus on $37{,}5\\,\\text{ml}$ lämpötilassa $0\\,{}^\\circ\\text{C}$ ja verrannollinen kelvinlämpötilaan. Lukuihin on lisätty vaihtelua, joka muistuttaa asteikon lukemisen vaihtelua.",
+      "skills": [
+        "fy3-13",
+        "fy3-9",
+        "fy3-10",
+        "fy1-4"
+      ],
+      "text": "Opiskelijat tutkivat, miten ilman tilavuus riippuu lämpötilasta, kun paine on vakio. Lasiruiskun kärki suljettiin tulpalla, ja ruiskuun jäi ilmaa. Ruisku upotettiin vaakasuorassa vesihauteeseen. Hauteen lämpötilaa nostettiin vaihe kerrallaan. Lasimäntä liukuu ruiskussa melkein ilman kitkaa. Siksi ruiskun ilman paine on koko ajan ilmanpaine $101{,}3\\,\\text{kPa}$. Jokaisessa lämpötilassa opiskelijat odottivat, että mäntä pysähtyi. Sitten he lukivat tilavuuden ruiskun asteikolta. Tilavuuden lukeman epävarmuudeksi arvioitiin $\\pm 0{,}3\\,\\text{ml}$.\n\n| $\\theta\\ ({}^\\circ\\text{C})$ | $V\\ (\\text{ml})$ |\n|---|---|\n| $5$ | $38{,}2$ |\n| $15$ | $39{,}9$ |\n| $25$ | $41{,}1$ |\n| $35$ | $42{,}5$ |\n| $45$ | $43{,}8$ |\n| $55$ | $45{,}1$ |\n| $65$ | $46{,}5$ |\n| $75$ | $47{,}8$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "Esitä kuvaajana, miten ilman tilavuus riippuu lämpötilasta. Sovita pisteisiin sopiva malli.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla on $\\theta\\ ({}^\\circ\\text{C})$ ja pystyakselilla $V\\ (\\text{ml})$. Pystyakselin voi aloittaa esimerkiksi $36\\,\\text{ml}$:sta, kun se kerrotaan."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "Pisteisiin on sovitettu nouseva suora, joka kulkee pisteiden lomitse eli välistä ja epävarmuusjanojen kautta. Pisteitä ei ole yhdistetty murtoviivaksi."
+            },
+            {
+              "text": "Toteaa, että pisteet ovat suoralla mittausepävarmuuden rajoissa: tilavuus kasvaa yhtä paljon jokaista lämpötilan astetta kohti.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä kuvaajan avulla lämpötila, jossa ilman tilavuus olisi mallin mukaan nolla. Arvioi tuloksen epävarmuus. Vertaa tulosta hyväksyttyyn arvoon $-273{,}15\\,{}^\\circ\\text{C}$.",
+          "answer": {
+            "value": -279,
+            "unit": "°C",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kulmakerroin lasketaan suoran kahdesta pisteestä, jotka ovat kaukana toisistaan, esimerkiksi $(0\\,{}^\\circ\\text{C};\\ 37{,}7\\,\\text{ml})$ ja $(80\\,{}^\\circ\\text{C};\\ 48{,}5\\,\\text{ml})$: $k \\approx 0{,}135\\,\\text{ml}/{}^\\circ\\text{C}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\theta_0 = -\\dfrac{V_0}{k} = -\\dfrac{37{,}7\\,\\text{ml}}{0{,}135\\,\\text{ml}/{}^\\circ\\text{C}} \\approx -279\\,{}^\\circ\\text{C}$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "Jyrkin ja loivin suora, jotka vielä kulkevat kaikkien epävarmuusjanojen kautta, antavat noin $-265\\,{}^\\circ\\text{C}$ ja $-294\\,{}^\\circ\\text{C}$. Siksi $\\theta_0 \\approx (-279 \\pm 15)\\,{}^\\circ\\text{C}$. Epävarmuus on suuri, koska suoraa jatketaan lähes neljä kertaa mittausalueen pituuden verran."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Hyväksytty arvo on välin sisällä, joten tulos sopii yhteen sen kanssa. Ero ei ole merkittävä."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suuri ainemäärä ilmaa ruiskussa on? Käytä kulmakerrointa, jonka määritit kuvaajasta.",
+          "answer": {
+            "value": 1.646,
+            "unit": "mmol",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$V = \\dfrac{nR}{p}\\,T$, joten kulmakerroin on $k = \\dfrac{\\Delta V}{\\Delta T} = \\dfrac{nR}{p}$ ja $n = \\dfrac{pk}{R}$. Muutos kelvineinä on yhtä suuri kuin muutos celsiusasteina."
+            },
+            {
+              "key": "units_precision",
+              "points": 2,
+              "detail": "$k = 0{,}135\\,\\text{ml/K} = 0{,}135 \\cdot 10^{-6}\\,\\text{m}^3/\\text{K}$ ja $p = 101\\,300\\,\\text{Pa}$; kolme merkitsevää numeroa."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$n \\approx 1{,}65 \\cdot 10^{-3}\\,\\text{mol} = 1{,}65\\,\\text{mmol}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Yksi mittauspiste antaa melkein saman tuloksen: $n = \\dfrac{pV}{RT} = \\dfrac{101\\,300\\,\\text{Pa} \\cdot 41{,}1 \\cdot 10^{-6}\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 298{,}15\\,\\text{K}} \\approx 1{,}68\\,\\text{mmol}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 5,
+          "text": "Toinen ryhmä teki saman mittauksen. Heidän ruiskunsa kärkeen oli kuitenkin liitetty letku, jossa oli $1{,}5\\,\\text{ml}$ ilmaa. Letku jäi hauteen ulkopuolelle huoneenlämpöön. Letkun ilma kuuluu suljettuun ilmamäärään. Siksi ryhmä lisäsi letkun $1{,}5\\,\\text{ml}$ jokaiseen tilavuuteen, jonka he lukivat ruiskun asteikolta. Miten tämä muuttaa heidän suoraansa ja nollapisteen arviota? Arvioi, voiko virheen poistaa toistamalla mittauksia.",
+          "criteria": [
+            {
+              "text": "Selittää, että letkun ilma ei lämpene. Siksi sen tilavuus pysyy vakiona, ja jokaiseen kokonaistilavuuteen tulee sama lisä $1{,}5\\,\\text{ml}$. Suora siirtyy ylöspäin, mutta sen kulmakerroin ei muutu.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Päättelee suunnan: nollakohta $\\theta_0 = -\\dfrac{V_0 + 1{,}5\\,\\text{ml}}{k}$ siirtyy kylmemmäksi, noin $11\\,\\text{K}$ ($1{,}5 : 37{,}5 \\cdot 273\\,\\text{K}$)."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Virhe on systemaattinen eli vie kaikkia tuloksia samaan suuntaan. Siksi toistot eivät poista sitä. Koko ilmamäärä on pidettävä hauteessa. Toinen tapa on jättää letkun vakiotilavuus pois kokonaistilavuudesta. Silloin ruiskun ilma noudattaa yksinään lakia $V \\propto T$."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy3-10",
+        "experiment": "fy3-13",
+        "communication": "fy3-13"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s4",
+      "title": "Meriveden lämmöllä kulkeva laiva",
+      "source": "example",
+      "source_note": "Esite ja keksintöjen luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy3-11",
+        "fy3-5",
+        "fy3-15"
+      ],
+      "text": "Keksijä hakee rahoitusta eli rahaa laivalle, jonka moottori ei tarvitse polttoainetta. Hänen esitteessään lukee:\n\n> Moottorimme ottaa lämpöä merivedestä, jonka lämpötila on $15\\,{}^\\circ\\text{C}$, ja muuttaa sen kokonaan työksi, joka pyörittää potkuria. Laivan perässä virtaa hieman jäähtynyttä vettä. Energia säilyy, sillä meren sisäenergia muuttuu laivan liikkeeksi. Siksi moottori ei riko yhtään luonnonlakia.\n\nToinen keksijä ehdottaa konetta talvikäyttöön. Kone toimii meriveden ($3\\,{}^\\circ\\text{C}$) ja pakkasilman ($-20\\,{}^\\circ\\text{C}$) välillä. Keksijän mukaan kone ottaa merivedestä lämpöä teholla $500\\,\\text{kW}$ ja tekee työtä teholla $30\\,\\text{kW}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 6,
+          "text": "Arvioi ensimmäisen keksijän esitettä. Mikä esitteessä pitää paikkansa ja mikä ei? Perustele.",
+          "criteria": [
+            {
+              "text": "Toteaa, että energian säilyminen ei estä ideaa. Energian kannalta meren sisäenergia voisi muuttua työksi, ja esite kuvaa sen oikein.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Perustelee, että lämpövoimakone voi tehdä työtä vain, jos se luovuttaa osan lämmöstä kylmempään ympäristöön. Kaikkea lämpöä ei voi muuttaa työksi. Kone, jolla on vain yksi lämpötila, ei tee työtä.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 2,
+              "detail": "Johtopäätös: esitteen väite ”ei riko yhtään luonnonlakia” on väärä. Kone ei voi toimia niin kuin esitteessä kuvataan, eikä hanketta kannata rahoittaa."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Laske toisen keksijän koneen hyötysuhde. Laske myös lämpöteho, jonka kone luovuttaa pakkasilmaan. Arvioi, miksi hyötysuhde on näin pieni.",
+          "answer": {
+            "value": 6.0,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\eta = \\dfrac{P_W}{P_1}$ ja $P_2 = P_1 - P_W$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\eta = 30\\,\\text{kW} : 500\\,\\text{kW} = 0{,}060 = 6{,}0\\,\\%$ ja $P_2 = 470\\,\\text{kW}$"
+            },
+            {
+              "text": "Selittää, että kuuman lähteen ja kylmän ympäristön lämpötilaero $23\\,\\text{K}$ on pieni verrattuna kuuman lähteen lämpötilaan $276\\,\\text{K}$. Siksi vain pieni osa lämmöstä voi muuttua työksi.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Energia säilyy: $30\\,\\text{kW} + 470\\,\\text{kW} = 500\\,\\text{kW}$. Kone luovuttaa kylmään melkein kaiken lämmön, jonka se ottaa."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Laivan hytit eli huoneet lämmitetään lämpöpumpulla. Lämpöpumppu ottaa lämpöä samasta $3\\,{}^\\circ\\text{C}$:n merivedestä. Pumppu käyttää sähkötehoa $10\\,\\text{kW}$, ja se luovuttaa hytteihin lämpötehoa $35\\,\\text{kW}$. Selitä, miksi tämä on mahdollista, vaikka ensimmäisen keksijän moottori ei ole mahdollinen.",
+          "criteria": [
+            {
+              "text": "Selittää, että lämpöpumppu ei muuta lämpöä työksi. Se siirtää sähkön avulla lämpöä kylmästä merivedestä lämpimiin hytteihin. Merestä tulee $25\\,\\text{kW}$ ja sähköstä $10\\,\\text{kW}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Toteaa, että suhde $35 : 10 = 3{,}5$ on lämpökerroin, ei hyötysuhde. Energia säilyy, joten mitään ei synny tyhjästä.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Ero: lämpöpumppu tarvitsee ulkopuolista työtä, jotta se voi siirtää lämpöä kylmästä lämpimään. Esitteen moottori taas lupaa työtä ilman kylmempää ympäristöä."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy3-11",
+        "math": "fy3-15",
+        "communication": "fy3-11"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s5",
+      "title": "Ilman moolimassa punnitsemalla",
+      "source": "example",
+      "source_note": "Raportti ja sen mittaustulokset ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy3-10",
+        "fy1-3",
+        "fy1-4"
+      ],
+      "text": "Opiskelijaryhmä halusi määrittää ilman moolimassan punnitsemalla. Tässä on ote ryhmän raportista:\n\n> Punnitsimme $1{,}5$ litran limsapullon, jonka korkkiin oli asennettu polkupyörän venttiili. Pullossa oli huoneilmaa ilmanpaineessa, ja massa oli $52{,}36\\,\\text{g}$. Pumppasimme pulloon ilmaa pyöränpumpulla, kunnes pumpun mittari näytti $210\\,\\text{kPa}$. Irrotimme pumpun ja punnitsimme pullon heti: $55{,}64\\,\\text{g}$. Huoneen lämpötila oli $21\\,{}^\\circ\\text{C}$. Laskimme lisätyn ilman ainemäärän ideaalikaasun tilanyhtälöstä ja saimme moolimassaksi $25\\,\\text{g/mol}$. Taulukon arvo $29{,}0\\,\\text{g/mol}$ on siis liian suuri.\n\nVaa'an lukematarkkuus on $0{,}01\\,\\text{g}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Näytä, miten ryhmä sai moolimassaksi $25\\,\\text{g/mol}$.",
+          "answer": {
+            "value": 25.45,
+            "unit": "g/mol",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta n = \\dfrac{\\Delta p\\,V}{RT}$, koska tilavuus ja lämpötila ovat samat ennen ja jälkeen. Moolimassa on $M = \\dfrac{\\Delta m}{\\Delta n}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\Delta p = 210\\,000\\,\\text{Pa}$, $V = 0{,}0015\\,\\text{m}^3$, $T = 294{,}15\\,\\text{K}$; vastauksessa kaksi merkitsevää numeroa."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$\\Delta m = 3{,}28\\,\\text{g}$, $\\Delta n \\approx 0{,}129\\,\\text{mol}$, joten $M \\approx 25\\,\\text{g/mol}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 6,
+          "text": "Arvioi, onko ryhmän johtopäätös perusteltu. Nimeä mittauksen tärkeimmät virhelähteet. Kerro, mihin suuntaan kukin virhelähde muuttaa tulosta.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 3,
+              "detail": "Esimerkiksi: Pumpattu ilma on aluksi lämmintä. Siksi mittarin lukema on suurempi kuin huoneenlämmössä, ja $\\Delta n$ lasketaan liian suureksi (pienentää tulosta). Pumpun mittari mittaa letkun painetta, ja se on epätarkka (virhe kumpaan suuntaan tahansa). Ilmaa karkaa, kun pumppu irrotetaan (pienentää $\\Delta m$:ää ja tulosta). Pullon todellinen tilavuus on yli $1{,}5\\,\\textsf{l}$, ja se kasvaa paineessa (suurentaa tulosta)."
+            },
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "Arvioi, kuinka suuria vaikutukset ovat. Esimerkiksi $10\\,\\text{kPa}$ pienempi ylipaine antaisi $27\\,\\text{g/mol}$, ja $30\\,{}^\\circ\\text{C}$:n ilma antaisi noin $27\\,\\text{g/mol}$. Vaa'an $0{,}01\\,\\text{g}$ vaikuttaa alle $1\\,\\%$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Yksi mittaus ei osoita taulukkoarvoa vääräksi, kun mittauksen virheet vievät tulosta samaan suuntaan."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Suunnittele parempi koe, jolla ilman moolimassa saadaan luotettavammin.",
+          "criteria": [
+            {
+              "text": "Mittaa tarvittavat suureet luotettavasti. Pullon tilavuus mitataan täyttämällä pullo vedellä ja punnitsemalla. Ylipaine mitataan tarkalla mittarilla suoraan pullosta. Lukema luetaan vasta, kun ilma on jäähtynyt huoneenlämpöön.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Toistaa mittauksen monella eri ylipaineella. Muut tekijät pidetään samoina, esimerkiksi sama pullo ja venttiili, ja pumppu irrotetaan aina samalla tavalla.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Esittää tulokset kuvaajana $(\\Delta p, \\Delta m)$ ja määrittää moolimassan suoran kulmakertoimesta $\\dfrac{MV}{RT}$.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy3-10",
+        "experiment": "fy1-3",
+        "graph": "fy1-4",
+        "communication": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s6",
+      "title": "Alipainenostin ja lasilevy",
+      "source": "example",
+      "source_note": "Nostin ja sen luvut ovat keksitty esimerkki; kitkakertoimet ovat suuntaa antavia arvoja.",
+      "skills": [
+        "fy3-4",
+        "fy4-5",
+        "fy4-6",
+        "fy4-4"
+      ],
+      "text": "Lasiliikkeen asentaja nostaa ikkunalasia alipainenostimella. Nostin roikkuu nosturin vaijerissa. Nostimessa on pyöreä kumilaikka, joka asetetaan lasia vasten. Pumppu imee ilmaa laikan alta. Silloin paine laikan alla on $60\\,\\text{kPa}$ pienempi kuin ulkoilman paine. Laikan sisähalkaisija on $300\\,\\text{mm}$.\n\nLasilevyn pituus on $2{,}40\\,\\text{m}$, leveys $1{,}20\\,\\text{m}$ ja paksuus $10\\,\\text{mm}$. Lasin tiheys on $2500\\,\\text{kg/m}^3$. Kumin ja kuivan lasin välinen lepokitkakerroin on $0{,}60$. Märän lasin lepokitkakerroin on $0{,}30$. Nosturi kiihdyttää nostoa enintään kiihtyvyydellä $1{,}2\\,\\text{m/s}^2$. Valmistajan ohje sanoo, että nostimen pitävän voiman on oltava vähintään kaksi kertaa niin suuri kuin nosto vaatii.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Levy nostetaan lavalta vaakasuorassa asennossa. Laikka on levyn yläpinnan keskellä. Piirrä levyn voimakuvio noston alussa, kun nosturi kiihdyttää. Kuinka suuri alipaine laikan alla vähintään tarvitaan, jotta levy pysyy kiinni?",
+          "answer": {
+            "value": 11.21,
+            "unit": "kPa",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Paino osoittaa alas, ja paine-eron voima $F_\\text{p} = \\Delta p\\,A$ osoittaa ylös. Pienimmällä alipaineella laikan reunan tukivoima on nolla."
+            },
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$F_\\text{p} - mg = ma$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$m = 72{,}0\\,\\text{kg}$, $A = \\pi \\cdot (0{,}150\\,\\text{m})^2 \\approx 0{,}0707\\,\\text{m}^2$ ja $\\Delta p = \\dfrac{m(g + a)}{A} \\approx 11{,}2\\,\\text{kPa}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Millimetrit muutetaan metreiksi, ja säde lasketaan halkaisijasta; kolme merkitsevää numeroa."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Levy asennetaan pystyasennossa. Siksi levy käännetään pystyyn, ja laikka on levyn pystysuoralla pinnalla. Piirrä levyn voimakuvio. Laske, kuinka suuri alipaine nyt vähintään tarvitaan, kun nosto kiihtyy samalla tavalla.",
+          "answer": {
+            "value": 18.69,
+            "unit": "kPa",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Paino, paine-eron voima, laikan reunan tukivoima ja lepokitka; ei muita voimia."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Paine-eron voima osoittaa vaakasuoraan kohti laikkaa, ja tukivoima osoittaa vaakasuoraan poispäin laikasta. Molemmat ovat kohtisuorassa lasin pintaa vastaan. Lepokitka osoittaa ylös pintaa pitkin."
+            },
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$N = F_\\text{p} = \\Delta p\\,A$ ja $F_{\\mu 0} - mg = ma$, missä $F_{\\mu 0} \\le \\mu_0 N$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta p = \\dfrac{m(g + a)}{\\mu_0 A} \\approx 18{,}7\\,\\text{kPa}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Kolme merkitsevää numeroa ja yksikkö $\\text{kPa}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Käytä valmistajan ohjetta. Arvioi, voiko asentaja nostaa levyn pystyasennossa myös sateella, kun lasi on märkä.",
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Märällä lasilla tarvitaan $\\dfrac{m(g + a)}{0{,}30 \\cdot A} \\approx 37\\,\\text{kPa}$. Siksi varmuuskerroin on $60 : 37 \\approx 1{,}6$."
+            },
+            {
+              "key": "conclusion",
+              "points": 2,
+              "detail": "Ei voi. Kuivana pystynosto täyttää ohjeen ($60 : 18{,}7 \\approx 3{,}2$), ja vaakanosto täyttää sen selvästi ($5{,}4$). Märkänä varmuuskerroin jää kuitenkin alle kahden."
+            },
+            {
+              "text": "Perustelee, miksi pystyasento on vaativampi. Paineen voima on kohtisuorassa lasin pintaa vastaan eli vaakasuora. Siksi painon kantaa vain kitka. Kitka on enintään $\\mu_0$ kertaa tukivoima.",
+              "tag": "transfer",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy3-4",
+        "concept": "fy4-5",
+        "communication": "fy4-6",
+        "transfer": "fy4-6"
+      }
+    }
+  ]
+}

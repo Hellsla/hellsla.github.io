@@ -1,0 +1,36 @@
+{
+  "id": "fy9-voimat",
+  "course": "FY9",
+  "chapter": 3,
+  "order": 2,
+  "title": "Newtonin lait ja voimakuvio",
+  "description": "Kerrataan FY4-moduulin Newtonin lait, voimakuvion piirtäminen, paino, kitka, kalteva taso, kytketyt kappaleet ja ilmanvastus, ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "voimakuvio",
+      "explain": "Kuva, jossa on vain valittu kappale ja kaikki siihen vaikuttavat voimat nuolina. Jokaisella voimalla on aiheuttaja, toinen kappale."
+    },
+    {
+      "term": "voima ja vastavoima",
+      "explain": "Kun A vaikuttaa B:hen voimalla, B vaikuttaa A:han yhtä suurella voimalla vastakkaiseen suuntaan. Voimat vaikuttavat eri kappaleisiin."
+    },
+    {
+      "term": "tukivoima",
+      "explain": "Pinnan voima kappaleeseen. Se on kohtisuorassa pintaa vastaan. Se ei ole aina yhtä suuri kuin paino."
+    },
+    {
+      "term": "lepokitka",
+      "explain": "Kitka, joka estää pintoja liukumasta toistensa suhteen. Se on vain niin suuri kuin tilanne vaatii, enintään $\\mu_0 N$."
+    },
+    {
+      "term": "rajanopeus",
+      "explain": "Suurin nopeus, jonka putoava kappale saavuttaa ilmassa. Silloin ilmanvastus on yhtä suuri kuin paino, ja kiihtyvyys on nolla."
+    }
+  ]
+}

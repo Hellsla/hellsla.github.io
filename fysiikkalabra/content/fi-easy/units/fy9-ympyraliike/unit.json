@@ -1,0 +1,36 @@
+{
+  "id": "fy9-ympyraliike",
+  "course": "FY9",
+  "chapter": 3,
+  "order": 4,
+  "title": "Tasapaino, ympyräliike ja gravitaatio",
+  "description": "Kerrataan FY5-moduulin asioita: momentti, kappaleen tasapaino, ympyräliikkeen kierrosaika ja ratanopeus, normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö, gravitaatiolaki sekä satelliittien ja planeettojen ympyräradat. Niistä ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "voiman varsi",
+      "explain": "Akselin kohtisuora etäisyys voiman vaikutussuorasta. Vinon voiman varsi on lyhyempi kuin etäisyys vaikutuskohtaan: $r = d\\sin\\alpha$."
+    },
+    {
+      "term": "momentti",
+      "explain": "Kertoo voiman kiertävän vaikutuksen: voima kertaa varsi, $M = Fr$. Levossa olevalle kappaleelle momenttien summa on nolla."
+    },
+    {
+      "term": "normaalikiihtyvyys",
+      "explain": "Ympyräliikkeen kiihtyvyys, joka osoittaa radan keskipisteeseen: $a_\\text{n} = \\tfrac{v^2}{r}$. Se kääntää nopeuden suuntaa."
+    },
+    {
+      "term": "keskeisvoima",
+      "explain": "Todellisten voimien summa, joka osoittaa ympyräradan keskipisteeseen. Se ei ole oma voimansa, eikä sitä piirretä omana nuolenaan."
+    },
+    {
+      "term": "painottomuus",
+      "explain": "Tila, jossa tukivoima on nolla, koska kappale putoaa vapaasti. Gravitaatio vaikuttaa silti, esimerkiksi avaruusasemalla."
+    }
+  ]
+}

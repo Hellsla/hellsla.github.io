@@ -1,0 +1,832 @@
+{
+  "intro": "Six matriculation-exam-style problems bring together the magnetism, induction and light of the lesson. Solve them as in the exam: name the phenomenon and the model and justify why the model fits the situation, solve for the unknown before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
+  "tasks": [
+    {
+      "id": "fy9-magnetismi-valo-s1",
+      "title": "Electricity from a small hydropower plant",
+      "source": "example",
+      "source_note": "The power plant and the numbers are an invented example. A real generator has several coils and pole pairs; here a one-coil model is used.",
+      "skills": [
+        "fy7-7",
+        "fy7-8",
+        "fy7-5"
+      ],
+      "text": "An old small hydropower plant is being renovated. A water turbine drives a generator, which is examined in a simple model: one coil rotates steadily in a uniform magnetic field. The electricity of the plant is transmitted through a transformer along a $20.0\\,\\text{kV}$ line $12\\,\\text{km}$ long to a village.\n\n- the coil has $60$ turns and an area of $0.060\\,\\text{m}^2$\n- magnetic flux density $0.50\\,\\text{T}$, rotation frequency $50\\,\\text{Hz}$\n- transmitted power $150\\,\\text{kW}$, total resistance of the line's conductors $6.0\\,\\Omega$\n- the transformer is ideal",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the peak value of the generator's voltage? What is its rms value?",
+          "answer": [
+            {
+              "name": "e0",
+              "value": 565.5,
+              "unit": "V",
+              "tolerance": 0.02
+            },
+            {
+              "name": "U",
+              "value": 399.9,
+              "unit": "V",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies that the flux through the coil changes periodically, and the voltage is at its peak when the plane of the coil is parallel to the field; the rms value is the direct voltage that gives the same average power.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$e_0 = NBA \\cdot 2\\pi f$ and $U = \\dfrac{e_0}{\\sqrt{2}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$e_0 = 60 \\cdot 0.50\\,\\text{T} \\cdot 0.060\\,\\text{m}^2 \\cdot 2\\pi \\cdot 50\\,\\text{Hz} \\approx 565\\,\\text{V}$ and $U \\approx 400\\,\\text{V}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$e_0 \\approx 570\\,\\text{V}$ and $U \\approx 400\\,\\text{V}$ to two significant figures like $0.50\\,\\text{T}$ and $0.060\\,\\text{m}^2$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "The generator's rms voltage $400\\,\\text{V}$ is stepped up with a transformer to the line voltage. What is the ratio of the numbers of turns of the transformer's secondary and primary coils? How large are the currents on each side of the transformer?",
+          "answer": [
+            {
+              "name": "ratio",
+              "value": 50.0,
+              "unit": "",
+              "tolerance": 0.01
+            },
+            {
+              "name": "I1",
+              "value": 375.0,
+              "unit": "A",
+              "tolerance": 0.02
+            },
+            {
+              "name": "I2",
+              "value": 7.5,
+              "unit": "A",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies that in an ideal transformer the ratio of the voltages is the ratio of the turns and power is conserved, so the current decreases in the same ratio as the voltage increases.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dfrac{N_2}{N_1} = \\dfrac{U_2}{U_1}$ and $I = \\dfrac{P}{U}$ on each side"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{20\\,000\\,\\text{V}}{400\\,\\text{V}} = 50$, $I_1 = \\dfrac{150\\,000\\,\\text{W}}{400\\,\\text{V}} = 375\\,\\text{A}$ and $I_2 = \\dfrac{150\\,000\\,\\text{W}}{20\\,000\\,\\text{V}} = 7.50\\,\\text{A}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$N_2 : N_1 = 50$, $I_1 \\approx 375\\,\\text{A}$ and $I_2 \\approx 7.50\\,\\text{A}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "What fraction of the transmitted power turns into heat in the line? What would happen if the same power were transmitted along the same line directly at the generator voltage $400\\,\\text{V}$?",
+          "answer": {
+            "value": 0.225,
+            "unit": "%",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P_\\text{h} = RI^2$, where $I = \\dfrac{P}{U}$, and the fraction $\\dfrac{P_\\text{h}}{P}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P_\\text{h} = 6.0\\,\\Omega \\cdot (7.50\\,\\text{A})^2 \\approx 340\\,\\text{W}$, so the fraction is $\\dfrac{338\\,\\text{W}}{150\\,000\\,\\text{W}} \\approx 0.23\\,\\%$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "At the voltage $400\\,\\text{V}$ the current would be $375\\,\\text{A}$ and the expression $RI^2$ would give $844\\,\\text{kW}$, more than the whole power: already the voltage drop $RI = 2250\\,\\text{V}$ would be larger than $400\\,\\text{V}$, so the transmission would not work at all."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The fraction $0.23\\,\\%$ to two significant figures like the resistance $6.0\\,\\Omega$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "A maintenance worker suggests that the direct voltage of the village's solar panels should also be connected to the same transformer, so that its voltage could also be stepped up to the line. Assess the suggestion.",
+          "criteria": [
+            {
+              "text": "Explains that the secondary voltage of a transformer is induced by the changing magnetic flux in the iron core: with direct current the flux is constant, so no voltage is induced in the secondary (except momentarily at switch-on).",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The suggestion does not work: the direct voltage must first be converted into an alternating voltage with an inverter, and only then can the transformer step it up."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy7-8",
+        "math": "fy7-7",
+        "communication": "fy7-8"
+      }
+    },
+    {
+      "id": "fy9-magnetismi-valo-s2",
+      "title": "An optical fibre to the island",
+      "source": "example",
+      "source_note": "The situation is an invented example. The refractive indices and the attenuation are of the order of an ordinary telecommunications fibre.",
+      "skills": [
+        "fy7-12",
+        "fy7-16",
+        "fy7-10"
+      ],
+      "text": "An optical fibre is laid from the mainland to an island village along the seabed. Infrared light travelling in the core of the fibre carries data as short pulses.\n\n- refractive index of the core $1.470$, refractive index of the cladding $1.455$\n- length of the fibre $14.0\\,\\text{km}$, attenuation coefficient $0.22\\,\\text{dB/km}$\n- there are four splices on the route, each attenuating $0.10\\,\\text{dB}$\n- power of the transmitter into the fibre $2.0\\,\\text{mW}$\n- speed of light in a vacuum $3.00 \\cdot 10^8\\,\\text{m/s}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the smallest angle of incidence at the boundary between core and cladding for the light to stay in the core? What is then the largest allowed angle between a ray of light and the axis of the fibre?",
+          "answer": [
+            {
+              "name": "ar",
+              "value": 81.81,
+              "unit": "°",
+              "tolerance": 0.01
+            },
+            {
+              "name": "axis",
+              "value": 8.19,
+              "unit": "°",
+              "tolerance": 0.05
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies that the light stays in the core by total internal reflection, which is possible because the refractive index of the core is larger than that of the cladding, and that the angle of incidence is measured from the normal of the boundary.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$ and relative to the axis $90^\\circ - \\alpha_\\text{r}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\sin\\alpha_\\text{r} = \\dfrac{1.455}{1.470} = 0.9898$, so $\\alpha_\\text{r} \\approx 81.8^\\circ$ and relative to the axis at most $8.2^\\circ$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\alpha_\\text{r} \\approx 81.8^\\circ$ and $8.2^\\circ$; or about $82^\\circ$ and $8^\\circ$; justification of the precision: the difference of the refractive indices is known only to two figures"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How long does a light pulse travelling along the axis of the fibre take from the mainland to the island? How much longer does a ray take whose angle to the axis of the fibre is the largest at which it still stays in the core?",
+          "answer": [
+            {
+              "name": "t",
+              "value": 68.6,
+              "unit": "µs",
+              "tolerance": 0.02
+            },
+            {
+              "name": "diff",
+              "value": 0.707,
+              "unit": "µs",
+              "tolerance": 0.05
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = \\dfrac{c}{n_1}$ and $t = \\dfrac{n_1 s}{c}$"
+            },
+            {
+              "text": "Justifies that the steepest ray travels the distance $\\dfrac{s}{\\sin\\alpha_\\text{r}}$ along the fibre, because the angle between the ray and the axis is $90^\\circ - \\alpha_\\text{r}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$t = \\dfrac{1.470 \\cdot 14\\,000\\,\\text{m}}{3.00 \\cdot 10^8\\,\\text{m/s}} \\approx 68.6\\,\\mu\\text{s}$ and $\\dfrac{68.6\\,\\mu\\text{s}}{0.9898} \\approx 69.3\\,\\mu\\text{s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 68.6\\,\\mu\\text{s}$ and the difference about $0.7\\,\\mu\\text{s}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "How much power reaches the receiver on the island?",
+          "answer": {
+            "value": 0.897,
+            "unit": "mW",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$A = aL + 4 \\cdot 0.10\\,\\text{dB}$ and $A = 10\\,\\text{dB} \\cdot \\lg \\dfrac{P_0}{P}$, so $P = P_0 \\cdot 10^{-A/(10\\,\\text{dB})}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$A = 0.22\\,\\tfrac{\\text{dB}}{\\text{km}} \\cdot 14.0\\,\\text{km} + 0.40\\,\\text{dB} = 3.48\\,\\text{dB}$ and $P = 2.0\\,\\text{mW} \\cdot 10^{-0.348} \\approx 0.90\\,\\text{mW}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 0.90\\,\\text{mW}$ to two significant figures like $2.0\\,\\text{mW}$ and $0.22\\,\\text{dB/km}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "About $3\\,\\text{dB}$ halves the power, and $3.5\\,\\text{dB}$ leaves a little under half, $45\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Explain why the light stays in the fibre although the fibre bends gently with the shape of the seabed, but leaks out if the fibre is bent into a sharp turn.",
+          "criteria": [
+            {
+              "text": "Explains that in a gentle curve the angle of incidence of the ray at the boundary stays larger than the critical angle, but in a sharp bend the ray hits the boundary on the outer side of the curve more steeply, the angle of incidence falls below the critical angle and the light refracts into the cladding.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "For the fibre to keep guiding light, the angle of incidence must everywhere be at least $81.8^\\circ$; that is why the bending radius of the cable has a lower limit."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy7-12",
+        "math": "fy7-16",
+        "communication": "fy7-12"
+      }
+    },
+    {
+      "id": "fy9-magnetismi-valo-s3",
+      "title": "The magnetic field of a straight wire",
+      "source": "example",
+      "source_note": "The data are an invented example: the numbers are calculated from the model of a long straight wire with $I = 12.0\\,\\text{A}$, and a constant field of about $11\\,\\mu\\text{T}$ and scatter like that of readings have been added to them.",
+      "skills": [
+        "fy7-3",
+        "fy1-4",
+        "fy7-1",
+        "fy1-3"
+      ],
+      "text": "Students investigated the magnetic field of a straight wire. A direct current of $12.0\\,\\text{A}$ flowed in a vertical wire $2.0\\,\\text{m}$ long. A magnetic field sensor was placed at the height of the middle of the wire so that it measured the component along the field circling the wire. The orientation of the sensor was kept the same, and its distance $r$ from the central axis of the wire was changed. The sensor was not zeroed before the measurement.\n\n| $r\\ (\\text{cm})$ | $B\\ (\\mu\\text{T})$ |\n|---|---|\n| $2.0$ | $132$ |\n| $3.0$ | $90$ |\n| $4.0$ | $72$ |\n| $6.0$ | $50$ |\n| $8.0$ | $41$ |\n| $12.0$ | $31$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Present the magnetic flux density as a function of distance in a graph. Is the magnetic flux density inversely proportional to the distance? Justify with the data.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$r\\ (\\text{cm})$ on the horizontal axis, $B\\ (\\mu\\text{T})$ on the vertical axis; the axes start from zero."
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "Six points from the table; the points are not joined into a broken line."
+            },
+            {
+              "text": "Justifies with the data: the field decreases ever more slowly, but doubling the distance does not halve it, for example $2.0\\,\\text{cm} \\to 4.0\\,\\text{cm}$ gives $132\\,\\mu\\text{T} \\to 72\\,\\mu\\text{T}$. The product $Br$ grows from $264$ to $372\\,\\mu\\text{T} \\cdot \\text{cm}$, so $B$ is not inversely proportional to the distance.",
+              "tag": "graph",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 5,
+          "text": "Present the data so that a straight line fits the points. Justify your choice and fit a straight line to the points.",
+          "criteria": [
+            {
+              "text": "Justifies the linearisation: the field of a long straight wire is $B = \\dfrac{\\mu_0 I}{2\\pi} \\cdot \\dfrac{1}{r}$, so $B$ is linear in the reciprocal of the distance $\\dfrac{1}{r}$, and a possible constant field only shifts the line.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{1}{r}$ for each distance in the unit $\\tfrac{1}{\\text{m}}$, for example $\\dfrac{1}{0.020\\,\\text{m}} = 50\\,\\tfrac{1}{\\text{m}}$."
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "One straight line between the points; $\\tfrac{1}{r}\\ (\\tfrac{1}{\\text{m}})$ on the horizontal axis, $B\\ (\\mu\\text{T})$ on the vertical axis. The line is not forced through the origin."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 6,
+          "text": "Determine the vacuum permeability $\\mu_0$ from the graph. Compare the result with the table value $4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$.",
+          "answer": {
+            "value": 1.268,
+            "unit": "· 10⁻⁶ Vs/(Am)",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "The slope from two points of the line far apart, for example $(5.0\\,\\tfrac{1}{\\text{m}};\\ 23\\,\\mu\\text{T})$ and $(50\\,\\tfrac{1}{\\text{m}};\\ 132\\,\\mu\\text{T})$: $k \\approx 2.42\\,\\mu\\text{T} \\cdot \\text{m}$."
+            },
+            {
+              "text": "Interprets the slope: $k = \\dfrac{\\mu_0 I}{2\\pi}$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\mu_0 = \\dfrac{2\\pi k}{I}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\mu_0 \\approx 1.27 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$; results $1.22$–$1.32 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$ are accepted."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The table value is $1.257 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, so the difference is about $1\\,\\%$, which fits the scatter of about $1\\,\\mu\\text{T}$ in the readings."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "The line does not pass through the origin. What does the constant term tell about the measurement? According to the model, what reading would the sensor show $50\\,\\text{cm}$ from the wire, and why is the result only an estimate?",
+          "answer": {
+            "value": 15.73,
+            "unit": "µT",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Interprets the constant term: the line crosses the $B$ axis at about $11\\,\\mu\\text{T}$, which is a constant field independent of the current in the wire: the component of the Earth's magnetic field in the direction of the sensor and the zero offset of the sensor, because the sensor was not zeroed. This can be checked by measuring the reading with the current switched off.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$B = \\dfrac{k}{r} + b$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$B = \\dfrac{2.42\\,\\mu\\text{T} \\cdot \\text{m}}{0.50\\,\\text{m}} + 10.9\\,\\mu\\text{T} \\approx 4.8\\,\\mu\\text{T} + 10.9\\,\\mu\\text{T} \\approx 16\\,\\mu\\text{T}$"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The distance is outside the measured range, and $50\\,\\text{cm}$ is no longer small compared with the length of the wire $2.0\\,\\text{m}$, so the long-wire model gives too large a value for the field of the wire; most of the reading is the constant field."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy7-3",
+        "transfer": "fy7-3",
+        "experiment": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-magnetismi-valo-s4",
+      "title": "Colours in a bubble, a rainbow and a CD",
+      "source": "example",
+      "source_note": "The situation is an invented example. The refractive indices of water and the track spacing of a CD are real values.",
+      "skills": [
+        "fy7-11",
+        "fy7-14",
+        "fy7-13"
+      ],
+      "text": "At a summer party three kinds of colours are seen in the garden on the same afternoon. The children's soap bubbles have colourful stripes. A small rainbow is seen in the drops of the lawn sprinkler when the sun shines from behind the viewer. A CD left on the table reflects colourful arcs from sunlight. A guest claims: “All three arise in the same way: white light refracts in water or plastic, and different colours refract by different amounts.”\n\n- refractive index of water for red light $1.331$ and for violet $1.343$\n- distance between adjacent tracks of a CD $1.6\\,\\mu\\text{m}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Explain how a rainbow forms. On which edge of the arc is red, and why?",
+          "criteria": [
+            {
+              "text": "Explains that the light refracts into the drop, reflects from its back surface and refracts out, and that the refractive index of water depends on the wavelength (dispersion), so the colours leave the drop in different directions.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Justifies that the refractive index for red is the smallest, so red is seen at the largest angle from the antisolar point, about $42^\\circ$, and violet at an angle of about $40.6^\\circ$: red is on the outer edge of the arc.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "For the rainbow the claim is correct: the colours separate because different colours refract by different amounts in water."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Explain how the colours of a soap bubble arise. Why does the thinnest top part of the bubble look dark just before it bursts?",
+          "criteria": [
+            {
+              "text": "Explains thin-film interference: the waves reflected from the outer and inner surfaces of the film have the path difference $2nd$, and the thickness determines which wavelengths are reinforced and which are weakened; the colour is a mixture of the remaining wavelengths.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Justifies the dark spot: only the reflection at the outer surface inverts the wave, so in a very thin film ($2nd \\approx 0$) the reflected waves are in opposite phase and weaken each other at all wavelengths.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "For the bubble the claim is wrong: the colours arise from interference, not from refraction, and the colour depends on the thickness of the film."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Explain how a CD produces colours, and calculate at which angles red ($650\\,\\text{nm}$) and violet ($400\\,\\text{nm}$) light are seen in the first order when the light falls perpendicularly on the disc. Finally assess the guest's claim as a whole.",
+          "criteria": [
+            {
+              "text": "Explains that the closely spaced tracks act as a reflection grating: the waves reflected from adjacent tracks reinforce each other in the directions for which $d\\sin\\theta = k\\lambda$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\sin\\theta = \\dfrac{650 \\cdot 10^{-9}\\,\\text{m}}{1.6 \\cdot 10^{-6}\\,\\text{m}} = 0.41$, so $\\theta \\approx 24^\\circ$; for violet $\\sin\\theta = 0.25$ and $\\theta \\approx 14.5^\\circ$."
+            },
+            {
+              "text": "States that in a grating red deviates most, the opposite of a prism and a drop, which shows a different origin.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim holds only for the rainbow. The colours of the bubble and the CD arise from interference: in the bubble between the reflections from the two surfaces of the film, in the CD between the reflections from many tracks."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy7-14",
+        "math": "fy7-13",
+        "communication": "fy7-11"
+      }
+    },
+    {
+      "id": "fy9-magnetismi-valo-s5",
+      "title": "The wavelength of a laser with a grating",
+      "source": "example",
+      "source_note": "The report and the measurements are an invented example: the distances are calculated from a grating with $600$ lines per millimetre and the wavelength $532\\,\\text{nm}$, and they are rounded to tape-measure readings.",
+      "skills": [
+        "fy7-13",
+        "fy1-3",
+        "fy1-8"
+      ],
+      "text": "A group of students measured the wavelength of a green laser pointer. The laser, the grating and a wall acting as a screen were set in line so that the beam hit the grating and the wall perpendicularly. The grating's package said $600$ lines per millimetre. With a tape measure the group measured the distance of the grating from the wall and the distances from the central maximum to the maxima on its right.\n\n| Measured | Value |\n|---|---|\n| distance of the grating from the wall $L$ | $80.0\\,\\text{cm}$ |\n| from the central maximum to the 1st-order maximum $x_1$ | $27.0\\,\\text{cm}$ |\n| from the central maximum to the 2nd-order maximum $x_2$ | $66.4\\,\\text{cm}$ |\n\nThe calculations and conclusions of the report: “At small angles $\\sin\\theta \\approx \\tfrac{x}{L}$, so $\\lambda = \\tfrac{d x_2}{2L} = 692\\,\\text{nm}$. The result is the wavelength of red light, so the stated wavelength of the laser, $532\\,\\text{nm}$, is wrong. We did not find the third-order maximum on the wall, so the grating is faulty.”",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Calculate the wavelength of the laser from each maximum.",
+          "answer": [
+            {
+              "name": "l1",
+              "value": 533.0,
+              "unit": "nm",
+              "tolerance": 0.02
+            },
+            {
+              "name": "l2",
+              "value": 532.2,
+              "unit": "nm",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$d = \\dfrac{1\\,\\text{mm}}{600}$, $\\tan\\theta_k = \\dfrac{x_k}{L}$ and $\\lambda = \\dfrac{d\\sin\\theta_k}{k}$"
+            },
+            {
+              "text": "Justifies that the angle is calculated first from the tangent, because $\\sin\\theta \\approx \\tan\\theta$ only at small angles, and here $\\theta_2 \\approx 40^\\circ$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$d = 1.667\\,\\mu\\text{m}$; $\\theta_1 = 18.65^\\circ$ and $\\lambda = 533\\,\\text{nm}$; $\\theta_2 = 39.69^\\circ$ and $\\lambda = \\dfrac{1.667\\,\\mu\\text{m} \\cdot 0.6386}{2} = 532\\,\\text{nm}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\lambda \\approx 533\\,\\text{nm}$ and $532\\,\\text{nm}$ to three significant figures like the distances"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess the group's conclusions.",
+          "criteria": [
+            {
+              "text": "Shows that the mistake is in the method of calculation: the small-angle assumption gives $562\\,\\text{nm}$ from the $1$st order (about $6\\,\\%$ too much) and $692\\,\\text{nm}$ from the $2$nd order (about $30\\,\\%$ too much), because the difference grows as the angle grows.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "With $\\Delta x \\approx 0.3\\,\\text{cm}$ and $\\Delta L \\approx 0.3\\,\\text{cm}$, the $2$nd order gives about $530$–$535\\,\\text{nm}$, so the result agrees with the value $532\\,\\text{nm}$."
+            },
+            {
+              "text": "Calculates that the $3$rd order exists, because $3\\lambda < d$: $\\sin\\theta_3 = 0.958$, $\\theta_3 \\approx 73^\\circ$ and $x_3 = L\\tan\\theta_3 \\approx 2.7\\,\\text{m}$, so the maximum is far away and faint, perhaps off the wall.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Neither conclusion is justified: the laser is a $532\\,\\text{nm}$ green laser, as its colour also shows, and the grating is not faulty."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Plan how the measurement can be improved.",
+          "criteria": [
+            {
+              "text": "Measure the distance between the symmetric maxima $+k$ and $-k$ and halve it: measuring the gap between two points is more precise than estimating the centre of the central maximum, and the symmetry shows whether the beam is perpendicular.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Use a higher order or a larger distance $L$, so that $x$ is large and its relative uncertainty small.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Estimate $\\Delta x$ and $\\Delta L$, calculate the wavelength with their extreme values and give the result in the form $\\lambda \\pm \\Delta\\lambda$, so that it can be compared with the manufacturer's value."
+            },
+            {
+              "text": "Repeat the measurement, preferably with readings by different people, and take care of safety: do not look into the beam, and do not point it at anyone's eyes.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy7-13",
+        "concept": "fy7-13",
+        "experiment": "fy1-3",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-magnetismi-valo-s6",
+      "title": "The hospital cyclotron",
+      "source": "example",
+      "source_note": "The cyclotron and the numbers are an invented example. The fields and proton energies of cyclotrons producing tracers are of this order of magnitude.",
+      "skills": [
+        "fy7-2",
+        "fy5-3",
+        "fy5-4",
+        "fy6-12"
+      ],
+      "text": "A hospital cyclotron accelerates protons, which are used to produce short-lived radioactive tracers for imaging. The cyclotron has two hollow D-shaped electrodes in a uniform magnetic field that is perpendicular to the path of the protons. Inside the electrodes the proton goes round half a circle at a time, and in the narrow gap between them an alternating voltage accelerates it every time it crosses the gap.\n\n- magnetic flux density $1.20\\,\\text{T}$\n- mass of the proton $1.673 \\cdot 10^{-27}\\,\\text{kg}$ and charge $1.602 \\cdot 10^{-19}\\,\\text{C}$\n- kinetic energy of the proton when it leaves the cyclotron $8.0\\,\\text{MeV}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n- peak value of the gap voltage $50\\,\\text{kV}$; the proton always crosses the gap when the voltage is at its peak\n- the speed of the proton stays below a fifth of the speed of light, so classical mechanics is enough",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Show that the period of revolution of the proton does not depend on its speed. At what frequency must the gap voltage alternate?",
+          "answer": {
+            "value": 18.29,
+            "unit": "MHz",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the magnetic force is perpendicular to the velocity and acts as the centripetal force, $qvB = \\dfrac{mv^2}{r}$, and that the distance travelled in one revolution is $2\\pi r$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$r = \\dfrac{mv}{qB}$ and $T = \\dfrac{2\\pi r}{v} = \\dfrac{2\\pi m}{qB}$, from which $v$ cancels; the frequency of the voltage is $f = \\dfrac{1}{T}$, because the direction changes every half revolution"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T = \\dfrac{2\\pi \\cdot 1.673 \\cdot 10^{-27}\\,\\text{kg}}{1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1.20\\,\\text{T}} \\approx 5.47 \\cdot 10^{-8}\\,\\text{s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$f \\approx 18.3\\,\\text{MHz}$ to three significant figures like $1.20\\,\\text{T}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the speed of the proton when it comes out of the cyclotron? What is then the radius of its path?",
+          "answer": [
+            {
+              "name": "v",
+              "value": 3.914,
+              "unit": "· 10⁷ m/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "r",
+              "value": 0.3406,
+              "unit": "m",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E_\\text{k} = \\tfrac12 mv^2$, so $v = \\sqrt{\\dfrac{2E_\\text{k}}{m}}$, and $r = \\dfrac{mv}{qB}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_\\text{k} = 8.0 \\cdot 10^6 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 1.28 \\cdot 10^{-12}\\,\\text{J}$, $v \\approx 3.9 \\cdot 10^7\\,\\text{m/s}$ and $r \\approx 0.34\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 3.9 \\cdot 10^7\\,\\text{m/s}$ and $r \\approx 0.34\\,\\text{m}$ to two significant figures like $8.0\\,\\text{MeV}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "$v \\approx 0.13c$, so the classical model is sufficient; a diameter of about $70\\,\\text{cm}$ suits a hospital device."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "How many revolutions does the proton make in the cyclotron? How long does the acceleration last?",
+          "answer": [
+            {
+              "name": "n",
+              "value": 80.0,
+              "unit": "",
+              "tolerance": 0.02
+            },
+            {
+              "name": "t",
+              "value": 4.37,
+              "unit": "µs",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies that only the electric field of the gap does work, $qU$ at each crossing and twice per revolution, because the magnetic force is perpendicular to the velocity and does not change the speed.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$n = \\dfrac{E_\\text{k}}{2qU}$ and $t = nT$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$2qU = 2 \\cdot 50\\,\\text{keV} = 100\\,\\text{keV}$, so $n = \\dfrac{8.0\\,\\text{MeV}}{0.100\\,\\text{MeV}} = 80$ and $t = 80 \\cdot 5.47 \\cdot 10^{-8}\\,\\text{s} \\approx 4.4\\,\\mu\\text{s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$n \\approx 80$ revolutions and $t \\approx 4.4\\,\\mu\\text{s}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the acceleration of the proton just before it comes out of the cyclotron? In which direction does it point?",
+          "answer": {
+            "value": 4.498,
+            "unit": "· 10¹⁵ m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a_\\text{n} = \\dfrac{v^2}{r}$ or $a = \\dfrac{qvB}{m}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$a_\\text{n} = \\dfrac{(3.914 \\cdot 10^7\\,\\text{m/s})^2}{0.3406\\,\\text{m}} \\approx 4.5 \\cdot 10^{15}\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx 4.5 \\cdot 10^{15}\\,\\text{m/s}^2$ towards the centre of the path"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy7-2",
+        "math": "fy5-4"
+      }
+    }
+  ]
+}

@@ -1,0 +1,785 @@
+{
+  "intro": "Tässä on kuusi ylioppilaskokeen tyylistä tehtävää. Niissä tarvitaan tunnin asioita: Newtonin lakeja, voimakuvioita, kitkaa, kaltevaa tasoa, kytkettyjä kappaleita ja ilmanvastusta. Ratkaise tehtävät samalla tavalla kuin kokeessa. Piirrä voimakuvio ennen yhtälöitä. Perustele, miksi valitset mallin. Ratkaise kysytty suure ennen kuin sijoitat lukuja. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "tasks": [
+    {
+      "id": "fy9-voimat-s1",
+      "title": "Veneen vinssaus",
+      "source": "example",
+      "source_note": "Vene, luiska ja kitkakertoimet ovat keksittyjä esimerkkejä. Ne vastaavat märkien muoviliukujen ja alumiiniveneen suuruusluokkaa eli ovat suunnilleen oikean kokoisia.",
+      "skills": [
+        "fy4-5",
+        "fy4-6",
+        "fy4-4"
+      ],
+      "text": "Mökin rannassa on puinen veneluiska eli kalteva taso, jota pitkin vene vedetään vedestä. Luiskan kaltevuuskulma on $14^\\circ$. Luiskan pinnassa on muoviset liukulistat. Syksyllä alumiinivene vedetään vedestä luiskaa ylös sähkövinssillä. Vinssi on kone, joka kelaa vaijeria eli teräsköyttä. Veneen massa on $280\\,\\text{kg}$. Vinssin vaijeri on luiskan suuntainen.\n\nVeneen pohjan ja märkien liukulistojen välillä:\n\n- lepokitkakerroin $\\mu_0 = 0{,}35$\n- liikekitkakerroin $\\mu = 0{,}25$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Vinssi vetää venettä luiskaa ylös tasaisella nopeudella. Piirrä veneen voimakuvio.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Neljä voimaa: paino, luiskan tukivoima, liikekitka ja vaijerin jännitysvoima. Kuviossa ei ole ylimääräistä liikkeen suuntaista voimaa."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Paino osoittaa suoraan alas, tukivoima kohtisuoraan luiskasta ulos, kitka luiskaa alas (vene liukuu ylös) ja vaijerin voima luiskaa ylös."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "Vene on luiskan suuntainen suorakulmio. Paino lähtee keskipisteestä, tukivoima ja kitka kosketuspinnasta ja vaijerin voima kiinnityskohdasta. Jokaisella voimalla on oma tunnus."
+            },
+            {
+              "key": "fbd_magnitudes",
+              "points": 1,
+              "detail": "Tukivoima on vähän lyhyempi kuin paino. Vaijerin voima on yhtä pitkä kuin kitka ja painon luiskan suuntainen komponentti yhteensä. Komponentit on erotettu voimista."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Vene liikkuu tasaisella nopeudella. Kuinka suurella voimalla vinssin vaijeri vetää venettä?",
+          "answer": {
+            "value": 1330.8,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$x$-akseli luiskaa ylös: $T - mg\\sin\\alpha - F_\\mu = 0$; $y$: $N - mg\\cos\\alpha = 0$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T = mg(\\sin\\alpha + \\mu\\cos\\alpha)$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$mg\\sin\\alpha \\approx 665\\,\\text{N}$ ja $F_\\mu = \\mu mg\\cos\\alpha \\approx 666\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T \\approx 1{,}3\\,\\text{kN}$ kahdella merkitsevällä numerolla"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Esimerkiksi: vaijerin voima on noin puolet painosta $2{,}7\\,\\text{kN}$, ja kitka on noin puolet vedosta."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 6,
+          "text": "Vinssi pysähtyy, ja vene jää luiskalle. Pysyykö vene paikallaan, jos vaijeri löystyy? Luiskan kaltevuuskulma voisi olla suurempi. Kuinka suuri kulman pitäisi vähintään olla, jotta vene lähtisi levosta itsestään liukumaan takaisin veteen?",
+          "answer": {
+            "value": 19.29,
+            "unit": "°",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että levossa olevaan veneeseen vaikuttaa lepokitka. Lepokitka on vain niin suuri kuin tarvitaan, enintään $\\mu_0 N$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Vene pysyy paikallaan, jos $mg\\sin\\alpha \\le \\mu_0 mg\\cos\\alpha$ eli $\\tan\\alpha \\le \\mu_0$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Tarvittava lepokitka on $665\\,\\text{N}$, ja yläraja on $\\mu_0 N \\approx 933\\,\\text{N}$ (tai $\\tan 14^\\circ \\approx 0{,}25 < 0{,}35$)."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Vene pysyy paikallaan."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Rajakulma $\\alpha_0 = \\arctan 0{,}35 \\approx 19^\\circ$"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Toteaa, että massa supistuu ja että tulos edellyttää mallia $F_{\\mu 0} \\le \\mu_0 N$. Märkyys, jää tai lika voi muuttaa kerrointa."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-5",
+        "communication": "fy4-5",
+        "math": "fy4-6",
+        "transfer": "fy4-6"
+      }
+    },
+    {
+      "id": "fy9-voimat-s2",
+      "title": "Moottorikelkka ja kaksi rekeä",
+      "source": "example",
+      "source_note": "Reet, massat ja kitkakerroin ovat keksittyjä esimerkkejä. Ne vastaavat lumella liukuvien rekien suuruusluokkaa.",
+      "skills": [
+        "fy4-13",
+        "fy4-6",
+        "fy4-3"
+      ],
+      "text": "Moottorikelkka vetää jäätyneellä järvellä kahta rekeä peräkkäin. Kelkan ja etummaisen reen A välissä on köysi 1. Reen A ja takimmaisen reen B välissä on köysi 2. Köydet ovat vaakasuorat ja kevyet.\n\n| Reki | Massa kuormineen |\n|---|---|\n| A | $120\\,\\text{kg}$ |\n| B | $80\\,\\text{kg}$ |\n\nKummankin reen ja lumen välinen liikekitkakerroin on $0{,}10$. Kelkka lähtee liikkeelle niin, että reet kiihtyvät tasaisesti $0{,}50\\,\\text{m/s}^2$. Ilmanvastusta ei oteta huomioon.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Piirrä reen A voimakuvio ja reen B voimakuvio erikseen. Piirrä tilanne, jossa reet lähtevät liikkeelle.",
+          "criteria": [
+            {
+              "key": "fbd_object",
+              "points": 1,
+              "detail": "Kaksi erillistä kuviota. Kummassakin kuviossa on vain ne voimat, jotka vaikuttavat siihen rekeen."
+            },
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "A: paino, tukivoima, kitka, köysi 1 eteenpäin ja köysi 2 taaksepäin. B: paino, tukivoima, kitka ja köysi 2 eteenpäin."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Kitkat osoittavat taaksepäin. Köysi 2 vetää A:ta taaksepäin ja B:tä eteenpäin."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "Eri voimilla on eri tunnukset, esimerkiksi $\\overline{T}_1$, $\\overline{T}_2$, $\\overline{N}_\\text{A}$. Kiihtyvyys on merkitty erikseen, eikä sitä ole piirretty voimaksi."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on köyden 2 jännitysvoima?",
+          "answer": {
+            "value": 118.48,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "B: $T_2 - \\mu m_\\text{B} g = m_\\text{B} a$"
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T_2 = m_\\text{B}(a + \\mu g)$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T_2 \\approx 120\\,\\text{N}$ ($118\\,\\text{N}$)"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Esimerkiksi: $T_2$ on suurempi kuin B:n kitka $78\\,\\text{N}$, koska reki myös kiihtyy."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on köyden 1 jännitysvoima?",
+          "answer": {
+            "value": 296.2,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "A: $T_1 - T_2 - \\mu m_\\text{A} g = m_\\text{A} a$, tai molemmat reet käsitellään yhtenä systeeminä."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T_1 = (m_\\text{A} + m_\\text{B})(a + \\mu g)$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Köyden 2 voima on otettu huomioon A:n yhtälössä voimana, joka vetää taaksepäin."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T_1 \\approx 300\\,\\text{N}$ ($296\\,\\text{N}$)"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Kelkan kuljettaja väittää: ”Takimmaisen köyden jännitysvoima on puolet etummaisen köyden jännitysvoimasta, koska rekiä on kaksi.” Arvioi väite.",
+          "criteria": [
+            {
+              "text": "Selittää, että köysi 2 kiihdyttää ja vetää vain rekeä B. Köysi 1 vetää molempia rekiä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee b- ja c-kohdan tuloksilla, että suhde on massojen suhde $\\tfrac{m_\\text{B}}{m_\\text{A} + m_\\text{B}} = 0{,}40$, kun kitkakerroin on sama.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite ei pidä paikkaansa. Suhde riippuu massoista, ei rekien lukumäärästä. Suhde olisi puolet vain, jos reet olisivat yhtä raskaat."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-13",
+        "communication": "fy4-13",
+        "math": "fy4-13"
+      }
+    },
+    {
+      "id": "fy9-voimat-s3",
+      "title": "Vaunu ja voima-anturi",
+      "source": "example",
+      "source_note": "Mittaustulokset ovat keksittyjä esimerkkiarvoja. Ne on laskettu mallista, ja niihin on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
+      "skills": [
+        "fy4-4",
+        "fy1-4",
+        "fy4-6"
+      ],
+      "text": "Fysiikan tunnilla vaunua vedetään vaakasuoralla radalla. Vaunua vetää lanka, joka on vaakasuora. Vaunuun on kiinnitetty voima-anturi. Se mittaa voiman $F$, jolla lanka vetää vaunua. Liiketunnistin mittaa vaunun kiihtyvyyden $a$. Vetävää voimaa muutetaan niin, että langan toiseen päähän ripustetaan eri punnuksia. Vaunun ja anturin yhteistä massaa ei tiedetä.\n\n| $F\\ (\\text{N})$ | $a\\ (\\text{m/s}^2)$ |\n|---|---|\n| $0{,}40$ | $0{,}20$ |\n| $0{,}60$ | $0{,}41$ |\n| $0{,}80$ | $0{,}67$ |\n| $1{,}00$ | $0{,}88$ |\n| $1{,}20$ | $1{,}14$ |\n| $1{,}40$ | $1{,}35$ |\n| $1{,}60$ | $1{,}61$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Piirrä kuvaaja, jossa on kiihtyvyys vetävän voiman funktiona. Sovita pisteisiin malli.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla on $F\\ (\\text{N})$ ja pystyakselilla $a\\ (\\text{m/s}^2)$. Asteikot ovat tasavälisiä."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "Yksi suora kulkee pisteiden lomitse eli niiden välistä. Suoraa ei pakoteta kulkemaan origon kautta. Suoraa jatketaan vaaka-akselille asti."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 6,
+          "text": "Määritä kuvaajasta vaunun massa ja kitkavoima, joka jarruttaa vaunua. Perustele, miksi suora ei kulje origon kautta.",
+          "answer": [
+            {
+              "name": "M",
+              "value": 0.851,
+              "unit": "kg",
+              "tolerance": 0.04
+            },
+            {
+              "name": "F",
+              "value": 0.238,
+              "unit": "N",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "Kulmakerroin lasketaan kahdesta suoran pisteestä, jotka ovat kaukana toisistaan: $k \\approx 1{,}18\\,\\tfrac{1}{\\text{kg}}$. Suoran ja $F$-akselin leikkauskohta on $F_0 \\approx 0{,}24\\,\\text{N}$."
+            },
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$F - F_\\mu = ma$, joten $a = \\tfrac{1}{m}F - \\tfrac{F_\\mu}{m}$. Kulmakerroin on $\\tfrac{1}{m}$, ja leikkauskohdassa $F = F_\\mu$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$m = \\tfrac{1}{k}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m \\approx 0{,}85\\,\\text{kg}$ ja $F_\\mu \\approx 0{,}24\\,\\text{N}$"
+            },
+            {
+              "text": "Selittää, että pienellä vedolla osa voimasta kuluu kitkan voittamiseen. Siksi kiihtyvyys on nolla jo silloin, kun $F$ on vielä suurempi kuin nolla.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Vetävä voima on $1{,}20\\,\\text{N}$. Piirrä vaunun voimakuvio. Selitä, miten kuvio ja b-kohdan malli liittyvät toisiinsa.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Paino, radan tukivoima, langan veto ja kitka. Muita voimia ei ole."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Veto osoittaa eteenpäin, kitka taaksepäin, tukivoima ylös ja paino alas."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "Vaunu on suorakulmio. Veto lähtee langan kiinnityskohdasta, kitka kosketuspinnasta ja paino keskipisteestä. Jokaisella voimalla on oma tunnus."
+            },
+            {
+              "key": "fbd_magnitudes",
+              "points": 1,
+              "detail": "Tukivoima on yhtä pitkä kuin paino. Veto on selvästi pidempi kuin kitka ($1{,}20\\,\\text{N}$ ja $0{,}24\\,\\text{N}$). Kiihtyvyys on merkitty erikseen."
+            },
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "Vaakasuunnan liikeyhtälö $F - F_\\mu = ma$ on b-kohdan suoran yhtälö."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä vierimisvastuksen kerroin $\\mu = \\tfrac{F_\\mu}{N}$ vaunun pyörien ja radan välillä. Vaunun päälle lisätään $0{,}500\\,\\text{kg}$:n punnus. Miten a-kohdan suora silloin muuttuisi?",
+          "answer": {
+            "value": 0.0285,
+            "unit": "",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$N = mg$, koska lanka on vaakasuora. Siksi $\\mu = \\dfrac{F_\\mu}{mg}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\mu \\approx 0{,}029$ ilman yksikköä"
+            },
+            {
+              "text": "Ennustaa, että suora loivenee: kulmakerroin on $\\tfrac{1}{m + 0{,}500\\,\\text{kg}} \\approx 0{,}74\\,\\tfrac{1}{\\text{kg}}$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "text": "Ennustaa, että leikkauskohta siirtyy oikealle, koska kitka kasvaa tukivoiman mukana. Uusi leikkauskohta on noin $0{,}38\\,\\text{N}$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Mallissa kitka on verrannollinen tukivoimaan, eikä se riipu nopeudesta. Tämä pitää tarkistaa uudella mittauksella."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy4-4",
+        "concept": "fy4-5",
+        "communication": "fy4-4",
+        "transfer": "fy4-6"
+      }
+    },
+    {
+      "id": "fy9-voimat-s4",
+      "title": "Mikä vie eteenpäin?",
+      "source": "example",
+      "source_note": "Kitkakertoimet ovat pyöristettyjä tyypillisiä arvoja. Ne eivät ole mittaustuloksia.",
+      "skills": [
+        "fy4-3",
+        "fy4-6",
+        "fy4-5"
+      ],
+      "text": "On talvinen aamu. Ella kävelee kotipihan yli bussipysäkille. Pihalla on peilijäätä eli hyvin liukasta, sileää jäätä. Pysäkin vieressä on liikennevalot. Valoissa seisoo henkilöauto. Auto lähtee liikkeelle, kun valo vaihtuu vihreäksi. Auto on etuvetoinen: moottori pyörittää vain etupyöriä.\n\nRenkaan ja tien välinen lepokitkakerroin on kuivalla asfaltilla noin $0{,}8$ ja jäällä noin $0{,}1$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Ella lähtee kävelemään. Selitä Newtonin lakien avulla, mikä voima kiihdyttää Ellaa eteenpäin. Selitä myös, miksi liikkeelle lähteminen on peilijäällä vaikeaa.",
+          "criteria": [
+            {
+              "text": "Jalka työntää maata taaksepäin. Kolmannen lain mukaan maa työntää jalkaa eteenpäin.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Tämä voima on maan lepokitka. Se on ainoa vaakasuora ulkoinen voima, joka voi kiihdyttää Ellaa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Jäällä lepokitkan yläraja $\\mu_0 N$ on pieni. Siksi jalka liukuu, jos se työntää lujemmin.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Jäällä kiihtyvyys jää pieneksi. Askeleet täytyy ottaa lyhyinä, ja jalka täytyy asettaa pystysuoraan."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 4,
+          "text": "Ellan pikkuveli sanoo: ”Auto lähtee liikkeelle, koska moottori työntää autoa eteenpäin.” Arvioi väite.",
+          "criteria": [
+            {
+              "text": "Moottori on auton osa. Auton sisäiset voimat eivät muuta koko auton liiketilaa (kolmas laki, voimat kumoavat toisensa).",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Ulkoinen voima eteenpäin on tien lepokitka vetäviin pyöriin. Pyörä pyrkii liukumaan taaksepäin tien suhteen.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on osittain oikein. Moottori pyörittää pyöriä, mutta autoa työntää tie."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Auto kiihtyy vaakasuoralla tiellä. Piirrä auton voimakuvio. Ota huomioon ilmanvastus ja vierimisvastus.",
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Paino, tukivoimat, tien lepokitka vetäviin pyöriin eteenpäin sekä vierimisvastus ja ilmanvastus taaksepäin."
+            },
+            {
+              "key": "fbd_directions",
+              "points": 1,
+              "detail": "Kitka vetäviin pyöriin osoittaa eteenpäin. Vastukset osoittavat taaksepäin."
+            },
+            {
+              "key": "fbd_representation",
+              "points": 1,
+              "detail": "Auto on suorakulmio. Voimat lähtevät vaikutuskohdistaan, ja kitka lähtee kosketuspinnasta. Jokaisella voimalla on oma tunnus."
+            },
+            {
+              "key": "fbd_magnitudes",
+              "points": 1,
+              "detail": "Eteenpäin vievä voima on suurempi kuin vastukset, koska auto kiihtyy. Nopeus ja kiihtyvyys on merkitty erikseen."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Oletetaan, että kaikki pyörät olisivat vetäviä. Arvioi suurin kiihtyvyys, jonka tie voi antaa autolle kuivalla asfaltilla ja jäällä. Miksi etuvetoisen auton suurin kiihtyvyys on vielä pienempi?",
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$ma_\\text{max} = \\mu_0 N = \\mu_0 mg$, joten $a_\\text{max} = \\mu_0 g$. Massa supistuu."
+            },
+            {
+              "text": "Asfaltilla noin $8\\,\\text{m/s}^2$ ja jäällä noin $1\\,\\text{m/s}^2$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Eteenpäin vievä lepokitka vaikuttaa vain vetäviin etupyöriin. Niiden tukivoima on vain osa painosta. Siksi $\\mu_0 N_\\text{etu} < \\mu_0 mg$.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy4-3",
+        "communication": "fy4-6",
+        "math": "fy4-6",
+        "transfer": "fy4-6"
+      }
+    },
+    {
+      "id": "fy9-voimat-s5",
+      "title": "Puhelin kirjan kannella",
+      "source": "example",
+      "source_note": "Raportti ja mittaustulokset ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy4-6",
+        "fy1-3",
+        "fy1-8"
+      ],
+      "text": "Opiskelijaryhmä määritti lepokitkakertoimen kahden pinnan välillä. Toinen pinta oli puhelimen silikonikuori. Toinen pinta oli kovakantisen kirjan kansi. Tässä on ote ryhmän raportista:\n\n> Asetimme puhelimen kirjan kannelle ja nostimme kirjan toista reunaa käsin, kunnes puhelin lähti liukumaan. Luimme kulman kulmamittarista, jonka vieressä kuvasimme mittauksen puhelimella. Toistimme mittauksen viisi kertaa.\n>\n> | Mittaus | 1 | 2 | 3 | 4 | 5 |\n> |---|---|---|---|---|---|\n> | $\\alpha_0$ | $22^\\circ$ | $24^\\circ$ | $21^\\circ$ | $23^\\circ$ | $33^\\circ$ |\n>\n> Mittauksessa 5 kirjaa nostettiin nykäisten, koska nostaja oli kiireinen.\n>\n> Laskimme lepokitkakertoimen suurimmasta kulmasta, koska silloin puhelin varmasti liukui: $\\mu_0 = \\sin 33^\\circ = 0{,}54$. Johtopäätös: silikonikuoren lepokitkakerroin on $0{,}54$, joten puhelin pysyy paikallaan kaikilla alle $33^\\circ$:n kaltevilla pinnoilla.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä lepokitkakerroin oikein ryhmän tuloksista. Arvioi tuloksen epävarmuus.",
+          "answer": {
+            "value": 0.4142,
+            "unit": "",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Liukumisen rajalla $mg\\sin\\alpha_0 = \\mu_0 mg\\cos\\alpha_0$, joten $\\mu_0 = \\tan\\alpha_0$."
+            },
+            {
+              "text": "Jättää mittauksen 5 pois, koska siihen on kirjattu karkea virhe (nykäisy). Mittausta ei jätetä pois pelkästään siksi, että se poikkeaa muista.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Keskiarvo $22{,}5^\\circ$ ja $\\tan 22{,}5^\\circ \\approx 0{,}41$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Hajonta $21^\\circ\\text{–}24^\\circ$ vastaa kertoimia $0{,}38\\text{–}0{,}45$. Epävarmuus on puolet vaihteluvälistä, eli $\\mu_0 \\approx 0{,}41 \\pm 0{,}03$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Kaksi merkitsevää numeroa, ei yksikköä"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi raportin menetelmää ja johtopäätöstä. Mitkä niistä ovat virheellisiä tai puutteellisia? Miksi?",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Kaava on väärä ($\\sin$ eikä $\\tan$). Ryhmä valitsi suurimman kulman, vaikka juuri siinä on karkea virhe. Käsin nostaminen ja kulman lukeminen liukumisen hetkellä ovat epätarkkoja."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Raportissa ei ole epävarmuutta eikä keskiarvoa."
+            },
+            {
+              "key": "conclusion",
+              "points": 2,
+              "detail": "Johtopäätös yleistetään väärin. Kerroin koskee vain tätä kuorta ja tätä kantta. Lisäksi $\\tan\\alpha_0 \\approx 0{,}41$ antaa rajakulmaksi noin $22^\\circ$, ei $33^\\circ$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Suunnittele koe, jolla samoille pinnoille voidaan määrittää liikekitkakerroin. Kerro, mitä mitataan ja millä välineillä. Kerro, miten tulos lasketaan. Kerro myös, miten mittauksen luotettavuutta parannetaan.",
+          "criteria": [
+            {
+              "text": "Menetelmä toimii. Esimerkiksi puhelinta vedetään vaakasuoralla kannella voima-anturilla tasaisella nopeudella, jolloin $F = \\mu mg$. Toinen tapa: puhelin liukuu jyrkemmällä kannella, ja kiihtyvyys mitataan videolta tai puhelimen kiihtyvyysanturilla.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Mitattavat suureet ja välineet on nimetty (massa vaa'alla, voima anturilla tai kulma ja kiihtyvyys).",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Laskukaava saadaan voimakuviosta: $\\mu = \\dfrac{F}{mg}$ tai $\\mu = \\dfrac{g\\sin\\alpha - a}{g\\cos\\alpha}$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Toistot, keskiarvo ja hajonta. Useampi massa tai kulma ja kuvaaja, esimerkiksi $(N, F_\\mu)$-suora origon kautta."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "experiment": "fy1-8",
+        "math": "fy4-6",
+        "communication": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-voimat-s6",
+      "title": "Liukurimäki",
+      "source": "example",
+      "source_note": "Mäki ja kitkakerroin ovat keksittyjä esimerkkejä. Ne vastaavat muovisen liukurin ja tamppautuneen lumen suuruusluokkaa.",
+      "skills": [
+        "fy4-6",
+        "fy4-2",
+        "fy4-14"
+      ],
+      "text": "Koulun takana on liukurimäki. Mäessä on tasainen rinne, jonka pituus on $40\\,\\text{m}$ ja kaltevuuskulma $12^\\circ$. Rinteen alla on vaakasuora pelto. Rinteen ja pellon välinen kohta on loiva, eikä nopeus muutu siinä. Laskija laskee mäkeä muovisella liukurilla. Lumi on tamppautunutta eli tiiviiksi painettua. Liukurin ja lumen välinen liikekitkakerroin on $0{,}080$ sekä rinteessä että pellolla. Laskija lähtee levosta rinteen yläpäästä. Ensimmäisessä mallissa ilmanvastusta ei oteta huomioon.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suuri on laskijan nopeus rinteen alapäässä?",
+          "answer": {
+            "value": 10.087,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "$x$ rinnettä alas: $mg\\sin\\alpha - \\mu mg\\cos\\alpha = ma_1$"
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a_1 = g(\\sin\\alpha - \\mu\\cos\\alpha)$, ja levosta lähdettäessä $v^2 = 2a_1 s$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$a_1 \\approx 1{,}27\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 10\\,\\text{m/s}$ ($10{,}1\\,\\text{m/s}$)"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Esimerkiksi: $10\\,\\text{m/s} \\approx 36\\,\\text{km/h}$ on liukurille nopea mutta mahdollinen. Aika rinteessä on noin $8\\,\\text{s}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka pitkän matkan laskija liukuu pellolla ennen kuin hän pysähtyy?",
+          "answer": {
+            "value": 64.83,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "Pellolla vaakasuunnassa vaikuttaa vain kitka: $-\\mu mg = ma_2$"
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a_2 = -\\mu g$ ja $0 - v^2 = 2a_2 s_2$, joten $s_2 = \\dfrac{v^2}{2\\mu g}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$a_2 \\approx -0{,}785\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$s_2 \\approx 65\\,\\text{m}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Esimerkiksi: pellolla hidastuvuus $0{,}785\\,\\text{m/s}^2$ on pienempi kuin kiihtyvyys rinteessä $1{,}27\\,\\text{m/s}^2$. Siksi pysähtymismatka on pidempi kuin rinne."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Isä väittää: ”Minä liu'un pellolla pidemmälle kuin lapset, koska olen raskaampi.” Arvioi väite ensin a- ja b-kohdan mallilla. Arvioi väite sitten niin, että otat huomioon ilmanvastuksen.",
+          "criteria": [
+            {
+              "text": "Mallissa massa supistuu sekä rinteessä että pellolla. Siksi matka ei riipu massasta.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Ilmanvastus riippuu nopeudesta, koosta ja muodosta. Se ei riipu massasta. Raskaammalla laskijalla ilmanvastus on pienempi osa painosta. Siksi hänen hidastuvuutensa kasvaa vähemmän.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Ilmanvastus lyhentää kaikkien matkaa. Myös muut erot (asento, liukurin pohja) vaikuttavat."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite voi pitää paikkansa todellisuudessa. Syy on kuitenkin ilmanvastus. Syy ei ole se, että raskas laskija painaisi liukuria eteenpäin."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy4-2",
+        "concept": "fy4-14",
+        "transfer": "fy4-6",
+        "communication": "fy4-14"
+      }
+    }
+  ]
+}

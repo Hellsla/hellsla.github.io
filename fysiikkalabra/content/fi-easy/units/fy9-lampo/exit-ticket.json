@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kaasuun tehdään työ $200\\,\\text{J}$. Samaan aikaan kaasusta siirtyy ympäristöön lämpöä $50\\,\\text{J}$. Kuinka paljon kaasun sisäenergia muuttuu?",
+    "a": "$\\Delta U = Q + W = -50\\,\\text{J} + 200\\,\\text{J} = 150\\,\\text{J}$. Sisäenergia kasvaa siis $150\\,\\text{J}$. Systeemiin tehty työ on positiivista. Systeemistä lähtevä lämpö on negatiivista."
+  },
+  {
+    "q": "Teräksinen mittanauha on kalibroitu $20\\,{}^\\circ\\text{C}$:ssa. Kalibrointi tarkoittaa, että asteikko on tarkistettu oikeaksi. Nauhalla mitataan lautaa $-15\\,{}^\\circ\\text{C}$:n pakkasessa. Näyttääkö nauha liian suurta vai liian pientä pituutta?",
+    "a": "Liian suurta. Puu lyhenee syiden suunnassa paljon vähemmän kuin teräs. Siksi laudan oma muutos on pieni. Pakkasessa teräsnauha lyhenee. Silloin sen asteikon välit ovat lyhyempiä kuin kalibroinnissa. Laudan pituudelle mahtuu siis enemmän asteikkoa. Esimerkiksi $10\\,\\text{m}$:n matkalla ero on $12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 10\\,\\text{m} \\cdot 35\\,\\text{K} \\approx 4\\,\\text{mm}$."
+  }
+]

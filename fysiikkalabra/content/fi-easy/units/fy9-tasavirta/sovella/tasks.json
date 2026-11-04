@@ -1,0 +1,828 @@
+{
+  "intro": "Tässä on kuusi ylioppilaskokeen tyylistä tehtävää. Ne kokoavat tunnin asiat: tasavirtapiirit, sähkötehon ja sähköenergian. Ratkaise tehtävät samalla tavalla kuin kokeessa. Selvitä ensin kytkentä ja malli. Perustele, miksi malli sopii tilanteeseen. Ratkaise kysytty suure kirjaimilla ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "tasks": [
+    {
+      "id": "fy9-tasavirta-s1",
+      "title": "Takalasin lämmitin",
+      "source": "example",
+      "source_note": "Lämmittimen mitat ja mittaukset on keksitty. Oikean raidan resistanssi muuttuu vähän lämpötilan mukana.",
+      "skills": [
+        "fy6-4",
+        "fy6-3",
+        "fy6-6",
+        "fy6-8"
+      ],
+      "text": "Auton takalasissa on lämmitin. Lämmittimessä on $10$ ohutta johdinraitaa vierekkäin. Raita on kapea nauha, joka johtaa sähköä. Lasin reunoilla on kaksi kiskoa, ja jokainen raita kulkee kiskosta toiseen. Raidan pituus on $1{,}10\\,\\text{m}$ ja leveys $3{,}0\\,\\text{mm}$. Raitojen materiaalin resistiivisyys on $3{,}0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m}$. Kun moottori käy, kiskojen välinen jännite on $13{,}5\\,\\text{V}$. Lämmittimen johtoon on kytketty pihtivirtamittari, ja se näyttää $12{,}0\\,\\text{A}$. Oletetaan, että raitojen resistanssi ei riipu lämpötilasta.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on lämmittimen teho? Kuinka suuri on yhden raidan resistanssi?",
+          "answer": [
+            {
+              "name": "P",
+              "value": 162.0,
+              "unit": "W",
+              "tolerance": 0.02
+            },
+            {
+              "name": "R",
+              "value": 11.25,
+              "unit": "Ω",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Perustelee kytkennän: jokainen raita on kiskojen välissä, joten raidat ovat rinnan. Kaikkien raitojen yli on sama jännite $13{,}5\\,\\text{V}$, ja virta jakautuu tasan.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = UI$, $I_1 = \\dfrac{I}{10}$ ja $R_1 = \\dfrac{U}{I_1}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P = 13{,}5\\,\\text{V} \\cdot 12{,}0\\,\\text{A} = 162\\,\\text{W}$, $I_1 = 1{,}20\\,\\text{A}$ ja $R_1 = 11{,}25\\,\\Omega$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 162\\,\\text{W}$ ja $R_1 \\approx 11{,}3\\,\\Omega$ kolmella merkitsevällä numerolla"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka paksu raita on?",
+          "answer": {
+            "value": 9.78,
+            "unit": "µm",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$R_1 = \\rho\\,\\dfrac{l}{A}$, joten $A = \\dfrac{\\rho l}{R_1}$. Paksuus on $h = \\dfrac{A}{b}$, missä $b$ on raidan leveys."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$A = \\dfrac{3{,}0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m} \\cdot 1{,}10\\,\\text{m}}{11{,}25\\,\\Omega} = 2{,}93 \\cdot 10^{-8}\\,\\text{m}^2$ ja $h = \\dfrac{2{,}93 \\cdot 10^{-8}\\,\\text{m}^2}{3{,}0 \\cdot 10^{-3}\\,\\text{m}} = 9{,}8 \\cdot 10^{-6}\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$h \\approx 9{,}8\\,\\mu\\text{m}$ eli noin $0{,}01\\,\\text{mm}$, kaksi merkitsevää numeroa kuten resistiivisyydessä ja leveydessä"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Yksi raita katkeaa, koska lasiin tulee naarmu. Miten lämmittimen virta ja teho muuttuvat? Lämpeneekö lasi ehjien raitojen kohdalta yhtä hyvin kuin ennen?",
+          "criteria": [
+            {
+              "text": "Perustelee rinnankytkennän avulla: katkennut haara ei muuta muiden raitojen jännitettä. Siksi ehjien raitojen virta ja teho pysyvät samoina kuin ennen.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Virta $9 \\cdot 1{,}20\\,\\text{A} = 10{,}8\\,\\text{A}$ ja teho $13{,}5\\,\\text{V} \\cdot 10{,}8\\,\\text{A} \\approx 146\\,\\text{W}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Virta ja teho pienenevät kymmenesosan. Ehjät raidat lämmittävät kuten ennen. Vain katkenneen raidan kohdalle jää kapea huurteinen kaista."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Moottori sammutetaan, ja lämmitin saa sähkön pelkästä akusta. Akun lähdejännite on $12{,}6\\,\\text{V}$ ja sisäinen resistanssi $0{,}020\\,\\Omega$. Kaikki raidat ovat ehjiä. Kuinka suuri on lämmittimen teho nyt?",
+          "answer": {
+            "value": 136.2,
+            "unit": "W",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Lämmittimen resistanssi $R = \\dfrac{R_1}{10}$, $I = \\dfrac{E}{R + R_\\text{s}}$ ja $P = RI^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R = 1{,}125\\,\\Omega$, $I = \\dfrac{12{,}6\\,\\text{V}}{1{,}145\\,\\Omega} = 11{,}0\\,\\text{A}$ ja $P = 1{,}125\\,\\Omega \\cdot (11{,}0\\,\\text{A})^2 \\approx 136\\,\\text{W}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 136\\,\\text{W}$ kolmella merkitsevällä numerolla"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Teho on noin $84\\,\\%$ siitä tehosta, joka saadaan moottorin käydessä. Syy: napajännite $12{,}4\\,\\text{V}$ on pienempi kuin $13{,}5\\,\\text{V}$, ja teho on verrannollinen jännitteen neliöön."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-4",
+        "math": "fy6-6",
+        "communication": "fy6-4"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s2",
+      "title": "Sähköpotkulaudan akku",
+      "source": "example",
+      "source_note": "Akun, laturin ja ajon luvut on keksitty. Oikean akun lähdejännite kasvaa latauksen aikana, joten latausvirta pienenee.",
+      "skills": [
+        "fy6-9",
+        "fy6-8",
+        "fy6-7"
+      ],
+      "text": "Sähköpotkulaudan akun tyyppikilvessä lukee $36\\,\\text{V}$ ja $10{,}4\\,\\text{Ah}$. Valmistajan laturin jännite on $42{,}0\\,\\text{V}$. Lisäksi tiedetään nämä asiat:\n\n- kun nopeus on $20\\,\\text{km/h}$, akusta otetaan keskimäärin $7{,}5\\,\\text{A}$\n- tyhjän akun lähdejännite on $34{,}5\\,\\text{V}$ ja sisäinen resistanssi $0{,}40\\,\\Omega$\n- laturin ja johtojen resistanssi on yhteensä $2{,}6\\,\\Omega$\n- sähkö maksaa siirron kanssa $15\\,\\text{snt/kWh}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka paljon energiaa täyteen ladattuun akkuun on varastoitunut? Anna vastaus wattitunteina ja megajouleina.",
+          "answer": {
+            "value": 374.4,
+            "unit": "Wh",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$W = UQ$ nimellisjännitteellä"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W = 36\\,\\text{V} \\cdot 10{,}4\\,\\text{Ah} = 374\\,\\text{Wh}$ ja $374{,}4 \\cdot 3600\\,\\text{J} = 1{,}35\\,\\text{MJ}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$W \\approx 374\\,\\text{Wh} \\approx 1{,}35\\,\\text{MJ}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka pitkän matkan täydellä akulla voi ajaa, kun nopeus on $20\\,\\text{km/h}$?",
+          "answer": {
+            "value": 27.73,
+            "unit": "km",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = It$, joten $t = \\dfrac{Q}{I}$, ja matka $s = vt$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$t = \\dfrac{10{,}4\\,\\text{Ah}}{7{,}5\\,\\text{A}} = 1{,}39\\,\\text{h}$ ja $s = 20\\,\\tfrac{\\text{km}}{\\text{h}} \\cdot 1{,}39\\,\\text{h} = 27{,}7\\,\\text{km}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$s \\approx 28\\,\\text{km}$, kaksi merkitsevää numeroa kuten virrassa ja nopeudessa"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Oletus: koko kapasiteetti voidaan käyttää, ja virta pysyy keskiarvossaan. Mäet, tuuli, kylmyys ja kiihdytykset lyhentävät matkaa."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Laturi kytketään tyhjään akkuun. Kuinka suuri on latausvirta latauksen alussa? Kuinka suuri on silloin akun napajännite?",
+          "answer": [
+            {
+              "name": "I",
+              "value": 2.5,
+              "unit": "A",
+              "tolerance": 0.02
+            },
+            {
+              "name": "U",
+              "value": 35.5,
+              "unit": "V",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Perustelee jännitelain avulla: silmukassa potentiaali nousee laturissa. Se laskee laturin ja johtojen resistanssissa ja akun sisäisessä resistanssissa. Lisäksi se laskee akun lähdejännitteen verran, koska virta kulkee akun läpi plusnavalta miinusnavalle.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I = \\dfrac{U_\\text{lat} - E}{R + R_\\text{s}}$ ja $U = E + R_\\text{s} I$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$I = \\dfrac{42{,}0\\,\\text{V} - 34{,}5\\,\\text{V}}{2{,}6\\,\\Omega + 0{,}40\\,\\Omega} = 2{,}5\\,\\text{A}$ ja $U = 34{,}5\\,\\text{V} + 0{,}40\\,\\Omega \\cdot 2{,}5\\,\\text{A} = 35{,}5\\,\\text{V}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$I \\approx 2{,}5\\,\\text{A}$ ja $U \\approx 35{,}5\\,\\text{V}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Arvioi latauksen hyötysuhde. Oletetaan, että laturin jännite pysyy $42{,}0\\,\\text{V}$:ssa ja akun läpi kulkee latauksessa varaus $10{,}4\\,\\text{Ah}$. Kuinka paljon yksi täysi lataus maksaa?",
+          "answer": {
+            "value": 85.71,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$W_\\text{lat} = U_\\text{lat} Q$ ja $\\eta = \\dfrac{W_\\text{akku}}{W_\\text{lat}}$, missä $W_\\text{akku}$ on a-kohdan energia"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W_\\text{lat} = 42{,}0\\,\\text{V} \\cdot 10{,}4\\,\\text{Ah} = 437\\,\\text{Wh}$ ja $\\eta = \\dfrac{374\\,\\text{Wh}}{437\\,\\text{Wh}} = 0{,}857$; hinta $0{,}437\\,\\text{kWh} \\cdot 0{,}15\\,\\tfrac{\\text{€}}{\\text{kWh}} \\approx 0{,}066\\,\\text{€}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\eta \\approx 86\\,\\%$ ja hinta noin $7\\,\\text{snt}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Hyötysuhde on alle $100\\,\\%$, koska noin $62\\,\\text{Wh}$ muuttuu resistanssien sisäenergiaksi. Lataus on halpa, kun sitä verrataan esimerkiksi bussilippuun."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy6-9",
+        "concept": "fy6-9",
+        "transfer": "fy6-7"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s3",
+      "title": "Taskulampun paristot kuormitettuna",
+      "source": "example",
+      "source_note": "Luvut on laskettu mallista. Niihin on lisätty vaihtelua, joka muistuttaa oikeiden mittausten vaihtelua.",
+      "skills": [
+        "fy6-8",
+        "fy1-4",
+        "fy6-6"
+      ],
+      "text": "Opiskelijat tutkivat taskulampun paristokoteloa. Kotelossa on kolme uutta AA-paristoa sarjassa. Kotelon napoihin kytkettiin säätövastus ja virtamittari sarjaan. Jännitemittari kytkettiin kotelon napoihin. Säätövastuksen resistanssia muutettiin. Jokaisella asetuksella luettiin virta $I$ ja napajännite $U$.\n\n| $I\\ (\\text{A})$ | $U\\ (\\text{V})$ |\n|---|---|\n| $0{,}10$ | $4{,}56$ |\n| $0{,}25$ | $4{,}43$ |\n| $0{,}40$ | $4{,}34$ |\n| $0{,}60$ | $4{,}18$ |\n| $0{,}80$ | $4{,}06$ |\n| $1{,}00$ | $3{,}89$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "Piirrä kuvaaja, jossa napajännite on virran funktiona. Sovita pisteisiin malli. Perustele, miksi valitsit tämän mallin.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla $I\\ (\\text{A})$, pystyakselilla $U\\ (\\text{V})$. Pystyakseli alkaa nollasta, tai katkaisu on merkitty. Akselia on tilaa jatkaa virtaan $0$ asti."
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "Kuusi pistettä oikeissa kohdissa. Pisteitä ei ole yhdistetty murtoviivaksi."
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "Yksi laskeva suora pisteiden lomitse eli pisteiden välistä. Suoraa on jatkettu pystyakselille."
+            },
+            {
+              "text": "Perustelee suoran: napajännite pienenee sisäisen resistanssin jännitehäviön $R_\\text{s} I$ verran. Häviö on verrannollinen virtaan, kun $E$ ja $R_\\text{s}$ ovat vakioita.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 6,
+          "text": "Määritä kuvaajasta paristoryhmän lähdejännite ja sisäinen resistanssi. Vertaa tuloksia uuden AA-pariston tyypillisiin arvoihin. Tyypillinen lähdejännite on $1{,}5$–$1{,}6\\,\\text{V}$ ja sisäinen resistanssi $0{,}1$–$0{,}3\\,\\Omega$.",
+          "answer": [
+            {
+              "name": "E",
+              "value": 4.63,
+              "unit": "V",
+              "tolerance": 0.02
+            },
+            {
+              "name": "Rs",
+              "value": 0.733,
+              "unit": "Ω",
+              "tolerance": 0.06
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "$E$ saadaan kohdasta, jossa suora leikkaa pystyakselin, noin $4{,}63\\,\\text{V}$. Kulmakerroin lasketaan kahdesta suoran pisteestä, jotka ovat kaukana toisistaan, esimerkiksi $(0\\,\\text{A};\\ 4{,}63\\,\\text{V})$ ja $(1{,}20\\,\\text{A};\\ 3{,}75\\,\\text{V})$."
+            },
+            {
+              "text": "Tulkitsee: pystyakselin leikkauskohta on lähdejännite, koska ilman virtaa $U = E$. Kulmakertoimen vastaluku on sisäinen resistanssi.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R_\\text{s} = -\\dfrac{\\Delta U}{\\Delta I} = -\\dfrac{3{,}75\\,\\text{V} - 4{,}63\\,\\text{V}}{1{,}20\\,\\text{A}} \\approx 0{,}73\\,\\Omega$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$E \\approx 4{,}63\\,\\text{V}$ ja $R_\\text{s} \\approx 0{,}73\\,\\Omega$. Kuvaajalta luetut arvot $4{,}60$–$4{,}66\\,\\text{V}$ ja $0{,}70$–$0{,}77\\,\\Omega$ hyväksytään."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Sarjassa lähdejännitteet ja sisäiset resistanssit lasketaan yhteen. Siksi yhtä paristoa kohti saadaan $1{,}54\\,\\text{V}$ ja $0{,}24\\,\\Omega$. Ne ovat uusien AA-paristojen tyypillisiä arvoja."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri virta kulkisi, jos kotelon navat oikosuljettaisiin eli yhdistettäisiin suoraan johdolla? Miksi tätä virtaa ei mitattu? Kuinka luotettava tulos on?",
+          "answer": {
+            "value": 6.31,
+            "unit": "A",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I_\\text{k} = \\dfrac{E}{R_\\text{s}}$ tai kohta, jossa suora leikkaa vaaka-akselin"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$I_\\text{k} = \\dfrac{4{,}63\\,\\text{V}}{0{,}733\\,\\Omega} \\approx 6{,}3\\,\\text{A}$"
+            },
+            {
+              "text": "Perustelee, miksi oikosulkua ei mitata: suuri virta kuumentaisi paristot ja voisi vahingoittaa niitä.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Tulos on ekstrapolaatio eli arvio mittausalueen ulkopuolelta, yli kuusi kertaa suuremmalle virralle. Se olettaa, että $R_\\text{s}$ pysyy samana myös suurilla virroilla. Siksi se on vain arvio."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "Taskulampun lampun resistanssi on $3{,}6\\,\\Omega$, kun lamppu palaa. Kuinka suuri teho lamppuun siirtyy? Kuinka suuri osa paristojen lähdetehosta $EI$ se on?",
+          "answer": {
+            "value": 4.11,
+            "unit": "W",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I = \\dfrac{E}{R + R_\\text{s}}$, $P = RI^2$ ja osuus $\\dfrac{RI^2}{EI}$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$I = \\dfrac{4{,}63\\,\\text{V}}{4{,}33\\,\\Omega} = 1{,}07\\,\\text{A}$, $P = 3{,}6\\,\\Omega \\cdot (1{,}07\\,\\text{A})^2 = 4{,}11\\,\\text{W}$ ja $EI = 4{,}95\\,\\text{W}$, joten osuus on $83\\,\\%$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 4{,}1\\,\\text{W}$, kaksi merkitsevää numeroa kuten lampun resistanssissa"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Loput noin $0{,}84\\,\\text{W}$ lämmittää paristoja. Virta $1{,}07\\,\\text{A}$ on vähän mittausalueen yläpuolella, joten malli pätee siihen todennäköisesti hyvin."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "concept": "fy6-8",
+        "math": "fy6-8",
+        "experiment": "fy6-8",
+        "transfer": "fy6-8"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s4",
+      "title": "Kolme väitettä sähköturvallisuudesta",
+      "source": "example",
+      "source_note": "Väitteet ja luvut on keksitty.",
+      "skills": [
+        "fy6-6",
+        "fy6-4",
+        "fy6-5",
+        "fy6-3"
+      ],
+      "text": "Taloyhtiön asukasillassa keskusteltiin sähköturvallisuudesta. Illan aikana esitettiin kolme väitettä.\n\n1. ”Jatkojohto lämpenee, koska osa virrasta kuluu johdossa. Siksi ohut jatkojohto on vaarallinen vain, jos se on pitkä.”\n2. ”Kun samaan pistorasiaryhmään kytketään lisää laitteita, jokaisen laitteen virta pienenee, koska ryhmän virta jakautuu useammalle laitteelle.”\n3. ”Lintu voi istua paljaalla suurjännitejohdolla turvallisesti, mutta jos se koskettaa samalla siivellään maadoitettua pylvästä, se saa sähköiskun.”\n\nKodin pistorasioiden jännite on $230\\,\\text{V}$. Lämmittävien laitteiden virtaa ja tehoa voi arvioida samoilla laeilla kuin tasavirtapiirissä. Kuparin resistiivisyys on $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$ ja alumiinin $2{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi väite 1. Käytä esimerkkinä $15\\,\\text{m}$:n jatkojohtoa. Johdossa on kaksi johdinta, ja kummankin poikkipinta-ala on $0{,}75\\,\\text{mm}^2$. Johdon läpi kulkee $10\\,\\text{A}$. Kuinka suuri teho muuttuu johdossa sisäenergiaksi?",
+          "criteria": [
+            {
+              "text": "Selittää, että virta ei kulu: sama virta kulkee johtoa pitkin laitteeseen ja takaisin. Johtimien resistanssissa sähköenergiaa muuttuu sisäenergiaksi teholla $P = RI^2$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Virta kulkee kahden $15\\,\\text{m}$:n johtimen kautta: $R = \\rho\\,\\dfrac{2l}{A} = 0{,}68\\,\\Omega$ ja $P = 0{,}68\\,\\Omega \\cdot (10\\,\\text{A})^2 = 68\\,\\text{W}$."
+            },
+            {
+              "text": "Selittää, että sekä pieni poikkipinta-ala että suuri pituus suurentavat resistanssia. Lisäksi teho kasvaa virran neliönä. Siksi suuri virta tekee ohuesta johdosta vaarallisen myös silloin, kun johto on lyhyt.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä: johto ei kuluta virtaa, ja ohut johto kuumenee suurella virralla, oli se pitkä tai lyhyt. Kelalle kierretty johto ei pääse jäähtymään."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi väite 2. Käytä esimerkkinä $2000\\,\\text{W}$:n vedenkeitintä ja $850\\,\\text{W}$:n leivänpaahdinta. Ne ovat samassa ryhmässä, ja ryhmän sulake on $10\\,\\text{A}$.",
+          "criteria": [
+            {
+              "text": "Selittää rinnankytkennän: jokaisen pistorasian ja laitteen yli on verkon jännite $230\\,\\text{V}$. Siksi laitteen virta $I = \\tfrac{P}{U}$ ei riipu muista laitteista.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\tfrac{2000\\,\\text{W}}{230\\,\\text{V}} = 8{,}7\\,\\text{A}$ ja $\\tfrac{850\\,\\text{W}}{230\\,\\text{V}} = 3{,}7\\,\\text{A}$, yhteensä $12{,}4\\,\\text{A}$"
+            },
+            {
+              "text": "Päättelee virtalain avulla, että ryhmän johdossa kulkee haarojen virtojen summa. Summa on yli $10\\,\\text{A}$. Sulake katkaisee virran ja suojaa ryhmän johtoja, jotta ne eivät kuumene liikaa.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä: laitteiden virrat eivät pienene. Ryhmän kokonaisvirta kasvaa jokaisen uuden laitteen myötä."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi väite 3. Linnun jalat ovat alumiinijohtimella $4{,}0\\,\\text{cm}$:n päässä toisistaan. Johtimen poikkipinta-ala on $400\\,\\text{mm}^2$, ja siinä kulkee $600\\,\\text{A}$. Arvioi linnun jalkojen välinen jännite.",
+          "criteria": [
+            {
+              "text": "Selittää, että linnun kautta kulkevan virran määrää jalkojen välinen potentiaaliero. Sitä ei määrää johdon potentiaali maahan verrattuna.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Jalkojen välisen johdon resistanssi $R = \\rho\\,\\dfrac{l}{A} = 2{,}7 \\cdot 10^{-6}\\,\\Omega$ ja jännite $U = RI \\approx 1{,}6\\,\\text{mV}$."
+            },
+            {
+              "text": "Selittää, että pylväs on maan potentiaalissa. Kun lintu koskettaa pylvästä, linnun kehon yli on melkein koko johdon ja maan välinen jännite. Silloin kehon kautta kulkee vaarallinen virta.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite pitää paikkansa: vaarallista ei ole johdon korkea potentiaali. Vaarallista on suuri potentiaaliero kehon kahden kohdan välillä."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-5",
+        "math": "fy6-3",
+        "transfer": "fy6-4",
+        "communication": "fy6-6"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s5",
+      "title": "Noudattaako vastus Ohmin lakia?",
+      "source": "example",
+      "source_note": "Raportti ja mittaukset on keksitty. Mittarin virherajat ovat samaa muotoa kuin luvun *Mittaukset virtapiirissä* yleismittarissa.",
+      "skills": [
+        "fy6-2",
+        "fy6-3",
+        "fy1-3",
+        "fy1-8"
+      ],
+      "text": "Opiskelijaryhmä tutki, noudattaako hiilikalvovastus Ohmin lakia. Ryhmä kytki vastuksen säädettävään jännitelähteeseen. Virtamittari kytkettiin sarjaan ja jännitemittari vastuksen rinnalle. Jännite mitattiin yleismittarin alueella $20\\,\\text{V}$ (resoluutio $0{,}01\\,\\text{V}$, virheraja $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$). Resoluutio on pienin muutos, jonka mittari näyttää. Virta mitattiin toisen yleismittarin alueella $200\\,\\text{mA}$ (resoluutio $0{,}1\\,\\text{mA}$, virheraja $\\pm(1{,}0\\,\\% + 2\\ \\text{numeroa})$).\n\n| Mittaus | $U\\ (\\text{V})$ | $I\\ (\\text{mA})$ |\n|---|---|---|\n| 1 | $0{,}51$ | $5{,}3$ |\n| 2 | $1{,}50$ | $15{,}0$ |\n| 3 | $3{,}02$ | $29{,}6$ |\n\nRyhmän johtopäätös: ”Resistanssit ovat $96\\,\\Omega$, $100\\,\\Omega$ ja $102\\,\\Omega$. Resistanssi kasvaa, kun jännite kasvaa, joten vastus ei noudata Ohmin lakia.”",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Laske mittauksen 1 resistanssi. Laske sen virheraja mittarien virherajojen avulla.",
+          "answer": {
+            "value": 96.23,
+            "unit": "Ω",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$R = \\dfrac{U}{I}$; mittarin virheraja $\\Delta x = p \\cdot x + n \\cdot r$; resistanssin rajat ääriarvoista $R_\\text{min} = \\dfrac{U - \\Delta U}{I + \\Delta I}$ ja $R_\\text{max} = \\dfrac{U + \\Delta U}{I - \\Delta I}$ tai suhteellisten virherajojen summasta"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$\\Delta U = 0{,}023\\,\\text{V}$ ja $\\Delta I = 0{,}25\\,\\text{mA}$; $R = \\dfrac{0{,}51\\,\\text{V}}{0{,}0053\\,\\text{A}} = 96{,}2\\,\\Omega$; rajat noin $88\\,\\Omega$ ja $106\\,\\Omega$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Suhteellinen virheraja on noin $4{,}4\\,\\% + 4{,}8\\,\\% \\approx 9\\,\\%$, joten $\\Delta R \\approx 9\\,\\Omega$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$R = (96 \\pm 9)\\,\\Omega$: virheraja yhdellä merkitsevällä numerolla ja tulos samalla tarkkuudella"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi ryhmän johtopäätös.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "Mittausten 2 ja 3 virherajat ovat noin $\\pm 4\\,\\Omega$ ja $\\pm 3\\,\\Omega$. Kaikkiin kolmeen väliin kuuluu arvo $100\\,\\Omega$. Siksi resistanssit eivät eroa toisistaan mittaustarkkuuden rajoissa."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Kun lukema on pieni, numeroiden osuus $n \\cdot r$ on suurin osa virherajasta. Lukemat $0{,}51\\,\\text{V}$ alueella $20\\,\\text{V}$ ja $5{,}3\\,\\text{mA}$ alueella $200\\,\\text{mA}$ ovat karkeita. Siksi mittaus 1 on epätarkin, ja juuri se poikkeaa eniten."
+            },
+            {
+              "text": "Toteaa, että lämpeneminen voisi muuttaa resistanssia. Vastuksen teho on kuitenkin enintään noin $0{,}09\\,\\text{W}$, joten vastus ei juuri lämpene.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Johtopäätös ei ole perusteltu: aineisto sopii vakioresistanssiin noin $100\\,\\Omega$. Kolmesta epätarkasta pisteestä ei voi päätellä, että resistanssi riippuu jännitteestä."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Suunnittele, miten mittausta parannetaan, jotta Ohmin lain voimassaolo voidaan todeta luotettavasti.",
+          "criteria": [
+            {
+              "text": "Mitataan useita pisteitä, esimerkiksi kahdeksan, laajalla jännitealueella. Piirretään $(I, U)$-kuvaaja ja sovitetaan suora. Ohmin lain mukaan pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on $R$.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Käytetään pienintä aluetta, jolle lukema mahtuu. Esimerkiksi $0{,}510\\,\\text{V}$ alueella $2\\,\\text{V}$ antaa virherajan $0{,}005\\,\\text{V}$ eli noin $0{,}9\\,\\%$."
+            },
+            {
+              "text": "Pidetään vastuksen lämpötila vakiona: teho on pieni, ja mittaukset tehdään nopeasti. Jännitettä sekä kasvatetaan että pienennetään. Jos lämpeneminen vaikuttaisi, se näkyisi eroina.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Pidetään virtamittari sarjassa ja jännitemittari vastuksen rinnalla. Arvioidaan, miten mittarit vaikuttavat piiriin: jännitemittarin virta on hyvin pieni, koska sen resistanssi on paljon suurempi kuin $100\\,\\Omega$.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy6-2",
+        "experiment": "fy6-2",
+        "concept": "fy6-3",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s6",
+      "title": "Lämminvesivaraaja",
+      "source": "example",
+      "source_note": "Varaajan tiedot on keksitty. Ne vastaavat omakotitalon tavallista varaajaa.",
+      "skills": [
+        "fy3-6",
+        "fy6-6",
+        "fy6-7"
+      ],
+      "text": "Omakotitalossa on lämminvesivaraaja eli säiliö, jossa vesi lämmitetään ja säilytetään. Varaajassa on $300\\,\\text{l}$ vettä ja sähkövastus. Vastuksen teho on $3{,}0\\,\\text{kW}$, kun jännite on $230\\,\\text{V}$. Kun lämmin vesi on käytetty, varaaja täyttyy kylmällä vedellä. Kylmän veden lämpötila on $15\\,{}^\\circ\\text{C}$, ja vastus lämmittää veden $70\\,{}^\\circ\\text{C}$:een. Valmistajan mukaan lämmin varaaja luovuttaa ympäristöön $1{,}6\\,\\text{kWh}$ energiaa vuorokaudessa. Sähkö maksaa siirron kanssa $14\\,\\text{snt/kWh}$. Veden ominaislämpökapasiteetti on $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, ja yhden vesilitran massa on $1{,}0\\,\\text{kg}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka kauan veden lämmittäminen kestää, kun lämpöhäviöitä ei oteta huomioon?",
+          "answer": {
+            "value": 6.4,
+            "unit": "h",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee energiaperiaatteen: vastuksen sähköenergia muuttuu melkein kokonaan veden sisäenergiaksi, koska vastuslämmittimen hyötysuhde on käytännössä $100\\,\\%$. Siksi $Pt = cm\\Delta T$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = cm\\Delta T$ ja $t = \\dfrac{Q}{P}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$Q = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 300\\,\\text{kg} \\cdot 55\\,\\text{K} = 69{,}1\\,\\text{MJ}$ ja $t = \\dfrac{69{,}1 \\cdot 10^6\\,\\text{J}}{3000\\,\\text{W}} = 23\\,000\\,\\text{s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 6{,}4\\,\\text{h}$, kaksi merkitsevää numeroa kuten teho $3{,}0\\,\\text{kW}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Lämmitys mahtuu yön tunteihin. Energia $19\\,\\text{kWh}$ maksaa noin $2{,}7\\,\\text{€}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on varaajan lämpöhäviöiden keskimääräinen teho? Kuinka paljon häviöt maksavat vuodessa?",
+          "answer": {
+            "value": 66.67,
+            "unit": "W",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = \\dfrac{E}{t}$ ja vuoden energia $365 \\cdot 1{,}6\\,\\text{kWh}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P = \\dfrac{1600\\,\\text{Wh}}{24\\,\\text{h}} = 66{,}7\\,\\text{W}$; vuodessa $584\\,\\text{kWh}$ ja $584\\,\\text{kWh} \\cdot 0{,}14\\,\\tfrac{\\text{€}}{\\text{kWh}} = 82\\,\\text{€}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 67\\,\\text{W}$ ja noin $82\\,\\text{€}$ vuodessa"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Häviöteho on vähän alle sata wattia. Siksi varaaja lämmittää huonettaan koko ajan kuin pieni lämmitin. Paksumpi eristys vähentäisi häviötä."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Illalla verkon jännite on $220\\,\\text{V}$. Oletetaan, että vastuksen resistanssi on sama kuin ennen. Kuinka suuri on vastuksen teho silloin?",
+          "answer": {
+            "value": 2.745,
+            "unit": "kW",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$R = \\dfrac{U^2}{P}$ ja $P' = \\dfrac{U'^2}{R} = P \\left(\\dfrac{U'}{U}\\right)^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R = \\dfrac{(230\\,\\text{V})^2}{3000\\,\\text{W}} = 17{,}6\\,\\Omega$ ja $P' = \\dfrac{(220\\,\\text{V})^2}{17{,}6\\,\\Omega} = 2{,}74\\,\\text{kW}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P' \\approx 2{,}7\\,\\text{kW}$, noin $8{,}5\\,\\%$ vähemmän. Lämmitys kestää noin $7{,}0\\,\\text{h}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Suihkussa käytetään $10\\,\\text{min}$ ajan $40\\,{}^\\circ\\text{C}$:n vettä $8{,}0\\,\\text{l}$ minuutissa. Vesi on lämmitetty $15\\,{}^\\circ\\text{C}$:sta. Kuinka paljon sähköenergiaa suihkun lämmin vesi vastaa?",
+          "answer": {
+            "value": 2.328,
+            "unit": "kWh",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E = cm\\Delta T$, missä $m = 80\\,\\text{kg}$ ja $\\Delta T = 25\\,\\text{K}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{kg} \\cdot 25\\,\\text{K} = 8{,}38\\,\\text{MJ} = 2{,}33\\,\\text{kWh}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Suihku maksaa noin $33\\,\\text{snt}$. Täysi varaaja ($19\\,\\text{kWh}$) riittää noin kahdeksaan tällaiseen suihkuun."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy3-6",
+        "math": "fy6-7"
+      }
+    }
+  ]
+}

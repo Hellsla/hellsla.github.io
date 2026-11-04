@@ -1,0 +1,819 @@
+{
+  "intro": "Six matriculation-exam-style problems bring together the equilibrium, circular motion and gravitation of the lesson. Solve them as in the exam: draw a free-body diagram, justify which condition you use and why it holds, solve for the unknown quantity before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
+  "tasks": [
+    {
+      "id": "fy9-ympyraliike-s1",
+      "title": "A boat trailer and the nose weight",
+      "source": "example",
+      "source_note": "The figures for the trailer, the boat and the instructions are an invented example. The orders of magnitude match a small boat trailer.",
+      "skills": [
+        "fy5-2",
+        "fy5-1",
+        "fy4-5"
+      ],
+      "text": "A family takes a $4.6\\,\\text{m}$ aluminium boat to their summer cottage on a single-axle trailer. The drawbar of the trailer is attached to the tow hitch of the car, and the coupling exerts a vertical force on the drawbar. The size of this force expressed as a mass is called the nose weight. According to the trailer's instructions the nose weight should be $50\\text{–}75\\,\\text{kg}$. The trailer stands in a level yard, and the drawbar is horizontal.\n\nThe horizontal distances are measured forwards from the axle of the trailer, towards the tow hitch:\n\n- mass of the trailer $165\\,\\text{kg}$, centre of gravity $0.58\\,\\text{m}$ in front of the axle\n- mass of the boat and the outboard motor together $430\\,\\text{kg}$, common centre of gravity $0.12\\,\\text{m}$ in front of the axle\n- coupling $3.25\\,\\text{m}$ in front of the axle",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Draw the free-body diagram of the trailer and the boat. How large is the vertical force of the coupling on the drawbar? What is the nose weight?",
+          "answer": [
+            {
+              "name": "F",
+              "value": 444.6,
+              "unit": "N",
+              "tolerance": 0.03
+            },
+            {
+              "name": "m",
+              "value": 45.32,
+              "unit": "kg",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "The trailer and the boat as the body: the weights $\\overline{G}_\\text{t}$ and $\\overline{G}_\\text{v}$ down from the centres of gravity, the normal force $\\overline{N}$ at the axle and the force $\\overline{F}$ of the coupling up."
+            },
+            {
+              "text": "Justifies the pivot point: about the axle the lever arm of the normal force $N$ is zero.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$F \\cdot 3.25\\,\\text{m} = m_\\text{t} g \\cdot 0.58\\,\\text{m} + m_\\text{b} g \\cdot 0.12\\,\\text{m}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F \\cdot 3.25\\,\\text{m} = (165 \\cdot 0.58 + 430 \\cdot 0.12)\\,\\text{kg} \\cdot \\text{m} \\cdot 9.81\\,\\text{m/s}^2$, so $F \\approx 445\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 440\\,\\text{N}$ and the nose weight $F : g \\approx 45\\,\\text{kg}$ to two significant figures, below the $50\\,\\text{kg}$ of the instructions"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "How large a force does the ground exert on the wheels of the trailer?",
+          "answer": {
+            "value": 5.392,
+            "unit": "kN",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "For translation $N + F = (m_\\text{t} + m_\\text{b})g$, so $N = (m_\\text{t} + m_\\text{b})g - F$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$N = 595\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 - 445\\,\\text{N} \\approx 5390\\,\\text{N}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The wheels carry about $92\\,\\%$ of the weight, because the common centre of gravity is close to the axle."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "The boat can be moved forwards on the trailer. How far must the boat be moved for the nose weight to be $60\\,\\text{kg}$?",
+          "answer": {
+            "value": 11.09,
+            "unit": "cm",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the move changes only the lever arm of the weight of the boat, and that the force of the nose weight $60\\,\\text{kg}$ is $60\\,\\text{kg} \\cdot g$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$60\\,\\text{kg} \\cdot g \\cdot 3.25\\,\\text{m} = m_\\text{t} g \\cdot 0.58\\,\\text{m} + m_\\text{b} g\\,(0.12\\,\\text{m} + \\Delta x)$, so $g$ cancels"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta x = \\dfrac{195\\,\\text{kg} \\cdot \\text{m} - 147.3\\,\\text{kg} \\cdot \\text{m}}{430\\,\\text{kg}} \\approx 0.111\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\Delta x \\approx 11\\,\\text{cm}$ forwards, two significant figures"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "For the trip to the cottage, $30\\,\\text{kg}$ of fuel and gear are loaded at the stern of the boat, $1.40\\,\\text{m}$ behind the axle. How does the nose weight change from the situation of part a? Why is too small or a negative nose weight dangerous?",
+          "criteria": [
+            {
+              "text": "Justifies with the moment condition that a load behind the axle reduces the nose weight: $30\\,\\text{kg} \\cdot 1.40\\,\\text{m} : 3.25\\,\\text{m} \\approx 13\\,\\text{kg}$, so the nose weight is about $32\\,\\text{kg}$.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Too small a nose weight lightens the tow hitch; if the common centre of gravity moves behind the axle, the nose weight is negative and the coupling has to hold the drawbar down, so the trailer lifts the rear of the car and the grip of the rear wheels weakens."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-2",
+        "math": "fy5-2",
+        "transfer": "fy5-1",
+        "communication": "fy5-2"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s2",
+      "title": "A weather satellite over the poles",
+      "source": "example",
+      "source_note": "The satellite and its figures are an invented example. The height and the mass match real polar-orbiting weather satellites.",
+      "skills": [
+        "fy5-6",
+        "fy5-5",
+        "fy5-3"
+      ],
+      "text": "A European weather satellite orbits the Earth in an almost circular orbit that passes over the poles. A receiving station on the Earth's surface in northern Finland gets its measurements on many successive revolutions, because the satellite passes the North Pole on every revolution.\n\n- mass of the satellite $4100\\,\\text{kg}$, height of the orbit above the surface $830\\,\\text{km}$\n- mass of the Earth $5.97 \\cdot 10^{24}\\,\\text{kg}$ and radius $6371\\,\\text{km}$\n- the Earth rotates once about its axis in $23\\,\\text{h}\\;56\\,\\text{min}$\n- gravitational constant $\\gamma = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "How large is the orbital speed of the satellite? How long is its period in minutes?",
+          "answer": [
+            {
+              "name": "v",
+              "value": 7.438,
+              "unit": "km/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "T",
+              "value": 101.4,
+              "unit": "min",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies that the gravitational force of the Earth is the only force on the satellite and so the net force pointing to the centre.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\gamma\\dfrac{Mm}{r^2} = m\\dfrac{v^2}{r}$, so $v = \\sqrt{\\dfrac{\\gamma M}{r}}$, and $T = \\dfrac{2\\pi r}{v}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$r = R + h = 7201\\,\\text{km}$; $v \\approx 7440\\,\\text{m/s}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T = \\dfrac{2\\pi \\cdot 7.201 \\cdot 10^{6}\\,\\text{m}}{7438\\,\\text{m/s}} \\approx 6083\\,\\text{s} \\approx 101\\,\\text{min}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 7.44\\,\\text{km/s}$ and $T \\approx 101\\,\\text{min}$ to three significant figures"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large a gravitational force acts on the satellite in its orbit? What percentage is it of the weight of the satellite at the Earth's surface?",
+          "answer": {
+            "value": 31.5,
+            "unit": "kN",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$F = \\gamma\\dfrac{Mm}{(R + h)^2}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F = \\dfrac{3.984 \\cdot 10^{14} \\cdot 4100}{(7.201 \\cdot 10^{6})^2}\\,\\text{N} \\approx 31.5\\,\\text{kN}$, when $\\gamma M = 3.984 \\cdot 10^{14}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}}$"
+            },
+            {
+              "text": "Compares with the weight $mg \\approx 40.2\\,\\text{kN}$: the force is about $78\\,\\%$ of the weight, the same as $\\left(\\tfrac{R}{R + h}\\right)^2$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 31.5\\,\\text{kN}$ to three significant figures and the share about $78\\,\\%$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "The plane of the satellite's orbit stays almost fixed in space, and the Earth turns beneath it. Through how many degrees does the Earth turn during one revolution of the satellite? How far does a point on the equator move in the same time?",
+          "answer": [
+            {
+              "name": "deg",
+              "value": 25.41,
+              "unit": "°",
+              "tolerance": 0.02
+            },
+            {
+              "name": "km",
+              "value": 2826,
+              "unit": "km",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The rotation is $360^\\circ \\cdot \\dfrac{T}{T_\\text{Earth}}$ and the distance moved by a point on the equator $2\\pi R \\cdot \\dfrac{T}{T_\\text{Earth}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{6083\\,\\text{s}}{86\\,160\\,\\text{s}} \\cdot 360^\\circ \\approx 25.4^\\circ$ and $2\\pi \\cdot 6371\\,\\text{km} \\cdot 0.0706 \\approx 2830\\,\\text{km}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$25.4^\\circ$ and about $2830\\,\\text{km}$ to three significant figures"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "A student suggests: “Let's move the weather satellite to a geostationary orbit, then it will see Finland all the time.” Assess why an orbit over the poles is still used for accurate measurements of northern regions. The geostationary orbit is at a height of $35\\,800\\,\\text{km}$ above the equator.",
+          "criteria": [
+            {
+              "text": "Justifies with the distance: the geostationary orbit is over $40$ times further away than $830\\,\\text{km}$, so with the same instrument details look much less sharp.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Justifies with the position of the orbit: the geostationary orbit is in the plane of the equator, so it sees Finland at a very oblique angle and the polar regions not at all; a satellite orbiting over the poles passes over the north on every revolution.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The suggestion has a good side, continuous visibility, but for accurate northern measurements a low orbit over the poles is better."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-6",
+        "math": "fy5-6",
+        "transfer": "fy5-3",
+        "communication": "fy5-6"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s3",
+      "title": "Centripetal force on a rotating platform",
+      "source": "example",
+      "source_note": "The data are an invented example: the forces were calculated from the equation of motion in a circle, and variation like that of measurements was added to them.",
+      "skills": [
+        "fy5-4",
+        "fy5-3",
+        "fy1-4"
+      ],
+      "text": "In a physics lesson a rotating platform was studied. The platform has rails on which a small cart runs almost without friction. The cart is attached to a string that runs to a force sensor on the axis of rotation of the platform. The distance of the cart's centre of gravity from the axis was kept the same all the time, $0.250\\,\\text{m}$, and the cart was weighed: $0.200\\,\\text{kg}$. The platform was turned steadily by a motor at different speeds. The time of ten revolutions was measured with a stopwatch, and the force was read from the display of the sensor.\n\n| $10T\\ (\\text{s})$ | $F\\ (\\text{N})$ |\n|---|---|\n| $6.0$ | $5.42$ |\n| $7.0$ | $4.07$ |\n| $8.0$ | $3.05$ |\n| $9.5$ | $2.21$ |\n| $11.0$ | $1.65$ |\n| $13.0$ | $1.19$ |\n| $15.0$ | $0.88$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Present the force of the string as a function of the period in a graph. Justify why a straight line does not fit the points.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "On the horizontal axis the period $T\\ (\\text{s})$, not the time of ten revolutions; on the vertical axis $F\\ (\\text{N})$."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "text": "Justifies with the curvature of the graph and with physics: the force decreases faster than the period grows, and fast rotation needs a much larger force, because the centripetal acceleration grows with the square of the speed.",
+              "tag": "graph",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 6,
+          "text": "Form from the data a quantity against which the graph of the force of the string is a straight line when the mass of the cart and its distance from the axis stay the same. Justify your choice. Present the graph and fit a straight line to the points.",
+          "criteria": [
+            {
+              "text": "Justifies the linearisation: $F = m\\tfrac{v^2}{r}$ and $v = \\tfrac{2\\pi r}{T}$ give $F = 4\\pi^2 mr \\cdot \\tfrac{1}{T^2}$, so $F$ is directly proportional to the quantity $\\tfrac{1}{T^2}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Calculates correctly in the table the periods $T$ and the values of the quantity $\\tfrac{1}{T^2}$ with their units.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "On the horizontal axis $\\tfrac{1}{T^2}\\ (\\tfrac{1}{\\text{s}^2})$, on the vertical axis $F\\ (\\text{N})$."
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "The fitted line runs through the points almost through the origin; the points are not usually exactly on the line."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Determine the slope of the line. Use it to determine the mass of the cart and compare the result with the weighed mass.",
+          "answer": {
+            "value": 0.1976,
+            "unit": "kg",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope is read from two points of the line far from each other, for example $(0.50; 1.01)$ and $(2.50; 4.91)$: $k \\approx 1.95\\,\\text{N}\\cdot\\text{s}^2$."
+            },
+            {
+              "text": "Interprets the slope: according to the model $k = 4\\pi^2 mr$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$m = \\dfrac{k}{4\\pi^2 r}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$m = \\dfrac{1.95\\,\\text{N}\\cdot\\text{s}^2}{4\\pi^2 \\cdot 0.250\\,\\text{m}} \\approx 0.198\\,\\text{kg}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m \\approx 0.198\\,\\text{kg}$, about $1\\,\\%$ smaller than the weighed mass: the results agree within the accuracy of the measurements"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "According to the manufacturer the string withstands a force of at most $8.0\\,\\text{N}$. What is the shortest period at which the platform may be turned with this cart and distance? Assess how reliable the prediction is.",
+          "answer": {
+            "value": 0.4948,
+            "unit": "s",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "From the line: $F = k \\cdot \\tfrac{1}{T^2}$, so $T_\\text{min} = \\sqrt{\\dfrac{k}{F_\\text{max}}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T_\\text{min} = \\sqrt{\\dfrac{1.95\\,\\text{N}\\cdot\\text{s}^2}{8.0\\,\\text{N}}} \\approx 0.49\\,\\text{s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T_\\text{min} \\approx 0.49\\,\\text{s}$, about $2$ revolutions per second, two significant figures"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The prediction is an extrapolation outside the measured range: $\\tfrac{1}{T^2} \\approx 4.1\\,\\tfrac{1}{\\text{s}^2}$, while the largest measured value is $2.8\\,\\tfrac{1}{\\text{s}^2}$. It holds if the model stays valid."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The uncertainty of ten revolutions timed by hand is about $0.2\\,\\text{s}$; for safety the shortest period should not be used, but a safety margin is left."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "concept": "fy5-4",
+        "math": "fy5-4",
+        "transfer": "fy5-4",
+        "experiment": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s4",
+      "title": "A rotating space station",
+      "source": "example",
+      "source_note": "The design of the space station and its figures are an invented example.",
+      "skills": [
+        "fy5-4",
+        "fy5-6",
+        "fy5-3"
+      ],
+      "text": "On long space flights weightlessness weakens the bones and muscles of astronauts. A science article presents a design for a ring-shaped space station that orbits the Earth at a height of about $400\\,\\text{km}$ and at the same time rotates steadily about its own axis. The radius of the ring is $110\\,\\text{m}$, and the astronauts walk on the inner surface of the outer wall of the ring, which acts as the floor.\n\nThe gravitation of the Earth acts in the same way on the station and on everything inside it, so it can be ignored when studying motions inside the station.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "The article says: “On present-day stations astronauts float, because at a height of $400\\,\\text{km}$ there is no gravity any more.” Assess the claim.",
+          "criteria": [
+            {
+              "text": "Calculates or estimates that the gravitational field strength at a height of $400\\,\\text{km}$ is $\\gamma\\tfrac{M}{(R + h)^2} \\approx 8.7\\,\\text{m/s}^2$, almost $90\\,\\%$ of its value at the surface.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "text": "Explains that gravitation is the only force on the station and the astronaut and keeps them in orbit: without it the station would carry straight on.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Explains weightlessness as free fall: the station and the astronaut get the same acceleration, so the floor does not press on the astronaut and the normal force is zero.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is wrong: gravity acts, but the astronauts fall freely together with the station."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Explain why an astronaut standing on the floor of the rotating ring feels heavy. Which direction is “down” for them? Estimate the period at which the floor presses on the astronaut with as large a force as the surface of the Earth.",
+          "criteria": [
+            {
+              "text": "Explains that the astronaut moves in a circle with the ring, so the net force on them must point to the centre of the ring: it is given by the normal force of the floor, $N = m\\tfrac{v^2}{r}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Explains that the push of the floor on the soles of the feet feels the same as supporting one's weight on the surface of the Earth, so “down” is away from the centre of the ring; there is no outward centrifugal force.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Estimates the period from the condition $\\tfrac{v^2}{r} = g$ and $v = \\tfrac{2\\pi r}{T}$: $T = 2\\pi\\sqrt{\\tfrac{r}{g}} \\approx 21\\,\\text{s}$, about three revolutions per minute.",
+              "tag": "math",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "An astronaut holds a key in their hand and lets go of it. Describe and explain how the key moves as seen from outside the station and what its motion looks like to the astronaut.",
+          "criteria": [
+            {
+              "text": "Explains that after it is released no force acts on the key (the gravitation of the Earth is ignored), so it carries on in a straight line with the velocity it had at the moment of release: along the tangent of the path.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Explains that the floor turns beneath the key until the key hits the floor; to the astronaut the key seems to fall “down” towards the floor.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "No force pushes the key outwards; the key does not accelerate, but the floor comes to meet it."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-4",
+        "math": "fy5-6",
+        "communication": "fy5-4",
+        "transfer": "fy5-3"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s5",
+      "title": "The mass of a stone with a metre stick",
+      "source": "example",
+      "source_note": "The report and its figures are an invented example.",
+      "skills": [
+        "fy5-2",
+        "fy5-1",
+        "fy1-3",
+        "fy1-8"
+      ],
+      "text": "A student determined the mass of a stone with a metre stick and a known weight. An extract from the report:\n\n> I placed the metre stick horizontally on a knife edge. The edge was at the $40.0\\,\\text{cm}$ mark of the stick, because there the stick stayed in place best. I hung the $200\\,\\text{g}$ weight at the $10.0\\,\\text{cm}$ mark and the stone on a string on the other side of the edge. I moved the stone until the stick stayed horizontal: the mark was $82.0\\,\\text{cm}$. From the moment condition $m_\\text{s} \\cdot 42.0\\,\\text{cm} = 200\\,\\text{g} \\cdot 30.0\\,\\text{cm}$, so $m_\\text{s} = 142.857\\,\\text{g}$. The kitchen scale showed $113\\,\\text{g}$ for the stone. The difference is due to the friction of the knife edge.\n\nThe metre stick is uniform, and its mass is $120\\,\\text{g}$. The masses of the strings are negligibly small.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Calculate the mass of the stone from the measurements of the report. Compare the result with the reading of the kitchen scale.",
+          "answer": {
+            "value": 114.3,
+            "unit": "g",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Notices that the weight of the metre stick acts at its centre of gravity at the $50.0\\,\\text{cm}$ mark, $10.0\\,\\text{cm}$ to the right of the edge, and turns the stick in the same direction as the stone.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Moment condition about the edge: $m_\\text{p} g \\cdot 30.0\\,\\text{cm} = m_\\text{s} g \\cdot 42.0\\,\\text{cm} + m_\\text{m} g \\cdot 10.0\\,\\text{cm}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$m_\\text{s} \\cdot 42.0\\,\\text{cm} = 200\\,\\text{g} \\cdot 30.0\\,\\text{cm} - 120\\,\\text{g} \\cdot 10.0\\,\\text{cm}$, so $m_\\text{s} \\approx 114\\,\\text{g}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m_\\text{s} \\approx 114\\,\\text{g}$ to three significant figures"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The result differs from the reading of the scale by only about $1\\,\\%$, so the correctly calculated result agrees with the accuracy of the measurement."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Assess the conclusion of the report and the reliability of the measurement. Name the shortcomings of the report and justify them.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "The main cause is a systematic error in the calculation: the moment of the metre stick's own weight was left out, because the support was not at the centre of gravity of the stick. It explains almost all of the $26\\,\\%$ difference."
+            },
+            {
+              "text": "Justifies that friction does not explain the difference: friction at the edge would make the balance point slightly uncertain in both directions, but it would not cause a large error in one direction, and the report gives no grounds for friction.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The report has no uncertainty: reading the balance point to about $\\pm 0.5\\,\\text{cm}$ gives about $\\pm 1.5\\,\\text{g}$ in the mass, so $142.857\\,\\text{g}$ gives too many figures."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The conclusion is wrong: the difference is due to a model that left out the weight of the metre stick, and the measurement was made only once."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Plan an improved experiment that gives the mass of the stone reliably with the same equipment. Say what is measured, what is kept constant and how the result is determined.",
+          "criteria": [
+            {
+              "text": "Removes or takes into account the moment of the metre stick's weight: the support at the centre of gravity of the stick, $50.0\\,\\text{cm}$, or the weight of the stick included in the moment condition.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Repeats the measurement with several positions of the weight or with several weights and finds the balance point of the stone each time; the support and the string of the stone stay the same.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Determines the result from a graph: for example, the moment of the weight $m_\\text{p} d_\\text{p}$ as a function of the lever arm of the stone $d_\\text{s}$ is a straight line whose slope is $m_\\text{s}$ and whose constant term is the moment of the stick's weight.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Estimates the uncertainty from the scatter of the points or from the steepest and the least steep line, and compares the result with the reading of the scale with their uncertainties."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-2",
+        "math": "fy5-2",
+        "experiment": "fy1-8",
+        "graph": "fy1-4",
+        "communication": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s6",
+      "title": "The loop of a roller coaster",
+      "source": "example",
+      "source_note": "The roller coaster and its figures are an invented example. The loop is modelled as a circle.",
+      "skills": [
+        "fy5-4",
+        "fy4-8",
+        "fy4-7"
+      ],
+      "text": "On a new roller coaster in an amusement park the car starts from rest at the top of the first hill and runs down to the bottom of a loop. The loop is vertical, and the designer models it as a circle. The top of the first hill is $30.0\\,\\text{m}$ above the bottom of the loop, and the radius of the circle is $10.0\\,\\text{m}$. According to measurements, friction and air resistance turn $12\\,\\%$ of the car's mechanical energy into internal energy on the way from the first hill to the bottom of the loop. In the loop so little energy is converted that it is not taken into account. The mass of a passenger is $60.0\\,\\text{kg}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large is the speed of the car at the bottom of the loop?",
+          "answer": {
+            "value": 22.76,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies the work–energy principle: $88\\,\\%$ of the potential energy turns into kinetic energy, because $12\\,\\%$ turns into internal energy.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac12 mv_\\text{b}^2 = 0.88 \\cdot mgh$, so $v_\\text{b} = \\sqrt{2 \\cdot 0.88 \\cdot gh}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v_\\text{b} = \\sqrt{2 \\cdot 0.88 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 30.0\\,\\text{m}} \\approx 22.8\\,\\text{m/s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{b} \\approx 22.8\\,\\text{m/s}$, about $82\\,\\text{km/h}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large a force does the seat exert on the passenger at the bottom of the loop? How many times the passenger's weight is the force?",
+          "answer": {
+            "value": 3696,
+            "unit": "N",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "On the passenger act the weight $\\overline{G}$ down and the normal force $\\overline{N}$ of the seat up towards the centre of the loop; no centrifugal force is drawn."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$N - mg = m\\dfrac{v_\\text{b}^2}{r}$, so $N = m\\left(g + \\dfrac{v_\\text{b}^2}{r}\\right)$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$N = 60.0\\,\\text{kg} \\cdot (9.81 + 51.8)\\,\\text{m/s}^2 \\approx 3700\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$N \\approx 3.70\\,\\text{kN}$, about $6.3$ times the weight"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large is the speed of the car at the top of the loop? Does the seat press on the passenger at the top, and with how large a force?",
+          "answer": [
+            {
+              "name": "v",
+              "value": 11.21,
+              "unit": "m/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "N",
+              "value": 164.8,
+              "unit": "N",
+              "tolerance": 0.04
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac12 mv_\\text{b}^2 = \\tfrac12 mv_\\text{t}^2 + mg \\cdot 2r$ and at the top $N + mg = m\\dfrac{v_\\text{t}^2}{r}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v_\\text{t} = \\sqrt{518\\,\\text{m}^2/\\text{s}^2 - 392\\,\\text{m}^2/\\text{s}^2} \\approx 11.2\\,\\text{m/s}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$N = 60.0\\,\\text{kg} \\cdot (12.56 - 9.81)\\,\\text{m/s}^2 \\approx 165\\,\\text{N}$"
+            },
+            {
+              "text": "Interprets the result: $N > 0$, so the seat presses on the passenger even at the top, but only with about $0.28$ times the weight; the condition $v_\\text{t}^2 \\ge gr$ is met.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Modern loops are not circles: their radius of curvature is small at the top and large in the lower part. Use your results to explain why such a shape is better for the passenger.",
+          "criteria": [
+            {
+              "text": "Explains the lower part: a larger radius of curvature reduces the centripetal acceleration $\\tfrac{v^2}{r}$ and so the force of the seat, which in the circle model was calculated to be over six times the weight.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Explains the top: with a small radius the condition $v^2 \\ge gr$ is met even at a lower speed, so the loop can be made higher or the first hill lower without the passenger leaving the seat.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The shape evens out the force of the seat at different points of the loop."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-4",
+        "math": "fy4-8",
+        "transfer": "fy5-4",
+        "communication": "fy5-4"
+      }
+    }
+  ]
+}

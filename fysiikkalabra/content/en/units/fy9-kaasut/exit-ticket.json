@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A tyre pressure gauge shows $220\\,\\text{kPa}$, and the air pressure is $101\\,\\text{kPa}$. Which pressure of the air in the tyre is substituted into the ideal gas law?",
+    "a": "The total pressure $p = p_0 + \\Delta p = 101\\,\\text{kPa} + 220\\,\\text{kPa} = 321\\,\\text{kPa} = 321\\,000\\,\\text{Pa}$. The gauge shows only the gauge pressure, but the collisions of the particles produce the whole pressure."
+  },
+  {
+    "q": "Why can the coefficient of performance of a heat pump be over $1$, even though the efficiency of a heat engine is always below $1$?",
+    "a": "A heat pump does not turn heat into work; it uses electricity to move heat from the outside air indoors. Indoors there arrive the electrical energy and the heat moved from outside together, so the heat is greater than the electricity. Energy is still conserved: nothing is created out of nothing."
+  }
+]

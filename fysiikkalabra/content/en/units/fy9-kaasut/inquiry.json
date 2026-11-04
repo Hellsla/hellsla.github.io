@@ -1,0 +1,522 @@
+{
+  "version": 1,
+  "contribution": "The review lesson brings together the FY3 module's pressure and hydrostatic pressure, Boyle's law and changes of state of a gas, the ideal gas law, determining absolute zero, and the work done by a gas and the heat engine into one model, and practises matriculation-exam-style problems on them: total pressure and gauge pressure, kelvin temperatures, extending the straight line of measured data, the work done by a gas and the energy flows of a heat engine, and the force of pressure together with the forces of FY4.",
+  "learn": [
+    "solve pressure, gas and heat engine problems with kelvin temperatures and total pressure",
+    "draw and interpret graphs of measured gas data and their extensions",
+    "evaluate the assumptions of gas models, measurement reports and inventors' claims with justification"
+  ],
+  "prior": [
+    "Pressure is force divided by area, and in a liquid it increases with depth (chapter *Pressure and hydrostatic pressure*)",
+    "At constant temperature the pressure of an enclosed gas is inversely proportional to its volume (chapter *Changes of state of a gas and Boyle's law*)",
+    "The ideal gas law $pV = nRT$ links pressure, volume, amount of substance and kelvin temperature (chapter *Ideal gas law $pV = nRT$*)",
+    "Absolute zero is estimated by extending the straight line of the measurements to zero pressure (chapter *Determining absolute zero*)",
+    "A heat engine turns part of the heat into work and gives the rest to a colder place (chapter *Work done by a gas and the heat engine*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The car's tyres were pumped up in the evening in a warm garage at $+20\\,{}^\\circ\\text{C}$. The tyre pressure gauge showed $230\\,\\text{kPa}$, as the car's manual advises. During the night the car stood in the yard in a frost of $-20\\,{}^\\circ\\text{C}$, and no air leaked from the tyres. The air pressure is $101\\,\\text{kPa}$. In the matriculation exam a situation like this can be the start of a problem: the numbers are given, but the formulas are not.",
+      "question": "What does the gauge show in the morning, and why does the reading change proportionally more than the kelvin temperature?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 1: snowshoes",
+      "prompt": "A hiker stands in deep snow, first in ordinary boots and then on snowshoes whose sole area is about five times as large. In boots he sinks, on snowshoes he does not. Which explanation is correct?",
+      "choices": [
+        {
+          "text": "On snowshoes the snow supports him with a smaller force than in boots.",
+          "feedback": "He stands still both times, so the normal force from the snow is equal to his weight. What changes is the area over which the same force is spread: the pressure $p = F/A$ decreases. Review the chapter *Pressure and hydrostatic pressure*."
+        },
+        {
+          "text": "The same force is spread over a larger area, so the pressure decreases.",
+          "feedback": "Correct. The normal force is the same, but on five times the area the pressure is about a fifth, and the snow no longer gives way. If needed, review the chapter *Pressure and hydrostatic pressure*.",
+          "correct": true
+        },
+        {
+          "text": "The pressure stays the same, because his weight does not change at all.",
+          "feedback": "The weight does not change, but pressure is force divided by area, $p = F/A$. Five times the area gives about a fifth of the pressure. Review the chapter *Pressure and hydrostatic pressure*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 2: narrow and wide",
+      "prompt": "A narrow pipe and a wide pool are filled with water to the same height, $2.0\\,\\text{m}$. The pool holds a thousand times more water. Where is the water pressure at the bottom greater?",
+      "choices": [
+        {
+          "text": "In the pool, because it holds a thousand times more water.",
+          "feedback": "The water in the pool weighs more, but the weight is also spread over a bottom a thousand times larger. The pressure at the bottom is $p_0 + \\rho g h$: it depends only on the depth and the density. Review the chapter *Pressure and hydrostatic pressure*."
+        },
+        {
+          "text": "In the pipe, because the water is much more cramped there.",
+          "feedback": "Being cramped does not increase the pressure. The bottom bears the weight of the water column above it, and the height of the column is $2.0\\,\\text{m}$ in both. Review the chapter *Pressure and hydrostatic pressure*."
+        },
+        {
+          "text": "Equal, because the pressure depends only on the depth.",
+          "feedback": "Correct. $p = p_0 + \\rho g h$, and the depth and density are the same, so the pressure is the same whatever the shape of the container. If needed, review the chapter *Pressure and hydrostatic pressure*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 3: compressed air",
+      "prompt": "The air in a closed syringe is slowly compressed to a third of its original volume, and the temperature of the air stays the same. How does the pressure of the air change?",
+      "choices": [
+        {
+          "text": "The pressure becomes three times as large.",
+          "feedback": "Correct. At constant temperature $p_1V_1 = p_2V_2$, so at a third of the volume the pressure is three times as large. The same particles hit the walls three times as often. If needed, review the chapter *Changes of state of a gas and Boyle's law*.",
+          "correct": true
+        },
+        {
+          "text": "The pressure decreases to a third of its initial value.",
+          "feedback": "Pressure and volume change in opposite directions: when the volume decreases, the same particles hit the walls more often and the pressure increases. $p_2 = p_1V_1/V_2 = 3p_1$. Review the chapter *Changes of state of a gas and Boyle's law*."
+        },
+        {
+          "text": "The pressure stays the same, because $T$ is constant.",
+          "feedback": "A constant temperature means that the particles move equally fast, but in a smaller space they hit the walls more often. According to Boyle's law $pV$ stays constant, not $p$. Review the chapter *Changes of state of a gas and Boyle's law*."
+        },
+        {
+          "text": "The pressure becomes nine times as large.",
+          "feedback": "Pressure is inversely proportional to the volume, not to its square: $p_2 = p_1 \\cdot V_1/V_2 = 3p_1$. Review the chapter *Changes of state of a gas and Boyle's law*."
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 4: a heated bottle",
+      "prompt": "The air in a closed, rigid glass bottle warms from $20\\,{}^\\circ\\text{C}$ to $40\\,{}^\\circ\\text{C}$. How does the pressure of the air change?",
+      "choices": [
+        {
+          "text": "The pressure doubles, because the temperature doubles.",
+          "feedback": "The pressure is proportional to the kelvin temperature, and that rises only from $293\\,\\text{K}$ to $313\\,\\text{K}$, that is, by about $7\\,\\%$. The ratio of degrees Celsius tells nothing, because the zero of the scale is chosen by convention. Review the chapter *Changes of state of a gas and Boyle's law*."
+        },
+        {
+          "text": "The pressure stays the same, because there is as much air as before.",
+          "feedback": "There is as much air, but warm particles move faster and hit the walls more often and harder. At constant volume $p_1/T_1 = p_2/T_2$. Review the chapter *Changes of state of a gas and Boyle's law*."
+        },
+        {
+          "text": "The pressure decreases, because warm air is less dense.",
+          "feedback": "Warm air is less dense only if it can expand. In a rigid bottle the volume stays the same, so the pressure increases with the kelvin temperature. Review the chapter *Changes of state of a gas and Boyle's law*."
+        },
+        {
+          "text": "The pressure increases by about $7\\,\\%$, like the kelvin temperature.",
+          "feedback": "Correct. $p_2/p_1 = T_2/T_1 = 313\\,\\text{K} : 293\\,\\text{K} \\approx 1.07$. If needed, review the chapter *Changes of state of a gas and Boyle's law*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 5: helium and carbon dioxide",
+      "prompt": "Two balloons of the same size are filled at the same pressure and the same temperature, one with helium and the other with carbon dioxide. Which balloon contains more gas in moles?",
+      "choices": [
+        {
+          "text": "The carbon dioxide balloon, because it is heavier.",
+          "feedback": "The carbon dioxide balloon is heavier because its particles are heavier, not because there are more of them. $n = pV/(RT)$ does not depend on the kind of gas. Review the chapter *Ideal gas law $pV = nRT$*."
+        },
+        {
+          "text": "The same amount, because $p$, $V$ and $T$ are the same.",
+          "feedback": "Correct. From the ideal gas law $n = \\dfrac{pV}{RT}$, and the kind of gas does not appear in it. The masses differ, because the molar masses differ. If needed, review the chapter *Ideal gas law $pV = nRT$*.",
+          "correct": true
+        },
+        {
+          "text": "The helium balloon, because helium particles are smaller.",
+          "feedback": "In an ideal gas the size of the particles does not matter: they are far apart, and the amount of substance is $n = pV/(RT)$ for all gases. Review the chapter *Ideal gas law $pV = nRT$*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Starting point 6: the perfect engine",
+      "prompt": "An engineer says: “When all friction is removed from an engine, it turns all the heat it gets from the fuel into work.” Which assessment is correct?",
+      "choices": [
+        {
+          "text": "The claim holds, because energy is always fully conserved.",
+          "feedback": "Conservation of energy would allow it, but it is not enough: a heat engine must give part of the heat to a colder environment so that it can repeat its cycle. Review the chapter *Work done by a gas and the heat engine*."
+        },
+        {
+          "text": "The claim does not hold, because a little energy is always lost.",
+          "feedback": "Energy is never lost. The claim does not hold because part of the heat must be given to a colder environment, and this heat is still energy. Review the chapter *Work done by a gas and the heat engine*."
+        },
+        {
+          "text": "The claim does not hold: part of the heat goes to a colder place.",
+          "feedback": "Correct. Even a frictionless heat engine must give the heat $Q_2$ to a colder place, so $W = Q_1 - Q_2 < Q_1$. If needed, review the chapter *Work done by a gas and the heat engine*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Two rigid containers",
+      "source": "example",
+      "figure": "fy3-10/pt-suorat",
+      "text": "The graph shows the pressure of the gas in two identical, closed, rigid containers as a function of kelvin temperature as the containers are heated. The volume of each container is $2.0\\,\\textsf{l}$. Read the pressure of gas A at one temperature from the graph and calculate how much gas there is in container A.",
+      "question": {
+        "type": "numeric",
+        "prompt": "What is the amount of substance $n_\\text{A}$ of the gas in container A? Answer in moles.",
+        "answer": 0.06017,
+        "unit": "mol",
+        "tolerance": 0.03,
+        "hints": [
+          "Choose a point on the line where grid lines cross, for example at the temperature $200\\,\\text{K}$.",
+          "Solve the amount of substance $n$ from the ideal gas law $pV = nRT$, and convert the pressure to pascals and the volume to cubic metres.",
+          "On the line of gas A at the temperature $200\\,\\text{K}$ the pressure is $50\\,\\text{kPa} = 50\\,000\\,\\text{Pa}$, and $2.0\\,\\textsf{l} = 0.0020\\,\\text{m}^3$."
+        ],
+        "mistakes": [
+          {
+            "value": 6.017e-05,
+            "feedback": "The pressure was in kilopascals but the volume in cubic metres. Convert the pressure to pascals: $50\\,\\text{kPa} = 50\\,000\\,\\text{Pa}$."
+          },
+          {
+            "value": 60.17,
+            "feedback": "The pressure was in pascals but the volume in litres. Convert the volume to cubic metres: $2.0\\,\\textsf{l} = 0.0020\\,\\text{m}^3$."
+          },
+          {
+            "value": 0.0361,
+            "feedback": "This is the amount of substance in container B. The line of gas A is steeper: at the temperature $200\\,\\text{K}$ its pressure is $50\\,\\text{kPa}$."
+          },
+          {
+            "value": 0.03008,
+            "feedback": "You read the pressure and the temperature from different points. The pressure and the temperature must be read from the same point of the line, for example $(200\\,\\text{K};\\ 50\\,\\text{kPa})$."
+          }
+        ],
+        "solution": "**Given:** from the graph, the point $T = 200\\,\\text{K}$, $p = 50\\,\\text{kPa}$ on the line of gas A (and $400\\,\\text{K}$, $100\\,\\text{kPa}$); volume of the container $V = 2.0\\,\\textsf{l}$; $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$\n\n**Find:** the amount of substance $n_\\text{A}$ of the gas in container A, in moles\n\n**Principle:** The container is closed and rigid, so the amount of gas and the volume stay the same, and the state of the gas follows the ideal gas law. Any point on the line gives the same amount of substance, because $p/T$ is constant along the line (chapter *Ideal gas law $pV = nRT$*).\n\n**Reading the graph:** The line of gas A passes through the grid crossings $(200\\,\\text{K};\\ 50\\,\\text{kPa})$ and $(400\\,\\text{K};\\ 100\\,\\text{kPa})$. The first point is used.\n\n**Formula:** $pV = nRT$, so $n_\\text{A} = \\dfrac{pV}{RT}$\n\n**Conversions:** $50\\,\\text{kPa} = 50 \\cdot 1000\\,\\text{Pa} = 50\\,000\\,\\text{Pa}$ and $2.0\\,\\textsf{l} = 2.0 \\cdot 0.001\\,\\text{m}^3 = 0.0020\\,\\text{m}^3$. The temperature is already in kelvins.\n\n**Substitution:** $n_\\text{A} = \\dfrac{50\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 200\\,\\text{K}} = \\dfrac{100\\,\\text{J}}{1662\\,\\tfrac{\\text{J}}{\\text{mol}}} = 0.0602\\,\\text{mol}$\n\n**Answer:** $n_\\text{A} \\approx 0.060\\,\\text{mol}$, two significant figures like the volume $2.0\\,\\textsf{l}$.\n\n**Reasonableness:** The other point gives the same: $100\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3 : (8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 400\\,\\text{K}) = 0.0602\\,\\text{mol}$. The line of container B is less steep, $30\\,\\text{kPa}$ at the temperature $200\\,\\text{K}$, so it holds $\\tfrac{30}{50}$ times as much gas, about $0.036\\,\\text{mol}$. The extension of each line passes through the origin, because $p = \\tfrac{nR}{V}\\,T$ is directly proportional to the kelvin temperature; a real gas would condense into a liquid before zero."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "celsius",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake: a warm bottle",
+      "prompt": "A student calculated how high the pressure of the air in a closed glass bottle rises when the bottle warms in the sun from $20\\,{}^\\circ\\text{C}$ to $60\\,{}^\\circ\\text{C}$. At the start the pressure was $100\\,\\text{kPa}$: “$p_2 = p_1 \\cdot \\tfrac{T_2}{T_1} = 100\\,\\text{kPa} \\cdot \\tfrac{60}{20} = 300\\,\\text{kPa}$.” What is wrong in the solution?",
+      "choices": [
+        {
+          "text": "The pressure decreases as the bottle warms, so the correct result is $33\\,\\text{kPa}$.",
+          "feedback": "In a rigid bottle the pressure increases with the temperature, because the particles move faster. The formula is correct; the mistake is that the temperatures are in degrees Celsius."
+        },
+        {
+          "text": "The temperatures must be converted to kelvins: $p_2 \\approx 114\\,\\text{kPa}$.",
+          "feedback": "Correct. $p_2 = 100\\,\\text{kPa} \\cdot \\tfrac{333\\,\\text{K}}{293\\,\\text{K}} \\approx 114\\,\\text{kPa}$. The proportionality starts from absolute zero, so the ratio is calculated from kelvins.",
+          "correct": true
+        },
+        {
+          "text": "The solution is correct, because the degrees cancel out of the ratio.",
+          "feedback": "The units cancel, but the ratio of degrees Celsius $60 : 20$ is not the real ratio of the temperatures, because the zero of the Celsius scale is not absolute zero. In kelvins the ratio is only $333 : 293$."
+        }
+      ]
+    },
+    {
+      "id": "kuvaaja",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Which graph?",
+      "prompt": "A student measures the pressure $p$ of air enclosed in a syringe at different volumes $V$ at constant temperature. Which way of drawing the graph shows directly that the pressure is inversely proportional to the volume?",
+      "choices": [
+        {
+          "text": "A $(V, p)$ graph in which the points lie on a steadily falling straight line",
+          "feedback": "A falling straight line would mean that the pressure decreases by the same amount for each increase in volume. In inverse proportionality the $(V, p)$ points lie on a curve, and a straight line appears only with the variable $1/V$."
+        },
+        {
+          "text": "A $(V, p)$ graph in which the points lie on a falling curve",
+          "feedback": "Inverse proportionality gives a falling curve, but so do many other relationships. From the curve you cannot see whether it is exactly of the form $p = \\text{constant}/V$. Plot $p$ as a function of the variable $1/V$."
+        },
+        {
+          "text": "A $(1/V, p)$ graph in which the points lie on a straight line through the origin",
+          "feedback": "Correct. From Boyle's law $p = \\text{constant} \\cdot \\tfrac{1}{V}$, so the $(1/V, p)$ points lie, within the measurement uncertainty, on a straight line through the origin whose slope is $pV$.",
+          "correct": true
+        },
+        {
+          "text": "A $(1/V, p)$ graph in which the points lie on a horizontal straight line",
+          "feedback": "A horizontal straight line would mean that the pressure does not change at all with the volume. In inverse proportionality $p$ increases in direct proportion to the variable $1/V$."
+        }
+      ]
+    },
+    {
+      "id": "mittari",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Justified claim: an empty gas canister",
+      "prompt": "The gas canister of a camping stove has been used up, and its valve is open to the outside air. The pressure gauge attached to the canister shows $0\\,\\text{kPa}$. Which claim is justified?",
+      "choices": [
+        {
+          "text": "There is no gas left in the canister at all, because the pressure is now zero.",
+          "feedback": "The gauge shows the gauge pressure, that is, how much greater the pressure is than the air pressure. The reading $0\\,\\text{kPa}$ means that the pressure in the canister is the same as the air pressure, about $101\\,\\text{kPa}$, and there is gas in the canister."
+        },
+        {
+          "text": "There is a partial vacuum in the canister, because the gas has been used up completely.",
+          "feedback": "When the valve is open, gas flows until the pressures are equal. So the pressure in the canister is the air pressure, not lower; with a partial vacuum the gauge would show a negative reading."
+        },
+        {
+          "text": "There is still gas in the canister: the gauge shows only the gauge pressure.",
+          "feedback": "Correct. The total pressure is $p = p_0 + \\Delta p = 101\\,\\text{kPa} + 0\\,\\text{kPa}$. The total pressure is always substituted into the ideal gas law, so the canister holds gas $n = p_0V/(RT)$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "tyo",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Read the graph: work done by a gas",
+      "figure": "fy3-11/pv-isobaari",
+      "prompt": "In the graph the pressure of the gas in a cylinder stays constant as the gas expands and pushes a piston. How much work does the gas do on the piston?",
+      "choices": [
+        {
+          "text": "$1000\\,\\text{J}$",
+          "feedback": "You multiplied the pressure by the final volume $4.0\\,\\textsf{l}$. The work is the area under the graph over the expansion, that is, the pressure times the *change* in volume $3.0\\,\\textsf{l}$."
+        },
+        {
+          "text": "$750\\,\\text{J}$",
+          "feedback": "Correct. $W_\\text{k} = p\\,\\Delta V = 250\\,\\text{kPa} \\cdot 3.0\\,\\textsf{l} = 250\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 750\\,\\text{J}$, the rectangle under the graph.",
+          "correct": true
+        },
+        {
+          "text": "$0\\,\\text{J}$",
+          "feedback": "Constant pressure does not mean that no work is done. Work is done when the volume changes and the piston moves: $W_\\text{k} = p\\,\\Delta V$."
+        },
+        {
+          "text": "$750\\,\\text{kJ}$",
+          "feedback": "You calculated $750$ correctly with kilopascals and litres, but the unit is the joule: $1\\,\\text{kPa} \\cdot 1\\,\\textsf{l} = 1000\\,\\text{Pa} \\cdot 0.001\\,\\text{m}^3 = 1\\,\\text{J}$."
+        }
+      ]
+    },
+    {
+      "id": "luukku",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The service hatch of a diving pool",
+      "prompt": "At the bottom of the diving pool of a swimming hall, at a depth of $5.0\\,\\text{m}$, there is a square service hatch with a side of $0.60\\,\\text{m}$. Under the hatch is a service room with the same air pressure as in the hall. What is the total force exerted on the hatch by the water and the air? Answer in kilonewtons.",
+      "answer": 17.66,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "hints": [
+        "The air pressure presses on the hatch from above through the water and from below from the service room. Which part of the pressure is left?",
+        "The gauge pressure at the depth $h$ is $\\rho g h$, and the force is the pressure times the area.",
+        "The area of the hatch is $A = (0.60\\,\\text{m})^2$. First calculate the gauge pressure in pascals and then multiply it by the area."
+      ],
+      "mistakes": [
+        {
+          "value": 54.02,
+          "feedback": "You used the total pressure $p_0 + \\rho g h$. The air pressure also acts on the hatch from below, so its forces cancel each other out: what is left is the force of the gauge pressure."
+        },
+        {
+          "value": 29.43,
+          "feedback": "You multiplied the pressure by the side of the hatch $0.60\\,\\text{m}$. The force is the pressure times the area: $A = 0.60\\,\\text{m} \\cdot 0.60\\,\\text{m} = 0.36\\,\\text{m}^2$."
+        },
+        {
+          "value": 1.8,
+          "feedback": "You forgot the acceleration due to gravity. The gauge pressure is $\\rho g h$, and $g = 9.81\\,\\text{m/s}^2$."
+        }
+      ],
+      "solution": "**Given:** depth $h = 5.0\\,\\text{m}$, side of the hatch $a = 0.60\\,\\text{m}$, density of water $\\rho = 1000\\,\\text{kg/m}^3$, $g = 9.81\\,\\text{m/s}^2$; the same air pressure at the water surface and under the hatch\n\n**Find:** the total force $F$ on the hatch in kilonewtons\n\n**Principle:** The water is at rest, so the pressure on the upper surface of the hatch is $p_0 + \\rho g h$. From below the air pressure $p_0$ acts on the hatch. The forces of the air pressure cancel each other out, so the total force comes from the gauge pressure $\\rho g h$, and it is perpendicular to the hatch, that is, downwards (chapter *Pressure and hydrostatic pressure*).\n\n**Formula:** $\\Delta p = \\rho g h$ and $p = \\dfrac{F}{A}$, so $F = \\rho g h\\,a^2$\n\n**Conversions:** All quantities are in base units. At the end $1\\,\\text{N} = 0.001\\,\\text{kN}$.\n\n**Substitution:** $F = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 9.81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 5.0\\,\\text{m} \\cdot (0.60\\,\\text{m})^2 = 49\\,050\\,\\text{Pa} \\cdot 0.36\\,\\text{m}^2 = 17\\,658\\,\\text{N} = 17.7\\,\\text{kN}$\n\n**Answer:** $F \\approx 18\\,\\text{kN}$, two significant figures like the depth $5.0\\,\\text{m}$ and the side $0.60\\,\\text{m}$.\n\n**Reasonableness:** Above the hatch is a water column of $0.36\\,\\text{m}^2 \\cdot 5.0\\,\\text{m} = 1.8\\,\\text{m}^3$, whose mass is $1800\\,\\text{kg}$ and weight about $18\\,\\text{kN}$: the same result. The force is about the weight of one large car, so the hatch must be made sturdy."
+    },
+    {
+      "id": "pumppu",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The gauge of a bicycle pump",
+      "prompt": "The cylinder of a bicycle pump holds $0.30\\,\\textsf{l}$ of air at the air pressure $101\\,\\text{kPa}$. The nozzle of the pump is blocked, and the piston is pushed slowly so that the volume of the air decreases to $0.12\\,\\textsf{l}$. The temperature stays the same. The pump's pressure gauge shows the gauge pressure. What does the gauge show? Answer in kilopascals.",
+      "answer": 151.5,
+      "unit": "kPa",
+      "tolerance": 0.02,
+      "hints": [
+        "The temperature and the amount of air stay the same. Which law applies?",
+        "Boyle's law uses the total pressure. The gauge shows the difference between the total pressure and the air pressure.",
+        "$p_2 = \\dfrac{101\\,\\text{kPa} \\cdot 0.30\\,\\textsf{l}}{0.12\\,\\textsf{l}}$, and the gauge reading is $p_2 - 101\\,\\text{kPa}$."
+      ],
+      "mistakes": [
+        {
+          "value": 252.5,
+          "feedback": "This is the total pressure of the air. The gauge shows the gauge pressure, so subtract the air pressure: $\\Delta p = p_2 - p_0$."
+        },
+        {
+          "value": 40.4,
+          "feedback": "You multiplied the wrong way round. When the volume decreases, the pressure increases: $p_2 = p_1 \\cdot \\tfrac{V_1}{V_2}$, and $\\tfrac{V_1}{V_2} = 2.5$."
+        },
+        {
+          "value": 100.0,
+          "feedback": "The total pressure is substituted into Boyle's law, not the gauge pressure. At the start the total pressure is $101\\,\\text{kPa}$, even though the gauge then shows zero."
+        }
+      ],
+      "solution": "**Given:** initial volume $V_1 = 0.30\\,\\textsf{l}$, initial pressure $p_1 = 101\\,\\text{kPa}$ (air pressure), final volume $V_2 = 0.12\\,\\textsf{l}$; constant temperature\n\n**Find:** the gauge reading, that is, the gauge pressure $\\Delta p$ in kilopascals\n\n**Principle:** The nozzle is blocked, so the amount of air stays the same, and the slow compression keeps the temperature constant. Then Boyle's law applies, and the total pressure is substituted into it. The gauge shows the difference between the total pressure and the air pressure (chapter *Changes of state of a gas and Boyle's law*).\n\n**Formula:** $p_1V_1 = p_2V_2$, so $p_2 = \\dfrac{p_1V_1}{V_2}$ and $\\Delta p = p_2 - p_1 = \\dfrac{p_1V_1}{V_2} - p_1$\n\n**Conversions:** Not needed: the litres cancel, and the pressure comes out directly in kilopascals.\n\n**Substitution:** $p_2 = \\dfrac{101\\,\\text{kPa} \\cdot 0.30\\,\\textsf{l}}{0.12\\,\\textsf{l}} = 252.5\\,\\text{kPa}$ and $\\Delta p = 252.5\\,\\text{kPa} - 101\\,\\text{kPa} = 151.5\\,\\text{kPa}$\n\n**Answer:** The gauge shows about $150\\,\\text{kPa}$, two significant figures like the volumes $0.30\\,\\textsf{l}$ and $0.12\\,\\textsf{l}$.\n\n**Reasonableness:** The volume decreases by a factor of $2.5$, so the total pressure becomes $2.5$ times as large, about $250\\,\\text{kPa}$. The gauge pressure is smaller than this by the air pressure. The reading is of the usual order of magnitude for a bicycle tyre."
+    },
+    {
+      "id": "pallo",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Hot-air balloon",
+      "prompt": "The envelope of a hot-air balloon is open at the bottom, so inside the balloon the pressure is the same as outside, $100\\,\\text{kPa}$. The volume of the envelope is $2800\\,\\text{m}^3$. The air inside the envelope is heated from $10\\,{}^\\circ\\text{C}$ to $100\\,{}^\\circ\\text{C}$. The molar mass of air is $29.0\\,\\text{g/mol}$. How many kilograms of air leave the balloon during the heating?",
+      "answer": 832.3,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "The pressure and the volume stay the same, but the amount of air changes. Calculate the mass of air in the envelope before and after the heating.",
+        "From the ideal gas law and the amount of substance $n = m/M$ you get $m = \\dfrac{pVM}{RT}$, with $T$ in kelvins.",
+        "Calculate the mass at the temperatures $T_1 = 283.15\\,\\text{K}$ and $T_2 = 373.15\\,\\text{K}$. The mass that leaves is their difference; remember $M = 0.0290\\,\\text{kg/mol}$."
+      ],
+      "mistakes": [
+        {
+          "value": 87942,
+          "feedback": "You used degrees Celsius. In the ideal gas law the temperature is always in kelvins: $10\\,{}^\\circ\\text{C} = 283.15\\,\\text{K}$ and $100\\,{}^\\circ\\text{C} = 373.15\\,\\text{K}$."
+        },
+        {
+          "value": 3451,
+          "feedback": "This is the air in the envelope at the start. The question asks for the part that leaves during the heating, that is, the difference of the masses before and after the heating."
+        },
+        {
+          "value": 2619,
+          "feedback": "This is the air that stays in the envelope. The air that leaves is the difference between the initial mass and this."
+        },
+        {
+          "value": 28701,
+          "feedback": "This is the amount of substance that leaves, in moles. Convert it to a mass: $m = nM$, with $M = 0.0290\\,\\text{kg/mol}$."
+        }
+      ],
+      "solution": "**Given:** pressure $p = 100\\,\\text{kPa}$ (the same before and after), volume $V = 2800\\,\\text{m}^3$, temperatures $\\theta_1 = 10\\,{}^\\circ\\text{C}$ and $\\theta_2 = 100\\,{}^\\circ\\text{C}$, molar mass $M = 29.0\\,\\text{g/mol}$, $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$\n\n**Find:** the mass $\\Delta m$ of the air that leaves, in kilograms\n\n**Principle:** The envelope is open, so inside there is always the pressure of the outside air, and the volume of the envelope stays the same. When the air warms, fewer particles fit into the same volume at the same pressure, and the surplus flows out at the bottom. The air is described as an ideal gas, which suits ordinary pressure (chapter *Ideal gas law $pV = nRT$*).\n\n**Formula:** $pV = nRT$ and $n = \\dfrac{m}{M}$, so $m = \\dfrac{pVM}{RT}$ and $\\Delta m = \\dfrac{pVM}{R}\\left(\\dfrac{1}{T_1} - \\dfrac{1}{T_2}\\right)$\n\n**Conversions:** $p = 100 \\cdot 1000\\,\\text{Pa} = 100\\,000\\,\\text{Pa}$, $M = 29.0 \\cdot 0.001\\,\\text{kg/mol} = 0.0290\\,\\text{kg/mol}$, $T_1 = (10 + 273.15)\\,\\text{K} = 283.15\\,\\text{K}$ and $T_2 = (100 + 273.15)\\,\\text{K} = 373.15\\,\\text{K}$\n\n**Substitution:** $m_1 = \\dfrac{100\\,000\\,\\text{Pa} \\cdot 2800\\,\\text{m}^3 \\cdot 0.0290\\,\\tfrac{\\text{kg}}{\\text{mol}}}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 283.15\\,\\text{K}} = 3451\\,\\text{kg}$ and $m_2 = m_1 \\cdot \\dfrac{T_1}{T_2} = 3451\\,\\text{kg} \\cdot \\dfrac{283.15\\,\\text{K}}{373.15\\,\\text{K}} = 2619\\,\\text{kg}$, so $\\Delta m = 3451\\,\\text{kg} - 2619\\,\\text{kg} = 832\\,\\text{kg}$\n\n**Answer:** $\\Delta m \\approx 830\\,\\text{kg}$. The pressure $100\\,\\text{kPa}$, the volume $2800\\,\\text{m}^3$ and the temperature $10\\,{}^\\circ\\text{C}$ are given to about two significant figures, so the result is given to two significant figures, even though the molar mass $29.0\\,\\text{g/mol}$ is more precise.\n\n**Reasonableness:** About a quarter of the air leaves, because the kelvin temperature increases in the ratio $373 : 283 \\approx 1.32$ and the mass decreases in the ratio $283 : 373 \\approx 0.76$. The initial mass $3450\\,\\text{kg}$ corresponds to an air density of $3450\\,\\text{kg} : 2800\\,\\text{m}^3 \\approx 1.2\\,\\text{kg/m}^3$, which is the usual density of air."
+    },
+    {
+      "id": "manta",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "The piston rises",
+      "prompt": "The gas in a cylinder receives the heat $1.20\\,\\text{kJ}$ and at the same time expands at the constant pressure $150\\,\\text{kPa}$ so that its volume increases from $2.0\\,\\textsf{l}$ to $5.0\\,\\textsf{l}$. By how much does the internal energy of the gas change? Answer in joules.",
+      "answer": 750,
+      "unit": "J",
+      "tolerance": 0.02,
+      "hints": [
+        "The gas gets energy as heat but gives it away by doing work on the piston.",
+        "At constant pressure the work done by the gas is $W_\\text{k} = p\\,\\Delta V$, and the change in internal energy is $\\Delta U = Q - W_\\text{k}$.",
+        "$W_\\text{k} = 150\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 450\\,\\text{J}$"
+      ],
+      "mistakes": [
+        {
+          "value": 1650,
+          "feedback": "You added the work and the heat together. An expanding gas does work and gives away energy in doing so, so the work is subtracted: $\\Delta U = Q - W_\\text{k}$."
+        },
+        {
+          "value": 1200,
+          "feedback": "This is the heat received by the gas. Part of it goes into the work the gas does on the piston: $W_\\text{k} = p\\,\\Delta V$."
+        },
+        {
+          "value": 450,
+          "feedback": "This is the work done by the gas. The change in internal energy is the difference between the heat and the work: $\\Delta U = Q - W_\\text{k}$."
+        },
+        {
+          "value": 450000,
+          "feedback": "Pressure in pascals and volume in litres give a work a thousand times too large. Convert the change in volume: $3.0\\,\\textsf{l} = 0.0030\\,\\text{m}^3$."
+        }
+      ],
+      "solution": "**Given:** heat $Q = 1.20\\,\\text{kJ}$, pressure $p = 150\\,\\text{kPa}$ (constant), volumes $V_1 = 2.0\\,\\textsf{l}$ and $V_2 = 5.0\\,\\textsf{l}$\n\n**Find:** the change $\\Delta U$ in the internal energy of the gas, in joules\n\n**Principle:** Energy is conserved: the internal energy of the gas increases by the heat received and decreases by the work the expanding gas does on the piston. The pressure is constant, so the work is the pressure times the change in volume (chapter *Work done by a gas and the heat engine*).\n\n**Formula:** $W_\\text{k} = p\\,(V_2 - V_1)$ and $\\Delta U = Q - W_\\text{k}$, so $\\Delta U = Q - p\\,(V_2 - V_1)$\n\n**Conversions:** $Q = 1.20 \\cdot 1000\\,\\text{J} = 1200\\,\\text{J}$, $p = 150 \\cdot 1000\\,\\text{Pa} = 150\\,000\\,\\text{Pa}$ and $V_2 - V_1 = 3.0\\,\\textsf{l} = 3.0 \\cdot 0.001\\,\\text{m}^3 = 0.0030\\,\\text{m}^3$\n\n**Substitution:** $W_\\text{k} = 150\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 450\\,\\text{J}$ and $\\Delta U = 1200\\,\\text{J} - 450\\,\\text{J} = 750\\,\\text{J}$\n\n**Answer:** $\\Delta U \\approx 750\\,\\text{J}$ (the internal energy increases), two significant figures like the volumes $2.0\\,\\textsf{l}$ and $5.0\\,\\textsf{l}$.\n\n**Reasonableness:** The increase in internal energy is positive and smaller than the heat received, as it must be when the gas does work at the same time. A check with kilopascals and litres: $150\\,\\text{kPa} \\cdot 3.0\\,\\textsf{l} = 450\\,\\text{J}$, because $1\\,\\text{kPa} \\cdot 1\\,\\textsf{l} = 1\\,\\text{J}$."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "At the end of the lesson there are matriculation-exam-style problems. Write your solution in your notebook or on the computer as in the exam, and only then assess it with the model answer and the marking scheme."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A group measured the pressure of the air in a closed glass bottle at temperatures of $10$–$90\\,{}^\\circ\\text{C}$ and extended the fitted straight line to zero pressure. With the help of the extreme lines the result was $\\theta_0 = (-262 \\pm 15)\\,{}^\\circ\\text{C}$. Which conclusion is justified?",
+      "choices": [
+        {
+          "text": "The result agrees with the value $-273.15\\,{}^\\circ\\text{C}$ within the uncertainty.",
+          "feedback": "Correct. The interval $-277$…$-247\\,{}^\\circ\\text{C}$ contains the accepted value, so the measurement shows no difference. The uncertainty is large, because the line is extended far outside the measurement range. If needed, review the chapter *Determining absolute zero*.",
+          "correct": true
+        },
+        {
+          "text": "The experiment failed, because the result differs from the accepted value $-273.15\\,{}^\\circ\\text{C}$.",
+          "feedback": "A measurement result is never exactly the true value. What matters is whether the accepted value is inside the estimated uncertainty interval, and here it is. Review the chapter *Determining absolute zero*."
+        },
+        {
+          "text": "The pressure of the air in the bottle would really be zero already at the temperature $-262\\,{}^\\circ\\text{C}$.",
+          "feedback": "The extension of the line is a prediction of the model, not a measurement. Real air condenses into a liquid long before this temperature, so the pressure does not fall along the line to zero. Review the chapter *Determining absolute zero*."
+        }
+      ],
+      "practice": "Review extending the line and the extreme lines in the chapter [*Determining absolute zero*](fy3-13.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculation",
+      "prompt": "On the open road a car engine gives a mechanical power of $25\\,\\text{kW}$, and its efficiency is $30\\,\\%$. At what rate does the engine give heat to the environment through the exhaust gases and the radiator? Answer in kilowatts.",
+      "answer": 58.33,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "hints": [
+        "The engine is a heat engine: the power obtained from the fuel is divided into work and heat given to the environment.",
+        "First calculate the fuel power from the efficiency $\\eta = P / P_1$.",
+        "$P_1 = 25\\,\\text{kW} : 0.30 \\approx 83\\,\\text{kW}$, and the heat power is $P_1 - P$."
+      ],
+      "mistakes": [
+        {
+          "value": 83.33,
+          "feedback": "This is the fuel power. Of it, $25\\,\\text{kW}$ becomes work, and only the rest is given away as heat."
+        },
+        {
+          "value": 17.5,
+          "feedback": "You calculated $70\\,\\%$ of the mechanical power. The efficiency and the losses are calculated from the fuel power, which is larger: $P_1 = P : \\eta$."
+        },
+        {
+          "value": 7.5,
+          "feedback": "You multiplied the mechanical power by the efficiency. The fuel power is larger than the mechanical power, so divide by the efficiency."
+        }
+      ],
+      "practice": "Review the energy flows of a heat engine in the chapter [*Work done by a gas and the heat engine*](fy3-11.html) and the denominator of the efficiency in the chapter [*Energy production and the efficiency of power plants*](fy3-15.html).",
+      "solution": "**Given:** mechanical power $P = 25\\,\\text{kW}$, efficiency $\\eta = 30\\,\\% = 0.30$\n\n**Find:** the heat power $P_2$ given to the environment, in kilowatts\n\n**Principle:** The engine is a heat engine. Energy is conserved, so the power $P_1$ obtained from the fuel is the work power and the heat power given to the environment together. The efficiency is the share of the work power in the fuel power (chapter *Work done by a gas and the heat engine*).\n\n**Formula:** $\\eta = \\dfrac{P}{P_1}$ and $P_1 = P + P_2$, so $P_2 = \\dfrac{P}{\\eta} - P$\n\n**Conversions:** Not needed: the powers are in kilowatts, and $30\\,\\% = 0.30$.\n\n**Substitution:** $P_2 = \\dfrac{25\\,\\text{kW}}{0.30} - 25\\,\\text{kW} = 83.33\\,\\text{kW} - 25\\,\\text{kW} = 58.3\\,\\text{kW}$\n\n**Answer:** $P_2 \\approx 58\\,\\text{kW}$, two significant figures like the power $25\\,\\text{kW}$ and the efficiency $30\\,\\%$.\n\n**Reasonableness:** More than twice as much heat is given away as work is done, as the loss share of $70\\,\\%$ leads you to expect: $0.70 \\cdot 83.3\\,\\text{kW} \\approx 58\\,\\text{kW}$. That is why the car's radiator and exhaust pipe get hot, and in winter the same heat warms the passenger compartment."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "The water level of a cottage well is $12\\,\\text{m}$ below the ground. A suction pump on the ground cannot make the water rise all the way up the pipe, even though the pump is powerful and completely airtight. Explain why the water rises in the suction pipe and why it does not rise higher than about $10\\,\\text{m}$. Also tell how the water can be brought up.",
+      "criteria": [
+        "The answer says that the pump does not pull the water but lowers the pressure in the upper part of the pipe, and the air pressure acting on the surface of the well pushes the water up.",
+        "The answer says that the water rises until the pressure $\\rho g h$ of the water column and the pressure in the upper part of the pipe together equal the air pressure.",
+        "The answer calculates or estimates the limit: even at its lowest the pressure in the pipe is zero, so $h = p_0 : (\\rho g) \\approx 10\\,\\text{m}$, and a more powerful pump does not change this.",
+        "The answer gives the solution: the pump is placed in the well under the water, where it pushes the water up with a gauge pressure."
+      ],
+      "model": "A suction pump does not pull water up. It removes air from the upper part of the pipe, so the pressure there decreases. The air pressure $p_0 \\approx 101\\,\\text{kPa}$ acts on the water surface of the well, and it pushes water into the pipe. The water rises until the gauge pressure $\\rho g h$ of the water column in the pipe and the pressure in the upper part of the pipe together equal the air pressure. The best pump can lower the pressure in the upper part of the pipe to almost zero, but not below it, so the greatest height of rise is $h = \\dfrac{p_0}{\\rho g} = \\dfrac{101\\,000\\,\\text{Pa}}{1000\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2} \\approx 10.3\\,\\text{m}$. In practice it is a little less, because the water starts to boil at low pressure. So a more powerful suction pump does not help in a $12\\,\\text{m}$ well. The water is brought up with a submersible pump, which is in the well under the water and pushes the water up the pipe with a gauge pressure: a pushing pump has no such limit.",
+      "practice": "Review air pressure and pressure at depth in the chapter [*Pressure and hydrostatic pressure*](fy3-4.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first, and only then open the answer."
+    }
+  ]
+}

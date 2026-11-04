@@ -1,0 +1,36 @@
+{
+  "id": "fy9-kokeellisuus",
+  "course": "FY9",
+  "chapter": 1,
+  "order": 3,
+  "title": "Kokeellinen työ ja sen arviointi",
+  "description": "Kerrataan, miten koe suunnitellaan ja miten tulos ja sen epävarmuus lasketaan kuvaajasta. Lisäksi opitaan tunnistamaan raportin virheet ja systemaattiset virheet.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": [],
+  "key_concepts": [
+    {
+      "term": "muuttuja",
+      "explain": "Asia, joka voi muuttua kokeessa. Muutat yhtä muuttujaa, mittaat toista ja pidät muut samoina."
+    },
+    {
+      "term": "mittausepävarmuus",
+      "explain": "Arvio siitä, kuinka paljon tulos voi olla väärin. Tulos kirjoitetaan muodossa $\\bar{x} \\pm \\Delta x$."
+    },
+    {
+      "term": "satunnaisvirhe",
+      "explain": "Virhe, joka tekee tuloksista vuorotellen liian suuria ja liian pieniä. Toistot ja keskiarvo pienentävät sen vaikutusta."
+    },
+    {
+      "term": "systemaattinen virhe",
+      "explain": "Virhe, joka siirtää jokaista tulosta samaan suuntaan. Toistaminen ei poista sitä."
+    },
+    {
+      "term": "kulmakerroin",
+      "explain": "Kertoo, kuinka jyrkästi suora nousee. Se luetaan suoran kahdesta kaukana olevasta pisteestä: $k = \\frac{\\Delta y}{\\Delta x}$."
+    }
+  ]
+}

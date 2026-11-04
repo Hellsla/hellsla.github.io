@@ -1,0 +1,817 @@
+{
+  "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa yhteen tunnin asiat: fotonit, atomit, ytimet ja säteilyn. Ratkaise tehtävät samalla tavalla kuin kokeessa. Nimeä ilmiö ja malli, ja perustele, miksi malli sopii tilanteeseen. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "tasks": [
+    {
+      "id": "fy9-moderni-s1",
+      "title": "Cesium metsäsienissä",
+      "source": "example",
+      "source_note": "Sienten aktiivisuuspitoisuudet ovat keksitty esimerkki. Cesium-137:n puoliintumisaika, gammafotonin energia $662\\,\\text{keV}$ ja aikuisen annoskerroin $1{,}3 \\cdot 10^{-8}\\,\\tfrac{\\text{Sv}}{\\text{Bq}}$ ovat todellisia arvoja.",
+      "skills": [
+        "fy8-8",
+        "fy8-9",
+        "fy8-13"
+      ],
+      "text": "Tšernobylin ydinvoimalaonnettomuudesta tuli laskeumaa eli radioaktiivista pölyä myös Suomeen. Siitä jäi Suomen metsiin cesium-137:ää, joka kertyy erityisesti sieniin. Cesium-137 hajoaa beeta miinus -hajoamisella barium-137m:ksi. Barium-137m on bariumin virittynyt ydin eli ydin, jolla on ylimääräistä energiaa. Se purkautuu perustilaan ja lähettää gammafotonin, jonka energia on $662\\,\\text{keV}$. Eräällä metsäalueella Hämeessä mitattiin vuonna 1990 suppilovahverojen cesium-137-pitoisuus. Se oli $2400\\,\\tfrac{\\text{Bq}}{\\text{kg}}$ tuoreissa sienissä.\n\n- cesiumin järjestysluku $55$, bariumin $56$\n- cesium-137:n puoliintumisaika $30{,}1\\,\\text{a}$, $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$\n- annoskerroin: kun aikuinen syö yhden becquerelin cesium-137:ää, hän saa efektiivisen annoksen $1{,}3 \\cdot 10^{-8}\\,\\text{Sv}$\n- suomalainen saa keskimäärin noin $5{,}9\\,\\text{mSv}$:n efektiivisen annoksen vuodessa\n- oletetaan, että cesiumia poistuu sienistä vain hajoamalla",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kirjoita kaksi yhtälöä: cesium-137:n hajoaminen ja barium-137m:n purkautuminen. Kuinka suuri on gammafotonin aallonpituus?",
+          "answer": {
+            "value": 1.873,
+            "unit": "pm",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Kirjoittaa ${}^{137}_{55}\\text{Cs} \\to {}^{137}_{56}\\text{Ba}^{\\ast} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}$ ja ${}^{137}_{56}\\text{Ba}^{\\ast} \\to {}^{137}_{56}\\text{Ba} + \\gamma$ niin, että massaluku ja varausluku säilyvät.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E_\\gamma = \\dfrac{hc}{\\lambda}$, joten $\\lambda = \\dfrac{hc}{E_\\gamma}$, kun $E_\\gamma$ on jouleina"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\lambda \\approx 1{,}87 \\cdot 10^{-12}\\,\\text{m} = 1{,}87\\,\\text{pm}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on samojen sienten cesium-137-pitoisuus vuonna 2026?",
+          "answer": {
+            "value": 1048,
+            "unit": "Bq/kg",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että aktiivisuus pienenee hajoamislain mukaan. Syy on se, että jokainen ydin hajoaa samalla todennäköisyydellä eikä uutta cesiumia tule.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$A = A_0 \\left(\\tfrac12\\right)^{t/T_{1/2}}$, kun $t = 36\\,\\text{a}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$A = 2400\\,\\tfrac{\\text{Bq}}{\\text{kg}} \\cdot \\left(\\tfrac12\\right)^{36 : 30{,}1} = 2400\\,\\tfrac{\\text{Bq}}{\\text{kg}} \\cdot 0{,}4365$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$A \\approx 1050\\,\\tfrac{\\text{Bq}}{\\text{kg}}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Sienestäjä syö vuoden 2026 aikana $5{,}0\\,\\text{kg}$ tällaisia sieniä. Kuinka suuren efektiivisen annoksen hän saa sienistä? Vertaa annosta siihen, kuinka suuren vuosiannoksen suomalainen saa keskimäärin.",
+          "answer": {
+            "value": 0.0681,
+            "unit": "mSv",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "syöty aktiivisuus $A m$ ja annos $H_\\text{E} = A m \\cdot k$, missä $k$ on annoskerroin"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$1048\\,\\tfrac{\\text{Bq}}{\\text{kg}} \\cdot 5{,}0\\,\\text{kg} = 5240\\,\\text{Bq}$ ja $5240\\,\\text{Bq} \\cdot 1{,}3 \\cdot 10^{-8}\\,\\tfrac{\\text{Sv}}{\\text{Bq}} \\approx 6{,}8 \\cdot 10^{-5}\\,\\text{Sv}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$H_\\text{E} \\approx 0{,}068\\,\\text{mSv}$, kaksi merkitsevää numeroa"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Noin $1\\,\\%$ keskimääräisestä annoksesta $5{,}9\\,\\text{mSv}$. Sienten osuus on siis pieni."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka monta cesium-137-ydintä on vuonna 2026 yhdessä kilogrammassa sieniä? Kuinka suuri on niiden massa? Cesium-137-atomin massa on $137\\,\\text{u}$, $1\\,\\text{u} = 1{,}66 \\cdot 10^{-27}\\,\\text{kg}$.",
+          "answer": {
+            "value": 0.327,
+            "unit": "ng",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$A = \\lambda N$ ja $\\lambda = \\dfrac{\\ln 2}{T_{1/2}}$, joten $N = \\dfrac{A T_{1/2}}{\\ln 2}$; massa $m = N \\cdot 137\\,\\text{u}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T_{1/2} = 9{,}50 \\cdot 10^{8}\\,\\text{s}$, $N \\approx 1{,}44 \\cdot 10^{12}$ ja $m \\approx 3{,}3 \\cdot 10^{-13}\\,\\text{kg}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$N \\approx 1{,}4 \\cdot 10^{12}$ ja $m \\approx 0{,}33\\,\\text{ng}$"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy8-8",
+        "math": "fy8-9"
+      }
+    },
+    {
+      "id": "fy9-moderni-s2",
+      "title": "Vedyn viivat kaukaisessa galaksissa",
+      "source": "example",
+      "source_note": "Galaksi ja sen spektrin aallonpituus ovat keksitty esimerkki. Vedyn viivojen laboratorioarvot $656{,}3\\,\\text{nm}$ ja $486{,}1\\,\\text{nm}$ ovat todellisia.",
+      "skills": [
+        "fy8-3",
+        "fy8-2",
+        "fy8-16"
+      ],
+      "text": "Lukion tähtitieteen kurssilla tutkitaan kaukaisen galaksin spektriä. Spektri on mitattu kaukoputken spektrografilla. Spektrissä on tummia viivoja. Voimakkain viiva tunnistetaan vedyn punaiseksi viivaksi.\n\n- vetyatomin energiatasot $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$, $n = 1, 2, 3, \\ldots$\n- laboratoriossa vedyn punaisen viivan aallonpituus on $656{,}3\\,\\text{nm}$ ja syaanin viivan $486{,}1\\,\\text{nm}$\n- galaksin spektrissä punainen viiva on aallonpituudella $671{,}8\\,\\text{nm}$\n- Hubblen vakio $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$, valon nopeus $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Vedyn punainen viiva syntyy, kun elektroni siirtyy tasolta $3$ tasolle $2$. Laske tasojen avulla viivan aallonpituus.",
+          "answer": {
+            "value": 656.5,
+            "unit": "nm",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että fotonin energia on tasojen erotus $E_3 - E_2$, koska energia säilyy siirtymässä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E_3 - E_2 = 13{,}6\\,\\text{eV} \\cdot \\left(\\tfrac14 - \\tfrac19\\right)$ ja $\\lambda = \\dfrac{hc}{E_3 - E_2}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_3 - E_2 = 1{,}889\\,\\text{eV} = 3{,}026 \\cdot 10^{-19}\\,\\text{J}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\lambda \\approx 656\\,\\text{nm}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suurella nopeudella galaksi etääntyy eli loittonee meistä? Kuinka kaukana galaksi on?",
+          "answer": [
+            {
+              "name": "v",
+              "value": 7080,
+              "unit": "km/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "d",
+              "value": 101.1,
+              "unit": "Mpc",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Perustelee, että viiva on siirtynyt pidempiin aallonpituuksiin, koska galaksi etääntyy, kun avaruus laajenee. Perustelee myös, että punasiirtymä on pieni, joten $v = cz$ pätee.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$z = \\dfrac{\\lambda - \\lambda_0}{\\lambda_0}$, $v = cz$ ja $d = \\dfrac{v}{H_0}$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$z = \\dfrac{671{,}8\\,\\text{nm} - 656{,}3\\,\\text{nm}}{656{,}3\\,\\text{nm}} = 0{,}0236$, $v \\approx 7080\\,\\text{km/s}$ ja $d = \\dfrac{7080\\,\\text{km/s}}{70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}} \\approx 101\\,\\text{Mpc}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 7{,}1 \\cdot 10^{3}\\,\\text{km/s}$ ja $d \\approx 100\\,\\text{Mpc}$, kaksi merkitsevää numeroa kuten Hubblen vakiossa"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Millä aallonpituudella vedyn syaani viiva näkyy galaksin spektrissä?",
+          "answer": {
+            "value": 497.6,
+            "unit": "nm",
+            "tolerance": 0.005
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että punasiirtymä $z$ on sama spektrin jokaiselle viivalle.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\lambda = \\lambda_0 (1 + z)$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\lambda = 486{,}1\\,\\text{nm} \\cdot 1{,}0236 \\approx 497{,}6\\,\\text{nm}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Selitä, miksi vedyn viivat ovat galaksin spektrissä tummia eivätkä kirkkaita.",
+          "criteria": [
+            {
+              "text": "Selittää, että tähtien kuuma pinta lähettää jatkuvan spektrin. Tähtien uloimmat kaasukerrokset ovat pinnan ja havaitsijan välissä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että vetyatomit absorboivat vain fotoneja, joiden energia on täsmälleen tasojen erotus. Sitten atomit lähettävät energian uudelleen kaikkiin suuntiin.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Valosta, joka tulee havaitsijaa kohti, puuttuu juuri vedyn aallonpituuksia. Siksi viivat ovat tummempia kuin ympäristö."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy8-2",
+        "math": "fy8-16",
+        "transfer": "fy8-16",
+        "communication": "fy8-2"
+      }
+    },
+    {
+      "id": "fy9-moderni-s3",
+      "title": "Valosähköinen ilmiö ja Planckin vakio",
+      "source": "example",
+      "source_note": "Jännitteet on laskettu valosähköisestä yhtälöstä. Niihin on lisätty vaihtelua, joka on samanlaista kuin mittauksissa.",
+      "skills": [
+        "fy8-1",
+        "fy6-12",
+        "fy1-4"
+      ],
+      "text": "Fysiikan työssä tutkitaan valokennoa. Sen katodi on kaliumia. Kun katodia valaistaan, siitä irtoaa elektroneja. Elektronit kulkevat tyhjiössä anodille, ja piirissä kulkee valovirta. Anodin ja katodin väliin kytketään jännite, joka hidastaa elektroneja: anodi on negatiivisempi kuin katodi. Jännitettä kasvatetaan, kunnes valovirta juuri loppuu. Tätä jännitettä sanotaan pysäytysjännitteeksi $U$. Katodia valaistiin vuorotellen eri aallonpituuksilla. Valonlähteenä käytettiin LED-valoa ja suodattimia.\n\n| $\\lambda\\ (\\text{nm})$ | $U\\ (\\text{V})$ |\n|---|---|\n| $365$ | $1{,}15$ |\n| $405$ | $0{,}80$ |\n| $436$ | $0{,}61$ |\n| $470$ | $0{,}38$ |\n| $505$ | $0{,}21$ |\n| $590$ | ei virtaa |\n\n- $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Piirrä kuvaaja, jossa pysäytysjännite on valon taajuuden funktiona.",
+          "criteria": [
+            {
+              "key": "graph_points",
+              "points": 2,
+              "detail": "Taajuudet $f = \\dfrac{c}{\\lambda}$: $8{,}21$, $7{,}40$, $6{,}88$, $6{,}38$ ja $5{,}94$ yksikössä $10^{14}\\,\\text{Hz}$"
+            },
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla $f\\ (10^{14}\\,\\text{Hz})$, pystyakselilla $U\\ (\\text{V})$; akseleilla on nimet ja yksiköt."
+            },
+            {
+              "text": "Ei piirrä pistettä aallonpituudelle $590\\,\\text{nm}$, koska silloin valovirtaa ei synny. Ei yhdistä pisteitä murtoviivaksi.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 5,
+          "text": "Perustele, miksi pisteisiin sopii suora. Sovita pisteisiin suora. Jatka suoraa niin, että se leikkaa molemmat akselit.",
+          "criteria": [
+            {
+              "text": "Perustelee energian säilymisellä: nopeimman elektronin liike-energia $E_\\text{k,max}$ kuluu kokonaan sähkökentän jarruttavaan työhön, joten $eU = E_\\text{k,max}$.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "text": "Yhdistää tämän valosähköiseen yhtälöön: $eU = hf - W$. Siksi $U = \\dfrac{h}{e}\\,f - \\dfrac{W}{e}$ on suoran yhtälö.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "Yksi suora pisteiden lomitse eli niiden välistä. Suoraa on jatkettu katkoviivana pystyakselille ja vaaka-akselille."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 6,
+          "text": "Määritä kuvaajasta Planckin vakio. Vertaa tulosta arvoon $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$.",
+          "answer": {
+            "value": 6.61e-34,
+            "unit": "J s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 2,
+              "detail": "Kulmakerroin lasketaan kahdesta suoran pisteestä, jotka ovat kaukana toisistaan, esimerkiksi $(0;\\ -2{,}24\\,\\text{V})$ ja $(8{,}0 \\cdot 10^{14}\\,\\text{Hz};\\ 1{,}06\\,\\text{V})$: $k \\approx 4{,}13 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$"
+            },
+            {
+              "text": "Tulkitsee kulmakertoimen: $k = \\dfrac{h}{e}$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$h = ek$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$h \\approx 6{,}6 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$; tulokset $6{,}4$–$6{,}8 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ hyväksytään; $\\text{C} \\cdot \\text{V}\\,\\text{s} = \\text{J}\\,\\text{s}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Vertaa eroa taulukkoarvoon $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$. Arvioi, onko ero niin pieni, että se voi johtua kuvaajan lukutarkkuudesta."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä kuvaajasta kaliumin irrotustyö elektronivoltteina ja rajataajuus. Selitä, miksi aallonpituudella $590\\,\\text{nm}$ valovirtaa ei synny. Muuttuisiko tilanne, jos $590\\,\\text{nm}$:n valoa olisi kymmenen kertaa enemmän?",
+          "answer": [
+            {
+              "name": "W",
+              "value": 2.24,
+              "unit": "eV",
+              "tolerance": 0.03
+            },
+            {
+              "name": "f0",
+              "value": 543000000000000.0,
+              "unit": "Hz",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Suora leikkaa pystyakselin kohdassa $-\\tfrac{W}{e} \\approx -2{,}24\\,\\text{V}$ ja vaaka-akselin kohdassa $f_0 \\approx 5{,}43 \\cdot 10^{14}\\,\\text{Hz}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W = e \\cdot 2{,}24\\,\\text{V} = 2{,}24\\,\\text{eV}$, ja tarkistuksena $f_0 = \\dfrac{W}{h}$"
+            },
+            {
+              "text": "Laskee, että aallonpituuden $590\\,\\text{nm}$ taajuus $5{,}08 \\cdot 10^{14}\\,\\text{Hz}$ on pienempi kuin rajataajuus. Toisin sanoen fotonin energia $2{,}10\\,\\text{eV}$ on pienempi kuin irrotustyö.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kirkkaampi valo tuo enemmän fotoneja, mutta fotonit eivät ole energisempiä. Siksi elektroneja ei irtoa vieläkään."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "concept": "fy8-1",
+        "transfer": "fy6-12",
+        "math": "fy8-1",
+        "communication": "fy8-1"
+      }
+    },
+    {
+      "id": "fy9-moderni-s4",
+      "title": "Radon taloyhtiön kokouksessa",
+      "source": "example",
+      "source_note": "Kokous ja mittaustulos ovat keksitty esimerkki. Asuntojen radonpitoisuuden viitearvo $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$ on Suomen säteilylain mukainen.",
+      "skills": [
+        "fy8-13",
+        "fy8-12",
+        "fy8-9",
+        "fy8-14"
+      ],
+      "text": "Hyvinkäällä on rivitaloyhtiö. Sen asunnoissa mitattiin talvella radonpitoisuus kahden kuukauden ajan. Yhden asunnon tulos oli $450\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$. Asukkaiden kokouksessa esitettiin kolme väitettä.\n\n1. ”Radonin alfasäteily pysähtyy jo paperiin ja ihon pintaan, joten se ei voi olla vaarallista.”\n2. ”Radonin puoliintumisaika on vain $3{,}8$ vuorokautta. Kun pidämme ikkunat kuukauden tiiviisti kiinni, radon häviää itsestään.”\n3. ”Naapuri kävi hammasröntgenissä. Nyt hänkin on radioaktiivinen, joten lasten ei kannata olla hänen lähellään.”\n\nAsuntojen radonpitoisuuden viitearvo on $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$. Viitearvo on raja, jonka yli pitoisuuden ei pitäisi nousta. Radon-222 syntyy radiumista maaperän ja kallion uraanin hajoamissarjassa.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi väite 1. Selitä, miten radon aiheuttaa säteilyannoksen.",
+          "criteria": [
+            {
+              "text": "Toteaa, että alfasäteily ei kulje ihon läpi, joten ulkoinen alfasäteily ei ole vaarallista. Tämä osa väitteen perustelusta pitää paikkansa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että radon ja sen hajoamistuotteet hengitetään keuhkoihin. Siellä alfasäteily osuu suoraan keuhkojen soluihin.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Perustelee, miksi radon on vaarallinen: alfahiukkanen ionisoi tiheästi ja antaa energiansa muutaman solun matkalle. Sen painotuskerroin on $20$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä: radon on suomalaisten suurin säteilyannoksen lähde. Lisäksi $450\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$ on $1{,}5$-kertainen viitearvoon verrattuna. Siksi pitoisuutta kannattaa pienentää."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi väite 2. Kuinka suuri osa huoneen radonytimistä on mallin mukaan hajoamatta kuukauden kuluttua? Häviääkö radon silti asunnosta?",
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\left(\\tfrac12\\right)^{30 : 3{,}8} \\approx 0{,}004$ eli noin $0{,}4\\,\\%$ alkuperäisistä radonytimistä"
+            },
+            {
+              "text": "Toteaa, että laskelma pätee vain niihin ytimiin, jotka olivat huoneessa alussa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että maaperän uraanin hajoamissarja tuottaa radonia koko ajan. Radonia virtaa sisään perustusten raoista, kun sisällä on alipaine eli pienempi paine kuin ulkona.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä: kun ikkunat ja ilmanvaihto suljetaan, uutta radonia tulee yhtä paljon kuin ennen. Radonia kuitenkin poistuu vähemmän, joten pitoisuus kasvaa. Pitoisuutta pienennetään ilmanvaihdolla ja tiivistämällä rakenteet."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi väite 3.",
+          "criteria": [
+            {
+              "text": "Selittää, että röntgensäteily on fotonisäteilyä. Kuvauksen aikana fotoni joko kulkee kudoksen läpi tai absorboituu ja ionisoi atomeja.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee, että radioaktiivisuus on epävakaiden ytimien ominaisuus. Röntgenfotonin energia, noin $60\\,\\text{keV}$, ionisoi atomeja, mutta se ei muuta ytimiä.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Erottaa kaksi asiaa: ulkoisen säteilytyksen ja sen, että radioaktiivista ainetta joutuu elimistöön. Vain jälkimmäinen tekee ihmisestä säteilylähteen, esimerkiksi isotooppitutkimuksen merkkiaine hetken ajan.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä: kun röntgenlaite sammuu, säteilyä ei enää ole. Naapurista ei tule säteilyä lapsiin."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy8-12",
+        "transfer": "fy8-13",
+        "math": "fy8-9",
+        "communication": "fy8-13"
+      }
+    },
+    {
+      "id": "fy9-moderni-s5",
+      "title": "Barium-137m:n puoliintumisaika",
+      "source": "example",
+      "source_note": "Raportti ja mittaukset ovat keksitty esimerkki. Lukemat on laskettu puoliintumisajalla $153\\,\\text{s}$ ja taustalla $5$ pulssia $10\\,\\text{s}$:ssa. Niihin on lisätty vaihtelua, joka on samanlaista kuin hajoamisen satunnaisuus.",
+      "skills": [
+        "fy8-9",
+        "fy1-3",
+        "fy1-8"
+      ],
+      "text": "Opiskelijaryhmä mittasi barium-137m:n puoliintumisajan. Bariumliuos huuhdeltiin isotooppigeneraattorista näytemaljaan. Malja asetettiin GM-putken alle. Pulssit laskettiin $10\\,\\text{s}$:n jaksoissa $30\\,\\text{s}$:n välein. Ennen mittausta taustasäteily mitattiin kerran $10\\,\\text{s}$:n ajan. Tulos oli $5$ pulssia.\n\n| $t\\ (\\text{s})$ | pulssia $/\\ 10\\,\\text{s}$ |\n|---|---|\n| $0$ | $398$ |\n| $30$ | $361$ |\n| $60$ | $304$ |\n| $90$ | $276$ |\n| $120$ | $231$ |\n| $150$ | $212$ |\n| $180$ | $188$ |\n| $210$ | $163$ |\n| $240$ | $136$ |\n| $270$ | $127$ |\n| $300$ | $104$ |\n\nRyhmän johtopäätös: ”Alussa pulsseja oli $398$, ja puolet siitä, $199$, saavutettiin noin $166\\,\\text{s}$:n kohdalla. Puoliintumisaika on siis $166\\,\\text{s}$, mikä on $8\\,\\%$ enemmän kuin kirjan arvo $153\\,\\text{s}$. Ero johtuu siitä, että liuos ehti seistä maljassa noin minuutin ennen mittausta, joten jäljelle jääneet ytimet olivat vanhempia ja hajosivat hitaammin. Taustaa ei tarvinnut vähentää, koska se oli vain $5$ pulssia.”",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä puoliintumisaika aineistosta. Ota taustasäteily huomioon.",
+          "answer": {
+            "value": 151,
+            "unit": "s",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "text": "Vähentää taustan jokaisesta lukemasta ennen laskemista: alussa $393$ ja lopussa $99$ pulssia $10\\,\\text{s}$:ssa.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$N = N_0 \\left(\\tfrac12\\right)^{t/T_{1/2}}$, joten $T_{1/2} = \\dfrac{t \\ln 2}{\\ln (N_0 : N)}$, tai sovitus $y = A\\,e^{-Ct} + B$ ja $T_{1/2} = \\tfrac{\\ln 2}{C}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T_{1/2} = \\dfrac{300\\,\\text{s} \\cdot 0{,}693}{\\ln (393 : 99)} \\approx 151\\,\\text{s}$ tai sovituksella noin $153\\,\\text{s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T_{1/2} \\approx 150\\,\\text{s}$; tulokset $145$–$157\\,\\text{s}$ hyväksytään."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Tulos poikkeaa kirjan arvosta $153\\,\\text{s}$ vain muutaman prosentin."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi ryhmän johtopäätös.",
+          "criteria": [
+            {
+              "text": "Toteaa, että selitys on väärä: ytimellä ei ole ikää. Jokainen barium-137m-ydin hajoaa samalla todennäköisyydellä sekunnissa. Siksi seisominen ei muuta puoliintumisaikaa.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Puoliintumisaika luettiin vain yhdestä lukemasta ja interpoloimalla eli arvioimalla kahden pisteen väliltä. Siksi hajoamisen satunnainen vaihtelu yhdessä lukemassa vaikuttaa tulokseen suoraan."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Toteaa, että tausta olisi pitänyt vähentää. Kerran mitattu tausta on epävarma, ja sen osuus kasvaa lopussa: $5$ pulssia on noin $5\\,\\%$ lukemasta $104$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Ero $166\\,\\text{s}$ vastaan $153\\,\\text{s}$ johtuu siitä, miten mitattiin ja luettiin, eikä näytteestä. Koko aineisto antaa noin $151$–$153\\,\\text{s}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Suunnittele, miten mittausta ja tulosten käsittelyä voi parantaa.",
+          "criteria": [
+            {
+              "text": "Mittaa taustan pitkään, esimerkiksi $10\\,\\text{min}$, ennen mittausta tai sen jälkeen. Vähentää taustan jokaisesta lukemasta samassa yksikössä.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Käyttää kaikkia mittauspisteitä: sovittaa pisteisiin mallin $y = A\\,e^{-Ct} + B$ tai piirtää kuvaajan ja määrittää puoliintumisajan sovitetusta käyrästä.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Pidentää laskenta-aikaa tai toistaa koko mittauksen uudella näytteellä ja vertaa tuloksia. Silloin satunnainen vaihtelu pienenee, ja hajonta nähdään.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Arvioi tuloksen epävarmuuden toistojen hajonnasta tai sovituksen avulla. Vertaa tulosta kirjan arvoon vasta sitten."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy8-9",
+        "math": "fy8-9",
+        "experiment": "fy1-8",
+        "communication": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-moderni-s6",
+      "title": "Ydinvoimalasta sähköä",
+      "source": "example",
+      "source_note": "Voimalan tehot ovat keksitty esimerkki. Ne ovat samaa kokoluokkaa kuin suuressa painevesilaitoksessa. Kivihiilen lämpöarvo $24\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ on tyypillinen arvo.",
+      "skills": [
+        "fy8-11",
+        "fy8-10",
+        "fy3-15",
+        "fy2-5"
+      ],
+      "text": "Suomalaisessa ydinvoimalaitoksessa on painevesireaktori. Voimalan sähköteho on $1600\\,\\text{MW}$, kun reaktorin lämpöteho on $4300\\,\\text{MW}$. Lauhduttimessa turbiinin höyry tiivistyy eli muuttuu takaisin vedeksi. Jäähdytykseen pumpataan merivettä, joka lämpenee $11\\,\\text{K}$. Oletetaan, että voimala toimii koko vuoden täydellä teholla.\n\n- yksi uraani-235:n fissio vapauttaa keskimäärin $200\\,\\text{MeV}$\n- uraani-235-atomin massa $235\\,\\text{u}$, $1\\,\\text{u} = 1{,}661 \\cdot 10^{-27}\\,\\text{kg}$\n- meriveden ominaislämpökapasiteetti $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$\n- $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n- kivihiilen lämpöarvo $24\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, hiilivoimalan hyötysuhde $40\\,\\%$\n- oletetaan, että kaikki lämpö, josta ei tule sähköä, siirtyy lauhduttimessa meriveteen",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on voimalan hyötysuhde? Kuinka monta fissiota reaktorissa tapahtuu sekunnissa?",
+          "answer": [
+            {
+              "name": "eta",
+              "value": 37.21,
+              "unit": "%",
+              "tolerance": 0.02
+            },
+            {
+              "name": "n",
+              "value": 1.342e+20,
+              "unit": "1/s",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\eta = \\dfrac{P_\\text{s}}{P_\\text{l}}$ ja $\\dfrac{N}{t} = \\dfrac{P_\\text{l}}{E_\\text{f}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$\\eta = \\dfrac{1600\\,\\text{MW}}{4300\\,\\text{MW}} \\approx 0{,}372$; $E_\\text{f} = 200 \\cdot 10^{6} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 3{,}204 \\cdot 10^{-11}\\,\\text{J}$ ja $\\dfrac{N}{t} \\approx 1{,}34 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\eta \\approx 37\\,\\%$ ja $1{,}3 \\cdot 10^{20}$ fissiota sekunnissa"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka monta kilogrammaa uraani-235:tä fissioituu eli halkeaa vuodessa? Kuinka paljon massaa muuttuu samassa ajassa energiaksi?",
+          "answer": [
+            {
+              "name": "m",
+              "value": 1653,
+              "unit": "kg",
+              "tolerance": 0.02
+            },
+            {
+              "name": "dm",
+              "value": 1.51,
+              "unit": "kg",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$m = \\dfrac{N}{t} \\cdot t \\cdot 235\\,\\text{u}$ ja $\\Delta m = \\dfrac{P_\\text{l} t}{c^2}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$1{,}342 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}} \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s} \\cdot 235 \\cdot 1{,}661 \\cdot 10^{-27}\\,\\text{kg} \\approx 1650\\,\\text{kg}$ ja $\\Delta m = \\dfrac{4{,}3 \\cdot 10^{9}\\,\\text{W} \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s}}{(2{,}998 \\cdot 10^{8}\\,\\text{m/s})^2} \\approx 1{,}5\\,\\text{kg}$"
+            },
+            {
+              "text": "Tulkitsee, että vain noin $0{,}09\\,\\%$ fissioituneen uraanin massasta muuttuu energiaksi. Loput jää fissiotuotteiksi ja neutroneiksi, koska massaluku säilyy.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m \\approx 1{,}7 \\cdot 10^{3}\\,\\text{kg}$ ja $\\Delta m \\approx 1{,}5\\,\\text{kg}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka monta kilogrammaa merivettä on pumpattava lauhduttimen läpi sekunnissa?",
+          "answer": {
+            "value": 58580,
+            "unit": "kg/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee energian säilymisellä: lämpöteho, josta ei tule sähköä, $P_\\text{l} - P_\\text{s} = 2700\\,\\text{MW}$, siirtyy lauhduttimessa meriveteen.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P_\\text{l} - P_\\text{s} = \\dfrac{m}{t}\\,c\\,\\Delta T$, joten $\\dfrac{m}{t} = \\dfrac{P_\\text{l} - P_\\text{s}}{c\\,\\Delta T}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{m}{t} = \\dfrac{2{,}7 \\cdot 10^{9}\\,\\text{W}}{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 11\\,\\text{K}} \\approx 5{,}86 \\cdot 10^{4}\\,\\tfrac{\\text{kg}}{\\text{s}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "noin $5{,}9 \\cdot 10^{4}\\,\\tfrac{\\text{kg}}{\\text{s}}$ eli noin $59\\,\\tfrac{\\text{m}^3}{\\text{s}}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Hiilivoimala tuottaisi saman sähköenergian. Kuinka monta tonnia kivihiiltä se polttaisi vuodessa?",
+          "answer": {
+            "value": 5260000.0,
+            "unit": "t",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E_\\text{s} = P_\\text{s} t$ ja $E_\\text{s} = \\eta H m$, joten $m = \\dfrac{P_\\text{s} t}{\\eta H}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$m = \\dfrac{1{,}6 \\cdot 10^{9}\\,\\text{W} \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s}}{0{,}40 \\cdot 24 \\cdot 10^{6}\\,\\tfrac{\\text{J}}{\\text{kg}}} \\approx 5{,}3 \\cdot 10^{9}\\,\\text{kg}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Noin $5$ miljoonaa tonnia. Se on yli kolme miljoonaa kertaa fissioituneen uraanin massa. Syy on se, että fissio vapauttaa noin $200\\,\\text{MeV}$, mutta palaminen vain muutaman elektronivoltin reaktiota kohti."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy8-11",
+        "concept": "fy8-10",
+        "transfer": "fy3-15"
+      }
+    }
+  ]
+}

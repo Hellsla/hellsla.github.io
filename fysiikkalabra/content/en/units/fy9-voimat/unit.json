@@ -1,0 +1,14 @@
+{
+  "id": "fy9-voimat",
+  "course": "FY9",
+  "chapter": 3,
+  "order": 2,
+  "title": "Newton's laws and the free-body diagram",
+  "description": "A review of Newton's laws, drawing free-body diagrams, weight, friction, the inclined plane, connected bodies and air resistance from module FY4, with matriculation-exam-style tasks on them.",
+  "kind": "review",
+  "minutes": 75,
+  "subjects": [
+    "physics"
+  ],
+  "sources": []
+}

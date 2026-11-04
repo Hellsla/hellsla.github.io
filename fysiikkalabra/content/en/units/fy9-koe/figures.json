@@ -1,0 +1,20 @@
+{
+ "Kuvitus: koepöytä ylhäältä vinosti nähtynä. Pöydällä on kannettava tietokone, jonka näytöllä on kuvaaja: mittauspisteet ja niihin sovitettu nouseva suora. Tietokoneen vieressä ovat laskin, ruutuvihko, jossa on lyijykynällä piirretty kappale ja nuolia, lyijykynä ja vesipullo. Seinällä on kello. Kuvassa ei ole tekstiä.": "Illustration: an exam desk seen obliquely from above. On the desk is a laptop whose screen shows a graph: measured points and a rising straight line fitted to them. Beside the laptop are a calculator, a squared notebook with a body and arrows drawn in pencil, a pencil and a water bottle. There is a clock on the wall. The picture has no text.",
+ "Kaavio: täydellisen ratkaisun seitsemän vaihetta allekkain numeroituina kortteina. 1 Annettu ja kysytty: suureet yksiköineen. 2 Periaate: laki ja miksi se pätee. 3 Kaava ratkaistuna: kysytty symboleilla. 4 Muunnokset: perusyksiköihin. 5 Sijoitus: luvut yksiköineen. 6 Vastaus: yksikkö ja tarkkuus. 7 Järkevyys: arvio tai vertailu. Korttien välissä on nuolet ylhäältä alas.": "Diagram: the seven steps of a complete solution as numbered cards one below the other. 1 Given and find: quantities with units. 2 Principle: the law and why it applies. 3 Formula solved: the unknown in symbols. 4 Conversions: to base units. 5 Substitution: numbers with units. 6 Answer: unit and precision. 7 Reasonableness: an estimate or a comparison. Between the cards are arrows from top to bottom.",
+ "Annettu ja kysytty": "Given and find",
+ "suureet yksiköineen": "quantities with units",
+ "Periaate": "Principle",
+ "laki ja miksi se pätee": "the law and why it applies",
+ "Kaava ratkaistuna": "Formula solved",
+ "kysytty symboleilla": "the unknown in symbols",
+ "Muunnokset": "Conversions",
+ "perusyksiköihin": "to base units",
+ "Sijoitus": "Substitution",
+ "luvut yksiköineen": "numbers with units",
+ "Vastaus": "Answer",
+ "yksikkö ja tarkkuus": "unit and precision",
+ "Järkevyys": "Reasonableness",
+ "arvio tai vertailu": "an estimate or a comparison",
+ "Kuvaaja mittakaavassa: kärryn paikka x metreinä ajan t funktiona sekunteina, keksityt esimerkkiarvot. Seitsemän mittauspistettä ajanhetkillä 0–6 s nousee lähes suoraan. Pisteisiin on sovitettu suora, joka kulkee pisteiden lomitse. Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, (1,0 s; 1,02 m) ja (5,0 s; 3,50 m), katkoviivakolmion avulla: Δt = 4,0 s ja Δx = 2,48 m, joten kulmakerroin on noin 0,62 m/s.": "Graph to scale: the position x of a trolley in metres as a function of the time t in seconds, invented example values. Seven measured points at the times 0–6 s rise almost in a straight line. A straight line fitted to the points passes between them. The slope is read from the line at two points far apart, (1.0 s; 1.02 m) and (5.0 s; 3.50 m), with a dashed triangle: Δt = 4.0 s and Δx = 2.48 m, so the slope is about 0.62 m/s.",
+ "Kuvaaja: heilahdusjakson neliö T² neliösekunteina langan pituuden L funktiona metreinä. Kuusi mittauspistettä pituuksilla 0,200–0,950 m nousee suoraan. Pisteisiin on sovitettu suora, joka leikkaa pystyakselin hieman origon yläpuolella, noin arvossa 0,06 s². Suoralta on luettu kaksi pistettä katkoviivoin: (0,100 m; 0,46 s²) ja (0,900 m; 3,68 s²). Kulmakerroin on noin 4,03 s²/m.": "Graph: the square of the period T² in square seconds as a function of the length L of the string in metres. Six measured points at the lengths 0.200–0.950 m rise in a straight line. A straight line fitted to the points crosses the vertical axis a little above the origin, at about 0.06 s². Two points read from the line are marked with dashed lines: (0.100 m; 0.46 s²) and (0.900 m; 3.68 s²). The slope is about 4.03 s²/m."
+}

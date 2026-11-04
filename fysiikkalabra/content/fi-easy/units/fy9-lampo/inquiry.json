@@ -1,0 +1,497 @@
+{
+  "version": 1,
+  "contribution": "Kertaustunti kokoaa yhteen FY3-moduulin tärkeät asiat: lämpötilan, sisäenergian ja lämmön käsitteet, lämpömäärän, olomuodon muutokset, jään ja veden lämpötasapainon, lämpölaajenemisen sekä lämmön siirtymisen ja energiatasapainon. Ne kaikki selitetään yhdellä mallilla, energian säilymisellä. Tunnilla harjoitellaan ylioppilaskokeen tyyppisiä tehtäviä: lämpenemiskäyrän tulkintaa, energiatasetta vaihe vaiheelta, lopputilan päättelyä, suoran sovitusta mittausaineistoon ja kalorimetrisen raportin arviointia.",
+  "learn": [
+    "ratkaisemaan lämpömäärä-, olomuoto- ja lämpötasapainotehtäviä energian säilymisen avulla",
+    "piirtämään ja tulkitsemaan lämpenemiskäyriä ja mittausaineiston kuvaajia",
+    "arvioimaan perustellen lämpökokeiden tuloksia, virhelähteitä ja väitteitä"
+  ],
+  "prior": [
+    "Lämpötilaero on yhtä suuri kelvineinä ja celsiusasteina (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*)",
+    "Lämpö on energiaa, joka siirtyy lämpötilaeron vuoksi, ja $\\Delta U = Q + W$ (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)",
+    "Lämpömäärä on $Q = cm\\Delta T$, kun olomuoto ei muutu (luku *Aineen lämpeneminen ja jäähtyminen*)",
+    "Sulaminen ja höyrystyminen vaativat energiaa $Q = sm$ ja $Q = rm$, ja lämpötila pysyy silloin samana (luku *Olomuodon muutokset*)",
+    "Rakennusosan, esimerkiksi seinän, läpi johtuva teho on $P = UA\\Delta T$ (luku *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Retkeilijät ovat Lapissa laavulla. Laavu on katos, jonka toinen sivu on auki. Lähellä ei ole sulaa vettä. Retkeilijät täyttävät nokipannun lumella ja ripustavat sen nuotion yläpuolelle. Lumen lämpötila on $-10\\,{}^\\circ\\text{C}$. Ensin pannussa on pelkkää lunta. Sitten siinä on sohjoa eli lumen ja veden seosta. Sen jälkeen siinä on vettä, joka lopulta kiehuu. Kokeessa tehtävä voi alkaa juuri näin: tilanne kerrotaan, mutta kaavoja ei kerrota.",
+      "question": "Kumpi vaihe vie enemmän nuotion energiaa: kilogramman lumen muuttaminen vedeksi vai saman veden kuumentaminen $0\\,{}^\\circ\\text{C}$:sta kiehuvaksi? Miksi?"
+    },
+    {
+      "id": "lt-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 1: lämpötilan muutos",
+      "prompt": "Aamulla huoneen ilman lämpötila nousee $18\\,{}^\\circ\\text{C}$:sta $23\\,{}^\\circ\\text{C}$:seen. Kuinka monta kelviniä lämpötila nousee?",
+      "choices": [
+        {
+          "text": "$5\\,\\text{K}$, koska kelvin ja celsiusaste ovat yhtä suuria.",
+          "feedback": "Oikein. Asteikoilla on eri nollakohta, mutta yksi aste on yhtä suuri. Siksi lämpötilaero on sama: $23\\,{}^\\circ\\text{C} - 18\\,{}^\\circ\\text{C} = 5\\,\\text{K}$. Kertaa tarvittaessa luvussa *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*.",
+          "correct": true
+        },
+        {
+          "text": "$278\\,\\text{K}$, koska celsiusasteisiin lisätään $273$.",
+          "feedback": "Luku $273$ lisätään, kun yksi lämpötila muutetaan kelvineiksi. Sitä ei lisätä lämpötilaeroon. Jos lisäät sen kumpaankin lukemaan, lisäykset kumoutuvat eli häviävät erotuksessa: $296\\,\\text{K} - 291\\,\\text{K} = 5\\,\\text{K}$. Kertaa luvussa *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*."
+        },
+        {
+          "text": "$296\\,\\text{K}$, koska loppulämpötila on $296\\,\\text{K}$.",
+          "feedback": "$296\\,\\text{K}$ on loppulämpötila. Se ei ole muutos. Muutos on loppulämpötilan ja alkulämpötilan erotus. Se on sama kelvineinä ja celsiusasteina: $5\\,\\text{K}$. Kertaa luvussa *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*."
+        }
+      ]
+    },
+    {
+      "id": "lt-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 2: tee ja järvi",
+      "prompt": "Kupissa on $0{,}2\\,\\text{kg}$ teetä. Teen lämpötila on $80\\,{}^\\circ\\text{C}$. Talvella järven vesi on pohjan lähellä noin $4\\,{}^\\circ\\text{C}$:ista. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Teessä on enemmän lämpöä, koska se on kuumempaa.",
+          "feedback": "Kappaleessa ei ole lämpöä. Lämpö on energiaa, joka siirtyy lämpötilaeron vuoksi. Kappaleeseen varastoitunut energia on sisäenergiaa. Sisäenergia riippuu myös siitä, kuinka paljon ainetta on. Kertaa luvussa *Sisäenergia, lämpömäärä ja energian säilyminen*."
+        },
+        {
+          "text": "Järven vedellä on enemmän sisäenergiaa, vaikka se on kylmempää.",
+          "feedback": "Oikein. Sisäenergia on kaikkien hiukkasten energioiden summa. Järvessä on valtavasti vettä, joten siinä on paljon enemmän sisäenergiaa kuin kupillisessa teetä. Lämpötila kertoo vain, kuinka voimakasta hiukkasten lämpöliike on. Kertaa tarvittaessa luvussa *Sisäenergia, lämpömäärä ja energian säilyminen*.",
+          "correct": true
+        },
+        {
+          "text": "Sisäenergia on yhtä suuri, koska molemmat ovat nestemäistä vettä.",
+          "feedback": "Sama aine ja sama olomuoto eivät tarkoita samaa sisäenergiaa. Sisäenergia riippuu lämpötilasta ja myös aineen määrästä. Järvessä on miljoonia kertoja enemmän vettä kuin kupissa. Kertaa luvussa *Sisäenergia, lämpömäärä ja energian säilyminen*."
+        }
+      ]
+    },
+    {
+      "id": "lt-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 3: hiekka ja vesi",
+      "prompt": "Aurinko antaa yhtä suuren lämpömäärän kilogrammalle hiekkaa ($c = 800\\,\\text{J/(kg}\\cdot\\text{K)}$) ja kilogrammalle vettä ($c = 4190\\,\\text{J/(kg}\\cdot\\text{K)}$). Mitä lämpötiloille tapahtuu?",
+      "choices": [
+        {
+          "text": "Vesi lämpenee enemmän, koska sen $c$ on suurempi.",
+          "feedback": "Suuri $c$ tarkoittaa, että yhden asteen nousuun tarvitaan paljon energiaa. Siksi vesi lämpenee samalla lämpömäärällä vähemmän: $\\Delta T = \\tfrac{Q}{cm}$. Kertaa luvussa *Aineen lämpeneminen ja jäähtyminen*."
+        },
+        {
+          "text": "Kumpikin lämpenee yhtä paljon, koska massat ovat samat.",
+          "feedback": "Lämpötilan muutos riippuu massasta ja myös aineesta: $\\Delta T = \\tfrac{Q}{cm}$. Hiekan $c$ on noin viidesosa veden arvosta. Kertaa luvussa *Aineen lämpeneminen ja jäähtyminen*."
+        },
+        {
+          "text": "Hiekka lämpenee noin viisi kertaa enemmän kuin vesi.",
+          "feedback": "Oikein. $\\Delta T = \\tfrac{Q}{cm}$. Kun $Q$ ja $m$ ovat samat, lämpötilan nousu on kääntäen verrannollinen $c$:hen. Se tarkoittaa, että mitä suurempi $c$ on, sitä vähemmän lämpötila nousee: $4190 : 800 \\approx 5{,}2$. Kertaa tarvittaessa luvussa *Aineen lämpeneminen ja jäähtyminen*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "lt-4",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 4: liesi täysillä",
+      "prompt": "Kattilassa kiehuu vettä normaalipaineessa. Lieden teho muutetaan kaksinkertaiseksi. Mitä tapahtuu?",
+      "choices": [
+        {
+          "text": "Veden lämpötila nousee yli $100\\,{}^\\circ\\text{C}$:n, koska energiaa tulee enemmän.",
+          "feedback": "Kun vesi kiehuu, lisäenergia höyrystää vettä. Se ei nosta lämpötilaa. Normaalipaineessa vesi pysyy $100\\,{}^\\circ\\text{C}$:ssa, kunnes kaikki vesi on kiehunut pois. Kertaa luvussa *Olomuodon muutokset*."
+        },
+        {
+          "text": "Lämpötila pysyy $100\\,{}^\\circ\\text{C}$:ssa, mutta vettä höyrystyy nopeammin.",
+          "feedback": "Oikein. Kun olomuoto muuttuu ja paine pysyy samana, lämpötila pysyy vakiona eli samana. Suurempi teho höyrystää vettä nopeammin: $\\tfrac{\\Delta m}{\\Delta t} = \\tfrac{P}{r}$, kun häviöt ovat pienet. Kertaa tarvittaessa luvussa *Olomuodon muutokset*.",
+          "correct": true
+        },
+        {
+          "text": "Lämpötila ja höyrystymisnopeus pysyvät ennallaan, koska vesi kiehuu jo.",
+          "feedback": "Lämpötila pysyy ennallaan, mutta energia ei katoa. Lisäteho höyrystää vettä, joten vettä kiehuu pois nopeammin. Kertaa luvussa *Olomuodon muutokset*."
+        }
+      ]
+    },
+    {
+      "id": "lt-5",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 5: jää ja vesi",
+      "prompt": "Eristettyyn astiaan laitetaan $0{,}10\\,\\text{kg}$ jäätä ja $0{,}10\\,\\text{kg}$ vettä. Eristetty astia ei päästä lämpöä ulos eikä sisään. Jään lämpötila on $0\\,{}^\\circ\\text{C}$ ja veden lämpötila $20\\,{}^\\circ\\text{C}$. Mikä on lopputila?",
+      "choices": [
+        {
+          "text": "Kaikki jää sulaa, ja lämpötila on $10\\,{}^\\circ\\text{C}$.",
+          "feedback": "Keskiarvossa sulamislämpö unohtuu. Kun vesi jäähtyy $0\\,{}^\\circ\\text{C}$:seen, se luovuttaa eli antaa vain $cm\\Delta T \\approx 8{,}4\\,\\text{kJ}$. Jään sulattaminen vaatii kuitenkin $sm = 33{,}4\\,\\text{kJ}$. Kertaa luvussa *Lämpötasapaino olomuodon muuttuessa*."
+        },
+        {
+          "text": "Kaikki jää sulaa juuri ja juuri, ja lämpötila on $0\\,{}^\\circ\\text{C}$.",
+          "feedback": "Lämpö ei riitä kaiken jään sulattamiseen. Vedestä saadaan noin $8{,}4\\,\\text{kJ}$, mutta sulattamiseen tarvittaisiin $33{,}4\\,\\text{kJ}$. Osa jäästä jää jäljelle. Kertaa luvussa *Lämpötasapaino olomuodon muuttuessa*."
+        },
+        {
+          "text": "Osa jäästä sulaa, ja lämpötila on tasan $0\\,{}^\\circ\\text{C}$.",
+          "feedback": "Oikein. Vedestä saadaan $8{,}4\\,\\text{kJ}$. Se sulattaa vain noin $25\\,\\text{g}$ jäätä. Kun astiassa on sekä jäätä että vettä, lämpötila on $0\\,{}^\\circ\\text{C}$. Kertaa tarvittaessa luvussa *Lämpötasapaino olomuodon muuttuessa*.",
+          "correct": true
+        },
+        {
+          "text": "Vesi jäätyy osittain, ja lämpötila laskee alle $0\\,{}^\\circ\\text{C}$:n.",
+          "feedback": "Jää on jo $0\\,{}^\\circ\\text{C}$:ssa. Siksi se ei voi jäähdyttää vettä alle $0\\,{}^\\circ\\text{C}$:n eikä jäädyttää sitä. Lämpöä siirtyy vedestä jäähän, ja osa jäästä sulaa. Kertaa luvussa *Lämpötasapaino olomuodon muuttuessa*."
+        }
+      ]
+    },
+    {
+      "id": "lt-6",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Lähtötaso 6: reikä levyssä",
+      "prompt": "Teräslevyssä on pyöreä reikä. Levyä lämmitetään tasaisesti $200\\,{}^\\circ\\text{C}$:een. Mitä reiälle tapahtuu?",
+      "choices": [
+        {
+          "text": "Reikä pienenee, koska teräs laajenee reikään päin.",
+          "feedback": "Kappale laajenee eli kasvaa kaikkiin suuntiin samassa suhteessa. Se muuttuu kuin suurennettu valokuva. Reiän reunalla hiukkasten välit kasvavat. Siksi reiän kehä pitenee ja reikä suurenee. Kertaa luvussa *Lämpölaajeneminen*."
+        },
+        {
+          "text": "Reikä pysyy samankokoisena, koska siinä ei ole ainetta.",
+          "feedback": "Reiässä ei ole ainetta, mutta sen reunassa on. Reunan teräs pitenee samalla tavalla kuin muukin levy. Siksi reiän halkaisija kasvaa: $\\Delta L = \\alpha L_0 \\Delta T$. Kertaa luvussa *Lämpölaajeneminen*."
+        },
+        {
+          "text": "Reikä suurenee samassa suhteessa kuin levyn muutkin mitat.",
+          "feedback": "Oikein. Lämpölaajeneminen suurentaa kaikkia mittoja samassa suhteessa. Myös reiän halkaisija kasvaa. Tätä käytetään kutistusliitoksessa: kuuma osa asetetaan paikalleen, ja se kiristyy jäähtyessään. Kertaa tarvittaessa luvussa *Lämpölaajeneminen*.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "aineisto",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Jääpalan lämpenemiskäyrä",
+      "source": "example",
+      "figure": "fy3-7/melting-curve",
+      "text": "Jääpala otetaan pakastimesta. Sen massa on $0{,}60\\,\\text{kg}$. Jääpalaa lämmitetään eristetyssä astiassa. Sen lämpötila mitataan siirretyn energian funktiona, eli kuvaaja näyttää, miten lämpötila muuttuu, kun energiaa siirtyy lisää. Kuvaajassa on kolme osaa. Mieti ensin, mitä kussakin osassa tapahtuu ja mikä laki siinä pätee. Lue sitten kuvaajasta arvot, joita tarvitset. Mallivastauksessa lasketaan samasta kuvaajasta myös sulamislämpö ja veden ominaislämpökapasiteetti.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka suuri on jään ominaislämpökapasiteetti kuvaajan mukaan? Vastaa yksikössä $\\text{J/(kg}\\cdot\\text{K)}$.",
+        "answer": 2083,
+        "unit": "J/(kg·K)",
+        "tolerance": 0.07,
+        "hints": [
+          "Missä kuvaajan osassa aine on vielä jäätä? Kuinka paljon energiaa siihen kuluu?",
+          "Ensimmäisessä osassa olomuoto ei muutu. Siksi $Q = cm\\Delta T$ ja $c = \\dfrac{Q}{m\\,\\Delta T}$.",
+          "Jää lämpenee $-16\\,{}^\\circ\\text{C}$:sta $0\\,{}^\\circ\\text{C}$:seen, kun energiaa siirtyy $20\\,\\text{kJ}$."
+        ],
+        "mistakes": [
+          {
+            "value": 1250,
+            "feedback": "Jaoit energian vain lämpötilan muutoksella. Ominaislämpökapasiteetti ilmoitetaan yhtä kilogrammaa kohti. Jaa siis myös massalla $0{,}60\\,\\text{kg}$."
+          },
+          {
+            "value": 20833,
+            "feedback": "Käytit vaakasuoran osan energiaa $200\\,\\text{kJ}$. Vaakasuoralla osalla jää sulaa eikä lämpene. Siksi tämä energia kertoo sulamislämmöstä. Jään $c$ saadaan ensimmäisestä osasta, joka nousee."
+          },
+          {
+            "value": 129.6,
+            "feedback": "Käytit lämpötilan muutoksena kelvinlämpötilaa $257\\,\\text{K}$. Muutos on $0\\,{}^\\circ\\text{C} - (-16\\,{}^\\circ\\text{C}) = 16\\,\\text{K}$."
+          }
+        ],
+        "solution": "**Annettu:** jään massa $m = 0{,}60\\,\\text{kg}$; kuvaajan mukaan jää lämpenee $-16\\,{}^\\circ\\text{C}$:sta $0\\,{}^\\circ\\text{C}$:seen, kun energiaa siirtyy $0$–$20\\,\\text{kJ}$\n\n**Kysytty:** jään ominaislämpökapasiteetti $c_\\text{j}$ yksikössä $\\text{J/(kg}\\cdot\\text{K)}$\n\n**Periaate:** Ensimmäisessä osassa aine on koko ajan jäätä. Olomuoto ei siis muutu, ja $Q = cm\\Delta T$ pätee. Vaakasuoralla osalla jää sulaa, ja lämpötila pysyy samana ($Q = sm$). Viimeisellä osalla sulamisvesi lämpenee. Astia on eristetty, joten kaikki siirretty energia menee jäähän.\n\n**Kuvaajan lukeminen:** Nousevan osan loppupiste $(20\\,\\text{kJ};\\ 0\\,{}^\\circ\\text{C})$ on ruudukon viivojen risteyksessä. Alkupiste $(0\\,\\text{kJ};\\ -16\\,{}^\\circ\\text{C})$ on kahden ruutuviivan välissä. Siksi alkupisteen lukema on noin $\\pm 1\\,{}^\\circ\\text{C}$:n tarkkuinen.\n\n**Kaava:** $Q = c_\\text{j} m \\Delta T$, joten $c_\\text{j} = \\dfrac{Q}{m\\,\\Delta T}$\n\n**Muunnokset:** $20\\,\\text{kJ} = 20 \\cdot 1000\\,\\text{J} = 20\\,000\\,\\text{J}$. Lämpötilan muutos on sama kelvineinä ja celsiusasteina: $\\Delta T = 0\\,{}^\\circ\\text{C} - (-16\\,{}^\\circ\\text{C}) = 16\\,\\text{K}$.\n\n**Sijoitus:** $c_\\text{j} = \\dfrac{20\\,000\\,\\text{J}}{0{,}60\\,\\text{kg} \\cdot 16\\,\\text{K}} = 2083\\,\\text{J/(kg}\\cdot\\text{K)}$\n\n**Vastaus:** $2{,}1\\,\\text{kJ/(kg}\\cdot\\text{K)}$ eli noin $2100\\,\\text{J/(kg}\\cdot\\text{K)}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa $0{,}60\\,\\text{kg}$ ja kuvaajasta luetussa energiassa $20\\,\\text{kJ}$.\n\n**Järkevyys:** Taulukkoarvo on $2100\\,\\text{J/(kg}\\cdot\\text{K)}$. Samasta kuvaajasta saadaan sulamislämpö $s = 200\\,\\text{kJ} : 0{,}60\\,\\text{kg} \\approx 333\\,\\text{kJ/kg}$. Viimeinen osa nousee noin puolet loivemmin kuin ensimmäinen. Se johtuu siitä, että veden $c$ on noin kaksi kertaa jään $c$: $80\\,\\text{kJ} : (0{,}60\\,\\text{kg} \\cdot 32\\,\\text{K}) \\approx 4{,}2\\,\\text{kJ/(kg}\\cdot\\text{K)}$."
+      }
+    },
+    {
+      "id": "teoriatiivistelma",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Virheet",
+        "Kertaa"
+      ]
+    },
+    {
+      "id": "virhe-sulaminen",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe: jää sulaa",
+      "prompt": "Jäälohkareen massa on $0{,}50\\,\\text{kg}$, ja se on jo $0\\,{}^\\circ\\text{C}$:ssa. Opiskelija laski, kuinka paljon energiaa sen sulattamiseen tarvitaan: ”$Q = cm\\Delta T = 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 0\\,\\text{K} = 0\\,\\text{J}$.” Mikä ratkaisussa on väärin?",
+      "choices": [
+        {
+          "text": "Lämpötila pitää muuttaa kelvineiksi, jolloin $\\Delta T = 273\\,\\text{K}$.",
+          "feedback": "Lämpötilan muutos on sama kelvineinä ja celsiusasteina. Sulamisessa lämpötila ei muutu lainkaan. Virhe on kaavassa: sulamiseen kuluu energiaa $Q = sm$."
+        },
+        {
+          "text": "Kaava on väärä: sulamiseen tarvitaan $Q = sm \\approx 167\\,\\text{kJ}$.",
+          "feedback": "Oikein. $Q = cm\\Delta T$ pätee vain, kun olomuoto ei muutu. Sulaminen vaatii energiaa, vaikka lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa: $Q = 334\\,\\text{kJ/kg} \\cdot 0{,}50\\,\\text{kg} = 167\\,\\text{kJ}$.",
+          "correct": true
+        },
+        {
+          "text": "Ratkaisu on oikein: $0\\,{}^\\circ\\text{C}$:n jää sulaa ilman lisäenergiaa.",
+          "feedback": "Jos jää sulaisi ilman energiaa, se ei pysyisi jäänä $0\\,{}^\\circ\\text{C}$:n huoneessa. Sulaminen kasvattaa hiukkasten välistä vuorovaikutusenergiaa. Siihen tarvitaan energiaa $Q = sm$."
+        }
+      ]
+    },
+    {
+      "id": "kaide",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Perusteltu väite: kaide ja penkki",
+      "prompt": "On pakkasaamu. Puistossa on metallikaide ja puinen penkki. Ne ovat olleet ulkona koko yön. Kaide tuntuu paljaassa kädessä paljon kylmemmältä kuin penkki. Mikä selitys on oikein?",
+      "choices": [
+        {
+          "text": "Kaide on kylmempi, koska metalli jäähtyy yöllä enemmän kuin puu.",
+          "feedback": "Yön aikana molemmat ovat tulleet lämpötasapainoon ulkoilman kanssa. Siksi niiden lämpötila on sama. Ero on siinä, kuinka nopeasti ne johtavat energiaa pois kädestä."
+        },
+        {
+          "text": "Metalli johtaa lämpöä hyvin, joten energiaa siirtyy kädestä nopeasti.",
+          "feedback": "Oikein. Molempien lämpötila on sama. Metallissa on vapaita elektroneja, ja ne kuljettavat energiaa tehokkaasti pois käden kohdalta. Puu johtaa lämpöä huonosti. Siksi puun pinta lämpenee käden kohdalta, ja energiaa siirtyy hitaasti.",
+          "correct": true
+        },
+        {
+          "text": "Metalli siirtää kylmää käteen nopeammin kuin puu.",
+          "feedback": "Kylmä ei siirry. Energiaa siirtyy nettomääräisesti eli kaiken kaikkiaan lämpimämmästä kylmempään. Tässä energia siirtyy kädestä kaiteeseen. Käsi tuntuu kylmältä, kun energiaa lähtee siitä nopeasti."
+        }
+      ]
+    },
+    {
+      "id": "kansi",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Perusteltu väite: juuttunut kansi",
+      "prompt": "Lasipurkin metallikansi on juuttunut kiinni eli se ei aukea. Kannen päälle lasketaan hetken ajan kuumaa vettä. Sen jälkeen kansi aukeaa helpommin. Mikä on paras selitys?",
+      "choices": [
+        {
+          "text": "Kuuma vesi pehmentää lasia, joten purkin suu antaa periksi.",
+          "feedback": "Lasi pehmenee vasta satojen asteiden lämpötilassa. Kuuma vesi lämmittää ennen kaikkea kantta. Metalli myös laajenee enemmän kuin lasi."
+        },
+        {
+          "text": "Kuumuus pienentää kannen ja lasin välistä kitkaa, joten kansi liukuu.",
+          "feedback": "Näissä lämpötiloissa kitka ei juuri riipu lämpötilasta. Tärkeintä on, että metallikansi laajenee ja sen kierteet irtoavat lasista."
+        },
+        {
+          "text": "Metallikansi laajenee lämmetessään enemmän kuin lasi, joten se löystyy.",
+          "feedback": "Oikein. Metallin pituuden lämpötilakerroin on suurempi kuin lasin. Esimerkiksi teräksen kerroin on $12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$ ja lasin $9 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Lisäksi vesi lämmittää ensin kantta. Siksi kannen halkaisija kasvaa enemmän kuin purkin suun halkaisija.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "jaalasi",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Mikä kuvaaja: jäävesi pöydällä",
+      "prompt": "Lasissa on vettä ja paljon jääpaloja. Seoksen lämpötila on aluksi $0\\,{}^\\circ\\text{C}$. Lasi jätetään huoneeseen, jonka lämpötila on $22\\,{}^\\circ\\text{C}$. Lämpötilaa seurataan kaksi tuntia. Mikä kuvaus lämpötilan kuvaajasta ajan funktiona on oikein?",
+      "choices": [
+        {
+          "text": "Kuvaaja nousee tasaisesti suorana kohti huoneen lämpötilaa.",
+          "feedback": "Niin kauan kuin lasissa on jäätä, huoneesta tuleva energia sulattaa jäätä. Se ei nosta lämpötilaa. Siksi kuvaaja on aluksi vaakasuora."
+        },
+        {
+          "text": "Kuvaaja pysyy aluksi vaakasuorana $0\\,{}^\\circ\\text{C}$:ssa ja alkaa nousta vasta, kun jää on sulanut.",
+          "feedback": "Oikein. Jään ja veden seoksen lämpötila on $0\\,{}^\\circ\\text{C}$ niin kauan kuin jäätä on. Sen jälkeen vesi lämpenee. Nousu hidastuu, kun lämpötilaero huoneeseen pienenee.",
+          "correct": true
+        },
+        {
+          "text": "Kuvaaja laskee ensin alle $0\\,{}^\\circ\\text{C}$:n, koska jää jäähdyttää vettä.",
+          "feedback": "Jää ja vesi ovat jo samassa lämpötilassa $0\\,{}^\\circ\\text{C}$. Siksi niiden välillä ei siirry lämpöä. Huoneesta tuleva energia sulattaa jäätä, eikä lämpötila voi laskea."
+        }
+      ]
+    },
+    {
+      "id": "amme",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Kylpyvesi",
+      "prompt": "Ammeessa on $80{,}0\\,\\text{kg}$ vettä, jonka lämpötila on $42{,}0\\,{}^\\circ\\text{C}$. Vesi on liian kuumaa. Siksi ammeeseen lisätään kylmää vettä, jonka lämpötila on $8{,}0\\,{}^\\circ\\text{C}$. Kuinka paljon kylmää vettä tarvitaan, jotta lopun lämpötila on $37{,}0\\,{}^\\circ\\text{C}$? Lämpöhäviöitä ei oteta huomioon. Vastaa kilogrammoina.",
+      "answer": 13.79,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuuma vesi jäähtyy ja kylmä vesi lämpenee. Lopuksi niillä on sama lämpötila. Kumpi luovuttaa eli antaa lämpöä, ja kumpi vastaanottaa sitä?",
+        "Energia säilyy: $c m_1 (T_1 - T) = c m_2 (T - T_2)$. Mikä tekijä supistuu eli häviää yhtälöstä?",
+        "$m_2 = \\dfrac{m_1 (T_1 - T)}{T - T_2} = \\dfrac{80{,}0\\,\\text{kg} \\cdot 5{,}0\\,\\text{K}}{29{,}0\\,\\text{K}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 11.76,
+          "feedback": "Käytit kylmän veden lämpenemisenä erotusta $42{,}0\\,{}^\\circ\\text{C} - 8{,}0\\,{}^\\circ\\text{C}$. Kylmä vesi lämpenee kuitenkin vain loppulämpötilaan asti: $T - T_2 = 29{,}0\\,\\text{K}$."
+        },
+        {
+          "value": 10.81,
+          "feedback": "Jaoit loppulämpötilalla $37{,}0\\,{}^\\circ\\text{C}$. Lämpömäärän laskuun tarvitaan lämpötilan *muutos*. Kylmä vesi lämpenee $37{,}0\\,{}^\\circ\\text{C} - 8{,}0\\,{}^\\circ\\text{C} = 29{,}0\\,\\text{K}$."
+        },
+        {
+          "value": 464,
+          "feedback": "Käänsit lämpötilaerot väärin päin. Kuuma vesi jäähtyy vain $5{,}0\\,\\text{K}$. Siksi kylmää vettä tarvitaan paljon vähemmän kuin kuumaa vettä on."
+        }
+      ],
+      "solution": "**Annettu:** kuuma vesi $m_1 = 80{,}0\\,\\text{kg}$, $T_1 = 42{,}0\\,{}^\\circ\\text{C}$; kylmä vesi $T_2 = 8{,}0\\,{}^\\circ\\text{C}$; loppulämpötila $T = 37{,}0\\,{}^\\circ\\text{C}$\n\n**Kysytty:** kylmän veden massa $m_2$ kilogrammoina\n\n**Periaate:** Energia säilyy, kun häviöitä ei ole. Kuuma vesi luovuttaa yhtä suuren lämpömäärän kuin kylmä vesi vastaanottaa. Kumpikin vesi vain jäähtyy tai lämpenee. Siksi $Q = cm\\Delta T$ pätee, ja $c$ on molemmille sama (luku *Aineen lämpeneminen ja jäähtyminen*).\n\n**Kaava:** $c m_1 (T_1 - T) = c m_2 (T - T_2)$, joten $m_2 = \\dfrac{m_1 (T_1 - T)}{T - T_2}$\n\n**Muunnokset:** Ei tarvita. Ominaislämpökapasiteetti supistuu pois, ja lämpötilaerot ovat samat kelvineinä ja celsiusasteina.\n\n**Sijoitus:** $m_2 = \\dfrac{80{,}0\\,\\text{kg} \\cdot (42{,}0\\,{}^\\circ\\text{C} - 37{,}0\\,{}^\\circ\\text{C})}{37{,}0\\,{}^\\circ\\text{C} - 8{,}0\\,{}^\\circ\\text{C}} = \\dfrac{80{,}0\\,\\text{kg} \\cdot 5{,}0\\,\\text{K}}{29{,}0\\,\\text{K}} = 13{,}79\\,\\text{kg}$\n\n**Vastaus:** $14\\,\\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa. Syy on kuuman veden jäähtyminen $42{,}0\\,{}^\\circ\\text{C} - 37{,}0\\,{}^\\circ\\text{C} = 5{,}0\\,\\text{K}$: erotuksessa on vain kaksi merkitsevää numeroa.\n\n**Järkevyys:** Lämpömäärät ovat yhtä suuret: $c \\cdot 80{,}0\\,\\text{kg} \\cdot 5{,}0\\,\\text{K}$ ja $c \\cdot 13{,}79\\,\\text{kg} \\cdot 29{,}0\\,\\text{K}$, koska $80{,}0 \\cdot 5{,}0 = 400$ ja $13{,}79 \\cdot 29{,}0 \\approx 400$. Kylmää vettä tarvitaan vähän, koska se lämpenee lähes kuusi kertaa enemmän kuin kuuma vesi jäähtyy."
+    },
+    {
+      "id": "juhlajaat",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Jäitä juomiin",
+      "prompt": "Juhliin jäähdytetään $12{,}0\\,\\text{kg}$ juomaa. Juoman lämpötila laskee $22{,}0\\,{}^\\circ\\text{C}$:sta $6{,}0\\,{}^\\circ\\text{C}$:seen. Jäähdyttämiseen käytetään pakastimen jääpaloja, joiden lämpötila on $-18{,}0\\,{}^\\circ\\text{C}$. Kaikki jää sulaa, ja sulamisvesi lämpenee $6{,}0\\,{}^\\circ\\text{C}$:seen. Kuinka paljon jäätä tarvitaan? Juoman ominaislämpökapasiteetti on sama kuin vedellä. Lämpöhäviöitä ei oteta huomioon. Vastaa kilogrammoina.",
+      "answer": 2.027,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Jää saa energiaa juomasta. Mihin kolmeen vaiheeseen jää käyttää tämän energian?",
+        "Jää lämpenee $0\\,{}^\\circ\\text{C}$:seen ($c_\\text{j} m \\Delta T$). Sitten jää sulaa ($sm$). Lopuksi sulamisvesi lämpenee $6{,}0\\,{}^\\circ\\text{C}$:seen ($c_\\text{v} m \\Delta T$).",
+        "$m_\\text{j} = \\dfrac{c_\\text{v} m_\\text{v} \\cdot 16{,}0\\,\\text{K}}{c_\\text{j} \\cdot 18{,}0\\,\\text{K} + s + c_\\text{v} \\cdot 6{,}0\\,\\text{K}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 12.78,
+          "feedback": "Unohdit jään sulamislämmön. Suurin osa juoman luovuttamasta energiasta kuluu jään sulattamiseen: $s = 334\\,\\text{kJ/kg}$."
+        },
+        {
+          "value": 2.24,
+          "feedback": "Unohdit, että jää lämpenee ensin $-18{,}0\\,{}^\\circ\\text{C}$:sta $0\\,{}^\\circ\\text{C}$:seen. Siihen kuluu $c_\\text{j} \\cdot 18{,}0\\,\\text{K}$ jokaista kilogrammaa kohti."
+        },
+        {
+          "value": 2.164,
+          "feedback": "Unohdit, että sulamisvesi lämpenee vielä $0\\,{}^\\circ\\text{C}$:sta $6{,}0\\,{}^\\circ\\text{C}$:seen."
+        }
+      ],
+      "solution": "**Annettu:** juoma $m_\\text{v} = 12{,}0\\,\\text{kg}$, $T_\\text{v} = 22{,}0\\,{}^\\circ\\text{C}$; jää $T_\\text{j} = -18{,}0\\,{}^\\circ\\text{C}$; loppulämpötila $T = 6{,}0\\,{}^\\circ\\text{C}$; taulukosta $c_\\text{v} = 4190\\,\\text{J/(kg}\\cdot\\text{K)}$, $c_\\text{j} = 2100\\,\\text{J/(kg}\\cdot\\text{K)}$ ja $s = 334\\,\\text{kJ/kg}$\n\n**Kysytty:** jään massa $m_\\text{j}$ kilogrammoina\n\n**Periaate:** Energia säilyy. Juoma luovuttaa lämpöä. Tämä lämpö kuluu kolmeen asiaan: jää lämpenee $0\\,{}^\\circ\\text{C}$:seen, jää sulaa vakiolämpötilassa ja sulamisvesi lämpenee $6{,}0\\,{}^\\circ\\text{C}$:seen. Lämpenemisissä pätee $Q = cm\\Delta T$ ja sulamisessa $Q = sm$ (luku *Lämpötasapaino olomuodon muuttuessa*).\n\n**Kaava:** $c_\\text{v} m_\\text{v} (T_\\text{v} - T) = m_\\text{j}\\,(c_\\text{j} \\Delta T_\\text{j} + s + c_\\text{v} \\Delta T_\\text{s})$, joten $m_\\text{j} = \\dfrac{c_\\text{v} m_\\text{v} (T_\\text{v} - T)}{c_\\text{j} \\Delta T_\\text{j} + s + c_\\text{v} \\Delta T_\\text{s}}$. Tässä $\\Delta T_\\text{j}$ on jään lämpeneminen ja $\\Delta T_\\text{s}$ sulamisveden lämpeneminen.\n\n**Muunnokset:** $s = 334\\,\\text{kJ/kg} = 334\\,000\\,\\text{J/kg}$. Lämpötilaerot ovat samat kelvineinä ja celsiusasteina: $T_\\text{v} - T = 16{,}0\\,\\text{K}$, $\\Delta T_\\text{j} = 18{,}0\\,\\text{K}$ ja $\\Delta T_\\text{s} = 6{,}0\\,\\text{K}$.\n\n**Sijoitus:** $m_\\text{j} = \\dfrac{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 12{,}0\\,\\text{kg} \\cdot 16{,}0\\,\\text{K}}{(37\\,800 + 334\\,000 + 25\\,140)\\,\\tfrac{\\text{J}}{\\text{kg}}} = \\dfrac{804\\,480\\,\\text{J}}{396\\,940\\,\\tfrac{\\text{J}}{\\text{kg}}} = 2{,}027\\,\\text{kg}$\n\n**Vastaus:** $2{,}03\\,\\text{kg}$. Vastauksessa on kolme merkitsevää numeroa, kuten massassa $12{,}0\\,\\text{kg}$ ja juoman jäähtymisessä $16{,}0\\,\\text{K}$. Luvussa $6{,}0\\,\\text{K}$ on vain kaksi numeroa, mutta se kuuluu pieneen termiin. Termi on vain noin $6\\,\\%$ nimittäjästä.\n\n**Järkevyys:** Jokainen jääkilo ottaa noin $397\\,\\text{kJ}$. Siitä sulaminen on $334\\,\\text{kJ}$. Jos käytettäisiin pelkkää $0\\,{}^\\circ\\text{C}$:n vettä, tarvittaisiin $804\\,480\\,\\text{J} : 25\\,140\\,\\tfrac{\\text{J}}{\\text{kg}} \\approx 32\\,\\text{kg}$. Se on yli viisitoista kertaa enemmän massaa. Jää siis jäähdyttää tehokkaasti."
+    },
+    {
+      "id": "masto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Radiomasto",
+      "prompt": "Teräksinen radiomasto on $300\\,\\text{m}$ korkea pakkasyönä, kun sen lämpötila on $-25\\,{}^\\circ\\text{C}$. Kesäpäivänä maston lämpötila on $+25\\,{}^\\circ\\text{C}$. Teräksen pituuden lämpötilakerroin on $12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$. Kuinka paljon korkeampi masto on kesällä kuin talvella? Vastaa millimetreinä.",
+      "answer": 180,
+      "unit": "mm",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuinka paljon maston lämpötila muuttuu talvesta kesään?",
+        "Lämpötilan muutos on loppulämpötilan ja alkulämpötilan erotus: $25\\,{}^\\circ\\text{C} - (-25\\,{}^\\circ\\text{C})$.",
+        "$\\Delta L = \\alpha L_0 \\Delta T = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 300\\,\\text{m} \\cdot 50\\,\\text{K}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0,
+          "feedback": "Lämpötilat $-25\\,{}^\\circ\\text{C}$ ja $+25\\,{}^\\circ\\text{C}$ eivät kumoa toisiaan. Muutos on $25\\,{}^\\circ\\text{C} - (-25\\,{}^\\circ\\text{C}) = 50\\,\\text{K}$."
+        },
+        {
+          "value": 1073,
+          "feedback": "Käytit lämpötilan muutoksena kelvinlämpötilaa. Pituuden muutoksen laskuun tarvitaan lämpötilan muutos. Se on sama kelvineinä ja celsiusasteina: $50\\,\\text{K}$."
+        },
+        {
+          "value": 90,
+          "feedback": "Käytit vain toista lämpötilaa, $25\\,\\text{K}$. Masto lämpenee $-25\\,{}^\\circ\\text{C}$:sta $+25\\,{}^\\circ\\text{C}$:seen eli $50\\,\\text{K}$."
+        }
+      ],
+      "solution": "**Annettu:** maston pituus $L_0 = 300\\,\\text{m}$, $\\alpha = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$; lämpötilat $T_1 = -25\\,{}^\\circ\\text{C}$ ja $T_2 = +25\\,{}^\\circ\\text{C}$\n\n**Kysytty:** korkeuden muutos $\\Delta L$ millimetreinä\n\n**Periaate:** Kun teräs lämpenee, sen hiukkaset värähtelevät voimakkaammin. Silloin hiukkasten keskimääräinen etäisyys kasvaa, ja masto pitenee. Teräs pysyy kiinteänä. Muutos $50\\,\\text{K}$ on alle sata kelviniä. Siksi $\\Delta L = \\alpha L_0 \\Delta T$ on hyvä malli (luku *Lämpölaajeneminen*).\n\n**Kaava:** $\\Delta L = \\alpha L_0 \\Delta T$, missä $\\Delta T = T_2 - T_1$\n\n**Muunnokset:** $\\Delta T = 25\\,{}^\\circ\\text{C} - (-25\\,{}^\\circ\\text{C}) = 50\\,\\text{K}$. Muutos on sama kelvineinä ja celsiusasteina. Lopuksi $1\\,\\text{m} = 1000\\,\\text{mm}$.\n\n**Sijoitus:** $\\Delta L = 12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 300\\,\\text{m} \\cdot 50\\,\\text{K} = 0{,}18\\,\\text{m} = 0{,}18 \\cdot 1000\\,\\text{mm} = 180\\,\\text{mm}$\n\n**Vastaus:** $180\\,\\text{mm}$ eli $18\\,\\text{cm}$. Vastauksessa on kaksi merkitsevää numeroa, kuten lämpötilakertoimessa $12 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$ ja lämpötiloissa.\n\n**Järkevyys:** Teräs pitenee noin sadastuhannesosan pituudestaan jokaista kelviniä kohti. $300\\,\\text{m}$:n mastossa se on $3{,}6\\,\\text{mm}$ kelviniä kohti ja $50\\,\\text{K}$:lla $180\\,\\text{mm}$. Muutos on alle tuhannesosa maston korkeudesta. Mastoa tukevat vaijerit eli harukset on silti kiinnitettävä niin, että kiinnitykset joustavat."
+    },
+    {
+      "id": "katko",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sähkökatko pakkasella",
+      "prompt": "Omakotitalossa on sähkökatko, ja lämmitys lakkaa toimimasta. Talo menettää lämpöä $180\\,\\text{W}$ jokaista kelviniä kohti, joka on sisälämpötilan ja ulkolämpötilan erona. Sisällä on $21\\,{}^\\circ\\text{C}$ ja ulkona $-20\\,{}^\\circ\\text{C}$. Talon rakenteiden, kalusteiden ja ilman yhteinen lämpökapasiteetti on $30\\,\\text{MJ/K}$. Kuinka monta kelviniä sisälämpötila laskee ensimmäisen tunnin aikana? Vastaa kelvineinä.",
+      "answer": 0.886,
+      "unit": "K",
+      "tolerance": 0.03,
+      "hints": [
+        "Kuinka suurella teholla lämpöä johtuu talosta ulos sähkökatkon alussa?",
+        "Teho on $P = 180\\,\\tfrac{\\text{W}}{\\text{K}} \\cdot \\Delta T$. Tunnissa siirtyy energia $Q = Pt$. Se laskee lämpötilaa $\\tfrac{Q}{C}$.",
+        "$\\Delta T_\\text{sisä} = \\dfrac{P\\,t}{C} = \\dfrac{7380\\,\\text{W} \\cdot 3600\\,\\text{s}}{30 \\cdot 10^{6}\\,\\text{J/K}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.000246,
+          "feedback": "Laskit, kuinka paljon lämpötila laskee sekunnissa. Kysymys koskee yhtä tuntia. Kerro siis ajalla $3600\\,\\text{s}$."
+        },
+        {
+          "value": 0.454,
+          "feedback": "Käytit lämpötilaerona sisälämpötilaa $21\\,\\text{K}$. Teho riippuu sisälämpötilan ja ulkolämpötilan erosta: $21\\,{}^\\circ\\text{C} - (-20\\,{}^\\circ\\text{C}) = 41\\,\\text{K}$."
+        },
+        {
+          "value": 886,
+          "feedback": "Muunsit lämpökapasiteetin väärin. $30\\,\\text{MJ/K} = 30 \\cdot 10^{6}\\,\\text{J/K}$, ei $30 \\cdot 10^{3}\\,\\text{J/K}$."
+        }
+      ],
+      "solution": "**Annettu:** lämpöhäviö $180\\,\\text{W}$ kelviniä kohti, $T_\\text{sisä} = 21\\,{}^\\circ\\text{C}$, $T_\\text{ulko} = -20\\,{}^\\circ\\text{C}$, lämpökapasiteetti $C = 30\\,\\text{MJ/K}$, aika $t = 1\\,\\text{h}$\n\n**Kysytty:** kuinka paljon sisälämpötila laskee, $\\Delta T_\\text{sisä}$ kelvineinä\n\n**Periaate:** Lämpö johtuu ulos. Teho on verrannollinen lämpötilaeroon samalla tavalla kuin kaavassa $P = UA\\Delta T$. Kun lämmitystä ei ole, energiatasapaino ei toteudu. Talosta lähtevä energia pienentää talon sisäenergiaa, ja lämpötila laskee kaavan $Q = C\\,\\Delta T$ mukaan (luvut *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos* ja *Aineen lämpeneminen ja jäähtyminen*). Ensimmäisen tunnin aikana sisälämpötila muuttuu alle kelvinin. Siksi teho on lähes vakio.\n\n**Kaava:** $P = 180\\,\\tfrac{\\text{W}}{\\text{K}} \\cdot (T_\\text{sisä} - T_\\text{ulko})$ ja $P\\,t = C\\,\\Delta T_\\text{sisä}$, joten $\\Delta T_\\text{sisä} = \\dfrac{P\\,t}{C}$\n\n**Muunnokset:** $1\\,\\text{h} = 3600\\,\\text{s}$ ja $30\\,\\text{MJ/K} = 30 \\cdot 10^{6}\\,\\text{J/K}$. Lämpötilaero on sama kelvineinä: $21\\,{}^\\circ\\text{C} - (-20\\,{}^\\circ\\text{C}) = 41\\,\\text{K}$.\n\n**Sijoitus:** $P = 180\\,\\tfrac{\\text{W}}{\\text{K}} \\cdot 41\\,\\text{K} = 7380\\,\\text{W}$ ja $\\Delta T_\\text{sisä} = \\dfrac{7380\\,\\text{W} \\cdot 3600\\,\\text{s}}{30 \\cdot 10^{6}\\,\\text{J/K}} = 0{,}886\\,\\text{K}$\n\n**Vastaus:** noin $0{,}89\\,\\text{K}$. Vastauksessa on kaksi merkitsevää numeroa, kuten lämpökapasiteetissa $30\\,\\text{MJ/K}$ ja lämpötilaerossa $41\\,\\text{K}$.\n\n**Järkevyys:** Alle asteen lasku tunnissa sopii kokemukseen. Talo jäähtyy pakkasellakin hitaasti, koska sen lämpökapasiteetti on suuri. Lasku hidastuu, kun lämpötilaero pienenee. Tulos on siis arvio vain ensimmäiselle tunnille. Jos lämpötila laskisi koko ajan samaa vauhtia kuin alussa, se laskisi vuorokaudessa noin $21\\,\\text{K}$. Todellisuudessa se laskee vähemmän."
+    },
+    {
+      "id": "lisaa",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Tunnin lopussa on ylioppilaskokeen tyylisiä tehtäviä. Kirjoita ratkaisu vihkoon tai koneelle samalla tavalla kuin kokeessa. Arvioi ratkaisusi vasta sen jälkeen mallivastauksen ja pisteytyksen avulla."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Eristetyssä astiassa $0\\,{}^\\circ\\text{C}$:n jää sulaa $0\\,{}^\\circ\\text{C}$:n vedeksi. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Hiukkasten keskimääräinen liike-energia kasvaa, koska energiaa tulee lisää.",
+          "feedback": "Lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa. Siksi hiukkasten lämpöliike ei voimistu. Tuleva energia muuttaa hiukkasten välisiä vuorovaikutuksia. Kertaa luvussa *Olomuodon muutokset*."
+        },
+        {
+          "text": "Sisäenergia pysyy samana, koska lämpötila ei muutu.",
+          "feedback": "Sama lämpötila ei tarkoita samaa sisäenergiaa. Sulaminen vaatii energiaa $sm$. Tämä energia kasvattaa hiukkasten välistä vuorovaikutusenergiaa. Kertaa luvussa *Sisäenergia, lämpömäärä ja energian säilyminen*."
+        },
+        {
+          "text": "Sisäenergia kasvaa, mutta hiukkasten keskimääräinen liike-energia ei muutu.",
+          "feedback": "Oikein. Sulamisen aikana aineeseen siirtyy energiaa. Energia muuttaa hiukkasten välisiä vuorovaikutuksia ja kasvattaa hiukkasten välistä vuorovaikutusenergiaa. Lämpötila pysyy samana, joten myös lämpöliike pysyy samana. Kertaa tarvittaessa luvussa *Olomuodon muutokset*.",
+          "correct": true
+        }
+      ],
+      "practice": "Kertaa olomuodon muutoksen energia luvussa [*Olomuodon muutokset*](fy3-7.html) ja sisäenergia luvussa [*Sisäenergia, lämpömäärä ja energian säilyminen*](fy3-5.html)."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Räystäskouru on katon reunassa oleva kouru. Kourussa on $12\\,\\text{m}$ lämpökaapelia. Kaapelin teho on $30\\,\\text{W}$ jokaista metriä kohti. Kaapeli sulattaa kouruun kertynyttä lunta, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Kaikki kaapelin energia menee lumen sulattamiseen. Kuinka monta kilogrammaa lunta kaapeli sulattaa tunnissa? Vastaa kilogrammoina.",
+      "answer": 3.88,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuinka paljon energiaa kaapeli antaa tunnissa?",
+        "Kaapelin teho on $P = 12\\,\\text{m} \\cdot 30\\,\\tfrac{\\text{W}}{\\text{m}}$ ja energia $Q = Pt$. Lumi on jo $0\\,{}^\\circ\\text{C}$:ssa. Siksi energia kuluu sulamiseen: $Q = sm$.",
+        "$m = \\dfrac{P\\,t}{s} = \\dfrac{360\\,\\text{W} \\cdot 3600\\,\\text{s}}{334\\,000\\,\\text{J/kg}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.573,
+          "feedback": "Käytit höyrystymislämpöä. Lumi sulaa vedeksi. Siksi oikea vakio on ominaissulamislämpö $s = 334\\,\\text{kJ/kg}$."
+        },
+        {
+          "value": 0.00108,
+          "feedback": "Laskit, kuinka paljon lunta sulaa sekunnissa. Kerro teho tunnin pituudella sekunteina: $1\\,\\text{h} = 3600\\,\\text{s}$."
+        },
+        {
+          "value": 0.0647,
+          "feedback": "Käytit ajaksi minuutin. Tunti on $3600\\,\\text{s}$."
+        }
+      ],
+      "practice": "Kertaa sulamislämpö luvussa [*Olomuodon muutokset*](fy3-7.html).",
+      "solution": "**Annettu:** kaapelin pituus $12\\,\\text{m}$ ja teho $30\\,\\text{W}$ metriä kohti, aika $t = 1\\,\\text{h}$; lumi on $0\\,{}^\\circ\\text{C}$:ssa; taulukosta $s = 334\\,\\text{kJ/kg}$\n\n**Kysytty:** sulavan lumen massa $m$ kilogrammoina\n\n**Periaate:** Lumi on jo sulamislämpötilassa. Siksi kaapelin energia ei nosta lämpötilaa. Energia sulattaa lunta, ja lämpötila pysyy samana: $Q = sm$. Kaapelin teho on vakio. Siksi sen antama energia on $Q = Pt$ (luku *Olomuodon muutokset*).\n\n**Kaava:** $P\\,t = s m$, joten $m = \\dfrac{P\\,t}{s}$\n\n**Muunnokset:** $P = 12\\,\\text{m} \\cdot 30\\,\\tfrac{\\text{W}}{\\text{m}} = 360\\,\\text{W}$, $1\\,\\text{h} = 3600\\,\\text{s}$ ja $334\\,\\text{kJ/kg} = 334\\,000\\,\\text{J/kg}$.\n\n**Sijoitus:** $m = \\dfrac{360\\,\\text{W} \\cdot 3600\\,\\text{s}}{334\\,000\\,\\text{J/kg}} = \\dfrac{1\\,296\\,000\\,\\text{J}}{334\\,000\\,\\text{J/kg}} = 3{,}88\\,\\text{kg}$\n\n**Vastaus:** $3{,}9\\,\\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, kuten pituudessa $12\\,\\text{m}$ ja tehossa $30\\,\\text{W}$ metriä kohti.\n\n**Järkevyys:** Kaapeli antaa tunnissa $0{,}36\\,\\text{kWh}$ eli noin $1{,}3\\,\\text{MJ}$. Jokainen lumikilo vaatii $0{,}334\\,\\text{MJ}$. Lunta sulaa siis vähän alle neljä kiloa. Todellisuudessa osa energiasta lämmittää ilmaa ja kourua. Siksi lunta sulaa vähän vähemmän."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä",
+      "prompt": "Kaksi samanlaista mehulasia jäähdytetään. Toiseen lasiin lisätään $50\\,\\text{g}$ jääpaloja, joiden lämpötila on $0\\,{}^\\circ\\text{C}$. Toiseen lasiin lisätään $50\\,\\text{g}$ vettä, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Kumpi mehu jäähtyy enemmän? Selitä energian säilymisen avulla. Arvioi ero myös luvuilla.",
+      "criteria": [
+        "Vastaus kertoo, että jääpaloilla jäähdytetty mehu jäähtyy enemmän.",
+        "Vastaus kertoo, että mehun luovuttama energia kuluu ensin jään sulattamiseen ($Q = sm$) ja vasta sitten sulamisveden lämpenemiseen. $0\\,{}^\\circ\\text{C}$:n vesi sen sijaan vain lämpenee.",
+        "Vastaus arvioi eron: $50\\,\\text{g}$:n sulamiseen kuluu $334\\,\\text{kJ/kg} \\cdot 0{,}050\\,\\text{kg} \\approx 17\\,\\text{kJ}$. Se on yhtä paljon kuin energia, joka lämmittää $50\\,\\text{g}$ vettä noin $80\\,\\text{K}$.",
+        "Vastaus perustelee energian säilymisellä: eristetyssä lasissa mehun luovuttama lämpö on yhtä suuri kuin jään tai veden vastaanottama lämpö."
+      ],
+      "model": "Jääpaloilla jäähdytetty mehu jäähtyy enemmän. Energia säilyy. Siksi mehun luovuttama lämpö on yhtä suuri kuin lisätyn aineen vastaanottama lämpö. $0\\,{}^\\circ\\text{C}$:n vesi vain lämpenee. Jokainen kelvin vaatii $4{,}19\\,\\text{kJ}$ kilogrammaa kohti. Jää sen sijaan ottaa ensin sulamislämmön, ja sen lämpötila pysyy silloin $0\\,{}^\\circ\\text{C}$:ssa. $50\\,\\text{g}$:n sulattamiseen kuluu $334\\,\\text{kJ/kg} \\cdot 0{,}050\\,\\text{kg} \\approx 17\\,\\text{kJ}$. Sama energia lämmittäisi $50\\,\\text{g}$ vettä noin $80\\,\\text{K}$. Vasta sulamisen jälkeen sulamisvesi lämpenee samalla tavalla kuin $0\\,{}^\\circ\\text{C}$:n vesi. Siksi jää ottaa mehusta paljon enemmän energiaa, ja mehun lämpötila laskee enemmän. Näin käy, vaikka jää ja vesi olivat aluksi yhtä kylmiä.",
+      "practice": "Kertaa jään ja veden lämpötasapaino luvussa [*Lämpötasapaino olomuodon muuttuessa*](fy3-14.html)."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+    }
+  ]
+}

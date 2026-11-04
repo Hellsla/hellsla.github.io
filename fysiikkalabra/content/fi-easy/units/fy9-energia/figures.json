@@ -1,0 +1,23 @@
+{
+ "Kuvitus: talvi-ilta. Etualalla punainen omakotitalo, jonka ikkunoista loistaa valoa, ja sen seinän latauslaitteeseen kytketty sähköauto. Talolta lähtee sähköjohto pylväiden kautta kauas järven yli. Järven toisella rannalla on voimalaitos, jonka piipusta ja jäähdytyksestä nousee höyryä, ja sen vieressä kolme tuulivoimalaa.": "Kuvitus: talvi-ilta. Edessä on punainen omakotitalo. Sen ikkunoista loistaa valoa. Talon seinällä on latauslaite, ja siihen on kytketty sähköauto. Talolta lähtee sähköjohto. Johto kulkee pylväiden kautta kauas järven yli. Järven toisella rannalla on voimalaitos. Sen piipusta ja jäähdytyksestä nousee höyryä. Voimalaitoksen vieressä on kolme tuulivoimalaa.",
+ "Käsitekartta. Ylhäällä solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Siitä lähtee alas kolme haaraa. Teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Hyötysuhde: eeta = E a / E o, häviöt E o = E a + E h ja energiaketju, jossa eeta on vaiheiden hyötysuhteiden tulo eeta 1 eeta 2 eeta 3. Energian lähde: polttoaine E = H m, työ W = F s ja nostotyö W = m g h.": "Käsitekartta. Ylhäällä on solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Solmusta lähtee alas kolme haaraa. Ensimmäinen haara on teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Toinen haara on hyötysuhde: eeta = E a / E o, häviöt E o = E a + E h ja energiaketju. Energiaketjussa eeta on vaiheiden hyötysuhteiden tulo eeta 1 eeta 2 eeta 3. Kolmas haara on energian lähde: polttoaine E = H m, työ W = F s ja nostotyö W = m g h.",
+ "energia säilyy": "energia säilyy",
+ "alussa": "alussa",
+ "lopussa": "lopussa",
+ "määritelmä": "määritelmä",
+ "energia tehosta": "energia tehosta",
+ "kilowattitunti": "kilowattitunti",
+ "häviöt": "häviöt",
+ "energiaketju": "energiaketju",
+ "polttoaine": "polttoaine",
+ "työ": "työ",
+ "nostotyö": "nostotyö",
+ "Energiavirtakuvio mittakaavassa lauhdevoimalaitoksesta. Vasemmalta tulee polttoaineteho 500 MW leveänä kaistana. Ensimmäisessä vaiheessa, kattilassa, hyötysuhde on 0,90: kaistasta kääntyy alas harmaa häviökaista 50 MW, ja jäljelle jää 450 MW. Toisessa vaiheessa, höyrykierrossa, hyötysuhde on 0,45: alas kääntyy leveä häviökaista 248 MW, ja jäljelle jää 203 MW. Kolmannessa vaiheessa, generaattorissa ja muuntajassa, hyötysuhde on 0,98 ja häviö vain 4 MW. Oikealle lähtee vihreä sähkön kaista, 198 MW eli noin 40 prosenttia polttoainetehosta. Häviöt muuttuvat hukkalämmöksi.": "Energiavirtakuvio lauhdevoimalaitoksesta. Kuva on mittakaavassa. Vasemmalta tulee polttoaineteho 500 MW leveänä kaistana. Ensimmäinen vaihe on kattila. Sen hyötysuhde on 0,90. Kaistasta kääntyy alas harmaa häviökaista 50 MW, ja jäljelle jää 450 MW. Toinen vaihe on höyrykierto. Sen hyötysuhde on 0,45. Alas kääntyy leveä häviökaista 248 MW, ja jäljelle jää 203 MW. Kolmas vaihe on generaattori ja muuntaja. Sen hyötysuhde on 0,98, ja häviö on vain 4 MW. Oikealle lähtee vihreä sähkön kaista, 198 MW. Se on noin 40 prosenttia polttoainetehosta. Häviöt muuttuvat hukkalämmöksi.",
+ "MW": "MW",
+ "sähkö": "sähkö",
+ "häviöt:": "häviöt:",
+ "kattila": "kattila",
+ "höyrykierto": "höyrykierto",
+ "generaattori ja muuntaja": "generaattori ja muuntaja",
+ "Kuvaaja: talon sähkönkulutus vuorokaudessa E ulkolämpötilan T funktiona. Kahdeksan mustaa pistettä lämpötiloissa −19…2 °C. Pisteisiin on sovitettu laskeva suora, jota on jatkettu katkoviivana molempiin suuntiin. Suora kulkee pisteiden (−20 °C; 191 kWh) ja (0 °C; 93 kWh) kautta; nämä kaksi suoran pistettä on ympyröity, ja niistä luetaan kulmakerroin noin −4,9 kWh asteelta. Lämpötilassa −28 °C suoralta luetaan noin 230 kWh. Suora laskee muun kulutuksen tasolle 12 kWh noin lämpötilassa 17 °C.": "Kuvaaja: talon sähkönkulutus vuorokaudessa E ulkolämpötilan T funktiona. Kuvaajassa on kahdeksan mustaa pistettä lämpötiloissa −19…2 °C. Pisteisiin on sovitettu laskeva suora. Suoraa on jatkettu katkoviivana molempiin suuntiin. Suora kulkee pisteiden (−20 °C; 191 kWh) ja (0 °C; 93 kWh) kautta. Nämä kaksi suoran pistettä on ympyröity. Niistä luetaan kulmakerroin, noin −4,9 kWh asteelta. Lämpötilassa −28 °C suoralta luetaan noin 230 kWh. Suora laskee muun kulutuksen tasolle 12 kWh noin lämpötilassa 17 °C."
+}

@@ -1,0 +1,847 @@
+{
+  "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa yhteen tunnin asiat: varaukset, sähkökentän, potentiaalin, kondensaattorin, puolijohteet ja sähköturvallisuuden. Ratkaise tehtävät samalla tavalla kuin kokeessa. Piirrä tarvittaessa voimakuvio tai kytkentä. Perustele, mitä periaatetta käytät ja miksi se pätee. Ratkaise kysytty suure symboleilla ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "tasks": [
+    {
+      "id": "fy9-sahkokentta-s1",
+      "title": "Kaksi varattua palloa langoissa",
+      "source": "example",
+      "source_note": "Koejärjestely ja sen luvut ovat keksitty esimerkki. Suuruusluokat ovat samat kuin koulun sähköstatiikan demonstraatiossa.",
+      "skills": [
+        "fy6-10",
+        "fy4-5",
+        "fy4-3"
+      ],
+      "text": "Fysiikan tunnilla ripustettiin kaksi samanlaista styroksipalloa ohuilla eristävillä langoilla samaan koukkuun. Pallojen pinnalla on grafiittia. Pallot varattiin niin, että niitä kosketettiin samaan aikaan varatulla sauvalla. Silloin ne saivat yhtä suuret samanmerkkiset varaukset. Pallot erkanivat eli siirtyivät kauemmas toisistaan. Sitten ne asettuivat lepoon niin, että langat muodostivat symmetrisen V-kirjaimen.\n\n- kummankin pallon massa $0{,}50\\,\\text{g}$\n- langan pituus koukusta pallon keskipisteeseen $40{,}0\\,\\text{cm}$\n- pallojen keskipisteiden etäisyys levossa $8{,}0\\,\\text{cm}$\n\nPallot ovat pieniä verrattuna niiden väliseen etäisyyteen, ja ilma on kuivaa.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Piirrä toisen pallon voimakuvio. Kuinka suuri sähköinen voima palloihin vaikuttaa?",
+          "answer": {
+            "value": 0.493,
+            "unit": "mN",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Pallossa on paino $\\overline{G}$ alas, langan jännitysvoima $\\overline{T}$ lankaa pitkin kohti koukkua ja toisen pallon sähköinen voima $\\overline{F}_\\text{s}$ vaakasuoraan poispäin toisesta pallosta."
+            },
+            {
+              "text": "Perustelee, että pallo on levossa, joten voimien summa on nolla. Langan voiman vaakakomponentti kumoaa sähköisen voiman, ja pystykomponentti kumoaa painon.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tan\\alpha = \\dfrac{F_\\text{s}}{mg}$ ja $\\sin\\alpha = \\dfrac{r/2}{L}$, joten $F_\\text{s} = mg\\tan\\alpha$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\sin\\alpha = \\tfrac{4{,}0\\,\\text{cm}}{40{,}0\\,\\text{cm}} = 0{,}100$, $\\alpha \\approx 5{,}74^\\circ$, $F_\\text{s} = 4{,}905\\,\\text{mN} \\cdot 0{,}1005 \\approx 0{,}493\\,\\text{mN}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{s} \\approx 0{,}49\\,\\text{mN}$ kahdella merkitsevällä numerolla kuten etäisyys $8{,}0\\,\\text{cm}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on kummankin pallon varaus? Kuinka monta elektronia on siirtynyt, jos pallot ovat positiivisia?",
+          "answer": {
+            "value": 18.74,
+            "unit": "nC",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Coulombin laki samoille varauksille: $F_\\text{s} = k\\dfrac{q^2}{r^2}$, joten $q = r\\sqrt{\\dfrac{F_\\text{s}}{k}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$q = 0{,}080\\,\\text{m} \\cdot \\sqrt{\\dfrac{4{,}93 \\cdot 10^{-4}\\,\\text{N}}{8{,}988 \\cdot 10^{9}\\,\\text{N}\\cdot\\text{m}^2/\\text{C}^2}} \\approx 1{,}87 \\cdot 10^{-8}\\,\\text{C}$ ja $n = \\tfrac{q}{e} \\approx 1{,}2 \\cdot 10^{11}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$q \\approx 19\\,\\text{nC}$ kahdella merkitsevällä numerolla; elektroneja on siirtynyt palloista pois"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Kymmeniä nanocoulombeja on hankaamalla saatavan varauksen suuruusluokka eli suunnilleen sen koko. $10^{11}$ elektronia on vain pieni osa pallon elektroneista."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Toista palloa kosketetaan hetken kolmannella samanlaisella pallolla, jossa ei ole varausta. Sitten kolmas pallo viedään pois. Kuinka suuri sähköinen voima palloihin vaikuttaisi, jos niiden etäisyys olisi edelleen $8{,}0\\,\\text{cm}$? Ovatko pallojen voimat yhtä suuret?",
+          "answer": {
+            "value": 0.2465,
+            "unit": "mN",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee varauksen säilymisellä, että samanlaiset pallot jakavat varauksen tasan. Kosketetun pallon varaus on $\\tfrac{q}{2}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F = k\\dfrac{q \\cdot \\tfrac{q}{2}}{r^2} = \\tfrac12 \\cdot 0{,}493\\,\\text{mN} \\approx 0{,}25\\,\\text{mN}$"
+            },
+            {
+              "text": "Perustelee, että voimat ovat voima ja vastavoima. Siksi kumpaankin palloon vaikuttaa yhtä suuri voima, vaikka varaukset ovat erisuuret.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Pallot asettuvat uuteen lepoasemaan. Kuinka suuri on nyt pallojen keskipisteiden etäisyys?",
+          "answer": {
+            "value": 6.35,
+            "unit": "cm",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Kulma on pieni, joten $\\tan\\alpha \\approx \\sin\\alpha = \\tfrac{r}{2L}$; perustelee oletuksen."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$k\\dfrac{q \\cdot q/2}{r^2} = mg\\dfrac{r}{2L}$, joten $r^3 = \\tfrac12 r_0^3$ ja $r = \\dfrac{r_0}{\\sqrt[3]{2}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$r = \\dfrac{8{,}0\\,\\text{cm}}{1{,}26} \\approx 6{,}3\\,\\text{cm}$"
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-10",
+        "math": "fy6-10",
+        "transfer": "fy4-5"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s2",
+      "title": "Demonstraatiokondensaattori ja lasilevy",
+      "source": "example",
+      "source_note": "Kondensaattori ja sen luvut ovat keksitty esimerkki. Eristeiden arvot ovat luvun *Kondensaattori ja sen energia* taulukosta.",
+      "skills": [
+        "fy6-13",
+        "fy6-11",
+        "fy6-12"
+      ],
+      "text": "Fysiikan luokassa on demonstraatiokondensaattori. Siinä on kaksi neliön muotoista alumiinilevyä, joiden sivu on $25{,}0\\,\\text{cm}$. Levyt ovat yhdensuuntaiset, ja ne ovat $3{,}00\\,\\text{mm}$:n päässä toisistaan. Levyjen välissä on ilmaa. Kondensaattori ladataan suurjännitelähteellä jännitteeseen $4{,}50\\,\\text{kV}$.\n\n| Eriste | $\\varepsilon_\\text{r}$ | $E_\\text{max}\\ (\\text{MV/m})$ |\n|---|---|---|\n| ilma | $1{,}0$ | $3$ |\n| lasi | $5{,}6$ | $14$ |\n\nSähkövakio on $\\varepsilon_0 = 8{,}854 \\cdot 10^{-12}\\,\\text{F/m}$. Levyjen reunojen vaikutusta ei oteta huomioon.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on kondensaattorin kapasitanssi? Kuinka suuri varaus levyillä on?",
+          "answer": [
+            {
+              "name": "C",
+              "value": 184.5,
+              "unit": "pF",
+              "tolerance": 0.02
+            },
+            {
+              "name": "Q",
+              "value": 0.8301,
+              "unit": "µC",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$C = \\dfrac{\\varepsilon_0\\varepsilon_\\text{r}A}{d}$ ja $Q = CU$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$A = 0{,}250\\,\\text{m} \\cdot 0{,}250\\,\\text{m} = 0{,}0625\\,\\text{m}^2$, $C = \\dfrac{8{,}854 \\cdot 10^{-12}\\,\\text{F/m} \\cdot 0{,}0625\\,\\text{m}^2}{0{,}00300\\,\\text{m}} \\approx 1{,}84 \\cdot 10^{-10}\\,\\text{F}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$Q = 1{,}845 \\cdot 10^{-10}\\,\\text{F} \\cdot 4500\\,\\text{V} \\approx 8{,}30 \\cdot 10^{-7}\\,\\text{C}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$C \\approx 184\\,\\text{pF}$ ja $Q \\approx 0{,}830\\,\\mu\\text{C}$ kolmella merkitsevällä numerolla kuten lähtötiedot"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka paljon energiaa kondensaattoriin on varastoitunut? Arvioi, onko ilmaväli turvassa läpilyönniltä.",
+          "answer": [
+            {
+              "name": "W",
+              "value": 1.868,
+              "unit": "mJ",
+              "tolerance": 0.02
+            },
+            {
+              "name": "E",
+              "value": 1.5,
+              "unit": "MV/m",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$W = \\tfrac12 CU^2$ ja $E = \\dfrac{U}{d}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W = \\tfrac12 \\cdot 1{,}845 \\cdot 10^{-10}\\,\\text{F} \\cdot (4500\\,\\text{V})^2 \\approx 1{,}87\\,\\text{mJ}$ ja $E = \\tfrac{4500\\,\\text{V}}{0{,}00300\\,\\text{m}} = 1{,}50\\,\\text{MV/m}$"
+            },
+            {
+              "text": "Vertaa ilman läpilyöntilujuuteen: $1{,}50\\,\\text{MV/m}$ on puolet arvosta $3\\,\\text{MV/m}$. Läpilyönti tapahtuisi siis vasta noin $9\\,\\text{kV}$:n jännitteellä.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$W \\approx 1{,}87\\,\\text{mJ}$ ja $E \\approx 1{,}50\\,\\text{MV/m}$ kolmella merkitsevällä numerolla"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kondensaattori irrotetaan lähteestä. Levyjen väliin työnnetään lasilevy, jonka paksuus on $3{,}00\\,\\text{mm}$. Lasilevy täyttää välin kokonaan. Kuinka suuri on nyt levyjen välinen jännite? Kuinka suuri on kondensaattorin energia?",
+          "answer": [
+            {
+              "name": "U",
+              "value": 803.6,
+              "unit": "V",
+              "tolerance": 0.02
+            },
+            {
+              "name": "W",
+              "value": 0.3335,
+              "unit": "mJ",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Perustelee, että irrotetun kondensaattorin varaus $Q$ ei muutu, mutta kapasitanssi kasvaa $\\varepsilon_\\text{r}$-kertaiseksi.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$U' = \\dfrac{Q}{\\varepsilon_\\text{r}C} = \\dfrac{U}{\\varepsilon_\\text{r}}$ ja $W' = \\tfrac12 QU'$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$U' = \\tfrac{4500\\,\\text{V}}{5{,}6} \\approx 804\\,\\text{V}$ ja $W' = \\tfrac12 \\cdot 8{,}30 \\cdot 10^{-7}\\,\\text{C} \\cdot 804\\,\\text{V} \\approx 0{,}334\\,\\text{mJ}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$U' \\approx 8{,}0 \\cdot 10^{2}\\,\\text{V}$ ja $W' \\approx 0{,}33\\,\\text{mJ}$ kahdella merkitsevällä numerolla kuten $\\varepsilon_\\text{r} = 5{,}6$; energia on pienentynyt $5{,}6$-kertaisesti"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Mihin c-kohdan energia on kadonnut? Opiskelija sanoo: ”Lähde on irrotettu, joten levyihin voi nyt koskea paljain käsin.” Arvioi väite.",
+          "criteria": [
+            {
+              "text": "Selittää, että levyjen kenttä vetää polarisoituvaa lasilevyä levyjen väliin ja tekee sille työtä. Energia siirtyy työntävään käteen tai lasin liike-energiaksi ja sisäenergiaksi.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee, että irrotettu kondensaattori säilyttää varauksensa. Siksi levyjen välillä on yhä satojen volttien jännite.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä. Ennen kuin levyihin kosketaan, kondensaattori puretaan eli siitä poistetaan varaus. Se tehdään esimerkiksi eristetyllä purkauskapulalla tai vastuksen kautta."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-13",
+        "math": "fy6-13",
+        "transfer": "fy6-11",
+        "communication": "fy6-13"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s3",
+      "title": "Levyjen etäisyys ja kapasitanssi",
+      "source": "example",
+      "source_note": "Aineisto on keksitty esimerkki. Kapasitanssit on laskettu levykondensaattorin mallista. Niihin on lisätty johtojen kapasitanssi ja vaihtelua, joka muistuttaa oikeiden mittausten vaihtelua.",
+      "skills": [
+        "fy6-13",
+        "fy1-4",
+        "fy1-3"
+      ],
+      "text": "Opiskelijat tutkivat, miten levykondensaattorin kapasitanssi riippuu levyjen etäisyydestä. He asettivat vastakkain kaksi neliön muotoista alumiinilevyä, joiden sivu on $20{,}0\\,\\text{cm}$. Levyjen väliin pantiin muovisia välikappaleita. Levyjen välissä oli ilmaa. Levyt kytkettiin johdoilla yleismittariin, joka mittaa kapasitanssia.\n\n| $d\\ (\\text{mm})$ | $C\\ (\\text{pF})$ |\n|:---:|:---:|\n| $1{,}0$ | $375$ |\n| $1{,}5$ | $260$ |\n| $2{,}0$ | $199$ |\n| $3{,}0$ | $140$ |\n| $4{,}0$ | $109$ |\n| $5{,}0$ | $93$ |\n| $6{,}0$ | $82$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Esitä kapasitanssi levyjen etäisyyden funktiona kuvaajana. Perustele kuvaajan avulla, onko kapasitanssi kääntäen verrannollinen levyjen etäisyyteen.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla $d\\ (\\text{mm})$, pystyakselilla $C\\ (\\text{pF})$."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "text": "Perustelee aineistosta. Kun etäisyys kaksinkertaistuu $1{,}0\\,\\text{mm}$:stä $2{,}0\\,\\text{mm}$:iin tai $3{,}0\\,\\text{mm}$:stä $6{,}0\\,\\text{mm}$:iin, kapasitanssi ei puolitu ($375 \\to 199$, $140 \\to 82$). Käyrä ei näytä lähestyvän nollaa vaan noin $20\\,\\text{pF}$:n arvoa. Siksi pelkkä kääntäen verrannollisuus ei sovi.",
+              "tag": "graph",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 6,
+          "text": "Muodosta aineistosta suure, jonka funktiona kapasitanssin kuvaaja on suora. Perustele valintasi. Esitä kuvaaja ja sovita pisteisiin suora.",
+          "criteria": [
+            {
+              "text": "Perustelee linearisoinnin: levykondensaattorille $C = \\varepsilon_0 A \\cdot \\tfrac{1}{d}$, joten $C$ on suoraan verrannollinen suureeseen $\\tfrac{1}{d}$. Johtojen ja mittarin oma kapasitanssi lisää vakiotermin eli luvun, joka ei riipu etäisyydestä.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Laskee taulukkoon suureen $\\tfrac{1}{d}$ arvot oikein yksikköineen.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla $\\tfrac{1}{d}\\ (\\tfrac{1}{\\text{mm}})$, pystyakselilla $C\\ (\\text{pF})$."
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "Sovitettu suora kulkee pisteiden läpi. Se leikkaa pystyakselin noin $22\\,\\text{pF}$:n kohdalla, ei origossa."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä suoran kulmakerroin. Määritä sen avulla sähkövakio $\\varepsilon_0$. Vertaa tulosta taulukkoarvoon $8{,}854 \\cdot 10^{-12}\\,\\text{F/m}$.",
+          "answer": {
+            "value": 8.844,
+            "unit": "pF/m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kulmakerroin luetaan kahdesta suoran pisteestä, jotka ovat kaukana toisistaan, esimerkiksi $(0{,}20; 93)$ ja $(1{,}00; 376)$: $k \\approx 354\\,\\text{pF}\\cdot\\text{mm}$."
+            },
+            {
+              "text": "Tulkitsee kulmakertoimen: mallin mukaan $k = \\varepsilon_0 A$, kun levyjen välissä on ilmaa ($\\varepsilon_\\text{r} \\approx 1{,}0$).",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\varepsilon_0 = \\dfrac{k}{A}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\varepsilon_0 = \\dfrac{354 \\cdot 10^{-12}\\,\\text{F} \\cdot 10^{-3}\\,\\text{m}}{0{,}0400\\,\\text{m}^2} \\approx 8{,}84 \\cdot 10^{-12}\\,\\text{F/m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\varepsilon_0 \\approx (8{,}8 \\pm 0{,}3) \\cdot 10^{-12}\\,\\text{F/m}$ kahdella merkitsevällä numerolla, koska välikappaleiden paksuus on epävarma muutamia prosentteja; välitulos $8{,}84 \\cdot 10^{-12}\\,\\text{F/m}$ hyväksytään"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "Missä kohdassa suora leikkaa pystyakselin, ja mitä se tarkoittaa tässä mittauksessa? Arvioi, millä etäisyyksillä levykondensaattorin malli ei enää päde.",
+          "answer": {
+            "value": 22.2,
+            "unit": "pF",
+            "tolerance": 0.15
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Suoran jatke leikkaa pystyakselin noin $22\\,\\text{pF}$:n kohdalla, kun $\\tfrac{1}{d} \\to 0$."
+            },
+            {
+              "text": "Tulkitsee vakiotermin: se on johtojen ja mittarin oma kapasitanssi. Mittari mittaa sen levyjen kapasitanssin lisäksi. Mittari näyttäisi sen, vaikka levyt olisivat hyvin kaukana toisistaan.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Kahden suoran pisteen avulla $b = 93\\,\\text{pF} - 354\\,\\text{pF}\\cdot\\text{mm} \\cdot 0{,}20\\,\\tfrac{1}{\\text{mm}} \\approx 22\\,\\text{pF}$"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Malli edellyttää homogeenista kenttää. Siksi etäisyyden on oltava pieni levyn sivuun $200\\,\\text{mm}$ verrattuna. Kun $d$ kasvaa, reunojen kenttä kasvattaa kapasitanssia suuremmaksi kuin mallin arvo."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Pienimmillä etäisyyksillä välikappaleiden paksuus ja levyjen taipuminen ovat epävarmoja, esimerkiksi $\\pm 0{,}1\\,\\text{mm}$. Se on $10\\,\\%$ etäisyydestä $1{,}0\\,\\text{mm}$. Siksi kulmakerroin kannattaa määrittää koko suoralta."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "concept": "fy6-13",
+        "math": "fy6-13",
+        "transfer": "fy6-13",
+        "experiment": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s4",
+      "title": "Lintu, onkivapa ja pudonnut johdin",
+      "source": "example",
+      "source_note": "Tilanteet ovat keksittyjä esimerkkejä. Johdon resistanssi ja virta ovat samaa suuruusluokkaa kuin keskijänniteverkossa yleensä.",
+      "skills": [
+        "fy6-15",
+        "fy6-12",
+        "fy6-13"
+      ],
+      "text": "Järven rannalla kulkee $20\\,\\text{kV}$:n keskijännitelinja. Sen johtimet ovat paljaita alumiiniköysiä. Nimellisjännite $20\\,\\text{kV}$ on vaihejohtimien välinen jännite. Siksi kunkin johtimen jännite maahan nähden on noin $12\\,\\text{kV}$. Johtimessa kulkee $100\\,\\text{A}$:n virta. Johtimen resistanssi on $0{,}30\\,\\Omega$ kilometriä kohti. Ilman läpilyöntilujuus on noin $3\\,\\text{MV/m}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Varis istuu johtimella. Opiskelija sanoo: ”Lintu on turvassa, koska sen jalat ovat kuivat ja eristävät.” Arvioi väite.",
+          "criteria": [
+            {
+              "text": "Selittää, että virta kulkee kehon läpi vain silloin, jos kehon kahden kohdan välillä on jännite eli potentiaaliero.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Laskee tai arvioi linnun jalkojen välisen jännitteen: noin $5\\,\\text{cm}$:n matkalla $U = RI = 0{,}30\\,\\tfrac{\\Omega}{\\text{km}} \\cdot 0{,}05 \\cdot 10^{-3}\\,\\text{km} \\cdot 100\\,\\text{A} \\approx 1{,}5\\,\\text{mV}$.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "text": "Toteaa, että linnun potentiaali on lähes sama kuin johtimen, noin $12\\,\\text{kV}$ maahan nähden. Se ei kuitenkaan ole vaarallista, koska lintu ei yhdistä johdinta maahan tai toiseen johtimeen.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väitteen perustelu on väärä. Lintu on turvassa, koska sen jalat ovat lähes samassa potentiaalissa, ei siksi, että jalat eristäisivät."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Kalastaja heittää linjan alla hiilikuituvavalla. Selitä, miksi hän voi saada sähköiskun, vaikka vapa ei koske johtimeen. Arvioi pienin ilmaväli, jonka läpi sähkö voi lyödä.",
+          "criteria": [
+            {
+              "text": "Selittää, että hiilikuitu johtaa sähköä. Kun kalastaja seisoo maassa, vavan kärki on siksi lähes maan potentiaalissa. Ilmavälin yli on silloin koko johtimen ja maan välinen jännite.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Arvioi tasaisen kentän mallilla $d = \\tfrac{U}{E_\\text{max}} = \\tfrac{12 \\cdot 10^{3}\\,\\text{V}}{3 \\cdot 10^{6}\\,\\text{V/m}} \\approx 4\\,\\text{mm}$. Jännitteenä käytetään johtimen ja maan välistä jännitettä $12\\,\\text{kV}$, ei vaihejohtimien välistä jännitettä $20\\,\\text{kV}$.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Arvio on alaraja eli pienin mahdollinen arvo. Ohuen johtimen lähellä kenttä on voimakkaampi kuin $\\tfrac{U}{d}$. Kostea ilma ja lika heikentävät eristystä. Siksi valokaari voi syttyä myös selvästi pidemmän välin yli."
+            },
+            {
+              "text": "Selittää seurauksen: läpilyönnin jälkeen virta kulkee valokaaren, vavan ja kalastajan kautta maahan. $12\\,\\text{kV}$:n jännite antaa kehon resistanssilla virran, joka on ampeerien suuruinen.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Myrsky katkaisee johtimen, ja se putoaa maahan rannan niitylle. Miksi lähelle ei saa mennä? Miten alueelta poistutaan? Miksi lehmä on niityllä suuremmassa vaarassa kuin ihminen?",
+          "criteria": [
+            {
+              "text": "Selittää, että virta leviää maahan kosketuskohdasta. Maan potentiaali pienenee, kun etäisyys kosketuskohdasta kasvaa. Siksi eri kohtien välillä on jännite.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää askeljännitteen: jalkojen välinen jännite on sitä suurempi, mitä lähempänä kosketuskohtaa ollaan ja mitä pidempi askel on.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Ohjeistaa oikein: alueelta poistutaan lyhyin askelin jalat yhdessä tai tasajalkaa hyppien. Johdinta ei lähestytä. Vahingosta ilmoitetaan numeroon $112$.",
+              "tag": "communication",
+              "points": 2
+            },
+            {
+              "text": "Perustelee, että lehmän etujalat ja takajalat ovat kaukana toisistaan. Siksi niiden välinen jännite on suuri. Virta kulkee rintakehän ja sydämen kautta.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-15",
+        "math": "fy6-12",
+        "transfer": "fy6-13",
+        "communication": "fy6-15"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s5",
+      "title": "Aurinkopaneelin hyötysuhde",
+      "source": "example",
+      "source_note": "Raportti ja sen luvut ovat keksitty esimerkki. Mittausarvot on laskettu mallista, jossa paneelissa on kymmenen piikennoa.",
+      "skills": [
+        "fy6-14",
+        "fy1-8",
+        "fy1-3"
+      ],
+      "text": "Opiskelija mittasi pienen aurinkopaneelin hyötysuhteen. Tässä on ote hänen raportistaan:\n\n> Vein paneelin aurinkoiselle pihalle toukokuun puolenpäivän aikaan. Mittasin yleismittarilla tyhjäkäyntijännitteen $6{,}10\\,\\text{V}$ ja oikosulkuvirran $210\\,\\text{mA}$. Kytkin vielä paneeliin vuorotellen eri vastuksia ja mittasin jännitteen ja virran:\n>\n> | $R\\ (\\Omega)$ | $U\\ (\\text{V})$ | $I\\ (\\text{mA})$ |\n> |---|---|---|\n> | $10$ | $2{,}10$ | $210$ |\n> | $20$ | $4{,}17$ | $209$ |\n> | $25$ | $4{,}97$ | $199$ |\n> | $30$ | $5{,}36$ | $179$ |\n> | $40$ | $5{,}67$ | $142$ |\n> | $60$ | $5{,}86$ | $98$ |\n> | $100$ | $5{,}97$ | $60$ |\n>\n> Paneelin teho on $P = UI = 6{,}10\\,\\text{V} \\cdot 0{,}210\\,\\text{A} = 1{,}281\\,\\text{W}$. Paneelin pinta-ala on $60\\,\\text{cm}^2$, ja aurinkoisena päivänä valon voimakkuus on $1000\\,\\text{W/m}^2$, joten hyötysuhde on $21{,}35\\,\\%$. Paneeli on parempi kuin valmistajan ilmoittama $15\\,\\%$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä raportin taulukosta paneelin suurin teho. Määritä myös sitä vastaava hyötysuhde, kun valon voimakkuus on sama kuin raportissa oletetaan.",
+          "answer": [
+            {
+              "name": "P",
+              "value": 0.989,
+              "unit": "W",
+              "tolerance": 0.02
+            },
+            {
+              "name": "eta",
+              "value": 16.48,
+              "unit": "%",
+              "tolerance": 0.04
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Perustelee, että paneelin teho kussakin kuormassa on saman hetken jännitteen ja virran tulo. Suurin teho etsitään näistä tuloista.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = UI$ ja $\\eta = \\dfrac{P}{GA}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Tehot ovat $0{,}44$, $0{,}87$, $0{,}99$, $0{,}96$, $0{,}80$, $0{,}57$ ja $0{,}36\\,\\text{W}$; suurin on $4{,}97\\,\\text{V} \\cdot 0{,}199\\,\\text{A} \\approx 0{,}989\\,\\text{W}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\eta = \\dfrac{0{,}989\\,\\text{W}}{1000\\,\\tfrac{\\text{W}}{\\text{m}^2} \\cdot 0{,}0060\\,\\text{m}^2} \\approx 0{,}165$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P_\\text{max} \\approx 0{,}99\\,\\text{W}$ ja $\\eta \\approx 16\\,\\%$, kaksi merkitsevää numeroa kuten pinta-alassa $60\\,\\text{cm}^2$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi raportin johtopäätöstä ja mittauksen luotettavuutta. Nimeä raportin puutteet ja perustele ne.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Pääsyy on systemaattinen virhe eli virhe, joka vie tulosta aina samaan suuntaan. Tyhjäkäyntijännite ja oikosulkuvirta eivät esiinny yhtä aikaa. Siksi $U_\\text{t}I_\\text{k}$ on suurempi kuin mikään paneelin todellinen teho. Taulukon suurin teho on $0{,}99\\,\\text{W}$."
+            },
+            {
+              "text": "Perustelee, että valon voimakkuutta ei mitattu. $1000\\,\\text{W/m}^2$ on oletus. Todellinen arvo riippuu auringon korkeudesta, paneelin kulmasta ja pilvistä, joten hyötysuhde voi olla eri.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Raportista puuttuu epävarmuus. $21{,}35\\,\\%$ ilmoittaa liikaa numeroita, koska valon voimakkuus on arvioitu ja pinta-ala on annettu kahdella numerolla."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Johtopäätös on väärä. Oikein laskettu hyötysuhde on noin $16\\,\\%$. Se sopii valmistajan arvoon $15\\,\\%$ mittausten tarkkuudella."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Suunnittele parannettu koe, jolla paneelin hyötysuhde saadaan luotettavasti. Kerro, mitä mitataan, mitä pidetään vakiona ja miten tulos määritetään.",
+          "criteria": [
+            {
+              "text": "Mittaa valon voimakkuuden säteilymittarilla paneelin tasossa samaan aikaan kuin sähköiset suureet. Pitää paneelin kohtisuorassa auringon säteitä vastaan.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Mittaa jännitteen ja virran monella kuormalla, esimerkiksi säädettävällä vastuksella, erityisesti tehon huipun lähellä. Toistaa mittaussarjan. Valon voimakkuus ja paneelin lämpötila pysyvät mahdollisimman samoina.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Määrittää suurimman tehon kuvaajasta. Piirtää tehon $P = UI$ jännitteen funktiona ja lukee huipun. Toinen tapa on piirtää $(U, I)$-käyrä ja etsiä suurin suorakulmio.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Arvioi hyötysuhteen epävarmuuden valon voimakkuuden, pinta-alan ja tehon epävarmuuksista. Vertaa tulosta valmistajan arvoon epävarmuuksineen."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-14",
+        "math": "fy6-14",
+        "experiment": "fy1-8",
+        "graph": "fy6-14",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s6",
+      "title": "Satelliitin ionimoottori",
+      "source": "example",
+      "source_note": "Satelliitti ja moottorin luvut ovat keksitty esimerkki. Suuruusluokat ovat samat kuin todellisissa ionimoottoreissa, jotka käyttävät ksenonia.",
+      "skills": [
+        "fy6-12",
+        "fy6-11",
+        "fy4-9",
+        "fy4-4"
+      ],
+      "text": "Tietoliikennesatelliitti nostetaan korkeammalle radalle ionimoottorilla. Moottorissa ksenonatomeista tehdään positiivisia ioneja $\\text{Xe}^+$. Niiden varaus on $+e$. Ionit lähtevät lähes levosta. Ne kiihtyvät kahden metalliverkon välisessä sähkökentässä ja lentävät avaruuteen. Lopuksi ionisuihku neutraloidaan elektroneilla, joten satelliitti ei varaudu.\n\n- verkkojen välinen jännite $1{,}10\\,\\text{kV}$, verkkojen etäisyys $1{,}0\\,\\text{mm}$\n- ionisuihkun virta $1{,}60\\,\\text{A}$\n- ksenonionin massa $2{,}180 \\cdot 10^{-25}\\,\\text{kg}$, alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$\n- satelliitin massa $650\\,\\text{kg}$, aurinkopaneelien sähköteho $2{,}5\\,\\text{kW}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suurella nopeudella ionit lähtevät moottorista? Kuinka voimakas on verkkojen välinen sähkökenttä?",
+          "answer": {
+            "value": 40.21,
+            "unit": "km/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee energiaperiaatteella: vain sähköinen voima tekee työtä. Siksi ionin potentiaalienergian väheneminen $eU$ muuttuu liike-energiaksi.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac12 mv^2 = eU$, joten $v = \\sqrt{\\dfrac{2eU}{m}}$, ja $E = \\dfrac{U}{d}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\sqrt{\\dfrac{2 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1100\\,\\text{V}}{2{,}180 \\cdot 10^{-25}\\,\\text{kg}}} \\approx 4{,}02 \\cdot 10^{4}\\,\\text{m/s}$ ja $E = 1{,}1\\,\\text{MV/m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 40{,}2\\,\\text{km/s}$ kolmella merkitsevällä numerolla kuten jännite $1{,}10\\,\\text{kV}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuren työntövoiman ionisuihku antaa satelliitille?",
+          "answer": {
+            "value": 87.54,
+            "unit": "mN",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee impulssiperiaatteella. Joka sekunti lähtee ioneja, ja niiden liikemäärä muuttuu. Tämän muutoksen antaa moottorin voima. Vastavoima työntää satelliittia.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ioneja sekunnissa $N = \\dfrac{I}{e}$, massavirta $\\dfrac{\\Delta m}{\\Delta t} = N m$ ja $F = \\dfrac{\\Delta m}{\\Delta t}\\,v$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$N = \\tfrac{1{,}60\\,\\text{A}}{1{,}602 \\cdot 10^{-19}\\,\\text{C}} \\approx 9{,}99 \\cdot 10^{18}\\,\\tfrac{1}{\\text{s}}$, $\\tfrac{\\Delta m}{\\Delta t} \\approx 2{,}18 \\cdot 10^{-6}\\,\\text{kg/s}$, $F \\approx 0{,}0875\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 87{,}5\\,\\text{mN}$ kolmella merkitsevällä numerolla"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Moottori toimii yhtäjaksoisesti eli taukoamatta $30$ vuorokautta. Kuinka paljon satelliitin nopeus muuttuu tänä aikana? Kuinka paljon ksenonia kuluu?",
+          "answer": [
+            {
+              "name": "dv",
+              "value": 349.1,
+              "unit": "m/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "m",
+              "value": 5.644,
+              "unit": "kg",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{F}{M}$, $\\Delta v = a\\,\\Delta t$ ja $m_\\text{Xe} = \\dfrac{\\Delta m}{\\Delta t} \\cdot \\Delta t$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta t = 30 \\cdot 24 \\cdot 3600\\,\\text{s} = 2{,}592 \\cdot 10^{6}\\,\\text{s}$, $a \\approx 1{,}35 \\cdot 10^{-4}\\,\\text{m/s}^2$, $\\Delta v \\approx 349\\,\\text{m/s}$, $m_\\text{Xe} \\approx 5{,}64\\,\\text{kg}$"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Satelliitin massa pysyy lähes vakiona, koska ksenonia kuluu alle $1\\,\\%$ massasta. Työntövoima on radan suuntainen. Gravitaation vaikutusta ratanopeuteen ei lasketa tässä."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\Delta v \\approx 349\\,\\text{m/s}$ ja $m_\\text{Xe} \\approx 5{,}64\\,\\text{kg}$ kolmella merkitsevällä numerolla kuten työntövoima"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Riittävätkö aurinkopaneelit moottorin käyttöön? Selitä, miksi ionimoottorin työntövoima on pieni, vaikka sen teho on suuri. Selitä myös, miksi sitä silti käytetään.",
+          "criteria": [
+            {
+              "text": "Laskee suihkun tehon $P = UI = 1100\\,\\text{V} \\cdot 1{,}60\\,\\text{A} \\approx 1{,}76\\,\\text{kW}$. Se on pienempi kuin paneelien $2{,}5\\,\\text{kW}$. Teho on sama kuin ionien liike-energia sekunnissa $\\tfrac12 \\tfrac{\\Delta m}{\\Delta t} v^2$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Selittää yhteyden $F = \\tfrac{2P}{v}$. Kun teho on annettu, suuri ionien nopeus antaa pienen työntövoiman. Ajomassaa kuluu kuitenkin vähän, koska jokainen kilogramma antaa liikemäärää $40\\,\\text{km/s} \\cdot 1\\,\\text{kg}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Teho riittää. Ionimoottori sopii pitkiin ratamuutoksiin, joihin on aikaa viikkoja. Laukaisuun tai nopeisiin liikkeisiin työntövoima on liian pieni."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-12",
+        "math": "fy6-12",
+        "transfer": "fy4-9",
+        "communication": "fy4-9"
+      }
+    }
+  ]
+}
