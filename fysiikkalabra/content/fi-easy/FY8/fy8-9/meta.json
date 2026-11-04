@@ -1,0 +1,40 @@
+{
+  "id": "fy8-9",
+  "course": "FY8",
+  "title": "Hajoamislaki ja puoliintumisaika",
+  "goals": [
+    "LOPS FY8: hajoamislaki",
+    "TVT: eksponenttifunktion sovittaminen mittausaineistoon",
+    "Täsmennys: aktiivisuus, hajoamisvakio ja puoliintumisaika; hajoamisen satunnaisuus"
+  ],
+  "prerequisites": [
+    "fy8-8"
+  ],
+  "glossary": [
+    "hajoamislaki",
+    "puoliintumisaika",
+    "aktiivisuus",
+    "hajoamisvakio"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "hajoamislaki",
+      "explain": "Laki kertoo, kuinka hajoamattomien ytimien määrä pienenee ajan kuluessa: jokaisen puoliintumisajan aikana määrä puolittuu."
+    },
+    {
+      "term": "puoliintumisaika",
+      "explain": "Aika, jossa puolet näytteen hajoamattomista ytimistä hajoaa. Se on sama jokaiselle saman isotoopin näytteelle."
+    },
+    {
+      "term": "aktiivisuus",
+      "explain": "Näytteen hajoamisten määrä sekunnissa. Yksikkö on becquerel. Aktiivisuus pienenee samaa tahtia kuin ytimien määrä."
+    },
+    {
+      "term": "hajoamisvakio",
+      "explain": "Luku, joka kertoo ytimen hajoamistodennäköisyyden aikayksikössä. Sen suuruus saadaan puoliintumisajasta."
+    }
+  ]
+}

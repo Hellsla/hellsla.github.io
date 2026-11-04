@@ -1,0 +1,22 @@
+{
+  "id": "fy8-9",
+  "course": "FY8",
+  "title": "The decay law and half-life",
+  "goals": [
+    "LOPS FY8: decay law",
+    "TVT: fitting an exponential function to measurement data",
+    "Clarification: activity, decay constant and half-life; randomness of decay"
+  ],
+  "prerequisites": [
+    "fy8-8"
+  ],
+  "glossary": [
+    "hajoamislaki",
+    "puoliintumisaika",
+    "aktiivisuus",
+    "hajoamisvakio"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

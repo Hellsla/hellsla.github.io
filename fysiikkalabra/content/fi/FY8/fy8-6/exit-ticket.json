@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Violetin laserdiodin aallonpituus on $405\\,\\text{nm}$. Arvioi sen kynnysjännite.",
+    "a": "Kynnysjännitteellä $eU_\\text{k} \\approx \\tfrac{hc}{\\lambda}$, joten $U_\\text{k} \\approx \\tfrac{hc}{e\\lambda}$. Lasketaan ensin $hc = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ ja $e\\lambda = 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 405 \\cdot 10^{-9}\\,\\text{m} = 6{,}488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m}$, joten $U_\\text{k} \\approx 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m} : 6{,}488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m} = 3{,}06\\,\\text{V}$. Jokaisen elektronin on saatava jännitelähteeltä likimain yhden fotonin energia $3{,}06\\,\\text{eV}$; mitattu kynnysjännite on yleensä hieman tätä pienempi."
+  },
+  {
+    "q": "Planckin vakion mittauksessa tarvitaan valonlähteen aallonpituus. Miksi laserdiodin aallonpituus tunnetaan tarkemmin kuin LEDin?",
+    "a": "Laserdiodin spektri on hyvin kapea viiva, leveydeltään noin $1\\,\\text{nm}$, joten sen aallonpituus on lähes yksikäsitteinen. LEDin spektri on $20$–$40\\,\\text{nm}$ leveä kaista, joten sen aallonpituudeksi ilmoitettu huipun aallonpituus on epätarkempi, ja epävarmuus siirtyy taajuuteen $f = \\tfrac{c}{\\lambda}$."
+  }
+]

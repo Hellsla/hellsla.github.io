@@ -582,10 +582,11 @@ def render(folder, inquiry, parts, md):
         by_stage[a["stage"]].append(a)
     placed = {s for a in acts if a["type"] == "theory" for s in a["sections"]}
     leftover = [s for s in parts["sections"] if s not in placed]
-    if leftover and not any(a["type"] == "theory" for a in by_stage["selita"]):
+    required = [a for a in by_stage["selita"] if a["type"] == "theory" and not a.get("optional")]
+    if leftover and not required:
         by_stage["selita"].append({"id": "theory-rest", "type": "theory", "stage": "selita", "sections": leftover})
-    elif leftover:                                     # append to the last theory activity in Teoriatiivistelmä
-        last = [a for a in by_stage["selita"] if a["type"] == "theory"][-1]; last["sections"] = list(last["sections"]) + leftover
+    elif leftover:                                     # append to the last required theory activity in Teoriatiivistelmä,
+        last = required[-1]; last["sections"] = list(last["sections"]) + leftover   # never into a closed optional box
     body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md) + parts.get("concepts", "")]
 
     def act(a):

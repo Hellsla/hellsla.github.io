@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "contribution": "Tuo energiatasojen idean atomista ytimeen: ytimen rakenne ($Z$, $N$, $A$, isotoopit), alfa-, beeta- ja gammahajoaminen säilymislakeineen sekä gammaspektri todisteena ytimen kvantittuneista tasoista. Lisäksi uraani-238:n hajoamissarja nuklidikartalla NNDC:n tietojen mukaan.",
+  "learn": [
+    "kirjoittamaan alfa-, beeta- ja gammahajoamisen hajoamisyhtälöitä massaluvun ja varausluvun säilymisen avulla.",
+    "selittämään, miten ytimen järjestysluku ja massaluku muuttuvat kussakin hajoamisessa.",
+    "päättelemään gammaspektristä ytimen energiatasot samalla tavalla kuin atomin spektristä."
+  ],
+  "prior": [
+    "Fotonin energia on $E = hf = \\tfrac{hc}{\\lambda}$, ja energian voi ilmoittaa elektronivoltteina (luku *Valosähköinen ilmiö ja fotoni*)",
+    "Siirtymässä syntyvän fotonin energia on energiatasojen erotus (luku *Vetyatomin energiatasot ja Bohrin malli*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Melkein jokaisen asunnon katossa on savuilmaisin. Monessa niistä on sisällä pieni americium-241-näyte. Näytteestä lähtee joka sekunti kymmeniätuhansia alfahiukkasia. Ne ionisoivat ilmaa kahden metallilevyn välissä eli irrottavat ilman atomeista elektroneja. Silloin ilma johtaa vähän sähköä. Kun savua pääsee kammioon, virta pienenee ja hälytin soi. Näyte toimii näin vuosikymmeniä.",
+      "question": "Mitä americiumytimelle tapahtuu, kun alfahiukkanen lähtee? Miksi ytimestä tulee lisäksi gammasäteilyä?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: energiatasot ja fotoni",
+      "optional": true,
+      "prompt": "Vetyatomin elektroni siirtyy tasolta $E_3 = -1{,}51\\,\\text{eV}$ tasolle $E_2 = -3{,}40\\,\\text{eV}$. Kuinka suuri on syntyvän fotonin energia?",
+      "choices": [
+        {
+          "text": "$1{,}89\\,\\text{eV}$, koska fotonin energia on tasojen erotus.",
+          "correct": true,
+          "feedback": "Oikein (luku *Vetyatomin energiatasot ja Bohrin malli*): $hf = E_3 - E_2 = -1{,}51\\,\\text{eV} + 3{,}40\\,\\text{eV} = 1{,}89\\,\\text{eV}$. Tämä on vedyn punainen viiva. Tässä luvussa sama periaate siirretään atomiytimeen."
+        },
+        {
+          "text": "$1{,}51\\,\\text{eV}$, koska fotoni saa lähtötason energian.",
+          "feedback": "Fotoni ei kanna yhden tason energiaa vaan tasojen erotuksen: $E_3 - E_2 = 1{,}89\\,\\text{eV}$."
+        },
+        {
+          "text": "$4{,}91\\,\\text{eV}$, koska energiat lasketaan yhteen.",
+          "feedback": "Energia säilyy. Atomin energia pienenee arvosta $-1{,}51\\,\\text{eV}$ arvoon $-3{,}40\\,\\text{eV}$. Fotoni vie siis erotuksen $1{,}89\\,\\text{eV}$, ei summaa."
+        },
+        {
+          "text": "$3{,}40\\,\\text{eV}$, koska fotoni saa lopputason energian.",
+          "feedback": "Lopputason energia ei ole fotonin energia. Fotonin energia on tasojen erotus $E_3 - E_2 = 1{,}89\\,\\text{eV}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: alfahiukkanen lähtee",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 6
+      },
+      "prompt": "Uraani-238-ytimessä ${}^{238}_{92}\\text{U}$ on $92$ protonia ja $146$ neutronia. Ytimestä lähtee alfahiukkanen eli heliumydin. Siinä on kaksi protonia ja kaksi neutronia. Millainen ydin jää jäljelle?",
+      "choices": [
+        {
+          "text": "Järjestysluku on $90$ ja massaluku $234$: ydin on toinen alkuaine.",
+          "correct": true,
+          "feedback": "Mallin tiedot tukevat tätä. Uraani-238 ($Z = 92$, $A = 238$) muuttuu toriumiksi ${}^{234}_{90}\\text{Th}$. Sarjan jokaisessa alfahajoamisessa $Z$ pienenee kahdella ja $A$ neljällä. Protonien määrä määrää alkuaineen, joten alkuaine vaihtuu."
+        },
+        {
+          "text": "Järjestysluku on $92$ ja massaluku $234$: ydin on uraanin kevyempi isotooppi.",
+          "feedback": "Mallin tiedot kumoavat tämän. Ytimen $Z$ muuttuu arvosta $92$ arvoon $90$. Alfahiukkanen vie mukanaan kaksi protonia, joten järjestysluku pienenee ja alkuaine vaihtuu."
+        },
+        {
+          "text": "Järjestysluku on $90$ ja massaluku $236$: vain lähteneet protonit pienentävät massalukua.",
+          "feedback": "Mallin tiedot kumoavat tämän. Massaluku pienenee arvosta $238$ arvoon $234$. Massaluku on kaikkien nukleonien määrä, ja alfahiukkanen vie kaksi protonia ja kaksi neutronia."
+        },
+        {
+          "text": "Järjestysluku on $88$ ja massaluku $234$: kaikki neljä hiukkasta ovat protoneja.",
+          "feedback": "Mallin tiedot kumoavat tämän. $Z$ pienenee vain kahdella, arvoon $90$. Alfahiukkasessa on kaksi protonia ja kaksi neutronia. Vain protonit muuttavat järjestyslukua."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: elektroni lähtee ytimestä",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 6
+      },
+      "prompt": "Torium-234-ydin ${}^{234}_{90}\\text{Th}$ hajoaa beeta miinus -hajoamisella. Ytimestä lähtee elektroni ja antineutriino. Miten ytimen järjestysluku $Z$ ja massaluku $A$ muuttuvat?",
+      "choices": [
+        {
+          "text": "$Z$ kasvaa yhdellä ja $A$ pysyy samana.",
+          "correct": true,
+          "feedback": "Mallin tiedot tukevat tätä. ${}^{234}_{90}\\text{Th}$ muuttuu protaktiniumiksi ${}^{234}_{91}\\text{Pa}$. Sarjan jokaisessa beeta miinus -hajoamisessa $Z$ kasvaa yhdellä ja $A$ pysyy samana. Neutroni muuttuu protoniksi. Nukleonien määrä ei muutu, mutta protoneja tulee yksi lisää."
+        },
+        {
+          "text": "$Z$ pienenee yhdellä ja $A$ pysyy samana, koska negatiivinen hiukkanen lähtee.",
+          "feedback": "Mallin tiedot kumoavat tämän. $Z$ kasvaa arvosta $90$ arvoon $91$. Elektroni ei ollut ytimessä valmiina. Neutroni muuttuu protoniksi, ja elektroni syntyy. Varaus säilyy: $90 = 91 + (-1)$."
+        },
+        {
+          "text": "$Z$ ja $A$ pysyvät samoina, koska elektronin massa on hyvin pieni.",
+          "feedback": "Mallin tiedot kumoavat tämän. Ydin muuttuu toriumista ($Z = 90$) protaktiniumiksi ($Z = 91$). Massaluku pysyy samana, mutta varaus ei pysy: ytimeen tulee yksi protoni lisää."
+        },
+        {
+          "text": "$A$ pienenee yhdellä, koska ytimestä lähtee hiukkanen.",
+          "feedback": "Mallin tiedot kumoavat tämän. $A$ pysyy arvossa $234$. Elektroni ei ole nukleoni, joten sen lähtö ei muuta massalukua. Ytimen neutroni vain muuttuu protoniksi."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Paina *Hajoa*. Seuraa, mihin ydin siirtyy nuklidikartalla ja mitä siitä lähtee.",
+      "howto": "*Hajoa* siirtää sarjaa yhden vaiheen eteenpäin. Oikealla ydin lähettää hiukkasen, ja kartalle kasvaa nuoli uuteen ruutuun. Kartan vaaka-akselilla on neutroniluku $N$. Pystyakselilla on järjestysluku $Z$ ja alkuaineen tunnus. Liukusäätimellä voit siirtyä suoraan mihin tahansa sarjan vaiheeseen $k$ ($0$–$14$). *Alkuun* palauttaa uraani-238:n. Lukemissa näkyvät ytimen merkintä, $Z$, $N$, $A$, seuraava hajoamistapa ja edellisen hajoamisen yhtälö. *Nopeus* muuttaa vain animaation tahtia.",
+      "model": "Sarjan ytimet ja hajoamistavat ovat yhdysvaltalaisen ydintietokeskuksen NNDC:n NuDat 3 -tietokannan tietoja (ENSDF-arvot). Jokaisesta ytimestä on valittu sen yleisin hajoamistapa. Muutama ydin, kuten vismutti-214, hajoaa hyvin pienellä todennäköisyydellä myös toisella tavalla. Protaktinium-234 syntyy sarjassa pitkäikäiseen viritystilaansa, ja se hajoaa beeta miinus -hajoamisella. Vihreät ruudut ovat alueen pysyviä ytimiä. Vismutti-209 hajoaa niin hitaasti, että se on käytännössä pysyvä. Ytimen kuva on kaavamainen. Protonit ja neutronit eivät ole ytimessä paikoillaan, eikä nukleonien järjestys merkitse mitään. Yksittäisen ytimen hajoamishetkeä ei voi ennustaa. Malli näyttää vain, mihin kukin hajoaminen johtaa. Se ei näytä, kuinka kauan hajoaminen kestää.",
+      "calc": "Malli ei laske hajoamista vaan näyttää tietokannan tiedot. Lukemien neutroniluku on $N = A - Z$. Hajoamisyhtälössä massaluku ja varausluku säilyvät. Tytärytimen alkuaineen näet sen järjestysluvusta."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: uraani-238:n hajoamissarja",
+      "intro": "Testaa ennusteet. Aloita uraani-238:sta ($k = 0$) ja kirjaa jokainen vaihe. Muuta vaihetta yksi kerrallaan tai paina *Hajoa*, ja kirjaa sitten. Kirjaa ainakin vaiheet $0$–$5$. Vertaa peräkkäisiä rivejä. Kuinka paljon $Z$, $N$ ja $A$ muuttuvat alfahajoamisessa? Kuinka paljon ne muuttuvat beeta miinus -hajoamisessa?",
+      "initial": {
+        "k": 0
+      },
+      "locked": [],
+      "vary": "k",
+      "names": {
+        "k": "sarjan vaihe $k$"
+      },
+      "values": {
+        "mode": {
+          "1": "alfa",
+          "2": "beeta miinus",
+          "0": "pysyvä"
+        }
+      },
+      "measure": [
+        {
+          "key": "Z",
+          "label": "$Z$"
+        },
+        {
+          "key": "N",
+          "label": "$N$"
+        },
+        {
+          "key": "A",
+          "label": "$A$"
+        },
+        {
+          "key": "mode",
+          "label": "hajoaa seuraavaksi"
+        }
+      ],
+      "min": 6
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mitä hajoamiset tekevät ytimelle?",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "Kirjoita taulukkosi perusteella, miten $Z$, $N$ ja $A$ muuttuvat alfahajoamisessa ja beeta miinus -hajoamisessa. Selitä muutokset sillä, mitä ytimestä lähtee. Mihin sarja päättyy?",
+      "model": "Alfahajoamisessa $Z$ ja $N$ pienenevät kumpikin kahdella ja $A$ neljällä. Esimerkki on ${}^{238}_{92}\\text{U} \\to {}^{234}_{90}\\text{Th}$. Syy on se, että ytimestä lähtee heliumydin, jossa on kaksi protonia ja kaksi neutronia. Beeta miinus -hajoamisessa $Z$ kasvaa yhdellä, $N$ pienenee yhdellä ja $A$ pysyy samana. Esimerkki on ${}^{234}_{90}\\text{Th} \\to {}^{234}_{91}\\text{Pa}$. Syy on se, että neutroni muuttuu protoniksi ja syntyvä elektroni lähtee. Kartalla alfahajoaminen vie ytimen kaksi ruutua alas ja kaksi vasemmalle. Beetahajoaminen vie sen yhden ruudun ylös ja yhden vasemmalle. Sarjassa on $8$ alfahajoamista ja $6$ beetahajoamista. Se päättyy pysyvään lyijy-206:een ${}^{206}_{82}\\text{Pb}$. Tiedot ovat NNDC:n tietokannasta.",
+      "criteria": [
+        "Kerroin, että alfahajoamisessa $Z$ pienenee kahdella ja $A$ neljällä, ja selitin sen heliumytimellä.",
+        "Kerroin, että beeta miinus -hajoamisessa $Z$ kasvaa yhdellä ja $A$ pysyy samana, ja selitin sen neutronin muuttumisella protoniksi.",
+        "Kerroin, että sarja päättyy pysyvään ytimeen ${}^{206}_{82}\\text{Pb}$."
+      ]
+    },
+    {
+      "id": "gammaspektri",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Koboltti-60:n gammaspektri",
+      "source": "measured",
+      "source_note": "Gammaenergiat: NNDC NuDat 3 (ENSDF), mitatut arvot. Piikkien muoto ja korkeus on piirretty kaavamaisesti.",
+      "figure": "fy8-8/spectrum",
+      "text": "Koboltti-60 hajoaa beeta miinus -hajoamisella nikkeli-60:ksi. Sen jälkeen nikkeliydin lähettää gammasäteilyä. Kuvassa on gammailmaisimella mitatun spektrin muoto: fotonien määrä fotonin energian funktiona. Spektrissä on kaksi kapeaa piikkiä. Mitattujen tietojen mukaan ydin lähettää lähes jokaisessa hajoamisessa molemmat fotonit peräkkäin.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Nikkeli-60-ydin syntyy viritystilaan. Se palaa perustilaan lähettämällä nämä kaksi fotonia peräkkäin. Kuinka suuri on viritystilan energia perustilan yläpuolella? Vastaa kiloelektronivoltteina.",
+        "answer": 2505.7,
+        "unit": "keV",
+        "tolerance": 0.005,
+        "hints": [
+          "Kumpikin fotoni vie ytimeltä energian, joka on kahden tason erotus.",
+          "Ydin putoaa ensin viritystilasta välitasolle ja sitten välitasolta perustilaan. Fotonien energiat ovat näiden kahden pudotuksen suuruiset.",
+          "Lue kummankin piikin energia kuvasta ja laske energiat yhteen."
+        ],
+        "mistakes": [
+          {
+            "value": 1332.5,
+            "feedback": "Tämä on vain jälkimmäisen fotonin energia eli välitason energia. Viritystila on vielä $1173{,}2\\,\\text{keV}$ ylempänä."
+          },
+          {
+            "value": 159.3,
+            "feedback": "Fotonien energioiden erotus ei ole minkään tason energia. Ydin menettää molempien fotonien energian, joten energiat lasketaan yhteen."
+          }
+        ],
+        "solution": "**Annettu:** gammafotonien energiat $E_1 = 1173{,}2\\,\\text{keV}$ ja $E_2 = 1332{,}5\\,\\text{keV}$. Ydin lähettää ne peräkkäin palatessaan viritystilasta perustilaan.\n\n**Kysytty:** viritystilan energia $E^{\\ast}$ perustilan yläpuolella kiloelektronivoltteina\n\n**Kuvaajan lukeminen:** Spektrin kaksi piikkiä ovat kohdissa $1173{,}2\\,\\text{keV}$ ja $1332{,}5\\,\\text{keV}$. Muita piikkejä ei ole. Ydin lähettää siis vain nämä kaksi fotonienergiaa.\n\n**Periaate:** Ytimen energia on kvantittunut, ja kumpikin fotoni vie tasojen erotuksen. Energia säilyy. Ydin putoaa viritystilasta välitasolle ja välitasolta perustilaan. Pudotusten summa on siis viritystilan energia perustilan yläpuolella.\n\n**Kaava:** $E^{\\ast} - E_\\text{v} = E_1$ ja $E_\\text{v} - 0 = E_2$, joista $E^{\\ast} = E_1 + E_2$\n\n**Muunnokset:** Ei tarvita, koska energiat ja vastaus ovat kiloelektronivoltteina.\n\n**Sijoitus:** $E^{\\ast} = 1173{,}2\\,\\text{keV} + 1332{,}5\\,\\text{keV} = 2505{,}7\\,\\text{keV}$\n\n**Vastaus:** $2505{,}7\\,\\text{keV}$ eli noin $2{,}51\\,\\text{MeV}$. Yhteenlaskussa on yksi desimaali, kuten fotonienergioissa.\n\n**Järkevyys:** Tulos on suurempi kuin kumpikaan fotonienergia. Niin pitää olla, kun ydin palaa yhteen tasoon kahdessa vaiheessa. NNDC:n tietokannan mukaan nikkeli-60:n viritystila on $2505{,}8\\,\\text{keV}$ perustilan yläpuolella. Fotonien summa jää siitä alle $0{,}1\\,\\text{keV}$. Syy on rekyyli: kun fotoni lähtee, ydin saa vähän liike-energiaa. Energiat ovat satojatuhansia kertoja suurempia kuin atomin siirtymien elektronivoltit."
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi sarjan tietoihin. Palaa sitten alun kysymykseen. Mikä ydin syntyy, kun americium-241 ${}^{241}_{95}\\text{Am}$ lähettää alfahiukkasen? Miksi samalla voi syntyä gammafotoni?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija kirjoittaa hiili-14:n beeta miinus -hajoamisen yhtälön näin:\n\n$${}^{14}_{6}\\text{C} \\to {}^{14}_{5}\\text{B} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}$$\n\nHän perustelee, että kun negatiivinen elektroni lähtee, ytimen varaus pienenee. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Varausluku ei säily: oikealla alaindeksien summa on $5 - 1 = 4$, vaikka vasemmalla se on $6$.",
+          "correct": true,
+          "feedback": "Oikein. Varausluvun säilyminen vaatii $6 = Z' - 1$. Siis $Z' = 7$, ja tytärydin on typpi: ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}$. Neutroni muuttuu protoniksi, joten protoneja tulee yksi lisää."
+        },
+        {
+          "text": "Massaluku ei säily: tyttärytimen massaluvun pitäisi olla $13$, koska elektroni lähtee.",
+          "feedback": "Elektronin massaluku on $0$, joten massaluku säilyy jo nyt: $14 = 14 + 0$. Virhe on varausluvussa."
+        },
+        {
+          "text": "Yhtälöstä puuttuu alfahiukkanen, koska hiili hajoaa alfahajoamisella.",
+          "feedback": "Hiili-14 hajoaa beeta miinus -hajoamisella, kuten tehtävässä sanotaan. Alfahajoaminen on tyypillistä raskaille ytimille. Virhe on tyttärytimen järjestysluvussa."
+        },
+        {
+          "text": "Antineutriinon tilalla pitäisi olla gammafotoni, joka vie elektronin energian.",
+          "feedback": "Antineutriino kuuluu beeta miinus -hajoamiseen. Se jakaa hajoamisenergian elektronin kanssa. Yhtälön virhe on varausluvussa: tytärytimen $Z$ on $7$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Myös uraani-235 ${}^{235}_{92}\\text{U}$ hajoaa luonnossa sarjana. Sarja päättyy pysyvään lyijy-207:ään ${}^{207}_{82}\\text{Pb}$. Sarjassa on vain alfa- ja beeta miinus -hajoamisia. Kuinka monta alfahajoamista sarjassa on?",
+      "answer": 7,
+      "unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä hajoamislaji muuttaa massalukua, ja kuinka paljon?",
+        "Beeta miinus -hajoaminen ei muuta massalukua. Koko massaluvun muutos tulee siis alfahajoamisista, ja jokainen muuttaa sitä $4$.",
+        "Massaluku pienenee $235 - 207 = 28$. Jaa tämä yhden alfahajoamisen muutoksella."
+      ],
+      "mistakes": [
+        {
+          "value": 28,
+          "feedback": "Tämä on massaluvun muutos. Yksi alfahajoaminen pienentää massalukua neljällä, joten hajoamisia on $28 : 4$."
+        },
+        {
+          "value": 10,
+          "feedback": "Tämä on järjestysluvun muutos $92 - 82$. Järjestyslukuun vaikuttavat myös beetahajoamiset. Laske alfahajoamiset massaluvusta, johon beetahajoaminen ei vaikuta."
+        },
+        {
+          "value": 5,
+          "feedback": "Jaoit järjestysluvun muutoksen kahdella. Beetahajoamiset kasvattavat järjestyslukua. Laske siksi alfahajoamiset massaluvun muutoksesta $28$."
+        }
+      ],
+      "solution": "**Annettu:** alkuydin ${}^{235}_{92}\\text{U}$ ja loppuydin ${}^{207}_{82}\\text{Pb}$. Sarjassa on vain alfa- ja beeta miinus -hajoamisia.\n\n**Kysytty:** alfahajoamisten lukumäärä $n_\\alpha$\n\n**Periaate:** Massaluku säilyy jokaisessa hajoamisessa. Alfahiukkanen vie neljä nukleonia. Beeta miinus -hajoaminen ei muuta massalukua, koska elektronin massaluku on nolla. Siksi massaluvun koko muutos tulee alfahajoamisista.\n\n**Kaava:** $A_\\text{alku} - A_\\text{loppu} = 4 n_\\alpha$, josta $n_\\alpha = \\dfrac{A_\\text{alku} - A_\\text{loppu}}{4}$\n\n**Muunnokset:** Ei tarvita, koska massaluvut ovat lukumääriä.\n\n**Sijoitus:** $n_\\alpha = \\dfrac{235 - 207}{4} = \\dfrac{28}{4} = 7$\n\n**Vastaus:** $7$ alfahajoamista. Tulos on tarkka kokonaisluku, koska nukleoneja lasketaan kappaleina.\n\n**Järkevyys:** Seitsemän alfahajoamista pienentäisi järjestyslukua $14$:llä arvoon $78$. Loppuytimen järjestysluku on $82$. Sarjassa on siis oltava $4$ beeta miinus -hajoamista, ja kumpikin kasvattaa järjestyslukua yhdellä: $92 - 14 + 4 = 82$. Uraani-238:n sarjassa on samoin $8$ alfahajoamista ja $6$ beetahajoamista."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä säilymislakia tai kaavaa. Tason 2 tehtävissä yhdistetään kaksi vaihetta. Taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Barium-137-ydin on viritystilassa ${}^{137}_{56}\\text{Ba}^{\\ast}$ ja lähettää gammafotonin. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Ydin pysyy bariumina. Vain sen energia pienenee.",
+          "correct": true,
+          "feedback": "Oikein. Gammafotoni vie tasojen erotuksen verran energiaa, mutta protonien ja neutronien määrät pysyvät samoina: ${}^{137}_{56}\\text{Ba}^{\\ast} \\to {}^{137}_{56}\\text{Ba} + \\gamma$."
+        },
+        {
+          "text": "Ydin muuttuu cesiumiksi, koska fotoni vie mukanaan yhden protonin.",
+          "feedback": "Fotoni ei sisällä protonia. Sen massaluku ja varaus ovat nolla. Järjestysluku pysyy $56$:ssa."
+        },
+        {
+          "text": "Massaluku pienenee yhdellä, koska fotoni vie ytimeltä energiaa ja massaa.",
+          "feedback": "Fotoni ei vie nukleonia, joten massaluku pysyy $137$:ssä. Ytimen massa pienenee energian mukana vain hyvin vähän. Massaluku on kuitenkin nukleonien määrä."
+        },
+        {
+          "text": "Ydin siirtyy ylemmälle energiatasolle, koska fotoni syntyy ytimessä.",
+          "feedback": "Kun ydin lähettää fotonin, se menettää energiaa ja siirtyy alemmalle tasolle. Atomikin tekee niin emissiossa eli säteilyn lähettämisessä. Ylemmälle tasolle ydin siirtyisi vasta, kun se absorboisi eli ottaisi vastaan fotonin."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Gammafotonin aallonpituus",
+      "prompt": "Sairaalan isotooppitutkimuksissa käytetään teknetium-isotooppia ${}^{99\\text{m}}_{43}\\text{Tc}$. Se lähettää gammafotonin, jonka energia on $140{,}5\\,\\text{keV}$ (NNDC NuDat 3). Laske fotonin aallonpituus. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Vastaa pikometreinä ($1\\,\\text{pm} = 10^{-12}\\,\\text{m}$).",
+      "answer": 8.826,
+      "unit": "pm",
+      "tolerance": 0.02,
+      "hints": [
+        "Fotonin energia on $E_\\gamma = \\tfrac{hc}{\\lambda}$. Ratkaise aallonpituus.",
+        "Muunna energia ensin jouleiksi: $140{,}5 \\cdot 1000 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "$\\lambda = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2{,}2508 \\cdot 10^{-14}\\,\\text{J}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 8826,
+          "feedback": "Käytit energiana elektronivoltteja kiloelektronivolttien sijaan. Kerroin $1000$ puuttuu. Gammafotonin aallonpituus on tuhat kertaa lyhyempi."
+        }
+      ],
+      "solution": "**Annettu:** gammafotonin energia $E_\\gamma = 140{,}5\\,\\text{keV}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** fotonin aallonpituus $\\lambda$ pikometreinä\n\n**Periaate:** Gammasäteily on sähkömagneettista säteilyä. Sen fotonin energia ja aallonpituus liittyvät toisiinsa samalla tavalla kuin näkyvän valon fotonilla. Mitä suurempi energia on, sitä lyhyempi on aallonpituus.\n\n**Kaava:** $E_\\gamma = \\dfrac{hc}{\\lambda}$, josta $\\lambda = \\dfrac{hc}{E_\\gamma}$\n\n**Muunnokset:** $E_\\gamma = 140{,}5\\,\\text{keV} = 140{,}5 \\cdot 1000 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 2{,}2508 \\cdot 10^{-14}\\,\\text{J}$. Lopuksi $1\\,\\text{m} = 10^{12}\\,\\text{pm}$.\n\n**Sijoitus:** Tulo $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$. $\\lambda = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2{,}2508 \\cdot 10^{-14}\\,\\text{J}} = 8{,}8256 \\cdot 10^{-12}\\,\\text{m} = 8{,}8256\\,\\text{pm}$\n\n**Vastaus:** $8{,}826\\,\\text{pm}$ eli noin $8{,}83 \\cdot 10^{-12}\\,\\text{m}$. Vastauksessa on neljä merkitsevää numeroa, kuten energiassa $140{,}5\\,\\text{keV}$.\n\n**Järkevyys:** Esimerkin cesiumin fotoni $661{,}7\\,\\text{keV}$ on noin $4{,}7$ kertaa energisempi. Sen aallonpituus $1{,}874\\,\\text{pm}$ on noin $4{,}7$ kertaa lyhyempi: $8{,}83 : 1{,}874 \\approx 4{,}7$. Aallonpituus on paljon pienempi kuin atomin koko $10^{-10}\\,\\text{m} = 100\\,\\text{pm}$. Näin gammasäteilyllä kuuluukin olla.",
+      "practice": "Harjoittele gammafotonin energian ja aallonpituuden laskemista tason 1 ja 2 tehtävissä."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Mistä beetahiukkanen tulee?",
+      "optional": true,
+      "prompt": "Atomiytimessä ei ole elektroneja, mutta beeta miinus -hajoamisessa ytimestä lähtee elektroni. Selitä kolmella tai neljällä virkkeellä, mistä elektroni tulee ja miksi tytärytimen järjestysluku kasvaa.",
+      "model": "Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi heikon vuorovaikutuksen vaikutuksesta. Muutoksessa syntyvät elektroni ja antineutriino, ja ne lähtevät ytimestä. Elektroni ei ollut ytimessä valmiina. Koska ytimeen tulee yksi protoni lisää, järjestysluku kasvaa yhdellä ja alkuaine vaihtuu. Nukleonien määrä ei muutu, joten massaluku pysyy samana. Varaus säilyy, koska protonin varaus $+e$ ja elektronin varaus $-e$ kumoavat toisensa.",
+      "criteria": [
+        "Kerroin, että ytimen neutroni muuttuu protoniksi ja elektroni syntyy hajoamisessa.",
+        "Selitin järjestysluvun kasvun yhdellä protonien määrän kasvulla.",
+        "Mainitsin, että massaluku pysyy samana tai että varaus säilyy."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}
