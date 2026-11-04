@@ -90,7 +90,7 @@
       "prompt": "Opiskelijat selittävät, miksi neutroni hajoaa mutta protoni ei. Kenen selitys on mielestäsi oikea?",
       "choices": [
         {
-          "text": "Aino: Protoni on kevyin kolmen kvarkin hiukkanen. Baryonien määrä ei muutu, ja protoni on kevyin baryoni. Siksi protonin hajoamisessa ei voi syntyä sitä kevyempää hiukkasta.",
+          "text": "Aino: Protoni on kevyin kolmen kvarkin hiukkanen. Baryonien määrä ei muutu, ja protoni on kevyin baryoni. Siksi protoni ei voi hajota kevyemmäksi baryoniksi, eikä sitä kevyempää baryonia ole.",
           "correct": true,
           "feedback": "Teoria tukee tätä. Baryoniluku säilyy, joten protonin hajoamistuotteissa pitäisi olla baryoni. Protoni on kevyin baryoni, ja hajoaminen vaatii, että tuotteet ovat kevyempiä. Neutroni on protonia raskaampi, joten se voi hajota protoniksi."
         },
