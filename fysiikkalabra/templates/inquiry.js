@@ -322,7 +322,7 @@
       const v = Number(input.value.trim().replace(/\s+/g, '').replace(/−/g, '-').replace(',', '.').replace(/[^\d.eE+-]/g, ''));
       if (!Number.isFinite(v) || out.dataset.state === 'ok' || out.dataset.state === 'close') return;
       const m = mistakes.find((x) => Math.abs(v - x.value) <= (x.value === 0 ? tol : tol * Math.abs(x.value)));
-      if (m) { out.textContent = m.feedback; out.dataset.state = 'no'; if (m.feedback.includes('$')) typeset(out); }
+      if (m) { if (m.html) out.innerHTML = m.html; else out.textContent = m.feedback; out.dataset.state = 'no'; if (m.feedback.includes('$')) typeset(out); }
     });
   });
   // hints (teacher 2026-11-04): every hint is in view and opens freely, no lock between them

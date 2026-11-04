@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b0d6a520defc0939
+CONTENT-HASH: 29e5ecd1dc7acc04
 
 Round 2 (round 1: PASS, Polish only; L3-05 reworked).
 
@@ -21,3 +21,10 @@ Round 2 (round 1: PASS, Polish only; L3-05 reworked).
 - L1-06, L1-07, L2-07: exactly one correct option each, every distractor is wrong, and every feedback is right. Dropping "suurelta osin" from the correct L1-06 option is C, because it matches the teacher's worksheet wording.
 - Scope: m = e·E, slopes, percentages; L1-08 480, L2-06 26,2 also agree.
 - The hash was unchanged at the start and at the end.
+
+## Follow-up (2026-11-04, teacher's edit of L1-06: exercises.json:69, solutions.md:125)
+- exercises.json:69 and solutions.md:125 (L1-06): both now say what the lesson Ydinajatus says: +15 °C is the mean surface temperature, −18 °C the effective radiating temperature of a simple radiative balance model, and the difference illustrates the greenhouse effect. No claim that −18 °C is the surface temperature without greenhouse gases remains. Physics correct (definitions, model, causality).
+- Recomputed: $+15-(-18)=33$, and a temperature difference is the same in °C and K, so $33\,\text{K}$ is right; −18 °C ≈ 255 K is the textbook effective radiating temperature (σT⁴ = S(1−α)/4 with α ≈ 0,3), +15 °C ≈ 288 K the mean surface temperature.
+- The correct option, distractors and their feedback are unchanged; still exactly one correct option.
+- Polish (C, not a finding): "…, kun yksinkertainen säteilytasapainomalli antaa …" can be read as "because/when"; "kun taas" or "mutta" (the lesson's word) makes the contrast explicit.
+- Scope: only these two sentences; the rest of this report stands from the earlier round.

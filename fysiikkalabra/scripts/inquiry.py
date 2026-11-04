@@ -377,7 +377,11 @@ def answer_label(unit):
 
 
 def numeric_html(a, md, aid):
-    unit = esc(a.get("unit", "")); mistakes = esc(json.dumps(a.get("mistakes", []), ensure_ascii=False))
+    unit = esc(a.get("unit", ""))
+    # a mistake's feedback may carry Markdown (a chapter link "[*…*](fy7-10.html)"): it goes to the page as HTML too
+    ms = [dict(m, html=inline(md, m["feedback"])) if isinstance(m, dict) and re.search(r"\]\(|\*", m.get("feedback", "")) else m
+          for m in a.get("mistakes", []) or []]
+    mistakes = esc(json.dumps(ms, ensure_ascii=False))
     sol = (f'<details class="solution"><summary>{T("inquiry.show_solution")}</summary><div class="steps">'
            f'{mathlayout.steps_html(md(mathlayout.solution_md(a["solution"], T("lesson.solution_display_steps"))), T("lesson.solution_answer_step"))}</div></details>' if a.get("solution") else "")
     shown = answers_shown.shown(a.get("solution") or "", T("lesson.solution_answer_step"), a["answer"], a.get("tolerance", 0.02))

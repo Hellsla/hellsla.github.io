@@ -14,7 +14,7 @@ Content hash at hand-over: 210723c3675594ef (round 1; round 0 was 23902d39dc18f7
 ## Task counts
 - Pohdinta 1 hook. Ennusta 6 choice (unit, justification, intermediate rounding, significant figures, slope from the fit, "arvioi").
 - Tutki 1 interpret: two original answers A and B to one short task with a 6-point rubric; explain question with model answer and 4 criteria.
-- Sovella: Esimerkki + 24-item diagnostic, 3 per module FY1–FY8, folded per module ("Kertaustesti FY1" …): 12 choice, 12 numeric (each with a complete 8-step solution, hints ≤ 3, mistakes). Every feedback names the chapter as a link; FY7 feedback says "moduulissa FY7" without a link. FY6 items use fy6-2, fy6-3, fy6-4; FY8 items fy8-1, fy8-2, fy8-3.
+- Sovella: Esimerkki + 24-item diagnostic, 3 per module FY1–FY8, folded per module ("Kertaustesti FY1" …): 12 choice, 12 numeric (each with a complete 8-step solution, hints ≤ 3, mistakes). Every feedback names the chapter as a link; FY7 feedback links its chapter too (fy7-10, fy7-5, fy7-4; added 2026-11-04 when FY7 was on the site). FY6 items use fy6-2, fy6-3, fy6-4; FY8 items fy8-1, fy8-2, fy8-3.
 - Tarkista: choice (määritä graafisesti), numeric (train acceleration, 0,44 m/s²), explain (helmet, impulse), then exit ticket.
 - Tehtävät 4 long tasks, 61 points: s1 calc "Pyörällä vaaralle" 15 p (FY4/FY2), s2 data → graph → fit → interpret "Heiluri ja putoamiskiihtyvyys" 16 p (FY1/FY5), s3 explanation "Termospullo" 14 p (FY3), s4 experimental design "Vedenkeittimen hyötysuhde" 16 p (FY1/FY2/FY3). Each has skills, links, rubric, Yleisiä virheitä and Hyväksytään myös.
 
