@@ -1,15 +1,15 @@
 VERDICT: FAIL
-CONTENT-HASH: b025248b5c0201e8
+CONTENT-HASH: fda9f57419ebbcfb
+ROUND: 2
 ## Blocking
-- exercises.json fy6-5-L3-04 — lead text is one 61-word paragraph (rule: over ~45 words must be split) — add "\n\n" after "...kolme rinnakkaista haaraa." and after "...ja vastus $R_3 = 30\,\Omega$." so it reads situation / branch values / current directions ("Kummankin lähteen plusnapa ... pisteeseen $Q$.").
-- exercises.json fy6-5-L3-05 — lead text is one 56-word paragraph — add "\n\n" after "...joka on nollakohta." so the load sentence and the table sentence ("Pisteen $P$ ja miinusnavan väliin kytketään kuorma ... (esimerkkiaineisto).") form the second paragraph.
-- exercises.json fy6-5-L2-06 — lead text is one 49-word paragraph — add "\n\n" after "...lähteen miinusnapaan $E$." so "Miinusnapa on nollakohta. Jännitemittarilla mitatut potentiaalit ... $0{,}12\,\text{A}$." is its own paragraph.
+- exercises/solutions.md:202-204 (fy6-5-L3-05, Sijoitus) — the line "c) $R_\text{p} = \dfrac{100\,\Omega \cdot 5{,}0\,\text{V}}{...} = 250\,\Omega$" appears twice in a row, so the student sees part c) solved twice — delete the second copy (lines 203-204).
 ## Polish
-- L1-08 (two resistors in series) is harder than the existing L2-01 (one resistor, mA conversion, same V_B = V_A − RI idea); consider swapping the levels or giving L1-08 one resistor.
-- Plan item "virheanalyysi: silmukka väärään suuntaan, negatiivinen virta" is not covered (L3-04 gives all-positive currents); L2-07 covers sign error only. Consider one sentence on a negative current in L3-04 c).
-- L3-05 c): the solution's Sijoitus does not show the a)-part reasoning separately (only in Periaate); add one sentence under a).
-- L1-07 distractor 4 feedback: "ja nekin pysyvät samoina" is awkward; write "ja ne pysyvät samoina".
+- L1-08 (two resistors in series) is still harder than L2-01 (one resistor, same V_B = V_A − RI idea); consider swapping levels or giving L1-08 one resistor.
+- Plan item "silmukka väärään suuntaan, negatiivinen virta" is covered only by L2-07 (sign error); one sentence on a negative current in L3-04 c) would close it.
 ## Checked
-- Recomputed all 8 new answers and data (L2-05 0.59 A, L2-06 40 Ω, L2-07 −3.0 V, L3-04 I1/I2/I3 and power balance 3.3 W, L3-05 table values and 250 Ω): consistent with solutions.
-- Levels, kinds and the plan (data/MC/error/model) fit; no duplicate of an existing task.
-- Solutions complete and followable; Finnish and glossary terms fine.
+- Round 1 Blocking resolved: L3-04, L3-05 and L2-06 lead texts are split into paragraphs of at most 38 words; L2-06 first paragraph 37 words.
+- Round 1 Polish on L1-07 distractor wording resolved.
+- L3-04 solution reformatted into display equations; values 0,20 / 0,30 / 0,10 A and power balance 3,3 W still correct.
+- L3-05 a) reasoning now shown in Sijoitus; b) 4,0 V and c) 250 Ω correct; Vastaus range text consistent.
+- L2-05 table task now has staged lead (ideal source/meters stated); answer 0,59 A matches.
+- Levels, kinds and plan (data/MC/error/model) fit; no duplicate of existing tasks; Finnish fine.

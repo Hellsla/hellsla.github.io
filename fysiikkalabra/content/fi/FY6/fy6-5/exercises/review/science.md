@@ -1,21 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: b025248b5c0201e8
+VERDICT: FAIL
+CONTENT-HASH: fda9f57419ebbcfb
+Round: 2. Round 1 had no Blocking items. Checked the diff since 00b2dcb54: round-1 Polish was applied (ideal meters in L2-05, "mittaustarkkuuden rajoissa", "kuorman resistanssi"), L1-06/L1-07 options were reordered, and L3-04/L3-05 were split into paragraphs. The edit added one defect.
 
 ## Blocking
+- exercises/solutions.md:204 (fy6-5-L3-05 Sijoitus) — the c) line is duplicated: lines 202 and 204 are identical, and both render as two identical c) calculation blocks (open-exercises-L3-1280-8). — Fix: delete line 204 and the blank line before it.
 
 ## Polish
-- solutions.md:188 (fy6-5-L3-05 b) — "alle 0,01 V:n poikkeamalla": 4,01 V − 4,00 V is exactly 0,01 V, not under it — write "0,01 V:n poikkeamalla" or "mittaustarkkuuden rajoissa".
-- solutions.md:189 (fy6-5-L3-05 Vastaus) — "Pienempi kuorma laskisi potentiaalin" is ambiguous (a smaller load usually means less current, which is the opposite) — write "Pienempi kuorman resistanssi".
-- exercises.json:150 / solutions.md:145 (fy6-5-L2-05) — the Ohm check of each branch ($I = U : R$ with 12 V across every resistor) assumes an ideal source and ideal ammeters; the task does not say so (B-type, minor: the data agree with it) — add "Lähde, johtimet ja virtamittarit oletetaan ideaalisiksi."
-- docs/exercise-bank/FY6.md plan, level 3 — the plan's error analysis "silmukka väärään suuntaan → negatiivinen virta" is not in the set; L3-05 (loaded voltage divider) replaces it. Update the plan or note the swap.
+- docs/exercise-bank/FY6.md plan, level 3 — the plan's error analysis "silmukka väärään suuntaan → negatiivinen virta" is still not in the set (L3-05 replaces it). Update the plan, or add one c) item to L3-04: "jos I₃ olisi oletettu toiseen suuntaan, ratkaisu antaisi −0,10 A; mitä merkki tarkoittaa?"
 
 ## Checked
-- Hash b025248b5c0201e8 at start and end.
-- All eight new answers recomputed in one script with my own formulas (node-voltage method for L3-04) and compared with exercises.json and answers.py: L1-08 3,0 V; L2-05 0,59 A; L2-06 40 Ω; L2-07 −3,0 V; L3-04 I₂ = 0,30 A (I₁ = 0,20 A, I₃ = 0,10 A, V_PQ = 6,0 V, 3,3 W = 3,3 W); L3-05 250 Ω. All agree within tolerance.
-- L3-05 table checked against the divider model: 5,71 / 4,00 / 2,91 V against 5,72 / 4,01 / 2,91 V, labelled as example data; R_k = 236…266 Ω for V_P = 4,95…5,05 V, so 2 s.f. and 3 % fit.
-- L3-04 signs: both loop equations follow the lesson's ΔV rules; the energy balance assumes the ideal sources the task states.
-- L2-05: the branch readings equal U/R, so A₀ is the inconsistent one.
-- L2-06: B and C are joined by a wire, so ΔV = 0; R₁ = R₃ = 30 Ω.
-- L2-07: the student's error is the sign of the drop; −3,0 V and the −9,0 V minus pole are consistent.
-- L1-06 and L1-07: exactly one correct option each; every distractor is really wrong and its feedback names the reason.
-- Notation (V_A, U_AB, ΔV, RI, I₁ = I₂ + I₃) matches the lesson; scope within FY6 Kirchhoff and the LOPS note on branched circuits; no new task duplicates an existing one, and the levels fit.
+- Hash fda9f57419ebbcfb at start and end.
+- answers.py was recomputed and compared with every numeric answer in exercises.json; all agree (L2-05 0,59 A; L2-06 40 Ω; L2-07 −3,0 V; L3-04 0,30 A; L3-05 250 Ω).
+- L1-06 and L1-07 after reordering: exactly one correct option each. `answer` equals the correct option's text, and the reworded distractors and their feedback are still right.
+- L2-05: adding "Lähde, johtimet ja virtamittarit oletetaan ideaalisiksi" makes the U/R check valid. The physics of the paragraph split is unchanged.
+- L3-04: the display-block rewrite keeps the same equations and results (I₂ = 0,30 A, 3,3 W = 3,3 W).
+- L3-05 a): the added series/voltage-law reasoning is right. "Pienempi kuorman resistanssi laskisi potentiaalin" is now right.
+- The 360 px layout check in review/checks.txt is FAIL from an earlier run. Rerunning check_layout.py fy6-5 --width 360 now passes (2 wide tables scroll).
+- Set: 8/7/5, with no duplicates.

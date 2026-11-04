@@ -52,17 +52,17 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Energiaa, koska se saadaan kertomalla laitteen teho käyttöajalla.",
-          "correct": true,
-          "feedback": "Oikein: kilowattitunti on energian yksikkö, $1\\,\\text{kWh} = 1\\,\\text{kW} \\cdot 1\\,\\text{h}$. Se kertoo, kuinka paljon sähköenergiaa on käytetty, ei sitä, kuinka nopeasti."
-        },
-        {
           "text": "Tehoa, koska se kertoo, kuinka paljon sähköä laite käyttää tunnissa.",
           "feedback": "Teho kertoo, kuinka nopeasti energiaa käytetään, ja sen yksikkö on kilowatti. Kilowattitunti on teho kerrottuna ajalla, joten se on energiaa."
         },
         {
           "text": "Virtaa, koska se kertoo, kuinka paljon varausta johdossa kulkee tunnissa.",
           "feedback": "Virran yksikkö on ampeeri, eikä sähkölaskussa laskuteta virtaa. Kilowattitunnissa on teho eli jännite ja virta yhdessä kerrottuna ajalla."
+        },
+        {
+          "text": "Energiaa, koska se saadaan kertomalla laitteen teho käyttöajalla.",
+          "correct": true,
+          "feedback": "Oikein: kilowattitunti on energian yksikkö, $1\\,\\text{kWh} = 1\\,\\text{kW} \\cdot 1\\,\\text{h}$. Se kertoo, kuinka paljon sähköenergiaa on käytetty, ei sitä, kuinka nopeasti."
         },
         {
           "text": "Hintaa, koska sähköyhtiö laskuttaa sähkön tunnin jaksoissa kerrallaan.",
@@ -175,7 +175,7 @@
     {
       "id": "fy6-7-L2-06",
       "level": 2,
-      "text": "Perheen sähkömittarin lukemat kirjattiin joka aamu kello $8.00$ viikon ajan (esimerkkiaineisto). Sähkö maksaa siirtoineen $16\\,\\text{snt/kWh}$.\n\na) Laske mittarin lukemien avulla viikon aikana käytetty energia ja keskimääräinen energia vuorokaudessa.\n\nb) Laske kodin sähkötehon keskiarvo viikon aikana watteina.\n\nc) Laske viikon sähkön hinta ilman perusmaksuja.\n\nVastauskenttään tulee kohdan b) tulos.",
+      "text": "Perheen sähkömittarin lukemat kirjattiin joka aamu kello 8 viikon ajan (esimerkkiaineisto). Sähkö maksaa siirtoineen $16\\,\\text{snt/kWh}$.\n\na) Laske mittarin lukemien avulla energia kunkin vuorokauden aikana sekä viikon aikana käytetty energia ja keskimääräinen energia vuorokaudessa.\n\nb) Laske kodin sähkötehon keskiarvo viikon aikana watteina.\n\nc) Laske viikon sähkön hinta ilman perusmaksuja.\n\nVastauskenttään tulee kohdan b) tulos.",
       "kind": [
         "data"
       ],
@@ -227,7 +227,7 @@
     {
       "id": "fy6-7-L2-07",
       "level": 2,
-      "text": "Oppilas mittasi vanhan jääkaapin sähkönkulutuksen energiamittarilla, joka oli kytketty pistorasian ja jääkaapin väliin. Mittarin lukema oli alussa $0.00\\,\\text{kWh}$, ja se luettiin $12\\,\\text{h}$:n välein $48\\,\\text{h}$:n ajan (esimerkkiaineisto).\n\na) Piirrä lukemista kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Lue suoralta energia $48\\,\\text{h}$:n kohdalla.\n\nb) Arvioi jääkaapin energia vuodessa ($365$ vuorokautta) olettaen, että kulutus on koko ajan sama kuin mittauksessa.\n\nc) Mainitse kaksi tekijää, jotka voivat tehdä vuosiarviosta epätarkan.\n\nVastauskenttään tulee kohdan b) tulos.",
+      "text": "Oppilas mittasi vanhan jääkaapin sähkönkulutuksen energiamittarilla, joka oli kytketty pistorasian ja jääkaapin väliin. Mittarin lukema oli alussa $0{,}00\\,\\text{kWh}$, ja se luettiin $12\\,\\text{h}$:n välein $48\\,\\text{h}$:n ajan (esimerkkiaineisto).\n\na) Piirrä lukemista kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Lue suoralta energia $48\\,\\text{h}$:n kohdalla.\n\nb) Arvioi jääkaapin energia vuodessa ($365$ vuorokautta) olettaen, että kulutus on koko ajan sama kuin mittauksessa.\n\nc) Mainitse kaksi tekijää, jotka voivat tehdä vuosiarviosta epätarkan.\n\nVastauskenttään tulee kohdan b) tulos.",
       "kind": [
         "experiment",
         "data",
@@ -295,7 +295,7 @@
     {
       "id": "fy6-7-L3-04",
       "level": 3,
-      "text": "Kodin sähkönkulutus ja sähkön hinta mitattiin yhden vuorokauden ajalta neljän tunnin jaksoissa (esimerkkiaineisto). Hinta $a$ on energian ja siirron hinta yhteensä, ja se on sama koko jakson ajan. Lämminvesivaraajan vastus, jonka teho on $2{,}0\\,\\text{kW}$, oli päällä $3{,}0\\,\\text{h}$ jaksolla klo $16$–$20$, ja sen energia sisältyy kyseisen jakson kulutukseen.\n\na) Laske vuorokauden sähköenergian kokonaiskustannus ja keskihinta senttiä kilowattituntia kohti.\n\nb) Varaajan lämmitys siirretään jaksolle klo $00$–$04$, ja muu kulutus pysyy ennallaan. Laske, kuinka paljon rahaa siirto säästää vuorokaudessa.\n\nc) Perustele, miksi säästö syntyy, vaikka energiaa ei kulu vähemmän, ja nimeä yksi syy, miksi siirto ei välttämättä onnistu jokaisena vuorokautena.\n\nVastauskenttään tulee kohdan b) tulos euroina.",
+      "text": "Kodin sähkönkulutus ja sähkön hinta mitattiin yhden vuorokauden ajalta neljän tunnin jaksoissa (esimerkkiaineisto). Hinta $a$ on energian ja siirron hinta yhteensä, ja se on sama koko jakson ajan.\n\nLämminvesivaraajan vastus, jonka teho on $2{,}0\\,\\text{kW}$, oli päällä $3{,}0\\,\\text{h}$ jaksolla klo $16$–$20$, ja sen energia sisältyy kyseisen jakson kulutukseen.\n\na) Laske vuorokauden sähköenergian kokonaiskustannus ja keskihinta senttiä kilowattituntia kohti.\n\nb) Varaajan lämmitys siirretään jaksolle klo $00$–$04$, ja muu kulutus pysyy ennallaan. Laske, kuinka paljon rahaa siirto säästää vuorokaudessa.\n\nc) Perustele, miksi säästö syntyy, vaikka energiaa ei kulu vähemmän, ja nimeä yksi syy, miksi siirto ei välttämättä onnistu jokaisena vuorokautena.\n\nVastauskenttään tulee kohdan b) tulos euroina.",
       "kind": [
         "data",
         "model",
@@ -348,7 +348,7 @@
     {
       "id": "fy6-7-L3-05",
       "level": 3,
-      "text": "Perheen vanha jääkaappi-pakastin käyttää energiaa $320\\,\\text{kWh}$ vuodessa (energiamittarilla mitattu). Uuden samankokoisen laitteen energiamerkinnän mukaan vuosikulutus on $98\\,\\text{kWh}$, ja laite maksaa $489\\,\\text{€}$. Sähkö maksaa siirtoineen $17\\,\\text{snt/kWh}$. Luvut ovat esimerkkiaineistoa. Oletetaan, että hinta ja kulutukset pysyvät vakioina ja vanha laite viedään pois ilman myyntituloa.\n\na) Laske uuden laitteen vuotuinen energiansäästö kilowattitunteina ja euroina.\n\nb) Laske takaisinmaksuaika eli aika, jossa säästö on yhtä suuri kuin uuden laitteen hinta.\n\nc) Uuden laitteen käyttöikä on $15\\,\\text{a}$. Laske, kuinka paljon rahaa uusi laite säästää käyttöikänsä aikana ostohinnan jälkeen, ja perustele, onko vaihto järkevä. Mainitse yksi tekijä, jota malli ei ota huomioon.\n\nVastauskenttään tulee kohdan b) tulos vuosina.",
+      "text": "Perheen vanha jääkaappi-pakastin käyttää energiaa $320\\,\\text{kWh}$ vuodessa (energiamittarilla mitattu). Uuden samankokoisen laitteen energiamerkinnän mukaan vuosikulutus on $98\\,\\text{kWh}$, ja laite maksaa $489\\,\\text{€}$. Sähkö maksaa siirtoineen $17\\,\\text{snt/kWh}$. Luvut ovat esimerkkiaineistoa.\n\nOletetaan, että hinta ja kulutukset pysyvät vakioina ja vanha laite viedään pois ilman myyntituloa.\n\na) Laske uuden laitteen vuotuinen energiansäästö kilowattitunteina ja euroina.\n\nb) Laske takaisinmaksuaika eli aika, jossa säästö on yhtä suuri kuin uuden laitteen hinta.\n\nc) Uuden laitteen käyttöikä on $15\\,\\text{a}$. Laske, kuinka paljon rahaa uusi laite säästää käyttöikänsä aikana ostohinnan jälkeen, ja perustele, onko vaihto järkevä. Mainitse yksi tekijä, jota malli ei ota huomioon.\n\nVastauskenttään tulee kohdan b) tulos vuosina.",
       "kind": [
         "model",
         "reasoning"

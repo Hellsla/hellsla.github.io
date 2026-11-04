@@ -29,7 +29,7 @@ a["fy6-6-L3-02"] = (230 / 20) / I_lights                  # each lamp 230 V : 20
 P1 = 12 ** 2 / 6.0                                        # parallel on 12 V: 6,0 ohm takes U^2/R = 24 W
 a["fy6-6-L3-03"] = 12 ** 2 / (36 - P1)                    # the other takes 36 W - 24 W = 12 W, so R2 = U^2 / P2 = 12 ohm
 # Level 1 additions
-a["fy6-6-L1-07"] = (0.25 / 220) ** 0.5 * 1000             # 220 ohm, 0,25 W: I = sqrt(P / R) = 0,03371 A = 33,7 mA
+a["fy6-6-L1-07"] = 12 * 350 / 1000                        # LED strip: P = U I = 12 V · 0,350 A = 4,2 W
 R_18 = 2.0 ** 2 / 0.80                                    # R = U1^2 / P1 = 4,0 V^2 : 0,80 W = 5,0 ohm
 a["fy6-6-L1-08"] = 6.0 ** 2 / R_18                        # P2 = U2^2 / R = 36 V^2 : 5,0 ohm = 7,2 W
 # Level 2 additions

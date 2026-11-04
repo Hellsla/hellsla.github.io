@@ -48,38 +48,38 @@
       "kind": [
         "concept"
       ],
-      "answer": "Suuremman resistanssin vastuksessa, koska virta on sama ja teho on $P = RI^2$.",
+      "answer": "Suuremman resistanssin vastuksessa, koska virta on sama ja teho kasvaa resistanssin mukana.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Suuremman resistanssin vastuksessa, koska virta on sama ja teho on $P = RI^2$.",
+          "text": "Pienemmän resistanssin vastuksessa, koska virta on siinä suurempi ja teho kasvaa virran mukana.",
+          "feedback": "Sarjaankytkennässä virta ei jakaudu: kaikki komponentit muodostavat yhden silmukan, ja sama virta kulkee molempien läpi. Suurempi virta pienemmässä resistanssissa kuuluu rinnankytkentään, ei sarjaan."
+        },
+        {
+          "text": "Pienemmän resistanssin vastuksessa, koska kummankin yli on sama jännite ja teho on silloin suurempi.",
+          "feedback": "Sama jännite on vastusten yli vain rinnankytkennässä. Sarjaankytkennässä lähteen jännite jakautuu vastusten kesken, ja suuremman resistanssin yli on suurempi osa."
+        },
+        {
+          "text": "Suuremman resistanssin vastuksessa, koska virta on sama ja teho kasvaa resistanssin mukana.",
           "feedback": "Oikein: sarjaankytkennässä molempien läpi kulkee sama virta, joten Joulen lain muodossa $P = RI^2$ teho kasvaa resistanssin mukana. Suuremman resistanssin vastus saa myös suuremman osan lähteen jännitteestä.",
           "correct": true
         },
         {
-          "text": "Pienemmän resistanssin vastuksessa, koska siinä on suurempi virta ja teho on $P = RI^2$.",
-          "feedback": "Sarjaankytkennässä virta ei jakaudu: kaikki komponentit muodostavat yhden silmukan, ja sama virta kulkee molempien läpi. Suurempi virta on rinnankytkennän pienemmässä resistanssissa, ei sarjassa."
-        },
-        {
-          "text": "Pienemmän resistanssin vastuksessa, koska jännite on sama ja teho on $P = U^2 : R$.",
-          "feedback": "Sama jännite on vastusten yli vain rinnankytkennässä. Sarjaankytkennässä lähteen jännite jakautuu vastusten kesken, ja suuremman resistanssin yli on suurempi osa, joten kaava $U^2 : R$ ei anna tässä samaa $U$:ta kummallekin."
-        },
-        {
-          "text": "Molemmissa yhtä paljon, koska virta on sama ja kummankin teho on $P = UI$.",
-          "feedback": "Virta on sama, mutta vastusten jännitteet ovat eri suuret, koska suuremman resistanssin yli on suurempi jännite ($U = RI$). Teho $P = UI$ on siis suurempi sillä vastuksella, jonka yli on suurempi jännite."
+          "text": "Molemmissa yhtä paljon, koska kummankin läpi kulkee sama virta ja teho riippuu vain virrasta.",
+          "feedback": "Virta on sama, mutta teho riippuu myös jännitteestä: suuremman resistanssin yli on suurempi jännite ($U = RI$), joten teho $P = UI$ on suurempi sillä vastuksella."
         }
       ]
     },
     {
       "id": "fy6-6-L1-07",
       "level": 1,
-      "text": "Hiilikalvovastuksen resistanssi on $220\\,\\Omega$ ja sen suurin sallittu teho $0{,}25\\,\\text{W}$. Kuinka suuri virta vastuksen läpi saa enintään kulkea? Vastaa milliampeereina.",
+      "text": "Led-nauha on kytketty $12\\,\\text{V}$:n jännitteeseen, ja sen läpi kulkee virta $350\\,\\text{mA}$. Kuinka suuri on nauhan teho? Vastaa watteina.",
       "kind": [
         "model"
       ],
-      "answer": 33.7,
-      "unit": "mA",
+      "answer": 4.2,
+      "unit": "W",
       "tolerance": 0.02
     },
     {
@@ -227,7 +227,7 @@
     {
       "id": "fy6-6-L2-07",
       "level": 2,
-      "text": "Oppilas kytki kaksi erilaista hehkulamppua A ja B sarjaan ja mittasi virran sekä kummankin lampun jännitteen. Lamppu A loisti kirkkaammin kuin lamppu B. Oppilas päätteli: \"Kirkkaampi lamppu A kuluttaa vähemmän virtaa kuin lamppu B, joten sen teho on pienempi.\"\n\na) Mikä oppilaan päättelyssä on virheellistä? Perustele taulukon mittaustuloksilla.\n\nb) Kuinka monta wattia suurempi on lampun A teho kuin lampun B teho?\n\nVastaa laatikkoon kohdan b) tulos.",
+      "text": "Oppilas kytki kaksi erilaista hehkulamppua A ja B sarjaan ja mittasi virran sekä kummankin lampun jännitteen. Lamppu A loisti kirkkaammin kuin lamppu B. Oppilas päätteli: ”Kirkkaampi lamppu A kuluttaa vähemmän virtaa kuin lamppu B, joten sen teho on pienempi.”\n\na) Mikä oppilaan päättelyssä on virheellistä? Perustele taulukon mittaustuloksilla.\n\nb) Kuinka monta wattia suurempi on lampun A teho kuin lampun B teho?\n\nVastaa laatikkoon kohdan b) tulos.",
       "kind": [
         "data",
         "error",

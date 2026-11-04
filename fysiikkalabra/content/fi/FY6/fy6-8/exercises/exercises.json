@@ -53,11 +53,6 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Kun paristosta ei oteta virtaa, koska silloin sisäisessä resistanssissa ei synny jännitehäviötä.",
-          "feedback": "Oikein: napajännite on $U = E - R_\\text{s} I$, ja kun $I = 0$, sisäisessä resistanssissa ei jännite laske. Siksi vain ilman kuormaa jännitemittari näyttää lähdejännitteen.",
-          "correct": true
-        },
-        {
           "text": "Kun paristosta otetaan mahdollisimman suuri virta, koska silloin koko lähdejännite jää navoille.",
           "feedback": "Päinvastoin: suuri virta kasvattaa jännitehäviötä $R_\\text{s} I$ sisäisessä resistanssissa, joten navoille jää lähdejännitettä pienempi jännite. Oikosulussa napajännite on nolla."
         },
@@ -66,7 +61,12 @@
           "feedback": "Silloin lähdejännite todella jakautuu tasan, mutta juuri siksi napajännite on vain puolet lähdejännitteestä. Napajännite on lähdejännitteen suuruinen vasta, kun virtaa ei kulje."
         },
         {
-          "text": "Aina, koska lähdejännite on pariston ominaisuus eikä kuorma vaikuta napajännitteeseen.",
+          "text": "Kun paristosta ei oteta virtaa, koska silloin sisäisessä resistanssissa ei synny jännitehäviötä.",
+          "feedback": "Oikein: napajännite on $U = E - R_\\text{s} I$, ja kun $I = 0$, sisäisessä resistanssissa ei jännite laske. Siksi vain ilman kuormaa jännitemittari näyttää lähdejännitteen.",
+          "correct": true
+        },
+        {
+          "text": "Aina, koska lähdejännite on pariston ominaisuus eikä kuorma muuta napajännitettä lainkaan.",
           "feedback": "Lähdejännite on pariston ominaisuus, mutta napajännite ei: kun virta kasvaa, sisäisen resistanssin jännitehäviö kasvaa ja napajännite pienenee. Siksi ne ovat yhtä suuret vain virrattomassa tilassa."
         }
       ]
@@ -78,15 +78,10 @@
       "kind": [
         "concept"
       ],
-      "answer": "Virta kasvaa suureksi, koska sitä rajoittaa vain pariston sisäinen resistanssi.",
+      "answer": "Virta kasvaa suureksi, koska sitä rajoittaa enää vain pariston sisäinen resistanssi.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
-        {
-          "text": "Virta kasvaa suureksi, koska sitä rajoittaa vain pariston sisäinen resistanssi.",
-          "feedback": "Oikein: ulkoisen piirin resistanssi on lähes nolla, joten virta on $I_\\text{k} = E : R_\\text{s}$. Paristoissa $R_\\text{s}$ on pieni, joten virta on suuri ja paristo lämpenee vaarallisen kuumaksi.",
-          "correct": true
-        },
         {
           "text": "Virta pienenee nollaan, koska ulkoisen piirin resistanssi on nolla eikä kuormaa ole.",
           "feedback": "Ohmin laki toimii päinvastoin: mitä pienempi kokonaisresistanssi, sitä suurempi virta. Kuorman puuttuminen ei pysäytä virtaa vaan poistaa sen rajoittimen."
@@ -98,6 +93,11 @@
         {
           "text": "Napajännite nousee lähdejännitettä suuremmaksi, koska johdin ei vastusta virtaa lainkaan.",
           "feedback": "Napajännite ei voi ylittää lähdejännitettä, koska $U = E - R_\\text{s} I$. Oikosulussa napajännite on päinvastoin nolla, koska koko lähdejännite jää sisäisen resistanssin yli."
+        },
+        {
+          "text": "Virta kasvaa suureksi, koska sitä rajoittaa enää vain pariston sisäinen resistanssi.",
+          "feedback": "Oikein: ulkoisen piirin resistanssi on lähes nolla, joten virta on $I_\\text{k} = E : R_\\text{s}$. Paristoissa $R_\\text{s}$ on pieni, joten virta on suuri ja paristo lämpenee vaarallisen kuumaksi.",
+          "correct": true
         }
       ]
     },
@@ -146,14 +146,14 @@
     {
       "id": "fy6-8-L2-05",
       "level": 2,
-      "text": "Pariston napajännite mitattiin kuudella eri kuormitusvirralla (esimerkkiaineisto). Piirrä mittauspisteistä $(I, U)$-kuvaaja ja sovita pisteisiin suora. Pisteet eivät ole täsmälleen suoralla, koska jokaisessa mittauksessa on pieni epävarmuus.\n\na) Lue suoralta pariston lähdejännite.\n\nb) Määritä suoran kulmakertoimesta pariston sisäinen resistanssi.\n\nVastauslaatikkoon tulee b)-kohdan tulos.",
+      "text": "Pariston napajännite mitattiin kuudella eri kuormitusvirralla (esimerkkiaineisto). Piirrä mittauspisteistä $(I, U)$-kuvaaja ja sovita pisteisiin suora. Pisteet eivät ole täsmälleen suoralla, koska jokaisessa mittauksessa on pieni epävarmuus.\n\na) Lue suoralta pariston lähdejännite.\n\nb) Määritä suoran kulmakertoimesta pariston sisäinen resistanssi ja arvioi, kuinka paljon kulmakerroin voi vaihdella, kun suora sovitetaan eri tavoin.\n\nVastauslaatikkoon tulee b)-kohdan tulos.",
       "kind": [
         "data",
         "graph"
       ],
       "answer": 0.56,
       "unit": "Ω",
-      "tolerance": 0.05,
+      "tolerance": 0.06,
       "data": {
         "caption": "Pariston napajännite $U$ kuormitusvirran $I$ funktiona (esimerkkiaineisto)",
         "columns": [
@@ -199,7 +199,7 @@
       ],
       "answer": 0.4,
       "unit": "A",
-      "tolerance": 0.1,
+      "tolerance": 0.13,
       "data": {
         "caption": "Paristojen A ja B napajännite kuormitusvirran funktiona (esimerkkiaineisto)",
         "columns": [
@@ -219,19 +219,19 @@
             "1.44"
           ],
           [
-            "0.40",
-            "1.40",
-            "1.40"
+            "0.30",
+            "1.45",
+            "1.42"
           ],
           [
-            "0.60",
-            "1.29",
-            "1.35"
+            "0.50",
+            "1.35",
+            "1.38"
           ],
           [
-            "0.80",
-            "1.21",
-            "1.31"
+            "0.70",
+            "1.25",
+            "1.34"
           ],
           [
             "1.00",
@@ -244,7 +244,7 @@
     {
       "id": "fy6-8-L2-07",
       "level": 2,
-      "text": "Oppilas mittaa paristoa jännitemittarilla, joka on kytketty pariston napoihin ilman kuormaa. Mittari näyttää $1{,}58\\,\\text{V}$ (esimerkkiaineisto). Oppilas päättelee: \"Napajännite on sama kuin pariston merkitty lähdejännite, joten pariston sisäinen resistanssi on nolla.\" Mikä väite oppilaan päätelmästä on oikein?",
+      "text": "Oppilas mittaa paristoa jännitemittarilla, joka on kytketty pariston napoihin ilman kuormaa. Mittari näyttää $1{,}58\\,\\text{V}$ (esimerkkiaineisto). Oppilas päättelee: ”Napajännite on sama kuin pariston lähdejännite, joten pariston sisäinen resistanssi on nolla.”\n\nMikä väite oppilaan päätelmästä on oikein?",
       "kind": [
         "experiment",
         "error"
@@ -263,11 +263,11 @@
           "feedback": "Napajännite on lähdejännite myös silloin, kun virtaa ei kulje, vaikka $R_\\text{s}$ olisi suuri: jännitehäviö on $R_\\text{s} I = 0$. Mittaus ei siis kerro sisäisestä resistanssista mitään."
         },
         {
-          "text": "Päätelmä on virheellinen, koska jännitemittari ottaa suuren virran ja pienentää napajännitettä.",
+          "text": "Päätelmä on virheellinen, koska jännitemittari ottaa suuren virran ja pienentää mitattua napajännitettä.",
           "feedback": "Jännitemittarin resistanssi on hyvin suuri, joten se ottaa häviävän pienen virran eikä muuta napajännitettä merkittävästi. Siksi virraton mittaus antaa lähdejännitteen, mutta ei $R_\\text{s}$:ää."
         },
         {
-          "text": "Päätelmä on virheellinen, koska virran ollessa nolla sisäinen resistanssi on ääretön.",
+          "text": "Päätelmä on virheellinen, koska virran ollessa nolla pariston sisäinen resistanssi on ääretön.",
           "feedback": "Sisäinen resistanssi on pariston ominaisuus eikä muutu virran mukana. Virta on nolla, koska ulkoista piiriä ei ole, ei siksi että $R_\\text{s}$ olisi ääretön."
         }
       ]
@@ -349,7 +349,7 @@
     {
       "id": "fy6-8-L3-05",
       "level": 3,
-      "text": "Oppilas määritti akun sisäisen resistanssin ja oikosulkuvirran mittaamalla virran ja jännitteen kuudella kuormalla (esimerkkiaineisto). Jännitemittari oli kytketty kuormitusvastuksen napoihin, ja akun ja vastuksen välisten johtimien yhteenlaskettu resistanssi on erikseen mitattuna $0{,}30\\,\\Omega$. Mittari näyttää siis jännitteen johtimien toisessa päässä, ei akun navoilta. Oppilas sovitti pisteisiin suoran, sai kulmakertoimen itseisarvoksi $1{,}1\\,\\Omega$ ja päätteli: \"Sisäinen resistanssi on $1{,}1\\,\\Omega$, joten oikosulkuvirta on $E : 1{,}1\\,\\Omega = 5{,}6\\,\\text{A}$.\"\n\na) Piirrä mittauspisteistä kuvaaja, sovita suora ja lue sen avulla akun lähdejännite $E$.\n\nb) Selitä, miksi oppilaan sisäinen resistanssi on liian suuri, ja laske akun oikea sisäinen resistanssi.\n\nc) Laske akun oikea oikosulkuvirta, kun navat yhdistetään suoraan ilman johtimia. Miten mittaus olisi pitänyt tehdä, jotta johtimet eivät vaikuta tulokseen?\n\nVastauslaatikkoon tulee c)-kohdan oikosulkuvirta.",
+      "text": "Oppilas määritti neljän AA-pariston ryhmän sisäisen resistanssin ja oikosulkuvirran mittaamalla virran ja jännitteen kuudella kuormalla (esimerkkiaineisto). Jännitemittari oli kytketty kuormitusvastuksen napoihin, ja paristoryhmän ja vastuksen välisten johtimien yhteenlaskettu resistanssi on erikseen mitattuna $0{,}30\\,\\Omega$.\n\nOppilas sovitti pisteisiin suoran, sai kulmakertoimen itseisarvoksi $1{,}1\\,\\Omega$ ja päätteli: ”Sisäinen resistanssi on $1{,}1\\,\\Omega$, joten oikosulkuvirta on $E : 1{,}1\\,\\Omega = 5{,}6\\,\\text{A}$.”\n\na) Piirrä mittauspisteistä kuvaaja, sovita suora ja lue sen avulla paristoryhmän lähdejännite $E$.\n\nb) Selitä, miksi oppilaan sisäinen resistanssi on liian suuri, ja laske paristoryhmän oikea sisäinen resistanssi.\n\nc) Laske paristoryhmän oikea oikosulkuvirta, kun navat yhdistetään suoraan ilman johtimia. Miten mittaus olisi pitänyt tehdä, jotta johtimet eivät vaikuta tulokseen?\n\nVastauslaatikkoon tulee c)-kohdan oikosulkuvirta.",
       "kind": [
         "data",
         "graph",
