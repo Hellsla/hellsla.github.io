@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "contribution": "A charged particle in electric and magnetic fields: the magnetic force $F = qvB$ turns the motion without changing the speed, the path is a circle $r = mv : (qB)$, and the velocity selector, the mass spectrometer and the particle accelerator combine acceleration by an electric field with bending by a magnetic field.",
+  "learn": [
+    "explain why the magnetic force turns the path of a charged particle but does not change its speed.",
+    "determine the direction of the magnetic force and calculate its magnitude and the radius of the circular path.",
+    "calculate the speed of a particle in a velocity selector and its mass in a mass spectrometer."
+  ],
+  "prior": [
+    "A charged particle in an electric field is acted on by a force $F = qE$, and on travelling across a voltage $U$ it gains energy $W = qU$ (chapter *Uniform electric field, potential and potential energy*)",
+    "The strength of a magnetic field is the magnetic flux density $B$, whose unit is the tesla (chapter *Magnets, the magnetic dipole and the magnetic field*)",
+    "In uniform circular motion the net force points towards the centre of the path and has magnitude $\\tfrac{mv^2}{r}$ (chapter *Uniform circular motion and normal acceleration*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In radiocarbon dating the age of an ancient piece of wood is found from how much radioactive carbon-14 is still left in it. Carbon-14 atoms make up only about one in a trillion of the carbon atoms of the sample, and chemically they behave like ordinary carbon-12. In the laboratory the carbon atoms of the sample are turned into ions, which are accelerated to a high speed and directed into a magnetic field. At the detector the carbon-12 and carbon-14 ions strike different places, so they can be counted separately.",
+      "question": "How can a magnetic field sort particles that differ from each other only in mass?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Revise: an electric field accelerates",
+      "optional": true,
+      "prompt": "A proton is accelerated from rest by a voltage of $1000\\,\\text{V}$, and its speed becomes $4.4 \\cdot 10^{5}\\,\\text{m/s}$. What is the speed when the voltage is $4000\\,\\text{V}$?",
+      "choices": [
+        {
+          "text": "$8.8 \\cdot 10^{5}\\,\\text{m/s}$, because the speed is proportional to the square root of the voltage.",
+          "correct": true,
+          "feedback": "Correct. The field does work $W = qU$ on the proton, and the work becomes kinetic energy $\\tfrac{1}{2}mv^2$ (chapter *Uniform electric field, potential and potential energy*). Four times the voltage gives four times the kinetic energy, and that corresponds to twice the speed, because $v = \\sqrt{2qU : m}$."
+        },
+        {
+          "text": "$1.8 \\cdot 10^{6}\\,\\text{m/s}$, because the speed is directly proportional to the voltage.",
+          "feedback": "The voltage is proportional to the kinetic energy, not to the speed: $qU = \\tfrac{1}{2}mv^2$. Four times the kinetic energy requires only twice the speed, because the speed is squared in the equation."
+        },
+        {
+          "text": "$4.4 \\cdot 10^{5}\\,\\text{m/s}$, because the same electric field always gives the proton the same speed.",
+          "feedback": "A greater voltage means that the field does more work on the proton, $W = qU$. The work increases the kinetic energy, so the speed increases."
+        },
+        {
+          "text": "$7.0 \\cdot 10^{6}\\,\\text{m/s}$, because the speed grows as the square of the voltage.",
+          "feedback": "The square belongs to the speed, not to the voltage: from the equation $qU = \\tfrac{1}{2}mv^2$ the speed is proportional to the square root of the voltage. Four times the voltage doubles the speed."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: speed in a magnetic field",
+      "prompt": "A proton flies into a vacuum chamber that has a uniform magnetic field but no electric field. The velocity of the proton is perpendicular to the field. How does the speed of the proton change in the field?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The speed increases, because the magnetic field attracts the proton.",
+          "feedback": "The values of the model contradict this: when the proton has gone round a semicircle and returned to the detector, its speed is still the same as at the start, for example $1.00 \\cdot 10^{6}\\,\\text{m/s}$. The magnetic force is perpendicular to the velocity, so it does no work and does not increase the kinetic energy."
+        },
+        {
+          "text": "The speed decreases, because the magnetic field brakes the motion.",
+          "feedback": "The values of the model contradict this: at the end the speed is the same as at the start, for example $1.00 \\cdot 10^{6}\\,\\text{m/s}$. A force that is perpendicular to the motion all the time neither brakes nor accelerates but turns the direction of the motion."
+        },
+        {
+          "text": "The speed stays the same, but the direction of the motion changes.",
+          "correct": true,
+          "feedback": "The values of the model support this: at the end the speed is the same as at the start, for example $1.00 \\cdot 10^{6}\\,\\text{m/s}$, although the proton has turned through a semicircle and moves in the opposite direction. The magnetic force is perpendicular to the velocity all the time, so it does no work."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: double the speed",
+      "prompt": "A proton is sent into the same magnetic field at twice the speed. What happens to the radius $r$ of the circular path of the proton? In the simulation the distance of the point of impact from the slit is the diameter $d = 2r$ of the path.",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The radius halves, because a greater force acts on the greater speed.",
+          "feedback": "The values of the model contradict this: at a speed of $1.0 \\cdot 10^{6}\\,\\text{m/s}$ the proton strikes the detector $10.4\\,\\text{cm}$ from the slit, at a speed of $2.0 \\cdot 10^{6}\\,\\text{m/s}$ $20.9\\,\\text{cm}$ from it. The force does double, but turning a faster particle onto the same path would need a centripetal force $mv^2 : r$, which grows as the square of the speed."
+        },
+        {
+          "text": "The radius stays the same, because the force grows in the same proportion as the speed.",
+          "feedback": "The values of the model contradict this: the point of impact moves from $10.4\\,\\text{cm}$ to $20.9\\,\\text{cm}$. The force grows with the speed, but the centripetal force needed, $mv^2 : r$, grows as the square of the speed, so the path becomes gentler."
+        },
+        {
+          "text": "The radius doubles, because the path becomes gentler as the speed increases.",
+          "correct": true,
+          "feedback": "The values of the model support this: the distance of the point of impact from the slit, that is the diameter of the path, grows from $10.4\\,\\text{cm}$ to $20.9\\,\\text{cm}$. From the equation $qvB = mv^2 : r$ we get $r = mv : (qB)$, so the radius is directly proportional to the speed."
+        },
+        {
+          "text": "The radius quadruples, because the kinetic energy quadruples.",
+          "feedback": "The values of the model contradict this: the point of impact only doubles, from $10.4\\,\\text{cm}$ to $20.9\\,\\text{cm}$. The radius depends on the product $mv$, not on the kinetic energy: $r = mv : (qB)$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: velocity selector",
+      "prompt": "The electric and magnetic fields of the chamber are adjusted so that a proton passes straight through the chamber. At the same speed an alpha particle is sent into the chamber; its mass is about four times and its charge twice that of the proton. How does the alpha particle travel?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "It travels straight like the proton, because the speed is the same.",
+          "correct": true,
+          "feedback": "The values of the model support this: the deflection of all the particles is $0\\,\\text{cm}$. The forces $F_\\text{s} = qE$ and $F_\\text{m} = qvB$ on the alpha particle are each twice those on the proton, $4.8 \\cdot 10^{-14}\\,\\text{N}$, but still equal and opposite. The selector selects the speed $v = E : B$, not the mass or the charge."
+        },
+        {
+          "text": "It curves in the direction of the electric force, because its charge is greater.",
+          "feedback": "The values of the model contradict this: the alpha particle also travels straight. Twice the charge doubles the electric force but also the magnetic force $qvB$, so the forces still cancel each other."
+        },
+        {
+          "text": "It curves, because the fields have been adjusted for the mass of the proton.",
+          "feedback": "The values of the model contradict this: the deflection is $0\\,\\text{cm}$ for all the particles. The mass does not appear in the condition $qE = qvB$ at all. When the forces are equal and opposite, the net force is zero, and a zero force does not bend even a heavy particle."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose a particle and the fields and press *Launch*. Watch how the path curves, where the particle lands and what happens to its speed.",
+      "howto": "The particle enters the chamber through a slit in the left wall and at first moves to the right. Choose the particle, its speed $v$, the magnitude and direction of the magnetic field $B$ and the strength of the electric field $E$ between the plates, and press *Launch*. The blue arrow is the velocity, the red arrows are the magnetic force $\\overline{F}_\\text{m}$ and the electric force $\\overline{F}_\\text{s}$; the longer of the force arrows is always the same length, and the shorter is drawn in the same proportion. The left wall is the detector: the reading $d$ is the distance of the point of impact from the slit. If the particle leaves through the right edge, the readings show its deflection $y$ from the height of the slit. The side of a square of the grid is $5\\,\\text{cm}$. When you change any value, the particle returns to the slit. *Speed* changes only the pace of the animation.",
+      "model": "The chamber is a vacuum, and the fields are uniform throughout the chamber. The magnetic field is perpendicular to the paper, and the electric field points from the lower plate ($+$) to the upper plate ($-$). The masses and charges of the particles are real: proton $1.673 \\cdot 10^{-27}\\,\\text{kg}$ and $+e$, deuteron $3.344 \\cdot 10^{-27}\\,\\text{kg}$ and $+e$, alpha particle $6.645 \\cdot 10^{-27}\\,\\text{kg}$ and $+2e$, and negative hydrogen ion $1.674 \\cdot 10^{-27}\\,\\text{kg}$ and $-e$. Gravity is left out, because it is about $10^{12}$ times smaller than the magnetic force. The speeds are under $1\\,\\%$ of the speed of light, so classical mechanics is enough. The motion is shown in slow motion: at normal speed one second of animation corresponds to $1.0 \\cdot 10^{-7}\\,\\text{s}$. The readings are values of the model, not measurements.",
+      "calc": "The simulation calculates the path in small time steps from Newton's second law. The particle is acted on by the electric force $q\\overline{E}$ and the magnetic force, whose magnitude is $qvB$ and whose direction is perpendicular to both the velocity and the field; the direction of the force on a positive charge is given by the right-hand rule. The point of impact $d$, the deflection $y$ and the speed are obtained from the calculated path, and the formula for the radius is not used for them. The forces $F_\\text{m} = qvB$ and $F_\\text{s} = qE$ in the readings are calculated at the initial speed."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the direction changes",
+      "intro": "Test predictions 1 and 2. The particle is a proton, the magnetic field $0.20\\,\\text{T}$ points out of the page, and there is no electric field. Change only the speed. Press *Launch*, watch the path and record the point of impact $d$ and the speed at the end at least for speeds of $1.0 \\cdot 10^{6}\\,\\text{m/s}$ and $2.0 \\cdot 10^{6}\\,\\text{m/s}$, and for others too if you like. In the table the speed is in the unit $\\text{Mm/s}$, $1\\,\\text{Mm/s} = 10^{6}\\,\\text{m/s}$. The radius of the path is half the distance of the point of impact.",
+      "initial": {
+        "hiukkanen": "protoni",
+        "v": 1,
+        "B": 0.2,
+        "suunta": "ulos",
+        "E": 0
+      },
+      "locked": [
+        "hiukkanen",
+        "B",
+        "suunta",
+        "E"
+      ],
+      "vary": "v",
+      "names": {
+        "hiukkanen": "particle",
+        "v": "speed v",
+        "B": "magnetic field B",
+        "suunta": "direction of the field",
+        "E": "electric field E"
+      },
+      "units": {
+        "v": "Mm/s",
+        "B": "T",
+        "E": "kV/m"
+      },
+      "values": {
+        "B": {
+          "0.2": "$0.20\\,\\text{T}$"
+        },
+        "hiukkanen": {
+          "protoni": "proton",
+          "deuteroni": "deuteron",
+          "alfa": "alpha particle",
+          "vetyioni": "negative hydrogen ion"
+        },
+        "suunta": {
+          "ulos": "out of the page",
+          "sisaan": "into the page"
+        }
+      },
+      "measure": [
+        {
+          "key": "d",
+          "label": "d (cm)"
+        },
+        {
+          "key": "vLoppu",
+          "label": "v at the end (Mm/s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: velocity selector",
+      "intro": "Test prediction 3. The chamber now has an electric field of $150\\,\\text{kV/m}$ and a magnetic field of $0.15\\,\\text{T}$ out of the page, and the speed is $1.0 \\cdot 10^{6}\\,\\text{m/s}$. Change only the particle. Press *Launch* and record the deflection and the forces at least for the proton and the alpha particle. The forces are in femtonewtons, $1\\,\\text{fN} = 10^{-15}\\,\\text{N}$.",
+      "initial": {
+        "hiukkanen": "protoni",
+        "v": 1,
+        "B": 0.15,
+        "suunta": "ulos",
+        "E": 150
+      },
+      "locked": [
+        "v",
+        "B",
+        "suunta",
+        "E"
+      ],
+      "vary": "hiukkanen",
+      "names": {
+        "hiukkanen": "particle",
+        "v": "speed v",
+        "B": "magnetic field B",
+        "suunta": "direction of the field",
+        "E": "electric field E"
+      },
+      "units": {
+        "v": "Mm/s",
+        "B": "T",
+        "E": "kV/m"
+      },
+      "values": {
+        "hiukkanen": {
+          "protoni": "proton",
+          "deuteroni": "deuteron",
+          "alfa": "alpha particle",
+          "vetyioni": "negative hydrogen ion"
+        },
+        "suunta": {
+          "ulos": "out of the page",
+          "sisaan": "into the page"
+        }
+      },
+      "measure": [
+        {
+          "key": "poikkeama",
+          "label": "y (cm)"
+        },
+        {
+          "key": "Fm15",
+          "label": "F_m (fN)"
+        },
+        {
+          "key": "Fs15",
+          "label": "F_s (fN)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what does a magnetic field do?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "On the basis of your tables, write: did the magnetic field change the speed of the proton? How did the point of impact and the radius of the path depend on the speed? Why did all the particles pass straight through the velocity selector, although their masses and charges were different?",
+      "model": "At the end the speed was the same as at the start, for example $1.00 \\cdot 10^{6}\\,\\text{m/s}$, although the motion of the proton turned to the opposite direction: the magnetic force is perpendicular to the velocity and does no work. When the speed doubled from $1.0 \\cdot 10^{6}\\,\\text{m/s}$ to $2.0 \\cdot 10^{6}\\,\\text{m/s}$, the point of impact moved from $10.4\\,\\text{cm}$ to $20.9\\,\\text{cm}$, so the radius $r = d : 2$ also doubled: the radius is directly proportional to the speed. In the velocity selector the deflection was $0\\,\\text{cm}$ for all the particles. The alpha particle was acted on by an electric force and a magnetic force of $48\\,\\text{fN}$ each, twice the $24\\,\\text{fN}$ of the proton, but the forces were still equal and opposite, so the net force was zero. From the condition $qE = qvB$ the charge cancels, and the speed that passes straight through is $v = E : B = 1.0 \\cdot 10^{6}\\,\\text{m/s}$. The numbers are values of the model.",
+      "criteria": [
+        "On the basis of the table I stated that the speed stayed the same, and I justified it by the force being perpendicular to the velocity.",
+        "I compared the points of impact and concluded that the radius doubled when the speed doubled.",
+        "I explained the velocity selector by the electric and magnetic forces being equal and opposite for all particles whose speed is $E : B$.",
+        "I mentioned that the numbers are values of the model."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Nopeusvalitsin ja massaspektrometri",
+        "Hiukkaskiihdytin"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the equation $r = mv : (qB)$. Then return to the opening question: why do carbon-14 ions strike the detector in a different place from carbon-12 ions, when they have the same charge and enter the magnetic field at the same speed (after the velocity selector)?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2",
+        "ennuste-3"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student calculates how large a circle a proton goes round when it has been accelerated from rest by a voltage of $2.0\\,\\text{kV}$ and then flies perpendicular to a magnetic field of $0.10\\,\\text{T}$. She writes\n\n$$\\begin{aligned} qU &= mv^2 \\\\ v &= \\sqrt{\\frac{qU}{m}} = 4.38 \\cdot 10^{5}\\,\\text{m/s} \\\\ r &= \\frac{mv}{qB} = 4.57\\,\\text{cm} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The kinetic energy is $\\tfrac{1}{2}mv^2$, so the correct speed is $6.19 \\cdot 10^{5}\\,\\text{m/s}$ and the radius $6.46\\,\\text{cm}$.",
+          "correct": true,
+          "feedback": "Correct. The work $qU$ done by the field equals the kinetic energy $\\tfrac{1}{2}mv^2$, so $v = \\sqrt{2qU : m}$. When the factor $\\tfrac{1}{2}$ is forgotten, the speed and the radius come out too small by a factor of $\\sqrt{2} \\approx 1.41$: $4.57\\,\\text{cm} \\cdot 1.41 = 6.46\\,\\text{cm}$."
+        },
+        {
+          "text": "The voltage should have been substituted in kilovolts, that is as the number $2.0$, and not in volts.",
+          "feedback": "The SI unit of voltage is the volt, $2.0\\,\\text{kV} = 2.0 \\cdot 1000\\,\\text{V} = 2000\\,\\text{V}$, and the student used it correctly. The error is in the energy equation."
+        },
+        {
+          "text": "The formula for the radius is upside down: the correct formula is $r = qB : (mv)$, so the radius is much smaller.",
+          "feedback": "The formula for the radius $r = mv : (qB)$ is correct: a faster and heavier particle curves more gently, and a stronger field bends it more tightly. The unit of the inverted expression would be $1/\\text{m}$, not metre. The error is in the calculation of the speed."
+        },
+        {
+          "text": "The magnetic field increases the speed of the proton, so the speed should be calculated again in the field.",
+          "feedback": "The magnetic force is perpendicular to the velocity and does no work, so the speed stays the same in the field. The error is in the energy equation of the acceleration stage."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "An ion implanter in a semiconductor factory fires boron ions at a silicon wafer. The mass of the ions is $11.01\\,\\text{u}$ ($1\\,\\text{u} = 1.661 \\cdot 10^{-27}\\,\\text{kg}$) and their charge $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. The ions are accelerated from rest by a voltage of $20.0\\,\\text{kV}$, and after that they are directed into a separating magnet, where they must travel along an arc of radius $0.300\\,\\text{m}$ to get through the slit. How great must the magnetic flux density be? Give the answer in tesla.",
+      "answer": 0.225,
+      "unit": "T",
+      "tolerance": 0.02,
+      "hints": [
+        "The situation has two stages. What does the electric field do in the acceleration, and what force keeps the ion on its circular path in the magnet?",
+        "From the acceleration $qU = \\tfrac{1}{2}mv^2$, so $v = \\sqrt{2qU : m}$. In the magnet $qvB = mv^2 : r$, so $B = mv : (qr)$.",
+        "The mass is $m = 11.01 \\cdot 1.661 \\cdot 10^{-27}\\,\\text{kg} = 1.829 \\cdot 10^{-26}\\,\\text{kg}$, and the speed is $v = 5.92 \\cdot 10^{5}\\,\\text{m/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.159,
+          "feedback": "You forgot the factor $\\tfrac{1}{2}$ of the kinetic energy: $qU = \\tfrac{1}{2}mv^2$, so $v = \\sqrt{2qU : m}$. Without it the speed and the field come out too small by a factor of $\\sqrt{2}$."
+        },
+        {
+          "value": 0.00712,
+          "feedback": "You substituted the voltage in kilovolts. Convert first: $20.0\\,\\text{kV} = 20.0 \\cdot 1000\\,\\text{V} = 20\\,000\\,\\text{V}$."
+        }
+      ],
+      "solution": "**Given:** boron ion, mass $m = 11.01\\,\\text{u}$, $1\\,\\text{u} = 1.661 \\cdot 10^{-27}\\,\\text{kg}$, charge $q = e = 1.602 \\cdot 10^{-19}\\,\\text{C}$; accelerating voltage $U = 20.0\\,\\text{kV}$, the ions start from rest; radius of the path in the magnet $r = 0.300\\,\\text{m}$\n\n**Find:** the magnetic flux density $B$ of the separating magnet in tesla\n\n**Principle:** In the acceleration the work $qU$ done by the electric field becomes entirely the kinetic energy of the ion, because the ion starts from rest in a vacuum. In the magnet the velocity of the ion is perpendicular to the field, so the magnetic force $qvB$ is the centripetal force of the circular path and does not change the speed.\n\n**Formula:** $qU = \\tfrac{1}{2}mv^2$, so $v = \\sqrt{\\dfrac{2qU}{m}}$; $qvB = \\dfrac{mv^2}{r}$, so $B = \\dfrac{mv}{qr}$\n\n**Conversions:** $m = 11.01 \\cdot 1.661 \\cdot 10^{-27}\\,\\text{kg} = 1.8288 \\cdot 10^{-26}\\,\\text{kg}$ and $U = 20.0\\,\\text{kV} = 20.0 \\cdot 1000\\,\\text{V} = 20\\,000\\,\\text{V}$\n\n**Substitution:** $v = \\sqrt{\\dfrac{2 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 20\\,000\\,\\text{V}}{1.8288 \\cdot 10^{-26}\\,\\text{kg}}} = 5.919 \\cdot 10^{5}\\,\\text{m/s}$ and $B = \\dfrac{1.8288 \\cdot 10^{-26}\\,\\text{kg} \\cdot 5.919 \\cdot 10^{5}\\,\\text{m/s}}{1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 0.300\\,\\text{m}} = 0.2252\\,\\text{T}$\n\n**Answer:** $0.225\\,\\text{T}$, three significant figures like the voltage $20.0\\,\\text{kV}$ and the radius $0.300\\,\\text{m}$.\n\n**Reasonableness:** The field is of the same order of magnitude as at the surface of a strong permanent magnet, so an electromagnet produces it easily. The speed $5.9 \\cdot 10^{5}\\,\\text{m/s}$ is about $0.2\\,\\%$ of the speed of light, so the classical formula holds. Calculating back, $r = mv : (qB) = 0.300\\,\\text{m}$, as it should."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. The tasks of level 1 use one formula, the tasks of level 2 combine two steps, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A proton goes round a circular path in a uniform magnetic field in a vacuum. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The speed stays the same, because the magnetic force is perpendicular to the velocity.",
+          "correct": true,
+          "feedback": "Correct. A force that is perpendicular to the velocity all the time does no work: the kinetic energy and the speed stay the same, and only the direction of the motion changes."
+        },
+        {
+          "text": "The speed gradually increases, because the magnetic force acts on the proton all the time.",
+          "feedback": "A force changes the speed only if it has a component along the velocity. The magnetic force is perpendicular to the velocity, so it changes only the direction of the motion."
+        },
+        {
+          "text": "The magnetic force points in the direction of the field and keeps the proton on its path.",
+          "feedback": "The magnetic force is perpendicular to the field too. On a circular path it points towards the centre of the path, which lies in the plane perpendicular to the field."
+        },
+        {
+          "text": "No force acts on the proton, because it moves at the same speed all the time.",
+          "feedback": "A constant speed does not mean that there is no force: a circular path needs a centripetal force that changes the direction of the velocity. It is provided by the magnetic force $qvB$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Direction of the force",
+      "figure": "fy7-2/track-sign",
+      "prompt": "In the picture a particle enters from the left a vacuum chamber in which the magnetic field points into the page, and its path curves downwards. What is the sign of the charge of the particle?",
+      "choices": [
+        {
+          "text": "Negative",
+          "correct": true,
+          "feedback": "Correct. For a positive charge the right-hand rule gives the force: thumb to the right in the direction of the velocity, the other fingers into the page, and the palm pushes upwards. The path curves downwards, so the force is opposite and the charge is negative."
+        },
+        {
+          "text": "Positive",
+          "feedback": "Check the right-hand rule: thumb to the right in the direction of the velocity and the other fingers into the page in the direction of the field. The palm pushes upwards, so a positive particle would curve upwards. The charge of a particle that curves downwards is negative."
+        },
+        {
+          "text": "Uncharged",
+          "feedback": "An uncharged particle is not acted on by a magnetic force, so it would travel straight. A curving path shows that the particle has a charge."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Radius of the path",
+      "prompt": "An alpha particle of mass $6.645 \\cdot 10^{-27}\\,\\text{kg}$ and charge $2e = 3.204 \\cdot 10^{-19}\\,\\text{C}$ flies at a speed of $1.5 \\cdot 10^{6}\\,\\text{m/s}$ perpendicular to a magnetic field whose magnetic flux density is $0.50\\,\\text{T}$. How large is the radius of the circular path of the particle? Give the answer in centimetres.",
+      "answer": 6.2,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "hints": [
+        "What force keeps the particle on its circular path, and where does it point?",
+        "The magnetic force is the centripetal force: $qvB = mv^2 : r$, so $r = mv : (qB)$.",
+        "Remember that the charge of an alpha particle is $2e$: $r = \\dfrac{6.645 \\cdot 10^{-27} \\cdot 1.5 \\cdot 10^{6}}{3.204 \\cdot 10^{-19} \\cdot 0.50}\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 12.4,
+          "feedback": "The result is twice too great. The charge of an alpha particle is $2e = 3.204 \\cdot 10^{-19}\\,\\text{C}$, not $e$. Also check that you calculated the radius and not the diameter."
+        }
+      ],
+      "solution": "**Given:** alpha particle, $m = 6.645 \\cdot 10^{-27}\\,\\text{kg}$, $q = 2e = 3.204 \\cdot 10^{-19}\\,\\text{C}$, $v = 1.5 \\cdot 10^{6}\\,\\text{m/s}$ perpendicular to the field, $B = 0.50\\,\\text{T}$\n\n**Find:** the radius $r$ of the circular path in centimetres\n\n**Principle:** The magnetic force $qvB$ is perpendicular to the velocity and of constant magnitude, so the particle is in uniform circular motion and the magnetic force is its centripetal force.\n\n**Formula:** $qvB = \\dfrac{mv^2}{r}$, so $r = \\dfrac{mv}{qB}$\n\n**Conversions:** All quantities are in SI units, so the radius comes out in metres; finally $1\\,\\text{m} = 100\\,\\text{cm}$.\n\n**Substitution:** $r = \\dfrac{6.645 \\cdot 10^{-27}\\,\\text{kg} \\cdot 1.5 \\cdot 10^{6}\\,\\text{m/s}}{3.204 \\cdot 10^{-19}\\,\\text{C} \\cdot 0.50\\,\\text{T}} = 0.06222\\,\\text{m} = 6.222\\,\\text{cm}$\n\n**Answer:** $6.2\\,\\text{cm}$, two significant figures like the speed $1.5 \\cdot 10^{6}\\,\\text{m/s}$ and the field $0.50\\,\\text{T}$.\n\n**Reasonableness:** At the same speed in the same field a proton would go round a circle of radius $3.1\\,\\text{cm}$. The mass of an alpha particle is about four times and its charge twice that of a proton, so the radius $r = mv : (qB)$ should be about twice as great, as it is."
+    },
+    {
+      "id": "tarkistus-4",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Explain: the particle accelerator",
+      "optional": true,
+      "prompt": "In the LHC accelerator at CERN, protons go round a ring $26.7\\,\\text{km}$ long. Explain why the energy of the protons is increased by electric fields and not by magnets, and why an accelerator of greater energy needs stronger magnets or a larger ring.",
+      "model": "The magnetic force is always perpendicular to the velocity of the proton, so it does no work and cannot increase the kinetic energy of the proton. The energy is increased by an electric field: each time the proton travels across the voltage $U$ of an accelerating gap, the field does work $qU$ on it. The task of the magnets is to bend the path of the protons into a ring. The radius of the path is $r = mv : (qB)$, so a faster proton curves more gently. To keep it in the same ring, the field $B$ must be strengthened. When the field of the magnets can no longer be increased, a greater energy requires a greater radius, that is a larger ring. Close to the speed of light the formula changes according to the theory of relativity, but the principle is the same.",
+      "criteria": [
+        "I say that the magnetic force is perpendicular to the velocity and therefore does no work and does not change the speed.",
+        "I say that the electric field increases the energy, because it does work $qU$ on the proton.",
+        "I use the formula for the radius $r = mv : (qB)$: a greater speed requires a stronger field or a larger radius.",
+        "I distinguish the task of the magnets (bending the path) from the task of the electric fields (acceleration)."
+      ]
+    },
+    {
+      "id": "lopuksi",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and open the answer only after that."
+    }
+  ]
+}

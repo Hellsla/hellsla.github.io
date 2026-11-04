@@ -1,0 +1,26 @@
+{
+  "id": "fy7-16",
+  "course": "FY7",
+  "title": "Soveltava luku: langaton lataus, induktioliesi ja kuituyhteys",
+  "goals": [
+    "LOPS FY7: sähkömagneettinen induktio, Lenzin laki ja pyörrevirrat",
+    "LOPS FY7: valon heijastuminen, taittuminen ja kokonaisheijastuminen",
+    "Täsmennys: soveltava tunti, ei kertausta: moduulin ideat yhdistetään uudessa, arkisessa tilanteessa (langaton lataus, induktioliesi, kuituyhteys)"
+  ],
+  "prerequisites": [
+    "fy7-6",
+    "fy7-12"
+  ],
+  "glossary": [
+    "langaton lataus",
+    "induktioliesi",
+    "vaimennus",
+    "pyörrevirta",
+    "kokonaisheijastuminen",
+    "valokuitu",
+    "desibeli"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

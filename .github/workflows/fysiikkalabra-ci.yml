@@ -9,9 +9,9 @@ name: fysiikkalabra-ci
 on:
   push:
     branches: [main]   # a pull request's branch is tested by its pull_request run (the required check qa)
-    paths: ["fysiikkalabra/**", "kasitetakomo.html", "kasitetakomo-data.js", ".github/workflows/fysiikkalabra-ci.yml"]
-  pull_request:   # the Käsitetakomo files too: the site links to their topic ids (scripts/concept_cards.py)
-    paths: ["fysiikkalabra/**", "kasitetakomo.html", "kasitetakomo-data.js", ".github/workflows/fysiikkalabra-ci.yml"]
+    paths: ["fysiikkalabra/**", ".github/workflows/fysiikkalabra-ci.yml"]
+  pull_request:
+    paths: ["fysiikkalabra/**", ".github/workflows/fysiikkalabra-ci.yml"]
   schedule: [{ cron: "0 19 * * 0" }]   # Sunday 21:00 Helsinki (winter time): weekly QA run
   workflow_dispatch: {}                 # a full run by hand (Actions -> fysiikkalabra-ci -> Run workflow)
 permissions: { contents: read }
@@ -104,6 +104,7 @@ jobs:
         run: |
           fail=0
           for f in content/fi/*/*/inquiry.json; do
+            case "$f" in content/fi/units/*) continue;; esac   # course units (FY12) are checked by units.py check, as FY14's are
             id=$(basename "$(dirname "$f")")
             if [ "$PAGES" != full ]; then case " $PAGES " in *" $id "*) ;; *) continue;; esac; fi
             if python scripts/test_inquiry.py "$id" > "/tmp/inquiry-$id.txt" 2>&1; then tail -1 "/tmp/inquiry-$id.txt" | sed "s/^/$id: /"

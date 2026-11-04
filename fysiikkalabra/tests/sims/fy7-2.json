@@ -1,0 +1,191 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.hiukkanen==='protoni' && S.v===1 && Math.abs(S.B-0.2)<1e-9 && S.suunta==='ulos' && S.E===0 && S.running===false && S.valmis===false ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: proton, v = 1,0e6 m/s, B = 0,20 T out of the page, E = 0, not launched (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===3 && Number(R[0].min)===0.5 && Number(R[0].max)===2 && Number(R[0].step)===0.1 && Number(R[1].min)===0 && Number(R[1].max)===0.4 && Number(R[1].step)===0.01 && R[2].min==='0' && R[2].max==='300' && R[2].step==='5' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three sliders: v 0,5-2,0 (10^6 m/s) by 0,1, B 0-0,40 T by 0,01, E 0-300 kV/m by 5"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===3 && L[0]==='protoni,deuteroni,alfa,vetyioni' && L[1]==='ulos,sisaan' && L[2]==='0.5,1,2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "selects: particle, field direction, speed"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Laukaise' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button first; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='B,E,hiukkanen,suunta,v' && P.B.unit==='T' && P.E.unit==='kV/m' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares hiukkanen, v, B, suunta and E"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return document.getElementById('sim-root').clientWidth < 500 || (c.width===600 && c.height===400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 in the wide layout"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'protoni'); I(R[0],1.0); I(R[1],0.2); I(L[1],'ulos'); I(R[2],0);",
+  "expr": "window.simState.r",
+  "expected": 0.052216,
+  "tol": 0.01,
+  "note": "model radius r = mv/(qB) = 1,673e-27 kg · 1,0e6 m/s / (1,602e-19 C · 0,20 T) = 0,0522 m"
+ },
+ {
+  "setup": "",
+  "expr": "window.simState.d",
+  "expected": 10.443,
+  "tol": 0.01,
+  "note": "integrated path: the proton lands on the detector at d = 2r = 10,44 cm"
+ },
+ {
+  "setup": "",
+  "expr": "window.simState.puoli",
+  "expected": -1,
+  "tol": 0,
+  "note": "B out of the page, positive charge moving right: q v × B points down, the hit is below the slit"
+ },
+ {
+  "setup": "",
+  "expr": "window.simState.vLoppu",
+  "expected": 1.0,
+  "tol": 0.001,
+  "note": "the magnetic force does no work: the speed at the end equals 1,0e6 m/s"
+ },
+ {
+  "setup": "",
+  "expr": "window.simState.Fm",
+  "expected": 3.204e-14,
+  "tol": 0.01,
+  "note": "F_m = qvB = 1,602e-19 C · 1,0e6 m/s · 0,20 T = 3,20e-14 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'protoni'); I(R[0],2.0); I(R[1],0.2); I(L[1],'ulos'); I(R[2],0);",
+  "expr": "window.simState.d",
+  "expected": 20.886,
+  "tol": 0.01,
+  "note": "twice the speed: d = 20,89 cm, twice as far (r ∝ v)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'protoni'); I(R[0],1.0); I(R[1],0.4); I(L[1],'ulos'); I(R[2],0);",
+  "expr": "window.simState.d",
+  "expected": 5.222,
+  "tol": 0.01,
+  "note": "twice the field: d = 5,22 cm, half as far (r ∝ 1/B)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'alfa'); I(R[0],1.0); I(R[1],0.2); I(L[1],'ulos'); I(R[2],0);",
+  "expr": "window.simState.d",
+  "expected": 20.74,
+  "tol": 0.01,
+  "note": "alpha particle: d = 2 · 6,645e-27 · 1,0e6 / (3,204e-19 · 0,20) m = 20,74 cm"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'deuteroni'); I(R[0],1.0); I(R[1],0.2); I(L[1],'ulos'); I(R[2],0);",
+  "expr": "window.simState.d",
+  "expected": 20.874,
+  "tol": 0.01,
+  "note": "deuteron: twice the proton's mass, same charge: d = 20,87 cm"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'vetyioni'); I(R[0],1.0); I(R[1],0.2); I(L[1],'ulos'); I(R[2],0);",
+  "expr": "window.simState.puoli",
+  "expected": 1,
+  "tol": 0,
+  "note": "negative ion: the force reverses and the hit is above the slit"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'protoni'); I(R[0],1.0); I(R[1],0.2); I(L[1],'sisaan'); I(R[2],0);",
+  "expr": "window.simState.puoli",
+  "expected": 1,
+  "tol": 0,
+  "note": "field into the page: a proton turns up"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'protoni'); I(R[0],1.0); I(R[1],0.15); I(L[1],'ulos'); I(R[2],150);",
+  "expr": "window.simState.tulos === 'ulos' && window.simState.poikkeama === 0 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "velocity selector: v = E/B = 150 kV/m : 0,15 T = 1,0e6 m/s goes straight through"
+ },
+ {
+  "setup": "",
+  "expr": "window.simState.Fs14",
+  "expected": 2.403,
+  "tol": 0.01,
+  "note": "F_s = qE = 2,40e-14 N"
+ },
+ {
+  "setup": "",
+  "expr": "window.simState.Fm14",
+  "expected": 2.403,
+  "tol": 0.01,
+  "note": "F_m = qvB = 2,40e-14 N, equal to F_s"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'alfa'); I(R[0],1.0); I(R[1],0.15); I(L[1],'ulos'); I(R[2],150);",
+  "expr": "window.simState.poikkeama",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "the alpha particle at the same speed goes straight too"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'vetyioni'); I(R[0],1.0); I(R[1],0.15); I(L[1],'ulos'); I(R[2],150);",
+  "expr": "window.simState.poikkeama",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "so does the negative ion: both forces reverse"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'protoni'); I(R[0],1.2); I(R[1],0.15); I(L[1],'ulos'); I(R[2],150);",
+  "expr": "window.simState.poikkeama === null || window.simState.poikkeama < 0 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "faster than E/B: the magnetic force wins and the proton turns down"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'protoni'); I(R[0],1.0); I(R[1],0.15); I(L[1],'sisaan'); I(R[2],150);",
+  "expr": "window.simState.tulos !== 'ulos' && window.simState.poikkeama === null ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "field into the page: both forces point the same way and the proton does not go straight through"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'protoni'); I(R[0],1.0); I(R[1],0); I(L[1],'ulos'); I(R[2],50);",
+  "expr": "window.simState.tulos === 'seina' && window.simState.Fm === 0 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "electric field alone: the proton bends up to the negative plate"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'protoni'); I(R[0],1.0); I(R[1],0); I(L[1],'ulos'); I(R[2],0);",
+  "expr": "window.simState.tulos === 'ulos' && window.simState.poikkeama === 0 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "no fields: straight through"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'protoni'); I(R[0],1.0); I(R[1],0.2); I(L[1],'ulos'); I(R[2],0); document.querySelector('#sim-root button').click();",
+  "expr": "window.simState.running || window.simState.valmis ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Laukaise starts the particle (running, or already arrived)"
+ }
+]

@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-11-L1-01",
+      "level": 1,
+      "text": "Punainen valo tulee ilmasta tyynen järven pintaan tulokulmassa $50{,}0^\\circ$. Veden taitekerroin punaiselle valolle on $1{,}332$. Kuinka suuri on taitekulma vedessä?",
+      "answer": 35.1072,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-02",
+      "level": 1,
+      "text": "Kruunulasin taitekerroin violetille valolle on $1{,}530$. Kuinka suurella nopeudella violetti valo etenee lasissa? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 196078.4314,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-03",
+      "level": 1,
+      "text": "Opiskelija suuntaa vihreän laserin säteen ilmasta lasikappaleen pintaan tulokulmassa $45{,}0^\\circ$ ja mittaa taitekulmaksi $27{,}8^\\circ$. Kuinka suuri on lasin taitekerroin vihreälle valolle?",
+      "answer": 1.5161,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-04",
+      "level": 1,
+      "text": "Prisman huippukulma on $60{,}0^\\circ$. Keltainen säde tulee prismaan tulokulmassa $45{,}0^\\circ$ ja lähtee toisesta pinnasta taitekulmassa $52{,}0^\\circ$. Kuinka suuri on säteen poikkeamakulma?",
+      "answer": 37.0,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-05",
+      "level": 1,
+      "text": "Valonsäde tulee vesipisaraan tulokulmassa $55{,}0^\\circ$ ja taittuu pisarassa kulmaan $38{,}0^\\circ$. Säde heijastuu kerran pisaran takapinnasta ja taittuu ulos. Missä kulmassa vastapisteen suunnasta tämä valo näkyy?",
+      "answer": 42.0,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-11-L2-01",
+      "level": 2,
+      "text": "Valkoisen valon lyhyt välähdys lähetetään $5{,}00\\,\\text{km}$ pitkän kruunulasisen valokuidun läpi. Lasin taitekerroin on punaiselle valolle $1{,}5143$ ja violetille $1{,}5302$. Kuinka paljon myöhemmin violetti valo saapuu kuidun toiseen päähän kuin punainen? Oletetaan, että kumpikin väri etenee kuidussa nopeudella $v = c : n$ ja kulkee kuidun suuntaisesti. Anna vastaus nanosekunteina.",
+      "answer": 265.0,
+      "unit": "ns",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L2-02",
+      "level": 2,
+      "text": "Lasiprisman huippukulma on $60{,}0^\\circ$, ja lasin taitekerroin keltaiselle valolle on $1{,}52$. Keltainen säde tulee prisman ensimmäiseen pintaan ilmasta tulokulmassa $40{,}0^\\circ$. Kuinka suuressa tulokulmassa säde osuu lasin sisältä prisman toiseen pintaan?",
+      "answer": 34.983,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L2-03",
+      "level": 2,
+      "text": "Kuvaajassa on erään flinttilasin taitekerroin $n$ valon tyhjiöaallonpituuden $\\lambda$ funktiona. Kuinka suurella nopeudella sininen valo, jonka aallonpituus on $450\\,\\text{nm}$, etenee tässä lasissa? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Lue taitekerroin kuvaajasta ja anna vastaus kilometreinä sekunnissa.",
+      "answer": 183071.9473,
+      "unit": "km/s",
+      "tolerance": 0.02,
+      "figure": "fy7-11/flint-points"
+    },
+    {
+      "id": "fy7-11-L2-04",
+      "level": 2,
+      "text": "Kesäillalla aurinko paistaa $25{,}0^\\circ$:n korkeudelta, ja edessä sataa. Sateenkaaren violetin reunan säteet tulevat pisaroihin tulokulmassa $58{,}8^\\circ$, ja veden taitekerroin violetille valolle on $1{,}343$. Valo heijastuu kerran pisaran takapinnasta. Kuinka korkealla horisontin yläpuolella violetin kaaren huippu näkyy tasaisella maalla seisovalle katsojalle?",
+      "answer": 15.6459,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-11-L3-01",
+      "level": 3,
+      "text": "Kruunulasiprisman huippukulma on $50{,}0^\\circ$. Valkoisen valon kapea kimppu tulee prismaan ilmasta tulokulmassa $45{,}0^\\circ$. Lasin taitekerroin on punaiselle valolle $1{,}5143$ ja violetille $1{,}5302$. Kuinka suuri kulma on prismasta lähtevän punaisen ja violetin säteen välillä? Laske välivaiheiden kulmat sadasosa-asteen tarkkuudella.",
+      "answer": 0.9659,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L3-02",
+      "level": 3,
+      "text": "Punainen valo tulee vesipisaran reunan lähelle tulokulmassa $80{,}0^\\circ$. Veden taitekerroin punaiselle valolle on $1{,}332$. Valo heijastuu kerran pisaran takapinnasta ja taittuu ulos. Missä kulmassa vastapisteen suunnasta tämä valo näkyy? Näkyykö se sateenkaaren punaisen reunan sisä- vai ulkopuolella?",
+      "answer": 30.7027,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L3-03",
+      "level": 3,
+      "text": "Sateenkaaren punaisen reunan muodostavat säteet tulevat pisaraan tulokulmassa $59{,}5^\\circ$, kun veden taitekerroin on $1{,}3315$. Violetin reunan säteet tulevat tulokulmassa $58{,}8^\\circ$, kun taitekerroin on $1{,}3431$. Kumpikin heijastuu kerran pisaran takapinnasta. Kuinka leveä sateenkaari on asteina eli kuinka suuri on punaisen ja violetin reunan kulmien erotus vastapisteestä katsottuna? Laske välivaiheet tuhannesosa-asteen tarkkuudella.",
+      "answer": 1.6647,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ]
+}

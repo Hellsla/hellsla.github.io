@@ -1,0 +1,123 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.A===60 && S.a1===50 && S.aine==='kruunu' && S.ulosP===true && S.ulosV===true && S.ulos===7 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: A = 60°, α1 = 50°, crown glass, every colour leaves the prism (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); const s=document.querySelectorAll('#sim-root select'); return R.length===2 && R[0].min==='30' && R[0].max==='70' && R[0].step==='5' && R[1].min==='20' && R[1].max==='80' && R[1].step==='1' && s.length===1 && [...s[0].options].map(o=>o.value).join(',')==='kruunu,flint,vesi' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two sliders (A 30–70° by 5, α1 20–80° by 1) and one select (kruunu, flint, vesi)"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=k.findIndex(x=>x==='canvas'||/sim-canvas/.test(x)); return c>=0 && c<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='A,a1,aine' && P.A.unit==='°' && P.a1.unit==='°' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares A (°), a1 (°) and aine"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],50); I(s,'kruunu');",
+  "expr": "window.simState.nP",
+  "expected": 1.5143,
+  "tol": 0.00002,
+  "note": "crown glass at 656 nm: n = 1,5143 (table value)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],50); I(s,'kruunu');",
+  "expr": "window.simState.nV",
+  "expected": 1.5302,
+  "tol": 0.00002,
+  "note": "crown glass at 405 nm: n = 1,5302 (table value)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],50); I(s,'kruunu');",
+  "expr": "window.simState.dP",
+  "expected": 38.4365,
+  "tol": 0.0005,
+  "note": "red: α2 = 30,39°, α3 = 29,61°, α4 = 48,44°, δ = 50° + 48,44° − 60° = 38,44° (lesson-answers k1-60-p)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],50); I(s,'kruunu');",
+  "expr": "window.simState.dV",
+  "expected": 39.8319,
+  "tol": 0.0005,
+  "note": "violet: δ = 39,83° (k1-60-v)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],50); I(s,'kruunu');",
+  "expr": "window.simState.dd",
+  "expected": 1.3954,
+  "tol": 0.001,
+  "note": "spread Δδ = 39,83° − 38,44° = 1,40° (k1-60-ero)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],30); I(R[1],50); I(s,'kruunu');",
+  "expr": "window.simState.dd",
+  "expected": 0.5271,
+  "tol": 0.001,
+  "note": "A = 30°: Δδ = 0,53° (k1-30-ero): the spread grows with the apex angle"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],70); I(R[1],50); I(s,'kruunu');",
+  "expr": "window.simState.dd",
+  "expected": 4.4459,
+  "tol": 0.001,
+  "note": "A = 70°: Δδ = 4,45° (k1-70-ero)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],49); I(s,'kruunu');",
+  "expr": "window.simState.dP",
+  "expected": 38.4279,
+  "tol": 0.0005,
+  "note": "α1 = 49°: δ red 38,43°, the smallest of the whole numbers (k2-49-p)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],80); I(s,'kruunu');",
+  "expr": "window.simState.dP",
+  "expected": 50.2524,
+  "tol": 0.0005,
+  "note": "α1 = 80°: δ red 50,25° (k2-80-p)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],50); I(s,'flint');",
+  "expr": "window.simState.dd",
+  "expected": 3.9171,
+  "tol": 0.001,
+  "note": "flint glass, A = 60°, α1 = 50°: Δδ = 3,92° (flint-ero)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],50); I(s,'vesi');",
+  "expr": "window.simState.dd",
+  "expected": 0.852,
+  "tol": 0.001,
+  "note": "water, A = 60°, α1 = 50°: Δδ = 0,85° (vesi-ero)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],30); I(s,'kruunu');",
+  "expr": "(() => { const S=window.simState; return S.ulosV===false && S.dd===0 && S.ulos<7 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "α1 = 30°, A = 60°: violet cannot leave the second face (k2-30-v-ulos), the spread is not shown"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const s=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],60); I(R[1],50); I(s,'kruunu');",
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /38(\\{,\\}|,)4/.test(t) && /39(\\{,\\}|,)8/.test(t) && /1(\\{,\\}|,)40/.test(t) && /1(\\{,\\}|,)5143/.test(t) && /1(\\{,\\}|,)5302/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows δ_p 38,4°, δ_v 39,8°, Δδ 1,40° and both refractive indices"
+ }
+]

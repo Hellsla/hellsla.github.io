@@ -206,31 +206,47 @@ ol.lessons .tag{font-size:.8125rem;font-weight:600;color:var(--ink-2);border:1px
    Sovella itsenäisesti, Käsitetakomo and the goals sit side by side under the cards when there is room. */
 main.reading.module-page{max-width:68rem}
 main.module-page>.lead,main.module-page>.mod-status{max-width:var(--measure)}
-h3.ch-theme{font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:1.6rem 0 .6rem}
-h3.ch-theme:first-of-type{margin-top:.6rem}
-ol.lessons.ch-cards{display:grid;grid-template-columns:1fr;gap:.75rem;border-top:0;margin:0 0 1rem}
-ol.lessons li.ch-card{position:relative;display:grid;grid-template-columns:7.5rem minmax(0,1fr);grid-template-areas:"img num" "img title" "why why" "tags tags";
-  align-items:start;gap:.15rem .9rem;padding:.75rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.04)}
-ol.lessons li.ch-card.soon{background:transparent;border-style:dashed;grid-template-columns:minmax(0,1fr);grid-template-areas:"num" "title" "tags"}
+main.local-course>p,main.local-course>ul,main.local-course>ol:not(.ch-cards),main.local-course>dl,main.local-course>details{max-width:var(--measure)}   /* a school's own course: its prose at reading width, the cards wide */
+h3.ch-theme{font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:1.4rem 0 .6rem}
+ol.lessons.ch-cards>li:first-child>h3.ch-theme{margin-top:.6rem}
+/* a local course chapter's label (scripts/cardgrid.py): its heading and question above its first card */
+ol.lessons li.ch-card>.ch-label{margin:1.4rem 0 .6rem}ol.lessons.ch-cards>li:first-child>.ch-label{margin-top:.6rem}
+.ch-label>h3.ch-theme{margin:0}.ch-label>p.ch-theme-q{margin:.2rem 0 0;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
+.ch-card .l-num .bank-level{text-transform:none;letter-spacing:0;font-size:.8125rem;padding:0 .45rem}
+.ch-card .bank-meta{margin:0}
+/* One continuous grid (teacher 2026-11-04): each li holds the theme label (only the theme's first chapter has one) and the
+   card (.ch-box). From 40rem each li spans two subgrid rows, label and card, so a row's label strip is as tall as its
+   tallest label and zero in a row without one; the next theme's cards continue beside a short theme without a hole. */
+ol.lessons.ch-cards{display:grid;grid-template-columns:1fr;gap:0;border-top:0;margin:0 0 1rem}
+ol.lessons li.ch-card{display:block;margin:0;padding:0;border:0}
+ol.lessons li.ch-card>.ch-box{position:relative;display:grid;grid-template-columns:7.5rem minmax(0,1fr);grid-template-areas:"img num" "img title" "why why" "tags tags";
+  align-items:start;gap:.15rem .9rem;margin:0 0 .75rem;padding:.75rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.04)}
+ol.lessons li.ch-card.soon>.ch-box{background:transparent;border-style:dashed;grid-template-columns:minmax(0,1fr);grid-template-areas:"num" "title" "tags"}
 ol.lessons li.ch-card .l-num{grid-area:num;text-align:left;flex:none;font:600 var(--fs-small)/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--copper-ink)}
-ol.lessons li.ch-card>a,ol.lessons li.ch-card>.ch-title{grid-area:title;display:block;min-height:0;padding:0;font:700 1.0625rem/1.35 var(--sans);hyphens:auto;overflow-wrap:break-word}
-ol.lessons li.ch-card.live>a{color:var(--accent-deep);text-decoration:none}
-ol.lessons li.ch-card.live>a::after{content:"";position:absolute;inset:0;border-radius:12px;margin:0}   /* the whole card is the link's target */
-ol.lessons li.ch-card.live>a:focus-visible{outline:none}ol.lessons li.ch-card.live:has(>a:focus-visible){outline:3px solid var(--accent);outline-offset:2px}
-ol.lessons li.ch-card.live:hover{border-color:var(--accent);box-shadow:0 6px 18px rgba(20,23,30,.08)}
-ol.lessons li.ch-card.live:hover>a{text-decoration:underline}
+ol.lessons li.ch-card .ch-box>a,ol.lessons li.ch-card .ch-box>.ch-title{grid-area:title;display:block;min-height:0;padding:0;font:700 1.0625rem/1.35 var(--sans);hyphens:auto;overflow-wrap:break-word}
+ol.lessons li.ch-card.live .ch-box>a{color:var(--accent-deep);text-decoration:none}
+ol.lessons li.ch-card.live .ch-box>a::after{content:"";position:absolute;inset:0;border-radius:12px;margin:0}   /* the whole card is the link's target */
+ol.lessons li.ch-card.live .ch-box>a:focus-visible{outline:none}ol.lessons li.ch-card.live .ch-box:has(>a:focus-visible){outline:3px solid var(--accent);outline-offset:2px}
+ol.lessons li.ch-card.live .ch-box:hover{border-color:var(--accent);box-shadow:0 6px 18px rgba(20,23,30,.08)}
+ol.lessons li.ch-card.live .ch-box:hover>a{text-decoration:underline}
 .ch-card .ch-img{grid-area:img;aspect-ratio:2/1;overflow:hidden;border-radius:8px;background:var(--bg-tint);align-self:start}
 .ch-card .ch-img svg{display:block;width:100%;height:100%}
 .ch-card p.ch-why{grid-area:why;margin:.45rem 0 0;font-size:var(--fs-small);line-height:1.5;color:var(--ink-2)}
 .ch-card p.ch-tags{grid-area:tags;margin:.5rem 0 0;display:flex;flex-wrap:wrap;gap:.35rem}
 .ch-card p.ch-tags .tag{margin:0}
 @container content (min-width:40rem){
-  ol.lessons.ch-cards{grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:1rem}
-  ol.lessons li.ch-card.live{grid-template-columns:minmax(0,1fr);grid-template-areas:"img" "num" "title" "why" "tags";grid-template-rows:auto auto auto 1fr auto;padding:0 0 .9rem;overflow:hidden}
-  ol.lessons li.ch-card.live>*:not(.ch-img){margin-inline:1rem}
+  ol.lessons.ch-cards{grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));column-gap:1rem}
+  ol.lessons li.ch-card{display:grid;grid-row:span 2;grid-template-rows:subgrid}
+  ol.lessons li.ch-card>h3.ch-theme{grid-row:1;align-self:end;margin:1rem 0 .6rem}
+  ol.lessons.ch-cards>li:first-child>h3.ch-theme{margin-top:.6rem}
+  ol.lessons li.ch-card>.ch-label{grid-row:1;align-self:end;margin:1rem 0 .6rem}
+  ol.lessons.ch-cards>li:first-child>.ch-label{margin-top:.6rem}
+  ol.lessons li.ch-card>.ch-box{grid-row:2;margin-bottom:1rem}
+  ol.lessons li.ch-card.live>.ch-box{grid-template-columns:minmax(0,1fr);grid-template-areas:"img" "num" "title" "why" "tags";grid-template-rows:auto auto auto 1fr auto;padding:0 0 .9rem;overflow:hidden}
+  ol.lessons li.ch-card.live>.ch-box>*:not(.ch-img){margin-inline:1rem}
   ol.lessons li.ch-card.live .l-num{margin-top:.75rem}
   .ch-card .ch-img{border-radius:0;border-bottom:1px solid var(--line-2)}
-  ol.lessons li.ch-card.soon{padding:1rem}
+  ol.lessons li.ch-card.soon>.ch-box{padding:1rem}
 }
 .mod-more{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:0 2.5rem;margin-top:1.4rem}
 .mod-more>section>h2:first-child{margin-top:1rem}
@@ -267,6 +283,8 @@ ul.local-prepare a:hover{text-decoration:underline}
 .bank-reset:hover{background:var(--bg-tint)}
 .bank-count{margin:0;font-size:var(--fs-small);color:var(--ink-2)}
 @media (min-width:48rem){.bank-filter .bank-reset{grid-column:1}.bank-filter .bank-count{grid-column:2 / -1;align-self:center}}
+.bank-random{white-space:nowrap}
+@media (min-width:48rem){.bank-filter .bank-random{grid-column:1 / -1}}
 .bank-none{margin:.6rem 0;padding:.7rem 1rem;border-left:4px solid var(--copper);background:var(--surface);border-radius:0 10px 10px 0}
 ol.bank-list li.bank-item[hidden]{display:none}
 .bank-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .7rem;flex-basis:100%;margin:.2rem 0 .45rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
@@ -403,6 +421,20 @@ form.check.is-ok input{border-color:var(--accent);background:var(--accent-soft)}
 li.ex-js>details.answer>summary,li.ex-js>details.solution>summary{display:none}
 li.ex-js>details.answer:not([open]),li.ex-js>details.solution:not([open]){margin:0}
 @media print{.ex-head .ex-toggle{display:none}}
+/* try first (teacher 2026-11-03, lesson.js part 8, inquiry.js): a locked control stays in view, dimmed, with its reason */
+.ex-toggle:disabled{color:var(--ink-2);opacity:.7;cursor:not-allowed;text-decoration:none}
+.lock-note{display:inline-block;font:400 var(--fs-small) var(--sans);color:var(--ink-2)}
+.lock-note::before{content:"🔒\FE0E  ";font-size:.85em}
+summary .lock-note{margin-left:.6rem}
+details[data-locked]>summary{cursor:not-allowed;color:var(--ink-2)}
+.show-model[aria-disabled=true]{opacity:.6;cursor:not-allowed}.choice-actions .lock-note{align-self:center}
+label.solved,.explain .drew{display:flex;gap:.6rem;align-items:flex-start;min-height:44px;padding:.5rem 0;cursor:pointer;font-size:var(--fs-inner)}
+label.solved input{margin:.25rem 0 0;width:1.15rem;height:1.15rem;flex:none;accent-color:var(--accent)}
+fieldset.choice .feedback.is-answer,fieldset.choice[data-state] .feedback.is-answer{border-color:var(--accent);background:var(--accent-soft)}
+fieldset.choice li.is-answer>label{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
+form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check output[data-state=close]::before{content:"≈ ";font-weight:700}
+.teacher-note{margin:.6rem 0;padding:.5rem .9rem;border-radius:8px;background:#fff6d6;border:1px solid #e6cf7a;font:600 var(--fs-ui) var(--sans)}
+@media print{.lock-note,label.solved,.teacher-note{display:none}}
 /* the solution editor under an exercise (lesson.js 6; Abitti's own editor, loaded on the first click) */
 .pad-open,.pad-copy,.pad-btn{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--surface);color:var(--accent-deep);cursor:pointer;margin:.1rem 0 .5rem}
 .pad-open:hover,.pad-copy:hover,.pad-btn:hover{background:var(--accent-soft)}
@@ -540,7 +572,10 @@ textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border
 .experiment>.intro>:first-child{margin-top:0}
 .exp-setup{font-size:var(--fs-ui);margin:.6rem 0;padding:.5rem .8rem;background:var(--bg);border-radius:var(--inner-radius)}
 .exp-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.7rem 0}
-.exp-controls .exp-reset,.choice-actions .copy-notes{background:var(--surface);color:var(--accent-deep)}
+.exp-controls .exp-reset,.exp-controls .exp-copy,.choice-actions .copy-notes{background:var(--surface);color:var(--accent-deep)}
+.exp-controls .exp-reset:hover:not(:disabled),.exp-controls .exp-copy:hover:not(:disabled){background:var(--accent-soft);color:var(--accent-deep)}
+.exp-export-status{align-self:center;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
+.exp-export-text{display:block;width:100%;box-sizing:border-box;margin:.3rem 0 .7rem;font:15px/1.4 var(--mono);white-space:pre;overflow:auto}
 table.exp-table{margin:.6rem 0 .3rem}table.exp-table caption{font:600 var(--fs-small) var(--sans);color:var(--ink-2);text-align:left;padding:.3rem .8rem .1rem;white-space:nowrap}
 table.exp-table tbody:empty::after{content:"";display:block;height:.3rem}
 .exp-status,.explain-status{font-size:var(--fs-ui);color:var(--ink-2);margin:.3rem 0 0;min-height:1.3em}
@@ -569,7 +604,7 @@ details.opt[open]>summary{border-bottom:1px solid var(--line-2)}details.opt>.act
 .opt-tag{display:inline-block;font:700 .72rem var(--sans);letter-spacing:.05em;text-transform:uppercase;color:var(--accent-deep);border:1px solid var(--accent-deep);border-radius:999px;padding:.05rem .5rem;margin-right:.4rem}
 p.source{display:inline-block;margin:.2rem 0 .5rem;padding:.2rem .7rem;border-radius:999px;font-size:var(--fs-small);background:var(--bg-tint);border:1px solid var(--line)}
 p.source[data-source=measured]{border-color:var(--accent-deep)}
-@media print{.choice-actions,.exp-controls,.pending,.exp-status,.explain-status,.sim-context{display:none!important}}
+@media print{.choice-actions,.exp-controls,.exp-export-text,.pending,.exp-status,.explain-status,.sim-context{display:none!important}}
 
 /* the Ennusta box: closed at first; open, it frames the predictions as one group */
 details.fold{max-width:calc(var(--measure) + 5rem);margin:0;border:1px solid var(--line);border-radius:var(--card-radius);background:color-mix(in srgb,var(--accent-soft) 55%,var(--bg));padding:0 1.1rem}
@@ -652,6 +687,7 @@ details.reveal>summary{min-height:52px;flex-wrap:wrap;gap:.1rem .6rem;font:700 v
 h4.sol-part{margin:1rem 0 .4rem;font:700 var(--fs-body) var(--sans)}
 .reveal-body .steps{padding:.9rem 1.1rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6}
 .reveal-body .steps p{margin:0 0 .5rem}.reveal-body .steps strong{color:var(--accent-deep)}.reveal-body .steps svg{display:block;margin:.6rem auto}
+.reveal-body .steps .katex svg{margin:0}   /* KaTeX draws \sqrt as a 400em-wide svg clipped by .hide-tail: the figure margin above pushed the surd out of its box (FY7 Sovella visual review 2026-11-04) */
 .rubric{font-size:var(--fs-inner)}.rubric-lead{color:var(--ink-2)}
 .rubric-part{margin:0 0 1rem;padding:.7rem .9rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius)}
 .rubric-part-h{display:flex;justify-content:space-between;margin:0 0 .4rem;font-weight:700}
@@ -675,9 +711,6 @@ nav.chapter-nav a:hover{border-color:var(--accent);background:var(--accent-soft)
 nav.chapter-nav a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 @media (max-width:40rem){nav.chapter-nav{grid-template-columns:1fr}nav.chapter-nav a.next{grid-column:1;text-align:left}}
 nav.chapter-nav a.prev .dir::before{content:"← "}nav.chapter-nav a.next .dir::after{content:" →"}
-/* Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the chapter's small link above the chapter navigation, the front page's section */
-p.concept-link{max-width:var(--measure);margin:3rem 0 0;font-size:var(--fs-ui)}p.concept-link a,ul.concept-cards a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--accent-deep);text-decoration:none;overflow-wrap:anywhere}p.concept-link a:hover,ul.concept-cards a:hover{text-decoration:underline}p.concept-link a::after{content:"→";margin-left:.5em;flex:none}
-p.concept-link+nav.chapter-nav{margin-top:1rem}
 /* after a wrong answer in Tarkista osaamisesi: where to practise, as a suggestion (inquiry.py, teacher 2026-10-29) */
 .practice-hint{display:none;margin:.6rem 0 0;padding:.55rem .8rem;border-radius:var(--inner-radius);background:var(--bg-tint);font-size:var(--fs-inner);line-height:1.5}
 fieldset.choice[data-state="no"] .practice-hint,.numeric:has(output[data-state="no"]) .practice-hint{display:block}
@@ -711,6 +744,7 @@ ul.inv-prereq li{margin:0;padding:.5rem 0;border-bottom:1px solid var(--line-2)}
 ul.inv-safety li::marker{color:var(--copper)}
 details.inv-teacher{margin:2.4rem 0 1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:0 1rem}
 details.inv-teacher>summary{min-height:48px;display:flex;align-items:center;font:700 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer}
+.unit-credits,.unit-sources,.unit-teacher{max-width:var(--measure)}   /* every course's units (FY9 has no units.css of its own) */
 .investigation table{border-collapse:collapse;max-width:100%;display:block;overflow-x:auto}
 .investigation th,.investigation td{border:1px solid var(--line);padding:.35rem .6rem;min-width:4.5rem}
 .inv-section{scroll-margin-top:var(--sticky-top)}
@@ -824,3 +858,123 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
 .ra-voice[hidden]{display:none}
 .ra-voice select{flex:1;min-width:0;max-width:17rem;min-height:44px;padding:0 .4rem;font:500 var(--fs-ui) var(--sans);color:var(--ink);border:1px solid var(--line);border-radius:10px;background:var(--surface)}
 .ra-voice select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+/* Concept cards (kortit.js, teacher 2026-11-03: "kortit tulevat luvun luo"). One card everywhere: both faces in one
+   grid cell, so a turned card keeps its height and a row never gets an empty column; a row of cards scrolls sideways
+   from 40rem and stacks on a phone. Without JavaScript the cards are a definition list (.kc-dl). The bold terms of
+   Teoriatiivistelmä that name a card get a dotted underline and open a popover (.kc-pop). */
+.kc-intro{font-size:var(--fs-inner);color:var(--ink-2);margin:0 0 1rem}
+.kc-dl{margin:0 0 1rem;display:grid;gap:.6rem}
+.kc-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--inner-radius);padding:.7rem 1rem}
+.kc-item dt{font:700 var(--fs-body) var(--sans);color:var(--ink)}
+.kc-item dd{margin:.15rem 0 0;font-size:var(--fs-inner)}
+.kc-formula{display:block}
+.kc-more,.kc-all{font:600 var(--fs-ui) var(--sans);margin:.9rem 0 0}
+.kc-row{display:grid;gap:.9rem;margin:0 0 .5rem}
+@media (min-width:40rem){
+  .kc-row{grid-auto-flow:column;grid-auto-columns:minmax(16.5rem,18rem);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;
+    padding:.25rem .25rem 1rem;margin-inline:-.25rem;scrollbar-width:thin}
+  .kc-row>.kc-card{scroll-snap-align:start}
+}
+.kc-card{perspective:1400px;min-width:0}
+.kc-inner{display:grid;height:100%;transition:transform .45s cubic-bezier(.3,.7,.3,1);transform-style:preserve-3d}
+.kc-card.is-flipped .kc-inner{transform:rotateY(180deg)}
+.kc-face,.kc-back{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;min-height:11.5rem;box-sizing:border-box;
+  border:1px solid var(--line);border-radius:var(--card-radius);background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.05),0 6px 18px rgba(20,23,30,.06)}
+.kc-face{display:flex;flex-direction:column;align-items:flex-start;gap:.5rem;width:100%;padding:1rem 1rem;text-align:left;cursor:pointer;color:var(--ink);font:inherit;
+  background:linear-gradient(180deg,var(--surface),#fbf8f1)}
+.kc-face:hover{border-color:var(--accent);box-shadow:0 1px 2px rgba(20,23,30,.05),0 8px 22px rgba(20,48,30,.12)}
+.kc-back{transform:rotateY(180deg);padding:.8rem 1rem 1rem;display:flex;flex-direction:column;gap:.35rem}
+.kc-back:focus{outline:none}.kc-back:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.kc-kind{font:700 .8125rem/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.kc-front{flex:1;display:flex;align-items:center;font:600 1.3125rem/1.3 var(--serif);overflow-wrap:anywhere;hyphens:auto;-webkit-hyphens:auto}
+.kc-front.is-def{font:500 var(--fs-inner)/1.5 var(--sans)}
+.kc-hint{font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
+.kc-hint::after{content:" ↻"}
+.kc-back-top{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.kc-turn{min-width:40px;min-height:40px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--accent-deep);font:600 1.05rem var(--sans);cursor:pointer}
+.kc-back-term{margin:0;font:700 var(--fs-ui)/1.3 var(--sans);color:var(--ink-2)}
+.kc-def{margin:0;font-size:var(--fs-inner);line-height:1.5}
+.kc-def-term{font:600 1.25rem/1.3 var(--serif)}
+.kc-back .kc-formula,.kc-pop .kc-formula{margin:.15rem 0;overflow-x:auto;overflow-y:hidden}
+.kc-back .kc-formula .katex-display,.kc-pop .kc-formula .katex-display{margin:.3rem 0;text-align:left}
+.kc-img{max-width:100%;height:auto;margin:.2rem 0}
+.kc-actions{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:auto;padding-top:.45rem}
+.kc-actions button,.kc-add,.kc-button,.kc-app button{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 .85rem;border-radius:999px;cursor:pointer}
+.kc-good{border:1px solid var(--accent-deep);background:var(--accent-deep);color:#fff}
+.kc-good:hover{background:var(--accent)}
+.kc-again{border:1px solid #b4532a;background:var(--surface);color:#8a3b1a}
+.kc-again:hover{background:#fff4ec}
+.kc-actions button:disabled{opacity:.55;cursor:default}
+.kc-status{margin:0;font-size:var(--fs-small);color:var(--ink-2);min-height:1.2em}
+.kc-status:empty{display:none}
+.kc-card.in-deck .kc-face{border-color:#e0a77f;box-shadow:inset 4px 0 0 #d9822b,0 6px 18px rgba(20,23,30,.06)}
+@media (prefers-reduced-motion:reduce){.kc-inner{transition:none}}
+/* the bold terms and the chips of Teoriatiivistelmä */
+strong.kc-ready{font-weight:inherit}
+.kc-term-btn{font:inherit;font-weight:700;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;
+  text-decoration:underline dotted;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:.22em}
+.kc-term-btn:hover,.kc-term-btn[aria-expanded="true"]{color:var(--accent-deep);text-decoration-style:solid}
+.kc-chips{margin:1rem 0 0;padding:.75rem 1rem .85rem;border-radius:var(--inner-radius);background:var(--bg-tint)}
+.kc-chips-label{margin:0 0 .5rem;font:700 var(--fs-ui) var(--sans);color:var(--ink-2)}
+.kc-chip-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
+.kc-chip-list li{margin:0}
+.kc-chip{min-height:40px;padding:0 .9rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:600 var(--fs-ui) var(--sans);cursor:pointer;
+  text-decoration:underline dotted;text-decoration-color:var(--accent);text-underline-offset:.2em}
+.kc-chip:hover,.kc-chip[aria-expanded="true"]{border-color:var(--accent);color:var(--accent-deep)}
+.kc-pop{position:absolute;z-index:70;box-sizing:border-box;padding:.9rem 1.1rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  box-shadow:0 14px 36px rgba(20,23,30,.18);font-size:var(--fs-inner);line-height:1.5}
+.kc-pop-term{margin:0 2.2rem .3rem 0;font:600 1.125rem/1.3 var(--serif)}
+.kc-pop .kc-def{margin:0 0 .4rem}
+.kc-pop-close{position:absolute;top:.4rem;right:.4rem;width:40px;height:40px;border:0;border-radius:999px;background:none;font:400 1.5rem/1 var(--sans);color:var(--ink-2);cursor:pointer}
+.kc-pop-close:hover{background:var(--bg-tint)}
+.kc-add{margin-top:.35rem;border:1px solid var(--accent-deep);background:var(--surface);color:var(--accent-deep)}
+.kc-add[aria-pressed="true"]{background:var(--accent-soft)}
+.kc-pop .kc-status{margin-top:.4rem}
+/* the module page's deck, Sovella itsenäisesti and Käsitetakomo */
+.kc-deck .kc-deck-count{margin:0 0 .7rem}
+.kc-button{display:inline-flex;align-items:center;border:1px solid var(--accent-deep);background:var(--accent-deep);color:#fff;text-decoration:none}
+.kc-button:hover{background:var(--accent)}
+.kc-practice{margin:2rem 0 1rem;padding:1.1rem 1.25rem 1rem;border:1px solid #e9cdb6;border-radius:var(--card-radius);background:#fffaf4}
+.kc-practice h2{margin-top:0}.kc-practice .kc-intro,.kc-section .kc-intro,.kc-deck p{max-width:var(--measure)}
+.kc-app-head h1{margin-bottom:.3rem}
+.kc-app h2{font-size:var(--fs-h2);margin:1.2rem 0 .8rem}
+.kc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:.7rem}
+.kc-tile{display:flex;flex-direction:column;align-items:flex-start;gap:.2rem;padding:.9rem 1rem!important;min-height:7rem!important;border-radius:var(--card-radius)!important;
+  border:1px solid var(--line);background:var(--surface);color:var(--ink);text-align:left}
+.kc-tile:hover:not(:disabled){border-color:var(--accent)}
+.kc-tile:disabled{opacity:.6;cursor:default}
+.kc-tile-code{font:800 1.5rem/1 var(--sans);color:var(--brand-green)}
+.kc-tile-name{font:600 var(--fs-ui)/1.35 var(--sans)}
+.kc-tile-count{margin-top:auto;font:500 var(--fs-small) var(--sans);color:var(--ink-2)}
+.kc-back-btn{border:1px solid var(--line);background:var(--surface);color:var(--accent-deep)}
+.kc-topics{display:grid;gap:.45rem}
+.kc-topic{display:flex;gap:.45rem;align-items:stretch}
+.kc-topic-main{flex:1;display:flex;align-items:center;gap:.6rem;text-align:left;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px!important;min-height:48px!important}
+.kc-topic-main:hover{border-color:var(--accent)}
+.kc-topic-all .kc-topic-main{background:var(--accent-soft)}
+.kc-topic-label{flex:1}
+.kc-topic-n{font:500 var(--fs-small) var(--sans);color:var(--ink-2)}
+.kc-go{color:var(--accent-deep)}
+.kc-pick{width:48px;padding:0!important;border:2px solid var(--line);background:var(--surface);color:transparent;border-radius:999px!important}
+.kc-pick[aria-pressed="true"]{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff}
+.kc-topic.is-chosen .kc-topic-main{border-color:var(--accent-deep)}
+.kc-startbar{display:flex;flex-wrap:wrap;gap:.5rem;margin:.9rem 0 0}
+.kc-start{border:1px solid var(--accent-deep);background:var(--accent-deep);color:#fff}
+.kc-clear{border:1px solid var(--line);background:var(--surface);color:var(--ink-2)}
+.kc-tip{font-size:var(--fs-small);color:var(--ink-2);margin:.8rem 0 0}
+.kc-mode{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0 0}
+.kc-mode button{border:1px solid var(--line);background:var(--surface);color:var(--ink-2)}
+.kc-mode button[aria-pressed="true"]{border-color:var(--accent-deep);background:var(--accent-soft);color:var(--accent-deep)}
+.kc-studybar{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.3rem 1rem;margin-top:1rem}
+.kc-studybar h2{margin:0;font-size:var(--fs-h3)}
+.kc-tally{font:600 var(--fs-small) var(--sans);color:var(--ink-2)}
+.kc-track{height:6px;border-radius:999px;background:var(--line-2);margin:.6rem 0 1.2rem;overflow:hidden}
+.kc-fill{height:100%;width:0;background:var(--accent);transition:width .3s}
+.kc-study .kc-face,.kc-study .kc-back{min-height:17rem}
+.kc-study .kc-front.is-term{font-size:1.75rem;justify-content:center;text-align:center;width:100%}
+.kc-done{text-align:center;padding:1.5rem 1rem;border:1px solid var(--line);border-radius:var(--card-radius);background:var(--surface)}
+.kc-done-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:1rem}
+.kc-done-actions button{border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.kc-done-actions button.kc-primary{border-color:var(--accent-deep);background:var(--accent-deep);color:#fff}
+.kc-static-module h2{margin-top:2rem}
+@media print{.kc-chips,.kc-pop,.kc-turn,.kc-actions,.kc-face{display:none!important}.kc-inner{transform:none!important}.kc-back{transform:none;backface-visibility:visible;-webkit-backface-visibility:visible;min-height:0}}

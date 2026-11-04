@@ -1,0 +1,104 @@
+{
+ "level1": [
+  {
+   "id": "fy7-14-L1-01",
+   "level": 1,
+   "text": "Saippuakalvon taitekerroin on $1{,}33$, ja sen paksuus on eräässä kohdassa $420\\,\\text{nm}$. Valo tulee kohtisuoraan kalvoon. Kuinka suuri on kalvon kahdesta pinnasta heijastuneiden aaltojen matkaero? Anna vastaus nanometreinä.",
+   "answer": 1117.2,
+   "unit": "nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-14-L1-02",
+   "level": 1,
+   "text": "Punaisen laservalon aallonpituus ilmassa on $633\\,\\text{nm}$. Kuinka suuri on valon aallonpituus magnesiumfluoridissa, jonka taitekerroin on $1{,}38$?",
+   "answer": 458.6957,
+   "unit": "nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-14-L1-03",
+   "level": 1,
+   "text": "Kameran linssin lasin pinnalle höyrystetään $\\text{MgF}_2$-pinnoite ($n = 1{,}38$), jotta aallonpituuden $500\\,\\text{nm}$ valo heijastuisi mahdollisimman vähän. Lasin taitekerroin on $1{,}52$, ja valo tulee kohtisuoraan. Kuinka paksu on ohuin tällainen pinnoite?",
+   "answer": 90.5797,
+   "unit": "nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-14-L1-04",
+   "level": 1,
+   "text": "Saippuakalvon taitekerroin on $1{,}33$, ja sen molemmin puolin on ilmaa. Valo tulee kohtisuoraan kalvoon. Kuinka paksu on ohuin kalvo, joka heijastaa aallonpituuden $600\\,\\text{nm}$ valoa voimakkaimmin?",
+   "answer": 112.782,
+   "unit": "nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-14-L1-05",
+   "level": 1,
+   "text": "Silmälasin linssin muovin taitekerroin on $1{,}60$. Kohtisuorassa tulossa yksikerroksinen heijastuksenestopinnoite kumoaisi heijastuksen täydellisesti, jos sen kahdesta pinnasta heijastuneet aallot olisivat yhtä voimakkaat. Kuinka suuri pinnoitteen taitekertoimen pitäisi silloin olla?",
+   "answer": 1.2649,
+   "unit": "",
+   "tolerance": 0.02
+  }
+ ],
+ "level2": [
+  {
+   "id": "fy7-14-L2-01",
+   "level": 2,
+   "text": "Saippuakalvon ($n = 1{,}33$) paksuus on eräässä kohdassa $240\\,\\text{nm}$, ja sen molemmin puolin on ilmaa. Valkoinen valo tulee kohtisuoraan kalvoon. Mikä näkyvän valon ($400$–$700\\,\\text{nm}$) aallonpituus puuttuu heijastuneesta valosta?",
+   "answer": 638.4,
+   "unit": "nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-14-L2-02",
+   "level": 2,
+   "text": "Lasilinssin ($n = 1{,}52$) pinnalla on $110\\,\\text{nm}$:n paksuinen $\\text{MgF}_2$-pinnoite ($n = 1{,}38$). Valo tulee kohtisuoraan pinnoitteeseen. Minkä näkyvän valon ($400$–$700\\,\\text{nm}$) aallonpituuden pinnoite heijastaa heikoimmin?",
+   "answer": 607.2,
+   "unit": "nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-14-L2-03",
+   "level": 2,
+   "text": "Lasin ($n = 1{,}52$) pinnalle tehdään $\\text{MgF}_2$-pinnoite ($n = 1{,}38$), jonka pitää heijastaa aallonpituuden $520\\,\\text{nm}$ valoa mahdollisimman vähän, kun valo tulee kohtisuoraan. Valmistaja haluaa kerroksen, joka on paksumpi kuin ohuin mahdollinen. Kuinka paksu on toiseksi ohuin pinnoite, joka heijastaa tätä aallonpituutta heikoimmin?",
+   "answer": 282.6087,
+   "unit": "nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-14-L2-04",
+   "level": 2,
+   "text": "Säteenjakajassa lasin ($n = 1{,}52$) pinnalle tehdään ohut titaanidioksidikerros, jonka pitää heijastaa aallonpituuden $550\\,\\text{nm}$ valoa mahdollisimman paljon. Oletetaan, että kerroksen taitekerroin on $2{,}30$ ja että valo tulee ilmasta kohtisuoraan kerrokseen. Kuinka paksu on ohuin tällainen kerros?",
+   "answer": 59.7826,
+   "unit": "nm",
+   "tolerance": 0.02
+  }
+ ],
+ "level3": [
+  {
+   "id": "fy7-14-L3-01",
+   "level": 3,
+   "text": "Pystysuoraan rautalankakehykseen tehty saippuakalvo ($n = 1{,}33$) valaistaan natriumlampun keltaisella valolla, jonka aallonpituus on $589\\,\\text{nm}$ ja joka tulee kohtisuoraan kalvoon. Painovoima ohentaa kalvoa ylhäältä, ja kalvon ylin osa näyttää mustalta. Sen alapuolella vuorottelevat kirkkaat ja tummat vaakasuorat raidat, ja kalvo paksunee alaspäin. Kuinka paksu kalvo on toisen tumman raidan kohdalla, kun ylintä mustaa aluetta ei lasketa raidaksi?",
+   "answer": 442.8571,
+   "unit": "nm",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-14-L3-02",
+   "level": 3,
+   "text": "Kameran objektiivissa on neljä erillistä lasilinssiä eli kahdeksan pintaa, joissa valo tulee ilmasta lasiin tai lasista ilmaan. Jokainen pinta on pinnoitettu niin, että se heijastaa $1{,}3\\,\\%$ siihen kohtisuoraan tulevasta valosta. Oletetaan, että lasi ei ime valoa ja että kerran heijastunut valo ei enää pääse kennolle. Kuinka monta prosenttia objektiiviin tulevasta valosta pääsee sen läpi?",
+   "answer": 90.0611,
+   "unit": "%",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-14-L3-03",
+   "level": 3,
+   "text": "Saippuakalvo ($n = 1{,}33$) on ilmassa, ja valkoinen valo tulee kohtisuoraan kalvoon. Kalvo heijastaa näkyvän valon alueella voimakkaimmin aallonpituuksia $630\\,\\text{nm}$ ja $450\\,\\text{nm}$, eikä niiden välissä ole muita voimakkaasti heijastuvia aallonpituuksia. Kuinka paksu kalvo on?",
+   "answer": 592.1053,
+   "unit": "nm",
+   "tolerance": 0.02
+  }
+ ]
+}

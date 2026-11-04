@@ -1,0 +1,489 @@
+{
+  "version": 1,
+  "contribution": "Applied chapter: wireless charging (a transformer without an iron core, coupling that weakens steeply with distance: the simulation calculates the flux between two coils), the induction hob (eddy currents, why a ferromagnetic base) and the fibre link (total internal reflection, delay and attenuation in decibels, Corning data). A real charging measurement (Ravenscraft 2020) and a transfer task that combines the law of induction and the voltage of a generator.",
+  "learn": [
+    "explain how a wireless charger, an induction hob and a fibre link make use of induction and total internal reflection.",
+    "assess why wireless charging weakens as the distance grows and why an induction hob needs a steel pan.",
+    "calculate the attenuation of a fibre in decibels and the power that reaches the receiver."
+  ],
+  "prior": [
+    "A changing magnetic flux induces a voltage $e = -N \\cdot \\Delta\\Phi : \\Delta t$ in a coil (chapter *Electromagnetic induction*)",
+    "A changing magnetic field produces eddy currents in a conductor, and they change electrical energy into internal energy (chapter *Lenz's law and eddy currents*)",
+    "In an optical fibre light travels in the core by total internal reflection at the speed $v = c : n$ (chapter *Total internal reflection and optical fibre*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a kitchen worktop a phone charges on a round pad without a cable, water boils in a steel pan on an induction hob although nothing glows, and the internet connection to the router on the wall travels as light in a thin glass fibre. If the phone is lifted a few centimetres off the pad, charging stops. If an aluminium pan is put in place of the steel pan, the hob does not heat it. In the fibre, light travels tens of kilometres before it has to be amplified.",
+      "question": "What physical phenomenon is behind each device, and what limits how it works?"
+    },
+    {
+      "id": "kertaus-muuntaja",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: the transformer",
+      "prompt": "The primary coil of a transformer is connected to a voltage source. When does a voltage appear in the secondary coil?",
+      "choices": [
+        {
+          "text": "When the current in the primary coil changes, so that the magnetic flux in the iron core changes.",
+          "correct": true,
+          "feedback": "Correct. A voltage is induced in the secondary coil only when the flux through it changes (chapter *The transformer and the transmission of electrical energy*). An alternating current changes the flux all the time. Today the same phenomenon works without an iron core."
+        },
+        {
+          "text": "Whenever there is a current in the primary coil, direct current too.",
+          "feedback": "The flux produced by a direct current is constant, and a constant flux does not induce a voltage. A voltage appears only when the flux changes, for example with an alternating current or at the moment a current is switched on."
+        },
+        {
+          "text": "When current can flow from the primary coil along wires to the secondary coil.",
+          "feedback": "The coils are not connected to each other by wires. Energy is transferred by a changing magnetic flux: the change of flux induces a voltage in the secondary coil."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-etaisyys",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the phone lifted off the charger",
+      "prompt": "An alternating current flows in the transmitter coil of a wireless charger, and the receiver coil of the phone is at first $3\\,\\text{mm}$ from it. The phone is lifted to $20\\,\\text{mm}$. The current in the transmitter coil stays the same. How much of the voltage of the receiver coil is left?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 4
+      },
+      "choices": [
+        {
+          "text": "Almost all of it, because the magnetic field reaches far and air does not weaken it.",
+          "feedback": "The model's values refute this: the voltage fell from $4.40\\,\\text{V}$ to $0.869\\,\\text{V}$, about a fifth. Air does not weaken the field, but the field lines loop around the wires of the transmitter coil and turn back close to the coil, so less and less flux passes through the receiver."
+        },
+        {
+          "text": "About half, because the distance grows and the field weakens gradually.",
+          "feedback": "The model's values refute this: half of the voltage was left already at about $9\\,\\text{mm}$, and at $20\\,\\text{mm}$ only $19.7\\,\\%$ was left. The field weakens steeply once the distance becomes as large as the radius of the coil."
+        },
+        {
+          "text": "About a fifth, because fewer and fewer field lines reach the receiver.",
+          "correct": true,
+          "feedback": "The model's values support this: the voltage fell from $4.40\\,\\text{V}$ to $0.869\\,\\text{V}$, so $19.7\\,\\%$ was left. The flux through the receiver falls steeply because the field lines of the transmitter turn back close to the coil."
+        },
+        {
+          "text": "None, because induction works only when the coils touch each other.",
+          "feedback": "The model's values refute this: even at $20\\,\\text{mm}$ the voltage was $0.869\\,\\text{V}$. Induction does not need contact, only a changing flux. The flux just gets smaller as the distance grows."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kela",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the size of the coil",
+      "prompt": "The radius of the receiver coil is $20\\,\\text{mm}$, and it is $20\\,\\text{mm}$ from the transmitter coil. The radius of the transmitter coil can be $10\\,\\text{mm}$, $20\\,\\text{mm}$ or $40\\,\\text{mm}$, and the turns and the current are the same. With which transmitter coil is the voltage of the receiver coil greatest?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "With the small coil, because it concentrates the field in a small region.",
+          "feedback": "The model's values refute this: with a coil of radius $10\\,\\text{mm}$ the voltage was only $0.285\\,\\text{V}$. The field lines of a small coil turn back very close to the coil, so little flux reaches as far as $20\\,\\text{mm}$."
+        },
+        {
+          "text": "With a coil the size of the receiver, because coils of the same size fit together best.",
+          "feedback": "This is true close up: at $3\\,\\text{mm}$ a coil of the same size gives the greatest voltage. The model's values at a distance of $20\\,\\text{mm}$ refute it, though: with radius $20\\,\\text{mm}$ the voltage was $0.869\\,\\text{V}$ and with radius $40\\,\\text{mm}$ it was $1.23\\,\\text{V}$."
+        },
+        {
+          "text": "With the large coil, because its field reaches farther.",
+          "correct": true,
+          "feedback": "The model's values support this: with a coil of radius $40\\,\\text{mm}$ the voltage was $1.23\\,\\text{V}$, while with a $20\\,\\text{mm}$ coil it was $0.869\\,\\text{V}$ and with a $10\\,\\text{mm}$ coil $0.285\\,\\text{V}$. The field lines of a large coil curve more widely and reach farther. The growth does not continue for ever, however: at radius $35\\,\\text{mm}$ the voltage is $1.25\\,\\text{V}$ and at radius $40\\,\\text{mm}$ already slightly smaller, so at each distance there is a best size of coil."
+        },
+        {
+          "text": "The same for all of them, because the turns and the current are the same.",
+          "feedback": "The model's values refute this: the voltage varied from $0.285\\,\\text{V}$ to $1.23\\,\\text{V}$. The flux through the receiver depends on how the field is distributed in space, and that depends on the size of the coil."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kattila",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: why the pan gets hot",
+      "layout": "models",
+      "prompt": "On the glass top of an induction hob the water in a steel pan boils, but the glass next to the pan is only lukewarm. Which explanation is physically correct?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when you have read the section Induction hob."
+      },
+      "choices": [
+        {
+          "text": "The coil under the glass gets hot, and the hot glass conducts the heat up into the pan.",
+          "feedback": "If the heat came from the coil through the glass, the glass would be the hottest part and would also get hot next to the pan. The heat is produced in the base of the pan, however: the changing field of the coil induces eddy currents in the base, and their electrical energy changes into internal energy of the base."
+        },
+        {
+          "text": "The changing field of the coil induces eddy currents in the base of the pan, and they heat the base.",
+          "correct": true,
+          "feedback": "Correct. The flux through the base changes all the time, and eddy currents are produced in the base. In the resistance of the base their electrical energy changes into internal energy. Glass does not conduct electricity, so no currents are produced in it, and it warms up only from the hot pan."
+        },
+        {
+          "text": "The hob emits microwaves, which pass through the base and heat the water.",
+          "feedback": "A microwave oven heats water with electromagnetic radiation, but an induction hob works differently. An empty steel pan gets hot quickly on the hob, so the heat is produced in the base of the pan: the changing field of the coil induces eddy currents in it."
+        },
+        {
+          "text": "The magnetic field pulls the steel base back and forth, and friction against the glass heats it.",
+          "feedback": "The pan does not move on the glass, so there is no friction. The steel base gets hot because the changing flux induces eddy currents in it and their electrical energy changes into internal energy in the resistance of the base."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kuitu",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 4: light in a 100 kilometre fibre",
+      "prompt": "A transmitter feeds light of wavelength $1550\\,\\text{nm}$ into a telecommunications fibre $100\\,\\text{km}$ long. The light stays in the core by total internal reflection. What fraction of the power of the light reaches the other end of the fibre?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when you have read the formula Attenuation in decibels."
+      },
+      "choices": [
+        {
+          "text": "Almost all of it, because total internal reflection does not waste light.",
+          "feedback": "Total internal reflection does not waste light, but the glass itself attenuates it: some of the light is absorbed and some is scattered. An attenuation of $0.18\\,\\text{dB/km}$ gives $18\\,\\text{dB}$ over $100\\,\\text{km}$, so about $1.6\\,\\%$ of the power arrives."
+        },
+        {
+          "text": "About half, because glass is transparent and attenuates light only a little.",
+          "feedback": "Half of the power is lost already over about $17\\,\\text{km}$. The attenuation per kilometre is small, but it accumulates: over $100\\,\\text{km}$ the attenuation is $18\\,\\text{dB}$, and about $1.6\\,\\%$ of the power arrives."
+        },
+        {
+          "text": "About $1$–$2\\,\\%$, because the glass attenuates the light in the same proportion on every kilometre.",
+          "correct": true,
+          "feedback": "Correct. The attenuation is at most $0.18\\,\\text{dB/km}$, so over $100\\,\\text{km}$ it is $18\\,\\text{dB}$, and $10^{-1.8} \\approx 1.6\\,\\%$ of the power is left. The receiver still detects the pulses, and on longer links the light is amplified on the way."
+        },
+        {
+          "text": "Practically none, because the light is attenuated completely within a few kilometres.",
+          "feedback": "In window glass the light would be attenuated quickly, but the pure silica glass of a fibre is extremely transparent. The power halves only over about $17\\,\\text{km}$, and after $100\\,\\text{km}$ about $1.6\\,\\%$ of the power is left."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "The transmitter coil of a wireless charger and the receiver coil of a phone in cross-section. Change the distance between the coils and the size of the transmitter coil, and follow the voltage of the receiver coil.",
+      "howto": "Adjust the distance $z$ between the coils and the radius $R_1$ of the transmitter coil. The radius of the receiver coil is always $20\\,\\text{mm}$. The green lines are field lines of the magnetic field of the transmitter coil at the moment when the current is greatest. The lines are drawn so that the same flux lies between every two lines, so the number of lines passing through the receiver tells the size of the flux. The lines that pass through the receiver are drawn darker. On the right, a graph shows the peak voltage $e_0$ as a function of the distance for the chosen transmitter coil, and the dot is the present distance. In the readouts you see the peak flux $\\Phi_0$ through one turn of the receiver coil, the peak voltage $e_0$ and what percentage $e_0$ is of the value of the same coil at a distance of $3\\,\\text{mm}$.",
+      "model": "Both coils have $10$ turns, and the turns are thought of as thin circles at the radius of the coil. The coils share an axis, so the receiver is directly above the transmitter. A sinusoidal alternating current flows in the transmitter coil, with a peak value of $1.0\\,\\text{A}$ and a frequency of $140\\,\\text{kHz}$, and the current stays the same at all distances. The receiver coil is not connected to a load, so no current flows in it and it does not change the field of the transmitter. There is air between the coils: ferrite sheets and the metal parts of the phone are not in the model. The picture is to scale. The readouts are values calculated by the model, not measurements.",
+      "calc": "The model calculates the magnetic field of the transmitter coil and adds up its flux through the surface enclosed by one turn of the receiver coil. The result is the peak flux $\\Phi_0$, which depends on the radii of the coils and on the distance $z$. Because the current varies sinusoidally, the flux also varies sinusoidally at the same frequency. The peak voltage of the receiver coil is therefore the same as in a generator:\n\n$$e_0 = N_2 \\cdot 2\\pi f \\cdot \\Phi_0$$\n\nwhere $N_2 = 10$ is the number of turns of the receiver coil and $f = 140\\,\\text{kHz}$. The percentage is $e_0$ divided by the voltage of the same transmitter coil at a distance of $3\\,\\text{mm}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the distance",
+      "intro": "Test prediction 1. The radius of the transmitter coil is $20\\,\\text{mm}$; change only the distance $z$. Record at least the distances $3\\,\\text{mm}$, $10\\,\\text{mm}$, $20\\,\\text{mm}$ and $30\\,\\text{mm}$. Also watch how many field lines pass through the receiver.",
+      "initial": {
+        "z": 3,
+        "R1": 20
+      },
+      "locked": [
+        "R1"
+      ],
+      "vary": "z",
+      "names": {
+        "z": "distance z",
+        "R1": "transmitter radius R_1"
+      },
+      "units": {
+        "z": "mm",
+        "R1": "mm"
+      },
+      "measure": [
+        {
+          "key": "phi0",
+          "label": "$\\Phi_0\\ (\\mu\\text{Wb})$"
+        },
+        {
+          "key": "e0",
+          "label": "e_0 (V)"
+        },
+        {
+          "key": "osuus",
+          "label": "share (%)"
+        }
+      ],
+      "min": 4,
+      "question": {
+        "type": "numeric",
+        "prompt": "What percentage of the voltage at a distance of $3\\,\\text{mm}$ is left when the distance is $20\\,\\text{mm}$? Calculate it from the voltages in your table.",
+        "answer": 19.7386,
+        "unit": "%",
+        "tolerance": 0.03,
+        "hints": [
+          "Find in the table the peak voltages at the distances $3\\,\\text{mm}$ and $20\\,\\text{mm}$.",
+          "The share is $e_0(20\\,\\text{mm}) : e_0(3\\,\\text{mm})$ multiplied by one hundred.",
+          "$0.869\\,\\text{V} : 4.40\\,\\text{V}$ and the result as a percentage."
+        ],
+        "mistakes": [
+          {
+            "value": 80.2614,
+            "feedback": "This is the share that was lost. What is asked is the share that is left: $e_0(20\\,\\text{mm}) : e_0(3\\,\\text{mm})$."
+          },
+          {
+            "value": 506.6,
+            "feedback": "You divided the wrong way round. The share that is left is smaller than $100\\,\\%$: divide the voltage at $20\\,\\text{mm}$ by the voltage at $3\\,\\text{mm}$."
+          }
+        ],
+        "solution": "**Given:** simulation readouts with a transmitter coil of radius $R_1 = 20\\,\\text{mm}$: $e_0 = 4.404\\,\\text{V}$ at a distance of $3\\,\\text{mm}$ and $e_0 = 0.8692\\,\\text{V}$ at a distance of $20\\,\\text{mm}$\n\n**Find:** the share of the voltage that is left, as a percentage\n\n**Principle:** The current in the transmitter coil stays the same, so the ratio of the voltages tells how much the flux through the receiver has decreased. The voltage is proportional to the flux, because $e_0 = N_2 \\cdot 2\\pi f \\cdot \\Phi_0$ and $N_2$ and $f$ stay the same.\n\n**Formula:** share $= \\dfrac{e_0(20\\,\\text{mm})}{e_0(3\\,\\text{mm})} \\cdot 100\\,\\%$\n\n**Conversions:** Not needed: both voltages are in volts, and the unit cancels.\n\n**Substitution:** share $= \\dfrac{0.8692\\,\\text{V}}{4.404\\,\\text{V}} \\cdot 100\\,\\% = 19.74\\,\\%$\n\n**Answer:** about $19.7\\,\\%$, that is about a fifth, to three significant figures like the readouts.\n\n**Reasonableness:** The readout share shows the same value $19.7\\,\\%$ at a distance of $20\\,\\text{mm}$. In the picture six field lines pass through the receiver at $3\\,\\text{mm}$ and only one at $20\\,\\text{mm}$, which fits about a fifth."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the size of the transmitter coil",
+      "intro": "Test prediction 2. The distance is $20\\,\\text{mm}$; change only the radius $R_1$ of the transmitter coil. Record at least the radii $10\\,\\text{mm}$, $20\\,\\text{mm}$, $30\\,\\text{mm}$, $35\\,\\text{mm}$ and $40\\,\\text{mm}$. Look at what the field lines look like with a large and a small coil.",
+      "initial": {
+        "z": 20,
+        "R1": 10
+      },
+      "locked": [
+        "z"
+      ],
+      "vary": "R1",
+      "names": {
+        "z": "distance z",
+        "R1": "transmitter radius R_1"
+      },
+      "units": {
+        "z": "mm",
+        "R1": "mm"
+      },
+      "measure": [
+        {
+          "key": "phi0",
+          "label": "$\\Phi_0\\ (\\mu\\text{Wb})$"
+        },
+        {
+          "key": "e0",
+          "label": "e_0 (V)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what limits wireless charging",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "On the basis of your tables, write: how does the voltage of the receiver coil change as the distance grows, and how does the size of the transmitter coil affect it at $20\\,\\text{mm}$? Use the field lines to explain why.",
+      "model": "When the radius of the transmitter coil was $20\\,\\text{mm}$, the voltage fell steeply as the distance grew: at $3\\,\\text{mm}$ it was $4.40\\,\\text{V}$, at $10\\,\\text{mm}$ $1.96\\,\\text{V}$, at $20\\,\\text{mm}$ $0.869\\,\\text{V}$ and at $30\\,\\text{mm}$ $0.445\\,\\text{V}$. The field lines of the transmitter loop around the wires of the coil and turn back close to the coil, so farther away fewer and fewer lines pass through the receiver and the flux decreases. At $20\\,\\text{mm}$ the voltage grew as the radius of the transmitter coil grew up to about $35\\,\\text{mm}$ and then fell slightly: at radius $10\\,\\text{mm}$ $0.285\\,\\text{V}$, at $20\\,\\text{mm}$ $0.869\\,\\text{V}$, at $30\\,\\text{mm}$ $1.21\\,\\text{V}$, at $35\\,\\text{mm}$ $1.25\\,\\text{V}$ and at $40\\,\\text{mm}$ $1.23\\,\\text{V}$. The field lines of a large coil reach farther, but the field of a very large coil is weaker at its centre, so at each distance there is a best size of coil. Wireless charging therefore works well only when the gap between the coils is small compared with the size of the coils. The values are calculated by the model.",
+      "criteria": [
+        "I said that the voltage fell steeply as the distance grew, and I used values from the table.",
+        "I explained that fewer and fewer field lines, and so less and less flux, pass through the receiver.",
+        "I said that at 20 millimetres the voltage grew as the radius of the transmitter coil grew up to about 35 millimetres and then fell slightly.",
+        "I stated that the gap between the coils must be small compared with the size of the coils."
+      ]
+    },
+    {
+      "id": "mittaus-lataus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Measurement: cable or pad",
+      "text": "A journalist charged the same phone from empty to full several times and used an energy meter to measure how much energy the charger took from the wall socket.\n\n| Way of charging | Energy from the socket |\n| --- | --- |\n| cable charger | $14.26\\,\\text{Wh}$ |\n| charging pad, phone in place (mean) | $21.01\\,\\text{Wh}$ |\n| charging stand (mean) | $19.8\\,\\text{Wh}$ |\n| charging pad, coils slightly offset | $25.62\\,\\text{Wh}$ |\n\nThe same amount of energy is stored in the battery in every charge, so the difference tells how much more energy was changed into internal energy in the charger and the phone.",
+      "source": "measured",
+      "source_note": "Eric Ravenscraft, OneZero (Medium), 2020: a Google Pixel 4 was charged from empty to full with a cable charger, a Yootech charging pad and Google's Pixel Stand; the energy taken by the charger was measured with an energy meter connected to the wall socket.",
+      "question": {
+        "type": "numeric",
+        "prompt": "By what percentage more energy did the charging pad take from the wall socket than the cable charger when the phone was in place?",
+        "answer": 47.3352,
+        "unit": "%",
+        "tolerance": 0.02,
+        "hints": [
+          "Compare the energies in the rows cable charger and charging pad, phone in place.",
+          "The increase as a percentage is the difference divided by the energy of the cable charger and multiplied by one hundred.",
+          "$(21.01\\,\\text{Wh} - 14.26\\,\\text{Wh}) : 14.26\\,\\text{Wh}$."
+        ],
+        "mistakes": [
+          {
+            "value": 6.75,
+            "feedback": "This is the difference in watt-hours. What is asked is by what percentage more: divide the difference by the energy of the cable charger, $14.26\\,\\text{Wh}$."
+          },
+          {
+            "value": 147.3352,
+            "feedback": "This is the energy of the pad as a percentage of the energy of the cable charger. The increase is $100\\,\\%$ smaller than this."
+          },
+          {
+            "value": 32.1276,
+            "feedback": "You divided the difference by the energy of the pad. When the question is how much more than the cable charger, the reference is the energy of the cable charger, $14.26\\,\\text{Wh}$."
+          }
+        ],
+        "solution": "**Given:** from the table, the energy of the cable charger $E_1 = 14.26\\,\\text{Wh}$ and the energy of the charging pad $E_2 = 21.01\\,\\text{Wh}$ when the phone was in place\n\n**Find:** by what percentage more energy the pad took than the cable charger\n\n**Principle:** The same energy was stored in the battery in both charges, so the extra energy changed into internal energy in the coils and electronics of the charger and the phone. The increase is compared with the energy of the cable charger, because the question asks how much more than the cable charger.\n\n**Formula:** increase $= \\dfrac{E_2 - E_1}{E_1} \\cdot 100\\,\\%$\n\n**Conversions:** Not needed: the energies are in the same unit, and the unit cancels.\n\n**Substitution:** increase $= \\dfrac{21.01\\,\\text{Wh} - 14.26\\,\\text{Wh}}{14.26\\,\\text{Wh}} \\cdot 100\\,\\% = \\dfrac{6.75\\,\\text{Wh}}{14.26\\,\\text{Wh}} \\cdot 100\\,\\% = 47.34\\,\\%$\n\n**Answer:** about $47.3\\,\\%$ more, to three significant figures like the difference $6.75\\,\\text{Wh}$.\n\n**Reasonableness:** $21\\,\\text{Wh}$ is about one and a half times $14\\,\\text{Wh}$, so the increase must be nearly $50\\,\\%$. When the coils were offset, the charge took $25.62\\,\\text{Wh}$, that is nearly $80\\,\\%$ more, which fits the fact that less flux then passed through the receiver."
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the values of the model, the measurement and the theory. Then return to the opening question: what phenomenon is behind each device, and why must the phone be kept right on top of the charger, the pan be made of steel and the light in the fibre be amplified on the way?",
+      "predictions": [
+        "ennuste-etaisyys",
+        "ennuste-kela",
+        "ennuste-kattila",
+        "ennuste-kuitu"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student writes: \"An attenuation of $10\\,\\text{dB}$ reduces the power to a tenth. When the attenuation doubles to $20\\,\\text{dB}$, a twentieth of the power is left, that is $5\\,\\%$.\" Where is the error?",
+      "choices": [
+        {
+          "text": "Every $10\\,\\text{dB}$ divides the power by ten, so $20\\,\\text{dB}$ leaves a hundredth, that is $1\\,\\%$.",
+          "correct": true,
+          "feedback": "Correct. Decibels are added, but the ratios of powers are multiplied: two successive $10\\,\\text{dB}$ parts first reduce the power to a tenth and then to a tenth of that. $P : P_0 = 10^{-2} = 0.01$."
+        },
+        {
+          "text": "The first sentence is wrong: $10\\,\\text{dB}$ halves the power.",
+          "feedback": "The first sentence is correct: $10\\,\\text{dB}$ reduces the power to a tenth, because $10^{-1} = 0.1$. It is about $3\\,\\text{dB}$ that halves the power. The error is in the second sentence: $20\\,\\text{dB}$ leaves a hundredth of the power, that is $1\\,\\%$."
+        },
+        {
+          "text": "The reasoning is correct, because the attenuation is directly proportional to the power that is lost.",
+          "feedback": "The attenuation in decibels is proportional to the length of the fibre, not to the power that is lost. Every $10\\,\\text{dB}$ divides the remaining power by ten, so after $20\\,\\text{dB}$ $1\\,\\%$ is left, not $5\\,\\%$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: how strong a field in the phone",
+      "prompt": "The receiver coil of a phone has $12$ turns, and the area of one turn is $11\\,\\text{cm}^2$. The frequency of the charger is $140\\,\\text{kHz}$, and the phone needs a voltage with a peak value of $9.0\\,\\text{V}$. Assume that at the coil the magnetic field is uniform and perpendicular to the plane of the coil and that the magnetic flux density varies sinusoidally. How large must the peak value $B_0$ of the magnetic flux density be? Give the answer in millitesla.",
+      "answer": 0.7751,
+      "unit": "mT",
+      "tolerance": 0.02,
+      "hints": [
+        "Which formula gives the peak value of an alternating voltage when the flux varies sinusoidally? And what is the flux in a uniform field?",
+        "$e_0 = N \\cdot 2\\pi f \\cdot \\Phi_0$ and $\\Phi_0 = B_0 A$, so $B_0 = e_0 : (N A \\cdot 2\\pi f)$.",
+        "Convert $11\\,\\text{cm}^2 = 11 \\cdot (0.01\\,\\text{m})^2$ and $140\\,\\text{kHz} = 140 \\cdot 1000\\,\\text{Hz}$."
+      ],
+      "mistakes": [
+        {
+          "value": 9.3013,
+          "feedback": "You forgot the number of turns. The same voltage is induced in each of the $12$ turns, and they add up, so divide also by $N = 12$."
+        },
+        {
+          "value": 4.8701,
+          "feedback": "You forgot the factor $2\\pi$. The peak value of the rate of change of a sinusoidal flux is $2\\pi f \\cdot \\Phi_0$, as in the voltage of a generator, $e_0 = NBA \\cdot 2\\pi f$."
+        },
+        {
+          "value": 7.8e-05,
+          "feedback": "You substituted the area in square centimetres. Convert first $11\\,\\text{cm}^2 = 11 \\cdot (0.01\\,\\text{m})^2 = 1.1 \\cdot 10^{-3}\\,\\text{m}^2$."
+        }
+      ],
+      "solution": "**Given:** number of turns $N = 12$, area of one turn $A = 11\\,\\text{cm}^2$, frequency $f = 140\\,\\text{kHz}$, peak voltage $e_0 = 9.0\\,\\text{V}$\n\n**Find:** the peak value $B_0$ of the magnetic flux density in millitesla\n\n**Principle:** The flux through the receiver coil varies sinusoidally, so a sinusoidal voltage is induced in the coil, and its peak value is found as in a generator (chapter *The generator and alternating current*). The field is assumed to be uniform and perpendicular to the plane of the coil, so the flux through one turn is $\\Phi_0 = B_0 A$ (chapter *Electromagnetic induction*).\n\n**Formula:** $e_0 = N \\cdot 2\\pi f \\cdot \\Phi_0 = N \\cdot 2\\pi f \\cdot B_0 A$, so $B_0 = \\dfrac{e_0}{N A \\cdot 2\\pi f}$\n\n**Conversions:** $A = 11\\,\\text{cm}^2 = 11 \\cdot (0.01\\,\\text{m})^2 = 1.1 \\cdot 10^{-3}\\,\\text{m}^2$ and $f = 140\\,\\text{kHz} = 140 \\cdot 1000\\,\\text{Hz} = 1.40 \\cdot 10^{5}\\,\\text{Hz}$. Finally $1\\,\\text{T} = 1000\\,\\text{mT}$.\n\n**Substitution:** $B_0 = 9.0\\,\\text{V} : (12 \\cdot 1.1 \\cdot 10^{-3}\\,\\text{m}^2 \\cdot 2\\pi \\cdot 1.40 \\cdot 10^{5}\\,\\text{Hz}) = 7.751 \\cdot 10^{-4}\\,\\text{T} = 0.7751\\,\\text{mT}$\n\n**Answer:** $0.78\\,\\text{mT}$, two significant figures like the voltage $9.0\\,\\text{V}$ and the area $11\\,\\text{cm}^2$.\n\n**Reasonableness:** Units: $\\tfrac{\\text{V}}{\\text{m}^2 \\cdot \\text{Hz}} = \\tfrac{\\text{V}\\cdot\\text{s}}{\\text{m}^2} = \\text{T}$. The field is about $15$ times as strong as the Earth's magnetic field, $52\\,\\mu\\text{T}$, but much weaker than that of a fridge magnet. A small field is enough because the high frequency makes the flux change quickly."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. In level 1 tasks one formula is used, in level 2 tasks two steps or a conversion are combined, and level 3 combines ideas from different chapters of the course in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: the pan on an induction hob",
+      "prompt": "Why does an ordinary induction hob heat a steel pan well but an aluminium pan poorly, although both conduct electricity?",
+      "choices": [
+        {
+          "text": "Ferromagnetic steel gathers the flux, and the eddy currents flow in a thin layer with a large resistance.",
+          "correct": true,
+          "feedback": "Correct. In steel the path of the eddy currents is thin and has a large resistance, so with the same current in the coil a lot of electrical energy is changed into internal energy. Aluminium is not ferromagnetic and conducts extremely well, so the currents spread out and the base warms up only a little."
+        },
+        {
+          "text": "Aluminium is such a good conductor that no eddy currents can be induced in it at all, even though the flux changes.",
+          "feedback": "Eddy currents are induced in aluminium, as in eddy-current brakes. In a good conductor the resistance is small, however, so with the same current in the coil the currents change little electrical energy into internal energy. In steel, ferromagnetism and a larger resistance make the heating efficient."
+        },
+        {
+          "text": "A magnet pulls the steel pan against the glass, and the close contact transfers heat from the glass to the pan.",
+          "feedback": "The heat does not come from the glass: glass does not conduct electricity, and no currents are produced in it. The steel pan gets hot because the changing flux induces eddy currents in its base, and the ferromagnetism and large resistance of steel make them effective."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: the fibre to a house",
+      "prompt": "The fibre link from the exchange to a house is $30\\,\\text{km}$ long, and the attenuation coefficient of the fibre is $0.20\\,\\text{dB/km}$. What percentage of the transmitted power reaches the house? Ignore the attenuation of the splices.",
+      "answer": 25.1189,
+      "unit": "%",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate the attenuation of the whole fibre in decibels.",
+        "$A = aL$, and the ratio of the powers is $P : P_0 = 10^{-A/(10\\,\\text{dB})}$.",
+        "$A = 6.0\\,\\text{dB}$, so $P : P_0 = 10^{-0.60}$."
+      ],
+      "mistakes": [
+        {
+          "value": 40,
+          "feedback": "You subtracted the decibels directly from the percentage. The decibel scale is logarithmic: $6\\,\\text{dB}$ leaves $10^{-0.6} \\approx 25\\,\\%$ of the power."
+        },
+        {
+          "value": 74.8811,
+          "feedback": "This is the share that was lost. What is asked is the share $P : P_0$ that reaches the house."
+        }
+      ],
+      "practice": "Practise calculating attenuation in the level 1 and 2 tasks.",
+      "solution": "**Given:** length of the fibre $L = 30\\,\\text{km}$, attenuation coefficient $a = 0.20\\,\\text{dB/km}$\n\n**Find:** the share $P : P_0$ of the power that reaches the house, as a percentage\n\n**Principle:** The fibre is uniform along its whole length, so the attenuation is $A = aL$. The ratio of the powers is solved from the definition of attenuation $A = 10\\,\\text{dB} \\cdot \\lg (P_0 : P)$.\n\n**Formula:** $A = aL$ and $\\lg \\dfrac{P_0}{P} = \\dfrac{A}{10\\,\\text{dB}}$, so $\\dfrac{P}{P_0} = 10^{-\\frac{aL}{10\\,\\text{dB}}}$\n\n**Conversions:** Not needed: the kilometres cancel in the product $aL$. Finally the ratio is multiplied by one hundred to give a percentage.\n\n**Substitution:** $A = 0.20\\,\\tfrac{\\text{dB}}{\\text{km}} \\cdot 30\\,\\text{km} = 6.0\\,\\text{dB}$, so $\\dfrac{P}{P_0} = 10^{-0.60} = 0.2512 = 25.12\\,\\%$\n\n**Answer:** about $25\\,\\%$, two significant figures like the attenuation coefficient $0.20\\,\\text{dB/km}$.\n\n**Reasonableness:** About $3\\,\\text{dB}$ halves the power, so $6\\,\\text{dB}$ halves it twice, and about a quarter, that is $25\\,\\%$, is left, as in the result."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: the wireless charger",
+      "prompt": "Explain how a wireless charger transfers energy to a phone although there is no wire between them. Also explain why charging weakens when the phone is lifted off the pad.",
+      "model": "An alternating current flows in the transmitter coil of the charger and produces a changing magnetic field. Part of the flux of the field passes through the receiver coil of the phone. Because the flux changes all the time, an alternating voltage is induced in the receiver coil according to the law of induction, and the phone uses it to charge its battery. The device is like a transformer without an iron core. The field lines of the transmitter coil loop around its wires and turn back close to the coil. When the phone is lifted, a smaller and smaller part of the flux passes through the receiver, so the voltage falls steeply. Then part of the energy changes only into internal energy of the coils, and charging weakens or stops.",
+      "criteria": [
+        "I said that the alternating current in the transmitter coil produces a changing magnetic field and flux.",
+        "I explained that the changing flux through the receiver coil induces a voltage in it.",
+        "I explained that as the distance grows a smaller and smaller part of the flux passes through the receiver.",
+        "I said that the voltage and the transferred power therefore fall steeply."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and open the answer only after that."
+    }
+  ]
+}

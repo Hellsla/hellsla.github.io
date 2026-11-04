@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy7-12-L1-01",
+      "level": 1,
+      "text": "A lamp at the bottom of a swimming pool sends light towards the water surface. The refractive index of water is $1.33$ and that of air $1.00$. What is the critical angle at the boundary between water and air?",
+      "answer": 48.7535,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L1-02",
+      "level": 1,
+      "text": "The refractive index of diamond is $2.42$. What is the critical angle at the boundary between diamond and air?",
+      "answer": 24.4075,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L1-03",
+      "level": 1,
+      "text": "The glass wall of an aquarium has a refractive index of $1.52$, and against its inner surface there is water with a refractive index of $1.33$. What is the critical angle when light goes from the glass into the water?",
+      "answer": 61.045,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L1-04",
+      "level": 1,
+      "text": "The refractive index of the glass of an optical fibre is $1.47$. What is the speed of light in the glass of the fibre? The speed of light in a vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give the answer in kilometres per second.",
+      "answer": 204081.6327,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L1-05",
+      "level": 1,
+      "text": "A light pulse travels in an optical fibre at the speed $2.0 \\cdot 10^8\\,\\text{m/s}$. How long does it take the pulse to travel along a fibre $100\\,\\text{km}$ long? Give the answer in milliseconds.",
+      "answer": 0.5,
+      "unit": "ms",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-12-L2-01",
+      "level": 2,
+      "text": "The refractive index of the core of an optical fibre is $1.47$, and the critical angle at the boundary between the core and the cladding is $82.0^\\circ$. What is the refractive index of the cladding?",
+      "answer": 1.4557,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L2-02",
+      "level": 2,
+      "text": "In binoculars light is turned by a glass prism whose cross-section is a right-angled isosceles triangle. The light enters the prism through the long side face and meets the short side face (the leg face) inside the prism at an angle of incidence of $45^\\circ$, and it must be totally internally reflected from it. There is air outside the prism. What is the smallest refractive index the glass of the prism can have?",
+      "answer": 1.4142,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L2-03",
+      "level": 2,
+      "text": "The critical angle at the boundary between a transparent plastic rod and air was measured to be $42.0^\\circ$. What is the speed of light in the plastic? The speed of light in a vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give the answer in kilometres per second.",
+      "answer": 200739.1819,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L2-04",
+      "level": 2,
+      "text": "An optical fibre between two cities is $250\\,\\text{km}$ long, and the refractive index of the glass of the fibre is $1.46$. How long does it take a light pulse travelling along the axis of the fibre to travel from one city to the other? The speed of light in a vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give the answer in milliseconds.",
+      "answer": 1.2167,
+      "unit": "ms",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-12-L3-01",
+      "level": 3,
+      "text": "A small lamp is at the bottom of a swimming pool at a depth of $1.80\\,\\text{m}$. The refractive index of water is $1.33$. Seen from above the pool in the dark, light from the lamp comes out of the water surface only from a circular area whose centre is directly above the lamp. Outside the circle the surface looks dark. What is the radius of the circle?",
+      "answer": 2.0528,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L3-02",
+      "level": 3,
+      "text": "The refractive index of the core of an optical fibre is $1.480$ and that of the cladding $1.460$. A short light pulse is sent into the fibre. Some of the light travels along the axis of the fibre, and some travels in a zigzag so that it meets the boundary between the core and the cladding exactly at the critical angle. How much later does the zigzagging light arrive at the end of a straight fibre $1.00\\,\\text{km}$ long than the light along the axis? The speed of light in a vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give the answer in nanoseconds.",
+      "answer": 67.5799,
+      "unit": "ns",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-12-L3-03",
+      "level": 3,
+      "text": "A ray of light travelling in a bare glass rod ($n = 1.50$) meets the side of the rod at an angle of incidence of $60^\\circ$. Against air the ray is totally internally reflected. However, a water drop ($n = 1.33$) sticks to the side of the rod exactly where the ray meets it. At what angle to the normal does the ray continue in the water drop?",
+      "answer": 77.6128,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ]
+}

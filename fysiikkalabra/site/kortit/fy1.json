@@ -1,0 +1,666 @@
+{
+ "moduuli": "FY1",
+ "nimi": "Fysiikka luonnontieteenä",
+ "aiheet": [
+  {
+   "id": "fy1-tutkimusmenetelma",
+   "nimi": "Fysiikka ja tutkimusmenetelmä"
+  },
+  {
+   "id": "fy1-mittaaminen",
+   "nimi": "Mittaaminen ja virheet"
+  },
+  {
+   "id": "fy1-si-jarjestelma",
+   "nimi": "SI-järjestelmä ja suuruusluokat"
+  },
+  {
+   "id": "fy1-perusrakenteet",
+   "nimi": "Maailmankaikkeuden perusrakenteet"
+  },
+  {
+   "id": "fy1-avaruus",
+   "nimi": "Avaruus ja maailmankaikkeuden kehitys"
+  },
+  {
+   "id": "fy1-mallintaminen",
+   "nimi": "Mallintaminen ja kuvaajat"
+  },
+  {
+   "id": "fy1-tiheys-ja-liike",
+   "nimi": "Tiheys ja liikeilmiöt"
+  },
+  {
+   "id": "fy1-kokeellinen-tutkimus",
+   "nimi": "Kokeellinen tutkimus"
+  },
+  {
+   "id": "fy1-tiedonhankinta",
+   "nimi": "Tiedonhankinta"
+  }
+ ],
+ "kortit": [
+  {
+   "id": "fy1-fysiikka",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Fysiikka",
+   "maaritelma": "Kokeellinen luonnontiede, joka tutkii luonnon perusilmiöitä, rakenteita ja niitä kuvaavia lainalaisuuksia."
+  },
+  {
+   "id": "fy1-empiirinen-tiede",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Empiirinen tiede",
+   "maaritelma": "Tieto perustuu havaintoihin, mittauksiin ja kokeisiin."
+  },
+  {
+   "id": "fy1-luonnontieteellinen-menetelma",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Luonnontieteellinen menetelmä",
+   "maaritelma": "Havaintoja, oletuksia, kokeita ja malleja yhdistävä tapa rakentaa luotettavaa tietoa."
+  },
+  {
+   "id": "fy1-hypoteesi",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Hypoteesi",
+   "maaritelma": "Perusteltu oletus, jota voidaan testata kokeellisesti."
+  },
+  {
+   "id": "fy1-fysiikan-teoria",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Fysiikan teoria",
+   "maaritelma": "Laaja selityskokonaisuus, joka yhdistää havaintoja ja mahdollistaa uusien ilmiöiden ennustamisen."
+  },
+  {
+   "id": "fy1-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Malli",
+   "maaritelma": "Yksinkertaistettu kuvaus todellisuudesta, jolla selitetään ilmiöitä tai tehdään ennusteita."
+  },
+  {
+   "id": "fy1-patevyysalue",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Pätevyysalue",
+   "maaritelma": "Olosuhteet ja rajat, joissa mallia voidaan käyttää luotettavasti."
+  },
+  {
+   "id": "fy1-suure",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Suure",
+   "maaritelma": "Mitattava ominaisuus, kuten pituus, massa tai aika."
+  },
+  {
+   "id": "fy1-yksikko",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Yksikkö",
+   "maaritelma": "Sovittu vertailuarvo, jonka avulla mitattu ominaisuus ilmaistaan."
+  },
+  {
+   "id": "fy1-mittaustulos",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Mittaustulos",
+   "maaritelma": "Lukuarvon ja mittayksikön muodostama suureen arvo."
+  },
+  {
+   "id": "fy1-mittausvirhe",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Mittausvirhe",
+   "maaritelma": "Mitatun arvon poikkeama suureen todellisesta arvosta."
+  },
+  {
+   "id": "fy1-satunnaisvirhe",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Satunnaisvirhe",
+   "maaritelma": "Vaihteleva poikkeama, jonka vaikutusta voidaan pienentää toistamalla mittaus ja laskemalla keskiarvo."
+  },
+  {
+   "id": "fy1-systemaattinen-virhe",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Systemaattinen virhe",
+   "maaritelma": "Samaan suuntaan vaikuttava poikkeama, jonka syynä voi olla viallinen laite tai menetelmä."
+  },
+  {
+   "id": "fy1-karkea-virhe",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Karkea virhe",
+   "maaritelma": "Selvä poikkeama, joka syntyy esimerkiksi lukuvirheestä, väärästä kirjauksesta tai laitteen virheellisestä käytöstä."
+  },
+  {
+   "id": "fy1-merkitsevat-numerot",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Merkitsevät numerot",
+   "maaritelma": "Luvun numerot, jotka kuvaavat mittaustuloksen käytettävissä olevaa tarkkuutta."
+  },
+  {
+   "id": "fy1-mittalaitteen-tarkkuus",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Mittalaitteen tarkkuus",
+   "maaritelma": "Kertoo, kuinka pieniä muutoksia mittavälineellä voidaan luotettavasti havaita."
+  },
+  {
+   "id": "fy1-si-jarjestelma",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "SI-järjestelmä",
+   "maaritelma": "Kansainvälisesti sovittu mittayksikkökokonaisuus, jonka seitsemästä perusyksiköstä muut yksiköt muodostetaan."
+  },
+  {
+   "id": "fy1-perussuure",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Perussuure",
+   "maaritelma": "Yksi seitsemästä perustaksi valitusta mitattavasta ominaisuudesta, kuten pituus, massa tai aika."
+  },
+  {
+   "id": "fy1-perusyksikko",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Perusyksikkö",
+   "maaritelma": "Perustaksi valitulle suureelle sovittu yksikkö, kuten metri, kilogramma tai sekunti."
+  },
+  {
+   "id": "fy1-johdannaisyksikko",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Johdannaisyksikkö",
+   "maaritelma": "Perusyksiköistä muodostettu yhdistelmä, kuten nopeuden m/s tai voiman N."
+  },
+  {
+   "id": "fy1-kerrannaisyksikko",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Kerrannaisyksikkö",
+   "maaritelma": "Etuliitteen avulla muodostettu käytännöllinen yksikkö hyvin suurille tai pienille arvoille."
+  },
+  {
+   "id": "fy1-etuliite",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Etuliite",
+   "maaritelma": "Yksikön edessä oleva merkintä kertoo kymmenpotenssikertoimen, kuten kilo $10^{3}$ tai milli $10^{-3}$."
+  },
+  {
+   "id": "fy1-kymmenpotenssi",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Kymmenpotenssi",
+   "maaritelma": "Muoto $10^{n}$ helpottaa erittäin suurten ja pienten lukujen kirjoittamista ja vertailua."
+  },
+  {
+   "id": "fy1-suuruusluokka",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Suuruusluokka",
+   "maaritelma": "Kohteen kokoa kuvataan sopivan kymmenen potenssin avulla."
+  },
+  {
+   "id": "fy1-alkeishiukkanen",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Alkeishiukkanen",
+   "maaritelma": "Aineen pienimpiä tunnettuja rakenneosia, joihin kuuluvat kvarkit ja leptonit."
+  },
+  {
+   "id": "fy1-kvarkki",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Kvarkki",
+   "maaritelma": "Protonien ja neutronien rakenneosa, joita näkyvässä aineessa ovat erityisesti ylös- ja alas-kvarkit."
+  },
+  {
+   "id": "fy1-leptoni",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Leptoni",
+   "maaritelma": "Perushiukkasten ryhmä, johon esimerkiksi elektroni kuuluu."
+  },
+  {
+   "id": "fy1-protoni",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Protoni",
+   "maaritelma": "Positiivisesti varautunut atomin ytimen rakenneosa, joka koostuu kvarkeista."
+  },
+  {
+   "id": "fy1-neutroni",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Neutroni",
+   "maaritelma": "Sähköisesti neutraali atomin ytimen rakenneosa, joka koostuu kvarkeista."
+  },
+  {
+   "id": "fy1-atomiydin",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Atomiydin",
+   "maaritelma": "Tiivis keskiosa, jossa protonit ja neutronit sijaitsevat."
+  },
+  {
+   "id": "fy1-atomi",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Atomi",
+   "maaritelma": "Ytimen ja sitä ympäröivien elektronien muodostama aineen rakenneosa."
+  },
+  {
+   "id": "fy1-molekyyli",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Molekyyli",
+   "maaritelma": "Kahden tai useamman atomin muodostama sitoutunut kokonaisuus."
+  },
+  {
+   "id": "fy1-aurinkokunta",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Aurinkokunta",
+   "maaritelma": "Tähti ja sitä kiertävät planeetat, pienkappaleet sekä muu aine."
+  },
+  {
+   "id": "fy1-galaksi",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Galaksi",
+   "maaritelma": "Valtava tähtien, kaasun, pölyn ja muun aineen gravitaation sitoma järjestelmä."
+  },
+  {
+   "id": "fy1-galaksijoukko",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Galaksijoukko",
+   "maaritelma": "Useiden galaksien gravitaation sitoma suuri rakenne."
+  },
+  {
+   "id": "fy1-alkurajahdys",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "Alkuräjähdys",
+   "maaritelma": "Malli, jonka mukaan aika ja avaruus kehittyivät hyvin kuumasta ja tiheästä alkutilasta."
+  },
+  {
+   "id": "fy1-maailmankaikkeuden-laajeneminen",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "Maailmankaikkeuden laajeneminen",
+   "maaritelma": "Galaksien keskimääräiset etäisyydet kasvavat ajan kuluessa."
+  },
+  {
+   "id": "fy1-punasiirtyma",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "Punasiirtymä",
+   "maaritelma": "Kaukaisen kohteen spektriviivat siirtyvät pidemmille aallonpituuksille, mikä kertoo sen etääntymisestä."
+  },
+  {
+   "id": "fy1-eksoplaneetta",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "Eksoplaneetta",
+   "maaritelma": "Aurinkokunnan ulkopuolella toista tähteä kiertävä planeetta."
+  },
+  {
+   "id": "fy1-punainen-jattilainen",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "Punainen jättiläinen",
+   "maaritelma": "Kehitysvaihe, jossa tähti laajenee vedyn vähetessä ja raskaampien ytimien fuusioiden alkaessa."
+  },
+  {
+   "id": "fy1-valkoinen-kaapio",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "Valkoinen kääpiö",
+   "maaritelma": "Keskikokoisen tähden jäljelle jäänyt tiivis ja kuuma ydin, joka vähitellen jäähtyy."
+  },
+  {
+   "id": "fy1-neutronitahti",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-avaruus",
+   "kasite": "Neutronitähti",
+   "maaritelma": "Raskaan tähden luhistumisessa syntyvä erittäin tiheä jäännös, joka koostuu pääosin neutroneista."
+  },
+  {
+   "id": "fy1-musta-aukko",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-avaruus",
+   "kasite": "Musta aukko",
+   "maaritelma": "Erittäin tiheä massakeskittymä, jonka gravitaatio on niin voimakas, ettei valokaan pääse pois."
+  },
+  {
+   "id": "fy1-fysikaalinen-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Fysikaalinen malli",
+   "maaritelma": "Mittauksiin perustuva yksinkertaistus, joka kuvaa luonnon ilmiötä tai rakennetta."
+  },
+  {
+   "id": "fy1-graafinen-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Graafinen malli",
+   "maaritelma": "Suureiden välinen riippuvuus esitetään koordinaatiston kuvaajana."
+  },
+  {
+   "id": "fy1-matemaattinen-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Matemaattinen malli",
+   "maaritelma": "Suureiden välinen riippuvuus esitetään yhtälön avulla."
+  },
+  {
+   "id": "fy1-kvantitatiivinen-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Kvantitatiivinen malli",
+   "maaritelma": "Lukuarvoihin perustuva kuvaus, jonka avulla voidaan tehdä numeerisia ennusteita."
+  },
+  {
+   "id": "fy1-lineaarinen-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Lineaarinen malli",
+   "maaritelma": "Tasaista muutosta kuvaava suora, jonka kulmakerroin pysyy vakiona."
+  },
+  {
+   "id": "fy1-suoran-sovite",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Suoran sovite",
+   "maaritelma": "Mittauspisteisiin asetettu suora, joka kuvaa aineiston yleistä riippuvuutta."
+  },
+  {
+   "id": "fy1-kulmakerroin",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Kulmakerroin",
+   "maaritelma": "Pystyakselin suureen muutos jaetaan vaaka-akselin suureen muutoksella."
+  },
+  {
+   "id": "fy1-fysikaalinen-kulmakerroin",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Fysikaalinen kulmakerroin",
+   "maaritelma": "Kuvaajan kaltevuus tulkitaan suureeksi yksiköineen ja ilmiöön liittyvine merkityksineen."
+  },
+  {
+   "id": "fy1-interpolointi",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Interpolointi",
+   "maaritelma": "Mallia käytetään arvon arvioimiseen mitattujen pisteiden väliltä."
+  },
+  {
+   "id": "fy1-ekstrapolointi",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Ekstrapolointi",
+   "maaritelma": "Mallia jatketaan mittausalueen ulkopuolelle, jolloin ennuste on yleensä epävarmempi."
+  },
+  {
+   "id": "fy1-tiheys",
+   "moduuli": "FY1",
+   "luku": "fy1-7",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Tiheys",
+   "maaritelma": "Kertoo, kuinka suuri massa aineella on tilavuusyksikköä kohti.",
+   "kaava": "\\rho = \\dfrac{m}{V}",
+   "kaava_puhe": "rhoo on m jaettuna V:llä"
+  },
+  {
+   "id": "fy1-suoraan-verrannollisuus",
+   "moduuli": "FY1",
+   "luku": "fy1-5",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Suoraan verrannollisuus",
+   "maaritelma": "Toisen suureen kaksinkertaistuessa myös toinen kaksinkertaistuu, ja kuvaaja kulkee origon kautta."
+  },
+  {
+   "id": "fy1-paikka",
+   "moduuli": "FY1",
+   "luku": "fy1-5",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Paikka",
+   "maaritelma": "Kertoo kappaleen sijainnin valitussa koordinaatistossa tiettynä hetkenä."
+  },
+  {
+   "id": "fy1-tasainen-liike",
+   "moduuli": "FY1",
+   "luku": "fy1-5",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Tasainen liike",
+   "maaritelma": "Paikka muuttuu yhtä paljon yhtä pitkissä aikaväleissä."
+  },
+  {
+   "id": "fy1-nopeus",
+   "moduuli": "FY1",
+   "luku": "fy1-5",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Nopeus",
+   "maaritelma": "Kertoo paikan muutoksen aikayksikössä ja liikkeen suunnan."
+  },
+  {
+   "id": "fy1-keskinopeus",
+   "moduuli": "FY1",
+   "luku": "fy1-5",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Keskinopeus",
+   "maaritelma": "Koko siirtymä jaetaan siihen kuluneella ajalla."
+  },
+  {
+   "id": "fy1-kiihtyvyys",
+   "moduuli": "FY1",
+   "luku": "fy1-6",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Kiihtyvyys",
+   "maaritelma": "Kertoo nopeuden muutoksen aikayksikössä.",
+   "kaava": "a = \\dfrac{\\Delta v}{\\Delta t}",
+   "kaava_puhe": "a on delta v jaettuna delta t:llä"
+  },
+  {
+   "id": "fy1-vapaa-pudotus",
+   "moduuli": "FY1",
+   "luku": "fy1-6",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Vapaa pudotus",
+   "maaritelma": "Liike, jossa ilmanvastus sivuutetaan ja kappaleeseen vaikuttaa vain painovoima."
+  },
+  {
+   "id": "fy1-putoamiskiihtyvyys",
+   "moduuli": "FY1",
+   "luku": "fy1-6",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Putoamiskiihtyvyys",
+   "maaritelma": "Maan lähellä nopeus muuttuu noin $9{,}81\\,\\text{m/s}$ joka sekunti.",
+   "kaava": "g \\approx 9{,}81\\,\\text{m/s}^2",
+   "kaava_puhe": "g on noin 9,81 metriä sekunnissa toiseen"
+  },
+  {
+   "id": "fy1-tutkimuskysymys",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Tutkimuskysymys",
+   "maaritelma": "Täsmällinen kysymys, johon tutkimuksella pyritään vastaamaan."
+  },
+  {
+   "id": "fy1-koesuunnitelma",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Koesuunnitelma",
+   "maaritelma": "Etukäteen laadittu kuvaus mittauksista, välineistä ja tutkimuksen toteutuksesta."
+  },
+  {
+   "id": "fy1-mittaussarja",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Mittaussarja",
+   "maaritelma": "Samasta ilmiöstä järjestelmällisesti kerätty joukko mittaustuloksia."
+  },
+  {
+   "id": "fy1-toistettavuus",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Toistettavuus",
+   "maaritelma": "Hyvin kuvattu koe voidaan tehdä uudelleen ja saada samansuuntaisia tuloksia."
+  },
+  {
+   "id": "fy1-mittausaineisto",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Mittausaineisto",
+   "maaritelma": "Kokeessa kerätyt arvot, havainnot, kuvat tai videot, joita analysoidaan."
+  },
+  {
+   "id": "fy1-tulosten-analyysi",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Tulosten analyysi",
+   "maaritelma": "Aineistoa käsitellään laskuilla ja kuvaajilla riippuvuuksien löytämiseksi."
+  },
+  {
+   "id": "fy1-johtopaatos",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Johtopäätös",
+   "maaritelma": "Tuloksista tehty perusteltu vastaus tutkimuskysymykseen."
+  },
+  {
+   "id": "fy1-virhelahde",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Virhelähde",
+   "maaritelma": "Tekijä, joka voi aiheuttaa mittaustulokseen poikkeamaa tai epävarmuutta."
+  },
+  {
+   "id": "fy1-luotettavuus",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Luotettavuus",
+   "maaritelma": "Arvio siitä, kuinka hyvin menetelmä ja tulokset tukevat tehtyä päätelmää."
+  },
+  {
+   "id": "fy1-tutkimusraportti",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Tutkimusraportti",
+   "maaritelma": "Kirjallinen kuvaus tutkimuskysymyksestä, menetelmästä, tuloksista, johtopäätöksistä ja arvioinnista."
+  },
+  {
+   "id": "fy1-tiedonhankinta",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-tiedonhankinta",
+   "kasite": "Tiedonhankinta",
+   "maaritelma": "Luotettavan tiedon etsimistä esimerkiksi tutkimuksista, oppikirjoista, tietokannoista ja asiantuntijalähteistä."
+  },
+  {
+   "id": "fy1-tiedontuottaja",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-tiedonhankinta",
+   "kasite": "Tiedontuottaja",
+   "maaritelma": "Tahon tausta ja tarkoitus vaikuttavat siihen, miten sen julkaisemaa tietoa kannattaa arvioida."
+  },
+  {
+   "id": "fy1-lahdekritiikki",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-tiedonhankinta",
+   "kasite": "Lähdekritiikki",
+   "maaritelma": "Lähteen luotettavuutta arvioidaan tekijän, perustelujen, ajantasaisuuden ja muiden lähteiden avulla."
+  },
+  {
+   "id": "fy1-aineisto",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-tiedonhankinta",
+   "kasite": "Aineisto",
+   "maaritelma": "Tutkittava teksti, kuva, taulukko, kuvaaja tai muu tietolähde, josta tehdään päätelmiä."
+  },
+  {
+   "id": "fy1-objektiivisuus",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-tiedonhankinta",
+   "kasite": "Objektiivisuus",
+   "maaritelma": "Tavoite kuvata havaintoja riippumatta tutkijan henkilökohtaisista mielipiteistä."
+  }
+ ]
+}

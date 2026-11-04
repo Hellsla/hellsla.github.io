@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A ray of light hits a plane mirror at an angle of incidence of $25^\\circ$. What is the angle of reflection, and what is the angle between the incident and the reflected ray?",
+    "a": "The angle of reflection is $\\beta = \\alpha_1 = 25^\\circ$, and the angle between the rays is $25^\\circ + 25^\\circ = 50^\\circ$, because the normal is halfway between the rays."
+  },
+  {
+    "q": "Light travels in a material at the speed $2.25 \\cdot 10^{8}\\,\\text{m/s}$. What is the refractive index of the material, and what material could it be?",
+    "a": "$n = c : v = 3.00 \\cdot 10^{8}\\,\\text{m/s} : 2.25 \\cdot 10^{8}\\,\\text{m/s} = 1.33$, so the material can be water."
+  }
+]

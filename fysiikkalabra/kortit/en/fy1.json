@@ -1,0 +1,666 @@
+{
+ "moduuli": "FY1",
+ "nimi": "Physics as a natural science",
+ "aiheet": [
+  {
+   "id": "fy1-tutkimusmenetelma",
+   "nimi": "Physics and the scientific method"
+  },
+  {
+   "id": "fy1-mittaaminen",
+   "nimi": "Measurement and errors"
+  },
+  {
+   "id": "fy1-si-jarjestelma",
+   "nimi": "The SI system and orders of magnitude"
+  },
+  {
+   "id": "fy1-perusrakenteet",
+   "nimi": "The basic structures of the universe"
+  },
+  {
+   "id": "fy1-avaruus",
+   "nimi": "Space and the evolution of the universe"
+  },
+  {
+   "id": "fy1-mallintaminen",
+   "nimi": "Modelling and graphs"
+  },
+  {
+   "id": "fy1-tiheys-ja-liike",
+   "nimi": "Density and motion"
+  },
+  {
+   "id": "fy1-kokeellinen-tutkimus",
+   "nimi": "Experimental investigation"
+  },
+  {
+   "id": "fy1-tiedonhankinta",
+   "nimi": "Finding information"
+  }
+ ],
+ "kortit": [
+  {
+   "id": "fy1-fysiikka",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Physics",
+   "maaritelma": "An experimental natural science that studies the basic phenomena and structures of nature and the laws that describe them."
+  },
+  {
+   "id": "fy1-empiirinen-tiede",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Empirical science",
+   "maaritelma": "Knowledge is based on observations, measurements and experiments."
+  },
+  {
+   "id": "fy1-luonnontieteellinen-menetelma",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Scientific method",
+   "maaritelma": "A way of building reliable knowledge that combines observations, assumptions, experiments and models."
+  },
+  {
+   "id": "fy1-hypoteesi",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Hypothesis",
+   "maaritelma": "A justified assumption that can be tested by experiment."
+  },
+  {
+   "id": "fy1-fysiikan-teoria",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Physical theory",
+   "maaritelma": "A broad explanatory framework that links observations and makes it possible to predict new phenomena."
+  },
+  {
+   "id": "fy1-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Model",
+   "maaritelma": "A simplified description of reality used to explain phenomena or make predictions."
+  },
+  {
+   "id": "fy1-patevyysalue",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-tutkimusmenetelma",
+   "kasite": "Range of validity",
+   "maaritelma": "The conditions and limits within which a model can be used reliably."
+  },
+  {
+   "id": "fy1-suure",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Quantity",
+   "maaritelma": "A measurable property, such as length, mass or time."
+  },
+  {
+   "id": "fy1-yksikko",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Unit",
+   "maaritelma": "An agreed reference value in which a measured property is expressed."
+  },
+  {
+   "id": "fy1-mittaustulos",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Measurement result",
+   "maaritelma": "The value of a quantity, made up of a number and a unit."
+  },
+  {
+   "id": "fy1-mittausvirhe",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Measurement error",
+   "maaritelma": "The difference between a measured value and the true value of the quantity."
+  },
+  {
+   "id": "fy1-satunnaisvirhe",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Random error",
+   "maaritelma": "A varying deviation whose effect can be reduced by repeating the measurement and taking the mean."
+  },
+  {
+   "id": "fy1-systemaattinen-virhe",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Systematic error",
+   "maaritelma": "A deviation always in the same direction, caused for example by a faulty instrument or method."
+  },
+  {
+   "id": "fy1-karkea-virhe",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Gross error",
+   "maaritelma": "An obvious deviation caused for example by a misreading, a wrong entry or misuse of an instrument."
+  },
+  {
+   "id": "fy1-merkitsevat-numerot",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Significant figures",
+   "maaritelma": "The digits of a number that show the precision available in a measurement result."
+  },
+  {
+   "id": "fy1-mittalaitteen-tarkkuus",
+   "moduuli": "FY1",
+   "luku": "fy1-3",
+   "aihe": "fy1-mittaaminen",
+   "kasite": "Resolution of an instrument",
+   "maaritelma": "How small a change a measuring instrument can reliably detect."
+  },
+  {
+   "id": "fy1-si-jarjestelma",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "SI system",
+   "maaritelma": "The internationally agreed system of units, in which all other units are formed from seven base units."
+  },
+  {
+   "id": "fy1-perussuure",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Base quantity",
+   "maaritelma": "One of the seven measurable properties chosen as a basis, such as length, mass or time."
+  },
+  {
+   "id": "fy1-perusyksikko",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Base unit",
+   "maaritelma": "The unit agreed for a base quantity, such as the metre, the kilogram or the second."
+  },
+  {
+   "id": "fy1-johdannaisyksikko",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Derived unit",
+   "maaritelma": "A combination of base units, such as m/s for velocity or N for force."
+  },
+  {
+   "id": "fy1-kerrannaisyksikko",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Multiple of a unit",
+   "maaritelma": "A practical unit for very large or small values, formed with a prefix."
+  },
+  {
+   "id": "fy1-etuliite",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Prefix",
+   "maaritelma": "A symbol in front of a unit that gives a power of ten, such as kilo $10^{3}$ or milli $10^{-3}$."
+  },
+  {
+   "id": "fy1-kymmenpotenssi",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Power of ten",
+   "maaritelma": "The form $10^{n}$ makes very large and very small numbers easier to write and compare."
+  },
+  {
+   "id": "fy1-suuruusluokka",
+   "moduuli": "FY1",
+   "luku": "fy1-2",
+   "aihe": "fy1-si-jarjestelma",
+   "kasite": "Order of magnitude",
+   "maaritelma": "The size of an object described with a suitable power of ten."
+  },
+  {
+   "id": "fy1-alkeishiukkanen",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Elementary particle",
+   "maaritelma": "One of the smallest known building blocks of matter, such as quarks and leptons."
+  },
+  {
+   "id": "fy1-kvarkki",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Quark",
+   "maaritelma": "A building block of protons and neutrons; ordinary matter contains mainly up and down quarks."
+  },
+  {
+   "id": "fy1-leptoni",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Lepton",
+   "maaritelma": "A group of elementary particles to which the electron belongs."
+  },
+  {
+   "id": "fy1-protoni",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Proton",
+   "maaritelma": "A positively charged particle of the atomic nucleus, made of quarks."
+  },
+  {
+   "id": "fy1-neutroni",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Neutron",
+   "maaritelma": "An electrically neutral particle of the atomic nucleus, made of quarks."
+  },
+  {
+   "id": "fy1-atomiydin",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Atomic nucleus",
+   "maaritelma": "The dense centre of an atom where the protons and neutrons are."
+  },
+  {
+   "id": "fy1-atomi",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Atom",
+   "maaritelma": "A building block of matter made up of a nucleus and the electrons around it."
+  },
+  {
+   "id": "fy1-molekyyli",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Molecule",
+   "maaritelma": "A bound group of two or more atoms."
+  },
+  {
+   "id": "fy1-aurinkokunta",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Planetary system",
+   "maaritelma": "A star and the planets, small bodies and other matter that orbit it."
+  },
+  {
+   "id": "fy1-galaksi",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Galaxy",
+   "maaritelma": "A huge system of stars, gas, dust and other matter held together by gravity."
+  },
+  {
+   "id": "fy1-galaksijoukko",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-perusrakenteet",
+   "kasite": "Cluster of galaxies",
+   "maaritelma": "A large structure of many galaxies held together by gravity."
+  },
+  {
+   "id": "fy1-alkurajahdys",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "Big Bang",
+   "maaritelma": "The model in which time and space evolved from a very hot and dense initial state."
+  },
+  {
+   "id": "fy1-maailmankaikkeuden-laajeneminen",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "Expansion of the universe",
+   "maaritelma": "The average distances between galaxies grow with time."
+  },
+  {
+   "id": "fy1-punasiirtyma",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "Redshift",
+   "maaritelma": "The spectral lines of a distant object are shifted to longer wavelengths, which shows that it is receding."
+  },
+  {
+   "id": "fy1-eksoplaneetta",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "Exoplanet",
+   "maaritelma": "A planet that orbits another star outside the Solar System."
+  },
+  {
+   "id": "fy1-punainen-jattilainen",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "Red giant",
+   "maaritelma": "A stage in which a star expands as its hydrogen runs low and heavier nuclei begin to fuse."
+  },
+  {
+   "id": "fy1-valkoinen-kaapio",
+   "moduuli": "FY1",
+   "luku": null,
+   "aihe": "fy1-avaruus",
+   "kasite": "White dwarf",
+   "maaritelma": "The dense, hot core left by a medium-sized star, which slowly cools."
+  },
+  {
+   "id": "fy1-neutronitahti",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-avaruus",
+   "kasite": "Neutron star",
+   "maaritelma": "An extremely dense remnant of a collapsed massive star, made mostly of neutrons."
+  },
+  {
+   "id": "fy1-musta-aukko",
+   "moduuli": "FY1",
+   "luku": "fy1-1",
+   "aihe": "fy1-avaruus",
+   "kasite": "Black hole",
+   "maaritelma": "An extremely dense concentration of mass whose gravity is so strong that not even light can escape."
+  },
+  {
+   "id": "fy1-fysikaalinen-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Physical model",
+   "maaritelma": "A simplification based on measurements that describes a natural phenomenon or structure."
+  },
+  {
+   "id": "fy1-graafinen-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Graphical model",
+   "maaritelma": "The relationship between quantities shown as a graph in a coordinate system."
+  },
+  {
+   "id": "fy1-matemaattinen-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Mathematical model",
+   "maaritelma": "The relationship between quantities expressed as an equation."
+  },
+  {
+   "id": "fy1-kvantitatiivinen-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Quantitative model",
+   "maaritelma": "A description based on numerical values that allows numerical predictions."
+  },
+  {
+   "id": "fy1-lineaarinen-malli",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Linear model",
+   "maaritelma": "A straight line describing a steady change; its slope stays constant."
+  },
+  {
+   "id": "fy1-suoran-sovite",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Line of best fit",
+   "maaritelma": "A straight line fitted to the measured points that shows the general relationship in the data."
+  },
+  {
+   "id": "fy1-kulmakerroin",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Slope",
+   "maaritelma": "The change in the quantity on the vertical axis divided by the change in the quantity on the horizontal axis."
+  },
+  {
+   "id": "fy1-fysikaalinen-kulmakerroin",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Physical slope",
+   "maaritelma": "The steepness of a graph read as a quantity with its unit and its meaning in the phenomenon."
+  },
+  {
+   "id": "fy1-interpolointi",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Interpolation",
+   "maaritelma": "Using a model to estimate a value between the measured points."
+  },
+  {
+   "id": "fy1-ekstrapolointi",
+   "moduuli": "FY1",
+   "luku": "fy1-4",
+   "aihe": "fy1-mallintaminen",
+   "kasite": "Extrapolation",
+   "maaritelma": "Extending a model beyond the measured range; the prediction is usually less certain."
+  },
+  {
+   "id": "fy1-tiheys",
+   "moduuli": "FY1",
+   "luku": "fy1-7",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Density",
+   "maaritelma": "The mass of a substance per unit volume.",
+   "kaava": "\\rho = \\dfrac{m}{V}",
+   "kaava_puhe": "rho equals m divided by V"
+  },
+  {
+   "id": "fy1-suoraan-verrannollisuus",
+   "moduuli": "FY1",
+   "luku": "fy1-5",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Direct proportionality",
+   "maaritelma": "When one quantity doubles, so does the other, and the graph passes through the origin."
+  },
+  {
+   "id": "fy1-paikka",
+   "moduuli": "FY1",
+   "luku": "fy1-5",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Position",
+   "maaritelma": "Where an object is in a chosen coordinate system at a given instant."
+  },
+  {
+   "id": "fy1-tasainen-liike",
+   "moduuli": "FY1",
+   "luku": "fy1-5",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Uniform motion",
+   "maaritelma": "The position changes by equal amounts in equal time intervals."
+  },
+  {
+   "id": "fy1-nopeus",
+   "moduuli": "FY1",
+   "luku": "fy1-5",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Velocity",
+   "maaritelma": "The change in position per unit time, together with the direction of motion."
+  },
+  {
+   "id": "fy1-keskinopeus",
+   "moduuli": "FY1",
+   "luku": "fy1-5",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Average velocity",
+   "maaritelma": "The whole displacement divided by the time it took."
+  },
+  {
+   "id": "fy1-kiihtyvyys",
+   "moduuli": "FY1",
+   "luku": "fy1-6",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Acceleration",
+   "maaritelma": "The change in velocity per unit time.",
+   "kaava": "a = \\dfrac{\\Delta v}{\\Delta t}",
+   "kaava_puhe": "a equals delta v divided by delta t"
+  },
+  {
+   "id": "fy1-vapaa-pudotus",
+   "moduuli": "FY1",
+   "luku": "fy1-6",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Free fall",
+   "maaritelma": "Motion in which air resistance is neglected and only the weight acts on the object."
+  },
+  {
+   "id": "fy1-putoamiskiihtyvyys",
+   "moduuli": "FY1",
+   "luku": "fy1-6",
+   "aihe": "fy1-tiheys-ja-liike",
+   "kasite": "Acceleration of free fall",
+   "maaritelma": "Near the Earth the speed changes by about $9.81\\,\\text{m/s}$ every second.",
+   "kaava": "g \\approx 9.81\\,\\text{m/s}^2",
+   "kaava_puhe": "g is approximately 9.81 metres per second squared"
+  },
+  {
+   "id": "fy1-tutkimuskysymys",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Research question",
+   "maaritelma": "A precise question that an investigation aims to answer."
+  },
+  {
+   "id": "fy1-koesuunnitelma",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Experimental plan",
+   "maaritelma": "A description, written in advance, of the measurements, the equipment and how the investigation is carried out."
+  },
+  {
+   "id": "fy1-mittaussarja",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Series of measurements",
+   "maaritelma": "A set of measurement results collected systematically from the same phenomenon."
+  },
+  {
+   "id": "fy1-toistettavuus",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Repeatability",
+   "maaritelma": "A well-described experiment can be done again with similar results."
+  },
+  {
+   "id": "fy1-mittausaineisto",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Data",
+   "maaritelma": "The values, observations, pictures or videos collected in an experiment for analysis."
+  },
+  {
+   "id": "fy1-tulosten-analyysi",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Analysis of results",
+   "maaritelma": "Processing the data with calculations and graphs to find relationships."
+  },
+  {
+   "id": "fy1-johtopaatos",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Conclusion",
+   "maaritelma": "A justified answer to the research question drawn from the results."
+  },
+  {
+   "id": "fy1-virhelahde",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Source of error",
+   "maaritelma": "A factor that can cause a deviation or uncertainty in a measurement result."
+  },
+  {
+   "id": "fy1-luotettavuus",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Reliability",
+   "maaritelma": "An assessment of how well the method and the results support the conclusion."
+  },
+  {
+   "id": "fy1-tutkimusraportti",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-kokeellinen-tutkimus",
+   "kasite": "Report",
+   "maaritelma": "A written account of the research question, method, results, conclusions and evaluation."
+  },
+  {
+   "id": "fy1-tiedonhankinta",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-tiedonhankinta",
+   "kasite": "Finding information",
+   "maaritelma": "Searching for reliable information, for example in research, textbooks, databases and expert sources."
+  },
+  {
+   "id": "fy1-tiedontuottaja",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-tiedonhankinta",
+   "kasite": "Source of information",
+   "maaritelma": "The background and purpose of whoever publishes information affect how it should be assessed."
+  },
+  {
+   "id": "fy1-lahdekritiikki",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-tiedonhankinta",
+   "kasite": "Source criticism",
+   "maaritelma": "Assessing the reliability of a source by its author, reasoning, currency and other sources."
+  },
+  {
+   "id": "fy1-aineisto",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-tiedonhankinta",
+   "kasite": "Material",
+   "maaritelma": "A text, picture, table, graph or other source of information from which conclusions are drawn."
+  },
+  {
+   "id": "fy1-objektiivisuus",
+   "moduuli": "FY1",
+   "luku": "fy1-8",
+   "aihe": "fy1-tiedonhankinta",
+   "kasite": "Objectivity",
+   "maaritelma": "The aim of describing observations independently of the researcher's personal opinions."
+  }
+ ]
+}

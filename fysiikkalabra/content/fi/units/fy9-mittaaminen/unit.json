@@ -1,0 +1,14 @@
+{
+ "id": "fy9-mittaaminen",
+ "course": "FY9",
+ "chapter": 1,
+ "order": 2,
+ "title": "Mittaaminen, epävarmuus ja kuvaajat",
+ "description": "Kerrataan suureet ja yksiköt, mittausepävarmuus ja merkitsevät numerot sekä mittausaineiston kuvaaja, suoran sovitus, linearisointi ja kulmakertoimen tulkinta ylioppilaskokeen tehtävien tapaan.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}

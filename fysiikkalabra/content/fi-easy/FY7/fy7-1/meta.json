@@ -1,0 +1,46 @@
+{
+  "id": "fy7-1",
+  "course": "FY7",
+  "title": "Magneetit, magneettinen dipoli ja magneettikenttä",
+  "goals": [
+    "LOPS FY7: ferromagnetismi ja magneettinen dipoli",
+    "LOPS FY7: magneettinen vuorovaikutus ja magneettikenttä",
+    "Tarkennus: para- ja diamagneettiset aineet eivät kuulu keskeisiin sisältöihin",
+    "Tarkennus: Maan magneettikenttä ja kompassi"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "magneetti",
+    "magneettinen dipoli",
+    "ferromagnetismi",
+    "alkeisalue",
+    "magneettikenttä",
+    "kenttäviiva",
+    "magneettivuon tiheys"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "magneetti",
+      "explain": "Kappale, jolla on pohjois- ja etelänapa. Erinimiset navat vetävät toisiaan puoleensa ja samannimiset hylkivät."
+    },
+    {
+      "term": "magneettinen dipoli",
+      "explain": "Kappale, jolla on aina kaksi napaa. Jos magneetin katkaisee, kumpaankin osaan syntyy taas kaksi napaa."
+    },
+    {
+      "term": "magneettikenttä",
+      "explain": "Magneetin ympärillä oleva alue, jossa toinen magneetti tai kompassineula kokee voiman."
+    },
+    {
+      "term": "kenttäviiva",
+      "explain": "Viiva, joka näyttää kentän suunnan. Tiheät viivat tarkoittavat voimakasta kenttää."
+    },
+    {
+      "term": "magneettivuon tiheys",
+      "explain": "Suure, joka kertoo magneettikentän voimakkuuden ja suunnan. Sen yksikkö on tesla."
+    }
+  ]
+}

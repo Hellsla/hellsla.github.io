@@ -1,33 +1,47 @@
 /* The investigation bank of a course page (scripts/investigations.py bank, teacher 2026-10-31): a search field and
-   four selects narrow the list in place, without reloading. Without scripts the form stays hidden and every
+   its selects narrow the list in place (also the YO-sekoitin, scripts/mixer.py, which adds a random pick), without reloading. Without scripts the form stays hidden and every
    investigation shows; "Näytä kaikki" (the form's reset) shows them all again. The count is announced politely. */
 (function () {
   const form = document.getElementById('bank-filter');
   const list = document.getElementById('bank-list');
   if (!form || !list) return;
   const items = [...list.querySelectorAll('.bank-item')];
+  const labels = [...list.querySelectorAll('[data-topic-label]')];
   const count = document.getElementById('bank-count');
   const none = document.getElementById('bank-none');
   const norm = (s) => s.toLowerCase().normalize('NFC').trim();
+  // every select of the form filters on the item's data attribute of the same name (space-separated values)
+  const selects = [...form.querySelectorAll('select')];
+  const random = form.querySelector('[data-random]');
+  let picked = null;                       // "Arvo n tehtävää": a random set among the matching items, until the filters change
   function apply() {
     const q = norm(form.q.value);
-    const want = { topic: form.topic.value, f: form.f.value, e: form.e.value, mode: form.mode.value };
     let shown = 0;
     for (const li of items) {
       const ok = (!q || q.split(/\s+/).every((w) => li.dataset.words.includes(w)))
-        && (!want.topic || li.dataset.topic === want.topic)
-        && (!want.f || li.dataset.f.split(' ').includes(want.f))
-        && (!want.e || li.dataset.e.split(' ').includes(want.e))
-        && (!want.mode || li.dataset.mode.split(' ').includes(want.mode));
+        && selects.every((s) => !s.value || (li.dataset[s.name] || '').split(' ').includes(s.value))
+        && (!picked || picked.has(li));
       li.hidden = !ok; shown += ok;
+    }
+    // a bank in topic sections (FY10, scripts/cardgrid.py): each topic's label goes on its first card still shown
+    for (const lab of labels) {
+      const first = items.find((li) => !li.hidden && li.dataset.topic === lab.dataset.topicLabel);
+      if (first) first.prepend(lab); else lab.remove();
     }
     none.hidden = shown > 0;
     count.textContent = count.dataset.template.replace('{shown}', shown).replace('{total}', items.length);
   }
+  if (random) random.addEventListener('click', () => {
+    picked = null; apply();
+    const pool = items.filter((li) => !li.hidden);
+    for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+    picked = new Set(pool.slice(0, Number(random.dataset.random) || 3)); apply();
+  });
   form.hidden = false;
-  form.addEventListener('input', apply);
-  form.addEventListener('change', apply);
+  const changed = () => { picked = null; apply(); };
+  form.addEventListener('input', changed);
+  form.addEventListener('change', changed);
   form.addEventListener('submit', (ev) => { ev.preventDefault(); apply(); });
-  form.addEventListener('reset', () => setTimeout(apply, 0));
+  form.addEventListener('reset', () => setTimeout(changed, 0));
   apply();
 })();

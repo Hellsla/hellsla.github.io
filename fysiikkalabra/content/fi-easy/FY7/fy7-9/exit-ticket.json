@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Järjestä aallonpituuden mukaan pisimmästä lyhimpään: näkyvä valo, radioaallot, röntgensäteily ja infrapunasäteily.",
+    "a": "Radioaallot, infrapunasäteily, näkyvä valo, röntgensäteily. Taajuus kasvaa samassa järjestyksessä, koska $c = f\\lambda$ on kaikille sama."
+  },
+  {
+    "q": "Mustan kappaleen absoluuttinen lämpötila kolminkertaistuu. Miten sen spektrin huipun aallonpituus muuttuu?",
+    "a": "Se pienenee kolmasosaan, koska $\\lambda_\\text{max} T = b$ on vakio. Huipun aallonpituus on kääntäen verrannollinen absoluuttiseen lämpötilaan."
+  }
+]

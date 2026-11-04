@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A bar magnet is pulled upwards, away from a copper ring lying on a table. Does the ring repel or attract the magnet, and why?",
+    "a": "It attracts it. The flux through the ring decreases, and by Lenz's law the induced current opposes the decrease: the side of the ring facing the magnet becomes the opposite of the nearest pole of the magnet, so the ring attracts the magnet as it moves away."
+  },
+  {
+    "q": "Why is the iron core of a transformer built from thin laminations insulated from each other and not made from one solid piece of iron?",
+    "a": "The alternating magnetic field induces eddy currents in the iron core, and they convert electrical energy into internal energy of the core. The insulating layers cut the large current loops, so the currents circulate only inside the narrow laminations, stay small and the energy loss is reduced."
+  }
+]

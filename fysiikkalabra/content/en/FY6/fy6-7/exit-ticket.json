@@ -1,0 +1,10 @@
+[
+  {
+    "q": "How many megajoules is $2.0\\,\\text{kWh}$?",
+    "a": "Because $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3.6\\,\\text{MJ}$, the energy is $2.0 \\cdot 3.6\\,\\text{MJ} = 7.2\\,\\text{MJ}$."
+  },
+  {
+    "q": "A lamp whose power is $10\\,\\text{W}$ burns for a total of $100\\,\\text{h}$. How much electrical energy does it use in kilowatt-hours?",
+    "a": "$E = Pt = 0.010\\,\\text{kW} \\cdot 100\\,\\text{h} = 1.0\\,\\text{kWh}$."
+  }
+]

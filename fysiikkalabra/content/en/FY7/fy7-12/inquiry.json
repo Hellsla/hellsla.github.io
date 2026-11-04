@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "contribution": "Total internal reflection takes place when light goes from a substance with a larger refractive index into one with a smaller refractive index at an angle of incidence larger than the critical angle $\\sin\\alpha_\\text{r} = n_2 : n_1$. With the simulation the student observes that light entering a fibre at too steep an angle leaks out and that the critical angle grows as the difference between the refractive indices shrinks; the optical fibre, the delay in data transmission and the sparkle of a diamond as applications.",
+  "learn": [
+    "explain when light is totally internally reflected at the boundary between two substances.",
+    "calculate the critical angle from refractive indices and the travel time of light in a fibre.",
+    "explain how an optical fibre guides light and why a fibre has a cladding."
+  ],
+  "prior": [
+    "Light refracts at a boundary according to the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, and the angles are measured from the normal (chapter *Reflection and refraction of light*)",
+    "In a substance light travels at the speed $v = c : n$ (chapter *Reflection and refraction of light*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On the bed of the Baltic Sea runs a submarine cable, C-Lion1, from Helsinki to Rostock in Germany, $1172\\,\\text{km}$ long (Cinia, 2016). Inside it, information travels as pulses of light in glass fibres as thin as a hair. Glass is transparent, and there is no mirror on the surface of the fibre. Even so, the light does not escape from the fibre, although the cable winds along the shapes of the seabed.",
+      "question": "What keeps light inside a transparent glass fibre over hundreds of kilometres?"
+    },
+    {
+      "id": "kertaus-taittuminen",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recall: refraction",
+      "prompt": "A ray of light goes from water ($n = 1.33$) into air at an angle of incidence of $30^\\circ$. How does the ray refract?",
+      "choices": [
+        {
+          "text": "Away from the normal: the angle of refraction is larger than $30^\\circ$.",
+          "correct": true,
+          "feedback": "Correct. The law of refraction gives $1.33 \\cdot \\sin 30^\\circ = 1.00 \\cdot \\sin\\alpha_2$, so $\\alpha_2 \\approx 41.7^\\circ$ (chapter *Reflection and refraction of light*)). Today we find out what happens when the angle of incidence is increased."
+        },
+        {
+          "text": "Towards the normal: the angle of refraction is smaller than $30^\\circ$.",
+          "feedback": "Light refracts towards the normal when it goes from a substance with a smaller refractive index into one with a larger refractive index, for example from air into water. When it goes from water into air, $\\sin\\alpha_2 = 1.33 \\cdot \\sin 30^\\circ$, so the angle of refraction is about $41.7^\\circ$."
+        },
+        {
+          "text": "It does not refract, because $30^\\circ$ is a small angle of incidence.",
+          "feedback": "A ray always refracts when it meets obliquely a boundary with different refractive indices on its two sides. Only a ray that arrives perpendicularly carries straight on. The law of refraction gives an angle of refraction of about $41.7^\\circ$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-kulma",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: steeper light",
+      "prompt": "A laser points from the air at the flat end of an optical fibre. The refractive index of the core is $1.48$ and that of the cladding $1.46$. The angle of the laser to the axis of the fibre is increased gradually from zero. What happens to the light travelling in the core of the fibre?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "The light stays in the core at any angle, because the cladding always reflects it back.",
+          "feedback": "The values of the model refute this: when the angle is $15^\\circ$, the ray meets the wall of the core at an angle of incidence $\\alpha = 79.93^\\circ$, which is smaller than the critical angle $80.57^\\circ$, and some of the light refracts into the cladding. Total internal reflection requires that the angle of incidence is larger than the critical angle."
+        },
+        {
+          "text": "When the angle exceeds a certain limit, light starts to leak from the core into the cladding.",
+          "correct": true,
+          "feedback": "The values of the model support this: at an angle of $14^\\circ$ the angle of incidence at the wall is $80.59^\\circ$ and the light stays in the core, but at an angle of $15^\\circ$ the angle of incidence is $79.93^\\circ$, smaller than the critical angle $80.57^\\circ$, and light leaks out. Steeper light meets the wall at a shallower angle, that is at a smaller angle of incidence."
+        },
+        {
+          "text": "The smaller the angle, the more light leaks, because the light meets the wall at a very oblique angle.",
+          "feedback": "The values of the model refute this: light parallel to the axis meets the wall at an angle of incidence of almost $90^\\circ$, which is larger than the critical angle $80.57^\\circ$, so it stays in the core. Leaking begins only when the angle is over $14^\\circ$. The angle of incidence is measured from the normal to the wall, not from the wall."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kuori",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: air or cladding",
+      "prompt": "Light enters a glass core ($n_1 = 1.48$) at an angle of $30^\\circ$ to the axis. Around the core there is either air ($n_2 = 1.00$) or cladding glass ($n_2 = 1.46$). In which case does the light stay in the core?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "When there is air around it.",
+          "correct": true,
+          "feedback": "The values of the model support this: the ray meets the wall at an angle of incidence of $70.25^\\circ$. Against air the critical angle is only $42.51^\\circ$, so the light is totally internally reflected. Against the cladding of $1.46$ the critical angle is $80.57^\\circ$, and light leaks out. The larger the difference between the refractive indices, the smaller the critical angle."
+        },
+        {
+          "text": "When there is cladding glass around it.",
+          "feedback": "The values of the model refute this: against the cladding of $1.46$ the critical angle is $80.57^\\circ$, larger than the ray's angle of incidence $70.25^\\circ$, so light leaks out. Against air the critical angle is $42.51^\\circ$, and the light stays in the core. So the cladding does not improve the reflection; it protects the boundary."
+        },
+        {
+          "text": "In both, because light always goes from a larger refractive index to a smaller one.",
+          "feedback": "The direction is right, but it is not enough: the angle of incidence must also be larger than the critical angle. In the model the angle of incidence is $70.25^\\circ$. Against air the critical angle is $42.51^\\circ$, but against the cladding of $1.46$ it is $80.57^\\circ$, so with the cladding light leaks out."
+        },
+        {
+          "text": "In neither, because $30^\\circ$ is too steep an angle for a fibre.",
+          "feedback": "The values of the model refute this: against air the critical angle is $42.51^\\circ$, and the ray's angle of incidence at the wall, $70.25^\\circ$, is larger than that, so the light stays in the core. The angle is too steep only with the cladding glass, where the critical angle is $80.57^\\circ$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A laser points from the air at the end of the core of an optical fibre. Change the angle of the laser and the substance around the core, and watch whether the light stays in the core.",
+      "howto": "Adjust the angle $\\theta$ of the laser to the axis of the fibre and the refractive index $n_2$ of the substance around the core. The value $n_2 = 1.00$ means air and $n_2 = 1.46$ ordinary cladding glass. On the left the dashed line is the normal to the end face, that is the axis of the fibre. At the first point where the ray meets the wall of the core, the dashed line is the normal to the wall and the arc shows the angle of incidence $\\alpha$. If light leaks, the rays that refract out can be seen in the surrounding substance, and the ray that continues in the core grows dim. The readout shows the angle of incidence $\\alpha$, the critical angle $\\alpha_\\text{r}$ and whether the light stays in the core.",
+      "model": "The refractive index of the core is $n_1 = 1.48$, and the laser is in air, whose refractive index is $1.00$. The end of the fibre is flat and perpendicular to the axis. The core and the surrounding substance extend to the edges of the picture, and the fibre has no bends. The picture is not to scale: the core of a real fibre is only a few tens of micrometres thick. Light reflected from the end face is not drawn. The dimming of the leaking ray is only an illustration, not a calculated value. The readings are values calculated by the model, not measurements.",
+      "calc": "At the end face the light refracts according to the law of refraction:\n\n$$1.00 \\cdot \\sin\\theta = n_1 \\sin\\theta_1$$\n\nIn the core the ray travels at an angle $\\theta_1$ to the axis, so it meets the wall of the core at an angle of incidence $\\alpha = 90^\\circ - \\theta_1$ measured from the normal to the wall. The critical angle is calculated from the equation $\\sin\\alpha_\\text{r} = n_2 : n_1$. If $\\alpha > \\alpha_\\text{r}$, the light is totally internally reflected at every impact. Otherwise part of the light refracts out at an angle $\\beta$, for which $n_1 \\sin\\alpha = n_2 \\sin\\beta$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the angle of the laser",
+      "intro": "Test prediction 1. Around the core there is cladding glass with a refractive index of $1.46$; change only the angle $\\theta$ of the laser. Record at least the angles $0^\\circ$, $10^\\circ$, $14^\\circ$ and $15^\\circ$. On every row compare the angle of incidence $\\alpha$ with the critical angle $\\alpha_\\text{r}$ and look at the picture to see whether light leaks.",
+      "initial": {
+        "theta": 0,
+        "n2": 1.46
+      },
+      "locked": [
+        "n2"
+      ],
+      "vary": "theta",
+      "names": {
+        "theta": "angle of the laser θ",
+        "n2": "surrounding refractive index"
+      },
+      "units": {
+        "theta": "°",
+        "n2": ""
+      },
+      "measure": [
+        {
+          "key": "alpha",
+          "label": "α (°)"
+        },
+        {
+          "key": "alphar",
+          "label": "α_r (°)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "What is the largest whole number of degrees $\\theta$ for which the light still stays in the core when there is cladding glass around it ($n_2 = 1.46$)?",
+        "answer": 14,
+        "unit": "°",
+        "tolerance": 0.05,
+        "hints": [
+          "The light stays in the core when the angle of incidence $\\alpha$ at the wall is larger than the critical angle $\\alpha_\\text{r}$. Find in the table the point where $\\alpha$ drops below the critical angle.",
+          "Increase the angle one degree at a time and watch the readout: does the light stay in the core or does it leak?",
+          "Compare the rows $14^\\circ$ and $15^\\circ$: on which row is $\\alpha > \\alpha_\\text{r}$?"
+        ],
+        "mistakes": [
+          {
+            "value": 15,
+            "feedback": "At the angle $15^\\circ$ the angle of incidence $\\alpha = 79.93^\\circ$ is already smaller than the critical angle $80.57^\\circ$, and light leaks. The largest angle for which the light still stays in the core is one degree smaller."
+          },
+          {
+            "value": 80.57,
+            "feedback": "This is the critical angle at the wall of the core. The question asks for the angle $\\theta$ of the laser to the axis of the fibre for which the light still stays in the core."
+          }
+        ],
+        "solution": "**Given:** refractive index of the core $n_1 = 1.48$, refractive index of the cladding $n_2 = 1.46$, laser in air; readings of the simulation: $\\theta = 14^\\circ$: $\\alpha = 80.59^\\circ$, $\\theta = 15^\\circ$: $\\alpha = 79.93^\\circ$, critical angle $\\alpha_\\text{r} = 80.57^\\circ$\n\n**Find:** the largest whole angle $\\theta$ in degrees for which the light stays in the core\n\n**Principle:** Light is totally internally reflected from the wall of the core when the angle of incidence at the wall is larger than the critical angle. A steeper laser angle $\\theta$ gives a larger angle $\\theta_1$ to the axis in the core and therefore a smaller angle of incidence at the wall, $\\alpha = 90^\\circ - \\theta_1$. The limit is where $\\alpha$ drops below the critical angle.\n\n**Formula:** $\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$ and $\\sin\\theta = n_1 \\sin\\theta_1$, where $\\theta_1 = 90^\\circ - \\alpha$; at the limit $\\alpha = \\alpha_\\text{r}$, so $\\theta = \\sin^{-1}\\big(n_1 \\sin(90^\\circ - \\alpha_\\text{r})\\big)$\n\n**Conversions:** Not needed: the refractive indices have no units, and the angles are in degrees.\n\n**Substitution:** $\\alpha_\\text{r} = \\sin^{-1}\\dfrac{1.46}{1.48} = 80.57^\\circ$, so $\\theta = \\sin^{-1}\\big(1.48 \\cdot \\sin 9.43^\\circ\\big) = \\sin^{-1} 0.2425 = 14.03^\\circ$\n\n**Answer:** $14^\\circ$. The calculated limit is $14.03^\\circ$, so at the angle $14^\\circ$ the light stays in the core and at the angle $15^\\circ$ it leaks, as the readings of the simulation show.\n\n**Reasonableness:** The refractive indices of the core and the cladding are almost equal, so the critical angle is close to $90^\\circ$ and only rays almost parallel to the axis stay in the core. The small allowed angle $14^\\circ$ fits this: against air the limit would be much larger."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the surrounding substance",
+      "intro": "Test prediction 2. The angle of the laser is $30^\\circ$; change only the refractive index $n_2$ of the surrounding substance. Record at least the values $1.00$ (air), $1.33$ (water) and $1.46$ (cladding glass), and if you like also $1.40$. How does the critical angle change, and when does light start to leak?",
+      "initial": {
+        "theta": 30,
+        "n2": 1.0
+      },
+      "locked": [
+        "theta"
+      ],
+      "vary": "n2",
+      "names": {
+        "theta": "angle of the laser θ",
+        "n2": "surrounding refractive index"
+      },
+      "units": {
+        "theta": "°",
+        "n2": ""
+      },
+      "measure": [
+        {
+          "key": "alphar",
+          "label": "α_r (°)"
+        },
+        {
+          "key": "alpha",
+          "label": "α (°)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: when light stays in the fibre",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "On the basis of your tables, write: under what condition does light stay in the core? How does the angle of the laser affect the angle of incidence at the wall, and how does the refractive index of the surrounding substance affect the critical angle?",
+      "model": "Light stays in the core when the ray's angle of incidence at the wall of the core is larger than the critical angle, $\\alpha > \\alpha_\\text{r}$. In experiment 1, as the angle of the laser grew, the angle of incidence at the wall decreased: at the angle $14^\\circ$, $\\alpha = 80.59^\\circ$ was still larger than the critical angle $80.57^\\circ$, but at the angle $15^\\circ$, $\\alpha = 79.93^\\circ$, and light leaked. In experiment 2 the critical angle grew as the refractive index of the surrounding substance grew: $42.51^\\circ$ against air, $63.98^\\circ$ against water and $80.57^\\circ$ against cladding glass. When the angle of incidence was $70.25^\\circ$, the light stayed in the core against air and water but leaked against cladding glass. The smaller the difference between the refractive indices, the larger the critical angle and the closer to the axis the light has to travel. The values are calculated by the model.",
+      "criteria": [
+        "I stated the condition: light stays in the core when the angle of incidence at the wall is larger than the critical angle.",
+        "I stated that as the angle of the laser grows, the angle of incidence at the wall decreases, and I used values from the table.",
+        "I stated that the critical angle grows as the refractive index of the surrounding substance approaches the refractive index of the core.",
+        "I noted that against air the light stayed in the core even at a steeper angle than against cladding glass."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the theory and with the values of the model in the experiments. Then return to the opening question: what keeps light in the fibre of a submarine cable, and why does a fibre have a cladding even though bare glass would reflect light against air even better?",
+      "predictions": [
+        "ennuste-kulma",
+        "ennuste-kuori"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student writes: “The critical angle at the boundary between water and air is $48.8^\\circ$. When light goes from air into water at an angle of incidence of $60^\\circ$, the angle of incidence is larger than the critical angle, so the light is totally internally reflected and does not enter the water.” Where is the error?",
+      "choices": [
+        {
+          "text": "The critical angle applies only to light going from water into air. From air into water, light refracts towards the normal.",
+          "correct": true,
+          "feedback": "Correct. From air into water $\\sin\\alpha_2 = \\sin 60^\\circ : 1.33$, so the angle of refraction is about $40.6^\\circ$, and the refracted ray exists. Total internal reflection requires that the light goes from a substance with a larger refractive index into one with a smaller refractive index."
+        },
+        {
+          "text": "The critical angle has been calculated wrongly: the critical angle between water and air is $41.2^\\circ$, so the light enters the water.",
+          "feedback": "The critical angle $48.8^\\circ$ is right, since $\\sin\\alpha_\\text{r} = 1.00 : 1.33$. The error is in the direction: when light goes from air into water it refracts towards the normal, and there is no critical angle. The angle of refraction is about $40.6^\\circ$."
+        },
+        {
+          "text": "The reasoning is otherwise right, but total internal reflection begins only at an angle of incidence of $90^\\circ$.",
+          "feedback": "The reasoning is not right. From air into water total internal reflection does not happen at any angle of incidence, because the light refracts towards the normal and a refracted ray always exists. From water into air total internal reflection already begins at the critical angle $48.8^\\circ$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: the delay of a submarine cable",
+      "prompt": "The submarine cable C-Lion1 is $1172\\,\\text{km}$ long (Cinia, 2016). Assume that the refractive index of the glass of the fibre is $1.47$ and that a light pulse travels along the axis of the fibre. How long does it take the pulse to travel from Helsinki to Rostock? The speed of light in a vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give the answer in milliseconds.",
+      "answer": 5.7428,
+      "unit": "ms",
+      "tolerance": 0.02,
+      "hints": [
+        "Light travels more slowly in glass than in a vacuum. At what speed?",
+        "The speed in glass is $v = c : n$, and the travel time is $t = s : v = n s : c$.",
+        "$t = 1.47 \\cdot 1\\,172\\,000\\,\\text{m} : (3.00 \\cdot 10^8\\,\\text{m/s})$. Convert the seconds to milliseconds."
+      ],
+      "mistakes": [
+        {
+          "value": 3.9067,
+          "feedback": "You used the speed of light in a vacuum. In glass light travels at the speed $v = c : n$, so the distance takes $n$ times as long."
+        },
+        {
+          "value": 2.6576,
+          "feedback": "You multiplied the speed of light by the refractive index. In glass light travels more slowly, $v = c : n$, so the travel time is $t = n s : c$."
+        },
+        {
+          "value": 0.0057428,
+          "feedback": "You substituted the distance in kilometres. First convert $1172\\,\\text{km} = 1172 \\cdot 1000\\,\\text{m}$."
+        }
+      ],
+      "solution": "**Given:** length of the cable $s = 1172\\,\\text{km}$, refractive index of the glass $n = 1.47$, speed of light in a vacuum $c = 3.00 \\cdot 10^8\\,\\text{m/s}$\n\n**Find:** the travel time $t$ of the light pulse in milliseconds\n\n**Principle:** In glass light travels at a constant speed $v = c : n$, which is smaller than the speed of light in a vacuum. The pulse travels along the axis, so the distance it covers is the length of the cable, and the travel time is the distance divided by the speed.\n\n**Formula:** $v = \\dfrac{c}{n}$ and $t = \\dfrac{s}{v}$, so $t = \\dfrac{n s}{c}$\n\n**Conversions:** $s = 1172\\,\\text{km} = 1172 \\cdot 1000\\,\\text{m} = 1.172 \\cdot 10^6\\,\\text{m}$. At the end $1\\,\\text{s} = 1000\\,\\text{ms}$.\n\n**Substitution:** $t = \\dfrac{1.47 \\cdot 1.172 \\cdot 10^6\\,\\text{m}}{3.00 \\cdot 10^8\\,\\text{m/s}} = 5.743 \\cdot 10^{-3}\\,\\text{s} = 5.743\\,\\text{ms}$\n\n**Answer:** $5.74\\,\\text{ms}$, three significant figures like the refractive index $1.47$ and the speed of light.\n\n**Reasonableness:** Light travels in glass at about $2 \\cdot 10^8\\,\\text{m/s}$, that is $200\\,\\text{km}$ in a millisecond, so a distance of $1172\\,\\text{km}$ takes about $6\\,\\text{ms}$. In a vacuum the time would be $3.91\\,\\text{ms}$, and in glass it is $1.47$ times as long."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. In the level 1 tasks you calculate a critical angle or a travel time with one formula, in the level 2 tasks you solve the formula for another quantity or combine two steps, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: the condition for total internal reflection",
+      "prompt": "In what situation can light be totally internally reflected at the boundary between two substances?",
+      "choices": [
+        {
+          "text": "When the light comes from the substance with the larger refractive index and the angle of incidence is larger than the critical angle.",
+          "correct": true,
+          "feedback": "Correct. Only then would the angle of refraction exceed $90^\\circ$, so there is no refracted ray and all the light is reflected. The critical angle is given by the equation $\\sin\\alpha_\\text{r} = n_2 : n_1$."
+        },
+        {
+          "text": "When the light comes from the substance with the smaller refractive index and the angle of incidence is very large.",
+          "feedback": "Light coming from the substance with the smaller refractive index refracts towards the normal, and a refracted ray exists at every angle of incidence. Total internal reflection requires that the light comes from the substance with the larger refractive index at an angle of incidence larger than the critical angle."
+        },
+        {
+          "text": "When the light meets the boundary perpendicularly, so that the angle of incidence is zero.",
+          "feedback": "Light that arrives perpendicularly carries straight on into the second substance, and only a small part is reflected. Total internal reflection requires a large angle of incidence: larger than the critical angle, when the light comes from the substance with the larger refractive index."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: the critical angle of a lamp fibre",
+      "prompt": "The core of the plastic fibre of a decorative lamp has a refractive index of $1.49$ and the cladding $1.40$. What is the critical angle at the boundary between the core and the cladding? Give the answer in degrees.",
+      "answer": 69.984,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "The light goes from the core into the cladding. Which refractive index is $n_1$?",
+        "$\\sin\\alpha_\\text{r} = n_2 : n_1$, where $n_1$ is the refractive index of the core.",
+        "$\\sin\\alpha_\\text{r} = 1.40 : 1.49$. Take the inverse sine of the result."
+      ],
+      "mistakes": [
+        {
+          "value": 20.016,
+          "feedback": "This is the complement of the critical angle, $90^\\circ - \\alpha_\\text{r}$. The critical angle is measured from the normal to the boundary, not from the surface."
+        },
+        {
+          "value": 0.9396,
+          "feedback": "This is the sine of the critical angle. Calculate the angle with the inverse sine: $\\alpha_\\text{r} = \\sin^{-1} 0.9396$."
+        }
+      ],
+      "solution": "**Given:** refractive index of the core $n_1 = 1.49$, refractive index of the cladding $n_2 = 1.40$\n\n**Find:** the critical angle $\\alpha_\\text{r}$ in degrees\n\n**Principle:** The light goes from the core into the cladding, that is from a substance with a larger refractive index into one with a smaller refractive index, so a critical angle exists. At the critical angle the angle of refraction would be $90^\\circ$, so the law of refraction $n_1 \\sin\\alpha_\\text{r} = n_2 \\sin 90^\\circ$ gives the sine of the critical angle.\n\n**Formula:** $\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$, so $\\alpha_\\text{r} = \\sin^{-1}\\dfrac{n_2}{n_1}$\n\n**Conversions:** Not needed: the refractive indices are numbers without units.\n\n**Substitution:** $\\alpha_\\text{r} = \\sin^{-1}\\dfrac{1.40}{1.49} = \\sin^{-1} 0.9396 = 69.98^\\circ$\n\n**Answer:** $70.0^\\circ$, three significant figures like the refractive indices.\n\n**Reasonableness:** The difference between the refractive indices, $0.09$, is larger than in an ordinary glass fibre, so the critical angle is smaller than the critical angle of about $80^\\circ$ in a glass fibre, but much larger than the critical angle of about $42^\\circ$ between glass and air. Check: $1.49 \\cdot \\sin 69.98^\\circ = 1.40$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: the optical fibre",
+      "prompt": "Explain how an optical fibre guides light even though it is transparent glass. Also explain why light that enters the end of the fibre at too steep an angle does not stay in the fibre.",
+      "model": "The refractive index of the core of a fibre is slightly larger than that of the cladding. Light travelling in the core meets the boundary between the core and the cladding at a large angle of incidence. When the angle of incidence is larger than the critical angle $\\sin\\alpha_\\text{r} = n_2 : n_1$, there is no refracted ray, and all the light is reflected back into the core. In this way the light travels along the fibre, totally internally reflected again and again. If light enters the end of the fibre at a steep angle, it travels steeply in the core and meets the wall at a small angle of incidence. When the angle of incidence is smaller than the critical angle, part of the light refracts into the cladding at every impact and is lost from the core.",
+      "criteria": [
+        "I state that the refractive index of the core is larger than that of the cladding.",
+        "I explain that the light is totally internally reflected when the angle of incidence at the boundary between the core and the cladding is larger than the critical angle.",
+        "I explain that steeply entering light meets the wall at an angle of incidence smaller than the critical angle, so part of it refracts out.",
+        "I measure the angles of incidence from the normal to the boundary."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and only then open the answer."
+    }
+  ]
+}

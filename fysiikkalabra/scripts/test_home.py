@@ -22,10 +22,12 @@ For every language, from the pages that are actually in site/ (so nothing here h
     school-specific and says what is still planned,
     and links only chapters published in that language; a language without the course has the note
     #unavailable-<CODE> on its front page
-  - Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): every module
-    page whose course has cards links to its topic menu (?kurssi=), and exactly the chapters concept-cards.json names
-    link to their topics (?kurssi=&aihe=); every link reaches ../kasitetakomo.html; in a browser the app opens a deep
-    link's topics, a module link's menu without starting cards, and sends an unknown parameter to the course menu
+  - Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the card data is valid; the front page has no card
+    link (compact front page); a module page with cards has "Kertauspakkasi"; exactly the chapters with cards have "Kertaa luvun
+    käsitteet" after the exit ticket (a definition list without JavaScript) and its "Käsitteet" stage; card terms are
+    marked only in Teoriatiivistelmä; in a browser the card turns by keyboard, the marks go to localStorage
+    ruukkilabra:kortit (three "Osasin" in a row leave the deck), the popover closes with Esc, the deck shows on the
+    module and Sovella pages, and kasitteet.html reads its parameters (old ?kurssi= too)
 Then in a browser, at 360, 390, 768, 1440 and 1920 px: no horizontal scroll, the header on one row, module titles
 not cut, header and catalogue targets at least 44 px, and at 390 x 844 the module list starts in the first screen;
 from 700 px two columns with rows at most 64 px and the question on one line, below it the whole question; the arrow
@@ -76,7 +78,7 @@ for lang in i18n.languages():
     for code in codes:
         slots = curriculum[code]["lessons"]; done = sum(l["id"] in published for l in slots)
         mod = (out / f"{code}.html").read_text()
-        hrefs = [h for h in re.findall(r'<li class="live[^"]*">.*?<a href="([^"]+)"', mod) if "kasitetakomo.html" not in h]   # the card link: below
+        hrefs = [h for h in re.findall(r'<li class="live[^"]*">.*?<a href="([^"]+)"', mod) if "kasitteet.html" not in h]   # the card links: below
         expect(f"{lang} {code}: the module page links {done} lessons, each published (two clicks)",
                len([h for h in hrefs if not h.endswith("-sovella.html")]) == done and all((out / h).is_file() for h in hrefs), hrefs)
         cards = re.findall(r'<li class="live ch-card">(.*?)</li>', mod, re.S)   # chapter cards (teacher 2026-11-03, "Ruukkikortit")
@@ -131,14 +133,24 @@ for lang in i18n.languages():
             hrefs = re.findall(r'href="([^"]+)"', prep.group(1)) if prep else []
             expect(f"{lang} {code}: chapters to prepare with link only published pages ({len(hrefs)})", all((out / h).is_file() for h in hrefs), hrefs)
             expect(f"{lang} {code}: not a national module row", code not in codes)
-            inv = re.search(r'<ol class="lessons local-inv">(.*?)</ol>', pg, re.S)
+            inv = re.search(r'<ol class="lessons ch-cards local-inv bank-list" id="bank-list">(.*?)</ol>', pg, re.S)   # the bank's cards by topic
             ihrefs = re.findall(r'href="([^"]+)"', inv.group(1)) if inv else []
             expect(f"{lang} {code}: listed investigations are published pages that name this course ({len(ihrefs)})",
                    all((out / h).is_file() and code in investigations.load(h[:-5], lang)["courses"] for h in ihrefs), ihrefs)
             if ihrefs:                   # the bank (teacher 2026-10-31): every item carries its filter data, the form starts hidden
-                items = re.findall(r'<li class="live bank-item" data-topic="(\w+)" data-f="([F123 ]+)" data-e="([E123 ]+)" data-mode="([OI ]+)"', inv.group(1))
+                items = re.findall(r'<li class="live ch-card bank-item" data-topic="(\w+)" data-f="([F123 ]+)" data-e="([E123 ]+)" data-mode="([OI ]+)"', inv.group(1))
                 expect(f"{lang} {code}: every investigation in the bank has topic, F, E and modes ({len(items)})", len(items) == len(ihrefs), len(items))
                 expect(f"{lang} {code}: the filter form starts hidden (all shown without scripts)", '<form class="bank-filter" id="bank-filter" hidden' in pg)
+                cards = re.findall(r'<li class="live ch-card bank-item"[^>]*>(.*?)</li>', inv.group(1), re.S)
+                expect(f"{lang} {code}: every investigation is a card with its opening illustration and its question (teacher 2026-11-04)",
+                       len(cards) == len(ihrefs) and all('class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in cards))
+            if local[code].get("chapters"):  # units as cards under the course's chapters (teacher 2026-11-04, scripts/cardgrid.py)
+                uc = re.search(r'<ol class="lessons ch-cards" id="unit-cards">(.*?)</ol>', pg, re.S)
+                live = re.findall(r'<li class="live ch-card">(.*?)</li>', uc.group(1), re.S) if uc else []
+                expect(f"{lang} {code}: one section per chapter with its question", uc and uc.group(1).count('class="ch-theme"') == len(local[code]["chapters"]) == uc.group(1).count('class="ch-theme-q"'))
+                expect(f"{lang} {code}: every published unit is a card with one link, its opening illustration and its question ({len(live)})",
+                       all(len(re.findall(r"<a ", c)) == 1 and 'class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in live)
+                       and all((out / h).resolve().is_file() for c in live for h in re.findall(r'href="([^"]+)"', c)))
             ghrefs = re.findall(r'href="(tvt-[\w-]+\.html)"', pg)
             expect(f"{lang} {code}: listed TVT-ohjeet are published pages ({len(ghrefs)})", all((out / h).is_file() for h in ghrefs), ghrefs)
     else: expect(f"{lang}: no local-course section without a course in this language", not sec)
@@ -197,37 +209,44 @@ for lang in i18n.languages():
                or 'href="lukuvinkit.html"' not in re.search(r'<footer class="bottom">.*?</footer>', p.read_text(), re.S).group(0)]
     expect(f"{lang}: every page links to {reading_tips.PAGE} in its header and footer", not no_link, no_link[:10])
 
-# Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): links only, the card app stays in the repository root
+# Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the cards come to the chapter
 import concept_cards
-expect("concept-cards.json and the topic ids of kasitetakomo-data.js agree (concept_cards.py)", not concept_cards.errors(), concept_cards.errors())
-APP = (ROOT.parent / concept_cards.APP).resolve()
-def card_links(f):
-    return [_h.unescape(h) for h in re.findall(r'<a href="([^"]*kasitetakomo\.html[^"]*)"', f.read_text())]
-if concept_cards.cards():
-    for lang in i18n.languages():
-        out = SITE if lang == i18n.SOURCE else SITE / lang
-        expect(f"{lang}: no Käsitetakomo section on the compact front page (teacher 2026-11-03)", not card_links(out / "index.html"))
-        for code in curriculum:
-            c = concept_cards.cards().get(code, {}); want = [f"kasitetakomo.html?kurssi={code}"] if c.get("open") else []
-            got = [l.rsplit("/", 1)[-1] for l in card_links(out / f"{code}.html")]
-            expect(f"{lang} {code}.html: {'a link to its topic menu' if want else 'no card link (no cards or kesken)'}", got == want, got)
-        wrong = []
-        for code, m in curriculum.items():
-            for l in m["lessons"]:
-                f = out / f"{l['id']}.html"
-                if not f.is_file(): continue
-                topics = concept_cards.mapping().get("lessons", {}).get(code, {}).get(l["id"])
-                want = [f"kasitetakomo.html?kurssi={code}&aihe={','.join(topics)}"] if topics else []
-                got = card_links(f)
-                if [g.rsplit("/", 1)[-1] for g in got] != want or any((out / g.split("?")[0]).resolve() != APP for g in got): wrong.append(f"{l['id']}: {got}")
-        expect(f"{lang}: exactly the chapters in concept-cards.json link to their topics, and every link reaches the app", not wrong, wrong[:5])
+expect("the concept card data is valid (concept_cards.py check)", not concept_cards.errors(), concept_cards.errors()[:5])
+for lang in i18n.languages():
+    out = SITE if lang == i18n.SOURCE else SITE / lang
+    has = bool(concept_cards.modules(concept_cards.data_lang(lang)))
+    home = (out / "index.html").read_text()
+    expect(f"{lang}: kasitteet.html exists exactly when the language has cards, and the front page has no card link (teacher 2026-11-03, compact front page)", 'kasitteet.html' not in home and (out / "kasitteet.html").is_file() == has)
+    for code in curriculum:
+        f = out / f"{code}.html"
+        if not f.is_file(): continue
+        want = bool(concept_cards.cards_of(code, lang))
+        expect(f"{lang} {code}.html: {'Kertauspakkasi' if want else 'no deck (no cards in this language)'}", ('class="kc-deck"' in f.read_text()) == want)
+    wrong = []
+    for code, m in curriculum.items():
+        for l in m["lessons"]:
+            f = out / f"{l['id']}.html"
+            if not f.is_file(): continue
+            page = f.read_text(); cards = concept_cards.chapter_cards(code, l["id"], lang)
+            if bool(cards) != ('id="kertaa-kasitteet"' in page): wrong.append(f"{l['id']}: section {'missing' if cards else 'without cards'}"); continue
+            if not cards: continue
+            sec = re.search(r'<section class="stage stage-concepts kc-section" id="kertaa-kasitteet".*?</section>', page, re.S).group(0)
+            if not all(f'data-id="{c["id"]}"' in sec for c in cards): wrong.append(f"{l['id']}: a card missing from the list")
+            ex = page.find('id="exercises"')
+            if not (page.index('id="exit"') < page.index('id="kertaa-kasitteet"') and (ex < 0 or page.index('id="kertaa-kasitteet"') < ex)): wrong.append(f"{l['id']}: not after the exit ticket")
+            toc = re.search(r'<nav class="toc".*?</nav>', page, re.S)
+            if not toc or 'href="#kertaa-kasitteet"' not in toc.group(0): wrong.append(f"{l['id']}: no Käsitteet stage in the navigation")
+            sel = re.search(r'<section class="stage" id="selita".*?</section>', page, re.S)
+            if page.count("data-kortti=") != (sel.group(0).count("data-kortti=") if sel else 0): wrong.append(f"{l['id']}: a card term outside Teoriatiivistelmä")
+            if f'href="kasitteet.html?moduuli={code}"' not in sec: wrong.append(f"{l['id']}: no link to the module's cards")
+    expect(f"{lang}: exactly the chapters with cards have 'Kertaa luvun käsitteet' after the exit ticket, listed, in the navigation, terms only in Teoriatiivistelmä", not wrong, wrong[:5])
 
 JS = """() => { const R = (e) => e.getBoundingClientRect(), out = [];
   if (document.scrollingElement.scrollWidth > innerWidth) out.push('horizontal scroll ' + document.scrollingElement.scrollWidth);
   const h = document.querySelector('header.top'), kids = [...h.children].map(R);
   if (Math.max(...kids.map((r) => r.top)) - Math.min(...kids.map((r) => r.top)) > 20) out.push('header wraps');
   for (const e of document.querySelectorAll('.mod-name')) if (e.scrollWidth > e.clientWidth + 1) out.push('cut: ' + e.textContent);
-  for (const e of document.querySelectorAll('header.top a, header.top summary, .mod-list a, details.more-tips > summary, ul.concept-cards a, p.concept-link a'))
+  for (const e of document.querySelectorAll('header.top a, header.top summary, .mod-list a, details.more-tips > summary'))
     if (e.checkVisibility() && R(e).height < 43.5) out.push(`target ${Math.round(R(e).height)} px: ${e.textContent.trim().slice(0, 30)}`);
   const cols = document.querySelector('.mod-cols');
   if (cols) {                      // the compact front page (teacher 2026-11-03)
@@ -253,7 +272,8 @@ with sync_playwright() as pw:
     for lang in i18n.languages():
         base = SITE if lang == i18n.SOURCE else SITE / lang
         for w, hgt in ((360, 780), (390, 844), (768, 1024), (1440, 900), (1920, 1080)):
-            for name in ("index.html", "FY4.html", "lukuvinkit.html") + tuple(f"{c}.html" for c in local_courses.load(lang)):
+            mix = ("yo-sekoitin.html",) if any(c.get("mixer") for c in local_courses.load().values()) else ()
+            for name in ("index.html", "FY4.html", "lukuvinkit.html") + tuple(f"{c}.html" for c in local_courses.load(lang)) + mix:
                 pg = b.new_page(viewport={"width": w, "height": hgt}); pg.goto((base / name).as_uri())
                 pg.evaluate("document.fonts.ready.then(() => true)"); pg.wait_for_timeout(150)
                 found = pg.evaluate(JS)
@@ -266,6 +286,16 @@ with sync_playwright() as pw:
                     pg.click(".bank-reset"); pg.wait_for_timeout(30)
                     back = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
                     expect(f"{lang}/{name} at {w} px: the bank filters without reloading and 'show all' brings all {total} back", hidden and back == total, (hidden, back))
+                if name == "yo-sekoitin.html" and w == 390:     # the task mixer: filters in place, a random pick of three, reset
+                    total = pg.evaluate("document.querySelectorAll('.bank-item').length")
+                    pg.click("[data-random]"); pg.wait_for_timeout(30)
+                    pick = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
+                    pg.click("button[type=reset]"); pg.wait_for_timeout(30)
+                    back = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
+                    links = pg.evaluate("[...document.querySelectorAll('.bank-item a')].map(a => a.getAttribute('href'))")
+                    missing = [h for h in links if not (base / h.split("#")[0]).is_file()]
+                    expect(f"{lang}/yo-sekoitin at {w} px: {total} tasks, a random pick shows {min(3, total)}, 'show all' brings all back, every link reaches a page",
+                           total > 0 and pick == min(3, total) and back == total and not missing, (total, pick, back, missing[:3]))
                 if name == "index.html" and (w, hgt) in ((1440, 900), (1920, 1080)):
                     sh = pg.evaluate("document.scrollingElement.scrollHeight")
                     expect(f"{lang}: at {w} x {hgt} the whole front page fits without scrolling ({sh} px)", sh <= hgt)
@@ -279,19 +309,72 @@ with sync_playwright() as pw:
                     top = pg.evaluate("document.querySelector('.mod-row').getBoundingClientRect().top")
                     expect(f"{lang}: at 390 x 844 the first module row starts in the first screen ({round(top)} px)", top < 844 - 60)
                 pg.close()
-    if concept_cards.cards() and APP.is_file():           # the card app reads its parameters (file:// keeps the query)
-        lessons = concept_cards.mapping().get("lessons", {}); code = next(iter(lessons)); lid, topics = next(iter(lessons[code].items()))
-        pg = b.new_page(viewport={"width": 360, "height": 780})
-        for q, screen, what in ((f"?kurssi={code}&aihe={','.join(topics)}", "screenKortti", f"a chapter link ({lid}) starts its topics' cards"),
-                                (f"?kurssi={code}", "screenAihe", "a module link opens the topic menu without starting cards"),
-                                ("?kurssi=FY99", "screenKurssi", "an unknown course goes to the course menu"),
-                                (f"?kurssi={code}&aihe=ei-ole", "screenKurssi", "an unknown topic goes to the course menu"),
-                                ("?aihe=%3Cscript%3E", "screenKurssi", "a malformed topic goes to the course menu")):
-            pg.goto(APP.as_uri() + q); pg.wait_for_timeout(100)
-            on = pg.evaluate("document.querySelector('.screen.on').id")
-            extra = pg.evaluate("document.querySelectorAll('#aiheList .row.valittu').length") if screen == "screenAihe" else 0
-            expect(f"Käsitetakomo: {what}", on == screen and not extra, (q, on, extra))
-        expect("Käsitetakomo: a link back to Ruukkilabra", pg.evaluate("!!document.querySelector('#paluu[href]')"))
-        pg.close()
+    # the concept cards in a browser (kortit.js), over http so that Käsitetakomo can read site/kortit/*.json
+    import functools, http.server, threading
+    class Quiet(http.server.SimpleHTTPRequestHandler):
+        def log_message(self, *a): pass
+    srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), functools.partial(Quiet, directory=str(SITE)))
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    URL = f"http://127.0.0.1:{srv.server_address[1]}/"
+    lid = next((l["id"] for c in curriculum for l in curriculum[c]["lessons"] if (SITE / f"{l['id']}.html").is_file()
+                and concept_cards.chapter_cards(c, l["id"], "fi") and 'data-kortti=' in (SITE / f"{l['id']}.html").read_text()), None)
+    if lid:
+        code = lid.split("-")[0].upper()
+        ctx = b.new_context(viewport={"width": 1280, "height": 900}); pg = ctx.new_page(); pg.goto(URL + f"{lid}.html"); pg.wait_for_timeout(300)
+        first = concept_cards.chapter_cards(code, lid, "fi")[0]["id"]
+        st = lambda: pg.evaluate(f"(JSON.parse(localStorage.getItem('ruukkilabra:kortit') || '{{}}')['{first}'] || null)")
+        card = f'#kertaa-kasitteet .kc-card[data-id="{first}"]'
+        pg.focus(card + " .kc-face"); pg.keyboard.press("Enter"); pg.wait_for_timeout(500)
+        expect(f"{lid}: a card turns with Enter and says so (aria-expanded)", pg.get_attribute(card + " .kc-face", "aria-expanded") == "true")
+        pg.click(card + " .kc-again")
+        e = st(); expect(f"{lid}: 'Kertaa myöhemmin' puts the card in the deck (ruukkilabra:kortit)", bool(e) and e["tila"] == "kertaa" and e["osasinPutki"] == 0 and e["muokattu"] > 0, e)
+        for i in range(3): pg.click(card + " .kc-good")
+        e = st(); expect(f"{lid}: three 'Osasin' in a row take it out of the deck", bool(e) and e["tila"] == "osasin" and e["osasinPutki"] == 3, e)
+        n = pg.evaluate("document.querySelectorAll('#kertaa-kasitteet .kc-card').length")
+        expect(f"{lid}: the row shows the chapter's cards, at most 8", n == min(8, len(concept_cards.chapter_cards(code, lid, "fi"))), n)
+        term = "#selita .kc-term-btn >> nth=0"
+        pg.locator(term).scroll_into_view_if_needed(); pg.click(term); pg.wait_for_timeout(50)
+        opened = pg.evaluate("!!document.querySelector('.kc-pop') && document.querySelector('#selita .kc-term-btn').getAttribute('aria-expanded') === 'true'")
+        pg.keyboard.press("Escape")
+        closed = pg.evaluate("!document.querySelector('.kc-pop') && document.activeElement.classList.contains('kc-term-btn')")
+        pg.click(term); pg.mouse.click(5, 300); out_click = pg.evaluate("!document.querySelector('.kc-pop')")
+        expect(f"{lid}: a bold term opens its popover, Esc and a click outside close it", opened and closed and out_click, (opened, closed, out_click))
+        pg.evaluate("localStorage.clear()")
+        pg.locator(".kc-chips .kc-chip >> nth=0").scroll_into_view_if_needed(); pg.click(".kc-chips .kc-chip >> nth=0"); pg.click(".kc-pop .kc-add")
+        added = pg.evaluate("Object.values(JSON.parse(localStorage.getItem('ruukkilabra:kortit') || '{}')).some(e => e.tila === 'kertaa')")
+        expect(f"{lid}: a chip opens the popover and 'Lisää kertauspakkaan' adds the card", added)
+        pg.goto(URL + f"{code}.html"); pg.wait_for_timeout(200)
+        deck = pg.evaluate("[document.querySelector('.kc-deck-count')?.textContent || '', document.querySelector('.kc-deck a.kc-button')?.getAttribute('href') || '']")
+        expect(f"{code}.html: Kertauspakkasi counts the deck and 'Kertaa nyt' opens it", bool(deck[0]) and deck[1] == f"kasitteet.html?moduuli={code}&pakka=oma", deck)
+        pg.goto(URL + f"kasitteet.html?moduuli={code}&pakka=oma"); pg.wait_for_timeout(300)
+        expect("Käsitetakomo: ?pakka=oma studies the student's own deck", pg.evaluate("document.querySelectorAll('.kc-study .kc-card').length === 1"))
+        if (SITE / f"{code}-sovella.html").is_file():
+            pg.goto(URL + f"{code}-sovella.html"); pg.wait_for_timeout(200)
+            expect(f"{code}-sovella.html: 'Varmista käsitteet' shows the deck's cards", pg.evaluate("!document.querySelector('.kc-practice').hidden && document.querySelectorAll('.kc-practice .kc-card').length > 0"))
+            pg.evaluate("localStorage.clear()"); pg.reload(); pg.wait_for_timeout(200)
+            expect(f"{code}-sovella.html: an empty deck shows no section", pg.evaluate("document.querySelector('.kc-practice').hidden"))
+        ctx.close()
+        ctx = b.new_context(viewport={"width": 1280, "height": 900}); pg = ctx.new_page()
+        pg.add_init_script("Storage.prototype.setItem = () => { throw new Error('blocked'); }; Storage.prototype.getItem = () => { throw new Error('blocked'); };")
+        errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
+        pg.goto(URL + f"{lid}.html"); pg.wait_for_timeout(200)
+        pg.click('#kertaa-kasitteet .kc-face >> nth=0'); pg.wait_for_timeout(500); pg.click('#kertaa-kasitteet .kc-again >> nth=0')
+        expect(f"{lid}: a browser that refuses storage still turns and marks cards (try/catch)", not errs and pg.evaluate("document.querySelector('#kertaa-kasitteet .kc-status').textContent.length > 0"), errs)
+        ctx.close()
+    pg = b.new_page(viewport={"width": 360, "height": 780})
+    code = next(c for c in curriculum if concept_cards.cards_of(c, "fi"))
+    m = concept_cards.module(code); topics = [a["id"] for a in m["aiheet"]][:2]
+    for q, sel, what in ((f"?moduuli={code}&aihe={','.join(topics)}", ".kc-study .kc-card", "a topic link starts the combined topics' cards"),
+                         (f"?kurssi={code}&aihe={topics[0]}", ".kc-study .kc-card", "an old ?kurssi= link still works"),
+                         (f"?moduuli={code}", ".kc-topics", "a module link opens the topic menu"),
+                         (f"?moduuli={code}&pakka=oma", ".kc-empty", "the own deck, empty, says how to fill it"),
+                         ("?moduuli=FY99", ".kc-grid", "an unknown module goes to the module menu"),
+                         (f"?moduuli={code}&aihe=ei-ole", ".kc-topics", "an unknown topic goes to the topic menu"),
+                         ("?aihe=%3Cscript%3E", ".kc-grid", "a malformed topic goes to the module menu")):
+        pg.goto(URL + "kasitteet.html" + q); pg.wait_for_timeout(250)
+        expect(f"Käsitetakomo: {what}", pg.evaluate(f"!!document.querySelector('{sel}') && document.querySelector('.kc-static').hidden"), q)
+    found = pg.evaluate(JS); expect("Käsitetakomo at 360 px: no sideways scroll, header on one row", not found, found)
+    pg.close()
+    srv.shutdown()
     b.close()
 sys.exit(1 if fails else 0)
