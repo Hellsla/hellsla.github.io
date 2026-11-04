@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: cf4d4b8c8f3dfe2b
+CONTENT-HASH: 887a6cc4500f24cc
 
 ## Blocking
+(none)
 
 ## Polish
+- lesson.md maadoitus figure — the label $I_\text{vika}$ is small at 390 px; if the layout allows, enlarge it slightly.
 
-## Checked
-- Same structure as the Finnish; the selkeä suomi rules hold: short sentences, difficult words explained at first use, 5 key_concepts in meta.json with accurate explanations, learning goals 'laskemaan, selittämään...' complete.
-- Not a copy of the Finnish: sentences are split and terms defined, yet no content or caveat is dropped.
+## Checked (delta: I_vika label moved 8 units left, nothing else)
+- The label stays beside its arrow in the figure, same as in the Finnish version; no pedagogic effect.
+- Text, key concepts and figure description are unchanged, so the plain-Finnish review (short sentences, terms explained at first use, nothing dropped) stands.
+- No new term or wording enters the lesson, so fi-easy stays plain Finnish.

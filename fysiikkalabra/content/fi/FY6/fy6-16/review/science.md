@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8e3accc8a97e1b21
+CONTENT-HASH: 2679ef2e03591a8b
 
 ## Blocking
 
 ## Polish
-- lesson.md:265–267 — optional, C-level: SFS 6000-7-722 also requires DC fault-current protection (an RCD of type B, or type A with 6 mA DC detection). "Oma vikavirtasuoja" is a fair simplification.
+- lesson.md:265–267 (carried from earlier report) — optional, C-level: SFS 6000-7-722 also requires DC fault-current protection for the charging point; "oma vikavirtasuoja" is a fair simplification.
 
 ## Checked
-- Round 2, judged from the diff HEAD~1..HEAD: lesson.md, inquiry.json, the figures.py labels; everything else as in round 1.
-- Round-1 blocking item (lesson.md:309) is resolved. The text now says the main fuse "ei pala heti pienestä ylikuormasta, mutta jos ylikuorma on riittävän suuri ja jatkuu pitkään, se voi palaa". This matches gG behaviour and inquiry.json ("voi palaa").
-- lesson.md:265 now gives the real mechanism: a load near the rating for hours, socket contacts heating, and other loads interrupting the charge.
-- Efficiency: "tyypillisesti noin 80–95 %, ja se jää aina alle 100 %" is right for charging, because the charger, cables and battery always have losses. The summary now gives that reason ("koska latauksessa on aina häviöitä"). The tavat table (85 %, 90 %), the worked example (90 %) and Lukuarvojen lähteet ("80–95 % on arvio") all fall inside the new range.
-- inquiry.json:71: the distractor "noin 1,7 kertaa … 400 V eikä 230 V" is still wrong, its feedback still explains why (3UI with 230 V phase to neutral), and exactly one option remains correct.
-- The kayra labels "varaus 20/90/99 %" are re-anchored at the right points: centres at t = 4,53 h and 6,01 h.
-- Unit-only edits (€/kWh, units in brackets) change no number. I re-ran the round-1 recomputation; all lesson numbers are unchanged and correct.
+- Delta judged from the diff HEAD~1..HEAD: inquiry.json (model answer, criterion), lesson.md (Johdon ja liitoksen lämpeneminen, summary).
+- Joule's law with RI² and the 25 m cord are unchanged: R ≈ 0,57 Ω (copper, 2·25 m, 1,5 mm²; ρ = 0,0172 Ω·mm²/m gives 0,573 Ω), P = 0,57 Ω · (10 A)² ≈ 57 W; contact joint 0,10 Ω · (10 A)² = 10 W.
+- The new wording (a reeled cord transfers energy as heat to the surroundings poorly, so it warms and the insulation ages) is the real mechanism and replaces "lämpö ei pääse pois"; the model answer, criterion and summary agree with the lesson text and with each other. No wrong picture (C-level at most).
+- Summary: "löystyneessä liitoksessa lämpenemisteho keskittyy pieneen kohtaan" is correct (same I, large local R).
+- No number, symbol or condition changed; the rest stands as in my PASS (hash differs only by these wording edits).

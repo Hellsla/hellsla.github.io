@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4529a12b405cef07
+CONTENT-HASH: f8e0c8857f16c43a
 
 ## Blocking
-(none)
 
 ## Polish
 
 ## Checked
-- lesson.md and inquiry.json compared with content/fi: every number, unit and formula token is identical (decimal point kept, "snt/kWh" is "c/kWh"); subscripts akku/verkko/johto become battery/grid/cable.
-- Formulas intact: eta = W_battery/W_grid, t = W_battery/(eta P), P = UI, P = 3UI, P_cable = rho 2l/A I^2, K = a W_grid; every condition kept (constant P until about 90 %, steady part 20 to 80 %, same current in each phase, copper length 2l, main fuse may blow only when overload is large and lasts).
-- Figures: values in the three figures and the exercise graph (13,0 / 16 / 8,7 A; 37,7 and 29,0 A; 25 A fuse; 11 kW plateau to about 4,5 h) match the Finnish.
-- The four inquiry solutions each have 8 labelled parts (given, find, principle, formula, conversions, substitution, answer, reasonableness), as in the Finnish.
-- Physics terms: consumer unit, main fuse, miniature circuit breaker, residual current device (RCD), phase and neutral conductor, load management, dielectric strength, enclosure rating (IP rating): all correct English.
+- Delta judged against the Finnish reference: inquiry.json (goal, model answer, criterion), lesson.md (Heating of a cable and a joint, summary).
+- Joule's law with RI² and the 25 m cord are unchanged: R ≈ 0,57 Ω (copper, 2·25 m, 1,5 mm²; ρ = 0,0172 Ω·mm²/m gives 0,573 Ω), P = 0,57 Ω · (10 A)² ≈ 57 W; contact joint 0,10 Ω · (10 A)² = 10 W.
+- Translation matches the Finnish: "little energy is transferred as heat to the surroundings" / "the high temperature ages the insulation" carry the same mechanism and no number changed. No wrong picture (C-level at most).
+- Goal line reworded ("explain with Joule's law why a charger has its own circuit and why extension cords and loose joints heat up") keeps the same content as the Finnish goal.
+- Everything else unchanged since my PASS.

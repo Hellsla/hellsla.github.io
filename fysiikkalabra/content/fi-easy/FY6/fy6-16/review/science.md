@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8e0dda7e63208a36
+CONTENT-HASH: 029b7a0f13ce1b91
 
 ## Blocking
-(none)
 
 ## Polish
 
 ## Checked
-- lesson.md and inquiry.json compared with content/fi: every number, unit and formula token is identical (`$…$` and decimal comma kept); subscripts unchanged.
-- Formulas intact: eta = W_battery/W_grid, t = W_battery/(eta P), P = UI, P = 3UI, P_cable = rho 2l/A I^2, K = a W_grid; every condition kept (constant P until about 90 %, steady part 20 to 80 %, same current in each phase, copper length 2l, main fuse may blow only when overload is large and lasts).
-- Figures: values in the three figures and the exercise graph (13,0 / 16 / 8,7 A; 37,7 and 29,0 A; 25 A fuse; 11 kW plateau to about 4,5 h) match the Finnish.
-- The four inquiry solutions each have 8 labelled parts (given, find, principle, formula, conversions, substitution, answer, reasonableness), as in the Finnish.
-- Physics terms and the explained terms (nimellisjännite, vaihejohdin, nimellisvirta, läpilyöntilujuus, hyötysuhde) are correct and used the same way as in the Finnish.
+- Delta judged against the Finnish reference: inquiry.json, lesson.md (Johdon ja liitoksen lämpeneminen, summary), meta.json explanations.
+- Joule's law with RI² and the 25 m cord are unchanged: R ≈ 0,57 Ω (copper, 2·25 m, 1,5 mm²; ρ = 0,0172 Ω·mm²/m gives 0,573 Ω), P = 0,57 Ω · (10 A)² ≈ 57 W; contact joint 0,10 Ω · (10 A)² = 10 W.
+- The new wording (a reeled cord transfers energy as heat to the surroundings poorly, so it warms and the insulation ages) is the real mechanism and replaces "lämpö ei pääse pois"; the model answer, criterion and summary agree with the lesson text and with each other. No wrong picture (C-level at most).
+- meta.json hyötysuhde: "Latauksessa on aina häviöitä, joten latauksen hyötysuhde jää alle sadan prosentin" is correct and no longer implies all losses are heat; matches the Finnish range 80–95 %.
+- meta.json kolmivaihesähkö: same phase current gives P = 3UI, three times the single-phase power (U = 230 V): correct and matches the glossary.
+- meta.json Joulen laki: power becomes internal energy that is transferred as heat to the surroundings; doubled current gives four times the power: correct.
+- Everything else unchanged since my PASS.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4529a12b405cef07
+CONTENT-HASH: f8e0c8857f16c43a
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fig 5 (bars) — the label 'sauna heater' nearly fills its 13 A segment at 390 px; a shorter 'heater' would give it room (the label is shared with fig 3, so only change it if both read well).
+- [Minor] fy6-16-theory-1280-2, load chart — the label "sauna heater" touches the bar edges in the L1-L3 rows (unchanged; shorten to "sauna" or widen the segment).
 
 ## Checked
-- Contact sheets 1 to 5, figures at 390 px, example, opened states at 1280 px viewed in the English build: no overflow, no clipped label, maths renders.
-- No Finnish left in figure labels, alt texts, headings or buttons.
-- The sim is absent (sim: false), so there is no sims.fy6-16 block to check in lang/*.json.
-- Learn goals changed after the first captures; captures were retaken and the page rebuilt.
+- fy6-16-intro-1280: third learning goal ("explain with Joule's law why a charger has its own circuit and why extension cords and loose joints heat up.") completes its heading, fits the card, no clipping.
+- fy6-16-theory-1280-2 and -5: "Heating of a cable and a joint" paragraph and the summary bullet ("little energy is transferred from the reel as heat to the surroundings, and in a loose joint the heating power is concentrated in a small spot") read: fluent, formulas and units intact.
+- fy6-16-open-tarkista-1280-3: layout intact. The changed inquiry.json answer text is a hidden model answer; seen only in source diff.
+- Changes are wording only (heat transfer, learning goal); no figure, number or symbol changed, and the figure row and example captures were not affected.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

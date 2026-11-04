@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 18a470d8ffc74ca0
+CONTENT-HASH: c44b52ed13265d47
 
 ## Blocking
 (none)
 
 ## Polish
-- glossary.json sulake — the new sentence "ihmistä se suojaa vain yhdessä suojamaadoituksen kanssa; kodin ryhmäjohdoissa ..." chains two ideas with a semicolon — split into two sentences.
-- inquiry.json ennuste-1/-2 reveal (round 1, unchanged) — both open only after the theory; no Tutki task tests the bird or fuse-versus-RCD — add a comparison of the body current with 10 A and 30 mA to the "iho" task, or call ennuste-2 a thought question.
-- Workload (round 1, unchanged) is at the limit; the new "Kengät ..." paragraph and the colour caveat add to it — keep them short.
+- lesson.md maadoitus figure (right panel) — the label $I_\text{vika}$ is small at 390 px, its subscript barely legible — enlarge the label font a little if the figure layout allows.
+- (Round 1, unchanged) glossary sulake — split the semicolon sentence in two.
+- (Round 1, unchanged) ennuste-1/-2 open only after the theory; add a body-current versus 10 A / 30 mA comparison to the "iho" task or call ennuste-2 a thought question.
 
-## Checked (round 3 delta: I_vika label moved 4 units left in the maadoitus figure, nothing else; no pedagogic effect, label stays beside its arrow, description unchanged. Round 2 checks below stand)
-- Hook no longer states the cause ("vuorotellen" removed); the opening question is still answered by "keittio" and "iho".
-- johtopaatos criterion 3 now accepts "a protection that reacts to milliamp currents, e.g. vikavirtasuoja", so it no longer needs a term taught after the conclusion.
-- Fuse text now says the wire size fixes the fuse size, and a small overload need not trip at once; the worked example's Tulos repeats this, and the result shows 19,6 A.
-- Fuse versus person is stated correctly everywhere (fuse does not notice body current, protects a person only with earthing; RCD catches mA): lesson, misconception, feedback, glossary agree.
-- "iho" task and exercise solutions state that the rubber-shoe row holds only for intact, dry shoes and no touch of an earthed object; shoes are not protection. A student can follow it and it prevents a harmful takeaway.
-- Class III limit adds 120 V DC; colour code caveat (old installations, never judge voltage by colour) is added; "kilo-ohmiin" fixed.
+## Checked (round 4 delta: I_vika label moved 8 units left in the maadoitus figure, nothing else; earlier checks stand)
+- In the 390 px capture the label still sits beside its purple arrow, clear of the earth conductor and the fuse text; colour (purple) matches the arrow and the label is not the only carrier of meaning.
+- Description, text and glossary are unchanged, so learning path, workload and the opening question are as approved.
+- Note: checks.txt lists "FAIL layout 360/768/1280 px"; I did not judge layout here (the packet says the checks are not repeated), but the delta cannot have caused it (a 8-unit shift inside the SVG). The visual review should confirm.

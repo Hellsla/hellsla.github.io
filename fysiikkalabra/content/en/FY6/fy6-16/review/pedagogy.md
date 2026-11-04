@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4529a12b405cef07
+CONTENT-HASH: f8e0c8857f16c43a
 
 ## Blocking
 (none)
 
 ## Polish
-- The learn[2] goal is longer than 20 words, as in the Finnish; lint warns only.
+- lesson.md "Heating of a cable and a joint" — "From the reel little energy is transferred as heat to the surroundings" is clumsy; "Little energy is transferred as heat from the reel to the surroundings" is smoother.
 
-## Checked
-- Structure identical to the Finnish: 7 subheadings in Ydinajatus, Kaava with 5 formulas, worked example in 7 stages, misconception (2 paragraphs), summary (5 bullets), inquiry stages and exit ticket (2 questions).
-- Learn goals complete 'In this lesson, you will learn to' + verb. Goals 1 and 3 had dropped the inputs (energy, current, efficiency) and the loose joint; I restored them.
-- Natural textbook English; no Finnish left in text, figures or alt texts.
+## Checked (delta: learn goal 3, heat-transfer wording)
+- Learn goal 3 is now "explain with Joule's law why a charger has its own circuit and why extension cords and loose joints heat up": it completes "In this lesson, you will learn to", is shorter (the previous over-20-word polish is closed), and still covers the circuit, cord and joint inputs of the slot.
+- "the heat cannot escape" is replaced by poor energy transfer from the reel; correct physics and consistent with the model answer, criterion 2 and the summary bullet.
+- "the high temperature ages the insulation" is clearer than "the heat ages".
+- Criterion is observable and fits the question; no number, symbol or figure changed.

@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 423e3640aec0eab7
+CONTENT-HASH: b6131b393ad33d64
 
 ## Blocking
+(none)
 
 ## Polish
+- (none)
 
-## Checked
-- Same 12 tasks over levels 1-3 (5/4/3) in the same order, same hints and answers; solutions follow Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness.
-- fi-easy adds short definitions (potentiaali, maallikko, kammiovärinä) without changing a task.
+## Checked (delta: L1-04 Järkevyys wording)
+- "lämpö ei pääse pois" became "siitä siirtyy huonosti lämpöä ympäristöön. Silloin johto voi kuumeta vaarallisesti.": two short sentences, plain words, causal link kept, no new term.
+- Task, hints, answer 51 W and solution steps unchanged; 12 tasks over levels 5/4/3 as approved.
+- fi-easy stays plain Finnish.

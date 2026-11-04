@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6f13516ba7f7b54e
+CONTENT-HASH: c81bfc9fa34306ad
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- 12 exercises: answers, units, tolerances (0.02) and data identical to the Finnish; every solution has the full 7 steps (97 labelled lines = 12 x 7 + 13 extras identical to the Finnish); safety statements in L3-01 (fuse never larger), L3-02 (shoes are no protection, conditions kept), L3-03 (step voltage) and L2-03 (lower bound only) are intact.
-- Unit 'times' (en) / 'kertaa' (fi-easy) fits the answer 4.84.
+- Delta judged in context: solutions.md, the reasonableness line of the 16 A, 0,20 Ω cord task.
+- Recomputed P = R I² = 0,20 Ω · (16 A)² = 51,2 ≈ 51 W; answer and two significant figures unchanged.
+- English wording "little energy is transferred from it as heat to the surroundings" matches the Finnish reference.
+- The new wording (a cord tightly wound on a reel loses energy as heat to the surroundings poorly, so it can get dangerously hot) names the real mechanism; the old "lämpö ei pääse pois" is gone. It fits the heat guardrail (heat is energy in transfer).
+- figures.json key "v": "fault" -> "Δ" only relabels the lesson's RCD figure; no exercise shows it (the only exercise figure is ex-askel, unchanged), so the exercise set is unaffected.
+- No number, symbol or condition changed; the rest of the set stands as in my PASS.

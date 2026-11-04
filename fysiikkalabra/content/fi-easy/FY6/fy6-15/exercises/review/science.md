@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 423e3640aec0eab7
+CONTENT-HASH: b6131b393ad33d64
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- 12 exercises: answers, units, tolerances (0.02) and data identical to the Finnish; every solution has the full 7 steps (97 labelled lines = 12 x 7 + 13 extras identical to the Finnish); safety statements in L3-01 (fuse never larger), L3-02 (shoes are no protection, conditions kept), L3-03 (step voltage) and L2-03 (lower bound only) are intact.
-- Unit 'times' (en) / 'kertaa' (fi-easy) fits the answer 4.84.
+- Delta judged in context: solutions.md, the reasonableness line of the 16 A, 0,20 Ω cord task.
+- Recomputed P = R I² = 0,20 Ω · (16 A)² = 51,2 ≈ 51 W; answer and two significant figures unchanged.
+- Fi-easy wording "siitä siirtyy huonosti lämpöä ympäristöön" says the same as the Finnish reference.
+- The new wording (a cord tightly wound on a reel loses energy as heat to the surroundings poorly, so it can get dangerously hot) names the real mechanism; the old "lämpö ei pääse pois" is gone. It fits the heat guardrail (heat is energy in transfer).
+- No number, symbol or condition changed; the rest of the set stands as in my PASS.

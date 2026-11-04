@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8418e18a0f960a0d
-
-Round 2, delta: L1-1 (now $1500\,\text{W}$, $6{,}5\,\text{A}$), L3 tasks 2 and 3 with the new conditions, and the changed Järkevyys lines.
+CONTENT-HASH: 4e375974c1ee0983
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L2-1 Kaava — the "= I_s" row stands alone under the fraction (unchanged, optional).
+- (none)
 
 ## Checked
-- open-exercises L1-1 and L3-2 at 1280: the new $1500\,\text{W}$ and $6{,}522\,\text{A}$, the added sentence "Hän ei koske samalla mihinkään muuhun maadoitettuun" and the unchanged solution layout; all values, units and decimal commas are LaTeX with thin spaces.
-- Changed Järkevyys, Annettu and task lines (L1-1, L2-3, L2-4, L3-2, L3-3, the 90 kV air-gap task) read in the packet: clear, no plain-text quantities; the V(r) graph is unchanged.
+- fy6-15-open-exercises-1280-5: tehtävä 5, ratkaisun Järkevyys-kohta ("siitä siirtyy energiaa lämpönä ympäristöön huonosti, ja johto voi kuumeta vaarallisesti") luettu ja tarkistettu: lause sujuva, laatikko ei leikkaudu, yksiköt ja kaavat ehjät.
+- The rest of the exercise captures (open-exercises levels 1 and 2) show the layout unchanged; no overflow at 1280 px.
+- Not in this delta: the earthing figure (in lesson.md) is judged in the lesson packet.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
