@@ -1,0 +1,44 @@
+{
+  "id": "fy8-15",
+  "course": "FY8",
+  "title": "Standardimalli: perushiukkaset ja vuorovaikutukset",
+  "goals": [
+    "LOPS FY8: hiukkasfysiikan standardimalli",
+    "Täsmennys: perusvuorovaikutukset ja perushiukkaset; fotoni sähkömagneettisen vuorovaikutuksen välittäjähiukkasena"
+  ],
+  "prerequisites": [
+    "fy8-14"
+  ],
+  "glossary": [
+    "standardimalli",
+    "kvarkki",
+    "leptoni",
+    "välittäjähiukkanen",
+    "perusvuorovaikutus"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "standardimalli",
+      "explain": "Teoria, joka kertoo, mitä perushiukkasia on olemassa ja miten ne vuorovaikuttavat keskenään."
+    },
+    {
+      "term": "kvarkki",
+      "explain": "Perushiukkanen, josta protonit ja neutronit koostuvat. Jokaisessa protonissa ja neutronissa on kolme kvarkkia."
+    },
+    {
+      "term": "leptoni",
+      "explain": "Perushiukkanen, joka ei koostu kvarkeista. Esimerkiksi elektroni ja neutriino ovat leptoneja."
+    },
+    {
+      "term": "välittäjähiukkanen",
+      "explain": "Hiukkanen, jota toiset hiukkaset vaihtavat keskenään. Vaihto aiheuttaa vuorovaikutuksen, esimerkiksi fotoni välittää sähkömagneettisen vuorovaikutuksen."
+    },
+    {
+      "term": "perusvuorovaikutus",
+      "explain": "Yksi neljästä tavasta, joilla hiukkaset vaikuttavat toisiinsa: vahva, sähkömagneettinen, heikko ja gravitaatio."
+    }
+  ]
+}
