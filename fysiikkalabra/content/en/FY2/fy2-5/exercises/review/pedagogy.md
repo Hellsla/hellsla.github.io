@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2a503594826e5f77
+CONTENT-HASH: e87f7bb89928b71c
 
 ## Blocking
 (none)
@@ -8,4 +8,8 @@ CONTENT-HASH: 2a503594826e5f77
 (none)
 
 ## Checked
-- Translation review against the reviewed Finnish (2026-11-01): task order, levels, wording of demands (read from figure, explain why, justify) and solution step sequence (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) equal the Finnish. Language is natural and clear; no edits needed.
+- Task order, levels, demands (draw graph, read slope, explain, justify) and solution steps equal the Finnish for all 16 tasks.
+- Part tasks a)-d) in L3-04/L3-05 and the line "enter the result of part b) in the answer box" kept.
+- Solutions keep the Finnish order (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness).
+- Language level: English; no Finnish left.
+- check_i18n.py en: 0 errors. No edits needed.
