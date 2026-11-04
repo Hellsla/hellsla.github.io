@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6f4b253ccc360c87
+CONTENT-HASH: b1ccf41908493212
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
-(none) Round 2: both previous items are resolved. (1) The skydiver diagrams now show F̄_d (L1-02 in contact-4/#44-45; built page has no F_v, aria-labels read "air resistance Fd"). (2) L3-01 slope and flat diagrams (L3-1280-1/2, enlarged): F̄_μ now has a visible shaft and head on both, pointing up the slope and backward on the flat; it is short but reads as a vector.
+(none)
+
+## Fixed
+- L2-07 solutions.md Principle: the clumsy sentence "The box is pushed into motion because the angle at which a box at rest starts to slide would depend on static friction." rewritten to match the Finnish ("The box is given a push. If the box were at rest, the angle would depend on static friction.").
 
 ## Polish
-- [Minor] L3-01 FORMULA line — the inline equation $mgh - \mu mg(x_\text{a}+x_\text{b}+x_\text{c}) = 0$ breaks at the plus sign (still present); give it its own display row.
-- [Minor] L1-02 CONVERSIONS — "the result is changed back into kilonewtons at the end." starts in lower case after the equation block.
-- [Minor] Exercise start page at 390 px — "Level 2 · applied practice" wraps and "4 exercises" splits onto two lines.
-- [Minor] L3-01 diagram — F̄_μ label on the flat sits close to the arrow and the friction shaft is only about 1.5 head-lengths; a little longer would help.
+(none)
 
 ## Checked
-- contact-4 and contact-5 sheets (L1, L2, L3 all open), L3-1280-1 and -2 with enlarged crop of both friction diagrams.
-- Skydiver solution figures L1-02 (F_d), graph of L3-02 present and readable; colours force red, velocity blue, acceleration orange.
-- Exercise captures are 1280 only; same SVGs at 390.
+- Screenshots of the new tasks (L2-05..07, L3-04..05 at 1280) open: tables, free-body diagrams, formula blocks and answer boxes render without clipping; data tables captions and headers translated.
+- Decimal point and unit spacing consistent; LaTeX identical to fi apart from decimal marks.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · language 5 · accessibility 4

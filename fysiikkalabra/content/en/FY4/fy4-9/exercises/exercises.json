@@ -139,7 +139,7 @@
       "data": {
         "caption": "Football kicks (example data)",
         "columns": [
-          "Potku",
+          "Kick",
           "$v\\,(\\text{m/s})$",
           "$\\Delta t\\,(\\text{ms})$"
         ],

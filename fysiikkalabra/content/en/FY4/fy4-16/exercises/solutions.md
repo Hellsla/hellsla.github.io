@@ -287,7 +287,7 @@ a vasen
 ## fy4-16-L2-07
 **Given:** five angles $17.5\,{}^\circ$, $18.0\,{}^\circ$, $18.5\,{}^\circ$, $17.0\,{}^\circ$ and $18.0\,{}^\circ$; the pushed box slides at a steady speed
 **Find:** a) the coefficient of kinetic friction $\mu$ from the mean of the angles; b) the range of the coefficient and the variation around the mean
-**Principle:** The box is pushed into motion because the angle at which a box at rest starts to slide would depend on static friction. When the pushed box slides at a steady speed, the net force is zero. The component of the weight along the slope cancels the kinetic friction, and the friction is $\mu mg\cos\alpha$, so $\tan\alpha = \mu$. The measurements have random variation, so the mean is taken as the angle, and the variation is described by the interval between the extreme values of the measurements.
+**Principle:** The box is given a push. If the box were at rest, the angle would depend on static friction. When the pushed box slides at a steady speed, the net force is zero. The component of the weight along the slope cancels the kinetic friction, and the friction is $\mu mg\cos\alpha$, so $\tan\alpha = \mu$. The measurements have random variation, so the mean is taken as the angle, and the variation is described by the interval between the extreme values of the measurements.
 **Free-body diagram:** The box as a rectangle along the board, $x$ down the board and $y$ perpendicularly out of the board. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ from the bottom surface perpendicularly out of the board and the kinetic friction $\overline{F}_\mu$ up the board. The forces cancel each other along the slope and perpendicular to it.
 ```voimakuvio
 pinta -17,8

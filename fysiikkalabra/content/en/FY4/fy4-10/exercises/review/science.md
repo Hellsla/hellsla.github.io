@@ -1,11 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 4b515d073e85c708
+CONTENT-HASH: 850def367bf1f5e2
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the English text already matched fi in every number and was natural)
 
 ## Polish
+(none)
 
 ## Checked
-- Compared all 12 exercises (exercises.json) and solutions.md with the Finnish: data, answers, units, signs and the stated neglect conditions identical; decimal point throughout.
-- Each solution keeps Given, Find, Principle, Formula, Conversions, Substitution, Answer with sig.-fig. reason, Reasonableness; two-phase L3-01 and L3-03 reasoning (momentum then energy / uniform motion; free fall with the station) kept.
-- Subscripts translated (bullet, rifle, tot); check_latex clean. No changes needed.
+- All 20 exercises: ids, kinds, levels, answers, units, tolerances, correct flags and every number in task texts, choices, feedback and data tables compared with fi by script (decimal point in en, comma/{,} in fi-easy); no differences.
+- Choices of L1-06: same four options, one correct flag on the same option, feedback meaning identical.
+- Data tables of L2-05, L2-06, L3-05 identical to fi cell by cell; column headers translated, symbols and units unchanged.
+- solutions.md: 20 sections in both, math fragments and numbers match fi section by section (L1-06..08, L2-05..07, L3-04, L3-05 read in full).
+- Sign handling (L2-07), friction neglect conditions (L3-04, L3-05), mu range 0.50-0.70 and the 50 km/h limit unchanged.
+- check_i18n: 0 errors.

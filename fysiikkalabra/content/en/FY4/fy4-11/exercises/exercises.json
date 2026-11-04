@@ -160,7 +160,7 @@
         "caption": "Braking distance of a car at different initial speeds (example data)",
         "columns": [
           "$v_0\\,(\\text{m/s})$",
-          "$s_\\text{j}\\,(\\text{m})$"
+          "$s_\\text{b}\\,(\\text{m})$"
         ],
         "rows": [
           [
@@ -197,7 +197,7 @@
         "caption": "Stopping time and average force of the dummy (example data)",
         "columns": [
           "$\\Delta t\\,(\\text{s})$",
-          "$F_\\text{ka}\\,(\\text{kN})$"
+          "$F_\\text{avg}\\,(\\text{kN})$"
         ],
         "rows": [
           [
@@ -277,7 +277,7 @@
         "caption": "Stopping distance on wet asphalt (example data)",
         "columns": [
           "$v\\,(\\text{km/h})$",
-          "$s_\\text{p}\\,(\\text{m})$"
+          "$s_\\text{stop}\\,(\\text{m})$"
         ],
         "rows": [
           [
