@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 5c5e2966c4dba824
-
-Round 3
+CONTENT-HASH: 2d654420254bbbeb
+Round: 4
 
 ## Blocking
 (none)
@@ -10,7 +9,7 @@ Round 3
 - exercises.json:fy7-12-L2-02 (42 words) and L3-02 (58 words) — existing tasks with long lead paragraphs; split when next touched (carried over).
 
 ## Checked
-- Round-2 Blocking resolved: fy7-12-L1-08 solution now answers 103 km (three figures), inside the box 103,4483 with tolerance 0,02; fy7-12-L3-04 solution now answers 17,4 degrees, inside the box 17,3673 with tolerance 0,02.
-- Round-2 Polish acted on: L3-04 now says the n1/n2 − 1 measure is the relative delay of the zigzag light against axial light; solution wording "n1 − n2 = 0,03 is a one-figure number" is clear.
-- L1-06 distractor changed to "larger index to smaller, small angle, nearly perpendicular": a clean wrong option with correct feedback (needs angle above the critical angle).
-- No other changes since round 2; the 8 new tasks, their levels and the set as a whole remain coherent with the plan.
+- Only change since round 3: L1-08 time 0,50 → 0,500 ms in task text and in solution (Annettu, Muunnokset, Sijoitus, Vastaus, Järkevyys); all five now agree.
+- Answer 103,4483 km, tolerance 0,02: "103 km" lies inside; three significant figures are now justified by n = 1,45, t = 0,500 ms and c = 3,00 · 10⁸. Earlier rounding item resolved.
+- The remaining 0,50 ms in solutions.md:47–48 belongs to a different task (L1-0x, two figures from 2,0 · 10⁸ m/s) and is correct.
+- Nothing else changed; round 3 verdict stands (hash 2d654420254bbbeb at start and end).
