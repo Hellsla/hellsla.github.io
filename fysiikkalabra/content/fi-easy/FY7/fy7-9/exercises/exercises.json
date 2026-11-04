@@ -230,7 +230,7 @@
     {
       "id": "fy7-9-L3-04",
       "level": 3,
-      "text": "Tähtitieteilijä mittasi kolmen tähden säteilyn spektrin huipun aallonpituuden ja kirjasi tähden havaitun värin (esimerkkiaineisto). Tähtien oletetaan säteilevän kuin mustat kappaleet.\n\na) Laske tähtien pintalämpötilat.\n\nb) Kuinka monta kertaa kuumempi tähti C on kuin tähti A?\n\nc) Tähden C spektrin huippu on ultraviolettialueella, mutta tähti näkyy sinivalkoisena. Tähden A huippu on infrapunassa, mutta tähti näkyy punaisena. Selitä, miksi huipun paikka ja näkyvä väri eivät ole sama asia.\n\nKirjoita vastauslaatikkoon b-kohdan lämpötilojen suhde.",
+      "text": "Tähtitieteilijä mittasi kolmen tähden säteilyn spektrin huipun aallonpituuden ja kirjasi tähden havaitun värin (esimerkkiaineisto). Tähtien oletetaan säteilevän kuin mustat kappaleet.\n\na) Laske tähtien pintalämpötilat.\n\nb) Kuinka monta kertaa kuumempi tähti C on kuin tähti A?\n\nc) Tähden C spektrin huippu on ultraviolettialueella (aallonpituus on lyhyempi kuin näkyvällä valolla), mutta tähti näkyy sinivalkoisena. Tähden A huippu on infrapunassa (aallonpituus on pidempi kuin näkyvällä valolla), mutta tähti näkyy punaisena. Selitä, miksi huipun paikka ja näkyvä väri eivät ole sama asia.\n\nKirjoita vastauslaatikkoon b-kohdan lämpötilojen suhde.",
       "kind": [
         "data",
         "reasoning"

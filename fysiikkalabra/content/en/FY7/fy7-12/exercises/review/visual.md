@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3a06d4134f855a4c
+CONTENT-HASH: 2c4a05c4e4d55a83
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed)
 
 ## Polish
-- [Minor] L3-02 solution, Substitution — the long product line (fraction · bracket) is the widest formula on the page and fits at 340 px only just; acceptable, consider breaking after the first fraction if it grows.
-- [Minor] Exercises intro — "Core" chips appear only on some exercises and the unlabelled ones have the answer chip in the same place; fine, no change needed unless the owner wants uniform chips.
+(none)
 
 ## Checked
-- open-exercises 1280 parts 1, 4; L2 part 2; L3 parts 2, 3, 4; stage-exercises-390. All 12 exercises: statements, formula blocks, Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness order, units upright with thin space, significant-figure note shown. No exercise figures. check_layout 340: OK.
-
-## Scores
-illustrations 5 · typography 5 · Finnish (English editorial) 5 · accessibility 4
+- Screenshots of the new tasks opened (en: L2-1280-9 (L2-07 task, answer 38.8°, solution) and L3-1280-9 (L3-05 answer and reasonableness)): maths renders, units and decimal points correct, no overflow, no clipped text, no Finnish in en.
+- Data tables of L2-05, L2-06, L3-04, L3-05 have translated captions and headers (Measurement/Fibre/Power; Mittaus/Kuitu/Teho) and unchanged cells.
+- Display units (°, ns, km, mm) are the same as in fi.

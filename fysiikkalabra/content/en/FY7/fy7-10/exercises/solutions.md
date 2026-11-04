@@ -168,7 +168,7 @@
 ## fy7-10-L2-07
 **Given:** angle of incidence $\alpha_1 = 45.0^\circ \pm 0.5^\circ$, angle of refraction $\alpha_2 = 28.0^\circ \pm 0.5^\circ$, refractive index of air $n_1 = 1.00$
 **Find:** the uncertainty $\Delta n$ of the refractive index of the acrylic (no unit)
-**Principle:** The refractive index is obtained from the law of refraction $n = \dfrac{n_1 \sin\alpha_1}{\sin\alpha_2}$. It is greatest when the angle of incidence is as large as possible and the angle of refraction as small as possible, and smallest in the opposite case. The uncertainty is estimated as half of the difference between the greatest and the smallest value. This is an estimate and not a guarantee: the true value is within the limits only probably.
+**Principle:** The refractive index is obtained from the law of refraction $n = \dfrac{n_1 \sin\alpha_1}{\sin\alpha_2}$. It is greatest when the angle of incidence is as large as possible and the angle of refraction as small as possible, and smallest in the opposite case. The uncertainty is estimated as half of the difference between the greatest and the smallest value. This is an estimate and not a guarantee: the true value probably lies within the limits.
 **Formula:** $n = \dfrac{n_1 \sin\alpha_1}{\sin\alpha_2}$ and $\Delta n = \dfrac{n_\text{max} - n_\text{min}}{2}$
 **Conversions:** Not needed: the angles are in degrees and the refractive indices have no unit.
 **Substitution:** $n = \dfrac{1.00 \cdot \sin 45.0^\circ}{\sin 28.0^\circ} = 1.506$; $n_\text{max} = \dfrac{\sin 45.5^\circ}{\sin 27.5^\circ} = 1.545$; $n_\text{min} = \dfrac{\sin 44.5^\circ}{\sin 28.5^\circ} = 1.469$; $\Delta n = \dfrac{1.545 - 1.469}{2} = 0.038$

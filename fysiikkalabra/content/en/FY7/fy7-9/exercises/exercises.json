@@ -73,7 +73,7 @@
     {
       "id": "fy7-9-L1-07",
       "level": 1,
-      "text": "A GPS satellite orbits the Earth at an altitude of about $20\\,200\\,\\text{km}$. How long does it take the radio signal of the satellite to travel from a satellite directly above the receiver to the receiver? The speed of a radio wave is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$. Give the answer in milliseconds.",
+      "text": "A GPS satellite orbits the Earth at an altitude of about $20\\,200\\,\\text{km}$. How long does it take the radio signal to travel from the satellite to the receiver when the satellite is directly above the receiver? The speed of a radio wave is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$. Give the answer in milliseconds.",
       "answer": 67.3333,
       "unit": "ms",
       "tolerance": 0.02

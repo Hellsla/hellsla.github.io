@@ -162,7 +162,7 @@
 **Conversions:** $T = (1500 + 273.15)\,\text{K} = 1773.15\,\text{K}$. Finally $1\,\mu\text{m} = 10^{-6}\,\text{m}$.
 **Substitution:** $\lambda_\text{max} = \dfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{1773.15\,\text{K}} = 1.634 \cdot 10^{-6}\,\text{m} = 1.634\,\mu\text{m}$
 **Answer:** a) The student used the temperature in degrees Celsius and not in kelvins. b) $1.63\,\mu\text{m}$, three significant figures like the temperature $1500\,{}^\circ\text{C}$.
-**Reasonableness:** The student's result is too large, because he used a temperature that is too small, $1500$ instead of $1773.15$: the ratio $1.93 : 1.63 = 1.18$ is the same as the ratio of the temperatures $1773 : 1500 = 1.18$. The correct peak is in the infrared region, closer to visible light than the peak $4.0\,\mu\text{m}$ ($723\,\text{K}$) of the vault of the pizza oven in task L2-01, as it should be, because the ingot is hotter.
+**Reasonableness:** The student's result is too large, because the student used a temperature that is too small, $1500$ instead of $1773.15$: the ratio $1.93 : 1.63 = 1.18$ is the same as the ratio of the temperatures $1773 : 1500 = 1.18$. The correct peak is in the infrared region, closer to visible light than the peak $4.0\,\mu\text{m}$ ($723\,\text{K}$) of the vault of the pizza oven in task L2-01, as it should be, because the ingot is hotter.
 
 ## fy7-9-L2-07
 **Given:** measurements $(T, \lambda_\text{max})$: $(2000\,\text{K}, 1.47\,\mu\text{m})$, $(2400\,\text{K}, 1.18\,\mu\text{m})$, $(2800\,\text{K}, 1.06\,\mu\text{m})$ and $(3200\,\text{K}, 0.89\,\mu\text{m})$; constant of Wien's displacement law $b = 2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$; the filament is assumed to be a black body

@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: f6b561328d28f597
+CONTENT-HASH: 42fcf9545eae0e70
+Mode: full (translation review: visual parity with fi)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none)
+
 ## Polish
-- [Minor] solutions.md L2-04 — the label "Kuvaajan lukeminen" for the protractor figure — "Kuvan lukeminen" (the figure is not a graph).
-- [Minor] fy7-10/protractor figure in L2-04 — "60" and "80" on the right overlap the lasi block's outline and "40" touches the ray; readable for the task. Shared with the other languages.
-- [Minor] L3-02 — "2,0 m:n syvyydellä" renders correctly (case ending after the unit in LaTeX); no action.
+(none)
 
 ## Checked
-- open-exercises-L2-1280-4 (L2-03 solution, L2-04 task and figure with Finnish labels ilma and lasi); open-exercises-L3-1280-2 (L3-02 task and solution).
-- Source read in full (12 tasks, 12 solutions): instructions state exactly what to do, the question stands apart from the set-up, merkitsevät numerot justified in each answer.
-- Decimal comma, upright units with a thin space, fractions with \dfrac throughout.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- Opened exercise screenshots of the new tasks (L2-05 table and solution, L3-04 task text and table, L3-05) in fi-easy: text, tables and LaTeX render, no overflow, no raw markup, no Finnish in en.
+- Data tables and captions translated; units and decimal formatting consistent with the language.
+- check_i18n.py fi-easy: 0 errors.
