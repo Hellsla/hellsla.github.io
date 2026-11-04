@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: f1f66af74a9461c9
+CONTENT-HASH: d18c5c8e6452dfbc
 
 ## Blocking
 
 ## Polish
-- inquiry.json:104 — "k for the aluminium tube is 0.63 times as large", while the sim uses σAl/σCu = 0.633; with exactly 0.63 the Al time would be 4.22 s, not the 4.24 s quoted. Harmless (the text says "about 63 %"); could say "about 0.63 times".
-- lesson.md (copper-tube figure), inquiry.json:103,105 — the subscript in $\overline{F}_\text{j}$ comes from Finnish "jarru"; an English reader may find e.g. $F_\text{b}$ clearer (notation, not physics).
+- inquiry.json ennuste-rako, correct option feedback (carried over) — the slit-tube fall time is 1,8 times the plastic tube's, not 2 times. — "lähes kaksinkertainen" / "nearly twice" would be more exact.
+- lesson.md and glossary `induktiojarru` (carried over) — "the force grows with speed" holds only below the brake's critical speed. — Add "at low speeds", or keep it as a level-appropriate simplification.
 
 ## Checked
-- Translation fidelity: all numbers identical to fi; correct flags, reveal gates, experiment keys, numeric answers and mistakes identical; experiment value labels translated.
-- Recomputed: worked example v = 0.15 m/s, Q = 0.29430 − 0.00028 = 0.29 J, ΔT ≈ 0.0025 K ("about 0.003 K"); siirto 21 kN (mistakes 25, 9, 42 kN), 0.9 g, 630 kJ; tarkistus-2 42 mW (mistakes 4.32, 0.518).
-- Sim model F = kv: fall times Cu 6.68 s, Al 4.24 s, slit 0.82 s, plastic 0.45 s / 4.43 m/s; Q Cu 196.0 mJ, slit 173.9 mJ of 196.2 mJ; bar chart 0.2 mJ kinetic energy.
-- Lenz figures: ring current directions, B_ind and repel/attract consistent by the right-hand rule; tube eddy rings below/above the N-down magnet give upward/downward B_ind, anticlockwise from above.
-- Lenz from energy conservation argued correctly; misconception "field opposes the field" corrected (opposes the change).
-- Every choice item has exactly one correct option with correct distractor feedback; exit-ticket answers match the theory.
-- Applications (brake weakens near standstill, hob, detector, laminations, slit tube still brakes a little) stated without overclaim.
+- Only change since the passed version: the siirto (braking-car) model solution's Sijoitus/Substitution step is split into two equations (git diff). Nothing else is changed.
+- Step 1: v1² − v2² = (25 m/s)² − (10 m/s)² = 525 m²/s². My script gets 525.
+- Step 2: F = 2400 kg · 525 m²/s² : (2 · 30 m) = 21 000 N = 21 kN. My script gets 21 000 N.
+- This matches the Kaava step F = m(v1² − v2²) : (2s) symbol for symbol, with the 2s denominator kept as 2 · 30 m. Units reduce to kg·m/s² = N.
+- The Vastaus (21 kN, 2 s.f.) and Järkevyys (a = 8,75 ≈ 8,8 m/s², ΔEk = 630 kJ) still agree with the substitution.
+- The numeric answer of 21 kN and the mistakes 25, 9 and 42 kN are unchanged and still consistent.
+- check_layout.py fy7-6 --width 340: OK in fi, en and fi-easy. I re-ran the screenshots.
+- Physics, models and assessment are as in the earlier PASS. The diff touches no definition, model, option or feedback.

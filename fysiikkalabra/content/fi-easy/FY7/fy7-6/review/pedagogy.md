@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 27cf17a23b3e6185
+CONTENT-HASH: 381dad5d20fd70b0
 
 ## Blocking
-None.
 
 ## Polish
-- The box lead says "Voit kirjoittaa niiden merkitykset sinulle vahvimmalla kielelläsi", but the rendered box (390 px) has no note field or other place to write; the CSS comment promises one. Shared template/string, not a lesson matter; consider "Voit kirjoittaa ... vihkoosi" or adding the field.
+- Earlier polish items stand; none is Blocking.
 
 ## Checked
-Round 2, delta: only the "Luvun tärkeät käsitteet" box (meta.json key_concepts), rendered and read at 390 px (no horizontal overflow, terms and explanations legible, math renders). Round-1 fixes verified for this chapter's entries: conditions now present and consistent with the lesson text (homogeeninen kenttä, tasainen pyöriminen, umpinainen kappale, ideaalinen muuntaja, sama johto, sama teho where relevant). Plain Finnish, short sentences, terms match glossary and lesson; box sits before stage 1 and is marked optional so it does not add to the hour's workload. Unchanged lesson content not re-audited.
+- Changed Sijoitus step of the braking task: v1^2 - v2^2 = 625 - 100 = 525 m^2/s^2 is correct.
+- F = 2400 kg * 525 m^2/s^2 / (2 * 30 m) = 1 260 000 / 60 = 21 000 N = 21 kN, matching the Kaava step F = m(v1^2 - v2^2)/(2s) and the stated Vastaus and Järkevyys (a = 8,8 m/s^2, 630 kJ).
+- The split is a better staged step for the student: the difference of squares is computed first, then inserted; no answer is disclosed earlier.
+- check_layout.py fy7-6 --width 340: OK for fi, en and fi-easy.
+- Nothing else changed (git diff shows only this solution string per language).

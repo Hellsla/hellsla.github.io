@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 27cf17a23b3e6185
+CONTENT-HASH: 381dad5d20fd70b0
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] key_concepts induktiojarru — 'ilman kosketusta' does not name the magnetic field; fine for a vocabulary box.
 
 ## Checked
-- Delta (round 2): the new "Luvun tärkeät käsitteet" box (key_concepts in meta.json), rendered at 390 px (own capture of section.kc, no horizontal overflow: scrollWidth 390), plus top-390 (opening, layout survived). Rewritten round-1 entries checked for exactness, plain Finnish and consistency with the lesson/glossary terms in the packet. Other content unchanged and not re-audited.
+- Delta re-review of the Sijoitus step of the roller-coaster braking solution (siirto task). Arithmetic: 625 - 100 = 525 m^2/s^2; 2400 * 525 / 60 = 21 000 N = 21 kN. Consistent with the Kaava step; the symbols, units and decimal comma are fine.
+- check_layout.py fy7-6 --width 340: OK in fi, en and fi-easy.
+- Own capture of the opened solution at 340 px (scratchpad sol-fi-easy.png): the two-part Sijoitus renders cleanly, with no overflow or clipping, and the order is principle, formula, substitution, result.
+- Existing 390 captures of the sovella stage show nothing else changed.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
