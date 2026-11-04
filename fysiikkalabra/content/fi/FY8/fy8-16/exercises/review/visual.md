@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 69cbf29442dcf722
+CONTENT-HASH: f84225f111daba7f
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json fy8-16-L1-05 / L2-03 — vastausyksikkö "$10^{-3}\,\text{eV}$" näkyy syöttökentän vieressä muodossa "10⁻³ eV", ja ratkaisun vastaus on "1,17 · 10⁻³ eV"; kaksi tapaa kirjoittaa sama lukumuoto hämmentää. Fix: pyydä vastaus yksikössä $\text{meV}$ (milli-elektronivoltti), jolloin kentän yksikkö ja ratkaisun vastaus ovat samat.
-- [Minor] solutions.md fy8-16-L3-02 Sijoitus — rivi $Q = 0{,}007809 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2$ on oikein, mutta $c^2$ supistuu vasta seuraavalla rivillä; lisää väliin "(yksikkö $c^2$ supistuu)" tai poista $c^2$ molemmista, koska Muunnokset-kohta sanoo sen jo.
-- [Minor] solutions.md fy8-16-L3-03 Periaate — pitkä yhden kappaleen periaate sisältää kolme murtolukua ja päätelmän; luettavuus puhelimella heikkenee. Fix: jaa kahteen kappaleeseen (parien yhdistäminen ja kaavan käyttö).
-- [Minor] fy8-16-L1-01 Vastaus — näytetty vastaus $0{,}013$ ja sijoituksen tulos $0{,}01296$ eroavat kahden merkitsevän numeron pyöristyksen vuoksi; ratkaisu sanoo sen, joten vain huomautus.
+- [Minor] solutions.md fy8-16-L2-03 Järkevyys — "niin kauan, kuin" -> "niin kauan kuin" (ei pilkkua). Muuten teksti on sujuvaa, ja $13{,}6\,\text{eV}$:n ja $3000\,\text{K}$:iin sijamuodot ovat oikein.
+- Aiemmat Minor-huomautukset (meV-yksikkö, L3-02 yksikkö $c^2$, L3-03 Periaatteen pituus) ovat ennallaan eivätkä estä.
 
 ## Checked
-- open-exercises-1280-1 (L1-01 ja ratkaisu), -1280-5 (L1-05), L2-1280-2 (L2-01 loppu ja L2-02), L3-1280-1 (L3-01), L3-1280-3 (L3-02 loppu ja L3-03): ei leikkautumista, yhtälöt rivitetty järkevistä kohdista, laatikot ja vastaus-chip luettavia.
-- Kaikkien 12 tehtävän teksti ja ratkaisut: LaTeX-yksiköt pystyssä ohuella välilyönnillä, desimaalipilkku, jakaminen kaksoispisteellä ($6600 : 70$), sijamuodot kuten $7{,}07\,\text{MeV}$:stä kunnossa.
-- Tehtävien kuva (hubble-t) kuuluu oppituntiin; harjoitustehtävissä ei omia kuvia.
-- 390 px:n harjoituskuvia ei ole luettelossa; luotettu 360 px:n layout-tarkistukseen.
+- Delta: vain L2-03:n Järkevyys muuttui; open-exercises-L2-1280-4 (koko ratkaisu, Järkevyys-laatikko): rivitys, yksiköt pystyssä ohuella välilyönnillä, desimaalipilkku, ei leikkautumista.
+- open-exercises-L2-1280-3 (tehtävä ja vastaus-chip).
 - Hash alussa ja lopussa sama.
 
 ## Scores

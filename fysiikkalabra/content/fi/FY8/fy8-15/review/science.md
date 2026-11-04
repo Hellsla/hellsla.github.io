@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 90ffa68a637fc5ce
+CONTENT-HASH: 448dacb84c61b279
 
 ## Blocking
 
 ## Polish
-- lesson.md:476 (Tiivistelmä) — "Antihiukkasella on sama massa ja vastakkainen varaus" omits the opposite B and L that the theory (Antihiukkaset) now states — add "sekä vastakkaiset baryoni- ja leptoniluvut" for consistency.
+- lesson.md:289 — the graviton is said twice to be unobserved and outside the Standard Model ("Gravitonia ei ole havaittu, eikä se kuulu standardimalliin" and again at the end of the paragraph) — drop one of the two sentences.
+- lesson.md:476 (Tiivistelmä) — "Antihiukkasella on sama massa ja vastakkainen varaus" omits the opposite B and L that line 235 states — add "sekä vastakkaiset baryoni- ja leptoniluvut".
 
 ## Checked
-- Round-1 blocker fixed: the interaction table reads "gravitoni (hypoteettinen, ei kuulu standardimalliin)"; text after the table, summary and tarkistus-3 model answer/criteria agree.
-- Round-1 polish fixed: "Raskaat kvarkit ja varatut leptonit hajoavat"; antiparticle defined with opposite q, B and L; siirto rounding now "tuhannesosan tarkkuudella kuten annetut massat", same rule as the worked example.
-- Siirto μ⁻ → e⁻ ν̄_e ν_μ: Q = 105,658 − 0,511 = 105,147 MeV; q and L conserved; mistakes 106,169 and 105,658 rejected by tolerance 0,2 %.
-- Worked example Q_n = 0,782 MeV, Δm = 1,293 MeV; q/B/L sums correct.
-- Recomputed: F_e/F_g = 1,24·10³⁶, m_μ/m_e = 206,8, quark share of proton 0,96 %, τ_n 878,4 s ≈ 15 min, Super-K ≈ 1,7·10³⁴ protons (> 10³³).
-- Quark charges, hadron contents (p, n, Δ⁺⁺, Δ⁻, π±, D⁺ = c d̄) and the kvarkit interpret answer 0,667 e.
-- Reactions table and johtopäätös model answer: every observed reaction conserves q, B, L; n → p e⁻ breaks L, pp → ppn breaks B, p → e⁺π⁰ breaks B and L.
-- Ennuste 1–2, virhe (p e⁻ → n ν̄_e breaks L), tarkistus 1–2: exactly one correct option, distractor feedback correct.
-- Higgs 125 GeV/c² (2012), W ≈ 80 GeV/c², LHC 27 km / 6,8 TeV, annihilation 2 × 511 keV, pair threshold 1,022 MeV near a nucleus, proton lifetime > 10³⁴ a.
-- Exit ticket: d → u W⁻, W⁻ → e⁻ ν̄_e; p n → p p e⁻ breaks only L.
+- Interaction table: "gravitoni (hypoteettinen)"; line 289 states it has not been observed and is not part of the Standard Model; summary (474) and the explain prompt/model answer/criterion (inquiry.json:330–335) agree.
+- Ranges as orders of magnitude (strong 10⁻¹⁵ m, weak 10⁻¹⁸ m, EM and gravity unlimited); virtual photons not seen as light.
+- Recomputed: F_e/F_g = 1,24·10³⁶ (≈10³⁶), m_μ/m_e = 206,8, quark share of proton 0,96 %, Q_n = 0,782 MeV, siirto Q = 105,147 MeV.
+- Worked example q/B/L sums, symbolic first, rounding reason stated.
+- Quark charges, hadron contents, antiparticle definition (q, B, L opposite), annihilation 2 × 511 keV, pair threshold 1,022 MeV near a nucleus.
+- Proton stability argument (lightest baryon + B conservation), lifetime > 10³⁴ a; Higgs 125 GeV/c² (2012), W ≈ 80 GeV/c², LHC 27 km / 6,8 TeV.
+- Rest of inquiry.json and exit ticket as in the passed version (predictions single-correct, feedback and numeric answers right).
