@@ -24,7 +24,11 @@ E_pair = 2 * 0.511e6 * e                                # threshold of pair prod
 a["fy8-15-L2-03"] = h * c / E_pair * 1e12               # lambda = 1,2133 pm -> 1,21 pm
 a["fy8-15-L2-04"] = 100 * (2.16 + 2 * 4.70) / 939.565   # neutron udd: 11,56 / 939,565 = 1,230 % -> 1,23 %
 # Level 3: reasoning
-a["fy8-15-L3-01"] = -1 / 3                              # Omega- = sss, q = -1: one s quark -1/3 = -0,333
+# L3-01: Omega- (sss) -> K- + pi0 breaks B (1 -> 0); -> Sigma0 + K- conserves q and B but Q < 0; -> Lambda0 + K- allowed
+m_Om, m_La, m_Si, m_K, m_pi0 = 1672.45, 1115.683, 1192.642, 493.677, 134.977
+assert charge("sss") == -1 and charge("uds") == 0 and float(sum(QQ[k] for k in "s") - F(2, 3)) == -1   # K- = s anti-u
+assert m_Om - m_Si - m_K < 0                            # Sigma0 + K-: Q = -13,869 MeV, forbidden
+a["fy8-15-L3-01"] = m_Om - m_La - m_K                   # Lambda0 + K-: Q = 63,090 MeV -> 63,09 MeV
 a["fy8-15-L3-02"] = 2 * 1.0e-3 * c ** 2 / 1e14          # 1,0 g antimatter + 1,0 g matter: E = 1,798e14 J -> 1,8 · 10^14 J
 a["fy8-15-L3-03"] = -1                                  # anti-nu_e + p -> n + X: q of X +1, B 0, L of X = -1 (positron)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

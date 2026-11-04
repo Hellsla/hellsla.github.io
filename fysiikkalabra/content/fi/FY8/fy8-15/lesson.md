@@ -127,7 +127,7 @@ Atomi koostuu ytimestä ja elektroneista, ja ydin protoneista ja neutroneista (l
 ### Kvarkit ja leptonit
 Aineen perushiukkasia on kahta lajia. **Kvarkkeja** on kuusi: $u$ (up), $d$ (down), $c$ (charm), $s$ (strange), $t$ (top) ja $b$ (bottom). Kvarkin varaus on alkeisvarauksen $e$ murto-osa: $u$-, $c$- ja $t$-kvarkin varaus on $+\tfrac{2}{3}e$, $d$-, $s$- ja $b$-kvarkin $-\tfrac{1}{3}e$. **Leptoneja** on myös kuusi: elektroni $e^-$, myoni $\mu^-$ ja tau $\tau^-$, joiden varaus on $-e$, sekä kolme sähköisesti neutraalia neutriinoa $\nu_e$, $\nu_\mu$ ja $\nu_\tau$. Leptonit eivät koostu kvarkeista, eikä vahva vuorovaikutus vaikuta niihin.
 
-Hiukkaset jakautuvat kolmeen **sukupolveen**. Kaikki tavallinen aine koostuu ensimmäisen sukupolven hiukkasista $u$, $d$ ja $e^-$. Toisen ja kolmannen sukupolven hiukkaset ovat samanlaisia mutta raskaampia: esimerkiksi myonin massa on noin $207$ kertaa elektronin massa. Raskaat hiukkaset hajoavat nopeasti kevyemmiksi, joten niitä syntyy vain suurienergisissä törmäyksissä, kuten kiihdyttimissä ja kosmisen säteilyn osuessa ilmakehään. Neutriinot vuorovaikuttavat niin heikosti, että Auringon fuusiossa syntyviä neutriinoja kulkee kehomme läpi joka sekunti kymmeniä miljardeja neliösenttimetriä kohti.
+Hiukkaset jakautuvat kolmeen **sukupolveen**. Kaikki tavallinen aine koostuu ensimmäisen sukupolven hiukkasista $u$, $d$ ja $e^-$. Toisen ja kolmannen sukupolven hiukkaset ovat samanlaisia mutta raskaampia: esimerkiksi myonin massa on noin $207$ kertaa elektronin massa. Raskaat kvarkit ja varatut leptonit hajoavat nopeasti kevyemmiksi, joten niitä syntyy vain suurienergisissä törmäyksissä, kuten kiihdyttimissä ja kosmisen säteilyn osuessa ilmakehään. Neutriinot vuorovaikuttavat niin heikosti, että Auringon fuusiossa syntyviä neutriinoja kulkee kehomme läpi joka sekunti kymmeniä miljardeja jokaista neliösenttimetriä kohti.
 
 <svg data-fig="taulukko" viewBox="0 0 600 378" role="img" aria-label="Standardimallin perushiukkaset taulukkona. Kolme ensimmäistä saraketta ovat sukupolvet I, II ja III. Kahdella ylimmällä rivillä ovat kvarkit: u, c ja t, varaus plus kaksi kolmasosaa e, sekä d, s ja b, varaus miinus yksi kolmasosa e. Kahdella alimmalla rivillä ovat leptonit: elektroni, myoni ja tau, varaus miinus e, sekä niiden neutriinot, varaus nolla. Neljännessä sarakkeessa ovat välittäjähiukkaset gluoni, fotoni ja Z-bosoni, varaus nolla, sekä W-bosonit, varaus plus tai miinus e. Viidennessä sarakkeessa on Higgsin bosoni H, varaus nolla. Kvarkit ovat hiekanvärisissä, leptonit vaaleansinisissä, välittäjät vihreissä ja Higgsin bosoni punertavassa ruudussa." style="max-width:100%;font-size:24px">
   <foreignObject x="166" y="15.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{I}$</div></foreignObject>
@@ -232,7 +232,7 @@ Vapaata kvarkkia ei ole koskaan havaittu. Vahva vuorovaikutus pitää kvarkit ha
 </svg>
 
 ### Antihiukkaset ja annihilaatio
-Jokaisella hiukkasella on **antihiukkanen**, jolla on sama massa mutta vastakkainen varaus. Elektronin antihiukkanen on positroni $e^+$, joka syntyy beeta plus -hajoamisessa. Antihiukkanen merkitään viivalla: $\bar{u}$ on anti-$u$-kvarkki ja $\bar{\nu}_e$ elektronin antineutriino. Kun hiukkanen ja sen antihiukkanen kohtaavat, ne voivat **annihiloitua**: molemmat häviävät, ja niiden koko energia muuttuu esimerkiksi fotoneiksi. Kun elektroni ja positroni ovat lähes levossa, syntyy kaksi vastakkaisiin suuntiin lähtevää fotonia, kummankin energia $m_e c^2 = 511\,\text{keV}$. Tähän perustuu PET-kuvaus (luku *Säteily lääketieteessä ja teknologiassa*).
+Jokaisella hiukkasella on **antihiukkanen**, jolla on sama massa mutta vastakkainen varaus sekä vastakkaiset baryoni- ja leptoniluvut. Elektronin antihiukkanen on positroni $e^+$, joka syntyy beeta plus -hajoamisessa. Antihiukkanen merkitään viivalla: $\bar{u}$ on anti-$u$-kvarkki ja $\bar{\nu}_e$ elektronin antineutriino. Kun hiukkanen ja sen antihiukkanen kohtaavat, ne voivat **annihiloitua**: molemmat häviävät, ja niiden koko energia muuttuu esimerkiksi fotoneiksi. Kun elektroni ja positroni ovat lähes levossa, syntyy kaksi vastakkaisiin suuntiin lähtevää fotonia, kummankin energia $m_e c^2 = 511\,\text{keV}$. Tähän perustuu PET-kuvaus (luku *Säteily lääketieteessä ja teknologiassa*).
 
 Käänteinen ilmiö on **parinmuodostus**: atomiytimen lähellä fotoni voi muuttua elektroniksi ja positroniksi, jos sen energia on vähintään $2 m_e c^2 = 1{,}022\,\text{MeV}$. Massa ja energia muuttuvat toisikseen yhtälön $E = mc^2$ mukaisesti (luku *Massavaje ja ytimen sidosenergia*).
 
@@ -284,7 +284,7 @@ Kaikki tunnetut voimat palautuvat neljään **perusvuorovaikutukseen**. Standard
 | vahva | gluoni $g$ | kvarkit | $10^{-15}\,\text{m}$ |
 | sähkömagneettinen | fotoni $\gamma$ | varatut hiukkaset | rajaton |
 | heikko | $W^+$, $W^-$, $Z^0$ | kvarkit ja leptonit | $10^{-18}\,\text{m}$ |
-| gravitaatio | gravitoni | kaikki | rajaton |
+| gravitaatio | gravitoni (hypoteettinen, ei kuulu standardimalliin) | kaikki | rajaton |
 
 Taulukon kantamat ovat suuruusluokkia. **Fotoni** on sähkömagneettisen vuorovaikutuksen välittäjähiukkanen. Kun kaksi elektronia hylkii toisiaan, ne vaihtavat fotoneja. Sama hiukkanen on valon kvantti (luku *Valosähköinen ilmiö ja fotoni*), mutta vuorovaikutuksessa vaihdettuja fotoneja ei havaita valona. **Vahva vuorovaikutus** sitoo kvarkit hadroneiksi ja vaikuttaa myös nukleonien välillä ytimessä. **Heikko vuorovaikutus** voi muuttaa kvarkin lajin, ja se aiheuttaa beetahajoamisen. **Gravitaatio** on perusvuorovaikutuksista heikoin: kahden protonin välinen sähköinen hylkimisvoima on noin $10^{36}$ kertaa suurempi kuin niiden välinen gravitaatiovoima. Gravitaation välittäjää gravitonia ei ole havaittu, eikä gravitaatio kuulu standardimalliin.
 
@@ -461,7 +461,7 @@ Vapaa neutroni hajoaa reaktiolla $n \to p + e^- + \bar{\nu}_e$. Näytä, että v
 
 <!-- vaihe -->
 
-**Järkevyys.** Neutroni on $1{,}293\,\tfrac{\text{MeV}}{c^2}$ protonia raskaampi, ja tästä elektronin syntyminen vie $0{,}511\,\text{MeV}$, joten jäljelle jää vajaa megaelektronivoltti. Se on samaa suuruusluokkaa kuin ytimien beetahajoamisten energiat luvussa *Atomiydin ja radioaktiivinen hajoaminen*. Ilman antineutriinoa leptoniluku olisi lopussa $1$, joten antineutriinon on synnyttävä.
+**Järkevyys.** Neutroni on $1{,}293\,\tfrac{\text{MeV}}{c^2}$ protonia raskaampi. Myös elektroni on lopputilassa, joten sen massa $0{,}511\,\tfrac{\text{MeV}}{c^2}$ on jo vähennetty erotuksesta, ja jäljelle jää vajaa megaelektronivoltti. Se on samaa suuruusluokkaa kuin ytimien beetahajoamisten energiat luvussa *Atomiydin ja radioaktiivinen hajoaminen*. Ilman antineutriinoa leptoniluku olisi lopussa $1$, joten antineutriinon on synnyttävä.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että protonin massa on sen kolmen kvarkin massojen summa, kuten talon massa on sen tiilten massojen summa. Kvarkkien massat ovat kuitenkin vain noin $1\,\%$ protonin massasta. Suurin osa protonin massasta on kvarkkeja sitovan vahvan vuorovaikutuksen energiaa, $m = \tfrac{E}{c^2}$. Siksi kvarkkeja ei myöskään saa irti kuin tiiliä: irrottamiseen kuluva energia synnyttää uusia hadroneja.
@@ -472,6 +472,7 @@ Toinen virhe on ajatella, että antiaineella on negatiivinen massa tai että se 
 - Standardimallin perushiukkaset ovat kuusi kvarkkia, kuusi leptonia, välittäjähiukkaset ja Higgsin bosoni. Tavallinen aine koostuu kvarkeista $u$ ja $d$ sekä elektroneista.
 - Kvarkin varaus on $+\tfrac{2}{3}e$ tai $-\tfrac{1}{3}e$. Baryoni on kolme kvarkkia (protoni $uud$, neutroni $udd$), mesoni kvarkki ja antikvarkki. Vapaita kvarkkeja ei havaita.
 - Perusvuorovaikutukset ja niiden välittäjät: vahva (gluoni), sähkömagneettinen (fotoni), heikko ($W^\pm$, $Z^0$) ja gravitaatio (hypoteettinen gravitoni).
+- Higgsin kenttä antaa massan $W$- ja $Z$-bosoneille, kvarkeille ja varatuille leptoneille. Sen kvantti Higgsin bosoni löydettiin CERNissä vuonna 2012.
 - Antihiukkasella on sama massa ja vastakkainen varaus. Hiukkanen ja antihiukkanen voivat annihiloitua säteilyksi.
 - Hiukkasreaktiossa säilyvät varaus, baryoniluku ja leptoniluku, ja hajoaminen vaatii, että $Q = (m_\text{alku} - m_\text{loppu})\,c^2 > 0$.
 - Beeta miinus -hajoamisessa $d \to u + W^-$ ja $W^- \to e^- + \bar{\nu}_e$.

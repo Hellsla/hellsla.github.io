@@ -60,7 +60,7 @@ a["lhc-ratio"] = 6.8e6 / m_p                 # a 6,8 TeV proton has about 7200 t
 a["lhc-sum"] = 2 * 6.8                       # collision energy 13,6 TeV
 
 # ---------------------------------------------------------------- transfer task: muon decay mu- -> e- + anti-nu_e + nu_mu
-a["siirto"] = m_mu - m_e                     # 105,147 MeV -> 105,1 MeV (neutrino masses below 1 eV)
+a["siirto"] = m_mu - m_e                     # 105,147 MeV, to 0,001 MeV as the masses (neutrino masses below 1 eV)
 a["siirto-wrong-sum"] = m_mu + m_e           # 106,169: masses added
 # check 2: D+ = c anti-d: +2/3 + 1/3 = +1
 a["tarkistus-2"] = float(charge("c", "d"))   # 1

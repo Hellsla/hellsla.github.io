@@ -61,7 +61,7 @@
 ## fy8-15-L2-02
 **Annettu:** $\Lambda^0 \to p + \pi^-$, $m_\Lambda = 1115{,}683\,\tfrac{\text{MeV}}{c^2}$, $m_p = 938{,}272\,\tfrac{\text{MeV}}{c^2}$, $m_\pi = 139{,}570\,\tfrac{\text{MeV}}{c^2}$
 **Kysytty:** hajoamisessa vapautuva energia $Q$ megaelektronivoltteina
-**Periaate:** Hajoava hiukkanen on raskaampi kuin syntyvät yhteensä, ja massojen erotusta vastaava energia vapautuu syntyvien hiukkasten liike-energiaksi ($E = mc^2$). Hajoaminen on sallittu: varaus $0 = 1 - 1$ ja baryoniluku $1 = 1 + 0$ säilyvät.
+**Periaate:** Hajoava hiukkanen on raskaampi kuin syntyvät yhteensä, ja massojen erotusta vastaava energia vapautuu syntyvien hiukkasten liike-energiaksi ($E = mc^2$). Hajoaminen on sallittu: varaus $0 = 1 - 1$, baryoniluku $1 = 1 + 0$ ja leptoniluku $0 = 0 + 0$ säilyvät.
 **Kaava:** $Q = (m_\text{alku} - m_\text{loppu})\,c^2$, josta $Q = (m_\Lambda - m_p - m_\pi)\,c^2$
 **Muunnokset:** Ei tarvita: massat ovat yksikössä $\tfrac{\text{MeV}}{c^2}$, joten $c^2$ supistuu.
 **Sijoitus:** $Q = (1115{,}683 - 938{,}272 - 139{,}570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 37{,}841\,\text{MeV}$
@@ -80,23 +80,23 @@
 
 ## fy8-15-L2-04
 **Annettu:** neutroni $udd$, $m_u = 2{,}16\,\tfrac{\text{MeV}}{c^2}$, $m_d = 4{,}70\,\tfrac{\text{MeV}}{c^2}$, $m_n = 939{,}565\,\tfrac{\text{MeV}}{c^2}$
-**Kysytty:** kvarkkien massojen summan osuus $p$ neutronin massasta prosentteina
+**Kysytty:** kvarkkien massojen summan osuus $x$ neutronin massasta prosentteina
 **Periaate:** Ensin lasketaan kolmen kvarkin massojen summa, sitten verrataan sitä neutronin massaan yhdellä jakolaskulla. Massat ovat samassa yksikössä, joten osuus on yksikötön.
-**Kaava:** $m_\text{kvarkit} = m_u + 2\,m_d$, josta $p = \dfrac{m_u + 2\,m_d}{m_n} \cdot 100\,\%$
+**Kaava:** $m_\text{kvarkit} = m_u + 2\,m_d$, josta $x = \dfrac{m_u + 2\,m_d}{m_n} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita, koska kaikki massat ovat yksikössä $\tfrac{\text{MeV}}{c^2}$ ja yksikkö supistuu.
-**Sijoitus:** $p = \dfrac{2{,}16\,\tfrac{\text{MeV}}{c^2} + 2 \cdot 4{,}70\,\tfrac{\text{MeV}}{c^2}}{939{,}565\,\tfrac{\text{MeV}}{c^2}} \cdot 100\,\% = \dfrac{11{,}56}{939{,}565} \cdot 100\,\% = 1{,}2304\,\%$
+**Sijoitus:** $x = \dfrac{2{,}16\,\tfrac{\text{MeV}}{c^2} + 2 \cdot 4{,}70\,\tfrac{\text{MeV}}{c^2}}{939{,}565\,\tfrac{\text{MeV}}{c^2}} \cdot 100\,\% = \dfrac{11{,}56}{939{,}565} \cdot 100\,\% = 1{,}2304\,\%$
 **Vastaus:** $1{,}23\,\%$, kolme merkitsevää numeroa kuten kvarkkien massoissa.
 **Järkevyys:** Kvarkkien massat ovat muutamia $\tfrac{\text{MeV}}{c^2}$, neutronin lähes $1000\,\tfrac{\text{MeV}}{c^2}$, joten osuus on noin prosentin luokkaa. Loput noin $99\,\%$ neutronin massasta on kvarkkeja sitovan vahvan vuorovaikutuksen energiaa.
 
 ## fy8-15-L3-01
-**Annettu:** $\Omega^-$: kolme samanlaista kvarkkia, varaus $q = -1\,e$
-**Kysytty:** yhden kvarkin varaus $q_\text{k}$ alkeisvarauksen monikertana
-**Periaate:** Baryonin varaus on sen kolmen kvarkin varausten summa. Kun kvarkit ovat samanlaisia, niillä on sama varaus. Tulos kertoo, mihin kvarkkien ryhmään kvarkki kuuluu: $-\tfrac{1}{3}e$ on $d$-, $s$- ja $b$-kvarkin varaus.
-**Kaava:** $q = 3\,q_\text{k}$, josta $q_\text{k} = \dfrac{q}{3}$
-**Muunnokset:** Ei tarvita, koska varaukset ovat alkeisvarauksen monikertoja.
-**Sijoitus:** $q_\text{k} = \dfrac{-1\,e}{3} = -0{,}333\,e$
-**Vastaus:** $-0{,}333\,e$ eli tarkasti $-\tfrac{1}{3}e$; tulos on tarkka murtoluku.
-**Järkevyys:** Kvarkki ei voi olla $d$, koska $ddd$ on kevyempi hiukkanen $\Delta^-$; $\Omega^-$ on paljon raskaampi, $1672\,\tfrac{\text{MeV}}{c^2}$, ja se koostuu $s$-kvarkeista: $\Omega^- = sss$. Varaus $3 \cdot \left(-\tfrac{1}{3}e\right) = -e$ täsmää.
+**Annettu:** $\Omega^- = s\,s\,s$, $m_\Omega = 1672{,}45\,\tfrac{\text{MeV}}{c^2}$; $\Lambda^0 = u\,d\,s$, $m_\Lambda = 1115{,}683\,\tfrac{\text{MeV}}{c^2}$; $\Sigma^0 = u\,d\,s$, $m_\Sigma = 1192{,}642\,\tfrac{\text{MeV}}{c^2}$; $K^- = s\,\bar{u}$, $m_K = 493{,}677\,\tfrac{\text{MeV}}{c^2}$; $\pi^0$ varaukseton mesoni, $m_\pi = 134{,}977\,\tfrac{\text{MeV}}{c^2}$
+**Kysytty:** mahdollinen reaktio ja siinä vapautuva energia $Q$ megaelektronivoltteina
+**Periaate:** Reaktio on mahdollinen vain, jos varaus, baryoniluku ja leptoniluku säilyvät ja vapautuva energia on positiivinen, koska levossa oleva hiukkanen ei voi tuottaa itseään raskaampia tuotteita. Varaukset ja baryoniluvut lasketaan kvarkeista. Leptoneja ei ole mukana, joten $L = 0$ kaikkialla. Varaukset: $\Omega^-$: $3 \cdot \left(-\tfrac{1}{3}\right)e = -e$; $\Lambda^0$ ja $\Sigma^0$: $\left(\tfrac{2}{3} - \tfrac{1}{3} - \tfrac{1}{3}\right)e = 0$; $K^-$: $\left(-\tfrac{1}{3} - \tfrac{2}{3}\right)e = -e$. Baryoniluku on baryoneille $\tfrac{3 - 0}{3} = 1$ ja mesoneille $\tfrac{1 - 1}{3} = 0$.
+**Kaava:** $q_\text{alku} = q_\text{loppu}$, $B_\text{alku} = B_\text{loppu}$ ja $Q = (m_\text{alku} - m_\text{loppu})\,c^2 > 0$; reaktiolle (3) $Q = (m_\Omega - m_\Lambda - m_K)\,c^2$
+**Muunnokset:** Ei tarvita: massat ovat yksikössä $\tfrac{\text{MeV}}{c^2}$, joten $c^2$ supistuu.
+**Sijoitus:** (1) varaus $-1 = -1 + 0$ säilyy, mutta baryoniluku $1 \ne 0 + 0$, joten reaktio on kielletty. (2) varaus $-1 = 0 - 1$ ja baryoniluku $1 = 1 + 0$ säilyvät, mutta $Q = (1672{,}45 - 1192{,}642 - 493{,}677)\,\text{MeV} = -13{,}869\,\text{MeV} < 0$, joten energia ei riitä. (3) varaus $-1 = 0 - 1$ ja baryoniluku $1 = 1 + 0$ säilyvät, ja $Q = (1672{,}45 - 1115{,}683 - 493{,}677)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 63{,}090\,\text{MeV}$
+**Vastaus:** Reaktio (3) $\Omega^- \to \Lambda^0 + K^-$ on mahdollinen, ja siinä vapautuu $63{,}09\,\text{MeV}$, sadasosan tarkkuudella kuten omegan massa.
+**Järkevyys:** Pyöristettynä $1672 - 1116 - 494 = 62$, lähellä tulosta. Reaktiot (2) ja (3) eroavat vain baryonin massaltaan: kevyempi $\Lambda^0$ jättää energiaa yli, raskaampi $\Sigma^0$ ei. Pelkkä varaus ei kerro kvarkkien lajia: myös $\Delta^- = d\,d\,d$ on varaukseltaan $-e$, mutta sen massa on vain noin $1232\,\tfrac{\text{MeV}}{c^2}$, koska $d$-kvarkki on kevyempi kuin $s$-kvarkki. Havaittu $\Omega^-$ hajoaa useimmiten juuri reaktiolla (3).
 
 ## fy8-15-L3-02
 **Annettu:** antiaineen massa $1{,}0\,\text{g}$ ja tavallisen aineen massa $1{,}0\,\text{g}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$

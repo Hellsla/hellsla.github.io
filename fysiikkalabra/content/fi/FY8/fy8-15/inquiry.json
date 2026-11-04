@@ -90,7 +90,7 @@
       "prompt": "Opiskelijat selittävät, miksi neutroni hajoaa mutta protoni ei. Kenen selitys on mielestäsi oikea?",
       "choices": [
         {
-          "text": "Aino: Protoni on kevyin kolmen kvarkin hiukkanen. Tällaisten hiukkasten määrä ei muutu, joten protonille ei ole kevyempää tuotetta.",
+          "text": "Aino: Protoni on kevyin kolmen kvarkin hiukkanen. Baryonien määrä ei muutu, ja protoni on kevyin baryoni, joten protonille ei ole kevyempää tuotetta.",
           "correct": true,
           "feedback": "Teoria tukee tätä: baryoniluku säilyy, joten protonin hajoamistuotteissa pitäisi olla baryoni. Protoni on kevyin baryoni, ja hajoaminen vaatii, että tuotteet ovat kevyempiä. Neutroni on protonia raskaampi, joten se voi hajota protoniksi."
         },
@@ -247,7 +247,7 @@
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
       "prompt": "Kosmisen säteilyn törmäyksissä yläilmakehässä syntyy myoneja, joita tulee maanpinnalle jatkuvasti. Myoni hajoaa reaktiolla $\\mu^- \\to e^- + \\bar{\\nu}_e + \\nu_\\mu$. Kuinka paljon energiaa hajoamisessa vapautuu? Massat ovat $m_\\mu = 105{,}658\\,\\tfrac{\\text{MeV}}{c^2}$ ja $m_e = 0{,}511\\,\\tfrac{\\text{MeV}}{c^2}$; neutriinojen massat ovat merkityksettömän pieniä. Vastaa megaelektronivoltteina.",
-      "answer": 105.1,
+      "answer": 105.147,
       "unit": "MeV",
       "tolerance": 0.002,
       "hints": [
@@ -258,14 +258,14 @@
       "mistakes": [
         {
           "value": 106.2,
-          "feedback": "Laskit massat yhteen. Vapautuva energia on alkutilan ja lopputilan massojen erotus: elektronin syntyminen vie osan myonin energiasta."
+          "feedback": "Laskit massat yhteen. Vapautuva energia on alkutilan ja lopputilan massojen erotus, joten lopputilan elektronin massa vähennetään myonin massasta."
         },
         {
           "value": 105.7,
-          "feedback": "Tämä on myonin koko lepoenergia. Elektronin lepoenergia $0{,}511\\,\\text{MeV}$ ei vapaudu, vaan se kuluu elektronin syntymiseen; vähennä se."
+          "feedback": "Tämä on myonin koko lepoenergia. Elektroni on lopputilassa, joten sen massaa $0{,}511\\,\\tfrac{\\text{MeV}}{c^2}$ vastaava energia ei vapaudu; vähennä se."
         }
       ],
-      "solution": "**Annettu:** $\\mu^- \\to e^- + \\bar{\\nu}_e + \\nu_\\mu$, $m_\\mu = 105{,}658\\,\\tfrac{\\text{MeV}}{c^2}$, $m_e = 0{,}511\\,\\tfrac{\\text{MeV}}{c^2}$, neutriinojen massat merkityksettömän pienet\n\n**Kysytty:** hajoamisessa vapautuva energia $Q$ megaelektronivoltteina\n\n**Periaate:** Hajoavan hiukkasen massa on suurempi kuin syntyvien hiukkasten massojen summa, ja erotusta vastaava energia vapautuu syntyvien hiukkasten liike-energiaksi ($E = mc^2$). Hajoaminen on sallittu: varaus $-1 = -1 + 0 + 0$ ja leptoniluku $1 = 1 + (-1) + 1$ säilyvät.\n\n**Kaava:** $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$, josta $Q = (m_\\mu - m_e)\\,c^2$\n\n**Muunnokset:** Ei tarvita: massat ovat yksikössä $\\tfrac{\\text{MeV}}{c^2}$, joten $c^2$ supistuu ja $Q$ saadaan megaelektronivoltteina.\n\n**Sijoitus:** $Q = (105{,}658 - 0{,}511)\\,\\tfrac{\\text{MeV}}{c^2} \\cdot c^2 = 105{,}147\\,\\text{MeV}$\n\n**Vastaus:** $105{,}1\\,\\text{MeV}$, neljä merkitsevää numeroa; massat on annettu tuhannesosan tarkkuudella, joten tulos voidaan ilmoittaa myös muodossa $105{,}147\\,\\text{MeV}$.\n\n**Järkevyys:** Elektroni on noin $200$ kertaa myonia kevyempi, joten lähes koko myonin lepoenergia, noin $106\\,\\text{MeV}$, vapautuu. Energia on yli sata kertaa neutronin hajoamisen $0{,}782\\,\\text{MeV}$, koska myonin ja elektronin massaero on paljon suurempi kuin neutronin ja protonin."
+      "solution": "**Annettu:** $\\mu^- \\to e^- + \\bar{\\nu}_e + \\nu_\\mu$, $m_\\mu = 105{,}658\\,\\tfrac{\\text{MeV}}{c^2}$, $m_e = 0{,}511\\,\\tfrac{\\text{MeV}}{c^2}$, neutriinojen massat merkityksettömän pienet\n\n**Kysytty:** hajoamisessa vapautuva energia $Q$ megaelektronivoltteina\n\n**Periaate:** Hajoavan hiukkasen massa on suurempi kuin syntyvien hiukkasten massojen summa, ja erotusta vastaava energia vapautuu syntyvien hiukkasten liike-energiaksi ($E = mc^2$). Hajoaminen on sallittu: varaus $-1 = -1 + 0 + 0$ ja leptoniluku $1 = 1 + (-1) + 1$ säilyvät.\n\n**Kaava:** $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$, josta $Q = (m_\\mu - m_e)\\,c^2$\n\n**Muunnokset:** Ei tarvita: massat ovat yksikössä $\\tfrac{\\text{MeV}}{c^2}$, joten $c^2$ supistuu ja $Q$ saadaan megaelektronivoltteina.\n\n**Sijoitus:** $Q = (105{,}658 - 0{,}511)\\,\\tfrac{\\text{MeV}}{c^2} \\cdot c^2 = 105{,}147\\,\\text{MeV}$\n\n**Vastaus:** $105{,}147\\,\\text{MeV}$, tuhannesosan tarkkuudella kuten annetut massat.\n\n**Järkevyys:** Elektroni on noin $200$ kertaa myonia kevyempi, joten lähes koko myonin lepoenergia, noin $106\\,\\text{MeV}$, vapautuu. Energia on yli sata kertaa neutronin hajoamisen $0{,}782\\,\\text{MeV}$, koska myonin ja elektronin massaero on paljon suurempi kuin neutronin ja protonin."
     },
     {
       "id": "harjoitukset",
@@ -319,7 +319,7 @@
           "feedback": "Käytit $d$-kvarkin varausta $-\\tfrac{1}{3}e$. Antikvarkin varaus on vastakkainen: $\\bar{d}$:n varaus on $+\\tfrac{1}{3}e$."
         }
       ],
-      "solution": "**Annettu:** $D^+ = c\\,\\bar{d}$; $c$-kvarkin varaus $+\\tfrac{2}{3}e$, $d$-kvarkin $-\\tfrac{1}{3}e$\n\n**Kysytty:** mesonin varaus $q$ alkeisvarauksen monikertana\n\n**Periaate:** Hadronin varaus on sen kvarkkien ja antikvarkkien varausten summa. Antikvarkin varaus on vastakkainen kuin kvarkin, joten $\\bar{d}$:n varaus on $+\\tfrac{1}{3}e$.\n\n**Kaava:** $q = q_c + q_{\\bar{d}}$, josta $q = q_c - q_d$\n\n**Muunnokset:** Ei tarvita, koska varaukset ovat alkeisvarauksen $e$ monikertoja.\n\n**Sijoitus:** $q = +\\tfrac{2}{3}e - \\left(-\\tfrac{1}{3}e\\right) = +1\\,e$\n\n**Vastaus:** $+1\\,e$; tulos on tarkka, koska kvarkkien varaukset ovat tarkkoja murtolukuja.\n\n**Järkevyys:** Varaus on alkeisvarauksen kokonaislukumonikerta, kuten jokaisella hadronilla, ja se sopii merkintään $D^+$. Mesonin baryoniluku on $\\tfrac{1 - 1}{3} = 0$."
+      "solution": "**Annettu:** $D^+ = c\\,\\bar{d}$; $c$-kvarkin varaus $+\\tfrac{2}{3}e$, $d$-kvarkin $-\\tfrac{1}{3}e$\n\n**Kysytty:** mesonin varaus $q$ alkeisvarauksen monikertana\n\n**Periaate:** Hadronin varaus on sen kvarkkien ja antikvarkkien varausten summa. Antikvarkin varaus on vastakkainen kuin kvarkin, joten $\\bar{d}$:n varaus on $+\\tfrac{1}{3}e$.\n\n**Kaava:** $q = q_c + q_{\\bar{d}}$, josta $q = q_c - q_d$\n\n**Muunnokset:** Ei tarvita, koska varaukset ovat alkeisvarauksen $e$ monikertoja.\n\n**Sijoitus:** $q = +\\tfrac{2}{3}e - \\left(-\\tfrac{1}{3}e\\right) = +1\\,e$\n\n**Vastaus:** $+1\\,e$. Tulos on tarkka, koska kvarkkien varaukset ovat tarkkoja murtolukuja.\n\n**Järkevyys:** Varaus on alkeisvarauksen kokonaislukumonikerta, kuten jokaisella hadronilla, ja se sopii merkintään $D^+$. Mesonin baryoniluku on $\\tfrac{1 - 1}{3} = 0$."
     },
     {
       "id": "tarkistus-3",
