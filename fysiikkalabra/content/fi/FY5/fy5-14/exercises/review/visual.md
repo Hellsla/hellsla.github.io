@@ -1,15 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 9ee61ebb9069f1cc
+VERDICT: FAIL
+CONTENT-HASH: 1d2219da8a5ea8a9
 
 ## Blocking
-(none)
+- [Major] fy5-14-L3-05 (exercises.json, solutions.md "## fy5-14-L3-05") — near-duplicate of fy5-11-L2-05 (echo timing with a constant device delay t0, speed from the slope between first and last point, answer 343 m/s, t0 about 0,4 ms) and of fy5-10-L2-07 (speed of sound from the slope of a d-t line, 340 m/s). The task idea (sound-speed data with constant offset, slope, line not through the origin) is the same, and fy5-14 is the later chapter. Fix: replace it with a different level-3 data task for the chapter, e.g. speed of sound at several air temperatures (v = 331 + 0,6 T style data) with a fitted line, its slope, and an extrapolation with a reliability remark, or a figure-based beat/Doppler graph task.
 
 ## Polish
-- [Minor] solutions.md L2-01 Vastaus — the text after the answer chip begins with a stray "; erotus $3{,}0\,\text{Hz}$ …" on its own line (the Vastaus value is split off and the semicolon is left behind) — write "$259\,\text{Hz}$. Erotus …" (full stop) so the remainder starts as a sentence. Check the other Vastaus lines that continue after the value with a comma or semicolon.
+- [Minor] fy5-14-L2-05 — same procedure as old fy5-14-L2-04 (speed of a car from a measured Doppler frequency, answer about 23-30 m/s); the averaged data differ, so only a polish note.
+- [Minor] fy5-14-L3-04 — blood-flow ultrasound is not in this lesson; the stem walks the student through the two-step Doppler, so it is solvable, but a one-line mention of "punasolu heijastaa" in the lesson would help.
+- [Minor] fy5-14-L2-05 / L3-04 / L3-05 — solutions use the heading "Kuvaajan lukeminen" for a table; fine.
 
 ## Checked
-- Round 2: L2-01 in the open-exercises-L2-1280-1 capture ("$5{,}0\,\text{s}$:ssa", "voimakasta hetkeä eli huojahdusta" glosses the term; the Annettu and Sijoitus rows are tidy); L3-02 and L3-03 in the L3-1280-3 capture (a)–c) are clearly separated in the question, the units in Kysytty are in maths); the Hz wording is fine.
-- Round 1 captures for L1, L2 and L3 were otherwise unchanged and judged then.
+- Numbers verified: L1-08 0,167 s; L2-05 mean 430,5 Hz, v = 30,4 m/s; L2-06 f1 = 262 Hz, violin has stronger upper partials; L2-07 wrong 544 Hz, correct 548 Hz; L3-04 max shift 2,47 kHz gives 0,475 m/s; L3-05 slope 343,1 m/s, t0 0,42 ms (arithmetic correct, only the idea overlaps).
+- Captures: contact sheets 7-8: tables, long stems and aligned solution chains fit their cards; no overflow.
+- "graph" kind in L3-05 is justified (the task asks for a plot); no figure to check gridlines.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
