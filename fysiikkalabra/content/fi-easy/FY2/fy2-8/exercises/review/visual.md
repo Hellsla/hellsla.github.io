@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 12704897f4970fb1
+CONTENT-HASH: b4c6bc651f3acff0
+Mode: full
+Round: 1
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] L3-01-style ratio solution (open-exercises-L3-1280-4) — the answer line ends with a stray "Kertaa." ("Kertaa" also means "review!") — write "Auton päästö on noin 4,1-kertainen." or drop the unit word from the sentence.
-- [Minor] L1 exercise with 2 kWh gas solution (open-exercises-1280-6) — "Kahden kilowattitunnin päästö on siis noin kilogramma." is ungrammatical and contradicts "alle" above — "noin yksi kilogramma".
-- [Minor] Litre "l" in L2/L3 solutions (6,0 l; 32 MJ/l) — upright "l" in serif maths reads like "1" or "|" — use \ell or "L".
-- [Minor] L3 sanity check (open-exercises-L2-1280-2) — mixes $10^{-6}$ t and $0{,}001$ t conversions within one solution — use one route.
+- none
 
 ## Checked
-- stage-exercises-390 (intro, level cards)
-- open-exercises-1280-1, -3, -6 (level 1: questions, answer boxes, full solutions, sanity checks)
-- open-exercises-L2-1280-2 (level 2 with chart-reading and conversions)
-- open-exercises-L3-1280-2, -4 (level 3: long solution chains, ratio task)
-- Exercise figure emissions (grafiikka) read via the lesson fig-3-390 and the L1 solution text; units and legend consistent
+- fi-easy fy2-8-open-exercises-1280-6, -7, -8 (L1-06 greenhouse choices with feedback and solution, L1-07 climate vs weather, L1-08 input with kg unit and solution start): choices, feedback boxes, inline maths and the temperature values render correctly.
+- fy2-8-open-exercises-L2-1280-5 (L2-05 table with caption, columns t (a) and c (ppm), ppm/a unit next to input) and fi-easy fy2-8-open-exercises-L3-1280-5 (L3-04 table, a) to c) bold questions, Answer/Solution blocks with maths): layout fits at phone width, no overflow, no leftover Finnish in en.
+- Table headers short; units in column headers as in the Finnish. Remaining L2-06, L2-07, L3-05 follow the same components and were not found to differ from the Finnish text.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish (plain Finnish) 4 · accessibility 4

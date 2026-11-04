@@ -40,6 +40,73 @@
       "answer": 14,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L1-06",
+      "level": 1,
+      "text": "Which of the following energy sources is renewable?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Wind",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Uranium",
+          "feedback": "Uranium is not renewable: there is a limited amount of uranium ore, and no more of it forms on a human timescale. Nuclear power produced with uranium still does not emit carbon dioxide during operation."
+        },
+        {
+          "text": "Coal",
+          "feedback": "Coal is not renewable: it formed over millions of years, and no more forms at the rate at which it is burned. Burning it releases carbon dioxide."
+        },
+        {
+          "text": "Wind",
+          "feedback": "Correct: the Sun keeps heating the atmosphere, so the energy of the wind can be used without it running out. Wind is still weather-dependent, so renewable does not always mean available.",
+          "correct": true
+        },
+        {
+          "text": "Natural gas",
+          "feedback": "Natural gas is not renewable: it is a fossil fuel that formed over millions of years. Burning it releases carbon dioxide."
+        }
+      ]
+    },
+    {
+      "id": "fy2-6-L1-07",
+      "level": 1,
+      "text": "In an electricity grid, production and consumption must be equal at every moment. What is meant by regulating power?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "A power plant whose power can be changed quickly, such as a hydropower plant.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "A power plant whose power can be changed quickly, such as a hydropower plant.",
+          "feedback": "Correct: regulating power is production whose power can be changed as needed. The power of a hydropower plant can be increased or decreased quickly by adjusting the flow, which is why it suits balancing the variation of wind power.",
+          "correct": true
+        },
+        {
+          "text": "A power plant that produces steadily all year, such as a nuclear power plant.",
+          "feedback": "A plant that produces steadily is base load power. Its power is usually not changed to follow consumption, so it is not regulating power."
+        },
+        {
+          "text": "A power plant whose power varies with the weather, such as a wind turbine.",
+          "feedback": "The power of a weather-dependent plant varies, but it cannot be decided: wind and sun do not obey consumption. With regulating power the power is changed on purpose, which is why weather-dependent production needs regulating power alongside it."
+        }
+      ]
+    },
+    {
+      "id": "fy2-6-L1-08",
+      "level": 1,
+      "text": "The rated power of an example wind turbine is $4.0\\,\\text{MW}$, and it produces $11\\,\\text{GWh}$ of electricity in a year. For how many hours would the turbine have to run at its rated power to produce the same energy? Give the answer in hours.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 2800,
+      "unit": "h",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +141,127 @@
       "answer": 2.8,
       "unit": "million",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 23,
+      "unit": "percentage points",
+      "tolerance": 0.02,
+      "text": "The table gives, as example figures (an example data set, not the statistics of a real country), the electricity production of a country by source in two years ten years apart. Calculate the share of wind power in the total production for both years and the change in the share. Give the answer as the change in percentage points. Whose energy decreased the most, and what does this tell about the change in the production structure?",
+      "data": {
+        "caption": "Electricity production of an example country by source",
+        "columns": [
+          "Production method",
+          "$E_{1}\\,(\\text{TWh})$",
+          "$E_{2}\\,(\\text{TWh})$"
+        ],
+        "rows": [
+          [
+            "Nuclear power",
+            "22.0",
+            "32.0"
+          ],
+          [
+            "Hydropower",
+            "16.0",
+            "14.0"
+          ],
+          [
+            "Wind power",
+            "1.5",
+            "20.0"
+          ],
+          [
+            "Thermal power using fuels",
+            "28.5",
+            "14.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-6-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 33,
+      "unit": "%",
+      "tolerance": 0.02,
+      "text": "The table gives, as example figures (an example data set), the rated power and the energy produced during a year for three wind farms. A student says: “Farm B produces the most electricity, so it makes the best use of its rated power.”\n\na) For each farm, calculate how large a share of the rated power is in use on average, when a year has $8760\\,\\text{h}$.\n\nb) Is the student right? What is the error in the student's reasoning? Answer in the box with the average power of the best farm as a percentage of its rated power.",
+      "data": {
+        "caption": "Rated power and annual production of three wind farms",
+        "columns": [
+          "Farm",
+          "$P_\\text{rated}\\,(\\text{MW})$",
+          "$E\\,(\\text{GWh})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "30",
+            "84"
+          ],
+          [
+            "B",
+            "60",
+            "150"
+          ],
+          [
+            "C",
+            "12",
+            "35"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-6-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.6,
+      "unit": "million t",
+      "tolerance": 0.02,
+      "text": "The table gives, as example figures (an example data set), the life-cycle emissions of four production methods, that is, the amount of carbon dioxide produced over the whole life cycle per kilowatt-hour of electricity produced, and the lifetime of the plant. An example city uses $2.0\\,\\text{TWh}$ of electricity per year.\n\na) How many million tonnes of carbon dioxide per year would be saved, as the part of the life-cycle emissions that belongs to the year's electricity production, if the city's electricity were produced with wind power instead of coal? Use the emission factors and convert $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nb) Which production method would be the best choice on the basis of emissions and lifetime? What does the table not tell, even though the choice would have to be made?",
+      "data": {
+        "caption": "Life-cycle emissions and lifetime of production methods",
+        "columns": [
+          "Production method",
+          "$m/E\\,(\\text{g/kWh})$",
+          "Lifetime $(\\text{a})$"
+        ],
+        "rows": [
+          [
+            "Coal",
+            "820",
+            "40"
+          ],
+          [
+            "Solar power",
+            "45",
+            "30"
+          ],
+          [
+            "Wind power",
+            "12",
+            "25"
+          ],
+          [
+            "Nuclear power",
+            "12",
+            "60"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +288,117 @@
       "answer": 13,
       "unit": "GW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-6-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 6.7,
+      "unit": "GW",
+      "tolerance": 0.02,
+      "text": "The table gives, as example figures (an example data set), the average wind power and the electricity consumption for each day of a week. The total rated power of the wind turbines is $9.0\\,\\text{GW}$. Nuclear power plants produce a steady $3.5\\,\\text{GW}$ for the whole week. Assume that other production and imports cover what wind and nuclear power leave uncovered.\n\na) Calculate the energy produced by wind power in the week in gigawatt-hours and the average power of wind power as a percentage of the rated power.\n\nb) For each day, calculate the power that other power plants and imports must produce. Answer in the box with the greatest such power in gigawatts.\n\nc) What does the variation of wind power require of the rest of the electricity system? Justify with the numbers in the table, and also comment on Sunday.",
+      "data": {
+        "caption": "Wind power and electricity consumption during a week",
+        "columns": [
+          "Day",
+          "$P_\\text{wind}\\,(\\text{GW})$",
+          "$P_\\text{consumption}\\,(\\text{GW})$"
+        ],
+        "rows": [
+          [
+            "Monday",
+            "4.8",
+            "9.5"
+          ],
+          [
+            "Tuesday",
+            "3.1",
+            "9.8"
+          ],
+          [
+            "Wednesday",
+            "0.6",
+            "10.2"
+          ],
+          [
+            "Thursday",
+            "0.4",
+            "10.6"
+          ],
+          [
+            "Friday",
+            "1.9",
+            "10.1"
+          ],
+          [
+            "Saturday",
+            "4.2",
+            "8.7"
+          ],
+          [
+            "Sunday",
+            "5.4",
+            "8.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-6-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 17,
+      "unit": "€/MWh",
+      "tolerance": 0.03,
+      "text": "A municipality is comparing two ways of producing electricity. The table gives, as example figures (an example data set, not data of real projects), the details of a wind farm and a nuclear power plant. Assume that each plant produces the same amount of energy every year during its whole lifetime as in the first year, and that the cost is only the construction cost. A year has $8760\\,\\text{h}$.\n\na) Calculate the annual energy of each plant in megawatt-hours.\n\nb) Calculate the construction cost per megawatt-hour produced over the whole lifetime. Answer in the box with the value of the wind farm in euros per megawatt-hour.\n\nc) For each plant, calculate the amount of carbon dioxide in tonnes that belongs to one year's production from the life-cycle emissions, when $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nd) Compare the production methods on the basis of emissions, cost and controllability, and give a justified recommendation.",
+      "data": {
+        "caption": "Comparison of a wind farm and a nuclear power plant",
+        "columns": [
+          "Property",
+          "Wind farm",
+          "Nuclear power plant"
+        ],
+        "rows": [
+          [
+            "Rated power $P_\\text{rated}\\,(\\text{MW})$",
+            "100",
+            "1200"
+          ],
+          [
+            "Average power, share of rated power $(\\%)$",
+            "33",
+            "90"
+          ],
+          [
+            "Construction cost $K\\,(\\text{million €})$",
+            "120",
+            "6000"
+          ],
+          [
+            "Lifetime $(\\text{a})$",
+            "25",
+            "60"
+          ],
+          [
+            "Life-cycle emissions $m/E\\,(\\text{g/kWh})$",
+            "12",
+            "12"
+          ],
+          [
+            "Controllability of power",
+            "Weather-dependent",
+            "Steady"
+          ]
+        ]
+      }
     }
   ]
 }
