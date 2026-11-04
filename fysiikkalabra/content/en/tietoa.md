@@ -35,3 +35,5 @@ I am **Lauri Hellsten**, a teacher of physics, chemistry and mathematics from Es
 Ruukkilabra is my own learning material project. Although its starting point is the future teaching at Kiviruukki upper secondary school, the material is also meant for other teachers and students to use.
 
 Ruukkilabra is developing all the time, and I welcome feedback and suggestions for improvement.
+
+<p class="about-tag">#ruukkirocks</p>

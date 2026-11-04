@@ -86,13 +86,13 @@
 **Muunnokset:** Ei tarvita: annosnopeudet ovat samassa yksikössä, ja paksuus saadaan samassa yksikössä kuin puoliintumispaksuus eli millimetreinä.
 **Sijoitus:** $\dfrac{\dot{H}_0}{\dot{H}} = \dfrac{96\,\mu\text{Sv/h}}{3{,}0\,\mu\text{Sv/h}} = 32 = 2^5$, joten $d = 6{,}0\,\text{mm} \cdot 5 = 30\,\text{mm}$
 **Vastaus:** $30\,\text{mm}$, kaksi merkitsevää numeroa kuten puoliintumispaksuudessa $6{,}0\,\text{mm}$ ja tavoitteessa $3{,}0\,\mu\text{Sv/h}$.
-**Järkevyys:** Viisi puolitusta peräkkäin: $96 \to 48 \to 24 \to 12 \to 6 \to 3\,\mu\text{Sv/h}$. Kolmen sentin lyijy on tavallinen gammalähteen suojan paksuus.
+**Järkevyys:** Viisi puolitusta peräkkäin: $96 \to 48 \to 24 \to 12 \to 6 \to 3$ (yksikkönä $\mu\text{Sv/h}$). Kolmen sentin lyijy on tavallinen gammalähteen suojan paksuus.
 
 ## fy8-13-L3-01
 **Annettu:** annosnopeus $\dot{H}_1 = 80\,\mu\text{Sv/h}$ etäisyydellä $r_1 = 1{,}0\,\text{m}$ ilman suojaa, työaika $t = 30\,\text{min}$; A: $r = 2{,}0\,\text{m}$ ilman suojaa; B: $r = 1{,}0\,\text{m}$ ja lyijyä $d = 18\,\text{mm}$, $d_{1/2} = 6{,}0\,\text{mm}$
 **Kysytty:** annosten erotus $H_\text{A} - H_\text{B}$ mikrosieverteinä etumerkin kanssa
 **Periaate:** Tavassa A annosnopeutta pienentää etäisyys neliölain mukaan, tavassa B lyijy puoliintumispaksuuden mukaan. Työaika on molemmissa sama, joten annokset saadaan kertomalla kummankin annosnopeus samalla ajalla.
-**Kaava:** $H_\text{A} = \dot{H}_1 \left(\dfrac{r_1}{r_\text{A}}\right)^2 t$ ja $H_\text{B} = \dot{H}_1 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} t$, joten $H_\text{A} - H_\text{B} = \dot{H}_1 t \left[\left(\dfrac{r_1}{r_\text{A}}\right)^2 - \left(\tfrac{1}{2}\right)^{d/d_{1/2}}\right]$
+**Kaava:** $H_\text{A} = \dot{H}_1 \left(\dfrac{r_1}{r_\text{A}}\right)^2 t$ ja $H_\text{B} = \dot{H}_1 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} t$, joten $H_\text{A} - H_\text{B} = \dot{H}_1 t \left[\left(\tfrac{r_1}{r_\text{A}}\right)^2 - \left(\tfrac{1}{2}\right)^{d/d_{1/2}}\right]$
 **Muunnokset:** $t = 30\,\text{min} = 30 \cdot \tfrac{1}{60}\,\text{h} = 0{,}50\,\text{h}$
 **Sijoitus:** $H_\text{A} = 80\,\mu\text{Sv/h} \cdot \left(\tfrac{1{,}0\,\text{m}}{2{,}0\,\text{m}}\right)^2 \cdot 0{,}50\,\text{h} = 20\,\mu\text{Sv/h} \cdot 0{,}50\,\text{h} = 10\,\mu\text{Sv}$ ja $H_\text{B} = 80\,\mu\text{Sv/h} \cdot \left(\tfrac{1}{2}\right)^{3} \cdot 0{,}50\,\text{h} = 10\,\mu\text{Sv/h} \cdot 0{,}50\,\text{h} = 5{,}0\,\mu\text{Sv}$, joten $H_\text{A} - H_\text{B} = 10\,\mu\text{Sv} - 5{,}0\,\mu\text{Sv} = 5{,}0\,\mu\text{Sv}$
 **Vastaus:** $H_\text{A} - H_\text{B} = +5{,}0\,\mu\text{Sv}$, joten tapa B antaa pienemmän annoksen; kaksi merkitsevää numeroa kuten etäisyyksissä ja puoliintumispaksuudessa.

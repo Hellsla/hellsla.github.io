@@ -44,7 +44,7 @@
 **Principle:** The background radiation is electromagnetic radiation whose energy is quantised into photons (chapter *The photoelectric effect and the photon*). The energy of a photon is inversely proportional to its wavelength.
 **Formula:** $E = hf$ and $f = \dfrac{c}{\lambda}$, so $E = \dfrac{hc}{\lambda}$
 **Conversions:** $1.06\,\text{mm} = 1.06 \cdot 10^{-3}\,\text{m}$. To change from joules to electronvolts, substitute $1\,\text{J} = \dfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV}$.
-**Substitution:** $E = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{1.06 \cdot 10^{-3}\,\text{m}} = 1.8740 \cdot 10^{-22}\,\text{J} = \dfrac{1.8740 \cdot 10^{-22}}{1.602 \cdot 10^{-19}}\,\text{eV} = 1.1698 \cdot 10^{-3}\,\text{eV}$
+**Substitution:** $E = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{1.06 \cdot 10^{-3}\,\text{m}} = 1.8740 \cdot 10^{-22}\,\text{J} = \dfrac{1.8740 \cdot 10^{-22}}{1.602 \cdot 10^{-19}}\,\text{eV} = 1.1698 \cdot 10^{-3}\,\text{eV}$
 **Answer:** $1.17 \cdot 10^{-3}\,\text{eV}$, three significant figures, as in the wavelength $1.06\,\text{mm}$.
 **Reasonableness:** A photon of visible light has an energy of $1.7$–$3.3\,\text{eV}$ and a wavelength of about $500\,\text{nm}$. The wavelength of the background radiation is about $2000$ times longer, so the energy is about $2000$ times smaller: $2\,\text{eV} : 2000 = 1 \cdot 10^{-3}\,\text{eV}$.
 
@@ -74,7 +74,7 @@
 **Principle:** The expansion has stretched every wavelength by a factor of $1100$, so when it was released, the wavelength was $1100$ times shorter than now. The energy of a photon is obtained from the wavelength, as in the chapter *The photoelectric effect and the photon*.
 **Formula:** $\lambda = \dfrac{\lambda_\text{now}}{1100}$ and $E = \dfrac{hc}{\lambda}$, so $E = \dfrac{1100\,hc}{\lambda_\text{now}}$
 **Conversions:** $1.06\,\text{mm} = 1.06 \cdot 10^{-3}\,\text{m}$, and to change from joules to electronvolts, substitute $1\,\text{J} = \dfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV}$.
-**Substitution:** $\lambda = \dfrac{1.06 \cdot 10^{-3}\,\text{m}}{1100} = 9.636 \cdot 10^{-7}\,\text{m}$ and $E = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{9.636 \cdot 10^{-7}\,\text{m}} = 2.0615 \cdot 10^{-19}\,\text{J} = \dfrac{2.0615 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 1.287\,\text{eV}$
+**Substitution:** $\lambda = \dfrac{1.06 \cdot 10^{-3}\,\text{m}}{1100} = 9.636 \cdot 10^{-7}\,\text{m}$ and $E = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{9.636 \cdot 10^{-7}\,\text{m}} = 2.0615 \cdot 10^{-19}\,\text{J} = \dfrac{2.0615 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 1.287\,\text{eV}$
 **Answer:** $1.3\,\text{eV}$, two significant figures, as in the stretching factor $1100$.
 **Reasonableness:** The wavelength $964\,\text{nm}$ is near-infrared, a little below the limit of visible light, $1.7\,\text{eV}$. A typical photon was therefore much weaker than the $13.6\,\text{eV}$ needed to ionise hydrogen. However, there are vastly more photons than atoms, so the atoms stayed ionised for as long as there were enough of the rare photons above $13.6\,\text{eV}$. When the temperature fell to about $3000\,\text{K}$, there were too few of them, the electrons bound to atoms and the light could travel freely.
 

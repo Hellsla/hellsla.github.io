@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e15b044052a843fa
+CONTENT-HASH: c4e7b71ee927ba5d
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- Level 1 is mostly the same counting skill (L1-01 to L1-03, L1-05); L1-01 repeats the Delta++ step of the lesson.
-- No level 2 task decides whether a reaction is possible with the conservation laws; first in L3-03.
-- No quark-level beta decay or mediator task.
+- Level 1 is mostly one counting skill; L1-01 repeats the Delta++ step (carried).
+- No level 2 task decides whether a reaction is possible (carried).
+- No quark-level beta decay or mediator task (carried).
 
 ## Checked
-- Empty diff: exercise set is the version passed in round 1; levels, solutions and Selkeä suomi wording stand.
+- Delta: L2-03 Sijoitus: h·(c/X) instead of (h·c)/X — same value, intermediate results and answers unchanged, so the arithmetic and the student's path (Kaava hc/λ, then Sijoitus) still agree; the fraction now shows c/X as the quantity being divided, which is arguably clearer for tracing the units.
+- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Sijoitus now wraps as 'h · [fraction c/X] = result' on two to four short rows, nothing clipped, no page scroll; same fraction-over-line form as the other solutions.
+- Levels, tasks and answers untouched by the commit; earlier PASS stands.
