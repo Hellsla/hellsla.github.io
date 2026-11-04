@@ -118,3 +118,74 @@
 **Sijoitus:** $E_\text{h} = \dfrac{6}{8} \cdot 240\,\text{J} = 0{,}75 \cdot 240\,\text{J} = 180\,\text{J}$
 **Vastaus:** $180\,\text{J}$ eli $1{,}8 \cdot 10^{2}\,\text{J}$, kaksi merkitsevää numeroa kuten tulevassa energiassa $240\,\text{J}$.
 **Järkevyys:** Yksi ruutu vastaa energiaa $240\,\text{J} : 8 = 30\,\text{J}$, joten hyötyenergia on $2 \cdot 30\,\text{J} = 60\,\text{J}$ ja häviöt $6 \cdot 30\,\text{J} = 180\,\text{J}$; yhteensä $240\,\text{J}$, kuten energian säilyminen vaatii. Hyötysuhde on $60\,\text{J} : 240\,\text{J} = 25\,\%$, mikä on mahdollinen esimerkiksi pienelle lelun moottorille.
+
+
+## fy2-4-L1-06
+**Kysytty:** voiko laitteen hyötysuhde olla $120\,\%$.
+**Periaate:** Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta: $\eta = \dfrac{E_\text{a}}{E_\text{o}}$. Energia säilyy, ja otettu energia jakautuu hyötyenergiaan ja häviöihin, $E_\text{o} = E_\text{a} + E_\text{h}$. Häviöt eivät ole negatiivisia, joten hyötyenergia on enintään yhtä suuri kuin otettu energia.
+**Mallivastaus:** Väite on mahdoton. Hyötysuhde $120\,\%$ tarkoittaisi, että $E_\text{a} = 1{,}2 \cdot E_\text{o}$, eli laite antaisi hyötyä enemmän kuin siihen otetaan, ja ylimääräinen energia syntyisi tyhjästä. Hyötysuhde on enintään $100\,\%$. Todellisissa laitteissa se jää usein alle $100\,\%$, koska osa otetusta energiasta ei päädy hyötyyn. Huolellinen rakentaminen tai pitkä käyntiaika ei muuta tätä.
+
+## fy2-4-L1-07
+**Annettu:** otettu energia $E_\text{o} = 36\,\text{kJ}$ ja hyötyenergia (liike-energia) $E_\text{a} = 27\,\text{kJ}$
+**Kysytty:** häviöiksi muuttuva energia $E_\text{h}$ kilojouleina
+**Periaate:** Energia säilyy, joten laitteeseen otettu energia jakautuu hyötyenergiaan ja häviöihin. Häviöt saadaan vähentämällä hyötyenergia otetusta energiasta.
+**Kaava:** $E_\text{o} = E_\text{a} + E_\text{h}$, josta $E_\text{h} = E_\text{o} - E_\text{a}$
+**Muunnokset:** Ei tarvita: molemmat energiat ovat kilojouleina.
+**Sijoitus:** $E_\text{h} = 36\,\text{kJ} - 27\,\text{kJ} = 9{,}0\,\text{kJ}$
+**Vastaus:** $9{,}0\,\text{kJ}$, kaksi merkitsevää numeroa kuten annetuissa energioissa.
+**Järkevyys:** Häviöt ovat $9{,}0 : 36 = 0{,}25 = 25\,\%$ otetusta energiasta, joten hyötysuhde on $27 : 36 = 75\,\%$ ja $75\,\% + 25\,\% = 100\,\%$. Häviöt ovat pienemmät kuin otettu energia, kuten pitääkin, ja ne ovat pääosin lämpöä.
+
+## fy2-4-L1-08
+**Annettu:** hyötysuhde $\eta = 90\,\%$ ja hyötyteho (sähköteho) $P_\text{a} = 180\,\text{kW}$
+**Kysytty:** generaattorin turbiinilta ottama teho $P_\text{o}$ kilowatteina
+**Periaate:** Hyötyteho on hyötysuhteen osuus otetusta tehosta. Otettu teho on siis suurempi kuin hyötyteho, ja se saadaan jakamalla hyötyteho hyötysuhteella.
+**Kaava:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, josta $P_\text{o} = \dfrac{P_\text{a}}{\eta}$
+**Muunnokset:** Prosentti muunnetaan luvuksi sijoittamalla $1\,\% = 0{,}01$: $90\,\% = 90 \cdot 0{,}01 = 0{,}90$. Tehoa ei tarvitse muuntaa, koska vastaus pyydetään kilowatteina.
+**Sijoitus:** $P_\text{o} = \dfrac{180\,\text{kW}}{0{,}90} = 200\,\text{kW}$
+**Vastaus:** $200\,\text{kW}$ eli $2{,}0 \cdot 10^{2}\,\text{kW}$, kaksi merkitsevää numeroa kuten hyötysuhteessa $90\,\%$.
+**Järkevyys:** Otettu teho on suurempi kuin hyötyteho, kuten pitääkin. Tarkistus: $0{,}90 \cdot 200\,\text{kW} = 180\,\text{kW}$, ja häviöteho on $200\,\text{kW} - 180\,\text{kW} = 20\,\text{kW}$ eli $10\,\%$ otetusta.
+
+## fy2-4-L2-05
+**Annettu:** taulukosta lamppujen otettu teho $P_\text{o}$ ja valoteho $P_\text{a}$: hehkulamppu $60\,\text{W}$ ja $3{,}0\,\text{W}$, halogeenilamppu $42\,\text{W}$ ja $4{,}2\,\text{W}$, loistelamppu $18\,\text{W}$ ja $3{,}6\,\text{W}$, ledilamppu $9{,}0\,\text{W}$ ja $2{,}7\,\text{W}$
+**Kysytty:** ledilampun hyötysuhteen ja halogeenilampun hyötysuhteen suhde, kuinka moninkertainen ledin hyötysuhde on
+**Periaate:** Lamput käyvät tasaisella teholla, joten hyötysuhde on hyötytehon ja otetun tehon suhde. Se lasketaan jokaiselle lampulle erikseen, ja vertailu tehdään jakamalla ledin hyötysuhde halogeenilampun hyötysuhteella.
+**Kaava:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$
+**Muunnokset:** Ei tarvita: kaikki tehot ovat watteina, joten yksiköt supistuvat. Hyötysuhteet lasketaan suhdelukuina, ja prosentteihin siirrytään sijoittamalla $1 = 100\,\%$.
+**Sijoitus:** Hehkulamppu $\eta = \dfrac{3{,}0\,\text{W}}{60\,\text{W}} = 0{,}050 = 5{,}0\,\%$, halogeenilamppu $\eta = \dfrac{4{,}2\,\text{W}}{42\,\text{W}} = 0{,}10 = 10\,\%$, loistelamppu $\eta = \dfrac{3{,}6\,\text{W}}{18\,\text{W}} = 0{,}20 = 20\,\%$ ja ledilamppu $\eta = \dfrac{2{,}7\,\text{W}}{9{,}0\,\text{W}} = 0{,}30 = 30\,\%$. Ledin ja halogeenilampun suhde on $\dfrac{0{,}30}{0{,}10} = 3{,}0$.
+**Vastaus:** Ledilampun hyötysuhde on $3{,}0$ kertaa halogeenilampun hyötysuhde. Tulos on annettu kahdella merkitsevällä numerolla kuten taulukon arvot.
+**Järkevyys:** Hyötysuhteet kasvavat järjestyksessä hehkulamppu, halogeeni, loistelamppu, ledi, ja kaikki ovat alle $100\,\%$. Ledi tarvitsee valotehoon $2{,}7\,\text{W}$ vain $9{,}0\,\text{W}$, kun halogeenilamppu tarvitsisi saman valotehon antamiseen $2{,}7\,\text{W} : 0{,}10 = 27\,\text{W}$, ja $27 : 9{,}0 = 3{,}0$. Huomaa, että eniten valoa antaa halogeenilamppu ($4{,}2\,\text{W}$), mutta se ei ole hyötysuhteeltaan paras: suuri hyötyteho ei tarkoita suurta hyötysuhdetta.
+
+## fy2-4-L2-06
+**Annettu:** taulukosta moottoriin otettu sähköenergia $E_\text{o}$ ja moottorin antama liike-energia $E_\text{a}$ ajan $t$ funktiona; viimeisellä rivillä $t = 40\,\text{s}$, $E_\text{o} = 120\,\text{kJ}$ ja $E_\text{a} = 95\,\text{kJ}$
+**Kysytty:** moottorin hyötysuhde $\eta$ prosentteina
+**Periaate:** Hyötysuhde on hyötyenergian osuus otetusta energiasta. Energiat on mitattu alusta asti (kohdassa $t = 0$ kumpikin on nolla), joten mittausjakson koko energioista saadaan hyötysuhde suoraan. Muut taulukon rivit toimivat tarkistuksena: tasaisesti käyvän moottorin hyötysuhde ei riipu siitä, kuinka pitkää jaksoa tarkastellaan.
+**Kaava:** $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
+**Muunnokset:** Ei tarvita: molemmat energiat ovat kilojouleina, joten yksiköt supistuvat. Prosentiksi muunnetaan sijoittamalla $1 = 100\,\%$.
+**Sijoitus:** $\eta = \dfrac{95\,\text{kJ}}{120\,\text{kJ}} = 0{,}792 = 0{,}792 \cdot 100\,\% = 79\,\%$
+**Vastaus:** $79\,\%$, kaksi merkitsevää numeroa. Mittauspisteissä on pientä hajontaa, joten tarkempi luku olisi harhaanjohtava.
+**Järkevyys:** Muiden rivien suhteet ovat $\dfrac{24}{30} = 0{,}80$, $\dfrac{48}{61} = 0{,}79$ ja $\dfrac{71}{89} = 0{,}80$, joten ne antavat saman hyötysuhteen. Moottori ottaa tehon $120\,\text{kJ} : 40\,\text{s} = 3{,}0\,\text{kW}$ ja antaa hyötytehon $95\,\text{kJ} : 40\,\text{s} = 2{,}4\,\text{kW}$; häviöt ovat $120\,\text{kJ} - 95\,\text{kJ} = 25\,\text{kJ}$ eli noin $21\,\%$. Sähkömoottorille tulos on järkevä.
+
+## fy2-4-L2-07
+**Kysytty:** kumman moottorin hyötysuhde on suurempi.
+**Periaate:** Hyötysuhde on hyötytehon osuus otetusta tehosta, $\eta = \dfrac{P_\text{a}}{P_\text{o}}$. Se on suhdeluku, joten sen avulla voi verrata eri kokoisia laitteita. Hyötytehon tai häviötehon suuruus yksin ei ratkaise vertailua.
+**Mallivastaus:** Moottorin A hyötysuhde on $\eta_\text{A} = \dfrac{1{,}5\,\text{kW}}{2{,}0\,\text{kW}} = 0{,}75 = 75\,\%$ ja moottorin B $\eta_\text{B} = \dfrac{400\,\text{W}}{500\,\text{W}} = 0{,}80 = 80\,\%$. Moottorin B hyötysuhde on siis suurempi, vaikka A antaa suuremman hyötytehon. A:n häviöteho on $2{,}0\,\text{kW} - 1{,}5\,\text{kW} = 0{,}5\,\text{kW}$ ja B:n $500\,\text{W} - 400\,\text{W} = 100\,\text{W}$, mutta ratkaisevaa on häviön osuus otetusta tehosta: A:lla $25\,\%$ ja B:llä $20\,\%$.
+
+## fy2-4-L3-04
+**Annettu:** sähköauto: akusta otettu energia $E_\text{s} = 17\,\text{kWh}$ sadalla kilometrillä ja hyötysuhde $\eta_\text{s} = 90\,\%$; bensiiniauto: bensiiniä $V = 6{,}0\,\textsf{l}$ sadalla kilometrillä, energiasisältö $h = 32\,\text{MJ/l}$ ja hyötysuhde $\eta_\text{b} = 25\,\%$
+**Kysytty:** kuinka moninkertainen bensiiniauton tankista ottama energia $E_\text{b}$ on sähköauton akusta ottamaan energiaan $E_\text{s}$ verrattuna; lisäksi kummankin auton hyötyenergia ja perustelu eroon
+**Periaate:** Autoja voi verrata vain, kun energiat ovat samassa yksikössä. Bensiinin energia lasketaan litramäärästä ja energiasisällöstä ja muunnetaan kilowattitunneiksi sijoittamalla $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Hyötyenergia on hyötysuhde kerrottuna otetulla energialla. Energia säilyy: otettu energia on hyötyä ja häviöitä (lämpöä).
+**Kaava:** $E_\text{b} = V \cdot h$, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, josta $E_\text{a} = \eta \cdot E_\text{o}$, ja vertailu $\dfrac{E_\text{b}}{E_\text{s}}$
+**Muunnokset:** $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$, joten $1\,\text{MJ} = \dfrac{1}{3{,}6}\,\text{kWh}$. Hyötysuhteet: $90\,\% = 0{,}90$ ja $25\,\% = 0{,}25$.
+**Sijoitus:** Bensiinin energia on $E_\text{b} = 6{,}0\,\textsf{l} \cdot 32\,\text{MJ/l} = 192\,\text{MJ}$. Kilowattitunteina $E_\text{b} = \dfrac{192\,\text{MJ}}{3{,}6\,\text{MJ/kWh}} = 53{,}3\,\text{kWh}$. Suhde on $\dfrac{E_\text{b}}{E_\text{s}} = \dfrac{53{,}3\,\text{kWh}}{17\,\text{kWh}} = 3{,}1$. Hyötyenergiat ovat sähköautolla $E_\text{a,s} = 0{,}90 \cdot 17\,\text{kWh} = 15{,}3\,\text{kWh}$ ja bensiiniautolla $E_\text{a,b} = 0{,}25 \cdot 53{,}3\,\text{kWh} = 13{,}3\,\text{kWh}$.
+**Vastaus:** Bensiiniauto ottaa tankista noin $3{,}1$ kertaa enemmän energiaa kuin sähköauto akusta, kaksi merkitsevää numeroa. Hyötyenergiat ovat lähes yhtä suuret, $15\,\text{kWh}$ ja $13\,\text{kWh}$, koska molempien on ajettava sama matka. Ero otetussa energiassa johtuu hyötysuhteesta: sähköauto hyödyntää $90\,\%$ otetusta energiasta, bensiiniauto vain $25\,\%$, ja loput $75\,\%$ eli noin $40\,\text{kWh}$ muuttuu lämmöksi.
+**Järkevyys:** Hyötysuhteiden suhde $0{,}90 : 0{,}25 = 3{,}6$ ja hyötyenergioiden suhde $15{,}3 : 13{,}3 = 1{,}15$ antavat $3{,}6 : 1{,}15 = 3{,}1$, kuten pitääkin. Tarkastelu koskee vain autojen omaa energiankäyttöä, sähkön ja bensiinin tuotannon häviöt eivät ole mukana, joten tulos ei yksin ratkaise, kumpi on ympäristön kannalta parempi.
+
+## fy2-4-L3-05
+**Annettu:** taulukon viimeiseltä riviltä $t = 240\,\text{s}$, otettu sähköenergia $E_\text{o} = 2160\,\text{J}$ ja lämmöksi muuttunut energia $E_\text{h} = 1510\,\text{J}$; oppilaan tulos $\eta = 70\,\%$
+**Kysytty:** oppilaan virhe ja ledilampun oikea hyötysuhde $\eta$ prosentteina
+**Periaate:** Hyötysuhde on hyötyenergian osuus otetusta energiasta. Mitattu lämpö on häviöenergiaa, ei hyötyä: ledilampun hyöty on valo. Energia säilyy, joten otettu energia on valoa ja lämpöä, $E_\text{o} = E_\text{a} + E_\text{h}$, ja valoenergia saadaan vähentämällä lämpö otetusta energiasta.
+**Kaava:** $E_\text{a} = E_\text{o} - E_\text{h}$ ja $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
+**Muunnokset:** Ei tarvita: kaikki energiat ovat jouleina. Prosentiksi muunnetaan sijoittamalla $1 = 100\,\%$.
+**Sijoitus:** Oppilaan virhe: hän jakoi häviöenergian otetulla energialla, joten $0{,}70$ on häviöiden osuus eikä hyötysuhde. Valoenergia on $E_\text{a} = 2160\,\text{J} - 1510\,\text{J} = 650\,\text{J}$, ja $\eta = \dfrac{650\,\text{J}}{2160\,\text{J}} = 0{,}301 = 0{,}301 \cdot 100\,\% = 30\,\%$.
+**Vastaus:** Oikea hyötysuhde on $30\,\%$, kaksi merkitsevää numeroa. Oppilas laski häviöiden osuuden ($70\,\%$) hyötysuhteena; hyötysuhteen ja häviöiden osuuksien summa on $30\,\% + 70\,\% = 100\,\%$.
+**Järkevyys:** Muut rivit tukevat tulosta: lampun otettu teho on $2160\,\text{J} : 240\,\text{s} = 9{,}0\,\text{W}$ ja häviöteho $1510\,\text{J} : 240\,\text{s} = 6{,}3\,\text{W}$, joten valoteho on $9{,}0\,\text{W} - 6{,}3\,\text{W} = 2{,}7\,\text{W}$ ja $\dfrac{2{,}7\,\text{W}}{9{,}0\,\text{W}} = 0{,}30$. Esimerkiksi rivillä $t = 120\,\text{s}$ saadaan $\dfrac{1080 - 750}{1080} = 0{,}31$. Ledilampun tyypillinen hyötysuhde on noin $30\,\%$, joten tulos sopii. Oppilaan $70\,\%$ olisi ledille liian hyvä ja sopisi pikemminkin siihen, että lampun hukka on $70\,\%$.

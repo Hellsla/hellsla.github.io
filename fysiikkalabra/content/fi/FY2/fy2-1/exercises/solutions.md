@@ -44,6 +44,21 @@
 **Vastaus:** $510\,\text{J}$, kolme merkitsevää numeroa kuten potentiaalienergiassa $600\,\text{J}$.
 **Järkevyys:** Liike-energia on pienempi kuin alkuenergia $600\,\text{J}$, koska osa muuttui lämpöenergiaksi, kuten kitkan kohdalla pitää. Takaisinlasku: $510\,\text{J} + 90\,\text{J} = 600\,\text{J}$.
 
+## fy2-1-L1-06
+**Kysytty:** akkuun varastoituneen energian energialaji
+**Periaate:** Energialaji kertoo, missä muodossa energia on. Akku on laite, johon energia on varastoitu kemiallisten aineiden sidoksiin, ja se vapautuu sähköenergiaksi, kun laite otetaan käyttöön. Liike-energia kuuluu liikkuvalle kappaleelle, potentiaalienergia riippuu kappaleen korkeudesta ja säteilyenergia on valoa ja muuta säteilyä.
+**Mallivastaus:** Kemiallinen energia. Levossa oleva puhelin ei liiku (ei liike-energiaa), sen energia ei riipu korkeudesta (ei potentiaalienergiaa) eikä se säteile valoa (ei säteilyenergiaa). Energia on akun aineissa kemiallisena energiana, ja puhelinta käytettäessä se muuttuu sähköenergiaksi ja siitä valoksi, ääneksi ja lämpöenergiaksi.
+
+## fy2-1-L1-07
+**Kysytty:** mitä auton liike-energialle tapahtuu jarrutuksessa
+**Periaate:** Energiaa ei synny eikä katoa, vaan se muuttaa muotoa: eristetyssä systeemissä $E_\text{alussa} = E_\text{lopussa}$. Jarrutuksessa kitka muuttaa liike-energiaa lämpöenergiaksi. Arkikielen "energia kuluu" tarkoittaa fysiikassa, että energia muuttuu muotoon, jota on vaikea käyttää hyödyksi.
+**Mallivastaus:** Oikea vastaus on ensimmäinen: liike-energia muuttuu jarruissa, renkaissa ja tiessä lämpöenergiaksi, ja energian kokonaismäärä pysyy samana. Kun auto on pysähtynyt, sillä ei ole enää liike-energiaa, mutta sama energia on lämpöenergiana jarrulevyissä, renkaissa ja tiessä, jotka ovat hieman lämmenneet. Väite, että energia katoaa tai kuluu loppuun, rikkoo energian säilymislakia.
+
+## fy2-1-L1-08
+**Kysytty:** energian muuttuminen ketjuna laturista akkuun ja se, miksi laturi lämpenee
+**Periaate:** Energia ei synny eikä katoa, vaan muuttaa muotoa: $E_\text{alussa} = E_\text{lopussa}$. Jokaisessa muutoksessa osa energiasta muuttuu lämpöenergiaksi, joka siirtyy lämpönä ympäristöön.
+**Mallivastaus:** Pistorasiasta tulee sähköenergiaa. Laturi muuttaa sen puhelimen akulle sopivaksi sähköenergiaksi, ja akussa sähköenergia varastoituu kemialliseksi energiaksi. Ketju on siis sähköenergia → sähköenergia → kemiallinen energia. Muutos ei ole täydellinen: osa pistorasiasta tulevasta sähköenergiasta muuttuu laturissa lämpöenergiaksi, ja siksi laturi lämpenee ja lämpöä siirtyy ympäristöön. Energian säilymislain mukaan pistorasiasta otettu energia on yhtä suuri kuin akkuun varastoitunut kemiallinen energia ja lämpöenergia yhteensä, joten energiaa ei ole kadonnut. Lämpöenergiaa ei kuitenkaan voi enää käyttää puhelimen lataamiseen.
+
 ## fy2-1-L2-01
 **Annettu:** akusta vapautuva kemiallinen energia $E_\text{kem} = 3{,}00\,\text{kJ}$, potkulaudan ja kuljettajan liike-energia $E_\text{k} = 2150\,\text{J}$
 **Kysytty:** lämpöenergiaksi muuttuva energia $E_\text{lämpö}$ yksikössä $\text{J}$
@@ -84,6 +99,36 @@
 **Vastaus:** $29\,000\,\text{J}$ eli $2{,}9 \cdot 10^{4}\,\text{J}$, kaksi merkitsevää numeroa, koska tiedot on annettu kilojoulen tarkkuudella ja erotus on $29\,\text{kJ}$.
 **Järkevyys:** Veteen menee $331\,\text{kJ} : 360\,\text{kJ} \approx 0{,}92$ eli yli $90\,\%$, ja loput $29\,\text{kJ}$ on pieni osa, kuten hyvin eristetyllä keittimellä pitääkin. Takaisinlasku: $331\,000\,\text{J} + 29\,000\,\text{J} = 360\,000\,\text{J}$.
 
+## fy2-1-L2-05
+**Annettu:** tilojen lämmitys $36{,}0\,\text{GJ}$, lämmin käyttövesi $10{,}5\,\text{GJ}$, sähkölaitteet ja valaistus $9{,}0\,\text{GJ}$, sauna $4{,}5\,\text{GJ}$
+**Kysytty:** tilojen lämmityksen osuus koko kulutuksesta prosentteina ja suurin säästökohde
+**Periaate:** Osuus on osan suhde kokonaisuuteen. Kokonaiskulutus on kaikkien käyttökohteiden energioiden summa, koska kulutettu energia muuttuu kussakin kohteessa lopulta lämpöenergiaksi eikä sitä lasketa kahteen kertaan.
+**Kaava:** $E_\text{yht} = E_\text{lämmitys} + E_\text{vesi} + E_\text{sähkö} + E_\text{sauna}$ ja osuus $= \dfrac{E_\text{lämmitys}}{E_\text{yht}}$
+**Muunnokset:** Kaikki energiat ovat gigajouleina, joten muunnoksia ei tarvita. Osuus muutetaan prosenteiksi kertomalla sadalla.
+**Sijoitus:** Summa on $E_\text{yht} = 36{,}0\,\text{GJ} + 10{,}5\,\text{GJ} + 9{,}0\,\text{GJ} + 4{,}5\,\text{GJ} = 60{,}0\,\text{GJ}$, joten osuus on $\dfrac{36{,}0\,\text{GJ}}{60{,}0\,\text{GJ}} = 0{,}600 = 60{,}0\,\%$
+**Vastaus:** Lämmityksen osuus on $60\,\%$ kulutuksesta. Suurin säästökohde on tilojen lämmitys, koska siinä kuluu eniten energiaa: kymmenen prosentin säästö lämmityksessä vähentäisi kulutusta $3{,}6\,\text{GJ}$, mutta saman säästön saunassa vain $0{,}45\,\text{GJ}$.
+**Järkevyys:** Osuus on välillä $0$–$100\,\%$, ja lämmitys on suurin erä, joten yli puolet on uskottava pohjoisessa asuinrakennuksessa. Osuuksien summa tarkistuksena: $60\,\% + 17{,}5\,\% + 15\,\% + 7{,}5\,\% = 100\,\%$.
+
+## fy2-1-L2-06
+**Annettu:** putoavan veden potentiaalienergian väheneminen $100\,\text{J}$ kierroksella, generaattorin sähköenergia $100\,\text{J}$, pumpun käyttämä sähköenergia $80\,\text{J}$, vesi palaa yläaltaaseen
+**Kysytty:** kierroksella tyhjästä syntyvä energia $E_\text{luotu}$ yksikössä $\text{J}$ ja se, mikä energiaperiaate rikkoutuu
+**Periaate:** Energia säilyy: eristetyssä systeemissä $E_\text{alussa} = E_\text{lopussa}$. Kierroksen lopussa vesi on taas yläaltaassa, joten veden energia on sama kuin alussa. Koko laitteen kokonaisenergia ei saa muuttua, kun mikään ei tule ulkopuolelta.
+**Kaava:** Lamppuun jäävä energia on $E_\text{lamppu} = E_\text{sähkö} - E_\text{pumppu}$, ja koska vesi on kierroksen jälkeen ennallaan, sama energia on laitteeseen luotua energiaa: $E_\text{luotu} = E_\text{lamppu}$
+**Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
+**Sijoitus:** $E_\text{luotu} = E_\text{lamppu} = 100\,\text{J} - 80\,\text{J} = 20\,\text{J}$
+**Vastaus:** $20\,\text{J}$ kierrosta kohti, kymmenen joulen tarkkuudella. Väite rikkoo energian säilymislakia, koska energiaa ei voi syntyä tyhjästä: laitteessa pitäisi syntyä $20\,\text{J}$ lisää energiaa joka kierroksella.
+**Järkevyys:** Pumpun pitäisi nostaa vesi takaisin ylös, ja se vaatii vähintään yhtä paljon energiaa kuin vesi putoamisessa menettää, eli $100\,\text{J}$. Pumppu saa kuitenkin vain $80\,\text{J}$, joten nosto ei onnistu. Oikeassa laitteessa kitka ja sähkö muuttavat lisäksi osan energiasta lämpöenergiaksi, joten lamppuun ei jäisi mitään ja laite pysähtyisi. Ikiliikkuja ei ole mahdollinen.
+
+## fy2-1-L2-07
+**Annettu:** jokaisen lampun sähköenergia $E_\text{sähkö} = 720\,\text{kJ}$; valoksi muuttuva energia hehkulampulla $36\,\text{kJ}$, halogeenilampulla $90\,\text{kJ}$ ja LED-lampulla $180\,\text{kJ}$
+**Kysytty:** hehkulampun ja LED-lampun lämpöenergioiden erotus $\Delta E_\text{lämpö}$ yksikössä $\text{kJ}$
+**Periaate:** Lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi, eikä energiaa synny eikä katoa, joten $E_\text{sähkö} = E_\text{valo} + E_\text{lämpö}$.
+**Kaava:** $E_\text{lämpö} = E_\text{sähkö} - E_\text{valo}$ kummallekin lampulle ja $\Delta E_\text{lämpö} = E_\text{lämpö,hehku} - E_\text{lämpö,LED}$
+**Muunnokset:** Kaikki energiat ovat kilojouleina, joten muunnoksia ei tarvita.
+**Sijoitus:** $E_\text{lämpö,hehku} = 720\,\text{kJ} - 36\,\text{kJ} = 684\,\text{kJ}$ ja $E_\text{lämpö,LED} = 720\,\text{kJ} - 180\,\text{kJ} = 540\,\text{kJ}$, joten $\Delta E_\text{lämpö} = 684\,\text{kJ} - 540\,\text{kJ} = 144\,\text{kJ}$
+**Vastaus:** $144\,\text{kJ}$ eli noin $1{,}4 \cdot 10^{2}\,\text{kJ}$ enemmän lämpöenergiaa hehkulampulla. Tarkkuus on kilojoulen, koska tiedot on annettu kilojouleina.
+**Järkevyys:** Hehkulampun lämpöenergia on suurempi, koska sen valon osuus on pienempi ($36\,\text{kJ}$ on vain $5\,\%$ sähköenergiasta, LEDin $180\,\text{kJ}$ on $25\,\%$). Takaisinlasku: LED $180\,\text{kJ} + 540\,\text{kJ} = 720\,\text{kJ}$. Perustelu: kun valoa halutaan yhtä paljon, LED-lamppu tarvitsee vähemmän sähköenergiaa, ja vähemmän energiaa muuttuu hyödyttömäksi lämpöenergiaksi, joten LED on viisaampi valinta energian kannalta.
+
 ## fy2-1-L3-01
 **Annettu:** kohdassa A $E_\text{p} = 900\,\text{J}$ ja $E_\text{k} = 0\,\text{J}$; kohdassa B $E_\text{p} = 400\,\text{J}$ ja $E_\text{k} = 480\,\text{J}$; kohdassa C $E_\text{p} = 0\,\text{J}$ ja $E_\text{k} = 750\,\text{J}$
 **Kysytty:** kohtien B ja C välillä lämpöenergiaksi muuttuva energia $\Delta E_\text{lämpö}$ yksikössä $\text{J}$
@@ -108,3 +153,23 @@
 **Kysytty:** a) energialajit ydinvoimalan ketjun jokaisessa vaiheessa; b) mihin noin kaksi kolmannesta ydinenergiasta menee ja miksi energia ei ole kadonnut
 **Periaate:** Energia muuttaa muotoa ja siirtyy, mutta ei synny eikä katoa: voimalan, jäähdytysveden ja ympäristön muodostamassa systeemissä $E_\text{alussa} = E_\text{lopussa}$. Jokaisessa muutoksessa osa energiasta muuttuu lämpöenergiaksi, joka leviää ympäristöön ja jota on vaikea käyttää hyödyksi.
 **Mallivastaus:** a) Uraanin atomiytimiin sitoutunut ydinenergia vapautuu reaktorissa ja muuttuu veden ja höyryn lämpöenergiaksi. Höyry virtaa turbiiniin ja pyörittää sitä, jolloin energia on liike-energiaa. Generaattori muuttaa turbiinin pyörimisen liike-energian sähköenergiaksi. b) Sähköksi saadaan vain noin kolmannes, koska turbiinista tuleva höyry on vielä lämmintä: siitä siirtyy energiaa lämpönä jäähdytysveteen, joka vie sen mereen. Lisäksi turbiinissa, generaattorissa ja putkissa osa energiasta muuttuu lämpöenergiaksi, joka siirtyy lämpönä ympäristöön. Energia ei ole kadonnut: sähköenergia ja mereen ja ympäristöön siirtynyt lämpöenergia ovat yhteensä yhtä suuret kuin vapautunut ydinenergia. Noin kaksi kolmannesta päätyy siis lämpöenergiaksi, joka on levinnyt laajalle eikä ole enää helposti hyödynnettävissä.
+
+## fy2-1-L3-04
+**Annettu:** kulutus lähteittäin: bioenergia $380\,\text{PJ}$, öljy $290\,\text{PJ}$, ydinenergia $230\,\text{PJ}$, vesi- ja tuulivoima $120\,\text{PJ}$, kivihiili $100\,\text{PJ}$, maakaasu $80\,\text{PJ}$; asukkaita $N = 5{,}5 \cdot 10^{6}$; $1\,\text{PJ} = 10^{15}\,\text{J}$ ja $1\,\text{GJ} = 10^{9}\,\text{J}$
+**Kysytty:** a) fossiilisten polttoaineiden osuus kokonaiskulutuksesta prosentteina; b) kokonaiskulutus asukasta kohti yksikössä $\text{GJ}$; c) mitä energian kuluttaminen tarkoittaa ja mihin energia päätyy
+**Periaate:** Kokonaiskulutus on kaikkien lähteiden energioiden summa, ja osuus on osan suhde kokonaisuuteen. Asukasta kohti saadaan jakamalla kokonaisenergia asukasluvulla. Energia säilyy, joten kulutettu energia ei häviä vaan muuttuu toiseen muotoon.
+**Kaava:** $E_\text{yht} = \sum E$, osuus $= \dfrac{E_\text{fossiilinen}}{E_\text{yht}}$ ja $E_\text{asukas} = \dfrac{E_\text{yht}}{N}$
+**Muunnokset:** Etuliitteet: $1\,\text{PJ} = 10^{15}\,\text{J}$ ja $1\,\text{GJ} = 10^{9}\,\text{J}$, joten $1\,\text{PJ} = 10^{15} : 10^{9}\,\text{GJ} = 10^{6}\,\text{GJ}$.
+**Sijoitus:** Kokonaiskulutus on $E_\text{yht} = 380\,\text{PJ} + 290\,\text{PJ} + 230\,\text{PJ} + 120\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 1200\,\text{PJ}$. Fossiilisten summa on $E_\text{fossiilinen} = 290\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 470\,\text{PJ}$, joten osuus on $\dfrac{470\,\text{PJ}}{1200\,\text{PJ}} = 0{,}392 = 39{,}2\,\%$. Gigajouleina kokonaiskulutus on $1200\,\text{PJ} = 1200 \cdot 10^{6}\,\text{GJ} = 1{,}2 \cdot 10^{9}\,\text{GJ}$, ja asukasta kohti $E_\text{asukas} = \dfrac{1{,}2 \cdot 10^{9}\,\text{GJ}}{5{,}5 \cdot 10^{6}} = 218\,\text{GJ}$.
+**Vastaus:** a) Fossiilisten osuus on noin $39\,\%$. b) Kulutus on noin $2{,}2 \cdot 10^{2}\,\text{GJ}$ eli $220\,\text{GJ}$ asukasta kohti vuodessa (kaksi merkitsevää numeroa kuten asukasluvussa). c) Energiaa ei kuluteta loppuun, vaan se muuttuu muodosta toiseen: polttoaineiden kemiallinen ja ydinenergia, vesi- ja tuulivoiman liike-energia muuttuvat sähköksi, lämmöksi ja liikkeeksi ja lopulta melkein kokonaan lämpöenergiaksi, joka leviää ympäristöön. Energia ei ole kadonnut, mutta lämpönä sitä on vaikea käyttää hyödyksi.
+**Järkevyys:** Osuus on alle $100\,\%$. Takaisinlasku: $218\,\text{GJ} \cdot 5{,}5 \cdot 10^{6} \approx 1{,}2 \cdot 10^{9}\,\text{GJ}$.
+
+## fy2-1-L3-05
+**Annettu:** vaiheiden tulo ja hyödyllinen energia: paneeli $5{,}00\,\text{MJ} \to 0{,}80\,\text{MJ}$, latausohjain ja akku $0{,}80\,\text{MJ} \to 0{,}64\,\text{MJ}$, akun purku ja johdot $0{,}64\,\text{MJ} \to 0{,}56\,\text{MJ}$, LED-lamppu $0{,}56\,\text{MJ} \to 0{,}14\,\text{MJ}$
+**Kysytty:** a) lämpöenergia $E_\text{lämpö}$ jokaisessa vaiheessa ja yhteensä yksikössä $\text{MJ}$; b) vaihe, jossa lämpöenergiaa syntyy eniten, ja sen osuus prosentteina; c) säilymislain tarkistus ja perustelu
+**Periaate:** Jokaisessa vaiheessa energia säilyy: $E_\text{tulo} = E_\text{ulos} + E_\text{lämpö}$, joten lämpöenergiaksi muuttuu se osa, joka ei jatka hyödyllisenä energiana eteenpäin. Koko ketjun lämpöenergia on vaiheiden lämpöenergioiden summa.
+**Kaava:** $E_\text{lämpö} = E_\text{tulo} - E_\text{ulos}$ kussakin vaiheessa ja $E_\text{lämpö,yht}$ on vaiheiden summa
+**Muunnokset:** Kaikki energiat ovat megajouleina, joten muunnoksia ei tarvita.
+**Sijoitus:** Paneelissa $5{,}00\,\text{MJ} - 0{,}80\,\text{MJ} = 4{,}20\,\text{MJ}$, latausohjaimessa ja akussa $0{,}80\,\text{MJ} - 0{,}64\,\text{MJ} = 0{,}16\,\text{MJ}$, akun purussa ja johdoissa $0{,}64\,\text{MJ} - 0{,}56\,\text{MJ} = 0{,}08\,\text{MJ}$ ja lampussa $0{,}56\,\text{MJ} - 0{,}14\,\text{MJ} = 0{,}42\,\text{MJ}$. Summa on $E_\text{lämpö,yht} = 4{,}20\,\text{MJ} + 0{,}16\,\text{MJ} + 0{,}08\,\text{MJ} + 0{,}42\,\text{MJ} = 4{,}86\,\text{MJ}$. Eniten syntyy paneelissa, ja sen osuus on $\dfrac{4{,}20\,\text{MJ}}{4{,}86\,\text{MJ}} = 0{,}864 = 86\,\%$.
+**Vastaus:** a) Lämpöenergiaksi muuttuu yhteensä $4{,}86\,\text{MJ}$ (kolme merkitsevää numeroa kuten taulukossa). b) Eniten lämpöenergiaa syntyy aurinkopaneelissa, noin $86\,\%$ kaikesta. c) Tarkistus: $0{,}14\,\text{MJ} + 4{,}86\,\text{MJ} = 5{,}00\,\text{MJ}$ eli yhtä paljon kuin paneeliin tullut säteilyenergia. Energiaa ei ole kulunut loppuun: se on muuttunut valoksi ja lämpöenergiaksi, joka siirtyy ympäristöön. Valo on vain $2{,}8\,\%$ alkuenergiasta, koska jokaisessa vaiheessa osa muuttuu lämpöenergiaksi, jota ei saa takaisin hyödylliseen muotoon.
+**Järkevyys:** Hyödyllistä energiaa jää jäljelle aina vähemmän kuin vaiheeseen tuli ($5{,}00 > 0{,}80 > 0{,}64 > 0{,}56 > 0{,}14$), kuten pitääkin. Lampun valoa on $0{,}14\,\text{MJ} : 5{,}00\,\text{MJ} = 0{,}028$ eli $2{,}8\,\%$ paneeliin tulleesta. Aurinkopaneelin suuri lämpöosuus on uskottava, koska suurin osa auringonvalosta ei muutu sähköksi.
