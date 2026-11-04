@@ -56,8 +56,8 @@
           "feedback": "Väärin: kun valo tulee pienemmän taitekertoimen aineesta suurempaan, säde taittuu normaalia kohti, ja taittunut säde on olemassa kaikilla tulokulmilla. Rajakulmaa ei silloin ole, joten kokonaisheijastumista ei tapahdu."
         },
         {
-          "text": "Valo tulee ilmasta mihin tahansa läpinäkyvään aineeseen, ja tulokulma on suuri, jolloin rajapinta toimii kuin peili.",
-          "feedback": "Väärin: kohtisuoraan rajapintaan osuva säde menee läpi suoraan, ja vain pieni osa siitä heijastuu. Kokonaisheijastumiseen tarvitaan tulokulma, joka on suurempi kuin rajakulma, ei pieni tulokulma."
+          "text": "Valo tulee suuremman taitekertoimen aineesta pienempään, ja tulokulma on pieni, jolloin säde osuu rajapintaan lähes kohtisuorasti.",
+          "feedback": "Väärin: lähes kohtisuoraan rajapintaan osuva säde menee pääosin läpi, ja vain pieni osa siitä heijastuu. Kokonaisheijastumiseen tarvitaan tulokulma, joka on suurempi kuin rajakulma, ei pieni tulokulma."
         },
         {
           "text": "Valo tulee suuremman taitekertoimen aineesta pienempään, ja tulokulma ylittää rajakulman, jolloin taittunutta sädettä ei ole.",

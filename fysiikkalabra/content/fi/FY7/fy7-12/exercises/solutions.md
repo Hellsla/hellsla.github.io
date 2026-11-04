@@ -140,7 +140,7 @@
 **Kaava:** $v = \dfrac{c}{n}$ ja $s = v t$, josta $s = \dfrac{c t}{n}$
 **Muunnokset:** $t = 0{,}50\,\text{ms} = 0{,}50 \cdot 10^{-3}\,\text{s}$. Lopuksi $1\,\text{km} = 1000\,\text{m}$.
 **Sijoitus:** $s = \dfrac{3{,}00 \cdot 10^8\,\text{m/s} \cdot 0{,}50 \cdot 10^{-3}\,\text{s}}{1{,}45} = 1{,}034 \cdot 10^5\,\text{m} = 103{,}4\,\text{km}$
-**Vastaus:** $1{,}0 \cdot 10^2\,\text{km}$ (noin $100\,\text{km}$), kaksi merkitsevää numeroa kuten aika $0{,}50\,\text{ms}$.
+**Vastaus:** $103\,\text{km}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}45$ ja valon nopeus.
 **Järkevyys:** Tyhjiössä valo kulkisi $0{,}50\,\text{ms}$:ssa $150\,\text{km}$. Lasissa valo on hitaampaa ja kulkee tässä ajassa vain osan siitä: $150\,\text{km} : 1{,}45 = 103\,\text{km}$.
 
 ## fy7-12-L2-05
@@ -181,7 +181,7 @@
 **Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, $\varphi_\text{max} = 90^\circ - \alpha_\text{r}$ ja $n_0 \sin\theta_\text{max} = n_1 \sin\varphi_\text{max}$, josta $\theta_\text{max} = \sin^{-1}\left(n_1 \cos\alpha_\text{r}\right) = \sin^{-1}\sqrt{n_1^2 - n_2^2}$
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä, ja kulmat ovat asteina.
 **Sijoitus:** Kuidulle B $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}47}{1{,}50} = 78{,}52^\circ$, $\varphi_\text{max} = 90^\circ - 78{,}52^\circ = 11{,}48^\circ$ ja $\sin\theta_\text{max} = 1{,}50 \cdot \sin 11{,}48^\circ = 0{,}2985$, joten $\theta_\text{max} = 17{,}37^\circ$. Kuiduille A ja C lyhyemmällä kaavalla: $\theta_\text{max} = \sin^{-1}\sqrt{1{,}48^2 - 1{,}46^2} = \sin^{-1} 0{,}2425 = 14{,}03^\circ$ ja $\theta_\text{max} = \sin^{-1}\sqrt{1{,}46^2 - 1{,}45^2} = \sin^{-1} 0{,}1706 = 9{,}82^\circ$. Viiveluvut ovat A: $\dfrac{1{,}48}{1{,}46} - 1 = 0{,}0137$, B: $\dfrac{1{,}50}{1{,}47} - 1 = 0{,}0204$ ja C: $\dfrac{1{,}46}{1{,}45} - 1 = 0{,}0069$.
-**Vastaus:** kuidun B vastaanottokulma on $17^\circ$ ($17{,}4^\circ$). Tarkkuutta rajoittaa taitekertoimien erotus $n_1 - n_2$, joka on vain yhden tai kahden merkitsevän numeron luku. Kuiduille A ja C vastaanottokulmat ovat $14{,}0^\circ$ ja $9{,}8^\circ$. Kuidulla B taitekertoimien ero on suurin, ja siksi sekä vastaanottokulma että viiveluku ($2{,}0\,\%$) ovat suurimmat: kuitu ottaa vastaan eniten valoa, mutta pulssi leviää eniten. Kuidulla C molemmat ovat pienimmät.
+**Vastaus:** kuidun B vastaanottokulma on $17{,}4^\circ$, kolme merkitsevää numeroa kuten taitekertoimet. Taitekertoimien erotus $n_1 - n_2 = 0{,}03$ on yhden merkitsevän numeron luku, joten tulos on herkkä taitekertoimien pyöristykselle. Kuiduille A ja C vastaanottokulmat ovat $14{,}0^\circ$ ja $9{,}8^\circ$. Kuidulla B taitekertoimien ero on suurin, ja siksi sekä vastaanottokulma että viiveluku ($2{,}0\,\%$) ovat suurimmat: kuitu ottaa vastaan eniten valoa, mutta pulssi leviää eniten. Kuidulla C molemmat ovat pienimmät.
 **Järkevyys:** Tarkistus kuidulle B: kun ytimessä säde on kulmassa $11{,}48^\circ$ akseliin nähden, se osuu rajapintaan kulmassa $78{,}52^\circ$ eli juuri rajakulmassa, ja $1{,}50 \cdot \sin 11{,}48^\circ = 0{,}2985 = 1{,}00 \cdot \sin 17{,}37^\circ$. Vastaanottokulmat ovat pieniä, koska taitekertoimet ovat lähes yhtä suuret. Kuidulla B viive on $2{,}0\,\%$ ja kuidulla C vain $0{,}69\,\%$, eli noin kolmasosa.
 
 ## fy7-12-L3-05
