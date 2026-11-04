@@ -1,0 +1,21 @@
+{
+  "id": "fy8-14",
+  "course": "FY8",
+  "title": "Radiation in medicine and technology",
+  "goals": [
+    "LOPS FY8: types and biological effects of ionising radiation, and applications in medicine and technology",
+    "Thematic study: use of radiation in medicine, diagnostics and treatment; safety of patients and staff",
+    "Cross-curricular: wellbeing competence"
+  ],
+  "prerequisites": [
+    "fy8-13"
+  ],
+  "glossary": [
+    "X-radiation",
+    "tracer",
+    "radiotherapy"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

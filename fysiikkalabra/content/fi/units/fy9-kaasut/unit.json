@@ -1,0 +1,14 @@
+{
+ "id": "fy9-kaasut",
+ "course": "FY9",
+ "chapter": 2,
+ "order": 3,
+ "title": "Paine, kaasut ja lämpövoimakone",
+ "description": "Kerrataan FY3-moduulin paine ja hydrostaattinen paine, Boylen laki ja kaasujen tilanmuutokset, ideaalikaasun tilanyhtälö, absoluuttisen nollapisteen määrittäminen sekä kaasun työ, lämpövoimakone ja voimalaitoksen hyötysuhde ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}

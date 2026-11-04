@@ -1,0 +1,552 @@
+{
+  "version": 1,
+  "contribution": "The concept of a field is introduced through force: the electric field strength E = F : q does not depend on the test charge, field lines show the direction and strength of the field, the uniform field between parallel plates is found in a simulation that calculates the field from the charges on the plates and not from an equation, and the relation E = U : d is derived from work; a charged particle gets a constant acceleration in a uniform field.",
+  "learn": [
+    "calculate the electric field strength from the force and the charge, and from the voltage and the distance of the plates.",
+    "explain with field lines why the field between parallel plates is uniform.",
+    "determine the direction and magnitude of the force on a charged particle in a uniform field."
+  ],
+  "prior": [
+    "Coulomb's law: the force between two point charges is directly proportional to the product of the charges and inversely proportional to the square of the distance (chapter *Electric charge and Coulomb's law*)",
+    "Voltage tells the energy per unit charge: $1\\,\\text{V} = 1\\,\\text{J/C}$ (chapter *Electric circuit, current and voltage*)",
+    "Newton's second law $\\overline{F} = m\\overline{a}$ (chapter *Newton's second law*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "An electric air purifier sucks room air into itself. At the start of the device the dust particles get an electric charge, and then the air flows between two parallel metal plates with a voltage of several kilovolts between them. The air comes out clean, and the dust stays as a grey layer on the surface of the plates, although the plates are not in the way of the airflow.",
+      "question": "Why do the charged dust particles drift to the surface of the plates, and does the force on a particle depend on where between the plates it is?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: Coulomb's law",
+      "optional": true,
+      "prompt": "The electric force between two small charged balls is $12\\,\\mu\\text{N}$. The charge of one ball is doubled, and the distance between the balls stays the same. How large is the force now?",
+      "choices": [
+        {
+          "text": "$24\\,\\mu\\text{N}$",
+          "correct": true,
+          "feedback": "Correct. By Coulomb's law $F = k\\tfrac{q_1 q_2}{r^2}$ the force is directly proportional to each charge, so doubling one charge doubles the force (chapter *Electric charge and Coulomb's law*). Today the same observation leads to the concept of a field: the force divided by the charge does not depend on the charge."
+        },
+        {
+          "text": "$48\\,\\mu\\text{N}$",
+          "feedback": "In Coulomb's law the square applies to the distance, not to the charge. The force is directly proportional to the product of the charges $q_1 q_2$, so doubling one charge doubles the force: $24\\,\\mu\\text{N}$."
+        },
+        {
+          "text": "$12\\,\\mu\\text{N}$",
+          "feedback": "The force depends on the size of the charges, not only on the distance. In Coulomb's law the force is directly proportional to the product $q_1 q_2$, so it doubles: $24\\,\\mu\\text{N}$."
+        },
+        {
+          "text": "$6.0\\,\\mu\\text{N}$",
+          "feedback": "A larger charge does not make the force smaller. By Coulomb's law the force is directly proportional to the product of the charges, so it doubles to $24\\,\\mu\\text{N}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the force at different places",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "Two large metal plates lie horizontally one above the other, with a voltage between them. The upper plate is positive. A small positive ball, held in place by a force sensor, is brought between the plates. The ball is moved from near the lower plate to near the upper plate so that it stays between the plates all the time, far from the ends of the plates. How does the electric force on the ball change?",
+      "choices": [
+        {
+          "text": "The force always increases when the ball moves closer to either plate, because the charges of the plate are then closer.",
+          "feedback": "The readings of the model refute this: the force is $100\\,\\mu\\text{N}$ both $0.5\\,\\text{cm}$ from the lower plate and $0.5\\,\\text{cm}$ from the upper plate. The dependence of Coulomb's law on distance applies to point charges. Near a large plate most of its charges are at the sides of the ball, and the sideways parts of their forces cancel each other."
+        },
+        {
+          "text": "The force stays the same everywhere between the plates and does not depend on the height of the ball.",
+          "correct": true,
+          "feedback": "The readings of the model support this: the force is $100\\,\\mu\\text{N}$ at every height from $0.5\\,\\text{cm}$ to $3.5\\,\\text{cm}$, and it always points straight down. The field between the plates is uniform: the same strength and direction everywhere between the plates."
+        },
+        {
+          "text": "The force is greatest halfway between the plates, because there both plates act on the ball equally.",
+          "feedback": "In the model the force halfway is as large as near the plates, $100\\,\\mu\\text{N}$. The positive plate pushes and the negative plate pulls the ball in the same direction everywhere between the plates, and the effect of neither plate depends on the distance."
+        },
+        {
+          "text": "The force increases when the ball approaches the positive plate and decreases when it approaches the negative plate.",
+          "feedback": "The readings of the model refute this: the force is $100\\,\\mu\\text{N}$ near both plates. The push of the positive plate and the pull of the negative plate do not change with the distance, so their sum is the same at every height."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the distance of the plates",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 3
+      },
+      "prompt": "The voltage between the plates is kept the same, but the distance of the plates is doubled. The charge of the ball stays the same, and the ball is still between the plates. How does the electric force on the ball change?",
+      "choices": [
+        {
+          "text": "The force halves, because the same voltage is spread over a distance twice as long.",
+          "correct": true,
+          "feedback": "The readings of the model support this: with a voltage of $2.0\\,\\text{kV}$ the force is $200\\,\\mu\\text{N}$ when the distance is $2.0\\,\\text{cm}$ and $100\\,\\mu\\text{N}$ when the distance is $4.0\\,\\text{cm}$. The electric field strength is $E = U : d$, so a doubled distance halves the field and the force."
+        },
+        {
+          "text": "The force decreases to one quarter, because the electric force is inversely proportional to the square of the distance.",
+          "feedback": "In the model the force only halves: from $200\\,\\mu\\text{N}$ to $100\\,\\mu\\text{N}$. The square of the distance belongs to Coulomb's law for point charges. The field of the plates depends on the voltage and the distance by the equation $E = U : d$."
+        },
+        {
+          "text": "The force stays the same, because the voltage between the plates and the charge of the ball do not change.",
+          "feedback": "In the model the force halves from $200\\,\\mu\\text{N}$ to $100\\,\\mu\\text{N}$, although the voltage is the same. Voltage tells the energy per unit charge over the whole distance. When the distance doubles, half the force is enough to give the same energy: $E = U : d$."
+        },
+        {
+          "text": "The force doubles, because there is more room for the field between the plates.",
+          "feedback": "In the model the opposite happens: the force decreases from $200\\,\\mu\\text{N}$ to $100\\,\\mu\\text{N}$. The same voltage is spread over a longer distance, so the electric field strength $E = U : d$ becomes weaker."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Adjust the voltage and the distance of the plates, and the charge and position of the ball. Read the reading of the force sensor. At which places is the force the same, and what determines its magnitude?",
+      "howto": "The sliders set the voltage $U$ between the plates, the distance $d$ of the plates, the charge $q$ of the ball and the position of the ball: the horizontal position $x$ from the middle of the plates and the height $h$ from the lower plate. The plates are $20\\,\\text{cm}$ long, so their ends are at $x = -10\\,\\text{cm}$ and $x = 10\\,\\text{cm}$. The upper plate is connected to the positive terminal of the voltage source. The ball is attached to a force sensor, which shows the electric force $F$ on the ball and its direction. The red arrow is the same force, and its length grows with the force. *Field* shows the green field lines, the field vectors, or neither. The number of field lines grows with the electric field strength, and the length of a field vector tells the electric field strength at that point. The signs on the plates show their charge.",
+      "model": "The plates are thin conductors whose charge settles so that each plate is at the same potential throughout. Around the plates there is vacuum or air, and the charge of the ball itself does not change the charges of the plates. The model is two-dimensional: the plates continue very far in the direction perpendicular to the plane of the picture. The force sensor measures only the electric force, so the weight of the ball is not shown. The numbers are values calculated by the model, not measurements.",
+      "calc": "The field is not set by the equation $E = U : d$. Each plate is divided into $40$ strips, and the charges of the strips are solved from a system of equations so that the potential of the upper plate is $+U : 2$ and that of the lower plate $-U : 2$. The field at any point is the vector sum of the fields of all the strips. From the electric field strength $\\overline{E}$ calculated at the ball, the force of the sensor is obtained as\n\n$$\\overline{F} = q\\overline{E}$$\n\nThe field lines are drawn by moving in small steps always in the direction of the field, starting from the surface of the positive plate."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the force at different heights",
+      "intro": "Test prediction 1. The voltage $2.0\\,\\text{kV}$, the plate distance $4.0\\,\\text{cm}$, the charge of the ball $+2.0\\,\\text{nC}$ and the horizontal position $x = 0$ stay constant; change only the height $h$ of the ball. Record the force at no fewer than three heights, for example $0.5\\,\\text{cm}$, $2.0\\,\\text{cm}$ and $3.5\\,\\text{cm}$. How does the force depend on the height?",
+      "initial": {
+        "U": 2,
+        "d": 4,
+        "q": 2,
+        "x": 0,
+        "h": 0.5,
+        "kentta": "viivat"
+      },
+      "locked": [
+        "U",
+        "d",
+        "q",
+        "x"
+      ],
+      "vary": "h",
+      "names": {
+        "U": "voltage U",
+        "d": "plate distance d",
+        "q": "charge of the ball q",
+        "x": "horizontal position x",
+        "h": "height above the lower plate h",
+        "kentta": "field"
+      },
+      "units": {
+        "U": "kV",
+        "d": "cm",
+        "q": "nC",
+        "x": "cm",
+        "h": "cm"
+      },
+      "values": {
+        "kentta": {
+          "viivat": "field lines shown",
+          "vektorit": "field vectors shown",
+          "piilossa": "field hidden"
+        }
+      },
+      "measure": [
+        {
+          "key": "F",
+          "label": "F (µN)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: force and charge",
+      "intro": "The voltage $2.0\\,\\text{kV}$, the plate distance $4.0\\,\\text{cm}$ and the position of the ball stay constant; change only the charge $q$ of the ball. Record the force with no fewer than three charges, including a negative one. How do the force and its direction depend on the charge?",
+      "initial": {
+        "U": 2,
+        "d": 4,
+        "q": 1,
+        "x": 0,
+        "h": 2,
+        "kentta": "viivat"
+      },
+      "locked": [
+        "U",
+        "d",
+        "x",
+        "h"
+      ],
+      "vary": "q",
+      "names": {
+        "U": "voltage U",
+        "d": "plate distance d",
+        "q": "charge of the ball q",
+        "x": "horizontal position x",
+        "h": "height above the lower plate h",
+        "kentta": "field"
+      },
+      "units": {
+        "U": "kV",
+        "d": "cm",
+        "q": "nC",
+        "x": "cm",
+        "h": "cm"
+      },
+      "values": {
+        "kentta": {
+          "viivat": "field lines shown",
+          "vektorit": "field vectors shown",
+          "piilossa": "field hidden"
+        }
+      },
+      "measure": [
+        {
+          "key": "F",
+          "label": "F (µN)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "From your table, calculate the electric field strength $E = F : q$ at the ball. Answer in the unit $\\text{N/C}$.",
+        "answer": 50000.0,
+        "unit": "N/C",
+        "tolerance": 0.02,
+        "hints": [
+          "Divide the force of each row by the magnitude of the charge in the same row. What do you notice?",
+          "First convert the units: $1\\,\\mu\\text{N} = 10^{-6}\\,\\text{N}$ and $1\\,\\text{nC} = 10^{-9}\\,\\text{C}$.",
+          "For example, the row $q = 3\\,\\text{nC}$ gives $E = 150 \\cdot 10^{-6}\\,\\text{N} : (3 \\cdot 10^{-9}\\,\\text{C})$."
+        ],
+        "mistakes": [
+          {
+            "value": 50.0,
+            "feedback": "You divided micronewtons by nanocoulombs without converting the units. When $\\mu\\text{N}$ is converted to newtons and $\\text{nC}$ to coulombs, the quotient becomes a thousand times larger: $10^{-6} : 10^{-9} = 10^{3}$."
+          },
+          {
+            "value": 2e-05,
+            "feedback": "You divided the charge by the force. The electric field strength is the force per unit charge: $E = F : q$."
+          }
+        ],
+        "solution": "**Given:** readings of the model at the same place, for example with the charge $q = 3.0\\,\\text{nC}$ the force $F = 150\\,\\mu\\text{N}$ and with the charge $q = 1.0\\,\\text{nC}$ the force $F = 50\\,\\mu\\text{N}$\n\n**Find:** the electric field strength $E$ in the unit $\\text{N/C}$\n\n**Principle:** The ball is at the same place in every row of the table, and the field of the plates is the same. The force is directly proportional to the charge, so the quotient of the force and the charge is the same in every row. This quotient is exactly the electric field strength at the place.\n\n**Formula:** $E = \\dfrac{F}{q}$\n\n**Conversions:** $F = 150\\,\\mu\\text{N} = 150 \\cdot 10^{-6}\\,\\text{N}$ and $q = 3.0\\,\\text{nC} = 3.0 \\cdot 10^{-9}\\,\\text{C}$.\n\n**Substitution:** $E = \\dfrac{150 \\cdot 10^{-6}\\,\\text{N}}{3.0 \\cdot 10^{-9}\\,\\text{C}} = 5.0 \\cdot 10^{4}\\,\\text{N/C}$\n\n**Answer:** $5.0 \\cdot 10^{4}\\,\\text{N/C}$, two significant figures like the charge.\n\n**Reasonableness:** The row $q = 1.0\\,\\text{nC}$ gives the same: $50 \\cdot 10^{-6}\\,\\text{N} : (1.0 \\cdot 10^{-9}\\,\\text{C}) = 5.0 \\cdot 10^{4}\\,\\text{N/C}$. With a negative charge the force is equally large but points up, against the field. The value is the same as $U : d = 2000\\,\\text{V} : 0.040\\,\\text{m}$."
+      }
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: the distance of the plates",
+      "intro": "Test prediction 2. The voltage $2.0\\,\\text{kV}$, the charge of the ball $+2.0\\,\\text{nC}$, the horizontal position $x = 0$ and the height $h = 1.0\\,\\text{cm}$ stay constant; change only the distance $d$ of the plates. Record the force at no fewer than three distances. How does the force depend on the distance of the plates?",
+      "initial": {
+        "U": 2,
+        "d": 2,
+        "q": 2,
+        "x": 0,
+        "h": 1,
+        "kentta": "viivat"
+      },
+      "locked": [
+        "U",
+        "q",
+        "x",
+        "h"
+      ],
+      "vary": "d",
+      "names": {
+        "U": "voltage U",
+        "d": "plate distance d",
+        "q": "charge of the ball q",
+        "x": "horizontal position x",
+        "h": "height above the lower plate h",
+        "kentta": "field"
+      },
+      "units": {
+        "U": "kV",
+        "d": "cm",
+        "q": "nC",
+        "x": "cm",
+        "h": "cm"
+      },
+      "values": {
+        "kentta": {
+          "viivat": "field lines shown",
+          "vektorit": "field vectors shown",
+          "piilossa": "field hidden"
+        }
+      },
+      "measure": [
+        {
+          "key": "F",
+          "label": "F (µN)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "From the rows of your table, calculate the electric field strength $E = F : q$ and multiply it by the plate distance $d$ in metres. How large is the product $Ed$? Answer in volts.",
+        "answer": 2000.0,
+        "unit": "V",
+        "tolerance": 0.02,
+        "hints": [
+          "First calculate the field of a row: for example $F = 200\\,\\mu\\text{N}$ and $q = 2.0\\,\\text{nC}$ give $E = 1.0 \\cdot 10^{5}\\,\\text{N/C}$.",
+          "Convert the distance to metres: $2.0\\,\\text{cm} = 0.020\\,\\text{m}$.",
+          "$Ed = 1.0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0.020\\,\\text{m}$. Compare the result with the voltage of the plates."
+        ],
+        "mistakes": [
+          {
+            "value": 200000.0,
+            "feedback": "You multiplied the field by the distance in centimetres. Convert the distance to metres, $2.0\\,\\text{cm} = 0.020\\,\\text{m}$, and then $\\text{N/C} \\cdot \\text{m} = \\text{V}$."
+          },
+          {
+            "value": 2.0,
+            "feedback": "This is the voltage in kilovolts. Answer in volts: $2.0\\,\\text{kV} = 2000\\,\\text{V}$."
+          }
+        ],
+        "solution": "**Given:** readings of the model with the voltage $U = 2.0\\,\\text{kV}$ and the charge $q = 2.0\\,\\text{nC}$: at the distance $d = 2.0\\,\\text{cm}$ the force $F = 200\\,\\mu\\text{N}$ and at the distance $d = 6.0\\,\\text{cm}$ the force $F = 66.7\\,\\mu\\text{N}$\n\n**Find:** the product $Ed$ in volts\n\n**Principle:** At each distance the electric field strength is obtained from the force and the charge, $E = F : q$. If the electric field strength is $E = U : d$, the product $Ed$ is the same in every row and equal to the voltage of the plates.\n\n**Formula:** $E = \\dfrac{F}{q}$, so $Ed = \\dfrac{Fd}{q}$\n\n**Conversions:** $F = 200 \\cdot 10^{-6}\\,\\text{N}$, $q = 2.0 \\cdot 10^{-9}\\,\\text{C}$ and $d = 2.0\\,\\text{cm} = 0.020\\,\\text{m}$.\n\n**Substitution:** $E = \\dfrac{200 \\cdot 10^{-6}\\,\\text{N}}{2.0 \\cdot 10^{-9}\\,\\text{C}} = 1.0 \\cdot 10^{5}\\,\\text{N/C}$ and $Ed = 1.0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0.020\\,\\text{m} = 2000\\,\\text{V}$\n\n**Answer:** $2.0 \\cdot 10^{3}\\,\\text{V}$ or $2000\\,\\text{V}$, two significant figures like the charge and the distance.\n\n**Reasonableness:** The row $d = 6.0\\,\\text{cm}$ gives the same: $66.7 \\cdot 10^{-6}\\,\\text{N} \\cdot 0.060\\,\\text{m} : (2.0 \\cdot 10^{-9}\\,\\text{C}) = 2000\\,\\text{V}$. The product is the voltage of the plates $2.0\\,\\text{kV}$, so $E = U : d$. Units: $\\text{N} \\cdot \\text{m} : \\text{C} = \\text{J/C} = \\text{V}$."
+      }
+    },
+    {
+      "id": "koe-4",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 4: past the end of the plates",
+      "optional": true,
+      "intro": "The voltage $2.0\\,\\text{kV}$, the plate distance $4.0\\,\\text{cm}$, the charge of the ball $+2.0\\,\\text{nC}$ and the height $h = 2.0\\,\\text{cm}$ stay constant; move the ball horizontally from the middle past the end of the plates, which is at $x = 10\\,\\text{cm}$. Record the force, for example at $0$, $4$, $8$, $10$, $11$ and $12\\,\\text{cm}$. How far from the middle of the plates is the field uniform?",
+      "initial": {
+        "U": 2,
+        "d": 4,
+        "q": 2,
+        "x": 0,
+        "h": 2,
+        "kentta": "viivat"
+      },
+      "locked": [
+        "U",
+        "d",
+        "q",
+        "h"
+      ],
+      "vary": "x",
+      "names": {
+        "U": "voltage U",
+        "d": "plate distance d",
+        "q": "charge of the ball q",
+        "x": "horizontal position x",
+        "h": "height above the lower plate h",
+        "kentta": "field"
+      },
+      "units": {
+        "U": "kV",
+        "d": "cm",
+        "q": "nC",
+        "x": "cm",
+        "h": "cm"
+      },
+      "values": {
+        "kentta": {
+          "viivat": "field lines shown",
+          "vektorit": "field vectors shown",
+          "piilossa": "field hidden"
+        }
+      },
+      "measure": [
+        {
+          "key": "F",
+          "label": "F (µN)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: the field between the plates",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Write on the basis of your tables: does the force depend on the position of the ball between the plates? What does the quotient $F : q$ tell, and how does it depend on the distance of the plates when the voltage stays the same?",
+      "model": "The force was $100\\,\\mu\\text{N}$ at every height from $0.5\\,\\text{cm}$ to $3.5\\,\\text{cm}$ and always pointed down, so the field between the plates is uniform: the same strength and direction everywhere between the plates. When the charge doubled or tripled, the force grew in the same proportion, and for a negative charge the force pointed up. The quotient $F : q = 5.0 \\cdot 10^{4}\\,\\text{N/C}$ was the same for all charges: it is the electric field strength, which does not depend on the test charge. When the distance doubled from $2.0\\,\\text{cm}$ to $4.0\\,\\text{cm}$, the force halved from $200\\,\\mu\\text{N}$ to $100\\,\\mu\\text{N}$, and the product $Ed$ was $2000\\,\\text{V}$ in every row, the voltage of the plates. So $E = U : d$. The values are calculated by the model, and the model holds between the plates far from the ends of the plates.",
+      "criteria": [
+        "The answer states that the force is the same at all heights between the plates, and justifies it with the numbers in the table.",
+        "The answer states that the force is directly proportional to the charge and that the quotient $F : q$, the electric field strength, is the same for all charges.",
+        "The answer states that for a negative charge the force points in the opposite direction to that for a positive charge.",
+        "The answer states that the electric field strength is inversely proportional to the distance of the plates and that $Ed$ is the voltage of the plates."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments. Then return to the question at the start: why do the charged dust particles drift to the plates of the air purifier, and does the force depend on the position of the particle between the plates?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The voltage between the plates is $1.2\\,\\text{kV}$, and the distance of the plates is $3.0\\,\\text{cm}$. A student calculates the electric field strength between the plates like this:\n\n$$E = \\frac{U}{d} = \\frac{1200\\,\\text{V}}{3.0} = 400\\,\\text{V/m}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The distance has not been converted to metres: the correct result is $4.0 \\cdot 10^{4}\\,\\text{V/m}$.",
+          "correct": true,
+          "feedback": "Correct. In the unit $\\text{V/m}$ the distance is in metres: $d = 3.0\\,\\text{cm} = 0.030\\,\\text{m}$, so $E = 1200\\,\\text{V} : 0.030\\,\\text{m} = 4.0 \\cdot 10^{4}\\,\\text{V/m}$. The error shows in the units: the student's divisor has no unit at all, so the result cannot be $\\text{V/m}$."
+        },
+        {
+          "text": "The electric field strength is calculated by multiplying: $E = Ud = 36\\,\\text{V} \\cdot \\text{m}$.",
+          "feedback": "The electric field strength is the voltage per unit length, so the voltage is divided by the distance. The unit of a product, $\\text{V} \\cdot \\text{m}$, is not the unit of a field, $\\text{V/m}$. The error is in the conversion: $d = 0.030\\,\\text{m}$."
+        },
+        {
+          "text": "The voltage should not have been converted to volts, but $1.2 : 3.0 = 0.40\\,\\text{V/m}$ should have been calculated.",
+          "feedback": "The conversion of the voltage, $1.2\\,\\text{kV} = 1200\\,\\text{V}$, is correct. The error is in the distance, which has not been converted to metres: $E = 1200\\,\\text{V} : 0.030\\,\\text{m} = 4.0 \\cdot 10^{4}\\,\\text{V/m}$."
+        },
+        {
+          "text": "The calculations are correct, because the equation $E = U : d$ gives the field directly.",
+          "feedback": "The equation is correct, but the distance has been substituted in centimetres and without a unit. In metres $d = 0.030\\,\\text{m}$, and the field is a hundred times larger, $4.0 \\cdot 10^{4}\\,\\text{V/m}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "In an inkjet printer a charged ink droplet passes between two deflection plates, and the field of the plates bends its path towards the right place on the paper. The mass of the droplet is $1.2 \\cdot 10^{-10}\\,\\text{kg}$ and the magnitude of its charge is $2.0 \\cdot 10^{-13}\\,\\text{C}$. The voltage between the plates is $1.6\\,\\text{kV}$ and the distance of the plates is $2.0\\,\\text{mm}$. How large is the acceleration of the droplet in the direction perpendicular to the plates? Air resistance and weight are ignored. Answer in the unit $\\text{m/s}^2$.",
+      "answer": 1333.333333,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "hints": [
+        "Which force accelerates the droplet towards a plate, and how does it depend on the field of the plates?",
+        "The electric field strength between the plates is $E = U : d$, the force is $F = qE$, and by Newton's second law $a = F : m$.",
+        "The field is $1600\\,\\text{V} : 0.0020\\,\\text{m} = 8.0 \\cdot 10^{5}\\,\\text{V/m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.333333,
+          "feedback": "You substituted the plate distance in millimetres. Convert it to metres: $2.0\\,\\text{mm} = 0.0020\\,\\text{m}$, and then the field is a thousand times larger."
+        },
+        {
+          "value": 2.666667,
+          "feedback": "You used the voltage in place of the electric field strength. The electric field strength is the voltage divided by the distance of the plates: $E = U : d$."
+        }
+      ],
+      "solution": "**Given:** mass of the droplet $m = 1.2 \\cdot 10^{-10}\\,\\text{kg}$, magnitude of the charge $q = 2.0 \\cdot 10^{-13}\\,\\text{C}$, voltage $U = 1.6\\,\\text{kV}$, plate distance $d = 2.0\\,\\text{mm}$; air resistance and weight are ignored\n\n**Find:** the acceleration $a$ of the droplet in the unit $\\text{m/s}^2$\n\n**Principle:** Between the plates the field is uniform, so a constant force $qE$ acts on the droplet in the direction perpendicular to the plates. When the other forces are ignored, by Newton's second law this force determines the acceleration, and it is the same over the whole distance between the plates.\n\n**Formula:** $E = \\dfrac{U}{d}$, $F = qE$ and $F = ma$, so $a = \\dfrac{qU}{md}$\n\n**Conversions:** $U = 1.6\\,\\text{kV} = 1.6 \\cdot 1000\\,\\text{V} = 1600\\,\\text{V}$ and $d = 2.0\\,\\text{mm} = 2.0 \\cdot 10^{-3}\\,\\text{m}$.\n\n**Substitution:** $E = \\dfrac{1600\\,\\text{V}}{2.0 \\cdot 10^{-3}\\,\\text{m}} = 8.0 \\cdot 10^{5}\\,\\text{V/m}$, $F = 2.0 \\cdot 10^{-13}\\,\\text{C} \\cdot 8.0 \\cdot 10^{5}\\,\\text{V/m} = 1.6 \\cdot 10^{-7}\\,\\text{N}$ and $a = \\dfrac{1.6 \\cdot 10^{-7}\\,\\text{N}}{1.2 \\cdot 10^{-10}\\,\\text{kg}} = 1333\\,\\text{m/s}^2$\n\n**Answer:** $1.3 \\cdot 10^{3}\\,\\text{m/s}^2$, two significant figures like the given values.\n\n**Reasonableness:** The weight of the droplet is only $1.2 \\cdot 10^{-10}\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 1.2 \\cdot 10^{-9}\\,\\text{N}$, less than one per cent of the electric force, so ignoring the weight is justified. The acceleration is about $140$ times the acceleration of free fall, so the path of the droplet bends clearly even over a short distance."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks use one equation, level 2 tasks combine the electric field strength, the voltage and the force or convert units, and level 3 requires reasoning about the equilibrium and motion of charged bodies."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "An electron is at rest between two horizontal plates. The upper plate is positive and the lower one negative. In which directions do the electric field of the plates and the electric force on the electron point?",
+      "choices": [
+        {
+          "text": "The field points down, but the force points up towards the positive plate.",
+          "correct": true,
+          "feedback": "Correct. The direction of the field is the direction of the force on a positive charge, that is, from the positive plate to the negative one, down. The electron is negative, so the force on it, $\\overline{F} = q\\overline{E}$, points against the field, up."
+        },
+        {
+          "text": "The field and the force both point down, because the force is always in the direction of the field.",
+          "feedback": "The force is in the direction of the field only for a positive charge. The charge of the electron is negative, so in the equation $\\overline{F} = q\\overline{E}$ the direction of the force turns around: the force points up, towards the positive plate."
+        },
+        {
+          "text": "The field and the force both point up, because the field goes towards the positive plate.",
+          "feedback": "Field lines start from positive charges and end on negative ones, so the field points down from the positive plate. The force points up, because the electron is negative."
+        },
+        {
+          "text": "The field points down, but no force acts on the electron, because it is very light.",
+          "feedback": "The electric force depends on the charge, not the mass: $F = eE$. On the contrary, a light electron gets a very large acceleration from this force. The force points up, against the field."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Read the field line picture",
+      "figure": "fy6-11/abc",
+      "prompt": "The same small positive charge is brought in turn to the points $A$, $B$ and $C$ of the picture. How do the electric forces on the charge compare with each other?",
+      "choices": [
+        {
+          "text": "At $A$ and $B$ the force is equally large, and at $C$ it is smaller.",
+          "correct": true,
+          "feedback": "Correct. The points $A$ and $B$ are between the plates, where the field lines are straight and equally dense, so the field and the force are the same. At $C$, outside the end of the plates, the lines are sparse, so the field and the force are smaller."
+        },
+        {
+          "text": "At $B$ the force is greatest, because it is closest to the positive plate.",
+          "feedback": "Between the plates the field lines are equally dense near a plate and halfway, so at $A$ and $B$ the force is the same. The field of a large plate does not depend on the distance from the plate. At $C$ the lines are sparse, so the force there is smaller."
+        },
+        {
+          "text": "The force is equally large at all three points, because the field of the plates is uniform.",
+          "feedback": "The field is uniform only between the plates, far from the ends of the plates. The point $C$ is outside the end of the plates, where the field lines curve and thin out, so the force is smaller there than at $A$ and $B$."
+        },
+        {
+          "text": "At $C$ the force is greatest, because the field lines curve most sharply there.",
+          "feedback": "The electric field strength is shown by the density of the lines, not by their curvature. At $C$ the lines are sparse, so the field is weaker than between the plates. At $A$ and $B$ the force is equally large."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain the air purifier",
+      "optional": true,
+      "prompt": "Using the electric field, explain why the charged dust particles of the air purifier end up on the surface of the plates although the air flows past the plates. Why are the plates of the purifier close to each other?",
+      "model": "There is a voltage between the plates, so one plate is positive and the other negative, and between them there is a uniform electric field. A force $\\overline{F} = q\\overline{E}$ acts on a charged dust particle, perpendicular to the plates and equally large everywhere between the plates. The air carries the particle along the plates, but the electric force pushes it towards one plate the whole way, a positive particle towards the negative plate and a negative one towards the positive plate. The particle has time to drift to the surface of the plate before the air carries it past the plates, and it sticks to the plate. The plates are close to each other, because the electric field strength is $E = U : d$: a small distance gives a strong field with the same voltage, and the distance the particle has to travel to the plate is short.",
+      "criteria": [
+        "The answer states that there is an electric field between the plates because of the voltage, and that it is uniform.",
+        "The answer states that an electric force $qE$ acts on a charged particle towards a plate, and that its direction depends on the sign of the charge.",
+        "The answer explains that the force acts over the whole distance between the plates, so the particle drifts to the plate although the air moves along the plates.",
+        "The answer justifies the small plate distance with the equation $E = U : d$ or with the short distance to the plate."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and open the answer only after that."
+    }
+  ]
+}

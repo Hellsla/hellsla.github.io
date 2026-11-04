@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy7-6-L1-01",
+      "level": 1,
+      "text": "Neodyymimagneetin massa on $40\\,\\text{g}$. Magneetti putoaa pystysuorassa kupariputkessa tasaisella vauhdilla. Kuinka suuri jarruttava voima pyörrevirroista kohdistuu magneettiin?",
+      "answer": 0.39,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-6-L1-02",
+      "level": 1,
+      "text": "Kevyt kuparirengas riippuu langan varassa. Sauvamagneetin S-napa työnnetään nopeasti kohti rengasta. Kumpi napa syntyy renkaan magneetin puoleiselle sivulle? Hylkiikö vai vetääkö rengas magneettia?",
+      "answer": "Renkaan magneetin puoleiselle sivulle syntyy S-napa, ja rengas hylkii magneettia.",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-6-L1-03",
+      "level": 1,
+      "text": "Pyörrevirtajarru hidastaa $450\\,\\text{kg}$:n vuoristoratavaunua vaakasuoralla radalla. Vaunun vauhti pienenee arvosta $22\\,\\text{m/s}$ arvoon $6{,}0\\,\\text{m/s}$. Muut vastukset jätetään huomiotta. Kuinka paljon energiaa muuttuu jarrun kuparilevyjen sisäenergiaksi? Anna vastaus kilojouleina.",
+      "answer": 100,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-6-L1-04",
+      "level": 1,
+      "text": "Magneetin massa on $25\\,\\text{g}$. Se putoaa pystysuorassa alumiiniputkessa tasaisella vauhdilla $0{,}30\\,\\text{m/s}$. Kuinka suurella teholla putken sisäenergia kasvaa? Anna vastaus milliwatteina.",
+      "answer": 74,
+      "unit": "mW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-6-L1-05",
+      "level": 1,
+      "text": "Induktiolieden lasipinnan alla on kela, jossa kulkee nopeasti vaihteleva virta. Teräskattila lämpenee lieden päällä nopeasti. Lasipinta kattilan vieressä pysyy viileänä. Miksi kattila lämpenee mutta lasi ei?",
+      "answer": "Kelan vaihtuva magneettikenttä synnyttää sähköä johtavaan kattilan pohjaan pyörrevirtoja, jotka lämmittävät sitä. Lasi ei johda sähköä, joten siihen ei synny virtoja.",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-6-L2-01",
+      "level": 2,
+      "text": "Magneetti, jonka massa on $20\\,\\text{g}$, pudotetaan $1{,}50\\,\\text{m}$:n pituiseen pystysuoraan kupariputkeen. Magneetti tulee putken alapäästä ulos $10\\,\\text{s}$:n kuluttua. Se putoaa lähes koko matkan tasaisella vauhdilla. Kuinka suurella teholla putken sisäenergia kasvaa putoamisen aikana? Anna vastaus milliwatteina.",
+      "answer": 29,
+      "unit": "mW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-6-L2-02",
+      "level": 2,
+      "text": "Suljetussa käämissä on $200$ kierrosta, ja sen resistanssi on $15\\,\\Omega$. Magneetti työnnetään käämiin. Käämin läpi kulkeva magneettivuo kasvaa tasaisesti nollasta arvoon $3{,}0\\,\\text{mWb}$ ajassa $0{,}20\\,\\text{s}$. Kuinka suuri induktiovirta käämissä kulkee?",
+      "answer": 0.2,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-6-L2-03",
+      "level": 2,
+      "text": "Kupariputkessa putoavan $20\\,\\text{g}$:n magneetin vauhti kasvaa aluksi. Pyörrevirroista syntyy magneettiin jarruttava voima, joka on verrannollinen magneetin vauhtiin: $F_\\text{j} = k v$, missä $k = 1{,}3\\,\\tfrac{\\text{N}\\cdot\\text{s}}{\\text{m}}$. Mihin arvoon magneetin vauhti lopulta asettuu?",
+      "answer": 0.15,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-6-L2-04",
+      "level": 2,
+      "text": "Junan pyörrevirtajarru kohdistaa junaan $60\\,\\text{kN}$:n jarruttavan voiman, kun junan vauhti on $250\\,\\text{km/h}$. Kuinka suurella teholla jarru muuttaa junan liike-energiaa jarrun ja kiskon sisäenergiaksi tällä hetkellä? Anna vastaus megawatteina.",
+      "answer": 4.2,
+      "unit": "MW",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-6-L3-01",
+      "level": 3,
+      "text": "Fysiikan tunnilla $20\\,\\text{g}$:n magneetti pudotetaan $50$ kertaa peräkkäin $1{,}00\\,\\text{m}$:n pituisen pystysuoran kupariputken läpi. Joka kerta se tulee alapäästä ulos vauhdilla $0{,}15\\,\\text{m/s}$. Putken massa on $0{,}35\\,\\text{kg}$. Kuparin ominaislämpökapasiteetti on $385\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Kuinka paljon putken lämpötila nousee, jos lämpöä ei siirry ympäristöön?",
+      "answer": 0.073,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-6-L3-02",
+      "level": 3,
+      "text": "Alumiinilevystä tehty heiluri heilahtaa voimakkaan hevosenkenkämagneetin napojen välistä. Ehjä levy pysähtyy jo muutaman heilahduksen jälkeen. Samankokoiseen levyyn sahataan syviä rakoja, jolloin se on kamman muotoinen. Tämä levy heiluu napojen välissä pitkään. Selitä ero.",
+      "answer": "Ehjään levyyn syntyy napojen välissä suuria pyörrevirtoja. Lenzin lain mukaan ne jarruttavat liikettä ja muuttavat heilurin mekaanista energiaa sisäenergiaksi. Raot katkaisevat virtasilmukat, joten kampalevyssä virrat ja jarrutus jäävät pieniksi.",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-6-L3-03",
+      "level": 3,
+      "text": "Kaksi vaakasuoraa metallikiskoa on $0{,}40\\,\\text{m}$:n etäisyydellä toisistaan. Niiden päät on yhdistetty vastuksella, jonka resistanssi on $0{,}20\\,\\Omega$. Kiskojen alueella on pystysuora magneettikenttä, jonka magneettivuon tiheys on $0{,}50\\,\\text{T}$. Kiskojen päällä poikittain oleva metallitanko liikkuu kiskoja pitkin vauhdilla $3{,}0\\,\\text{m/s}$. Kiskojen ja tangon resistanssi jätetään huomiotta. Kuinka suuri jarruttava voima magneettikenttä kohdistaa tankoon?",
+      "answer": 0.6,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,510 @@
+{
+ "version": 1,
+ "contribution": "Kokoaa FY1:n tutkimustaidot ja FY3–FY5:n kokeet ylioppilaskokeen kokeellisiksi tehtävätyypeiksi: koesuunnitelma välineineen, muuttujineen ja kuvaajasta laskettavine tuloksineen, mittausvälineen ja sen resoluution valinta, toistot, systemaattisen virheen tunnistaminen kuvaajan vakiotermistä ja raportin arviointi.",
+ "learn": [
+  "suunnittelemaan kokeen, jossa muuttujat on hallittu ja tulos lasketaan kuvaajasta",
+  "tunnistamaan virhelähteet ja systemaattisen virheen kuvaajasta",
+  "arvioimaan tutkimusraportin puutteet ja kirjoittamaan perustellun johtopäätöksen"
+ ],
+ "prior": [
+  "Mittaustulos ilmoitetaan keskiarvona ja virhearviona, ja virheet ovat karkeita, satunnaisia tai systemaattisia (luku *Mittaaminen ja mittauksen luotettavuus*)",
+  "Mittauspisteisiin sovitetaan suora, ja sen kulmakerroin luetaan suoran kahdesta pisteestä (luku *Graafinen esitys ja suoran sovittaminen*)",
+  "Tutkimuksessa on tutkimuskysymys, hypoteesi, muutettava, mitattava ja vakioitavat muuttujat sekä raportti (luku *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Ylioppilaskokeessa on tehtävä: *Suunnittele koe, jolla määrität jousen jousivakion. Käytössäsi on jousi, teline, viisi $50\\,\\text{g}$:n punnusta ja metrimitta.* Aino kirjoittaa vastaukseksi yhden rivin: ”Ripustan jouseen punnuksen, mittaan venymän ja lasken jousivakion voiman ja venymän osamääränä.” Fysiikka on oikein, mutta vastaus saa vain murto-osan pisteistä.",
+   "question": "Mitä Ainon vastauksesta puuttuu, jotta joku toinen voisi tehdä kokeen sen perusteella ja luottaa tulokseen?"
+  },
+  {
+   "id": "ennusta-toisto",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Toistaminen",
+   "prompt": "Ryhmä mittaa vaunun kulkuajan kaltevaa rataa pitkin viisi kertaa ja laskee keskiarvon. Mitä viiden toiston keskiarvo parantaa verrattuna yhteen mittaukseen?",
+   "choices": [
+    {
+     "text": "Satunnaisvirheen vaikutus keskiarvoon pienenee, systemaattinen virhe ei.",
+     "feedback": "Oikein. Toistot tuovat hajonnan näkyviin, ja keskiarvossa satunnaisvirheiden vaikutus vaimenee. Systemaattinen virhe on jokaisessa tuloksessa sama, joten se löydetään vertaamalla tunnettuun arvoon tai toiseen mittaustapaan. Asia on luvussa *Mittaaminen ja mittauksen luotettavuus*.",
+     "correct": true
+    },
+    {
+     "text": "Sekä satunnainen että systemaattinen virhe pienenevät, koska virheet kumoavat toisensa.",
+     "feedback": "Vain satunnaisvirheet ovat vuoroin liian suuria ja liian pieniä ja kumoavat osin toisensa. Systemaattinen virhe, esimerkiksi väärin mitattu radan pituus, siirtää jokaista tulosta samaan suuntaan, eikä keskiarvo poista sitä. Kertaa virheiden lajit luvussa *Mittaaminen ja mittauksen luotettavuus*."
+    },
+    {
+     "text": "Yksittäisten mittausten hajonta pienenee, joten jokainen uusi tulos on tarkempi.",
+     "feedback": "Yksittäisten tulosten hajonta ei pienene toistamalla: viides mittaus on yhtä epätarkka kuin ensimmäinen. Toistaminen pienentää satunnaisvirheen vaikutusta keskiarvoon. Kertaa asia luvussa *Mittaaminen ja mittauksen luotettavuus*."
+    },
+    {
+     "text": "Keskiarvo poistaa kaikki virheet, joten sen epävarmuus on nolla.",
+     "feedback": "Keskiarvollakin on epävarmuus, vaikka se on pienempi kuin yksittäisellä tuloksella, eikä keskiarvo poista systemaattista virhettä. Kertaa keskiarvo ja virhearvio luvussa *Mittaaminen ja mittauksen luotettavuus*."
+    }
+   ]
+  },
+  {
+   "id": "ennusta-resoluutio",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Resoluutio ja epävarmuus",
+   "prompt": "Puhelimen sekuntikello näyttää ajan sadasosasekunnin tarkkuudella. Opiskelija käynnistää ja pysäyttää kellon käsin, kun pallo ohittaa lattian merkit. Mikä on ajan epävarmuuden järkevin arvio?",
+   "choices": [
+    {
+     "text": "$0{,}01\\,\\text{s}$, koska se on kellon pienin näyttämä askel",
+     "feedback": "$0{,}01\\,\\text{s}$ on kellon resoluutio. Se ei yksin kerro epävarmuutta, koska kellon käynnistää ja pysäyttää ihminen, jonka reaktioaika vaihtelee paljon enemmän. Kertaa resoluutio ja epävarmuus luvussa *Mittaaminen ja mittauksen luotettavuus*."
+    },
+    {
+     "text": "$0{,}005\\,\\text{s}$ eli puolet kellon pienimmästä askeleesta",
+     "feedback": "Puolikas asteikkoväli on lukeman epävarmuus vain silloin, kun lukeminen on ainoa virhelähde. Tässä mittaustapa, käsin ajoitus, tuo paljon suuremman epävarmuuden. Kertaa asia luvussa *Mittaaminen ja mittauksen luotettavuus*."
+    },
+    {
+     "text": "nolla, koska digitaalinen kello ei tee lukemisvirhettä",
+     "feedback": "Digitaalinen näyttö poistaa vain asteikon lukemisen virheen. Ajoituksen virhe syntyy siitä, milloin painike painetaan. Kertaa virhelähteet luvussa *Mittaaminen ja mittauksen luotettavuus*."
+    },
+    {
+     "text": "sekunnin kymmenesosien luokkaa, koska reaktioaika vaihtelee",
+     "feedback": "Oikein. Käsin otetun ajan epävarmuuden määrää reaktioaika, joka vaihtelee mittauksesta toiseen sekunnin kymmenesosien verran. Siksi mitattavan ajan on oltava pitkä, jotta suhteellinen epävarmuus jää pieneksi. Asia on luvussa *Mittaaminen ja mittauksen luotettavuus*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "ennusta-muuttujat",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Reilu koe",
+   "prompt": "Opiskelija tutkii, miten heilurin jaksonaika riippuu langan pituudesta. Mikä asetelma on reilu koe?",
+   "choices": [
+    {
+     "text": "Pituutta ja punnuksen massaa muutetaan yhtä aikaa, jotta tietoa saadaan enemmän.",
+     "feedback": "Kun kaksi muuttujaa muuttuu yhtä aikaa, jaksonajan muutoksen syytä ei voi päätellä. Kokeessa muutetaan yhtä muuttujaa kerrallaan. Kertaa muuttujat luvussa *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*."
+    },
+    {
+     "text": "Pituutta muutetaan, ja lähtökulmaksi valitaan joka kerta suurempi, jotta heilahdus näkyy.",
+     "feedback": "Lähtökulma on toinen muuttuja. Pienillä kulmilla se ei juuri vaikuta jaksonaikaan, mutta suurilla vaikuttaa, joten se pidetään samana ja pienenä. Kertaa heilurin malli ja sen ehdot luvussa *Jousivärähtelijä ja heiluri*."
+    },
+    {
+     "text": "Pituutta muutetaan, jaksonaika mitataan, ja punnus ja pieni lähtökulma pidetään samoina.",
+     "feedback": "Oikein. Muutettava muuttuja on pituus, mitattava jaksonaika, ja kaikki muu vakioidaan. Silloin jaksonajan muutos johtuu pituudesta. Asia on luvussa *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*.",
+     "correct": true
+    },
+    {
+     "text": "Jokaiselle pituudelle valitaan eri punnus, koska massa ei kuitenkaan vaikuta tulokseen.",
+     "feedback": "Koe ei saa olettaa sitä, mikä on vielä osoittamatta. Jos punnus vaihtuu, mahdollinen massan vaikutus sekoittuu pituuden vaikutukseen. Kertaa vakioitavat muuttujat luvussa *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*."
+    }
+   ]
+  },
+  {
+   "id": "ennusta-leikkaus",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Suora ei kulje origon kautta",
+   "prompt": "Opiskelija mittaa veden massan eri tilavuuksilla. Hän kaataa vettä dekantterilasiin ja punnitsee lasin vesineen. $(V, m)$-kuvaaja on suora, joka leikkaa pystyakselin kohdassa $85\\,\\text{g}$, vaikka nollatilavuuden massan pitäisi olla nolla. Mitä tästä voi päätellä?",
+   "choices": [
+    {
+     "text": "Vesi ei noudata mallia, joten tiheyttä ei voi laskea mittauksista lainkaan.",
+     "feedback": "Pisteet ovat suoralla, joten massa kasvaa tasaisesti tilavuuden mukana ja malli sopii. Siirtymä koskee kaikkia pisteitä yhtä paljon, joten kulmakerroin eli tiheys on yhä käyttökelpoinen. Kertaa vakiotermin merkitys luvussa *Graafinen esitys ja suoran sovittaminen*."
+    },
+    {
+     "text": "Suora on piirretty väärin, ja se pakotetaan origon kautta, jolloin virhe katoaa.",
+     "feedback": "Suoran pakottaminen origon kautta ei poista virhettä vaan muuttaa kulmakerrointa väärin. Suora sovitetaan pisteisiin, ja vakiotermi tulkitaan. Kertaa suoran sovittaminen luvussa *Graafinen esitys ja suoran sovittaminen*."
+    },
+    {
+     "text": "Jokaisessa punnituksessa on mukana lasin massa: systemaattinen virhe.",
+     "feedback": "Oikein. Lasi lisää jokaiseen punnitukseen saman massan, joten suora on siirtynyt mutta sen kulmakerroin ei ole muuttunut. Tiheys saadaan siksi kulmakertoimesta luotettavasti. Asia on luvuissa *Graafinen esitys ja suoran sovittaminen* ja *Tiheys: $m = \\rho V$*.",
+     "correct": true
+    },
+    {
+     "text": "Satunnaisvirhe oli suuri, joten mittaukset toistetaan ja keskiarvo lasketaan uudelleen.",
+     "feedback": "Satunnaisvirhe hajottaisi pisteitä suoran molemmin puolin. Tässä kaikki pisteet ovat siirtyneet samaan suuntaan, mikä on systemaattisen virheen tuntomerkki, eikä toistaminen poista sitä. Kertaa virheiden lajit luvussa *Mittaaminen ja mittauksen luotettavuus*."
+    }
+   ]
+  },
+  {
+   "id": "ennusta-kulmakerroin",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Kulmakertoimen lukeminen",
+   "prompt": "Mittauspisteisiin on sovitettu suora, ja haettu suure on sen kulmakerroin. Miten kulmakerroin määritetään luotettavimmin?",
+   "choices": [
+    {
+     "text": "kahdesta vierekkäisestä mittauspisteestä, koska ne ovat oikeita mittaustuloksia",
+     "feedback": "Vierekkäisten pisteiden välillä muutos on pieni, joten kummankin pisteen satunnaisvirhe muuttaa tulosta paljon. Suora käyttää kaikkia pisteitä. Kertaa kulmakertoimen lukeminen luvussa *Graafinen esitys ja suoran sovittaminen*."
+    },
+    {
+     "text": "ensimmäisestä ja viimeisestä mittauspisteestä, vaikka suora ei kulje niiden kautta",
+     "feedback": "Tällöin tulos riippuu vain kahdesta mittauksesta ja niiden virheistä, eikä sovitettua suoraa käytetä lainkaan. Kertaa asia luvussa *Graafinen esitys ja suoran sovittaminen*."
+    },
+    {
+     "text": "kahdesta sovitetun suoran pisteestä, jotka ovat kaukana toisistaan",
+     "feedback": "Oikein. Sovitettu suora kulkee pisteiden joukon keskeltä, ja kaukana toisistaan olevista suoran pisteistä luettu kulmakerroin on tarkka, koska muutokset $\\Delta x$ ja $\\Delta y$ ovat suuria. Asia on luvussa *Graafinen esitys ja suoran sovittaminen*.",
+     "correct": true
+    },
+    {
+     "text": "jakamalla viimeisen mittauspisteen $y$-arvo sen $x$-arvolla",
+     "feedback": "Osamäärä $y : x$ on kulmakerroin vain, jos suora kulkee origon kautta. Jos suoralla on vakiotermi, tulos on väärä. Kertaa suoran yhtälö $y = kx + b$ luvussa *Graafinen esitys ja suoran sovittaminen*."
+    }
+   ]
+  },
+  {
+   "id": "ennusta-johtopaatos",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Johtopäätös",
+   "prompt": "Ryhmän hypoteesi oli, että putoamiskiihtyvyys on $9{,}81\\,\\text{m/s}^2$. Mittaus antoi tuloksen $g = (9{,}7 \\pm 0{,}3)\\,\\text{m/s}^2$. Mikä johtopäätös on oikein?",
+   "choices": [
+    {
+     "text": "Hypoteesi on todistettu oikeaksi, koska arvo on epävarmuusvälin sisällä.",
+     "feedback": "Mittaus ei voi todistaa hypoteesia: epävarmuusvälin sisään mahtuu myös muita arvoja, ja väli on vain arvio. Tulos tukee hypoteesia. Kertaa johtopäätöksen muotoilu luvussa *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*."
+    },
+    {
+     "text": "Hypoteesi on väärä, koska tulos ei ole täsmälleen $9{,}81\\,\\text{m/s}^2$.",
+     "feedback": "Jokaisessa mittaustuloksessa on epävarmuutta, joten täsmälleen samaa arvoa ei voi odottaa. Tulosta verrataan hypoteesiin epävarmuus huomioon ottaen. Kertaa asia luvussa *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*."
+    },
+    {
+     "text": "Johtopäätöstä ei voi tehdä, koska tuloksen epävarmuus on suurempi kuin nolla.",
+     "feedback": "Epävarmuus kuuluu jokaiseen mittaukseen, eikä se estä johtopäätöstä. Se kertoo, kuinka vahva johtopäätös on. Kertaa asia luvuissa *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi* ja *Mittaaminen ja mittauksen luotettavuus*."
+    },
+    {
+     "text": "Tulos tukee hypoteesia mutta ei todista sitä: ero on epävarmuutta pienempi.",
+     "feedback": "Oikein. Ero $0{,}1\\,\\text{m/s}^2$ on pienempi kuin epävarmuus $0{,}3\\,\\text{m/s}^2$, joten mittaus on sopusoinnussa hypoteesin kanssa. Asia on luvussa *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "aineisto",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Ryhmän jousimittaus",
+   "source": "example",
+   "text": "Ryhmä tarkisti, pitääkö jousen valmistajan ilmoittama jousivakio $25\\,\\text{N/m}$ paikkansa. Jousi ripustettiin telineeseen, ja sen viereen kiinnitettiin pystysuora viivain. Ilman punnuksia jousen alapää oli viivaimen kohdassa $1{,}0\\,\\text{cm}$. Ryhmä ripusti jouseen punnuksia, luki alapään kohdan viivaimesta ja kirjasi lukeman venymäksi $x$. Jokaiselta riviltä he laskivat jousivakion $k = F : x$.\n\n| $m\\ (\\text{g})$ | $F = mg\\ (\\text{N})$ | $x\\ (\\text{cm})$ | $k = F : x\\ (\\text{N/m})$ |\n|---|---|---|---|\n| $50$ | $0{,}491$ | $2{,}99$ | $16{,}4$ |\n| $100$ | $0{,}981$ | $4{,}90$ | $20{,}0$ |\n| $150$ | $1{,}472$ | $6{,}90$ | $21{,}3$ |\n| $200$ | $1{,}962$ | $6{,}85$ | $28{,}6$ |\n| $250$ | $2{,}453$ | $10{,}79$ | $22{,}7$ |\n\nRyhmän johtopäätös: ”Viiden tuloksen keskiarvo on $21{,}8\\,\\text{N/m}$. Valmistajan ilmoittama $25\\,\\text{N/m}$ on siis väärä.”",
+   "question": {
+    "type": "explain",
+    "prompt": "Arvioi ryhmän johtopäätöstä. Etsi aineistosta kaksi erilaista virhettä, kerro, mistä kumpikin tunnistetaan, ja ehdota, miten jousivakio pitäisi määrittää.",
+    "criteria": [
+     "Vastaus kertoo, että rivin $200\\,\\text{g}$ lukema $6{,}85\\,\\text{cm}$ on pienempi kuin kevyemmällä punnuksella, joten se on todennäköisesti kirjattu väärin, esimerkiksi $8{,}85\\,\\text{cm}$:n sijasta (karkea virhe).",
+     "Vastaus kertoo, että poikkeava lukema tarkistetaan ja mitataan uudelleen eikä sitä poisteta selittämättä.",
+     "Vastaus kertoo, että lukemista ei vähennetty alkulukemaa $1{,}0\\,\\text{cm}$, joten jokainen venymä on liian suuri ja jokainen $k$ liian pieni (systemaattinen virhe); se näkyy siinä, että $k$ kasvaa massan kasvaessa.",
+     "Vastaus kertoo, että keskiarvo ei kelpaa vertailuun, koska molemmat virheet ovat mukana, joten johtopäätös valmistajan virheestä ei ole perusteltu.",
+     "Vastaus ehdottaa $(F, x)$-kuvaajaa, jonka kulmakertoimesta jousivakio lasketaan, ja toistoja jokaisella punnuksella."
+    ],
+    "model": "*Karkea virhe.* Rivillä $200\\,\\text{g}$ lukema $6{,}85\\,\\text{cm}$ on pienempi kuin $150\\,\\text{g}$:n rivillä, vaikka raskaampi punnus venyttää jousta enemmän. Tulos $28{,}6\\,\\text{N/m}$ poikkeaa selvästi muista. Todennäköisesti lukema oli $8{,}85\\,\\text{cm}$, mikä sopisi rivien väliin. Lukema tarkistetaan ja mitataan uudelleen; sitä ei poisteta pelkästään siksi, että se poikkeaa, vaan syy kirjataan.\n\n*Systemaattinen virhe.* Venymä on lukeman ja alkulukeman erotus, mutta ryhmä ei vähentänyt alkulukemaa $1{,}0\\,\\text{cm}$. Jokainen venymä on siksi $1{,}0\\,\\text{cm}$ liian suuri ja jokainen $k$ liian pieni. Virheen tunnistaa siitä, että $k$ kasvaa massan mukana ($16{,}4 \\to 22{,}7\\,\\text{N/m}$): sama $1{,}0\\,\\text{cm}$ on pienellä venymällä suurempi osa lukemasta.\n\n*Johtopäätös.* Keskiarvossa $21{,}8\\,\\text{N/m}$ ovat mukana molemmat virheet, joten sen perusteella valmistajan arvoa ei voi hylätä. Paremmin jousivakio määritetään piirtämällä $(F, x)$-kuvaaja: suoran kulmakerroin on $\\tfrac{1}{k}$, ja alkulukeman virhe siirtää suoraa muttei muuta kulmakerrointa. Näistä mittauksista kulmakerroin antaa $k \\approx 25\\,\\text{N/m}$, kun virheellinen rivi jätetään perustellusti pois. Jokainen lukema mitataan lisäksi kolme kertaa, jolloin poikkeama erottuu heti."
+   }
+  },
+  {
+   "id": "kertaus-teoria",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Kaava",
+    "Yleisiä virheitä",
+    "Kertaa tarvittaessa"
+   ]
+  },
+  {
+   "id": "valine",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Mittausvälineen valinta",
+   "prompt": "Kuparilangan halkaisija on noin $0{,}5\\,\\text{mm}$. Millä mittaustavalla halkaisijan suhteellinen epävarmuus on pienin?",
+   "choices": [
+    {
+     "text": "Mikrometriruuvilla, jonka resoluutio on $0{,}01\\,\\text{mm}$, viidestä kohdasta",
+     "feedback": "Oikein. Lukeman epävarmuus on noin $0{,}01\\,\\text{mm}$ eli noin $2\\,\\%$ halkaisijasta, ja viisi mittauskohtaa näyttää, vaihteleeko paksuus. Mittari valitaan niin, että sen resoluutio ja epävarmuus ovat pienet mitattavaan suureeseen nähden.",
+     "correct": true
+    },
+    {
+     "text": "Viivaimella, jonka pienin asteikkoväli on $1\\,\\text{mm}$, suoraan langan poikki",
+     "feedback": "Lukeman epävarmuus on noin $0{,}5\\,\\text{mm}$ eli yhtä suuri kuin koko halkaisija: suhteellinen epävarmuus on noin $100\\,\\%$. Mittarin asteikkovälin on oltava paljon mitattavaa suuretta pienempi."
+    },
+    {
+     "text": "Kiertämällä $20$ kierrosta kynän ympäri ja mittaamalla kerroksen leveys viivaimella",
+     "feedback": "Tapa on hyvä, jos tarkempaa mittaria ei ole: $20$ halkaisijaa on noin $10\\,\\text{mm}$, ja lukeman epävarmuus $0{,}5\\,\\text{mm}$ on noin $5\\,\\%$ siitä. Mikrometriruuvi pääsee silti selvästi pienempään suhteelliseen epävarmuuteen."
+    },
+    {
+     "text": "Työntömitalla, jonka resoluutio on $0{,}05\\,\\text{mm}$, yhdestä kohdasta",
+     "feedback": "Epävarmuus on vähintään resoluution luokkaa, noin $0{,}05\\,\\text{mm}$ eli $10\\,\\%$ halkaisijasta. Yksi mittaus ei myöskään paljasta, onko lanka joka kohdasta yhtä paksu."
+    }
+   ]
+  },
+  {
+   "id": "suunnitelma-virhe",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Etsi suunnitelman puute",
+   "prompt": "Opiskelija suunnittelee kokeen, jossa hän tutkii, miten kumipallon pomppukorkeus riippuu pudotuskorkeudesta. Mikä hänen suunnitelmansa kohdista on puutteellinen?",
+   "choices": [
+    {
+     "text": "Pudotuskorkeutta muutetaan $0{,}50\\,\\text{m}$:stä $2{,}0\\,\\text{m}$:iin viidellä tasavälisellä arvolla.",
+     "feedback": "Tämä kohta on kunnossa: viisi tasavälistä arvoa laajalla alueella riittää näyttämään, onko riippuvuus suora."
+    },
+    {
+     "text": "Pomppukorkeus luetaan seinän mittanauhalta videolta kuva kerrallaan.",
+     "feedback": "Tämä kohta on kunnossa: video pysäyttää pallon ylimmän kohdan, jota silmällä on vaikea nähdä. Kameran on oltava pallon korkeudella, jotta lukema ei vääristy."
+    },
+    {
+     "text": "Kullakin pudotuskorkeudella pallo pudotetaan vain kerran, koska toisto ei muuta tulosta.",
+     "feedback": "Oikein, tämä on puute. Pomppukorkeus vaihtelee pudotuksesta toiseen, ja hajonta tulee näkyviin vain toistamalla. Kolmen tai useamman toiston keskiarvo vaimentaa satunnaisvirhettä, ja hajonnasta saadaan virhearvio.",
+     "correct": true
+    },
+    {
+     "text": "Sama pallo, sama lattian kohta ja sama huoneen lämpötila pidetään koko kokeen ajan.",
+     "feedback": "Tämä kohta on kunnossa: pallo, alusta ja lämpötila vaikuttavat pomppuun, joten ne ovat vakioitavia muuttujia."
+    }
+   ]
+  },
+  {
+   "id": "linearisointi",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Mikä kuvaaja?",
+   "prompt": "Jousen varaan ripustetaan eri massoja $m$, ja jokaisen värähtelyn jaksonaika $T$ mitataan. Jousen ja kappaleen jaksonaika on $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$. Mistä kuvaajasta jousivakio $k$ saadaan suoran kulmakertoimen avulla?",
+   "choices": [
+    {
+     "text": "$(m, T^2)$-kuvaajasta, jonka kulmakerroin on $\\tfrac{4\\pi^2}{k}$",
+     "feedback": "Oikein. Korottamalla saadaan $T^2 = \\tfrac{4\\pi^2}{k}\\, m$, joka on suora, kun $T^2$ on pystyakselilla ja $m$ vaaka-akselilla. Kulmakertoimesta $a$ saadaan $k = \\tfrac{4\\pi^2}{a}$. Kertaa jaksonaika luvussa *Jousivärähtelijä ja heiluri*.",
+     "correct": true
+    },
+    {
+     "text": "$(m, T)$-kuvaajasta, jonka kulmakerroin on $k$",
+     "feedback": "$T$ on verrannollinen massan neliöjuureen, joten $(m, T)$-pisteet ovat kaarevalla käyrällä eivätkä suoralla. Kaava muuttuu suoran yhtälöksi, kun se korotetaan toiseen potenssiin. Kertaa asia luvussa *Graafinen esitys ja suoran sovittaminen*."
+    },
+    {
+     "text": "$(T, m)$-kuvaajasta, jonka kulmakerroin on $2\\pi k$",
+     "feedback": "Akselien vaihtaminen ei suorista kuvaajaa: $m$ on verrannollinen jaksonajan neliöön, joten pisteet ovat paraabelilla. Lisäksi kerroin $2\\pi k$ ei seuraa kaavasta. Kertaa asia luvussa *Jousivärähtelijä ja heiluri*."
+    },
+    {
+     "text": "$(m, \\sqrt{T})$-kuvaajasta, jonka kulmakerroin on $\\tfrac{k}{4\\pi^2}$",
+     "feedback": "Neliöjuuri vie väärään suuntaan: $\\sqrt{T}$ on verrannollinen massan neljänteen juureen. Suora saadaan, kun jaksonaika korotetaan toiseen potenssiin. Kertaa asia luvussa *Graafinen esitys ja suoran sovittaminen*."
+    }
+   ]
+  },
+  {
+   "id": "lampomittari",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Nollakohdan virhe",
+   "prompt": "Lämpömittari näyttää jäävedessä $1{,}5\\,{}^\\circ\\text{C}$ eikä $0{,}0\\,{}^\\circ\\text{C}$, ja virhe on sama koko mittausalueella. Mittarilla luetaan veden lämpötila ennen lämmitystä ja sen jälkeen, ja ominaislämpökapasiteetti lasketaan kaavasta $c = \\tfrac{Q}{m\\,\\Delta T}$. Miten mittarin virhe vaikuttaa tulokseen $c$?",
+   "choices": [
+    {
+     "text": "$c$ tulee liian pieneksi, koska jokainen lukema on $1{,}5\\,{}^\\circ\\text{C}$ liian suuri.",
+     "feedback": "Molemmat lukemat ovat $1{,}5\\,{}^\\circ\\text{C}$ liian suuria, joten niiden erotus $\\Delta T$ on oikea. Kaavaan tarvitaan vain lämpötilan muutos."
+    },
+    {
+     "text": "Ei juuri lainkaan, koska sama siirtymä on molemmissa lukemissa ja kumoutuu erotuksessa.",
+     "feedback": "Oikein. Nollakohdan virhe siirtää molempia lukemia saman verran, joten lämpötilan muutos $\\Delta T$ on oikea. Virhe pitää korjata vain, jos tarvitaan itse lämpötila, esimerkiksi absoluuttinen lämpötila.",
+     "correct": true
+    },
+    {
+     "text": "$c$ tulee liian suureksi, koska mittari näyttää liian lämmintä ja lämmitys näyttää heikommalta.",
+     "feedback": "Liian suuri lukema ei tee lämpenemisestä pienempää: alku- ja loppulukema siirtyvät saman verran, ja erotus pysyy samana."
+    },
+    {
+     "text": "Tulos on käyttökelvoton, koska systemaattista virhettä ei voi korjata jälkikäteen.",
+     "feedback": "Tunnetun suuruinen systemaattinen virhe voidaan korjata vähentämällä se lukemista, ja erotuksessa se kumoutuu itsestään."
+    }
+   ]
+  },
+  {
+   "id": "jaksonaika",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Toistettu ajanotto",
+   "prompt": "Opiskelija mittaa vaunun kulkuajan kaltevalla radalla viisi kertaa: $5{,}62\\,\\text{s}$, $5{,}81\\,\\text{s}$, $5{,}55\\,\\text{s}$, $5{,}74\\,\\text{s}$ ja $5{,}68\\,\\text{s}$. Laske ajan suhteellinen epävarmuus, kun virhearvio on vaihteluvälin puolikas. Vastaa prosentteina.",
+   "answer": 2.29,
+   "unit": "%",
+   "tolerance": 0.05,
+   "hints": [
+    "Laske ensin ajan keskiarvo.",
+    "Virhearvio on $\\Delta t = \\tfrac{t_\\text{max} - t_\\text{min}}{2}$.",
+    "$\\varepsilon = \\tfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$, missä $\\Delta t = 0{,}13\\,\\text{s}$."
+   ],
+   "mistakes": [
+    {
+     "value": 4.58,
+     "feedback": "Käytit koko vaihteluväliä $0{,}26\\,\\text{s}$. Virhearvio on vaihteluvälin puolikas."
+    },
+    {
+     "value": 0.13,
+     "feedback": "Tämä on ajan virhearvio $\\Delta t$ sekunteina. Suhteellinen epävarmuus on $\\Delta t$ jaettuna keskiarvolla."
+    },
+    {
+     "value": 0.0229,
+     "feedback": "Tämä on suhteellinen epävarmuus desimaalilukuna. Prosentteina se on sata kertaa suurempi."
+    }
+   ],
+   "solution": "**Annettu:** viisi kulkuaikaa $5{,}62\\,\\text{s}$, $5{,}81\\,\\text{s}$, $5{,}55\\,\\text{s}$, $5{,}74\\,\\text{s}$ ja $5{,}68\\,\\text{s}$\n\n**Kysytty:** ajan suhteellinen epävarmuus $\\varepsilon$ prosentteina\n\n**Periaate:** Toistettujen tulosten paras arvio on keskiarvo, ja hajontaa arvioidaan tässä kurssissa vaihteluvälin puolikkaana. Suhteellinen epävarmuus kertoo, kuinka suuri virhearvio on tulokseen nähden.\n\n**Kaava:** $\\bar{t} = \\dfrac{t_1 + \\dots + t_5}{5}$, $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$ ja $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$\n\n**Muunnokset:** Ei tarvita, kaikki ajat ovat sekunteina.\n\n**Sijoitus:** ajat yhteensä $28{,}40\\,\\text{s}$, joten $\\bar{t} = \\dfrac{28{,}40\\,\\text{s}}{5} = 5{,}68\\,\\text{s}$; $\\Delta t = \\dfrac{5{,}81\\,\\text{s} - 5{,}55\\,\\text{s}}{2} = 0{,}13\\,\\text{s}$ ja $\\varepsilon = \\dfrac{0{,}13\\,\\text{s}}{5{,}68\\,\\text{s}} \\cdot 100\\,\\% = 2{,}29\\,\\%$\n\n**Vastaus:** $\\varepsilon \\approx 2{,}3\\,\\%$, kaksi merkitsevää numeroa kuten virhearviossa $0{,}13\\,\\text{s}$. Tulos on $t = (5{,}68 \\pm 0{,}13)\\,\\text{s}$.\n\n**Järkevyys:** Ajat vaihtelevat noin kymmenyksen keskiarvon molemmin puolin, mikä sopii käsin ajoitukseen. Kymmenyksen virhe noin kuuden sekunnin ajassa on muutama prosentti."
+  },
+  {
+   "id": "kulmakerroin-g",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Jousivakio kuvaajasta",
+   "prompt": "Jousen ja punnuksen värähtelystä piirrettyyn $(m, T^2)$-kuvaajaan sovitettu suora kulkee pisteiden $(0{,}10\\,\\text{kg};\\ 0{,}20\\,\\text{s}^2)$ ja $(0{,}50\\,\\text{kg};\\ 0{,}84\\,\\text{s}^2)$ kautta. Määritä jousivakio. Vastaa yksikössä $\\text{N/m}$.",
+   "answer": 24.67,
+   "unit": "N/m",
+   "tolerance": 0.03,
+   "hints": [
+    "Mitä suoran kulmakerroin tarkoittaa, kun jaksonajan kaava kirjoitetaan muotoon $T^2 = \\tfrac{4\\pi^2}{k}\\, m$?",
+    "Laske ensin kulmakerroin $a = \\tfrac{\\Delta (T^2)}{\\Delta m}$ suoran kahdesta pisteestä.",
+    "$a = 1{,}6\\,\\text{s}^2/\\text{kg}$, joten $k = \\tfrac{4\\pi^2}{a}$."
+   ],
+   "mistakes": [
+    {
+     "value": 1.6,
+     "feedback": "Tämä on suoran kulmakerroin. Se ei ole jousivakio vaan $\\tfrac{4\\pi^2}{k}$, joten $k = \\tfrac{4\\pi^2}{a}$."
+    },
+    {
+     "value": 0.0405,
+     "feedback": "Laskit $\\tfrac{a}{4\\pi^2}$, joka on $\\tfrac{1}{k}$. Kulmakerroin on $\\tfrac{4\\pi^2}{k}$, joten $k = \\tfrac{4\\pi^2}{a}$."
+    }
+   ],
+   "solution": "**Annettu:** sovitetun suoran pisteet $(0{,}10\\,\\text{kg};\\ 0{,}20\\,\\text{s}^2)$ ja $(0{,}50\\,\\text{kg};\\ 0{,}84\\,\\text{s}^2)$\n\n**Kysytty:** jousivakio $k$ yksikössä $\\text{N/m}$\n\n**Periaate:** Jousen ja kappaleen jaksonaika on $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$. Kun yhtälö korotetaan toiseen potenssiin, saadaan $T^2 = \\tfrac{4\\pi^2}{k}\\, m$: $(m, T^2)$-kuvaaja on suora, jonka kulmakerroin on $\\tfrac{4\\pi^2}{k}$. Kulmakerroin luetaan suoran kahdesta kaukana toisistaan olevasta pisteestä, joten kaikki mittauspisteet vaikuttavat tulokseen. Suora ei kulje aivan origon kautta, koska myös jousen oma massa värähtelee, mutta se ei muuta kulmakerrointa.\n\n**Kaava:** $a = \\dfrac{\\Delta (T^2)}{\\Delta m}$ ja $a = \\dfrac{4\\pi^2}{k}$, josta $k = \\dfrac{4\\pi^2}{a}$\n\n**Muunnokset:** Ei tarvita: massa on kilogrammoina ja $T^2$ yksikössä $\\text{s}^2$, joten $k$ tulee yksikössä $\\text{kg/s}^2 = \\text{N/m}$.\n\n**Sijoitus:** $a = \\dfrac{0{,}84\\,\\text{s}^2 - 0{,}20\\,\\text{s}^2}{0{,}50\\,\\text{kg} - 0{,}10\\,\\text{kg}} = \\dfrac{0{,}64\\,\\text{s}^2}{0{,}40\\,\\text{kg}} = 1{,}6\\,\\text{s}^2/\\text{kg}$ ja $k = \\dfrac{4\\pi^2}{1{,}6\\,\\text{s}^2/\\text{kg}} = 24{,}67\\,\\text{N/m}$\n\n**Vastaus:** $k \\approx 25\\,\\text{N/m}$, kaksi merkitsevää numeroa, koska erotukset $0{,}64\\,\\text{s}^2$ ja $0{,}40\\,\\text{kg}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Yksiköt: $\\tfrac{1}{\\text{s}^2/\\text{kg}} = \\text{kg/s}^2 = \\text{N/m}$. Tarkistus: $0{,}50\\,\\text{kg}$:n punnuksella $T = 2\\pi\\sqrt{0{,}50\\,\\text{kg} : 24{,}7\\,\\text{N/m}} \\approx 0{,}89\\,\\text{s}$ ja $T^2 \\approx 0{,}80\\,\\text{s}^2$, mikä on lähellä suoran arvoa; pieni ero on jousen oman massan vaikutus."
+  },
+  {
+   "id": "nollapiste",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Paineen nollakohta",
+   "prompt": "Suljetun lasipullon ilman paine mitattiin vesihauteessa eri lämpötiloissa. Pisteisiin sovitetulta suoralta luettiin pisteet $(20{,}0\\,{}^\\circ\\text{C};\\ 108{,}7\\,\\text{kPa})$ ja $(80{,}0\\,{}^\\circ\\text{C};\\ 130{,}8\\,\\text{kPa})$. Määritä suoran avulla lämpötila, jossa paine olisi nolla. Vastaa celsiusasteina.",
+   "answer": -275.1,
+   "unit": "°C",
+   "tolerance": 0.01,
+   "hints": [
+    "Kirjoita suoran yhtälö muotoon $p = p_0 + k\\theta$ ja laske kulmakerroin $k$ suoran kahdesta pisteestä.",
+    "Ratkaise vakiotermi $p_0$ jommastakummasta pisteestä: $p_0 = p - k\\theta$.",
+    "Paine on nolla, kun $p_0 + k\\theta_0 = 0$ eli $\\theta_0 = -\\tfrac{p_0}{k}$."
+   ],
+   "mistakes": [
+    {
+     "value": -295.1,
+     "feedback": "Jaoit mittauspisteen paineen $108{,}7\\,\\text{kPa}$ kulmakertoimella. Jaettavana on paine lämpötilassa $0\\,{}^\\circ\\text{C}$ eli vakiotermi $p_0$: $\\theta_0 = -\\tfrac{p_0}{k}$."
+    },
+    {
+     "value": -355.1,
+     "feedback": "Jaoit mittauspisteen paineen $130{,}8\\,\\text{kPa}$ kulmakertoimella. Jaettavana on paine lämpötilassa $0\\,{}^\\circ\\text{C}$ eli vakiotermi $p_0$: $\\theta_0 = -\\tfrac{p_0}{k}$."
+    },
+    {
+     "value": 275.1,
+     "feedback": "Etumerkki puuttuu. Paine pienenee jäähdytettäessä, joten nollapaine on reilusti alle $0\\,{}^\\circ\\text{C}$:n."
+    }
+   ],
+   "solution": "**Annettu:** suoran pisteet $(20{,}0\\,{}^\\circ\\text{C};\\ 108{,}7\\,\\text{kPa})$ ja $(80{,}0\\,{}^\\circ\\text{C};\\ 130{,}8\\,\\text{kPa})$; pullon tilavuus ei muutu\n\n**Kysytty:** lämpötila $\\theta_0$, jossa paine olisi nolla, celsiusasteina\n\n**Periaate:** Jäykässä suljetussa astiassa harvan kaasun paine on mittausalueella lineaarinen funktio lämpötilasta, $p = p_0 + k\\theta$. Suoraa jatketaan eli ekstrapoloidaan mittausalueen ulkopuolelle paineeseen nolla. Jatke on pitkä, joten tulos on vain arvio: todellinen kaasu tiivistyisi ennen nollapainetta.\n\n**Kaava:** $k = \\dfrac{p_2 - p_1}{\\theta_2 - \\theta_1}$, $p_0 = p_1 - k\\theta_1$ ja $p_0 + k\\theta_0 = 0$, josta $\\theta_0 = -\\dfrac{p_0}{k}$\n\n**Muunnokset:** Ei tarvita: lämpötilan muutos on sama celsiusasteina ja kelvineinä, ja kysytty lämpötila on celsiusasteina.\n\n**Sijoitus:** $k = \\dfrac{130{,}8\\,\\text{kPa} - 108{,}7\\,\\text{kPa}}{80{,}0\\,{}^\\circ\\text{C} - 20{,}0\\,{}^\\circ\\text{C}} = \\dfrac{22{,}1\\,\\text{kPa}}{60{,}0\\,{}^\\circ\\text{C}} = 0{,}3683\\,\\text{kPa}/{}^\\circ\\text{C}$, $p_0 = 108{,}7\\,\\text{kPa} - 0{,}3683\\,\\text{kPa}/{}^\\circ\\text{C} \\cdot 20{,}0\\,{}^\\circ\\text{C} = 101{,}33\\,\\text{kPa}$ ja $\\theta_0 = -\\dfrac{101{,}33\\,\\text{kPa}}{0{,}3683\\,\\text{kPa}/{}^\\circ\\text{C}} = -275{,}1\\,{}^\\circ\\text{C}$\n\n**Vastaus:** $\\theta_0 \\approx -275\\,{}^\\circ\\text{C}$. Kolme merkitsevää numeroa, koska paine-ero $22{,}1\\,\\text{kPa}$ tunnetaan kolmen numeron tarkkuudella; pitkän ekstrapoloinnin vuoksi epävarmuus on silti useita asteita.\n\n**Järkevyys:** Tulos on lähellä absoluuttista nollapistettä $-273{,}15\\,{}^\\circ\\text{C}$. Tarkistus: $101{,}33\\,\\text{kPa} + 0{,}3683\\,\\text{kPa}/{}^\\circ\\text{C} \\cdot (-275{,}1\\,{}^\\circ\\text{C}) \\approx 0\\,\\text{kPa}$."
+  },
+  {
+   "id": "mittausmatka",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Riittävän pitkä mittaus",
+   "prompt": "Opiskelija mittaa kävelynopeutensa koulun käytävällä. Hän kävelee noin $1{,}4\\,\\text{m/s}$, ja käsin otetun ajan epävarmuus on $0{,}2\\,\\text{s}$. Ajan suhteellisen epävarmuuden pitää olla enintään $2\\,\\%$. Kuinka pitkä mittausmatkan pitää vähintään olla? Vastaa metreinä.",
+   "answer": 14,
+   "unit": "m",
+   "tolerance": 0.05,
+   "hints": [
+    "Ajanoton epävarmuus pysyy samana, mittasipa lyhyen tai pitkän ajan. Kuinka pitkä ajan pitää olla, jotta $0{,}2\\,\\text{s}$ on siitä enintään $2\\,\\%$?",
+    "$t_\\text{min} = \\tfrac{\\Delta t}{\\varepsilon_\\text{max}}$, kun $\\varepsilon_\\text{max} = 0{,}02$.",
+    "Matka saadaan tasaisen liikkeen mallista $s = vt$."
+   ],
+   "mistakes": [
+    {
+     "value": 10,
+     "feedback": "Tämä on lyhin aika sekunteina. Matka saadaan kertomalla aika nopeudella."
+    },
+    {
+     "value": 0.14,
+     "feedback": "Käytit prosenttilukua $2$ desimaaliluvun $0{,}02$ sijasta: $2\\,\\% = 0{,}02$."
+    },
+    {
+     "value": 0.28,
+     "feedback": "Tämä on matka, jonka kävelijä kulkee ajanoton epävarmuuden aikana. Aika on oltava niin pitkä, että $0{,}2\\,\\text{s}$ on siitä enintään $2\\,\\%$."
+    }
+   ],
+   "solution": "**Annettu:** nopeus $v = 1{,}4\\,\\text{m/s}$, ajan epävarmuus $\\Delta t = 0{,}2\\,\\text{s}$, suurin sallittu suhteellinen epävarmuus $\\varepsilon_\\text{max} = 2\\,\\%$\n\n**Kysytty:** lyhin mittausmatka $s_\\text{min}$ metreinä\n\n**Periaate:** Käsin ajoituksen epävarmuus johtuu reaktioajasta, ja se on lähes sama lyhyessä ja pitkässä mittauksessa. Suhteellinen epävarmuus $\\tfrac{\\Delta t}{t}$ pienenee siis, kun mitattava aika kasvaa. Kävelijä liikkuu lähes vakionopeudella, joten tasaisen liikkeen malli $s = vt$ antaa ajasta matkan.\n\n**Kaava:** $\\varepsilon = \\dfrac{\\Delta t}{t} \\le \\varepsilon_\\text{max}$, joten $t_\\text{min} = \\dfrac{\\Delta t}{\\varepsilon_\\text{max}}$ ja $s_\\text{min} = v\\,t_\\text{min} = \\dfrac{v\\,\\Delta t}{\\varepsilon_\\text{max}}$\n\n**Muunnokset:** $\\varepsilon_\\text{max} = 2\\,\\% = 0{,}02$; muut suureet ovat perusyksiköissä.\n\n**Sijoitus:** $t_\\text{min} = \\dfrac{0{,}2\\,\\text{s}}{0{,}02} = 10\\,\\text{s}$ ja $s_\\text{min} = 1{,}4\\,\\text{m/s} \\cdot 10\\,\\text{s} = 14\\,\\text{m}$\n\n**Vastaus:** $s_\\text{min} \\approx 14\\,\\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $1{,}4\\,\\text{m/s}$; epävarmuus $0{,}2\\,\\text{s}$ on vain arvio, joten käytännössä valitaan pyöreä matka, esimerkiksi $15\\,\\text{m}$.\n\n**Järkevyys:** $14\\,\\text{m}$:n kävelyyn menee noin $10\\,\\text{s}$, ja $0{,}2\\,\\text{s}$ on siitä $2\\,\\%$. Kolmen metrin matkalla epävarmuus olisi noin $9\\,\\%$."
+  },
+  {
+   "id": "tehtavat",
+   "stage": "sovella",
+   "type": "exercises",
+   "text": "Kuusi ylioppilaskokeen tyylistä tehtävää: kaksi koesuunnitelmaa, raportin arviointi, mittausaineiston käsittely kuvaajana, laskutehtävä ja moduuleja yhdistävä tehtävä. Kirjoita vastaus ensin itse ja arvioi se sitten pisteytysohjeella."
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Käsite",
+   "prompt": "Ryhmä punnitsee massaltaan tunnetun $100{,}0\\,\\text{g}$:n punnuksen viisi kertaa, ja kaikki tulokset ovat välillä $101{,}6\\text{–}101{,}9\\,\\text{g}$. Mitä tulokset kertovat vaa'asta?",
+   "choices": [
+    {
+     "text": "Mittaus on toistettava mutta ei oikea: vaa'assa on systemaattinen virhe.",
+     "feedback": "Oikein. Tulokset ovat lähellä toisiaan, mutta kaikki noin $1{,}7\\,\\text{g}$ liian suuria. Virhe korjataan vähentämällä se lukemista tai nollaamalla vaaka. Asia on luvussa *Mittaaminen ja mittauksen luotettavuus*.",
+     "correct": true
+    },
+    {
+     "text": "Mittaus on sekä toistettava että oikea, koska tulosten hajonta on pieni.",
+     "feedback": "Pieni hajonta kertoo vain toistettavuudesta. Oikeellisuus arvioidaan vertaamalla keskiarvoa tunnettuun arvoon, ja ero on noin $1{,}7\\,\\text{g}$. Kertaa toistettavuus ja oikeellisuus luvussa *Mittaaminen ja mittauksen luotettavuus*."
+    },
+    {
+     "text": "Vaa'assa on suuri satunnaisvirhe, joka pienenee lisäämällä toistoja.",
+     "feedback": "Satunnaisvirhe näkyisi suurena hajontana, mutta tulokset ovat tiiviisti yhdessä. Ne ovat kaikki liian suuria, mikä on systemaattisen virheen tuntomerkki. Kertaa virheiden lajit luvussa *Mittaaminen ja mittauksen luotettavuus*."
+    },
+    {
+     "text": "Yksi tuloksista on karkea virhe, joka pitää poistaa ennen keskiarvon laskemista.",
+     "feedback": "Mikään tulos ei poikkea muista, joten karkeaa virhettä ei ole. Kaikki tulokset ovat siirtyneet saman verran. Kertaa asia luvussa *Mittaaminen ja mittauksen luotettavuus*."
+    }
+   ],
+   "practice": "Kertaa virheiden lajit sekä toistettavuus ja oikeellisuus luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "numeric",
+   "title": "2. Laskeminen",
+   "prompt": "Metallikuution massa on $63{,}5\\,\\text{g}$, ja sen epävarmuus on hyvin pieni. Kuution särmäksi mitattiin työntömitalla $a = (2{,}00 \\pm 0{,}02)\\,\\text{cm}$. Arvioi tiheyden epävarmuus $\\Delta\\rho$ laskemalla tiheys särmän ääriarvoilla. Vastaa yksikössä $\\text{g/cm}^3$.",
+   "answer": 0.24,
+   "unit": "g/cm³",
+   "tolerance": 0.2,
+   "hints": [
+    "Kuution tilavuus on $V = a^3$, joten $\\rho = \\tfrac{m}{a^3}$.",
+    "Laske $\\rho$ särmillä $1{,}98\\,\\text{cm}$ ja $2{,}02\\,\\text{cm}$. Kumpi antaa suuremman tiheyden?",
+    "$\\Delta\\rho = \\tfrac{\\rho_\\text{max} - \\rho_\\text{min}}{2}$."
+   ],
+   "mistakes": [
+    {
+     "value": 0.08,
+     "feedback": "Otit tiheyden suhteelliseksi epävarmuudeksi särmän suhteellisen epävarmuuden $1\\,\\%$. Särmä on kaavassa kolmannessa potenssissa, joten tiheyden suhteellinen epävarmuus on noin kolminkertainen."
+    },
+    {
+     "value": 0.48,
+     "feedback": "Tämä on koko väli $\\rho_\\text{max} - \\rho_\\text{min}$. Epävarmuus on sen puolikas."
+    }
+   ],
+   "solution": "**Annettu:** $m = 63{,}5\\,\\text{g}$, särmä $a = (2{,}00 \\pm 0{,}02)\\,\\text{cm}$\n\n**Kysytty:** tiheyden epävarmuus $\\Delta\\rho$ yksikössä $\\text{g/cm}^3$\n\n**Periaate:** Kuution tilavuus on $a^3$, joten tiheys on $\\rho = \\tfrac{m}{a^3}$. Epävarmuus arvioidaan ääriarvomenetelmällä: tiheys lasketaan särmän pienimmällä ja suurimmalla arvolla, ja epävarmuus on erotuksen puolikas. Pienempi särmä antaa suuremman tiheyden.\n\n**Kaava:** $\\rho = \\dfrac{m}{a^3}$ ja $\\Delta\\rho = \\dfrac{\\rho_\\text{max} - \\rho_\\text{min}}{2}$\n\n**Muunnokset:** Ei tarvita, kun massa on grammoina ja särmä senttimetreinä: tiheys tulee yksikössä $\\text{g/cm}^3$.\n\n**Sijoitus:** $\\rho_\\text{max} = \\dfrac{63{,}5\\,\\text{g}}{(1{,}98\\,\\text{cm})^3} = 8{,}18\\,\\text{g/cm}^3$, $\\rho_\\text{min} = \\dfrac{63{,}5\\,\\text{g}}{(2{,}02\\,\\text{cm})^3} = 7{,}70\\,\\text{g/cm}^3$ ja $\\Delta\\rho = \\dfrac{8{,}18\\,\\text{g/cm}^3 - 7{,}70\\,\\text{g/cm}^3}{2} = 0{,}24\\,\\text{g/cm}^3$\n\n**Vastaus:** $\\Delta\\rho \\approx 0{,}2\\,\\text{g/cm}^3$, yksi merkitsevä numero kuten virhearviossa yleensä. Särmällä $2{,}00\\,\\text{cm}$ saadaan $\\rho = 7{,}94\\,\\text{g/cm}^3$, joten $\\rho = (7{,}9 \\pm 0{,}2)\\,\\text{g/cm}^3$.\n\n**Järkevyys:** Särmän suhteellinen epävarmuus on $1\\,\\%$, ja kolmas potenssi kolminkertaistaa sen noin $3\\,\\%$:iin: $0{,}03 \\cdot 7{,}94\\,\\text{g/cm}^3 \\approx 0{,}24\\,\\text{g/cm}^3$. Tiheys $7{,}9\\,\\text{g/cm}^3$ sopii raudalle.",
+   "practice": "Kertaa tiheys luvussa [*Tiheys: $m = \\rho V$*](fy1-7.html) ja virhearvio luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "3. Perustele",
+   "prompt": "Selitä, miksi jousivakio kannattaa määrittää $(F, x)$-kuvaajan kulmakertoimesta eikä laskemalla jokaisesta mittauksesta oma $k = F : x$ ja niiden keskiarvoa.",
+   "criteria": [
+    "Vastaus kertoo, että kulmakerroin käyttää kaikkia pisteitä yhtä aikaa, joten yksittäisen pisteen satunnaisvirhe vaikuttaa vähemmän.",
+    "Vastaus kertoo, että virhe, joka on joka lukemassa sama (esimerkiksi viivaimen nollakohta), siirtää suoraa muttei muuta kulmakerrointa.",
+    "Vastaus kertoo, että kuvaajasta näkee, sopiiko malli (pisteet ovat suoralla) ja onko joukossa selvästi poikkeava piste."
+   ],
+   "model": "Kun $k$ lasketaan erikseen jokaisesta mittauksesta, jokaisen lukeman virhe menee suoraan tulokseen. Jos venymä on joka kerta luettu $1\\,\\text{cm}$ liian suureksi, jokainen $k$ on liian pieni, eikä keskiarvo korjaa sitä. Kuvaajassa sama virhe siirtää koko suoraa, mutta kulmakerroin ei muutu, joten $k$ saadaan oikein, ja virhe näkyy vakioterminä. Suora sovitetaan kaikkien pisteiden lomitse, joten yksittäisen pisteen satunnaisvirhe vaikuttaa vähemmän. Lisäksi kuvaajasta näkee heti, ovatko pisteet suoralla eli sopiiko malli, ja erottuuko joukosta poikkeava piste, joka pitää tarkistaa.",
+   "practice": "Kertaa suoran sovittaminen ja vakiotermi luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
+  },
+  {
+   "id": "lahtolippu",
+   "stage": "tarkista",
+   "type": "exit",
+   "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+  }
+ ]
+}

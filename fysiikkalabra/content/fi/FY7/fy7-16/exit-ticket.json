@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Puhelimen ja langattoman laturin väliin jää kolikko. Miksi kolikko kuumenee?",
+    "a": "Laturin lähetinkäämin vaihtuva magneettikenttä kulkee kolikon läpi, ja kolikon läpi kulkeva vuo muuttuu jatkuvasti. Kolikkoon indusoituu pyörrevirtoja, ja kolikon resistanssissa niiden sähköenergia muuttuu kolikon sisäenergiaksi. Siksi laturi tunnistaa vieraan metalliesineen ja keskeyttää latauksen."
+  },
+  {
+    "q": "Kuidun lopussa valon teho on sadasosa alun tehosta. Kuinka monta desibeliä on kuidun vaimennus?",
+    "a": "$A = 10\\,\\text{dB} \\cdot \\lg 100 = 20\\,\\text{dB}$. Jokainen $10\\,\\text{dB}$ pienentää tehon kymmenesosaan, ja kaksi kertaa kymmenesosaan on sadasosa."
+  }
+]

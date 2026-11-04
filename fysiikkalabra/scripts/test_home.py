@@ -9,9 +9,9 @@ For every language, from the pages that are actually in site/ (so nothing here h
     guide there
   - every row is one link, to its module page, with icon, code, title and the Miksi question (whole in its title),
     the arrow hidden from screen readers; the module page's lesson links all resolve (two clicks to a lesson)
-  - the <title>, og:title and description stay as they were; the header links Näin opiskelet (the study guide, now at
-    the top of Lukuvinkit with the six stages under the lessons' names) and the footer Tietoa sivustosta, which has
-    the portfolio link the front page no longer has
+  - the <title>, og:title and description stay as they were; the header links Näin opiskelet and Sivustosta (the study guide, now at
+    its own page nain-opiskelet.html since 2026-11-04, with the six stages under the lessons' names) and the footer Sivustosta (the teacher's text,
+    content/<lang>/tietoa.md); no page links to the teacher's portfolio (teacher 2026-11-04)
   - every language link resolves, and a link to a page the other language has not published goes to that
     language's module page, to a note that exists there
   - the course page's investigation bank (teacher 2026-10-31): every investigation with its topic, F/E levels and
@@ -105,16 +105,28 @@ for lang in i18n.languages():
            bool(intro) and intro.group(1) == T("site.home_h1") and intro.group(2) == T("site.home_sub") and home.find('class="catalogue"') > intro.end())
     hdr = re.search(r'<header class="top">.*?</header>', home, re.S).group(0); ftr = re.search(r'<footer class="bottom">.*?</footer>', home, re.S).group(0)
     expect(f"{lang}: the header links Moduulit, Näin opiskelet and Lukuvinkit in that order",
-           re.findall(r'<nav [^>]*><a class="nav-modules" href="index.html#moduulit">[^<]*</a><a class="nav-study" href="lukuvinkit.html#nain-opiskelet">([^<]*)</a><a class="nav-reading" href="lukuvinkit.html">', hdr) == [_h.escape(T("site.study"))], hdr[-400:])
-    expect(f"{lang}: the footer links Lukuvinkit and Tietoa sivustosta, not the portfolio",
-           'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr and T("site.back_to_portfolio") not in ftr and "../index.html" not in ftr, ftr)
+           re.findall(r'<nav [^>]*><a class="nav-modules" href="index.html#moduulit">[^<]*</a><a class="nav-study" href="nain-opiskelet.html">([^<]*)</a><a class="nav-reading" href="lukuvinkit.html">', hdr) == [_h.escape(T("site.study"))], hdr[-400:])
+    expect(f"{lang}: the footer links Lukuvinkit and Sivustosta",
+           'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr, ftr)
     about = (out / "tietoa.html").read_text() if (out / "tietoa.html").is_file() else ""
-    expect(f"{lang}: tietoa.html exists and links back to the portfolio", T("site.back_to_portfolio") in about and re.search(r'href="(\.\./)+index\.html"', about))
-    rp = (out / "lukuvinkit.html").read_text()
-    guide = re.search(r'<main[^>]*><section class="path" id="nain-opiskelet".*?</section>', rp, re.S)
+    expect(f"{lang}: tietoa.html exists", bool(about))
+    expect(f"{lang}: Sivustosta opens with Kiviruukin lukio's logo in the school's colours (teacher 2026-11-04)",
+           '<main class="reading about-page">' in about and (SITE / "brand/kiviruukin-lukio-valkoinen.svg").is_file()
+           and f'src="{"" if out == SITE else "../"}brand/kiviruukin-lukio-valkoinen.svg"' in about)
+    leaks = sorted(str(f.relative_to(out)) for f in out.glob("*.html") if ('href="' + "../" * len(out.relative_to(ROOT.parent).parts) + 'index.html"') in f.read_text())
+    expect(f"{lang}: no page links out of the site to the teacher's portfolio (teacher 2026-11-04)", not leaks, leaks[:5])
+    expect(f"{lang}: the front page header links Sivustosta after Lukuvinkit",
+           f'<a class="nav-reading" href="lukuvinkit.html">{_h.escape(T("site.reading_tips"))}</a><a class="nav-about" href="tietoa.html">{_h.escape(T("site.about"))}</a>' in hdr, hdr[-400:])
+    src = next((f for f in (ROOT / "content" / lang / "tietoa.md", ROOT / "content" / "fi" / "tietoa.md") if f.is_file()), None)
+    heads = re.findall(r"^#+ (.+)$", src.read_text(), re.M) if src else []
+    expect(f"{lang}: Sivustosta shows the teacher's text (content/{lang}/tietoa.md) with all its headings and bold parts",
+           bool(heads) and all(_h.escape(h) in about for h in heads) and about.count("<strong>") == src.read_text().count("**") // 2, heads)
+    rp = (out / "lukuvinkit.html").read_text(); sp = (out / "nain-opiskelet.html").read_text() if (out / "nain-opiskelet.html").is_file() else ""
+    guide = re.search(r'<main[^>]*><section class="path" id="nain-opiskelet".*?</section></main>', sp, re.S)
     stages = re.findall(r"<li><strong>(.*?)</strong>", guide.group(0)) if guide else []
-    expect(f"{lang}: the study guide opens Lukuvinkit with the six stages under the lessons' names and the more tips",
+    expect(f"{lang}: nain-opiskelet.html holds only the study guide: the six stages under the lessons' names and the more tips (teacher 2026-11-04)",
            stages == [T("inquiry.stage_" + k) for k in ["herata", "ennusta", "tutki", "selita", "sovella", "tarkista"]] and 'class="more-tips"' in guide.group(0), stages)
+    expect(f"{lang}: Lukuvinkit holds only the books, no study guide (teacher 2026-11-04)", 'class="path"' not in rp and "more-tips" not in rp)
     local = local_courses.load(lang); everywhere = local_courses.load()
     sec = re.search(r'<ul class="mod-list local-list">(.*?)</ul>', home, re.S)
     if local:
@@ -133,14 +145,24 @@ for lang in i18n.languages():
             hrefs = re.findall(r'href="([^"]+)"', prep.group(1)) if prep else []
             expect(f"{lang} {code}: chapters to prepare with link only published pages ({len(hrefs)})", all((out / h).is_file() for h in hrefs), hrefs)
             expect(f"{lang} {code}: not a national module row", code not in codes)
-            inv = re.search(r'<ol class="lessons local-inv">(.*?)</ol>', pg, re.S)
+            inv = re.search(r'<ol class="lessons ch-cards local-inv bank-list" id="bank-list">(.*?)</ol>', pg, re.S)   # the bank's cards by topic
             ihrefs = re.findall(r'href="([^"]+)"', inv.group(1)) if inv else []
             expect(f"{lang} {code}: listed investigations are published pages that name this course ({len(ihrefs)})",
                    all((out / h).is_file() and code in investigations.load(h[:-5], lang)["courses"] for h in ihrefs), ihrefs)
             if ihrefs:                   # the bank (teacher 2026-10-31): every item carries its filter data, the form starts hidden
-                items = re.findall(r'<li class="live bank-item" data-topic="(\w+)" data-f="([F123 ]+)" data-e="([E123 ]+)" data-mode="([OI ]+)"', inv.group(1))
+                items = re.findall(r'<li class="live ch-card bank-item" data-topic="(\w+)" data-f="([F123 ]+)" data-e="([E123 ]+)" data-mode="([OI ]+)"', inv.group(1))
                 expect(f"{lang} {code}: every investigation in the bank has topic, F, E and modes ({len(items)})", len(items) == len(ihrefs), len(items))
                 expect(f"{lang} {code}: the filter form starts hidden (all shown without scripts)", '<form class="bank-filter" id="bank-filter" hidden' in pg)
+                cards = re.findall(r'<li class="live ch-card bank-item"[^>]*>(.*?)</li>', inv.group(1), re.S)
+                expect(f"{lang} {code}: every investigation is a card with its opening illustration and its question (teacher 2026-11-04)",
+                       len(cards) == len(ihrefs) and all('class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in cards))
+            if local[code].get("chapters"):  # units as cards under the course's chapters (teacher 2026-11-04, scripts/cardgrid.py)
+                uc = re.search(r'<ol class="lessons ch-cards" id="unit-cards">(.*?)</ol>', pg, re.S)
+                live = re.findall(r'<li class="live ch-card">(.*?)</li>', uc.group(1), re.S) if uc else []
+                expect(f"{lang} {code}: one section per chapter with its question", uc and uc.group(1).count('class="ch-theme"') == len(local[code]["chapters"]) == uc.group(1).count('class="ch-theme-q"'))
+                expect(f"{lang} {code}: every published unit is a card with one link, its opening illustration and its question ({len(live)})",
+                       all(len(re.findall(r"<a ", c)) == 1 and 'class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in live)
+                       and all((out / h).resolve().is_file() for c in live for h in re.findall(r'href="([^"]+)"', c)))
             ghrefs = re.findall(r'href="(tvt-[\w-]+\.html)"', pg)
             expect(f"{lang} {code}: listed TVT-ohjeet are published pages ({len(ghrefs)})", all((out / h).is_file() for h in ghrefs), ghrefs)
     else: expect(f"{lang}: no local-course section without a course in this language", not sec)
@@ -262,7 +284,8 @@ with sync_playwright() as pw:
     for lang in i18n.languages():
         base = SITE if lang == i18n.SOURCE else SITE / lang
         for w, hgt in ((360, 780), (390, 844), (768, 1024), (1440, 900), (1920, 1080)):
-            for name in ("index.html", "FY4.html", "lukuvinkit.html") + tuple(f"{c}.html" for c in local_courses.load(lang)):
+            mix = ("yo-sekoitin.html",) if any(c.get("mixer") for c in local_courses.load().values()) else ()
+            for name in ("index.html", "FY4.html", "lukuvinkit.html") + tuple(f"{c}.html" for c in local_courses.load(lang)) + mix:
                 pg = b.new_page(viewport={"width": w, "height": hgt}); pg.goto((base / name).as_uri())
                 pg.evaluate("document.fonts.ready.then(() => true)"); pg.wait_for_timeout(150)
                 found = pg.evaluate(JS)
@@ -275,6 +298,16 @@ with sync_playwright() as pw:
                     pg.click(".bank-reset"); pg.wait_for_timeout(30)
                     back = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
                     expect(f"{lang}/{name} at {w} px: the bank filters without reloading and 'show all' brings all {total} back", hidden and back == total, (hidden, back))
+                if name == "yo-sekoitin.html" and w == 390:     # the task mixer: filters in place, a random pick of three, reset
+                    total = pg.evaluate("document.querySelectorAll('.bank-item').length")
+                    pg.click("[data-random]"); pg.wait_for_timeout(30)
+                    pick = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
+                    pg.click("button[type=reset]"); pg.wait_for_timeout(30)
+                    back = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
+                    links = pg.evaluate("[...document.querySelectorAll('.bank-item a')].map(a => a.getAttribute('href'))")
+                    missing = [h for h in links if not (base / h.split("#")[0]).is_file()]
+                    expect(f"{lang}/yo-sekoitin at {w} px: {total} tasks, a random pick shows {min(3, total)}, 'show all' brings all back, every link reaches a page",
+                           total > 0 and pick == min(3, total) and back == total and not missing, (total, pick, back, missing[:3]))
                 if name == "index.html" and (w, hgt) in ((1440, 900), (1920, 1080)):
                     sh = pg.evaluate("document.scrollingElement.scrollHeight")
                     expect(f"{lang}: at {w} x {hgt} the whole front page fits without scrolling ({sh} px)", sh <= hgt)

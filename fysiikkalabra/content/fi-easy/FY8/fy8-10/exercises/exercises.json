@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-10-L1-01",
+      "level": 1,
+      "text": "Hiili-12-atomin massa on tasan $12{,}000000\\,\\text{u}$. Vetyatomin massa on $m_\\text{H} = 1{,}007825\\,\\text{u}$ ja neutronin massa on $m_\\text{n} = 1{,}008665\\,\\text{u}$. Kuinka suuri on hiili-12-ytimen ${}^{12}_{6}\\text{C}$ massavaje? Anna vastaus atomimassayksikköinä.",
+      "answer": 0.09894,
+      "unit": "u",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-02",
+      "level": 1,
+      "text": "Happi-16-ytimen massavaje on $0{,}137005\\,\\text{u}$. Kuinka suuri on ytimen sidosenergia? Käytä arvoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Anna vastaus megaelektronivoltteina.",
+      "answer": 127.6,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-03",
+      "level": 1,
+      "text": "Uraani-238-ytimen ${}^{238}_{92}\\text{U}$ sidosenergia on $1801{,}7\\,\\text{MeV}$. Kuinka suuri on sen sidosenergia nukleonia kohti? Anna vastaus megaelektronivoltteina.",
+      "answer": 7.57,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-04",
+      "level": 1,
+      "text": "Kuinka suurta energiaa vastaa massa $1{,}00\\,\\text{g}$? Valon nopeus on $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$. Anna vastaus yksikössä $10^{13}\\,\\text{J}$.",
+      "answer": 8.99,
+      "unit": "10¹³ J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-05",
+      "level": 1,
+      "text": "Deuteriumytimen ${}^{2}_{1}\\text{H}$ sidosenergia on $2{,}224\\,\\text{MeV}$. Kuinka suuri on sen massavaje? Käytä arvoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Anna vastaus yksikössä $10^{-3}\\,\\text{u}$.",
+      "answer": 2.388,
+      "unit": "10⁻³ u",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-10-L2-01",
+      "level": 2,
+      "text": "Rauta-56-atomin ${}^{56}_{26}\\text{Fe}$ massa on $55{,}934936\\,\\text{u}$. Vetyatomin massa on $m_\\text{H} = 1{,}007825\\,\\text{u}$ ja neutronin massa on $m_\\text{n} = 1{,}008665\\,\\text{u}$. Kuinka suuri on rauta-56-ytimen sidosenergia nukleonia kohti? Käytä arvoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Anna vastaus megaelektronivoltteina.",
+      "answer": 8.79,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L2-02",
+      "level": 2,
+      "text": "Radium-226 hajoaa alfahajoamisella: ${}^{226}_{88}\\text{Ra} \\to {}^{222}_{86}\\text{Rn} + {}^{4}_{2}\\text{He}$. Atomimassat ovat $m({}^{226}\\text{Ra}) = 226{,}025410\\,\\text{u}$, $m({}^{222}\\text{Rn}) = 222{,}017578\\,\\text{u}$ ja $m({}^{4}\\text{He}) = 4{,}002603\\,\\text{u}$. Kuinka suuri energia hajoamisessa vapautuu? Käytä arvoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Anna vastaus megaelektronivoltteina.",
+      "answer": 4.871,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L2-03",
+      "level": 2,
+      "text": "Happi-16-ytimen massavaje on $0{,}137005\\,\\text{u}$. Laske ytimen sidosenergia jouleina. Muuta massavaje ensin kilogrammoiksi. Käytä arvoja $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$ ja $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$. Anna vastaus yksikössä $10^{-11}\\,\\text{J}$.",
+      "answer": 2.045,
+      "unit": "10⁻¹¹ J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L2-04",
+      "level": 2,
+      "text": "Aurinko säteilee avaruuteen tehon $3{,}83 \\cdot 10^{26}\\,\\text{W}$. Säteilyn energia syntyy Auringon ytimen ydinreaktioissa, joten Auringon massa pienenee. Kuinka paljon Auringon massa pienenee vuorokaudessa säteilyn vuoksi? Valon nopeus on $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$. Anna vastaus yksikössä $10^{14}\\,\\text{kg}$.",
+      "answer": 3.68,
+      "unit": "10¹⁴ kg",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-10-L3-01",
+      "level": 3,
+      "text": "Helium-4-ytimestä halutaan irrottaa yksi neutroni. Jäljelle jää helium-3-ydin: ${}^{4}_{2}\\text{He} \\to {}^{3}_{2}\\text{He} + \\text{n}$. Atomimassat ovat $m({}^{4}\\text{He}) = 4{,}002603\\,\\text{u}$ ja $m({}^{3}\\text{He}) = 3{,}016029\\,\\text{u}$. Neutronin massa on $m_\\text{n} = 1{,}008665\\,\\text{u}$. Kuinka paljon energiaa neutronin irrottaminen vaatii? Käytä arvoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Anna vastaus megaelektronivoltteina.",
+      "answer": 20.58,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L3-02",
+      "level": 3,
+      "text": "Kaksi deuteriumydintä yhtyy helium-4-ytimeksi: ${}^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\to {}^{4}_{2}\\text{He}$. Deuteriumin sidosenergia nukleonia kohti on $1{,}112\\,\\text{MeV}$ ja helium-4:n $7{,}074\\,\\text{MeV}$. Kuinka suuri energia reaktiossa vapautuu? Laske se sidosenergioista ilman atomimassoja. Anna vastaus megaelektronivoltteina.",
+      "answer": 23.85,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L3-03",
+      "level": 3,
+      "text": "Kattilassa on $1{,}00\\,\\text{kg}$ vettä, joka jäähtyy lämpötilasta $80{,}0\\,{}^\\circ\\text{C}$ lämpötilaan $20{,}0\\,{}^\\circ\\text{C}$. Veden ominaislämpökapasiteetti on $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$ ja valon nopeus on $2{,}998 \\cdot 10^{8}\\,\\text{m/s}$. Kuinka paljon veden massa pienenee jäähtyessä? Anna vastaus yksikössä $10^{-12}\\,\\text{kg}$.",
+      "answer": 2.8,
+      "unit": "10⁻¹² kg",
+      "tolerance": 0.02
+    }
+  ]
+}

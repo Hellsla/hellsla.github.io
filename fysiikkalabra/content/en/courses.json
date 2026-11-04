@@ -154,6 +154,12 @@
   },
   "FY7": {
     "title": "Electromagnetism and light",
+    "themes": [
+      "Magnetic field and magnetic force",
+      "Induction and electrical energy",
+      "Radiation and the propagation of light",
+      "Wave phenomena of light"
+    ],
     "tavoitteet": [
       "understands the central importance of induction in electromagnetism",
       "understands the physical basis of producing and transmitting electrical energy and its importance for society",
@@ -161,22 +167,22 @@
       "understands light as an electromagnetic phenomenon"
     ],
     "lessons": {
-      "fy7-1": "Magnetism, the magnetic dipole and the magnetic field",
-      "fy7-2": "Motion of a charged particle in electric and magnetic fields",
-      "fy7-3": "Magnetic field of a current-carrying wire and the force between wires",
-      "fy7-13": "Electric motor and loudspeaker",
-      "fy7-4": "Electromagnetic induction",
-      "fy7-5": "Lenz's law and eddy currents",
-      "fy7-6": "Generator and the production of alternating current",
-      "fy7-7": "Transformer and the transmission of electrical energy",
-      "fy7-8": "Electromagnetic radiation, the spectrum and black-body radiation",
-      "fy7-9": "Reflection and refraction of light",
-      "fy7-14": "Dispersion of light and the rainbow",
-      "fy7-10": "Total internal reflection and optical fibre",
-      "fy7-11": "Interference and diffraction of light",
-      "fy7-15": "Thin-film interference",
-      "fy7-12": "Polarisation of light",
-      "fy7-16": "Applied lesson: induction and light in modern technology"
+      "fy7-1": "Magnets, the magnetic dipole and the magnetic field",
+      "fy7-2": "Charged particle in electric and magnetic fields",
+      "fy7-3": "Magnetic field of a wire and a coil",
+      "fy7-4": "Force on a current-carrying wire: the electric motor and the loudspeaker",
+      "fy7-5": "Electromagnetic induction",
+      "fy7-6": "Lenz's law and eddy currents",
+      "fy7-7": "The generator and alternating current",
+      "fy7-8": "The transformer and the transmission of electrical energy",
+      "fy7-9": "Electromagnetic radiation and the black-body spectrum",
+      "fy7-10": "Reflection and refraction of light",
+      "fy7-11": "Dispersion: the prism and the rainbow",
+      "fy7-12": "Total internal reflection and optical fibre",
+      "fy7-13": "Interference and diffraction of light",
+      "fy7-14": "Thin-film interference",
+      "fy7-15": "Polarisation of light",
+      "fy7-16": "Applied chapter: wireless charging, the induction hob and the fibre link"
     }
   },
   "FY8": {

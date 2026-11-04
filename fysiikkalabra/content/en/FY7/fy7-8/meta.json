@@ -1,0 +1,23 @@
+{
+  "id": "fy7-8",
+  "course": "FY7",
+  "title": "The transformer and the transmission of electrical energy",
+  "goals": [
+    "LOPS FY7: the transformer and the transmission of energy by electric current",
+    "LOPS FY7: understand the physical basis of the production and transmission of electrical energy and its importance for the functioning of society",
+    "Transversal competence: societal competence"
+  ],
+  "prerequisites": [
+    "fy7-7"
+  ],
+  "glossary": [
+    "muuntaja",
+    "muuntosuhde",
+    "siirtohäviö",
+    "sähköverkko",
+    "suurjännite"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

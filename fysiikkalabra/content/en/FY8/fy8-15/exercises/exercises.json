@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-15-L1-01",
+      "level": 1,
+      "text": "The baryon $\\Delta^{++}$ is made of three $u$ quarks. Calculate its charge as a multiple of the elementary charge $e$. Quark charges: $u$ ($+\\tfrac{2}{3}e$), $d$ and $s$ ($-\\tfrac{1}{3}e$); the charge of an antiquark is opposite.",
+      "answer": 2,
+      "unit": "e",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-15-L1-02",
+      "level": 1,
+      "text": "The antiproton $\\bar{p}$ is made of the antiquarks $\\bar{u}\\,\\bar{u}\\,\\bar{d}$. Calculate its charge as a multiple of the elementary charge $e$. Quark charges: $u$ ($+\\tfrac{2}{3}e$), $d$ and $s$ ($-\\tfrac{1}{3}e$); the charge of an antiquark is opposite.",
+      "answer": -1,
+      "unit": "e",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-15-L1-03",
+      "level": 1,
+      "text": "The antineutron is made of three antiquarks $\\bar{u}\\,\\bar{d}\\,\\bar{d}$. What is its baryon number $B$?",
+      "answer": -1,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-15-L1-04",
+      "level": 1,
+      "text": "An electron and a positron at rest annihilate into two photons. The rest energy of the electron and of the positron is $m_e c^2 = 511.0\\,\\text{keV}$ each. What is the energy of one photon in kiloelectronvolts?",
+      "answer": 511.0,
+      "unit": "keV",
+      "tolerance": 0.005
+    },
+    {
+      "id": "fy8-15-L1-05",
+      "level": 1,
+      "text": "A helium-4 nucleus contains two protons ($uud$) and two neutrons ($udd$). How many $u$ quarks are there in the nucleus?",
+      "answer": 6,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-15-L2-01",
+      "level": 2,
+      "text": "How many $d$ quarks are there in the carbon-12 nucleus ${}^{12}_{6}\\text{C}$?",
+      "answer": 18,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-15-L2-02",
+      "level": 2,
+      "text": "The lambda baryon $\\Lambda^0$ decays by the reaction $\\Lambda^0 \\to p + \\pi^-$. How much energy is released in the decay? The masses are $m_\\Lambda = 1115.683\\,\\tfrac{\\text{MeV}}{c^2}$, $m_p = 938.272\\,\\tfrac{\\text{MeV}}{c^2}$ and $m_\\pi = 139.570\\,\\tfrac{\\text{MeV}}{c^2}$ (Particle Data Group 2024). Answer in megaelectronvolts.",
+      "answer": 37.84,
+      "unit": "MeV",
+      "tolerance": 0.005
+    },
+    {
+      "id": "fy8-15-L2-03",
+      "level": 2,
+      "text": "A gamma photon can turn into an electron and a positron close to an atomic nucleus if its energy is at least the sum of the rest energies of the electron and the positron, $2 \\cdot 0.511\\,\\text{MeV}$. What is the greatest possible wavelength of such a photon? Answer in picometres.\n\nConstants: $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{MeV} = 10^{6}\\,\\text{eV}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$ and $1\\,\\text{pm} = 10^{-12}\\,\\text{m}$.",
+      "answer": 1.21,
+      "unit": "pm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-15-L2-04",
+      "level": 2,
+      "text": "The neutron is made of the quarks $u\\,d\\,d$. The masses of the quarks are $m_u = 2.16\\,\\tfrac{\\text{MeV}}{c^2}$ and $m_d = 4.70\\,\\tfrac{\\text{MeV}}{c^2}$, and the mass of the neutron is $939.565\\,\\tfrac{\\text{MeV}}{c^2}$ (Particle Data Group 2024). What percentage of the mass of the neutron is the sum of the masses of its quarks?",
+      "answer": 1.23,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-15-L3-01",
+      "level": 3,
+      "text": "The omega baryon $\\Omega^-$ is made of three $s$ quarks, and its mass is $1672.45\\,\\tfrac{\\text{MeV}}{c^2}$. Three reactions are proposed for its decay: (1) $\\Omega^- \\to K^- + \\pi^0$, (2) $\\Omega^- \\to \\Sigma^0 + K^-$ and (3) $\\Omega^- \\to \\Lambda^0 + K^-$. The particles: $\\Lambda^0 = u\\,d\\,s$ ($1115.683\\,\\tfrac{\\text{MeV}}{c^2}$), $\\Sigma^0 = u\\,d\\,s$ ($1192.642\\,\\tfrac{\\text{MeV}}{c^2}$), the meson $K^- = s\\,\\bar{u}$ ($493.677\\,\\tfrac{\\text{MeV}}{c^2}$) and the uncharged meson $\\pi^0$ ($134.977\\,\\tfrac{\\text{MeV}}{c^2}$) (Particle Data Group 2024). Using the charge, the baryon number and the energy, deduce which of the reactions is possible, and calculate the energy released in it in megaelectronvolts. Quark charges: $u$ ($+\\tfrac{2}{3}e$), $d$ and $s$ ($-\\tfrac{1}{3}e$).",
+      "answer": 63.09,
+      "unit": "MeV",
+      "tolerance": 0.005
+    },
+    {
+      "id": "fy8-15-L3-02",
+      "level": 3,
+      "text": "In science fiction, spaceships run on antimatter. How much energy would be released when $1.0\\,\\text{g}$ of antimatter annihilates with $1.0\\,\\text{g}$ of ordinary matter and all the mass turns into the energy of radiation ($c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$)?",
+      "answer": 1.8,
+      "unit": "10¹⁴ J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-15-L3-03",
+      "level": 3,
+      "text": "Antineutrinos were first observed in 1956 next to a nuclear reactor by the reaction $\\bar{\\nu}_e + p \\to n + X$. Deduce from the conservation of charge, baryon number and lepton number which particle $X$ is. What is the lepton number $L$ of the particle $X$?",
+      "answer": -1,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}

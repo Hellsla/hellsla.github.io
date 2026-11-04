@@ -1,0 +1,569 @@
+{
+  "intro": "The four tasks bring the module together: the measurement of a battery, an electric circuit, an electric field and a capacitor. In each one you decide which models suit the situation, and you justify your choice.",
+  "tasks": [
+    {
+      "id": "fy6-s1",
+      "title": "Flashlight battery",
+      "source": "example",
+      "source_note": "The measurement results have been made up for the task, but they are of the same order of magnitude as in a measurement of a new flat flashlight battery.",
+      "text": "A student investigates a new flat flashlight battery marked $4.5\\,\\text{V}$ on its side. She connects an adjustable resistor and an ammeter to the battery, and a voltmeter directly across the terminals of the battery (figure). She adjusts the current with the resistor and reads the corresponding terminal voltage $U$. The meters show the current to the nearest $0.01\\,\\text{A}$ and the voltage to the nearest $0.01\\,\\text{V}$. The student measured the current in increasing order, and the circuit was connected for about a minute for each reading. The battery warmed up slightly during the measurements, and the voltage seemed to fall slowly even when the current was not changed. After the series the student measured the voltage once more at a current of $0.10\\,\\text{A}$: the reading was $4.45\\,\\text{V}$, that is $0.03\\,\\text{V}$ lower than at the beginning of the series.\n\nMeasurement results (current $I$, terminal voltage $U$):\n\n- $I = 0.10\\,\\text{A}$, $U = 4.48\\,\\text{V}$\n- $I = 0.20\\,\\text{A}$, $U = 4.37\\,\\text{V}$\n- $I = 0.30\\,\\text{A}$, $U = 4.22\\,\\text{V}$\n- $I = 0.40\\,\\text{A}$, $U = 4.13\\,\\text{V}$\n- $I = 0.50\\,\\text{A}$, $U = 3.99\\,\\text{V}$\n- $I = 0.60\\,\\text{A}$, $U = 3.89\\,\\text{V}$",
+      "figure": "fy6-sovella/fy6-s1-circuit",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "The student wants to find out what kind of voltage source the battery is. Model the battery and draw a graph from the data so that, according to the model, a straight line fits the points.",
+          "criteria": [
+            {
+              "text": "Models the battery as an ideal voltage source with an internal resistance in series with it, so that the terminal voltage is $U = E - R_\\text{int} I$, and chooses $I$ and $U$ as the quantities of the graph.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$I\\ (\\text{A})$ on the horizontal axis and $U\\ (\\text{V})$ on the vertical axis; the vertical axis does not have to start from zero if the scale is marked."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "The line passes between the points and has been extended to the vertical axis."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine from the graph the source voltage $E$ and the internal resistance $R_\\text{int}$ of the battery.",
+          "answer": [
+            {
+              "name": "E",
+              "value": 4.6,
+              "unit": "V",
+              "tolerance": 0.03
+            },
+            {
+              "name": "Rs",
+              "value": 1.2,
+              "unit": "Ω",
+              "tolerance": 0.09
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope $\\dfrac{\\Delta U}{\\Delta I} \\approx -1.2\\,\\text{V/A}$ has been read from two points of the drawn line that are far apart, for example $(0.10\\,\\text{A};\\ 4.48\\,\\text{V})$ and $(0.60\\,\\text{A};\\ 3.88\\,\\text{V})$, not from adjacent measurement points."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$U = E - R_\\text{int} I$: $E$ is the point where the line meets the vertical axis ($I = 0$) and $R_\\text{int}$ is the negative of the slope."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R_\\text{int} = \\dfrac{0.60\\,\\text{V}}{0.50\\,\\text{A}}$ and $E = 4.48\\,\\text{V} + R_\\text{int} \\cdot 0.10\\,\\text{A}$, or the intercept read from the line."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$E \\approx 4.6\\,\\text{V}$ and $R_\\text{int} \\approx 1.2\\,\\Omega$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "An $8.0\\,\\Omega$ resistor is connected to the battery. How much power is transferred to the resistor, and what fraction of the whole electric power of the battery is transferred as heat in the internal resistance of the battery?",
+          "answer": [
+            {
+              "name": "P",
+              "value": 2.0,
+              "unit": "W",
+              "tolerance": 0.03
+            },
+            {
+              "name": "osuus",
+              "value": 13,
+              "unit": "%",
+              "tolerance": 0.05
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I = \\dfrac{E}{R + R_\\text{int}}$, the power of the resistor $P = R I^2$ and inside the battery $P_\\text{int} = R_\\text{int} I^2$; the fraction is $\\dfrac{P_\\text{int}}{P + P_\\text{int}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$I = 0.50\\,\\text{A}$, $P = 2.0\\,\\text{W}$ and $P_\\text{int} = 0.30\\,\\text{W}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 2.0\\,\\text{W}$ and the fraction about $13\\,\\%$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Evaluate how the discharging and warming of the battery affect the result of part b. Also estimate how much uncertainty the scatter of the points leaves in the value of $R_\\text{int}$ (the points deviate from the fitted line by at most $0.02\\,\\text{V}$), and suggest an improvement to the measurement.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "The discharging of the battery lowers the voltage during the series, so the voltages measured later (at larger currents) are too small: the line is too steep and $R_\\text{int}$ comes out too large (a systematic error). Because the current was only increased in one direction, the effect of time is mixed with the slope. Warming also changes $R_\\text{int}$ during the measurement (usually it makes it smaller), so its direction is uncertain."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The slopes of the extreme lines differ by $\\dfrac{2 \\cdot 0.02\\,\\text{V}}{0.50\\,\\text{A}} = 0.08\\,\\Omega$, so on the basis of the scatter alone $R_\\text{int} = (1.20 \\pm 0.08)\\,\\Omega$."
+            },
+            {
+              "text": "Suggests an improvement that reduces the effect of discharging: the currents in random order, the circuit connected only for the time of the reading, or the series repeated in reverse order and the results compared.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Estimates the effect of the drift: the voltage fell by about $0.03\\,\\text{V}$ during the series, so the slope is too large by at most about $\\dfrac{0.03\\,\\text{V}}{0.50\\,\\text{A}} = 0.06\\,\\Omega$. This is of the same order of magnitude as the scatter $0.08\\,\\Omega$, so $R_\\text{int}$ is about $1.1\\ldots1.2\\,\\Omega$ and the value $1.2\\,\\Omega$ is rather an upper limit."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy6-8",
+        "math": "fy6-8",
+        "graph": "fy6-8",
+        "experiment": "fy6-2",
+        "communication": "fy6-8"
+      }
+    },
+    {
+      "id": "fy6-s2",
+      "title": "Cabin yard lights",
+      "source": "example",
+      "source_note": "The resistance of the cable and the data of the lamps are made up, but of the same order of magnitude as in a 12 volt cabin electrical system.",
+      "text": "The yard lights of a cabin get their electricity from a $12.0\\,\\text{V}$ battery bank. A long cable leads from the battery bank to the lamps, and the combined resistance of both of its conductors is $0.80\\,\\Omega$. After the battery bank there is a fuse in the circuit. At the end of the cable there are two lamps connected in parallel (figure). Lamp A is marked $12\\,\\text{V},\\ 24\\,\\text{W}$ and lamp B $12\\,\\text{V},\\ 12\\,\\text{W}$: the marking gives the power when the rated voltage is connected to the lamp. Assume that the resistances of the lamps are constant. The internal resistance of the battery bank is so small that it can be ignored.\n\nOther data:\n\n- the rated current of the fuse is $3.15\\,\\text{A}$\n- the cable can withstand a current of at most $4.0\\,\\text{A}$ for a long time",
+      "figure": "fy6-sovella/fy6-s2-circuit",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large is the current from the battery bank when both lamps are lit?",
+          "answer": {
+            "value": 2.5,
+            "unit": "A",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Sees the structure of the circuit: the cable is in series with the lamps connected in parallel. Calculates the resistances of the lamps from the rated values, for example $R = \\dfrac{U^2}{P}$: $R_\\text{A} = 6.0\\,\\Omega$ and $R_\\text{B} = 12\\,\\Omega$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dfrac{1}{R_\\text{par}} = \\dfrac{1}{R_\\text{A}} + \\dfrac{1}{R_\\text{B}}$, $R = R_\\text{c} + R_\\text{par}$ and $I = \\dfrac{E}{R}$ solved before the numerical values."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R_\\text{par} = 4.0\\,\\Omega$ and $R = 4.8\\,\\Omega$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$I = 2.5\\,\\text{A}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much power is actually transferred to lamp A? Compare the result with the rated power of the lamp.",
+          "answer": {
+            "value": 16.7,
+            "unit": "W",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The loop rule $E - R_\\text{c} I - U_\\text{L} = 0$ gives the voltage of the lamps $U_\\text{L} = E - R_\\text{c} I$; the power of the lamp is $P = \\dfrac{U_\\text{L}^2}{R_\\text{A}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$U_\\text{L} = 12.0\\,\\text{V} - 0.80\\,\\Omega \\cdot 2.5\\,\\text{A} = 10.0\\,\\text{V}$ and $P_\\text{A} = \\dfrac{(10.0\\,\\text{V})^2}{6.0\\,\\Omega} = 16.7\\,\\text{W}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "$17\\,\\text{W}$ is less than the rated $24\\,\\text{W}$, because the voltage drop in the cable leaves less than $12\\,\\text{V}$ for the lamp. Check: the power of the battery bank, $30\\,\\text{W}$, is $16.7\\,\\text{W} + 8.3\\,\\text{W} + 5.0\\,\\text{W}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Lamp B burns out and no longer conducts current. How do the brightness of lamp A, the current from the battery bank and the warming of the cable change? Justify your answer, and check your reasoning by calculating the power of lamp A.",
+          "criteria": [
+            {
+              "text": "Concludes that the total resistance increases when one parallel branch is removed, so the current from the battery bank decreases: $I = \\dfrac{12.0\\,\\text{V}}{6.8\\,\\Omega} \\approx 1.8\\,\\text{A}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Justifies that a smaller current reduces the voltage drop in the cable ($R_\\text{c} I$ decreases), so a larger voltage is left for lamp A and it shines brighter, and that the power transferred to the cable, $R_\\text{c} I^2$, decreases from about $5.0\\,\\text{W}$ to $2.5\\,\\text{W}$, so the cable warms up less.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Calculates the power of lamp A: $U_\\text{A} \\approx 10.6\\,\\text{V}$ and $P_\\text{A} \\approx 18.7\\,\\text{W}$, previously $16.7\\,\\text{W}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "States that lamps connected in parallel are not completely independent of each other when the cable has resistance: if the resistance of the cable were zero, the brightness of lamp A would not change."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "The owner adds a third lamp C in parallel to the circuit, marked $12\\,\\text{V},\\ 36\\,\\text{W}$. How large a current will now flow from the battery bank? What happens to the fuse, and why is the rated current of the fuse chosen according to the cable? Also calculate the voltage of the lamps.",
+          "answer": {
+            "value": 4.3,
+            "unit": "A",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Three parallel lamps: $\\dfrac{1}{R_\\text{par}} = \\dfrac{1}{R_\\text{A}} + \\dfrac{1}{R_\\text{B}} + \\dfrac{1}{R_\\text{C}}$ and $I = \\dfrac{E}{R_\\text{c} + R_\\text{par}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R_\\text{C} = \\dfrac{(12\\,\\text{V})^2}{36\\,\\text{W}} = 4.0\\,\\Omega$, $R_\\text{par} = 2.0\\,\\Omega$ and $I = \\dfrac{12.0\\,\\text{V}}{2.8\\,\\Omega} = 4.3\\,\\text{A}$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The current $4.3\\,\\text{A}$ exceeds the $3.15\\,\\text{A}$ of the fuse and the permitted $4.0\\,\\text{A}$ of the cable, so the fuse will probably blow if the overcurrent continues and break the circuit; the operating time of the fuse is simplified, since a small overcurrent can last for a moment. The fuse is chosen to protect the weakest part, the cable, so its rated current is lower than the permitted current of the cable."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The voltage of the lamps is $R_\\text{par} I = 2.0\\,\\Omega \\cdot 4.3\\,\\text{A} \\approx 8.6\\,\\text{V}$, so the lamps shine dimmer than at a voltage of $10.0\\,\\text{V}$."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy6-4",
+        "math": "fy6-5",
+        "concept": "fy6-6",
+        "communication": "fy6-5"
+      }
+    },
+    {
+      "id": "fy6-s3",
+      "title": "Spray painting",
+      "source": "example",
+      "source_note": "The orders of magnitude are of the same kind as in industrial electrostatic spray painting, but the values of the task have been rounded and simplified.",
+      "text": "A car part is painted with an electrostatic spray gun. The potential of the nozzle plate is $+60\\,\\text{kV}$ and the grounded workpiece is $20\\,\\text{cm}$ away. The paint droplets leaving the nozzle get a positive charge, and they move towards the workpiece. Assume that the electric field between the nozzle plate and the workpiece is uniform (figure).\n\nOne paint droplet:\n\n- mass $4.0 \\cdot 10^{-10}\\,\\text{kg}$\n- charge $q = +6.0 \\cdot 10^{-13}\\,\\text{C}$\n- leaves the nozzle plate from rest\n\nOther data: the dielectric strength of air is about $3\\,\\text{MV/m}$, the acceleration of free fall is $9.81\\,\\text{m/s}^2$ and the constant of Coulomb's law is $k = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2}$.",
+      "figure": "fy6-sovella/fy6-s3-field",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "How large is the electric force acting on the droplet? Is it justified to ignore the weight of the droplet, and will sparking occur in the field?",
+          "answer": {
+            "value": 1.8e-07,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "In a uniform field $E = \\dfrac{U}{d}$ and the force $F = qE$ acts on the droplet."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E = \\dfrac{60\\,000\\,\\text{V}}{0.20\\,\\text{m}} = 3.0 \\cdot 10^{5}\\,\\text{V/m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 1.8 \\cdot 10^{-7}\\,\\text{N}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The weight $mg \\approx 3.9 \\cdot 10^{-9}\\,\\text{N}$ is only about $2\\,\\%$ of the electric force, so it can be ignored. The field is about a tenth of the dielectric strength of air, so no sparking occurs."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "At what speed does the droplet hit the workpiece when air resistance is not taken into account?",
+          "answer": {
+            "value": 13.4,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Chooses the principle of energy: the work done by the electric field, $qU$, increases the kinetic energy of the droplet when weight and air resistance are left out; the strength of the field or the acceleration is not needed.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$q U = \\dfrac{1}{2} m v^2$, so $v = \\sqrt{\\dfrac{2 q U}{m}}$; $U$ is the potential difference between the nozzle plate and the workpiece."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$qU = 6.0 \\cdot 10^{-13}\\,\\text{C} \\cdot 6.0 \\cdot 10^{4}\\,\\text{V} = 3.6 \\cdot 10^{-8}\\,\\text{J}$ and $v = \\sqrt{\\dfrac{2 \\cdot 3.6 \\cdot 10^{-8}\\,\\text{J}}{4.0 \\cdot 10^{-10}\\,\\text{kg}}}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 13\\,\\text{m/s}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "In a measurement the impact speed of the droplets is found to be about $5.0\\,\\text{m/s}$. Explain why it is much smaller than the result of part b, and conclude where the work done by the electric field goes.",
+          "criteria": [
+            {
+              "text": "Recognises that the model of part b left out air resistance: air resists the motion of the droplet, and as the speed increases, air resistance increases until it is approximately equal to the electric force.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Calculates the actual kinetic energy $\\dfrac{1}{2} m v^2 = 5.0 \\cdot 10^{-9}\\,\\text{J}$ and compares it with the work done by the field, $3.6 \\cdot 10^{-8}\\,\\text{J}$: it is only about $14\\,\\%$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Concludes that the remaining about $3.1 \\cdot 10^{-8}\\,\\text{J}$ is transferred to the air: the internal energy of the air increases and the energy is transferred further as heat to the surroundings. Energy is not lost.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Concludes that the result of part b is the greatest possible speed (an upper limit) in the absence of air resistance, and that the energy is not lost but transferred to the air."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Two neighbouring droplets are $1.0\\,\\text{mm}$ apart, and the charge of each is $+6.0 \\cdot 10^{-13}\\,\\text{C}$. How large is the force between the droplets? What does the result tell about the behaviour of the cloud of droplets?",
+          "answer": {
+            "value": 3.2e-09,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Coulomb's law for point charges: $F = k\\dfrac{q_1 q_2}{r^2}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Conversion $1.0\\,\\text{mm} = 1.0 \\cdot 10^{-3}\\,\\text{m}$; $F = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\cdot \\dfrac{(6.0 \\cdot 10^{-13}\\,\\text{C})^2}{(1.0 \\cdot 10^{-3}\\,\\text{m})^2}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 3.2 \\cdot 10^{-9}\\,\\text{N}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Charges of the same sign repel each other, so the cloud of droplets spreads sideways. The force is about $2\\,\\%$ of the force of the field but almost as large as the weight of the droplet ($0.8$ times), so the droplets still move towards the workpiece but spread out."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy6-12",
+        "math": "fy6-11",
+        "concept": "fy6-11",
+        "communication": "fy6-10"
+      }
+    },
+    {
+      "id": "fy6-s4",
+      "title": "Camera flash",
+      "source": "example",
+      "source_note": "The values of the capacitor are of the same order of magnitude as in a camera flash unit, but they have been chosen for the task.",
+      "text": "In a camera flash unit a small battery charges a capacitor to a voltage of $300\\,\\text{V}$ with the help of a circuit that raises the voltage. The capacitance of the capacitor is $330\\,\\mu\\text{F}$. When the flash fires, the capacitor discharges through the flash tube in about $1.0\\,\\text{ms}$, and its voltage falls to $220\\,\\text{V}$. The energy transferred to the flash leaves the device as light and heat.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much energy is stored in the capacitor before the flash?",
+          "answer": {
+            "value": 14.85,
+            "unit": "J",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The energy of a capacitor $E = \\dfrac{1}{2} C U^2$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Conversion $330\\,\\mu\\text{F} = 330 \\cdot 10^{-6}\\,\\text{F}$; $E = \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (300\\,\\text{V})^2$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$E \\approx 15\\,\\text{J}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How much energy was transferred to the flash? What fraction of the stored energy is this, and why is the fraction larger than the decrease in voltage?",
+          "answer": {
+            "value": 6.86,
+            "unit": "J",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Concludes that the energy transferred to the flash is the change in the energy of the capacitor: the energies are calculated separately before and after, not from the change in voltage $\\Delta U$ alone.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta E = \\dfrac{1}{2} C U_1^2 - \\dfrac{1}{2} C U_2^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_2 = \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 = 7.99\\,\\text{J}$ and $\\Delta E = 14.85\\,\\text{J} - 7.99\\,\\text{J} = 6.9\\,\\text{J}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The fraction is about $46\\,\\%$, although the voltage decreased by only about $27\\,\\%$, because energy depends on the square of the voltage: $1 - \\left(\\dfrac{220}{300}\\right)^2 \\approx 0.46$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "How large was the average current that flowed from the capacitor during the flash?",
+          "answer": {
+            "value": 26.4,
+            "unit": "A",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I = \\dfrac{\\Delta Q}{\\Delta t}$, where the transferred charge is $\\Delta Q = C\\,\\Delta U$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta Q = 330 \\cdot 10^{-6}\\,\\text{F} \\cdot 80\\,\\text{V} = 0.0264\\,\\text{C}$ and $\\Delta t = 1.0 \\cdot 10^{-3}\\,\\text{s}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "$I \\approx 26\\,\\text{A}$ and the average power $\\dfrac{6.9\\,\\text{J}}{1.0\\,\\text{ms}} \\approx 6.9\\,\\text{kW}$ are much larger than a small battery could supply in such a short pulse; that is why the energy is first stored in the capacitor."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "A repairer removes the battery from the flash unit and opens the unit right after that. Evaluate whether there is any danger in the capacitor, and describe how a capacitor is discharged safely. Also assess the danger by calculating the current if the resistance of a human body is about $1.0\\,\\text{k}\\Omega$.",
+          "criteria": [
+            {
+              "text": "Knows that the capacitor keeps its charge and energy when the battery is removed: it is still at $300\\,\\text{V}$ and holds about $15\\,\\text{J}$, even though the device is supplied by a small battery.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Calculates the current through the body: $I = \\dfrac{U}{R} = \\dfrac{300\\,\\text{V}}{1.0 \\cdot 10^{3}\\,\\Omega} = 0.30\\,\\text{A}$, which is many times the few tens of milliamperes that can already be dangerous.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Describes a safe discharge: a suitable resistor, for example $10\\,\\text{k}\\Omega$, is connected between the terminals with insulated tools, so that the energy is transferred to the internal energy of the resistor and further as heat to the surroundings; the initial current is $\\dfrac{300\\,\\text{V}}{10\\,\\text{k}\\Omega} = 30\\,\\text{mA}$. The terminals are not short-circuited, and the voltage is checked with a meter. At the start the resistor must withstand about $\\dfrac{(300\\,\\text{V})^2}{10\\,\\text{k}\\Omega} = 9\\,\\text{W}$, so its power rating must be chosen accordingly. The description is meant for understanding: do not try to discharge it yourself.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Concludes that the device must not be opened right away: the danger comes from the stored energy and voltage, not from the size of the battery. The resistance of the body varies (for example, moist skin), so the estimate is an order of magnitude."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy6-13",
+        "math": "fy6-13",
+        "concept": "fy6-15",
+        "communication": "fy6-15"
+      }
+    }
+  ]
+}

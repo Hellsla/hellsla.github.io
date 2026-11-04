@@ -1,0 +1,33 @@
+{
+  "id": "fy7-6",
+  "course": "FY7",
+  "title": "Lenzin laki ja pyörrevirrat",
+  "goals": [
+    "LOPS FY7: Lenzin laki ja pyörrevirrat"
+  ],
+  "prerequisites": [
+    "fy7-5"
+  ],
+  "glossary": [
+    "Lenzin laki",
+    "pyörrevirta",
+    "induktiojarru"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "Lenzin laki",
+      "explain": "Induktiovirran suunta on aina sellainen, että sen magneettikenttä vastustaa vuon muutosta, joka virran synnytti."
+    },
+    {
+      "term": "pyörrevirta",
+      "explain": "Virta, joka kiertää umpinaisessa metallikappaleessa, kun sen läpi kulkeva vuo muuttuu. Pyörrevirrat lämmittävät metallia."
+    },
+    {
+      "term": "induktiojarru",
+      "explain": "Jarru, jossa pyörrevirrat hidastavat liikettä ilman kosketusta. Liike-energia muuttuu metallin sisäenergiaksi."
+    }
+  ]
+}

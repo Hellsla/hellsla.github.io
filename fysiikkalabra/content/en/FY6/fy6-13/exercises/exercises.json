@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-13-L1-01",
+      "level": 1,
+      "text": "A capacitor is connected to a voltage of $12\\,\\text{V}$, and a charge of $4.8\\,\\mu\\text{C}$ moves to its plates. What is the capacitance of the capacitor? Give the answer in microfarads.",
+      "answer": 0.4,
+      "unit": "µF",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-02",
+      "level": 1,
+      "text": "The capacitance of an electrolytic capacitor is $470\\,\\mu\\text{F}$, and it is charged with a $9.0\\,\\text{V}$ battery. How large is the charge of the capacitor after charging? Give the answer in millicoulombs.",
+      "answer": 4.23,
+      "unit": "mC",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-03",
+      "level": 1,
+      "text": "The power supply of a speaker amplifier has a capacitor with a capacitance of $2200\\,\\mu\\text{F}$ and a voltage of $16\\,\\text{V}$. How much energy is stored in the capacitor? Give the answer in joules.",
+      "answer": 0.2816,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-04",
+      "level": 1,
+      "text": "The area of the plates of a parallel-plate capacitor is $0.025\\,\\text{m}^2$, and there is a layer of air $1.0\\,\\text{mm}$ thick between the plates. What is the capacitance of the capacitor? Give the answer in picofarads.",
+      "answer": 221.35,
+      "unit": "pF",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-05",
+      "level": 1,
+      "text": "The graph shows the voltage of a capacitor as a function of its charge during charging. How much energy is stored in the capacitor when its voltage is $12\\,\\text{V}$? Read the necessary values from the graph. Give the answer in microjoules.",
+      "figure": "fy6-13/ex-qu",
+      "answer": 360,
+      "unit": "µJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-13-L2-01",
+      "level": 2,
+      "text": "Between the plates of a capacitor there is a layer of paper $0.020\\,\\text{mm}$ thick, whose dielectric strength is $16\\,\\text{MV/m}$. What is the greatest voltage that can be connected to the capacitor without a breakdown?",
+      "answer": 320,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-02",
+      "level": 2,
+      "text": "The area of the plates of a parallel-plate capacitor is $100\\,\\text{cm}^2$, and between them there is a layer of dielectric $0.10\\,\\text{mm}$ thick. The capacitance of the capacitor is measured to be $3.3\\,\\text{nF}$. What is the relative permittivity of the dielectric?",
+      "answer": 3.727129,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-03",
+      "level": 2,
+      "text": "Energy of $200\\,\\text{J}$ is stored in the capacitor of a defibrillator before the shock, when its voltage is $2.0\\,\\text{kV}$. What is the capacitance of the capacitor? Give the answer in microfarads.",
+      "answer": 100,
+      "unit": "µF",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-04",
+      "level": 2,
+      "text": "The capacitance of a supercapacitor is $10\\,\\text{F}$, and it has been charged to its maximum allowed voltage of $2.7\\,\\text{V}$. It powers an LED lamp whose power is $0.50\\,\\text{W}$. Assume that the power stays constant and that all the energy of the capacitor can be used. How long does the lamp stay lit? Give the answer in seconds.",
+      "answer": 72.9,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-13-L3-01",
+      "level": 3,
+      "text": "A parallel-plate capacitor with air between the plates and a capacitance of $120\\,\\text{pF}$ is charged to a voltage of $500\\,\\text{V}$, and the source is disconnected. Then the plates are pulled twice as far apart. By how much does the energy of the capacitor increase? Give the answer in microjoules.",
+      "answer": 15,
+      "unit": "µJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L3-02",
+      "level": 3,
+      "text": "A capacitor with air between the plates and a capacitance of $220\\,\\text{pF}$ is connected to a voltage source of $1.5\\,\\text{kV}$. The space between the plates is filled with a glass plate whose relative permittivity is $5.6$, and the source stays connected all the time. How much additional charge moves from the source to the capacitor? Give the answer in microcoulombs.",
+      "answer": 1.518,
+      "unit": "µC",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L3-03",
+      "level": 3,
+      "text": "You are designing a parallel-plate capacitor with a capacitance of $1.0\\,\\text{nF}$ that withstands a voltage of $6.0\\,\\text{kV}$. The dielectric is polystyrene, whose relative permittivity is $2.6$ and dielectric strength $24\\,\\text{MV/m}$. To be safe, the field may be at most half of the dielectric strength. How large must the area of the plates be? Give the answer in square centimetres.",
+      "answer": 217.198659,
+      "unit": "cm²",
+      "tolerance": 0.02
+    }
+  ]
+}

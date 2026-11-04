@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "contribution": "The equivalence of mass and energy in nuclei: the atomic mass unit and its energy equivalent $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$, the mass defect and the binding energy $E_\\text{B} = \\Delta m\\,c^2$ from atomic masses (AME2020), the binding energy per nucleon and its graph, which the student builds, and the reaction energy of a nuclear reaction $Q = (m_\\text{initial} - m_\\text{final})\\,c^2$.",
+  "learn": [
+    "calculate the mass defect and the binding energy of a nucleus from atomic masses.",
+    "explain the shape of the binding energy curve and why fusion and fission release energy.",
+    "calculate the reaction energy of a nuclear reaction from the masses of the starting materials and the particles formed."
+  ],
+  "prior": [
+    "A nucleus consists of protons and neutrons, and in a decay equation the mass number and the charge number are conserved (chapter *The atomic nucleus and radioactive decay*)",
+    "Energy can be given in electronvolts: $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$ (chapter *The photoelectric effect and the photon*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A helium-4 atom contains two protons, two neutrons and two electrons. The same particles are in two hydrogen atoms and two neutrons, and their total mass is $4.032980\\,\\text{u}$. The mass of the helium-4 atom, however, is only $4.002603\\,\\text{u}$. The difference is less than one per cent, but the masses are known to a millionth, so the difference is real.",
+      "question": "Where has the missing mass of helium-4 gone when protons and neutrons join to form a nucleus?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Review: alpha decay",
+      "prompt": "Polonium-210 ${}^{210}_{84}\\text{Po}$ decays by alpha decay. Which daughter nucleus is formed?",
+      "choices": [
+        {
+          "text": "${}^{206}_{82}\\text{Pb}$, that is, lead-206",
+          "correct": true,
+          "feedback": "Correct. The alpha particle ${}^{4}_{2}\\text{He}$ takes away two protons and two neutrons, so the mass number decreases by four and the atomic number by two (chapter *The atomic nucleus and radioactive decay*). Today we calculate how much energy is released in this decay."
+        },
+        {
+          "text": "${}^{206}_{84}\\text{Po}$, that is, polonium-206",
+          "feedback": "The mass number correctly decreased by four, but the alpha particle also contains two protons, so the atomic number decreases by two: $84 - 2 = 82$ is lead (chapter *The atomic nucleus and radioactive decay*)."
+        },
+        {
+          "text": "${}^{210}_{82}\\text{Pb}$, that is, lead-210",
+          "feedback": "The atomic number correctly decreased by two, but the alpha particle contains four nucleons, so the mass number decreases by four: $210 - 4 = 206$ (chapter *The atomic nucleus and radioactive decay*)."
+        },
+        {
+          "text": "${}^{210}_{85}\\text{At}$, that is, astatine-210",
+          "feedback": "This would be beta minus decay, in which a neutron changes into a proton and the atomic number increases by one. In alpha decay ${}^{4}_{2}\\text{He}$ leaves the nucleus, so $A$ decreases by four and $Z$ by two (chapter *The atomic nucleus and radioactive decay*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: from light to heavy",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "The binding energy per nucleon $\\tfrac{E_\\text{B}}{A}$ tells how strongly the nucleons are bound on average. How does it change as we go from the lightest nuclei to the heaviest, from deuterium to uranium?",
+      "choices": [
+        {
+          "text": "It first rises steeply, is highest for medium-heavy nuclei and falls gently towards the heaviest.",
+          "correct": true,
+          "feedback": "The values of the model support this: for deuterium $1.112\\,\\text{MeV}$, for oxygen-16 $7.976\\,\\text{MeV}$, for iron-56 $8.790\\,\\text{MeV}$ and for nickel-62 $8.795\\,\\text{MeV}$, but for lead-208 $7.868\\,\\text{MeV}$ and for uranium-238 $7.570\\,\\text{MeV}$. In heavy nuclei the electric repulsion of the protons weakens the binding."
+        },
+        {
+          "text": "It rises all the time, because in a larger nucleus each nucleon is pulled by more neighbours.",
+          "feedback": "The values of the model refute this: for uranium-238 $\\tfrac{E_\\text{B}}{A} = 7.570\\,\\text{MeV}$ is smaller than $8.790\\,\\text{MeV}$ for iron-56. The strong interaction pulls only the nearest neighbours, so in a large nucleus no more neighbours are added, but every proton is repelled by all the other protons."
+        },
+        {
+          "text": "It is roughly the same for all nuclei, because the same strong interaction binds all nucleons.",
+          "feedback": "The values of the model refute this: for deuterium the value is $1.112\\,\\text{MeV}$ and for iron-56 $8.790\\,\\text{MeV}$, almost eight times as much. In a small nucleus a nucleon has few neighbours to which it is bound."
+        },
+        {
+          "text": "It falls all the time, because the electric repulsion of the protons grows as the nucleus grows.",
+          "feedback": "The values of the model refute this: the value rises from $1.112\\,\\text{MeV}$ for deuterium to $8.790\\,\\text{MeV}$ for iron-56. The repulsion begins to dominate only in heavy nuclei, where the value falls to $7.570\\,\\text{MeV}$ for uranium-238."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: helium or lithium",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "The lithium-7 nucleus has seven nucleons and the helium-4 nucleus four. In which nucleus is the binding energy per nucleon $\\tfrac{E_\\text{B}}{A}$ greater?",
+      "choices": [
+        {
+          "text": "In helium-4, although it has fewer nucleons.",
+          "correct": true,
+          "feedback": "The values of the model support this: for helium-4 $\\tfrac{E_\\text{B}}{A} = 7.074\\,\\text{MeV}$ and for lithium-7 only $5.607\\,\\text{MeV}$. Helium-4 is an exceptionally tightly bound nucleus. This is why it is exactly a helium-4 nucleus that leaves heavy nuclei in alpha decay."
+        },
+        {
+          "text": "In lithium-7, because it has more nucleons and each has more neighbours.",
+          "feedback": "The values of the model refute this: for lithium-7 $\\tfrac{E_\\text{B}}{A} = 5.607\\,\\text{MeV}$ and for helium-4 $7.074\\,\\text{MeV}$. For light nuclei the value does not rise evenly: helium-4 is exceptionally compact, and in the graph it is a peak above its neighbours."
+        },
+        {
+          "text": "Equal, because both have only a few nucleons.",
+          "feedback": "The values of the model refute this: for helium-4 $7.074\\,\\text{MeV}$ and for lithium-7 $5.607\\,\\text{MeV}$, a difference of about $1.5\\,\\text{MeV}$ per nucleon. The values for light nuclei vary a lot from one nucleus to the next."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose a nucleus. The balance compares the mass of the separate nucleons with the mass of the atom, and the graph shows the binding energy per nucleon of every nucleus you have studied.",
+      "howto": "Choose a nuclide from the *Nucleus* menu. In the left pan are the $Z$ hydrogen atoms and $N$ neutrons of the nucleus apart (red proton, grey neutron), in the right pan the same atom whose nucleons are bound into a compact nucleus. Under the pans are their masses and at the top the mass defect $\\Delta m$. The balance tips towards the heavier side, that is, the separate nucleons; the tilt is exaggerated so that it can be seen. The graph keeps a point for every nucleus you have studied, and the current nucleus is circled. *Show all nuclei* also draws the other nuclei of the table as pale rings, and *Clear the graph* removes the studied points.",
+      "model": "The masses of the atoms are values from the atomic mass table AME2020 (IAEA Atomic Mass Data Center) to six decimals. The mass defect is calculated from the masses of hydrogen atoms ${}^{1}\\text{H}$, not protons, so that the masses of the electrons cancel. The very small binding energy of the electrons themselves in the atom is not taken into account. The table has $32$ nuclides, one or two of each element. The readings are model values calculated from these masses, not your own measurements.",
+      "calc": "The mass of the separate nucleons is $Z\\,m_\\text{H} + N\\,m_\\text{n}$, where $m_\\text{H} = 1.007825\\,\\text{u}$ and $m_\\text{n} = 1.008665\\,\\text{u}$. The mass defect is $\\Delta m = Z\\,m_\\text{H} + N\\,m_\\text{n} - m_\\text{atom}$, and the binding energy is obtained by putting $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$ into the equation $E_\\text{B} = \\Delta m\\,c^2$. On the vertical axis of the graph is $\\tfrac{E_\\text{B}}{A}$ and on the horizontal axis the mass number $A$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: light nuclei",
+      "intro": "Test prediction 2. Choose the nuclides in the order hydrogen-2 (deuterium), helium-4, lithium-7, carbon-12 and oxygen-16. Record for each the mass defect $\\Delta m$, the binding energy $E_\\text{B}$ and the binding energy per nucleon $\\tfrac{E_\\text{B}}{A}$, at least for the first three.",
+      "initial": {
+        "ydin": "H2"
+      },
+      "locked": [],
+      "vary": "ydin",
+      "min": 3,
+      "names": {
+        "ydin": "nuclide"
+      },
+      "values": {
+        "ydin": {
+          "H2": "hydrogen-2",
+          "He4": "helium-4",
+          "Li7": "lithium-7",
+          "C12": "carbon-12",
+          "O16": "oxygen-16",
+          "Fe56": "iron-56",
+          "Ni62": "nickel-62",
+          "Ag107": "silver-107",
+          "Pb208": "lead-208",
+          "U238": "uranium-238"
+        }
+      },
+      "measure": [
+        {
+          "key": "dm",
+          "label": "Δm (u)"
+        },
+        {
+          "key": "EB",
+          "label": "E_B (MeV)"
+        },
+        {
+          "key": "EBA",
+          "label": "E_B/A (MeV)"
+        }
+      ]
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: medium-heavy and heavy nuclei",
+      "intro": "Test prediction 1. Record the same quantities for the nuclides iron-56, nickel-62, silver-107, lead-208 and uranium-238, at least for three. Finally press *Show all nuclei* and look at the whole graph.",
+      "initial": {
+        "ydin": "Fe56"
+      },
+      "locked": [],
+      "vary": "ydin",
+      "min": 3,
+      "names": {
+        "ydin": "nuclide"
+      },
+      "values": {
+        "ydin": {
+          "H2": "hydrogen-2",
+          "He4": "helium-4",
+          "Li7": "lithium-7",
+          "C12": "carbon-12",
+          "O16": "oxygen-16",
+          "Fe56": "iron-56",
+          "Ni62": "nickel-62",
+          "Ag107": "silver-107",
+          "Pb208": "lead-208",
+          "U238": "uranium-238"
+        }
+      },
+      "measure": [
+        {
+          "key": "dm",
+          "label": "Δm (u)"
+        },
+        {
+          "key": "EB",
+          "label": "E_B (MeV)"
+        },
+        {
+          "key": "EBA",
+          "label": "E_B/A (MeV)"
+        }
+      ]
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: the binding energy curve",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write on the basis of your tables: How does the binding energy per nucleon change as the mass number increases, and for which nuclei is it highest? Which light nucleus differs from its neighbours? Which is more tightly bound, iron-56 or uranium-238, although the whole binding energy of uranium is much greater?",
+      "model": "As values of the model, the binding energy per nucleon rises steeply for light nuclei: hydrogen-2 $1.112\\,\\text{MeV}$, lithium-7 $5.607\\,\\text{MeV}$, carbon-12 $7.680\\,\\text{MeV}$ and oxygen-16 $7.976\\,\\text{MeV}$. Helium-4 is an exception: its value $7.074\\,\\text{MeV}$ is greater than that of the heavier lithium-7. The highest value is for medium-heavy nuclei, $8.795\\,\\text{MeV}$ for nickel-62 and $8.790\\,\\text{MeV}$ for iron-56. From there the value falls gently: silver-107 $8.554\\,\\text{MeV}$, lead-208 $7.868\\,\\text{MeV}$ and uranium-238 $7.570\\,\\text{MeV}$. The whole binding energy of uranium-238, $1801.7\\,\\text{MeV}$, is greater than that of iron, $492.3\\,\\text{MeV}$, because there are more nucleons, but per nucleon iron is more tightly bound. In light nuclei a nucleon has few neighbours to which the strong interaction binds it; in heavy nuclei the electric repulsion of the protons, which reaches across the whole nucleus, weakens the binding.",
+      "criteria": [
+        "I describe with the values of the model that $\\tfrac{E_\\text{B}}{A}$ first rises steeply, is highest for iron and nickel and then falls gently.",
+        "I name helium-4 as the exception: its value is greater than that of lithium-7.",
+        "I distinguish the whole binding energy from the binding energy per nucleon: for uranium the former is greater, for iron the latter.",
+        "I call the numbers of the simulation values of the model, not my own measurements."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the model values of the experiments. Then return to the opening question: where has the mass $0.030377\\,\\text{u}$ missing from the helium-4 atom gone, and why is helium-4 lighter than its parts?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates the binding energy of the carbon-12 nucleus. She correctly gets the mass defect $\\Delta m = 0.098940\\,\\text{u}$ and writes\n\n$$\\begin{aligned} &E_\\text{B} = \\Delta m\\,c^2 \\\\ &= 0.098940 \\cdot 931.5\\,\\text{MeV} \\\\ &\\quad \\cdot (2.998 \\cdot 10^{8}\\,\\text{m/s})^2 \\\\ &\\approx 8.3 \\cdot 10^{18}\\,\\text{MeV} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "$c^2$ has been multiplied in twice: it is already included in the conversion factor $931.5\\,\\tfrac{\\text{MeV}}{c^2}$.",
+          "correct": true,
+          "feedback": "Correct. When $931.5\\,\\tfrac{\\text{MeV}}{c^2}$ is put in place of the unit $\\text{u}$, $c^2$ cancels: $0.098940 \\cdot 931.5\\,\\tfrac{\\text{MeV}}{c^2} \\cdot c^2 = 92.16\\,\\text{MeV}$. The unit also reveals the error: the unit of the student's result would be $\\text{MeV} \\cdot \\tfrac{\\text{m}^2}{\\text{s}^2}$, not a unit of energy."
+        },
+        {
+          "text": "The mass defect should have been converted to kilograms first, before multiplying.",
+          "feedback": "One can calculate with kilograms and joules, but it is not required here: with the conversion factor $931.5\\,\\tfrac{\\text{MeV}}{c^2}$ the energy is obtained directly in megaelectronvolts. The error is that $c^2$ has been included twice."
+        },
+        {
+          "text": "The mass of the carbon-12 atom is exactly $12\\,\\text{u}$, so the mass defect should be zero.",
+          "feedback": "By definition the mass of the carbon-12 atom is exactly $12\\,\\text{u}$, but six hydrogen atoms and six neutrons together weigh $12.098940\\,\\text{u}$. So the mass defect $0.098940\\,\\text{u}$ is correct. The error is that $c^2$ has been included twice."
+        },
+        {
+          "text": "The binding energy should have been divided by the number of nucleons, $12$.",
+          "feedback": "Dividing would give the binding energy per nucleon, which is a different quantity. What was asked was the whole binding energy $E_\\text{B}$. The error is that $c^2$ has been included twice, although it is already in the conversion factor $931.5\\,\\tfrac{\\text{MeV}}{c^2}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Transfer: the energy of an alpha decay",
+      "prompt": "Older models of smoke detectors and the heat sources of space probes have used alpha emitters. Polonium-210 ${}^{210}_{84}\\text{Po}$ decays by alpha decay into lead-206. The atomic masses are $m({}^{210}\\text{Po}) = 209.982874\\,\\text{u}$, $m({}^{206}\\text{Pb}) = 205.974465\\,\\text{u}$ and $m({}^{4}\\text{He}) = 4.002603\\,\\text{u}$ (AME2020). How much energy is released in one decay? Give the answer in megaelectronvolts.",
+      "answer": 5.408,
+      "unit": "MeV",
+      "tolerance": 0.02,
+      "hints": [
+        "Write the decay equation. Which particles are at the start and which at the end?",
+        "The reaction energy is $Q = (m_\\text{initial} - m_\\text{final})\\,c^2$, and at the end there are both lead-206 and the alpha particle, that is, helium-4.",
+        "The difference of the masses is $0.005806\\,\\text{u}$. Put in $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 3734,
+          "feedback": "You forgot the mass of the alpha particle. At the end there is helium-4 in addition to lead-206, so $m_\\text{final} = 205.974465\\,\\text{u} + 4.002603\\,\\text{u}$."
+        },
+        {
+          "value": -5.408,
+          "feedback": "The sign is wrong: you subtracted the initial mass from the final mass. The reaction energy is $Q = (m_\\text{initial} - m_\\text{final})\\,c^2$, and in a spontaneous decay it is positive."
+        },
+        {
+          "value": 0.005806,
+          "feedback": "This is the difference of the masses in atomic mass units. Convert it into energy by putting in $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$."
+        }
+      ],
+      "solution": "**Given:** $m({}^{210}\\text{Po}) = 209.982874\\,\\text{u}$, $m({}^{206}\\text{Pb}) = 205.974465\\,\\text{u}$, $m({}^{4}\\text{He}) = 4.002603\\,\\text{u}$ (AME2020), $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$\n\n**Asked:** the energy released in the decay, that is, the reaction energy $Q$ in megaelectronvolts\n\n**Principle:** In the alpha decay ${}^{210}_{84}\\text{Po} \\to {}^{206}_{82}\\text{Pb} + {}^{4}_{2}\\text{He}$ the mass number and the charge number are conserved, but the mass of the atoms formed is smaller than that of the polonium atom. The energy corresponding to the decrease of mass is released, mainly as the kinetic energy of the alpha particle. Atomic masses can be used, because there are $84$ electrons on both sides: $82$ in the lead atom and $2$ in the helium atom.\n\n**Formula:** $Q = (m_\\text{initial} - m_\\text{final})\\,c^2$, where $m_\\text{initial} = m({}^{210}\\text{Po})$ and $m_\\text{final} = m({}^{206}\\text{Pb}) + m({}^{4}\\text{He})$\n\n**Unit conversions:** The mass is not converted to kilograms: $931.5\\,\\tfrac{\\text{MeV}}{c^2}$ is put in place of the unit $\\text{u}$, so $c^2$ cancels.\n\n**Substitution:** $m_\\text{initial} - m_\\text{final} = 209.982874\\,\\text{u} - 205.974465\\,\\text{u} - 4.002603\\,\\text{u} = 0.005806\\,\\text{u}$, so $Q = 0.005806\\,\\text{u} \\cdot c^2 = 0.005806 \\cdot 931.5\\,\\text{MeV} = 5.4083\\,\\text{MeV}$\n\n**Answer:** $5.408\\,\\text{MeV}$, four significant figures like the mass difference $0.005806\\,\\text{u}$.\n\n**Reasonableness:** $Q > 0$, as it must be in a spontaneous decay. Because of the conservation of momentum, the light alpha particle gets about the share $\\tfrac{206}{210}$ of the energy, that is, about $5.30\\,\\text{MeV}$; the measured energy of the alpha particles, $5.30\\,\\text{MeV}$, agrees. The result is of the same order of magnitude as the $4.27\\,\\text{MeV}$ of the alpha decay of uranium-238."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks use one equation, level 2 tasks convert units or combine two equations, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The binding energy of the deuterium nucleus ${}^{2}_{1}\\text{H}$ is $2.224\\,\\text{MeV}$. What does this mean?",
+      "choices": [
+        {
+          "text": "Breaking the nucleus into a proton and a neutron requires the energy $2.224\\,\\text{MeV}$.",
+          "correct": true,
+          "feedback": "Correct. The binding energy is the energy needed to break a nucleus into separate nucleons. The same energy was released when a proton and a neutron bound into deuterium, and this is why the nucleus is lighter than its parts."
+        },
+        {
+          "text": "The nucleus releases the energy $2.224\\,\\text{MeV}$ when it breaks into a proton and a neutron.",
+          "feedback": "The direction is the wrong way round. A separate proton and neutron are heavier than the deuterium nucleus, so the energy $2.224\\,\\text{MeV}$ has to be *supplied* to separate them. Energy is released when the nucleus forms."
+        },
+        {
+          "text": "The sum of the kinetic energies of the proton and the neutron in the nucleus is $2.224\\,\\text{MeV}$.",
+          "feedback": "The binding energy is not the kinetic energy of the nucleons. It is the energy $\\Delta m\\,c^2$ corresponding to the mass defect, which is needed to break the nucleus into separate nucleons."
+        },
+        {
+          "text": "The mass of the nucleus is greater than the mass of its parts by the amount corresponding to the energy $2.224\\,\\text{MeV}$.",
+          "feedback": "The opposite is true: the nucleus is *lighter* than its separate nucleons. The mass defect $\\Delta m = \\tfrac{2.224\\,\\text{MeV}}{c^2}$ is what the nucleus lacks compared with the mass of its parts."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Read the binding energy curve",
+      "figure": "fy8-10/kayra-points",
+      "prompt": "The graph shows the binding energy per nucleon of nuclei as a function of the mass number. In which of the following changes is energy released, when the number of nucleons is conserved?",
+      "choices": [
+        {
+          "text": "A nucleus with a mass number of about $240$ splits into two nuclei with a mass number of about $120$.",
+          "correct": true,
+          "feedback": "Correct. From the graph $\\tfrac{E_\\text{B}}{A}$ is about $7.6\\,\\text{MeV}$ when $A \\approx 240$ and about $8.5\\,\\text{MeV}$ when $A \\approx 120$. The nuclei formed are more tightly bound, so binding energy of about $240 \\cdot 0.9\\,\\text{MeV} \\approx 200\\,\\text{MeV}$ is released. This is fission."
+        },
+        {
+          "text": "A nucleus with a mass number of about $60$ splits into two nuclei with a mass number of about $30$.",
+          "feedback": "The peak of the graph is exactly at the mass number $60$. Nuclei with the mass number $30$ are more loosely bound, about $8.5\\,\\text{MeV}$ per nucleon, so this splitting would require energy and not release it."
+        },
+        {
+          "text": "Two nuclei with a mass number of about $120$ join to form a nucleus with a mass number of about $240$.",
+          "feedback": "This is the opposite of fission: $\\tfrac{E_\\text{B}}{A}$ decreases from about $8.5\\,\\text{MeV}$ to about $7.6\\,\\text{MeV}$, so the joining would require energy. The joining of heavy nuclei does not release energy."
+        },
+        {
+          "text": "Two nuclei with a mass number of about $60$ join to form a nucleus with a mass number of about $120$.",
+          "feedback": "Nuclei with the mass number $60$ are at the peak of the graph, about $8.8\\,\\text{MeV}$ per nucleon, and the nucleus with the mass number $120$ is more loosely bound. So the joining would require energy. Fusion releases energy only for light nuclei, to the left of the peak."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and compare",
+      "optional": true,
+      "prompt": "When carbon burns, $\\text{C} + \\text{O}_2 \\to \\text{CO}_2$, energy of $393.5\\,\\text{kJ}$ is released for every $44.0\\,\\text{g}$ of starting materials. Does the mass change in burning? Why is it said in chemistry that mass is conserved, whereas in nuclear reactions the energy is calculated from the change of mass?",
+      "model": "The mass changes, because the equivalence of mass and energy applies to every change of energy. The mass of the combustion products is smaller by $\\Delta m = \\tfrac{E}{c^2} = \\tfrac{393.5 \\cdot 10^{3}\\,\\text{J}}{(2.998 \\cdot 10^{8}\\,\\text{m/s})^2} \\approx 4.4 \\cdot 10^{-12}\\,\\text{kg}$, which is about $10^{-10}$, a ten-billionth of the mass of the starting materials. Such a small change cannot be weighed, so in chemistry mass is conserved in practice. In nuclear reactions the relative change of mass is hundreds of thousands or millions of times greater: about $2 \\cdot 10^{-5}$ in the alpha decay of uranium-238 and about $10^{-3}$ of the mass of the starting materials in the fission of uranium-235. This is why the energy of a nuclear reaction is calculated from the difference of masses.",
+      "criteria": [
+        "I state that the mass decreases also in burning, by $\\tfrac{E}{c^2}$, and estimate its order of magnitude.",
+        "I compare the relative changes of mass: in a chemical reaction about $10^{-10}$, in a nuclear reaction about $10^{-5}$–$10^{-3}$, hundreds of thousands or millions of times more.",
+        "I explain that in chemistry the change of mass is too small to measure, so the conservation of mass can be used."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer first yourself and open the answer only then."
+    }
+  ]
+}

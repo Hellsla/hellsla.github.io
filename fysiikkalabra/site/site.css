@@ -78,6 +78,7 @@ header.top nav>a:hover,.lang-menu>summary:hover{color:var(--ink);background:var(
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
 @media (max-width:29.99rem){header.top nav>a.nav-modules{display:none}.brand-name small{letter-spacing:.06em}.lang-menu>summary{padding:0 10px}}
 @media (max-width:39.99rem){header.top nav>a.nav-reading,header.top nav>a.nav-study{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
+@media (max-width:51.99rem){header.top nav>a.nav-about{display:none}}   /* Sivustosta (front page only) needs about 800 px to keep the header on one row; the footer links it */
 .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 /* the language control: the current language on a quiet button, the others in a small panel (a <details>, no script) */
 .lang-menu{position:relative;margin:0}
@@ -170,7 +171,7 @@ main.home+footer.bottom{margin-top:1.75rem}
 /* the learning model (moved to the top of Lukuvinkit 2026-11-03): the six stage names the lessons use, a compact
    numbered sequence on thin rules, two columns in the reading column, more tips behind a disclosure */
 .path{margin:0 0 2.6rem}
-.path h2{margin-top:.6rem}
+.path h1,.path h2{margin-top:.6rem}
 .path .section-lead{margin-bottom:.4rem}
 .path-steps{list-style:none;counter-reset:step;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:1fr;column-gap:1.6rem;border-top:1px solid var(--line)}
 .path-steps li{counter-increment:step;margin:0;display:grid;align-content:start;grid-template-columns:2rem minmax(0,1fr);column-gap:.4rem;padding:.6rem 0;border-bottom:1px solid var(--line-2);font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}
@@ -206,31 +207,47 @@ ol.lessons .tag{font-size:.8125rem;font-weight:600;color:var(--ink-2);border:1px
    Sovella itsenäisesti, Käsitetakomo and the goals sit side by side under the cards when there is room. */
 main.reading.module-page{max-width:68rem}
 main.module-page>.lead,main.module-page>.mod-status{max-width:var(--measure)}
-h3.ch-theme{font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:1.6rem 0 .6rem}
-h3.ch-theme:first-of-type{margin-top:.6rem}
-ol.lessons.ch-cards{display:grid;grid-template-columns:1fr;gap:.75rem;border-top:0;margin:0 0 1rem}
-ol.lessons li.ch-card{position:relative;display:grid;grid-template-columns:7.5rem minmax(0,1fr);grid-template-areas:"img num" "img title" "why why" "tags tags";
-  align-items:start;gap:.15rem .9rem;padding:.75rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.04)}
-ol.lessons li.ch-card.soon{background:transparent;border-style:dashed;grid-template-columns:minmax(0,1fr);grid-template-areas:"num" "title" "tags"}
+main.local-course>p,main.local-course>ul,main.local-course>ol:not(.ch-cards),main.local-course>dl,main.local-course>details{max-width:var(--measure)}   /* a school's own course: its prose at reading width, the cards wide */
+h3.ch-theme{font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:1.4rem 0 .6rem}
+ol.lessons.ch-cards>li:first-child>h3.ch-theme{margin-top:.6rem}
+/* a local course chapter's label (scripts/cardgrid.py): its heading and question above its first card */
+ol.lessons li.ch-card>.ch-label{margin:1.4rem 0 .6rem}ol.lessons.ch-cards>li:first-child>.ch-label{margin-top:.6rem}
+.ch-label>h3.ch-theme{margin:0}.ch-label>p.ch-theme-q{margin:.2rem 0 0;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
+.ch-card .l-num .bank-level{text-transform:none;letter-spacing:0;font-size:.8125rem;padding:0 .45rem}
+.ch-card .bank-meta{margin:0}
+/* One continuous grid (teacher 2026-11-04): each li holds the theme label (only the theme's first chapter has one) and the
+   card (.ch-box). From 40rem each li spans two subgrid rows, label and card, so a row's label strip is as tall as its
+   tallest label and zero in a row without one; the next theme's cards continue beside a short theme without a hole. */
+ol.lessons.ch-cards{display:grid;grid-template-columns:1fr;gap:0;border-top:0;margin:0 0 1rem}
+ol.lessons li.ch-card{display:block;margin:0;padding:0;border:0}
+ol.lessons li.ch-card>.ch-box{position:relative;display:grid;grid-template-columns:7.5rem minmax(0,1fr);grid-template-areas:"img num" "img title" "why why" "tags tags";
+  align-items:start;gap:.15rem .9rem;margin:0 0 .75rem;padding:.75rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.04)}
+ol.lessons li.ch-card.soon>.ch-box{background:transparent;border-style:dashed;grid-template-columns:minmax(0,1fr);grid-template-areas:"num" "title" "tags"}
 ol.lessons li.ch-card .l-num{grid-area:num;text-align:left;flex:none;font:600 var(--fs-small)/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--copper-ink)}
-ol.lessons li.ch-card>a,ol.lessons li.ch-card>.ch-title{grid-area:title;display:block;min-height:0;padding:0;font:700 1.0625rem/1.35 var(--sans);hyphens:auto;overflow-wrap:break-word}
-ol.lessons li.ch-card.live>a{color:var(--accent-deep);text-decoration:none}
-ol.lessons li.ch-card.live>a::after{content:"";position:absolute;inset:0;border-radius:12px;margin:0}   /* the whole card is the link's target */
-ol.lessons li.ch-card.live>a:focus-visible{outline:none}ol.lessons li.ch-card.live:has(>a:focus-visible){outline:3px solid var(--accent);outline-offset:2px}
-ol.lessons li.ch-card.live:hover{border-color:var(--accent);box-shadow:0 6px 18px rgba(20,23,30,.08)}
-ol.lessons li.ch-card.live:hover>a{text-decoration:underline}
+ol.lessons li.ch-card .ch-box>a,ol.lessons li.ch-card .ch-box>.ch-title{grid-area:title;display:block;min-height:0;padding:0;font:700 1.0625rem/1.35 var(--sans);hyphens:auto;overflow-wrap:break-word}
+ol.lessons li.ch-card.live .ch-box>a{color:var(--accent-deep);text-decoration:none}
+ol.lessons li.ch-card.live .ch-box>a::after{content:"";position:absolute;inset:0;border-radius:12px;margin:0}   /* the whole card is the link's target */
+ol.lessons li.ch-card.live .ch-box>a:focus-visible{outline:none}ol.lessons li.ch-card.live .ch-box:has(>a:focus-visible){outline:3px solid var(--accent);outline-offset:2px}
+ol.lessons li.ch-card.live .ch-box:hover{border-color:var(--accent);box-shadow:0 6px 18px rgba(20,23,30,.08)}
+ol.lessons li.ch-card.live .ch-box:hover>a{text-decoration:underline}
 .ch-card .ch-img{grid-area:img;aspect-ratio:2/1;overflow:hidden;border-radius:8px;background:var(--bg-tint);align-self:start}
 .ch-card .ch-img svg{display:block;width:100%;height:100%}
 .ch-card p.ch-why{grid-area:why;margin:.45rem 0 0;font-size:var(--fs-small);line-height:1.5;color:var(--ink-2)}
 .ch-card p.ch-tags{grid-area:tags;margin:.5rem 0 0;display:flex;flex-wrap:wrap;gap:.35rem}
 .ch-card p.ch-tags .tag{margin:0}
 @container content (min-width:40rem){
-  ol.lessons.ch-cards{grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:1rem}
-  ol.lessons li.ch-card.live{grid-template-columns:minmax(0,1fr);grid-template-areas:"img" "num" "title" "why" "tags";grid-template-rows:auto auto auto 1fr auto;padding:0 0 .9rem;overflow:hidden}
-  ol.lessons li.ch-card.live>*:not(.ch-img){margin-inline:1rem}
+  ol.lessons.ch-cards{grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));column-gap:1rem}
+  ol.lessons li.ch-card{display:grid;grid-row:span 2;grid-template-rows:subgrid}
+  ol.lessons li.ch-card>h3.ch-theme{grid-row:1;align-self:end;margin:1rem 0 .6rem}
+  ol.lessons.ch-cards>li:first-child>h3.ch-theme{margin-top:.6rem}
+  ol.lessons li.ch-card>.ch-label{grid-row:1;align-self:end;margin:1rem 0 .6rem}
+  ol.lessons.ch-cards>li:first-child>.ch-label{margin-top:.6rem}
+  ol.lessons li.ch-card>.ch-box{grid-row:2;margin-bottom:1rem}
+  ol.lessons li.ch-card.live>.ch-box{grid-template-columns:minmax(0,1fr);grid-template-areas:"img" "num" "title" "why" "tags";grid-template-rows:auto auto auto 1fr auto;padding:0 0 .9rem;overflow:hidden}
+  ol.lessons li.ch-card.live>.ch-box>*:not(.ch-img){margin-inline:1rem}
   ol.lessons li.ch-card.live .l-num{margin-top:.75rem}
   .ch-card .ch-img{border-radius:0;border-bottom:1px solid var(--line-2)}
-  ol.lessons li.ch-card.soon{padding:1rem}
+  ol.lessons li.ch-card.soon>.ch-box{padding:1rem}
 }
 .mod-more{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:0 2.5rem;margin-top:1.4rem}
 .mod-more>section>h2:first-child{margin-top:1rem}
@@ -267,6 +284,8 @@ ul.local-prepare a:hover{text-decoration:underline}
 .bank-reset:hover{background:var(--bg-tint)}
 .bank-count{margin:0;font-size:var(--fs-small);color:var(--ink-2)}
 @media (min-width:48rem){.bank-filter .bank-reset{grid-column:1}.bank-filter .bank-count{grid-column:2 / -1;align-self:center}}
+.bank-random{white-space:nowrap}
+@media (min-width:48rem){.bank-filter .bank-random{grid-column:1 / -1}}
 .bank-none{margin:.6rem 0;padding:.7rem 1rem;border-left:4px solid var(--copper);background:var(--surface);border-radius:0 10px 10px 0}
 ol.bank-list li.bank-item[hidden]{display:none}
 .bank-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .7rem;flex-basis:100%;margin:.2rem 0 .45rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
@@ -601,11 +620,14 @@ details.level{max-width:calc(var(--measure) + 3rem);background:var(--surface);bo
 details.level>summary{min-height:52px;font:700 var(--fs-h3) var(--sans)}
 details.level>summary .count{margin-left:.6rem}
 details.level[open]>summary{border-bottom:1px solid var(--line-2)}
-details.level>ol{margin:0;padding:0 0 .6rem 1.4rem}
+details.level>ol{margin:0;padding:0 0 .6rem;list-style:none}
 details.level>ol>li{margin:0;padding:.8rem 0;border-bottom:1px solid var(--line-2)}
 details.level>ol>li:last-child{border-bottom:0}
-details.level>ol>li::marker{font-weight:700;color:var(--accent-deep)}
-@media (max-width:600px){details.level{padding:0 .8rem}details.level>ol{padding-left:1.2rem}.feedback{margin-left:0}}
+/* The exercise's running number "6-3" (chapter-exercise, teacher 2026-11-04, build.py number_label): first in the
+   exercise, in place of the list marker that restarted at every level; lesson.js moves it into the head row. */
+.ex-num{display:inline-block;margin:0 .6rem .25rem 0;font:700 var(--fs-h3) var(--sans);color:var(--accent-deep);white-space:nowrap;font-variant-numeric:tabular-nums}
+.ex-head .ex-num{margin:0}.practice-task h3 .ex-num{font:inherit;color:var(--accent-deep);margin:0 .35rem 0 0}
+@media (max-width:600px){details.level{padding:0 .8rem}.feedback{margin-left:0}}
 
 /* a figure with the text it explains (build.py fig_rows): text first, its figure under it in the reading column, with
    room around it; side by side on a wide screen only when the two are about as tall (.fig-row.side) */
@@ -669,6 +691,7 @@ details.reveal>summary{min-height:52px;flex-wrap:wrap;gap:.1rem .6rem;font:700 v
 h4.sol-part{margin:1rem 0 .4rem;font:700 var(--fs-body) var(--sans)}
 .reveal-body .steps{padding:.9rem 1.1rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6}
 .reveal-body .steps p{margin:0 0 .5rem}.reveal-body .steps strong{color:var(--accent-deep)}.reveal-body .steps svg{display:block;margin:.6rem auto}
+.reveal-body .steps .katex svg{margin:0}   /* KaTeX draws \sqrt as a 400em-wide svg clipped by .hide-tail: the figure margin above pushed the surd out of its box (FY7 Sovella visual review 2026-11-04) */
 .rubric{font-size:var(--fs-inner)}.rubric-lead{color:var(--ink-2)}
 .rubric-part{margin:0 0 1rem;padding:.7rem .9rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius)}
 .rubric-part-h{display:flex;justify-content:space-between;margin:0 0 .4rem;font-weight:700}
@@ -725,6 +748,7 @@ ul.inv-prereq li{margin:0;padding:.5rem 0;border-bottom:1px solid var(--line-2)}
 ul.inv-safety li::marker{color:var(--copper)}
 details.inv-teacher{margin:2.4rem 0 1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:0 1rem}
 details.inv-teacher>summary{min-height:48px;display:flex;align-items:center;font:700 var(--fs-ui) var(--sans);color:var(--accent-deep);cursor:pointer}
+.unit-credits,.unit-sources,.unit-teacher{max-width:var(--measure)}   /* every course's units (FY9 has no units.css of its own) */
 .investigation table{border-collapse:collapse;max-width:100%;display:block;overflow-x:auto}
 .investigation th,.investigation td{border:1px solid var(--line);padding:.35rem .6rem;min-width:4.5rem}
 .inv-section{scroll-margin-top:var(--sticky-top)}
@@ -958,3 +982,17 @@ strong.kc-ready{font-weight:inherit}
 .kc-done-actions button.kc-primary{border-color:var(--accent-deep);background:var(--accent-deep);color:#fff}
 .kc-static-module h2{margin-top:2rem}
 @media print{.kc-chips,.kc-pop,.kc-turn,.kc-actions,.kc-face{display:none!important}.kc-inner{transform:none!important}.kc-back{transform:none;backface-visibility:visible;-webkit-backface-visibility:visible;min-height:0}}
+
+/* Sivustosta in Kiviruukin lukio's colours (teacher 2026-11-04, after his school pages): navy #012169, pink #fca5c7 */
+:root:has(main.about-page){--bg:#fff;--bg-tint:#f3f5f9;--ink:#0b1638;--ink-2:#3c4563;--line:#dfe5eb;--line-2:#ecf0f4;
+  --accent:#012169;--accent-deep:#012169;--accent-soft:#fff0f6;--brand-green:#012169;--kr-navy:#012169;--kr-navy-deep:#00174f;--kr-pink:#fca5c7}
+body:has(main.about-page){background-image:none}
+.about-page .about-hero{margin:0 0 2.25rem;padding:2rem 2rem 1.75rem;border-radius:var(--card-radius);color:#fff;
+  background:linear-gradient(135deg,var(--kr-navy) 0%,var(--kr-navy-deep) 100%)}
+.about-page .about-logo{display:block;width:128px;height:auto;margin:0 0 1.75rem}
+.about-page .about-hero h1{margin:0;color:#fff;display:flex;align-items:center;gap:.75rem}
+.about-page .about-hero h1::before{content:"";flex:none;width:26px;height:3px;background:var(--kr-pink)}
+.about-page h2{color:var(--kr-navy);padding-left:.75rem;border-left:4px solid var(--kr-pink)}
+.about-page strong{color:var(--kr-navy)}
+@media (max-width:600px){.about-page .about-hero{padding:1.5rem 1.25rem 1.25rem}.about-page .about-logo{width:104px;margin-bottom:1.25rem}}
+.about-page .about-tag{display:inline-block;margin:1.5rem 0 0;padding:.3rem .9rem;border-radius:999px;background:var(--kr-pink);color:var(--kr-navy);font:700 var(--fs-ui) var(--sans);letter-spacing:.01em}

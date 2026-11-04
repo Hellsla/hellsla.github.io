@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-16-L1-01",
+      "level": 1,
+      "text": "The wavelength of the blue-green $\\text{H}\\beta$ line of hydrogen in the laboratory is $486.1\\,\\text{nm}$. In the spectrum of a galaxy the same line appears at a wavelength of $492.4\\,\\text{nm}$. What is the redshift $z$ of the galaxy?",
+      "answer": 0.01296,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L1-02",
+      "level": 1,
+      "text": "The redshift of a galaxy is $z = 0.0250$. At what speed does the galaxy recede from us? The speed of light is $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$. Give the answer in kilometres per second.",
+      "answer": 7495,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L1-03",
+      "level": 1,
+      "text": "A galaxy is at a distance of $120\\,\\text{Mpc}$. At what speed does it recede from us according to the Hubble–Lemaître law, when the Hubble constant is $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$? Give the answer in kilometres per second.",
+      "answer": 8400,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L1-04",
+      "level": 1,
+      "text": "A galaxy recedes from us at a speed of $5250\\,\\text{km/s}$. How far away is the galaxy, when the Hubble constant is $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$? Give the answer in megaparsecs.",
+      "answer": 75,
+      "unit": "Mpc",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L1-05",
+      "level": 1,
+      "text": "The typical wavelength of the cosmic background radiation is $1.06\\,\\text{mm}$. What is the energy of a photon of this wavelength? Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. Give the answer in the unit $10^{-3}\\,\\text{eV}$.",
+      "answer": 1.17,
+      "unit": "10⁻³ eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-16-L2-01",
+      "level": 2,
+      "text": "The wavelength of the $\\text{H}\\alpha$ line of hydrogen in the laboratory is $656.3\\,\\text{nm}$. In the spectrum of a galaxy the line appears at a wavelength of $671.0\\,\\text{nm}$. How far away is the galaxy, when the Hubble constant is $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ and the speed of light $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$? Give the answer in megaparsecs.",
+      "answer": 95.9,
+      "unit": "Mpc",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L2-02",
+      "level": 2,
+      "text": "The value of the Hubble constant obtained from the Planck satellite's measurements of the background radiation is $H_0 = 67.4\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Estimate the age of the universe, assuming that the speed of the expansion has stayed the same. Use $1\\,\\text{Mpc} = 3.086 \\cdot 10^{19}\\,\\text{km}$ and $1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$. Give the answer in the unit $10^{9}\\,\\text{a}$, that is, in billions of years.",
+      "answer": 14.51,
+      "unit": "10⁹ a",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L2-03",
+      "level": 2,
+      "text": "The typical wavelength of the cosmic background radiation is now $1.06\\,\\text{mm}$. After the release of the radiation, the expansion of the universe has stretched all its wavelengths by a factor of about $1100$. What was the energy of a typical photon when the radiation was released? Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. Give the answer in electronvolts.",
+      "answer": 1.287,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L2-04",
+      "level": 2,
+      "text": "Galaxy A is at a distance of $42.0\\,\\text{Mpc}$, and it recedes from us at a speed of $2950\\,\\text{km/s}$. Galaxy B recedes at a speed of $11\\,300\\,\\text{km/s}$. How far away is galaxy B, when both obey the Hubble–Lemaître law and the own motion of the galaxies is ignored? Give the answer in megaparsecs.",
+      "answer": 160.9,
+      "unit": "Mpc",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-16-L3-01",
+      "level": 3,
+      "text": "When nuclei began to form a few minutes after the Big Bang, there were about seven times as many protons as neutrons. Almost all the neutrons bound into helium-4 nuclei, which have two protons and two neutrons, and the rest of the protons remained hydrogen nuclei. Assume that the masses of the proton and the neutron are equal. What fraction of the total mass of the nuclei was helium? Give the answer as a percentage.",
+      "answer": 25,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L3-02",
+      "level": 3,
+      "text": "In the hot core of a red giant star, three helium-4 nuclei can combine into a carbon-12 nucleus: $3\\,{}^{4}_{2}\\text{He} \\to {}^{12}_{6}\\text{C}$. The atomic masses are $m({}^{4}\\text{He}) = 4.002603\\,\\text{u}$ and $m({}^{12}\\text{C}) = 12.000000\\,\\text{u}$. How much energy is released in one reaction? Use $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. Give the answer in megaelectronvolts.",
+      "answer": 7.274,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L3-03",
+      "level": 3,
+      "text": "The spectrum of a galaxy shows three absorption lines of hydrogen at wavelengths $447.2\\,\\text{nm}$, $500.9\\,\\text{nm}$ and $676.2\\,\\text{nm}$. In the laboratory the wavelengths of the hydrogen lines are $434.0\\,\\text{nm}$, $486.1\\,\\text{nm}$ and $656.3\\,\\text{nm}$. Work out which line of the galaxy corresponds to which laboratory line, and calculate the distance of the galaxy. The Hubble constant is $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ and the speed of light $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$. Give the answer in megaparsecs.",
+      "answer": 129.9,
+      "unit": "Mpc",
+      "tolerance": 0.02
+    }
+  ]
+}

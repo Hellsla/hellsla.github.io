@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "contribution": "Takes the structure of matter from the nucleus to the fundamental particles: quarks, leptons, the charges of hadrons from their quarks, the four fundamental interactions with their mediator particles, antiparticles and annihilation, and the conservation of charge, baryon number and lepton number in particle reactions; beta decay at the quark level and the Higgs boson.",
+  "learn": [
+    "classify the fundamental particles as quarks, leptons and mediator particles and name the mediators of the four fundamental interactions.",
+    "calculate the charge and baryon number of a hadron and decide from the conservation laws whether a reaction is possible.",
+    "explain beta minus decay at the quark level and the annihilation of a particle and its antiparticle."
+  ],
+  "prior": [
+    "In beta minus decay, a neutron in the nucleus turns into a proton, and an electron and an antineutrino are produced (chapter *The atomic nucleus and radioactive decay*)",
+    "The equivalence of mass and energy $E = mc^2$, and mass can be given in the unit $\\tfrac{\\text{MeV}}{c^2}$ (chapter *Mass defect and nuclear binding energy*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A free neutron taken out of the nucleus does not last: after about $15\\,\\text{min}$ on average it has turned into a proton, an electron and an antineutrino. The decay of the proton has been searched for for decades with huge water tanks that contain over $10^{33}$ protons, and not a single decay has been seen. Yet the proton and the neutron are almost equally heavy, and both are made of three quarks.",
+      "question": "What makes the neutron unstable but the proton so permanent?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: beta minus decay",
+      "optional": true,
+      "prompt": "A carbon-14 nucleus decays by beta minus decay: ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + e^- + \\bar{\\nu}$. What happens in the nucleus?",
+      "choices": [
+        {
+          "text": "One neutron turns into a proton, and an electron and an antineutrino are produced.",
+          "correct": true,
+          "feedback": "Correct (chapter *The atomic nucleus and radioactive decay*): the atomic number increases by one and the mass number stays the same, because a neutron turns into a proton. Today we look at what happens inside the neutron."
+        },
+        {
+          "text": "An electron that was already in the nucleus leaves, and the nucleus stays the same.",
+          "feedback": "There are no electrons in the nucleus. The nucleus does not stay the same either: carbon becomes nitrogen, so there is one more proton."
+        },
+        {
+          "text": "One proton turns into a neutron, and an electron leaves the nucleus.",
+          "feedback": "Then the atomic number would decrease. Here it increases from $6$ to $7$, so a neutron turns into a proton."
+        },
+        {
+          "text": "The nucleus loses one neutron, so the mass number decreases by one.",
+          "feedback": "The mass number stays at $14$. The neutron does not leave the nucleus but turns into a proton."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the charges of the quarks",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when you have read the theory section."
+      },
+      "prompt": "The proton is made of three quarks $u\\,u\\,d$ and the neutron of the quarks $u\\,d\\,d$. The charge of the proton is $+e$ and that of the neutron is $0$. Which quark charges fit both?",
+      "choices": [
+        {
+          "text": "The charge of the $u$ quark is $+\\tfrac{2}{3}e$ and that of the $d$ quark is $-\\tfrac{1}{3}e$.",
+          "correct": true,
+          "feedback": "The table and the theory support this: in the proton $\\tfrac{2}{3} + \\tfrac{2}{3} - \\tfrac{1}{3} = 1$ and in the neutron $\\tfrac{2}{3} - \\tfrac{1}{3} - \\tfrac{1}{3} = 0$. The particles $\\Delta^{++} = uuu$ ($+2e$) and $\\Delta^- = ddd$ ($-e$) fit too."
+        },
+        {
+          "text": "The charge of the $u$ quark is $+e$ and that of the $d$ quark is $0$.",
+          "feedback": "This does not work: the proton $uud$ would get the charge $+2e$ and the neutron $udd$ the charge $+e$. The measured charge requires a fraction of the elementary charge."
+        },
+        {
+          "text": "The charge of the $u$ quark is $+e$ and that of the $d$ quark is $-e$.",
+          "feedback": "This does not work: the proton would get $1 + 1 - 1 = +1$, but the neutron $1 - 1 - 1 = -1$, even though the neutron is neutral."
+        },
+        {
+          "text": "The charge of every quark is $+\\tfrac{1}{3}e$.",
+          "feedback": "Then the proton and the neutron would have the same charge $+e$. The quarks $u$ and $d$ must have different charges, because they distinguish the proton from the neutron."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: why does the proton not decay?",
+      "justify": true,
+      "layout": "models",
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when you have read the theory section."
+      },
+      "prompt": "Students explain why the neutron decays but the proton does not. Whose explanation do you think is correct?",
+      "choices": [
+        {
+          "text": "Aino: The proton is the lightest particle made of three quarks. The number of baryons does not change, and the proton is the lightest baryon, so there is no lighter product for the proton.",
+          "correct": true,
+          "feedback": "The theory supports this: the baryon number is conserved, so the decay products of the proton would have to include a baryon. The proton is the lightest baryon, and a decay requires the products to be lighter. The neutron is heavier than the proton, so it can decay into a proton."
+        },
+        {
+          "text": "Bea: The proton is an elementary particle with no parts, so it cannot turn into any other particle.",
+          "feedback": "The theory refutes this: the proton is made of three quarks, just like the neutron. The obstacle is the conservation of baryon number and the fact that the proton is the lightest baryon."
+        },
+        {
+          "text": "Eetu: The positive charge of the proton holds its quarks together, but in the neutral neutron this force does not exist.",
+          "feedback": "The quarks are held together by the strong interaction, which is the same in the proton and the neutron. The electric force does not prevent the decay; the conservation of baryon number together with the masses does."
+        },
+        {
+          "text": "Kalle: The proton decays as often as the neutron, but its decay products are so light that they are not detected.",
+          "feedback": "If protons decayed in a quarter of an hour, there would be no matter. According to experiments, the lifetime of the proton is over $10^{34}$ years. The decay is prevented by the conservation of baryon number."
+        }
+      ]
+    },
+    {
+      "id": "kvarkit",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "The charges of hadrons and quarks",
+      "source": "measured",
+      "source_note": "The charges and quark contents: Particle Data Group, Review of Particle Physics 2024.",
+      "text": "The table gives the quark content and the measured charge of six hadrons. A bar over a letter means an antiquark, whose charge is opposite to that of the quark.\n\n| Particle | Quarks | Measured charge |\n| --- | --- | --- |\n| proton $p$ | $u\\,u\\,d$ | $+1\\,e$ |\n| neutron $n$ | $u\\,d\\,d$ | $0$ |\n| delta $\\Delta^{++}$ | $u\\,u\\,u$ | $+2\\,e$ |\n| delta $\\Delta^{-}$ | $d\\,d\\,d$ | $-1\\,e$ |\n| pion $\\pi^+$ | $u\\,\\bar{d}$ | $+1\\,e$ |\n| pion $\\pi^-$ | $d\\,\\bar{u}$ | $-1\\,e$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Deduce from the table the charge of the $u$ quark as a multiple of the elementary charge $e$. Answer as a decimal number.",
+        "answer": 0.667,
+        "unit": "e",
+        "tolerance": 0.02,
+        "hints": [
+          "Find in the table a particle that contains only one kind of quark.",
+          "The particle $\\Delta^{++}$ has three $u$ quarks and the charge $+2e$.",
+          "Divide the charge among the three quarks: $2 : 3$."
+        ],
+        "mistakes": [
+          {
+            "value": 2,
+            "feedback": "This is the combined charge of three $u$ quarks. The charge of one quark is a third of it."
+          },
+          {
+            "value": 1,
+            "feedback": "The charge $+e$ of the proton is shared among three quarks, one of which is a $d$. Look at the particle that has only $u$ quarks."
+          }
+        ],
+        "solution": "**Given:** from the table $\\Delta^{++} = u\\,u\\,u$, charge $q = +2\\,e$\n\n**Asked:** the charge $q_u$ of one $u$ quark as a multiple of the elementary charge\n\n**Principle:** The charge of a hadron is the sum of the charges of its quarks, because charge is additive. The particle $\\Delta^{++}$ has three identical $u$ quarks, so each has a third of the charge.\n\n**Formula:** $q = 3\\,q_u$, so $q_u = \\dfrac{q}{3}$\n\n**Conversions:** Not needed, because the charges are multiples of the elementary charge $e$.\n\n**Substitution:** $q_u = \\dfrac{+2\\,e}{3} = +0.667\\,e$\n\n**Answer:** $+0.667\\,e$, or exactly $+\\tfrac{2}{3}e$; the fraction is exact because the charges are whole numbers, and there are three decimals.\n\n**Reasonableness:** From $\\Delta^- = d\\,d\\,d$ we get in the same way $q_d = -\\tfrac{1}{3}e$. For the proton this gives $\\tfrac{2}{3} + \\tfrac{2}{3} - \\tfrac{1}{3} = 1$ and for the neutron $\\tfrac{2}{3} - \\tfrac{1}{3} - \\tfrac{1}{3} = 0$, as in the table, and for the pion $\\pi^+ = u\\bar{d}$ we get $\\tfrac{2}{3} + \\tfrac{1}{3} = 1$."
+      }
+    },
+    {
+      "id": "reaktiot",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Which reactions take place?",
+      "source": "measured",
+      "source_note": "Observations: Particle Data Group, Review of Particle Physics 2024; antineutrino reaction Cowan and Reines 1956; search for proton decay the Super-Kamiokande experiment.",
+      "text": "The first table gives the charge $q$ of the particles in elementary charges, the baryon number $B$ and the lepton number $L$. The second table lists reactions, some of which have been observed and some never. Calculate the sums of $q$, $B$ and $L$ on both sides of each reaction.\n\n| Particle | $q$ | $B$ | $L$ |\n| --- | --- | --- | --- |\n| $p$ | $+1$ | $1$ | $0$ |\n| $n$ | $0$ | $1$ | $0$ |\n| $e^-$ | $-1$ | $0$ | $1$ |\n| $e^+$ | $+1$ | $0$ | $-1$ |\n| $\\bar{\\nu}_e$ | $0$ | $0$ | $-1$ |\n| $\\pi^0$, $\\gamma$ | $0$ | $0$ | $0$ |\n\n| Reaction | Observed? |\n| --- | --- |\n| $n \\to p + e^- + \\bar{\\nu}_e$ | yes |\n| $n \\to p + e^-$ | never |\n| $e^- + e^+ \\to \\gamma + \\gamma$ | yes |\n| $\\bar{\\nu}_e + p \\to n + e^+$ | yes |\n| $p + p \\to p + p + \\pi^0$ | yes |\n| $p + p \\to p + p + n$ | never |\n| $p \\to e^+ + \\pi^0$ | never, although it has been searched for |",
+      "question": {
+        "type": "choice",
+        "prompt": "In the reaction $n \\to p + e^-$ there would be enough energy, but it has not been observed. Which of the numbers in the table is not conserved?",
+        "choices": [
+          {
+            "text": "Lepton number: at the start $L = 0$, at the end $L = 1$.",
+            "correct": true,
+            "feedback": "Correct. The lepton number of the electron is $1$, so an antineutrino with $L = -1$ is needed at the end. This is why the observed decay is $n \\to p + e^- + \\bar{\\nu}_e$."
+          },
+          {
+            "text": "Charge: at the start $q = 0$, at the end $q = +2$.",
+            "feedback": "The charge is conserved: $0 = (+1) + (-1)$. The charge of the electron is negative. Calculate the lepton number as well."
+          },
+          {
+            "text": "Baryon number: at the start $B = 1$, at the end $B = 2$.",
+            "feedback": "The electron is not a baryon, so its $B = 0$. The baryon number is conserved: $1 = 1 + 0$. The difference is in the lepton number."
+          },
+          {
+            "text": "All three numbers are conserved; the reaction is just very rare.",
+            "feedback": "The lepton number is not conserved: $0$ at the start, $1$ at the end because of the electron. Such a reaction has never been observed."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what distinguishes the observed reactions?",
+      "prompt": "Compare the observed and unobserved reactions in the table. Which numbers are conserved in all the observed reactions? For each unobserved reaction, name a number that is not conserved.",
+      "model": "In all the observed reactions the sum of the charge, the baryon number and the lepton number is the same at the start and at the end. For example $\\bar{\\nu}_e + p \\to n + e^+$: $q$ is $0 + 1 = 0 + 1$, $B$ is $0 + 1 = 1 + 0$ and $L$ is $-1 + 0 = 0 + (-1)$. In the unobserved reactions some number changes: in the reaction $n \\to p + e^-$ the lepton number changes from $0$ to $1$, in the reaction $p + p \\to p + p + n$ the baryon number changes from $2$ to $3$, and in the reaction $p \\to e^+ + \\pi^0$ the baryon number changes from $1$ to $0$ and the lepton number from $0$ to $-1$. The charge is conserved in all the reactions of the table, so the charge alone is not enough to tell them apart.",
+      "criteria": [
+        "I stated that in the observed reactions the charge, the baryon number and the lepton number are conserved.",
+        "For the reaction $n \\to p + e^-$ I named the lepton number, and for the reaction $p + p \\to p + p + n$ the baryon number.",
+        "For the reaction $p \\to e^+ + \\pi^0$ I named the baryon number or the lepton number."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the tables and the theory. Then return to the question at the start: why can the neutron decay into a proton but the proton cannot decay into anything?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student writes electron capture, in which a proton in the nucleus captures an electron of the atom, like this:\n\n$$p + e^- \\to n + \\bar{\\nu}_e$$\n\nShe argues that an antineutrino is produced in beta decay too. Where is the error?",
+      "choices": [
+        {
+          "text": "The lepton number is not conserved: on the left $L = 1$, on the right $L = -1$.",
+          "correct": true,
+          "feedback": "Correct. A neutrino with $L = 1$ must be at the end: $p + e^- \\to n + \\nu_e$. In beta minus decay an antineutrino is needed because an electron is produced; here the electron disappears."
+        },
+        {
+          "text": "The charge is not conserved: on the left $q = +2$, on the right $q = 0$.",
+          "feedback": "The charge of the electron is $-1$, so on the left $q = +1 - 1 = 0$, as on the right. The error is in the lepton number."
+        },
+        {
+          "text": "The baryon number is not conserved, because the neutron is heavier than the proton.",
+          "feedback": "The baryon number is $1$ on both sides; it does not depend on mass. The error is in the lepton number: a neutrino is needed on the right."
+        },
+        {
+          "text": "The equation is correct, because the charge of the antineutrino is zero.",
+          "feedback": "The charge is indeed conserved, but the lepton number is not: on the left the electron has $L = 1$, on the right the antineutrino has $L = -1$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "In collisions of cosmic rays in the upper atmosphere, muons are produced, and they arrive at the ground all the time. The muon decays by the reaction $\\mu^- \\to e^- + \\bar{\\nu}_e + \\nu_\\mu$. How much energy is released in the decay? The masses are $m_\\mu = 105.658\\,\\tfrac{\\text{MeV}}{c^2}$ and $m_e = 0.511\\,\\tfrac{\\text{MeV}}{c^2}$; the masses of the neutrinos are negligibly small. Answer in megaelectronvolts.",
+      "answer": 105.147,
+      "unit": "MeV",
+      "tolerance": 0.002,
+      "hints": [
+        "The energy released is the energy corresponding to the mass difference, $Q = (m_\\text{initial} - m_\\text{final})\\,c^2$.",
+        "At the start there is only the muon, at the end an electron and two neutrinos, whose masses are left out.",
+        "$Q = (105.658 - 0.511)\\,\\text{MeV}$."
+      ],
+      "mistakes": [
+        {
+          "value": 106.2,
+          "feedback": "You added the masses together. The energy released is the difference between the masses of the initial and final states, so the mass of the electron in the final state is subtracted from the mass of the muon."
+        },
+        {
+          "value": 105.7,
+          "feedback": "This is the entire rest energy of the muon. The electron is in the final state, so the energy corresponding to its mass $0.511\\,\\tfrac{\\text{MeV}}{c^2}$ is not released; subtract it."
+        }
+      ],
+      "solution": "**Given:** $\\mu^- \\to e^- + \\bar{\\nu}_e + \\nu_\\mu$, $m_\\mu = 105.658\\,\\tfrac{\\text{MeV}}{c^2}$, $m_e = 0.511\\,\\tfrac{\\text{MeV}}{c^2}$, the masses of the neutrinos negligibly small\n\n**Asked:** the energy $Q$ released in the decay, in megaelectronvolts\n\n**Principle:** The mass of the decaying particle is greater than the sum of the masses of the particles produced, and the energy corresponding to the difference is released as the kinetic energy of the particles produced ($E = mc^2$). The decay is allowed: the charge $-1 = -1 + 0 + 0$ and the lepton number $1 = 1 + (-1) + 1$ are conserved.\n\n**Formula:** $Q = (m_\\text{initial} - m_\\text{final})\\,c^2$, so $Q = (m_\\mu - m_e)\\,c^2$\n\n**Conversions:** Not needed: the masses are in the unit $\\tfrac{\\text{MeV}}{c^2}$, so $c^2$ cancels and $Q$ comes out in megaelectronvolts.\n\n**Substitution:** $Q = (105.658 - 0.511)\\,\\tfrac{\\text{MeV}}{c^2} \\cdot c^2 = 105.147\\,\\text{MeV}$\n\n**Answer:** $105.147\\,\\text{MeV}$, to the precision of a thousandth like the given masses.\n\n**Reasonableness:** The electron is about $200$ times lighter than the muon, so almost the entire rest energy of the muon, about $106\\,\\text{MeV}$, is released. The energy is over a hundred times that of the decay of the neutron, $0.782\\,\\text{MeV}$, because the mass difference between the muon and the electron is much greater than that between the neutron and the proton."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. In the level 1 tasks one rule is used, in the level 2 tasks two steps are combined, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Two electrons repel each other. Which statement describes the interaction according to the Standard Model?",
+      "choices": [
+        {
+          "text": "The electrons exchange photons, the mediators of the electromagnetic interaction.",
+          "correct": true,
+          "feedback": "Correct. The photon mediates the electromagnetic interaction between all charged particles. The exchanged photons are not observed as light."
+        },
+        {
+          "text": "The electrons exchange gluons, because they are particles of the strong interaction.",
+          "feedback": "Gluons mediate the strong interaction between quarks. The electron is a lepton, and the strong interaction does not act on it."
+        },
+        {
+          "text": "The electrons exchange $W$ bosons, because all forces of leptons are weak.",
+          "feedback": "$W$ bosons mediate the weak interaction, which can change the type of a particle. The repulsion of charges is electromagnetic: its mediator is the photon."
+        },
+        {
+          "text": "The electrons act on each other directly without a mediator, because they are elementary particles.",
+          "feedback": "In the Standard Model every interaction is carried by mediator particles. The mediator of the electromagnetic interaction is the photon."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. The charge of a meson",
+      "prompt": "The $D^+$ meson is made of a $c$ quark and an anti-$d$ quark $\\bar{d}$. Calculate its charge as a multiple of the elementary charge $e$.",
+      "answer": 1,
+      "unit": "e",
+      "tolerance": 0.02,
+      "hints": [
+        "The charge of the $c$ quark is the same as that of the $u$ quark.",
+        "The charge of an antiquark is opposite to that of the quark: the charge of $\\bar{d}$ is $+\\tfrac{1}{3}e$.",
+        "Add together $+\\tfrac{2}{3} + \\tfrac{1}{3}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.333,
+          "feedback": "You used the charge $-\\tfrac{1}{3}e$ of the $d$ quark. The charge of an antiquark is opposite: the charge of $\\bar{d}$ is $+\\tfrac{1}{3}e$."
+        }
+      ],
+      "solution": "**Given:** $D^+ = c\\,\\bar{d}$; the charge of the $c$ quark is $+\\tfrac{2}{3}e$ and that of the $d$ quark $-\\tfrac{1}{3}e$\n\n**Asked:** the charge $q$ of the meson as a multiple of the elementary charge\n\n**Principle:** The charge of a hadron is the sum of the charges of its quarks and antiquarks. The charge of an antiquark is opposite to that of the quark, so the charge of $\\bar{d}$ is $+\\tfrac{1}{3}e$.\n\n**Formula:** $q = q_c + q_{\\bar{d}}$, so $q = q_c - q_d$\n\n**Conversions:** Not needed, because the charges are multiples of the elementary charge $e$.\n\n**Substitution:** $q = +\\tfrac{2}{3}e - \\left(-\\tfrac{1}{3}e\\right) = +1\\,e$\n\n**Answer:** $+1\\,e$. The result is exact because the charges of the quarks are exact fractions.\n\n**Reasonableness:** The charge is a whole-number multiple of the elementary charge, like that of every hadron, and it fits the notation $D^+$. The baryon number of the meson is $\\tfrac{1 - 1}{3} = 0$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Mediator particles",
+      "optional": true,
+      "prompt": "Explain in three or four sentences what it means that the photon is the mediator particle of the electromagnetic interaction. Why is the graviton called hypothetical?",
+      "model": "According to the Standard Model, charged particles interact by emitting and absorbing photons, and this exchange of photons changes their state of motion: for example, two electrons repel each other. The same photon is the quantum of light and of other electromagnetic radiation. The other fundamental interactions are carried in the same way by their own mediators: the strong interaction by gluons and the weak interaction by $W$ and $Z$ bosons. The graviton is called hypothetical because it has not been observed and gravity is not part of the Standard Model.",
+      "criteria": [
+        "I explained that charged particles interact by emitting and absorbing photons.",
+        "I mentioned that the photon is also the quantum of electromagnetic radiation, or I named the mediator of another interaction.",
+        "I justified the hypothetical nature of the graviton by the fact that it has not been observed or that gravity is not part of the Standard Model."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first and only then open the answer."
+    }
+  ]
+}

@@ -261,5 +261,142 @@
         ]
       }
     ]
+  },
+  "FY9": {
+    "title": "Fysiikan ylioppilaskertaus",
+    "subtitle": "Kertaa, yhdistä ja harjoittele koetta varten.",
+    "school": "Kiviruukin lukio",
+    "status": "building",
+    "language": "fi",
+    "sessions": 16,
+    "mixer": true,
+    "description": "Opintojaksolla kerrataan moduulien FY1–FY8 keskeiset ilmiöt, lait ja taidot ja harjoitellaan ylioppilaskokeen tehtävätyyppejä. Jokainen kertaustunti alkaa lähtötasotestillä ja päättyy alkuperäisiin, ylioppilaskokeen tyylisiin tehtäviin, joissa on mallivastaus ja pisteytysohje itsearviointia varten. Jokainen tehtävä kertoo, minkä luvun taitoja se käyttää, joten heikon kohdan voi kerrata suoraan alkuperäisestä luvusta.",
+    "goals": [
+      "tunnistamaan tehtävän ilmiöt ja valitsemaan niihin sopivan fysikaalisen mallin",
+      "kirjoittamaan täydellisen ratkaisun perusteluineen, yksiköineen ja järkevyystarkasteluineen",
+      "laatimaan ja tulkitsemaan kuvaajia mittausaineistosta",
+      "suunnittelemaan kokeen ja arvioimaan mittausten luotettavuutta",
+      "yhdistämään eri moduulien ideoita uudessa tilanteessa",
+      "arvioimaan omaa osaamistaan ja kertaamaan heikot kohdat"
+    ],
+    "overview": "Opintojaksossa on 16 oppituntia. Ensimmäinen tunti esittelee kokeen ja vastaustekniikan, tunnit 2–15 kertaavat moduulit kokeen sisältöjen järjestyksessä ja viimeinen tunti on harjoituskoe.",
+    "chapters": [
+      {
+        "title": "Koe ja kokeellisuus",
+        "question": "Mitä hyvä vastaus fysiikan ylioppilaskokeessa sisältää?",
+        "units": [
+          {
+            "id": "fy9-koe",
+            "title": "Ylioppilaskoe ja vastaustekniikka"
+          },
+          {
+            "id": "fy9-mittaaminen",
+            "title": "Mittaaminen, epävarmuus ja kuvaajat"
+          },
+          {
+            "id": "fy9-kokeellisuus",
+            "title": "Kokeellinen työ ja sen arviointi"
+          }
+        ]
+      },
+      {
+        "title": "Energia ja lämpö",
+        "question": "Mihin energia menee, ja miten sen määrä lasketaan?",
+        "units": [
+          {
+            "id": "fy9-energia",
+            "title": "Energia, teho ja hyötysuhde"
+          },
+          {
+            "id": "fy9-lampo",
+            "title": "Lämpö ja olomuodon muutokset"
+          },
+          {
+            "id": "fy9-kaasut",
+            "title": "Paine, kaasut ja lämpövoimakone"
+          }
+        ]
+      },
+      {
+        "title": "Liike ja vuorovaikutus",
+        "question": "Miten voimat määräävät, miten kappale liikkuu?",
+        "units": [
+          {
+            "id": "fy9-liike",
+            "title": "Liike kuvaajina"
+          },
+          {
+            "id": "fy9-voimat",
+            "title": "Newtonin lait ja voimakuvio"
+          },
+          {
+            "id": "fy9-sailymislait",
+            "title": "Mekaaninen energia ja liikemäärä"
+          },
+          {
+            "id": "fy9-ympyraliike",
+            "title": "Tasapaino, ympyräliike ja gravitaatio"
+          }
+        ]
+      },
+      {
+        "title": "Värähtely ja aallot",
+        "question": "Mikä on yhteistä heilurille, äänelle ja vesiaalloille?",
+        "units": [
+          {
+            "id": "fy9-aallot",
+            "title": "Värähtely, aallot ja ääni"
+          }
+        ]
+      },
+      {
+        "title": "Sähkö ja magnetismi",
+        "question": "Miten sähkövaraukset, virrat ja kentät liittyvät toisiinsa?",
+        "units": [
+          {
+            "id": "fy9-tasavirta",
+            "title": "Tasavirtapiirit ja sähköenergia"
+          },
+          {
+            "id": "fy9-sahkokentta",
+            "title": "Sähkökenttä ja kondensaattori"
+          },
+          {
+            "id": "fy9-magnetismi-valo",
+            "title": "Magnetismi, induktio ja valo"
+          }
+        ]
+      },
+      {
+        "title": "Moderni fysiikka",
+        "question": "Miksi valo ja aine käyttäytyvät toisinaan hiukkasina ja toisinaan aaltoina?",
+        "units": [
+          {
+            "id": "fy9-moderni",
+            "title": "Kvantti-ilmiöt, ydin ja säteily"
+          }
+        ]
+      },
+      {
+        "title": "Harjoituskoe",
+        "question": "Miten jaan aikani ja valitsen tehtävät kokeessa?",
+        "units": [
+          {
+            "id": "fy9-harjoituskoe",
+            "title": "Harjoituskoe"
+          }
+        ]
+      }
+    ],
+    "prepare": [
+      {
+        "id": "fy1-3",
+        "why": "mittausepävarmuus ja tuloksen ilmoittaminen, joita jokainen laskutehtävä käyttää"
+      },
+      {
+        "id": "fy1-4",
+        "why": "kuvaajan laatiminen ja suoran sovittaminen, kokeen aineistotehtävien perusta"
+      }
+    ]
   }
 }

@@ -1,0 +1,141 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.ydin==='He4' && S.Z===2 && S.N===2 && S.A===4 && S.all===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: helium-4, Z 2, N 2, A 4, only the visited points shown (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.dm",
+  "expected": 0.030377,
+  "tol": 0.0001,
+  "note": "helium-4: mass defect 2 m_H + 2 m_n - m(He-4) = 0,030377 u (lesson-answers He4-dm)"
+ },
+ {
+  "expr": "window.simState.EBA",
+  "expected": 7.074,
+  "tol": 0.001,
+  "note": "helium-4: E_B/A = 0,030377 · 931,5 MeV : 4 = 7,074 MeV (lesson-answers He4-EBA)"
+ },
+ {
+  "expr": "(() => { const S=[...document.querySelectorAll('#sim-root select')]; return S.length===1 && S[0].options.length===32 && S[0].options[0].value==='H2' && S[0].options[31].value==='U238' && !document.querySelector('#sim-root input[type=range]') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one select of 32 nuclides from H-2 to U-238, no slider"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const b=document.querySelector('#sim-root .controls button'); return b && b===document.querySelector('#sim-root .controls').firstElementChild ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the main button comes first in the controls"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).join(',')==='ydin' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares ydin"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?840:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x840 (stacked, larger labels) under 500 px"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const S=document.querySelector('#sim-root select'); S.value='H2'; S.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "window.simAdapter.get().EB",
+  "expected": 2.22,
+  "tol": 0.002,
+  "note": "deuterium: Δm = 0,002388 u, E_B = 2,224 MeV (lesson-answers H2-EB)"
+ },
+ {
+  "expr": "window.simState.EBA",
+  "expected": 1.112,
+  "tol": 0.001,
+  "note": "deuterium: E_B/A = 1,112 MeV (lesson-answers koe-H2)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'); S.value='Fe56'; S.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "window.simAdapter.get().EBA",
+  "expected": 8.79,
+  "tol": 0.001,
+  "note": "iron-56: E_B/A = 8,790 MeV (lesson-answers koe-Fe56)"
+ },
+ {
+  "expr": "window.simState.dm",
+  "expected": 0.528464,
+  "tol": 0.0001,
+  "note": "iron-56: Δm = 26 m_H + 30 m_n - 55,934936 u = 0,528464 u"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'); S.value='Ni62'; S.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "window.simAdapter.get().EBA",
+  "expected": 8.795,
+  "tol": 0.001,
+  "note": "nickel-62: the largest E_B/A of the table, 8,795 MeV (lesson-answers max-EBA)"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'); S.value='U238'; S.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "window.simAdapter.get().EB",
+  "expected": 1801.71,
+  "tol": 0.001,
+  "note": "uranium-238: Δm = 1,934203 u, E_B = 1801,7 MeV (lesson-answers U238-EB)"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.ydin==='U238' && S.Z===92 && S.N===146 && Math.abs(S.msum-239.98499)<1e-5 && Math.abs(S.m-238.050787)<1e-6 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "uranium-238: Z 92, N 146, separate nucleons 239,984990 u, atom 238,050787 u"
+ },
+ {
+  "expr": "window.simState.EBA",
+  "expected": 7.57,
+  "tol": 0.001,
+  "note": "uranium-238: E_B/A = 7,570 MeV (lesson-answers koe-U238)"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /uraani/.test(t) && /7,570/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout names the nuclide and shows E_B/A = 7,570 MeV with a decimal comma"
+ },
+ {
+  "expr": "window.simState.visited",
+  "expected": 5,
+  "tol": 0,
+  "note": "He-4, H-2, Fe-56, Ni-62 and U-238 visited: five points on the graph"
+ },
+ {
+  "setup": "document.querySelectorAll('#sim-root .controls button')[1].click();",
+  "expr": "window.simAdapter.get().visited",
+  "expected": 1,
+  "tol": 0,
+  "note": "Tyhjennä kuvaaja clears the visited points; the current nuclide stays"
+ },
+ {
+  "setup": "document.querySelector('#sim-root .controls button').click();",
+  "expr": "window.simAdapter.get().all",
+  "expected": 1,
+  "tol": 0,
+  "note": "Näytä kaikki ytimet shows every point of the table"
+ },
+ {
+  "setup": "const S=document.querySelector('#sim-root select'); S.value='H2'; S.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const a=window.simAdapter.get().tilt; const S=document.querySelector('#sim-root select'); S.value='He4'; S.dispatchEvent(new Event('change',{bubbles:true})); const b=window.simAdapter.get().tilt; return a>0 && b>3*a ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the balance tips towards the separate nucleons, much more for helium-4 (0,76 %) than for deuterium (0,12 %)"
+ }
+]

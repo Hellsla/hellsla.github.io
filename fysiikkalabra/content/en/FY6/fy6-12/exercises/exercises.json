@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-12-L1-01",
+      "level": 1,
+      "text": "A proton travels between two plates from the positive plate to the negative one. The voltage between the plates is $240\\,\\text{V}$. How much work does the electric field do on the proton? The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. Answer in joules.",
+      "answer": 3.8448e-17,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L1-02",
+      "level": 1,
+      "text": "A small ball has a charge of $+3.0\\,\\text{nC}$, and it is at a point of an electric field whose potential is $120\\,\\text{V}$ relative to the zero point. What is the electric potential energy of the ball? Answer in microjoules.",
+      "answer": 0.36,
+      "unit": "µJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L1-03",
+      "level": 1,
+      "text": "The kinetic energy of an electron that produces an aurora is $5.0\\,\\text{keV}$. What is the kinetic energy in joules? The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "answer": 8.01e-16,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L1-04",
+      "level": 1,
+      "text": "A charge of $4.0\\,\\mu\\text{C}$ moves in an electric field from point $A$, whose potential is $60\\,\\text{V}$, to point $B$, whose potential is $15\\,\\text{V}$. How much work does the electric field do on the charge? Answer in millijoules.",
+      "answer": 0.18,
+      "unit": "mJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L1-05",
+      "level": 1,
+      "text": "The graph shows the potential of the uniform field between two parallel plates, where $x$ is the distance from the negative plate. A proton moves from $x = 4.0\\,\\text{cm}$ to $x = 1.0\\,\\text{cm}$, and only the electric force acts on it. By how much does the kinetic energy of the proton increase? Read the values you need from the graph and answer in electronvolts.",
+      "figure": "fy6-12/ex-vgraph",
+      "answer": 150.0,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-12-L2-01",
+      "level": 2,
+      "text": "The strength of a uniform electric field is $2.5\\,\\text{kV/m}$. A proton moves $3.0\\,\\text{cm}$ in the direction of the field. By how much does the potential energy of the proton change? Answer in electronvolts with the sign (negative if the energy decreases).",
+      "answer": -75.0,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L2-02",
+      "level": 2,
+      "text": "The separation of two parallel plates is $2.0\\,\\text{cm}$, and the voltage between them is $300\\,\\text{V}$. The negative plate is the zero point. Point $P$ is between the plates, $0.80\\,\\text{cm}$ from the negative plate. What is the potential energy of an electron at point $P$? Answer in electronvolts with the sign.",
+      "answer": -120.0,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L2-03",
+      "level": 2,
+      "text": "The charge of an alpha particle is $+2e$ and its mass is $6.645 \\cdot 10^{-27}\\,\\text{kg}$. The alpha particle starts from rest and travels through a potential difference of $2.0\\,\\text{kV}$. What is its speed? The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. Answer in metres per second.",
+      "answer": 439166.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L2-04",
+      "level": 2,
+      "text": "In an electron gun, electrons start from rest and are accelerated by a voltage. What voltage is needed for the speed of an electron to be $1.0 \\cdot 10^{7}\\,\\text{m/s}$? Answer in volts. The mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "answer": 284.301,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-12-L3-01",
+      "level": 3,
+      "text": "An electron passes point $A$ at a speed of $2.0 \\cdot 10^{6}\\,\\text{m/s}$. The potential of point $A$ is $40\\,\\text{V}$. The electron continues to point $B$, whose potential is $160\\,\\text{V}$, and only the electric force acts on it. What is the speed of the electron at point $B$? The mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.",
+      "answer": 6797710.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L3-02",
+      "level": 3,
+      "text": "An electron and a proton start from rest and each travels through the same potential difference, each in its own direction. How many times greater is the speed of the electron than the speed of the proton? The mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$ and the mass of the proton $1.673 \\cdot 10^{-27}\\,\\text{kg}$.",
+      "answer": 42.8561,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-12-L3-03",
+      "level": 3,
+      "text": "The separation of two parallel plates is $2.0\\,\\text{cm}$, and the voltage between them is $600\\,\\text{V}$. A proton starts from a hole in the negative plate toward the positive plate at a speed of $3.0 \\cdot 10^{5}\\,\\text{m/s}$. How close to the positive plate does the proton get before it turns back? The mass of the proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. Answer in millimetres.",
+      "answer": 4.33521,
+      "unit": "mm",
+      "tolerance": 0.02
+    }
+  ]
+}

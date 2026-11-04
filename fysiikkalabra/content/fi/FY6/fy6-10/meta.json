@@ -1,0 +1,23 @@
+{
+  "id": "fy6-10",
+  "course": "FY6",
+  "title": "Sähkövaraus ja Coulombin laki",
+  "goals": [
+    "LOPS FY6: Coulombin laki ja homogeeninen sähkökenttä",
+    "Täsmennys: varaus, alkeisvaraus, varauksen säilyminen, kappaleiden varautuminen; sähkövirta varauksen siirtymisenä (I = Q : t)",
+    "Täsmennys: pistevarauksen sähkökenttä voidaan käsitellä kvalitatiivisesti"
+  ],
+  "prerequisites": [
+    "fy6-1"
+  ],
+  "glossary": [
+    "sähkövaraus",
+    "alkeisvaraus",
+    "Coulombin laki",
+    "pistevaraus",
+    "influenssi"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

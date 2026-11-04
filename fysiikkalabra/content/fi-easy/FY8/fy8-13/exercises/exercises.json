@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-13-L1-01",
+      "level": 1,
+      "text": "Ihmisen koko keho absorboi gammasäteilystä energiaa $0{,}130\\,\\text{J}$. Kehon massa on $65{,}0\\,\\text{kg}$. Kuinka suuri on absorboitunut annos? Anna vastaus milligrayna.",
+      "answer": 2.0,
+      "unit": "mGy",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-02",
+      "level": 1,
+      "text": "Keuhkojen absorboitunut annos radonin hajoamistuotteiden alfasäteilystä on $0{,}30\\,\\text{mGy}$. Alfasäteilyn painotuskerroin on $20$. Kuinka suuri on keuhkojen ekvivalenttiannos? Anna vastaus millisieverteinä.",
+      "answer": 6.0,
+      "unit": "mSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-03",
+      "level": 1,
+      "text": "Tyypillisellä kaukolennolla avaruudesta tulevan säteilyn annosnopeus on matkustamossa lentokorkeudella noin $3\\,\\mu\\text{Sv/h}$. Kuinka suuren annoksen matkustaja saa $5{,}0\\,\\text{h}$:n lennolla? Anna vastaus mikrosieverteinä.",
+      "answer": 15,
+      "unit": "µSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-04",
+      "level": 1,
+      "text": "Gammasäteilyn lähteen annosnopeus on $1{,}0\\,\\text{m}$:n etäisyydellä $120\\,\\mu\\text{Sv/h}$. Kuinka suuri annosnopeus on $4{,}0\\,\\text{m}$:n etäisyydellä? Oleta, että lähde on pistemäinen eikä ilma vaimenna säteilyä.",
+      "answer": 7.5,
+      "unit": "µSv/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-05",
+      "level": 1,
+      "text": "Gammasäteilyn annosnopeus on ilman suojaa $64\\,\\mu\\text{Sv/h}$. Lähteen eteen asetetaan $18\\,\\text{mm}$ lyijyä. Lyijyn puoliintumispaksuus tälle säteilylle on $6{,}0\\,\\text{mm}$. Kuinka suuri annosnopeus on suojan takana?",
+      "answer": 8.0,
+      "unit": "µSv/h",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-13-L2-01",
+      "level": 2,
+      "text": "Kilpirauhasen radiojoditutkimuksessa käytetään jodi-131:tä, joka lähettää beetasäteilyä. Potilaan kilpirauhanen absorboi beetasäteilystä energiaa $0{,}60\\,\\text{mJ}$. Kilpirauhasen massa on $20\\,\\text{g}$. Beetasäteilyn painotuskerroin on $1$ ja kilpirauhasen kudoksen painotuskerroin $0{,}04$. Muut kudokset eivät saa annosta. Kuinka suuri on potilaan efektiivinen annos? Anna vastaus millisieverteinä.",
+      "answer": 1.2,
+      "unit": "mSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-02",
+      "level": 2,
+      "text": "Gammasäteilyn lähteen annosnopeus on $1{,}0\\,\\text{m}$:n etäisyydellä $150\\,\\mu\\text{Sv/h}$. Huoltoasentaja työskentelee $2{,}5\\,\\text{m}$:n päässä lähteestä. Kuinka kauan hän voi työskennellä, ennen kuin hänen annoksensa on $100\\,\\mu\\text{Sv}$? Anna vastaus tunteina.",
+      "answer": 4.2,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-03",
+      "level": 2,
+      "text": "STUKin mukaan suomalaisten asuntojen keskimääräinen radonpitoisuus on $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$. Siitä aiheutuu keskimäärin noin $4{,}0\\,\\text{mSv}$ efektiivinen annos vuodessa. Kuinka suuren vuosiannoksen radonista saa asukas, jonka kodin pitoisuus on asuntojen viitearvo $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$? Oleta, että annos on suoraan verrannollinen pitoisuuteen ja että asukas viettää kotona yhtä paljon aikaa kuin keskimäärin. Anna vastaus millisieverteinä.",
+      "answer": 13,
+      "unit": "mSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-04",
+      "level": 2,
+      "text": "Gammasäteilyn annosnopeus on työpisteessä $96\\,\\mu\\text{Sv/h}$. Se halutaan pienentää lyijysuojalla arvoon $3{,}0\\,\\mu\\text{Sv/h}$. Lyijyn puoliintumispaksuus tälle säteilylle on $6{,}0\\,\\text{mm}$. Kuinka paksu lyijysuoja tarvitaan? Anna vastaus millimetreinä.",
+      "answer": 30,
+      "unit": "mm",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-13-L3-01",
+      "level": 3,
+      "text": "Gammasäteilyn lähteen annosnopeus on $1{,}0\\,\\text{m}$:n etäisyydellä ilman suojaa $80\\,\\mu\\text{Sv/h}$. Työ kestää $30\\,\\text{min}$. Sen voi tehdä kahdella tavalla: A) $2{,}0\\,\\text{m}$:n päässä lähteestä ilman suojaa tai B) $1{,}0\\,\\text{m}$:n päässä $18\\,\\text{mm}$:n lyijysuojan takana. Lyijyn puoliintumispaksuus on $6{,}0\\,\\text{mm}$. Laske annos tavalla A miinus annos tavalla B. Anna vastaus mikrosieverteinä etumerkin kanssa. Positiivinen erotus tarkoittaa, että tapa B antaa pienemmän annoksen.",
+      "answer": 5.0,
+      "unit": "µSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L3-02",
+      "level": 3,
+      "text": "Omakotitalon radonpitoisuudeksi mitataan $400\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$. Suomalaisten asuntojen keskimääräinen pitoisuus $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$ antaa keskimäärin noin $4{,}0\\,\\text{mSv}$ vuodessa. Muut säteilylähteet antavat yhteensä keskimäärin noin $1{,}9\\,\\text{mSv}$ vuodessa. Arvioi talon asukkaan efektiivinen vuosiannos kaikista lähteistä. Oleta, että radonannos on suoraan verrannollinen pitoisuuteen ja että muut lähteet antavat asukkaalle keskimääräisen annoksen. Anna vastaus millisieverteinä.",
+      "answer": 19,
+      "unit": "mSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L3-03",
+      "level": 3,
+      "text": "Kaivostyöntekijän keuhkojen absorboitunut annos radonin hajoamistuotteiden alfasäteilystä on vuodessa $0{,}10\\,\\text{mGy}$. Lisäksi hänen koko kehonsa saa kallion gammasäteilystä tasaisesti absorboituneen annoksen $0{,}50\\,\\text{mGy}$. Alfasäteilyn painotuskerroin on $20$, gammasäteilyn $1$ ja keuhkojen kudoksen painotuskerroin $0{,}12$. Kuinka suuri on työntekijän efektiivinen annos näistä kahdesta lähteestä yhteensä? Anna vastaus millisieverteinä.",
+      "answer": 0.74,
+      "unit": "mSv",
+      "tolerance": 0.02
+    }
+  ]
+}

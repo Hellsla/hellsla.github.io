@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-10-L1-01",
+      "level": 1,
+      "text": "Light travels in ethanol at the speed $2.20 \\cdot 10^{8}\\,\\text{m/s}$. What is the refractive index of ethanol? The speed of light in a vacuum is $3.00 \\cdot 10^{8}\\,\\text{m/s}$.",
+      "answer": 1.3636,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-02",
+      "level": 1,
+      "text": "The refractive index of diamond is $2.42$. At what speed does light travel in diamond? Give the answer in the form $\\ldots \\cdot 10^{8}\\,\\text{m/s}$, that is, write the coefficient as the answer.",
+      "answer": 1.2397,
+      "unit": "· 10⁸ m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-03",
+      "level": 1,
+      "text": "A ray of light hits a plane mirror. The angle between the incident and the reflected ray is $76^\\circ$. What is the angle of incidence?",
+      "answer": 38.0,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-04",
+      "level": 1,
+      "text": "A ray of light arrives from the air at window glass at an angle of incidence of $60.0^\\circ$. The refractive index of air is $1.00$ and that of the glass $1.52$. What is the angle of refraction?",
+      "answer": 34.733,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-05",
+      "level": 1,
+      "text": "A ray from a lamp at the bottom of a pool hits the surface of the water at an angle of incidence of $40.0^\\circ$ and continues into the air. The refractive index of water is $1.33$ and that of air $1.00$. What is the angle of refraction in air?",
+      "answer": 58.7495,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-10-L2-01",
+      "level": 2,
+      "text": "A laser beam hits the surface of a glass plate from the air so that the angle between the ray and the surface is $25.0^\\circ$. The refractive index of the glass is $1.52$ and that of air $1.00$. What is the angle of refraction in the glass measured from the normal?",
+      "answer": 36.6022,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L2-02",
+      "level": 2,
+      "text": "A student directs a laser beam from the air into a piece of plastic. The angle of incidence is $40.0^\\circ$ and the angle of refraction $25.4^\\circ$. The refractive index of air is $1.00$. At what speed does light travel in the plastic? Give the answer in the form $\\ldots \\cdot 10^{8}\\,\\text{m/s}$, that is, write the coefficient as the answer.",
+      "answer": 2.0019,
+      "unit": "· 10⁸ m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L2-03",
+      "level": 2,
+      "text": "Light travels perpendicularly through window glass $2.0\\,\\text{cm}$ thick. The refractive index of the glass is $1.52$. How much longer does it take the light to pass through the glass than to travel the same distance in air? In air the speed of light can be taken to be $3.00 \\cdot 10^{8}\\,\\text{m/s}$. Give the answer in picoseconds, $1\\,\\text{ps} = 10^{-12}\\,\\text{s}$.",
+      "answer": 34.6667,
+      "unit": "ps",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L2-04",
+      "level": 2,
+      "text": "In the figure a laser beam arriving from the air hits the centre of the flat face of a semicircular glass block in the middle of a protractor disc. In the glass the light travels from the centre straight towards the curved surface, so it hits it perpendicularly and is not refracted there. Read the angles from the protractor disc and determine the refractive index of the glass when the refractive index of air is $1.00$.",
+      "figure": "fy7-10/protractor",
+      "answer": 1.5321,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-10-L3-01",
+      "level": 3,
+      "text": "Two plane mirrors are perpendicular to each other. A ray of light hits the first mirror at an angle of incidence of $30.0^\\circ$, is reflected and then hits the second mirror. What is the angle of incidence at the second mirror? The ray travels in the plane of the normals of the mirrors.",
+      "answer": 60.0,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L3-02",
+      "level": 3,
+      "text": "At the bottom of a swimming pool there is a lamp at a depth of $2.0\\,\\text{m}$. A ray from the lamp hits the surface of the water at a point $1.5\\,\\text{m}$ away horizontally from the point above the lamp, and continues into the air. The refractive index of water is $1.33$ and that of air $1.00$. What angle does the ray make with the normal of the surface in the air?",
+      "answer": 52.9395,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L3-03",
+      "level": 3,
+      "text": "Light travels in material A at the speed $2.25 \\cdot 10^{8}\\,\\text{m/s}$ and in material B at the speed $1.97 \\cdot 10^{8}\\,\\text{m/s}$. A ray of light passes from material A into material B at an angle of incidence of $40.0^\\circ$. What is the angle of refraction?",
+      "answer": 34.2494,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ]
+}

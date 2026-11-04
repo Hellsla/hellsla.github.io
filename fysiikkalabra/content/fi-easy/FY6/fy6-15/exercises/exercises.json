@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-15-L1-01",
+      "level": 1,
+      "text": "Lämpöpuhaltimen teho on $1500\\,\\text{W}$, ja se on kytketty $230\\,\\text{V}$:n pistorasiaan. Kuinka suuren virran puhallin ottaa?",
+      "answer": 6.521739,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-02",
+      "level": 1,
+      "text": "Kodin ryhmäjohto on suojattu $10\\,\\text{A}$:n sulakkeella, ja verkkojännite on $230\\,\\text{V}$. Kuinka suuri saa ryhmän laitteiden yhteisteho enintään olla, jotta sulakkeen nimellisvirta ei ylity? Vastaa watteina.",
+      "answer": 2300.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-03",
+      "level": 1,
+      "text": "Ihminen koskettaa märin käsin rikkinäisen laitteen jännitteistä runkoa. Kosketusjännite on $230\\,\\text{V}$, ja koko virtatien resistanssi on $2{,}3\\,\\text{k}\\Omega$. Kuinka suuri virta kulkee kehon läpi? Vastaa milliampeereina.",
+      "answer": 100.0,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-04",
+      "level": 1,
+      "text": "Ihmisellä on kuivat kädet ja kumipohjaiset kengät, ja hän seisoo kuivalla lattialla. Silloin koko virtatien resistanssi on $50\\,\\text{k}\\Omega$. Kuinka suuri virta kulkee kehon läpi, jos hän koskettaa osaa, jonka jännite maahan nähden on $230\\,\\text{V}$? Vastaa milliampeereina.",
+      "answer": 4.6,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L1-05",
+      "level": 1,
+      "text": "Jatkojohdon kahden johtimen yhteenlaskettu resistanssi on $0{,}20\\,\\Omega$, ja johdossa kulkee virta $16\\,\\text{A}$. Kuinka suuri lämpöteho jatkojohdossa syntyy?",
+      "answer": 51.2,
+      "unit": "W",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-15-L2-01",
+      "level": 2,
+      "text": "Keittiön pistorasiaryhmä on suojattu $16\\,\\text{A}$:n sulakkeella, ja verkkojännite on $230\\,\\text{V}$. Ryhmässä ovat päällä vedenkeitin ($2000\\,\\text{W}$) ja mikroaaltouuni, jonka ottoteho on $1200\\,\\text{W}$. Kuinka suuren tehon ryhmään voi vielä kytkeä, ennen kuin sulakkeen nimellisvirta ylittyy?",
+      "answer": 480.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L2-02",
+      "level": 2,
+      "text": "Sähköpatteri ($2000\\,\\text{W}$, $230\\,\\text{V}$) on kytketty pitkään jatkojohtoon, jonka johtimien yhteenlaskettu resistanssi on $0{,}30\\,\\Omega$. Oletetaan, että patterin virta on sama kuin suoraan pistorasiaan kytkettynä. Kuinka suuri lämpöteho jatkojohdossa syntyy?",
+      "answer": 22.68431,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L2-03",
+      "level": 2,
+      "text": "Voimajohdon johtimen ja maadoitetun pylvään välinen jännite on suurimmillaan $90\\,\\text{kV}$. Ilman läpilyöntilujuus on $3{,}0\\,\\text{MV/m}$. Kuinka pitkä ilmaväli johtimen ja pylvään välillä vähintään tarvitaan, jottei ilma lyö läpi? Oleta, että kenttä välissä on tasainen. Laske laskennallinen alaraja. Vastaa senttimetreinä.",
+      "answer": 3.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L2-04",
+      "level": 2,
+      "text": "Kylpyhuoneessa märän ihmisen virtatien resistanssi voi olla vain $1{,}5\\,\\text{k}\\Omega$. Kuinka suuri kosketusjännite saa enintään olla, jotta kehon läpi kulkeva virta jää alle irrottamiskynnyksen $10\\,\\text{mA}$?",
+      "answer": 15.0,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-15-L3-01",
+      "level": 3,
+      "text": "Ryhmäjohto on mitoitettu $10\\,\\text{A}$:n sulakkeelle, ja sen johtimien yhteenlaskettu resistanssi on $0{,}50\\,\\Omega$. Asukas vaihtaa palaneen sulakkeen luvatta $25\\,\\text{A}$:n sulakkeeseen ja kytkee ryhmään laitteita, jotka ottavat yhteensä $22\\,\\text{A}$:n virran. Kuinka moninkertainen johtimissa syntyvä lämpöteho on verrattuna tehoon, joka niissä syntyy virralla $10\\,\\text{A}$?",
+      "answer": 4.84,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L3-02",
+      "level": 3,
+      "text": "Ihminen koskettaa rikkinäisen laitteen runkoa, jonka jännite maahan nähden on $230\\,\\text{V}$. Kehon resistanssi kädestä jalkoihin on $1{,}5\\,\\text{k}\\Omega$. Hänellä on kuitenkin ehjät, kuivat kumipohjaiset kengät, ja kenkien ja kuivan lattian resistanssi on yhteensä $100\\,\\text{k}\\Omega$. Hän ei koske samalla mihinkään muuhun maadoitettuun. Kuinka suuri virta kulkee kehon läpi? Vastaa milliampeereina.",
+      "answer": 2.26601,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-15-L3-03",
+      "level": 3,
+      "text": "Kuvaajassa on maan potentiaali laskennallisessa mallissa maahan pudonneen johtimen ympärillä. Ihminen seisoo jalat $1{,}0\\,\\text{m}$:n päässä toisistaan suoraan kosketuskohdasta poispäin: lähempi jalka on $2{,}0\\,\\text{m}$:n ja kauempi $3{,}0\\,\\text{m}$:n etäisyydellä. Virtatien resistanssi jalasta toiseen kenkineen on $4{,}0\\,\\text{k}\\Omega$. Lue tarvittavat arvot kuvaajasta. Kuinka suuri virta kulkee jalasta toiseen? Vastaa milliampeereina.",
+      "figure": "fy6-15/ex-askel",
+      "answer": 50.0,
+      "unit": "mA",
+      "tolerance": 0.02
+    }
+  ]
+}

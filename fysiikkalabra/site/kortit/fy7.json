@@ -1,7 +1,6 @@
 {
  "moduuli": "FY7",
  "nimi": "Sähkömagnetismi ja valo",
- "kesken": true,
  "aiheet": [
   {
    "id": "fy7-magnetismi",
@@ -20,7 +19,7 @@
   {
    "id": "fy7-magneettikentta",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-1",
    "aihe": "fy7-magnetismi",
    "kasite": "Magneettikenttä",
    "maaritelma": "Alue, jossa magneettiseen aineeseen tai liikkuvaan varaukseen kohdistuu voima."
@@ -28,10 +27,10 @@
   {
    "id": "fy7-magneettivuon-tiheys",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-1",
    "aihe": "fy7-magnetismi",
    "kasite": "Magneettivuon tiheys",
-   "maaritelma": "Magneettikentän voimakkuutta kuvaava suure B; yksikkö tesla."
+   "maaritelma": "Magneettikentän voimakkuutta kuvaava suure $B$; yksikkö tesla."
   },
   {
    "id": "fy7-lorentzin-voima",
@@ -41,27 +40,27 @@
    "kasite": "Lorentzin voima",
    "maaritelma": "Magneettikentän liikkuvaan varaukseen kohdistama voima.",
    "kaava": "F = qvB\\sin\\alpha",
-   "kaava_puhe": "F on q v B kertaa sini alfa"
+   "kaava_puhe": "F on q kertaa v kertaa B kertaa sini alfa"
   },
   {
    "id": "fy7-virtajohtimen-voima",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-4",
    "aihe": "fy7-magnetismi",
    "kasite": "Virtajohtimen voima",
    "maaritelma": "Magneettikentässä olevaan virralliseen johtimeen kohdistuva voima.",
-   "kaava": "F = BIl\\sin\\alpha",
-   "kaava_puhe": "F on B I l kertaa sini alfa"
+   "kaava": "F = IlB\\sin\\alpha",
+   "kaava_puhe": "F on I kertaa l kertaa B kertaa sini alfa"
   },
   {
    "id": "fy7-magneettivuo",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-5",
    "aihe": "fy7-magnetismi",
    "kasite": "Magneettivuo",
-   "maaritelma": "Pinnan läpi kulkeva magneettikentän määrä.",
-   "kaava": "\\Phi = BA\\cos\\alpha",
-   "kaava_puhe": "fii on B kertaa A kertaa kosini alfa"
+   "maaritelma": "Pinnan läpi kulkeva magneettikentän määrä, kun kenttä on kohtisuorassa pintaa vastaan.",
+   "kaava": "\\Phi = BA",
+   "kaava_puhe": "fii on B kertaa A"
   },
   {
    "id": "fy7-solenoidi",
@@ -74,17 +73,17 @@
   {
    "id": "fy7-faradayn-induktiolaki",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-5",
    "aihe": "fy7-induktio",
    "kasite": "Faradayn induktiolaki",
    "maaritelma": "Muuttuva magneettivuo synnyttää jännitteen.",
-   "kaava": "e = -\\dfrac{\\Delta\\Phi}{\\Delta t}",
-   "kaava_puhe": "e on miinus delta fii jaettuna delta t:llä"
+   "kaava": "e = -N \\cdot \\dfrac{\\Delta\\Phi}{\\Delta t}",
+   "kaava_puhe": "e on miinus N kertaa delta fii jaettuna delta t:llä"
   },
   {
    "id": "fy7-lenzin-laki",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-6",
    "aihe": "fy7-induktio",
    "kasite": "Lenzin laki",
    "maaritelma": "Indusoitunut virta vastustaa sen syntyyn johtanutta muutosta."
@@ -92,7 +91,7 @@
   {
    "id": "fy7-generaattori",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-7",
    "aihe": "fy7-induktio",
    "kasite": "Generaattori",
    "maaritelma": "Laite, joka muuttaa liike-energiaa sähköenergiaksi induktion avulla."
@@ -100,7 +99,7 @@
   {
    "id": "fy7-muuntaja",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-8",
    "aihe": "fy7-induktio",
    "kasite": "Muuntaja",
    "maaritelma": "Laite, joka muuttaa vaihtojännitteen suuruutta käämien kierroslukujen suhteessa."
@@ -108,7 +107,7 @@
   {
    "id": "fy7-vaihtovirta",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-7",
    "aihe": "fy7-induktio",
    "kasite": "Vaihtovirta",
    "maaritelma": "Virta, jonka suunta ja suuruus vaihtelevat jaksollisesti."
@@ -116,7 +115,7 @@
   {
    "id": "fy7-tehollisarvo",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-7",
    "aihe": "fy7-induktio",
    "kasite": "Tehollisarvo",
    "maaritelma": "Vaihtovirran arvo, joka vastaa lämpövaikutukseltaan yhtä suurta tasavirtaa."
@@ -124,7 +123,7 @@
   {
    "id": "fy7-sahkomagneettinen-aalto",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-9",
    "aihe": "fy7-valo",
    "kasite": "Sähkömagneettinen aalto",
    "maaritelma": "Etenevä sähkö- ja magneettikentän värähtely, joka ei tarvitse väliainetta."
@@ -132,17 +131,17 @@
   {
    "id": "fy7-valon-nopeus",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-9",
    "aihe": "fy7-valo",
    "kasite": "Valon nopeus",
-   "maaritelma": "Valon nopeus tyhjiössä.",
-   "kaava": "c = 299\\,792\\,458\\,\\text{m/s}",
-   "kaava_puhe": "c on 299 792 458 metriä sekunnissa"
+   "maaritelma": "Sähkömagneettisen säteilyn nopeus tyhjiössä.",
+   "kaava": "c \\approx 3{,}00 \\cdot 10^{8}\\,\\text{m/s}",
+   "kaava_puhe": "c on noin 3,00 kertaa 10 potenssiin 8 metriä sekunnissa"
   },
   {
    "id": "fy7-taitekerroin",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-10",
    "aihe": "fy7-valo",
    "kasite": "Taitekerroin",
    "maaritelma": "Valon nopeuden suhde tyhjiössä ja aineessa.",
@@ -152,17 +151,17 @@
   {
    "id": "fy7-snellin-laki",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-10",
    "aihe": "fy7-valo",
    "kasite": "Snellin laki",
    "maaritelma": "Taittumislaki: valon tulo- ja taitekulma riippuvat aineiden taitekertoimista.",
    "kaava": "n_1\\sin\\alpha_1 = n_2\\sin\\alpha_2",
-   "kaava_puhe": "n yksi sini alfa yksi on n kaksi sini alfa kaksi"
+   "kaava_puhe": "n yksi kertaa sini alfa yksi on n kaksi kertaa sini alfa kaksi"
   },
   {
    "id": "fy7-kokonaisheijastus",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-12",
    "aihe": "fy7-valo",
    "kasite": "Kokonaisheijastus",
    "maaritelma": "Ilmiö, jossa valo heijastuu kokonaan takaisin tiheämmästä aineesta rajakulman ylittyessä."
@@ -170,7 +169,7 @@
   {
    "id": "fy7-hila",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-13",
    "aihe": "fy7-valo",
    "kasite": "Hila",
    "maaritelma": "Optinen komponentti, jonka rakojen kautta valo taipuu ja hajoaa spektriksi."
@@ -178,7 +177,7 @@
   {
    "id": "fy7-polarisaatio",
    "moduuli": "FY7",
-   "luku": null,
+   "luku": "fy7-15",
    "aihe": "fy7-valo",
    "kasite": "Polarisaatio",
    "maaritelma": "Valon värähtelysuunnan rajoittuminen yhteen tasoon."

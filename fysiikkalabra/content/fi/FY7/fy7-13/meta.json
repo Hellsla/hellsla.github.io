@@ -1,0 +1,23 @@
+{
+  "id": "fy7-13",
+  "course": "FY7",
+  "title": "Valon interferenssi ja diffraktio",
+  "goals": [
+    "LOPS FY7: valon interferenssi ja diffraktio",
+    "Kokeellisesti: laserin aallonpituuden määrittäminen hilan avulla",
+    "Täsmennys: saman taajuisten ja samassa vaiheessa olevien lähteiden interferenssikuvio; interferenssi ohuissa kalvoissa"
+  ],
+  "prerequisites": [
+    "fy7-10"
+  ],
+  "glossary": [
+    "interferenssi",
+    "diffraktio",
+    "hila",
+    "hilavakio",
+    "kaksoisrako"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

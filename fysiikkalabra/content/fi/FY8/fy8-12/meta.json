@@ -1,0 +1,22 @@
+{
+  "id": "fy8-12",
+  "course": "FY8",
+  "title": "Ionisoiva säteily ja elimistö",
+  "goals": [
+    "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+    "Täsmennys: biologisia vaikutuksia tarkastellaan fysikaalisten vaikutusten (ionisaatio ja energian siirto) kautta; säteilylajien läpäisykyky ja havaitseminen"
+  ],
+  "prerequisites": [
+    "fy8-11"
+  ],
+  "glossary": [
+    "ionisoiva säteily",
+    "ionisaatio",
+    "läpäisykyky",
+    "puoliintumispaksuus",
+    "Geiger-Müller-putki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

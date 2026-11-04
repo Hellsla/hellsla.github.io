@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-11-L1-01",
+      "level": 1,
+      "text": "An electric force of $1.2 \\cdot 10^{-4}\\,\\text{N}$ acts in an electric field on a small ball whose charge is $3.0 \\cdot 10^{-9}\\,\\text{C}$. How large is the electric field strength at the ball?",
+      "answer": 40000.0,
+      "unit": "N/C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-02",
+      "level": 1,
+      "text": "The strength of a uniform electric field is $2.0 \\cdot 10^{4}\\,\\text{N/C}$. A small ball whose charge is $5.0\\,\\text{nC}$ is brought into the field. How large is the electric force on the ball? Answer in micronewtons.",
+      "answer": 100.0,
+      "unit": "µN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-03",
+      "level": 1,
+      "text": "The voltage between two parallel metal plates is $600\\,\\text{V}$, and the distance of the plates is $0.040\\,\\text{m}$. How large is the electric field strength between the plates?",
+      "answer": 15000.0,
+      "unit": "V/m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-04",
+      "level": 1,
+      "text": "The inner and outer surfaces of a cell membrane have charges of opposite signs, and inside the membrane there is an approximately uniform electric field whose strength is $1.0 \\cdot 10^{7}\\,\\text{V/m}$. The thickness of the membrane is $7.0 \\cdot 10^{-9}\\,\\text{m}$. How large is the voltage across the membrane? Answer in millivolts.",
+      "answer": 70.0,
+      "unit": "mV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L1-05",
+      "level": 1,
+      "text": "A small ball is held always at the same place between two plates, and its charge is changed. The graph shows the electric force on the ball as a function of the charge, with a straight line fitted to the points. How large is the electric field strength at the ball? Determine it from the graph.",
+      "figure": "fy6-11/fq-graph",
+      "answer": 30000.0,
+      "unit": "N/C",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-11-L2-01",
+      "level": 2,
+      "text": "The voltage between two parallel plates is $4.5\\,\\text{kV}$, and the distance of the plates is $9.0\\,\\text{mm}$. A small ball whose charge is $4.0\\,\\text{nC}$ is brought between the plates. How large is the electric force on the ball? Answer in millinewtons.",
+      "answer": 2.0,
+      "unit": "mN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L2-02",
+      "level": 2,
+      "text": "The distance of two parallel plates is $5.0\\,\\text{cm}$. An electric force of $2.4\\,\\text{mN}$ acts on a small ball between the plates, with a charge of $8.0\\,\\text{nC}$. How large is the voltage between the plates? Answer in kilovolts.",
+      "answer": 15.0,
+      "unit": "kV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L2-03",
+      "level": 2,
+      "text": "The voltage between the plates of an air purifier is $3.0\\,\\text{kV}$, and the distance of the plates is $6.0\\,\\text{mm}$. A dust particle coming between the plates has a charge of $1.6 \\cdot 10^{-17}\\,\\text{C}$ and a mass of $4.0 \\cdot 10^{-14}\\,\\text{kg}$. How many times larger is the electric force on the particle than its weight?",
+      "answer": 20.38736,
+      "unit": "times",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy6-11-L2-04",
+      "level": 2,
+      "text": "An electric force of $0.15\\,\\text{mN}$ acts on a charged ball between two plates when the distance of the plates is $6.0\\,\\text{cm}$. The plates are moved closer to each other so that the distance is $2.0\\,\\text{cm}$, and the voltage is kept the same. The ball stays between the plates, far from the ends of the plates. How large is the force on the ball now? Answer in millinewtons.",
+      "answer": 0.45,
+      "unit": "mN",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-11-L3-01",
+      "level": 3,
+      "text": "A negative oil droplet hovers at rest between two horizontal plates when the voltage between the plates is $450\\,\\text{V}$ and the positive plate is on top. The charge of the droplet is three elementary charges. The droplet gets one extra electron, so that its charge is four elementary charges, but its mass does not change. How large a voltage is needed for the droplet to hover at rest again?",
+      "answer": 337.5,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L3-02",
+      "level": 3,
+      "text": "An electron starts from rest at the negative plate and accelerates in a uniform field to the positive plate. The plates are in vacuum. The voltage between the plates is $50\\,\\text{V}$, and the distance of the plates is $1.0\\,\\text{cm}$. The mass of the electron is $9.109 \\cdot 10^{-31}\\,\\text{kg}$ and the magnitude of its charge is $1.602 \\cdot 10^{-19}\\,\\text{C}$. How large is the speed of the electron when it arrives at the positive plate? Answer in kilometres per second.",
+      "answer": 4193.685952,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-11-L3-03",
+      "level": 3,
+      "text": "A small charged plastic ball with a mass of $2.0\\,\\text{g}$ hangs on an insulating thread in a horizontal uniform electric field whose strength is $1.5 \\cdot 10^{5}\\,\\text{N/C}$. The ball is at rest, and the thread has turned to an angle of $10^\\circ$ from the vertical. How large is the charge of the ball? Answer in nanocoulombs.",
+      "answer": 23.063569,
+      "unit": "nC",
+      "tolerance": 0.02
+    }
+  ]
+}
