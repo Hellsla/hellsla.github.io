@@ -1939,6 +1939,20 @@
       "selite": "Oranssi piste on gammafotoni. Välähdys lyijyssä tarkoittaa, että fotoni absorboitui.",
       "lukemat": "Etäisyys $r = {{r}}\\,\\text{m}$, lyijyä $d = {{x}}\\,\\text{mm}$, läpi pääsee ${{f}}\\,\\%$<br><strong>Annosnopeus $\\dot{H} = {{Hd}}\\,\\mu\\text{Sv/h}$</strong><br>Oleskeluaika $t = {{t}}\\,\\text{min}$, annos $H = {{H}}\\,\\mu\\text{Sv}$",
       "lahde_kanvas": "$\\text{lähde}$"
+    },
+    "fy8-16": {
+      "galaksi": "Galaksi",
+      "galaksi_n": "galaksi {{n}}",
+      "suora": "Suoran kulmakerroin $H_0$",
+      "nopeus": "Nopeus",
+      "hidas": "hidas",
+      "normaali": "normaali",
+      "nopea": "nopea",
+      "tyhjenna": "Tyhjennä kuvaaja",
+      "selite": "Valoaallon venyminen matkalla on liioiteltu. Kuvaajaan jää jokainen valitsemasi galaksi.",
+      "linnunrata": "Linnunrata",
+      "lab_vety": "vety laboratoriossa",
+      "lukemat": "Galaksi {{n}}: etäisyys $d = {{d}}\\,\\text{Mpc}$<br>$\\text{H}\\alpha$-viiva: $\\lambda_0 = 656{,}3\\,\\text{nm}$, $\\lambda = {{lam}}\\,\\text{nm}$, $\\Delta\\lambda = {{dlam}}\\,\\text{nm}$<br>Punasiirtymä $z = {{z}}$, nopeus $v = {{v}}\\,\\text{km/s}$<br><strong>Suora $v = H_0\\,d$: $H_0 = {{H0}}\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$, $\\tfrac{1}{H_0} = {{age}} \\cdot 10^{9}\\,\\text{a}$</strong>"
     }
   },
   "practice": {
