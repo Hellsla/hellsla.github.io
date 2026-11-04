@@ -39,6 +39,77 @@
       "answer": -0.544,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L1-06",
+      "level": 1,
+      "text": "Bohrin mallissa elektroni kiertää ydintä tarkasti määrätyllä ympyräradalla. Aaltomekaanisessa atomimallissa vetyatomin perustilaa kuvaa $1\\text{s}$-orbitaali. Mikä on orbitaalin ja Bohrin radan olennainen ero?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Orbitaali ei ole rata vaan alue, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä; reittiä ei voi piirtää.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Orbitaali ei ole rata vaan alue, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä; reittiä ei voi piirtää.",
+          "feedback": "Oikein: aaltomallissa elektronin tilaa kuvaa seisova aalto, joka kertoo havaitsemisen todennäköisyyden. Orbitaalin raja on sovittu todennäköisyysraja, eikä elektronilla ole rataa, jota pitkin se kulkisi.",
+          "correct": true
+        },
+        {
+          "text": "Orbitaali on edelleen rata, mutta sen säde vaihtelee hieman, koska elektroni värähtelee radan molemmin puolin ydintä kiertäessään.",
+          "feedback": "Aaltomallissa elektronilla ei ole rataa lainkaan, ei edes epätarkkaa. Mittaus antaa aina yhden pisteen, ja orbitaali kuvaa vasta monen mittauksen jakaumaa."
+        },
+        {
+          "text": "Orbitaali on pallopinta, jonka pinnalla elektroni pysyy aina, joten elektronin etäisyys ytimestä on joka mittauksessa sama.",
+          "feedback": "Mittaustulokset hajaantuvat eri etäisyyksille: $1\\text{s}$-elektroni havaitaan useimmiten lähellä ydintä mutta joskus kauempanakin. Orbitaali ei ole pinta, jolla elektroni pysyy."
+        },
+        {
+          "text": "Orbitaali on elektronin sisäinen rakenne: elektroni on levinnyt pilveksi, ja jokainen mittaus löytää siitä vain pienen osan.",
+          "feedback": "Elektroni havaitaan mittauksessa aina kokonaisena yhdessä pisteessä, ei osina. Pilvi syntyy vasta monesta mittauksesta, ja se kuvaa pisteiden jakaumaa."
+        }
+      ]
+    },
+    {
+      "id": "fy8-5-L1-07",
+      "level": 1,
+      "text": "Tietokonesimulaatiossa vetyatomin $1\\text{s}$-elektronin paikka mitataan kerran ja tulos merkitään kuvaan pisteeksi. Mittaus toistetaan $5000$ kertaa, ja pisteet muodostavat pilven, joka on tiheimmillään ytimen lähellä. Mitä pistepilvi kuvaa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Pilvi kuvaa mittaustulosten jakaumaa: pisteitä on eniten siellä, missä elektroni havaitaan todennäköisimmin.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Pilvi kuvaa mittaustulosten jakaumaa: pisteitä on eniten siellä, missä elektroni havaitaan todennäköisimmin.",
+          "feedback": "Oikein: yksi mittaus antaa yhden satunnaisen pisteen, ja aaltomallin todennäköisyysjakauma tulee näkyviin vasta monesta mittauksesta.",
+          "correct": true
+        },
+        {
+          "text": "Pilvi on elektronin kulkema reitti, koska elektroni liikkuu mittausten välillä pisteestä toiseen nopeasti ja jättää jälkeä.",
+          "feedback": "Mittausten välillä elektronin paikkaa ei voi kuvata reittinä. Pisteet ovat toisistaan riippumattomia mittaustuloksia, eivät yhden elektronin jälki."
+        },
+        {
+          "text": "Pilvi syntyy, koska elektroni kiitää niin nopeasti, että sen paikka sumenee kuin pyörivän tuulettimen siivet.",
+          "feedback": "Sumeneminen ei selitä pilveä. Jokainen mittaus löytää elektronin tarkasti yhdestä kohdasta, ja pilvi on mittaustulosten jakauma eikä nopeasta liikkeestä johtuva sumuvaikutelma."
+        },
+        {
+          "text": "Pilvi osoittaa, että elektroni hajoaa mittauksessa tuhansiksi osasiksi, joista jokainen näkyy yhtenä pisteenä kuvassa.",
+          "feedback": "Elektroni ei hajoa osiin. Jokaisessa mittauksessa havaitaan kokonainen elektroni yhdessä kohdassa, ja pisteitä on yhtä monta kuin mittauksia."
+        }
+      ]
+    },
+    {
+      "id": "fy8-5-L1-08",
+      "level": 1,
+      "text": "Elektronilla on spin, joten yhdellä orbitaalilla voi olla enintään kaksi elektronia. Kuinka monta elektronia mahtuu enintään $4\\text{f}$-alikuorelle?",
+      "kind": [
+        "concept"
+      ],
+      "answer": 14,
+      "unit": "kpl",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +144,95 @@
       "answer": 365,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-05",
+      "level": 2,
+      "text": "Esimerkkiaineisto: vetyatomin $1\\text{s}$-elektronin etäisyys ytimestä mitataan simulaatiossa $N = 400$ kertaa. Taulukossa on mittausten lukumäärä $k$ luokittain, kun luokan leveys on $0{,}05\\,\\text{nm}$.\n\na) Mikä etäisyysluokka on yleisin?\n\nb) Kuinka suuri osuus mittauksista osuu alle $0{,}10\\,\\text{nm}$:n etäisyydelle? Anna osuus prosentteina.\n\nc) Onko aineisto sopusoinnussa sen kanssa, että $1\\text{s}$-orbitaalin $90\\,\\%$:n rajan säde on $0{,}14\\,\\text{nm}$? Perustele luvuilla.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 72.25,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Elektronin etäisyys ytimestä, $N = 400$ mittausta",
+        "columns": [
+          "$r\\,(\\text{nm})$",
+          "$k$"
+        ],
+        "rows": [
+          [
+            "0.00–0.05",
+            "118"
+          ],
+          [
+            "0.05–0.10",
+            "171"
+          ],
+          [
+            "0.10–0.15",
+            "79"
+          ],
+          [
+            "0.15–0.20",
+            "23"
+          ],
+          [
+            "0.20–0.25",
+            "7"
+          ],
+          [
+            "0.25–0.30",
+            "2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-5-L2-06",
+      "level": 2,
+      "text": "Kuvassa on molemmista päistä kiinnitetyn kielen kolme ensimmäistä seisovaa aaltoa. Esimerkkiaineisto: kielen pituus on $L = 0{,}80\\,\\text{m}$ ja aallon nopeus kielessä $v = 64\\,\\text{m/s}$.\n\na) Montako solmua kielen päiden välissä on kussakin kolmessa tilassa, ja mikä on kunkin tilan aallonpituus $\\lambda$?\n\nb) Laske sen tilan taajuus $f$, jossa on kaksi solmua.\n\nc) Selitä kuvan perusteella, miksi tila, jossa on enemmän solmuja, vastaa suurempaa taajuutta, ja kerro, mitä tämä kertoo atomin elektronin tiloista.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "figure": "fy8-5/string",
+      "answer": 120,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-07",
+      "level": 2,
+      "text": "Oppilas katsoo vetyatomin $1\\text{s}$-orbitaalin kuvaa, jonka raja on $90\\,\\%$:n raja, ja päättelee: ”Raja on seinä. Elektroni pysyy aina rajan sisällä, joten yksikään mittaus ei osu sen ulkopuolelle.” Simulaatiossa $2000$:sta mittauksesta kuitenkin $205$ osuu rajan ulkopuolelle. Mikä on oppilaan päättelyn virhe?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Raja on sovittu todennäköisyysraja: sen sisään osuu noin yhdeksän kymmenesosaa mittauksista, loput osuvat ulkopuolelle.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Raja on sovittu todennäköisyysraja: sen sisään osuu noin yhdeksän kymmenesosaa mittauksista, loput osuvat ulkopuolelle.",
+          "feedback": "Oikein: ulkopuolelle osuu noin $10\\,\\%$ mittauksista, eli noin $200$ osumaa $2000$:sta. Luku $205$ sopii tähän, ja orbitaalin raja ei ole seinä.",
+          "correct": true
+        },
+        {
+          "text": "Simulaatio on virheellinen, koska sen pitäisi antaa kaikki osumat rajan sisäpuolelta, jos orbitaalin raja on piirretty oikeaan kohtaan.",
+          "feedback": "Simulaatio toimii oikein. Osumia rajan ulkopuolella kuuluu olla, koska $90\\,\\%$:n raja jättää ulkopuolelle noin joka kymmenennen mittauksen."
+        },
+        {
+          "text": "Elektroni kiitää niin nopeasti, että se ehtii välillä rajan ulkopuolelle, vaikka se pysyy suurimman osan ajasta rajan sisällä.",
+          "feedback": "Osumat eivät johdu elektronin nopeasta kiitämisestä. Jokainen mittaus antaa yhden pisteen, ja ulkopuolen osumat kuuluvat aaltomallin todennäköisyysjakaumaan."
+        },
+        {
+          "text": "Ulkopuolen osumat ovat mittausvirheitä, jotka katoaisivat, jos mittauslaite olisi riittävän tarkka, joten raja olisi silloin seinä.",
+          "feedback": "Osumat eivät ole virheitä. Ne kuuluvat jakaumaan, ja tarkempikin mittaus löytäisi elektronin joka kymmenennellä kerralla rajan ulkopuolelta."
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +259,87 @@
       "answer": 4240,
       "unit": "kpl",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L3-04",
+      "level": 3,
+      "text": "Esimerkkiaineisto: vetykaasun emissiospektrin näkyvät viivat syntyvät, kun atomin elektroni siirtyy ylemmältä kuorelta kuorelle $n = 2$. Taulukossa on neljän viivan aallonpituudet $\\lambda$. Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$, mutta viivojen alkukuoria ei tunneta.\n\na) Laske kunkin viivan fotonin energia $E_\\text{f}$ elektronivoltteina.\n\nb) Päättele jokaiselle viivalle alkukuoren numero $n$ ratkaisemalla se yhtälöstä $E_\\text{f} = E_n - E_2$. Perustele, miksi tulosten pitää olla kokonaislukuja.\n\nc) Piirrä kuvaaja, jonka vaaka-akselilla on $\\tfrac{1}{4} - \\tfrac{1}{n^2}$ ja pystyakselilla $E_\\text{f}$, ja sovita pisteisiin suora. Määritä suoran kulmakerroin ja kerro, mitä se ilmaisee.\n\nd) Ennusta seuraavan viivan, kuoresta $n = 7$ lähtevän siirtymän, aallonpituus.\n\nAnna c)-kohdan kulmakerroin vastauslaatikkoon elektronivoltteina.",
+      "kind": [
+        "data",
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "answer": 13.6,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Vedyn emissiospektrin viivat",
+        "columns": [
+          "Viiva",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "657.1"
+          ],
+          [
+            "2",
+            "485.4"
+          ],
+          [
+            "3",
+            "433.5"
+          ],
+          [
+            "4",
+            "410.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-5-L3-05",
+      "level": 3,
+      "text": "Esimerkkiaineisto: taulukossa on kolmen alkalimetallin ensimmäinen ionisaatioenergia $E_\\text{i}$, eli pienin energia, joka tarvitaan irrottamaan uloin elektroni perustilassa olevasta atomista. Natriumin valenssielektroni on perustilassa $3\\text{s}$-tilassa. Atomi absorboi valoa, kun valenssielektroni siirtyy tilalta $3\\text{s}$ tilalle $3\\text{p}$, ja tämän siirtymän energia on $2{,}10\\,\\text{eV}$.\n\na) Kirjoita natriumatomin ($Z = 11$) perustilan elektronikonfiguraatio ja perustele, miksi uloimmalla kuorella on vain yksi elektroni.\n\nb) Selitä taulukon perusteella, miksi ionisaatioenergia pienenee litiumista kaliumiin, vaikka ytimen varaus kasvaa. Käytä kuoria ja elektronien keskinäistä hylkimistä.\n\nc) Laske sen fotonin aallonpituus, joka siirtää natriumin valenssielektronin tilalta $3\\text{s}$ tilalle $3\\text{p}$.\n\nd) Laske, mitä aallonpituutta lyhyempi fotoni voi irrottaa natriumin valenssielektronin atomista, ja päättele, riittääkö c)-kohdan fotonin energia siihen.\n\nAnna c)-kohdan tulos vastauslaatikkoon nanometreinä.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 590,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Alkalimetallien ionisaatioenergiat",
+        "columns": [
+          "Alkuaine",
+          "$Z$",
+          "$n$ (uloin kuori)",
+          "$E_\\text{i}\\,(\\text{eV})$"
+        ],
+        "rows": [
+          [
+            "Li",
+            "3",
+            "2",
+            "5.39"
+          ],
+          [
+            "Na",
+            "11",
+            "3",
+            "5.14"
+          ],
+          [
+            "K",
+            "19",
+            "4",
+            "4.34"
+          ]
+        ]
+      }
     }
   ]
 }

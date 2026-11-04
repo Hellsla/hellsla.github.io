@@ -39,6 +39,74 @@
       "answer": 1.5,
       "unit": "mW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-06",
+      "level": 1,
+      "text": "Viritetty atomi voi lähettää fotonin kahdella tavalla: spontaanisti tai stimuloidusti. Mikä erottaa stimuloidun emission spontaanista emissiosta?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Stimuloidussa emissiossa uusi fotoni lähtee samaan suuntaan ja samassa vaiheessa kuin sen aiheuttanut fotoni, spontaanissa suunta on satunnainen.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Spontaanissa emissiossa atomi absorboi ensin fotonin ja lähettää sen sitten uudelleen, stimuloidussa atomi lähettää fotonin ilman mitään ulkoista syytä.",
+          "feedback": "Tilanne on päinvastainen: spontaanissa emissiossa atomi lähettää fotonin itsestään, ilman että mikään osuu siihen. Stimuloidussa emissiossa fotonin lähettämisen laukaisee atomiin osuva fotoni."
+        },
+        {
+          "text": "Stimuloidussa emissiossa atomi nousee ylemmälle tasolle ja spontaanissa putoaa alemmalle, joten niissä atomin energia muuttuu eri suuntiin.",
+          "feedback": "Kummassakin tapahtumassa viritetty atomi putoaa ylemmältä tasolta alemmalle ja lähettää fotonin, joten atomin energia pienenee molemmissa. Nousu ylemmälle tasolle on absorptiota."
+        },
+        {
+          "text": "Stimuloidussa emissiossa uusi fotoni lähtee samaan suuntaan ja samassa vaiheessa kuin sen aiheuttanut fotoni, spontaanissa suunta on satunnainen.",
+          "feedback": "Oikein: stimuloidussa emissiossa saapuva fotoni saa atomin lähettämään fotonin, jolla on sama energia, suunta ja vaihe. Spontaanissa emissiossa atomi lähettää fotonin itsestään ja suunta on satunnainen.",
+          "correct": true
+        },
+        {
+          "text": "Stimuloidussa emissiossa syntyvän fotonin energia on suurempi kuin spontaanissa, koska saapuvan fotonin energia lisätään siihen.",
+          "feedback": "Syntyvän fotonin energia on kummassakin tapauksessa tasojen erotus $E_2 - E_1$. Saapuva fotoni ei anna energiaansa uudelle fotonille, vaan jatkaa matkaansa sellaisenaan."
+        }
+      ]
+    },
+    {
+      "id": "fy8-7-L1-07",
+      "level": 1,
+      "text": "Vihreän laserosoittimen teho on $5{,}0\\,\\text{mW}$ ja valon aallonpituus $532\\,\\text{nm}$. Kuinka monta fotonia osoitin lähettää sekunnissa ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$)?",
+      "answer": 1.34e+16,
+      "unit": "1/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-08",
+      "level": 1,
+      "text": "Laseraineessa on kaksi lasertasoa, joista ylempi on $E_2$ ja alempi $E_1$. Mitä populaatioinversio tarkoittaa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Ylemmällä lasertasolla on enemmän atomeja kuin alemmalla, joten stimuloituja emissioita tapahtuu enemmän kuin absorptioita.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Lähes kaikki laseraineen atomit ovat alemmalla tasolla, joten jokainen saapuva fotoni absorboituu eikä stimuloitua emissiota synny.",
+          "feedback": "Tämä on tavallinen tila ilman pumppausta, ei inversio. Silloin valo vaimenee, koska absorptio voittaa stimuloidun emission. Inversiossa tilanne on päinvastainen."
+        },
+        {
+          "text": "Ylemmällä lasertasolla on enemmän atomeja kuin alemmalla, joten stimuloituja emissioita tapahtuu enemmän kuin absorptioita.",
+          "feedback": "Oikein: kun $N_2 > N_1$, saapuva fotoni osuu useammin viritettyyn kuin perustilassa olevaan atomiin. Silloin fotoneja syntyy enemmän kuin niitä absorboituu, ja valo vahvistuu.",
+          "correct": true
+        },
+        {
+          "text": "Atomit lähettävät fotoneja kaikkiin suuntiin yhtä paljon, joten valo ei suuntaudu mihinkään ja sen intensiteetti pysyy vakiona.",
+          "feedback": "Tämä kuvaa spontaania emissiota, jossa suunnat ovat satunnaisia. Populaatioinversio koskee atomien jakaumaa tasoille, ei fotonien suuntia, ja se mahdollistaa valon vahvistumisen."
+        },
+        {
+          "text": "Alempi lasertaso on energialtaan korkeampi kuin ylempi, joten atomit putoavat itsestään ylöspäin ja lähettävät fotoneja.",
+          "feedback": "Atomi ei voi pudota ylöspäin. Ylempi taso on määritelmän mukaan korkeampi, ja inversio tarkoittaa vain sitä, että sille on pumpattu enemmän atomeja kuin alemmalle."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +141,120 @@
       "answer": 5.0,
       "unit": "MW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Esimerkkiaineisto: samasta puolijohteesta valmistettujen kvanttipisteiden halkaisija $d$ on mitattu elektronimikroskoopilla ja niiden lähettämän valon aallonpituus $\\lambda$ spektrometrillä. Taulukossa on viiden pisteen tulokset. Oletetaan, että fotonin energia on yhtä suuri kuin pisteen energiarako.\n\na) Laske kunkin pisteen fotonin energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).\n\nb) Päättele taulukon perusteella, miten energiarako riippuu pisteen koosta.\n\nc) Kuinka paljon suurempi energiarako on pienimmällä kuin suurimmalla pisteellä?\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
+      "answer": 0.54,
+      "unit": "eV",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Kvanttipisteiden koko ja valon aallonpituus",
+        "columns": [
+          "$d\\,(\\text{nm})$",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "486"
+          ],
+          [
+            "3.0",
+            "529"
+          ],
+          [
+            "4.0",
+            "573"
+          ],
+          [
+            "5.0",
+            "601"
+          ],
+          [
+            "6.0",
+            "617"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-7-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Esimerkkiaineisto: tutkimuslaboratorion laserdiodien tiedot ovat taulukossa. Jokainen diodi lähettää yhtä aallonpituutta.\n\na) Laske kunkin diodin lähettämien fotonien määrä sekunnissa ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).\n\nb) Järjestä diodit fotonivuon mukaan suurimmasta pienimpään ja selitä, miksi järjestys on eri kuin tehojen järjestys.\n\nc) Kuinka moninkertainen on suurimman fotonivuon diodin fotonivuo pienimmän fotonivuon diodiin verrattuna?\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
+      "answer": 1.3,
+      "unit": "",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Laserdiodien aallonpituus ja teho",
+        "columns": [
+          "Diodi",
+          "$\\lambda\\,(\\text{nm})$",
+          "$P\\,(\\text{mW})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "405",
+            "10"
+          ],
+          [
+            "B",
+            "520",
+            "6.0"
+          ],
+          [
+            "C",
+            "650",
+            "5.0"
+          ],
+          [
+            "D",
+            "980",
+            "4.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-7-L2-07",
+      "level": 2,
+      "text": "Oppilas väittää: ”Laserissa stimuloidun emission jälkeen on kaksi fotonia, vaikka fotoneja oli ennen vain yksi. Laser siis lisää valon energiaa tyhjästä.” Mikä oppilaan päättelyssä on virheellistä?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Uuden fotonin energia tulee viritetystä atomista, joka putoaa alemmalle tasolle, joten energiaa ei synny tyhjästä vaan se siirtyy atomista valoon.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Saapuva fotoni jakautuu stimuloidussa emissiossa kahdeksi fotoniksi, joilla kummallakin on puolet alkuperäisestä energiasta, joten energiaa ei synny lisää.",
+          "feedback": "Saapuva fotoni ei jakaudu. Molemmilla fotoneilla on täysi energia $E_2 - E_1$, joten fotonien energia yhteensä on kaksinkertainen, ja ylimääräinen energia tulee atomista."
+        },
+        {
+          "text": "Kahden fotonin yhteenlaskettu energia on suurempi, mutta peilit heikentävät valoa niin paljon, että laserista ulos tuleva energia on aina pienempi.",
+          "feedback": "Peilit eivät ole selitys energian lisääntymiselle: virhe on jo siinä, että energian ajatellaan syntyvän tyhjästä. Energian lähde on atomien viritys, ja tuleva energia on enintään pumpatun energian suuruinen."
+        },
+        {
+          "text": "Fotonien määrä ei voi kasvaa, koska valo on aaltoliikettä eikä koostu fotoneista, joten väite kahdesta fotonista on vain kuvitelma.",
+          "feedback": "Valon vuorovaikutus aineen kanssa on kvantittunutta, ja fotonien määrä voi kasvaa: stimuloidussa emissiossa syntyy uusi fotoni. Virhe ei ole fotonien määrän kasvussa vaan siinä, mistä energia tulee."
+        },
+        {
+          "text": "Uuden fotonin energia tulee viritetystä atomista, joka putoaa alemmalle tasolle, joten energiaa ei synny tyhjästä vaan se siirtyy atomista valoon.",
+          "feedback": "Oikein: fotoneja tulee lisää, mutta niiden energia on peräisin pumppauksella viritetyiltä atomeilta. Atomin energia pienenee täsmälleen uuden fotonin energian verran, joten kokonaisenergia säilyy.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +281,69 @@
       "answer": 92200.0,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L3-04",
+      "level": 3,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "Esimerkkiaineisto: kuitulaseria pumpataan laserdiodeilla, joiden valon aallonpituus on $976\\,\\text{nm}$ ja yhteenlaskettu teho $20{,}0\\,\\text{W}$. Laser lähettää valoa aallonpituudella $1070\\,\\text{nm}$ ja sen lähtöteho on $15{,}0\\,\\text{W}$. Oleta, että kaikki pumppausvalo absorboituu aineeseen ja että se osa pumppausenergiasta, joka ei lähde laservalona, muuttuu lämmöksi. Määritellään kvanttihyötysuhde $\\eta_\\text{q}$ laserfotonien lukumäärän ja pumppausfotonien lukumäärän suhteeksi samana aikana ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).\n\na) Laske pumppausfotonien ja laserfotonien määrät sekunnissa.\n\nb) Laske kvanttihyötysuhde prosentteina.\n\nc) Laske aineeseen sekunnissa muuttuva lämpöteho ja sen osa, joka syntyy siitä, että laserfotonin energia on pienempi kuin pumppausfotonin energia.\n\nd) Perustele laskettujen lukujen avulla, miksi laserin energiahyötysuhde on pienempi kuin kvanttihyötysuhde.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
+      "answer": 82.2,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "graph",
+        "experiment",
+        "model"
+      ],
+      "text": "Esimerkkiaineisto: neodyymilaseria pumpataan laserdiodilla, jonka valon aallonpituus on $808\\,\\text{nm}$. Laser lähettää valoa aallonpituudella $1064\\,\\text{nm}$. Taulukossa on laserin lähtöteho $P_\\text{L}$, kun pumppausteho $P_\\text{p}$ on säädetty eri arvoihin ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).\n\na) Piirrä mittauspisteistä kuvaaja, jonka vaaka-akselilla on $P_\\text{p}$ ja pystyakselilla $P_\\text{L}$, ja sovita suora pisteisiin, joissa $P_\\text{p} \\ge 30\\,\\text{mW}$. Määritä suoran ja vaaka-akselin leikkauspiste eli kynnysteho.\n\nb) Määritä suoran kulmakerroin $\\dfrac{\\Delta P_\\text{L}}{\\Delta P_\\text{p}}$.\n\nc) Kuinka monta laserfotonia syntyy kynnyksen yläpuolella kutakin lisäpumppausfotonia kohti? Laske se kulmakertoimen ja aallonpituuksien avulla.\n\nd) Selitä, miksi laser ei anna merkittävästi valoa kynnystehoa pienemmillä pumppausteholla, vaikka pumppausta on.\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
+      "answer": 0.524,
+      "unit": "",
+      "tolerance": 0.06,
+      "data": {
+        "caption": "Laserin lähtöteho pumppaustehon funktiona",
+        "columns": [
+          "$P_\\text{p}\\,(\\text{mW})$",
+          "$P_\\text{L}\\,(\\text{mW})$"
+        ],
+        "rows": [
+          [
+            "10",
+            "0.0"
+          ],
+          [
+            "20",
+            "0.1"
+          ],
+          [
+            "30",
+            "2.1"
+          ],
+          [
+            "40",
+            "6.1"
+          ],
+          [
+            "50",
+            "10.0"
+          ],
+          [
+            "60",
+            "13.9"
+          ],
+          [
+            "70",
+            "18.1"
+          ]
+        ]
+      }
     }
   ]
 }
