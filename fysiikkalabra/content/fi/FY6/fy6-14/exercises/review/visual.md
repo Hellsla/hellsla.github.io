@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c36b87a99d9ffab9
+CONTENT-HASH: c53dc15ad7e8996c
 
 ## Blocking
-(none) Round 1 Critical fixed: L3-02 now reads as nine (U; I) pairs in LaTeX, wrapping cleanly in the task text (open-exercises-L3-1280-2); the solution's "Annettu" and Sijoitus agree with it.
+(none)
 
 ## Polish
-- [Minor] ex-led aria-label — "päättyy 30 milliampeeriin hieman 2,2 voltin oikealle puolelle" lets a screen-reader student bound the L1-05 answer; omit the value.
-- [Minor] solutions L1-01 Järkevyys — "kuten kokemuksesta tiedetään" is vague; name the comparison.
-- [Minor] L3-02 at 390 px was not captured in the set (only 1280 open states); inline pairs wrap freely so no overflow is expected, deterministic layout 360 px is clean.
+- [Minor] solutions L3-05, Kuvaajan lukeminen — "Kynnysjännite on noin $1{,}85\,\text{V}$": lineaarinen interpolointi taulukon pisteiden $(1{,}80;\ 0{,}6)$ ja $(1{,}90;\ 2{,}4)$ välillä antaa $1{,}82\,\text{V}$ — kirjoita "noin $1{,}8\,\text{V}$" (myös Järkevyys).
+- [Minor] solutions L1-06, Mallivastaus — viimeinen virke ("Väärät vaihtoehdot ovat virheellisiä, koska ne esittävät diodin estosuunnassa tai väittävät diodin yli olevan päästösuunnassa koko pariston jännitettä") on kömpelö — "Muut vaihtoehdot ovat vääriä: ne joko pitävät diodia estosuunnassa tai antavat päästösuunnassa olevalle diodille koko pariston jännitteen."
+- [Minor] L1-08 — jäsennelty `kind` puuttuu (muissa uusissa on); lisää esim. `["reasoning"]` jos kenttä vaaditaan.
 
 ## Checked
-- open-exercises-L3-1280-2 (L3-02 task and solution start); round 1 captures of L1-01, L1-05 with ex-led, Tarkista graph (ex-kenno), L2/L3 solutions stand.
-- Maths: units upright, decimal comma, colon for division, rows aligned, no red KaTeX source.
+- Uudet tehtävät luettu lähteistä; laskettu itse: 16,7 % (hyväksyntä 17 % juuri toleranssin rajalla), 207 Ω, 181 mW (kaikki 8 tehoa), 387 Ω, 87,7 % (summat 1027 ja 5340, kuuden kuukauden vajaus 2517 kWh), työpiste 13,8 mA. Kaikki täsmäävät.
+- Avatut kaappaukset 1280 px: open-exercises-1280-8 (14-7, 14-8), L2-1280-6 (14-13, 14-14 taulukko), L3-1280-7 (14-20 taulukko ja ratkaisu). Ei ylivuotoa, taulukot ja LaTeX-yksiköt kunnossa.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
