@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8a49e138f41872b8
+CONTENT-HASH: 18a470d8ffc74ca0
 
 ## Blocking
 (none)
@@ -9,7 +9,7 @@ CONTENT-HASH: 8a49e138f41872b8
 - inquiry.json ennuste-1/-2 reveal (round 1, unchanged) — both open only after the theory; no Tutki task tests the bird or fuse-versus-RCD — add a comparison of the body current with 10 A and 30 mA to the "iho" task, or call ennuste-2 a thought question.
 - Workload (round 1, unchanged) is at the limit; the new "Kengät ..." paragraph and the colour caveat add to it — keep them short.
 
-## Checked (round 2, diff HEAD~1..HEAD)
+## Checked (round 3 delta: I_vika label moved 4 units left in the maadoitus figure, nothing else; no pedagogic effect, label stays beside its arrow, description unchanged. Round 2 checks below stand)
 - Hook no longer states the cause ("vuorotellen" removed); the opening question is still answered by "keittio" and "iho".
 - johtopaatos criterion 3 now accepts "a protection that reacts to milliamp currents, e.g. vikavirtasuoja", so it no longer needs a term taught after the conclusion.
 - Fuse text now says the wire size fixes the fuse size, and a small overload need not trip at once; the worked example's Tulos repeats this, and the result shows 19,6 A.

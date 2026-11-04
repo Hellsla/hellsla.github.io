@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8a49e138f41872b8
+CONTENT-HASH: 18a470d8ffc74ca0
 
-Round 2, delta. Round 1 polish items fixed: kilo-ohmiin spelling, effects scale and table wording now agree, aria-label of the earthing figure updated.
+Round 3, delta: the $I_\text{vika}$ label in the right panel of the earthing figure was nudged 4 units left; text unchanged.
 
 ## Blocking
 (none)
 
 ## Polish
 - [Minor] fig 7 (maadoitus), left panel — the violet current arrow $I$ still runs over the leg and arm (optional, unchanged).
-- [Minor] Esimerkki — Sijoitus still shows "19,57 A" before "noin 20 A" and "19,6 A" in Järkevyys (optional, unchanged).
 
 ## Checked
-- fig-15 at 390 (labels now "10 mA ote ei irtoa", "30 mA hengitys vaikeutuu", matching the table) and theory-1280-4 (new "Kengät pienentävät…" paragraph, "kilo-ohmiin", table, scale, revised Yleinen virhekäsitys): layout intact, the figure still sits beside its paragraph.
-- Changed text read in the packet: the fuse, colour-coding and RCD sentences and the inquiry feedback are fluent, one voice, no plain-text quantities. Fig 7 caption and aria-label changes read, the drawing is unchanged.
+- fig-7 at 390: the label $I_\text{vika}$ sits clear of the green-yellow wire and the arrow, inside the panel, nothing clipped or overlapping.
+- Nothing else changed; the round 2 PASS for the rest of the lesson stands.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
