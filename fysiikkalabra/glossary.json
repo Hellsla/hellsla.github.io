@@ -1730,7 +1730,8 @@
     "term": "kvarkki",
     "definition": "Alkeishiukkanen, josta protonit ja neutronit koostuvat, kumpikin kolmesta. Kvarkille ei ole mitattu kokoa: kokeiden mukaan se on pienempi kuin noin 10⁻¹⁸ m.",
     "lessons": [
-      "fy1-1"
+      "fy1-1",
+      "fy8-15"
     ],
     "see_also": [
       "protoni",
@@ -1863,7 +1864,8 @@
     "term": "perusvuorovaikutus",
     "definition": "Yksi neljästä vuorovaikutuksesta, joihin kaikki tunnetut vuorovaikutukset palautuvat: gravitaatio, sähkömagneettinen, vahva ja heikko vuorovaikutus.",
     "lessons": [
-      "fy1-1"
+      "fy1-1",
+      "fy8-15"
     ],
     "see_also": [
       "gravitaatio",
@@ -5379,6 +5381,350 @@
     "see_also": [
       "puoliintumisaika",
       "aktiivisuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "atomimassayksikkö",
+    "definition": "Atomien ja ytimien massan yksikkö $\\text{u}$: tasan $\\tfrac{1}{12}$ hiili-12-atomin massasta, $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$. Energiana $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$.",
+    "lessons": [
+      "fy8-10"
+    ],
+    "see_also": [
+      "massavaje",
+      "nukleoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "massavaje",
+    "definition": "Ero ytimen erillisten nukleonien massojen summan ja ytimen massan välillä. Atomimassoista $\\Delta m = Z\\,m_\\text{H} + N\\,m_\\text{n} - m_\\text{atomi}$. Massavajetta vastaa ytimen sidosenergia $E_\\text{B} = \\Delta m\\,c^2$.",
+    "lessons": [
+      "fy8-10"
+    ],
+    "see_also": [
+      "sidosenergia",
+      "atomimassayksikkö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sidosenergia",
+    "definition": "Energia $E_\\text{B} = \\Delta m\\,c^2$, joka tarvitaan ytimen hajottamiseen erillisiksi protoneiksi ja neutroneiksi; sama energia vapautuu, kun ydin muodostuu. Sidosenergia nukleonia kohti $\\tfrac{E_\\text{B}}{A}$ on suurin, noin $8{,}8\\,\\text{MeV}$, raudan ja nikkelin ytimillä.",
+    "lessons": [
+      "fy8-10"
+    ],
+    "see_also": [
+      "massavaje",
+      "ydinreaktio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ydinreaktio",
+    "definition": "Tapahtuma, jossa atomiytimet muuttuvat: ydin hajoaa tai siihen osuu toinen ydin tai hiukkanen. Massaluku ja varausluku säilyvät, mutta massa muuttuu; reaktioenergia on $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$.",
+    "lessons": [
+      "fy8-10"
+    ],
+    "see_also": [
+      "sidosenergia",
+      "massavaje"
+    ],
+    "locked": false
+  },
+  {
+    "term": "absorboitunut annos",
+    "definition": "Aineen tai kudoksen absorboima ionisoivan säteilyn energia jaettuna sen massalla, $D = \\tfrac{E}{m}$. Yksikkö on gray: $1\\,\\text{Gy} = 1\\,\\tfrac{\\text{J}}{\\text{kg}}$.",
+    "lessons": [
+      "fy8-13"
+    ],
+    "see_also": [
+      "efektiivinen annos",
+      "ionisoiva säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "efektiivinen annos",
+    "definition": "Säteilyannos, jossa absorboitunut annos on painotettu säteilylajin ja säteilytettyjen kudosten herkkyyden mukaan. Se kuvaa pienten annosten pitkän aikavälin syöpäriskiä koko keholle. Yksikkö on sievert $\\text{Sv}$.",
+    "lessons": [
+      "fy8-13"
+    ],
+    "see_also": [
+      "absorboitunut annos",
+      "taustasäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "taustasäteily",
+    "definition": "Luonnon säteilylähteistä ympäristössä jatkuvasti tuleva säteily: maaperän, kallion ja rakennusmateriaalien radioaktiiviset aineet, avaruudesta tuleva säteily ja ilman radon. Säteilymittari laskee sitä aina myös mitattavan lähteen lisäksi.",
+    "lessons": [
+      "fy8-13"
+    ],
+    "see_also": [
+      "radon",
+      "efektiivinen annos"
+    ],
+    "locked": false
+  },
+  {
+    "term": "radon",
+    "definition": "Radioaktiivinen jalokaasu, jonka isotooppi radon-222 syntyy maaperän uraanin hajoamissarjassa. Sen hajoamistuotteet lähettävät alfasäteilyä keuhkoihin, ja sisäilman radon on suomalaisten suurin säteilyannoksen lähde.",
+    "lessons": [
+      "fy8-13"
+    ],
+    "see_also": [
+      "taustasäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "annosnopeus",
+    "definition": "Säteilyannos aikayksikössä, esimerkiksi mikrosievertiä tunnissa ($\\mu\\text{Sv/h}$). Vakioannosnopeudella ajassa $t$ kertyy annos $H = \\dot{H} t$.",
+    "lessons": [
+      "fy8-13"
+    ],
+    "see_also": [
+      "efektiivinen annos",
+      "puoliintumispaksuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "fissio",
+    "definition": "Ydinreaktio, jossa raskas ydin, kuten uraani-235, jakautuu kahdeksi keskiraskaaksi ytimeksi ja vapauttaa yleensä kaksi tai kolme neutronia. Tuotteiden sidosenergia nukleonia kohti on suurempi, joten massa pienenee ja energiaa vapautuu, uraani-235:llä keskimäärin noin $200\\,\\text{MeV}$ fissiota kohti.",
+    "lessons": [
+      "fy8-11"
+    ],
+    "see_also": [
+      "ketjureaktio",
+      "fuusio",
+      "sidosenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "fuusio",
+    "definition": "Ydinreaktio, jossa kaksi kevyttä ydintä yhtyy raskaammaksi ytimeksi, esimerkiksi deuterium ja tritium heliumiksi. Tuotteen sidosenergia nukleonia kohti on suurempi, joten energiaa vapautuu. Fuusio vaatii hyvin korkean lämpötilan, koska ytimet hylkivät toisiaan.",
+    "lessons": [
+      "fy8-11"
+    ],
+    "see_also": [
+      "fissio",
+      "sidosenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ketjureaktio",
+    "definition": "Reaktio, jossa fissiossa vapautuvat neutronit aiheuttavat uusia fissioita. Ketjun etenemistä kuvaa kasvukerroin $k$, se kuinka monta seuraavan sukupolven neutronia yksi neutroni keskimäärin tuottaa: kun $k < 1$, ketju sammuu, kun $k = 1$, se pysyy tasaisena, ja kun $k > 1$, se kasvaa.",
+    "lessons": [
+      "fy8-11"
+    ],
+    "see_also": [
+      "fissio",
+      "ydinreaktori"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ydinreaktori",
+    "definition": "Laite, jossa fission ketjureaktio pidetään hallitusti tasaisena eli kasvukerroin arvossa $k = 1$. Hidastin hidastaa neutroneja, säätösauvat absorboivat niitä, ja jäähdyte kuljettaa vapautuvan lämmön pois.",
+    "lessons": [
+      "fy8-11"
+    ],
+    "see_also": [
+      "ketjureaktio",
+      "fissio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ionisoiva säteily",
+    "definition": "Säteily, jonka yksittäinen hiukkanen tai fotoni pystyy irrottamaan elektronin atomista tai molekyylistä. Esimerkiksi alfa-, beeta-, gamma-, röntgen- ja neutronisäteily ovat ionisoivia; näkyvä valo ei ole.",
+    "lessons": [
+      "fy8-12"
+    ],
+    "see_also": [
+      "ionisaatio",
+      "läpäisykyky"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ionisaatio",
+    "definition": "Tapahtuma, jossa atomista tai molekyylistä irtoaa elektroni, jolloin syntyy ionipari: positiivinen ioni ja vapaa elektroni. Ilmassa ionipari vie keskimäärin noin $34\\,\\text{eV}$ säteilyn energiaa.",
+    "lessons": [
+      "fy8-12"
+    ],
+    "see_also": [
+      "ionisoiva säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "läpäisykyky",
+    "definition": "Säteilyn kyky läpäistä ainetta. Alfasäteily pysähtyy paperiarkkiin, beetasäteily muutamaan millimetriin alumiinia, ja gammasäteily vaimenee vähitellen esimerkiksi lyijyssä.",
+    "lessons": [
+      "fy8-12"
+    ],
+    "see_also": [
+      "ionisoiva säteily",
+      "puoliintumispaksuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "puoliintumispaksuus",
+    "definition": "Ainekerroksen paksuus $d_{1/2}$, joka päästää läpi puolet gamma- tai röntgensäteilystä: $I = I_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$. Se riippuu aineesta ja säteilyn energiasta.",
+    "lessons": [
+      "fy8-12",
+      "fy8-13"
+    ],
+    "see_also": [
+      "läpäisykyky"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Geiger-Müller-putki",
+    "definition": "Säteilyn ilmaisin: kaasulla täytetty metalliputki, jonka keskilangan ja seinän välillä on jännite. Ionisoiva hiukkanen synnyttää kaasuun elektronivyöryn, joka näkyy pulssina; putki laskee tapahtumia mutta ei erota säteilylajeja.",
+    "lessons": [
+      "fy8-12"
+    ],
+    "see_also": [
+      "ionisoiva säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "standardimalli",
+    "definition": "Hiukkasfysiikan teoria, joka kuvaa aineen perushiukkaset (kuusi kvarkkia ja kuusi leptonia), niiden välittäjähiukkaset ja Higgsin bosonin sekä vahvan, sähkömagneettisen ja heikon vuorovaikutuksen. Gravitaatio ei kuulu standardimalliin.",
+    "lessons": [
+      "fy8-15"
+    ],
+    "see_also": [
+      "kvarkki",
+      "leptoni",
+      "välittäjähiukkanen",
+      "perusvuorovaikutus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "leptoni",
+    "definition": "Perushiukkanen, johon vahva vuorovaikutus ei vaikuta: elektroni, myoni ja tau, joiden varaus on $-e$, sekä niiden kolme sähköisesti neutraalia neutriinoa. Leptonin leptoniluku on $+1$ ja antileptonin $-1$.",
+    "lessons": [
+      "fy8-15"
+    ],
+    "see_also": [
+      "standardimalli",
+      "kvarkki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "välittäjähiukkanen",
+    "definition": "Hiukkanen, jonka välityksellä perusvuorovaikutus vaikuttaa hiukkasten välillä: fotoni välittää sähkömagneettisen, gluoni vahvan ja $W$- ja $Z$-bosonit heikon vuorovaikutuksen. Gravitaation välittäjä gravitoni on hypoteettinen.",
+    "lessons": [
+      "fy8-15"
+    ],
+    "see_also": [
+      "perusvuorovaikutus",
+      "fotoni",
+      "standardimalli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "punasiirtymä",
+    "definition": "Spektriviivojen siirtymä pidempiin aallonpituuksiin: $z = \\tfrac{\\Delta\\lambda}{\\lambda_0}$, missä $\\lambda_0$ on viivan aallonpituus laboratoriossa. Kaukaisten galaksien punasiirtymä syntyy, kun avaruuden laajeneminen venyttää valon aallonpituutta; pienellä punasiirtymällä etääntymisnopeus on $v = cz$.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "alkuräjähdys",
+      "absorptiospektri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alkuräjähdys",
+    "definition": "Maailmankaikkeuden laajenemisen alku noin 13,8 miljardia vuotta sitten hyvin kuumasta ja tiheästä tilasta. Se ei ollut räjähdys tyhjään avaruuteen jostakin pisteestä, vaan avaruus itse alkoi laajeta kaikkialla.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "punasiirtymä",
+      "kosminen taustasäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kosminen taustasäteily",
+    "definition": "Joka suunnasta lähes tasaisesti tuleva mikroaaltosäteily, joka vapautui noin 380 000 vuotta alkuräjähdyksen jälkeen, kun atomit syntyivät ja maailmankaikkeus muuttui läpinäkyväksi. Laajeneminen on venyttänyt sen aallonpituudet noin 1100-kertaisiksi; sen lämpötila on nyt $2{,}725\\,\\text{K}$.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "alkuräjähdys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pimeä aine",
+    "definition": "Näkymätön aine, joka ei säteile eikä absorboi valoa mutta vaikuttaa painovoimallaan: se selittää esimerkiksi, miksi galaksien laitamien tähdet kiertävät niin nopeasti. Sitä on noin viisi kertaa niin paljon kuin tavallista ainetta, eikä tiedetä, mistä se koostuu.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "pimeä energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pimeä energia",
+    "definition": "Tuntematon tekijä, joka kiihdyttää maailmankaikkeuden laajenemista. Kiihtyminen havaittiin kaukaisten supernovien mittauksista vuonna 1998; pimeää energiaa on noin $69\\,\\%$ maailmankaikkeuden energiasisällöstä.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "pimeä aine",
+      "alkuräjähdys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "röntgensäteily",
+    "definition": "Suurienerginen fotonisäteily, joka syntyy, kun nopeat elektronit jarruttavat aineessa (jarrutussäteily) tai kun ne irrottavat elektronin atomin sisimmältä kuorelta ja ulomman kuoren elektroni siirtyy sen paikalle (karakteristinen röntgensäteily), esimerkiksi röntgenputken anodissa. Se on ionisoivaa ja vaimenee aineessa kuten gammasäteily; kuvauksessa fotonien energia on tyypillisesti kymmeniä kiloelektronivoltteja.",
+    "lessons": [
+      "fy8-14"
+    ],
+    "see_also": [
+      "puoliintumispaksuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "merkkiaine",
+    "definition": "Radioaktiivinen nuklidi, joka on liitetty elimistön käyttämään yhdisteeseen, jotta se kertyy tutkittavaan elimeen. Kehon ulkopuolinen ilmaisin havaitsee sen säteilyn, joten kuva näyttää elimen toiminnan.",
+    "lessons": [
+      "fy8-14"
+    ],
+    "see_also": [
+      "röntgensäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sädehoito",
+    "definition": "Syövän hoito ionisoivalla säteilyllä, jonka suuri annos tappaa kasvaimen solut. Säteily annetaan yleensä monesta suunnasta ja moneen kertaan jaettuna, jotta terve kudos saa mahdollisimman pienen annoksen.",
+    "lessons": [
+      "fy8-14"
+    ],
+    "see_also": [
+      "absorboitunut annos"
     ],
     "locked": false
   }

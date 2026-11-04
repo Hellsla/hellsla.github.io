@@ -1,0 +1,434 @@
+{
+  "version": 1,
+  "contribution": "Ionisoiva säteily fysiikan kautta: ionisaatio ja energian siirto, alfa-, beeta- ja gammasäteilyn ionisaatiotiheys ja läpäisykyky, gammasäteilyn vaimeneminen $I = I_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$, havaitseminen GM-putkella ja taustasäteily sekä biologiset vaikutukset ionisaation kautta.",
+  "learn": [
+    "vertailemaan alfa-, beeta- ja gammasäteilyn läpäisykykyä ja selittämään sen ionisaation avulla.",
+    "laskemaan gammasäteilyn vaimenemisen puoliintumispaksuuden avulla.",
+    "selittämään, miten GM-putki havaitsee säteilyä ja miten ionisaatio vaurioittaa soluja."
+  ],
+  "prior": [
+    "Fotonin energia on $E = hf$, ja elektronivoltti on $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$ (luku *Valosähköinen ilmiö ja fotoni*)",
+    "Radioaktiivinen ydin lähettää alfa-, beeta- tai gammasäteilyä (luku *Atomiydin ja radioaktiivinen hajoaminen*)",
+    "Jokainen puoliintumisaika puolittaa hajoamattomien ytimien määrän, $N = N_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$ (luku *Hajoamislaki ja puoliintumisaika*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Suomalaisten sisäilmassa on radonia, joka hajoaa lähettäen alfasäteilyä. Alfasäteily pysähtyy jo paperiarkkiin, ja röntgenhoitaja suojautuu säteilyltä lyijyä sisältävällä esiliinalla. Silti juuri hengitysilman radon on Suomessa merkittävin säteilyn lähde, jolle ihmiset altistuvat. Säteilyä ei näe, kuule eikä tunne, mutta Geigerin ja Müllerin mittari naksuttaa sen jokaisen havaitsemansa hiukkasen.",
+      "question": "Miksi helposti pysähtyvä alfasäteily on haitallista elimistön sisällä, ja miksi gammasäteilyltä suojaudutaan juuri lyijyllä?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Kertaa: säteilyn lajit",
+      "prompt": "Amerikium-241-ydin hajoaa alfahajoamisella. Mikä on ytimestä lähtevä alfahiukkanen?",
+      "choices": [
+        {
+          "text": "Heliumydin, jossa on kaksi protonia ja kaksi neutronia.",
+          "correct": true,
+          "feedback": "Oikein. Alfahiukkasen varaus on $+2e$, ja se on noin $7300$ kertaa elektronia raskaampi (luku *Atomiydin ja radioaktiivinen hajoaminen*). Tänään selviää, miksi juuri varaus ja massa tekevät siitä tiheästi ionisoivan."
+        },
+        {
+          "text": "Ytimestä lähtevä elektroni, joka syntyy neutronin muuttuessa protoniksi.",
+          "feedback": "Tämä on beeta miinus -hiukkanen. Alfahiukkanen on heliumydin, jossa on kaksi protonia ja kaksi neutronia (luku *Atomiydin ja radioaktiivinen hajoaminen*)."
+        },
+        {
+          "text": "Suurienerginen fotoni, joka lähtee virittyneestä ytimestä.",
+          "feedback": "Tämä on gammafotoni. Alfahiukkanen on varattu hiukkanen: heliumydin, jossa on kaksi protonia ja kaksi neutronia (luku *Atomiydin ja radioaktiivinen hajoaminen*)."
+        },
+        {
+          "text": "Vapaa neutroni, joka irtoaa ytimestä hajoamisessa.",
+          "feedback": "Vapaita neutroneja vapautuu esimerkiksi fissiossa (luku *Fissio, fuusio ja ydinvoima*). Alfahiukkanen on heliumydin, jossa on kaksi protonia ja kaksi neutronia."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: mikä läpäisee alumiinin?",
+      "prompt": "Alfa-, beeta- ja gammalähteen eteen asetetaan vuorollaan $5\\,\\text{mm}$:n alumiinilevy. Ilman levyä GM-mittari laskee jokaisesta lähteestä suunnilleen yhtä monta pulssia. Minkä säteilyn pulsseja mittari laskee edelleen selvästi enemmän kuin taustasäteilyn, kun levy on paikallaan?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Vain gammasäteilyn, koska fotoni ionisoi niin harvoin, että suurin osa kulkee levyn läpi.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: alumiinin takana gammalähteestä tuli $535$ pulssia $10\\,\\text{s}$:ssa, mutta beeta- ja alfalähteestä vain $4$ ja $9$, mikä on satunnaisvaihtelun rajoissa taustasäteilyn tasoa. Paperi ei pysäyttänyt beetasäteilyä ($550$ pulssia), mutta $5\\,\\text{mm}$ alumiinia pysäytti."
+        },
+        {
+          "text": "Beeta- ja gammasäteilyn, koska kumpikin läpäisee paperin.",
+          "feedback": "Mallin arvot kumoavat tämän: beetalähteestä tuli alumiinin takana vain $4$ pulssia $10\\,\\text{s}$:ssa, saman verran kuin taustaa. Beetahiukkanen on varattu, joten se ionisoi koko matkansa ja menettää energiansa muutamassa millimetrissä alumiinia. Paperin se läpäisi lähes esteettä ($550$ pulssia)."
+        },
+        {
+          "text": "Kaikkien kolmen, koska metallilevy ei pysäytä säteilyä vaan vain heikentää sitä.",
+          "feedback": "Mallin arvot kumoavat tämän: alfalähteestä ei tullut taustaa enempää pulsseja edes paperiarkin takaa. Alfa- ja beetahiukkasilla on kantama: kun ne ovat luovuttaneet energiansa ionisaatioihin, ne pysähtyvät. Vain gammasäteily vaimenee osuus kerrallaan."
+        },
+        {
+          "text": "Ei minkään, koska metalli pysäyttää kaiken säteilyn.",
+          "feedback": "Mallin arvot kumoavat tämän: gammalähteestä tuli alumiinin takana $535$ pulssia $10\\,\\text{s}$:ssa, lähes yhtä paljon kuin ilman levyä. Gammafotoni on neutraali ja vuorovaikuttaa harvoin, joten ohut alumiini vaimentaa siitä vain pienen osan."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kaksi lyijylevyä",
+      "prompt": "Lyijykerros, jonka paksuus on lyijyn puoliintumispaksuus, päästää gammalähteen säteilystä läpi puolet. Toinen samanlainen kerros asetetaan ensimmäisen taakse. Kuinka suuri osa gammasäteilystä läpäisee molemmat levyt?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Noin neljäsosa, koska toinen levy päästää läpi puolet siitä, mikä pääsi ensimmäisen läpi.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: nettopulssimäärä oli $586$ ilman lyijyä, $328$ eli noin puolet $5\\,\\text{mm}$:n kohdalla ja $171$ eli noin $0{,}29$ kertaa alkuperäinen $10\\,\\text{mm}$:n kohdalla. Koska $5\\,\\text{mm}$ on hieman alle lyijyn puoliintumispaksuuden, kaksi kerrosta päästää läpi hieman yli neljäsosan. Jokainen kerros vaimentaa saman osuuden siitä säteilystä, joka siihen saapuu, joten puolikkaat kertautuvat: $\\tfrac{1}{2} \\cdot \\tfrac{1}{2} = \\tfrac{1}{4}$."
+        },
+        {
+          "text": "Ei mitään, koska kumpikin levy pysäyttää puolet säteilystä.",
+          "feedback": "Mallin arvot kumoavat tämän: $20\\,\\text{mm}$:n lyijyn takaakin tuli vielä $57$ pulssia $10\\,\\text{s}$:ssa. Toinen levy pysäyttää puolet siitä, mikä *pääsi ensimmäisen läpi*, ei puolta alkuperäisestä säteilystä. Siksi gammasäteily ei koskaan pysähdy kokonaan."
+        },
+        {
+          "text": "Edelleen noin puolet, koska ensimmäinen levy pysäytti jo heikoimmat fotonit.",
+          "feedback": "Mallin arvot kumoavat tämän: kun lyijyä oli kaksi kertaa enemmän, pulssimäärä pieneni edelleen ($328 \\to 171$ nettopulssia). Saman energian gammafotonit ovat samanlaisia: jokaisella on joka kerroksessa sama todennäköisyys vuorovaikuttaa, joten toinenkin levy vaimentaa puolet."
+        },
+        {
+          "text": "Noin kaksi kolmasosaa, koska ensimmäinen levy pysäyttää jo suurimman osan ja toinen vain vähän.",
+          "feedback": "Kaksi levyä ei voi päästää läpi enemmän kuin yksi. Mallin arvot eivät tue tätä: $10\\,\\text{mm}$:n lyijyn takaa tuli noin $0{,}29$ kertaa alkuperäinen nettomäärä, mikä on lähellä neljäsosaa, kun huomioidaan pulssien satunnaisvaihtelu. Jokainen levy kertoo läpi pääsevän määrän puolella: $\\tfrac{1}{2} \\cdot \\tfrac{1}{2} = \\tfrac{1}{4}$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse lähde ja este, lisää levyjä ja mittaa GM-putkella, kuinka monta pulssia $10\\,\\text{s}$:ssa syntyy. Seuraa, mitkä hiukkaset pysähtyvät levyihin.",
+      "howto": "*Mittaa* käynnistää $10\\,\\text{s}$:n mittauksen; laskuri näyttää pulssimäärän $N$ ja kuluneen ajan $t$, ja valmis tulos jää lukemiin. *Lähde* valitsee alfa-, beeta- tai gammalähteen tai ei lähdettä, jolloin mittari laskee pelkkää taustasäteilyä. *Este* valitsee levyjen aineen, ja liukusäädin *Levyjä* niiden määrän $n$ $0$–$20$: paperiarkki on $0{,}1\\,\\text{mm}$, alumiini- ja lyijylevy $1\\,\\text{mm}$. Kun $n = 0$, estettä ei ole. Kuvassa violetti piste on alfahiukkanen, sininen beetahiukkanen ja oranssi aalto gammafotoni; levyihin pysähtyvät hiukkaset sammuvat niihin. Jokainen putkeen osuva hiukkanen synnyttää langan lähelle elektronivyöryn, joka näkyy välähdyksenä, ja laskuri kasvaa yhdellä. Harmaat aallot ylhäältä ovat taustasäteilyä. Jos muutat lähdettä tai estettä, mittaus nollautuu. *Nopeus* muuttaa vain ajan kulun tahtia.",
+      "model": "Lähde on $3\\,\\text{cm}$:n päässä putken ikkunasta. Malli ei huomioi alfahiukkasen energian menetystä ilmassa ja putken ikkunassa, vaikka todellisuudessa alfahiukkasia pitäisi mitata lähempää. Lähteet on valittu niin, että ilman estettä mittari laskee jokaisesta keskimäärin $600$ pulssia $10\\,\\text{s}$:ssa; taustasäteily antaa keskimäärin $4$ pulssia. Jokainen lähde lähettää vain yhtä säteilylajia: todellinen amerikium-241 lähettää alfasäteilyn lisäksi myös heikkoa gammasäteilyä. Alfahiukkanen pysähtyy jo yhteen paperiarkkiin. Beetahiukkasten suurin energia on $2{,}28\\,\\text{MeV}$, kuten strontium-90-lähteessä, ja niiden kantama on $1{,}1\\,\\tfrac{\\text{g}}{\\text{cm}^2}$, noin $4\\,\\text{mm}$ alumiinia; jarrutussäteilyä ei ole mallissa. Gammasäteily on cesium-137:n $662\\,\\text{keV}$:n säteilyä kapeana säteenä. Todellinen GM-putki havaitsee vain pienen osan gammafotoneista, mutta mallissa jokainen putkeen osuva hiukkanen tai fotoni rekisteröidään, eikä putkella ole kuollutta aikaa. Lukemat ovat mallin arvoja eivätkä mittauksia.",
+      "calc": "Esteen läpäisevä osuus $T$ lasketaan säteilylajin mukaan. Alfalle $T = 0$ minkä tahansa esteen takana. Beetalle $T = e^{-6{,}6 x}$, missä $x$ on esteen tiheyden ja paksuuden tulo yksikössä $\\tfrac{\\text{g}}{\\text{cm}^2}$, ja $T = 0$, kun $x \\ge 1{,}1\\,\\tfrac{\\text{g}}{\\text{cm}^2}$. Gammalle $T = \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$, missä $d_{1/2}$ on paperille $100\\,\\text{mm}$, alumiinille $34\\,\\text{mm}$ ja lyijylle $5{,}5\\,\\text{mm}$. Mittausaika on jaettu $6000$ lyhyeen jaksoon. Kussakin jaksossa lähteestä tulee pulssi todennäköisyydellä $0{,}1 \\cdot T$ ja taustasta todennäköisyydellä $\\tfrac{4}{6000}$, joten pulssimäärä vaihtelee satunnaisesti keskiarvon $600 \\cdot T + 4$ ympärillä. Ensimmäinen mittaus samoilla asetuksilla antaa aina saman tuloksen, ja toistettu mittaus eri tuloksen."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: paperiarkki lähteen edessä",
+      "intro": "Lähteen edessä on yksi paperiarkki, paksuus $0{,}1\\,\\text{mm}$. Vaihda vain lähdettä: mittaa jokaisella vaihtoehdolla $10\\,\\text{s}$ ja kirjaa pulssimäärä. Mittaa ainakin alfa-, beeta- ja gammalähde, halutessasi myös pelkkä tausta.",
+      "initial": {
+        "lahde": "alfa",
+        "aine": "paperi",
+        "n": 1
+      },
+      "locked": [
+        "aine",
+        "n"
+      ],
+      "vary": "lahde",
+      "min": 3,
+      "names": {
+        "lahde": "lähde",
+        "aine": "este",
+        "n": "levyjä n"
+      },
+      "values": {
+        "lahde": {
+          "tausta": "ei lähdettä",
+          "alfa": "alfalähde",
+          "beeta": "beetalähde",
+          "gamma": "gammalähde"
+        },
+        "aine": {
+          "paperi": "paperi",
+          "alumiini": "alumiini",
+          "lyijy": "lyijy"
+        }
+      },
+      "measure": [
+        {
+          "key": "pulssit",
+          "label": "pulssimäärä N"
+        }
+      ]
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: alumiinilevy lähteen edessä",
+      "intro": "Testaa ennuste 1. Lähteen edessä on nyt $5\\,\\text{mm}$ alumiinia. Vaihda vain lähdettä, mittaa jokaisella $10\\,\\text{s}$ ja kirjaa pulssimäärä ainakin alfa-, beeta- ja gammalähteestä. Vertaa kokeeseen 1 ja taustaan, noin $4$ pulssia $10\\,\\text{s}$:ssa.",
+      "initial": {
+        "lahde": "alfa",
+        "aine": "alumiini",
+        "n": 5
+      },
+      "locked": [
+        "aine",
+        "n"
+      ],
+      "vary": "lahde",
+      "min": 3,
+      "names": {
+        "lahde": "lähde",
+        "aine": "este",
+        "n": "levyjä n"
+      },
+      "values": {
+        "lahde": {
+          "tausta": "ei lähdettä",
+          "alfa": "alfalähde",
+          "beeta": "beetalähde",
+          "gamma": "gammalähde"
+        },
+        "aine": {
+          "paperi": "paperi",
+          "alumiini": "alumiini",
+          "lyijy": "lyijy"
+        }
+      },
+      "measure": [
+        {
+          "key": "pulssit",
+          "label": "pulssimäärä N"
+        }
+      ]
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: gammasäteily lyijyn läpi",
+      "intro": "Testaa ennuste 2. Lähde on gammalähde ja este lyijy. Muuta vain levyjen määrää: mittaa ja kirjaa pulssimäärä ainakin paksuuksilla $0$, $5$ ja $10\\,\\text{mm}$, halutessasi myös $15$ ja $20\\,\\text{mm}$. Vähennä lopuksi jokaisesta lukemasta tausta, noin $4$ pulssia.",
+      "initial": {
+        "lahde": "gamma",
+        "aine": "lyijy",
+        "n": 0
+      },
+      "locked": [
+        "lahde",
+        "aine"
+      ],
+      "vary": "n",
+      "min": 3,
+      "units": {
+        "n": "mm"
+      },
+      "names": {
+        "lahde": "lähde",
+        "aine": "este",
+        "n": "lyijyn paksuus d"
+      },
+      "values": {
+        "lahde": {
+          "tausta": "ei lähdettä",
+          "alfa": "alfalähde",
+          "beeta": "beetalähde",
+          "gamma": "gammalähde"
+        },
+        "aine": {
+          "paperi": "paperi",
+          "alumiini": "alumiini",
+          "lyijy": "lyijy"
+        }
+      },
+      "measure": [
+        {
+          "key": "pulssit",
+          "label": "pulssimäärä N"
+        }
+      ]
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: läpäisykyky",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: Mikä este pysäytti minkin säteilyn? Mitä gammasäteilyn pulssimäärälle tapahtui jokaisen lisätyn $5\\,\\text{mm}$:n lyijykerroksen jälkeen? Miksi gammasäteily ei pysähtynyt kokonaan?",
+      "model": "Mallin arvoina paperiarkin takana alfalähteestä tuli $5$ pulssia $10\\,\\text{s}$:ssa, saman verran kuin pelkkää taustaa, mutta beetalähteestä $550$ ja gammalähteestä $577$. Paperi siis pysäytti alfasäteilyn. Alumiinin $5\\,\\text{mm}$:n takana beetalähteestä tuli enää $4$ pulssia eli taustan verran, mutta gammalähteestä $535$. Varatut alfa- ja beetahiukkaset ionisoivat koko matkansa, luovuttavat energiansa ja pysähtyvät, alfa jo paperiin. Lyijyn takana gammalähteen pulssimäärä oli $590$, $332$, $175$, $89$ ja $57$ paksuuksilla $0$, $5$, $10$, $15$ ja $20\\,\\text{mm}$. Jokainen $5\\,\\text{mm}$:n kerros pienensi taustan jälkeen jäävää nettopulssimäärää suunnilleen puoleen, joten lyijyn puoliintumispaksuus on hieman yli $5\\,\\text{mm}$. Gammafotoni vuorovaikuttaa harvoin ja jokaisessa kerroksessa samalla todennäköisyydellä, joten jokainen kerros vaimentaa saman osuuden eikä säteily pysähdy kokonaan. Pulssimäärät vaihtelevat satunnaisesti, joten yksittäinen lukema voi poiketa laista.",
+      "criteria": [
+        "Kerron mallin arvoilla, että paperi pysäytti alfasäteilyn ja $5\\,\\text{mm}$ alumiinia beetasäteilyn, kun pulssimäärä putosi taustan tasolle.",
+        "Totean lyijymittauksista, että jokainen $5\\,\\text{mm}$:n kerros pienensi nettopulssimäärän noin puoleen.",
+        "Selitän, että gammafotoni vuorovaikuttaa harvoin ja jokainen kerros vaimentaa saman osuuden, joten säteily ei pysähdy kokonaan.",
+        "Kutsun simulaation lukuja mallin arvoiksi enkä mittauksiksi."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin. Palaa sitten alun kysymykseen: miksi paperiin pysähtyvä alfasäteily on vaarallista keuhkoissa, ja miksi gammasäteilyltä suojautumiseen tarvitaan senttimetrejä lyijyä eikä ohut levy riitä?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija suunnittelee suojaa cesium-137-lähteelle. Lyijyn puoliintumispaksuus on $5{,}5\\,\\text{mm}$. Hän kirjoittaa: ”Ensimmäinen $5{,}5\\,\\text{mm}$ pysäyttää puolet säteilystä ja toinen $5{,}5\\,\\text{mm}$ toisen puolen. Siis $11\\,\\text{mm}$ lyijyä pysäyttää kaiken gammasäteilyn.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Toinen kerros pysäyttää puolet siitä säteilystä, joka pääsi ensimmäisen läpi, joten $11\\,\\text{mm}$ päästää läpi neljäsosan.",
+          "correct": true,
+          "feedback": "Oikein. Jokainen puoliintumispaksuus puolittaa siihen saapuvan säteilyn: $I = I_0 \\left(\\tfrac{1}{2}\\right)^{11\\,\\text{mm} / 5{,}5\\,\\text{mm}} = \\tfrac{1}{4} I_0$. Gammasäteilyllä ei ole kantamaa, joten mikään paksuus ei pysäytä sitä täysin; suoja mitoitetaan niin, että läpi pääsevä osuus on riittävän pieni."
+        },
+        {
+          "text": "Puoliintumispaksuus tarkoittaa paksuutta, joka pysäyttää kaiken säteilyn, joten jo $5{,}5\\,\\text{mm}$ riittää.",
+          "feedback": "Puoliintumispaksuus on paksuus, joka päästää läpi *puolet* säteilystä. Virhe on toisessa kerroksessa: se vaimentaa puolet siitä, mikä pääsi ensimmäisen läpi, joten $11\\,\\text{mm}$:n takana jäljellä on neljäsosa."
+        },
+        {
+          "text": "Lyijy ei vaimenna gammasäteilyä lainkaan, koska gammafotoni on sähköisesti neutraali.",
+          "feedback": "Neutraali fotoni voi silti vuorovaikuttaa lyijyn elektronien kanssa ja irrottaa niitä; siksi lyijy vaimentaa sitä tehokkaasti. Virhe on toisen kerroksen vaikutuksessa: $11\\,\\text{mm}$ päästää läpi neljäsosan."
+        },
+        {
+          "text": "Laskussa olisi pitänyt käyttää millimetrien sijasta senttimetrejä.",
+          "feedback": "Yksiköllä ei ole merkitystä, kunhan paksuus ja puoliintumispaksuus ovat samassa yksikössä: $11\\,\\text{mm} : 5{,}5\\,\\text{mm} = 1{,}1\\,\\text{cm} : 0{,}55\\,\\text{cm} = 2$. Virhe on päättelyssä: toinen kerros puolittaa vain sen, mikä pääsi ensimmäisen läpi."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella: lyijyesiliina röntgenkuvauksessa",
+      "prompt": "Hammasröntgenissä käytettävän röntgensäteilyn fotonien suurin energia on noin $60\\,\\text{keV}$. Tälle säteilylle lyijyn puoliintumispaksuus on $0{,}12\\,\\text{mm}$. Potilaan suojaesiliinassa on lyijyä vastaava kerros, jonka paksuus on $0{,}50\\,\\text{mm}$. Kuinka monta prosenttia esiliinaan osuvasta röntgensäteilystä läpäisee sen? Oletetaan kapea säde.",
+      "answer": 5.6,
+      "unit": "%",
+      "tolerance": 0.02,
+      "hints": [
+        "Röntgensäteily on fotonisäteilyä kuten gammasäteily, joten se vaimenee yhtälön $I = I_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$ mukaan.",
+        "Laske ensin, montako puoliintumispaksuutta esiliinassa on: $d : d_{1/2}$.",
+        "Esiliinassa on $0{,}50\\,\\text{mm} : 0{,}12\\,\\text{mm} \\approx 4{,}17$ puoliintumispaksuutta. Laske $\\left(\\tfrac{1}{2}\\right)^{4{,}17}$ ja muuta se prosenteiksi."
+      ],
+      "mistakes": [
+        {
+          "value": 84.7,
+          "feedback": "Kirjoitit eksponentin väärin päin: $\\tfrac{d_{1/2}}{d}$. Eksponentti on esteen paksuus jaettuna puoliintumispaksuudella, $\\tfrac{d}{d_{1/2}} = \\tfrac{0{,}50\\,\\text{mm}}{0{,}12\\,\\text{mm}} \\approx 4{,}17$: paksumpi este vaimentaa enemmän."
+        },
+        {
+          "value": 94.4,
+          "feedback": "Tämä on esiliinaan *jäävä* osuus. Kysyttiin läpäisevää osuutta: $\\left(\\tfrac{1}{2}\\right)^{4{,}17} \\cdot 100\\,\\%$."
+        },
+        {
+          "value": 12.0,
+          "feedback": "Jaoit $100\\,\\%$:n kahdella kerrottuna kerrosten määrällä. Jokainen puoliintumispaksuus kertoo läpäisevän osuuden luvulla $\\tfrac{1}{2}$, joten osuus on $\\left(\\tfrac{1}{2}\\right)^{4{,}17}$ eikä $\\tfrac{1}{2 \\cdot 4{,}17}$."
+        }
+      ],
+      "solution": "**Annettu:** lyijyn puoliintumispaksuus $d_{1/2} = 0{,}12\\,\\text{mm}$ tälle säteilylle, esiliinan lyijykerroksen paksuus $d = 0{,}50\\,\\text{mm}$, kapea säde\n\n**Kysytty:** läpäisevän säteilyn osuus $\\tfrac{I}{I_0}$ prosentteina\n\n**Periaate:** Röntgensäteily on fotonisäteilyä kuten gammasäteily: jokaisella fotonilla on jokaisessa ohuessa lyijykerroksessa sama todennäköisyys vuorovaikuttaa, joten jokainen puoliintumispaksuus puolittaa intensiteetin. Pienienerginen röntgensäteily vaimenee lyijyssä paljon tehokkaammin kuin cesium-137:n gammasäteily, minkä vuoksi ohut kerros riittää.\n\n**Kaava:** $I = I_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$, josta $\\dfrac{I}{I_0} = \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$\n\n**Muunnokset:** Ei tarvita: molemmat paksuudet ovat millimetreinä. Osuus muutetaan lopuksi prosenteiksi: $1 = 100\\,\\%$.\n\n**Sijoitus:** $\\dfrac{I}{I_0} = \\left(\\tfrac{1}{2}\\right)^{0{,}50\\,\\text{mm} / 0{,}12\\,\\text{mm}} = \\left(\\tfrac{1}{2}\\right)^{4{,}1667} = 0{,}055681 = 5{,}5681\\,\\%$\n\n**Vastaus:** $5{,}6\\,\\%$, kaksi merkitsevää numeroa kuten paksuuksissa $0{,}50\\,\\text{mm}$ ja $0{,}12\\,\\text{mm}$.\n\n**Järkevyys:** Neljä puoliintumispaksuutta päästäisi läpi $\\left(\\tfrac{1}{2}\\right)^{4} = 6{,}25\\,\\%$ ja viisi $3{,}1\\,\\%$. Esiliinassa on hieman yli neljä puoliintumispaksuutta, joten tulos on vähän alle $6{,}25\\,\\%$, kuten pitää."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä yhtälöä, tason 2 tehtävissä yhdistetään kaksi vaihetta tai muunnetaan yksiköitä, ja taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Radonin hajoamistuotteet jäävät hengitettäessä keuhkoputkien pinnalle ja lähettävät alfasäteilyä. Miksi alfasäteily on keuhkoissa vaarallisempaa kuin yhtä suuren energian gammasäteily, vaikka paperiarkki pysäyttää sen?",
+      "choices": [
+        {
+          "text": "Alfahiukkanen luovuttaa koko energiansa muutaman solun matkalle, joten ionisaatiot ja DNA-vauriot ovat tiheässä.",
+          "correct": true,
+          "feedback": "Oikein. Tiheä ionisaatio voi katkaista DNA:n molemmat juosteet lähekkäin, ja tällaista vauriota solu korjaa huonosti. Gammafotoni jakaa saman energian harvoina ionisaatioina pitkälle matkalle, osa kehon ulkopuolelle asti."
+        },
+        {
+          "text": "Alfasäteily tekee keuhkokudoksesta radioaktiivista, ja kudos alkaa itse säteillä.",
+          "feedback": "Alfasäteily ionisoi atomeja mutta ei muuta kudoksen ytimiä radioaktiivisiksi. Haitta johtuu siitä, että alfahiukkanen luovuttaa koko energiansa muutaman solun matkalle: ionisaatiot ja DNA-vauriot ovat tiheässä."
+        },
+        {
+          "text": "Kudoksessa alfahiukkasen läpäisykyky kasvaa, joten se ehtii kulkea koko keuhkon läpi.",
+          "feedback": "Kudos on paljon tiheämpää kuin ilma, joten alfahiukkanen pysähtyy siinä noin $0{,}04\\,\\text{mm}$:n matkalla. Vaarallisuus johtuu juuri lyhyestä matkasta: kaikki energia keskittyy muutamaan soluun."
+        },
+        {
+          "text": "Alfahiukkasella on aina paljon enemmän energiaa kuin gammafotonilla, joten se tekee enemmän ionisaatioita.",
+          "feedback": "Kysymyksessä energiat ovat yhtä suuret, ja gammafotonin energia voi olla jopa suurempi kuin alfahiukkasen. Ratkaisevaa on, kuinka *tiheään* ionisaatiot osuvat: alfahiukkanen luovuttaa energiansa muutaman solun matkalle."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Lue puoliintumispaksuus kuvaajasta",
+      "figure": "fy8-12/tuntematon",
+      "prompt": "Gammalähteen ja GM-putken väliin on lisätty tuntemattoman aineen levyjä. Kuvaajassa on nettopulssitaajuus, josta taustasäteily on vähennetty, levyjen kokonaispaksuuden $d$ funktiona. Lue kuvaajasta aineen puoliintumispaksuus tälle säteilylle. Vastaa millimetreinä.",
+      "answer": 12,
+      "unit": "mm",
+      "tolerance": 0.06,
+      "hints": [
+        "Mikä on pulssitaajuus, kun levyjä ei ole? Entä puolet siitä?",
+        "Etsi kohta, jossa käyrä on puolessa alkuarvostaan, ja lue paksuus vaaka-akselilta.",
+        "Alkuarvo on $800$ pulssia minuutissa, joten etsi kohta, jossa käyrä on $400$ pulssin kohdalla."
+      ],
+      "mistakes": [
+        {
+          "value": 24,
+          "feedback": "Luit paksuuden, jossa pulssitaajuus on neljäsosa alkuarvosta, $200$ pulssia minuutissa. Se on kaksi puoliintumispaksuutta. Puoliintumispaksuus on paksuus, jolla pulssitaajuus on puolet alkuarvosta."
+        },
+        {
+          "value": 400,
+          "feedback": "Tämä on puolet alkuarvosta pulsseina minuutissa. Kysytty on paksuus, jolla pulssitaajuus pienenee tähän arvoon: lue se vaaka-akselilta."
+        }
+      ],
+      "solution": "**Annettu:** kuvaajan nettopulssitaajuus levyjen paksuuden $d$ funktiona, ruudukon väli $2\\,\\text{mm}$ ja $50$ pulssia minuutissa\n\n**Kysytty:** puoliintumispaksuus $d_{1/2}$ millimetreinä\n\n**Periaate:** Nettopulssitaajuus on verrannollinen GM-putkeen osuvan gammasäteilyn intensiteettiin, ja jokainen puoliintumispaksuus puolittaa sen. Puoliintumispaksuus on siis paksuus, jolla pulssitaajuus on pudonnut puoleen alkuarvosta.\n\n**Kuvaajan lukeminen:** Kun $d = 0$, käyrä alkaa arvosta $800$ pulssia minuutissa. Puolet siitä on $400$ pulssia minuutissa. Vaakasuora $400$:n viiva osuu käyrään kohdassa $d = 12\\,\\text{mm}$. Tarkistus: $200$ pulssin kohdalla käyrä on paksuudella $24\\,\\text{mm}$.\n\n**Kaava:** $I = I_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$; kun $I = \\tfrac{1}{2} I_0$, eksponentti on $\\tfrac{d}{d_{1/2}} = 1$, joten $d_{1/2} = d$\n\n**Muunnokset:** Ei tarvita: paksuus luetaan suoraan millimetreinä.\n\n**Sijoitus:** $\\tfrac{1}{2} I_0 = \\tfrac{1}{2} \\cdot 800\\,\\tfrac{1}{\\text{min}} = 400\\,\\tfrac{1}{\\text{min}}$, joka saavutetaan paksuudella $d = 12\\,\\text{mm}$, joten $d_{1/2} = 12\\,\\text{mm}$\n\n**Vastaus:** $12\\,\\text{mm}$, kaksi merkitsevää numeroa, koska kuvaajasta voi lukea paksuuden noin puolen millimetrin tarkkuudella.\n\n**Järkevyys:** Kahden puoliintumispaksuuden eli $24\\,\\text{mm}$:n kohdalla pulssitaajuuden pitäisi olla $200$ ja neljän eli $48\\,\\text{mm}$:n kohdalla $50$ pulssia minuutissa; kuvaaja täsmää molempiin. Arvo on sama kuin raudan puoliintumispaksuus cesium-137:n gammasäteilylle."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: mitä GM-mittari kertoo?",
+      "optional": true,
+      "prompt": "GM-mittari naksuttaa tuntemattoman säteilylähteen lähellä. Miksi pelkästä pulssimäärästä ei voi päätellä, onko säteily alfa-, beeta- vai gammasäteilyä? Miten säteilylajin voi selvittää samalla mittarilla?",
+      "model": "GM-putkessa jokainen kaasuun osuva ionisoiva hiukkanen irrottaa ainakin yhden elektronin. Langan lähellä voimakas sähkökenttä kiihdyttää elektroneja niin, että syntyy elektronivyöry, ja vyöry on aina samankokoinen riippumatta siitä, mikä hiukkanen sen aloitti ja kuinka paljon energiaa sillä oli. Siksi jokainen tapahtuma näkyy samanlaisena pulssina, ja mittari vain laskee tapahtumia. Säteilylajin voi selvittää esteillä: jos pulssimäärä putoaa taustan tasolle paperiarkin taakse, säteily on alfasäteilyä. Jos se läpäisee paperin mutta pysähtyy muutamaan millimetriin alumiinia, se on beetasäteilyä. Jos se läpäisee alumiinin ja vaimenee vähitellen lyijyssä, se on gammasäteilyä. Jokaisesta lukemasta on vähennettävä taustasäteily.",
+      "criteria": [
+        "Selitän, että jokainen ionisoiva tapahtuma laukaisee samanlaisen elektronivyöryn, joten pulssi ei kerro säteilyn lajia eikä energiaa.",
+        "Kerron, että säteilylaji päätellään esteillä: paperi pysäyttää alfan, muutama millimetri alumiinia beetan, ja gamma vaimenee lyijyssä.",
+        "Mainitsen, että lukemista on vähennettävä taustasäteily."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

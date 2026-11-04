@@ -1,0 +1,370 @@
+{
+  "version": 1,
+  "contribution": "Kosmologia kvanttifysiikan ja ydinfysiikan sovelluksena: galaksien punasiirtymä $z = \\tfrac{\\Delta\\lambda}{\\lambda_0}$ vedyn tutuista spektriviivoista, pienen punasiirtymän nopeus $v = cz$, Hubblen ja Lemaîtren laki $v = H_0\\,d$, jonka opiskelija sovittaa itse simulaation galakseihin, iän arvio $\\tfrac{1}{H_0}$, kosminen taustasäteily atomien synnyn seurauksena, alkuräjähdyksen ytimet ja heliumin osuus fuusiosta, tähtien alkuaineet sidosenergiakäyrän avulla sekä pimeä aine ja pimeä energia avoimina kysymyksinä.",
+  "learn": [
+    "laskemaan galaksin punasiirtymän, etääntymisnopeuden ja etäisyyden Hubblen ja Lemaîtren lailla.",
+    "arvioimaan maailmankaikkeuden iän Hubblen vakiosta ja selittämään, mitä taustasäteily kertoo varhaisesta maailmankaikkeudesta.",
+    "selittämään, missä vaiheissa vety, helium ja raskaammat alkuaineet syntyivät."
+  ],
+  "prior": [
+    "Atomi absorboi ja lähettää vain fotoneja, joiden energia on kahden energiatason erotus, joten jokaisella alkuaineella on omat spektriviivansa (luku *Spektrit paljastavat atomin energiatasot*)",
+    "Kevyiden ytimien fuusio vapauttaa energiaa, koska sidosenergia nukleonia kohti kasvaa rautaan asti (luku *Fissio, fuusio ja ydinvoima*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kaukaisen galaksin valon spektrissä näkyvät vedyn tutut absorptioviivat, mutta ne ovat väärissä kohdissa. Punainen viiva, joka laboratoriossa on aallonpituudella $656{,}3\\,\\text{nm}$, näkyy aallonpituudella $669{,}4\\,\\text{nm}$, ja sinivihreä viiva on siirtynyt $486{,}1\\,\\text{nm}$:stä $495{,}8\\,\\text{nm}$:iin. Siirtymät ovat eri suuret, mutta kumpikin on $2{,}0\\,\\%$ viivan omasta aallonpituudesta. Lähes jokaisen galaksin viivat ovat siirtyneet samalla tavalla pidempiin aallonpituuksiin.",
+      "question": "Mitä viivojen siirtymä kertoo galakseista, ja mitä siitä voi päätellä maailmankaikkeuden menneisyydestä?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Kertaa: absorptioviivat",
+      "prompt": "Kun valkoinen valo kulkee vetykaasun läpi, spektriin jää tummia viivoja täsmälleen tietyille aallonpituuksille. Miksi juuri niille?",
+      "choices": [
+        {
+          "text": "Vetyatomi absorboi vain fotoneja, joiden energia on kahden sen energiatason erotus.",
+          "correct": true,
+          "feedback": "Oikein. Energiatasot ovat kvantittuneet, joten absorboituvien fotonien energiat ja aallonpituudet ovat vedylle ominaiset (luku *Spektrit paljastavat atomin energiatasot*). Siksi vedyn viivat tunnistetaan myös galaksin valosta, vaikka ne olisivat siirtyneet."
+        },
+        {
+          "text": "Vetykaasu absorboi kaikkia aallonpituuksia, mutta näitä vähän enemmän kuin muita.",
+          "feedback": "Kaasu ei vaimenna kaikkia aallonpituuksia tasaisesti. Atomi absorboi vain fotonin, jonka energia vastaa täsmälleen kahden energiatason erotusta, joten muut aallonpituudet kulkevat kaasun läpi (luku *Spektrit paljastavat atomin energiatasot*)."
+        },
+        {
+          "text": "Vetyatomin elektroni absorboi fotonin aina, kun sen energia riittää ionisointiin.",
+          "feedback": "Ionisoiva fotoni voi olla minkä energinen tahansa, joten se ei tuottaisi kapeita viivoja. Viivat syntyvät siirtymistä energiatasolta toiselle: fotonin energian on oltava täsmälleen tasojen erotus (luku *Spektrit paljastavat atomin energiatasot*)."
+        },
+        {
+          "text": "Vetykaasun väri määrää, mitkä aallonpituudet jäävät pois valon spektristä.",
+          "feedback": "Ohut vetykaasu on lähes väritöntä. Tummat viivat johtuvat atomin kvantittuneista energiatasoista: atomi absorboi vain fotonin, jonka energia on kahden tason erotus (luku *Spektrit paljastavat atomin energiatasot*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: punasiirtymä ja etäisyys",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 4
+      },
+      "prompt": "Galaksien etäisyydet tunnetaan muista mittauksista. Miten galaksin punasiirtymä ja sitä vastaava etääntymisnopeus riippuvat galaksin etäisyydestä?",
+      "choices": [
+        {
+          "text": "Ne kasvavat suoraan verrannollisesti etäisyyteen: kaksi kertaa kauempana, kaksi kertaa nopeammin.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: galaksi 2 on $45\\,\\text{Mpc}$:n päässä ja loittonee $2840\\,\\text{km/s}$, galaksi 4 on $110\\,\\text{Mpc}$:n päässä ja loittonee $7560\\,\\text{km/s}$, ja galaksi 8 on $275\\,\\text{Mpc}$:n päässä ja loittonee $19\\,030\\,\\text{km/s}$. Pisteet ovat lähellä origon kautta kulkevaa suoraa."
+        },
+        {
+          "text": "Kaikilla galakseilla on suunnilleen sama punasiirtymä, koska ne loittonevat yhtä nopeasti.",
+          "feedback": "Mallin arvot kumoavat tämän: galaksin 1 punasiirtymä on $0{,}0060$ ja galaksin 8 punasiirtymä $0{,}0635$, yli kymmenkertainen. Kaukaisempi galaksi loittonee nopeammin, koska avaruuden laajeneminen kasvattaa suurta etäisyyttä enemmän kuin pientä."
+        },
+        {
+          "text": "Lähimmillä galakseilla on suurin punasiirtymä, ja kaukaiset galaksit loittonevat hitaammin.",
+          "feedback": "Mallin arvot kumoavat tämän: lähin galaksi 1 loittonee $1800\\,\\text{km/s}$ ja kaukaisin galaksi 8 $19\\,030\\,\\text{km/s}$. Nopeus kasvaa etäisyyden mukana, ei pienene."
+        },
+        {
+          "text": "Punasiirtymällä ja etäisyydellä ei ole yhteyttä, koska galaksit liikkuvat satunnaisesti.",
+          "feedback": "Mallin arvot kumoavat tämän: pisteet nousevat selvästi etäisyyden mukana. Galakseilla on myös omaa liikettä, muutamia satoja kilometrejä sekunnissa, ja se hajottaa pisteitä hieman suoran ympärille, mutta kaukaisilla galakseilla laajeneminen hallitsee."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "layout": "models",
+      "title": "Ennuste 2: olemmeko keskipisteessä?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet lukenut Teoriatiivistelmän kohdan Maailmankaikkeus laajenee."
+      },
+      "prompt": "Lähes kaikki galaksit loittonevat meistä, ja sitä nopeammin, mitä kauempana ne ovat. Mikä selitys sopii havaintoon?",
+      "choices": [
+        {
+          "text": "Linnunrata on keskipisteessä, josta alkuräjähdys lähti, ja muut galaksit lentävät siitä poispäin.",
+          "feedback": "Havainto ei vaadi meitä keskipisteeseen. Kun avaruus laajenee tasaisesti, mistä tahansa galaksista katsottuna kaikki muut loittonevat nopeudella, joka on verrannollinen etäisyyteen. Alkuräjähdys ei ollut räjähdys yhdessä pisteessä, vaan avaruus alkoi laajeta kaikkialla."
+        },
+        {
+          "text": "Avaruus laajenee kaikkialla, joten mistä tahansa galaksista katsottuna muut loittonevat samalla tavalla.",
+          "correct": true,
+          "feedback": "Oikein. Kun kaikki etäisyydet kasvavat samassa suhteessa, kaksi kertaa kauempana oleva galaksi siirtyy samassa ajassa kaksi kertaa pidemmän matkan, olipa tarkastelija missä galaksissa tahansa. Laajenemisella ei ole keskipistettä."
+        },
+        {
+          "text": "Linnunradan painovoima hylkii muita galakseja, ja hylkiminen on sitä suurempi, mitä kauempana ne ovat.",
+          "feedback": "Painovoima vetää kappaleita toisiaan kohti eikä hylji niitä, ja se heikkenee etäisyyden kasvaessa. Galaksit loittonevat, koska avaruus itse laajenee; painovoima päinvastoin pitää galaksit ja galaksijoukot koossa."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse galaksi. Vertaa sen vedyn viivoja laboratorion viivoihin, ja kokoa kuvaajaan galaksien nopeudet etäisyyden funktiona. Sovita lopuksi pisteisiin origon kautta kulkeva suora.",
+      "howto": "Valitse *Galaksi*-valikosta galaksi $1$–$8$. Karttaan galaksi on rengastettu, ja siitä Linnunrataan kulkee valoaalto, jonka aallonpituus venyy matkalla. Spektrikuvassa ylempänä ovat vedyn absorptioviivat laboratoriossa ja alempana samat viivat galaksin valossa; katkoviiva näyttää punaisen $\\text{H}\\alpha$-viivan siirtymän. Lukemissa ovat galaksin etäisyys $d$, $\\text{H}\\alpha$-viivan aallonpituus ja siirtymä $\\Delta\\lambda$, punasiirtymä $z$ ja nopeus $v$. Jokainen valitsemasi galaksi jättää kuvaajaan pisteen $(d, v)$. Liukusäädin *Suoran kulmakerroin $H_0$* kääntää origon kautta kulkevaa suoraa $v = H_0\\,d$: säädä se kulkemaan pisteiden keskeltä. *Nopeus* muuttaa vain valoaallon liikettä, ja *Tyhjennä kuvaaja* poistaa pisteet.",
+      "model": "Galaksit ja niiden etäisyydet ovat keksittyjä, mutta niiden nopeudet noudattavat Hubblen ja Lemaîtren lakia, johon on lisätty jokaiselle galaksille oma, muutaman sadan kilometrin sekuntinopeus. Etäisyydet oletetaan tunnetuiksi tarkasti, kuten ne olisi mitattu esimerkiksi supernovien kirkkaudesta. Punasiirtymät ovat pieniä, alle $0{,}1$, joten nopeus on $v = cz$. Kartta näyttää galaksien suunnat ja etäisyydet suunnilleen oikeassa suhteessa, ja valoaallon venyminen on liioiteltu kahdeksankertaiseksi. Lukemat ovat mallin arvoja eivätkä mittauksia.",
+      "calc": "Jokainen vedyn viiva näkyy aallonpituudella $\\lambda = \\lambda_0\\,(1 + z)$, joten punasiirtymä on $z = \\tfrac{\\Delta\\lambda}{\\lambda_0}$ ja nopeus $v = cz$, missä $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$. Laboratorion aallonpituudet ovat $\\text{H}\\alpha$ $656{,}3\\,\\text{nm}$, $\\text{H}\\beta$ $486{,}1\\,\\text{nm}$, $\\text{H}\\gamma$ $434{,}0\\,\\text{nm}$ ja $\\text{H}\\delta$ $410{,}2\\,\\text{nm}$. Suoran kulmakertoimesta lasketaan aika $\\tfrac{1}{H_0}$ sijoittamalla $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$; se näytetään miljardeina vuosina."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe: punasiirtymä ja etäisyys",
+      "intro": "Testaa ennuste 1. Valitse galaksit vuorotellen ja kirjaa jokaisesta etäisyys $d$, $\\text{H}\\alpha$-viivan siirtymä $\\Delta\\lambda$, punasiirtymä $z$ ja nopeus $v$, ainakin viidestä galaksista, mieluiten kaikista kahdeksasta. Katso, miten pisteet asettuvat kuvaajaan.",
+      "initial": {
+        "galaksi": "1",
+        "H0": 50
+      },
+      "locked": [],
+      "vary": "galaksi",
+      "min": 5,
+      "names": {
+        "galaksi": "galaksi",
+        "H0": "H₀"
+      },
+      "values": {
+        "galaksi": {
+          "1": "galaksi 1",
+          "2": "galaksi 2",
+          "3": "galaksi 3",
+          "4": "galaksi 4",
+          "5": "galaksi 5",
+          "6": "galaksi 6",
+          "7": "galaksi 7",
+          "8": "galaksi 8"
+        }
+      },
+      "units": {
+        "H0": "km/s/Mpc"
+      },
+      "measure": [
+        {
+          "key": "d",
+          "label": "d (Mpc)"
+        },
+        {
+          "key": "dlam",
+          "label": "Δλ (nm)"
+        },
+        {
+          "key": "z",
+          "label": "z"
+        },
+        {
+          "key": "v",
+          "label": "v (km/s)"
+        }
+      ],
+      "question": {
+        "type": "numeric",
+        "prompt": "Säädä liukusäädintä $H_0$, kunnes suora kulkee pisteiden keskeltä niin, että pisteitä jää suunnilleen yhtä paljon suoran kummallekin puolelle. Mikä on sovituksesi antama Hubblen vakio yksikössä $\\tfrac{\\text{km/s}}{\\text{Mpc}}$?",
+        "answer": 70,
+        "unit": "km/s/Mpc",
+        "tolerance": 0.07,
+        "hints": [
+          "Suoran pitää kulkea origon kautta, koska omalla galaksillamme ($d = 0$) ei ole etääntymisnopeutta.",
+          "Älä yritä osua yhteen pisteeseen: kaukaisimmat galaksit määräävät kulmakertoimen tarkimmin, koska niiden oma liike on pieni verrattuna laajenemisnopeuteen.",
+          "Tarkista sovituksesi laskemalla kaukaisimman galaksin nopeuden ja etäisyyden suhde: $19\\,030\\,\\text{km/s} : 275\\,\\text{Mpc}$."
+        ],
+        "mistakes": [
+          {
+            "value": 50,
+            "feedback": "Tämä on liukusäätimen alkuarvo. Suora jää selvästi pisteiden alapuolelle: säädä kulmakerrointa suuremmaksi, kunnes pisteitä on suoran molemmin puolin."
+          },
+          {
+            "value": 0.0143,
+            "feedback": "Laskit etäisyyden ja nopeuden suhteen. Hubblen vakio on nopeus jaettuna etäisyydellä, $H_0 = \\tfrac{v}{d}$."
+          }
+        ],
+        "solution": "**Annettu:** simulaation kahdeksan galaksin mallin arvot, esimerkiksi galaksi 4: $d = 110\\,\\text{Mpc}$, $v = 7560\\,\\text{km/s}$ ja galaksi 8: $d = 275\\,\\text{Mpc}$, $v = 19\\,030\\,\\text{km/s}$\n\n**Kysytty:** Hubblen vakio $H_0$ eli sovitetun suoran kulmakerroin yksikössä $\\tfrac{\\text{km/s}}{\\text{Mpc}}$\n\n**Periaate:** Hubblen ja Lemaîtren lain $v = H_0\\,d$ kuvaaja on origon kautta kulkeva suora, koska etäisyydellä nolla ei ole laajenemisnopeutta. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla; tässä hajonta johtuu galaksien omasta liikkeestä. Siksi kulmakerroin luetaan sovitetulta suoralta eikä kahdesta vierekkäisestä pisteestä.\n\n**Kuvaajan lukeminen:** Kun $H_0$ on noin $70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$, suora kulkee pisteiden keskeltä: galaksit 1, 3, 5 ja 7 ovat hieman suoran yläpuolella ja galaksit 2, 4, 6 ja 8 hieman alapuolella. Suoralta luetaan piste etäisyydellä $d = 200\\,\\text{Mpc}$, jossa $v = 14\\,000\\,\\text{km/s}$.\n\n**Kaava:** $v = H_0\\,d$, joten $H_0 = \\dfrac{v}{d}$\n\n**Muunnokset:** Ei tarvita: nopeus on kilometreinä sekunnissa ja etäisyys megaparsekeina, kuten kysytyssä yksikössä.\n\n**Sijoitus:** $H_0 = \\dfrac{14\\,000\\,\\text{km/s}}{200\\,\\text{Mpc}} = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$\n\n**Vastaus:** noin $70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$; silmämääräinen sovitus antaa kaksi merkitsevää numeroa, ja muutaman yksikön ero on hyväksyttävä.\n\n**Järkevyys:** Kaukaisimmasta galaksista $19\\,030 : 275 \\approx 69$ ja galaksista 4 $7560 : 110 \\approx 69$, lähellä sovitusta. Pienimmän neliösumman suora origon kautta antaa $69{,}8\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Lukemissa $\\tfrac{1}{H_0} \\approx 14 \\cdot 10^{9}\\,\\text{a}$, lähellä maailmankaikkeuden ikää $13{,}8$ miljardia vuotta."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: Hubblen ja Lemaîtren laki",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "Kirjoita taulukkosi ja kuvaajan perusteella: Miten galaksin nopeus riippuu sen etäisyydestä? Miksi pisteet eivät ole täsmälleen suoralla? Mitä sovittamasi suoran kulmakerroin $H_0$ ja aika $\\tfrac{1}{H_0}$ kertovat maailmankaikkeudesta?",
+      "model": "Mallin arvoina nopeus kasvaa suoraan verrannollisesti etäisyyteen: galaksi 2 ($45\\,\\text{Mpc}$) loittonee $2840\\,\\text{km/s}$, galaksi 4 ($110\\,\\text{Mpc}$) $7560\\,\\text{km/s}$ ja galaksi 8 ($275\\,\\text{Mpc}$) $19\\,030\\,\\text{km/s}$. Pisteet ovat lähellä origon kautta kulkevaa suoraa $v = H_0\\,d$, jonka kulmakerroin on noin $70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Pisteet poikkeavat suorasta muutamia satoja kilometrejä sekunnissa, koska galakseilla on myös omaa liikettään; kaukaisilla galakseilla se on pieni verrattuna laajenemisnopeuteen. Suhteellisuus tarkoittaa, että kaikki etäisyydet kasvavat samassa suhteessa eli avaruus laajenee. Jos laajenemisnopeus olisi pysynyt samana, kaikki galaksit olisivat olleet samassa paikassa ajan $\\tfrac{1}{H_0} \\approx 14$ miljardia vuotta sitten.",
+      "criteria": [
+        "Kuvaan mallin arvoilla, että nopeus on suoraan verrannollinen etäisyyteen ja pisteet ovat lähellä origon kautta kulkevaa suoraa.",
+        "Selitän pisteiden hajonnan galaksien omalla liikkeellä.",
+        "Annan sovitukseni kulmakertoimen yksikön kanssa ja tulkitsen ajan $\\tfrac{1}{H_0}$ maailmankaikkeuden iän arvioksi.",
+        "Kutsun simulaation lukuja mallin arvoiksi enkä omiksi mittauksiksi."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeen mallin arvoihin ja teoriaan. Palaa sitten alun kysymykseen: mitä galaksien punasiirtymä kertoo maailmankaikkeuden menneisyydestä, ja miksi se ei tarkoita, että olisimme keskipisteessä?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija arvioi maailmankaikkeuden iän, kun $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Hän sijoittaa $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{22}\\,\\text{m}$ ja kirjoittaa\n\n$$\\begin{aligned} &t = \\frac{1}{H_0} = \\frac{3{,}086 \\cdot 10^{22}}{70}\\,\\text{s} \\\\ &= 4{,}4 \\cdot 10^{20}\\,\\text{s} \\\\ &\\approx 1{,}4 \\cdot 10^{13}\\,\\text{a} \\end{aligned}$$\n\nTulos on tuhat kertaa liian suuri. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Megaparsek on muutettu metreiksi, mutta nopeus on yhä kilometreinä sekunnissa.",
+          "correct": true,
+          "feedback": "Oikein. Yksiköiden on supistuttava: kun $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$ jaetaan nopeudella $70\\,\\text{km/s}$, saadaan $4{,}4 \\cdot 10^{17}\\,\\text{s} \\approx 1{,}4 \\cdot 10^{10}\\,\\text{a}$. Kun yksiköt kirjoitetaan sijoitukseen näkyviin, virhe paljastuu: $\\tfrac{\\text{m}}{\\text{km/s}}$ ei ole sekunti."
+        },
+        {
+          "text": "Iän arvio on $\\tfrac{1}{2H_0}$ eikä $\\tfrac{1}{H_0}$, joten tulos pitää puolittaa.",
+          "feedback": "Arvio $t = \\tfrac{d}{v} = \\tfrac{1}{H_0}$ olettaa vakionopeuden, ja se on tässä tarkoitus. Puolittaminen ei korjaisi tuhatkertaista virhettä. Virhe on yksiköissä: megaparsek on metreinä mutta nopeus kilometreinä sekunnissa."
+        },
+        {
+          "text": "Sekunnit on muutettu vuosiksi väärin, sillä vuodessa on $3{,}156 \\cdot 10^{4}\\,\\text{s}$.",
+          "feedback": "Vuodessa on $365 \\cdot 24 \\cdot 3600\\,\\text{s} \\approx 3{,}156 \\cdot 10^{7}\\,\\text{s}$, joten muunnos vuosiksi on oikein. Virhe tulee ennen sitä: megaparsek on muutettu metreiksi, vaikka nopeus on kilometreinä sekunnissa."
+        },
+        {
+          "text": "Hubblen vakio olisi pitänyt ensin kertoa valon nopeudella $c$.",
+          "feedback": "Valon nopeutta tarvitaan, kun nopeus lasketaan punasiirtymästä, $v = cz$, mutta ei iän arviossa $t = \\tfrac{1}{H_0}$. Virhe on yksiköissä: megaparsek on metreinä mutta nopeus kilometreinä sekunnissa."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Siirrä: kalsiumin viiva",
+      "prompt": "Galaksien spektreissä näkyy vedyn lisäksi muiden alkuaineiden viivoja. Kalsiumionin violetin K-viivan aallonpituus laboratoriossa on $393{,}4\\,\\text{nm}$. Galaksijoukon galaksien valossa viiva näkyy aallonpituudella $401{,}3\\,\\text{nm}$. Kuinka kaukana galaksijoukko on, kun $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ ja $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$? Vastaa megaparsekeina.",
+      "answer": 86.0,
+      "unit": "Mpc",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä suure kertoo, kuinka paljon viiva on siirtynyt suhteessa omaan aallonpituuteensa? Tarvitset siihen laboratorion aallonpituuden.",
+        "Punasiirtymästä saat nopeuden $v = cz$, ja Hubblen ja Lemaîtren laista $v = H_0\\,d$ etäisyyden.",
+        "Siirtymä on $\\Delta\\lambda = 7{,}9\\,\\text{nm}$, joten $z = \\tfrac{7{,}9\\,\\text{nm}}{393{,}4\\,\\text{nm}} = 0{,}020081$."
+      ],
+      "mistakes": [
+        {
+          "value": 84.3,
+          "feedback": "Jaoit siirtymän galaksin valosta mitatulla aallonpituudella $401{,}3\\,\\text{nm}$. Punasiirtymä lasketaan suhteessa laboratorion aallonpituuteen: $z = \\tfrac{\\Delta\\lambda}{\\lambda_0}$, missä $\\lambda_0 = 393{,}4\\,\\text{nm}$."
+        },
+        {
+          "value": 86000,
+          "feedback": "Käytit valon nopeutta metreinä sekunnissa. Koska Hubblen vakio on yksikössä $\\tfrac{\\text{km/s}}{\\text{Mpc}}$, nopeuden on oltava kilometreinä sekunnissa: $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$."
+        },
+        {
+          "value": 6020,
+          "feedback": "Tämä on galaksijoukon etääntymisnopeus kilometreinä sekunnissa. Etäisyys saadaan jakamalla se Hubblen vakiolla: $d = \\tfrac{v}{H_0}$."
+        }
+      ],
+      "solution": "**Annettu:** kalsiumin K-viiva laboratoriossa $\\lambda_0 = 393{,}4\\,\\text{nm}$ ja galaksijoukon valossa $\\lambda = 401{,}3\\,\\text{nm}$, $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$, $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$\n\n**Kysytty:** galaksijoukon etäisyys $d$ megaparsekeina\n\n**Periaate:** Punasiirtymä on sama jokaiselle alkuaineen viivalle, joten myös kalsiumin viivasta saadaan $z = \\tfrac{\\Delta\\lambda}{\\lambda_0}$. Punasiirtymä on pieni, joten nopeus on $v = cz$, ja Hubblen ja Lemaîtren lain mukaan etäisyys on nopeus jaettuna Hubblen vakiolla.\n\n**Kaava:** $z = \\dfrac{\\lambda - \\lambda_0}{\\lambda_0}$, $v = cz$ ja $v = H_0\\,d$, joten $d = \\dfrac{c\\,(\\lambda - \\lambda_0)}{H_0\\,\\lambda_0}$\n\n**Muunnokset:** Ei tarvita: nanometrit supistuvat punasiirtymästä, ja kun valon nopeus on kilometreinä sekunnissa, kilometrit sekunnissa supistuvat ja etäisyys saadaan megaparsekeina.\n\n**Sijoitus:** $z = \\dfrac{401{,}3\\,\\text{nm} - 393{,}4\\,\\text{nm}}{393{,}4\\,\\text{nm}} = \\dfrac{7{,}9\\,\\text{nm}}{393{,}4\\,\\text{nm}} = 0{,}020081$, $v = 2{,}998 \\cdot 10^{5}\\,\\text{km/s} \\cdot 0{,}020081 = 6020\\,\\text{km/s}$ ja $d = \\dfrac{6020\\,\\text{km/s}}{70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}} = 86{,}0\\,\\text{Mpc}$\n\n**Vastaus:** $86\\,\\text{Mpc}$, kaksi merkitsevää numeroa kuten siirtymässä $7{,}9\\,\\text{nm}$ ja Hubblen vakiossa $70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$.\n\n**Järkevyys:** Siirtymä on noin $2\\,\\%$ aallonpituudesta, joten nopeus on noin $2\\,\\%$ valon nopeudesta eli $6000\\,\\text{km/s}$, ja $6000 : 70 \\approx 86$. Etäisyys on samaa suuruusluokkaa kuin lähimpien suurten galaksijoukkojen, noin $100\\,\\text{Mpc}$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä yhtälöä, tason 2 tehtävissä yhdistetään kaksi yhtälöä tai muunnetaan yksiköitä, ja taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Kosminen taustasäteily vapautui noin $380\\,000$ vuotta alkuräjähdyksen jälkeen, kun kaasun lämpötila oli noin $3000\\,\\text{K}$. Miksi se havaitaan nyt mikroaaltoina eikä näkyvänä tai infrapunavalona?",
+      "choices": [
+        {
+          "text": "Maailmankaikkeuden laajeneminen on venyttänyt sen aallonpituudet noin $1100$-kertaisiksi.",
+          "correct": true,
+          "feedback": "Oikein. Säteily vapautui lähi-infrapunana ja punaisena valona, mutta avaruuden laajeneminen on venyttänyt jokaista aallonpituutta matkan aikana. Nyt säteily vastaa kappaletta, jonka lämpötila on $2{,}725\\,\\text{K}$."
+        },
+        {
+          "text": "Säteily menettää energiaa törmäillessään matkalla galaksien välisiin kaasupilviin.",
+          "feedback": "Maailmankaikkeus muuttui läpinäkyväksi juuri silloin, kun atomit syntyivät, joten säteily on kulkenut lähes törmäilemättä. Aallonpituudet ovat kasvaneet, koska avaruus laajenee ja venyttää niitä."
+        },
+        {
+          "text": "Säteilyä lähettää nyt kylmä pöly, joka on jäähtynyt lähelle absoluuttista nollapistettä.",
+          "feedback": "Taustasäteily ei synny nyt, vaan se on vapautunut jo $380\\,000$ vuotta alkuräjähdyksen jälkeen. Kylmä pöly ei myöskään säteilisi lähes täsmälleen samalla tavalla joka suunnasta. Mikroaallot ovat alkuperäistä säteilyä, jonka laajeneminen on venyttänyt."
+        },
+        {
+          "text": "Linnunradan tähdet lähettävät mikroaaltoja, jotka peittävät alkuperäisen valon alleen.",
+          "feedback": "Linnunradan säteily keskittyy galaksin tason suuntaan, mutta taustasäteilyä tulee joka suunnasta lähes tasaisesti. Se on alkuräjähdyksen jälkeen vapautunutta säteilyä, jonka aallonpituudet laajeneminen on venyttänyt."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Lue Hubblen vakio kuvaajasta",
+      "figure": "fy8-16/hubble-t",
+      "prompt": "Kuvaajassa on yhdeksän galaksin etääntymisnopeus $v$ etäisyyden $d$ funktiona, ja pisteisiin on sovitettu origon kautta kulkeva suora. Mikä on kuvaajan mukainen Hubblen vakio yksikössä $\\tfrac{\\text{km/s}}{\\text{Mpc}}$?",
+      "answer": 72,
+      "unit": "km/s/Mpc",
+      "tolerance": 0.03,
+      "hints": [
+        "Hubblen vakio on suoran kulmakerroin, $H_0 = \\tfrac{v}{d}$.",
+        "Lue kulmakerroin sovitetun suoran pisteestä, ei yksittäisestä galaksista. Valitse suoralta piste, joka on ruudukon viivojen risteyksessä.",
+        "Suora kulkee pisteen $d = 250\\,\\text{Mpc}$, $v = 18\\,000\\,\\text{km/s}$ kautta."
+      ],
+      "mistakes": [
+        {
+          "value": 0.0139,
+          "feedback": "Jaoit etäisyyden nopeudella. Kulmakerroin on pystyakselin suure jaettuna vaaka-akselin suureella: $H_0 = \\tfrac{v}{d}$."
+        }
+      ],
+      "practice": "Harjoittele tason 1 tehtävissä, joissa käytetään Hubblen ja Lemaîtren lakia.",
+      "solution": "**Annettu:** kuvaaja galaksien nopeudesta $v$ etäisyyden $d$ funktiona ja pisteisiin sovitettu origon kautta kulkeva suora\n\n**Kysytty:** Hubblen vakio $H_0$ yksikössä $\\tfrac{\\text{km/s}}{\\text{Mpc}}$\n\n**Periaate:** Hubblen ja Lemaîtren lain $v = H_0\\,d$ mukaan Hubblen vakio on $(d, v)$-kuvaajan origon kautta kulkevan suoran kulmakerroin. Galaksien oma liike hajottaa pisteitä, joten kulmakerroin luetaan sovitetulta suoralta eikä yksittäisestä pisteestä.\n\n**Kuvaajan lukeminen:** Suora kulkee origon ja ruudukon pisteen $d = 250\\,\\text{Mpc}$, $v = 18\\,000\\,\\text{km/s}$ kautta. Origossa $v = 0$, joten kulmakerroin on näiden lukemien suhde.\n\n**Kaava:** $v = H_0\\,d$, joten $H_0 = \\dfrac{v}{d}$\n\n**Muunnokset:** Ei tarvita: nopeus on kilometreinä sekunnissa ja etäisyys megaparsekeina, kuten kysytyssä yksikössä.\n\n**Sijoitus:** $H_0 = \\dfrac{18\\,000\\,\\text{km/s}}{250\\,\\text{Mpc}} = 72\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$\n\n**Vastaus:** $72\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$, kaksi merkitsevää numeroa, jotka kuvaajasta voi lukea.\n\n**Järkevyys:** Toinen suoran piste, $d = 125\\,\\text{Mpc}$ ja $v = 9000\\,\\text{km/s}$, antaa saman kulmakertoimen. Arvo on lähellä tunnettua arvoa $70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$, ja sitä vastaava ikäarvio $\\tfrac{1}{H_0}$ on noin $13{,}6$ miljardia vuotta."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: mistä kulta tulee?",
+      "optional": true,
+      "prompt": "Kultasormuksen kulta-197-ytimissä on $197$ nukleonia. Miksi kultaa ei syntynyt alkuräjähdyksessä eikä Auringon kaltaisen tähden fuusiossa? Missä se syntyi? Käytä perustelussa sidosenergiakäyrää.",
+      "model": "Alkuräjähdyksen jälkeen fuusiota kesti vain noin $20$ minuuttia, ja siinä syntyi lähinnä heliumia. Tähdissä fuusio vapauttaa energiaa vain niin kauan kuin syntyvä ydin on tiiviimmin sidottu kuin lähtöytimet eli sidosenergia nukleonia kohti kasvaa. Sidosenergiakäyrän huippu on rauta-56:n kohdalla, noin $8{,}8\\,\\text{MeV}$, joten rautaa raskaampien ytimien muodostaminen fuusiolla vaatisi energiaa eikä vapauttaisi sitä. Auringon kaltainen tähti fuusioi lisäksi vain vetyä heliumiksi ja lopuksi heliumia hiileksi ja hapeksi. Kulta syntyi neutronisieppauksessa: kun ytimeen tarttuu nopeasti paljon neutroneja ja osa niistä muuttuu beeta miinus -hajoamisessa protoneiksi, syntyy raskaita ytimiä. Tällaista nopeaa neutronisieppausta tapahtuu supernovissa ja neutronitähtien törmäyksissä. Sormuksen kulta on siis syntynyt tähtien räjähdyksissä tai törmäyksissä ennen Aurinkokunnan syntyä.",
+      "criteria": [
+        "Selitän sidosenergiakäyrällä, että fuusio vapauttaa energiaa vain rautaan asti.",
+        "Totean, että alkuräjähdyksen fuusio kesti vain minuutteja ja tuotti lähinnä heliumia.",
+        "Nimeän neutronisieppauksen sekä supernovat tai neutronitähtien törmäykset kullan syntypaikoiksi."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

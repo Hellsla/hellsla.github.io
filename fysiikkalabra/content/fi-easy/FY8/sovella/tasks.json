@@ -1,0 +1,734 @@
+{
+  "intro": "Viisi tehtävää kokoaa moduulin asiat yhteen: fotonit ja atomin energiatasot, radioaktiivinen hajoaminen ja sen energia, säteilyn mittaaminen ja säteilyturvallisuus, perushiukkaset ja varhainen maailmankaikkeus sekä fissio ja ydinvoima. Jokaisessa tehtävässä päätät itse, mitkä mallit sopivat tilanteeseen. Perustelet myös valintasi.",
+  "tasks": [
+    {
+      "id": "fy8-s1",
+      "title": "Revontulet",
+      "source": "statistics",
+      "source_note": "Happiatomin energiatasot ja spektriviivat: NIST Atomic Spectra Database (tarkistettu 2026), pyöristetty. Viritystilojen elinajat ja revontulten korkeudet ovat kirjallisuuden tyypillisiä arvoja.",
+      "figure": "fy8-sovella/fy8-s1-levels",
+      "text": "Aurinkotuulen elektronit syöksyvät napa-alueilla yläilmakehään ja törmäävät happiatomeihin. Törmäys voi virittää happiatomin. Virittää tarkoittaa, että atomi saa lisää energiaa. Kun viritystila purkautuu, syntyy revontulten valoa. Revontulten tavallisimmat värit ovat vihreä $557{,}7\\,\\text{nm}$ ja punainen $630{,}0\\,\\text{nm}$. Molemmat syntyvät happiatomin kolmen alimman energiatason välisissä siirtymissä. Kuvassa ovat nämä energiatasot.\n\nPlanckin vakio on $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, valon nopeus on $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Mitkä siirtymät tuottavat vihreän ja punaisen valon? Perustele laskemalla. Näiden kolmen tason välillä on mahdollinen vielä yksi siirtymä. Laske sen tuottaman säteilyn aallonpituus. Voiko tätä säteilyä nähdä revontulissa?",
+          "answer": {
+            "value": 296,
+            "unit": "nm",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "text": "Laskee kummankin värin fotonin energian, $2{,}22\\,\\text{eV}$ ja $1{,}97\\,\\text{eV}$. Fotoni on valon hiukkanen. Yhdistää energiat kuvan tasojen erotukseen: vihreä syntyy siirtymässä ylemmästä viritystilasta alempaan ja punainen siirtymässä alemmasta viritystilasta perustilaan.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Fotonin energia on tasojen erotus. Aallonpituus saadaan kaavasta $E = \\dfrac{hc}{\\lambda}$, josta $\\lambda = \\dfrac{hc}{E}$. Kolmas siirtymä on ylemmästä viritystilasta suoraan perustilaan, jolloin $E = 4{,}19\\,\\text{eV}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\lambda \\approx 296\\,\\text{nm}$. Elektronivoltit on muutettu jouleiksi sijoittamalla."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Aallonpituus on ultraviolettialueella. Se on lyhyempi kuin näkyvän valon alaraja, joka on noin $380\\,\\text{nm}$. Silmä ei siis näe sitä."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Revontulia synnyttävän elektronin liike-energia on tyypillisesti noin $5\\,\\text{keV}$. Kuinka monta happiatomia yksi tällainen elektroni voi enintään virittää ylempään viritystilaan? Kirjoita myös, mitä oletit laskussa.",
+          "answer": {
+            "value": 1190,
+            "unit": "",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että elektroni menettää jokaisessa virittävässä törmäyksessä vähintään tasojen erotuksen $4{,}19\\,\\text{eV}$. Virityksiä on siis enintään liike-energian ja tämän energian osamäärä.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$5000\\,\\text{eV} : 4{,}19\\,\\text{eV} \\approx 1190$, kun on sijoitettu $1\\,\\text{keV} = 1000\\,\\text{eV}$."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Oletus: kaikki energia kuluu tähän viritykseen. Todellisuudessa osa energiasta kuluu ionisaatioon, typpimolekyylien virittämiseen ja muihin energiatasoihin. Ionisaatio tarkoittaa, että atomista irtoaa elektroni. Virityksiä on siis vähemmän."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Punaista revontulta syntyy enimmäkseen yli $200\\,\\text{km}$:n korkeudella. Vihreää revontulta syntyy noin $100$–$150\\,\\text{km}$:n korkeudella, jossa ilma on paljon tiheämpää. Ylempi viritystila purkautuu keskimäärin noin $0{,}7\\,\\text{s}$:n kuluttua viritymisestä. Alempi viritystila purkautuu vasta noin $110\\,\\text{s}$:n kuluttua. Selitä näiden tietojen avulla, miksi punaista valoa ei synny alempana. Selitä myös, miksi revontulten valon spektri koostuu erillisistä viivoista.",
+          "criteria": [
+            {
+              "text": "Selittää, että atomin energia voi olla vain tiettyjä arvoja. Fotonin energia ja siksi myös aallonpituus vastaa aina jonkin kahden tason erotusta. Spektrissä on siksi vain näitä viivoja.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että tiheässä ilmassa viritetty atomi törmää toiseen hiukkaseen paljon useammin kuin kerran $110\\,\\text{s}$:ssa. Törmäys purkaa viritystilan: energia siirtyy toiselle hiukkaselle, eikä fotonia synny.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että ylemmän tason elinaika $0{,}7\\,\\text{s}$ on niin lyhyt, että moni atomi ehtii lähettää vihreän fotonin ennen törmäystä myös tiheämmässä ilmassa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Punainen valo tarvitsee harvan ilman, jossa törmäyksiä on vähän. Siksi se syntyy korkealla. Selitys liittyy annettuihin korkeuksiin ja elinaikoihin."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Revontulikuvaajan kameran kenno on piitä. Pikseli havaitsee fotonin, jos fotonin energia riittää nostamaan elektronin piin valenssivyöltä johtavuusvyölle. Valenssivyö ja johtavuusvyö ovat piin kaksi energia-aluetta. Tähän tarvitaan vähintään $1{,}12\\,\\text{eV}$. Mikä on pisin aallonpituus, jonka kenno voi havaita? Kameramyyjä väittää: ”Kun infrapunasäteily on tarpeeksi voimakasta, kenno havaitsee myös $1500\\,\\text{nm}$:n säteilyn.” Arvioi väitettä.",
+          "answer": {
+            "value": 1107,
+            "unit": "nm",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Pisin aallonpituus vastaa pienintä riittävää fotonin energiaa: $\\lambda_\\text{max} = \\dfrac{hc}{E}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\lambda_\\text{max} \\approx 1110\\,\\text{nm}$ (noin $1{,}1\\,\\mu\\text{m}$). Kenno havaitsee siis revontulten vihreän ja punaisen valon."
+            },
+            {
+              "text": "Laskee tai perustelee, että $1500\\,\\text{nm}$:n fotonin energia, noin $0{,}83\\,\\text{eV}$, on pienempi kuin $1{,}12\\,\\text{eV}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että voimakkaampi säteily tarkoittaa enemmän fotoneja, ei suurempaa fotonin energiaa. Yksikään fotoni ei nosta elektronia johtavuusvyölle, joten väite on väärä.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy8-2",
+        "math": "fy8-1",
+        "communication": "fy8-2",
+        "concept": "fy8-1"
+      }
+    },
+    {
+      "id": "fy8-s2",
+      "title": "Marsmönkijän voimanlähde",
+      "source": "statistics",
+      "source_note": "NASA, MMRTG-generaattorin tiedot (Curiosity ja Perseverance), pyöristetty; atomimassat AME2020; puoliintumisajat NNDC (tarkistettu 2026).",
+      "text": "Marsmönkijät Curiosity ja Perseverance saavat sähkönsä radioisotooppigeneraattorista. Generaattorissa on $4{,}8\\,\\text{kg}$ plutoniumdioksidia $\\text{PuO}_2$. Sen plutoniumista suurin osa on plutonium-238:aa. Plutonium-238 hajoaa alfahajoamisella uraani-234:ksi. Hajoamisen energia muuttuu generaattorissa lämmöksi, ja lämpösähköparit muuttavat osan lämmöstä sähköksi. Laukaisuhetkellä generaattorin lämpöteho oli noin $2000\\,\\text{W}$ ja sähköteho noin $110\\,\\text{W}$.\n\n| aine | atomimassa $(\\text{u})$ |\n|---|---|\n| ${}^{238}_{94}\\text{Pu}$ | $238{,}049560$ |\n| ${}^{234}_{92}\\text{U}$ | $234{,}040952$ |\n| ${}^{4}_{2}\\text{He}$ | $4{,}002603$ |\n\nPlutonium-238:n puoliintumisaika on $87{,}7\\,\\text{a}$. Puoliintumisaika on aika, jonka kuluessa puolet ytimistä hajoaa. Lisäksi $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$ ja $1\\,\\text{a} = 365{,}25\\,\\text{d}$.\n\nGeneraattorin polttoaineeksi voisi ajatella myös muita radioaktiivisia aineita:\n\n| aine | hajoaminen | puoliintumisaika |\n|---|---|---|\n| polonium-210 | $\\alpha$ | $138\\,\\text{d}$ |\n| koboltti-60 | $\\beta^-$, voimakas $\\gamma$ | $5{,}27\\,\\text{a}$ |\n| plutonium-238 | $\\alpha$ | $87{,}7\\,\\text{a}$ |\n| uraani-238 | $\\alpha$ | $4{,}47 \\cdot 10^{9}\\,\\text{a}$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kirjoita hajoamisen reaktioyhtälö. Kuinka paljon energiaa yksi hajoaminen vapauttaa?",
+          "answer": {
+            "value": 5.59,
+            "unit": "MeV",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "text": "Reaktioyhtälö on ${}^{238}_{94}\\text{Pu} \\rightarrow {}^{234}_{92}\\text{U} + {}^{4}_{2}\\text{He}$. Nukleoniluku ja varaus säilyvät eli pysyvät samoina.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = (m_\\text{Pu} - m_\\text{U} - m_\\text{He})\\,c^2$ atomimassoilla. Elektroneja on kummallakin puolella yhtä monta, joten niiden massat kumoutuvat."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Massavaje on $0{,}006005\\,\\text{u}$, ja on sijoitettu $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$Q \\approx 5{,}59\\,\\text{MeV}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka monta kilogrammaa plutonium-238:aa generaattorissa on oltava, jotta sen lämpöteho on $2000\\,\\text{W}$? Kuinka suuri osa generaattorin plutoniumista on silloin plutonium-238:aa? Oleta, että hajoamisen koko energia muuttuu generaattorissa lämmöksi.",
+          "answer": {
+            "value": 3.5,
+            "unit": "kg",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että aktiivisuus on teho jaettuna yhden hajoamisen energialla: $A = \\dfrac{P}{Q} \\approx 2{,}2 \\cdot 10^{15}\\,\\text{Bq}$. Aktiivisuus kertoo, kuinka monta hajoamista tapahtuu sekunnissa. Energia $Q$ on muutettu jouleiksi.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$A = \\lambda N$, missä $\\lambda = \\dfrac{\\ln 2}{T_{1/2}}$ ja $T_{1/2}$ on sekunteina. Massa on $m = N m_\\text{Pu}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m \\approx 3{,}5\\,\\text{kg}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Plutoniumin osuus $\\text{PuO}_2$:sta on $238 : 270$, joten plutoniumia on noin $4{,}2\\,\\text{kg}$. Noin $83\\,\\%$ siitä on plutonium-238:aa. Loput on muita plutoniumin isotooppeja."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Miksi vuosikymmeniä kestävään lentoon valitaan plutonium-238? Perustele taulukon jokaisen muun aineen kohdalla, miksi se hylätään. Mikä on säteilyturvallisuuden kannalta tärkeää, kun generaattori kootaan ja laukaistaan Maasta?",
+          "criteria": [
+            {
+              "text": "Polonium-210: puoliintumisaika on lyhyt lentoon verrattuna. Teho putoaisi jo vuodessa noin kuudesosaan.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Uraani-238: aktiivisuus ytimien määrää kohti on kääntäen verrannollinen puoliintumisaikaan. Se on siis noin $5 \\cdot 10^{7}$ kertaa pienempi kuin plutonium-238:lla, ja tarvittava massa olisi valtava.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Koboltti-60: läpitunkeva gammasäteily vaatisi raskaan suojan ja vaurioittaisi elektroniikkaa. Alfahiukkaset taas pysähtyvät jo polttoaineeseen, ja niiden energia muuttuu lämmöksi.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että alfasäteily ei läpäise generaattorin kuorta. Plutonium on kuitenkin hyvin vaarallista elimistön sisällä. Siksi polttoaine on kestävänä keraamina kapseleissa, jotka eivät saa rikkoutua laukaisuonnettomuudessa.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on generaattorin lämpöteho $14$ vuotta laukaisun jälkeen? Kuinka suuri sähköteho olisi, jos generaattorin hyötysuhde pysyisi samana? Hyötysuhde kertoo, kuinka suuri osa lämmöstä muuttuu sähköksi. NASA:n mukaan todellinen sähköteho on pienentynyt nopeammin. Mistä se voi johtua?",
+          "answer": {
+            "value": 1790,
+            "unit": "W",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että lämpöteho on verrannollinen aktiivisuuteen ja siten hajoamattomien ytimien määrään. Teho pienenee siis hajoamislain mukaan: $P = P_0 \\left(\\tfrac{1}{2}\\right)^{t / T_{1/2}}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 1790\\,\\text{W}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Sähköteho samalla hyötysuhteella on $110\\,\\text{W} \\cdot 0{,}895 \\approx 98\\,\\text{W}$."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Laskussa hyötysuhde oletettiin vakioksi. Lämpösähköparit kuitenkin vanhenevat, ja hyötysuhde pienenee. Hajoamislaki antaa sähköteholle siksi vain ylärajan."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 4,
+          "text": "Plutonium-238 on vaarallisinta, jos sitä joutuu elimistöön. Oleta, että laukaisuonnettomuudessa ihmisen keuhkoihin jäisi plutoniumdioksidipölyä, jonka aktiivisuus on $10\\,\\text{Bq}$. Oleta myös, että pöly pysyisi keuhkoissa koko vuoden. Keuhkojen massa on $1{,}2\\,\\text{kg}$, alfasäteilyn painotuskerroin on $20$ ja keuhkojen kudoksen painotuskerroin on $0{,}12$. Säteilyn painotuskerroin kertoo, kuinka monta kertaa enemmän säteilylaji vaurioittaa soluja kuin gammasäteily. Kudoksen painotuskerroin kertoo, kuinka herkkä kudos on säteilylle. Kuinka suuri efektiivinen annos tästä aiheutuisi vuodessa? Efektiivinen annos kertoo säteilyn koko elimistölle aiheuttaman haitan. Vertaa tulosta suomalaisen keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$.",
+          "answer": {
+            "value": 0.57,
+            "unit": "mSv",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että alfahiukkaset pysähtyvät keuhkokudokseen. Vuodessa siihen absorboituu energia $E = AtQ$, kun aktiivisuus pysyy vuoden ajan likimain vakiona. Laskee $E \\approx 2{,}8 \\cdot 10^{-4}\\,\\text{J}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$D = \\dfrac{E}{m}$, $H_\\text{T} = w_\\text{R} D$ ja $H_\\text{E} = w_\\text{T} H_\\text{T}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$H_\\text{E} \\approx 0{,}57\\,\\text{mSv}$ eli noin $0{,}6\\,\\text{mSv}$ vuodessa."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Annos on noin kymmenesosa suomalaisen keskimääräisestä vuosiannoksesta, vaikka $10\\,\\text{Bq}$ on hyvin pieni aktiivisuus. Alfasäteilijä on vaarallinen elimistön sisällä. Siksi plutoniumin pääsy elimistöön estetään."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy8-8",
+        "math": "fy8-10",
+        "transfer": "fy8-9",
+        "communication": "fy8-12"
+      }
+    },
+    {
+      "id": "fy8-s3",
+      "title": "Koulun cesiumlähde",
+      "source": "example",
+      "source_note": "Pulssimäärät on laskettu mallista, ja niihin on lisätty satunnaisvaihtelua mittauksen tapaan. Ne eivät ole oikean mittauksen tuloksia. Ulkoilman taustasäteilyn annosnopeus: STUK (2026).",
+      "text": "Lukion fysiikan luokassa on suljettu cesium-137-säteilylähde. GM-putki on säteilyn mittari, joka antaa yhden pulssin jokaisesta havaitusta säteilyhiukkasesta. Opiskelijat asettivat lähteen GM-putken eteen ja laskivat pulssit $1{,}0\\,\\text{min}$:n ajan eri etäisyyksillä $r$. He mittasivat etäisyyden lähteestä putken ikkunaan millimetriasteikolla. Ennen mittausta he mittasivat taustasäteilyä ilman lähdettä. Taustasäteily on säteilyä, jota on aina ympäristössä. He saivat $112$ pulssia $5{,}0\\,\\text{min}$:ssa.\n\n| $r\\ (\\text{cm})$ | pulsseja $1{,}0\\,\\text{min}$:ssa |\n|---|---|\n| $2{,}0$ | $3048$ |\n| $3{,}0$ | $1806$ |\n| $4{,}0$ | $1172$ |\n| $5{,}0$ | $790$ |\n| $6{,}0$ | $617$ |\n| $8{,}0$ | $405$ |\n| $10{,}0$ | $256$ |\n| $14{,}0$ | $152$ |\n| $20{,}0$ | $94$ |\n\nRadioaktiivinen hajoaminen on satunnaista. Kun lasketaan $N$ pulssia, pulssien määrän satunnaisvaihtelu on noin $\\sqrt{N}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "Opiskelija olettaa kolme asiaa. Lähde on pistemäinen. Sen säteily leviää tasaisesti kaikkiin suuntiin. Putki havaitsee aina saman osuuden sen ikkunaan osuvista fotoneista. Piirrä kuvaaja, jonka pisteiden pitäisi tämän oletuksen mukaan olla origon kautta kulkevalla suoralla. Mitä kuvaajasta voi päätellä?",
+          "criteria": [
+            {
+              "text": "Vähentää taustan $22{,}4\\,\\tfrac{1}{\\text{min}}$ jokaisesta lukemasta. Perustelee, että säteily jakautuu pallon pinnalle, jonka ala on $4\\pi r^2$. Mallin mukaan nettopulssitaajuus $R$ on siis verrannollinen suureeseen $\\tfrac{1}{r^2}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$\\tfrac{1}{r^2}$ vaaka-akselilla yksikössä $\\tfrac{1}{\\text{cm}^2}$ ja $R$ pystyakselilla yksikössä $\\tfrac{1}{\\text{min}}$."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Kaikkiin pisteisiin sopivaa origon kautta kulkevaa suoraa ei ole. Lähimmät pisteet jäävät kaukaisten pisteiden kautta piirretyn suoran alapuolelle."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Oletus ei sellaisenaan päde lähellä lähdettä, koska pulssitaajuus kasvaa lähestyttäessä hitaammin kuin $\\tfrac{1}{r^2}$. Todennäköisin syy on, että mitattu etäisyys $r$ ei ole etäisyys putken havaintokohtaan."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 5,
+          "text": "Opettaja huomauttaa, että GM-putken herkkä tilavuus on ikkunan takana. Malli voi silti päteä, jos etäisyydeksi otetaan $r + d$. Tässä $d$ on ikkunan ja putken tehollisen havaintokohdan välimatka. Muodosta aineistosta kuvaaja, jonka pisteiden pitäisi tämän mallin mukaan olla suoralla. Määritä kuvaajasta $d$.",
+          "answer": {
+            "value": 1.3,
+            "unit": "cm",
+            "tolerance": 0.25
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että mallista $R = \\dfrac{K}{(r + d)^2}$ saadaan $\\dfrac{1}{\\sqrt{R}} = \\dfrac{r + d}{\\sqrt{K}}$. Suure $\\tfrac{1}{\\sqrt{R}}$ on siis $r$:n ensimmäisen asteen funktio, ja suora leikkaa $r$-akselin kohdassa $r = -d$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "Pisteet $(r;\\ \\tfrac{1}{\\sqrt{R}})$ on laskettu nettopulssitaajuuksista."
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Piirtää suoran, joka sopii kaikkiin pisteisiin, ja jatkaa sitä $r$-akselille asti."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Lukee tai laskee leikkauskohdan $r$-akselilla suoran kahdesta kaukaisesta pisteestä."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d \\approx 1{,}3\\,\\text{cm}$. Vastaukseksi hyväksytään $1{,}0$–$1{,}6\\,\\text{cm}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Arvioi $2{,}0\\,\\text{cm}$:n ja $20\\,\\text{cm}$:n nettopulssitaajuuksien epävarmuus. Kumpi mittauspiste on epävarmempi ja miksi? Miten mittausta voisi parantaa?",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Etäisyydellä $20\\,\\text{cm}$: $\\Delta N \\approx \\sqrt{94} \\approx 10$. Nettopulssitaajuus $72 \\pm 10\\,\\tfrac{1}{\\text{min}}$ on siis epävarma noin $14\\,\\%$. Etäisyydellä $2{,}0\\,\\text{cm}$: $\\sqrt{3048} \\approx 55$ eli vain noin $2\\,\\%$."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Lähellä lähdettä etäisyyden lukemisen virhe korostuu. Esimerkiksi $1\\,\\text{mm}$:n virhe muuttaa pulssitaajuutta noin $6\\,\\%$, koska $R$ riippuu etäisyyden neliöstä."
+            },
+            {
+              "text": "Ehdottaa kaukaisille pisteille pidempää laskenta-aikaa, koska suhteellinen satunnaisvaihtelu pienenee kuten $\\tfrac{1}{\\sqrt{N}}$. Lähipisteille ehdottaa tarkempaa etäisyyden asettamista, esimerkiksi telinettä.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Opiskelija päättelee: ”Kun lähteen nettopulssitaajuus on pienentynyt taustan suuruiseksi, lähteestä ei enää tule säteilyä. Silloin säteilyturvallisuutta ei tarvitse ajatella lähteen kauempana.” Millä etäisyydellä $r$ nettopulssitaajuus on b-kohdan mallin mukaan yhtä suuri kuin taustan pulssitaajuus? Lähteen valmistajan mukaan annosnopeus on $10\\,\\text{cm}$:n päässä lähteestä noin $3{,}0\\,\\mu\\text{Sv/h}$. Annosnopeus kertoo, kuinka suuren säteilyannoksen saa tunnissa. Ulkona Suomessa taustasäteilyn annosnopeus on tavallisesti $0{,}05$–$0{,}30\\,\\mu\\text{Sv/h}$. Arvioi opiskelijan päättelyä.",
+          "answer": {
+            "value": 36,
+            "unit": "cm",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dfrac{K}{(r + d)^2} = R_\\text{t}$, josta $r = \\sqrt{\\dfrac{K}{R_\\text{t}}} - d$. Luku $K = \\dfrac{1}{k^2}$ saadaan b-kohdan suoran kulmakertoimesta $k$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$r \\approx 36\\,\\text{cm}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Annosnopeus tällä etäisyydellä on noin $3{,}0\\,\\mu\\text{Sv/h} \\cdot \\left(\\tfrac{10\\,\\text{cm}}{36\\,\\text{cm}}\\right)^2 \\approx 0{,}2\\,\\mu\\text{Sv/h}$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Säteily ei lopu. Sen annosnopeus pienenee taustan suuruusluokkaan, eikä putki enää erota sitä taustan vaihtelusta. Päättely on väärä, mutta etäisyys on silti hyvä suojautumiskeino."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy8-13",
+        "graph": "fy8-9",
+        "communication": "fy8-13",
+        "math": "fy8-13",
+        "experiment": "fy8-6"
+      }
+    },
+    {
+      "id": "fy8-s4",
+      "title": "Ensimmäiset minuutit",
+      "source": "statistics",
+      "source_note": "Particle Data Group, Review of Particle Physics 2024: hiukkasten massat, neutronin keskimääräinen elinaika $878{,}4\\,\\text{s}$ (puoliintumisaika $609\\,\\text{s}$) ja havaittu heliumin massaosuus $0{,}245$, pyöristetty.",
+      "text": "Vanhimpien tähtien ja kaasupilvien havainnoista tiedetään seuraava. Maailmankaikkeuden ensimmäisten minuuttien jälkeen tavallisen aineen massasta noin $24{,}5\\,\\%$ oli helium-4:ää ja loput lähes kokonaan vetyä. Noin $1\\,\\text{s}$ alkuräjähdyksen jälkeen jokaista neutronia kohti oli noin $6$ protonia. Sen jälkeen neutronien ja protonien määrien suhde muuttui vain silloin, kun vapaat neutronit hajosivat. Ytimiä ei vielä voinut syntyä, koska kuuman säteilyn fotonit hajottivat syntyvät deuteriumytimet. Kun ytimiä lopulta syntyi, lähes kaikki jäljellä olevat neutronit päätyivät helium-4-ytimiin.\n\n| hiukkanen | massa $(\\tfrac{\\text{MeV}}{c^2})$ |\n|---|---|\n| neutroni $n$ | $939{,}565$ |\n| protoni $p$ | $938{,}272$ |\n| elektroni $e^-$ | $0{,}511$ |\n\nVapaan neutronin puoliintumisaika on $609\\,\\text{s}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 4,
+          "text": "Vapaa neutroni hajoaa, mutta vapaa protoni ei hajoa neutroniksi. Selitä miksi. Käytä selityksessä hiukkasten massoja. Mitä hajoamisessa tapahtuu kvarkeille? Mikä vuorovaikutus sen aiheuttaa?",
+          "criteria": [
+            {
+              "text": "Laskee, että neutronin massa on $0{,}782\\,\\tfrac{\\text{MeV}}{c^2}$ suurempi kuin protonin ja elektronin massa yhteensä. Hajoaminen vapauttaa siis energiaa. Protonin muuttuminen neutroniksi vaatisi energiaa.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Kirjoittaa hajoamisyhtälön $n \\rightarrow p + e^- + \\bar{\\nu}_e$, jossa varaus säilyy.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Neutronin ($udd$) yksi $d$-kvarkki muuttuu $u$-kvarkiksi, jolloin syntyy protoni ($uud$).",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Muutoksen aiheuttaa heikko vuorovaikutus. Sen välittäjähiukkanen on $W^-$-bosoni.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka monta protonia oli jokaista neutronia kohti, kun ytimiä syntyi? Mitä oletit?",
+          "answer": {
+            "value": 7.16,
+            "unit": "",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että jokaisessa helium-4-ytimessä on kaksi neutronia ja kaksi protonia. Heliumin massa on siis likimain $2N_n$ nukleonin massa, kun kaikkien nukleonien massa on $N_n + N_p$ nukleonin massaa. Nukleoni on protoni tai neutroni.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dfrac{2N_n}{N_n + N_p} = 0{,}245$, josta $\\dfrac{N_p}{N_n} = \\dfrac{2 - 0{,}245}{0{,}245}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Noin $7{,}2$ protonia jokaista neutronia kohti."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Oletetaan, että protonin ja neutronin massat ovat yhtä suuret ja sidosenergia on pieni. Deuteriumiin ja litiumiin jäävät neutronit jätetään huomiotta."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka kauan alkuräjähdyksen jälkeen ytimiä alkoi syntyä?",
+          "answer": {
+            "value": 136,
+            "unit": "s",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että jokaisesta hajonneesta neutronista tulee protoni. Nukleoneja on siis koko ajan $7$ jokaista alkuperäistä neutronia kohti. Ratkaisee, että neutroneja on silloin jäljellä $0{,}858$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ratkaisee ajan kaavasta $N = N_0 \\left(\\tfrac{1}{2}\\right)^{t / T_{1/2}}$, esimerkiksi logaritmin avulla."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$t \\approx 0{,}222 \\cdot 609\\,\\text{s} \\approx 135\\,\\text{s}$ hetkestä $1\\,\\text{s}$ alkaen."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Noin $140\\,\\text{s}$ eli noin $2\\,\\text{min}$ alkuräjähdyksen jälkeen."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Hetkellä $1\\,\\text{s}$ neutronien ja protonien suhde tunnetaan vain likimain. Opiskelija väittää: ”Jos suhde olisi ollut $1 : 5$ eikä $1 : 6$, c-kohdan tulos muuttuisi vain vähän. Menetelmä on siis luotettava.” Arvioi väitettä laskemalla. Mitä muuta c-kohdan tulos edellyttää? Tarkempien mallien mukaan ytimiä alkoi syntyä noin kolmen minuutin kuluttua alkuräjähdyksestä. Miten hyvin c-kohdan tulos sopii tähän?",
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Suhteella $1 : 5$ neutroneja on jäljellä $0{,}735$. Aika on noin $270\\,\\text{s}$ eli noin $4{,}5\\,\\text{min}$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä. Aika lähes kaksinkertaistuu, koska neutroneista ehtii hajota vain pieni osa. Silloin pieni muutos alkusuhteessa muuttaa aikaa paljon."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "c-kohta olettaa, että hetken $1\\,\\text{s}$ jälkeen neutronit muuttuivat protoneiksi vain vapaan neutronin hajoamisessa. Se olettaa myös, että ytimet syntyivät yhdellä hetkellä."
+            },
+            {
+              "text": "Vertaa c-kohdan tulosta tarkempien mallien noin kolmeen minuuttiin. Toteaa suuruusluokan oikeaksi: kyse on minuuteista, ei sekunneista eikä tunneista.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy8-9",
+        "communication": "fy8-16",
+        "concept": "fy8-15",
+        "transfer": "fy8-16"
+      }
+    },
+    {
+      "id": "fy8-s5",
+      "title": "Oklon luonnonreaktori",
+      "source": "statistics",
+      "source_note": "Isotooppien osuudet IUPAC, puoliintumisajat NNDC (tarkistettu 2026); Oklon tiedot: Gauthier-Lafaye ja muut (1996) sekä Meshik (2005), pyöristetty suuruusluokka-arvio.",
+      "text": "Vuonna 1972 ranskalaiset tutkijat huomasivat, että Gabonin Oklon kaivoksen uraanimalmissa uraani-235:n osuus uraanista oli paikoin vain $0{,}440\\,\\%$. Kaikkialla muualla Maassa osuus on $0{,}720\\,\\%$, ja loput $99{,}274\\,\\%$ on uraani-238:aa. Tutkijat päättelivät, että malmissa oli noin $2{,}0$ miljardia vuotta sitten toiminut luonnollinen fissioreaktori. Fissio tarkoittaa, että raskas ydin halkeaa ja vapauttaa energiaa. Reaktorissa malmiin tunkeutunut pohjavesi oli hidastimena. Hidastin hidastaa neutroneja. Reaktori toimi jaksoissa: noin puoli tuntia käynnissä ja sitten parin tunnin tauko.\n\n| ydin | puoliintumisaika |\n|---|---|\n| uraani-235 | $7{,}04 \\cdot 10^{8}\\,\\text{a}$ |\n| uraani-238 | $4{,}47 \\cdot 10^{9}\\,\\text{a}$ |\n| plutonium-239 | $24\\,100\\,\\text{a}$ |\n\nNykyisten kevytvesireaktoreiden polttoaineessa uraani-235:n osuus on $3$–$5\\,\\%$. Luonnonuraanilla ketjureaktio ei onnistu kevyen veden kanssa.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka monta prosenttia uraanista oli uraani-235:tä $2{,}0$ miljardia vuotta sitten? Miksi ketjureaktio oli silloin mahdollinen mutta ei nyt?",
+          "answer": {
+            "value": 3.7,
+            "unit": "%",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että kumpikin isotooppi hajoaa omalla puoliintumisajallaan. Laskee kummankin ytimien määrän ajassa taaksepäin, esimerkiksi $0{,}720$ ja $99{,}274$ nykyistä ydintä kohti.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$N_0 = N \\cdot 2^{t / T_{1/2}}$ kummallekin isotoopille. Osuus on $\\dfrac{N_{235}}{N_{235} + N_{238}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Kertoimet ovat $2^{2{,}841} \\approx 7{,}17$ ja $2^{0{,}447} \\approx 1{,}36$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Noin $3{,}7\\,\\%$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Osuus oli silloin sama kuin nykyisten reaktorien rikastetussa polttoaineessa, joten vesi riitti hidastimeksi. Nyt luonnonuraanin osuus $0{,}72\\,\\%$ on liian pieni."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 4,
+          "text": "Mistä uraani-235:n tavallista pienempi osuus kertoo? Selitä, miten pohjavesi sai reaktorin sekä käynnistymään että sammumaan jaksoittain.",
+          "criteria": [
+            {
+              "text": "Selittää, että fissiossa kuluu juuri uraani-235:tä, koska se fissioituu helposti, kun hidas neutroni osuu siihen. Siksi sen osuus malmissa pieneni.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että vesi hidasti fissiossa syntyneet nopeat neutronit. Hitaat neutronit aiheuttivat uusia fissioita, ja kasvukerroin nousi ykköseen. Kasvukerroin kertoo, kuinka monta uutta fissiota yksi fissio aiheuttaa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että fissioiden lämpö kiehutti veden pois. Ilman hidastinta kasvukerroin putosi alle ykkösen ja ketjureaktio sammui.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että malmi jäähtyi, vesi palasi ja reaktio käynnistyi uudelleen. Tämä sopii havaittuihin jaksoihin.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Arvioiden mukaan Oklon reaktorien yhteinen lämpöteho oli keskimäärin noin $100\\,\\text{kW}$. Ne toimivat jaksoittain yhteensä noin $150\\,000$ vuoden ajan. Kuinka kauan Olkiluoto 3:n reaktorilta kuluu saman energian tuottamiseen, kun sen lämpöteho on $4300\\,\\text{MW}$?",
+          "answer": {
+            "value": 3.5,
+            "unit": "a",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Energia on teho kertaa aika: $P_\\text{O} t_\\text{O} = P_\\text{OL3} t_\\text{OL3}$, josta $t_\\text{OL3} = \\dfrac{P_\\text{O}}{P_\\text{OL3}}\\, t_\\text{O}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Noin $3{,}5\\,\\text{a}$, kun tehot on muutettu samaan yksikköön."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Luonnonreaktorin teho oli noin $43\\,000$ kertaa pienempi kuin Olkiluoto 3:n. Se toimi kuitenkin noin $43\\,000$ kertaa kauemmin. Se oli pieni mutta hyvin pitkäikäinen."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Kirjoittaja väittää: ”Oklon fissiotuotteet ja plutonium ovat pysyneet kalliossa paikallaan kaksi miljardia vuotta. Siksi on varmaa, että Onkaloon loppusijoitettu käytetty polttoaine pysyy turvallisesti paikallaan.” Plutonium-239 hajoaa alfahajoamisella uraani-235:ksi. Miten Oklosta voidaan ylipäätään päätellä, pysyikö plutonium paikallaan? Arvioi sen jälkeen kirjoittajan väitettä.",
+          "criteria": [
+            {
+              "text": "Toteaa, että plutonium-239:stä ei ole enää mitään jäljellä, koska kahdessa miljardissa vuodessa on kulunut noin $83\\,000$ puoliintumisaikaa. Päättelee, että plutoniumin pysyminen paikallaan nähdään sen hajoamistuotteesta uraani-235:stä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Väite olettaa, että Onkalon olot ovat samanlaiset kuin Oklossa. Kallio, pohjaveden kemia ja jätteen muoto ovat kuitenkin erilaisia. Yhden paikan havainto ei siirry sellaisenaan toiseen paikkaan."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Oklo on tukeva esimerkki siitä, että kallio voi pidättää monia aineita pitkään. Sana ”varmaa” on kuitenkin liian vahva: yksi luonnon esimerkki ei todista toisen paikan turvallisuutta."
+            },
+            {
+              "text": "Kertoo, mihin Onkalon turvallisuus perustuu: kuparikapseliin, bentoniittisaveen ja syvään kallioon. Niiden toimintaa tutkitaan kokeilla ja malleilla satojentuhansien vuosien ajalle.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy8-9",
+        "math": "fy8-11",
+        "concept": "fy8-11",
+        "communication": "fy8-11"
+      }
+    }
+  ]
+}

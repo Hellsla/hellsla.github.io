@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Write what happens at the quark level in the beta minus decay of a neutron, and name the mediator particle.",
+    "a": "One $d$ quark of the neutron turns into a $u$ quark: $d \\to u + W^-$, and the $W^-$ boson turns into an electron and an antineutrino, $W^- \\to e^- + \\bar{\\nu}_e$. The neutron $udd$ becomes a proton $uud$. The mediator $W^-$ belongs to the weak interaction."
+  },
+  {
+    "q": "Is the reaction $p + n \\to p + p + e^-$ possible? Justify using the conservation laws.",
+    "a": "It is not. The charge is conserved ($1 + 0 = 1 + 1 - 1$) and the baryon number is conserved ($1 + 1 = 1 + 1 + 0$), but the lepton number is not: at the start $L = 0$, at the end the electron has $L = 1$."
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Miksi yksi koinsidenssi ei riitä PET-kuvauksessa paikantamaan merkkiaineen kertymää?",
+    "a": "Yksi koinsidenssi kertoo vain, että annihilaatio tapahtui jossain kahden ilmaisimen välisellä janalla, koska fotonit lähtevät vastakkaisiin suuntiin. Merkkiainetta on koko kehossa, joten janoja tulee kaikkialta, ja kertymä erottuu vasta, kun monet janat leikkaavat samassa kohdassa. Saapumisaikojen ero rajaa lähteen janalla vain muutaman senttimetrin matkalle, joten kuva syntyy silti monista janoista."
+  },
+  {
+    "q": "Mitä tarkoittavat säteilyn lääketieteellisen käytön periaatteet oikeutus ja optimointi?",
+    "a": "Oikeutus: tutkimuksesta tai hoidosta saatavan hyödyn on oltava suurempi kuin säteilyn haitta, joten se tehdään vain, kun tulos vaikuttaa hoitoon. Optimointi: annos pidetään niin pienenä kuin käytännössä on mahdollista, kun kuva silti vastaa kysymykseen. Liian pieni annos voi pakottaa uusimaan kuvauksen."
+  }
+]

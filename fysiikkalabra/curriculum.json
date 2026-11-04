@@ -2520,7 +2520,7 @@
         "prerequisites": [
           "fy8-13"
         ],
-        "sim": false,
+        "sim": true,
         "glossary": [
           "röntgensäteily",
           "merkkiaine",
