@@ -164,6 +164,8 @@ Voiman suunnan positiiviselle varaukselle antaa **oikean käden sääntö**. Oje
   <foreignObject x="16" y="9.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}\ \text{paperiin}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/aurora-levi.webp" alt="Leveä vihreä revontulivyö yötaivaalla Levi-tunturin yllä. Alhaalla on metsää ja valoja."><figcaption>Revontulet Levi-tunturin yllä Kittilässä. Auringosta tulee varattuja hiukkasia. Ne kiertävät Maan magneettikentän kenttäviivojen ympäri ja kulkevat niitä pitkin napa-alueille. Ylhäällä ilmakehässä ne törmäävät atomeihin, ja atomit lähettävät valoa.</figcaption></figure>
+
 ### Voima ei muuta vauhtia: rata on ympyrä
 Magneettinen voima on joka hetki kohtisuorassa nopeutta vastaan. Siksi se ei tee työtä. Hiukkasen liike-energia ja vauhti pysyvät samoina. Vain liikkeen suunta muuttuu.
 
@@ -253,6 +255,8 @@ Esimerkki: protoni lentää vauhdilla $1{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuor
   <foreignObject x="354" y="9.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}\ \text{paperista ulos}$</div></foreignObject>
   <foreignObject x="414" y="321.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{myötäpäivään}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/electron-beam-circle.webp" alt="Pimeässä lasipallossa näkyy sininen ympyrä. Se on elektronisuihku kahden ison käämin välissä."><figcaption>Elektronisuihku kulkee ympyrää lasipallossa. Pallossa on vähän heliumkaasua. Käämit tekevät magneettikentän, joka on kohtisuorassa suihkua vastaan. Elektronit törmäävät kaasun atomeihin, ja atomit hehkuvat. Siksi rata näkyy.</figcaption></figure>
 
 ## Kaava: Magneettinen voima ja ympyrärata
 Magneettikentässä liikkuvaan varattuun hiukkaseen vaikuttavan magneettisen voiman suuruus lasketaan kaavalla
@@ -409,6 +413,8 @@ Samalla vauhdilla ja varauksella radan säde on suoraan verrannollinen massaan. 
 
 ## Hiukkaskiihdytin
 Hiukkaskiihdytin on laite, joka antaa hiukkasille hyvin suuren vauhdin. Siinä tarvitaan molempia kenttiä. Magneettinen voima ei tee työtä, joten vain sähkökenttä voi kasvattaa hiukkasen energiaa. Aina kun hiukkanen kulkee kiihdytysvälin jännitteen $U$ yli, sen liike-energia kasvaa $qU$:n verran. Magneetit taas taivuttavat ja kohdistavat hiukkassuihkua.
+
+<figure class="unit-photo"><img src="pics/fy7/berkeley-cyclotron.webp" alt="Mustavalkoinen kuva vuodelta 1939. Noin kymmenen miestä seisoo suuren sähkömagneetin ympärillä ja päällä."><figcaption>Syklotroni Berkeleyssä vuonna 1939. Suuri sähkömagneetti kääntää hiukkaset ympyräradalle. Sähkökenttä kiihdyttää hiukkasia joka kierroksella.</figcaption></figure>
 
 Rengaskiihdyttimessä sama hiukkanen kulkee saman kiihdytysvälin läpi yhä uudelleen. Kun vauhti kasvaa, magneettikenttää vahvistetaan. Silloin radan säde $r = mv : (qB)$ pysyy samana ja hiukkaset pysyvät renkaassa.
 
