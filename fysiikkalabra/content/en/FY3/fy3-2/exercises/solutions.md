@@ -150,7 +150,7 @@
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:**
 
-$$\begin{aligned} W_1 &= 0.5 \cdot (18.0 + 17.2)\,\text{N} \cdot 1.0\,\text{m} \\ &= 17.6\,\text{J} \\ W_2 &= 0.5 \cdot (17.2 + 15.1)\,\text{N} \cdot 1.0\,\text{m} \\ &= 16.15\,\text{J} \\ W_3 &= 0.5 \cdot (15.1 + 11.0)\,\text{N} \cdot 1.0\,\text{m} \\ &= 13.05\,\text{J} \\ W_4 &= 0.5 \cdot (11.0 + 6.0)\,\text{N} \cdot 1.0\,\text{m} \\ &= 8.5\,\text{J} \\ W &= 17.6\,\text{J} + 16.15\,\text{J} + 13.05\,\text{J} + 8.5\,\text{J} \\ &= 55.3\,\text{J} \end{aligned}$$
+$$\begin{aligned} W_1 &= 0.5 \cdot (18.0 + 17.2)\,\text{N} \\ &\quad \cdot 1.0\,\text{m} = 17.6\,\text{J} \\ W_2 &= 0.5 \cdot (17.2 + 15.1)\,\text{N} \\ &\quad \cdot 1.0\,\text{m} = 16.15\,\text{J} \\ W_3 &= 0.5 \cdot (15.1 + 11.0)\,\text{N} \\ &\quad \cdot 1.0\,\text{m} = 13.05\,\text{J} \\ W_4 &= 0.5 \cdot (11.0 + 6.0)\,\text{N} \\ &\quad \cdot 1.0\,\text{m} = 8.5\,\text{J} \\ W &= 17.6\,\text{J} + 16.15\,\text{J} \\ &\quad + 13.05\,\text{J} + 8.5\,\text{J} \\ &= 55.3\,\text{J} \end{aligned}$$
 **Answer:** $55\,\text{J}$, two significant figures, because the width of a part $\Delta s = 1.0\,\text{m}$ and the final force $6.0\,\text{N}$ are given with two significant figures.
 **Reasonableness:** The average force over the whole $4.0\,\text{m}$ is $55.3\,\text{J} / 4.0\,\text{m} \approx 14\,\text{N}$, which is between the smallest ($6.0\,\text{N}$) and the greatest ($18.0\,\text{N}$) value of the force. Rough estimate: $18\,\text{N} \cdot 4.0\,\text{m} = 72\,\text{J}$ is an upper limit and $6\,\text{N} \cdot 4.0\,\text{m} = 24\,\text{J}$ a lower limit, and the result is between them.
 

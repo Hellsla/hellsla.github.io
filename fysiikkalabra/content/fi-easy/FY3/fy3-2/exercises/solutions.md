@@ -150,7 +150,7 @@
 **Muunnokset:** Voimat ovat newtoneina ja matkat metreinä. Muunnoksia ei siis tarvita.
 **Sijoitus:**
 
-$$\begin{aligned} W_1 &= 0{,}5 \cdot (18{,}0 + 17{,}2)\,\text{N} \cdot 1{,}0\,\text{m} \\ &= 17{,}6\,\text{J} \\ W_2 &= 0{,}5 \cdot (17{,}2 + 15{,}1)\,\text{N} \cdot 1{,}0\,\text{m} \\ &= 16{,}15\,\text{J} \\ W_3 &= 0{,}5 \cdot (15{,}1 + 11{,}0)\,\text{N} \cdot 1{,}0\,\text{m} \\ &= 13{,}05\,\text{J} \\ W_4 &= 0{,}5 \cdot (11{,}0 + 6{,}0)\,\text{N} \cdot 1{,}0\,\text{m} \\ &= 8{,}5\,\text{J} \\ W &= 17{,}6\,\text{J} + 16{,}15\,\text{J} + 13{,}05\,\text{J} + 8{,}5\,\text{J} \\ &= 55{,}3\,\text{J} \end{aligned}$$
+$$\begin{aligned} W_1 &= 0{,}5 \cdot (18{,}0 + 17{,}2)\,\text{N} \\ &\quad \cdot 1{,}0\,\text{m} = 17{,}6\,\text{J} \\ W_2 &= 0{,}5 \cdot (17{,}2 + 15{,}1)\,\text{N} \\ &\quad \cdot 1{,}0\,\text{m} = 16{,}15\,\text{J} \\ W_3 &= 0{,}5 \cdot (15{,}1 + 11{,}0)\,\text{N} \\ &\quad \cdot 1{,}0\,\text{m} = 13{,}05\,\text{J} \\ W_4 &= 0{,}5 \cdot (11{,}0 + 6{,}0)\,\text{N} \\ &\quad \cdot 1{,}0\,\text{m} = 8{,}5\,\text{J} \\ W &= 17{,}6\,\text{J} + 16{,}15\,\text{J} \\ &\quad + 13{,}05\,\text{J} + 8{,}5\,\text{J} \\ &= 55{,}3\,\text{J} \end{aligned}$$
 **Vastaus:** $55\,\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, koska osan leveys $\Delta s = 1{,}0\,\text{m}$ ja loppuvoima $6{,}0\,\text{N}$ on annettu kahdella merkitsevällä numerolla.
 **Järkevyys:** Keskimääräinen voima koko $4{,}0\,\text{m}$:n matkalla on $55{,}3\,\text{J} / 4{,}0\,\text{m} \approx 14\,\text{N}$. Se on voiman pienimmän ($6{,}0\,\text{N}$) ja suurimman ($18{,}0\,\text{N}$) arvon välissä. Karkea arvio: $18\,\text{N} \cdot 4{,}0\,\text{m} = 72\,\text{J}$ on yläraja ja $6\,\text{N} \cdot 4{,}0\,\text{m} = 24\,\text{J}$ on alaraja. Tulos on niiden välissä.
 
