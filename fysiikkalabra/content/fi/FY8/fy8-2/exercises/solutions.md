@@ -117,3 +117,70 @@
 **Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $E_\text{UV} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{365 \cdot 10^{-9}\,\text{m}} = 5{,}4424 \cdot 10^{-19}\,\text{J} = 3{,}3973\,\text{eV}$, $E_2 = 3{,}3973\,\text{eV} - 1{,}20\,\text{eV} = 2{,}1973\,\text{eV} = 3{,}5200 \cdot 10^{-19}\,\text{J}$ ja $\lambda_2 = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}5200 \cdot 10^{-19}\,\text{J}} = 5{,}6434 \cdot 10^{-7}\,\text{m} = 564{,}34\,\text{nm}$
 **Vastaus:** $564\,\text{nm}$, kolme merkitsevää numeroa kuten aallonpituudessa $365\,\text{nm}$ ja energiassa $1{,}20\,\text{eV}$.
 **Järkevyys:** Toisen fotonin energia $2{,}2\,\text{eV}$ on pienempi kuin UV-fotonin, joten aallonpituus on pidempi: kellanvihreää valoa. Arvio: $\tfrac{1240}{1{,}20}\,\text{nm} \approx 1030\,\text{nm}$ on infrapunaa, kuten tehtävässä sanotaan, ja $1{,}2\,\text{eV} + \tfrac{1240}{564}\,\text{eV} \approx 3{,}4\,\text{eV}$ on absorboidun fotonin energia.
+
+## fy8-2-L1-06
+**Kysytty:** mikä selittää jatkuvan värikaistan, jonka päällä on kapeita tummia viivoja.
+**Periaate:** Kaasun atomi voi absorboida vain fotonin, jonka energia on täsmälleen kahden energiatilan erotus. Kun jatkuvaa spektriä lähettävän lähteen valo kulkee kylmän kaasun läpi, näitä fotoneja puuttuu läpi tulleesta valosta, ja spektriin jää tummat viivat niille aallonpituuksille.
+**Mallivastaus:** Tummat viivat syntyvät, kun valo on kulkenut kylmän kaasun läpi ja kaasun atomit ovat absorboineet ne fotonit, joiden energia on kahden energiatilan erotus. Tällainen spektri on absorptiospektri. Ohuen hehkuvan kaasun valo antaisi päinvastoin kirkkaita viivoja tummalla pohjalla, ja kuuma kiinteä kappale antaisi jatkuvan spektrin ilman viivoja. Tasainen himmeneminen kaikilla aallonpituuksilla ei tekisi kapeita viivoja.
+
+## fy8-2-L1-07
+**Kysytty:** miksi jokaisella alkuaineella on omat spektriviivansa.
+**Periaate:** Atomin energiatilat ovat kvantittuneet, ja siirtymässä ylemmästä tilasta alempaan atomi lähettää fotonin, jonka energia on tilojen energioiden erotus. Viivan aallonpituus määräytyy tästä erotuksesta, joten viivat kertovat atomin energiatiloista.
+**Mallivastaus:** Alkuaineen atomien energiatilat ovat kvantittuneet, ja ne ovat erilaiset eri alkuaineilla, koska ytimen varaus ja elektronien määrä ovat erilaiset. Atomi lähettää fotonin siirtyessään ylemmästä energiatilasta alempaan, ja fotonin energia on tilojen energioiden erotus. Koska erotukset ovat eri alkuaineilla erilaiset, myös fotonien aallonpituudet ja siis spektriviivat ovat erilaiset. Siksi alkuaineen voi tunnistaa spektristä kuin sormenjäljestä.
+
+## fy8-2-L1-08
+**Kysytty:** mikä oppilaan päättelyssä on virhe, kun hän päättelee siirtymän $n = 2 \to n = 3$ lähettävän fotonin.
+**Periaate:** Tilan $n = 3$ energia $-1{,}51\,\text{eV}$ on suurempi kuin tilan $n = 2$ energia $-3{,}40\,\text{eV}$, joten siirtymässä atomin energia kasvaa. Energia säilyy, joten kasvun täytyy tulla jostakin: atomi ottaa sen vastaan absorboimalla fotonin. Fotoni lähtee atomista vain siirtymässä ylemmästä tilasta alempaan.
+**Mallivastaus:** Erotuksen lukuarvo $1{,}89\,\text{eV}$ on oikein, mutta siirtymässä alemmasta tilasta ylempään atomi absorboi fotonin eikä lähetä sitä. Fotonin energian täytyy olla täsmälleen tämä erotus. Fotonin energia on tilojen erotus eikä summa, ja erotusta ei jaeta Planckin vakiolla, koska erotus on jo fotonin energia. Energia $1{,}89\,\text{eV}$ on näkyvää punaista valoa eikä liian pieni valoksi.
+
+## fy8-2-L2-05
+**Annettu:** mitatut viivat $435{,}7\,\text{nm}$, $546{,}3\,\text{nm}$ ja $577{,}2\,\text{nm}$, taulukosta alkuaineiden viivat, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** a) alkuaine, b) vihreän viivan fotonin energia $E$ elektronivoltteina
+**Periaate:** Jokaisella alkuaineella on omat viivansa, koska energiatilat ovat erilaiset, joten alkuaine tunnistetaan vertaamalla kaikkia mitattuja viivoja taulukkoon. Elohopean taulukkoarvot $435{,}8\,\text{nm}$, $546{,}1\,\text{nm}$ ja $577{,}0\,\text{nm}$ poikkeavat mitatuista enintään $0{,}2\,\text{nm}$. Vedyn viiva $434{,}0\,\text{nm}$ on lähellä ensimmäistä viivaa, mutta vedyllä ei ole viivaa $546\,\text{nm}$:n eikä $577\,\text{nm}$:n lähellä, eikä heliumilla tai natriumilla ole kolmea sopivaa viivaa. Lampussa on siis elohopeaa. Fotonin energia on $hf = \tfrac{hc}{\lambda}$.
+**Kaava:** $E = hf = \dfrac{hc}{\lambda}$
+**Muunnokset:** $546{,}3\,\text{nm} = 546{,}3 \cdot 10^{-9}\,\text{m}$. Tulos jouleina muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
+**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546{,}3 \cdot 10^{-9}\,\text{m}} = 3{,}6362 \cdot 10^{-19}\,\text{J} = \dfrac{3{,}6362 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 2{,}2698\,\text{eV}$
+**Vastaus:** $2{,}27\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $546{,}3\,\text{nm}$.
+**Järkevyys:** Arviolla $\tfrac{1240\,\text{eV}\,\text{nm}}{546{,}3\,\text{nm}} \approx 2{,}27\,\text{eV}$. Vihreän valon fotonin energia on punaisen ($1{,}9\,\text{eV}$) ja violetin ($3{,}0\,\text{eV}$) välissä, kuten pitää.
+
+## fy8-2-L2-06
+**Annettu:** viivan C aallonpituus $\lambda = 486{,}0\,\text{nm}$, alemman tilan energia $E_2 = -3{,}40\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** a) tunnistetut alkuaineet, b) ylemmän tilan energia $E_\text{y}$ elektronivoltteina
+**Periaate:** Tummat viivat ovat absorptiospektri: Auringon viileämmän ilmakehän atomit absorboivat fotonit, joiden energia on kahden energiatilan erotus, ja viivat ovat samoilla aallonpituuksilla kuin saman alkuaineen emissioviivat. Viivat B, C ja G ovat vedyn, A kalsiumin, D magnesiumin ja F natriumin viivoja, joten ilmakehässä on näitä alkuaineita. Viiva E ($527{,}1\,\text{nm}$) ei vastaa mitään vertailuviivaa. Absorptiossa atomin energia kasvaa fotonin energian verran.
+**Kaava:** $E_\text{y} - E_2 = \dfrac{hc}{\lambda}$, josta $E_\text{y} = E_2 + \dfrac{hc}{\lambda}$
+**Muunnokset:** $486{,}0\,\text{nm} = 486{,}0 \cdot 10^{-9}\,\text{m}$. Joulet muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
+**Sijoitus:** $\dfrac{hc}{\lambda} = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{486{,}0 \cdot 10^{-9}\,\text{m}} = 4{,}0874 \cdot 10^{-19}\,\text{J} = 2{,}5514\,\text{eV}$ ja $E_\text{y} = -3{,}40\,\text{eV} + 2{,}5514\,\text{eV} = -0{,}8486\,\text{eV}$
+**Vastaus:** $-0{,}85\,\text{eV}$, sadasosien tarkkuudella kuten tilan energia $-3{,}40\,\text{eV}$.
+**Järkevyys:** Energia on suurempi kuin $-3{,}40\,\text{eV}$ ja pienempi kuin nolla, jossa elektroni irtoaisi, kuten absorptiossa kuuluu. Se on vedyn tilan $n = 4$ energia, koska $-13{,}6\,\text{eV} : 16 = -0{,}85\,\text{eV}$.
+
+## fy8-2-L2-07
+**Annettu:** elohopean viivat ja asteikon lukemat taulukosta, tuntemattoman viivan lukema $x = 16{,}4\,\text{mm}$
+**Kysytty:** a) lähteiden spektrit ja niiden erottaminen, b) tuntemattoman viivan aallonpituus $\lambda$ nanometreinä
+**Periaate:** Hehkulamppu lähettää jatkuvan spektrin eli yhtenäisen värikaistan ilman erillisiä viivoja, kun taas kaasupurkausputken ohut kaasu lähettää viivaspektrin: erillisiä kirkkaita viivoja tummalla pohjalla. Spektroskoopin asteikko on lähes lineaarinen, joten aallonpituus on asteikon lukeman lineaarinen funktio $\lambda = kx + b$. Tunnetut elohopean viivat kalibroivat asteikon, ja tuntematon viiva luetaan sovitetulta suoralta.
+**Kuvaajan lukeminen:** Kuvaajan pisteet $(x, \lambda)$ ovat elohopean neljä viivaa: $(8{,}7\,\text{mm}; 404{,}7\,\text{nm})$ ja $(23{,}1\,\text{mm}; 577{,}0\,\text{nm})$ rajaavat mittausalueen. Pisteet asettuvat likimain suoralle mutta eivät täsmälleen sille, koska asteikon lukeminen on epätarkkaa. Suora piirretään pisteiden lomaan, ja sen kulmakerroin luetaan kahdesta suoralta valitusta pisteestä, joista toinen on kuvaajan alalaidassa ja toinen yläpäässä. Sovitetun suoran yhtälö on $\lambda = 12{,}0\,\tfrac{\text{nm}}{\text{mm}} \cdot x + 299{,}6\,\text{nm}$. Tuntemattoman viivan aallonpituus luetaan suoralta kohdasta $x = 16{,}4\,\text{mm}$.
+**Kaava:** $\lambda = kx + b$
+**Muunnokset:** Ei tarvita: lukema on millimetreinä ja kulmakerroin on yksikössä $\tfrac{\text{nm}}{\text{mm}}$, joten tulos tulee suoraan nanometreinä.
+**Sijoitus:** $\lambda = 12{,}01\,\tfrac{\text{nm}}{\text{mm}} \cdot 16{,}4\,\text{mm} + 299{,}6\,\text{nm} = 496{,}6\,\text{nm}$
+**Vastaus:** $497\,\text{nm}$, kolme merkitsevää numeroa kuten lukemassa $16{,}4\,\text{mm}$ ja aallonpituuksissa.
+**Järkevyys:** Arvo on elohopean viivojen $435{,}8\,\text{nm}$ ja $546{,}1\,\text{nm}$ välissä, ja lukema $16{,}4\,\text{mm}$ on niiden lukemien $11{,}4\,\text{mm}$ ja $20{,}5\,\text{mm}$ välissä. Pelkästään näitä kahta pistettä käyttävä interpolointi antaa $435{,}8\,\text{nm} + 12{,}1\,\tfrac{\text{nm}}{\text{mm}} \cdot 5{,}0\,\text{mm} = 496{,}3\,\text{nm}$, eli sama tulos. Aallonpituus on sinivihreää valoa kuten tehtävässä.
+
+## fy8-2-L3-04
+**Annettu:** viivojen aallonpituudet $318\,\text{nm}$, $443\,\text{nm}$, $517\,\text{nm}$, $827\,\text{nm}$ ja $954\,\text{nm}$, kuudes viiva on pisin, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** kuudennen viivan aallonpituus $\lambda_6$ nanometreinä
+**Periaate:** Jokainen viiva on kahden tilan erotus $\tfrac{hc}{\lambda}$. Viritystilojen energiat perustilasta ovat $E_1 < E_2 < E_3$, ja kuusi viivaa ovat $E_1$, $E_2$, $E_3$, $E_2 - E_1$, $E_3 - E_2$ ja $E_3 - E_1$. Lyhin aallonpituus on suurin energia $E_3$. Kaksi muuta viivaa, joiden summa on $E_3$, ovat pari: $E_1$ ja $E_3 - E_1$ tai $E_2$ ja $E_3 - E_2$. Puuttuva viiva on pienin energia, ja sen pari mitatuista viivoista jää ilman paria.
+**Kaava:** $E = \dfrac{hc}{\lambda}$ ja $E_1 = E_3 - (E_3 - E_1)$, josta $\lambda_6 = \dfrac{hc}{E_1}$
+**Muunnokset:** $1\,\text{nm} = 10^{-9}\,\text{m}$; joulet muutetaan elektronivoltteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
+**Sijoitus:** $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Mitatut energiat ovat $3{,}90\,\text{eV}$, $2{,}80\,\text{eV}$, $2{,}40\,\text{eV}$, $1{,}50\,\text{eV}$ ja $1{,}30\,\text{eV}$, joten $E_3 = 3{,}90\,\text{eV}$. Pari $2{,}40\,\text{eV} + 1{,}50\,\text{eV} = 3{,}90\,\text{eV}$ on $E_2$ ja $E_3 - E_2$. Energian $2{,}80\,\text{eV}$ pari on $3{,}90\,\text{eV} - 2{,}80\,\text{eV} = 1{,}10\,\text{eV}$, jota ei ole mitattu, joten se on puuttuva viiva $E_1$. Tasot ovat $1{,}10\,\text{eV}$, $2{,}40\,\text{eV}$ ja $3{,}90\,\text{eV}$ perustilan $0$ yläpuolella, ja $E_2 - E_1 = 1{,}30\,\text{eV}$. Näin $\lambda_6 = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}10 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}} = 1{,}127 \cdot 10^{-6}\,\text{m} = 1127\,\text{nm}$
+**Vastaus:** $1130\,\text{nm}$, kolme merkitsevää numeroa kuten mitatuissa aallonpituuksissa.
+**Järkevyys:** Välit $1{,}10\,\text{eV}$, $1{,}30\,\text{eV}$ ja $1{,}50\,\text{eV}$ summautuvat arvoon $3{,}90\,\text{eV}$, ja kaikki viisi mitattua viivaa löytyvät tasoista. Aallonpituus on pidempi kuin pisin mitattu $954\,\text{nm}$ ja yli $780\,\text{nm}$, eli infrapunaa, kuten tehtävässä sanotaan.
+
+## fy8-2-L3-05
+**Annettu:** absorboitu valo $\lambda_\text{abs}$ ja fluoresenssivalo $\lambda_\text{fl}$: A $365\,\text{nm}$ ja $450\,\text{nm}$, B $405\,\text{nm}$ ja $520\,\text{nm}$, C $450\,\text{nm}$ ja $530\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** lämmöksi muuttuvan energian osuus $p$ absorboidun fotonin energiasta prosentteina, suurin kolmesta
+**Periaate:** Väriaine absorboi fotonin ja lähettää yhden fluoresenssifotonin. Energia säilyy, joten absorboidun fotonin energia on lähetetyn fotonin energia ja lämmöksi muuttuva energia $Q$ yhteensä. Fluoresenssifotoni on pidempiaaltoinen, joten sen energia on pienempi.
+**Kaava:** $E = \dfrac{hc}{\lambda}$, $Q = E_\text{abs} - E_\text{fl}$ ja $p = \dfrac{Q}{E_\text{abs}} = 1 - \dfrac{\lambda_\text{abs}}{\lambda_\text{fl}}$
+**Muunnokset:** $1\,\text{nm} = 10^{-9}\,\text{m}$; joulet muutetaan elektronivoltteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$. Osuudessa $p$ vakiot $h$ ja $c$ supistuvat pois.
+**Sijoitus:** Väriaineen B energiat ovat $E_\text{abs} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{405 \cdot 10^{-9}\,\text{m}} = 3{,}0617\,\text{eV}$ ja $E_\text{fl} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{520 \cdot 10^{-9}\,\text{m}} = 2{,}3846\,\text{eV}$, joten $Q = 0{,}6771\,\text{eV}$ ja $p = \dfrac{0{,}6771\,\text{eV}}{3{,}0617\,\text{eV}} = 0{,}2211 = 22{,}11\,\%$. Väriaineille A ja C vastaavat energiat ovat $3{,}397\,\text{eV}$ ja $2{,}756\,\text{eV}$ sekä $2{,}756\,\text{eV}$ ja $2{,}340\,\text{eV}$, ja osuudet $1 - \tfrac{365}{450} = 0{,}189$ ja $1 - \tfrac{450}{530} = 0{,}151$.
+**Vastaus:** $22{,}1\,\%$ väriaineessa B, kolme merkitsevää numeroa kuten aallonpituuksissa. Muissa osuus on pienempi.
+**Järkevyys:** Arvio $1 - \tfrac{405}{520} \approx 1 - 0{,}78 = 0{,}22$ antaa saman tuloksen. Fluoresenssifotonin energia $2{,}38\,\text{eV}$ on pienempi kuin absorboidun $3{,}06\,\text{eV}$, kuten pidempiaaltoisen valon pitää olla.
+**Mallivastaus:** Absorboinut molekyyli on viritystilassa. Ennen fotonin lähettämistä osa sen energiasta muuttuu molekyylin ja ympäristön lämpöliikkeen energiaksi, joten lähetetyn fotonin energia on pienempi kuin absorboidun. Pienempi energia tarkoittaa pidempää aallonpituutta, koska $E = \tfrac{hc}{\lambda}$.

@@ -39,6 +39,75 @@
       "answer": 3.18,
       "unit": "10¹⁵ 1/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L1-06",
+      "level": 1,
+      "text": "Kaksoisrakokokeessa laserin valo himmennetään niin, että fotonit saapuvat rakoihin yksi kerrallaan. Kun osumia on kertynyt tuhansia, varjostimelle on syntynyt raitakuvio. Mikä selitys sopii havaintoon?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Aalto määrää todennäköisyyden, jolla fotoni rekisteröidään kussakin kohdassa, ja kirkkaisiin raitoihin kertyy eniten osumia.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Aalto määrää todennäköisyyden, jolla fotoni rekisteröidään kussakin kohdassa, ja kirkkaisiin raitoihin kertyy eniten osumia.",
+          "feedback": "Oikein: yksittäisen fotonin osumakohta on satunnainen, mutta aaltomalli kertoo havaitsemisen todennäköisyyden. Tuhansista osumista kertyy raitakuvio, jossa kirkkaisiin raitoihin osuu eniten ja tummiin vähiten.",
+          "correct": true
+        },
+        {
+          "text": "Peräkkäiset fotonit törmäilevät toisiinsa raoissa ja ohjaavat toistensa suuntia, joten osumat kasautuvat tiettyihin raitoihin.",
+          "feedback": "Fotonit saapuvat yksi kerrallaan, joten raoissa ei ole yhtä aikaa toista fotonia, johon törmätä. Kuvio syntyy silti, joten sen syy ei ole fotonien keskinäinen vuorovaikutus."
+        },
+        {
+          "text": "Jokainen fotoni jakautuu kahteen osaan, ja osat osuvat varjostimelle eri kohtiin, joten jo yksi fotoni piirtää raitakuvion.",
+          "feedback": "Fotoni rekisteröidään aina kokonaisena yhdessä kohdassa. Yksittäinen osuma on piste, ja raitakuvio näkyy vasta, kun osumia on kertynyt paljon."
+        },
+        {
+          "text": "Jokainen fotoni kulkee vain toisen raon kautta kuin kuula, ja raidat syntyvät raon reunoista heijastuneista fotoneista.",
+          "feedback": "Kuulamallissa osumat jakautuisivat kahden rakokuvion summaksi eikä tummia raitoja syntyisi. Havaitut tummat raidat, joihin osuu lähes yhtään fotonia, eivät sovi tähän malliin."
+        }
+      ]
+    },
+    {
+      "id": "fy8-4-L1-07",
+      "level": 1,
+      "text": "Sinivioletti laserdiodi lähettää valoa, jonka aallonpituus on $405\\,\\text{nm}$. Kuinka suuri on yhden fotonin energia? Anna vastaus elektronivoltteina.",
+      "answer": 3.06,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L1-08",
+      "level": 1,
+      "text": "Oppilas väittää: \"Fotonilla ei ole massaa, joten sillä ei ole liikemäärää. Siksi valo ei voi työntää peiliä, johon se heijastuu.\" Mikä oppilaan päättelyssä on virheellistä?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Liikemäärä ei vaadi massaa: fotonin liikemäärä riippuu energiasta, ja peili saa liikemäärää heijastuksessa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Liikemäärä ei vaadi massaa: fotonin liikemäärä riippuu energiasta, ja peili saa liikemäärää heijastuksessa.",
+          "feedback": "Oikein: fotonin liikemäärä on sen energia jaettuna valon nopeudella, joten sillä on liikemäärä ilman massaa. Heijastuksessa fotonin liikemäärä muuttuu ja liikemäärän säilymisen vuoksi peili saa saman suuruisen liikemäärän.",
+          "correct": true
+        },
+        {
+          "text": "Fotonilla on pieni mutta nollasta poikkeava massa, ja massa tekee siitä liikemäärän kantajan, joka työntää peiliä.",
+          "feedback": "Fotonilla ei ole massaa. Sen liikemäärä johtuu energiasta, ei massasta, joten korjaus ei saa lisätä fotonille massaa."
+        },
+        {
+          "text": "Peiliä työntää valon lämpö eikä fotonien liikemäärä, joten liikemäärää ei tarvita työnnön selittämiseen.",
+          "feedback": "Työntö syntyy liikemäärän siirtymisestä, ei lämmöstä. Se voidaan mitata myös silloin, kun peili ei lämpene merkittävästi, ja se selittyy fotonin liikemäärällä."
+        },
+        {
+          "text": "Fotonin liikemäärä on olemassa, mutta se ei siirry peiliin, koska liikemäärä ei säily fotonin heijastuessa.",
+          "feedback": "Liikemäärä säilyy aina. Kun fotonin liikemäärä kääntyy vastakkaiseksi, peili saa erotuksen ja kokonaisliikemäärä pysyy samana."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +142,124 @@
       "answer": 8.67,
       "unit": "10⁻¹⁵ W",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L2-05",
+      "level": 2,
+      "text": "Esimerkkiaineisto: kaksoisrakokokeessa yksittäiset fotonit rekisteröidään varjostimella, joka on jaettu seitsemään yhtä leveään kaistaan. Taulukossa on kunkin kaistan osumamäärä, kun osumia on kertynyt yhteensä $N = 50$, $N = 500$ ja $N = 5000$. Kaista 4 on varjostimen keskellä.\n\na) Laske kaistan 4 osumien osuus kaikista osumista prosentteina kullakin kolmella $N$:n arvolla.\n\nb) Kuinka moninkertainen osumamäärä kaistalla 4 on kaistaan 3 verrattuna, kun $N = 5000$?\n\nc) Mikä pienin taulukon $N$:n arvo riittää siihen, että kirkkaat ja tummat kaistat erottuvat selvästi toisistaan? Perustele osumamäärillä.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 11.4,
+      "unit": "",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Osumamäärät kaistoittain",
+        "columns": [
+          "Kaista",
+          "$N = 50$",
+          "$N = 500$",
+          "$N = 5000$"
+        ],
+        "rows": [
+          [
+            "1",
+            "3",
+            "22",
+            "191"
+          ],
+          [
+            "2",
+            "6",
+            "88",
+            "914"
+          ],
+          [
+            "3",
+            "3",
+            "18",
+            "208"
+          ],
+          [
+            "4",
+            "22",
+            "248",
+            "2377"
+          ],
+          [
+            "5",
+            "5",
+            "23",
+            "213"
+          ],
+          [
+            "6",
+            "7",
+            "87",
+            "889"
+          ],
+          [
+            "7",
+            "4",
+            "14",
+            "208"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-4-L2-06",
+      "level": 2,
+      "text": "Esimerkkiaineisto: röntgensäteilyä, jonka aallonpituus on $\\lambda = 71{,}10\\,\\text{pm}$, siroaa grafiitista. Taulukossa on sironneen säteilyn aallonpituus $\\lambda'$ eri sirontakulmilla $\\theta$.\n\na) Laske kullekin kulmalle aallonpituuden muutos $\\Delta\\lambda = \\lambda' - \\lambda$ ja luku $1 - \\cos\\theta$.\n\nb) Piirrä mittauspisteistä kuvaaja, jonka vaaka-akselilla on $1 - \\cos\\theta$ ja pystyakselilla $\\Delta\\lambda$, ja sovita pisteisiin suora. Määritä suoran kulmakerroin ja kerro, mitä se ilmaisee.\n\nc) Kuinka suuri on aallonpituuden muutos, kun fotoni sironnee suoraan takaisin ($\\theta = 180\\,{}^\\circ$)? Käytä sovitettua suoraa.\n\nAnna c)-kohdan tulos vastauslaatikkoon pikometreinä.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 4.85,
+      "unit": "pm",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Sironneen röntgensäteilyn aallonpituus",
+        "columns": [
+          "$\\theta\\,({}^\\circ)$",
+          "$\\lambda'\\,(\\text{pm})$"
+        ],
+        "rows": [
+          [
+            "30",
+            "71.42"
+          ],
+          [
+            "60",
+            "72.30"
+          ],
+          [
+            "90",
+            "73.55"
+          ],
+          [
+            "120",
+            "74.70"
+          ],
+          [
+            "150",
+            "75.65"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-4-L2-07",
+      "level": 2,
+      "text": "Oppilas laskee punaisen laserin fotonivirran näin: \"Aallonpituus on $650\\,\\text{nm}$ ja teho $5{,}00\\,\\text{mW}$. Yhden fotonin energia on $hf = \\dfrac{hc}{\\lambda}$. Sijoitan aallonpituudeksi $650$ ja saan $hf = 3{,}06 \\cdot 10^{-28}\\,\\text{J}$. Fotoneja tulee sekunnissa $\\dfrac{N}{t} = \\dfrac{P}{hf} = 1{,}6 \\cdot 10^{25}\\,\\tfrac{1}{\\text{s}}$.\"\n\na) Missä oppilaan laskussa on virhe? Mistä voi päätellä jo ennen laskua, ettei tulos $1{,}6 \\cdot 10^{25}\\,\\tfrac{1}{\\text{s}}$ voi olla oikea? Vertaa luvussa mainittuun $1\\,\\text{mW}$:n laserosoittimeen, joka lähettää noin $3 \\cdot 10^{15}$ fotonia sekunnissa.\n\nb) Laske fotonien lukumäärä sekunnissa oikein.\n\nAnna b)-kohdan tulos vastauslaatikkoon yksikössä $10^{16}\\,\\tfrac{1}{\\text{s}}$.",
+      "kind": [
+        "error"
+      ],
+      "answer": 1.64,
+      "unit": "10¹⁶ 1/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +286,52 @@
       "answer": 0.604,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-4-L3-04",
+      "level": 3,
+      "text": "Esimerkkiaineisto: kaksoisrakokokeessa käytetään vihreää laseria, jonka aallonpituus on $532\\,\\text{nm}$. Valo himmennetään suodattimilla niin, että rakoihin tulevan valon teho on $1{,}5 \\cdot 10^{-15}\\,\\text{W}$. Rakojen läpi kulkeneista fotoneista $20\\,\\%$ osuu ilmaisimen alueelle, ja ilmaisin rekisteröi $40\\,\\%$ siihen osuvista fotoneista. Laitteen pituus on $1{,}5\\,\\text{m}$.\n\na) Kuinka monta fotonia sekunnissa tulee rakoihin?\n\nb) Kuinka monta osumaa sekunnissa ilmaisin rekisteröi?\n\nc) Kuinka kauan kestää kerätä $5000$ osumaa?\n\nd) Kuinka pitkä on peräkkäisten fotonien keskimääräinen etäisyys? Perustele sen avulla, miksi raitakuvio ei voi syntyä fotonien törmäilystä toisiinsa.\n\nAnna c)-kohdan tulos vastauslaatikkoon sekunteina.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 15.6,
+      "unit": "s",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-4-L3-05",
+      "level": 3,
+      "text": "Esimerkkiaineisto: röntgenfotoneja, joiden aallonpituus on $\\lambda = 0{,}07110\\,\\text{nm}$, siroaa lähes vapaista, aluksi levossa olevista elektroneista. Taulukossa on sironneen fotonin aallonpituus $\\lambda'$ kolmella sirontakulmalla $\\theta$ (kulma tulevan ja sironneen fotonin suuntien välillä). Tarkastellaan sirontaa kulmassa $\\theta = 120\\,{}^\\circ$.\n\na) Laske tulevan ja sironneen fotonin liikemäärät $p$ ja $p'$.\n\nb) Liikemäärä säilyy vektorisuureena: $\\overline{p} = \\overline{p}' + \\overline{p}_e$. Piirrä liikemäärien vektorikolmio ja laske sen avulla kosinilauseella elektronin liikemäärän suuruus $p_e$.\n\nc) Laske elektronin liike-energia kahdella tavalla: liikemäärästä kaavalla $E_\\text{k} = \\dfrac{p_e^2}{2m_e}$, missä $m_e = 9{,}109 \\cdot 10^{-31}\\,\\text{kg}$, ja energian säilymisestä. Sopivatko tulokset yhteen?\n\nAnna b)-kohdan tulos vastauslaatikkoon yksikössä $10^{-23}\\,\\text{kg}\\cdot\\text{m/s}$.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.57,
+      "unit": "10⁻²³ kg·m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Sironneen fotonin aallonpituus",
+        "columns": [
+          "$\\theta\\,({}^\\circ)$",
+          "$\\lambda'\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "60",
+            "0.07230"
+          ],
+          [
+            "90",
+            "0.07353"
+          ],
+          [
+            "120",
+            "0.07476"
+          ]
+        ]
+      }
     }
   ]
 }

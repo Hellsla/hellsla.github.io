@@ -39,6 +39,59 @@
       "answer": 0.69,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-06",
+      "level": 1,
+      "text": "Natriumpintaan osuu violettia valoa, ja pinnasta irtoaa elektroneja. Valon taajuus pidetään samana, mutta valon kirkkautta eli intensiteettiä kasvatetaan kaksinkertaiseksi. Mitä tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Elektroneja irtoaa enemmän, mutta niiden suurin liike-energia pysyy samana, koska yhden fotonin energia ei muutu.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Elektroneja irtoaa enemmän, mutta niiden suurin liike-energia pysyy samana, koska yhden fotonin energia ei muutu.",
+          "correct": true,
+          "feedback": "Oikein: kirkkaampi valo tuo pinnalle enemmän fotoneja sekunnissa, ja jokainen fotoni voi irrottaa yhden elektronin, joten elektroneja irtoaa enemmän. Yhden fotonin energia $hf$ riippuu vain taajuudesta, joten suurin liike-energia $E_\\text{k,max} = hf - W$ ei muutu."
+        },
+        {
+          "text": "Elektroneja irtoaa enemmän ja niiden suurin liike-energia kasvaa, koska elektroni saa energiaa kaikista valon fotoneista.",
+          "feedback": "Tämä on aaltomallin virhe. Yksi elektroni absorboi yhden fotonin kerrallaan eikä kerää energiaa muista fotoneista, joten sen liike-energiaa ei kasvata valon määrä. Suurin liike-energia kasvaa vain, jos taajuus kasvaa."
+        },
+        {
+          "text": "Elektronien määrä pysyy samana, mutta suurin liike-energia kasvaa, koska valon aaltojen amplitudi ja energia kasvavat.",
+          "feedback": "Valosähköisessä ilmiössä elektroneja irtoaa sitä enemmän, mitä enemmän fotoneja pinnalle osuu, joten määrä kasvaa. Aaltomallin ajatus siitä, että suurempi amplitudi antaisi elektronille enemmän liike-energiaa, ei vastaa havaintoja."
+        },
+        {
+          "text": "Sekä elektronien määrä että suurin liike-energia pysyvät samoina, koska irtoaminen riippuu vain irrotustyöstä.",
+          "feedback": "Irrotustyö määrää, irtoaako elektroneja lainkaan, mutta ei sitä, kuinka monta niitä irtoaa. Kun fotoneja tulee enemmän, myös niiden irrottamien elektronien määrä kasvaa, vaikka jokaisen energia pysyy samana."
+        }
+      ]
+    },
+    {
+      "id": "fy8-1-L1-07",
+      "level": 1,
+      "text": "Kaliumin irrotustyö on $2{,}30\\,\\text{eV}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Laske kaliumin rajataajuus $f_0$.\n\nb) Laske rajataajuutta vastaava aallonpituus $\\lambda_0$ ja päättele sen avulla, irrottaako punainen valo, jonka aallonpituus on $650\\,\\text{nm}$, elektroneja kaliumista.\n\nVastaa laatikkoon kohdan a) rajataajuus hertseinä.",
+      "kind": [
+        "data"
+      ],
+      "answer": 556000000000000.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-08",
+      "level": 1,
+      "text": "Natriumin irrotustyö on $2{,}28\\,\\text{eV}$. Himmeä ultraviolettilamppu, jonka valon aallonpituus on $365\\,\\text{nm}$, irrottaa natriumpinnasta elektroneja heti, kun lamppu sytytetään. Fotonin energia on tällä aallonpituudella $3{,}40\\,\\text{eV}$. Kirkas punainen lamppu, jonka valon aallonpituus on $650\\,\\text{nm}$ ja fotonin energia $1{,}91\\,\\text{eV}$, ei irrota elektroneja lainkaan, vaikka sitä pidettäisiin päällä pitkään.\n\nSelitä fotonimallin avulla, miksi himmeä ultraviolettilamppu irrottaa elektroneja heti mutta kirkas punainen lamppu ei irrota yhtään.",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Elektroni irtoaa, kun se absorboi yhden fotonin, jonka energia on vähintään irrotustyön suuruinen. Ultraviolettifotonin energia $3{,}40\\,\\text{eV}$ on suurempi kuin irrotustyö $2{,}28\\,\\text{eV}$, joten jo yksi fotoni irrottaa elektronin heti, vaikka fotoneja tulisi vähän. Punaisen valon fotonin energia $1{,}91\\,\\text{eV}$ on pienempi kuin irrotustyö, joten yksikään fotoni ei yksin riitä, eikä energiaa kerry useammasta fotonista. Siksi fotonien suuri määrä eli kirkkaus ei auta.",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +126,123 @@
       "answer": 2.28,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L2-05",
+      "level": 2,
+      "text": "Valosähköisessä kokeessa mitataan estojännite $U_\\text{s}$ eli pienin vastajännite, joka pysäyttää kaikki irtoavat elektronit, eri aallonpituuksilla. Taulukko on esimerkkiaineisto, ja jännitteen mittausepävarmuus on noin $\\pm 0{,}02\\,\\text{V}$. Suurin liike-energia on $E_\\text{k,max} = eU_\\text{s}$, missä $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Valon nopeus on $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$.\n\na) Laske taajuudet $f = \\tfrac{c}{\\lambda}$ ja piirrä paperille kuvaaja $U_\\text{s}(f)$.\n\nb) Sovita pisteisiin suora ja lue sen kulmakerroin $k$ kahdesta suoralta valitusta pisteestä, ei kahdesta mittauspisteestä. Laske Planckin vakio $h = ek$.\n\nc) Lue suoralta rajataajuus $f_0$ ja päättele metallin irrotustyö.\n\nVastaa laatikkoon kohdan b) Planckin vakio yksikössä $\\text{J}\\,\\text{s}$.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 6.7e-34,
+      "unit": "J s",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Estojännite eri aallonpituuksilla (esimerkkiaineisto)",
+        "columns": [
+          "$\\lambda\\,(\\text{nm})$",
+          "$U_\\text{s}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "365",
+            "1.12"
+          ],
+          [
+            "405",
+            "0.75"
+          ],
+          [
+            "436",
+            "0.55"
+          ],
+          [
+            "470",
+            "0.32"
+          ],
+          [
+            "505",
+            "0.17"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-1-L2-06",
+      "level": 2,
+      "text": "Kahden metallin, A:n ja B:n, pinnoille osuu valoa eri taajuuksilla, ja irtoavien elektronien suurin liike-energia $E_\\text{k,max}$ mitataan. Taulukko on esimerkkiaineisto. Piirrä paperille molempien metallien $E_\\text{k,max}(f)$ samaan kuvaajaan.\n\na) Laske jokaisella taajuudella erotus $E_\\text{k,A} - E_\\text{k,B}$ ja sen keskiarvo $D$.\n\nb) Kumpi metalli, A vai B, on se, jonka irrotustyö on suurempi? Laske, kuinka monta elektronivolttia suurempi se on kuin toisen metallin irrotustyö. Käytä valosähköistä yhtälöä.\n\nc) Selitä, miksi kuvaajan suorat ovat yhdensuuntaisia.\n\nVastaa laatikkoon kohdan b) irrotustöiden erotus elektronivoltteina.",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 0.9,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Suurin liike-energia kahdella metallilla (esimerkkiaineisto)",
+        "columns": [
+          "$f\\,(10^{14}\\,\\text{Hz})$",
+          "$E_\\text{k,A}\\,(\\text{eV})$",
+          "$E_\\text{k,B}\\,(\\text{eV})$"
+        ],
+        "rows": [
+          [
+            "8.0",
+            "1.01",
+            "0.12"
+          ],
+          [
+            "9.0",
+            "1.43",
+            "0.52"
+          ],
+          [
+            "10.0",
+            "1.83",
+            "0.93"
+          ],
+          [
+            "11.0",
+            "2.26",
+            "1.35"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-1-L2-07",
+      "level": 2,
+      "text": "Opiskelija mittaa metallin irtoavien elektronien suurimman liike-energian $E_\\text{k,max}$ kolmella taajuudella (esimerkkiaineisto). Hän piirtää pisteisiin suoran ja sanoo: ”Suora leikkaa pystyakselin kohdassa $-2{,}1\\,\\text{eV}$, joten metallin rajataajuus on $-2{,}1\\,\\text{eV}$.”\n\na) Mikä virhe opiskelijan päättelyssä on? Mitä suoran ja pystyakselin leikkauspiste kertoo ja mistä rajataajuus luetaan?\n\nb) Laske suoran kulmakerroin ensimmäisen ja viimeisen pisteen avulla. Laske sen avulla rajataajuus $f_0$ ja metallin irrotustyö $W$.\n\nVastaa laatikkoon kohdan b) irrotustyö elektronivoltteina.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 2.14,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Suurin liike-energia eri taajuuksilla (esimerkkiaineisto)",
+        "columns": [
+          "$f\\,(10^{14}\\,\\text{Hz})$",
+          "$E_\\text{k,max}\\,(\\text{eV})$"
+        ],
+        "rows": [
+          [
+            "6.5",
+            "0.55"
+          ],
+          [
+            "8.0",
+            "1.17"
+          ],
+          [
+            "9.5",
+            "1.79"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +269,122 @@
       "answer": 550000000000000.0,
       "unit": "Hz",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L3-04",
+      "level": 3,
+      "text": "Valokennon katodia valaistaan valolla, jonka aallonpituus on $400\\,\\text{nm}$. Valon teho on ensin $P_1 = 1{,}0\\,\\text{mW}$ ja sitten $P_2 = 2{,}0\\,\\text{mW}$. Taulukko on esimerkkiaineisto: se antaa kennon virran $I_1$ ja $I_2$ jännitteen $U$ funktiona. Negatiivinen jännite hidastaa elektroneja matkalla katodilta anodille, ja suuri positiivinen jännite kerää kaikki irtoavat elektronit, jolloin virta saavuttaa kyllästysarvonsa. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Lue taulukosta estojännite $U_\\text{s}$ ja laske katodin irrotustyö $W$.\n\nb) Laske, kuinka monta fotonia katodille osuu sekunnissa teholla $P_1$ ja kuinka monta elektronia sekunnissa kyllästysvirta $I_1$ vastaa. Laske näiden avulla, kuinka suuri osuus fotoneista irrottaa elektronin (kvanttisaanto).\n\nc) Laske kvanttisaanto myös teholla $P_2$ ja selitä, miksi estojännite pysyy samana, vaikka kyllästysvirta kaksinkertaistuu.\n\nVastaa laatikkoon kohdan b) kvanttisaanto prosentteina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.093,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Valokennon virta kahdella valotehoilla (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I_1\\,(\\mu\\text{A})$",
+          "$I_2\\,(\\mu\\text{A})$"
+        ],
+        "rows": [
+          [
+            "-1.00",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "-0.80",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "-0.70",
+            "0.01",
+            "0.02"
+          ],
+          [
+            "-0.60",
+            "0.03",
+            "0.06"
+          ],
+          [
+            "-0.40",
+            "0.09",
+            "0.18"
+          ],
+          [
+            "-0.20",
+            "0.16",
+            "0.32"
+          ],
+          [
+            "0.00",
+            "0.22",
+            "0.44"
+          ],
+          [
+            "0.50",
+            "0.27",
+            "0.54"
+          ],
+          [
+            "1.00",
+            "0.29",
+            "0.58"
+          ],
+          [
+            "2.00",
+            "0.30",
+            "0.60"
+          ],
+          [
+            "4.00",
+            "0.30",
+            "0.60"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-1-L3-05",
+      "level": 3,
+      "text": "Valokennon katodi on kaliumia, jonka irrotustyö on $2{,}30\\,\\text{eV}$. Katodia valaistaan kolmella LED-lähteellä yhtä aikaa (taulukko, esimerkkiaineisto). Oletetaan, että jokaista tuhatta katodille osuvaa fotonia kohti, jonka energia riittää irrottamaan elektronin, irtoaa keskimäärin yksi elektroni ja että kennoon on kytketty niin suuri positiivinen jännite, että kaikki irronneet elektronit päätyvät anodille. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Laske jokaisen lähteen fotonin energia elektronivoltteina ja päättele, mitkä lähteet irrottavat elektroneja.\n\nb) Laske kennon virta, kun kaikki kolme lähdettä ovat päällä.\n\nc) Laske estojännite tässä tilanteessa ja selitä, miksi punaisen lähteen suuri teho ei vaikuta virtaan eikä estojännitteeseen.\n\nVastaa laatikkoon kohdan b) kennon virta mikroampeereina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1.8,
+      "unit": "µA",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Katodia valaisevat LED-lähteet (esimerkkiaineisto)",
+        "columns": [
+          "Lähde",
+          "$\\lambda\\,(\\text{nm})$",
+          "$P\\,(\\text{mW})$"
+        ],
+        "rows": [
+          [
+            "A, sininen",
+            "470",
+            "4.0"
+          ],
+          [
+            "B, punainen",
+            "620",
+            "8.0"
+          ],
+          [
+            "C, ultravioletti",
+            "365",
+            "1.0"
+          ]
+        ]
+      }
     }
   ]
 }
