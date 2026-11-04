@@ -13,6 +13,7 @@
     "op": 1,
     "planned_lessons": 8,
     "type": "pakollinen",
+    "exercise_total": 20,
     "tavoitteet": [
       "tutustuu fysiikkaan systemaattisena, kokeellisuuteen nojautuvana tieteenä",
       "tutustuu aineen rakenteen ja maailmankaikkeuden mittasuhteisiin",
@@ -205,6 +206,7 @@
     "op": 1,
     "planned_lessons": 8,
     "type": "pakollinen",
+    "exercise_total": 20,
     "tavoitteet": [
       "perehtyy energiaan fysiikan keskeisenä käsitteenä",
       "tuntee eri energialajeja ja energiantuotantotapoja",

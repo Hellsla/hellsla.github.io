@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0beabf2f6baa81c0
+CONTENT-HASH: b0d6a520defc0939
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json L3-02 — still open: begin the interpretive question with "Perustele lyhyesti:" and split the long situation.
-- exercises.json — still open: no `mistakes` feedback for expected slips (GWh not converted, g instead of kg or t).
+- exercises.json fy2-8-L1-06 — correct option D is the longest (104 vs 101/92/91) by only 3 characters, acceptable; shorten it by one clause for safety.
+- fy2-8-L1-07 — the correct option is the only one with a multi-year period, which is the concept being tested; fine, but all four now sit at 88-93 characters, so no cue remains.
+- fy2-8-L2-05 and L3-04 — both use the Mauna Loa series but different years; L3-04 is the extension of the L2-05 idea (slope, forecast, validity), a good progression. Keep.
+- fy2-8-L3-05 — a) and b) are long chains of multiplications; fine at level 3, but part c) mostly repeats b). Consider replacing c) with a constraint (wind needs backup) if edited again.
 
 ## Checked
-- Delta: L1-05 bar wording now correct; L3-01 conclusion softened (about 10 % margin within uncertainty), consistent with the stated crudeness.
-- L1-05: figure fy2-8/emissions prints 490 at the gas bar; the figure is needed (value not in the text), legible, and its description gives the same data without the answer (the answer is e times 2,4 kWh, not in the figure).
-- The text order is situation first, question last ("Lue ... Kuinka paljon ..."); the dark-grey fossil colour is paired with the bar label, so colour is not alone.
-- The solution adds a reading step (second bar from the top, printed value, axis unit) and then the usual chain; answer 1,2 kg and answers.py unchanged and consistent.
-- The task does not repeat the example (gas, 4800 kWh); levels 5/4/3 unchanged.
-- Finnish in the diff is correct.
+- Round 1: L1-06 and L1-07 length cues removed (all options 88-104 and 88-93 characters, correct D and A); L2-05/L3-04 no longer share data or recompute the same slope; "Kuvaajan lukeminen" no longer used in tasks without a graph; L3-05 now states the carbon-sink fact in the task and refers to "oppitunnin taulukko".
+- Numbers verified: L2-05 2,27 ppm/a, L2-06 61 and 45 Mt, 26 %, L3-01 736 g/kWh, L3-02 50x, L3-03 4,14x, L3-04 2,2 ppm/a and 458 ppm (full-series line 446 ppm), L3-05 52 220 t, 24 680 t, 52,7 %, 9,2 pp.
+- MC L2-07: correct C (88) is not the longest, distractors are real unit slips and consistent with the solution.
+- Level 2 data tasks L2-05 and L2-06 fit; level 3 tasks are modelling and data interpretation.
+- Solutions follow the principle, formula, substitution, sanity check order.

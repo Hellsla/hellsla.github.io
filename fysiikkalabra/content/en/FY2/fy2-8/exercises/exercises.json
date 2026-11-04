@@ -40,6 +40,74 @@
       "answer": 1.2,
       "unit": "kg",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy2-8-L1-06",
+      "level": 1,
+      "text": "Which of the following best describes the natural greenhouse effect?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Greenhouse gases let the Sun's radiation through but slow down the escape of the ground's thermal radiation.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The gases of the atmosphere reflect most of the Sun's radiation back into space before it reaches the ground.",
+          "feedback": "That is not so. Most of the Sun's radiation passes through the atmosphere to the ground and warms it. Greenhouse gases mainly affect the thermal radiation emitted by the ground."
+        },
+        {
+          "text": "The atmosphere absorbs all of the Sun's radiation into itself and uses it to warm the ground from above.",
+          "feedback": "The atmosphere does not absorb all the radiation: most of the Sun's radiation reaches the ground directly and warms it."
+        },
+        {
+          "text": "The atmosphere produces thermal energy itself and uses it to warm the ground both by day and by night.",
+          "feedback": "The atmosphere is not a source of energy. The energy that warms the ground comes from the Sun, and the atmosphere only slows down the escape of energy."
+        },
+        {
+          "text": "Greenhouse gases let the Sun's radiation through but slow down the escape of the ground's thermal radiation.",
+          "feedback": "Correct: the ground is warmed by the Sun's radiation and emits thermal radiation, whose escape greenhouse gases slow down. That is why the mean temperature is about $+15\\,{}^\\circ\\text{C}$ and not about $-18\\,{}^\\circ\\text{C}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy2-8-L1-07",
+      "level": 1,
+      "text": "Which of the following statements concerns climate and not weather? The statements are examples, not measurement results.",
+      "kind": [
+        "concept"
+      ],
+      "answer": "In Oulu the mean temperature in January over the period 1991–2020 is about $-10\\,{}^\\circ\\text{C}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "In Oulu the mean temperature in January over the period 1991–2020 is about $-10\\,{}^\\circ\\text{C}$.",
+          "feedback": "Correct: climate is the long-term average and variation of weather in a given area, typically over at least thirty years.",
+          "correct": true
+        },
+        {
+          "text": "In Oulu on Tuesday morning there was a frost of $-10\\,{}^\\circ\\text{C}$ and in the afternoon it sleeted.",
+          "feedback": "This describes the situation of one day in a given place, so it is weather. Weather changes from hour to hour and from day to day."
+        },
+        {
+          "text": "This week's mean temperature in Finland was $3\\,{}^\\circ\\text{C}$ higher than last week's.",
+          "feedback": "Comparing weeks describes a short period, so it is weather. We speak of climate only when we look at a long period."
+        },
+        {
+          "text": "Last night $10\\,\\text{cm}$ of snow fell in Kuopio, and in the morning it was $-5\\,{}^\\circ\\text{C}$.",
+          "feedback": "This is a single event in a given place and time, so it is weather."
+        }
+      ]
+    },
+    {
+      "id": "fy2-8-L1-08",
+      "level": 1,
+      "text": "An example school uses $40\\,000\\,\\text{kWh}$ of electricity a year. The electricity is produced with nuclear power, whose life-cycle emission factor is $12\\,\\text{g/kWh}$. How much carbon dioxide equivalent is produced per year by the school's electricity use? Give the answer in kilograms.",
+      "answer": 480,
+      "unit": "kg",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,118 @@
       "answer": 250,
       "unit": "g/kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L2-05",
+      "level": 2,
+      "text": "The table shows the carbon dioxide concentration $c$ of the atmosphere in different years (yearly averages of the NOAA Mauna Loa measuring station, rounded to whole ppm values). Assume that the concentration grows steadily between the years $2005$ and $2020$, that is, the model is a straight line. By how many ppm does the concentration grow per year on average according to this model? Give the answer in the unit ppm/a.",
+      "kind": [
+        "data"
+      ],
+      "answer": 2.3,
+      "unit": "ppm/a",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Carbon dioxide concentration of the atmosphere, Mauna Loa (NOAA)",
+        "columns": [
+          "$t\\,(\\text{a})$",
+          "$c\\,(\\text{ppm})$"
+        ],
+        "rows": [
+          [
+            "2005",
+            "380"
+          ],
+          [
+            "2010",
+            "390"
+          ],
+          [
+            "2015",
+            "401"
+          ],
+          [
+            "2020",
+            "414"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-8-L2-06",
+      "level": 2,
+      "text": "The table shows the greenhouse gas emissions of an example country by sector in the years $2010$ and $2020$ in millions of tonnes of carbon dioxide equivalent (example data, not statistics).\n\na) Calculate the total emissions in each year.\n\nb) By how many per cent did the total emissions decrease from $2010$ to $2020$? Give the answer in per cent.",
+      "kind": [
+        "data"
+      ],
+      "answer": 26,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Emissions by sector (example data)",
+        "columns": [
+          "Sector",
+          "$m_{2010}\\,(\\text{Mt})$",
+          "$m_{2020}\\,(\\text{Mt})$"
+        ],
+        "rows": [
+          [
+            "Energy production",
+            "30",
+            "18"
+          ],
+          [
+            "Transport",
+            "12",
+            "10"
+          ],
+          [
+            "Industry",
+            "10",
+            "9"
+          ],
+          [
+            "Agriculture",
+            "6",
+            "6"
+          ],
+          [
+            "Waste",
+            "3",
+            "2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-8-L2-07",
+      "level": 2,
+      "text": "A student calculated the emission of electricity produced with coal: $m = 820\\,\\text{g/kWh} \\cdot 2.0\\,\\text{kWh} = 1640$, and answered that the emission is $1640\\,\\text{kg}$. What is the error in the calculation?",
+      "kind": [
+        "error"
+      ],
+      "answer": "The result $1640$ is in grams and not in kilograms, so the correct answer is $1.6\\,\\text{kg}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The emission factor should be divided by the energy and not multiplied by it, which would give a smaller result.",
+          "feedback": "The emission is obtained by multiplying the emission factor by the energy, $m = e \\cdot E$. The multiplication was correct: the unit $\\text{g/kWh} \\cdot \\text{kWh}$ gives grams."
+        },
+        {
+          "text": "The energy should be converted into megajoules before multiplying, because the factor contains a unit of energy.",
+          "feedback": "No conversion is needed, because the unit of the emission factor is $\\text{g/kWh}$ and the energy is already in kilowatt-hours. The kilowatt-hours cancel directly."
+        },
+        {
+          "text": "The result $1640$ is in grams and not in kilograms, so the correct answer is $1.6\\,\\text{kg}$.",
+          "feedback": "Correct: the kilowatt-hours cancel and grams are left. The student forgot the unit conversion, and the answer was a thousand times too large.",
+          "correct": true
+        },
+        {
+          "text": "The result $1640$ is in milligrams and not in grams, so the correct answer is $0.0016\\,\\text{kg}$.",
+          "feedback": "The unit $\\text{g/kWh} \\cdot \\text{kWh}$ gives grams, not milligrams. The result $1640\\,\\text{g}$ is $1.6\\,\\text{kg}$."
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +280,82 @@
       "answer": 4.1,
       "unit": "times",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L3-04",
+      "level": 3,
+      "text": "The table shows the carbon dioxide concentration $c$ of the atmosphere in different years (yearly averages of the NOAA Mauna Loa measuring station, rounded to whole ppm values).\n\na) Calculate the average rate of growth of the concentration in each twenty-year period.\n\nb) Predict the concentration in $2040$ with a straight line that continues from the point $2020$ with the rate of growth of the last period ($2000$–$2020$). Give the prediction in the unit ppm.\n\nc) Compare the prediction with the prediction that would be obtained with the rate of growth of the whole data ($1960$–$2020$), and justify which prediction is more credible and how far a straight line can be trusted as a model.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 458,
+      "unit": "ppm",
+      "tolerance": 0.01,
+      "data": {
+        "caption": "Carbon dioxide concentration of the atmosphere, Mauna Loa (NOAA)",
+        "columns": [
+          "$t\\,(\\text{a})$",
+          "$c\\,(\\text{ppm})$"
+        ],
+        "rows": [
+          [
+            "1960",
+            "317"
+          ],
+          [
+            "1980",
+            "339"
+          ],
+          [
+            "2000",
+            "370"
+          ],
+          [
+            "2020",
+            "414"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-8-L3-05",
+      "level": 3,
+      "text": "The yearly electricity production of an example city is as in the table. The emission factors are from the table of the lesson: coal $820\\,\\text{g/kWh}$, natural gas $490\\,\\text{g/kWh}$, biomass $230\\,\\text{g/kWh}$ and wind power $12\\,\\text{g/kWh}$. The city plans to replace coal electricity completely: $30\\,\\text{GWh}$ is produced with wind power and the remaining $10\\,\\text{GWh}$ with natural gas, because the wind is not always enough. The energy produced stays the same. Natural sinks (the seas and vegetation) absorb only a part of the carbon dioxide emissions.\n\na) Calculate the present total yearly emissions in tonnes.\n\nb) By how many per cent do the total emissions decrease in the plan? Give the answer in per cent.\n\nc) By how many percentage points is the reduction smaller than if the whole $40\\,\\text{GWh}$ were produced with wind power?\n\nd) Justify why the carbon dioxide concentration of the atmosphere can still keep growing for several years after the emissions have decreased, and name one thing that the emission factor does not tell about increasing wind electricity.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 53,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Electricity production of an example city (example data)",
+        "columns": [
+          "Production method",
+          "$E\\,(\\text{GWh})$"
+        ],
+        "rows": [
+          [
+            "Coal",
+            "40"
+          ],
+          [
+            "Natural gas",
+            "30"
+          ],
+          [
+            "Biomass",
+            "20"
+          ],
+          [
+            "Wind power",
+            "10"
+          ]
+        ]
+      }
     }
   ]
 }

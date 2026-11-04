@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2f5b71320a9d05a7
+CONTENT-HASH: 82920b176561defd
 
 ## Blocking
 
 ## Polish
-- [Minor] L1-04 / graph-ab (open-exercises-1280-3) — the figure sits below the question; the bold final question comes before it, so the student reads "Kuinka suuri on teho?" and then scrolls to the graph. Optional: put the figure directly under the situation sentence.
-- [Minor] L3-03 solution, Kaava row — "missä k = 18 kWh on kulutus sadalla kilometrillä" wraps with a one-word orphan line at 1280; break the sentence after the formula.
-- [Minor] L1-04 solution Sijoitus — stacked "J over s" in "= 1500 J/s" is tiny; write J/s inline as in L1-01.
+- [Minor] L3-05 solution Sijoitus (L3-1280-6) — the inline "\dfrac{47,0}{119,0}" inside running text spreads the line spacing, and the Kaava line "säästö = (E − E_uusi) · yksikköhinta" breaks before "yksikköhinta"; put the share and the saving formula on their own lines.
+- [Minor] L3-04 table — "10400", "10600" without a thousands space while the solution writes "10 400"; make them the same.
+- [Minor] L2-07 — graph task without a drawn graph in the model solution; a small figure of points and fitted line would help.
+- [Minor] Captures only at 1280 px; the new tables were not seen at 390 px.
 
 ## Checked
-- open-exercises-1280-1/-2/-3/-4 (L1-01..04: inputs, answers, solutions inside the card, the graph-ab figure at full width, axes, units, ticks and A/B labels legible, description matches it).
-- open-exercises-L2-1280-1/-2 (L2-01, L2-02); open-exercises-L3-1280-1/-3 (L3-01, L3-03).
-- Maths: \cdot throughout, decimal comma, upright units with thin space, chains aligned at "=", Vastaus box and Järkevyys block consistent.
+- open-exercises-1280-6/7 (L1-06 and L1-07 MC, L1-08 start), L2-1280-5/6/7 (L2-05 table, L2-06, L2-07 table), L3-1280-4/5/6/7 (L3-04 table and solution, L3-05 table and solution).
+- Solutions: labelled blocks, thin-space units, decimal comma, chains aligned, Vastaus boxes; no overflow; answers match answers.py.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

@@ -118,3 +118,82 @@
 **Substitution:** $t = \dfrac{4.5\,\tfrac{\text{m}}{\text{s}} \cdot 40\,\text{s}}{4.5\,\tfrac{\text{m}}{\text{s}} - 1.5\,\tfrac{\text{m}}{\text{s}}} = 60\,\text{s}$ and $s = 1.5\,\tfrac{\text{m}}{\text{s}} \cdot 60\,\text{s} = 90\,\text{m}$
 **Answer:** $90\,\text{m}$, two significant figures as in the speeds.
 **Reasonableness:** The cyclist rides for $60\,\text{s} - 40\,\text{s} = 20\,\text{s}$, and $4.5\,\text{m/s} \cdot 20\,\text{s} = 90\,\text{m}$, the same result. Another check: the walker's lead after $40\,\text{s}$ is $1.5 \cdot 40 = 60\,\text{m}$, and the cyclist closes it at the speed difference $3.0\,\text{m/s}$ in $60 : 3.0 = 20\,\text{s}$.
+
+## fy1-5-L1-06
+**Find:** what the slope of the line in the $(t, s)$ graph tells about uniform motion.
+**Principle:** In uniform motion, the $(t, s)$ graph is a straight line. The slope is the change in position divided by the time interval, $\Delta s : \Delta t$, and it is the speed $v$ of the object (unit m/s). The initial position $s_0$ is where the line crosses the $s$-axis, not the slope.
+**Model answer:** The slope tells the speed of the walker. The steeper the line, the greater the speed. It is not the initial position (the intercept) or the total distance (just $\Delta s$), and the quotient $s : t$ is the speed only when the line passes through the origin.
+
+## fy1-5-L1-07
+**Given:** speed $v = 0.80\,\text{m/s}$ constant during the interval $0\,\text{s} - 12\,\text{s}$, so the interval is $t = 12\,\text{s}$
+**Find:** distance travelled $\Delta s$ in metres
+**Principle:** In a $(t, v)$ graph, a horizontal line is the top edge of a rectangle. The height of the rectangle is the speed $v$ and the width is the time $t$, so its area $vt$ is the distance travelled in uniform motion.
+**Reading the graph:** The height is $v = 0.80\,\text{m/s}$ and the width is $t = 12\,\text{s} - 0\,\text{s} = 12\,\text{s}$.
+**Formula:** $\Delta s = vt$ (area of the rectangle = height $\cdot$ width)
+**Conversions:** None needed: the speed is in m/s and the time in seconds, and $\tfrac{\text{m}}{\text{s}} \cdot \text{s} = \text{m}$.
+**Substitution:** $\Delta s = 0.80\,\tfrac{\text{m}}{\text{s}} \cdot 12\,\text{s} = 9.6\,\text{m}$
+**Answer:** $9.6\,\text{m}$, two significant figures as in the speed $0.80\,\text{m/s}$ and the time $12\,\text{s}$.
+**Reasonableness:** The speed $0.80\,\text{m/s}$ is less than a metre per second, so in $12\,\text{s}$ the distance is less than $12\,\text{m}$. The same result is obtained with the formula $s = vt$, which is the basic equation of uniform motion.
+
+## fy1-5-L1-08
+**Given:** distance $s = 2.4\,\text{km}$, time $t = 16\,\text{min}$; the motion is uniform and starts from the zero point
+**Find:** speed $v$ in m/s
+**Principle:** In uniform motion, the speed is the distance travelled divided by the time it took. Kilometres and minutes are converted to metres and seconds before dividing.
+**Formula:** $s = vt$, so $v = \dfrac{s}{t}$
+**Conversions:** substituting $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{min} = 60\,\text{s}$: $s = 2.4 \cdot 1000\,\text{m} = 2400\,\text{m}$ and $t = 16 \cdot 60\,\text{s} = 960\,\text{s}$.
+**Substitution:** $v = \dfrac{2400\,\text{m}}{960\,\text{s}} = 2.5\,\tfrac{\text{m}}{\text{s}}$
+**Answer:** $2.5\,\text{m/s}$, two significant figures as in the data $2.4\,\text{km}$ and $16\,\text{min}$.
+**Reasonableness:** Check backwards: $2.5\,\text{m/s} \cdot 960\,\text{s} = 2400\,\text{m}$. The speed is $9.0\,\text{km/h}$, which suits leisurely cycling.
+
+## fy1-5-L2-05
+**Given:** measurement points of the table $(t;\ s)$: $(0.0\,\text{s};\ 1.2\,\text{m})$, $(1.0\,\text{s};\ 2.7\,\text{m})$, $(2.0\,\text{s};\ 3.9\,\text{m})$, $(3.0\,\text{s};\ 5.5\,\text{m})$, $(4.0\,\text{s};\ 6.7\,\text{m})$ and $(5.0\,\text{s};\ 8.3\,\text{m})$; the walker moves uniformly
+**Find:** position $s$ of the walker at time $t = 12\,\text{s}$ in metres
+**Principle:** In uniform motion, the position is a linear function of time, $s = s_0 + vt$. In real measurement series, the measurement points usually do not lie exactly on the same straight line because of measurement uncertainty, so the line is fitted through the middle of the set of points and the speed is read along it.
+**Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{s};\ 1.2\,\text{m})$ and $(5.0\,\text{s};\ 8.2\,\text{m})$. They are read from the line and chosen far apart. The initial position is $s_0 = 1.2\,\text{m}$, because the line crosses the $s$-axis there.
+**Formula:** $v = \dfrac{\Delta s}{\Delta t}$ and $s = s_0 + vt$
+**Conversions:** None needed: the positions are in metres and the times in seconds.
+**Substitution:** $v = \dfrac{8.2\,\text{m} - 1.2\,\text{m}}{5.0\,\text{s} - 0\,\text{s}} = 1.4\,\tfrac{\text{m}}{\text{s}}$ and $s = 1.2\,\text{m} + 1.4\,\tfrac{\text{m}}{\text{s}} \cdot 12\,\text{s} = 1.2\,\text{m} + 16.8\,\text{m} = 18\,\text{m}$
+**Answer:** about $18\,\text{m}$, two significant figures. A fit by eye varies, so about $17.3\text{–}18.7\,\text{m}$ is a good answer. The prediction is a model value, not a measurement: the moment $12\,\text{s}$ is outside the measured range $0\,\text{s} - 5\,\text{s}$, and it is correct only if the walker continues at the same speed. This is an assumption that the measurement has not checked.
+**Reasonableness:** The speed $1.4\,\text{m/s}$ is about $5\,\text{km/h}$, an ordinary walking pace. The prediction clearly exceeds the last measurement $8.3\,\text{m}$, as it should, because $12\,\text{s}$ is more than twice as long as the measured range.
+
+## fy1-5-L2-06
+**Given:** initial position $s_0 = 8.0\,\text{m}$, position $s_1 = 11\,\text{m}$ at time $t_1 = 2.0\,\text{s}$; the student's conclusion is $s = 33\,\text{m}$ at time $t_2 = 6.0\,\text{s}$
+**Find:** the student's error and the correct position $s$ at time $6.0\,\text{s}$ in metres
+**Principle:** In uniform motion, only the distance travelled $\Delta s = vt$ is directly proportional to time. The position $s = s_0 + vt$ is proportional to time only when $s_0 = 0$. The student mixed up position and distance: the student tripled the position, although the distance should have been tripled.
+**Formula:** $v = \dfrac{\Delta s}{\Delta t}$ and $s = s_0 + vt$
+**Conversions:** None needed: the positions are in metres and the times in seconds.
+**Substitution:** $v = \dfrac{11\,\text{m} - 8.0\,\text{m}}{2.0\,\text{s}} = 1.5\,\tfrac{\text{m}}{\text{s}}$ and $s = 8.0\,\text{m} + 1.5\,\tfrac{\text{m}}{\text{s}} \cdot 6.0\,\text{s} = 8.0\,\text{m} + 9.0\,\text{m} = 17\,\text{m}$
+**Answer:** The trolley is at $17\,\text{m}$, not at $33\,\text{m}$. The error is that the position was tripled: the initial position $s_0 = 8.0\,\text{m}$ is not zero, so only the distance triples ($3.0\,\text{m} \to 9.0\,\text{m}$), and the initial position must be added to it.
+**Reasonableness:** The distance tripled: $3.0\,\text{m} \cdot 3 = 9.0\,\text{m}$. The student's answer $33\,\text{m}$ would require the trolley to travel $25\,\text{m}$ in six seconds, that is, a speed of $4.2\,\text{m/s}$, which is a different speed from the $1.5\,\text{m/s}$ obtained from the data.
+
+## fy1-5-L2-07
+**Given:** speed about $v = 0.80\,\text{m/s}$, uncertainty of the timing $u_t = 0.2\,\text{s}$ (the same for all times), limit of the relative uncertainty $2.0\,\%$
+**Find:** minimum distance $s$ in metres
+**Principle:** The relative uncertainty of the time is $u_t : t$. Since $u_t$ is constant, the relative uncertainty decreases as the measured time grows. The limit gives the minimum time, and in uniform motion the distance is speed times time.
+**Formula:** $\dfrac{u_t}{t} \le 0.020$, so $t \ge \dfrac{u_t}{0.020}$, and $s = vt$
+**Conversions:** None needed: the times are in seconds and the speed in m/s. The percentage is $2.0\,\% = 0.020$.
+**Substitution:** $t \ge \dfrac{0.2\,\text{s}}{0.020} = 10\,\text{s}$ and $s = 0.80\,\tfrac{\text{m}}{\text{s}} \cdot 10\,\text{s} = 8.0\,\text{m}$
+**Answer:** The car must travel at least $8.0\,\text{m}$. A long distance improves the measurement, because it takes longer and the timing uncertainty $0.2\,\text{s}$ is then a smaller part of the whole time. On a short distance, for example $1.0\,\text{m}$ ($t = 1.25\,\text{s}$), the relative uncertainty would be $16\,\%$.
+**Reasonableness:** Check: at the time $10\,\text{s}$ the relative uncertainty is $0.2\,\text{s} : 10\,\text{s} = 0.020 = 2.0\,\%$, so the limit is met exactly. A distance of $8.0\,\text{m}$ fits in a school corridor.
+
+## fy1-5-L3-04
+**Given:** measurement points of the table $(t;\ s)$: $(0\,\text{s};\ 0\,\text{m})$, $(5.0\,\text{s};\ 15\,\text{m})$, $(10\,\text{s};\ 30\,\text{m})$, $(15\,\text{s};\ 35\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$, $(30\,\text{s};\ 50\,\text{m})$ and $(40\,\text{s};\ 60\,\text{m})$
+**Find:** average speed $v_\text{avg}$ in the interval $5.0\,\text{s} - 35\,\text{s}$ and the reason why it is not the mean of the speeds of the parts
+**Principle:** In the graph, the points lie on two straight parts with different slopes, so a single line does not fit the whole motion. The motion is modelled piecewise: each part has its own uniform speed, and the position at the moment $35\,\text{s}$ is calculated from the model of the latter part. The average speed is the distance travelled divided by the time.
+**Reading the graph:** The points $0\,\text{s} - 10\,\text{s}$ are on the same steep line. From the moment $10\,\text{s}$ on, the line is gentler, and the points $(10\,\text{s};\ 30\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$ and $(40\,\text{s};\ 60\,\text{m})$ are on the same gentle line. So the speed changes at the moment $t = 10\,\text{s}$.
+**Formula:** speed of a part $v = \dfrac{\Delta s}{\Delta t}$, position on the gentle part $s = s_{10} + v_2 (t - 10\,\text{s})$ and average speed $v_\text{avg} = \dfrac{s(35\,\text{s}) - s(5.0\,\text{s})}{35\,\text{s} - 5.0\,\text{s}}$
+**Conversions:** None needed: the positions are in metres and the times in seconds.
+**Substitution:** Part 1: $v_1 = \dfrac{30\,\text{m} - 0\,\text{m}}{10\,\text{s} - 0\,\text{s}} = 3.0\,\tfrac{\text{m}}{\text{s}}$. Part 2: $v_2 = \dfrac{60\,\text{m} - 30\,\text{m}}{40\,\text{s} - 10\,\text{s}} = 1.0\,\tfrac{\text{m}}{\text{s}}$. Position at $35\,\text{s}$: $s = 30\,\text{m} + 1.0\,\tfrac{\text{m}}{\text{s}} \cdot 25\,\text{s} = 55\,\text{m}$. Average speed: $v_\text{avg} = \dfrac{55\,\text{m} - 15\,\text{m}}{35\,\text{s} - 5.0\,\text{s}} = \dfrac{40\,\text{m}}{30\,\text{s}} = 1.33\,\tfrac{\text{m}}{\text{s}}$.
+**Answer:** $1.3\,\text{m/s}$, two significant figures as in the data. The mean of the speeds of the parts would be $(3.0 + 1.0)\,\text{m/s} : 2 = 2.0\,\text{m/s}$, but that would be wrong, because the parts last for different times: the speed $3.0\,\text{m/s}$ is in effect for only $5.0\,\text{s}$ and the speed $1.0\,\text{m/s}$ for as long as $25\,\text{s}$.
+**Reasonableness:** The partial distances are $3.0\,\text{m/s} \cdot 5.0\,\text{s} = 15\,\text{m}$ and $1.0\,\text{m/s} \cdot 25\,\text{s} = 25\,\text{m}$, together $40\,\text{m}$, the same as above. The average speed $1.3\,\text{m/s}$ is closer to the slower speed $1.0\,\text{m/s}$ than to the faster speed $3.0\,\text{m/s}$, as it should be, because most of the time is spent riding slowly.
+
+## fy1-5-L3-05
+**Given:** imaging interval $\Delta t = 0.010\,\text{s}$, positions of the bullet $s = 2.0\,\text{m}$, $5.0\,\text{m}$, $8.0\,\text{m}$ and $11.0\,\text{m}$ at the moments $0.000\,\text{s}$, $0.010\,\text{s}$, $0.020\,\text{s}$ and $0.030\,\text{s}$; scale of the drawing: $1.0\,\text{s}$ is $10\,\text{cm}$ and $1.0\,\text{m}$ is $1.0\,\text{cm}$
+**Find:** speed $v$ of the bullet in m/s, and the rise of the graph and the length of the imaging interval in centimetres
+**Principle:** The position grows by the same amount in every imaging interval ($3.0\,\text{m}$), so the motion is uniform and the speed is the slope of the graph, $\Delta s : \Delta t$. An object has only one position at every moment, so every value of time corresponds to one value of position. A vertical line would have $\Delta t = 0$ and $\Delta s \neq 0$, and then the quotient would not be any number.
+**Reading the graph:** The points of the table lie on the same straight line, and between two consecutive points the position changes by $\Delta s = 5.0\,\text{m} - 2.0\,\text{m} = 3.0\,\text{m}$ in the time $\Delta t = 0.010\,\text{s}$.
+**Formula:** $v = \dfrac{\Delta s}{\Delta t}$; in the drawing, the length is the value times the scale
+**Conversions:** Not needed for calculating the speed. In the drawing, $\Delta s = 3.0 \cdot 1.0\,\text{cm} = 3.0\,\text{cm}$ and $\Delta t = 0.010 \cdot 10\,\text{cm} = 0.10\,\text{cm}$.
+**Substitution:** $v = \dfrac{3.0\,\text{m}}{0.010\,\text{s}} = 300\,\tfrac{\text{m}}{\text{s}}$. In one imaging interval the line rises $3.0\,\text{cm}$ and advances horizontally only $0.10\,\text{cm}$, that is, $1.0\,\text{mm}$.
+**Answer:** $300\,\text{m/s}$, two significant figures as in the difference of positions $3.0\,\text{m}$. The line rises $3.0\,\text{cm}$ and advances $0.10\,\text{cm}$, so it is about $30$ times as steep as it is wide and looks almost vertical. It is still not vertical: the imaging interval always takes a time $\Delta t > 0$, and the bullet is at exactly one position at every moment. A vertical line would require the bullet to be at two positions at the same moment, that is, the speed would be infinite.
+**Reasonableness:** The speed $300\,\text{m/s}$ is of the same order of magnitude as the speed of sound $343\,\text{m/s}$ and suits a fast bullet. Check: $300\,\text{m/s} \cdot 0.010\,\text{s} = 3.0\,\text{m}$, the same as in the table. A stopped object would be drawn as a horizontal line, because $\Delta s = 0$.

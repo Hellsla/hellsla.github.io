@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: fbdee740d0bad439
+CONTENT-HASH: cef7039ba3a4aa4f
+Mode: full
+Round: 1
 
 ## Blocking
 (none)
+
+## Fixed
+- exercises.json L3-04: unit "kertaa" (Finnish left over) changed to "times", as in L2-05.
 
 ## Polish
 - none
 
 ## Checked
-- Exercises and solutions checked against the Finnish: all 12 tasks, answers, units (en: times; fi-easy: kertaa) and the grid figure task L3-03 (240 J, 8/2/6 squares, 180 J) identical.
-- Teaching sequence, steps (<!-- vaihe -->), misconception section and summary follow the Finnish; language natural and no Finnish left over.
-- No edits needed; hash unchanged at end.
+- Level, kind tags and structure of the 8 new exercises match the Finnish; choices keep the same distractors and feedback logic.
+- Wording is English; no Finnish left and keeps the Finnish task order (calculate, then compare, then justify).
+- Solutions keep the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure.
+- Terms (efficiency, useful energy, losses, loss power) used consistently.

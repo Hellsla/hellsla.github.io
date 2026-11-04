@@ -39,6 +39,77 @@
       "answer": 920,
       "unit": "kg/m³",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L1-06",
+      "level": 1,
+      "text": "A uniform aluminium block is sawn into two equal parts. What happens to the density of the substance?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The density is the same in both parts as in the original block.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The density is the same in both parts as in the original block.",
+          "feedback": "Correct: the density $\\rho = m : V$ is a property of the substance. When the block is cut in half, both the mass and the volume halve, so their ratio stays the same. The density of aluminium is $2.70\\,\\text{g/cm}^3$ whatever the size of the piece.",
+          "correct": true
+        },
+        {
+          "text": "The density halves, because the object is now half the size.",
+          "feedback": "The mass and the volume halve, not the density. Density is the ratio of mass to volume, and when both decrease in the same proportion, the ratio does not change."
+        },
+        {
+          "text": "The density doubles, because the piece is more compact.",
+          "feedback": "Sawing does not squeeze the substance more compactly. The substance is the same as before, and every cubic centimetre still has the same amount of mass."
+        },
+        {
+          "text": "The density depends on how the piece was cut.",
+          "feedback": "Density does not depend on the shape or size of an object made of a single substance. A long and a short piece of the same aluminium are equally dense."
+        }
+      ]
+    },
+    {
+      "id": "fy1-7-L1-07",
+      "level": 1,
+      "text": "Cooking oil is poured carefully into a glass of water. The density of the oil is $920\\,\\text{kg/m}^3$ and that of water is $1000\\,\\text{kg/m}^3$. The oil does not mix with the water. What happens in the glass?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The oil stays on top of the water, because the density of the oil is smaller than that of water.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The oil stays on top of the water, because the density of the oil is smaller than that of water.",
+          "feedback": "Correct: the same volume of oil has less mass than water ($0.92$ times as much), so the oil is lighter and rises on top of the water. It is the densities of the substances that are compared, not the sizes of the objects.",
+          "correct": true
+        },
+        {
+          "text": "The oil sinks to the bottom of the glass, because the oil is thicker.",
+          "feedback": "Thickness, that is, how runny the liquid is, does not decide. What matters is the density: the density of the oil is smaller than that of water, so the oil does not sink."
+        },
+        {
+          "text": "The oil and water mix evenly, because both are liquids.",
+          "feedback": "Oil and water do not mix with each other, so they stay in separate layers; the density decides which layer is on top."
+        },
+        {
+          "text": "The oil sinks to the bottom if there is more oil in the glass than water.",
+          "feedback": "The amounts of oil and water do not affect which is on top. Density is a property of the substance, and a smaller density means the upper layer when the liquids do not mix."
+        }
+      ]
+    },
+    {
+      "id": "fy1-7-L1-08",
+      "level": 1,
+      "text": "The volume of a lead sinker for a fishing hook is $5.00\\,\\text{cm}^3$. The density of lead is $11.3\\,\\text{g/cm}^3$. What is the mass of the sinker? Give your answer in grams.",
+      "kind": [
+        "model"
+      ],
+      "answer": 56.5,
+      "unit": "g",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,101 @@
       "answer": 788,
       "unit": "kg/m³",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L2-05",
+      "level": 2,
+      "text": "Objects of different sizes were made of a uniform metal, and the volume and mass of each were measured. Draw a $(V,m)$ graph of the measurement points and fit a straight line through the origin to the points. What is the density of the substance in $\\text{g/cm}^3$? Which substance is it? Use the table from the lesson.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 2.7,
+      "unit": "g/cm³",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Mass of the metal objects as a function of volume",
+        "columns": [
+          "$V\\,(\\text{cm}^3)$",
+          "$m\\,(\\text{g})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "27.3"
+          ],
+          [
+            "20.0",
+            "53.5"
+          ],
+          [
+            "30.0",
+            "81.6"
+          ],
+          [
+            "40.0",
+            "107.9"
+          ],
+          [
+            "50.0",
+            "135.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-7-L2-06",
+      "level": 2,
+      "text": "Liquid was poured into a measuring cylinder in steps, and a balance showed the total mass $m_\\text{tot}$ of the cylinder and the liquid as a function of the volume $V$ of the liquid. Draw a graph of the measurement points and fit a straight line to the points. What is the density of the liquid in $\\text{kg/m}^3$? Also determine the mass of the empty measuring cylinder and explain why the line does not pass through the origin.",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 920,
+      "unit": "kg/m³",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Total mass of the measuring cylinder and the liquid as a function of the liquid volume",
+        "columns": [
+          "$V\\,(\\text{cm}^3)$",
+          "$m_\\text{tot}\\,(\\text{g})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "103.6"
+          ],
+          [
+            "40.0",
+            "121.2"
+          ],
+          [
+            "60.0",
+            "140.5"
+          ],
+          [
+            "80.0",
+            "158.9"
+          ],
+          [
+            "100.0",
+            "176.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-7-L2-07",
+      "level": 2,
+      "text": "A student determined the density of a metal object by the water displacement method. The mass of the object is $107\\,\\text{g}$. The reading of the measuring cylinder was $60\\,\\text{ml}$ before the object was lowered in and $72\\,\\text{ml}$ afterwards. The student calculated $\\rho = 107\\,\\text{g} : 72\\,\\text{cm}^3 = 1.5\\,\\text{g/cm}^3$ and concluded that the object was light plastic. Find the student’s error and calculate the correct density in $\\text{g/cm}^3$. Which substance could the object be?",
+      "kind": [
+        "error",
+        "experiment"
+      ],
+      "answer": 8.9,
+      "unit": "g/cm³",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -100,6 +266,31 @@
       "answer": 71,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L3-04",
+      "level": 3,
+      "text": "A student determines the density of a metal object by the water displacement method. The mass of the object is $113\\,\\text{g}$. The reading of the measuring cylinder is $50.0\\,\\text{ml}$ before the object is lowered in and $62.0\\,\\text{ml}$ afterwards. Afterwards the student notices that an air bubble with a volume of $2.0\\,\\text{ml}$ had stuck to the surface of the object. What is the true density of the object in $\\text{g/cm}^3$? Also calculate the density the student originally obtained and its percentage error, deduce from the table which metal each density would suggest the object to be, and say how the bubble could have been removed or noticed.",
+      "kind": [
+        "data",
+        "error",
+        "reasoning"
+      ],
+      "answer": 11.3,
+      "unit": "g/cm³",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L3-05",
+      "level": 3,
+      "text": "An alloy object is cast from copper and aluminium. Its volume is $100\\,\\text{cm}^3$ and its mass is $520\\,\\text{g}$. The volumes are assumed to add up. How many cubic centimetres of copper does the object contain? Use the densities in the table from the lesson. Also justify which metal there is more of by volume and which by mass.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 39.9,
+      "unit": "cm³",
+      "tolerance": 0.03
     }
   ]
 }

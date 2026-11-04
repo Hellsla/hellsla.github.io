@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b3ff1b1cff1d3d07
+CONTENT-HASH: 858946470e7d35ed
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] solutions.md L2-01 Muunnokset — "3,2 · 10⁹ 1/s" ilman erotinta lukee epäselvästi (ennallaan) — käytä \dfrac{1}{\text{s}}.
-- [Minor] L3-02 Annettu — "D = / 3474 km = 1 px" katkeaa yhtäsuuruusmerkin jälkeen (ennallaan) — pidä lyhyt ketju yhdellä rivillä.
+- [Minor] L2-07 Sijoitus, Muunnokset, Vastaus — the litre `\textsf{l}` reads as a capital I or a bar in "l²/s" and "12 l"; project-wide litre convention, a look at the shared glyph.
+- [Minor] L2-05, L3-05 table headers — "Yksikkö" and "solmua" in `\text{}` render in the serif maths face next to sans headers; leave words plain, keep maths for unit symbols.
+- [Minor] L2-07 task — the pupil's quotation opens with a straight quote and is run into the paragraph; set it as its own paragraph with ” ”.
+- [Minor] L2-05, L2-06, L3-05 tables — left-aligned, narrow, numbers not aligned by the decimal comma (known shared-component item).
 
 ## Checked
-- Delta (arvot yksiköineen matematiikkana): open-exercises-1280-1 (L1-01 "82 µm", yksikkö pystykirjaimin, µ oikein), L2-1280-1 (L2-01 "3,2 GHz", "5,0 ms:ssa"), L3-1280-2 (L3-02 "1920 px", "30,07 AU"). Sekakirjasin poistunut, ohut väli, ratkaisukortit ja asettelu ehjät. Aiempi polish-kohta (tekstinä kirjoitetut arvot) korjattu.
-- Kuvat luettu lesson-kansion review/shots-hakemistosta (exercises/review/ ei sisällä omaa shots-kansiota); tuoreempia kuin exercises.json.
+- Round 3 delta. Only L3-04 Vastaus changed ("pienillä heilahduksilla pätee T = 2π√(L/g)"). Opened open-exercises-L3-1280-5 (fresh): Vastaus chip a = 1/2, the sentence with the inline fraction-in-root formula renders cleanly, Järkevyys set apart, no clipping.
+- Opened open-exercises-L3-1280-4: pendulum task, Annettu, Kysytty, Periaate intact; layout survived.
+- Everything else unchanged since the round-2 PASS.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

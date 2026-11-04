@@ -26,7 +26,7 @@ TEXT_KEYS = {"text", "pending", "detail", "q", "a", "title", "question", "prompt
              "goals", "prerequisites_note", "glossary", "lead", "summary", "name", "mistakes", "explain", "options", "speaker",
              "claim", "why", "predictions", "rubric", "note", "words",
              "solution", "contribution", "learn", "prior", "criteria", "pair", "intro", "source_note", "answer", "practice", "caption", "columns"}
-WORD_UNIT = re.compile(r"kpl|milj|vrk|kertaa|kierros|toistoa|tuhatta|suuruusluokkaa|ihmistä|annosta|ilma|viivaa|vahvistin")   # a unit that is Finnish words
+WORD_UNIT = re.compile(r"kpl|milj|vrk|kertaa|kierros|heilahdus|toistoa|tuhatta|suuruusluokkaa|ihmistä|annosta|ilma|viivaa|vahvistin|prosenttiyksik")   # a unit that is Finnish words
 
 
 def is_text(key, value, parent=None):

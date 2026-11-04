@@ -118,3 +118,80 @@
 **Substitution:** $E = 2.3\,\text{kW} \cdot 8.0\,\text{h} = 18.4\,\text{kWh}$ and $s = \dfrac{18.4\,\text{kWh}}{18\,\text{kWh}} \cdot 100\,\text{km} = 102.2\,\text{km}$
 **Answer:** $100\,\text{km}$ (that is $1.0 \cdot 10^{2}\,\text{km}$), two significant figures as in the power $2.3\,\text{kW}$.
 **Reasonableness:** The charging energy $18.4\,\text{kWh}$ is slightly more than the consumption of one hundred kilometres, $18\,\text{kWh}$, so the distance is slightly over $100\,\text{km}$. Charging overnight from a wall socket therefore gives about a day's driving distance.
+
+## fy2-3-L1-06
+**Find:** which statement about comparing two devices with different powers is correct.
+**Principle:** Power is the quotient of the transformed energy and time, $P = \Delta E : \Delta t$, so $1\,\text{W} = 1\,\text{J/s}$. Power tells how much energy is transformed per unit of time. The energy consumed also depends on time: $E = P\,t$.
+**Model answer:** Device B transforms twice as much energy every second as device A, because $2.0\,\text{kW} = 2 \cdot 1.0\,\text{kW}$. However, B does not always consume more energy, since energy is power times time and A, if it has been on longer, may have consumed more. A kilowatt is a unit of power; a unit of energy is, for example, the kilowatt-hour, so A consumes $1.0\,\text{kWh}$ in an hour. Power does not tell the total energy consumed.
+
+## fy2-3-L1-07
+**Find:** what the slope of an energy–time line starting from the origin tells you.
+**Principle:** The slope of the line is $\Delta E : \Delta t$, and this quotient is power. The device transforms energy steadily, so energy is directly proportional to time and the slope of the line is the same everywhere.
+**Model answer:** The slope tells the power of the device. The more steeply the line rises, the more energy is transformed per second. The slope is not the total energy, because the total energy is read from the height of the line at a given moment. Nor is it time, because time is on the horizontal axis, and the weight of the device cannot be determined from the graph.
+
+## fy2-3-L1-08
+**Given:** energy $E = 3.6\,\text{MJ}$, time $t = 2.0\,\text{min}$
+**Find:** average power $P$ in kilowatts
+**Principle:** The motor transforms energy steadily, so power is the energy divided by time. The units are first converted to joules and seconds.
+**Formula:** $P = \dfrac{E}{t}$
+**Conversions:** $3.6\,\text{MJ} = 3.6 \cdot 10^{6}\,\text{J}$ and $2.0\,\text{min} = 2.0 \cdot 60\,\text{s} = 120\,\text{s}$. Finally $1\,\text{W} = 10^{-3}\,\text{kW}$.
+**Substitution:** $P = \dfrac{3.6 \cdot 10^{6}\,\text{J}}{120\,\text{s}} = 30\,000\,\text{J/s} = 30\,000\,\text{W} = 30\,000 \cdot 10^{-3}\,\text{kW} = 30\,\text{kW}$
+**Answer:** $30\,\text{kW}$, two significant figures as in the given data.
+**Reasonableness:** With rounded numbers $4\,\text{MJ} : 100\,\text{s} = 40\,\text{kW}$, so the result is of the right order of magnitude. The power is tens of times the power of a kettle, which suits the motor of an electric car or a small machine.
+
+## fy2-3-L2-05
+**Given:** the appliances in the table: fridge $100\,\text{W}$ and $8.0\,\text{h}$, television $80\,\text{W}$ and $3.5\,\text{h}$, laptop $50\,\text{W}$ and $6.0\,\text{h}$, kettle $2000\,\text{W}$ and $0.20\,\text{h}$, hair dryer $1800\,\text{W}$ and $0.10\,\text{h}$
+**Find:** the total energy $E$ in a day in kilowatt-hours and the appliance that consumes the most energy
+**Principle:** Each appliance runs at a steady power, so its energy is power times time, $E = P\,t$. The total energy is the sum of the energies of the appliances. The appliance that consumes the most is the one with the greatest product $P\,t$, not necessarily the one with the greatest power.
+**Formula:** $E = P\,t$ and $E_\text{tot} = E_1 + E_2 + \dots$
+**Conversions:** The calculation is done in watt-hours and converted at the end: $1\,\text{Wh} = 10^{-3}\,\text{kWh}$.
+**Substitution:**
+$E_\text{fridge} = 100\,\text{W} \cdot 8.0\,\text{h} = 800\,\text{Wh}$
+$E_\text{TV} = 80\,\text{W} \cdot 3.5\,\text{h} = 280\,\text{Wh}$
+$E_\text{laptop} = 50\,\text{W} \cdot 6.0\,\text{h} = 300\,\text{Wh}$
+$E_\text{kettle} = 2000\,\text{W} \cdot 0.20\,\text{h} = 400\,\text{Wh}$
+$E_\text{dryer} = 1800\,\text{W} \cdot 0.10\,\text{h} = 180\,\text{Wh}$
+The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1960 \cdot 10^{-3}\,\text{kWh} = 1.96\,\text{kWh}$.
+**Answer:** $1.96\,\text{kWh}$, that is about $2.0\,\text{kWh}$. The fridge consumes the most energy, $0.80\,\text{kWh}$, although its power of $100\,\text{W}$ is smaller than that of the kettle and the hair dryer. The reason is the long running time.
+**Reasonableness:** The kettle and the hair dryer have the greatest power, but they run only for a short time: $0.58\,\text{kWh}$ together. The consumption in a day is of the order of a few kilowatt-hours, which suits a household whose annual consumption is thousands of kilowatt-hours.
+
+## fy2-3-L2-06
+**Given:** the student's solution $E = 2.0\,\text{kW} \cdot 90 = 180\,\text{kWh}$, power $P = 2.0\,\text{kW}$, time $t = 90\,\text{min}$
+**Find:** the error in the solution and the correct energy $E$ in kilowatt-hours
+**Principle:** The formula $E = P\,t$ gives the result in kilowatt-hours only if the time is in hours. The student multiplied kilowatts by minutes but named the result kilowatt-hours, so the unit does not match. The result $180\,\text{kWh}$ is also not believable: it would correspond to an oven running for $90\,\text{h}$.
+**Formula:** $E = P\,t$
+**Conversions:** $1\,\text{min} = 1\,\text{h} : 60$, so $90\,\text{min} = 90 \cdot (1\,\text{h} : 60) = 1.5\,\text{h}$.
+**Substitution:** $E = 2.0\,\text{kW} \cdot 1.5\,\text{h} = 3.0\,\text{kWh}$
+**Answer:** $3.0\,\text{kWh}$, two significant figures as in the power. The error was that the time was not converted to hours.
+**Reasonableness:** In an hour the oven consumes $2.0\,\text{kWh}$, so in an hour and a half it consumes somewhat more, $3.0\,\text{kWh}$. The student's result would be $60$ times too large, because there are $60$ times as many minutes as hours.
+
+## fy2-3-L2-07
+**Given:** the measurement points $(t;\ E)$ in the table: $(0\,\text{min};\ 0.00\,\text{kWh})$, $(10\,\text{min};\ 0.31\,\text{kWh})$, $(20\,\text{min};\ 0.59\,\text{kWh})$, $(30\,\text{min};\ 0.91\,\text{kWh})$, $(40\,\text{min};\ 1.19\,\text{kWh})$ and $(50\,\text{min};\ 1.51\,\text{kWh})$
+**Find:** the power $P$ of the heater in watts from the slope of the fitted line
+**Principle:** The heater transforms energy steadily, so the points should lie on the line $E = P\,t$, and the slope of the line is the power. The measurement has a little scatter, so the line is drawn through the middle of the set of points and the points are not joined to each other.
+**Reading the graph:** The points lie on a rising line with points left on both sides of it. The fitted line passes approximately through the points $(0\,\text{min};\ 0.00\,\text{kWh})$ and $(50\,\text{min};\ 1.50\,\text{kWh})$. They are read from the line and chosen far apart.
+**Formula:** $P = \dfrac{\Delta E}{\Delta t}$
+**Conversions:** $50\,\text{min} = 50 \cdot (1\,\text{h} : 60) = \tfrac{5}{6}\,\text{h}$, so $\Delta t = 0.833\,\text{h}$. Finally $1\,\text{kW} = 1000\,\text{W}$.
+**Substitution:** $P = \dfrac{1.50\,\text{kWh} - 0.00\,\text{kWh}}{0.833\,\text{h}} = 1.80\,\text{kW} = 1.80 \cdot 1000\,\text{W} = 1800\,\text{W}$
+**Answer:** $1800\,\text{W}$, that is $1.8\,\text{kW}$, two significant figures. A fit by eye varies, so about $1710\text{–}1890\,\text{W}$ is a good answer. The line passes through the origin because the meter was zeroed at the start: when no time has passed, no energy has been transformed. The slope is the power, because it tells the increase in energy per unit of time.
+**Reasonableness:** A power of $1.8\,\text{kW}$ is typical of a heater or a hair dryer. In ten minutes the heater consumes $1.8\,\text{kW} \cdot (1\,\text{h} : 6) = 0.30\,\text{kWh}$, which corresponds to the first reading in the table, $0.31\,\text{kWh}$.
+
+## fy2-3-L3-04
+**Given:** the hours and average powers in the table (consumption $P_\text{c}$, production $P_\text{p}$ in megawatts): 05–06 $8400$ and $8900$, 06–07 $9100$ and $8900$, 07–08 $9900$ and $9300$, 08–09 $10\,400$ and $9600$, 09–10 $10\,600$ and $9800$, 10–11 $10\,300$ and $9900$, 11–12 $9800$ and $9900$, 12–13 $9600$ and $9800$
+**Find:** the sum of the missing electrical energy $E$ in gigawatt-hours over the period when consumption exceeds production; the moment of peak consumption and the balancing power output needed
+**Principle:** The power in each hour is an average power, so the energy of an hour is $E = P\,\Delta t$ with $\Delta t = 1\,\text{h}$. The missing power is the difference $\Delta P = P_\text{c} - P_\text{p}$ when it is positive. The missing energies are calculated hour by hour and summed.
+**Formula:** $\Delta P = P_\text{c} - P_\text{p}$ and $E = \Delta P\,\Delta t$
+**Conversions:** $1\,\text{MWh} = 10^{-3}\,\text{GWh}$, because $1\,\text{MW} = 10^{-3}\,\text{GW}$.
+**Substitution:** Differences hour by hour: 05–06 $-500\,\text{MW}$ (surplus production), 06–07 $200\,\text{MW}$, 07–08 $600\,\text{MW}$, 08–09 $800\,\text{MW}$, 09–10 $800\,\text{MW}$, 10–11 $400\,\text{MW}$, 11–12 $-100\,\text{MW}$ and 12–13 $-200\,\text{MW}$. Consumption exceeds production in the hours 06–11. The sum is $200 + 600 + 800 + 800 + 400 = 2800$, so $E = 2800\,\text{MW} \cdot 1\,\text{h} = 2800\,\text{MWh} = 2800 \cdot 10^{-3}\,\text{GWh} = 2.8\,\text{GWh}$.
+**Answer:** The missing energy is $2.8\,\text{GWh}$, two significant figures. Consumption is at its highest at 09–10, $10\,600\,\text{MW}$. The greatest shortfall is $800\,\text{MW}$ in the hours 08–09 and 09–10, so at least $800\,\text{MW}$ of balancing power and imports is needed. The shortfall grows quickly in the morning and shrinks around noon, so a power plant whose output can be adjusted quickly, such as a hydropower plant, is suitable for the task. Wind power is not suitable because it depends on the weather, and neither is a nuclear power plant because it is steady base load power.
+**Reasonableness:** The power of a hydropower plant is hundreds of megawatts, so $800\,\text{MW}$ is the combined power of several plants, which is believable for a system the size of Finland. The energy $2.8\,\text{GWh}$ is three to four times the shortfall of the peak hour, $0.8\,\text{GWh}$, which fits a five-hour shortfall that is at its largest for two hours.
+
+## fy2-3-L3-05
+**Given:** the periods in the table, in which the compressor runs for $11.5$, $12.0$, $11.5$ and $12.0\,\text{min}$ and is off for $18.0$, $18.5$, $17.5$ and $18.0\,\text{min}$; power when running $P = 100\,\text{W}$; annual consumption of the new fridge $130\,\text{kWh}$; price $0.20\,\text{€/kWh}$; year $8760\,\text{h}$
+**Find:** the average power and annual consumption of the old fridge and the saving in euros from changing to a new one; an assessment of whether it is worth it
+**Principle:** The compressor runs at $100\,\text{W}$ for only part of the time, so the average power is the running power multiplied by the fraction of the total time spent running. The annual consumption is the average power times the time in a year, and the saving is the difference in consumption times the price. The model assumes that the measured periods describe the whole year.
+**Formula:** $\text{fraction} = \dfrac{t_\text{on}}{t_\text{on} + t_\text{off}}$, $P_\text{avg} = \text{fraction} \cdot P$, $E = P_\text{avg}\,t$ and $\text{saving} = (E - E_\text{new}) \cdot \text{unit price}$
+**Conversions:** The average power is converted to kilowatts by substituting $1\,\text{W} = 10^{-3}\,\text{kW}$.
+**Substitution:** The sum of the running times is $11.5 + 12.0 + 11.5 + 12.0 = 47.0\,\text{min}$ and the sum of the off times $18.0 + 18.5 + 17.5 + 18.0 = 72.0\,\text{min}$. The total time is $47.0\,\text{min} + 72.0\,\text{min} = 119.0\,\text{min}$, so the fraction is $\dfrac{47.0}{119.0} = 0.395$. The average power is $P_\text{avg} = 0.395 \cdot 100\,\text{W} = 39.5\,\text{W} = 0.0395\,\text{kW}$. The annual consumption is $E = 0.0395\,\text{kW} \cdot 8760\,\text{h} = 346\,\text{kWh}$. The saving is $(346\,\text{kWh} - 130\,\text{kWh}) \cdot 0.20\,\text{€/kWh} = 216\,\text{kWh} \cdot 0.20\,\text{€/kWh} = 43.2\,\text{€}$.
+**Answer:** The average power is about $40\,\text{W}$, the annual consumption about $350\,\text{kWh}$ and the saving about $43\,\text{€}$ a year, two significant figures. A new fridge costing $600\,\text{€}$ would pay for itself only in a time of $600\,\text{€} : 43\,\text{€/a} \approx 14\,\text{a}$, so buying it for the saving in electricity alone is not worth it if the old fridge works. The assumptions that affect the result: the four measured periods are representative, and the room temperature, opening the door or the build-up of ice do not change the running time over the year, and other consumption such as the light and defrosting is ignored.
+**Reasonableness:** The average power of $40\,\text{W}$ is less than half of the running power, because the compressor runs about two fifths of the time. An annual consumption of a few hundred kilowatt-hours is typical of an old appliance, and the electricity price of $0.20\,\text{€/kWh}$ gives an annual cost of a few tens of euros.
