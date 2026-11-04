@@ -40,6 +40,58 @@
       "answer": 3.5,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-06",
+      "level": 1,
+      "text": "The position $s$ of a walker has been measured as a function of time $t$, and the measurement points lie on a straight line. What does the slope $\\Delta s : \\Delta t$ of the line tell?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The walker's speed.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The walker's speed.",
+          "feedback": "Correct: the slope is the change in position divided by the time interval, and in uniform motion it is the speed $v$. Its unit is m/s.",
+          "correct": true
+        },
+        {
+          "text": "The walker's initial position.",
+          "feedback": "The initial position $s_0$ is where the line crosses the $s$-axis, that is, the position at time $t = 0$, not the slope. The slope tells how steeply the position changes."
+        },
+        {
+          "text": "The total distance the walker travelled.",
+          "feedback": "The total distance is the difference $\\Delta s$ between the position at the end of the line and the initial position. The slope is obtained when this is further divided by the time interval $\\Delta t$."
+        },
+        {
+          "text": "The quotient $s : t$ of position $s$ and time $t$ at some single point.",
+          "feedback": "The quotient $s : t$ is the speed only if the line passes through the origin. If $s_0 \\neq 0$, the speed is the change in position per time, $\\Delta s : \\Delta t$."
+        }
+      ]
+    },
+    {
+      "id": "fy1-5-L1-07",
+      "level": 1,
+      "text": "In the $(t, v)$ graph, the speed of a uniformly moving trolley is a horizontal line at $v = 0.80\\,\\text{m/s}$ during the interval $0\\,\\text{s} - 12\\,\\text{s}$. The area of the rectangle between the line and the $t$-axis corresponds to the distance travelled. How far does the trolley travel during this time?",
+      "kind": [
+        "model"
+      ],
+      "answer": 9.6,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-08",
+      "level": 1,
+      "text": "A cyclist travels uniformly $2.4\\,\\text{km}$ in $16\\,\\text{min}$. What is the cyclist's speed? Give the answer in m/s.",
+      "kind": [
+        "model"
+      ],
+      "answer": 2.5,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,76 @@
       "answer": 1.7,
       "unit": "km",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-05",
+      "level": 2,
+      "text": "The motion of a walker was filmed, and the position $s$ of the walker from the starting mark was measured by video analysis as a function of time $t$. The walker moves uniformly, and the points deviate from a straight line because of measurement uncertainty. Draw a graph of the points and fit a straight line to them. Determine the speed of the walker from the slope of the line and use it to predict the position of the walker at time $12\\,\\text{s}$. How many metres from the starting mark is the walker then? Justify why the prediction is a model value and not a measurement.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 18,
+      "unit": "m",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Position of the walker as a function of time",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1.2"
+          ],
+          [
+            "1.0",
+            "2.7"
+          ],
+          [
+            "2.0",
+            "3.9"
+          ],
+          [
+            "3.0",
+            "5.5"
+          ],
+          [
+            "4.0",
+            "6.7"
+          ],
+          [
+            "5.0",
+            "8.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-5-L2-06",
+      "level": 2,
+      "text": "A trolley moves uniformly on a track. It is initially at $s_0 = 8.0\\,\\text{m}$, and at time $2.0\\,\\text{s}$ it is at $11\\,\\text{m}$. A student reasons: “When the time triples to $6.0\\,\\text{s}$, the position triples, so the trolley is then at $33\\,\\text{m}$.” Find the student's error and calculate the correct position of the trolley at time $6.0\\,\\text{s}$.",
+      "kind": [
+        "error",
+        "model"
+      ],
+      "answer": 17,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L2-07",
+      "level": 2,
+      "text": "A toy car drives uniformly at about $0.80\\,\\text{m/s}$. The travel time of the car is measured by hand, and the uncertainty of the timing is about $0.2\\,\\text{s}$ regardless of the length of the time measured. You are planning a measurement of the speed in which the relative uncertainty of the time must be at most $2.0\\,\\%$. Assume that the distance is measured so accurately that its uncertainty does not affect the result. What is the minimum distance the car must travel during the measurement? Explain why a long distance improves the measurement.",
+      "kind": [
+        "experiment",
+        "model"
+      ],
+      "answer": 8.0,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +222,95 @@
       "answer": 90,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L3-04",
+      "level": 3,
+      "text": "The position $s$ of a cyclist from the start of the track was measured by video analysis as a function of time $t$. Draw a graph of the points. The cyclist's speed changes partway, so the motion cannot be modelled with a single straight line. Find in the table the moment when the speed changes, and model the motion as two uniform parts. Use the model to calculate the cyclist's average speed in the interval $5.0\\,\\text{s} - 35\\,\\text{s}$, where the average speed is the distance travelled in the interval divided by the length of the interval. The moment $35\\,\\text{s}$ is not in the table. Why is the average speed not the mean of the speeds of the parts?",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 1.3,
+      "unit": "m/s",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Position of the cyclist as a function of time",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "5.0",
+            "15.0"
+          ],
+          [
+            "10.0",
+            "30.0"
+          ],
+          [
+            "15.0",
+            "35.0"
+          ],
+          [
+            "20.0",
+            "40.0"
+          ],
+          [
+            "30.0",
+            "50.0"
+          ],
+          [
+            "40.0",
+            "60.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-5-L3-05",
+      "level": 3,
+      "text": "A fast bullet is filmed with a camera that takes a picture every $0.010\\,\\text{s}$. The position $s$ of the bullet from the starting point, measured from the pictures, is in the table. The speed of the bullet is constant during this time. Calculate the speed of the bullet. A $(t, s)$ graph is drawn in which $1.0\\,\\text{s}$ on the horizontal axis is $10\\,\\text{cm}$ and $1.0\\,\\text{m}$ on the vertical axis is $1.0\\,\\text{cm}$. How many centimetres does the line rise during one imaging interval, and how long is the imaging interval on the horizontal axis? Use these to justify why the line looks almost vertical but cannot be exactly vertical.",
+      "kind": [
+        "data",
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "answer": 300,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Position of the bullet as a function of time",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.000",
+            "2.0"
+          ],
+          [
+            "0.010",
+            "5.0"
+          ],
+          [
+            "0.020",
+            "8.0"
+          ],
+          [
+            "0.030",
+            "11.0"
+          ]
+        ]
+      }
     }
   ]
 }

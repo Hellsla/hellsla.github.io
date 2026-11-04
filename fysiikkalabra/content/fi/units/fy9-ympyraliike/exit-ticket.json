@@ -1,0 +1,10 @@
+[
+ {
+  "q": "Karuselli tekee yhden kierroksen $6{,}0\\,\\text{s}$:ssa. Kuinka suuri on $2{,}4\\,\\text{m}$:n päässä keskipisteestä istuvan lapsen ratanopeus?",
+  "a": "$v = \\dfrac{2\\pi r}{T} = \\dfrac{2\\pi \\cdot 2{,}4\\,\\text{m}}{6{,}0\\,\\text{s}} \\approx 2{,}5\\,\\text{m/s}$. Nopeus on radan tangentin suuntainen, ja keskitangon vieressä istuva liikkuu hitaammin, vaikka kierrosaika on sama."
+ },
+ {
+  "q": "Satelliitti siirretään radalta, jonka säde on $r$, radalle, jonka säde on $3r$. Kuinka moninkertaiseksi Maan satelliittiin kohdistama gravitaatiovoima muuttuu?",
+  "a": "Gravitaatiovoima on kääntäen verrannollinen etäisyyden neliöön: $\\dfrac{F_2}{F_1} = \\dfrac{r^2}{(3r)^2} = \\dfrac{1}{9}$. Voima pienenee yhdeksäsosaan, mutta ei häviä."
+ }
+]

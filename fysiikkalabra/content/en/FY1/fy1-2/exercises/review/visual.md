@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: e73d5c50b1992213
-
-Round 2: both round-1 Blocking items are resolved (answer units are now "cycles", "bacteria", and the stem values and the "m²" unit are set as maths).
+CONTENT-HASH: d5ed02b94c3e36e1
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none)
 
 ## Polish
-- [Minor] solutions.md L1-04 — heading "Reading the graph" for a ruler reading — "Reading the ruler".
-- [Minor] solutions L2-01 — "3.2·10^9 1/s" juxtaposes a power and "1/s" ambiguously — write \dfrac{1}{\text{s}} as in the substitution.
-- [Minor] solutions L3-01 — a sentence split by a chain ("t = 1 a = … / is already in seconds") — keep the prose in front of the chain.
+(none)
 
 ## Checked
-- open-exercises-1280-1 (L1-01), -3 (L1-03 and the L1-04 ruler figure), open-exercises-L2-1280-1 and -2 (L2-01, L2-02), open-exercises-L3-1280-1 (L3-01). Stems, answer boxes, units and solution rows read cleanly.
+- Captures of the new tasks at 1280 px with solutions open (L2 part 3, L3 part 5/6 and neighbours): numbers and units are set as maths in the same typeface as the formulas; tables (L2-05, L2-06, L3-05) have headers and translated units and do not overflow; pendulum unit derivation and substitution blocks render in en without clipping.
+- No untranslated strings or Finnish/English mix in the rendered tasks; the decimal point is used consistently.
+- Figures are unchanged from fi (alt texts not part of this change).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · language 4 · accessibility 4

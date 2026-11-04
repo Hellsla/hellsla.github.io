@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: d9d31f79667eabf1
+CONTENT-HASH: 65929f7816d1a088
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
 ## Fixed
-- (none needed)
+(none needed: the English text already matched fi in every number)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Translation review of the exercise set against the reviewed Finnish (teacher decision 2026-10-28), re-done after content changes made the earlier hash stale. Physics, numbers, units, decimals, answers, tolerances, significant-figure reasons and reasonableness checks of all 12 tasks (L1-01 to L3-03) and every solution step compared with the reviewed Finnish; the maths in solutions.md is identical to the Finnish apart from the language decimal mark. Figure task L2-03 reading (40 ml to 50 ml) matches.
-- check_i18n: 0 errors for en.
+- Script comparison of exercises.json against content/fi: same ids, levels, kinds, answers, units, tolerances, correct flags, choice counts, data table cells; every number in all strings identical (decimal comma/point normalised) for all 20 exercises, incl. the 8 new (L1-06..08, L2-05..07, L3-04..05).
+- Re-derived: L1-08 56.5 g, L2-05 2.7 g/cm3, L2-06 920 kg/m3 (m0 about 85 g), L2-07 8.9 g/cm3, L3-04 11.3 g/cm3 (9.42, -16.7 %), L3-05 39.9 cm3; all agree with fi.
+- solutions.md prose for the new tasks read through: same steps, numbers and conclusions as fi (copper vs plastic, lead vs copper, Cu/Al by volume and mass).
+- Choice feedback in L1-06/L1-07 names the same misconception per distractor as fi.
+- check_i18n.py en: 0 errors.
