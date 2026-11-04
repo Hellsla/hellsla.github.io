@@ -118,3 +118,86 @@
 **Substitution:** $E_\text{loss} = 150\,\text{kW} \cdot 8760\,\text{h} = 1\,314\,000\,\text{kWh} = 1\,314\,000 \cdot 0.001\,\text{MWh} = 1314\,\text{MWh}$, and $N = \dfrac{1314\,\text{MWh}}{20\,\text{MWh}} = 65.7$
 **Answer:** about $66$ houses, two significant figures as in the consumption of a house, $20\,\text{MWh}$ (the least precise value).
 **Reasonableness:** Estimate: $150\,\text{kW} \cdot 9000\,\text{h} \approx 1350\,\text{MWh}$ and $1350 : 20 \approx 68$, so the result is of the right size. So the small loss power of the pipework corresponds to the whole heating of dozens of houses.
+
+## fy2-7-L1-06
+**Find:** why electrical energy is transmitted at a high voltage in the national grid.
+**Principle:** In the transmission of electricity, the loss occurs when current heats the conductors. The power of electricity depends on the voltage and the current, so the higher the voltage, the smaller the current that is enough for the same power. A smaller current heats the conductors less.
+**Model answer:** At a high voltage, a smaller current is enough for the same power, so the conductors heat up less and the loss becomes smaller. Voltage does not add energy, and the loss still does not disappear completely: about $4\,\%$ of the sent energy is still lost in the grid. The cause of the loss is not the speed of electricity but the heating of the conductor as current flows.
+
+## fy2-7-L1-07
+**Given:** sent energy $E_\text{sent} = 250\,\text{MWh}$ and arrived energy $E_\text{arrived} = 238\,\text{MWh}$
+**Find:** the share of the sent energy that is lost, as a percentage
+**Principle:** The loss is the difference between the sent and the arrived energy, and the share of the loss is calculated from the sent energy.
+**Formula:** $E_\text{loss} = E_\text{sent} - E_\text{arrived}$, and the share $p = \dfrac{E_\text{loss}}{E_\text{sent}}$
+**Conversions:** The quotient is a decimal number, which is converted into a percentage by multiplying by one hundred: $0.048 = 0.048 \cdot 100\,\% = 4.8\,\%$.
+**Substitution:** $E_\text{loss} = 250\,\text{MWh} - 238\,\text{MWh} = 12\,\text{MWh}$, and $p = \dfrac{12\,\text{MWh}}{250\,\text{MWh}} = 0.048 = 4.8\,\%$
+**Answer:** $4.8\,\%$, two significant figures, because the difference $12\,\text{MWh}$ is a two-digit number.
+**Reasonableness:** Four per cent of $250\,\text{MWh}$ would be $10\,\text{MWh}$, and the loss $12\,\text{MWh}$ is slightly greater, so $4.8\,\%$ is of the right size. Also $238\,\text{MWh} + 12\,\text{MWh} = 250\,\text{MWh}$.
+
+## fy2-7-L1-08
+**Given:** sent power $P_\text{sent} = 800\,\text{kW}$ and arrived power $P_\text{arrived} = 728\,\text{kW}$
+**Find:** the loss power $P_\text{loss}$ in kilowatts
+**Principle:** Power is the rate of energy transfer, so the sent power divides into the arrived power and the lost power in the same way as energy does.
+**Formula:** $P_\text{loss} = P_\text{sent} - P_\text{arrived}$
+**Conversions:** Not needed: both powers are in kilowatts.
+**Substitution:** $P_\text{loss} = 800\,\text{kW} - 728\,\text{kW} = 72\,\text{kW}$
+**Answer:** $72\,\text{kW}$, two significant figures, because the precision of the difference is limited by the power $728\,\text{kW}$ in whole kilowatts.
+**Reasonableness:** The share of the loss is $72\,\text{kW} : 800\,\text{kW} = 0.090 = 9.0\,\%$, which is a typical loss of a district heating network. Also $728\,\text{kW} + 72\,\text{kW} = 800\,\text{kW}$.
+
+## fy2-7-L2-05
+**Given:** from the table, the sent energies of four months $820$, $760$, $640$ and $430\,\text{MWh}$ and the arrived energies $745$, $692$, $577$ and $381\,\text{MWh}$
+**Find:** the share $p$ of the loss over the whole period as a percentage; the monthly shares and an explanation
+**Principle:** The share of the loss over the whole period is calculated from the sent energy of the whole period, so the energies are added up first. The average of the monthly percentages is not used, because the energies of the months differ in size.
+**Formula:** $E_\text{loss} = E_\text{sent} - E_\text{arrived}$ and $p = \dfrac{E_\text{loss}}{E_\text{sent}}$
+**Conversions:** The quotient is converted into a percentage by multiplying by one hundred. The energies are in the same unit, megawatt-hours.
+**Substitution:** The sum of the sent energies is $2650\,\text{MWh}$ and that of the arrived energies $2395\,\text{MWh}$. So $E_\text{loss} = 2650\,\text{MWh} - 2395\,\text{MWh} = 255\,\text{MWh}$ and $p = \dfrac{255\,\text{MWh}}{2650\,\text{MWh}} = 0.0962 = 9.62\,\%$
+**Answer:** $9.62\,\%$, three significant figures, because the energies are given with three digits (example data set). The monthly share of the loss is $9.1\,\%$ in January, $8.9\,\%$ in February, $9.8\,\%$ in March and $11\,\%$ in April, so it is greatest in April. Explanation: the need for heat decreases in spring, but the loss decreases ($75 \to 49\,\text{MWh}$) much less than the energy fed in ($820 \to 430\,\text{MWh}$), because the pipes are hot and the ground is cold in spring too, so the loss is a greater share of a smaller energy.
+**Reasonableness:** The monthly shares are between $8.9\,\%$ and $11\,\%$, so the $9.62\,\%$ of the whole period lies between them. Also $2395\,\text{MWh} + 255\,\text{MWh} = 2650\,\text{MWh}$.
+
+## fy2-7-L2-06
+**Given:** transmitted power $100\,\text{MW}$; the loss power at voltages $20$, $40$, $80$ and $160\,\text{kV}$ is $16$, $4.0$, $1.0$ and $0.25\,\text{MW}$
+**Find:** the loss power $P_\text{loss}$ at a voltage of $320\,\text{kV}$ in megawatts, and the justification
+**Principle:** A regularity is looked for in the table: the loss powers at consecutive voltages are compared, each voltage being double the previous one. It is assumed that the same power line and the same transmitted power $100\,\text{MW}$ stay the same, so the same pattern continues and the next value can be estimated.
+**Formula:** The loss power becomes $k$ times smaller when the voltage doubles: $k = \dfrac{P_\text{loss,previous}}{P_\text{loss,next}}$, and the estimate is $P_\text{loss,320} = \dfrac{P_\text{loss,160}}{k}$
+**Conversions:** Not needed: the voltages are in kilovolts and the powers in megawatts. The voltage $320\,\text{kV}$ is double the voltage $160\,\text{kV}$.
+**Substitution:** $k = \dfrac{16\,\text{MW}}{4.0\,\text{MW}} = \dfrac{4.0\,\text{MW}}{1.0\,\text{MW}} = \dfrac{1.0\,\text{MW}}{0.25\,\text{MW}} = 4.0$, so $P_\text{loss,320} = \dfrac{0.25\,\text{MW}}{4.0} = 0.0625\,\text{MW}$
+**Answer:** about $0.063\,\text{MW}$, two significant figures as in the table value $0.25\,\text{MW}$. When the voltage is doubled, the loss power becomes one quarter. Justification: at a higher voltage the same power is transmitted with a smaller current, and a smaller current heats the conductors less. When the voltage doubles, the current halves, and the loss decreases faster than the current: a current half as great gives a quarter of the loss.
+**Reasonableness:** The voltage increases sixteen-fold between $20\,\text{kV}$ and $320\,\text{kV}$, and the loss power becomes $16\,\text{MW} : 0.0625\,\text{MW} = 256$ times smaller. The result is smaller than $0.25\,\text{MW}$ but positive, as it should be, and it continues the pattern of the table.
+
+## fy2-7-L2-07
+**Find:** which answer corrects the claim “electricity travels at the speed of light, so there are no losses”.
+**Principle:** The transmission loss occurs when current heats the conductors and part of the electrical energy is converted into heat in the surroundings. The loss does not depend on how fast the energy is transferred. Energy also does not disappear but is converted into a form that is useless to the user.
+**Model answer:** The claim is wrong, because speed does not tell about losses. The current heats the conductor, and this heat does not reach the user, so less energy arrives than is sent. The loss is not the disappearance of energy but its conversion into heat. About $4\,\%$ of the sent energy is lost in the electricity grid, and that is why a high voltage, which reduces the current, reduces the loss.
+
+## fy2-7-L3-04
+**Given:** from the table, the loss powers: external walls $2.4\,\text{kW}$, upper floor $1.5\,\text{kW}$, windows $1.8\,\text{kW}$; reductions $50\,\%$, $60\,\%$ and $40\,\%$; loss of the district heating network $9.0\,\%$ of the sent energy; time $t = 5000\,\text{h}$
+**Find:** the energy that the best improvement saves at the heating plant in megawatt-hours; the justification of the choice
+**Principle:** An improvement reduces the loss power by a certain share, and energy is obtained from power and time. The saving of the house is heat that has arrived. The loss of the network is calculated from the sent energy, so the saving of the heating plant is the saving of the house divided by the efficiency.
+**Formula:** $\Delta P = r\, P_\text{loss}$, $\Delta E_\text{house} = \Delta P \cdot t$ and $\Delta E_\text{plant} = \dfrac{\Delta E_\text{house}}{\eta}$
+**Conversions:** $\eta = 100\,\% - 9.0\,\% = 91.0\,\% = 0.910$ and $r$ is the reduction as a decimal number, for example $50\,\% = 0.50$. A kilowatt times an hour is directly a kilowatt-hour, and $1000\,\text{kWh} = 1\,\text{MWh}$.
+**Substitution:** A: $\Delta P = 0.50 \cdot 2.4\,\text{kW} = 1.2\,\text{kW}$ and $\Delta E_\text{house} = 1.2\,\text{kW} \cdot 5000\,\text{h} = 6000\,\text{kWh}$. B: $0.40 \cdot 1.8\,\text{kW} \cdot 5000\,\text{h} = 3600\,\text{kWh}$. C: $0.60 \cdot 1.5\,\text{kW} \cdot 5000\,\text{h} = 4500\,\text{kWh}$. A saves the most, and $\Delta E_\text{plant} = \dfrac{6.0\,\text{MWh}}{0.910} = 6.593\,\text{MWh}$
+**Answer:** $6.6\,\text{MWh}$, two significant figures as in the loss power $2.4\,\text{kW}$. Choice: insulating the external walls, because the loss power of the walls is the greatest and its reduction of $50\,\%$ is large, so the saving of $6000\,\text{kWh}$ beats improvements B ($3600\,\text{kWh}$) and C ($4500\,\text{kWh}$). The saving of the plant is greater than the saving of the house, because the heat that the house needs passes through the network: when the house needs $6.0\,\text{MWh}$ less, the plant also saves the part that would be lost on the way. The improvement should be aimed at the greatest loss, and in reality the price and the effect on living also influence the decision.
+**Reasonableness:** The part of the saving that is the loss of the network is $6.593\,\text{MWh} - 6.0\,\text{MWh} = 0.593\,\text{MWh}$, and $0.593\,\text{MWh} : 6.593\,\text{MWh} = 0.090 = 9.0\,\%$, as the loss of the network. The total loss power of the house, $8.0\,\text{kW}$, is more than $1.2\,\text{kW}$, so the saving is a sensible part of it.
+
+## fy2-7-L3-05
+**Given:** from the table, the durations of the periods $7$, $5$, $7$ and $5\,\text{h}$, the fed-in powers $18$, $42$, $50$ and $66\,\text{MW}$, and the loss shares $1.5\,\%$, $3.5\,\%$, $4.2\,\%$ and $5.5\,\%$
+**Find:** the share $p$ of the energy fed in that is lost during the day, as a percentage; the comparison and the justification
+**Principle:** The power is steady during each period, so the energy fed in during a period is power times time. The loss is the loss share of the period times the energy fed in during the period. The share for the whole day is obtained from the sums, not from the average of the percentages of the periods, because different amounts of energy are fed in during the periods.
+**Formula:** $E_\text{sent} = P_\text{sent}\, t$, $E_\text{loss} = p_i\, E_\text{sent}$ for period $i$, and for the whole day $p = \dfrac{E_\text{loss,total}}{E_\text{sent,total}}$
+**Conversions:** The loss shares are converted into decimal numbers, for example $1.5\,\% = 1.5 : 100 = 0.015$. A megawatt times an hour is directly a megawatt-hour.
+**Substitution:** The energies fed in during the periods (hours · megawatts = megawatt-hours) and the losses (share · energy, in megawatt-hours) are
+```latex
+\begin{aligned}
+E_1 &= 7 \cdot 18 = 126\,\text{MWh} \\
+H_1 &= 0.015 \cdot 126 = 1.89\,\text{MWh} \\
+E_2 &= 5 \cdot 42 = 210\,\text{MWh} \\
+H_2 &= 0.035 \cdot 210 = 7.35\,\text{MWh} \\
+E_3 &= 7 \cdot 50 = 350\,\text{MWh} \\
+H_3 &= 0.042 \cdot 350 = 14.70\,\text{MWh} \\
+E_4 &= 5 \cdot 66 = 330\,\text{MWh} \\
+H_4 &= 0.055 \cdot 330 = 18.15\,\text{MWh}
+\end{aligned}
+```
+The sum of the energies fed in is $1016\,\text{MWh}$ and the sum of the losses $42.09\,\text{MWh}$. So $p = \dfrac{42.09\,\text{MWh}}{1016\,\text{MWh}} = 0.0414 = 4.1\,\%$
+**Answer:** $4.1\,\%$, two significant figures as in the loss shares (example data set). The result is close to the loss of about $4\,\%$ in the Finnish electricity grid (Finnish Energy, 2024), that is, of the same order of magnitude. The lost energy is greatest in the period 19–24, when $18.15\,\text{MWh}$ is lost, about $43\,\%$ of the loss of the whole day. A greater power requires a greater current, and the loss grows faster than the current (a doubled current gives about a fourfold loss), so the loss grows faster than the power fed in, and its share increases.
+**Reasonableness:** The ordinary average of the loss shares of the periods would be $3.7\,\%$, which is too small, because a lot of energy is fed in during the evening and the share is then the greatest. The result $4.1\,\%$ lies between the shares $1.5\,\%$ and $5.5\,\%$, and $0.041 \cdot 1016\,\text{MWh} \approx 42\,\text{MWh}$ matches the sum $42.09\,\text{MWh}$.
