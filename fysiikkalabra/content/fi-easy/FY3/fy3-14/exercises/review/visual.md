@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 80d40cb8c72efa58
+CONTENT-HASH: be3097eb05d83649
+Mode: full
+Round: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] energy-bars figure — task labels sit over gridlines — give labels a paper-coloured backing.
+- None.
 
 ## Checked
-open-exercises-1280-3 (energy-bars figure and solution), -5, contact-4/5 (all levels).
+- review/shots/fy3-14-open-exercises-L2-1280-8.png and L3-1280-7.png (en), open-exercises-L2-1280-8.png (fi-easy): L2-05 answer and reasonableness, L2-06 task, L3-04 substitution blocks. Formulas, decimal point (en) / comma (fi-easy), data tables and layout match the Finnish; no overflow. Text fixes above are prose only and do not change layout.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

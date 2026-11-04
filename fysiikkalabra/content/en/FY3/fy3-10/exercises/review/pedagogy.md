@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 05a774b4eda00d4d
+CONTENT-HASH: c8e4ec033bea480a
+Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
+Round 1
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
 - (none needed)
 
 ## Polish
-- en: hint text says "experiment 1" lower-case while other texts say "Experiment 1"; worked-example Result sentence about limiting figures is a little clumsy.
+- L2-05 / L3-04 text: long multi-part tasks, as in fi; the 'answer box takes part b)' sentence keeps the focus clear.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json (all 12 tasks) and solutions.md (all steps, numbers, sign/limiting-figure remarks, reasonableness checks) and the exit-ticket compared with the reviewed Finnish; terms.md terms and chapter title 'Changes of state of a gas and Boyle's law' match.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the exercises (units as math, new figure task fy3-10-L2-04 with its solution) and the exit ticket against the new Finnish.
+- Hints, steps and feedback of the new tasks keep the same scaffolding as fi (wrong-choice feedback names the misconception; error-finding L1-08 intact).
+- Natural English, same register as the rest of the set; formulas and symbols as in fi.
+- Answer-box instruction sentences present in L2-05, L2-06, L3-04, L3-05 as in fi.
+- check_i18n.py en: 0 errors.

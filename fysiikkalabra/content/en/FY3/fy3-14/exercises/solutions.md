@@ -154,7 +154,7 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 **Given:** power $P = 150\,\text{W}$, ice at a temperature of $0\,{}^\circ\text{C}$, the points of the line $(0\,\text{s};\ 0\,\text{g})$ and $(300\,\text{s};\ 133\,\text{g})$; from the table the reference value $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the specific latent heat of fusion of ice $s$ in $\tfrac{\text{kJ}}{\text{kg}}$
 **Principle:** The ice is already at the melting temperature and all the energy of the heater melts ice, so the temperature does not change and $P t = s m$. When the mass of melted water grows steadily, the $(t,\ m)$ graph is a straight line through the origin, with slope $\dfrac{m}{t} = \dfrac{P}{s}$.
-**Reading the graph:** The line is fitted between the points from the origin to the point $(300\,\text{s};\ 133\,\text{g})$. The slope is $\dfrac{133\,\text{g}}{300\,\text{s}} = 0.4433\,\tfrac{\text{g}}{\text{s}}$, and it tells how many grams of ice melt per second.
+**Reading the graph:** The line is fitted to the points from the origin to the point $(300\,\text{s};\ 133\,\text{g})$. The slope is $\dfrac{133\,\text{g}}{300\,\text{s}} = 0.4433\,\tfrac{\text{g}}{\text{s}}$, and it tells how many grams of ice melt per second.
 **Formula:** $P t = s m$, so $s = \dfrac{P t}{m} = \dfrac{P}{k}$, where $k = \dfrac{m}{t}$ is the slope
 **Conversions:** $k = 0.4433\,\tfrac{\text{g}}{\text{s}} = 0.4433 \cdot 10^{-3}\,\tfrac{\text{kg}}{\text{s}}$. Finally $1\,\tfrac{\text{J}}{\text{kg}} = 10^{-3}\,\tfrac{\text{kJ}}{\text{kg}}$.
 **Substitution:** $s = \dfrac{150\,\text{W}}{0.4433 \cdot 10^{-3}\,\tfrac{\text{kg}}{\text{s}}} = 338\,400\,\tfrac{\text{J}}{\text{kg}} = 338\,\tfrac{\text{kJ}}{\text{kg}}$

@@ -154,7 +154,7 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 **Annettu:** teho $P = 150\,\text{W}$, jää lämpötilassa $0\,{}^\circ\text{C}$, suoran pisteet $(0\,\text{s};\ 0\,\text{g})$ ja $(300\,\text{s};\ 133\,\text{g})$; taulukosta vertailuarvo $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** jään ominaissulamislämpö $s$ yksikössä $\tfrac{\text{kJ}}{\text{kg}}$
 **Periaate:** Jää on jo sulamislämpötilassa. Kaikki lämmittimen energia sulattaa jäätä, joten lämpötila ei muutu ja $P t = s m$. Sulanut massa kasvaa tasaisesti. Siksi kuvaaja $(t,\ m)$ on origon kautta kulkeva suora, jonka kulmakerroin on $\dfrac{m}{t} = \dfrac{P}{s}$.
-**Kuvaajan lukeminen:** Suora sovitetaan pisteiden lomaan origosta pisteeseen $(300\,\text{s};\ 133\,\text{g})$. Kulmakerroin on $\dfrac{133\,\text{g}}{300\,\text{s}} = 0{,}4433\,\tfrac{\text{g}}{\text{s}}$. Se kertoo, kuinka monta grammaa jäätä sulaa sekunnissa.
+**Kuvaajan lukeminen:** Suora sovitetaan pisteisiin origosta pisteeseen $(300\,\text{s};\ 133\,\text{g})$. Kulmakerroin on $\dfrac{133\,\text{g}}{300\,\text{s}} = 0{,}4433\,\tfrac{\text{g}}{\text{s}}$. Se kertoo, kuinka monta grammaa jäätä sulaa sekunnissa.
 **Kaava:** $P t = s m$, josta $s = \dfrac{P t}{m} = \dfrac{P}{k}$, missä $k = \dfrac{m}{t}$ on kulmakerroin
 **Muunnokset:** $k = 0{,}4433\,\tfrac{\text{g}}{\text{s}} = 0{,}4433 \cdot 10^{-3}\,\tfrac{\text{kg}}{\text{s}}$. Lopuksi $1\,\tfrac{\text{J}}{\text{kg}} = 10^{-3}\,\tfrac{\text{kJ}}{\text{kg}}$.
 **Sijoitus:** $s = \dfrac{150\,\text{W}}{0{,}4433 \cdot 10^{-3}\,\tfrac{\text{kg}}{\text{s}}} = 338\,400\,\tfrac{\text{J}}{\text{kg}} = 338\,\tfrac{\text{kJ}}{\text{kg}}$
