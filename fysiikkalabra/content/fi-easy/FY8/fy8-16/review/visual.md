@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d2f0ed57be8db41f
+CONTENT-HASH: dda6a3baf998eeba
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] lesson.md, Yleinen virhekäsitys — "Hän ajattelee" after "Moni ajattelee"; use "myös".
-- [Minor] lesson.md, Pimeä aine — one 40-word sentence; split.
-- [Minor] lesson.md — "3000 K:iin" with a colon ending is correct Finnish; "milj." forms are avoided, good.
-- [Minor] figure 10 — arrow label "neutronisieppaus supernovissa ja neutronitähtien törmäyksissä" is four lines at 390 px but fits.
+- [Minor] hubble-deep-field caption — "Laajeneminen on venyttänyt valon aallonpituuksia" is abstract for S2 readers — add "eli valo on muuttunut punaisemmaksi".
 
 ## Checked
-contact-1 (hero, figures 4, 6, 8, 10, 12), sim-1280, open-exercises-1280-1. Figure labels are Finnish (laboratorio, galaksi, ennen/myöhemmin, fuusio tähdissä, Linnunrata); decimal comma in prose and figures, the sim readout too; the sim shows its note "Valoaallon venyminen ... liioiteltu". Selkeä suomi: short sentences, one voice, glossary terms consistent. meta.json key_concepts: 5 items, ≤25 words, no numbers or $.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: opened hubble-deep-field.webp, rendered at 390 and 1280 px (photo stands right after the H2 and beside the first subsection, no clipping or overflow). Alt matches (black sky with many small galaxies). Caption: about $10\,000$ galaxies and light older than $13$ billion years correct.

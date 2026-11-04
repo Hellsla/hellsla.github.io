@@ -1,19 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: f51c4d028372b9fc
+VERDICT: FAIL
+CONTENT-HASH: 247aa0021748dda8
 
 ## Blocking
-(none)
+- [Major] dosimeter-japan caption (lesson.md, after the radon paragraph) — "Jokainen näkee, kuinka kauan alueella kannattaa olla." is not what the photo shows: the display (red digits, Japanese text for dose rate in microsieverts per hour) gives a dose rate, not a time; a duration needs a calculation with a limit — misleading physics, and the caption never says what the number means — fix, for example: "Iso näyttö kertoo annosnopeuden eli kuinka paljon säteilyä alueella saa tunnissa. Mitä suurempi luku, sitä lyhyempi aika alueella kannattaa olla." (a number with its unit in maths if one is quoted).
 
 ## Polish
-- [Minor] lesson.md — "viitearvo eli enimmäisarvo" on epätarkka (viitearvo ei ole raja); korjaus: "viitearvo, jonka alle pitoisuuden tulisi jäädä".
-- [Minor] lesson.md — "sironneista fotoneista" ja "mitoitetaan varmuusvaralla" ovat raskaita selkeälle suomelle; korjaus: "osa sironneista eli sivuun poikenneista fotoneista pääsee silti läpi, joten suoja tehdään varmuuden vuoksi paksummaksi".
-- [Minor] hero (fig-1) — ydinvoimala on kuvassa vain pieni siilo; kellari on tyhjä valkoinen laatikko. Suurenna laitosta tai poista se kuvauksesta.
-- [Minor] lahteet (fig-4) — ydinvoima-rivi (< 0,1) puuttuu pylväskuviosta, vaikka avauskysymys koskee sitä; lisää ohut pylväs.
+- [Minor] radiacode-dosimeter alt/caption — reading is "4,45 CPS"; caption says "pulssien määrä sekunnissa", correct, but the alt "Näytöllä on lukema" could name it ("lukema 4,45").
 
 ## Checked
-- No wording or figure change (0 changed lines); fig-4-390 reopened: Finnish labels fit, nothing clipped.
-- Rest of the lesson is as approved in the previous report.
-- Hash at start and end: f51c4d028372b9fc.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: opened radiacode-dosimeter.webp and dosimeter-japan.webp, rendered both at 390 and 1280 px (float right, no clipping or overflow; tall photo shrinks to a narrow image at 1280, acceptable). Alt texts match the images (black meter on green; red digits and Japanese text). Radiacode caption correct.
