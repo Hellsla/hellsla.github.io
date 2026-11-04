@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-6-L1-01",
+      "level": 1,
+      "text": "Oranssin LEDin kynnysjännite on $1{,}95\\,\\text{V}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuren energian elektroni saa jännitelähteeltä, kun se kulkee tämän jännitteen yli? Anna vastaus jouleina.",
+      "answer": 3.12e-19,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L1-02",
+      "level": 1,
+      "text": "Vihreän LEDin spektrin huippu on aallonpituudella $525\\,\\text{nm}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka suuri on tämän aallonpituuden fotonin energia? Anna vastaus elektronivoltteina.",
+      "answer": 2.36,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L1-03",
+      "level": 1,
+      "text": "Punaisen laserdiodin valon aallonpituus on $650\\,\\text{nm}$. Valon nopeus on $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$. Mikä on valon taajuus? Anna vastaus hertseinä.",
+      "answer": 461000000000000.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L1-04",
+      "level": 1,
+      "text": "Galliumarsenidin energia-aukko on $1{,}42\\,\\text{eV}$. Siitä tehty LED säteilee fotoneja, joiden energia on likimain energia-aukon suuruinen. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Mikä on LEDin valon aallonpituus? Anna vastaus nanometreinä.",
+      "answer": 873,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L1-05",
+      "level": 1,
+      "text": "Opiskelija sovitti LEDien kynnysjännitteisiin taajuuden funktiona suoran. Suoran kulmakerroin on $k = 4{,}10 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Minkä arvon opiskelija sai Planckin vakiolle? Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
+      "answer": 6.57e-34,
+      "unit": "J s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-6-L2-01",
+      "level": 2,
+      "text": "Sinisen LEDin spektrin huippu on aallonpituudella $470\\,\\text{nm}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Arvioi, kuinka suuri jännite LEDiin on vähintään kytkettävä, jotta se alkaa säteillä. Anna vastaus voltteina.",
+      "answer": 2.64,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L2-02",
+      "level": 2,
+      "text": "Oranssin LEDin huippuaallonpituus on $605\\,\\text{nm}$, ja sen kynnysjännitteeksi mitataan $1{,}95\\,\\text{V}$. Käytä arvoja $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuren arvon Planckin vakiolle saa tästä yhdestä LEDistä, kun oletetaan $eU_\\text{k} = \\tfrac{hc}{\\lambda}$? Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
+      "answer": 6.3e-34,
+      "unit": "J s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L2-03",
+      "level": 2,
+      "text": "Punaisen LEDin läpi kulkee virta $20\\,\\text{mA}$, ja sen valon aallonpituus on $630\\,\\text{nm}$. Oletetaan, että jokainen LEDin läpi kulkeva elektroni synnyttää yhden fotonin, joka pääsee ulos LEDistä. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri on LEDin valoteho? Anna vastaus milliwatteina.",
+      "answer": 39.4,
+      "unit": "mW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L2-04",
+      "level": 2,
+      "text": "Valkoisessa LEDissä on sininen LED, jonka fotonien aallonpituus on $450\\,\\text{nm}$. Sitä peittää loisteaine. Loisteaine absorboi sinisen fotonin ja säteilee fluoresenssina keltaisen fotonin, jonka aallonpituus on $560\\,\\text{nm}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka paljon energiaa loisteaineeseen jää lämmöksi yhtä fotonia kohti? Anna vastaus elektronivoltteina.",
+      "answer": 0.541,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-6-L3-01",
+      "level": 3,
+      "text": "Ryhmä mittasi neljän LEDin kynnysjännitteet. Punainen LED: $\\lambda = 625\\,\\text{nm}$, $U_\\text{k} = 1{,}86\\,\\text{V}$. Keltainen: $590\\,\\text{nm}$ ja $1{,}97\\,\\text{V}$. Vihreä: $520\\,\\text{nm}$ ja $2{,}27\\,\\text{V}$. Sininen: $465\\,\\text{nm}$ ja $2{,}55\\,\\text{V}$. Käytä arvoja $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Määritä Planckin vakio sovittamalla suora pisteisiin $(f, U_\\text{k})$, esimerkiksi Graphical Analysis Prolla. Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
+      "answer": 6.75e-34,
+      "unit": "J s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-6-L3-02",
+      "level": 3,
+      "text": "Opiskelija arvioi Planckin vakion epävarmuutta. Hän piirtää pisteisiin $(f, U_\\text{k})$ jyrkimmän ja loivimman suoran, jotka vielä kulkevat pisteiden epävarmuusjanojen kautta. Jyrkimmän suoran kulmakerroin on $4{,}25 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$ ja loivimman $3{,}95 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri on Planckin vakion epävarmuus $\\Delta h$, kun se arvioidaan puoleksi näiden suorien antamien arvojen erotuksesta? Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
+      "answer": 2.4e-35,
+      "unit": "J s",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-6-L3-03",
+      "level": 3,
+      "text": "Ultravioletti-LEDiä, jonka aallonpituus on $365\\,\\text{nm}$, käytetään fluoresoivien merkintöjen tarkistamiseen. LEDin läpi kulkee virta $20\\,\\text{mA}$, ja se säteilee ultraviolettisäteilyä teholla $15\\,\\text{mW}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka monta prosenttia LEDin läpi kulkevista elektroneista synnyttää fotonin, joka pääsee ulos LEDistä?",
+      "answer": 22.1,
+      "unit": "%",
+      "tolerance": 0.03
+    }
+  ]
+}

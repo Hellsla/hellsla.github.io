@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "contribution": "Radioaktiivisen hajoamisen satunnaisuus ja hajoamislaki: yksittäisen ytimen hajoaminen on arvaamaton, mutta suuren joukon määrä puoliintuu samassa ajassa; puoliintumisaika, hajoamisvakio $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$ ja aktiivisuus $A = \\lambda N$ sekä eksponenttifunktion sovitus pulssiaineistoon Graphical Analysis Prossa.",
+  "learn": [
+    "selittämään, miksi satunnaisesti hajoavien ytimien määrä puoliintuu aina samassa ajassa.",
+    "laskemaan ytimien määrän ja aktiivisuuden hajoamislaista ja hajoamisvakion puoliintumisajasta.",
+    "määrittämään puoliintumisajan sovittamalla eksponenttifunktion mittausaineistoon."
+  ],
+  "prior": [
+    "Radioaktiivinen ydin hajoaa alfa-, beeta- tai gammahajoamisessa ja lähettää samalla ionisoivaa säteilyä (luku *Atomiydin ja radioaktiivinen hajoaminen*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Sairaalan isotooppiosastolla potilaalle annetaan merkkiainetta, jossa on radioaktiivista teknetium-$99\\text{m}$:ää. Aamulla valmisteen aktiivisuus on $740\\,\\text{MBq}$, kuuden tunnin kuluttua noin $370\\,\\text{MBq}$ ja seuraavien kuuden tunnin kuluttua noin $185\\,\\text{MBq}$. Sama aikataulu toistuu joka päivä, jokaisessa sairaalassa. Silti yksittäisen teknetiumytimen hajoamishetki on täysin sattumanvarainen: kukaan ei voi sanoa, hajoaako se seuraavalla sekunnilla vai vasta huomenna.",
+      "question": "Miten sattumanvaraisesti hajoavien ytimien joukko voi noudattaa näin täsmällistä aikataulua?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Kertaa: beetahajoaminen",
+      "prompt": "Kilpirauhashoidoissa käytettävä jodi-131 hajoaa beeta miinus -hajoamisella. Mitä ytimelle tapahtuu hajoamisessa?",
+      "choices": [
+        {
+          "text": "Ytimen neutroni muuttuu protoniksi, joten järjestysluku kasvaa yhdellä ja jodista tulee ksenonia.",
+          "correct": true,
+          "feedback": "Oikein. Ytimestä lähtee elektroni ja antineutriino, massaluku $131$ säilyy ja järjestysluku kasvaa arvosta $53$ arvoon $54$ (luku *Atomiydin ja radioaktiivinen hajoaminen*). Tänään selviää, *milloin* ytimet hajoavat."
+        },
+        {
+          "text": "Ydin lähettää alfahiukkasen, joten sen massaluku pienenee neljällä.",
+          "feedback": "Tämä kuvaa alfahajoamista, jossa ytimestä lähtee kahden protonin ja kahden neutronin hiukkanen. Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi, joten massaluku säilyy ja järjestysluku kasvaa yhdellä (luku *Atomiydin ja radioaktiivinen hajoaminen*)."
+        },
+        {
+          "text": "Atomi menettää elektroniverhostaan yhden elektronin, joten siitä tulee jodi-ioni.",
+          "feedback": "Beetahiukkanen ei tule elektroniverhosta vaan syntyy ytimessä, kun neutroni muuttuu protoniksi. Siksi ydin muuttuu toisen alkuaineen ytimeksi: jodista tulee ksenonia (luku *Atomiydin ja radioaktiivinen hajoaminen*)."
+        },
+        {
+          "text": "Ydin jakautuu kahdeksi suunnilleen yhtä suureksi ytimeksi.",
+          "feedback": "Ytimen jakautuminen kahtia on fissio, ja se on eri ilmiö kuin beetahajoaminen. Beeta miinus -hajoamisessa ytimestä lähtee vain elektroni ja antineutriino, ja neutroni muuttuu protoniksi (luku *Atomiydin ja radioaktiivinen hajoaminen*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kaksi puoliintumisaikaa",
+      "prompt": "Näytteessä on $1600$ samanlaista radioaktiivista ydintä. Niiden puoliintumisaika on $20\\,\\text{s}$: sinä aikana puolet ytimistä hajoaa. Kuinka monta hajoamatonta ydintä näytteessä on suunnilleen $40\\,\\text{s}$:n kuluttua?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Noin $400$, koska toisen puoliintumisajan aikana hajoaa puolet jäljellä olevista ytimistä.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: sarjassa 1 hajoamattomia oli $792$ hetkellä $20\\,\\text{s}$ ja $399$ hetkellä $40\\,\\text{s}$. Jokaisen puoliintumisajan aikana hajoaa sama osuus jäljellä olevista, joten $40\\,\\text{s}$:n kohdalla jäljellä on noin neljäsosa ja $60\\,\\text{s}$:n kohdalla noin kahdeksasosa ($208$)."
+        },
+        {
+          "text": "Ei yhtään, koska ensin hajoaa toinen puolisko ja seuraavassa puoliintumisajassa toinen.",
+          "feedback": "Mallin arvot kumoavat tämän: hetkellä $40\\,\\text{s}$ hajoamattomia oli vielä $399$. Toisen puoliintumisajan aikana hajoaa puolet *jäljellä olevista* eli noin $400$ ydintä, ei kaikkia $800$:aa. Hajoamisia on yhä vähemmän, koska hajoavia ytimiä on yhä vähemmän."
+        },
+        {
+          "text": "Sitä ei voi ennustaa, koska jokainen ydin hajoaa sattumanvaraisena hetkenä.",
+          "feedback": "Yksittäisestä ytimestä ei voi sanoa, milloin se hajoaa, mutta suuresta joukosta voi. Mallin arvot olivat lähellä odotettua: $792$ hetkellä $20\\,\\text{s}$ ja $399$ hetkellä $40\\,\\text{s}$. Satunnaisuus näkyy vain pieninä poikkeamina arvoista $800$ ja $400$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: pieni ja suuri näyte",
+      "prompt": "Samaa isotooppia on kahdessa näytteessä: toisessa on $20$ ydintä, toisessa $1600$. Kummastakin kirjataan, kuinka suuri osuus ytimistä on hajoamatta yhden puoliintumisajan kuluttua. Koe toistetaan monta kertaa uusilla näytteillä. Mitä tuloksista voi ennustaa?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Kummassakin noin puolet, mutta pienessä näytteessä osuus vaihtelee kokeesta toiseen enemmän.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: $20$ ytimestä hajoamatta oli $7$, $12$, $13$, $7$ ja $10$ eli osuus vaihteli välillä $0{,}35$–$0{,}65$. Ytimistä $1600$ osuus oli joka sarjassa välillä $0{,}489$–$0{,}509$. Mitä enemmän ytimiä, sitä pienempi on satunnaisuuden suhteellinen vaikutus."
+        },
+        {
+          "text": "Kummassakin on joka kerta hajoamatta tasan puolet, koska puoliintumisaika on määritelty juuri niin.",
+          "feedback": "Mallin arvot kumoavat tämän: $20$ ytimestä hajoamatta oli eri sarjoissa $7$, $12$, $13$, $7$ ja $10$. Puoliintumisaika kuvaa suuren ydinjoukon käyttäytymistä. Pienessä joukossa sattuma voi poiketa puolesta paljon."
+        },
+        {
+          "text": "Pieni näyte hajoaa nopeammin, joten siitä on joka kerta hajoamatta selvästi alle puolet.",
+          "feedback": "Mallin arvot kumoavat tämän: $20$ ytimen sarjoissa hajoamatta oli välillä alle ja välillä yli puolet ($7$, $12$, $13$ …). Jokainen ydin hajoaa samalla todennäköisyydellä riippumatta siitä, montako muuta ydintä näytteessä on, joten puoliintumisaika ei riipu näytteen koosta."
+        },
+        {
+          "text": "Suuri näyte hajoaa nopeammin, koska hajoavat ytimet saavat myös naapurinsa hajoamaan.",
+          "feedback": "Mallin arvot kumoavat tämän: $1600$ ytimen näytteistä hajoamatta oli puoliintumisajan kohdalla $0{,}489$–$0{,}509$ eli noin puolet, ei vähemmän. Radioaktiiviset ytimet hajoavat toisistaan riippumatta: naapurin hajoaminen ei muuta ytimen hajoamistodennäköisyyttä."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Näytteessä on alussa $N_0$ radioaktiivista ydintä. Käynnistä aika tai siirrä aikaliukua ja seuraa, mitkä ytimet hajoavat ja miten hajoamattomien määrä $N$ pienenee.",
+      "howto": "*Käynnistä* juoksuttaa aikaa, ja *Pysäytä* pysäyttää sen; aikaa voi myös siirtää liukusäätimellä *Aika* $0$–$120\\,\\text{s}$. Valitse *Ytimiä alussa* $N_0$ ($20$, $100$, $400$ tai $1600$) ja puoliintumisaika $T_{1/2}$ välillä $10$–$40\\,\\text{s}$. *Arvonta* valitsee yhden viidestä satunnaisesta sarjasta: sama sarja antaa aina saman tuloksen, eri sarja eri ytimet ja eri hajoamishetket. Vasemmalla (kapealla näytöllä ylhäällä) jokainen ydin on oranssi kiekko, kunnes se hajoaa ja muuttuu harmaaksi renkaaksi; juuri hajonneesta lähtee säde. Kuvaajassa oranssi porrasviiva on sarjan hajoamattomien ytimien määrä $N$, ja vaalea katkoviiva on hajoamislaki. Harmaat katkoviivat merkitsevät hetken $T_{1/2}$ ja määrän $\\tfrac{1}{2}N_0$. *Nopeus* muuttaa vain ajan kulun tahtia.",
+      "model": "Mallissa on yhden kuvitteellisen isotoopin ytimiä, joiden puoliintumisaika on lyhyt, jotta hajoamisen näkee hetkessä; esimerkiksi barium-$137\\text{m}$:n puoliintumisaika on $2{,}55\\,\\text{min}$. Jokaisella ytimellä on joka hetki sama hajoamistodennäköisyys aikayksikössä, $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$, riippumatta sen iästä ja muista ytimistä. Ytimen hajoamishetki on arvottu tämän todennäköisyyden mukaan, ja sarjan arvonta on toistettavissa. Tytärydin oletetaan pysyväksi. Malli laskee ytimet tarkasti, joten siinä ei ole säteilymittaria, taustasäteilyä eikä mittausepävarmuutta. Lukemat ovat mallin arvoja eivätkä mittauksia.",
+      "calc": "Jokaiselle ytimelle arvotaan tasajakautunut satunnaisluku $u$ väliltä $0$–$1$, ja sen hajoamishetki on $\\tau = -\\tfrac{T_{1/2}}{\\ln 2} \\ln u$. Tällä arvonnalla jokainen ydin hajoaa missä tahansa lyhyessä aikavälissä $\\Delta t$ todennäköisyydellä $\\lambda \\Delta t$. Hajoamattomien määrä $N$ on niiden ytimien määrä, joilla $\\tau > t$. Osuus on $N : N_0$, ja $t : T_{1/2}$ kertoo kuluneiden puoliintumisaikojen määrän. Katkoviiva on $N_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: puoliintumisaika toisensa perään",
+      "intro": "Testaa ennuste 1. Näytteessä on $1600$ ydintä, puoliintumisaika on $20\\,\\text{s}$ ja arvonta on sarja 1. Muuta vain aikaa: kirjaa hajoamattomien määrä $N$ ja osuus $N : N_0$ ainakin hetkillä $t = 0$, $20$ ja $40\\,\\text{s}$, halutessasi myös $60\\,\\text{s}$:n kohdalla.",
+      "initial": {
+        "N0": "1600",
+        "T": 20,
+        "t": 0,
+        "sarja": "1"
+      },
+      "locked": [
+        "N0",
+        "T",
+        "sarja"
+      ],
+      "vary": "t",
+      "min": 3,
+      "units": {
+        "t": "s",
+        "T": "s"
+      },
+      "names": {
+        "t": "aika t",
+        "N0": "ytimiä alussa N₀",
+        "T": "puoliintumisaika",
+        "sarja": "arvonta"
+      },
+      "values": {
+        "sarja": {
+          "1": "sarja 1",
+          "2": "sarja 2",
+          "3": "sarja 3",
+          "4": "sarja 4",
+          "5": "sarja 5"
+        }
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "frac",
+          "label": "N/N₀"
+        }
+      ]
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: pieni näyte, eri arvonnat",
+      "intro": "Testaa ennuste 2. Näytteessä on $20$ ydintä, puoliintumisaika on $20\\,\\text{s}$ ja aika on $t = 20\\,\\text{s}$ eli yksi puoliintumisaika. Vaihda vain arvontaa: kirjaa $N$ ja $N : N_0$ ainakin sarjoista 1, 2 ja 3, halutessasi kaikista viidestä.",
+      "initial": {
+        "N0": "20",
+        "T": 20,
+        "t": 20,
+        "sarja": "1"
+      },
+      "locked": [
+        "N0",
+        "T",
+        "t"
+      ],
+      "vary": "sarja",
+      "min": 3,
+      "units": {
+        "t": "s",
+        "T": "s"
+      },
+      "names": {
+        "t": "aika t",
+        "N0": "ytimiä alussa N₀",
+        "T": "puoliintumisaika",
+        "sarja": "arvonta"
+      },
+      "values": {
+        "sarja": {
+          "1": "sarja 1",
+          "2": "sarja 2",
+          "3": "sarja 3",
+          "4": "sarja 4",
+          "5": "sarja 5"
+        }
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "frac",
+          "label": "N/N₀"
+        }
+      ]
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: suuri näyte, eri arvonnat",
+      "intro": "Toista koe 2 suurella näytteellä. Näytteessä on $1600$ ydintä, ja aika on taas yksi puoliintumisaika. Vaihda vain arvontaa ja kirjaa $N$ ja $N : N_0$ ainakin kahdesta sarjasta. Vertaa osuuksien vaihtelua kokeeseen 2.",
+      "initial": {
+        "N0": "1600",
+        "T": 20,
+        "t": 20,
+        "sarja": "1"
+      },
+      "locked": [
+        "N0",
+        "T",
+        "t"
+      ],
+      "vary": "sarja",
+      "min": 2,
+      "units": {
+        "t": "s",
+        "T": "s"
+      },
+      "names": {
+        "t": "aika t",
+        "N0": "ytimiä alussa N₀",
+        "T": "puoliintumisaika",
+        "sarja": "arvonta"
+      },
+      "values": {
+        "sarja": {
+          "1": "sarja 1",
+          "2": "sarja 2",
+          "3": "sarja 3",
+          "4": "sarja 4",
+          "5": "sarja 5"
+        }
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "frac",
+          "label": "N/N₀"
+        }
+      ]
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: sattuma ja laki",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: Mitä hajoamattomien ytimien määrälle tapahtui jokaisen puoliintumisajan aikana? Miksi $20$ ytimen tulokset vaihtelivat sarjasta toiseen enemmän kuin $1600$ ytimen? Miten satunnainen hajoaminen voi silti noudattaa täsmällistä lakia?",
+      "model": "Kokeessa 1 hajoamattomia oli mallin arvoina $1600$, $792$, $399$ ja $208$ hetkillä $0$, $20$, $40$ ja $60\\,\\text{s}$: jokaisen puoliintumisajan aikana määrä puolittui, joten kahden puoliintumisajan jälkeen jäljellä oli noin neljäsosa eikä nolla. Kokeessa 2 yhden puoliintumisajan jälkeen $20$ ytimestä oli hajoamatta $7$–$13$ eli osuus vaihteli välillä $0{,}35$–$0{,}65$, kun taas kokeessa 3 $1600$ ytimen osuus pysyi välillä $0{,}489$–$0{,}509$. Jokaisella ytimellä on sama hajoamistodennäköisyys aikayksikössä, joten tietyssä ajassa hajoaa keskimäärin sama osuus jäljellä olevista. Yksittäinen ydin on arvaamaton, mutta suuressa joukossa satunnaiset poikkeamat ovat suhteessa pieniä. Todellisessa näytteessä ytimiä on esimerkiksi $10^{15}$, joten hajoamislaki toteutuu käytännössä tarkasti.",
+      "criteria": [
+        "Kerron mallin arvoilla, että määrä puolittui jokaisen puoliintumisajan aikana ja kahden puoliintumisajan jälkeen jäljellä oli noin neljäsosa.",
+        "Vertaan kokeiden 2 ja 3 osuuksia ja totean, että pienessä näytteessä vaihtelu oli suurempi.",
+        "Selitän, että jokaisella ytimellä on sama hajoamistodennäköisyys, joten suuressa joukossa hajoaa aina lähes sama osuus.",
+        "Kutsun simulaation lukuja mallin arvoiksi enkä mittauksiksi."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin. Palaa sitten alun kysymykseen: miksi teknetiumvalmisteen aktiivisuus puolittuu joka kerta kuudessa tunnissa, vaikka yksittäisen ytimen hajoamishetkeä ei voi tietää? Mitä tapahtuisi, jos valmisteessa olisi vain kymmenen ydintä?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija laskee, montako teknetium-$99\\text{m}$-ydintä on näytteessä, jonka aktiivisuus on $2{,}0\\,\\text{MBq}$. Puoliintumisaika on $6{,}01\\,\\text{h}$. Hän kirjoittaa\n\n$$\\begin{aligned} \\lambda &= \\frac{1}{T_{1/2}} = \\frac{1}{6{,}01 \\cdot 3600\\,\\text{s}} \\\\ &= 4{,}62 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{s}} \\end{aligned}$$\n\nja sitten $N = \\tfrac{A}{\\lambda} = \\tfrac{2{,}0 \\cdot 10^{6}\\,\\tfrac{1}{\\text{s}}}{4{,}62 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{s}}} \\approx 4{,}3 \\cdot 10^{10}$.\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Hajoamisvakio on $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$ eikä $\\tfrac{1}{T_{1/2}}$.",
+          "correct": true,
+          "feedback": "Oikein. Puoliintumisajan kohdalla $e^{-\\lambda T_{1/2}} = \\tfrac{1}{2}$, josta $\\lambda T_{1/2} = \\ln 2$. Oikea hajoamisvakio on $\\lambda = \\tfrac{0{,}693}{21\\,636\\,\\text{s}} = 3{,}20 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{s}}$, ja ytimiä on $N = \\tfrac{A}{\\lambda} \\approx 6{,}2 \\cdot 10^{10}$. Väärä kaava antoi noin $31\\,\\%$ liian pienen tuloksen."
+        },
+        {
+          "text": "Puoliintumisaikaa ei olisi pitänyt muuttaa sekunneiksi, koska se on annettu tunteina.",
+          "feedback": "Muunnos sekunneiksi on oikein ja tarpeellinen: aktiivisuuden yksikkö $\\text{Bq}$ on $\\tfrac{1}{\\text{s}}$, joten myös hajoamisvakion on oltava yksikössä $\\tfrac{1}{\\text{s}}$. Virhe on hajoamisvakion kaavassa: $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$."
+        },
+        {
+          "text": "Ytimien määrä on $N = A \\lambda$ eikä $\\tfrac{A}{\\lambda}$.",
+          "feedback": "Aktiivisuus on $A = \\lambda N$, joten $N = \\tfrac{A}{\\lambda}$ on oikein ratkaistu. Tulolla $A\\lambda$ olisi yksikkö $\\tfrac{1}{\\text{s}^2}$, eikä se ole ytimien määrä. Virhe on hajoamisvakiossa: siitä puuttuu tekijä $\\ln 2$."
+        },
+        {
+          "text": "Aktiivisuus olisi pitänyt ensin puolittaa, koska puolet ytimistä hajoaa puoliintumisajassa.",
+          "feedback": "Aktiivisuus $2{,}0\\,\\text{MBq}$ kuvaa näytettä tällä hetkellä, joten sitä ei puoliteta. Puoliintumisaika tulee laskuun vain hajoamisvakion kautta, ja sen kaava on $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$."
+        }
+      ]
+    },
+    {
+      "id": "sovitus",
+      "stage": "sovella",
+      "type": "interpret",
+      "title": "Sovita eksponenttifunktio mittausaineistoon",
+      "source": "simulated",
+      "source_note": "pulssimäärät on arvottu satunnaislukujen avulla mallista, jossa protaktinium-$234\\text{m}$:n puoliintumisaika on kirjallisuusarvo $1{,}159\\,\\text{min} = 69{,}5\\,\\text{s}$ (NNDC NuDat 3) ja taustasäteily $0{,}5$ pulssia sekunnissa. Aineisto ei ole mittaus.",
+      "figure": "fy8-9/pa-points",
+      "text": "Koulun hajoamiskokeessa protaktinium-$234\\text{m}$ erotetaan uraaniyhdisteestä nesteeseen, ja säteilymittari laskee pulsseja $10\\,\\text{s}$:n jaksoissa $20\\,\\text{s}$:n välein. Taulukon $t$ on jakson alkuhetki.\n\n| $t$ (s) | pulssia | $t$ (s) | pulssia | $t$ (s) | pulssia |\n| --- | --- | --- | --- | --- | --- |\n| $0$ | $380$ | $140$ | $104$ | $280$ | $33$ |\n| $20$ | $317$ | $160$ | $76$ | $300$ | $21$ |\n| $40$ | $257$ | $180$ | $60$ | $320$ | $24$ |\n| $60$ | $211$ | $200$ | $58$ | $340$ | $20$ |\n| $80$ | $165$ | $220$ | $43$ | $360$ | $7$ |\n| $100$ | $150$ | $240$ | $41$ | $380$ | $14$ |\n| $120$ | $113$ | $260$ | $35$ | $400$ | $12$ |\n\nVoit kopioida aineiston alla olevasta laatikosta ja liittää sen Graphical Analysis Pron taulukkoon (**Manuaalinen syöttö**).\n\n```\nt (s)\tpulssia\n0\t380\n20\t317\n40\t257\n60\t211\n80\t165\n100\t150\n120\t113\n140\t104\n160\t76\n180\t60\n200\t58\n220\t43\n240\t41\n260\t35\n280\t33\n300\t21\n320\t24\n340\t20\n360\t7\n380\t14\n400\t12\n```",
+      "question": {
+        "type": "numeric",
+        "prompt": "Sovita aineistoon Graphical Analysis Prossa funktio $y = A\\,e^{-Ct} + B$. Mikä on protaktinium-$234\\text{m}$:n puoliintumisaika sovituksen perusteella? Vastaa sekunteina.",
+        "answer": 68.4,
+        "unit": "s",
+        "tolerance": 0.01,
+        "hints": [
+          "Kirjoita tai liitä aika ja pulssimäärä taulukkoon. Avaa kuvaajan vasemman alakulman kuvakkeesta kuvaajatyökalut ja valitse **Käyrän sovitus**.",
+          "Valitse eksponenttisovitus, jonka yhtälö on $A \\cdot \\exp(-C \\cdot x) + B$. Sen kerroin $C$ on hajoamisvakio $\\lambda$, ja $T_{1/2} = \\tfrac{\\ln 2}{C}$.",
+          "Sovitus antaa $C \\approx 0{,}0101\\,\\tfrac{1}{\\text{s}}$. Jaa luku $\\ln 2 \\approx 0{,}693$ tällä."
+        ],
+        "mistakes": [
+          {
+            "value": 98.7,
+            "feedback": "Laskit $\\tfrac{1}{C}$. Puoliintumisajassa näyte puoliintuu, joten $e^{-C T_{1/2}} = \\tfrac{1}{2}$ ja $T_{1/2} = \\tfrac{\\ln 2}{C}$: muista tekijä $\\ln 2 \\approx 0{,}693$."
+          },
+          {
+            "value": 0.0101,
+            "feedback": "Tämä on sovituksen kerroin $C$ eli hajoamisvakio yksikössä $\\tfrac{1}{\\text{s}}$. Puoliintumisaika saadaan siitä: $T_{1/2} = \\tfrac{\\ln 2}{C}$."
+          },
+          {
+            "value": 71.8,
+            "feedback": "Sovitit funktion ilman vakiotermiä $B$. Silloin sovitus yrittää selittää taustasäteilyn pulssit hitaana hajoamisena, ja puoliintumisajasta tulee liian pitkä. Valitse sovite, jossa on $+B$."
+          },
+          {
+            "value": 69.5,
+            "feedback": "Tämä on protaktinium-$234\\text{m}$:n kirjallisuusarvo. Tehtävässä puoliintumisaika määritetään aineistosta sovittamalla; satunnaisuuden vuoksi tulos poikkeaa siitä hieman. Tee sovitus ja laske $T_{1/2} = \\tfrac{\\ln 2}{C}$."
+          }
+        ],
+        "solution": "**Annettu:** protaktinium-$234\\text{m}$-näytteen pulssimäärät $10\\,\\text{s}$:n jaksoissa $20\\,\\text{s}$:n välein hetkestä $t = 0$ hetkeen $t = 400\\,\\text{s}$ (taulukosta $21$ pistettä), malli $y = A\\,e^{-Ct} + B$\n\n**Kysytty:** puoliintumisaika $T_{1/2}$ sekunteina\n\n**Periaate:** Pulssimäärä on verrannollinen näytteen aktiivisuuteen, joka pienenee hajoamislain mukaan eksponentiaalisesti, ja siihen lisätään taustasäteilyn vakiomäärä. Siksi malliin kuuluu vakiotermi $B$. Pienimmän neliösumman sovitus valitsee kertoimet $A$, $B$ ja $C$, joilla pisteiden pystysuorien poikkeamien neliöiden summa on pienin; kerroin $C$ on hajoamisvakio $\\lambda$.\n\n**Kuvaajan lukeminen:** Pisteet laskevat aluksi jyrkästi ja tasaantuvat lopussa noin $5$–$15$ pulssiin, joka on lähellä taustaa. Sovituksen tulosruudusta luetaan $A = 376{,}6$, $C = 0{,}01013\\,\\tfrac{1}{\\text{s}}$ ja $B = 5{,}54$ pulssia $10\\,\\text{s}$:ssa; pisteet ovat käyrän molemmin puolin, joten malli sopii aineistoon.\n\n**Kaava:** $e^{-C T_{1/2}} = \\tfrac{1}{2}$, josta $C T_{1/2} = \\ln 2$ ja $T_{1/2} = \\dfrac{\\ln 2}{C}$\n\n**Muunnokset:** Ei tarvita: aika on sekunteina, joten $C$ saadaan yksikössä $\\tfrac{1}{\\text{s}}$ ja puoliintumisaika sekunteina.\n\n**Sijoitus:** $T_{1/2} = \\dfrac{0{,}69315}{0{,}01013\\,\\tfrac{1}{\\text{s}}} = 68{,}45\\,\\text{s}$\n\n**Vastaus:** $68{,}4\\,\\text{s}$, kolme merkitsevää numeroa; se riittää, koska hajoamisen satunnaisuuden vuoksi sovituksen tulos voi poiketa todellisesta arvosta prosentin tai kaksi.\n\n**Järkevyys:** Taustan jälkeen pulssimäärä on alussa noin $380 - 5 = 375$, ja sen puolikas $188$ osuu taulukossa hetkien $60\\,\\text{s}$ ($211$) ja $80\\,\\text{s}$ ($165$) väliin, eli noin $70\\,\\text{s}$:n kohdalle. Kirjallisuusarvo on $1{,}159\\,\\text{min} = 69{,}5\\,\\text{s}$, ja ero on noin $1{,}6\\,\\%$."
+      }
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä yhtälöä, tason 2 tehtävissä muunnetaan yksiköitä tai yhdistetään kaksi yhtälöä, ja taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Jodi-131:n puoliintumisaika on $8{,}02\\,\\text{d}$. Eräs jodi-131-ydin on säilynyt hajoamatta jo $32\\,\\text{d}$ eli noin neljä puoliintumisaikaa. Kuinka todennäköisesti se hajoaa seuraavan $8{,}02\\,\\text{d}$:n aikana?",
+      "choices": [
+        {
+          "text": "Todennäköisyydellä $\\tfrac{1}{2}$, aivan kuten mikä tahansa jodi-131-ydin.",
+          "correct": true,
+          "feedback": "Oikein. Ytimellä ei ole muistia: sen hajoamistodennäköisyys aikayksikössä ei riipu siitä, kauanko se on jo säilynyt. Siksi jokaisen puoliintumisajan aikana hajoaa puolet jäljellä olevista ytimistä."
+        },
+        {
+          "text": "Lähes varmasti, koska se on säilynyt paljon tavallista pidempään ja on siksi vuorossa.",
+          "feedback": "Ydin ei vanhene eikä ole \"vuorossa\". Sen hajoamistodennäköisyys seuraavan puoliintumisajan aikana on aina $\\tfrac{1}{2}$, oli se säilynyt kuinka kauan tahansa."
+        },
+        {
+          "text": "Todennäköisyydellä $\\tfrac{1}{16}$, koska alkuperäisistä ytimistä on jäljellä enää noin kuudestoistaosa.",
+          "feedback": "Kuudestoistaosa kertoo, kuinka suuri osa *alkuperäisistä* ytimistä on yhä hajoamatta. Kysymys koskee jo säilynyttä ydintä, ja sen hajoamistodennäköisyys seuraavan puoliintumisajan aikana on $\\tfrac{1}{2}$."
+        },
+        {
+          "text": "Ei lainkaan, koska näin pitkään säilynyt ydin on osoittautunut pysyväksi.",
+          "feedback": "Saman isotoopin ytimet ovat samanlaisia, joten säilyminen ei tee ytimestä pysyvää. Se hajoaa seuraavan puoliintumisajan aikana todennäköisyydellä $\\tfrac{1}{2}$ kuten muutkin."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Lue puoliintumisaika kuvaajasta",
+      "figure": "fy8-9/aktiivisuus",
+      "prompt": "Kuvaajassa on tuntemattoman radioaktiivisen näytteen aktiivisuus ajan funktiona. Lue kuvaajasta näytteen puoliintumisaika. Vastaa tunteina.",
+      "answer": 5.0,
+      "unit": "h",
+      "tolerance": 0.06,
+      "hints": [
+        "Mikä on aktiivisuus hetkellä $t = 0$? Entä puolet siitä?",
+        "Etsi kohta, jossa käyrä on puolessa alkuarvostaan, ja lue sen aika vaaka-akselilta.",
+        "Alkuarvo on $720\\,\\text{kBq}$, joten etsi kohta, jossa $A = 360\\,\\text{kBq}$."
+      ],
+      "mistakes": [
+        {
+          "value": 10,
+          "feedback": "Luit ajan, jossa aktiivisuus on neljäsosa alkuarvosta, $180\\,\\text{kBq}$. Se on kaksi puoliintumisaikaa. Puoliintumisaika on aika, jossa aktiivisuus on puolet alkuarvosta."
+        },
+        {
+          "value": 360,
+          "feedback": "Tämä on puolet alkuaktiivisuudesta kilobecquereleinä. Kysytty on aika, jona aktiivisuus pienenee tähän arvoon: lue se vaaka-akselilta."
+        }
+      ],
+      "solution": "**Annettu:** kuvaajan aktiivisuus $A$ ajan $t$ funktiona, ruudukon väli $1\\,\\text{h}$ ja $50\\,\\text{kBq}$\n\n**Kysytty:** puoliintumisaika $T_{1/2}$ tunteina\n\n**Periaate:** Aktiivisuus on verrannollinen hajoamattomien ytimien määrään, joten se puolittuu jokaisen puoliintumisajan aikana. Puoliintumisaika on siis aika, jossa aktiivisuus pienenee puoleen mistä tahansa lähtöhetkestä.\n\n**Kuvaajan lukeminen:** Hetkellä $t = 0$ kuvaaja alkaa arvosta $A_0 = 720\\,\\text{kBq}$. Puolet siitä on $360\\,\\text{kBq}$. Vaakaviiva $360\\,\\text{kBq}$:n kohdalta osuu käyrään hetkellä $t = 5{,}0\\,\\text{h}$. Tarkistus: $180\\,\\text{kBq}$:n kohdalla käyrä on hetkellä $10\\,\\text{h}$.\n\n**Kaava:** $A = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$; kun $A = \\tfrac{1}{2}A_0$, eksponentti on $\\tfrac{t}{T_{1/2}} = 1$, joten $T_{1/2} = t$\n\n**Muunnokset:** Ei tarvita: aika luetaan suoraan tunteina.\n\n**Sijoitus:** $\\tfrac{1}{2}A_0 = \\tfrac{1}{2} \\cdot 720\\,\\text{kBq} = 360\\,\\text{kBq}$, joka saavutetaan hetkellä $t = 5{,}0\\,\\text{h}$, joten $T_{1/2} = 5{,}0\\,\\text{h}$\n\n**Vastaus:** $5{,}0\\,\\text{h}$, kaksi merkitsevää numeroa, koska kuvaajasta voi lukea ajan noin $0{,}2\\,\\text{h}$:n tarkkuudella.\n\n**Järkevyys:** Kahden puoliintumisajan eli $10\\,\\text{h}$:n kohdalla aktiivisuuden pitäisi olla neljäsosa, $180\\,\\text{kBq}$, ja $20\\,\\text{h}$:n kohdalla kuudestoistaosa, $45\\,\\text{kBq}$. Kuvaaja täsmää molempiin."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja siirrä",
+      "optional": true,
+      "prompt": "Kahdessa näytteessä on yhtä monta radioaktiivista ydintä. Näytteessä P on teknetium-$99\\text{m}$:ää ($T_{1/2} = 6{,}01\\,\\text{h}$) ja näytteessä Q cesium-137:ää ($T_{1/2} = 30{,}1\\,\\text{a}$). Kumman näytteen aktiivisuus on nyt suurempi? Kumpi on aktiivisempi vuoden kuluttua? Perustele yhtälön $A = \\lambda N$ avulla.",
+      "model": "Nyt aktiivisempi on teknetiumnäyte P. Ytimiä on yhtä monta, ja aktiivisuus on $A = \\lambda N$, missä $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$. Teknetiumin puoliintumisaika on noin $44\\,000$ kertaa lyhyempi kuin cesiumin, joten sen hajoamisvakio ja aktiivisuus ovat yhtä monta kertaa suuremmat. Vuoden aikana teknetiumille kuluu kuitenkin noin $1460$ puoliintumisaikaa, joten sen ytimet ovat käytännössä kaikki hajonneet ja aktiivisuus on pudonnut nollaan. Cesiumista on vuoden jälkeen jäljellä yli $97\\,\\%$, joten vuoden kuluttua aktiivisempi on näyte Q. Lyhyt puoliintumisaika tarkoittaa voimakasta mutta lyhytaikaista säteilyä.",
+      "criteria": [
+        "Kerron, että aktiivisuus on $A = \\lambda N$ ja lyhyempi puoliintumisaika tarkoittaa suurempaa hajoamisvakiota.",
+        "Päättelen, että samalla ytimien määrällä teknetiumnäytteen aktiivisuus on nyt suurempi.",
+        "Selitän, että vuodessa teknetiumille kuluu satoja puoliintumisaikoja, joten sen ytimet ovat hajonneet ja cesiumnäyte on silloin aktiivisempi."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

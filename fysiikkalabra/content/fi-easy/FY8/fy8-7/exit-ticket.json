@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Laserin toinen peili päästää osan valosta läpi, vaikka valon pitää kulkea peilien välillä monta kertaa vahvistuakseen. Miksi?",
+    "a": "Läpi päässyt valo on laserin säde. Peili heijastaa suurimman osan valosta, esimerkiksi $99\\,\\%$. Siksi valo kulkee aineen läpi monta kertaa ja vahvistuu. Loput tulee ulos säteenä. Kahden täysin heijastavan peilin välistä valoa ei saisi käyttöön."
+  },
+  {
+    "q": "Nimeä yksi kvanttirakenteiden sovellus ja kerro, mikä siinä riippuu rakenteen koosta.",
+    "a": "Esimerkiksi kvanttipistenäyttö: pisteiden koko valitsee niiden lähettämän valon värin, koska pienemmän pisteen energiarako on suurempi. Kvanttikaivolaserissa kaivon paksuus valitsee aallonpituuden. Aurinkokennojen kvanttipistekerroksissa pisteiden koko valitsee, minkä osan Auringon spektristä kerros absorboi."
+  }
+]

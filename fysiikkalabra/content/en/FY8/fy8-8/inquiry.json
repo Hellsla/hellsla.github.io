@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "contribution": "Carries the idea of energy levels from the atom to the nucleus: the structure of the nucleus ($Z$, $N$, $A$, isotopes), alpha, beta and gamma decay with their conservation laws, and the gamma spectrum as evidence for the quantised levels of the nucleus; the uranium-238 series from NNDC data on the chart of nuclides.",
+  "learn": [
+    "write decay equations for alpha, beta and gamma decay using the conservation of mass number and charge number.",
+    "explain how the atomic number and the mass number of a nucleus change in each kind of decay.",
+    "deduce the energy levels of a nucleus from a gamma spectrum, as from the spectrum of an atom."
+  ],
+  "prior": [
+    "The energy of a photon is $E = hf = \\tfrac{hc}{\\lambda}$, and energy can be given in electronvolts (chapter *The photoelectric effect and the photon*)",
+    "The energy of a photon created in a transition is the difference between the energy levels (chapter *Energy levels of the hydrogen atom and the Bohr model*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Almost every home has a smoke detector on the ceiling, and many contain a small sample of americium-241. Tens of thousands of alpha particles leave it every second. They ionise the air between two metal plates and make it slightly conducting. When smoke enters the chamber, the current decreases and the alarm sounds. The sample works like this for decades.",
+      "question": "What happens to an americium nucleus when an alpha particle leaves, and why does the nucleus also give out gamma radiation?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: energy levels and the photon",
+      "optional": true,
+      "prompt": "An electron of a hydrogen atom moves from the level $E_3 = -1.51\\,\\text{eV}$ to the level $E_2 = -3.40\\,\\text{eV}$. What is the energy of the photon that is created?",
+      "choices": [
+        {
+          "text": "$1.89\\,\\text{eV}$, because the energy of the photon is the difference between the levels.",
+          "correct": true,
+          "feedback": "Correct (chapter *Energy levels of the hydrogen atom and the Bohr model*): $hf = E_3 - E_2 = -1.51\\,\\text{eV} + 3.40\\,\\text{eV} = 1.89\\,\\text{eV}$, the red line of hydrogen. In this chapter the same principle is carried over to the atomic nucleus."
+        },
+        {
+          "text": "$1.51\\,\\text{eV}$, because the photon gets the energy of the starting level.",
+          "feedback": "The photon does not carry the energy of one level but the difference between the levels: $E_3 - E_2 = 1.89\\,\\text{eV}$."
+        },
+        {
+          "text": "$4.91\\,\\text{eV}$, because the energies are added.",
+          "feedback": "Energy is conserved: the energy of the atom decreases from $-1.51\\,\\text{eV}$ to $-3.40\\,\\text{eV}$, so the photon carries away the difference $1.89\\,\\text{eV}$, not the sum."
+        },
+        {
+          "text": "$3.40\\,\\text{eV}$, because the photon gets the energy of the final level.",
+          "feedback": "The energy of the final level is not the energy of the photon. The energy of the photon is the difference between the levels, $E_3 - E_2 = 1.89\\,\\text{eV}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: an alpha particle leaves",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 6
+      },
+      "prompt": "The uranium-238 nucleus ${}^{238}_{92}\\text{U}$ has $92$ protons and $146$ neutrons. An alpha particle, a helium nucleus with two protons and two neutrons, leaves the nucleus. What kind of nucleus is left?",
+      "choices": [
+        {
+          "text": "The atomic number is $90$ and the mass number $234$: the nucleus is another element.",
+          "correct": true,
+          "feedback": "The data of the model support this: uranium-238 ($Z = 92$, $A = 238$) changes into thorium ${}^{234}_{90}\\text{Th}$, and in every alpha decay of the series $Z$ decreases by two and $A$ by four. The number of protons determines the element, so the element changes."
+        },
+        {
+          "text": "The atomic number is $92$ and the mass number $234$: the nucleus is a lighter isotope of uranium.",
+          "feedback": "The data of the model refute this: the $Z$ of the nucleus changes from $92$ to $90$. The alpha particle takes two protons with it, so the atomic number decreases and the element changes."
+        },
+        {
+          "text": "The atomic number is $90$ and the mass number $236$: only the protons that leave reduce the mass number.",
+          "feedback": "The data of the model refute this: the mass number decreases from $238$ to $234$. The mass number is the number of all nucleons, and the alpha particle takes two protons and two neutrons."
+        },
+        {
+          "text": "The atomic number is $88$ and the mass number $234$: all four particles are protons.",
+          "feedback": "The data of the model refute this: $Z$ decreases by only two, to $90$. An alpha particle has two protons and two neutrons; only protons change the atomic number."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: an electron leaves the nucleus",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 6
+      },
+      "prompt": "The thorium-234 nucleus ${}^{234}_{90}\\text{Th}$ decays by beta minus decay: an electron and an antineutrino leave the nucleus. How do the atomic number $Z$ and the mass number $A$ of the nucleus change?",
+      "choices": [
+        {
+          "text": "$Z$ increases by one and $A$ stays the same.",
+          "correct": true,
+          "feedback": "The data of the model support this: ${}^{234}_{90}\\text{Th}$ changes into protactinium ${}^{234}_{91}\\text{Pa}$, and in every beta minus decay of the series $Z$ increases by one and $A$ stays the same. A neutron changes into a proton, so the number of nucleons does not change but there is one more proton."
+        },
+        {
+          "text": "$Z$ decreases by one and $A$ stays the same, because a negative particle leaves.",
+          "feedback": "The data of the model refute this: $Z$ increases from $90$ to $91$. The electron was not in the nucleus beforehand; a neutron changes into a proton and the electron is created. Charge is conserved: $90 = 91 + (-1)$."
+        },
+        {
+          "text": "$Z$ and $A$ stay the same, because the mass of an electron is very small.",
+          "feedback": "The data of the model refute this: the nucleus changes from thorium ($Z = 90$) to protactinium ($Z = 91$). The mass number stays the same, but the charge does not: the nucleus is left with one more proton."
+        },
+        {
+          "text": "$A$ decreases by one, because a particle leaves the nucleus.",
+          "feedback": "The data of the model refute this: $A$ stays at $234$. An electron is not a nucleon, so its departure does not change the mass number; a neutron of the nucleus only changes into a proton."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Press *Decay* and follow where the nucleus moves on the chart of nuclides and what leaves it.",
+      "howto": "*Decay* moves the series one step forward: on the right the nucleus emits a particle, and an arrow grows on the chart to the new cell. The horizontal axis of the chart is the neutron number $N$, the vertical axis is the atomic number $Z$ and the symbol of the element. With the slider you can jump straight to any step $k$ of the series ($0$–$14$). *Reset* returns to uranium-238. The readout shows the symbol of the nucleus, $Z$, $N$, $A$, the next mode of decay and the equation of the previous decay. *Speed* changes only the pace of the animation.",
+      "model": "The nuclei and decay modes of the series are data from the NuDat 3 database of the US National Nuclear Data Center, NNDC (ENSDF values). For each nucleus the most common mode of decay has been chosen; a few nuclei, such as bismuth-214, also decay in another way with a very small probability. Protactinium-234 is created in the series in its long-lived excited state, which decays by beta minus decay. The green cells are the stable nuclei of the region; bismuth-209 decays so slowly that it is practically stable. The picture of the nucleus is schematic: protons and neutrons do not stay in place in a nucleus, and the order of the nucleons means nothing. The moment when a single nucleus decays cannot be predicted; the model shows only where each decay leads, not how long it takes.",
+      "calc": "The model does not calculate the decay but shows the data of the database. The neutron number in the readout is $N = A - Z$. In a decay equation the mass number and the charge number are conserved, and the element of the daughter nucleus is read from its atomic number."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the decay series of uranium-238",
+      "intro": "Test the predictions. Start from uranium-238 ($k = 0$) and record every step: change the step one at a time, or press *Decay* and then record. Record at least the steps $0$–$5$. Compare consecutive rows: by how much do $Z$, $N$ and $A$ change in alpha decay and by how much in beta minus decay?",
+      "initial": {
+        "k": 0
+      },
+      "locked": [],
+      "vary": "k",
+      "names": {
+        "k": "series step $k$"
+      },
+      "values": {
+        "mode": {
+          "1": "alpha",
+          "2": "beta minus",
+          "0": "stable"
+        }
+      },
+      "measure": [
+        {
+          "key": "Z",
+          "label": "$Z$"
+        },
+        {
+          "key": "N",
+          "label": "$N$"
+        },
+        {
+          "key": "A",
+          "label": "$A$"
+        },
+        {
+          "key": "mode",
+          "label": "decays next by"
+        }
+      ],
+      "min": 6
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what do the decays do to a nucleus?",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "Using your table, write how $Z$, $N$ and $A$ change in alpha decay and in beta minus decay. Explain the changes by what leaves the nucleus. Where does the series end?",
+      "model": "In alpha decay $Z$ and $N$ each decrease by two and $A$ by four, for example ${}^{238}_{92}\\text{U} \\to {}^{234}_{90}\\text{Th}$, because a helium nucleus with two protons and two neutrons leaves the nucleus. In beta minus decay $Z$ increases by one, $N$ decreases by one and $A$ stays the same, for example ${}^{234}_{90}\\text{Th} \\to {}^{234}_{91}\\text{Pa}$, because a neutron changes into a proton and the electron that is created leaves. On the chart, alpha takes the nucleus two cells down and to the left, beta one cell up and to the left. The series has $8$ alpha and $6$ beta decays, and it ends in stable lead-206, ${}^{206}_{82}\\text{Pb}$. The data are from the NNDC database.",
+      "criteria": [
+        "I said that in alpha decay $Z$ decreases by two and $A$ by four, and explained it with the helium nucleus.",
+        "I said that in beta minus decay $Z$ increases by one and $A$ stays the same, and explained it by a neutron changing into a proton.",
+        "I said that the series ends in the stable nucleus ${}^{206}_{82}\\text{Pb}$."
+      ]
+    },
+    {
+      "id": "gammaspektri",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "The gamma spectrum of cobalt-60",
+      "source": "measured",
+      "source_note": "Gamma energies: NNDC NuDat 3 (ENSDF), measured values; the shape and height of the peaks are drawn schematically.",
+      "figure": "fy8-8/spectrum",
+      "text": "Cobalt-60 decays by beta minus decay into nickel-60, and after that the nickel nucleus emits gamma radiation. The figure shows the shape of a spectrum measured with a gamma detector: the number of photons as a function of the photon energy. The spectrum has two narrow peaks. According to the measured data, the nucleus emits both photons one after the other in almost every decay.",
+      "question": {
+        "type": "numeric",
+        "prompt": "The nickel-60 nucleus is created in an excited state and returns to the ground state by emitting these two photons one after the other. What is the energy of the excited state above the ground state? Give the answer in kiloelectronvolts.",
+        "answer": 2505.7,
+        "unit": "keV",
+        "tolerance": 0.005,
+        "hints": [
+          "Each photon takes away from the nucleus an energy equal to the difference between two levels.",
+          "The nucleus first drops from the excited state to an intermediate level and then from the intermediate level to the ground state. The photon energies equal these two drops.",
+          "Read the energy of each peak from the figure and add the energies."
+        ],
+        "mistakes": [
+          {
+            "value": 1332.5,
+            "feedback": "This is only the energy of the second photon, that is, the energy of the intermediate level. The excited state is still $1173.2\\,\\text{keV}$ higher."
+          },
+          {
+            "value": 159.3,
+            "feedback": "The difference of the photon energies is not the energy of any level. The nucleus loses the energy of both photons, so the energies are added."
+          }
+        ],
+        "solution": "**Given:** the energies of the gamma photons $E_1 = 1173.2\\,\\text{keV}$ and $E_2 = 1332.5\\,\\text{keV}$, which the nucleus emits one after the other as it returns from the excited state to the ground state\n\n**Find:** the energy $E^{\\ast}$ of the excited state above the ground state in kiloelectronvolts\n\n**Reading the graph:** The two peaks of the spectrum are at $1173.2\\,\\text{keV}$ and $1332.5\\,\\text{keV}$. There are no other peaks, so the nucleus emits only these two photon energies.\n\n**Principle:** The energy of a nucleus is quantised, and each photon takes away the difference between two levels. Energy is conserved: the nucleus drops from the excited state to the intermediate level and from the intermediate level to the ground state, so the sum of the drops is the energy of the excited state above the ground state.\n\n**Formula:** $E^{\\ast} - E_\\text{m} = E_1$ and $E_\\text{m} - 0 = E_2$, from which $E^{\\ast} = E_1 + E_2$\n\n**Conversions:** None are needed, because the energies and the answer are in kiloelectronvolts.\n\n**Substitution:** $E^{\\ast} = 1173.2\\,\\text{keV} + 1332.5\\,\\text{keV} = 2505.7\\,\\text{keV}$\n\n**Answer:** $2505.7\\,\\text{keV}$ or about $2.51\\,\\text{MeV}$; the precision of the sum is one decimal place, like the photon energies.\n\n**Reasonableness:** The result is greater than either photon energy, as it must be for a nucleus that returns to the ground state in two steps. According to the NNDC database, the excited state of nickel-60 is $2505.8\\,\\text{keV}$ above the ground state. The sum of the photons is less than that by under $0.1\\,\\text{keV}$, because when a photon leaves, the nucleus recoils and gains a little kinetic energy. The energies are hundreds of thousands of times greater than the electronvolts of the transitions of an atom."
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the data of the series. Then return to the question at the start: what nucleus is created when americium-241 ${}^{241}_{95}\\text{Am}$ emits an alpha particle, and why can a gamma photon be created at the same time?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake",
+      "optional": true,
+      "prompt": "A student writes the equation for the beta minus decay of carbon-14 like this:\n\n$${}^{14}_{6}\\text{C} \\to {}^{14}_{5}\\text{B} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}$$\n\nShe reasons that when a negative electron leaves, the charge of the nucleus decreases. Where is the mistake?",
+      "choices": [
+        {
+          "text": "The charge number is not conserved: on the right the sum of the subscripts is $5 - 1 = 4$, although on the left it is $6$.",
+          "correct": true,
+          "feedback": "Correct. Conservation of the charge number requires $6 = Z' - 1$, so $Z' = 7$ and the daughter nucleus is nitrogen: ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}$. A neutron changes into a proton, so there is one more proton."
+        },
+        {
+          "text": "The mass number is not conserved: the mass number of the daughter nucleus should be $13$, because an electron leaves.",
+          "feedback": "The mass number of an electron is $0$, so the mass number is already conserved: $14 = 14 + 0$. The mistake is in the charge number."
+        },
+        {
+          "text": "The equation is missing an alpha particle, because carbon decays by alpha decay.",
+          "feedback": "Carbon-14 decays by beta minus decay, as the task says; alpha decay is typical of heavy nuclei. The mistake is in the atomic number of the daughter nucleus."
+        },
+        {
+          "text": "In place of the antineutrino there should be a gamma photon, which takes the energy of the electron.",
+          "feedback": "The antineutrino belongs to beta minus decay: it shares the decay energy with the electron. The mistake in the equation is in the charge number: the $Z$ of the daughter nucleus is $7$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "Uranium-235 ${}^{235}_{92}\\text{U}$ also decays in nature as a series that ends in stable lead-207, ${}^{207}_{82}\\text{Pb}$. The series has only alpha and beta minus decays. How many alpha decays are there in the series?",
+      "answer": 7,
+      "unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Which kind of decay changes the mass number, and by how much?",
+        "Beta minus decay does not change the mass number, so the whole change in the mass number comes from alpha decays, each by $4$.",
+        "The mass number decreases by $235 - 207 = 28$. Divide this by the change of one alpha decay."
+      ],
+      "mistakes": [
+        {
+          "value": 28,
+          "feedback": "This is the change in the mass number. One alpha decay reduces the mass number by four, so the number of decays is $28 : 4$."
+        },
+        {
+          "value": 10,
+          "feedback": "This is the change in the atomic number, $92 - 82$. Beta decays also affect the atomic number; calculate the alpha decays from the mass number, which beta decay does not affect."
+        },
+        {
+          "value": 5,
+          "feedback": "You divided the change in the atomic number by two. Beta decays increase the atomic number, so calculate the alpha decays from the change in the mass number, $28$."
+        }
+      ],
+      "solution": "**Given:** initial nucleus ${}^{235}_{92}\\text{U}$, final nucleus ${}^{207}_{82}\\text{Pb}$; the series has only alpha and beta minus decays\n\n**Find:** the number of alpha decays $n_\\alpha$\n\n**Principle:** The mass number is conserved in every decay. An alpha particle takes away four nucleons, but beta minus decay does not change the mass number, because the mass number of the electron is zero. So the whole change in the mass number comes from alpha decays.\n\n**Formula:** $A_\\text{initial} - A_\\text{final} = 4 n_\\alpha$, from which $n_\\alpha = \\dfrac{A_\\text{initial} - A_\\text{final}}{4}$\n\n**Conversions:** None are needed, because the mass numbers are counts.\n\n**Substitution:** $n_\\alpha = \\dfrac{235 - 207}{4} = \\dfrac{28}{4} = 7$\n\n**Answer:** $7$ alpha decays; the result is an exact integer, because nucleons are counted as pieces.\n\n**Reasonableness:** Seven alpha decays would reduce the atomic number by $14$ to $78$. The atomic number of the final nucleus is $82$, so there must be $4$ beta minus decays, each increasing it by one: $92 - 14 + 4 = 82$. The series of uranium-238 likewise has $8$ alpha and $6$ beta decays."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. Level 1 tasks use one conservation law or formula, level 2 tasks combine two steps, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A barium-137 nucleus is in an excited state ${}^{137}_{56}\\text{Ba}^{\\ast}$ and emits a gamma photon. Which statement is correct?",
+      "choices": [
+        {
+          "text": "The nucleus stays barium; only its energy decreases.",
+          "correct": true,
+          "feedback": "Correct. A gamma photon takes away the energy of the difference between the levels, but the numbers of protons and neutrons stay the same: ${}^{137}_{56}\\text{Ba}^{\\ast} \\to {}^{137}_{56}\\text{Ba} + \\gamma$."
+        },
+        {
+          "text": "The nucleus changes into caesium, because the photon takes one proton with it.",
+          "feedback": "A photon is not a particle that contains a proton: its mass number and charge are zero. The atomic number stays at $56$."
+        },
+        {
+          "text": "The mass number decreases by one, because the photon takes energy and mass from the nucleus.",
+          "feedback": "A photon does not take away a nucleon, so the mass number stays at $137$. The mass of the nucleus decreases with the energy by a vanishingly small amount, but the mass number is the number of nucleons."
+        },
+        {
+          "text": "The nucleus moves to a higher energy level, because the photon is created in the nucleus.",
+          "feedback": "When it emits a photon, the nucleus loses energy and moves to a lower level, just as an atom does in emission. The nucleus would move to a higher level when it absorbs a photon."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. The wavelength of a gamma photon",
+      "prompt": "Hospital isotope examinations use the technetium isotope ${}^{99\\text{m}}_{43}\\text{Tc}$, which emits a gamma photon with an energy of $140.5\\,\\text{keV}$ (NNDC NuDat 3). Calculate the wavelength of the photon. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. Give the answer in picometres ($1\\,\\text{pm} = 10^{-12}\\,\\text{m}$).",
+      "answer": 8.826,
+      "unit": "pm",
+      "tolerance": 0.02,
+      "hints": [
+        "The energy of a photon is $E_\\gamma = \\tfrac{hc}{\\lambda}$. Solve the wavelength.",
+        "First convert the energy to joules: $140.5 \\cdot 1000 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "$\\lambda = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2.2508 \\cdot 10^{-14}\\,\\text{J}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 8826,
+          "feedback": "You used electronvolts as the energy instead of kiloelectronvolts: the factor $1000$ is missing. The wavelength of a gamma photon is a thousand times shorter."
+        }
+      ],
+      "solution": "**Given:** the energy of the gamma photon $E_\\gamma = 140.5\\,\\text{keV}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Find:** the wavelength $\\lambda$ of the photon in picometres\n\n**Principle:** Gamma radiation is electromagnetic radiation, so the energy and the wavelength of its photon are related as for a photon of visible light: the greater the energy, the shorter the wavelength.\n\n**Formula:** $E_\\gamma = \\dfrac{hc}{\\lambda}$, from which $\\lambda = \\dfrac{hc}{E_\\gamma}$\n\n**Conversions:** $E_\\gamma = 140.5\\,\\text{keV} = 140.5 \\cdot 1000 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 2.2508 \\cdot 10^{-14}\\,\\text{J}$; finally $1\\,\\text{m} = 10^{12}\\,\\text{pm}$.\n\n**Substitution:** The product $hc = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2.998 \\cdot 10^{8}\\,\\text{m/s} = 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$. $\\lambda = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2.2508 \\cdot 10^{-14}\\,\\text{J}} = 8.8256 \\cdot 10^{-12}\\,\\text{m} = 8.8256\\,\\text{pm}$\n\n**Answer:** $8.826\\,\\text{pm}$ or about $8.83 \\cdot 10^{-12}\\,\\text{m}$, four significant figures like the energy $140.5\\,\\text{keV}$.\n\n**Reasonableness:** The caesium photon of the example, $661.7\\,\\text{keV}$, has about $4.7$ times more energy, and its wavelength of $1.874\\,\\text{pm}$ is about $4.7$ times shorter: $8.83 : 1.874 \\approx 4.7$. The wavelength is much smaller than the size of an atom, $10^{-10}\\,\\text{m} = 100\\,\\text{pm}$, as it should be for gamma radiation.",
+      "practice": "Practise calculating the energy and the wavelength of a gamma photon in the tasks of levels 1 and 2."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Where does a beta particle come from?",
+      "optional": true,
+      "prompt": "There are no electrons in an atomic nucleus, but in beta minus decay an electron leaves the nucleus. Explain in three or four sentences where the electron comes from and why the atomic number of the daughter nucleus increases.",
+      "model": "In beta minus decay a neutron of the nucleus changes into a proton through the weak interaction. The change creates an electron and an antineutrino, which leave the nucleus; the electron was not in the nucleus beforehand. Because one proton is added to the nucleus, the atomic number increases by one and the element changes. The number of nucleons does not change, so the mass number stays the same, and charge is conserved, because the $+e$ of the proton and the $-e$ of the electron cancel each other.",
+      "criteria": [
+        "I said that a neutron of the nucleus changes into a proton and the electron is created in the decay.",
+        "I explained the increase of the atomic number by the increase of one in the number of protons.",
+        "I mentioned that the mass number stays the same or that charge is conserved."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer them yourself first and only then open the answer."
+    }
+  ]
+}
