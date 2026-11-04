@@ -40,6 +40,74 @@
       "answer": 3.0,
       "unit": "A",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L1-06",
+      "level": 1,
+      "text": "Pariston napajännite mitataan jännitemittarilla pariston navoista. Milloin napajännite on yhtä suuri kuin pariston lähdejännite?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kun paristosta ei oteta virtaa, koska silloin sisäisessä resistanssissa ei synny jännitehäviötä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kun paristosta ei oteta virtaa, koska silloin sisäisessä resistanssissa ei synny jännitehäviötä.",
+          "feedback": "Oikein: napajännite on $U = E - R_\\text{s} I$, ja kun $I = 0$, sisäisessä resistanssissa ei jännite laske. Siksi vain ilman kuormaa jännitemittari näyttää lähdejännitteen.",
+          "correct": true
+        },
+        {
+          "text": "Kun paristosta otetaan mahdollisimman suuri virta, koska silloin koko lähdejännite jää navoille.",
+          "feedback": "Päinvastoin: suuri virta kasvattaa jännitehäviötä $R_\\text{s} I$ sisäisessä resistanssissa, joten navoille jää lähdejännitettä pienempi jännite. Oikosulussa napajännite on nolla."
+        },
+        {
+          "text": "Kun kuormitusvastus on yhtä suuri kuin sisäinen resistanssi, koska silloin jännite jakautuu tasan.",
+          "feedback": "Silloin lähdejännite todella jakautuu tasan, mutta juuri siksi napajännite on vain puolet lähdejännitteestä. Napajännite on lähdejännitteen suuruinen vasta, kun virtaa ei kulje."
+        },
+        {
+          "text": "Aina, koska lähdejännite on pariston ominaisuus eikä kuorma vaikuta napajännitteeseen.",
+          "feedback": "Lähdejännite on pariston ominaisuus, mutta napajännite ei: kun virta kasvaa, sisäisen resistanssin jännitehäviö kasvaa ja napajännite pienenee. Siksi ne ovat yhtä suuret vain virrattomassa tilassa."
+        }
+      ]
+    },
+    {
+      "id": "fy6-8-L1-07",
+      "level": 1,
+      "text": "Pariston navat yhdistetään lyhyellä paksulla johtimella, jonka resistanssi on lähes nolla (oikosulku). Mitä silloin tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Virta kasvaa suureksi, koska sitä rajoittaa vain pariston sisäinen resistanssi.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Virta kasvaa suureksi, koska sitä rajoittaa vain pariston sisäinen resistanssi.",
+          "feedback": "Oikein: ulkoisen piirin resistanssi on lähes nolla, joten virta on $I_\\text{k} = E : R_\\text{s}$. Paristoissa $R_\\text{s}$ on pieni, joten virta on suuri ja paristo lämpenee vaarallisen kuumaksi.",
+          "correct": true
+        },
+        {
+          "text": "Virta pienenee nollaan, koska ulkoisen piirin resistanssi on nolla eikä kuormaa ole.",
+          "feedback": "Ohmin laki toimii päinvastoin: mitä pienempi kokonaisresistanssi, sitä suurempi virta. Kuorman puuttuminen ei pysäytä virtaa vaan poistaa sen rajoittimen."
+        },
+        {
+          "text": "Virta pysyy ennallaan, koska pariston lähdejännite ei muutu eikä kuorma vaikuta virtaan.",
+          "feedback": "Lähdejännite pysyy likimain samana, mutta virta määräytyy kokonaisresistanssista: $I = E : (R + R_\\text{s})$. Kun $R$ pienenee nollaan, virta kasvaa moninkertaiseksi."
+        },
+        {
+          "text": "Napajännite nousee lähdejännitettä suuremmaksi, koska johdin ei vastusta virtaa lainkaan.",
+          "feedback": "Napajännite ei voi ylittää lähdejännitettä, koska $U = E - R_\\text{s} I$. Oikosulussa napajännite on päinvastoin nolla, koska koko lähdejännite jää sisäisen resistanssin yli."
+        }
+      ]
+    },
+    {
+      "id": "fy6-8-L1-08",
+      "level": 1,
+      "text": "Uuden pariston lähdejännite on $1{,}50\\,\\text{V}$. Kun paristosta otetaan virta $0{,}50\\,\\text{A}$, sen napajännite on $1{,}31\\,\\text{V}$. Kuinka suuri on pariston sisäinen resistanssi?",
+      "answer": 0.38,
+      "unit": "Ω",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,135 @@
       "answer": 1.0,
       "unit": "A",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L2-05",
+      "level": 2,
+      "text": "Pariston napajännite mitattiin kuudella eri kuormitusvirralla (esimerkkiaineisto). Piirrä mittauspisteistä $(I, U)$-kuvaaja ja sovita pisteisiin suora. Pisteet eivät ole täsmälleen suoralla, koska jokaisessa mittauksessa on pieni epävarmuus.\n\na) Lue suoralta pariston lähdejännite.\n\nb) Määritä suoran kulmakertoimesta pariston sisäinen resistanssi.\n\nVastauslaatikkoon tulee b)-kohdan tulos.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 0.56,
+      "unit": "Ω",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Pariston napajännite $U$ kuormitusvirran $I$ funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "1.43"
+          ],
+          [
+            "0.40",
+            "1.31"
+          ],
+          [
+            "0.60",
+            "1.20"
+          ],
+          [
+            "0.80",
+            "1.10"
+          ],
+          [
+            "1.00",
+            "0.99"
+          ],
+          [
+            "1.20",
+            "0.86"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-8-L2-06",
+      "level": 2,
+      "text": "Kahden paristotyypin, A:n ja B:n, napajännite mitattiin samoilla kuormitusvirroilla (esimerkkiaineisto). Piirrä kummankin pariston mittauspisteet samaan $(I, U)$-koordinaatistoon ja sovita kumpaankin oma suora.\n\na) Millä virralla paristojen napajännitteet ovat yhtä suuret? Lue arvo suorien leikkauspisteestä.\n\nb) Kumpi paristo on parempi suurella virralla ja miksi? Perustele sisäisen resistanssin avulla.\n\nVastauslaatikkoon tulee a)-kohdan tulos.",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 0.4,
+      "unit": "A",
+      "tolerance": 0.1,
+      "data": {
+        "caption": "Paristojen A ja B napajännite kuormitusvirran funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$U_\\text{A}\\,(\\text{V})$",
+          "$U_\\text{B}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "1.55",
+            "1.47"
+          ],
+          [
+            "0.20",
+            "1.50",
+            "1.44"
+          ],
+          [
+            "0.40",
+            "1.40",
+            "1.40"
+          ],
+          [
+            "0.60",
+            "1.29",
+            "1.35"
+          ],
+          [
+            "0.80",
+            "1.21",
+            "1.31"
+          ],
+          [
+            "1.00",
+            "1.10",
+            "1.27"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-8-L2-07",
+      "level": 2,
+      "text": "Oppilas mittaa paristoa jännitemittarilla, joka on kytketty pariston napoihin ilman kuormaa. Mittari näyttää $1{,}58\\,\\text{V}$ (esimerkkiaineisto). Oppilas päättelee: \"Napajännite on sama kuin pariston merkitty lähdejännite, joten pariston sisäinen resistanssi on nolla.\" Mikä väite oppilaan päätelmästä on oikein?",
+      "kind": [
+        "experiment",
+        "error"
+      ],
+      "answer": "Päätelmä on virheellinen, koska ilman virtaa sisäisessä resistanssissa ei synny jännitehäviötä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Päätelmä on virheellinen, koska ilman virtaa sisäisessä resistanssissa ei synny jännitehäviötä.",
+          "feedback": "Oikein: kun $I = 0$, $U = E - R_\\text{s} \\cdot 0 = E$ mikä tahansa $R_\\text{s}$ onkin. Yksi virraton mittaus antaa vain lähdejännitteen. Sisäisen resistanssin määrittämiseen tarvitaan mittaus kuormitettuna tai useita eri virroilla.",
+          "correct": true
+        },
+        {
+          "text": "Päätelmä on oikea, koska napajännite on yhtä suuri kuin lähdejännite vain, jos pariston sisäinen resistanssi on nolla.",
+          "feedback": "Napajännite on lähdejännite myös silloin, kun virtaa ei kulje, vaikka $R_\\text{s}$ olisi suuri: jännitehäviö on $R_\\text{s} I = 0$. Mittaus ei siis kerro sisäisestä resistanssista mitään."
+        },
+        {
+          "text": "Päätelmä on virheellinen, koska jännitemittari ottaa suuren virran ja pienentää napajännitettä.",
+          "feedback": "Jännitemittarin resistanssi on hyvin suuri, joten se ottaa häviävän pienen virran eikä muuta napajännitettä merkittävästi. Siksi virraton mittaus antaa lähdejännitteen, mutta ei $R_\\text{s}$:ää."
+        },
+        {
+          "text": "Päätelmä on virheellinen, koska virran ollessa nolla sisäinen resistanssi on ääretön.",
+          "feedback": "Sisäinen resistanssi on pariston ominaisuus eikä muutu virran mukana. Virta on nolla, koska ulkoista piiriä ei ole, ei siksi että $R_\\text{s}$ olisi ääretön."
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +297,101 @@
       "answer": 1.6,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L3-04",
+      "level": 3,
+      "text": "Saman mallin paristojen napajännite mitattiin eri kuormitusvirroilla, kun paristo oli uusi ja kun se oli ikääntynyt (esimerkkiaineisto). Piirrä kummankin pariston mittauspisteistä $(I, U)$-kuvaaja ja sovita pisteisiin suorat.\n\na) Määritä kummankin pariston lähdejännite ja sisäinen resistanssi.\n\nb) Ikääntynyt paristo kytketään vastukseen, jonka resistanssi on $2{,}0\\,\\Omega$. Kuinka monta prosenttia pariston kehittämästä sähkötehosta muuttuu pariston itsensä sisäenergiaksi? Vertaa uuteen paristoon samalla kuormalla.\n\nc) Laske ikääntyneen pariston vastukseen siirtämä teho, kun vastuksen resistanssi on $0{,}55\\,\\Omega$, $1{,}1\\,\\Omega$, $2{,}2\\,\\Omega$ ja $4{,}4\\,\\Omega$. Millä näistä teho on suurin, ja kuinka suuri osa kehitetystä tehosta silloin lämmittää paristoa?\n\nVastauslaatikkoon tulee b)-kohdan tulos ikääntyneelle paristolle.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 35,
+      "unit": "%",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Uuden ja ikääntyneen pariston napajännite kuormitusvirran funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$U_\\text{uusi}\\,(\\text{V})$",
+          "$U_\\text{ikä}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "1.56",
+            "1.41"
+          ],
+          [
+            "0.20",
+            "1.53",
+            "1.30"
+          ],
+          [
+            "0.30",
+            "1.51",
+            "1.19"
+          ],
+          [
+            "0.40",
+            "1.48",
+            "1.09"
+          ],
+          [
+            "0.50",
+            "1.46",
+            "0.97"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-8-L3-05",
+      "level": 3,
+      "text": "Oppilas määritti akun sisäisen resistanssin ja oikosulkuvirran mittaamalla virran ja jännitteen kuudella kuormalla (esimerkkiaineisto). Jännitemittari oli kytketty kuormitusvastuksen napoihin, ja akun ja vastuksen välisten johtimien yhteenlaskettu resistanssi on erikseen mitattuna $0{,}30\\,\\Omega$. Mittari näyttää siis jännitteen johtimien toisessa päässä, ei akun navoilta. Oppilas sovitti pisteisiin suoran, sai kulmakertoimen itseisarvoksi $1{,}1\\,\\Omega$ ja päätteli: \"Sisäinen resistanssi on $1{,}1\\,\\Omega$, joten oikosulkuvirta on $E : 1{,}1\\,\\Omega = 5{,}6\\,\\text{A}$.\"\n\na) Piirrä mittauspisteistä kuvaaja, sovita suora ja lue sen avulla akun lähdejännite $E$.\n\nb) Selitä, miksi oppilaan sisäinen resistanssi on liian suuri, ja laske akun oikea sisäinen resistanssi.\n\nc) Laske akun oikea oikosulkuvirta, kun navat yhdistetään suoraan ilman johtimia. Miten mittaus olisi pitänyt tehdä, jotta johtimet eivät vaikuta tulokseen?\n\nVastauslaatikkoon tulee c)-kohdan oikosulkuvirta.",
+      "kind": [
+        "data",
+        "graph",
+        "error",
+        "model"
+      ],
+      "answer": 7.6,
+      "unit": "A",
+      "tolerance": 0.06,
+      "data": {
+        "caption": "Jännite $U$ kuormitusvastuksen napojen välillä virran $I$ funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "5.56"
+          ],
+          [
+            "1.00",
+            "5.00"
+          ],
+          [
+            "1.50",
+            "4.45"
+          ],
+          [
+            "2.00",
+            "3.91"
+          ],
+          [
+            "2.50",
+            "3.36"
+          ],
+          [
+            "3.00",
+            "2.79"
+          ]
+        ]
+      }
     }
   ]
 }

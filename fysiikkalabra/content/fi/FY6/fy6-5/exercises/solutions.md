@@ -118,3 +118,73 @@
 **Sijoitus:** Kaksi lamppua: $R_\text{h} = 30\,\Omega$ ja $V_\text{kaksi} = \dfrac{30\,\Omega}{50\,\Omega} \cdot 12\,\text{V} = 7{,}2\,\text{V}$. Yksi lamppu: $R_\text{h} = 60\,\Omega$ ja $V_\text{yksi} = \dfrac{60\,\Omega}{80\,\Omega} \cdot 12\,\text{V} = 9{,}0\,\text{V}$. $\Delta V = 9{,}0\,\text{V} - 7{,}2\,\text{V} = 1{,}8\,\text{V}$
 **Vastaus:** $1{,}8\,\text{V}$, kaksi merkitsevää numeroa kuten resistansseissa.
 **Järkevyys:** Virta pienenee $0{,}24\,\text{A}$:sta $0{,}15\,\text{A}$:iin, joten sarjavastuksen jännite pienenee $4{,}8\,\text{V}$:sta $3{,}0\,\text{V}$:iin eli $1{,}8\,\text{V}$, ja juuri sen verran lampun jännite kasvaa. Jäljelle jäävä lamppu palaa kirkkaammin, koska sen jännite kasvaa.
+
+## fy6-5-L1-06
+**Kysytty:** miksi haarautumispisteeseen tulevien virtojen summa on yhtä suuri kuin siitä lähtevien virtojen summa.
+**Periaate:** Virta on aikayksikössä johtimen poikkileikkauksen läpi kulkeva varaus. Haarautumispiste on johtimen kohta, jossa varaus ei voi kasaantua eikä sitä synny tai häviä. Sinne tuleva varaus siis lähtee pois samaa tahtia, ja se on Kirchhoffin virtalaki.
+**Mallivastaus:** Laki seuraa varauksen säilymisestä: varausta ei synny, häviä eikä kerry haarautumispisteeseen, joten tulevien virtojen summa on yhtä suuri kuin lähtevien. Virta ei jakaudu haaroihin tasan, vaan haarojen resistanssit määräävät, kuinka suuri osa virrasta kulkee mihinkin haaraan. Haarojen yhteinen jännite ei selitä virtalakia, ja virta ei kulu vastuksessa: vastuksessa pienenee potentiaali, ei virta.
+
+## fy6-5-L1-07
+**Kysytty:** mitä tapahtuu potentiaaleille, jännitteille ja virralle, kun nollakohdaksi valitaan toinen kohta.
+**Periaate:** Potentiaali on kohdan jännite valittuun nollakohtaan nähden, ja jännite on kahden kohdan potentiaalien erotus $U_{AB} = V_A - V_B$. Kun kaikki potentiaalit mitataan uudesta nollakohdasta, jokainen muuttuu saman verran, ja erotuksessa muutos kumoutuu. Virran määräävät lähde ja vastukset, eivät nollakohdan valinta.
+**Mallivastaus:** Kaikkien kohtien potentiaalit muuttuvat saman verran. Kun nollakohdaksi valitaan plusnapa, plusnavan potentiaali on $0$ ja miinusnavan potentiaali on lähteen jännitteen verran negatiivinen. Kohtien väliset jännitteet, myös vastusten jännitteet, pysyvät samoina, koska ne ovat potentiaalien erotuksia. Virta vastuksissa ei muutu, koska nollakohta on vain laskennallinen valinta eikä muuta piirin toimintaa. Muuttumattomia eivät siis ole potentiaalit vaan jännitteet ja virrat.
+
+## fy6-5-L1-08
+**Annettu:** $V_A = 9{,}0\,\text{V}$, $R_1 = 60\,\Omega$, $R_2 = 90\,\Omega$, $I = 0{,}040\,\text{A}$
+**Kysytty:** kohdan $C$ potentiaali $V_C$ voltteina
+**Periaate:** Sama virta kulkee molempien vastusten läpi. Vastuksessa potentiaali laskee virran suuntaan jännitteen $RI$ verran, joten kohdasta $A$ kohtaan $C$ edetessä potentiaali laskee kummankin vastuksen jännitteen verran.
+**Kaava:** $V_C = V_A - R_1 I - R_2 I$
+**Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
+**Sijoitus:** $V_C = 9{,}0\,\text{V} - 60\,\Omega \cdot 0{,}040\,\text{A} - 90\,\Omega \cdot 0{,}040\,\text{A} = 9{,}0\,\text{V} - 2{,}4\,\text{V} - 3{,}6\,\text{V} = 3{,}0\,\text{V}$
+**Vastaus:** $3{,}0\,\text{V}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa.
+**Järkevyys:** Vastusten yhteinen lasku on $150\,\Omega \cdot 0{,}040\,\text{A} = 6{,}0\,\text{V}$, ja $9{,}0\,\text{V} - 6{,}0\,\text{V} = 3{,}0\,\text{V}$. Potentiaali pienenee virran suuntaan, joten $V_C$ on pienempi kuin $V_A$.
+
+## fy6-5-L2-05
+**Annettu:** $U = 12\,\text{V}$, $R_1 = 60\,\Omega$, $R_2 = 80\,\Omega$, $R_3 = 50\,\Omega$ rinnan; lukemat $\text{A}_0$: $0{,}50\,\text{A}$, $\text{A}_1$: $0{,}20\,\text{A}$, $\text{A}_2$: $0{,}15\,\text{A}$, $\text{A}_3$: $0{,}24\,\text{A}$
+**Kysytty:** virheellinen lukema ja pääjohtimen mittarin $\text{A}_0$ oikea lukema $I_0$ ampeereina
+**Periaate:** Rinnakkaisten haarojen jokaisen vastuksen jännite on lähteen jännite, joten Ohmin laki $I = U : R$ antaa haaravirrat ja niillä voi tarkistaa haaramittarit. Kirchhoffin virtalain mukaan pääjohtimen virta on haaravirtojen summa.
+**Kaava:** $I_k = \dfrac{U}{R_k}$ ja $I_0 = I_1 + I_2 + I_3$
+**Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
+**Sijoitus:** $\dfrac{12\,\text{V}}{60\,\Omega} = 0{,}20\,\text{A}$, $\dfrac{12\,\text{V}}{80\,\Omega} = 0{,}15\,\text{A}$ ja $\dfrac{12\,\text{V}}{50\,\Omega} = 0{,}24\,\text{A}$, kuten haaramittarit näyttävät. Haaravirtojen summa on $0{,}20\,\text{A} + 0{,}15\,\text{A} + 0{,}24\,\text{A} = 0{,}59\,\text{A}$.
+**Vastaus:** $0{,}59\,\text{A}$. Virheellinen on pääjohtimen mittarin lukema $0{,}50\,\text{A}$, koska se on pienempi kuin haaravirtojen summa.
+**Järkevyys:** Kokonaisresistanssi olisi $12\,\text{V} : 0{,}59\,\text{A} \approx 20\,\Omega$, mikä on pienempi kuin pienin haaran resistanssi $50\,\Omega$, kuten rinnankytkennässä kuuluu. Lukemalla $0{,}50\,\text{A}$ haaroihin lähtisi enemmän virtaa kuin pisteeseen tulee.
+
+## fy6-5-L2-06
+**Annettu:** potentiaalit $V_A = 12{,}0\,\text{V}$, $V_B = 8{,}4\,\text{V}$, $V_C = 8{,}4\,\text{V}$, $V_D = 3{,}6\,\text{V}$, $V_E = 0\,\text{V}$; virta $I = 0{,}12\,\text{A}$
+**Kysytty:** vastuksen $R_2$ resistanssi ohmeina
+**Periaate:** Kohtien $B$ ja $C$ välissä on pelkkä johdin, jossa potentiaali ei muutu ($\Delta V = 0$), joten niillä on sama potentiaali. Vastus $R_2$ on kohtien $C$ ja $D$ välissä, joten sen jännite on potentiaalien erotus. Sarjaankytkennässä sama virta kulkee sen läpi, ja Ohmin laki antaa resistanssin.
+**Kaava:** $U_2 = V_C - V_D$ ja $R_2 = \dfrac{U_2}{I}$
+**Muunnokset:** Ei tarvita: potentiaalit ovat voltteina ja virta ampeereina.
+**Sijoitus:** $U_2 = 8{,}4\,\text{V} - 3{,}6\,\text{V} = 4{,}8\,\text{V}$ ja $R_2 = \dfrac{4{,}8\,\text{V}}{0{,}12\,\text{A}} = 40\,\Omega$
+**Vastaus:** $40\,\Omega$, kaksi merkitsevää numeroa kuten virrassa.
+**Järkevyys:** Vastusten jännitteet ovat $12{,}0\,\text{V} - 8{,}4\,\text{V} = 3{,}6\,\text{V}$, $4{,}8\,\text{V}$ ja $3{,}6\,\text{V} - 0\,\text{V} = 3{,}6\,\text{V}$, yhteensä $12{,}0\,\text{V}$ eli lähteen jännite. Resistanssit $30\,\Omega$, $40\,\Omega$ ja $30\,\Omega$ antavat virran $12{,}0\,\text{V} : 100\,\Omega = 0{,}12\,\text{A}$, joka on mitattu lukema.
+
+## fy6-5-L2-07
+**Annettu:** $U = 9{,}0\,\text{V}$, $R_1 = 100\,\Omega$, $R_2 = 200\,\Omega$; nollakohta on lähteen plusnapa; oppilaan virta $0{,}030\,\text{A}$
+**Kysytty:** oppilaan virhe ja vastusten välisen johtimen oikea potentiaali $V$ voltteina etumerkkeineen
+**Periaate:** Oppilaan virta on oikein, mutta merkki on väärin. Vastuksessa potentiaali laskee virran suuntaan, ja virta kulkee plusnavasta vastuksen $R_1$ kautta. Kun nollakohta on plusnapa, välijohtimen potentiaali on siis nollan alapuolella: $V = 0 - R_1 I$.
+**Kaava:** $I = \dfrac{U}{R_1 + R_2}$ ja $V = 0 - R_1 I$
+**Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
+**Sijoitus:** $I = \dfrac{9{,}0\,\text{V}}{100\,\Omega + 200\,\Omega} = 0{,}030\,\text{A}$ ja $V = 0 - 100\,\Omega \cdot 0{,}030\,\text{A} = -3{,}0\,\text{V}$
+**Vastaus:** $-3{,}0\,\text{V}$, kaksi merkitsevää numeroa. Virhe oli etumerkissä: oppilas käsitteli vastuksessa tapahtuvan laskun nousuna.
+**Järkevyys:** Miinusnavan potentiaali on $-9{,}0\,\text{V}$. Vastuksen $R_1$ jännite on $0 - (-3{,}0\,\text{V}) = 3{,}0\,\text{V}$ ja vastuksen $R_2$ jännite $-3{,}0\,\text{V} - (-9{,}0\,\text{V}) = 6{,}0\,\text{V}$, ja ne vastaavat tuloja $100\,\Omega \cdot 0{,}030\,\text{A}$ ja $200\,\Omega \cdot 0{,}030\,\text{A}$.
+
+## fy6-5-L3-04
+**Annettu:** $U_1 = 12\,\text{V}$, $U_2 = 9{,}0\,\text{V}$, $R_1 = 30\,\Omega$, $R_2 = 20\,\Omega$, $R_3 = 30\,\Omega$; virrat $I_1$ ja $I_3$ pisteeseen $P$ ja $I_2$ pisteestä $P$
+**Kysytty:** haaravirrat ja erityisesti virta $I_2$ ampeereina sekä energiataseen tarkistus
+**Periaate:** Haarautumispisteessä $P$ virtalaki antaa $I_1 + I_3 = I_2$. Vasen silmukka (lähde $U_1$, vastukset $R_1$ ja $R_2$) ja oikea silmukka (lähde $U_2$, vastukset $R_3$ ja $R_2$) kierretään virran suunnassa, ja jännitelain mukaan potentiaalin muutosten summa on kummassakin nolla. Kolme yhtälöä riittää kolmelle tuntemattomalle virralle. Energiataseessa lähteiden tuottama teho muuttuu täysin vastusten sisäenergiaksi, koska ideaalisissa lähteissä ja johtimissa ei häviä energiaa.
+**Kaava:** $I_1 + I_3 = I_2$, $U_1 - R_1 I_1 - R_2 I_2 = 0$ ja $U_2 - R_3 I_3 - R_2 I_2 = 0$. Silmukkayhtälöistä $I_1 = \dfrac{U_1 - R_2 I_2}{R_1}$ ja $I_3 = \dfrac{U_2 - R_2 I_2}{R_3}$. Teho: $P = UI$ lähteessä ja $P = RI^2$ vastuksessa.
+**Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
+**Sijoitus:** $I_1 = \dfrac{12 - 20\, I_2}{30}$ ja $I_3 = \dfrac{9{,}0 - 20\, I_2}{30}$ (yksiköt $\text{V}$, $\Omega$ ja $\text{A}$). Virtalaista $\dfrac{21 - 40\, I_2}{30} = I_2$, joten $21 = 70\, I_2$ ja $I_2 = 0{,}30\,\text{A}$. Silloin $I_1 = \dfrac{12\,\text{V} - 6{,}0\,\text{V}}{30\,\Omega} = 0{,}20\,\text{A}$ ja $I_3 = \dfrac{9{,}0\,\text{V} - 6{,}0\,\text{V}}{30\,\Omega} = 0{,}10\,\text{A}$. Lähteiden teho on $12\,\text{V} \cdot 0{,}20\,\text{A} + 9{,}0\,\text{V} \cdot 0{,}10\,\text{A} = 2{,}4\,\text{W} + 0{,}9\,\text{W} = 3{,}3\,\text{W}$. Vastusten teho on $30\,\Omega \cdot (0{,}20\,\text{A})^2 + 20\,\Omega \cdot (0{,}30\,\text{A})^2 + 30\,\Omega \cdot (0{,}10\,\text{A})^2 = 1{,}2\,\text{W} + 1{,}8\,\text{W} + 0{,}3\,\text{W} = 3{,}3\,\text{W}$.
+**Vastaus:** $I_2 = 0{,}30\,\text{A}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa. Muut haaravirrat ovat $I_1 = 0{,}20\,\text{A}$ ja $I_3 = 0{,}10\,\text{A}$, ja lähteiden ja vastusten teho on molemmat $3{,}3\,\text{W}$, joten energiatase toteutuu.
+**Järkevyys:** Virtalaki toteutuu: $0{,}20\,\text{A} + 0{,}10\,\text{A} = 0{,}30\,\text{A}$. Pisteiden $P$ ja $Q$ välinen jännite on $R_2 I_2 = 6{,}0\,\text{V}$, ja se saadaan myös kummankin lähteen puolelta: $12\,\text{V} - 30\,\Omega \cdot 0{,}20\,\text{A} = 6{,}0\,\text{V}$ ja $9{,}0\,\text{V} - 30\,\Omega \cdot 0{,}10\,\text{A} = 6{,}0\,\text{V}$. Kaikki virrat ovat positiivisia, joten kumpikin lähde todella tuottaa virtaa pisteeseen $P$.
+
+## fy6-5-L3-05
+**Annettu:** $U = 12\,\text{V}$, $R_1 = 100\,\Omega$, $R_2 = 100\,\Omega$; kuorma $R_\text{k}$ rinnan vastuksen $R_2$ kanssa; miinusnapa on nollakohta; taulukon mittaukset
+**Kysytty:** kuorman resistanssi $R_\text{k}$ ohmeina, kun $V_P = 5{,}0\,\text{V}$; lisäksi kuormittamattoman ja kuormitetun jakajan selitys sekä tulos kuormalla $100\,\Omega$
+**Periaate:** Ilman kuormaa vastukset $R_1$ ja $R_2$ ovat sarjassa, ja pisteen $P$ potentiaali on vastuksen $R_2$ jännite. Kuormitettaessa virtalain mukaan vastuksen $R_1$ virta jakautuu vastuksen $R_2$ ja kuorman kesken, ja nämä ovat rinnan, joten niillä on sama jännite $V_P$. Kuorma pienentää haaran resistanssia, kokonaisvirta kasvaa, vastuksen $R_1$ jännite kasvaa ja jännitelain mukaan $V_P = U - R_1 I$ pienenee. Kysytty resistanssi saadaan kääntämällä jakajan kaava: ensin haaran resistanssi $R_\text{p}$, josta kuorma.
+**Kaava:** Kuormittamaton: $V_P = \dfrac{R_2}{R_1 + R_2}\, U$. Kuormitettu: $\dfrac{1}{R_\text{p}} = \dfrac{1}{R_2} + \dfrac{1}{R_\text{k}}$ ja $V_P = \dfrac{R_\text{p}}{R_1 + R_\text{p}}\, U$. Kun $V_P$ tunnetaan, $R_\text{p} = \dfrac{R_1 V_P}{U - V_P}$ ja $R_\text{k} = \dfrac{R_\text{p} R_2}{R_2 - R_\text{p}}$ (rinnankytkennän kaavasta ratkaistuna).
+**Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
+**Sijoitus:** a) Ilman kuormaa $V_P = \dfrac{100\,\Omega}{200\,\Omega} \cdot 12\,\text{V} = 6{,}00\,\text{V}$. b) Kuormalla $100\,\Omega$ on $R_\text{p} = 50\,\Omega$ ja $V_P = \dfrac{50\,\Omega}{150\,\Omega} \cdot 12\,\text{V} = 4{,}0\,\text{V}$, mikä vastaa taulukon arvoa $4{,}01\,\text{V}$ alle $0{,}01\,\text{V}$:n poikkeamalla. c) $R_\text{p} = \dfrac{100\,\Omega \cdot 5{,}0\,\text{V}}{12\,\text{V} - 5{,}0\,\text{V}} = 71{,}4\,\Omega$ ja $R_\text{k} = \dfrac{71{,}4\,\Omega \cdot 100\,\Omega}{100\,\Omega - 71{,}4\,\Omega} = 250\,\Omega$.
+**Vastaus:** $250\,\Omega$, kahden merkitsevän numeron tarkkuudella. Pienempi kuorma laskisi potentiaalin alle $5{,}0\,\text{V}$ (kuormalla $100\,\Omega$ se on $4{,}0\,\text{V}$) ja suurempi kuorma nostaisi sen lähemmäs arvoa $6{,}0\,\text{V}$.
+**Järkevyys:** Kun $R_\text{k} = 250\,\Omega$, vastuksen $R_1$ virta on $12\,\text{V} : (100\,\Omega + 71{,}4\,\Omega) = 0{,}070\,\text{A}$ ja jännite $100\,\Omega \cdot 0{,}070\,\text{A} = 7{,}0\,\text{V}$, joten $V_P = 12\,\text{V} - 7{,}0\,\text{V} = 5{,}0\,\text{V}$. Virrat haaroissa ovat $5{,}0\,\text{V} : 100\,\Omega = 0{,}050\,\text{A}$ ja $5{,}0\,\text{V} : 250\,\Omega = 0{,}020\,\text{A}$, yhteensä $0{,}070\,\text{A}$ kuten virtalaki vaatii. Arvo $250\,\Omega$ sijoittuu taulukon rivien $1000\,\Omega$ ($5{,}72\,\text{V}$) ja $100\,\Omega$ ($4{,}01\,\text{V}$) väliin, kuten $5{,}0\,\text{V}$.

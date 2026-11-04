@@ -40,6 +40,58 @@
       "answer": 5.0,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-06",
+      "level": 1,
+      "text": "Kaksi vastusta, joiden resistanssit ovat eri suuret, on kytketty sarjaan jännitelähteeseen. Kummassa vastuksessa sähköenergiaa muuttuu enemmän sisäenergiaksi?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Suuremman resistanssin vastuksessa, koska virta on sama ja teho on $P = RI^2$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Suuremman resistanssin vastuksessa, koska virta on sama ja teho on $P = RI^2$.",
+          "feedback": "Oikein: sarjaankytkennässä molempien läpi kulkee sama virta, joten Joulen lain muodossa $P = RI^2$ teho kasvaa resistanssin mukana. Suuremman resistanssin vastus saa myös suuremman osan lähteen jännitteestä.",
+          "correct": true
+        },
+        {
+          "text": "Pienemmän resistanssin vastuksessa, koska siinä on suurempi virta ja teho on $P = RI^2$.",
+          "feedback": "Sarjaankytkennässä virta ei jakaudu: kaikki komponentit muodostavat yhden silmukan, ja sama virta kulkee molempien läpi. Suurempi virta on rinnankytkennän pienemmässä resistanssissa, ei sarjassa."
+        },
+        {
+          "text": "Pienemmän resistanssin vastuksessa, koska jännite on sama ja teho on $P = U^2 : R$.",
+          "feedback": "Sama jännite on vastusten yli vain rinnankytkennässä. Sarjaankytkennässä lähteen jännite jakautuu vastusten kesken, ja suuremman resistanssin yli on suurempi osa, joten kaava $U^2 : R$ ei anna tässä samaa $U$:ta kummallekin."
+        },
+        {
+          "text": "Molemmissa yhtä paljon, koska virta on sama ja kummankin teho on $P = UI$.",
+          "feedback": "Virta on sama, mutta vastusten jännitteet ovat eri suuret, koska suuremman resistanssin yli on suurempi jännite ($U = RI$). Teho $P = UI$ on siis suurempi sillä vastuksella, jonka yli on suurempi jännite."
+        }
+      ]
+    },
+    {
+      "id": "fy6-6-L1-07",
+      "level": 1,
+      "text": "Hiilikalvovastuksen resistanssi on $220\\,\\Omega$ ja sen suurin sallittu teho $0{,}25\\,\\text{W}$. Kuinka suuri virta vastuksen läpi saa enintään kulkea? Vastaa milliampeereina.",
+      "kind": [
+        "model"
+      ],
+      "answer": 33.7,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L1-08",
+      "level": 1,
+      "text": "Vastuksen yli on jännite $2{,}0\\,\\text{V}$, ja vastuksessa muuttuu sisäenergiaksi teho $0{,}80\\,\\text{W}$. Jännite nostetaan kolminkertaiseksi, arvoon $6{,}0\\,\\text{V}$, ja vastuksen resistanssi pysyy samana. Kuinka suuri teho vastuksessa on nyt?",
+      "kind": [
+        "model"
+      ],
+      "answer": 7.2,
+      "unit": "W",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,136 @@
       "answer": 17.9,
       "unit": "K",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L2-05",
+      "level": 2,
+      "text": "Vastus oli ilmassa, jonka lämpötila oli $22{,}0\\,{}^\\circ\\text{C}$. Vastukseen kytkettiin eri jännitteitä, ja kullakin jännitteellä odotettiin, kunnes vastuksen pinnan lämpötila $T$ ei enää muuttunut. Taulukossa on jännite $U$, virta $I$ ja vakiintunut lämpötila $T$.\n\na) Laske teho $P = UI$ jokaiselle mittaukselle ja piirrä kuvaaja, jossa lämpötilan nousu $\\Delta T = T - 22{,}0\\,{}^\\circ\\text{C}$ on tehon $P$ funktio. Sovita pisteisiin suora.\n\nb) Kuinka monta kelviniä vastuksen pinta lämpenee yhtä wattia kohti?\n\nc) Selitä, miksi lämpötila vakiintuu eikä nouse loputtomiin.\n\nVastaa laatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 12.1,
+      "unit": "K/W",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Vastuksen lämpeneminen (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{A})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "3.0",
+            "0.064",
+            "24.4"
+          ],
+          [
+            "6.0",
+            "0.127",
+            "31.0"
+          ],
+          [
+            "9.0",
+            "0.192",
+            "42.6"
+          ],
+          [
+            "12.0",
+            "0.254",
+            "58.9"
+          ],
+          [
+            "15.0",
+            "0.320",
+            "80.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-6-L2-06",
+      "level": 2,
+      "text": "Taulukossa on pienen hehkulampun jännite $U$ ja virta $I$ mitattuna eri jännitteillä.\n\na) Laske lampun teho $P = UI$ jokaiselle mittaukselle.\n\nb) Kuinka monta prosenttia lampun teho kasvaa, kun jännite kasvaa arvosta $3{,}0\\,\\text{V}$ arvoon $6{,}0\\,\\text{V}$?\n\nc) Jos lampun resistanssi pysyisi vakiona, teho kasvaisi tässä $300\\,\\%$. Selitä, miksi teho kasvaa vähemmän.\n\nVastaa laatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 172,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Hehkulampun virta jännitteen funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "0.5",
+            "0.098"
+          ],
+          [
+            "1.0",
+            "0.150"
+          ],
+          [
+            "2.0",
+            "0.212"
+          ],
+          [
+            "3.0",
+            "0.254"
+          ],
+          [
+            "4.0",
+            "0.287"
+          ],
+          [
+            "5.0",
+            "0.318"
+          ],
+          [
+            "6.0",
+            "0.346"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-6-L2-07",
+      "level": 2,
+      "text": "Oppilas kytki kaksi erilaista hehkulamppua A ja B sarjaan ja mittasi virran sekä kummankin lampun jännitteen. Lamppu A loisti kirkkaammin kuin lamppu B. Oppilas päätteli: \"Kirkkaampi lamppu A kuluttaa vähemmän virtaa kuin lamppu B, joten sen teho on pienempi.\"\n\na) Mikä oppilaan päättelyssä on virheellistä? Perustele taulukon mittaustuloksilla.\n\nb) Kuinka monta wattia suurempi on lampun A teho kuin lampun B teho?\n\nVastaa laatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "error",
+        "reasoning"
+      ],
+      "answer": 3.0,
+      "unit": "W",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Sarjaan kytketyt lamput (esimerkkiaineisto)",
+        "columns": [
+          "Lamppu",
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "9.0",
+            "0.50"
+          ],
+          [
+            "B",
+            "3.0",
+            "0.50"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +282,73 @@
       "answer": 12.0,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-6-L3-04",
+      "level": 3,
+      "text": "Paahtimessa on kaksi lämmitysvastusta, $R_1$ ja $R_2$. Niiden tehoa mitattiin $230\\,\\text{V}$:n verkkojännitteellä kolmessa eri kytkennässä. Vastusten resistanssien oletetaan pysyvän vakioina. Valmistaja sallii vastukselle $R_1$ enintään $1{,}4\\,\\text{kW}$:n ja vastukselle $R_2$ enintään $0{,}75\\,\\text{kW}$:n tehon.\n\na) Laske vastusten resistanssit $R_1$ ja $R_2$.\n\nb) Paahtimessa vastukset ovat rinnan. Verkkojännite nousee $10\\,\\%$ eli arvoon $253\\,\\text{V}$. Päättele laskemalla, kumpi vastus ylittää sallitun tehonsa.\n\nc) Selitä, miksi ylikuormittuu juuri tämä vastus, vaikka toisessa vastuksessa muuttuu enemmän energiaa.\n\nVastaa laatikkoon kohdan b) ylikuormittuvan vastuksen teho jännitteellä $253\\,\\text{V}$.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 822.1,
+      "unit": "W",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Paahtimen vastusten teho $230\\,\\text{V}$:n jännitteellä (esimerkkiaineisto)",
+        "columns": [
+          "Kytkentä",
+          "$P\\,(\\text{W})$"
+        ],
+        "rows": [
+          [
+            "Vain $R_1$",
+            "1100"
+          ],
+          [
+            "$R_1$ ja $R_2$ sarjassa",
+            "420"
+          ],
+          [
+            "$R_1$ ja $R_2$ rinnan",
+            "1780"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-6-L3-05",
+      "level": 3,
+      "text": "Remontissa $2{,}0\\,\\text{kW}$:n ja $230\\,\\text{V}$:n lämmitin kytketään pistorasiaan $50\\,\\text{m}$:n jatkojohdolla, joka on kokonaan rullalla. Taulukossa on kahden johtotyypin johtimien yhteenlaskettu resistanssi (menojohdin ja paluujohdin). Lämmitin ja jatkojohto ovat sarjassa, pistorasian jännite on $230\\,\\text{V}$ ja lämmittimen resistanssi on sama kuin nimellisarvoilla.\n\na) Laske lämmittimen resistanssi sekä virta, kun käytössä on ohut johto.\n\nb) Kuinka suuri teho muuttuu sisäenergiaksi ohuessa johdossa? Laske sama paksulle johdolle.\n\nc) Selitä, miksi ohut rullattu johto lämpenee paljon enemmän kuin paksu, vaikka lämmittimen läpi kulkeva virta on kummallakin johdolla lähes sama.\n\nVastaa laatikkoon kohdan b) ohuen johdon teho.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 152.5,
+      "unit": "W",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Jatkojohdon johtimien resistanssi (esimerkkiaineisto)",
+        "columns": [
+          "Johto",
+          "$A\\,(\\text{mm}^2)$",
+          "$R\\,(\\Omega)$"
+        ],
+        "rows": [
+          [
+            "Ohut",
+            "0.75",
+            "2.4"
+          ],
+          [
+            "Paksu",
+            "2.5",
+            "0.71"
+          ]
+        ]
+      }
     }
   ]
 }

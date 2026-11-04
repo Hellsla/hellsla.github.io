@@ -28,4 +28,21 @@ I_lights = 9.2 / 230                                      # light string: 20 equ
 a["fy6-6-L3-02"] = (230 / 20) / I_lights                  # each lamp 230 V : 20 = 11,5 V, R = 11,5 V : 0,040 A = 287,5 ohm
 P1 = 12 ** 2 / 6.0                                        # parallel on 12 V: 6,0 ohm takes U^2/R = 24 W
 a["fy6-6-L3-03"] = 12 ** 2 / (36 - P1)                    # the other takes 36 W - 24 W = 12 W, so R2 = U^2 / P2 = 12 ohm
+# Level 1 additions
+a["fy6-6-L1-07"] = (0.25 / 220) ** 0.5 * 1000             # 220 ohm, 0,25 W: I = sqrt(P / R) = 0,03371 A = 33,7 mA
+R_18 = 2.0 ** 2 / 0.80                                    # R = U1^2 / P1 = 4,0 V^2 : 0,80 W = 5,0 ohm
+a["fy6-6-L1-08"] = 6.0 ** 2 / R_18                        # P2 = U2^2 / R = 36 V^2 : 5,0 ohm = 7,2 W
+# Level 2 additions
+T_k = [24.4, 31.0, 42.6, 58.9, 80.2]                      # surface temperature, ambient 22,0 degC (example data)
+P_k = [3.0 * 0.064, 6.0 * 0.127, 9.0 * 0.192, 12.0 * 0.254, 15.0 * 0.320]   # P = U I per row
+a["fy6-6-L2-05"] = sum(p * (t - 22.0) for p, t in zip(P_k, T_k)) / sum(p * p for p in P_k)   # least-squares slope through origin 12,1 K/W
+a["fy6-6-L2-06"] = (6.0 * 0.346 / (3.0 * 0.254) - 1) * 100   # bulb: P(6,0 V) = 2,076 W, P(3,0 V) = 0,762 W -> +172 %
+a["fy6-6-L2-07"] = (9.0 - 3.0) * 0.50                     # series lamps, same I: P_A - P_B = (9,0 V - 3,0 V) 0,50 A = 3,0 W
+# Level 3 additions
+R1_t = 230 ** 2 / 1100                                    # toaster element 1 alone: 48,09 ohm
+R2_t = 230 ** 2 / 420 - R1_t                              # series 420 W: R1 + R2 = 125,95 ohm -> R2 = 77,86 ohm
+a["fy6-6-L3-04"] = 253 ** 2 / R2_t                        # at 253 V: R2 takes 822 W > 750 W (R1: 1331 W < 1400 W)
+R_heater = 230 ** 2 / 2000                                # 2,0 kW heater at 230 V: 26,45 ohm
+I_thin = 230 / (R_heater + 2.4)                           # thin cord in series: 7,97 A
+a["fy6-6-L3-05"] = 2.4 * I_thin ** 2                      # thin cord P = R I^2 = 152,5 W (thick: 0,71 ohm, 8,47 A -> 50,9 W)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
