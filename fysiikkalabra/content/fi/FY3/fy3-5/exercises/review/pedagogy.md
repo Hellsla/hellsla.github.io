@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 37e15a3d153f0c4c
-
-Delta review over the audit's PASS (a3a64a7608c7dd0a): L2-01 replaced by a compression task with a rising piston-force graph (figure fy3-5/piston-force).
+CONTENT-HASH: 196fd38f148cdfeb
+Round: 2
 
 ## Blocking
 - none
+
 ## Polish
-- Task wording 'negatiivinen $Q$ tarkoittaa, että lämpöä siirtyy ilmasta pois' explains the sign; acceptable at L2, but it nudges the sign. Optional: drop the explanation and keep 'etumerkkeineen'.
-- Documented range -14,5...-15,5 is a little wider than tolerance 0,03 (-14,55...-15,45).
-- Figure at 360 px: end points at (0; 200 N) and (0,20 m; 400 N), y labels only on 100s (200, 400 labelled), x labels 0,05 steps; readable; faint grid.
+- fy3-5-L2-07: the question has a non-numeric second demand (the explanation) that the answer field does not test; fine (carried over).
+- fy3-5-L3-05 c): "keittimen seinän kautta ympäröivään ilmaan ja pöytään" is now consistent with the added assumption that kettle and element heating is negligible; the "häviö kasvaa" argument is cumulative and correct. No further change needed.
+
 ## Checked
-- Figure needed: the text gives only $\Delta U=45$ J; force varies from 200 to 400 N, so $W=Fs$ with one value cannot be used; $W=\tfrac{200+400}{2}\cdot0{,}20=60$ J, $Q=45-60=-15$ J verified.
-- L2 fit (area of a trapezoid + first law + sign); not a repeat of check-2 (given joules).
-- Kuvaajan lukeminen present, stages complete.
+- Round 1 had no Blocking items; Polish applied: L1-06 wording ("ovat täynnä vettä ... kummassakin 60 °C"), L1-06 and the insulated-vessel MC option order and lengths balanced, correct options no longer the longest; the insulated-vessel MC states that the vessel's own warming is ignored; L2-05 solution says "ΔU on tilan funktio, joten kierrossa sen muutos on nolla"; L2-06 answer given to two significant figures with a reason; L3-05 states the negligible-element assumption and the loss share is corrected to 14,5 % (34,8/239,9) and "selvästi mitattava osa" (previously "pieni", which contradicted 15 %).
+- Recomputed: 36 kJ, -90 J, 20 J, 50,4 J, 18,72 J, Q = -14,0 J, 34,8 kJ (205,1 + 34,8 = 239,9), P = 2,00 kW; all match answers and tolerances. The removed "ideaalikaasu" phrase in L2-05 is harmless: the solution still derives ΔU = 0 from the state function.
+- Counts 8/7/5; complete solutions; no duplicates; levels fit; L3-04/05 YO-style.

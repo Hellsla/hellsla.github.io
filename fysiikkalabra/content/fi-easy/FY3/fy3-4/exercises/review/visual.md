@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 886edcbca490ef61
+CONTENT-HASH: a19ec762a6ed1b05
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-01 solution Kaava — the display fraction with p_max subscripts is cramped ("m g / p_max" on its own row); give the fraction a little more space.
-- [Minor] L1-03 — "koska on matalapaine" is slightly terse; "koska ilmanpaine on matala" reads more naturally.
+(none)
 
 ## Checked
-- open-exercises-1280-3, open-exercises-L2-1280-2, L2-1280-3 (graph fy3-4/two-liquids: lines A and B distinct by colour and labels, units on both axes, points marked), open-exercises-L3-1280-1.
-- Solutions inside cards, answer boxes with units, maths readable, no clipping.
+- Captures fy3-4-open-exercises-L2-1280-10 and L3-1280-8 (fi-easy): solution blocks for L2-07 and L3-05 render cleanly, display maths unbroken, units set as maths, decimal comma consistent, no Finnish leftover in the layout.
+- Table headers/labels short enough for the column widths; no text overflow in the translated strings.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

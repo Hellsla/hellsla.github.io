@@ -39,6 +39,74 @@
       "answer": -70,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L1-06",
+      "level": 1,
+      "text": "A coffee cup and a big pot are both full of water, and the temperature of the water in both is $60\\,{}^\\circ\\text{C}$. The pot holds ten times as much water as the cup. Which statement about the internal energy of the waters is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The pot has the greater internal energy, because at the same temperature there are more particles.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The cup has the greater internal energy, because a small amount of water heats up faster than a large one.",
+          "feedback": "Internal energy does not depend on how fast the water has heated up, but on how many particles there are and how vigorously they move. The cup has fewer particles, so its internal energy is smaller."
+        },
+        {
+          "text": "Both have the same internal energy, because the temperature of the water is the same in both.",
+          "feedback": "Temperature and internal energy are not the same thing. Temperature does not depend on the amount of substance, but internal energy does: the pot has more particles, so its internal energy is greater."
+        },
+        {
+          "text": "The pot has the greater internal energy, because at the same temperature there are more particles.",
+          "feedback": "Correct: internal energy is the sum of the kinetic energy of the particles and the energy of their interactions, so it also depends on the amount of substance. At the same temperature the pot has more particles, and that is why its internal energy is greater.",
+          "correct": true
+        },
+        {
+          "text": "The pot has more heat, because heat is stored in water in proportion to the amount of water.",
+          "feedback": "A body does not contain heat: heat is the transfer of energy because of a temperature difference. The energy stored in water is internal energy, and the internal energy of the pot is greater because it has more particles."
+        }
+      ]
+    },
+    {
+      "id": "fy3-5-L1-07",
+      "level": 1,
+      "text": "Hot and cold water are poured into an insulated container, and the water is stirred. No energy is transferred out of the container, the work done by the stirring is negligible, and the warming of the container itself can be ignored. Which statement about energy is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The internal energy of the hot water decreases by as much as that of the cold water increases, so energy is conserved.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The hot water gives off heat, but part of it is lost in the stirring, and the total energy decreases.",
+          "feedback": "Energy is not lost anywhere. In an insulated system the total energy is conserved, so all the energy given off by the hot water is transferred to the cold water."
+        },
+        {
+          "text": "The internal energy of each water stays the same, and only the temperatures even out with each other.",
+          "feedback": "A change in temperature means a change in internal energy: the particles of the hot water slow down and those of the cold water speed up. So the internal energy cannot stay the same in both."
+        },
+        {
+          "text": "The cold water gains more energy than the hot water gives off, because there is room in cold water.",
+          "feedback": "The cold water cannot gain more energy than the hot water gives off, because energy is not created from nothing. In an insulated system energy is conserved, so the energy gained and the energy given off are equal."
+        },
+        {
+          "text": "The internal energy of the hot water decreases by as much as that of the cold water increases, so energy is conserved.",
+          "feedback": "Correct: heat is transferred from the hot water to the cold until the temperatures are the same. In an insulated system energy is conserved, so the energy given off by the hot water is exactly the energy gained by the cold water.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy3-5-L1-08",
+      "level": 1,
+      "text": "An immersion heater transfers heat to the water in a bucket at a steady power of $0.80\\,\\text{kW}$ for $45\\,\\text{s}$. The bucket is well insulated, so no heat escapes to the surroundings, and no work is done on the water. By how much does the internal energy of the water increase? Give the answer in kilojoules.",
+      "answer": 36,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,13 +142,107 @@
       "answer": 40,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L2-05",
+      "level": 2,
+      "text": "A gas in a closed cylinder goes through a cycle of four steps and returns after the fourth step exactly to its initial state: the amount of gas, the temperature and the other state variables are the same as at the start. The table gives, as sample data, the quantity of heat $Q$ transferred to the gas and the work $W$ done on the gas in each step; the work in step 4 is not known. How large is the work $W$ in step 4? Give the answer with its sign: a negative $W$ means that the gas does work on the surroundings.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": -90,
+      "unit": "J",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Heat and work of the gas in the steps of the cycle (sample data)",
+        "columns": [
+          "Step",
+          "$Q\\,(\\text{J})$",
+          "$W\\,(\\text{J})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "600",
+            "-250"
+          ],
+          [
+            "2",
+            "-150",
+            "0"
+          ],
+          [
+            "3",
+            "-320",
+            "210"
+          ],
+          [
+            "4",
+            "0",
+            "?"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-5-L2-06",
+      "level": 2,
+      "text": "A student solved a problem and got the result $\\Delta U = 40\\,\\text{J}$. The problem: the air in the cylinder of a bicycle pump is compressed, so that the piston does $30\\,\\text{J}$ of work on the air, and at the same time a quantity of heat of $10\\,\\text{J}$ is transferred from the air through the walls of the cylinder to the surroundings. The student's solution: “Work is done on the air, so $W = +30\\,\\text{J}$. The quantity of heat is $10\\,\\text{J}$, so $Q = 10\\,\\text{J}$. So $\\Delta U = Q + W = 10\\,\\text{J} + 30\\,\\text{J} = 40\\,\\text{J}$.”\n\na) What is the error in the student's solution?\n\nb) Calculate the change in the internal energy of the air correctly.\n\nThe answer box takes the result of part b) with its sign.",
+      "kind": [
+        "error"
+      ],
+      "answer": 20,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L2-07",
+      "level": 2,
+      "text": "Students pull a wooden block along a table at a steady speed with a force meter. The block and the table form the system. The table gives, as sample data, the pulling force $F$ in five pulls; in each pull the block moves a distance of $0.600\\,\\text{m}$. The work done by the pulling force is changed into internal energy by friction. Assume that no heat is transferred to the surroundings, and use the mean of the measurements as the pulling force. By how much does the internal energy of the system increase during 20 pulls? Justify briefly why the real increase is probably slightly smaller than the calculated one.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 50.4,
+      "unit": "J",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Pulling force on the block in five pulls (sample data)",
+        "columns": [
+          "Pull",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "4.1"
+          ],
+          [
+            "2",
+            "4.3"
+          ],
+          [
+            "3",
+            "4.2"
+          ],
+          [
+            "4",
+            "4.0"
+          ],
+          [
+            "5",
+            "4.4"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
     {
       "id": "fy3-5-L3-01",
       "level": 3,
-      "text": "The nozzle of a bicycle pump is blocked with a finger, so no air can escape. The piston is pushed very slowly, and it pushes the air a distance of $0.15\\,\\text{m}$ with an average force of 120 N. The temperature of the air in the pump stays at room temperature throughout, and the air can be treated as an ideal gas. How large a quantity of heat $Q$ is transferred into the air? Give the answer with its sign and justify why the internal energy of the air does not change.",
+      "text": "The nozzle of a bicycle pump is blocked with a finger, so no air can escape. The piston is pushed very slowly, and it pushes the air a distance of $0.15\\,\\text{m}$ with an average force of $120\\,\\text{N}$. The temperature of the air in the pump stays at room temperature throughout, and the air can be treated as an ideal gas. How large a quantity of heat $Q$ is transferred into the air? Give the answer with its sign and justify why the internal energy of the air does not change.",
       "answer": -18,
       "unit": "J",
       "tolerance": 0.02
@@ -100,6 +262,100 @@
       "answer": 310,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-5-L3-04",
+      "level": 3,
+      "text": "The piston in the cylinder of a bicycle pump is pushed quickly a distance of $0.20\\,\\text{m}$, and the air in the pump is compressed. The table gives, as sample data, the force $F$ of the piston on the air as a function of the distance $s$ moved by the piston; the force grows because the compressed air resists more and more. In a quick compression there is no time for heat to be transferred to the surroundings, so $Q = 0$.\n\na) Calculate the work $W$ done by the piston on the air with the trapezoid rule: the intervals are of equal length, and the work is the area under the graph of force against distance.\n\nb) By how much does the internal energy of the air increase in the quick compression?\n\nc) The same piston is now compressed slowly to the same final position so that the temperature of the air stays at room temperature; the air can be treated as an ideal gas. In the slow compression the piston does $14.0\\,\\text{J}$ of work on the air. How large a quantity of heat $Q$ is transferred to the air, and why does the temperature of the air rise only in the quick compression?\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 18.7,
+      "unit": "J",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Force of the pump piston as a function of distance (sample data)",
+        "columns": [
+          "$s\\,(\\text{m})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "50"
+          ],
+          [
+            "0.04",
+            "62"
+          ],
+          [
+            "0.08",
+            "78"
+          ],
+          [
+            "0.12",
+            "98"
+          ],
+          [
+            "0.16",
+            "125"
+          ],
+          [
+            "0.20",
+            "160"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-5-L3-05",
+      "level": 3,
+      "text": "The electrical energy $E_\\text{v}$ going to the heating element of a kettle is measured with an energy meter, and the increase $\\Delta U$ in the internal energy of the water has been calculated from the rise in temperature. The table gives, as sample data, the measurements at different moments; the heating element transfers energy to the water as heat, and the water is not stirred and no work is done on it. Assume that the warming of the heating element and of the body of the kettle themselves is negligible. According to the data, energy does not seem to be conserved.\n\na) Calculate the mean power $P$ of the heating element over the whole measurement.\n\nb) Calculate how large a quantity of heat $Q_\\text{out}$ has been transferred from the water to the surroundings at the moment $120\\,\\text{s}$, and what percentage of the energy of the heating element it is.\n\nc) Using conservation of energy, explain where the “missing” energy has gone and why the first law $\\Delta U = Q + W$ still holds in the data. Justify with the table that the accumulated loss grows with time.\n\nThe answer box takes the quantity of heat $Q_\\text{out}$ of part b) in kilojoules.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 34.8,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Energy of the kettle's heating element and increase in the internal energy of the water (sample data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$E_\\text{v}\\,(\\text{kJ})$",
+          "$\\Delta U\\,(\\text{kJ})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0.0",
+            "0.0"
+          ],
+          [
+            "30",
+            "60.1",
+            "52.0"
+          ],
+          [
+            "60",
+            "119.8",
+            "103.5"
+          ],
+          [
+            "90",
+            "180.3",
+            "154.2"
+          ],
+          [
+            "120",
+            "239.9",
+            "205.1"
+          ]
+        ]
+      }
     }
   ]
 }

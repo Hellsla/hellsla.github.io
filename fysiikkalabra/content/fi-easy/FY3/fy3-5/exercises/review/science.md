@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9412f7bf229627a3
+CONTENT-HASH: ec256559ecba9230
 
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- (none needed; text already in short Selkeä suomi sentences, steps, hints and feedback intact)
+(none)
 
 ## Polish
-- fi-easy L1-05 Järkevyys repeats 'Siksi' twice in a row
+- none
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared exercises.json and solutions.md with content/fi/FY3/fy3-5. Physics, signs (Q, W, dU), numbers, units and chapter titles match the Finnish; button names match the sim labels. Figure texts each translate their own key.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked exercises.json, solutions.md (incl. the graph task and its figure text) against the new Finnish.
+- Translation review against the reviewed Finnish (fi-easy): compared exercises.json (all 8 new tasks L1-06..08, L2-05..07, L3-04..05) and solutions.md with content/fi/FY3/fy3-5 by script: ids, answers, units, tolerances, correct flags, data table cells, choices and every number are equal (decimal point/comma only).
+- Physics, signs (Q, W, dU), the first law, the cycle argument (L2-05), trapezoid rule (L3-04, 468 N sum, 18.7 J) and the kettle loss (L3-05, 34.8 kJ, 14.5 %) match the Finnish; formula lines identical.
+- Choice feedback explains each wrong option (temperature vs internal energy, heat is not stored, energy conserved) as in the Finnish.
+- check_i18n.py fi-easy: 0 errors.

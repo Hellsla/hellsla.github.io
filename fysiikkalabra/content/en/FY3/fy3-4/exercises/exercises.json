@@ -39,6 +39,75 @@
       "answer": 4400,
       "unit": "Pa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L1-06",
+      "level": 1,
+      "text": "A nail goes into wood point first when it is pressed with a thumb, but not head first. The force of the thumb is equally large in both cases. What explains the difference?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The area of the point is small, so the same force causes a greater pressure at the point.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The force on the point is greater than on the head, because the nail amplifies the force of the thumb.",
+          "feedback": "Wrong: the nail is in equilibrium, so the force at the point is as large as the force of the thumb. The nail does not amplify the force; the small area of its point increases the pressure."
+        },
+        {
+          "text": "The area of the head is large, so the pressure on the head is greater than on the point.",
+          "feedback": "Wrong: a large area reduces the pressure. With the same force the pressure is greater where the area is smaller, that is, at the point."
+        },
+        {
+          "text": "The pressure is equally large at the point and at the head, so the difference is caused only by the weight of the nail itself.",
+          "feedback": "Wrong: the pressure is not the same, because the areas are different. The weight of the nail itself is negligible compared with the force of the thumb."
+        },
+        {
+          "text": "The area of the point is small, so the same force causes a greater pressure at the point.",
+          "correct": true,
+          "feedback": "Correct: pressure is force divided by area, $p = F/A$. When the force is the same and the area of the point is small, the pressure at the point is large."
+        }
+      ]
+    },
+    {
+      "id": "fy3-4-L1-07",
+      "level": 1,
+      "text": "The water of the Baltic Sea is brackish water with a density of $1005\\,\\text{kg/m}^3$. How large is the hydrostatic pressure in the water of the Baltic Sea at a depth of $40\\,\\text{m}$? Give the answer in kilopascals.",
+      "answer": 390,
+      "unit": "kPa",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L1-08",
+      "level": 1,
+      "text": "A student claims: “In a lake, the total pressure at a depth of $10\\,\\text{m}$ is twice as large as at a depth of $5\\,\\text{m}$, because the depth is twice as great.” What is the error in the reasoning?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Only the share of the water doubles, because the atmospheric pressure is the same at both depths.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Only the share of the water doubles, because the atmospheric pressure is the same at both depths.",
+          "correct": true,
+          "feedback": "Correct: the total pressure is $p = p_0 + \\rho g h$, and only the part $\\rho g h$ is directly proportional to the depth. The constant term $p_0$ does not double."
+        },
+        {
+          "text": "The pressure does not depend on depth, because the pressure of a liquid is determined only by its density and the atmospheric pressure.",
+          "feedback": "Wrong: the pressure grows with depth, because deeper down there is more water above. The hydrostatic pressure is $\\rho g h$."
+        },
+        {
+          "text": "Deeper down the water is lighter, so the pressure grows more slowly than the depth.",
+          "feedback": "Wrong: water is practically incompressible and its density is the same at every depth, so the hydrostatic pressure grows in direct proportion to the depth."
+        },
+        {
+          "text": "The pressure grows with the square of the depth, so it is more than double at double the depth.",
+          "feedback": "Wrong: the hydrostatic pressure grows in direct proportion to the depth, not with its square. The graph $(h, p)$ is a straight line."
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +143,125 @@
       "answer": 3.2,
       "unit": "kN",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "Example data: a diver measured the pressure in a lake with a pressure gauge at different depths. The slope of the line fitted to the points is, calculated with a computer, $9.78\\,\\tfrac{\\text{kPa}}{\\text{m}}$, and the line passes through the mean point $(h_{\\text{mean}}, p_{\\text{mean}})$ of the points. The uncertainty of the gauge reading is $\\pm 0.5\\,\\text{kPa}$.\n\na) Calculate the density $\\rho$ of the water from the slope.\n\nb) Calculate the mean point from the table and use it to find the constant term of the line, that is, the atmospheric pressure $p_0$ at the surface.\n\nThe answer field takes the atmospheric pressure of part b) in kilopascals.",
+      "answer": 99.7,
+      "unit": "kPa",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Pressure in a lake as a function of depth (example data)",
+        "columns": [
+          "$h\\,(\\text{m})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "99.6"
+          ],
+          [
+            "2.0",
+            "119.5"
+          ],
+          [
+            "4.0",
+            "138.6"
+          ],
+          [
+            "6.0",
+            "158.7"
+          ],
+          [
+            "8.0",
+            "178.1"
+          ],
+          [
+            "10.0",
+            "197.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-4-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Example data: four glass vessels of different shapes were filled with water to a height of $0.300\\,\\text{m}$, and the gauge pressure was measured with a pressure gauge at the bottom of each vessel. The uncertainty of the gauge reading is $\\pm 0.1\\,\\text{kPa}$. The density of water is $1000\\,\\text{kg/m}^3$.\n\na) Calculate the hydrostatic pressure at a depth of $0.300\\,\\text{m}$ and check whether the result agrees with the measurements in the table.\n\nb) Explain why the pressure at the bottom is almost the same in all the vessels although the amount of water is different.\n\nThe answer field takes the result of part a) in kilopascals.",
+      "answer": 2.94,
+      "unit": "kPa",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Gauge pressure at the bottom of different vessels (example data)",
+        "columns": [
+          "Vessel",
+          "$V\\,(\\text{l})$",
+          "$\\Delta p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "straight",
+            "1.5",
+            "2.9"
+          ],
+          [
+            "widening downwards",
+            "2.4",
+            "3.0"
+          ],
+          [
+            "widening upwards",
+            "0.8",
+            "3.0"
+          ],
+          [
+            "bottle",
+            "1.2",
+            "2.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-4-L2-07",
+      "level": 2,
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "text": "Example data: one arm of a U-tube manometer is open to the atmosphere and the other is connected to a closed gas tank. The tube contains water with a density of $1000\\,\\text{kg/m}^3$. The difference in height between the liquid surfaces was read three times; the water surface on the gas side was lower than the surface in the open arm. Atmospheric pressure is $101\\,\\text{kPa}$.\n\na) Calculate the mean $\\Delta h_{\\text{mean}}$ of the height difference.\n\nb) Calculate the gauge pressure of the gas relative to atmospheric pressure.\n\nc) Calculate the total pressure of the gas and explain why the surface on the gas side is lower.\n\nThe answer field takes the result of part b) in kilopascals.",
+      "answer": 1.42,
+      "unit": "kPa",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Height difference between the liquid surfaces (example data)",
+        "columns": [
+          "Measurement",
+          "$\\Delta h\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "14.2"
+          ],
+          [
+            "2",
+            "14.8"
+          ],
+          [
+            "3",
+            "14.5"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +288,91 @@
       "answer": 19,
       "unit": "kPa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-4-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "text": "Example data: in summer a lake has temperature layers, and the density of the water depends on the temperature. A group installed a pressure gauge in the lake at a depth of $20.0\\,\\text{m}$. The table shows the layers of water from the surface downwards. The uncertainty of the gauge reading is $\\pm 0.5\\,\\text{kPa}$. Atmospheric pressure is ignored and $g = 9.81\\,\\text{m/s}^2$.\n\na) Calculate the hydrostatic pressure at the gauge, taking the own density of each layer into account.\n\nb) Calculate the same pressure by assuming that the density of the whole water column is $1000\\,\\text{kg/m}^3$, and calculate how much greater this result is than the result of part a).\n\nc) Is the difference visible in the reading of the gauge? Also calculate how large an error there would be in the depth if the gauge pressure were converted to depth using the density $1000\\,\\text{kg/m}^3$, and compare the result with the depth corresponding to the uncertainty.\n\nThe answer field takes the difference of part b) in kilopascals.",
+      "answer": 0.12,
+      "unit": "kPa",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Water layers of a lake (example data)",
+        "columns": [
+          "Layer",
+          "$d\\,(\\text{m})$",
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$\\rho\\,(\\tfrac{\\text{kg}}{\\text{m}^3})$"
+        ],
+        "rows": [
+          [
+            "surface",
+            "5.0",
+            "20",
+            "998.2"
+          ],
+          [
+            "middle",
+            "10.0",
+            "10",
+            "999.7"
+          ],
+          [
+            "bottom",
+            "5.0",
+            "4",
+            "1000.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-4-L3-05",
+      "level": 3,
+      "kind": [
+        "model",
+        "data",
+        "reasoning"
+      ],
+      "text": "Example data: a vertical concrete wall of a dam holds back water to a depth of $20.0\\,\\text{m}$. Consider a strip of the wall one metre wide, divided into four parts of equal height; the area of a part is its height times its width. Atmospheric pressure acts on the wall on both sides, so it is ignored. The pressure grows linearly with depth, so the force on a part is calculated as the mean of the pressures at the top and bottom edges of the part multiplied by the area of the part. The density of water is $1000\\,\\text{kg/m}^3$ and $g = 9.81\\,\\text{m/s}^2$.\n\na) Calculate the pressure of the water at the top and bottom edge of each part.\n\nb) Calculate the force of the water on the top part and on the bottom part.\n\nc) Calculate the sum of the forces on all the parts and check it by calculating the force on the whole strip with the mean of the pressures at the top and bottom edges of the whole wall.\n\nd) Using the ratio of the forces, explain why the wall of a dam is made thicker at the bottom than at the top.\n\nThe answer field takes the force on the bottom part from part b) in kilonewtons.",
+      "answer": 858,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Parts of a strip of the wall (example data)",
+        "columns": [
+          "Part",
+          "$h_1\\,(\\text{m})$",
+          "$h_2\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.0",
+            "5.0"
+          ],
+          [
+            "2",
+            "5.0",
+            "10.0"
+          ],
+          [
+            "3",
+            "10.0",
+            "15.0"
+          ],
+          [
+            "4",
+            "15.0",
+            "20.0"
+          ]
+        ]
+      }
     }
   ]
 }

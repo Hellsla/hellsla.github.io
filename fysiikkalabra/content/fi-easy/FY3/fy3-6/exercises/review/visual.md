@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5f8bfe79b2a85e41
+CONTENT-HASH: 4b8fb777f41bd4cf
 
 ## Blocking
+(none)
+
+## Fixed
+- none needed for layout; wording edits above shorten the L2-06 line that left "120 s." alone on a line (en)
 
 ## Polish
-- [Minor] L2-04, L3-02 — "20 °C–70 °C" and "20 °C:n ja 70 °C:n välillä" are two ways to write a range; choose one.
+- none
 
 ## Checked
-- contact-4/5; open-exercises L1, L2-2 (heating graph: axes, units, points distinct), L3-3 (stacked fractions, readable); solutions, answer boxes, unit labels; instructions read for fi-easy.
+- fy3-6-open-exercises-L2/L3 captures at 1280 px (L2-05..07 tables and answers, L3-04 aligned substitution, L3-05 prompt) in fi-easy: tables show decimal-point values with units, no clipping, no Finnish in en.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish (selkosuomi) 4 · accessibility 4

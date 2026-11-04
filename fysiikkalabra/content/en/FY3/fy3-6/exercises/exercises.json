@@ -39,6 +39,52 @@
       "answer": 19,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L1-06",
+      "level": 1,
+      "text": "At the beach, sunlight gives $1.0\\,\\text{kg}$ of water and $1.0\\,\\text{kg}$ of dry sand the same quantity of heat. The sand warms clearly more than the water. What explains this?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The specific heat capacity of water is greater, so the same quantity of heat raises its temperature less.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Water reflects the sunlight back, so less heat is transferred to it than to the sand.",
+          "feedback": "In the task the water and the sand receive the same quantity of heat, so reflection does not explain the difference. The water also warms, just less."
+        },
+        {
+          "text": "The change in temperature depends only on the mass and the quantity of heat, so the substance does not affect it.",
+          "feedback": "The substance does matter: the formula $Q = c m \\Delta T$ contains the specific heat capacity $c$, which is different for different substances. So the same $Q$ and the same $m$ give different substances a different $\\Delta T$."
+        },
+        {
+          "text": "Sand is denser than water, so the same quantity of heat raises its temperature more.",
+          "feedback": "Density does not decide, because the masses are the same. The formula $\\Delta T = \\dfrac{Q}{c m}$ contains the mass $m$, not the density, and the difference comes from the specific heat capacity $c$ of the substance. The $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ of water is greater than the $800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ of sand."
+        },
+        {
+          "text": "The specific heat capacity of water is greater, so the same quantity of heat raises its temperature less.",
+          "correct": true,
+          "feedback": "Correct: the change in temperature is $\\Delta T = \\dfrac{Q}{c m}$. When $Q$ and $m$ are the same, a large $c$ means a small $\\Delta T$. The $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$ of water is about five times the value of sand, $800\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$."
+        }
+      ]
+    },
+    {
+      "id": "fy3-6-L1-07",
+      "level": 1,
+      "text": "A copper coffee pot has a mass of $0.50\\,\\text{kg}$. The pot receives a quantity of heat of $15\\,\\text{kJ}$ from the stove, and no heat is transferred from the pot to the surroundings. By how many kelvins does the temperature of the pot rise?",
+      "answer": 78,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L1-08",
+      "level": 1,
+      "text": "An aluminium saucepan has a mass of $0.60\\,\\text{kg}$.\n\na) Calculate the heat capacity $C$ of the saucepan.\n\nb) How large a quantity of heat is needed to heat the saucepan from $18\\,{}^\\circ\\text{C}$ to $78\\,{}^\\circ\\text{C}$? Give the result of part b) in kilojoules in the answer box.",
+      "answer": 32,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +120,109 @@
       "answer": 27,
       "unit": "°C",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L2-05",
+      "level": 2,
+      "text": "In a calorimeter, $0.50\\,\\text{kg}$ of an unknown liquid is heated with an electric resistor at a constant power of $100\\,\\text{W}$. The temperature is measured at one-minute intervals, and the results are in the table (example data). Assume that all the energy of the resistor is transferred to the liquid.\n\na) In the temperature–time graph, draw a straight line that fits the points. The line passes approximately through the points $(0\\,\\text{s};\\ 20.0\\,{}^\\circ\\text{C})$ and $(300\\,\\text{s};\\ 34.5\\,{}^\\circ\\text{C})$. Use the slope of the line to calculate the specific heat capacity of the liquid.\n\nb) Which liquid is it? Justify your answer with the $c$ values of the table.\n\nc) Name one way to reduce heat losses in an experiment like this and justify why it improves the result.\n\nGive the result of part a) in the answer box.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 4100,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Temperature of the liquid during heating (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "20.0"
+          ],
+          [
+            "60",
+            "22.8"
+          ],
+          [
+            "120",
+            "25.8"
+          ],
+          [
+            "180",
+            "28.9"
+          ],
+          [
+            "240",
+            "31.6"
+          ],
+          [
+            "300",
+            "34.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-6-L2-06",
+      "level": 2,
+      "text": "Two liquids, A and B, are heated in two identical calorimeters with an electric resistor of the same power. Each contains $0.40\\,\\text{kg}$ of liquid. One liquid is water and the other is oil. The temperatures are measured at half-minute intervals (example data). Assume that all the energy of the resistor is transferred to the liquid.\n\na) Which liquid is water? Justify your answer.\n\nb) Calculate the specific heat capacity of the oil using the table value for water. Compare the rises in temperature of the liquids in $120\\,\\text{s}$.\n\nGive the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 2100,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Temperatures of the liquids during heating (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$T_\\text{A}\\,({}^\\circ\\text{C})$",
+          "$T_\\text{B}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "20.0",
+            "20.0"
+          ],
+          [
+            "30",
+            "24.6",
+            "22.4"
+          ],
+          [
+            "60",
+            "29.0",
+            "24.4"
+          ],
+          [
+            "90",
+            "33.6",
+            "26.9"
+          ],
+          [
+            "120",
+            "38.1",
+            "29.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-6-L2-07",
+      "level": 2,
+      "text": "A $0.20\\,\\text{kg}$ copper object at a temperature of $100\\,{}^\\circ\\text{C}$ is dropped into an insulated vessel that contains $0.50\\,\\text{kg}$ of water at a temperature of $20\\,{}^\\circ\\text{C}$. The heat capacity of the vessel itself and the heat losses are ignored.\n\nThe student's solution: “The temperatures even out, so the final temperature is the mean of the initial temperatures: $(100 + 20) : 2 = 60\\,{}^\\circ\\text{C}$.”\n\na) Explain why the student's solution is wrong.\n\nb) Calculate the correct final temperature.\n\nGive the result of part b) in the answer box.",
+      "kind": [
+        "error"
+      ],
+      "answer": 23,
+      "unit": "°C",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -88,7 +237,7 @@
     {
       "id": "fy3-6-L3-02",
       "level": 3,
-      "text": "At a cabin shore there is a shallow bay with an area of 2000 m² and a mean depth of $1.2\\,\\text{m}$. On a sunny summer day the water of the bay receives energy of $18\\,\\text{MJ}$ from the Sun for each square metre of the surface. A cubic metre of water has a mass of $1000\\,\\text{kg}$. Assume that the energy stays in the water and the water mixes evenly. By how many kelvins does the temperature of the water in the bay rise during the day? Also justify why the result does not depend on the area of the bay.",
+      "text": "At a cabin shore there is a shallow bay with an area of $2000\\,\\text{m}^2$ and a mean depth of $1.2\\,\\text{m}$. On a sunny summer day the water of the bay receives energy of $18\\,\\text{MJ}$ from the Sun for each square metre of the surface. A cubic metre of water has a mass of $1000\\,\\text{kg}$. Assume that the energy stays in the water and the water mixes evenly. By how many kelvins does the temperature of the water in the bay rise during the day? Also justify why the result does not depend on the area of the bay.",
       "answer": 3.6,
       "unit": "K",
       "tolerance": 0.02
@@ -96,10 +245,126 @@
     {
       "id": "fy3-6-L3-03",
       "level": 3,
-      "text": "A heat store is being planned for a cabin, in which summer solar heat is stored. The options are 1.0 m³ of water, whose mass is $1000\\,\\text{kg}$, or dry sand, of which there is $1600\\,\\text{kg}$ in a cubic metre. The temperature of each store varies between $20\\,{}^\\circ\\text{C}$ and $70\\,{}^\\circ\\text{C}$. How many cubic metres of sand are needed for it to store as much energy as the water store? Justify why the ratio of the volumes is smaller than the ratio of the specific heat capacities.",
+      "text": "A heat store is being planned for a cabin, in which summer solar heat is stored. The options are $1.0\\,\\text{m}^3$ of water, whose mass is $1000\\,\\text{kg}$, or dry sand, of which there is $1600\\,\\text{kg}$ in a cubic metre. The temperature of each store varies between $20\\,{}^\\circ\\text{C}$ and $70\\,{}^\\circ\\text{C}$. How many cubic metres of sand are needed for it to store as much energy as the water store? Justify why the ratio of the volumes is smaller than the ratio of the specific heat capacities.",
       "answer": 3.3,
       "unit": "m³",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L3-04",
+      "level": 3,
+      "text": "In a calorimeter, $0.50\\,\\text{kg}$ of water is heated with an electric resistor at a constant power of $200\\,\\text{W}$. The temperature of the water is measured at one-minute intervals (example data). The room temperature is $20\\,{}^\\circ\\text{C}$. The heat capacity of the vessel itself is ignored.\n\na) Calculate the specific heat capacity of water from the measurement of the first minute, assuming that the heat losses are still negligible, and compare it with the table value.\n\nb) Explain why the graph curves although the power is constant, and justify why the specific heat capacity should be fitted to the beginning of the graph.\n\nc) Use the table value for water and calculate the mean power of the heat loss in the interval $480\\text{–}600\\,\\text{s}$. Give the result of part c) in watts in the answer box.",
+      "kind": [
+        "data",
+        "experiment",
+        "reasoning"
+      ],
+      "answer": 81,
+      "unit": "W",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Temperature of the water during heating (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "20.0"
+          ],
+          [
+            "60",
+            "25.6"
+          ],
+          [
+            "120",
+            "30.8"
+          ],
+          [
+            "180",
+            "35.9"
+          ],
+          [
+            "240",
+            "40.4"
+          ],
+          [
+            "300",
+            "44.9"
+          ],
+          [
+            "360",
+            "49.2"
+          ],
+          [
+            "420",
+            "53.0"
+          ],
+          [
+            "480",
+            "56.8"
+          ],
+          [
+            "540",
+            "60.2"
+          ],
+          [
+            "600",
+            "63.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-6-L3-05",
+      "level": 3,
+      "text": "An uninsulated mug contains $0.300\\,\\text{kg}$ of hot water. The room temperature is $20.0\\,{}^\\circ\\text{C}$. The temperature of the water is measured at ten-minute intervals (example data). The heat capacity of the mug and evaporation are ignored. According to the proposed model, the thermal power given out by the water is directly proportional to the difference in temperature between the water and the room: $P = k\\,(T_\\text{mean} - T_\\text{room})$, where $T_\\text{mean}$ is the mean temperature of the water in the interval under consideration.\n\na) Calculate the quantity of heat given out by the water and the mean thermal power in each ten-minute interval.\n\nb) Calculate the coefficient $k$ for each interval. Give $k$ of the first interval in the answer box.\n\nc) On the basis of the $k$ values, evaluate whether the model fits the measurements, and justify why the cooling of the water slows down.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.6,
+      "unit": "W/K",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Temperature of the water during cooling (example data)",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "90.0"
+          ],
+          [
+            "10",
+            "72.5"
+          ],
+          [
+            "20",
+            "59.6"
+          ],
+          [
+            "30",
+            "49.5"
+          ],
+          [
+            "40",
+            "42.3"
+          ],
+          [
+            "50",
+            "36.6"
+          ],
+          [
+            "60",
+            "32.5"
+          ]
+        ]
+      }
     }
   ]
 }
