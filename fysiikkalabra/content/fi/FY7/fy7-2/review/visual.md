@@ -1,19 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 1cfcc22917415eec
+VERDICT: PASS
+CONTENT-HASH: 956616c738487239
 
 ## Blocking
-- [Major] berkeley-cyclotron alt — says "kymmenkunta miestä seisoo ... ympärillä ja päällä"; the photo shows only two men standing at the left and right edges of the magnet — a screen-reader user gets a false picture — rewrite, e.g. "Mustavalkoinen valokuva vuodelta 1939: kaksi miestä seisoo suuren syklotronin sähkömagneetin ja tyhjiökammion vieressä tehdashallissa."
-- [Major] electron-beam-circle alt — says the beam glows "kahden suuren käämin välissä"; no coils are visible, only the glass bulb, a ruler strip and the electron gun — alt describes content absent from the image — e.g. "Pimeässä lasipallossa hehkuu sininen ympyränmuotoinen elektronisuihku; pallon edessä on mitta-asteikko ja alhaalla elektronitykki." (caption may keep the coil sentence, it is explanation, not description.)
-- [Major] aurora-levi alt — "alhaalla metsää ja valoja"; the photo shows treeless fell with a few pines and moss, no lights — e.g. "Leveä vihreä revontulivyö yötaivaalla, alhaalla tunturiylänkö ja yksittäisiä honkia." (Fix with the other two; all are one-line alt edits.)
+(none)
 
 ## Polish
-- [Minor] electron-beam-circle caption — the ring is slightly tilted and the ruler crosses it; fine, optionally say "kuvassa näkyy myös mitta-asteikko".
+- [Minor] electron-beam-circle photo caption — the coils are not visible in the photo, and the caption says "Käämit tuottavat..." — optionally "Ulkopuoliset käämit (kuvassa eivät näy) tuottavat..."; the alt text is now correct, so this is optional.
 
 ## Checked
-- Delta, round 1: rendered preview/fy7-N.html myself with playwright at 390 and 1280 px, scrolled each lazy photo into view (all loaded, naturalWidth 1600, no horizontal overflow; photo sits in the side column at 1280 and column width at 390, credit line visible), opened the per-photo crops and the full-size sources.
-- aurora-levi, electron-beam-circle, berkeley-cyclotron at 390 and 1280 (context shot of the electron beam beside the magnetic-force text at 1280: layout good).
-- Captions accurate for physics: aurora, circular beam, 1939 60-inch cyclotron (public domain credit shown). Only the alts fail.
-- Hash unchanged at end.
+- Round 2 (delta): the three figure.unit-photo images, rendered from preview/fy7-2.html with playwright at 390 and 1280 px (lazy images forced and scrolled into view; all loaded, naturalWidth 1600, no horizontal overflow, scrollWidth equals viewport).
+- aurora-levi: the alt text (wide green aurora band over a starry sky; rocky fell slope and a few pines below) matches the photo. Credit line and caption are intact.
+- electron-beam-circle: the alt text (dark glass sphere, blue-green circular electron beam, scale across the sphere, electron gun at the bottom) matches the photo. It no longer claims visible coils.
+- berkeley-cyclotron: the alt text (black-and-white photo, 1939, two men beside a large electromagnet and vacuum chamber in a hall) matches the photo. I count two men, one at each side.
+- The photos sit in the column at 320 px wide with the caption below and nothing clipped. The rest of the page is unchanged since the earlier PASS (the hash is the same as in the packet; layout and a11y checks are clean).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 3
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
