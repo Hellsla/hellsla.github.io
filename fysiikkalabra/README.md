@@ -4,8 +4,8 @@ The site is called **Ruukkilabra**, subtitle *Lukion fysiikka* / *Upper secondar
 folder, the URL and the scripts keep the old working name fysiikkalabra. Logos: `assets/shared/brand/`.
 
 A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, p5.js simulations and exercises,
-written and reviewed with Claude Code agents, served by GitHub Pages from the committed `site/` folder at
-`https://hellsla.github.io/fysiikkalabra/site/`. House rules for agents: `CLAUDE.md`; writing rules: `NOTES.md`.
+written and reviewed with Claude Code agents, published from the committed `site/` folder at
+`https://ruukkilab.fi/` (see "Publishing at ruukkilab.fi" below). House rules for agents: `CLAUDE.md`; writing rules: `NOTES.md`.
 
 ## Quick start
 ```bash
@@ -77,6 +77,28 @@ On a pull request the browser steps (simulations, inquiry tests, layout at eight
 can alter (teacher 2026-11-01): `python scripts/ci_scope.py origin/main` prints them, or `full` when a shared file
 (scripts, templates, shared site files, configuration, interface texts, the visual baseline, the workflow) changed. Its
 docstring is the mapping. Main, the weekly run and a manual run (`workflow_dispatch`) test everything.
+
+## Publishing at ruukkilab.fi
+Teacher 2026-11-04: the source stays in this repository, and the public repository `Hellsla/ruukkilabra` holds only
+the published copy, served by its GitHub Pages (branch `main`, folder `/`, custom domain `ruukkilab.fi`).
+`.github/workflows/ruukkilabra-deploy.yml` runs when `fysiikkalabra-ci` has passed on a main commit (a merged pull
+request, the weekly run or a manual run; never a pull request's own run). It takes that commit's committed `site/`,
+puts it at the root of the publishing repository, adds the read-aloud models of `Hellsla/ruukkilabra-models`
+(`supertonic3-v1/`, `ort/`) under `models/`, and pushes. If main already has a newer `site/`, it leaves the publishing
+to that commit's own run. A manual run (Actions → ruukkilabra-deploy → Run workflow) publishes the newest main
+commit whose CI passed.
+
+`python scripts/deploy_site.py OUT [--models DIR]` assembles the copy: `site/` contents, `CNAME`, `.nojekyll`,
+`robots.txt` and `sitemap.xml` for `https://ruukkilab.fi/`. It fails (and nothing is pushed) when a published text
+file names `hellsla.github.io` or `github.com/Hellsla` (Ruukkilabra must never lead to the teacher's other sites),
+when a page's canonical address is not on ruukkilab.fi, or when a relative link, image or script points outside the
+site or to a missing file. CI runs the same check on every pull request. `BASE_URL` in `build.py` and
+`print_book.py` (canonical, og:url, QR codes of the printed book) is `https://ruukkilab.fi/`.
+
+Push access: the repository secret `RUUKKILABRA_DEPLOY_KEY` is the private half of an SSH deploy key with write access
+to `Hellsla/ruukkilabra` only. `Hellsla/ruukkilabra-models` must be public (it is checked out without a token).
+The other sites of this repository (its root GitHub Pages) are not affected; the old copy at
+`/fysiikkalabra/site/` keeps being served from this repository too, with its canonical addresses on ruukkilab.fi.
 
 ## Libraries
 p5.js 1.9.4 and KaTeX 0.16.11 are vendored in `templates/vendor/` and copied to `site/vendor/` on build; fonts
