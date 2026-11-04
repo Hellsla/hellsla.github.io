@@ -104,8 +104,10 @@ with sync_playwright() as pw:
         expect(f"{page}: one try opens them", not tg.is_disabled() and li0.locator(".lock-note").count() == 0)
         tp = ctx.new_page(); tp.goto(BASE + page + "?ratkaisut=1"); tp.wait_for_load_state("load")
         expect(f"{page}: ?ratkaisut=1 opens every lock for the teacher", tp.locator("#exercises [data-locked], .hints [data-locked], .ex-toggle:disabled").count() == 0 and tp.locator(".teacher-note").count() == 1)
-        tp.close()
+        tp.close(); pg.bring_to_front()   # the teacher's page took the focus; the toggle event of a background tab may wait
         tg.click()
+        try: pg.wait_for_function("(b) => b.getAttribute('aria-expanded') === 'true'", arg=tg.element_handle(), timeout=3000)
+        except Exception: pass
         expect(f"{page}: the Vastaus button opens the answer in its place", pg.evaluate("(id) => document.getElementById(id).open", tg.get_attribute("aria-controls")) and tg.get_attribute("aria-expanded") == "true")
         tg.click()
         expect(f"{page}: nothing of the editor loads before the first click", not any("/vendor/digabi/" in u for u in reqs),
@@ -176,7 +178,7 @@ with sync_playwright() as pw:
         expect(f"{page}: the tick alone opens them", rv.evaluate("(d) => d.open")); rv.evaluate("(d) => { d.open = false; }")
         tp = ctx.new_page(); tp.goto(BASE + page + "?ratkaisut=1"); tp.wait_for_load_state("load")
         expect(f"{page}: ?ratkaisut=1 opens every lock for the teacher", tp.locator("[data-locked]").count() == 0 and tp.locator(".teacher-note").count() == 1)
-        tp.close()
+        tp.close(); pg.bring_to_front()
         card.locator(".pad-open").scroll_into_view_if_needed(); card.locator(".pad-open").click()
         card.locator(".rich-text-editor").wait_for(timeout=20000)
         pg.keyboard.type("a) "); pg.keyboard.press("Control+e"); pg.keyboard.type("P=UI"); pg.keyboard.press("Escape"); pg.wait_for_timeout(300)
