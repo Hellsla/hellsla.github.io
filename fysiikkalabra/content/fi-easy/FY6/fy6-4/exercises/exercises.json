@@ -73,7 +73,7 @@
     {
       "id": "fy6-4-L1-07",
       "level": 1,
-      "text": "Ideaaliseen paristoon on kytketty kaksi samanlaista lamppua rinnan. Sitten paristoon kytketään vielä kolmas samanlainen lamppu rinnan kahden ensimmäisen kanssa. Mitä tapahtuu kytkennän kokonaisresistanssille ja paristosta lähtevälle virralle?",
+      "text": "Ideaaliseen paristoon (sen jännite ei laske, vaikka virta kasvaa) on kytketty kaksi samanlaista lamppua rinnan. Sitten paristoon kytketään vielä kolmas samanlainen lamppu rinnan kahden ensimmäisen kanssa. Mitä tapahtuu kytkennän kokonaisresistanssille ja paristosta lähtevälle virralle?",
       "kind": [
         "concept"
       ],
@@ -149,7 +149,7 @@
         "data",
         "experiment"
       ],
-      "text": "Oppilas tutkii kokeella, noudattavatko vastusten kytkennät kaavoja. Hän mittaa yleismittarilla kolmen vastuksen resistanssit erikseen. Hän mittaa myös niiden sarjaankytkennän ja rinnankytkennän kokonaisresistanssin. Taulukon lukemat ovat esimerkkiaineistoa. Yleismittarin ilmoitettu virheraja on $\\pm 1{,}5\\,\\%$ lukemasta.\n\na) Laske sarjaankytkennän kokonaisresistanssi yksittäisistä mittaustuloksista. Päättele, onko ero mitattuun arvoon virherajan sisällä.\n\nb) Laske rinnankytkennän kokonaisresistanssi samoista yksittäisistä tuloksista. Päättele samoin.\n\nVastauslaatikkoon tulee b-kohdassa laskettu rinnankytkennän kokonaisresistanssi.",
+      "text": "Oppilas tutkii kokeella, noudattavatko vastusten kytkennät kaavoja. Hän mittaa yleismittarilla (mittarilla, joka mittaa mm. resistanssia) kolmen vastuksen resistanssit erikseen. Hän mittaa myös niiden sarjaankytkennän ja rinnankytkennän kokonaisresistanssin. Taulukon lukemat ovat esimerkkiaineistoa. Yleismittarin ilmoitettu virheraja eli suurin mittausvirhe on $\\pm 1{,}5\\,\\%$ lukemasta.\n\na) Laske sarjaankytkennän kokonaisresistanssi yksittäisistä mittaustuloksista. Päättele, onko ero mitattuun arvoon virherajan sisällä.\n\nb) Laske rinnankytkennän kokonaisresistanssi samoista yksittäisistä tuloksista. Päättele samoin.\n\nVastauslaatikkoon tulee b-kohdassa laskettu rinnankytkennän kokonaisresistanssi.",
       "answer": 102.1,
       "unit": "Ω",
       "tolerance": 0.02,
