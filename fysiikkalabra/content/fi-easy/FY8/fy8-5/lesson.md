@@ -1324,6 +1324,8 @@ Raja on sovittu kynnysarvo eikä seinä. Noin kymmenesosa mittauksista osuu sen 
 
 Pilvi on tihein ytimen kohdalla, mutta yleisin etäisyys ytimestä ei ole nolla. Ohueen pallokuoreen kauempana ytimestä mahtuu enemmän tilavuutta kuin pieneen palloon aivan ytimen ympärillä. Siksi $1\text{s}$-elektroni havaitaan useimmin noin $0{,}053\,\text{nm}$:n etäisyydellä. Se on sama kuin Bohrin mallin pienimmän radan säde. Aaltomallissa Bohrin rata on yleisin etäisyys, ei reitti, jota elektroni kulkee.
 
+<figure class="unit-photo"><img src="pics/fy8/stm-laboratory.webp" alt="Suuri laboratoriolaite. Sen osat on kääritty alumiinifolioon."><figcaption>Tunnelointimikroskooppi laboratoriossa Soulissa. Sen terävä kärki liikkuu aivan näytteen pinnan yläpuolella. Kärjen ja pinnan välillä kulkee pieni sähkövirta. Siitä saadaan kuva pinnan yksittäisistä atomeista.</figcaption></figure>
+
 ## Kaava: Kuoret, orbitaalit ja energiatasot
 Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta $n$. Aaltomalli antaa samat energiatasot kuin Bohrin malli:
 ```latex

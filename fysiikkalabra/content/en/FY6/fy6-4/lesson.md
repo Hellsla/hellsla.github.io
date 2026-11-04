@@ -170,6 +170,8 @@ In a parallel connection the resistors are in separate branches between the same
 
 A new parallel branch does not change the currents of the other branches, because their voltage stays the same. It adds routes to the circuit, so the current leaving the battery increases. The lamps and sockets in homes are connected in parallel: each appliance gets the same mains voltage, and switching one appliance off breaks only its own branch.
 
+<figure class="unit-photo"><img src="pics/fy6/christmas-lights.webp" alt="A detached house in the evening. Hundreds of small lights glow on the eaves, in a tree and in the yard."><figcaption>Christmas lights in the yard of a house. A long string has dozens of lamps, and the way they are connected decides what happens when one of them breaks.</figcaption></figure>
+
 ### Total resistance
 A connection of resistors can be replaced with a single resistor from which the battery gives the same current. The resistance of this resistor is the total resistance $R$ of the connection: $U = RI$ holds for it, where $I$ is the current leaving the battery. In a series connection the charges pass through every resistor, so the total resistance is greater than any of the resistors. In a parallel connection each branch is a new route, so the total resistance is smaller than the smallest of the branch resistances.
 

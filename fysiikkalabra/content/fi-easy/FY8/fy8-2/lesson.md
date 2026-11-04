@@ -122,8 +122,12 @@ Jos jatkuvan spektrin valo kulkee kaasun läpi, spektriin jää tummia viivoja. 
   <foreignObject x="223" y="353.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{violetti}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/flame-colours.webp" alt="Yhdeksän eriväristä liekkiä rivissä."><figcaption>Liekeissä on eri metallien suoloja. Jokainen alkuaine antaa liekille oman värin. Sen atomit lähettävät vain tiettyjä aallonpituuksia.</figcaption></figure>
+
 ### Energiatilat selittävät viivat
 Atomin elektroniverho voi olla vain tietyissä **energiatiloissa**. Elektroniverho tarkoittaa kaikkia atomin elektroneja. Alin energiatila on perustila. Ylemmät tilat ovat viritystiloja. Energiat ilmoitetaan negatiivisina, koska nollaksi on valittu tilanne, jossa elektroni on irronnut atomista. Kun atomi siirtyy ylemmästä energiatilasta alempaan, se lähettää yhden fotonin. Fotoni on valon energiapaketti. Energia säilyy, joten fotonin energia on tilojen energioiden erotus. Atomilla on vain tietyt energiatilat. Siksi erotuksia on vain tietty määrä, ja spektrissä on vain tietyt viivat.
+
+<figure class="unit-photo"><img src="pics/fy8/neon-signs-shinjuku.webp" alt="Katu illalla. Talojen seinillä on värikkäitä valomainoksia."><figcaption>Valomainoksia Tokiossa. Spektroskoopilla näkisi, onko valon spektri jatkuva vai viivoista koostuva.</figcaption></figure>
 
 Absorptio on käänteinen tapahtuma. Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen kahden tilan erotus. Muut fotonit kulkevat kaasun läpi. Virittynyt atomi palaa pian alempaan tilaan ja lähettää fotonin. Fotoni lähtee kuitenkin satunnaiseen suuntaan. Siksi alkuperäiseen suuntaan kulkevasta valosta puuttuvat juuri nuo aallonpituudet, ja spektriin jää tumma viiva.
 
@@ -164,6 +168,8 @@ Spektrin voi mitata itse. Spektroskoopissa valo kulkee kapean raon ja hilan läp
   <foreignObject x="180" y="309.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3{,}40\,\text{eV}$</div></foreignObject>
   <foreignObject x="330" y="309.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2{,}38\,\text{eV}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy8/fluorescent-minerals.webp" alt="Paljon kiviä mustalla pohjalla. Ne hohtavat vihreinä, punaisina, sinisinä ja keltaisina."><figcaption>Mineraaleja UV-lampun valossa. Ne absorboivat ultraviolettisäteilyä. Sitten ne lähettävät näkyvää valoa, jonka aallonpituus on pidempi. Väri riippuu mineraalista.</figcaption></figure>
 
 ## Kaava: Energiatasojen erotus ja fotonin energia
 Kun atomi siirtyy energiatilasta toiseen, se lähettää tai absorboi fotonin. Fotonin energia on tilojen energioiden erotus:
