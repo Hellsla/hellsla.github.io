@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c542c1823b37cf93
+CONTENT-HASH: 92f0939fc12d8abd
 
 ## Blocking
 
 ## Polish
-- None.
+- lesson.md:518 — "Hiukkasen varauksen suuruus on alkeisvaraus $e$" reads as a general statement (an alpha particle has $2e$); write "Protonin ja elektronin varauksen suuruus on alkeisvaraus $e$".
 
 ## Checked
-- Compared lesson.md line by line with content/fi: 685 lines each, 143 math expressions identical (decimal point in en, `$…$` and decimal comma kept in fi-easy); 7 stages, 5 figures, same headings in order.
-- All numbers, units and formulas (E_p = qV, W_AB = q(V_A - V_B), V = Ex, ½mv² = |q|U, 1 eV = 1.602·10⁻¹⁹ J) match the Finnish; the worked example has all 7 steps and reaches 3.248·10⁷ m/s, 3.0 keV, 4.8·10⁻¹⁶ J.
-- inquiry.json: every numeric field, answer, tolerance, mistake value, hint and the two complete numeric solutions (siirto 42.0 km/s, tarkistus-2 300 eV) equal the Finnish; exit ticket (-50 eV, 4.8·10⁻¹⁶ J) equal.
-- Plain-Finnish rewrites keep the physics unchanged; glosses (potentiaalienergia 'paikan mukaan muuttuva energia', kohtisuorassa 'eli suorassa kulmassa') are correct.
+- $V = Ex$ now carries both conditions (homogeneous field, negative plate as zero, $x$ measured from it) in Kaava, Tiivistelmä and the sim's calc box.
+- Sign conventions: $E_\text{p} = qV$ with $q = -e$, $W_{AB} = qU_{AB}$, $\tfrac12 mv^2 = |q|U$; the electron moves toward higher potential while its $E_\text{p}$ falls; consistent in theory, misconception, Etsi virhe, checks and exit ticket ($-50\,\text{eV}$).
+- New captions: lightning potential difference "satoja miljoonia voltteja"; negative cloud base at lower potential than the ground, electrons moving to higher potential; plasma ball collisional excitation (C).
+- Worked example recomputed: $4{,}806 \cdot 10^{-16}\,\text{J}$, $v = 3{,}248 \cdot 10^7\,\text{m/s}$ (11 % of c, classical OK).
+- Aurora: 5 keV → $4{,}2 \cdot 10^7\,\text{m/s}$ ("noin 40 000 km/s") checked.
+- Proton weight vs electric force in 5000 V/m: about $5 \cdot 10^{10}$ ("kymmeniä miljardeja") checked.
+- Predictions: 500 eV for every gap; p 310 km/s, e 13 000 km/s, ratio 43; each has exactly one correct option and distractor feedback is right.
+- Transfer: Xe⁺ at 1,2 kV → 42,0 km/s; mistakes 1,33 / 29,7 / 41996 checked; tarkistus-2 300 eV checked.
+- Sim spec and calc box: $F = |q|E$, $E_\text{p} = qV$, energy from the integrated motion, speeds below 7 % of c.

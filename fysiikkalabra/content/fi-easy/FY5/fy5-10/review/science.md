@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 2173dd681221e44c
+CONTENT-HASH: d13b60ab3f95d95b
 
 ## Blocking
-(none)
 
 ## Polish
-- aallonpituus is defined by crests only, while the example of a longitudinal wave (ääni ilmassa) has none; the lesson adds "tai tihentymien".
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: aaltoliike (energy moves, matter does not), aallon nopeus (depends on the medium) and both wave types agree with the lesson.
+batch delta review: the definition in theory and Tiivistelmä now reads "Mekaaninen aaltoliike on häiriön etenemistä väliaineessa", so it no longer implies every wave needs a medium; consistent with the next paragraph ("Mekaaninen aalto tarvitsee väliaineen") and with energy-not-matter transport; no other unqualified "Aaltoliike on" left in the lesson or inquiry.

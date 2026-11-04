@@ -1,7 +1,7 @@
 [
   {
     "q": "What is the difference between the absorbed dose in grays and the effective dose in sieverts?",
-    "a": "The absorbed dose tells how much radiation energy the tissue absorbs per kilogram. The effective dose weights it by the type of radiation and the sensitivity of the irradiated tissues, so it describes the long-term cancer risk to the whole body."
+    "a": "The absorbed dose tells how much radiation energy the tissue absorbs per kilogram. The effective dose weights it by the type of radiation and the sensitivity of the irradiated tissues, so it is used to estimate the long-term cancer risk of small doses for an average person, not an individual's exact risk."
   },
   {
     "q": "Name three ways to protect yourself from a source emitting gamma radiation and say how each reduces the dose.",

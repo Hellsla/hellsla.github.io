@@ -1,19 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3040932294be2d96
+CONTENT-HASH: ef39ca99fa2409f7
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figure.unit-photo (electron-beam) — alt does not mention the visible mitta-asteikko direction or the metal strip, but it is accurate and sufficient — optional only.
+- [Minor] esimerkin vaiheet 3-5 — kaavoissa on yhä $q$, teoriassa $|q|$; vaihe 1 sanoo $|q| = q$, joten teksti toimii — halutessa $|q|$ myös esimerkkiin.
 
 ## Checked
-- Round 2 delta: the three unit-photo alt texts compared against the actual images in assets/pics/fy7/ (opened at readable resolution).
-- aurora-levi: wide green aurora band over a starry sky, stony fell slope with a few pines: alt matches.
-- electron-beam-circle: dark glass sphere with a blue-green electron-beam circle, a scale across it: alt matches; coils are no longer claimed visible (they appear only in the caption, which is correct).
-- berkeley-cyclotron: black-and-white 1939 photo, two men beside a large cyclotron, big electromagnet in the middle: alt matches (two men).
-- Playwright render of preview/fi-easy/fy7-2.html at 390 and 1280 px, lazy images scrolled into view: all three images loaded (naturalWidth 1600), captions and credit lines read, no horizontal overflow (scrollWidth equals viewport).
-- Rest of the page unchanged since the previous PASS; not re-judged.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: opened theory-1280-1..4, example-390-1..2 and open-exit-1280 (new |q| display blocks, inline formulas, summary bullets, exit-ticket answer and the example Given line render in KaTeX; no inline formula wraps onto two lines; no overflow); diffs of lesson.md, inquiry.json, exit-ticket.json read.

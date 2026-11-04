@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f8563eea6efa006f
+CONTENT-HASH: 18dbe8d3089c1497
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md L2-01 Sijoitus — the connecting word between the v chain and the r display is not shown (the layout renders the display as its own block); the two blocks read as consecutive steps, so nothing is lost.
+- [Minor] solutions.md — L1-02 now writes $|q|vB = \dfrac{mv^2}{r}$, $r = \dfrac{mv}{|q|B}$ but other magnetic-force solutions (L1-01, the proton period, the selector) still use $q$ while the lesson uses $|q|$ — notation consistency only (for science: whether they should follow).
 
 ## Checked
-- Delta: L2-01 solution Sijoitus, r as an aligned display (fraction row, \quad \cdot v row, = 0,06463 m = 6,463 cm row); rendered at 360 and 390 px from the built page with every solution open, and open-exercises-L2-1280-1 at laptop width.
-- Result: three rows with equals signs in one column, units upright with a thin space, nothing clipped, no horizontal overflow; the v chain above it is unchanged.
-- Only the line breaking of the formula changed; text, numbers and units unchanged (diff read). Deterministic layout checks 360/768/1280 clean per packet.
+- Delta: diff of solutions.md read (L1-02 Given/Formula with $|q|$, two chapter names).
+- Opened open-exercises-1280-1 and -2 (2-1 and 2-2 solutions, every block open): $|q|$ renders in KaTeX, rows aligned, nothing clipped, no overflow; no exercise text or figure changed.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

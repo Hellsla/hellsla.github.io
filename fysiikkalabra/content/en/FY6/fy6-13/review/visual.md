@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3aceaec20807e4c9
+CONTENT-HASH: 5473a624fb5e15a2
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 3aceaec20807e4c9
 (none)
 
 ## Checked
-- batch delta review: opened the source image(s) and 1280/390 px renders of the photo(s): film-capacitor.webp (KNB1560, MKP, X2, 0,1 uF, 275VAC all legible, matches alt; caption MKP and 275 V correct) and capacitor-bank.webp (substation from above, fenced gravel, matches alt). Alt matches the visible content, captions physically correct and tied to the chapter, units in LaTeX, photo floats right at 1280 (no clipping, scrollWidth = viewport) and stacks above the caption at 390.
+- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.

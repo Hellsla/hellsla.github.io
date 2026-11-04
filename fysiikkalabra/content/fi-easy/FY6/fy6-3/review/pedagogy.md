@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1a73dd0ab284e663
+CONTENT-HASH: 8baae29cd64c26db
+
 ## Blocking
+(none)
 
 ## Polish
+- "Ohmisen vastuksen" is a new word: write "vastuksen, joka noudattaa Ohmin lakia" or explain "ohminen" in the sentence.
 
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md, inquiry.json and exit-ticket.json: each term is one the lesson bolds and uses; I checked that each explanation is clear S2 Finnish and consistent with the lesson's definition.
+batch delta review (fi-easy, NOTES 12): misconception now says R stays approximately constant at constant temperature and I is then directly proportional to U; filament caption plain.

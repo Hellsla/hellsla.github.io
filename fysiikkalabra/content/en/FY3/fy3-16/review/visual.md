@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7f147e30ecf90721
+CONTENT-HASH: bce5197e309debb6
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] intro prior-knowledge ref — the chapter is cited as "Heating and cooling of a substance" but fy3-6's title reads "Heating and cooling of matter" — use the exact title.
+(none)
 
 ## Checked
-batch delta review: opened intro-1280 (prior-knowledge chapter reference with LaTeX title renders correctly, no red source) for fy3-16; figures untouched.
+- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped. Worked-example area now LaTeX, checked in example-390-1.

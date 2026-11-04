@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e9e47c77f1bab9da
+CONTENT-HASH: df595f23b2d33b59
 
 ## Blocking
+(none)
 
 ## Polish
+- "keskimääräiselle ihmiselle, ei kenenkään yksilöllistä riskiä" is dense; split into two sentences for the 16-year-old.
+- Misconception paragraph now says same effective dose does not guarantee the same individual risk; consistent with the radon exercises which use averages.
 
 ## Checked
-- Delta round 4: the sim canvas label "lähde" now comes from lang key `lahde_kanvas` (`$\text{lähde}$` in fi.json, same value as before; en/fi-easy keys exist). Rendered Finnish unchanged; no lesson wording or content changed (0 changed lines).
-- Rest of the lesson is as approved in the previous report.
-- Re-review after change: fi version unchanged by this edit; no content change; earlier verdict stands.
+batch delta review (fi): effective-dose caveat consistent in explanation, worked example 'järkevyys' and misconception; both dosimeter photos supported by captions explaining CPS and annual-dose context; no exercise relies on the old 'sama riski' wording.

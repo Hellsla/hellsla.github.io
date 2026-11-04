@@ -1,26 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f5bc3f119dc791ac
+CONTENT-HASH: ad7141695fb701d6
+
+Delta review: unit.md "Why you understand more than you think", first sentence now "You can already recognise many French words, especially through English, Swedish and international scientific vocabulary." Previous PASS hash: f5bc3f119dc791ac.
 
 ## Blocking
-(none) The earlier blocking finding is resolved. The endings now use non-breaking hyphens (*‑ité*, *‑ique*, *‑ity* …). At 1280 the strategy wraps between whole items, and the audit finds no split ending at 360, 390 or 1280.
+(none)
 
 ## Polish
-1. [Minor] News texts: a number can still be separated from its unit at a line break ("500 / mégawatts" at 390). Fix: put a no-break space between number and unit (`500 mégawatts`, `50 mégawatts`, `22 minutes`).
-2. [Minor] False-friends table at 390: the shared `td{hyphens:auto}` rule hyphenates the English "even-tually" and "construc-tion". This is harmless.
+(Carried over from the previous report, not part of this diff: News texts can still separate a number from its unit at a line break; use a no-break space.)
 
 ## Checked
-- Fresh captures for this hash and the contact sheets.
-- selita-1280-1 at full size: the endings, the false friends and the maths ($10^{9}$, $10^{12}$).
-- The news text at 390. The hero.
-- A word-break audit and an untagged-French scan at 360, 390 and 1280: the true/false prompt is now tagged.
-- The new *How much* opening line renders correctly.
-- No console errors, no `.katex-error`.
-- Hash unchanged at the end.
+- Built preview and scripts/screenshot.py fy14-fr-lire --lang en (47 captures). Opened the paragraph at 390 px (lire-390-0): the italic French and Swedish examples (trottoar, parapluie, byrå, bureau ...) wrap between whole items, `lang="fr"` spans unchanged, no clipping, no horizontal scroll. The new sentence is accurate in tone (no longer "thousands ... without having studied them") and flows into the examples. Diff read: only this sentence changed.
 
 ## Scores
-illustrations 4 · typography 4 · English/French 4 · accessibility 4
-
-## Shared issues (all four units)
-- `templates/site.css:327` `th,td{hyphens:auto}` below 48 rem hyphenates English in table cells.
-- `scripts/screenshot.py` makes no `fig-N` captures for course units.
-- `templates/inquiry.js`: the reflection list repeats "Commit now; …" (known from the pilot).
+illustrations 5 · typography 5 · English 5 · accessibility 4

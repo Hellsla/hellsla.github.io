@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4b46b1306e55e648
+CONTENT-HASH: 898bd317b4c1c97d
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] radiacode caption: write the reading as 'a count rate of $4.45\,\tfrac{1}{\text{s}}$' or 'counts per second' consistently with the chapter's units; currently a bare $4.45$ plus words (acceptable).
-- [Minor] dosimeter-japan is a portrait photo (168 px wide) and floats beside the Protection section, only loosely tied to it; fine.
+- [Minor] lesson.md weighted doses — the effective-dose sentence is long ("... not anyone's individual risk, and with it very different exposures ... can be compared") — split after "individual risk": "With it, very different exposures ... can be compared."
 
 ## Checked
-- batch delta review: radiacode-dosimeter and dosimeter-japan photos opened; alts match (black meter on green, display 4.45 CPS; red displays, Japanese text, red and green lights, statue); captions correct; layout fine at 1280 and 390 px.
+- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.

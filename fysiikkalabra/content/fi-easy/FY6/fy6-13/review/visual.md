@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c379d9beb0afdefb
+CONTENT-HASH: ac40aeea284452d7
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: c379d9beb0afdefb
 (none)
 
 ## Checked
-batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-13.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photos film-capacitor and capacitor-bank: alts match (0,1 µF, 275 VAC label; fenced substation seen from above); captions correct, quantities in LaTeX.
+- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.

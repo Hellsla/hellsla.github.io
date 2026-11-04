@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 1a73dd0ab284e663
+CONTENT-HASH: 8baae29cd64c26db
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: resistanssi = U/I, Ohmin laki with its condition (metal conductor, constant temperature), vastus, resistiivisyys and ominaiskäyrä agree with the lesson.
+batch delta review: the misconception now says an ohmic resistor's resistance stays nearly constant when temperature and other conditions stay the same, so current is proportional to voltage (the old unconditional "ei riipu jännitteestä" is gone and appears nowhere else in the lesson); filament-bulb caption (electrons collide with metal ions, electrical energy becomes internal energy of the wire) is a fair simplification (C) and agrees with the bulb sentence.

@@ -108,7 +108,7 @@ The power conducted through a building part, such as the wall of a cool bag, is
 ```latex
 P = U A \Delta T
 ```
-where $U$ is the U-value (W/(m²·K)), $A$ is the total area of the walls (m²) and $\Delta T$ is the difference between the outside and inside temperatures (K). As long as there is ice in the bag, the inside temperature is $0\,{}^\circ\text{C}$ and $\Delta T$ is the outside temperature in degrees Celsius. Then all the energy coming through the wall melts ice, $UA\Delta T\,t = sm$, and the time the ice lasts is
+where $U$ is the U-value (W/(m²·K)), $A$ is the total area of the walls (m²) and $\Delta T$ is the difference between the outside and inside temperatures (K). In the model, the inside of the bag is taken to be at $0\,{}^\circ\text{C}$ as long as there is ice, so $\Delta T$ is the outside temperature in degrees Celsius. Then all the energy coming through the wall melts ice, $UA\Delta T\,t = sm$, and the time the ice lasts is
 ```latex
 t = \frac{s\,m}{U A \Delta T}
 ```

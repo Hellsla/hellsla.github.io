@@ -60,7 +60,7 @@
         {
           "text": "Se laskisi kymmeniä asteita, koska maanpinnan lämpösäteily pääsisi lähes esteettä avaruuteen.",
           "correct": true,
-          "feedback": "Oikein. Kasvihuonekaasut päästävät auringon säteilyn läpi, mutta hidastavat lämpösäteilyn pakoa. Osa energiasta palaa takaisin maanpinnalle. Ilman luonnollista kasvihuoneilmiötä keskilämpötila olisi noin $-18\\,{}^\\circ\\text{C}$ todellisen $+15\\,{}^\\circ\\text{C}$:n sijaan. Se on noin $33\\,\\text{K}$ alempi."
+          "feedback": "Oikein. Kasvihuonekaasut päästävät auringon säteilyn läpi, mutta hidastavat lämpösäteilyn pakoa. Osa energiasta palaa takaisin maanpinnalle. Maan yksinkertainen säteilytasapainomalli antaa efektiiviseksi säteilylämpötilaksi noin $-18\\,{}^\\circ\\text{C}$. Maanpinnan keskilämpötila on kuitenkin noin $+15\\,{}^\\circ\\text{C}$. Ero on noin $33\\,\\text{K}$, ja se näyttää, kuinka tärkeä kasvihuoneilmiö on."
         },
         {
           "text": "Se pysyisi ennallaan, koska maanpinnan lämpötilan ratkaisee pelkästään se, kuinka voimakkaasti Aurinko paistaa.",
@@ -494,7 +494,7 @@
       "prompt": "Selitä, miksi luonnollinen kasvihuoneilmiö on hyödyllinen. Selitä myös, miksi sen voimistuminen on ongelma. Kerro lisäksi, miksi fossiilisten polttoaineiden polttaminen voimistaa ilmiötä.",
       "criteria": [
         "Kerroin, että kasvihuonekaasut päästävät auringon säteilyn läpi mutta hidastavat lämpösäteilyn pakoa.",
-        "Mainitsin, että luonnollinen ilmiö nostaa keskilämpötilan noin $-18\\,{}^\\circ\\text{C}$:sta noin $+15\\,{}^\\circ\\text{C}$:een.",
+        "Mainitsin, että yksinkertainen säteilytasapainomalli antaa noin $-18\\,{}^\\circ\\text{C}$, kun maanpinnan keskilämpötila on noin $+15\\,{}^\\circ\\text{C}$.",
         "Selitin, että fossiilisten polttoaineiden polttaminen vapauttaa hiilidioksidia, jolloin ilmakehään jää enemmän säteilyä imeviä kaasuja.",
         "Yhdistin voimistumisen ilmastonmuutokseen eli keskilämpötilan nousuun."
       ],

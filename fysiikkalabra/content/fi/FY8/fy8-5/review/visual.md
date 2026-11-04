@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c7fd61aad41928c6
+CONTENT-HASH: 922733549dfa158a
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Photo is a general lab view of foil-wrapped equipment; the STM tip is not visible, so the caption carries the point (acceptable).
+(none)
 
 ## Checked
-batch delta review: rendered the new figure.unit-photo at 390 px and 1280 px from the built page (own captures, plus fig-row-1280 to confirm the existing figures survived); photo loads, no horizontal overflow, caption and credit line legible, alt text matches the image, LaTeX in captions renders ($6{,}3\,\text{V}$, $656\,\text{nm}$, $n = 3$) with units upright; no clipping.
+- batch delta review: heading "Orbitaali kuvaa elektronin kvanttitilaa", paragraph and summary bullet; built page and scripts/screenshot.py fy8-5 (captures current), changed passages opened at 390 px (b-390-0, b-390-1): clean wrapping, KaTeX renders, no inline formula wraps, no clipping, no horizontal scroll. Diff read; the rest of the lesson unchanged.

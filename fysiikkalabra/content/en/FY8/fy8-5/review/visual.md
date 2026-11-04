@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c67aaee0de94adc6
+CONTENT-HASH: e6a225e13958a986
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fy8-5 STM photo — on a wide screen it lands beside the Shells section while its text sits after the 1s paragraph, and the picture is only loosely related to orbitals — optionally place it later or tie the caption to the orbital cloud.
+(none)
 
 ## Checked
-batch delta review: opened the 390 px theory captures (stage-selita, whole sequence) and the 1280 theory captures around each new unit-photo; photo is sharp, caption and its $...$ maths render, credit line present, alt text informative, no clipping or horizontal overflow, surrounding figures and formulas intact.
+- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.

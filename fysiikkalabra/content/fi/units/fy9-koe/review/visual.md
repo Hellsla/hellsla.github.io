@@ -1,31 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8cf0da264f14bed3
+CONTENT-HASH: 3971f29af5892b25
 
-Delta review of (1) the course rename FY12 → FY9 and (2) the exam-structure text the teacher confirmed on 4.11.2026 (unit.md "Sähköinen koe" and "Ajankäyttö ja tehtävien valinta", teacher.md "Kokeen tiedot"), commit 3052d352, plus the small fixes I made during this review (listed below). Previous all-PASS hash: 210723c3675594ef.
-
-Rename: every other file of `content/fi/units/fy9-koe/` and `lessons/units/fy9-koe/` (review/ excluded) at 3052d352 equals its 47782fdd version with `fy12`→`fy9` and `FY12`→`FY9` replaced, and nothing else. No `fy12` remains in the sources or the preview.
-
-Fixes made in this review:
-- unit.md, Osa III: "kehität siitä päätelmiä" → "teet siitä päätelmiä" (natural Finnish).
-- unit.md, Ajankäyttö: "Jos voit valita, valitse tehtävät, joiden …" → "Osissa II ja III valitset tehtävät itse: valitse ne, joiden …" (the conditional contradicted the now-stated structure, where choosing is always part of Osat II and III).
-- unit.md, Ajankäyttö: "Jaa aika tehtävien pisteiden suhteen" → "Jaa aika suunnilleen tehtävien pisteiden mukaan" ("suhteen" was wrong; the budget that follows is not strictly proportional, 3 / 2,3 / 2,75 min per point, so "suunnilleen").
-- teacher.md, Kokeen tiedot: "6 h" → "$6\,\text{h}$".
+Delta review: unit.md "Sähköinen koe", paragraph after the Osa list (new sentence: "Tämä on kokeen yleinen rakenne: tehtävien kysymysmuodot ja Osan I kohtien määrä vaihtelevat kokeesta toiseen, joten tarkista ajantasainen rakenne ylioppilastutkintolautakunnan ohjeista."). Previous PASS hash: 8cf0da264f14bed3.
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-1. (Carried over) inquiry.json Tutki "Vastaus B": Sijoitus line break at 390.
-2. (Carried over) Esimerkki stage labels vs the steps figure.
-3. (Carried over) fy9-koe-s2-graph tick numbers ≈ 10 px at 390.
-4. review/shots.md still names fy12-koe capture files from the earlier round; regenerate it with the next capture run (not part of the hash).
+1. [Minor] unit.md "Sähköinen koe", same paragraph — "tarkista ajantasainen rakenne ..." and two sentences later "Tarkista ne ajantasaisina ..." repeat the verb and adjective; fix: merge into one sentence at the end, e.g. "Sallitut apuvälineet ja ohjelmat sekä kokeen ajantasainen rakenne on kerrottu ylioppilastutkintolautakunnan ohjeissa; tarkista ne ennen koetta ja harjoittele kokeen ohjelmilla etukäteen."
+2. (Carried over, not re-judged) the earlier Polish items in the unit's other stages.
 
 ## Checked
-- `python3 scripts/build.py fy9-koe` (preview only; site/ untouched). Playwright at 390 and 1280, all details open: no `.katex-error`, no raw `$`, no page errors, no broken images, no horizontal scroll.
-- Captures of "Koe ja ajankäyttö" at 390 and 1280: the three-item Osa list renders as a bulleted list with bold labels, wraps cleanly at 390, and the time budget's minutes render as KaTeX (`$360\,\text{min}$` etc.). No `×`; no division in the new text.
-- LaTeX: every number with a unit in the new text is in LaTeX (minutes; "kuusi tuntia" is a word). Points (pistettä, p) and task counts are counts, written as plain numbers like elsewhere on the site.
-- SVG ids (`fy9koe-h-*` etc.): every `url(#…)` resolves; `units.py figures` and `practice.py figures` up to date.
-- Finnish: read the new paragraphs in full; after the fixes above no language issues.
+- Built preview (python scripts/build.py, then scripts/screenshot.py fy9-koe; 138 captures). Opened the paragraph at 390 px (koe-390-0): wraps cleanly, no formulas in the new text, no clipping, no horizontal scroll. Read the diff (one paragraph; the rest of the unit is unchanged).
 
-## Shared issues
-None.
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

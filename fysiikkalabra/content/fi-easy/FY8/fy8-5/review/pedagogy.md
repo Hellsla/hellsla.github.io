@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f4c25dfd29e9d304
+CONTENT-HASH: cd5d2e83707ba40d
+
 ## Blocking
+(none)
 
 ## Polish
+- "Kvanttitila" is explained in the next sentence; optionally add "eli tila, jossa elektroni voi olla".
 
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: each term is one the lesson bolds and uses, each explanation matches the lesson's own definition (often word for word), is physically correct and short S2 Finnish; nothing disclosed beyond the lesson.
+batch delta review (fi-easy, NOTES 12): orbital defined as state/standing wave with the 90 % region as illustration; summary and misconception stay consistent; STM caption plain.

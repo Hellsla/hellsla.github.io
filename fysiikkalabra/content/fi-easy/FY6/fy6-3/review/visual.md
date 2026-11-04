@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b99940abb9adfb36
+CONTENT-HASH: 8baae29cd64c26db
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy6-3-theory-1280-1: the filament photo sits beside the Ohmin laki heading, away from the Mistä resistanssi tulee paragraph the caption explains. Acceptable.
+(none)
 
 ## Checked
-batch delta review: opened fy6-3-theory-1280 captures holding the new unit-photo (floats right, 20 rem wide, no clipping or overflow, figure beside it intact, credit line present, alt text and caption natural Finnish, any quantity in the caption set as LaTeX with its unit) plus the surrounding figures and formulas.
+- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.

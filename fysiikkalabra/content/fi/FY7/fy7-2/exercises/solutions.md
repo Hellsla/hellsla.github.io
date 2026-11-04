@@ -9,7 +9,7 @@
 **Järkevyys:** Voima on hyvin pieni, mutta protonin massa on vain $1{,}7 \cdot 10^{-27}\,\text{kg}$, joten kiihtyvyys on noin $10^{13}\,\text{m/s}^2$: suihku kaartuu selvästi jo muutaman senttimetrin matkalla. Pyöristetyillä luvuilla $1{,}6 \cdot 10^{-19}\,\text{C} \cdot 3 \cdot 10^{5}\,\text{m/s} \cdot 0{,}25\,\text{T} \approx 1{,}2 \cdot 10^{-14}\,\text{N}$, sama tulos.
 
 ## fy7-2-L1-02
-**Annettu:** elektroni, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, varauksen suuruus $|q| = e = 1{,}602 \cdot 10^{-19}\,\text{C}$, $v = 2{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuorassa kenttää vastaan, $B = 1{,}5\,\text{mT}$
+**Annettu:** elektroni, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, varauksen suuruus ${|q| = e = 1{,}602 \cdot 10^{-19}\,\text{C}}$, $v = 2{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuorassa kenttää vastaan, $B = 1{,}5\,\text{mT}$
 **Kysytty:** ympyräradan säde $r$ millimetreinä
 **Periaate:** Magneettinen voima on kohtisuorassa nopeutta vastaan ja koko ajan yhtä suuri, joten elektroni on tasaisessa ympyräliikkeessä ja magneettinen voima on sen keskeisvoima.
 **Kaava:** $|q|vB = \dfrac{mv^2}{r}$, josta $r = \dfrac{mv}{|q|B}$

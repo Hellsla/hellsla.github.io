@@ -60,7 +60,7 @@
         {
           "text": "It would fall by tens of degrees, because the thermal radiation of the ground would escape almost freely into space.",
           "correct": true,
-          "feedback": "Correct. Greenhouse gases let the Sun's radiation through but slow down the escape of thermal radiation, and part of the energy returns to the ground. Without the natural greenhouse effect the mean temperature would be about $-18\\,{}^\\circ\\text{C}$ instead of the real $+15\\,{}^\\circ\\text{C}$, that is, about $33\\,\\text{K}$ lower."
+          "feedback": "Correct. Greenhouse gases let the Sun's radiation through but slow down the escape of thermal radiation, and part of the energy returns to the ground. A simple radiative balance model of the Earth gives an effective radiating temperature of about $-18\\,{}^\\circ\\text{C}$, while the mean surface temperature is about $+15\\,{}^\\circ\\text{C}$. The difference, about $33\\,\\text{K}$, illustrates how much the greenhouse effect matters."
         },
         {
           "text": "It would stay the same, because the temperature of the ground is decided only by how strongly the Sun shines.",
@@ -494,7 +494,7 @@
       "prompt": "Explain why the natural greenhouse effect is useful but its strengthening is a problem. Also say why burning fossil fuels strengthens the effect.",
       "criteria": [
         "I said that greenhouse gases let the Sun's radiation through but slow down the escape of thermal radiation.",
-        "I mentioned that the natural effect raises the mean temperature from about $-18\\,{}^\\circ\\text{C}$ to about $+15\\,{}^\\circ\\text{C}$.",
+        "I mentioned that a simple radiative balance model gives about $-18\\,{}^\\circ\\text{C}$, while the mean surface temperature is about $+15\\,{}^\\circ\\text{C}$.",
         "I explained that burning fossil fuels releases carbon dioxide, so more radiation-absorbing gases remain in the atmosphere.",
         "I linked the strengthening to climate change, that is, to the rise of the mean temperature."
       ],

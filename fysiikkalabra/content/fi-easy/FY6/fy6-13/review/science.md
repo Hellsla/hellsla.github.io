@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d292f41b1275bb3a
+CONTENT-HASH: ac40aeea284452d7
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Compared lesson.md, inquiry.json, exit-ticket.json with the passed Finnish chapter by script: every number, unit, formula and LaTeX block is identical (decimal comma and `$…$` kept, terms explained on first use); no key missing or extra in inquiry.json, exit-ticket.json.
-- Formulas C = Q/U, C = ε0 εr A/d, U_max = E_max d, W = ½QU = ½CU², table of εr and E_max (air, teflon, paper, glass), connected/disconnected table, worked example (6,75 J, 6,75 kW, 7 stages) all unchanged in meaning; the conditions of the plate formula and the factor ½ (half of QU becomes internal energy) are kept.
-- Predictions: the correct option and every feedback keep the Finnish physics and model values (11 -> 44 µJ; 89 nC; 1,0 -> 0,18 kV). Experiments: initial, locked, vary, measure keys unchanged; explain models and criteria match.
-- figures.json: descriptions and the few figure words keep the meaning; no physics in the figure changed.
-- sims.fy6-13 labels keep every placeholder, unit and symbol.
+- Total charge: theory, misconception and Tiivistelmä agree: plates carry $+Q$ and $-Q$, total charge zero, $Q$ means one plate's charge magnitude, energy is stored in the field between the plates.
+- Half-energy result: limited to charging an initially uncharged capacitor from a constant-voltage source through resistance and marked "ei yleinen laki"; the transfer task states the same conditions (empty capacitor, 9,0 V battery, through a resistor, until the current stops). Etsi virhe feedback presupposes a source that gives $QU$ (C).
+- Dielectric table and reasons: with the source connected U stays the same while Q and W grow; with it disconnected Q stays the same while U and W fall, the field doing work pulling the slab in. Polarisation mechanism checked.
+- Plate formula conditions (small gap, edge effects ignored, dielectric filling the gap) stated; $U_\text{max} = E_\text{max}d$, paper 160 V checked.
+- Worked example recomputed: $W = 6{,}75\,\text{J}$, $P = 6{,}75\,\text{kW}$, $Q = 0{,}045\,\text{C}$, 2 W charging gives 3,4 s, about 3400 times the flash.
+- Sim numbers ($A = 200\,\text{cm}^2$, $d = 2\,\text{mm}$): $C = 88{,}5\,\text{pF}$; 44/89 nC, 11/44 µJ; glass disconnected 0,18 kV, 7,9 µJ; air breakdown above 3 kV/mm; lesson-answers.py agrees.
+- Kertaus 150 kV/m, Etsi virhe 0,034 J, transfer 190 µJ (mistakes 381, 0, 42,3), TV capacitor 12 J, exit ticket 1,2 mC.
+- Charging and discharging stay qualitative; current is largest at the start in both. Each choice has exactly one correct option.
+- Captions (0,1 µF film capacitor rated 275 V AC; substation capacitor bank) correct; safety statement on charged capacitors after disconnection kept.
+- Table values for εr and E_max are approximate and stated as such.

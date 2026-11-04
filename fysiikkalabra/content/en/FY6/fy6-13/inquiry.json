@@ -468,7 +468,7 @@
         },
         {
           "text": "The factor $\\tfrac{1}{2}$ is unnecessary, because the source delivers the energy $QU$, so the energy is $67\\,680\\,\\text{J}$.",
-          "feedback": "In charging the source delivers the energy $QU$, but only half of it is stored in the capacitor; the other half becomes internal energy of the wires and resistors. The factor $\\tfrac{1}{2}$ belongs in the formula. The error is not converting the microfarads."
+          "feedback": "When an empty capacitor is charged from a constant-voltage source, the source delivers the energy $QU$, but only half of it is stored in the capacitor; the other half becomes internal energy of the wires and resistors. The factor $\\tfrac{1}{2}$ belongs in the formula. The error is not converting the microfarads."
         },
         {
           "text": "The voltage should not be squared, so the energy is $\\tfrac{1}{2} \\cdot 470 \\cdot 12\\,\\text{J} = 2820\\,\\text{J}$.",

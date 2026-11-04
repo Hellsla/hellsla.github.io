@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 785104440d20a841
+CONTENT-HASH: 1b3bb9c895033f88
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] caption: the number $4{,}45$ has no unit; "4,45 pulssia sekunnissa" (unit as on the display, CPS) would be clearer for S2 readers. Decimal comma is correct.
+(none)
 
 ## Checked
-batch delta review: caption with $4{,}45$ renders correctly with decimal comma and matches the display. Rendered preview/fi-easy/fy8-13.html at 390 and 1280 px, photo figure opened at 390; KaTeX renders without error, no clipping, no horizontal overflow.
+- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.

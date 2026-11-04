@@ -1,18 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 5154640e532cb66e
+CONTENT-HASH: 29fe996265405d42
+
+Full review (scope: a changed line carries a formula). The change of this round: signed charge $q$ in the vector law $\overline{F}_\text{s} = q\overline{E}$, magnitude $|q|$ in $F_\text{s} = |q|E$, $E_\text{k} = |q|U$ (with "kiihdyttävä jännite"), $F_\text{m} = |q|vB\sin\alpha$, $r = mv/(|q|B)$, $m = |q|B_2r/v$, the selector condition, contribution, prior, summary and exit ticket; chapter references renamed.
 
 ## Blocking
 
+None.
+
 ## Polish
-- lesson.md (Hiukkaskiihdytin): the ring raises B at a fixed r, as a synchrotron does. Exercise L3-02's cyclotron keeps B fixed and lets r grow. Fix (optional): add the clause "(syklotronissa kenttä pysyy vakiona ja rata laajenee)".
-- inquiry.json simulaatio.model: "Painovoima ... noin 10¹² kertaa magneettista voimaa pienempi" holds at the default settings (2·10¹²). At the slider extremes (B = 0,01 T, v = 0,5 · 10⁶ m/s) the ratio is about 5·10¹⁰. Fix (optional): "vähintään noin 10¹⁰ kertaa".
+
+1. inquiry.json `simulaatio.calc` — "magneettinen voima, jonka suuruus on $qvB$" and "Lukemien voimat $F_\text{m} = qvB$ ja $F_\text{s} = qE$": the sim offers the negative hydrogen ion ($-e$), and sim.js already uses `Math.abs(P.q)`. Write $|q|vB$ and $|q|E$ there so the box says what the theory now says.
+2. The remaining $qU$, $qvB$, $r = mv : (qB)$ in inquiry.json (kertaus, ennuste-2/3, johtopäätös, pohdi, virhe, siirto, tarkistus-1/3/4) concern only positive particles (proton, alpha, deuteron, Ne⁺, B⁺), so they are right by the lesson's "Positiivisella hiukkasella $|q| = q$". Optional: `pohdi` (generic $r = mv : (qB)$) could use $|q|$ too.
 
 ## Checked
-- I recomputed every lesson and inquiry number in one script with my own formulas: 3,2·10⁻¹⁴ N and 5,2 cm, F : G ≈ 2·10¹², the r-graph (10,4 / 20,9 cm), kertaus and its distractors, koe-1 d 10,44 / 20,89 cm, koe-2 24 / 48 fN, virhe 4,57 → 6,46 cm, siirto 0,2252 T with its mistakes 0,159 and 0,00712, tarkistus-3 6,22 cm (12,4 for q = e), the exit ticket, m_p : m_e ≈ 1840, and LHC 1,09·10⁻⁶ J. All agree.
-- Worked example, symbolic first: v = E : B₁ = 3,00·10⁵ m/s and m = 3,324·10⁻²⁶ kg = 20,01 u. Ne-22 lands at 27,4 cm. v is about 0,10 % of c. Three significant figures are justified.
-- Directions are right: force-dir (B into the page, + up, − down), circle-path (B out of the page, + turns clockwise, F toward the centre), spectrometer (E up, B₁ out, F_s up and F_m down, + curves down in B₂, the heavier ion lands farther), track-sign (curves down, so negative).
-- sim.js: Boris steps with q(v×B). An E×B balance gives exactly y = 0 (I checked this algebraically). The force arrows show q v × B. The model box matches the code.
-- koe-1 isolates v, the hits fit on the 22 cm detector, and vLoppu stays constant. In koe-2 the slider steps reach 150 kV/m, 0,15 T and 1,0 Mm/s. The keys Fm15, Fs15 and poikkeama exist.
-- The round 1 polish items are fixed: units are now Mm/s and fN, pohdi names the selector, the glossary adds "samalla varauksella", and the example says "noin 0,1 %".
-- Every choice item has exactly one correct option, and every distractor's feedback gives the right reason.
-- Conditions are stated where the laws are used (v ≪ c, perpendicular entry, homogeneous field, vacuum, no gravity). Scope fits FY7 and the täsmennys.
+
+- Sign/magnitude: vector law with signed $q$, every magnitude formula with $|q|$, direction rule for $\pm$; $W = |q|U$ limited to an accelerating voltage and a particle from rest. Consistent across Ydinajatus, Kaava, selector, spectrometer, accelerator, Tiivistelmä, prior, contribution and exit ticket.
+- Recomputed with my own formulas (agree with lesson-answers.py): proton $1{,}0\cdot10^6$ m/s, $0{,}20$ T: $F = 3{,}20\cdot10^{-14}$ N, $r = 5{,}22$ cm, weight $1{,}64\cdot10^{-26}$ N (ratio $2\cdot10^{12}$, "noin $10^{12}$" C).
+- Example: $v = 3{,}00\cdot10^5$ m/s, $m = 3{,}324\cdot10^{-26}$ kg $= 20{,}01$ u; Ne-22 at $27{,}4$ cm. Exit/misconception ratio $m_p/m_e = 1837$ ≈ 1840.
+- Inquiry: kertaus $4{,}38\to8{,}75\cdot10^5$ m/s; koe-1 $d = 10{,}4/20{,}9$ cm; koe-2 $E/B = 1{,}0\cdot10^6$ m/s, $24/48$ fN; virhe $4{,}57\to6{,}46$ cm; siirto $B = 0{,}225$ T, mistakes $0{,}159$, $0{,}00712$; tarkistus-3 $6{,}22$ cm, mistake $12{,}4$. Each choice has exactly one correct option with right feedback; tarkistus-2 right-hand rule correct (field into page, rightward $v$: $+$ pushed up).
+- Experiments isolate the varied parameter (koe-1 only $v$, koe-2 only the particle) and the sim's `simState` gives `d`, `vLoppu`, `poikkeama`, `Fm15`, `Fs15`.
+- sim.js: force from signed $q$ in $\overline{F} = q(\overline{E} + \overline{v}\times\overline{B})$ components, readouts with $|q|$; gravity omitted with stated reason; non-relativistic limit stated (LHC caveat present). LHC $6{,}8$ TeV $= 1{,}09\cdot10^{-6}$ J.
+- Photo captions (aurora, fine-beam tube, Berkeley cyclotron): physics correct.
+- Hash same at start and end.

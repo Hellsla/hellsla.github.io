@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3bed236abcdd3c6b
+CONTENT-HASH: cc6a622ee50a1fe4
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- "Jää ja sulamisvesi ovat silloin samassa lämpötilassa": add "eli lämpötasapainossa" so the physics word reappears (rule 2). Optional.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+batch delta review (fi-easy, NOTES 12): added sentences are short and say the ice-water mixture stays at 0 C and other parts of the bag can be warmer; 0,80 m^2 now in LaTeX; physics unchanged.

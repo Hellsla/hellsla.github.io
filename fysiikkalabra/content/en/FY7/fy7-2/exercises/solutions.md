@@ -9,7 +9,7 @@
 **Reasonableness:** The force is very small, but the mass of a proton is only $1.7 \cdot 10^{-27}\,\text{kg}$, so the acceleration is about $10^{13}\,\text{m/s}^2$: the beam clearly curves within a few centimetres. With rounded numbers $1.6 \cdot 10^{-19}\,\text{C} \cdot 3 \cdot 10^{5}\,\text{m/s} \cdot 0.25\,\text{T} \approx 1.2 \cdot 10^{-14}\,\text{N}$, the same result.
 
 ## fy7-2-L1-02
-**Given:** electron, $m = 9.109 \cdot 10^{-31}\,\text{kg}$, magnitude of the charge $|q| = e = 1.602 \cdot 10^{-19}\,\text{C}$, $v = 2.0 \cdot 10^{6}\,\text{m/s}$ perpendicular to the field, $B = 1.5\,\text{mT}$
+**Given:** electron, $m = 9.109 \cdot 10^{-31}\,\text{kg}$, magnitude of the charge ${|q| = e = 1.602 \cdot 10^{-19}\,\text{C}}$, $v = 2.0 \cdot 10^{6}\,\text{m/s}$ perpendicular to the field, $B = 1.5\,\text{mT}$
 **Find:** the radius $r$ of the circular path in millimetres
 **Principle:** The magnetic force is perpendicular to the velocity and of constant magnitude, so the electron is in uniform circular motion and the magnetic force is its centripetal force.
 **Formula:** $|q|vB = \dfrac{mv^2}{r}$, so $r = \dfrac{mv}{|q|B}$

@@ -330,7 +330,7 @@ W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2
 ```
 Tässä $W$ on energia ($\text{J}$), $Q$ on varaus ($\text{C}$), $U$ on jännite ($\text{V}$) ja $C$ on kapasitanssi ($\text{F}$). Jälkimmäinen muoto saadaan sijoittamalla $Q = CU$. Energiaa merkitään $W$:llä, koska $E$ tarkoittaa tässä luvussa sähkökentän voimakkuutta. Myös luvussa *Akut ja latauspiiri* energia oli $W$, koska $E$ oli siellä lähdejännite.
 
-Ajatellaan, että aluksi varaamaton kondensaattori ladataan vakiojännitelähteestä tavallisessa latauspiirissä, jossa on resistanssia. Lähde siirtää koko varauksen $Q$ täyden jännitteensä $U$ yli, joten se antaa energian $QU$. Kondensaattoriin varastoituu siitä vain puolet. Toinen puoli muuttuu latauksen aikana johtimien ja vastusten sisäenergiaksi. Sisäenergia siirtyy lämpönä ympäristöön. Puolet ei ole yleinen laki kaikille lataustavoille. Se on tämän mallin tulos.
+Ajatellaan, että aluksi varaamaton kondensaattori ladataan vakiojännitelähteestä eli lähteestä, jonka jännite pysyy samana, tavallisessa latauspiirissä, jossa on resistanssia. Lähde siirtää koko varauksen $Q$ täyden jännitteensä $U$ yli, joten se antaa energian $QU$. Kondensaattoriin varastoituu siitä vain puolet. Toinen puoli muuttuu latauksen aikana johtimien ja vastusten sisäenergiaksi. Sisäenergia siirtyy lämpönä ympäristöön. Puolet ei ole yleinen laki kaikille lataustavoille. Se on tämän mallin tulos.
 
 ### Eriste, kun lähde on kytkettynä tai irrotettuna
 Kun levyjen väliin työnnetään eristelevy, joka täyttää välin, kapasitanssi kasvaa $\varepsilon_\text{r}$-kertaiseksi. Muut suureet muuttuvat sen mukaan, pysyykö kondensaattori kytkettynä lähteeseen.

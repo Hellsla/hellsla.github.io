@@ -108,7 +108,7 @@ Rakennusosan, kuten kylmälaukun seinän, läpi johtuva teho on
 ```latex
 P = U A \Delta T
 ```
-missä $U$ on U-arvo (W/(m²·K)), $A$ seinien yhteispinta-ala (m²) ja $\Delta T$ ulko- ja sisälämpötilan erotus (K). Niin kauan kuin laukussa on jäätä, sisälämpötila on $0\,{}^\circ\text{C}$ ja $\Delta T$ on ulkolämpötila celsiusasteina. Silloin kaikki seinän läpi tuleva energia sulattaa jäätä, $UA\Delta T\,t = sm$, ja jään kestoaika on
+missä $U$ on U-arvo (W/(m²·K)), $A$ seinien yhteispinta-ala (m²) ja $\Delta T$ ulko- ja sisälämpötilan erotus (K). Mallissa oletetaan, että laukun sisälämpötila on $0\,{}^\circ\text{C}$ niin kauan kuin jäätä on, jolloin $\Delta T$ on ulkolämpötila celsiusasteina. Silloin kaikki seinän läpi tuleva energia sulattaa jäätä, $UA\Delta T\,t = sm$, ja jään kestoaika on
 ```latex
 t = \frac{s\,m}{U A \Delta T}
 ```
