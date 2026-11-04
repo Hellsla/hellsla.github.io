@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "contribution": "Quantities of radiation dose and radiation safety: the absorbed dose $D = \\tfrac{E}{m}$ in grays, the weighting factors of radiation and tissues and the effective dose in sieverts, the average dose of a Finn and radon with STUK's figures, and protection by time, distance (the inverse-square law) and shielding (half-value thickness).",
+  "learn": [
+    "calculate the absorbed, equivalent and effective dose with weighting factors.",
+    "explain where a Finn's radiation dose comes from and why its largest source gives such a large dose.",
+    "calculate how time, distance and shielding reduce the dose from gamma radiation."
+  ],
+  "prior": [
+    "Ionising radiation damages cells, and alpha, beta and gamma radiation differ in penetrating power (chapter *Ionising radiation and the body*)",
+    "The amount of a radioactive substance halves during every half-life (chapter *The decay law and half-life*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A Finn receives a radiation dose of about $5.9\\,\\text{mSv}$ per year on average. The share of nuclear power plants in it is negligible. Where does the rest come from: examinations in hospitals, space, the ground under our feet or somewhere else? On the other hand, a maintenance worker at a nuclear power plant works near radiation sources, and their dose must still be kept below the legal limit.",
+      "question": "Where does a Finn's radiation dose come from, and how can a person working near a radiation source keep their own dose small?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Review: the penetrating power of alpha radiation",
+      "prompt": "Many natural radioactive substances, such as the members of the uranium decay series, emit alpha radiation. Why is an alpha emitter dangerous mainly when it has got inside the body?",
+      "choices": [
+        {
+          "text": "The skin stops alpha particles, but inside they give their energy directly to living cells.",
+          "correct": true,
+          "feedback": "Correct. The range of an alpha particle is only a few centimetres in air and less than a millimetre in tissue. External alpha radiation does not reach living cells, but when inhaled or swallowed an alpha emitter is right next to living cells, and its radiation ionises them densely."
+        },
+        {
+          "text": "Alpha particles turn into gamma radiation in the body, which passes through tissues more easily than alpha radiation.",
+          "feedback": "An alpha particle consists of two protons and two neutrons, and it does not turn into gamma radiation. It is dangerous inside precisely because it stops within a short distance and gives all its energy there."
+        },
+        {
+          "text": "The skin reflects alpha radiation back, but inside the body there is no similar surface.",
+          "feedback": "The skin does not reflect alpha radiation but absorbs it: the particles stop in the dead surface layer of the skin, so living cells do not receive a dose. Inside, the particles stop in living cells."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: double the distance",
+      "prompt": "In front of a gamma source at a distance of $1.0\\,\\text{m}$ a radiation meter shows the dose rate $40\\,\\mu\\text{Sv/h}$. The meter is moved to a distance of $2.0\\,\\text{m}$. Roughly what does the meter show?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "About $10\\,\\mu\\text{Sv/h}$, because the radiation is spread over four times the area.",
+          "correct": true,
+          "feedback": "The values of the model support this: at $1.0\\,\\text{m}$ $40.0\\,\\mu\\text{Sv/h}$, at $2.0\\,\\text{m}$ $10.0\\,\\mu\\text{Sv/h}$ and at $4.0\\,\\text{m}$ $2.50\\,\\mu\\text{Sv/h}$. When the distance doubles, the dose rate falls to a quarter."
+        },
+        {
+          "text": "About $20\\,\\mu\\text{Sv/h}$, because double the distance halves the radiation hitting the meter.",
+          "feedback": "The values of the model refute this: at $2.0\\,\\text{m}$ the meter showed $10.0\\,\\mu\\text{Sv/h}$, not $20\\,\\mu\\text{Sv/h}$. Radiation spreads in every direction, so it is spread over the surface of a sphere whose area grows as the square of the distance: at double the distance the area is four times as large."
+        },
+        {
+          "text": "Still about $40\\,\\mu\\text{Sv/h}$, because air hardly attenuates gamma radiation.",
+          "feedback": "Over a few metres air really does attenuate gamma radiation very little, but the value of the model at $2.0\\,\\text{m}$ was still $10.0\\,\\mu\\text{Sv/h}$. The radiation does not disappear but spreads over an ever larger area, so an ever smaller part of it hits the window of the meter."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: double the shielding",
+      "prompt": "A $6\\,\\text{mm}$ lead plate placed between the source and the meter reduces the dose rate from $40\\,\\mu\\text{Sv/h}$ to $20\\,\\mu\\text{Sv/h}$. What does the meter show when there is $12\\,\\text{mm}$ of lead?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "About $10\\,\\mu\\text{Sv/h}$, because the second layer halves the radiation that got through the first.",
+          "correct": true,
+          "feedback": "The values of the model support this: $0$, $6$, $12$ and $18\\,\\text{mm}$ of lead gave $40.0$, $20.0$, $10.0$ and $5.00\\,\\mu\\text{Sv/h}$. Every $6\\,\\text{mm}$ layer attenuates the same fraction of the radiation arriving at it, that is, halves it."
+        },
+        {
+          "text": "Nothing, because two halves stop all the radiation.",
+          "feedback": "The values of the model refute this: behind $12\\,\\text{mm}$ the meter showed $10.0\\,\\mu\\text{Sv/h}$, and even behind $30\\,\\text{mm}$ $1.25\\,\\mu\\text{Sv/h}$. Every layer attenuates half of the radiation *arriving at it*, so the radiation weakens but does not end completely."
+        },
+        {
+          "text": "Still about $20\\,\\mu\\text{Sv/h}$, because the first layer has already stopped the weak photons and the rest go through the lead.",
+          "feedback": "The values of the model refute this: behind $12\\,\\text{mm}$ the dose rate was $10.0\\,\\mu\\text{Sv/h}$, half of the value at $6\\,\\text{mm}$. Photons of the same energy are absorbed at random, so every layer attenuates the same fraction of those that arrive at it."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: the largest source of dose",
+      "prompt": "From which source does a Finn receive the largest part of the annual radiation dose on average?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Feedback opens when you have read the part of the Theory summary titled Where a Finn's radiation dose comes from."
+      },
+      "choices": [
+        {
+          "text": "From the indoor air of homes and other buildings.",
+          "correct": true,
+          "feedback": "Correct: according to STUK's estimate, indoor radon gives a Finn about $4\\,\\text{mSv}$ per year on average, about two thirds of the whole dose of $5.9\\,\\text{mSv}$. Radon is a radioactive noble gas that rises from the soil and bedrock into the indoor air of houses."
+        },
+        {
+          "text": "From X-ray examinations and other medical examinations.",
+          "feedback": "Examinations in health care give about $0.8\\,\\text{mSv}$ per year on average. Indoor radon gives about $4\\,\\text{mSv}$, about five times as much."
+        },
+        {
+          "text": "From the gamma radiation of the soil and bedrock, which enters the body from outside.",
+          "feedback": "The gamma radiation of the soil and building materials is part of other natural radiation, which together with radiation from space and the body's own radioactive substances gives about $1.1\\,\\text{mSv}$ per year. The largest single source is indoor radon, about $4\\,\\text{mSv}$ per year."
+        },
+        {
+          "text": "From radiation from space, which reaches all the way to the ground.",
+          "feedback": "At ground level the atmosphere shields from most of the radiation from space. It is part of other natural radiation, whose combined share is about $1.1\\,\\text{mSv}$ per year. The largest source is indoor radon, about $4\\,\\text{mSv}$ per year."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A gamma source is in a lead container. Move the radiation meter, add lead between the source and the meter and let the time spent run. Follow the dose rate $\\dot{H}$ and the accumulating dose $H$.",
+      "howto": "*Distance* moves the meter to $1.0$–$4.0\\,\\text{m}$ from the source in steps of $0.5\\,\\text{m}$, and *Lead* sets the thickness of the lead plate to $0$–$30\\,\\text{mm}$. *Start time* runs the time spent from $0$ to $60\\,\\text{min}$, and *Stop* stops it; the time can also be moved with the slider. In the picture photons fly from the source as orange dots. A photon absorbed in the lead flashes in the lead, and one that hits the window of the meter makes the window flash. Above the meter is the dose rate it shows. *Speed* changes only the pace of the time and the flight of the photons.",
+      "model": "The source is a point-like model source of gamma radiation whose dose rate is $40.0\\,\\mu\\text{Sv/h}$ at a distance of $1.0\\,\\text{m}$ without a shield. The half-value thickness of lead in the model is $d_{1/2} = 6.0\\,\\text{mm}$. The model assumes that the air does not attenuate the radiation and that no photons scattered in the lead get through. Background radiation is not included. The photons in the picture illustrate the model, but the readings are calculated: they are values of the model, not measurements.",
+      "calc": "Photons leave the source evenly in all directions. At distance $r$ they are spread over a sphere of area $4\\pi r^2$, so the fraction $\\tfrac{A}{4\\pi r^2}$ hits the window of the meter, where $A$ is the area of the window. The dose rate without a shield is therefore $\\dot{H} = 40.0\\,\\mu\\text{Sv/h} \\cdot \\left(\\tfrac{1\\,\\text{m}}{r}\\right)^2$. Lead lets through the fraction $\\left(\\tfrac{1}{2}\\right)^{d/6.0\\,\\text{mm}}$, which is shown in the readings as a percentage. The dose is $H = \\dot{H} t$ when the time is converted to hours: $1\\,\\text{min} = \\tfrac{1}{60}\\,\\text{h}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: distance",
+      "intro": "Test prediction 1. There is no lead. Change only the distance and record the dose rate $\\dot{H}$ at least at the distances $1.0$, $2.0$ and $4.0\\,\\text{m}$, and at $3.0\\,\\text{m}$ too if you wish.",
+      "initial": {
+        "r": 1,
+        "x": 0,
+        "t": 0
+      },
+      "locked": [
+        "x",
+        "t"
+      ],
+      "vary": "r",
+      "min": 3,
+      "units": {
+        "r": "m",
+        "x": "mm",
+        "t": "min"
+      },
+      "names": {
+        "r": "distance $r$",
+        "x": "lead $d$",
+        "t": "time spent $t$"
+      },
+      "measure": [
+        {
+          "key": "Hdot",
+          "label": "$\\dot{H}\\ (\\mu\\text{Sv/h})$"
+        }
+      ]
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: lead shield",
+      "intro": "Test prediction 2. The meter is $1.0\\,\\text{m}$ from the source. Change only the thickness of the lead and record the dose rate $\\dot{H}$ at least at the thicknesses $0$, $6$, $12$ and $18\\,\\text{mm}$.",
+      "initial": {
+        "r": 1,
+        "x": 0,
+        "t": 0
+      },
+      "locked": [
+        "r",
+        "t"
+      ],
+      "vary": "x",
+      "min": 3,
+      "units": {
+        "r": "m",
+        "x": "mm",
+        "t": "min"
+      },
+      "names": {
+        "r": "distance $r$",
+        "x": "lead $d$",
+        "t": "time spent $t$"
+      },
+      "measure": [
+        {
+          "key": "Hdot",
+          "label": "$\\dot{H}\\ (\\mu\\text{Sv/h})$"
+        }
+      ]
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: distance and shielding",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write on the basis of your tables: What happened to the dose rate when the distance doubled? What happened after every $6\\,\\text{mm}$ layer of lead? Why do distance and shielding have different effects?",
+      "model": "In experiment 1 the dose rates of the model were $40.0$, $10.0$ and $2.50\\,\\mu\\text{Sv/h}$ at the distances $1.0$, $2.0$ and $4.0\\,\\text{m}$: when the distance doubled, the dose rate fell to a quarter. The reason is that radiation leaving the source in every direction is spread over the surface of a sphere whose area grows as the square of the distance. In experiment 2 the lead thicknesses $0$, $6$, $12$ and $18\\,\\text{mm}$ gave $40.0$, $20.0$, $10.0$ and $5.00\\,\\mu\\text{Sv/h}$: every $6\\,\\text{mm}$ layer halved the dose rate, because it attenuates the same fraction of the photons arriving at it. Distance therefore acts as a square, shielding halves layer by layer, and neither takes the dose rate to zero.",
+      "criteria": [
+        "I say, with values of the model, that doubling the distance reduced the dose rate to a quarter and not to a half.",
+        "I say, with values of the model, that every $6\\,\\text{mm}$ layer of lead halved the dose rate.",
+        "I explain the inverse-square law by radiation spreading over an ever larger area and the effect of shielding by every layer attenuating the same fraction of the radiation arriving at it.",
+        "I call the numbers of the simulation values of the model and not measurements."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model and with STUK's figures. Then return to the opening question: why does a Finn's largest dose come from home, and why can a person working near a radiation source still receive a small dose?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2",
+        "ennuste-3"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "The absorbed dose of the lungs from alpha radiation is $0.50\\,\\text{mGy}$. A student writes: “Since $1\\,\\text{Gy} = 1\\,\\tfrac{\\text{J}}{\\text{kg}}$ and $1\\,\\text{Sv} = 1\\,\\tfrac{\\text{J}}{\\text{kg}}$, the effective dose is $H_\\text{E} = 0.50\\,\\text{mSv}$.” Where is the error?",
+      "choices": [
+        {
+          "text": "They forgot the weighting factors: $w_\\text{R} = 20$ for alpha radiation and $w_\\text{T} = 0.12$ for the lungs.",
+          "correct": true,
+          "feedback": "Correct. The unit of the gray and the sievert is the same, but the sievert is a weighted dose. The equivalent dose of the lungs is $H_\\text{T} = 20 \\cdot 0.50\\,\\text{mGy} = 10\\,\\text{mSv}$, and the effective dose $H_\\text{E} = 0.12 \\cdot 10\\,\\text{mSv} = 1.2\\,\\text{mSv}$."
+        },
+        {
+          "text": "They should have divided the dose by the mass of the lungs, because the dose is energy per kilogram.",
+          "feedback": "The absorbed dose $0.50\\,\\text{mGy}$ is already energy per kilogram, so it is not divided by the mass again. The error is in the weighting: the correct result is $H_\\text{E} = 0.12 \\cdot 20 \\cdot 0.50\\,\\text{mGy} = 1.2\\,\\text{mSv}$."
+        },
+        {
+          "text": "Grays cannot be converted to sieverts, because they measure completely different quantities.",
+          "feedback": "The equivalent dose is obtained from the absorbed dose with a factor: $H_\\text{T} = w_\\text{R} D_\\text{T}$. The conversion is therefore possible when the weighting factors are taken into account. The correct result is $1.2\\,\\text{mSv}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply: time, distance and shielding together",
+      "prompt": "In industrial radiography, welded seams are imaged with a gamma source. The dose rate of the source is $1.80\\,\\text{mSv/h}$ at a distance of $1.0\\,\\text{m}$. A worker does a job lasting $15\\,\\text{min}$ at a distance of $3.0\\,\\text{m}$ from the source behind a $12\\,\\text{mm}$ lead shield. The half-value thickness of lead for this radiation is $6.0\\,\\text{mm}$. How large a dose does the worker receive? Give the answer in microsieverts.",
+      "answer": 12.5,
+      "unit": "µSv",
+      "tolerance": 0.02,
+      "hints": [
+        "Handle one means of protection at a time: first distance, then lead, finally time.",
+        "The distance triples, so the dose rate is $\\left(\\tfrac{1}{3}\\right)^2 = \\tfrac{1}{9}$ of the original. $12\\,\\text{mm}$ is two half-value thicknesses.",
+        "Behind the lead the dose rate is $1800\\,\\mu\\text{Sv/h} \\cdot \\tfrac{1}{9} \\cdot \\tfrac{1}{4} = 50\\,\\mu\\text{Sv/h}$. Multiply it by the time in hours."
+      ],
+      "mistakes": [
+        {
+          "value": 37.5,
+          "feedback": "You divided the dose rate by the ratio of the distances, $3$. Radiation spreads over an area that grows as the square of the distance, so the factor is $\\left(\\tfrac{1.0\\,\\text{m}}{3.0\\,\\text{m}}\\right)^2 = \\tfrac{1}{9}$."
+        },
+        {
+          "value": 25,
+          "feedback": "You took only one halving of the lead into account. $12\\,\\text{mm}$ is two half-value thicknesses, so the lead lets through $\\left(\\tfrac{1}{2}\\right)^2 = \\tfrac{1}{4}$."
+        },
+        {
+          "value": 50,
+          "feedback": "This is the dose without the lead, or the dose rate in microsieverts per hour. Take the shielding into account too and multiply the dose rate by the time $0.25\\,\\text{h}$."
+        },
+        {
+          "value": 750,
+          "feedback": "You multiplied the dose rate in the unit $\\mu\\text{Sv/h}$ by the number of minutes, $15$. Convert the time to hours: $15\\,\\text{min} = 0.25\\,\\text{h}$."
+        }
+      ],
+      "solution": "**Given:** dose rate $\\dot{H}_1 = 1.80\\,\\text{mSv/h}$ at distance $r_1 = 1.0\\,\\text{m}$, distance of the workplace $r_2 = 3.0\\,\\text{m}$, lead $d = 12\\,\\text{mm}$, half-value thickness $d_{1/2} = 6.0\\,\\text{mm}$, working time $t = 15\\,\\text{min}$\n\n**Asked:** the worker's dose $H$ in microsieverts\n\n**Principle:** The source is small and air attenuates gamma radiation little, so the dose rate decreases with the square of the distance. The lead then attenuates the fraction determined by the half-value thickness: every $6.0\\,\\text{mm}$ halves the dose rate. The dose rate stays constant at the workplace, so the dose is the dose rate times the time.\n\n**Formula:** $\\dot{H}_2 = \\dot{H}_1 \\left(\\tfrac{r_1}{r_2}\\right)^2$, behind the shield $\\dot{H} = \\dot{H}_2 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$ and $H = \\dot{H} t$, so $H = \\dot{H}_1 \\left(\\tfrac{r_1}{r_2}\\right)^2 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}} t$\n\n**Conversions:** $1.80\\,\\text{mSv/h} = 1.80 \\cdot 1000\\,\\mu\\text{Sv/h} = 1800\\,\\mu\\text{Sv/h}$ and $t = 15\\,\\text{min} = 15 \\cdot \\tfrac{1}{60}\\,\\text{h} = 0.25\\,\\text{h}$\n\n**Substitution:** $H = 1800\\,\\mu\\text{Sv/h} \\cdot \\left(\\tfrac{1.0\\,\\text{m}}{3.0\\,\\text{m}}\\right)^2 \\cdot \\left(\\tfrac{1}{2}\\right)^{12\\,\\text{mm} / 6.0\\,\\text{mm}} \\cdot 0.25\\,\\text{h} = 1800\\,\\mu\\text{Sv/h} \\cdot \\tfrac{1}{9} \\cdot \\tfrac{1}{4} \\cdot 0.25\\,\\text{h} = 50.0\\,\\mu\\text{Sv/h} \\cdot 0.25\\,\\text{h} = 12.5\\,\\mu\\text{Sv}$\n\n**Answer:** $12.5\\,\\mu\\text{Sv}$, three significant figures like the dose rate $1.80\\,\\text{mSv/h}$; the ratios of the distances and thicknesses are exact numbers, $\\tfrac{1}{9}$ and $\\tfrac{1}{4}$.\n\n**Reasonableness:** Distance reduces the dose rate to a ninth and lead to a quarter more, to a $36$th in total: $1800 : 36 = 50\\,\\mu\\text{Sv/h}$. In a quarter of an hour a quarter of this accumulates. The dose is less than a hundredth of the annual limit of $20\\,\\text{mSv}$ for a radiation worker, which fits the planned work."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. Level 1 tasks use one equation, level 2 tasks convert units or combine two equations, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Two identical tissue samples receive the same absorbed dose of $1\\,\\text{mGy}$, one from gamma radiation and the other from alpha radiation. What can be said about their equivalent doses?",
+      "choices": [
+        {
+          "text": "That of the sample that received alpha radiation is $20$ times larger, because an alpha particle ionises more densely.",
+          "correct": true,
+          "feedback": "Correct. The absorbed energy is the same, but an alpha particle gives it up as a dense track and damages DNA more. So $H_\\text{T} = w_\\text{R} D_\\text{T}$ gives $1\\,\\text{mSv}$ for gamma and $20\\,\\text{mSv}$ for alpha."
+        },
+        {
+          "text": "They are equal, because both samples received the same energy per kilogram.",
+          "feedback": "The absorbed dose is the same, but the equivalent dose takes the type of radiation into account. The weighting factor of alpha radiation is $20$ and that of gamma radiation $1$, so the equivalent dose of alpha is $20\\,\\text{mSv}$ and that of gamma $1\\,\\text{mSv}$."
+        },
+        {
+          "text": "That of the sample that received gamma radiation is larger, because gamma radiation penetrates the whole tissue.",
+          "feedback": "Penetrating power tells how deep the radiation reaches, not how much harm the same absorbed energy does. An alpha particle ionises more densely, so its weighting factor is $20$ and that of gamma $1$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Read the half-value thickness from a graph",
+      "figure": "fy8-13/vaimennus",
+      "prompt": "The graph shows the dose rate of gamma radiation behind a concrete wall as a function of the thickness of the wall. Read from the graph the half-value thickness of concrete for this radiation. Give the answer in centimetres.",
+      "answer": 5.0,
+      "unit": "cm",
+      "tolerance": 0.06,
+      "hints": [
+        "What is the dose rate without concrete, that is, at $d = 0$? And half of that?",
+        "Find the point where the curve is at half of its initial value and read its thickness from the horizontal axis.",
+        "The initial value is $80\\,\\mu\\text{Sv/h}$, so find the point where $\\dot{H} = 40\\,\\mu\\text{Sv/h}$."
+      ],
+      "mistakes": [
+        {
+          "value": 10,
+          "feedback": "You read the thickness at which the dose rate is a quarter of the initial value, $20\\,\\mu\\text{Sv/h}$. That is two half-value thicknesses. The half-value thickness is the thickness that halves the dose rate."
+        },
+        {
+          "value": 40,
+          "feedback": "This is half of the initial value in microsieverts per hour. What is asked is the thickness at which the dose rate falls to this value: read it from the horizontal axis."
+        }
+      ],
+      "solution": "**Given:** the dose rate $\\dot{H}$ of the graph as a function of the thickness of concrete $d$, grid spacing $1\\,\\text{cm}$ and $5\\,\\mu\\text{Sv/h}$\n\n**Asked:** the half-value thickness of concrete $d_{1/2}$ in centimetres\n\n**Principle:** Every layer of the same thickness attenuates the same fraction of the radiation arriving at it, so the dose rate is halved whenever the thickness grows by one half-value thickness, starting from any point.\n\n**Reading the graph:** At $d = 0$ the graph starts from the value $\\dot{H}_0 = 80\\,\\mu\\text{Sv/h}$. Half of that is $40\\,\\mu\\text{Sv/h}$, and a horizontal line from this height meets the curve at $d = 5.0\\,\\text{cm}$. Check: $20\\,\\mu\\text{Sv/h}$ is reached at $10\\,\\text{cm}$.\n\n**Formula:** $\\dot{H} = \\dot{H}_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$; when $\\dot{H} = \\tfrac{1}{2}\\dot{H}_0$, the exponent is $\\tfrac{d}{d_{1/2}} = 1$, so $d_{1/2} = d$\n\n**Conversions:** Not needed: the thickness is read directly in centimetres.\n\n**Substitution:** $\\tfrac{1}{2}\\dot{H}_0 = \\tfrac{1}{2} \\cdot 80\\,\\mu\\text{Sv/h} = 40\\,\\mu\\text{Sv/h}$, which is reached at $d = 5.0\\,\\text{cm}$, so $d_{1/2} = 5.0\\,\\text{cm}$\n\n**Answer:** $5.0\\,\\text{cm}$, two significant figures, because the thickness can be read from the graph to about $0.2\\,\\text{cm}$.\n\n**Reasonableness:** At five half-value thicknesses, that is, $25\\,\\text{cm}$, the dose rate should be $80\\,\\mu\\text{Sv/h} : 32 = 2.5\\,\\mu\\text{Sv/h}$, and the graph is near zero there, as it should be. The value is of the same order of magnitude as the half-value thickness of the gamma radiation of caesium-137 in concrete, about $4\\,\\text{cm}$. The radiation in the graph therefore has a slightly higher energy than that of caesium-137."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and transfer",
+      "prompt": "Radon is a noble gas that does not bind to the body, and most of the radon that is inhaled is breathed out. Explain why indoor radon is nevertheless the largest source of radiation dose for Finns, and why the radon concentration in Finland is often higher in winter than in summer.",
+      "model": "The short-lived decay products of radon, isotopes of polonium, lead and bismuth, are solids that attach to dust particles and remain on the surfaces of the airways. There polonium-218 and polonium-214 emit alpha radiation, which gives all its energy over a short distance into the cells of the lungs. The weighting factor of alpha radiation is $20$, so even a small absorbed dose gives a large equivalent dose, and the lungs are a sensitive tissue ($w_\\text{T} = 0.12$). The granitic bedrock of Finland contains a lot of uranium, from which radon is formed, and the gravel of eskers lets soil air through. In winter warm indoor air rises and escapes from the upper part of the house, which creates an underpressure in the lower part that sucks radon-containing soil air in through gaps in the foundations. That is why the radon concentration is often higher in winter and why it is measured during the heating season.",
+      "criteria": [
+        "I explain that the dose comes from the solid decay products of radon, which remain in the airways and emit alpha radiation.",
+        "I justify the large dose with the weighting factor $20$ of alpha radiation or with alpha radiation giving its energy to cells over a short distance.",
+        "I say that radon is formed from the uranium of the soil and bedrock, of which the Finnish bedrock contains a lot.",
+        "I explain the higher winter concentration by the underpressure caused by warm indoor air, which sucks in soil air."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit"
+    }
+  ]
+}

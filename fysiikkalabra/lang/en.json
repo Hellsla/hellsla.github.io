@@ -1856,7 +1856,9 @@
       "nopea": "fast",
       "selite": "Grey dot: neutron. Orange flash: fission. Dashed line: the model's prediction.",
       "lukemat": "Multiplication factor $k = {{k}}$, the model's prediction $N_0 k^g = {{m}}$<br>Generation $g = {{g}}$: neutrons $N = {{N}}$, of which fissions $F = {{F}}$<br><strong>Growth from the previous generation $N_g : N_{g-1} = {{r}}$</strong>",
-      "neutroneja": "$\\text{neutrons}\\ N = {{N}}$"
+      "neutroneja": "$\\text{neutrons}\\ N = {{N}}$",
+      "sydan_otsikko": "$\\text{reactor core}$",
+      "sukupolvi_akseli": "$\\text{generation}\\ g$"
     },
     "fy8-12": {
       "mittaa": "Measure",
@@ -1882,7 +1884,8 @@
       "k_lahde_tausta": "$\\text{no source}$",
       "k_lahde_alfa": "$\\alpha\\text{ source}$",
       "k_lahde_beeta": "$\\beta\\text{ source}$",
-      "k_lahde_gamma": "$\\gamma\\text{ source}$"
+      "k_lahde_gamma": "$\\gamma\\text{ source}$",
+      "gm_putki": "$\\text{GM tube}$"
     },
     "fy8-10": {
       "nayta_kaikki": "Show all nuclei",
@@ -1922,6 +1925,20 @@
       "el_Bi": "bismuth",
       "el_Th": "thorium",
       "el_U": "uranium"
+    },
+    "fy8-13": {
+      "kaynnista": "Start time",
+      "pysayta": "Stop",
+      "etaisyys": "Distance $r = {{r}}\\,\\text{m}$",
+      "lyijy": "Lead $d = {{x}}\\,\\text{mm}$",
+      "aika": "Time spent $t = {{t}}\\,\\text{min}$",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "selite": "Orange dot: gamma photon. Flash in the lead: the photon was absorbed.",
+      "lukemat": "Distance $r = {{r}}\\,\\text{m}$, lead $d = {{x}}\\,\\text{mm}$, ${{f}}\\,\\%$ gets through<br><strong>Dose rate $\\dot{H} = {{Hd}}\\,\\mu\\text{Sv/h}$</strong><br>Time spent $t = {{t}}\\,\\text{min}$, dose $H = {{H}}\\,\\mu\\text{Sv}$",
+      "lahde_kanvas": "$\\text{source}$"
     }
   },
   "practice": {
