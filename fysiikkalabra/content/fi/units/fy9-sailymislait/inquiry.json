@@ -1,0 +1,490 @@
+{
+ "version": 1,
+ "contribution": "Kertaustunti kokoaa FY4-moduulin liike- ja potentiaalienergian, mekaanisen energian säilymisen ja energiaperiaatteen, vesi- ja tuulivoimalan tehon, liikemäärän ja impulssin, liikemäärän säilymisen yksiulotteisissa törmäyksissä sekä pysähtymismatkan ja turvavarusteet yhdeksi malliksi kahdesta säilymislaista ja harjoittaa niistä ylioppilaskokeen tyyppisiä tehtäviä: lain valinta tilanteen mukaan, etumerkit, energian ja liikemäärän erottaminen, linearisoitu kuvaaja jarrutusaineistosta, raportin arviointi ja moduulit yhdistävä lämpenemistehtävä.",
+ "learn": [
+  "ratkaisemaan energia-, impulssi- ja törmäystehtäviä valitsemalla sopivan säilymislain",
+  "laatimaan ja tulkitsemaan jarrutus- ja törmäysaineiston kuvaajia",
+  "arvioimaan liikemäärän ja energian säilymistä koskevia väitteitä ja mittauksia perustellusti"
+ ],
+ "prior": [
+  "Liike-energia on $\\tfrac12 mv^2$ ja potentiaalienergia $mgh$ (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*)",
+  "Muiden voimien kuin painon työ muuttaa mekaanista energiaa (luku *Mekaanisen energian säilyminen ja energiaperiaate*)",
+  "Kokonaisvoiman impulssi on yhtä suuri kuin liikemäärän muutos (luku *Liikemäärä ja impulssi*)",
+  "Kokonaisliikemäärä säilyy, kun ulkoisten voimien impulssi on pieni (luku *Liikemäärän säilyminen ja yksiulotteiset törmäykset*)",
+  "Pysähtymismatka on reaktiomatka ja jarrutusmatka (luku *Liikenneturvallisuus: jarrutus, turvavyö ja turvatyyny*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Ratapihalla vaihtotyöveturi työntää $32\\,\\text{t}$:n tavaravaunun liikkeelle ja jarruttaa. Vaunu rullaa vapaasti nopeudella $1{,}6\\,\\text{m/s}$ ja törmää seisovaan samanlaiseen vaunuun. Kytkin lukittuu, ja vaunut jatkavat yhdessä. Kukaan ei jarruta, ja kiskojen vierimisvastus on törmäyksen ajan hyvin pieni. Kokeessa tällainen tilanne voi olla tehtävän alku: luvut on annettu, mutta lakia ei.",
+   "question": "Kuinka nopeasti vaunut jatkavat yhdessä, ja onko niillä yhteensä yhtä paljon liike-energiaa kuin rullaavalla vaunulla ennen törmäystä?"
+  },
+  {
+   "id": "lt-1",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 1: nopeus kaksinkertaistuu",
+   "prompt": "Auto kiihdyttää nopeudesta $40\\,\\text{km/h}$ nopeuteen $80\\,\\text{km/h}$. Kuinka moninkertaiseksi auton liike-energia kasvaa?",
+   "choices": [
+    {
+     "text": "Kaksinkertaiseksi, koska nopeus kaksinkertaistuu.",
+     "feedback": "Liike-energia ei ole verrannollinen nopeuteen vaan sen neliöön, $E_\\text{k} = \\tfrac12 mv^2$. Kaksinkertainen nopeus antaa kertoimen $2^2 = 4$. Kertaa luvussa *Liike-energia, potentiaalienergia ja mekaaninen energia*."
+    },
+    {
+     "text": "Nelinkertaiseksi, koska nopeus on toisessa potenssissa.",
+     "feedback": "Oikein. $E_\\text{k} = \\tfrac12 mv^2$, joten kerroin on $\\left(\\tfrac{80}{40}\\right)^2 = 4$. Siksi myös jarrutusmatka nelinkertaistuu. Kertaa tarvittaessa luvussa *Liike-energia, potentiaalienergia ja mekaaninen energia*.",
+     "correct": true
+    },
+    {
+     "text": "Se ei muutu, koska auton massa pysyy samana.",
+     "feedback": "Massa pysyy samana, mutta liike-energia riippuu myös nopeudesta, $E_\\text{k} = \\tfrac12 mv^2$, ja vieläpä sen neliöstä. Kertaa luvussa *Liike-energia, potentiaalienergia ja mekaaninen energia*."
+    }
+   ]
+  },
+  {
+   "id": "lt-2",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 2: jyrkkä ja loiva liukumäki",
+   "prompt": "Kaksi kitkatonta liukumäkeä lähtee samalta korkeudelta ja päättyy samalle tasolle. Toinen on jyrkkä ja lyhyt, toinen loiva ja pitkä. Lapsi lähtee kummastakin levosta. Kummassa hänen nopeutensa on alhaalla suurempi?",
+   "choices": [
+    {
+     "text": "Jyrkässä, koska siinä kiihtyvyys on suurempi.",
+     "feedback": "Jyrkässä mäessä kiihtyvyys on suurempi, mutta loivassa se vaikuttaa pidemmän matkan. Energia ratkaisee: kitkatta $mgh = \\tfrac12 mv^2$, joten $v = \\sqrt{2gh}$ riippuu vain korkeudesta. Kertaa luvussa *Mekaanisen energian säilyminen ja energiaperiaate*."
+    },
+    {
+     "text": "Loivassa, koska siinä kiihtyminen kestää kauemmin.",
+     "feedback": "Pidempi aika ei anna suurempaa nopeutta, koska kiihtyvyys on loivassa mäessä pienempi. Kitkatta mekaaninen energia säilyy, ja nopeus riippuu vain korkeuserosta. Kertaa luvussa *Mekaanisen energian säilyminen ja energiaperiaate*."
+    },
+    {
+     "text": "Yhtä suuri, koska vain korkeusero ratkaisee.",
+     "feedback": "Oikein. Tukivoima ei tee työtä, joten mekaaninen energia säilyy ja $v = \\sqrt{2gh}$ kummassakin mäessä. Kertaa tarvittaessa luvussa *Mekaanisen energian säilyminen ja energiaperiaate*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "lt-3",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 3: kitka laskussa",
+   "prompt": "Pulkka laskee mäen levosta, ja mäen juurella sen nopeus on pienempi kuin $\\sqrt{2gh}$. Mikä väite kitkasta ja energiasta on oikein?",
+   "choices": [
+    {
+     "text": "Kitka tekee negatiivista työtä, ja mekaanista energiaa muuttuu sisäenergiaksi.",
+     "feedback": "Oikein. Energiaperiaatteen mukaan $mgh + W_\\text{muut} = \\tfrac12 mv^2$, ja kitkan työ $W_\\text{muut}$ on negatiivinen. Kokonaisenergia säilyy, kun mukaan lasketaan lumen, jalasten ja ilman sisäenergia. Kertaa tarvittaessa luvussa *Mekaanisen energian säilyminen ja energiaperiaate*.",
+     "correct": true
+    },
+    {
+     "text": "Kitka kuluttaa energiaa, joten kokonaisenergia pienenee laskun aikana.",
+     "feedback": "Kokonaisenergia säilyy aina. Kitka muuttaa mekaanista energiaa sisäenergiaksi: lumi, jalakset ja ilma lämpenevät hieman. Kertaa luvussa *Mekaanisen energian säilyminen ja energiaperiaate*."
+    },
+    {
+     "text": "Kitka pienentää potentiaalienergiaa, joten mäki on kuin matalampi.",
+     "feedback": "Potentiaalienergian muutos riippuu vain korkeuserosta, $mgh$, eikä kitka muuta sitä. Kitka tekee negatiivista työtä, joka pienentää liike-energiaa. Kertaa luvussa *Mekaanisen energian säilyminen ja energiaperiaate*."
+    }
+   ]
+  },
+  {
+   "id": "lt-4",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 4: patja vai lattia",
+   "prompt": "Voimistelija hyppää alas telineeltä kerran paksulle patjalle ja kerran kovalle lattialle. Kummallakin kerralla hän osuu alustaan samalla nopeudella ja pysähtyy. Miksi patja suojaa?",
+   "choices": [
+    {
+     "text": "Patja pienentää voimistelijan liikemäärän muutosta pysähtymisessä.",
+     "feedback": "Liikemäärän muutos on molemmilla kerroilla sama: liikemäärä muuttuu arvosta $mv$ nollaan. Patja pidentää pysähtymisaikaa, joten sama muutos saadaan pienemmällä keskimääräisellä voimalla. Kertaa luvussa *Liikemäärä ja impulssi*."
+    },
+    {
+     "text": "Patja pidentää pysähtymisaikaa, joten keskimääräinen voima pienenee.",
+     "feedback": "Oikein. Impulssiperiaatteen mukaan $F_\\text{ka}\\,\\Delta t = |\\Delta p|$, ja $|\\Delta p|$ on sama. Pidempi $\\Delta t$ tarkoittaa pienempää keskimääräistä voimaa. Kertaa tarvittaessa luvussa *Liikemäärä ja impulssi*.",
+     "correct": true
+    },
+    {
+     "text": "Patja ottaa vastaan liike-energian, joten impulssia ei synny.",
+     "feedback": "Pysähtyminen vaatii aina impulssin, jonka suuruus on $|\\Delta p| = mv$. Patja muuttaa liike-energian sisäenergiaksi, mutta suojaava vaikutus tulee pidemmästä pysähtymisajasta ja siksi pienemmästä voimasta. Kertaa luvussa *Liikemäärä ja impulssi*."
+    }
+   ]
+  },
+  {
+   "id": "lt-5",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 5: taklaus jäällä",
+   "prompt": "Kaksi jääkiekkoilijaa törmää ja jää kiinni toisiinsa. Jään kitka on törmäyksen aikana merkityksettömän pieni. Mikä säilyy törmäyksessä?",
+   "choices": [
+    {
+     "text": "Sekä kokonaisliikemäärä että liike-energia.",
+     "feedback": "Liike-energia säilyy vain kimmoisassa törmäyksessä. Kun pelaajat jäävät kiinni toisiinsa, törmäys on täysin kimmoton, ja osa liike-energiasta muuttuu sisäenergiaksi. Kertaa luvussa *Liikemäärän säilyminen ja yksiulotteiset törmäykset*."
+    },
+    {
+     "text": "Liike-energia, mutta ei kokonaisliikemäärä.",
+     "feedback": "Juuri toisin päin. Pelaajien voimat toisiinsa ovat sisäisiä ja vastakkaissuuntaisia, joten kokonaisliikemäärä säilyy. Liike-energiaa muuttuu sisäenergiaksi. Kertaa luvussa *Liikemäärän säilyminen ja yksiulotteiset törmäykset*."
+    },
+    {
+     "text": "Kokonaisliikemäärä, mutta ei liike-energia.",
+     "feedback": "Oikein. Ulkoisten voimien impulssi on pieni, joten liikemäärä säilyy, mutta täysin kimmottomassa törmäyksessä liike-energiaa muuttuu eniten muiksi energiamuodoiksi. Kertaa tarvittaessa luvussa *Liikemäärän säilyminen ja yksiulotteiset törmäykset*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "lt-6",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 6: tuulivoimalan teho",
+   "prompt": "Tuulen nopeus kasvaa $5\\,\\text{m/s}$:sta $10\\,\\text{m/s}$:iin, ja voimalan hyötysuhde pysyy samana. Voimala ei vielä käy nimellisteholla. Kuinka moninkertaiseksi sen teho kasvaa?",
+   "choices": [
+    {
+     "text": "Kaksinkertaiseksi, koska tuulen nopeus kaksinkertaistuu.",
+     "feedback": "Kaksinkertaisella nopeudella roottorin läpi virtaa sekunnissa kaksinkertainen ilmamäärä, ja jokaisella kilogrammalla on nelinkertainen liike-energia. Teho kasvaa $2 \\cdot 4 = 8$ -kertaiseksi. Kertaa luvussa *Vesi- ja tuulivoima energian muuntajina*."
+    },
+    {
+     "text": "Nelinkertaiseksi, koska liike-energia riippuu nopeuden neliöstä.",
+     "feedback": "Liike-energia kilogrammaa kohti nelinkertaistuu, mutta myös ilmaa virtaa sekunnissa kaksinkertainen määrä. Siksi $P = \\tfrac12\\eta\\rho Av^3$, ja kerroin on $2^3 = 8$. Kertaa luvussa *Vesi- ja tuulivoima energian muuntajina*."
+    },
+    {
+     "text": "Kahdeksankertaiseksi, koska teho riippuu nopeuden kuutiosta.",
+     "feedback": "Oikein. $P = \\tfrac12\\eta\\rho Av^3$, joten kerroin on $2^3 = 8$. Nimellistehon jälkeen tehoa rajoitetaan, eikä kaava enää päde. Kertaa tarvittaessa luvussa *Vesi- ja tuulivoima energian muuntajina*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "aineisto",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Kolme törmäystä ilmatyynyradalla",
+   "source": "example",
+   "source_note": "Keksitty esimerkki koulun ilmatyynyradan mittauksista: luvut on laskettu liikemäärän säilymisestä, ja niihin on lisätty mittausten kaltaista vaihtelua.",
+   "text": "Ilmatyynyradalla vaunu A ($m_\\text{A} = 0{,}300\\,\\text{kg}$) törmää levossa olevaan vaunuun B ($m_\\text{B} = 0{,}200\\,\\text{kg}$). Valoportit mittaavat nopeudet juuri ennen törmäystä ja juuri sen jälkeen. Vaunujen välissä on kolmella kerralla eri puskuri: jousi, kova kumi ja tarranauha, joka pitää vaunut yhdessä. Kaikki nopeudet ovat samaan suuntaan.\n\n| Törmäys | $v_\\text{A}\\ (\\text{m/s})$ | $v_\\text{A}'\\ (\\text{m/s})$ | $v_\\text{B}'\\ (\\text{m/s})$ |\n|---|---|---|---|\n| jousipuskuri | $0{,}520$ | $0{,}098$ | $0{,}620$ |\n| kumipuskuri | $0{,}600$ | $0{,}213$ | $0{,}580$ |\n| tarranauha | $0{,}480$ | $0{,}284$ | $0{,}284$ |\n\nLaske jokaisesta törmäyksestä kokonaisliikemäärä ja vaunujen yhteinen liike-energia ennen ja jälkeen. Vastaa alla tarranauhatörmäyksen luvulla. Mallivastauksessa on kaikkien kolmen törmäyksen vertailu.",
+   "question": {
+    "type": "numeric",
+    "prompt": "Kuinka monta prosenttia vaunujen liike-energiasta muuttui tarranauhatörmäyksessä muiksi energiamuodoiksi? Vastaa prosentteina.",
+    "answer": 41.66,
+    "unit": "%",
+    "tolerance": 0.03,
+    "hints": [
+     "Laske liike-energia ennen törmäystä, kun vain vaunu A liikkuu, ja sen jälkeen, kun molemmat vaunut liikkuvat yhdessä.",
+     "Törmäyksen jälkeen liikkuva massa on $m_\\text{A} + m_\\text{B} = 0{,}500\\,\\text{kg}$.",
+     "$E_\\text{k} = \\tfrac12 \\cdot 0{,}300\\,\\text{kg} \\cdot (0{,}480\\,\\tfrac{\\text{m}}{\\text{s}})^2$ ennen ja $\\tfrac12 \\cdot 0{,}500\\,\\text{kg} \\cdot (0{,}284\\,\\tfrac{\\text{m}}{\\text{s}})^2$ jälkeen."
+    ],
+    "mistakes": [
+     {
+      "value": 58.34,
+      "feedback": "Tämä on liike-energian osuus, joka jäi jäljelle. Kysytään muuttunutta osuutta: $100\\,\\% - 58{,}3\\,\\%$."
+     },
+     {
+      "value": 1.39,
+      "feedback": "Vertasit liikemääriä. Liikemäärä säilyy lähes tarkasti; kysytään liike-energiaa $\\tfrac12 mv^2$."
+     },
+     {
+      "value": 65.0,
+      "feedback": "Laskit törmäyksen jälkeisen liike-energian vain vaunulle A. Vaunut liikkuvat yhdessä, joten massa on $0{,}500\\,\\text{kg}$."
+     }
+    ],
+    "solution": "**Annettu:** $m_\\text{A} = 0{,}300\\,\\text{kg}$, $m_\\text{B} = 0{,}200\\,\\text{kg}$; tarranauhatörmäyksessä $v_\\text{A} = 0{,}480\\,\\text{m/s}$, B levossa, ja jälkeen yhteinen nopeus $v' = 0{,}284\\,\\text{m/s}$\n\n**Kysytty:** muiksi energiamuodoiksi muuttuneen liike-energian osuus prosentteina\n\n**Periaate:** Vaunut jäävät kiinni toisiinsa, joten törmäys on täysin kimmoton. Liikemäärä säilyy, koska ilmatyynyradalla ulkoiset voimat kumoavat toisensa, mutta liike-energiaa muuttuu tarranauhan ja vaunujen sisäenergiaksi ja ääneksi. Muuttunut osuus on liike-energian vähenemä jaettuna alkuperäisellä liike-energialla.\n\n**Kaava:** $E_\\text{k} = \\tfrac12 m_\\text{A} v_\\text{A}^2$, $E_\\text{k}' = \\tfrac12 (m_\\text{A} + m_\\text{B})\\,v'^2$ ja osuus $\\dfrac{E_\\text{k} - E_\\text{k}'}{E_\\text{k}}$\n\n**Muunnokset:** Kaikki suureet ovat perusyksiköissä, joten muunnoksia ei tarvita. Suhdeluku muutetaan prosenteiksi kertomalla luvulla $100\\,\\%$.\n\n**Sijoitus:** $E_\\text{k} = \\tfrac12 \\cdot 0{,}300\\,\\text{kg} \\cdot \\left(0{,}480\\,\\tfrac{\\text{m}}{\\text{s}}\\right)^2 = 0{,}03456\\,\\text{J}$ ja $E_\\text{k}' = \\tfrac12 \\cdot 0{,}500\\,\\text{kg} \\cdot \\left(0{,}284\\,\\tfrac{\\text{m}}{\\text{s}}\\right)^2 = 0{,}02016\\,\\text{J}$. Osuus on $\\dfrac{0{,}03456\\,\\text{J} - 0{,}02016\\,\\text{J}}{0{,}03456\\,\\text{J}} = 0{,}4166 = 41{,}7\\,\\%$\n\n**Vastaus:** noin $42\\,\\%$, kaksi merkitsevää numeroa, koska erotus kahdesta lähes samansuuruisesta energiasta kasvattaa nopeuksien kolmannen numeron epävarmuutta.\n\n**Järkevyys:** Täysin kimmottomassa törmäyksessä levossa olevaan kappaleeseen liike-energiasta muuttuu osuus $\\dfrac{m_\\text{B}}{m_\\text{A} + m_\\text{B}} = \\dfrac{0{,}200}{0{,}500} = 40\\,\\%$, joten tulos on odotettu. Liikemäärä säilyi: $0{,}144\\,\\text{kg} \\cdot \\text{m/s}$ ennen ja $0{,}142\\,\\text{kg} \\cdot \\text{m/s}$ jälkeen. Jousipuskurissa liike-energiasta muuttui vain noin $2\\,\\%$ (lähes kimmoisa), kumipuskurissa noin $25\\,\\%$, ja liikemäärä säilyi kaikissa kolmessa noin $2\\,\\%$:n tarkkuudella."
+   }
+  },
+  {
+   "id": "teoriatiivistelma",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Kaava",
+    "Virheet",
+    "Kertaa"
+   ]
+  },
+  {
+   "id": "virhe-kimpoaminen",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Etsi virhe: pallo kimpoaa seinästä",
+   "prompt": "Opiskelija laski $0{,}20\\,\\text{kg}$:n pallon liikemäärän muutoksen, kun pallo osuu seinään nopeudella $5{,}0\\,\\text{m/s}$ ja kimpoaa suoraan takaisin nopeudella $4{,}0\\,\\text{m/s}$: ”$\\Delta p = 0{,}20\\,\\text{kg} \\cdot 4{,}0\\,\\tfrac{\\text{m}}{\\text{s}} - 0{,}20\\,\\text{kg} \\cdot 5{,}0\\,\\tfrac{\\text{m}}{\\text{s}} = -0{,}20\\,\\text{kg} \\cdot \\text{m/s}$.” Mikä ratkaisussa on väärin?",
+   "choices": [
+    {
+     "text": "Liikemäärä ei muutu lainkaan, koska pallon massa pysyy koko ajan samana.",
+     "feedback": "Liikemäärä $p = mv$ muuttuu, kun nopeus muuttuu, ja myös pelkkä suunnan vaihtuminen muuttaa nopeutta. Virhe on etumerkissä: takaisin kimpoavan pallon nopeus on $-4{,}0\\,\\text{m/s}$."
+    },
+    {
+     "text": "Takaisin kimpoavan pallon nopeus on $-4{,}0\\,\\text{m/s}$, ei $+4{,}0\\,\\text{m/s}$.",
+     "feedback": "Oikein. Kun suunta kohti seinää on positiivinen, $\\Delta p = 0{,}20\\,\\text{kg} \\cdot (-4{,}0\\,\\tfrac{\\text{m}}{\\text{s}}) - 0{,}20\\,\\text{kg} \\cdot 5{,}0\\,\\tfrac{\\text{m}}{\\text{s}} = -1{,}8\\,\\text{kg} \\cdot \\text{m/s}$. Seinän palloon kohdistama impulssi on yhtä suuri.",
+     "correct": true
+    },
+    {
+     "text": "Nopeudet piti laskea yhteen ilman massaa: $\\Delta p = 9{,}0\\,\\text{m/s}$.",
+     "feedback": "Liikemäärän muutoksessa tarvitaan massa, ja sen yksikkö on $\\text{kg} \\cdot \\text{m/s}$. Nopeuden muutoksen suuruus on kyllä $9{,}0\\,\\text{m/s}$, kun etumerkit otetaan huomioon, joten $|\\Delta p| = 0{,}20\\,\\text{kg} \\cdot 9{,}0\\,\\text{m/s}$."
+    }
+   ]
+  },
+  {
+   "id": "puskurit",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Lue kuvaaja: kova ja pehmeä puskuri",
+   "figure": "fy4-9/pysaytys",
+   "prompt": "Kuvaajassa sama $1{,}0\\,\\text{kg}$:n kärry pysähtyy samasta nopeudesta kerran kovaan ja kerran pehmeään puskuriin. Lue kuvaajasta suurimmat voimat ja törmäysten kestot. Mikä väite on oikein?",
+   "choices": [
+    {
+     "text": "Kovan puskurin suurin voima on noin nelinkertainen, joten myös sen impulssi on nelinkertainen.",
+     "feedback": "Suurimmat voimat luit oikein ($80\\,\\text{N}$ ja $20\\,\\text{N}$), mutta impulssi on käyrän ja aika-akselin väliin jäävä pinta-ala, ei suurin voima. Kova törmäys kestää vain noin neljäsosan ajasta, joten pinta-alat ovat yhtä suuret: kärryn liikemäärän muutos on sama. Kertaa luvussa *Liikemäärä ja impulssi*."
+    },
+    {
+     "text": "Kovan puskurin suurin voima on noin nelinkertainen, ja törmäys kestää noin neljäsosan ajasta.",
+     "feedback": "Oikein. Kuvaajasta luetaan noin $80\\,\\text{N}$ ja $0{,}04\\,\\text{s}$ sekä $20\\,\\text{N}$ ja $0{,}16\\,\\text{s}$. Kärry pysähtyy samasta nopeudesta, joten $|\\Delta p| = mv$ ja impulssi ovat samat. Pehmeä puskuri jakaa saman impulssin nelinkertaiselle ajalle, joten voima on neljäsosa.",
+     "correct": true
+    },
+    {
+     "text": "Pehmeän puskurin törmäys kestää noin nelinkertaisen ajan, joten sen impulssi on suurempi.",
+     "feedback": "Kestot luit oikein ($0{,}16\\,\\text{s}$ ja $0{,}04\\,\\text{s}$), mutta pidempi aika ei kasvata impulssia, kun voima on samalla pienempi. Pinta-alat ovat yhtä suuret: impulssi on molemmilla kerroilla sama kuin kärryn liikemäärän muutos. Kertaa luvussa *Liikemäärä ja impulssi*."
+    }
+   ]
+  },
+  {
+   "id": "luistelijat",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Perusteltu väite: luistelijat työntävät",
+   "prompt": "Kaksi luistelijaa seisoo jäällä levossa ja työntää toisiaan. Aikuisen massa on $80\\,\\text{kg}$ ja lapsen $40\\,\\text{kg}$. Mikä väite on oikein heti työnnön jälkeen?",
+   "choices": [
+    {
+     "text": "Lapsi saa kaksinkertaisen nopeuden ja kaksinkertaisen liike-energian aikuiseen verrattuna.",
+     "feedback": "Oikein. Kokonaisliikemäärä on nolla ja pysyy nollana, joten liikemäärät ovat yhtä suuret ja vastakkaiset: $80v_\\text{a} = 40v_\\text{l}$. Liike-energia $\\tfrac{p^2}{2m}$ on samalla liikemäärällä kevyemmällä kaksinkertainen.",
+     "correct": true
+    },
+    {
+     "text": "Kumpikin saa yhtä suuren liike-energian, koska työntävät voimat ovat yhtä suuret.",
+     "feedback": "Voimat ovat yhtä suuret ja vaikuttavat yhtä kauan, joten liikemäärät ovat yhtä suuret. Kevyempi liikkuu nopeammin ja kulkee työnnön aikana pidemmän matkan, joten siihen tehdään enemmän työtä: lapsen liike-energia on kaksinkertainen."
+    },
+    {
+     "text": "Kokonaisliikemäärä kasvaa, koska kumpikin luistelija alkaa liikkua omaan suuntaansa.",
+     "feedback": "Liikemäärä on vektori. Luistelijat liikkuvat vastakkaisiin suuntiin, ja heidän liikemääränsä kumoavat toisensa, joten kokonaisliikemäärä pysyy nollana. Kasvaa vain liike-energia, joka tulee lihasten energiasta."
+    }
+   ]
+  },
+  {
+   "id": "marka-tie",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Perusteltu väite: märkä tie",
+   "prompt": "Auton nopeus on $80\\,\\text{km/h}$ ja kuljettajan reaktioaika sama kuin kuivalla tiellä. Märällä tiellä hidastuvuus on puolet kuivan tien hidastuvuudesta. Mikä väite pysähtymismatkasta on oikein?",
+   "choices": [
+    {
+     "text": "Pysähtymismatka kaksinkertaistuu, koska hidastuvuus puolittuu.",
+     "feedback": "Vain jarrutusmatka $\\tfrac{v_0^2}{2a}$ kaksinkertaistuu. Reaktiomatka $v_0 t_\\text{r}$ ei riipu tiestä, joten pysähtymismatka kasvaa vähemmän kuin kaksinkertaiseksi."
+    },
+    {
+     "text": "Pysähtymismatka nelinkertaistuu, koska jarrutusmatka riippuu neliöstä.",
+     "feedback": "Jarrutusmatka riippuu nopeuden neliöstä, mutta hidastuvuudesta se riippuu kääntäen: puolet hidastuvuudesta antaa kaksinkertaisen jarrutusmatkan. Reaktiomatka pysyy samana."
+    },
+    {
+     "text": "Jarrutusmatka kaksinkertaistuu, mutta pysähtymismatka kasvaa vähemmän.",
+     "feedback": "Oikein. $s_\\text{p} = v_0 t_\\text{r} + \\tfrac{v_0^2}{2a}$. Kun $a$ puolittuu, jälkimmäinen termi kaksinkertaistuu, mutta reaktiomatka pysyy samana. Esimerkiksi $t_\\text{r} = 1{,}0\\,\\text{s}$ ja $a = 8{,}0\\,\\text{m/s}^2$ antavat $22\\,\\text{m} + 31\\,\\text{m} = 53\\,\\text{m}$, märällä $22\\,\\text{m} + 62\\,\\text{m} = 84\\,\\text{m}$.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "pyoraily",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Pyöräilijä alamäessä",
+   "prompt": "Pyöräilijä lähtee mäen päältä nopeudella $3{,}0\\,\\text{m/s}$ ja laskee polkematta $22\\,\\text{m}$ alemmas. Pyöräilijän ja pyörän massa on yhteensä $85\\,\\text{kg}$. Ilmanvastus ja vierimisvastus tekevät laskun aikana yhteensä työn $-11\\,\\text{kJ}$. Kuinka suuri on nopeus mäen alla?",
+   "answer": 13.48,
+   "unit": "m/s",
+   "tolerance": 0.02,
+   "hints": [
+    "Mitkä voimat tekevät työtä? Painon työ on potentiaalienergian muutos, muiden voimien työ lasketaan erikseen.",
+    "Energiaperiaate: $\\tfrac12 mv_1^2 + mgh + W_\\text{muut} = \\tfrac12 mv_2^2$, kun nollataso on mäen alla.",
+    "$v_2 = \\sqrt{v_1^2 + 2gh + \\dfrac{2W_\\text{muut}}{m}}$, ja $W_\\text{muut} = -11\\,000\\,\\text{J}$."
+   ],
+   "mistakes": [
+    {
+     "value": 20.99,
+     "feedback": "Jätit vastusvoimien työn pois. Se on negatiivinen ja pienentää mekaanista energiaa: $W_\\text{muut} = -11\\,000\\,\\text{J}$."
+    },
+    {
+     "value": 26.45,
+     "feedback": "Lisäsit vastusvoimien työn. Vastusvoimat osoittavat liikettä vastaan, joten niiden työ on negatiivinen ja pienentää nopeutta."
+    },
+    {
+     "value": 181.8,
+     "feedback": "Tämä on $v_2^2$ yksikössä $\\text{m}^2\\text{/s}^2$. Ota vielä neliöjuuri."
+    }
+   ],
+   "solution": "**Annettu:** $v_1 = 3{,}0\\,\\text{m/s}$, korkeusero $h = 22\\,\\text{m}$, $m = 85\\,\\text{kg}$, vastusvoimien työ $W_\\text{muut} = -11\\,\\text{kJ}$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** nopeus $v_2$ mäen alla\n\n**Periaate:** Paino tekee työtä, joka otetaan huomioon potentiaalienergian muutoksena. Tukivoima on kohtisuorassa liikettä vastaan eikä tee työtä. Ilmanvastus ja vierimisvastus ovat muita voimia, joiden työ tunnetaan, joten käytetään energiaperiaatetta (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Nollataso valitaan mäen alle.\n\n**Kaava:** $\\tfrac12 mv_1^2 + mgh + W_\\text{muut} = \\tfrac12 mv_2^2$, joten $v_2 = \\sqrt{v_1^2 + 2gh + \\dfrac{2W_\\text{muut}}{m}}$\n\n**Muunnokset:** $-11\\,\\text{kJ} = -11 \\cdot 1000\\,\\text{J} = -11\\,000\\,\\text{J}$\n\n**Sijoitus:** $v_2^2 = \\left(3{,}0\\,\\tfrac{\\text{m}}{\\text{s}}\\right)^2 + 2 \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 22\\,\\text{m} + \\dfrac{2 \\cdot (-11\\,000\\,\\text{J})}{85\\,\\text{kg}} = 9{,}0\\,\\tfrac{\\text{m}^2}{\\text{s}^2} + 431{,}6\\,\\tfrac{\\text{m}^2}{\\text{s}^2} - 258{,}8\\,\\tfrac{\\text{m}^2}{\\text{s}^2} = 181{,}8\\,\\tfrac{\\text{m}^2}{\\text{s}^2}$, joten $v_2 = \\sqrt{181{,}8}\\,\\text{m/s} = 13{,}48\\,\\text{m/s}$\n\n**Vastaus:** $v_2 \\approx 13\\,\\text{m/s}$ eli noin $49\\,\\text{km/h}$, kaksi merkitsevää numeroa kuten korkeus $22\\,\\text{m}$ ja työ $11\\,\\text{kJ}$.\n\n**Järkevyys:** Ilman vastusvoimia nopeus olisi $\\sqrt{440{,}6}\\,\\text{m/s} \\approx 21\\,\\text{m/s}$. Vastusvoimat vievät tässä yli puolet laskussa vapautuvasta potentiaalienergiasta $mgh \\approx 18{,}3\\,\\text{kJ}$, mikä sopii suurella nopeudella, kun ilmanvastus kasvaa nopeasti."
+  },
+  {
+   "id": "pienvesivoimala",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Pienvesivoimala",
+   "prompt": "Joen pienvesivoimalan turbiinien läpi virtaa $45\\,\\text{m}^3$ vettä sekunnissa, ja putouskorkeus on $8{,}5\\,\\text{m}$. Voimalan hyötysuhde on $88\\,\\%$. Kuinka suuri on voimalan sähköteho? Vastaa megawatteina.",
+   "answer": 3.302,
+   "unit": "MW",
+   "tolerance": 0.02,
+   "hints": [
+    "Kuinka paljon potentiaalienergiaa sekunnissa turbiinien läpi virtaava vesi menettää?",
+    "Sekunnissa virtaavan veden massa on $\\rho Q$, ja sen potentiaalienergia on $\\rho Q g h$ joka sekunti.",
+    "$P = \\eta \\rho Q g h = 0{,}88 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 45\\,\\tfrac{\\text{m}^3}{\\text{s}} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 8{,}5\\,\\text{m}$."
+   ],
+   "mistakes": [
+    {
+     "value": 3.752,
+     "feedback": "Tämä on veden tuoma teho. Voimalan sähköteho on siitä vain osa: kerro hyötysuhteella $0{,}88$."
+    },
+    {
+     "value": 4.264,
+     "feedback": "Jaoit hyötysuhteella. Voimala antaa sähköä vähemmän kuin vesi tuo energiaa, joten kerro hyötysuhteella."
+    },
+    {
+     "value": 0.3366,
+     "feedback": "Unohdit putoamiskiihtyvyyden $g$. Potentiaalienergia on $mgh$, ei $mh$."
+    }
+   ],
+   "solution": "**Annettu:** virtaama $Q = 45\\,\\text{m}^3\\text{/s}$, putouskorkeus $h = 8{,}5\\,\\text{m}$, hyötysuhde $\\eta = 88\\,\\%$, veden tiheys $\\rho = 1000\\,\\text{kg/m}^3$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** sähköteho $P$ megawatteina\n\n**Periaate:** Vesi menettää putouskorkeudella potentiaalienergiaa, ja voimala muuttaa siitä osan $\\eta$ sähköksi. Teho on energia sekunnissa: sekunnissa virtaa massa $\\rho Q$ (luku *Vesi- ja tuulivoima energian muuntajina*). Veden liike-energia ylä- ja alavedessä oletetaan pieneksi.\n\n**Kaava:** $P = \\eta \\rho Q g h$\n\n**Muunnokset:** $88\\,\\% = 0{,}88$ ja lopuksi $1\\,\\text{W} = 10^{-6}\\,\\text{MW}$. Muut suureet ovat perusyksiköissä.\n\n**Sijoitus:** $P = 0{,}88 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 45\\,\\tfrac{\\text{m}^3}{\\text{s}} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 8{,}5\\,\\text{m} = 3\\,302\\,000\\,\\text{W} = 3{,}302\\,\\text{MW}$\n\n**Vastaus:** $P \\approx 3{,}3\\,\\text{MW}$, kaksi merkitsevää numeroa kuten virtaama $45\\,\\text{m}^3\\text{/s}$ ja putouskorkeus $8{,}5\\,\\text{m}$.\n\n**Järkevyys:** Kuutiometri vettä menettää putouksessa $1000\\,\\text{kg} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 8{,}5\\,\\text{m} \\approx 83\\,\\text{kJ}$. Kun kuutioita virtaa $45$ sekunnissa, veden teho on noin $3{,}8\\,\\text{MW}$, ja siitä $88\\,\\%$ on $3{,}3\\,\\text{MW}$. Pienvesivoimalalle muutama megawatti on tavallinen teho."
+  },
+  {
+   "id": "turvavyo",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Turvavyö kolarissa",
+   "prompt": "Auto törmää esteeseen nopeudella $40\\,\\text{km/h}$. Turvavyötä käyttävä $70\\,\\text{kg}$:n matkustaja pysähtyy auton rypistyvän keulan mukana ajassa $0{,}12\\,\\text{s}$. Kuinka suuri on matkustajaan kohdistuva keskimääräinen kokonaisvoima? Vastaa kilonewtoneina.",
+   "answer": 6.481,
+   "unit": "kN",
+   "tolerance": 0.02,
+   "hints": [
+    "Mikä on matkustajan liikemäärän muutos, kun hän pysähtyy?",
+    "Impulssiperiaate: $F_\\text{ka}\\,\\Delta t = |\\Delta p| = mv$. Muunna nopeus ensin yksikköön $\\text{m/s}$.",
+    "$40\\,\\text{km/h} = 40 \\cdot \\dfrac{1000\\,\\text{m}}{3600\\,\\text{s}} \\approx 11{,}1\\,\\text{m/s}$."
+   ],
+   "mistakes": [
+    {
+     "value": 23.33,
+     "feedback": "Sijoitit nopeuden yksikössä $\\text{km/h}$. Muunna se ensin: $40\\,\\text{km/h} \\approx 11{,}1\\,\\text{m/s}$."
+    },
+    {
+     "value": 0.7778,
+     "feedback": "Tämä on liikemäärän muutos yksikössä $\\text{kN} \\cdot \\text{s}$. Voima saadaan jakamalla se pysähtymisajalla $0{,}12\\,\\text{s}$."
+    },
+    {
+     "value": 64.81,
+     "feedback": "Käytit aikaa $0{,}012\\,\\text{s}$. Pysähtymisaika on $0{,}12\\,\\text{s}$."
+    }
+   ],
+   "solution": "**Annettu:** $m = 70\\,\\text{kg}$, törmäysnopeus $v = 40\\,\\text{km/h}$, loppunopeus $0$, pysähtymisaika $\\Delta t = 0{,}12\\,\\text{s}$\n\n**Kysytty:** matkustajaan kohdistuva keskimääräinen kokonaisvoima $F_\\text{ka}$ kilonewtoneina\n\n**Periaate:** Matkustajan liikemäärä muuttuu arvosta $mv$ nollaan, ja impulssiperiaatteen mukaan muutos on yhtä suuri kuin kokonaisvoiman impulssi. Keskimääräinen voima on liikemäärän muutos jaettuna pysähtymisajalla (luku *Liikemäärä ja impulssi*).\n\n**Kaava:** $F_\\text{ka}\\,\\Delta t = |\\Delta p| = mv$, joten $F_\\text{ka} = \\dfrac{mv}{\\Delta t}$\n\n**Muunnokset:** $40\\,\\text{km/h} = 40 \\cdot \\dfrac{1000\\,\\text{m}}{3600\\,\\text{s}} = 11{,}11\\,\\text{m/s}$ ja lopuksi $1\\,\\text{N} = 0{,}001\\,\\text{kN}$\n\n**Sijoitus:** $F_\\text{ka} = \\dfrac{70\\,\\text{kg} \\cdot 11{,}11\\,\\tfrac{\\text{m}}{\\text{s}}}{0{,}12\\,\\text{s}} = \\dfrac{777{,}8\\,\\text{kg} \\cdot \\text{m/s}}{0{,}12\\,\\text{s}} = 6481\\,\\text{N} = 6{,}481\\,\\text{kN}$\n\n**Vastaus:** $F_\\text{ka} \\approx 6{,}5\\,\\text{kN}$, kaksi merkitsevää numeroa kuten aika $0{,}12\\,\\text{s}$ ja nopeus $40\\,\\text{km/h}$.\n\n**Järkevyys:** Voima on noin $6481\\,\\text{N} : (70\\,\\text{kg} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2}) \\approx 9{,}4$ kertaa matkustajan paino. Ilman vyötä matkustaja pysähtyisi kojelautaan sekunnin sadasosissa, ja voima olisi noin kymmenkertainen."
+  },
+  {
+   "id": "taklaus",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Taklaus vastakkaisista suunnista",
+   "prompt": "Jääkiekkoilija A ($92\\,\\text{kg}$) luistelee itään nopeudella $6{,}0\\,\\text{m/s}$, ja pelaaja B ($78\\,\\text{kg}$) länteen nopeudella $4{,}5\\,\\text{m/s}$. He törmäävät ja jäävät kiinni toisiinsa. Kuinka suuri on heidän yhteinen nopeutensa heti törmäyksen jälkeen?",
+   "answer": 1.182,
+   "unit": "m/s",
+   "tolerance": 0.02,
+   "hints": [
+    "Valitse positiivinen suunta. Mikä on B:n nopeuden etumerkki?",
+    "Täysin kimmottomassa törmäyksessä $m_\\text{A} v_\\text{A} + m_\\text{B} v_\\text{B} = (m_\\text{A} + m_\\text{B})\\,v'$.",
+    "Kun itä on positiivinen, $v_\\text{B} = -4{,}5\\,\\text{m/s}$."
+   ],
+   "mistakes": [
+    {
+     "value": 5.312,
+     "feedback": "Laskit liikemäärät yhteen ilman etumerkkiä. Pelaajat liikkuvat vastakkaisiin suuntiin, joten B:n nopeus on negatiivinen."
+    },
+    {
+     "value": 0.75,
+     "feedback": "Laskit nopeuksien keskiarvon. Pelaajien massat ovat erisuuret, joten tarvitaan liikemäärän säilyminen."
+    },
+    {
+     "value": 2.185,
+     "feedback": "Jaoit vain A:n massalla. Törmäyksen jälkeen molemmat liikkuvat yhdessä, joten jaa yhteismassalla $170\\,\\text{kg}$."
+    }
+   ],
+   "solution": "**Annettu:** $m_\\text{A} = 92\\,\\text{kg}$, $v_\\text{A} = 6{,}0\\,\\text{m/s}$ itään, $m_\\text{B} = 78\\,\\text{kg}$, $v_\\text{B} = 4{,}5\\,\\text{m/s}$ länteen; pelaajat jäävät kiinni toisiinsa\n\n**Kysytty:** yhteinen nopeus $v'$ suuntineen heti törmäyksen jälkeen\n\n**Periaate:** Pelaajien voimat toisiinsa ovat sisäisiä. Jään kitka on pieni, ja törmäys kestää lyhyen ajan, joten ulkoisten voimien impulssi on merkityksettömän pieni ja kokonaisliikemäärä säilyy. Pelaajat jatkavat yhdessä, joten törmäys on täysin kimmoton (luku *Liikemäärän säilyminen ja yksiulotteiset törmäykset*). Itä valitaan positiiviseksi suunnaksi, joten $v_\\text{B} = -4{,}5\\,\\text{m/s}$.\n\n**Kaava:** $m_\\text{A} v_\\text{A} + m_\\text{B} v_\\text{B} = (m_\\text{A} + m_\\text{B})\\,v'$, joten $v' = \\dfrac{m_\\text{A} v_\\text{A} + m_\\text{B} v_\\text{B}}{m_\\text{A} + m_\\text{B}}$\n\n**Muunnokset:** Kaikki suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $v' = \\dfrac{92\\,\\text{kg} \\cdot 6{,}0\\,\\tfrac{\\text{m}}{\\text{s}} + 78\\,\\text{kg} \\cdot \\left(-4{,}5\\,\\tfrac{\\text{m}}{\\text{s}}\\right)}{92\\,\\text{kg} + 78\\,\\text{kg}} = \\dfrac{552\\,\\text{kg} \\cdot \\tfrac{\\text{m}}{\\text{s}} - 351\\,\\text{kg} \\cdot \\tfrac{\\text{m}}{\\text{s}}}{170\\,\\text{kg}} = 1{,}182\\,\\text{m/s}$\n\n**Vastaus:** $v' \\approx 1{,}2\\,\\text{m/s}$ itään, kaksi merkitsevää numeroa kuten nopeudet $6{,}0\\,\\text{m/s}$ ja $4{,}5\\,\\text{m/s}$.\n\n**Järkevyys:** Nopeus on positiivinen, koska A:n liikemäärä $552\\,\\text{kg} \\cdot \\text{m/s}$ on suurempi kuin B:n $351\\,\\text{kg} \\cdot \\text{m/s}$. Liike-energia pienenee $2446\\,\\text{J}$:sta noin $119\\,\\text{J}$:iin, kuten täysin kimmottomassa törmäyksessä kuuluu: suurin osa siitä muuttuu sisäenergiaksi."
+  },
+  {
+   "id": "lisaa",
+   "stage": "sovella",
+   "type": "exercises",
+   "text": "Tunnin lopussa ovat ylioppilaskokeen tyyliset tehtävät. Kirjoita ratkaisu vihkoon tai koneelle kuten kokeessa, ja arvioi se vasta sitten mallivastauksen ja pisteytyksen avulla."
+  },
+  {
+   "id": "tarkistus-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Käsite",
+   "prompt": "Luoti ammutaan narun varassa riippuvaan puupalikkaan, johon se jää kiinni. Palikka heilahtaa luoteineen ylös. Mikä väite on oikein?",
+   "choices": [
+    {
+     "text": "Mekaaninen energia säilyy koko tapahtuman ajan, koska kitkaa ei ole.",
+     "feedback": "Luodin pysähtyessä puuhun suuri osa liike-energiasta muuttuu sisäenergiaksi: törmäys on täysin kimmoton. Mekaaninen energia säilyy vasta heilahduksessa. Kertaa luvussa *Liikemäärän säilyminen ja yksiulotteiset törmäykset*."
+    },
+    {
+     "text": "Törmäyksessä säilyy liikemäärä, heilahduksessa mekaaninen energia.",
+     "feedback": "Oikein. Törmäys on niin lyhyt, että ulkoiset voimat eivät ehdi muuttaa liikemäärää. Heilahduksessa narun voima on kohtisuorassa liikettä vastaan, joten vain paino tekee työtä, ja mekaaninen energia säilyy. Kertaa luvussa *Mekaanisen energian säilyminen ja energiaperiaate*, miksi narun voima ei tee työtä.",
+     "correct": true
+    },
+    {
+     "text": "Liikemäärä säilyy myös heilahduksessa, koska palikka ja luoti pysyvät yhdessä.",
+     "feedback": "Heilahduksessa paino ja narun voima muuttavat palikan nopeutta, joten sen liikemäärä pienenee ylimpään kohtaan mennessä nollaan. Liikemäärä säilyy vain lyhyessä törmäyksessä. Kertaa luvussa *Liikemäärä ja impulssi*."
+    }
+   ],
+   "practice": "Kertaa törmäyksen lajit luvussa [*Liikemäärän säilyminen ja yksiulotteiset törmäykset*](fy4-10.html) ja mekaanisen energian säilyminen luvussa [*Mekaanisen energian säilyminen ja energiaperiaate*](fy4-8.html)."
+  },
+  {
+   "id": "tarkistus-2",
+   "stage": "tarkista",
+   "type": "numeric",
+   "title": "2. Laskeminen",
+   "prompt": "Lapsi ($25\\,\\text{kg}$) laskee leikkipuiston liukumäen levosta. Liukumäen yläpää on $3{,}2\\,\\text{m}$ alapäätä korkeammalla, ja alhaalla lapsen nopeus on $5{,}4\\,\\text{m/s}$. Kuinka monta prosenttia mekaanisesta energiasta muuttui laskun aikana sisäenergiaksi?",
+   "answer": 53.56,
+   "unit": "%",
+   "tolerance": 0.02,
+   "hints": [
+    "Mikä on lapsen mekaaninen energia ylhäällä ja alhaalla, kun nollataso on liukumäen alapäässä?",
+    "Ylhäällä $E_\\text{p} = mgh$ ja $E_\\text{k} = 0$, alhaalla $E_\\text{k} = \\tfrac12 mv^2$ ja $E_\\text{p} = 0$.",
+    "Osuus on $\\dfrac{mgh - \\tfrac12 mv^2}{mgh}$."
+   ],
+   "mistakes": [
+    {
+     "value": 46.44,
+     "feedback": "Tämä on mekaanisen energian osuus, joka jäi liike-energiaksi. Kysytään sisäenergiaksi muuttunutta osuutta."
+    },
+    {
+     "value": 7.11,
+     "feedback": "Unohdit liike-energian lausekkeesta kertoimen $\\tfrac12$: $E_\\text{k} = \\tfrac12 mv^2$."
+    }
+   ],
+   "practice": "Kertaa energiaperiaate luvussa [*Mekaanisen energian säilyminen ja energiaperiaate*](fy4-8.html) ja nollataso luvussa [*Liike-energia, potentiaalienergia ja mekaaninen energia*](fy4-7.html).",
+   "solution": "**Annettu:** $m = 25\\,\\text{kg}$, korkeusero $h = 3{,}2\\,\\text{m}$, alkunopeus $0$, loppunopeus $v = 5{,}4\\,\\text{m/s}$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** sisäenergiaksi muuttuneen mekaanisen energian osuus prosentteina\n\n**Periaate:** Kokonaisenergia säilyy. Kitka ja ilmanvastus tekevät negatiivista työtä, joten mekaaninen energia pienenee juuri sisäenergiaksi muuttuneen määrän (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Nollataso valitaan liukumäen alapäähän.\n\n**Kaava:** $E_\\text{mek,1} = mgh$, $E_\\text{mek,2} = \\tfrac12 mv^2$ ja osuus $\\dfrac{mgh - \\tfrac12 mv^2}{mgh}$\n\n**Muunnokset:** Kaikki suureet ovat perusyksiköissä. Suhdeluku muutetaan prosenteiksi kertomalla luvulla $100\\,\\%$.\n\n**Sijoitus:** $mgh = 25\\,\\text{kg} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 3{,}2\\,\\text{m} = 784{,}8\\,\\text{J}$ ja $\\tfrac12 mv^2 = \\tfrac12 \\cdot 25\\,\\text{kg} \\cdot \\left(5{,}4\\,\\tfrac{\\text{m}}{\\text{s}}\\right)^2 = 364{,}5\\,\\text{J}$. Osuus on $\\dfrac{784{,}8\\,\\text{J} - 364{,}5\\,\\text{J}}{784{,}8\\,\\text{J}} = 0{,}5356 = 53{,}6\\,\\%$\n\n**Vastaus:** noin $54\\,\\%$, kaksi merkitsevää numeroa kuten korkeus $3{,}2\\,\\text{m}$ ja nopeus $5{,}4\\,\\text{m/s}$.\n\n**Järkevyys:** Kitkatta nopeus olisi $\\sqrt{2gh} \\approx 7{,}9\\,\\text{m/s}$; mitattu $5{,}4\\,\\text{m/s}$ on pienempi, kuten kitkan kanssa pitää. Muovinen liukumäki ja vaatteet hankaavat paljon, joten noin puolet energiasta voi muuttua sisäenergiaksi."
+  },
+  {
+   "id": "tarkistus-3",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "3. Selitä",
+   "prompt": "Kaksi samanlaista autoa törmää nokkakolarissa toisiinsa, kumpikin nopeudella $50\\,\\text{km/h}$. Toisessa kokeessa samanlainen auto törmää samalla nopeudella liikkumattomaan betoniseinään. Kumpi on kuljettajalle vaarallisempi? Perustele liikemäärällä, impulssilla ja energialla.",
+   "criteria": [
+    "Vastaus perustelee liikemäärän säilymisellä, että symmetrisessä nokkakolarissa kokonaisliikemäärä on nolla, joten autot pysähtyvät paikalleen.",
+    "Vastaus toteaa, että kummassakin kokeessa kuljettajan liikemäärä muuttuu arvosta $mv$ nollaan, joten impulssi on sama.",
+    "Vastaus perustelee, että pysähtymisaika on sama, koska kumpikin auto rypistyy samalla tavalla, joten keskimääräinen voima on sama.",
+    "Vastaus vertaa energioita: kummassakin kokeessa yhden auton liike-energia $\\tfrac12 mv^2$ muuttuu sen oman keulan sisäenergiaksi ja muodonmuutokseksi, joten tilanteet ovat yhtä vaarallisia."
+   ],
+   "model": "Tilanteet ovat kuljettajalle yhtä vaarallisia. Nokkakolarissa autojen liikemäärät ovat yhtä suuret ja vastakkaiset, joten kokonaisliikemäärä on nolla. Se säilyy törmäyksessä, joten autot pysähtyvät paikalleen, aivan kuin kumpikin olisi ajanut seinään. Kuljettajan liikemäärä muuttuu kummassakin kokeessa arvosta $mv$ nollaan, joten häneen kohdistuva impulssi on sama. Kumpikin auto rypistyy samalla tavalla, joten pysähtymisaika ja siksi keskimääräinen voima $F_\\text{ka} = mv : \\Delta t$ ovat samat. Myös energia täsmää: nokkakolarissa sisäenergiaksi muuttuu kahden auton liike-energia, mutta sen ottaa vastaan kaksi keulaa, kumpikin oman auton $\\tfrac12 mv^2$. Vaarallisempi olisi törmäys raskaampaan tai nopeampaan autoon tai törmäys, jossa oma keula rypistyy lyhyemmän matkan, koska se lyhentää pysähtymisaikaa.",
+   "practice": "Kertaa impulssi ja keskimääräinen voima luvussa [*Liikemäärä ja impulssi*](fy4-9.html) ja törmäykset luvussa [*Liikemäärän säilyminen ja yksiulotteiset törmäykset*](fy4-10.html)."
+  },
+  {
+   "id": "lahtolippu",
+   "stage": "tarkista",
+   "type": "exit",
+   "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+  }
+ ]
+}

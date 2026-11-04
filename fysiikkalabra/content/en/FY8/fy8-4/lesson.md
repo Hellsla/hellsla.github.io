@@ -1008,6 +1008,8 @@ The wave model does not tell where a single photon or electron will hit. It tell
 
 The phenomenon in which the same object has both wave and particle properties is called **wave-particle duality**. It does not mean that a photon or an electron changes its form. Neither classical model, wave or bullet, describes a quantum object alone, and the experimental arrangement decides which property shows. While travelling, a quantum object behaves like a wave, and when it is detected, it is registered at one place like a particle.
 
+<figure class="unit-photo"><img src="pics/fy8/electron-microscope.webp" alt="A researcher adjusts a large metal instrument in a laboratory lit in blue."><figcaption>An electron microscope at Oak Ridge National Laboratory in the United States. It images a sample with an electron beam, and thanks to the wave nature of electrons it shows much smaller details than light can.</figcaption></figure>
+
 ### Four models of the photon
 The photon is described in physics with several models. Each works in its own range of phenomena, and none of them alone is the whole picture.
 

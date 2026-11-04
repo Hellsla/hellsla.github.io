@@ -170,6 +170,8 @@ The magnet of a loudspeaker is built so that in the ring-shaped gap the field po
   <foreignObject x="325" y="207.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Rightarrow F \text{ varies}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/electric-motor-cutaway.webp" alt="A blue industrial electric motor with part of its casing cut away, showing the shaft, rotor, copper windings and fan."><figcaption>A cut-away industrial electric motor. Current flows in the copper windings, and the magnetic field exerts a force on the conductors of the rotor, so the shaft turns. This AC motor is built differently from the DC motor in this lesson, but the basic effect is the same: a magnetic field pushes a current-carrying conductor.</figcaption></figure>
+
 ## Formula: Force on a current-carrying wire
 When a current $I$ flows in a straight wire and the wire is in a uniform magnetic field, the field exerts on the wire a force of magnitude
 ```latex

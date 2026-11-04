@@ -1,0 +1,10 @@
+[
+ {
+  "q": "Kuinka suuri on $1500\\,\\text{kg}$:n auton liike-energia, kun sen nopeus on $72\\,\\text{km/h}$?",
+  "a": "$72\\,\\text{km/h} = 72 \\cdot \\dfrac{1000\\,\\text{m}}{3600\\,\\text{s}} = 20\\,\\text{m/s}$, joten $E_\\text{k} = \\tfrac12 \\cdot 1500\\,\\text{kg} \\cdot \\left(20\\,\\tfrac{\\text{m}}{\\text{s}}\\right)^2 = 300\\,000\\,\\text{J} = 0{,}30\\,\\text{MJ}$."
+ },
+ {
+  "q": "$2{,}0\\,\\text{kg}$:n kärry liikkuu nopeudella $3{,}0\\,\\text{m/s}$ ja tarttuu levossa olevaan $1{,}0\\,\\text{kg}$:n kärryyn. Kuinka suuri on kärryjen yhteinen nopeus?",
+  "a": "Liikemäärä säilyy: $2{,}0\\,\\text{kg} \\cdot 3{,}0\\,\\tfrac{\\text{m}}{\\text{s}} = (2{,}0\\,\\text{kg} + 1{,}0\\,\\text{kg})\\,v'$, joten $v' = \\dfrac{6{,}0\\,\\text{kg} \\cdot \\text{m/s}}{3{,}0\\,\\text{kg}} = 2{,}0\\,\\text{m/s}$. Liike-energia pienenee $9{,}0\\,\\text{J}$:sta $6{,}0\\,\\text{J}$:iin."
+ }
+]
