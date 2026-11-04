@@ -39,6 +39,74 @@
       "answer": 30,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L1-06",
+      "level": 1,
+      "text": "The circuit of a torch is closed and the lamp is lit. Which of the following statements about the conventional direction of current and the movement of electrons is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The conventional direction of current is from the positive terminal to the negative terminal, and the electrons move in the circuit in the opposite direction.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The conventional direction of current is from the positive terminal to the negative terminal, and the electrons move in the circuit in the opposite direction.",
+          "feedback": "Correct: the direction of current was agreed before the electron was discovered so that in the external circuit the current flows from the positive terminal to the negative terminal. The charge of the electron is negative, so the electrons move in the opposite direction, from the negative terminal to the positive terminal.",
+          "correct": true
+        },
+        {
+          "text": "The current is agreed to flow from the positive terminal to the negative terminal, and the electrons move in the same direction as the current.",
+          "feedback": "The charge of electrons is negative, so they move in the direction opposite to the conventional direction of current: in the external circuit from the negative terminal to the positive terminal. The conventional direction thus does not tell the direction of motion of the electrons."
+        },
+        {
+          "text": "The current flows as far as the lamp and is used up in it, so after the lamp there is no current in the wire.",
+          "feedback": "Current is not used up in the lamp. The charge circulates in the closed circuit and returns to the battery, so the current is equally large on both sides of the lamp. In the lamp energy is changed into light and internal energy, not charge."
+        },
+        {
+          "text": "The electrons travel from the negative terminal to the lamp at the speed of light, so the lamp lights up only after they have arrived.",
+          "feedback": "The wire is already full of free electrons, and they start to move everywhere in the circuit at the same time. The electrons do not travel at the speed of light but advance slowly, and the lamp lights up immediately when the switch closes."
+        }
+      ]
+    },
+    {
+      "id": "fy6-1-L1-07",
+      "level": 1,
+      "text": "Imagine a circuit diagram in which a battery, a switch and a lamp are drawn in one loop. The switch is drawn open, that is the lever is free. What happens in the circuit?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The lamp is not lit, because the loop is not closed, so the charge cannot circulate and no current flows anywhere.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The lamp is not lit, because the loop is not closed, so the charge cannot circulate and no current flows anywhere.",
+          "feedback": "Correct: current flows only in a closed circuit. An open switch breaks the loop, so the charge cannot circulate in the circuit and the current is zero at every point, also in the wire between the battery and the switch.",
+          "correct": true
+        },
+        {
+          "text": "The lamp is not lit, because the current flows from the positive terminal of the battery as far as the switch but not past it.",
+          "feedback": "Current cannot flow as far as the switch if the loop is open. Charge moves in the circuit only if it can circulate around the whole loop, so the current is zero also on the other side of the switch, that is in the wire on the side of the battery."
+        },
+        {
+          "text": "The lamp is lit dimly, because the battery gives energy to the charge even when the switch is open.",
+          "feedback": "The battery has a voltage all the time, but energy is transferred to the lamp only when charge passes through the lamp. In an open circuit the charge does not move through the lamp, so no energy is transferred to the lamp and it is not lit at all."
+        },
+        {
+          "text": "The lamp is lit, because the electrons in the wires move freely across the gap of the switch.",
+          "feedback": "The gap left in the switch is air, which is an insulator. The electrons cannot cross it, so no current flows and the lamp is not lit."
+        }
+      ]
+    },
+    {
+      "id": "fy6-1-L1-08",
+      "level": 1,
+      "text": "A current of $0.25\\,\\text{A}$ passes through a conductor for $1.0\\,\\text{min}$. How many electrons pass through the conductor during this time? The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. Give the answer as a number.",
+      "answer": 9.36e+19,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,114 @@
       "unit": "C",
       "tolerance": 0.02,
       "figure": "fy6-1/virta-kuvaaja"
+    },
+    {
+      "id": "fy6-1-L2-05",
+      "level": 2,
+      "text": "The table contains example data: a measurement of the current through the lamp of a worn-out battery as the current fades with time. The current has been measured at intervals of $10\\,\\text{s}$.\n\na) Estimate the charge that has passed through the lamp during $60\\,\\text{s}$ by assuming that the current changes steadily during each $10\\,\\text{s}$ interval. The mean current of an interval is then the average of the currents at the ends of the interval.\n\nb) Calculate the average of the current over the whole $60\\,\\text{s}$.\n\nc) A second ammeter is connected into the wire after the lamp. What does it show at the time $30\\,\\text{s}$, and why?\n\nWrite the result of part a) in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 22.8,
+      "unit": "C",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Current through the lamp as a function of time (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0.50"
+          ],
+          [
+            "10",
+            "0.46"
+          ],
+          [
+            "20",
+            "0.42"
+          ],
+          [
+            "30",
+            "0.37"
+          ],
+          [
+            "40",
+            "0.34"
+          ],
+          [
+            "50",
+            "0.30"
+          ],
+          [
+            "60",
+            "0.28"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-1-L2-06",
+      "level": 2,
+      "text": "A student builds two circuits, each with a $1.5\\,\\text{V}$ battery and a lamp.\n\nIn circuit A the positive terminal of the battery is connected with a wire to one base of the lamp. The other base of the lamp and the negative terminal of the battery are not connected to anything. The student says: “The current flows from the positive terminal to the lamp and is used up in it, so a second wire is not needed.”\n\nIn circuit B the battery, a switch and a lamp are in one closed loop, and the switch is closed. In addition, a thick wire that bypasses the lamp is connected to both bases of the lamp.\n\na) Is the lamp lit in circuit A? Explain the error in the student’s reasoning.\n\nb) Is the lamp lit in circuit B? Justify where the current flows.\n\nc) How is circuit A fixed so that the lamp is lit?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "A: the lamp is not lit, because the loop is not closed and the charge cannot circulate; current is not used up in the lamp, but it requires a closed loop. B: the lamp is not lit, because the current flows through the wire that bypasses the lamp. A is fixed by connecting the other base of the lamp to the negative terminal of the battery.",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-1-L2-07",
+      "level": 2,
+      "text": "A student wants to show experimentally that current is not used up in a lamp. She measures the current at points of the same circuit before the lamp and after the lamp. The table contains example data from five measurements. The resolution of the ammeter, that is its smallest display step, is $0.01\\,\\text{A}$.\n\na) Tell how the ammeter is connected into the circuit and how the measurement is made so that the current is measured at both points.\n\nb) Calculate the average of the current before the lamp and after the lamp. Write the sums first.\n\nc) Do the measurements support the claim that current is used up in the lamp? Justify.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": "The ammeter is connected into the circuit in series, first before the lamp and then after the lamp. The averages are $0.310\\,\\text{A}$ before the lamp and $0.306\\,\\text{A}$ after the lamp, and the difference is smaller than the resolution of the meter, that is its smallest display step, $0.01\\,\\text{A}$. The measurements do not show that current is used up in the lamp: the current is equally large on both sides of the lamp.",
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Current before the lamp and after the lamp (example data)",
+        "columns": [
+          "Measurement",
+          "$I_{\\text{before}}\\,(\\text{A})$",
+          "$I_{\\text{after}}\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.32",
+            "0.31"
+          ],
+          [
+            "2",
+            "0.30",
+            "0.30"
+          ],
+          [
+            "3",
+            "0.33",
+            "0.32"
+          ],
+          [
+            "4",
+            "0.29",
+            "0.30"
+          ],
+          [
+            "5",
+            "0.31",
+            "0.30"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -101,6 +277,66 @@
       "unit": "",
       "tolerance": 0.02,
       "model_figure": "fy6-1/kaavio-malli"
+    },
+    {
+      "id": "fy6-1-L3-04",
+      "level": 3,
+      "text": "The table contains example data: the voltage $U$ of a phone battery and the current $I$ drawn from the battery during five consecutive hours, as a full battery discharges until it is empty. The values are averages of each hour, and they are assumed to be constant during the hour. The energy that is transferred from the battery to the device is $E = UQ = UIt$.\n\na) Calculate the energy transferred during each hour in watt-hours and add them up to get the energy of the whole discharge. A watt-hour is the energy that is transferred when a voltage of $1\\,\\text{V}$ and a current of $1\\,\\text{A}$ last for an hour.\n\nb) Calculate the total charge that has passed from the battery in ampere-hours and the average voltage of the battery over the whole discharge. Also give the energy in kilojoules.\n\nc) A friend estimates the energy by multiplying the total charge by the initial voltage $4.0\\,\\text{V}$. Calculate by how many percent the estimate is too large, and explain why.\n\nWrite the total energy of part a) in watt-hours in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 12.5,
+      "unit": "Wh",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Discharging of a phone battery (example data)",
+        "columns": [
+          "Hour",
+          "$U\\,(\\text{V})$",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "1.",
+            "4.0",
+            "0.80"
+          ],
+          [
+            "2.",
+            "3.8",
+            "0.75"
+          ],
+          [
+            "3.",
+            "3.7",
+            "0.70"
+          ],
+          [
+            "4.",
+            "3.6",
+            "0.60"
+          ],
+          [
+            "5.",
+            "3.4",
+            "0.50"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-1-L3-05",
+      "level": 3,
+      "text": "A copper wire contains a lot of free electrons. Example data: a certain copper wire has $1.3 \\cdot 10^{23}$ free electrons for each metre of the wire. A steady current of $0.40\\,\\text{A}$ passes through the conductor to a lamp. Assume that all the free electrons of the wire move at the same speed $v$.\n\na) Calculate the speed $v$ of the electrons in millimetres per second. In a second, the electrons that pass through a cross-section are those that at the start of the second are within a distance $v \\cdot 1\\,\\text{s}$ before the cross-section.\n\nb) How many hours does it take for an electron to move a distance of $1.0\\,\\text{m}$ in the wire?\n\nc) The electrons advance slowly, but the lamp lights up immediately when the switch is pressed. Explain why the lamp lights up immediately and why it nevertheless does not wait for the electrons of the battery to arrive at the lamp.\n\nWrite the result of part a) in the answer box.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.0192,
+      "unit": "mm/s",
+      "tolerance": 0.02
     }
   ]
 }
