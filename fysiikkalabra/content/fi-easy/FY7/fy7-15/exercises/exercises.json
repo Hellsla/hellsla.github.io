@@ -263,7 +263,7 @@
     {
       "id": "fy7-15-L3-03",
       "level": 3,
-      "text": "Opiskelija mittaa puhelimen näytön polarisoitunutta valoa valoanturilla. Anturin edessä on polarisaattorikalvo. Kun kalvon läpäisysuunta on näytön polarisaation suuntainen, anturi näyttää $420\\,\\text{lx}$. Kun kalvoa on kierretty siitä $90{,}0^\\circ$, anturi näyttää $16\\,\\text{lx}$. Tämä lukema on huoneen taustavaloa, joka lisää jokaiseen lukemaan saman verran. Oletetaan, että taustavalo ei riipu kalvon asennosta. Oletetaan myös, että kalvo on ihanteellinen ja anturin lukema on verrannollinen valon intensiteettiin. Mitä anturi näyttää, kun kalvoa on kierretty $60{,}0^\\circ$ suurimman lukeman asennosta?",
+      "text": "Opiskelija mittaa puhelimen näytön polarisoitunutta valoa valoanturilla. Anturin edessä on polarisaattorikalvo.\n\nKun kalvon läpäisysuunta on näytön polarisaation suuntainen, anturi näyttää $420\\,\\text{lx}$. Kun kalvoa on kierretty siitä $90{,}0^\\circ$, anturi näyttää $16\\,\\text{lx}$. Tämä lukema on huoneen taustavaloa, joka lisää jokaiseen lukemaan saman verran.\n\nOletetaan, että taustavalo ei riipu kalvon asennosta. Oletetaan myös, että kalvo on ihanteellinen ja anturin lukema on verrannollinen valon intensiteettiin.\n\nMitä anturi näyttää, kun kalvoa on kierretty $60{,}0^\\circ$ suurimman lukeman asennosta?",
       "answer": 117.0,
       "unit": "lx",
       "tolerance": 0.02

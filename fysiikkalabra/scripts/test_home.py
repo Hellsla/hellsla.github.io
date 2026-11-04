@@ -107,10 +107,11 @@ for lang in i18n.languages():
     expect(f"{lang}: the heading and one line under it, then the module list",
            bool(intro) and intro.group(1) == T("site.home_h1") and intro.group(2) == T("site.home_sub") and home.find('class="catalogue"') > intro.end())
     hdr = re.search(r'<header class="top">.*?</header>', home, re.S).group(0); ftr = re.search(r'<footer class="bottom">.*?</footer>', home, re.S).group(0)
-    expect(f"{lang}: the header links Moduulit, Näin opiskelet and Lukuvinkit in that order",
-           re.findall(r'<nav [^>]*><a class="nav-modules" href="index.html#moduulit">[^<]*</a><a class="nav-study" href="nain-opiskelet.html">([^<]*)</a><a class="nav-reading" href="lukuvinkit.html">', hdr) == [_h.escape(T("site.study"))], hdr[-400:])
-    expect(f"{lang}: the footer links Lukuvinkit, Sivustosta and Tietosuoja",
-           'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr and 'href="tietosuoja.html"' in ftr, ftr)
+    expect(f"{lang}: the header links Näin opiskelet and Lukuvinkit in that order, no Moduulit on the front page (teacher 2026-11-04)",
+           'nav-modules' not in hdr and re.findall(r'<nav [^>]*><a class="nav-study" href="nain-opiskelet.html">([^<]*)</a><a class="nav-reading" href="lukuvinkit.html">', hdr) == [_h.escape(T("site.study"))], hdr[-400:])
+    expect(f"{lang}: the footer is Ruukkilabra and Tietosuoja only, no Lukuvinkit or Sivustosta (teacher 2026-11-04)",
+           'href="tietoa.html"' not in ftr and 'href="lukuvinkit.html"' not in ftr and 'href="tietosuoja.html"' in ftr and "LOPS" not in ftr, ftr)
+    expect(f"{lang}: the footer ends with © 2026 Lauri Hellsten (teacher 2026-11-04)", ftr.endswith('<span class="copyright">© 2026 Lauri Hellsten</span></footer>'), ftr)
     priv = (out / "tietosuoja.html").read_text() if (out / "tietosuoja.html").is_file() else ""
     psrc = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / "fi" / "tietosuoja.md") if f.is_file()), None)
     pheads = re.findall(r"^#+ (.+)$", psrc.read_text(), re.M) if psrc else []
@@ -142,7 +143,7 @@ for lang in i18n.languages():
     if local:
         school = next(iter(local.values()))["school"]
         expect(f"{lang}: the school's courses under its logo (alt = its name), after Tulossa",
-               bool(sec) and re.search(r'<h3 class="mod-group mod-school"><img src="(?:\.\./)?brand/kiviruukin-lukio-oikea-yonsininen\.svg" alt="' + re.escape(_h.escape(school)) + r'"[^>]*></h3><ul class="mod-list local-list">', home) is not None and home.find('class="mod-list up-list"') < sec.start(), sec and sec.start())
+               bool(sec) and re.search(r'<h3 class="mod-group mod-school"><img src="(?:\.\./)?brand/kiviruukin-lukio-rivi-musta\.svg" alt="' + re.escape(_h.escape(school)) + r'"[^>]*></h3><ul class="mod-list local-list">', home) is not None and home.find('class="mod-list up-list"') < sec.start(), sec and sec.start())
         lrows = [r for d, c, r in re.findall(ROW, sec.group(1), re.S)] if sec else []
         lcodes = [c for d, c, r in re.findall(ROW, sec.group(1), re.S)] if sec else []
         expect(f"{lang}: one row per local course, in registry order", lcodes == list(local), lcodes)
@@ -192,7 +193,16 @@ for lang in i18n.languages():
         page_html = (out / f"{code}.html").read_text()
         psrc = icon_of(page_html[page_html.find("<main"):])
         expect(f"{lang} {code}: the module page shows the same icon beside its title", psrc == src and page_html.find("mod-head-icon") < page_html.find("<h1"), psrc)
-    expect(f"{lang}: icons are counted once each (one per row, no stray icons)", len(re.findall(r'class="(?:mod-icon|up-icon)"', home)) == len(all_rows), len(all_rows))
+    # the school's planned courses (teacher 2026-11-04): after the school's own courses, greyed out, icon + name + one
+    # sentence, never a link (no content yet)
+    plans = local_courses.planned(lang)
+    pl = re.search(r'<ul class="mod-list plan-list" aria-label="[^"]+">(.*?)</ul>', home, re.S)
+    prow = re.findall(r'<li><div class="mod-row coming planned">(<img [^>]+>)<span class="mod-text">.*?<span class="mod-title">(.*?)</span>.*?</div></li>', pl.group(1), re.S) if pl else []
+    expect(f"{lang}: the planned courses greyed out after the school's courses, one unlinked row each with its icon",
+           (not plans and not pl) or (bool(pl) and [t for _, t in prow] == [_h.escape(p["title"]) for p in plans] and "<a " not in pl.group(1)
+                                      and home.find('class="mod-list local-list"') < pl.start()
+                                      and all(icon_of(i) and (out / icon_of(i)).resolve().is_file() for i, _ in prow)), [t for _, t in prow])
+    expect(f"{lang}: icons are counted once each (one per row, no stray icons)", len(re.findall(r'class="(?:mod-icon|up-icon)"', home)) == len(all_rows) + len(prow), len(all_rows))
     expect(f"{lang}: no icon has alternative text (the name is already said)", not re.search(r'<img class="(?:mod-icon|up-icon|mod-head-icon)"[^>]*alt="[^"]', home))
     lesson_pages = [f for f in out.glob("fy*-*.html")]
     expect(f"{lang}: no module icon on a chapter page ({len(lesson_pages)})", not any("module-icons/" in f.read_text() for f in lesson_pages))
@@ -209,7 +219,7 @@ for lang in i18n.languages():
 
 # Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): every book of content/fi/lukuvinkit.json in its order, the
 # loan tag on exactly the books marked "loan", no subheading inside the list, each title a link to its record, and the
-# page reachable from the header and footer of every page of every language.
+# page reachable from the header of every page of every language (no longer in the footer, teacher 2026-11-04).
 import reading_tips
 expect("content/<lang>/lukuvinkit.json are valid (reading_tips.py)", not reading_tips.check(), reading_tips.check())
 for lang in i18n.languages():
@@ -227,9 +237,8 @@ for lang in i18n.languages():
     expect(f"{lang} {reading_tips.PAGE}: no subheadings inside the list", lst and len(re.findall(r"<h[1-6]", lst.group(1))) == len(items))
     expect(f"{lang} {reading_tips.PAGE}: author, language, level, description and courses for every book",
            all(_h.escape(b["author"]) in i and _h.escape(b["language"]) in i and _h.escape(b["level"]) in i and _h.escape(b["text"]) in i and _h.escape(b["courses"]) in i for b, i in zip(want, items)))
-    no_link = [p.name for p in out.glob("*.html") if 'href="lukuvinkit.html"' not in re.search(r'<header class="top">.*?</header>', p.read_text(), re.S).group(0)
-               or 'href="lukuvinkit.html"' not in re.search(r'<footer class="bottom">.*?</footer>', p.read_text(), re.S).group(0)]
-    expect(f"{lang}: every page links to {reading_tips.PAGE} in its header and footer", not no_link, no_link[:10])
+    no_link = [p.name for p in out.glob("*.html") if 'href="lukuvinkit.html"' not in re.search(r'<header class="top">.*?</header>', p.read_text(), re.S).group(0)]
+    expect(f"{lang}: every page links to {reading_tips.PAGE} in its header", not no_link, no_link[:10])
 
 # Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the cards come to the chapter
 import concept_cards
@@ -275,11 +284,11 @@ JS = """() => { const R = (e) => e.getBoundingClientRect(), out = [];
     const two = innerWidth >= 700, n = getComputedStyle(cols).gridTemplateColumns.split(' ').length;
     if (n !== (two ? 2 : 1)) out.push(`${n} columns at ${innerWidth} px`);
     for (const e of document.querySelectorAll('.mod-row')) {
-      const ht = R(e).height, q = e.querySelector('.mod-q'), go = e.querySelector('.mod-go');
+      const ht = R(e).height, q = e.querySelector('.mod-q'), go = e.querySelector('.mod-go');   // a planned course's row has no arrow (no link)
       if (two && ht > 64.5) out.push(`row ${Math.round(ht)} px: ${e.getAttribute('href')}`);
       if (two && R(q).height > parseFloat(getComputedStyle(q).lineHeight) * 1.5) out.push('question on two lines: ' + e.getAttribute('href'));
       if (!two && q.scrollWidth > q.clientWidth + 1) out.push('question cut: ' + e.getAttribute('href'));
-      if (getComputedStyle(go).opacity !== '0') out.push('arrow shown at rest: ' + e.getAttribute('href'));
+      if (go && getComputedStyle(go).opacity !== '0') out.push('arrow shown at rest: ' + e.getAttribute('href'));
     }
     for (const e of document.querySelectorAll('.mod-group')) if (R(e).height > (e.classList.contains('mod-school') ? 64 : 30)) out.push(`group heading ${Math.round(R(e).height)} px`);
   }

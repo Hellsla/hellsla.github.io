@@ -263,7 +263,7 @@
     {
       "id": "fy7-15-L3-03",
       "level": 3,
-      "text": "A student measures the polarised light of a phone display with a light sensor with a polarising film in front of it. When the transmission axis of the film is aligned with the polarisation of the display, the sensor shows $420\\,\\text{lx}$. When the film has been turned $90.0^\\circ$ from that position, the sensor shows $16\\,\\text{lx}$. This reading is background light of the room, which adds the same amount to every reading. Assume that the background light does not depend on the position of the film, that the film is ideal and that the reading of the sensor is proportional to the intensity of the light. What does the sensor show when the film has been turned $60.0^\\circ$ from the position of the largest reading?",
+      "text": "A student measures the polarised light of a phone display with a light sensor with a polarising film in front of it.\n\nWhen the transmission axis of the film is aligned with the polarisation of the display, the sensor shows $420\\,\\text{lx}$. When the film has been turned $90.0^\\circ$ from that position, the sensor shows $16\\,\\text{lx}$. This reading is background light of the room, which adds the same amount to every reading.\n\nAssume that the background light does not depend on the position of the film, that the film is ideal and that the reading of the sensor is proportional to the intensity of the light.\n\nWhat does the sensor show when the film has been turned $60.0^\\circ$ from the position of the largest reading?",
       "answer": 117.0,
       "unit": "lx",
       "tolerance": 0.02

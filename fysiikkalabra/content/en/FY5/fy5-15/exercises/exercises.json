@@ -79,7 +79,7 @@
     {
       "id": "fy5-15-L3-01",
       "level": 3,
-      "text": "There are $12\\,000$ spectators in an ice hall. When one spectator shouts, the voice produces an average level of $42\\,\\text{dB}$ at the centre of the rink. At the same time the public address system of the hall is playing, and alone it produces a level of $80\\,\\text{dB}$ at the centre of the rink. What is the sound intensity level at the centre of the rink when all the spectators shout at once and the public address system is playing? Assume that every shout produces the same intensity at the centre of the rink and that all the sound sources are independent of each other. Give the answer in decibels.",
+      "text": "There are $12\\,000$ spectators in an ice hall.\n\nWhen one spectator shouts, the voice produces an average level of $42\\,\\text{dB}$ at the centre of the rink. At the same time the public address system of the hall is playing, and alone it produces a level of $80\\,\\text{dB}$ at the centre of the rink.\n\nWhat is the sound intensity level at the centre of the rink when all the spectators shout at once and the public address system is playing? Assume that every shout produces the same intensity at the centre of the rink and that all the sound sources are independent of each other. Give the answer in decibels.",
       "answer": 85,
       "unit": "dB",
       "tolerance": 0.01

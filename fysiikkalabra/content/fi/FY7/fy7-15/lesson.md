@@ -354,6 +354,8 @@ Kun polarisoituneen valon tielle asetetaan toinen polarisaattori, sitä sanotaan
   <foreignObject x="414" y="265.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\theta = 90^\circ$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/polarized-protractor.webp" alt="Lähikuva läpinäkyvästä muovisesta kulmamitasta mustaa taustaa vasten; asteikon numerot 160, 170 ja 180 erottuvat, ja muovissa on sateenkaaren värisiä raitoja."><figcaption>Muovinen kulmamitta kahden polarisaattorin välissä. Muovissa on jännityksiä, jotka kääntävät eri värien polarisaatiota eri verran. Siksi toisen polarisaattorin läpi pääsee eri kohdista eri värejä.</figcaption></figure>
+
 ### Heijastunut valo on osittain polarisoitunutta
 Kun polarisoimaton valo heijastuu eristeen, esimerkiksi veden, lasin tai märän asfaltin, pinnasta, pinnan suuntainen värähtely heijastuu voimakkaammin kuin muut. Heijastunut valo on siksi **osittain polarisoitunutta** pinnan suuntaisesti. Vaakasuorasta pinnasta heijastunut häikäisy on siis polarisoitunut enimmäkseen vaakasuunnassa. Polarisaation määrä riippuu tulokulmasta: tietyssä kulmassa, Brewsterin kulmassa, heijastunut valo on täysin polarisoitunutta. Metallipinnasta heijastunut valo ei polarisoidu samalla tavalla.
 

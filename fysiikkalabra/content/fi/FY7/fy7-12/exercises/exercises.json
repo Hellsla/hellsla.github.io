@@ -247,7 +247,7 @@
     {
       "id": "fy7-12-L3-02",
       "level": 3,
-      "text": "Valokuidun ytimen taitekerroin on $1{,}480$ ja kuoren $1{,}460$. Kuituun lähetetään lyhyt valopulssi. Osa valosta kulkee kuidun akselin suuntaisesti, ja osa etenee siksakkia niin, että se osuu ytimen ja kuoren rajapintaan juuri rajakulmassa. Kuinka paljon myöhemmin siksakkia kulkeva valo saapuu $1{,}00\\,\\text{km}$:n pituisen suoran kuidun päähän kuin akselin suuntainen valo? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Anna vastaus nanosekunteina.",
+      "text": "Valokuidun ytimen taitekerroin on $1{,}480$ ja kuoren $1{,}460$.\n\nKuituun lähetetään lyhyt valopulssi. Osa valosta kulkee kuidun akselin suuntaisesti, ja osa etenee siksakkia niin, että se osuu ytimen ja kuoren rajapintaan juuri rajakulmassa.\n\nKuinka paljon myöhemmin siksakkia kulkeva valo saapuu $1{,}00\\,\\text{km}$:n pituisen suoran kuidun päähän kuin akselin suuntainen valo? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Anna vastaus nanosekunteina.",
       "answer": 67.5799,
       "unit": "ns",
       "tolerance": 0.02

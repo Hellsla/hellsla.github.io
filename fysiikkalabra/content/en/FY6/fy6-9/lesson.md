@@ -137,6 +137,8 @@ The **capacity of a battery** tells how large a charge a fully charged battery c
   <foreignObject x="197" y="105" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$0.50\,\text{A}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/ev-battery-cells.webp" alt="Rows of large, flat, light-coloured battery cells with bolted terminals at their ends; the side of a cell reads 60Ah and SB Limotive Co., Ltd."><figcaption>Cells from an electric car battery. Each cell has a capacity of $60\,\text{Ah}$. With a nominal voltage of about $3.7\,\text{V}$, one cell stores about $3.7\,\text{V} \cdot 60\,\text{Ah} \approx 220\,\text{Wh}$ of energy. A car battery contains dozens of such cells.</figcaption></figure>
+
 ### Charge alone does not tell the energy
 Voltage tells how much energy per unit of charge is changed from one form to another (chapter *Electric circuit, current and voltage*). The energy of a battery is therefore voltage times charge, and its unit is the watt-hour: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh} = 3600\,\text{J}$. The voltage used is the **nominal voltage** marked on the battery, which is the average voltage of the battery during discharging. In this chapter energy is denoted by $W$, because $E$ is the source voltage.
 

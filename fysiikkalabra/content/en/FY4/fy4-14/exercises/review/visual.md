@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 67ca8050e71c9ba8
+CONTENT-HASH: 888842fb18438419
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- L3-05 text (en): "falls from a cloud from a height of 1.50 km ... is constant 8.0 m/s" reworded to "falls from a cloud 1.50 km above the ground ... is a constant 8.0 m/s" (natural English; numbers unchanged).
+
 ## Polish
-- [Minor] solution diagram of L1-1 and other single-body diagrams — drawn small (about 95 px wide at 1280) with tiny arrowheads and labels; still legible, but enlarge by about a quarter.
-- [Minor] L2-4 car solution diagram — F_r label overline touches the F_v arrow shaft; orange a arrow sits beside the N label. Shift the F_r label and the a arrow.
-- [Minor] L1-5 and L2-4 diagrams — the caption "horizontal and vertical forces to different scales" is small grey type; correct and useful, but raise to the figure label size.
+(none)
 
 ## Checked
-- contact-5, -6; open-exercises-1280-1, -6, -7 (level 1, with solution cards, cyclist diagram and ending), L2-1280-5 (car diagram, substitution), cropped car and cyclist diagrams at 2x.
-- Force diagrams: arrows have visible shafts, labels sit by their own arrows, red force / blue velocity / orange acceleration respected.
-- No Finnish words on the English exercise page or in aria-labels; units are LaTeX with decimal points; instructions clear; answer, solution and reasonableness blocks inside their cards at 1280.
-
-## Scores
-illustrations 4 · typography 5 · Finnish (English language) 5 · accessibility 4
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, data cells and every number in texts, choices, feedback (decimal point in en JSON and LaTeX) and solutions.md (618 numbers, 347 math fragments) identical.
+- Visual: table captions, column headers (Cone/Kartio, v_terminal/v_raja) and voimakuvio blocks match fi; screenshots of the new tasks checked, no overflow or untranslated labels.
+- English is natural; no Finnish prose left (the only Finnish is the voimakuvio diagram DSL keywords and decimal commas in diagram lines, same convention as other en chapters).
+- check_i18n.py en: 0 errors.

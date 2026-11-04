@@ -149,6 +149,10 @@ Only certain combinations of protons and neutrons are stable. When nuclei are dr
   <foreignObject x="353" y="183" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\text{stable}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/cloud-chamber-beta.webp" alt="Many thin, winding white tracks on a black background, spreading from a radioactive source at the top left."><figcaption>Beta particle tracks in a cloud chamber. An electron is light and ionises the air less than an alpha particle, so its track is thin and long. An electron is also easily deflected, so the track winds about.</figcaption></figure>
+
+<figure class="unit-photo"><img src="pics/fy8/cloud-chamber-alpha.webp" alt="Many short, thick, straight white tracks in various directions on a black background, along with some thin winding tracks."><figcaption>Alpha particle tracks in a cloud chamber. An alpha particle ionises the air strongly and loses its energy within a few centimetres, so its track is short, thick and straight.</figcaption></figure>
+
 ### Alpha, beta and gamma decay
 In **alpha decay**, an alpha particle, a helium nucleus ${}^{4}_{2}\text{He}$ with two protons and two neutrons, leaves the nucleus. It is typical of heavy nuclei such as uranium, radium and the americium of a smoke detector.
 

@@ -239,7 +239,7 @@
     {
       "id": "fy7-14-L3-01",
       "level": 3,
-      "text": "A soap film ($n = 1.33$) made in a vertical wire frame is lit with the yellow light of a sodium lamp, with wavelength $589\\,\\text{nm}$, arriving at normal incidence on the film. Gravity thins the film at the top, and the topmost part of the film looks black. Below it bright and dark horizontal bands alternate, and the film gets thicker downwards. How thick is the film at the second dark band, when the topmost black region is not counted as a band?",
+      "text": "A soap film ($n = 1.33$) made in a vertical wire frame is lit with the yellow light of a sodium lamp, with wavelength $589\\,\\text{nm}$, arriving at normal incidence on the film.\n\nGravity thins the film at the top, and the topmost part of the film looks black. Below it bright and dark horizontal bands alternate, and the film gets thicker downwards.\n\nHow thick is the film at the second dark band, when the topmost black region is not counted as a band?",
       "answer": 442.8571,
       "unit": "nm",
       "tolerance": 0.02
@@ -247,7 +247,7 @@
     {
       "id": "fy7-14-L3-02",
       "level": 3,
-      "text": "A camera objective has four separate glass lenses, that is, eight surfaces at which light passes from air into glass or from glass into air. Each surface is coated so that it reflects $1.3\\,\\%$ of the light arriving at it at normal incidence. Assume that the glass does not absorb light and that light reflected once no longer reaches the sensor. What percentage of the light entering the objective gets through it?",
+      "text": "A camera objective has four separate glass lenses, that is, eight surfaces at which light passes from air into glass or from glass into air. Each surface is coated so that it reflects $1.3\\,\\%$ of the light arriving at it at normal incidence.\n\nAssume that the glass does not absorb light and that light reflected once no longer reaches the sensor.\n\nWhat percentage of the light entering the objective gets through it?",
       "answer": 90.0611,
       "unit": "%",
       "tolerance": 0.02

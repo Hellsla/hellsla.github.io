@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bf0594d55683fe21
+CONTENT-HASH: d6c59949a7a14871
 
 ## Blocking
 (none)
 
 ## Fixed
-- none needed
+- L2-05: split the first sentence in two and explained hyötysuhde in one short sentence.
+- L2-07: added "Ilmalämpöpumppu ottaa lämpöä ulkoilmasta." so the term is explained.
+- L3-04: added one sentence that explains lämpökerroin (L1-08 already had it).
 
 ## Polish
 - None.
 
 ## Checked
-Same levels, task order, figure task, hints, mistakes and staged solutions as the Finnish; no content added or dropped. Language: natural English / plain short Finnish sentences, no Finnish words left in text, units or names.
+- Selkosuomi: short sentences, common words, terms explained at first use; long Finnish sentences in feedback and part c) tasks are split with a full stop.
+- Content equals the Finnish: same levels, choices, one correct option per choice task, same feedback logic, nothing dropped or added.

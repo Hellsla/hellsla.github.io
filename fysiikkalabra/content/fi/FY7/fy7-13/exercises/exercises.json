@@ -235,7 +235,7 @@
     {
       "id": "fy7-13-L3-02",
       "level": 3,
-      "text": "Opiskelija tutkii CD-levyä heijastushilana. Hän tekee pahviseen varjostimeen reiän ja ohjaa punaisen laserin säteen, jonka aallonpituus on $650\\,\\text{nm}$, reiän läpi kohtisuoraan levyn pintaan. Varjostin on levyn suuntainen $10{,}0\\,\\text{cm}$:n päässä levystä. Levystä heijastuneet ensimmäisen kertaluvun maksimit näkyvät varjostimella reiän molemmin puolin $89\\,\\text{mm}$:n päässä toisistaan. Kuinka suuri on levyn vierekkäisten raitojen etäisyys? Anna vastaus mikrometreinä.",
+      "text": "Opiskelija tutkii CD-levyä heijastushilana. Hän tekee pahviseen varjostimeen reiän ja ohjaa punaisen laserin säteen, jonka aallonpituus on $650\\,\\text{nm}$, reiän läpi kohtisuoraan levyn pintaan. Varjostin on levyn suuntainen $10{,}0\\,\\text{cm}$:n päässä levystä.\n\nLevystä heijastuneet ensimmäisen kertaluvun maksimit näkyvät varjostimella reiän molemmin puolin $89\\,\\text{mm}$:n päässä toisistaan.\n\nKuinka suuri on levyn vierekkäisten raitojen etäisyys? Anna vastaus mikrometreinä.",
       "answer": 1.5988,
       "unit": "µm",
       "tolerance": 0.02
@@ -243,7 +243,7 @@
     {
       "id": "fy7-13-L3-03",
       "level": 3,
-      "text": "Hilan viivatiheyttä ei tunneta. Kun punaisen laserin säde, jonka aallonpituus on $650\\,\\text{nm}$, osuu kohtisuoraan hilaan, ensimmäisen kertaluvun maksimi on $1{,}00\\,\\text{m}$:n päässä olevalla varjostimella $19{,}9\\,\\text{cm}$:n päässä keskimaksimista. Samassa asetelmassa vihreän laserin ensimmäisen kertaluvun maksimi on $16{,}2\\,\\text{cm}$:n päässä keskimaksimista. Kuinka suuri on vihreän laserin valon aallonpituus? Anna vastaus nanometreinä.",
+      "text": "Hilan viivatiheyttä ei tunneta. Kun punaisen laserin säde, jonka aallonpituus on $650\\,\\text{nm}$, osuu kohtisuoraan hilaan, ensimmäisen kertaluvun maksimi on $1{,}00\\,\\text{m}$:n päässä olevalla varjostimella $19{,}9\\,\\text{cm}$:n päässä keskimaksimista.\n\nSamassa asetelmassa vihreän laserin ensimmäisen kertaluvun maksimi on $16{,}2\\,\\text{cm}$:n päässä keskimaksimista.\n\nKuinka suuri on vihreän laserin valon aallonpituus? Anna vastaus nanometreinä.",
       "answer": 532.5781,
       "unit": "nm",
       "tolerance": 0.02

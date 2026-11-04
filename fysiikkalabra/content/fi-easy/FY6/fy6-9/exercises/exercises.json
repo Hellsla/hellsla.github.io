@@ -80,7 +80,7 @@
     {
       "id": "fy6-9-L3-01",
       "level": 3,
-      "text": "Auton käynnistysakun nimellisjännite on $12\\,\\text{V}$ ja kapasiteetti $60\\,\\text{Ah}$. Lyijyakusta voi kuitenkin ottaa vain puolet kapasiteetista, jotta se ei vahingoitu. Sähköpotkulaudan akun nimellisjännite on $36\\,\\text{V}$ ja kapasiteetti $7{,}8\\,\\text{Ah}$, ja sen voi käyttää kokonaan. Ampeerituntien suhde on lähes kahdeksan. Kuinka monta kertaa niin paljon energiaa auton akusta voi käyttää kuin potkulaudan akusta?",
+      "text": "Auton käynnistysakun nimellisjännite on $12\\,\\text{V}$ ja kapasiteetti $60\\,\\text{Ah}$. Lyijyakusta voi kuitenkin ottaa vain puolet kapasiteetista, jotta se ei vahingoitu.\n\nSähköpotkulaudan akun nimellisjännite on $36\\,\\text{V}$ ja kapasiteetti $7{,}8\\,\\text{Ah}$, ja sen voi käyttää kokonaan. Ampeerituntien suhde on lähes kahdeksan.\n\nKuinka monta kertaa niin paljon energiaa auton akusta voi käyttää kuin potkulaudan akusta?",
       "answer": 1.28,
       "unit": "kertaa",
       "tolerance": 0.02

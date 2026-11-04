@@ -120,3 +120,89 @@
 **Substitution:** The expression under the root is $v^2 + 2\,a\,D = (8.0\,\text{m/s})^2 + 2 \cdot 2.0\,\text{m/s}^2 \cdot 180\,\text{m} = 784\,\text{m}^2/\text{s}^2$. So $t = \dfrac{-8.0\,\text{m/s} + 28\,\text{m/s}}{2.0\,\text{m/s}^2} = 10\,\text{s}$
 **Answer:** $10\,\text{s}$, two significant figures like the given values. The negative root $-18\,\text{s}$ would be before the start and does not belong to the situation.
 **Reasonableness:** The scooter has driven $\tfrac12 \cdot 2.0\,\text{m/s}^2 \cdot (10\,\text{s})^2 = 100\,\text{m}$ and the cyclist $8.0\,\text{m/s} \cdot 10\,\text{s} = 80\,\text{m}$. Together $100\,\text{m} + 80\,\text{m} = 180\,\text{m}$, so the distance between them has been used up.
+
+## fy4-12-L1-06
+**Find:** what the intersection point of the $(t,v)$ graphs tells.
+**Principle:** A point of a $(t,v)$ graph tells the velocity of the object at the moment $t$. When two graphs intersect, both objects have the same velocity at that moment. The position is determined by all the earlier motion, that is, by the area under the velocity graph, not by a single value of the velocity.
+**Model answer:** The velocities of the cars are equal at the moment $4.0\,\text{s}$, but the positions may differ. A meeting cannot be read from this graph, because that needs a $(t,x)$ graph or a comparison of the position functions. The claim that the cars are at the same place mixes up velocity and position. The claim of the same distance travelled does not hold, because the distance is an area and not a single value. The claim of equal accelerations does not hold, because acceleration is the slope, and for intersecting lines the slopes are different.
+**Reading the graph:** On the horizontal axis of the graph is time and on the vertical axis velocity. The vertical coordinate of the intersection point is the common velocity of both cars, and the horizontal coordinate is the moment $4.0\,\text{s}$.
+
+## fy4-12-L1-07
+**Given:** cart A: $x_\text{A} = v_\text{A}\,t$ when $v_\text{A} = 4.0\,\text{m/s}$; cart B starts with a delay $t_0 = 3.0\,\text{s}$ at a velocity $v_\text{B} = 7.0\,\text{m/s}$; both from the same place
+**Find:** the moment $t$ (counted from the start of A) in $\text{s}$
+**Principle:** At a meeting the positions are equal. When the clock shows the moment $t$, B has moved only for the time $t - t_0$, so the position of B is $v_\text{B}\,(t - t_0)$.
+**Formula:** $v_\text{A}\,t = v_\text{B}\,(t - t_0)$, so $(v_\text{B} - v_\text{A})\,t = v_\text{B}\,t_0$ and $t = \dfrac{v_\text{B}\,t_0}{v_\text{B} - v_\text{A}}$
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** $t = \dfrac{7.0\,\text{m/s} \cdot 3.0\,\text{s}}{7.0\,\text{m/s} - 4.0\,\text{m/s}} = \dfrac{21\,\text{m}}{3.0\,\text{m/s}} = 7.0\,\text{s}$
+**Answer:** $7.0\,\text{s}$ counted from the start of A, two significant figures like the given values.
+**Reasonableness:** At the moment $7.0\,\text{s}$ A is at the place $4.0\,\text{m/s} \cdot 7.0\,\text{s} = 28\,\text{m}$ and B at the place $7.0\,\text{m/s} \cdot (7.0\,\text{s} - 3.0\,\text{s}) = 28\,\text{m}$. The positions are the same. When B starts, A is already $12\,\text{m}$ ahead, and B approaches at $3.0\,\text{m/s}$, so $12\,\text{m}$ takes $4.0\,\text{s}$, that is, the meeting is at the moment $3.0\,\text{s} + 4.0\,\text{s}$.
+
+## fy4-12-L1-08
+**Find:** what condition determines the moment of passing.
+**Principle:** Passing is a meeting: at the moment of passing, A and B are at the same place. Therefore the position of each is written as a function of time and the positions are set equal, $x_\text{A}(t) = x_\text{B}(t)$. The solution of the equation gives the moment.
+**Model answer:** At the moment of passing the positions of the objects are equal at the same moment, that is, they are at the same point. Equal velocities do not determine the passing, because then the lead is at its greatest or smallest, not zero. Equal accelerations are not related to position, and for B the acceleration is zero. Equal distances travelled are not enough if the starting places are different, because the position is the starting place plus the distance travelled.
+
+## fy4-12-L2-05
+**Given:** from the table: A: $x_\text{A} = 3.0\,\text{m}$ at $0\,\text{s}$ and $20.4\,\text{m}$ at $5.0\,\text{s}$; B: $x_\text{B} = 45.0\,\text{m}$ at $0\,\text{s}$ and $32.4\,\text{m}$ at $5.0\,\text{s}$; uniform motion
+**Find:** the moment of the meeting $t$ in $\text{s}$
+**Principle:** In uniform motion the velocity is the change of position divided by the change of time. When the velocities are known, the positions are $x = x_0 + v\,t$, and the runners meet when $x_\text{A} = x_\text{B}$. The points of the table deviate slightly from a straight line because of measurement error, so the first and the last row are used.
+**Reading the graph:** The velocities from the end points of the table: $v_\text{A} = \dfrac{20.4\,\text{m} - 3.0\,\text{m}}{5.0\,\text{s} - 0} = 3.48\,\text{m/s}$ and $v_\text{B} = \dfrac{32.4\,\text{m} - 45.0\,\text{m}}{5.0\,\text{s} - 0} = -2.52\,\text{m/s}$. The velocity of B is negative, because B runs toward A.
+**Formula:** $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$, so $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** $t = \dfrac{45.0\,\text{m} - 3.0\,\text{m}}{3.48\,\text{m/s} - (-2.52\,\text{m/s})} = \dfrac{42.0\,\text{m}}{6.00\,\text{m/s}} = 7.0\,\text{s}$
+**Answer:** $7.0\,\text{s}$, two significant figures, because the velocities are determined from three-digit positions but the measurement contains scatter.
+**Reasonableness:** The place of the meeting is $3.0\,\text{m} + 3.48\,\text{m/s} \cdot 7.0\,\text{s} = 27.4\,\text{m}$ and the position of B at the same moment is $45.0\,\text{m} - 2.52\,\text{m/s} \cdot 7.0\,\text{s} = 27.4\,\text{m}$. The place is between the starting places, as it should be. The moment $7.0\,\text{s}$ is later than the time interval of the table, so the result is based on extending the line, which is reasonable in uniform motion.
+
+## fy4-12-L2-06
+**Given:** cyclist $x_{0\text{B}} = 12\,\text{m}$, $v = 4.0\,\text{m/s}$ (uniform); car $x_0 = 0$, $v_0 = 0$, $a = 2.0\,\text{m/s}^2$
+**Find:** what is wrong in the student's solution; the correct moment of passing $t$ in $\text{s}$
+**Principle:** Passing is a meeting in which the positions are equal, $x_\text{A} = x_\text{B}$. The position of the car is $\tfrac12\,a\,t^2$ and that of the cyclist $x_{0\text{B}} + v\,t$. The motion of the car is uniformly accelerated, so the equation is a quadratic equation.
+**Formula:** $\tfrac12\,a\,t^2 = x_{0\text{B}} + v\,t$, that is, $\tfrac12\,a\,t^2 - v\,t - x_{0\text{B}} = 0$, and the positive root is $t = \dfrac{v + \sqrt{v^2 + 2\,a\,x_{0\text{B}}}}{a}$
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** The expression under the root is $v^2 + 2\,a\,x_{0\text{B}} = 16\,\text{m}^2/\text{s}^2 + 48\,\text{m}^2/\text{s}^2 = 64\,\text{m}^2/\text{s}^2$. So $t = \dfrac{4.0\,\text{m/s} + 8.0\,\text{m/s}}{2.0\,\text{m/s}^2} = 6.0\,\text{s}$
+**Answer:** $6.0\,\text{s}$, two significant figures like the given values.
+**Reasonableness:** At the moment $6.0\,\text{s}$ the car is at the place $\tfrac12 \cdot 2.0\,\text{m/s}^2 \cdot (6.0\,\text{s})^2 = 36\,\text{m}$ and the cyclist at the place $12\,\text{m} + 4.0\,\text{m/s} \cdot 6.0\,\text{s} = 36\,\text{m}$. The positions are the same. The velocity of the car is then $12\,\text{m/s}$, three times the velocity of the cyclist, so the car passes as the faster one.
+**Model answer on the error:** The student set the velocities equal, but at a meeting it is the positions that are equal, not the velocities. The moment $2.0\,\text{s}$ that the student calculated is the moment when the velocities of the car and the cyclist are equal. Then the car is at the place $4.0\,\text{m}$ and the cyclist at the place $20\,\text{m}$, so the cyclist is $16\,\text{m}$ ahead. This is the greatest value of the lead, not the passing.
+
+## fy4-12-L2-07
+**Given:** from the table: A: $v_\text{A} = 12.0\,\text{m/s}$ all the time; B: the velocity increases by $4.0\,\text{m/s}$ in two seconds, $v_\text{B} = 0$ at $0\,\text{s}$ and $20.0\,\text{m/s}$ at $10\,\text{s}$; start from the same place
+**Find:** the moment when the distance is at its greatest, and the distance $s_\text{max}$ in $\text{m}$
+**Principle:** A is ahead all the time, when B starts from the same place as the slower one. As long as $v_\text{A} > v_\text{B}$, the distance grows, and when B is faster, the distance decreases. So the distance is at its greatest when the velocities are equal. The distance is the area between the graphs up to that moment.
+**Reading the graph:** The graph of A is a horizontal line at $12.0\,\text{m/s}$. The graph of B is a straight line rising from the origin with the slope $a_\text{B} = \dfrac{4.0\,\text{m/s}}{2.0\,\text{s}} = 2.0\,\text{m/s}^2$. The lines intersect at the moment $t = 6.0\,\text{s}$, when in the table the velocity of both is $12.0\,\text{m/s}$.
+**Formula:** The area is a triangle with the base $t$ and the height $v_\text{A}$: $s_\text{max} = \tfrac12\,t\,v_\text{A}$. The same is obtained from the difference of the positions $v_\text{A}\,t - \tfrac12\,a_\text{B}\,t^2$.
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** $s_\text{max} = \tfrac12 \cdot 6.0\,\text{s} \cdot 12.0\,\text{m/s} = 36\,\text{m}$
+**Answer:** The greatest distance is $36\,\text{m}$, and it is at the moment $6.0\,\text{s}$. Two significant figures like the velocities.
+**Reasonableness:** From the difference of the positions: A is at the place $12.0\,\text{m/s} \cdot 6.0\,\text{s} = 72\,\text{m}$ and B at the place $\tfrac12 \cdot 2.0\,\text{m/s}^2 \cdot (6.0\,\text{s})^2 = 36\,\text{m}$, so the difference is $36\,\text{m}$. At the moments $4.0\,\text{s}$ and $8.0\,\text{s}$ the difference is $32\,\text{m}$ in both, so $36\,\text{m}$ is the greatest.
+
+## fy4-12-L3-04
+**Given:** both $v_0 = 20\,\text{m/s}$; length of the truck $L_\text{T} = 12\,\text{m}$, length of the car $L_\text{c} = 5.0\,\text{m}$, initial gap (front – rear) $10\,\text{m}$; acceleration of the car $a = 1.5\,\text{m/s}^2$; velocity of the oncoming car $v_\text{o} = 20\,\text{m/s}$; speed limit $80\,\text{km/h}$
+**Find:** the duration of the passing $t$ and the distance $s_\text{c}$; the smallest distance $d$ in $\text{m}$; the final velocity compared with the limit
+**Principle:** Three ideas. First: the motions of the car and the truck are described relative to each other. The truck moves uniformly at $20\,\text{m/s}$ and the car starts from the same velocity, so the difference arises only from the acceleration: the difference of the advance is $\tfrac12\,a\,t^2$. Second: the passing is complete when the difference of the advance is equal to the gap between the front and the rear, the length of the truck and the length of the car together. Third: the cars do not have time to meet if the distances travelled by the car and the oncoming car together are at most $d$.
+**Formula:** The relative distance needed is $s_\text{rel} = 10\,\text{m} + L_\text{T} + L_\text{c}$ and $\tfrac12\,a\,t^2 = s_\text{rel}$, so $t = \sqrt{\dfrac{2\,s_\text{rel}}{a}}$. The distance of the car is $s_\text{c} = v_0\,t + \tfrac12\,a\,t^2$, the distance of the oncoming car is $s_\text{o} = v_\text{o}\,t$ and $d_\text{min} = s_\text{c} + s_\text{o}$. The final velocity is $v = v_0 + a\,t$.
+**Conversions:** $80\,\text{km/h} = 80 : 3.6\,\text{m/s} = 22.2\,\text{m/s}$. The other quantities are in SI units.
+**Substitution:** $s_\text{rel} = 10\,\text{m} + 12\,\text{m} + 5.0\,\text{m} = 27\,\text{m}$. So $t = \sqrt{\dfrac{2 \cdot 27\,\text{m}}{1.5\,\text{m/s}^2}} = \sqrt{36\,\text{s}^2} = 6.0\,\text{s}$.
+Distance of the car:
+$s_\text{c} = 20\,\text{m/s} \cdot 6.0\,\text{s} + \tfrac12 \cdot 1.5\,\text{m/s}^2 \cdot (6.0\,\text{s})^2 = 120\,\text{m} + 27\,\text{m} = 147\,\text{m}$.
+Distance of the oncoming car: $s_\text{o} = 20\,\text{m/s} \cdot 6.0\,\text{s} = 120\,\text{m}$. So $d_\text{min} = 147\,\text{m} + 120\,\text{m} = 267\,\text{m}$.
+Final velocity: $v = 20\,\text{m/s} + 1.5\,\text{m/s}^2 \cdot 6.0\,\text{s} = 29\,\text{m/s}$.
+**Answer:** The smallest distance is $d = 267\,\text{m}$ (three significant figures, because the result is the sum of two three-digit values). The passing takes $6.0\,\text{s}$, and the car drives $147\,\text{m}$ during it. The distance $300\,\text{m}$ is sufficient by calculation, and a margin of $33\,\text{m}$ remains, but at the end of the passing it is only about $0.7\,\text{s}$ at the common approach velocity of the two cars $\left(33\,\text{m} : 49\,\text{m/s}\right)$. The final velocity $29\,\text{m/s} = 104\,\text{km/h}$ exceeds the limit $80\,\text{km/h}$, so the passing is not allowed even if the distance would be sufficient.
+**Model answer on the justification:** The passing should not be done. The calculated margin is too small, because even a small error in the acceleration or in the velocity of the oncoming car uses it up. In addition, the car would have to exceed the speed limit $80\,\text{km/h}$ by about $24\,\text{km/h}$. The model assumes a constant acceleration and exact lengths, so it is rough.
+**Reasonableness:** The car has driven $147\,\text{m}$ and the truck $20\,\text{m/s} \cdot 6.0\,\text{s} = 120\,\text{m}$, so the difference is $27\,\text{m}$, as needed. The average velocity of the car is $147\,\text{m} : 6.0\,\text{s} = 24.5\,\text{m/s}$, which is the mean of the initial and final velocities $20\,\text{m/s}$ and $29\,\text{m/s}$.
+
+## fy4-12-L3-05
+**Given:** cyclist: from the table $x = 0$ at $0\,\text{s}$ and $x = 23.9\,\text{m}$ at $4.0\,\text{s}$, uniform motion; the car starts from rest with a delay $t_0 = 1.5\,\text{s}$ at the stop line, $a = 2.0\,\text{m/s}^2$; limit $40\,\text{km/h}$
+**Find:** the velocity of the cyclist $v$; the place of passing $x$ (unit $\text{m}$) and the moment of passing $t$; the velocity of the car at the moment of passing compared with the limit
+**Principle:** The velocity of the cyclist is obtained from the change of position in the table. The motion of the car begins at the moment $t_0$, so its time of motion is $t - t_0$. At the passing the positions are equal, and the equation is a quadratic equation. Finally the velocity of the car is compared with the limit to see whether the model is reasonable in reality.
+**Reading the graph:** The points of the table are almost on a straight line: the position grows by about $6.0\,\text{m}$ every second, so the motion is uniform. From the end points $v = \dfrac{23.9\,\text{m} - 0}{4.0\,\text{s} - 0} = 5.975\,\text{m/s} \approx 6.0\,\text{m/s}$.
+**Formula:** The cyclist $x_\text{C} = v\,t$ and the car $x_\text{car} = \tfrac12\,a\,(t - t_0)^2$. Let $\tau = t - t_0$, so that $x_\text{C} = v\,(\tau + t_0)$ and at the passing $\tfrac12\,a\,\tau^2 - v\,\tau - v\,t_0 = 0$. The positive root is $\tau = \dfrac{v + \sqrt{v^2 + 2\,a\,v\,t_0}}{a}$.
+**Conversions:** $40\,\text{km/h} = 40 : 3.6\,\text{m/s} = 11.1\,\text{m/s}$. The other quantities are in SI units.
+**Substitution:** The expression under the root is $v^2 + 2\,a\,v\,t_0 = 36\,\text{m}^2/\text{s}^2 + 2 \cdot 2.0 \cdot 6.0 \cdot 1.5\,\text{m}^2/\text{s}^2 = 72\,\text{m}^2/\text{s}^2$, and the square root is $8.49\,\text{m/s}$. So
+$\tau = \dfrac{6.0\,\text{m/s} + 8.49\,\text{m/s}}{2.0\,\text{m/s}^2} = 7.24\,\text{s}$,
+$t = \tau + t_0 = 7.24\,\text{s} + 1.5\,\text{s} = 8.74\,\text{s}$.
+Place of passing:
+$x = v\,t = 6.0\,\text{m/s} \cdot 8.74\,\text{s} = 52.4\,\text{m}$.
+Velocity of the car at the passing: $v_\text{car} = a\,\tau = 2.0\,\text{m/s}^2 \cdot 7.24\,\text{s} = 14.5\,\text{m/s}$.
+**Answer:** The car passes the cyclist about $52\,\text{m}$ from the stop line, at the moment $8.7\,\text{s}$ counted from the moment the cyclist passed; two significant figures like the velocity and the acceleration. The velocity of the car is then $14.5\,\text{m/s} \approx 52\,\text{km/h}$, which exceeds the limit $40\,\text{km/h}$. So the model does not obey the limit.
+**Model answer on the effect of the limit:** The model assumes that the car accelerates all the time with the same acceleration. The limit $11.1\,\text{m/s}$ is reached already $5.6\,\text{s}$ after the start, before the calculated moment of passing, so the acceleration would end and the car would drive at a constant velocity. Then the passing would happen later and farther than the calculated $52\,\text{m}$, but the car is still faster than the cyclist ($11.1\,\text{m/s} > 6.0\,\text{m/s}$), so it finally passes.
+**Reasonableness:** The car has moved $\tfrac12 \cdot 2.0\,\text{m/s}^2 \cdot (7.24\,\text{s})^2 = 52.4\,\text{m}$, the same as the position of the cyclist, so the positions agree. The velocity of the car $14.5\,\text{m/s}$ is greater than that of the cyclist $6.0\,\text{m/s}$, as it should be at a passing.

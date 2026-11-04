@@ -117,3 +117,76 @@
 **Sijoitus:** Ensin $v_1^2 = (12{,}0\,\text{m/s})^2 = 144\,\text{m}^2/\text{s}^2$ ja $2gh = 2 \cdot 9{,}81\,\text{m/s}^2 \cdot 20{,}0\,\text{m} = 392{,}4\,\text{m}^2/\text{s}^2$. Siis $v_2 = \sqrt{(144 + 392{,}4)\,\text{m}^2/\text{s}^2} = 23{,}16\,\text{m/s}$
 **Vastaus:** $23{,}2\,\text{m/s}$. Vastaus on annettu kolmella merkitsevällä numerolla, koska korkeus $20{,}0\,\text{m}$ ja nopeus $12{,}0\,\text{m/s}$ on annettu kolmella.
 **Järkevyys:** Tulos on suurempi kuin pelkän pudotuksen nopeus $\sqrt{392{,}4}\,\text{m/s} \approx 19{,}8\,\text{m/s}$. Se on suurempi myös kuin heittonopeus, kuten pitää. Kivi osuisi veteen samalla nopeudella $23{,}2\,\text{m/s}$, jos sen heittäisi samalla nopeudella vaakasuoraan tai alaspäin. Suunta olisi silloin eri.
+
+
+## fy4-8-L1-06
+**Kysytty:** miten lasten nopeudet liukumäen alapäässä suhtautuvat toisiinsa
+**Periaate:** Kumpaankin lapseen vaikuttavat paino ja liukumäen tukivoima. Tukivoima on kohtisuorassa liikettä vastaan eikä tee työtä. Kitka ja ilmanvastus jätetään huomiotta, joten mekaaninen energia säilyy. Painon tekemä työ eli potentiaalienergian muutos riippuu vain korkeuserosta. Radan muoto ja pituus eivät vaikuta siihen.
+**Mallivastaus:** Molemmat lapset lähtevät levosta samalta korkeudelta, ja heidän massansa on sama. Alun potentiaalienergia $mgh$ on siis sama. Alapäässä se on kokonaan muuttunut liike-energiaksi, $mgh = \tfrac{1}{2} mv^2$. Siis $v = \sqrt{2gh}$ on molemmilla sama. Jyrkässä mäessä kiihtyvyys on suurempi mutta matka lyhyempi. Loivassa mäessä kiihtyvyys on pienempi mutta matka pidempi. Nämä tasoittavat toisensa, ja nopeudet ovat alapäässä yhtä suuret. Vain kuluva aika on erilainen.
+
+## fy4-8-L1-07
+**Annettu:** $m = 58{,}0\,\text{kg}$, alkunopeus $v_1 = 7{,}50\,\text{m/s}$, loppunopeus $v_2 = 4{,}50\,\text{m/s}$
+**Kysytty:** kokonaisvoiman tekemä työ $W_\text{kok}$ etumerkkeineen yksikössä $\text{kJ}$
+**Periaate:** Kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos. Kokonaisvoimaa ja matkaa ei tarvitse tietää. Alku- ja loppunopeus kertovat liike-energian muutoksen.
+**Kaava:** $W_\text{kok} = \Delta E_\text{k} = \tfrac{1}{2} mv_2^2 - \tfrac{1}{2} mv_1^2$
+**Muunnokset:** Suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:** Ensin $v_2^2 - v_1^2 = (20{,}25 - 56{,}25)\,\text{m}^2/\text{s}^2 = -36{,}0\,\text{m}^2/\text{s}^2$. Siis $W_\text{kok} = \tfrac12 \cdot 58{,}0\,\text{kg} \cdot (-36{,}0\,\text{m}^2/\text{s}^2) = -1044\,\text{J} = -1{,}044\,\text{kJ}$
+**Vastaus:** $-1{,}04\,\text{kJ}$. Vastaus on annettu kolmella merkitsevällä numerolla, koska massa $58{,}0\,\text{kg}$ ja nopeudet on annettu kolmella.
+**Järkevyys:** Työ on negatiivinen, koska kitka ja ilmanvastus vastustavat liikettä. Liike-energia pienenee. Alussa liike-energia on $\tfrac12 \cdot 58 \cdot 7{,}50^2\,\text{J} \approx 1630\,\text{J}$ ja lopussa $\tfrac12 \cdot 58 \cdot 4{,}50^2\,\text{J} \approx 590\,\text{J}$; erotus on noin $-1040\,\text{J}$.
+
+## fy4-8-L1-08
+**Kysytty:** mikä oppilaan ratkaisussa on virheellistä
+**Periaate:** Voiman tekemä työ on $W = F_\parallel s$. Tässä $s$ on kuljettu matka voiman suunnassa. Kitkavoima osoittaa koko matkan ajan liikettä vastaan, joten kitkan työ on $-F_\mu s$. Tässä $s$ on matka pitkin lankkua. Korkeusero kuuluu painon työhön eli potentiaalienergian muutokseen. Se ei kuulu kitkan työhön.
+**Mallivastaus:** Oppilas on kertonut kitkavoiman lankun päiden korkeuserolla. Kitkan työhön tarvitaan kuitenkin matka, jonka laatikko kulkee pitkin lankkua. Kitkavoima toimii koko lankun pituudella, joten oikea työ on $W = -8{,}0\,\text{N} \cdot 5{,}0\,\text{m} = -40\,\text{J}$. Etumerkki $-$ oli oikein, koska kitka vastustaa liikettä. Vain matka oli väärä. Oppilaan tulos $-12\,\text{J}$ on liian pieni.
+
+## fy4-8-L2-05
+**Annettu:** kuulan korkeus alimmasta kohdasta $h$ ja nopeus alimmassa kohdassa $v$ taulukon kuudessa mittauksessa; alkunopeus $0$; kitka ja ilmanvastus jätetään huomiotta
+**Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$
+**Periaate:** Kuulaan vaikuttavat paino ja langan jännitysvoima. Jännitysvoima on kohtisuorassa liikettä vastaan eikä tee työtä, joten mekaaninen energia säilyy. Nollataso on alin kohta. Ylhäällä kuulalla on vain potentiaalienergiaa ja alhaalla vain liike-energiaa. Massa supistuu pois, joten kuulan massaa ei tarvita.
+**Kuvaajan lukeminen:** Neliöt ovat $v^2 = 1{,}00;\ 1{,}90;\ 2{,}99;\ 3{,}84;\ 4{,}97;\ 5{,}81\,\text{m}^2/\text{s}^2$. Pisteet $(h, v^2)$ asettuvat suoran lähelle. Suora kulkee origon kautta, joten kulmakerroin saadaan yhdestä suoran pisteestä. Suora kulkee pisteiden lomassa pisteen $(0{,}30\,\text{m};\ 5{,}86\,\text{m}^2/\text{s}^2)$ kautta. Siis kulmakerroin on $k = 5{,}86\,\text{m}^2/\text{s}^2 : 0{,}30\,\text{m} = 19{,}5\,\text{m/s}^2$.
+**Kaava:** $mgh = \tfrac{1}{2} mv^2$, joten $v^2 = 2g \cdot h$. Suoran kulmakerroin on $k = 2g$, joten $g = \dfrac{k}{2}$.
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $g = \dfrac{19{,}5\,\text{m/s}^2}{2} = 9{,}77\,\text{m/s}^2$
+**Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$. Vastaus on annettu kahdella merkitsevällä numerolla, koska korkeudet $h$ on annettu kahdella (esimerkiksi $0{,}05\,\text{m}$). Kuvaajasta luettu tarkempi arvo on $9{,}77\,\text{m/s}^2$.
+**Järkevyys:** Tulos poikkeaa tunnetusta arvosta $9{,}81\,\text{m/s}^2$ alle prosentin. Se on mittausvirheen rajoissa. Yksittäinen mittaus antaa samaa suuruusluokkaa: $h = 0{,}30\,\text{m}$ ja $v = 2{,}41\,\text{m/s}$ antavat $g = v^2 : (2h) = 9{,}68\,\text{m/s}^2$. c) Suoran pitää kulkea origon kautta. Kun $h = 0$, kuula on alimmassa kohdassa levossa eikä sillä ole liike-energiaa. Siis $v = 0$ ja $v^2 = 0$. Yhtälö $v^2 = 2gh$ on verrannollisuus. Siinä ei ole vakiotermiä.
+
+## fy4-8-L2-06
+**Annettu:** $m = 420\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$; kohdissa A, B, C, D ratamatka $s = 0;\ 55;\ 120;\ 170\,\text{m}$, korkeus $h = 18{,}0;\ 6{,}0;\ 12{,}0;\ 3{,}0\,\text{m}$ ja nopeus $v = 1{,}5;\ 14{,}6;\ 7{,}9;\ 14{,}2\,\text{m/s}$
+**Kysytty:** a) mekaaninen energia $E_\text{mek}$ kohdissa A–D; b) vastusvoimien työ $W_\text{muut}$ kohtien A ja D välillä; c) kohtien väli, jolla keskimääräinen vastusvoima on suurin
+**Periaate:** Mekaaninen energia on $E_\text{mek} = \tfrac{1}{2} mv^2 + mgh$ nollatasosta maanpinnasta. Tukivoima ei tee työtä, joten vaunun mekaanisen energian muutos on vastusvoimien työ, $W_\text{muut} = E_{\text{mek},2} - E_{\text{mek},1}$. Vastusvoima on liikettä vastaan koko matkan. Sen keskiarvo välillä on $F = -W_\text{muut} : \Delta s$.
+**Kaava:** $E_\text{mek} = \tfrac{1}{2} mv^2 + mgh$ ja $W_\text{muut} = E_{\text{mek,D}} - E_{\text{mek,A}}$
+**Muunnokset:** Suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:** a) Kohdassa A on $\tfrac12 \cdot 420 \cdot 1{,}5^2\,\text{J} + 420 \cdot 9{,}81 \cdot 18{,}0\,\text{J} = 0{,}47\,\text{kJ} + 74{,}16\,\text{kJ} = 74{,}6\,\text{kJ}$. Samoin lasketaan kohdat B, C ja D. Liike-energiat ovat $44{,}8;\ 13{,}1;\ 42{,}3\,\text{kJ}$ ja potentiaalienergiat $24{,}7;\ 49{,}4;\ 12{,}4\,\text{kJ}$. Siis $E_\text{mek} = 69{,}5;\ 62{,}5;\ 54{,}7\,\text{kJ}$. b) $W_\text{muut} = 54{,}7\,\text{kJ} - 74{,}6\,\text{kJ} = -19{,}9\,\text{kJ}$. c) Välillä A–B energia pienenee $5{,}15\,\text{kJ}$ matkalla $55\,\text{m}$. Siis $F = 5150\,\text{J} : 55\,\text{m} = 94\,\text{N}$. Välillä B–C se pienenee $6{,}94\,\text{kJ}$ matkalla $65\,\text{m}$. Siis $F = 107\,\text{N}$. Välillä C–D se pienenee $7{,}84\,\text{kJ}$ matkalla $50\,\text{m}$. Siis $F = 157\,\text{N}$.
+**Vastaus:** b) $W_\text{muut} \approx -19{,}9\,\text{kJ}$. Vastaus on annettu kolmella merkitsevällä numerolla, koska korkeudet ja nopeudet on annettu kolmella. c) Keskimääräinen vastusvoima on suurin kohtien C ja D välillä, noin $1{,}6 \cdot 10^2\,\text{N}$.
+**Järkevyys:** Mekaaninen energia pienenee joka välillä, kuten pitääkin. Kaikkiaan noin $27\,\%$ alkuenergiasta muuttui sisäenergiaksi. Koko radan keskimääräinen vastusvoima on $19\,900\,\text{J} : 170\,\text{m} \approx 117\,\text{N}$. Se on osavälien arvojen $94\,\text{N}$, $107\,\text{N}$ ja $157\,\text{N}$ välissä, kuten pitää.
+
+## fy4-8-L2-07
+**Annettu:** $m = 0{,}50\,\text{kg}$, loppunopeus $0$; alkunopeudet $v_0 = 1{,}0;\ 1{,}5;\ 2{,}0;\ 2{,}5;\ 3{,}0\,\text{m/s}$ ja pysähtymismatkat $s = 0{,}22;\ 0{,}47;\ 0{,}88;\ 1{,}35;\ 1{,}98\,\text{m}$; kitkavoima $F_\mu$ vakio, ilmanvastus jätetään huomiotta
+**Kysytty:** kitkavoima $F_\mu$ yksikössä $\text{N}$
+**Periaate:** Pöytä on vaakasuora, joten potentiaalienergia ei muutu. Paino ja tukivoima ovat kohtisuorassa liikettä vastaan eivätkä tee työtä. Kitka on siis kokonaisvoima, ja sen työ on liike-energian muutos.
+**Kuvaajan lukeminen:** Neliöt ovat $v_0^2 = 1{,}00;\ 2{,}25;\ 4{,}00;\ 6{,}25;\ 9{,}00\,\text{m}^2/\text{s}^2$. Pisteet $(v_0^2, s)$ asettuvat origon kautta kulkevan suoran lähelle. Suora kulkee pisteen $(9{,}00\,\text{m}^2/\text{s}^2;\ 1{,}97\,\text{m})$ kautta. Siis kulmakerroin on $k = 1{,}97\,\text{m} : 9{,}00\,\text{m}^2/\text{s}^2 = 0{,}219\,\text{s}^2/\text{m}$.
+**Kaava:** $-F_\mu s = 0 - \tfrac{1}{2} m v_0^2$, joten $s = \dfrac{m}{2F_\mu} \cdot v_0^2$. Kulmakerroin on $k = \dfrac{m}{2F_\mu}$, joten $F_\mu = \dfrac{m}{2k}$.
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. $1\,\text{kg} : (\text{s}^2/\text{m}) = 1\,\text{kg}\cdot\text{m/s}^2 = 1\,\text{N}$.
+**Sijoitus:** $F_\mu = \dfrac{0{,}50\,\text{kg}}{2 \cdot 0{,}2188\,\text{s}^2/\text{m}} = 1{,}14\,\text{N}$
+**Vastaus:** $F_\mu \approx 1{,}1\,\text{N}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska massa $0{,}50\,\text{kg}$ on annettu kahdella.
+**Järkevyys:** Palikan paino on $0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 4{,}9\,\text{N}$, joten kitkavoima on noin $23\,\%$ painosta. Kitkakerroin on siis noin $0{,}23$. Se on uskottava puulle pöydällä. Yksittäisestä mittauksesta saadaan samaa: $v_0 = 2{,}0\,\text{m/s}$ antaa $F_\mu = m v_0^2 : (2s) = 0{,}50 \cdot 4{,}0 : 1{,}76\,\text{N} = 1{,}14\,\text{N}$.
+
+## fy4-8-L3-04
+**Annettu:** $m = 70\,\text{kg}$, korkeusero $h = 6{,}0\,\text{m}$, rinteen pituus $L = 45\,\text{m}$, alkunopeus $0$ ja pysähtymisen jälkeen nopeus $0$; vaakasuora pysähtymismatka $s = 29{,}4;\ 31{,}2;\ 28{,}7;\ 30{,}5;\ 29{,}9;\ 30{,}7\,\text{m}$, $g = 9{,}81\,\text{m/s}^2$; kitkavoima $F$ vakio, ilmanvastus jätetään huomiotta
+**Kysytty:** a) pysähtymismatkan keskiarvo $s_\text{ka}$; b) keskimääräinen kitkavoima $F$ yksikössä $\text{N}$; c) nopeus $v$ rinteen alapäässä
+**Periaate:** Lautailijaan vaikuttavat paino, lumen tukivoima ja kitka. Tukivoima ei tee työtä, joten kitka on ainoa muu voima. Käytetään energiaperiaatetta. Kitka on koko ajan liikettä vastaan, joten sen työ on $-F$ kertaa koko kuljettu matka $L + s_\text{ka}$. Nollataso on rinteen alapää. Alussa ja lopussa nopeus on nolla. Koko alun potentiaalienergia $mgh$ muuttuu siis sisäenergiaksi.
+**Kaava:** a) $s_\text{ka} = \dfrac{\text{summa}}{6}$. b) $mgh - F\left(L + s_\text{ka}\right) = 0$, joten $F = \dfrac{mgh}{L + s_\text{ka}}$. c) Rinteessä $mgh - F L = \tfrac{1}{2} mv^2$, joten $v = \sqrt{\dfrac{2\left(mgh - F L\right)}{m}}$.
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** a) Pysähtymismatkojen summa on $180{,}4\,\text{m}$. Siis $s_\text{ka} = 180{,}4\,\text{m} : 6 = 30{,}07\,\text{m}$. b) $mgh = 70\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 6{,}0\,\text{m} = 4120\,\text{J}$ ja $L + s_\text{ka} = 45\,\text{m} + 30{,}07\,\text{m} = 75{,}07\,\text{m}$. Siis $F = 4120\,\text{J} : 75{,}07\,\text{m} = 54{,}9\,\text{N}$. c) Kitkan työ rinteessä on $F L = 54{,}9\,\text{N} \cdot 45\,\text{m} = 2470\,\text{J}$. Siis $\tfrac{1}{2} mv^2 = 4120\,\text{J} - 2470\,\text{J} = 1650\,\text{J}$ ja $v = \sqrt{2 \cdot 1650\,\text{J} : 70\,\text{kg}} = 6{,}87\,\text{m/s}$.
+**Vastaus:** b) $F \approx 55\,\text{N}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska massa $70\,\text{kg}$ ja korkeus $6{,}0\,\text{m}$ on annettu kahdella. c) Nopeus rinteen alapäässä on noin $6{,}9\,\text{m/s}$. Se on pienempi kuin kitkattoman rinteen nopeus $\sqrt{2gh} = 10{,}8\,\text{m/s}$. Syy on se, että kitka on muuttanut osan potentiaalienergiasta sisäenergiaksi jo rinteessä. Mekaaninen energia rinteen alapäässä on $1650\,\text{J}$ eikä $4120\,\text{J}$.
+**Järkevyys:** Kitkavoima $55\,\text{N}$ on noin $8\,\%$ lautailijan painosta $687\,\text{N}$. Kitkakerroin on siis noin $0{,}08$, mikä sopii liukkaalle lumelle. Rinteessä kitka muuttaa $2470\,\text{J} : 4120\,\text{J} \approx 60\,\%$ energiasta sisäenergiaksi. Se vastaa rinteen osuutta koko matkasta: $45 : 75{,}07 \approx 60\,\%$.
+
+## fy4-8-L3-05
+**Annettu:** $m = 0{,}057\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$; korkeudet ylimmässä kohdassa $h_0 = 1{,}20\,\text{m}$ ja kimmahdusten jälkeen $h_1 = 0{,}77;\ h_2 = 0{,}49;\ h_3 = 0{,}32;\ h_4 = 0{,}20\,\text{m}$; ilmanvastus jätetään huomiotta
+**Kysytty:** a) pallon mekaaninen energia ylimmissä kohdissa ja kimmahduksesta säilynyt osuus; b) osuuksien keskiarvo prosentteina; c) ensimmäisessä kimmahduksessa sisäenergiaksi muuttunut mekaaninen energia sekä perustelu energian säilymisestä
+**Periaate:** Ylimmässä kohdassa pallo on hetken levossa, joten liike-energia on nolla ja $E_\text{mek} = mgh$ (nollataso on lattia). Lennon aikana vaikuttaa vain paino, joten mekaaninen energia säilyy. Muutokset tapahtuvat kimmahduksissa. Massa ja $g$ supistuvat osuudesta, joten osuus on korkeuksien suhde, $\dfrac{E_{n+1}}{E_n} = \dfrac{h_{n+1}}{h_n}$.
+**Kaava:** $E_n = mgh_n$, osuus $r_n = \dfrac{h_{n+1}}{h_n}$, ja ensimmäisen kimmahduksen energiamuutos $\Delta E = E_0 - E_1 = mg\left(h_0 - h_1\right)$
+**Muunnokset:** Suureet ovat SI-yksiköissä. Osuus muutetaan prosenteiksi kertomalla sadalla.
+**Sijoitus:** a) Energiat ovat $E_0 = 0{,}057 \cdot 9{,}81 \cdot 1{,}20\,\text{J} = 0{,}671\,\text{J}$, $E_1 = 0{,}431\,\text{J}$, $E_2 = 0{,}274\,\text{J}$, $E_3 = 0{,}179\,\text{J}$ ja $E_4 = 0{,}112\,\text{J}$. Osuudet ovat $r_0 = 0{,}77 : 1{,}20 = 0{,}642$, $r_1 = 0{,}636$, $r_2 = 0{,}653$ ja $r_3 = 0{,}625$. b) Osuuksien summa on $2{,}556$. Siis keskiarvo on $2{,}556 : 4 = 0{,}639 = 63{,}9\,\%$. c) $\Delta E = 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}20 - 0{,}77)\,\text{m} = 0{,}240\,\text{J}$.
+**Vastaus:** b) Pallo säilyttää kimmahduksessa keskimäärin noin $64\,\%$ mekaanisesta energiastaan. Vastaus on annettu kahdella merkitsevällä numerolla, koska korkeudet on annettu kahdella. c) Ensimmäisessä kimmahduksessa mekaanista energiaa muuttuu sisäenergiaksi noin $0{,}24\,\text{J}$. Perustelu: pallon mekaaninen energia ei säily kimmahduksissa. Se pienenee joka kerta (korkeudet pienenevät: $1{,}20 \to 0{,}77 \to 0{,}49 \to 0{,}32 \to 0{,}20\,\text{m}$), mutta kokonaisenergia säilyy. Kimmahduksessa pallon ja lattian vuorovaikutus muuttaa osan mekaanisesta energiasta pallon ja lattian sisäenergiaksi (lämpenemiseksi) ja ääneksi.
+**Järkevyys:** Osuudet $0{,}625$–$0{,}653$ ovat lähes samat. Pallo menettää siis jokaisessa kimmahduksessa suunnilleen saman osuuden, ja se on uskottava tennispallolle. Neljän kimmahduksen jälkeen jäljellä on $0{,}20 : 1{,}20 \approx 17\,\%$ alkuenergiasta, ja $0{,}639^4 \approx 0{,}167$ antaa saman.

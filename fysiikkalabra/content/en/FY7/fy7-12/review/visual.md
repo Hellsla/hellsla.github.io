@@ -1,21 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c3d2878255784b71
+CONTENT-HASH: db76c0c164d4f96e
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fig-5/fig-7/fig-9/fig-11 at 390 px — figure text about 9–10 px; enlarge when next edited.
-- [Minor] Exercises level list at 390 px — "4 exercises" wraps to two lines beside the level 2 title.
-- [Minor] Simulation canvas/readout keep the decimal comma outside en — owner decision, not a finding.
+- [Minor] fy7-12 alt text — "a green laser beam enters from below" is as seen; fine, no change needed beyond optionally naming the small laser at the bottom edge.
 
 ## Checked
-- contact-1..3 (all 36 captures triaged), top-390, sim-390 (contact), sim-1280, theory-1280-1/-2/-3.
-- fig-5 water, fig-7 fibre, fig-9 diamond (enlarged): labels, normals, arcs and rays consistent; no Finnish words; fibre figure marks "not to scale" in alt text and label n1 > n2.
-- fig-11 graph (enlarged): water label below-left, glass above-right, diamond above; clear.
-- Worked example (contact-3 #31-32): seven steps, aligned equations, units upright, check line readable.
-- Sim legends ("core, n1 = 1.48", "surrounding substance, n2 = 1.46") short and readable; formulas show no overflow in captures.
-- English text read in full from the packet; no Finnish words in rendered strings.
-
-## Scores
-illustrations 4 · typography 5 · Finnish (English prose) 5 · accessibility 4
+batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-12.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.

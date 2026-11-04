@@ -39,6 +39,97 @@
       "answer": 45,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L1-06",
+      "level": 1,
+      "text": "The $(t, x)$ graph of an object is a straight line that falls from left to right. What does this tell about the motion of the object?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The position decreases as time passes, so the velocity is negative and the motion is in the negative direction.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The position decreases as time passes, so the velocity is negative and the motion is in the negative direction.",
+          "feedback": "Correct: the slope of the line is the velocity, and the slope of a falling line is negative. The sign tells the direction of the motion.",
+          "correct": true
+        },
+        {
+          "text": "The object is moving downhill, because the graph goes downwards and the graph shows the shape of the path.",
+          "feedback": "The graph is not a picture of the path. It shows position as a function of time, and an object can move along a horizontal track even though the graph falls."
+        },
+        {
+          "text": "The object is coming to a stop, because the line of the graph tilts and the magnitude of the velocity decreases.",
+          "feedback": "A stopped object is at rest, and its graph is horizontal. A straight line whose slope does not change describes a constant velocity, not a slowing motion."
+        },
+        {
+          "text": "As time passes the object moves backwards in time, because the position values of the graph get smaller.",
+          "feedback": "Time always increases as one goes to the right. A decreasing position means motion in the negative direction, not travelling backwards in time."
+        }
+      ]
+    },
+    {
+      "id": "fy4-1-L1-07",
+      "level": 1,
+      "text": "A walker walks $40\\,\\text{m}$ east along a straight road, turns around and walks the same $40\\,\\text{m}$ back to the starting point. East has been chosen as the positive direction. Which statement about the whole walk is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The displacement is $0\\,\\text{m}$, because the final position is the same as the initial position.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The displacement is $0\\,\\text{m}$, because the final position is the same as the initial position.",
+          "feedback": "Correct: the displacement is the final position minus the initial position. The distance travelled does not affect it, and here the distance is $80\\,\\text{m}$.",
+          "correct": true
+        },
+        {
+          "text": "The displacement is $80\\,\\text{m}$, because the displacement is the whole length of the route travelled.",
+          "feedback": "The length of the route is the distance, not the displacement. The displacement depends only on the initial and final positions, and here they are the same."
+        },
+        {
+          "text": "The displacement is $40\\,\\text{m}$, because only the outward leg counts when the motion turns around.",
+          "feedback": "The whole motion affects the displacement. The return leg moves the walker back $40\\,\\text{m}$, so it cancels the outward leg."
+        },
+        {
+          "text": "The displacement is $-40\\,\\text{m}$, because the last leg goes in the negative direction.",
+          "feedback": "The sign belongs to the whole displacement, not to the last leg. The displacement of the whole walk is zero, because the displacements of the legs, $+40\\,\\text{m}$ and $-40\\,\\text{m}$, add up to zero."
+        }
+      ]
+    },
+    {
+      "id": "fy4-1-L1-08",
+      "level": 1,
+      "text": "A student calculates the velocity of a cart from a straight line of the $(t, x)$ graph, whose points are $(2.0\\,\\text{s};\\, 5.0\\,\\text{m})$ and $(6.0\\,\\text{s};\\, 13\\,\\text{m})$.\n\nThe student's solution: $v = \\dfrac{13\\,\\text{m}}{6.0\\,\\text{s}} = 2.2\\,\\text{m/s}$.\n\nWhat is the error in the student's solution?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "She divided the position of the second point by its time, although one must divide the change in position by the change in time.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "She divided the position of the second point by its time, although one must divide the change in position by the change in time.",
+          "feedback": "Correct: the velocity is the slope $\\frac{x_2 - x_1}{t_2 - t_1}$. The differences between the points are $8.0\\,\\text{m}$ and $4.0\\,\\text{s}$, so the velocity is $2.0\\,\\text{m/s}$.",
+          "correct": true
+        },
+        {
+          "text": "She calculated speed and not velocity, because velocity is obtained from the sum of the positions divided by the sum of the times.",
+          "feedback": "A sum does not describe motion. The velocity is the change in position divided by the change in time, and a change is always a difference: final minus initial."
+        },
+        {
+          "text": "She swapped the points, so the sign is wrong and the correct velocity is $-2.2\\,\\text{m/s}$.",
+          "feedback": "The position increases as time passes, so the velocity is positive. The value $2.2\\,\\text{m/s}$ is wrong already because the differences were not calculated."
+        },
+        {
+          "text": "There is no error, because the velocity is the final position divided by the total time elapsed since the beginning.",
+          "feedback": "That would hold only if the motion started from the origin at the moment zero. Here the starting point is $(2.0\\,\\text{s};\\, 5.0\\,\\text{m})$, so the differences must be taken."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +164,140 @@
       "answer": 16,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L2-05",
+      "level": 2,
+      "text": "The motion of a cart was followed with video analysis. The table gives the position of the cart at different moments (example data). The motion of the cart is uniform.\n\nDraw the $(t, x)$ graph from the data and fit a straight line through the points. Use the line to determine the velocity $v$ of the cart. Also give the initial position $x_0$ and write the position of the cart as a function of time.\n\nWrite the velocity in the answer box.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 0.61,
+      "unit": "m/s",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Position of the cart in video analysis (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.48"
+          ],
+          [
+            "1.0",
+            "1.12"
+          ],
+          [
+            "2.0",
+            "1.67"
+          ],
+          [
+            "3.0",
+            "2.33"
+          ],
+          [
+            "4.0",
+            "2.88"
+          ],
+          [
+            "5.0",
+            "3.53"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-1-L2-06",
+      "level": 2,
+      "text": "Two carts move along the same straight track and both motions are uniform. The table gives the positions of carts A and B at different moments (example data).\n\nDraw the $(t, x)$ points of both carts in the same graph and fit a straight line to each. Determine the velocities of the carts from the lines and tell which one moves faster.\n\nWhen are the carts at the same position? Write this moment in the answer box.",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 5.8,
+      "unit": "s",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Positions of carts A and B (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x_\\text{A}\\,(\\text{m})$",
+          "$x_\\text{B}\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1.0",
+            "20.1"
+          ],
+          [
+            "2.0",
+            "4.1",
+            "16.4"
+          ],
+          [
+            "4.0",
+            "6.9",
+            "12.9"
+          ],
+          [
+            "6.0",
+            "10.1",
+            "9.2"
+          ],
+          [
+            "8.0",
+            "13.0",
+            "5.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-1-L2-07",
+      "level": 2,
+      "text": "A robot moves along a straight track, and its position has been measured at certain moments (example data). Between two measurement points the motion is uniform.\n\nDraw the $(t, x)$ graph of the robot and, based on it, the $(t, v)$ graph by drawing the velocity of each time interval. During which time interval does the robot move in the negative direction?\n\nWrite in the answer box the velocity of the robot during this interval, with its sign.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": -1.5,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Position of the robot (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "2.0"
+          ],
+          [
+            "4.0",
+            "14"
+          ],
+          [
+            "10",
+            "14"
+          ],
+          [
+            "16",
+            "5.0"
+          ],
+          [
+            "20",
+            "5.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +324,94 @@
       "answer": 0.25,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-1-L3-04",
+      "level": 3,
+      "text": "The motion of a cart was studied with video analysis. The scale of the program was set with a $1.00\\,\\text{m}$ measuring stick placed beside the track, but the stick was closer to the camera than the track of the cart. The table gives the positions given by the program (example data). The motion of the cart is uniform.\n\nLater a $2.00\\,\\text{m}$ measuring tape was placed on the track, and the program gave its length as $1.60\\,\\text{m}$.\n\nDetermine from the table the velocity given by the program by fitting a straight line. Correct the velocity with the measuring tape to the true velocity $v$ of the cart. Estimate when the cart would be at the true position $6.0\\,\\text{m}$, and justify whether the prediction is reliable. Also explain why the scale error is systematic and is not corrected by repeating the measurement.\n\nWrite the true velocity of the cart in the answer box.",
+      "kind": [
+        "data",
+        "error",
+        "model"
+      ],
+      "answer": 0.8,
+      "unit": "m/s",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Position of the cart on the scale of the program (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x_\\text{prog}\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.30"
+          ],
+          [
+            "1.0",
+            "0.95"
+          ],
+          [
+            "2.0",
+            "1.62"
+          ],
+          [
+            "3.0",
+            "2.21"
+          ],
+          [
+            "4.0",
+            "2.88"
+          ],
+          [
+            "5.0",
+            "3.52"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-1-L3-05",
+      "level": 3,
+      "text": "On a highway, a sensor beside the road follows the position of a truck. The table gives the position of the truck on an $x$-axis along the road (example data). The motion of the truck is uniform and in the positive direction.\n\nA police car passes the position $x = 0$ at the moment $t = 8.0\\,\\text{s}$ and drives in the direction of the truck at a uniform velocity $16\\,\\text{m/s}$.\n\nFit a straight line to the measurement points of the truck and write the position of the truck as a function of time. Write the position of the police car as a function of time. Determine at what position the police car catches up with the truck, and justify why this prediction is uncertain when the data of the sensor ends at the moment $t = 40\\,\\text{s}$.\n\nWrite the position where the police car catches up in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 740,
+      "unit": "m",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Position of the truck (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "205"
+          ],
+          [
+            "10",
+            "302"
+          ],
+          [
+            "20",
+            "395"
+          ],
+          [
+            "30",
+            "504"
+          ],
+          [
+            "40",
+            "598"
+          ]
+        ]
+      }
     }
   ]
 }

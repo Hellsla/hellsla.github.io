@@ -57,6 +57,14 @@
 html{-webkit-text-size-adjust:100%}
 body{margin:0;font:var(--sim-fs)/var(--sim-lh) var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;
   background-image:radial-gradient(circle at 18% 8%,rgba(26,77,46,.06),transparent 32rem),radial-gradient(circle at 90% 0,rgba(26,77,46,.04),transparent 28rem);background-repeat:no-repeat}
+/* the front page's background shape (teacher 2026-11-04): Kiviruukin lukio's hero blob shape (his path, viewBox 0 0 1000 900)
+   in Ruukkilabra's pale sage green #dde8d4, with a crisp edge (teacher 2026-11-04: sharper, no fade). At the top right turned
+   upside down so that it hangs from the corner, runs off the right edge and partly behind the module list; mirrored and
+   fainter in the bottom left corner. Background layers only: no content, layout or horizontal scroll changes. */
+body:has(main.home){--blob:clamp(26rem,14rem + 48vw,68rem);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-60 -60 1120 1020'%3E%3Cpath transform='matrix(1 0 0 -1 0 900)' fill='%23dde8d4' d='M54 880V760C54 669 75 590 118 523C160 459 220 410 296 377C423 323 521 355 625 400C685 426 741 447 782 438C821 430 840 396 842 334L846 282C849 188 885 108 958 54L1000 24V880H54Z'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-60 -60 1120 1020'%3E%3Cpath transform='matrix(-1 0 0 1 1000 0)' fill='%23dde8d4' fill-opacity='.6' d='M54 880V760C54 669 75 590 118 523C160 459 220 410 296 377C423 323 521 355 625 400C685 426 741 447 782 438C821 430 840 396 842 334L846 282C849 188 885 108 958 54L1000 24V880H54Z'/%3E%3C/svg%3E"),radial-gradient(circle at 18% 8%,rgba(26,77,46,.06),transparent 32rem),radial-gradient(circle at 90% 0,rgba(26,77,46,.04),transparent 28rem);
+  background-size:var(--blob) auto,calc(var(--blob) * .5) auto,auto,auto;
+  background-position:right calc(var(--blob) * -.12) top calc(var(--blob) * -.2),left calc(var(--blob) * -.06) bottom calc(var(--blob) * -.1),0 0,0 0}
 a{color:var(--accent-deep);text-underline-offset:.18em}
 a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
 .page{width:min(80rem,calc(100% - 32px));margin:0 auto;padding:18px 0 40px}
@@ -111,6 +119,8 @@ li{margin:.4rem 0}
 .katex-display{overflow-x:auto;overflow-y:hidden;padding:.7rem 1rem;margin:1rem 0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
 @media (max-width:389px){.katex-display{padding:.6rem .6rem}.katex-display>.katex{font-size:1.03em}}   /* narrow phone only: display maths a step smaller (1.21em → 1.03em) so the widest rows (fy3-3, fy2-3's kWh in joules) fit 360 px also with CI's fonts; at 390 px and up nothing overflows, so formulas stay full size */
 .notice{margin:.8rem 0 0;padding:.6rem .9rem;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;background:var(--surface);font-size:var(--fs-small)}
+.katex{white-space:nowrap}   /* Lauri 2026-11-04: an inline formula never breaks onto two lines; the text wraps before it instead */
+.katex.kx-wide{display:block;width:0;min-width:100%;overflow-x:auto;overflow-y:hidden;padding:.15em 0 .3em;text-align:left}   /* lesson.js: an inline formula wider than its column gets its own line and scrolls, never two lines */
 .fig-tex{font-size:.85em;line-height:1.25;color:inherit;white-space:nowrap}.fig-tex .katex{font-size:1.1em}
 .fig-tex[style*="font-size"] .katex{font-size:1em}   /* a figlib label (scripts/figlib.py) is exactly as large as the font-size its box sets */
 article svg{max-width:100%;height:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.4rem}
@@ -147,19 +157,20 @@ main.home+footer.bottom{margin-top:1.75rem}
 .mod-list>li{margin:0;border-bottom:1px solid var(--line)}
 .mod-group{font:700 .75rem/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin:0 0 .35rem}
 .mod-group~.mod-group{margin-top:1rem}
-/* the school's logo (teacher 2026-11-04: emblem and name, its courses level with the national modules). Under 700 px it
+/* the school's logo (teacher 2026-11-04: the name and the emblem on one row in black, its courses level with the national modules). Under 700 px it
    heads the school's list; from 700 px it stands in the intro over the right column and the list's heading is visually
-   hidden: under the heading and lead in two columns, beside them (in the right column) once they fit in the left one */
-.mod-school img{display:block;height:56px;width:auto}
-.intro-school{display:none;height:56px;width:auto}
+   hidden: under the heading and lead in two columns, beside the lead (in the right column) from 1200 px, the heading on one row across both columns (teacher 2026-11-04: the English slogan must not wrap) */
+.mod-school img{display:block;height:32px;width:auto;max-width:100%}
+.intro-school{display:none;height:32px;width:auto;max-width:100%}
 @media (min-width:700px){
   .home-intro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(1.25rem,3vw,2.5rem)}
   .home-intro>h1,.home-intro>.lead{grid-column:1/-1}
   .intro-school{display:block;grid-column:2;margin:.9rem 0 0}
   .mod-side>.mod-school:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;margin:0}}
 @media (min-width:1200px){
-  .home-intro>h1,.home-intro>.lead{grid-column:1}
-  .intro-school{grid-column:2;grid-row:1/3;align-self:end;margin:0}}
+  .home-intro>h1{grid-column:1/-1;white-space:nowrap}
+  .home-intro>.lead{grid-column:1}
+  .intro-school{grid-column:2;grid-row:2;align-self:end;margin:0}}
 .mod-row{display:flex;align-items:center;gap:.8rem;min-height:56px;padding:.45rem .6rem;color:var(--ink);text-decoration:none;border-radius:8px}
 .mod-icon{display:block;width:40px;height:40px;flex:none}
 .mod-text{display:flex;flex-direction:column;flex:1;min-width:0}
@@ -175,10 +186,12 @@ main.home+footer.bottom{margin-top:1.75rem}
 .mod-row.coming .mod-code,.mod-row.coming .mod-title,.mod-row.coming .mod-q{color:var(--text-muted)}
 .mod-row.coming .mod-name{font-weight:500}
 .mod-row.coming .mod-icon{filter:grayscale(1);opacity:.55}
+.plan-list{margin-top:1.4rem}.mod-row.planned{cursor:default}
 .mod-row.coming:hover{background:none}.mod-row.coming:hover .mod-go{opacity:0}.mod-row.coming:hover .mod-title{color:var(--text-muted)}
 @media (min-width:700px){   /* two columns: at most 64 px a row; a long title may take two lines in the narrow range, never cut */
   .mod-row{min-height:60px;padding-block:.2rem}
   .mod-q{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .plan-list{margin-top:60px}   /* the gap one row high, so the planned courses' rows stay level with the modules' (teacher 2026-11-04) */
 }
 @media (min-width:700px) and (max-width:63.99rem){.mod-name{font-size:.9375rem;line-height:1.25}.mod-q{font-size:.8125rem;line-height:1.3}.mod-row{gap:.6rem;padding-inline:.4rem}}
 /* the learning model (moved to the top of Lukuvinkit 2026-11-03): the six stage names the lessons use, a compact
@@ -373,6 +386,7 @@ details.sim-box>div{font-size:var(--fs-ui);padding:0 0 .6rem 1.2rem}details.sim-
 
 footer.bottom{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:var(--fs-small);color:var(--ink-2);display:flex;flex-wrap:wrap;align-items:center;gap:.2rem 1.2rem}
 footer.bottom a{display:inline-flex;align-items:center;min-height:44px}
+footer.bottom .copyright{white-space:nowrap}
 .crumbs:empty{display:none}
 
 /* tables: a level-3 element, light frame, small sans heads; numbers in tabular figures */
@@ -438,7 +452,7 @@ li.ex-js>details.answer:not([open]),li.ex-js>details.solution:not([open]){margin
 /* try first (teacher 2026-11-03, lesson.js part 8, inquiry.js): a locked control stays in view, dimmed, with its reason */
 .ex-toggle:disabled{color:var(--ink-2);opacity:.7;cursor:not-allowed;text-decoration:none}
 .lock-note{display:inline-block;font:400 var(--fs-small) var(--sans);color:var(--ink-2)}
-.lock-note::before{content:"🔒\FE0E  ";font-size:.85em}
+.lock-note{cursor:help}.lock-note::before{content:"🔒\FE0E";content:"🔒\FE0E"/"";font-size:1.4em;line-height:1;vertical-align:-.1em}
 summary .lock-note{margin-left:.6rem}
 details[data-locked]>summary{cursor:not-allowed;color:var(--ink-2)}
 .show-model[aria-disabled=true]{opacity:.6;cursor:not-allowed}.choice-actions .lock-note{align-self:center}
@@ -546,7 +560,7 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
 .hook{font:400 1.125rem/1.6 var(--serif)}.hook>:first-child{margin-top:0}
 .question{font:500 1.1875rem/1.45 var(--serif);color:var(--ink);margin:1rem 0 0;padding-left:1rem;border-left:4px solid var(--accent)}
 p.task{margin:.3rem 0 .5rem}
-p.task.scenario{margin-bottom:.6rem}p.task.ask,legend .ask{font-weight:600}   /* a long task: the situation, then the question asked (inquiry.py split_prompt) */
+p.task.scenario,p.task.more{margin-bottom:.6rem}p.task.ask,legend .ask{font-weight:600}   /* a long task: the situation, then the question asked (inquiry.py split_prompt) */
 legend .scenario,legend .ask{display:block}legend .scenario{font-weight:400;margin-bottom:.6rem}
 
 /* choices: the card is the frame, so the fieldset itself is plain */
@@ -662,10 +676,12 @@ details.level>ol>li:last-child{border-bottom:0}
   .intro-row.no-media{grid-template-columns:minmax(0,var(--measure))}
   .intro-more{max-width:none}.prior ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(18rem,1fr));column-gap:2.5rem}   /* short fixed items, read row by row */
   /* Tutki: the experiments in the reading column, the simulation beside them in a column that stays in view (sticky)
-     while the student works through the experiments that use it; a panel taller than the window scrolls inside itself */
+     while the student works through the experiments that use it. It never scrolls inside itself (Lauri 2026-11-04: a box
+     with its own scrollbar confuses): a panel taller than the window moves with the page until its far edge is in view
+     and sticks there (inquiry.js sets top), so the page scroll alone brings the controls and the picture into view */
   .stage>.lab{--wide:1;display:grid;grid-template-columns:minmax(min(30rem,50%),1fr) minmax(0,40rem);column-gap:2rem;align-items:start}   /* half and half on a small laptop; from 1280 px the 600 px canvas keeps its native size */
   .lab-main{grid-column:1;grid-row:1;min-width:0}
-  .lab-side{grid-column:2;grid-row:1;min-width:0;position:sticky;top:var(--sticky-top);max-height:calc(100vh - var(--sticky-top) - .75rem);overflow-y:auto;overscroll-behavior:auto;scrollbar-width:thin;border-radius:var(--card-radius)}
+  .lab-side{grid-column:2;grid-row:1;min-width:0;position:sticky;top:var(--sticky-top);border-radius:var(--card-radius)}
   .lab-side>.activity{margin:0}
   .lab-side .act-sim>p{margin:0 0 .6rem;font-size:var(--fs-ui);color:var(--ink-2)}
   .lab-side #sim,.inquiry .lab-side #sim{margin:0;padding:.1rem 1rem .8rem}
@@ -1021,7 +1037,12 @@ strong.kc-ready{font-weight:inherit}
 /* Sivustosta in Kiviruukin lukio's colours (teacher 2026-11-04, after his school pages): navy #012169, pink #fca5c7 */
 :root:has(main.about-page){--bg:#fff;--bg-tint:#f3f5f9;--ink:#0b1638;--ink-2:#3c4563;--line:#dfe5eb;--line-2:#ecf0f4;
   --accent:#012169;--accent-deep:#012169;--accent-soft:#fff0f6;--brand-green:#012169;--kr-navy:#012169;--kr-navy-deep:#00174f;--kr-pink:#fca5c7}
-body:has(main.about-page){background-image:none}
+/* the front page's blob (above) on Sivustosta in Kiviruukin lukio's pink (teacher 2026-11-04): a pale tint #fcd3e3 of the
+   school pink #fca5c7 so that the navy text stays easy to read where the shape runs behind it; same crisp edge and placement */
+body:has(main.about-page){--blob:clamp(26rem,14rem + 48vw,68rem);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-60 -60 1120 1020'%3E%3Cpath transform='matrix(1 0 0 -1 0 900)' fill='%23fcd3e3' d='M54 880V760C54 669 75 590 118 523C160 459 220 410 296 377C423 323 521 355 625 400C685 426 741 447 782 438C821 430 840 396 842 334L846 282C849 188 885 108 958 54L1000 24V880H54Z'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-60 -60 1120 1020'%3E%3Cpath transform='matrix(-1 0 0 1 1000 0)' fill='%23fcd3e3' fill-opacity='.6' d='M54 880V760C54 669 75 590 118 523C160 459 220 410 296 377C423 323 521 355 625 400C685 426 741 447 782 438C821 430 840 396 842 334L846 282C849 188 885 108 958 54L1000 24V880H54Z'/%3E%3C/svg%3E");
+  background-size:var(--blob) auto,calc(var(--blob) * .5) auto;
+  background-position:right calc(var(--blob) * -.12) top calc(var(--blob) * -.2),left calc(var(--blob) * -.06) bottom calc(var(--blob) * -.1)}
 .about-page .about-hero{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.9rem 1.75rem;margin:0 0 2.25rem;padding:1.25rem 1.75rem;border-radius:var(--card-radius);color:#fff;
   background:linear-gradient(135deg,var(--kr-navy) 0%,var(--kr-navy-deep) 100%)}
 .about-page .about-logo{display:block;flex:none;order:2;width:auto;height:64px;margin:0 0 0 auto}   /* the logo at the right end of the banner, beside the heading (teacher 2026-11-04: less empty blue, logo on the right) */

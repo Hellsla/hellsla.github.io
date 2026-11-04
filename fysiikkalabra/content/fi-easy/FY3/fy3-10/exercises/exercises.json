@@ -39,6 +39,78 @@
       "answer": 9.7,
       "unit": "mol",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-10-L1-06",
+      "level": 1,
+      "text": "Mitä ainemäärä $n$ kuvaa ideaalikaasun tilanyhtälössä $pV = nRT$?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Hiukkasten lukumäärää mooleina, koska yksi mooli on aina sama määrä hiukkasia.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kaasun massaa, koska raskaampi kaasu sisältää enemmän ainetta ja aiheuttaa suuremman paineen.",
+          "feedback": "Väärin: massan saa ainemäärästä vasta moolimassalla, $m = nM$. Moolimassa on yhden moolin massa. Tilanyhtälössä ei ole moolimassaa, joten kaasun laatu ei vaikuta paineeseen."
+        },
+        {
+          "text": "Kaasun tiheyttä, koska tiheässä kaasussa hiukkasia on enemmän samassa tilassa.",
+          "feedback": "Väärin: tiheys on massa jaettuna tilavuudella. Ainemäärä on kaasun koko määrä. Tilavuus $V$ on tilanyhtälössä oma suureensa."
+        },
+        {
+          "text": "Hiukkasten lukumäärää mooleina, koska yksi mooli on aina sama määrä hiukkasia.",
+          "correct": true,
+          "feedback": "Oikein: $n = N/N_\\text{A}$, joten ainemäärä kertoo hiukkasten määrän mooleina. Siksi sama paine, tilavuus ja lämpötila tarkoittavat samaa ainemäärää kaikilla kaasuilla."
+        },
+        {
+          "text": "Hiukkasten nopeutta, koska nopeammat hiukkaset törmäävät seinään useammin.",
+          "feedback": "Väärin: hiukkasten liikettä kuvaa lämpötila $T$. Se on yhtälössä oma suureensa. Ainemäärä kertoo, kuinka paljon hiukkasia on."
+        }
+      ]
+    },
+    {
+      "id": "fy3-10-L1-07",
+      "level": 1,
+      "text": "Ilmapallo on täytetty heliumilla huoneessa. Huoneen lämpötila on $21\\,{}^\\circ\\text{C}$ ja ilmanpaine $101\\,\\text{kPa}$. Pallon tilavuus on silloin $2{,}50\\,\\textsf{l}$.\n\nPallo viedään ulos. Ulkona lämpötila on $-9\\,{}^\\circ\\text{C}$ ja ilmanpaine $98\\,\\text{kPa}$. Pallon kaasun paine on aina sama kuin ympäröivän ilman paine. Kaasua ei pääse pois.\n\nMikä on pallon tilavuus ulkona litroina?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 2.3,
+      "unit": "l",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-10-L1-08",
+      "level": 1,
+      "text": "Oppilas laskee kaasun ainemäärän. Paine on $150\\,\\text{kPa}$, tilavuus $0{,}0020\\,\\text{m}^3$ ja lämpötila $300\\,\\text{K}$. Hän kirjoittaa\n\n$n = \\dfrac{150 \\cdot 0{,}0020}{8{,}31 \\cdot 300} = 1{,}2 \\cdot 10^{-4}\\,\\text{mol}$\n\nTulos tuntuu oppilaasta pieneltä. Kahden litran kaasumäärässä on varmasti enemmän kuin tuhannesosa moolista. Mikä virhe laskussa on?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Paine on sijoitettu kilopascaleina eikä pascaleina, joten murtoluvun yläosa on liian pieni.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Paine on sijoitettu kilopascaleina eikä pascaleina, joten murtoluvun yläosa on liian pieni.",
+          "correct": true,
+          "feedback": "Oikein: $150\\,\\text{kPa} = 150\\,000\\,\\text{Pa}$. Kun paine on pascaleina, tulos on $0{,}12\\,\\text{mol}$. Se on tuhat kertaa suurempi."
+        },
+        {
+          "text": "Lämpötila on sijoitettu celsiusasteina eikä kelvineinä, joten murtoluvun alaosa on liian pieni.",
+          "feedback": "Väärin: oppilas sijoitti $T = 300\\,\\text{K}$. Se on jo kelvineinä. Jos lämpötila olisi celsiusasteina, tulos olisi päinvastoin liian suuri."
+        },
+        {
+          "text": "Kaasun moolimassa puuttuu laskusta, joten ainemäärää ei voi laskea tilanyhtälöstä.",
+          "feedback": "Väärin: tilanyhtälössä ei ole moolimassaa. Ainemäärän saa paineesta, tilavuudesta ja lämpötilasta. Kaasun laadulla ei ole väliä."
+        },
+        {
+          "text": "Tilavuus on sijoitettu kuutiometreinä, vaikka tilanyhtälö vaatii sen litroina.",
+          "feedback": "Väärin: kun paine on pascaleina, tilavuus sijoitetaan kuutiometreinä. Oppilaan tilavuus $0{,}0020\\,\\text{m}^3$ on oikeassa yksikössä."
+        }
+      ]
     }
   ],
   "level2": [
@@ -53,7 +125,7 @@
     {
       "id": "fy3-10-L2-02",
       "level": 2,
-      "text": "Kemian varastosta löytyy kaasupullo. Pullon etiketti on kulunut lukukelvottomaksi. Tyhjiöpumpulla tyhjennetty $1{,}00\\,\\textsf{l}$:n lasipallo täytetään pullon kaasulla. Pallon massa kasvaa $1{,}15\\,\\text{g}$. Kaasun paine pallossa on $101\\,\\text{kPa}$ ja lämpötila $22\\,{}^\\circ\\text{C}$. Laske kaasun moolimassa grammoina moolia kohti. Mikä kaasu on kyseessä? Vaihtoehdot ovat helium ($4{,}0\\,\\text{g/mol}$), typpi ($28\\,\\text{g/mol}$), happi ($32\\,\\text{g/mol}$), argon ($40\\,\\text{g/mol}$) ja hiilidioksidi ($44\\,\\text{g/mol}$). Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.",
+      "text": "Kemian varastosta löytyy kaasupullo. Pullon etiketti on kulunut lukukelvottomaksi.\n\nTyhjiöpumpulla tyhjennetty $1{,}00\\,\\textsf{l}$:n lasipallo täytetään pullon kaasulla. Pallon massa kasvaa $1{,}15\\,\\text{g}$. Kaasun paine pallossa on $101\\,\\text{kPa}$ ja lämpötila $22\\,{}^\\circ\\text{C}$.\n\nLaske kaasun moolimassa grammoina moolia kohti. Mikä kaasu on kyseessä? Vaihtoehdot ovat helium ($4{,}0\\,\\text{g/mol}$), typpi ($28\\,\\text{g/mol}$), happi ($32\\,\\text{g/mol}$), argon ($40\\,\\text{g/mol}$) ja hiilidioksidi ($44\\,\\text{g/mol}$). Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.",
       "answer": 27.9,
       "unit": "g/mol",
       "tolerance": 0.02
@@ -61,7 +133,7 @@
     {
       "id": "fy3-10-L2-03",
       "level": 2,
-      "text": "Traktorin dieselmoottorin sylinterissä on imutahdin lopussa $0{,}500\\,\\textsf{l}$ ilmaa. Ilman paine on $101\\,\\text{kPa}$ ja lämpötila $30\\,{}^\\circ\\text{C}$. Puristustahdin lopussa ilman tilavuus on $0{,}0300\\,\\textsf{l}$ ja paine $4{,}60\\,\\text{MPa}$. Venttiilit ovat kiinni, joten ilmaa ei pääse sylinteristä pois. Mikä on ilman lämpötila puristuksen lopussa celsiusasteina? Dieselpolttoaine syttyy itsestään noin $250\\,{}^\\circ\\text{C}$:n lämpötilassa. Syttyykö sylinteriin ruiskutettu polttoaine?",
+      "text": "Traktorin dieselmoottorin sylinterissä on imutahdin lopussa $0{,}500\\,\\textsf{l}$ ilmaa. Ilman paine on $101\\,\\text{kPa}$ ja lämpötila $30\\,{}^\\circ\\text{C}$.\n\nPuristustahdin lopussa ilman tilavuus on $0{,}0300\\,\\textsf{l}$ ja paine $4{,}60\\,\\text{MPa}$. Venttiilit ovat kiinni, joten ilmaa ei pääse sylinteristä pois.\n\nMikä on ilman lämpötila puristuksen lopussa celsiusasteina? Dieselpolttoaine syttyy itsestään noin $250\\,{}^\\circ\\text{C}$:n lämpötilassa. Syttyykö sylinteriin ruiskutettu polttoaine?",
       "answer": 555,
       "unit": "°C",
       "tolerance": 0.02
@@ -69,18 +141,158 @@
     {
       "id": "fy3-10-L2-04",
       "level": 2,
-      "text": "Kaksi samanlaista astiaa on suljettu. Astiat ovat jäykkiä. Kummankin tilavuus on $2{,}00\\,\\textsf{l}$. Astioissa on kaasunäytteet A ja B. Astioita lämmitetään, ja niiden paine mitataan eri lämpötiloissa. Kuvaajassa on mittaustulokset. Kuinka monta moolia enemmän kaasua on astiassa A kuin astiassa B? Lue tarvittavat arvot kuvaajasta. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Oleta, että kaasut noudattavat ideaalikaasun tilanyhtälöä.",
+      "text": "Kaksi samanlaista astiaa on suljettu. Astiat ovat jäykkiä. Kummankin tilavuus on $2{,}00\\,\\textsf{l}$. Astioissa on kaasunäytteet A ja B.\n\nAstioita lämmitetään, ja niiden paine mitataan eri lämpötiloissa. Kuvaajassa on mittaustulokset.\n\nKuinka monta moolia enemmän kaasua on astiassa A kuin astiassa B? Lue tarvittavat arvot kuvaajasta. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Oleta, että kaasut noudattavat ideaalikaasun tilanyhtälöä.",
       "figure": "fy3-10/pt-suorat",
       "answer": 0.024,
       "unit": "mol",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-10-L2-05",
+      "level": 2,
+      "text": "Autoilija epäilee, että henkilöauton rengas vuotaa. Hän mittaa renkaan ilman kokonaispaineen ennen ajoa ja heti pitkän ajon jälkeen (esimerkkiaineisto). Kokonaispaine on koko paine, myös ilmanpaine mukaan lukien. Renkaan tilavuus pysyy samana.\n\na) Laske, kuinka suuri paine renkaassa olisi ajon jälkeen, jos ilmaa ei olisi vuotanut.\n\nb) Kuinka monta prosenttia renkaan alkuperäisestä ilmamäärästä on vuotanut? Perustele tilanyhtälöllä, miksi pelkkä paineen mittaus ei riitä vuodon toteamiseen.\n\nVastauslaatikkoon tulee b-kohdan tulos.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "data": {
+        "caption": "Renkaan ilman lämpötila ja kokonaispaine (esimerkkiaineisto)",
+        "columns": [
+          "Hetki",
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "Ennen ajoa",
+            "5.0",
+            "300"
+          ],
+          [
+            "Ajon jälkeen",
+            "26.0",
+            "305"
+          ]
+        ]
+      },
+      "answer": 5.5,
+      "unit": "%",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-10-L2-06",
+      "level": 2,
+      "text": "Oppilaat tutkivat, miten ilman tilavuus riippuu lämpötilasta. Ilma on ruiskussa, jota lämmitetään. Ruiskun mäntä liikkuu vapaasti. Paine pysyy ilmanpaineena $101\\,\\text{kPa}$ ja ilmamäärä pysyy samana. Mittaustulokset ovat taulukossa (esimerkkiaineisto). Piirrä $(T, V)$-kuvaaja ja sovita pisteisiin suora. Pisteet eivät yleensä ole täsmälleen suoralla, koska mittauksessa on epävarmuutta.\n\na) Määritä suoran kulmakerroin $\\Delta V / \\Delta T$ kahdesta suoralta valitusta pisteestä. Älä käytä kahta mittauspistettä. Kulmakerroin kertoo, kuinka jyrkästi suora nousee.\n\nb) Laske kulmakertoimesta ruiskun ilman ainemäärä $n$ millimooleina. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Perustele lyhyesti, miksi suoran pitäisi kulkea origon kautta, kun lämpötila on kelvineinä.\n\nVastauslaatikkoon tulee b-kohdan tulos.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "data": {
+        "caption": "Ilman tilavuus vakiopaineessa (esimerkkiaineisto)",
+        "columns": [
+          "$T\\,(\\text{K})$",
+          "$V\\,(\\text{cm}^3)$"
+        ],
+        "rows": [
+          [
+            "280",
+            "115.0"
+          ],
+          [
+            "300",
+            "124.1"
+          ],
+          [
+            "320",
+            "131.2"
+          ],
+          [
+            "340",
+            "140.5"
+          ],
+          [
+            "360",
+            "147.6"
+          ]
+        ]
+      },
+      "answer": 4.95,
+      "unit": "mmol",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy3-10-L2-07",
+      "level": 2,
+      "text": "Taulukossa on kahden saman kaasumäärän paine tilavuuden funktiona (esimerkkiaineisto). Sarjat A ja B on mitattu eri lämpötiloissa. Sarjojen tilavuudet ovat erilaiset. Kumpi sarja on mitattu korkeammassa lämpötilassa?",
+      "kind": [
+        "data",
+        "concept"
+      ],
+      "answer": "Sarja B, koska tulo $pV$ on sillä suurempi, ja saman kaasumäärän lämpötila on verrannollinen siihen.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Sarja A, koska sen paine $p$ on pienempi, ja pieni paine merkitsee nopeammin liikkuvia hiukkasia.",
+          "feedback": "Väärin: paine riippuu myös tilavuudesta ja ainemäärästä. Lämpötilan vertailuun tarvitaan tulo $pV$. Se on sarjassa A pienempi."
+        },
+        {
+          "text": "Sarja B, koska tulo $pV$ on sillä suurempi, ja saman kaasumäärän lämpötila on verrannollinen siihen.",
+          "correct": true,
+          "feedback": "Oikein: kaasumäärä on sama, joten $pV = nRT$ antaa suuremman $T$:n sille sarjalle, jonka tulo $pV$ on suurempi. Sarjassa B tulo on noin $305\\,\\text{kPa} \\cdot \\textsf{l}$ ja sarjassa A noin $244\\,\\text{kPa} \\cdot \\textsf{l}$."
+        },
+        {
+          "text": "Sarja A, koska sen paine laskee tilavuuden kasvaessa hitaammin, joten kaasu on lämpimämpää.",
+          "feedback": "Väärin: kummassakin sarjassa tulo $pV$ pysyy vakiona. Paine pienenee tilavuuden kasvaessa samalla tavalla, kääntäen verrannollisesti. Paineen pienenemisen nopeus ei kerro lämpötilasta."
+        },
+        {
+          "text": "Sitä ei voi päätellä, koska sarjojen tilavuudet ovat erilaiset ja paine pienenee kummassakin.",
+          "feedback": "Väärin: tilavuudet voi ottaa huomioon laskemalla tulon $pV$. Se on suoraan verrannollinen lämpötilaan. Lämpötilat voi siis vertailla, vaikka tilavuudet olisivat eri suuria."
+        }
+      ],
+      "data": {
+        "caption": "Saman kaasumäärän paine ja tilavuus kahdessa lämpötilassa (esimerkkiaineisto)",
+        "columns": [
+          "$V_\\text{A}\\,(\\textsf{l})$",
+          "$p_\\text{A}\\,(\\text{kPa})$",
+          "$V_\\text{B}\\,(\\textsf{l})$",
+          "$p_\\text{B}\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "244",
+            "1.5",
+            "203"
+          ],
+          [
+            "2.0",
+            "122",
+            "2.5",
+            "122"
+          ],
+          [
+            "3.0",
+            "81",
+            "3.5",
+            "87"
+          ],
+          [
+            "4.0",
+            "61",
+            "4.5",
+            "68"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
     {
       "id": "fy3-10-L3-01",
       "level": 3,
-      "text": "Levossa ihminen hengittää yhdellä sisäänhengityksellä keuhkoihinsa ilmaa. Ilma on $37\\,{}^\\circ\\text{C}$:n lämpöistä ja vie tilavuuden $0{,}55\\,\\textsf{l}$. Ilman paine keuhkoissa on $101\\,\\text{kPa}$. Kuinka monta molekyyliä yhdessä hengenvedossa on? Avogadron vakio on $6{,}022 \\cdot 10^{23}\\,\\tfrac{1}{\\text{mol}}$ ja $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Anna vastaus muodossa $a \\cdot 10^{22}$. Perustele, miksi laskussa ei tarvita tietoa siitä, mistä kaasuista ilma koostuu.",
+      "text": "Levossa ihminen hengittää yhdellä sisäänhengityksellä keuhkoihinsa ilmaa. Ilma on $37\\,{}^\\circ\\text{C}$:n lämpöistä ja vie tilavuuden $0{,}55\\,\\textsf{l}$. Ilman paine keuhkoissa on $101\\,\\text{kPa}$.\n\nKuinka monta molekyyliä yhdessä hengenvedossa on? Avogadron vakio on $6{,}022 \\cdot 10^{23}\\,\\tfrac{1}{\\text{mol}}$ ja $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Anna vastaus muodossa $a \\cdot 10^{22}$. Perustele, miksi laskussa ei tarvita tietoa siitä, mistä kaasuista ilma koostuu.",
       "answer": 1.3,
       "unit": "· 10²²",
       "tolerance": 0.02
@@ -88,7 +300,7 @@
     {
       "id": "fy3-10-L3-02",
       "level": 3,
-      "text": "Uusissa ikkunoissa lasien välinen tila täytetään usein argonilla, koska argon johtaa lämpöä huonommin kuin ilma. Eristyslasielementin lasit ovat $1{,}20\\,\\text{m}$ × $1{,}00\\,\\text{m}$. Valmistajan mukaan argontäyte tekee elementistä $6{,}0\\,\\text{g}$ raskaamman kuin ilmatäyte. Välitila täytetään $101\\,\\text{kPa}$:n paineessa ja $20\\,{}^\\circ\\text{C}$:n lämpötilassa. Kuinka paksu lasien välinen kaasukerros on? Argonin moolimassa on $40\\,\\text{g/mol}$ ja ilman $29\\,\\text{g/mol}$, ja $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Anna vastaus millimetreinä.",
+      "text": "Uusissa ikkunoissa lasien välinen tila täytetään usein argonilla, koska argon johtaa lämpöä huonommin kuin ilma.\n\nEristyslasielementin lasit ovat $1{,}20\\,\\text{m}$ × $1{,}00\\,\\text{m}$. Valmistajan mukaan argontäyte tekee elementistä $6{,}0\\,\\text{g}$ raskaamman kuin ilmatäyte. Välitila täytetään $101\\,\\text{kPa}$:n paineessa ja $20\\,{}^\\circ\\text{C}$:n lämpötilassa.\n\nKuinka paksu lasien välinen kaasukerros on? Argonin moolimassa on $40\\,\\text{g/mol}$ ja ilman $29\\,\\text{g/mol}$, ja $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Anna vastaus millimetreinä.",
       "answer": 11,
       "unit": "mm",
       "tolerance": 0.02
@@ -96,9 +308,90 @@
     {
       "id": "fy3-10-L3-03",
       "level": 3,
-      "text": "Autokorjaamon kompressorin paineilmasäiliön tilavuus on $200{,}0\\,\\textsf{l}$. Illalla säiliön painemittari näyttää $10{,}0\\,\\text{bar}$. Aamulla se näyttää vain $7{,}0\\,\\text{bar}$, koska liitoksesta vuotaa ilmaa. Mittari näyttää ylipainetta eli sitä, kuinka paljon säiliön paine on ilmanpainetta suurempi ($1\\,\\text{bar}$ = $100\\,\\text{kPa}$). Korjaamon lämpötila on koko ajan $18\\,{}^\\circ\\text{C}$. Kuinka monta kilogrammaa ilmaa säiliöstä vuoti yön aikana? Ilman moolimassa on $29\\,\\text{g/mol}$, ja $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Perustele, miksi tässä laskussa mittarin lukemia voi käyttää ilman, että niihin lisätään ilmanpaine.",
+      "text": "Autokorjaamon kompressorin paineilmasäiliön tilavuus on $200{,}0\\,\\textsf{l}$. Illalla säiliön painemittari näyttää $10{,}0\\,\\text{bar}$. Aamulla se näyttää vain $7{,}0\\,\\text{bar}$, koska liitoksesta vuotaa ilmaa.\n\nMittari näyttää ylipainetta eli sitä, kuinka paljon säiliön paine on ilmanpainetta suurempi ($1\\,\\text{bar}$ = $100\\,\\text{kPa}$). Korjaamon lämpötila on koko ajan $18\\,{}^\\circ\\text{C}$.\n\nKuinka monta kilogrammaa ilmaa säiliöstä vuoti yön aikana? Ilman moolimassa on $29\\,\\text{g/mol}$, ja $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Perustele, miksi tässä laskussa mittarin lukemia voi käyttää ilman, että niihin lisätään ilmanpaine.",
       "answer": 0.72,
       "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-10-L3-04",
+      "level": 3,
+      "text": "Juhlissa täytetään ilmapalloja heliumpullosta, jonka tilavuus on $20{,}0\\,\\textsf{l}$. Pullo oli ensin kylmässä varastossa. Sitten sitä käytettiin sisällä kahdessa vaiheessa. Taulukossa on painemittarin osoittama kokonaispaine baareina ($1\\,\\text{bar} = 100\\,\\text{kPa}$) kolmella hetkellä (esimerkkiaineisto). Pullon kaasun lämpötila on aina sama kuin ympäristön. Pullo ei vuoda. Käsittele heliumia ideaalikaasuna ja käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$. Yhteen täytettyyn ilmapalloon menee heliumia niin paljon, että se vie ilmanpaineessa $101\\,\\text{kPa}$ ja lämpötilassa $21{,}0\\,{}^\\circ\\text{C}$ tilavuuden $5{,}0\\,\\textsf{l}$.\n\na) Laske pullon heliumin ainemäärä hetkillä 1, 2 ja 3.\n\nb) Laske hetkien 1 ja 3 välillä käytetyn heliumin massa. Moolimassa on $M = 4{,}0\\,\\tfrac{\\text{g}}{\\text{mol}}$. Selitä, miksi käytettyä määrää ei voi laskea suoraan paineiden erotuksesta.\n\nc) Kuinka monta ilmapalloa käytetyllä heliumilla täytettiin? Kuinka monta palloa pullosta saadaan vielä, kun sitä käytetään, kunnes paine on laskenut ilmanpaineeseen $101\\,\\text{kPa}$?\n\nVastauslaatikkoon tulee b-kohdan massa.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "data": {
+        "caption": "Heliumpullon lämpötila ja kokonaispaine (esimerkkiaineisto)",
+        "columns": [
+          "Hetki",
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{bar})$"
+        ],
+        "rows": [
+          [
+            "1 (varasto, ennen käyttöä)",
+            "5.0",
+            "14.2"
+          ],
+          [
+            "2 (sisällä, 1. vaiheen jälkeen)",
+            "21.0",
+            "11.0"
+          ],
+          [
+            "3 (sisällä, 2. vaiheen jälkeen)",
+            "21.0",
+            "6.5"
+          ]
+        ]
+      },
+      "answer": 28,
+      "unit": "g",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-10-L3-05",
+      "level": 3,
+      "text": "Sääpallo täytetään maanpinnalla heliumilla. Sen tilavuus on silloin $2{,}50\\,\\text{m}^3$. Taulukossa on ilmakehän paine ja lämpötila eri korkeuksilla (ICAO:n standardi-ilmakehä, pyöristetty). Oleta, että pallon kaasun paine ja lämpötila ovat aina samat kuin ympäröivän ilman. Kaasua ei pääse pois, ja pallo nousee. Käytä arvoa $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$.\n\na) Laske pallossa olevan heliumin ainemäärä maanpinnalla.\n\nb) Laske pallon tilavuus korkeudella $10\\,\\text{km}$.\n\nc) Pallon kuori kestää enintään tilavuuden $12{,}0\\,\\text{m}^3$. Laske tilavuus korkeudella $15\\,\\text{km}$ ja arvioi, mihin korkeuteen asti pallo kestää. Oleta tilavuus lineaariseksi korkeuden suhteen korkeuksien $10\\,\\text{km}$ ja $15\\,\\text{km}$ välillä. Selitä, miksi tilavuus kasvaa, vaikka kaasu jäähtyy.\n\nVastauslaatikkoon tulee b-kohdan tilavuus.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "data": {
+        "caption": "Standardi-ilmakehä (ICAO, pyöristetty)",
+        "columns": [
+          "$h\\,(\\text{km})$",
+          "$p\\,(\\text{kPa})$",
+          "$\\theta\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "101",
+            "15.0"
+          ],
+          [
+            "5",
+            "54.0",
+            "-17.5"
+          ],
+          [
+            "10",
+            "26.5",
+            "-50.0"
+          ],
+          [
+            "15",
+            "12.1",
+            "-56.5"
+          ]
+        ]
+      },
+      "answer": 7.4,
+      "unit": "m³",
       "tolerance": 0.02
     }
   ]

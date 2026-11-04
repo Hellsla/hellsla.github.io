@@ -184,6 +184,8 @@ Samasta syystä pillin vedessä oleva osa näyttää nousseen ylemmäs, kun lasi
   <foreignObject x="514" y="281.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{vesi}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/pencil-in-water.webp" alt="Sininen kynä vesilasissa. Kynä näyttää katkeavan vedenpinnan kohdalla."><figcaption>Kynä vesilasissa näyttää katkenneelta. Valo taittuu, kun se tulee vedestä ilmaan. Siksi näemme veden alla olevan kynän osan eri paikassa kuin se oikeasti on.</figcaption></figure>
+
 ## Kaava: Heijastuslaki ja taittumislaki
 Heijastuslaki: heijastuskulma on yhtä suuri kuin tulokulma,
 ```latex

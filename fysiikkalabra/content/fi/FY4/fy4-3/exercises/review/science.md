@@ -1,23 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1b72d20a59f51860
+CONTENT-HASH: c2d3495c28992833
 
 ## Blocking
 
 ## Polish
-- solutions.md:424-430 (L3-01) — C/B, drawn sum. $F_\text{v}$ = 270 N is 5,8 % of G, so it is lifted to the 15 % floor. Measured lengths: G 100, $F_\text{n}$ 94, $F_\text{v}$ 15. The drawn upward total is 109 against 100 downward, with a = 0 and $\overline{v}$ down. It follows the stated rule, and the text alternative says so, but it is the one drawn sum in the set that does not balance, and the balance is the point of the task. Suggested fix in fbdspec.py: when the floor lifts a force collinear with others, shorten the largest same-direction force by the same amount so the sum still shows (here $F_\text{n}$ 85 + $F_\text{v}$ 15 = G 100).
-- solutions.md:316-324 (L1-04) and L1-03, L2-02 — The split scale (horizontal largest drawn at 0,6 of G) is stated only in the aria-label. A sighted reader sees $\overline{F}$ at 0,6·G with no note. Add a visible note under split-scale figures.
-- solutions.md L1-03 — Carried over: state "jää oletetaan kitkattomaksi".
+- solutions.md:276, :282 (L3-05) — carried from round 1: "kärry vetää köyttä ja oppilasta" is wrong as written (the cart does not act on the student). — Write "kärry vetää köyttä, ja köysi vetää oppilasta". The Vastaus also lists b) before a); put them in task order.
+- solutions.md:226 (L1-08) — carried: "osoittaa lapsesta kelkkaa kohti eli lasta vastaan" is unclear. — Write "osoittaa lapsesta kelkkaa kohti (köysi vetää lasta taaksepäin)".
+- exercises.json L2-06 b) — carried: the table covers 0–5 s, but the distance is asked "ajassa 6,0 s", an unnamed 1 s extrapolation. — Ask for 5,0 s or state that the motion continues the same way. At solutions.md:253, "kokonaisvoima on nolla" should say "likimain nolla".
+- solutions.md L3-04 c) — carried: also explain why the cart starts (the rope's force on the cart exceeds the cart's resistances); the text gives this only for the horse.
+- docs/exercise-bank/FY4.md — carried: the plan's "väärin piirretty voimapari" and L3 "törmäävät kärryt" items became L2-07 and L3-05. The swap is right for this chapter (no second law); update the plan.
 
 ## Checked
-- Round-1 blocking item (L1-04) is resolved. G = N = 12 000 N, realistic for a car. On the split scale the measured lengths are F 60, $F_\text{i}$ 37, $F_\text{r}$ 23, and 37 + 23 = 60 matches 620 = 380 + 240. G = N = 100, and the text alternative states the split.
-- All 12 diagrams were rendered (`fbdspec.py show`), screenshotted, and their arrow lengths measured from the SVG. All proportions are on one scale:
-  - L2-01: 61,5 / 38,5 / 100.
-  - L2-04: 65 / 35 / 100.
-  - L3-02: 50 / 50 / 100.
-  - L3-03: 21 / 79 / 100.
-  - The equal pairs (L1-01, L1-02, L1-05, L2-03) are 100 / 100.
-- Split scales: L1-03 (90 vs 590 N) and L2-02 (65 vs 720 N). In each, the horizontal forces are mutually correct (L2-02: 60 = 60).
-- No diagram contradicts its Voimakuvio sentence or its motion. a = 0 wherever the velocity is constant. In L1-03 $\overline{a}$ points away from the wall.
-- Third-law partners stay off every diagram.
-- I recomputed all 12 answers in one script. Each is within tolerance: 18; 850; 90; 240; 6,38; 13; 65; 834; 8,94; 0,27; 0,60; 1,9.
+- Round 2. Round-1 Blocking solutions.md:242 (L2-05, Järkevyys) is resolved: "eroavat … enintään 0,1 N" matches the table (B − A = +0,1; −0,1; 0; +0,1; −0,1 N), the differences do alternate in sign, and "kevyen köyden molemmat päät vetävät yhtä suurella voimalla joka hetki" is right for a rope whose mass is neglected; the wrong claim about acceleration is gone.
+- Round-1 Blocking solutions.md:271 (L3-04, Järkevyys) is resolved: friction now "osoittaa eteenpäin, koska se vastustaa kavion liukumista taaksepäin", which is the correct mechanism (guardrail J).
+- No number, answer or tolerance changed, so the round-1 recomputation (L1-08 38 N, L2-05 4,8 N, L2-06 3,0 m, L3-04 450 N / 480 N, L3-05 3,40 N) still holds.
+- MC items L1-06, L1-07, L2-07: exactly one correct option each, as in round 1.
+- Scope (first and third law only), notation and plan unchanged since round 1.
 - The hash was the same at the start and at the end.

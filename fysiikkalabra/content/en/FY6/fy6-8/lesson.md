@@ -205,6 +205,8 @@ The voltage between the terminals of a battery is called the **terminal voltage*
   <foreignObject x="149.5" y="331.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{battery}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/lithium-ion-cells.webp" alt="Two light blue cylindrical battery cells in yellow holders on a wooden table; the labels read INR21700 and INR18650."><figcaption>Lithium-ion cells of types 21700 and 18650. The numbers give the size of the cell: a diameter of $21\,\text{mm}$ and a length of $70\,\text{mm}$, or $18\,\text{mm}$ and $65\,\text{mm}$. The internal resistance of such a cell is only tens of milliohms, so it can supply a large current without its terminal voltage dropping much.</figcaption></figure>
+
 ### The source voltage is measured without a current
 When no current is drawn from the battery, the voltage $R_\text{s} I$ across the internal resistance is zero, and the terminal voltage is equal to the source voltage. The source voltage can therefore be measured by connecting just a voltmeter to the terminals of the battery, because a good voltmeter draws only a vanishingly small current. A new AA battery gives about $1.6\,\text{V}$ this way. The source voltage of a used battery can be almost as large, but its internal resistance has grown many times over. A voltmeter alone therefore does not reveal whether a battery is still usable: only under load does its terminal voltage drop clearly.
 

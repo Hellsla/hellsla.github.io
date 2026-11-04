@@ -261,7 +261,7 @@
     {
       "id": "fy7-1-L3-03",
       "level": 3,
-      "text": "According to the model of the Earth's magnetic field (World Magnetic Model 2025) the field in Helsinki is about $53\\,\\mu\\text{T}$ and points about $74^\\circ$ below the horizontal. In Longyearbyen in Svalbard the field is about $55\\,\\mu\\text{T}$ and points about $82.5^\\circ$ below the horizontal. How many times greater is the horizontal component of the field in Helsinki than in Longyearbyen? Why does a compass work worse in Longyearbyen, although the whole field is greater there?",
+      "text": "According to the model of the Earth's magnetic field (World Magnetic Model 2025) the field in Helsinki is about $53\\,\\mu\\text{T}$ and points about $74^\\circ$ below the horizontal. In Longyearbyen in Svalbard the field is about $55\\,\\mu\\text{T}$ and points about $82.5^\\circ$ below the horizontal.\n\nHow many times greater is the horizontal component of the field in Helsinki than in Longyearbyen? Why does a compass work worse in Longyearbyen, although the whole field is greater there?",
       "answer": 2.03,
       "unit": "",
       "tolerance": 0.02

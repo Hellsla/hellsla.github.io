@@ -130,6 +130,8 @@ Veden ja ilman rajapinnassa rajakulma on $48{,}8^\circ$. Siksi sukeltaja näkee 
   <foreignObject x="435" y="291.5" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{vesi},\ n = 1{,}33$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/tir-wine-glass.webp" alt="Käsi pitää viinilasia. Vihreä lasersäde kulkee lasin jalassa."><figcaption>Vihreä lasersäde viinilasin jalassa. Säde osuu lasin pintaan niin vinosti, että se heijastuu kokonaan takaisin lasiin. Se ei pääse ulos ilmaan.</figcaption></figure>
+
 ### Vain suuremmasta taitekertoimesta pienempään
 Kokonaisheijastuminen voi tapahtua vain, kun valo tulee aineesta, jonka taitekerroin on suurempi, aineeseen, jonka taitekerroin on pienempi. Kun valo tulee ilmasta veteen tai lasiin, se taittuu normaalia kohti. Silloin taittunut säde on olemassa jokaisella tulokulmalla. Osa valosta pääsee aina toiseen aineeseen, vaikka heijastuvan valon osuus kasvaa suurilla tulokulmilla.
 
@@ -165,6 +167,8 @@ Jos valo tulee kuidun päähän liian jyrkässä kulmassa, se osuu rajapintaan p
   <circle cx="506" cy="270" r="4" fill="#e64980"/>
   <foreignObject x="330" y="255.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$n_1 > n_2$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/optical-fibres.webp" alt="Valokaapeli kiepillä mustalla pohjalla. Kaapelin päissä loistaa punaista valoa."><figcaption>Punainen valo menee valokaapelin toiseen päähän ja tulee ulos toisesta päästä. Valo heijastuu kuidun sisällä ja kulkee kiepin ympäri.</figcaption></figure>
 
 ### Miksi kuidussa on kuori
 Paljas lasisauva pitää valon sisällään myös ilmassa. Se pitää sisällään jopa jyrkemmin tulevan valon, koska lasin ja ilman taitekertoimien ero on suuri ja rajakulma on siksi pieni.

@@ -233,7 +233,7 @@
     {
       "id": "fy1-2-L2-07",
       "level": 2,
-      "text": "A tap fills a bucket at a steady flow rate $q = 0.20\\,\\textsf{l}/\\text{s}$. A student calculates how long it takes to fill a $12\\,\\textsf{l}$ bucket. The student's solution is: “The time is the product of the flow rate and the volume, $t = qV = 0.20\\,\\textsf{l}/\\text{s}\\cdot12\\,\\textsf{l} = 2.4$.” The student concludes that the bucket fills in $2.4$ seconds. Check the units of the student's calculation and explain what a unit check reveals about the error. Then calculate the correct time in minutes.",
+      "text": "A tap fills a bucket at a steady flow rate $q = 0.20\\,\\textsf{l}/\\text{s}$. A student calculates how long it takes to fill a $12\\,\\textsf{l}$ bucket.\n\nThe student's solution is: “The time is the product of the flow rate and the volume, $t = qV = 0.20\\,\\textsf{l}/\\text{s}\\cdot12\\,\\textsf{l} = 2.4$.” The student concludes that the bucket fills in $2.4$ seconds.\n\nCheck the units of the student's calculation and explain what a unit check reveals about the error. Then calculate the correct time in minutes.",
       "kind": [
         "error",
         "reasoning"
@@ -271,7 +271,7 @@
     {
       "id": "fy1-2-L3-04",
       "level": 3,
-      "text": "The period $T$ of a pendulum, that is the time of one full swing, can depend only on the length $L$ of the pendulum, the acceleration of free fall $g$ and the mass $m$ of the pendulum. Assume that $T = k\\,L^{a}g^{b}m^{c}$, where $k$ is a number without a unit. Use the units to deduce the exponents $a$, $b$ and $c$. With a length of $0.250\\,\\text{m}$ the period was measured to be $1.00\\,\\text{s}$. How long is the period in the same place when the length is $1.00\\,\\text{m}$?",
+      "text": "The period $T$ of a pendulum, that is the time of one full swing, can depend only on the length $L$ of the pendulum, the acceleration of free fall $g$ and the mass $m$ of the pendulum.\n\nAssume that $T = k\\,L^{a}g^{b}m^{c}$, where $k$ is a number without a unit. Use the units to deduce the exponents $a$, $b$ and $c$.\n\nWith a length of $0.250\\,\\text{m}$ the period was measured to be $1.00\\,\\text{s}$. How long is the period in the same place when the length is $1.00\\,\\text{m}$?",
       "kind": [
         "reasoning",
         "model"
@@ -283,7 +283,7 @@
     {
       "id": "fy1-2-L3-05",
       "level": 3,
-      "text": "A manufacturer gives the specifications of two portable power banks in different units. Both are fully charged, and each powers a device whose power is the operating power in the table. The operating time is $t = \\dfrac{E}{P}$, and for power $1\\,\\text{W} = 1\\,\\text{J/s}$. For units of energy $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$. Your friend claims that device B lasts longer because the numerical value of its energy, $2.20$, is larger than the value $0.65$ of device A. How many hours longer does the longer-lasting device run? Justify. Is the claim correct?",
+      "text": "A manufacturer gives the specifications of two portable power banks in different units. Both are fully charged, and each powers a device whose power is the operating power in the table.\n\nThe operating time is $t = \\dfrac{E}{P}$, and for power $1\\,\\text{W} = 1\\,\\text{J/s}$. For units of energy $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$.\n\nYour friend claims that device B lasts longer because the numerical value of its energy, $2.20$, is larger than the value $0.65$ of device A.\n\nHow many hours longer does the longer-lasting device run? Justify. Is the claim correct?",
       "kind": [
         "data",
         "reasoning"

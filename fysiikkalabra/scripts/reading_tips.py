@@ -1,5 +1,5 @@
 """Lukuvinkit: a reading list of books on physics beyond the textbook (teacher 2026-11-03), one page lukuvinkit.html
-in every language, linked from the header and footer of every page.
+in every language, linked from the header of every page.
 
 content/fi/lukuvinkit.json is the source: the page texts and the books in their order (title, url, author, language,
 level, loan, text, courses). A translation content/<lang>/lukuvinkit.json has the same keys and, under "books", the

@@ -230,7 +230,7 @@
     {
       "id": "fy1-3-L2-07",
       "level": 2,
-      "text": "The period of a pendulum is about $1.5\\,\\text{s}$. In hand timing, starting and stopping the clock cause, because of reaction time, an uncertainty of about $0.2\\,\\text{s}$ in the whole measured time (an estimate that does not depend on the length of the measured time). You plan a measurement in which $N$ consecutive swings are timed at once and the time is divided by $N$. At least how many swings must be timed so that the relative uncertainty of the period is at most $1\\,\\%$? Also explain why timing a longer time reduces the effect of reaction time.",
+      "text": "The period of a pendulum is about $1.5\\,\\text{s}$. In hand timing, starting and stopping the clock cause, because of reaction time, an uncertainty of about $0.2\\,\\text{s}$ in the whole measured time (an estimate that does not depend on the length of the measured time).\n\nYou plan a measurement in which $N$ consecutive swings are timed at once and the time is divided by $N$.\n\nAt least how many swings must be timed so that the relative uncertainty of the period is at most $1\\,\\%$? Also explain why timing a longer time reduces the effect of reaction time.",
       "kind": [
         "experiment",
         "model"
@@ -268,7 +268,7 @@
     {
       "id": "fy1-3-L3-04",
       "level": 3,
-      "text": "The travel time of a cart from one end of a track to the other was measured eight times with a hand-held stopwatch, and the results are in the table. The laboratory notebook has a note at the sixth measurement: “I looked away for a moment and stopped the clock late.” May the result $2.97\\,\\text{s}$ be left out? Justify with the notebook note and calculate the mean $\\bar{t}$ that you can justifiably use. What if there were no note and no reason could be found for the deviation? Then calculate the mean of all eight results and compare the half-range with and without the result.",
+      "text": "The travel time of a cart from one end of a track to the other was measured eight times with a hand-held stopwatch, and the results are in the table. The laboratory notebook has a note at the sixth measurement: “I looked away for a moment and stopped the clock late.”\n\nMay the result $2.97\\,\\text{s}$ be left out? Justify with the notebook note and calculate the mean $\\bar{t}$ that you can justifiably use.\n\nWhat if there were no note and no reason could be found for the deviation? Then calculate the mean of all eight results and compare the half-range with and without the result.",
       "kind": [
         "data",
         "reasoning"
@@ -321,7 +321,7 @@
     {
       "id": "fy1-3-L3-05",
       "level": 3,
-      "text": "Two groups measured the density of the same aluminium object. Group A got the result $\\rho_\\text{A} = 2.74 \\pm 0.05\\,\\text{g/cm}^3$ and group B the result $\\rho_\\text{B} = 2.60 \\pm 0.05\\,\\text{g/cm}^3$ (the uncertainties are the groups' estimates). A student reasons as follows. “The results differ by only $0.14\\,\\text{g/cm}^3$, that is about $5\\,\\%$, so they are consistent.” Find the error in the reasoning and use the uncertainty intervals to judge whether the results are consistent. How large is the gap between the intervals?",
+      "text": "Two groups measured the density of the same aluminium object. Group A got the result $\\rho_\\text{A} = 2.74 \\pm 0.05\\,\\text{g/cm}^3$ and group B the result $\\rho_\\text{B} = 2.60 \\pm 0.05\\,\\text{g/cm}^3$ (the uncertainties are the groups' estimates).\n\nA student reasons as follows. “The results differ by only $0.14\\,\\text{g/cm}^3$, that is about $5\\,\\%$, so they are consistent.”\n\nFind the error in the reasoning and use the uncertainty intervals to judge whether the results are consistent. How large is the gap between the intervals?",
       "kind": [
         "error",
         "reasoning"

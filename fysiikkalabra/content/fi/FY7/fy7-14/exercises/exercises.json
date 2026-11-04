@@ -239,7 +239,7 @@
   {
    "id": "fy7-14-L3-01",
    "level": 3,
-   "text": "Pystysuoraan rautalankakehykseen tehty saippuakalvo ($n = 1{,}33$) valaistaan natriumlampun keltaisella valolla, jonka aallonpituus on $589\\,\\text{nm}$ ja joka tulee kohtisuoraan kalvoon. Painovoima ohentaa kalvoa ylhäältä, ja kalvon ylin osa näyttää mustalta. Sen alapuolella vuorottelevat kirkkaat ja tummat vaakasuorat raidat, ja kalvo paksunee alaspäin. Kuinka paksu kalvo on toisen tumman raidan kohdalla, kun ylintä mustaa aluetta ei lasketa raidaksi?",
+   "text": "Pystysuoraan rautalankakehykseen tehty saippuakalvo ($n = 1{,}33$) valaistaan natriumlampun keltaisella valolla, jonka aallonpituus on $589\\,\\text{nm}$ ja joka tulee kohtisuoraan kalvoon.\n\nPainovoima ohentaa kalvoa ylhäältä, ja kalvon ylin osa näyttää mustalta. Sen alapuolella vuorottelevat kirkkaat ja tummat vaakasuorat raidat, ja kalvo paksunee alaspäin.\n\nKuinka paksu kalvo on toisen tumman raidan kohdalla, kun ylintä mustaa aluetta ei lasketa raidaksi?",
    "answer": 442.8571,
    "unit": "nm",
    "tolerance": 0.02
@@ -247,7 +247,7 @@
   {
    "id": "fy7-14-L3-02",
    "level": 3,
-   "text": "Kameran objektiivissa on neljä erillistä lasilinssiä eli kahdeksan pintaa, joissa valo tulee ilmasta lasiin tai lasista ilmaan. Jokainen pinta on pinnoitettu niin, että se heijastaa $1{,}3\\,\\%$ siihen kohtisuoraan tulevasta valosta. Oletetaan, että lasi ei ime valoa ja että kerran heijastunut valo ei enää pääse kennolle. Kuinka monta prosenttia objektiiviin tulevasta valosta pääsee sen läpi?",
+   "text": "Kameran objektiivissa on neljä erillistä lasilinssiä eli kahdeksan pintaa, joissa valo tulee ilmasta lasiin tai lasista ilmaan. Jokainen pinta on pinnoitettu niin, että se heijastaa $1{,}3\\,\\%$ siihen kohtisuoraan tulevasta valosta.\n\nOletetaan, että lasi ei ime valoa ja että kerran heijastunut valo ei enää pääse kennolle.\n\nKuinka monta prosenttia objektiiviin tulevasta valosta pääsee sen läpi?",
    "answer": 90.0611,
    "unit": "%",
    "tolerance": 0.02

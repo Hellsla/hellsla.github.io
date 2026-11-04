@@ -94,7 +94,7 @@
     {
       "id": "fy7-11-L2-01",
       "level": 2,
-      "text": "A short flash of white light is sent through a crown-glass optical fibre $5.00\\,\\text{km}$ long. The refractive index of the glass is $1.5143$ for red light and $1.5302$ for violet. How much later does violet light arrive at the other end of the fibre than red? Assume that each colour travels in the fibre at speed $v = c : n$ and along the fibre. Give your answer in nanoseconds.",
+      "text": "A short flash of white light is sent through a crown-glass optical fibre $5.00\\,\\text{km}$ long. The refractive index of the glass is $1.5143$ for red light and $1.5302$ for violet.\n\nHow much later does violet light arrive at the other end of the fibre than red? Assume that each colour travels in the fibre at speed $v = c : n$ and along the fibre. Give your answer in nanoseconds.",
       "answer": 265.0,
       "unit": "ns",
       "tolerance": 0.02
@@ -207,7 +207,7 @@
     {
       "id": "fy7-11-L3-03",
       "level": 3,
-      "text": "The rays that form the red edge of a rainbow enter the droplet at an angle of incidence of $59.5^\\circ$ when the refractive index of water is $1.3315$. The rays of the violet edge enter at an angle of incidence of $58.8^\\circ$ when the refractive index is $1.3431$. Each is reflected once from the back surface of the droplet. How wide is the rainbow in degrees, that is, what is the difference between the angles of the red and violet edges as seen from the antisolar point? Calculate the intermediate steps to the nearest thousandth of a degree.",
+      "text": "The rays that form the red edge of a rainbow enter the droplet at an angle of incidence of $59.5^\\circ$ when the refractive index of water is $1.3315$. The rays of the violet edge enter at an angle of incidence of $58.8^\\circ$ when the refractive index is $1.3431$.\n\nEach is reflected once from the back surface of the droplet.\n\nHow wide is the rainbow in degrees, that is, what is the difference between the angles of the red and violet edges as seen from the antisolar point? Calculate the intermediate steps to the nearest thousandth of a degree.",
       "answer": 1.6647,
       "unit": "°",
       "tolerance": 0.02

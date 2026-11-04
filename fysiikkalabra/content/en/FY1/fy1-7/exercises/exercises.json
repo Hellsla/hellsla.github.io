@@ -270,7 +270,7 @@
     {
       "id": "fy1-7-L3-04",
       "level": 3,
-      "text": "A student determines the density of a metal object by the water displacement method. The mass of the object is $113\\,\\text{g}$. The reading of the measuring cylinder is $50.0\\,\\text{ml}$ before the object is lowered in and $62.0\\,\\text{ml}$ afterwards. Afterwards the student notices that an air bubble with a volume of $2.0\\,\\text{ml}$ had stuck to the surface of the object. What is the true density of the object in $\\text{g/cm}^3$? Also calculate the density the student originally obtained and its percentage error, deduce from the table which metal each density would suggest the object to be, and say how the bubble could have been removed or noticed.",
+      "text": "A student determines the density of a metal object by the water displacement method. The mass of the object is $113\\,\\text{g}$. The reading of the measuring cylinder is $50.0\\,\\text{ml}$ before the object is lowered in and $62.0\\,\\text{ml}$ afterwards.\n\nAfterwards the student notices that an air bubble with a volume of $2.0\\,\\text{ml}$ had stuck to the surface of the object.\n\nWhat is the true density of the object in $\\text{g/cm}^3$? Also calculate the density the student originally obtained and its percentage error, deduce from the table which metal each density would suggest the object to be, and say how the bubble could have been removed or noticed.",
       "kind": [
         "data",
         "error",

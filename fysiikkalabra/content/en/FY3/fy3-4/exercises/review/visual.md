@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d888d837342119d7
+CONTENT-HASH: d2575374e6555241
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L2-03 graph — the mid-points at 5 m are off the grid crossings; harmless, but a note "read at grid crossings" in the prompt would help.
-- [Minor] L3-01 solution — the A = G/p_max = mg/p_max chain stacks two tall fractions with tight spacing; acceptable.
-- [Minor] "Lake Päijänne" is a proper noun, fine.
+(none)
 
 ## Checked
-- contact-4, contact-5 (shots under fy3-4/review/shots, stamp matches the exercises hash); open-exercises-1280-4, L2-1280-3, L3-1280-1. Units are set as maths in prose, no Finnish words, fractions in chains are spaced, two-liquids graph has axes, units and distinct data points.
+- Captures fy3-4-open-exercises-L2-1280-10 and L3-1280-8 (en): solution blocks for L2-07 and L3-05 render cleanly, display maths unbroken, units set as maths, decimal point consistent, no Finnish text leftover in the layout.
+- Table headers/labels short enough for the column widths; no text overflow in the translated strings.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English) 4 · accessibility 4
+illustrations 4 · typography 4 · English 4 · accessibility 4

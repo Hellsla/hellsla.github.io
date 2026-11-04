@@ -45,6 +45,8 @@
 ### Light as a wave
 In the chapter *Interference of waves* we saw that the waves from two sources of the same frequency, oscillating in the same phase, form a stable interference pattern. At places where the path difference $\Delta s$ of the waves is a whole number of wavelengths, the waves reinforce each other. At places where the path difference is half a wavelength more than a whole number, they weaken each other. Light is electromagnetic wave motion (chapter *Electromagnetic radiation and the black-body spectrum*), so light should interfere, too. However, the wavelength of visible light is only $400$–$700\,\text{nm}$, so the details of an interference pattern of light are very small.
 
+<figure class="unit-photo"><img src="pics/fy7/laser-interference.webp" alt="Concentric red rings on a black background; a bright white spot in the centre, with the rings fading outwards."><figcaption>An interference pattern of red laser light. In the bright rings the waves reinforce each other, and in the dark rings they cancel. The pattern forms because laser light is coherent.</figcaption></figure>
+
 ### Coherent light
 A stable pattern forms only when the sources are **coherent**: they have the same frequency, and their phase difference stays constant. Two ordinary lamps do not produce a pattern. The light of a lamp is emitted by countless atoms independently of each other, so the phase difference of the light of two lamps varies randomly and very rapidly. The places of constructive and destructive interference then keep swapping, and the eye sees only an even illumination. The light of a laser is coherent. Coherent sources can also be obtained by dividing the light of one source into two parts, for example with two slits.
 
@@ -864,6 +866,8 @@ The longer the wavelength, the larger the path difference and therefore the larg
   <foreignObject x="449" y="295.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = 2$</div></foreignObject>
   <foreignObject x="515.5" y="295.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = 3$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/laser-diffraction.webp" alt="A green pattern in the dark: on the right a grid of bright green spots on a pale surface, and on the left a fainter grid of spots."><figcaption>A diffraction pattern of green laser light. The light has passed through a fine structure that repeats in two directions, so the bright spots form a grid. Each spot is a direction in which the waves reinforce each other.</figcaption></figure>
 
 ### A CD as a reflection grating
 The data track of a CD winds over the surface of the disc as a dense spiral, and the distance between adjacent turns of the track is $1.6\,\mu\text{m}$ (standard IEC 60908, 1999). On a DVD the distance is $0.74\,\mu\text{m}$ (standard ECMA-267, 2001). Light reflected from the surface of the disc behaves in the same way as light passing through a grating: the waves reflected from the evenly spaced tracks interfere, and each wavelength is reinforced in its own direction. That is why rainbow colours are seen on the surface of the disc, changing with the viewing angle. Such a grating is called a reflection grating.

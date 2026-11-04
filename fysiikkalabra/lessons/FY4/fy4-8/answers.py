@@ -25,4 +25,23 @@ a["fy4-8-L3-01"] = -W / s                                # mean resistive force 
 m, h1, v0, F, s = 500, 35.0, 2.0, 150, 120
 a["fy4-8-L3-02"] = h1 + v0 ** 2 / (2 * g) - F * s / (m * g)   # highest second hill: ½mv0² + mgh1 − Fs = mgh2 → 31,534 m
 a["fy4-8-L3-03"] = math.sqrt(12.0 ** 2 + 2 * g * 20.0)   # stone thrown at any angle from 20,0 m: v = √(v0² + 2gh) = 23,16 m/s
+# Added tasks (L1-06..08, L2-05..07, L3-04..05)
+a["fy4-8-L1-07"] = 0.5 * 58.0 * (4.50 ** 2 - 7.50 ** 2) / 1000   # skater: W_kok = ΔE_k = ½m(v2² − v1²) = −1044 J = −1,044 kJ
+hs = [0.05, 0.10, 0.15, 0.20, 0.25, 0.30]
+vs = [1.00, 1.38, 1.73, 1.96, 2.23, 2.41]
+k = sum(h * v ** 2 for h, v in zip(hs, vs)) / sum(h * h for h in hs)   # least-squares line through the origin: v² = k·h
+a["fy4-8-L2-05"] = k / 2                                  # pendulum: mgh = ½mv² → v² = 2g·h → g = k/2 = 9,77 m/s²
+mw = 420
+pts = [(18.0, 1.5), (6.0, 14.6), (12.0, 7.9), (3.0, 14.2)]   # (h, v) at A, B, C, D
+Em = [(0.5 * mw * v ** 2 + mw * g * h) / 1000 for h, v in pts]   # E_mek = ½mv² + mgh in kJ: 74,6; 69,5; 62,5; 54,7
+a["fy4-8-L2-06"] = Em[3] - Em[0]                          # W_muut = E_mek,D − E_mek,A = −19,93 kJ
+v0 = [1.0, 1.5, 2.0, 2.5, 3.0]
+ss = [0.22, 0.47, 0.88, 1.35, 1.98]
+k = sum(v ** 2 * s_ for v, s_ in zip(v0, ss)) / sum(v ** 4 for v in v0)   # slope of s against v0² through the origin
+a["fy4-8-L2-07"] = 0.50 / (2 * k)                         # block: −F s = −½mv0² → s = m/(2F)·v0² → F = m/(2k) = 1,144 N
+runs = [29.4, 31.2, 28.7, 30.5, 29.9, 30.7]
+s_ka = sum(runs) / len(runs)                              # mean stopping distance 30,07 m
+a["fy4-8-L3-04"] = 70 * g * 6.0 / (45 + s_ka)             # snowboarder: mgh − F(L + s) = 0 → F = mgh/(L + s_ka) = 54,89 N
+H = [1.20, 0.77, 0.49, 0.32, 0.20]
+a["fy4-8-L3-05"] = 100 * sum(H[i + 1] / H[i] for i in range(4)) / 4   # E = mgh at the top; mean retained share 63,9 %
 print(json.dumps(a))

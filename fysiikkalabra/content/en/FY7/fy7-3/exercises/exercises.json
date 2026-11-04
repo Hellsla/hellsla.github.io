@@ -244,7 +244,7 @@
     {
       "id": "fy7-3-L3-01",
       "level": 3,
-      "text": "A compass is on a table, and its needle points north. A north–south wire is stretched directly above the compass, at a height of $5.0\\,\\text{cm}$. When a current is switched on in the wire, the needle turns through $30^\\circ$. The horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$, and the field of the wire at the compass is horizontal and perpendicular to the horizontal component of the Earth's field. How great is the current in the wire?",
+      "text": "A compass is on a table, and its needle points north. A north–south wire is stretched directly above the compass, at a height of $5.0\\,\\text{cm}$.\n\nWhen a current is switched on in the wire, the needle turns through $30^\\circ$. The horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$, and the field of the wire at the compass is horizontal and perpendicular to the horizontal component of the Earth's field.\n\nHow great is the current in the wire?",
       "answer": 2.0,
       "unit": "A",
       "tolerance": 0.02

@@ -258,7 +258,7 @@
     {
       "id": "fy7-6-L3-03",
       "level": 3,
-      "text": "Two horizontal metal rails are $0.40\\,\\text{m}$ apart, and their ends are joined by a resistor with a resistance of $0.20\\,\\Omega$. In the region of the rails there is a vertical magnetic field with a magnetic flux density of $0.50\\,\\text{T}$. A metal rod lying across the rails moves along them at a speed of $3.0\\,\\text{m/s}$. The resistance of the rails and the rod is ignored. How large is the braking force that the magnetic field exerts on the rod?",
+      "text": "Two horizontal metal rails are $0.40\\,\\text{m}$ apart, and their ends are joined by a resistor with a resistance of $0.20\\,\\Omega$. In the region of the rails there is a vertical magnetic field with a magnetic flux density of $0.50\\,\\text{T}$.\n\nA metal rod lying across the rails moves along them at a speed of $3.0\\,\\text{m/s}$. The resistance of the rails and the rod is ignored.\n\nHow large is the braking force that the magnetic field exerts on the rod?",
       "answer": 0.6,
       "unit": "N",
       "tolerance": 0.02

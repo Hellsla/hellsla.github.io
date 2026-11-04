@@ -2,8 +2,9 @@
 
 A lesson with inquiry.json is rendered as stages — Pohdinta → Ennusta → Tutki → Teoriatiivistelmä → Sovella →
 Tarkista osaamisesi — each holding activities; stages may repeat, be omitted, or hold the lesson's existing
-parts (theory sections of lesson.md, the simulation, the exit ticket). The exercises always come last, after the
-exit ticket, in their own section "Tehtävät". A lesson without the file renders in the classic layout. See
+parts (theory sections of lesson.md, the simulation, the exit ticket). The exit ticket opens Tarkista osaamisesi,
+before its checks, with no link of its own in the navigation (teacher 2026-11-04: one step fewer). The exercises always
+come last, in their own section "Tehtävät". A lesson without the file renders in the classic layout. See
 docs/inquiry.md for the format and docs/inquiry-spec.md for the pedagogy it serves; the page layout (human
 decisions 2026-10-26, CLAUDE.md "Lesson page") is in render() and templates/site.css.
 
@@ -612,6 +613,7 @@ def render(folder, inquiry, parts, md):
     for a in acts:
         if a["type"] == "exercises": ex_act = a; continue
         by_stage[a["stage"]].append(a)
+    by_stage["tarkista"].sort(key=lambda a: a["type"] != "exit")   # the exit ticket opens Tarkista osaamisesi, before the checks (teacher 2026-11-04)
     placed = {s for a in acts if a["type"] == "theory" for s in a["sections"]}
     leftover = [s for s in parts["sections"] if s not in placed]
     required = [a for a in by_stage["selita"] if a["type"] == "theory" and not a.get("optional")]
@@ -643,7 +645,7 @@ def render(folder, inquiry, parts, md):
         elif t == "sim":
             lead, info = sim_parts(a, md)
             content = lead + parts["sim"].replace("<!--sim-info-->", info)
-        elif t == "exit": content = parts["exit"].replace("</h3>", "</h3>" + (md(a["text"]) if a.get("text") else ""), 1)   # the heading first, then the lead
+        elif t == "exit": content = parts["exit"].replace("</h3>", "</h3>" + md(T("inquiry.exit_lead")), 1)   # one shared lead: the lessons' own say "Lopuksi", written when it came last
         else: content = ""
         if t in ("choice", "numeric") and a.get("stage") == "tarkista":   # after a wrong check: a suggestion where to practise, never a verdict (teacher 2026-10-29)
             hint = f'<p class="practice-hint" role="note">{inline(md, a["practice"]) if a.get("practice") else T("inquiry.check_practice")}</p>'
@@ -680,7 +682,6 @@ def render(folder, inquiry, parts, md):
                      f'<div class="fold-body">{inner}</div></details>')
         body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{inner}</section>')
         toc.append(toc_link(sid, n, title))
-        if any(a["type"] == "exit" for a in items): toc.append(f'<a href="#exit" class="toc-sub"><span class="toc-label">{exit_title()}</span></a>')
     if parts.get("cards"):                             # "Kertaa luvun käsitteet" after the exit ticket (scripts/concept_cards.py)
         body.append(parts["cards"]); toc.append(parts.get("cards_nav", ""))
     if parts.get("exercises"):                         # the exercises close the page, after the exit ticket

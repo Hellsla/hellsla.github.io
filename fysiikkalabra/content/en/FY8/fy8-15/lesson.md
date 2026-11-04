@@ -311,10 +311,14 @@ The range of the electromagnetic interaction and of gravity is unlimited. The st
   <foreignObject x="268.5" y="203.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{photon}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/cms-detector.webp" alt="A huge, multi-layered detector full of cables and metal plates; people in orange helmets stand in the foreground with their backs to the camera."><figcaption>The CMS detector opened up at CERN. The layers of the detector measure the tracks and energies of particles produced in collisions. The visitors standing in front show how large the machine is.</figcaption></figure>
+
 ### The Higgs boson and CERN
 According to the Standard Model, space is filled with the **Higgs field**. Interaction with it gives mass to the $W$ and $Z$ bosons, the quarks and the charged leptons, but the photon and the gluon remain massless. The quantum of the field is the **Higgs boson**. It was discovered in 2012 at the LHC accelerator of CERN, the European Organization for Nuclear Research, and its mass is about $125\,\tfrac{\text{GeV}}{c^2}$. Only about $1\,\%$ of the mass of the proton is the mass of its quarks; the rest is the energy of the strong interaction that binds the quarks.
 
 The LHC is an underground ring $27\,\text{km}$ long on the border of Switzerland and France. In it two proton beams are accelerated in opposite directions to the energy $6.8\,\text{TeV}$ and collided in the middle of the detectors. The energy of the collision produces new, heavy particles according to $E = mc^2$, and the detectors measure the tracks and energies of their decay products. Finland has been a member of CERN since 1991.
+
+<figure class="unit-photo"><img src="pics/fy8/atlas-detector.webp" alt="A portrait view of a tall underground hall: huge curved metal structures on both sides, with a blue cylinder and scaffolding low in the middle."><figcaption>The ATLAS detector under construction in 2007 in an underground cavern at CERN. The finished detector is about $46\,\text{m}$ long and $25\,\text{m}$ high.</figcaption></figure>
 
 ## Formula: Conservation laws in particle reactions
 

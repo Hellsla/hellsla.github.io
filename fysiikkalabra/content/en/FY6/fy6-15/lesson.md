@@ -395,6 +395,8 @@ A fuse does not notice a current through a person: its rated current is amperes,
   <foreignObject x="420" y="17.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$I_\text{L} - I_\text{N} = I_\text{E}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/residual-current-device.webp" alt="A white four-pole residual current device on a black background: a yellow TEST button, a black lever and screw terminals along the top and bottom; its side is marked with the voltage, the tripping current and the rated current."><figcaption>A residual current device. The marking $I_{\Delta n} = 0.03\,\text{A}$ means that it cuts the current when the currents in the phase and neutral conductors differ by $30\,\text{mA}$. The yellow TEST button is used to check regularly that the device works.</figcaption></figure>
+
 An RCD does not prevent all shocks. If a person touches the line conductor and the neutral conductor at the same time, the current returns along the neutral conductor, and there is no difference between the currents of the line and neutral conductors. For this reason live parts are never touched, even if the circuit has an RCD.
 
 ### The dielectric strength of an insulator
@@ -452,6 +454,8 @@ If a conductor falls to the ground, the current spreads into the ground. The pot
   <path d="M560,304 L546,310.5 L546,297.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="255" y="267.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{potential decreases}$</span></div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy6/high-voltage-sign.webp" alt="A yellow triangular warning sign with a black border and a black lightning arrow, on a white surface."><figcaption>The lightning-arrow sign warns of dangerous voltage. It is found, for example, on the cover of a fuse box: behind the cover are live parts that must not be touched.</figcaption></figure>
 
 ### Safe action at home and at work
 In Finland, electrical installation work may be done only by electrical professionals, and the company doing the work must be in the register of the Finnish Safety and Chemicals Agency Tukes as an electrical contractor. A layperson may do only simple jobs: for example, replace a fuse and a lamp, reset a tripped circuit breaker or residual current device (RCD), repair an extension cord or replace its plug, and connect a light fitting in a dry space with a lighting connector. An up-to-date list of the electrical work allowed for laypersons is on the website of Tukes. Before work, the current is switched off and you make sure that there is no voltage at the site.

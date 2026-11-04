@@ -116,7 +116,7 @@
     {
       "id": "fy7-5-L2-04",
       "level": 2,
-      "text": "Neliön muotoisen käämin sivu on $5{,}0\\,\\text{cm}$, ja siinä on $20$ kierrosta. Käämi vedetään tasaisella vauhdilla $0{,}25\\,\\text{m/s}$ homogeenisen magneettikentän alueelle. Kenttä $0{,}30\\,\\text{T}$ on kohtisuorassa käämin tasoa vastaan. Käämin etusivu on kentän reunan suuntainen. Kuinka suuri induktiojännite käämiin syntyy sinä aikana, kun käämi on tulossa kenttään? Anna vastaus millivoltteina.",
+      "text": "Neliön muotoisen käämin sivu on $5{,}0\\,\\text{cm}$, ja siinä on $20$ kierrosta. Käämi vedetään tasaisella vauhdilla $0{,}25\\,\\text{m/s}$ homogeenisen magneettikentän alueelle. Kenttä $0{,}30\\,\\text{T}$ on kohtisuorassa käämin tasoa vastaan. Käämin etusivu on kentän reunan suuntainen.\n\nKuinka suuri induktiojännite käämiin syntyy sinä aikana, kun käämi on tulossa kenttään? Anna vastaus millivoltteina.",
       "answer": 75,
       "unit": "mV",
       "tolerance": 0.02
@@ -259,7 +259,7 @@
     {
       "id": "fy7-5-L3-02",
       "level": 3,
-      "text": "Maan magneettikenttää mitataan kääntökelalla. Kelassa on $100$ kierrosta, ja sen pinta-ala on $0{,}020\\,\\text{m}^2$. Kela on aluksi asennossa, jossa sen taso on kohtisuorassa Maan magneettikenttää vastaan. Kela käännetään puoli kierrosta ajassa $0{,}10\\,\\text{s}$. Kelaan syntyy tänä aikana keskimäärin $2{,}0\\,\\text{mV}$:n induktiojännite. Kuinka suuri on Maan magneettikentän magneettivuon tiheys? Anna vastaus mikrotesloina.",
+      "text": "Maan magneettikenttää mitataan kääntökelalla. Kelassa on $100$ kierrosta, ja sen pinta-ala on $0{,}020\\,\\text{m}^2$.\n\nKela on aluksi asennossa, jossa sen taso on kohtisuorassa Maan magneettikenttää vastaan. Kela käännetään puoli kierrosta ajassa $0{,}10\\,\\text{s}$. Kelaan syntyy tänä aikana keskimäärin $2{,}0\\,\\text{mV}$:n induktiojännite.\n\nKuinka suuri on Maan magneettikentän magneettivuon tiheys? Anna vastaus mikrotesloina.",
       "answer": 50,
       "unit": "µT",
       "tolerance": 0.02
@@ -267,7 +267,7 @@
     {
       "id": "fy7-5-L3-03",
       "level": 3,
-      "text": "Sauvamagneetti pudotetaan pystysuoran $300$ kierroksen käämin läpi. Käämin jännite mitataan datalogerilla. Kun magneetti tulee käämiin, mittauksessa näkyy jännitepulssi. Pulssi on likimain kolmion muotoinen: jännite kasvaa nollasta huippuarvoon $0{,}90\\,\\text{V}$ ja laskee takaisin nollaan. Pulssi kestää kaikkiaan $40\\,\\text{ms}$. Ennen pudotusta magneetti on kaukana käämistä. Kuinka suuri magneettivuo kulkee keskimäärin yhden kierroksen läpi silloin, kun pulssi on päättynyt ja magneetti on käämin keskellä? Anna vastaus millivebereinä.",
+      "text": "Sauvamagneetti pudotetaan pystysuoran $300$ kierroksen käämin läpi. Käämin jännite mitataan datalogerilla.\n\nKun magneetti tulee käämiin, mittauksessa näkyy jännitepulssi. Pulssi on likimain kolmion muotoinen: jännite kasvaa nollasta huippuarvoon $0{,}90\\,\\text{V}$ ja laskee takaisin nollaan. Pulssi kestää kaikkiaan $40\\,\\text{ms}$. Ennen pudotusta magneetti on kaukana käämistä.\n\nKuinka suuri magneettivuo kulkee keskimäärin yhden kierroksen läpi silloin, kun pulssi on päättynyt ja magneetti on käämin keskellä? Anna vastaus millivebereinä.",
       "answer": 0.06,
       "unit": "mWb",
       "tolerance": 0.02

@@ -258,7 +258,7 @@
     {
       "id": "fy7-7-L3-03",
       "level": 3,
-      "text": "In a direct-drive wind turbine a permanent-magnet generator rotates at the same rate as the rotor. The rms value of the generator's voltage is $690\\,\\text{V}$ when the rotor turns at $15$ revolutions per minute. The wind weakens, and the rotor now turns at only $9.0$ revolutions per minute. The magnets and coils of the generator are the same, and the frequency converter is not taken into account. How large is the rms value of the generator's voltage now?",
+      "text": "In a direct-drive wind turbine a permanent-magnet generator rotates at the same rate as the rotor. The rms value of the generator's voltage is $690\\,\\text{V}$ when the rotor turns at $15$ revolutions per minute.\n\nThe wind weakens, and the rotor now turns at only $9.0$ revolutions per minute. The magnets and coils of the generator are the same, and the frequency converter is not taken into account.\n\nHow large is the rms value of the generator's voltage now?",
       "answer": 414.0,
       "unit": "V",
       "tolerance": 0.02

@@ -61,7 +61,7 @@
     {
       "id": "fy8-13-L2-03",
       "level": 2,
-      "text": "STUKin mukaan suomalaisten asuntojen keskimääräinen radonpitoisuus on $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$, ja siitä aiheutuu keskimäärin noin $4{,}0\\,\\text{mSv}$ efektiivinen annos vuodessa. Kuinka suuren vuosiannoksen radonista saa asukas, jonka kodin pitoisuus on asuntojen viitearvo $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$? Oletetaan, että annos on suoraan verrannollinen pitoisuuteen ja että asukas viettää kotona yhtä paljon aikaa kuin keskimäärin. Anna vastaus millisieverteinä.",
+      "text": "STUKin mukaan suomalaisten asuntojen keskimääräinen radonpitoisuus on $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$, ja siitä aiheutuu keskimäärin noin $4{,}0\\,\\text{mSv}$ efektiivinen annos vuodessa.\n\nKuinka suuren vuosiannoksen radonista saa asukas, jonka kodin pitoisuus on asuntojen viitearvo $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$? Oletetaan, että annos on suoraan verrannollinen pitoisuuteen ja että asukas viettää kotona yhtä paljon aikaa kuin keskimäärin. Anna vastaus millisieverteinä.",
       "answer": 13,
       "unit": "mSv",
       "tolerance": 0.02
@@ -79,7 +79,7 @@
     {
       "id": "fy8-13-L3-01",
       "level": 3,
-      "text": "Gammasäteilylähteen annosnopeus on $1{,}0\\,\\text{m}$:n etäisyydellä ilman suojaa $80\\,\\mu\\text{Sv/h}$. Työ kestää $30\\,\\text{min}$, ja sen voi tehdä kahdella tavalla: A) $2{,}0\\,\\text{m}$:n päässä lähteestä ilman suojaa tai B) $1{,}0\\,\\text{m}$:n päässä $18\\,\\text{mm}$:n lyijysuojan takana. Lyijyn puoliintumispaksuus on $6{,}0\\,\\text{mm}$. Laske annos tavalla A miinus annos tavalla B. Anna vastaus mikrosieverteinä etumerkin kanssa: positiivinen erotus tarkoittaa, että tapa B antaa pienemmän annoksen.",
+      "text": "Gammasäteilylähteen annosnopeus on $1{,}0\\,\\text{m}$:n etäisyydellä ilman suojaa $80\\,\\mu\\text{Sv/h}$.\n\nTyö kestää $30\\,\\text{min}$, ja sen voi tehdä kahdella tavalla: A) $2{,}0\\,\\text{m}$:n päässä lähteestä ilman suojaa tai B) $1{,}0\\,\\text{m}$:n päässä $18\\,\\text{mm}$:n lyijysuojan takana. Lyijyn puoliintumispaksuus on $6{,}0\\,\\text{mm}$.\n\nLaske annos tavalla A miinus annos tavalla B. Anna vastaus mikrosieverteinä etumerkin kanssa: positiivinen erotus tarkoittaa, että tapa B antaa pienemmän annoksen.",
       "answer": 5.0,
       "unit": "µSv",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy8-13-L3-02",
       "level": 3,
-      "text": "Omakotitalon radonpitoisuudeksi mitataan $400\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$. Suomalaisten asuntojen keskimääräinen pitoisuus $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$ antaa keskimäärin noin $4{,}0\\,\\text{mSv}$ vuodessa, ja muut säteilylähteet antavat yhteensä keskimäärin noin $1{,}9\\,\\text{mSv}$ vuodessa. Arvioi talon asukkaan efektiivinen vuosiannos kaikista lähteistä. Oletetaan, että radonannos on suoraan verrannollinen pitoisuuteen ja että muut lähteet antavat asukkaalle keskimääräisen annoksen. Anna vastaus millisieverteinä.",
+      "text": "Omakotitalon radonpitoisuudeksi mitataan $400\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$. Suomalaisten asuntojen keskimääräinen pitoisuus $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$ antaa keskimäärin noin $4{,}0\\,\\text{mSv}$ vuodessa, ja muut säteilylähteet antavat yhteensä keskimäärin noin $1{,}9\\,\\text{mSv}$ vuodessa.\n\nArvioi talon asukkaan efektiivinen vuosiannos kaikista lähteistä. Oletetaan, että radonannos on suoraan verrannollinen pitoisuuteen ja että muut lähteet antavat asukkaalle keskimääräisen annoksen. Anna vastaus millisieverteinä.",
       "answer": 19,
       "unit": "mSv",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy8-13-L3-03",
       "level": 3,
-      "text": "Kaivostyöntekijän keuhkojen absorboitunut annos radonin hajoamistuotteiden alfasäteilystä on vuodessa $0{,}10\\,\\text{mGy}$. Lisäksi hänen koko kehonsa saa kallion gammasäteilystä tasaisesti absorboituneen annoksen $0{,}50\\,\\text{mGy}$. Alfasäteilyn painotuskerroin on $20$, gammasäteilyn $1$ ja keuhkojen kudoksen painotuskerroin $0{,}12$. Kuinka suuri on työntekijän efektiivinen annos näistä kahdesta lähteestä yhteensä? Anna vastaus millisieverteinä.",
+      "text": "Kaivostyöntekijän keuhkojen absorboitunut annos radonin hajoamistuotteiden alfasäteilystä on vuodessa $0{,}10\\,\\text{mGy}$. Lisäksi hänen koko kehonsa saa kallion gammasäteilystä tasaisesti absorboituneen annoksen $0{,}50\\,\\text{mGy}$. Alfasäteilyn painotuskerroin on $20$, gammasäteilyn $1$ ja keuhkojen kudoksen painotuskerroin $0{,}12$.\n\nKuinka suuri on työntekijän efektiivinen annos näistä kahdesta lähteestä yhteensä? Anna vastaus millisieverteinä.",
       "answer": 0.74,
       "unit": "mSv",
       "tolerance": 0.02

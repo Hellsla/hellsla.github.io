@@ -224,7 +224,7 @@
     {
       "id": "fy7-16-L3-01",
       "level": 3,
-      "text": "The submarine cable C-Lion1 is $1172\\,\\text{km}$ long (Cinia, 2016). Assume that the attenuation coefficient of its fibres is $0.18\\,\\text{dB/km}$ and that the attenuation of one section of fibre may be at most $20\\,\\text{dB}$ before an optical amplifier restores the power of the light. The sections are of equal length, and the amplifiers are between the sections; the transmitter and the receiver are at the ends of the cable. What is the smallest number of amplifiers the cable must have?",
+      "text": "The submarine cable C-Lion1 is $1172\\,\\text{km}$ long (Cinia, 2016).\n\nAssume that the attenuation coefficient of its fibres is $0.18\\,\\text{dB/km}$ and that the attenuation of one section of fibre may be at most $20\\,\\text{dB}$ before an optical amplifier restores the power of the light. The sections are of equal length, and the amplifiers are between the sections; the transmitter and the receiver are at the ends of the cable.\n\nWhat is the smallest number of amplifiers the cable must have?",
       "answer": 10,
       "unit": "amplifiers",
       "tolerance": 0.02
@@ -232,7 +232,7 @@
     {
       "id": "fy7-16-L3-02",
       "level": 3,
-      "text": "The coil of an induction hob at a frequency of $25\\,\\text{kHz}$ produces in the base of a pan a sinusoidally varying magnetic field whose magnetic flux density has a peak value of $4.0\\,\\text{mT}$. Assume that the field is uniform and perpendicular to the base, that the eddy currents in the base can be described as one loop with a radius of $8.0\\,\\text{cm}$ and a resistance of $0.050\\,\\Omega$, and that the magnetic field of the eddy current itself is ignored. At what mean power does the base heat up? Give the answer in kilowatts.",
+      "text": "The coil of an induction hob at a frequency of $25\\,\\text{kHz}$ produces in the base of a pan a sinusoidally varying magnetic field whose magnetic flux density has a peak value of $4.0\\,\\text{mT}$.\n\nAssume that the field is uniform and perpendicular to the base, that the eddy currents in the base can be described as one loop with a radius of $8.0\\,\\text{cm}$ and a resistance of $0.050\\,\\Omega$, and that the magnetic field of the eddy current itself is ignored.\n\nAt what mean power does the base heat up? Give the answer in kilowatts.",
       "answer": 1.596,
       "unit": "kW",
       "tolerance": 0.02
@@ -240,7 +240,7 @@
     {
       "id": "fy7-16-L3-03",
       "level": 3,
-      "text": "The transmitter of a fibre link feeds a power of $1.0\\,\\text{mW}$ into the fibre, and the receiver needs a power of at least $10\\,\\mu\\text{W}$. The attenuation coefficient of the fibre is $0.20\\,\\text{dB/km}$, and the link has four splices, each of which attenuates by $0.50\\,\\text{dB}$. The refractive index of the glass of the fibre is $1.47$. How long does it take a light pulse to travel from end to end of the longest possible link, when the pulse travels along the axis of the fibre? The speed of light in a vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give the answer in milliseconds.",
+      "text": "The transmitter of a fibre link feeds a power of $1.0\\,\\text{mW}$ into the fibre, and the receiver needs a power of at least $10\\,\\mu\\text{W}$. The attenuation coefficient of the fibre is $0.20\\,\\text{dB/km}$, and the link has four splices, each of which attenuates by $0.50\\,\\text{dB}$.\n\nThe refractive index of the glass of the fibre is $1.47$.\n\nHow long does it take a light pulse to travel from end to end of the longest possible link, when the pulse travels along the axis of the fibre? The speed of light in a vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give the answer in milliseconds.",
       "answer": 0.441,
       "unit": "ms",
       "tolerance": 0.02

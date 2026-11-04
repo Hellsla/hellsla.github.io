@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b9f5870e18aa53bc
+CONTENT-HASH: 56d94f2d09a1fcbc
+
+Round 3. Delta: solutions.md L2-06 Vastaus a).
 
 ## Blocking
-- none
 
 ## Polish
-- L1-04 / L3-03: "$200{,}0\,\textsf{l}$:n" is a sans-serif l; fine, but the answer unit is plain "l" (cosmetic).
+- solutions.md L2-07 c), L3-05 a) — the Vastaus could lead with the rounded value (10 m, 76 mm); the answer box holds 10,4 and 75,9 with tolerance 0,03, which is fine. Carried over.
 
 ## Checked
-- Typesetting round changed only prose forms of numbers with units: 500,0 mm, 200,0 l, 50,0 mm, 2,0 dm³, 7,2 mm, 75,000/75,090 mm, 50,0 mm, 20,0 l and the minus of -27 and -22 °C moved inside the maths. Every value is identical; answer, unit, tolerance fields unchanged; solutions.md unchanged.
-- Recomputed all 12 in one script: 2,88 mm; -51,75 mm; 0,850 mm; 0,84 l; 0,3375 mm; 52,1 m; 3,02 cm³; 36 °C; alpha = 12 (steel) from the graph; 120 °C; 20 µm; 475-18 = 457 -> 460 cm³. All match exercises.json and solutions.
-- Physics: expansion formulas used within about 100 K; liquid gamma near 20 °C; gamma = 3 alpha for solids; hole grows with the body; bimetal bends toward the steel (less expanding) side. Rounding reasons right.
-- Figure length-graph: points (20; 0) and (70; 3,0) on grid, no alpha given.
+- Round-2 Polish resolved: the garbled clause "tulos kertoo vain, kumpaa lähimpänä taulukon kerroin on" is removed; the sentence now ends "kolme merkitsevää numeroa, koska pituuden muutos 1,10 mm on annettu kolmella numerolla", which reads well and is correct.
+- The metal choice is still stated in Mallivastaus b) (alumiini, 23 vs 12 and 17), consistent with α = 22,9 · 10⁻⁶ 1/K and the Järkevyys check (1,10 / 0,58 / 0,82 mm).
+- No other change in fy3-8 since round 2; earlier numeric checks stand.

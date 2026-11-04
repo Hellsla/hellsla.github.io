@@ -279,7 +279,7 @@
     {
       "id": "fy2-3-L3-04",
       "level": 3,
-      "text": "The table contains example data made to resemble Fingrid's hourly data: the average power of Finland's electricity consumption and domestic electricity production in each hour of a weekday morning. When consumption exceeds production, the difference is covered by electricity imports and balancing power. For the period when consumption exceeds production, calculate the total missing electrical energy in gigawatt-hours. Explain in writing when consumption is at its highest, how great a balancing power output is needed at least, and what kind of power plant is suitable for the task.",
+      "text": "The table contains example data made to resemble Fingrid's hourly data: the average power of Finland's electricity consumption and domestic electricity production in each hour of a weekday morning. When consumption exceeds production, the difference is covered by electricity imports and balancing power.\n\nFor the period when consumption exceeds production, calculate the total missing electrical energy in gigawatt-hours.\n\nExplain in writing when consumption is at its highest, how great a balancing power output is needed at least, and what kind of power plant is suitable for the task.",
       "kind": [
         "data",
         "reasoning"
@@ -341,7 +341,7 @@
     {
       "id": "fy2-3-L3-05",
       "level": 3,
-      "text": "The electricity consumption of an old fridge was monitored by measuring how long the compressor runs and how long it is off. The power of the compressor when running is $100\\,\\text{W}$, and other consumption is ignored. The annual consumption of a new fridge is $130\\,\\text{kWh}$. The price of electricity is $20\\,\\text{c/kWh}$, that is $0.20\\,\\text{€/kWh}$, and a year has $8760\\,\\text{h}$. Using the table, determine the average power and annual consumption of the old fridge and calculate how many euros a year are saved by changing to the new one. Estimate in writing whether it is worth buying a new fridge costing $600\\,\\text{€}$ for the saving in electricity alone, and which assumptions affect the result.",
+      "text": "The electricity consumption of an old fridge was monitored by measuring how long the compressor runs and how long it is off. The power of the compressor when running is $100\\,\\text{W}$, and other consumption is ignored.\n\nThe annual consumption of a new fridge is $130\\,\\text{kWh}$. The price of electricity is $20\\,\\text{c/kWh}$, that is $0.20\\,\\text{€/kWh}$, and a year has $8760\\,\\text{h}$.\n\nUsing the table, determine the average power and annual consumption of the old fridge and calculate how many euros a year are saved by changing to the new one.\n\nEstimate in writing whether it is worth buying a new fridge costing $600\\,\\text{€}$ for the saving in electricity alone, and which assumptions affect the result.",
       "kind": [
         "data",
         "model",

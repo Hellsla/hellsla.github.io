@@ -79,7 +79,7 @@
     {
       "id": "fy5-11-L3-01",
       "level": 3,
-      "text": "Naapurin avoimesta ikkunasta, jonka leveys on $0{,}80\\,\\text{m}$, kuuluu musiikkia. Kun kävelet talon nurkan taakse, jossa et enää näe ikkunaa, bassorummun matala ääni ($100\\,\\text{Hz}$) kuuluu yhä selvästi, mutta symbaalin korkea ääni ($5000\\,\\text{Hz}$) heikkenee paljon. Selitä ilmiö diffraktiolla ja vertaa kummankin äänen aallonpituutta ikkunan leveyteen. Äänen nopeus on $343\\,\\text{m/s}$.",
+      "text": "Naapurin avoimesta ikkunasta, jonka leveys on $0{,}80\\,\\text{m}$, kuuluu musiikkia.\n\nKun kävelet talon nurkan taakse, jossa et enää näe ikkunaa, bassorummun matala ääni ($100\\,\\text{Hz}$) kuuluu yhä selvästi, mutta symbaalin korkea ääni ($5000\\,\\text{Hz}$) heikkenee paljon.\n\nSelitä ilmiö diffraktiolla ja vertaa kummankin äänen aallonpituutta ikkunan leveyteen. Äänen nopeus on $343\\,\\text{m/s}$.",
       "answer": "Basson aallonpituus $\\lambda = 3{,}4\\,\\text{m}$ on ikkunaa pidempi ($b/\\lambda \\approx 0{,}23$), joten se taipuu voimakkaasti; symbaalin $\\lambda \\approx 6{,}9\\,\\text{cm}$ on ikkunaa paljon lyhyempi ($b/\\lambda \\approx 12$), joten se etenee lähes suoraan.",
       "unit": "",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy5-11-L3-03",
       "level": 3,
-      "text": "Köysi on $6{,}0\\,\\text{m}$ pitkä, ja sen kauempi pää on sidottu tolppaan. Lähetät köyteen ylöspäin suuntautuvan pulssin ja pidät sen jälkeen köyden toista päätä tiukasti paikallaan. Pulssin nopeus on $4{,}0\\,\\text{m/s}$. Pulssi heijastuu tolpasta, palaa kätesi luo, heijastuu siitä ja etenee taas tolppaa kohti. Kuinka kauan pulssin lähettämisestä kuluu, kun pulssi saapuu tolpalle toisen kerran? Anna vastaus sekunteina.",
+      "text": "Köysi on $6{,}0\\,\\text{m}$ pitkä, ja sen kauempi pää on sidottu tolppaan.\n\nLähetät köyteen ylöspäin suuntautuvan pulssin ja pidät sen jälkeen köyden toista päätä tiukasti paikallaan. Pulssin nopeus on $4{,}0\\,\\text{m/s}$. Pulssi heijastuu tolpasta, palaa kätesi luo, heijastuu siitä ja etenee taas tolppaa kohti.\n\nKuinka kauan pulssin lähettämisestä kuluu, kun pulssi saapuu tolpalle toisen kerran? Anna vastaus sekunteina.",
       "answer": 4.5,
       "unit": "s",
       "tolerance": 0.02

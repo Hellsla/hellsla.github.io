@@ -230,7 +230,7 @@
     {
       "id": "fy7-2-L3-01",
       "level": 3,
-      "text": "In the mass spectrometer of a radiocarbon laboratory, carbon-12 and carbon-14 ions with the same charge are accelerated from rest by the same voltage and directed into the same magnetic field. The ions travel along a semicircle and strike the detector next to the slit. The radius of the path of the carbon-12 ions is $25.0\\,\\text{cm}$. Use the masses $12.0\\,\\text{u}$ and $14.0\\,\\text{u}$. How far apart on the detector are the points of impact of the carbon-12 and carbon-14 ions? Give the answer in centimetres.",
+      "text": "In the mass spectrometer of a radiocarbon laboratory, carbon-12 and carbon-14 ions with the same charge are accelerated from rest by the same voltage and directed into the same magnetic field. The ions travel along a semicircle and strike the detector next to the slit.\n\nThe radius of the path of the carbon-12 ions is $25.0\\,\\text{cm}$. Use the masses $12.0\\,\\text{u}$ and $14.0\\,\\text{u}$.\n\nHow far apart on the detector are the points of impact of the carbon-12 and carbon-14 ions? Give the answer in centimetres.",
       "answer": 4.0,
       "unit": "cm",
       "tolerance": 0.02
@@ -238,7 +238,7 @@
     {
       "id": "fy7-2-L3-02",
       "level": 3,
-      "text": "In a cyclotron, protons go round on an ever larger path in a magnetic field, because they are accelerated between two D-shaped electrodes on every half revolution. The accelerating voltage must change direction in step with the revolution of the protons. The mass of a proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$ and its charge $1.602 \\cdot 10^{-19}\\,\\text{C}$. Show that the period of revolution of a proton does not depend on its speed, and calculate the frequency of revolution of the protons when the magnetic flux density is $1.50\\,\\text{T}$. Give the answer in megahertz.",
+      "text": "In a cyclotron, protons go round on an ever larger path in a magnetic field, because they are accelerated between two D-shaped electrodes on every half revolution. The accelerating voltage must change direction in step with the revolution of the protons.\n\nThe mass of a proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$ and its charge $1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\nShow that the period of revolution of a proton does not depend on its speed, and calculate the frequency of revolution of the protons when the magnetic flux density is $1.50\\,\\text{T}$. Give the answer in megahertz.",
       "answer": 22.9,
       "unit": "MHz",
       "tolerance": 0.02

@@ -235,7 +235,7 @@
     {
       "id": "fy7-13-L3-02",
       "level": 3,
-      "text": "A student studies a CD as a reflection grating. She makes a hole in a cardboard screen and directs the beam of a red laser, with a wavelength of $650\\,\\text{nm}$, through the hole perpendicularly onto the surface of the disc. The screen is parallel to the disc, $10.0\\,\\text{cm}$ from it. The first-order maxima reflected from the disc are seen on the screen on both sides of the hole, $89\\,\\text{mm}$ apart. What is the distance between adjacent tracks of the disc? Give the answer in micrometres.",
+      "text": "A student studies a CD as a reflection grating. She makes a hole in a cardboard screen and directs the beam of a red laser, with a wavelength of $650\\,\\text{nm}$, through the hole perpendicularly onto the surface of the disc. The screen is parallel to the disc, $10.0\\,\\text{cm}$ from it.\n\nThe first-order maxima reflected from the disc are seen on the screen on both sides of the hole, $89\\,\\text{mm}$ apart.\n\nWhat is the distance between adjacent tracks of the disc? Give the answer in micrometres.",
       "answer": 1.5988,
       "unit": "µm",
       "tolerance": 0.02
@@ -243,7 +243,7 @@
     {
       "id": "fy7-13-L3-03",
       "level": 3,
-      "text": "The line density of a grating is not known. When the beam of a red laser, with a wavelength of $650\\,\\text{nm}$, hits the grating perpendicularly, the first-order maximum on a screen $1.00\\,\\text{m}$ away is $19.9\\,\\text{cm}$ from the central maximum. In the same set-up the first-order maximum of a green laser is $16.2\\,\\text{cm}$ from the central maximum. What is the wavelength of the light of the green laser? Give the answer in nanometres.",
+      "text": "The line density of a grating is not known. When the beam of a red laser, with a wavelength of $650\\,\\text{nm}$, hits the grating perpendicularly, the first-order maximum on a screen $1.00\\,\\text{m}$ away is $19.9\\,\\text{cm}$ from the central maximum.\n\nIn the same set-up the first-order maximum of a green laser is $16.2\\,\\text{cm}$ from the central maximum.\n\nWhat is the wavelength of the light of the green laser? Give the answer in nanometres.",
       "answer": 532.5781,
       "unit": "nm",
       "tolerance": 0.02

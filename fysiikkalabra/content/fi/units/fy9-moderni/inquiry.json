@@ -1,0 +1,479 @@
+{
+ "version": 1,
+ "contribution": "Kertaustunti kokoaa FY8-moduulin valosähköisen ilmiön ja fotonin, spektrit ja energiatasot, vetyatomin, aalto-hiukkasdualismin ja orbitaalit, LEDin ja laserin, atomiytimen ja radioaktiivisen hajoamisen, hajoamislain, massavajeen ja sidosenergian, fission ja fuusion, ionisoivan säteilyn, säteilyannoksen ja säteilyturvallisuuden, säteilyn käytön, standardimallin sekä maailmankaikkeuden kehityksen yhdeksi malliksi kvantittuneesta energiasta ja harjoittaa niistä ylioppilaskokeen tyyppisiä tehtäviä: yhden fotonin energia, hajoamisyhtälöt ja hajoamislaki, massaero ja reaktioenergia, annos, etäisyys ja suoja, valosähköisen ilmiön mittausaineisto, raportin arviointi sekä FY2:n ja FY3:n energiaperiaatteiden yhdistäminen ydinvoimalaan.",
+ "learn": [
+  "ratkaisemaan fotoneja, atomeja, ytimiä ja säteilyä koskevia tehtäviä valitsemalla sopivan mallin",
+  "laatimaan ja tulkitsemaan valosähköisen ilmiön ja radioaktiivisen hajoamisen mittausaineiston kuvaajia",
+  "arvioimaan säteilyä ja ydinenergiaa koskevia väitteitä ja mittauksia perustellusti"
+ ],
+ "prior": [
+  "Yhden fotonin energia on $E = hf$, ja se luovuttaa energiansa yhdelle elektronille (luku *Valosähköinen ilmiö ja fotoni*)",
+  "Spektriviivan fotonin energia on kahden energiatilan erotus (luku *Spektrit paljastavat atomin energiatasot*)",
+  "Jokainen puoliintumisaika puolittaa hajoamattomien ytimien määrän (luku *Hajoamislaki ja puoliintumisaika*)",
+  "Ydinreaktiossa massa pienenee, ja massaeroa vastaava energia vapautuu (luku *Massavaje ja ytimen sidosenergia*)",
+  "Säteilyltä suojaudutaan ajalla, etäisyydellä ja suojalla (luku *Säteilyannos ja säteilyturvallisuus Suomessa*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Talvella kasvihuoneen tomaatit kasvavat LED-kasvivalojen alla. Valojen yhteinen teho on useita kilowatteja, ja suurin osa valosta on punaista, aallonpituus noin $660\\,\\text{nm}$. Hammaslääkärin röntgenlaitteen säteilyn teho on paljon pienempi, mutta sen fotonien energia on noin $60\\,\\text{keV}$. Vesimolekyylin ionisaatioenergia on $12{,}6\\,\\text{eV}$. Kokeessa tällainen tilanne voi olla tehtävän alku: luvut on annettu, mutta kaavaa ei.",
+   "question": "Miksi suuri valoteho ei ionisoi, mutta pieni röntgenteho ionisoi? Kuinka suuri on yhden punaisen fotonin energia elektronivoltteina?"
+  },
+  {
+   "id": "lt-1",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 1: kirkkaampi punainen valo",
+   "prompt": "Sinkkilevyä valaistaan punaisella valolla, eikä levystä irtoa elektroneja. Valon intensiteetti kymmenkertaistetaan, mutta väri pysyy samana. Mitä tapahtuu?",
+   "choices": [
+    {
+     "text": "Elektroneja alkaa irrota, koska kirkas valo tuo levylle enemmän energiaa.",
+     "feedback": "Kirkkaampi valo tuo enemmän fotoneja, mutta jokaisen fotonin energia $hf$ pysyy samana. Yksi elektroni saa yhden fotonin energian, joten jos $hf < W$, elektroneja ei irtoa. Kertaa luvussa *Valosähköinen ilmiö ja fotoni*."
+    },
+    {
+     "text": "Elektroneja ei irtoa vieläkään, koska yhden fotonin energia ei muutu.",
+     "feedback": "Oikein. Intensiteetti kertoo fotonien määrän, ja yhden fotonin energian määrää taajuus. Punaisen fotonin energia on pienempi kuin sinkin irrotustyö, noin $4{,}3\\,\\text{eV}$. Kertaa tarvittaessa luvussa *Valosähköinen ilmiö ja fotoni*.",
+     "correct": true
+    },
+    {
+     "text": "Elektroneja irtoaa viiveellä, kun ne ovat keränneet riittävästi energiaa.",
+     "feedback": "Aaltomalli ennusti viivettä, mutta kokeissa sitä ei havaita. Elektroni ei kerää energiaa useilta fotoneilta, joten liian pienellä taajuudella elektroneja ei irtoa koskaan. Kertaa luvussa *Valosähköinen ilmiö ja fotoni*."
+    }
+   ]
+  },
+  {
+   "id": "lt-2",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 2: fotoni vetykaasussa",
+   "prompt": "Perustilassa olevien vetyatomien läpi kulkee fotoneja, joiden energia on $11{,}0\\,\\text{eV}$. Vedyn tasot ovat $E_1 = -13{,}6\\,\\text{eV}$, $E_2 = -3{,}40\\,\\text{eV}$ ja $E_3 = -1{,}51\\,\\text{eV}$. Mitä fotoneille tapahtuu?",
+   "choices": [
+    {
+     "text": "Ne absorboituvat, ja atomi siirtyy tasolle $2$, koska energia riittää siihen.",
+     "feedback": "Siirtymä $1 \\to 2$ vaatii täsmälleen $10{,}2\\,\\text{eV}$. Kun elektroni jää atomiin, ylimääräinen energia ei voi jäädä mihinkään, joten fotoni ei absorboidu. Kertaa luvussa *Vetyatomin energiatasot ja Bohrin malli*."
+    },
+    {
+     "text": "Ne ionisoivat atomit, koska energia on suurempi kuin tason $1$ energia.",
+     "feedback": "Ionisaatio perustilasta vaatii $13{,}6\\,\\text{eV}$, joten $11{,}0\\,\\text{eV}$ ei riitä irrottamaan elektronia. Fotoni ei myöskään sovi mihinkään tasojen erotukseen. Kertaa luvussa *Vetyatomin energiatasot ja Bohrin malli*."
+    },
+    {
+     "text": "Ne kulkevat kaasun läpi, koska energia ei ole minkään tasoparin erotus.",
+     "feedback": "Oikein. Erotukset perustilasta ovat $10{,}2\\,\\text{eV}$ ja $12{,}1\\,\\text{eV}$, ja ionisaatio vaatii $13{,}6\\,\\text{eV}$. Fotoni $11{,}0\\,\\text{eV}$ ei sovi mihinkään, joten se kulkee läpi. Kertaa tarvittaessa luvussa *Vetyatomin energiatasot ja Bohrin malli*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "lt-3",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 3: punainen ja sininen LED",
+   "prompt": "Punainen ja sininen LED kytketään vuorotellen säädettävään jännitelähteeseen, ja jännitettä kasvatetaan nollasta. Kumpi alkaa johtaa ja loistaa pienemmällä jännitteellä?",
+   "choices": [
+    {
+     "text": "Punainen, koska sen fotonin energia ja siksi kynnysjännite on pienempi.",
+     "feedback": "Oikein. Kynnysjännitteellä $eU_\\text{k} \\approx hf = \\tfrac{hc}{\\lambda}$, joten pidemmän aallonpituuden LED tarvitsee pienemmän jännitteen: punainen noin $1{,}9\\,\\text{V}$, sininen noin $2{,}7\\,\\text{V}$. Kertaa tarvittaessa luvussa *LEDin valo ja Planckin vakion mittaaminen*.",
+     "correct": true
+    },
+    {
+     "text": "Sininen, koska sinisen valon aallonpituus on lyhyempi kuin punaisen.",
+     "feedback": "Lyhyt aallonpituus tarkoittaa suurta fotonin energiaa $\\tfrac{hc}{\\lambda}$. Elektronin on saatava jännitelähteeltä vähintään tämä energia, joten sininen LED tarvitsee suuremman jännitteen. Kertaa luvussa *LEDin valo ja Planckin vakion mittaaminen*."
+    },
+    {
+     "text": "Kumpikin yhtä aikaa, koska LEDit kytketään saman jännitelähteeseen.",
+     "feedback": "Sama jännitelähde ei tarkoita samaa kynnystä. Jokaisen elektronin on saatava energia $eU$, joka riittää yhden fotonin energiaan $hf$, joten kynnys riippuu valon väristä. Kertaa luvussa *LEDin valo ja Planckin vakion mittaaminen*."
+    }
+   ]
+  },
+  {
+   "id": "lt-4",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 4: jodi-131 kolmen viikon päästä",
+   "prompt": "Jodi-131:n puoliintumisaika on $8{,}0$ vuorokautta. Näytteessä on aluksi $N_0$ jodi-131-ydintä. Kuinka suuri osa ytimistä on hajoamatta $24$ vuorokauden kuluttua?",
+   "choices": [
+    {
+     "text": "Kahdeksasosa, koska $24$ vuorokautta on kolme puoliintumisaikaa.",
+     "feedback": "Oikein. $N = N_0 \\left(\\tfrac12\\right)^{24/8{,}0} = N_0 \\left(\\tfrac12\\right)^{3} = \\tfrac18 N_0$. Kertaa tarvittaessa luvussa *Hajoamislaki ja puoliintumisaika*.",
+     "correct": true
+    },
+    {
+     "text": "Ei yhtään, koska puolet hajoaa $8$ ja loput $16$ vuorokaudessa.",
+     "feedback": "Hajoaminen ei ole tasaista. Jokainen puoliintumisaika puolittaa sen määrän, joka on jäljellä, joten näyte ei häviä koskaan kokonaan. Kertaa luvussa *Hajoamislaki ja puoliintumisaika*."
+    },
+    {
+     "text": "Kolmasosa, koska kolmessa puoliintumisajassa jää kolmasosa.",
+     "feedback": "Puoliintumisajat kertovat määrän luvulla $\\tfrac12$, ne eivät jaa sitä niiden lukumäärällä. Kolmen puoliintumisajan jälkeen jäljellä on $\\tfrac12 \\cdot \\tfrac12 \\cdot \\tfrac12 = \\tfrac18$. Kertaa luvussa *Hajoamislaki ja puoliintumisaika*."
+    }
+   ]
+  },
+  {
+   "id": "lt-5",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 5: hiili-14:n hajoaminen",
+   "prompt": "Hiili-14 ($Z = 6$) hajoaa beeta miinus -hajoamisella. Mikä ydin syntyy? Typen järjestysluku on $7$ ja boorin $5$.",
+   "choices": [
+    {
+     "text": "Boori-14, koska ydin menettää elektronin ja sen varaus pienenee.",
+     "feedback": "Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi, ja ytimestä lähtee elektroni. Ytimen varaus kasvaa yhdellä, joten $Z$ on $7$. Kertaa luvussa *Atomiydin ja radioaktiivinen hajoaminen*."
+    },
+    {
+     "text": "Hiili-13, koska ytimestä lähtee yksi hiukkanen ja massaluku pienenee.",
+     "feedback": "Elektronin massaluku on nolla, joten massaluku $14$ säilyy. Varausluku säilyy: $6 = 7 + (-1)$, joten syntyy typpi-14. Kertaa luvussa *Atomiydin ja radioaktiivinen hajoaminen*."
+    },
+    {
+     "text": "Typpi-14, koska $Z$ kasvaa yhdellä ja massaluku pysyy samana.",
+     "feedback": "Oikein. ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + {}^{0}_{-1}\\text{e} + \\bar{\\nu}$: massaluku $14$ ja varausluku $6$ säilyvät. Kertaa tarvittaessa luvussa *Atomiydin ja radioaktiivinen hajoaminen*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "lt-6",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 6: radon sisäilmassa",
+   "prompt": "Radonin ja sen hajoamistuotteiden alfasäteily pysähtyy jo paperiarkkiin. Miksi radon on silti suomalaisten suurin säteilyannoksen lähde?",
+   "choices": [
+    {
+     "text": "Radonista tulee myös gammasäteilyä, joka läpäisee talon seinät.",
+     "feedback": "Radonin annos ei tule seinien läpi kulkevasta säteilystä. Radon on kaasu, jota hengitetään, ja sen hajoamistuotteet jäävät keuhkoihin. Kertaa luvussa *Säteilyannos ja säteilyturvallisuus Suomessa*."
+    },
+    {
+     "text": "Hajoamistuotteet hengitetään keuhkoihin, ja alfasäteily ionisoi siellä tiheästi.",
+     "feedback": "Oikein. Keuhkoissa alfasäteily luovuttaa energiansa muutaman solun matkalle, ja sen painotuskerroin on $20$. Kertaa tarvittaessa luvussa *Säteilyannos ja säteilyturvallisuus Suomessa*.",
+     "correct": true
+    },
+    {
+     "text": "Radonia on kaikkialla, joten sen alfasäteily läpäisee ihon jatkuvasti.",
+     "feedback": "Alfasäteily ei läpäise ihon kuollutta pintakerrosta. Vaarallista on se, että radonin hajoamistuotteet hengitetään keuhkoihin, jossa alfasäteily osuu soluihin. Kertaa luvussa *Ionisoiva säteily ja elimistö*."
+    }
+   ]
+  },
+  {
+   "id": "aineisto",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Kolme tuntematonta lähdettä",
+   "source": "example",
+   "source_note": "Lukemat on laskettu läpäisykyvyn mallista, kun lähteen C gammasäteilyn puoliintumispaksuus lyijyssä on $5{,}5\\,\\text{mm}$, ja niihin on lisätty mittausten kaltaista vaihtelua.",
+   "text": "Koulun säteilylaboratoriossa on kolme suljettua säteilylähdettä A, B ja C, joiden merkinnät ovat kuluneet. Jokainen lähde asetettiin vuorollaan GM-putken eteen samalle etäisyydelle, ja pulssit laskettiin minuutin ajan ilman estettä ja kolmen eri esteen takana. Taustasäteily oli ilman lähdettä $20$ pulssia minuutissa.\n\n| Este | A | B | C |\n|---|---|---|---|\n| ei estettä | $640$ | $530$ | $980$ |\n| paperiarkki | $22$ | $516$ | $962$ |\n| alumiini $3{,}0\\,\\text{mm}$ | $19$ | $24$ | $603$ |\n| lyijy $10\\,\\text{mm}$ | $21$ | $21$ | $196$ |\n\nPäättele taulukosta, mitä säteilyä kukin lähde lähettää. Määritä sitten lähteen C gammasäteilylle lyijyn puoliintumispaksuus ja vertaa sitä cesium-137:n gammasäteilyn arvoon $5{,}5\\,\\text{mm}$. Vastaa alla puoliintumispaksuudella. Mallivastauksessa perustellaan myös lähteiden säteilylajit.",
+   "question": {
+    "type": "numeric",
+    "prompt": "Kuinka suuri on lyijyn puoliintumispaksuus lähteen C gammasäteilylle?",
+    "answer": 5.79,
+    "unit": "mm",
+    "tolerance": 0.04,
+    "hints": [
+     "Mikä osa lähteen C säteilystä pääsee $3{,}0\\,\\text{mm}$:n alumiinin läpi? Mikä osa $10\\,\\text{mm}$:n lyijyn läpi?",
+     "Vähennä ensin tausta $20$ pulssia minuutissa. Alumiinin takana jäljellä on lähes pelkkä gammasäteily, $583$ pulssia minuutissa.",
+     "$\\tfrac{176}{583} = \\left(\\tfrac12\\right)^{d/d_{1/2}}$, kun $d = 10\\,\\text{mm}$. Ratkaise $d_{1/2}$ logaritmin avulla."
+    ],
+    "mistakes": [
+     {
+      "value": 4.09,
+      "feedback": "Vertasit lyijyn takana mitattua lukemaa lukemaan ilman estettä. Ilman estettä mukana on myös beetasäteily, jonka jo alumiini pysäyttää. Gammasäteilyn osuus on alumiinin takana mitattu lukema."
+     },
+     {
+      "value": 6.17,
+      "feedback": "Et vähentänyt taustasäteilyä. Vähennä $20$ pulssia minuutissa molemmista lukemista ennen kuin lasket niiden suhteen."
+     }
+    ],
+    "solution": "**Annettu:** pulssit minuutissa ilman estettä, paperin, $3{,}0\\,\\text{mm}$:n alumiinin ja $10\\,\\text{mm}$:n lyijyn takana; taustasäteily $20$ pulssia minuutissa. Lähteen C lukemat $980$, $962$, $603$ ja $196$; taulukosta lyijyn puoliintumispaksuus $5{,}5\\,\\text{mm}$ cesium-137:n gammasäteilylle\n\n**Kysytty:** lyijyn puoliintumispaksuus $d_{1/2}$ lähteen C gammasäteilylle yksikössä $\\text{mm}$\n\n**Periaate:** Alfasäteily pysähtyy paperiin ja beetasäteily muutaman millimetrin alumiiniin, mutta gammasäteily vain vaimenee: jokainen puoliintumispaksuus puolittaa sen (luku *Ionisoiva säteily ja elimistö*). Lähteen A lukema putoaa paperin takana taustan tasolle, joten se lähettää vain alfasäteilyä. Lähteen B lukema putoaa vasta alumiinin takana taustan tasolle, joten se lähettää beetasäteilyä. Lähteen C lukema pienenee alumiinin takana mutta ei häviä, joten se lähettää beeta- ja gammasäteilyä. Alumiinin takana jäljellä on lähes pelkkä gammasäteily, joten sitä verrataan lyijyn takana mitattuun. Ensin vähennetään tausta.\n\n**Kaava:** $I = I_0 \\left(\\tfrac12\\right)^{d/d_{1/2}}$, joten $\\ln\\tfrac{I_0}{I} = \\tfrac{d}{d_{1/2}} \\ln 2$ ja $d_{1/2} = \\dfrac{d \\ln 2}{\\ln (I_0 : I)}$\n\n**Muunnokset:** Pulssimäärät ovat samassa yksikössä, joten niiden suhde on paljas luku, eikä muunnoksia tarvita.\n\n**Sijoitus:** $I_0 = 603 - 20 = 583$ ja $I = 196 - 20 = 176$ pulssia minuutissa, joten $d_{1/2} = \\dfrac{10\\,\\text{mm} \\cdot \\ln 2}{\\ln (583 : 176)} = \\dfrac{10\\,\\text{mm} \\cdot 0{,}693}{1{,}198} = 5{,}79\\,\\text{mm}$\n\n**Vastaus:** $d_{1/2} \\approx 5{,}8\\,\\text{mm}$, kaksi merkitsevää numeroa, koska lyijyn paksuus $10\\,\\text{mm}$ ja satunnaisesti vaihtelevat pulssimäärät eivät anna parempaa tarkkuutta.\n\n**Järkevyys:** Kymmenen millimetriä on vajaat kaksi puoliintumispaksuutta, ja nettolukema pieneni noin kolmasosaan, kuten $\\left(\\tfrac12\\right)^{1{,}7} \\approx 0{,}31$ ennustaa. Tulos on hieman suurempi kuin taulukon $5{,}5\\,\\text{mm}$, koska myös alumiini vaimentaa gammasäteilyä noin $6\\,\\%$, joten $583$ on hieman liian pieni arvio alkuperäisestä gammasäteilystä. Kun tämä korjataan, saadaan $5{,}5\\,\\text{mm}$, joten lähde C voi hyvin olla cesium-137."
+   }
+  },
+  {
+   "id": "teoriatiivistelma",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Ydinajatus",
+    "Kaava",
+    "Virheet",
+    "Kertaa"
+   ]
+  },
+  {
+   "id": "virhe-laser",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Etsi virhe: laserosoittimen fotonit",
+   "prompt": "Vihreän laserosoittimen teho on $5{,}0\\,\\text{mW}$ ja aallonpituus $532\\,\\text{nm}$. Opiskelija laski fotonin energiaksi $\\tfrac{hc}{\\lambda} = 2{,}33\\,\\text{eV}$ ja kirjoitti: ”Fotoneja lähtee sekunnissa $\\tfrac{P}{E} = \\tfrac{5{,}0 \\cdot 10^{-3}\\,\\text{W}}{2{,}33\\,\\text{eV}} = 2{,}1 \\cdot 10^{-3}$.” Mikä ratkaisussa on väärin?",
+   "choices": [
+    {
+     "text": "Taajuus piti laskea ensin, koska fotonin energia on $hf$ eikä $\\tfrac{hc}{\\lambda}$.",
+     "feedback": "Lausekkeet ovat sama asia, koska $f = \\tfrac{c}{\\lambda}$, ja energia $2{,}33\\,\\text{eV}$ on oikein. Virhe on yksiköissä: wattien ja elektronivolttien suhde ei ole lukumäärä sekunnissa. Kertaa luvussa *Laser ja kvanttirakenteet*."
+    },
+    {
+     "text": "Teho piti jakaa kahdella, koska vain puolet energiasta päätyy valoon.",
+     "feedback": "Laserin teho $5{,}0\\,\\text{mW}$ on jo valon teho. Virhe on se, että energia on elektronivoltteina: se on muunnettava jouleiksi ennen jakamista. Kertaa luvussa *Laser ja kvanttirakenteet*."
+    },
+    {
+     "text": "Energia piti muuntaa jouleiksi; fotoneja on noin $1{,}3 \\cdot 10^{16}$ sekunnissa.",
+     "feedback": "Oikein. $2{,}33\\,\\text{eV} = 2{,}33 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 3{,}73 \\cdot 10^{-19}\\,\\text{J}$, joten $\\tfrac{N}{t} = \\tfrac{5{,}0 \\cdot 10^{-3}\\,\\text{W}}{3{,}73 \\cdot 10^{-19}\\,\\text{J}} \\approx 1{,}3 \\cdot 10^{16}\\,\\tfrac{1}{\\text{s}}$. Kertaa tarvittaessa luvussa *Laser ja kvanttirakenteet*.",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "lue-kayra",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Lue kuvaaja: sidosenergia nukleonia kohti",
+   "figure": "fy8-10/kayra-points",
+   "prompt": "Kuvaajassa on ytimien sidosenergia nukleonia kohti massaluvun funktiona. Mikä väite on oikein?",
+   "choices": [
+    {
+     "text": "Kahden ytimen $A \\approx 120$ yhtyminen ytimeksi $A \\approx 240$ vapauttaa energiaa.",
+     "feedback": "Kuvaajassa $\\tfrac{E_\\text{B}}{A}$ pienenee arvosta noin $8{,}5\\,\\text{MeV}$ arvoon noin $7{,}6\\,\\text{MeV}$, joten tuote olisi heikommin sidottu, ja reaktio tarvitsisi energiaa. Kertaa luvussa *Massavaje ja ytimen sidosenergia*."
+    },
+    {
+     "text": "Ytimen $A \\approx 240$ halkeaminen kahdeksi vapauttaa noin $200\\,\\text{MeV}$.",
+     "feedback": "Oikein. Sidosenergia nukleonia kohti kasvaa noin $0{,}9\\,\\text{MeV}$, joten energiaa vapautuu noin $240 \\cdot 0{,}9\\,\\text{MeV} \\approx 220\\,\\text{MeV}$, eli noin $200\\,\\text{MeV}$. Kertaa tarvittaessa luvussa *Fissio, fuusio ja ydinvoima*.",
+     "correct": true
+    },
+    {
+     "text": "Rautaytimien fuusio vapauttaa eniten energiaa, koska rauta on kuvaajan huipulla.",
+     "feedback": "Huipulla olevat ytimet ovat tiiviimmin sidottuja kuin kaikki muut. Niistä ei voi enää fuusiolla eikä fissiolla siirtyä tiiviimmin sidottuun ytimeen, joten rautaa ei voi käyttää energialähteenä. Kertaa luvussa *Massavaje ja ytimen sidosenergia*."
+    }
+   ]
+  },
+  {
+   "id": "hiukkaset",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Perusteltu väite: mikä hajoaminen on mahdollinen?",
+   "prompt": "Vapaan neutronin massa on $939{,}6\\,\\tfrac{\\text{MeV}}{c^2}$, protonin $938{,}3\\,\\tfrac{\\text{MeV}}{c^2}$ ja elektronin $0{,}51\\,\\tfrac{\\text{MeV}}{c^2}$. Mikä hajoaminen voi tapahtua itsestään?",
+   "choices": [
+    {
+     "text": "$n \\to p + e^- + \\bar{\\nu}$, koska kaikki luvut säilyvät ja $Q > 0$.",
+     "feedback": "Oikein. Varaus $0 = 1 - 1 + 0$, baryoniluku $1 = 1$, leptoniluku $0 = 1 - 1$, ja $Q = (939{,}6 - 938{,}3 - 0{,}51)\\,\\text{MeV} \\approx 0{,}8\\,\\text{MeV} > 0$. Kertaa tarvittaessa luvussa *Standardimalli: perushiukkaset ja vuorovaikutukset*.",
+     "correct": true
+    },
+    {
+     "text": "$p \\to n + e^+ + \\nu$, koska varaus ja leptoniluku säilyvät.",
+     "feedback": "Luvut säilyvät, mutta vapaa protoni on kevyempi kuin neutroni ja positroni yhdessä, joten $Q < 0$. Ytimessä beeta plus -hajoaminen voi tapahtua, kun ytimen energia riittää. Kertaa luvussa *Standardimalli: perushiukkaset ja vuorovaikutukset*."
+    },
+    {
+     "text": "$n \\to p + e^-$, koska varaus säilyy ja massaa jää liike-energiaksi.",
+     "feedback": "Varaus säilyy, mutta leptoniluku ei: alussa se on $0$ ja lopussa $1$. Siksi mukana on aina antineutriino $\\bar{\\nu}$. Kertaa luvussa *Standardimalli: perushiukkaset ja vuorovaikutukset*."
+    }
+   ]
+  },
+  {
+   "id": "kaksoisrako",
+   "stage": "sovella",
+   "type": "choice",
+   "title": "Perusteltu väite: elektronit yksi kerrallaan",
+   "prompt": "Kaksoisrakokokeessa elektronisuihku on niin heikko, että laitteessa on kerrallaan vain yksi elektroni. Ilmaisimelle kertyy osumia pitkän aikaa. Mikä väite on oikein?",
+   "choices": [
+    {
+     "text": "Raitoja ei synny, koska elektronit eivät voi törmätä toisiinsa.",
+     "feedback": "Raidat eivät synny elektronien törmäyksistä. Ne syntyvät, vaikka elektroneja tulee yksi kerrallaan, koska jokaisen elektronin osumatodennäköisyyttä kuvaa kahden raon aalto. Kertaa luvussa *Valo ja elektroni aaltoina ja hiukkasina*."
+    },
+    {
+     "text": "Osumat kasautuvat raidoiksi, vaikka jokainen elektroni osuu yhteen pisteeseen.",
+     "feedback": "Oikein. Yksittäisen osuman paikkaa ei voi ennustaa, mutta aalto kertoo todennäköisyyden: tummiin raitoihin osuu tuskin yhtään elektronia. Kertaa tarvittaessa luvussa *Valo ja elektroni aaltoina ja hiukkasina*.",
+     "correct": true
+    },
+    {
+     "text": "Jokainen elektroni jakautuu ja levittäytyy koko ilmaisimelle heikkona raitana.",
+     "feedback": "Elektroni havaitaan aina kokonaisena yhdessä kohdassa. Raitakuvio näkyy vasta monen osuman jakaumana. Kertaa luvussa *Valo ja elektroni aaltoina ja hiukkasina*."
+    }
+   ]
+  },
+  {
+   "id": "rontgen",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Hammasröntgen",
+   "prompt": "Hammaslääkärin röntgenputkessa elektronit kiihdytetään katodilta anodille jännitteellä $65\\,\\text{kV}$. Anodissa jarruttava elektroni voi luovuttaa koko liike-energiansa yhdelle fotonille. Kuinka lyhyt on röntgensäteilyn lyhin aallonpituus?",
+   "answer": 0.01908,
+   "unit": "nm",
+   "tolerance": 0.02,
+   "hints": [
+    "Kuinka suuren liike-energian elektroni saa jännitteessä $U$?",
+    "Elektroni saa energian $eU$, ja suurin fotonin energia on $hf = eU$.",
+    "$\\lambda_\\text{min} = \\tfrac{hc}{eU}$. Muunna lopuksi metrit nanometreiksi."
+   ],
+   "mistakes": [
+    {
+     "value": 19.08,
+     "feedback": "Tulos on tuhatkertainen. Sijoitit jännitteen kilovoltteina tai vastasit pikometreinä: $65\\,\\text{kV} = 65\\,000\\,\\text{V}$ ja $1\\,\\text{nm} = 1000\\,\\text{pm}$."
+    },
+    {
+     "value": 0.03816,
+     "feedback": "Jaoit vain puolella energiasta. Koko liike-energia $eU$ voi siirtyä yhdelle fotonille, joten $hf_\\text{max} = eU$."
+    }
+   ],
+   "solution": "**Annettu:** kiihdytysjännite $U = 65\\,\\text{kV}$, $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$\n\n**Kysytty:** lyhin aallonpituus $\\lambda_\\text{min}$ yksikössä $\\text{nm}$\n\n**Periaate:** Sähkökenttä tekee elektroniin työn $eU$, joten elektroni saapuu anodille liike-energialla $eU$. Suurin fotonin energia syntyy, kun elektroni luovuttaa koko liike-energiansa yhdelle fotonille. Suurinta energiaa vastaa lyhin aallonpituus (luku *Säteily lääketieteessä ja teknologiassa*).\n\n**Kaava:** $hf_\\text{max} = \\dfrac{hc}{\\lambda_\\text{min}} = eU$, joten $\\lambda_\\text{min} = \\dfrac{hc}{eU}$\n\n**Muunnokset:** $65\\,\\text{kV} = 65 \\cdot 1000\\,\\text{V} = 65\\,000\\,\\text{V}$ ja lopuksi $1\\,\\text{m} = 10^{9}\\,\\text{nm}$\n\n**Sijoitus:** $\\lambda_\\text{min} = \\dfrac{6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^{8}\\,\\tfrac{\\text{m}}{\\text{s}}}{1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 65\\,000\\,\\text{V}} = 1{,}908 \\cdot 10^{-11}\\,\\text{m} = 0{,}01908\\,\\text{nm}$\n\n**Vastaus:** $\\lambda_\\text{min} \\approx 0{,}019\\,\\text{nm}$, kaksi merkitsevää numeroa kuten jännite $65\\,\\text{kV}$.\n\n**Järkevyys:** Arvio $hc \\approx 1240\\,\\text{eV}\\,\\text{nm}$ antaa $1240\\,\\text{eV}\\,\\text{nm} : 65\\,000\\,\\text{eV} \\approx 0{,}019\\,\\text{nm}$. Aallonpituus on kymmeniä tuhansia kertoja lyhyempi kuin näkyvän valon, kuten röntgensäteilyllä kuuluu."
+  },
+  {
+   "id": "radiohiili",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Järvestä löytynyt ruuhi",
+   "prompt": "Järven pohjasta nostetun puuruuhen näytteessä hiili-14:n aktiivisuus hiiligrammaa kohti on $72{,}0\\,\\%$ elävän puun arvosta. Hiili-14:n puoliintumisaika on $5700$ vuotta. Kuinka vanha ruuhi on? Oletetaan, että hiili-14:n osuus elävässä puussa on pysynyt samana.",
+   "answer": 2701,
+   "unit": "a",
+   "tolerance": 0.02,
+   "hints": [
+    "Kun puu kaadettiin, uutta hiili-14:ää ei enää tullut. Mitä aktiivisuudelle tapahtui sen jälkeen?",
+    "$A = A_0 \\left(\\tfrac12\\right)^{t/T_{1/2}}$, missä $\\tfrac{A}{A_0} = 0{,}720$.",
+    "$t = T_{1/2} \\cdot \\dfrac{\\ln (A_0 : A)}{\\ln 2}$"
+   ],
+   "mistakes": [
+    {
+     "value": 10470,
+     "feedback": "Laskit osuudella $0{,}28$, joka on hajonneiden ytimien osuus. Jäljellä on $72{,}0\\,\\%$, joten $\\tfrac{A_0}{A} = \\tfrac{1}{0{,}720}$."
+    },
+    {
+     "value": 3192,
+     "feedback": "Käytit lineaarista mallia, jossa aktiivisuus pienenisi joka vuosi saman määrän. Hajoamislaki puolittaa jäljellä olevan joka puoliintumisaika."
+    }
+   ],
+   "solution": "**Annettu:** aktiivisuuden suhde $\\tfrac{A}{A_0} = 0{,}720$, puoliintumisaika $T_{1/2} = 5700\\,\\text{a}$\n\n**Kysytty:** ruuhen ikä $t$ vuosina\n\n**Periaate:** Elävä puu ottaa hiiltä ilmasta, joten sen hiili-14:n osuus pysyy samana. Kun puu kaadettiin, hiili-14:ää alkoi vain hajota, ja aktiivisuus pienenee hajoamislain mukaan (luku *Hajoamislaki ja puoliintumisaika*). Grammaa kohti laskettu aktiivisuus ei riipu näytteen koosta.\n\n**Kaava:** $\\dfrac{A}{A_0} = \\left(\\dfrac12\\right)^{t/T_{1/2}}$, joten $\\ln\\dfrac{A_0}{A} = \\dfrac{t}{T_{1/2}} \\ln 2$ ja $t = T_{1/2} \\cdot \\dfrac{\\ln (A_0 : A)}{\\ln 2}$\n\n**Muunnokset:** Ikä saadaan samassa yksikössä kuin puoliintumisaika, vuosina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $t = 5700\\,\\text{a} \\cdot \\dfrac{\\ln (1 : 0{,}720)}{\\ln 2} = 5700\\,\\text{a} \\cdot \\dfrac{0{,}3285}{0{,}6931} = 2701\\,\\text{a}$\n\n**Vastaus:** $t \\approx 2700\\,\\text{a}$, kaksi merkitsevää numeroa kuten puoliintumisaika $5700\\,\\text{a}$.\n\n**Järkevyys:** Yksi puoliintumisaika jättäisi $50\\,\\%$, joten $72\\,\\%$ tarkoittaa alle puolta puoliintumisajasta, ja $2700\\,\\text{a} \\approx 0{,}47\\,T_{1/2}$. Tarkistus: $\\left(\\tfrac12\\right)^{0{,}474} \\approx 0{,}72$."
+  },
+  {
+   "id": "fuusio",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Kahden deuteriumytimen fuusio",
+   "prompt": "Fuusiokokeessa kaksi deuteriumydintä yhtyy: ${}^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\to {}^{3}_{2}\\text{He} + {}^{1}_{0}\\text{n}$. Atomimassat ovat ${}^{2}\\text{H}$: $2{,}014102\\,\\text{u}$, ${}^{3}\\text{He}$: $3{,}016029\\,\\text{u}$ ja neutroni $1{,}008665\\,\\text{u}$. Kuinka paljon energiaa yksi reaktio vapauttaa?",
+   "answer": 3.27,
+   "unit": "MeV",
+   "tolerance": 0.02,
+   "hints": [
+    "Mistä vapautuva energia tulee? Vertaa lähtöaineiden ja tuotteiden massoja.",
+    "$Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$. Atomimassoja voi käyttää, koska elektronien määrä on molemmin puolin kaksi.",
+    "Sijoita massaero atomimassayksiköinä ja $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$."
+   ],
+   "mistakes": [
+    {
+     "value": 942.8,
+     "feedback": "Unohdit neutronin tuotteista. Tuotteiden massa on helium-3:n ja neutronin massojen summa."
+    },
+    {
+     "value": 5.24e-13,
+     "feedback": "Tämä on energia jouleina. Kysytään megaelektronivoltteja, jotka saat suoraan kertomalla massaeron luvulla $931{,}5\\,\\tfrac{\\text{MeV}}{\\text{u}}$."
+    }
+   ],
+   "solution": "**Annettu:** $m({}^{2}\\text{H}) = 2{,}014102\\,\\text{u}$, $m({}^{3}\\text{He}) = 3{,}016029\\,\\text{u}$, $m_\\text{n} = 1{,}008665\\,\\text{u}$, $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$\n\n**Kysytty:** yhden reaktion vapauttama energia $Q$ yksikössä $\\text{MeV}$\n\n**Periaate:** Ydinreaktiossa massaluku ja varausluku säilyvät, mutta massa ei: tuotteet ovat kevyempiä, ja massaeroa vastaava energia vapautuu tuotteiden liike-energiaksi (luvut *Massavaje ja ytimen sidosenergia* ja *Fissio, fuusio ja ydinvoima*). Atomimassoja voi käyttää, koska elektroneja on kummallakin puolella kaksi.\n\n**Kaava:** $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2 = \\left(2m({}^{2}\\text{H}) - m({}^{3}\\text{He}) - m_\\text{n}\\right)c^2$\n\n**Muunnokset:** Massaero sijoitetaan atomimassayksikköinä, ja yksikön paikalle sijoitetaan $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$, jolloin $c^2$ supistuu.\n\n**Sijoitus:** $\\Delta m = 2 \\cdot 2{,}014102\\,\\text{u} - 3{,}016029\\,\\text{u} - 1{,}008665\\,\\text{u} = 0{,}003510\\,\\text{u}$, joten $Q = 0{,}003510 \\cdot 931{,}5\\,\\tfrac{\\text{MeV}}{c^2} \\cdot c^2 = 3{,}270\\,\\text{MeV}$\n\n**Vastaus:** $Q \\approx 3{,}27\\,\\text{MeV}$, kolme merkitsevää numeroa, koska massaero $0{,}003510\\,\\text{u}$ tunnetaan neljän numeron tarkkuudella ja muunnoskerroin $931{,}5$ neljällä.\n\n**Järkevyys:** Massa pienenee vain noin $0{,}09\\,\\%$, mikä on ydinreaktioille tyypillistä. Tulos on pienempi kuin deuteriumin ja tritiumin fuusion $17{,}6\\,\\text{MeV}$, koska helium-3 on paljon heikommin sidottu kuin helium-4."
+  },
+  {
+   "id": "suojaus",
+   "stage": "sovella",
+   "type": "numeric",
+   "title": "Gammalähde varastossa",
+   "prompt": "Teollisuuden mittalaitteessa on cesium-137-lähde, jonka annosnopeus on $1{,}6\\,\\tfrac{\\text{mSv}}{\\text{h}}$ metrin etäisyydellä. Varastossa työntekijä on $5{,}0\\,\\text{m}$:n päässä lähteestä, ja välissä on $11\\,\\text{mm}$ lyijyä. Lyijyn puoliintumispaksuus on $5{,}5\\,\\text{mm}$. Kuinka suuri on annosnopeus työntekijän kohdalla? Vastaa yksikössä $\\mu\\text{Sv/h}$.",
+   "answer": 16.0,
+   "unit": "µSv/h",
+   "tolerance": 0.02,
+   "hints": [
+    "Kaksi asiaa pienentää annosnopeutta: etäisyys ja lyijy. Laske kummankin vaikutus erikseen kertoimena.",
+    "Etäisyys $1{,}0\\,\\text{m} \\to 5{,}0\\,\\text{m}$ antaa kertoimen $\\left(\\tfrac{1{,}0}{5{,}0}\\right)^2$, ja $11\\,\\text{mm}$ on kaksi puoliintumispaksuutta.",
+    "$\\dot{H} = 1{,}6\\,\\tfrac{\\text{mSv}}{\\text{h}} \\cdot \\tfrac{1}{25} \\cdot \\tfrac14$, ja $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$."
+   ],
+   "mistakes": [
+    {
+     "value": 80.0,
+     "feedback": "Pienensit annosnopeutta etäisyyden suhteessa, kertoimella $\\tfrac15$. Pistemäisen lähteen annosnopeus pienenee etäisyyden neliön suhteessa: $\\tfrac{1}{25}$."
+    },
+    {
+     "value": 64.0,
+     "feedback": "Unohdit lyijyn vaikutuksen. $11\\,\\text{mm}$ on kaksi puoliintumispaksuutta, joten se päästää läpi neljäsosan."
+    },
+    {
+     "value": 0.016,
+     "feedback": "Tämä on annosnopeus yksikössä $\\tfrac{\\text{mSv}}{\\text{h}}$. Kysytään mikrosievertejä tunnissa: $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$."
+    }
+   ],
+   "solution": "**Annettu:** $\\dot{H}_1 = 1{,}6\\,\\tfrac{\\text{mSv}}{\\text{h}}$ etäisyydellä $r_1 = 1{,}0\\,\\text{m}$, työntekijän etäisyys $r_2 = 5{,}0\\,\\text{m}$, lyijyn paksuus $d = 11\\,\\text{mm}$, puoliintumispaksuus $d_{1/2} = 5{,}5\\,\\text{mm}$\n\n**Kysytty:** annosnopeus $\\dot{H}$ työntekijän kohdalla yksikössä $\\mu\\text{Sv/h}$\n\n**Periaate:** Pistemäisestä lähteestä säteily leviää pallon pinnalle, jonka ala kasvaa etäisyyden neliönä, joten annosnopeus pienenee kuten $\\tfrac{1}{r^2}$. Lyijy vaimentaa gammasäteilyä niin, että jokainen puoliintumispaksuus puolittaa sen (luku *Säteilyannos ja säteilyturvallisuus Suomessa*). Vaikutukset ovat toisistaan riippumattomia, joten kertoimet kerrotaan.\n\n**Kaava:** $\\dot{H} = \\dot{H}_1 \\left(\\dfrac{r_1}{r_2}\\right)^2 \\left(\\dfrac12\\right)^{d/d_{1/2}}$\n\n**Muunnokset:** Lopuksi $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$. Paksuuksien suhde on paljas luku, koska molemmat ovat millimetreinä.\n\n**Sijoitus:** $\\dot{H} = 1{,}6\\,\\tfrac{\\text{mSv}}{\\text{h}} \\cdot \\left(\\dfrac{1{,}0\\,\\text{m}}{5{,}0\\,\\text{m}}\\right)^2 \\cdot \\left(\\dfrac12\\right)^{11 : 5{,}5} = 1{,}6\\,\\tfrac{\\text{mSv}}{\\text{h}} \\cdot 0{,}040 \\cdot 0{,}25 = 0{,}016\\,\\tfrac{\\text{mSv}}{\\text{h}} = 16\\,\\tfrac{\\mu\\text{Sv}}{\\text{h}}$\n\n**Vastaus:** $\\dot{H} \\approx 16\\,\\mu\\text{Sv/h}$, kaksi merkitsevää numeroa kuten annosnopeus $1{,}6\\,\\tfrac{\\text{mSv}}{\\text{h}}$.\n\n**Järkevyys:** Etäisyys pienentää annosnopeutta $25$-kertaisesti ja lyijy $4$-kertaisesti, yhteensä $100$-kertaisesti, ja $1600\\,\\mu\\text{Sv/h} : 100 = 16\\,\\mu\\text{Sv/h}$. Tulos on edelleen satoja kertoja suurempi kuin ulkoilman taustasäteily, joten varastossa ei pidä oleskella turhaan."
+  },
+  {
+   "id": "lisaa",
+   "stage": "sovella",
+   "type": "exercises",
+   "text": "Tunnin lopussa ovat ylioppilaskokeen tyyliset tehtävät. Kirjoita ratkaisu vihkoon tai koneelle kuten kokeessa, ja arvioi se vasta sitten mallivastauksen ja pisteytyksen avulla."
+  },
+  {
+   "id": "tarkistus-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Käsite",
+   "prompt": "Kirjan kuvassa vetyatomin $1\\text{s}$-orbitaali on piirretty palloksi, jonka säde on $0{,}14\\,\\text{nm}$. Mitä kuva esittää?",
+   "choices": [
+    {
+     "text": "Rataa, jota pitkin elektroni kiertää ydintä tasaisella nopeudella.",
+     "feedback": "Elektronilla ei ole havaittavaa rataa. Bohrin mallin radat hylättiin, mutta energiatasot säilyivät. Orbitaali kuvaa todennäköisyyttä havaita elektroni. Kertaa luvussa *Aaltomekaaninen atomimalli ja orbitaalit*."
+    },
+    {
+     "text": "Elektronin kokoa, sillä elektroni on levittäytynyt tasaisesti koko palloon.",
+     "feedback": "Elektroni havaitaan aina yhdessä kohdassa kokonaisena. Orbitaali kertoo, missä se todennäköisesti havaitaan, ja raja on valittu niin, että pallon sisällä on noin $90\\,\\%$ havainnoista. Kertaa luvussa *Aaltomekaaninen atomimalli ja orbitaalit*."
+    },
+    {
+     "text": "Aluetta, jonka sisältä elektroni havaitaan noin $90\\,\\%$:n todennäköisyydellä.",
+     "feedback": "Oikein. Yksi mittaus antaa yhden satunnaisen pisteen, ja monen mittauksen pisteistä noin $90\\,\\%$ on pallon sisällä. Kertaa tarvittaessa luvussa *Aaltomekaaninen atomimalli ja orbitaalit*.",
+     "correct": true
+    }
+   ],
+   "practice": "Kertaa orbitaalin todennäköisyystulkinta luvussa [*Aaltomekaaninen atomimalli ja orbitaalit*](fy8-5.html) ja energiatasot luvussa [*Vetyatomin energiatasot ja Bohrin malli*](fy8-3.html)."
+  },
+  {
+   "id": "tarkistus-2",
+   "stage": "tarkista",
+   "type": "numeric",
+   "title": "2. Laskeminen",
+   "prompt": "Koulun cesium-137-lähteen aktiivisuus oli vuonna 1996 lähteen todistuksen mukaan $370\\,\\text{kBq}$. Cesium-137:n puoliintumisaika on $30{,}1$ vuotta, ja yhden atomin massa on $137\\,\\text{u}$, missä $1\\,\\text{u} = 1{,}66 \\cdot 10^{-27}\\,\\text{kg}$. Kuinka suuri on lähteen cesium-137:n massa vuonna 2026? Vastaa nanogrammoina.",
+   "answer": 57.81,
+   "unit": "ng",
+   "tolerance": 0.02,
+   "hints": [
+    "Laske ensin aktiivisuus vuonna 2026. Kuinka monta puoliintumisaikaa on kulunut?",
+    "Aktiivisuus on $A = \\lambda N$, missä $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$, joten ytimiä on $N = \\tfrac{A T_{1/2}}{\\ln 2}$. Puoliintumisaika sekunteina: $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$.",
+    "Massa on $m = N \\cdot 137\\,\\text{u}$, ja $1\\,\\text{kg} = 10^{12}\\,\\text{ng}$."
+   ],
+   "mistakes": [
+    {
+     "value": 115.4,
+     "feedback": "Käytit vuoden 1996 aktiivisuutta. Aktiivisuus on puolittunut lähes kerran $30$ vuodessa, joten laske ensin vuoden 2026 aktiivisuus."
+    },
+    {
+     "value": 40.07,
+     "feedback": "Kerroit aktiivisuuden puoliintumisajalla. $N = \\tfrac{A}{\\lambda} = \\tfrac{A T_{1/2}}{\\ln 2}$, joten jaa vielä luvulla $\\ln 2 \\approx 0{,}693$."
+    },
+    {
+     "value": 1.832e-06,
+     "feedback": "Sijoitit puoliintumisajan vuosina, vaikka aktiivisuus on hajoamisia sekunnissa. Muunna puoliintumisaika sekunneiksi."
+    }
+   ],
+   "practice": "Kertaa hajoamislaki, hajoamisvakio ja aktiivisuus luvussa [*Hajoamislaki ja puoliintumisaika*](fy8-9.html).",
+   "solution": "**Annettu:** aktiivisuus vuonna 1996 $A_0 = 370\\,\\text{kBq}$, aika $t = 30\\,\\text{a}$, puoliintumisaika $T_{1/2} = 30{,}1\\,\\text{a}$, atomin massa $m_\\text{a} = 137\\,\\text{u}$, $1\\,\\text{u} = 1{,}66 \\cdot 10^{-27}\\,\\text{kg}$, $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$\n\n**Kysytty:** cesium-137:n massa $m$ vuonna 2026 yksikössä $\\text{ng}$\n\n**Periaate:** Aktiivisuus pienenee samaa hajoamislakia kuin ytimien määrä. Aktiivisuus on ytimien määrä kerrottuna hajoamisvakiolla, joka kertoo yhden ytimen hajoamistodennäköisyyden sekunnissa (luku *Hajoamislaki ja puoliintumisaika*). Lähteessä on valtavasti ytimiä, joten laki pätee hyvin. Massa on ytimien määrä kerrottuna yhden atomin massalla.\n\n**Kaava:** $A = A_0 \\left(\\tfrac12\\right)^{t/T_{1/2}}$, $A = \\dfrac{\\ln 2}{T_{1/2}}\\,N$ ja $m = N m_\\text{a}$, joten $m = \\dfrac{A_0 \\left(\\tfrac12\\right)^{t/T_{1/2}}\\,T_{1/2}\\,m_\\text{a}}{\\ln 2}$\n\n**Muunnokset:** $370\\,\\text{kBq} = 370 \\cdot 1000\\,\\tfrac{1}{\\text{s}} = 3{,}70 \\cdot 10^{5}\\,\\tfrac{1}{\\text{s}}$, $T_{1/2} = 30{,}1 \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s} = 9{,}500 \\cdot 10^{8}\\,\\text{s}$, $m_\\text{a} = 137 \\cdot 1{,}66 \\cdot 10^{-27}\\,\\text{kg} = 2{,}274 \\cdot 10^{-25}\\,\\text{kg}$ ja lopuksi $1\\,\\text{kg} = 10^{12}\\,\\text{ng}$\n\n**Sijoitus:** $A = 3{,}70 \\cdot 10^{5}\\,\\tfrac{1}{\\text{s}} \\cdot \\left(\\tfrac12\\right)^{30 : 30{,}1} = 1{,}854 \\cdot 10^{5}\\,\\tfrac{1}{\\text{s}}$, $N = \\dfrac{1{,}854 \\cdot 10^{5}\\,\\tfrac{1}{\\text{s}} \\cdot 9{,}500 \\cdot 10^{8}\\,\\text{s}}{0{,}6931} = 2{,}541 \\cdot 10^{14}$ ja $m = 2{,}541 \\cdot 10^{14} \\cdot 2{,}274 \\cdot 10^{-25}\\,\\text{kg} = 5{,}78 \\cdot 10^{-11}\\,\\text{kg} = 57{,}8\\,\\text{ng}$\n\n**Vastaus:** $m \\approx 57{,}8\\,\\text{ng}$, kolme merkitsevää numeroa kuten aktiivisuus $370\\,\\text{kBq}$ ja puoliintumisaika $30{,}1\\,\\text{a}$.\n\n**Järkevyys:** Kolmekymmentä vuotta on lähes yksi puoliintumisaika, joten aktiivisuus on lähes puolittunut, kuten $185\\,\\text{kBq}$ näyttää. Satojentuhansien becquerelien lähteessä on vain kymmeniä nanogrammoja cesiumia, koska yksittäisen ytimen hajoamistodennäköisyys on pieni, $\\lambda \\approx 7{,}3 \\cdot 10^{-10}\\,\\tfrac{1}{\\text{s}}$."
+  },
+  {
+   "id": "tarkistus-3",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "3. Selitä",
+   "figure": "fy8-11/sidosenergia-luku",
+   "prompt": "Ydinvoimala saa energiansa uraani-235:n fissiosta, Aurinko vedyn fuusiosta heliumiksi. Selitä kuvaajan avulla, miksi sekä raskaan ytimen halkeaminen että kevyiden ytimien yhtyminen vapauttavat energiaa, ja miksi massa pienenee kummassakin.",
+   "criteria": [
+    "Vastaus toteaa, että sidosenergia nukleonia kohti on suurin keskiraskailla ytimillä, noin $A = 60$, ja pienempi sekä kevyillä että raskailla ytimillä.",
+    "Vastaus perustelee, että fissio ja fuusio tuottavat ytimiä, jotka ovat lähempänä huippua ja siksi tiiviimmin sidottuja, joten sidosenergia kasvaa ja ero vapautuu.",
+    "Vastaus selittää, että suurempi sidosenergia tarkoittaa suurempaa massavajetta: tuotteiden massa on pienempi, ja massaeroa vastaava energia $Q = \\Delta m\\,c^2$ vapautuu.",
+    "Vastaus toteaa, että massaluku ja varausluku säilyvät, vaikka massa pienenee."
+   ],
+   "model": "Kuvaaja näyttää, että sidosenergia nukleonia kohti on suurin keskiraskailla ytimillä, noin massaluvun $60$ kohdalla, ja pienempi sekä kevyillä että raskailla ytimillä. Kun uraani-235 halkeaa kahdeksi keskiraskaaksi ytimeksi, nukleonit siirtyvät kuvaajan oikeasta reunasta kohti huippua, ja sidosenergia nukleonia kohti kasvaa noin $7{,}6\\,\\text{MeV}$:sta noin $8{,}5\\,\\text{MeV}$:iin. Kun vety fuusioituu heliumiksi, nukleonit siirtyvät vasemmasta reunasta ylöspäin. Kummassakin tuotteet ovat tiiviimmin sidottuja kuin lähtöaineet, joten kokonaissidosenergia kasvaa ja erotus vapautuu liike-energiana ja gammasäteilynä. Suurempi sidosenergia tarkoittaa suurempaa massavajetta $\\Delta m = \\tfrac{E_\\text{B}}{c^2}$: tuotteiden yhteismassa on pienempi kuin lähtöaineiden, ja vapautuva energia on $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$. Massaluku ja varausluku säilyvät, mutta massa ei.",
+   "practice": "Kertaa sidosenergiakäyrä luvussa [*Massavaje ja ytimen sidosenergia*](fy8-10.html) ja reaktioenergia luvussa [*Fissio, fuusio ja ydinvoima*](fy8-11.html)."
+  },
+  {
+   "id": "lahtolippu",
+   "stage": "tarkista",
+   "type": "exit",
+   "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+  }
+ ]
+}
