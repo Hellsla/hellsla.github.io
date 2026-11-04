@@ -1,19 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: ee5dfc08e51a45b0
+VERDICT: FAIL
+CONTENT-HASH: 3234dc70c5ccf41b
 
 ## Blocking
+- **A (7 assessment correctness, 6 consistency): fy8-2-L3-04, part b) and the solution's Sijoitus.** The five lines (3,90; 2,80; 2,40; 1,50; 1,30 eV) fit two level schemes, not one. The solution's is 1,10/2,40/3,90 eV; its mirror 1,50/2,80/3,90 eV (missing line E3 − E2 = 1,10 eV) fits equally well. Both give the same sixth line, 1127 nm, so the answer box is right. But part b) asks the student to "päättele viritystilojen energiat", and the solution presents its diagram as the only deduction ("Pari 2,40 + 1,50 on E2 ja E3 − E2 … joten se on puuttuva viiva E1"). A student who draws the equally valid mirror diagram is marked wrong. **Fix (either):** (1) add one datum that breaks the symmetry to the task text, for example "Kylmä kaasu absorboi viivat 318 nm ja 517 nm" or "viiva D (827 nm) päättyy viritystilalle 2,40 eV"; or (2) keep the data and state in the solution (and in part b) that two mirror-image diagrams fit, show both, and add that the sixth line is 1,10 eV in either case.
 
 ## Polish
-- exercises/solutions.md:109 (L3-02 Järkevyys) — the sentence "Näin pienellä energiaerolla molekyyli ei voi absorboida näkyvää valoa tästä tilasta" reads as if one small gap rules out all visible absorption. Say instead that this vibrational transition matches infrared, not visible light, e.g. "tämä siirtymä vastaa infrapunaa eikä näkyvää valoa".
+- L1-06 correct option and Periaate: "kylmän kaasun" → "viileämmän kaasun". Dark lines need the gas to be cooler than the source behind it, not cold.
+- L2-06 a): the Ca line 393,4 nm is from ionised calcium (Ca II). Optionally add "(kalsiumioni)".
 
 ## Checked
-- I recomputed all 12 answers with my own formulas in one script. Each agrees with answers.py and exercises.json to within 0,4 %: 2,4701 eV, 433,57 nm, 4,5701·10¹⁴ Hz, 1,89 eV, 655,60 nm, 486,27 nm, 670,27 nm, 121,57 nm, 2,1053 eV, 364,70 nm, 82,666 meV, 564,34 nm.
-- The only change since round 2 is the L2-01 reasonableness check, which now states hc ≈ 1240 eV·nm with units. It is correct.
-- L2-02: the pair differences are 1,85, 2,15 and 4,00 eV. The smallest gives the longest line, 670 nm (red); the others are 577 nm and 310 nm.
-- L2-03: 10,2 eV gives 122 nm, which is UV. The conclusion that cold H is transparent to visible light holds.
-- L3-01: the Balmer limit is 364,7 nm, below the 410 nm line and just under 380 nm.
-- L3-02: the CO₂ 15,0 µm band gives 82,7 meV. The ×30 estimate against 500 nm is a real check.
-- L3-03: the task states that no energy becomes heat. The 1,20 eV photon is IR (1033 nm), the second photon carries 2,197 eV, so 564 nm. Rounding to 0,01 eV in the subtraction keeps 3 significant figures.
-- The real lines are correct: He 502 nm (501,6), Na 5,09·10¹⁴ Hz, which is 589 nm, and H 656/486/434 nm.
-- Every solution is complete: given, asked, principle, symbolic formula, conversion by substitution, rounding reason and reasonableness check. Signs and units are right, and the tolerance of 0,02 fits the 3-significant-figure data.
-- Notation (E_y, E_a, ΔE, hc/λ) matches the brief. Scope stays inside FY8.
+- Recomputed every new answer in one script with my own formulas: L2-05 2,2698 eV (Hg lines within 0,2 nm) ✓; L2-06 hc/λ = 2,551 eV → −0,849 eV = n = 4 ✓, and lines A, B, C, D, F, G identified with E (527,1 nm) left unidentified ✓; L2-07 least-squares λ = 12,01 x + 299,6 → 496,6 nm, residuals ≤ 0,76 nm ✓; L3-04 brute-force search of all level triples, both schemes give 1,10 eV → 1127 nm ✓; L3-05 heat shares A 18,9 %, B 22,1 %, C 15,1 % → B 22,1 % ✓, and the energies agree with the solution ✓.
+- MC L1-06 and L1-08: exactly one correct option, and each distractor is wrong with correct feedback ✓.
+- The data are labelled esimerkkiaineisto, scope is FY8, and every new task has a complete solution. The levels fit and the tasks follow the plan in docs/exercise-bank/FY8.md.
+- Spot-checked the render at 1280 px (L3-04 table and solution): clean.
+- Content hash 3234dc70c5ccf41b is the same at the start and the end.
