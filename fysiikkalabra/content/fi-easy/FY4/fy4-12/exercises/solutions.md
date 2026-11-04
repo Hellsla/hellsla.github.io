@@ -120,3 +120,89 @@
 **Sijoitus:** Juurrettava on $v^2 + 2\,a\,D = (8{,}0\,\text{m/s})^2 + 2 \cdot 2{,}0\,\text{m/s}^2 \cdot 180\,\text{m} = 784\,\text{m}^2/\text{s}^2$. Siis $t = \dfrac{-8{,}0\,\text{m/s} + 28\,\text{m/s}}{2{,}0\,\text{m/s}^2} = 10\,\text{s}$
 **Vastaus:** $10\,\text{s}$. Vastauksessa on kaksi merkitsevää numeroa kuten lähtöarvoissa. Negatiivinen juuri $-18\,\text{s}$ olisi ennen lähtöä, eikä se kuulu tilanteeseen.
 **Järkevyys:** Skootteri on ajanut $\tfrac12 \cdot 2{,}0\,\text{m/s}^2 \cdot (10\,\text{s})^2 = 100\,\text{m}$ ja pyöräilijä $8{,}0\,\text{m/s} \cdot 10\,\text{s} = 80\,\text{m}$. Yhteensä $100\,\text{m} + 80\,\text{m} = 180\,\text{m}$, eli kappaleiden välimatka on kulunut loppuun.
+
+## fy4-12-L1-06
+**Kysytty:** mitä $(t,v)$-kuvaajien leikkauspiste kertoo.
+**Periaate:** $(t,v)$-kuvaajan piste kertoo kappaleen nopeuden hetkellä $t$. Kun kaksi kuvaajaa leikkaa, kummallakin kappaleella on silloin sama nopeus. Paikan määrää koko aiempi liike, eli nopeuskuvaajan alle jäävä pinta-ala. Yksi nopeuden arvo ei riitä.
+**Mallivastaus:** Autojen nopeudet ovat hetkellä $4{,}0\,\text{s}$ yhtä suuret, mutta paikat voivat olla eri. Kohtaamista ei voi lukea tästä kuvaajasta. Siihen tarvitaan $(t,x)$-kuvaaja tai paikkafunktioiden vertailu. Väite, että autot ovat samassa paikassa, sekoittaa nopeuden ja paikan. Väite samasta matkasta ei päde, koska matka on pinta-ala eikä yksi arvo. Väite samoista kiihtyvyyksistä ei päde, koska kiihtyvyys on kulmakerroin. Leikkaavilla viivoilla kulmakertoimet ovat erilaiset.
+**Kuvaajan lukeminen:** Vaaka-akselilla on aika ja pystyakselilla nopeus. Leikkauspisteen pystykoordinaatti on kummankin auton yhteinen nopeus. Vaakakoordinaatti on hetki $4{,}0\,\text{s}$.
+
+## fy4-12-L1-07
+**Annettu:** kärry A: $x_\text{A} = v_\text{A}\,t$, kun $v_\text{A} = 4{,}0\,\text{m/s}$; kärry B lähtee viiveellä $t_0 = 3{,}0\,\text{s}$ nopeudella $v_\text{B} = 7{,}0\,\text{m/s}$; molemmat samasta paikasta
+**Kysytty:** hetki $t$ (A:n lähdöstä laskettuna) yksikössä $\text{s}$
+**Periaate:** Kohtaamisessa paikat ovat yhtä suuret. Kun kello näyttää hetkeä $t$, B on liikkunut vasta ajan $t - t_0$. Siksi B:n paikka on $v_\text{B}\,(t - t_0)$.
+**Kaava:** $v_\text{A}\,t = v_\text{B}\,(t - t_0)$, joten $(v_\text{B} - v_\text{A})\,t = v_\text{B}\,t_0$ ja $t = \dfrac{v_\text{B}\,t_0}{v_\text{B} - v_\text{A}}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $t = \dfrac{7{,}0\,\text{m/s} \cdot 3{,}0\,\text{s}}{7{,}0\,\text{m/s} - 4{,}0\,\text{m/s}} = \dfrac{21\,\text{m}}{3{,}0\,\text{m/s}} = 7{,}0\,\text{s}$
+**Vastaus:** $7{,}0\,\text{s}$ A:n lähdöstä laskettuna. Vastauksessa on kaksi merkitsevää numeroa kuten lähtöarvoissa.
+**Järkevyys:** A on hetkellä $7{,}0\,\text{s}$ paikassa $4{,}0\,\text{m/s} \cdot 7{,}0\,\text{s} = 28\,\text{m}$. B on paikassa $7{,}0\,\text{m/s} \cdot (7{,}0\,\text{s} - 3{,}0\,\text{s}) = 28\,\text{m}$. Paikat ovat samat. Kun B lähtee, A on jo $12\,\text{m}$ edellä. B lähestyy nopeudella $3{,}0\,\text{m/s}$, joten $12\,\text{m}$ vie $4{,}0\,\text{s}$. Kohtaaminen on siis hetkellä $3{,}0\,\text{s} + 4{,}0\,\text{s}$.
+
+## fy4-12-L1-08
+**Kysytty:** mikä ehto ratkaisee ohitushetken.
+**Periaate:** Ohitus on kohtaaminen. Ohitushetkellä A ja B ovat samassa paikassa. Siksi kummankin paikka kirjoitetaan ajan funktiona ja paikat merkitään yhtä suuriksi, $x_\text{A}(t) = x_\text{B}(t)$. Yhtälön ratkaisu antaa hetken.
+**Mallivastaus:** Ohitushetkellä kappaleiden paikat ovat yhtä suuret samalla hetkellä, eli ne ovat samassa kohdassa. Yhtä suuret nopeudet eivät ratkaise ohitusta, koska silloin etumatka on suurimmillaan tai pienimmillään, ei nolla. Yhtä suuret kiihtyvyydet eivät liity paikkaan, ja B:llä kiihtyvyys on nolla. Yhtä suuret matkat eivät riitä, jos lähtöpaikat ovat eri. Paikka on lähtöpaikka lisättynä kuljetulla matkalla.
+
+## fy4-12-L2-05
+**Annettu:** taulukosta: A: $x_\text{A} = 3{,}0\,\text{m}$ hetkellä $0\,\text{s}$ ja $20{,}4\,\text{m}$ hetkellä $5{,}0\,\text{s}$; B: $x_\text{B} = 45{,}0\,\text{m}$ hetkellä $0\,\text{s}$ ja $32{,}4\,\text{m}$ hetkellä $5{,}0\,\text{s}$; tasainen liike
+**Kysytty:** kohtaamishetki $t$ yksikössä $\text{s}$
+**Periaate:** Tasaisessa liikkeessä nopeus on paikan muutos jaettuna ajan muutoksella. Kun nopeudet tunnetaan, paikat ovat $x = x_0 + v\,t$. Juoksijat kohtaavat, kun $x_\text{A} = x_\text{B}$. Taulukon pisteet poikkeavat suorasta hieman mittausvirheen takia. Siksi käytetään ensimmäistä ja viimeistä riviä.
+**Kuvaajan lukeminen:** Nopeudet taulukon päätepisteistä: $v_\text{A} = \dfrac{20{,}4\,\text{m} - 3{,}0\,\text{m}}{5{,}0\,\text{s} - 0} = 3{,}48\,\text{m/s}$ ja $v_\text{B} = \dfrac{32{,}4\,\text{m} - 45{,}0\,\text{m}}{5{,}0\,\text{s} - 0} = -2{,}52\,\text{m/s}$. B:n nopeus on negatiivinen, koska B juoksee A:ta kohti.
+**Kaava:** $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$, joten $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $t = \dfrac{45{,}0\,\text{m} - 3{,}0\,\text{m}}{3{,}48\,\text{m/s} - (-2{,}52\,\text{m/s})} = \dfrac{42{,}0\,\text{m}}{6{,}00\,\text{m/s}} = 7{,}0\,\text{s}$
+**Vastaus:** $7{,}0\,\text{s}$. Vastauksessa on kaksi merkitsevää numeroa, koska mittauksessa on hajontaa.
+**Järkevyys:** Kohtaamispaikka on $3{,}0\,\text{m} + 3{,}48\,\text{m/s} \cdot 7{,}0\,\text{s} = 27{,}4\,\text{m}$. B:n paikka samalla hetkellä on $45{,}0\,\text{m} - 2{,}52\,\text{m/s} \cdot 7{,}0\,\text{s} = 27{,}4\,\text{m}$. Paikka on lähtöpaikkojen välissä, kuten pitää. Hetki $7{,}0\,\text{s}$ on myöhemmin kuin taulukon aikaväli. Tulos perustuu siis suoran jatkamiseen. Se on järkevää tasaisessa liikkeessä.
+
+## fy4-12-L2-06
+**Annettu:** pyöräilijä $x_{0\text{B}} = 12\,\text{m}$, $v = 4{,}0\,\text{m/s}$ (tasainen); auto $x_0 = 0$, $v_0 = 0$, $a = 2{,}0\,\text{m/s}^2$
+**Kysytty:** mikä oppilaan ratkaisussa on väärin; oikea ohitushetki $t$ yksikössä $\text{s}$
+**Periaate:** Ohitus on kohtaaminen, jossa paikat ovat yhtä suuret, $x_\text{A} = x_\text{B}$. Auton paikka on $\tfrac12\,a\,t^2$ ja pyöräilijän $x_{0\text{B}} + v\,t$. Auton liike on tasaisesti kiihtyvää, joten yhtälö on toisen asteen yhtälö.
+**Kaava:** $\tfrac12\,a\,t^2 = x_{0\text{B}} + v\,t$, eli $\tfrac12\,a\,t^2 - v\,t - x_{0\text{B}} = 0$, ja positiivinen juuri on $t = \dfrac{v + \sqrt{v^2 + 2\,a\,x_{0\text{B}}}}{a}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** Juurrettava on $v^2 + 2\,a\,x_{0\text{B}} = 16\,\text{m}^2/\text{s}^2 + 48\,\text{m}^2/\text{s}^2 = 64\,\text{m}^2/\text{s}^2$. Siis $t = \dfrac{4{,}0\,\text{m/s} + 8{,}0\,\text{m/s}}{2{,}0\,\text{m/s}^2} = 6{,}0\,\text{s}$
+**Vastaus:** $6{,}0\,\text{s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
+**Järkevyys:** Auto on hetkellä $6{,}0\,\text{s}$ paikassa $\tfrac12 \cdot 2{,}0\,\text{m/s}^2 \cdot (6{,}0\,\text{s})^2 = 36\,\text{m}$. Pyöräilijä on paikassa $12\,\text{m} + 4{,}0\,\text{m/s} \cdot 6{,}0\,\text{s} = 36\,\text{m}$. Paikat ovat samat. Auton nopeus on silloin $12\,\text{m/s}$, kolme kertaa pyöräilijän nopeus. Auto ohittaa siis nopeampana.
+**Mallivastaus virheestä:** Oppilas asetti nopeudet yhtä suuriksi. Kohtaamisessa yhtä suuria ovat kuitenkin paikat, ei nopeudet. Oppilaan laskema hetki $2{,}0\,\text{s}$ on hetki, jolloin auton ja pyöräilijän nopeudet ovat yhtä suuret. Silloin auto on paikassa $4{,}0\,\text{m}$ ja pyöräilijä paikassa $20\,\text{m}$. Pyöräilijä on siis $16\,\text{m}$ edellä. Tämä on etumatkan suurin arvo, ei ohitus.
+
+## fy4-12-L2-07
+**Annettu:** taulukosta: A: $v_\text{A} = 12{,}0\,\text{m/s}$ koko ajan; B: nopeus kasvaa $4{,}0\,\text{m/s}$ kahdessa sekunnissa, $v_\text{B} = 0$ hetkellä $0\,\text{s}$ ja $20{,}0\,\text{m/s}$ hetkellä $10\,\text{s}$; lähtö samasta paikasta
+**Kysytty:** hetki, jolloin välimatka on suurimmillaan, ja välimatka $s_\text{max}$ yksikössä $\text{m}$
+**Periaate:** B lähtee samasta paikasta hitaampana, joten A on koko ajan edellä. Niin kauan kuin $v_\text{A} > v_\text{B}$, välimatka kasvaa. Kun B on nopeampi, välimatka pienenee. Välimatka on siis suurimmillaan, kun nopeudet ovat yhtä suuret. Välimatka on kuvaajien väliin jäävä pinta-ala siihen hetkeen asti.
+**Kuvaajan lukeminen:** A:n kuvaaja on vaakasuora viiva kohdassa $12{,}0\,\text{m/s}$. B:n kuvaaja on origosta nouseva suora. Sen kulmakerroin on $a_\text{B} = \dfrac{4{,}0\,\text{m/s}}{2{,}0\,\text{s}} = 2{,}0\,\text{m/s}^2$. Viivat leikkaavat hetkellä $t = 6{,}0\,\text{s}$. Silloin taulukossa kummankin nopeus on $12{,}0\,\text{m/s}$.
+**Kaava:** Pinta-ala on kolmio, jonka kanta on $t$ ja korkeus $v_\text{A}$: $s_\text{max} = \tfrac12\,t\,v_\text{A}$. Sama saadaan paikkojen erotuksesta $v_\text{A}\,t - \tfrac12\,a_\text{B}\,t^2$.
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $s_\text{max} = \tfrac12 \cdot 6{,}0\,\text{s} \cdot 12{,}0\,\text{m/s} = 36\,\text{m}$
+**Vastaus:** Suurin välimatka on $36\,\text{m}$, ja se on hetkellä $6{,}0\,\text{s}$. Vastauksessa on kaksi merkitsevää numeroa kuten nopeuksissa.
+**Järkevyys:** Paikkojen erotuksesta: A on paikassa $12{,}0\,\text{m/s} \cdot 6{,}0\,\text{s} = 72\,\text{m}$. B on paikassa $\tfrac12 \cdot 2{,}0\,\text{m/s}^2 \cdot (6{,}0\,\text{s})^2 = 36\,\text{m}$. Ero on siis $36\,\text{m}$. Hetkillä $4{,}0\,\text{s}$ ja $8{,}0\,\text{s}$ ero on kummallakin $32\,\text{m}$, joten $36\,\text{m}$ on suurin.
+
+## fy4-12-L3-04
+**Annettu:** molemmat $v_0 = 20\,\text{m/s}$; kuorma-auton pituus $L_\text{k} = 12\,\text{m}$, henkilöauton pituus $L_\text{h} = 5{,}0\,\text{m}$, alkuväli (etupää – takapää) $10\,\text{m}$; henkilöauton kiihtyvyys $a = 1{,}5\,\text{m/s}^2$; vastaantulevan nopeus $v_\text{v} = 20\,\text{m/s}$; nopeusrajoitus $80\,\text{km/h}$
+**Kysytty:** ohituksen kesto $t$ ja matka $s_\text{h}$; pienin etäisyys $d$ yksikössä $\text{m}$; loppunopeus rajoitukseen verrattuna
+**Periaate:** Tässä on kolme ajatusta. Ensimmäinen: autojen liikkeet kuvataan suhteessa toisiinsa. Kuorma-auto kulkee tasaisesti nopeudella $20\,\text{m/s}$. Henkilöauto aloittaa samasta nopeudesta, joten ero syntyy vain kiihtyvyydestä. Etenemisen ero on $\tfrac12\,a\,t^2$. Toinen: ohitus on valmis, kun etenemisen ero on yhtä suuri kuin etupään ja takapään väli. Se on kuorma-auton pituus ja henkilöauton pituus yhteensä. Kolmas: autot eivät ehdi kohdata, jos henkilöauton ja vastaantulevan kulkemat matkat ovat yhteensä enintään $d$.
+**Kaava:** Tarvittava suhteellinen matka on $s_\text{rel} = 10\,\text{m} + L_\text{k} + L_\text{h}$ ja $\tfrac12\,a\,t^2 = s_\text{rel}$, joten $t = \sqrt{\dfrac{2\,s_\text{rel}}{a}}$. Henkilöauton matka on $s_\text{h} = v_0\,t + \tfrac12\,a\,t^2$, vastaantulevan matka on $s_\text{v} = v_\text{v}\,t$ ja $d_\text{min} = s_\text{h} + s_\text{v}$. Loppunopeus on $v = v_0 + a\,t$.
+**Muunnokset:** $80\,\text{km/h} = 80 : 3{,}6\,\text{m/s} = 22{,}2\,\text{m/s}$. Muut suureet ovat SI-yksiköissä.
+**Sijoitus:** $s_\text{rel} = 10\,\text{m} + 12\,\text{m} + 5{,}0\,\text{m} = 27\,\text{m}$. Siis $t = \sqrt{\dfrac{2 \cdot 27\,\text{m}}{1{,}5\,\text{m/s}^2}} = \sqrt{36\,\text{s}^2} = 6{,}0\,\text{s}$.
+Henkilöauton matka:
+$s_\text{h} = 20\,\text{m/s} \cdot 6{,}0\,\text{s} + \tfrac12 \cdot 1{,}5\,\text{m/s}^2 \cdot (6{,}0\,\text{s})^2 = 120\,\text{m} + 27\,\text{m} = 147\,\text{m}$.
+Vastaantulevan matka: $s_\text{v} = 20\,\text{m/s} \cdot 6{,}0\,\text{s} = 120\,\text{m}$. Siis $d_\text{min} = 147\,\text{m} + 120\,\text{m} = 267\,\text{m}$.
+Loppunopeus: $v = 20\,\text{m/s} + 1{,}5\,\text{m/s}^2 \cdot 6{,}0\,\text{s} = 29\,\text{m/s}$.
+**Vastaus:** Pienin etäisyys on $d = 267\,\text{m}$ (kolme merkitsevää numeroa, koska tulos on kahden kolminumeroisen summa). Ohitus kestää $6{,}0\,\text{s}$, ja henkilöauto ajaa sinä aikana $147\,\text{m}$. Etäisyys $300\,\text{m}$ riittää laskennallisesti. Varaa jää $33\,\text{m}$. Ohituksen lopussa se on vain noin $0{,}7\,\text{s}$ kahden auton yhteisellä lähestymisnopeudella $\left(33\,\text{m} : 49\,\text{m/s}\right)$. Loppunopeus $29\,\text{m/s} = 104\,\text{km/h}$ ylittää rajoituksen $80\,\text{km/h}$. Ohitus ei siis ole sallittu, vaikka etäisyys riittäisi.
+**Mallivastaus perustelusta:** Ohitusta ei kannata tehdä. Laskennallinen varaväli on liian pieni, koska jo pieni virhe kiihtyvyydessä tai vastaantulevan nopeudessa kuluttaa sen. Lisäksi henkilöauton pitäisi ylittää nopeusrajoitus $80\,\text{km/h}$ noin $24\,\text{km/h}$:lla. Malli olettaa vakiokiihtyvyyden ja tarkat pituudet, joten se on karkea.
+**Järkevyys:** Henkilöauto on ajanut $147\,\text{m}$ ja kuorma-auto $20\,\text{m/s} \cdot 6{,}0\,\text{s} = 120\,\text{m}$. Ero on $27\,\text{m}$, kuten tarvitaan. Henkilöauton keskinopeus on $147\,\text{m} : 6{,}0\,\text{s} = 24{,}5\,\text{m/s}$. Se on alkunopeuden $20\,\text{m/s}$ ja loppunopeuden $29\,\text{m/s}$ keskiarvo.
+
+## fy4-12-L3-05
+**Annettu:** pyöräilijä: taulukosta $x = 0$ hetkellä $0\,\text{s}$ ja $x = 23{,}9\,\text{m}$ hetkellä $4{,}0\,\text{s}$, tasainen liike; auto lähtee levosta viiveellä $t_0 = 1{,}5\,\text{s}$ pysäytysviivalta, $a = 2{,}0\,\text{m/s}^2$; rajoitus $40\,\text{km/h}$
+**Kysytty:** pyöräilijän nopeus $v$; ohituspaikka $x$ (yksikkö $\text{m}$) ja ohitushetki $t$; auton nopeus ohitushetkellä rajoitukseen verrattuna
+**Periaate:** Pyöräilijän nopeus saadaan taulukon paikan muutoksesta. Auton liike alkaa hetkellä $t_0$, joten sen liikeaika on $t - t_0$. Ohituksessa paikat ovat yhtä suuret, ja yhtälö on toisen asteen yhtälö. Lopuksi auton nopeus verrataan rajoitukseen. Näin nähdään, onko malli todellisuudessa järkevä.
+**Kuvaajan lukeminen:** Taulukon pisteet ovat lähes suoralla. Paikka kasvaa noin $6{,}0\,\text{m}$ joka sekunti, joten liike on tasaista. Päätepisteistä $v = \dfrac{23{,}9\,\text{m} - 0}{4{,}0\,\text{s} - 0} = 5{,}975\,\text{m/s} \approx 6{,}0\,\text{m/s}$.
+**Kaava:** Pyöräilijä $x_\text{P} = v\,t$ ja auto $x_\text{A} = \tfrac12\,a\,(t - t_0)^2$. Merkitään $\tau = t - t_0$, jolloin $x_\text{P} = v\,(\tau + t_0)$ ja ohituksessa $\tfrac12\,a\,\tau^2 - v\,\tau - v\,t_0 = 0$. Positiivinen juuri on $\tau = \dfrac{v + \sqrt{v^2 + 2\,a\,v\,t_0}}{a}$.
+**Muunnokset:** $40\,\text{km/h} = 40 : 3{,}6\,\text{m/s} = 11{,}1\,\text{m/s}$. Muut suureet ovat SI-yksiköissä.
+**Sijoitus:** Juurrettava on $v^2 + 2\,a\,v\,t_0 = 36\,\text{m}^2/\text{s}^2 + 2 \cdot 2{,}0 \cdot 6{,}0 \cdot 1{,}5\,\text{m}^2/\text{s}^2 = 72\,\text{m}^2/\text{s}^2$. Neliöjuuri on $8{,}49\,\text{m/s}$. Siis
+$\tau = \dfrac{6{,}0\,\text{m/s} + 8{,}49\,\text{m/s}}{2{,}0\,\text{m/s}^2} = 7{,}24\,\text{s}$,
+$t = \tau + t_0 = 7{,}24\,\text{s} + 1{,}5\,\text{s} = 8{,}74\,\text{s}$.
+Ohituspaikka:
+$x = v\,t = 6{,}0\,\text{m/s} \cdot 8{,}74\,\text{s} = 52{,}4\,\text{m}$.
+Auton nopeus ohituksessa: $v_\text{A} = a\,\tau = 2{,}0\,\text{m/s}^2 \cdot 7{,}24\,\text{s} = 14{,}5\,\text{m/s}$.
+**Vastaus:** Auto ohittaa pyöräilijän noin $52\,\text{m}$ päässä pysäytysviivasta, hetkellä $8{,}7\,\text{s}$ pyöräilijän ohituksesta. Vastauksessa on kaksi merkitsevää numeroa kuten nopeudessa ja kiihtyvyydessä. Auton nopeus on silloin $14{,}5\,\text{m/s} \approx 52\,\text{km/h}$. Se ylittää rajoituksen $40\,\text{km/h}$. Malli ei siis noudata rajoitusta.
+**Mallivastaus rajoituksen vaikutuksesta:** Malli olettaa, että auto kiihtyy koko ajan samalla kiihtyvyydellä. Rajoitus $11{,}1\,\text{m/s}$ saavutetaan jo $5{,}6\,\text{s}$ kuluttua lähdöstä, ennen laskettua ohitushetkeä. Silloin kiihdytys loppuisi ja auto ajaisi tasaisella nopeudella. Ohitus tapahtuisi myöhemmin ja kauempana kuin laskettu $52\,\text{m}$. Auto on silti pyöräilijää nopeampi ($11{,}1\,\text{m/s} > 6{,}0\,\text{m/s}$), joten se ohittaa lopulta.
+**Järkevyys:** Auto on liikkunut $\tfrac12 \cdot 2{,}0\,\text{m/s}^2 \cdot (7{,}24\,\text{s})^2 = 52{,}4\,\text{m}$. Se on sama kuin pyöräilijän paikka, joten paikat täsmäävät. Auton nopeus $14{,}5\,\text{m/s}$ on suurempi kuin pyöräilijän $6{,}0\,\text{m/s}$, kuten ohituksessa pitää.
