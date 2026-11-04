@@ -39,6 +39,74 @@
       "answer": -270,
       "unit": "°C",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L1-06",
+      "level": 1,
+      "text": "A gas is in a sealed cylinder with a movable piston. The gas is chosen as the thermodynamic system. The gas can be heated and compressed, but no matter can leave the cylinder and no more can enter. Which of the following describes this system correctly?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Closed, because no matter crosses the boundary of the system; energy can still be transferred.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Open, because the piston moves; the volume can change, so matter can cross the boundary.",
+          "feedback": "The motion of the piston changes the volume of the system, but matter still cannot get out or in. An open system is recognised by matter crossing the boundary, not by a change in volume."
+        },
+        {
+          "text": "Open, because heating transfers energy across the boundary; in a closed system energy is not transferred.",
+          "feedback": "A closed system can exchange energy with its surroundings. The only thing that matters is whether matter crosses the boundary."
+        },
+        {
+          "text": "Closed, because no matter crosses the boundary of the system; energy can still be transferred.",
+          "feedback": "Correct: a system is closed when no matter can cross its boundary. Energy can still cross the boundary, and by moving the piston the volume can change too.",
+          "correct": true
+        },
+        {
+          "text": "Closed, because the temperature stays the same; if the temperature changed, the system would be open.",
+          "feedback": "The temperature can change even in a closed system, for example when the gas is heated. The type of system depends on whether matter crosses the boundary, not on the temperature."
+        }
+      ]
+    },
+    {
+      "id": "fy3-3-L1-07",
+      "level": 1,
+      "text": "The temperature of a freezer is $-18\\,{}^\\circ\\text{C}$. What is the temperature in kelvins?",
+      "answer": 255,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L1-08",
+      "level": 1,
+      "text": "A gas is in a closed, rigid container. The container is heated. Which of the following quantities of the gas stays the same?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The volume, because the walls of a rigid container do not move when it is heated.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The pressure, because no gas can escape from the container when it is heated.",
+          "feedback": "When the temperature rises, the particles move faster and hit the wall more often and harder, so the pressure rises. The closed container only keeps the number of particles the same."
+        },
+        {
+          "text": "The volume, because the walls of a rigid container do not move when it is heated.",
+          "feedback": "Correct: the volume of a rigid container stays the same, so the volume of the gas does not change even though the temperature and the pressure change.",
+          "correct": true
+        },
+        {
+          "text": "The average kinetic energy of the particles, because the number of particles does not change.",
+          "feedback": "In a dilute gas the average kinetic energy is directly proportional to the temperature in kelvins, so it grows with the temperature. The number of particles does not affect it."
+        },
+        {
+          "text": "The temperature, because the walls of the container prevent the gas from warming up.",
+          "feedback": "The walls do not prevent warming: heating raises the temperature of the gas, and it is the rise in temperature that changes the other state variables."
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +142,137 @@
       "answer": 4.0,
       "unit": "times",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L2-05",
+      "level": 2,
+      "text": "Thermometer A is compared with an accurate reference thermometer in a calibration. Both are kept in the same water bath at different temperatures. The table is example data.\n\na) Calculate the average difference between the readings of thermometer A and the reference, $\\theta_\\text{A} - \\theta_\\text{ref}$, in kelvins.\n\nb) Is the difference systematic or random? Justify using the table. A systematic error deviates in the same direction in every measurement, a random error varies in one direction and the other.\n\nc) Thermometer A shows the temperature of bath water as $38.6\\,{}^\\circ\\text{C}$. What is the corrected temperature?\n\nEnter the result of part a) in the answer box.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 1.5,
+      "unit": "K",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Calibration of thermometer A (example data)",
+        "columns": [
+          "$\\theta_\\text{ref}\\,({}^\\circ\\text{C})$",
+          "$\\theta_\\text{A}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1.4"
+          ],
+          [
+            "20.0",
+            "21.7"
+          ],
+          [
+            "40.0",
+            "41.3"
+          ],
+          [
+            "60.0",
+            "61.6"
+          ],
+          [
+            "80.0",
+            "81.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-3-L2-06",
+      "level": 2,
+      "text": "Hot water was poured into a thermos flask, and the temperature of the water was measured once an hour. The room temperature was $20.0\\,{}^\\circ\\text{C}$ the whole time. The table is example data.\n\na) Calculate the drop in the temperature of the water during the first hour and during the last hour.\n\nb) How many times greater was the drop in the first hour than in the last hour?\n\nc) Using the table, explain why the drop in temperature slows down as the water approaches room temperature. Hint: calculate the drop of each hour divided by the temperature difference to the room at the start of that hour.\n\nEnter the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.7,
+      "unit": "times",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Temperature of the water in a thermos flask (example data)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$\\theta\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "80.0"
+          ],
+          [
+            "1",
+            "69.9"
+          ],
+          [
+            "2",
+            "61.3"
+          ],
+          [
+            "3",
+            "54.4"
+          ],
+          [
+            "4",
+            "48.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-3-L2-07",
+      "level": 2,
+      "text": "A student moves a liquid thermometer at room temperature into hot water whose temperature is kept constant, and reads the thermometer every $10\\,\\text{s}$. The reading settles at $60.2\\,{}^\\circ\\text{C}$. The table is example data.\n\na) From the times in the table, choose the earliest at which the reading differs from the settled reading by less than $0.5\\,\\text{K}$. For how many seconds at least must the thermometer be kept in the water before reading it?\n\nb) Explain why a reading taken too early is too low and what the thermometer is then measuring.\n\nEnter the result of part a) in the answer box.",
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "answer": 40,
+      "unit": "s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Thermometer reading in the water (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$\\theta\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "21.0"
+          ],
+          [
+            "10",
+            "48.2"
+          ],
+          [
+            "20",
+            "56.6"
+          ],
+          [
+            "30",
+            "59.3"
+          ],
+          [
+            "40",
+            "59.9"
+          ],
+          [
+            "50",
+            "60.2"
+          ],
+          [
+            "60",
+            "60.2"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -98,6 +297,72 @@
       "level": 3,
       "text": "The temperature of a gas is $20.0\\,{}^\\circ\\text{C}$. The gas is cooled until the average kinetic energy of its particles is half of the original. The average kinetic energy is directly proportional to the temperature in kelvins. What is the final temperature in degrees Celsius?",
       "answer": -127,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L3-04",
+      "level": 3,
+      "text": "The body temperature of a person was measured five times with three methods in a short time. A digital thermometer placed in the mouth is the reference method here. The table is example data.\n\na) Calculate the mean of the readings of each method. Write the sum before dividing. You check the other parts against the solution.\n\nb) Calculate the difference between the mean of the forehead thermometer and the mean of the reference method, $\\theta_\\text{mouth} - \\theta_\\text{forehead}$, in kelvins.\n\nc) Estimate the spread of each method by half of the range of its readings. Is the difference of the forehead thermometer a systematic or a random error? Justify. A systematic error deviates in the same direction in every measurement, a random error varies in one direction and the other.\n\nd) The temperature of the person measured in the mouth is $37.6\\,{}^\\circ\\text{C}$, and the limit for a fever is $37.5\\,{}^\\circ\\text{C}$. Assume that the difference of the forehead thermometer is always the same. What would the forehead thermometer show on average, and would the fever be detected?\n\nEnter the result of part b) in the answer box.",
+      "kind": [
+        "data",
+        "error",
+        "reasoning"
+      ],
+      "answer": 0.6,
+      "unit": "K",
+      "tolerance": 0.1,
+      "data": {
+        "caption": "Body temperature with three methods (example data)",
+        "columns": [
+          "Measurement",
+          "$\\theta_\\text{ear}\\,({}^\\circ\\text{C})$",
+          "$\\theta_\\text{forehead}\\,({}^\\circ\\text{C})$",
+          "$\\theta_\\text{mouth}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "36.9",
+            "36.2",
+            "37.0"
+          ],
+          [
+            "2",
+            "37.1",
+            "36.7",
+            "37.0"
+          ],
+          [
+            "3",
+            "36.8",
+            "36.0",
+            "37.1"
+          ],
+          [
+            "4",
+            "37.0",
+            "36.5",
+            "36.9"
+          ],
+          [
+            "5",
+            "37.2",
+            "36.6",
+            "37.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-3-L3-05",
+      "level": 3,
+      "text": "A steel, rigid and sealed air tank is filled at a temperature of $20.0\\,{}^\\circ\\text{C}$ so that the gauge pressure of the tank is $600\\,\\text{kPa}$. The atmospheric pressure is $101\\,\\text{kPa}$, and gauge pressure means the difference between the total pressure and the atmospheric pressure. The safety valve of the tank opens when the gauge pressure is $900\\,\\text{kPa}$. Assume that no air leaks and that the total pressure is directly proportional to the temperature in kelvins. The values are example data.\n\na) The tank is left in a hot car, where its temperature rises to $60.0\\,{}^\\circ\\text{C}$. Calculate the total pressure and the gauge pressure of the tank.\n\nb) At what temperature would the safety valve open?\n\nc) By what percentage does the average kinetic energy of the air particles increase from $20.0\\,{}^\\circ\\text{C}$ to $60.0\\,{}^\\circ\\text{C}$? Compare the relative increase of the total pressure and of the gauge pressure and justify which of them is proportional to the temperature in kelvins.\n\nEnter the result of part b) in degrees Celsius in the answer box.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 145,
       "unit": "°C",
       "tolerance": 0.02
     }
