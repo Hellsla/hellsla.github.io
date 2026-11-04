@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 39b64ad79916fa8d
+CONTENT-HASH: 5a9d2e56890d8159
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the English text already matched fi in every number and was natural)
 
 ## Polish
-- lessons/FY1/fy1-3/answers.py:31 - comment says "relative error"; rename to "relative uncertainty" (comment only, number right).
+(none)
 
 ## Checked
-- Delta review: the only change since the last PASS is that each solution's Formula line no longer repeats the formula ("already solved for the quantity to find"). No number, symbol or physics changed.
-- All numbers in exercises.json (texts, answers, units, tolerances) and solutions.md equal the Finnish source (scripted comparison, decimal comma normalised).
-- All 12 answers recomputed: 0.51 s, +0.3 cm, 0.35 s, 47.5 g, 0.5 mm, 4.83 %, 10.67 mm, 12.4 cm, 10, -0.06 s, 2.0 um, 0.26 cm.
-- Terms follow the guardrails: signed measurement error, positive uncertainty, half the range as scatter estimate, relative uncertainty.
-- Translation (English): same physics and symbols as the source; no Finnish words left.
-- check_i18n.py: 0 errors for en.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and all older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, data cells, and every number in texts, choices, feedback and solutions.md are identical (decimal point in en where fi has comma; solutions.md has 613 numbers each, equal).
+- Units: no Finnish left (grep); display units are translated (times / swings / g/cm³ as appropriate).
+- L1-06: one correct option, distractor feedback names the right error type (random, random, gross) as in fi.
+- Re-derived key answers: L1-07 5.43 cm, L2-05 1.82 s, L2-06 +0.94 ml, L2-07 N=14, L3-04 2.41 s (2.48 s with all eight), L3-05 gap 0.04 g/cm³; all agree with fi.
+- check_i18n.py en: 0 errors for fy1-3; lint_lesson.py clean.

@@ -59,11 +59,11 @@
         },
         {
           "text": "A model is an observation that has been repeated so many times that it certainly holds in all conditions.",
-          "feedback": "A repeated observation is still an observation. A model describes a phenomenon and produces predictions, and its validity is limited to certain conditions: for example, a falling model that ignores air resistance does not describe the fall of a feather."
+          "feedback": "A repeated observation is still an observation. A model describes a phenomenon and produces predictions, and its validity is limited to certain conditions: for example, a free-fall model that ignores air resistance does not describe the fall of a feather."
         },
         {
           "text": "A model is a theory that cannot be changed any more once it has been found to work.",
-          "feedback": "A model is not unchangeable: it is valid only in the conditions where it has been tested. When a new measurement differs from the prediction, the model is corrected or its range of validity is limited. For example, a falling model without air resistance describes a stone but not a feather."
+          "feedback": "A model is not unchangeable: it is valid only in the conditions where it has been tested. When a new measurement differs from the prediction, the model is corrected or its range of validity is limited. For example, a free-fall model without air resistance describes a stone but not a feather."
         },
         {
           "text": "A model is a perfect description of a phenomenon, and if a measurement differs from it, the measurement is always wrong.",

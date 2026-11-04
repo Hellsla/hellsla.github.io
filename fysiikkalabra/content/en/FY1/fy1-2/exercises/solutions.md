@@ -137,7 +137,7 @@
 **Conversions:** The unit is checked by substitution: in the student's formula $\textsf{l}/\text{s}\cdot\textsf{l} = \textsf{l}^2/\text{s}$, which is not a unit of time, so the formula is wrong. At the end the seconds are converted to minutes: $1\,\text{min} = 60\,\text{s}$.
 **Substitution:** $t = \dfrac{12\,\textsf{l}}{0.20\,\textsf{l}/\text{s}} = 60\,\text{s} = \dfrac{60}{60}\,\text{min} = 1.0\,\text{min}$
 **Answer:** $1.0\,\text{min}$, two significant figures like the flow rate $0.20\,\textsf{l}/\text{s}$ and the volume $12\,\textsf{l}$. The student's $2.4$ is not seconds but in the unit $\textsf{l}^2/\text{s}$.
-**Reasonableness:** Every second a fifth of a litre comes, so a litre fills in five seconds and $12\,\textsf{l}$ takes twelve times as long, $60\,\text{s}$. The filling time is thus of the order of a minute, as you know from filling a bucket.
+**Reasonableness:** A fifth of a litre flows in every second, so a litre fills in five seconds and $12\,\textsf{l}$ takes twelve times as long, $60\,\text{s}$. The filling time is thus of the order of a minute, as you know from filling a bucket.
 
 ## fy1-2-L3-01
 **Given:** $c = 2.998\cdot10^{5}\,\text{km/s}$, $1\,\text{a} = 3.156\cdot10^{7}\,\text{s}$, $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$
