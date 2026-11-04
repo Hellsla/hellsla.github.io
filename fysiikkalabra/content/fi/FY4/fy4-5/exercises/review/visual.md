@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e6361e81ae93222a
+CONTENT-HASH: d0a3da0eb8c360f9
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy4-5-L1-07, L2-05 and L2-07 — solutions still describe a Voimakuvio in prose without drawing it (L2-05 a) asks the student to draw); the syntax supports it (`komponentit`, angles).
+- [Minor] L1-07 (kaappi) — F_1 and F_2 both start at the left face, one above the other, and their labels sit close together on the left; legible at 1280 px. Check at 360 px when a phone capture exists (none for the exercise bodies).
+- [Minor] L2-07 diagram — F_3 points down-left and extends well past the body; fine, but the figure has no caption saying it is the rest-state balance; optional.
 
 ## Checked
-- L2 part 8 (L2-05 Vastaus, L2-06 with ”…” quotes now), L1 part 9 (L1-08 MC with the reworded options and feedback).
-- No clipping; the MC feedback boxes and the formulas are fine. Straight quotes are fixed.
-- Round 2 delta. Captures are 1280 px only (no 360/390 exercise-body captures), so phone rendering rests on the passing layout checks.
+- Opened fy4-5-open-exercises-1280-8 (L1-07: G/N equal, F_1, F_2 forward, F_μ backward, orange a, axes, scale note "vaaka- ja pystyvoimat eri mittakaavassa"), L2-1280-7 (L2-05: F_A, F_B with dashed components, F_C), L2-1280-11 (L2-07: F_1, F_2, F_3 with dashed F_2x, F_2y).
+- Forces red and filled, components dashed, acceleration orange off the body, labels KaTeX with overlines, nothing clipped or overlapping, text and drawn directions agree.
+- Captures are 1280 px only; phone rendering rests on the passing layout checks and the same renderer as earlier fy4-5 figures.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

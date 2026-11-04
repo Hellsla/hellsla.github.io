@@ -36,6 +36,7 @@ only = set(args)   # none: every page; CI on a pull request passes the pages scr
 OUT = ROOT / "site" if "--site" in sys.argv else ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"   # --site: the published pages (CI)
 
 JS = """() => {
+  if (window.flFitMath) window.flFitMath();   // lesson.js: a too-wide inline formula gets its own scrolling line (kx-wide)
   const out = [], V = (e) => e.checkVisibility();
   const el = document.scrollingElement, vw = document.documentElement.clientWidth;
   if (el.scrollWidth > el.clientWidth + 1) out.push({what: 'page', over: el.scrollWidth - el.clientWidth, text: ''});
@@ -139,9 +140,9 @@ OPEN = {
   "closed": "() => true",
   "hints": """() => { for (const g of document.querySelectorAll('.hints, .numeric, .activity, details.level > ol > li')) {
       const h = g.querySelector('details.hint'); if (h) h.open = true; const s = g.querySelector(':scope details.solution, :scope > details.solution'); if (s) s.open = true; }
-    document.querySelectorAll('details.fold, details.level').forEach((d) => { d.open = true; }); return true; }""",
+    document.querySelectorAll('details.fold, details.level').forEach((d) => { d.open = true; }); if (window.flFitMath) window.flFitMath(); return true; }""",
   "open": """() => { document.querySelectorAll('details').forEach((d) => { d.open = true; });
-    document.querySelectorAll('main [hidden]').forEach((e) => { if (!e.closest('#sim-root')) e.hidden = false; }); return true; }""",
+    document.querySelectorAll('main [hidden]').forEach((e) => { if (!e.closest('#sim-root')) e.hidden = false; }); if (window.flFitMath) window.flFitMath(); return true; }""",
 }
 
 # a stage heading after its link is followed: below the sticky navigation and near the top of the window

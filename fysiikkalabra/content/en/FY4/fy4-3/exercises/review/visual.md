@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a6b5805555cd9b85
-Mode: full
-Round: 1
+CONTENT-HASH: 1cb1a625e4cf590e
+Round: 5
 
 ## Blocking
 
-## Fixed
-solutions.md: 'equally large as' changed to the idiomatic 'as large as' (five places); no numbers or formulas touched.
-
 ## Polish
+- [Minor] Horse figure: the F_h label sits just over the hatching; legible.
+- [Minor] No 360 px capture of the exercise bodies exists.
 
 ## Checked
-Opened exercise captures of the new tasks (fy4-3-open-exercises-*, L2, L3): task text, data tables with captions, solution blocks and force diagrams render with correct labels; numbers and units readable, no overflow or leftover Finnish. Table cell values and captions match fi.
+- Round 4 Blocking resolved: the sentence above the figure and the figure both use F_t.
+- L3-04 figure (L3-1280-6) opened in round 4: both bodies fit, arrowheads visible, house red, KaTeX labels match the text.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
