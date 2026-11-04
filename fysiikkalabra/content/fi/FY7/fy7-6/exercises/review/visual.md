@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 3e3c0eeec4dee222
+CONTENT-HASH: cbbd2024efecc6d6
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-01 solution, Kaava (open-exercises-L3-1280-1) — the nested fraction $\dfrac{n\left(mgh - \tfrac{mv^2}{2}\right)}{cm_\text{p}}$ makes the inner fraction tiny (about 7 px) — write $\tfrac{1}{2}mv^2$ inside, as the earlier line of the solution does.
-- [Minor] L1-03 Vastaus (open-exercises-1280-3) — the answer box shows "$1{,}0 \cdot 10^2\,\text{kJ}$" and the next line "eli noin $100\,\text{kJ}$" — consistent, but the second line may be dropped, since the two repeat each other.
-- [Minor] L3-02 Mallivastaus (open-exercises-L3-1280-3) — one long paragraph of about ten lines; split it into "ehjä levy" and "kampalevy" if the item is edited again.
+- [Minor] exercises.json L2-06 — the student's quotation is set in German-style marks „…”; Finnish text uses ”…” at both ends, as fy7-7 L2-07 and fy7-8 L2-07 do. Change the opening mark.
+- [Minor] solutions.md L1-08 Järkevyys — "$120$-kertaiseksi" is broken before the hyphen ("120 / -kertaiseksi"); write "kertoo tämän $120$:llä" or keep "120-kertaiseksi" as one maths unit.
+- [Minor] solutions.md L2-07 Järkevyys — "($0{,}102$–$0{,}108\,\text{Wb}$)" breaks before the en dash; put the range inside one formula, $0{,}102\ldots0{,}108$.
+- [Minor] solutions.md L2-05 and L2-07 — the model answer to part c) is only in Järkevyys; add it to Vastaus so the explanation is not found under a sanity-check heading.
 
 ## Checked
-- Opened open-exercises-1280-1 (L1-01) and -3 (L1-03, L1-04), open-exercises-L2-1280-2 (L2-01, L2-02) and open-exercises-L3-1280-1 (L3-01) and -3 (L3-02, L3-03).
-- Read all 12 tasks and solutions in the packet text. Quantities are LaTeX with case endings after the maths ("$40\,\text{g}$:n"), and the Sijoitus chains are aligned rows. There are no figures in the set.
-- Boxes keep solutions inside their cards at 1280; no 390 px exercise captures exist beyond stage-exercises-390 (not opened), so the phone view rests on check_layout.
+- 1280 px captures of every new task with solutions open: L1-06..08 (open-exercises 5–8), L2-05..07 (L2 5–9), L3-04..05 (L3 4–8). No exercise captures at 360/390 px; relies on green check_layout 360 px.
+- Tables with decimal comma, answer boxes, chain rows, choice feedback, display formulas: no clipping or overflow, no red KaTeX.
+- Answers recomputed against solutions (match).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

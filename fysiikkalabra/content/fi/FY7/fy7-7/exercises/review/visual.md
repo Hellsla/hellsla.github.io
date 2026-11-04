@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: bd0c326a9688e130
+CONTENT-HASH: 8d88f4983a8ef167
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L2-04 task text — "Kuinka monta prosenttia tuulivoimaloiden keskimääräinen teho oli vuoden lopun nimellistehosta?" has strained word order; "Kuinka monta prosenttia vuoden lopun nimellistehosta tuulivoimaloiden keskimääräinen teho oli?"
-- [Minor] L2-01 Järkevyys — "Jos pyörimisnopeutta 1200 olisi käytetty hertseinä" has a bare number; write "$1200$" with its unit (kierrosta minuutissa) in maths.
-- [Minor] L2-02 figure fy7-7/trace — x-axis labels every 20 ms and y every 6 V while the description speaks of a 10 ms / 3 V grid; the 10 ms peaks are read from unlabelled minor ticks. Legible, but a labelled 10 ms tick would match the solution text ("10 ms ja 50 ms").
+- [Minor] solutions.md L1-07 Vastaus — the line under the answer box starts with a stray semicolon ("; lukema 3000 kierrosta …"). The build strips a leading comma but not ";": write "$20\,\text{ms}$, lukema …".
+- [Minor] solutions.md L2-07 Vastaus — part b) is stated before part a); reverse to a) then b), as the task and Kysytty do.
+- [Minor] solutions.md L3-04 a) — "Sovitus antaa $k = 0{,}308$" shows no working; add a check from two points, $(9{,}1 - 1{,}4)\,\text{V} : 25\,\text{Hz} = 0{,}308\,\text{V/Hz}$, so a student can follow it without a calculator fit.
+- [Minor] exercises.json L2-05 table — negative values typed with a hyphen ("-0,1", "-8,4"); use "−".
 
 ## Checked
-- open-exercises-1280-1 and -3 (L1-01, L1-03), L2-1280-2/-3/-5 (L2-01..L2-04 incl. the graph task), L3-1280-2/-3 (L3-02, L3-03); all L3-01 and L1 remaining rows judged from the source and the same layout.
-- Figure fy7-7/trace: axes with quantity and unit, peaks 12 V, period 40 ms, no answer given away; description matches the drawing.
-- Solutions: Formula/Sijoitus chains are aligned rows, answers boxed, units upright with thin space, no red KaTeX source.
+- 1280 px captures of every new task with solutions open: L1-06..08 (open-exercises 5–8), L2-05..07 (L2 5–10), L3-04..05 (L3 4–8). No exercise captures at 360/390 px; relies on green check_layout 360 px.
+- Tables, aligned rows, choice feedback, answer boxes: no clipping, overflow or red source.
+- Answers recomputed against solutions (match).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 5
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

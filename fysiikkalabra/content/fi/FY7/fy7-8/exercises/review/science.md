@@ -1,17 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 851f5dc3356412a5
+VERDICT: FAIL
+CONTENT-HASH: 91ada7bf896f45b8
 
 ## Blocking
+- exercises.json:261 (L3-04) — **B**, missing condition. The task gives a wind park's *keskimääräinen* power and computes the yearly loss as R(P/U)²·8760 h. That holds only if the power is constant. Since P_h ∝ P², a varying wind power gives a larger mean loss than the mean power does, so the text teaches a wrong picture. — Fix: drop "keskimääräinen" and add "Oletetaan, että siirrettävä teho on vakio 200 MW koko vuoden". The numbers stay.
 
 ## Polish
-- exercises.json:20 / solutions.md:21 (L1-03) — the brief's lesson says the substation lowers 20 kV to 230 V; this task uses 400 V. Both right (400 V between phases); "vaiheiden välinen jännite" would prevent a seeming contradiction.
-- exercises.json:54 (L2-02) — a phone charges with DC; "tasasuuntausta ei oteta huomioon" would close the gap (C).
-- exercises.json:97 / solutions.md:112 (L3-03) — loss share is treated as the only limit; conductor heating also limits current (C). The Järkevyys example gives 826 A for 331 MW at 400 kV; 331 MW gives 827,5 A (826 A belongs to 330,6 MW). Trivial.
+- exercises.json:261 (L3-04) — "Johtimien resistanssi on 0,040 Ω kilometriä kohti" lets a student double the length for the return conductor (answer 3,03 M€). Write "johtimien yhteinen resistanssi on 0,040 Ω johdon kilometriä kohti", as the other tasks do.
+- solutions.md:165 (L2-06) — the rounding reason is wrong: I₁ = 0,114 A has three significant figures, and so do 11,5 V and 2,00 A. Either give 87,7 % or base the two figures on 0,020 A. Also, U₁I₁ is the input power only if current and voltage are in phase (B; the primary has a magnetising current). Consider adding "ensiöteho P₁ = U₁I₁" as a stated assumption in the task.
+- solutions.md:195 (L3-05) — "kaksi merkitsevää numeroa kuten vakiohäviössä 0,6 kW": 0,6 kW has one significant figure. Also, the 20 kW row gives 49 kW, not "54–57 kW". A least-squares fit P_h vs P² gives 54,1 kW. Write "49–57 kW".
+- exercises.json:44 (L1-06) — "toisiokäämin jännitteeksi mitataan nolla" holds after switch-on; a brief pulse is induced when the current starts. Add "kun virta on asettunut vakioksi" (B, minor).
 
 ## Checked
-- Round-1 blocker fixed: L1-04 Järkevyys now "noin viiden sähkökiukaan tehoa" (36 kW : 5 ≈ 7 kW, a real home stove).
-- All 12 answers recomputed from the task text with own formulas: identical to answers.py and exercises.json (L2-01 826,4 kW, L2-02 43,5 mA, L2-03 0,992 %, L3-01 0,75 %, L3-02 4,0 Ω, L3-03 3,306).
-- L2-04: least-squares fit P = k I² through the origin of the five plotted points gives k = 0,801 Ω; curve through (5,0 A; 20 W) and R = 0,80 Ω right; description gives the same data and no R; solution reads the curve, not a raw point.
-- Every line-loss task uses I = P : U then R I², never U²/R; L3-01 uses the transmission voltage, with a correct "450 MW > 150 MW, impossible" check.
-- Ideal-transformer ratios used the right way round (L1-01, L1-02, L1-03, L2-02).
-- Units, conversions, symbolic solving before substitution, significant figures and tolerances consistent; notation matches the brief.
+- Every answer recomputed in one script (L1-07 210 kW, L1-08 90 %, L2-05 k 0,012354 V → 485,7, free fit 486,6, L2-06 87,72 %, L2-07 0,20 A, L3-04 4,959 / 1,500 MW, 1,5149 M€, L3-05 54,35 kW): all equal answers.py and exercises.json.
+- L2-05: the unloaded secondary justifies U₂ : U₁ = N₂ : N₁, and the fit through the origin is physically motivated.
+- L2-06 table: losses of 2,1–3,2 W grow slowly while P₂ grows tenfold, so the efficiency rises with load; the explanation is right.
+- L3-05: P_h = P₀ + aP² with I = P/U at constant U is right; η is maximal where P₀ = aP², and the table's best row (60 kW, 97,9 %) agrees.
+- L1-06 exactly one correct option, feedback right; L2-07 power conservation right.
+- Notation matches the lesson; levels fit; no duplicate.
