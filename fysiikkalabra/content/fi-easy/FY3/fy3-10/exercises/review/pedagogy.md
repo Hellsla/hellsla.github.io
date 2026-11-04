@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1a02af270d2a067b
+CONTENT-HASH: 3f00d228b3f77532
+Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
+Round 1
 
 ## Blocking
-(none left; see Fixed)
+(none)
 
 ## Fixed
-- (none needed)
+- Duplicate Järkevyys paragraph in L3-03 removed (see science.md).
 
 ## Polish
-- inquiry activity 16 solution: "syrjäyttämä ulkoilma" is a rare word; could be explained (ilma, jonka pallo syrjäyttää).
+- L3-04 and L3-05 solutions are still long; each step is short, so acceptable for the easy language.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): exercises.json (all 12 tasks) and solutions.md (all steps, numbers, sign/limiting-figure remarks, reasonableness checks) and the exit-ticket compared with the reviewed Finnish; sentences short, physics terms kept, steps/hints/feedback kept, long blocks genuinely simplified (not identical to Finnish).
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the exercises (units as math, new figure task fy3-10-L2-04 with its solution) and the exit ticket against the new Finnish.
+- Sentences are short and split compared with fi (genuinely simplified, not identical copies).
+- New terms explained in place: moolimassa (yhden moolin massa), kokonaispaine, kulmakerroin, isotermi.
+- Hints, steps and wrong-choice feedback kept; error task L1-08 intact.
+- check_i18n.py fi-easy: 0 errors.
