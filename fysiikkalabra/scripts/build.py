@@ -253,7 +253,7 @@ PRIVACY = "tietosuoja.html"   # Tietosuoja (teacher 2026-11-04): no student data
 
 def front_chrome(html):
     """The front page's own header and footer (teacher 2026-11-03): Näin opiskelet beside Moduulit and Lukuvinkit and
-    Sivustosta after them (2026-11-04); its footer ends in Sivustosta like every page's. No Moduulit link in its header:
+    Sivustosta after them (2026-11-04); its footer is only Ruukkilabra and Tietosuoja like every page's (2026-11-04). No Moduulit link in its header:
     the front page is the module list (teacher 2026-11-04)."""
     html = re.sub(r'<a class="nav-modules" [^>]*>[^<]*</a>', "", html, count=1)
     html = html.replace('<a class="nav-reading"', f'<a class="nav-study" href="{STUDY_PAGE}">{esc(T("site.study"))}</a><a class="nav-reading"', 1)
@@ -952,7 +952,7 @@ def build_language(lang):
         names = {c: course_text(c, curriculum[c])["title"] for c in concept_cards.modules(concept_cards.data_lang(lang))}
         (out / concept_cards.APP).write_text(page(T("cards.app_title"), concept_cards.app_page_body(T, lang, names, {k: v for c in names for k, v in chapter_titles(c).items()}),
                                              f'<a href="index.html">{T("site.name")}</a> › {T("cards.app_title")}', concept_cards.APP, T("cards.app_description"), main_class="reading kc-app-page"))
-    # Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): a reading list of physics books, linked from every header and footer
+    # Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): a reading list of physics books, linked from every header (not the footer, teacher 2026-11-04)
     rt = reading_tips.load(lang) if reading_tips.SOURCE.is_file() else None
     if rt: (out / reading_tips.PAGE).write_text(page(rt["title"], reading_tips.body(T, lang), f'<a href="index.html">{T("site.name")}</a> › {esc(rt["title"])}',
                                               reading_tips.PAGE, rt["description"], main_class="reading reading-tips"))
