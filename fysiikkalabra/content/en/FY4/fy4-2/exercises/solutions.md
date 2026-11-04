@@ -26,7 +26,7 @@
 **Conversions:** All quantities are in SI units, and $\text{m/s}^2 \cdot \text{s}^2 = \text{m}$. No conversions are needed.
 **Substitution:** $s = \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot (1.50\,\text{s})^2 = \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot 2.25\,\text{s}^2 \approx 11.04\,\text{m}$
 **Answer:** $11.0\,\text{m}$, three significant figures like the time $1.50\,\text{s}$.
-**Reasonableness:** The final velocity is $9.81\,\text{m/s}^2 \cdot 1.50\,\text{s} \approx 14.7\,\text{m/s}$, so the average velocity is about $7.4\,\text{m/s}$ and $7.4\,\text{m/s} \cdot 1.50\,\text{s} \approx 11\,\text{m}$. In the first second the stone falls about $5\,\text{m}$, so a good $10\,\text{m}$ in one and a half seconds is plausible.
+**Reasonableness:** The final velocity is $9.81\,\text{m/s}^2 \cdot 1.50\,\text{s} \approx 14.7\,\text{m/s}$, so the average velocity is about $7.4\,\text{m/s}$ and $7.4\,\text{m/s} \cdot 1.50\,\text{s} \approx 11\,\text{m}$. In the first second the stone falls about $5\,\text{m}$, so a little over $10\,\text{m}$ in one and a half seconds is plausible.
 
 ## fy4-2-L1-04
 **Given:** from the graph, the velocity $v_1 = 2.0\,\text{m/s}$ at $t_1 = 0$ and $v_2 = 7.0\,\text{m/s}$ at $t_2 = 5.0\,\text{s}$; the graph is a straight line

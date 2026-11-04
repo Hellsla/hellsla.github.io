@@ -150,7 +150,7 @@
     {
       "id": "fy4-12-L2-05",
       "level": 2,
-      "text": "The positions of two runners on the same straight track were measured by video analysis. Runner A runs in the positive direction and runner B runs toward A. The data is sample data, and both run at a constant velocity.\n\nDetermine the velocities of the runners from the first and the last row of the table and use them to calculate when the runners meet.",
+      "text": "The positions of two runners on the same straight track were measured by video analysis. Runner A runs in the positive direction and runner B runs toward A. The data are sample data, and both run at a constant velocity.\n\nDetermine the velocities of the runners from the first and the last row of the table and use them to calculate when the runners meet.",
       "kind": [
         "data",
         "graph"
@@ -291,7 +291,7 @@
     {
       "id": "fy4-12-L3-04",
       "level": 3,
-      "text": "Sample situation: a car and a truck drive in the same direction at a velocity of $20\\,\\text{m/s}$. The length of the truck is $12\\,\\text{m}$ and that of the car $5.0\\,\\text{m}$. The front of the car is $10\\,\\text{m}$ behind the rear of the truck.\n\nThe driver passes the truck. The car accelerates uniformly with an acceleration of $1.5\\,\\text{m/s}^2$ until the rear of the car is level with the front of the truck, and then it returns to its own lane. The truck continues at a constant velocity. From the opposite lane comes a car at a velocity of $20\\,\\text{m/s}$, and when the passing begins its front is at a distance $d$ from the front of the car.\n\na) How long does the passing take and how long a distance does the car drive during it?\n\nb) How large must the distance $d$ be at least so that the cars have not had time to meet by the end of the passing? Is $d = 300\\,\\text{m}$ sufficient, and does the final velocity of the car fit the speed limit $80\\,\\text{km/h}$?\n\nThe answer box takes the smallest distance $d$ of part b).",
+      "text": "Sample situation: a car and a truck drive in the same direction at a velocity of $20\\,\\text{m/s}$. The length of the truck is $12\\,\\text{m}$ and that of the car $5.0\\,\\text{m}$. The front of the car is $10\\,\\text{m}$ behind the rear of the truck.\n\nThe driver passes the truck. The car accelerates uniformly with an acceleration of $1.5\\,\\text{m/s}^2$ until the rear of the car is level with the front of the truck, and then it returns to its own lane. The truck continues at a constant velocity. A car comes from the opposite lane at a velocity of $20\\,\\text{m/s}$, and when the passing begins its front is at a distance $d$ from the front of the car.\n\na) How long does the passing take and how far does the car drive during it?\n\nb) How large must the distance $d$ be at least so that the cars have not had time to meet by the end of the passing? Is $d = 300\\,\\text{m}$ sufficient, and does the final velocity of the car fit the speed limit $80\\,\\text{km/h}$?\n\nThe answer box takes the smallest distance $d$ of part b).",
       "kind": [
         "model",
         "reasoning"

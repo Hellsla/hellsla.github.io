@@ -228,12 +228,12 @@ a 0
 **Conversions:** The force is in newtons, so no conversions are needed.
 **Substitution:** $F_\text{RC} = F_\text{CR} = 38\,\text{N}$
 **Answer:** $38\,\text{N}$ towards the sled, two significant figures like the force $38\,\text{N}$.
-**Reasonableness:** The motion of the sled does not affect the magnitudes of the forces: the same $38\,\text{N}$ would result if the sled were at rest. The constant velocity only tells that the force of the rope on the sled is equally large as the resistance acting on the sled, $38\,\text{N}$.
+**Reasonableness:** The motion of the sled does not affect the magnitudes of the forces: the same $38\,\text{N}$ would result if the sled were at rest. The constant velocity only tells that the force of the rope on the sled is as large as the resistance acting on the sled, $38\,\text{N}$.
 
 ## fy4-3-L2-05
 **Given:** the rope is at rest; from the table the largest reading of sensor A is $F_\text{A} = 4.8\,\text{N}$ at $t = 1.0\,\text{s}$, when sensor B shows $4.8\,\text{N}$
 **Find:** the force of the wall on the rope $F_\text{W}$ in $\text{N}$ at the moment when $F_\text{A}$ is largest
-**Principle:** The rope is at rest, so by the first law the sum of the forces acting on it is zero: the force of the wall on the rope is as large as the force of the student on the rope. By the third law the rope pulls sensor A and the wall with forces equally large as they pull the rope, so the readings of the sensors are equally large at every moment.
+**Principle:** The rope is at rest, so by the first law the sum of the forces acting on it is zero: the force of the wall on the rope is as large as the force of the student on the rope. By the third law the rope pulls sensor A and the wall with forces as large as they pull the rope, so the readings of the sensors are equally large at every moment.
 **Reading the graph:** From the table we read the row where $F_\text{A}$ is largest: $t = 1.0\,\text{s}$, $F_\text{A} = 4.8\,\text{N}$. On the same row $F_\text{B} = 4.8\,\text{N}$. On the other rows the readings differ by at most $0.1\,\text{N}$, which is random variation of the measurement, not a physical difference.
 **Formula:** $F_\text{W} - F_\text{A} = 0$, so $F_\text{W} = F_\text{A}$
 **Conversions:** The forces are in newtons, so no conversions are needed.
@@ -261,19 +261,19 @@ $s = 0.500\,\text{m/s}\cdot 6.0\,\text{s} = 3.0\,\text{m}$.
 ## fy4-3-L3-04
 **Given:** rolling resistance on the cart $F_\text{r} = 410\,\text{N}$, air resistance on the cart $F_\text{dc} = 40\,\text{N}$, air resistance on the horse $F_\text{dh} = 30\,\text{N}$, the velocity is constant and straight forwards, example data
 **Find:** a) the force of the rope on the cart $T$; b) the force of the road on the hooves of the horse $F_\text{road}$ in $\text{N}$; c) why the forces do not cancel each other
-**Principle:** Both the cart and the horse move at constant velocity, so the net force on each is zero (first law). The cart gives the force of the rope. By the third law the cart pulls the horse backwards with a force $T$ equally large as the rope pulls the cart forwards, and this is used in the equilibrium of the horse. The force of the road on the hooves is an external force that carries the pair forwards.
+**Principle:** Both the cart and the horse move at constant velocity, so the net force on each is zero (first law). The cart gives the force of the rope. By the third law the cart pulls the horse backwards with a force $T$ as large as the rope pulls the cart forwards, and this is used in the equilibrium of the horse. The force of the road on the hooves is an external force that carries the pair forwards.
 **Force diagram:** For the cart draw: the force of the rope $\overline{T}$ forwards, the rolling resistance and the air resistance backwards. For the horse: the force of the road $\overline{F}_\text{road}$ forwards, the force of the rope $\overline{T}$ and the air resistance backwards. The forces on the horse and on the cart are in different diagrams.
 **Formula:** Cart: $T - F_\text{r} - F_\text{dc} = 0$, so $T = F_\text{r} + F_\text{dc}$. Horse: $F_\text{road} - T - F_\text{dh} = 0$, so $F_\text{road} = T + F_\text{dh}$.
 **Conversions:** The forces are in newtons, so no conversions are needed.
 **Substitution:** $T = 410\,\text{N} + 40\,\text{N} = 450\,\text{N}$ and
 $F_\text{road} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
 **Answer:** a) $450\,\text{N}$ and b) $480\,\text{N}$ forwards, two significant figures like the given forces. c) The force of the horse on the cart and the force of the cart on the horse are equally large and oppositely directed, but they act on different objects, so they do not cancel each other. The motion of the cart is decided only by the forces acting on the cart, and the motion of the horse only by the forces acting on the horse. The horse gets going because the road pushes its hooves forwards with a force that is larger than the force of the cart on the horse.
-**Reasonableness:** The force of the road $480\,\text{N}$ is equally large as the sum of all the resistances $410\,\text{N} + 40\,\text{N} + 30\,\text{N} = 480\,\text{N}$, so the whole system moves at constant velocity. The friction between the road and the hooves points forwards, because it opposes the hoof slipping backwards.
+**Reasonableness:** The force of the road $480\,\text{N}$ is as large as the sum of all the resistances $410\,\text{N} + 40\,\text{N} + 30\,\text{N} = 480\,\text{N}$, so the whole system moves at constant velocity. The friction between the road and the hooves points forwards, because it opposes the hoof slipping backwards.
 
 ## fy4-3-L3-05
 **Given:** from the table the velocity and the force of the rope; at $t = 4.0\,\text{s}$, $5.0\,\text{s}$ and $6.0\,\text{s}$ the velocities are $0.70$; $0.71$ and $0.70\,\text{m/s}$ and the forces $3.4$; $3.5$ and $3.3\,\text{N}$; at the start $F = 5.1\,\text{N}$ and $v = 0$ (example data)
 **Find:** a) when the net force is zero; b) the force of friction $F_\text{f}$ in $\text{N}$; c) why $F > F_\text{f}$ at the start
-**Principle:** When the velocity of the cart is constant, by the first law the net force is zero, so the force of the rope and the friction are equally large. If the velocity changes, the net force is not zero. By the third law the cart pulls the rope and the student with a force equally large as the rope pulls the cart.
+**Principle:** When the velocity of the cart is constant, by the first law the net force is zero, so the force of the rope and the friction are equally large. If the velocity changes, the net force is not zero. By the third law the cart pulls the rope and the student with a force as large as the rope pulls the cart.
 **Reading the graph:** The velocity increases from $t = 0$ from $0$ to $0.69\,\text{m/s}$ and then, from $t = 4.0\,\text{s}$ on, stays almost the same, about $0.70\,\text{m/s}$. The net force is zero from $t = 4.0\,\text{s}$ on. The sensor readings at these three moments are $3.4\,\text{N}$, $3.5\,\text{N}$ and $3.3\,\text{N}$.
 **Formula:** $F_\text{f} = F_\text{av}$ and $F_\text{av} = \dfrac{\Sigma F}{n}$
 **Conversions:** The forces are in newtons and the velocity in $\text{m/s}$, so no conversions are needed.
