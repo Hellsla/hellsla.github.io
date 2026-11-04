@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1c8a05ab21bb5bf4
+CONTENT-HASH: e163dcf76108b77f
 
 ## Blocking
+- none
 
 ## Polish
+- [Minor] none worth a change; the caption matches the image and is plain.
 
 ## Checked
-- batch delta review: section.kc at 390 and 1280 px (kc_shot.py, rebuilt preview), no katex errors, scrollWidth equals viewport; Pitkä lause rivittyy siististi, ei katkeamisia.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: rendered preview/fi-easy/fy7-3.html with playwright, lazy images scrolled into view and confirmed loaded; fy7-3 photo (compass needles) at 390 and 1280 px. Images load, no horizontal overflow, credit line shown, captions accurate for the images and in plain Finnish.

@@ -380,6 +380,8 @@ where $U$ is the voltage ($\text{V}$), $E$ the energy transferred ($\text{J}$) a
 ### Typical values
 Voltages and currents vary a lot in everyday devices. The values in the tables are orders of magnitude.
 
+<figure class="unit-photo"><img src="pics/fy6/macro-circuit-board.webp" alt="A circuit board close up: a green capacitor, a small striped resistor and other components joined by conductors."><figcaption>The circuit board of an electronic device. The components are connected by the conductors on the board, and the capacitor is marked with the largest voltage it can withstand: $6.3\,\text{V}$.</figcaption></figure>
+
 | Voltage source | Voltage |
 |---|---|
 | AA battery | $1.5\,\text{V}$ |

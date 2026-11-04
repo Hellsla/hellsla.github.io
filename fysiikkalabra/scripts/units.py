@@ -117,6 +117,17 @@ def content_hash(uid, lang):
 
 
 def task_key(uid): return f"units/{uid}"                 # practice.py's key of the unit's task set
+def number(uid):
+    """The unit's number on its course page, "1.2" (the second unit of chapter 1, local_courses.py), or None. Its tasks
+    carry it: "1.2-3" (practice.number, teacher 2026-11-04)."""
+    import local_courses
+    for c in local_courses.load().values():
+        for i, ch in enumerate(c.get("chapters", []), 1):
+            for j, u in enumerate(ch.get("units", []), 1):
+                if u["id"] == uid: return f"{i}.{j}"
+    return None
+
+
 def has_tasks(uid, lang): return (folder(uid, lang) / "sovella" / "tasks.json").is_file()
 
 

@@ -51,7 +51,7 @@ JS = """() => {
   for (const k of document.querySelectorAll('main .katex')) {
     if (!k.checkVisibility() || k.closest('.katex-display, table, svg, #sim-root')) continue;
     const box = k.closest('p, li, .steps, .stage') || k.parentElement;
-    const over = Math.round(k.getBoundingClientRect().right - (k.closest('.kc-card') ? box.getBoundingClientRect().right : Math.min(box.getBoundingClientRect().right, vw)));   // a concept card may sit beyond the window in its scrolling row (.kc-row): its own box is the limit
+    const over = Math.round(k.getBoundingClientRect().right - (k.closest('.kc-card') ? box.getBoundingClientRect().right : Math.min(box.getBoundingClientRect().right, vw)));   // a concept card's own box is the limit
     if (over > 1) { const ann = k.querySelector('annotation'); out.push({what: 'formula', over, text: 'inline, cannot wrap: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
   }
   for (const c of document.querySelectorAll('main .eq-chain')) {   // a calculation set as rows (mathlayout.py): its left side must neither spill into the right one
@@ -75,7 +75,7 @@ JS = """() => {
   for (const s of document.querySelectorAll('main svg')) {
     const r = s.getBoundingClientRect();
     if (!r.width) continue;
-    const card = s.closest('.kc-card'), lim = card ? card.getBoundingClientRect().right : vw;   // a concept card may sit beyond the window in its scrolling row (.kc-row)
+    const card = s.closest('.kc-card'), lim = card ? card.getBoundingClientRect().right : vw;   // a concept card's own box is the limit
     if (r.right > lim + 1) out.push({what: 'svg', over: Math.round(r.right - lim), text: s.getAttribute('aria-label') || ''});
     const T = [...s.querySelectorAll('text'), ...s.querySelectorAll('foreignObject')].map((t) => ({t: t.textContent.trim().slice(0, 40), b: (t.querySelector('.katex, div') || t).getBoundingClientRect()})).filter((x) => x.t);
     for (const x of T) if (x.b.left < r.left - 1 || x.b.right > r.right + 1 || x.b.top < r.top - 1 || x.b.bottom > r.bottom + 1)

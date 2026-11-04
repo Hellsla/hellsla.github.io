@@ -122,8 +122,12 @@ When light with a continuous spectrum passes through a gas, dark lines are left 
   <foreignObject x="235.5" y="353.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{violet}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/flame-colours.webp" alt="Nine flames in a row: magenta, red, orange, yellow, white, green, blue-green and violet."><figcaption>Flames containing metal salts. Each element colours the flame in its own way, because its atoms emit only wavelengths that match the differences of their own energy states.</figcaption></figure>
+
 ### Energy states explain the lines
 The electron shell of an atom can only be in certain **energy states**. The lowest one is the ground state, and the higher ones are excited states. The energies are given as negative numbers, because the zero is chosen to be the situation in which the electron has left the atom. When an atom moves from a higher energy state to a lower one, it emits one photon. Energy is conserved, so the energy of the photon is the difference between the energies of the states. Because an atom has only certain energy states, there are only a certain number of differences, and the spectrum has only certain lines.
+
+<figure class="unit-photo"><img src="pics/fy8/neon-signs-shinjuku.webp" alt="A street corner at dusk. Colourful illuminated signs cover the buildings, and people walk in the street."><figcaption>Illuminated signs in Shinjuku, Tokyo. A spectroscope would show whether the spectrum of each light is continuous or made of lines.</figcaption></figure>
 
 Absorption is the reverse process. An atom absorbs a photon only if the energy of the photon is exactly the difference between two states; other photons pass through the gas. An excited atom soon returns to a lower state and emits a photon, but in a random direction. Therefore exactly those wavelengths are missing from the light travelling in the original direction, and a dark line is left in the spectrum. A gas absorbs only transitions that start from states in which its atoms are. In a cold gas almost all atoms are in the ground state, so there are fewer absorption lines than emission lines. The atmosphere of the Sun is so hot that a small fraction of the hydrogen atoms are in the first excited state. They absorb wavelengths of visible light, and that is why the red line $656\,\text{nm}$ of hydrogen appears dark in the spectrum of the Sun. The energy states of electrons are quantised, and spectra are the most direct evidence of this.
 
@@ -162,6 +166,8 @@ In **fluorescence**, a substance absorbs short-wavelength light, usually ultravi
   <foreignObject x="180" y="309.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3.40\,\text{eV}$</div></foreignObject>
   <foreignObject x="330" y="309.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2.38\,\text{eV}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy8/fluorescent-minerals.webp" alt="Dozens of rock samples on a black background, glowing bright green, red, blue and yellow."><figcaption>Minerals under an ultraviolet lamp. They absorb ultraviolet radiation and emit visible light of longer wavelength, whose colour depends on the mineral.</figcaption></figure>
 
 ## Formula: Energy level difference and photon energy
 When an atom moves from one energy state to another, it emits or absorbs a photon whose energy is the difference between the energies of the states:
