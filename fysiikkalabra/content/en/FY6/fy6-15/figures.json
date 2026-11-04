@@ -13,7 +13,7 @@
   "ei maadoitusta": "no earthing",
   "suojamaadoitettu": "protectively earthed",
   "vika": "fault",
-  "v": "fault",
+  "v": "Δ",
   "virta ihmisen kautta": "current through the person",
   "sulake laukeaa": "the fuse trips",
   "Suojausluokkien merkit kolmessa sarakkeessa. Vasemmalla luokka I: maadoitusmerkki, eli pystyviiva ja kolme lyhenevää vaakaviivaa, ympyrän sisällä; suojamaadoitus, esimerkiksi pesukone. Keskellä luokka II: kaksi sisäkkäistä neliötä; kaksoiseristys, esimerkiksi hiustenkuivaaja. Oikealla luokka III: vinoneliö, jonka sisällä on roomalainen numero kolme; suojajännite, esimerkiksi akkuporakone.": "Signs of the protection classes in three columns. On the left class I: the earth symbol, that is, a vertical line and three shortening horizontal lines, inside a circle; protective earthing, for example a washing machine. In the middle class II: two nested squares; double insulation, for example a hair dryer. On the right class III: a diamond with the Roman numeral three inside; protective extra-low voltage, for example a cordless drill.",

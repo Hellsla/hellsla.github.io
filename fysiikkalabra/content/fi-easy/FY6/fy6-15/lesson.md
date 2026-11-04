@@ -309,7 +309,7 @@ Pesukoneen tai vedenkeittimen johtava metallirunko on kytketty pistotulpan kautt
   <polyline points="506,48 506,148" fill="none" stroke="url(#fy615-maadoitus-pe)" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="522" y1="140" x2="522" y2="88" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
   <path d="M522,74 L529,89 L515,89 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <foreignObject x="526" y="95.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I_\text{vika}$</div></foreignObject>
+  <foreignObject x="518" y="95.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I_\text{vika}$</div></foreignObject>
   <path d="M362,252 L342,313.5" fill="none" stroke="#1f2933" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M334,316 h17.5" fill="none" stroke="#6c757d" stroke-width="6.4" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M363,197.5 L420,240" fill="none" stroke="#1971c2" stroke-width="9.6" stroke-linejoin="round" stroke-linecap="round"/>

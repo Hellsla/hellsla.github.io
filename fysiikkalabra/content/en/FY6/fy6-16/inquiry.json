@@ -4,7 +4,7 @@
   "learn": [
     "calculate the charging time, the energy from the grid and the cost of charging from the battery energy, current and efficiency.",
     "compare single-phase and three-phase charging and explain when simultaneous loads exceed the current of the main fuses.",
-    "use Joule's law to explain why a charging station has its own circuit and why an extension cord and a loose joint get hot."
+    "explain with Joule's law why a charger has its own circuit and why extension cords and loose joints heat up."
   ],
   "prior": [
     "The energy of a battery is the nominal voltage times the capacity, $W = UQ$, and the efficiency of charging is below $100\\,\\%$ (chapter *Batteries and the charging circuit*)",
@@ -320,10 +320,10 @@
       "title": "3. Explain the danger of the extension cord",
       "optional": true,
       "prompt": "A neighbour charges his car all night with a current of $10\\,\\text{A}$ through an extension cord on a reel, from an old socket. Use Joule's law to explain which parts get hot and why, and how the charging should be arranged safely.",
-      "model": "By Joule's law a power $RI^2$ is dissipated in the cable and the joint, and it turns into their internal energy, which is transferred to the surroundings as heat. The resistance of a $25\\,\\text{m}$ extension cord on a reel is about $0.57\\,\\Omega$, so with a current of $10\\,\\text{A}$ about $57\\,\\text{W}$ is dissipated in it. On the reel the heat cannot escape, so the cable gets hot and the insulation ages. The contact resistance of a loose joint in an old socket can be, for example, $0.10\\,\\Omega$, so $10\\,\\text{W}$ is concentrated in a small spot all night. The heating power grows with the square of the current. The safest thing is to install a charging station with its own circuit and a residual current device; if a socket has to be used, the charging current is kept low and an extension cord is not used.",
+      "model": "By Joule's law a power $RI^2$ is dissipated in the cable and the joint, and it turns into their internal energy, which is transferred to the surroundings as heat. The resistance of a $25\\,\\text{m}$ extension cord on a reel is about $0.57\\,\\Omega$, so with a current of $10\\,\\text{A}$ about $57\\,\\text{W}$ is dissipated in it. From the reel little energy is transferred as heat to the surroundings, so the cable gets hot and the insulation ages. The contact resistance of a loose joint in an old socket can be, for example, $0.10\\,\\Omega$, so $10\\,\\text{W}$ is concentrated in a small spot all night. The heating power grows with the square of the current. The safest thing is to install a charging station with its own circuit and a residual current device; if a socket has to be used, the charging current is kept low and an extension cord is not used.",
       "criteria": [
         "The answer uses Joule's law $P = RI^2$ and says that the power turns into internal energy, which is transferred to the surroundings as heat.",
-        "The answer explains why a coiled cable gets hot: the heat cannot escape.",
+        "The answer explains why a coiled cable gets hot: little energy is transferred from the reel as heat to the surroundings.",
         "The answer explains why a loose joint is dangerous: the power is concentrated in a small spot for a long time.",
         "The answer suggests a safe solution, such as a charging station with its own circuit and a residual current device."
       ]

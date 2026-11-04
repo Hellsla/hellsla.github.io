@@ -320,10 +320,10 @@
       "title": "3. Selitä jatkojohdon vaara",
       "optional": true,
       "prompt": "Naapuri lataa autoaan $10\\,\\text{A}$:n virralla kelalla olevan jatkojohdon kautta vanhasta pistorasiasta koko yön. Selitä Joulen lain avulla, mitkä kohdat kuumenevat ja miksi. Selitä myös, miten lataus kannattaisi järjestää turvallisesti.",
-      "model": "Joulen lain mukaan johtoon ja liitokseen tulee teho $RI^2$. Teho muuttuu niiden sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Kelalla olevan $25\\,\\text{m}$:n jatkojohdon resistanssi on noin $0{,}57\\,\\Omega$, joten virralla $10\\,\\text{A}$ siihen tulee noin $57\\,\\text{W}$. Kelalla lämpö ei pääse pois, joten johto kuumenee ja eriste vanhenee. Vanhan pistorasian löystyneen liitoksen kosketusresistanssi voi olla esimerkiksi $0{,}10\\,\\Omega$. Silloin pieneen kohtaan keskittyy $10\\,\\text{W}$ koko yön. Lämpenemisteho kasvaa virran neliössä. Turvallisinta on asentaa latausasema, jolla on oma ryhmä ja vikavirtasuoja. Jos on pakko käyttää pistorasiaa, latausvirta pidetään pienenä eikä jatkojohtoa käytetä.",
+      "model": "Joulen lain mukaan johtoon ja liitokseen tulee teho $RI^2$. Teho muuttuu niiden sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Kelalla olevan $25\\,\\text{m}$:n jatkojohdon resistanssi on noin $0{,}57\\,\\Omega$, joten virralla $10\\,\\text{A}$ siihen tulee noin $57\\,\\text{W}$. Kelalta siirtyy huonosti lämpöä ympäristöön, joten johto kuumenee ja eriste vanhenee. Vanhan pistorasian löystyneen liitoksen kosketusresistanssi voi olla esimerkiksi $0{,}10\\,\\Omega$. Silloin pieneen kohtaan keskittyy $10\\,\\text{W}$ koko yön. Lämpenemisteho kasvaa virran neliössä. Turvallisinta on asentaa latausasema, jolla on oma ryhmä ja vikavirtasuoja. Jos on pakko käyttää pistorasiaa, latausvirta pidetään pienenä eikä jatkojohtoa käytetä.",
       "criteria": [
         "Vastaus käyttää Joulen lakia $P = RI^2$ ja kertoo, että teho muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön.",
-        "Vastaus selittää, miksi kelattu johto kuumenee: lämpö ei pääse pois.",
+        "Vastaus selittää, miksi kelattu johto kuumenee: kelalta siirtyy huonosti lämpöä ympäristöön.",
         "Vastaus selittää, miksi löystynyt liitos on vaarallinen: teho keskittyy pieneen kohtaan pitkäksi aikaa.",
         "Vastaus ehdottaa turvallisen ratkaisun, kuten latausaseman, jolla on oma ryhmä ja vikavirtasuoja."
       ]

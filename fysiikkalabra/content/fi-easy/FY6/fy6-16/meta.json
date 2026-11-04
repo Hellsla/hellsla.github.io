@@ -23,11 +23,11 @@
   "key_concepts": [
     {
       "term": "hyötysuhde",
-      "explain": "Kertoo, kuinka suuri osa verkosta otetusta energiasta päätyy akkuun. Loput muuttuu lämmöksi, joten hyötysuhde on aina alle sadan prosentin."
+      "explain": "Kertoo, kuinka suuri osa verkosta otetusta energiasta päätyy akkuun. Latauksessa on aina häviöitä, joten latauksen hyötysuhde jää alle sadan prosentin."
     },
     {
       "term": "kolmivaihesähkö",
-      "explain": "Sähköliittymä, jossa on kolme vaihejohdinta ja nollajohdin. Kolmivaiheinen laite ottaa virran kaikista kolmesta vaiheesta ja saa kolminkertaisen tehon."
+      "explain": "Sähköliittymä, jossa on kolme vaihejohdinta ja nollajohdin. Kolmivaiheinen laite saa samalla vaihevirralla kolminkertaisen tehon yksivaiheiseen laitteeseen verrattuna."
     },
     {
       "term": "pääsulake",
@@ -39,7 +39,7 @@
     },
     {
       "term": "Joulen laki",
-      "explain": "Kertoo, kuinka suuri teho muuttuu vastuksessa lämmöksi. Teho on resistanssi kertaa virran neliö, joten kaksinkertainen virta nelinkertaistaa lämmön."
+      "explain": "Kertoo, kuinka suuri teho muuttuu vastuksessa sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Kaksinkertainen virta nelinkertaistaa tehon."
     }
   ]
 }

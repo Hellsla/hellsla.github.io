@@ -172,7 +172,7 @@ def _fault_panel(f, x0, earthed):
     f.tex(bx0 + 36, 226, r"\text{vika}", "start", w=60)
     if earthed:
         cable(f, [(bx0 + 80, 48), (bx0 + 80, by0 - 2)], pe, 7)
-        i_arrow(f, bx0 + 96, by0 - 10, bx0 + 96, 74, r"I_\text{vika}", bx0 + 100, 110, "start")
+        i_arrow(f, bx0 + 96, by0 - 10, bx0 + 96, 74, r"I_\text{vika}", bx0 + 92, 110, "start")
     # the person touching the casing
     H.walker(f, x0 + 62, gy, COLD, INK, 0.4, hand=(bx0 - 6, 240))
     if not earthed:

@@ -307,7 +307,7 @@ The conductive metal frame of a washing machine or a kettle is connected to prot
   <polyline points="506,48 506,148" fill="none" stroke="url(#fy615-maadoitus-pe)" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="522" y1="140" x2="522" y2="88" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
   <path d="M522,74 L529,89 L515,89 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <foreignObject x="526" y="95.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I_\text{fault}$</div></foreignObject>
+  <foreignObject x="518" y="95.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I_\text{fault}$</div></foreignObject>
   <path d="M362,252 L342,313.5" fill="none" stroke="#1f2933" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M334,316 h17.5" fill="none" stroke="#6c757d" stroke-width="6.4" stroke-linejoin="round" stroke-linecap="round"/>
   <path d="M363,197.5 L420,240" fill="none" stroke="#1971c2" stroke-width="9.6" stroke-linejoin="round" stroke-linecap="round"/>
@@ -391,8 +391,8 @@ A fuse does not notice a current through a person: its rated current is amperes,
   <foreignObject x="448" y="257.5" width="76" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R_\text{body}$</div></foreignObject>
   <line x1="492" y1="192" x2="516" y2="192" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
   <path d="M530,192 L515,199 L515,185 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <foreignObject x="552" y="167.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I_\text{fault}$</div></foreignObject>
-  <foreignObject x="420" y="17.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$I_\text{L} - I_\text{N} = I_\text{fault}$</div></foreignObject>
+  <foreignObject x="552" y="167.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I_\text{Δ}$</div></foreignObject>
+  <foreignObject x="420" y="17.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$I_\text{L} - I_\text{N} = I_\text{Δ}$</div></foreignObject>
 </svg>
 
 An RCD does not prevent all shocks. If a person touches the line conductor and the neutral conductor at the same time, the current returns along the neutral conductor, and there is no difference between the currents of the line and neutral conductors. For this reason live parts are never touched, even if the circuit has an RCD.

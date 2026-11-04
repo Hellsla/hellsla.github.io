@@ -46,7 +46,7 @@
 **Muunnokset:** Ei tarvita: $1\,\Omega \cdot (1\,\text{A})^2 = 1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}$.
 **Sijoitus:** $P = 0{,}20\,\Omega \cdot (16\,\text{A})^2 = 0{,}20\,\Omega \cdot 256\,\text{A}^2 = 51{,}2\,\text{W}$
 **Vastaus:** $51\,\text{W}$, kaksi merkitsevää numeroa kuten resistanssissa ja virrassa.
-**Järkevyys:** Teho on kuin pienen hehkulampun. Se jakautuu koko johdon pituudelle, joten ehjä johto lämpenee vain vähän. Jos johto on kelalla tiukasti rullattuna, lämpö ei pääse pois, ja johto voi kuumeta vaarallisesti.
+**Järkevyys:** Teho on kuin pienen hehkulampun. Se jakautuu koko johdon pituudelle, joten ehjä johto lämpenee vain vähän. Jos johto on kelalla tiukasti rullattuna, siitä siirtyy huonosti lämpöä ympäristöön. Silloin johto voi kuumeta vaarallisesti.
 
 ## fy6-15-L2-01
 **Annettu:** nimellisvirta $I_\text{s} = 16\,\text{A}$, jännite $U = 230\,\text{V}$, päällä olevat tehot $P_1 = 2000\,\text{W}$ ja $P_2 = 1200\,\text{W}$

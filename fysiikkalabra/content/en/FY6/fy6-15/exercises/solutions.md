@@ -46,7 +46,7 @@
 **Conversions:** None needed: $1\,\Omega \cdot (1\,\text{A})^2 = 1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}$.
 **Substitution:** $P = 0.20\,\Omega \cdot (16\,\text{A})^2 = 0.20\,\Omega \cdot 256\,\text{A}^2 = 51.2\,\text{W}$
 **Answer:** $51\,\text{W}$, two significant figures like the resistance and the current.
-**Reasonableness:** The power is like that of a small incandescent lamp, but it is spread over the whole length of the cord, so an intact cord heats up only a little. If the cord is wound tightly on a reel, the heat cannot escape, and the cord can become dangerously hot.
+**Reasonableness:** The power is like that of a small incandescent lamp, but it is spread over the whole length of the cord, so an intact cord heats up only a little. If the cord is wound tightly on a reel, little energy is transferred from it as heat to the surroundings, and the cord can become dangerously hot.
 
 ## fy6-15-L2-01
 **Given:** rated current $I_\text{f} = 16\,\text{A}$, voltage $U = 230\,\text{V}$, powers that are on $P_1 = 2000\,\text{W}$ and $P_2 = 1200\,\text{W}$
