@@ -175,6 +175,7 @@ main.home+footer.bottom{margin-top:1.75rem}
 .mod-row.coming .mod-code,.mod-row.coming .mod-title,.mod-row.coming .mod-q{color:var(--text-muted)}
 .mod-row.coming .mod-name{font-weight:500}
 .mod-row.coming .mod-icon{filter:grayscale(1);opacity:.55}
+.plan-list{margin-top:1.4rem}.mod-row.planned{cursor:default}
 .mod-row.coming:hover{background:none}.mod-row.coming:hover .mod-go{opacity:0}.mod-row.coming:hover .mod-title{color:var(--text-muted)}
 @media (min-width:700px){   /* two columns: at most 64 px a row; a long title may take two lines in the narrow range, never cut */
   .mod-row{min-height:60px;padding-block:.2rem}

@@ -29,6 +29,12 @@ ICONS = {
     "FY10": "mittauskuvaaja",
     "FY9": "koepaperi, jossa ratkaisu, kuvaaja ja tarkistusmerkki",
     "FY14": "tokamakin rengasplasma ja magneettikelat",
+    # the school's planned courses, shown greyed out on the front page (teacher 2026-11-04; local_courses.planned)
+    "LUMATUTOR": "tiedetutori ja koeputki",
+    "AHJO1": "3D-tulostin",
+    "AHJO2": "prototyypin suunnittelu",
+    "KILPAROBO": "pyörillä liikkuva robotti",
+    "MYYTIT": "suurennuslasi ja kysymysmerkki",
 }
 
 
