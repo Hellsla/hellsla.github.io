@@ -1,0 +1,23 @@
+{
+  "id": "fy6-15",
+  "course": "FY6",
+  "title": "Electrical safety at home and at work",
+  "goals": [
+    "LOPS FY6: electrical safety: fuse, protection class and dielectric strength",
+    "LOPS FY6: knows safety aspects of electrical devices and the transmission of electrical energy",
+    "Cross-curricular: well-being competence"
+  ],
+  "prerequisites": [
+    "fy6-6"
+  ],
+  "glossary": [
+    "sulake",
+    "vikavirtasuoja",
+    "suojausluokitus",
+    "läpilyöntilujuus",
+    "maadoitus"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

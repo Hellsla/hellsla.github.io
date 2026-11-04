@@ -1,0 +1,338 @@
+{
+  "version": 1,
+  "contribution": "Soveltava luku: moduulin ideat (akun energia, sähköteho $P = UI$, Joulen laki, hyötysuhde, sulake ja vikavirtasuoja) yhdistetään sähköauton lataamiseen kotona. Luvussa lasketaan latausaika ja häviöt, verrataan yksivaiheista ja kolmivaiheista latausta, tutkitaan pääsulaketta ja yhtä aikaa päällä olevia laitteita sekä latauksen hintaa ja johdon ja liitoksen lämpenemistä.",
+  "learn": [
+    "laskemaan sähköauton latausajan, verkosta otetun energian ja latauksen hinnan.",
+    "vertailemaan yksivaiheista ja kolmivaiheista latausta sekä selittämään, milloin pääsulakkeen virta ylittyy.",
+    "selittämään Joulen lain avulla, miksi latausasemalla on oma ryhmä ja vikavirtasuoja ja miksi jatkojohto kuumenee."
+  ],
+  "prior": [
+    "Akun energia on nimellisjännite kertaa kapasiteetti, $W = UQ$. Latauksen hyötysuhde on alle $100\\,\\%$ (luku *Akut ja latauspiiri*)",
+    "Laitteen virta lasketaan kaavalla $I = P : U$. Energia on teho kertaa aika, ja sen yksikkö on kilowattitunti (luku *Sähköenergia kotona*)",
+    "Sulake suojaa johtoa ylikuumenemiselta. Vikavirtasuoja suojaa ihmistä siltä, että virta vuotaa hänen kauttaan maahan (luku *Sähköturvallisuus kotona ja työssä*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Perhe tulee talvi-iltana kotiin. Auto kytketään talon seinällä olevaan latausasemaan. Sauna lämpenee $9\\,\\text{kW}$:n kiukaalla, ja keittiössä kiehuu vesi. Naapuri lataa omaa autoaan jatkojohdolla autotallin pistorasiasta. Aamulla molempien autojen pitäisi olla täynnä.",
+      "question": "Riittävätkö kodin sähköt kaikkeen yhtä aikaa? Kuinka kauan lataus kestää? Miksi jatkojohto ei ole hyvä ratkaisu?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: akun energia",
+      "optional": true,
+      "prompt": "Sähköauton akun nimellisjännite on $400\\,\\text{V}$ ja kapasiteetti $150\\,\\text{Ah}$. Kuinka paljon energiaa akkuun mahtuu? Kapasiteetti on varaus, ja sen yksikkö on ampeeritunti.",
+      "choices": [
+        {
+          "text": "Noin $60\\,\\text{kWh}$, koska energia on jännite kertaa varaus.",
+          "correct": true,
+          "feedback": "Oikein. $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,000\\,\\text{Wh} = 60\\,\\text{kWh}$ (luku *Akut ja latauspiiri*). Tänään lasketaan, kuinka kauan tällaisen akun lataaminen kestää kotona. Lasketaan myös, mitä lataus vaatii kodin sähköjärjestelmältä."
+        },
+        {
+          "text": "Noin $150\\,\\text{kWh}$, koska kapasiteetti kertoo akun energian.",
+          "feedback": "Kapasiteetti on varaus, ei energia. Ampeeritunti on virta kertaa aika. Energia saadaan, kun varaus kerrotaan jännitteellä: $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,\\text{kWh}$ (luku *Akut ja latauspiiri*)."
+        },
+        {
+          "text": "Noin $2{,}7\\,\\text{kWh}$, koska energia on jännite jaettuna varauksella.",
+          "feedback": "Jännite kertoo energian yhtä varausyksikköä kohti. Siksi energia saadaan kertomalla, ei jakamalla: $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,\\text{kWh}$ (luku *Akut ja latauspiiri*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: yksi vaihe vai kolme?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet laskenut latausajat taulukosta ja Teoriatiivistelmä on näkyvissä."
+      },
+      "prompt": "Kaksi latausasemaa ottaa kumpikin virran $16\\,\\text{A}$ jokaisesta vaihejohtimesta, jota ne käyttävät. Vaihejohdin on johto, jossa on jännite. Toinen asema käyttää yhtä vaihetta ja toinen kolmea. Vaihejännite on $230\\,\\text{V}$. Kuinka nopeasti kolmivaiheinen asema lataa saman akun yksivaiheiseen asemaan verrattuna?",
+      "choices": [
+        {
+          "text": "Yhtä nopeasti, koska kummankin aseman virta on $16\\,\\text{A}$.",
+          "feedback": "Kolmivaiheinen asema ottaa virran $16\\,\\text{A}$ jokaisesta kolmesta vaihejohtimesta. Jokainen vaihe siirtää tehon $230\\,\\text{V} \\cdot 16\\,\\text{A} \\approx 3{,}7\\,\\text{kW}$. Teho on siis $P = 3UI \\approx 11\\,\\text{kW}$, kolminkertainen. Taulukon latausaika on silloin kolmasosa."
+        },
+        {
+          "text": "Noin kolme kertaa nopeammin, koska jokainen vaihe siirtää yhtä suuren tehon.",
+          "correct": true,
+          "feedback": "Taulukon laskut tukevat tätä. Yksivaiheinen asema lataa teholla $230\\,\\text{V} \\cdot 16\\,\\text{A} \\approx 3{,}7\\,\\text{kW}$. Kolmivaiheinen asema lataa teholla $3 \\cdot 230\\,\\text{V} \\cdot 16\\,\\text{A} \\approx 11\\,\\text{kW}$. Sama $40\\,\\text{kWh}$ vie noin $12\\,\\text{h}$ tai noin $4\\,\\text{h}$."
+        },
+        {
+          "text": "Hitaammin, koska virta jakautuu kolmeen johtimeen ja jokaisessa on vähemmän virtaa.",
+          "feedback": "Virta ei jakaudu. Jokaisessa kolmessa vaihejohtimessa kulkee $16\\,\\text{A}$. Jokainen vaihe siirtää tehon $UI$, joten kokonaisteho on $3UI \\approx 11\\,\\text{kW}$. Se on kolme kertaa yksivaiheisen aseman teho."
+        },
+        {
+          "text": "Noin $1{,}7$ kertaa nopeammin, koska kolmivaiheinen jännite on $400\\,\\text{V}$ eikä $230\\,\\text{V}$.",
+          "feedback": "Vaihejohtimien välinen jännite on $400\\,\\text{V}$. Asema ottaa kuitenkin virran jokaisesta vaiheesta jännitteellä $230\\,\\text{V}$ nollajohtimeen nähden. Kolme vaihetta siirtää kukin tehon $230\\,\\text{V} \\cdot 16\\,\\text{A}$. Teho on siis kolminkertainen, noin $11\\,\\text{kW}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kiuas, keitin ja auto",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet laskenut vaiheiden virrat taulukosta ja Teoriatiivistelmä on näkyvissä."
+      },
+      "prompt": "Omakotitalon pääsulakkeet ovat $3 \\cdot 25\\,\\text{A}$. Samaan aikaan on päällä kolme laitetta: $9{,}0\\,\\text{kW}$:n kolmivaiheinen kiuas, $2{,}0\\,\\text{kW}$:n vedenkeitin yhdessä vaiheessa ja $11\\,\\text{kW}$:n kolmivaiheinen latausasema. Mitä pääsulakkeille tapahtuu?",
+      "choices": [
+        {
+          "text": "Ei mitään, koska jokainen laite on kytketty omaan ryhmäänsä ja omalle sulakkeelleen.",
+          "feedback": "Ryhmäsulakkeet suojaavat kukin oman ryhmänsä johtoa. Kaikkien ryhmien virrat kulkevat kuitenkin samojen pääsulakkeiden kautta. Taulukon mukaan vaiheessa $\\text{L}_1$ kulkee $13{,}0\\,\\text{A} + 16\\,\\text{A} + 8{,}7\\,\\text{A} \\approx 37{,}7\\,\\text{A}$. Se on paljon yli $25\\,\\text{A}$."
+        },
+        {
+          "text": "Virta ylittää $25\\,\\text{A}$ jokaisessa vaiheessa, joten pääsulake voi palaa, jos kuormanhallintaa ei ole.",
+          "correct": true,
+          "feedback": "Taulukon laskut tukevat tätä. Kiuas ottaa jokaisesta vaiheesta $13{,}0\\,\\text{A}$ ja asema $16\\,\\text{A}$. Vaiheissa $\\text{L}_2$ ja $\\text{L}_3$ kulkee siis $29{,}0\\,\\text{A}$ ja vaiheessa $\\text{L}_1$ keittimen kanssa $37{,}7\\,\\text{A}$. Kuormanhallinta pienentää latausvirtaa, ettei näin käy."
+        },
+        {
+          "text": "Vain vaiheen $\\text{L}_1$ virta ylittyy, koska vedenkeitin on vain siinä vaiheessa.",
+          "feedback": "Keitin kasvattaa vaiheen $\\text{L}_1$ virtaa eniten. Kuitenkin jo kiuas ja asema yhdessä ottavat jokaisesta vaiheesta $13{,}0\\,\\text{A} + 16\\,\\text{A} = 29{,}0\\,\\text{A}$. Se on yli $25\\,\\text{A}$ kaikissa kolmessa vaiheessa."
+        },
+        {
+          "text": "Ei mitään, koska kokonaisteho $22\\,\\text{kW}$ jakautuu kolmeen vaiheeseen ja kuhunkin tulee alle $25\\,\\text{A}$.",
+          "feedback": "Kolmeen vaiheeseen jaettuna $22\\,\\text{kW}$ on noin $7{,}3\\,\\text{kW}$ vaihetta kohti. Silloin $7300\\,\\text{W} : 230\\,\\text{V} \\approx 32\\,\\text{A}$. Pääsulakkeet $3 \\cdot 25\\,\\text{A}$ sallivat yhteensä vain noin $3 \\cdot 230\\,\\text{V} \\cdot 25\\,\\text{A} \\approx 17\\,\\text{kW}$."
+        }
+      ]
+    },
+    {
+      "id": "tavat",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Kolme tapaa ladata",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: tyypillisiä latausvirtoja ja arvioituja hyötysuhteita. Se ei ole tietyn auton mittaus.",
+      "text": "Akkuun pitää varastoida $40\\,\\text{kWh}$. Taulukossa on kolme tapaa ladata kotona. Vaihejännite on kaikissa $230\\,\\text{V}$. Hyötysuhde kertoo, kuinka suuri osa verkosta otetusta energiasta päätyy akkuun. Pienellä teholla hyötysuhde on yleensä huonompi. Auton laturi ja ohjauselektroniikka kuluttavat itsekin energiaa, ja kulutus jakautuu pidemmälle ajalle.\n\n| tapa | vaiheita | $I$ | $\\eta$ |\n| --- | --- | --- | --- |\n| pistorasia | $1$ | $8{,}0\\,\\text{A}$ | $85\\,\\%$ |\n| asema, yksi vaihe | $1$ | $16\\,\\text{A}$ | $90\\,\\%$ |\n| asema, kolme vaihetta | $3$ | $16\\,\\text{A}$ | $90\\,\\%$ |\n\nLaske jokaiselle tavalle latausteho $P$ ja latausaika $t$. Mahtuuko lataus yhteen yöhön eli esimerkiksi kymmeneen tuntiin?",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka kauan lataus kestää tavallisesta pistorasiasta? Vastaa tunteina.",
+        "answer": 25.575448,
+        "unit": "h",
+        "tolerance": 0.02,
+        "hints": [
+          "Mikä on latausteho, kun jännite on $230\\,\\text{V}$ ja virta $8{,}0\\,\\text{A}$?",
+          "Akkuun menee vain osuus $\\eta$ verkosta otetusta energiasta. Akkuun siirtyvä teho on siis $\\eta P$.",
+          "$t = \\dfrac{40\\,\\text{kWh}}{0{,}85 \\cdot 1{,}84\\,\\text{kW}}$."
+        ],
+        "mistakes": [
+          {
+            "value": 21.73913,
+            "feedback": "Unohdit häviöt. Akkuun siirtyy vain $85\\,\\%$ verkosta otetusta energiasta. Siksi lataus kestää pidempään: $t = 40\\,\\text{kWh} : (0{,}85 \\cdot 1{,}84\\,\\text{kW}) \\approx 26\\,\\text{h}$."
+          },
+          {
+            "value": 18.478261,
+            "feedback": "Kerroit hyötysuhteella, jolloin lataus lyheni. Häviöt pidentävät latausta. Energia jaetaan siis akkuun siirtyvällä teholla $\\eta P$: $t \\approx 26\\,\\text{h}$."
+          }
+        ],
+        "solution": "**Annettu:** akkuun $W_\\text{akku} = 40\\,\\text{kWh}$, jännite $U = 230\\,\\text{V}$, virta $I = 8{,}0\\,\\text{A}$, yksi vaihe, hyötysuhde $\\eta = 85\\,\\%$\n\n**Kysytty:** latausaika $t$ tunteina\n\n**Periaate:** Pistorasia käyttää yhtä vaihetta, joten teho on $P = UI$. Teho pysyy samana, joten verkosta otettu energia on $Pt$. Siitä akkuun varastoituu osuus $\\eta$.\n\n**Kaava:** $\\eta U I t = W_\\text{akku}$, joten $t = \\dfrac{W_\\text{akku}}{\\eta U I}$\n\n**Muunnokset:** $UI = 230\\,\\text{V} \\cdot 8{,}0\\,\\text{A} = 1840\\,\\text{W} = 1{,}84\\,\\text{kW}$ ja $\\eta = 0{,}85$\n\n**Sijoitus:** $t = \\dfrac{40\\,\\text{kWh}}{0{,}85 \\cdot 1{,}84\\,\\text{kW}} = \\dfrac{40\\,\\text{kWh}}{1{,}564\\,\\text{kW}} = 25{,}6\\,\\text{h}$\n\n**Vastaus:** $26\\,\\text{h}$. Vastauksessa on kaksi merkitsevää numeroa, kuten virrassa $8{,}0\\,\\text{A}$ ja hyötysuhteessa $85\\,\\%$.\n\n**Järkevyys:** Akkuun menee noin $1{,}6\\,\\text{kW}$, ja $40\\,\\text{kWh} : 1{,}6\\,\\text{kW} = 25\\,\\text{h}$. Lataus kestää yli vuorokauden, joten se ei mahdu yhteen yöhön. Yksivaiheisella asemalla sama lataus vie noin $12\\,\\text{h}$ ja kolmivaiheisella noin $4\\,\\text{h}$."
+      }
+    },
+    {
+      "id": "kuormat",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Illan kuormat vaiheittain",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: tyypillisiä kodin laitteiden tehoja. Se ei ole mittaus.",
+      "text": "Omakotitalon pääsulakkeet ovat $3 \\cdot 25\\,\\text{A}$. Taulukossa on kolme laitetta, jotka ovat illalla päällä samaan aikaan. Taulukossa näkyvät myös vaihejohtimet, joihin laitteet on kytketty. Kolmivaiheiset laitteet ottavat jokaisesta vaiheesta yhtä suuren virran. Vaihejännite on $230\\,\\text{V}$.\n\n| laite | $P$ | vaiheet |\n| --- | --- | --- |\n| kiuas | $9{,}0\\,\\text{kW}$ | $\\text{L}_1$, $\\text{L}_2$, $\\text{L}_3$ |\n| vedenkeitin | $2{,}0\\,\\text{kW}$ | $\\text{L}_1$ |\n| latausasema | $11\\,\\text{kW}$ | $\\text{L}_1$, $\\text{L}_2$, $\\text{L}_3$ |\n\nLaske ensin jokaisen laitteen virta yhdessä vaihejohtimessa. Laske sitten yhteen jokaisen vaiheen virrat. Vertaa summia pääsulakkeen kokoon. Kuinka suuren virran latausasema saisi ottaa, kun kiuas on päällä?",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka suuri virta kulkee vaihejohtimessa $\\text{L}_1$, kun kaikki kolme laitetta ovat päällä?",
+        "answer": 37.73913,
+        "unit": "A",
+        "tolerance": 0.02,
+        "hints": [
+          "Kolmivaiheinen laite ottaa jokaisesta vaiheesta virran $I = P : (3U)$. Yksivaiheinen laite ottaa virran $I = P : U$.",
+          "Kiuas ottaa $9000\\,\\text{W} : 690\\,\\text{V} \\approx 13{,}0\\,\\text{A}$. Latausasema ottaa $11\\,000\\,\\text{W} : 690\\,\\text{V} \\approx 16\\,\\text{A}$ ja keitin $2000\\,\\text{W} : 230\\,\\text{V} \\approx 8{,}7\\,\\text{A}$.",
+          "Vaiheen $\\text{L}_1$ kautta kulkevat kaikkien kolmen laitteen virrat: $I_1 = 13{,}0\\,\\text{A} + 16\\,\\text{A} + 8{,}7\\,\\text{A}$."
+        ],
+        "mistakes": [
+          {
+            "value": 29.043478,
+            "feedback": "Tämä on vaiheiden $\\text{L}_2$ ja $\\text{L}_3$ virta. Vedenkeitin on kytketty vaiheeseen $\\text{L}_1$, joten sen $8{,}7\\,\\text{A}$ pitää lisätä: $I_1 \\approx 37{,}7\\,\\text{A}$."
+          },
+          {
+            "value": 95.826087,
+            "feedback": "Laskit kaikkien laitteiden tehon yhden $230\\,\\text{V}$:n vaiheen kautta. Kolmivaiheiset laitteet jakavat tehonsa kolmeen vaihejohtimeen. Niiden virta yhdessä vaiheessa on siis $P : (3U)$."
+          }
+        ],
+        "solution": "**Annettu:** kiuas $P_\\text{k} = 9{,}0\\,\\text{kW}$ ja latausasema $P_\\text{a} = 11\\,\\text{kW}$ kolmessa vaiheessa, vedenkeitin $P_\\text{v} = 2{,}0\\,\\text{kW}$ vaiheessa $\\text{L}_1$, $U = 230\\,\\text{V}$\n\n**Kysytty:** vaihejohtimen $\\text{L}_1$ virta $I_1$ ampeereina\n\n**Periaate:** Kolmivaiheinen laite ottaa jokaisesta vaiheesta saman virran, joten sen teho on $P = 3UI$. Yksivaiheisen laitteen teho on $P = UI$. Laitteet saavat virtansa saman vaihejohtimen kautta, joten virrat lasketaan yhteen (luku *Kirchhoffin lait ja potentiaali virtapiirissä*).\n\n**Kaava:** $I_1 = \\dfrac{P_\\text{k}}{3U} + \\dfrac{P_\\text{a}}{3U} + \\dfrac{P_\\text{v}}{U}$\n\n**Muunnokset:** $P_\\text{k} = 9000\\,\\text{W}$, $P_\\text{a} = 11\\,000\\,\\text{W}$ ja $P_\\text{v} = 2000\\,\\text{W}$; $3U = 690\\,\\text{V}$\n\n**Sijoitus:** $I_1 = \\dfrac{9000\\,\\text{W}}{690\\,\\text{V}} + \\dfrac{11\\,000\\,\\text{W}}{690\\,\\text{V}} + \\dfrac{2000\\,\\text{W}}{230\\,\\text{V}} = 13{,}04\\,\\text{A} + 15{,}94\\,\\text{A} + 8{,}70\\,\\text{A} = 37{,}7\\,\\text{A}$\n\n**Vastaus:** $38\\,\\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehoissa $9{,}0\\,\\text{kW}$ ja $11\\,\\text{kW}$.\n\n**Järkevyys:** Kiuas ja asema ottavat yhdessä $20\\,\\text{kW}$ kolmesta vaiheesta. Se on noin $6{,}7\\,\\text{kW}$ vaihetta kohti eli noin $29\\,\\text{A}$. Keitin lisää noin $9\\,\\text{A}$. Virta on noin puolitoistakertainen pääsulakkeen $25\\,\\text{A}$:iin verrattuna. Ilman kuormanhallintaa sulake voisi siis palaa."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mitä kotilataus vaatii?",
+      "prompt": "Kirjoita laskujesi perusteella: millä tavalla auto kannattaa ladata kotona, jotta lataus mahtuu yöhön? Mitä pääsulakkeille tapahtuu, jos auto latautuu täydellä teholla saunan lämmetessä? Miten ongelma ratkaistaan?",
+      "model": "Pistorasiasta virralla $8\\,\\text{A}$ teho on vain noin $1{,}8\\,\\text{kW}$. Lataus $40\\,\\text{kWh}$ vie häviöineen noin $26\\,\\text{h}$, joten se ei mahdu yöhön. Yksivaiheinen $16\\,\\text{A}$:n asema lataa noin $3{,}7\\,\\text{kW}$:n teholla noin $12\\,\\text{h}$. Kolmivaiheinen asema lataa kolminkertaisella teholla noin $4\\,\\text{h}$. Kun kiuas ($13{,}0\\,\\text{A}$ vaihetta kohti) ja asema ($16\\,\\text{A}$ vaihetta kohti) ovat päällä yhtä aikaa, jokaisessa vaiheessa kulkee $29{,}0\\,\\text{A}$. Keittimen vaiheessa kulkee $37{,}7\\,\\text{A}$. Molemmat ovat yli pääsulakkeen $25\\,\\text{A}$:n. Jos tilanne jatkuu pitkään, pääsulake voi palaa. Kuormanhallinta pienentää latausvirran noin $12\\,\\text{A}$:iin saunan ajaksi tai keskeyttää latauksen hetkeksi. Luvut ovat keksityn esimerkkiaineiston laskettuja arvoja.",
+      "criteria": [
+        "Vastaus vertaa latausaikoja ja kertoo niiden avulla, miksi pistorasialataus ei mahdu yöhön.",
+        "Vastaus selittää, että kolmivaiheinen asema lataa kolminkertaisella teholla, koska jokainen vaihe siirtää tehon $UI$.",
+        "Vastaus laskee tai arvioi saman vaiheen virrat yhteen ja vertaa summaa pääsulakkeen kokoon.",
+        "Vastaus nimeää ratkaisuksi latausvirran pienentämisen tai latauksen ajoittamisen, kuten kuormanhallinnan."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi laskemiisi tehoihin ja virtoihin. Palaa sitten alun kysymykseen: miksi naapurin jatkojohto ei ole hyvä ratkaisu, vaikka se toimii?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee, kuinka paljon energiaa verkosta otetaan. Akkuun pitää varastoida $38{,}4\\,\\text{kWh}$, ja latauksen hyötysuhde on $90\\,\\%$:\n\n$$\\begin{aligned} W_\\text{verkko} &= \\eta W_\\text{akku} \\\\ &= 0{,}90 \\cdot 38{,}4\\,\\text{kWh} \\\\ &\\approx 34{,}6\\,\\text{kWh} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Hyötysuhteella pitää jakaa: $38{,}4\\,\\text{kWh} : 0{,}90 \\approx 42{,}7\\,\\text{kWh}$.",
+          "correct": true,
+          "feedback": "Oikein. Hyötysuhde on $\\eta = W_\\text{akku} : W_\\text{verkko}$, joten $W_\\text{verkko} = W_\\text{akku} : \\eta$. Virheen olisi voinut huomata siitä, että tulos oli pienempi kuin akkuun menevä energia. Häviöiden vuoksi verkosta pitää kuitenkin ottaa enemmän."
+        },
+        {
+          "text": "Hyötysuhde pitää ensin muuntaa: $90\\,\\%$ on $90$, ei $0{,}90$.",
+          "feedback": "Prosentti tarkoittaa sadasosaa, joten $90\\,\\% = 0{,}90$ on oikein. Kertominen luvulla $90$ antaisi yli $3000\\,\\text{kWh}$, mikä on mahdotonta. Virhe on siinä, että hyötysuhteella kerrottiin. Oikein on $W_\\text{verkko} = 38{,}4\\,\\text{kWh} : 0{,}90 \\approx 42{,}7\\,\\text{kWh}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska häviöt pienentävät energiaa.",
+          "feedback": "Häviöt pienentävät akkuun päätyvää energiaa, eivät verkosta otettua energiaa. Verkosta otetaan akkuun menevä energia ja häviöt yhteensä. Siksi $W_\\text{verkko} = W_\\text{akku} : \\eta \\approx 42{,}7\\,\\text{kWh}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Yksivaiheinen latausasema on kytketty sähkökeskukseen $25\\,\\text{m}$ pitkällä kaapelilla. Kaapelin kuparijohtimien poikkipinta-ala on $2{,}5\\,\\text{mm}^2$. Latausvirta on $16\\,\\text{A}$. Virta kulkee asemalle vaihejohdinta ja palaa nollajohdinta pitkin. Kuparin resistiivisyys on $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. Kuinka suuri teho kaapeliin tulee? Vastaa watteina.",
+      "answer": 87.04,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "Kaapelin kuparijohtimet ovat vastus. Kuinka pitkä kuparimatka virralla on, kun se kulkee asemalle ja takaisin?",
+        "$R = \\rho \\dfrac{2l}{A}$, missä $A = 2{,}5 \\cdot 10^{-6}\\,\\text{m}^2$.",
+        "$R = 0{,}34\\,\\Omega$, ja Joulen lain mukaan $P = RI^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 43.52,
+          "feedback": "Laskit vain yhden johtimen. Virta palaa nollajohdinta pitkin, joten kuparia on $2 \\cdot 25\\,\\text{m} = 50\\,\\text{m}$. Teho on silloin kaksinkertainen, noin $87\\,\\text{W}$."
+        },
+        {
+          "value": 5.44,
+          "feedback": "Kerroit resistanssin virralla, jolloin sait jännitteen $RI$ voltteina. Teho lasketaan Joulen lain mukaan: $P = RI^2 = 0{,}34\\,\\Omega \\cdot (16\\,\\text{A})^2 \\approx 87\\,\\text{W}$."
+        }
+      ],
+      "solution": "**Annettu:** kaapelin pituus $l = 25\\,\\text{m}$, poikkipinta-ala $A = 2{,}5\\,\\text{mm}^2$, virta $I = 16\\,\\text{A}$, kuparin resistiivisyys $\\rho = 1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$\n\n**Kysytty:** kaapeliin tuleva lämpenemisteho $P_\\text{johto}$ watteina\n\n**Periaate:** Kaapelin kuparijohtimet ovat vastus, jonka läpi kulkee latausvirta. Virta kulkee meno- ja paluujohtimessa, joten kuparin pituus on $2l$. Joulen lain mukaan vastukseen tuleva teho on $RI^2$. Teho muuttuu kaapelin sisäenergiaksi, joka siirtyy lämpönä ympäristöön.\n\n**Kaava:** $P_\\text{johto} = RI^2$ ja $R = \\rho \\dfrac{2l}{A}$, joten $P_\\text{johto} = \\rho \\dfrac{2l}{A} I^2$\n\n**Muunnokset:** $A = 2{,}5\\,\\text{mm}^2 = 2{,}5 \\cdot (10^{-3}\\,\\text{m})^2 = 2{,}5 \\cdot 10^{-6}\\,\\text{m}^2$\n\n**Sijoitus:** $R = 1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m} \\cdot \\dfrac{2 \\cdot 25\\,\\text{m}}{2{,}5 \\cdot 10^{-6}\\,\\text{m}^2} = 0{,}34\\,\\Omega$ ja $P_\\text{johto} = 0{,}34\\,\\Omega \\cdot (16\\,\\text{A})^2 = 0{,}34\\,\\Omega \\cdot 256\\,\\text{A}^2 = 87{,}0\\,\\text{W}$\n\n**Vastaus:** $87\\,\\text{W}$. Vastauksessa on kaksi merkitsevää numeroa, kuten resistiivisyydessä $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$ ja poikkipinta-alassa $2{,}5\\,\\text{mm}^2$.\n\n**Järkevyys:** Teho on $87\\,\\text{W} : 3680\\,\\text{W} \\approx 2{,}4\\,\\%$ latausaseman tehosta. Se jakautuu $25\\,\\text{m}$:n matkalle, noin $3{,}5\\,\\text{W}$ metriä kohti. Kiinteä kaapeli lämpenee siis vain vähän. Puolella virralla teho olisi neljäsosa, noin $22\\,\\text{W}$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä lasketaan akun energia, latausteho, virta, hinta tai hyötysuhde yhdellä kaavalla. Tason 2 tehtävissä yhdistetään kaksi vaihetta tai luetaan kuvaajaa. Taso 3 vaatii päättelyä häviöistä, Joulen laista ja yölatauksen virrasta."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Oma ryhmä ja vikavirtasuoja",
+      "prompt": "Miksi sähköauton latausasemalla on oma ryhmä ja oma vikavirtasuoja?",
+      "choices": [
+        {
+          "text": "Lataus on tuntikausia kestävä suuri kuorma, joten johto mitoitetaan sitä varten. Ulkona vuotovirran vaara on tavallista suurempi.",
+          "correct": true,
+          "feedback": "Oikein. Oma ryhmä varmistaa, että johto ja sulake on mitoitettu juuri latausvirralle. Samassa johdossa ei ole muita kuormia. Vikavirtasuoja katkaisee virran, jos osa siitä vuotaa esimerkiksi märän kaapelin ja ihmisen kautta maahan."
+        },
+        {
+          "text": "Oma ryhmä nopeuttaa latausta, koska virta ei jaa samaa johtoa muiden pistorasioiden kanssa.",
+          "feedback": "Ryhmä ei sinänsä nosta latausvirtaa. Latausteho määräytyy aseman asetuksista ja vaiheiden määrästä. Oma ryhmä on turvallisuusratkaisu: johto ja sulake mitoitetaan pitkälle ja suurelle kuormalle, eikä samaan johtoon tule muita kuormia."
+        },
+        {
+          "text": "Vikavirtasuoja estää pääsulakkeen palamisen, kun kiuas ja auto ovat päällä yhtä aikaa.",
+          "feedback": "Vikavirtasuoja ei reagoi kuorman suuruuteen vaan vuotovirtaan. Se vertaa menevää ja palaavaa virtaa ja laukeaa, jos ero on yli $30\\,\\text{mA}$. Pääsulakkeen ylikuorman estää kuormanhallinta, joka pienentää latausvirtaa."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Latausaika",
+      "prompt": "Yksivaiheinen latausasema ottaa virran $16\\,\\text{A}$ jännitteellä $230\\,\\text{V}$. Akkuun pitää varastoida $30\\,\\text{kWh}$. Latauksen hyötysuhde on $90\\,\\%$. Kuinka kauan lataus kestää, kun teho pysyy vakiona? Vastaa tunteina.",
+      "answer": 9.057971,
+      "unit": "h",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä on yksivaiheisen aseman teho?",
+        "Akkuun siirtyy teho $\\eta P = 0{,}90 \\cdot 3{,}68\\,\\text{kW}$.",
+        "$t = \\dfrac{30\\,\\text{kWh}}{0{,}90 \\cdot 3{,}68\\,\\text{kW}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 8.152174,
+          "feedback": "Unohdit häviöt. Akkuun siirtyy vain $90\\,\\%$ verkosta otetusta energiasta, joten lataus kestää kauemmin, noin $9{,}1\\,\\text{h}$."
+        },
+        {
+          "value": 3.019324,
+          "feedback": "Laskit kolmivaiheisen aseman tehon $3UI$. Tämä asema käyttää yhtä vaihetta, joten sen teho on $P = UI = 3{,}68\\,\\text{kW}$."
+        }
+      ],
+      "solution": "**Annettu:** yksi vaihe, $U = 230\\,\\text{V}$, $I = 16\\,\\text{A}$, akkuun $W_\\text{akku} = 30\\,\\text{kWh}$, $\\eta = 90\\,\\%$\n\n**Kysytty:** latausaika $t$ tunteina\n\n**Periaate:** Yksivaiheisen aseman teho on jännite kertaa virta. Teho pysyy samana, joten verkosta otettu energia on $Pt$. Siitä akkuun varastoituu osuus $\\eta$.\n\n**Kaava:** $\\eta U I t = W_\\text{akku}$, joten $t = \\dfrac{W_\\text{akku}}{\\eta U I}$\n\n**Muunnokset:** $UI = 230\\,\\text{V} \\cdot 16\\,\\text{A} = 3680\\,\\text{W} = 3{,}68\\,\\text{kW}$ ja $\\eta = 0{,}90$\n\n**Sijoitus:** $t = \\dfrac{30\\,\\text{kWh}}{0{,}90 \\cdot 3{,}68\\,\\text{kW}} = \\dfrac{30\\,\\text{kWh}}{3{,}312\\,\\text{kW}} = 9{,}06\\,\\text{h}$\n\n**Vastaus:** $9{,}1\\,\\text{h}$. Vastauksessa on kaksi merkitsevää numeroa, kuten hyötysuhteessa $90\\,\\%$ ja energiassa $30\\,\\text{kWh}$.\n\n**Järkevyys:** Akkuun menee noin $3{,}3\\,\\text{kW}$, ja $30\\,\\text{kWh} : 3{,}3\\,\\text{kW} \\approx 9\\,\\text{h}$. Lataus mahtuu juuri yhteen yöhön. Kolmivaiheisella asemalla lataus kestäisi kolmasosan, noin $3\\,\\text{h}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä jatkojohdon vaara",
+      "optional": true,
+      "prompt": "Naapuri lataa autoaan $10\\,\\text{A}$:n virralla kelalla olevan jatkojohdon kautta vanhasta pistorasiasta koko yön. Selitä Joulen lain avulla, mitkä kohdat kuumenevat ja miksi. Selitä myös, miten lataus kannattaisi järjestää turvallisesti.",
+      "model": "Joulen lain mukaan johtoon ja liitokseen tulee teho $RI^2$. Teho muuttuu niiden sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Kelalla olevan $25\\,\\text{m}$:n jatkojohdon resistanssi on noin $0{,}57\\,\\Omega$, joten virralla $10\\,\\text{A}$ siihen tulee noin $57\\,\\text{W}$. Kelalla lämpö ei pääse pois, joten johto kuumenee ja eriste vanhenee. Vanhan pistorasian löystyneen liitoksen kosketusresistanssi voi olla esimerkiksi $0{,}10\\,\\Omega$. Silloin pieneen kohtaan keskittyy $10\\,\\text{W}$ koko yön. Lämpenemisteho kasvaa virran neliössä. Turvallisinta on asentaa latausasema, jolla on oma ryhmä ja vikavirtasuoja. Jos on pakko käyttää pistorasiaa, latausvirta pidetään pienenä eikä jatkojohtoa käytetä.",
+      "criteria": [
+        "Vastaus käyttää Joulen lakia $P = RI^2$ ja kertoo, että teho muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön.",
+        "Vastaus selittää, miksi kelattu johto kuumenee: lämpö ei pääse pois.",
+        "Vastaus selittää, miksi löystynyt liitos on vaarallinen: teho keskittyy pieneen kohtaan pitkäksi aikaa.",
+        "Vastaus ehdottaa turvallisen ratkaisun, kuten latausaseman, jolla on oma ryhmä ja vikavirtasuoja."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
+    }
+  ]
+}

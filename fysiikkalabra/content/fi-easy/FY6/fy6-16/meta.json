@@ -1,0 +1,45 @@
+{
+  "id": "fy6-16",
+  "course": "FY6",
+  "title": "Soveltava luku: sähköauto ja kodin sähköjärjestelmä",
+  "goals": [
+    "LOPS FY6: akut ja akun latauspiiri",
+    "LOPS FY6: sähköteho ja Joulen laki",
+    "LOPS FY6: sähköturvallisuus: sulake, suojausluokitus ja läpilyöntilujuus",
+    "Täsmennys: soveltava luku, ei kertausta: luvussa yhdistetään moduulin ideat uudessa arkisessa tilanteessa"
+  ],
+  "prerequisites": [
+    "fy6-7",
+    "fy6-9",
+    "fy6-15"
+  ],
+  "glossary": [
+    "pääsulake",
+    "kolmivaihesähkö"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "hyötysuhde",
+      "explain": "Kertoo, kuinka suuri osa verkosta otetusta energiasta päätyy akkuun. Loput muuttuu lämmöksi, joten hyötysuhde on aina alle sadan prosentin."
+    },
+    {
+      "term": "kolmivaihesähkö",
+      "explain": "Sähköliittymä, jossa on kolme vaihejohdinta ja nollajohdin. Kolmivaiheinen laite ottaa virran kaikista kolmesta vaiheesta ja saa kolminkertaisen tehon."
+    },
+    {
+      "term": "pääsulake",
+      "explain": "Sähkökeskuksen sulake jokaisessa vaihejohtimessa. Se rajoittaa koko talon virtaa. Saman vaiheen laitteiden virrat lasketaan yhteen."
+    },
+    {
+      "term": "vikavirtasuoja",
+      "explain": "Suojalaite, joka katkaisee virran, jos osa virrasta vuotaa maahan esimerkiksi ihmisen kautta. Se pienentää sähköiskun vaaraa."
+    },
+    {
+      "term": "Joulen laki",
+      "explain": "Kertoo, kuinka suuri teho muuttuu vastuksessa lämmöksi. Teho on resistanssi kertaa virran neliö, joten kaksinkertainen virta nelinkertaistaa lämmön."
+    }
+  ]
+}

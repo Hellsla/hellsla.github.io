@@ -1,0 +1,45 @@
+{
+  "id": "fy6-15",
+  "course": "FY6",
+  "title": "Sähköturvallisuus kotona ja työssä",
+  "goals": [
+    "LOPS FY6: sähköturvallisuus: sulake, suojausluokitus ja läpilyöntilujuus",
+    "LOPS FY6: tuntee sähkölaitteisiin ja sähköenergian siirtoon liittyviä turvallisuusnäkökohtia",
+    "Laaja-alainen: hyvinvointiosaaminen"
+  ],
+  "prerequisites": [
+    "fy6-6"
+  ],
+  "glossary": [
+    "sulake",
+    "vikavirtasuoja",
+    "suojausluokitus",
+    "läpilyöntilujuus",
+    "maadoitus"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "sulake",
+      "explain": "Sulake suojaa sähköjohtoa ylikuumenemiselta. Se katkaisee virran, kun virta on liian suuri. Se ei kuitenkaan huomaa ihmisen kautta kulkevaa pientä virtaa."
+    },
+    {
+      "term": "vikavirtasuoja",
+      "explain": "Vikavirtasuoja vertaa laitteeseen menevää ja sieltä palaavaa virtaa. Jos osa virrasta katoaa esimerkiksi ihmisen kautta maahan, se katkaisee virran heti."
+    },
+    {
+      "term": "maadoitus",
+      "explain": "Maadoitus yhdistää laitteen metallirungon maahan johtimella. Jos vika tuo rungolle jännitteen, suuri vikavirta kulkee maahan ja sulake katkaisee virran."
+    },
+    {
+      "term": "suojausluokitus",
+      "explain": "Suojausluokitus kertoo, miten laite suojaa käyttäjää sähköiskulta: maadoituksella, kaksinkertaisella eristyksellä tai pienellä suojajännitteellä. Luokka näkyy laitteen kilvessä."
+    },
+    {
+      "term": "läpilyöntilujuus",
+      "explain": "Läpilyöntilujuus on suurin sähkökenttä, jonka eriste kestää. Jos kenttä ylittää sen, eriste alkaa johtaa sähköä ja siihen syntyy kipinä."
+    }
+  ]
+}
