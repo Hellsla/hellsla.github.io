@@ -147,6 +147,19 @@ main.home+footer.bottom{margin-top:1.75rem}
 .mod-list>li{margin:0;border-bottom:1px solid var(--line)}
 .mod-group{font:700 .75rem/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin:0 0 .35rem}
 .mod-group~.mod-group{margin-top:1rem}
+/* the school's logo (teacher 2026-11-04: emblem and name, its courses level with the national modules). Under 700 px it
+   heads the school's list; from 700 px it stands in the intro over the right column and the list's heading is visually
+   hidden: under the heading and lead in two columns, beside them (in the right column) once they fit in the left one */
+.mod-school img{display:block;height:56px;width:auto}
+.intro-school{display:none;height:56px;width:auto}
+@media (min-width:700px){
+  .home-intro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(1.25rem,3vw,2.5rem)}
+  .home-intro>h1,.home-intro>.lead{grid-column:1/-1}
+  .intro-school{display:block;grid-column:2;margin:.9rem 0 0}
+  .mod-side>.mod-school:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;margin:0}}
+@media (min-width:1200px){
+  .home-intro>h1,.home-intro>.lead{grid-column:1}
+  .intro-school{grid-column:2;grid-row:1/3;align-self:end;margin:0}}
 .mod-row{display:flex;align-items:center;gap:.8rem;min-height:56px;padding:.45rem .6rem;color:var(--ink);text-decoration:none;border-radius:8px}
 .mod-icon{display:block;width:40px;height:40px;flex:none}
 .mod-text{display:flex;flex-direction:column;flex:1;min-width:0}
