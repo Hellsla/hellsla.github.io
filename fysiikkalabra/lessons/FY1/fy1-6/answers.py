@@ -22,4 +22,19 @@ a["fy1-6-L3-01"] = (g * 1.5) / (g * 1.5)             # vacuum: both bodies have 
 g_planet = 14.8 / 4.0                                # planet: g = v / t = 14,8 m/s / 4,0 s = 3,70 m/s²
 a["fy1-6-L3-02"] = 30.0 / g_planet                   # t = v / g = 30,0 m/s / 3,70 m/s² = 8,108 s -> 8,1 s
 a["fy1-6-L3-03"] = g * 3.00 - 25.0                   # in vacuum v = 29,43 m/s; measured 25,0 m/s; shortfall 4,43 m/s -> 4,4 m/s
+# Exercise bank additions (teacher 2026-11-04): L1-06, L1-07 are multiple choice (no number)
+a["fy1-6-L1-08"] = g * 3.6                           # g = 9,81 m/s per second = 9,81 · 3,6 km/h = 35,316 km/h per second
+def fit(pts):
+    """Least-squares line y = k x + b through the points (a student's by-eye line lands within the tolerance)."""
+    n = len(pts)
+    xm, ym = sum(x for x, _ in pts) / n, sum(y for _, y in pts) / n
+    k = sum((x - xm) * (y - ym) for x, y in pts) / sum((x - xm) ** 2 for x, _ in pts)
+    return k, ym - k * xm
+a["fy1-6-L2-05"] = fit([(0.10, 0.95), (0.20, 2.03), (0.30, 2.91), (0.40, 3.88), (0.50, 4.94), (0.60, 5.83)])[0]   # data of L2-05: slope 9,74 m/s² (0,7 % below 9,81)
+k6, b6 = fit([(0.0, 1.97), (0.1, 2.93), (0.2, 3.95), (0.3, 4.89), (0.4, 5.90), (0.5, 6.86)])   # data of L2-06: k = 9,80 m/s², b = 1,97 m/s
+a["fy1-6-L2-06"] = b6 / k6                           # t0 = b / k = 1,97 / 9,80 = 0,20 s before the measurement started
+v1, v2 = 0.050 / 0.0250, 0.050 / 0.0111              # light gates, L = 5,0 cm: v1 = 2,00 m/s, v2 = 4,505 m/s
+a["fy1-6-L2-07"] = (v2 - v1) / (0.575 - 0.320)       # g = Δv / Δt = 2,505 / 0,255 = 9,82 m/s²
+a["fy1-6-L3-04"] = (g * 0.40 - 1.49) / (g * 0.40) * 100   # filter paper at 0,40 s: model 3,924 m/s vs 1,49 m/s -> 62,0 %
+a["fy1-6-L3-05"] = (14.7 - 4.9) / (1.65 - 0.65)      # slope of the two readings: 9,8 m/s² (the single ratio 14,7/1,65 = 8,9 is too small because the clock started 0,15 s early)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

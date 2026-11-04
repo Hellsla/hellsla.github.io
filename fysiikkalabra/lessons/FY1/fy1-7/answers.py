@@ -23,6 +23,24 @@ a["fy1-7-L3-02"] = (2.70 * 100 + 7.87 * 50) / (100 + 50)   # alloy: total m / to
 V_wire = 0.50 / rho["kupari"]                    # copper wire: V = m/rho = 0,50 kg / 8960 kg/m3 = 5,58e-5 m3
 A_wire = math.pi * (0.50e-3) ** 2                # cross-section from radius 0,50 mm: 7,854e-7 m2
 a["fy1-7-L3-03"] = V_wire / A_wire               # length L = V/A = 71,05 m -> 71 m
+# Exercise bank additions (teacher 2026-11-04): L1-06, L1-07 and L3-04 are multiple choice (no number)
+a["fy1-7-L1-08"] = 56.5 / 11.3                   # lead sinker: V = m/rho = 56,5 g / 11,3 g/cm3 = 5,00 cm3
+
+
+def fit(pts):
+    """Least-squares line y = k x + b through the points (a student's by-eye line lands within the tolerance)."""
+    n = len(pts)
+    xm, ym = sum(x for x, _ in pts) / n, sum(y for _, y in pts) / n
+    k = sum((x - xm) * (y - ym) for x, y in pts) / sum((x - xm) ** 2 for x, _ in pts)
+    return k, ym - k * xm
+
+
+pts5 = list(zip([10.0, 20.0, 30.0, 40.0, 50.0], [27.3, 53.5, 81.6, 107.9, 135.4]))   # data of L2-05
+a["fy1-7-L2-05"] = round(fit(pts5)[0], 1)        # slope 2,706 g/cm3 -> 2,7 (aluminium; tolerance 0,03: 2,62...2,78)
+pts6 = list(zip([20.0, 40.0, 60.0, 80.0, 100.0], [103.6, 121.2, 140.5, 158.9, 176.8]))   # data of L2-06
+a["fy1-7-L2-06"] = round(fit(pts6)[0] * 100) * 10    # slope 0,9205 g/cm3 = 920 kg/m3 (intercept = empty glass 85,0 g; tolerance 0,03)
+a["fy1-7-L2-07"] = round(107 / (72 - 60), 1)     # error: V = V2 - V1 = 12 cm3 (not 72): rho = 107/12 = 8,92 g/cm3 -> 8,9
+a["fy1-7-L3-05"] = round((520 - 2.70 * 100) / (8.96 - 2.70), 1)   # alloy: V_Cu = (m - rho_Al V)/(rho_Cu - rho_Al) = 250/6,26 = 39,9 cm3
 # inquiry.json numeric tasks (not exercises; printed with their own keys)
 a["fy1-7-inq-metalli"] = (224.3 - 45.1) / (25.0 - 5.0)         # copper-like metal, slope between first and last point = 8,96 g/cm3
 a["fy1-7-inq-siirto"] = 0.187 / (70e-6)          # stone: 187 g, displaced 70 ml: rho = 0,187 kg / 70e-6 m3 = 2671 kg/m3 -> 2,7e3

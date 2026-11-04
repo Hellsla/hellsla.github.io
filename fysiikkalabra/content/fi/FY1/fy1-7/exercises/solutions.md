@@ -121,3 +121,70 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Sijoitus:** $V = \dfrac{0{,}50\,\text{kg}}{8960\,\tfrac{\text{kg}}{\text{m}^3}} = 5{,}58 \cdot 10^{-5}\,\text{m}^3$ ja $A = \pi \cdot 2{,}5 \cdot 10^{-7}\,\text{m}^2 = 7{,}85 \cdot 10^{-7}\,\text{m}^2$, joten $L = \dfrac{5{,}58 \cdot 10^{-5}\,\text{m}^3}{7{,}85 \cdot 10^{-7}\,\text{m}^2} = 71{,}1\,\text{m}$
 **Vastaus:** $71\,\text{m}$, kaksi merkitsevää numeroa, koska halkaisija $1{,}0\,\text{mm}$ tunnetaan kahden numeron tarkkuudella.
 **Järkevyys:** Puoli kiloa kuparia on tilavuudeltaan vain noin $56\,\text{cm}^3$, eli puoli desilitraa. Ohueksi, tuhannesosametrin paksuiseksi langaksi vedettynä se riittää kymmenien metrien pituudelle, joten $71\,\text{m}$ on uskottava.
+
+## fy1-7-L1-06
+**Kysytty:** miten tiheys muuttuu, kun tasalaatuinen alumiinipalikka puolitetaan.
+**Periaate:** Tiheys $\rho = \dfrac{m}{V}$ on massan ja tilavuuden suhde, ja se on aineen ominaisuus. Palikka on kauttaaltaan alumiinia, joten kumpikin puolikas on samaa ainetta kuin kokonainen palikka.
+**Mallivastaus:** Tiheys pysyy samana. Kun palikka puolitetaan, massa $m$ ja tilavuus $V$ puolittuvat, joten suhde $m : V$ ei muutu: kummankin osan tiheys on edelleen $2{,}70\,\text{g/cm}^3$. Tiheys ei riipu kappaleen koosta tai muodosta, vain aineesta.
+
+## fy1-7-L1-07
+**Kysytty:** mitä tapahtuu, kun ruokaöljyä kaadetaan veteen, kun öljyn tiheys on $920\,\text{kg/m}^3$ ja veden $1000\,\text{kg/m}^3$.
+**Periaate:** Tiheys kertoo, kuinka paljon massaa on yhtä tilavuutta kohti. Pienemmän tiheyden neste on samassa tilavuudessa kevyempää, ja se asettuu tiheämmän nesteen päälle.
+**Mallivastaus:** Öljyn tiheys $920\,\text{kg/m}^3$ on pienempi kuin veden tiheys $1000\,\text{kg/m}^3$, joten öljy jää veden päälle omaksi kerrokseksi. Samaa kertoo se, että öljy on noin $0{,}92$-kertaisesti vettä: yksi kuutiometri öljyä painaa $920\,\text{kg}$ ja yksi kuutiometri vettä $1000\,\text{kg}$. Nesteen sakeus tai määrä ei ratkaise asiaa, vaan tiheys.
+
+## fy1-7-L1-08
+**Annettu:** lyijypainon massa $m = 56{,}5\,\text{g}$ ja lyijyn tiheys $\rho = 11{,}3\,\tfrac{\text{g}}{\text{cm}^3}$
+**Kysytty:** painon tilavuus $V$ kuutiosenttimetreinä
+**Periaate:** Paino on kauttaaltaan lyijyä, joten massa on tiheys kertaa tilavuus. Kun massa ja tiheys tunnetaan, tilavuus saadaan jakamalla massa tiheydellä.
+**Kaava:** Kaavasta $\rho = \dfrac{m}{V}$ ratkaistaan tilavuus: $V = \dfrac{m}{\rho}$
+**Muunnokset:** Ei tarvita: massa on grammoina ja tiheys yksikössä $\text{g/cm}^3$, joten gramma supistuu ja jäljelle jää $\text{cm}^3$.
+**Sijoitus:** $V = \dfrac{56{,}5\,\text{g}}{11{,}3\,\tfrac{\text{g}}{\text{cm}^3}} = 5{,}00\,\text{cm}^3$
+**Vastaus:** $5{,}00\,\text{cm}^3$, kolme merkitsevää numeroa kuten tiedoissa.
+**Järkevyys:** Lyijy on noin $11$-kertaisesti vettä, joten $56{,}5\,\text{g}$ lyijyä vie noin yhdestoistaosan siitä tilasta, jonka $56{,}5\,\text{g}$ vettä veisi ($56{,}5\,\text{cm}^3$): $56{,}5 : 11 \approx 5\,\text{cm}^3$. Pieni paino on siis vain muutaman kuutiosenttimetrin kokoinen.
+
+## fy1-7-L2-05
+**Annettu:** taulukon mittauspisteet $(V;\ m)$: $(10{,}0\,\text{cm}^3;\ 27{,}3\,\text{g})$, $(20{,}0\,\text{cm}^3;\ 53{,}5\,\text{g})$, $(30{,}0\,\text{cm}^3;\ 81{,}6\,\text{g})$, $(40{,}0\,\text{cm}^3;\ 107{,}9\,\text{g})$ ja $(50{,}0\,\text{cm}^3;\ 135{,}4\,\text{g})$
+**Kysytty:** aineen tiheys $\rho$ yksikössä $\text{g/cm}^3$ ja aineen nimi
+**Periaate:** Saman aineen massa on suoraan verrannollinen tilavuuteen, $m = \rho V$, joten pisteet asettuvat origon kautta kulkevalle suoralle ja suoran kulmakerroin on tiheys. Suora piirretään pisteiden joukon keskeltä, ja kulmakerroin lasketaan suoran pisteistä, ei yksittäisestä mittauspisteestä.
+**Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{cm}^3;\ 0\,\text{g})$ ja $(50{,}0\,\text{cm}^3;\ 135\,\text{g})$ kautta. Pisteet luetaan suoralta ja valitaan kaukana toisistaan.
+**Kaava:** $\rho = \dfrac{\Delta m}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$
+**Muunnokset:** Ei tarvita: massa on grammoina ja tilavuus kuutiosenttimetreinä, kuten kysytty yksikkö $\text{g/cm}^3$.
+**Sijoitus:** $\rho = \dfrac{135\,\text{g} - 0\,\text{g}}{50{,}0\,\text{cm}^3 - 0\,\text{cm}^3} = 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}$
+**Vastaus:** $2{,}7\,\tfrac{\text{g}}{\text{cm}^3}$, kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti. Silmämääräinen sovitus vaihtelee, joten noin $2{,}6\text{–}2{,}8\,\text{g/cm}^3$ on hyvä vastaus. Taulukossa alumiinin tiheys on $2{,}70\,\text{g/cm}^3$, joten aine on alumiinia.
+**Järkevyys:** Suora kulkee origon kautta, kuten pitääkin, koska tilavuudeltaan nollan kappaleen massa on nolla. Tarkistus: $27{,}3\,\text{g} : 10{,}0\,\text{cm}^3 = 2{,}73\,\tfrac{\text{g}}{\text{cm}^3}$ ja $135{,}4\,\text{g} : 50{,}0\,\text{cm}^3 = 2{,}71\,\tfrac{\text{g}}{\text{cm}^3}$, eli jokainen piste antaa lähes saman arvon.
+
+## fy1-7-L2-06
+**Annettu:** taulukon mittauspisteet $(V;\ m_\text{yht})$: $(20{,}0\,\text{cm}^3;\ 103{,}6\,\text{g})$, $(40{,}0\,\text{cm}^3;\ 121{,}2\,\text{g})$, $(60{,}0\,\text{cm}^3;\ 140{,}5\,\text{g})$, $(80{,}0\,\text{cm}^3;\ 158{,}9\,\text{g})$ ja $(100{,}0\,\text{cm}^3;\ 176{,}8\,\text{g})$
+**Kysytty:** nesteen tiheys $\rho$ yksikössä $\text{kg/m}^3$, tyhjän mittalasin massa $m_0$ ja syy sille, miksi suora ei kulje origon kautta
+**Periaate:** Vaaka näyttää mittalasin ja nesteen yhteismassan, joka noudattaa lineaarista mallia $m_\text{yht} = \rho V + m_0$. Nesteen tiheys on suoran kulmakerroin ja tyhjän lasin massa $m_0$ on suoran ja pystyakselin leikkauspiste.
+**Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{cm}^3;\ 85\,\text{g})$ ja $(100\,\text{cm}^3;\ 177\,\text{g})$ kautta. Ensimmäinen piste on suoran ja pystyakselin leikkauspiste.
+**Kaava:** $\rho = \dfrac{\Delta m_\text{yht}}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$ ja $m_0 = m_1 - \rho V_1$
+**Muunnokset:** $1\,\tfrac{\text{g}}{\text{cm}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}$.
+**Sijoitus:** $\rho = \dfrac{177\,\text{g} - 85\,\text{g}}{100\,\text{cm}^3 - 0\,\text{cm}^3} = \dfrac{92\,\text{g}}{100\,\text{cm}^3} = 0{,}92\,\tfrac{\text{g}}{\text{cm}^3} = 920\,\tfrac{\text{kg}}{\text{m}^3}$ ja $m_0 = 85\,\text{g}$ (suoran ja pystyakselin leikkauspiste)
+**Vastaus:** nesteen tiheys on $920\,\tfrac{\text{kg}}{\text{m}^3}$, kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti. Tyhjän mittalasin massa on noin $85\,\text{g}$. Suora ei kulje origon kautta, koska vaaka näyttää myös tyhjän mittalasin massan: jos nestettä ei ole, $V = 0$, vaaka näyttää silti $m_0$.
+**Järkevyys:** Tiheys $920\,\tfrac{\text{kg}}{\text{m}^3}$ on sama kuin ruokaöljyn tai jään tiheys taulukossa, joten neste voi olla ruokaöljyä. Tarkistus: $85\,\text{g} + 0{,}92 \cdot 60\,\text{g} = 140\,\text{g}$, mitattu $140{,}5\,\text{g}$.
+
+## fy1-7-L2-07
+**Annettu:** kappaleen massa $m = 107\,\text{g}$, mittalasin lukemat $V_1 = 60\,\text{ml}$ ja $V_2 = 72\,\text{ml}$; oppilaan tulos $\rho = 1{,}5\,\tfrac{\text{g}}{\text{cm}^3}$
+**Kysytty:** oppilaan virhe, oikea tiheys $\rho$ yksikössä $\text{g/cm}^3$ ja aine
+**Periaate:** Vedensiirtomenetelmässä kappaleen tilavuus on veden pinnan nousu eli lukemien erotus. Mittalasin lukema $V_2$ sisältää myös veden, joka oli lasissa jo ennen upotusta. Tiheys on kappaleen massa jaettuna kappaleen tilavuudella.
+**Kaava:** $V = V_2 - V_1$ ja $\rho = \dfrac{m}{V}$
+**Muunnokset:** $V = 72\,\text{ml} - 60\,\text{ml} = 12\,\text{ml} = 12\,\text{cm}^3$, koska $1\,\text{ml} = 1\,\text{cm}^3$.
+**Sijoitus:** $\rho = \dfrac{107\,\text{g}}{12\,\text{cm}^3} = 8{,}92\,\tfrac{\text{g}}{\text{cm}^3}$
+**Vastaus:** Oppilas jakoi massan upotuksen jälkeisellä lukemalla $72\,\text{ml}$, eikä lukemien erotuksella, joten tilavuus oli kuusinkertainen ja tiheys liian pieni. Oikea tiheys on $8{,}9\,\tfrac{\text{g}}{\text{cm}^3}$, kaksi merkitsevää numeroa, koska tilavuus $12\,\text{ml}$ on kahden numeron luku. Taulukossa kuparin tiheys on $8{,}96\,\tfrac{\text{g}}{\text{cm}^3}$, joten kappale voi olla kuparia, ei muovia.
+**Järkevyys:** Tulos $8{,}9\,\tfrac{\text{g}}{\text{cm}^3}$ on yli kahdeksankertainen veteen verrattuna, mikä sopii metallille. Tilavuuden lukemien erotus on pienempi kuin kumpikaan lukema, joten erotuksessa on suhteellisesti enemmän epävarmuutta: jos kummankin lukeman virhe on $1\,\text{ml}$, tilavuus on $12 \pm 2\,\text{ml}$ ja tiheys voi olla noin $7{,}6\text{–}10{,}7\,\tfrac{\text{g}}{\text{cm}^3}$.
+
+## fy1-7-L3-04
+**Kysytty:** miten mittalasiin jäänyt ilmakupla vaikuttaa vedensiirtomenetelmällä laskettuun tiheyteen.
+**Periaate:** Tiheys lasketaan kaavalla $\rho = \dfrac{m}{V}$, jossa tilavuus on lukemien erotus $V = V_2 - V_1$. Massa punnitaan erikseen, joten virhe voi tulla vain tilavuudesta. Ilmakupla syrjäyttää vettä kappaleen mukana, ja veden pinta nousee enemmän kuin pelkän kappaleen tilavuus vaatii.
+**Mallivastaus:** Mitattu tilavuus $V_2 - V_1$ on liian suuri, koska siihen sisältyy kuplan tilavuus. Massa $m$ on oikein, joten osamäärä $m : V$ tulee liian pieneksi: laskettu tiheys on todellista tiheyttä pienempi. Esimerkiksi jos kappaleen todellinen tilavuus on $10{,}0\,\text{cm}^3$ ja kupla on $1{,}0\,\text{cm}^3$, laskettu tiheys on vain $10 : 11 \approx 0{,}91$-kertainen todelliseen verrattuna. Kuplan koko vaikuttaa virheen suuruuteen mutta ei sen suuntaan. Virhe vältetään napauttamalla kappaletta, jotta kupla irtoaa, tai toistamalla mittaus.
+
+## fy1-7-L3-05
+**Annettu:** seoskappaleen tilavuus $V = 100\,\text{cm}^3$ ja massa $m = 520\,\text{g}$; taulukosta $\rho_\text{Cu} = 8{,}96\,\tfrac{\text{g}}{\text{cm}^3}$ ja $\rho_\text{Al} = 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}$; tilavuudet lasketaan yhteen
+**Kysytty:** kuparin tilavuus $V_\text{Cu}$ kuutiosenttimetreinä
+**Periaate:** Kokonaistilavuus on osien tilavuuksien summa ja kokonaismassa osien massojen summa. Kummankin osan massa on tiheys kertaa tilavuus. Tuntemattomia on kaksi, $V_\text{Cu}$ ja $V_\text{Al}$, joten tarvitaan kaksi yhtälöä: tilavuuksien ja massojen summa.
+**Kaava:** Tilavuuksille $V_\text{Cu} + V_\text{Al} = V$ ja massoille $\rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} V_\text{Al} = m$. Sijoittamalla $V_\text{Al} = V - V_\text{Cu}$ toiseen yhtälöön ratkeaa $V_\text{Cu} = \dfrac{m - \rho_\text{Al} V}{\rho_\text{Cu} - \rho_\text{Al}}$
+**Muunnokset:** Ei tarvita: massat ovat grammoina, tilavuudet kuutiosenttimetreinä ja tiheydet yksikössä $\text{g/cm}^3$.
+**Sijoitus:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8{,}96\,\tfrac{\text{g}}{\text{cm}^3} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6{,}26\,\tfrac{\text{g}}{\text{cm}^3}} = 39{,}9\,\text{cm}^3$
+**Vastaus:** $39{,}9\,\text{cm}^3$, kolme merkitsevää numeroa kuten massassa $520\,\text{g}$ ja tiheyksissä. Alumiinia on $V_\text{Al} = 100\,\text{cm}^3 - 39{,}9\,\text{cm}^3 = 60{,}1\,\text{cm}^3$.
+**Järkevyys:** Jos kappale olisi pelkkää alumiinia, sen massa olisi $270\,\text{g}$, ja pelkkää kuparia $896\,\text{g}$. Todellinen massa $520\,\text{g}$ on näiden välissä ja lähempänä alumiinia, joten kuparia on alle puolet tilavuudesta, kuten $39{,}9\,\text{cm}^3$. Tarkistus: $8{,}96 \cdot 39{,}9\,\text{g} + 2{,}70 \cdot 60{,}1\,\text{g} = 357{,}5\,\text{g} + 162{,}3\,\text{g} = 519{,}8\,\text{g} \approx 520\,\text{g}$.

@@ -24,4 +24,10 @@ r1 = (80.0 - 68.0) / 5.0                                  # first 5 min: 12,0 K 
 r2 = (52.0 - 47.0) / 5.0                                  # last 5 min: 5,0 K / 5,0 min = 1,0 K/min
 a["fy1-8-L3-02"] = r1 - r2                                # difference of the cooling rates = 1,4 K/min
 a["fy1-8-L3-03"] = (60 - 12) / (6 * 2.0)                  # time for repeats 48 min / (6 distances * 2,0 min) = 4,0 repeats
+# Exercise bank additions (teacher 2026-11-04): L1-06..08, L2-06 and L3-04 are multiple choice (no number)
+lt = [3.12, 3.08, 3.16, 3.10, 3.14]                       # L2-05: light ball, mean 15,60 s / 5 = 3,12 s, half-range (3,16 - 3,08) s / 2 = 0,04 s
+ht = [3.06, 3.12, 3.04, 3.10, 3.08]                       # heavy ball, mean 15,40 s / 5 = 3,08 s, half-range (3,12 - 3,04) s / 2 = 0,04 s
+a["fy1-8-L2-05"] = (sum(lt) / 5 - sum(ht) / 5) / ((max(lt) - min(lt)) / 2) * 100   # difference of means 0,04 s / 0,04 s = 100 %
+a["fy1-8-L2-07"] = (2.40 - 0.60) / (8.0 - 2.0)            # fitted line: v = 1,80 m / 6,0 s = 0,30 m/s (student's 3,3 is 1/v in s/m)
+a["fy1-8-L3-05"] = (1.0 / 0.050) / 2.0                    # T_drop >= 1,0 K / 0,050 = 20 K; t = 20 K / 2,0 K/min = 10 min
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

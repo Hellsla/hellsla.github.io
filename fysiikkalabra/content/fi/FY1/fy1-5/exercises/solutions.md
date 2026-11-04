@@ -118,3 +118,76 @@
 **Sijoitus:** $t = \dfrac{4{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 40\,\text{s}}{4{,}5\,\tfrac{\text{m}}{\text{s}} - 1{,}5\,\tfrac{\text{m}}{\text{s}}} = 60\,\text{s}$ ja $s = 1{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 60\,\text{s} = 90\,\text{m}$
 **Vastaus:** $90\,\text{m}$, kaksi merkitsevää numeroa kuten nopeuksissa.
 **Järkevyys:** Pyöräilijä ajaa $60\,\text{s} - 40\,\text{s} = 20\,\text{s}$, ja $4{,}5\,\text{m/s} \cdot 20\,\text{s} = 90\,\text{m}$, sama tulos. Toinen tarkistus: kävelijän etumatka $40\,\text{s}$ jälkeen on $1{,}5 \cdot 40 = 60\,\text{m}$, ja pyöräilijä kuroo sen umpeen nopeuserolla $3{,}0\,\text{m/s}$ ajassa $60 : 3{,}0 = 20\,\text{s}$.
+
+## fy1-5-L1-06
+**Kysytty:** mitä $(t, s)$-kuvaajan suoran kulmakerroin kertoo tasaisesta liikkeestä.
+**Periaate:** Tasaisessa liikkeessä $(t, s)$-kuvaaja on suora. Kulmakerroin on paikan muutos jaettuna aikavälillä, $\Delta s : \Delta t$, ja se on kappaleen nopeus $v$ (yksikkö m/s). Alkupaikka $s_0$ on suoran ja $s$-akselin leikkauskohta, ei kulmakerroin.
+**Mallivastaus:** Kulmakerroin kertoo kävelijän nopeuden. Mitä jyrkempi suora on, sitä suurempi nopeus on. Se ei ole alkupaikka (leikkauskohta) eikä kokonaismatka (pelkkä $\Delta s$), ja osamäärä $s : t$ on nopeus vain, kun suora kulkee origon kautta.
+
+## fy1-5-L1-07
+**Annettu:** nopeus $v = 0{,}80\,\text{m/s}$ vakiona aikavälillä $0\,\text{s} - 12\,\text{s}$, joten aikaväli on $t = 12\,\text{s}$
+**Kysytty:** kuljettu matka $\Delta s$ metreinä
+**Periaate:** $(t, v)$-kuvaajassa vaakasuora viiva on suorakulmion yläreuna. Suorakulmion korkeus on nopeus $v$ ja leveys aika $t$, joten sen pinta-ala $vt$ on tasaisessa liikkeessä kuljettu matka.
+**Kuvaajan lukeminen:** Korkeus on $v = 0{,}80\,\text{m/s}$ ja leveys $t = 12\,\text{s} - 0\,\text{s} = 12\,\text{s}$.
+**Kaava:** $\Delta s = vt$ (suorakulmion pinta-ala = korkeus $\cdot$ leveys)
+**Muunnokset:** Ei tarvita: nopeus on m/s ja aika sekunteina, ja $\tfrac{\text{m}}{\text{s}} \cdot \text{s} = \text{m}$.
+**Sijoitus:** $\Delta s = 0{,}80\,\tfrac{\text{m}}{\text{s}} \cdot 12\,\text{s} = 9{,}6\,\text{m}$
+**Vastaus:** $9{,}6\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $0{,}80\,\text{m/s}$ ja ajassa $12\,\text{s}$.
+**Järkevyys:** Nopeus $0{,}80\,\text{m/s}$ on alle metri sekunnissa, joten $12\,\text{s}$:ssa matka on alle $12\,\text{m}$. Sama tulos saadaan kaavalla $s = vt$, joka on tasaisen liikkeen perusyhtälö.
+
+## fy1-5-L1-08
+**Annettu:** matka $s = 2{,}4\,\text{km}$, aika $t = 16\,\text{min}$; liike on tasaista ja alkaa nollakohdasta
+**Kysytty:** nopeus $v$ yksikössä m/s
+**Periaate:** Tasaisessa liikkeessä nopeus on kuljettu matka jaettuna siihen kuluneella ajalla. Kilometrit ja minuutit muunnetaan metreiksi ja sekunneiksi ennen jakamista.
+**Kaava:** $s = vt$, josta $v = \dfrac{s}{t}$
+**Muunnokset:** sijoitetaan $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{min} = 60\,\text{s}$: $s = 2{,}4 \cdot 1000\,\text{m} = 2400\,\text{m}$ ja $t = 16 \cdot 60\,\text{s} = 960\,\text{s}$.
+**Sijoitus:** $v = \dfrac{2400\,\text{m}}{960\,\text{s}} = 2{,}5\,\tfrac{\text{m}}{\text{s}}$
+**Vastaus:** $2{,}5\,\text{m/s}$, kaksi merkitsevää numeroa kuten tiedoissa $2{,}4\,\text{km}$ ja $16\,\text{min}$.
+**Järkevyys:** Tarkistus takaisin: $2{,}5\,\text{m/s} \cdot 960\,\text{s} = 2400\,\text{m}$. Nopeus on $9{,}0\,\text{km/h}$, mikä sopii rauhalliseen pyöräilyyn.
+
+## fy1-5-L2-05
+**Annettu:** taulukon mittauspisteet $(t;\ x)$: $(0{,}0\,\text{s};\ 1{,}2\,\text{m})$, $(1{,}0\,\text{s};\ 2{,}7\,\text{m})$, $(2{,}0\,\text{s};\ 3{,}9\,\text{m})$, $(3{,}0\,\text{s};\ 5{,}5\,\text{m})$, $(4{,}0\,\text{s};\ 6{,}7\,\text{m})$ ja $(5{,}0\,\text{s};\ 8{,}3\,\text{m})$; kävelijä liikkuu tasaisesti
+**Kysytty:** kävelijän paikka $x$ hetkellä $t = 12\,\text{s}$ metreinä
+**Periaate:** Tasaisessa liikkeessä paikka on ajan lineaarinen funktio $x = x_0 + vt$. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten suora sovitetaan pisteiden joukon keskeltä ja nopeus luetaan sitä pitkin.
+**Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{s};\ 1{,}2\,\text{m})$ ja $(5{,}0\,\text{s};\ 8{,}2\,\text{m})$ kautta. Ne luetaan suoralta ja valitaan kaukana toisistaan. Alkupaikka on $x_0 = 1{,}2\,\text{m}$, koska suora leikkaa $x$-akselin siinä.
+**Kaava:** $v = \dfrac{\Delta x}{\Delta t}$ ja $x = x_0 + vt$
+**Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
+**Sijoitus:** $v = \dfrac{8{,}2\,\text{m} - 1{,}2\,\text{m}}{5{,}0\,\text{s} - 0\,\text{s}} = 1{,}4\,\tfrac{\text{m}}{\text{s}}$ ja $x = 1{,}2\,\text{m} + 1{,}4\,\tfrac{\text{m}}{\text{s}} \cdot 12\,\text{s} = 1{,}2\,\text{m} + 16{,}8\,\text{m} = 18{,}0\,\text{m}$
+**Vastaus:** noin $18\,\text{m}$, kaksi merkitsevää numeroa. Silmämääräinen sovitus vaihtelee, joten noin $17{,}5\text{–}18{,}5\,\text{m}$ on hyvä vastaus. Ennuste on mallin arvo, ei mittaus: hetki $12\,\text{s}$ on mitatun alueen $0\,\text{s} - 5\,\text{s}$ ulkopuolella, ja se on oikein vain, jos kävelijä jatkaa samalla nopeudella. Tämä on oletus, jota mittaus ei ole tarkistanut.
+**Järkevyys:** Nopeus $1{,}4\,\text{m/s}$ on noin $5\,\text{km/h}$, tavallinen kävelyvauhti. Ennuste ylittää viimeisen mittauksen $8{,}3\,\text{m}$ selvästi, kuten pitääkin, koska $12\,\text{s}$ on yli kaksi kertaa niin pitkä aika kuin mittausalue.
+
+## fy1-5-L2-06
+**Annettu:** alkupaikka $s_0 = 8{,}0\,\text{m}$, paikka $s_1 = 11\,\text{m}$ hetkellä $t_1 = 2{,}0\,\text{s}$; oppilaan päätelmä on $s = 33\,\text{m}$ hetkellä $t_2 = 6{,}0\,\text{s}$
+**Kysytty:** oppilaan virhe ja oikea paikka $s$ hetkellä $6{,}0\,\text{s}$ metreinä
+**Periaate:** Tasaisessa liikkeessä vain kuljettu matka $\Delta s = vt$ on suoraan verrannollinen aikaan. Paikka $s = s_0 + vt$ on verrannollinen aikaan vain, kun $s_0 = 0$. Oppilas sekoitti paikan ja matkan: hän kolminkertaisti paikan, vaikka olisi pitänyt kolminkertaistaa matka.
+**Kaava:** $v = \dfrac{\Delta s}{\Delta t}$ ja $s = s_0 + vt$
+**Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
+**Sijoitus:** $v = \dfrac{11\,\text{m} - 8{,}0\,\text{m}}{2{,}0\,\text{s}} = 1{,}5\,\tfrac{\text{m}}{\text{s}}$ ja $s = 8{,}0\,\text{m} + 1{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 6{,}0\,\text{s} = 8{,}0\,\text{m} + 9{,}0\,\text{m} = 17\,\text{m}$
+**Vastaus:** Kärry on kohdassa $17\,\text{m}$, ei kohdassa $33\,\text{m}$. Virhe on se, että paikka kolminkertaistettiin: alkupaikka $s_0 = 8{,}0\,\text{m}$ ei ole nolla, joten vain matka kolminkertaistuu ($3{,}0\,\text{m} \to 9{,}0\,\text{m}$), ja alkupaikka on lisättävä siihen.
+**Järkevyys:** Matka kolminkertaistui: $3{,}0\,\text{m} \cdot 3 = 9{,}0\,\text{m}$. Oppilaan vastaus $33\,\text{m}$ vaatisi kärryltä matkan $25\,\text{m}$ kuudessa sekunnissa eli nopeuden $4{,}2\,\text{m/s}$, mikä on eri nopeus kuin annetuista tiedoista saatu $1{,}5\,\text{m/s}$.
+
+## fy1-5-L2-07
+**Annettu:** nopeus noin $v = 0{,}80\,\text{m/s}$, ajanoton epävarmuus $u_t = 0{,}2\,\text{s}$ (sama kaikilla ajoilla), suhteellisen epävarmuuden raja $2{,}0\,\%$
+**Kysytty:** pienin matka $s$ metreinä
+**Periaate:** Ajan suhteellinen epävarmuus on $u_t : t$. Koska $u_t$ on vakio, suhteellinen epävarmuus pienenee, kun mitattu aika kasvaa. Raja antaa pienimmän ajan, ja tasaisessa liikkeessä matka on nopeus kertaa aika.
+**Kaava:** $\dfrac{u_t}{t} \le 0{,}020$, josta $t \ge \dfrac{u_t}{0{,}020}$, ja $s = vt$
+**Muunnokset:** Ei tarvita: ajat ovat sekunteina ja nopeus m/s. Prosentti on $2{,}0\,\% = 0{,}020$.
+**Sijoitus:** $t \ge \dfrac{0{,}2\,\text{s}}{0{,}020} = 10\,\text{s}$ ja $s = 0{,}80\,\tfrac{\text{m}}{\text{s}} \cdot 10\,\text{s} = 8{,}0\,\text{m}$
+**Vastaus:** Auton on kuljettava vähintään $8{,}0\,\text{m}$. Pitkä matka parantaa mittausta, koska se kestää kauemmin ja ajanoton epävarmuus $0{,}2\,\text{s}$ on silloin pienempi osa koko ajasta. Lyhyellä matkalla, esimerkiksi $1{,}0\,\text{m}$ ($t = 1{,}25\,\text{s}$), suhteellinen epävarmuus olisi $16\,\%$.
+**Järkevyys:** Tarkistus: ajalla $10\,\text{s}$ suhteellinen epävarmuus on $0{,}2\,\text{s} : 10\,\text{s} = 0{,}020 = 2{,}0\,\%$, joten raja täyttyy juuri. Matka $8{,}0\,\text{m}$ mahtuu koulun käytävälle.
+
+## fy1-5-L3-04
+**Annettu:** taulukon mittauspisteet $(t;\ x)$: $(0\,\text{s};\ 0\,\text{m})$, $(5{,}0\,\text{s};\ 15\,\text{m})$, $(10\,\text{s};\ 30\,\text{m})$, $(15\,\text{s};\ 35\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$, $(30\,\text{s};\ 50\,\text{m})$ ja $(40\,\text{s};\ 60\,\text{m})$
+**Kysytty:** keskinopeus $v_\text{ka}$ aikavälillä $0\,\text{s} - 40\,\text{s}$ ja syy, miksi se ei ole osien nopeuksien keskiarvo
+**Periaate:** Kuvaajassa pisteet asettuvat kahdelle suoralle osalle, joiden kulmakertoimet ovat eri suuret, joten yksi suora ei sovi koko liikkeeseen. Liike mallinnetaan paloittain: kummallakin osalla on oma tasainen nopeutensa. Keskinopeus on kokonaismatka jaettuna kokonaisajalla.
+**Kuvaajan lukeminen:** Ensimmäiset kolme pistettä, $0\,\text{s} - 10\,\text{s}$, ovat samalla jyrkällä suoralla. Hetkestä $10\,\text{s}$ alkaen suora on loivempi, ja pisteet $(10\,\text{s};\ 30\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$ ja $(40\,\text{s};\ 60\,\text{m})$ ovat samalla loivalla suoralla. Nopeus muuttuu siis hetkellä $t = 10\,\text{s}$.
+**Kaava:** osan nopeus $v = \dfrac{\Delta x}{\Delta t}$ ja keskinopeus $v_\text{ka} = \dfrac{\Delta x_\text{yht}}{\Delta t_\text{yht}}$
+**Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
+**Sijoitus:** Osa 1: $v_1 = \dfrac{30\,\text{m} - 0\,\text{m}}{10\,\text{s} - 0\,\text{s}} = 3{,}0\,\tfrac{\text{m}}{\text{s}}$. osa 2: $v_2 = \dfrac{60\,\text{m} - 30\,\text{m}}{40\,\text{s} - 10\,\text{s}} = 1{,}0\,\tfrac{\text{m}}{\text{s}}$. koko matka: $\Delta x_\text{yht} = 60\,\text{m} - 0\,\text{m} = 60\,\text{m}$ ja $\Delta t_\text{yht} = 40\,\text{s}$, joten $v_\text{ka} = \dfrac{60\,\text{m}}{40\,\text{s}} = 1{,}5\,\tfrac{\text{m}}{\text{s}}$.
+**Vastaus:** $1{,}5\,\text{m/s}$, kaksi merkitsevää numeroa kuten tiedoissa. Osien nopeuksien keskiarvo olisi $(3{,}0 + 1{,}0)\,\text{m/s} : 2 = 2{,}0\,\text{m/s}$, mutta se olisi väärin, koska osat kestävät eri ajan: nopeus $3{,}0\,\text{m/s}$ on voimassa vain $10\,\text{s}$ ja nopeus $1{,}0\,\text{m/s}$ peräti $30\,\text{s}$.
+**Järkevyys:** Keskinopeus $1{,}5\,\text{m/s}$ on lähempänä hitaampaa nopeutta $1{,}0\,\text{m/s}$ kuin nopeampaa $3{,}0\,\text{m/s}$, kuten pitääkin, koska suurin osa ajasta ajetaan hitaasti.
+
+## fy1-5-L3-05
+**Kysytty:** voiko pystysuora viiva esittää oikean kappaleen liikettä $(t, x)$-kuvaajassa.
+**Periaate:** Kappaleella on jokaisella hetkellä vain yksi paikka, joten jokaista ajan arvoa $t$ vastaa yksi paikan arvo $x$. Nopeus on kuvaajan kulmakerroin $\Delta x : \Delta t$. Pystysuorassa viivassa aika ei muutu ($\Delta t = 0$) mutta paikka muuttuu ($\Delta x \neq 0$), joten osamäärä ei ole mikään luku.
+**Mallivastaus:** Ei voi. Pystysuora viiva esittäisi kappaletta, joka olisi samalla hetkellä kahdessa eri paikassa ($2{,}0\,\text{m}$ ja $5{,}0\,\text{m}$) ja siirtyisi niiden välillä ajassa nolla, mikä vaatisi äärettömän nopeuden. Todellinen liike voi olla hyvin nopeaa, mutta silloin kuvaaja on hyvin jyrkkä, ei pystysuora. Pysähtynyt kappale piirtyy vaakasuorana viivana, koska sen paikka ei muutu ajan kuluessa.
