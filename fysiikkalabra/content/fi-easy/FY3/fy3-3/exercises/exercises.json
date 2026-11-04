@@ -53,7 +53,7 @@
     {
       "id": "fy3-3-L2-02",
       "level": 2,
-      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on 90,0 kPa lämpötilassa $0\\,{}^\\circ\\text{C}$. Lämpötilassa $100\\,{}^\\circ\\text{C}$ paine on 123 kPa. Oleta, että paine riippuu lämpötilasta lineaarisesti. Mikä on paine lämpötilassa $35\\,{}^\\circ\\text{C}$?",
+      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on $90{,}0\\,\\text{kPa}$ lämpötilassa $0\\,{}^\\circ\\text{C}$. Lämpötilassa $100\\,{}^\\circ\\text{C}$ paine on $123\\,\\text{kPa}$. Oleta, että paine riippuu lämpötilasta lineaarisesti. Mikä on paine lämpötilassa $35\\,{}^\\circ\\text{C}$?",
       "answer": 102,
       "unit": "kPa",
       "tolerance": 0.02
@@ -80,7 +80,7 @@
     {
       "id": "fy3-3-L3-01",
       "level": 3,
-      "text": "Pyörän renkaassa ilman kokonaispaine on 300 kPa lämpötilassa $15\\,{}^\\circ\\text{C}$. (Kokonaispaine ei ole ylipaine.) Rengas ei vuoda, ja sen tilavuus pysyy samana. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine renkaassa on lämpötilassa $35\\,{}^\\circ\\text{C}$?",
+      "text": "Pyörän renkaassa ilman kokonaispaine on $300\\,\\text{kPa}$ lämpötilassa $15\\,{}^\\circ\\text{C}$. (Kokonaispaine ei ole ylipaine.) Rengas ei vuoda, ja sen tilavuus pysyy samana. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine renkaassa on lämpötilassa $35\\,{}^\\circ\\text{C}$?",
       "answer": 321,
       "unit": "kPa",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy3-3-L3-02",
       "level": 3,
-      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on 150 kPa lämpötilassa $27{,}0\\,{}^\\circ\\text{C}$. Astiaa lämmitetään, kunnes paine on 200 kPa. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä on loppulämpötila celsiusasteina?",
+      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on $150\\,\\text{kPa}$ lämpötilassa $27{,}0\\,{}^\\circ\\text{C}$. Astiaa lämmitetään, kunnes paine on $200\\,\\text{kPa}$. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä on loppulämpötila celsiusasteina?",
       "answer": 127,
       "unit": "°C",
       "tolerance": 0.02

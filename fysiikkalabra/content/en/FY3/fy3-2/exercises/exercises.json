@@ -3,7 +3,7 @@
     {
       "id": "fy3-2-L1-01",
       "level": 1,
-      "text": "A moped is pushed in the direction of motion with an 80 N force over a distance of 25 metres. How much work does the pushing force do?",
+      "text": "A moped is pushed in the direction of motion with an $80\\,\\text{N}$ force over a distance of 25 metres. How much work does the pushing force do?",
       "answer": 2.0,
       "unit": "kJ",
       "tolerance": 0.02
@@ -11,7 +11,7 @@
     {
       "id": "fy3-2-L1-02",
       "level": 1,
-      "text": "A bookcase weighs 150 N. The bookcase is lifted slowly from the floor to a height of $1.2\\,\\text{m}$. How much work does the lifting force do?",
+      "text": "A bookcase weighs $150\\,\\text{N}$. The bookcase is lifted slowly from the floor to a height of $1.2\\,\\text{m}$. How much work does the lifting force do?",
       "answer": 180,
       "unit": "J",
       "tolerance": 0.02
@@ -36,7 +36,7 @@
     {
       "id": "fy3-2-L1-05",
       "level": 1,
-      "text": "A skier pulls a sled at a steady speed of $3.0\\,\\text{m/s}$ with a 20 N force in the direction of motion. What is the power of the pulling force?",
+      "text": "A skier pulls a sled at a steady speed of $3.0\\,\\text{m/s}$ with a $20\\,\\text{N}$ force in the direction of motion. What is the power of the pulling force?",
       "answer": 60,
       "unit": "W",
       "tolerance": 0.02
@@ -46,7 +46,7 @@
     {
       "id": "fy3-2-L2-01",
       "level": 2,
-      "text": "A tractor does $45\\,\\text{kJ}$ of work by pulling a load with a 1.5 kN force in the direction of motion. How far does the load move?",
+      "text": "A tractor does $45\\,\\text{kJ}$ of work by pulling a load with a $1.5\\,\\text{kN}$ force in the direction of motion. How far does the load move?",
       "answer": 30,
       "unit": "m",
       "tolerance": 0.02
@@ -70,7 +70,7 @@
     {
       "id": "fy3-2-L2-04",
       "level": 2,
-      "text": "A cart is pushed by a force in the direction of motion. The force is first 10 N over the distance $0\\text{–}2.0\\,\\text{m}$. After that the force increases steadily from 10 N to 30 N over the distance $2.0\\text{–}6.0\\,\\text{m}$. Calculate the total work done by the force as the area under the $(s, F)$ graph.",
+      "text": "A cart is pushed by a force in the direction of motion. The force is first $10\\,\\text{N}$ over the distance $0\\text{–}2.0\\,\\text{m}$. After that the force increases steadily from $10\\,\\text{N}$ to $30\\,\\text{N}$ over the distance $2.0\\text{–}6.0\\,\\text{m}$. Calculate the total work done by the force as the area under the $(s, F)$ graph.",
       "answer": 100,
       "unit": "J",
       "tolerance": 0.02
@@ -80,7 +80,7 @@
     {
       "id": "fy3-2-L3-01",
       "level": 3,
-      "text": "A crate is pushed by a force in the direction of motion. The force increases steadily from zero to 40 N over the distance $0\\text{–}0.50\\,\\text{m}$, then stays at 40 N over the distance $0.50\\text{–}1.5\\,\\text{m}$ and decreases steadily to zero over the distance $1.5\\text{–}2.0\\,\\text{m}$. What is the average magnitude of the force with respect to distance over the whole $2.0\\,\\text{m}$? Hint: first calculate the total work as the area under the graph.",
+      "text": "A crate is pushed by a force in the direction of motion. The force increases steadily from zero to $40\\,\\text{N}$ over the distance $0\\text{–}0.50\\,\\text{m}$, then stays at $40\\,\\text{N}$ over the distance $0.50\\text{–}1.5\\,\\text{m}$ and decreases steadily to zero over the distance $1.5\\text{–}2.0\\,\\text{m}$. What is the average magnitude of the force with respect to distance over the whole $2.0\\,\\text{m}$? Hint: first calculate the total work as the area under the graph.",
       "answer": 30,
       "unit": "N",
       "tolerance": 0.02
