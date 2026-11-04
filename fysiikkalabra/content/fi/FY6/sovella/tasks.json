@@ -233,7 +233,7 @@
               "points": 1
             },
             {
-              "text": "Perustelee, että pienempi virta pienentää jännitehäviötä kaapelissa ($R_\\text{k} I$ pienenee), jolloin lampulle A jää suurempi jännite ja se palaa kirkkaammin, vaikka sen oma haara ei muuttunut.",
+              "text": "Perustelee, että pienempi virta pienentää jännitehäviötä kaapelissa ($R_\\text{k} I$ pienenee), jolloin lampulle A jää suurempi jännite ja se palaa kirkkaammin, ja että kaapeliin siirtyvä teho $R_\\text{k} I^2$ pienenee noin $5{,}0\\,\\text{W}$:sta $2{,}5\\,\\text{W}$:iin, joten kaapeli lämpenee vähemmän.",
               "tag": "concept",
               "points": 1
             },
