@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5473a624fb5e15a2
+CONTENT-HASH: bb96c17a45e037f6
 
 ## Blocking
 (none)
 
 ## Polish
-- Misconception: "as if it were filled with charge" compares to a second misconception; "as if it were a tank filled with charge" or drop it.
+- Misconception: "as if it were filled with charge" compares one misconception to another. Use "as if it were a tank filled with charge", or drop it.
 - The half-energy caveat is good; optionally add one clause on when it fails.
 
 ## Checked
-batch delta review (en): qualified half-energy statement and +Q/-Q correction repair the misconception; film-capacitor and bank photos have useful captions; chapter title fixed.
+Follow-up delta (2c31ff041): the Find-the-error feedback now states the condition ("When an empty capacitor is charged from a constant-voltage source"), consistent with the lesson. It still repairs the error and names the µF slip. Earlier: the +Q/−Q correction is sound, and the captions are useful.

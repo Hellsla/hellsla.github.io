@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e6a225e13958a986
+CONTENT-HASH: e43ea85aaa4a9edf
 
 ## Blocking
 (none)
 
 ## Polish
-- The 90 % region is what every figure shows, but the heading now says state; the sentence "The drawn region is an illustration, not the definition" carries it, keep.
-- STM photo follows the radial-distribution paragraph without a link; one clause tying it to seeing atoms would help.
+- Every figure shows the 90 % region while the heading says state. The sentence "The drawn region is an illustration, not the definition" carries it; keep it.
+- The STM photo has no link to the paragraph before it. One clause tying it to seeing atoms would help.
 
 ## Checked
-batch delta review (en): orbital defined as state/standing wave with the 90 % region as illustration; summary, misconception and the Tarkista question stay consistent; STM photo has a good alt text.
+Follow-up delta (2c31ff041): the learning goal "interpret an orbital as a quantum state of the electron and its picture as a region…" now matches the lesson's definition and reads clearly. Earlier: the summary, misconception and Tarkista question stay consistent.
+
+## Follow-up (uncommitted edit, hash e43ea85aaa4a9edf)
+- learn[1] is now "interpret an orbital as a quantum state of the electron and its picture as a region of chosen detection probability." It is one line, the same length as goals 1 and 3, and keeps both halves the lesson teaches: the orbital as a state, and the drawn region as a picture at a chosen probability (taught in the sim measurement series, check 1 and the 90 % explain task).
+- "chosen detection probability" is denser than the earlier wording, but the lesson unpacks it before the student is assessed on it (Key idea, Summary). Polish only.
+- No other content changed. Blocking: none.

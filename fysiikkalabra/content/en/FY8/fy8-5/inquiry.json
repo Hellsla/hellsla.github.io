@@ -3,7 +3,7 @@
   "contribution": "The state of an electron is described as a standing wave and as a probability distribution: from the measurement series of the simulation the student sees how random hits build up an orbital, what the $90\\,\\%$ boundary means and why the Bohr radius is the most common distance, and the numbers of orbitals in the shells connect to the electron configurations of chemistry.",
   "learn": [
     "explain how standing waves lead to the allowed states of an electron in an atom.",
-    "interpret an orbital as a quantum state of the electron and its picture as a region inside which the electron is detected with a chosen probability.",
+    "interpret an orbital as a quantum state of the electron and its picture as a region of chosen detection probability.",
     "calculate the number of orbitals and electrons in a shell and the energy of the photon produced in a transition."
   ],
   "prior": [

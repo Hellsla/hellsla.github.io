@@ -1,27 +1,29 @@
-VERDICT: FAIL
-CONTENT-HASH: 4d3ca50f138fdce2
+VERDICT: PASS
+CONTENT-HASH: 4b1233005b94d34d
 
-Full review (scope: the version passed is not in history). Changes of this round: $-18\,{}^\circ\text{C}$ is now the effective radiating temperature of a simple radiative-balance model, not a precise prediction of the surface temperature without greenhouse gases (Ydinajatus, misconception, Tiivistelmä, sim model box, koe-1 feedback, tarkistus-3 model).
+Follow-up review of the fix commit 2c31ff041 (delta from 4d3ca50f138fdce2, whose full review is kept below). Changes: ennuste-1's correct-option feedback and tarkistus-3 criterion 2 now give $-18\,{}^\circ\text{C}$ as the effective radiating temperature of a simple radiative-balance model beside the surface mean $+15\,{}^\circ\text{C}$.
 
 ## Blocking
 
-1. inquiry.json:63 (ennuste-1, correct option's feedback) — **B.** "Ilman luonnollista kasvihuoneilmiötä keskilämpötila olisi noin $-18\,{}^\circ\text{C}$ todellisen $+15\,{}^\circ\text{C}$:n sijaan" is exactly the reading the theory now rules out ("Lukua $-18\,{}^\circ\text{C}$ ei kuitenkaan pidä lukea täsmälliseksi ennusteeksi pintalämpötilasta, jos kasvihuonekaasut poistettaisiin"). Fix: "Maan yksinkertainen säteilytasapainomalli antaa efektiiviseksi säteilylämpötilaksi noin $-18\,{}^\circ\text{C}$, kun maanpinnan keskilämpötila on noin $+15\,{}^\circ\text{C}$; ero, noin $33\,\text{K}$, havainnollistaa kasvihuoneilmiön merkitystä."
+None.
 
 ## Polish
 
-1. inquiry.json ennuste-1 last distractor ("yhdessä ne nostavat lämpötilaa … noin $33\,\text{K}$") and tarkistus-1 third distractor ("se nostaa lämpötilaa noin $33\,\text{K}$"): word as "ero, noin $33\,\text{K}$, havainnollistaa …" for one wording everywhere.
-2. lesson.md Ydinajatus — "ilman sitä merien vesi olisi jäässä" now follows the caveat that the no-greenhouse case is not precisely predictable; "olisi todennäköisesti jäässä" keeps it consistent. (C otherwise.)
+1. inquiry.json:71 (ennuste-1 last distractor, "yhdessä ne nostavat lämpötilaa … noin $33\,\text{K}$") and :410 (tarkistus-1, "se nostaa lämpötilaa noin $33\,\text{K}$"): "ero, noin $33\,\text{K}$, havainnollistaa …" would give one wording everywhere (C).
+2. lesson.md Ydinajatus — "ilman sitä merien vesi olisi jäässä" after the caveat; "olisi todennäköisesti jäässä" keeps it consistent (C).
 
 ## Checked
 
-- New wording ($T_\text{eff} \approx 255\,\text{K}$ from a simple radiative balance; clouds/ice would change) is physically right and consistent in lesson.md, the sim model box, koe-1 feedback and tarkistus-3 model.
+- Earlier blocking item resolved: inquiry.json:63 now reads as proposed; physically right ($T_\text{eff} \approx 255\,\text{K}$, $288 - 255 = 33\,\text{K}$, not a prediction of the no-greenhouse surface).
+- tarkistus-3 criterion 2 now asks only what the model answer (:501) states ("säteilytasapainomallin antamassa noin $-18\,{}^\circ\text{C}$:ssa").
+- Consistency: grep of "-18" in lesson.md and inquiry.json — Ydinajatus (:136), misconception (:328), Tiivistelmä (:331), sim model box (:112), koe-1 (:154), ennuste-1, tarkistus-3 — all use the model wording; no counterfactual surface-temperature claim remains in the lesson.
 - Mechanism: shortwave largely transmitted, thermal IR absorbed and re-emitted, N₂/O₂ nearly transparent; CO₂ $280 \to 424\,\text{ppm}$ (WMO 2025), "alle puoli promillea" — right.
-- Combustion C + O₂ → CO₂, hydrogen → water; biomass carbon timing and IPCC's zero-combustion convention explained — right.
+- Combustion C + O₂ → CO₂, hydrogen → water; biomass carbon timing and IPCC's zero-combustion convention — right.
 - AR5 WG III Annex III medians (820, 490, 230, 41–48, 24, 12, 11–12 g/kWh) correct; $820:12 \approx 68$.
 - Recomputed: example $2{,}352\,\text{t}$ (wind $58\,\text{kg}$, ×41); virhe $43\,\text{kg}$; siirto $49\,000\,\text{t}$ (mistakes $0{,}049$, $4{,}9\cdot10^{10}$); tarkistus-2 $15{,}9\,\text{kg}$ (mistakes $13{,}2$, $15\,900$); perustele $1200$ vs $49\,000\,\text{t}$; exit $120\,\text{g}$, ×70. All agree with lesson-answers.py.
-- Each choice has exactly one correct option; check-c3 (per-kWh comparison) and check-c2 (biomass) feedback right.
-- Photo captions (GISTEMP 2025 vs 1951–1980 anomaly; ISS night image) — right.
+- Each choice has exactly one correct option; photo captions right.
+- Hash same at start and end.
 
 ## Shared issues
 
-- exercises/solutions.md:125 (outside this review) still says the effect "nostaa maapallon keskilämpötilan arvosta noin $-18\,{}^\circ\text{C}$ arvoon noin $+15\,{}^\circ\text{C}$"; the exercise set should get the same wording.
+- Outside this hash: exercises/solutions.md:125 ("nostaa … arvosta noin $-18\,{}^\circ\text{C}$ arvoon noin $+15\,{}^\circ\text{C}$") and exercises.json:69 keep the older wording; align them when the exercise set is next edited.

@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ac40aeea284452d7
+CONTENT-HASH: fda82020fb029110
 
 ## Blocking
 (none)
 
 ## Polish
-- "vakiojännitelähde" is a difficult word: explain it in the sentence ("lähde, jonka jännite pysyy samana").
 - "jossa on resistanssia": "jossa on vastuksia" is easier.
 
 ## Checked
-batch delta review (fi-easy, NOTES 12): half-energy caveat and the +Q/-Q correction are in short sentences; film-capacitor and bank captions plain; physics unchanged.
+Follow-up delta (2c31ff041, NOTES §12): the earlier polish is fixed. *Vakiojännitelähde* is now explained in the sentence where it first appears ("eli lähteestä, jonka jännite pysyy samana"), and it appears nowhere else. The Etsi virhe feedback says the same in plain words and is split into short sentences. The physics matches fi.

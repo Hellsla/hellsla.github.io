@@ -1,14 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 6f5c46b3a62a89ae
+VERDICT: PASS
+CONTENT-HASH: 981a7d725fe69627
 
 ## Blocking
-- [Major] solutions.md fy7-2-L1-02, **Annettu** — the new inline formula `$|q| = e = 1{,}602 \cdot 10^{-19}\,\text{C}$` breaks onto two lines (after `|q| =`) at 360, 390 and 1280 px (captures q-390-0, ex2-1280-0: "|q| =" ends one line, "e = 1,602 · 10^-19 C" starts the next); an inline formula must never wrap (teacher rule) and the split leaves a dangling equals sign — fix: keep it as one unbreakable group, `${|q| = e = 1{,}602 \cdot 10^{-19}\,\text{C}}$` (a braced group is not split by KaTeX), or write it as two short formulas, `varauksen suuruus $|q| = e$, missä $e = 1{,}602 \cdot 10^{-19}\,\text{C}$`, and check again at 390 px.
+(none)
 
 ## Polish
-- [Minor] solutions.md — the same wrapping already occurs in untouched Annettu lines (`q = e = 1{,}602 ...`, `2e = 3{,}204 ...`, `m_\alpha = 6{,}645 ...`, `1\,\text{u} = ...`); the same braced-group fix would cover them.
+- [Minor] solutions.md — earlier note: other untouched inline formulas break; measured now, in the exercises only `m_\alpha = 6{,}645 \cdot 10^{-27}\,\text{kg}` (L3-03, at 360, 390 and 1280 px) and `m = 1{,}673 \cdot 10^{-27}\,\text{kg}` (L2-04, 360 px) — brace them the same way, `${m_\alpha = 6{,}645 \cdot 10^{-27}\,\text{kg}}$`. (`q = e = …`, `2e = …`, `1\,\text{u} = …` break in the lesson text, see review/visual.md.)
+- [Minor] solutions.md — long substitution chains (L1-01, L1-05, L2-02) shown as eq-chain rows still break inside a row at 360/390 px (by design of mathlayout.py); if the teacher's never-wrap rule covers chain rows too, split them at meaningful boundaries.
 
 ## Checked
-- Delta: changed lines of L1-02 (Annettu, Kaava `|q|vB = \dfrac{mv^2}{r}`, `r = \dfrac{mv}{|q|B}` at 390 px, capture ex-390-0: fractions and bars read correctly) and the chapter-reference edits in L2-03 and L3-02 (plain italic text, no layout effect). Measured every inline formula of the built page at 360, 390 and 1280 px for line breaks; only the L1-02 Annettu line is new.
+- Follow-up of the FAIL on L1-02 Annettu: `${|q| = e = …\,\text{C}}$` is now braced. `build.py fy7-2` (exercises from the working tree), then every inline .katex measured with getClientRects().length at 360, 390 and 1280 px, every level and solution open: the formula is ONE line at all three widths (also in fi, en and fi-easy). Captures opened: own element captures of the Annettu paragraph at 360, 390 and 1280 px (scratchpad caps/fi-fy7-2-*): `|q| = e = 1,602 · 10⁻¹⁹ C,` stays together with its comma; no clipping, no overflow.
+- `screenshot.py fy7-2 --if-stale`: fresh captures; diff of solutions.md read (only the braces changed).
+- Earlier: Delta: changed lines of L1-02 (Annettu, Kaava `|q|vB = \dfrac{mv^2}{r}`, `r = \dfrac{mv}{|q|B}` at 390 px, capture ex-390-0: fractions and bars read correctly) and the chapter-reference edits in L2-03 and L3-02 (plain italic text, no layout effect). Measured every inline formula of the built page at 360, 390 and 1280 px for line breaks; only the L1-02 Annettu line is new.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

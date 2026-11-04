@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 922733549dfa158a
+CONTENT-HASH: 8c4a1518d4ca3b47
 
 ## Blocking
 (none)
 
 ## Polish
-- Heading is now "Orbitaali kuvaa elektronin kvanttitilaa" yet the 90 % region is what every figure shows; the sentence "Piirretty alue on havainnollistus, ei määritelmä" carries this well, keep it.
-- STM photo sits after the radial-distribution paragraph without a link to it; one clause linking to seeing atoms would help.
+- The new learning goal "tulkitsemaan orbitaalin elektronin kvanttitilaksi ja sen kuvan alueeksi…" is hard to parse: "orbitaalin elektronin" reads as one genitive chain. Suggested: "tulkitsemaan, että orbitaali on elektronin kvanttitila ja sen kuva on alue, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä."
+- The heading says "Orbitaali kuvaa elektronin kvanttitilaa", yet every figure shows the 90 % region. The sentence "Piirretty alue on havainnollistus, ei määritelmä" carries this well; keep it.
+- The STM photo has no link to the paragraph before it. One clause linking it to seeing atoms would help.
 
 ## Checked
-batch delta review (fi): orbital defined as state/standing wave with the 90 % region as illustration; summary, misconception and Tarkista question 'Mitä pallo esittää?' remain consistent with the new definition; STM photo has a good alt text.
+Follow-up delta (2c31ff041): the learning goal now matches the lesson's definition (orbital = state; region = its picture), so the goals and the theory are consistent. Earlier: the summary, misconception and the Tarkista question "Mitä pallo esittää?" are consistent.

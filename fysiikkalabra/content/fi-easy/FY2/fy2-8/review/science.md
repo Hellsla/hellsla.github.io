@@ -1,14 +1,28 @@
-VERDICT: FAIL
-CONTENT-HASH: 7c190a2fcc2fb406
+VERDICT: PASS
+CONTENT-HASH: 0820bc39ae57687e
+
+Follow-up review of the fix commit 2c31ff041 (delta from 7c190a2fcc2fb406). Changes: ennuste-1 correct-option feedback, tarkistus-3 criterion 2, and Ydinajatus now defines **säteilytasapainomalli** (Maa lähettää avaruuteen yhtä paljon energiaa kuin saa Auringolta) and **efektiivinen säteilylämpötila**.
 
 ## Blocking
-- B (internal consistency) — content/fi-easy/FY2/fy2-8/inquiry.json:63 — the retrieval feedback still says "Ilman luonnollista kasvihuoneilmiötä keskilämpötila olisi noin $-18\,{}^\circ\text{C}$ todellisen $+15\,{}^\circ\text{C}$:n sijaan. Se on noin $33\,\text{K}$ alempi." The corrected lesson now says the $-18\,{}^\circ\text{C}$ value is the effective radiating temperature of a simple radiative-balance model, "ei tarkka ennuste pinnan lämpötilasta ilman kasvihuonekaasuja". — Fix: "Maan yksinkertainen säteilytasapainomalli antaa efektiiviseksi säteilylämpötilaksi noin $-18\,{}^\circ\text{C}$, mutta maanpinnan keskilämpötila on noin $+15\,{}^\circ\text{C}$. Ero, noin $33\,\text{K}$, näyttää kasvihuoneilmiön merkityksen."
-- B (internal consistency, rubric) — content/fi-easy/FY2/fy2-8/inquiry.json:497 — the criterion "luonnollinen ilmiö nostaa keskilämpötilan noin $-18\,{}^\circ\text{C}$:sta noin $+15\,{}^\circ\text{C}$:een" still presents −18 °C as the surface temperature without greenhouse gases, while the model answer under it (l. 501) was corrected. — Fix: "Mainitsin, että maanpinta on noin $+15\,{}^\circ\text{C}$, vaikka yksinkertainen säteilytasapainomalli antaa vain noin $-18\,{}^\circ\text{C}$."
 
-(The fi version has the same two lines. Outside this review's hash: exercises/exercises.json:69 says "keskilämpötila on noin $+15\,{}^\circ\text{C}$ eikä noin $-18\,{}^\circ\text{C}$"; align it with the model-answer wording when the exercise set is next edited.)
+None.
 
 ## Polish
-- lesson.md: "Ilman sitä merien vesi olisi jäässä" stays acceptable (C), but since the −18 °C is now hedged, "olisi todennäköisesti jäässä" would match the new caution.
+- lesson.md:136 — "Ilman sitä merien vesi olisi jäässä" (C); "olisi todennäköisesti jäässä" would match the caveat.
+- inquiry.json:71, :410 — "nostaa lämpötilaa noin $33\,\text{K}$" could become "ero, noin $33\,\text{K}$, …" (C).
 
 ## Checked
-batch delta review: lesson theory, misconception, Tiivistelmä, sim model box and ennuste feedback now carry the effective-radiating-temperature wording; GISTEMP 2025 anomaly map caption (base 1951–1980, grey = no data, not a photo) correct; numbers unchanged.
+- Both earlier blocking items resolved: inquiry.json:63 ("Maan yksinkertainen säteilytasapainomalli antaa efektiiviseksi säteilylämpötilaksi noin $-18\,{}^\circ\text{C}$. Maanpinnan keskilämpötila on kuitenkin noin $+15\,{}^\circ\text{C}$. Ero on noin $33\,\text{K}$ …") and :497 criterion now matching its model answer (:501). Physically right.
+- New Ydinajatus definition is right: in balance the energy sent to space (reflected plus emitted) equals what the Earth receives; with albedo ≈ 0,3 that gives $\approx 255\,\text{K}$.
+- Consistency: grep of "-18" — Ydinajatus, misconception (:328), Tiivistelmä (:331), sim model box (:112), koe-1 (:154), ennuste-1, tarkistus-3 all say the same.
+- GISTEMP 2025 anomaly map caption (base 1951–1980, grey = no data, not a photo) correct; numbers unchanged.
+- Hash same at start and end.
+
+## Shared issues
+- Outside this hash: exercises/exercises.json:69 and solutions.md:125 keep the older wording.
+
+## Follow-up (uncommitted edit, hash 70f1856a80c78f26 → 0820bc39ae57687e)
+- Changes: ennuste-1 correct-option feedback (inquiry.json:63) and the simulaatio `model` parenthesis (:112) now explain *säteilytasapainomalli* (Maa lähettää avaruuteen yhtä paljon energiaa kuin se saa Auringolta) and *efektiivinen säteilylämpötila* (the temperature the model gives).
+- Physics right and the same as Ydinajatus (lesson.md:136): "sent to space" covers reflected plus emitted, so the balance gives $\approx 255\,\text{K}$ with albedo ≈ 0,3. The hedge stays ("ei tarkka ennuste"; "Maanpinnan keskilämpötila on kuitenkin noin $+15\,{}^\circ\text{C}$"). Values −18 °C, +15 °C, 33 K unchanged; no new number, formula or step, so §12 rule 1 holds.
+- Polish (C): "yhtä paljon energiaa" is strictly a rate (energy per unit time); fine at this level.
+- Blocking: none. Hash 0820bc39ae57687e at start and end.

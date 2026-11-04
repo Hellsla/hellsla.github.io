@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 6f5c46b3a62a89ae
+CONTENT-HASH: 981a7d725fe69627
 
-Full review of the exercise set (scope: a changed line carries a formula). This round changed L1-02 (electron: $|q| = e$, $|q|vB = mv^2/r$, $r = mv/(|q|B)$) and two chapter references (L2-03, L3-02).
+Follow-up review of the fix commit 2c31ff041 (delta from 6f5c46b3a62a89ae, whose full review is kept below). Change: solutions.md L1-02 Annettu, the electron's charge magnitude written as one group `${|q| = e = 1{,}602 \cdot 10^{-19}\,\text{C}}$` so it does not break across lines.
 
 ## Blocking
 
@@ -13,10 +13,9 @@ None.
 
 ## Checked
 
-- L1-02 now uses the charge magnitude for the electron, as the brief's Kaava ($F_\text{m} = |q|vB\sin\alpha$, $r = mv/(|q|B)$) does; every other task concerns a positive particle (proton, alpha, deuteron, ions), where $q = |q|$, so their $qvB$, $qU$ are right.
-- Recomputed all twelve answers in one script with my own formulas: $1{,}20\cdot10^{-14}$ N; $7{,}58$ mm; $500$ km/s; $4{,}81\cdot10^{-16}$ J; $1{,}60\cdot10^{-13}$ N; $6{,}46$ cm; $3{,}45\cdot10^3$ km/s; $200$ km/s; $2{,}05$ mm/s; $4{,}01$ cm; $22{,}9$ MHz; $1{,}409$. All agree with answers.py and exercises.json within tolerance.
-- Models: selector $v = E/B$ (L1-03, L2-03 with $E = U/d$); acceleration from rest $qU = \tfrac12mv^2$; L3-01 $r \propto \sqrt{m}$ at the same $U$, $q$, $B$, spots $2r$ apart; L3-02 $T = 2\pi m/(qB)$ independent of $v$ (non-relativistic); L3-03 $r \propto \sqrt{m/q}$. All conditions are met by the task texts.
-- Checks are real: L1-02 proton on $\approx 14$ m; L2-04 ratio $\approx 5\cdot10^8$ at $10^6$ m/s; L3-01 $17\,\%$ heavier, $8\,\%$ larger radius.
-- Significant figures justified by the limiting data; units and tolerances fit.
-- Chapter references (*Homogeeninen sähkökenttä*, *Ympyrärata: jaksonaika ja ratanopeus*) carry no physics change.
+- The braces only group the expression; the content ($|q| = e = 1{,}602 \cdot 10^{-19}\,\text{C}$) and the physics are unchanged.
+- L1-02: $|q|vB = mv^2/r$, $r = mv/(|q|B) = 7{,}581\,\text{mm} \to 7{,}6\,\text{mm}$ recomputed; the electron is the only negative particle in the set, every other task uses a positive particle ($q = |q|$).
+- Recomputed all twelve answers earlier: $1{,}20\cdot10^{-14}$ N; $7{,}58$ mm; $500$ km/s; $4{,}81\cdot10^{-16}$ J; $1{,}60\cdot10^{-13}$ N; $6{,}46$ cm; $3{,}45\cdot10^3$ km/s; $200$ km/s; $2{,}05$ mm/s; $4{,}01$ cm; $22{,}9$ MHz; $1{,}409$. All agree with answers.py and exercises.json.
+- Models: selector $v = E/B$; acceleration from rest $qU = \tfrac12mv^2$; L3-01 $r \propto \sqrt{m}$, spots $2r$ apart; L3-02 $T = 2\pi m/(qB)$ (non-relativistic); L3-03 $r \propto \sqrt{m/q}$.
+- Checks real; significant figures justified; units and tolerances fit.
 - Hash same at start and end.

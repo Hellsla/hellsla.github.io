@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1b3bb9c895033f88
+CONTENT-HASH: 08fde4c0b52b48cd
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 1b3bb9c895033f88
 - "säteilyhaittoja" could get "eli haitallisia vaikutuksia" on first use.
 
 ## Checked
-batch delta review (fi-easy, NOTES 12): effective-dose caveat consistent in explanation, example check and misconception; dosimeter captions explain pulses per second and dose rate in short sentences; no exercise relies on the old wording.
+Follow-up delta (2c31ff041, NOTES §12): the exit-ticket answer is split into two short sentences ("…keskimääräiselle ihmiselle. Se ei kerro yhden ihmisen omaa riskiä."). It is plain, natural Finnish and the physics matches fi. Earlier: the caveat is consistent and the captions are plain.

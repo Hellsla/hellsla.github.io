@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cc6a622ee50a1fe4
+CONTENT-HASH: 02a46dce04663f3e
 
 ## Blocking
 (none)
 
 ## Polish
-- "Jää ja sulamisvesi ovat silloin samassa lämpötilassa": add "eli lämpötasapainossa" so the physics word reappears (rule 2). Optional.
+- "Jää ja sulamisvesi ovat silloin samassa lämpötilassa": adding "eli lämpötasapainossa" would let the physics word reappear (rule 2). Optional.
 
 ## Checked
-batch delta review (fi-easy, NOTES 12): added sentences are short and say the ice-water mixture stays at 0 C and other parts of the bag can be warmer; 0,80 m^2 now in LaTeX; physics unchanged.
+Follow-up delta (2c31ff041, NOTES §12): "Mallissa oletetaan, että laukun sisälämpötila on 0 °C niin kauan kuin jäätä on." is a short, clear sentence, and the next sentence still follows from it. The physics matches fi. Earlier: the added sentences are short, and 0,80 m² is in LaTeX.
