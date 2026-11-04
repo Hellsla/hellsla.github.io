@@ -1,13 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 9b8a1649f0d52ce2
+VERDICT: PASS
+CONTENT-HASH: 72dca8a81fc7dc58
 
 ## Blocking
-1. Task fy8-s1 energy-level figure, en: the right-hand labels "upper excited state" and "lower excited state" are cut off at the edge of the viewBox (the last letter is clipped) at 390, 768 and 1280 px. The labels are essential to the figure (Critical: essential labels clipped). The English strings are longer than the Finnish ones the figure was drawn for; widen the viewBox or move/shorten the labels (lessons/FY8/sovella/figures.py, "fy8-s1-levels"). "ground state" fits.
+None. The round-1 blocker is fixed: in the s1 energy-level figure the labels "2nd excited state", "1st excited state" and "ground state" now sit fully inside the viewBox at 390, 768 and 1280 px (also with ?ratkaisut=1); no clipped letters.
 
 ## Polish
-- s3 a solution table (4 columns) is 418 px wide in a 298 px card at 390 px, so the 4th column (Rr^2) clips (already logged).
-- The source box ("Statistical data...") at the top of each task is a rounded blob with uneven curvature at 390 px; readable, but the shape looks accidental.
-- Figure text at 390 px is small (about 9-10 px); legible, at the lower limit.
+- s3 a solution table (4 columns) is about 418 px wide in a 298 px card at 390 px; the 4th column (Rr^2) clips (carried over).
+- The source box at the top of each task is a rounded blob with uneven curvature at 390 px; readable but looks accidental.
+- Figure text at 390 px is about 9-10 px; legible, at the lower limit.
+- The figure says "1st/2nd excited state", the text "first/second"; acceptable, noted for consistency.
 
 ## Checked
-Captures at 390, 768 and 1280 px, full page, solutions revealed and details opened (scratchpad shots-sov/). No horizontal page overflow at any width, no red KaTeX errors. The s3 graphs (1/r^2 with dashed model line; linearised graph with dashed extrapolation to the r axis and a labelled intercept) have quantity and unit on both axes, markers distinct from the line, and aria-labels. The other tables (substance, decay, particle, nucleus) fit. Display maths in the solutions breaks into rows and fits at 390 px; decimal point, \cdot and units are consistent. Hierarchy of task card, parts, solution reveal and marking is clear.
+Fresh captures at 390, 768, 1280 px, full page, with and without ?ratkaisut=1, details opened (scratchpad shots-sov2/, plus close-ups of the s1 figure). scrollWidth equals viewport at all widths (no horizontal overflow), 0 KaTeX errors. The s1 figure: energy axis with E (eV) and arrow, 0 / 1.97 / 4.19 ticks, evenly weighted level lines, "oxygen atom" caption. The s3 graphs (1/r^2 with dashed model line; linearised graph with dashed extrapolation and labelled intercept) have quantity and unit on both axes, distinct markers and aria-labels (axis now stated as r = -2 to 22 cm). Other tables fit; display maths breaks into rows at 390 px; decimal point, \cdot and units consistent; hierarchy of task card, parts, solution reveal and marking is clear.
