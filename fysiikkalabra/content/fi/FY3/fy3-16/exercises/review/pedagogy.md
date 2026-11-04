@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 65a4524d88dce239
+CONTENT-HASH: 83dc08db7ea57a37
+Round: 2
 
 ## Blocking
 - none
 
 ## Polish
-- fy3-16-L3-05: the text does not give c_vesi (the solution says "taulukosta"), while the other tasks (L3-03) give 4190 J/(kg·K). Add "veden ominaislämpökapasiteetti $4190\,\text{J/(kg·K)}$" to the text, or confirm that the lesson's table lists it. The same applies to s in L2-07.
-- L3-04 c): "Kuinka monta euroa halvempi edullisempi ratkaisu on?" is awkward. Write "Kuinka monta euroa edullisemman ratkaisun kustannus on pienempi kuin toisen?"
-- L2-06 solution reads the line at the point (−8 °C; 2810 kWh), which is not a table row (2790). It is a fitted point, but say so: "suoran piste, ei mittauspiste".
-- L2-06 a)/c): the data set suits a spreadsheet. Mention in the solution that the intercept ≈ 20 °C is the indoor temperature, which it does, but also that real houses have free heat (people, sun) which lowers the intercept.
+- L3-05 d): "Koneen sähköteho riippuu lisäksi sen kylmäkertoimesta" uses a term the FY3 lesson does not teach (fy3-11 teaches lämpökerroin only). Write "koneen sähköteho riippuu sen hyötysuhteesta" or drop the sentence.
+- L2-06 solution c): the new remark on free heat (people, sun) is good; the text does not ask for it, so mark it as "lisähuomio".
+- L3-04 c): "Kumpi ratkaisu on edullisempi, ja kuinka monta euroa se säästää?" now fine. Keep the unit "€" in the answer box if the input supports it.
 
 ## Checked
-- Counts 8/7/5; ids L1-06..08, L2-05..07, L3-04..05. Kinds: MC concept ×2, data/experiment, data/graph, error, model/reasoning ×2. These follow the plan (sauna, home heating costs, ice rink).
-- Recomputed: L1-08 251 s; L2-05 η = 75,6 % (with per-period 82/75/70 % as the explanation for b); L2-06 139 W/K (least squares 138,5); L2-07 2,91 h; L3-04 5443 kWh, 816,5 € vs 335,9 € and a difference of 480,6 €; L3-05 54 000 kg and 592 kW. All match the solutions. The break-even wood price 0,44 €/kg is correct.
-- L2-07 puts a true misconception (adding 273 to a difference) with a plausibility check (11,5× too short).
-- L3-04 and L3-05 are YO-style: assumptions are visible and the solutions discuss them. L3-05 d) explains why the model gives a lower bound.
-- Scope is OK (Q = cmΔT, s·m, P = UAΔT only). No duplicates; L2-05 and L3-01 both use stones but test different steps.
-- Captures (L2-1280-8): table, answer box and calculation are readable, nothing clipped.
+- Round 1 Polish applied: L3-05 text gives c_vesi = 4190 J/(kg·K) and the solution lists it as given; L2-07 gives s = 334 kJ/kg in the text; L3-04 c) reworded; L2-06 notes the fitted point (2810 vs table 2790) and the intercept ≈ 20 °C.
+- L3-05 now freezes a 0,030 m water layer: V = 54 m3, m = 54 000 kg; Q1 = 2,715 GJ, Q2 = 18,04 GJ, Q3 = 0,567 GJ, total 21,32 GJ; P = 592 kW; answer 590 kW (3 %) matches. Freezing share 85 %.
+- L2-07 t = 267 200 J / 25,48 W = 2,913 h; student's 299 K error gives 0,25 h as stated.
+- L3-04 5443 kWh; 816,5 € vs 336,0 €; difference 480,6 €; break-even wood price 0,44 €/kg. L2-06 139 W/K; answer 139 with 5 % tolerance (solution gives 1,4·10^2 as the honest figure).
+- MC L1-06, L1-07: correct option moved from first position, distractor wording tightened; all feedback still correct.
+- Counts 8/7/5, ids and kinds follow the plan; no duplicates. Capture L3-1280-9: calculation boxes readable, nothing clipped.

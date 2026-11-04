@@ -1,22 +1,24 @@
-VERDICT: FAIL
-CONTENT-HASH: ffcb1851d948b740
+VERDICT: PASS
+CONTENT-HASH: 70198ef3a97a2407
+Round: 2
 
 ## Blocking
-- exercises.json:343, solutions.md:240, 242 (L3-05) — **A**: the data are impossible under the task's own assumption (all heat into the air). Air heated at constant p has W_k/Q = R/C_p = 2/7 ≈ 29 %, but the set gives and teaches 15 % ("loput 85 % jäi sisäenergiaksi"). With n ≈ 0,103 mol, W = 300 J means ΔT ≈ 350 K, while Q = 2000 J would mean ΔT ≈ 670 K. — Fix: make W/Q ≈ 0,29. For example P = 65,0 W and h 10,0 → 13,0 cm in 4,0 s (rows 10,0; 10,8; 11,5; 12,3; 13,0), which gives Q = 260 J, W_k = 75 J, ΔU = 185 J and 29 %. Update the answer, answers.py, the numbers in c) and Järkevyys.
-- solutions.md:218 (L3-05) — **A**: "korkeus kasvaa tasaisesti, joten paineen vakioksi olettaminen sopii" is a wrong inference. A steady rise shows only a steady volume rate; the constant p comes from the light piston and the outside pressure. — Fix: "Paine on annettu vakioksi; tasainen nousu sopii vakiotehoiseen lämmitykseen."
+(none)
 
 ## Polish
-- solutions.md:218 — the header "Kuvaajan lukeminen" sits over a table. Use "Taulukon lukeminen".
-- exercises.json:105 (L1-08) — `kind: reasoning` on a one-formula calculation.
-- exercises.json:217 (L2-07) — tagged `experiment` for monitoring data. `data` is enough.
-- exercises.json:290 (L3-04) — the plan asks why ε falls in frost. Add one sentence to c) or the model answer.
-- docs/exercise-bank/FY3.md — the fy3-11 plan still lists a cycle pV graph (L2) and the Carnot limit (L3). Neither is in the set, and Carnot is rightly left out because the brief does not teach it. Update the plan.
+- solutions.md:218 (L3-05) — the header "Kuvaajan lukeminen" still sits over a table (carried over). Use "Taulukon lukeminen".
+- solutions.md:242 (L3-05 Perustelu c) — "kaksiatomisella kaasulla vakiopaineessa työn osuus on noin 2/7" is correct (R/C_p), but it rests on C_p, which the brief does not teach. Either mark it as extra information ("Lisätieto: ...") or delete it, so the solution needs nothing beyond the lesson.
+- solutions.md:161 (L2-05) and :211 (L3-04) — "kolmas numero annetaan, jotta pyöristys ei vie vastausta ulos hyväksytystä välistä" is not a physics reason, and it is not even true: 31 % and 2,7 are both inside the 2 % tolerance. Give 31 % and 2,7 as the results, with the three-digit values as intermediate values for the comparison.
+- solutions.md:244 (L3-05 Järkevyys) — the volume grows 2,2-fold at constant p, so the air ends near 370 °C (T ∝ V, from about 20 °C). The data are consistent (n ≈ 0,103 mol, nC_pΔT ≈ 1,05 kJ ≈ Q), but one sentence would make the extreme heating visible, e.g. "Tilavuus kasvaa 2,2-kertaiseksi, joten ilma kuumenee voimakkaasti; tämä on ajatuskoe."
+- docs/exercise-bank/FY3.md:79ff — the plan still lists a cycle pV graph (L2) and the Carnot limit (L3). Neither is in the set (carried over). Update the plan.
 
 ## Checked
-- New answers recomputed independently: L1-08 3,25; L2-05 31,4 % (21,2/28,9/31,4/29,8); L2-07 20,9 kWh; L3-04 2,74 (mean 2,88, saving 8,7 MWh); L3-05 1,70 kJ. All agree with answers.py.
-- MC L1-06, L1-07, L2-06: exactly one correct option, the distractors are wrong and the feedback is correct and matches the brief.
-- L2-07 and L3-04: ε falls with T_ulko, and the balances close.
-- Scope: no Carnot, no C_p, no cycles beyond the brief.
-- The significant-figure reasons are stated.
-- No duplicates. Levels fit.
-- The L3 capture at 1280 px renders the tables and equations cleanly.
+- Round-1 Blocking 1 resolved: L3-05 now P = 260 W, Q = 1040 J, W_k = 300 J, ΔU = 740 J = 0,74 kJ. W_k/Q = 28,8 % ≈ 2/7, so the data fit air heated at constant pressure. The answer, answers.py, c), Vastaus and Järkevyys agree.
+- Round-1 Blocking 2 resolved: solutions.md:218 now says "Paine on annettu vakioksi; tasainen nousu sopii vakiotehoiseen lämmitykseen."
+- Round-1 Polish resolved: L1-08 kind is data. L2-07 has no experiment tag. L3-04 now explains why ε falls in frost.
+- One script recomputed every new answer from the task text: L1-08 3,25; L2-05 31,40 % (21,2/28,9/31,4/29,8); L2-07 20,9 kWh; L3-04 2,743 (mean 2,88, saving 8,7 MWh, 64 % from outside air); L3-05 0,740 kJ. All agree with exercises.json and answers.py within tolerance.
+- L1-06, L1-07 and L2-06 were reshuffled. Each still has exactly one correct option, and the answer field equals that option's text. The distractors and their feedback are right.
+- L2-07: daily ε falls monotonically with T_ulko (3,05; 2,70; 2,58; 2,38).
+- Scope is unchanged: no Carnot limit and no cycles beyond the brief. ΔU = Q − W_k is used as the brief defines it.
+- No duplicates. The levels fit.
+- The hash was identical at the start and the end.

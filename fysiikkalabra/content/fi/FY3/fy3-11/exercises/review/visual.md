@@ -1,18 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: ffcb1851d948b740
+VERDICT: PASS
+CONTENT-HASH: 70198ef3a97a2407
+ROUND: 2
 
 ## Blocking
-- [Major] exercises/solutions.md, `fy3-11-L3-05`, "Kuvaajan lukeminen" — "likimain saman verran ($3{,}0$ cm sekunnissa)": the number is maths but the unit is plain text (visible in open-exercises-L3-1280-8) — standing rule 2026-11-01: a plain quantity in new text is Major — write "($3{,}0\,\text{cm/s}$)" (the Järkevyys line already has `3{,}0\,\text{cm/s}`).
 
 ## Polish
-- [Minor] solutions `fy3-11-L3-05` Perustelu c) — the sentence ends in the chain "$W = Q_1 - Q_2$" and its full stop wraps alone onto a line of its own (L3-1280-8) — move the formula inside the sentence ("…hyötysuhde $\eta = W/Q_1$, jossa $W = Q_1 - Q_2$, ei ole…") or add a closing word.
-- [Minor] for science: `fy3-11-L3-05` data — at constant $125\,\text{kPa}$ the volume goes $2{,}0\,\text{l} \to 4{,}4\,\text{l}$, which for air means $\Delta U \approx \tfrac52 p\Delta V = 750\,\text{J}$ and $Q \approx 1050\,\text{J}$, not $2000\,\text{J}$ / $1700\,\text{J}$; the table contradicts "kaikki energia siirtyy ilmaan". Please check whether power, time or $\Delta h$ should change.
-- [Minor] `fy3-11-L2-05` table — header cells ($P$, $q_m$) sit left/right differently from the right-aligned numbers; the same in `L2-07`, `L3-04` — align headers with their columns.
-- [Minor] `fy3-11-L3-04` task — the three-part text is 70 words before a); acceptable, but the second sentence could start the situation block with the table reference ("Taulukossa on…") for faster reading.
+- [Minor] solutions `fy3-11-L3-05` Perustelu c) — the closing chain "$W = Q_1 - Q_2$" still wraps with "$Q_2$." alone on the last line (L3-1280-9) — fold the formula into the sentence ("…jossa $W = Q_1 - Q_2$, ei ole kierroksen hyötysuhde") so the full stop does not hang.
+- [Minor] `fy3-11-L2-05`, `L2-07`, `L3-04` tables — header cells sit left while the numbers are right-aligned — align headers with their columns.
+- [Minor] `fy3-11-L1-06`, `L1-07` — the correct choice is now no longer first (good), but the model answer in solutions ("janan alle jäävän suorakulmion pinta-ala") still words it differently from the choice ("janan ja tilavuusakselin väliin jäävän suorakulmion ala"); use the choice wording in Mallivastaus for consistency.
+- [Minor] `fy3-11-L3-04` task text — the three-part text is long before a); start the situation with "Taulukossa on…" for faster reading.
+
+## Round 1 items
+- Blocking (plain "3,0 cm sekunnissa" in L3-05 Kuvaajan lukeminen): RESOLVED, now `$3{,}0\,\text{cm/s}$` (L3-1280-8).
+- Polish for science (L3-05 data inconsistent with air heating): RESOLVED, 260 W gives Q 1040 J, ΔU 740 J = 0,74 kJ, about 5/2 pΔV = 750 J; the new 2/7 = 29 % remark matches; table heights 10,0 / 13,1 / 16,0 / 19,2 / 22,0 agree with Δh = 12,0 cm.
 
 ## Checked
-- 1280 px captures with every solution open: open-exercises-1280-6 to -9 (L1-06 MC, L1-07 MC, L1-08 numeric), L2-1280-6 to -9 (L2-05 table, L2-06 error MC, L2-07 table), L3-1280-5 to -9 (L3-04, L3-05 table and solutions). No 360 px exercise captures exist; check_layout 360 px is clean per the packet.
-- Source text and solutions of all eight new tasks read against the renders; arithmetic and answers match the solutions (L2-05 31,4 %, L2-07 20,9 kWh, L3-04 2,74, L3-05 1,70 kJ). All new tasks stay within the lesson's scope (gas work, heat engine, heat pump). Hash unchanged at the end.
+- 1280 px with solutions open: open-exercises-1280-6, -7 (L1-06, L1-07 with reordered choices), L3-1280-8, -9 (L3-05 table, new numbers, solution chains, answer 0,74 kJ). Diff 315175221 read for exercises.json and solutions.md; L2-05, L2-07, L3-04 changes are wording and kind tags only. No 360 px exercise captures exist; check_layout 360 px clean per packet.
+- Answer box value 0,74 kJ matches the solution; no plain quantities in the changed text. Hash unchanged at the end.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

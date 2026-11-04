@@ -1,18 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 65a4524d88dce239
+CONTENT-HASH: 83dc08db7ea57a37
+ROUND: 2
 
 ## Blocking
 
 ## Polish
-- [Minor] `fy3-16-L3-04` task c) — "Kuinka monta euroa halvempi edullisempi ratkaisu on?" is clumsy ("halvempi edullisempi"); write "Kumpi ratkaisu on edullisempi, ja kuinka monta euroa se säästää?" Vastaus says "$480\,\text{€}$, kaksi merkitsevää numeroa" beside $480{,}6$: write "noin $480\,\text{€}$ ($480{,}6\,\text{€}$)".
-- [Minor] solutions `fy3-16-L2-07` Annettu, Sijoitus, Vastaus — $U$ is set `\tfrac{\text{W}}{\text{m}^2\text{K}}` (no dot, reads "m²K", visible in L2-1280-9, -10), while the task and other solutions use `\text{m}^2\cdot\text{K}` — add `\cdot`.
-- [Minor] solutions `fy3-16-L3-05` Sijoitus — $Q_1$, $Q_2$, $Q_3$ chains run bare numbers ($4190 \cdot 54\,000 \cdot 12\,\text{J}$); show the units of $c$, $m$, $\Delta T$ (L3-1280-9).
-- [Minor] solutions `fy3-16-L2-05`, `L2-06`, `L2-07`, `L3-04`, `L3-05` — answers to b)/c)/d) ("Selitys b)-kohtaan", "Perustelu d)-kohtaan") sit at the end of Järkevyys (L2-1280-7, -8; L3-1280-8, -10); give them a "Mallivastaus" block, as `fy3-12-L3-04` does.
-- [Minor] `fy3-16-L3-04` table — header "Kuukausi" is left-aligned over centred/right-aligned numbers; align the columns.
+- [Minor] `fy3-16-L2-06` answer chip — the chip and Vastaus show "$1{,}4 \cdot 10^{2}\,\text{W/K}$" while the key is 139 (tolerance 5 %); consistent, but the chip would read simpler as "$140\,\text{W/K}$" (L2-1280-8, -9).
+- [Minor] solutions `fy3-16-L3-04` Vastaus — "noin $480\,\text{€}$ ($480{,}6\,\text{€}$)" fine; the Mallivastaus c) block ends with the unsupported "Esimerkkiaineiston hinnat ja lämpötilat ovat keksittyjä" sentence, which would sit better in the task text beside "esimerkkiaineisto" (L3-1280-8).
+- [Minor] solutions `fy3-16-L2-05`, `L2-07` — check that the b)/d) answers are in a "Mallivastaus" block like L2-06 and L3-04/05 now are (L2-05 b) is; confirm for the rest).
+- [Minor] `fy3-16-L3-04` table — header "Kuukausi" is left-aligned over right-aligned numbers; align the columns.
+
+## Round 1 items
+- Round 1 had no Blocking items. Polish resolved: L3-04 c) wording is now "Kumpi ratkaisu on edullisempi, ja kuinka monta euroa se säästää?" with the Vastaus "noin 480 € (480,6 €)"; L2-07 and L3-04 $U$ now with `\cdot` (L2-1280-9); L3-05 chains carry units (L3-1280-9); Mallivastaus blocks added for L2-06 c, L3-04 c, L3-05 d.
+- New L3-05 (water layer freezes): task now gives the layer thickness 0,030 m, $c_\text{vesi} = 4190$ and the density, so 54 000 kg, $Q_1 = 2{,}715$, $Q_2 = 18{,}04$, $Q_3 = 0{,}567\,\text{GJ}$, total 21,32 GJ over 36 000 s = 592 kW, answer 590 kW; matches the box. L2-07 now states $s = 334\,\text{kJ/kg}$ in the task.
 
 ## Checked
-- 1280 px captures with solutions open: open-exercises-1280-7 to -9 (L1-06 end, L1-07, L1-08), L2-1280-7 to -10 (L2-05 solution, L2-06 table and solution, L2-07 error task and solution), L3-1280-5, -6 (L3-04 text, table, solution), L3-1280-8 to -10 (L3-05 text and solution). No 360 px exercise captures exist; check_layout 360 px is clean per the packet.
-- All eight new tasks' arithmetic matches solutions (250 s, 76 %, 139 W/K, 2,9 h, 480 €, 590 kW); no plain quantities in new text; scope fits the lesson. Hash unchanged at the end.
+- 1280 px with solutions open: L2-1280-8, -9 (L2-06 line fit, L2-07 error task), L3-1280-8 (L3-04 solution end, L3-05 text), L3-1280-9, -10 (L3-05 solution, chains with units, answer, Mallivastaus d). Diff 315175221 read for exercises.json and solutions.md. No 360 px exercise captures exist; check_layout 360 px clean per packet.
+- Answer keys: L2-05 76 %, L2-06 139 W/K, L2-07 2,9 h, L3-04 480 €, L3-05 590 kW agree with the solutions. Hash unchanged at the end.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
