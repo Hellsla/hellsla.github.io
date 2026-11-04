@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Mitä tarkoittaa, että diodi on kytketty estosuuntaan? Kuinka suuri jännite on silloin diodin yli?",
+    "a": "Estosuunnassa diodin katodi on lähteen plusnavan puolella, eikä virtaa käytännössä kulje. Koska $I = 0$, sarjassa olevan vastuksen jännite on $RI = 0$. Silloin koko lähteen jännite on diodin yli."
+  },
+  {
+    "q": "Aurinkopaneelin oikosulkuvirta on $5{,}0\\,\\text{A}$ ja tyhjäkäyntijännite $21\\,\\text{V}$. Miksi paneelin teho ei voi olla $5{,}0\\,\\text{A} \\cdot 21\\,\\text{V} = 105\\,\\text{W}$?",
+    "a": "Suurin virta ja suurin jännite eivät esiinny yhtä aikaa. Oikosulussa jännite on nolla ja tyhjäkäynnissä virta on nolla, joten kummassakin teho on nolla. Suurin teho saadaan maksimitehopisteessä. Siinä sekä jännite että virta ovat hieman pienempiä kuin niiden suurimmat arvot, joten teho jää alle $105\\,\\text{W}$."
+  }
+]

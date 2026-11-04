@@ -1890,6 +1890,28 @@
       "hylkivat": "The spheres repel each other.",
       "vetavat": "The spheres attract each other.",
       "ei_voimaa": "In the model there is no electric force on the spheres."
+    },
+    "fy6-14": {
+      "piiri": "Circuit",
+      "led": "LED circuit",
+      "kenno": "solar cell",
+      "komponentti": "Component",
+      "piidiodi": "silicon diode",
+      "punainen": "red LED",
+      "sininen": "blue LED",
+      "suunta": "Connection",
+      "paasto": "forward direction",
+      "esto": "reverse direction",
+      "jannite": "Voltage of the source $U = {{U}}\\,\\text{V}$",
+      "vastus": "Series resistor $R = {{R}}\\,\\Omega$",
+      "valo": "Light intensity $G = {{G}}\\,\\text{W/m}^2$",
+      "kuorma": "Load resistance $R = {{R}}\\,\\Omega$",
+      "selite": "Purple arrow: direction of the electric current. Orange rectangle: power of the solar cell.",
+      "lukemat-led": "<strong>Current $I = {{I}}\\,\\text{mA}$</strong><br>Voltage of the diode $U_\\text{D} = {{UD}}\\,\\text{V}$, voltage of the resistor $U_R = {{UR}}\\,\\text{V}$<br>Power of the diode $P_\\text{D} = {{PD}}\\,\\text{mW}$",
+      "lukemat-kenno": "Voltage $U = {{U}}\\,\\text{V}$, current $I = {{I}}\\,\\text{mA}$<br><strong>Power $P = {{P}}\\,\\text{W}$</strong><br>Short-circuit current $I_\\text{sc} = {{Ik}}\\,\\text{mA}$, open-circuit voltage $U_\\text{oc} = {{Ut}}\\,\\text{V}$",
+      "ylikuorma": "$\\text{current over } 20\\,\\text{mA}$",
+      "ylikuorma-teksti": "The current of the LED exceeds the greatest recommended current $20\\,\\text{mA}$: the LED overheats and may break. Increase the series resistor.",
+      "estosuunta": "$\\text{reverse direction: no current}$"
     }
   },
   "practice": {

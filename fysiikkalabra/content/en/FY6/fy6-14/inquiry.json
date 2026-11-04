@@ -1,0 +1,616 @@
+{
+  "version": 1,
+  "contribution": "Semiconductors as circuit components: the forward and reverse direction of a diode, the threshold voltage and the nonlinear $(U, I)$ characteristic curve, the LED and the sizing of its series resistor with Kirchhoff's and Ohm's laws, and the solar cell as a direct-voltage source whose short-circuit current follows the light and whose power is greatest at the maximum power point; the model explains why an LED needs a resistor and the correct polarity.",
+  "learn": [
+    "explain the forward and reverse direction of a diode and the threshold voltage using the characteristic curve.",
+    "calculate the series resistor, the current and the power of an LED in a series circuit.",
+    "interpret the $(U, I)$ graph of a solar cell and calculate the power and the efficiency of the cell."
+  ],
+  "prior": [
+    "The voltage of a resistor is $U = RI$, and the characteristic curve of a resistor that obeys Ohm's law is a straight line (chapter *Resistance and Ohm's law*)",
+    "In a series connection the same current flows through every component, and the voltage of the source is shared among them (chapter *Kirchhoff's laws and potential in an electric circuit*)",
+    "The power of a component is $P = UI$ (chapter *Electric power and the heating of a resistor*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The instructions of an electronics kit say: “Always connect an LED with a series resistor and check which leg is longer.” A light bulb, however, can be connected straight to a battery and either way round. The same kit contains a small solar panel marked $6\\,\\text{V}$ and $200\\,\\text{mA}$, but the panel does not deliver $1.2\\,\\text{W}$ at any load.",
+      "question": "What does an LED do in a circuit differently from a resistor or a bulb, and what determines how much power is obtained from a solar panel?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: Ohm's law",
+      "optional": true,
+      "prompt": "The voltage of a resistor is $3.0\\,\\text{V}$, and a current of $15\\,\\text{mA}$ flows through it. What is the resistance of the resistor?",
+      "choices": [
+        {
+          "text": "$200\\,\\Omega$",
+          "correct": true,
+          "feedback": "Correct. By Ohm's law $R = \\tfrac{U}{I} = 3.0\\,\\text{V} : 0.015\\,\\text{A} = 200\\,\\Omega$ (chapter *Resistance and Ohm's law*). Today a resistor limits the current of an LED."
+        },
+        {
+          "text": "$0.20\\,\\Omega$",
+          "feedback": "You divided the voltage by the current in milliamperes. The current is converted to amperes: $15\\,\\text{mA} = 0.015\\,\\text{A}$, and $R = 3.0\\,\\text{V} : 0.015\\,\\text{A} = 200\\,\\Omega$."
+        },
+        {
+          "text": "$45\\,\\Omega$",
+          "feedback": "You multiplied the voltage and the current. Resistance is the voltage divided by the current, $R = \\tfrac{U}{I}$: with the same voltage a greater resistance gives a smaller current. The correct value is $200\\,\\Omega$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the voltage of the source doubled",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "A red LED and a $330\\,\\Omega$ series resistor are connected in series to an adjustable voltage source, and the LED is in the forward direction. The voltage of the source is raised from $3.0\\,\\text{V}$ to $6.0\\,\\text{V}$. How do the voltage of the LED and the current of the circuit change?",
+      "choices": [
+        {
+          "text": "The voltage of the LED stays almost the same, and the current more than doubles.",
+          "correct": true,
+          "feedback": "The values of the model support this: the voltage of the LED rises only from $1.85\\,\\text{V}$ to $1.91\\,\\text{V}$, but the current rises from $3.5\\,\\text{mA}$ to $12.4\\,\\text{mA}$. Almost the whole increase in voltage appears across the resistor, and the voltage of the resistor more than triples."
+        },
+        {
+          "text": "The voltage of the LED and the current both double, as with a resistor.",
+          "feedback": "This would happen if the LED obeyed Ohm's law. In the model the voltage of the LED rises only from $1.85\\,\\text{V}$ to $1.91\\,\\text{V}$, and the current rises from $3.5\\,\\text{mA}$ to $12.4\\,\\text{mA}$. The ratio of the voltage to the current of the LED does not stay constant."
+        },
+        {
+          "text": "The voltage of the LED doubles, but the current stays the same, because the resistor limits it.",
+          "feedback": "The resistor limits the current but does not keep it constant: the current of the resistor is $\\tfrac{U_R}{R}$, and $U_R$ increases. In the model the voltage of the LED stays almost the same, about $1.9\\,\\text{V}$, and the current rises from $3.5\\,\\text{mA}$ to $12.4\\,\\text{mA}$."
+        },
+        {
+          "text": "Neither changes, because the LED shines with the same brightness at every voltage.",
+          "feedback": "The brightness of an LED depends on its current. In the model the current rises from $3.5\\,\\text{mA}$ to $12.4\\,\\text{mA}$, and the LED shines brighter. Only the voltage of the LED stays almost the same, about $1.9\\,\\text{V}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: at which load is the power greatest?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 5
+      },
+      "prompt": "A load resistor is connected to a solar panel, and the light stays the same. With a small resistance the current of the panel is large, and with a large resistance its voltage is large. At which load resistance is the power $P = UI$ given by the panel greatest?",
+      "choices": [
+        {
+          "text": "At a medium resistance, where the voltage and the current are both fairly large.",
+          "correct": true,
+          "feedback": "The values of the model support this: the power is zero in a short circuit, rises to about $0.92\\,\\text{W}$ when the resistance is about $27\\,\\Omega$, and then falls again: with $300\\,\\Omega$ it is only $0.12\\,\\text{W}$. The greatest power is at the knee of the curve."
+        },
+        {
+          "text": "At the smallest resistance, because the current of the panel is then greatest.",
+          "feedback": "The current is greatest in a short circuit, about $200\\,\\text{mA}$, but then the voltage is zero, so in the model the power is $0\\,\\text{W}$. The power rises as the resistance increases up to about $27\\,\\Omega$, where it is about $0.92\\,\\text{W}$."
+        },
+        {
+          "text": "At the greatest resistance, because the voltage of the panel is then greatest.",
+          "feedback": "The voltage is greatest almost at open circuit, but then the current is small: in the model, with $300\\,\\Omega$ the power is only $0.12\\,\\text{W}$. The greatest power, about $0.92\\,\\text{W}$, is obtained with about $27\\,\\Omega$."
+        },
+        {
+          "text": "Equal at every resistance, because the light always brings the same power to the panel.",
+          "feedback": "The light brings the same power to the panel, but the part of it that becomes electricity depends on the load. In the model the power varies from zero to about $0.92\\,\\text{W}$: it is zero in a short circuit and greatest with about $27\\,\\Omega$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose the LED circuit or the solar cell. Change the voltage, the resistor, the component and the direction, or the light and the load, and follow the operating point on the graph.",
+      "howto": "The *Circuit* menu selects the LED circuit or the solar cell. In the LED circuit you set the *voltage of the source* $U$ and the *series resistor* $R$ with sliders, and the *component* and the *connection* (forward or reverse direction) from menus. In the circuit diagram the triangle of the diode points in the direction in which the current can flow, and the LED glows the brighter, the greater the current. The graph shows the characteristic curve of the component, and the purple dot is the operating point. For the solar cell you set the *light intensity* $G$ and the *load resistance* $R$. The graph shows the $(U, I)$ curve of the panel, and the area of the orange rectangle is the power $P = UI$; the faint curve shows the full light $1000\\,\\text{W/m}^2$ for comparison.",
+      "model": "In the forward direction the current of a diode grows exponentially with the voltage: the current is $10\\,\\text{mA}$ when the voltage of a silicon diode is $0.70\\,\\text{V}$, of a red LED $1.90\\,\\text{V}$ and of a blue LED $2.90\\,\\text{V}$. In the reverse direction the current is zero: the small leakage current is ignored, and the breakdown in the reverse direction is not modelled, although a real LED often withstands only about $5\\,\\text{V}$ in the reverse direction. The greatest recommended current of the LEDs is $20\\,\\text{mA}$. The source and the wires are ideal. The solar panel has ten silicon cells in series, and its area is $60\\,\\text{cm}^2$. When $G = 1000\\,\\text{W/m}^2$, the short-circuit current is $200\\,\\text{mA}$ and the open-circuit voltage $6.0\\,\\text{V}$. The short-circuit current is directly proportional to the light intensity, and the temperature of the cells stays the same. The numbers are values calculated by the model, not measurements.",
+      "calc": "In the LED circuit the source, the resistor and the diode are in series, so by Kirchhoff's voltage law $U = U_R + U_\\text{D}$ and by Ohm's law $U_R = RI$. The current of the diode is\n\n$$I = I_\\text{s} \\left(e^{U_\\text{D}/m} - 1\\right)$$\n\nwhere $m$ is a constant of the component ($0.040$–$0.060\\,\\text{V}$) and $I_\\text{s}$ a very small current chosen so that the current is $10\\,\\text{mA}$ at the threshold voltage of the component. The operating point is the voltage of the diode for which $U_\\text{D} + RI = U$; the program finds it by the bisection method. The power of the diode is $P_\\text{D} = U_\\text{D} I$. The current of the solar panel is $I = I_\\text{L} - I_0 \\left(e^{U/m} - 1\\right)$, where $I_\\text{L}$ is the current produced by the light, directly proportional to the light intensity, and $m = 0.40\\,\\text{V}$. With a load $R$ the operating point is the voltage for which this current is $\\tfrac{U}{R}$. The power is $P = UI$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the voltage of the source and the voltage of the LED",
+      "intro": "Test prediction 1. The red LED is in the forward direction, and the series resistor is $330\\,\\Omega$. Change only the voltage of the source and record the voltage of the LED, the voltage of the resistor and the current at at least three voltages, for example $2.0$, $3.0$, $5.0$, $7.0$ and $9.0\\,\\text{V}$. What changes a lot and what changes little?",
+      "initial": {
+        "piiri": "led",
+        "R": 330,
+        "komponentti": "punainen",
+        "suunta": "paasto",
+        "U": 2
+      },
+      "locked": [
+        "piiri",
+        "R",
+        "komponentti",
+        "suunta"
+      ],
+      "vary": "U",
+      "names": {
+        "piiri": "circuit",
+        "U": "voltage of the source",
+        "R": "series resistor",
+        "komponentti": "component",
+        "suunta": "connection",
+        "G": "light intensity",
+        "Rk": "load resistance"
+      },
+      "units": {
+        "U": "V",
+        "R": "Ω",
+        "G": "W/m²",
+        "Rk": "Ω"
+      },
+      "values": {
+        "piiri": {
+          "led": "LED circuit",
+          "kenno": "solar cell"
+        },
+        "komponentti": {
+          "piidiodi": "silicon diode",
+          "punainen": "red LED",
+          "sininen": "blue LED"
+        },
+        "suunta": {
+          "paasto": "forward direction",
+          "esto": "reverse direction"
+        }
+      },
+      "measure": [
+        {
+          "key": "UD",
+          "label": "U_D (V)"
+        },
+        {
+          "key": "UR",
+          "label": "U_R (V)"
+        },
+        {
+          "key": "I",
+          "label": "I (mA)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: forward direction and reverse direction",
+      "intro": "The voltage of the source is $5.0\\,\\text{V}$, the series resistor $330\\,\\Omega$, and the component is a red LED. Change only the direction of the connection and record the current, the voltage of the LED and the voltage of the resistor in both directions. In which direction does the whole voltage of the source appear across the LED?",
+      "initial": {
+        "piiri": "led",
+        "U": 5,
+        "R": 330,
+        "komponentti": "punainen",
+        "suunta": "paasto"
+      },
+      "locked": [
+        "piiri",
+        "U",
+        "R",
+        "komponentti"
+      ],
+      "vary": "suunta",
+      "names": {
+        "piiri": "circuit",
+        "U": "voltage of the source",
+        "R": "series resistor",
+        "komponentti": "component",
+        "suunta": "connection",
+        "G": "light intensity",
+        "Rk": "load resistance"
+      },
+      "units": {
+        "U": "V",
+        "R": "Ω",
+        "G": "W/m²",
+        "Rk": "Ω"
+      },
+      "values": {
+        "piiri": {
+          "led": "LED circuit",
+          "kenno": "solar cell"
+        },
+        "komponentti": {
+          "piidiodi": "silicon diode",
+          "punainen": "red LED",
+          "sininen": "blue LED"
+        },
+        "suunta": {
+          "paasto": "forward direction",
+          "esto": "reverse direction"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (mA)"
+        },
+        {
+          "key": "UD",
+          "label": "U_D (V)"
+        },
+        {
+          "key": "UR",
+          "label": "U_R (V)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: the power of a solar panel as a function of the load",
+      "intro": "Test prediction 2. The circuit is a solar cell, and the light intensity stays at $1000\\,\\text{W/m}^2$. Change only the load resistance and record the voltage, the current and the power with at least five resistances, for example $0$, $10$, $20$, $30$, $50$, $100$ and $300\\,\\Omega$. Finally find the resistance with which the power is greatest.",
+      "initial": {
+        "piiri": "kenno",
+        "G": 1000,
+        "Rk": 0
+      },
+      "locked": [
+        "piiri",
+        "G"
+      ],
+      "vary": "Rk",
+      "names": {
+        "piiri": "circuit",
+        "U": "voltage of the source",
+        "R": "series resistor",
+        "komponentti": "component",
+        "suunta": "connection",
+        "G": "light intensity",
+        "Rk": "load resistance"
+      },
+      "units": {
+        "U": "V",
+        "R": "Ω",
+        "G": "W/m²",
+        "Rk": "Ω"
+      },
+      "values": {
+        "piiri": {
+          "led": "LED circuit",
+          "kenno": "solar cell"
+        },
+        "komponentti": {
+          "piidiodi": "silicon diode",
+          "punainen": "red LED",
+          "sininen": "blue LED"
+        },
+        "suunta": {
+          "paasto": "forward direction",
+          "esto": "reverse direction"
+        }
+      },
+      "measure": [
+        {
+          "key": "Upv",
+          "label": "U (V)"
+        },
+        {
+          "key": "Ipv",
+          "label": "I (mA)"
+        },
+        {
+          "key": "Ppv",
+          "label": "P (W)"
+        }
+      ],
+      "min": 5
+    },
+    {
+      "id": "koe-4",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 4: the threshold voltage of different components",
+      "optional": true,
+      "intro": "The voltage of the source is $5.0\\,\\text{V}$ and the series resistor $330\\,\\Omega$, and the connection is in the forward direction. Change only the component and record the voltage and the current of the diode. How do the components differ?",
+      "initial": {
+        "piiri": "led",
+        "U": 5,
+        "R": 330,
+        "suunta": "paasto",
+        "komponentti": "piidiodi"
+      },
+      "locked": [
+        "piiri",
+        "U",
+        "R",
+        "suunta"
+      ],
+      "vary": "komponentti",
+      "names": {
+        "piiri": "circuit",
+        "U": "voltage of the source",
+        "R": "series resistor",
+        "komponentti": "component",
+        "suunta": "connection",
+        "G": "light intensity",
+        "Rk": "load resistance"
+      },
+      "units": {
+        "U": "V",
+        "R": "Ω",
+        "G": "W/m²",
+        "Rk": "Ω"
+      },
+      "values": {
+        "piiri": {
+          "led": "LED circuit",
+          "kenno": "solar cell"
+        },
+        "komponentti": {
+          "piidiodi": "silicon diode",
+          "punainen": "red LED",
+          "sininen": "blue LED"
+        },
+        "suunta": {
+          "paasto": "forward direction",
+          "esto": "reverse direction"
+        }
+      },
+      "measure": [
+        {
+          "key": "UD",
+          "label": "U_D (V)"
+        },
+        {
+          "key": "I",
+          "label": "I (mA)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-5",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 5: light intensity",
+      "optional": true,
+      "intro": "The circuit is a solar cell, and the load resistance is $50\\,\\Omega$. Change only the light intensity and record the short-circuit current and the open-circuit voltage shown in the readings, and the power of the panel. Which depends more on the light?",
+      "initial": {
+        "piiri": "kenno",
+        "Rk": 50,
+        "G": 1000
+      },
+      "locked": [
+        "piiri",
+        "Rk"
+      ],
+      "vary": "G",
+      "names": {
+        "piiri": "circuit",
+        "U": "voltage of the source",
+        "R": "series resistor",
+        "komponentti": "component",
+        "suunta": "connection",
+        "G": "light intensity",
+        "Rk": "load resistance"
+      },
+      "units": {
+        "U": "V",
+        "R": "Ω",
+        "G": "W/m²",
+        "Rk": "Ω"
+      },
+      "values": {
+        "piiri": {
+          "led": "LED circuit",
+          "kenno": "solar cell"
+        },
+        "komponentti": {
+          "piidiodi": "silicon diode",
+          "punainen": "red LED",
+          "sininen": "blue LED"
+        },
+        "suunta": {
+          "paasto": "forward direction",
+          "esto": "reverse direction"
+        }
+      },
+      "measure": [
+        {
+          "key": "Ik",
+          "label": "$I_\\text{sc}$ (mA)"
+        },
+        {
+          "key": "Ut",
+          "label": "$U_\\text{oc}$ (V)"
+        },
+        {
+          "key": "Ppv",
+          "label": "P (W)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: how do the diode and the solar cell work?",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Write on the basis of your tables: how did the voltage and the current of the LED change when the voltage of the source increased, and what happened in the reverse direction? With which load resistance was the power of the solar panel greatest, and why was the power small both with a very small and with a very large resistance?",
+      "model": "In experiment 1 the voltage of the LED stayed almost the same, about $1.8$–$1.9\\,\\text{V}$, although the voltage of the source rose from $2.0\\,\\text{V}$ to $9.0\\,\\text{V}$. Almost the whole increase in voltage appeared across the resistor, and the current rose from less than $1\\,\\text{mA}$ to over $21\\,\\text{mA}$. So an LED does not obey Ohm's law, and the resistor determines the current. In experiment 2 the current in the reverse direction was zero, so the voltage of the resistor was zero and the whole voltage of the source, $5.0\\,\\text{V}$, was across the LED. In experiment 3 the power of the panel was zero in a short circuit, because the voltage was zero, and small with a large resistance, because the current was small. The greatest power, about $0.92\\,\\text{W}$, was obtained with a resistance of about $27\\,\\Omega$, when the voltage was about $5.0\\,\\text{V}$ and the current about $184\\,\\text{mA}$. The values are calculated by the model.",
+      "criteria": [
+        "The answer states with the numbers of the table that the voltage of the LED stayed almost constant but the current grew many times larger.",
+        "The answer states that the increase in voltage appeared across the resistor, so the resistor determines the current.",
+        "The answer states that in the reverse direction the current was zero and the whole voltage of the source was across the LED.",
+        "The answer names from the table the resistance with which the power was greatest and explains why the power was small in a short circuit and with a large resistance."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the formula $R = \\tfrac{U - U_\\text{D}}{I}$. Then return to the opening question: why does an LED light up only when connected one way round, and why does it need a resistor?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A red LED is used with a $9.0\\,\\text{V}$ battery. The voltage of the LED is $2.0\\,\\text{V}$, and the desired current is $20\\,\\text{mA}$. A student calculates the series resistor like this:\n\n$$R = \\frac{9.0\\,\\text{V}}{0.020\\,\\text{A}} = 450\\,\\Omega$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "Across the resistor there is only $9.0\\,\\text{V} - 2.0\\,\\text{V} = 7.0\\,\\text{V}$, so the resistor must be $350\\,\\Omega$.",
+          "correct": true,
+          "feedback": "Correct. The voltage of the battery is shared between the LED and the resistor, so $R = \\tfrac{U - U_\\text{D}}{I} = 7.0\\,\\text{V} : 0.020\\,\\text{A} = 350\\,\\Omega$. With the student's $450\\,\\Omega$ resistor the current would be only $7.0\\,\\text{V} : 450\\,\\Omega \\approx 16\\,\\text{mA}$, and the LED would shine dimmer."
+        },
+        {
+          "text": "The current must be substituted in milliamperes, so the resistor is $0.45\\,\\Omega$.",
+          "feedback": "In Ohm's law the current is substituted in amperes, which gives the resistance in ohms; $0.020\\,\\text{A}$ is correct. The error is that the whole voltage of the battery is not across the resistor, but $9.0\\,\\text{V} - 2.0\\,\\text{V} = 7.0\\,\\text{V}$."
+        },
+        {
+          "text": "The voltage of the LED must be added to the voltage of the battery, so the resistor is $550\\,\\Omega$.",
+          "feedback": "The voltage of the LED does not add to the voltage of the resistor but subtracts from it: by Kirchhoff's voltage law $U = U_R + U_\\text{D}$, so $U_R = 9.0\\,\\text{V} - 2.0\\,\\text{V} = 7.0\\,\\text{V}$ and $R = 350\\,\\Omega$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A solar panel of a cabin gives its greatest power when its voltage is $18.0\\,\\text{V}$ and its current $5.50\\,\\text{A}$. The panel is connected straight to a $12\\,\\text{V}$ battery without control electronics, and the battery holds the voltage of the panel at $12.8\\,\\text{V}$. The current of the panel is then $5.80\\,\\text{A}$. How much smaller is the power of the panel when connected to the battery than at the maximum power point?",
+      "answer": 24.76,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "The power of the panel is its voltage times its current. Calculate the power separately at both operating points.",
+        "At the maximum power point $P_1 = 18.0\\,\\text{V} \\cdot 5.50\\,\\text{A}$ and connected to the battery $P_2 = 12.8\\,\\text{V} \\cdot 5.80\\,\\text{A}$.",
+        "$P_1 = 99.0\\,\\text{W}$ and $P_2 = 74.24\\,\\text{W}$. What is asked is their difference."
+      ],
+      "mistakes": [
+        {
+          "value": 74.24,
+          "feedback": "This is the power of the panel connected to the battery. The question is how much smaller it is than the power at the maximum power point $18.0\\,\\text{V} \\cdot 5.50\\,\\text{A} = 99.0\\,\\text{W}$."
+        },
+        {
+          "value": 99.0,
+          "feedback": "This is the power at the maximum power point. Also calculate the power when connected to the battery, $12.8\\,\\text{V} \\cdot 5.80\\,\\text{A}$, and subtract."
+        },
+        {
+          "value": 1.56,
+          "feedback": "You multiplied the difference of the voltages $5.2\\,\\text{V}$ and the difference of the currents $0.30\\,\\text{A}$ by each other. The power is calculated separately at each point, $P = UI$, and only then are the powers subtracted."
+        }
+      ],
+      "solution": "**Given:** at the maximum power point $U_1 = 18.0\\,\\text{V}$ and $I_1 = 5.50\\,\\text{A}$, connected to the battery $U_2 = 12.8\\,\\text{V}$ and $I_2 = 5.80\\,\\text{A}$\n\n**Find:** the decrease in power $\\Delta P$ in watts\n\n**Principle:** A solar panel is a direct-voltage source, and its power is the voltage times the current. The battery determines the voltage of the panel, so the panel works at a different point of its $(U, I)$ curve than the maximum power point. The current there is slightly greater, but the voltage is much smaller.\n\n**Formula:** $P_1 = U_1 I_1$ and $P_2 = U_2 I_2$, from which $\\Delta P = U_1 I_1 - U_2 I_2$\n\n**Conversions:** None needed: the voltages are in volts and the currents in amperes, and $\\text{V} \\cdot \\text{A} = \\text{W}$.\n\n**Substitution:** $\\Delta P = 18.0\\,\\text{V} \\cdot 5.50\\,\\text{A} - 12.8\\,\\text{V} \\cdot 5.80\\,\\text{A} = 99.0\\,\\text{W} - 74.24\\,\\text{W} = 24.76\\,\\text{W}$\n\n**Answer:** $24.8\\,\\text{W}$, three significant figures, because the given voltages and currents have three significant figures and the precision of the difference is a tenth of a watt.\n\n**Reasonableness:** Connected to the battery the panel gives about $74\\,\\text{W} : 99\\,\\text{W} \\approx 75\\,\\%$ of its greatest power, so a quarter is lost. The current rose only about $5\\,\\%$, but the voltage fell about $30\\,\\%$. This is why solar chargers have a controller that seeks the maximum power point."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. In the level 1 tasks you calculate a series resistor, a current or a power with one formula, the level 2 tasks need the reverse direction, LEDs in series, the efficiency or conversions, and level 3 requires reasoning: how the current changes as a battery runs down, where the maximum power point of a solar panel is, and how large a share of the power goes to series resistors."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A silicon diode and a bulb are connected in series to a battery. The cathode of the diode, the terminal on the side of the bar, is on the side of the positive terminal of the battery. Which of the following is true?",
+      "choices": [
+        {
+          "text": "The diode is in the reverse direction: no current flows, and the whole voltage of the battery is across the diode.",
+          "correct": true,
+          "feedback": "Correct. In the forward direction the anode is on the side of the positive terminal. Now the diode is the other way round, so no current flows, the voltage of the bulb is zero and the whole voltage of the battery is across the diode."
+        },
+        {
+          "text": "The diode is in the forward direction, and the bulb shines normally.",
+          "feedback": "The diode is in the forward direction when its anode, the terminal on the side of the triangle, is on the side of the positive terminal. Now the cathode is on the side of the positive terminal, so the diode is in the reverse direction and no current flows."
+        },
+        {
+          "text": "Current flows, but the bulb shines dimmer, because the diode takes part of the voltage.",
+          "feedback": "This would happen in the forward direction: the diode would take about $0.7\\,\\text{V}$ and the bulb would get the rest. In the reverse direction no current flows at all, so the bulb does not light."
+        },
+        {
+          "text": "Current flows the other way, from the negative terminal to the positive terminal.",
+          "feedback": "A diode does not reverse the direction of the current but blocks it. When the cathode is on the side of the positive terminal, the diode is in the reverse direction, and no current flows in either direction."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Graph",
+      "figure": "fy6-14/ex-kenno",
+      "prompt": "The graph shows the $(U, I)$ curve of a solar panel when the light stays the same. At which voltage is the power given by the panel greatest?",
+      "choices": [
+        {
+          "text": "At about $5\\,\\text{V}$, where the curve begins to bend downwards.",
+          "correct": true,
+          "feedback": "Correct. The power is the area of the rectangle $U \\cdot I$. At about $5\\,\\text{V}$ the current is still almost $200\\,\\text{mA}$, so the product $UI$ is greatest, about $0.9\\,\\text{W}$. This is the knee of the curve, the maximum power point."
+        },
+        {
+          "text": "At zero voltage, because the current is then greatest.",
+          "feedback": "In a short circuit the current is greatest, but the voltage is zero, so the power $UI$ is zero. The area of the rectangle $U \\cdot I$ is greatest at the knee of the curve, at about $5\\,\\text{V}$."
+        },
+        {
+          "text": "At six volts, because the voltage is then greatest.",
+          "feedback": "At open circuit the voltage is greatest, but the current is zero, so the power is zero. The greatest power is obtained at the knee of the curve, at about $5\\,\\text{V}$, where the current is still almost at its greatest."
+        },
+        {
+          "text": "Equal at all voltages, because the light stays the same.",
+          "feedback": "The light brings the same power, but the power $UI$ that becomes electricity depends on the operating point. The graph shows that the area of the rectangle $U \\cdot I$ varies from zero to its greatest value at about $5\\,\\text{V}$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain the series resistor",
+      "optional": true,
+      "prompt": "A friend connects a red LED straight to a $4.5\\,\\text{V}$ battery, because “even a light bulb does not need a resistor”. The LED flashes and goes out for good. Explain what happened and why a light bulb withstands the same connection.",
+      "model": "The voltage of the LED in the forward direction is about $2\\,\\text{V}$, and above that a small increase in voltage increases the current very much. Without a series resistor almost the whole voltage of the battery was across the LED, and only the internal resistance of the battery and the wires limited the current. If their resistance is about $1\\,\\Omega$, the current is of the order of $(4.5\\,\\text{V} - 2.0\\,\\text{V}) : 1\\,\\Omega \\approx 2.5\\,\\text{A}$, over a hundred times the recommended $20\\,\\text{mA}$ of the LED. The LED overheated and broke. The filament of a light bulb obeys Ohm's law approximately, and its resistance grows as the filament heats up, so the bulb limits its own current. With an LED a series resistor is therefore needed, which takes the extra voltage and determines the current.",
+      "criteria": [
+        "The answer states that the voltage of the LED stays almost constant and a small increase in voltage increases the current a lot.",
+        "The answer states that without a series resistor only the internal resistance of the battery and the wires limited the current, so the current became too large and the LED overheated.",
+        "The answer states that the resistance of the bulb limits the current, and concludes that a resistor in series is needed with an LED."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and open the answer only after that."
+    }
+  ]
+}
