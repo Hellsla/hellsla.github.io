@@ -1,20 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 005b36e1c19fdf68
+CONTENT-HASH: 22c488369ee7ef37
 
 ## Blocking
 - (none)
 
 ## Polish
-- solutions.md fy7-3-L2-05 Vastaus — "kolme merkitsevää numeroa kuten mittaustulokset", but l = 0,30 m and the currents have two; the tolerance (±4 %) already accepts 1,3 — round to 1,3 or give l as 0,300 m in the task.
-- solutions.md fy7-3-L2-05 Järkevyys (B) — "Vakiotermi 0,06 mT on lähellä Maan kentän suuruutta 0,05 mT, kuten pitääkin": the offset is the Earth field's component along the coil axis plus the sensor's zero, not the full field — "on samaa suuruusluokkaa kuin Maan kenttä, joka on osa vakiotermiä".
-- solutions.md fy7-3-L2-06 Kuvaajan lukeminen — "poikkeavat toisistaan alle 2 %, mikä on mittausepävarmuuden sisällä": they differ from the mean by under 2 % (from each other by up to 3,8 %), and no uncertainty is given — "poikkeavat keskiarvosta alle 2 %, joten tulo on käytännössä vakio".
-- solutions.md fy7-3-L2-07 Mallivastaus — the plan asks also what Earth's field does; add one sentence: Earth's field adds a constant term, removed by zeroing the sensor with the current off (it does not change the slope).
-- exercises.json fy7-3-L3-04 — same compass setup as L3-01 (one wire, not the plan's two wires); acceptable as its data/fit version, but update docs/exercise-bank/FY7.md to say what was made (also L3-05 d) instead of the "kenttä ulkopuolella" misconception task).
+- solutions.md:137 fy7-3-L2-06 d) — 0,50 cm lies outside the measured range 1,0–4,0 cm, so the 1/r law is extrapolated; add "oletetaan, että johdin on paljon ohuempi kuin 0,50 cm ja 1/r-riippuvuus jatkuu mittausalueen ulkopuolelle".
+- solutions.md:123–124 fy7-3-L2-05 — the read-off slope 2,51 mT/A gives 1,255 µVs/(Am), and the Sijoitus jumps to 1,26; write "= 1,255 · 10⁻⁶ ≈ 1,26 · 10⁻⁶" (or read 2,512 from the fit) so the rounding is visible.
+- docs/exercise-bank/FY7.md:21 (carried over from round 1) — Taso 3 still names the two-wire compass task and the "kenttä ulkopuolella" misconception task; record what was made: L3-04 (one wire, tan α against I, fit) and L3-05 d) (wire length doubled, single layer).
 
 ## Checked
-- Recomputed all 18 numeric answers in one script with my own formulas; all equal answers.py: new ones 4,712 mT, 314, 1,256 µVs/(Am) (LSQ slope 2,512 mT/A, intercept 0,059 mT), 53,7 µT (I = 8,05 A), 15,99 µT, 5,28 mT.
-- L1-06: current up, seen from above, counter-clockwise; exactly one correct option, every distractor's feedback right.
-- L2-07: sensor reads B cos 60° = 0,50 B; one correct option, option 4 (right sign, wrong cause) correctly rejected.
-- L3-04: tan α/I constant to 2 %; free fit intercept 0,003, so a line through the origin is justified; tabulated angles agree with B_h = 16 µT within 0,3°; c) reasoning (arctan saturates at 90°) correct.
-- L3-05: N = 318, l = 0,175 m (l/d = 5,8, long-coil formula stated as assumed), R = 2,60 Ω, I = 2,31 A, B = μ₀I/d_e check; d) halving (2,64 mT) correct.
-- Levels 8/7/5; new tasks inside fy7-3 scope (FY6 R = ρl/A, I = U/R allowed at level 3); notation matches the brief; every new solution complete, symbolic first, real reasonableness check.
+- Round 2. Round 1 had no Blocking items; all four round-1 Polish items are fixed: l = 0,300 m (three figures, tolerance range 1,21–1,31 = ±4 %), offset "samaa suuruusluokkaa kuin Maan kenttä … loput anturin nollakohtaa", "poikkeavat keskiarvostaan alle 2 %" (161/158/164 → −1,9 %/+1,9 %), Earth-field sentence added to L2-07.
+- Recomputed all 18 numeric answers in one script with my own formulas; all equal answers.py and exercises.json within tolerance (L2-05 LSQ slope 2,512 mT/A, intercept 0,059 mT; two-point slope (7,59 − 0,06)/3,0 = 2,51; check value at 1,5 A 3,83 mT).
+- L2-06 new d): B·r = 161 µT cm → 322 µT ≈ 320 µT; answers.py comment agrees; not in the answer box.
+- L1-06 and L2-07 choices reordered and reworded: still exactly one correct option each, every distractor wrong and its feedback right.
+- L1-07, L1-08: "pitkä paksuuteensa verrattuna" moved before the question; physics unchanged.
+- L3-04 a) now asks the student to find the linearising quantity (tan α); Periaate gives the reason; fits level 3 (YO-style data interpretation). Free-fit intercept 0,003, so the line through the origin is justified; B_h = 15,99 µT.
+- L3-05 d): added two-layer remark correct (N doubles, l same, I halves → B unchanged); task now states "Käämi pysyy yksikerroksisena", so the single-layer answer 2,6 mT is determined.
+- Levels 8/7/5; all new tasks inside fy7-3 scope; notation matches the brief; every changed solution complete and symbolic first.
+- Hash identical at start and end.

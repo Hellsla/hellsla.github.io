@@ -1,22 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 6b96bf94e77d0b06
+VERDICT: PASS
+CONTENT-HASH: 1362402d4e28bc6a
+Round: 2
+
+Round 2: both round-1 Blocking items are fixed. L1-06 Mallivastaus now says "niissä ei ole alkeisalueita, jotka magneetin kenttä voisi järjestää". This matches the option feedback. L3-05 now says "etelänapa on kompassia kohti". With the S pole facing the compass from the east, the field at the compass points into that pole, which is east. That is correct. Two round-1 Polish items were also taken up. L1-08 now uses Oulu 53 µT, 76°, the same as the L3-04 table. L2-05 has tolerance 0.04, so 15 µT (3,4 % off 14,5) is now accepted.
 
 ## Blocking
-- solutions.md:110 (L1-06) — **A**: "eikä niiden alkeisalueita järjestetä tällä tavalla" says that Al and Cu have domains. They have none, and the option feedback says so. — Fix: "niissä ei ole alkeisalueita, jotka magneetin kenttä voisi järjestää, joten magneetti ei vedä niitä."
-- exercises.json:309 (L3-05) — **B**: "…kompassin itäpuolella akselillaan, joten sen kenttä osoittaa kompassin kohdalla itään". The field points east only when the S pole faces the compass. — Fix: add "etelänapa kompassia kohti".
 
 ## Polish
-- solutions.md:134 (L2-05) — the Vastaus recommends 15 µT, but the page shows 14,5 (step 0,1, tolerance 3 %), so 15 gets only "Lähellä". — Show 15 µT, or set tolerance 0.04.
-- exercises.json:106 (L1-08) — Oulu is 52 µT, 76° here and 53 µT, 76° in the L3-04 table. — Use one value.
-- L1-08 is the sin twin of L1-02 and L2-03. The plan's level-1 task was the compass deflection tan θ = B_m : B_h with a new magnet and distance. — Consider swapping it.
-- L3-04 repeats L3-03's conclusion (smaller B_h in the north, worse compass). — Acceptable. Optionally ask for the angle error that a 5 µT disturbance causes in Helsinki and in Utsjoki.
+- exercises.json L1-08: this is still the sin twin of L1-02 and L2-03. The plan's level-1 compass task, tan θ = B_m : B_h with a new magnet and distance, is still missing. Also, with Oulu now 53 µT and 76° as in L3-04, L1-08 only gives the other component of an L3-04 row. — Consider the plan's tan θ task.
+- L3-04 repeats L3-03's conclusion (smaller B_h in the north, so the compass is worse). — Acceptable. Optionally ask for the angle error that a 5 µT disturbance causes in Helsinki and in Utsjoki.
 
 ## Checked
-- I recomputed the new answers in one script (50,46; 14,50; 70,72; 64,98; 61,61; 16,16). They match answers.py and exercises.json.
-- L2-05 data: B_m r³ ≈ 2,3–2,7·10⁴ µT·cm³, and the 10→20 cm ratio is 8,5, as stated.
-- L3-05: the log–log slope is −3,10 and k = 59,1·10³ µT·cm³, so r₀ = 16,2 cm. The field points south with the N pole toward the compass, and the needle reverses for r < r₀. Both are correct.
-- L2-06: 48,5 / 50,6 / 70,7 µT, with iron at the desk, is correct. The constant phone orientation is stated.
-- L2-07: the swapped ratio gives 25,0° and the correct angle is 65,0°. The >45° check is right.
-- L3-04: B_h is 14,6 / 12,8 / 10,8 µT and θ is 53,9° / 57,3° / 61,6°. B_v ≈ 51 µT everywhere.
-- L1-06 and L1-07: each has one correct option, and every distractor's feedback is right.
-- There are 8/7/5 tasks, and every numeric solution is solved symbolically first.
+- I recomputed the new answers in one script: 51,43; 14,50; 70,72; 64,98; 61,61; 16,16. They match answers.py, which now uses 53 µT, and exercises.json.
+- L1-08: B_v = 53 · sin 76° = 51,4 µT and B_h = 12,8 µT, and the solution's Pythagoras check gives 53 µT. "51 µT, kaksi merkitsevää numeroa" is right.
+- L2-05 b) now uses 8,0 cm and 16 cm: 45,8 µT and 6,23 µT, a ratio of 7,35 ≈ 7,3, close to 2³ = 8. The new Kysytty, Sijoitus, Vastaus and Järkevyys agree with the changed task text.
+- L3-05: a) gives 5,3…6,3·10⁴ µT·cm³ with the averaging explained, and b) gives r₀ = 16,2 cm (16 cm). The rest is unchanged and still correct: the N pole toward the compass gives a field to the south, and the needle reverses for r < r₀.
+- L1-06 and L1-07: only the correct option moved. The texts and feedback are unchanged, each has exactly one correct option, and every distractor is really wrong.
+- There are 8/7/5 tasks. Each new numeric solution is solved symbolically before substitution.

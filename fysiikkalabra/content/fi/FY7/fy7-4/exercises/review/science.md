@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: e1d566ce1d59da9e
+CONTENT-HASH: 2410c9996b853823
 
 ## Blocking
 - (none)
 
 ## Polish
-- solutions.md fy7-4-L3-04 Periaate (B) — "tanko lähtee liikkeelle vasta, kun IlB > μmg": starting is set by static friction, not the sliding coefficient μ the task fits — "liikkuvan tangon kiihtyvyys on positiivinen vain, kun IlB > μmg".
-- docs/exercise-bank/FY7.md fy7-4 Taso 3 — the plan's terminal-velocity/energy rail task and the commutator + torque task were replaced by L3-04 (rail with friction, data) and L3-05 (levitating wire); the substitution is sound (torque is not in the lesson brief), so record it in the plan.
-- solutions.md fy7-4-L2-07 Järkevyys — "lähellä luvussa esitetyn kaiutinkelan kierroslukua 60" relies on an assumed 1,2 cm radius; say "jos säde on sama kuin luvun esimerkissä (1,3 cm), noin 65 kierrosta".
-- Deterministic checks show "FAIL layout 360 px" for fy7-4; not a science matter, but the visual/developer reviewers should confirm it is not in the exercise set.
+- solutions.md:196 fy7-4-L3-05 b) (B) — new sentence "Sivusuunnassa järjestely ei ole vakaa: sivuun siirtynyt johdin voisi kääntyä tai kaatua" names no mechanism and clashes with the task, where the wire "voi liikkua vain pystysuunnassa". Write: "Ilman sivuttaista ohjausta tasapaino olisi sivusuunnassa epävakaa: sivulle siirtyneeseen johtimeen kohdistuvalla hylkimisvoimalla on vaakakomponentti, joka työntää sitä kauemmas. Siksi tehtävässä johdin liikkuu vain pystysuunnassa."
+- docs/exercise-bank/FY7.md:27 (carried over from round 1) — Taso 3 still names the terminal-velocity/energy rail task and the commutator + torque task; record that L3-04 (rail with friction, a(I) data) and L3-05 (levitating wire) were made instead.
+- exercises.json fy7-4-L2-05 says "keksitty esimerkkiaineisto", the other data tasks "esimerkkiaineisto"; use one wording throughout.
 
 ## Checked
-- Recomputed all 19 numeric answers in one script with my own formulas; all equal answers.py: new ones 0,30 N, 0,09397 N, 0,08513 T (half range 0,0018 T), 0,04055 T (student's 0,0169 T reproduced), 5,27 m (LSQ through origin 5,795 N/A; free intercept −0,007), 0,351 T and μ = 0,200 (LSQ slope 0,935, intercept −1,96), 54,25 A.
-- L1-06: I east × B north = up; one correct option; every distractor's feedback right.
-- L1-07 F ∝ 1/r and L1-08 F ∝ sin α (not α) correctly reasoned.
-- L2-05: half range called a scatter estimate, not the uncertainty of the mean (guardrail met).
-- L2-06: error is exactly the plan's (whole length instead of the part in the field); ratio 2,5 : 6,0 explains the student's value.
-- L3-04: N2L model a = (lB/m)I − μg; negative intercept explained by friction; data consistent with B = 0,35 T, μ = 0,20.
-- L3-05: repulsion needs opposite currents (natural in series); F = μ₀I²l/(2πr) = mg; vertical stability argument (F ∝ 1/r) correct; lateral question not asked.
-- Levels 8/7/5; scope FY7 + FY4 dynamics; notation matches the brief; every new solution complete, symbolic first.
-- Rendered L3-04/L3-05 at 1280 px: formulas render, no overflow.
+- Round 2. Round 1 had no Blocking items; the round-1 Polish items are fixed: L3-04 Periaate now "liikkuvan tangon kiihtyvyys on positiivinen vain, kun IlB > μmg"; L2-07 Järkevyys uses the lesson example's radius 1,3 cm (brief: r = 1,3 cm, N = 60): 5,27 m / (2π · 0,013 m) = 64,5 ≈ 65 turns, correct.
+- Recomputed all 19 numeric answers in one script with my own formulas; all equal answers.py and exercises.json within tolerance (L3-03 with F_vert = IlB cos 74° → 1,81 kA; L2-07 LSQ through origin 5,795 N/A → 5,27 m; L3-04 slope 0,935, intercept −1,96 → B = 0,351 T, μ = 0,200).
+- L3-05 Sijoitus rewritten in steps: μ₀l = 6,283 · 10⁻⁷ Vs/A, 2πrmg = 1,849 · 10⁻³ N·m, ratio 2943 A², I = 54,25 A; units consistent; renders cleanly at 1280 px (shot L3-1280-8).
+- L1-06: correct option moved to third place, wording unchanged in physics; exactly one correct option, distractor feedback right.
+- L1-08 Periaate wording "verrannollinen kulman siniin eikä itse kulmaan" correct.
+- L2-05, L2-07, L3-04 captions shortened; data unchanged.
+- Levels 8/7/5; scope FY7 + FY4 dynamics; notation matches the brief.
+- Hash identical at start and end.

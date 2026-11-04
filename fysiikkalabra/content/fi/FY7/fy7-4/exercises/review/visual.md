@@ -1,20 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: e1d566ce1d59da9e
+VERDICT: PASS
+CONTENT-HASH: 2410c9996b853823
+Round: 2
 
 ## Blocking
-- [Major] solutions.md fy7-4-L3-05, Sijoitus (a) — `check_layout.py fy7-4 --width 360` reports "FAIL formula 6 px [hints] inline, cannot wrap: = \sqrt{\dfrac{2\pi \cdot 0{,}010\,\text{m} \cdot 0{,}0030\,\text{kg} …" — the chain `I = \sqrt{\dfrac{…}{…}} = \sqrt{2943\,\text{A}^2} = 54{,}25\,\text{A}` overflows a 360 px phone by 6 px, because the radicand cannot wrap — shorten the first side without changing the physics, for example give the denominator separately ("$\mu_0 l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 0{,}50\,\text{m} = 6{,}28 \cdot 10^{-7}\,\text{Vs/A}$") and write `I = \sqrt{\dfrac{2\pi \cdot 0{,}010\,\text{m} \cdot 0{,}0030\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{6{,}28 \cdot 10^{-7}\,\text{Vs/A}}}`, or drop the units inside the root and put $\text{A}^2$ after it.
 
 ## Polish
-- [Minor] L1-08 Periaate — "verrannollinen sini $\sin\alpha$ eikä kulmaan" is ungrammatical — "verrannollinen kulman siniin $\sin\alpha$ eikä kulmaan $\alpha$".
-- [Minor] L2-06 text — the pupil's calculation is in straight quotes; use ”…”.
-- [Minor] L2-07 Järkevyys — the coil radius $1{,}2\,\text{cm}$ gives about $70$ turns, "lähellä kierroslukua $60$"; the lesson uses $1{,}3\,\text{cm}$ ($65$ turns) — use the lesson's radius.
-- [Minor] L2-05, L2-07, L3-04 tables — long captions with maths make the tables scroll at 360 px (layout warnings); shorten "(esimerkkiaineisto)" captions or move the current into the task text.
+- [Minor] L3-05 Sijoitus — the radicand is now dimensionless with "A" after the root (the numerator unit N·m and the denominator unit Vs/A are given on the lines above); acceptable, but a short note "yksikkö $\sqrt{\text{N}\cdot\text{m} : (\text{Vs/A})} = \text{A}$" would let the pupil follow the units.
+- [Minor] L2-05, L2-07, L3-04 tables — long captions with "(esimerkkiaineisto)" make 2 tables scroll at 360 px (check_layout notes "2 wide table, scrolls", status OK); shorten the captions if wanted (carried over, now only a note).
 
 ## Checked
-- Contact sheets 7 and 8 (#73–#85): L2-05 (4-13), L2-06 (4-14), L2-07 (4-15), L3-04 (4-19), L3-05 (4-20), solutions open; at 1280 px the L3-05 chain is clean.
-- Ran check_layout fy7-4 --width 360: the one FAIL above; the table lines are warnings only.
-- Recomputed 0,30 N; 0,094 N; 0,085 T; 0,041 T; 5,3 m; 0,35 T; 54 A: all match the solutions; the vertical-stability argument in L3-05 is correct.
-- No plain quantity, no ×.
+- Round 1 Blocking (L3-05 Sijoitus overflow at 360 px) is resolved: the chain is split into Nimittäjä, Osoittaja and a short root chain; `check_layout.py fy7-4 --width 360` is OK for fi, en and fi-easy. Capture L3-1280-7/8 shows no clipping or red source.
+- Round 1 Polish: L1-08 Periaate now "kulman siniin $\sin\alpha$ eikä itse kulmaan $\alpha$" (resolved); L2-06 pupil's calculation is in ”…” (resolved); L2-07 Järkevyys uses the lesson's radius 1,3 cm, 65 turns (resolved).
+- Recomputed L3-05: numerator 1,849·10^-3 N·m, denominator 6,283·10^-7 Vs/A, I = 54,25 A, F = 0,0294 N = mg; L2-06 (3,04·10^-3 N, 0,041 T), L2-07 (l = 5,3 m): the answers match the solutions. L3-05 b) now says the arrangement is unstable sideways, which is correct.
+- L1-06 option wording changed only in the correct option and its answer text.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 3
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
