@@ -63,7 +63,7 @@ Väite, että kaikki ovat hajonneet, on virhe, koska toinen puoliintumisaika poi
 **Muunnokset:** Ei tarvita: aika ja puoliintumisaika ovat molemmat vuosina, joten niiden suhde on paljas luku. Osuus muutetaan lopuksi prosenteiksi kertomalla luvulla $100$.
 **Sijoitus:** $\dfrac{N}{N_0} = \left(\tfrac{1}{2}\right)^{144\,\text{a} : 28{,}8\,\text{a}} = \left(\tfrac{1}{2}\right)^{5{,}00} = \tfrac{1}{32} = 0{,}03125 = 3{,}125\,\%$
 **Vastaus:** $3{,}13\,\%$, kolme merkitsevää numeroa kuten annetuissa arvoissa.
-**Järkevyys:** Viiden puoliintumisajan jälkeen osuus on puolitettu viisi kertaa: $100\,\% \to 50\,\% \to 25\,\% \to 12{,}5\,\% \to 6{,}25\,\% \to 3{,}125\,\%$. Näyte ei ole tyhjä, mutta siitä on jäljellä enää pieni murto-osa.
+**Järkevyys:** Viiden puoliintumisajan jälkeen osuus on puolitettu viisi kertaa: $100\,\% \!\to\! 50\,\% \!\to\! 25\,\% \!\to\! 12{,}5\,\% \!\to\! 6{,}25\,\% \!\to\! 3{,}125\,\%$. Näyte ei ole tyhjä, mutta siitä on jäljellä enää pieni murto-osa.
 
 ## fy8-9-L1-08
 **Annettu:** puoliintumisaika $T_{1/2} = 5{,}27\,\text{a}$, aktiivisuus $A = 0{,}100\,A_0$
