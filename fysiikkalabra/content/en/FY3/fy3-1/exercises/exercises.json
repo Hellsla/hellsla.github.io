@@ -40,6 +40,74 @@
       "answer": 62,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-06",
+      "level": 1,
+      "text": "An astronaut travels from the Earth to the Moon. Which statement about his mass and weight is correct?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "The mass stays the same, but the weight decreases, because the interaction of the Moon is weaker.",
+      "choices": [
+        {
+          "text": "Both mass and weight decrease, because there is less matter in the astronaut on the Moon.",
+          "feedback": "The amount of matter does not change on the way to the Moon, so the mass is the same. Only the weight depends on the place."
+        },
+        {
+          "text": "The mass decreases, but the weight stays the same, because the size of the astronaut does not change.",
+          "feedback": "It is the other way round: the mass is the same everywhere, but the weight changes, because it depends on the $g$ of the place."
+        },
+        {
+          "text": "The mass stays the same, but the weight decreases, because the interaction of the Moon is weaker.",
+          "correct": true,
+          "feedback": "Correct: mass tells you the amount of matter, and it does not change on the journey. The weight $G = m g$ decreases, because the $g$ of the Moon is smaller than that of the Earth."
+        },
+        {
+          "text": "Both mass and weight stay the same, because the astronaut loses nothing on the way.",
+          "feedback": "The mass stays the same, but the weight does not: it is a force that depends on the $g$ of the celestial body, and on the Moon $g$ is smaller."
+        }
+      ]
+    },
+    {
+      "id": "fy3-1-L1-07",
+      "level": 1,
+      "text": "A book hangs from a force meter on the surface of the Earth. The weight $G$ of the book describes the strength of the interaction between which two objects?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "The Earth and the book, because the Earth pulls the book towards itself.",
+      "choices": [
+        {
+          "text": "The book and the force meter, because the spring of the meter stretches.",
+          "feedback": "The extension of the spring is only a way to measure the force. The weight describes how strongly the Earth and the book interact."
+        },
+        {
+          "text": "The Earth and the force meter, because the meter is on the surface of the Earth.",
+          "feedback": "The weight is not determined by the meter but by the object hung from it: the weight describes the interaction between the Earth and the book."
+        },
+        {
+          "text": "The book and the air, because the air surrounds the book on all sides.",
+          "feedback": "Air does not cause weight. The weight describes the gravitational pull, and it would exist even in a space with no air."
+        },
+        {
+          "text": "The Earth and the book, because the Earth pulls the book towards itself.",
+          "correct": true,
+          "feedback": "Correct: the weight is a measure of the strength of the interaction between the Earth and the book."
+        }
+      ]
+    },
+    {
+      "id": "fy3-1-L1-08",
+      "level": 1,
+      "text": "The mass of a rover moving on Mars is $0.18\\,\\text{t}$. What is its weight on Mars, where $g = 3.71\\,\\text{m/s}^2$?",
+      "answer": 670,
+      "unit": "N",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,91 @@
       "answer": 5.9,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "A student hangs weights of different masses from a force meter on Earth and reads the weight $G$ from the meter. The measurements are in the table (example data). Plot the points in a $(m, G)$ coordinate system, fit a straight line through the origin to them and determine the acceleration of free fall $g$ from the slope of the line.",
+      "answer": 9.8,
+      "unit": "m/s²",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Mass of the weights and the reading of the force meter on Earth (example data)",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$G\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "0.99"
+          ],
+          [
+            "0.20",
+            "1.95"
+          ],
+          [
+            "0.30",
+            "2.96"
+          ],
+          [
+            "0.40",
+            "3.92"
+          ],
+          [
+            "0.50",
+            "4.89"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-1-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "The same rock sample is weighed with the same force meter on three celestial bodies. The mass of the sample is not known. The results are in the table (example data). The acceleration of free fall on Earth is $g_\\text{Earth} = 9.81\\,\\text{m/s}^2$.\n\nCalculate the acceleration of free fall on Mars $g_\\text{Mars}$ from the weights in the table.",
+      "answer": 3.7,
+      "unit": "m/s²",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Weight of the same sample on three celestial bodies (example data)",
+        "columns": [
+          "Celestial body",
+          "$G\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "Earth",
+            "7.4"
+          ],
+          [
+            "Moon",
+            "1.2"
+          ],
+          [
+            "Mars",
+            "2.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-1-L2-07",
+      "level": 2,
+      "kind": [
+        "error"
+      ],
+      "text": "A student hangs an object from a force meter on Earth, and the reading of the meter is $4.9\\,\\text{N}$. She writes in her notes: “The mass of the object is $4.9\\,\\text{kg}$, because the force meter shows the mass.”\n\na) Explain what is wrong in the student's reasoning.\n\nb) Calculate the correct mass of the object. Write the result of part b) in the answer box.",
+      "answer": 0.5,
+      "unit": "kg",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +253,89 @@
       "answer": 69,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "A student calibrates a spring on Earth by hanging weights from it and measuring the extension $x$ of the spring (table, example data). The same spring is then taken to an unknown celestial body, where a $0.50\\,\\text{kg}$ weight stretches the spring $1.9\\,\\text{cm}$. The extension of the spring is directly proportional to the force.\n\na) From the table, determine the extension per unit of mass $x/m$ on Earth and use it to calculate the acceleration of free fall $g$ of the celestial body. On Earth $g = 9.81\\,\\text{m/s}^2$.\n\nb) Work out which celestial body of the lesson's table ($g$: Moon $1.62$, Mars $3.71$, Earth $9.81$, Jupiter $24.8\\,\\text{m/s}^2$) it is, and justify your answer.\n\nWrite $g$ of part a) in the unit $\\text{m/s}^2$ in the answer box. You can check the justification of part b) from the model answer.",
+      "answer": 3.6,
+      "unit": "m/s²",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Extension of the spring on Earth as a function of the mass of the weight (example data)",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$x\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "1.1"
+          ],
+          [
+            "0.20",
+            "2.1"
+          ],
+          [
+            "0.30",
+            "3.2"
+          ],
+          [
+            "0.40",
+            "4.1"
+          ],
+          [
+            "0.50",
+            "5.2"
+          ],
+          [
+            "0.60",
+            "6.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-1-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "The legs of a landing unit have been tested on Earth: they withstand a total force of at most $6.00\\,\\text{kN}$. The unit is being calculated for Mars ($g = 3.71\\,\\text{m/s}^2$). The masses of the parts of the unit are in the table (example data).\n\na) Calculate the total mass of the parts and the weight of the unit on Earth and on Mars. Could the unit stand on its legs on Earth?\n\nb) Calculate how great an additional load ($\\text{kg}$) can still be added for Mars, when the legs withstand the same force as in the test. Justify why a greater total mass can be taken to Mars than to Earth.\n\nWrite the mass of the additional load of part b) in the answer box. You can check the results of part a) and the justification from the model answer.",
+      "answer": 682,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Masses of the parts of the landing unit (example data)",
+        "columns": [
+          "Part",
+          "$m\\,(\\text{kg})$"
+        ],
+        "rows": [
+          [
+            "Body",
+            "520"
+          ],
+          [
+            "Rover",
+            "180"
+          ],
+          [
+            "Instruments",
+            "95"
+          ],
+          [
+            "Fuel",
+            "140"
+          ]
+        ]
+      }
     }
   ]
 }
