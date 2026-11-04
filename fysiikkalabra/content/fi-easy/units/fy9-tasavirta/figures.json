@@ -24,5 +24,9 @@
  "kulmakerroin ": "kulmakerroin ",
  "Kuvaaja: paristokotelon napajännite U voltteina virran I funktiona ampeereina. Pystyakseli alkaa 3,6 voltista, ja katkaisu on merkitty akselille. Kuusi mustaa pistettä virroilla 0,10–1,00 A, jännitteet 4,56 voltista 3,89 volttiin. Pisteisiin on sovitettu laskeva suora, jota on jatkettu katkoviivana pystyakselille, jonka se leikkaa noin arvossa 4,63 V, ja virtaan 1,20 A asti. Suoralta on ympyröity kaksi pistettä, (0 A; 4,63 V) ja (1,20 A; 3,75 V), joista luetaan kulmakerroin.": "Kuvaaja: paristokotelon napajännite U voltteina virran I funktiona ampeereina. Pystyakseli alkaa 3,6 voltista, ja katkaisu on merkitty akselille. Kuusi mustaa pistettä on virroilla 0,10–1,00 A, ja jännitteet ovat 4,56 voltista 3,89 volttiin. Pisteisiin on sovitettu laskeva suora. Suoraa on jatkettu katkoviivana pystyakselille, ja se leikkaa akselin noin arvossa 4,63 V. Suoraa on jatkettu myös virtaan 1,20 A asti. Suoralta on ympyröity kaksi pistettä, (0 A; 4,63 V) ja (1,20 A; 3,75 V). Niistä luetaan kulmakerroin.",
  "Kuvaaja: napajännite U voltteina virran I funktiona ampeereina, akselit nollasta. Mittauspisteet ovat vasemmalla virroilla 0–1 A. Sovitettu suora jatkuu katkoviivana mittausalueen ulkopuolelle ja leikkaa vaaka-akselin oikosulkuvirran kohdalla noin 6,3 ampeerissa, yli kuusi kertaa suurimman mitatun virran kohdalla.": "Kuvaaja: napajännite U voltteina virran I funktiona ampeereina. Akselit alkavat nollasta. Mittauspisteet ovat vasemmalla virroilla 0–1 A. Sovitettu suora jatkuu katkoviivana mittausalueen ulkopuolelle. Se leikkaa vaaka-akselin oikosulkuvirran kohdalla noin 6,3 ampeerissa. Tämä virta on yli kuusi kertaa suurempi kuin suurin mitattu virta.",
- "mittausalue": "mittausalue"
+ "mittausalue": "mittausalue",
+ "virta ja resistanssi": "virta ja resistanssi",
+ "kytkennät": "kytkennät",
+ "teho ja energia": "teho ja energia",
+ "lähde": "lähde"
 }
