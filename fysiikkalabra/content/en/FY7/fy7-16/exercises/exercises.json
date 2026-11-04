@@ -39,6 +39,52 @@
       "answer": 72.0,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-06",
+      "level": 1,
+      "text": "On an induction hob the base of the pan heats up, but the glass plate above the coil does not heat up by itself, even though the magnetic field of the coil passes through it. Which of the following explains this best?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Glass does not conduct electricity, so no eddy currents arise in it to heat it.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Glass blocks the magnetic field, so the coil does not produce a changing flux at the glass plate.",
+          "feedback": "Glass does not block a magnetic field. The field passes through the glass and produces eddy currents in the base of the pan. The reason is that no electric current can flow in glass."
+        },
+        {
+          "text": "The melting point of glass is so high that eddy currents cannot raise its temperature.",
+          "feedback": "The melting point does not decide whether eddy currents arise in the glass. If a current flowed in the glass, it would heat up. What matters is that glass does not conduct electricity."
+        },
+        {
+          "text": "Glass does not conduct electricity, so no eddy currents arise in it to heat it.",
+          "correct": true,
+          "feedback": "Correct: the changing flux induces a voltage in the glass, but in a material that does not conduct electricity it does not produce a current. Without eddy currents there is no electrical energy changing into internal energy in a resistance, and the base of the pan heats up instead of the glass."
+        },
+        {
+          "text": "According to Lenz’s law, the eddy currents that arise in glass cancel each other, so no heating takes place.",
+          "feedback": "Lenz’s law does not cancel eddy currents; it gives their direction: they oppose the change of flux. No currents arise in glass at all, because it does not conduct electricity."
+        }
+      ]
+    },
+    {
+      "id": "fy7-16-L1-07",
+      "level": 1,
+      "text": "A power of $4.0\\,\\text{mW}$ is fed into the start of a fibre. The attenuation coefficient of the fibre is $0.20\\,\\text{dB/km}$ and its length is $45\\,\\text{km}$. What is the power at the end of the fibre? Give the answer in milliwatts.",
+      "answer": 0.5036,
+      "unit": "mW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-08",
+      "level": 1,
+      "text": "The attenuation coefficient of a fibre is $0.20\\,\\text{dB/km}$. Over what distance does the power of light in the fibre halve?",
+      "answer": 15.0515,
+      "unit": "km",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,105 @@
       "answer": 2.4638,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L2-05",
+      "level": 2,
+      "text": "The efficiency of a wireless charger was measured at different distances between the charger and the receiver coil of a phone. The measurements are example data.\n\nDraw a graph with the efficiency on the vertical axis and the distance on the horizontal axis, and join the points with a smooth curve. Determine the distance at which the efficiency falls to $50\\,\\%$. You can read the value from the graph or interpolate linearly between two measurement points.\n\nWrite the distance in millimetres in the answer box.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 12.857,
+      "unit": "mm",
+      "tolerance": 0.07,
+      "data": {
+        "caption": "Efficiency of a wireless charger as a function of distance (example data)",
+        "columns": [
+          "$d\\,(\\text{mm})$",
+          "$\\eta\\,(\\%)$"
+        ],
+        "rows": [
+          [
+            "3",
+            "81"
+          ],
+          [
+            "6",
+            "73"
+          ],
+          [
+            "10",
+            "58"
+          ],
+          [
+            "15",
+            "44"
+          ],
+          [
+            "20",
+            "31"
+          ],
+          [
+            "25",
+            "22"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-16-L2-06",
+      "level": 2,
+      "text": "The attenuation of a fibre was studied by measuring the power that came through sections of fibre of different lengths. In every measurement a power $P_0 = 800\\,\\mu\\text{W}$ was fed into the start of the fibre. The measurements are example data.\n\nFor each length, calculate the attenuation $A = 10\\,\\text{dB} \\cdot \\lg \\dfrac{P_0}{P}$ and draw a graph with $A$ on the vertical axis and the length $L$ on the horizontal axis. Fit to the points a straight line through the origin: the line goes through the origin because a fibre of zero length has no attenuation. The slope of the line is the attenuation coefficient of the fibre.\n\nWrite the attenuation coefficient in the unit $\\text{dB/km}$ in the answer box.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 0.2003,
+      "unit": "dB/km",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Power that came through the fibre (example data)",
+        "columns": [
+          "$L\\,(\\text{km})$",
+          "$P\\,(\\mu\\text{W})$"
+        ],
+        "rows": [
+          [
+            "10",
+            "488"
+          ],
+          [
+            "20",
+            "327"
+          ],
+          [
+            "30",
+            "196"
+          ],
+          [
+            "40",
+            "129"
+          ],
+          [
+            "50",
+            "79.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-16-L2-07",
+      "level": 2,
+      "text": "A student solves a problem: “The attenuation of a fibre is $20\\,\\text{dB}$. Decibels are like percentages, so the power decreases by $20\\,\\%$ and $80\\,\\%$ of the transmitted power arrives.”\n\na) Explain what is wrong in the student’s reasoning.\n\nb) What percentage of the transmitted power arrives when the attenuation is $20\\,\\text{dB}$?\n\nWrite the result of part b in the answer box.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 1.0,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +244,82 @@
       "answer": 0.441,
       "unit": "ms",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L3-04",
+      "level": 3,
+      "text": "The receiver coil of a wireless charger has $N = 15$ turns, and the frequency of the charger is $f = 130\\,\\text{kHz}$. At different distances $d$ from the charger, the peak value $e_0$ of the voltage induced in the coil was measured. The measurements are example data.\n\nThe phone starts to charge when the peak value of the voltage is at least $1.0\\,\\text{V}$. The manufacturer is considering lowering the frequency of the charger to $100\\,\\text{kHz}$ so that the flux at each distance stays the same.\n\na) Calculate the peak value $\\Phi_0$ of the flux through one turn, in microwebers, for each distance in the table.\n\nb) Calculate the peak value of the flux at which the voltage is exactly $1.0\\,\\text{V}$ at the frequency $100\\,\\text{kHz}$. Using linear interpolation, determine the greatest distance at which charging still works at the new frequency.\n\nc) Explain why the working distance becomes shorter even though the field of the charger does not change, and suggest one change to the receiver coil that would restore the distance.\n\nWrite the distance of part b in millimetres in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 13.275,
+      "unit": "mm",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Voltage of the coil as a function of distance (example data)",
+        "columns": [
+          "$d\\,(\\text{mm})$",
+          "$e_0\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "4",
+            "4.62"
+          ],
+          [
+            "8",
+            "2.71"
+          ],
+          [
+            "12",
+            "1.52"
+          ],
+          [
+            "16",
+            "0.83"
+          ],
+          [
+            "20",
+            "0.47"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-16-L3-05",
+      "level": 3,
+      "text": "Your induction hob operates at the frequency $f = 30\\,\\text{kHz}$. The coil produces at the base of the pan a uniform magnetic field that is perpendicular to the base and varies sinusoidally, with a peak magnetic flux density of $B_0 = 3.0\\,\\text{mT}$.\n\nAssume that the eddy currents in the base can be described as one loop with a radius of $r = 9.0\\,\\text{cm}$, and that the magnetic field of the eddy current itself is ignored. The resistances of the loops in the bases of three pans are in the table.\n\na) Calculate the mean power at which the base of each pan heats up.\n\nb) At what frequency would the coil make the base of pan C heat up at the same power as the base of pan A heats up at $30\\,\\text{kHz}$, when the peak value of the flux density stays the same? Justify how the power depends on the frequency.\n\nc) Give one reason why the base of a real pan heats up at a different power from that given by the model.\n\nWrite the frequency of part b in kilohertz in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 42.4264,
+      "unit": "kHz",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Resistance of the loop in the base of the pan (example data)",
+        "columns": [
+          "Pan",
+          "$R\\,(\\Omega)$"
+        ],
+        "rows": [
+          [
+            "A",
+            "0.040"
+          ],
+          [
+            "B",
+            "0.050"
+          ],
+          [
+            "C",
+            "0.080"
+          ]
+        ]
+      }
     }
   ]
 }

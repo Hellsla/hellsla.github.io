@@ -39,6 +39,58 @@
       "answer": 1.6898,
       "unit": "µm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L1-06",
+      "level": 1,
+      "text": "Light from a laser passes through a narrow slit and forms a diffraction pattern on a screen. What happens to the width of the pattern when the slit is made narrower?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The pattern becomes wider, because in a narrow slit the light bends more strongly to the sides.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The pattern becomes narrower, because a narrower slit lets through only the light that travels straight ahead.",
+          "feedback": "Wrong: light does not pass through a narrow slit only straight ahead but bends at the edges of the slit. The narrower the slit, the more the light spreads to the sides."
+        },
+        {
+          "text": "The pattern stays equally wide, because diffraction depends only on the wavelength of the light.",
+          "feedback": "Wrong: the strength of diffraction depends on the ratio of the slit width to the wavelength, not on the wavelength alone. When the wavelength stays the same and the slit becomes narrower, the pattern changes."
+        },
+        {
+          "text": "The pattern becomes wider, because in a narrow slit the light bends more strongly to the sides.",
+          "feedback": "Correct: diffraction is stronger the closer the slit width is to the wavelength. From a narrower slit the light spreads over a wider range of angles, so the pattern on the screen is wider.",
+          "correct": true
+        },
+        {
+          "text": "The pattern becomes wider, because the slit shortens the wavelength and moves the maxima further out.",
+          "feedback": "Wrong: the slit does not change the wavelength. The wavelength is determined by the light source, and the pattern becomes wider because the light bends more strongly in a narrow slit."
+        }
+      ]
+    },
+    {
+      "id": "fy7-13-L1-07",
+      "level": 1,
+      "text": "A student changes to a denser grating: the new grating has $500$ lines per millimetre. The light of a green laser has a wavelength of $532\\,\\text{nm}$, and it hits the grating perpendicularly. At what angle from the direction of the central maximum is the second-order maximum with the new grating?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 32.1407,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L1-08",
+      "level": 1,
+      "text": "The light of a sodium lamp is yellow, with a wavelength of $589\\,\\text{nm}$. It hits perpendicularly a grating with $400$ lines per millimetre. What is the highest order $k$ for which a maximum still forms?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 4,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +125,102 @@
       "answer": 9.3916,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L2-05",
+      "level": 2,
+      "text": "A student determines the wavelength of a red laser with a grating whose line density is $100$ lines per millimetre. The grating and the screen are perpendicular to the beam, and the screen is $L = 1.00\\,\\text{m}$ from the grating.\n\nThe student measures with a tape measure the distance $x_k$ of the order-$k$ maximum from the central maximum; the measurement results are in the table.\n\na) For each maximum, calculate the angle $\\theta_k$ and its sine $\\sin\\theta_k$. Plot the points $(k, \\sin\\theta_k)$ and fit a straight line through the origin to them.\n\nb) From the slope of the line, calculate the wavelength $\\lambda$ of the laser in nanometres.\n\nThe result of part b) is written in the answer box.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 633.7384,
+      "unit": "nm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Positions of the maxima on the screen (example data)",
+        "columns": [
+          "$k$",
+          "$x_k\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "6.3"
+          ],
+          [
+            "2",
+            "12.6"
+          ],
+          [
+            "3",
+            "19.5"
+          ],
+          [
+            "4",
+            "26.0"
+          ],
+          [
+            "5",
+            "33.5"
+          ],
+          [
+            "6",
+            "41.1"
+          ],
+          [
+            "7",
+            "49.4"
+          ],
+          [
+            "8",
+            "59.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-13-L2-06",
+      "level": 2,
+      "text": "A student uses a grating with $600$ lines per millimetre to measure the first-order maximum of a green laser. The screen is $L = 1.00\\,\\text{m}$ from the grating, perpendicular to the beam, and the maximum is $x = 33.7\\,\\text{cm}$ from the central maximum.\n\nThe student solves for the wavelength like this: “The angle is small, so $\\sin\\theta \\approx x : L = 0.337$. From the grating equation $\\lambda = d\\sin\\theta = 1.667\\,\\mu\\text{m} \\cdot 0.337 = 562\\,\\text{nm}$.”\n\na) What is wrong in the student's reasoning?\n\nb) Calculate the wavelength correctly.\n\nc) By how many percent does the student's result differ from the correct result? Put the correct result in the denominator.\n\nThe result of part c) in percent is written in the answer box.",
+      "kind": [
+        "error"
+      ],
+      "answer": 5.5258,
+      "unit": "%",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy7-13-L2-07",
+      "level": 2,
+      "text": "A student determines the wavelength of a laser with a grating and measures with a tape measure the distance $x$ of a maximum from the central maximum. The reading error is always about $\\Delta x = 2\\,\\text{mm}$. Which change reduces the relative error of the wavelength?",
+      "kind": [
+        "experiment",
+        "concept"
+      ],
+      "answer": "Measure a more distant maximum, because the same reading error is a smaller part of a larger distance.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Move the screen closer to the grating, because a shorter distance reduces the measurement error.",
+          "feedback": "Wrong: when $L$ decreases, $x$ also decreases. The same $\\Delta x$ is then a larger part of the distance, so the relative error grows."
+        },
+        {
+          "text": "Use a sparser grating, because then the maxima are closer together and the error is shared among more of them.",
+          "feedback": "Wrong: with a sparser grating the angles, and so $x$, become smaller, so the same $\\Delta x$ is a larger part of the distance. The error is not shared among anything."
+        },
+        {
+          "text": "Use a brighter laser, because then the maxima move further apart.",
+          "feedback": "Wrong: the brightness of the laser does not affect the positions of the maxima. The positions are determined by the wavelength, the grating spacing and the distance $L$, not by the intensity of the light."
+        },
+        {
+          "text": "Measure a more distant maximum, because the same reading error is a smaller part of a larger distance.",
+          "feedback": "Correct: when the maximum of a higher order is measured, $x$ is larger but the reading error $\\Delta x$ stays the same. The relative error $\\Delta x : x$ becomes smaller, and the same holds for the wavelength.",
+          "correct": true
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +247,134 @@
       "answer": 532.5781,
       "unit": "nm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L3-04",
+      "level": 3,
+      "text": "In an imaginary experiment the slit separation of a double slit is $d = 0.250\\,\\text{mm}$, and the light source is a laser whose wavelength is not known. The screen is perpendicular to the beam, $L = 2.00\\,\\text{m}$ from the slits.\n\nA light sensor measures the relative intensity $I$ of the pattern as a function of the distance $x$ from the central maximum; the readings are in the table.\n\na) Plot the graph $I(x)$ from the points in the table, read from it the position $x_1$ of the first-order maximum and calculate the wavelength $\\lambda$ of the laser.\n\nb) Where is the second-order maximum? Check that the table has a peak at this position.\n\nc) The double slit is replaced by an imaginary grating with the same grating spacing $0.250\\,\\text{mm}$. Where does the first-order maximum appear, and how does the pattern of the grating differ from the pattern of the double slit?\n\nThe result of part a) in nanometres is written in the answer box.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 624.998,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Intensity of the double-slit pattern (example data)",
+        "columns": [
+          "$x\\,(\\text{mm})$",
+          "$I$ (relative)"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1.00"
+          ],
+          [
+            "1.0",
+            "0.65"
+          ],
+          [
+            "2.5",
+            "0.00"
+          ],
+          [
+            "3.0",
+            "0.09"
+          ],
+          [
+            "3.5",
+            "0.35"
+          ],
+          [
+            "4.0",
+            "0.65"
+          ],
+          [
+            "4.5",
+            "0.91"
+          ],
+          [
+            "5.0",
+            "1.00"
+          ],
+          [
+            "5.5",
+            "0.89"
+          ],
+          [
+            "6.0",
+            "0.64"
+          ],
+          [
+            "6.5",
+            "0.36"
+          ],
+          [
+            "7.0",
+            "0.09"
+          ],
+          [
+            "7.5",
+            "0.00"
+          ],
+          [
+            "9.0",
+            "0.65"
+          ],
+          [
+            "9.5",
+            "0.91"
+          ],
+          [
+            "10.0",
+            "1.00"
+          ],
+          [
+            "10.5",
+            "0.89"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-13-L3-05",
+      "level": 3,
+      "text": "A student studies a DVD as a reflection grating. The beam of a green laser, with a wavelength of $532\\,\\text{nm}$, passes through a hole in a cardboard screen parallel to the disc and hits the surface of the disc perpendicularly.\n\nThe first-order maxima $k = \\pm 1$ reflected from the disc are seen on the cardboard on both sides of the hole. The student measures the distance $2x$ between the maxima at four different distances $L$ between the cardboard and the disc; the results are in the table.\n\na) From each measurement, calculate the distance $d$ between the tracks of the disc and their mean $d_{\\text{avg}}$.\n\nb) Show by calculation that no second-order maximum forms. How many dots of light are seen on the cardboard, and where does the zeroth-order reflection go?\n\nc) By how many percent does the mean $d_{\\text{avg}}$ differ from the track spacing of a DVD, $0.74\\,\\mu\\text{m}$?\n\nThe mean of part a) in micrometres is written in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.7374,
+      "unit": "µm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Distance between the maxima $\\pm 1$ (example data)",
+        "columns": [
+          "$L\\,(\\text{cm})$",
+          "$2x\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "4.0",
+            "8.3"
+          ],
+          [
+            "6.0",
+            "12.5"
+          ],
+          [
+            "8.0",
+            "16.7"
+          ],
+          [
+            "10.0",
+            "20.9"
+          ]
+        ]
+      }
     }
   ]
 }
