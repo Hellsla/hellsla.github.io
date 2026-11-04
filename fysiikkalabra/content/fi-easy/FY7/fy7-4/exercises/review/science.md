@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 65bb443bf3d0519a
+CONTENT-HASH: bfc9f517bb3ff29d
+Mode: full
+Round: 1
 
 ## Blocking
-- (none)
+
+## Fixed
+- None needed: no translation text had to be changed.
 
 ## Polish
-- solutions.md:100 (L3-01 Järkevyys) — "langan jännitys olisi kaksinkertainen painoon verrattuna" reads as one thread's tension (each carries mg); fi says the tension of both together — write "lankojen yhteinen jännitysvoima".
+- None.
 
 ## Checked
-- Recomputed all 12 answers with my own formulas: L1 0,24 N, 0,193 N, 0,10 T, 1,019 N, 3,0 A; L2 3,2 mN, 0,0736 T, 30°, 18 m/s²; L3 2,354 A, −266,7 N (repel, sign rule), 1,813 kA. All agree with exercises.json within tolerance.
-- Every number identical to the fi version; all eight solution steps present in 12/12, L2-02 graph-reading step kept (slope from the fitted line through the origin, not from the low last point; origin justified physically).
-- Geometry: L1-04 wire along magnetic N–S, so α = dip 74°; L3-03 E–W wire, only B_h = B cos 74° gives a vertical force, east × north = up, vertical component gives a horizontal force.
-- Conditions kept: homogeneous field, straight wire, frictionless rails with weight and normal force cancelling (L2-04), slack threads = zero tension (L3-01).
-- Rounding reasons and reasonableness checks are real checks (weights in grams, back-substitution).
+- Compared exercises.json to content/fi object by object for all 20 exercises, with focus on the 8 new ones (L1-06..08, L2-05..07, L3-04..05): ids, level, kind, answer, unit, tolerance, correct flags, choices and feedback order, data table columns and cells, and every number in the text match the Finnish.
+- Maths in LaTeX identical to fi apart from the decimal separator; check_i18n.py fi-easy gives 0 errors.
+- The answer of L1-06 is the translated correct choice; L1-07 (0.30 N), L1-08 (0.094 N), L2-05 (0.085 T), L2-06 (0.041 T), L2-07 (5.3 m), L3-04 (0.35 T, mu 0.20), L3-05 (54 A, opposite currents, vertically stable) agree with the fi solutions and my recomputation.
+- solutions.md: structure, formulas, substituted numbers, rounding notes and the reasonableness checks equal the Finnish (L1-06..08, L2-05..07, L3-04..05 read in full).
+- Text is clear plain Finnish: short sentences, common words; new terms are explained (virtavaaka explained in L2-05, hajonta defined in L2-05b). Decimal comma in text and LaTeX; data-table cells keep the decimal point as in fi.
+- The hash was the same at the start and the end (no edits).

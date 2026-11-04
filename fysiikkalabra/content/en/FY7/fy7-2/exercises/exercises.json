@@ -57,7 +57,7 @@
         },
         {
           "text": "The kinetic energy decreases, because the magnetic force points opposite to the velocity and brakes the proton.",
-          "feedback": "A braking force would be in the direction of the velocity, but the magnetic force is always perpendicular to the velocity. Then it cannot slow the particle down; it bends the path into a circle."
+          "feedback": "A braking force would be in the direction of the velocity, but the magnetic force is always perpendicular to the velocity. So it cannot slow the particle down; it bends the path into a circle."
         },
         {
           "text": "The kinetic energy stays the same, because the magnetic force is perpendicular to the velocity and does no work.",
@@ -73,7 +73,7 @@
     {
       "id": "fy7-2-L1-07",
       "level": 1,
-      "text": "In an electron-beam tube, electrons of mass $9.109 \\cdot 10^{-31}\\,\\text{kg}$ and charge $1.602 \\cdot 10^{-19}\\,\\text{C}$ fly at a speed of $3.0 \\cdot 10^{6}\\,\\text{m/s}$ perpendicular to a uniform magnetic field. The electrons are to go round a circular path whose radius is $4.0\\,\\text{cm}$. How great a magnetic flux density is needed? Give the answer in millitesla.",
+      "text": "In an electron-beam tube, electrons of mass $9.109 \\cdot 10^{-31}\\,\\text{kg}$ and charge $1.602 \\cdot 10^{-19}\\,\\text{C}$ fly at a speed of $3.0 \\cdot 10^{6}\\,\\text{m/s}$ perpendicular to a uniform magnetic field. The electrons are to go round a circular path whose radius is $4.0\\,\\text{cm}$. What magnetic flux density is needed? Give the answer in millitesla.",
       "answer": 0.43,
       "unit": "mT",
       "tolerance": 0.02
@@ -248,7 +248,7 @@
       "level": 3,
       "text": "A proton and an alpha particle are accelerated from rest by the same voltage, and after that they fly perpendicular to the same magnetic field. The mass of the proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$ and its charge $e$, the mass of the alpha particle $6.645 \\cdot 10^{-27}\\,\\text{kg}$ and its charge $2e$. How many times as large is the radius of the path of the alpha particle as that of the proton?",
       "answer": 1.41,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.02
     },
     {

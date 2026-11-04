@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 29c50a8511d2f29a
+CONTENT-HASH: acf7bdc90ae62d05
+Mode: full
+Round: 1
 
 ## Blocking
-(none)
+
+## Fixed
+- None needed: no translation text had to be changed.
 
 ## Polish
-- [Minor] Taso 3, tehtävä 2 (open-exercises-L3-1280-2) — ratkaisussa "L = Nπd" ja välivaiheet ovat tiiviitä; selkeämpi, jos kaava ja sijoitus erotetaan kokonaan omille riveilleen kuten muissa tehtävissä.
-- [Minor] Taso 1–3 — yksiköt kirjoitetaan johdonmukaisesti LaTeXilla ja desimaalipilkulla; ainoa huomio: $\tfrac{\text{Vs}}{\text{Am}}$ on pienikokoinen murtoyksikkö ratkaisuissa, mutta luettava.
 
 ## Checked
-- open-exercises L1 (contact-6 #61–#66), L2 (#67–#71, L2-4 täysikokoisena), L3 (#72–#75, L3-2 täysikokoisena).
-- Syöttökentät, yksiköt, Tarkista-painikkeet, ratkaisurakenne (Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys) johdonmukainen; ei leikkautumista tai vaakavieritystä.
-- Tehtävien kuvia ei ole; kuvaaja coil-fit tarkistettu (fig-7-390): akselit, yksiköt ja sovitettu suora selkeät.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- Opened the exercise screenshots of the new tasks (L3-04 solution): equations, units and fractions render without overflow or clipping at 390/1280 width.
+- Data tables of L2-05, L2-06 and L3-04 show the same cells as the Finnish; column headers and captions are translated.
+- Decimal separator in rendered text and LaTeX is a comma, as in the Finnish.
+- Answer unit label (uT, mT, uVs/(Am), kertaa) fits next to the input field.
+- No untranslated strings visible in the fi-easy captures.

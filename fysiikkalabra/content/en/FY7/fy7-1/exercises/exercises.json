@@ -56,7 +56,7 @@
           "feedback": "Wrong: electrical conductivity does not decide it. Copper conducts electricity even better than iron, yet a magnet does not attract it. What matters is whether the substance is ferromagnetic."
         },
         {
-          "text": "Iron is denser and heavier than aluminium, so the attraction of a magnet grips only heavier pieces of metal.",
+          "text": "Iron is denser and heavier than aluminium, so a magnet attracts only heavier pieces of metal.",
           "feedback": "Wrong: magnetic interaction does not depend on mass or density. Copper is even denser than iron, and a magnet still does not attract it. What matters is whether the substance is ferromagnetic."
         },
         {

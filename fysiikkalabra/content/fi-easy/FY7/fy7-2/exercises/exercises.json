@@ -220,7 +220,7 @@
         },
         {
           "text": "Säde kasvaa samassa suhteessa kuin vauhti, joten kehä pitenee yhtä paljon ja kierrosaika pysyy samana.",
-          "feedback": "Oikein: $r = mv : (qB)$, joten kaksinkertainen vauhti antaa kaksinkertaisen säteen ja kaksinkertaisen kehän. Kaksinkertainen matka kuljetaan kaksinkertaisella vauhdilla yhtä nopeasti. Kierrosaika $T = 2\\pi m : (qB)$ ei riipu vauhdista.",
+          "feedback": "Oikein: $r = mv : (qB)$, joten kaksinkertainen vauhti antaa kaksinkertaisen säteen ja kaksinkertaisen kehän. Kaksinkertainen matka kuljetaan kaksinkertaisella vauhdilla samassa ajassa. Kierrosaika $T = 2\\pi m : (qB)$ ei riipu vauhdista.",
           "correct": true
         }
       ]

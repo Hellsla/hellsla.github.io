@@ -156,7 +156,7 @@
 
 ## fy7-1-L3-04
 **Given:** towns of the table $(B;\ I)$: Helsinki $(53\,\mu\text{T};\ 74\,{}^\circ)$, Oulu $(53\,\mu\text{T};\ 76\,{}^\circ)$ and Utsjoki $(52\,\mu\text{T};\ 78\,{}^\circ)$; field of the magnet at the compass $B_\text{m} = 20\,\mu\text{T}$ towards the east
-**Find:** horizontal component $B_\text{h}$ and turning angle $\theta$ of the needle in each town, and an explanation for the growth of the angle; the angle in Utsjoki goes in the answer field
+**Find:** horizontal component $B_\text{h}$ and turning angle $\theta$ of the needle in each town, and an explanation for the growth of the angle; the angle in Utsjoki is the value for the answer field
 **Principle:** The needle turns only in the horizontal plane, so of the Earth's field it is steered by the horizontal component $B_\text{h} = B\cos I$. The field of the magnet towards the east is perpendicular to the horizontal component pointing north, so $\tan\theta = B_\text{m} : B_\text{h}$. The smaller the horizontal component, the greater the angle from the same magnet.
 **Formula:** $B_\text{h} = B\cos I$ and $\theta = \tan^{-1}\dfrac{B_\text{m}}{B_\text{h}}$
 **Conversions:** Not needed: all fields are in microtesla.
