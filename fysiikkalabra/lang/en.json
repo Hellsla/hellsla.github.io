@@ -113,7 +113,7 @@
     "local_status_note_building": "Units are published as they are completed and checked. The scope and assessment have not been confirmed.",
     "local_status_ready": "Ready",
     "home_h1": "Explore. Understand. Apply.",
-    "home_sub": "Upper secondary physics, LOPS 2019. Predict, investigate with a simulation or data, explain it yourself.",
+    "home_sub": "Predict, investigate with a simulation or data, explain it yourself.",
     "study": "How to study",
     "about": "About",
     "about_lead": "How Ruukkilabra began, why it comes in three language forms, how AI is used and who makes it.",
@@ -147,6 +147,7 @@
     "chapter_next": "Next chapter",
     "chapter_up": "Back to the module",
     "chapter_course": "All chapters of {{course}}",
+    "exercise_word": "Exercise",
     "exercise_path": "You do not need to do every exercise. Start with the <strong>core exercises</strong>: they practise the main points of the chapter. The other exercises of levels 1 and 2 are extra practice if you want more certainty, and level 3 is challenging application.",
     "core_exercise": "Core",
     "level_kind_1": "basic practice",
@@ -2446,6 +2447,7 @@
     "lead": "In these tasks nobody tells you which formula to use. Decide yourself which phenomena and models belong to the situation, solve the task on paper and justify your solution, as in the matriculation examination.",
     "howto": "Solve the task yourself first, on paper or on a computer. You may use a calculator, a data booklet and graphing software. Write out your reasoning, formulas, substitutions and answers with units.",
     "points": "{{n}} p",
+    "task_n": "task {{n}}",
     "task_points": {
       "one": "{{n}} point",
       "other": "{{n}} points"
@@ -2661,6 +2663,12 @@
         "one": "All cards of the chapter →",
         "other": "All {{n}} cards of the chapter →"
       },
+      "row_left": {
+        "one": "{{n}} card left in the pile",
+        "other": "{{n}} cards left in the pile"
+      },
+      "row_done": "You have gone through all the cards.",
+      "row_restart": "Start again",
       "deck_count": {
         "one": "Your review deck has {{n}} card",
         "other": "Your review deck has {{n}} cards"

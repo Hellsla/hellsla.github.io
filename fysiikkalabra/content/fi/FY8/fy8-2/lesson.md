@@ -122,8 +122,12 @@ Kun jatkuvan spektrin valo kulkee kaasun läpi, spektriin jää tummia viivoja. 
   <foreignObject x="223" y="353.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{violetti}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/flame-colours.webp" alt="Yhdeksän liekkiä rivissä: purppura, punainen, oranssi, keltainen, valkoinen, vihreä, sinivihreä ja violetti."><figcaption>Metallisuoloja sisältävät liekit. Jokainen alkuaine värjää liekin omalla värillään, koska sen atomit lähettävät vain omien energiatilojensa erotuksia vastaavia aallonpituuksia.</figcaption></figure>
+
 ### Energiatilat selittävät viivat
 Atomin elektroniverho voi olla vain tietyissä **energiatiloissa**. Alin niistä on perustila, ylemmät ovat viritystiloja. Energiat ilmoitetaan negatiivisina, koska nollaksi valitaan tilanne, jossa elektroni on irronnut atomista. Kun atomi siirtyy ylemmästä energiatilasta alempaan, se lähettää yhden fotonin. Energia säilyy, joten fotonin energia on tilojen energioiden erotus. Koska atomilla on vain tietyt energiatilat, erotuksia on vain tietty määrä, ja spektrissä on vain tiettyjä viivoja.
+
+<figure class="unit-photo"><img src="pics/fy8/neon-signs-shinjuku.webp" alt="Kadunkulma iltahämärässä. Rakennusten seinillä on värikkäitä valomainoksia, ja kadulla kulkee ihmisiä."><figcaption>Valomainoksia Shinjukussa Tokiossa. Spektroskoopilla näkisi, onko kunkin valon spektri jatkuva vai viivoista koostuva.</figcaption></figure>
 
 Absorptio on käänteinen tapahtuma. Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen jonkin kahden tilan erotus; muut fotonit kulkevat kaasun läpi. Virittynyt atomi palaa pian alempaan tilaan ja lähettää fotonin, mutta satunnaiseen suuntaan. Siksi alkuperäiseen suuntaan kulkevasta valosta puuttuu juuri nuo aallonpituudet, ja spektriin jää tumma viiva. Kaasu absorboi vain siirtymiä, jotka lähtevät tiloista, joissa sen atomeja on. Kylmässä kaasussa lähes kaikki atomit ovat perustilassa, joten absorptioviivoja on vähemmän kuin emissioviivoja. Auringon kaasukehä on niin kuuma, että pieni osa vetyatomeista on ensimmäisessä viritystilassa. Ne absorboivat näkyvän valon aallonpituuksia, ja siksi vedyn punainen viiva $656\,\text{nm}$ näkyy Auringon spektrissä tummana. Elektronin energiatilat ovat kvantittuneet, ja spektrit ovat siitä suorin todiste.
 
@@ -162,6 +166,8 @@ Spektrin voi mitata itse. Spektroskoopissa valo kulkee kapean raon ja hilan läp
   <foreignObject x="180" y="309.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3{,}40\,\text{eV}$</div></foreignObject>
   <foreignObject x="330" y="309.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2{,}38\,\text{eV}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy8/fluorescent-minerals.webp" alt="Kymmeniä kivinäytteitä mustalla pohjalla. Ne hohtavat kirkkaan vihreinä, punaisina, sinisinä ja keltaisina."><figcaption>Mineraaleja UV-lampun valossa. Ne absorboivat ultraviolettisäteilyä ja lähettävät pidempiaaltoista näkyvää valoa, jonka väri riippuu mineraalista.</figcaption></figure>
 
 ## Kaava: Energiatasojen erotus ja fotonin energia
 Kun atomi siirtyy energiatilasta toiseen, se lähettää tai absorboi fotonin, jonka energia on tilojen energioiden erotus:

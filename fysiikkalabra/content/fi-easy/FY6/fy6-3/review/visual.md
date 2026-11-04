@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1a73dd0ab284e663
+CONTENT-HASH: b99940abb9adfb36
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] fy6-3-theory-1280-1: the filament photo sits beside the Ohmin laki heading, away from the Mistä resistanssi tulee paragraph the caption explains. Acceptable.
 
 ## Checked
-- batch delta review: the only change is meta.json key_concepts. I captured the "Luvun tärkeät käsitteet" panel from preview/fi-easy/fy6-3.html at 390 and 1280 px and opened it (the review/shots set has no capture of the panel). It sits between the opening and stage 1: term bold over its explanation at 390 px, two columns at 1280 px. Nothing is clipped, there is no horizontal overflow and no KaTeX error. The terms match the lesson's usage, and the explanations are plain, correct S2 Finnish.
+batch delta review: opened fy6-3-theory-1280 captures holding the new unit-photo (floats right, 20 rem wide, no clipping or overflow, figure beside it intact, credit line present, alt text and caption natural Finnish, any quantity in the caption set as LaTeX with its unit) plus the surrounding figures and formulas.
