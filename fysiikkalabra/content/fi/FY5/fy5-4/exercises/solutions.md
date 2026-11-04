@@ -174,20 +174,20 @@ akselit 0
 **Mallivastaus:** Kiihtyvyys osoittaa kohti radan keskipistettä, koska nopeuden suunta kääntyy koko ajan sisäänpäin. Se on kohtisuorassa nopeutta vastaan, joten se muuttaa vain suuntaa eikä vauhtia. Liikkeen suuntainen kiihtyvyys muuttaisi vauhtia, mikä ei pidä paikkaansa. Kiihtyvyys ei ole nolla, koska nopeuden suunta muuttuu. Ulospäin osoittava kiihtyvyys ei ole oikein, vaikka pyöräilijästä tuntuu kuin hän työntyisi ulos.
 
 ## fy5-4-L1-08
-**Annettu:** alkuperäinen normaalikiihtyvyys $a_1 = 3{,}0\,\text{m/s}^2$, uusi nopeus $v_2 = 3\,v_1$, sama kaarre eli sama säde $r$
+**Annettu:** alkuperäinen normaalikiihtyvyys $a_1 = 1{,}0\,\text{m/s}^2$, uusi nopeus $v_2 = 3\,v_1$, sama kaarre eli sama säde $r$
 **Kysytty:** uusi normaalikiihtyvyys $a_2$ yksikössä $\text{m/s}^2$
 **Periaate:** Kaarre on sama, joten säde ei muutu. Normaalikiihtyvyys $\tfrac{v^2}{r}$ on suoraan verrannollinen nopeuden neliöön, joten nopeuden kolminkertaistuminen kasvattaa kiihtyvyyden yhdeksänkertaiseksi.
 **Kaava:** $a_1 = \dfrac{v_1^2}{r}$ ja $a_2 = \dfrac{(3\,v_1)^2}{r} = 9\,\dfrac{v_1^2}{r}$, joten $a_2 = 9\,a_1$
 **Muunnokset:** Muunnoksia ei tarvita, koska kiihtyvyys on jo yksikössä $\text{m/s}^2$ ja nopeus esiintyy vain suhteena.
-**Sijoitus:** $a_2 = 9\cdot 3{,}0\,\text{m/s}^2 = 27\,\text{m/s}^2$
-**Vastaus:** $27\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten alkuperäisessä kiihtyvyydessä $3{,}0\,\text{m/s}^2$.
-**Järkevyys:** Kiihtyvyys on lähes kolminkertainen putoamiskiihtyvyyteen $9{,}81\,\text{m/s}^2$ verrattuna, mikä on moottoripyörälle kaarteessa aivan liikaa. Kolminkertainen nopeus ei siis ole todellisessa kaarteessa mahdollinen. Jos nopeus kasvaisi vain kaksinkertaiseksi, kiihtyvyys olisi $4\cdot 3{,}0\,\text{m/s}^2 = 12\,\text{m/s}^2$. Tarkistus: $\tfrac{9}{1}$ on kolmen neliö.
+**Sijoitus:** $a_2 = 9\cdot 1{,}0\,\text{m/s}^2 = 9{,}0\,\text{m/s}^2$
+**Vastaus:** $9{,}0\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten alkuperäisessä kiihtyvyydessä $1{,}0\,\text{m/s}^2$.
+**Järkevyys:** Kolminkertainen nopeus tarkoittaa $3^2 = 9$-kertaista kiihtyvyyttä. Tulos $9{,}0\,\text{m/s}^2$ on noin $0{,}92$-kertainen putoamiskiihtyvyyteen $9{,}81\,\text{m/s}^2$ verrattuna, joten se vaatii jo hyvin hyvän pidon, mutta on mahdollinen kuivalla asfaltilla. Kaksinkertaisella nopeudella kiihtyvyys olisi vain $4\cdot 1{,}0\,\text{m/s}^2 = 4{,}0\,\text{m/s}^2$.
 
 ## fy5-4-L2-05
 **Annettu:** säde $r = 0{,}80\,\text{m}$; taulukosta $(v, F)$-parit väliltä $v = 3{,}0\ldots 7{,}0\,\text{m/s}$ ja $F = 0{,}28\ldots 1{,}53\,\text{N}$; esimerkkiaineisto
 **Kysytty:** tulpan massa $m$ yksikössä $\text{g}$
-**Periaate:** Tulppa on tasaisessa ympyräliikkeessä, ja vaakasuora naru antaa ainoan keskipisteeseen osoittavan voiman. Newtonin toisen lain mukaan $F = m\tfrac{v^2}{r}$, joten $F$ on suoraan verrannollinen suureeseen $v^2$ ja kulmakerroin on $\tfrac{m}{r}$. Suora kulkee origon kautta, koska levossa ($v = 0$) naru ei vedä.
-**Kuvaajan lukeminen:** Lasketaan $v^2$ jokaiselle riville: $9{,}0$, $16$, $25$, $36$ ja $49\,\text{m}^2/\text{s}^2$. Pisteet $(v^2, F)$ asettuvat suoran lähelle eivätkä aivan sen päälle, koska mittauksissa on pientä hajontaa. Sovitettu suora kulkee origon ja pisteen $(49\,\text{m}^2/\text{s}^2,\ 1{,}53\,\text{N})$ kautta, ja se kulkee muiden pisteiden lomasta. Kulmakerroin luetaan tämän suoran kahdesta pisteestä.
+**Periaate:** Tulppa on tasaisessa ympyräliikkeessä sileällä vaakasuoralla pöydällä. Paino ja pöydän tukivoima kumoavat toisensa, joten vaakasuora naru antaa ainoan keskipisteeseen osoittavan voiman. Newtonin toisen lain mukaan $F = m\tfrac{v^2}{r}$, joten $F$ on suoraan verrannollinen suureeseen $v^2$ ja kulmakerroin on $\tfrac{m}{r}$. Suora kulkee origon kautta, koska levossa ($v = 0$) naru ei vedä.
+**Kuvaajan lukeminen:** Lasketaan $v^2$ jokaiselle riville: $9{,}0$, $16$, $25$, $36$ ja $49\,\text{m}^2/\text{s}^2$. Pisteet $(v^2, F)$ asettuvat suoran lähelle eivätkä aivan sen päälle, koska mittauksissa on pientä hajontaa. Suora piirrettiin silmämääräisesti origon kautta pisteiden lomaan, ja se sattuu kulkemaan pisteen $(49\,\text{m}^2/\text{s}^2,\ 1{,}53\,\text{N})$ kautta. Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä: origosta ja tästä pisteestä. Tarkistus: suureiden $F/v^2$ keskiarvo on $0{,}0312\,\text{kg/m}$, ja pienimmän neliösumman sovitus antaa saman massan $25{,}0\,\text{g}$.
 **Kaava:** $k = \dfrac{\Delta F}{\Delta(v^2)}$ ja $k = \dfrac{m}{r}$, joten $m = k\,r$
 **Muunnokset:** $1\,\text{kg} = 1000\,\text{g}$, joten $m$ muutetaan lopuksi grammoiksi.
 **Sijoitus:** $k = \dfrac{1{,}53\,\text{N} - 0\,\text{N}}{49\,\text{m}^2/\text{s}^2 - 0\,\text{m}^2/\text{s}^2} = 0{,}03122\,\text{kg/m}$ ja $m = 0{,}03122\,\tfrac{\text{kg}}{\text{m}}\cdot 0{,}80\,\text{m} = 0{,}02498\,\text{kg} = 24{,}98\,\text{g}$
@@ -225,14 +225,14 @@ akselit 0
 **Mallivastaus virheestä:** Oppilas piirsi autoon ulospäin osoittavan keskipakoisvoiman ja lisäsi sen kitkaan. Sellaista voimaa ei ole, koska mikään kappale ei vedä autoa ulospäin. Lauseke $m\tfrac{v^2}{r}$ on kokonaisvoiman suuruus eikä oma voimansa, ja kokonaisvoima syntyy pelkästä kitkasta. Siksi kitka on $m\tfrac{v^2}{r} = 3672\,\text{N}$, ja oppilaan laskema kaksinkertainen arvo $7344\,\text{N}$ on kaksi kertaa liian suuri.
 
 ## fy5-4-L3-04
-**Annettu:** $m = 60{,}0\,\text{kg}$; alhaalla $v_1 = 22{,}0\,\text{m/s}$ ja $a_1 = 34{,}6\,\text{m/s}^2$; ylhäällä $v_2 = 14{,}0\,\text{m/s}$ ja $a_2 = 14{,}1\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$; esimerkkiaineisto; ilmanvastus ja vierimisvastus jätetään huomiotta
+**Annettu:** $m = 60{,}0\,\text{kg}$; alhaalla $v_1 = 27{,}2\,\text{m/s}$ ja $a_1 = 53{,}2\,\text{m/s}^2$; ylhäällä $v_2 = 14{,}0\,\text{m/s}$ ja $a_2 = 14{,}1\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$; esimerkkiaineisto; ilmanvastus ja vierimisvastus jätetään huomiotta
 **Kysytty:** a) silmukan säde $r$; b) vaunun tukivoima $N$ matkustajaan ylhäällä ja alhaalla; c) pienin nopeus $v_\text{min}$ ylhäällä, yksikössä $\text{m/s}$. Vastauslaatikkoon tukivoima ylhäällä, yksikössä $\text{N}$.
 **Periaate:** Silmukassa matkustaja on hetkittäin tasaisessa ympyräliikkeessä, ja kokonaisvoima osoittaa kohti silmukan keskipistettä ja on $ma_\text{n}$. Ratanopeudesta ja normaalikiihtyvyydestä saadaan säde kaavalla $a_\text{n} = \tfrac{v^2}{r}$. Matkustajaan vaikuttavat vain paino $\overline{G}$ ja vaunun tukivoima $\overline{N}$, ja ne ratkaistaan liikeyhtälöstä keskipisteen suunnassa. Ylhäällä keskipiste on alapuolella ja alhaalla yläpuolella.
 **Voimakuvio:** Alhaalla matkustaja suorakulmiona, $y$ ylös kohti keskipistettä. Paino $\overline{G}$ keskipisteestä alas ja tukivoima $\overline{N}$ alapinnasta ylös, painoa selvästi pidempänä. Kiihtyvyys erikseen ylös kohti keskipistettä.
 ```voimakuvio
 pinta 0
 G 588,6
-N 2664,6
+N 3780,6
 a ylös
 v oikea
 akselit 0
@@ -248,11 +248,11 @@ akselit 0
 ```
 **Kaava:** $r = \dfrac{v^2}{a_\text{n}}$. Alhaalla $y$ ylös: $N_1 - mg = ma_1$, joten $N_1 = m(g + a_1)$. Ylhäällä $y$ alas kohti keskipistettä: $N_2 + mg = ma_2$, joten $N_2 = m(a_2 - g)$. Tukivoima on nolla, kun $mg = m\tfrac{v_\text{min}^2}{r}$, joten $v_\text{min} = \sqrt{g\,r}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** a) $r_1 = \dfrac{(22{,}0\,\text{m/s})^2}{34{,}6\,\text{m/s}^2} = 13{,}99\,\text{m}$ ja $r_2 = \dfrac{(14{,}0\,\text{m/s})^2}{14{,}1\,\text{m/s}^2} = 13{,}90\,\text{m}$. Summa on $27{,}89\,\text{m}$, joten keskiarvo on $13{,}94\,\text{m}$.
-b) $N_2 = 60{,}0\,\text{kg}\cdot(14{,}1 - 9{,}81)\,\text{m/s}^2 = 60{,}0\,\text{kg}\cdot 4{,}29\,\text{m/s}^2 = 257{,}4\,\text{N}$ ja $N_1 = 60{,}0\,\text{kg}\cdot(9{,}81 + 34{,}6)\,\text{m/s}^2 = 2664{,}6\,\text{N}$. Painoa $mg = 588{,}6\,\text{N}$ verrataan: $\tfrac{N_1}{mg} = \tfrac{2664{,}6}{588{,}6} = 4{,}53$.
-c) $v_\text{min} = \sqrt{9{,}81\,\text{m/s}^2\cdot 13{,}94\,\text{m}} = \sqrt{136{,}8\,\text{m}^2/\text{s}^2} = 11{,}7\,\text{m/s}$
-**Vastaus:** Tukivoima ylhäällä on $257\,\text{N}$, kolme merkitsevää numeroa kuten kiihtyvyyksissä. Alhaalla tukivoima on $2{,}66\,\text{kN}$ eli noin $4{,}5$-kertainen painoon verrattuna, ja silmukan säde on noin $13{,}9\,\text{m}$. Pienin nopeus ylhäällä on $11{,}7\,\text{m/s}$.
-**Järkevyys:** Taulukon nopeus ylhäällä $14{,}0\,\text{m/s}$ on suurempi kuin $11{,}7\,\text{m/s}$, ja mitattu kiihtyvyys $14{,}1\,\text{m/s}^2$ on suurempi kuin $g$, joten tukivoima on positiivinen: matkustaja pysyy kosketuksessa vaunuun ja tuntee itsensä ylhäällä kevyeksi, vain noin $0{,}44$-kertaiseksi painoonsa verrattuna ($257{,}4 : 588{,}6$). Alhaalla hän painuu istuinta vasten, mikä sopii kokemukseen vuoristoradasta. Säteen kaksi arvoa ovat lähellä toisiaan ($13{,}99\,\text{m}$ ja $13{,}90\,\text{m}$), joten aineisto sopii ympyrärataan.
+**Sijoitus:** a) $r_1 = \dfrac{(27{,}2\,\text{m/s})^2}{53{,}2\,\text{m/s}^2} = 13{,}91\,\text{m}$ ja $r_2 = \dfrac{(14{,}0\,\text{m/s})^2}{14{,}1\,\text{m/s}^2} = 13{,}90\,\text{m}$. Summa on $27{,}81\,\text{m}$, joten keskiarvo on $13{,}90\,\text{m}$.
+b) $N_2 = 60{,}0\,\text{kg}\cdot(14{,}1 - 9{,}81)\,\text{m/s}^2 = 60{,}0\,\text{kg}\cdot 4{,}29\,\text{m/s}^2 = 257{,}4\,\text{N}$ ja $N_1 = 60{,}0\,\text{kg}\cdot(9{,}81 + 53{,}2)\,\text{m/s}^2 = 3780{,}6\,\text{N}$. Painoa $mg = 588{,}6\,\text{N}$ verrataan: $\tfrac{N_1}{mg} = \tfrac{3780{,}6}{588{,}6} = 6{,}42$.
+c) $v_\text{min} = \sqrt{9{,}81\,\text{m/s}^2\cdot 13{,}90\,\text{m}} = \sqrt{136{,}4\,\text{m}^2/\text{s}^2} = 11{,}7\,\text{m/s}$
+**Vastaus:** Tukivoima ylhäällä on noin $260\,\text{N}$ (kaksi merkitsevää numeroa, koska erotus $14{,}1 - 9{,}81$ on tarkka vain noin kahden numeron tarkkuudella). Alhaalla tukivoima on $3{,}8\,\text{kN}$ eli noin $6{,}4$-kertainen painoon verrattuna, ja silmukan säde on noin $13{,}9\,\text{m}$. Pienin nopeus ylhäällä on $11{,}7\,\text{m/s}$.
+**Järkevyys:** Taulukon nopeus ylhäällä $14{,}0\,\text{m/s}$ on suurempi kuin $11{,}7\,\text{m/s}$, ja mitattu kiihtyvyys $14{,}1\,\text{m/s}^2$ on suurempi kuin $g$, joten tukivoima on positiivinen: matkustaja pysyy kosketuksessa vaunuun ja tuntee itsensä ylhäällä kevyeksi, vain noin $0{,}44$-kertaiseksi painoonsa verrattuna ($257{,}4 : 588{,}6$). Alhaalla hän painuu istuinta vasten, mikä sopii kokemukseen vuoristoradasta. Säteen kaksi arvoa ovat lähellä toisiaan ($13{,}91\,\text{m}$ ja $13{,}90\,\text{m}$), joten aineisto sopii ympyrärataan. Energiatarkistus (ilman kitkaa): $v_1^2 - v_2^2 = 543{,}8\,\text{m}^2/\text{s}^2$ ja $4\,g\,r = 545{,}6\,\text{m}^2/\text{s}^2$, joten aineisto on energian säilymisen mukainen ja alhaalla tukivoima on yli $6\,mg$, kuten kitkattomassa silmukassa kuuluukin.
 
 ## fy5-4-L3-05
 **Annettu:** säde $r = 130\,\text{m}$, kallistuskulma $\alpha = 8{,}0\,{}^\circ$ (tie laskee kohti sisäreunaa), lepokitkakerroin $\mu_0 = 0{,}40$; $g = 9{,}81\,\text{m/s}^2$; ilmanvastus ja vierimisvastus jätetään huomiotta
@@ -267,11 +267,18 @@ F_mu 42,8 alas
 a vasen
 akselit 0
 ```
-**Kaava:** Ilman kitkaa ($F_\mu = 0$): $x$: $N\sin\alpha = m\dfrac{v_0^2}{r}$ ja $y$: $N\cos\alpha = mg$, joten jakamalla $\tan\alpha = \dfrac{v_0^2}{g\,r}$ ja $v_0 = \sqrt{g\,r\tan\alpha}$. Kitkan kanssa: $x$: $N\sin\alpha + \mu_0 N\cos\alpha = m\dfrac{v^2}{r}$ ja $y$: $N\cos\alpha - \mu_0 N\sin\alpha = mg$. Jakamalla ja supistamalla suureella $\cos\alpha$ saadaan $v_\text{max} = \sqrt{g\,r\,\dfrac{\tan\alpha + \mu_0}{1 - \mu_0\tan\alpha}}$
+**Kaava:** Ilman kitkaa ($F_\mu = 0$): $x$: $N\sin\alpha = m\dfrac{v_0^2}{r}$ ja $y$: $N\cos\alpha = mg$, joten jakamalla $\tan\alpha = \dfrac{v_0^2}{g\,r}$ ja $v_0 = \sqrt{g\,r\tan\alpha}$. Kitkan kanssa: $x$: $N\sin\alpha + \mu_0 N\cos\alpha = m\dfrac{v^2}{r}$ ja $y$: $N\cos\alpha - \mu_0 N\sin\alpha = mg$. Yhtälöt jaetaan keskenään, jolloin $N$ ja $m$ supistuvat:
+
+$$\dfrac{\sin\alpha + \mu_0\cos\alpha}{\cos\alpha - \mu_0\sin\alpha} = \dfrac{v^2}{g\,r}$$
+
+Murtolauseke jaetaan osoittajasta ja nimittäjästä suureella $\cos\alpha$:
+
+$$\dfrac{\tan\alpha + \mu_0}{1 - \mu_0\tan\alpha} = \dfrac{v^2}{g\,r} \quad\Rightarrow\quad v_\text{max} = \sqrt{g\,r\,\dfrac{\tan\alpha + \mu_0}{1 - \mu_0\tan\alpha}}$$
+
 **Muunnokset:** $1\,\text{m/s} = 3{,}6\,\text{km/h}$, joten tulokset kerrotaan luvulla $3{,}6$.
 **Sijoitus:** Ensin $\tan\alpha = \tan 8{,}0\,{}^\circ = 0{,}1405$ ja $g\,r = 9{,}81\,\text{m/s}^2\cdot 130\,\text{m} = 1275{,}3\,\text{m}^2/\text{s}^2$.
 a) $v_0 = \sqrt{1275{,}3\,\text{m}^2/\text{s}^2\cdot 0{,}1405} = 13{,}39\,\text{m/s} = 48{,}2\,\text{km/h}$
-b) Sulkulauseke on $\dfrac{0{,}1405 + 0{,}40}{1 - 0{,}40\cdot 0{,}1405} = \dfrac{0{,}5405}{0{,}9438} = 0{,}5727$, joten
+b) Murtolauseke on $\dfrac{0{,}1405 + 0{,}40}{1 - 0{,}40\cdot 0{,}1405} = \dfrac{0{,}5405}{0{,}9438} = 0{,}5727$, joten
 $v_\text{max} = \sqrt{1275{,}3\,\text{m}^2/\text{s}^2\cdot 0{,}5727} = 27{,}03\,\text{m/s} = 97{,}3\,\text{km/h}$.
 Vaakasuorassa kaarteessa ($\alpha = 0$) olisi $v = \sqrt{\mu_0\,g\,r} = \sqrt{0{,}40\cdot 1275{,}3\,\text{m}^2/\text{s}^2} = 22{,}58\,\text{m/s} = 81{,}3\,\text{km/h}$.
 **Vastaus:** $v_\text{max} \approx 97\,\text{km/h}$, kaksi merkitsevää numeroa kuten kulmassa $8{,}0\,{}^\circ$ ja kertoimessa $0{,}40$. Ilman kitkaa kaarre kulkisi nopeudella $v_0 \approx 48\,\text{km/h}$, ja vaakasuorassa kaarteessa suurin nopeus olisi noin $81\,\text{km/h}$, joten kallistus nostaa rajaa noin $16\,\text{km/h}$ eli noin viidenneksen.

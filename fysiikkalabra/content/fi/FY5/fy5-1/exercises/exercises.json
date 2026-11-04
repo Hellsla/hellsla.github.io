@@ -74,7 +74,7 @@
   {
    "id": "fy5-1-L1-07",
    "level": 1,
-   "text": "Oven kahvaan vedetään narulla $30\\,\\text{N}$:n voimalla niin, että naru kulkee oven tasossa saranoiden suuntaan eli vetää kahvaa kohti saranoita. Kahva on $0{,}80\\,\\text{m}$:n päässä saranoista. Mikä on narun voiman momentti saranoiden suhteen?",
+   "text": "Oven kahvaan vedetään narulla $30\\,\\text{N}$:n voimalla niin, että naru kulkee oven tasossa saranoiden suuntaan eli vetää kahvaa kohti saranoita (naru on oven reunan suuntainen ja kiinnitetty kahvaan). Kahva on $0{,}80\\,\\text{m}$:n päässä saranoista. Mikä on narun voiman momentti saranoiden suhteen?",
    "kind": [
     "concept"
    ],
@@ -83,13 +83,13 @@
    "tolerance": 0.02,
    "choices": [
     {
+     "text": "$24\\,\\text{Nm}$, koska varsi on kahvan etäisyys saranoista, vaikka voiman suunta on oven suuntainen.",
+     "feedback": "Varsi ei ole etäisyys otekohtaan vaan kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Tässä vaikutussuora kulkee saranoiden kautta, joten varsi ei ole $0{,}80\\,\\text{m}$."
+    },
+    {
      "text": "$0\\,\\text{Nm}$, koska voiman vaikutussuora kulkee saranoiden kautta, jolloin varsi on nolla.",
      "correct": true,
      "feedback": "Oikein: naru vetää ovea sen omassa tasossa kohti saranoita, joten vaikutussuora kulkee kiertoakselin kautta ja varsi on $r = 0$. Silloin $M = Fr = 0$: voima ei kierrä ovea lainkaan, vaikka se on suuri."
-    },
-    {
-     "text": "$24\\,\\text{Nm}$, koska varsi on kahvan etäisyys saranoista, vaikka voiman suunta on oven suuntainen.",
-     "feedback": "Varsi ei ole etäisyys otekohtaan vaan kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Tässä vaikutussuora kulkee saranoiden kautta, joten varsi ei ole $0{,}80\\,\\text{m}$."
     },
     {
      "text": "$30\\,\\text{Nm}$, koska momentin lukuarvo on yhtä suuri kuin voiman, kun voima vaikuttaa kahvaan.",
@@ -269,7 +269,7 @@
   {
    "id": "fy5-1-L3-04",
    "level": 3,
-   "text": "Pyöräilijä painaa poljinta $450\\,\\text{N}$:n voimalla kohtisuoraan kampea vastaan. Kammen pituus on $0{,}175\\,\\text{m}$ ja etuhammaspyörän säde $0{,}100\\,\\text{m}$. Ketju vetää etuhammaspyörää sen kehällä, ja ketju välittää voiman takahammaspyörään, jonka säde riippuu vaihteesta (esimerkkiaineisto, taulukko). Takahammaspyörä on kiinni takapyörässä. Vain ketjun vedettävän puolen voima otetaan huomioon, ja sen suuruus on sama kummassakin hammaspyörässä. Kitka jätetään huomiotta.\n\na) Kuinka suuri on ketjun voima?\n\nb) Kuinka suuri on ketjun voiman momentti takapyörän akselin suhteen vaihteella 1?\n\nc) Laske momentti myös vaihteilla 2 ja 3 ja perustele, minkä vaihteen valitset jyrkkään ylämäkeen.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+   "text": "Pyöräilijä painaa poljinta $450\\,\\text{N}$:n voimalla kohtisuoraan kampea vastaan. Kammen pituus on $0{,}175\\,\\text{m}$ ja etuhammaspyörän säde $0{,}100\\,\\text{m}$. Ketju vetää etuhammaspyörää sen kehällä, ja ketju välittää voiman takahammaspyörään, jonka säde riippuu vaihteesta (esimerkkiaineisto, taulukko). Takahammaspyörä on kiinni takapyörässä. Vain ketjun vedettävän puolen voima otetaan huomioon, ja sen suuruus on sama kummassakin hammaspyörässä. Kitka jätetään huomiotta. Kampi ja etuhammaspyörä pyörivät tasaisesti, joten polkimen voiman momentti ja ketjun voiman momentti kammen akselin suhteen ovat yhtä suuret (ja vastakkaissuuntaiset).\n\na) Kuinka suuri on ketjun voima?\n\nb) Kuinka suuri on ketjun voiman momentti takapyörän akselin suhteen vaihteella 1?\n\nc) Laske momentti myös vaihteilla 2 ja 3 ja perustele, minkä vaihteen valitset jyrkkään ylämäkeen.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
    "kind": [
     "data",
     "model",

@@ -103,11 +103,11 @@
     {
       "id": "fy5-4-L1-08",
       "level": 1,
-      "text": "Moottoripyörä ajaa ympyrän muotoisessa kaarteessa tasaisella nopeudella, ja sen normaalikiihtyvyys on $3{,}0\\,\\text{m/s}^2$. Kuljettaja ajaa saman kaarteen uudelleen kolminkertaisella nopeudella. Kuinka suuri normaalikiihtyvyys on silloin?",
+      "text": "Moottoripyörä ajaa ympyrän muotoisessa kaarteessa tasaisella nopeudella, ja sen normaalikiihtyvyys on $1{,}0\\,\\text{m/s}^2$. Kuljettaja ajaa saman kaarteen uudelleen kolminkertaisella nopeudella. Kuinka suuri normaalikiihtyvyys on silloin?",
       "kind": [
         "reasoning"
       ],
-      "answer": 27.0,
+      "answer": 9.0,
       "unit": "m/s²",
       "tolerance": 0.02
     }
@@ -150,7 +150,7 @@
     {
       "id": "fy5-4-L2-05",
       "level": 2,
-      "text": "Opiskelijat tutkivat, miten narun jännitysvoima riippuu ympyräliikkeen nopeudesta. Pieni kumitulppa pyörii narun päässä vaakasuoralla ympyrällä, jonka säde pidetään vakiona, $0{,}80\\,\\text{m}$. Narun voima $F$ mitataan voimamittarilla, ja ratanopeus $v$ lasketaan kierrosajasta. Aineisto on esimerkkiaineisto.\n\nPiirrä $(v^2, F)$-kuvaaja ja sovita siihen suora, joka kulkee origon kautta. Lue suoralta kulmakerroin ja laske sen avulla tulpan massa. Naru oletetaan vaakasuoraksi, joten jännitysvoima on ainoa keskipisteeseen osoittava voima.\n\nVastauslaatikkoon tulee tulpan massa grammoina.",
+      "text": "Opiskelijat tutkivat, miten narun jännitysvoima riippuu ympyräliikkeen nopeudesta. Pieni kumitulppa liikkuu narun päässä ympyrää sileällä vaakasuoralla pöydällä, ja ympyrän säde pidetään vakiona, $0{,}80\\,\\text{m}$. Narun voima $F$ mitataan voimamittarilla, ja ratanopeus $v$ lasketaan kierrosajasta. Aineisto on esimerkkiaineisto.\n\nPiirrä $(v^2, F)$-kuvaaja ja sovita siihen suora, joka kulkee origon kautta. Lue suoralta kulmakerroin ja laske sen avulla tulpan massa. Pöytä on sileä ja naru vaakasuora, joten jännitysvoima on ainoa vaakasuuntainen voima.\n\nVastauslaatikkoon tulee tulpan massa grammoina.",
       "kind": [
         "data",
         "graph"
@@ -269,7 +269,7 @@
     {
       "id": "fy5-4-L3-04",
       "level": 3,
-      "text": "Vuoristoradan vaunu kulkee pystysuoran ympyrän muotoisen silmukan läpi. Vaunun kiihtyvyysanturi mittasi normaalikiihtyvyyden $a_\\text{n}$ ja nopeusmittari ratanopeuden $v$ silmukan alimmassa ja ylimmässä kohdassa (taulukko, esimerkkiaineisto). Matkustajan massa on $60{,}0\\,\\text{kg}$. Ilmanvastus ja vierimisvastus jätetään huomiotta.\n\na) Laske silmukan säde kummastakin rivistä ja niiden keskiarvo.\n\nb) Piirrä matkustajan voimakuvio alimmassa ja ylimmässä kohdassa. Laske vaunun tukivoima matkustajaan kummassakin kohdassa. Kuinka moninkertainen tukivoima on alhaalla matkustajan painoon verrattuna?\n\nc) Mikä on pienin nopeus ylhäällä, jolla matkustaja pysyy vielä kosketuksessa vaunuun, kun säde on osan a) keskiarvo? Riittääkö taulukon nopeus?\n\nVastauslaatikkoon tulee osan b) tukivoima ylimmässä kohdassa.",
+      "text": "Vuoristoradan vaunu kulkee pystysuoran ympyrän muotoisen silmukan läpi. Vaunun nopeusmittari mittasi ratanopeuden $v$ silmukan alimmassa ja ylimmässä kohdassa, ja normaalikiihtyvyys $a_\\text{n}$ laskettiin nopeudesta ja radan muodosta (taulukko, esimerkkiaineisto). Matkustajan massa on $60{,}0\\,\\text{kg}$. Ilmanvastus ja vierimisvastus jätetään huomiotta.\n\na) Laske silmukan säde kummastakin rivistä ja niiden keskiarvo.\n\nb) Piirrä matkustajan voimakuvio alimmassa ja ylimmässä kohdassa. Laske vaunun tukivoima matkustajaan kummassakin kohdassa. Kuinka moninkertainen tukivoima on alhaalla matkustajan painoon verrattuna?\n\nc) Mikä on pienin nopeus ylhäällä, jolla matkustaja pysyy vielä kosketuksessa vaunuun, kun säde on osan a) keskiarvo? Riittääkö taulukon nopeus?\n\nVastauslaatikkoon tulee osan b) tukivoima ylimmässä kohdassa.",
       "kind": [
         "data",
         "model"
@@ -288,8 +288,8 @@
         "rows": [
           [
             "alhaalla",
-            "22.0",
-            "34.6"
+            "27.2",
+            "53.2"
           ],
           [
             "ylhäällä",
@@ -302,7 +302,7 @@
     {
       "id": "fy5-4-L3-05",
       "level": 3,
-      "text": "Moottoritien liittymän kaarre on ympyrän muotoinen ja vaakasuora, ja sen säde on $130\\,\\text{m}$. Tie on kallistettu kaarteen sisäreunaa kohti kulmaan $8{,}0\\,{}^\\circ$ vaakatasosta. Renkaiden ja märän tien välinen lepokitkakerroin on $0{,}40$. Ilmanvastus ja vierimisvastus jätetään huomiotta.\n\na) Piirrä auton voimakuvio ja laske nopeus $v_0$, jolla auto voi ajaa kaarteen kokonaan ilman kitkaa. Anna se yksikössä $\\text{km/h}$.\n\nb) Laske suurin nopeus, jolla auto voi ajaa kaarteen liukumatta, kun kitka otetaan huomioon. Vertaa sitä nopeuteen, jonka sama kitkakerroin sallisi saman säteen vaakasuorassa kaarteessa.\n\nc) Perustele omin sanoin, miksi kallistettu kaarre auttaa.\n\nVastauslaatikkoon tulee osan b) suurin nopeus yksikössä $\\text{km/h}$.",
+      "text": "Moottoritien liittymän kaarteen rata on vaakasuora ympyrä, jonka säde on $130\\,\\text{m}$. Tie on kallistettu kaarteen sisäreunaa kohti kulmaan $8{,}0\\,{}^\\circ$ vaakatasosta. Renkaiden ja märän tien välinen lepokitkakerroin on $0{,}40$. Ilmanvastus ja vierimisvastus jätetään huomiotta.\n\na) Piirrä auton voimakuvio ja laske nopeus $v_0$, jolla auto voi ajaa kaarteen kokonaan ilman kitkaa. Anna se yksikössä $\\text{km/h}$.\n\nb) Laske suurin nopeus, jolla auto voi ajaa kaarteen liukumatta, kun kitka otetaan huomioon. Vertaa sitä nopeuteen, jonka sama kitkakerroin sallisi saman säteen vaakasuorassa kaarteessa.\n\nc) Perustele omin sanoin, miksi kallistettu kaarre auttaa.\n\nVastauslaatikkoon tulee osan b) suurin nopeus yksikössä $\\text{km/h}$.",
       "kind": [
         "model",
         "reasoning"

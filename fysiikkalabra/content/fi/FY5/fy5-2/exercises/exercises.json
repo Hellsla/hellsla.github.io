@@ -47,25 +47,25 @@
    "kind": [
     "concept"
    ],
-   "answer": "Tanko alkaa kiertyä, koska voimat ovat eri suorilla ja kiertävät sitä molemmat samaan suuntaan.",
+   "answer": "Tanko alkaa kiertyä, koska voimien momentit kiertävät sitä samaan suuntaan.",
    "unit": "",
    "tolerance": 0.02,
    "choices": [
     {
-     "text": "Tanko pysyy levossa, koska voimien summa on nolla, ja se riittää tasapainoon myös kiertymisen suhteen.",
+     "text": "Tanko pysyy levossa, koska voimien summa on nolla ja se riittää tasapainoon.",
      "feedback": "Voimien summa nolla takaa vain sen, ettei tangon painopiste lähde liikkumaan. Kiertymisen estää vasta momenttiehto, ja se on tässä tilanteessa rikki: voimat eivät ole samalla suoralla."
     },
     {
-     "text": "Tanko lähtee liikkumaan ylöspäin, koska ylöspäin osoittava voima vaikuttaa tangon vasempaan päähän.",
+     "text": "Tanko lähtee liikkumaan ylöspäin, koska ylöspäin vetävä voima on vasemmassa päässä.",
      "feedback": "Voimat ovat yhtä suuret ja vastakkaissuuntaiset, joten voimien summa on nolla eikä tangon painopisteen liike muutu. Voiman vaikutuspiste ei ratkaise etenemistä vaan kiertymistä."
     },
     {
-     "text": "Tanko alkaa kiertyä, koska voimat ovat eri suorilla ja kiertävät sitä molemmat samaan suuntaan.",
+     "text": "Tanko alkaa kiertyä, koska voimien momentit kiertävät sitä samaan suuntaan.",
      "correct": true,
      "feedback": "Oikein: tasapainoon vaaditaan kaksi ehtoa, voimien summa nolla ja momenttien summa nolla. Tässä ensimmäinen ehto täyttyy, mutta voimat vaikuttavat eri suorilla. Momentit tangon keskipisteen suhteen ovat molemmat samansuuntaisia, joten niiden summa ei ole nolla ja tanko kiertyy."
     },
     {
-     "text": "Tanko pysyy levossa, koska voimat ovat yhtä suuret, joten myös niiden momentit kumoavat toisensa.",
+     "text": "Tanko pysyy levossa, koska yhtä suuret voimat tuottavat yhtä suuret vastakkaiset momentit.",
      "feedback": "Yhtä suuret voimat eivät vielä tarkoita yhtä suuria vastakkaisia momentteja. Tangon keskipisteen suhteen kumpikin voima kiertää tankoa samaan suuntaan, joten momentit summautuvat eivätkä kumoa toisiaan."
     }
    ]
@@ -165,7 +165,7 @@
   {
    "id": "fy5-2-L2-06",
    "level": 2,
-   "text": "Penkin pituus on $2{,}40\\,\\text{m}$ ja massa $14{,}0\\,\\text{kg}$, ja sen painopiste on keskellä. Penkin jalat ovat $0{,}20\\,\\text{m}$:n ja $2{,}20\\,\\text{m}$:n päässä penkin vasemmasta päästä, ja ne tukevat penkkiä pystysuoraan ylöspäin. Penkillä istuu $72{,}0\\,\\text{kg}$:n henkilö $0{,}60\\,\\text{m}$:n päässä vasemmasta päästä.\n\nOpiskelija laskee oikean jalan tukivoiman $N_2$ näin: \"Valitsen momenttipisteeksi vasemman jalan, jolloin sen tukivoima jää pois. Henkilön voima on $F_\\text{h} = 706{,}3\\,\\text{N}$, ja sen varsi on $r_\\text{h} = 0{,}40\\,\\text{m}$. Oikean jalan varsi on $r_2 = 2{,}00\\,\\text{m}$. Momenttiehto on $N_2 r_2 = F_\\text{h} r_\\text{h}$, josta $N_2 = 141{,}3\\,\\text{N}$.\"\n\na) Mikä voima opiskelijalta unohtui? Perustele, miksi sen momentti ei ole nolla valitun momenttipisteen suhteen.\n\nb) Laske oikean jalan tukivoima oikein.\n\nVastauslaatikkoon tulee b)-kohdan tulos.",
+   "text": "Penkin pituus on $2{,}40\\,\\text{m}$ ja massa $14{,}0\\,\\text{kg}$, ja sen painopiste on keskellä. Penkin jalat ovat $0{,}20\\,\\text{m}$:n ja $2{,}20\\,\\text{m}$:n päässä penkin vasemmasta päästä, ja ne tukevat penkkiä pystysuoraan ylöspäin. Penkillä istuu $72{,}0\\,\\text{kg}$:n henkilö $0{,}60\\,\\text{m}$:n päässä vasemmasta päästä.\n\nOpiskelija laskee oikean jalan tukivoiman $N_2$ näin: ”Valitsen momenttipisteeksi vasemman jalan, jolloin sen tukivoima jää pois. Henkilön voima on $F_\\text{h} = 706{,}3\\,\\text{N}$, ja sen varsi on $r_\\text{h} = 0{,}40\\,\\text{m}$. Oikean jalan varsi on $r_2 = 2{,}00\\,\\text{m}$. Momenttiehto on $N_2 r_2 = F_\\text{h} r_\\text{h}$, josta $N_2 = 141{,}3\\,\\text{N}$.”\n\na) Mikä voima opiskelijalta unohtui? Perustele, miksi sen momentti ei ole nolla valitun momenttipisteen suhteen.\n\nb) Laske oikean jalan tukivoima oikein.\n\nVastauslaatikkoon tulee b)-kohdan tulos.",
    "kind": [
     "error"
    ],
@@ -252,7 +252,7 @@
   {
    "id": "fy5-2-L3-05",
    "level": 3,
-   "text": "Tuolin etu- ja takajalkojen väli on $0{,}40\\,\\text{m}$ ja tuolin massa $8{,}00\\,\\text{kg}$. Tuolin painopiste on jalkojen puolivälissä. Tuolilla istuu $72{,}0\\,\\text{kg}$:n henkilö, joka kurkottaa eteenpäin kallistamalla ylävartaloaan. Taulukossa on henkilön painopisteen vaakaetäisyys $x_\\text{h}$ takajaloista ylävartalon kallistuskulman $\\theta$ funktiona. Aineisto on esimerkkiaineistoa. Jalat eivät liu'u, ja tuoli voi kaatua vain etujalkojensa varaan.\n\na) Laske, kuinka kaukana takajaloista henkilön painopiste saa enintään olla, jotta tuoli ei kaadu.\n\nb) Määritä taulukosta lineaarisella interpoloinnilla kallistuskulma, jolla tuoli alkaa kaatua.\n\nc) Selitä sanallisesti, miksi kurkottelu kaataa tuolin, ja keksi yksi muutos, joka sallisi pidemmän kurkottelun.\n\nVastauslaatikkoon tulee b)-kohdan kulma asteina.",
+   "text": "Tuolin etu- ja takajalkojen väli on $0{,}40\\,\\text{m}$ ja tuolin massa $8{,}00\\,\\text{kg}$. Tuolin painopiste on jalkojen puolivälissä. Tuolilla istuu $72{,}0\\,\\text{kg}$:n henkilö, joka kurkottaa eteenpäin kallistamalla ylävartaloaan. Taulukossa on henkilön painopisteen vaakaetäisyys $x_\\text{h}$ takajaloista ylävartalon kallistuskulman $\\theta$ funktiona. Henkilön jalat eivät ylety lattiaan, joten koko hänen painonsa on tuolin varassa. Aineisto on esimerkkiaineistoa. Jalat eivät liu'u, ja tuoli voi kaatua vain etujalkojensa varaan.\n\na) Laske, kuinka kaukana takajaloista henkilön painopiste saa enintään olla, jotta tuoli ei kaadu.\n\nb) Määritä taulukosta lineaarisella interpoloinnilla kallistuskulma, jolla tuoli alkaa kaatua.\n\nc) Selitä sanallisesti, miksi kurkottelu kaataa tuolin, ja keksi yksi muutos, joka sallisi pidemmän kurkottelun.\n\nVastauslaatikkoon tulee b)-kohdan kulma asteina.",
    "kind": [
     "data",
     "model",
