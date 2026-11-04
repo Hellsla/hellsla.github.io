@@ -1,29 +1,31 @@
-VERDICT: FAIL
-CONTENT-HASH: 7bb6b1bc4ce3777f
+VERDICT: PASS
+CONTENT-HASH: d656d012098aaf16
 
 ## Blocking
-1. **fy8-s5 c, A (internal consistency, assessment).** "Hyväksytään myös" accepts $6\,\text{t}$, but the answer is `value 5.8, tolerance 0.03` (relative), so 5,63–5,97 t. $6\,\text{t}$ is 3,4 % off and the checker would reject it. Fix: raise the tolerance to 0.05, or stop accepting $6\,\text{t}$.
-2. **fy8-s4 d, B (criterion asks for what the task does not give or ask).** The fourth criterion awards a point for comparing with "ytimiä syntyi noin kolmen minuutin kohdalla". The task gives no such figure and does not ask for the comparison: it asks "Arvioi väitettä laskemalla. Mitä muuta c-kohdan tulos edellyttää?". Fix: give "noin kolme minuuttia" in the task and ask for the comparison, or change the criterion (for example to the third assumption, that all the neutrons end up in He-4).
+None. Both round-1 items are fixed:
+- s5 c now asks for the OL3 time: 3,5 a, tolerance 0,05, consistent everywhere.
+- s4 d now gives about three minutes and asks for the comparison.
 
 ## Polish
-- fy8-s4 c: the Vastaus says "Kaksi merkitsevää numeroa riittää" but gives $136\,\text{s}$. Write $\approx 140\,\text{s}$, as the rubric does.
-- fy8-s3: the residuals of the invented counts from the generating model alternate strictly +,−,+,−, all within about 0,5 $\sqrt{N}$. The data are honestly disclosed as invented. Still, a less regular scatter would look more like real counting.
-- fy8-s4: the 1:6 freeze-out ratio with free decay only gives about 2 min, while full BBN gives about 3 min. d covers this through its assumptions, so this is acceptable (C).
+- **s2 e (C).** The model is a stated 10 Bq lung burden kept for one year, all α energy in 1,2 kg, w_R = 20 and w_T = 0,12 (ICRP 103). The result is one year's effective dose, not ICRP's 50-year committed dose, and the text does not claim otherwise.
+  - PuO₂ (Type S) clears over years and partly moves to bone and liver, so the total dose would be larger.
+  - Suggest one sentence in Järkevyys saying that dose also accrues in later years (the committed dose).
+  - The magnitude is realistic. 10 Bq is about 16 pg of Pu-238, and ICRP 72 gives e(50) ≈ 1,6·10⁻⁵ Sv/Bq for inhaled Type S. Only 10–20 % of an intake deposits deep in the lungs, so 0,57 mSv a year from this burden is consistent.
+- **s2 source_note** gives no source for w_R and w_T (ICRP 103) or for the 5,9 mSv (STUK, year), which the scope note requires.
+- **s4 c "Hyväksytään myös":** "noin 2 min" (120 s) lies outside 136 s ± 5 %. It is fine as a verbal rounding, but a numeric checker would reject it.
 
 ## Checked
-Hash 7bb6b1bc4ce3777f at start and end. I recomputed every number with my own script, and all agree with the solutions:
-- s1: 2,22 / 1,97 eV, 296 nm, 1193, 1107 nm, 0,83 eV.
-- s2: Δm 0,006005 u, Q 5,594 MeV, A 2,23·10¹⁵ Bq, 3,52 kg, 83 %, 1791 W, 98 W, Po 0,16, U ratio 5,1·10⁷, "satoja miljoonia kg" (≈2·10⁸ kg).
-- s3: least-squares d = 1,31 cm; r = 36,0–36,4 cm and H 0,23 / 0,27 µSv/h for any d in 1,0–1,6 cm; uncertainties 14 % / 2 % / 6 %.
-- s4: 0,782 MeV, 7,16, 0,8575, 136 s, 0,735, 271 s.
-- s5: 7,165 and 1,3636, 3,67 %, 4,73·10¹⁷ J, 1,48·10²⁸ fissions, 5,77 t, 3,49 a, 82 988 half-lives.
+Hash d656d012098aaf16 at start and end. I recomputed the changed parts with my own script.
+- s2 e:
+  - E 2,83·10⁻⁴ J, D 2,36·10⁻⁴ Gy, H_T 4,71 mSv, H_E 0,566 mSv (9,6 % of 5,9 mSv).
+  - The 5,5 MeV alternative gives 0,556 mSv, inside the tolerance.
+  - Q includes the recoil energy, which is deposited locally, so that is correct. The skin dead-layer argument is correct.
+  - Points total 20.
+- s4: c 136,1 s (Vastaus ≈ 140 s); d 271,5 s. About 3 min in BBN models is correct.
+- s5: c 3,49 a and a factor of 43 000; d 82 988 half-lives. Pu-239 →α U-235 is correct.
+- s3: the residuals from the generating model are +,+,+,−,+,+,−,−,+ (within ±1,1 σ), now irregular.
+  - Least squares gives d = 1,31 cm.
+  - With d = 1,0–1,6 cm, r = 36,0–36,4 cm and H ≈ 0,23 µSv/h.
+  - The tables and alt texts match.
 
-Sources:
-- AME2020 masses (Pu-238, U-234, He-4) and the NASA MMRTG figures (4,8 kg PuO₂, about 2000 W heat, 110 W electric) are correct.
-- The half-lives (87,7 a, 138 d, 5,27 a, 4,47·10⁹ a, 7,04·10⁸ a, 24 100 a) and the IUPAC abundances are correct.
-- From PDG 2024: n, p and e masses, τ 878,4 s (T½ 609 s) and Y_P 0,245.
-- From NIST: the O I levels (1,97 / 4,19 eV, the 297 nm UV line) and the lifetimes of about 0,7 s and 110 s.
-- Oklo: 0,440 %, about 2 Ga, a 30 min / 2–3 h cycle, about 5–6 t of U-235 consumed. OL3 runs at 4300 MW thermal.
-- STUK: 0,05–0,30 µSv/h outdoors and 5,9 mSv a year.
-
-Physics, models and conditions are sound. The points add up and match the rubrics, and other methods are accepted. No de Broglie wavelength appears anywhere, and nothing is beyond FY8 scope.
+Everything else is unchanged from round 1 and still agrees.
