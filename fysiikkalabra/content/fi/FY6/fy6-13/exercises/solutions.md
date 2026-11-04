@@ -119,3 +119,74 @@
 **Sijoitus:** $d = \dfrac{2 \cdot 6000\,\text{V}}{24 \cdot 10^{6}\,\text{V/m}} = 5{,}0 \cdot 10^{-4}\,\text{m}$ ja $A = \dfrac{1{,}0 \cdot 10^{-9}\,\text{F} \cdot 5{,}0 \cdot 10^{-4}\,\text{m}}{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 2{,}6} \approx 0{,}0217\,\text{m}^2 = 217\,\text{cm}^2$
 **Vastaus:** $220\,\text{cm}^2$ eli $2{,}2 \cdot 10^{2}\,\text{cm}^2$, kaksi merkitsevää numeroa kuten kapasitanssissa ja jännitteessä.
 **Järkevyys:** Eriste on $0{,}50\,\text{mm}$ paksu, ja kenttä on siinä $6000\,\text{V} : 0{,}50\,\text{mm} = 12\,\text{MV/m}$, puolet läpilyöntilujuudesta. Neliön sivu olisi noin $15\,\text{cm}$. Ohuempi eriste pienentäisi levyjä, mutta kondensaattori ei enää kestäisi jännitettä varmasti.
+
+## fy6-13-L1-06
+**Kysytty:** mitä kapasitanssille tapahtuu, kun jännite kaksinkertaistuu.
+**Periaate:** Kapasitanssi on varauksen ja jännitteen suhde $C = \tfrac{Q}{U}$. Se määräytyy levyjen pinta-alasta, niiden etäisyydestä ja eristeestä, ei siitä, kuinka suureen jännitteeseen kondensaattori ladataan. Kun jännite kasvaa, varaus kasvaa samassa suhteessa.
+**Mallivastaus:** Kapasitanssi pysyy samana, koska se määräytyy kondensaattorin rakenteesta. Jännitteellä $5{,}0\,\text{V}$ varaus on $Q_1 = 5{,}0\,\text{V} \cdot C$ ja jännitteellä $10\,\text{V}$ se on $Q_2 = 10\,\text{V} \cdot C$, joten varaus kaksinkertaistuu mutta suhde $\tfrac{Q}{U}$ ei muutu. Kapasitanssi ei kaksinkertaistu, pienene eikä nelinkertaistu. Energia sen sijaan nelinkertaistuu, koska $W = \tfrac{1}{2} C U^2$ riippuu jännitteen neliöstä.
+
+## fy6-13-L1-07
+**Kysytty:** mitä jännitteelle tapahtuu, kun irrotettuun kondensaattoriin työnnetään eriste.
+**Periaate:** Irrotetun kondensaattorin varaus ei voi muuttua, koska varauksella ei ole reittiä levyltä toiselle. Eriste kasvattaa kapasitanssin $\varepsilon_\text{r}$-kertaiseksi, ja jännite saadaan kaavasta $U = \tfrac{Q}{C}$.
+**Mallivastaus:** Jännite pienenee. Varaus $Q$ pysyy samana, koska lähde on irrotettu, ja kapasitanssi $C$ kasvaa eristeen vuoksi. Koska $U = \tfrac{Q}{C}$, jännite pienenee samassa suhteessa kuin kapasitanssi kasvaa: se on $\tfrac{1}{\varepsilon_\text{r}}$-kertainen. Eriste ei johda varausta levyltä toiselle, ja jännite ei pysy samana, koska lähde ei enää pidä sitä vakiona. Myös energia $W = \tfrac{1}{2} Q U$ pienenee.
+
+## fy6-13-L1-08
+**Annettu:** kapasitanssi $C = 1000\,\mu\text{F}$, jännite $U_1 = 6{,}0\,\text{V}$ ja $U_2 = 18\,\text{V}$
+**Kysytty:** energian kasvu $\Delta W$ millijouleina
+**Periaate:** Kondensaattorin energia on $\tfrac{1}{2} C U^2$ ja riippuu jännitteen neliöstä. Kapasitanssi ei muutu, joten energian kasvu on loppu- ja alkuenergian erotus.
+**Kaava:** $W = \tfrac{1}{2} C U^2$ ja $\Delta W = W_2 - W_1 = \tfrac{1}{2} C (U_2^2 - U_1^2)$
+**Muunnokset:** $C = 1000\,\mu\text{F} = 1000 \cdot 10^{-6}\,\text{F} = 1{,}0 \cdot 10^{-3}\,\text{F}$
+**Sijoitus:** $W_1 = \tfrac{1}{2} \cdot 1{,}0 \cdot 10^{-3}\,\text{F} \cdot (6{,}0\,\text{V})^2 = 0{,}018\,\text{J}$, $W_2 = \tfrac{1}{2} \cdot 1{,}0 \cdot 10^{-3}\,\text{F} \cdot (18\,\text{V})^2 = 0{,}162\,\text{J}$ ja $\Delta W = 0{,}162\,\text{J} - 0{,}018\,\text{J} = 0{,}144\,\text{J} = 144\,\text{mJ}$
+**Vastaus:** $144\,\text{mJ}$ eli noin $1{,}4 \cdot 10^{2}\,\text{mJ}$, kaksi merkitsevää numeroa kuten jännitteissä.
+**Järkevyys:** Jännite kolminkertaistuu, joten energia kasvaa $3^2 = 9$-kertaiseksi: $W_2 : W_1 = 162\,\text{mJ} : 18\,\text{mJ} = 9$. Kasvu on $9W_1 - W_1 = 8W_1 = 8 \cdot 18\,\text{mJ} = 144\,\text{mJ}$.
+
+## fy6-13-L2-05
+**Annettu:** taulukon pisteet $(U;\ Q)$: $(2{,}0\,\text{V};\ 94\,\mu\text{C})$, $(4{,}0\,\text{V};\ 189\,\mu\text{C})$, $(6{,}0\,\text{V};\ 281\,\mu\text{C})$, $(8{,}0\,\text{V};\ 380\,\mu\text{C})$, $(10{,}0\,\text{V};\ 471\,\mu\text{C})$ ja $(12{,}0\,\text{V};\ 567\,\mu\text{C})$
+**Kysytty:** energia $W$ jännitteellä $12\,\text{V}$ millijouleina
+**Periaate:** Koska $Q = CU$, pisteet asettuvat origon kautta kulkevalle suoralle, jonka kulmakerroin on kapasitanssi $C$. Kun kapasitanssi tunnetaan, energia saadaan kaavasta $W = \tfrac{1}{2} C U^2$. Sama energia on $(U, Q)$-kuvaajan suoran ja $Q$-akselin väliin jäävän kolmion pinta-ala $\tfrac{1}{2} Q U$.
+**Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä, ja suora kulkee origon kautta. Suoran kulmakerroin on likimain $\tfrac{567\,\mu\text{C}}{12\,\text{V}} \approx 47\,\tfrac{\mu\text{C}}{\text{V}}$, joten kapasitanssi on noin $47\,\mu\text{F}$.
+**Kaava:** $C = \dfrac{Q}{U}$ (suoran kulmakerroin) ja $W = \tfrac{1}{2} C U^2$
+**Muunnokset:** $C = 47{,}2\,\tfrac{\mu\text{C}}{\text{V}} = 47{,}2\,\mu\text{F} = 47{,}2 \cdot 10^{-6}\,\text{F}$
+**Sijoitus:** $W = \tfrac{1}{2} \cdot 47{,}2 \cdot 10^{-6}\,\text{F} \cdot (12\,\text{V})^2 = 3{,}40 \cdot 10^{-3}\,\text{J} = 3{,}40\,\text{mJ}$
+**Vastaus:** $3{,}4\,\text{mJ}$, kaksi merkitsevää numeroa kuten jännitteessä ja kulmakertoimessa. Silmämääräinen sovitus vaihtelee, joten noin $3{,}3\text{–}3{,}5\,\text{mJ}$ on hyvä vastaus.
+**Järkevyys:** Kolmion pinta-ala on $\tfrac{1}{2} \cdot 567\,\mu\text{C} \cdot 12\,\text{V} = 3402\,\mu\text{J} \approx 3{,}4\,\text{mJ}$, sama tulos. Kapasitanssi $47\,\mu\text{F}$ on tavallinen elektrolyyttikondensaattorin arvo.
+
+## fy6-13-L2-06
+**Kysytty:** aikaväli, jolla latausvirta on suurin.
+**Periaate:** Virta on varauksen siirtymisnopeus. Koska $Q = CU$ ja kapasitanssi on vakio, varaus muuttuu samaa tahtia kuin jännite, joten virta on suoraan verrannollinen jännitteen kasvunopeuteen eli kuvaajan jyrkkyyteen. Virta ei siis riipu jännitteen suuruudesta vaan siitä, kuinka nopeasti jännite kasvaa.
+**Mallivastaus:** Latausvirta on suurin välillä $0\text{–}1\,\text{s}$, koska jännite kasvaa silloin nopeimmin, $3{,}5\,\text{V}$ sekunnissa, ja varaus siirtyy levyille nopeimmin. Alussa kondensaattorin jännite on nolla, joten lähteen koko jännite ajaa virtaa. Kun kondensaattoriin kertyy varausta, sen jännite vastustaa lähdettä, jännitteen kasvu hidastuu ja virta pienenee kohti nollaa. Virta ei ole suurin silloin, kun jännite tai varaus on suurin, vaan silloin, kun ne muuttuvat nopeimmin.
+**Kuvaajan lukeminen:** Jännitteen kasvu sekunnin aikana on $3{,}5\,\text{V}$ välillä $0\text{–}1\,\text{s}$, $2{,}0\,\text{V}$ välillä $1\text{–}2\,\text{s}$, $1{,}4\,\text{V}$ välillä $2\text{–}3\,\text{s}$, $0{,}8\,\text{V}$ välillä $3\text{–}4\,\text{s}$, $0{,}5\,\text{V}$ välillä $4\text{–}5\,\text{s}$ ja $0{,}3\,\text{V}$ välillä $5\text{–}6\,\text{s}$. Kuvaaja on jyrkimmillään alussa ja muuttuu koko ajan loivemmaksi.
+
+## fy6-13-L2-07
+**Annettu:** kapasitanssi $C = 220\,\mu\text{F}$, lähteen jännite $U = 24\,\text{V}$, oppilaan tulos $QU = 127\,\text{mJ}$
+**Kysytty:** a) oppilaan päättelyn virhe, b) varastoitunut energia $W$ millijouleina
+**Periaate:** Lähde siirtää varauksen $Q$ levystä toiseen koko jännitteensä $U$ yli ja antaa siis energian $QU$. Kondensaattorin jännite kasvaa latauksessa nollasta arvoon $U$, joten varaus siirtyy keskimäärin jännitteen $\tfrac{U}{2}$ yli ja kondensaattoriin varastoituu vain puolet lähteen antamasta energiasta.
+**Kaava:** $W = \tfrac{1}{2} C U^2$
+**Muunnokset:** $C = 220\,\mu\text{F} = 220 \cdot 10^{-6}\,\text{F}$
+**Sijoitus:** $W = \tfrac{1}{2} \cdot 220 \cdot 10^{-6}\,\text{F} \cdot (24\,\text{V})^2 = 0{,}0634\,\text{J} = 63{,}4\,\text{mJ}$
+**Vastaus:** $63\,\text{mJ}$, kaksi merkitsevää numeroa kuten kapasitanssissa ja jännitteessä.
+**Mallivastaus virheestä:** Oppilaan laskema $QU = 127\,\text{mJ}$ on lähteen antama energia, mutta kondensaattoriin varastoituu siitä vain puolet. Latauksen aikana kondensaattorin jännite on aluksi nolla ja kasvaa vasta vähitellen arvoon $24\,\text{V}$, joten varaus ei siirry koko ajan täyden jännitteen yli. Toinen puoli, noin $63\,\text{mJ}$, muuttuu johtimien ja vastusten sisäenergiaksi ja siirtyy lämpönä ympäristöön.
+**Järkevyys:** Varastoitunut energia on $\tfrac{1}{2} \cdot 5{,}28\,\text{mC} \cdot 24\,\text{V} = 63{,}4\,\text{mJ}$, sama tulos, ja se on tasan puolet oppilaan luvusta $127\,\text{mJ}$.
+
+## fy6-13-L3-04
+**Annettu:** latausvirta $I = 15\,\text{mA}$, taulukon pisteet $(t;\ U)$: $(0\,\text{s};\ 0\,\text{V})$, $(2\,\text{s};\ 203\,\text{V})$, $(4\,\text{s};\ 396\,\text{V})$, $(6\,\text{s};\ 607\,\text{V})$, $(8\,\text{s};\ 805\,\text{V})$, $(10\,\text{s};\ 992\,\text{V})$ ja $(12\,\text{s};\ 1201\,\text{V})$, iskun jännite $1{,}8\,\text{kV}$, purkautumisaika $5{,}0\,\text{ms}$
+**Kysytty:** iskun keskimääräinen teho $P$ kilowatteina, lisäksi latausaika ja perustelu kondensaattorin koskemattomuudelle
+**Periaate:** Vakiovirralla varaus on $Q = It$ ja kondensaattorille $Q = CU$, joten $U = \tfrac{I}{C} t$: jännite kasvaa suoraan ajan mukana, ja suoran kulmakerroin on $\tfrac{I}{C}$. Kun kapasitanssi tunnetaan, iskussa vapautuva energia on kondensaattorin energia $\tfrac{1}{2} C U^2$, ja keskimääräinen teho saadaan jakamalla se purkautumisajalla.
+**Kuvaajan lukeminen:** Pisteet asettuvat origon kautta kulkevalle suoralle, ja jännite kasvaa noin $100\,\text{V}$ sekunnissa. Suoran kulmakerroin on esimerkiksi $\tfrac{1201\,\text{V}}{12\,\text{s}} \approx 100\,\tfrac{\text{V}}{\text{s}}$.
+**Kaava:** $\dfrac{I}{C} = k$, josta $C = \dfrac{I}{k}$, sekä $W = \tfrac{1}{2} C U^2$ ja $P = \dfrac{W}{t}$
+**Muunnokset:** $I = 15\,\text{mA} = 15 \cdot 10^{-3}\,\text{A}$, $U = 1{,}8\,\text{kV} = 1800\,\text{V}$ ja $t = 5{,}0\,\text{ms} = 5{,}0 \cdot 10^{-3}\,\text{s}$
+**Sijoitus:** $C = \dfrac{15 \cdot 10^{-3}\,\text{A}}{100\,\text{V/s}} = 1{,}5 \cdot 10^{-4}\,\text{F} = 150\,\mu\text{F}$, $W = \tfrac{1}{2} \cdot 1{,}5 \cdot 10^{-4}\,\text{F} \cdot (1800\,\text{V})^2 = 243\,\text{J}$ ja $P = \dfrac{243\,\text{J}}{5{,}0 \cdot 10^{-3}\,\text{s}} = 4{,}86 \cdot 10^{4}\,\text{W}$
+**Vastaus:** $48{,}6\,\text{kW}$ eli noin $49\,\text{kW}$, kaksi merkitsevää numeroa kuten purkautumisajassa.
+**Mallivastaus latausajasta ja turvallisuudesta:** Lataus kestää $t = \tfrac{U}{k} = \tfrac{1800\,\text{V}}{100\,\text{V/s}} = 18\,\text{s}$. Laitteen kondensaattoriin ei saa koskea irrotettunakaan, koska ladattu kondensaattori säilyttää varauksensa ja energiansa, kunnes sille tulee virtatie: tässä energiaa on $243\,\text{J}$ ja jännite $1{,}8\,\text{kV}$. Kosketus napoihin päästäisi virran kehon läpi, ja purkautuminen olisi vaarallinen isku.
+**Järkevyys:** Varaus on $Q = It = 15\,\text{mA} \cdot 18\,\text{s} = 0{,}27\,\text{C}$, ja $\tfrac{1}{2} \cdot 0{,}27\,\text{C} \cdot 1800\,\text{V} = 243\,\text{J}$, sama tulos. Latauksen keskimääräinen teho on vain $243\,\text{J} : 18\,\text{s} = 13{,}5\,\text{W}$, kun taas iskussa sama energia vapautuu $5{,}0\,\text{ms}$:ssa, joten teho on tuhansia kertoja suurempi.
+
+## fy6-13-L3-05
+**Annettu:** levyn pinta-ala $A = 100\,\text{cm}^2$, eristekerroksen paksuus $d = 0{,}050\,\text{mm}$, taulukosta teflonille $\varepsilon_\text{r} = 2{,}1$ ja $E_\text{max} = 60\,\text{MV/m}$ sekä lasille $\varepsilon_\text{r} = 5{,}6$ ja $E_\text{max} = 14\,\text{MV/m}$, kenttä enintään $\tfrac{1}{2} E_\text{max}$, $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$
+**Kysytty:** teflon- ja lasikondensaattorin energioiden suhde $\tfrac{W_\text{teflon}}{W_\text{lasi}}$ sekä perustelu
+**Periaate:** Sallittu kenttä on $\tfrac{1}{2} E_\text{max}$, joten suurin jännite on $U = \tfrac{1}{2} E_\text{max} d$. Levykondensaattorin kapasitanssi saadaan kaavasta $C = \tfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$, ja energia on $W = \tfrac{1}{2} C U^2$. Energioiden suhteesta nähdään, kumpi eriste varastoi enemmän samassa tilavuudessa.
+**Kaava:** $U = \tfrac{1}{2} E_\text{max} d$, $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$ ja $W = \tfrac{1}{2} C U^2$
+**Muunnokset:** $A = 100\,\text{cm}^2 = 1{,}0 \cdot 10^{-2}\,\text{m}^2$, $d = 0{,}050\,\text{mm} = 5{,}0 \cdot 10^{-5}\,\text{m}$, $60\,\text{MV/m} = 60 \cdot 10^{6}\,\text{V/m}$ ja $14\,\text{MV/m} = 14 \cdot 10^{6}\,\text{V/m}$
+**Sijoitus:** Teflon: $U = \tfrac{1}{2} \cdot 60 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 5{,}0 \cdot 10^{-5}\,\text{m} = 1500\,\text{V}$, $\varepsilon_0 \varepsilon_\text{r} A = 1{,}86 \cdot 10^{-13}\,\text{F} \cdot \text{m}$, josta $C = \dfrac{1{,}86 \cdot 10^{-13}\,\text{F} \cdot \text{m}}{5{,}0 \cdot 10^{-5}\,\text{m}} = 3{,}72\,\text{nF}$ ja $W = \tfrac{1}{2} \cdot 3{,}72 \cdot 10^{-9}\,\text{F} \cdot (1500\,\text{V})^2 = 4{,}18\,\text{mJ}$. Lasi: $U = 350\,\text{V}$, $C = 9{,}92\,\text{nF}$ ja $W = \tfrac{1}{2} \cdot 9{,}92 \cdot 10^{-9}\,\text{F} \cdot (350\,\text{V})^2 = 0{,}607\,\text{mJ}$. Suhde on $\dfrac{4{,}18\,\text{mJ}}{0{,}607\,\text{mJ}} = 6{,}89$.
+**Vastaus:** $6{,}9$, kaksi merkitsevää numeroa kuten taulukon arvoissa. Suhde on pelkkä luku, jolla ei ole yksikköä.
+**Mallivastaus c):** Sijoittamalla $C$ ja $U$ energian kaavaan saadaan $W = \tfrac{1}{8} \varepsilon_0 \varepsilon_\text{r} E_\text{max}^2 A d$, joten samoilla mitoilla energia on verrannollinen suureeseen $\varepsilon_\text{r} E_\text{max}^2$. Lasin suhteellinen permittiivisyys on teflonia $\tfrac{5{,}6}{2{,}1} = 2{,}7$-kertainen, mutta teflonin läpilyöntilujuus on lasia $\tfrac{60}{14} = 4{,}3$-kertainen ja se tulee kaavaan neliönä: $4{,}3^2 = 18{,}4$. Suhde on $\tfrac{18{,}4}{2{,}7} \approx 6{,}9$: teflon kestää paljon suuremman jännitteen ja varastoi siksi enemmän energiaa, vaikka lasin kapasitanssi on suurempi.
+**Järkevyys:** Teflonilla jännite on $1500\,\text{V}$ ja lasilla $350\,\text{V}$, ja kapasitanssit ovat $3{,}72\,\text{nF}$ ja $9{,}92\,\text{nF}$. Suhde saadaan myös näistä: $\tfrac{3{,}72}{9{,}92} \cdot \left(\tfrac{1500}{350}\right)^2 = 0{,}375 \cdot 18{,}4 = 6{,}9$.

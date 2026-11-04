@@ -39,6 +39,52 @@
       "answer": 88.0,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-06",
+      "level": 1,
+      "text": "Latausasemaa valitessa vertaillaan aseman tehoa kilowatteina ($\\text{kW}$) ja auton akun kokoa kilowattitunteina ($\\text{kWh}$). Mitä nämä kaksi lukua kertovat?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kilowatti kertoo latausnopeuden eli tehon, ja kilowattitunti akkuun mahtuvan energian, koska energia on teho kertaa aika.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kilowatti kertoo akkuun mahtuvan energian, ja kilowattitunti latausnopeuden, koska nopeus mitataan aina tunneissa.",
+          "feedback": "Luvut ovat toisinpäin. Kilowatti on tehon yksikkö ja kertoo, kuinka nopeasti energiaa siirtyy, ja kilowattitunti on energian yksikkö $1\\,\\text{kWh} = 1\\,\\text{kW} \\cdot 1\\,\\text{h}$. Nopeutta ei mitata kilowattitunneilla."
+        },
+        {
+          "text": "Kilowatti kertoo latausnopeuden eli tehon, ja kilowattitunti akkuun mahtuvan energian, koska energia on teho kertaa aika.",
+          "correct": true,
+          "feedback": "Oikein: teho $P$ kertoo, kuinka nopeasti energiaa siirtyy, ja energia on $W = Pt$. Siksi $11\\,\\text{kW}$:n asema siirtää tunnissa $11\\,\\text{kWh}$, ja $60\\,\\text{kWh}$:n akun täyttö vie tästä kuluvan ajan."
+        },
+        {
+          "text": "Kilowatti ja kilowattitunti ovat sama asia, koska kummassakin on kilowatti ja ne kertovat saman sähkön määrän.",
+          "feedback": "Yksiköt mittaavat eri suureita. Kilowatti on teho ja kilowattitunti energia, joka saadaan kertomalla teho ajalla. Samalla teholla energiaa kertyy sitä enemmän, mitä kauemmin laite on päällä."
+        },
+        {
+          "text": "Kilowatti kertoo aseman jännitteen, ja kilowattitunti sen virran, koska jännite ja virta määräävät latausajan.",
+          "feedback": "Jännite mitataan voltteina ja virta ampeereina, ei kilowatteina. Kilowatti on tehon yksikkö, ja teho on jännite kertaa virta, $P = UI$."
+        }
+      ]
+    },
+    {
+      "id": "fy6-16-L1-07",
+      "level": 1,
+      "text": "Latausasema ottaa verkosta vakiotehon $7{,}4\\,\\text{kW}$, ja lataus kestää $5{,}5\\,\\text{h}$. Kuinka paljon energiaa asema ottaa verkosta? Vastaa kilowattitunteina.",
+      "answer": 40.7,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-08",
+      "level": 1,
+      "text": "Latauskaapelin johtimien yhteenlaskettu resistanssi on $0{,}25\\,\\Omega$ ja latausvirta $16\\,\\text{A}$. Kuinka suuri teho muuttuu kaapelissa sisäenergiaksi eli lämmittää kaapelia? Vastaa watteina.",
+      "answer": 64.0,
+      "unit": "W",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +120,107 @@
       "answer": 6.528,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L2-05",
+      "level": 2,
+      "text": "Taulukossa on omakotitalon sähköteho tunneittain illalla ennen latausasemaa (esimerkkiaineisto).\n\nTalon pääsulakkeet ovat $3 \\cdot 25\\,\\text{A}$, ja talon kuormat jakautuvat tasan kolmelle vaiheelle. Perhe suunnittelee kolmivaiheista latausasemaa, joka ottaa jokaisesta vaihejohtimesta yhtä suuren virran. Vaihejännite on $230\\,\\text{V}$.\n\na) Mikä on talon huipputeho ja mihin aikaan se esiintyy?\n\nb) Kuinka suuri latausteho asemalla saa olla huipputehon aikana, jotta pääsulakkeiden virta ei ylity?\n\nc) Perustele taulukon avulla, milloin asema voi käyttää $11\\,\\text{kW}$:n tehoa ilman kuormanhallintaa.\n\nVastauskenttään tulee kohdan b) tulos kilowatteina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 10.45,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Talon sähköteho illalla (esimerkkiaineisto)",
+        "columns": [
+          "Kellonaika",
+          "$P_{\\text{talo}}\\,(\\text{kW})$"
+        ],
+        "rows": [
+          [
+            "17–18",
+            "2.1"
+          ],
+          [
+            "18–19",
+            "3.4"
+          ],
+          [
+            "19–20",
+            "6.8"
+          ],
+          [
+            "20–21",
+            "5.2"
+          ],
+          [
+            "21–22",
+            "3.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-16-L2-06",
+      "level": 2,
+      "text": "Opiskelija laskee, kuinka kauan akun lataus kestää.\n\nTehtävä: auton akun energia on $60\\,\\text{kWh}$, ja se ladataan varaustasosta $20\\,\\%$ tasoon $80\\,\\%$. Yksivaiheinen asema ottaa verkosta tehon $7{,}4\\,\\text{kW}$, ja latauksen hyötysuhde on $92\\,\\%$.\n\nOpiskelijan ratkaisu: ”$t = \\dfrac{W}{P} = \\dfrac{60\\,\\text{kWh}}{7{,}4\\,\\text{kW}} \\approx 8{,}1\\,\\text{h}$”.\n\na) Nimeä kaksi virhettä opiskelijan ratkaisussa.\n\nb) Laske oikea latausaika tunteina.\n\nVastauskenttään tulee kohdan b) tulos.",
+      "kind": [
+        "error"
+      ],
+      "answer": 5.287897,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L2-07",
+      "level": 2,
+      "text": "Latausaseman verkosta ottama teho mitattiin yhden latauksen aikana puolen tunnin välein. Mittaus on taulukossa (esimerkkiaineisto). Teho pysyy aluksi lähes vakiona ja pienenee, kun akku täyttyy.\n\na) Piirrä $(t, P)$-kuvaaja ja laske verkosta otettu energia kuvaajan alle jäävänä pinta-alana. Käytä pisteitä yhdistäviä suoria, jolloin pinta-ala jakautuu puolen tunnin mittaisiin puolisuunnikkaisiin.\n\nb) Laske latauksen keskiteho.\n\nVastauskenttään tulee kohdan a) tulos kilowattitunteina.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 22.85,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Latausaseman teho latauksen aikana (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$P\\,(\\text{kW})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "11.0"
+          ],
+          [
+            "0.5",
+            "11.0"
+          ],
+          [
+            "1.0",
+            "10.8"
+          ],
+          [
+            "1.5",
+            "8.7"
+          ],
+          [
+            "2.0",
+            "5.9"
+          ],
+          [
+            "2.5",
+            "3.1"
+          ],
+          [
+            "3.0",
+            "1.4"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -98,6 +245,77 @@
       "level": 3,
       "text": "Auton akkuun pitää yön aikana varastoida $40\\,\\text{kWh}$. Lataus alkaa kello $22.00$, ja auton pitää olla valmis kello $7.00$. Latauksen hyötysuhde on $90\\,\\%$. Kolmivaiheinen latausasema ottaa jokaisesta vaihejohtimesta yhtä suuren virran, ja vaihejännite on $230\\,\\text{V}$. Kuinka suuri latausvirta yhdessä vaihejohtimessa vähintään tarvitaan, kun virta pidetään koko yön vakiona?",
       "answer": 7.156915,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L3-04",
+      "level": 3,
+      "text": "Perhe harkitsee bensiiniauton vaihtamista sähköautoon. Taulukossa on perheen ajamat kuukausimatkat viime vuonna (esimerkkiaineisto).\n\nSähköauto kuluttaa akusta $16{,}0\\,\\text{kWh}$ sadalla kilometrillä, ja latauksen hyötysuhde on $90{,}0\\,\\%$. Kotilatauksen hinta on siirtoineen $15\\,\\text{snt/kWh}$. Bensiiniauto kuluttaa $6{,}50\\,\\textsf{l}$ sadalla kilometrillä, ja bensiinin hinta on $1{,}85\\,\\text{€/}\\textsf{l}$ (esimerkkihinta).\n\na) Laske perheen vuosittainen ajomatka taulukosta.\n\nb) Kuinka paljon enemmän bensiiniauton käyttökustannukset ovat vuodessa kuin sähköauton kotilatauksella?\n\nc) Olisiko sähköauto edelleen edullisempi, jos kaikki lataus tehtäisiin julkisella pikalatauksella hintaan $0{,}45\\,\\text{€/kWh}$? Perustele laskemalla.\n\nVastauskenttään tulee kohdan b) tulos euroina.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 1370.06,
+      "unit": "€",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Perheen ajamat kuukausimatkat (esimerkkiaineisto)",
+        "columns": [
+          "Kuukausi",
+          "$s\\,(\\text{km})$",
+          "Kuukausi",
+          "$s\\,(\\text{km})$"
+        ],
+        "rows": [
+          [
+            "Tammi",
+            "1050",
+            "Heinä",
+            "1100"
+          ],
+          [
+            "Helmi",
+            "980",
+            "Elo",
+            "1260"
+          ],
+          [
+            "Maalis",
+            "1150",
+            "Syys",
+            "1350"
+          ],
+          [
+            "Huhti",
+            "1240",
+            "Loka",
+            "1290"
+          ],
+          [
+            "Touko",
+            "1380",
+            "Marras",
+            "1170"
+          ],
+          [
+            "Kesä",
+            "1420",
+            "Joulu",
+            "1250"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-16-L3-05",
+      "level": 3,
+      "text": "Omakotitalon pääsulakkeet ovat $3 \\cdot 25\\,\\text{A}$. Illan ruuhka-aikaan päällä ovat kiuas $6{,}0\\,\\text{kW}$, uuni ja liesi yhteensä $3{,}3\\,\\text{kW}$, astianpesukone $1{,}8\\,\\text{kW}$ sekä valaistus ja viihde-elektroniikka $0{,}90\\,\\text{kW}$ (esimerkkiaineisto). Oletetaan, että nämä kuormat jakautuvat tasan kolmelle vaiheelle. Vaihejännite on $230\\,\\text{V}$.\n\nPerhe asentaa yksivaiheisen latausaseman yhteen vaiheeseen. Asema on $30\\,\\text{m}$ pitkän kaapelin päässä, ja kaapelin kuparijohtimien poikkipinta-ala on $2{,}5\\,\\text{mm}^2$. Virta kulkee asemalle vaihejohdinta ja palaa nollajohdinta pitkin. Kuparin resistiivisyys on $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$.\n\na) Laske talon kuormien yhteinen virta yhdessä vaihejohtimessa.\n\nb) Kuinka suuri latausvirta asemalle saa enintään antaa ruuhka-aikaan sillä vaiheella, johon se on kytketty?\n\nc) Laske kaapelin lämpenemisteho tällä virralla ja virralla $16\\,\\text{A}$. Perustele laskun avulla, miksi latausvirtaa kannattaa rajoittaa illalla.\n\nVastauskenttään tulee kohdan b) tulos ampeereina.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 7.608696,
       "unit": "A",
       "tolerance": 0.02
     }

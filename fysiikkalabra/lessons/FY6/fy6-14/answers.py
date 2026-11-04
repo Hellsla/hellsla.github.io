@@ -27,4 +27,23 @@ pts = [(0, 3.30), (10.0, 3.25), (14.0, 3.18), (16.0, 3.05), (17.0, 2.90), (18.0,
 Ub, Ib = max(pts, key=lambda q: q[0] * q[1])               # the largest U I in the table: 17,0 V · 2,90 A = 49,3 W
 a["fy6-14-L3-02"] = Ub / Ib                                # R = U : I = 5,86 ohm at the maximum power point
 a["fy6-14-L3-03"] = (12 - 3 * 3.0) / 12 * 100              # share of the resistor: U_R I : (U I) = 3,0 V : 12 V = 25 %
-print(json.dumps({k: round(v, 6) for k, v in a.items()}))
+# Exercise-bank additions: multiple choice (answer = the correct option's text), data, error and modelling tasks
+a["fy6-14-L1-06"] = "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on vain pieni osa pariston jännitteestä."
+a["fy6-14-L1-07"] = "Pienikin jännitteen kasvu kasvattaa LEDin virtaa paljon, joten vastus ottaa osan jännitteestä ja pitää virran sopivana."
+a["fy6-14-L1-08"] = (2.0 * 0.100) / (1000 * 12e-4) * 100    # eta = P : (G A) = 0,20 W : 1,2 W = 16,7 %
+leds = {"sininen": 3.10, "punainen": 1.90, "keltainen": 2.10}
+low = min(leds, key=leds.get)                              # the smallest U_D leaves the largest U_R, so the largest R
+a["fy6-14-L2-05"] = (5.0 - leds[low]) / 0.015              # R = (5,0 V - 1,90 V) : 0,015 A = 207 ohm
+cell = [(10, 0.99, 99), (15, 1.48, 99), (20, 1.89, 94), (22, 1.99, 91), (27, 2.12, 78), (33, 2.20, 66), (47, 2.28, 48), (100, 2.34, 23)]
+a["fy6-14-L2-06"] = max(u * i for _, u, i in cell)         # P = U I in mW: largest 1,99 V · 91 mA = 181 mW (22 ohm)
+a["fy6-14-L2-07"] = (9.0 - 3.2) / 0.015                    # correct R = (U - U_D) : I = 5,8 V : 0,015 A = 387 ohm (student: 9,0 V : I = 600 ohm)
+H = [12, 32, 80, 120, 160, 170, 170, 135, 85, 40, 15, 8]   # kWh/m2 per month
+C = [620, 560, 520, 400, 330, 290, 280, 300, 370, 460, 560, 650]  # kWh per month
+E_year = 0.19 * 24 * sum(H)                                # E = eta A sum(H) = 0,19 · 24 m2 · 1027 kWh/m2 = 4683 kWh
+a["fy6-14-L3-04"] = E_year / sum(C) * 100                  # share of the yearly consumption 5340 kWh: 87,7 %
+# diode table of L3-05: the load-line current (4,5 V - U_D) : 180 ohm against the diode's current; linear between 2,00 V and 2,05 V
+d0, d1 = (2.00, 9.8), (2.05, 20.0)
+slope = (d1[1] - d0[1]) / (d1[0] - d0[0])                  # diode: 204 mA/V between the rows
+x = (((4.5 - d0[0]) / 180 * 1e3) - d0[1]) / (slope + 1e3 / 180)  # offset from 2,00 V where the two currents meet
+a["fy6-14-L3-05"] = round(d0[1] + slope * x, 2)            # I = 13,78 mA at U_D = 2,02 V
+print(json.dumps({k: (v if isinstance(v, str) else round(v, 6)) for k, v in a.items()}))
