@@ -107,7 +107,7 @@ Fysiikan koe tehdään tietokoneella. Vastaus kirjoitetaan tekstinä, kaavat kaa
 - **Osa II**: valitse 4 tehtävää seitsemästä, kukin 15 pistettä. Tehtävissä vertaillaan, arvioidaan ja sovelletaan fysiikan tietoja.
 - **Osa III**: valitse 2 tehtävää kolmesta, kukin 20 pistettä. Tehtävissä käytetään aineistoja: luet, käsittelet ja muunnat dataa ja teet siitä päätelmiä.
 
-Yhteensä kokeesta saa enintään 120 pistettä. Sallitut apuvälineet ja ohjelmat on kerrottu ylioppilastutkintolautakunnan määräyksissä ja kokeen omissa ohjeissa. Tarkista ne ajantasaisina ennen koetta ja harjoittele kokeen ohjelmilla etukäteen.
+Yhteensä kokeesta saa enintään 120 pistettä. Tämä on kokeen yleinen rakenne: tehtävien kysymysmuodot ja Osan I kohtien määrä vaihtelevat kokeesta toiseen, joten tarkista ajantasainen rakenne ylioppilastutkintolautakunnan ohjeista. Sallitut apuvälineet ja ohjelmat on kerrottu ylioppilastutkintolautakunnan määräyksissä ja kokeen omissa ohjeissa. Tarkista ne ajantasaisina ennen koetta ja harjoittele kokeen ohjelmilla etukäteen.
 
 ### Ajankäyttö ja tehtävien valinta
 Lue kokeen ohjeet ensin: niissä sanotaan, mihin tehtäviin vastataan ja kuinka moneen. Selaa sitten kaikki tehtävät ja merkitse, mitkä osaat varmasti. Osissa II ja III valitset tehtävät itse: valitse ne, joiden ilmiön tunnistat ja joiden kaikkiin osiin pystyt vastaamaan. Jaa aika suunnilleen tehtävien pisteiden mukaan. Kuudessa tunnissa on $360\,\text{min}$. Jos varaat lukemiseen, valintaan ja tarkistukseen yhteensä noin $50\,\text{min}$, Osalle I jää noin $60\,\text{min}$, kullekin Osan II tehtävälle noin $35\,\text{min}$ ja kullekin Osan III tehtävälle noin $55\,\text{min}$. Jos jumiudut, kirjoita se, minkä osaat, ja palaa tehtävään myöhemmin.
