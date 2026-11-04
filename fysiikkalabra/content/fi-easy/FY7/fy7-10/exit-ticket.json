@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Valonsäde osuu tasopeiliin tulokulmassa $25^\\circ$. Kuinka suuri on heijastuskulma? Kuinka suuri on tulevan ja heijastuneen säteen välinen kulma?",
+    "a": "Heijastuskulma on $\\beta = \\alpha_1 = 25^\\circ$. Säteiden välinen kulma on $25^\\circ + 25^\\circ = 50^\\circ$, koska normaali on säteiden puolivälissä."
+  },
+  {
+    "q": "Valo etenee aineessa nopeudella $2{,}25 \\cdot 10^{8}\\,\\text{m/s}$. Kuinka suuri on aineen taitekerroin? Mikä aine se voisi olla?",
+    "a": "$n = c : v = 3{,}00 \\cdot 10^{8}\\,\\text{m/s} : 2{,}25 \\cdot 10^{8}\\,\\text{m/s} = 1{,}33$. Aine voi siis olla vettä."
+  }
+]

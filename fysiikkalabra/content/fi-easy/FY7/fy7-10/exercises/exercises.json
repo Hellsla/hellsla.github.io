@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-10-L1-01",
+      "level": 1,
+      "text": "Valo etenee etanolissa nopeudella $2{,}20 \\cdot 10^{8}\\,\\text{m/s}$. Kuinka suuri on etanolin taitekerroin? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^{8}\\,\\text{m/s}$.",
+      "answer": 1.3636,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-02",
+      "level": 1,
+      "text": "Timantin taitekerroin on $2{,}42$. Kuinka suurella nopeudella valo etenee timantissa? Anna vastaus muodossa $\\ldots \\cdot 10^{8}\\,\\text{m/s}$. Kirjoita siis vastaukseksi kerroin.",
+      "answer": 1.2397,
+      "unit": "· 10⁸ m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-03",
+      "level": 1,
+      "text": "Valonsäde osuu tasopeiliin. Tulevan ja heijastuneen säteen välinen kulma on $76^\\circ$. Kuinka suuri on tulokulma?",
+      "answer": 38.0,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-04",
+      "level": 1,
+      "text": "Valonsäde tulee ilmasta ikkunalasiin. Tulokulma on $60{,}0^\\circ$. Ilman taitekerroin on $1{,}00$ ja lasin $1{,}52$. Kuinka suuri on taitekulma?",
+      "answer": 34.733,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-05",
+      "level": 1,
+      "text": "Altaan pohjassa olevasta lampusta lähtevä säde osuu vedenpintaan tulokulmassa $40{,}0^\\circ$ ja jatkaa ilmaan. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$. Kuinka suuri on taitekulma ilmassa?",
+      "answer": 58.7495,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-10-L2-01",
+      "level": 2,
+      "text": "Laserin säde osuu ilmasta lasilevyn pintaan. Säteen ja pinnan välinen kulma on $25{,}0^\\circ$. Lasin taitekerroin on $1{,}52$ ja ilman $1{,}00$. Kuinka suuri on taitekulma lasissa, kun se mitataan normaalista?",
+      "answer": 36.6022,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L2-02",
+      "level": 2,
+      "text": "Opiskelija suuntaa laserin säteen ilmasta muovikappaleeseen. Tulokulma on $40{,}0^\\circ$ ja taitekulma $25{,}4^\\circ$. Ilman taitekerroin on $1{,}00$. Kuinka suurella nopeudella valo etenee muovissa? Anna vastaus muodossa $\\ldots \\cdot 10^{8}\\,\\text{m/s}$. Kirjoita siis vastaukseksi kerroin.",
+      "answer": 2.0019,
+      "unit": "· 10⁸ m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L2-03",
+      "level": 2,
+      "text": "Valo kulkee kohtisuoraan $2{,}0\\,\\text{cm}$ paksun ikkunalasin läpi. Lasin taitekerroin on $1{,}52$. Kuinka paljon kauemmin valolta kuluu aikaa lasin läpi kuin saman matkan kulkemiseen ilmassa? Ilmassa valon nopeus on $3{,}00 \\cdot 10^{8}\\,\\text{m/s}$. Anna vastaus pikosekunteina, $1\\,\\text{ps} = 10^{-12}\\,\\text{s}$.",
+      "answer": 34.6667,
+      "unit": "ps",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L2-04",
+      "level": 2,
+      "text": "Kuvassa ilmasta tuleva laserin säde osuu lasisen puolisylinterin tasaisen pinnan keskipisteeseen astelevyn keskellä. Lasissa valo kulkee keskipisteestä suoraan kohti kaarevaa pintaa. Se osuu kaarevaan pintaan kohtisuoraan, joten se ei taitu siinä. Lue kulmat astelevyltä ja määritä lasin taitekerroin. Ilman taitekerroin on $1{,}00$.",
+      "figure": "fy7-10/protractor",
+      "answer": 1.5321,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-10-L3-01",
+      "level": 3,
+      "text": "Kaksi tasopeiliä on kohtisuorassa toisiaan vastaan. Valonsäde osuu ensimmäiseen peiliin tulokulmassa $30{,}0^\\circ$, heijastuu ja osuu sitten toiseen peiliin. Kuinka suuri on tulokulma toisessa peilissä? Säde kulkee peilien normaalien tasossa.",
+      "answer": 60.0,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L3-02",
+      "level": 3,
+      "text": "Uima-altaan pohjassa on lamppu $2{,}0\\,\\text{m}$:n syvyydellä. Lampusta lähtevä säde osuu vedenpintaan kohdassa, joka on vaakasuunnassa $1{,}5\\,\\text{m}$:n päässä lampun kohdalta. Säde jatkuu ilmaan. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$. Kuinka suuren kulman säde muodostaa ilmassa pinnan normaalin kanssa?",
+      "answer": 52.9395,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L3-03",
+      "level": 3,
+      "text": "Valo etenee aineessa A nopeudella $2{,}25 \\cdot 10^{8}\\,\\text{m/s}$ ja aineessa B nopeudella $1{,}97 \\cdot 10^{8}\\,\\text{m/s}$. Valonsäde tulee aineesta A aineeseen B tulokulmassa $40{,}0^\\circ$. Kuinka suuri on taitekulma?",
+      "answer": 34.2494,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ]
+}

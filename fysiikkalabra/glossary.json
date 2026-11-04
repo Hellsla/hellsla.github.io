@@ -53,7 +53,8 @@
     "definition": "Sähköntuotanto, jossa tuuli pyörittää roottoria ja generaattoria. Teho riippuu säästä, joten tuulivoima on sääriippuvaista ja sen keskiteho on selvästi pienempi kuin nimellisteho.",
     "lessons": [
       "fy2-6",
-      "fy4-15"
+      "fy4-15",
+      "fy7-7"
     ],
     "see_also": [
       "energiantuotanto",
@@ -1952,7 +1953,8 @@
     "term": "sähköverkko",
     "definition": "Voimalinjojen, muuntajien ja sähköasemien muodostama verkko, joka siirtää sähköenergian voimalaitoksilta käyttäjille. Pitkät matkat siirretään kantaverkossa korkealla jännitteellä, ja jakeluverkko vie sähkön kuluttajille.",
     "lessons": [
-      "fy2-7"
+      "fy2-7",
+      "fy7-8"
     ],
     "see_also": [
       "siirtohäviö",
@@ -1964,7 +1966,8 @@
     "term": "siirtohäviö",
     "definition": "Energia, joka muuttuu energian siirrossa lämmöksi ympäristöön eikä tule käyttäjälle asti: E_häviö = E_lähtö − E_perille. Siirron hyötysuhde on perille tulevan energian osuus lähtevästä energiasta, η = E_perille : E_lähtö.",
     "lessons": [
-      "fy2-7"
+      "fy2-7",
+      "fy7-8"
     ],
     "see_also": [
       "hyötysuhde",
@@ -2927,7 +2930,9 @@
     "term": "interferenssi",
     "definition": "Kahden tai useamman aallon yhteisvaikutus samassa kohdassa superpositioperiaatteen mukaan. Kahden samassa vaiheessa värähtelevän saman taajuuden lähteen aallot muodostavat pysyvän kuvion, jossa vahvistavan ja heikentävän interferenssin kohdat vuorottelevat.",
     "lessons": [
-      "fy5-12"
+      "fy5-12",
+      "fy7-14",
+      "fy7-13"
     ],
     "see_also": [
       "superpositio",
@@ -3154,7 +3159,8 @@
     "term": "heijastuslaki",
     "definition": "Heijastuskulma on yhtä suuri kuin tulokulma, β = α, kun molemmat mitataan pinnan normaalista. Tuleva säde, heijastunut säde ja normaali ovat samassa tasossa.",
     "lessons": [
-      "fy5-11"
+      "fy5-11",
+      "fy7-10"
     ],
     "see_also": [
       "heijastuminen",
@@ -3178,7 +3184,8 @@
     "term": "diffraktio",
     "definition": "Aallon taipuminen raon tai esteen taakse, alueelle, jonne suoraan etenevä aalto ei osuisi. Diffraktio on voimakasta, kun raon tai esteen leveys on aallonpituuden suuruusluokkaa tai pienempi.",
     "lessons": [
-      "fy5-11"
+      "fy5-11",
+      "fy7-13"
     ],
     "see_also": [
       "Huygensin periaate"
@@ -3284,7 +3291,8 @@
     "term": "kaiutin",
     "definition": "Laite, joka muuttaa sähköisen signaalin ääneksi: vaihtovirta kulkee magneetin navan ympärillä olevassa kelassa, ja kelaan kiinnitetty kartio värähtelee ja synnyttää ääniaallon. Suurin osa sähköenergiasta muuttuu sisäenergiaksi.",
     "lessons": [
-      "fy5-16"
+      "fy5-16",
+      "fy7-4"
     ],
     "see_also": [
       "mikrofoni"
@@ -3394,6 +3402,722 @@
     ],
     "see_also": [
       "ääni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkömoottori",
+    "definition": "Laite, joka muuttaa sähköenergiaa liike-energiaksi. Tasavirtamoottorissa magneettikenttä kohdistaa voimat virtasilmukan sivuihin, voimat kääntävät silmukkaa akselin ympäri, ja kommutaattori kääntää virran suunnan joka puolikierroksella, jotta pyöriminen jatkuu samaan suuntaan.",
+    "lessons": [
+      "fy7-4"
+    ],
+    "see_also": [
+      "virtasilmukka",
+      "kaiutin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "virtasilmukka",
+    "definition": "Suljettu johdinsilmukka, jossa kulkee sähkövirta. Magneettikentässä silmukan vastakkaisiin sivuihin kohdistuu vastakkaissuuntaiset voimat, jotka pyrkivät kääntämään silmukkaa.",
+    "lessons": [
+      "fy7-4"
+    ],
+    "see_also": [
+      "sähkömoottori"
+    ],
+    "locked": false
+  },
+  {
+    "term": "virtajohdin",
+    "definition": "Johdin, jossa kulkee sähkövirta. Virtajohtimen ympärille syntyy magneettikenttä, jonka kenttäviivat ovat suoran johtimen ympärillä samankeskisiä ympyröitä; kentän suunta saadaan oikean käden säännöllä.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "oikean käden sääntö",
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "käämi",
+    "definition": "Kierteelle kelattu eristetty johdin. Pitkän käämin sisällä magneettikenttä on lähes homogeeninen ja käämin akselin suuntainen, $B = \\mu_0 \\tfrac{N I}{l}$, ja ulkopuolella kenttä on samanlainen kuin sauvamagneetin.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "virtajohdin",
+      "sähkömagneetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "oikean käden sääntö",
+    "definition": "Sääntö magneettikentän suunnalle. Suora johdin: kun oikean käden peukalo osoittaa virran suuntaan, koukistetut sormet kiertävät kenttäviivojen suuntaan. Käämi: kun sormet kiertävät kierroksia pitkin virran suuntaan, peukalo osoittaa käämin sisällä kentän suuntaan eli käämin pohjoisnapaa kohti.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "virtajohdin",
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkömagneetti",
+    "definition": "Käämi, jonka sisällä on rautasydän. Rauta magnetoituu käämin kentässä, joten kenttä on moninkertainen ilman sydäntä olevaan käämiin verrattuna, ja se häviää lähes kokonaan, kun virta katkaistaan.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneetti",
+    "definition": "Kappale, joka vetää puoleensa rautaa ja kääntyy vapaasti ripustettuna pohjois–eteläsuuntaan. Magneetilla on aina kaksi napaa, pohjoisnapa N ja etelänapa S; samannimiset navat hylkivät ja erinimiset vetävät toisiaan.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneettinen dipoli",
+      "magneettikenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettinen dipoli",
+    "definition": "Kahden vastakkaisen magneettinavan, pohjoisnavan ja etelänavan, muodostama kokonaisuus. Jokainen magneetti on dipoli: katkaistusta magneetista tulee kaksi dipolia, eikä yksittäistä magneettinapaa ole havaittu.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ferromagnetismi",
+    "definition": "Raudan, nikkelin, koboltin ja monien niiden seosten ominaisuus: atomien magneettiset dipolit järjestyvät samansuuntaisiksi alkeisalueiksi, joten aine magnetoituu voimakkaasti magneetin kentässä ja magneetti vetää sitä.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "alkeisalue",
+      "magneetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alkeisalue",
+    "definition": "Ferromagneettisen aineen pieni alue, jossa kaikkien atomien magneettiset dipolit osoittavat samaan suuntaan. Magnetoimattomassa aineessa alkeisalueiden suunnat vaihtelevat; ulkoinen kenttä järjestää ne, jolloin aine magnetoituu.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "ferromagnetismi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettikenttä",
+    "definition": "Magneetin tai sähkövirran ympärillä oleva tila, jossa toinen magneetti tai rautakappale kokee voiman. Kentän suunta on se, johon kompassin neulan pohjoispää osoittaa, ja sitä kuvaa magneettivuon tiheys.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "kenttäviiva",
+      "magneettivuon tiheys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kenttäviiva",
+    "definition": "Viiva, jonka suunta kussakin pisteessä on kentän suunta. Magneetin ulkopuolella magneettikentän kenttäviivat kulkevat pohjoisnavasta etelänapaan ja muodostavat suljettuja silmukoita; viivojen tiheys kertoo kentän voimakkuuden.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneettikenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettivuon tiheys",
+    "definition": "Magneettikentän voimakkuutta ja suuntaa kuvaava vektorisuure $\\overline{B}$. Yksikkö on tesla $\\text{T}$. Maan magneettikenttä on Suomessa noin $52\\,\\mu\\text{T}$.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneettikenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettinen voima",
+    "definition": "Voima, jolla magneettikenttä vaikuttaa liikkuvaan varattuun hiukkaseen tai virtajohtimeen. Hiukkaseen vaikuttavan voiman suuruus on F = qvB sin α, ja se on kohtisuorassa sekä nopeutta että kenttää vastaan, joten se kääntää liikettä muuttamatta vauhtia.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "magneettikenttä",
+      "ympyrärata"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ympyrärata",
+    "definition": "Ympyrän muotoinen rata. Kohtisuorassa homogeenista magneettikenttää vastaan liikkuva varattu hiukkanen kiertää ympyrärataa, jonka säde on r = mv/(qB), koska magneettinen voima toimii keskeisvoimana.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "magneettinen voima",
+      "keskeisvoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "nopeusvalitsin",
+    "definition": "Laite, jossa sähkökenttä ja sitä vastaan kohtisuora magneettikenttä vaikuttavat varattuun hiukkaseen vastakkaisiin suuntiin. Suoraan sen läpi kulkevat vain hiukkaset, joiden vauhti on v = E/B, riippumatta niiden massasta ja varauksesta.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "massaspektrometri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "massaspektrometri",
+    "definition": "Laite, joka erottaa ionit niiden massan mukaan. Tunnetulla vauhdilla liikkuvat ionit kaartuvat magneettikentässä ympyräradalle, jonka säde on samalla varauksella verrannollinen massaan, ja osuvat ilmaisimeen eri kohtiin. Sillä erotetaan esimerkiksi isotoopit.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "nopeusvalitsin",
+      "ympyrärata"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hiukkaskiihdytin",
+    "definition": "Laite, joka kiihdyttää varattuja hiukkasia suuriin energioihin. Sähkökentät kasvattavat hiukkasten energiaa, ja magneetit taivuttavat ja kohdistavat hiukkassuihkua. Esimerkiksi CERNin LHC on 26,7 km:n rengas.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "magneettinen voima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "muuntaja",
+    "definition": "Laite, joka muuttaa vaihtojännitteen suuremmaksi tai pienemmäksi. Rautasydämen ympärillä on ensiö- ja toisiokäämi: ensiökäämin vaihtovirta synnyttää sydämeen muuttuvan magneettivuon, joka indusoi toisiokäämiin vaihtojännitteen. Ideaalisessa muuntajassa U₁ : U₂ = N₁ : N₂ = I₂ : I₁, ja teho säilyy. Tasavirralla muuntaja ei toimi.",
+    "lessons": [
+      "fy7-8"
+    ],
+    "see_also": [
+      "muuntosuhde",
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "muuntosuhde",
+    "definition": "Muuntajan ensiö- ja toisiokäämin kierrosten lukumäärien suhde N₁ : N₂. Ideaalisessa muuntajassa se on myös jännitteiden suhde U₁ : U₂ ja virtojen käänteinen suhde I₂ : I₁.",
+    "lessons": [
+      "fy7-8"
+    ],
+    "see_also": [
+      "muuntaja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suurjännite",
+    "definition": "Yli 1 kV:n vaihtojännite. Sähköenergiaa siirretään pitkiä matkoja suurjännitteellä, koska sama teho kulkee silloin pienellä virralla ja siirtohäviöt ovat pienet; Suomen kantaverkon jännitteet ovat 400, 220 ja 110 kV.",
+    "lessons": [
+      "fy7-8"
+    ],
+    "see_also": [
+      "siirtohäviö",
+      "sähköverkko"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktio",
+    "definition": "Sähkömagneettinen induktio: ilmiö, jossa johdinsilmukkaan tai käämiin syntyy jännite, kun sen läpi kulkeva magneettivuo muuttuu. Jos vuo ei muutu, jännitettä ei synny.",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "magneettivuo",
+      "induktiojännite",
+      "induktiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettivuo",
+    "definition": "Suure $\\Phi$, joka kuvaa, kuinka paljon magneettikenttää kulkee pinnan läpi. Kun homogeeninen kenttä on kohtisuorassa pintaa vastaan, $\\Phi = BA$. Yksikkö on weber, $1\\,\\text{Wb} = 1\\,\\text{T}\\cdot\\text{m}^2$.",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "magneettivuon tiheys",
+      "induktiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktiojännite",
+    "definition": "Jännite, joka syntyy käämiin tai johdinsilmukkaan sen läpi kulkevan magneettivuon muuttuessa, tai magneettikentässä liikkuvan johtimen päiden välille, $e = vBl$. Suljetussa piirissä se synnyttää induktiovirran.",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "induktio",
+      "induktiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktiolaki",
+    "definition": "Faradayn induktiolaki: käämiin syntyvä induktiojännite on $e = -N\\tfrac{\\Delta\\Phi}{\\Delta t}$, missä $N$ on kierrosten lukumäärä ja $\\Delta\\Phi : \\Delta t$ magneettivuon muutosnopeus. Miinusmerkki kertoo, että jännite vastustaa muutosta, joka sen synnyttää (Lenzin laki).",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "induktio",
+      "magneettivuo"
+    ],
+    "locked": false
+  },
+  {
+    "term": "generaattori",
+    "definition": "Laite, joka muuttaa pyörimisliikkeen sähköenergiaksi sähkömagneettisen induktion avulla: käämi pyörii magneettikentässä tai magneetti käämin sisällä, jolloin käämin läpi kulkeva magneettivuo muuttuu ja käämiin syntyy jännite.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "vaihtojännite",
+      "tuulivoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaihtovirta",
+    "definition": "Sähkövirta, jonka suunta vaihtuu jaksollisesti. Sähköverkossa virta on sinimuotoinen ja sen taajuus on $50\\,\\text{Hz}$, joten suunta vaihtuu sata kertaa sekunnissa.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "vaihtojännite",
+      "tehollinen arvo"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaihtojännite",
+    "definition": "Jännite, jonka suunta vaihtuu jaksollisesti. Magneettikentässä tasaisesti pyörivän käämin jännite on sinimuotoinen, $e = e_0 \\sin(2\\pi f t)$.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "vaihtovirta",
+      "generaattori",
+      "huippuarvo"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tehollinen arvo",
+    "definition": "Vaihtojännitteen tai -virran arvo, joka vastaa tasajännitettä tai tasavirtaa, joka tuottaisi vastukseen saman keskimääräisen tehon. Sinimuotoisella jännitteellä $U = U_0 : \\sqrt{2}$; verkkojännitteen $230\\,\\text{V}$ on tehollinen arvo.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "huippuarvo",
+      "vaihtojännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "huippuarvo",
+    "definition": "Jaksollisesti vaihtelevan jännitteen tai virran suurin arvo, esimerkiksi $U_0$ tai $e_0$. Verkkojännitteen huippuarvo on noin $325\\,\\text{V}$.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "tehollinen arvo",
+      "vaihtojännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Lenzin laki",
+    "definition": "Induktiovirran suunta on aina sellainen, että sen oma magneettikenttä vastustaa sitä magneettivuon muutosta, joka induktiovirran synnyttää. Laki seuraa energian säilymisestä, ja se on induktiolain $e = -N \\Delta\\Phi : \\Delta t$ miinusmerkki.",
+    "lessons": [
+      "fy7-6"
+    ],
+    "see_also": [
+      "induktio",
+      "pyörrevirta",
+      "energian säilyminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pyörrevirta",
+    "definition": "Induktiovirta, joka kiertää suljettuina silmukoina umpinaisessa sähköä johtavassa kappaleessa, kun kappaleen läpi kulkeva magneettivuo muuttuu. Pyörrevirrat vastustavat Lenzin lain mukaan muutosta ja muuttavat sähköenergiaa kappaleen sisäenergiaksi.",
+    "lessons": [
+      "fy7-6"
+    ],
+    "see_also": [
+      "Lenzin laki",
+      "induktiojarru",
+      "sisäenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktiojarru",
+    "definition": "Jarru, jossa sähköä johtava levy tai kisko liikkuu magneettikentässä ja siihen syntyvät pyörrevirrat jarruttavat liikettä. Jarru ei kulu, ja sen voima kasvaa vauhdin mukana; liike-energia muuttuu johteen sisäenergiaksi. Kutsutaan myös pyörrevirtajarruksi.",
+    "lessons": [
+      "fy7-6"
+    ],
+    "see_also": [
+      "pyörrevirta",
+      "Lenzin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "taittuminen",
+    "definition": "Valon tai muun aallon suunnan muuttuminen, kun se siirtyy rajapinnan läpi aineesta toiseen, jossa sen nopeus on eri. Optisesti tiheämpään aineeseen siirtyvä valo taittuu kohti normaalia, harvempaan normaalista poispäin.",
+    "lessons": [
+      "fy7-10"
+    ],
+    "see_also": [
+      "taitekerroin",
+      "Snellin laki",
+      "heijastuslaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "taitekerroin",
+    "definition": "Aineen taitekerroin n = c : v kertoo, kuinka monta kertaa hitaammin valo etenee aineessa kuin tyhjiössä. Taitekerroin on yksikötön, ja aineessa se on suurempi kuin 1; esimerkiksi veden taitekerroin on 1,33.",
+    "lessons": [
+      "fy7-10",
+      "fy7-11"
+    ],
+    "see_also": [
+      "taittuminen",
+      "Snellin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Snellin laki",
+    "definition": "Taittumislaki n₁ sin α₁ = n₂ sin α₂, missä α₁ on tulokulma ja α₂ taitekulma rajapinnan normaalista mitattuina ja n₁ ja n₂ aineiden taitekertoimet.",
+    "lessons": [
+      "fy7-10"
+    ],
+    "see_also": [
+      "taittuminen",
+      "taitekerroin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kokonaisheijastuminen",
+    "definition": "Ilmiö, jossa valo heijastuu rajapinnasta kokonaan takaisin eikä taitu toiseen aineeseen. Se tapahtuu, kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen ja tulokulma on suurempi kuin rajakulma.",
+    "lessons": [
+      "fy7-12"
+    ],
+    "see_also": [
+      "rajakulma",
+      "valokuitu"
+    ],
+    "locked": false
+  },
+  {
+    "term": "rajakulma",
+    "definition": "Tulokulma, jolla taitekulma on 90°, kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen: sin α_r = n₂ : n₁. Rajakulmaa suuremmilla tulokulmilla valo kokonaisheijastuu.",
+    "lessons": [
+      "fy7-12"
+    ],
+    "see_also": [
+      "kokonaisheijastuminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "valokuitu",
+    "definition": "Ohut lasi- tai muovikuitu, jonka ytimen taitekerroin on hieman suurempi kuin ympäröivän kuoren. Valo etenee ytimessä kokonaisheijastuen, joten kuitu johtaa valoa myös mutkan ympäri. Käytetään tiedonsiirrossa ja tähystimissä.",
+    "lessons": [
+      "fy7-12"
+    ],
+    "see_also": [
+      "kokonaisheijastuminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkömagneettinen säteily",
+    "definition": "Toisiaan synnyttävien sähkö- ja magneettikentän muutosten eteneminen aaltona, joka ei tarvitse väliainetta. Kentät ovat kohtisuorassa toisiaan ja etenemissuuntaa vastaan, ja tyhjiössä aalto etenee valon nopeudella c = 3,00 · 10⁸ m/s. Syntyy, kun varattu hiukkanen on kiihtyvässä liikkeessä. Esimerkiksi radioaallot, valo ja röntgensäteily.",
+    "lessons": [
+      "fy7-9"
+    ],
+    "see_also": [
+      "spektri",
+      "aallonpituus",
+      "lämpösäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "spektri",
+    "definition": "Säteilyn jakautuminen aallonpituuksien tai taajuuksien mukaan. Sähkömagneettinen spektri on kaikkien sähkömagneettisen säteilyn lajien kokonaisuus radioaalloista gammasäteilyyn aallonpituuden mukaan järjestettynä; kappaleen säteilyn spektri kertoo, kuinka voimakkaasti se säteilee kullakin aallonpituudella.",
+    "lessons": [
+      "fy7-9",
+      "fy7-11"
+    ],
+    "see_also": [
+      "sähkömagneettinen säteily",
+      "mustan kappaleen säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mustan kappaleen säteily",
+    "definition": "Mustan kappaleen eli kaiken siihen osuvan säteilyn imevän ihannekappaleen lähettämä sähkömagneettinen säteily. Sen spektri on jatkuva ja riippuu vain kappaleen pintalämpötilasta, ei aineesta. Aurinko, hehkuva hiillos ja ihmisen iho infrapuna-alueella säteilevät likimain kuin musta kappale.",
+    "lessons": [
+      "fy7-9"
+    ],
+    "see_also": [
+      "Wienin siirtymälaki",
+      "lämpösäteily",
+      "spektri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Wienin siirtymälaki",
+    "definition": "Mustan kappaleen säteilyn spektrin huipun aallonpituus on kääntäen verrannollinen kappaleen absoluuttiseen lämpötilaan: λ_max · T = b, missä b = 2,898 · 10⁻³ m·K. Kuumemman kappaleen huippu on lyhyemmällä aallonpituudella.",
+    "lessons": [
+      "fy7-9"
+    ],
+    "see_also": [
+      "mustan kappaleen säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "dispersio",
+    "definition": "Taitekertoimen riippuvuus valon aallonpituudesta. Vedessä ja lasissa violetin valon taitekerroin on suurempi kuin punaisen, joten prisma ja sadepisarat hajottavat valkoisen valon väreiksi.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "taitekerroin",
+      "spektri",
+      "sateenkaari"
+    ],
+    "locked": false
+  },
+  {
+    "term": "poikkeamakulma",
+    "definition": "Kulma, jonka verran valonsäde kääntyy alkuperäisestä suunnastaan kulkiessaan prisman läpi: $\\delta = \\alpha_1 + \\alpha_4 - A$.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "dispersio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sateenkaari",
+    "definition": "Kaari, joka syntyy, kun auringonvalo taittuu vesipisaroihin, heijastuu niiden takapinnasta ja taittuu ulos. Punainen näkyy noin $42^\\circ$:n ja violetti noin $40{,}6^\\circ$:n kulmassa vastapisteestä.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "dispersio",
+      "vastapiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vastapiste",
+    "definition": "Taivaan piste suoraan auringon vastakkaisella puolella, katsojan pään varjon suunnassa. Sateenkaari on ympyrä vastapisteen ympärillä.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "sateenkaari"
+    ],
+    "locked": false
+  },
+  {
+    "term": "polarisaatio",
+    "definition": "Poikittaisen aallon värähtelysuunnan järjestäytyminen. Valo on lineaarisesti polarisoitunutta, kun sen sähkökenttä värähtelee vain yhdessä etenemissuuntaa vastaan kohtisuorassa suunnassa. Auringon ja hehkulampun valo on polarisoimatonta: värähtelysuunta vaihtelee satunnaisesti. Pitkittäistä aaltoa, kuten ääntä, ei voi polarisoida.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaattori",
+      "poikittainen aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "polarisaattori",
+    "definition": "Kalvo tai suodatin, joka päästää läpi sähkökentän läpäisysuuntaisen komponentin ja absorboi siihen nähden kohtisuoran komponentin. Ihanteellinen polarisaattori päästää läpi puolet polarisoimattoman valon intensiteetistä, ja läpi tullut valo on polarisoitunutta läpäisysuuntaan. Toista polarisaattoria, jolla tutkitaan valon polarisaatiota, sanotaan analysaattoriksi.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaatio",
+      "Malusin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Malusin laki",
+    "definition": "Polarisoituneen valon intensiteetti polarisaattorin jälkeen on I = I₀ cos² θ, missä I₀ on tulevan polarisoituneen valon intensiteetti ja θ valon polarisaatiosuunnan ja polarisaattorin läpäisysuunnan välinen kulma.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaattori",
+      "intensiteetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Brewsterin laki",
+    "definition": "Kun valo heijastuu eristeen, kuten veden tai lasin, pinnasta Brewsterin kulmassa α_B, jolle tan α_B = n₂ : n₁, heijastunut valo on täysin polarisoitunutta pinnan suuntaisesti. Silloin heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaatio",
+      "taitekerroin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "polaroidut aurinkolasit",
+    "definition": "Aurinkolasit, joiden linsseissä on polarisaattorikalvo, jonka läpäisysuunta on pystysuora. Ne himmentävät erityisesti vaakasuorista pinnoista, kuten vedestä ja märästä tiestä, heijastuvaa häikäisyä, koska heijastunut valo on osittain polarisoitunutta vaakasuunnassa.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaattori",
+      "Brewsterin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ohut kalvo",
+    "definition": "Läpinäkyvä kerros, jonka paksuus on samaa suuruusluokkaa kuin valon aallonpituus, noin $100$–$1000\\,\\text{nm}$, esimerkiksi saippuakuplan seinämä tai öljykalvo veden pinnalla. Kalvon kahdesta pinnasta heijastuneet aallot interferoivat; kohtisuorassa tulossa niiden matkaero on $2nd$.",
+    "lessons": [
+      "fy7-14"
+    ],
+    "see_also": [
+      "interferenssi",
+      "heijastuksenestopinnoite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heijastuksenestopinnoite",
+    "definition": "Lasin tai linssin pinnalle tehty ohut läpinäkyvä kalvo, jonka kahdesta pinnasta heijastuneet aallot heikentävät toisiaan, joten pinnasta heijastuu vähemmän valoa ja sen läpi pääsee enemmän. Ohuimman pinnoitteen paksuus on neljäsosa aallonpituudesta pinnoitteessa, $d = \\lambda : (4n)$.",
+    "lessons": [
+      "fy7-14"
+    ],
+    "see_also": [
+      "ohut kalvo",
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "langaton lataus",
+    "definition": "Akun lataaminen ilman johtoa: laturin lähetinkäämin vaihtovirta synnyttää vaihtuvan magneettikentän, jonka vuo indusoi laitteen vastaanotinkäämiin jännitteen. Toimii kuin muuntaja ilman rautasydäntä, joten siirto heikkenee jyrkästi käämien välin kasvaessa.",
+    "lessons": [
+      "fy7-16"
+    ],
+    "see_also": [
+      "induktio",
+      "muuntaja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktioliesi",
+    "definition": "Liesi, jonka lasilevyn alla olevan kelan vaihtovirta synnyttää vaihtuvan magneettikentän. Kenttä indusoi kattilan pohjaan pyörrevirtoja, jotka muuttavat sähköenergiaa pohjan sisäenergiaksi. Lämmittää tehokkaasti ferromagneettista, kuten teräksistä, pohjaa; sähköä johtamaton lasi ei lämpene itsestään.",
+    "lessons": [
+      "fy7-16"
+    ],
+    "see_also": [
+      "pyörrevirta",
+      "ferromagnetismi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaimennus",
+    "definition": "Signaalin tehon pieneneminen siirtotiellä, esimerkiksi valokuidussa, ilmoitettuna desibeleinä: $A = 10\\,\\text{dB} \\cdot \\lg (P_0 : P)$. Jokainen $10\\,\\text{dB}$ pienentää tehon kymmenesosaan. Kuidun vaimennuskerroin ilmoitetaan yksikössä $\\text{dB/km}$.",
+    "lessons": [
+      "fy7-16"
+    ],
+    "see_also": [
+      "desibeli",
+      "valokuitu"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hila",
+    "definition": "Levy tai kalvo, jossa on suuri määrä tasavälisiä kapeita rakoja tai viivoja. Kun valo tulee kohtisuoraan hilaan, kirkkaat maksimit syntyvät suuntiin, joille d sin θ = kλ, missä d on hilavakio, θ maksimin suunta keskimaksimin suunnasta ja k kokonaisluku. Heijastava tasavälinen pinta, kuten CD-levy, on heijastushila.",
+    "lessons": [
+      "fy7-13"
+    ],
+    "see_also": [
+      "hilavakio",
+      "interferenssi",
+      "diffraktio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hilavakio",
+    "definition": "Hilan vierekkäisten rakojen tai viivojen etäisyys d. Jos hilassa on N viivaa millimetrillä, hilavakio on d = 1 mm : N; esimerkiksi 300 viivaa millimetrillä antaa d = 3,33 µm.",
+    "lessons": [
+      "fy7-13"
+    ],
+    "see_also": [
+      "hila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kaksoisrako",
+    "definition": "Kaksi kapeaa, lähekkäistä rakoa, joihin tulee saman lähteen valoa. Raoista lähtevät aallot ovat koherentteja ja interferoivat, joten varjostimelle syntyy tasavälisiä kirkkaita ja tummia juovia. Thomas Young osoitti kaksoisraolla 1800-luvun alussa, että valo on aaltoliikettä.",
+    "lessons": [
+      "fy7-13"
+    ],
+    "see_also": [
+      "interferenssi",
+      "hila"
     ],
     "locked": false
   },

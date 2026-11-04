@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "contribution": "Kokonaisheijastuminen tapahtuu, kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen rajakulmaa $\\sin\\alpha_\\text{r} = n_2 : n_1$ suuremmalla tulokulmalla. Simulaatiolla opiskelija havaitsee, että liian jyrkästi kuituun tuleva valo vuotaa ulos ja että rajakulma kasvaa taitekertoimien eron pienentyessä; valokuitu, tiedonsiirron viive ja timantin säihke sovelluksina.",
+  "learn": [
+    "selittämään, milloin valo kokonaisheijastuu kahden aineen rajapinnasta.",
+    "laskemaan rajakulman taitekertoimista ja valon kulkuajan kuidussa.",
+    "selittämään, miten valokuitu johtaa valoa ja miksi kuidussa on kuori."
+  ],
+  "prior": [
+    "Valo taittuu rajapinnassa taittumislain $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ mukaan, ja kulmat mitataan normaalista (luku *Valon heijastuminen ja taittuminen*)",
+    "Aineessa valo etenee nopeudella $v = c : n$ (luku *Valon heijastuminen ja taittuminen*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Itämeren pohjassa kulkee Helsingistä Saksan Rostockiin $1172\\,\\text{km}$ pitkä merikaapeli C-Lion1 (Cinia, 2016). Sen sisällä tieto kulkee valopulsseina hiuksen paksuisissa lasikuiduissa. Lasi on läpinäkyvää, eikä kuidun pinnassa ole peiliä. Silti valo ei karkaa kuidusta, vaikka kaapeli mutkittelee merenpohjan muotojen mukaan.",
+      "question": "Mikä pitää valon läpinäkyvän lasikuidun sisällä satojen kilometrien matkan?"
+    },
+    {
+      "id": "kertaus-taittuminen",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: taittuminen",
+      "prompt": "Valonsäde tulee vedestä ($n = 1{,}33$) ilmaan $30^\\circ$:n tulokulmassa. Miten säde taittuu?",
+      "choices": [
+        {
+          "text": "Normaalista poispäin: taitekulma on suurempi kuin $30^\\circ$.",
+          "correct": true,
+          "feedback": "Oikein. Taittumislaista $1{,}33 \\cdot \\sin 30^\\circ = 1{,}00 \\cdot \\sin\\alpha_2$, joten $\\alpha_2 \\approx 41{,}7^\\circ$ (luku *Valon heijastuminen ja taittuminen*). Tänään selvitetään, mitä tapahtuu, kun tulokulmaa kasvatetaan."
+        },
+        {
+          "text": "Normaalia kohti: taitekulma on pienempi kuin $30^\\circ$.",
+          "feedback": "Normaalia kohti valo taittuu, kun se tulee pienemmän taitekertoimen aineesta suuremman taitekertoimen aineeseen, esimerkiksi ilmasta veteen. Vedestä ilmaan tullessa $\\sin\\alpha_2 = 1{,}33 \\cdot \\sin 30^\\circ$, joten taitekulma on noin $41{,}7^\\circ$."
+        },
+        {
+          "text": "Se ei taitu, koska $30^\\circ$ on pieni tulokulma.",
+          "feedback": "Säde taittuu aina, kun se tulee vinosti rajapintaan, jonka eri puolilla taitekertoimet eroavat. Vain kohtisuoraan tuleva säde jatkaa suoraan. Taittumislaista taitekulma on noin $41{,}7^\\circ$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-kulma",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: jyrkempi valo",
+      "prompt": "Laser osoittaa ilmasta valokuidun tasaiseen päähän. Kuidun ytimen taitekerroin on $1{,}48$ ja kuoren $1{,}46$. Laserin kulmaa kuidun akseliin nähden kasvatetaan vähitellen nollasta. Mitä kuidun ytimessä etenevälle valolle tapahtuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Valo pysyy ytimessä millä tahansa kulmalla, koska kuori heijastaa sen aina takaisin.",
+          "feedback": "Mallin arvot kumoavat tämän: kun kulma on $15^\\circ$, säde osuu ytimen seinään tulokulmassa $\\alpha = 79{,}93^\\circ$, joka on pienempi kuin rajakulma $80{,}57^\\circ$, ja osa valosta taittuu kuoreen. Kokonaisheijastus vaatii, että tulokulma on suurempi kuin rajakulma."
+        },
+        {
+          "text": "Kun kulma ylittää tietyn rajan, valoa alkaa vuotaa ytimestä kuoreen.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: $14^\\circ$:n kulmalla seinän tulokulma on $80{,}59^\\circ$ ja valo pysyy ytimessä, mutta $15^\\circ$:n kulmalla tulokulma on $79{,}93^\\circ$, pienempi kuin rajakulma $80{,}57^\\circ$, ja valoa vuotaa. Jyrkempi valo osuu seinään loivemmin eli pienemmällä tulokulmalla."
+        },
+        {
+          "text": "Mitä pienempi kulma on, sitä enemmän valoa vuotaa, koska valo osuu seinään hyvin vinosti.",
+          "feedback": "Mallin arvot kumoavat tämän: akselin suuntainen valo osuu seinään lähes $90^\\circ$:n tulokulmassa, joka on suurempi kuin rajakulma $80{,}57^\\circ$, joten se pysyy ytimessä. Vuoto alkaa vasta, kun kulma on yli $14^\\circ$. Tulokulma mitataan seinän normaalista, ei seinästä."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kuori",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: ilma vai kuori",
+      "prompt": "Valo tulee lasiseen ytimeen ($n_1 = 1{,}48$) $30^\\circ$:n kulmassa akseliin nähden. Ytimen ympärillä on joko ilmaa ($n_2 = 1{,}00$) tai kuorilasia ($n_2 = 1{,}46$). Kummassa tapauksessa valo pysyy ytimessä?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Kun ympärillä on ilmaa.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: säde osuu seinään tulokulmassa $70{,}25^\\circ$. Ilmaa vasten rajakulma on vain $42{,}51^\\circ$, joten valo kokonaisheijastuu. Kuorta $1{,}46$ vasten rajakulma on $80{,}57^\\circ$, ja valoa vuotaa. Mitä suurempi taitekertoimien ero, sitä pienempi rajakulma."
+        },
+        {
+          "text": "Kun ympärillä on kuorilasia.",
+          "feedback": "Mallin arvot kumoavat tämän: kuorta $1{,}46$ vasten rajakulma on $80{,}57^\\circ$, suurempi kuin säteen tulokulma $70{,}25^\\circ$, joten valoa vuotaa. Ilmaa vasten rajakulma on $42{,}51^\\circ$, ja valo pysyy ytimessä. Kuori ei siis paranna heijastusta, vaan suojaa rajapintaa."
+        },
+        {
+          "text": "Molemmissa, koska valo tulee aina suuremman taitekertoimen aineesta pienemmän.",
+          "feedback": "Suunta on oikea, mutta se ei riitä: tulokulman on myös oltava suurempi kuin rajakulma. Mallissa tulokulma on $70{,}25^\\circ$. Ilmaa vasten rajakulma on $42{,}51^\\circ$, mutta kuorta $1{,}46$ vasten $80{,}57^\\circ$, joten kuoren tapauksessa valoa vuotaa."
+        },
+        {
+          "text": "Ei kummassakaan, koska $30^\\circ$ on liian jyrkkä kulma kuidulle.",
+          "feedback": "Mallin arvot kumoavat tämän: ilmaa vasten rajakulma on $42{,}51^\\circ$, ja säteen tulokulma seinään $70{,}25^\\circ$ on sitä suurempi, joten valo pysyy ytimessä. Liian jyrkkä kulma on vain kuorilasin tapauksessa, jossa rajakulma on $80{,}57^\\circ$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Laser osoittaa ilmasta valokuidun ytimen päähän. Muuta laserin kulmaa ja ytimen ympärillä olevaa ainetta ja seuraa, pysyykö valo ytimessä.",
+      "howto": "Säädä laserin kulmaa $\\theta$ kuidun akseliin nähden ja ytimen ympärillä olevan aineen taitekerrointa $n_2$. Arvo $n_2 = 1{,}00$ tarkoittaa ilmaa ja $n_2 = 1{,}46$ tavallista kuorilasia. Vasemmalla katkoviiva on päätypinnan normaali eli kuidun akseli. Ensimmäisessä kohdassa, jossa säde osuu ytimen seinään, katkoviiva on seinän normaali ja kaari näyttää tulokulman $\\alpha$. Jos valoa vuotaa, ulos taittuvat säteet näkyvät ympäröivässä aineessa, ja ytimessä jatkuva säde himmenee. Lukemista näet tulokulman $\\alpha$, rajakulman $\\alpha_\\text{r}$ ja sen, pysyykö valo ytimessä.",
+      "model": "Ytimen taitekerroin on $n_1 = 1{,}48$, ja laser on ilmassa, jonka taitekerroin on $1{,}00$. Kuidun pää on tasainen ja kohtisuorassa akseliin nähden. Ydin ja ympäröivä aine ulottuvat kuvan reunoihin asti, eikä kuidussa ole mutkia. Kuva ei ole mittakaavassa: todellisen kuidun ydin on vain muutaman kymmenen mikrometrin paksuinen. Päätypinnasta heijastuvaa valoa ei piirretä. Vuotavan säteen himmeneminen on vain havainnollistus, ei laskettu arvo. Lukemat ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Päätypinnassa valo taittuu taittumislain mukaan:\n\n$$1{,}00 \\cdot \\sin\\theta = n_1 \\sin\\theta_1$$\n\nYtimessä säde kulkee kulmassa $\\theta_1$ akseliin nähden, joten se osuu ytimen seinään tulokulmassa $\\alpha = 90^\\circ - \\theta_1$ seinän normaalista mitattuna. Rajakulma lasketaan yhtälöstä $\\sin\\alpha_\\text{r} = n_2 : n_1$. Jos $\\alpha > \\alpha_\\text{r}$, valo kokonaisheijastuu jokaisessa osumassa. Muuten osa valosta taittuu ulos kulmassa $\\beta$, jolle $n_1 \\sin\\alpha = n_2 \\sin\\beta$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: laserin kulma",
+      "intro": "Testaa ennuste 1. Ytimen ympärillä on kuorilasia, jonka taitekerroin on $1{,}46$; muuta vain laserin kulmaa $\\theta$. Kirjaa ainakin kulmat $0^\\circ$, $10^\\circ$, $14^\\circ$ ja $15^\\circ$. Vertaa joka rivillä tulokulmaa $\\alpha$ rajakulmaan $\\alpha_\\text{r}$ ja katso kuvasta, vuotaako valoa.",
+      "initial": {
+        "theta": 0,
+        "n2": 1.46
+      },
+      "locked": [
+        "n2"
+      ],
+      "vary": "theta",
+      "names": {
+        "theta": "laserin kulma θ",
+        "n2": "ympäröivän aineen taitekerroin"
+      },
+      "units": {
+        "theta": "°",
+        "n2": ""
+      },
+      "measure": [
+        {
+          "key": "alpha",
+          "label": "α (°)"
+        },
+        {
+          "key": "alphar",
+          "label": "α_r (°)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Mikä on suurin kokonainen asteluku $\\theta$, jolla valo vielä pysyy ytimessä, kun ympärillä on kuorilasia ($n_2 = 1{,}46$)?",
+        "answer": 14,
+        "unit": "°",
+        "tolerance": 0.05,
+        "hints": [
+          "Valo pysyy ytimessä, kun seinän tulokulma $\\alpha$ on suurempi kuin rajakulma $\\alpha_\\text{r}$. Etsi taulukosta kohta, jossa $\\alpha$ painuu rajakulman alle.",
+          "Kasvata kulmaa asteen kerrallaan ja seuraa lukemaa: pysyykö valo ytimessä vai vuotaako sitä?",
+          "Vertaa rivejä $14^\\circ$ ja $15^\\circ$: kummalla rivillä $\\alpha > \\alpha_\\text{r}$?"
+        ],
+        "mistakes": [
+          {
+            "value": 15,
+            "feedback": "Kulmalla $15^\\circ$ tulokulma $\\alpha = 79{,}93^\\circ$ on jo pienempi kuin rajakulma $80{,}57^\\circ$, ja valoa vuotaa. Suurin kulma, jolla valo vielä pysyy ytimessä, on yhtä astetta pienempi."
+          },
+          {
+            "value": 80.57,
+            "feedback": "Tämä on rajakulma ytimen seinässä. Kysytty on laserin kulma $\\theta$ kuidun akseliin nähden, jolla valo vielä pysyy ytimessä."
+          }
+        ],
+        "solution": "**Annettu:** ytimen taitekerroin $n_1 = 1{,}48$, kuoren taitekerroin $n_2 = 1{,}46$, laser ilmassa; simulaation lukemat: $\\theta = 14^\\circ$: $\\alpha = 80{,}59^\\circ$, $\\theta = 15^\\circ$: $\\alpha = 79{,}93^\\circ$, rajakulma $\\alpha_\\text{r} = 80{,}57^\\circ$\n\n**Kysytty:** suurin kokonainen kulma $\\theta$ asteina, jolla valo pysyy ytimessä\n\n**Periaate:** Valo kokonaisheijastuu ytimen seinästä, kun seinän tulokulma on suurempi kuin rajakulma. Jyrkempi laserin kulma $\\theta$ antaa ytimessä suuremman kulman $\\theta_1$ akseliin nähden ja siksi pienemmän seinän tulokulman $\\alpha = 90^\\circ - \\theta_1$. Raja on siis siinä, missä $\\alpha$ painuu rajakulman alle.\n\n**Kaava:** $\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$ ja $\\sin\\theta = n_1 \\sin\\theta_1$, missä $\\theta_1 = 90^\\circ - \\alpha$; rajalla $\\alpha = \\alpha_\\text{r}$, joten $\\theta = \\sin^{-1}\\big(n_1 \\sin(90^\\circ - \\alpha_\\text{r})\\big)$\n\n**Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä, ja kulmat ovat asteina.\n\n**Sijoitus:** $\\alpha_\\text{r} = \\sin^{-1}\\dfrac{1{,}46}{1{,}48} = 80{,}57^\\circ$, joten $\\theta = \\sin^{-1}\\big(1{,}48 \\cdot \\sin 9{,}43^\\circ\\big) = \\sin^{-1} 0{,}2425 = 14{,}03^\\circ$\n\n**Vastaus:** $14^\\circ$. Laskettu raja on $14{,}03^\\circ$, joten kulmalla $14^\\circ$ valo pysyy ytimessä ja kulmalla $15^\\circ$ sitä vuotaa, kuten simulaation lukemat näyttävät.\n\n**Järkevyys:** Ytimen ja kuoren taitekertoimet ovat lähes samat, joten rajakulma on lähellä $90^\\circ$:ta ja ytimessä pysyvät vain lähes akselin suuntaiset säteet. Pieni sallittu kulma $14^\\circ$ sopii tähän: ilmaa vasten raja olisi paljon suurempi."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: ympäröivä aine",
+      "intro": "Testaa ennuste 2. Laserin kulma on $30^\\circ$; muuta vain ympäröivän aineen taitekerrointa $n_2$. Kirjaa ainakin arvot $1{,}00$ (ilma), $1{,}33$ (vesi) ja $1{,}46$ (kuorilasi), halutessasi myös $1{,}40$. Miten rajakulma muuttuu, ja milloin valoa alkaa vuotaa?",
+      "initial": {
+        "theta": 30,
+        "n2": 1.0
+      },
+      "locked": [
+        "theta"
+      ],
+      "vary": "n2",
+      "names": {
+        "theta": "laserin kulma θ",
+        "n2": "ympäröivän aineen taitekerroin"
+      },
+      "units": {
+        "theta": "°",
+        "n2": ""
+      },
+      "measure": [
+        {
+          "key": "alphar",
+          "label": "α_r (°)"
+        },
+        {
+          "key": "alpha",
+          "label": "α (°)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: milloin valo pysyy kuidussa",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: millä ehdolla valo pysyy ytimessä? Miten laserin kulma vaikuttaa seinän tulokulmaan, ja miten ympäröivän aineen taitekerroin vaikuttaa rajakulmaan?",
+      "model": "Valo pysyy ytimessä, kun säteen tulokulma ytimen seinään on suurempi kuin rajakulma, $\\alpha > \\alpha_\\text{r}$. Kokeessa 1 laserin kulman kasvaessa seinän tulokulma pieneni: $14^\\circ$:n kulmalla $\\alpha = 80{,}59^\\circ$ oli vielä suurempi kuin rajakulma $80{,}57^\\circ$, mutta $15^\\circ$:n kulmalla $\\alpha = 79{,}93^\\circ$, ja valoa vuoti. Kokeessa 2 rajakulma kasvoi ympäröivän aineen taitekertoimen kasvaessa: ilmaa vasten $42{,}51^\\circ$, vettä vasten $63{,}98^\\circ$ ja kuorilasia vasten $80{,}57^\\circ$. Kun tulokulma oli $70{,}25^\\circ$, valo pysyi ytimessä ilmaa ja vettä vasten mutta vuoti kuorilasia vasten. Mitä pienempi taitekertoimien ero on, sitä suurempi on rajakulma ja sitä lähempänä akselia valon on kuljettava. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Kerroin ehdon: valo pysyy ytimessä, kun seinän tulokulma on suurempi kuin rajakulma.",
+        "Kerroin, että laserin kulman kasvaessa seinän tulokulma pienenee, ja käytin taulukon arvoja.",
+        "Kerroin, että rajakulma kasvaa, kun ympäröivän aineen taitekerroin lähestyy ytimen taitekerrointa.",
+        "Totesin, että ilmaa vasten valo pysyi ytimessä jyrkemmälläkin kulmalla kuin kuorilasia vasten."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi teoriaan ja kokeiden mallin arvoihin. Palaa sitten alun kysymykseen: mikä pitää valon merikaapelin kuidussa, ja miksi kuidussa on kuori, vaikka paljas lasi heijastaisi valon ilmaa vasten vielä paremmin?",
+      "predictions": [
+        "ennuste-kulma",
+        "ennuste-kuori"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija kirjoittaa: ”Veden ja ilman rajapinnan rajakulma on $48{,}8^\\circ$. Kun valo tulee ilmasta veteen $60^\\circ$:n tulokulmassa, tulokulma on suurempi kuin rajakulma, joten valo kokonaisheijastuu eikä mene veteen.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Rajakulma koskee vain valoa, joka tulee vedestä ilmaan. Ilmasta veteen valo taittuu normaalia kohti.",
+          "correct": true,
+          "feedback": "Oikein. Ilmasta veteen $\\sin\\alpha_2 = \\sin 60^\\circ : 1{,}33$, joten taitekulma on noin $40{,}6^\\circ$, ja taittunut säde on olemassa. Kokonaisheijastuminen vaatii, että valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen."
+        },
+        {
+          "text": "Rajakulma on laskettu väärin: veden ja ilman rajakulma on $41{,}2^\\circ$, joten valo menee veteen.",
+          "feedback": "Rajakulma $48{,}8^\\circ$ on oikein, sillä $\\sin\\alpha_\\text{r} = 1{,}00 : 1{,}33$. Virhe on suunnassa: ilmasta veteen tullessa valo taittuu normaalia kohti, eikä rajakulmaa ole. Taitekulma on noin $40{,}6^\\circ$."
+        },
+        {
+          "text": "Päättely on muuten oikein, mutta kokonaisheijastuminen alkaa vasta $90^\\circ$:n tulokulmassa.",
+          "feedback": "Päättely ei ole oikein. Ilmasta veteen kokonaisheijastumista ei tapahdu millään tulokulmalla, koska valo taittuu normaalia kohti ja taittunut säde on aina olemassa. Vedestä ilmaan kokonaisheijastuminen alkaa jo rajakulmasta $48{,}8^\\circ$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen: merikaapelin viive",
+      "prompt": "Merikaapeli C-Lion1 on $1172\\,\\text{km}$ pitkä (Cinia, 2016). Oletetaan, että kuidun lasin taitekerroin on $1{,}47$ ja että valopulssi kulkee kuidun akselin suuntaisesti. Kuinka kauan pulssilta kestää kulkea Helsingistä Rostockiin? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Vastaa millisekunteina.",
+      "answer": 5.7428,
+      "unit": "ms",
+      "tolerance": 0.02,
+      "hints": [
+        "Valo etenee lasissa hitaammin kuin tyhjiössä. Millä nopeudella?",
+        "Nopeus lasissa on $v = c : n$, ja kulkuaika $t = s : v = n s : c$.",
+        "$t = 1{,}47 \\cdot 1\\,172\\,000\\,\\text{m} : (3{,}00 \\cdot 10^8\\,\\text{m/s})$. Muunna sekunnit millisekunneiksi."
+      ],
+      "mistakes": [
+        {
+          "value": 3.9067,
+          "feedback": "Käytit valon nopeutta tyhjiössä. Lasissa valo etenee nopeudella $v = c : n$, joten matkaan kuluu $n$-kertainen aika."
+        },
+        {
+          "value": 2.6576,
+          "feedback": "Kerroit valon nopeuden taitekertoimella. Lasissa valo etenee hitaammin, $v = c : n$, joten kulkuaika on $t = n s : c$."
+        },
+        {
+          "value": 0.0057428,
+          "feedback": "Sijoitit matkan kilometreinä. Muunna ensin $1172\\,\\text{km} = 1172 \\cdot 1000\\,\\text{m}$."
+        }
+      ],
+      "solution": "**Annettu:** kaapelin pituus $s = 1172\\,\\text{km}$, lasin taitekerroin $n = 1{,}47$, valon nopeus tyhjiössä $c = 3{,}00 \\cdot 10^8\\,\\text{m/s}$\n\n**Kysytty:** valopulssin kulkuaika $t$ millisekunteina\n\n**Periaate:** Lasissa valo etenee tasaisella nopeudella $v = c : n$, joka on pienempi kuin valon nopeus tyhjiössä. Pulssi kulkee akselin suuntaisesti, joten sen matka on kaapelin pituus, ja kulkuaika on matka jaettuna nopeudella.\n\n**Kaava:** $v = \\dfrac{c}{n}$ ja $t = \\dfrac{s}{v}$, josta $t = \\dfrac{n s}{c}$\n\n**Muunnokset:** $s = 1172\\,\\text{km} = 1172 \\cdot 1000\\,\\text{m} = 1{,}172 \\cdot 10^6\\,\\text{m}$. Lopuksi $1\\,\\text{s} = 1000\\,\\text{ms}$.\n\n**Sijoitus:** $t = \\dfrac{1{,}47 \\cdot 1{,}172 \\cdot 10^6\\,\\text{m}}{3{,}00 \\cdot 10^8\\,\\text{m/s}} = 5{,}743 \\cdot 10^{-3}\\,\\text{s} = 5{,}743\\,\\text{ms}$\n\n**Vastaus:** $5{,}74\\,\\text{ms}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}47$ ja valon nopeus.\n\n**Järkevyys:** Valo kulkee lasissa nopeudella noin $2 \\cdot 10^8\\,\\text{m/s}$ eli $200\\,\\text{km}$ millisekunnissa, joten $1172\\,\\text{km}$:n matkaan kuluu noin $6\\,\\text{ms}$. Tyhjiössä aika olisi $3{,}91\\,\\text{ms}$, ja lasissa se on $1{,}47$-kertainen."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä lasketaan rajakulma tai kulkuaika yhdellä kaavalla, tason 2 tehtävissä kaava ratkaistaan toiselle suureelle tai yhdistetään kaksi vaihetta, ja taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite: kokonaisheijastumisen ehto",
+      "prompt": "Missä tilanteessa valo voi kokonaisheijastua kahden aineen rajapinnasta?",
+      "choices": [
+        {
+          "text": "Kun valo tulee suuremman taitekertoimen aineesta ja tulokulma on suurempi kuin rajakulma.",
+          "correct": true,
+          "feedback": "Oikein. Vain silloin taitekulma kasvaisi yli $90^\\circ$:n, joten taittunutta sädettä ei ole, ja kaikki valo heijastuu. Rajakulma saadaan yhtälöstä $\\sin\\alpha_\\text{r} = n_2 : n_1$."
+        },
+        {
+          "text": "Kun valo tulee pienemmän taitekertoimen aineesta ja tulokulma on hyvin suuri.",
+          "feedback": "Pienemmän taitekertoimen aineesta tuleva valo taittuu normaalia kohti, ja taittunut säde on olemassa kaikilla tulokulmilla. Kokonaisheijastus vaatii, että valo tulee suuremman taitekertoimen aineesta rajakulmaa suuremmalla tulokulmalla."
+        },
+        {
+          "text": "Kun valo osuu rajapintaan kohtisuoraan, jolloin tulokulma on nolla.",
+          "feedback": "Kohtisuoraan tuleva valo jatkaa suoraan toiseen aineeseen, ja vain pieni osa heijastuu. Kokonaisheijastus vaatii suuren tulokulman: suuremman kuin rajakulma, kun valo tulee suuremman taitekertoimen aineesta."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske: valaisinkuidun rajakulma",
+      "prompt": "Koristevalaisimen muovikuidun ytimen taitekerroin on $1{,}49$ ja kuoren $1{,}40$. Kuinka suuri on rajakulma ytimen ja kuoren rajapinnassa? Vastaa asteina.",
+      "answer": 69.984,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "Valo tulee ytimestä kuoreen. Kumpi taitekerroin on $n_1$?",
+        "$\\sin\\alpha_\\text{r} = n_2 : n_1$, missä $n_1$ on ytimen taitekerroin.",
+        "$\\sin\\alpha_\\text{r} = 1{,}40 : 1{,}49$. Ota tuloksesta käänteinen sini."
+      ],
+      "mistakes": [
+        {
+          "value": 20.016,
+          "feedback": "Tämä on rajakulman komplementti $90^\\circ - \\alpha_\\text{r}$. Rajakulma mitataan rajapinnan normaalista, ei pinnasta."
+        },
+        {
+          "value": 0.9396,
+          "feedback": "Tämä on rajakulman sini. Laske kulma käänteisellä sinillä: $\\alpha_\\text{r} = \\sin^{-1} 0{,}9396$."
+        }
+      ],
+      "solution": "**Annettu:** ytimen taitekerroin $n_1 = 1{,}49$, kuoren taitekerroin $n_2 = 1{,}40$\n\n**Kysytty:** rajakulma $\\alpha_\\text{r}$ asteina\n\n**Periaate:** Valo tulee ytimestä kuoreen eli suuremman taitekertoimen aineesta pienemmän, joten rajakulma on olemassa. Rajakulmassa taitekulma olisi $90^\\circ$, joten taittumislaista $n_1 \\sin\\alpha_\\text{r} = n_2 \\sin 90^\\circ$ saadaan rajakulman sini.\n\n**Kaava:** $\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$, josta $\\alpha_\\text{r} = \\sin^{-1}\\dfrac{n_2}{n_1}$\n\n**Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä lukuja.\n\n**Sijoitus:** $\\alpha_\\text{r} = \\sin^{-1}\\dfrac{1{,}40}{1{,}49} = \\sin^{-1} 0{,}9396 = 69{,}98^\\circ$\n\n**Vastaus:** $70{,}0^\\circ$, kolme merkitsevää numeroa kuten taitekertoimet.\n\n**Järkevyys:** Taitekertoimien ero $0{,}09$ on suurempi kuin tavallisessa lasikuidussa, joten rajakulma on pienempi kuin lasikuidun noin $80^\\circ$, mutta paljon suurempi kuin lasin ja ilman rajakulma noin $42^\\circ$. Tarkistus: $1{,}49 \\cdot \\sin 69{,}98^\\circ = 1{,}40$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: valokuitu",
+      "prompt": "Selitä, miten valokuitu johtaa valoa, vaikka se on läpinäkyvää lasia. Selitä myös, miksi liian jyrkästi kuidun päähän tuleva valo ei pysy kuidussa.",
+      "model": "Kuidun ytimen taitekerroin on hieman suurempi kuin kuoren. Ytimessä etenevä valo osuu ytimen ja kuoren rajapintaan suurella tulokulmalla. Kun tulokulma on suurempi kuin rajakulma $\\sin\\alpha_\\text{r} = n_2 : n_1$, taittunutta sädettä ei ole, ja kaikki valo heijastuu takaisin ytimeen. Näin valo etenee kuitua pitkin kokonaisheijastuen kerta toisensa jälkeen. Jos valo tulee kuidun päähän jyrkässä kulmassa, se kulkee ytimessä jyrkästi ja osuu seinään pienellä tulokulmalla. Kun tulokulma on rajakulmaa pienempi, osa valosta taittuu jokaisessa osumassa kuoreen ja katoaa ytimestä.",
+      "criteria": [
+        "Kerron, että ytimen taitekerroin on suurempi kuin kuoren.",
+        "Selitän, että valo kokonaisheijastuu, kun tulokulma ytimen ja kuoren rajapinnassa on suurempi kuin rajakulma.",
+        "Selitän, että jyrkästi tuleva valo osuu seinään rajakulmaa pienemmällä tulokulmalla, jolloin osa siitä taittuu ulos.",
+        "Mittaan tulokulmat rajapinnan normaalista."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

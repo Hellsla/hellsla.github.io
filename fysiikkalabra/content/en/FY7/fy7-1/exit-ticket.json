@@ -1,0 +1,14 @@
+[
+  {
+    "q": "How is the direction of a magnetic field at a point found with a compass?",
+    "a": "The compass is placed at the point, and the direction of the field is the direction in which the north end of the needle points. The needle settles along the field line."
+  },
+  {
+    "q": "The field of a fridge magnet is about $5\\,\\text{mT}$ at the surface of the magnet. How many microtesla is it, and how many times greater is it than the Earth's field in southern Finland ($52\\,\\mu\\text{T}$)?",
+    "a": "$5\\,\\text{mT} = 5 \\cdot 1000\\,\\mu\\text{T} = 5000\\,\\mu\\text{T}$. The ratio is $5000\\,\\mu\\text{T} : 52\\,\\mu\\text{T} \\approx 96$, so at the surface of the magnet the field is about a hundred times the Earth's field."
+  },
+  {
+    "q": "Why can two field lines never cross each other?",
+    "a": "The direction of a field line tells the direction of the field. At a crossing point the field would have two different directions, but the field has only one direction at each point."
+  }
+]

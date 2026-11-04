@@ -1,0 +1,23 @@
+{
+  "id": "fy7-2",
+  "course": "FY7",
+  "title": "Charged particle in electric and magnetic fields",
+  "goals": [
+    "LOPS FY7: motion of a charged particle in uniform electric and magnetic fields",
+    "Clarification: magnetic force F = qvB, circular path, velocity selector and mass spectrometer; the electric force and the work W = qU are briefly revised from FY6",
+    "Thematic study: the particle accelerator"
+  ],
+  "prerequisites": [
+    "fy7-1"
+  ],
+  "glossary": [
+    "magneettinen voima",
+    "ympyrärata",
+    "nopeusvalitsin",
+    "massaspektrometri",
+    "hiukkaskiihdytin"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

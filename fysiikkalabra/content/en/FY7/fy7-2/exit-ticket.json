@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Between the plates of a velocity selector the electric field strength is $3.0 \\cdot 10^{4}\\,\\text{V/m}$ and the magnetic flux density $0.10\\,\\text{T}$. At what speed do ions pass straight through the selector?",
+    "a": "$v = \\tfrac{E}{B} = \\tfrac{3.0 \\cdot 10^{4}\\,\\text{V/m}}{0.10\\,\\text{T}} = 3.0 \\cdot 10^{5}\\,\\text{m/s}$, whatever the mass or charge of the ion."
+  },
+  {
+    "q": "A proton and an electron fly at the same speed perpendicular to the same magnetic field. How do their paths differ?",
+    "a": "The paths curve in opposite directions, because the charges have opposite signs. The magnitudes of the charges are equal, so the radius $r = mv : (qB)$ is proportional to the mass: the path of the electron is about $1840$ times smaller than that of the proton."
+  }
+]

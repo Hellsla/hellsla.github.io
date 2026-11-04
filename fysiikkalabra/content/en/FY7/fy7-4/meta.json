@@ -1,0 +1,20 @@
+{
+  "id": "fy7-4",
+  "course": "FY7",
+  "title": "Force on a current-carrying wire: the electric motor and the loudspeaker",
+  "goals": [
+    "LOPS FY7: magnetic field of a current-carrying wire and the force between two current-carrying wires",
+    "Clarification: the force F = IlB sin α on a current-carrying wire in a magnetic field, the force between two current-carrying wires; applications: the direct-current motor and the loudspeaker"
+  ],
+  "prerequisites": [
+    "fy7-3"
+  ],
+  "glossary": [
+    "sähkömoottori",
+    "kaiutin",
+    "virtasilmukka"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

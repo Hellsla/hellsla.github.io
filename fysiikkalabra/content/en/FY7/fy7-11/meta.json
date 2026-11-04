@@ -1,0 +1,23 @@
+{
+  "id": "fy7-11",
+  "course": "FY7",
+  "title": "Dispersion: the prism and the rainbow",
+  "goals": [
+    "LOPS FY7: reflection, refraction and total internal reflection of light",
+    "Clarification: the refractive index depends on wavelength, the prism and the formation of the rainbow"
+  ],
+  "prerequisites": [
+    "fy7-10"
+  ],
+  "glossary": [
+    "dispersio",
+    "taitekerroin",
+    "poikkeamakulma",
+    "sateenkaari",
+    "vastapiste",
+    "spektri"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

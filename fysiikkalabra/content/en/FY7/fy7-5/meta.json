@@ -1,0 +1,23 @@
+{
+  "id": "fy7-5",
+  "course": "FY7",
+  "title": "Electromagnetic induction",
+  "goals": [
+    "LOPS FY7: electromagnetic induction",
+    "LOPS FY7: understand the central importance of the induction phenomenon in electromagnetism",
+    "Clarification: self-induction is not part of the central contents",
+    "Clarification: magnetic flux, Faraday's law and the voltage of a moving conductor e = vBl"
+  ],
+  "prerequisites": [
+    "fy7-3"
+  ],
+  "glossary": [
+    "induktio",
+    "magneettivuo",
+    "induktiojännite",
+    "induktiolaki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

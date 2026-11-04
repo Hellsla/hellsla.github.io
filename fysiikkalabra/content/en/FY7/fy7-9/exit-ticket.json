@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Arrange in order of wavelength from the longest to the shortest: visible light, radio waves, X-rays and infrared radiation.",
+    "a": "Radio waves, infrared radiation, visible light, X-rays. The frequency increases in the same order, because $c = f\\lambda$ is the same for all."
+  },
+  {
+    "q": "The absolute temperature of a black body triples. How does the wavelength of the peak of its spectrum change?",
+    "a": "It decreases to a third, because $\\lambda_\\text{max} T = b$ is constant: the wavelength of the peak is inversely proportional to the absolute temperature."
+  }
+]

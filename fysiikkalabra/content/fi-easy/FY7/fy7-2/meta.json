@@ -1,0 +1,41 @@
+{
+  "id": "fy7-2",
+  "course": "FY7",
+  "title": "Varatun hiukkasen liike sähkö- ja magneettikentässä",
+  "goals": [
+    "LOPS FY7: varatun hiukkasen liike homogeenisessa sähkö- ja magneettikentässä",
+    "Täsmennys: magneettinen voima $F = qvB$, ympyrärata, nopeusvalitsin ja massaspektrometri. Sähköinen voima ja työ $W = qU$ kerrataan lyhyesti kurssilta FY6.",
+    "Temaattinen tarkastelu: hiukkaskiihdytin"
+  ],
+  "prerequisites": [
+    "fy7-1"
+  ],
+  "glossary": [
+    "magneettinen voima",
+    "ympyrärata",
+    "nopeusvalitsin",
+    "massaspektrometri",
+    "hiukkaskiihdytin"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "magneettinen voima",
+      "explain": "Voima, jonka magneettikenttä kohdistaa liikkuvaan varattuun hiukkaseen. Se on aina kohtisuorassa nopeutta vastaan."
+    },
+    {
+      "term": "ympyrärata",
+      "explain": "Rata, jolla hiukkanen kiertää, kun magneettinen voima osoittaa koko ajan kohti radan keskipistettä."
+    },
+    {
+      "term": "nopeusvalitsin",
+      "explain": "Laite, jonka läpi pääsevät suoraan vain ne hiukkaset, joiden nopeus on tietty."
+    },
+    {
+      "term": "massaspektrometri",
+      "explain": "Laite, joka erottelee hiukkaset massan mukaan. Kun vauhti ja varaus ovat samat, raskaamman hiukkasen rata kaartuu loivemmin."
+    }
+  ]
+}

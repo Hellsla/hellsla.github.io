@@ -1,0 +1,22 @@
+{
+  "id": "fy7-10",
+  "course": "FY7",
+  "title": "Reflection and refraction of light",
+  "goals": [
+    "LOPS FY7: reflection and refraction of light",
+    "LOPS FY7: understanding light as an electromagnetic phenomenon",
+    "Experimental work: investigating the reflection and refraction of light at a boundary"
+  ],
+  "prerequisites": [
+    "fy7-9"
+  ],
+  "glossary": [
+    "heijastuslaki",
+    "taittuminen",
+    "taitekerroin",
+    "Snellin laki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

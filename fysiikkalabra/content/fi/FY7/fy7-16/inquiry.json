@@ -1,0 +1,489 @@
+{
+  "version": 1,
+  "contribution": "Soveltava luku: langaton lataus (muuntaja ilman rautasydäntä, kytkentä heikkenee jyrkästi etäisyyden kasvaessa: simulaatio laskee vuon kahden käämin välillä), induktioliesi (pyörrevirrat, miksi ferromagneettinen pohja) ja kuituyhteys (kokonaisheijastuminen, viive ja vaimennus desibeleinä, Corningin data). Todellinen latausmittaus (Ravenscraft 2020) ja siirtotehtävä, joka yhdistää induktiolain ja generaattorin jännitteen.",
+  "learn": [
+    "selittämään, miten langaton laturi, induktioliesi ja kuituyhteys hyödyntävät induktiota ja kokonaisheijastumista.",
+    "arvioimaan, miksi langaton lataus heikkenee etäisyyden kasvaessa ja miksi induktioliesi vaatii teräskattilan.",
+    "laskemaan kuidun vaimennuksen desibeleinä ja vastaanottimeen saapuvan tehon."
+  ],
+  "prior": [
+    "Muuttuva magneettivuo indusoi käämiin jännitteen $e = -N \\cdot \\Delta\\Phi : \\Delta t$ (luku *Sähkömagneettinen induktio*)",
+    "Muuttuva magneettikenttä synnyttää johteeseen pyörrevirtoja, jotka muuttavat sähköenergiaa sisäenergiaksi (luku *Lenzin laki ja pyörrevirrat*)",
+    "Valokuidussa valo etenee ytimessä kokonaisheijastuen nopeudella $v = c : n$ (luku *Kokonaisheijastuminen ja valokuitu*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Keittiön työtasolla puhelin latautuu pyöreän alustan päällä ilman johtoa, induktiolieden teräskattilassa vesi kiehuu, vaikka mikään ei hehku, ja seinän reitittimeen tuleva nettiyhteys kulkee valona ohuessa lasikuidussa. Jos puhelinta nostetaan alustalta muutama senttimetri, lataus katkeaa. Jos teräskattilan tilalle nostetaan alumiinikattila, liesi ei lämmitä sitä. Kuidussa valo taas kulkee kymmeniä kilometrejä ennen kuin sitä on vahvistettava.",
+      "question": "Mikä fysiikan ilmiö on kunkin laitteen takana, ja mikä rajoittaa sen toimintaa?"
+    },
+    {
+      "id": "kertaus-muuntaja",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: muuntaja",
+      "prompt": "Muuntajan ensiökäämi kytketään jännitelähteeseen. Milloin toisiokäämiin syntyy jännite?",
+      "choices": [
+        {
+          "text": "Kun ensiökäämin virta muuttuu, jolloin rautasydämen magneettivuo muuttuu.",
+          "correct": true,
+          "feedback": "Oikein. Toisiokäämiin indusoituu jännite vain, kun sen läpi kulkeva vuo muuttuu (luku *Muuntaja ja sähköenergian siirto*). Vaihtovirta muuttaa vuota jatkuvasti. Tänään sama ilmiö toimii ilman rautasydäntä."
+        },
+        {
+          "text": "Aina kun ensiökäämissä kulkee virta, myös tasavirta.",
+          "feedback": "Tasavirran synnyttämä vuo on vakio, eikä vakiosuuruinen vuo indusoi jännitettä. Jännitettä syntyy vain, kun vuo muuttuu, esimerkiksi vaihtovirralla tai virran kytkentähetkellä."
+        },
+        {
+          "text": "Kun virta pääsee kulkemaan ensiökäämistä johtimia pitkin toisiokäämiin.",
+          "feedback": "Käämit eivät ole johtimilla yhteydessä toisiinsa. Energia siirtyy muuttuvan magneettivuon välityksellä: vuon muutos indusoi toisiokäämiin jännitteen."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-etaisyys",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: puhelin irti laturista",
+      "prompt": "Langattoman laturin lähetinkäämissä kulkee vaihtovirta, ja puhelimen vastaanotinkäämi on aluksi $3\\,\\text{mm}$:n päässä siitä. Puhelin nostetaan $20\\,\\text{mm}$:n päähän. Lähetinkäämin virta pysyy samana. Kuinka suuri osa vastaanotinkäämin jännitteestä jää jäljelle?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 4
+      },
+      "choices": [
+        {
+          "text": "Lähes kaikki, koska magneettikenttä ulottuu kauas eikä ilma heikennä sitä.",
+          "feedback": "Mallin arvot kumoavat tämän: jännite pieneni arvosta $4{,}40\\,\\text{V}$ arvoon $0{,}869\\,\\text{V}$ eli noin viidesosaan. Ilma ei vaimenna kenttää, mutta kenttäviivat kiertävät lähetinkäämin johtimien ympäri ja kääntyvät takaisin jo lähellä käämiä, joten vastaanottimen läpi kulkee yhä vähemmän vuota."
+        },
+        {
+          "text": "Noin puolet, koska etäisyys kasvaa ja kenttä heikkenee vähitellen.",
+          "feedback": "Mallin arvot kumoavat tämän: puolet jännitteestä oli jäljellä jo noin $9\\,\\text{mm}$:n kohdalla, ja $20\\,\\text{mm}$:ssä jäljellä oli vain $19{,}7\\,\\%$. Kenttä heikkenee jyrkästi, kun etäisyys tulee käämin säteen suuruiseksi."
+        },
+        {
+          "text": "Noin viidesosa, koska yhä harvempi kenttäviiva yltää vastaanottimeen.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: jännite pieneni arvosta $4{,}40\\,\\text{V}$ arvoon $0{,}869\\,\\text{V}$, eli jäljelle jäi $19{,}7\\,\\%$. Vuo vastaanottimen läpi pienenee jyrkästi, koska lähettimen kenttäviivat kääntyvät takaisin jo lähellä käämiä."
+        },
+        {
+          "text": "Ei mitään, koska induktio toimii vain, kun käämit koskettavat toisiaan.",
+          "feedback": "Mallin arvot kumoavat tämän: $20\\,\\text{mm}$:n päässäkin jännite oli $0{,}869\\,\\text{V}$. Induktio ei vaadi kosketusta, vaan muuttuvan vuon. Vuo vain pienenee etäisyyden kasvaessa."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kela",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: käämin koko",
+      "prompt": "Vastaanotinkäämin säde on $20\\,\\text{mm}$, ja se on $20\\,\\text{mm}$:n päässä lähetinkäämistä. Lähetinkäämin säde voi olla $10\\,\\text{mm}$, $20\\,\\text{mm}$ tai $40\\,\\text{mm}$, ja kierrokset ja virta ovat samat. Millä lähetinkäämillä vastaanotinkäämin jännite on suurin?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Pienellä käämillä, koska se keskittää kentän pienelle alueelle.",
+          "feedback": "Mallin arvot kumoavat tämän: säteen $10\\,\\text{mm}$ käämillä jännite oli vain $0{,}285\\,\\text{V}$. Pienen käämin kenttäviivat kääntyvät takaisin hyvin lähellä käämiä, joten $20\\,\\text{mm}$:n päähän ulottuu vähän vuota."
+        },
+        {
+          "text": "Vastaanottimen kokoisella käämillä, koska samankokoiset käämit sopivat parhaiten yhteen.",
+          "feedback": "Lähellä tämä pitää paikkansa: $3\\,\\text{mm}$:n päässä samankokoinen käämi antaa suurimman jännitteen. Mallin arvot $20\\,\\text{mm}$:n etäisyydellä kuitenkin kumoavat sen: säteellä $20\\,\\text{mm}$ jännite oli $0{,}869\\,\\text{V}$ ja säteellä $40\\,\\text{mm}$ $1{,}23\\,\\text{V}$."
+        },
+        {
+          "text": "Suurella käämillä, koska sen kenttä ulottuu kauemmas.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: säteen $40\\,\\text{mm}$ käämillä jännite oli $1{,}23\\,\\text{V}$, kun $20\\,\\text{mm}$:n käämillä se oli $0{,}869\\,\\text{V}$ ja $10\\,\\text{mm}$:n käämillä $0{,}285\\,\\text{V}$. Suuren käämin kenttäviivat kaartuvat laajemmin ja ulottuvat kauemmas. Kasvu ei kuitenkaan jatku loputtomiin: säteellä $35\\,\\text{mm}$ jännite on $1{,}25\\,\\text{V}$ ja säteellä $40\\,\\text{mm}$ jo hieman pienempi, joten kullakin etäisyydellä on oma paras käämin koko."
+        },
+        {
+          "text": "Kaikilla yhtä suuri, koska kierrokset ja virta ovat samat.",
+          "feedback": "Mallin arvot kumoavat tämän: jännite vaihteli arvosta $0{,}285\\,\\text{V}$ arvoon $1{,}23\\,\\text{V}$. Vuo vastaanottimen läpi riippuu siitä, miten kenttä jakautuu tilaan, ja se riippuu käämin koosta."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kattila",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: miksi kattila kuumenee",
+      "layout": "models",
+      "prompt": "Induktiolieden lasilevyn päällä teräskattilan vesi kiehuu, mutta lasilevy on kattilan vieressä vain haalea. Mikä selitys on fysikaalisesti oikea?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet lukenut kohdan Induktioliesi."
+      },
+      "choices": [
+        {
+          "text": "Lasin alla oleva kela kuumenee, ja kuuma lasi johtaa lämmön ylös kattilaan.",
+          "feedback": "Jos lämpö tulisi kelasta lasin läpi, lasi olisi kuumin kohta ja lämpenisi myös kattilan vierestä. Lämpö syntyy kuitenkin kattilan pohjassa: kelan vaihtuva kenttä indusoi pohjaan pyörrevirtoja, joiden sähköenergia muuttuu pohjan sisäenergiaksi."
+        },
+        {
+          "text": "Kelan vaihtuva kenttä indusoi kattilan pohjaan pyörrevirtoja, jotka lämmittävät pohjaa.",
+          "correct": true,
+          "feedback": "Oikein. Pohjan läpi kulkeva vuo muuttuu jatkuvasti, ja pohjaan syntyy pyörrevirtoja. Pohjan resistanssissa niiden sähköenergia muuttuu sisäenergiaksi. Lasi ei johda sähköä, joten siihen ei synny virtoja, ja se lämpenee vain kuumasta kattilasta."
+        },
+        {
+          "text": "Liesi lähettää mikroaaltoja, jotka kulkevat pohjan läpi ja lämmittävät veden.",
+          "feedback": "Mikroaaltouuni lämmittää vettä sähkömagneettisella säteilyllä, mutta induktioliesi toimii toisin. Tyhjä teräskattila kuumenee liedellä nopeasti, joten lämpö syntyy kattilan pohjassa: kelan vaihtuva kenttä indusoi siihen pyörrevirtoja."
+        },
+        {
+          "text": "Magneettikenttä vetää teräspohjaa edestakaisin, ja kitka lasia vasten kuumentaa sen.",
+          "feedback": "Kattila ei liiku lasilla, joten kitkaa ei synny. Teräspohja kuumenee, koska vaihtuva vuo indusoi siihen pyörrevirtoja ja niiden sähköenergia muuttuu pohjan resistanssissa sisäenergiaksi."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kuitu",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 4: valo 100 kilometrin kuidussa",
+      "prompt": "Lähetin syöttää valoa $100\\,\\text{km}$:n pituiseen tietoliikennekuituun aallonpituudella $1550\\,\\text{nm}$. Valo pysyy ytimessä kokonaisheijastumalla. Kuinka suuri osa valon tehosta saapuu kuidun toiseen päähän?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet lukenut kaavan Vaimennus desibeleinä."
+      },
+      "choices": [
+        {
+          "text": "Lähes kaikki, koska kokonaisheijastuminen ei hukkaa valoa.",
+          "feedback": "Kokonaisheijastuminen ei hukkaa valoa, mutta lasi itse vaimentaa sitä: osa valosta absorboituu ja osa siroaa. Vaimennus $0{,}18\\,\\text{dB/km}$ antaa $100\\,\\text{km}$:n matkalla $18\\,\\text{dB}$, joten perille saapuu noin $1{,}6\\,\\%$ tehosta."
+        },
+        {
+          "text": "Noin puolet, koska lasi on läpinäkyvää ja vaimentaa valoa vain vähän.",
+          "feedback": "Puolet tehosta häviää jo noin $17\\,\\text{km}$:n matkalla. Vaimennus on pieni kilometriä kohti, mutta se kertautuu: $100\\,\\text{km}$:n matkalla vaimennus on $18\\,\\text{dB}$, ja perille saapuu noin $1{,}6\\,\\%$ tehosta."
+        },
+        {
+          "text": "Noin $1$–$2\\,\\%$, koska lasi vaimentaa valoa jokaisella kilometrillä samassa suhteessa.",
+          "correct": true,
+          "feedback": "Oikein. Vaimennus on enintään $0{,}18\\,\\text{dB/km}$, joten $100\\,\\text{km}$:n matkalla se on $18\\,\\text{dB}$, ja tehosta on jäljellä $10^{-1{,}8} \\approx 1{,}6\\,\\%$. Vastaanotin tunnistaa pulssit silti, ja pidemmillä yhteyksillä valo vahvistetaan välillä."
+        },
+        {
+          "text": "Ei käytännössä mitään, koska valo vaimenee kokonaan jo muutamassa kilometrissä.",
+          "feedback": "Ikkunalasissa valo vaimenisi nopeasti, mutta kuidun puhdas kvartsilasi on erittäin läpinäkyvää. Teho puolittuu vasta noin $17\\,\\text{km}$:n matkalla, ja $100\\,\\text{km}$:n jälkeen tehosta on jäljellä noin $1{,}6\\,\\%$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Langattoman laturin lähetinkäämi ja puhelimen vastaanotinkäämi sivulta leikattuina. Muuta käämien etäisyyttä ja lähetinkäämin kokoa ja seuraa vastaanotinkäämin jännitettä.",
+      "howto": "Säädä käämien välistä etäisyyttä $z$ ja lähetinkäämin sädettä $R_1$. Vastaanotinkäämin säde on aina $20\\,\\text{mm}$. Vihreät viivat ovat lähetinkäämin magneettikentän kenttäviivoja hetkellä, jolloin virta on suurimmillaan. Viivat on piirretty niin, että jokaisen kahden viivan väliin jää yhtä suuri vuo, joten vastaanottimen läpi kulkevien viivojen määrä kertoo vuon suuruuden. Ne viivat, jotka kulkevat vastaanottimen läpi, on piirretty tummemmin. Oikealla kuvaaja näyttää jännitteen huippuarvon $e_0$ etäisyyden funktiona valitulla lähetinkäämillä, ja piste on nykyinen etäisyys. Lukemissa näet vuon huippuarvon $\\Phi_0$ vastaanotinkäämin yhden kierroksen läpi, jännitteen huippuarvon $e_0$ ja sen, kuinka monta prosenttia $e_0$ on saman käämin arvosta $3\\,\\text{mm}$:n etäisyydellä.",
+      "model": "Kummassakin käämissä on $10$ kierrosta, ja kierrokset ajatellaan ohuiksi ympyröiksi käämin säteellä. Käämit ovat samalla akselilla, eli vastaanotin on suoraan lähettimen yläpuolella. Lähetinkäämissä kulkee sinimuotoinen vaihtovirta, jonka huippuarvo on $1{,}0\\,\\text{A}$ ja taajuus $140\\,\\text{kHz}$, ja virta pysyy samana kaikilla etäisyyksillä. Vastaanotinkäämiä ei ole kytketty kuormaan, joten siinä ei kulje virtaa, eikä se muuta lähettimen kenttää. Käämien välissä on ilmaa: ferriittilevyjä ja puhelimen metalliosia ei ole mallissa. Kuva on mittakaavassa. Lukemat ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Malli laskee lähetinkäämin magneettikentän ja laskee yhteen sen vuon vastaanotinkäämin yhden kierroksen ympäröimän pinnan läpi. Tulos on vuon huippuarvo $\\Phi_0$, joka riippuu käämien säteistä ja etäisyydestä $z$. Koska virta vaihtelee sinimuotoisesti, myös vuo vaihtelee sinimuotoisesti samalla taajuudella. Vastaanotinkäämin jännitteen huippuarvo on siksi sama kuin generaattorissa:\n\n$$e_0 = N_2 \\cdot 2\\pi f \\cdot \\Phi_0$$\n\nmissä $N_2 = 10$ on vastaanotinkäämin kierrosten lukumäärä ja $f = 140\\,\\text{kHz}$. Prosenttiluku on $e_0$ jaettuna saman lähetinkäämin jännitteellä etäisyydellä $3\\,\\text{mm}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: etäisyys",
+      "intro": "Testaa ennuste 1. Lähetinkäämin säde on $20\\,\\text{mm}$; muuta vain etäisyyttä $z$. Kirjaa ainakin etäisyydet $3\\,\\text{mm}$, $10\\,\\text{mm}$, $20\\,\\text{mm}$ ja $30\\,\\text{mm}$. Seuraa myös, montako kenttäviivaa kulkee vastaanottimen läpi.",
+      "initial": {
+        "z": 3,
+        "R1": 20
+      },
+      "locked": [
+        "R1"
+      ],
+      "vary": "z",
+      "names": {
+        "z": "etäisyys z",
+        "R1": "lähetinkäämin säde R_1"
+      },
+      "units": {
+        "z": "mm",
+        "R1": "mm"
+      },
+      "measure": [
+        {
+          "key": "phi0",
+          "label": "$\\Phi_0\\ (\\mu\\text{Wb})$"
+        },
+        {
+          "key": "e0",
+          "label": "e_0 (V)"
+        },
+        {
+          "key": "osuus",
+          "label": "osuus (%)"
+        }
+      ],
+      "min": 4,
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka monta prosenttia $3\\,\\text{mm}$:n etäisyyden jännitteestä on jäljellä, kun etäisyys on $20\\,\\text{mm}$? Laske taulukkosi jännitteistä.",
+        "answer": 19.7386,
+        "unit": "%",
+        "tolerance": 0.03,
+        "hints": [
+          "Etsi taulukosta jännitteen huippuarvot etäisyyksillä $3\\,\\text{mm}$ ja $20\\,\\text{mm}$.",
+          "Osuus on $e_0(20\\,\\text{mm}) : e_0(3\\,\\text{mm})$ kerrottuna sadalla.",
+          "$0{,}869\\,\\text{V} : 4{,}40\\,\\text{V}$ ja tulos prosentteina."
+        ],
+        "mistakes": [
+          {
+            "value": 80.2614,
+            "feedback": "Tämä on se osuus, joka hävisi. Kysytty on jäljelle jäänyt osuus: $e_0(20\\,\\text{mm}) : e_0(3\\,\\text{mm})$."
+          },
+          {
+            "value": 506.6,
+            "feedback": "Jaoit väärin päin. Jäljellä oleva osuus on pienempi kuin $100\\,\\%$: jaa $20\\,\\text{mm}$:n jännite $3\\,\\text{mm}$:n jännitteellä."
+          }
+        ],
+        "solution": "**Annettu:** simulaation lukemat lähetinkäämin säteellä $R_1 = 20\\,\\text{mm}$: $e_0 = 4{,}404\\,\\text{V}$ etäisyydellä $3\\,\\text{mm}$ ja $e_0 = 0{,}8692\\,\\text{V}$ etäisyydellä $20\\,\\text{mm}$\n\n**Kysytty:** jäljellä oleva osuus jännitteestä prosentteina\n\n**Periaate:** Lähetinkäämin virta pysyy samana, joten jännitteiden suhde kertoo, kuinka paljon vuo vastaanottimen läpi on pienentynyt. Jännite on verrannollinen vuohon, koska $e_0 = N_2 \\cdot 2\\pi f \\cdot \\Phi_0$ ja $N_2$ ja $f$ pysyvät samoina.\n\n**Kaava:** osuus $= \\dfrac{e_0(20\\,\\text{mm})}{e_0(3\\,\\text{mm})} \\cdot 100\\,\\%$\n\n**Muunnokset:** Ei tarvita: kumpikin jännite on voltteina, ja yksikkö supistuu.\n\n**Sijoitus:** osuus $= \\dfrac{0{,}8692\\,\\text{V}}{4{,}404\\,\\text{V}} \\cdot 100\\,\\% = 19{,}74\\,\\%$\n\n**Vastaus:** noin $19{,}7\\,\\%$ eli noin viidesosa, kolmella merkitsevällä numerolla kuten lukemat.\n\n**Järkevyys:** Lukema osuus näyttää etäisyydellä $20\\,\\text{mm}$ saman arvon $19{,}7\\,\\%$. Kuvassa vastaanottimen läpi kulkee $3\\,\\text{mm}$:n päässä kuusi kenttäviivaa ja $20\\,\\text{mm}$:n päässä vain yksi, mikä sopii noin viidesosaan."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: lähetinkäämin koko",
+      "intro": "Testaa ennuste 2. Etäisyys on $20\\,\\text{mm}$; muuta vain lähetinkäämin sädettä $R_1$. Kirjaa ainakin säteet $10\\,\\text{mm}$, $20\\,\\text{mm}$, $30\\,\\text{mm}$, $35\\,\\text{mm}$ ja $40\\,\\text{mm}$. Katso, miltä kenttäviivat näyttävät suurella ja pienellä käämillä.",
+      "initial": {
+        "z": 20,
+        "R1": 10
+      },
+      "locked": [
+        "z"
+      ],
+      "vary": "R1",
+      "names": {
+        "z": "etäisyys z",
+        "R1": "lähetinkäämin säde R_1"
+      },
+      "units": {
+        "z": "mm",
+        "R1": "mm"
+      },
+      "measure": [
+        {
+          "key": "phi0",
+          "label": "$\\Phi_0\\ (\\mu\\text{Wb})$"
+        },
+        {
+          "key": "e0",
+          "label": "e_0 (V)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä rajoittaa langatonta latausta",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten vastaanotinkäämin jännite muuttuu, kun etäisyys kasvaa, ja miten lähetinkäämin koko vaikuttaa siihen $20\\,\\text{mm}$:n päässä? Selitä kenttäviivojen avulla, miksi.",
+      "model": "Kun lähetinkäämin säde oli $20\\,\\text{mm}$, jännite pieneni etäisyyden kasvaessa jyrkästi: $3\\,\\text{mm}$:n päässä se oli $4{,}40\\,\\text{V}$, $10\\,\\text{mm}$:n päässä $1{,}96\\,\\text{V}$, $20\\,\\text{mm}$:n päässä $0{,}869\\,\\text{V}$ ja $30\\,\\text{mm}$:n päässä $0{,}445\\,\\text{V}$. Lähettimen kenttäviivat kiertävät käämin johtimien ympäri ja kääntyvät takaisin jo lähellä käämiä, joten kauempana yhä harvempi viiva kulkee vastaanottimen läpi ja vuo pienenee. $20\\,\\text{mm}$:n päässä jännite kasvoi lähetinkäämin säteen kasvaessa noin $35\\,\\text{mm}$:iin asti ja pieneni sitten hieman: säteellä $10\\,\\text{mm}$ $0{,}285\\,\\text{V}$, $20\\,\\text{mm}$ $0{,}869\\,\\text{V}$, $30\\,\\text{mm}$ $1{,}21\\,\\text{V}$, $35\\,\\text{mm}$ $1{,}25\\,\\text{V}$ ja $40\\,\\text{mm}$ $1{,}23\\,\\text{V}$. Suuren käämin kenttäviivat ulottuvat kauemmas, mutta hyvin suuren käämin kenttä on keskeltä heikompi, joten kullakin etäisyydellä on paras käämin koko. Langaton lataus toimii siis hyvin vain, kun käämien väli on pieni verrattuna käämien kokoon. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Kerroin, että jännite pieneni etäisyyden kasvaessa jyrkästi, ja käytin taulukon arvoja.",
+        "Selitin, että yhä harvempi kenttäviiva ja siis yhä pienempi vuo kulkee vastaanottimen läpi.",
+        "Kerroin, että 20 millimetrin päässä jännite kasvoi lähetinkäämin säteen kasvaessa noin 35 millimetriin asti ja pieneni sitten hieman.",
+        "Totesin, että käämien välin on oltava pieni verrattuna käämien kokoon."
+      ]
+    },
+    {
+      "id": "mittaus-lataus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Mittaus: johdolla vai alustalla",
+      "text": "Toimittaja latasi saman puhelimen useita kertoja tyhjästä täyteen ja mittasi energiamittarilla, kuinka paljon energiaa laturi otti pistorasiasta.\n\n| Lataustapa | Energia pistorasiasta |\n| --- | --- |\n| johtolaturi | $14{,}26\\,\\text{Wh}$ |\n| latausalusta, puhelin kohdallaan (keskiarvo) | $21{,}01\\,\\text{Wh}$ |\n| latausteline (keskiarvo) | $19{,}8\\,\\text{Wh}$ |\n| latausalusta, käämit vähän sivussa toisistaan | $25{,}62\\,\\text{Wh}$ |\n\nAkkuun varastoituu joka latauksessa yhtä paljon energiaa, joten erotus kertoo, kuinka paljon enemmän energiaa muuttui laturin ja puhelimen sisäenergiaksi.",
+      "source": "measured",
+      "source_note": "Eric Ravenscraft, OneZero (Medium), 2020: Google Pixel 4 ladattiin tyhjästä täyteen johtolaturilla, Yootech-latausalustalla ja Googlen Pixel Stand -telineellä; laturin ottama energia mitattiin pistorasiaan kytketyllä energiamittarilla.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Kuinka monta prosenttia enemmän energiaa latausalusta otti pistorasiasta kuin johtolaturi, kun puhelin oli kohdallaan?",
+        "answer": 47.3352,
+        "unit": "%",
+        "tolerance": 0.02,
+        "hints": [
+          "Vertaa rivien johtolaturi ja latausalusta, puhelin kohdallaan, energioita.",
+          "Lisäys prosentteina on erotus jaettuna johtolaturin energialla ja kerrottuna sadalla.",
+          "$(21{,}01\\,\\text{Wh} - 14{,}26\\,\\text{Wh}) : 14{,}26\\,\\text{Wh}$."
+        ],
+        "mistakes": [
+          {
+            "value": 6.75,
+            "feedback": "Tämä on erotus wattitunteina. Kysytty on, kuinka monta prosenttia enemmän: jaa erotus johtolaturin energialla $14{,}26\\,\\text{Wh}$."
+          },
+          {
+            "value": 147.3352,
+            "feedback": "Tämä on alustan energia prosentteina johtolaturin energiasta. Lisäys on tätä $100\\,\\%$ pienempi."
+          },
+          {
+            "value": 32.1276,
+            "feedback": "Jaoit erotuksen alustan energialla. Kun kysytään, kuinka paljon enemmän kuin johtolaturi, vertailukohta on johtolaturin energia $14{,}26\\,\\text{Wh}$."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta johtolaturin energia $E_1 = 14{,}26\\,\\text{Wh}$ ja latausalustan energia $E_2 = 21{,}01\\,\\text{Wh}$, kun puhelin oli kohdallaan\n\n**Kysytty:** kuinka monta prosenttia enemmän energiaa alusta otti kuin johtolaturi\n\n**Periaate:** Akkuun varastoitui kummassakin latauksessa sama energia, joten ylimääräinen energia muuttui laturin ja puhelimen käämien ja elektroniikan sisäenergiaksi. Lisäys verrataan johtolaturin energiaan, koska kysytään, kuinka paljon enemmän kuin johtolaturi.\n\n**Kaava:** lisäys $= \\dfrac{E_2 - E_1}{E_1} \\cdot 100\\,\\%$\n\n**Muunnokset:** Ei tarvita: energiat ovat samassa yksikössä, ja yksikkö supistuu.\n\n**Sijoitus:** lisäys $= \\dfrac{21{,}01\\,\\text{Wh} - 14{,}26\\,\\text{Wh}}{14{,}26\\,\\text{Wh}} \\cdot 100\\,\\% = \\dfrac{6{,}75\\,\\text{Wh}}{14{,}26\\,\\text{Wh}} \\cdot 100\\,\\% = 47{,}34\\,\\%$\n\n**Vastaus:** noin $47{,}3\\,\\%$ enemmän, kolmella merkitsevällä numerolla kuten erotus $6{,}75\\,\\text{Wh}$.\n\n**Järkevyys:** $21\\,\\text{Wh}$ on noin puolitoista kertaa $14\\,\\text{Wh}$, joten lisäyksen on oltava lähes $50\\,\\%$. Kun käämit olivat sivussa, lataus vei $25{,}62\\,\\text{Wh}$ eli lähes $80\\,\\%$ enemmän, mikä sopii siihen, että vastaanottimen läpi kulki silloin vähemmän vuota."
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi mallin arvoihin, mittaukseen ja teoriaan. Palaa sitten alun kysymykseen: mikä ilmiö on kunkin laitteen takana, ja miksi puhelin on pidettävä aivan laturin päällä, kattilan on oltava terästä ja kuidun valo on vahvistettava välillä?",
+      "predictions": [
+        "ennuste-etaisyys",
+        "ennuste-kela",
+        "ennuste-kattila",
+        "ennuste-kuitu"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija kirjoittaa: ”$10\\,\\text{dB}$:n vaimennus pienentää tehon kymmenesosaan. Kun vaimennus kaksinkertaistuu $20\\,\\text{dB}$:iin, tehosta jää kaksikymmenesosa eli $5\\,\\%$.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Jokainen $10\\,\\text{dB}$ jakaa tehon kymmenellä, joten $20\\,\\text{dB}$ jättää sadasosan eli $1\\,\\%$.",
+          "correct": true,
+          "feedback": "Oikein. Desibelit lasketaan yhteen, mutta tehojen suhteet kerrotaan: kaksi peräkkäistä $10\\,\\text{dB}$:n osaa pienentävät tehon ensin kymmenesosaan ja sitten siitä kymmenesosaan. $P : P_0 = 10^{-2} = 0{,}01$."
+        },
+        {
+          "text": "Ensimmäinen lause on väärin: $10\\,\\text{dB}$ puolittaa tehon.",
+          "feedback": "Ensimmäinen lause on oikein: $10\\,\\text{dB}$ pienentää tehon kymmenesosaan, koska $10^{-1} = 0{,}1$. Tehon puolittaa noin $3\\,\\text{dB}$. Virhe on toisessa lauseessa: $20\\,\\text{dB}$ jättää tehosta sadasosan eli $1\\,\\%$."
+        },
+        {
+          "text": "Päättely on oikein, koska vaimennus on suoraan verrannollinen hävinneeseen tehoon.",
+          "feedback": "Vaimennus desibeleinä on verrannollinen kuidun pituuteen, ei hävinneeseen tehoon. Jokainen $10\\,\\text{dB}$ jakaa jäljellä olevan tehon kymmenellä, joten $20\\,\\text{dB}$:n jälkeen jäljellä on $1\\,\\%$, ei $5\\,\\%$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen: kuinka voimakas kenttä puhelimessa",
+      "prompt": "Puhelimen vastaanotinkäämissä on $12$ kierrosta, ja yhden kierroksen pinta-ala on $11\\,\\text{cm}^2$. Laturin taajuus on $140\\,\\text{kHz}$, ja puhelin tarvitsee jännitteen, jonka huippuarvo on $9{,}0\\,\\text{V}$. Oletetaan, että käämin kohdalla magneettikenttä on homogeeninen ja kohtisuorassa käämin tasoa vastaan ja että magneettivuon tiheys vaihtelee sinimuotoisesti. Kuinka suuri magneettivuon tiheyden huippuarvon $B_0$ on oltava? Vastaa millitesloina.",
+      "answer": 0.7751,
+      "unit": "mT",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä kaava antaa vaihtojännitteen huippuarvon, kun vuo vaihtelee sinimuotoisesti? Entä mikä on vuo homogeenisessa kentässä?",
+        "$e_0 = N \\cdot 2\\pi f \\cdot \\Phi_0$ ja $\\Phi_0 = B_0 A$, joten $B_0 = e_0 : (N A \\cdot 2\\pi f)$.",
+        "Muunna $11\\,\\text{cm}^2 = 11 \\cdot (0{,}01\\,\\text{m})^2$ ja $140\\,\\text{kHz} = 140 \\cdot 1000\\,\\text{Hz}$."
+      ],
+      "mistakes": [
+        {
+          "value": 9.3013,
+          "feedback": "Unohdit kierrosten lukumäärän. Jokaiseen $12$ kierrokseen indusoituu sama jännite, ja ne summautuvat, joten jaa myös luvulla $N = 12$."
+        },
+        {
+          "value": 4.8701,
+          "feedback": "Unohdit tekijän $2\\pi$. Sinimuotoisen vuon muutosnopeuden huippuarvo on $2\\pi f \\cdot \\Phi_0$, kuten generaattorin jännitteessä $e_0 = NBA \\cdot 2\\pi f$."
+        },
+        {
+          "value": 7.8e-05,
+          "feedback": "Sijoitit pinta-alan neliösenttimetreinä. Muunna ensin $11\\,\\text{cm}^2 = 11 \\cdot (0{,}01\\,\\text{m})^2 = 1{,}1 \\cdot 10^{-3}\\,\\text{m}^2$."
+        }
+      ],
+      "solution": "**Annettu:** kierrosten lukumäärä $N = 12$, yhden kierroksen pinta-ala $A = 11\\,\\text{cm}^2$, taajuus $f = 140\\,\\text{kHz}$, jännitteen huippuarvo $e_0 = 9{,}0\\,\\text{V}$\n\n**Kysytty:** magneettivuon tiheyden huippuarvo $B_0$ millitesloina\n\n**Periaate:** Vuo vastaanotinkäämin läpi vaihtelee sinimuotoisesti, joten käämiin indusoituu sinimuotoinen jännite, jonka huippuarvo saadaan samoin kuin generaattorissa (luku *Generaattori ja vaihtovirta*). Kenttä oletetaan homogeeniseksi ja käämin tasoa vastaan kohtisuoraksi, joten yhden kierroksen vuo on $\\Phi_0 = B_0 A$ (luku *Sähkömagneettinen induktio*).\n\n**Kaava:** $e_0 = N \\cdot 2\\pi f \\cdot \\Phi_0 = N \\cdot 2\\pi f \\cdot B_0 A$, josta $B_0 = \\dfrac{e_0}{N A \\cdot 2\\pi f}$\n\n**Muunnokset:** $A = 11\\,\\text{cm}^2 = 11 \\cdot (0{,}01\\,\\text{m})^2 = 1{,}1 \\cdot 10^{-3}\\,\\text{m}^2$ ja $f = 140\\,\\text{kHz} = 140 \\cdot 1000\\,\\text{Hz} = 1{,}40 \\cdot 10^{5}\\,\\text{Hz}$. Lopuksi $1\\,\\text{T} = 1000\\,\\text{mT}$.\n\n**Sijoitus:** $B_0 = 9{,}0\\,\\text{V} : (12 \\cdot 1{,}1 \\cdot 10^{-3}\\,\\text{m}^2 \\cdot 2\\pi \\cdot 1{,}40 \\cdot 10^{5}\\,\\text{Hz}) = 7{,}751 \\cdot 10^{-4}\\,\\text{T} = 0{,}7751\\,\\text{mT}$\n\n**Vastaus:** $0{,}78\\,\\text{mT}$, kaksi merkitsevää numeroa kuten jännitteessä $9{,}0\\,\\text{V}$ ja pinta-alassa $11\\,\\text{cm}^2$.\n\n**Järkevyys:** Yksiköt: $\\tfrac{\\text{V}}{\\text{m}^2 \\cdot \\text{Hz}} = \\tfrac{\\text{V}\\cdot\\text{s}}{\\text{m}^2} = \\text{T}$. Kenttä on noin $15$ kertaa niin voimakas kuin Maan magneettikenttä $52\\,\\mu\\text{T}$, mutta paljon heikompi kuin jääkaappimagneetin. Pieni kenttä riittää, koska suuri taajuus tekee vuon muutoksesta nopean."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, tason 2 tehtävissä yhdistetään kaksi vaihetta tai muunnos, ja taso 3 yhdistää kurssin eri lukujen ideoita uudessa tilanteessa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite: induktiolieden kattila",
+      "prompt": "Miksi tavallinen induktioliesi lämmittää teräskattilaa hyvin mutta alumiinikattilaa huonosti, vaikka molemmat johtavat sähköä?",
+      "choices": [
+        {
+          "text": "Ferromagneettinen teräs kokoaa vuon, ja pyörrevirrat kulkevat ohuessa kerroksessa, jonka resistanssi on suuri.",
+          "correct": true,
+          "feedback": "Oikein. Teräksessä pyörrevirtojen reitti on ohut ja resistanssiltaan suuri, joten samalla kelan virralla sähköenergiaa muuttuu paljon sisäenergiaksi. Alumiini ei ole ferromagneettista ja johtaa erittäin hyvin, joten virrat leviävät ja pohja lämpenee vain vähän."
+        },
+        {
+          "text": "Alumiini on niin hyvä johde, ettei siihen voi indusoitua pyörrevirtoja lainkaan, vaikka vuo muuttuu.",
+          "feedback": "Alumiiniin indusoituu pyörrevirtoja, kuten pyörrevirtajarruissa. Hyvässä johteessa resistanssi on kuitenkin pieni, joten samalla kelan virralla virrat muuttavat vähän sähköenergiaa sisäenergiaksi. Teräksessä ferromagneettisuus ja suurempi resistanssi tekevät lämpenemisestä tehokasta."
+        },
+        {
+          "text": "Magneetti vetää teräskattilaa lasia vasten, ja tiivis kosketus siirtää lämmön lasista kattilaan.",
+          "feedback": "Lämpö ei tule lasista: lasi ei johda sähköä, eikä siihen synny virtoja. Teräskattila kuumenee, koska vaihtuva vuo indusoi sen pohjaan pyörrevirtoja, ja teräksen ferromagneettisuus ja suuri resistanssi tekevät niistä tehokkaita."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske: talon kuitu",
+      "prompt": "Kuituyhteys keskukselta taloon on $30\\,\\text{km}$ pitkä, ja kuidun vaimennuskerroin on $0{,}20\\,\\text{dB/km}$. Kuinka monta prosenttia lähetetystä tehosta saapuu taloon? Liitosten vaimennusta ei oteta huomioon.",
+      "answer": 25.1189,
+      "unit": "%",
+      "tolerance": 0.02,
+      "hints": [
+        "Laske ensin koko kuidun vaimennus desibeleinä.",
+        "$A = aL$, ja tehojen suhde on $P : P_0 = 10^{-A/(10\\,\\text{dB})}$.",
+        "$A = 6{,}0\\,\\text{dB}$, joten $P : P_0 = 10^{-0{,}60}$."
+      ],
+      "mistakes": [
+        {
+          "value": 40,
+          "feedback": "Vähensit desibelit suoraan prosenteista. Desibeliasteikko on logaritminen: $6\\,\\text{dB}$ jättää tehosta $10^{-0{,}6} \\approx 25\\,\\%$."
+        },
+        {
+          "value": 74.8811,
+          "feedback": "Tämä on hävinnyt osuus. Kysytty on taloon saapuva osuus $P : P_0$."
+        }
+      ],
+      "practice": "Harjoittele vaimennuksen laskemista tason 1 ja 2 tehtävissä.",
+      "solution": "**Annettu:** kuidun pituus $L = 30\\,\\text{km}$, vaimennuskerroin $a = 0{,}20\\,\\text{dB/km}$\n\n**Kysytty:** taloon saapuvan tehon osuus $P : P_0$ prosentteina\n\n**Periaate:** Kuitu on koko matkalta samanlaista, joten vaimennus on $A = aL$. Vaimennuksen määritelmästä $A = 10\\,\\text{dB} \\cdot \\lg (P_0 : P)$ ratkaistaan tehojen suhde.\n\n**Kaava:** $A = aL$ ja $\\lg \\dfrac{P_0}{P} = \\dfrac{A}{10\\,\\text{dB}}$, josta $\\dfrac{P}{P_0} = 10^{-\\frac{aL}{10\\,\\text{dB}}}$\n\n**Muunnokset:** Ei tarvita: kilometrit supistuvat tulossa $aL$. Lopuksi suhde kerrotaan sadalla prosenteiksi.\n\n**Sijoitus:** $A = 0{,}20\\,\\tfrac{\\text{dB}}{\\text{km}} \\cdot 30\\,\\text{km} = 6{,}0\\,\\text{dB}$, joten $\\dfrac{P}{P_0} = 10^{-0{,}60} = 0{,}2512 = 25{,}12\\,\\%$\n\n**Vastaus:** noin $25\\,\\%$, kaksi merkitsevää numeroa kuten vaimennuskerroin $0{,}20\\,\\text{dB/km}$.\n\n**Järkevyys:** Noin $3\\,\\text{dB}$ puolittaa tehon, joten $6\\,\\text{dB}$ puolittaa sen kahdesti, ja jäljelle jää noin neljäsosa eli $25\\,\\%$, kuten tuloksessa."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: langaton laturi",
+      "prompt": "Selitä, miten langaton laturi siirtää energiaa puhelimeen, vaikka niiden välillä ei ole johtoa. Selitä myös, miksi lataus heikkenee, kun puhelin nostetaan alustalta.",
+      "model": "Laturin lähetinkäämissä kulkee vaihtovirta, joka synnyttää vaihtuvan magneettikentän. Osa kentän vuosta kulkee puhelimen vastaanotinkäämin läpi. Koska vuo muuttuu jatkuvasti, vastaanotinkäämiin indusoituu induktiolain mukaan vaihtojännite, jolla puhelin lataa akkunsa. Laite on kuin muuntaja ilman rautasydäntä. Lähetinkäämin kenttäviivat kiertävät sen johtimien ympäri ja kääntyvät takaisin jo lähellä käämiä. Kun puhelin nostetaan, yhä pienempi osa vuosta kulkee vastaanottimen läpi, joten jännite pienenee jyrkästi. Silloin osa energiasta muuttuu vain käämien sisäenergiaksi, ja lataus heikkenee tai katkeaa.",
+      "criteria": [
+        "Kerron, että lähetinkäämin vaihtovirta synnyttää vaihtuvan magneettikentän ja vuon.",
+        "Selitän, että muuttuva vuo vastaanotinkäämin läpi indusoi siihen jännitteen.",
+        "Selitän, että etäisyyden kasvaessa yhä pienempi osa vuosta kulkee vastaanottimen läpi.",
+        "Kerron, että jännite ja siirtyvä teho pienenevät siksi jyrkästi."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

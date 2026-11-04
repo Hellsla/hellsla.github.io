@@ -1,0 +1,393 @@
+{
+  "version": 1,
+  "contribution": "The refractive index depends on wavelength (dispersion): a prism splits white light into a spectrum, the angle of deviation is $\\delta = \\alpha_1 + \\alpha_4 - A$, and a rainbow forms by refraction, reflection and refraction in a droplet, $\\theta = 4\\beta - 2\\alpha$, red at about $42^\\circ$ and violet at $40.6^\\circ$ from the antisolar point. With the simulation the student finds that violet is always deviated the most and that the difference between the colours grows with the apex angle.",
+  "learn": [
+    "explain why a prism splits white light and which colour is refracted the most.",
+    "calculate the angles of refraction of different colours and the angles of deviation of a prism from refractive indices.",
+    "explain how a rainbow forms and why red is on its outer edge."
+  ],
+  "prior": [
+    "Light is refracted at a boundary according to the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, and $n = c : v$ (chapter *Reflection and refraction of light*)",
+    "The wavelengths of visible light are about $400$–$700\\,\\text{nm}$, and $c = f\\lambda$ (chapter *Electromagnetic radiation and the black-body spectrum*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "After a summer shower there is a rainbow in the sky. Its outer edge is red and its inner edge violet, and sometimes a second, fainter arc appears outside it. The same colours appear when the sun shines through a glass prism or the crystal of a chandelier. Raindrops and glass are colourless, and sunlight is white.",
+      "question": "Where do the colours of a rainbow come from, and why are they always in the same order?"
+    },
+    {
+      "id": "kertaus-taittuminen",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: refraction",
+      "prompt": "Light arrives from air at a slant on the surface of a glass sheet. What happens to the direction of the light at the boundary?",
+      "choices": [
+        {
+          "text": "It bends towards the normal of the surface, because light slows down in glass.",
+          "correct": true,
+          "feedback": "Correct. The refractive index of glass is greater than that of air, so $\\sin\\alpha_1 = n \\sin\\alpha_2$ gives an angle of refraction smaller than the angle of incidence (chapter *Reflection and refraction of light*). Today you will find that the refractive index is slightly different for different colours."
+        },
+        {
+          "text": "It bends away from the normal of the surface, because glass is denser than air.",
+          "feedback": "According to the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, in a material with a greater refractive index the angle to the normal is smaller, so light bends towards the normal (chapter *Reflection and refraction of light*)."
+        },
+        {
+          "text": "It continues straight in the same direction, because glass is transparent.",
+          "feedback": "Transparency means that light passes through, but its direction still changes: light slows down in glass and bends towards the normal. Only light arriving perpendicular to the surface continues straight (chapter *Reflection and refraction of light*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-vari",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: which colour is deviated the most?",
+      "prompt": "A narrow beam of white light hits the side of a glass prism, and a fan of colours comes out of the prism. Which colour is deviated the most from the original direction of the white light?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Red, because it has the longest wavelength.",
+          "feedback": "The model's values refute this: with an apex angle of $60^\\circ$ and an angle of incidence of $50^\\circ$, red is deviated by $38.4^\\circ$ and violet by $39.8^\\circ$. A long wavelength does not mean strong refraction: in glass the refractive index of red, $1.5143$, is the smallest, so red is refracted the least."
+        },
+        {
+          "text": "Violet, because its refractive index in glass is the greatest.",
+          "correct": true,
+          "feedback": "The model's values support this: at every apex angle the angle of deviation of violet is greater than that of red, for example $39.8^\\circ$ and $38.4^\\circ$ when the apex angle is $60^\\circ$. The refractive index of violet, $1.5302$, is greater than that of red, $1.5143$, so violet is refracted the most at both surfaces."
+        },
+        {
+          "text": "All colours are deviated equally; the prism only colours the edges of the light.",
+          "feedback": "The model's values refute this: the angles of deviation of red and violet differ, and the difference grows with the apex angle from $0.53^\\circ$ to $4.4^\\circ$. The prism does not colour the light but separates the colours already present in white light, because the refractive index is different for different colours."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kaari",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: where do you look for a rainbow?",
+      "prompt": "It is afternoon, the sun is shining low in the west, and it is raining somewhere nearby. Which way should you look to see a rainbow?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens once you have read the Key idea section of the theory summary."
+      },
+      "choices": [
+        {
+          "text": "East, with your back to the sun, towards the rain.",
+          "correct": true,
+          "feedback": "Correct. In the droplets, light is reflected from the back surface and returns towards the sun, turned by about $42^\\circ$. A rainbow therefore appears as a circle around the antisolar point, the shadow of your own head, on the side opposite the sun."
+        },
+        {
+          "text": "West, around the sun, because the light comes from there.",
+          "feedback": "In the droplets, light is reflected from the back surface and returns towards the sun. When you look towards the sun, the light reflected by the droplets goes away from you. A rainbow appears around the antisolar point, with your back to the sun."
+        },
+        {
+          "text": "Straight up, because the droplets fall from above.",
+          "feedback": "The direction of a rainbow does not depend on where the droplets fall from but on the direction of the sun. The droplets send out their brightest light at about $42^\\circ$ from the antisolar point, which is opposite the sun, below the horizon."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A narrow beam of white light hits a prism in a darkened room. Adjust the apex angle, the angle of incidence and the material, and follow how much each colour is deviated.",
+      "howto": "Adjust the apex angle $A$ of the prism and the angle of incidence $\\alpha_1$, and choose the material. The white ray arrives from the left and splits in the prism into seven coloured rays, which look white where they overlap. The spectrum falls on the screen on the right. The dashed lines are the normals of the surfaces and the extension of the incident ray: the angle between a coloured ray and the extension is the angle of deviation. The readings row shows the angles of deviation of red ($656\\,\\text{nm}$) and violet ($405\\,\\text{nm}$), their difference and the refractive indices.",
+      "model": "The model treats light as rays: a narrow beam hits the middle of the left side of the prism, and the direction of each colour is calculated from the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ at both surfaces. The prism is in air, and the refractive index of air is $1$. The refractive index comes from a curve fitted to the tabulated values of the material: the values for red and violet in crown glass and water are those in the table of the chapter. The part of the light reflected at the surfaces is not drawn. If a colour cannot leave through the second surface, its ray is drawn reflected back into the glass. The readings are values calculated by the model, not measurements.",
+      "calc": "At the first surface $\\sin\\alpha_2 = \\sin\\alpha_1 : n$. Inside the glass $\\alpha_3 = A - \\alpha_2$, and at the second surface $\\sin\\alpha_4 = n \\sin\\alpha_3$. The angle of deviation is\n\n$$\\delta = \\alpha_1 + \\alpha_4 - A$$\n\nand the difference between the colours is $\\Delta\\delta = \\delta_\\text{v} - \\delta_\\text{r}$. If $n \\sin\\alpha_3 > 1$, the colour cannot leave the prism."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the apex angle increases",
+      "intro": "Test prediction 1. The prism is crown glass and the angle of incidence is $\\alpha_1 = 50^\\circ$; change only the apex angle $A$. Record at least the apex angles $30^\\circ$, $40^\\circ$, $50^\\circ$, $60^\\circ$ and $70^\\circ$. Compare the angles of deviation of red and violet and their difference.",
+      "initial": {
+        "A": 30,
+        "a1": 50,
+        "aine": "kruunu"
+      },
+      "locked": [
+        "a1",
+        "aine"
+      ],
+      "vary": "A",
+      "names": {
+        "A": "apex angle A",
+        "a1": "angle of incidence α₁",
+        "aine": "material"
+      },
+      "units": {
+        "A": "°",
+        "a1": "°"
+      },
+      "values": {
+        "aine": {
+          "kruunu": "crown glass"
+        }
+      },
+      "measure": [
+        {
+          "key": "dP",
+          "label": "deviation of red (°)"
+        },
+        {
+          "key": "dV",
+          "label": "deviation of violet (°)"
+        },
+        {
+          "key": "dd",
+          "label": "difference (°)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: angle of incidence and minimum deviation",
+      "intro": "The prism is crown glass and the apex angle is $A = 60^\\circ$; change only the angle of incidence $\\alpha_1$. Record at least the angles of incidence $40^\\circ$, $45^\\circ$, $50^\\circ$, $55^\\circ$, $60^\\circ$, $70^\\circ$ and $80^\\circ$. Follow the angle of deviation of red, $\\delta_\\text{r}$.",
+      "initial": {
+        "A": 60,
+        "a1": 40,
+        "aine": "kruunu"
+      },
+      "locked": [
+        "A",
+        "aine"
+      ],
+      "vary": "a1",
+      "names": {
+        "A": "apex angle A",
+        "a1": "angle of incidence α₁",
+        "aine": "material"
+      },
+      "units": {
+        "A": "°",
+        "a1": "°"
+      },
+      "values": {
+        "aine": {
+          "kruunu": "crown glass"
+        }
+      },
+      "measure": [
+        {
+          "key": "dP",
+          "label": "deviation of red (°)"
+        },
+        {
+          "key": "dV",
+          "label": "deviation of violet (°)"
+        }
+      ],
+      "min": 4,
+      "question": {
+        "type": "choice",
+        "prompt": "How does the angle of deviation of red change as the angle of incidence increases from $40^\\circ$ to $80^\\circ$?",
+        "choices": [
+          {
+            "text": "It first decreases, is smallest at about $50^\\circ$ and then increases.",
+            "correct": true,
+            "feedback": "Correct. In the model's values $\\delta_\\text{r}$ is $40.0^\\circ$ at an angle of incidence of $40^\\circ$, smallest at $38.4^\\circ$ at an angle of incidence of about $49$–$50^\\circ$, and $50.3^\\circ$ at $80^\\circ$. Near the minimum deviation a change in the angle of incidence hardly changes the direction. The same phenomenon gathers the light of a rainbow into one direction."
+          },
+          {
+            "text": "It increases all the time in the same proportion as the angle of incidence increases.",
+            "feedback": "The model's values refute this: from an angle of incidence of $40^\\circ$ to $50^\\circ$ the angle of deviation decreases from $40.0^\\circ$ to $38.4^\\circ$ and only then increases. The angle of deviation has a minimum value."
+          },
+          {
+            "text": "It stays the same, because the prism and its material do not change.",
+            "feedback": "The model's values refute this: $\\delta_\\text{r}$ varies between $38.4^\\circ$ and $50.3^\\circ$. When the angle of incidence changes, $\\alpha_2$, $\\alpha_3$ and $\\alpha_4$ change too, and with them $\\delta = \\alpha_1 + \\alpha_4 - A$."
+          }
+        ]
+      },
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: the colours spread apart",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "Write, on the basis of your table: which colour is deviated the most and which the least? How does the difference $\\Delta\\delta$ between the colours change as the apex angle increases? What causes the differences? Finally, try freely how large the difference is for flint glass and for water when $A = 60^\\circ$ and $\\alpha_1 = 50^\\circ$.",
+      "model": "Violet is deviated the most and red the least at every apex angle: for example, at an apex angle of $60^\\circ$ the angles of deviation are $39.8^\\circ$ and $38.4^\\circ$. The difference grows with the apex angle: at $30^\\circ$ it is $0.53^\\circ$, at $60^\\circ$ $1.40^\\circ$ and at $70^\\circ$ $4.4^\\circ$. The differences arise because the refractive index of glass is greater for violet ($1.5302$) than for red ($1.5143$), so violet is refracted more at both surfaces. A greater apex angle increases the angle of incidence $\\alpha_3$ at the second surface. When $\\alpha_3$ approaches the critical angle of total internal reflection, a small difference between the colours in $\\alpha_3$ becomes a large difference in $\\alpha_4$, which is why the difference grows steeply between the apex angles $60^\\circ$ and $70^\\circ$. For flint glass the difference is $3.9^\\circ$ and for water $0.85^\\circ$, so dispersion is a property of the material. The values are calculated by the model.",
+      "criteria": [
+        "I said that violet is deviated the most and red the least, and supported it with values from the table.",
+        "I said that the difference between the colours grows as the apex angle increases.",
+        "I explained the difference by the refractive index being greater for violet than for red.",
+        "I noted that the difference also depends on the material, for example it is greater in flint glass than in water."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the model's values from the experiment and with the theory. Then return to the opening question: why is the red of a rainbow on the outer edge and the violet on the inner edge, and why is a rainbow seen only with your back to the sun?",
+      "predictions": [
+        "ennuste-vari",
+        "ennuste-kaari"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "Violet light arrives from air on crown glass at an angle of incidence of $60.0^\\circ$. The refractive index of the glass for violet light is $1.5302$. A student calculates the angle of refraction\n\n$$\\begin{aligned} \\alpha_2 &= \\frac{\\alpha_1}{n} \\\\ &= \\frac{60.0^\\circ}{1.5302} \\\\ &= 39.2^\\circ \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The law of refraction concerns the sines of the angles, not the angles: $\\sin\\alpha_2 = \\sin\\alpha_1 : n$, which gives $\\alpha_2 = 34.5^\\circ$.",
+          "correct": true,
+          "feedback": "Correct. $\\sin\\alpha_2 = \\sin 60.0^\\circ : 1.5302 = 0.5660$, so $\\alpha_2 = 34.5^\\circ$. Dividing the angle by the refractive index gives a wrong result, because the sine is not proportional to the angle at large angles."
+        },
+        {
+          "text": "The refractive index should have been multiplied, not divided, which gives an angle of refraction of $91.8^\\circ$.",
+          "feedback": "The angle of refraction cannot exceed $90^\\circ$, and when light enters glass it bends towards the normal, so the angle must decrease. The error is that the law of refraction concerns sines: $\\sin\\alpha_2 = \\sin\\alpha_1 : n$, which gives $\\alpha_2 = 34.5^\\circ$."
+        },
+        {
+          "text": "The method is correct, but the refractive index of red should have been used for violet light.",
+          "feedback": "Each colour is refracted according to its own refractive index, so the value $1.5302$ is the right one for violet. The error is in the method: the law of refraction concerns sines, $\\sin\\alpha_2 = \\sin\\alpha_1 : n$, which gives $\\alpha_2 = 34.5^\\circ$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: colours on the bottom of a swimming pool",
+      "prompt": "Sunlight hits the surface of a still swimming pool at an angle of incidence of $60.0^\\circ$. The pool is $2.00\\,\\text{m}$ deep. The refractive index of water is $1.3315$ for red light and $1.3431$ for violet. How far apart do the red and violet light hit the bottom of the pool when the light reaches the surface at the same point? Give your answer in millimetres.",
+      "answer": 25.396,
+      "unit": "mm",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate the angle of refraction of each colour in water. Which one is refracted more?",
+        "Once the angle of refraction $\\beta$ is known, the ray travels a horizontal distance $x = h \\tan\\beta$ at depth $h$.",
+        "$\\beta_\\text{r} = 40.57^\\circ$ and $\\beta_\\text{v} = 40.15^\\circ$, so $\\Delta x = 2.00\\,\\text{m} \\cdot (\\tan 40.57^\\circ - \\tan 40.15^\\circ)$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.025396,
+          "feedback": "The result is correct in metres. Convert to millimetres: $1\\,\\text{m} = 1000\\,\\text{mm}$."
+        },
+        {
+          "value": 11.23,
+          "feedback": "You used sines instead of tangents. The horizontal distance at depth $h$ is $x = h \\tan\\beta$, because the ray, the bottom and the normal of the surface form a right-angled triangle whose vertical side is $h$."
+        },
+        {
+          "value": 3464.1,
+          "feedback": "You calculated where the light would hit if it were not refracted at all. First calculate the angles of refraction $\\sin\\beta = \\sin 60.0^\\circ : n$, then the horizontal distance $h \\tan\\beta$ for each colour, and their difference."
+        }
+      ],
+      "solution": "**Given:** angle of incidence $\\alpha = 60.0^\\circ$, depth of the pool $h = 2.00\\,\\text{m}$, refractive index of red $n_\\text{r} = 1.3315$, of violet $n_\\text{v} = 1.3431$\n\n**Find:** distance $\\Delta x$ between the points where red and violet hit, in millimetres\n\n**Principle:** Each colour is refracted at the surface according to the law of refraction $\\sin\\alpha = n \\sin\\beta$ with its own refractive index, because the refractive index depends on wavelength. In water light travels in a straight line, so the ray, the normal of the surface and the bottom form a right-angled triangle: the horizontal distance to the bottom is $x = h \\tan\\beta$.\n\n**Formula:** $\\sin\\beta = \\dfrac{\\sin\\alpha}{n}$ and $x = h \\tan\\beta$, so $\\Delta x = h \\left(\\tan\\beta_\\text{r} - \\tan\\beta_\\text{v}\\right)$\n\n**Conversions:** Finally $1\\,\\text{m} = 1000\\,\\text{mm}$.\n\n**Substitution:** $\\sin\\beta_\\text{r} = \\dfrac{\\sin 60.0^\\circ}{1.3315} = 0.65041$, so $\\beta_\\text{r} = 40.573^\\circ$; $\\sin\\beta_\\text{v} = \\dfrac{\\sin 60.0^\\circ}{1.3431} = 0.64480$, so $\\beta_\\text{v} = 40.150^\\circ$. $\\Delta x = 2.00\\,\\text{m} \\cdot (0.85628 - 0.84358) = 0.02540\\,\\text{m} = 25\\,\\text{mm}$\n\n**Answer:** about $25\\,\\text{mm}$, two significant figures, because the result is the difference of two almost equal numbers, in which significant figures are lost.\n\n**Reasonableness:** Violet is refracted more, so it hits closer to the point where the light enters the surface, and the difference is positive. Each colour travels horizontally about $2.00\\,\\text{m} \\cdot 0.85 \\approx 1.7\\,\\text{m}$, and the difference is less than $2\\,\\%$ of this, which fits the small difference in the refractive indices. That is why narrow coloured fringes appear on the bottom."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks use one formula, level 2 tasks combine two steps, such as the law of refraction and the geometry of the prism, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: why a prism splits light",
+      "prompt": "White light passes through a glass prism and splits into a spectrum. What explains the separation of the colours?",
+      "choices": [
+        {
+          "text": "The refractive index of glass is different for different wavelengths, so the colours are refracted to different angles.",
+          "correct": true,
+          "feedback": "Correct. The refractive index depends on wavelength (dispersion): violet has the greatest refractive index, so it is refracted the most. The slanted surfaces of the prism increase the angle between the colours."
+        },
+        {
+          "text": "Glass changes the wavelengths of white light, which creates new colours.",
+          "feedback": "Glass does not create new colours: at a boundary the frequency of light, and so its colour, stays the same. The colours are already present in white light, and the prism separates them because the refractive index is different for different colours."
+        },
+        {
+          "text": "The colours separate when light is reflected back and forth many times from the inner surfaces of the prism.",
+          "feedback": "In a prism the ray is refracted twice, on entering and on leaving; reflection does not separate colours, because the law of reflection is the same for all colours. The colours separate in refraction, because the refractive index depends on wavelength."
+        },
+        {
+          "text": "Red light travels faster in air than violet, so it reaches the prism first.",
+          "feedback": "In air all colours travel at practically the same speed. The difference arises in glass, where violet slows down more; that is why its refractive index is greater and it is refracted the most."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: red and violet in water",
+      "prompt": "The refractive index of water is $1.3315$ for red light and $1.3431$ for violet. By how much is the speed of red light in water greater than that of violet? Give your answer in kilometres per second.",
+      "answer": 1945.94,
+      "unit": "km/s",
+      "tolerance": 0.02,
+      "hints": [
+        "The speed of light in a material is obtained from the refractive index. With which formula?",
+        "$v = c : n$, where $c = 3.00 \\cdot 10^8\\,\\text{m/s}$. Calculate the speed of each colour and subtract.",
+        "Keep six figures in the intermediate results: $v_\\text{r} = 225\\,310\\,\\text{km/s}$ and $v_\\text{v} = 223\\,364\\,\\text{km/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 2000,
+          "feedback": "You rounded the speeds too early, for example $225\\,000\\,\\text{km/s}$ and $223\\,000\\,\\text{km/s}$. When you calculate the difference of two almost equal numbers, keep the intermediate results accurate: $225\\,310\\,\\text{km/s} - 223\\,364\\,\\text{km/s}$."
+        },
+        {
+          "value": 1945940,
+          "feedback": "The result is correct in metres per second. Convert to kilometres per second: $1\\,\\text{km/s} = 1000\\,\\text{m/s}$."
+        }
+      ],
+      "solution": "**Given:** refractive index of red $n_\\text{r} = 1.3315$, of violet $n_\\text{v} = 1.3431$, speed of light in vacuum $c = 3.00 \\cdot 10^8\\,\\text{m/s}$\n\n**Find:** difference of the speeds $\\Delta v = v_\\text{r} - v_\\text{v}$ in kilometres per second\n\n**Principle:** The refractive index tells how many times slower light travels in a material than in vacuum, $n = c : v$. The refractive index depends on wavelength, so red and violet have different speeds in water.\n\n**Formula:** $n = \\dfrac{c}{v}$, so $v = \\dfrac{c}{n}$, and $\\Delta v = \\dfrac{c}{n_\\text{r}} - \\dfrac{c}{n_\\text{v}}$\n\n**Conversions:** $c = 3.00 \\cdot 10^8\\,\\text{m/s} = 3.00 \\cdot 10^5\\,\\text{km/s}$, because $1\\,\\text{km} = 1000\\,\\text{m}$.\n\n**Substitution:** $v_\\text{r} = \\dfrac{3.00 \\cdot 10^5\\,\\text{km/s}}{1.3315} = 225\\,310\\,\\text{km/s}$ and $v_\\text{v} = \\dfrac{3.00 \\cdot 10^5\\,\\text{km/s}}{1.3431} = 223\\,364\\,\\text{km/s}$, so $\\Delta v = 225\\,310\\,\\text{km/s} - 223\\,364\\,\\text{km/s} = 1946\\,\\text{km/s}$\n\n**Answer:** $1.95 \\cdot 10^3\\,\\text{km/s}$, three significant figures like the speed of light $3.00 \\cdot 10^8\\,\\text{m/s}$.\n\n**Reasonableness:** The difference is about $1\\,\\%$ of the speed, since the refractive indices also differ by about one per cent: $1.3431 : 1.3315 \\approx 1.009$. Red is faster because its refractive index is smaller."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: the order of the colours in a rainbow",
+      "prompt": "Explain how a rainbow forms in water droplets and why red is on the outer edge of the arc and violet on the inner edge. Also explain why a rainbow is seen only when the sun is behind you.",
+      "model": "Sunlight is refracted into the droplet, reflected from the back surface of the droplet and refracted out, so the light returns towards the sun, turned around. The refractive index of water is greater for violet than for red, so the colours separate in the refractions: the droplets send out red light most strongly at about $42^\\circ$ and violet at about $40.6^\\circ$ from the direction the sunlight came from. Red light reaches the viewer's eye from the droplets seen at $42^\\circ$ from the antisolar point, that is, from the direction of the shadow of your own head, and violet from the droplets seen at $40.6^\\circ$. The circle of red is larger, so red is on the outer edge. Because light returns from the droplet towards the sun and the centre of the arc is the antisolar point, the arc is seen only with your back to the sun.",
+      "criteria": [
+        "I say that light is refracted into the droplet, reflected from its back surface and refracted out.",
+        "I explain that the refractive index of water is greater for violet, so the colours leave the droplet at different angles.",
+        "I say that red is seen at about $42^\\circ$ and violet at about $40.6^\\circ$ from the antisolar point, so red is on the outer edge.",
+        "I justify that the centre of the arc is the antisolar point on the side opposite the sun, so the sun is behind the viewer."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and only then open the answer."
+    }
+  ]
+}

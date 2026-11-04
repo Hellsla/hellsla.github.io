@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "contribution": "Muuntaja muuttaa vaihtojännitettä induktion avulla, $U_1 : U_2 = N_1 : N_2 = I_2 : I_1$, ja toimii vain vaihtovirralla; siirtojohdon häviöteho $P_\\text{h} = R I^2$ selittää, miksi sähkö siirretään suurjännitteellä. Simulaatiolla opiskelija havaitsee, että häviö pienenee jännitteen neliön mukaan.",
+  "learn": [
+    "selittämään, miten muuntaja muuttaa vaihtojännitettä ja miksi se ei toimi tasavirralla.",
+    "laskemaan muuntajan jännitteet, virrat ja kierrosten lukumäärät.",
+    "laskemaan siirtojohdon häviötehon ja perustelemaan, miksi sähkö siirretään suurjännitteellä."
+  ],
+  "prior": [
+    "Muuttuva magneettivuo indusoi käämiin jännitteen (luku *Sähkömagneettinen induktio*)",
+    "Generaattori tuottaa vaihtojännitettä, ja verkkojännitteen tehollinen arvo on $230\\,\\text{V}$ (luku *Generaattori ja vaihtovirta*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Voimalaitoksen generaattori tuottaa noin $20\\,\\text{kV}$:n jännitteen, ja kotien pistorasioissa jännite on $230\\,\\text{V}$. Välissä sähkö kulkee satoja kilometrejä kantaverkon johtoja pitkin, joissa jännite on jopa $400\\,\\text{kV}$. Jännitettä siis ensin nostetaan valtavasti ja sitten lasketaan vaiheittain. Se vaatii kalliita muuntajia ja korkeita pylväitä.",
+      "question": "Miksi sähköä ei siirretä suoraan generaattorin jännitteellä, ja miten jännitettä ylipäätään voi muuttaa?"
+    },
+    {
+      "id": "kertaus-induktio",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: induktio",
+      "prompt": "Käämin läpi kulkee magneettivuo. Missä tilanteessa käämiin indusoituu jännite?",
+      "choices": [
+        {
+          "text": "Kun käämin läpi kulkeva magneettivuo muuttuu.",
+          "correct": true,
+          "feedback": "Oikein. Induktiolain mukaan jännite on verrannollinen vuon muutosnopeuteen, $e = -N \\Delta\\Phi : \\Delta t$ (luku *Sähkömagneettinen induktio*). Tänään tähän perustuu muuntaja."
+        },
+        {
+          "text": "Aina, kun käämin läpi kulkee voimakas magneettivuo.",
+          "feedback": "Suurikaan vakiovuo ei indusoi jännitettä. Jännite syntyy vain, kun vuo muuttuu: $e = -N \\Delta\\Phi : \\Delta t$ (luku *Sähkömagneettinen induktio*)."
+        },
+        {
+          "text": "Vain silloin, kun käämi on kytketty paristoon.",
+          "feedback": "Induktiossa käämi ei tarvitse jännitelähdettä: jännite syntyy, kun käämin läpi kulkeva magneettivuo muuttuu (luku *Sähkömagneettinen induktio*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-dc",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: muuntaja ja akku",
+      "prompt": "Muuntajan toisiokäämissä on kaksi kertaa niin monta kierrosta kuin ensiökäämissä. Ensiökäämi kytketään $12\\,\\text{V}$:n akkuun, ja toisiokäämiin kytketään jännitemittari. Mitä mittari näyttää, kun virta on kulkenut ensiökäämissä jo jonkin aikaa?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "Palaute avautuu, kun olet lukenut Teoriatiivistelmän kohdan Ydinajatus."
+      },
+      "choices": [
+        {
+          "text": "$24\\,\\text{V}$, koska toisiokäämissä on kaksi kertaa niin monta kierrosta.",
+          "feedback": "Kierrosten suhde määrää jännitteen vain, kun vuo muuttuu. Akun tasavirta synnyttää vakiosuuruisen magneettivuon, joka ei indusoi jännitettä, joten mittari näyttää nollaa. Jännitepulssi näkyy vain kytkentähetkellä."
+        },
+        {
+          "text": "$12\\,\\text{V}$, koska akun jännite siirtyy rautasydämen kautta toisiokäämiin.",
+          "feedback": "Käämit eivät ole johtavassa yhteydessä, eikä jännite siirry rautaa pitkin. Toisiokäämiin syntyy jännite vain induktiolla, kun magneettivuo muuttuu. Tasavirralla vuo on vakio, joten jännite on nolla."
+        },
+        {
+          "text": "$0\\,\\text{V}$, koska tasavirran synnyttämä magneettivuo ei muutu.",
+          "correct": true,
+          "feedback": "Oikein. Toisiokäämiin indusoituu jännite vain, kun magneettivuo muuttuu. Akun tasavirta synnyttää vakiovuon, joten jännite on nolla; vain kytkentähetkellä vuo muuttuu ja mittari värähtää. Siksi sähköverkossa käytetään vaihtovirtaa."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-jannite",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kaksinkertainen jännite",
+      "prompt": "Voimalaitos siirtää tehon $200\\,\\text{MW}$ samaa johtoa pitkin kaupunkiin. Siirtojännite nostetaan $200\\,\\text{kV}$:sta $400\\,\\text{kV}$:iin, ja siirrettävä teho pysyy samana. Miten johdossa lämmöksi muuttuva häviöteho muuttuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Se pienenee puoleen, koska virta puolittuu.",
+          "feedback": "Virta puolittuu, mutta mallin arvot kumoavat tämän: $200\\,\\text{kV}$:lla häviö on $6{,}0\\,\\text{MW}$ ja $400\\,\\text{kV}$:lla $1{,}5\\,\\text{MW}$ eli neljäsosa. Häviöteho on $P_\\text{h} = R I^2$, joten se riippuu virran neliöstä."
+        },
+        {
+          "text": "Se pienenee neljäsosaan.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: $200\\,\\text{kV}$:lla virta on $1000\\,\\text{A}$ ja häviö $6{,}0\\,\\text{MW}$, $400\\,\\text{kV}$:lla virta on $500\\,\\text{A}$ ja häviö $1{,}5\\,\\text{MW}$. Virta puolittuu, ja häviöteho $P_\\text{h} = R I^2$ pienenee neljäsosaan."
+        },
+        {
+          "text": "Se kasvaa nelinkertaiseksi, koska teho on $P = U^2 : R$.",
+          "feedback": "Mallin arvot kumoavat tämän: häviö pienenee $6{,}0\\,\\text{MW}$:sta $1{,}5\\,\\text{MW}$:iin. Lausekkeessa $U^2 : R$ jännite on vastuksen yli oleva jännite, mutta siirtojännite ei ole johdon resistanssin yli. Johdon häviö riippuu virrasta: $P_\\text{h} = R I^2$."
+        },
+        {
+          "text": "Se pysyy samana, koska siirrettävä teho on sama.",
+          "feedback": "Mallin arvot kumoavat tämän: häviö pienenee $6{,}0\\,\\text{MW}$:sta $1{,}5\\,\\text{MW}$:iin. Sama teho kulkee suuremmalla jännitteellä pienemmällä virralla, ja johtoa lämmittää virta: $P_\\text{h} = R I^2$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Voimalaitos lähettää tehon kaupunkiin voimajohtoa pitkin. Valitse siirtojännite, teho ja johdon pituus ja seuraa, kuinka suuri osa tehosta muuttuu johdossa lämmöksi.",
+      "howto": "Säädä siirtojännitettä $U$, siirrettävää tehoa $P$ ja johdon pituutta $l$. Kuvassa vasemmalla on voimalaitos ja sen nostomuuntaja, keskellä voimajohto ja oikealla laskumuuntaja ja kaupunki. Johto muuttuu sitä punaisemmaksi, mitä suurempi osa tehosta muuttuu siinä lämmöksi. *Palkit* kuvan alla näyttävät perille tulevan tehon (vihreä) ja häviötehon (oranssi) samassa mittakaavassa. Lukemat-riviltä näet johdon virran, resistanssin ja nostomuuntajan muuntosuhteen.",
+      "model": "Malli käsittelee siirtoa yksinkertaistettuna kahden johtimen siirtona: tehon $P$ lähettää voimalaitos jännitteellä $U$, ja johtimien yhteinen resistanssi on $R = 0{,}040\\,\\tfrac{\\Omega}{\\text{km}} \\cdot l$. Todellinen kantaverkko on kolmivaiheinen, mutta häviön riippuvuus virrasta on sama. Generaattorin jännite on aina $20\\,\\text{kV}$, ja muuntajat oletetaan ideaalisiksi. Jos häviöteho olisi suurempi kuin lähetetty teho, siirto ei onnistu, ja malli ilmoittaa sen. Lukemat ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Johdon virta saadaan tehosta ja siirtojännitteestä, $I = P : U$, ja johdossa lämmöksi muuttuva teho on\n\n$$P_\\text{h} = R I^2$$\n\nPerille tulee teho $P_\\text{perille} = P - P_\\text{h}$, ja häviön osuus on $P_\\text{h} : P$. Nostomuuntajan muuntosuhde on $N_2 : N_1 = U : 20\\,\\text{kV}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vain siirtojännite muuttuu",
+      "intro": "Testaa ennuste 2. Teho on $200\\,\\text{MW}$ ja johdon pituus $150\\,\\text{km}$; muuta vain siirtojännitettä. Kirjaa ainakin jännitteet $100\\,\\text{kV}$, $200\\,\\text{kV}$ ja $400\\,\\text{kV}$, halutessasi myös $50\\,\\text{kV}$. Vertaa, miten virta ja häviöteho muuttuvat, kun jännite kaksinkertaistuu.",
+      "initial": {
+        "U": 100,
+        "P": 200,
+        "l": 150
+      },
+      "locked": [
+        "P",
+        "l"
+      ],
+      "vary": "U",
+      "names": {
+        "U": "siirtojännite",
+        "P": "teho",
+        "l": "johdon pituus"
+      },
+      "units": {
+        "U": "kV",
+        "P": "MW",
+        "l": "km"
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        },
+        {
+          "key": "Ph",
+          "label": "P_h (MW)"
+        },
+        {
+          "key": "osuus",
+          "label": "osuus (%)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: häviö ja jännite",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "Kirjoita taulukkosi perusteella: miten johdon virta ja häviöteho muuttuvat, kun siirtojännite kaksinkertaistuu? Mikä riippuvuus häviötehon ja jännitteen välillä on? Mitä tämä merkitsee voimalaitokselle, joka haluaa siirtää sähköä kauas?",
+      "model": "Kun jännite kaksinkertaistuu $100\\,\\text{kV}$:sta $200\\,\\text{kV}$:iin, virta puolittuu $2000\\,\\text{A}$:sta $1000\\,\\text{A}$:iin ja häviöteho pienenee $24\\,\\text{MW}$:sta $6{,}0\\,\\text{MW}$:iin eli neljäsosaan. Samoin $400\\,\\text{kV}$:lla virta on $500\\,\\text{A}$ ja häviö $1{,}5\\,\\text{MW}$, vain $0{,}75\\,\\%$ tehosta. Virta on kääntäen verrannollinen jännitteeseen, $I = P : U$, ja häviö on verrannollinen virran neliöön, $P_\\text{h} = R I^2$, joten häviö on kääntäen verrannollinen jännitteen neliöön. Siksi kannattaa nostaa generaattorin jännite muuntajalla suurjännitteeksi ennen siirtoa ja laskea se perillä. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Kerroin, että virta puolittuu, kun jännite kaksinkertaistuu, ja perustelin sen yhtälöllä $P = U I$.",
+        "Kerroin, että häviöteho pienenee neljäsosaan, ja kytkin sen yhtälöön $P_\\text{h} = R I^2$.",
+        "Totesin, että häviö on kääntäen verrannollinen jännitteen neliöön.",
+        "Perustelin, että siksi sähkö siirretään suurjännitteellä ja jännite muutetaan muuntajilla."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi teoriaan ja kokeen mallin arvoihin. Palaa sitten alun kysymykseen: miksi sähköä ei siirretä generaattorin $20\\,\\text{kV}$:n jännitteellä, ja miksi jännitteen muuttaminen vaatii vaihtovirtaa?",
+      "predictions": [
+        "ennuste-dc",
+        "ennuste-jannite"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Voimalaitos siirtää tehon $200\\,\\text{MW}$ $400\\,\\text{kV}$:n jännitteellä johtoa pitkin, jonka resistanssi on $6{,}0\\,\\Omega$. Opiskelija laskee häviötehon\n\n$$\\begin{aligned} P_\\text{h} &= \\frac{U^2}{R} \\\\ &= \\frac{(400\\,000\\,\\text{V})^2}{6{,}0\\,\\Omega} \\\\ &\\approx 2{,}7 \\cdot 10^{10}\\,\\text{W} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Siirtojännite ei ole johdon resistanssin yli: ensin $I = P : U$, sitten $P_\\text{h} = R I^2 = 1{,}5\\,\\text{MW}$.",
+          "correct": true,
+          "feedback": "Oikein. Virta on $I = 200\\,\\text{MW} : 400\\,\\text{kV} = 500\\,\\text{A}$, ja häviö $P_\\text{h} = 6{,}0\\,\\Omega \\cdot (500\\,\\text{A})^2 = 1{,}5\\,\\text{MW}$. Opiskelijan tulos $27\\,000\\,\\text{MW}$ on yli satakertainen siirrettyyn tehoon verrattuna, mikä on mahdotonta: häviö ei voi olla suurempi kuin lähetetty teho."
+        },
+        {
+          "text": "Jännite olisi pitänyt sijoittaa kilovoltteina, jolloin häviötehoksi saadaan $27\\,\\text{kW}$.",
+          "feedback": "Yksiköt on sijoitettu oikein SI-yksikköinä. Virhe on lausekkeessa: $U^2 : R$ antaisi vastuksen tehon vain, jos $U$ olisi vastuksen yli oleva jännite. Johdon yli on vain jännitehäviö $R I = 6{,}0\\,\\Omega \\cdot 500\\,\\text{A} = 3{,}0\\,\\text{kV}$."
+        },
+        {
+          "text": "Laskutapa on oikein, mutta tulos pitää vielä jakaa siirrettävällä teholla, jotta saadaan häviöteho.",
+          "feedback": "Jakamalla saisi osuuden, mutta $2{,}7 \\cdot 10^{10}\\,\\text{W}$ on itsessään mahdoton, koska se on yli satakertainen siirrettyyn tehoon verrattuna. Johdon häviö lasketaan virrasta: $I = P : U = 500\\,\\text{A}$ ja $P_\\text{h} = R I^2 = 1{,}5\\,\\text{MW}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen: tuulipuiston liityntäjohto",
+      "prompt": "Tuulipuisto syöttää tehon $33\\,\\text{MW}$ sähköasemalle $110\\,\\text{kV}$:n voimajohtoa pitkin. Johtimien yhteinen resistanssi on $8{,}0\\,\\Omega$. Kuinka suuri teho johdossa muuttuu lämmöksi? Vastaa kilowatteina.",
+      "answer": 720,
+      "unit": "kW",
+      "tolerance": 0.02,
+      "hints": [
+        "Johtoa lämmittää virta. Miten virta saadaan, kun teho ja siirtojännite tunnetaan?",
+        "Virta on $I = P : U$, ja häviöteho $P_\\text{h} = R I^2$.",
+        "$I = 33\\,000\\,000\\,\\text{W} : 110\\,000\\,\\text{V} = 300\\,\\text{A}$, joten $P_\\text{h} = 8{,}0\\,\\Omega \\cdot (300\\,\\text{A})^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 1512500,
+          "feedback": "Laskit $U^2 : R$. Siirtojännite ei ole johdon resistanssin yli, joten tulos on mahdoton, paljon suurempi kuin koko siirrettävä teho. Laske ensin virta $I = P : U$ ja sitten $P_\\text{h} = R I^2$."
+        },
+        {
+          "value": 2.4,
+          "feedback": "Laskit $R I$, joka on johdon jännitehäviö volteissa jaettuna tuhannella. Häviöteho on $P_\\text{h} = R I^2$: virta pitää korottaa toiseen potenssiin."
+        },
+        {
+          "value": 0.72,
+          "feedback": "Tulos on oikein megawatteina. Muunna kilowateiksi: $1\\,\\text{MW} = 1000\\,\\text{kW}$."
+        }
+      ],
+      "solution": "**Annettu:** teho $P = 33\\,\\text{MW}$, siirtojännite $U = 110\\,\\text{kV}$, johtimien resistanssi $R = 8{,}0\\,\\Omega$\n\n**Kysytty:** johdossa lämmöksi muuttuva teho $P_\\text{h}$ kilowatteina\n\n**Periaate:** Johdon resistanssissa virta muuttaa sähköenergiaa sisäenergiaksi teholla $P_\\text{h} = R I^2$. Virta saadaan siirrettävästä tehosta ja siirtojännitteestä, koska $P = U I$. Siirtojännite ei ole johdon resistanssin yli, joten lauseketta $U^2 : R$ ei voi käyttää.\n\n**Kaava:** $P = U I$, josta $I = \\dfrac{P}{U}$, ja $P_\\text{h} = R I^2$\n\n**Muunnokset:** $P = 33\\,\\text{MW} = 33 \\cdot 10^{6}\\,\\text{W}$ ja $U = 110\\,\\text{kV} = 110 \\cdot 10^{3}\\,\\text{V}$. Lopuksi $1\\,\\text{kW} = 1000\\,\\text{W}$.\n\n**Sijoitus:** $I = \\dfrac{33 \\cdot 10^{6}\\,\\text{W}}{110 \\cdot 10^{3}\\,\\text{V}} = 300\\,\\text{A}$ ja $P_\\text{h} = 8{,}0\\,\\Omega \\cdot (300\\,\\text{A})^2 = 720\\,000\\,\\text{W} = 720\\,\\text{kW}$\n\n**Vastaus:** $720\\,\\text{kW}$ eli $7{,}2 \\cdot 10^{2}\\,\\text{kW}$, kaksi merkitsevää numeroa kuten teho $33\\,\\text{MW}$ ja resistanssi $8{,}0\\,\\Omega$.\n\n**Järkevyys:** Häviö on $720\\,\\text{kW} : 33\\,000\\,\\text{kW} \\approx 2{,}2\\,\\%$ siirrettävästä tehosta, samaa suuruusluokkaa kuin Fingridin ilmoittama kantaverkon häviöosuus noin $2\\,\\%$. Häviö on pieni osa tehosta, kuten toimivassa verkossa pitääkin."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, tason 2 tehtävissä yhdistetään kaksi vaihetta, kuten virta ja häviöteho, ja taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite: miksi suurjännite",
+      "prompt": "Miksi sähköenergia siirretään pitkiä matkoja suurella jännitteellä?",
+      "choices": [
+        {
+          "text": "Sama teho kulkee pienemmällä virralla, ja johdon häviö riippuu virran neliöstä.",
+          "correct": true,
+          "feedback": "Oikein. Kun $P = U I$ pysyy samana, suurempi jännite tarkoittaa pienempää virtaa, ja häviöteho $P_\\text{h} = R I^2$ pienenee virran neliön mukaan."
+        },
+        {
+          "text": "Suurella jännitteellä sähkö kulkee nopeammin, joten se ehtii lämmittää johtoa vähemmän.",
+          "feedback": "Jännite ei tee siirrosta nopeampaa, eikä häviö riipu kulkuajasta. Johtoa lämmittää virta: suuremmalla jännitteellä sama teho kulkee pienemmällä virralla, ja $P_\\text{h} = R I^2$ pienenee."
+        },
+        {
+          "text": "Muuntaja kasvattaa tehoa nostaessaan jännitettä, joten perille tulee enemmän tehoa.",
+          "feedback": "Muuntaja ei lisää tehoa: ideaalisessa muuntajassa $U_1 I_1 = U_2 I_2$. Jännitteen kasvaessa virta pienenee, ja juuri pienempi virta pienentää johdon häviöitä $P_\\text{h} = R I^2$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske: valaisinmuuntaja",
+      "prompt": "Pienjännitevalaisimen ideaalinen muuntaja laskee verkkojännitteen $230\\,\\text{V}$ jännitteeksi $12\\,\\text{V}$. Toisiokäämiin kytkettyjen lamppujen yhteinen teho on $60\\,\\text{W}$. Kuinka suuri virta kulkee ensiökäämissä? Vastaa ampeereina.",
+      "answer": 0.26087,
+      "unit": "A",
+      "tolerance": 0.02,
+      "hints": [
+        "Ideaalinen muuntaja ei kuluta energiaa. Mikä on siis ensiökäämiin tuleva teho?",
+        "Ensiöteho on $60\\,\\text{W}$, ja $P = U_1 I_1$.",
+        "$I_1 = 60\\,\\text{W} : 230\\,\\text{V}$."
+      ],
+      "mistakes": [
+        {
+          "value": 5.0,
+          "feedback": "Tämä on toisiovirta $60\\,\\text{W} : 12\\,\\text{V}$. Ensiökäämin jännite on $230\\,\\text{V}$, joten saman tehon virta on paljon pienempi."
+        },
+        {
+          "value": 95.83,
+          "feedback": "Käytit muuntosuhdetta väärin päin. Virrat suhtautuvat kääntäen kuten jännitteet, $I_1 : I_2 = U_2 : U_1$, joten jännitettä laskevan muuntajan ensiövirta on pienempi kuin toisiovirta."
+        }
+      ],
+      "solution": "**Annettu:** ensiöjännite $U_1 = 230\\,\\text{V}$, toisiojännite $U_2 = 12\\,\\text{V}$, lamppujen teho $P = 60\\,\\text{W}$, ideaalinen muuntaja\n\n**Kysytty:** ensiövirta $I_1$ ampeereina\n\n**Periaate:** Ideaalinen muuntaja ei kuluta energiaa, joten ensiökäämiin tuleva teho on sama kuin toisiokäämistä lamppuihin lähtevä teho, $U_1 I_1 = U_2 I_2 = P$.\n\n**Kaava:** $P = U_1 I_1$, josta $I_1 = \\dfrac{P}{U_1}$\n\n**Muunnokset:** Ei tarvita: teho on watteina ja jännite voltteina, ja $\\tfrac{\\text{W}}{\\text{V}} = \\text{A}$.\n\n**Sijoitus:** $I_1 = \\dfrac{60\\,\\text{W}}{230\\,\\text{V}} = 0{,}2609\\,\\text{A}$\n\n**Vastaus:** $0{,}26\\,\\text{A}$, kaksi merkitsevää numeroa kuten teho $60\\,\\text{W}$.\n\n**Järkevyys:** Toisiovirta on $60\\,\\text{W} : 12\\,\\text{V} = 5{,}0\\,\\text{A}$. Jännitettä laskevan muuntajan ensiövirran on oltava pienempi, ja suhde $5{,}0\\,\\text{A} : 0{,}26\\,\\text{A} \\approx 19$ on sama kuin jännitteiden suhde $230\\,\\text{V} : 12\\,\\text{V} \\approx 19$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: muuntaja sähköverkossa",
+      "prompt": "Selitä, miten muuntaja muuttaa jännitettä. Selitä myös, miksi sähköverkko käyttää vaihtovirtaa eikä tasavirtaa, kun jännitettä pitää muuttaa matkalla voimalaitokselta kotiin.",
+      "model": "Ensiökäämin vaihtovirta synnyttää rautasydämeen magneettivuon, joka muuttuu virran tahdissa. Rautasydän ohjaa vuon myös toisiokäämin läpi, ja muuttuva vuo indusoi toisiokäämin jokaiseen kierrokseen yhtä suuren jännitteen. Siksi käämin jännite on verrannollinen kierrosten lukumäärään, ja ideaalisessa muuntajassa $U_1 : U_2 = N_1 : N_2$. Teho säilyy, joten jännitteen kasvaessa virta pienenee. Tasavirta synnyttää vakiosuuruisen vuon, joka ei indusoi jännitettä, joten muuntaja ei toimi tasavirralla. Vaihtojännite voidaan muuntajilla nostaa siirtoa varten suurjännitteeksi, jolloin virta ja häviöt $P_\\text{h} = R I^2$ ovat pieniä, ja laskea perillä turvalliseksi $230\\,\\text{V}$:ksi.",
+      "criteria": [
+        "Kerron, että ensiökäämin vaihtovirta synnyttää rautasydämeen muuttuvan magneettivuon, joka kulkee toisiokäämin läpi.",
+        "Selitän, että muuttuva vuo indusoi toisiokäämiin jännitteen, joka on verrannollinen kierrosten lukumäärään.",
+        "Selitän, että tasavirran vuo ei muutu, joten tasavirralla toisiokäämiin ei indusoidu jännitettä.",
+        "Kytken jännitteen muuttamisen siirtohäviöihin: suurjännitteellä virta ja häviöt ovat pienet."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

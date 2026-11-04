@@ -9,9 +9,9 @@
       correct option is shown with its reasoning (teacher 2026-11-03).
    3. Experiments (.experiment): drive window.simAdapter — set the initial conditions, lock the controlled
       parameters, record the varied parameter and the measured quantities into a table, reset. The table is kept in
-      localStorage (ruukkilabra:<page>:koe<n>) until Nollaa, and exported: Kopioi taulukko (TSV) and Lataa CSV, both
+      localStorage (ruukkilabra:<page>:koe<n>) until Nollaa, and copied with Kopioi taulukko (TSV)
       with a decimal comma and the headings' data-plain text (teacher 2026-11-03).
-   4. Numeric tasks: common-mistake feedback (data-mistakes) on top of lesson.js; hints in view, opened in order.
+   4. Numeric tasks: common-mistake feedback (data-mistakes) on top of lesson.js; every hint in view and open.
    5. Explanations: model answer and self-assessment criteria once the student has ticked "Olen tehnyt ratkaisun", then
       the unticked criteria as the reasoning to add and where to practise it; a
       conclusion (data-after) also waits for the measurements of its experiments and copies tables and text for notes.
@@ -42,7 +42,7 @@
   const asHtml = (n) => { const c = n.cloneNode(true); c.querySelectorAll('input, .feedback').forEach((x) => x.remove()); c.querySelectorAll('.scenario').forEach((x) => x.after(' ')); return c.innerHTML.trim(); };
   const measured = {};              // experiment id -> number of recorded measurements
   // 3b. the exported table (teacher 2026-11-03): headings without LaTeX (th[data-plain]), numbers with a decimal comma in
-  // every language (a Finnish spreadsheet reads them as numbers), TSV for the clipboard, CSV with ";" and a BOM.
+  // every language (a Finnish spreadsheet reads them as numbers), TSV for the clipboard (Lataa CSV dropped, teacher 2026-11-04).
   const pageId = (location.pathname.split('/').pop() || 'index').replace(/\.html?$/, '');
   const attr = (t) => String(t).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
   const cell = (raw, shownAs) => {     // a measured value as a spreadsheet takes it: 1,25 and -0,500, a word as a word
@@ -58,7 +58,6 @@
     return body.length ? [head, ...body] : [];
   };
   const asTsv = (rows) => rows.map((r) => r.map((c) => c.replace(/[\t\r\n]+/g, ' ')).join('\t')).join('\n');
-  const asCsv = (rows) => rows.map((r) => r.map((c) => (/[;"\r\n]/.test(c) ? '"' + c.replace(/"/g, '""') + '"' : c)).join(';')).join('\r\n') + '\r\n';
   const copyText = (text, done) => {   // the clipboard API, then a hidden textarea and execCommand('copy')
     const fallback = () => { const t = document.createElement('textarea'); t.value = text; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
       document.body.appendChild(t); t.select(); let ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; } t.remove(); done(ok); };
@@ -214,7 +213,7 @@
     const varyName = ex.dataset.varyName || vary, lockedNames = ex.dataset.lockedNames ? JSON.parse(ex.dataset.lockedNames) : locked;
     const start = ex.querySelector('.exp-start'), rec = ex.querySelector('.exp-record'), reset = ex.querySelector('.exp-reset');
     const tbody = ex.querySelector('tbody'), status = ex.querySelector('.exp-status'), question = ex.querySelector('.exp-question');
-    const copyBtn = ex.querySelector('.exp-copy'), csvBtn = ex.querySelector('.exp-csv'), expStatus = ex.querySelector('.exp-export-status');
+    const copyBtn = ex.querySelector('.exp-copy'), expStatus = ex.querySelector('.exp-export-status');
     const n = [...document.querySelectorAll('.experiment')].indexOf(ex) + 1;   // Koe 1, Koe 2, … in page order
     const skey = 'ruukkilabra:' + pageId + ':koe' + n;
     const saved = (() => { try { const v = JSON.parse(localStorage.getItem(skey)); return v && v.vary === vary && JSON.stringify(v.measure) === JSON.stringify(measure) && Array.isArray(v.rows) ? v.rows : null; } catch (e) { return null; } })();
@@ -242,7 +241,7 @@
           tbody.appendChild(tr);
         });
         typeset(tbody);
-        [copyBtn, csvBtn].forEach((b) => { if (b) b.disabled = !rows.length; });
+        if (copyBtn) copyBtn.disabled = !rows.length;
         if (expStatus) expStatus.textContent = '';
         keep(rows);
       };
@@ -252,13 +251,6 @@
         if (!text) return;
         copyText(text, (ok) => { if (ok) { expStatus.textContent = msg('exp_copied'); setTimeout(() => { if (expStatus.textContent === msg('exp_copied')) expStatus.textContent = ''; }, 4000); }
           else { expStatus.textContent = msg('exp_copy_failed'); showText(ex.querySelector('.exp-controls'), text); } });
-      });
-      if (csvBtn) csvBtn.addEventListener('click', () => {
-        const data = tableRows(ex.querySelector('table.exp-table'));
-        if (!data.length) return;
-        const url = URL.createObjectURL(new Blob(['\ufeff' + asCsv(data)], { type: 'text/csv;charset=utf-8' }));
-        const a = document.createElement('a'); a.href = url; a.download = pageId + '-koe' + n + '.csv'; a.hidden = true;
-        document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
       });
       if (!A) {
         say(msg('exp_no_sim'));
@@ -295,7 +287,7 @@
     });
   });
 
-  // 4. numeric tasks: common-mistake feedback and progressive hints
+  // 4. numeric tasks: common-mistake feedback
   document.querySelectorAll('.act-numeric form.check, .exp-question form.check, .interpret form.check').forEach((form) => {
     let mistakes = [];
     try { mistakes = JSON.parse(form.dataset.mistakes || '[]'); } catch (e) { mistakes = []; }
@@ -308,19 +300,7 @@
       if (m) { out.textContent = m.feedback; out.dataset.state = 'no'; if (m.feedback.includes('$')) typeset(out); }
     });
   });
-  // hints open in order (teacher 2026-11-03): every hint is in view from the start, a later one locked (dimmed, with
-  // the reason) until the one before it has been opened; lesson.js keeps a locked summary from opening its box
-  document.querySelectorAll('.hints').forEach((h) => {
-    const items = [...h.querySelectorAll('details.hint')];
-    const unlock = (d) => { delete d.dataset.locked; const s = d.querySelector(':scope > summary'); s.removeAttribute('aria-disabled'); s.querySelector('.lock-note')?.remove(); };
-    items.forEach((d, i) => {
-      if (i && !window.flSolutionsOpen) {
-        d.dataset.locked = '1'; const sum = d.querySelector(':scope > summary'); sum.setAttribute('aria-disabled', 'true');
-        const n = document.createElement('span'); n.className = 'lock-note'; n.textContent = msg('locked_hint', { n: i }); sum.append(n);
-      }
-      d.addEventListener('toggle', () => { if (d.open && items[i + 1]) unlock(items[i + 1]); });
-    });
-  });
+  // hints (teacher 2026-11-04): every hint is in view and opens freely, no lock between them
 
   // 5. explanations
   const expMin = (eid) => Number(document.querySelector(`#${CSS.escape(eid)} .experiment`)?.dataset.min || 2);

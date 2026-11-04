@@ -1,0 +1,38 @@
+{
+  "id": "fy7-4",
+  "course": "FY7",
+  "title": "Voima virtajohtimeen: sähkömoottori ja kaiutin",
+  "goals": [
+    "LOPS FY7: virtajohtimen magneettikenttä ja kahden virtajohtimen välinen voima",
+    "Täsmennys: voima F = IlB sin α virtajohtimeen magneettikentässä, kahden virtajohtimen välinen voima; sovelluksina tasavirtamoottori ja kaiutin"
+  ],
+  "prerequisites": [
+    "fy7-3"
+  ],
+  "glossary": [
+    "sähkömoottori",
+    "kaiutin",
+    "virtasilmukka"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "sähkömoottori",
+      "explain": "Laite, jossa magneettikenttä kääntää virtasilmukkaa. Se muuttaa sähköenergiaa liike-energiaksi."
+    },
+    {
+      "term": "virtasilmukka",
+      "explain": "Suljettu johdinsilmukka, jossa kulkee virta. Homogeenisessa kentässä sen vastakkaisiin sivuihin kohdistuvat vastakkaiset voimat."
+    },
+    {
+      "term": "kaiutin",
+      "explain": "Laite, jonka kelassa kulkee vaihtovirta. Magneettikenttä liikuttaa kelaa ja kartiota edestakaisin, ja kartion liike synnyttää äänen."
+    },
+    {
+      "term": "magneettinen voima",
+      "explain": "Voima, jonka magneettikenttä kohdistaa johtimeen, jossa kulkee virta."
+    }
+  ]
+}

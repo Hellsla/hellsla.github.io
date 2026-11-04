@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Valkoinen valo kulkee vinosti tasapaksun ikkunalasin läpi. Miksi ikkuna ei hajota valoa näkyvästi väreiksi, vaikka lasissa on dispersiota?",
+    "a": "Lasin sisällä värit kulkevat hieman eri suuntiin, mutta tasapaksun lasin pinnat ovat yhdensuuntaiset. Toisessa pinnassa jokainen väri taittuu takaisin alkuperäisen säteen suuntaiseksi, joten värit jatkavat samaan suuntaan vain hiukan sivusuunnassa siirtyneinä. Prisman vinot pinnat sen sijaan kasvattavat suuntaeroa."
+  },
+  {
+    "q": "Aurinko paistaa $50^\\circ$:n korkeudelta, ja edessä sataa. Näkyykö tasaisella maalla seisovalle sateenkaari?",
+    "a": "Ei näy. Vastapiste on $50^\\circ$ horisontin alapuolella, joten punaisen kaaren huippu olisi korkeudella $42^\\circ - 50^\\circ = -8^\\circ$ eli horisontin alapuolella. Sateenkaari näkyy maan pinnalta vain, kun aurinko on alle $42^\\circ$:n korkeudella."
+  }
+]

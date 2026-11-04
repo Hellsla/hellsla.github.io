@@ -1,0 +1,23 @@
+{
+  "id": "fy7-7",
+  "course": "FY7",
+  "title": "The generator and alternating current",
+  "goals": [
+    "LOPS FY7: the generator, the origin of alternating current",
+    "Clarification: a coil in a rotating magnetic field, or a rotating coil in a magnetic field; justify why a sinusoidal induced voltage arises in the coil",
+    "Thematic study: wind power"
+  ],
+  "prerequisites": [
+    "fy7-6"
+  ],
+  "glossary": [
+    "generaattori",
+    "vaihtovirta",
+    "vaihtojännite",
+    "tehollinen arvo",
+    "huippuarvo"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
