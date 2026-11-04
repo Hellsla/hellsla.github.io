@@ -52,17 +52,17 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Se hidastaa nopeat neutronit, koska hitaat neutronit aiheuttavat uraani-235:n fissioita todennäköisemmin kuin nopeat.",
-          "correct": true,
-          "feedback": "Oikein: fissiossa syntyvät neutronit ovat hyvin nopeita, ja uraani-235-ydin kaappaa hitaan neutronin helpommin kuin nopean. Hidastin törmäyttää neutronit kevyisiin ytimiin ja pienentää niiden nopeutta, jolloin ketjureaktio jatkuu."
-        },
-        {
           "text": "Se imee neutroneja itseensä, jolloin kasvukerroin pysyy lähellä lukua yksi eikä ketjureaktio pääse kiihtymään hallitsemattomasti.",
           "feedback": "Tämä on säätösauvojen tehtävä. Säätösauvat sisältävät ainetta, joka sitoo neutroneja, ja niillä kasvukerrointa säädetään. Hidastin ei poista neutroneja vaan pienentää niiden nopeutta."
         },
         {
           "text": "Se siirtää fissioissa vapautuneen lämmön turbiinille, koska vesi johtaa lämpöä paremmin kuin uraanipolttoaine itse.",
           "feedback": "Lämmön siirtäminen on jäähdytteen tehtävä, ja vesi voi toimia reaktorissa sekä jäähdytteenä että hidastimena. Hidastimen oma tehtävä liittyy neutroneihin eikä lämmönsiirtoon."
+        },
+        {
+          "text": "Se hidastaa nopeat neutronit, koska hitaat neutronit aiheuttavat uraani-235:n fissioita todennäköisemmin kuin nopeat.",
+          "correct": true,
+          "feedback": "Oikein: fissiossa syntyvät neutronit ovat hyvin nopeita, ja uraani-235-ydin kaappaa hitaan neutronin helpommin kuin nopean. Hidastin törmäyttää neutronit kevyisiin ytimiin ja pienentää niiden nopeutta, jolloin ketjureaktio jatkuu."
         },
         {
           "text": "Se lisää neutronien määrää, koska hidastuessaan jokainen neutroni jakautuu useammaksi pienemmäksi neutroniksi eri suuntiin.",
@@ -82,11 +82,6 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Ytimet hylkivät toisiaan sähköisesti, joten ne tarvitsevat suuren liike-energian päästäkseen toisiaan lähelle.",
-          "correct": true,
-          "feedback": "Oikein: atomiytimillä on positiivinen varaus, joten ne hylkivät toisiaan. Vasta kun ytimet ovat hyvin lähellä toisiaan, lyhyen kantaman ydinvoimat voittavat hylkimisen, ja korkeassa lämpötilassa ytimillä on tarpeeksi liike-energiaa lähestymiseen."
-        },
-        {
           "text": "Kuumassa ytimien massa pienenee, ja tämä massan pieneneminen on se energia, jonka fuusio tarvitsee käynnistyäkseen.",
           "feedback": "Lämpötila ei pienennä ytimien massaa. Fuusiossa massa pienenee vasta reaktiossa, ja massaeroa vastaava energia vapautuu eikä sitä tarvita käynnistykseen."
         },
@@ -97,6 +92,11 @@
         {
           "text": "Ytimet yhtyvät vain nesteessä, ja korkea lämpötila tarvitaan siihen, että aine pysyy nestemäisenä koko reaktion ajan.",
           "feedback": "Aine on näin kuumassa plasmaa eikä nestettä. Syy ei ole aineen olomuoto vaan se, että ytimien välinen sähköinen hylkiminen täytyy voittaa suurella liike-energialla."
+        },
+        {
+          "text": "Ytimet hylkivät toisiaan sähköisesti, joten ne tarvitsevat suuren liike-energian päästäkseen toisiaan lähelle.",
+          "correct": true,
+          "feedback": "Oikein: atomiytimillä on positiivinen varaus, joten ne hylkivät toisiaan. Vasta kun ytimet ovat hyvin lähellä toisiaan, lyhyen kantaman ydinvoimat voittavat hylkimisen, ja korkeassa lämpötilassa ytimillä on tarpeeksi liike-energiaa lähestymiseen."
         }
       ]
     },
@@ -190,7 +190,7 @@
     {
       "id": "fy8-11-L2-06",
       "level": 2,
-      "text": "Taulukossa ovat Suomen ydinvoimalareaktoreiden nettosähkötehot pyöristettyinä (TVO ja Fortum, 2024).\n\na) Laske reaktoreiden yhteenlaskettu nettosähköteho.\n\nb) Reaktorit tuottavat vuodessa ($365\\,\\text{d}$) energiaa $90\\,\\%$ siitä, mitä ne tuottaisivat käydessään koko vuoden nimellisteholla (kapasiteettikerroin $0{,}90$, oletus). Kuinka paljon sähköenergiaa se on? Anna vastaus terawattitunteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "text": "Taulukossa ovat Suomen ydinvoimalareaktoreiden nettosähkötehot pyöristettyinä (TVO:n ja Fortumin verkkosivut, tilanne 2024).\n\na) Laske reaktoreiden yhteenlaskettu nettosähköteho.\n\nb) Reaktorit tuottavat vuodessa ($365\\,\\text{d}$) energiaa $90\\,\\%$ siitä, mitä ne tuottaisivat käydessään koko vuoden nimellisteholla (kapasiteettikerroin $0{,}90$, oletus). Kuinka paljon sähköenergiaa se on? Anna vastaus terawattitunteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
       "kind": [
         "data"
       ],
@@ -198,7 +198,7 @@
       "unit": "TWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Suomen ydinvoimalareaktorit, nettosähköteho (TVO ja Fortum, 2024)",
+        "caption": "Suomen ydinvoimalareaktorit, nettosähköteho (MW) (TVO:n ja Fortumin verkkosivut, tilanne 2024)",
         "columns": [
           "Voimala",
           "Reaktori",
@@ -293,7 +293,7 @@
     {
       "id": "fy8-11-L3-04",
       "level": 3,
-      "text": "Reaktorista poistetun käytetyn ydinpolttoaineen aktiivisuus mitattiin jäähdytysaltaassa viiden vuosikymmenen ajan (taulukko, esimerkkiaineisto, aktiivisuus tonnia polttoainetta kohti). Alussa aktiivisuuden määräävät pääasiassa fissiotuotteet.\n\na) Piirrä aktiivisuuden luonnollinen logaritmi $\\ln A$ ajan funktiona, sovita pisteisiin suora ja määritä sen avulla aktiivisuuden puoliintumisaika.\n\nb) Oletetaan, että polttoainetta voidaan siirtää väliaikaisvarastoon vasta, kun sen aktiivisuus on laskenut arvoon $10\\,\\tfrac{\\text{TBq}}{\\text{t}}$ (esimerkkiarvo). Kuinka monta vuotta poistosta tähän kuluu, jos aktiivisuus noudattaa koko ajan samaa hajoamislakia?\n\nc) Perustele, miksi todellinen aktiivisuus ei noudata tätä lakia vielä satojen vuosien kuluttua ja miksi Onkaloon loppusijoitettu polttoaine on eristettävä tuhansia vuosia. Käytä esimerkkinä plutonium-239:ää, jonka puoliintumisaika on $24\\,100\\,\\text{a}$.\n\nVastauslaatikkoon tulee kohdan b) tulos vuosina.",
+      "text": "Reaktorista poistetun käytetyn ydinpolttoaineen aktiivisuus mitattiin jäähdytysaltaassa viiden vuosikymmenen ajan (taulukko, esimerkkiaineisto, aktiivisuus tonnia polttoainetta kohti). Aika $t$ lasketaan noin $10$ vuotta poiston jälkeen, kun lyhytikäiset fissiotuotteet ovat jo hajonneet. Tällöin aktiivisuuden määräävät pääasiassa cesium-137 ja strontium-90.\n\na) Piirrä aktiivisuuden luonnollinen logaritmi $\\ln A$ ajan funktiona, sovita pisteisiin suora ja määritä sen avulla aktiivisuuden puoliintumisaika.\n\nb) Kuinka monta vuotta kuluu, kunnes fissiotuotteiden aktiivisuus on laskenut arvoon $100\\,\\tfrac{\\text{TBq}}{\\text{t}}$ (esimerkkiarvo), jos aktiivisuus noudattaa koko ajan samaa hajoamislakia?\n\nc) Perustele, miksi todellinen aktiivisuus ei noudata tätä lakia vielä satojen vuosien kuluttua ja miksi Onkaloon loppusijoitettu polttoaine on eristettävä tuhansia vuosia. Käytä esimerkkinä plutonium-239:ää, jonka puoliintumisaika on $24\\,100\\,\\text{a}$.\n\nVastauslaatikkoon tulee kohdan b) tulos vuosina.",
       "kind": [
         "data",
         "graph",
@@ -312,27 +312,27 @@
         "rows": [
           [
             "0",
-            "3000"
+            "30000"
           ],
           [
             "10",
-            "2390"
+            "23900"
           ],
           [
             "20",
-            "1925"
+            "19250"
           ],
           [
             "30",
-            "1505"
+            "15050"
           ],
           [
             "40",
-            "1195"
+            "11950"
           ],
           [
             "50",
-            "965"
+            "9650"
           ]
         ]
       }
@@ -340,12 +340,12 @@
     {
       "id": "fy8-11-L3-05",
       "level": 3,
-      "text": "Loviisan voimalan yhden reaktorin nettosähköteho on $507\\,\\text{MW}$ (Fortum, 2024). Oleta, että voimalan hyötysuhde on $0{,}33$ eli sähköteho on $33\\,\\%$ reaktorin lämpötehosta, ja että reaktori toimii $92\\,\\%$ vuodesta ($365\\,\\text{d}$) täydellä teholla. Oleta myös, että kaikki lämpöteho syntyy uraani-235:n fissioista, joissa kussakin vapautuu $200\\,\\text{MeV}$. Uraani-235:n atomimassa on $235{,}0439282\\,\\text{u}$, $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Laske reaktorin lämpöteho ja se teho, joka siirtyy voimalasta jäähdytysveteen.\n\nb) Kuinka monta kilogrammaa uraani-235:tä fissioituu reaktorissa vuodessa?\n\nc) Kuinka monta tonnia kivihiiltä pitäisi polttaa saman lämpöenergian tuottamiseksi, kun kivihiilen lämpöarvo on $24\\,\\tfrac{\\text{MJ}}{\\text{kg}}$? Mitä vertailu kertoo ydinreaktioiden ja palamisen energioista?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "text": "Loviisan voimalan yhden reaktorin nettosähköteho on $507\\,\\text{MW}$ (Fortum, 2024).\n\nOleta, että voimalan hyötysuhde on $0{,}33$ eli sähköteho on $33\\,\\%$ reaktorin lämpötehosta, ja että reaktori toimii $92\\,\\%$ vuodesta ($365\\,\\text{d}$) täydellä teholla. Oleta myös, että kaikki lämpöteho syntyy uraani-235:n fissioista, joissa kussakin vapautuu $200\\,\\text{MeV}$.\n\nUraani-235:n atomimassa on $235{,}0439282\\,\\text{u}$, $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Laske reaktorin lämpöteho ja se teho, joka siirtyy voimalasta jäähdytysveteen.\n\nb) Kuinka monta kilogrammaa uraani-235:tä fissioituu reaktorissa vuodessa?\n\nc) Kuinka monta tonnia kivihiiltä pitäisi polttaa saman lämpöenergian tuottamiseksi, kun kivihiilen lämpöarvo on $24\\,\\tfrac{\\text{MJ}}{\\text{kg}}$? Mitä vertailu kertoo ydinreaktioiden ja palamisen energioista?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
       "kind": [
         "model",
         "reasoning"
       ],
-      "answer": 543,
+      "answer": 540,
       "unit": "kg",
       "tolerance": 0.02
     }

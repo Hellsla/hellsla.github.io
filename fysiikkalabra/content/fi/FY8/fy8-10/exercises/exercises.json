@@ -52,13 +52,13 @@
       "tolerance": 0.02,
       "choices": [
         {
+          "text": "Energia, joka on varastoituna ytimeen ja joka vapautuu, kun ydin hajotetaan erillisiksi nukleoneiksi.",
+          "feedback": "Tämä on väärinpäin: ytimen hajottaminen vaatii energiaa eikä vapauta sitä. Energia vapautui jo silloin, kun nukleonit sitoutuivat ytimeksi."
+        },
+        {
           "text": "Energia, joka tarvitaan ytimen hajottamiseen erillisiksi nukleoneiksi ja joka vapautui ytimen syntyessä.",
           "correct": true,
           "feedback": "Oikein: ydin on vakaampi ja kevyempi kuin erilliset nukleonit. Massavajetta $\\Delta m$ vastaava energia $\\Delta m\\,c^2$ vapautui ytimen syntyessä, ja sama energia täytyy antaa takaisin, jotta nukleonit saadaan erilleen."
-        },
-        {
-          "text": "Energia, joka on varastoituna ytimeen ja joka vapautuu, kun ydin hajotetaan erillisiksi nukleoneiksi.",
-          "feedback": "Tämä on yleinen virhekäsitys, joka on käännetty väärinpäin. Ytimen hajottaminen vaatii energiaa eikä vapauta sitä: energia vapautui jo silloin, kun nukleonit sitoutuivat ytimeksi."
         },
         {
           "text": "Ytimen nukleonien yhteenlaskettu liike-energia, joka estää ydintä hajoamasta erillisiksi nukleoneiksi.",
@@ -94,21 +94,21 @@
       "tolerance": 0.02,
       "choices": [
         {
+          "text": "Näillä ytimillä on suurin koko ytimen sidosenergia $E_\\text{B}$ kaikista ytimistä, myös uraanin ytimestä, koska ne ovat tiiviisti sidottuja.",
+          "feedback": "Koko ytimen sidosenergia kasvaa nukleonien määrän mukana, joten esimerkiksi uraani-238:lla se on noin $1800\\,\\text{MeV}$ ja rauta-56:lla vain noin $490\\,\\text{MeV}$. Huippu koskee sidosenergiaa nukleonia kohti."
+        },
+        {
+          "text": "Näihin ytimiin on varastoitunut eniten energiaa, joten ne vapauttavat eniten energiaa hajotessaan osiinsa.",
+          "feedback": "Sidosenergia ei ole varastoitua energiaa. Ytimen hajottaminen vaatii energiaa, ja suurin vaatimus nukleonia kohti on juuri näillä ytimillä, joten ne ovat pysyviä eivätkä vapauta energiaa."
+        },
+        {
           "text": "Nukleonit ovat näissä ytimissä keskimäärin tiiviimmin sidottuja kuin muissa, joten ytimet ovat erityisen pysyviä.",
           "correct": true,
           "feedback": "Oikein: suuri $\\tfrac{E_\\text{B}}{A}$ tarkoittaa, että yhden nukleonin irrottamiseen tarvitaan keskimäärin paljon energiaa. Rauta ja nikkeli ovat siksi kuvaajan huipulla, ja niiden ytimet ovat erityisen pysyviä."
         },
         {
-          "text": "Näillä ytimillä on suurin koko ytimen sidosenergia $E_\\text{B}$ kaikista ytimistä, myös uraanin ytimestä.",
-          "feedback": "Koko ytimen sidosenergia kasvaa nukleonien määrän mukana, joten esimerkiksi uraani-238:lla se on noin $1800\\,\\text{MeV}$ ja rauta-56:lla vain noin $490\\,\\text{MeV}$. Huippu koskee sidosenergiaa nukleonia kohti."
-        },
-        {
-          "text": "Näihin ytimiin on varastoitunut eniten energiaa, joten ne vapauttavat eniten energiaa hajotessaan.",
-          "feedback": "Sidosenergia ei ole varastoitua energiaa. Ytimen hajottaminen vaatii energiaa, ja suurin vaatimus nukleonia kohti on juuri näillä ytimillä, joten ne ovat pysyviä eivätkä vapauta energiaa."
-        },
-        {
-          "text": "Näissä ytimissä massavaje nukleonia kohti on pienin, joten ne ovat kevyimpiä mahdollisia ytimiä.",
-          "feedback": "Massavajetta vastaa sidosenergia, joten suuri sidosenergia nukleonia kohti tarkoittaa suurta massavajetta nukleonia kohti, ei pientä. Suurin sidosenergia nukleonia kohti tarkoittaa siis suurinta massavajetta nukleonia kohti."
+          "text": "Näissä ytimissä massavaje nukleonia kohti on pienin, joten ne ovat kevyimpiä kaikista mahdollisista ytimistä.",
+          "feedback": "Massavajetta vastaa sidosenergia, joten suurin sidosenergia nukleonia kohti tarkoittaa suurinta massavajetta nukleonia kohti, ei pienintä. Ytimen massa ei myöskään kerro sidoksesta, koska raskaammilla ytimillä on enemmän nukleoneja."
         }
       ]
     }
@@ -149,7 +149,7 @@
     {
       "id": "fy8-10-L2-05",
       "level": 2,
-      "text": "Taulukossa on kahdeksan nuklidin atomimassat. Käytä vetyatomin massaa $m_\\text{H} = 1{,}007825\\,\\text{u}$, neutronin massaa $m_\\text{n} = 1{,}008665\\,\\text{u}$ ja muuntoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$.\n\na) Laske jokaisen nuklidin massavaje, sidosenergia ja sidosenergia nukleonia kohti. Järjestä nuklidit sidosenergian nukleonia kohti mukaan pienimmästä suurimpaan.\n\nb) Mikä nuklideista on tiiviimmin sidottu kuin kaikki muut, ja kuinka suuri on sen sidosenergia nukleonia kohti? Vastauslaatikkoon tulee b-kohdan arvo megaelektronivoltteina.",
+      "text": "Taulukossa on kahdeksan nuklidin atomimassat. Käytä vetyatomin massaa $m_\\text{H} = 1{,}007825\\,\\text{u}$, neutronin massaa $m_\\text{n} = 1{,}008665\\,\\text{u}$ ja muuntoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Voit käyttää taulukkolaskentaa.\n\na) Laske jokaisen nuklidin massavaje, sidosenergia ja sidosenergia nukleonia kohti. Järjestä nuklidit sidosenergian nukleonia kohti mukaan pienimmästä suurimpaan.\n\nb) Mikä nuklideista on tiiviimmin sidottu kuin kaikki muut, ja kuinka suuri on sen sidosenergia nukleonia kohti? Vastauslaatikkoon tulee b-kohdan arvo megaelektronivoltteina.",
       "kind": [
         "data",
         "reasoning"
@@ -232,31 +232,31 @@
     {
       "id": "fy8-10-L2-07",
       "level": 2,
-      "text": "Rauta-56:n sidosenergia nukleonia kohti on suurin kaikista ytimistä. Miksi rautaytimistä ei saada energiaa muuttamalla niitä toisiksi ytimiksi, ei yhdistämällä eikä halkaisemalla?",
+      "text": "Rauta-56 on sidosenergiakäyrän huipulla nikkeli-62:n kanssa, noin $8{,}8\\,\\text{MeV}$ nukleonia kohti. Miksi energiaa ei saada yhdistämällä rautaytimiä toisiinsa tai halkaisemalla niitä?",
       "kind": [
         "concept",
         "reasoning"
       ],
-      "answer": "Raudalla nukleonit ovat tiiviimmin sidottuja kuin muilla, joten syntyvissä ytimissä sidos olisi löyhempi ja reaktio vaatisi energiaa.",
+      "answer": "Syntyvissä ytimissä nukleonit olisivat keskimäärin löyhemmin sidottuja, joten sidosenergia pienenisi ja reaktio vaatisi energiaa.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Raudalla nukleonit ovat tiiviimmin sidottuja kuin muilla, joten syntyvissä ytimissä sidos olisi löyhempi ja reaktio vaatisi energiaa.",
-          "correct": true,
-          "feedback": "Oikein: energiaa vapautuu vain, jos syntyvien ytimien sidosenergia on yhteensä suurempi kuin alkuperäisten. Raudan huipun molemmin puolin $\\tfrac{E_\\text{B}}{A}$ on pienempi, joten sekä fuusio että fissio veisivät nukleonit kohti löyhempää sidosta ja vaatisivat energiaa."
-        },
-        {
-          "text": "Raudan ytimen massavaje on pienin kaikista ytimistä, joten siitä ei voi vapautua energiaa missään ydinreaktiossa.",
-          "feedback": "Massavaje ei ole pienin vaan nukleonia kohti suurin, koska sidosenergia nukleonia kohti on raudalla suurin. Ratkaisevaa ei ole massavaje yksinään, vaan se, kasvaako sidosenergia reaktiossa."
+          "text": "Rautaytimillä sähköinen hylkiminen on niin voimakasta, että ne eivät pääse tarpeeksi lähelle toisiaan, joten mikään reaktio ei onnistu.",
+          "feedback": "Sähköinen hylkiminen vaikuttaa vain siihen, kuinka vaikeasti fuusio käynnistyy, ei siihen, vapautuuko reaktiossa energiaa. Halkaisemisessa ytimien ei tarvitse lähestyä toisiaan lainkaan. Ratkaisevaa on, kasvaako sidosenergia reaktiossa."
         },
         {
           "text": "Rauta on kemiallisesti niin pysyvä aine, että sen atomiytimet eivät voi osallistua minkäänlaisiin ydinreaktioihin.",
           "feedback": "Kemiallinen pysyvyys koskee elektroneja ja atomien välisiä sidoksia, ei ytimiä. Raudan ytimiä voidaan muuttaa ydinreaktioissa, mutta se vaatisi energiaa, ei vapauttaisi sitä."
         },
         {
-          "text": "Raudan ytimen koko sidosenergia on suurin kaikista ytimistä, joten sen halkaiseminen vapauttaisi eniten energiaa.",
-          "feedback": "Koko sidosenergia on suurin raskailla ytimillä, ei raudalla, ja ytimen hajottaminen vaatii energiaa eikä vapauta sitä. Energia vapautuu vain, kun nukleonit päätyvät tiiviimmin sidottuihin ytimiin."
+          "text": "Raudan ytimessä on yhtä monta protonia ja neutronia, joten nukleonit eivät voi järjestyä uudelleen vapauttaen energiaa.",
+          "feedback": "Rauta-56:ssa on $26$ protonia ja $30$ neutronia, joten väite ei pidä paikkaansa. Energian vapautuminen ei myöskään riipu protonien ja neutronien lukumäärien yhtäsuuruudesta vaan siitä, kasvaako sidosenergia reaktiossa."
+        },
+        {
+          "text": "Syntyvissä ytimissä nukleonit olisivat keskimäärin löyhemmin sidottuja, joten sidosenergia pienenisi ja reaktio vaatisi energiaa.",
+          "correct": true,
+          "feedback": "Oikein: energiaa vapautuu vain, jos syntyvien ytimien sidosenergia on yhteensä suurempi kuin alkuperäisten. Huipun molemmin puolin $\\tfrac{E_\\text{B}}{A}$ on pienempi, joten rautaytimien yhdistäminen tai halkaiseminen veisi nukleonit kohti löyhempää sidosta ja vaatisi energiaa. Muiden ytimien kanssa reaktio voi silti vapauttaa energiaa."
         }
       ]
     }
@@ -289,7 +289,7 @@
     {
       "id": "fy8-10-L3-04",
       "level": 3,
-      "text": "Kun neutroni osuu uraani-235-ytimeen, ydin voi haljeta kahdeksi kevyemmäksi ytimeksi. Yksi mahdollinen reaktio on ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\to {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}$. Taulukossa on nuklidien atomimassat ja sidosenergiat nukleonia kohti.\n\nKäytä neutronin massaa $m_\\text{n} = 1{,}008665\\,\\text{u}$ sekä arvoja $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$, $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$ ja $1\\,\\text{MeV} = 1{,}602177 \\cdot 10^{-13}\\,\\text{J}$.\n\na) Laske reaktioenergia $Q$ atomimassoista.\n\nb) Laske $Q$ myös taulukon sidosenergioista nukleonia kohti ja vertaa tulosta a-kohtaan. Selitä lyhyesti, miksi tulokset eroavat hieman.\n\nc) Uraani-235-näytteen massa on $1{,}00\\,\\text{g}$, ja kaikki sen ytimet halkeavat edellä kuvatulla tavalla. Kuinka paljon energiaa vapautuu? Perustele, miksi tulos on järkevä. Vastauslaatikkoon tulee c-kohdan tulos yksikössä $10^{10}\\,\\text{J}$.",
+      "text": "Kun neutroni osuu uraani-235-ytimeen, ydin voi haljeta kahdeksi kevyemmäksi ytimeksi. Yksi mahdollinen reaktio on ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\to {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}$. Taulukossa on nuklidien atomimassat ja sidosenergiat nukleonia kohti.\n\nKäytä neutronin massaa $m_\\text{n} = 1{,}008665\\,\\text{u}$ sekä arvoja $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$, $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$ ja $1\\,\\text{MeV} = 1{,}602177 \\cdot 10^{-13}\\,\\text{J}$.\n\na) Laske reaktioenergia $Q$ atomimassoista.\n\nb) Laske $Q$ myös taulukon sidosenergioista nukleonia kohti. Kumpi menetelmä on tarkempi? Perustele lyhyesti, miksi tulokset eroavat hieman.\n\nc) Uraani-235-näytteen massa on $1{,}00\\,\\text{g}$, ja kaikki sen ytimet halkeavat edellä kuvatulla tavalla. Kuinka paljon energiaa vapautuu? Perustele, miksi tulos on järkevä. Vastauslaatikkoon tulee c-kohdan tulos yksikössä $10^{10}\\,\\text{J}$.",
       "kind": [
         "data",
         "model"

@@ -52,17 +52,17 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Jäljellä on neljäsosa ytimistä, koska kumpikin puoliintumisaika poistaa puolet silloin jäljellä olevista.",
-          "correct": true,
-          "feedback": "Oikein: $8{,}0\\,\\text{h}$ on kaksi puoliintumisaikaa. Ensimmäisessä puoliintumisajassa hajoaa puolet ytimistä ja toisessa puolet jäljelle jääneistä, joten alkuperäisistä ytimistä on jäljellä $\\tfrac{1}{2} \\cdot \\tfrac{1}{2} = \\tfrac{1}{4}$."
-        },
-        {
           "text": "Kaikki ytimet ovat hajonneet, koska toinen puoliintumisaika poistaa sen puolikkaan, joka jäi ensimmäisen jälkeen.",
           "feedback": "Tämä on yleinen virhekäsitys. Toinen puoliintumisaika ei poista koko jäljelle jäänyttä osaa vaan vain puolet siitä: jokaisessa puoliintumisajassa hajoaa sama osuus jäljellä olevista ytimistä, joten ytimiä on jäljellä vielä neljäsosa."
         },
         {
           "text": "Puolet ytimistä on jäljellä, koska hajoaminen pysähtyy, kun ensimmäinen puoliintumisaika on kulunut umpeen.",
           "feedback": "Hajoaminen ei pysähdy puoliintumisajan jälkeen. Jokaisella jäljellä olevalla ytimellä on edelleen sama hajoamistodennäköisyys aikayksikköä kohti, joten toisessa puoliintumisajassa puolet jäljellä olevista hajoaa lisää."
+        },
+        {
+          "text": "Jäljellä on neljäsosa ytimistä, koska kumpikin puoliintumisaika poistaa puolet silloin jäljellä olevista.",
+          "correct": true,
+          "feedback": "Oikein: $8{,}0\\,\\text{h}$ on kaksi puoliintumisaikaa. Ensimmäisessä puoliintumisajassa hajoaa puolet ytimistä ja toisessa puolet jäljelle jääneistä, joten alkuperäisistä ytimistä on jäljellä $\\tfrac{1}{2} \\cdot \\tfrac{1}{2} = \\tfrac{1}{4}$."
         },
         {
           "text": "Jäljellä on kahdeksasosa ytimistä, koska vanhat ytimet hajoavat sitä nopeammin, mitä kauemmin ne ovat olleet.",
@@ -124,10 +124,9 @@
       "id": "fy8-9-L2-05",
       "level": 2,
       "kind": [
-        "data",
-        "graph"
+        "data"
       ],
-      "text": "Oppilaat mittasivat barium-$137\\text{m}$-näytteen pulssimääriä Geiger-mittarilla $10\\,\\text{s}$:n jaksoissa $400\\,\\text{s}$:n ajan (esimerkkiaineisto). Taustasäteily mitattiin erikseen ilman näytettä, ja sitä tuli keskimäärin $8$ pulssia $10\\,\\text{s}$:n jaksossa.\n\na) Vähennä taustan osuus kustakin mittaustuloksesta ja laske nettopulssimäärät.\n\nb) Määritä näytteen puoliintumisaika nettopulssimäärien avulla. Voit käyttää hyväksi sitä, että $320\\,\\text{s}$:n kohdalla nettopulssimäärä on pudonnut suunnilleen neljäsosaan alkuarvostaan.\n\nVastauslaatikkoon tulee kohdan b) tulos sekunteina.",
+      "text": "Oppilaat mittasivat barium-$137\\text{m}$-näytteen pulssimääriä Geiger-mittarilla $10\\,\\text{s}$:n jaksoissa $400\\,\\text{s}$:n ajan (esimerkkiaineisto). Taustasäteily mitattiin erikseen ilman näytettä, ja sitä tuli keskimäärin $8$ pulssia $10\\,\\text{s}$:n jaksossa.\n\na) Vähennä taustan osuus kustakin mittaustuloksesta ja laske nettopulssimäärät.\n\nb) Määritä näytteen puoliintumisaika nettopulssimäärien avulla. Voit käyttää hyväksi sitä, että $320\\,\\text{s}$:n kohdalla nettopulssimäärä on pudonnut hieman alle neljäsosaan alkuarvostaan: se on noin $23\\,\\%$ alkuarvosta.\n\nVastauslaatikkoon tulee kohdan b) tulos sekunteina.",
       "answer": 149,
       "unit": "s",
       "tolerance": 0.06,
@@ -192,7 +191,7 @@
         "data",
         "error"
       ],
-      "text": "Radioaktiivisen näytteen pulssimääriä mitattiin $30\\,\\text{s}$:n välein $10\\,\\text{s}$:n jaksoissa (esimerkkiaineisto). Taustasäteilyä tuli erikseen mitattuna $20$ pulssia $10\\,\\text{s}$:n jaksossa.\n\nOppilas ratkaisi puoliintumisajan näin: \"Alussa pulssimäärä on $200$, joten puolet siitä on $100$. Taulukon mukaan pulssimäärä on $100$ noin $70\\,\\text{s}$:n kohdalla, joten puoliintumisaika on $70\\,\\text{s}$.\"\n\na) Määritä näytteen puoliintumisaika oikein vähentämällä tausta.\n\nb) Selitä, miksi oppilaan tulos on liian suuri.\n\nVastauslaatikkoon tulee kohdan a) tulos sekunteina.",
+      "text": "Radioaktiivisen näytteen pulssimääriä mitattiin $30\\,\\text{s}$:n välein $10\\,\\text{s}$:n jaksoissa (esimerkkiaineisto). Taustasäteilyä tuli erikseen mitattuna $20$ pulssia $10\\,\\text{s}$:n jaksossa.\n\nOppilas ratkaisi puoliintumisajan näin: ”Alussa pulssimäärä on $200$, joten puolet siitä on $100$. Taulukon mukaan pulssimäärä on $100$ noin $70\\,\\text{s}$:n kohdalla, joten puoliintumisaika on $70\\,\\text{s}$.”\n\na) Määritä näytteen puoliintumisaika oikein vähentämällä tausta.\n\nb) Selitä, miksi oppilaan tulos on liian suuri.\n\nVastauslaatikkoon tulee kohdan a) tulos sekunteina.",
       "answer": 60,
       "unit": "s",
       "tolerance": 0.05,
@@ -383,7 +382,7 @@
         "model",
         "reasoning"
       ],
-      "text": "Kilpirauhaspotilaalle annettiin jodi-131-valmistetta, ja potilaan kehossa olevan jodi-131:n aktiivisuutta mitattiin $8$ vuorokauden ajan (esimerkkiaineisto). Jodi-131:n fysikaalinen puoliintumisaika on $T_\\text{fys} = 8{,}02\\,\\text{d}$. Aktiivisuus pienenee nopeammin kuin pelkän hajoamisen perusteella, koska elimistö myös poistaa jodia (virtsa, hiki). Poistuminen on biologinen prosessi, jota kuvaa oma puoliintumisaika $T_\\text{bio}$.\n\nHajoaminen ja poistuminen ovat toisistaan riippumattomia, ja kumpikin poistaa ytimiä samalla tavalla eksponentiaalisesti. Ytimen todennäköisyys poistua sekunnissa on siis näiden kahden todennäköisyyden summa, eli kokonaispoistumista kuvaa vakio $\\lambda_\\text{eff} = \\lambda_\\text{fys} + \\lambda_\\text{bio}$.\n\na) Määritä taulukon avulla aktiivisuuden efektiivinen puoliintumisaika $T_\\text{eff}$.\n\nb) Määritä biologinen puoliintumisaika $T_\\text{bio}$.\n\nc) Kuinka monta prosenttia alkuaktiivisuudesta olisi jäljellä $8{,}0\\,\\text{d}$:n kuluttua, jos jodi poistuisi vain fysikaalisen hajoamisen kautta? Vertaa mitattuun arvoon ja päättele, kumpi prosessi vähentää kehon säteilyaltistusta enemmän.\n\nVastauslaatikkoon tulee kohdan b) tulos vuorokausina.",
+      "text": "Kilpirauhaspotilaalle annettiin jodi-131-valmistetta, ja potilaan kehossa olevan jodi-131:n aktiivisuutta mitattiin $8$ vuorokauden ajan (esimerkkiaineisto). Jodi-131:n fysikaalinen puoliintumisaika on $T_\\text{fys} = 8{,}02\\,\\text{d}$. Aktiivisuus pienenee nopeammin kuin pelkän hajoamisen perusteella, koska elimistö myös poistaa jodia (virtsa, hiki). Poistuminen on biologinen prosessi, jota kuvaa oma puoliintumisaika $T_\\text{bio}$.\n\nHajoaminen ja poistuminen ovat toisistaan riippumattomia, ja kumpikin poistaa ytimiä samalla tavalla eksponentiaalisesti. Ytimen todennäköisyys poistua sekunnissa on siis näiden kahden todennäköisyyden summa, eli kokonaispoistumista kuvaa vakio $\\lambda_\\text{eff} = \\lambda_\\text{fys} + \\lambda_\\text{bio}$.\n\na) Määritä taulukon avulla aktiivisuuden efektiivinen puoliintumisaika $T_\\text{eff}$.\n\nb) Määritä biologinen puoliintumisaika $T_\\text{bio}$.\n\nc) Kuinka monta prosenttia alkuaktiivisuudesta olisi jäljellä $8{,}0\\,\\text{d}$:n kuluttua, jos jodi poistuisi vain fysikaalisen hajoamisen kautta? Vertaa mitattuun arvoon ja päättele, kumpi prosessi pienentää kehon jodi-131-aktiivisuutta nopeammin.\n\nVastauslaatikkoon tulee kohdan b) tulos vuorokausina.",
       "answer": 4.96,
       "unit": "d",
       "tolerance": 0.05,
