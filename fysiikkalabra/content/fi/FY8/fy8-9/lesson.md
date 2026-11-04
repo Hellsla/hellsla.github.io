@@ -105,6 +105,8 @@
 
 ## Ydinajatus
 
+<figure class="unit-photo"><img src="pics/fy8/cloud-chamber-radon.webp" alt="Mustalla pohjalla paljon lyhyitä, paksuja valkoisia jälkiä satunnaisissa kohdissa ja suunnissa."><figcaption>Radonin hajoamisia sumukammiossa. Jokainen paksu jälki on yhden ytimen lähettämä alfahiukkanen. Ei voi ennustaa, mikä ydin hajoaa seuraavaksi, mutta suuressa joukossa hajoamisia tapahtuu tasaisesti.</figcaption></figure>
+
 ### Yksittäisen ytimen hajoaminen on satunnaista
 Radioaktiivinen ydin hajoaa ja muuttuu toiseksi ytimeksi (luku *Atomiydin ja radioaktiivinen hajoaminen*), mutta hajoamishetkeä ei voi ennustaa. Kahdesta samanlaisesta ytimestä toinen voi hajota heti ja toinen vasta vuosien päästä. Ennustaa voi vain sen, kuinka todennäköisesti ydin hajoaa tietyn ajan kuluessa. Tämä todennäköisyys on sama kaikille saman isotoopin ytimille, eikä se käytännössä riipu ympäristön lämpötilasta, paineesta tai kemiallisista sidoksista. Se ei riipu myöskään ytimen iästä: ydin ei vanhene. Pitkään hajoamatta säilynyt ydin hajoaa seuraavan sekunnin aikana yhtä todennäköisesti kuin juuri syntynyt.
 
@@ -441,6 +443,8 @@ Koska jokaisella ytimellä on sama hajoamistodennäköisyys, tietyssä ajassa ha
 | uraani-238 | $4{,}47 \cdot 10^{9}\,\text{a}$ | kallioperä |
 
 Lähde: kirjallisuusarvot NNDC NuDat 3 -tietokannasta (Brookhaven National Laboratory), pyöristetty kolmeen merkitsevään numeroon.
+
+<figure class="unit-photo"><img src="pics/fy8/geiger-counter.webp" alt="Vanha beigenvärinen säteilymittari valkoisella pöydällä: laatikossa on viisarinäyttö ja säätönuppi, ja kierrejohdolla siihen on liitetty pyöreä anturi kädensijassa."><figcaption>Geigerin ja Müllerin mittari laskee anturiin osuvia ionisoivia hiukkasia. Kun mittari pidetään samassa kohdassa, pulssitaajuus on verrannollinen lähteen aktiivisuuteen.</figcaption></figure>
 
 ### Aktiivisuus
 Näytteen **aktiivisuus** $A$ on siinä tapahtuvien hajoamisten määrä aikayksikössä. Sen yksikkö on becquerel: $1\,\text{Bq}$ on yksi hajoaminen sekunnissa eli $1\,\tfrac{1}{\text{s}}$. Koska jokainen ydin hajoaa yhtä todennäköisesti, aktiivisuus on suoraan verrannollinen hajoamattomien ytimien määrään: kun ytimistä on jäljellä puolet, myös aktiivisuus on puolittunut. Säteilymittari ei mittaa aktiivisuutta suoraan, vaan se laskee pulsseja niistä säteilykvanteista, jotka osuvat sen anturiin. Pulssimäärä on verrannollinen aktiivisuuteen, mutta siihen lisätään aina myös ympäristön **taustasäteily**.

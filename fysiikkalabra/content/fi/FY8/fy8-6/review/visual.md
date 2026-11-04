@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8f61e76d68ecc7d3
+CONTENT-HASH: f3ae0f133328249b
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] lesson.md paragraph after the sovitus figure — "kuvan aineistossa se leikkaa pystyakselin noin 0,05 V nollan alapuolella": the y axis starts at 1,5 / the intercept is not drawn, so it cannot be seen in the figure (round-1 note still open) — "suoran jatke leikkaisi pystyakselin ..." or drop "kuvan".
-- [Minor] iu figure — dashed extensions to the voltage axis are very short at 390 px (round-1 note, markers carry the meaning).
+- [Minor] Kolmen LED-kuvan pino oikealla jättää otsikon 'LED, laserdiodi ja hehkulamppu' alle noin 230 px tyhjän vasemman palstan (1280 px), koska seuraava kuvapari odottaa vihreän kuvan alapuolelle. Siirrä vihreä LED-kuva punaisen kanssa samaan kohtaan tai yhdistä kuvat, jolloin aukko poistuu.
 
 ## Checked
-- Delta: fig-7 (spektrit; aria-label now 1 nm and "suuntaa-antava, ei mittakaavassa", visual unchanged and fine), fig-13 (grid matches the swapped "vaakaruudun 0,2·10^14 Hz, pystyruudun 0,1 V" wording in the solution), stage-herata-390 (shortened hook reads cleanly), open-exit-1280 (Q1 shortened, "Lasketaan ensin" fixes the old "ja" gap, rows aligned), theory-1280-3 (changed "likimain sama luku" sentence and summary layout intact).
-- Round-1 exit-ticket and spektrit notes resolved.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 5
+batch delta review: rendered preview/fy8-6.html at 1280 px and opened the 3 added photo(s) with caption; image files read where alt text needed verification; floats right of the text (x 744-1064 px), no clipping or horizontal overflow at 1280 or 390 px; alt text matches image, captions physically correct and tied to the chapter, LaTeX for numbers with units.

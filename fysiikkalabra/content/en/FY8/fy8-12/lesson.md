@@ -244,6 +244,8 @@ The types of radiation (chapter *The atomic nucleus and radioactive decay*) diff
   <foreignObject x="224" y="347.5" width="311" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{ion pair: positive ion and}\ e^-$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="A deep pool of water seen from above in blue light; at the bottom is a round reactor core giving off a bright blue glow, surrounded by round lids."><figcaption>The core of a research reactor at the bottom of a pool during refuelling. The blue glow is Cherenkov radiation: particles move through the water faster than light travels in water. The thick layer of water attenuates the radiation, so people can work at the edge of the pool.</figcaption></figure>
+
 ### Penetrating power
 **Penetrating power** tells how thick a layer of matter the radiation passes through. The more densely radiation ionises, the faster it gives up its energy and the thinner the layer that stops it. So alpha radiation has the smallest and gamma radiation the greatest penetrating power. The last column of the table tells what stops alpha and beta radiation and what attenuates gamma and neutron radiation effectively. X-radiation is photon radiation and behaves like gamma radiation.
 
@@ -322,6 +324,8 @@ Humans cannot sense ionising radiation, so it is detected with an instrument. Th
   <line x1="420" y1="282" x2="420" y2="298" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <foreignObject x="300" y="301.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U \approx 500\,\text{V}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy8/dosimeter-chernobyl.webp" alt="A hand holds a yellow pocket-sized radiation meter on a knee; the photo is a close-up with a blurred background."><figcaption>A radiation meter in the Chernobyl area. A pocket meter like this usually contains a Geiger–Müller tube, which counts ionising events and converts their number into a dose rate.</figcaption></figure>
 
 Every ionising event triggers a similar avalanche, so the pulse is equally large regardless of the type and energy of the radiation. A GM counter therefore counts events but does not tell what radiation it detects. The type of radiation can be deduced with barriers: if the pulse count drops to the background level behind a sheet of paper, the radiation is alpha radiation. The counter always counts also **background radiation**, which comes from the ground, building materials, radon in the air and space. A GM tube detects only a small fraction of gamma photons, because most of them pass through the thin gas without interacting. The energy of radiation is measured, for example, with scintillation detectors, and the radiation a person receives is monitored with dosimeters.
 

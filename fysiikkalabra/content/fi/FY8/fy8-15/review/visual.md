@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2e9a0fdb210a1299
+CONTENT-HASH: 142cbc55cb6c3293
 
 ## Blocking
 
 ## Polish
-- [Minor] fig valittaja (fig-11-390) — "aika"-nuoli pienellä harmaalla, heikko kontrasti — tummenna nuoli ja teksti.
+- [Minor] ATLAS-kuva asettuu 'Säilymislait'-osion kaavojen viereen, vaikka kuvateksti käsittelee ilmaisinta; siirrä CMS-kuvan viereen tai ennen LHC-kappaletta.
+- [Minor] CMS-kuvatekstin 'vierailijat' ei näy kuvasta; 'Edessä seisovat ihmiset' on varmempi.
 
 ## Checked
-- stage-selita-390-3 ja -4: neljän perusvuorovaikutuksen luettelo mahtuu kokonaan, ei leikkautumista eikä vaakavieritystä; lihavoidut nimet erottuvat, LaTeX-symbolit ($g$, $\gamma$, $W^\pm$, $Z^0$) renderöityvät.
-- stage-selita-2 (perushiukkastaulukko, hadronit), contact-1 (hero, fig 3, 5, 7, 9, 11), fig-13-390, example-390-1: luettavia, värit ja merkinnät yhdenmukaiset, yksiköt LaTeXilla.
-- Edellinen Major (leikattu taulukko) korjattu.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: rendered preview/fy8-15.html at 1280 px and opened the 2 added photo(s) with caption; image files read where alt text needed verification; floats right of the text (x 744-1064 px), no clipping or horizontal overflow at 1280 or 390 px; alt text matches image, captions physically correct and tied to the chapter, LaTeX for numbers with units.

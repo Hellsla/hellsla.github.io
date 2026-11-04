@@ -196,6 +196,8 @@ Luvussa *Valon interferenssi ja diffraktio* nähtiin, että valo on aaltoliikett
   <foreignObject x="435" y="285.5" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{ilma},\ n = 1{,}00$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/soap-bubble-reflection.webp" alt="Saippuakupla ilmassa. Kuplassa näkyy heijastunut kuva puista ja taivaasta."><figcaption>Saippuakupla heijastaa ympäristöä. Kuplan reunoilla on värejä. Valo heijastuu kalvon ulkopinnasta ja sisäpinnasta. Heijastuneet aallot interferoivat.</figcaption></figure>
+
 ### Matkaero kalvossa
 Alapinnasta heijastunut aalto 2 kulkee kalvon läpi alas ja takaisin ylös. Se kulkee siksi lisämatkan $2d$, kun $d$ on kalvon paksuus. Kalvossa valo etenee hitaammin, nopeudella $c : n$. Valon taajuus ei kuitenkaan muutu. Siksi aallonpituus on kalvossa $n$ kertaa lyhyempi kuin ilmassa. Esimerkiksi saippuakalvossa ($n = 1{,}33$) aallonpituus $550\,\text{nm}$ lyhenee arvoon $413{,}5\,\text{nm}$, koska $550\,\text{nm} : 1{,}33 = 413{,}5\,\text{nm}$. Lisämatkaan $2d$ mahtuu siksi yhtä monta aallonpituutta kuin ilmassa matkaan $2nd$. Aaltojen 1 ja 2 matkaero on siis $2nd$, kun aallonpituus mitataan ilmassa.
 
@@ -384,6 +386,8 @@ Paksussa kalvossa, kuten ikkunalasissa, värejä ei näy. Jo $5\,\mu\text{m}$:n 
   <foreignObject x="512" y="145.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$d\ (\text{nm})$</div></foreignObject>
   <foreignObject x="40" y="19.5" width="249" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{saippuakalvo},\ n = 1{,}33$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/soap-bubble-colours.webp" alt="Saippuakalvo läheltä. Siinä on oransseja, sinisiä ja violetteja pyörteitä."><figcaption>Saippuakalvon värit. Kalvo on eri kohdista eri paksu. Siksi eri kohdissa vahvistuu eri väri.</figcaption></figure>
 
 ## Kaava: Ohuen kalvon interferenssi
 Kun valo tulee kohtisuoraan kalvoon, kalvon kahdesta pinnasta heijastuneiden aaltojen matkaero on

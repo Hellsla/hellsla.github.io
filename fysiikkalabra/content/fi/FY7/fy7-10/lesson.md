@@ -154,6 +154,8 @@ Kun katsot uima-altaan pohjassa olevaa kolikkoa, kolikosta lähtevät säteet ta
   <foreignObject x="514" y="281.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{vesi}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/pencil-in-water.webp" alt="Sininen lyijykynä vinossa vesilasissa harmaata seinää vasten; vedenpinnan kohdalla kynä näyttää katkeavan ja siirtyvän sivuun."><figcaption>Lyijykynä vesilasissa näyttää katkenneelta. Veden alla olevasta kynän osasta lähtevä valo taittuu, kun se tulee vedestä lasin läpi ilmaan, joten näemme kynän eri paikassa kuin se on.</figcaption></figure>
+
 ## Kaava: Heijastuslaki ja taittumislaki
 Heijastuslaki: heijastuskulma on yhtä suuri kuin tulokulma,
 ```latex

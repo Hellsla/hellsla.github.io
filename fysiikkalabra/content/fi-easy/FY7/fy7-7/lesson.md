@@ -203,6 +203,8 @@ Kun käämin taso on kohtisuorassa kenttää vastaan, kenttäviivoja kulkee kä�
   <line x1="425" y1="266" x2="425" y2="215" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/bicycle-dynamo.webp" alt="Polkupyörän etupyörä ja valo. Renkaan vieressä on pieni hopeinen dynamo."><figcaption>Polkupyörän dynamo on pieni generaattori. Rengas pyörittää dynamon sisällä magneettia. Magneetti pyörii käämin sisällä. Magneettivuo käämin läpi muuttuu, ja käämiin syntyy vaihtojännite.</figcaption></figure>
+
 ### Liukurenkaat ja harjat
 Käämin johtimen päät on kytketty akselilla oleviin kahteen **liukurenkaaseen**. Renkaita koskettavat hiiliharjat. Harjojen kautta jännite johdetaan ulkoiseen virtapiiriin, esimerkiksi kuvan lamppuun. Tasavirtamoottorissa kommutaattori kääntää virran suunnan (luku *Voima virtajohtimeen: sähkömoottori ja kaiutin*). Liukurenkaat eivät käännä virran suuntaa. Siksi ulkoiseen piiriin tulee käämiin syntyvä jännite sellaisenaan.
 
@@ -301,6 +303,10 @@ Vuo vaihtelee kosinin tavoin, ja sen jyrkkyys vaihtelee sinin tavoin. Siksi jän
   <circle cx="472" cy="375" r="4" fill="#1f2933"/>
   <circle cx="472" cy="409" r="4" fill="#1f2933"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/generator-stator.webp" alt="Iso pyöreä kuilu ylhäältä. Seinissä on käämejä, ja reunoilla on keltaiset kaiteet."><figcaption>Vesivoimalan generaattori. Roottori on nostettu pois. Käämit ovat paikallaan kehän ympärillä. Kun roottori pyörii sisällä, käämeihin syntyy jännite.</figcaption></figure>
+
+<figure class="unit-photo"><img src="pics/fy7/generator-rotor.webp" alt="Suuri punaruskea lieriö hallin lattialla. Sen ympärillä ihmiset näyttävät pieniltä."><figcaption>Voimalan generaattorin roottori huollossa Belgiassa. Roottorin reunalla on sähkömagneetteja. Kun roottori pyörii, magneettivuo käämien läpi muuttuu koko ajan.</figcaption></figure>
 
 ### Voimalaitoksen generaattori ja tuulivoimala
 Voimalaitosten suurissa generaattoreissa pyörii sähkömagneetti, ja käämit ovat paikallaan sen ympärillä. Paikallaan olevan käämin läpi kulkeva vuo muuttuu samalla tavalla kuin pyörivässä käämissä. Siksi syntyy samanlainen vaihtojännite. Suuri virta saadaan käämeistä ilman liukukoskettimia.

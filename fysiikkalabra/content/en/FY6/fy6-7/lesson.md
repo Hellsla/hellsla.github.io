@@ -165,6 +165,8 @@ So a large power alone does not mean a large consumption. A kettle with a power 
   <foreignObject x="152.5" y="256" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$E = 0.20\,\text{kWh}$</span></div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/electricity-meter.webp" alt="A black Siemens electricity meter on a wall: a row of number wheels at the top with the last digit in a red box and the unit kWh beside it, and a horizontal rotating disc below."><figcaption>An old electricity meter counts the electrical energy used in a home in kilowatt-hours. The number wheels give the reading, and the disc below them turns faster the more power the home is using.</figcaption></figure>
+
 ### The kilowatt-hour is a unit of energy
 The SI unit of energy is the joule, but the electrical energy of a home is measured and charged in **kilowatt-hours**. One kilowatt-hour is the energy that a device working at a power of $1\,\text{kW}$ uses in an hour. When the power is given in kilowatts and the time in hours, the energy comes out directly in kilowatt-hours. The name tells how it is calculated: kilowatt times hour, not kilowatt per hour. One kilowatt-hour is $3.6$ million joules.
 

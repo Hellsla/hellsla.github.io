@@ -81,6 +81,8 @@ Luvussa *Valon heijastuminen ja taittuminen* taitekerroin $n$ kertoi, kuinka mon
 
 Veden taitekertoimet lämpötilassa $20\,{}^\circ\text{C}$: M. Daimon ja A. Masumura, *Applied Optics* 46, 2007. Kruunulasin N-BK7 taitekertoimet: SCHOTT AG, optisten lasien luettelo, 2017.
 
+<figure class="unit-photo"><img src="pics/fy7/prism-dispersion.webp" alt="Harmaalla seinällä pystysuora valojuova, jossa värit vaihtuvat vasemmalta oikealle punaisesta keltaisen ja vihreän kautta siniseen."><figcaption>Prisman läpi kulkenut valkoinen valo seinällä. Prisma taittaa violettia ja sinistä valoa enemmän kuin punaista, joten värit erkanevat spektriksi.</figcaption></figure>
+
 ### Miksi violetti hidastuu enemmän
 Valon sähkökenttä saa aineen elektronit värähtelemään valon taajuudella. Värähtelevät elektronit lähettävät itse valoa, joka yhdistyy tulevaan valoon, ja yhdistynyt aalto etenee hitaammin kuin valo tyhjiössä. Elektronien vaste riippuu taajuudesta. Vedessä ja lasissa se voimistuu, kun taajuus kasvaa kohti ultraviolettia, jota aine voimakkaasti absorboi. Siksi suurtaajuinen violetti valo hidastuu enemmän kuin pientaajuinen punainen, ja sen taitekerroin on suurempi.
 
@@ -179,6 +181,8 @@ Kun aurinko on selän takana, auringonsäteet kulkevat pään ohi kohti **vastap
   <foreignObject x="50.5" y="145.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\text{violetti}$</div></foreignObject>
   <foreignObject x="111" y="311.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{vastapiste}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/rainbow-glen-coe.webp" alt="Vihreä vuoristolaakso, jossa virtaa puro; laakson yllä näkyy sateenkaari pilvisen taivaan alla."><figcaption>Sateenkaari Glen Coen laaksossa Skotlannissa. Aurinko paistaa katsojan selän takaa, ja valo taittuu ja heijastuu vesipisaroissa, jotka hajottavat sen väreiksi.</figcaption></figure>
 
 Sateenkaari näkyy siis vain, kun aurinko paistaa selän takaa ja edessä on pisaroita. Tasaisella maalla kaaresta näkyy vain horisontin yläpuolinen osa. Jos aurinko on korkeudella $h$ horisontista, vastapiste on yhtä paljon horisontin alapuolella, ja punaisen kaaren huippu on korkeudella $42^\circ - h$. Kun aurinko on yli $42^\circ$:n korkeudella, koko kaari jää horisontin alapuolelle, eikä sitä näe maan pinnalta. Siksi sateenkaaria näkyy keskikesällä aamuin ja illoin, kun aurinko on matalalla.
 

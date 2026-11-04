@@ -1,19 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5c03f04960bafc0e
+CONTENT-HASH: 9da1d0b525b85e9d
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- [Minor] Esimerkki Vaihe 6/7 at 390 px — "2,4 ·" / "10^-4 N" still splits across lines; keep the number unbroken.
-- [Minor] sim-1280 — control grid wraps unevenly (q1 slider beside the buttons); shared simulation template, for developer.
-- [Minor] kuvaaja (fig-12-390) — curve starts above the 4,0 mN point and the model-computed origin is only in the aria-label.
-- [Minor] hankaus — blue "elektroneja" arrow uses the velocity blue for a transfer.
+- (ei huomautettavaa)
 
 ## Checked
-- Round 3 fix: example-390-1/2 opened; the Sijoitus now has the fraction on its own row (`\cdot` row), nothing clipped, box border intact, aligned `=` rows read in order principle, substitution, result.
-- Full-review scope: the commit changes only these lines in lesson.md; everything else is as judged in rounds 1 and 2 (hero, hankaus, influenssi, kentta, coulomb, kuvaaja, check-graph figures, theory, sim, stages, tarkista, exit ticket all opened earlier, colours consistent: force red, field green, negative charge blue disc with white minus).
-- Hash at start and end: 5c03f04960bafc0e.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+batch delta review: photo file(s) opened and compared with alt text; rendered fy6-10 at 1280 px (float right, 320 px wide, no clipping, beside its paragraph) and 390 px (full-width block, no horizontal overflow); caption physics, Finnish and LaTeX units read; changed typography checked in the capture.

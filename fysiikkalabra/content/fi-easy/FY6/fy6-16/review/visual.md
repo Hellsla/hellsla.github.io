@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 513fbef8b1ec3d7d
+CONTENT-HASH: 6bfe3e9e31cd7a54
 
 ## Blocking
+(none)
 
 ## Polish
-- (none)
+- [Minor] fy6-16 ev-charging-socket caption: 'Isommalla ... Pienemmällä ...' does not say which port is which, and in the photo the grey-capped left port looks larger than the orange-capped right one. Fix: say which side is which, or drop the size wording.
 
 ## Checked
-- fy6-16-intro-1280 (fi-easy): ensimmäinen tavoite ("laskemaan latausajan, verkosta otetun energian ja hinnan akun energian, latausvirran ja hyötysuhteen avulla.") täydentää otsikon "Tällä tunnilla opit", sujuva, mahtuu laatikkoon, ei leikkautumista.
-- Muutos on yksi sanamuoto inquiry.jsonissa, ei symboleja tai lukuja; muut kuvat ja asettelu eivät muutu.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-16.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photos ev-charging-socket and ev-charging-station: alts match (open flap on white car, two capped ports; yellow station with yellow guard rails).

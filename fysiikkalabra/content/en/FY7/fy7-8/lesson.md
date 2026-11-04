@@ -196,6 +196,8 @@ A power line has resistance, and the current flowing in the line heats it. The p
   <foreignObject x="51" y="197.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$230\,\text{V}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/transformer-750kv.webp" alt="A large pale transformer on grass, with long insulators and a tank on top; behind it are the steel structures and lines of a substation."><figcaption>A transformer whose higher voltage is $750\,\text{kV}$. When power is transmitted at high voltage, the current in the lines is small, and the transmission loss $P = RI^2$ stays small.</figcaption></figure>
+
 ### The voltage is lowered step by step
 At substations, transformers lower the voltage to $110\,\text{kV}$ in the regional network and $20\,\text{kV}$ in the distribution network, and the local substation of a residential area lowers it to the $230\,\text{V}$ of homes. High voltage is not brought into homes, because insulating it requires long insulators and large distances, and touching it would be fatal (chapter *Electrical safety*). The charger of a phone lowers the voltage still further to about $5\,\text{V}$. A modern charger first changes the mains voltage to a very high frequency, so that the transformer can be small, and rectifies it at the end. The coils of the charger's transformer do not touch each other, so the phone is not conductively connected to the power grid.
 
