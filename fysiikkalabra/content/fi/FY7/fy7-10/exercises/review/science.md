@@ -1,16 +1,21 @@
-VERDICT: PASS
-CONTENT-HASH: 9b7783e5537063cc
+VERDICT: FAIL
+CONTENT-HASH: 40525b228243b454
 
 ## Blocking
+- exercises.json:230 (fy7-10-L3-04) — B: a) asks the student to derive x = h′ tan α₂, which needs the apparent position to lie on the vertical through the object. The task never says so, and for oblique viewing it is a model choice, not a fact. — Fix: add to the task "Oletetaan, että esine näyttää olevan suoraan todellisen paikkansa yläpuolella", and say the same in solutions.md:181 Periaate.
 
 ## Polish
+- solutions.md:182 (L3-04) — the heading "Kuvaajan lukeminen" sits over a table and no graph. — Use "Taulukon lukeminen" (or the house label for tables).
+- solutions.md:196 (L3-05) — "kolme merkitsevää numeroa", but the glass thickness 6,0 mm has two. — Add that its term (3,8 mm) is small, so the 20,0 mm term limits the result.
+- exercises.json:182 (L2-06) — the case is the same as the lesson's misconception paragraph (air→water at 60°, which gives 40,6°), so the answer is printed in the lesson. — Use another angle, for example 50,0°.
+- Plan drift for pedagogy: the plan's L3 "sädeleveys" became a horizontal displacement in L3-05, and the plan's L2 error case (α₁/α₂) became "angle divided by n". Both are physically sound.
 
 ## Checked
-- One script recomputed all 12 answers from the task text with my own formulas. All agree with exercises.json and answers.py to within 3·10⁻⁵ relative: 1,3636; 1,2397; 38; 34,733; 58,750; 36,602; 2,0019; 34,667 ps; 1,5321; 60,0; 52,940; 34,249.
-- Round-1 polish done. L3-03 now shows 34,249° before answering 34,2°. L3-01 says "samaan periaatteeseen perustuvat" (a bicycle reflector is a corner cube), and the task restricts the ray to the plane of the normals.
-- L1-05 (40,0°) and L3-02 (36,87°) go from water to air below the critical angle of 48,75°, so a refracted ray exists, and the solutions check sin α₂ < 1.
-- L2-01 converts the 25,0° measured from the surface to 65,0° from the normal. The quoted wrong result of 16,1° is right.
-- L2-03: Δt = (n − 1)d : c is derived symbolically, cm → m is right, and the answer has two significant figures (35 ps). The check of ≈67 ps in air against ≈100 ps in glass is right.
-- L2-04 figure (figures.py): α₁ = 50° in the air quadrant and α₂ = 30° in the glass quadrant are drawn from the normal and can be read on the 10° ticks between the labelled 40/60 and 20/40. The half-cylinder geometry (no refraction at the curved surface) is stated. The alt text does not give the angles away.
-- L3-03: sin α₁ : v₁ = sin α₂ : v₂ follows from n = c : v and is derived symbolically. The independent check with n = 1,33 and 1,52 gives the same 0,563.
-- Every solution has all seven steps and solves for the unknown before substituting. Rounding follows the limiting datum. The units (blank, °, · 10⁸ m/s, ps) and the tolerances fit. The materials and indices match the lesson's table.
+- One script recomputed all 20 answers with my own formulas. All agree with exercises.json/answers.py: new 416,4 nm; 25,50°; 1,4985 (least squares through origin); 40,63°; Δn 0,0379; 1,3301; 19,474 mm.
+- L1-06 MC: exactly one option is correct. Each distractor is really wrong, and its feedback is right: the frequency is unchanged, and the speed is what turns the wavefronts.
+- L1-07: λ = λ₀/n is derived from f constant and v = fλ, correctly.
+- L2-05: the 14 sines are right and the per-point ratios are 1,465–1,536. The fit-line wording follows the guardrails (yleensä; slope from the fitted line, not raw points; the origin justified).
+- L2-07: n = 1,506, n_max 1,545, n_min 1,469 with the extremes combined correctly. The half-range is called an estimate.
+- L3-04: α₁ 7,52/14,88/22,01/28,98°, and n 1,3274/1,3319/1,3344/1,3268. The small-angle limit d/n = 45,1 cm is a real check. The c) reasoning is right.
+- L3-05: n sin α is constant across parallel layers, so the glass drops out of the angle in water (38,02°), and this is correctly argued. Tangent terms 3,839 + 15,636 mm.
+- The hash was the same at the start and at the end.

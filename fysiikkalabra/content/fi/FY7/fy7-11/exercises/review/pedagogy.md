@@ -1,17 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 6125beade01a1c5a
-
+VERDICT: FAIL
+CONTENT-HASH: 5a4e18b049e83472
 ## Blocking
+- exercises.json:fy7-11-L3-05 — first paragraph is 48 words in one block. Split: (1) "Spektrometrin prisma on flinttilasia ... n_v = 1,6498." (2) "Kapea valkoisen valon kimppu tulee ... tulokulmassa 50,0°." (3) "Suurempi huippukulma A erottaa värit paremmin, mutta ... Älä pyöristä välituloksia, sillä ulostulokulma on herkkä pyöristykselle."
+- exercises.json:fy7-11-L2-07 — first paragraph about 46 words (borderline) mixing situation, data and facts. Split after "...käyrältä." : (1) "Kuvaajassa on kruunulasin N-BK7 taitekerroin n ... luettava pisteiden välistä käyrältä." (2) "Valon nopeus tyhjiössä on c = 3,00 · 10^8 m/s. Valon taajuus ei muutu lasiin tullessa."
+- exercises.json:fy7-11-L2-06 — first paragraph 43 words (borderline) mixing the student's claim and the given values. Split after the quotation: (1) "Opiskelija päättelee: "...ulkoreunalla."" (2) "Veden taitekerroin on punaiselle valolle 1,3315 ... lähtee pisarasta."
 
 ## Polish
-- fy7-11-L3-02 asks a second question (inside or outside the red edge) that the numeric field cannot take; make it one question or a closing sentence the solution answers (it does).
-- fy7-11-L1-04: alpha_4 = 52,0 deg is inconsistent with any glass at n about 1,52 (gives about 54 deg); use alpha_4 = 54,0 deg and delta = 39,0 deg.
-- fy7-11-L1-02 and lesson tarkistus-2 test the same skill (v = c : n); change one.
-- fy7-11-L2-03: reading to 0,001 on a 0,002 grid; the 2 percent tolerance covers it, the solution could say so.
+- exercises.json:fy7-11-L2-07 — tolerance 0,02 on v covers every n in the plotted range (1,514..1,530 changes v by only 1 %), so the answer box does not need the graph; ask for n in the box (tolerance 0,002) or tighten to 0,003.
+- exercises.json:fy7-11-L2-05 — plan says "same prism"; the task uses a plate surface, which is simpler but valid; say so in the solution if intended.
+- exercises.json:fy7-11-L3-04 — six rows by two lines of computation is long; four rows would do.
+- exercises.json:fy7-11-L1-06 — the correct option is the longest and its wording echoes the question; shorten it slightly.
 
 ## Checked
-- Counts 5 / 4 / 3 match the levels; none repeats the example.
-- L3 combines prism geometry or the rainbow in new contexts; L2-01 (fibre, assumption now stated) and L2-04 recognisable.
-- All 12 solutions have the seven steps, principle explained, sanity check; L1-05 now shows the full turn sum.
-- Figure flint-points gives the needed value without the answer.
-- Finnish and case after number+unit correct.
+- Recomputed: 264,7 nm; 12,3°; Δα flint 0,765°, crown 0,414°, acrylic 0,461°; θ 42,29° and 40,63°; v 1,979·10^5 km/s; n 1,3999..1,4002 (mean 1,400); A_max 64,98° and 66,57°; Δδ 7,417° (A 64°) and 3,91° (A 60°). All match solutions.
+- L2-06 error analysis separates the correct part (red turns least) from the wrong part (inner edge) with the 180° − deviation step.
+- L3-05 violet limits A, and 65° blocks the violet ray (1,0005 > 1): correct.
+- Levels and plan coverage fit; no duplicates; solutions complete; Finnish fine; 1280 px captures of new tasks show no clipping.
