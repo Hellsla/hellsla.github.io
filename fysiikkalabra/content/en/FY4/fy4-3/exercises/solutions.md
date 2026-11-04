@@ -222,8 +222,7 @@ a 0
 ## fy4-3-L1-08
 **Given:** force of the child on the rope $F = 38\,\text{N}$, the sled moves at constant velocity, the weight of the rope is ignored
 **Find:** the force of the rope on the child $F_\text{RC}$ in $\text{N}$
-**Principle:** By Newton’s third law the child and the rope interact, so the rope pulls the child with an equally large but oppositely directed force as the child pulls the rope. The law holds even though the sled moves at constant velocity.
-**Force diagram:** Choose the child as the object and draw the child as a rectangle. The force of the rope $\overline{F}_\text{RC}$ points from the child towards the sled, that is, against the child, and the child’s own force on the rope acts on the rope and does not belong in the child’s diagram.
+**Principle:** By Newton’s third law the child and the rope interact, so the rope pulls the child with an equally large but oppositely directed force as the child pulls the rope. The law holds even though the sled moves at constant velocity. Choose the child as the object and draw the child as a rectangle. The force of the rope $\overline{F}_\text{RC}$ points from the child towards the sled, that is, against the child, and the child’s own force on the rope acts on the rope and does not belong in the child’s diagram.
 **Formula:** $\overline{F}_\text{RC} = -\overline{F}_\text{CR}$, so in magnitudes $F_\text{RC} = F_\text{CR}$
 **Conversions:** The force is in newtons, so no conversions are needed.
 **Substitution:** $F_\text{RC} = F_\text{CR} = 38\,\text{N}$
@@ -263,6 +262,19 @@ $s = 0.500\,\text{m/s}\cdot 6.0\,\text{s} = 3.0\,\text{m}$.
 **Find:** a) the force of the rope on the cart $T$; b) the force of the road on the hooves of the horse $F_\text{road}$ in $\text{N}$; c) why the forces do not cancel each other
 **Principle:** Both the cart and the horse move at constant velocity, so the net force on each is zero (first law). The cart gives the force of the rope. By the third law the cart pulls the horse backwards with a force $T$ as large as the rope pulls the cart forwards, and this is used in the equilibrium of the horse. The force of the road on the hooves is an external force that carries the pair forwards.
 **Force diagram:** For the cart draw: the force of the rope $\overline{T}$ forwards, the rolling resistance and the air resistance backwards. For the horse: the force of the road $\overline{F}_\text{road}$ forwards, the force of the rope $\overline{T}$ and the air resistance backwards. The forces on the horse and on the cart are in different diagrams.
+```voimakuvio
+pinta 0
+T 450 oikea
+F_v 410 vasen
+F_k 40 vasen
+a 0
+---
+pinta 0
+F_t 480 oikea kitka
+T 450 vasen
+F_h 30 vasen
+a 0
+```
 **Formula:** Cart: $T - F_\text{r} - F_\text{dc} = 0$, so $T = F_\text{r} + F_\text{dc}$. Horse: $F_\text{road} - T - F_\text{dh} = 0$, so $F_\text{road} = T + F_\text{dh}$.
 **Conversions:** The forces are in newtons, so no conversions are needed.
 **Substitution:** $T = 410\,\text{N} + 40\,\text{N} = 450\,\text{N}$ and
