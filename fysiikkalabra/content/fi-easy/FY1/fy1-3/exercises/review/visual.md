@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 618d3d28a6fbd465
+CONTENT-HASH: 66a272c3a96649d3
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the selkosuomi (fi-easy) text already matched fi in every number and was natural)
 
 ## Polish
-- [Minor] exercises.json L1-02 — the task asks for the sign, the shown Vastaus is "0,3 cm" while the solution gives "+0,3 cm"; show "+0,3 cm".
-- [Minor] solutions.md L1-02 Kaava — "mittausvirhe = x − x_oikea" is a word set in maths and wraps at 1280 px; put the word outside the formula or in \text{}.
-- [Minor] solutions.md L1-04, L3-02 Sijoitus — stacked fractions in aligned rows are cramped (denominator touches next fraction bar); more row spacing.
+(none)
 
 ## Checked
-- Round 2. Round-1 Majors (duplicated Kaava formula, L2-03 collision): source no longer repeats the formula; open-exercises-L2-1280-3 shows the Kaava line once and readable. Resolved.
-- Also opened: open-exercises-1280-2, -5, open-exercises-L3-1280-2 (L1-02, L1-04/05, L3-01/02). Other exercise captures not opened.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- The screenshot files listed in packet-visual.md are not present in review/shots/ in this checkout, so no image was viewed. The check was made on the JSON: table captions, column headers (symbols and units) and cell values of L2-05, L2-06 and L3-04 equal fi apart from the translated caption; no table is wider than the fi one (same columns and rows).
+- Texts are of similar length to the fi originals; no overlong unbroken strings; math uses the language's decimal point; no stray Finnish or untranslated markup.
+- Figure reference of L1-03 (fy1-3/pendulum-dots) is unchanged from fi.

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f65fdea3cf3a11ad
+CONTENT-HASH: 0565d8e3dabbf1c2
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed)
 
 ## Polish
-- [Minor] solutions L1-01..L1-05 — Kaava line repeats the formula ("v = g t. Kaava on jo ratkaistu ...: v = g t"); drop the second copy.
-- [Minor] L2-02 figure two-planets — A blue, B orange are both velocities; fine here, but note the orange/blue convention differs from FY4 (v blue). Alt text and values match the figure, answer not given away.
-- [Minor] solutions at 1280 (L3-03) — "g =" at a line end splits from its value ("g =\n9,81 m/s²" in Annettu); keep the equation together.
+(none)
 
 ## Checked
-- open-exercises-1280-1, open-exercises-L2-1280-1, -2, open-exercises-L3-1280-3; contact-2; all exercise and solution text read.
-- Chains render as aligned rows, units upright with thin space, decimal comma correct, answers set apart.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- Screenshots of the new tasks (fi-easy, L2 and L3 captures including L2-07 and L3-05) open: tables, headings, units and formulas render, no overflow, no leftover text in the other language; table captions and column headers translated.
+- Math is formatted with the same LaTeX as fi (decimal point or comma per language).

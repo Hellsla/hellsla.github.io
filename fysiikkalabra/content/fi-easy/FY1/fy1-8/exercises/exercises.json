@@ -39,6 +39,96 @@
       "answer": 3.2,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L1-06",
+      "level": 1,
+      "text": "Oppilas tutkii, miten veden lämpötila vaikuttaa siihen, kuinka kauan sokeripala liukenee. Hän laittaa saman kokoisia sokeripaloja samaan vesimäärään. Veden lämpötila on joka kerta eri. Hän mittaa, kuinka kauan palan liukeneminen kestää. Mikä on tutkimuksen riippumaton (muutettava) muuttuja?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Veden lämpötila",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Veden lämpötila",
+          "feedback": "Oikein: riippumaton muuttuja on se, jota tutkija muuttaa tarkoituksella. Tässä oppilas valitsee veden lämpötilan ja katsoo, miten liukenemisaika muuttuu.",
+          "correct": true
+        },
+        {
+          "text": "Sokeripalan liukenemisaika",
+          "feedback": "Liukenemisaika on riippuva muuttuja. Se mitataan, ja se muuttuu sen mukaan, mitä riippumattomalle muuttujalle tehdään. Tutkija ei valitse sitä itse."
+        },
+        {
+          "text": "Veden määrä ja sokeripalan koko",
+          "feedback": "Nämä pidetään samoina kaikissa mittauksissa, joten ne ovat vakioitavia muuttujia. Jos ne vaihtelisivat, ei tiedettäisi, johtuuko muutos lämpötilasta."
+        },
+        {
+          "text": "Mittaukseen käytetty kello",
+          "feedback": "Kello on mittalaite. Se ei ole muuttuja, jota tutkimuksessa muutetaan. Kello mittaa riippuvaa muuttujaa eli aikaa."
+        }
+      ]
+    },
+    {
+      "id": "fy1-8-L1-07",
+      "level": 1,
+      "text": "Oppilaat haluavat tutkia heiluria koulun fysiikan tunnilla yksinkertaisella kokeella. Mikä seuraavista on hyvä tutkimuskysymys?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Miten heilurin langan pituus vaikuttaa heilahdusajan pituuteen?",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Miten heilurin langan pituus vaikuttaa heilahdusajan pituuteen?",
+          "feedback": "Oikein: kysymyksessä on yksi muutettava suure ja yksi mitattava suure. Siihen voi vastata mittaamalla koulun välineillä.",
+          "correct": true
+        },
+        {
+          "text": "Millainen heiluri on?",
+          "feedback": "Kysymys on liian epämääräinen. Siinä ei mainita mitattavia suureita. Siihen ei voi vastata mittaamalla niin, että muutetaan yhtä muuttujaa."
+        },
+        {
+          "text": "Onko heiluri kiva?",
+          "feedback": "Kiva ei ole mitattava suure, ja vastaus riippuu mielipiteestä. Hyvään tutkimuskysymykseen vastataan mittaustuloksilla."
+        },
+        {
+          "text": "Miksi heiluri ylipäätään heiluu?",
+          "feedback": "Kysymys on liian laaja yksinkertaiseksi kokeeksi. Siihen ei voi vastata yhdellä mittaussarjalla. Hyvässä tutkimuskysymyksessä kerrotaan, mitä suuretta muutetaan ja mitä mitataan."
+        }
+      ]
+    },
+    {
+      "id": "fy1-8-L1-08",
+      "level": 1,
+      "text": "Työselostuksen kirjoittaja miettii, mihin osioon kukin lause kuuluu. Mikä seuraavista lauseista kuuluu selostuksen tulososioon eikä pohdintaan?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Viiden mittauksen keskiarvo oli $12{,}4\\,\\text{s}$ ja puolet vaihteluvälistä $0{,}2\\,\\text{s}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Viiden mittauksen keskiarvo oli $12{,}4\\,\\text{s}$ ja puolet vaihteluvälistä $0{,}2\\,\\text{s}$.",
+          "feedback": "Oikein: tuloksissa kerrotaan mitatut ja lasketut arvot sellaisinaan. Esimerkkejä ovat taulukko, keskiarvo ja epävarmuus. Tulosten tulkinta kuuluu pohdintaan.",
+          "correct": true
+        },
+        {
+          "text": "Tulos on todennäköisesti liian suuri, koska reaktioaika viivästytti kellon pysäytystä.",
+          "feedback": "Tässä arvioidaan virhelähdettä, joten lause kuuluu pohdintaan. Tuloksissa kerrotaan vain, mitä mitattiin ja laskettiin."
+        },
+        {
+          "text": "Hypoteesi saa tukea tuloksista.",
+          "feedback": "Johtopäätös siitä, tukevatko tulokset hypoteesia, on tulosten tulkintaa. Se kuuluu pohdintaan."
+        },
+        {
+          "text": "Jatkossa mittaus kannattaa tehdä valokennolla.",
+          "feedback": "Parannusehdotus ja jatkotutkimus kuuluvat pohdintaan. Tuloksissa ei kerrota ehdotuksia."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +163,126 @@
       "answer": 16,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L2-05",
+      "level": 2,
+      "text": "Oppilas tutkii, vierivätkö kevyt ($50\\,\\text{g}$) ja raskas ($200\\,\\text{g}$) pallo saman rinteen alas yhtä nopeasti. Hän muuttaa vain massaa. Hän mittaa kummallakin pallolla viisi kulkuaikaa käsikellolla. Hän päättelee: ”Raskas pallo on nopeampi, koska sen keskimääräinen aika on lyhyempi.” Laske kummankin pallon aikojen keskiarvo ja epävarmuus (puolet vaihteluvälistä). Kuinka monta prosenttia keskiarvojen erotus on epävarmuudesta? Päättele lisäksi, tukeeko aineisto oppilaan päätelmää.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 100,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Pallon kulkuaika rinteessä",
+        "columns": [
+          "Toisto",
+          "$t_{50\\,\\text{g}}\\,(\\text{s})$",
+          "$t_{200\\,\\text{g}}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "3.12",
+            "3.06"
+          ],
+          [
+            "2",
+            "3.08",
+            "3.12"
+          ],
+          [
+            "3",
+            "3.16",
+            "3.04"
+          ],
+          [
+            "4",
+            "3.10",
+            "3.10"
+          ],
+          [
+            "5",
+            "3.14",
+            "3.08"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-8-L2-06",
+      "level": 2,
+      "text": "Oppilas tutkii, vaikuttaako kärryn massa siihen, kuinka nopeasti kärry vierii rampin alas. Hänen suunnitelmansa on: ”Päästän kevyen kärryn loivaa ramppia alas ja raskaan kärryn jyrkkää ramppia alas ja vertaan aikoja.” Mikä muutos korjaa suunnitelman?",
+      "kind": [
+        "error",
+        "experiment"
+      ],
+      "answer": "Käytetään samaa rampin kulmaa molemmille kärryille ja muutetaan vain kärryn massaa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Käytetään samaa rampin kulmaa molemmille kärryille ja muutetaan vain kärryn massaa.",
+          "feedback": "Oikein: kun vain yksi tutkittava muuttuja muuttuu kerrallaan ja muut pidetään samoina, aikojen eron voi yhdistää massaan.",
+          "correct": true
+        },
+        {
+          "text": "Toistetaan kummankin kärryn mittaus kymmenen kertaa samalla suunnitelmalla.",
+          "feedback": "Toistot pienentävät satunnaisvirhettä, mutta eivät auta tässä. Massa ja rampin kulma muuttuvat edelleen yhtä aikaa, joten ero voi johtua kummasta tahansa."
+        },
+        {
+          "text": "Valitaan vielä raskaampi kärry ja entistä jyrkempi ramppi, jotta ero näkyy selvemmin.",
+          "feedback": "Tämä pahentaisi ongelmaa. Ero näkyisi, mutta sen syytä ei tiedettäisi, koska kaksi muuttujaa vaihtuu yhtä aikaa."
+        },
+        {
+          "text": "Mitataan ajat tarkemmalla kellolla.",
+          "feedback": "Tarkempi kello pienentää mittauksen epävarmuutta, mutta se ei korjaa suunnitelman virhettä. Kaksi muuttujaa muuttuu edelleen yhtä aikaa."
+        }
+      ]
+    },
+    {
+      "id": "fy1-8-L2-07",
+      "level": 2,
+      "text": "Oppilas mittaa leluauton paikan eri ajanhetkillä (taulukko). Hän piirtää kuvaajan, jossa matka $s$ on vaaka-akselilla ja aika $t$ pystyakselilla. Akseleille ei ole merkitty suureita eikä yksiköitä. Hän lukee sovitetun suoran kulmakertoimeksi $3{,}3$ ja ilmoittaa sen auton nopeudeksi. Piirrä pisteisiin sovitettu suora oikein päin ($t$ vaaka-akselilla). Lue suoran kulmakerroin kahdesta suoran pisteestä, jotka ovat selvästi erillään. Mikä on auton nopeus? Vastaa yksikössä m/s ja selitä, mitä oppilaan luku $3{,}3$ oikeasti kuvaa.",
+      "kind": [
+        "data",
+        "graph",
+        "error"
+      ],
+      "answer": 0.3,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Leluauton paikka",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "2.0",
+            "0.62"
+          ],
+          [
+            "4.0",
+            "1.18"
+          ],
+          [
+            "6.0",
+            "1.83"
+          ],
+          [
+            "8.0",
+            "2.39"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +309,81 @@
       "answer": 4.0,
       "unit": "toistoa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-8-L3-04",
+      "level": 3,
+      "text": "Oppilas tutki, vaikuttaako pallon massa vierimisaikaan (vrt. kevyen ja raskaan pallon mittaukset). Viiden toiston keskiarvot ovat $\\bar{t}_{50} = 3{,}12\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ ja $\\bar{t}_{200} = 3{,}08\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ (epävarmuus on puolet vaihteluvälistä). Käsikellon ajanoton epävarmuudeksi arvioitiin yhdessä mittauksessa $0{,}15\\,\\text{s}$. Pohdinnassa lukee: ”Koe onnistui hyvin. Raskaan pallon keskiarvo on pienempi, joten hypoteesi oli oikein. Virheitä oli vähän.” Kuinka monta kertaa käsiajanoton epävarmuus $0{,}15\\,\\text{s}$ on keskiarvojen erotus? Perustele sen avulla ja tulosten väleillä, mitkä pohdinnan väitteet aineisto tukee ja mitkä ei. Kirjoita pohdintaan kaksi parempaa lausetta.",
+      "kind": [
+        "data",
+        "reasoning",
+        "error"
+      ],
+      "answer": 3.75,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kevyen ja raskaan pallon kulkuajan keskiarvot",
+        "columns": [
+          "Pallo",
+          "$\\bar{t}\\,(\\text{s})$",
+          "$\\Delta t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "$50\\,\\text{g}$",
+            "3.12",
+            "0.04"
+          ],
+          [
+            "$200\\,\\text{g}$",
+            "3.08",
+            "0.04"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-8-L3-05",
+      "level": 3,
+      "text": "Oppilas suunnittelee tutkimuksen kysymykseen ”Riippuuko veden jäähtymisnopeus astian materiaalista?” Hän kaataa yhtä monta desilitraa $80\\,{}^\\circ\\text{C}$ vettä kolmeen samankokoiseen astiaan (lasi, metalli, muovi). Hän lukee lämpötilan joka minuutti. Riippumaton (muutettava) muuttuja on astian materiaali. Riippuva muuttuja on lämpötilan lasku. Esikokeen lasiastian lämpötilat ovat taulukossa. Arvioi alun jäähtymisnopeus taulukon kolmen ensimmäisen minuutin muutoksesta. Lämpötilan laskun $\\Delta T_\\text{lasku}$ epävarmuudeksi arvioidaan $1{,}0\\,\\text{K}$. Laskun suhteellisen epävarmuuden halutaan olevan enintään $5{,}0\\,\\%$. Oleta, että hitaimmin jäähtyvässäkin astiassa alun nopeus on suunnilleen sama kuin lasiastiassa. Kuinka pitkä mittausjakso vähintään pitää suunnitella? Nimeä lisäksi kolme vakioitavaa suuretta perusteluineen ja kerro, miten kolmen astian jäähtymiskäyriä verrataan.",
+      "kind": [
+        "data",
+        "model",
+        "experiment"
+      ],
+      "answer": 10,
+      "unit": "min",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Veden lämpötila lasiastiassa",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "80.0"
+          ],
+          [
+            "1.0",
+            "77.9"
+          ],
+          [
+            "2.0",
+            "76.0"
+          ],
+          [
+            "3.0",
+            "74.0"
+          ],
+          [
+            "4.0",
+            "72.2"
+          ]
+        ]
+      }
     }
   ]
 }

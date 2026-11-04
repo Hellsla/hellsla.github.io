@@ -1,7 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6527b074c113a0ce
+CONTENT-HASH: 5c132ea0d45da19e
+Mode: full
+Round: 3
 
-Round 2: all three round-1 blocking items are fixed. L1-06 now has the correct option 0,0033 GJ = 3,3 MJ, which has the smallest numeric value, so picking the largest number (3 000 000 J = 3,0 MJ) is wrong. L1-07 now says "noin kahdeksasosa (12 %)". L2-06 is now about breakfast, lunch and a snack, and its check calls 2,5 MJ "noin neljäsosa päivän tarpeesta". The round-1 Polish was also taken up: L3-04 now says "kymmenien tuhansien", L1-08 has a `kind`, and L2-07 says "likimain verrannollinen".
+Round 2 (previous): all three round-1 blocking items are fixed. L1-06 now has the correct option 0,0033 GJ = 3,3 MJ, which has the smallest numeric value, so picking the largest number (3 000 000 J = 3,0 MJ) is wrong. L1-07 now says "noin kahdeksasosa (12 %)". L2-06 is now about breakfast, lunch and a snack, and its check calls 2,5 MJ "noin neljäsosa päivän tarpeesta". The round-1 Polish was also taken up: L3-04 now says "kymmenien tuhansien", L1-08 has a `kind`, and L2-07 says "likimain verrannollinen".
 
 ## Blocking
 (none)
@@ -16,3 +18,4 @@ Round 2: all three round-1 blocking items are fixed. L1-06 now has the correct o
 - L3-05: the 5 % tolerance covers the rounding of the 1,10 MJ deficit, and the note is right.
 - No new physics was added. The scope holds (no mgh, c·m·ΔT, work or force), and the invented data are marked as examples.
 - The hash was the same at the start and the end.
+- Round 3 (figure change only): the L1-05 figure "tikapuut-kohteet" shows the same content (scale 1 J … 1 TJ, three marked points, labels) and the caption "jokainen väli on 10-kertainen" only moved 5 units lower; it no longer touches the scale labels and stays inside the figure. No text, number, task, answer or solution changed, so the earlier science findings stand. The answer 100 000 (10⁹ J : 10⁴ J) still follows from the figure.

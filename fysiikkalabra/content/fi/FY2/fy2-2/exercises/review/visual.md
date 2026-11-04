@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 6527b074c113a0ce
-Round: 2
+CONTENT-HASH: 5c132ea0d45da19e
+Mode: delta
+Round: 3
 
 ## Blocking
 - none (round-1 Major resolved: L1-07 Järkevyys now says "noin kahdeksasosa (12 %) päivän ruoan 10 MJ:sta"; seen in open-exercises-1280-7)
@@ -17,3 +18,4 @@ Round: 2
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- Round 3 (figure change only): in the L1-05 figure "tikapuut-kohteet" (capture open-exercises-1280-4, fresh, stamp 5c132ea0d45da19e) the caption "jokainen väli on 10-kertainen" now sits clearly below the scale labels 1 J … 1 TJ, with no contact, and fully inside the figure frame (the figure is 330 units high, the caption baseline is at 313). The scale, the three marked points (AA battery, tea water, lightning) and all labels are unchanged; no text, number or task changed.
