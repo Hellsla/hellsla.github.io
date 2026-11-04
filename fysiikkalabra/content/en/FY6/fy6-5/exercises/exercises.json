@@ -40,6 +40,74 @@
       "answer": 4.0,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L1-06",
+      "level": 1,
+      "text": "The sum of the currents arriving at a junction is equal to the sum of the currents leaving it. Which of the following explains this correctly?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Charge is neither created, destroyed nor collected at the point, so the charge arriving there also leaves.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The source forces an equal current into every wire, so the current always divides equally among the branches.",
+          "feedback": "The current does not always divide equally: the currents of the branches depend on the resistances of the branches. A greater current flows in the branch with the smaller resistance, but the sum of the currents is still the same as the arriving current."
+        },
+        {
+          "text": "The voltages of the branches are equal to the voltage of the source, so the currents too add up to the same amount.",
+          "feedback": "The current law does not follow from the voltages. The voltage of parallel branches can be the same even though the currents are different, and the size of the voltage does not tell the sum of the currents. The reason for the current law is the conservation of charge."
+        },
+        {
+          "text": "Charge is neither created, destroyed nor collected at the point, so the charge arriving there also leaves.",
+          "feedback": "Correct: Kirchhoff's current law follows from the conservation of charge. If more charge arrived at the point than left it, charge would pile up there, and the point could not be a point of a wire.",
+          "correct": true
+        },
+        {
+          "text": "Current is used up in the resistors, and the junction returns the used current back to the circuit.",
+          "feedback": "Current is not used up in a resistor: on both sides of a resistor the current is equal. In a resistor the potential decreases, not the current, and the junction does not return anything."
+        }
+      ]
+    },
+    {
+      "id": "fy6-5-L1-07",
+      "level": 1,
+      "text": "A circuit has a voltage source and two resistors in series. The negative terminal of the source has been chosen as the zero point. Then the positive terminal of the source is chosen as the zero point. What does this change?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The potentials change by the same amount at all points, but the voltages stay the same.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Only the potential of the new zero point changes, and the potentials of the other points stay as they were.",
+          "feedback": "All potentials are measured from the zero point, so a new zero point changes the potential of every point. For example, the potential of the negative terminal changes from zero to negative."
+        },
+        {
+          "text": "The current through the resistors changes, because the potential of every point gets a new value.",
+          "feedback": "The current is determined by the voltage of the source and the resistances, and they stay the same. The zero point is only a choice made for calculation, and it does not change how the circuit works."
+        },
+        {
+          "text": "The voltages of the resistors change, because voltage is always calculated from the distance to the chosen zero point.",
+          "feedback": "The voltage of a resistor is the potential difference between its ends, and the difference does not depend on the zero point. So changing the zero point does not change the voltage of a resistor."
+        },
+        {
+          "text": "The potentials change by the same amount at all points, but the voltages stay the same.",
+          "feedback": "Correct: potential is voltage relative to the zero point, so changing the zero point shifts all potentials by the same amount. The voltage between two points is the difference of the potentials, in which the shift cancels out.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy6-5-L1-08",
+      "level": 1,
+      "text": "A current of $0.040\\,\\text{A}$ flows from the point $A$ through a resistor $R_1 = 60\\,\\Omega$ in series to the point $B$ and from there through a resistor $R_2 = 90\\,\\Omega$ to the point $C$. The potential of the point $A$ is $9.0\\,\\text{V}$. What is the potential of the point $C$?",
+      "answer": 3.0,
+      "unit": "V",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -75,6 +143,94 @@
       "answer": 60,
       "unit": "Ω",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L2-05",
+      "level": 2,
+      "text": "Sample data: three resistors, $R_1 = 60\\,\\Omega$, $R_2 = 80\\,\\Omega$ and $R_3 = 50\\,\\Omega$, are connected in parallel to a voltage source whose voltage is $12\\,\\text{V}$. An ammeter is in series with each resistor, and there is an ammeter $\\text{A}_0$ in the main wire. The source, the wires and the ammeters are assumed to be ideal.\n\nThe table shows the readings of the meters. One of the readings is wrong, because Kirchhoff's current law does not hold.\n\na) Check the readings of the branch meters with Ohm's law.\n\nb) Deduce which reading is wrong and calculate what that meter should show.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 0.59,
+      "unit": "A",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Readings of the ammeters, sample data",
+        "columns": [
+          "Meter",
+          "$I\\,(\\text{A})$"
+        ],
+        "rows": [
+          [
+            "$\\text{A}_0$ (main wire)",
+            "0.50"
+          ],
+          [
+            "$\\text{A}_1$ (resistor $R_1$)",
+            "0.20"
+          ],
+          [
+            "$\\text{A}_2$ (resistor $R_2$)",
+            "0.15"
+          ],
+          [
+            "$\\text{A}_3$ (resistor $R_3$)",
+            "0.24"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-5-L2-06",
+      "level": 2,
+      "text": "Sample data: a series circuit has a voltage source and three resistors. The point $A$ is the positive terminal of the source, and the current flows from there through the resistor $R_1$ to the point $B$, through a wire to the point $C$, through the resistor $R_2$ to the point $D$ and through the resistor $R_3$ to the negative terminal $E$ of the source.\n\nThe negative terminal is the zero point. The potentials measured with a voltmeter are in the table, and the ammeter shows $0.12\\,\\text{A}$.\n\na) Explain why the points $B$ and $C$ have the same potential.\n\nb) Calculate the resistance of the resistor $R_2$.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data"
+      ],
+      "answer": 40,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Potential at the points of the circuit, sample data",
+        "columns": [
+          "Point",
+          "$V\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "$A$",
+            "12.0"
+          ],
+          [
+            "$B$",
+            "8.4"
+          ],
+          [
+            "$C$",
+            "8.4"
+          ],
+          [
+            "$D$",
+            "3.6"
+          ],
+          [
+            "$E$",
+            "0.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-5-L2-07",
+      "level": 2,
+      "text": "Sample problem: a voltage source of $9.0\\,\\text{V}$ and resistors $R_1 = 100\\,\\Omega$ and $R_2 = 200\\,\\Omega$ are in series. The positive terminal of the source is connected to the resistor $R_1$.\n\nA student chooses the positive terminal of the source as the zero point and writes: “The current is $I = 9.0\\,\\text{V} : 300\\,\\Omega = 0.030\\,\\text{A}$, so the potential of the wire between the resistors is $V = R_1 I$, that is, three volts.”\n\na) Find the error in the student's reasoning.\n\nb) Calculate the potential of the wire between the resistors correctly, with its sign.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "error"
+      ],
+      "answer": -3.0,
+      "unit": "V",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -102,6 +258,55 @@
       "answer": 1.8,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L3-04",
+      "level": 3,
+      "text": "A sample circuit has two ideal voltage sources and three resistors. Between the junctions $P$ and $Q$ there are three parallel branches.\n\nThe left branch has a source $U_1 = 12\\,\\text{V}$ and a resistor $R_1 = 30\\,\\Omega$, the middle one a resistor $R_2 = 20\\,\\Omega$ and the right one a source $U_2 = 9.0\\,\\text{V}$ and a resistor $R_3 = 30\\,\\Omega$.\n\nThe positive terminal of each source is on the side of the point $P$. The currents $I_1$ and $I_3$ flow from the sources to the point $P$, and the current $I_2$ flows from the point $P$ through the resistor $R_2$ to the point $Q$.\n\na) Use Kirchhoff's laws to form a system of equations for the branch currents $I_1$, $I_2$ and $I_3$ and solve it.\n\nb) Check the solution with an energy balance: the power of a source is $P = UI$ and the power of a resistor is $P = RI^2$. Justify why the sum of the powers of the sources must be equal to the sum of the powers of the resistors.\n\nThe answer box takes the current $I_2$ of part a).",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.3,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-5-L3-05",
+      "level": 3,
+      "text": "A voltage divider gives a voltage smaller than the voltage of the source. In the sample circuit the voltage of the source is $12\\,\\text{V}$. The positive terminal of the source is connected to a resistor $R_1 = 100\\,\\Omega$, after which the current flows through the point $P$ to a resistor $R_2 = 100\\,\\Omega$ and to the negative terminal of the source, which is the zero point.\n\nA load whose resistance is $R_\\text{L}$ is connected between the point $P$ and the negative terminal (in parallel with the resistor $R_2$). The table shows the measured potentials of the point $P$ with different loads (sample data).\n\na) Justify with Kirchhoff's laws why the potential of the point $P$ is $6.00\\,\\text{V}$ without a load and why it decreases when a load is connected.\n\nb) Calculate the potential of the point $P$ when $R_\\text{L} = 100\\,\\Omega$ and compare it with the table.\n\nc) What load resistance $R_\\text{L}$ keeps the potential of the point $P$ at $5.0\\,\\text{V}$?\n\nThe answer box takes the result of part c).",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 250,
+      "unit": "Ω",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Potential of the point $P$ with different loads, sample data",
+        "columns": [
+          "$R_\\text{L}\\,(\\Omega)$",
+          "$V_P\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "no load",
+            "6.00"
+          ],
+          [
+            "1000",
+            "5.72"
+          ],
+          [
+            "100",
+            "4.01"
+          ],
+          [
+            "47",
+            "2.91"
+          ]
+        ]
+      }
     }
   ]
 }

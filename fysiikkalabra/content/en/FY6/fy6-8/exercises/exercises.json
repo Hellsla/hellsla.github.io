@@ -40,6 +40,74 @@
       "answer": 3.0,
       "unit": "A",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L1-06",
+      "level": 1,
+      "text": "The terminal voltage of a battery is measured with a voltmeter across the terminals of the battery. When is the terminal voltage equal to the source voltage of the battery?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "When no current is drawn from the battery, because then no voltage drop arises in the internal resistance.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "When the maximum possible current is drawn from the battery, because then the whole source voltage is left across the terminals.",
+          "feedback": "On the contrary: a large current increases the voltage drop $R_\\text{s} I$ in the internal resistance, so a voltage smaller than the source voltage is left across the terminals. In a short circuit the terminal voltage is zero."
+        },
+        {
+          "text": "When the load resistance is equal to the internal resistance, because then the voltage is divided equally.",
+          "feedback": "Then the source voltage really is divided equally, but that is exactly why the terminal voltage is only half of the source voltage. The terminal voltage is equal to the source voltage only when no current flows."
+        },
+        {
+          "text": "When no current is drawn from the battery, because then no voltage drop arises in the internal resistance.",
+          "feedback": "Correct: the terminal voltage is $U = E - R_\\text{s} I$, and when $I = 0$, the voltage does not drop in the internal resistance. That is why a voltmeter shows the source voltage only without a load.",
+          "correct": true
+        },
+        {
+          "text": "Always, because the source voltage is a property of the battery and the load does not change the terminal voltage at all.",
+          "feedback": "The source voltage is a property of the battery, but the terminal voltage is not: when the current grows, the voltage drop in the internal resistance grows and the terminal voltage decreases. So they are equal only when no current flows."
+        }
+      ]
+    },
+    {
+      "id": "fy6-8-L1-07",
+      "level": 1,
+      "text": "The terminals of a battery are connected with a short, thick wire whose resistance is almost zero (a short circuit). What happens then?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The current grows large, because only the internal resistance of the battery limits it any more.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The current drops to zero, because the resistance of the external circuit is zero and there is no load.",
+          "feedback": "Ohm's law works the other way round: the smaller the total resistance, the larger the current. The absence of a load does not stop the current but removes what limited it."
+        },
+        {
+          "text": "The current stays the same, because the source voltage of the battery does not change and the load does not affect the current.",
+          "feedback": "The source voltage stays approximately the same, but the current is determined by the total resistance: $I = E : (R + R_\\text{s})$. When $R$ drops to zero, the current grows many times over."
+        },
+        {
+          "text": "The terminal voltage rises above the source voltage, because the wire does not resist the current at all.",
+          "feedback": "The terminal voltage cannot exceed the source voltage, because $U = E - R_\\text{s} I$. In a short circuit the terminal voltage is, on the contrary, zero, because the whole source voltage is left across the internal resistance."
+        },
+        {
+          "text": "The current grows large, because only the internal resistance of the battery limits it any more.",
+          "feedback": "Correct: the resistance of the external circuit is almost zero, so the current is $I_\\text{k} = E : R_\\text{s}$. In batteries $R_\\text{s}$ is small, so the current is large and the battery heats up dangerously hot.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy6-8-L1-08",
+      "level": 1,
+      "text": "The source voltage of a new battery is $1.50\\,\\text{V}$. When a current of $0.50\\,\\text{A}$ is drawn from the battery, its terminal voltage is $1.31\\,\\text{V}$. What is the internal resistance of the battery?",
+      "answer": 0.38,
+      "unit": "Ω",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,135 @@
       "answer": 1.0,
       "unit": "A",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L2-05",
+      "level": 2,
+      "text": "The terminal voltage of a battery was measured at six different load currents (example data). Draw the $(I, U)$ graph from the measured points and fit a straight line to the points. The points are not exactly on a line, because every measurement has a small uncertainty.\n\na) Read the source voltage of the battery from the line.\n\nb) Determine the internal resistance of the battery from the slope of the line and estimate how much the slope can vary when the line is fitted in different ways.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 0.56,
+      "unit": "Ω",
+      "tolerance": 0.06,
+      "data": {
+        "caption": "Terminal voltage $U$ of a battery as a function of the load current $I$ (example data)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "1.43"
+          ],
+          [
+            "0.40",
+            "1.31"
+          ],
+          [
+            "0.60",
+            "1.20"
+          ],
+          [
+            "0.80",
+            "1.10"
+          ],
+          [
+            "1.00",
+            "0.99"
+          ],
+          [
+            "1.20",
+            "0.86"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-8-L2-06",
+      "level": 2,
+      "text": "The terminal voltage of two types of battery, A and B, was measured at the same load currents (example data). Draw the measured points of both batteries in the same $(I, U)$ coordinate system and fit a separate line to each.\n\na) At what current are the terminal voltages of the batteries equal? Read the value from the point where the lines intersect.\n\nb) Which battery is better at a large current and why? Justify with the internal resistance.\n\nThe answer box takes the result of part a).",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 0.4,
+      "unit": "A",
+      "tolerance": 0.13,
+      "data": {
+        "caption": "Terminal voltage of batteries A and B as a function of the load current (example data)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$U_\\text{A}\\,(\\text{V})$",
+          "$U_\\text{B}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "1.55",
+            "1.47"
+          ],
+          [
+            "0.20",
+            "1.50",
+            "1.44"
+          ],
+          [
+            "0.30",
+            "1.45",
+            "1.42"
+          ],
+          [
+            "0.50",
+            "1.35",
+            "1.38"
+          ],
+          [
+            "0.70",
+            "1.25",
+            "1.34"
+          ],
+          [
+            "1.00",
+            "1.10",
+            "1.27"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-8-L2-07",
+      "level": 2,
+      "text": "A student measures a battery with a voltmeter connected across the terminals of the battery without a load. The meter shows $1.58\\,\\text{V}$ (example data). The student concludes: “The terminal voltage is the same as the source voltage of the battery, so the internal resistance of the battery is zero.”\n\nWhich statement about the student's conclusion is correct?",
+      "kind": [
+        "experiment",
+        "error"
+      ],
+      "answer": "The conclusion is wrong, because without a current no voltage drop arises in the internal resistance.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The conclusion is wrong, because without a current no voltage drop arises in the internal resistance.",
+          "feedback": "Correct: when $I = 0$, $U = E - R_\\text{s} \\cdot 0 = E$ whatever $R_\\text{s}$ is. A single measurement without a current gives only the source voltage. To determine the internal resistance one needs a measurement under load or several at different currents.",
+          "correct": true
+        },
+        {
+          "text": "The conclusion is correct, because the terminal voltage is equal to the source voltage only if the internal resistance of the battery is zero.",
+          "feedback": "The terminal voltage is the source voltage also when no current flows, even if $R_\\text{s}$ is large: the voltage drop is $R_\\text{s} I = 0$. So the measurement tells nothing about the internal resistance."
+        },
+        {
+          "text": "The conclusion is wrong, because the voltmeter draws a large current and reduces the measured terminal voltage.",
+          "feedback": "The resistance of a voltmeter is very large, so it draws a vanishingly small current and does not change the terminal voltage significantly. That is why a measurement without a current gives the source voltage, but not $R_\\text{s}$."
+        },
+        {
+          "text": "The conclusion is wrong, because when the current is zero the internal resistance of the battery is infinite.",
+          "feedback": "The internal resistance is a property of the battery and does not change with the current. The current is zero because there is no external circuit, not because $R_\\text{s}$ is infinite."
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +297,101 @@
       "answer": 1.6,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L3-04",
+      "level": 3,
+      "text": "The terminal voltage of batteries of the same model was measured at different load currents when the battery was new and when it was aged (example data). Draw the $(I, U)$ graph from the measured points of both batteries and fit lines to the points.\n\na) Determine the source voltage and the internal resistance of each battery.\n\nb) The aged battery is connected to a resistor whose resistance is $2.0\\,\\Omega$. What percentage of the electric power produced by the battery is converted into the internal energy of the battery itself? Compare with the new battery under the same load.\n\nc) Calculate the power the aged battery delivers to the resistor when the resistance of the resistor is $0.55\\,\\Omega$, $1.1\\,\\Omega$, $2.2\\,\\Omega$ and $4.4\\,\\Omega$. At which of these is the power greatest, and what share of the power produced then heats the battery?\n\nThe answer box takes the result of part b) for the aged battery.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 35,
+      "unit": "%",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Terminal voltage of a new and an aged battery as a function of the load current (example data)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$U_\\text{new}\\,(\\text{V})$",
+          "$U_\\text{aged}\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "1.56",
+            "1.41"
+          ],
+          [
+            "0.20",
+            "1.53",
+            "1.30"
+          ],
+          [
+            "0.30",
+            "1.51",
+            "1.19"
+          ],
+          [
+            "0.40",
+            "1.48",
+            "1.09"
+          ],
+          [
+            "0.50",
+            "1.46",
+            "0.97"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy6-8-L3-05",
+      "level": 3,
+      "text": "A student determined the internal resistance and the short-circuit current of a group of four AA batteries by measuring the current and the voltage at six loads (example data). The voltmeter was connected across the terminals of the load resistor, and the total resistance of the wires between the group of batteries and the resistor, measured separately, is $0.30\\,\\Omega$.\n\nThe student fitted a line to the points, got the absolute value of the slope as $1.1\\,\\Omega$ and concluded: “The internal resistance is $1.1\\,\\Omega$, so the short-circuit current is $E : 1.1\\,\\Omega = 5.6\\,\\text{A}$.”\n\na) Draw a graph of the measured points, fit a line and use it to read the source voltage $E$ of the group of batteries.\n\nb) Explain why the student's internal resistance is too large, and calculate the correct internal resistance of the group of batteries.\n\nc) Calculate the correct short-circuit current of the group of batteries when the terminals are connected directly without wires. How should the measurement have been made so that the wires do not affect the result?\n\nThe answer box takes the short-circuit current of part c).",
+      "kind": [
+        "data",
+        "graph",
+        "error",
+        "model"
+      ],
+      "answer": 7.6,
+      "unit": "A",
+      "tolerance": 0.06,
+      "data": {
+        "caption": "Voltage $U$ across the terminals of the load resistor as a function of the current $I$ (example data)",
+        "columns": [
+          "$I\\,(\\text{A})$",
+          "$U\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0.50",
+            "5.56"
+          ],
+          [
+            "1.00",
+            "5.00"
+          ],
+          [
+            "1.50",
+            "4.45"
+          ],
+          [
+            "2.00",
+            "3.91"
+          ],
+          [
+            "2.50",
+            "3.36"
+          ],
+          [
+            "3.00",
+            "2.79"
+          ]
+        ]
+      }
     }
   ]
 }
