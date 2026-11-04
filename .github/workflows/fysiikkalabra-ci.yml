@@ -104,6 +104,7 @@ jobs:
         run: |
           fail=0
           for f in content/fi/*/*/inquiry.json; do
+            case "$f" in content/fi/units/*) continue;; esac   # course units (FY12) are checked by units.py check, as FY14's are
             id=$(basename "$(dirname "$f")")
             if [ "$PAGES" != full ]; then case " $PAGES " in *" $id "*) ;; *) continue;; esac; fi
             if python scripts/test_inquiry.py "$id" > "/tmp/inquiry-$id.txt" 2>&1; then tail -1 "/tmp/inquiry-$id.txt" | sed "s/^/$id: /"
