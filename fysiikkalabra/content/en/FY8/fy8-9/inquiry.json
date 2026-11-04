@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "contribution": "Randomness of radioactive decay and the decay law: the decay of a single nucleus is unpredictable, but the number in a large group halves in the same time; the half-life, the decay constant $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$ and the activity $A = \\lambda N$, and fitting an exponential function to pulse data in Graphical Analysis Pro.",
+  "learn": [
+    "explain why the number of randomly decaying nuclei always halves in the same time.",
+    "calculate the number of nuclei and the activity from the decay law, and the decay constant from the half-life.",
+    "determine the half-life by fitting an exponential function to measurement data."
+  ],
+  "prior": [
+    "A radioactive nucleus decays in alpha, beta or gamma decay and at the same time emits ionising radiation (chapter *The atomic nucleus and radioactive decay*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In the isotope department of a hospital a patient is given a tracer that contains radioactive technetium-$99\\text{m}$. In the morning the activity of the preparation is $740\\,\\text{MBq}$, after six hours about $370\\,\\text{MBq}$ and after another six hours about $185\\,\\text{MBq}$. The same schedule repeats every day, in every hospital. Yet the moment of decay of a single technetium nucleus is completely random: nobody can say whether it decays during the next second or only tomorrow.",
+      "question": "How can a group of randomly decaying nuclei follow such a precise schedule?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Review: beta decay",
+      "prompt": "Iodine-131, used in thyroid treatments, decays by beta minus decay. What happens to the nucleus in the decay?",
+      "choices": [
+        {
+          "text": "A neutron of the nucleus changes into a proton, so the atomic number increases by one and iodine becomes xenon.",
+          "correct": true,
+          "feedback": "Correct. An electron and an antineutrino leave the nucleus, the mass number $131$ is conserved and the atomic number increases from $53$ to $54$ (chapter *The atomic nucleus and radioactive decay*). Today we find out *when* the nuclei decay."
+        },
+        {
+          "text": "The nucleus emits an alpha particle, so its mass number decreases by four.",
+          "feedback": "This describes alpha decay, in which a particle of two protons and two neutrons leaves the nucleus. In beta minus decay a neutron of the nucleus changes into a proton, so the mass number is conserved and the atomic number increases by one (chapter *The atomic nucleus and radioactive decay*)."
+        },
+        {
+          "text": "The atom loses one electron from its electron shell, so it becomes an iodine ion.",
+          "feedback": "The beta particle does not come from the electron shell but is created in the nucleus when a neutron changes into a proton. That is why the nucleus becomes the nucleus of another element: iodine becomes xenon (chapter *The atomic nucleus and radioactive decay*)."
+        },
+        {
+          "text": "The nucleus splits into two nuclei of roughly equal size.",
+          "feedback": "The splitting of a nucleus in two is fission, and it is a different phenomenon from beta decay. In beta minus decay only an electron and an antineutrino leave the nucleus, and a neutron changes into a proton (chapter *The atomic nucleus and radioactive decay*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: two half-lives",
+      "prompt": "A sample contains $1600$ identical radioactive nuclei. Their half-life is $20\\,\\text{s}$: in that time half of the nuclei decay. About how many undecayed nuclei does the sample contain after $40\\,\\text{s}$?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "About $400$, because during the second half-life half of the remaining nuclei decay.",
+          "correct": true,
+          "feedback": "The values of the model support this: in series 1 there were $792$ undecayed nuclei at $20\\,\\text{s}$ and $399$ at $40\\,\\text{s}$. During every half-life the same fraction of the remaining nuclei decays, so at $40\\,\\text{s}$ about a quarter is left and at $60\\,\\text{s}$ about an eighth ($208$)."
+        },
+        {
+          "text": "None, because first one half decays and in the next half-life the other.",
+          "feedback": "The values of the model refute this: at $40\\,\\text{s}$ there were still $399$ undecayed nuclei. During the second half-life half of the *remaining* nuclei decay, that is, about $400$ nuclei, not all $800$. There are fewer and fewer decays, because there are fewer and fewer nuclei that can decay."
+        },
+        {
+          "text": "It cannot be predicted, because every nucleus decays at a random moment.",
+          "feedback": "For a single nucleus we cannot say when it decays, but for a large group we can. The values of the model were close to the expected: $792$ at $20\\,\\text{s}$ and $399$ at $40\\,\\text{s}$. Randomness shows only as small deviations from $800$ and $400$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a small and a large sample",
+      "prompt": "The same isotope is in two samples: one has $20$ nuclei and the other $1600$. For each, the fraction of nuclei that are undecayed after one half-life is recorded. The experiment is repeated many times with new samples. What can be predicted about the results?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "In both about a half, but in the small sample the fraction varies more from one experiment to another.",
+          "correct": true,
+          "feedback": "The values of the model support this: of $20$ nuclei the undecayed numbers were $7$, $12$, $13$, $7$ and $10$, so the fraction varied between $0.35$ and $0.65$. Of $1600$ nuclei the fraction was in every series between $0.489$ and $0.509$. The more nuclei, the smaller the relative effect of randomness."
+        },
+        {
+          "text": "In both exactly a half is undecayed every time, because the half-life is defined exactly like that.",
+          "feedback": "The values of the model refute this: of $20$ nuclei the undecayed numbers in different series were $7$, $12$, $13$, $7$ and $10$. The half-life describes the behaviour of a large group of nuclei. In a small group chance can deviate from a half by a lot."
+        },
+        {
+          "text": "The small sample decays faster, so clearly less than a half is undecayed every time.",
+          "feedback": "The values of the model refute this: in the series of $20$ nuclei the undecayed number was sometimes below and sometimes above a half ($7$, $12$, $13$ …). Every nucleus decays with the same probability regardless of how many other nuclei there are in the sample, so the half-life does not depend on the size of the sample."
+        },
+        {
+          "text": "The large sample decays faster, because the decaying nuclei make their neighbours decay too.",
+          "feedback": "The values of the model refute this: of the samples of $1600$ nuclei the undecayed fraction at one half-life was $0.489$–$0.509$, that is, about a half, not less. Radioactive nuclei decay independently of each other: the decay of a neighbour does not change the probability of a nucleus decaying."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A sample initially contains $N_0$ radioactive nuclei. Start the time or move the time slider and follow which nuclei decay and how the number $N$ of undecayed nuclei decreases.",
+      "howto": "*Start* runs the time and *Stop* stops it; the time can also be moved with the slider *Time* $0$–$120\\,\\text{s}$. Choose the *Nuclei at the start* $N_0$ ($20$, $100$, $400$ or $1600$) and the half-life $T_{1/2}$ between $10$ and $40\\,\\text{s}$. *Draw* chooses one of five random series: the same series always gives the same result, a different series gives different nuclei and different moments of decay. On the left (at the top on a narrow screen) every nucleus is an orange disc until it decays and becomes a grey ring; a ray leaves a nucleus that has just decayed. In the graph the orange step line is the number $N$ of undecayed nuclei of the series, and the pale dashed line is the decay law. The grey dashed lines mark the moment $T_{1/2}$ and the number $\\tfrac{1}{2}N_0$. *Speed* changes only the pace of the passing of time.",
+      "model": "The model contains the nuclei of one imaginary isotope whose half-life is short so that decay can be seen in a moment; for example, the half-life of barium-$137\\text{m}$ is $2.55\\,\\text{min}$. Every nucleus has at every moment the same probability of decaying per unit of time, $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$, regardless of its age and of the other nuclei. The moment of decay of a nucleus is drawn according to this probability, and the draw of a series can be repeated. The daughter nucleus is assumed to be stable. The model counts the nuclei exactly, so it has no radiation meter, no background radiation and no measurement uncertainty. The readings are values of the model, not measurements.",
+      "calc": "For every nucleus a uniformly distributed random number $u$ between $0$ and $1$ is drawn, and its moment of decay is $\\tau = -\\tfrac{T_{1/2}}{\\ln 2} \\ln u$. With this draw every nucleus decays in any short interval $\\Delta t$ with the probability $\\lambda \\Delta t$. The number $N$ of undecayed nuclei is the number of nuclei with $\\tau > t$. The fraction is $N : N_0$, and $t : T_{1/2}$ tells the number of half-lives passed. The dashed line is $N_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: one half-life after another",
+      "intro": "Test prediction 1. The sample contains $1600$ nuclei, the half-life is $20\\,\\text{s}$ and the draw is series 1. Change only the time: record the number $N$ of undecayed nuclei and the fraction $N : N_0$ at least at the times $t = 0$, $20$ and $40\\,\\text{s}$, and if you like also at $60\\,\\text{s}$.",
+      "initial": {
+        "N0": "1600",
+        "T": 20,
+        "t": 0,
+        "sarja": "1"
+      },
+      "locked": [
+        "N0",
+        "T",
+        "sarja"
+      ],
+      "vary": "t",
+      "min": 3,
+      "units": {
+        "t": "s",
+        "T": "s"
+      },
+      "names": {
+        "t": "time t",
+        "N0": "nuclei at the start N₀",
+        "T": "half-life",
+        "sarja": "draw"
+      },
+      "values": {
+        "sarja": {
+          "1": "series 1",
+          "2": "series 2",
+          "3": "series 3",
+          "4": "series 4",
+          "5": "series 5"
+        }
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "frac",
+          "label": "N/N₀"
+        }
+      ]
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: a small sample, different draws",
+      "intro": "Test prediction 2. The sample contains $20$ nuclei, the half-life is $20\\,\\text{s}$ and the time is $t = 20\\,\\text{s}$, that is, one half-life. Change only the draw: record $N$ and $N : N_0$ at least from series 1, 2 and 3, and if you like from all five.",
+      "initial": {
+        "N0": "20",
+        "T": 20,
+        "t": 20,
+        "sarja": "1"
+      },
+      "locked": [
+        "N0",
+        "T",
+        "t"
+      ],
+      "vary": "sarja",
+      "min": 3,
+      "units": {
+        "t": "s",
+        "T": "s"
+      },
+      "names": {
+        "t": "time t",
+        "N0": "nuclei at the start N₀",
+        "T": "half-life",
+        "sarja": "draw"
+      },
+      "values": {
+        "sarja": {
+          "1": "series 1",
+          "2": "series 2",
+          "3": "series 3",
+          "4": "series 4",
+          "5": "series 5"
+        }
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "frac",
+          "label": "N/N₀"
+        }
+      ]
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: a large sample, different draws",
+      "intro": "Repeat experiment 2 with a large sample. The sample contains $1600$ nuclei, and the time is again one half-life. Change only the draw and record $N$ and $N : N_0$ from at least two series. Compare the variation of the fractions with experiment 2.",
+      "initial": {
+        "N0": "1600",
+        "T": 20,
+        "t": 20,
+        "sarja": "1"
+      },
+      "locked": [
+        "N0",
+        "T",
+        "t"
+      ],
+      "vary": "sarja",
+      "min": 2,
+      "units": {
+        "t": "s",
+        "T": "s"
+      },
+      "names": {
+        "t": "time t",
+        "N0": "nuclei at the start N₀",
+        "T": "half-life",
+        "sarja": "draw"
+      },
+      "values": {
+        "sarja": {
+          "1": "series 1",
+          "2": "series 2",
+          "3": "series 3",
+          "4": "series 4",
+          "5": "series 5"
+        }
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "frac",
+          "label": "N/N₀"
+        }
+      ]
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: chance and law",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "On the basis of your tables, write: What happened to the number of undecayed nuclei during every half-life? Why did the results for $20$ nuclei vary more from one series to another than those for $1600$ nuclei? How can random decay still follow a precise law?",
+      "model": "In experiment 1 the undecayed numbers, as values of the model, were $1600$, $792$, $399$ and $208$ at the times $0$, $20$, $40$ and $60\\,\\text{s}$: during every half-life the number halved, so after two half-lives about a quarter was left, not zero. In experiment 2, after one half-life, of $20$ nuclei $7$–$13$ were undecayed, so the fraction varied between $0.35$ and $0.65$, whereas in experiment 3 the fraction of $1600$ nuclei stayed between $0.489$ and $0.509$. Every nucleus has the same probability of decaying per unit of time, so in a given time on average the same fraction of the remaining nuclei decays. A single nucleus is unpredictable, but in a large group the random deviations are relatively small. A real sample contains for example $10^{15}$ nuclei, so the decay law holds in practice exactly.",
+      "criteria": [
+        "I tell with the values of the model that the number halved during every half-life and that after two half-lives about a quarter was left.",
+        "I compare the fractions of experiments 2 and 3 and state that the variation was greater in the small sample.",
+        "I explain that every nucleus has the same probability of decaying, so in a large group almost the same fraction always decays.",
+        "I call the numbers of the simulation values of the model, not measurements."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments. Then return to the question at the start: why does the activity of the technetium preparation halve every time in six hours, even though the moment of decay of a single nucleus cannot be known? What would happen if the preparation contained only ten nuclei?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates how many technetium-$99\\text{m}$ nuclei there are in a sample whose activity is $2.0\\,\\text{MBq}$. The half-life is $6.01\\,\\text{h}$. He writes\n\n$$\\begin{aligned} \\lambda &= \\frac{1}{T_{1/2}} = \\frac{1}{6.01 \\cdot 3600\\,\\text{s}} \\\\ &= 4.62 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{s}} \\end{aligned}$$\n\nand then $N = \\tfrac{A}{\\lambda} = \\tfrac{2.0 \\cdot 10^{6}\\,\\tfrac{1}{\\text{s}}}{4.62 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{s}}} \\approx 4.3 \\cdot 10^{10}$.\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The decay constant is $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$, not $\\tfrac{1}{T_{1/2}}$.",
+          "correct": true,
+          "feedback": "Correct. At the half-life $e^{-\\lambda T_{1/2}} = \\tfrac{1}{2}$, from which $\\lambda T_{1/2} = \\ln 2$. The correct decay constant is $\\lambda = \\tfrac{0.693}{21\\,636\\,\\text{s}} = 3.20 \\cdot 10^{-5}\\,\\tfrac{1}{\\text{s}}$, and the number of nuclei is $N = \\tfrac{A}{\\lambda} \\approx 6.2 \\cdot 10^{10}$. The wrong formula gave a result about $31\\,\\%$ too small."
+        },
+        {
+          "text": "The half-life should not have been converted to seconds, because it is given in hours.",
+          "feedback": "The conversion to seconds is correct and necessary: the unit of activity, the $\\text{Bq}$, is $\\tfrac{1}{\\text{s}}$, so the decay constant must also be in $\\tfrac{1}{\\text{s}}$. The error is in the formula of the decay constant: $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$."
+        },
+        {
+          "text": "The number of nuclei is $N = A \\lambda$, not $\\tfrac{A}{\\lambda}$.",
+          "feedback": "The activity is $A = \\lambda N$, so $N = \\tfrac{A}{\\lambda}$ is solved correctly. The product $A\\lambda$ would have the unit $\\tfrac{1}{\\text{s}^2}$, and that is not a number of nuclei. The error is in the decay constant: the factor $\\ln 2$ is missing."
+        },
+        {
+          "text": "The activity should first have been halved, because half of the nuclei decay in a half-life.",
+          "feedback": "The activity $2.0\\,\\text{MBq}$ describes the sample at the present moment, so it is not halved. The half-life enters the calculation only through the decay constant, and its formula is $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$."
+        }
+      ]
+    },
+    {
+      "id": "sovitus",
+      "stage": "sovella",
+      "type": "interpret",
+      "title": "Fit an exponential function to measurement data",
+      "source": "simulated",
+      "source_note": "the pulse counts are drawn with random numbers from a model in which the half-life of protactinium-$234\\text{m}$ is the literature value $1.159\\,\\text{min} = 69.5\\,\\text{s}$ (NNDC NuDat 3) and the background radiation is $0.5$ pulses per second. The data are not a measurement.",
+      "figure": "fy8-9/pa-points",
+      "text": "In a school decay experiment protactinium-$234\\text{m}$ is separated from a uranium compound into a liquid, and a radiation meter counts pulses in periods of $10\\,\\text{s}$ at intervals of $20\\,\\text{s}$. The $t$ of the table is the start of the period.\n\n| $t$ (s) | pulses | $t$ (s) | pulses | $t$ (s) | pulses |\n| --- | --- | --- | --- | --- | --- |\n| $0$ | $380$ | $140$ | $104$ | $280$ | $33$ |\n| $20$ | $317$ | $160$ | $76$ | $300$ | $21$ |\n| $40$ | $257$ | $180$ | $60$ | $320$ | $24$ |\n| $60$ | $211$ | $200$ | $58$ | $340$ | $20$ |\n| $80$ | $165$ | $220$ | $43$ | $360$ | $7$ |\n| $100$ | $150$ | $240$ | $41$ | $380$ | $14$ |\n| $120$ | $113$ | $260$ | $35$ | $400$ | $12$ |\n\nYou can copy the data from the box below and paste it into the table of Graphical Analysis Pro (**Manual Entry**).\n\n```\nt (s)\tpulses\n0\t380\n20\t317\n40\t257\n60\t211\n80\t165\n100\t150\n120\t113\n140\t104\n160\t76\n180\t60\n200\t58\n220\t43\n240\t41\n260\t35\n280\t33\n300\t21\n320\t24\n340\t20\n360\t7\n380\t14\n400\t12\n```",
+      "question": {
+        "type": "numeric",
+        "prompt": "Fit the function $y = A\\,e^{-Ct} + B$ to the data in Graphical Analysis Pro. What is the half-life of protactinium-$234\\text{m}$ on the basis of the fit? Answer in seconds.",
+        "answer": 68.4,
+        "unit": "s",
+        "tolerance": 0.01,
+        "hints": [
+          "Type or paste the time and the number of pulses into the table. From the icon in the lower left corner of the graph open the graph tools and choose **Curve Fit**.",
+          "Choose the exponential fit whose equation is $A \\cdot \\exp(-C \\cdot x) + B$ (*Natural Exponent*). Its coefficient $C$ is the decay constant $\\lambda$, and $T_{1/2} = \\tfrac{\\ln 2}{C}$.",
+          "The fit gives $C \\approx 0.0101\\,\\tfrac{1}{\\text{s}}$. Divide the number $\\ln 2 \\approx 0.693$ by this."
+        ],
+        "mistakes": [
+          {
+            "value": 98.7,
+            "feedback": "You calculated $\\tfrac{1}{C}$. In a half-life the sample halves, so $e^{-C T_{1/2}} = \\tfrac{1}{2}$ and $T_{1/2} = \\tfrac{\\ln 2}{C}$: remember the factor $\\ln 2 \\approx 0.693$."
+          },
+          {
+            "value": 0.0101,
+            "feedback": "This is the coefficient $C$ of the fit, that is, the decay constant in the unit $\\tfrac{1}{\\text{s}}$. The half-life is obtained from it: $T_{1/2} = \\tfrac{\\ln 2}{C}$."
+          },
+          {
+            "value": 71.8,
+            "feedback": "You fitted the function without the constant term $B$. Then the fit tries to explain the pulses of the background radiation as slow decay, and the half-life becomes too long. Choose the fit that has $+B$."
+          },
+          {
+            "value": 69.5,
+            "feedback": "This is the literature value of protactinium-$234\\text{m}$. In the task the half-life is determined from the data by fitting; because of randomness the result differs slightly from it. Make the fit and calculate $T_{1/2} = \\tfrac{\\ln 2}{C}$."
+          }
+        ],
+        "solution": "**Given:** the pulse counts of a protactinium-$234\\text{m}$ sample in periods of $10\\,\\text{s}$ at intervals of $20\\,\\text{s}$ from the time $t = 0$ to the time $t = 400\\,\\text{s}$ ($21$ points in the table), the model $y = A\\,e^{-Ct} + B$\n\n**Asked:** the half-life $T_{1/2}$ in seconds\n\n**Principle:** The number of pulses is proportional to the activity of the sample, which decreases exponentially according to the decay law, and a constant number of pulses of background radiation is added to it. That is why the model has the constant term $B$. The least-squares fit chooses the coefficients $A$, $B$ and $C$ for which the sum of the squares of the vertical deviations of the points is smallest; the coefficient $C$ is the decay constant $\\lambda$.\n\n**Reading the graph:** The points first drop steeply and level off at the end at about $5$–$15$ pulses, which is close to the background. From the result box of the fit we read $A = 376.6$, $C = 0.01013\\,\\tfrac{1}{\\text{s}}$ and $B = 5.54$ pulses in $10\\,\\text{s}$; the points are on both sides of the curve, so the model fits the data.\n\n**Formula:** $e^{-C T_{1/2}} = \\tfrac{1}{2}$, from which $C T_{1/2} = \\ln 2$ and $T_{1/2} = \\dfrac{\\ln 2}{C}$\n\n**Conversions:** None are needed: the time is in seconds, so $C$ is obtained in the unit $\\tfrac{1}{\\text{s}}$ and the half-life in seconds.\n\n**Substitution:** $T_{1/2} = \\dfrac{0.69315}{0.01013\\,\\tfrac{1}{\\text{s}}} = 68.45\\,\\text{s}$\n\n**Answer:** $68.4\\,\\text{s}$, three significant figures; that is enough, because owing to the randomness of decay the result of the fit can differ from the true value by a percent or two.\n\n**Reasonableness:** After the background, the number of pulses at the start is about $380 - 5 = 375$, and half of it, $188$, falls in the table between the times $60\\,\\text{s}$ ($211$) and $80\\,\\text{s}$ ($165$), that is, at about $70\\,\\text{s}$. The literature value is $1.159\\,\\text{min} = 69.5\\,\\text{s}$, and the difference is about $1.6\\,\\%$."
+      }
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. In the tasks of level 1 one equation is used, in the tasks of level 2 units are converted or two equations are combined, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The half-life of iodine-131 is $8.02\\,\\text{d}$. A certain iodine-131 nucleus has survived without decaying for $32\\,\\text{d}$, that is, about four half-lives. How likely is it to decay during the next $8.02\\,\\text{d}$?",
+      "choices": [
+        {
+          "text": "With the probability $\\tfrac{1}{2}$, just like any iodine-131 nucleus.",
+          "correct": true,
+          "feedback": "Correct. A nucleus has no memory: its probability of decaying per unit of time does not depend on how long it has already survived. That is why in every half-life half of the remaining nuclei decay."
+        },
+        {
+          "text": "Almost certainly, because it has survived much longer than usual and is therefore due.",
+          "feedback": "A nucleus does not grow old and is not \"due\". Its probability of decaying during the next half-life is always $\\tfrac{1}{2}$, however long it has survived."
+        },
+        {
+          "text": "With the probability $\\tfrac{1}{16}$, because only about a sixteenth of the original nuclei is left.",
+          "feedback": "A sixteenth tells what fraction of the *original* nuclei is still undecayed. The question is about a nucleus that has already survived, and its probability of decaying during the next half-life is $\\tfrac{1}{2}$."
+        },
+        {
+          "text": "Not at all, because a nucleus that has survived so long has proved to be stable.",
+          "feedback": "Nuclei of the same isotope are identical, so surviving does not make a nucleus stable. It decays during the next half-life with the probability $\\tfrac{1}{2}$ like the others."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Read the half-life from the graph",
+      "figure": "fy8-9/aktiivisuus",
+      "prompt": "The graph shows the activity of an unknown radioactive sample as a function of time. Read the half-life of the sample from the graph. Answer in hours.",
+      "answer": 5.0,
+      "unit": "h",
+      "tolerance": 0.06,
+      "hints": [
+        "What is the activity at the time $t = 0$? And half of it?",
+        "Find the point where the curve is at half of its initial value and read its time from the horizontal axis.",
+        "The initial value is $720\\,\\text{kBq}$, so find the point where $A = 360\\,\\text{kBq}$."
+      ],
+      "mistakes": [
+        {
+          "value": 10,
+          "feedback": "You read the time at which the activity is a quarter of the initial value, $180\\,\\text{kBq}$. That is two half-lives. The half-life is the time at which the activity is half of the initial value."
+        },
+        {
+          "value": 360,
+          "feedback": "This is half of the initial activity in kilobecquerels. What is asked is the time at which the activity decreases to this value: read it from the horizontal axis."
+        }
+      ],
+      "solution": "**Given:** the activity $A$ of the graph as a function of time $t$, the grid spacing $1\\,\\text{h}$ and $50\\,\\text{kBq}$\n\n**Asked:** the half-life $T_{1/2}$ in hours\n\n**Principle:** The activity is proportional to the number of undecayed nuclei, so it halves during every half-life. The half-life is therefore the time in which the activity decreases to a half from any starting moment.\n\n**Reading the graph:** At the time $t = 0$ the graph starts from the value $A_0 = 720\\,\\text{kBq}$. Half of it is $360\\,\\text{kBq}$. A horizontal line from $360\\,\\text{kBq}$ meets the curve at the time $t = 5.0\\,\\text{h}$. Check: at $180\\,\\text{kBq}$ the curve is at the time $10\\,\\text{h}$.\n\n**Formula:** $A = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$; when $A = \\tfrac{1}{2}A_0$, the exponent is $\\tfrac{t}{T_{1/2}} = 1$, so $T_{1/2} = t$\n\n**Conversions:** None are needed: the time is read directly in hours.\n\n**Substitution:** $\\tfrac{1}{2}A_0 = \\tfrac{1}{2} \\cdot 720\\,\\text{kBq} = 360\\,\\text{kBq}$, which is reached at the time $t = 5.0\\,\\text{h}$, so $T_{1/2} = 5.0\\,\\text{h}$\n\n**Answer:** $5.0\\,\\text{h}$, two significant figures, because the time can be read from the graph with an accuracy of about $0.2\\,\\text{h}$.\n\n**Reasonableness:** After two half-lives, that is, at $10\\,\\text{h}$, the activity should be a quarter, $180\\,\\text{kBq}$, and at $20\\,\\text{h}$ a sixteenth, $45\\,\\text{kBq}$. The graph agrees with both."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and transfer",
+      "optional": true,
+      "prompt": "Two samples contain the same number of radioactive nuclei. Sample P contains technetium-$99\\text{m}$ ($T_{1/2} = 6.01\\,\\text{h}$) and sample Q caesium-137 ($T_{1/2} = 30.1\\,\\text{a}$). Which sample has the greater activity now? Which is more active after a year? Justify with the equation $A = \\lambda N$.",
+      "model": "The technetium sample P is more active now. The number of nuclei is the same, and the activity is $A = \\lambda N$, where $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$. The half-life of technetium is about $44\\,000$ times shorter than that of caesium, so its decay constant and activity are that many times greater. During a year, however, about $1460$ half-lives pass for technetium, so practically all of its nuclei have decayed and the activity has dropped to zero. Of the caesium more than $97\\,\\%$ is left after a year, so after a year sample Q is the more active. A short half-life means strong but short-lived radiation.",
+      "criteria": [
+        "I tell that the activity is $A = \\lambda N$ and that a shorter half-life means a greater decay constant.",
+        "I conclude that with the same number of nuclei the activity of the technetium sample is greater now.",
+        "I explain that in a year hundreds of half-lives pass for technetium, so its nuclei have decayed and the caesium sample is then more active."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. First answer yourself and only then open the answer."
+    }
+  ]
+}

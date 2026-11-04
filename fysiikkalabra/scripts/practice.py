@@ -380,10 +380,10 @@ def render(code, lang, md, solution_html, title, embedded=False):
         pts = T.count("practice.task_points", total(task)) if not own else T("practice.kind_own")
         if embedded:
             body += (f'<div class="activity task-card practice-task" id="{tid}" data-type="practice"><h3>{n}. {esc(task["title"])} <span class="pts">{pts}</span></h3>'
-                     f'{badge}<div class="situation">{md(task["text"])}{fig(task)}</div>{parts}{skills_html(task)}{reveal}</div>')
+                     f'{badge}<div class="situation">{md(task["text"])}{fig(task)}</div>{parts}{skills_html(task)}<label class="solved"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>{reveal}</div>')
             continue
         body += (f'<section class="stage practice-task" id="{tid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{esc(task["title"])}'
-                 f' <span class="pts">{pts}</span></h2><div class="activity task-card">{badge}<div class="situation">{md(task["text"])}{fig(task)}</div>{parts}{skills_html(task)}{reveal}</div></section>')
+                 f' <span class="pts">{pts}</span></h2><div class="activity task-card">{badge}<div class="situation">{md(task["text"])}{fig(task)}</div>{parts}{skills_html(task)}<label class="solved"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>{reveal}</div></section>')
         toc += (f'<a href="#{tid}"><span class="toc-no" aria-hidden="true">{n}</span><span class="toc-label">{esc(task["title"])}</span></a>')
     return body, toc
 

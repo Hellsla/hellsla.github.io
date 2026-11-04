@@ -1,0 +1,503 @@
+{
+  "version": 1,
+  "contribution": "Luku vie atomin energiatasot tekniikkaan. Stimuloitu emissio, populaatioinversio ja peilit selittävät laservalon. Nanometrien kokoiset kvanttirakenteet näyttävät, miten rakenteen koko määrää energiatasot ja valon värin.",
+  "learn": [
+    "selittämään, mitä stimuloitu emissio, populaatioinversio ja peilit tekevät laserissa.",
+    "laskemaan laservalon aallonpituuden ja fotonien määrän sekunnissa lasertasoista ja laserin tehosta.",
+    "kuvaamaan, miten kvanttipisteen koko määrää sen valon värin, ja nimeämään kvanttirakenteiden sovelluksia."
+  ],
+  "prior": [
+    "Atomi lähettää tai absorboi fotonin, jonka energia on tasojen erotus $hf = E_\\text{y} - E_\\text{a}$ (luku *Vetyatomin energiatasot ja Bohrin malli*)",
+    "Rajatussa tilassa, esimerkiksi kiinnitetyssä kielessä, seisovia aaltoja voi olla vain tietyillä aallonpituuksilla. Elektronin tilat muistuttavat niitä (luku *Aaltomekaaninen atomimalli ja orbitaalit*)",
+    "LEDin ja laserdiodin valon väri riippuu puolijohteen energiaraosta (luku *LEDin valo ja Planckin vakion mittaaminen*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Luokka on pimennetty. Laserosoitin ja taskulamppu osoittavat samaan seinään viiden metrin päästä. Laserosoittimen valo näkyy seinällä kirkkaana punaisena pisteenä, jonka koko on muutama millimetri. Taskulampun valo leviää metrin levyiseksi himmeäksi läiskäksi. Silti taskulamppu lähettää valoa moninkertaisella teholla. Laserosoittimen teho on vain noin $1\\,\\text{mW}$.",
+      "question": "Mikä laserissa tekee valosta näin kapean ja yksivärisen säteen? Miten sellaista valoa saadaan aikaan?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: siirtymän fotoni",
+      "optional": true,
+      "prompt": "Vetyatomin elektroni siirtyy tasolta $n = 3$ tasolle $n = 2$. Atomista lähtee punaisen valon fotoni, jonka aallonpituus on $656\\,\\text{nm}$. Mikä väite pitää paikkansa?",
+      "choices": [
+        {
+          "text": "Kaikki tämän siirtymän fotonit ovat samanvärisiä, koska energia on tasojen erotus.",
+          "correct": true,
+          "feedback": "Oikein. Fotonin energia on $E_3 - E_2 = 1{,}89\\,\\text{eV}$ (luku *Vetyatomin energiatasot ja Bohrin malli*). Sama ajatus on laserin ytimessä: kaikki laserin fotonit syntyvät samassa siirtymässä."
+        },
+        {
+          "text": "Fotonin energia on ylemmän tason $n = 3$ energia, joten se on $1{,}51\\,\\text{eV}$.",
+          "feedback": "Fotoni ei kanna yhden tason energiaa vaan tasojen erotuksen: $E_3 - E_2 = -1{,}51\\,\\text{eV} + 3{,}40\\,\\text{eV} = 1{,}89\\,\\text{eV}$. Se vastaa aallonpituutta $656\\,\\text{nm}$."
+        },
+        {
+          "text": "Fotoni lähtee aina samaan suuntaan, koska siirtymä on joka kerta täsmälleen sama.",
+          "feedback": "Fotonin energia on aina sama, mutta suunta ei ole. Kun viritetty atomi lähettää fotonin itsestään, suunta on satunnainen. Siksi lampun valo leviää kaikkialle."
+        },
+        {
+          "text": "Atomi lähettää fotonin vain silloin, kun siihen on ensin osunut jokin toinen fotoni.",
+          "feedback": "Viritetty atomi palaa alemmalle tasolle itsestään, yleensä noin $10^{-8}\\,\\text{s}$:ssa, ja lähettää silloin fotonin. Emissio, jonka toinen fotoni saa aikaan, on tämän luvun uusi asia."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: pumppausta lisätään",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 4
+      },
+      "prompt": "Laseraineessa on kolme energiatasoa, ja peilit ovat paikallaan. Pumppaustehoa lisätään vähitellen nollasta alkaen. Miten lasersäteen teho muuttuu?",
+      "choices": [
+        {
+          "text": "Säteen teho kasvaa suoraan verrannollisena pumppaustehoon heti nollasta alkaen.",
+          "feedback": "Mallin arvot kumoavat tämän. Tehoilla $0{,}5\\,\\text{W}$ ja $1{,}0\\,\\text{W}$ sädettä ei ole lainkaan, ja teholla $2{,}0\\,\\text{W}$ säteen teho on $35\\,\\text{mW}$. Valo vahvistuu vasta, kun ylätasolla on tarpeeksi enemmän atomeja kuin alatasolla."
+        },
+        {
+          "text": "Sädettä ei synny ennen kuin pumppaus ylittää tietyn rajan. Sen jälkeen teho kasvaa tasaisesti.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: tehossa $1{,}0\\,\\text{W}$ säde on $0\\,\\text{mW}$, tehossa $1{,}5\\,\\text{W}$ $12{,}5\\,\\text{mW}$, tehossa $2{,}0\\,\\text{W}$ $35\\,\\text{mW}$ ja tehossa $3{,}0\\,\\text{W}$ $80\\,\\text{mW}$. Mallissa kynnys on noin $1{,}22\\,\\text{W}$. Vasta silloin vahvistuminen korvaa peilin läpi ja muualle menetetyn valon."
+        },
+        {
+          "text": "Säteen teho kasvaa aluksi nopeasti ja tasaantuu, kun kaikki atomit ovat ylätilassa.",
+          "feedback": "Mallin arvot kumoavat tämän. Kynnyksen jälkeen säteen teho kasvaa jokaista watin lisäystä kohti yhtä paljon: $35\\,\\text{mW}$:sta $80\\,\\text{mW}$:iin ja siitä $125\\,\\text{mW}$:iin. Ylätilassa on koko ajan vain $55\\,\\%$ atomeista, koska stimuloitu emissio purkaa tasoa."
+        },
+        {
+          "text": "Sädettä syntyy heti pumppauksen alkaessa, mutta se on heikko, kunnes pumppaus on täysi.",
+          "feedback": "Mallin arvot kumoavat tämän. Tehossa $1{,}0\\,\\text{W}$ sädettä ei ole lainkaan, vaikka atomeja on viritetty. Laser tarvitsee populaatioinversion. Lisäksi vahvistuksen pitää olla niin suuri, että se korvaa häviöt."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: vain kaksi tasoa",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "Laseraineessa on vain kaksi energiatasoa. Pumppausvalon fotonien energia on täsmälleen tasojen erotus. Pumppausta lisätään niin paljon kuin mahdollista. Kuinka suuri osa atomeista saadaan ylemmälle tasolle?",
+      "choices": [
+        {
+          "text": "Lähes kaikki atomit, kun pumppaus on tarpeeksi voimakas.",
+          "feedback": "Mallin arvot kumoavat tämän: $33{,}3\\,\\%$, $40{,}0\\,\\%$ ja $45{,}5\\,\\%$ tehoilla $1{,}0\\,\\text{W}$, $2{,}0\\,\\text{W}$ ja $5{,}0\\,\\text{W}$. Osuus lähestyy puolta mutta ei ylitä sitä. Pumppausvalo saa myös ylätilan atomit lähettämään valoa."
+        },
+        {
+          "text": "Enintään puolet, koska pumppausvalo saa ylätilan atomit myös lähettämään valoa.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: $33{,}3\\,\\%$, $40{,}0\\,\\%$ ja $45{,}5\\,\\%$. Sama fotoni virittää perustilan atomin tai saa viritetyn atomin lähettämään valoa (stimuloitu emissio) yhtä todennäköisesti. Ylätila ei siis voi täyttyä alatilaa enemmän. Siksi laseraineessa tarvitaan ainakin kolme tasoa."
+        },
+        {
+          "text": "Ei yhtään atomia, koska kaksitasoinen atomi ei voi absorboida pumppausvaloa.",
+          "feedback": "Mallin arvot kumoavat tämän: jo tehossa $1{,}0\\,\\text{W}$ osuus ylätilassa on $33{,}3\\,\\%$ atomeista. Atomi absorboi fotonin, jonka energia on tasojen erotus."
+        },
+        {
+          "text": "Tasan puolet atomeista heti, kun pumppaus kytketään päälle.",
+          "feedback": "Mallin arvot kumoavat tämän. Tehossa $1{,}0\\,\\text{W}$ osuus on $33{,}3\\,\\%$ ja kasvaa pumppauksen mukana kohti puolta. Viritetyt atomit myös palaavat itsestään perustilaan."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse laseraine ja peilit ja säädä pumppaustehoa. Katso atomien värejä sauvassa, tasojen palkkeja ja säteen tehoa kuvaajassa.",
+      "howto": "*Laseraine* valitsee kolmitasoisen aineen, esimerkiksi rubiinin, tai kaksitasoisen aineen. *Peilit* asettaa peilit paikalleen tai poistaa ne. Liukusäädin muuttaa pumppaustehoa $P_\\text{p}$ välillä $0$–$5{,}0\\,\\text{W}$. Sauvassa oranssit atomit ovat ylemmällä lasertasolla ja siniset alemmalla. Vasemmalla alhaalla palkit näyttävät, kuinka suuri osa atomeista on kummallakin tasolla. Katkoviiva merkitsee $50\\,\\%$:a. Oikealla kuvaaja näyttää säteen tehon $P_\\text{ulos}$ pumppaustehon funktiona. Haalea käyrä on mallin käyrä ja piste on nykyinen tila. *Pysäytä* pysäyttää animaation. *Nopeus* muuttaa vain animaation tahtia.",
+      "model": "Malli laskee tasapainotilan, johon laser asettuu muutamassa millisekunnissa. Animaatio vain havainnollistaa sitä. Ylemmän lasertason elinaika on $1{,}0\\,\\text{ms}$. Kolmitasoisessa aineessa pumppaus nostaa atomit lyhytikäiselle tasolle $E_3$. Sieltä ne siirtyvät heti tasolle $E_2$, joten tasolla $E_3$ ei ole atomeja. Peilien kanssa laser käynnistyy, kun $N_2 - N_1$ ylittää $10\\,\\%$ atomien määrästä. Tämä vastaa peilin läpi ja muualle menetettyä valoa. Ilman peilejä kynnystä ei saavuteta. Kaksitasoisessa aineessa pumppausvalo virittää ja saa atomit lähettämään valoa yhtä todennäköisesti. Aineen lämpeneminen jätetään huomiotta. Arvot ovat mallin laskemia, eivät mittauksia.",
+      "calc": "Pumppausnopeus on $W = \\tfrac{P_\\text{p}}{1\\,\\text{W} \\cdot \\tau}$, missä $\\tau = 1{,}0\\,\\text{ms}$. Tasapainossa ylätasolle pumpataan atomeja yhtä paljon kuin sieltä purkautuu. Kolmella tasolla ennen kynnystä\n\n$$N_2 = \\frac{W\\tau}{1 + W\\tau},$$\n\nja kahdella tasolla $N_2 = \\tfrac{W\\tau}{1 + 2W\\tau}$. Se jää aina alle $50\\,\\%$:n. Kun laser toimii, $N_2$ pysyy kynnysarvossa $55\\,\\%$. Sen yli pumpattu energia lähtee säteeseen: $P_\\text{ulos} = 100\\,\\text{mW} \\cdot (W\\tau N_1 - N_2)$, kun $N_1$ ja $N_2$ ovat osuuksia."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: kolmitasoinen laser",
+      "intro": "Testaa ennuste 1. Laseraine on kolmitasoinen ja peilit ovat paikallaan. Muuta vain pumppaustehoa. Kirjaa ainakin tehot $1{,}0\\,\\text{W}$, $1{,}5\\,\\text{W}$, $2{,}0\\,\\text{W}$ ja $3{,}0\\,\\text{W}$. Katso myös, miten $N_2$ muuttuu, kun säde syntyy.",
+      "initial": {
+        "levels": 3,
+        "mirrors": 1,
+        "P": 1.0
+      },
+      "locked": [
+        "levels",
+        "mirrors"
+      ],
+      "vary": "P",
+      "names": {
+        "levels": "laseraine",
+        "mirrors": "peilit",
+        "P": "pumppausteho $P_\\text{p}$"
+      },
+      "units": {
+        "P": "W"
+      },
+      "values": {
+        "levels": {
+          "3": "kolme tasoa",
+          "2": "kaksi tasoa"
+        },
+        "mirrors": {
+          "1": "paikallaan",
+          "0": "ei peilejä"
+        },
+        "inv": {
+          "1": "kyllä",
+          "0": "ei"
+        }
+      },
+      "measure": [
+        {
+          "key": "n2",
+          "label": "$N_2$ (%)"
+        },
+        {
+          "key": "inv",
+          "label": "inversio"
+        },
+        {
+          "key": "Pout",
+          "label": "$P_\\text{ulos}$ (mW)"
+        }
+      ],
+      "min": 4
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kaksitasoinen aine",
+      "intro": "Testaa ennuste 2. Laseraine on nyt kaksitasoinen, ja peilit ovat paikallaan. Kirjaa ainakin tehot $1{,}0\\,\\text{W}$, $2{,}0\\,\\text{W}$ ja $5{,}0\\,\\text{W}$. Mitä arvoa osuus $N_2$ lähestyy?",
+      "initial": {
+        "levels": 2,
+        "mirrors": 1,
+        "P": 1.0
+      },
+      "locked": [
+        "levels",
+        "mirrors"
+      ],
+      "vary": "P",
+      "names": {
+        "levels": "laseraine",
+        "mirrors": "peilit",
+        "P": "pumppausteho $P_\\text{p}$"
+      },
+      "units": {
+        "P": "W"
+      },
+      "values": {
+        "levels": {
+          "3": "kolme tasoa",
+          "2": "kaksi tasoa"
+        },
+        "mirrors": {
+          "1": "paikallaan",
+          "0": "ei peilejä"
+        },
+        "inv": {
+          "1": "kyllä",
+          "0": "ei"
+        }
+      },
+      "measure": [
+        {
+          "key": "n2",
+          "label": "$N_2$ (%)"
+        },
+        {
+          "key": "inv",
+          "label": "inversio"
+        },
+        {
+          "key": "Pout",
+          "label": "$P_\\text{ulos}$ (mW)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: ilman peilejä",
+      "optional": true,
+      "intro": "Poista peilit ja toista koe kolmitasoisella aineella. Kirjaa ainakin tehot $2{,}0\\,\\text{W}$ ja $5{,}0\\,\\text{W}$. Syntyykö populaatioinversio? Syntyykö lasersäde?",
+      "initial": {
+        "levels": 3,
+        "mirrors": 0,
+        "P": 2.0
+      },
+      "locked": [
+        "levels",
+        "mirrors"
+      ],
+      "vary": "P",
+      "names": {
+        "levels": "laseraine",
+        "mirrors": "peilit",
+        "P": "pumppausteho $P_\\text{p}$"
+      },
+      "units": {
+        "P": "W"
+      },
+      "values": {
+        "levels": {
+          "3": "kolme tasoa",
+          "2": "kaksi tasoa"
+        },
+        "mirrors": {
+          "1": "paikallaan",
+          "0": "ei peilejä"
+        },
+        "inv": {
+          "1": "kyllä",
+          "0": "ei"
+        }
+      },
+      "measure": [
+        {
+          "key": "n2",
+          "label": "$N_2$ (%)"
+        },
+        {
+          "key": "inv",
+          "label": "inversio"
+        },
+        {
+          "key": "Pout",
+          "label": "$P_\\text{ulos}$ (mW)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: milloin laser toimii?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella, milloin laser alkaa lähettää sädettä. Kirjoita myös, miksi kaksitasoisesta aineesta ei saa laseria.",
+      "model": "Kolmitasoisessa aineessa sädettä ei synny pumppaustehoilla $1{,}0\\,\\text{W}$ ja sen alle. Silloin $N_2 \\leq 50\\,\\%$, eikä inversiota ole. Kynnyksen jälkeen säteen teho kasvaa tasaisesti. Mallissa kynnys on noin $1{,}22\\,\\text{W}$. Teho on $12{,}5\\,\\text{mW}$, $35\\,\\text{mW}$ ja $80\\,\\text{mW}$ tehoilla $1{,}5\\,\\text{W}$, $2{,}0\\,\\text{W}$ ja $3{,}0\\,\\text{W}$. Samalla $N_2$ pysähtyy arvoon $55\\,\\%$. Stimuloitu emissio purkaa ylätasoa yhtä nopeasti kuin pumppaus täyttää sitä, ja ylimääräinen pumppausteho menee säteeseen. Kaksitasoisessa aineessa $N_2$ jää alle $50\\,\\%$:n ($33{,}3\\,\\%$, $40{,}0\\,\\%$, $45{,}5\\,\\%$). Pumppausvalo saa viritetyt atomit lähettämään valoa yhtä todennäköisesti kuin se virittää perustilan atomeja. Ilman inversiota valo ei vahvistu. Valinnaisen kokeen 3 mukaan inversio ei yksin riitä. Ilman peilejä valo ei kulje aineen läpi tarpeeksi monta kertaa. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Nimesin kynnyksen: säde syntyy vasta tietyn pumppaustehon jälkeen ja kasvaa sitten tasaisesti.",
+        "Yhdistin säteen syntymisen populaatioinversioon $N_2 > N_1$.",
+        "Selitin, miksi kaksitasoisessa aineessa $N_2$ jää alle $50\\,\\%$:n: pumppausvalo aiheuttaa myös stimuloitua emissiota."
+      ]
+    },
+    {
+      "id": "kvanttipisteet",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Kvanttipisteiden värit",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto, joka muistuttaa kadmiumselenidikvanttipisteiden tyypillisiä arvoja.",
+      "text": "Laboratoriossa on viisi pulloa. Niissä kaikissa on samaa ainetta, kadmiumselenidiä, kvanttipisteinä. Pullot eroavat toisistaan vain pisteiden koon osalta. Kun pulloja valaistaan ultraviolettilampulla, ne hohtavat eri väreinä:\n\n| Halkaisija $d$ (nm) | Aallonpituus $\\lambda$ (nm) |\n| --- | --- |\n| $2{,}0$ | $480$ |\n| $3{,}0$ | $530$ |\n| $4{,}0$ | $570$ |\n| $5{,}0$ | $600$ |\n| $6{,}0$ | $620$ |\n\nIson kadmiumselenidikiteen energiarako on $1{,}74\\,\\text{eV}$.",
+      "question": {
+        "type": "choice",
+        "prompt": "Laske pienimmän ja suurimman pisteen fotonien energiat kaavalla $E = \\tfrac{hc}{\\lambda}$. Mikä päätelmä aineistosta seuraa?",
+        "choices": [
+          {
+            "text": "Pienemmän pisteen energiarako on suurempi. Suurten pisteiden arvot lähestyvät ison kiteen arvoa.",
+            "correct": true,
+            "feedback": "Oikein. Pisteen, jonka halkaisija on $2{,}0\\,\\text{nm}$, fotonin energia on $2{,}58\\,\\text{eV}$. Pisteen, jonka halkaisija on $6{,}0\\,\\text{nm}$, fotonin energia on $2{,}00\\,\\text{eV}$. Kun piste kasvaa, energia lähestyy ison kiteen energiarakoa $1{,}74\\,\\text{eV}$. Isossa pisteessä elektroneilla on niin paljon tilaa, ettei koko enää juuri vaikuta."
+          },
+          {
+            "text": "Suuremman pisteen fotonit ovat energisempiä, koska suuressa pisteessä on enemmän atomeja.",
+            "feedback": "Aineisto näyttää päinvastaista. Pidempi aallonpituus tarkoittaa pienempää fotonin energiaa: $2{,}58\\,\\text{eV}$ pisteellä $2{,}0\\,\\text{nm}$ ja $2{,}00\\,\\text{eV}$ pisteellä $6{,}0\\,\\text{nm}$."
+          },
+          {
+            "text": "Värit eivät johdu koosta, vaan pullojen kvanttipisteet ovat eri ainetta.",
+            "feedback": "Kaikki pisteet ovat samaa kadmiumselenidiä, ja ainoa ero on koko. Koko määrää, kuinka ahtaaseen tilaan elektronit on suljettu. Se muuttaa sallittuja energioita."
+          },
+          {
+            "text": "Fotonin energia on kääntäen verrannollinen pisteen halkaisijaan.",
+            "feedback": "Halkaisija kolminkertaistuu arvosta $2{,}0\\,\\text{nm}$ arvoon $6{,}0\\,\\text{nm}$. Energia pienenee kuitenkin vain arvosta $2{,}58\\,\\text{eV}$ arvoon $2{,}00\\,\\text{eV}$. Energia ei siis ole kääntäen verrannollinen kokoon, vaan se lähestyy ison kiteen arvoa $1{,}74\\,\\text{eV}$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "tunneli",
+      "stage": "selita",
+      "type": "theory",
+      "title": "Tunneloituminen",
+      "optional": true,
+      "sections": [
+        "Tunneloituminen"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mallin arvoihin. Palaa sitten alun kysymykseen: miksi laserin valo on kapea ja yksivärinen säde, mutta taskulampun valo leviää?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija laskee, kuinka monta fotonia sekunnissa lähettää vihreä laserosoitin, jonka teho on $5{,}0\\,\\text{mW}$ ja aallonpituus $532\\,\\text{nm}$:\n\n$$\\begin{aligned} &\\frac{N}{t} = \\frac{P \\lambda}{hc} \\\\ &= \\frac{5{,}0 \\cdot 10^{-3}\\,\\text{W} \\cdot 532}{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}} \\\\ &\\approx 1{,}3 \\cdot 10^{25}\\,\\tfrac{1}{\\text{s}} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Aallonpituus on sijoitettu nanometreinä, vaikka se pitää muuntaa metreiksi.",
+          "correct": true,
+          "feedback": "Oikein. $\\lambda = 532\\,\\text{nm} = 532 \\cdot 10^{-9}\\,\\text{m}$, jolloin $\\tfrac{N}{t} \\approx 1{,}3 \\cdot 10^{16}\\,\\tfrac{1}{\\text{s}}$. Yksikkötarkistus paljastaa virheen: $\\tfrac{\\text{W} \\cdot \\text{m}}{\\text{J}\\,\\text{m}} = \\tfrac{1}{\\text{s}}$ vain, jos aallonpituus on metreinä."
+        },
+        {
+          "text": "Teho olisi pitänyt sijoittaa milliwatteina eikä watteina.",
+          "feedback": "Teho sijoitetaan watteina, koska $h$ on yksikössä $\\text{J}\\,\\text{s}$ ja $1\\,\\text{W} = 1\\,\\tfrac{\\text{J}}{\\text{s}}$. Muunnos $5{,}0\\,\\text{mW} = 5{,}0 \\cdot 10^{-3}\\,\\text{W}$ on oikein."
+        },
+        {
+          "text": "Kaava on väärin päin, sillä fotonivirta on $\\tfrac{P h c}{\\lambda}$.",
+          "feedback": "Kaava on oikein: $P = \\tfrac{N}{t} \\cdot \\tfrac{hc}{\\lambda}$, joten $\\tfrac{N}{t} = \\tfrac{P\\lambda}{hc}$. Lausekkeen $\\tfrac{Phc}{\\lambda}$ yksikkö ei olisi $\\tfrac{1}{\\text{s}}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, sillä laser lähettää valtavan määrän fotoneja.",
+          "feedback": "Määrä on valtava, mutta ei näin suuri. Jos fotoneja olisi $1{,}3 \\cdot 10^{25}$ sekunnissa ja kunkin energia olisi $3{,}7 \\cdot 10^{-19}\\,\\text{J}$, teho olisi noin $5\\,\\text{MW}$, ei $5{,}0\\,\\text{mW}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Teollisuudessa metallia leikataan kuitulaserilla. Säteen teho on $1{,}0\\,\\text{kW}$ ja aallonpituus $1070\\,\\text{nm}$. Laseria pumpataan laserdiodien valolla, jonka aallonpituus on $976\\,\\text{nm}$. Jokainen pumppausfotoni voi tuottaa enintään yhden laserfotonin. Energiaero jää kuituun lämmöksi. Kuinka paljon lämpöä kuituun syntyy sekunnissa vähintään? Vastaa watteina.",
+      "answer": 96.3,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "Laske ensin, kuinka paljon pumppaustehoa vähintään tarvitaan. Kun jokainen pumppausfotoni tuottaa yhden laserfotonin, fotoneja on sekunnissa yhtä paljon.",
+        "Kun fotoneja on sekunnissa yhtä paljon, teho on verrannollinen fotonin energiaan $\\tfrac{hc}{\\lambda}$: $P_\\text{p} = P_\\text{L} \\cdot \\tfrac{\\lambda_\\text{L}}{\\lambda_\\text{p}}$.",
+        "$P_\\text{p} = 1000\\,\\text{W} \\cdot \\tfrac{1070\\,\\text{nm}}{976\\,\\text{nm}} = 1096{,}3\\,\\text{W}$. Lämpöä syntyy pumppaustehon ja säteen tehon erotuksen verran."
+      ],
+      "mistakes": [
+        {
+          "value": 87.9,
+          "feedback": "Laskit $1000\\,\\text{W} \\cdot \\left(1 - \\tfrac{976}{1070}\\right)$ eli käytit säteen tehoa pumppaustehona. Pumppaustehon pitää olla suurempi kuin säteen teho: $P_\\text{p} = 1000\\,\\text{W} \\cdot \\tfrac{1070}{976}$."
+        },
+        {
+          "value": 1096,
+          "feedback": "Tämä on pienin pumppausteho. Lämpöä syntyy vain pumppaustehon ja säteen tehon erotuksen verran."
+        }
+      ],
+      "solution": "**Annettu:** säteen teho $P_\\text{L} = 1{,}0\\,\\text{kW}$, laservalon aallonpituus $\\lambda_\\text{L} = 1070\\,\\text{nm}$, pumppausvalon aallonpituus $\\lambda_\\text{p} = 976\\,\\text{nm}$. Yksi pumppausfotoni tuottaa enintään yhden laserfotonin.\n\n**Kysytty:** kuituun sekunnissa syntyvä lämpö eli lämpöteho $P_\\text{lämpö}$ watteina, pienin mahdollinen arvo\n\n**Periaate:** Energia säilyy. Pumppausvalon teho jakautuu säteeseen ja lämpöön. Lämpöä syntyy vähiten, kun jokainen pumppausfotoni tuottaa laserfotonin. Silloin fotoneja on sekunnissa yhtä paljon. Koska $P = \\tfrac{N}{t} \\cdot \\tfrac{hc}{\\lambda}$, tehot suhtautuvat toisiinsa kuten fotonien energiat.\n\n**Kaava:** $\\tfrac{N}{t} = \\tfrac{P_\\text{L} \\lambda_\\text{L}}{hc}$ ja $P_\\text{p} = \\tfrac{N}{t} \\cdot \\tfrac{hc}{\\lambda_\\text{p}} = P_\\text{L} \\cdot \\tfrac{\\lambda_\\text{L}}{\\lambda_\\text{p}}$, joten\n\n$$P_\\text{lämpö} = P_\\text{p} - P_\\text{L} = P_\\text{L} \\left(\\frac{\\lambda_\\text{L}}{\\lambda_\\text{p}} - 1\\right)$$\n\n**Muunnokset:** $P_\\text{L} = 1{,}0\\,\\text{kW} = 1{,}0 \\cdot 1000\\,\\text{W} = 1000\\,\\text{W}$. Aallonpituudet ovat samassa yksikössä, joten niiden suhteen voi laskea nanometreinä.\n\n**Sijoitus:** $P_\\text{lämpö} = 1000\\,\\text{W} \\cdot \\left(\\dfrac{1070\\,\\text{nm}}{976\\,\\text{nm}} - 1\\right) = 1000\\,\\text{W} \\cdot 0{,}096311 = 96{,}311\\,\\text{W}$\n\n**Vastaus:** $96\\,\\text{W}$. Vastauksessa on kaksi merkitsevää numeroa, kuten säteen tehossa $1{,}0\\,\\text{kW}$.\n\n**Järkevyys:** Pumppausfotonin ja laserfotonin energiat ovat $1{,}27\\,\\text{eV}$ ja $1{,}16\\,\\text{eV}$. Ne eroavat toisistaan noin $10\\,\\%$. Siksi lämpöä syntyy noin kymmenesosa säteen tehosta. Todellisuudessa kaikki pumppausfotonit eivät tuota laserfotonia, joten lämpöä syntyy enemmän. Siksi kuitua jäähdytetään."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 2 tehtävissä yhdistetään fotonin energia ja laserin teho. Taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Stimuloitu emissio",
+      "prompt": "Viritettyyn atomiin osuu fotoni, jonka energia on täsmälleen atomin tasojen erotus. Tapahtuu stimuloitu emissio. Mikä väite pitää paikkansa?",
+      "choices": [
+        {
+          "text": "Atomista lähtee kaksi fotonia, joilla on sama energia, sama suunta ja sama vaihe.",
+          "correct": true,
+          "feedback": "Oikein. Saapuva fotoni jatkaa matkaansa, ja atomi lähettää sen viereen samanlaisen fotonin. Siksi laservalo vahvistuu ja on koherenttia."
+        },
+        {
+          "text": "Atomi absorboi saapuvan fotonin ja lähettää sen jälkeen kaksi uutta fotonia.",
+          "feedback": "Saapuva fotoni ei absorboidu. Atomi menettää vain energian $E_2 - E_1$, ja se riittää yhteen uuteen fotoniin. Toinen lähtevistä fotoneista on saapunut fotoni."
+        },
+        {
+          "text": "Atomista lähtee yksi fotoni, jonka energia on kaksinkertainen saapuvaan verrattuna.",
+          "feedback": "Energia säilyy. Atomi luovuttaa vain tasojen erotuksen $E_2 - E_1$. Lähteviä fotoneja on kaksi, ja kummankin energia on $E_2 - E_1$."
+        },
+        {
+          "text": "Uusi fotoni lähtee satunnaiseen suuntaan samoin kuin spontaanissa emissiossa.",
+          "feedback": "Spontaanissa emissiossa suunta on satunnainen, mutta stimuloitu fotoni kulkee saapuvan fotonin suuntaan. Siksi peilien välissä vahvistuu vain akselin suuntainen valo."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laservalon aallonpituus",
+      "prompt": "Kuvitteellisen laseraineen ylemmän lasertason energia on $-3{,}12\\,\\text{eV}$ ja alemman $-5{,}45\\,\\text{eV}$. Laske laservalon aallonpituus. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Vastaa nanometreinä.",
+      "answer": 532,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "hints": [
+        "Laserfotonin energia on tasojen erotus $E_2 - E_1$, ei kummankaan tason energia.",
+        "$E_2 - E_1 = -3{,}12\\,\\text{eV} - (-5{,}45\\,\\text{eV}) = 2{,}33\\,\\text{eV}$.",
+        "$\\lambda = \\dfrac{hc}{E_2 - E_1} = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2{,}33 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 397,
+          "feedback": "Käytit fotonin energiana ylemmän tason energian suuruutta $3{,}12\\,\\text{eV}$. Fotonin energia on tasojen erotus $2{,}33\\,\\text{eV}$."
+        },
+        {
+          "value": 228,
+          "feedback": "Käytit fotonin energiana alemman tason energian suuruutta $5{,}45\\,\\text{eV}$. Fotonin energia on tasojen erotus $2{,}33\\,\\text{eV}$."
+        }
+      ],
+      "solution": "**Annettu:** ylemmän lasertason energia $E_2 = -3{,}12\\,\\text{eV}$, alemman $E_1 = -5{,}45\\,\\text{eV}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** laservalon aallonpituus $\\lambda$ nanometreinä\n\n**Periaate:** Kaikki laserin fotonit syntyvät siirtymässä ylemmältä lasertasolta alemmalle. Energia säilyy. Siksi jokaisen fotonin energia on tasojen erotus, $\\tfrac{hc}{\\lambda} = E_2 - E_1$.\n\n**Kaava:** $\\dfrac{hc}{\\lambda} = E_2 - E_1$, josta\n\n$$\\lambda = \\frac{hc}{E_2 - E_1}$$\n\n**Muunnokset:** $E_2 - E_1 = -3{,}12\\,\\text{eV} + 5{,}45\\,\\text{eV} = 2{,}33\\,\\text{eV} = 2{,}33 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 3{,}7327 \\cdot 10^{-19}\\,\\text{J}$. Lopuksi $1\\,\\text{m} = 10^{9}\\,\\text{nm}$.\n\n**Sijoitus:** $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$. $\\lambda = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{3{,}7327 \\cdot 10^{-19}\\,\\text{J}} = 5{,}3219 \\cdot 10^{-7}\\,\\text{m} = 532{,}19\\,\\text{nm}$\n\n**Vastaus:** $532\\,\\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, kuten energiaerossa $2{,}33\\,\\text{eV}$.\n\n**Järkevyys:** Fotonin energia $2{,}33\\,\\text{eV}$ on näkyvän valon fotonien energioiden välillä $1{,}7$–$3{,}3\\,\\text{eV}$. Aallonpituus $532\\,\\text{nm}$ on vihreää valoa, joka on vihreiden laserosoittimien aallonpituus. Kuvaajan pisteet $405\\,\\text{nm}$ ($3{,}06\\,\\text{eV}$) ja $650\\,\\text{nm}$ ($1{,}91\\,\\text{eV}$) rajaavat tuloksen järkevästi.",
+      "practice": "Harjoittele fotonin energian ja aallonpituuden laskemista tason 1 tehtävissä."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Kvanttipisteen väri",
+      "prompt": "Kaksi kvanttipistettä on tehty samasta aineesta, mutta toinen hohtaa sinisenä ja toinen punaisena. Selitä kolmella tai neljällä lauseella, mistä ero johtuu ja kumpi pisteistä on pienempi.",
+      "model": "Kvanttipisteessä elektronit on suljettu muutaman nanometrin kokoiseen tilaan. Lyhyemmän kielen seisovat aallot ovat korkeampia. Samalla tavalla pienemmässä pisteessä elektronin sallitut energiat ovat kauempana toisistaan ja energiarako on suurempi. Pisteen lähettämän fotonin energia on energiaraon suuruinen. Sinisen valon fotonin energia on suurempi kuin punaisen. Siksi sinisenä hohtava piste on pienempi.",
+      "criteria": [
+        "Kerroin, että elektronit on suljettu nanometrien kokoiseen tilaan, jolloin niiden energiat riippuvat koosta.",
+        "Perustelin, että pienemmässä pisteessä energiarako ja fotonin energia ovat suuremmat.",
+        "Päättelin, että sininen piste on pienempi, koska sinisen valon fotonin energia on suurempi kuin punaisen."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

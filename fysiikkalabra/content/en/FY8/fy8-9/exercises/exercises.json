@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-9-L1-01",
+      "level": 1,
+      "text": "For isotope imaging, a technetium-$99\\text{m}$ preparation is made whose activity is $740\\,\\text{MBq}$. The half-life of technetium-$99\\text{m}$ is $6.01\\,\\text{h}$. What is the activity of the preparation $18.0\\,\\text{h}$ later? Give the answer in megabecquerels.",
+      "answer": 92.8,
+      "unit": "MBq",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-02",
+      "level": 1,
+      "text": "An air sample containing radon is sealed in a tight vessel. The half-life of radon-222 is $3.82\\,\\text{d}$. What percentage of the radon nuclei is undecayed after $10.0\\,\\text{d}$? Assume that no new radon is formed in the vessel.",
+      "answer": 16.3,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-03",
+      "level": 1,
+      "text": "The half-life of caesium-137 is $30.1\\,\\text{a}$. What is its decay constant? Give the answer in the unit $\\tfrac{1}{\\text{a}}$.",
+      "answer": 0.023,
+      "unit": "1/a",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-04",
+      "level": 1,
+      "text": "A cobalt-60 radiation source contains $3.20 \\cdot 10^{12}$ undecayed nuclei. The decay constant of cobalt-60 is $4.17 \\cdot 10^{-9}\\,\\tfrac{1}{\\text{s}}$. What is the activity of the source? Give the answer in kilobecquerels.",
+      "answer": 13.3,
+      "unit": "kBq",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-05",
+      "level": 1,
+      "text": "The activity of a sample decreases in $48.0\\,\\text{h}$ from $800\\,\\text{kBq}$ to $200\\,\\text{kBq}$. What is the half-life of the isotope of the sample? Give the answer in hours.",
+      "answer": 24.0,
+      "unit": "h",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-9-L2-01",
+      "level": 2,
+      "text": "The half-life of iodine-131 is $8.02\\,\\text{d}$. What is its decay constant in the unit $\\tfrac{1}{\\text{s}}$? Give the answer in the unit $10^{-6}\\,\\tfrac{1}{\\text{s}}$.",
+      "answer": 1.0,
+      "unit": "10⁻⁶ 1/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L2-02",
+      "level": 2,
+      "text": "The radiation source of an old smoke detector contains americium-241, and the activity of the source is $37\\,\\text{kBq}$. The half-life of americium-241 is $433\\,\\text{a}$. How many americium nuclei are there in the source? Use $1\\,\\text{a} = 365.25\\,\\text{d}$. Give the answer in the unit $10^{14}$.",
+      "answer": 7.3,
+      "unit": "· 10¹⁴",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L2-03",
+      "level": 2,
+      "text": "A fluorine-18 preparation used in PET scans, with an activity of $2.00\\,\\text{GBq}$, is transported from the production plant to a hospital. The journey takes $2\\,\\text{h}\\ 30\\,\\text{min}$. The half-life of fluorine-18 is $110\\,\\text{min}$. What is the activity of the preparation on arrival? Give the answer in megabecquerels.",
+      "answer": 777,
+      "unit": "MBq",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L2-04",
+      "level": 2,
+      "text": "An industrial radiation source initially contains $5.00\\,\\text{mg}$ of cobalt-60. The half-life of cobalt-60 is $5.27\\,\\text{a}$. How much cobalt-60 is there in the source after $15.0\\,\\text{a}$? Give the answer in milligrams.",
+      "answer": 0.695,
+      "unit": "mg",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-9-L3-01",
+      "level": 3,
+      "text": "In a living plant the fraction of carbon-14 in the carbon stays constant, because the plant continuously takes new carbon from the air. After the plant dies, the carbon-14 decays and no new carbon-14 replaces it. The activity of carbon-14 per gram of carbon measured from an archaeological piece of wood is $38.0\\,\\%$ of the corresponding activity of living wood. The half-life of carbon-14 is $5700\\,\\text{a}$. How long ago did the tree die? Give the answer in years.",
+      "answer": 7960,
+      "unit": "a",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L3-02",
+      "level": 3,
+      "text": "A radiation meter near a radioactive sample shows $820$ pulses per minute at first and $10.0\\,\\text{min}$ later $230$ pulses per minute. When the sample is taken away, the meter shows the background radiation, $30$ pulses per minute. What is the half-life of the isotope of the sample? Give the answer in minutes.",
+      "answer": 5.05,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L3-03",
+      "level": 3,
+      "text": "In a fallout sample from a nuclear power plant accident, the activities of iodine-131 and caesium-137 are at first equal. The half-life of iodine-131 is $8.02\\,\\text{d}$ and that of caesium-137 $30.1\\,\\text{a}$. What percentage of the total activity of the sample is from the decays of iodine-131 after $30.0\\,\\text{d}$? Use $1\\,\\text{a} = 365.25\\,\\text{d}$ and assume that the decays of the daughter nuclei are not counted.",
+      "answer": 6.97,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ]
+}

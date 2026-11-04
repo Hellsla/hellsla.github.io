@@ -119,6 +119,29 @@ def page_form(pg, b, url, acts, page):
 
 
 
+def export_checks(pg, lid, ex, loc):
+    """The table's export after two measurements (teacher 2026-11-03): both buttons on, the rows kept in localStorage as
+    ruukkilabra:<page>:koe<n>, the CSV named <page>-koe<n>.csv with a BOM, ";" and plain headings (th[data-plain]), the copy
+    either on the clipboard ("Kopioitu") or shown in a text field to select."""
+    eid = ex["id"]
+    check(f"{eid}: export buttons enabled with measurements", loc.locator(".exp-copy").is_enabled() and loc.locator(".exp-csv").is_enabled())
+    n = pg.evaluate("(id) => [...document.querySelectorAll('.experiment')].indexOf(document.querySelector('#' + id + ' .experiment')) + 1", eid)
+    stored = pg.evaluate(f"() => {{ try {{ return JSON.parse(localStorage.getItem('ruukkilabra:{lid}:koe{n}')) }} catch (e) {{ return null }} }}")
+    check(f"{eid}: measurements stored as ruukkilabra:{lid}:koe{n}", bool(stored) and len(stored.get("rows", [])) == 2, str(stored)[:200])
+    heads = loc.locator(".exp-table thead th").evaluate_all("(ts) => ts.map((t) => t.dataset.plain)")
+    check(f"{eid}: every heading has a plain form without LaTeX", all(h and not re.search(r"[$\\{}_^]", h) for h in heads), str(heads))
+    with pg.expect_download() as dl: loc.locator(".exp-csv").click()
+    d = dl.value; raw = pathlib.Path(d.path()).read_bytes(); text = raw.decode("utf-8-sig"); lines = text.strip("\r\n").split("\r\n")
+    nums = [c for line in lines[1:] for c in line.split(";") if re.fullmatch(r"-?\d+(?:[.,]\d+)?", c)]
+    check(f"{eid}: CSV {lid}-koe{n}.csv, BOM, ';', plain headings, decimal comma",
+          d.suggested_filename == f"{lid}-koe{n}.csv" and raw.startswith(b"\xef\xbb\xbf") and lines[0] == ";".join(heads) and len(lines) == 3 and all("." not in c for c in nums),
+          f"{d.suggested_filename} {text[:200]!r}")
+    loc.locator(".exp-copy").click(); pg.wait_for_timeout(200)
+    said = loc.locator(".exp-export-status").inner_text(); field = loc.locator(".exp-export-text")
+    shown = field.count() and field.is_visible() and field.input_value().split("\n")[0] == "\t".join(heads)
+    check(f"{eid}: Kopioi taulukko copies (or shows the table to select)", said.strip() in ("Kopioitu", "Copied") or shown, said)
+
+
 def generic(lid):
     """Mechanics of one lesson's inquiry.json on its preview page. Exit 1 on any failure."""
     from playwright.sync_api import sync_playwright
@@ -230,9 +253,14 @@ def generic(lid):
                 if pr["reveal"]["after"] == ex["id"] and pr["reveal"].get("min", 1) <= 2:
                     loc2 = pg.locator(f"#{pr['id']}"); vis = [x.get_attribute("data-for") for x in loc2.locator(".feedback").all() if x.is_visible()]
                     check(f"{pr['id']}: revealed by {ex['id']}, with the feedback of the committed option", vis == [wrongs[pr["id"]]] and not loc2.locator(".pending").is_visible() and "Ei aivan" in loc2.locator("output").inner_text(), f"visible {vis}")
+            export_checks(pg, lid, ex, loc)
             loc.locator(".exp-reset").click(); pg.wait_for_timeout(150)
             unlocked = pg.evaluate(f"(ks) => ks.every((k) => !({CONTROL})(k).disabled)", ex["locked"])
             check(f"{ex['id']}: reset unlocks and clears", unlocked and rows.count() == 0)
+            n = pg.evaluate("(id) => [...document.querySelectorAll('.experiment')].indexOf(document.querySelector('#' + id + ' .experiment')) + 1", ex["id"])
+            check(f"{ex['id']}: Nollaa clears the stored table and disables the export",
+                  pg.evaluate(f"() => {{ try {{ return localStorage.getItem('ruukkilabra:{lid}:koe{n}') }} catch (e) {{ return null }} }}") is None
+                  and loc.locator(".exp-copy").is_disabled() and loc.locator(".exp-csv").is_disabled())
         for a in acts:
             if a["type"] == "numeric": check(f"{a['id']}: numeric form", pg.locator(f"#{a['id']} form.check input").count() == 1)
             if a["type"] == "explain": check(f"{a['id']}: explain form", pg.locator(f"#{a['id']} textarea").count() == 1 and pg.locator(f"#{a['id']} .show-model").count() == 1)
@@ -408,26 +436,45 @@ with sync_playwright() as pw:
     wv = w.locator("input").get_attribute("value"); w.locator("input").check(); c.locator("button.commit").click()
     check("retrieval choice gives misconception feedback", c.locator(f".feedback[data-for='{wv}']").is_visible() and "Massa ja paino" in c.locator(f".feedback[data-for='{wv}']").inner_text())
     c.locator("input[data-correct='1']").check(); check("changing the choice hides old feedback", not c.locator(f".feedback[data-for='{wv}']").is_visible())
-    c.locator("button.commit").click(); check("correct choice marked", "Oikein" in c.locator("output").inner_text())
+    c.locator("button.commit").click(); check("correct choice marked, and final", "Oikein" in c.locator("output").inner_text() and c.locator("input[type=radio]").first.is_disabled())
+
+    # plain choice, two wrong tries: why the choice is wrong, one change, then the correct option with its reasoning
+    c1 = pg.locator("#check-c2"); wr = c1.locator("input[data-correct='0']")
+    wr.nth(0).check(); c1.locator("button.commit").click()
+    check("first wrong try: its own feedback and one more change", c1.locator(f".feedback[data-for='{wr.nth(0).get_attribute('value')}']").is_visible() and "vielä kerran" in c1.locator("output").inner_text())
+    wr.nth(1).check(); c1.locator("button.commit").click()
+    cv = c1.locator("input[data-correct='1']").get_attribute("value")
+    check("second wrong try: the correct option shown with its reasoning, the choice closed", c1.locator(f".feedback[data-for='{cv}']").is_visible()
+          and "Oikea vastaus" in c1.locator(f".feedback[data-for='{cv}']").inner_text() and wr.nth(0).is_disabled() and not c1.locator("button.commit").is_visible())
 
     # numeric: comma, invalid, mistake feedback, retries, hints progressive
     n = pg.locator("#siirto"); inp = n.locator("form.check input"); out = n.locator("form.check output")
+    sol = n.locator("details.solution")
+    check("the solution is locked, in view, until a try", sol.is_visible() and sol.get_attribute("data-locked") == "1" and "yrittänyt kerran" in sol.locator("summary").inner_text())
+    sol.locator("summary").click(); check("a locked solution does not open", not sol.evaluate("(d) => d.open"))
     inp.fill("abc"); n.locator("form.check button").click(); check("invalid input asks for a number", "Kirjoita luku" in out.inner_text())
+    check("a non-number is not a try", sol.get_attribute("data-locked") == "1")
     inp.fill("9,6"); n.locator("form.check button").click(); check("common mistake gets its feedback", "Jaoit voiman" in out.inner_text(), out.inner_text())
     inp.fill("1e400"); n.locator("form.check button").click(); check("non-finite input does not crash", not errors and out.inner_text() != "", str(errors[:1]))
+    check("a number checked once opens the solution", sol.get_attribute("data-locked") is None)
+    inp.fill("250"); n.locator("form.check button").click(); check("2–5 % away is close, not wrong", "Lähellä" in out.inner_text() and out.get_attribute("data-state") == "close", out.inner_text())
+    inp.fill("244"); n.locator("form.check button").click(); check("within 2 % is accepted", "Oikein" in out.inner_text(), out.inner_text())
     inp.fill("240,0"); n.locator("form.check button").click(); check("decimal comma accepted", "Oikein" in out.inner_text())
     inp.fill("0,24"); n.locator("form.check button").click(); check("after a correct answer a later mistake does not override", "Oikein" in out.inner_text() or "kilowat" in out.inner_text())
     hints = n.locator(".hints details")
-    check("only the first hint offered at first", hints.nth(0).is_visible() and not hints.nth(1).is_visible())
-    hints.nth(0).locator("summary").click(); pg.wait_for_timeout(80); check("second hint appears after the first is opened", hints.nth(1).is_visible() and not hints.nth(2).is_visible())
+    check("every hint in view, the later ones locked", hints.nth(1).is_visible() and hints.nth(1).get_attribute("data-locked") == "1" and hints.nth(2).get_attribute("data-locked") == "1")
+    hints.nth(1).locator("summary").click(); pg.wait_for_timeout(80); check("a locked hint does not open", not hints.nth(1).evaluate("(d) => d.open"))
+    hints.nth(0).locator("summary").click(); pg.wait_for_timeout(80); check("second hint unlocks after the first is opened", hints.nth(1).get_attribute("data-locked") is None and hints.nth(2).get_attribute("data-locked") == "1")
     n2 = pg.locator("#check-2"); i2 = n2.locator("form.check input"); o2 = n2.locator("form.check output")
     i2.fill("100"); n2.locator("form.check button").click(); i2.fill("100"); n2.locator("form.check button").click()
     check("second wrong try points to the solution", "Ei vielä" in o2.inner_text() or "Vastaus" in o2.inner_text(), o2.inner_text())
 
     # explanation: model answer and criteria on request
-    ex = pg.locator("#check-3"); ex.locator(".show-model").click()
-    check("the model answer waits for the student's own answer", not ex.locator(".model").is_visible() and "oma vastauksesi" in ex.locator(".explain-status").inner_text())
-    ex.locator("textarea").fill("Työ ei riipu ajasta."); check("model answer hidden until asked", not ex.locator(".model").is_visible())
+    ex = pg.locator("#check-3"); ex.locator(".show-model").click(force=True)
+    check("the model answer waits for the tick", not ex.locator(".model").is_visible() and ex.locator(".show-model").get_attribute("aria-disabled") == "true"
+          and "Olen tehnyt ratkaisun" in ex.locator(".explain-status").inner_text())
+    ex.locator("textarea").fill("Työ ei riipu ajasta."); ex.locator(".drew input").check()
+    check("model answer hidden until asked", not ex.locator(".model").is_visible() and ex.locator(".show-model").get_attribute("aria-disabled") is None)
     ex.locator(".show-model").click(); check("model answer and criteria shown", ex.locator(".model").is_visible() and ex.locator("ul.criteria input[type=checkbox]").count() == 4)
     boxes = ex.locator("ul.criteria input[type=checkbox]"); boxes.nth(0).check(); boxes.nth(1).check(); ex.locator(".check-criteria").click()
     check("what is missing: the two unticked criteria and where to practise", ex.locator(".crit-missing li").count() == 2 and ex.locator(".crit-practice").is_visible()

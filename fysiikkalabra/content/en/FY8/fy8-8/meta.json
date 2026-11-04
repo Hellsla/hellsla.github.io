@@ -1,0 +1,22 @@
+{
+  "id": "fy8-8",
+  "course": "FY8",
+  "title": "The atomic nucleus and radioactive decay",
+  "goals": [
+    "LOPS FY8: the structure and changes of the atomic nucleus, radioactive decay",
+    "Clarification: the quantised energy states of the nucleus are identified through the spectrum of gamma decay, by analogy with the energy levels of the atom; alpha, beta and gamma decay and decay equations"
+  ],
+  "prerequisites": [
+    "fy8-7"
+  ],
+  "glossary": [
+    "nukleoni",
+    "isotooppi",
+    "alfahajoaminen",
+    "beetahajoaminen",
+    "gammasäteily"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
