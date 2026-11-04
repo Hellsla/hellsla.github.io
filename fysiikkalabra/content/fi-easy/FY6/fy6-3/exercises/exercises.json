@@ -243,7 +243,7 @@
     {
       "id": "fy6-3-L2-07",
       "level": 2,
-      "text": "Opiskelija mittasi vastuksen jännitteen ja virran (esimerkkiaineisto). Hän päätteli näin: ”Kun jännite on $0{,}0\\,\\text{V}$, virta on $0{,}00\\,\\text{A}$. Silloin resistanssi $R = U : I$ on $0\\,\\Omega$. Jännitteellä $1{,}0\\,\\text{V}$ resistanssi on jo $5{,}0\\,\\Omega$. Siksi resistanssi kasvaa jännitteen mukana.”\n\na) Selitä, mikä opiskelijan päättelyssä on virheellistä.\n\nb) Laske vastuksen resistanssi keskiarvona $R_{\\text{ka}}$. Käytä niitä jännitteitä, joilla jännite ei ole nolla.\n\nVastauskenttään kirjoitetaan b-kohdan keskiarvo $R_{\\text{ka}}$ ohmeina.",
+      "text": "Opiskelija mittasi vastuksen jännitteen ja virran (esimerkkiaineisto). Hän päätteli näin: ”Kun jännite on $0{,}0\\,\\text{V}$, virta on $0{,}00\\,\\text{A}$. Silloin resistanssi $R = U : I$ on $0\\,\\Omega$. Jännitteellä $1{,}0\\,\\text{V}$ resistanssi on jo $5{,}0\\,\\Omega$. Siksi resistanssi kasvaa jännitteen mukana.”\n\na) Selitä, mikä opiskelijan päättelyssä on virheellistä.\n\nb) Laske vastuksen resistanssi keskiarvona $R_{\\text{ka}}$. Käytä vain nollasta poikkeavia jännitteitä.\n\nVastauskenttään kirjoitetaan b-kohdan keskiarvo $R_{\\text{ka}}$ ohmeina.",
       "kind": [
         "error",
         "data"
@@ -364,7 +364,7 @@
     {
       "id": "fy6-3-L3-05",
       "level": 3,
-      "text": "Oppilas haluaa tutkia kokeella, riippuuko metallilangan resistanssi lämpötilasta. Hän asettaa kelalle käämityn lakatun rautalangan vesihauteeseen. Vesihauteen lämpötilaa voi säätää. Jokaisessa lämpötilassa langan jännite pidetään arvossa $1{,}00\\,\\text{V}$. Virta luetaan virtamittarilta (esimerkkiaineisto).\n\na) Nimeä kokeen riippumaton muuttuja (muuttuja, jota muutetaan), riippuva muuttuja (muuttuja, jota mitataan) ja vakioitavat muuttujat (muuttujat, jotka pidetään samoina). Kuvaile mittausjärjestely: miten virtamittari ja jännitemittari kytketään.\n\nb) Laske langan resistanssi $R = U : I$ jokaisessa lämpötilassa. Kerro, kuinka monta prosenttia resistanssi on kasvanut lämpötilasta $20\\,{}^\\circ\\text{C}$ lämpötilaan $80\\,{}^\\circ\\text{C}$.\n\nc) Nimeä kaksi virhelähdettä, jotka voivat vääristää tulosta. Kerro, miten kumpaakin voi pienentää.\n\nVastauskenttään kirjoitetaan b-kohdan resistanssin kasvu prosentteina.",
+      "text": "Oppilas haluaa tutkia kokeella, riippuuko metallilangan resistanssi lämpötilasta. Hän asettaa kelalle käämityn lakatun rautalangan (lakattu lanka on päällystetty ohuella eristävällä lakalla) vesihauteeseen. Vesihauteen lämpötilaa voi säätää. Jokaisessa lämpötilassa langan jännite pidetään arvossa $1{,}00\\,\\text{V}$. Virta luetaan virtamittarilta (esimerkkiaineisto).\n\na) Nimeä kokeen riippumaton muuttuja (muuttuja, jota muutetaan), riippuva muuttuja (muuttuja, jota mitataan) ja vakioitavat muuttujat (muuttujat, jotka pidetään samoina). Kuvaile mittausjärjestely: miten virtamittari ja jännitemittari kytketään.\n\nb) Laske langan resistanssi $R = U : I$ jokaisessa lämpötilassa. Kerro, kuinka monta prosenttia resistanssi on kasvanut lämpötilasta $20\\,{}^\\circ\\text{C}$ lämpötilaan $80\\,{}^\\circ\\text{C}$.\n\nc) Nimeä kaksi virhelähdettä, jotka voivat vääristää tulosta. Kerro, miten kumpaakin voi pienentää.\n\nVastauskenttään kirjoitetaan b-kohdan resistanssin kasvu prosentteina.",
       "kind": [
         "experiment",
         "data",

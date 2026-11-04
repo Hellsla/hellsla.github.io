@@ -162,7 +162,7 @@
 
 ## fy6-3-L2-07
 **Annettu:** mittauspisteet $(U, I)$: $(0{,}0\,\text{V}; 0{,}00\,\text{A})$, $(1{,}0\,\text{V}; 0{,}20\,\text{A})$, $(2{,}0\,\text{V}; 0{,}41\,\text{A})$, $(3{,}0\,\text{V}; 0{,}61\,\text{A})$ ja $(4{,}0\,\text{V}; 0{,}81\,\text{A})$
-**Kysytty:** mikä opiskelijan päättelyssä on virheellistä, ja niiden jännitteiden resistanssien keskiarvo $R_{\text{ka}}$, joilla jännite ei ole nolla
+**Kysytty:** mikä opiskelijan päättelyssä on virheellistä, ja nollasta poikkeavien jännitteiden resistanssien keskiarvo $R_{\text{ka}}$
 **Periaate:** Resistanssi $R = U : I$ on määritelty vain, kun virta ei ole nolla. Pisteessä $U = 0{,}0\,\text{V}$ ja $I = 0{,}00\,\text{A}$ suhde on $0 : 0$. Se ei ole luku. Se, että vastus ei päästä virtaa läpi ilman jännitettä, ei tarkoita, että resistanssi on nolla. Resistanssi arvioidaan pisteistä, joissa virran voi mitata. Jos suhde $U : I$ on niissä sama, vastus noudattaa Ohmin lakia. Silloin resistanssi ei kasva jännitteen mukana.
 **Kaava:** $R = \dfrac{U}{I}$ kullekin pisteelle ja $R_{\text{ka}} = \dfrac{R_1 + \ldots + R_4}{4}$
 **Muunnokset:** Ei tarvita. Jännite on voltteina ja virta ampeereina.
