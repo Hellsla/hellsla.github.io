@@ -34,7 +34,7 @@ fq = [102, 65.5, 51.0, 39.0, 34.0, 24.6]
 prod = [f * 1e-6 / 5.0e-9 * x / 100 for f, x in zip(fq, dq)]   # E d = 408, 393, 408, 390, 408, 393,6 V
 a["fy6-11-L2-05"] = sum(prod) / len(prod)                 # sum 2400,6 V, mean 400,1 V = U
 a["fy6-11-L2-06"] = 4.0e-9 * 1800 / 0.060 * 1000          # L2-06: d = 6,0 cm (not 1,5 cm): E = 3,0e4 V/m, F = 0,12 mN
-fx = [60.2, 59.8, 59.5, 59.0, 52.1, 33.0]                 # L2-07: F in µN at x = 0...10 cm, q = 2,0 nC
+fx = [60.2, 59.8, 59.5, 59.0, 58.0, 33.0]                 # L2-07: F in µN at x = 0...10 cm, q = 2,0 nC
 good = [f for f in fx if abs(f - fx[0]) / fx[0] < 0.03]   # within 3 %: x = 0...6 cm (four points, sum 238,5 µN)
 a["fy6-11-L2-07"] = sum(good) / len(good) * 1e-6 / 2.0e-9   # E = 59,6 µN : 2,0 nC = 2,98e4 V/m (U : d = 3,0e4 V/m)
 mk = [3.8, 4.6, 3.2, 5.1, 4.2]                            # L3-04: m in 1e-15 kg, hover voltages in V, d = 8,0 mm

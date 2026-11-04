@@ -30,10 +30,10 @@ x_stop = climb / 600 * 2.0                                    # V = U x / d: x =
 a["fy6-12-L3-03"] = (2.0 - x_stop) * 10                       # distance from the + plate: 4,34 mm
 # Exercise bank additions (L1-06, L1-07, L2-06 are multiple choice: no number)
 a["fy6-12-L1-08"] = 2 * 450                                   # E_k = q U = 2e · 450 V = 900 eV
-# L2-05: V(x) table (x in cm, V in V); E = mean of V / x, U = E d
+# L2-05: V(x) table (x in cm, V in V); E = slope of the least-squares line through the origin, U = E d
 x5, V5 = [1.0, 2.0, 3.0, 4.0, 5.0], [5.2, 9.7, 15.4, 19.6, 25.3]
-E5 = sum(v / x for x, v in zip(x5, V5)) / len(x5) * 100       # 502,9 V/m (ratios 5,20 4,85 5,13 4,90 5,06 V/cm)
-a["fy6-12-L2-05"] = E5 * 0.060                                # U = E d = 30,2 V
+E5 = sum(x * v for x, v in zip(x5, V5)) / sum(x * x for x in x5) * 100   # least squares through origin: 501,3 V/m
+a["fy6-12-L2-05"] = E5 * 0.060                                # U = E d = 30,1 V
 # L2-07: m = 2 e U / v^2 per row, then the mean; v in 1e4 m/s
 U7, v7 = [100, 200, 300, 400, 500], [6.88e4, 9.95e4, 12.0e4, 13.9e4, 15.4e4]
 a["fy6-12-L2-07"] = sum(2 * e * u / v ** 2 for u, v in zip(U7, v7)) / len(U7)   # 6,66e-27 kg (helium ion)

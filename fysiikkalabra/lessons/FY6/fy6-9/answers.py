@@ -42,7 +42,7 @@ a["fy6-9-L3-03"] = 0.15 * 2.0 ** 2 * 1.5 * 3600 / 1000    # R_s I^2 t = 0,15 ohm
 # fy6-9-L3-04: example discharge of a lithium cell, charging took 11,0 Wh each time
 W_lo = 3.70 * (0.50 * 5.2)                                # 0,50 A for 5,2 h: 2,6 Ah, 9,62 Wh
 W_hi = 3.55 * (2.0 * 1.2)                                 # 2,0 A for 1,2 h: 2,4 Ah, 8,52 Wh
-a["fy6-9-L3-04"] = W_hi / 11.0 * 100                      # efficiency 8,52 : 11,0 = 77,5 % (R_s = 0,15 V : 1,5 A = 0,10 ohm)
+a["fy6-9-L3-04"] = W_hi / 11.0 * 100                      # efficiency 8,52 : 11,0 = 77,45 % (R_s = 0,15 V : 1,5 A = 0,10 ohm)
 # fy6-9-L3-05: charger 14,0 V, R_kok = 0,40 ohm, 50 Ah, three stages of 20 % = 10 Ah, E at the middle of each stage
 E_mid = [(12.00 + 12.20) / 2, (12.20 + 12.40) / 2, (12.40 + 12.60) / 2]
 a["fy6-9-L3-05"] = sum(10 / ((14.0 - e) / 0.40) for e in E_mid)   # 2,105 + 2,353 + 2,667 = 7,12 h (constant 5,0 A: 6,0 h)

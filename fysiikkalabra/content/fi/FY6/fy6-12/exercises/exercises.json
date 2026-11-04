@@ -53,17 +53,17 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Positiivisen varauksen potentiaalienergia pienenee ja negatiivisen kasvaa, koska potentiaali laskee kentän suuntaan.",
-          "correct": true,
-          "feedback": "Oikein: kenttä osoittaa suuremmasta potentiaalista pienempään, joten kentän suuntaan potentiaali $V$ pienenee. Potentiaalienergia $qV$ pienenee silloin positiiviselle varaukselle ja kasvaa negatiiviselle, koska $q$:n etumerkki kääntää muutoksen."
-        },
-        {
           "text": "Kummankin varauksen potentiaalienergia pienenee, koska sähkökenttä tekee siirtymän aikana työtä kumpaankin varaukseen positiivisesti.",
           "feedback": "Kenttä tekee työn $q(V_A - V_B)$, ja sen etumerkki riippuu varauksen etumerkistä. Kentän suuntaan negatiiviseen varaukseen kohdistuu voima vastakkaiseen suuntaan, joten kenttä tekee siihen negatiivisen työn ja sen potentiaalienergia kasvaa."
         },
         {
           "text": "Positiivisen varauksen potentiaalienergia kasvaa ja negatiivisen pienenee, koska potentiaali kasvaa kentän suuntaan ja $E_\\text{p} = qV$.",
           "feedback": "Kaava $E_\\text{p} = qV$ on oikea, mutta potentiaalin suunta on väärin: kenttä osoittaa kohti pienempää potentiaalia, joten kentän suuntaan potentiaali pienenee. Silloin positiivisen varauksen potentiaalienergia pienenee ja negatiivisen kasvaa."
+        },
+        {
+          "text": "Positiivisen varauksen potentiaalienergia pienenee ja negatiivisen kasvaa, koska potentiaali laskee kentän suuntaan.",
+          "correct": true,
+          "feedback": "Oikein: kenttä osoittaa suuremmasta potentiaalista pienempään, joten kentän suuntaan potentiaali $V$ pienenee. Potentiaalienergia $qV$ pienenee silloin positiiviselle varaukselle ja kasvaa negatiiviselle, koska $q$:n etumerkki kääntää muutoksen."
         },
         {
           "text": "Kummankin varauksen potentiaalienergia pysyy samana, koska varaukset siirtyvät saman matkan samassa homogeenisessa kentässä.",
@@ -83,13 +83,13 @@
       "tolerance": 0.02,
       "choices": [
         {
+          "text": "Levyjen välinen jännite on nyt $0\\,\\text{V}$, koska toisen levyn potentiaali on nolla ja jännite mitataan nollakohtaan nähden.",
+          "feedback": "Jännite on kahden kohdan potentiaalien erotus, ei toisen kohdan potentiaali nollakohtaan nähden. Toisen levyn potentiaali on nyt nolla, mutta toisen on $-200\\,\\text{V}$, ja erotus on edelleen $200\\,\\text{V}$."
+        },
+        {
           "text": "Negatiivisen levyn potentiaali on $-200\\,\\text{V}$, ja jännite on edelleen $200\\,\\text{V}$, koska jännite on potentiaalien erotus.",
           "correct": true,
           "feedback": "Oikein: nollakohdan siirto muuttaa kummankin levyn potentiaalia saman verran, mutta potentiaalien erotus eli jännite $U = 0 - (-200\\,\\text{V})$ pysyy samana. Siksi kenttäkin on ennallaan."
-        },
-        {
-          "text": "Levyjen välinen jännite on nyt $0\\,\\text{V}$, koska toisen levyn potentiaali on nolla ja jännite mitataan nollakohtaan nähden.",
-          "feedback": "Jännite on kahden kohdan potentiaalien erotus, ei toisen kohdan potentiaali nollakohtaan nähden. Toisen levyn potentiaali on nyt nolla, mutta toisen on $-200\\,\\text{V}$, ja erotus on edelleen $200\\,\\text{V}$."
         },
         {
           "text": "Positiivisen levyn potentiaali on edelleen $+200\\,\\text{V}$, koska potentiaali on levyn oma ominaisuus eikä riipu nollakohdasta.",
@@ -149,12 +149,12 @@
     {
       "id": "fy6-12-L2-05",
       "level": 2,
-      "text": "Kahden yhdensuuntaisen levyn väli on $d = 6{,}0\\,\\text{cm}$. Levyjen välistä mitataan potentiaali eri etäisyyksillä $x$ negatiivisesta levystä, joka on nollakohta. Taulukon arvot ovat esimerkkiaineistoa, ja niissä on pientä mittaushajontaa.\n\na) Sovita mittapisteisiin origon kautta kulkeva suora ja laske sen kulmakertoimesta kentänvoimakkuus $E$ yksikössä $\\text{V/m}$.\n\nb) Päättele levyjen välinen jännite $U$.\n\nVastauslaatikkoon tulee kohdan b) tulos voltteina.",
+      "text": "Kahden yhdensuuntaisen levyn väli on $d = 6{,}0\\,\\text{cm}$. Levyjen välistä mitataan potentiaali eri etäisyyksillä $x$ negatiivisesta levystä, joka on nollakohta. Taulukon arvot ovat esimerkkiaineistoa, ja niissä on pientä mittaushajontaa.\n\na) Sovita mittapisteisiin origon kautta kulkeva suora ja laske sen kulmakertoimesta (pienimmän neliösumman menetelmällä tai lukemalla suoralta yksi piste) kentänvoimakkuus $E$ yksikössä $\\text{V/m}$.\n\nb) Päättele levyjen välinen jännite $U$.\n\nVastauslaatikkoon tulee kohdan b) tulos voltteina.",
       "kind": [
         "data",
         "experiment"
       ],
-      "answer": 30.2,
+      "answer": 30.1,
       "unit": "V",
       "tolerance": 0.04,
       "data": {
@@ -190,7 +190,7 @@
     {
       "id": "fy6-12-L2-06",
       "level": 2,
-      "text": "Opiskelija kirjoittaa: \"Positiivinen varaus liikkuu itsestään aina kohti suurempaa potentiaalia, koska varaus pyrkii kohti suurempaa energiaa.\" Mikä on väitteen virhe, kun varaukseen vaikuttaa vain sähköinen voima?",
+      "text": "Opiskelija kirjoittaa: ”Positiivinen varaus liikkuu itsestään aina kohti suurempaa potentiaalia, koska varaus pyrkii kohti suurempaa energiaa.” Mikä on väitteen virhe, kun varaukseen vaikuttaa vain sähköinen voima?",
       "kind": [
         "error",
         "concept"
@@ -200,13 +200,8 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Sähköinen voima kiihdyttää positiivista varausta kentän suuntaan eli kohti pienempää potentiaalia, jolloin sen potentiaalienergia pienenee.",
-          "correct": true,
-          "feedback": "Oikein: kenttä osoittaa suuremmasta potentiaalista pienempään, ja positiivinen varaus kiihtyy kentän suuntaan. Silloin $E_\\text{p} = qV$ pienenee ja liike-energia kasvaa. Varaus pyrkii kohti pienempää potentiaalienergiaa, ei suurempaa."
-        },
-        {
           "text": "Varaus liikkuu kohti suurempaa potentiaalia vain silloin, kun sen massa on pieni, ja raskaampi hiukkanen liikkuu kohti pienempää potentiaalia.",
-          "feedback": "Liikkeen suunnan ratkaisee voiman suunta, ja sen määrää varauksen etumerkki ja kentän suunta, ei massa. Massa vaikuttaa vain siihen, kuinka voimakkaasti hiukkanen kiihtyy: positiivinen varaus liikkuu aina kentän suuntaan."
+          "feedback": "Liikkeen suunnan ratkaisee voiman suunta, ja sen määrää varauksen etumerkki ja kentän suunta, ei massa. Massa vaikuttaa vain siihen, kuinka voimakkaasti hiukkanen kiihtyy: levosta lähtevä positiivinen varaus kiihtyy aina kentän suuntaan."
         },
         {
           "text": "Varaukseen ei vaikuta voimaa lainkaan, ennen kuin se on saavuttanut nollapotentiaalin, joten varaus ei lähde itsestään liikkeelle.",
@@ -214,14 +209,19 @@
         },
         {
           "text": "Varaus liikkuu kohti suurempaa potentiaalia, jos potentiaali on positiivinen, ja kohti pienempää potentiaalia, jos potentiaali on negatiivinen.",
-          "feedback": "Liikkeen suunta ei riipu potentiaalin etumerkistä, koska nollakohta valitaan vapaasti. Ratkaisevaa on potentiaalin muutos: positiivinen varaus liikkuu aina kohti pienempää potentiaalia riippumatta siitä, onko potentiaali positiivinen vai negatiivinen."
+          "feedback": "Liikkeen suunta ei riipu potentiaalin etumerkistä, koska nollakohta valitaan vapaasti. Ratkaisevaa on potentiaalin muutos: levosta lähtevä positiivinen varaus liikkuu aina kohti pienempää potentiaalia riippumatta siitä, onko potentiaali positiivinen vai negatiivinen."
+        },
+        {
+          "text": "Sähköinen voima kiihdyttää positiivista varausta kentän suuntaan eli kohti pienempää potentiaalia, jolloin sen potentiaalienergia pienenee.",
+          "correct": true,
+          "feedback": "Oikein: kenttä osoittaa suuremmasta potentiaalista pienempään, ja positiivinen varaus kiihtyy kentän suuntaan. Silloin $E_\\text{p} = qV$ pienenee ja liike-energia kasvaa. Varaus pyrkii kohti pienempää potentiaalienergiaa, ei suurempaa."
         }
       ]
     },
     {
       "id": "fy6-12-L2-07",
       "level": 2,
-      "text": "Tutkija kiihdyttää positiivisia ioneja levosta eri kiihdytysjännitteillä $U$ ja mittaa kunkin ionin loppunopeuden $v$. Jokaisen ionin varaus on $+e$, missä $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Taulukon arvot ovat esimerkkiaineistoa, ja niissä on pientä mittaushajontaa.\n\na) Laske ionin massa jokaiselle taulukon riville ja ota massojen keskiarvo.\n\nb) Päättele ionin laji, kun vaihtoehdot ovat protoni ($1{,}673 \\cdot 10^{-27}\\,\\text{kg}$), deuteroni ($3{,}344 \\cdot 10^{-27}\\,\\text{kg}$) ja heliumioni ($6{,}646 \\cdot 10^{-27}\\,\\text{kg}$).\n\nVastauslaatikkoon tulee kohdan a) keskiarvo kilogrammoina.",
+      "text": "Tutkija kiihdyttää positiivisia ioneja levosta eri kiihdytysjännitteillä $U$ ja mittaa kunkin ionin loppunopeuden $v$. Jokaisen ionin varaus on $+e$, missä $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Taulukon arvot ovat esimerkkiaineistoa, ja niissä on pientä mittaushajontaa.\n\na) Laske ionin massa jokaiselle taulukon riville ja ota massojen keskiarvo.\n\nb) Päättele ionin laji, kun vaihtoehdot ovat protoni ($1{,}673 \\cdot 10^{-27}\\,\\text{kg}$), deuteroni ($3{,}344 \\cdot 10^{-27}\\,\\text{kg}$) ja yksinkertaisesti varautunut heliumioni (He$^+$, $6{,}646 \\cdot 10^{-27}\\,\\text{kg}$).\n\nVastauslaatikkoon tulee kohdan a) keskiarvo kilogrammoina.",
       "kind": [
         "data",
         "experiment"

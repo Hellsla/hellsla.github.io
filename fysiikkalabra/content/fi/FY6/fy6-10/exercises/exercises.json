@@ -47,26 +47,26 @@
       "kind": [
         "concept"
       ],
-      "answer": "Villan varaus on positiivinen ja yhtä suuri kuin sauvan varaus, koska elektroneja siirtyi villasta sauvaan.",
+      "answer": "Villa on positiivinen ja itseisarvoltaan yhtä suuri, koska elektroneja siirtyi sauvaan.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Villan varaus on positiivinen ja yhtä suuri kuin sauvan varaus, koska elektroneja siirtyi villasta sauvaan.",
-          "correct": true,
-          "feedback": "Oikein: hierottaessa elektroneja siirtyy kappaleesta toiseen. Sauva sai elektroneja ja villa menetti saman verran, joten kappaleiden varaukset ovat yhtä suuret ja vastakkaismerkkiset ja kokonaisvaraus säilyy."
-        },
-        {
-          "text": "Villa on edelleen neutraali, koska hankaus synnytti sauvaan uusia elektroneja tyhjästä.",
+          "text": "Villa jää neutraaliksi, koska hankaus synnyttää sauvaan uusia elektroneja tyhjästä.",
           "feedback": "Varaus ei synny tyhjästä. Elektroneja ei luoda, vaan ne siirtyvät kappaleesta toiseen, joten sauvan saama negatiivinen varaus puuttuu jostain muualta: villasta."
         },
         {
-          "text": "Villan varaus on positiivinen mutta pienempi, koska osa siirtyneestä varauksesta hävisi hankauksessa lämpönä.",
-          "feedback": "Varaus ei muutu lämmöksi eikä häviä. Varauksen säilymisen mukaan eristetyn systeemin kokonaisvaraus pysyy samana, joten villan varaus on suuruudeltaan sama kuin sauvan."
+          "text": "Villa on negatiivinen kuten sauva, koska hankaus antaa kummallekin ylimääräisiä elektroneja.",
+          "feedback": "Kummallekaan ei voi tulla elektroneja ilman, että ne tulevat jostain. Kun sauva saa elektroneja, villan täytyy menettää niitä, joten villa jää positiiviseksi."
         },
         {
-          "text": "Villa on negatiivinen kuten sauvakin, koska hankaus antaa kummallekin kappaleelle ylimääräisiä elektroneja.",
-          "feedback": "Kummallekaan ei voi tulla elektroneja ilman, että ne tulevat jostain. Kun sauva saa elektroneja, villan täytyy menettää niitä, joten villa jää positiiviseksi."
+          "text": "Villa on positiivinen ja itseisarvoltaan yhtä suuri, koska elektroneja siirtyi sauvaan.",
+          "correct": true,
+          "feedback": "Oikein: hierottaessa elektroneja siirtyy kappaleesta toiseen. Sauva sai elektroneja ja villa menetti saman verran, joten kappaleiden varaukset ovat itseisarvoltaan yhtä suuret mutta vastakkaismerkkiset, ja kokonaisvaraus säilyy."
+        },
+        {
+          "text": "Villa on positiivinen mutta vähemmän varautunut, koska osa varauksesta muuttui lämmöksi.",
+          "feedback": "Varaus ei muutu lämmöksi eikä häviä. Varauksen säilymisen mukaan eristetyn systeemin kokonaisvaraus pysyy samana, joten villan varaus on itseisarvoltaan sama kuin sauvan."
         }
       ]
     },
@@ -77,26 +77,26 @@
       "kind": [
         "concept"
       ],
-      "answer": "Voima pienenee neljäsosaan, koska etäisyys on Coulombin laissa nimittäjässä toisessa potenssissa.",
+      "answer": "Voima pienenee neljäsosaan, koska etäisyys on nimittäjässä toisessa potenssissa.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
-        {
-          "text": "Voima pienenee neljäsosaan, koska etäisyys on Coulombin laissa nimittäjässä toisessa potenssissa.",
-          "correct": true,
-          "feedback": "Oikein: kun etäisyys kaksinkertaistuu, nimittäjän $r^2$ arvo nelinkertaistuu, joten voima pienenee neljäsosaan."
-        },
         {
           "text": "Voima puolittuu, koska voima on kääntäen verrannollinen etäisyyteen eikä sen neliöön.",
           "feedback": "Voima ei ole kääntäen verrannollinen etäisyyteen vaan sen neliöön. Kaksinkertaisella etäisyydellä nimittäjä $r^2$ on nelinkertainen, ei kaksinkertainen."
         },
         {
-          "text": "Voima kaksinkertaistuu, koska pidempi etäisyys antaa varausten vuorovaikuttaa suuremmalla alueella.",
+          "text": "Voima kaksinkertaistuu, koska pidempi etäisyys antaa varausten vaikuttaa suuremmalla alueella.",
           "feedback": "Sähköinen voima heikkenee etäisyyden kasvaessa, ei vahvistu. Etäisyys on kaavassa nimittäjässä, joten sen kasvu pienentää voimaa."
         },
         {
-          "text": "Voima pysyy ennallaan, koska varaukset ja Coulombin lain vakio eivät muutu etäisyyttä muutettaessa.",
+          "text": "Voima pysyy ennallaan, koska varaukset ja Coulombin lain vakio eivät muutu lainkaan.",
           "feedback": "Varaukset ja vakio todella pysyvät samoina, mutta voima riippuu myös etäisyydestä: $r$ on kaavassa nimittäjässä, joten sen muutos muuttaa voimaa."
+        },
+        {
+          "text": "Voima pienenee neljäsosaan, koska etäisyys on nimittäjässä toisessa potenssissa.",
+          "correct": true,
+          "feedback": "Oikein: kun etäisyys kaksinkertaistuu, nimittäjän $r^2$ arvo nelinkertaistuu, joten voima pienenee neljäsosaan."
         }
       ]
     },
@@ -194,7 +194,6 @@
       "text": "Kahden varausparin välistä voimaa mitattiin eri etäisyyksillä (esimerkkiaineisto). Parissa A kummankin pallon varaus on $20\\,\\text{nC}$. Parissa B toisen pallon varaus on $20\\,\\text{nC}$ ja toisen tuntematon $q_\\text{B}$. Kaikki varaukset ovat samanmerkkisiä.\n\na) Laske voimien suhde $F_\\text{B} : F_\\text{A}$ jokaiselle etäisyydelle ja selitä, miksi suhde on suunnilleen sama kaikilla etäisyyksillä.\n\nb) Päättele suhteiden keskiarvosta $q_\\text{B}$. Vastaa nanocoulombeina.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "data",
-        "graph",
         "reasoning"
       ],
       "answer": 69.79,
@@ -288,7 +287,7 @@
     {
       "id": "fy6-10-L3-05",
       "level": 3,
-      "text": "Esimerkkitilanne: kaksi samanlaista pientä palloa, joiden massa on kummankin $0{,}80\\,\\text{g}$, on ripustettu samasta pisteestä $0{,}30\\,\\text{m}$:n pituisilla kevyillä, sähköä johtamattomilla langoilla. Pallot ovat saaneet yhtä suuret samanmerkkiset varaukset ja hylkivät toisiaan. Tasapainossa kumpikin lanka on kulmassa $\\theta = 10\\,{}^\\circ$ pystysuoraan nähden. Pallot voi käsitellä pistevarauksina, ja $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Piirrä toiseen palloon vaikuttavat voimat ja perustele niiden avulla, että sähköisen voiman suuruus on $F = mg\\tan\\theta$.\n\nb) Laske pallojen keskipisteiden etäisyys ja kummankin pallon varaus $q$. Vastaa varaus nanocoulombeina.\n\nc) Toisen pallon varaus kolminkertaistetaan. Selitä, miksi langat ovat edelleen yhtä suuressa kulmassa pystysuoraan nähden.\n\nKirjoita vastauslaatikkoon kohdan b) varaus.",
+      "text": "Esimerkkitilanne: kaksi samanlaista pientä palloa, joiden massa on kummankin $0{,}80\\,\\text{g}$, on ripustettu samasta pisteestä $0{,}30\\,\\text{m}$:n pituisilla kevyillä, sähköä johtamattomilla langoilla.\n\nPallot ovat saaneet yhtä suuret samanmerkkiset varaukset ja hylkivät toisiaan. Tasapainossa kumpikin lanka on kulmassa $\\theta = 10\\,{}^\\circ$ pystysuoraan nähden.\n\nPallot voi käsitellä pistevarauksina, ja $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Piirrä toiseen palloon vaikuttavat voimat ja perustele niiden avulla, että sähköisen voiman suuruus on $F = mg\\tan\\theta$.\n\nb) Laske pallojen keskipisteiden etäisyys ja kummankin pallon varaus $q$. Vastaa varaus nanocoulombeina.\n\nc) Toisen pallon varaus kolminkertaistetaan. Selitä, miksi kummankin langan kulma pystysuoraan nähden on edelleen yhtä suuri, vaikka kulma muuttuu.\n\nKirjoita vastauslaatikkoon kohdan b) varaus.",
       "kind": [
         "model",
         "reasoning"
