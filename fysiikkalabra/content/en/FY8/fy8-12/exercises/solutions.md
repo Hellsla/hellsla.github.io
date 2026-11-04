@@ -44,7 +44,7 @@
 **Principle:** A single photon can ionise a molecule only if its energy is at least the ionisation energy. The energy of a photon is $E = hf = \tfrac{hc}{\lambda}$, so the longer the wavelength, the smaller the energy. The longest ionising wavelength corresponds to a photon whose energy is exactly the ionisation energy.
 **Formula:** $E = \dfrac{hc}{\lambda}$, from which $\lambda = \dfrac{hc}{E}$
 **Conversions:** $12.6\,\text{eV} = 12.6 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.0185 \cdot 10^{-18}\,\text{J}$, and finally $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Substitution:** $\lambda = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{2.0185 \cdot 10^{-18}\,\text{J}} = 9.8412 \cdot 10^{-8}\,\text{m} = 98.412\,\text{nm}$
+**Substitution:** $\lambda = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{2.0185 \cdot 10^{-18}\,\text{J}} = 9.8412 \cdot 10^{-8}\,\text{m} = 98.412\,\text{nm}$
 **Answer:** $98.4\,\text{nm}$, three significant figures like the ionisation energy $12.6\,\text{eV}$.
 **Reasonableness:** The wavelength is much shorter than the $380$–$720\,\text{nm}$ of visible light, so visible light does not ionise water, as it should. Check: $1240\,\text{eV}\,\text{nm} : 12.6\,\text{eV} \approx 98\,\text{nm}$.
 

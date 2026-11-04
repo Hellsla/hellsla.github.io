@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3154ca5d6bf1cdf0
+CONTENT-HASH: 15ea10fbfc5d187b
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json fy8-15-L3-03 — toistaa luvun reaktion $\bar{\nu}_e + p \to n + e^+$ (aiempi huomautus, ennallaan). Fix: vaihda reaktio tai pyydä perustelemaan, onko $X$ hiukkanen vai antihiukkanen.
-- exercises.json fy8-15-L3-01 — tehtäväteksti on pitkä (viisi hiukkasta massoineen); kysymys on kuitenkin viimeisenä (aiempi huomautus, ennallaan).
+- exercises.json fy8-15-L3-03 — toistaa luvun reaktion (kantaan jäänyt).
+- fy8-15-L3-01 — tehtäväteksti pitkä; kysymys silti viimeisenä (kantaan jäänyt).
 
 ## Checked
-- Delta (rereview, tehtävät koskemattomat): sisältö ei ole muuttunut edellisen PASSin jälkeen (hash sama); aiempi arvio 12 tehtävästä (tasot 5/4/3) ja ratkaisuista pätee.
-- Kuva open-exercises-L3-1280-1: L3-01:n teksti, vastaus ja ratkaisun alku mahtuvat ja ovat luettavia.
-- Hash alussa ja lopussa sama.
+- Delta: L2-03 Sijoitus: h·(c/X) instead of (h·c)/X — same value, intermediate results and answers unchanged, so the arithmetic and the student's path (Kaava hc/λ, then Sijoitus) still agree; the fraction now shows c/X as the quantity being divided, which is arguably clearer for tracing the units.
+- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Sijoitus now wraps as 'h · [fraction c/X] = result' on two to four short rows, nothing clipped, no page scroll; same fraction-over-line form as the other solutions.
+- Levels, tasks and answers untouched by the commit; earlier PASS stands.

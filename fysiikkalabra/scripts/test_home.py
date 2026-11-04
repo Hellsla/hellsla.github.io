@@ -10,8 +10,8 @@ For every language, from the pages that are actually in site/ (so nothing here h
   - every row is one link, to its module page, with icon, code, title and the Miksi question (whole in its title),
     the arrow hidden from screen readers; the module page's lesson links all resolve (two clicks to a lesson)
   - the <title>, og:title and description stay as they were; the header links Näin opiskelet and Sivustosta (the study guide, now at
-    the top of Lukuvinkit with the six stages under the lessons' names) and the footer Sivustosta (the teacher's text, content/<lang>/tietoa.md), which has
-    the portfolio link the front page no longer has
+    its own page nain-opiskelet.html since 2026-11-04, with the six stages under the lessons' names) and the footer Sivustosta (the teacher's text,
+    content/<lang>/tietoa.md); no page links to the teacher's portfolio (teacher 2026-11-04)
   - every language link resolves, and a link to a page the other language has not published goes to that
     language's module page, to a note that exists there
   - the course page's investigation bank (teacher 2026-10-31): every investigation with its topic, F/E levels and
@@ -105,22 +105,28 @@ for lang in i18n.languages():
            bool(intro) and intro.group(1) == T("site.home_h1") and intro.group(2) == T("site.home_sub") and home.find('class="catalogue"') > intro.end())
     hdr = re.search(r'<header class="top">.*?</header>', home, re.S).group(0); ftr = re.search(r'<footer class="bottom">.*?</footer>', home, re.S).group(0)
     expect(f"{lang}: the header links Moduulit, Näin opiskelet and Lukuvinkit in that order",
-           re.findall(r'<nav [^>]*><a class="nav-modules" href="index.html#moduulit">[^<]*</a><a class="nav-study" href="lukuvinkit.html#nain-opiskelet">([^<]*)</a><a class="nav-reading" href="lukuvinkit.html">', hdr) == [_h.escape(T("site.study"))], hdr[-400:])
-    expect(f"{lang}: the footer links Lukuvinkit and Tietoa sivustosta, not the portfolio",
-           'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr and T("site.back_to_portfolio") not in ftr and "../index.html" not in ftr, ftr)
+           re.findall(r'<nav [^>]*><a class="nav-modules" href="index.html#moduulit">[^<]*</a><a class="nav-study" href="nain-opiskelet.html">([^<]*)</a><a class="nav-reading" href="lukuvinkit.html">', hdr) == [_h.escape(T("site.study"))], hdr[-400:])
+    expect(f"{lang}: the footer links Lukuvinkit and Sivustosta",
+           'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr, ftr)
     about = (out / "tietoa.html").read_text() if (out / "tietoa.html").is_file() else ""
-    expect(f"{lang}: tietoa.html exists and links back to the portfolio", T("site.back_to_portfolio") in about and re.search(r'href="(\.\./)+index\.html"', about))
+    expect(f"{lang}: tietoa.html exists", bool(about))
+    expect(f"{lang}: Sivustosta opens with Kiviruukin lukio's logo in the school's colours (teacher 2026-11-04)",
+           '<main class="reading about-page">' in about and (SITE / "brand/kiviruukin-lukio-valkoinen.svg").is_file()
+           and f'src="{"" if out == SITE else "../"}brand/kiviruukin-lukio-valkoinen.svg"' in about)
+    leaks = sorted(str(f.relative_to(out)) for f in out.glob("*.html") if ('href="' + "../" * len(out.relative_to(ROOT.parent).parts) + 'index.html"') in f.read_text())
+    expect(f"{lang}: no page links out of the site to the teacher's portfolio (teacher 2026-11-04)", not leaks, leaks[:5])
     expect(f"{lang}: the front page header links Sivustosta after Lukuvinkit",
            f'<a class="nav-reading" href="lukuvinkit.html">{_h.escape(T("site.reading_tips"))}</a><a class="nav-about" href="tietoa.html">{_h.escape(T("site.about"))}</a>' in hdr, hdr[-400:])
     src = next((f for f in (ROOT / "content" / lang / "tietoa.md", ROOT / "content" / "fi" / "tietoa.md") if f.is_file()), None)
     heads = re.findall(r"^#+ (.+)$", src.read_text(), re.M) if src else []
     expect(f"{lang}: Sivustosta shows the teacher's text (content/{lang}/tietoa.md) with all its headings and bold parts",
            bool(heads) and all(_h.escape(h) in about for h in heads) and about.count("<strong>") == src.read_text().count("**") // 2, heads)
-    rp = (out / "lukuvinkit.html").read_text()
-    guide = re.search(r'<main[^>]*><section class="path" id="nain-opiskelet".*?</section>', rp, re.S)
+    rp = (out / "lukuvinkit.html").read_text(); sp = (out / "nain-opiskelet.html").read_text() if (out / "nain-opiskelet.html").is_file() else ""
+    guide = re.search(r'<main[^>]*><section class="path" id="nain-opiskelet".*?</section></main>', sp, re.S)
     stages = re.findall(r"<li><strong>(.*?)</strong>", guide.group(0)) if guide else []
-    expect(f"{lang}: the study guide opens Lukuvinkit with the six stages under the lessons' names and the more tips",
+    expect(f"{lang}: nain-opiskelet.html holds only the study guide: the six stages under the lessons' names and the more tips (teacher 2026-11-04)",
            stages == [T("inquiry.stage_" + k) for k in ["herata", "ennusta", "tutki", "selita", "sovella", "tarkista"]] and 'class="more-tips"' in guide.group(0), stages)
+    expect(f"{lang}: Lukuvinkit holds only the books, no study guide (teacher 2026-11-04)", 'class="path"' not in rp and "more-tips" not in rp)
     local = local_courses.load(lang); everywhere = local_courses.load()
     sec = re.search(r'<ul class="mod-list local-list">(.*?)</ul>', home, re.S)
     if local:

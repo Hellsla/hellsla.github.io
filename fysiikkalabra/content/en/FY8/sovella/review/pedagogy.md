@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 72dca8a81fc7dc58
+CONTENT-HASH: 69790412287674ba
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- s1: after the rename, s1 a/c still say "to the lower one" and "the lower one only after about 110 s" next to "second excited state". Use "the first excited state" there for consistency (figure says 1st/2nd, text first/second; that pair is fine).
-- s2 (5 parts, 20 points) and s3 (two hand-drawn graphs plus uncertainty, 17 points) are the heaviest; a teacher short of time could set s2 e as optional.
-- s4 b, c, d chain on each other's results; rubrics carry no "own result carried forward" note.
-- s3 b: answer tolerance (1.3 cm +-0.25) and the stated accepted range 1.0-1.6 cm differ slightly; align.
-- s1 c names the lifetimes and altitudes, so the collision-quenching idea is only lightly demanded; still a genuine explanation task.
-- Goal 3 (quantum technology) rests on s1 d alone.
+- s1 a/c still say "the lower one" next to "second excited state"; use "first excited state" (carried).
+- s2 (20 points) and s3 (17 points) are the heaviest; s2 e could be optional (carried).
+- s4 b, c, d chain: no "own result carried forward" note; s3 b tolerance 1.3 ± 0.25 vs 1.0-1.6 cm (carried).
 
 ## Checked
-Re-read after the renaming of the oxygen levels: tasks.json, solutions and figure alt text agree ("first/second excited state"; 2.22 eV = second to first, 1.97 eV = first to ground, 4.19 eV third transition), no stale "upper/lower excited state" in criteria except the "lower one" remarks above. s3 b alt text (r = -2 to 22 cm) matches the axis. Authentic sourced situations (aurora/NIST, MMRTG, labelled model GM data, helium abundance, Oklo); no title or prompt names a formula; parts rise in demand, mix calc, graph and word parts, and each task has one misconception to evaluate (s1 d, s3 d, s4 d, s5 d). Points per part equal the criteria sums; totals 15+20+17+16+16 = 84. answers.py matches stated answers (296 nm, 1190, 5.59 MeV, 3.5 kg, 1790 W, 0.57 mSv, 1.3 cm, 36 cm, 7.16, 136 s, 3.7 %, 3.5 a). Solutions follow given-find-principle-formula-substitution-answer-reasonableness; common-mistakes lists are realistic. Coverage shows no gaps; structure, points and answers identical to the fi version.
+- Delta: s1 a) and d) Sijoitus: h·(c/X) instead of (h·c)/X — same value, intermediate results and answers unchanged, so the arithmetic and the student's path (Kaava hc/λ, then Sijoitus) still agree; the fraction now shows c/X as the quantity being divided, which is arguably clearer for tracing the units.
+- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Sijoitus now wraps as 'h · [fraction c/X] = result' on two to four short rows, nothing clipped, no page scroll; same fraction-over-line form as the other solutions.
+- Levels, tasks and answers untouched by the commit; earlier PASS stands.
