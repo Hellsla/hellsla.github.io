@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: d363d2c649b787b2
+CONTENT-HASH: c24ba5ae8d1c151a
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] solutions.md "Kaava" lines (L1-01 and similar) — numbers without units in the equation-solving step ($4{,}0 + 2{,}0\,t = 24 - 3{,}0\,t$) — optional: add units or keep as a step explicitly marked unitless.
-- [Minor] L3-02 solution — the subscript $x_{0\text{R}}$ (R for runner?) is not introduced in the task text — name the symbol in "Annettu".
-- [Minor] L1-04, L2-04 graph figures — the crossing point is deliberately unmarked and ticks go in steps of 10 on x; fine for reading values, but a dashed guide at the answer would be wrong here, so no change; only note that the 12-s tick makes the right edge crowded.
+- [Minor] L2-06 solution — symbols $x_\text{A}$ (auto), $x_{0\text{B}}$ (pyöräilijä) are used but the task names only "pyöräilijä" and "auto" — name them in Annettu ("auto A, pyöräilijä B").
+- [Minor] L1-07 solution Kaava — the two display rows "(v_B−v_A) t = v_B t_0" and "t = …" are set in one aligned block with an odd indent; use one `=` chain per row.
+- [Minor] L2-05 solution Järkevyys — "taulukon aikaväliä myöhemmin" — "taulukon aikavälin jälkeen".
+- [Minor] L3-04 Vastaus — "kolme merkitsevää numeroa" for 267 m although the data have two; say "267 m (pyöristyksen 270 m raja-arvo)" or keep and explain; "40 : 3,6" unit conversion in Muunnokset reads as a quotient of numbers — "$40\,\text{km/h} = \dfrac{40}{3{,}6}\,\text{m/s}$".
+- [Minor] L1-06 — "kuvaajat on piirretty" but no graph is shown; fine for a concept task, optionally add the figure.
 
 ## Checked
-- contact-5 and contact-6 (all of #52–#67); open-exercises-1280-1 and L3-1280-3 at full size.
-- Level 1, 2 and 3 cards: answer boxes, "Kirjoita ratkaisu", Vastaus and Näytä ratkaisu open inside the card, aligned substitution rows, boxed answers, Järkevyys blocks; no clipping or sideways overflow.
-- Exercise figures `ei-kohtaa` and `kaksi-karrya` seen in L1-04 / L2-04 captures: axes with units, description matches, answer not given away.
+- Only 1280 px exercise captures exist; deterministic layout checks (360/768/1280) ok.
+- open-exercises-1280-7, -8, -9 (L1-06, L1-07, L1-08 with feedback and solutions).
+- open-exercises-L2-1280-6, -7, -8, -9, -10 (L2-05 table and chains, L2-06 student solution, L2-07 table).
+- open-exercises-L3-1280-5, -6, -7, -8, -9 (L3-04 a/b/c chains and Järkevyys, L3-05 table, τ chain).
+- Answers recomputed from the data: 7,0 s; 6,0 s; 36 m; 267 m; 52 m match the solutions; all chains align at "="; units upright with thin space; no clipping.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

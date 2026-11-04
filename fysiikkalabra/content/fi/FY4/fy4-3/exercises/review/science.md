@@ -1,23 +1,22 @@
-VERDICT: PASS
-CONTENT-HASH: 1b72d20a59f51860
+VERDICT: FAIL
+CONTENT-HASH: 20c2600b9b6fb2ac
 
 ## Blocking
+- solutions.md:242 (L2-05, Järkevyys) — A. "Jos köysi kiihtyisi, lukemien pitäisi erota selvästi" is wrong. For a rope whose mass is neglected, as the task states, the end forces are equal even while the rope accelerates. For a light real rope they differ only by m·a. This undercuts the point of the plan item, that the forces are equal at every moment. The same sentence also says "alle 0,1 N", but four of the five differences are exactly 0,1 N. Fix: "Lukemien erot ovat enintään 0,1 N, ja vuoroin A, vuoroin B on suurempi, joten erot ovat satunnaisvaihtelua eivätkä systemaattisia."
+- solutions.md:271 (L3-04, Järkevyys) — A, causality. "Kitka … vie eteenpäin, vaikka se tavallisesti vastustaa liukumista" suggests that here friction does not oppose slipping. It does: the hoof pushes back on the road, and friction opposes the hoof slipping backwards, so it points forward (guardrail J). Fix: "Tien kitka vastustaa kavion liukumista taaksepäin, joten se osoittaa eteenpäin, liikkeen suuntaan."
 
 ## Polish
-- solutions.md:424-430 (L3-01) — C/B, drawn sum. $F_\text{v}$ = 270 N is 5,8 % of G, so it is lifted to the 15 % floor. Measured lengths: G 100, $F_\text{n}$ 94, $F_\text{v}$ 15. The drawn upward total is 109 against 100 downward, with a = 0 and $\overline{v}$ down. It follows the stated rule, and the text alternative says so, but it is the one drawn sum in the set that does not balance, and the balance is the point of the task. Suggested fix in fbdspec.py: when the floor lifts a force collinear with others, shorten the largest same-direction force by the same amount so the sum still shows (here $F_\text{n}$ 85 + $F_\text{v}$ 15 = G 100).
-- solutions.md:316-324 (L1-04) and L1-03, L2-02 — The split scale (horizontal largest drawn at 0,6 of G) is stated only in the aria-label. A sighted reader sees $\overline{F}$ at 0,6·G with no note. Add a visible note under split-scale figures.
-- solutions.md L1-03 — Carried over: state "jää oletetaan kitkattomaksi".
+- solutions.md:276, :282 (L3-05) — "kärry vetää köyttä ja oppilasta" is wrong as written, because the cart does not act on the student. Write "kärry vetää köyttä, ja köysi vetää oppilasta". Also, the Vastaus lists b) before a). Put them in task order.
+- solutions.md:226 (L1-08) — "osoittaa lapsesta kelkkaa kohti eli lasta vastaan" is unclear. Write "osoittaa lapsesta kelkkaa kohti (köysi vetää lasta taaksepäin)".
+- exercises.json L2-06 b) — The table covers 0–5 s, but the distance is asked "ajassa 6,0 s". That is a 1 s extrapolation the solution does not name, and six readings can be misread as 6 s. Either ask for 5,0 s or say that the motion is assumed to continue the same way. At solutions.md:253, "pieni ilmanvastus on hyvin pieni … kokonaisvoima on nolla" should say "likimain nolla".
+- solutions.md L3-04 c) — Explain also why the cart starts: the rope's force on the cart is larger than the cart's resistances. The text gives this only for the horse.
+- docs/exercise-bank/FY4.md — The plan has a "väärin piirretty voimapari" error task and an L3 "törmäävät kärryt → kevyempi kiihtyy enemmän". The set has L2-07 (verbal fist/wall) and L3-05 (pull data) instead. The swap keeps out the second law, which is right for this chapter. Update the plan to match.
 
 ## Checked
-- Round-1 blocking item (L1-04) is resolved. G = N = 12 000 N, realistic for a car. On the split scale the measured lengths are F 60, $F_\text{i}$ 37, $F_\text{r}$ 23, and 37 + 23 = 60 matches 620 = 380 + 240. G = N = 100, and the text alternative states the split.
-- All 12 diagrams were rendered (`fbdspec.py show`), screenshotted, and their arrow lengths measured from the SVG. All proportions are on one scale:
-  - L2-01: 61,5 / 38,5 / 100.
-  - L2-04: 65 / 35 / 100.
-  - L3-02: 50 / 50 / 100.
-  - L3-03: 21 / 79 / 100.
-  - The equal pairs (L1-01, L1-02, L1-05, L2-03) are 100 / 100.
-- Split scales: L1-03 (90 vs 590 N) and L2-02 (65 vs 720 N). In each, the horizontal forces are mutually correct (L2-02: 60 = 60).
-- No diagram contradicts its Voimakuvio sentence or its motion. a = 0 wherever the velocity is constant. In L1-03 $\overline{a}$ points away from the wall.
-- Third-law partners stay off every diagram.
-- I recomputed all 12 answers in one script. Each is within tolerance: 18; 850; 90; 240; 6,38; 13; 65; 834; 8,94; 0,27; 0,60; 1,9.
+- I recomputed all 17 numeric answers in one script. All agree with exercises.json and answers.py: L1-08 38 N, L2-05 4,8 N, L2-06 3,0 m, L3-04 450 N / 480 N, L3-05 3,40 N. The old answers are unchanged.
+- L3-04: cart T = 410 + 40 N, horse F_t = T + 30 N. Each body has its own diagram, and no third-law pair is on one diagram.
+- L3-05: v is constant (0,70 ± 0,01 m/s) from 4 s on, and the mean force is 3,4 N. Only the first and third laws are used, so the chapter's scope holds.
+- MC items L1-06, L1-07, L2-07 each have exactly one correct option, and every distractor's feedback is right. L1-07 separates the support force's partner from the weight, as the lesson does.
+- Notation follows the lesson: \overline{F}_{AB} = −\overline{F}_{BA} and magnitudes plain. No new figures, so there are no arrow-colour issues.
+- The L2-05 and L2-06 captures (1280 px) render without overflow.
 - The hash was the same at the start and at the end.

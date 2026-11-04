@@ -1,20 +1,22 @@
-VERDICT: PASS
-CONTENT-HASH: 8b72ddfd68744298
+VERDICT: FAIL
+CONTENT-HASH: cccd86d72dd6b1a0
 
 ## Blocking
+- content/fi/FY4/fy4-2/exercises/solutions.md:180 (L3-04, Järkevyys) — **A, definition**: "Tulos on alle keskinopeudella $27{,}8\,\text{m/s}$ kuljettavan $222\,\text{m}$". 27,8 m/s is the final speed, and the car's mean speed is 128 m / 8,0 s ≈ 16 m/s. In a chapter that teaches keskinopeus vs. hetkellinen nopeus, this sentence teaches the wrong meaning. Fix: "Tulos on alle loppunopeudella $27{,}8\,\text{m/s}$ koko ajan kuljettavan $222\,\text{m}$".
 
 ## Polish
-- solutions.md:110 (L3-02): "kilometreina" should be "kilometreinä" (carried from round 2).
-- solutions.md:60 (L2-01): 5 m/s² is called "tavallinen voimakas jarrutus kuivalla tiellä". A full stop on dry asphalt reaches about 7–9 m/s², so "reipas jarrutus" fits better (carried).
-- answers.py:266 (L3-03): the code uses `0.50` while the task now gives 0,500 s. The value is the same; writing `0.500` would match the data.
+- exercises.json:69 (L1-06, option 4) — "painon vastavoima, joka osoittaa ylöspäin" plants a wrong term: the normal force is not the reaction to the weight. The feedback does not correct it, and forces come only in later chapters. Replace it with a distractor that has no force words, e.g. "Alaspäin, koska jarrutus painaa autoa tietä vasten".
+- solutions.md:136 (L1-07) — "kolme merkitsevää numeroa, koska luetut arvot ovat tarkasti ruudukon viivoilla" contradicts L1-04, which gives 1,0 m/s² (two figures) from the same figure. Give 23 m (two figures, with 22,5 m as the intermediate value), or say the same in both.
+- solutions.md:163 (L2-06) — "kolme merkitsevää numeroa … hajonta rajoittaa … kahteen" contradicts itself. Answer 1,2 m/s² (≈ 1,15) or explain why three figures are kept. A quadratic fit to the same data gives 1,20, so the second figure is already uncertain.
+- solutions.md:191 (L3-05) — the reasonableness check uses $g\sin\alpha$, which fy4-2 does not teach. Mark it as a look ahead or drop it.
+- solutions.md L3-04 Vastaus — "kolme merkitsevää numeroa kuten nopeuksien muunnoksessa": the data 36 km/h has two figures, so state 128 m as ≈ 1,3·10² m or justify the third figure.
 
 ## Checked
-- Round-2 blocker resolved: L3-03 now gives $t = 0{,}500\,\text{s}$ in both the task and the solution, so −1,76 m/s with three significant figures is justified by the data, and the stored answer equals it.
-- I recomputed all 12 answers with my own formulas in one script: 3,125; 1,5; 11,04; 1,0; 180; 40; 4,0; 11,47 ($v_0^2/2g$); 1,610; 2,190 (other root −0,56 s); 1162,5; −1,76. All match exercises.json and answers.py.
-- Answers rounded to the data's significant figures all lie within the 2 % tolerance. The largest gap is 3,1 against 3,125, which is 0,8 %.
-- L2-02: the tangent to x = ½·1,0·t² at t = 4 s passes through (2 s; 0) and (6 s; 16 m), slope 4,0 m/s. L1-04: (0; 2,0) to (5,0; 7,0) gives 1,0 m/s².
-- L3-03: v = B + 2At is read correctly from the fit. The apex is at 0,32 s, so the ball is falling at 0,500 s and the negative sign is correct. a = −9,72 m/s² is close to −g.
-- L3-01: the whole flight is treated as one motion with a = −g. The rise-plus-fall check (0,82 s + 1,37 s) is a real check.
-- L1-05, L2-01 and L3-02 state that the motion does not reverse before they equate distance with displacement or area.
-- Every solution is symbolic first, has the conversions it needs (72 km/h = 20 m/s) and ends with a meaningful reasonableness check.
-- Conditions are stated: small air resistance, no atmosphere on the Moon, uniform acceleration or braking.
+- All 20 answers recomputed in one script: L1-07 22,5 m; L2-05 slope 0,837 → 0,84 m/s² (v₀ 0,217); L2-06 (t²,x) slope 0,577, a = 1,154 m/s², intercept −0,005 m; L3-04 a per interval 5,0 / 3,61 / 2,92 / 2,36 m/s², trapezoids 10,0 + 27,2 + 40,3 + 50,8 = 128,3 m; L3-05 a −0,811 m/s², v₀ 2,420 m/s, t_k 2,99 s, s 3,61 m, x(5,0 s) 1,97 m > 0; α ≈ 4,7°. All match answers.py and the tolerances fit.
+- L3-04: the v(t) graph is concave down, so the chords lie below it and the trapezoid sum underestimates; the solution says this correctly.
+- L3-05: "kitka on pieni" covers the constant a through the turning point. c) (t,a) is a horizontal line and (t,x) a downward parabola with its top at 3,0 s, both correct.
+- MC L1-06, L1-08, L2-07: exactly one correct option each, the distractors are wrong and their feedback right (L1-08: ½gt² ≈ 20 m; L2-07: two gates give one mean value).
+- Figure fy4-2/ex-tv is shared by L1-04 (slope) and L1-07 (area): different questions, not a duplicate, and its alt text gives the values.
+- Scope: everything stays within uniformly accelerated 1-D motion, (t,v) area, linearisation and polynomial fit; (t,a) at level 3 follows the plan. No vector symbols in the new tasks (the \overline rule does not apply) and no arrow figures.
+- The render of the L3-05 table and solution at 1280 px is clean. Plan +3/+3/+2 met, 8/7/5 = 20.
+- The hash was identical at the start and the end.
