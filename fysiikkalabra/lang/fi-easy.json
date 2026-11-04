@@ -348,6 +348,7 @@
     "ra_voice": "Ääni",
     "ra_female": "Nainen",
     "ra_male": "Mies",
+    "ra_better": "Parempi ääni (lataa 145 MB kerran)",
     "ra_loading": "Puheääni latautuu: {{p}} %. Lataus tehdään vain ensimmäisellä kerralla.",
     "ra_fallback": "Puheääni ei latautunut. Siksi selain lukee laitteen omalla äänellä.",
     "stage_done": "tehty",
