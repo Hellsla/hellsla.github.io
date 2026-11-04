@@ -283,6 +283,29 @@ def tex_name(s):
     return esc(" ".join(toks))
 
 
+_PLAIN_SYM = {"Sigma": "Σ", "Delta": "Δ", "alpha": "α", "beta": "β", "theta": "θ", "lambda": "λ", "mu": "μ", "rho": "ρ",
+              "eta": "η", "omega": "ω", "Omega": "Ω", "varphi": "φ", "phi": "φ", "pi": "π", "tau": "τ", "circ": "°", "cdot": "·"}
+_SUP = str.maketrans("0123456789-+", "⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺")
+
+
+def plain_label(s):
+    r"""A table heading without LaTeX, for the exported table (teacher 2026-11-03): "$\Sigma F_x$ (N)" -> "ΣFx (N)",
+    "$a_x$ (m/s$^2$)" -> "ax (m/s²)", "$f\;(10^{14}\,\text{Hz})$" -> "f (10¹⁴ Hz)". A spreadsheet shows it as written."""
+    def math(t):   # inside $…$ a space is no space; \, \; \  are
+        t = re.sub(r"\\([A-Za-z]+)", lambda m: "\\" + m.group(1) if m.group(1) in ("text", "mathrm", "operatorname", "overline", "mathbf")
+                   else _PLAIN_SYM.get(m.group(1), "\x00" if m.group(1) in ("quad", "qquad") else m.group(1)), t)
+        t = re.sub(r"\\[,;:! ]", "\x00", t)
+        t = re.sub(r"\\(text|mathrm)\{([^{}]*)\}", lambda m: "\\" + m.group(1) + "{" + m.group(2).replace(" ", "\x00") + "}", t)   # words keep their spaces
+        t = t.replace(" ", "")
+        for _ in range(3): t = re.sub(r"\\(?:text|mathrm|operatorname|overline|mathbf)\{([^{}]*)\}", r"\1", t)
+        t = re.sub(r"\^\{([^{}]*)\}|\^(.)", lambda m: (m.group(1) if m.group(1) is not None else m.group(2)).translate(_SUP), t)
+        t = re.sub(r"_\{([^{}]*)\}|_(.)", lambda m: m.group(1) if m.group(1) is not None else m.group(2), t)
+        return t.replace("{,}", ",").replace("{", "").replace("}", "").replace("\x00", " ")
+    parts = str(s).split("$")
+    t = "".join(math(x) if i % 2 else re.sub(r"_\{([^{}]*)\}|_(?=\w)", lambda m: m.group(1) or "", x) for i, x in enumerate(parts))
+    return re.sub(r"\s+", " ", t).replace("( ", "(").strip()
+
+
 def inline(md, text):
     """Markdown rendered without the outer <p>, for a choice, a legend or a prompt that sits inside another block."""
     h = md(text).strip()
@@ -424,8 +447,9 @@ def experiment_html(a, md, lid):
         return f'<span class="nobr">{tn(k)} = {esc(fi(v))}' + (f" {esc(u)}" if u else "") + "</span>"
     init = ", ".join(fmt(k, v) for k, v in a["initial"].items())
     locked = ", ".join(tn(k) for k in a["locked"]) or T("inquiry.nothing_locked")
-    cols = "".join(f"<th>{tex_name(m['label'] if isinstance(m, dict) else m)}</th>" for m in a["measure"])
-    plain = [names.get(a["vary"], a["vary"]) + (f" ({units[a['vary']]})" if units.get(a["vary"]) else "")] + [m["label"] if isinstance(m, dict) else m for m in a["measure"]]
+    labels = [m["label"] if isinstance(m, dict) else m for m in a["measure"]]
+    vary_plain = plain_label(names.get(a["vary"], a["vary"]) + (f" ({units[a['vary']]})" if units.get(a["vary"]) else ""))
+    cols = "".join(f'<th data-plain="{esc(plain_label(l))}">{tex_name(l)}</th>' for l in labels)   # data-plain: the heading in the exported table
     measure = json.dumps([m["key"] if isinstance(m, dict) else m for m in a["measure"]])
     q = f'<div class="exp-question" data-min="{a.get("min", 2)}">{question_html(a["question"], md, lid, a["id"])}</div>' if a.get("question") else ""
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
@@ -433,8 +457,10 @@ def experiment_html(a, md, lid):
             f'<div class="intro">{md(a["intro"])}</div>'
             f'<p class="exp-setup"><strong>{T("inquiry.setup")}</strong> {init}. <strong>{T("inquiry.locked")}</strong> {locked}. <strong>{T("inquiry.varied")}</strong> {tn(a["vary"])}.</p>'
             f'<div class="exp-controls"><button type="button" class="exp-start">{T("inquiry.exp_start")}</button><button type="button" class="exp-record">{T("inquiry.exp_record")}</button>'
-            f'<button type="button" class="exp-reset">{T("inquiry.exp_reset")}</button></div>'
-            f'<table class="exp-table" data-cols=\'{esc(json.dumps(plain, ensure_ascii=False))}\'><caption>{T("inquiry.exp_table")}</caption><thead><tr><th>{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
+            f'<button type="button" class="exp-reset">{T("inquiry.exp_reset")}</button>'
+            f'<button type="button" class="exp-copy" disabled>{T("inquiry.exp_copy")}</button><button type="button" class="exp-csv" disabled>{T("inquiry.exp_csv")}</button>'
+            f'<span class="exp-export-status" role="status" aria-live="polite"></span></div>'   # the table's export (teacher 2026-11-03, templates/inquiry.js part 3)
+            f'<table class="exp-table"><caption>{T("inquiry.exp_table")}</caption><thead><tr><th data-plain="{esc(vary_plain)}">{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
             f'<p class="exp-status" role="status" aria-live="polite"></p>{q}</div>')
 
 
