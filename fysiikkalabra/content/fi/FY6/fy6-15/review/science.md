@@ -1,22 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 8d554d92d33342d2
+VERDICT: PASS
+CONTENT-HASH: 8a49e138f41872b8
 
 ## Blocking
-- lesson.md:355 (also ennuste-1 feedbacks, Yleinen virhekäsitys) — B: "Sulake ei suojaa ihmistä sähköiskulta" is absolute. The earthing section, the glossary *maadoitus* and tarkistus-3 ("miten suojamaadoitus ja sulake suojaavat … ihmistä") all say the fuse disconnects an earth fault. These contradict each other — fix: "Sulake ei huomaa ihmisen kautta kulkevaa virtaa; ihmistä se suojaa vain yhdessä suojamaadoituksen kanssa."
-- lesson.md:227 — B: "suojamaadoitusjohdin aina keltavihreä" is false for old Finnish installations (other colours, PEN). Laypersons are told they may connect a luminaire — fix: "uusissa asennuksissa keltavihreä; vanhoissa värit voivat poiketa, eikä väristä päätellä jännitteettömyyttä."
-- lesson.md:475 and inquiry.json:141–169 (iho table, "Kumipohjaisin kengin … 1,15 mA") — B: rubber soles appear harmless with no condition stated, which reinforces a dangerous myth. This holds only for intact, dry soles, a dry floor and one contact to earth; a hand on a tap or an earthed appliance bypasses the shoes — fix: add one sentence saying so.
 
 ## Polish
-- lesson.md:224 — "Johto on mitoitettu sulakkeen nimellisvirralle" reverses fy6-16 lesson.md:185 ("sulakkeen koko valitaan johdon poikkipinta-alan mukaan"). Use fy6-16's direction.
-- lesson.md:327 — Class III is "enintään 50 V vaihtojännitteellä" yet fed "akusta". Add "tai 120 V tasajännite".
-- lesson.md:555 — "sulake katkaisee virran, jos kuormitus jatkuu": at 1,25 · I_s a fuse may take a long time or not trip. Say "voi laueta vasta pitkän ajan kuluttua".
-- lesson.md:260 aria-label — "Ihmisen kautta ei kulje virtaa": write "vain pieni virta, kunnes sulake katkaisee".
-- fy6-16 lesson.md:265 — "suojausluokitus, esimerkiksi IP54" conflicts with this chapter's glossary *suojausluokitus* (I–III); IP is the kotelointiluokka.
+- inquiry.json:177 (johtopaatos prompt) — "miksi sama sulake ei suojaa ihmistä?" still uses the absolute wording. The model answer qualifies it correctly, but the prompt could read "miksi sama sulake ei huomaa ihmisen kautta kulkevaa virtaa?".
+- fy6-16 lesson.md:265 (other chapter) — "suojausluokitus, esimerkiksi IP54" still conflicts with this chapter's glossary *suojausluokitus* (classes I–III). IP is the kotelointiluokka.
 
 ## Checked
-- All lesson and inquiry numbers were recomputed and match: 8,7; 13,9; 22,6; 12,6; 19,6 (9,6 + 4,3 + 5,7) A; 230, 11,5 and 1,15 mA; 131 W and its mistakes; 2300 and 3680 W; 2,56.
-- The body-current thresholds 0,5 / 10 / 30 / >50 mA (≈1 s) agree with IEC 60479-1, and the duration and path caveats are present.
-- The RCD principle, the 30 mA limit and the L–N contact it misses are correct; the figure matches.
-- Classes I–III and their symbols, and the 400 kV, 25 kV, 3 MV/m and 20 kV values are correct.
-- The step-voltage, rescue and 112 advice is correct. The Tukes register and layperson list are correct, as is the exit ticket.
-- The predictions have exactly one correct option each, and their feedback is sound. fy6-16's fuse and RCD wording otherwise agrees.
+- Round-1 blocking 1 is resolved. lesson.md:355, Yleinen virhekäsitys, the ennuste-1 feedbacks, the johtopaatos model answer and its criterion, and glossary *sulake* now say the same thing: the fuse misses the current through a person and protects a person only together with protective earthing, during an earth fault. This is consistent with tarkistus-3 and glossary *maadoitus*.
+- Round-1 blocking 2 is resolved. lesson.md:227 and glossary *maadoitus* now say "uusissa asennuksissa" and warn that a colour does not show that a conductor is dead.
+- Round-1 blocking 3 is resolved. lesson.md:477 and the iho text and its Järkevyys now give the conditions for the shoe result (intact and dry, dry floor, no other earthed contact) and say that shoes are no protection.
+- All round-1 polish is resolved: fuse sized to the wire (now agrees with fy6-16:185), the class III 120 V DC limit, the overload trip timing in the example, and the maadoitus aria-label.
+- The vaikutukset figure labels (10 mA ote ei irtoa, 30 mA hengitys vaikeutuu) now match the table, and the 0,5 / 10 / 30 / >50 mA thresholds agree with IEC 60479-1.
+- The example's 19,6 A row (4500 W : 230 V) is correct, and its rounding to 20 A is justified.
+- The hook edit drops the "vuorotellen" sentence, and this gives away nothing new.
+- The diff introduces no new numeric or physics errors. All other lesson and inquiry numbers are unchanged from round 1 and were verified there.

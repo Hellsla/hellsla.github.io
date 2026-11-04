@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 356ba65090c8758b
+CONTENT-HASH: 8418e18a0f960a0d
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json fy6-15-L1-01 — same numbers (2000 W, 230 V, 8,7 A) as the lesson's retrieval item — change to e.g. 1500 W.
-- solutions.md fy6-15-L2-01, Vastaus — "Erotus on suurista luvuista laskettu, joten se on vain suuntaa antava" muddles the answer — "Vastaus: 480 W; jääkaappi (100 W) mahtuu, leivänpaahdin (900 W) ei."
-- Exercise set has no qualitative item; vikavirtasuoja (30 mA) and suojausluokat are never practised — turn L1-03 into "ylittääkö virta vikavirtasuojan laukaisurajan 30 mA?" or add a comparison part.
-- solutions.md fy6-15-L3-03 Järkevyys — mentions the 4 m and 5 m points; 5 m (240 V) is not in the figure description — drop "ja 5,0 m".
+- Still no qualitative or threshold item on vikavirtasuoja or the protection classes — make L1-03 compare the current with the 30 mA trip limit, or add a part.
+- solutions.md fy6-15-L2-01, Vastaus (round 1, unchanged) — "Erotus on suurista luvuista laskettu, joten se on vain suuntaa antava" muddles the answer — "480 W; jääkaappi (100 W) mahtuu, leivänpaahdin (900 W) ei."
+- solutions.md fy6-15-L1-04 and L3-02 Järkevyys now repeat the same shoe warning at length — keep it once in L3-02 and shorten L1-04.
 
-## Checked
-- Levels 5/4/3 met; L1 one formula, L2 two steps or rearranged (remaining power, E = U : d, U = RI), L3 reasoning (fuse swap, series shoes, step voltage from graph).
-- None repeats the worked example; situations everyday (keittiö, kylpyhuone, työmaa).
-- ex-askel: grid 1 m / 200 V and description list the needed points; step voltage not drawn; 4 and 5 m extras irrelevant.
-- Solutions explain the principle each time and show unit conversions (kΩ, mA, kW).
-- L3-01 has a real misconception (fuse replaced by 25 A) and a physical conclusion.
-- Phone/1280 px captures: calculation lines readable, nothing clipped.
+## Checked (round 2, diff HEAD~1..HEAD)
+- L1-01 now 1500 W (6,5 A), no longer the lesson's retrieval numbers; answer, solution and estimate (7,5 A) consistent.
+- L2-03 adds "Laske laskennallinen alaraja", matching the solution's note that real clearances are metres.
+- L3-02 now states intact dry shoes and no touch of an earthed object, so the 2,3 mA result is well-posed; solutions warn that shoes are not protection.
+- L3-03 solution uses the 4 m and 6 m points that are in the figure description (the earlier 5 m point is gone) and notes the foot-to-foot path may miss the heart.
+- L1-03 Järkevyys rewritten to compare numerical values (2300 Ω vs 230 V), a clearer step than "ten times the voltage".
+- Levels 5/4/3, figure ex-askel and other tasks unchanged and fine.

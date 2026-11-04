@@ -1,22 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 8d554d92d33342d2
+CONTENT-HASH: 8a49e138f41872b8
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json ennuste-1/-2 reveal (~l.52, l.84) — both open only after the theory section; no task in Tutki tests the bird or the point of fuse versus RCD, so the predictions are settled by authority, not by evidence — add to the "iho" task a question comparing the body current to the 10 A fuse and 30 mA, and give the bird a short potential/voltage item, or call ennuste-2 a thought question.
-- inquiry.json hook (~l.19) — "kun laitteita käytetään vuorotellen, katkaisija pysyy päällä" hands over the cause of the opening question — delete the clause.
-- inquiry.json johtopaatos criterion 3 — asks to name vikavirtasuoja, which is taught only after the conclusion (the term appears in ennuste-1 only) — "tai nimeää suojan, joka reagoi mA-virtoihin".
-- lesson.md "Kehon läpi kulkeva virta" — "noin kiloohmiin" — "kilo-ohmiin".
-- Workload is at the limit: seven theory sections, six figures, legal "Turvallinen toiminta" paragraph; läpilyöntilujuus is only text and one exercise — consider trimming the legal paragraph to the exit-ticket facts.
+- glossary.json sulake — the new sentence "ihmistä se suojaa vain yhdessä suojamaadoituksen kanssa; kodin ryhmäjohdoissa ..." chains two ideas with a semicolon — split into two sentences.
+- inquiry.json ennuste-1/-2 reveal (round 1, unchanged) — both open only after the theory; no Tutki task tests the bird or fuse-versus-RCD — add a comparison of the body current with 10 A and 30 mA to the "iho" task, or call ennuste-2 a thought question.
+- Workload (round 1, unchanged) is at the limit; the new "Kengät ..." paragraph and the colour caveat add to it — keep them short.
 
-## Checked
-- Path: prerequisites (P = UI, parallel, RI^2) retrieved; opening question answered by "keittio" and "iho" and revisited in "pohdi"; slot goals (sulake, suojausluokitus, läpilyöntilujuus, wellbeing) all taught.
-- Interpret tasks use invented data labelled as such; table gives all numbers, hints progress, common-mistake feedback real (mA vs A, kΩ).
-- Every wrong prediction option repairs a real misconception (fuse protects people, bird insulated, "least resistance").
-- Safety content: sulake never replaced with larger; RCD limits (L-N touch) stated; behaviour near a fallen line given.
-- Figures (ryhma, maadoitus, vikavirtasuoja, askel, vaikutukset) legible at 390 px; descriptions complete; colours not alone.
-- Worked example staged, with sanity check; "Etsi virhe" is the classic per-device comparison.
-- Class-symbol check uses image options with descriptions; fine.
-- Finnish and number+unit cases correct.
+## Checked (round 2, diff HEAD~1..HEAD)
+- Hook no longer states the cause ("vuorotellen" removed); the opening question is still answered by "keittio" and "iho".
+- johtopaatos criterion 3 now accepts "a protection that reacts to milliamp currents, e.g. vikavirtasuoja", so it no longer needs a term taught after the conclusion.
+- Fuse text now says the wire size fixes the fuse size, and a small overload need not trip at once; the worked example's Tulos repeats this, and the result shows 19,6 A.
+- Fuse versus person is stated correctly everywhere (fuse does not notice body current, protects a person only with earthing; RCD catches mA): lesson, misconception, feedback, glossary agree.
+- "iho" task and exercise solutions state that the rubber-shoe row holds only for intact, dry shoes and no touch of an earthed object; shoes are not protection. A student can follow it and it prevents a harmful takeaway.
+- Class III limit adds 120 V DC; colour code caveat (old installations, never judge voltage by colour) is added; "kilo-ohmiin" fixed.

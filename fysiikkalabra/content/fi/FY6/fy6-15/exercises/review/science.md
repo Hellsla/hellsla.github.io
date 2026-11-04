@@ -1,19 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 356ba65090c8758b
+VERDICT: PASS
+CONTENT-HASH: 8418e18a0f960a0d
 
 ## Blocking
-- solutions.md:109 (fy6-15-L3-02) and solutions.md:39 (L1-04) — B: rubber shoes are called "tämän suojan", and 2,3 mA and 4,6 mA are presented with no condition. This holds only for intact, dry soles, a dry floor and a single contact to earth; a hand on a tap or an earthed appliance bypasses the shoes — fix: add one sentence saying so, and that shoes are no protection to rely on.
 
 ## Polish
-- solutions.md:29 (L1-03) — "Kymmenen kertaa jännite on 2300 V" compares volts with ohms. Say that the resistance is ten times the voltage's numerical value.
-- lessons/FY6/fy6-15/figures.py:366 — "(4 m; 300 V)" is called a grid intersection, but the grid is 200 V.
-- exercises.json:66 (L2-03) — only the solution says that 3,0 cm is a uniform-field lower bound and that real distances are metres. Add "laskennallinen alaraja" to the task text.
-- solutions.md L3-03 — a foot-to-foot path carries little current through the heart. Add that a fall can put the heart in the current path.
 
 ## Checked
-- All twelve answers were recomputed with my own formulas and match answers.py: 8,70 A; 2300 W; 100 mA; 4,6 mA; 51,2 W; 480 W; 22,7 W; 3,0 cm; 15 V; 4,84; 2,27 mA; 50 mA.
-- L2-03: 90 kV is the peak phase-to-earth voltage of a 110 kV line, and the solution states the uniform-field condition.
-- L3-03: the figure model V = 1200 V·m / r gives 600 V and 400 V on gridlines, and the 4–5 m difference is 60 V.
-- L3-01 reinforces the rule against fitting a larger fuse, and its (22 : 10)² ratio is correct.
-- L2-01, L2-02 and L1-05: the remainder, the cord-drop assumption (2,6 V) and the coiled-cord warning are correct.
-- Every solution is solved symbolically first, and its rounding follows the limiting datum.
+- Round-1 blocking is resolved. The L3-02 task text now states the conditions: intact, dry shoes and no other earthed contact. The L3-02 and L1-04 Järkevyys sections state the conditions and say that shoes are no protection.
+- L1-01 recomputed: 1500 W : 230 V = 6,52 A ≈ 6,5 A, matching answers.py (6.521739). The estimate 1500 W : 200 V = 7,5 A is correct, and so is the conclusion that the heater fits a 10 A group.
+- L3-03 recomputed: V = 1200 V·m / r gives 300 V − 200 V = 100 V between 4 m and 6 m. The answer is unchanged at (600 − 400) V : 4,0 kΩ = 50 mA. The heart-path and fall sentence is correct.
+- The ex-askel description no longer calls (4 m; 300 V) a grid intersection. The values the task needs (2 m and 3 m) lie on gridlines.
+- The L2-03 task text now asks for the "laskennallinen alaraja", so the uniform-field condition and the lower-bound nature are both stated. 90 kV : 3,0 MV/m = 3,0 cm.
+- The L1-03 Järkevyys now compares numerical values correctly: 2300 Ω is ten times 230 V, so I = 0,1 A.
+- The other answers are unchanged and match my recomputation from round 1.
+- The diff introduces no new errors.

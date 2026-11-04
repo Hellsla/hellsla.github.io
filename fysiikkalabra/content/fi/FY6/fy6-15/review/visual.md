@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 8d554d92d33342d2
+CONTENT-HASH: 8a49e138f41872b8
+
+Round 2, delta. Round 1 polish items fixed: kilo-ohmiin spelling, effects scale and table wording now agree, aria-label of the earthing figure updated.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] lesson.md, Kehon läpi kulkeva virta — "satoja kilo-ohmeja" and two sentences later "noin kiloohmiin" — inconsistent spelling — use "kilo-ohmiin" in both.
-- [Minor] fig 7 (maadoitus), left panel — the violet current arrow $I$ runs over the dark leg and blue arm, so the arrow and its label are hard to follow at 390 px — draw it beside the body or lighten the overlap.
-- [Minor] fig 15 (vaikutukset) vs table — the table says "30 mA hengitys vaikeutuu" but the scale labels 30 mA "vikavirtasuoja laukeaa" and 10 mA "lihakset kouristuvat" where the table says "ote ei irtoa" — use the same wording in both.
-- [Minor] Esimerkki — Sijoitus ends "19,57 A", Tulos "noin 20 A", Järkevyys "19,6 A": three precisions in one example; show 19,6 A in the substitution, then round.
-- [Minor] exercises L2-1 Kaava — the "= I_s" row stands alone under the fraction; fine at 1280 px, slightly orphaned.
+- [Minor] fig 7 (maadoitus), left panel — the violet current arrow $I$ still runs over the leg and arm (optional, unchanged).
+- [Minor] Esimerkki — Sijoitus still shows "19,57 A" before "noin 20 A" and "19,6 A" in Järkevyys (optional, unchanged).
 
 ## Checked
-- contact-1, -4, -5, -6; fig-1, 3, 5, 7, 9, 11, 13, 15 (figure captures at 390 px; even numbers are empty wrappers); intro-1280; theory-1280-1 to -4
-- example-390-1; stage-sovella-390-3; stage-exercises-390; open-exercises L1-1, L2-1, L3-1, L3-3 at 1280
-- Not opened separately: top-390, the inquiry stages ennusta/tutki/selitä (read only in the contact sheets), exit ticket and tarkista opens.
-- Source read: lesson, exit ticket, solutions; plain-quantity scan found none outside aria-labels.
+- fig-15 at 390 (labels now "10 mA ote ei irtoa", "30 mA hengitys vaikeutuu", matching the table) and theory-1280-4 (new "Kengät pienentävät…" paragraph, "kilo-ohmiin", table, scale, revised Yleinen virhekäsitys): layout intact, the figure still sits beside its paragraph.
+- Changed text read in the packet: the fuse, colour-coding and RCD sentences and the inquiry feedback are fluent, one voice, no plain-text quantities. Fig 7 caption and aria-label changes read, the drawing is unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
