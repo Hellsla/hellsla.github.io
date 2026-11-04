@@ -867,7 +867,7 @@ def build_language(lang):
         if has_path and course_inv:      # the bank on a page of its own (teacher 2026-11-03), found from the course page
             (out / local_courses.BANK_PAGE).write_text(page(T("investigation.bank_title"), local_courses.bank_page(code, c, T, course_inv) + '<script src="invfilter.js"></script>',
                                                             f'<a href="index.html">{T("site.name")}</a> › <a href="{code}.html">{code}</a> › {T("investigation.bank_title")}',
-                                                            local_courses.BANK_PAGE, T("investigation.bank_description")))
+                                                            local_courses.BANK_PAGE, T("investigation.bank_description"), main_class="reading module-page local-course"))
     if guide_built:                      # the TVT index (teacher 2026-11-03): every published guide in a learning order, for any course
         (out / local_courses.TVT_PAGE).write_text(page(T("guides.index_title"), guides.index_body(T, {f"{g}.html" for g in guide_built}, lang),
                                                        f'<a href="index.html">{T("site.name")}</a> › {T("guides.index_title")}',

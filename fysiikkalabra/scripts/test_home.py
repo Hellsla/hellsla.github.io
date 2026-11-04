@@ -328,7 +328,7 @@ with sync_playwright() as pw:
                     pg.focus("#bank-q"); pg.keyboard.type("zzzz-ei-ole")
                     hidden = pg.evaluate("[...document.querySelectorAll('.bank-item')].every(li => li.hidden) && !document.getElementById('bank-none').hidden")
                     pg.keyboard.press("Tab"); pg.keyboard.press("ArrowDown")      # topic select by keyboard: the first topic
-                    pg.click(".bank-reset"); pg.wait_for_timeout(30)
+                    pg.click("button[type=reset].bank-reset"); pg.wait_for_timeout(30)
                     back = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
                     expect(f"{lang}/{name} at {w} px: the bank filters without reloading and 'show all' brings all {total} back", hidden and back == total, (hidden, back))
                 if name == "yo-sekoitin.html" and w == 390:     # the task mixer: filters in place, a random pick of three, reset
