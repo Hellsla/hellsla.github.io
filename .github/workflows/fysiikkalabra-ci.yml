@@ -93,6 +93,8 @@ jobs:
         run: python scripts/check_i18n.py
       - name: a trial English lesson through the language check, the reviews and the build into site/en/ (nothing is published)
         run: python scripts/test_i18n.py
+      - name: a course unit's translation through translate_kit, the checks, the reviews and the build (nothing is published)
+        run: python scripts/test_unit_i18n.py
       - name: which lessons this pull request touches, and which review each needs
         if: github.event_name == 'pull_request'
         run: python scripts/reviews.py impact "origin/${{ github.base_ref }}" | tee -a "$GITHUB_STEP_SUMMARY"

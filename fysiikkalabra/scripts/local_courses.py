@@ -17,6 +17,11 @@ A course's fields (all texts in the language of the file):
   authors                                optional: the course's authors, shown under its title
   language                               optional: the language its units are written in (FY14: "en"); the course page
                                          of every language says so and links to the units in that language's folder
+  translations                           optional: the languages its units are also published in, each unit translated
+                                         into content/<lang>/units/<id>/ and reviewed there (FY9: ["en", "fi-easy"],
+                                         teacher 2026-11-04 "tunnit pitää olla en ja selkosuomi"; scripts/units.py); the
+                                         course page of such a language links each unit's own version once it is
+                                         published, the source language's page until then
   chapters                               optional: [{title, question, units: [{id, title}]}], the course's chapters and
                                          their units (scripts/units.py) in teaching order, shown as chapter cards (scripts/cardgrid.py);
                                          a unit not yet published is named as coming; a unit with "optional": true is marked ★ (optional extra material)
@@ -73,6 +78,9 @@ def validate(curriculum):
             if not p.get("why"): errs.append(f"{REGISTRY} {code}: prepare {p.get('id')} has no why")
         lang = c.get("language")
         if lang is not None and lang not in i18n.languages(): errs.append(f"{REGISTRY} {code}: language {lang!r} is not a site language")
+        tr = c.get("translations", [])
+        if tr and not (isinstance(tr, list) and lang): errs.append(f"{REGISTRY} {code}: translations is a list of languages, beside the course's language")
+        errs += [f"{REGISTRY} {code}: translation {t!r} is not a site language other than {lang!r}" for t in (tr if isinstance(tr, list) else []) if t == lang or t not in i18n.languages()]
         seen = set()
         for i, ch in enumerate(c.get("chapters", []), 1):
             if not (ch.get("title") and ch.get("question") and isinstance(ch.get("units"), list)): errs.append(f"{REGISTRY} {code}: chapter {i} needs title, question and units")
@@ -96,12 +104,12 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
            f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>'
            + (f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>' if status != "ready" else "")
            + (f'<p class="local-authors">{T("units.authors")}: {esc(", ".join(c["authors"][:-1]) + " " + T("units.and") + " " + c["authors"][-1] if len(c["authors"]) > 1 else c["authors"][0])}</p>' if c.get("authors") else "")
-           + (f'<p class="notice local-language" role="note">{T("units.language_note_" + c["language"])}</p>' if c.get("language") and c["language"] != T.lang else "")
+           + (f'<p class="notice local-language" role="note">{T("units.language_note_" + c["language"])}</p>' if c.get("language") and c["language"] != T.lang and T.lang not in c.get("translations", []) else "")
            + f'<p class="local-desc">{esc(c["description"])}</p>')
     if c.get("chapters"):                # the course's chapters and their units (scripts/units.py) as cards (scripts/cardgrid.py,
         import cardgrid, units           # teacher 2026-11-04): a section per chapter with its question, a card per unit with
-        hrefs = {u: href for u, _, href in course_units}   # its opening illustration and question; a unit still coming is dashed
-        lang_attr = f' lang="{c["language"]}"' if c.get("language") and c["language"] != T.lang else ""
+        hrefs = {u: (ul, href) for u, ul, href in course_units}   # its opening illustration and question; a unit still coming is dashed
+        lang_attr = f' lang="{c["language"]}"' if c.get("language") and c["language"] != T.lang and T.lang not in c.get("translations", []) else ""
         css = ROOT / "assets" / "units" / code.lower() / "units.css"
         if css.is_file(): out += f'<link rel="stylesheet" href="units/{code.lower()}/units.css">'
         out += (f'<h2 id="chapters">{T("units.chapters")}</h2><p class="section-lead">{T("units.chapters_lead")}</p>'
@@ -112,14 +120,17 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
                 lab = cardgrid.label(f'{i} · {esc(ch["title"])}', esc(ch["question"]), lang_attr) if j == 1 else ""
                 num = T("site.chapter_n", n=f"{i}.{j}"); title = f'<span{lang_attr}>{esc(u["title"])}</span>' if lang_attr else esc(u["title"])
                 star = (f'<span class="tag">★ {T("units.optional_mark")}</span>') if u.get("optional") else ""
-                if u["id"] in hrefs:
-                    src = units.folder(u["id"], c.get("language") or T.lang) / "unit.md"
+                if u["id"] in hrefs:             # the version linked: this language's, else the source language's (units.py)
+                    ul, href = hrefs[u["id"]]; src = units.folder(u["id"], ul) / "unit.md"
                     text = src.read_text() if src.is_file() else ""
-                    why = cardgrid.md_question(text)
-                    items += cardgrid.card(num, title, hrefs[u["id"]], f'<span{lang_attr}>{why}</span>' if lang_attr and why else why, cardgrid.hero(text), star, lab=lab)
+                    why = cardgrid.md_question(text); q_attr = f' lang="{ul}"' if ul != T.lang else ""
+                    items += cardgrid.card(num, title, href, f'<span{q_attr}>{why}</span>' if q_attr and why else why, cardgrid.hero(text), star, lab=lab)
                 else:
                     items += cardgrid.card(num, title, None, tags=star + f'<span class="tag">{T("site.lesson_coming")}</span>', lab=lab)
         out += cardgrid.grid(items, ' id="unit-cards"')
+        if T.lang in c.get("translations", []):      # where a language link from a unit this language lacks lands (build.py link_languages)
+            out += "".join(f'<p class="unavailable" id="unavailable-{u["id"]}" role="note" tabindex="-1">{T("site.unavailable_note", title=esc(u["title"]))}</p>'
+                           for ch in c["chapters"] for u in ch["units"] if hrefs.get(u["id"], (T.lang,))[0] != T.lang)
     if c.get("mixer"):                   # the YO-sekoitin: every exam-style task of the site (scripts/mixer.py)
         out += (f'<h2 id="sekoitin">{T("mixer.course_heading")}</h2><p class="section-lead">{T("mixer.course_lead")}</p>'
                 f'<ul class="lessons practice-link"><li class="live"><a href="yo-sekoitin.html">{T("mixer.title")}</a></li></ul>')

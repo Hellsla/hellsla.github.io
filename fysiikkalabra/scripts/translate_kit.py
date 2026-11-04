@@ -3,7 +3,11 @@ Usage: python scripts/translate_kit.py extract <unit> <lang> <workdir>
        python scripts/translate_kit.py apply <unit> <lang> <workdir>
        python scripts/translate_kit.py changed <unit> <lang> <workdir>
 
-<unit> is a lesson id (fy3-5) or a course's module-end tasks (FY3-sovella). extract writes <workdir>/<lang>/<unit>/:
+<unit> is a lesson id (fy3-5), a course's module-end tasks (FY3-sovella) or a course unit (fy9-koe, scripts/units.py;
+teacher 2026-11-04: FY9 in en and fi-easy; its course lists the language in local-courses.json "translations"): its
+unit.json (title, description), inquiry.json, exit-ticket.json and sovella/tasks.json, unit.md, teacher.md and
+sovella/solutions.md, translated from the unit's own language into content/<lang>/units/<id>/, the figures of both
+its figures.py files in one figures.json there. extract writes <workdir>/<lang>/<unit>/:
 
   strings.json   {"<file>|<path>": "Finnish text"}: every text field of the lesson's JSON files (check_i18n.TEXT_KEYS;
                  practice.TEXT_KEYS for tasks.json). Translate the values; the keys and everything else stay as they are.
@@ -13,9 +17,9 @@ Usage: python scripts/translate_kit.py extract <unit> <lang> <workdir>
   figures.json   {"Finnish text figures.py draws": ""}: fill in the translations.
   key_concepts.json
                  an S2 language only (check_i18n.S2_LANGS, Selkeä suomi): {"candidates": the Finnish lesson's glossary
-                 terms, "key_concepts": [{"term", "explain"}]}: choose the 3–5 concepts the chapter needs most and
+                 terms (a unit: the glossary.json terms its text uses), "key_concepts": [{"term", "explain"}]}: choose the 3–5 concepts the chapter needs most and
                  explain each in one short plain sentence (NOTES.md §12, "Luvun tärkeät käsitteet"); apply writes the
-                 list into the translation's meta.json.
+                 list into the translation's meta.json (a unit's unit.json).
 
 apply copies the Finnish JSON files with the translated strings in place, writes the Markdown and figures.json into
 content/<lang>/, draws the figures in the language (figures.py --lang, practice.figures) and prints the unit's
@@ -31,22 +35,36 @@ from check_i18n import TEXT_KEYS
 
 ROOT = courses.ROOT
 PRACTICE_KEYS = {"intro", "title", "text", "detail", "source_note"}
+UNIT_KEYS = {"title", "description", "note"}            # unit.json: the unit's name and sentence, a source's note
+
+
+def unit_id(unit):
+    """The course unit (scripts/units.py) this id names, or None for a lesson or a Sovella set."""
+    import units
+    return unit if not unit.endswith("-sovella") and units.lang_of(unit) else None
 
 
 def unit_files(unit, lang):
-    """(name, Finnish path, translation path, text keys) of a unit's text files, and its figures.py."""
+    """(name, source path, translation path, text keys) of the text files, its figures.py files and the translation's folder."""
+    if unit_id(unit):
+        import units
+        fi, tr = units.folder(unit, units.lang_of(unit)), units.folder(unit, lang)
+        keys = {"unit.json": UNIT_KEYS, "inquiry.json": TEXT_KEYS, "exit-ticket.json": TEXT_KEYS, "sovella/tasks.json": PRACTICE_KEYS}
+        out = [(n, fi / n, tr / n, keys.get(n)) for n in ("unit.json", "inquiry.json", "exit-ticket.json", "unit.md", "teacher.md",
+                                                          "sovella/tasks.json", "sovella/solutions.md") if (fi / n).is_file()]
+        return out, [units.code_folder(unit) / "figures.py", units.code_folder(unit) / "sovella/figures.py"], tr
     if unit.endswith("-sovella"):
         code = unit.split("-")[0]
         fi, tr = ROOT / "content/fi" / code / "sovella", ROOT / "content" / lang / code / "sovella"
         return [("tasks.json", fi / "tasks.json", tr / "tasks.json", PRACTICE_KEYS),
-                ("solutions.md", fi / "solutions.md", tr / "solutions.md", None)], ROOT / "lessons" / code / "sovella/figures.py", tr
+                ("solutions.md", fi / "solutions.md", tr / "solutions.md", None)], [ROOT / "lessons" / code / "sovella/figures.py"], tr
     fi = courses.find_lesson(unit); tr = ROOT / "content" / lang / fi.parent.name / fi.name
     out = []
     for n in ("meta.json",) + courses.TEXT_FILES:
         if n in courses.CODE_FILES: continue
         a = courses.lesson_file(fi, n)
         if a.exists(): out.append((n, a, courses.lesson_file(tr, n), TEXT_KEYS if n.endswith(".json") else None))
-    return out, courses.lesson_file(fi, "figures.py"), tr
+    return out, [courses.lesson_file(fi, "figures.py")], tr
 
 
 def walk(o, keys, path=(), key=None, parent=None):
@@ -80,11 +98,15 @@ def put(o, path, v):
 def pathkey(name, path): return name + "|" + ".".join(map(str, path))
 
 
-def figure_names(figpy):
-    if not figpy.is_file(): return {}
-    spec = importlib.util.spec_from_file_location("figs_" + figpy.parent.name.replace("-", "_"), figpy)
-    mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
-    return mod.FIGURES
+def figure_names(figpys):
+    """{name: function} of every figures.py given (a unit has its own and its task set's)."""
+    out = {}
+    for figpy in figpys:
+        if not figpy.is_file(): continue
+        spec = importlib.util.spec_from_file_location("figs_" + "_".join(figpy.parts[-3:-1]).replace("-", "_"), figpy)
+        mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+        out.update(mod.FIGURES)
+    return out
 
 
 def stub(text, names):
@@ -113,12 +135,17 @@ def extract(unit, lang, work):
                 prev = follow(fi, old, path) if old is not None else None
                 strings[k] = prev if isinstance(prev, str) else s
         else:
+            (out / name).parent.mkdir(parents=True, exist_ok=True)
             (out / name).write_text(stub((b if b.exists() else a).read_text(), figs))
     (out / "strings.json").write_text(json.dumps(strings, ensure_ascii=False, indent=1) + "\n")
     (out / "source.json").write_text(json.dumps(source, ensure_ascii=False, indent=1) + "\n")
     if lang in check_i18n.S2_LANGS and not unit.endswith("-sovella"):   # "Luvun tärkeät käsitteet" (NOTES.md §12)
         fi_meta = json.loads(files[0][1].read_text()); tr_meta = json.loads(files[0][2].read_text()) if files[0][2].exists() else {}
-        (out / "key_concepts.json").write_text(json.dumps({"candidates": fi_meta.get("glossary", []), "key_concepts": tr_meta.get("key_concepts", [])},
+        cand = fi_meta.get("glossary", [])
+        if unit_id(unit):                                # a unit has no glossary list: the glossary.json terms its text uses
+            text = " ".join(a.read_text() for n, a, _, k in files if k is None).lower()
+            cand = sorted(t for t in check_i18n.glossary_terms() if re.search(r"(?<![a-zäö])" + re.escape(t), text))
+        (out / "key_concepts.json").write_text(json.dumps({"candidates": cand, "key_concepts": tr_meta.get("key_concepts", [])},
                                                           ensure_ascii=False, indent=1) + "\n")
     have = json.loads((tr / "figures.json").read_text()) if (tr / "figures.json").is_file() else {}
     ft = figure_texts(figs, lang)
@@ -138,20 +165,26 @@ def apply(unit, lang, work):
                 k = pathkey(name, path)
                 if k in strings: put(new, path, strings[k])
             kc = src / "key_concepts.json"
-            if name == "meta.json" and lang in check_i18n.S2_LANGS and kc.is_file(): new["key_concepts"] = json.loads(kc.read_text())["key_concepts"]
+            if name in ("meta.json", "unit.json") and lang in check_i18n.S2_LANGS and kc.is_file(): new["key_concepts"] = json.loads(kc.read_text())["key_concepts"]
             b.write_text(json.dumps(new, ensure_ascii=False, indent=2) + "\n")
         else:
             b.write_text((src / name).read_text())
     if (src / "figures.json").is_file():
         figs = {k: v for k, v in json.loads((src / "figures.json").read_text()).items() if v}
         (tr / "figures.json").write_text(json.dumps(figs, ensure_ascii=False, indent=1) + "\n")
-    if unit.endswith("-sovella"):
+    if unit_id(unit):                                   # a course unit: its figures and task set in the language, the unit's checks
+        import practice, units
+        units.figures(unit, lang)
+        if units.has_tasks(unit, lang): practice.figures(units.task_key(unit), lang)
+        errs = []; check_i18n.check_unit(unit, lang, errs)
+        errs += [e for e in units.check(unit, lang) if e not in errs]
+    elif unit.endswith("-sovella"):
         code = unit.split("-")[0]
         import practice
         practice.figures(code, lang)
         errs = practice.check(code, lang)
     else:
-        if figpy.is_file(): subprocess.run([sys.executable, str(ROOT / "scripts/figures.py"), unit, "--lang", lang])
+        if figpy[0].is_file(): subprocess.run([sys.executable, str(ROOT / "scripts/figures.py"), unit, "--lang", lang])
         errs = []; check_i18n.check_lesson(courses.find_lesson(unit), tr, lang, errs)
         import inquiry
         if (tr / "inquiry.json").is_file():                # the build's own checks of the page, in the language
