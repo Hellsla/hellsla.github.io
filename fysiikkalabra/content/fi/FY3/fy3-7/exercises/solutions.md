@@ -158,7 +158,7 @@ s &= \dfrac{600\,\text{W} \cdot 139\,\text{s}}{0{,}250\,\text{kg}} \\
 &= 333\,600\,\tfrac{\text{J}}{\text{kg}}
 \end{aligned}$$
 
-**Vastaus:** $334\,\tfrac{\text{kJ}}{\text{kg}}$. Aika luetaan vain noin sekunnin tarkkuudella, joten hyväksytään $\pm 8\,\%$, ja kolme merkitsevää numeroa annetaan massan ja tehon mukaan. Jos tasanteeksi lukee suoraan rivit $20\,\text{s}$ ja $150\,\text{s}$, aika on $130\,\text{s}$ ja tulos $312\,\tfrac{\text{kJ}}{\text{kg}}$, liian pieni, koska sulaminen alkoi jo ennen riviä $20\,\text{s}$ ja päättyi vasta rivin $150\,\text{s}$ jälkeen.
+**Vastaus:** $334\,\tfrac{\text{kJ}}{\text{kg}}$. Aika luetaan vain noin sekunnin tarkkuudella, joten hyväksytään $\pm 5\,\%$, ja kolme merkitsevää numeroa annetaan massan ja tehon mukaan. Jos tasanteeksi lukee suoraan rivit $20\,\text{s}$ ja $150\,\text{s}$, aika on $130\,\text{s}$ ja tulos $312\,\tfrac{\text{kJ}}{\text{kg}}$, liian pieni, koska sulaminen alkoi jo ennen riviä $20\,\text{s}$ ja päättyi vasta rivin $150\,\text{s}$ jälkeen.
 **Järkevyys:** Tulos vastaa jään tunnettua ominaissulamislämpöä $334\,\tfrac{\text{kJ}}{\text{kg}}$. Jään lämmitys $-20\,{}^\circ\text{C}$:sta vei noin $18\,\text{s}$ eli $600\,\text{W} \cdot 18\,\text{s} = 10\,800\,\text{J}$. Tarkistus: $c m \Delta T = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}250\,\text{kg} \cdot 20\,\text{K} = 10\,500\,\text{J}$, joten mittaus ja laskenta sopivat yhteen. Sulaminen vei noin $83\,\text{kJ}$, noin kahdeksan kertaa enemmän energiaa kuin jään lämmittäminen.
 
 ## fy3-7-L2-06

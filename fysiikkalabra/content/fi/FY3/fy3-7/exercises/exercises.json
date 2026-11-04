@@ -153,7 +153,7 @@
       "text": "Oppilas lämmittää $0{,}250\\,\\text{kg}$ jäätä $600\\,\\text{W}$:n uppokuumentimella ja mittaa lämpötilan $T$ ajan $t$ funktiona (taulukko, esimerkkiaineisto). Oleta, että kaikki kuumentimen energia siirtyy jäähän ja siitä syntyvään veteen.\n\na) Selitä taulukon avulla, mitä aineelle tapahtuu eri vaiheissa ja miksi lämpötila ei nouse noin hetkien $20\\,\\text{s}$ ja $150\\,\\text{s}$ välillä.\n\nb) Määritä sulamiseen kuluva aika taulukosta ja laske sen avulla jään ominaissulamislämpö. Taulukon rivit $20\\,\\text{s}$ ja $150\\,\\text{s}$ ovat jo tasanteen sisällä: arvioi nousujen kulmakertoimista, milloin lämpötila tarkalleen saavuttaa $0\\,{}^\\circ\\text{C}$ ja milloin se alkaa taas nousta.\n\nKirjoita vastauslaatikkoon kohdan b) ominaissulamislämpö yksikössä $\\text{kJ/kg}$.",
       "answer": 334,
       "unit": "kJ/kg",
-      "tolerance": 0.08,
+      "tolerance": 0.05,
       "data": {
         "caption": "Jään lämmitys $600\\,\\text{W}$:n teholla (esimerkkiaineisto)",
         "columns": [
