@@ -146,7 +146,7 @@
 
 ## fy6-16-L2-05
 **Annettu:** talon teho tunneittain taulukosta, pääsulakkeet $3 \cdot 25\,\text{A}$, $U = 230\,\text{V}$, kolmivaiheinen asema
-**Kysytty:** a) huipputeho ja sen aika, b) aseman suurin latausteho $P_\text{a}$ huipun aikana kilowatteina
+**Kysytty:** a) huipputeho ja sen aika, b) aseman suurin latausteho $P_\text{a}$ huipun aikana kilowatteina, c) milloin $11\,\text{kW}$ sallitaan
 **Periaate:** Pääsulake rajoittaa jokaisen vaihejohtimen virtaa, ja kuormat jakautuvat tasan vaiheille, joten koko talon teho voi olla enintään $3UI_\text{p}$. Talon ja aseman tehot lasketaan yhteen, ja asemalle jää se, mitä talo ei käytä.
 **Kuvaajan lukeminen:** Taulukosta suurin teho on $6{,}8\,\text{kW}$ kello $19\text{–}20$.
 **Kaava:** $P_\text{max} = 3UI_\text{p}$ ja $P_\text{talo} + P_\text{a} \le P_\text{max}$, joten $P_\text{a} = 3UI_\text{p} - P_\text{talo}$, missä $I_\text{p} = 25\,\text{A}$
@@ -156,7 +156,7 @@
 
 b) Aseman teho saa olla huipun aikana enintään $10{,}5\,\text{kW}$.
 
-c) Asema saa käyttää täyttä tehoa $11\,\text{kW}$, kun talon teho on enintään $17{,}25\,\text{kW} - 11\,\text{kW} = 6{,}25\,\text{kW}$. Taulukossa vain kello $19\text{–}20$ ylittää tämän ($6{,}8\,\text{kW}$), joten muina tunteina kuormanhallintaa ei tarvita, mutta kello $19\text{–}20$ asemaa pitää rajoittaa.
+c) Asema saa käyttää täyttä tehoa $11\,\text{kW}$, kun talon teho on enintään $17{,}25\,\text{kW} - 11\,\text{kW} = 6{,}25\,\text{kW}$. Taulukossa vain kello $19\text{–}20$ ylittää tämän ($6{,}8\,\text{kW}$), joten muina tunteina kuormanhallintaa ei tarvita tämän oletuksen mukaan (talon teho pysyy tunnin ajan taulukon arvossa), mutta kello $19\text{–}20$ asemaa pitää rajoittaa. Todellisuudessa tunnin sisäiset huiput voivat vaatia kuormanhallintaa.
 **Järkevyys:** Virta huipun aikana: talo $6800\,\text{W} : 690\,\text{V} \approx 9{,}9\,\text{A}$ ja asema $10\,450\,\text{W} : 690\,\text{V} \approx 15{,}1\,\text{A}$ jokaisessa vaiheessa, yhteensä $25{,}0\,\text{A}$ eli täsmälleen pääsulakkeen raja. Tulos on pienempi kuin aseman $11\,\text{kW}$, kuten huipun aikana pitääkin.
 
 ## fy6-16-L2-06
@@ -180,7 +180,7 @@ b) Oikea latausaika on $5{,}3\,\text{h}$.
 **Kuvaajan lukeminen:** Pisteet yhdistetään suorilla, ja jokaisen puolen tunnin välin pinta-ala on välin päätepisteiden tehojen keskiarvo kertaa $\Delta t = 0{,}5\,\text{h}$. Ensimmäinen ja viimeinen teho ovat $11{,}0\,\text{kW}$ ja $1{,}4\,\text{kW}$, ja välissä ovat $11{,}0$, $10{,}8$, $8{,}7$, $5{,}9$ ja $3{,}1\,\text{kW}$.
 **Kaava:** väli kerrallaan $W_i = \Delta t \cdot \dfrac{P_i + P_{i+1}}{2}$, kaikkien välien summa $W_\text{verkko} = \sum W_i$, ja $P_\text{ka} = \dfrac{W_\text{verkko}}{t}$
 **Muunnokset:** Ei tarvita: kilowatit kertaa tunnit antaa kilowattitunnit.
-**Sijoitus:** Välitehojen summa on $11{,}0 + 10{,}8 + 8{,}7 + 5{,}9 + 3{,}1 = 39{,}5$ kilowattia ja päätepisteiden keskiarvo $(11{,}0 + 1{,}4) : 2 = 6{,}2$ kilowattia, joten $W_\text{verkko} = 0{,}5\,\text{h} \cdot (6{,}2\,\text{kW} + 39{,}5\,\text{kW}) = 22{,}85\,\text{kWh}$ ja $P_\text{ka} = \dfrac{22{,}85\,\text{kWh}}{3{,}0\,\text{h}} = 7{,}617\,\text{kW}$
+**Sijoitus:** Välitehojen summa on $11{,}0 + 10{,}8 + 8{,}7 + 5{,}9 + 3{,}1 = 39{,}5\,\text{kW}$ ja päätepisteiden keskiarvo $(11{,}0 + 1{,}4) : 2 = 6{,}2\,\text{kW}$, joten $W_\text{verkko} = 0{,}5\,\text{h} \cdot (6{,}2\,\text{kW} + 39{,}5\,\text{kW}) = 22{,}85\,\text{kWh}$ ja $P_\text{ka} = \dfrac{22{,}85\,\text{kWh}}{3{,}0\,\text{h}} = 7{,}617\,\text{kW}$
 **Vastaus:** Vastauslaatikkoon $23\,\text{kWh}$, kaksi merkitsevää numeroa kuten tehoissa. a) Verkosta otettu energia on $23\,\text{kWh}$.
 
 b) Keskiteho on $7{,}6\,\text{kW}$.
@@ -193,7 +193,7 @@ b) Keskiteho on $7{,}6\,\text{kW}$.
 **Kaava:** $W_\text{verkko} = \dfrac{s}{100\,\text{km}} \cdot \dfrac{w}{\eta}$, $K_\text{s} = a W_\text{verkko}$, $K_\text{b} = \dfrac{s}{100\,\text{km}} \cdot v b$ ja $\Delta K = K_\text{b} - K_\text{s}$, missä $w = 16{,}0\,\text{kWh}$ ja $v = 6{,}50\,\textsf{l}$
 **Muunnokset:** $a_\text{koti} = 15\,\text{snt/kWh} = 0{,}15\,\text{€/kWh}$ ja $\eta = 0{,}900$
 **Sijoitus:** Kuukausimatkojen summa on $s = 14\,640\,\text{km}$, joten $s : 100\,\text{km} = 146{,}4$. Sähköauto: $W_\text{verkko} = 146{,}4 \cdot 16{,}0\,\text{kWh} : 0{,}900 = 2602{,}7\,\text{kWh}$ ja $K_\text{s} = 0{,}15\,\text{€/kWh} \cdot 2602{,}7\,\text{kWh} = 390{,}4\,\text{€}$. Bensiiniauto: $K_\text{b} = 146{,}4 \cdot 6{,}50\,\textsf{l} \cdot 1{,}85\,\text{€/}\textsf{l} = 1760{,}5\,\text{€}$. Erotus on $\Delta K = 1760{,}5\,\text{€} - 390{,}4\,\text{€} = 1370{,}1\,\text{€}$.
-**Vastaus:** Vastauslaatikkoon $1370\,\text{€}$, kolme merkitsevää numeroa kuten kulutuksissa ja bensiinin hinnassa. a) Vuosittainen ajomatka on $14\,640\,\text{km}$.
+**Vastaus:** Vastauslaatikkoon $1370\,\text{€}$ eli pyöristettynä kymmeneen euroon, koska sähkön kustannus $390\,\text{€}$ on kahden merkitsevän numeron tarkkuudella. a) Vuosittainen ajomatka on $14\,640\,\text{km}$.
 
 b) Bensiiniauto maksaa vuodessa noin $1370\,\text{€}$ enemmän.
 

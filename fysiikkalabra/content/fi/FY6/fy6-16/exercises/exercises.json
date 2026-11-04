@@ -58,7 +58,7 @@
         {
           "text": "Kilowatti kertoo latausnopeuden eli tehon, ja kilowattitunti akkuun mahtuvan energian, koska energia on teho kertaa aika.",
           "correct": true,
-          "feedback": "Oikein: teho $P$ kertoo, kuinka nopeasti energiaa siirtyy, ja energia on $W = Pt$. Siksi $11\\,\\text{kW}$:n asema siirtää tunnissa $11\\,\\text{kWh}$, ja $60\\,\\text{kWh}$:n akun täyttö vie tästä kuluvan ajan."
+          "feedback": "Oikein: teho $P$ kertoo, kuinka nopeasti energiaa siirtyy, ja energia on $W = Pt$. Siksi $11\\,\\text{kW}$:n asema siirtää tunnissa $11\\,\\text{kWh}$, ja tyhjän $60\\,\\text{kWh}$:n akun täyttö vie ilman häviöitä noin $60\\,\\text{kWh} : 11\\,\\text{kW} \\approx 5{,}5\\,\\text{h}$."
         },
         {
           "text": "Kilowatti ja kilowattitunti ovat sama asia, koska kummassakin on kilowatti ja ne kertovat saman sähkön määrän.",
@@ -124,7 +124,7 @@
     {
       "id": "fy6-16-L2-05",
       "level": 2,
-      "text": "Taulukossa on omakotitalon sähköteho tunneittain illalla ennen latausasemaa (esimerkkiaineisto).\n\nTalon pääsulakkeet ovat $3 \\cdot 25\\,\\text{A}$, ja talon kuormat jakautuvat tasan kolmelle vaiheelle. Perhe suunnittelee kolmivaiheista latausasemaa, joka ottaa jokaisesta vaihejohtimesta yhtä suuren virran. Vaihejännite on $230\\,\\text{V}$.\n\na) Mikä on talon huipputeho ja mihin aikaan se esiintyy?\n\nb) Kuinka suuri latausteho asemalla saa olla huipputehon aikana, jotta pääsulakkeiden virta ei ylity?\n\nc) Perustele taulukon avulla, milloin asema voi käyttää $11\\,\\text{kW}$:n tehoa ilman kuormanhallintaa.\n\nVastauskenttään tulee kohdan b) tulos kilowatteina.",
+      "text": "Taulukossa on omakotitalon sähköteho tunneittain illalla ennen latausasemaa (esimerkkiaineisto).\n\nTalon pääsulakkeet ovat $3 \\cdot 25\\,\\text{A}$, ja talon kuormat jakautuvat tasan kolmelle vaiheelle. Perhe suunnittelee kolmivaiheista latausasemaa, joka ottaa jokaisesta vaihejohtimesta yhtä suuren virran. Vaihejännite on $230\\,\\text{V}$. Oletetaan, että talon teho pysyy kunkin tunnin ajan taulukon arvossa.\n\na) Mikä on talon huipputeho ja mihin aikaan se esiintyy?\n\nb) Kuinka suuri latausteho asemalla saa olla huipputehon aikana, jotta pääsulakkeiden virta ei ylity?\n\nc) Perustele taulukon avulla, milloin asema voi käyttää $11\\,\\text{kW}$:n tehoa ilman kuormanhallintaa.\n\nVastauskenttään tulee kohdan b) tulos kilowatteina.",
       "kind": [
         "data",
         "reasoning"
@@ -176,7 +176,7 @@
     {
       "id": "fy6-16-L2-07",
       "level": 2,
-      "text": "Latausaseman verkosta ottama teho mitattiin yhden latauksen aikana puolen tunnin välein. Mittaus on taulukossa (esimerkkiaineisto). Teho pysyy aluksi lähes vakiona ja pienenee, kun akku täyttyy.\n\na) Piirrä $(t, P)$-kuvaaja ja laske verkosta otettu energia kuvaajan alle jäävänä pinta-alana. Käytä pisteitä yhdistäviä suoria, jolloin pinta-ala jakautuu puolen tunnin mittaisiin puolisuunnikkaisiin.\n\nb) Laske latauksen keskiteho.\n\nVastauskenttään tulee kohdan a) tulos kilowattitunteina.",
+      "text": "Latausaseman verkosta ottama teho mitattiin yhden latauksen aikana puolen tunnin välein. Mittaus on taulukossa (esimerkkiaineisto). Teho pysyy aluksi lähes vakiona ja pienenee, kun akku täyttyy.\n\na) Piirrä $(t, P)$-kuvaaja ja laske verkosta otettu energia mittausjakson $0\\text{–}3{,}0\\,\\text{h}$ aikana kuvaajan alle jäävänä pinta-alana. Käytä pisteitä yhdistäviä suoria, jolloin pinta-ala jakautuu puolen tunnin mittaisiin puolisuunnikkaisiin.\n\nb) Laske keskiteho tämän mittausjakson ajalta.\n\nVastauskenttään tulee kohdan a) tulos kilowattitunteina.",
       "kind": [
         "data",
         "graph"

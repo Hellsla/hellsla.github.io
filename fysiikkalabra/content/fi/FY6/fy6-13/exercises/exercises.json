@@ -53,11 +53,6 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Se pysyy samana, koska kapasitanssi määräytyy kondensaattorin rakenteesta.",
-          "correct": true,
-          "feedback": "Oikein: kapasitanssi $C = \\tfrac{Q}{U}$ riippuu levyjen pinta-alasta, niiden etäisyydestä ja eristeestä. Kun jännite kaksinkertaistuu, myös varaus kaksinkertaistuu, ja suhde pysyy samana."
-        },
-        {
           "text": "Se kaksinkertaistuu, koska varaus kasvaa jännitteen mukana samassa suhteessa.",
           "feedback": "Varaus kasvaa todella samassa suhteessa kuin jännite, mutta kapasitanssi on näiden suhde $\\tfrac{Q}{U}$, joten se ei muutu."
         },
@@ -68,6 +63,11 @@
         {
           "text": "Se nelinkertaistuu, koska kondensaattorin energia riippuu jännitteen neliöstä.",
           "feedback": "Energia $W = \\tfrac{1}{2} C U^2$ nelinkertaistuu, kun jännite kaksinkertaistuu, mutta juuri siksi $C$ on kaavassa vakio. Kapasitanssi itse ei muutu."
+        },
+        {
+          "text": "Se pysyy samana, koska kapasitanssi määräytyy kondensaattorin rakenteesta.",
+          "correct": true,
+          "feedback": "Oikein: kapasitanssi $C = \\tfrac{Q}{U}$ riippuu levyjen pinta-alasta, niiden etäisyydestä ja eristeestä. Kun jännite kaksinkertaistuu, myös varaus kaksinkertaistuu, ja suhde pysyy samana."
         }
       ]
     },
@@ -83,17 +83,17 @@
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Se pienenee, koska varaus pysyy samana ja kapasitanssi kasvaa.",
-          "correct": true,
-          "feedback": "Oikein: irrotetun kondensaattorin varaus ei voi muuttua, ja eriste kasvattaa kapasitanssia. Koska $U = \\tfrac{Q}{C}$, jännite pienenee."
-        },
-        {
           "text": "Se kasvaa, koska kapasitanssi kasvaa ja varaus pysyy samana.",
           "feedback": "Varaus pysyy samana oikein, mutta jännite on $U = \\tfrac{Q}{C}$. Kun $C$ kasvaa ja $Q$ pysyy samana, jännite pienenee eikä kasva."
         },
         {
           "text": "Se pysyy samana, koska jännite määräytyy lähteestä, jolla kondensaattori ladattiin.",
           "feedback": "Lähde on irrotettu, joten se ei enää pidä jännitettä vakiona. Jännite seuraa varauksesta ja kapasitanssista, ja kapasitanssi muuttui."
+        },
+        {
+          "text": "Se pienenee, koska varaus pysyy samana ja kapasitanssi kasvaa.",
+          "correct": true,
+          "feedback": "Oikein: irrotetun kondensaattorin varaus ei voi muuttua, ja eriste kasvattaa kapasitanssia. Koska $U = \\tfrac{Q}{C}$, jännite pienenee."
         },
         {
           "text": "Se pienenee, koska eriste päästää varausta levyltä toiselle.",
@@ -201,22 +201,22 @@
         "concept",
         "data"
       ],
-      "answer": "Välillä $0\\text{–}1\\,\\text{s}$, koska jännite kasvaa silloin nopeimmin ja varaus siirtyy nopeimmin.",
+      "answer": "Välillä $0\\text{–}1\\,\\text{s}$, koska jännite kasvaa silloin nopeimmin.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Välillä $0\\text{–}1\\,\\text{s}$, koska jännite kasvaa silloin nopeimmin ja varaus siirtyy nopeimmin.",
-          "correct": true,
-          "feedback": "Oikein: virta on varauksen muutosnopeus, ja koska $Q = CU$, se on suoraan verrannollinen jännitteen kasvunopeuteen. Kuvaaja on jyrkimmillään alussa, jolloin virta on suurin."
-        },
-        {
-          "text": "Välillä $2\\text{–}3\\,\\text{s}$, koska jännite on silloin noin puolet lähteen jännitteestä.",
-          "feedback": "Jännitteen suuruus ei kerro virrasta, vaan sen muutosnopeus. Tällä välillä jännite kasvaa vain $1{,}4\\,\\text{V}$, kun se alussa kasvoi $3{,}5\\,\\text{V}$ yhdessä sekunnissa."
+          "text": "Välillä $1\\text{–}2\\,\\text{s}$, koska jännite on silloin noin puolet lähteen jännitteestä.",
+          "feedback": "Jännitteen suuruus ei kerro virrasta, vaan sen muutosnopeus. Tällä välillä jännite kasvaa vain $2{,}0\\,\\text{V}$, kun se alussa kasvoi $3{,}5\\,\\text{V}$ yhdessä sekunnissa."
         },
         {
           "text": "Välillä $4\\text{–}5\\,\\text{s}$, koska virta kasvaa, kun kondensaattoriin on kertynyt enemmän varausta.",
           "feedback": "Kertynyt varaus pienentää virtaa: levyjen välinen jännite vastustaa lähdettä, ja latautuminen hidastuu. Jännite kasvaa tällä välillä vain $0{,}5\\,\\text{V}$."
+        },
+        {
+          "text": "Välillä $0\\text{–}1\\,\\text{s}$, koska jännite kasvaa silloin nopeimmin.",
+          "correct": true,
+          "feedback": "Oikein: virta on varauksen muutosnopeus, ja koska $Q = CU$, se on suoraan verrannollinen jännitteen kasvunopeuteen. Kuvaaja on jyrkimmillään alussa, jolloin virta on suurin."
         },
         {
           "text": "Välillä $5\\text{–}6\\,\\text{s}$, koska jännite on silloin suurimmillaan ja varaus suurimmillaan.",

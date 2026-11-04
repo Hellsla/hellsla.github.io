@@ -44,30 +44,30 @@
     {
       "id": "fy6-14-L1-06",
       "level": 1,
-      "text": "Pariston plusnapa on kytketty diodin kautta vastukseen, ja vastus on kytketty pariston miinusnapaan. Diodin symbolin kolmio osoittaa kohti vastusta eli pariston miinusnapaa.\n\nMitä piirissä tapahtuu?",
+      "text": "Pariston jännite on $9{,}0\\,\\text{V}$. Pariston plusnapa on kytketty diodin kautta vastukseen, ja vastus on kytketty pariston miinusnapaan. Diodin symbolin kolmio osoittaa kohti vastusta.\n\nMitä piirissä tapahtuu?",
       "kind": [
         "concept"
       ],
-      "answer": "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on vain pieni osa pariston jännitteestä.",
+      "answer": "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on vain pieni jännite.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
-        {
-          "text": "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on vain pieni osa pariston jännitteestä.",
-          "correct": true,
-          "feedback": "Oikein: virran suunta plusnavasta miinusnapaan on sama kuin kolmion osoittama suunta, joten diodi päästää virran läpi. Diodin jännite on pieni, ja suurin osa pariston jännitteestä on vastuksen yli."
-        },
         {
           "text": "Diodi on estosuunnassa, joten virta ei kulje ja diodin yli on koko pariston jännite.",
           "feedback": "Näin tapahtuisi, jos pariston navat olisivat toisin päin. Kun kolmio osoittaa virran kulkusuuntaan eli kohti miinusnapaa, diodi on päästösuunnassa."
         },
         {
-          "text": "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on koko pariston jännite.",
-          "feedback": "Päästösuunnassa diodin jännite on pieni. Diodin kanssa sarjassa oleva vastus ottaa suurimman osan pariston jännitteestä Kirchhoffin jännitelain mukaan."
+          "text": "Diodi on estosuunnassa, joten virta kulkee takaisin ja vastuksen yli on jännite.",
+          "feedback": "Diodi ei päästä virtaa vastakkaiseen suuntaan. Tässä kytkennässä diodi on päästösuunnassa, ja virta kulkee plusnavasta miinusnapaan."
         },
         {
-          "text": "Diodi on estosuunnassa, joten virta kulkee vastakkaiseen suuntaan ja vastuksen yli on jännite.",
-          "feedback": "Diodi ei päästä virtaa vastakkaiseen suuntaan. Tässä kytkennässä diodi on päästösuunnassa, ja virta kulkee plusnavasta miinusnapaan."
+          "text": "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on vain pieni jännite.",
+          "correct": true,
+          "feedback": "Oikein: virran suunta plusnavasta miinusnapaan on sama kuin kolmion osoittama suunta, joten diodi päästää virran läpi. Diodin jännite on pieni, ja suurin osa pariston jännitteestä on vastuksen yli."
+        },
+        {
+          "text": "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on koko pariston jännite.",
+          "feedback": "Päästösuunnassa diodin jännite on pieni. Diodin kanssa sarjassa oleva vastus ottaa suurimman osan pariston jännitteestä Kirchhoffin jännitelain mukaan."
         }
       ]
     },
@@ -78,17 +78,12 @@
       "kind": [
         "concept"
       ],
-      "answer": "Pienikin jännitteen kasvu kasvattaa LEDin virtaa paljon, joten vastus ottaa osan jännitteestä ja pitää virran sopivana.",
+      "answer": "LEDin virta kasvaa jyrkästi jännitteen kasvaessa, joten vastus ottaa ylimääräisen jännitteen.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Pienikin jännitteen kasvu kasvattaa LEDin virtaa paljon, joten vastus ottaa osan jännitteestä ja pitää virran sopivana.",
-          "correct": true,
-          "feedback": "Oikein: LEDin jännite pysyy lähes samana, vaikka virta muuttuu paljon, joten ylimääräinen jännite jää vastukselle. Vastuksen avulla virta saadaan sopivaksi, ja LED ei pala loppuun."
-        },
-        {
-          "text": "LEDin resistanssi on aina niin suuri, että vastus tarvitaan lisäämään virtaa ja saamaan LED palamaan.",
+          "text": "LEDin resistanssi on niin suuri, että vastus tarvitaan lisäämään virtaa ja saamaan LED palamaan.",
           "feedback": "LED ei ole suuriresistanssinen komponentti päästösuunnassa. Ilman etuvastusta virta kasvaisi liian suureksi, ei liian pieneksi."
         },
         {
@@ -98,6 +93,11 @@
         {
           "text": "Vastus estää virran kulun LEDin läpi väärään suuntaan, kun paristo on kytketty oikein päin.",
           "feedback": "Väärään suuntaan virta ei kulje LEDin läpi muutenkaan, koska LED on silloin estosuunnassa. Vastus rajoittaa virran suuruutta päästösuunnassa."
+        },
+        {
+          "text": "LEDin virta kasvaa jyrkästi jännitteen kasvaessa, joten vastus ottaa ylimääräisen jännitteen.",
+          "correct": true,
+          "feedback": "Oikein: LEDin jännite pysyy lähes samana, vaikka virta muuttuu paljon, joten ylimääräinen jännite jää vastukselle. Vastuksen avulla virta saadaan sopivaksi, ja LED ei pala loppuun."
         }
       ]
     },
@@ -105,9 +105,12 @@
       "id": "fy6-14-L1-08",
       "level": 1,
       "text": "Laskimen aurinkokennon pinta-ala on $12\\,\\text{cm}^2$. Kirkkaassa auringonvalossa valon voimakkuus kennolla on $1000\\,\\text{W/m}^2$. Tällöin kennon jännite on $2{,}0\\,\\text{V}$ ja virta $100\\,\\text{mA}$. Mikä on kennon hyötysuhde? Vastaa prosentteina.",
+      "kind": [
+        "reasoning"
+      ],
       "answer": 16.666667,
       "unit": "%",
-      "tolerance": 0.02
+      "tolerance": 0.03
     }
   ],
   "level2": [
@@ -360,7 +363,7 @@
     {
       "id": "fy6-14-L3-05",
       "level": 3,
-      "text": "Vihreän LEDin ominaiskäyrä mitattiin pisteittäin (esimerkkiaineisto). LED kytketään $4{,}5\\,\\text{V}$:n paristoon $180\\,\\Omega$:n etuvastuksen kautta. LEDin suurin sallittu pysyvä virta on $25\\,\\text{mA}$.\n\na) Arvioi taulukosta LEDin kynnysjännite eli jännite, jolla virta ylittää $1\\,\\text{mA}$.\n\nb) Määritä LEDin työpiste eli virta ja jännite piirissä. Ratkaise ensin, millä jännitteellä vastuksen kautta tuleva virta on yhtä suuri kuin LEDin virta, esimerkiksi laskemalla vastuksen kautta tuleva virta taulukon jännitteillä tai piirtämällä kuormasuora ominaiskäyrän kanssa samaan kuvaajaan. Vastaa virta milliampeereina.\n\nc) Kuinka paljon LEDin jännite muuttuu, kun virta kasvaa taulukossa arvosta $9{,}8\\,\\text{mA}$ arvoon $41\\,\\text{mA}$? Miksi LEDin jännitteenä voidaan käyttää etuvastusta mitoitettaessa vakioarvoa?\n\nKohdan b tulos kirjoitetaan vastauslaatikkoon.",
+      "text": "Vihreän LEDin ominaiskäyrä mitattiin pisteittäin (esimerkkiaineisto). LED kytketään $4{,}5\\,\\text{V}$:n paristoon $180\\,\\Omega$:n etuvastuksen kautta. LEDin suurin sallittu pysyvä virta on $25\\,\\text{mA}$.\n\na) Arvioi LEDin kynnysjännite jatkamalla ominaiskäyrän jyrkkää suoraa osaa ($2{,}05$–$2{,}10\\,\\text{V}$) jänniteakselille.\n\nb) Määritä LEDin työpiste eli virta ja jännite piirissä. Vastaa virta milliampeereina.\n\nc) Kuinka paljon LEDin jännite muuttuu, kun virta kasvaa taulukossa arvosta $9{,}8\\,\\text{mA}$ arvoon $41\\,\\text{mA}$? Miksi LEDin jännitteenä voidaan käyttää etuvastusta mitoitettaessa vakioarvoa?\n\nKohdan b tulos kirjoitetaan vastauslaatikkoon.",
       "kind": [
         "data",
         "graph",

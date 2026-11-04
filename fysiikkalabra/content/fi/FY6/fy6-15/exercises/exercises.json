@@ -47,7 +47,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Se ohjaa vikavirran johdinta pitkin maahan, jolloin sulake tai vikavirtasuoja katkaisee virran.",
+      "answer": "Se ohjaa vikavirran maahan, jolloin sulake tai vikavirtasuoja katkaisee virran.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -56,13 +56,13 @@
           "feedback": "Maadoitus ei vaikuta laitteen normaaliin sähkönkulutukseen: normaalikäytössä maadoitusjohtimessa ei kulje virtaa lainkaan. Se tulee käyttöön vasta vian sattuessa."
         },
         {
-          "text": "Se eristää rungon maasta, jolloin vika ei voi päästää virtaa kulkemaan rungossa.",
-          "feedback": "Maadoitus tekee päinvastoin: se yhdistää rungon maahan johtimella. Jos runko olisi eristetty, vikavirta ei pääsisi pois ja runko voisi jäädä jännitteiseksi."
-        },
-        {
-          "text": "Se ohjaa vikavirran johdinta pitkin maahan, jolloin sulake tai vikavirtasuoja katkaisee virran.",
+          "text": "Se ohjaa vikavirran maahan, jolloin sulake tai vikavirtasuoja katkaisee virran.",
           "correct": true,
           "feedback": "Oikein: kun vaihejohdin koskettaa vian takia runkoa, maadoitusjohdin vie suuren vikavirran maahan. Virta kasvaa niin suureksi, että suojalaite katkaisee sen, eikä runko jää jännitteiseksi."
+        },
+        {
+          "text": "Se eristää rungon maasta, jolloin vika ei voi päästää virtaa kulkemaan rungossa.",
+          "feedback": "Maadoitus tekee päinvastoin: se yhdistää rungon maahan johtimella. Jos runko olisi eristetty, vikavirta ei pääsisi pois ja runko voisi jäädä jännitteiseksi."
         },
         {
           "text": "Se pitää rungon aina jännitteisenä, jolloin vika huomataan ennen kuin laite hajoaa.",
@@ -90,13 +90,13 @@
           "feedback": "Tämä kuvaa luokkaa III, jossa laite toimii pienellä suojajännitteellä. Luokan II laite kytketään verkkojännitteeseen $230\\,\\text{V}$, ja sen suoja on eristyksessä."
         },
         {
+          "text": "Laitteen kuori on tiivis ja vesitiivis, joten sitä voi käyttää turvallisesti suihkussa.",
+          "feedback": "Suojausluokka kertoo suojauksesta sähköiskua vastaan, ei kosteudenkestosta. Märkätilaan sopivuus määräytyy muiden merkintöjen mukaan, eikä luokan II hiustenkuivaajaa saa silti käyttää suihkussa."
+        },
+        {
           "text": "Laitteessa on kaksinkertainen eristys, joten kuori ei tule jännitteiseksi yhden vian takia.",
           "correct": true,
           "feedback": "Oikein: luokan II laitteessa on kaksinkertainen tai vahvistettu eristys, joten yksi eristysvika ei vielä tuo verkkojännitettä käyttäjän kosketeltavaan kuoreen. Siksi se ei tarvitse suojamaadoitusta."
-        },
-        {
-          "text": "Laitteen kuori on tiivis ja vesitiivis, joten sitä voi käyttää turvallisesti suihkussa.",
-          "feedback": "Suojausluokka kertoo suojauksesta sähköiskua vastaan, ei kosteudenkestosta. Märkätilaan sopivuus määräytyy muiden merkintöjen mukaan, eikä luokan II hiustenkuivaajaa saa silti käyttää suihkussa."
         }
       ]
     },

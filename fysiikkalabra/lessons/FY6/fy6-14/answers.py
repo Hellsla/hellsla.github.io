@@ -28,8 +28,8 @@ Ub, Ib = max(pts, key=lambda q: q[0] * q[1])               # the largest U I in 
 a["fy6-14-L3-02"] = Ub / Ib                                # R = U : I = 5,86 ohm at the maximum power point
 a["fy6-14-L3-03"] = (12 - 3 * 3.0) / 12 * 100              # share of the resistor: U_R I : (U I) = 3,0 V : 12 V = 25 %
 # Exercise-bank additions: multiple choice (answer = the correct option's text), data, error and modelling tasks
-a["fy6-14-L1-06"] = "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on vain pieni osa pariston jännitteestä."
-a["fy6-14-L1-07"] = "Pienikin jännitteen kasvu kasvattaa LEDin virtaa paljon, joten vastus ottaa osan jännitteestä ja pitää virran sopivana."
+a["fy6-14-L1-06"] = "Diodi on päästösuunnassa, joten virta kulkee ja diodin yli on vain pieni jännite."
+a["fy6-14-L1-07"] = "LEDin virta kasvaa jyrkästi jännitteen kasvaessa, joten vastus ottaa ylimääräisen jännitteen."
 a["fy6-14-L1-08"] = (2.0 * 0.100) / (1000 * 12e-4) * 100    # eta = P : (G A) = 0,20 W : 1,2 W = 16,7 %
 leds = {"sininen": 3.10, "punainen": 1.90, "keltainen": 2.10}
 low = min(leds, key=leds.get)                              # the smallest U_D leaves the largest U_R, so the largest R
@@ -45,5 +45,9 @@ a["fy6-14-L3-04"] = E_year / sum(C) * 100                  # share of the yearly
 d0, d1 = (2.00, 9.8), (2.05, 20.0)
 slope = (d1[1] - d0[1]) / (d1[0] - d0[0])                  # diode: 204 mA/V between the rows
 x = (((4.5 - d0[0]) / 180 * 1e3) - d0[1]) / (slope + 1e3 / 180)  # offset from 2,00 V where the two currents meet
+# threshold: the steep straight part (2,05 V; 20 mA)-(2,10 V; 41 mA) extended to I = 0
+slope2 = (41 - 20) / (2.10 - 2.05)                         # 420 mA/V
+threshold = 2.05 - 20 / slope2                            # 2,00 V (not an answer field; checked in solutions)
+assert abs(threshold - 2.0) < 0.01
 a["fy6-14-L3-05"] = round(d0[1] + slope * x, 2)            # I = 13,78 mA at U_D = 2,02 V
 print(json.dumps({k: (v if isinstance(v, str) else round(v, 6)) for k, v in a.items()}))
