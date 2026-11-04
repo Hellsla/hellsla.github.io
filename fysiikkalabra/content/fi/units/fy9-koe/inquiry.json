@@ -1,0 +1,973 @@
+{
+ "version": 1,
+ "contribution": "Kurssin avaustunti kokoaa vastaustekniikan: täydellisen ratkaisun seitsemän vaihetta, tehtäväsanat, kuvaajan ja kaavojen teon koneella ja pisteytysajattelun, ja sen 24 tehtävän kertaustesti kertoo jokaiselle, mitkä FY1–FY8:n luvut hänen kannattaa kerrata ensin.",
+ "learn": [
+  "laatimaan täydellisen ratkaisun perusteluineen, yksiköineen ja järkevyystarkasteluineen.",
+  "arvioimaan vastauksia pisteytysohjeen avulla ja löytämään niistä puuttuvat vaiheet.",
+  "ratkaisemaan kertaustestin tehtäviä ja valitsemaan tulosten perusteella luvut, jotka kertaat."
+ ],
+ "prior": [
+  "Lopputuloksessa on yhtä monta merkitsevää numeroa kuin epätarkimmassa lähtöarvossa (luku *Mittaaminen ja mittauksen luotettavuus*)",
+  "Mittauspisteisiin sovitetaan suora, ja kulmakerroin luetaan suoralta (luku *Graafinen esitys ja suoran sovittaminen*)",
+  "Kokeessa muutetaan yhtä muuttujaa ja pidetään muut vakioina (luku *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*)"
+ ],
+ "activities": [
+  {
+   "id": "hook",
+   "stage": "herata",
+   "type": "hook",
+   "text": "Aino ja Eetu ratkaisevat saman tehtävän: kuinka suuri keskimääräinen voima kiihdyttää polkupyörän ja pyöräilijän liikkeelle. Kumpikin päätyy lukuun $71$. Ainon vastauksessa on kaksi riviä numeroita. Eetu kirjoittaa, mitä tiedetään, mikä laki pätee ja miksi, ratkaisee kaavan, sijoittaa arvot yksiköineen ja vertaa tulosta pyöräilijän painoon. Arvioija antaa Eetulle selvästi enemmän pisteitä.",
+   "question": "Mitä fysiikan vastauksessa pitää olla oikean luvun lisäksi, ja miksi?"
+  },
+  {
+   "id": "pred-1",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 1: yksikkö",
+   "prompt": "Opiskelija laskee auton nopeuden oikein ja kirjoittaa ratkaisunsa viimeiselle riville $v = 14$. Mikä väite vastauksesta pitää paikkansa?",
+   "choices": [
+    {
+     "text": "Puutteellinen: ilman yksikköä ei tiedä, onko nopeus $\\text{m/s}$ vai $\\text{km/h}$.",
+     "correct": true,
+     "feedback": "Oikein. Suure on luku kertaa yksikkö: $14\\,\\text{m/s}$ on noin $50\\,\\text{km/h}$, mutta $14\\,\\text{km/h}$ on pyöräilyvauhti. Ilman yksikköä lukija ei tiedä, kumpaa tarkoitat. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "Täydellinen, koska yksikkö näkyy välivaiheissa ja lukija voi päätellä sen.",
+     "feedback": "Lopputulos on vastauksen tärkein rivi, ja se luetaan yksinään. Jos siitä puuttuu yksikkö, lopputulos ei ole suure. Kirjoita aina $v \\approx 14\\,\\text{m/s}$. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "Täydellinen, koska nopeuden yksikkö on aina metriä sekunnissa.",
+     "feedback": "Nopeuden voi ilmoittaa monessa yksikössä: $\\text{m/s}$, $\\text{km/h}$ tai solmuina. Siksi juuri yksikkö kertoo, mitä luku tarkoittaa. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "Puutteellinen vain ulkoasultaan, koska itse luku on laskettu oikein.",
+     "feedback": "Ilman yksikköä luku voi tarkoittaa mitä tahansa: $14\\,\\text{m/s}$ ja $14\\,\\text{km/h}$ eroavat lähes nelinkertaisesti. Yksikkö on osa tulosta, ei koriste. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    }
+   ]
+  },
+  {
+   "id": "pred-2",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 2: perustelu",
+   "prompt": "Tehtävässä kelkka laskee jäistä mäkeä. Opiskelijan ratkaisu alkaa suoraan rivillä $mgh = \\tfrac{1}{2}mv^2$, jonka jälkeen tulevat sijoitus ja vastaus. Mitä ratkaisusta puuttuu?",
+   "choices": [
+    {
+     "text": "Perustelu, miksi energia säilyy: kitka ja ilmanvastus jätetään pois.",
+     "correct": true,
+     "feedback": "Oikein. Energiayhtälö $mgh = \\tfrac{1}{2}mv^2$ pätee vain, jos vain paino tekee työtä. Kirjoita, että kitka ja ilmanvastus jätetään huomiotta, ja miksi se on tässä kohtuullista: jää on liukasta ja nopeus pieni. Kertaa luvussa [*Mekaanisen energian säilyminen ja energiaperiaate*](fy4-8.html)."
+    },
+    {
+     "text": "Kaavan johto alusta asti Newtonin laeista ja liikeyhtälöistä.",
+     "feedback": "Lakia ei tarvitse johtaa, mutta sen käyttö pitää perustella. Yksi lause riittää: mikä laki pätee ja miksi se pätee juuri tässä tilanteessa. Kertaa luvussa [*Mekaanisen energian säilyminen ja energiaperiaate*](fy4-8.html)."
+    },
+    {
+     "text": "Ei mitään, koska oikea kaava kertoo jo itse, mikä periaate on käytössä.",
+     "feedback": "Kaava ei kerro, pätevätkö sen ehdot. Jos mäessä olisi kitkaa, sama rivi antaisi liian suuren nopeuden. Periaate ja sen ehto kirjoitetaan näkyviin. Kertaa luvussa [*Mekaanisen energian säilyminen ja energiaperiaate*](fy4-8.html)."
+    },
+    {
+     "text": "Kuva kelkasta ja mäestä, koska kuva korvaa sanallisen perustelun.",
+     "feedback": "Tilannekuva auttaa, mutta se ei kerro, miksi energia säilyy. Perustelussa sanotaan, että vain paino tekee työtä, koska kitka ja ilmanvastus jätetään pois. Kertaa luvussa [*Mekaanisen energian säilyminen ja energiaperiaate*](fy4-8.html)."
+    }
+   ]
+  },
+  {
+   "id": "pred-3",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 3: välitulokset",
+   "prompt": "Laskussa on kolme peräkkäistä vaihetta. Opiskelija pyöristää jokaisen välituloksen kahteen merkitsevään numeroon, koska lähtöarvoissakin on kaksi. Mitä tästä seuraa?",
+   "choices": [
+    {
+     "text": "Pyöristysvirheet kertautuvat, ja lopputulos voi poiketa viimeisessä numerossa.",
+     "correct": true,
+     "feedback": "Oikein. Pidä välitulokset pyöristämättöminä, tai ainakin pari numeroa tarkempina, ja pyöristä vain lopputulos. Esimerkiksi $64 \\cdot 1{,}1 \\approx 70$, mutta $64 \\cdot 1{,}111 \\approx 71$. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "Ei haittaa, koska lopputulos pyöristetään joka tapauksessa kahteen numeroon.",
+     "feedback": "Jokainen pyöristys siirtää tulosta vähän, ja siirtymät kertautuvat. Esimerkiksi $64 \\cdot 1{,}1 \\approx 70$, mutta tarkemmalla välituloksella $64 \\cdot 1{,}111 \\approx 71$. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "Lopputuloksesta tulee tarkempi, koska turhat numerot eivät sotke laskua.",
+     "feedback": "Pyöristäminen ei lisää tarkkuutta vaan poistaa tietoa. Välitulokset pidetään tarkkoina, ja tarkkuus päätetään vasta lopputuloksessa lähtöarvojen mukaan. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "Välitulokset pitäisi jättää kokonaan pois ja kirjoittaa vain lopputulos ratkaisuun.",
+     "feedback": "Välitulokset kannattaa kirjoittaa näkyviin, koska ne näyttävät ratkaisun kulun. Ne vain jätetään pyöristämättä, ja lopputulos pyöristetään. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    }
+   ]
+  },
+  {
+   "id": "pred-4",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 4: tarkkuus",
+   "prompt": "Kappaleen massa on $2{,}0\\,\\text{kg}$ ja kiihtyvyys $1{,}5\\,\\text{m/s}^2$. Laskin näyttää kokonaisvoimalle $F = ma$ luvun $3$. Miten lopputulos kirjoitetaan?",
+   "choices": [
+    {
+     "text": "$F = 3{,}0\\,\\text{N}$, kuten lähtöarvojen kaksi merkitsevää numeroa.",
+     "correct": true,
+     "feedback": "Oikein. Lopputuloksessa on yhtä monta merkitsevää numeroa kuin epätarkimmassa lähtöarvossa. Laskin ei näytä loppunollaa, mutta $3{,}0\\,\\text{N}$ kertoo, että tulos tunnetaan kymmenesosan tarkkuudella. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "$F = 3\\,\\text{N}$, koska laskin näyttää juuri tämän luvun.",
+     "feedback": "Laskin jättää loppunollat pois. $3\\,\\text{N}$ näyttää yhden merkitsevän numeron tarkkuuden, vaikka lähtöarvoissa on kaksi. Kirjoita $3{,}0\\,\\text{N}$. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "$F = 3{,}000\\,\\text{N}$, koska tarkempi luku on aina parempi tulos.",
+     "feedback": "Neljä merkitsevää numeroa väittää tulosta tarkemmaksi kuin mittaukset ovat. Massa $2{,}0\\,\\text{kg}$ tunnetaan vain kahden numeron tarkkuudella, joten vastaus on $3{,}0\\,\\text{N}$. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "$F = 3{,}0$, koska yksikön näkee jo kaavasta $F = ma$ suoraan.",
+     "feedback": "Tarkkuus on oikein, mutta lopputuloksesta puuttuu yksikkö. Kirjoita $F = 3{,}0\\,\\text{N}$. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    }
+   ]
+  },
+  {
+   "id": "pred-5",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 5: kulmakerroin",
+   "prompt": "Tehtävässä pyydetään määrittämään kärryn nopeus graafisesti $(t, x)$-kuvaajasta. Mittauspisteitä on seitsemän, ja niihin on sovitettu suora. Mistä nopeus kannattaa lukea?",
+   "choices": [
+    {
+     "text": "Sovitetun suoran kulmakertoimesta, kahdesta kaukana olevasta suoran pisteestä.",
+     "correct": true,
+     "feedback": "Oikein. Sovite kokoaa kaikkien pisteiden tiedon, ja kaukana toisistaan olevat pisteet pienentävät lukemisen suhteellista virhettä. Näytä lukemasi pisteet vastauksessa. Kertaa luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
+    },
+    {
+     "text": "Kahden vierekkäisen mittauspisteen erotuksesta, koska ne ovat oikeita mittauksia.",
+     "feedback": "Yksittäisissä pisteissä on mittausvirhettä, ja kahden vierekkäisen pisteen erotuksessa se korostuu. Sovite tasoittaa satunnaisen vaihtelun, joten kulmakerroin luetaan suoralta. Kertaa luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
+    },
+    {
+     "text": "Viimeisestä mittauspisteestä jakamalla sen paikka vastaavalla ajalla.",
+     "feedback": "Jako $x : t$ antaa nopeuden vain, jos suora kulkee origon kautta. Kun kärry ei lähde paikasta $x = 0$, tulos on väärä. Kulmakerroin luetaan suoralta. Kertaa luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
+    },
+    {
+     "text": "Laskemalla kaikkien paikkojen keskiarvon ja jakamalla sen ajalla.",
+     "feedback": "Paikkojen keskiarvo ei kerro, kuinka nopeasti paikka muuttuu. Nopeus on paikan muutos jaettuna ajan muutoksella, eli sovitetun suoran kulmakerroin. Kertaa luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
+    }
+   ]
+  },
+  {
+   "id": "pred-6",
+   "stage": "ennusta",
+   "type": "choice",
+   "title": "Lähtötaso 6: arvioi",
+   "prompt": "Tehtävässä pyydetään arvioimaan, kuinka paljon energiaa kuluu yhden suihkukerran veden lämmittämiseen. Tehtävässä ei anneta vesimäärää eikä lämpötiloja. Mitä vastaukselta odotetaan?",
+   "choices": [
+    {
+     "text": "Perustellut oletukset vesimäärästä ja lämpötiloista, lasku ja karkea tulos.",
+     "correct": true,
+     "feedback": "Oikein. Arvioi-tehtävässä valitset itse järkevät lähtöarvot ja kerrot ne, esimerkiksi $40\\,\\text{kg}$ vettä, joka lämpenee $10\\,{}^\\circ\\text{C}$:sta $40\\,{}^\\circ\\text{C}$:een. Tulos ilmoitetaan yhden tai kahden numeron tarkkuudella. Kertaa luvussa [*Aineen lämpeneminen ja jäähtyminen*](fy3-6.html)."
+    },
+    {
+     "text": "Pelkkä suuruusluokka ilman laskua, koska arvio ei vaadi perusteluja tai oletuksia.",
+     "feedback": "Arviokin on ratkaisu: oletukset ja lasku näkyvät, jotta lukija voi tarkistaa, mistä luku tulee. Ilman niitä luku on arvaus. Kertaa luvussa [*Aineen lämpeneminen ja jäähtyminen*](fy3-6.html)."
+    },
+    {
+     "text": "Ei mitään: tehtävään ei voi vastata, koska siitä puuttuu tarvittavia lähtötietoja.",
+     "feedback": "Juuri tästä arvioi-tehtävässä on kyse: puuttuvat arvot valitaan itse kokemuksen perusteella, ja valinnat perustellaan. Kertaa luvussa [*Aineen lämpeneminen ja jäähtyminen*](fy3-6.html)."
+    },
+    {
+     "text": "Mahdollisimman tarkka tulos, esimerkiksi viiden merkitsevän numeron tarkkuudella.",
+     "feedback": "Kun lähtöarvot ovat omia arvioita, tarkka tulos väittää tietoa, jota ei ole. Ilmoita tulos karkeasti, esimerkiksi noin $5\\,\\text{MJ}$. Kertaa luvussa [*Aineen lämpeneminen ja jäähtyminen*](fy3-6.html)."
+    }
+   ]
+  },
+  {
+   "id": "vastaukset",
+   "stage": "tutki",
+   "type": "interpret",
+   "title": "Kaksi vastausta, yksi tehtävä",
+   "source": "example",
+   "text": "**Tehtävä (6 p.)** Sähköpotkulauta ja sen kuljettaja, yhteensä $64\\,\\text{kg}$, kiihtyvät levosta tasaisesti nopeuteen $20\\,\\text{km/h}$ ajassa $5{,}0\\,\\text{s}$. Kuinka suuri on niihin vaikuttava keskimääräinen kokonaisvoima?\n\n**Pisteytysohje.** Jokaisesta kohdasta saa yhden pisteen: periaate ja sen perustelu, kaava ratkaistuna kysytyn suhteen, yksikkömuunnos, sijoitus yksiköineen (ilman yksiköitä ei pistettä), oikea vastaus oikealla tarkkuudella ja yksiköllä, järkevyystarkastelu. Kohdat ovat täydellisen ratkaisun vaiheet, jotka kerrataan Teoriatiivistelmässä.\n\n**Vastaus A.** $20 : 3{,}6 : 5 = 1{,}11$ ja $64 \\cdot 1{,}11 = 71{,}04$\n\n**Vastaus B.**\n\n- Kokonaisvoima antaa kappaleelle kiihtyvyyden Newtonin toisen lain mukaan, $F = ma$. Kiihtyvyys on tasainen, joten $a = \\tfrac{\\Delta v}{\\Delta t}$ ja $F = \\tfrac{m\\Delta v}{\\Delta t}$.\n- Muunnos: $20\\,\\text{km/h} = \\tfrac{20}{3{,}6}\\,\\text{m/s} = 5{,}556\\,\\text{m/s}$\n- Sijoitus: $a = \\tfrac{5{,}556\\,\\text{m/s}}{5{,}0\\,\\text{s}} = 1{,}111\\,\\text{m/s}^2$\n- $F = 64\\,\\text{kg} \\cdot 1{,}111\\,\\text{m/s}^2 = 7{,}1\\,\\text{N}$\n- Vastaus: $F \\approx 7{,}1\\,\\text{N}$",
+   "question": {
+    "type": "explain",
+    "prompt": "Pisteytä kumpikin vastaus ohjeen mukaan. Kumpi saa enemmän pisteitä, ja mitä kummankin pitäisi lisätä tai korjata?",
+    "criteria": [
+     "Vastaus kertoo, että A saa vain muunnoksen pisteen, koska siitä puuttuvat periaate, symbolinen kaava, yksiköt ja järkevyys.",
+     "Vastaus kertoo, että B saa periaatteen, kaavan, muunnoksen ja sijoituksen pisteet, mutta vastaus $7{,}1\\,\\text{N}$ on laskuvirhe.",
+     "Vastaus kertoo, että B saa enemmän pisteitä, vaikka A:n luku $71$ on lähempänä oikeaa tulosta $71\\,\\text{N}$.",
+     "Vastaus kertoo, että järkevyystarkastelu olisi paljastanut B:n virheen, esimerkiksi vertaamalla tulosta painoon tai kiihtyvyyteen."
+    ],
+    "model": "Vastaus A saa yhden pisteen: siinä on muunnos $20 : 3{,}6$. Periaate ja sen perustelu puuttuvat, kaavaa ei ole ratkaistu symboleilla, sijoituksessa ei ole yksiköitä, ja lopputuloksesta $71{,}04$ puuttuu yksikkö ja siinä on liikaa numeroita. Järkevyystarkastelua ei ole. Vastaus B saa neljä pistettä: periaate on perusteltu, kaava on ratkaistu, muunnos ja sijoitus yksiköineen ovat oikein. Viimeisessä kertolaskussa on kuitenkin pilkkuvirhe, sillä $64 \\cdot 1{,}111 \\approx 71$, joten vastauspiste menee. Järkevyystarkastelua ei ole, ja juuri se olisi paljastanut virheen: voima $7{,}1\\,\\text{N}$ antaisi $64\\,\\text{kg}$:n kappaleelle vain kiihtyvyyden $0{,}11\\,\\text{m/s}^2$, ei laskettua $1{,}1\\,\\text{m/s}^2$. B saa siis enemmän pisteitä, vaikka A:n luku on oikeampi. A:n pitäisi kirjoittaa periaate ja vaiheet yksiköineen ja vastaus $F \\approx 71\\,\\text{N}$. B:n pitäisi tarkistaa tulos vertaamalla sitä kokemukseen tai laskemalla kiihtyvyys takaisin.",
+    "practice": "Kertaa täydellisen ratkaisun vaiheet luvussa [*Aineen lämpeneminen ja jäähtyminen*](fy3-6.html) ja Newtonin toinen laki luvussa [*Newtonin toinen laki*](fy4-4.html)."
+   }
+  },
+  {
+   "id": "teoriatiivistelma",
+   "stage": "selita",
+   "type": "theory",
+   "sections": [
+    "Koe",
+    "Ydinajatus",
+    "Tehtavasanat",
+    "Kuvaajat",
+    "Virheet",
+    "Kertaa"
+   ]
+  },
+  {
+   "id": "esimerkki",
+   "stage": "sovella",
+   "type": "theory",
+   "sections": [
+    "Esimerkki"
+   ]
+  },
+  {
+   "id": "testi-ohje",
+   "stage": "sovella",
+   "type": "text",
+   "text": "Kertaustesti kattaa moduulit FY1–FY8, kolme tehtävää kustakin. Avaa moduulin tehtävät yksi kerrallaan. Monivalinnat ovat nopeita; laskutehtävät ratkaise vihkoon täydellisesti, kotona jos tunnin aika ei riitä. Jokaisen tehtävän palaute kertoo, minkä luvun voit kerrata. Merkitse muistiin luvut, joissa vastasit väärin: niistä aloitat kertaamisen."
+  },
+  {
+   "id": "testi-1",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY1",
+   "title": "1. Virheen laji",
+   "prompt": "Ajanottaja mittaa kuulan vierimisajan kourua pitkin sekuntikellolla ja käynnistää kellon joka kerta hieman myöhässä. Mittaus toistetaan kymmenen kertaa, ja tuloksista lasketaan keskiarvo. Mikä väite on oikein?",
+   "choices": [
+    {
+     "text": "Virhe on systemaattinen: jokainen aika on liian lyhyt, eikä toistaminen auta.",
+     "correct": true,
+     "feedback": "Oikein. Myöhäinen käynnistys lyhentää jokaista aikaa samaan suuntaan, joten myös keskiarvo on liian pieni. Toistaminen pienentää vain satunnaista virhettä. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "Virhe on satunnainen, joten se kumoutuu, kun tuloksista lasketaan keskiarvo.",
+     "feedback": "Satunnainen virhe vaihtelee suuntaan ja toiseen. Tässä kello käynnistyy aina myöhässä, joten virhe on aina samansuuntainen eli systemaattinen, eikä keskiarvo poista sitä. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "Virhe on karkea, joten kaikki kymmenen tulosta pitää hylätä heti ja mitata uudelleen.",
+     "feedback": "Karkea virhe on yksittäinen selvä erehdys, kuten väärin luettu lukema. Toistuva myöhästyminen on systemaattinen virhe, joka korjataan menetelmää muuttamalla, esimerkiksi valoporteilla. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    },
+    {
+     "text": "Toistaminen pienentää virhettä, koska myöhästymiset ovat eri pituisia.",
+     "feedback": "Myöhästymisten pituus voi vaihdella, mutta ne lyhentävät aikaa aina. Keskiarvokin on siksi liian lyhyt. Toistaminen pienentää vain satunnaista vaihtelua. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
+    }
+   ]
+  },
+  {
+   "id": "testi-2",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY1",
+   "title": "2. Sovitettu suora",
+   "prompt": "Opiskelija sovitti kahdeksaan mittauspisteeseen suoran. Suora kulkee pisteiden lomitse, mutta ei yhdenkään pisteen kautta. Mikä tulkinta on paras?",
+   "choices": [
+    {
+     "text": "Tavallista: mittausepävarmuuden takia pisteet eivät yleensä ole samalla suoralla.",
+     "correct": true,
+     "feedback": "Oikein. Sovite kuvaa mallia, ja pisteiden pieni heilunta sen molemmin puolin on mittauksen satunnaista vaihtelua. Suora saa kulkea pisteen kautta, mutta sen ei tarvitse. Kertaa luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
+    },
+    {
+     "text": "Sovite on väärä, sillä hyvän suoran pitää kulkea mahdollisimman monen pisteen kautta.",
+     "feedback": "Hyvä sovite kulkee pisteistön keskeltä niin, että pisteitä on sen molemmin puolin. Suora, joka pakotetaan kahden pisteen kautta, voi kuvata koko aineistoa huonommin. Kertaa luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
+    },
+    {
+     "text": "Pisteet kannattaa yhdistää murtoviivaksi, jotta jokainen mittaus näkyy kuvaajassa.",
+     "feedback": "Murtoviiva toistaa mittausvirheet eikä ole malli. Sovitettu suora kertoo riippuvuuden, ja siitä voi lukea kulmakertoimen. Kertaa luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
+    },
+    {
+     "text": "Mittaukset ovat epäonnistuneet, joten koko mittaussarja pitää tehdä uudelleen alusta.",
+     "feedback": "Pisteiden pieni hajonta suoran ympärillä on odotettavaa. Mittaus toistetaan vain, jos jokin piste poikkeaa selvästi ja siihen löytyy syy. Kertaa luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
+    }
+   ]
+  },
+  {
+   "id": "testi-3",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY1",
+   "title": "3. Tiheys",
+   "prompt": "Opiskelija mittaa metallikappaleen massaksi $54{,}0\\,\\text{g}$ ja tilavuudeksi upotusmenetelmällä $20{,}0\\,\\text{cm}^3$. Laske kappaleen tiheys yksikössä $\\text{kg/m}^3$.",
+   "answer": 2700,
+   "unit": "kg/m³",
+   "tolerance": 0.02,
+   "hints": [
+    "Mikä on tiheyden määritelmä? Kumpi jaetaan kummalla?",
+    "Muunna ensin: $1\\,\\text{g} = 10^{-3}\\,\\text{kg}$ ja $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$.",
+    "$\\rho = \\dfrac{54{,}0 \\cdot 10^{-3}\\,\\text{kg}}{20{,}0 \\cdot 10^{-6}\\,\\text{m}^3}$"
+   ],
+   "mistakes": [
+    {
+     "value": 2.7,
+     "feedback": "Tämä on tiheys yksikössä $\\text{g/cm}^3$. Muunna massa kilogrammoiksi ja tilavuus kuutiometreiksi: tulos on tuhatkertainen. Kertaa luvussa [*Tiheys*](fy1-7.html)."
+    },
+    {
+     "value": 2700000.0,
+     "feedback": "Muunsit tilavuuden kuutiometreiksi mutta et massaa kilogrammoiksi: $54{,}0\\,\\text{g} = 0{,}0540\\,\\text{kg}$. Kertaa luvussa [*Tiheys*](fy1-7.html)."
+    },
+    {
+     "value": 0.37,
+     "feedback": "Jaoit tilavuuden massalla. Tiheys on $\\rho = \\tfrac{m}{V}$. Kertaa luvussa [*Tiheys*](fy1-7.html)."
+    }
+   ],
+   "solution": "**Annettu:** massa $m = 54{,}0\\,\\text{g}$, tilavuus $V = 20{,}0\\,\\text{cm}^3$\n\n**Kysytty:** tiheys $\\rho$ yksikössä $\\text{kg/m}^3$\n\n**Periaate:** Tiheys on aineen massa tilavuusyksikköä kohti. Kappale on yhtä ainetta, joten sen tiheys on sen massa jaettuna sen tilavuudella.\n\n**Kaava:** $m = \\rho V$, josta $\\rho = \\dfrac{m}{V}$\n\n**Muunnokset:** $54{,}0\\,\\text{g} = 54{,}0 \\cdot 10^{-3}\\,\\text{kg}$ ja $20{,}0\\,\\text{cm}^3 = 20{,}0 \\cdot (10^{-2}\\,\\text{m})^3 = 20{,}0 \\cdot 10^{-6}\\,\\text{m}^3$\n\n**Sijoitus:** $\\rho = \\dfrac{54{,}0 \\cdot 10^{-3}\\,\\text{kg}}{20{,}0 \\cdot 10^{-6}\\,\\text{m}^3} = 2700\\,\\text{kg/m}^3$\n\n**Vastaus:** $\\rho \\approx 2{,}70 \\cdot 10^{3}\\,\\text{kg/m}^3$, kolme merkitsevää numeroa kuten massassa ja tilavuudessa.\n\n**Järkevyys:** Tulos on $2{,}70\\,\\text{g/cm}^3$ eli noin $2{,}7$ kertaa veden tiheys, mikä sopii metallille. Taulukon mukaan se on alumiinin tiheys."
+  },
+  {
+   "id": "testi-4",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY2",
+   "title": "4. Teho",
+   "prompt": "Pesukone käyttää yhden ohjelman aikana sähköenergiaa $0{,}90\\,\\text{kWh}$. Ohjelma kestää $1\\,\\text{h}\\ 30\\,\\text{min}$. Laske pesukoneen keskimääräinen teho kilowatteina.",
+   "answer": 0.6,
+   "unit": "kW",
+   "tolerance": 0.02,
+   "hints": [
+    "Mikä suure on energia jaettuna ajalla?",
+    "Kuinka monta tuntia on $1\\,\\text{h}\\ 30\\,\\text{min}$? Ei $1{,}30\\,\\text{h}$.",
+    "$P = \\dfrac{0{,}90\\,\\text{kWh}}{1{,}5\\,\\text{h}}$"
+   ],
+   "mistakes": [
+    {
+     "value": 0.69,
+     "feedback": "Kirjoitit ajaksi $1{,}30\\,\\text{h}$. Puoli tuntia on $0{,}5\\,\\text{h}$, joten aika on $1{,}5\\,\\text{h}$. Kertaa luvussa [*Teho*](fy2-3.html)."
+    },
+    {
+     "value": 0.9,
+     "feedback": "Tämä on energia, ei teho. Teho saadaan jakamalla energia ajalla. Kertaa luvussa [*Teho*](fy2-3.html)."
+    },
+    {
+     "value": 1.35,
+     "feedback": "Kerroit energian ajalla. Teho on energia jaettuna ajalla. Kertaa luvussa [*Teho*](fy2-3.html)."
+    }
+   ],
+   "solution": "**Annettu:** energia $E = 0{,}90\\,\\text{kWh}$, aika $t = 1\\,\\text{h}\\ 30\\,\\text{min}$\n\n**Kysytty:** keskimääräinen teho $P$ kilowatteina\n\n**Periaate:** Teho kertoo, kuinka paljon energiaa muuntuu aikayksikössä. Kone ei ota koko ajan samaa tehoa, joten energia jaettuna koko ajalla antaa keskimääräisen tehon.\n\n**Kaava:** $P = \\dfrac{E}{t}$\n\n**Muunnokset:** $30\\,\\text{min} = 0{,}5\\,\\text{h}$, joten $t = 1{,}5\\,\\text{h}$. Energia on jo kilowattitunteina, joten tulos tulee suoraan kilowatteina.\n\n**Sijoitus:** $P = \\dfrac{0{,}90\\,\\text{kWh}}{1{,}5\\,\\text{h}} = 0{,}60\\,\\text{kW}$\n\n**Vastaus:** $P \\approx 0{,}60\\,\\text{kW}$, kaksi merkitsevää numeroa kuten energiassa $0{,}90\\,\\text{kWh}$.\n\n**Järkevyys:** $0{,}60\\,\\text{kW}$ on $600\\,\\text{W}$. Pesukoneen lämmitysvastus ottaa hetkellisesti noin $2\\,\\text{kW}$, mutta suurimman osan ajasta vain rumpu pyörii, joten keskiarvo on paljon pienempi. Tarkistus: $0{,}60\\,\\text{kW} \\cdot 1{,}5\\,\\text{h} = 0{,}90\\,\\text{kWh}$."
+  },
+  {
+   "id": "testi-5",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY2",
+   "title": "5. Takka",
+   "prompt": "Takassa poltetaan $2{,}5\\,\\text{kg}$ koivuhalkoja, joiden lämpöarvo on $15\\,\\text{MJ/kg}$. Takan hyötysuhde on $70\\,\\%$, eli niin suuri osa palamisessa vapautuvasta energiasta lämmittää huonetta. Kuinka paljon energiaa takka luovuttaa huoneeseen? Vastaa megajouleina.",
+   "answer": 26.25,
+   "unit": "MJ",
+   "tolerance": 0.02,
+   "hints": [
+    "Kuinka paljon energiaa puu vapauttaa palaessaan?",
+    "Kuinka suuri osa siitä jää huoneeseen? Kerro hyötysuhteella.",
+    "$E_\\text{hyöty} = 0{,}70 \\cdot 15\\,\\text{MJ/kg} \\cdot 2{,}5\\,\\text{kg}$"
+   ],
+   "mistakes": [
+    {
+     "value": 37.5,
+     "feedback": "Tämä on koko palamisessa vapautuva energia. Huoneeseen jää siitä vain hyötysuhteen osuus. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+    },
+    {
+     "value": 53.57,
+     "feedback": "Jaoit hyötysuhteella. Hyötyenergia on pienempi kuin vapautuva energia, joten kerro: $E_\\text{hyöty} = \\eta E$. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+    }
+   ],
+   "solution": "**Annettu:** polttoaineen massa $m = 2{,}5\\,\\text{kg}$, lämpöarvo $H = 15\\,\\text{MJ/kg}$, hyötysuhde $\\eta = 70\\,\\% = 0{,}70$\n\n**Kysytty:** huoneeseen siirtyvä energia $E_\\text{hyöty}$ megajouleina\n\n**Periaate:** Palaessaan puu vapauttaa energian $E = Hm$. Hyötysuhde kertoo, kuinka suuri osa siitä päätyy hyötykäyttöön, tässä huoneen lämmittämiseen; loput menee savukaasujen mukana ulos.\n\n**Kaava:** $E = Hm$ ja $\\eta = \\dfrac{E_\\text{hyöty}}{E}$, josta $E_\\text{hyöty} = \\eta H m$\n\n**Muunnokset:** Prosentit desimaaliluvuksi: $70\\,\\% = 0{,}70$. Lämpöarvo on jo yksikössä $\\text{MJ/kg}$, joten tulos tulee megajouleina.\n\n**Sijoitus:** $E_\\text{hyöty} = 0{,}70 \\cdot 15\\,\\text{MJ/kg} \\cdot 2{,}5\\,\\text{kg} = 26{,}25\\,\\text{MJ}$\n\n**Vastaus:** $E_\\text{hyöty} \\approx 26\\,\\text{MJ}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** Kaikkiaan puu vapauttaa $15 \\cdot 2{,}5\\,\\text{MJ} \\approx 38\\,\\text{MJ}$, ja hyöty on vähemmän, kuten pitääkin. $26\\,\\text{MJ}$ on noin $7\\,\\text{kWh}$, mikä vastaa sähkölämmitintä, joka on päällä muutaman tunnin."
+  },
+  {
+   "id": "testi-6",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY2",
+   "title": "6. Hyötysuhde",
+   "prompt": "Erään LED-lampun hyötysuhde on $35\\,\\%$: niin suuri osa sen ottamasta sähköenergiasta muuttuu valoksi. Mitä tapahtuu lopulle energialle?",
+   "choices": [
+    {
+     "text": "Se muuttuu lämmöksi lampussa ja ympäristössä; energiaa ei katoa.",
+     "correct": true,
+     "feedback": "Oikein. Energia säilyy aina. Hyötysuhde kertoo vain, kuinka suuri osa energiasta päätyy haluttuun muotoon; loput lämmittää lamppua ja huonetta. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+    },
+    {
+     "text": "Se häviää kokonaan, koska hyötysuhde on alle $100\\,\\%$ eikä energiaa jää.",
+     "feedback": "Energia ei häviä missään laitteessa. Hyötysuhde alle sata prosenttia tarkoittaa, että osa energiasta muuttuu muuhun kuin hyötymuotoon, tässä lämmöksi. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+    },
+    {
+     "text": "Se varastoituu lampun sisään ja vapautuu, kun lamppu sammutetaan.",
+     "feedback": "Lampussa ei ole energiavarastoa. Se energia, joka ei muutu valoksi, muuttuu saman tien lämmöksi lampussa ja ympäristössä. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+    },
+    {
+     "text": "Se palaa johtoja pitkin takaisin sähköverkkoon käyttämättömänä.",
+     "feedback": "Lamppu ei syötä energiaa verkkoon. Sen ottama sähköenergia muuttuu valoksi ja lämmöksi, ja niiden summa on yhtä suuri kuin otettu energia. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+    }
+   ]
+  },
+  {
+   "id": "testi-7",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY3",
+   "title": "7. Teevesi",
+   "prompt": "Vedenkeittimessä lämmitetään $1{,}50\\,\\text{kg}$ vettä $12{,}0\\,{}^\\circ\\text{C}$:sta $85{,}0\\,{}^\\circ\\text{C}$:een teetä varten. Veden ominaislämpökapasiteetti on $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Kuinka suuri lämpömäärä veteen siirtyy? Vastaa kilojouleina.",
+   "answer": 458.8,
+   "unit": "kJ",
+   "tolerance": 0.02,
+   "hints": [
+    "Muuttuuko veden olomuoto? Mikä laki silloin pätee?",
+    "Laske lämpötilan muutos: $85{,}0\\,{}^\\circ\\text{C} - 12{,}0\\,{}^\\circ\\text{C}$.",
+    "$Q = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 1{,}50\\,\\text{kg} \\cdot 73{,}0\\,\\text{K}$"
+   ],
+   "mistakes": [
+    {
+     "value": 534.2,
+     "feedback": "Käytit loppulämpötilaa $85{,}0\\,{}^\\circ\\text{C}$ lämpötilan muutoksen sijasta. Lämpömäärä riippuu muutoksesta $\\Delta T = 73{,}0\\,\\text{K}$. Kertaa luvussa [*Aineen lämpeneminen ja jäähtyminen*](fy3-6.html)."
+    },
+    {
+     "value": 2251,
+     "feedback": "Käytit loppulämpötilaa kelvineinä. Kaavassa on lämpötilan muutos $\\Delta T$, ei lämpötila. Kertaa luvussa [*Aineen lämpeneminen ja jäähtyminen*](fy3-6.html)."
+    },
+    {
+     "value": 0.4588,
+     "feedback": "Tämä on tulos megajouleina. Tehtävässä kysytään kilojouleja: tulos on tuhatkertainen. Kertaa luvussa [*Aineen lämpeneminen ja jäähtyminen*](fy3-6.html)."
+    }
+   ],
+   "solution": "**Annettu:** $m = 1{,}50\\,\\text{kg}$, $T_1 = 12{,}0\\,{}^\\circ\\text{C}$, $T_2 = 85{,}0\\,{}^\\circ\\text{C}$, $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$\n\n**Kysytty:** veteen siirtyvä lämpömäärä $Q$ kilojouleina\n\n**Periaate:** Vesi lämpenee eikä sen olomuoto muutu, koska se ei kiehu. Siksi lämpömäärä on verrannollinen massaan ja lämpötilan muutokseen.\n\n**Kaava:** $Q = cm\\Delta T$, missä $\\Delta T = T_2 - T_1$\n\n**Muunnokset:** Lämpötilaero on sama kelvineinä ja celsiusasteina: $\\Delta T = 85{,}0\\,{}^\\circ\\text{C} - 12{,}0\\,{}^\\circ\\text{C} = 73{,}0\\,\\text{K}$. Lopuksi $1\\,\\text{kJ} = 1000\\,\\text{J}$.\n\n**Sijoitus:** $Q = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 1{,}50\\,\\text{kg} \\cdot 73{,}0\\,\\text{K} = 458\\,805\\,\\text{J} = 458{,}805\\,\\text{kJ}$\n\n**Vastaus:** $Q \\approx 459\\,\\text{kJ}$, kolme merkitsevää numeroa kuten massassa ja lämpötilaerossa.\n\n**Järkevyys:** Karkeasti $4000 \\cdot 1{,}5 \\cdot 75\\,\\text{J} = 450\\,\\text{kJ}$, lähellä tulosta. $2\\,\\text{kW}$:n keitin antaisi tämän energian noin neljässä minuutissa, mikä sopii kokemukseen."
+  },
+  {
+   "id": "testi-8",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY3",
+   "title": "8. Renkaan paine",
+   "prompt": "Auton renkaan ilman absoluuttinen paine on $315\\,\\text{kPa}$, kun lämpötila on $+20{,}0\\,{}^\\circ\\text{C}$. Yöllä rengas jäähtyy $-15{,}0\\,{}^\\circ\\text{C}$:een. Renkaan tilavuus ja ilman määrä pysyvät samoina. Kuinka suuri on paine yöllä? Vastaa kilopascaleina.",
+   "answer": 277.4,
+   "unit": "kPa",
+   "tolerance": 0.02,
+   "hints": [
+    "Mitkä suureet pysyvät vakioina? Mikä riippuvuus paineen ja lämpötilan välillä silloin on?",
+    "Muunna lämpötilat kelvineiksi ennen kuin jaat.",
+    "$p_2 = 315\\,\\text{kPa} \\cdot \\dfrac{258{,}15\\,\\text{K}}{293{,}15\\,\\text{K}}$"
+   ],
+   "mistakes": [
+    {
+     "value": -236.25,
+     "feedback": "Käytit celsiusasteita. Paine on verrannollinen absoluuttiseen lämpötilaan, joten lämpötilat muunnetaan kelvineiksi. Kertaa luvussa [*Ideaalikaasun tilanyhtälö*](fy3-10.html)."
+    },
+    {
+     "value": 357.7,
+     "feedback": "Käänsit lämpötilojen suhteen. Kun kaasu jäähtyy, paine pienenee: $p_2 = p_1 \\tfrac{T_2}{T_1}$. Kertaa luvussa [*Ideaalikaasun tilanyhtälö*](fy3-10.html)."
+    }
+   ],
+   "solution": "**Annettu:** $p_1 = 315\\,\\text{kPa}$, $T_1 = 20{,}0\\,{}^\\circ\\text{C}$, $T_2 = -15{,}0\\,{}^\\circ\\text{C}$; tilavuus ja ainemäärä vakiot\n\n**Kysytty:** paine $p_2$ kilopascaleina\n\n**Periaate:** Renkaan ilma on harvaa kaasua kaukana tiivistymisestä, joten se noudattaa ideaalikaasun tilanyhtälöä $pV = nRT$. Kun $V$ ja $n$ ovat vakioita, paine on verrannollinen absoluuttiseen lämpötilaan.\n\n**Kaava:** $\\dfrac{p_1}{T_1} = \\dfrac{p_2}{T_2}$, josta $p_2 = \\dfrac{p_1 T_2}{T_1}$\n\n**Muunnokset:** Lämpötilat kelvineiksi, koska paine on verrannollinen absoluuttiseen lämpötilaan: $T_1 = (20{,}0 + 273{,}15)\\,\\text{K} = 293{,}15\\,\\text{K}$ ja $T_2 = (-15{,}0 + 273{,}15)\\,\\text{K} = 258{,}15\\,\\text{K}$\n\n**Sijoitus:** $p_2 = \\dfrac{315\\,\\text{kPa} \\cdot 258{,}15\\,\\text{K}}{293{,}15\\,\\text{K}} = 277{,}39\\,\\text{kPa}$\n\n**Vastaus:** $p_2 \\approx 277\\,\\text{kPa}$, kolme merkitsevää numeroa kuten paineessa $315\\,\\text{kPa}$.\n\n**Järkevyys:** Kylmässä paine pienenee, kuten pitää. Absoluuttinen lämpötila pienenee noin $12\\,\\%$, ja paine pienenee saman verran, $315\\,\\text{kPa}$:sta noin $38\\,\\text{kPa}$."
+  },
+  {
+   "id": "testi-9",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY3",
+   "title": "9. Sulava jää",
+   "prompt": "Lasissa on jään ja veden seosta, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Lasia lämmitetään hitaasti ja seosta sekoitetaan. Lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa niin kauan kuin jäätä on jäljellä. Miksi?",
+   "choices": [
+    {
+     "text": "Energia kasvattaa hiukkasten välistä vuorovaikutusenergiaa, ei liike-energiaa.",
+     "correct": true,
+     "feedback": "Oikein. Sulamisen aikana aineeseen siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa. Lämpötila alkaa nousta vasta, kun kaikki jää on sulanut. Kertaa luvussa [*Olomuodon muutokset*](fy3-7.html)."
+    },
+    {
+     "text": "Lämpö karkaa heti ympäristöön, joten seokseen ei siirry lainkaan energiaa.",
+     "feedback": "Lämmitettäessä seokseen siirtyy energiaa: jää sulaa koko ajan. Energia kuluu olomuodon muutokseen, joten lämpötila ei nouse. Kertaa luvussa [*Olomuodon muutokset*](fy3-7.html)."
+    },
+    {
+     "text": "Jäämolekyylien kemialliset sidokset katkeavat, ja niiden katkeaminen kuluttaa energian.",
+     "feedback": "Sulaessa molekyylit eivät hajoa, vaan vesimolekyylien väliset vuorovaikutukset muuttuvat. Energia kasvattaa hiukkasten välistä vuorovaikutusenergiaa. Kertaa luvussa [*Olomuodon muutokset*](fy3-7.html)."
+    },
+    {
+     "text": "Lämpömittari on liian hidas näyttämään lämpötilan nousua sulamisen aikana.",
+     "feedback": "Lämpötila pysyy vakiona, vaikka mittaisit kuinka kauan. Puhtaan aineen sulaminen tapahtuu vakiopaineessa vakiolämpötilassa, koska energia kuluu olomuodon muutokseen. Kertaa luvussa [*Olomuodon muutokset*](fy3-7.html)."
+    }
+   ]
+  },
+  {
+   "id": "testi-10",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY4",
+   "title": "10. Jarrutus",
+   "prompt": "Auto, jonka nopeus on $25{,}0\\,\\text{m/s}$, jarruttaa tasaisesti ja pysähtyy $40{,}0\\,\\text{m}$:n matkalla. Kuinka suuri on auton hidastuvuus eli kiihtyvyyden itseisarvo? Vastaa yksikössä $\\text{m/s}^2$.",
+   "answer": 7.8125,
+   "unit": "m/s²",
+   "tolerance": 0.02,
+   "hints": [
+    "Aikaa ei tunneta. Mikä tasaisesti kiihtyvän liikkeen yhtälö ei sisällä aikaa?",
+    "$v^2 = v_0^2 + 2as$, ja loppunopeus on nolla.",
+    "$a = -\\dfrac{(25{,}0\\,\\text{m/s})^2}{2 \\cdot 40{,}0\\,\\text{m}}$"
+   ],
+   "mistakes": [
+    {
+     "value": 15.625,
+     "feedback": "Unohdit kertoimen $2$: $v_0^2 = 2|a|s$. Kertaa luvussa [*Kiihtyvyys ja tasaisesti kiihtyvä liike*](fy4-2.html)."
+    },
+    {
+     "value": 0.625,
+     "feedback": "Jaoit nopeuden matkalla, mikä ei ole kiihtyvyys. Käytä yhtälöä $v^2 = v_0^2 + 2as$. Kertaa luvussa [*Kiihtyvyys ja tasaisesti kiihtyvä liike*](fy4-2.html)."
+    }
+   ],
+   "solution": "**Annettu:** alkunopeus $v_0 = 25{,}0\\,\\text{m/s}$, loppunopeus $v = 0$, jarrutusmatka $s = 40{,}0\\,\\text{m}$; kiihtyvyys vakio\n\n**Kysytty:** kiihtyvyyden itseisarvo $|a|$ yksikössä $\\text{m/s}^2$\n\n**Periaate:** Auto jarruttaa tasaisesti, joten kiihtyvyys on vakio ja tasaisesti kiihtyvän liikkeen yhtälöt pätevät. Aikaa ei tunneta, joten käytetään yhtälöä, jossa sitä ei ole.\n\n**Kaava:** $v^2 = v_0^2 + 2as$, josta $v = 0$ antaa $a = -\\dfrac{v_0^2}{2s}$\n\n**Muunnokset:** Ei tarvita: nopeus on yksikössä $\\text{m/s}$ ja matka metreinä.\n\n**Sijoitus:** $a = -\\dfrac{(25{,}0\\,\\text{m/s})^2}{2 \\cdot 40{,}0\\,\\text{m}} = -\\dfrac{625\\,\\text{m}^2/\\text{s}^2}{80{,}0\\,\\text{m}} = -7{,}8125\\,\\text{m/s}^2$\n\n**Vastaus:** $|a| \\approx 7{,}81\\,\\text{m/s}^2$, kolme merkitsevää numeroa kuten nopeudessa ja matkassa. Miinusmerkki kertoo, että kiihtyvyys on liikettä vastaan.\n\n**Järkevyys:** Hidastuvuus on noin $0{,}8\\,g$, mikä on kuivalla asfaltilla mahdollinen hätäjarrutus. Jarrutusaika olisi $\\tfrac{25{,}0}{7{,}81}\\,\\text{s} \\approx 3{,}2\\,\\text{s}$, ja keskinopeus $12{,}5\\,\\text{m/s}$ kertaa $3{,}2\\,\\text{s}$ antaa matkaksi $40\\,\\text{m}$."
+  },
+  {
+   "id": "testi-11",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY4",
+   "title": "11. Törmäys",
+   "prompt": "Raskas kuorma-auto ja pieni henkilöauto törmäävät. Miten kuorma-auton henkilöautoon kohdistama voima vertautuu henkilöauton kuorma-autoon kohdistamaan voimaan törmäyksen aikana?",
+   "choices": [
+    {
+     "text": "Yhtä suuret ja vastakkaiset; henkilöauto kiihtyy enemmän pienemmän massansa takia.",
+     "correct": true,
+     "feedback": "Oikein. Voimat ovat saman vuorovaikutuksen voimapari, joten Newtonin kolmannen lain mukaan ne ovat yhtä suuret. Sama voima antaa pienemmälle massalle suuremman kiihtyvyyden. Kertaa luvussa [*Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*](fy4-3.html)."
+    },
+    {
+     "text": "Kuorma-auton voima on suurempi, koska kuorma-autolla on paljon enemmän massaa.",
+     "feedback": "Massa ei tee vuorovaikutuksen voimista erisuuria. Voimapari on aina yhtä suuri; massa vaikuttaa vain siihen, kuinka paljon kumpikin kiihtyy. Kertaa luvussa [*Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*](fy4-3.html)."
+    },
+    {
+     "text": "Nopeammin liikkuneen auton voima on suurempi, koska sillä on enemmän vauhtia.",
+     "feedback": "Nopeus ei tee voimapareista erisuuria. Vuorovaikutuksen voimat ovat yhtä suuret ja vastakkaissuuntaiset liiketilasta riippumatta. Kertaa luvussa [*Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*](fy4-3.html)."
+    },
+    {
+     "text": "Henkilöauton voima on suurempi, koska henkilöauto vaurioituu törmäyksessä enemmän.",
+     "feedback": "Vauriot kertovat kiihtyvyydestä ja rakenteesta, eivät voimien erosta. Henkilöauto saa saman voiman, mutta sen pienempi massa kiihtyy enemmän. Kertaa luvussa [*Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*](fy4-3.html)."
+    }
+   ]
+  },
+  {
+   "id": "testi-12",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY4",
+   "title": "12. Kytkeytyvä törmäys",
+   "prompt": "Liukkaalla tiellä auto, jonka massa on $1250\\,\\text{kg}$ ja nopeus $15{,}0\\,\\text{m/s}$, törmää paikallaan olevaan $850\\,\\text{kg}$:n autoon. Autot jäävät kiinni toisiinsa. Kuinka suuri on autojen yhteinen nopeus heti törmäyksen jälkeen? Renkaiden kitka jätetään törmäyksen lyhyen keston ajalta huomiotta.",
+   "answer": 8.9286,
+   "unit": "m/s",
+   "tolerance": 0.02,
+   "hints": [
+    "Mikä suure säilyy lyhyessä törmäyksessä, kun ulkoiset voimat ovat pieniä?",
+    "Ennen törmäystä liikemäärä on vain liikkuvalla autolla; jälkeen autot liikkuvat yhdessä.",
+    "$v' = \\dfrac{1250\\,\\text{kg} \\cdot 15{,}0\\,\\text{m/s}}{2100\\,\\text{kg}}$"
+   ],
+   "mistakes": [
+    {
+     "value": 15.0,
+     "feedback": "Liikemäärä jakautuu molempien autojen massalle, joten nopeus pienenee. Kertaa luvussa [*Liikemäärän säilyminen ja yksiulotteiset törmäykset*](fy4-10.html)."
+    },
+    {
+     "value": 7.5,
+     "feedback": "Nopeuksien keskiarvo ei ole yhteinen nopeus: autojen massat ovat erisuuret. Käytä liikemäärän säilymistä. Kertaa luvussa [*Liikemäärän säilyminen ja yksiulotteiset törmäykset*](fy4-10.html)."
+    },
+    {
+     "value": 11.57,
+     "feedback": "Tämä tulisi liike-energian säilymisestä. Kiinni jäävässä törmäyksessä liike-energia ei säily, vaan liikemäärä. Kertaa luvussa [*Liikemäärän säilyminen ja yksiulotteiset törmäykset*](fy4-10.html)."
+    }
+   ],
+   "solution": "**Annettu:** $m_1 = 1250\\,\\text{kg}$, $v_1 = 15{,}0\\,\\text{m/s}$, $m_2 = 850\\,\\text{kg}$, $v_2 = 0$; autot jäävät kiinni toisiinsa\n\n**Kysytty:** yhteinen nopeus $v'$ heti törmäyksen jälkeen\n\n**Periaate:** Törmäys kestää lyhyen ajan, ja ulkoiset vaakavoimat, kuten renkaiden kitka, ovat pieniä autojen välisiin voimiin verrattuna. Siksi autojen yhteinen liikemäärä säilyy. Liike-energia ei säily, koska autot muovautuvat.\n\n**Kaava:** $m_1 v_1 + m_2 v_2 = (m_1 + m_2)v'$, josta $v' = \\dfrac{m_1 v_1}{m_1 + m_2}$, kun $v_2 = 0$\n\n**Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja nopeus yksikössä $\\text{m/s}$.\n\n**Sijoitus:** $v' = \\dfrac{1250\\,\\text{kg} \\cdot 15{,}0\\,\\text{m/s}}{1250\\,\\text{kg} + 850\\,\\text{kg}} = \\dfrac{18\\,750\\,\\text{kg}\\cdot\\text{m/s}}{2100\\,\\text{kg}} = 8{,}9286\\,\\text{m/s}$\n\n**Vastaus:** $v' \\approx 8{,}93\\,\\text{m/s}$, kolme merkitsevää numeroa kuten nopeudessa $15{,}0\\,\\text{m/s}$.\n\n**Järkevyys:** Yhteinen nopeus on pienempi kuin törmäävän auton nopeus, koska sama liikemäärä jakautuu suuremmalle massalle. Massa kasvaa $1{,}68$-kertaiseksi, ja nopeus pienenee samassa suhteessa: $15{,}0 : 1{,}68 \\approx 8{,}9$."
+  },
+  {
+   "id": "testi-13",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY5",
+   "title": "13. Liikenneympyrä",
+   "prompt": "Auto ajaa liikenneympyrää tasaisella vauhdilla. Mikä väite auton kiihtyvyydestä on oikein?",
+   "choices": [
+    {
+     "text": "Kohti ympyrän keskipistettä, koska nopeuden suunta muuttuu koko ajan.",
+     "correct": true,
+     "feedback": "Oikein. Nopeus on vektori, ja sen suunnan muutos on kiihtyvyyttä. Tasaisessa ympyräliikkeessä kiihtyvyys on normaalikiihtyvyys, joka osoittaa radan keskipistettä kohti. Kertaa luvussa [*Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*](fy5-4.html)."
+    },
+    {
+     "text": "Kiihtyvyys on nolla, koska nopeuden suuruus eli vauhti ei muutu.",
+     "feedback": "Nopeuden suuruus pysyy samana, mutta suunta muuttuu, ja sekin on kiihtyvyyttä. Ilman kiihtyvyyttä auto jatkaisi suoraan. Kertaa luvussa [*Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*](fy5-4.html)."
+    },
+    {
+     "text": "Poispäin keskipisteestä, koska matkustajat painuvat kaarteessa ulospäin.",
+     "feedback": "Matkustajat pyrkivät jatkamaan suoraan, ja auto kääntyy heidän altaan. Auton kiihtyvyys osoittaa keskipistettä kohti, ja sen aiheuttaa renkaiden ja tien välinen kitka. Kertaa luvussa [*Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*](fy5-4.html)."
+    },
+    {
+     "text": "Liikkeen suuntaan, koska auto liikkuu koko ajan eteenpäin ympyrää pitkin.",
+     "feedback": "Liikkeen suuntainen kiihtyvyys muuttaisi vauhtia, mutta vauhti on vakio. Kiihtyvyys on kohtisuorassa nopeutta vastaan, kohti keskipistettä. Kertaa luvussa [*Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*](fy5-4.html)."
+    }
+   ]
+  },
+  {
+   "id": "testi-14",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY5",
+   "title": "14. Ääniaalto",
+   "prompt": "Viritysrauta värähtelee taajuudella $440\\,\\text{Hz}$. Äänen nopeus huoneen ilmassa on $343\\,\\text{m/s}$. Kuinka pitkä on syntyvän ääniaallon aallonpituus?",
+   "answer": 0.7795,
+   "unit": "m",
+   "tolerance": 0.02,
+   "hints": [
+    "Mikä yhtälö yhdistää aallon nopeuden, taajuuden ja aallonpituuden?",
+    "$v = f\\lambda$; ratkaise $\\lambda$.",
+    "$\\lambda = \\dfrac{343\\,\\text{m/s}}{440\\,\\text{Hz}}$"
+   ],
+   "mistakes": [
+    {
+     "value": 1.283,
+     "feedback": "Jaoit taajuuden nopeudella. Aallonpituus on $\\lambda = \\tfrac{v}{f}$. Kertaa luvussa [*Aaltojen synty ja eteneminen*](fy5-10.html)."
+    },
+    {
+     "value": 150920,
+     "feedback": "Kerroit nopeuden ja taajuuden. Nopeus on aallonpituus kertaa taajuus, joten aallonpituus on $\\tfrac{v}{f}$. Kertaa luvussa [*Aaltojen synty ja eteneminen*](fy5-10.html)."
+    }
+   ],
+   "solution": "**Annettu:** taajuus $f = 440\\,\\text{Hz}$, äänen nopeus $v = 343\\,\\text{m/s}$\n\n**Kysytty:** aallonpituus $\\lambda$ metreinä\n\n**Periaate:** Yhden jaksonajan aikana aalto etenee yhden aallonpituuden verran. Siksi aallon nopeus on aallonpituus kertaa taajuus, ja taajuus on sama kuin lähteen värähtelyn taajuus.\n\n**Kaava:** $v = f\\lambda$, josta $\\lambda = \\dfrac{v}{f}$\n\n**Muunnokset:** Ei tarvita: $1\\,\\text{Hz} = 1\\,\\tfrac{1}{\\text{s}}$, joten $\\tfrac{\\text{m/s}}{\\text{Hz}} = \\text{m}$.\n\n**Sijoitus:** $\\lambda = \\dfrac{343\\,\\text{m/s}}{440\\,\\text{Hz}} = 0{,}77955\\,\\text{m}$\n\n**Vastaus:** $\\lambda \\approx 0{,}780\\,\\text{m}$, kolme merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** Kuultavan äänen aallonpituudet ovat senttimetreistä metreihin, ja $440\\,\\text{Hz}$ on keskialueen sävel. Tarkistus: $0{,}780\\,\\text{m} \\cdot 440\\,\\tfrac{1}{\\text{s}} \\approx 343\\,\\text{m/s}$."
+  },
+  {
+   "id": "testi-15",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY5",
+   "title": "15. Kaksi kaiutinta",
+   "prompt": "Yksi kaiutin tuottaa kuuntelijan kohdalle äänen, jonka intensiteettitaso on $70\\,\\text{dB}$. Viereen kytketään toinen samanlainen kaiutin, joka tuottaa yhtä voimakasta, ensimmäisestä riippumatonta kohinaa. Mikä on intensiteettitaso nyt?",
+   "choices": [
+    {
+     "text": "Noin $73\\,\\text{dB}$, koska intensiteetti kaksinkertaistuu.",
+     "correct": true,
+     "feedback": "Oikein. Kahden toisistaan riippumattoman lähteen intensiteetit summautuvat, joten intensiteetti kaksinkertaistuu. Desibeliasteikko on logaritminen: kaksinkertainen intensiteetti lisää tasoa $10 \\cdot \\lg 2\\,\\text{dB} \\approx 3\\,\\text{dB}$. Kertaa luvussa [*Intensiteetti ja desibeliasteikko*](fy5-15.html)."
+    },
+    {
+     "text": "$140\\,\\text{dB}$, koska kaksi kaiutinta antaa kaksinkertaisen tason.",
+     "feedback": "Desibelit eivät summaudu suoraan, koska asteikko on logaritminen. Intensiteetti kaksinkertaistuu, ja se lisää tasoa vain noin kolme desibeliä. Kertaa luvussa [*Intensiteetti ja desibeliasteikko*](fy5-15.html)."
+    },
+    {
+     "text": "$80\\,\\text{dB}$, koska jokainen uusi lähde lisää tasoa kymmenen desibeliä.",
+     "feedback": "Kymmenen desibelin lisäys vaatisi kymmenkertaisen intensiteetin eli kymmenen kaiutinta. Kaksi kaiutinta antaa noin $73\\,\\text{dB}$. Kertaa luvussa [*Intensiteetti ja desibeliasteikko*](fy5-15.html)."
+    },
+    {
+     "text": "Edelleen $70\\,\\text{dB}$, koska kaiuttimet ovat samanlaiset.",
+     "feedback": "Kaksi lähdettä tuo kuuntelijalle kaksinkertaisen intensiteetin, joten taso kasvaa, vaikka kaiuttimet ovat samanlaiset. Kasvu on noin kolme desibeliä. Kertaa luvussa [*Intensiteetti ja desibeliasteikko*](fy5-15.html)."
+    }
+   ]
+  },
+  {
+   "id": "testi-16",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY6",
+   "title": "16. Mittarit",
+   "prompt": "Opiskelija haluaa mitata pöytälampun läpi kulkevan sähkövirran ja lampun napojen välisen jännitteen yleismittareilla. Miten mittarit kytketään?",
+   "choices": [
+    {
+     "text": "Virtamittari sarjaan lampun kanssa ja jännitemittari rinnan lampun kanssa.",
+     "correct": true,
+     "feedback": "Oikein. Virtamittarin läpi täytyy kulkea sama virta kuin lampun läpi, joten se on sarjassa. Jännitemittari mittaa kahden pisteen potentiaalieron, joten se kytketään lampun napoihin rinnan. Kertaa luvussa [*Mittaukset virtapiirissä*](fy6-2.html)."
+    },
+    {
+     "text": "Molemmat mittarit sarjaan lampun kanssa, jotta virta kulkee niiden läpi.",
+     "feedback": "Jännitemittarin resistanssi on hyvin suuri. Sarjaan kytkettynä se lähes katkaisee virran, eikä lamppu pala. Jännitemittari kytketään rinnan lampun kanssa. Kertaa luvussa [*Mittaukset virtapiirissä*](fy6-2.html)."
+    },
+    {
+     "text": "Virtamittari rinnan lampun kanssa ja jännitemittari sarjaan sen kanssa.",
+     "feedback": "Virtamittarin resistanssi on hyvin pieni. Rinnan kytkettynä se oikosulkee lampun, ja suuri virta voi rikkoa mittarin. Virtamittari kuuluu sarjaan. Kertaa luvussa [*Mittaukset virtapiirissä*](fy6-2.html)."
+    },
+    {
+     "text": "Molemmat mittarit rinnan lampun kanssa, koska mittari ei saa muuttaa piiriä.",
+     "feedback": "Rinnan kytketty virtamittari oikosulkee lampun. Virtamittari on sarjassa, jännitemittari rinnan; kumpikin muuttaa piiriä vain vähän juuri siksi. Kertaa luvussa [*Mittaukset virtapiirissä*](fy6-2.html)."
+    }
+   ]
+  },
+  {
+   "id": "testi-17",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY6",
+   "title": "17. Ohmin laki",
+   "prompt": "Vastuksen napojen välinen jännite kasvatetaan $3{,}0\\,\\text{V}$:sta $6{,}0\\,\\text{V}$:iin. Vastuksen lämpötila pysyy samana, joten sen resistanssi on vakio. Miten vastuksen läpi kulkeva virta muuttuu?",
+   "choices": [
+    {
+     "text": "Virta kaksinkertaistuu, koska se on verrannollinen jännitteeseen.",
+     "correct": true,
+     "feedback": "Oikein. Ohmin lain $U = RI$ mukaan vakioresistanssilla virta on verrannollinen jännitteeseen: $I = \\tfrac{U}{R}$. Kertaa luvussa [*Resistanssi ja Ohmin laki*](fy6-3.html)."
+    },
+    {
+     "text": "Virta puolittuu, koska suurempi jännite vastustaa virtaa enemmän.",
+     "feedback": "Jännite ei vastusta virtaa; se ajaa virtaa piirissä. Vastus on resistanssi, ja kun se on vakio, virta kasvaa jännitteen mukana: $I = \\tfrac{U}{R}$. Kertaa luvussa [*Resistanssi ja Ohmin laki*](fy6-3.html)."
+    },
+    {
+     "text": "Virta pysyy samana, koska jännitelähde antaa aina saman virran.",
+     "feedback": "Virran määrää piirin jännite ja resistanssi, ei lähde yksin. Kun jännite kaksinkertaistuu ja resistanssi pysyy samana, virta kaksinkertaistuu. Kertaa luvussa [*Resistanssi ja Ohmin laki*](fy6-3.html)."
+    },
+    {
+     "text": "Virta nelinkertaistuu, koska virta riippuu jännitteen neliöstä.",
+     "feedback": "Jännitteen neliöön on verrannollinen vastuksen teho $P = \\tfrac{U^2}{R}$, ei virta. Virta on verrannollinen jännitteeseen. Kertaa luvussa [*Resistanssi ja Ohmin laki*](fy6-3.html)."
+    }
+   ]
+  },
+  {
+   "id": "testi-18",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY6",
+   "title": "18. Rinnankytkentä",
+   "prompt": "Kaksi vastusta, $120\\,\\Omega$ ja $180\\,\\Omega$, kytketään rinnan. Kuinka suuri on kytkennän kokonaisresistanssi?",
+   "answer": 72.0,
+   "unit": "Ω",
+   "tolerance": 0.02,
+   "hints": [
+    "Mikä on sama rinnan kytketyillä vastuksilla, ja miten virrat yhdistyvät?",
+    "$\\dfrac{1}{R} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}$: muista lopuksi ottaa käänteisluku.",
+    "$R = \\dfrac{120\\,\\Omega \\cdot 180\\,\\Omega}{300\\,\\Omega}$"
+   ],
+   "mistakes": [
+    {
+     "value": 300,
+     "feedback": "Tämä on sarjaankytkennän resistanssi. Rinnankytkennässä käänteisluvut summautuvat, ja tulos on pienempi kuin kumpikin vastus. Kertaa luvussa [*Vastusten sarja- ja rinnankytkennät*](fy6-4.html)."
+    },
+    {
+     "value": 150,
+     "feedback": "Resistanssien keskiarvo ei ole rinnankytkennän resistanssi. Käytä käänteislukujen summaa. Kertaa luvussa [*Vastusten sarja- ja rinnankytkennät*](fy6-4.html)."
+    },
+    {
+     "value": 0.013889,
+     "feedback": "Tämä on $\\tfrac{1}{R}$ yksikössä $\\tfrac{1}{\\Omega}$. Ota vielä käänteisluku. Kertaa luvussa [*Vastusten sarja- ja rinnankytkennät*](fy6-4.html)."
+    }
+   ],
+   "solution": "**Annettu:** $R_1 = 120\\,\\Omega$, $R_2 = 180\\,\\Omega$, kytkentä rinnan\n\n**Kysytty:** kokonaisresistanssi $R$ ohmeina\n\n**Periaate:** Rinnankytkennässä vastuksilla on sama jännite, ja kokonaisvirta on haaravirtojen summa. Siksi resistanssien käänteisluvut summautuvat.\n\n**Kaava:** $\\dfrac{1}{R} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}$, josta $R = \\dfrac{R_1 R_2}{R_1 + R_2}$\n\n**Muunnokset:** Ei tarvita: molemmat resistanssit ovat ohmeina.\n\n**Sijoitus:** $R = \\dfrac{120\\,\\Omega \\cdot 180\\,\\Omega}{120\\,\\Omega + 180\\,\\Omega} = \\dfrac{21\\,600\\,\\Omega^2}{300\\,\\Omega} = 72{,}0\\,\\Omega$\n\n**Vastaus:** $R \\approx 72{,}0\\,\\Omega$, kolme merkitsevää numeroa kuten resistansseissa.\n\n**Järkevyys:** Rinnankytkennän resistanssi on pienempi kuin pienin yksittäinen resistanssi $120\\,\\Omega$, koska virralle tulee uusi reitti. Tarkistus: $\\tfrac{1}{120} + \\tfrac{1}{180} = \\tfrac{5}{360} = \\tfrac{1}{72}$."
+  },
+  {
+   "id": "testi-19",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY7",
+   "title": "19. Valon taittuminen",
+   "prompt": "Valonsäde tulee ilmasta veden pintaan $40{,}0^\\circ$:n tulokulmassa pinnan normaaliin nähden. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$. Kuinka suuri on taitekulma?",
+   "answer": 28.9,
+   "unit": "°",
+   "tolerance": 0.02,
+   "hints": [
+    "Mihin suuntaan valo taittuu, kun se hidastuu?",
+    "Taittumislaki: $n_1 \\sin\\alpha = n_2 \\sin\\beta$.",
+    "$\\sin\\beta = \\dfrac{\\sin 40{,}0^\\circ}{1{,}33}$, ja kulma saadaan laskimen käänteisfunktiolla."
+   ],
+   "mistakes": [
+    {
+     "value": 58.75,
+     "feedback": "Kerroit taitekertoimella, jolloin kulma kasvoi. Veteen tultaessa valo taittuu normaalia kohti: $\\sin\\beta = \\tfrac{n_1 \\sin\\alpha}{n_2}$. Kertaa tämä moduulissa FY7."
+    },
+    {
+     "value": 30.08,
+     "feedback": "Jaoit kulman taitekertoimella. Taittumislaki koskee kulmien sinejä, ei kulmia. Kertaa tämä moduulissa FY7."
+    }
+   ],
+   "solution": "**Annettu:** tulokulma $\\alpha = 40{,}0^\\circ$, ilman taitekerroin $n_1 = 1{,}00$, veden $n_2 = 1{,}33$\n\n**Kysytty:** taitekulma $\\beta$ asteina normaaliin nähden\n\n**Periaate:** Valo hidastuu siirtyessään ilmasta veteen, joten se taittuu rajapinnassa normaalia kohti. Tulo- ja taitekulman yhteyden antaa taittumislaki.\n\n**Kaava:** $n_1 \\sin\\alpha = n_2 \\sin\\beta$, josta $\\sin\\beta = \\dfrac{n_1 \\sin\\alpha}{n_2}$\n\n**Muunnokset:** Ei tarvita: kulmat ovat asteina, ja taitekertoimilla ei ole yksikköä.\n\n**Sijoitus:** $\\sin\\beta = \\dfrac{1{,}00 \\cdot \\sin 40{,}0^\\circ}{1{,}33} = \\dfrac{0{,}64279}{1{,}33} = 0{,}48330$, joten $\\beta = 28{,}901^\\circ$\n\n**Vastaus:** $\\beta \\approx 28{,}9^\\circ$, kolme merkitsevää numeroa kuten tulokulmassa ja taitekertoimessa.\n\n**Järkevyys:** Taitekulma on pienempi kuin tulokulma, koska valo taittuu optisesti tiheämmässä aineessa normaalia kohti."
+  },
+  {
+   "id": "testi-20",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY7",
+   "title": "20. Induktio",
+   "prompt": "Sauvamagneetti on työnnetty käämin sisään ja pidetään siellä paikallaan. Käämin päihin kytketty jännitemittari näyttää nollaa. Mikä väite on oikein?",
+   "choices": [
+    {
+     "text": "Jännite indusoituu vain, kun käämin läpi kulkeva magneettivuo muuttuu.",
+     "correct": true,
+     "feedback": "Oikein. Induktiolain mukaan indusoitunut jännite on verrannollinen magneettivuon muutosnopeuteen. Paikallaan oleva magneetti antaa vakiovuon, joten jännite on nolla. Kertaa tämä moduulissa FY7."
+    },
+    {
+     "text": "Magneetti on liian heikko; vahvempi paikallaan oleva magneetti indusoisi jännitteen.",
+     "feedback": "Vahvakin magneetti antaa paikallaan vakiovuon, eikä jännitettä indusoidu. Ratkaisevaa on vuon muutos, ei sen suuruus. Kertaa tämä moduulissa FY7."
+    },
+    {
+     "text": "Jännite indusoituisi, jos käämissä kulkisi ensin virta paristosta.",
+     "feedback": "Induktio ei tarvitse paristoa: muuttuva magneettivuo indusoi jännitteen itse. Tässä vuo ei muutu, joten jännite on nolla. Kertaa tämä moduulissa FY7."
+    },
+    {
+     "text": "Käämi on magneetin sisällä oikosulussa, joten mittari ei voi näyttää jännitettä.",
+     "feedback": "Magneetti ei oikosulje käämiä. Jännite on nolla, koska magneettivuo ei muutu. Liikuta magneettia, niin mittari värähtää. Kertaa tämä moduulissa FY7."
+    }
+   ]
+  },
+  {
+   "id": "testi-21",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY7",
+   "title": "21. Virtajohdin kentässä",
+   "prompt": "Suora johdin on homogeenisessa magneettikentässä kohtisuorassa kenttää vastaan. Kentässä olevan johtimen pituus on $25\\,\\text{cm}$, siinä kulkee virta $3{,}0\\,\\text{A}$, ja magneettivuon tiheys on $0{,}40\\,\\text{T}$. Kuinka suuri magneettinen voima johtimeen vaikuttaa?",
+   "answer": 0.3,
+   "unit": "N",
+   "tolerance": 0.02,
+   "hints": [
+    "Mistä suureista johtimeen vaikuttava voima riippuu, kun johdin on kohtisuorassa kenttää vastaan?",
+    "$F = IlB$; muunna pituus metreiksi.",
+    "$F = 3{,}0\\,\\text{A} \\cdot 0{,}25\\,\\text{m} \\cdot 0{,}40\\,\\text{T}$"
+   ],
+   "mistakes": [
+    {
+     "value": 30,
+     "feedback": "Käytit pituutta senttimetreinä. Muunna: $25\\,\\text{cm} = 0{,}25\\,\\text{m}$. Kertaa tämä moduulissa FY7."
+    },
+    {
+     "value": 0.75,
+     "feedback": "Unohdit vuon tiheyden: $F = IlB$. Kertaa tämä moduulissa FY7."
+    }
+   ],
+   "solution": "**Annettu:** $l = 25\\,\\text{cm}$, $I = 3{,}0\\,\\text{A}$, $B = 0{,}40\\,\\text{T}$; johdin kohtisuorassa kenttää vastaan\n\n**Kysytty:** johtimeen vaikuttava magneettinen voima $F$\n\n**Periaate:** Magneettikenttä kohdistaa voiman johtimessa liikkuviin varauksiin. Kun johdin on kohtisuorassa kenttää vastaan, voima on suurin ja verrannollinen virtaan, pituuteen ja vuon tiheyteen.\n\n**Kaava:** $F = IlB$\n\n**Muunnokset:** $25\\,\\text{cm} = 25 \\cdot 10^{-2}\\,\\text{m} = 0{,}25\\,\\text{m}$\n\n**Sijoitus:** $F = 3{,}0\\,\\text{A} \\cdot 0{,}25\\,\\text{m} \\cdot 0{,}40\\,\\text{T} = 0{,}30\\,\\text{N}$\n\n**Vastaus:** $F \\approx 0{,}30\\,\\text{N}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** Yksiköt: $\\text{A}\\cdot\\text{m}\\cdot\\text{T} = \\text{N}$. Voima vastaa noin $30\\,\\text{g}$:n painoa, mikä sopii koulun magneetin ja muutaman ampeerin virran kokeeseen."
+  },
+  {
+   "id": "testi-22",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY8",
+   "title": "22. Valosähköinen ilmiö",
+   "prompt": "Puhtaaseen sinkkilevyyn osuu ensin voimakas punainen valo ja sitten ultraviolettilampun heikko valo. Levystä irtoaa elektroneja vain ultraviolettivalossa. Mikä selittää havainnon?",
+   "choices": [
+    {
+     "text": "Ultraviolettifotonin energia ylittää sinkin irrotustyön, punaisen fotonin ei.",
+     "correct": true,
+     "feedback": "Oikein. Valo luovuttaa energiaa fotoneina, joiden energia on $E = hf$. Yksi fotoni irrottaa yhden elektronin vain, jos sen energia on vähintään irrotustyön suuruinen. Voimakkuus kertoo vain fotonien määrän. Kertaa luvussa [*Valosähköinen ilmiö ja fotoni*](fy8-1.html)."
+    },
+    {
+     "text": "Punaista valoa on liian vähän; vielä voimakkaampi punainen valo irrottaisi elektroneja.",
+     "feedback": "Voimakkaampi valo tuo enemmän fotoneja, mutta jokaisen fotonin energia pysyy samana. Jos yksi punainen fotoni ei riitä, ei riitä moni erikseenkään. Kertaa luvussa [*Valosähköinen ilmiö ja fotoni*](fy8-1.html)."
+    },
+    {
+     "text": "Punainen valo lämmittää levyä, ja lämpö sitoo elektronit tiukemmin metalliin.",
+     "feedback": "Lämpeneminen ei selitä ilmiötä. Ratkaisevaa on yhden fotonin energia $hf$, joka punaisella valolla jää pienemmäksi kuin sinkin irrotustyö. Kertaa luvussa [*Valosähköinen ilmiö ja fotoni*](fy8-1.html)."
+    },
+    {
+     "text": "Ultraviolettivalossa on aina enemmän fotoneja kuin punaisessa valossa.",
+     "feedback": "Heikossa ultraviolettivalossa on vähän fotoneja. Elektroneja irtoaa, koska jokaisella ultraviolettifotonilla on riittävästi energiaa. Kertaa luvussa [*Valosähköinen ilmiö ja fotoni*](fy8-1.html)."
+    }
+   ]
+  },
+  {
+   "id": "testi-23",
+   "stage": "sovella",
+   "type": "choice",
+   "fold": "Kertaustesti FY8",
+   "title": "23. Viivaspektri",
+   "prompt": "Vetykaasua sisältävän purkausputken valo hajotetaan hilalla. Spektrissä näkyy vain muutama erillinen värillinen viiva. Mitä tämä kertoo vetyatomista?",
+   "choices": [
+    {
+     "text": "Atomin energia voi olla vain tiettyjä arvoja; fotonin energia on tasojen erotus.",
+     "correct": true,
+     "feedback": "Oikein. Kun elektroni siirtyy ylemmältä energiatasolta alemmalle, atomi lähettää fotonin, jonka energia on tasojen erotus $hf = E_\\text{ylä} - E_\\text{ala}$. Erilliset tasot antavat erilliset viivat. Kertaa luvussa [*Spektrit paljastavat atomin energiatasot*](fy8-2.html)."
+    },
+    {
+     "text": "Hila päästää läpi vain osan väreistä, joten muut värit puuttuvat spektristä.",
+     "feedback": "Hila hajottaa valon kaikki aallonpituudet eri suuntiin; se ei poista värejä. Viivat kertovat, että vety lähettää vain tiettyjä aallonpituuksia. Kertaa luvussa [*Spektrit paljastavat atomin energiatasot*](fy8-2.html)."
+    },
+    {
+     "text": "Vetykaasu on liian kylmää säteilemään jatkuvaa spektriä kaikilla aallonpituuksilla.",
+     "feedback": "Viivat eivät johdu kaasun lämpötilasta vaan atomin energiatasoista. Harvan kaasun atomit lähettävät vain tasojen erotusta vastaavia fotoneja. Kertaa luvussa [*Spektrit paljastavat atomin energiatasot*](fy8-2.html)."
+    },
+    {
+     "text": "Atomi voi säteillä minkä tahansa energian, mutta silmä erottaa vain muutaman värin.",
+     "feedback": "Spektrometri erottaisi jatkuvan spektrin kaikki värit. Erilliset viivat syntyvät, koska atomin energiatasot ovat erillisiä. Kertaa luvussa [*Spektrit paljastavat atomin energiatasot*](fy8-2.html)."
+    }
+   ]
+  },
+  {
+   "id": "testi-24",
+   "stage": "sovella",
+   "type": "numeric",
+   "fold": "Kertaustesti FY8",
+   "title": "24. Vedyn punainen viiva",
+   "prompt": "Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Elektroni siirtyy tasolta $n = 3$ tasolle $n = 2$. Laske syntyvän fotonin aallonpituus nanometreinä. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+   "answer": 656.5,
+   "unit": "nm",
+   "tolerance": 0.02,
+   "hints": [
+    "Mikä on fotonin energia, kun elektroni siirtyy tasolta toiselle?",
+    "$E_3 - E_2 = 13{,}6\\,\\text{eV} \\cdot (\\tfrac{1}{4} - \\tfrac{1}{9})$; muunna jouleiksi.",
+    "$\\lambda = \\dfrac{hc}{E_3 - E_2}$"
+   ],
+   "mistakes": [
+    {
+     "value": 91.2,
+     "feedback": "Käytit koko ionisaatioenergiaa $13{,}6\\,\\text{eV}$. Fotonin energia on tasojen $3$ ja $2$ erotus. Kertaa luvussa [*Vetyatomin energiatasot ja Bohrin malli*](fy8-3.html)."
+    },
+    {
+     "value": 364.7,
+     "feedback": "Käytit vain tason $2$ energiaa $3{,}40\\,\\text{eV}$. Fotonin energia on tasojen erotus $E_3 - E_2$. Kertaa luvussa [*Vetyatomin energiatasot ja Bohrin malli*](fy8-3.html)."
+    }
+   ],
+   "solution": "**Annettu:** $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$, siirtymä $n = 3 \\to n = 2$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$\n\n**Kysytty:** fotonin aallonpituus $\\lambda$ nanometreinä\n\n**Periaate:** Kun elektroni siirtyy alemmalle tasolle, atomi lähettää fotonin, jonka energia on tasojen erotus. Fotonin energia ja aallonpituus liittyvät toisiinsa yhtälöllä $E = \\tfrac{hc}{\\lambda}$.\n\n**Kaava:** $E = E_3 - E_2$ ja $E = \\dfrac{hc}{\\lambda}$, josta $\\lambda = \\dfrac{hc}{E_3 - E_2}$\n\n**Muunnokset:** Energia jouleiksi: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Lopuksi $1\\,\\text{nm} = 10^{-9}\\,\\text{m}$.\n\n**Sijoitus:** $E_3 - E_2 = 13{,}6\\,\\text{eV} \\cdot (\\tfrac{1}{4} - \\tfrac{1}{9}) = 1{,}8889\\,\\text{eV} = 1{,}8889 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 3{,}0260 \\cdot 10^{-19}\\,\\text{J}$ Osoittajassa on $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$, joten $\\lambda = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{3{,}0260 \\cdot 10^{-19}\\,\\text{J}} = 6{,}5647 \\cdot 10^{-7}\\,\\text{m}$\n\n**Vastaus:** $\\lambda \\approx 656\\,\\text{nm}$, kolme merkitsevää numeroa kuten energiassa $13{,}6\\,\\text{eV}$.\n\n**Järkevyys:** $656\\,\\text{nm}$ on näkyvää punaista valoa, ja juuri punainen viiva on vedyn spektrin kirkkain näkyvä viiva. Fotonin energia $1{,}89\\,\\text{eV}$ on näkyvän valon energioiden $1{,}6$–$3{,}3\\,\\text{eV}$ alueella."
+  },
+  {
+   "id": "check-1",
+   "stage": "tarkista",
+   "type": "choice",
+   "title": "1. Tehtäväsana",
+   "prompt": "Tehtävässä annetaan taulukko jousen venymästä eri kuormilla ja pyydetään määrittämään jousivakio graafisesti. Mikä vastaus täyttää tehtävänannon?",
+   "choices": [
+    {
+     "text": "Pisteet kuvaajaan, niihin sovitetaan suora, ja jousivakio on suoran kulmakerroin.",
+     "correct": true,
+     "feedback": "Oikein. Graafinen määritys tarkoittaa, että tulos luetaan kuvaajaan sovitetusta suorasta ja lukeminen näytetään: kaksi suoran pistettä tai ohjelman sovitteen yhtälö."
+    },
+    {
+     "text": "Jousivakio lasketaan jokaisesta taulukon rivistä, ja tuloksista otetaan keskiarvo.",
+     "feedback": "Laskeminen riveittäin ei ole graafinen määritys, eikä se paljasta poikkeavaa pistettä tai suoran leikkauskohtaa. Piirrä kuvaaja ja lue kulmakerroin sovitteesta."
+    },
+    {
+     "text": "Pisteet yhdistetään murtoviivaksi, ja jousivakio luetaan viimeisestä pisteestä.",
+     "feedback": "Murtoviiva ei ole malli, ja yksi piste sisältää yhden mittauksen virheen. Sovita pisteisiin suora ja lue sen kulmakerroin."
+    },
+    {
+     "text": "Jousivakio lasketaan taulukon kahdesta ensimmäisestä rivistä kulmakertoimena.",
+     "feedback": "Kahdesta vierekkäisestä mittauspisteestä laskettu kulmakerroin korostaa mittausvirheitä, eikä se ole graafinen määritys. Lue kulmakerroin kaikkiin pisteisiin sovitetusta suorasta."
+    }
+   ],
+   "practice": "Kertaa kuvaajan piirtäminen ja kulmakerroin luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
+  },
+  {
+   "id": "check-2",
+   "stage": "tarkista",
+   "type": "numeric",
+   "title": "2. Täydellinen ratkaisu",
+   "prompt": "Lähijuna kiihtyy asemalta levosta tasaisesti nopeuteen $72\\,\\text{km/h}$ ajassa $45\\,\\text{s}$. Ratkaise vihkoon täydellisesti, ja anna junan kiihtyvyys yksikössä $\\text{m/s}^2$ oikealla tarkkuudella.",
+   "answer": 0.4444,
+   "unit": "m/s²",
+   "tolerance": 0.02,
+   "hints": [
+    "Mikä on kiihtyvyyden määritelmä, kun kiihtyvyys on vakio?",
+    "Muunna nopeus: $72\\,\\text{km/h} = \\tfrac{72}{3{,}6}\\,\\text{m/s}$.",
+    "$a = \\dfrac{20\\,\\text{m/s}}{45\\,\\text{s}}$"
+   ],
+   "mistakes": [
+    {
+     "value": 0.4,
+     "feedback": "Pyöristit liikaa: lähtöarvoissa on kaksi merkitsevää numeroa, joten vastaus on $0{,}44\\,\\text{m/s}^2$."
+    },
+    {
+     "value": 1.6,
+     "feedback": "Unohdit muuntaa nopeuden: $72\\,\\text{km/h} = 20\\,\\text{m/s}$."
+    },
+    {
+     "value": 900,
+     "feedback": "Kerroit nopeuden ja ajan. Kiihtyvyys on nopeuden muutos jaettuna ajalla."
+    }
+   ],
+   "solution": "**Annettu:** alkunopeus $v_0 = 0$, loppunopeus $v = 72\\,\\text{km/h}$, aika $\\Delta t = 45\\,\\text{s}$; kiihtyvyys tasainen\n\n**Kysytty:** kiihtyvyys $a$ yksikössä $\\text{m/s}^2$\n\n**Periaate:** Juna kiihtyy tasaisesti, joten kiihtyvyys on vakio ja yhtä suuri kuin nopeuden muutos jaettuna siihen kuluneella ajalla.\n\n**Kaava:** $a = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v - v_0}{\\Delta t}$\n\n**Muunnokset:** $72\\,\\text{km/h} = \\dfrac{72 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 20\\,\\text{m/s}$\n\n**Sijoitus:** $a = \\dfrac{20\\,\\text{m/s} - 0}{45\\,\\text{s}} = 0{,}4444\\,\\text{m/s}^2$\n\n**Vastaus:** $a \\approx 0{,}44\\,\\text{m/s}^2$, kaksi merkitsevää numeroa kuten nopeudessa $72\\,\\text{km/h}$ ja ajassa $45\\,\\text{s}$.\n\n**Järkevyys:** Kiihtyvyys on alle $5\\,\\%$ putoamiskiihtyvyydestä, mikä sopii junalle, jossa matkustajat seisovat. Tarkistus: $0{,}444\\,\\text{m/s}^2 \\cdot 45\\,\\text{s} = 20\\,\\text{m/s}$.",
+   "practice": "Kertaa kiihtyvyys luvussa [*Kiihtyvyys ja tasaisesti kiihtyvä liike*](fy4-2.html)."
+  },
+  {
+   "id": "check-3",
+   "stage": "tarkista",
+   "type": "explain",
+   "title": "3. Selitä",
+   "prompt": "Pyöräilijä kaatuu ja lyö päänsä katuun. Selitä fysiikan käsittein, miksi pyöräilykypärä pienentää päähän kohdistuvaa voimaa.",
+   "criteria": [
+    "Vastaus kertoo, että pään liikemäärä muuttuu iskussa samalla tavalla kypärän kanssa ja ilman: nopeus muuttuu nollaksi.",
+    "Vastaus kertoo, että liikemäärän muutos on yhtä suuri kuin voiman impulssi $F\\Delta t$.",
+    "Vastaus kertoo, että kypärän pehmeä kerros painuu kasaan ja pidentää pysähtymisaikaa.",
+    "Vastaus päättelee, että kun aika pitenee, sama liikemäärän muutos vaatii pienemmän keskimääräisen voiman."
+   ],
+   "model": "Iskussa pään nopeus muuttuu lyhyessä ajassa nollaksi, joten sen liikemäärä muuttuu saman verran kypärän kanssa ja ilman. Impulssiperiaatteen mukaan liikemäärän muutos on yhtä suuri kuin päähän kohdistuvan voiman impulssi: $F\\Delta t = \\Delta p$. Kypärän kova kuori levittää iskun, ja sen alla oleva solumuovi painuu kasaan. Silloin pään pysähtyminen kestää kauemmin, eli $\\Delta t$ kasvaa. Koska $\\Delta p$ pysyy samana, keskimääräinen voima $F = \\tfrac{\\Delta p}{\\Delta t}$ pienenee. Pienempi voima tarkoittaa pienempää hidastuvuutta ja vähemmän vammoja.",
+   "practice": "Kertaa impulssi luvussa [*Liikemäärä ja impulssi*](fy4-9.html) ja turvavarusteet luvussa [*Liikenneturvallisuus: jarrutus, turvavyö ja turvatyyny*](fy4-11.html)."
+  },
+  {
+   "id": "lahtolippu",
+   "stage": "tarkista",
+   "type": "exit",
+   "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+  }
+ ]
+}

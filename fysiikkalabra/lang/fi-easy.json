@@ -1937,6 +1937,7 @@
     "also": "Hyväksytään myös",
     "practise_more": "Harjoittele lisää:",
     "practise_link": "{{competency}}, luku {{chapter}}",
+    "skills": "Taidot luvuista:",
     "course_lead": "Moduulin lopuksi voit kokeilla, osaatko käyttää oppimaasi itse niin kuin ylioppilaskokeessa. Mallivastaukset ja pisteytysohjeet aukeavat, kun olet ratkaissut tehtävän itse.",
     "course_count": "{{tasks}} · {{points}}",
     "kind_own": "oma työ",
@@ -2431,5 +2432,24 @@
       "h": "tunnissa",
       "min": "minuutissa"
     }
+  },
+  "mixer": {
+    "title": "YO-sekoitin",
+    "description": "Kaikki sivuston ylioppilaskokeen kaltaiset tehtävät samalla sivulla. Voit valita moduulin, taidon tai tehtävän tyypin tai arpoa kolme tehtävää.",
+    "lead": "Tällä sivulla ovat kaikki sivuston ylioppilaskokeen kaltaiset tehtävät. Ne ovat moduulien Sovella itsenäisesti -osioista ja kertauskurssin tunneilta. Jokaisessa tehtävässä lukee, minkä lukujen taitoja tarvitset.",
+    "howto": "Valitse moduuli, taito tai tehtävän tyyppi. Voit myös arpoa kolme tehtävää. Ratkaise tehtävä ensin itse. Avaa sitten tehtävän sivulla mallivastaus ja pisteet.",
+    "filter_label": "Valitse tehtäviä",
+    "search": "Etsi tehtävää",
+    "module": "Moduuli",
+    "competency": "Taito",
+    "kind": "Tehtävän tyyppi",
+    "kind_calc": "laskutehtävä",
+    "kind_graph": "kuvaaja ja aineisto",
+    "kind_word": "selitys tai suunnitelma",
+    "random": "Arvo kolme tehtävää",
+    "count": "Näkyy {shown}/{total} tehtävää",
+    "none": "Mikään tehtävä ei sovi valintoihin. Valitse Näytä kaikki.",
+    "course_heading": "YO-sekoitin",
+    "course_lead": "Kaikki ylioppilaskokeen kaltaiset tehtävät samalla sivulla. Voit valita tehtäviä tai arpoa niitä."
   }
 }

@@ -23,6 +23,8 @@ A course's fields (all texts in the language of the file):
   sessions                               optional: about how many lessons the course is taught in; the front page
                                          says "about N lessons" instead of counting the units (FY14: 16)
   overview                               optional: one paragraph after the chapters' lead (FY14: sessions, ★, Fotoni)
+  mixer                                  optional: true links the YO-sekoitin page (scripts/mixer.py) from the course
+                                         page and has build.py build it in every language that publishes the course
   pathway                                investigation ids in the course's order; the course page lists its published
                                          investigations in this order, any others after them by title
   python scripts/local_courses.py        validate the registry (also run by build.py and test_home.py)
@@ -106,6 +108,9 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
             out += (f'<li class="unit-chapter"><h3><span class="l-num">{i}</span><span{lang_attr}>{esc(ch["title"])}</span></h3>'
                     f'<p class="local-why"{lang_attr}>{esc(ch["question"])}</p><ol class="lessons">{items}</ol></li>')
         out += "</ol>"
+    if c.get("mixer"):                   # the YO-sekoitin: every exam-style task of the site (scripts/mixer.py)
+        out += (f'<h2 id="sekoitin">{T("mixer.course_heading")}</h2><p class="section-lead">{T("mixer.course_lead")}</p>'
+                f'<ul class="lessons practice-link"><li class="live"><a href="yo-sekoitin.html">{T("mixer.title")}</a></li></ul>')
     if investigations:                   # the course's published investigations: canonical pages it refers to, never copies
         import investigations as inv     # the bank with its filter (teacher 2026-10-31)
         order = {i: n for n, i in enumerate(c.get("pathway", []))}

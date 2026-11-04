@@ -30,6 +30,9 @@ pronunciation, videos, the timeline, the map and the explorers), placed in the t
         answers to graded work or anything confidential
   content/<lang>/units/<id>/review/      science.md, pedagogy.md and visual.md, as a lesson's
   lessons/units/<id>/figures.py          the figures (scripts/figlib.py), optional
+  content/<lang>/units/<id>/sovella/     optional: the unit's own exam-style task set in the Sovella itsenäisesti format
+        (tasks.json, solutions.md; answers.py and figures.py in lessons/units/<id>/sovella/), checked by practice.py
+        under the key units/<id>, part of the unit's hash and reviews, shown last on the page as its Tehtävät (FY9)
 
 The content hash covers the four texts, figures.py, the simulation folder and every course asset the text refers
 to (units/<course>/data/…, units/<course>/pics/…), so a changed data file or photograph needs a new review like
@@ -43,7 +46,7 @@ import courses, i18n
 ROOT = courses.ROOT
 DIR = "units"
 TEXTS = ("unit.json", "unit.md", "inquiry.json", "teacher.md")
-KINDS = ("physics", "history", "clil", "french", "lab", "explorer")
+KINDS = ("physics", "history", "clil", "french", "lab", "explorer", "review")   # review: a lesson of the exam review course FY9
 SUBJECTS = ("physics", "english", "french")
 ASSET_REF = re.compile(r"""(?:src=\\?["']|data-src=\\?["']|\]\()(units/[a-z0-9]+/[^"'\\)\s]+)""")   # also inside inquiry.json, where quotes are \"
 esc = lambda s: _h.escape(str(s), quote=True)
@@ -107,7 +110,14 @@ def content_hash(uid, lang):
     for ref in asset_refs(uid, lang):
         f = asset_source(ref)
         if f.is_file(): h.update(ref.encode() + b"\0" + f.read_bytes() + b"\0")
+    if has_tasks(uid, lang):                             # the unit's own task set (scripts/practice.py): reviewed with the unit
+        import practice
+        h.update(b"sovella\0" + practice.content_hash(task_key(uid), lang).encode() + b"\0")
     return h.hexdigest()[:16]
+
+
+def task_key(uid): return f"units/{uid}"                 # practice.py's key of the unit's task set
+def has_tasks(uid, lang): return (folder(uid, lang) / "sovella" / "tasks.json").is_file()
 
 
 def status(uid, lang):
@@ -167,6 +177,9 @@ def check(uid, lang):
         was = i18n.t.lang; i18n.set_lang(lang)
         try: errs += [f"{where}: {e}" for e in inquiry.validate(folder(uid, lang), json.loads(inq_f.read_text()), md)]
         finally: i18n.set_lang(was)
+    if has_tasks(uid, lang):                             # the unit's task set: the checks of Sovella itsenäisesti
+        import practice
+        errs += [f"{where}: {e}" for e in practice.check(task_key(uid), lang)]
     for kind in re.findall(r'data-fx="([\w-]+)"', allt):
         if not (ROOT / "assets" / "units" / d.get("course", "").lower() / "fx" / f"{kind}.js").is_file():
             errs.append(f"{where}: component data-fx=\"{kind}\" has no assets/units/{d.get('course', '').lower()}/fx/{kind}.js")

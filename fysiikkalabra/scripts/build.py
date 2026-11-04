@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, module_icons, practice, reading_tips, svgids, units
+import answers_shown, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -549,9 +549,13 @@ def build_units(lang, out, unit_pub):
                 f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>{T('lesson.answer')}</summary><div class=\"answer-body\">{nbsp_units(render_md(q['a']))}</div></details></li>"
                 for q in exit_q) + "</ol></div>")
         md = lambda t: nbsp_units(render_md(t))
-        body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": "", "exit": exit_html}, md)
-        for key in ("check_practice", "further_practice"):   # a unit has no exercises section: point to the theory summary only
-            body = body.replace(T(f"inquiry.{key}"), re.sub(r'(,| and)[^<]*<a href="#exercises">[^<]*</a>', "", T(f"inquiry.{key}")))
+        tasks_html = ""                                  # the unit's own task set (FY9): its Tehtävät, last on the page
+        if units.has_tasks(uid, lang):
+            tasks_html, _ = practice.render(units.task_key(uid), lang, md, solution_html, T("practice.title"), embedded=True)
+        body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": tasks_html, "exit": exit_html}, md)
+        if not tasks_html:
+            for key in ("check_practice", "further_practice"):   # a unit without tasks has no exercises section: point to the theory summary only
+                body = body.replace(T(f"inquiry.{key}"), re.sub(r'(,| and)[^<]*<a href="#exercises">[^<]*</a>', "", T(f"inquiry.{key}")))
         tail = units.tail_html(uid, lang, T, md, teacher=bool(only or build_all))   # sources and teacher notes: previews only
         if "id=\"sources\"" in tail: toc += f'<a href="#sources" class="toc-end"><span class="toc-label">{T("units.sources")}</span></a>'
         cdir = ROOT / "assets" / "units" / code.lower()
@@ -570,7 +574,8 @@ def build_units(lang, out, unit_pub):
         html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", code).replace("{{notice}}", notice_html)
                 .replace("{{strings}}", block + head).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
                 .replace("{{toc}}", toc).replace("{{main}}", f'<article id="teoria" class="inquiry unit unit-{d["kind"]}" data-course="{code.lower()}">{body}{tail}</article>' + units.course_nav(uid, lang, T, published) + embedded)
-                .replace("{{scripts}}", f'<script src="inquiry.js"></script><script src="units/{code.lower()}/units.js"></script>')
+                .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "")
+                         + (f'<script src="units/{code.lower()}/units.js"></script>' if cdir.is_dir() else ""))
                 .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{uid}.html")
                 .replace("{{home}}", HOME).replace("{{languages}}", ""))
         (out / f"{uid}.html").write_text(rebase(html))
@@ -842,6 +847,13 @@ def build_language(lang):
                                                                                                   guides.course_section(T, published, lang) if code == "FY10" else "", cu)
                                                 + '<script src="invfilter.js"></script>',
                                                 f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", c["description"]))
+    mixer_built = []                             # the YO-sekoitin (scripts/mixer.py): every language, when a local course asks for it
+    mcode = next((code for code, c in local_courses.load().items() if c.get("mixer")), None)
+    if mcode:
+        crumb = f' › <a href="{mcode}.html">{mcode}</a>' if mcode in local else ""   # the course page only where this language has it
+        (out / mixer.PAGE).write_text(page(T("mixer.title"), mixer.page_body(T, mixer.items(lang, T, list(practice_built), unit_pub)) + '<script src="invfilter.js"></script>',
+                                           f'<a href="index.html">{T("site.name")}</a>{crumb} › {T("mixer.title")}', mixer.PAGE, T("mixer.description")))
+        mixer_built.append(mixer.PAGE)
     local_notes = "".join(f'<p class="unavailable" id="unavailable-{code}" role="note" tabindex="-1">'
                           f'{T("site.local_unavailable_note", title=esc(code + " " + c["title"]))}</p>'
                           for code, c in local_courses.load().items() if code not in local)
@@ -883,7 +895,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built]
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + mixer_built
                     + [f"{u}.html" for u, ul in unit_pub.items() if ul == lang and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):
