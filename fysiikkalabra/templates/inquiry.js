@@ -204,6 +204,31 @@
     const link = simHome.querySelector('a'); link.href = '#' + id; link.textContent = title;
     simHome.hidden = false;
   };
+  // The sticky column (.lab-side) never scrolls inside itself (Lauri 2026-11-04). When it is taller than the window it
+  // moves with the page until its far edge is in view and sticks there: scrolling down shows its lower part (the
+  // controls), scrolling back up brings the picture back, so the page scroll alone reaches all of it.
+  const labSide = simEl && simEl.closest('.lab-side');
+  if (labSide) {
+    let lastY = window.scrollY, lastTop = null, frame = 0;
+    const fit = () => {
+      frame = 0;
+      const dy = window.scrollY - lastY; lastY = window.scrollY;
+      labSide.style.top = '';
+      const cs = getComputedStyle(labSide);
+      if (cs.position !== 'sticky') { lastTop = null; return; }
+      const maxTop = parseFloat(cs.top) || 0, minTop = Math.min(maxTop, window.innerHeight - 12 - labSide.offsetHeight);
+      if (minTop === maxTop) { lastTop = maxTop; return; }
+      const t = Math.max(minTop, Math.min(maxTop, (lastTop === null ? maxTop : lastTop - dy)));
+      labSide.style.top = Math.round(t) + 'px';
+      lastTop = Math.max(t, labSide.getBoundingClientRect().top);   // where it really is (not stuck yet: its own place)
+      lastTop = Math.min(lastTop, maxTop);
+    };
+    const queue = () => { if (!frame) frame = requestAnimationFrame(fit); };
+    window.addEventListener('scroll', queue, { passive: true });
+    window.addEventListener('resize', queue);
+    if (window.ResizeObserver) new ResizeObserver(queue).observe(labSide);
+    fit();
+  }
   const bringSim = (ex, id) => { activeExp = { ex, id }; markActive(); placeSim(); };
   let resizing = false;
   window.addEventListener('resize', () => { if (!resizing) { resizing = true; requestAnimationFrame(() => { resizing = false; placeSim(); }); } });
