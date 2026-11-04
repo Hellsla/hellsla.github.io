@@ -1,17 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 0bf9852097a178ac
+VERDICT: PASS
+CONTENT-HASH: 24a052823c292853
 
 ## Blocking
-- fy5-7/exercises/solutions.md:195 (L3-05, Järkevyys / part c) — A, new error from round 1: "ennuste ulottuu yli kolme jaksoa mittausalueen ohi". The measurement ends at 1,6 s, so 5,0 s lies 3,4 s = 2,1 periods past it; 3,125 periods is counted from t = 0. Fix: "ennuste ulottuu yli kaksi jaksoa (3,4 s) mittausalueen ohi" or "kolme jaksoa hetkestä t = 0".
 
 ## Polish
-- fy5-7/exercises/solutions.md L3-05 — the c) model answer lost its note that damping would add to the error; the task assumes no damping, so this is optional.
-- fy5-7/exercises/exercises.json L1-02 and L2-04 — the answer fields are now 5.1 and 7.5, but the solutions say 5,10 ms and 7,50 cm (three significant figures). The value is the same, but the fields could say 5.10 and 7.50 again.
+- fy5-7/exercises/solutions.md L3-05 — the c) model answer could mention again that damping would add to the error. This is optional, because the task assumes no damping.
 
 ## Checked
-- Round-1 Polish items are done: L3-05 now gives 44 cm with two significant figures, justified by T read at 0,2 s steps; L3-04 says "lyönti 6 eli kuudennen lyöntivälin loppu"; L2-06's part b) is under Vastaus, with a new Järkevyys check (t10/10 = 1,48…1,54 s is correct); L3-05's "graph" kind is removed; L2-07's wording is clarified.
-- In the reordered MC options of L1-06 and L1-08, exactly one option is correct. The answer string equals the correct option's text, and each feedback matches its option.
+- Round-2 Blocking is fixed: solutions.md:195 now says "yli kaksi jaksoa (3,4 s) mittausalueen ohi", which is right, since 5,0 s − 1,6 s = 3,4 s = 2,1 periods.
+- L1-02 and L2-04 answer fields are back to 5.10 and 7.50, which match the three significant figures in their solutions.
+- The diff since round 2 contains only these three lines; answers.py is unchanged.
 - I recomputed every new answer in one script: L1-07 25 s, L2-05 1,639 Hz, L2-06 1,51 s, L2-07 1,342 Hz, L3-04 79,06 %, L3-05 44,24 cm (field 44, inside the 2 % tolerance). All agree with answers.py.
-- L3-05's c) check is right: with T = 1,62 s the prediction is 43,1 cm.
-- The rest of the set is unchanged since round 1, with the same physics, scope and notation.
+- MC tasks L1-06 and L1-08 each have exactly one correct option, and the answer string equals it.
+- The round-1 Polish items are applied: L3-05 now gives 44 cm with two significant figures and says why; the L3-04 beat wording is fixed; L2-06 has its part b) under Vastaus; the "graph" kind is removed from L3-05.
+- Physics, scope and notation are unchanged and match the lesson.
 - The hash was identical at the start and the end.

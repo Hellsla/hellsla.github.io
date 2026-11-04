@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 780ee5441798b468
+CONTENT-HASH: fe1b8f9cccc55b9a
 
 ## Blocking
 
 ## Polish
-- [Minor] none of substance; the round-1 Polish notes were taken up or need no change.
+- [Minor] none.
 
 ## Checked
-- Round 2 delta against hash 780ee5441798b468: contact-6/7 (#61–#84) after the fixes: reordered and reworded MC rows in L1-06..08, L2-05/06 solutions, L3-05 (5-20) now with part b (T=6,0 h, answer 575 N) and its solution block render inside their cards; no overflow.
-- Script scan of the new tasks: no plain-text quantities, no ×/÷.
-- No 360 px exercise capture in the packet; the 360 px layout check is ok.
+- Round 3 delta against hash fe1b8f9cccc55b9a: solution 5-20 Periaate, 'keskipistettä' now correct in all four places; text-only, formula and layout unchanged; earlier captures of the chapter remain valid, layout checks ok.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 5 · accessibility 5
