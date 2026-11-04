@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 37e15a3d153f0c4c
-
-Delta review over the audit's PASS (a3a64a7608c7dd0a): L2-01 replaced by a compression task with a rising piston-force graph (figure fy3-5/piston-force).
+CONTENT-HASH: ec64640943cb91d8
 
 ## Blocking
 - none
+
 ## Polish
-- Task wording 'negatiivinen $Q$ tarkoittaa, että lämpöä siirtyy ilmasta pois' explains the sign; acceptable at L2, but it nudges the sign. Optional: drop the explanation and keep 'etumerkkeineen'.
-- Documented range -14,5...-15,5 is a little wider than tolerance 0,03 (-14,55...-15,45).
-- Figure at 360 px: end points at (0; 200 N) and (0,20 m; 400 N), y labels only on 100s (200, 400 labelled), x labels 0,05 steps; readable; faint grid.
+- fy3-5-L3-05 solution (c): the "loss" E_v - ΔU is said to go "keittimen kuoren kautta ympäristöön", but part of it heats the kettle body itself. Say "keittimen rakenteeseen ja ympäröivään ilmaan" so the explanation matches the table. The 8,1 / 8,2 / 9,8 / 8,7 kJ per 30 s is roughly constant, so "häviö kasvaa" (cumulative) is right but "koska lämmin vesi luovuttaa lämpöä koko ajan" fits better than implying a growing rate.
+- fy3-5-L2-05: ΔU = 0 over a cycle is the key step; the task leans on the Periaate to teach it. Add one line in the solution: "ΔU on tilan funktio, joten kierrossa sen muutos on nolla".
+- fy3-5-L1-06 text: "Kahvikuppi ja iso kattila on täytetty vedellä" reads better as "Kahvikuppi ja iso kattila ovat täynnä vettä, jonka lämpötila on kummassakin 60 °C."
+- fy3-5-L2-07: the question has a non-numeric second demand (the explanation) that the answer field does not test; fine, but the solution could name "lämpö karkaa palikasta ja pöydästä ilmaan" in the model answer line, as it does.
+
 ## Checked
-- Figure needed: the text gives only $\Delta U=45$ J; force varies from 200 to 400 N, so $W=Fs$ with one value cannot be used; $W=\tfrac{200+400}{2}\cdot0{,}20=60$ J, $Q=45-60=-15$ J verified.
-- L2 fit (area of a trapezoid + first law + sign); not a repeat of check-2 (given joules).
-- Kuvaajan lukeminen present, stages complete.
+- Counts 8/7/5; every new task (L1-06..08, L2-05..07, L3-04..05) has a full solution with principle, formula, units, substitution, answer, sanity check.
+- Recomputed: 36 kJ, -90 J, 20 J, 50,4 J, 18,72 J (trapezoid, 468 N sum x 0,04 m), Q = -14,0 J, 34,8 kJ (205,1 + 34,8 = 239,9), P = 2,00 kW; all match answers and tolerances.
+- L3-04 isothermal/adiabatic work values (14,0 vs 18,7 J) are physically consistent (checked with gamma 1,4).
+- MC distractors are real misconceptions (T = U, "lämpö varastoituu", energia häviää, "tilaa energialle") with feedback that repairs them.
+- Error-analysis L2-06 isolates one sign error; solution a) names it.
+- No duplicate of existing tasks (L2-02, L2-04, L3-03 are different situations/aims); levels fit; L3-04/05 are YO-style multi-part data and reasoning.
+- Finnish and number+unit forms ok; 1280 px captures of L2 and L3 new tasks show tables and solutions unclipped.
