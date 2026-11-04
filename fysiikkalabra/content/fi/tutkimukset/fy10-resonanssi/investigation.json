@@ -41,25 +41,29 @@
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy5-10",
+      "text": "Aaltoliike: taajuus, aallonpituus ja etenemisnopeus $v = f\\lambda$, aallon heijastuminen",
+      "missing": "FY5: Mekaanisten aaltojen synty, eteneminen ja heijastuminen",
       "why": "Äänen nopeus lasketaan taajuudesta ja aallonpituudesta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy5-13",
+      "text": "Seisova aalto, solmut ja kuvut",
+      "missing": "FY5: Seisovat aallot",
       "why": "Resonanssi syntyy, kun putkeen muodostuu seisova aalto; periaate on selitetty tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "target": "fy5-14",
+      "text": "Ääni aaltoliikkeenä ja äänen nopeuden riippuvuus lämpötilasta",
+      "missing": "FY5: Ääni aaltoliikkeenä: ominaisuudet ja eteneminen",
       "why": "Tulosta verrataan tunnettuun arvoon, joka riippuu ilman lämpötilasta."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "target": "fy5-15",
+      "text": "Äänen voimakkuus ja kuulon suojaaminen",
+      "missing": "FY5: Äänen intensiteettitaso ja kuulon suojaaminen",
       "why": "Työssä kuunnellaan ääntä pitkään, joten äänenvoimakkuus pidetään pienenä."
     },
     {

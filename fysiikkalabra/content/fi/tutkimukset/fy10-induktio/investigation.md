@@ -132,7 +132,7 @@ Magneetin liikkuessa jännite muuttuu koko ajan, joten "jännitteen suuruus" tä
 
 ## Teoriaa lyhyesti
 
-Sähkömagneettista induktiota käsitellään tarkemmin moduulin FY7 luvuissa [[apua:fy7-5|Sähkömagneettinen induktio]] ja [[apua:fy7-6|Lenzin laki ja pyörrevirrat]]. Tätä tutkimusta varten tarvitset vain seuraavat asiat.
+Sähkömagneettista induktiota käsitellään tarkemmin moduulissa FY7, jonka sivut eivät ole vielä valmiina. Tätä tutkimusta varten tarvitset vain seuraavat asiat.
 
 **Magneettivuo** $\Phi$ kuvaa, kuinka paljon magneettikenttää kulkee käämin yhden kierroksen läpi. Kun tasainen magneettikenttä $B$ on kohtisuorassa kierroksen tasoa vastaan, $\Phi = BA$, missä $A$ on kierroksen pinta-ala. Vuon yksikkö on weber, $1\ \text{Wb} = 1\ \text{T} \cdot \text{m}^2$. Kun magneetti lähestyy käämiä, yhä enemmän sen kenttää kulkee kierrosten läpi, joten vuo kasvaa.
 

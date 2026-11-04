@@ -60,7 +60,7 @@
       "kind": "physics",
       "level": "essential",
       "text": "Kulmanopeus",
-      "missing": "ei lukion fysiikan moduuleissa; lyhyt selitys on tällä sivulla",
+      "missing": "FY5: Tasainen ympyräliike: kulmanopeus ja ratanopeus",
       "why": "Pyörimisliikettä kuvataan kulmanopeudella; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
@@ -86,7 +86,8 @@
     {
       "kind": "physics",
       "level": "extension",
-      "target": "fy5-1",
+      "text": "Momentti",
+      "missing": "FY5: Momentti ja vääntövaikutus",
       "why": "Laajennuksessa tarvitaan tietoa siitä, milloin ulkoinen momentti muuttaa pyörimistä."
     },
     {

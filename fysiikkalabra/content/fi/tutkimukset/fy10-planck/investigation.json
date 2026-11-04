@@ -43,43 +43,50 @@
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy6-2",
+      "text": "Sähkövirran ja jännitteen mittaaminen",
+      "missing": "FY6: Mittaukset virtapiirissä",
       "why": "Työssä mitataan LEDin jännite ja sen läpi kulkeva sähkövirta samanaikaisesti."
     },
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy6-14",
+      "text": "Diodi ja LED",
+      "missing": "FY6: Puolijohteet, diodi ja LED",
       "why": "LEDin toiminta on selitetty lyhyesti tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy8-1",
+      "text": "Fotoni ja fotonin energia",
+      "missing": "FY8: Valosähköinen ilmiö ja fotoni",
       "why": "Tutkimuksen malli perustuu fotonin energiaan; lyhyt selitys on tällä sivulla."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "target": "fy7-9",
+      "text": "Valon aallonpituus ja taajuus",
+      "missing": "FY7: Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
       "why": "LEDien valo kuvataan aallonpituudella; sen yhteys taajuuteen on kerrottu tällä sivulla."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "target": "fy6-12",
+      "text": "Varauksen energia ja jännite",
+      "missing": "FY6: Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia",
       "why": "Tarvitset yhteyttä jännitteen ja varauksen energian välillä; se on kerrottu tällä sivulla."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "target": "fy8-6",
+      "text": "LED, laserdiodi ja Planckin vakio",
+      "missing": "FY8: LED, laserdiodi ja Planckin vakio",
       "why": "Kappale käsittelee samaa ilmiötä laajemmin; tutkimuksen tarvitsema osa on selitetty tällä sivulla."
     },
     {
       "kind": "physics",
       "level": "extension",
-      "target": "fy7-13",
+      "text": "Hila ja valon diffraktio",
+      "missing": "FY7: Valon interferenssi ja diffraktio",
       "why": "Laajennuksessa aallonpituus mitataan hilalla; tarvittava yhtälö on laajennuksen alussa."
     },
     {

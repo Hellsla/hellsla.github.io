@@ -41,25 +41,29 @@
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy6-1",
+      "text": "Sähkövirta ja jännite",
+      "missing": "FY6: Sähkövaraus, sähkövirta ja jännite",
       "why": "Tutkimuksessa mitataan virtaa ja jännitettä; suureet on selitetty lyhyesti tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy6-3",
+      "text": "Resistanssi ja Ohmin laki",
+      "missing": "FY6: Resistanssi ja Ohmin laki",
       "why": "Kuormitusvastuksen resistanssia muuttamalla säädetään piirin virtaa."
     },
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy6-8",
+      "text": "Lähdejännite ja sisäinen resistanssi",
+      "missing": "FY6: Akut, lähdejännite ja sisäinen resistanssi",
       "why": "Tutkimuksessa määritettävät suureet; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "experiment",
       "level": "essential",
-      "target": "fy6-2",
+      "text": "Virta- ja jännitemittarin kytkeminen",
+      "missing": "FY6: Mittaukset virtapiirissä",
       "why": "Virtamittari kytketään sarjaan ja jännitemittari rinnan. Väärin kytketty virtamittari oikosulkee pariston."
     },
     {

@@ -42,25 +42,29 @@
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy7-5",
+      "text": "Sähkömagneettinen induktio ja induktiolaki",
+      "missing": "FY7: Sähkömagneettinen induktio",
       "why": "Tutkimuksen fysiikka; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "target": "fy7-1",
+      "text": "Magneettikenttä ja magneettivuo",
+      "missing": "FY7: Magnetismi, magneettinen dipoli ja magneettikenttä",
       "why": "Auttaa kuvittelemaan, miten magneetin kenttä kulkee käämin kierrosten läpi."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "target": "fy7-6",
+      "text": "Lenzin laki",
+      "missing": "FY7: Lenzin laki ja pyörrevirrat",
       "why": "Liittyy indusoituneen jännitteen etumerkkiin; lyhyt selitys on tällä sivulla."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "target": "fy6-2",
+      "text": "Jännitteen mittaaminen",
+      "missing": "FY6: Mittaukset virtapiirissä",
       "why": "Jännitemittarin tai jänniteanturin kytkeminen käämin päihin."
     },
     {

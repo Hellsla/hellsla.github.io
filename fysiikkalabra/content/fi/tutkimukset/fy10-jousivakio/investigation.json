@@ -55,13 +55,15 @@
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy5-8",
+      "text": "Jousivoiman laki",
+      "missing": "FY5: Harmoninen voima ja värähtelyliike",
       "why": "Laki antaa mallin, jota mittauksilla testataan; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "extension",
-      "target": "fy5-9",
+      "text": "Jousen värähdysaika",
+      "missing": "FY5: Harmoninen voima ja värähtelyliike",
       "why": "Laajennuksessa tarvittava malli on selitetty laajennuksen alussa."
     },
     {

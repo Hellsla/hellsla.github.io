@@ -47,20 +47,22 @@
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy5-7",
+      "text": "Jaksollinen liike ja jaksonaika",
+      "missing": "FY5: Jaksollinen liike: jaksonaika, taajuus ja amplitudi",
       "why": "Jaksonaika on tutkimuksen mitattava suure; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "essential",
-      "target": "fy5-9",
+      "text": "Heilurin jaksonaika pienillä heilahduskulmilla",
+      "missing": "FY5: Harmoninen voima ja värähtelyliike",
       "why": "Jaksonajan malli on se, jonka avulla putoamiskiihtyvyys saadaan mittauksista; malli ehtoineen on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "extension",
       "text": "Heilurin jaksonaika suurilla heilahduskulmilla",
-      "missing": "ei lukion fysiikan moduuleissa; korjattu malli on tällä sivulla",
+      "missing": "FY5: Harmoninen voima ja värähtelyliike",
       "why": "Laajennuksessa testataan, milloin pienten kulmien malli ei enää riitä; korjattu malli on tällä sivulla."
     },
     {

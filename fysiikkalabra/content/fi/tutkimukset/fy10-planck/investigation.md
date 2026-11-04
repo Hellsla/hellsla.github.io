@@ -157,7 +157,7 @@ Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.
 
 ## Teoriaa lyhyesti
 
-Tämän työn fysiikkaa käsitellään tarkemmin luvuissa [[apua:fy6-14|Puolijohteet, diodi, LED ja aurinkokenno]] (FY6), [[apua:fy8-1|Valosähköinen ilmiö ja fotoni]] ja [[apua:fy8-6|LEDin valo ja Planckin vakion mittaaminen]] (FY8). Tässä on se, mitä tutkimuksessa tarvitset.
+Tämän työn fysiikkaa käsitellään tarkemmin moduuleissa FY6–FY8, joita ei ole vielä julkaistu Ruukkilabrassa. Tässä on se, mitä tutkimuksessa tarvitset.
 
 **Fotoni.** Valo siirtää energiaa pieninä paloina, fotoneina. Fotonin energia on
 
