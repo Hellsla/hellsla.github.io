@@ -21,7 +21,7 @@
 ## fy6-14-L1-03
 **Annettu:** pariston jännite $U = 9{,}0\,\text{V}$, vastus $R = 1{,}0\,\text{k}\Omega$, diodin jännite $U_\text{D} = 0{,}70\,\text{V}$, diodi päästösuunnassa
 **Kysytty:** virta $I$ milliampeereina
-**Periaate:** Diodi on päästösuunnassa, joten virta kulkee, ja diodin jännite on kynnysjännitteen suuruinen. Paristo, vastus ja diodi ovat sarjassa: pariston jännite jakautuu vastukselle ja diodille, ja vastuksen jännite on $U_R = RI$.
+**Periaate:** Diodi on päästösuunnassa, joten virta kulkee, ja diodin jännite on tehtävässä annettu $0{,}70\,\text{V}$. Paristo, vastus ja diodi ovat sarjassa: pariston jännite jakautuu vastukselle ja diodille, ja vastuksen jännite on $U_R = RI$.
 **Kaava:** $U = RI + U_\text{D}$, josta $I = \dfrac{U - U_\text{D}}{R}$
 **Muunnokset:** $R = 1{,}0\,\text{k}\Omega = 1{,}0 \cdot 1000\,\Omega = 1000\,\Omega$
 **Sijoitus:** $I = \dfrac{9{,}0\,\text{V} - 0{,}70\,\text{V}}{1000\,\Omega} = \dfrac{8{,}3\,\text{V}}{1000\,\Omega} = 0{,}0083\,\text{A} = 8{,}3\,\text{mA}$
@@ -50,7 +50,7 @@
 **Järkevyys:** Vihreän LEDin jännite $2{,}2\,\text{V}$ on punaisen ($1{,}8$–$2{,}0\,\text{V}$) ja sinisen (noin $3\,\text{V}$) välissä, kuten luvun tekstissä. Teho on muutamia kymmeniä milliwatteja, tavallinen merkkivalolle.
 
 ## fy6-14-L2-01
-**Annettu:** pariston jännite $U = 9{,}0\,\text{V}$, etuvastus $R = 470\,\Omega$, LED estosuunnassa
+**Annettu:** pariston jännite $U = 9{,}0\,\text{V}$, etuvastus $R = 470\,\Omega$, LED estosuunnassa; oletus: estosuunnassa virtaa ei kulje
 **Kysytty:** LEDin jännite $U_\text{D}$ voltteina
 **Periaate:** Estosuunnassa diodin läpi ei käytännössä kulje virtaa. Koska LED ja vastus ovat sarjassa, myös vastuksen virta on nolla, joten Ohmin lain mukaan vastuksen jännite on nolla. Kirchhoffin jännitelain mukaan koko pariston jännite on silloin LEDin yli.
 **Kaava:** $U = U_R + U_\text{D}$ ja $U_R = RI$, josta virralla $I = 0$ saadaan $U_\text{D} = U - RI = U$
@@ -100,9 +100,9 @@
 **Järkevyys:** Paristojen jännite pieneni vain $0{,}9\,\text{V} : 4{,}5\,\text{V} = 20\,\%$, mutta vastuksen jännite pieneni $2{,}5\,\text{V}$:sta $1{,}6\,\text{V}$:iin, eli $36\,\%$. Siksi LED-taskulamppu himmenee selvästi, kun paristot alkavat tyhjentyä.
 
 ## fy6-14-L3-02
-**Annettu:** paneelin mittaustaulukko $(U, I)$ samassa valaistuksessa
+**Annettu:** paneelin mittausparit $(U;\ I)$ samassa valaistuksessa (yhdeksän paria tehtävässä)
 **Kysytty:** kuormitusvastus $R$ ohmeina, kun teho on mittauksista suurin
-**Periaate:** Paneelin teho on $P = UI$. Se on nolla oikosulussa ja tyhjäkäynnissä, joten suurin teho on niiden välissä, maksimitehopisteessä. Lasketaan jokaisen mittauksen teho, valitaan suurin, ja kuormitusvastus saadaan Ohmin laista, koska kuorman jännite on paneelin jännite ja sen virta paneelin virta.
+**Periaate:** Paneelin teho on $P = UI$. Se on nolla oikosulussa ja tyhjäkäynnissä, joten suurin teho on niiden välissä, maksimitehopisteessä. Lasketaan jokaisen mittauksen teho, valitaan suurin, ja kuormitusvastus saadaan Ohmin laista $U = RI$ kuormalle, koska kuorman jännite on paneelin jännite ja sen virta paneelin virta.
 **Kaava:** $P = UI$, ja maksimitehopisteessä $U = RI$, josta $R = \dfrac{U}{I}$
 **Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja virrat ampeereina.
 **Sijoitus:** Tehot ovat $0\,\text{W}$, $32{,}5\,\text{W}$, $44{,}5\,\text{W}$, $48{,}8\,\text{W}$, $49{,}3\,\text{W}$, $45{,}9\,\text{W}$, $36{,}1\,\text{W}$, $19{,}0\,\text{W}$ ja $0\,\text{W}$. Suurin on $17{,}0\,\text{V} \cdot 2{,}90\,\text{A} = 49{,}3\,\text{W}$, joten $R = \dfrac{17{,}0\,\text{V}}{2{,}90\,\text{A}} = 5{,}86\,\Omega$

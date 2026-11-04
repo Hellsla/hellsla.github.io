@@ -266,7 +266,7 @@ Metallit johtavat sähköä hyvin, ja eristeet, kuten muovi ja lasi, eivät juur
 ### Diodi päästää virran vain yhteen suuntaan
 **Diodissa** on kaksi erilaista puolijohdekerrosta, ja niiden rajapinta päästää virran läpi vain yhteen suuntaan. Diodin piirrosmerkki on kolmio ja poikkiviiva: kolmio osoittaa suuntaan, johon virta pääsee kulkemaan. Kolmion puoleinen napa on **anodi** ja poikkiviivan puoleinen napa **katodi**, joka on komponenttiin yleensä merkitty renkaalla.
 
-Kun anodi on kytketty lähteen plusnavan puolelle, diodi on **päästösuunnassa**, ja virta kulkee. Kun diodi käännetään toisin päin, se on **estosuunnassa**: virtaa ei käytännössä kulje, ja koko lähteen jännite on diodin yli. Siksi LED palaa vain oikein päin kytkettynä. Hehkulampun metallilanka johtaa kumpaankin suuntaan, joten lamppu palaa kummin päin tahansa.
+Kun anodi on kytketty lähteen plusnavan puolelle, diodi on **päästösuunnassa**, ja virta kulkee. Kun diodi käännetään toisin päin, se on **estosuunnassa**: virtaa ei käytännössä kulje, ja koko lähteen jännite on diodin yli, kunhan jännite pysyy alle diodin läpilyöntijännitteen. Siksi LED palaa vain oikein päin kytkettynä. Hehkulampun metallilanka johtaa kumpaankin suuntaan, joten lamppu palaa kummin päin tahansa. Lampun langan resistanssi kasvaa sen kuumetessa, joten lamppu rajoittaa itse virtaansa.
 
 <svg data-fig="suunnat" viewBox="0 0 600 352" role="img" aria-label="Kaksi kytkentäkaaviota vierekkäin, ei mittakaavassa. Kummassakin jännitelähde U, etuvastus R ja punainen LED ovat sarjassa, ja lähteen plusnapa on ylhäällä. Vasemmalla LEDin kolmio osoittaa alaspäin eli virran kulkusuuntaan: LEDin anodi on yläpuolella kohti lähteen plusnapaa ja katodi eli poikkiviiva alapuolella. LED palaa, ja violetit nuolet näyttävät virran I kulkevan plusnavalta vastuksen ja LEDin kautta miinusnavalle. Tämä on päästösuunta. Oikealla sama LED on käännetty toisin päin, kolmio osoittaa ylöspäin. LED ei pala, eikä piirissä kulje virtaa: I = 0. Tämä on estosuunta." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy614-glow1" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#c92a2a" stop-opacity="0.55"/><stop offset="1" stop-color="#c92a2a" stop-opacity="0"/></radialGradient></defs>
@@ -558,11 +558,11 @@ Kuvan paneelin suurin teho on noin $0{,}92\,\text{W}$, kun jännite on noin $5{,
   <circle cx="365.5" cy="99" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="365.5" cy="282.5" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="182.5" y="137" width="96" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$P = U I$</span></div></foreignObject>
-  <foreignObject x="203.5" y="242" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{maksimiteho}$</span></div></foreignObject>
+  <foreignObject x="203.5" y="242" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{maksimitehopiste}$</span></div></foreignObject>
 </svg>
 
 ### Hyötysuhde
-Kennon hyötysuhde on sen antama sähköteho jaettuna kennolle tulevan valon teholla (luku *Hyötysuhde*). Valon teho on valon voimakkuus kertaa kennon pinta-ala, joten
+Kennon hyötysuhde on sen antama sähköteho jaettuna kennolle tulevan valon teholla (luku *Hyötysuhde*). Valon teho on valon voimakkuus kertaa kennon pinta-ala, ja sähköteho $P$ on kennon teho maksimitehopisteessä, joten
 ```latex
 \eta = \frac{P}{G A}
 ```

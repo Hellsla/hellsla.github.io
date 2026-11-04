@@ -209,7 +209,7 @@ def teho():
     top.point(um, im, INK, 6)
     lo.point(um, um * im / 1000, INK, 6)
     f.tex(top.X(um / 2), top.Y(im / 2), r"P = U I", "middle", bg=True, w=96)
-    f.tex(lo.X(um) - 12, lo.Y(um * im / 1000) - 26, r"\text{maksimiteho}", "end", bg=True, w=150)
+    f.tex(lo.X(um) - 12, lo.Y(um * im / 1000) - 26, r"\text{maksimitehopiste}", "end", bg=True, w=150)
     return f.svg()
 
 

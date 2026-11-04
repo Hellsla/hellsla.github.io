@@ -46,7 +46,7 @@
     {
       "id": "fy6-14-L2-01",
       "level": 2,
-      "text": "Opiskelija kytkee punaisen LEDin ja $470\\,\\Omega$:n etuvastuksen sarjaan $9{,}0\\,\\text{V}$:n paristoon, mutta LED on vahingossa estosuunnassa. Kuinka suuri jännite on LEDin yli? Vastaa voltteina.",
+      "text": "Opiskelija kytkee punaisen LEDin ja $470\\,\\Omega$:n etuvastuksen sarjaan $9{,}0\\,\\text{V}$:n paristoon, mutta LED on vahingossa estosuunnassa. Oleta, ettei LEDin läpi kulje estosuunnassa virtaa. Kuinka suuri jännite on LEDin yli? Vastaa voltteina.",
       "answer": 9.0,
       "unit": "V",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy6-14-L3-02",
       "level": 3,
-      "text": "Aurinkopaneelin jännite ja virta mitattiin eri kuormitusvastuksilla samassa valaistuksessa:\n\n| $U\\ (\\text{V})$ | $0$ | $10{,}0$ | $14{,}0$ | $16{,}0$ | $17{,}0$ | $18{,}0$ | $19{,}0$ | $20{,}0$ | $21{,}0$ |\n|---|---|---|---|---|---|---|---|---|---|\n| $I\\ (\\text{A})$ | $3{,}30$ | $3{,}25$ | $3{,}18$ | $3{,}05$ | $2{,}90$ | $2{,}55$ | $1{,}90$ | $0{,}95$ | $0$ |\n\nMillä kuormitusvastuksella paneeli antaa mittauksista suurimman tehon? Vastaa ohmeina.",
+      "text": "Aurinkopaneelin jännite ja virta mitattiin eri kuormitusvastuksilla samassa valaistuksessa. Mittausparit $(U;\\ I)$ olivat: $(0\\,\\text{V};\\ 3{,}30\\,\\text{A})$, $(10{,}0\\,\\text{V};\\ 3{,}25\\,\\text{A})$, $(14{,}0\\,\\text{V};\\ 3{,}18\\,\\text{A})$, $(16{,}0\\,\\text{V};\\ 3{,}05\\,\\text{A})$, $(17{,}0\\,\\text{V};\\ 2{,}90\\,\\text{A})$, $(18{,}0\\,\\text{V};\\ 2{,}55\\,\\text{A})$, $(19{,}0\\,\\text{V};\\ 1{,}90\\,\\text{A})$, $(20{,}0\\,\\text{V};\\ 0{,}95\\,\\text{A})$, $(21{,}0\\,\\text{V};\\ 0\\,\\text{A})$.\n\nMillä kuormitusvastuksella paneeli antaa mittauksista suurimman tehon? Vastaa ohmeina.",
       "answer": 5.862069,
       "unit": "Ω",
       "tolerance": 0.02

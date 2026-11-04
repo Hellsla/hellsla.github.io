@@ -249,13 +249,14 @@ def esc(s): return _h.escape(str(s), quote=True)
 GREEK = {"Σ": r"\Sigma ", "Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha ", "μ": r"\mu ", "λ": r"\lambda ", "ν": r"\nu "}
 SUBS = dict(zip("₀₁₂₃₄₅₆₇₈₉", "0123456789"))
 SYMBOL = re.compile(r"[A-Za-zΔρθηγαμΣλν](?:[A-Za-zΔρθηγαμΣλν₀-₉/]|_[A-Za-z0-9μ]+)*")
-UNIT = re.compile(r"[A-Za-z/%]+[²³]?")
+UNIT = re.compile(r"[A-Za-zΩ/%]+[²³]?")
 
 
 def unit_tex(u):
     """m/s² -> \\text{m/s}^2, % -> \\%: a unit as maths (teacher 2026-10-28, "kaikki LaTeXilla")."""
     if u == "%": return "\\%"
-    return "\\text{" + u.rstrip("²³") + "}" + ({"²": "^2", "³": "^3"}.get(u[-1], ""))
+    t = ("\\text{" + u.rstrip("²³") + "}").replace("Ω", "}\\Omega\\text{").replace("\\text{}", "")   # Ω, kΩ: \\Omega in maths
+    return t + ({"²": "^2", "³": "^3"}.get(u[-1], ""))
 
 
 def is_symbol(tok):
