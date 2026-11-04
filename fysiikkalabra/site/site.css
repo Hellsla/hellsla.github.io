@@ -383,6 +383,7 @@ details.sim-box>div{font-size:var(--fs-ui);padding:0 0 .6rem 1.2rem}details.sim-
 
 footer.bottom{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:var(--fs-small);color:var(--ink-2);display:flex;flex-wrap:wrap;align-items:center;gap:.2rem 1.2rem}
 footer.bottom a{display:inline-flex;align-items:center;min-height:44px}
+footer.bottom .copyright{white-space:nowrap}
 .crumbs:empty{display:none}
 
 /* tables: a level-3 element, light frame, small sans heads; numbers in tabular figures */
