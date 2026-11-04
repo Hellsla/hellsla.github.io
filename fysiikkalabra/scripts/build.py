@@ -543,7 +543,7 @@ def build_units(lang, out, unit_pub):
                 f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>{T('lesson.answer')}</summary><div class=\"answer-body\">{nbsp_units(render_md(q['a']))}</div></details></li>"
                 for q in exit_q) + "</ol></div>")
         md = lambda t: nbsp_units(render_md(t))
-        tasks_html = ""                                  # the unit's own task set (FY12): its Tehtävät, last on the page
+        tasks_html = ""                                  # the unit's own task set (FY9): its Tehtävät, last on the page
         if units.has_tasks(uid, lang):
             tasks_html, _ = practice.render(units.task_key(uid), lang, md, solution_html, T("practice.title"), embedded=True)
         body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": tasks_html, "exit": exit_html}, md)

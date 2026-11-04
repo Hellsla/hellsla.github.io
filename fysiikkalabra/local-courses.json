@@ -262,7 +262,7 @@
       }
     ]
   },
-  "FY12": {
+  "FY9": {
     "title": "Fysiikan ylioppilaskertaus",
     "subtitle": "Kertaa, yhdistä ja harjoittele koetta varten.",
     "school": "Kiviruukin lukio",
@@ -286,15 +286,15 @@
         "question": "Mitä hyvä vastaus fysiikan ylioppilaskokeessa sisältää?",
         "units": [
           {
-            "id": "fy12-koe",
+            "id": "fy9-koe",
             "title": "Ylioppilaskoe ja vastaustekniikka"
           },
           {
-            "id": "fy12-mittaaminen",
+            "id": "fy9-mittaaminen",
             "title": "Mittaaminen, epävarmuus ja kuvaajat"
           },
           {
-            "id": "fy12-kokeellisuus",
+            "id": "fy9-kokeellisuus",
             "title": "Kokeellinen työ ja sen arviointi"
           }
         ]
@@ -304,15 +304,15 @@
         "question": "Mihin energia menee, ja miten sen määrä lasketaan?",
         "units": [
           {
-            "id": "fy12-energia",
+            "id": "fy9-energia",
             "title": "Energia, teho ja hyötysuhde"
           },
           {
-            "id": "fy12-lampo",
+            "id": "fy9-lampo",
             "title": "Lämpö ja olomuodon muutokset"
           },
           {
-            "id": "fy12-kaasut",
+            "id": "fy9-kaasut",
             "title": "Paine, kaasut ja lämpövoimakone"
           }
         ]
@@ -322,19 +322,19 @@
         "question": "Miten voimat määräävät, miten kappale liikkuu?",
         "units": [
           {
-            "id": "fy12-liike",
+            "id": "fy9-liike",
             "title": "Liike kuvaajina"
           },
           {
-            "id": "fy12-voimat",
+            "id": "fy9-voimat",
             "title": "Newtonin lait ja voimakuvio"
           },
           {
-            "id": "fy12-sailymislait",
+            "id": "fy9-sailymislait",
             "title": "Mekaaninen energia ja liikemäärä"
           },
           {
-            "id": "fy12-ympyraliike",
+            "id": "fy9-ympyraliike",
             "title": "Tasapaino, ympyräliike ja gravitaatio"
           }
         ]
@@ -344,7 +344,7 @@
         "question": "Mikä on yhteistä heilurille, äänelle ja vesiaalloille?",
         "units": [
           {
-            "id": "fy12-aallot",
+            "id": "fy9-aallot",
             "title": "Värähtely, aallot ja ääni"
           }
         ]
@@ -354,15 +354,15 @@
         "question": "Miten sähkövaraukset, virrat ja kentät liittyvät toisiinsa?",
         "units": [
           {
-            "id": "fy12-tasavirta",
+            "id": "fy9-tasavirta",
             "title": "Tasavirtapiirit ja sähköenergia"
           },
           {
-            "id": "fy12-sahkokentta",
+            "id": "fy9-sahkokentta",
             "title": "Sähkökenttä ja kondensaattori"
           },
           {
-            "id": "fy12-magnetismi-valo",
+            "id": "fy9-magnetismi-valo",
             "title": "Magnetismi, induktio ja valo"
           }
         ]
@@ -372,7 +372,7 @@
         "question": "Miksi valo ja aine käyttäytyvät toisinaan hiukkasina ja toisinaan aaltoina?",
         "units": [
           {
-            "id": "fy12-moderni",
+            "id": "fy9-moderni",
             "title": "Kvantti-ilmiöt, ydin ja säteily"
           }
         ]
@@ -382,7 +382,7 @@
         "question": "Miten jaan aikani ja valitsen tehtävät kokeessa?",
         "units": [
           {
-            "id": "fy12-harjoituskoe",
+            "id": "fy9-harjoituskoe",
             "title": "Harjoituskoe"
           }
         ]

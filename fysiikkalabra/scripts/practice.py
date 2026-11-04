@@ -28,7 +28,7 @@ Nothing here needs a model at runtime: links for a weak competency come from the
 
 A course unit (scripts/units.py) can carry a task set of its own in the same format: its key is "units/<unit id>", so
 content/<lang>/units/<id>/sovella/ holds tasks.json and solutions.md and lessons/units/<id>/sovella/ answers.py and
-figures.py (FY12, the exam review course, teacher 2026-11-04). Its task ids are <unit id>-s<n>, the files are part of
+figures.py (FY9, the exam review course, teacher 2026-11-04). Its task ids are <unit id>-s<n>, the files are part of
 the unit's content hash and reviews (no page of their own), and the unit page shows the tasks last, as its Tehtävät
 (render(..., embedded=True)). Any task may name `skills`: the chapters of FY1–FY8 whose skills it uses, by lesson id,
 shown as chapter-name links (never an id, teacher's rule 6).

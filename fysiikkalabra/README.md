@@ -217,7 +217,7 @@ A part that asks for several quantities (two waxes' coefficients) gives `"answer
 with a `name`; answers.py computes each as `<task>-<part>-<name>`, so every asked value is checked, not only the first.
 Any task may also name `"skills": ["fy1-4", "fy4-5"]`, the chapters whose skills it uses, shown as "Taidot luvuista"
 with chapter-name links. A course unit (scripts/units.py) can carry its own task set in this format in
-`content/<lang>/units/<id>/sovella/` (key `units/<id>`, task ids `<id>-s<n>`; FY12, docs/FY12_PLAN.md): it is reviewed
+`content/<lang>/units/<id>/sovella/` (key `units/<id>`, task ids `<id>-s<n>`; FY9, docs/FY9_PLAN.md): it is reviewed
 with the unit and shown at the end of the unit page.
 A task of `"kind": "own"` (with one part of kind `own`) is a rubric for the student's own work, such as the FY1
 investigation report, and has no solution. `python scripts/practice.py check` (CI) checks ids, points against

@@ -32,7 +32,7 @@ pronunciation, videos, the timeline, the map and the explorers), placed in the t
   lessons/units/<id>/figures.py          the figures (scripts/figlib.py), optional
   content/<lang>/units/<id>/sovella/     optional: the unit's own exam-style task set in the Sovella itsenäisesti format
         (tasks.json, solutions.md; answers.py and figures.py in lessons/units/<id>/sovella/), checked by practice.py
-        under the key units/<id>, part of the unit's hash and reviews, shown last on the page as its Tehtävät (FY12)
+        under the key units/<id>, part of the unit's hash and reviews, shown last on the page as its Tehtävät (FY9)
 
 The content hash covers the four texts, figures.py, the simulation folder and every course asset the text refers
 to (units/<course>/data/…, units/<course>/pics/…), so a changed data file or photograph needs a new review like
@@ -46,7 +46,7 @@ import courses, i18n
 ROOT = courses.ROOT
 DIR = "units"
 TEXTS = ("unit.json", "unit.md", "inquiry.json", "teacher.md")
-KINDS = ("physics", "history", "clil", "french", "lab", "explorer", "review")   # review: a lesson of the exam review course FY12
+KINDS = ("physics", "history", "clil", "french", "lab", "explorer", "review")   # review: a lesson of the exam review course FY9
 SUBJECTS = ("physics", "english", "french")
 ASSET_REF = re.compile(r"""(?:src=\\?["']|data-src=\\?["']|\]\()(units/[a-z0-9]+/[^"'\\)\s]+)""")   # also inside inquiry.json, where quotes are \"
 esc = lambda s: _h.escape(str(s), quote=True)

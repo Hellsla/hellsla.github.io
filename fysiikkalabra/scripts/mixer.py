@@ -1,6 +1,6 @@
-"""YO-sekoitin: one page that mixes every published exam-style task of the site (teacher 2026-11-04, FY12 plan,
-docs/FY12_PLAN.md). The page lists the Sovella itsenäisesti tasks of the modules and the task sets of the review units of
-a local course that has `"mixer": true` in local-courses.json (FY12). Each task is a card: its title, where it is, its
+"""YO-sekoitin: one page that mixes every published exam-style task of the site (teacher 2026-11-04, FY9 plan,
+docs/FY9_PLAN.md). The page lists the Sovella itsenäisesti tasks of the modules and the task sets of the review units of
+a local course that has `"mixer": true` in local-courses.json (FY9). Each task is a card: its title, where it is, its
 points, and the chapters whose skills it uses (`skills`, shown by chapter name). A search field and three selects
 (module, competency, kind of part) narrow the list in place, and "Arvo kolme tehtävää" picks a random set among the
 matching tasks (templates/invfilter.js, the same component as the investigation bank). Nothing is written by hand:
