@@ -76,7 +76,7 @@
 **Muunnokset:** $1{,}06\,\text{mm} = 1{,}06 \cdot 10^{-3}\,\text{m}$, ja jouleista elektronivoltteihin sijoitetaan $1\,\text{J} = \dfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$.
 **Sijoitus:** $\lambda = \dfrac{1{,}06 \cdot 10^{-3}\,\text{m}}{1100} = 9{,}636 \cdot 10^{-7}\,\text{m}$ ja $E = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{9{,}636 \cdot 10^{-7}\,\text{m}} = 2{,}0615 \cdot 10^{-19}\,\text{J} = \dfrac{2{,}0615 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 1{,}287\,\text{eV}$
 **Vastaus:** $1{,}3\,\text{eV}$, kaksi merkitsevää numeroa kuten venymiskertoimessa $1100$.
-**Järkevyys:** Aallonpituus $964\,\text{nm}$ on lähi-infrapunaa, hieman näkyvän valon rajan $1{,}7\,\text{eV}$ alapuolella. Energia on pienempi kuin vedyn ionisoimiseen tarvittava $13{,}6\,\text{eV}$, joten tällaiset fotonit eivät enää ionisoineet atomeja, ja maailmankaikkeus muuttui läpinäkyväksi.
+**Järkevyys:** Aallonpituus $964\,\text{nm}$ on lähi-infrapunaa, hieman näkyvän valon rajan $1{,}7\,\text{eV}$ alapuolella. Tyypillinen fotoni oli siis paljon heikompi kuin vedyn ionisoimiseen tarvittava $13{,}6\,\text{eV}$. Fotoneja on kuitenkin valtavasti enemmän kuin atomeja, joten atomit pysyivät ionisoituina niin kauan, kuin harvinaisia yli $13{,}6\,\text{eV}$:n fotoneja riitti. Kun lämpötila laski noin $3000\,\text{K}$:iin, niitä oli liian vähän, elektronit sitoutuivat atomeihin ja valo pääsi kulkemaan vapaasti.
 
 ## fy8-16-L2-04
 **Annettu:** galaksi A: $d_\text{A} = 42{,}0\,\text{Mpc}$, $v_\text{A} = 2950\,\text{km/s}$; galaksi B: $v_\text{B} = 11\,300\,\text{km/s}$
