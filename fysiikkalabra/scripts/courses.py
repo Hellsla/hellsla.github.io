@@ -10,7 +10,8 @@
 
   "initialized": "2026-10-26"            set by scripts/new_course.py: content and asset folders exist
   "scope_notes": ["..."]                  what belongs in this course and what does not (packets carry them)
-  "exercise_levels": {"level1": 5, ...}   overrides the shared 5/4/3 (CLAUDE.md)
+  "exercise_levels": {"level1": 5, ...}   the least per level, overriding the shared 5/4/3 (CLAUDE.md "Exercise levels")
+  "exercise_total": 20                    the least in all (default: the levels' sum); teacher 2026-11-04, FY1–FY8 ≥ 20
   "shuffle_salt": 1                        re-seeds the course's option order (scripts/check_choices.py)
   "paths": {"pics": "...", "sims": "..."}  overrides of the derived folders (normally absent)
 
@@ -38,7 +39,13 @@ they keep their URLs and their review hashes. A lesson's course is its id prefix
 import datetime, functools, json, os, pathlib, re, sys
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])
-DEFAULT_LEVELS = {"level1": 5, "level2": 4, "level3": 3}
+DEFAULT_LEVELS = {"level1": 5, "level2": 4, "level3": 3}   # the least per level (CLAUDE.md "Exercise levels")
+MAX_EXERCISES = 40   # a chapter's exercise set beyond this is a second chapter's worth of practice
+# what an exercise practises, beyond its level ("kind": [...], optional; teacher 2026-11-04, scripts/exercise_bank.py):
+# data = an aineistotehtävä (a table or a graph of measurements to read, fit or judge), graph = reading or drawing a graph,
+# experiment = planning or judging an investigation, error = finding an error or judging uncertainty, concept = a
+# conceptual question (often multiple choice), reasoning = a justified qualitative answer, model = building or testing a model
+EXERCISE_KINDS = ("data", "graph", "experiment", "error", "concept", "reasoning", "model")
 LESSON_ID = re.compile(r"^([a-z]+)(\d+)-([0-9][0-9a-z]*)$")
 PIC_REF = re.compile(r"""(?:src=["']|\]\()((?:pics/[a-z0-9]+|shared/pics)/[^"')\s]+)""")
 CODE_FILES = ("answers.py", "lesson-answers.py", "figures.py", "sim.js", "sim-spec.md")
@@ -69,6 +76,7 @@ def course(code):
         "pics": ROOT / p.get("pics", f"assets/pics/{s}"), "sims": ROOT / p.get("sims", f"assets/sims/{s}"),
         "shared_pics": ROOT / "assets/shared/pics", "shared_sims": ROOT / "assets/shared/sims"})
     c.setdefault("exercise_levels", DEFAULT_LEVELS)
+    c.setdefault("exercise_total", sum(c["exercise_levels"].values()))
     return c
 
 
