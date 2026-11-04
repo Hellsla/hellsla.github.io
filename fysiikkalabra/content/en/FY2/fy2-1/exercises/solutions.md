@@ -44,6 +44,21 @@
 **Answer:** $510\,\text{J}$, three significant figures as in the potential energy $600\,\text{J}$.
 **Reasonableness:** The kinetic energy is smaller than the initial energy $600\,\text{J}$, because part of it changed into thermal energy, as it should with friction. Checking backwards: $510\,\text{J} + 90\,\text{J} = 600\,\text{J}$.
 
+## fy2-1-L1-06
+**Find:** the form of energy of the energy stored in the battery
+**Principle:** The form of energy tells you in what form the energy is. A battery is a device in which energy is stored in the bonds of chemical substances, and it is released as electrical energy when the device is put to use. Kinetic energy belongs to a moving object, potential energy depends on the height of an object, and radiant energy is light and other radiation.
+**Model answer:** Chemical energy. A phone at rest does not move (no kinetic energy), its energy does not depend on height (no potential energy) and it does not emit light (no radiant energy). The energy is in the substances of the battery as chemical energy, and when the phone is used it changes into electrical energy and from that into light, sound and thermal energy.
+
+## fy2-1-L1-07
+**Find:** what happens to the kinetic energy of the car in braking
+**Principle:** Energy is neither created nor destroyed but changes form: in an isolated system $E_\text{initial} = E_\text{final}$. In braking, friction changes kinetic energy into thermal energy. In everyday language "energy is used up" means in physics that the energy has changed into a form that is hard to use.
+**Model answer:** The correct answer is the first one: the kinetic energy changes into thermal energy in the brakes, the tyres and the road, and the total amount of energy stays the same. When the car has stopped it no longer has kinetic energy, but the same energy is thermal energy in the brake discs, the tyres and the road, which have warmed up a little. The claim that energy disappears or decreases breaks the law of conservation of energy.
+
+## fy2-1-L1-08
+**Find:** the change of energy as a chain from the charger to the battery, and why the charger warms up
+**Principle:** Energy is neither created nor destroyed but changes form: $E_\text{initial} = E_\text{final}$. In every change part of the energy changes into thermal energy, which is transferred as heat to the surroundings.
+**Model answer:** Electrical energy comes from the wall socket. The charger changes it into electrical energy suitable for the battery of the phone, and in the battery the electrical energy is stored as chemical energy. So the chain is electrical energy → electrical energy → chemical energy. The change is not perfect: part of the electrical energy from the wall socket changes into thermal energy in the charger, and that is why the charger warms up and heat is transferred to the surroundings. By the law of conservation of energy, the energy taken from the wall socket equals the chemical energy stored in the battery and the thermal energy together, so no energy has been lost. However, the thermal energy can no longer be used to charge the phone.
+
 ## fy2-1-L2-01
 **Given:** chemical energy released from the battery $E_\text{chem} = 3.00\,\text{kJ}$, kinetic energy of the scooter and rider $E_\text{k} = 2150\,\text{J}$
 **Find:** energy changed into thermal energy $E_\text{thermal}$ in $\text{J}$
@@ -84,6 +99,36 @@
 **Answer:** $29\,000\,\text{J}$ or $2.9 \cdot 10^{4}\,\text{J}$, two significant figures, because the data are given to the nearest kilojoule and the difference is $29\,\text{kJ}$.
 **Reasonableness:** $331\,\text{kJ} : 360\,\text{kJ} \approx 0.92$, over $90\,\%$, goes into the water, and the rest, $29\,\text{kJ}$, is a small part, as it should be with a well-insulated kettle. Checking backwards: $331\,000\,\text{J} + 29\,000\,\text{J} = 360\,000\,\text{J}$.
 
+## fy2-1-L2-05
+**Given:** space heating $36.0\,\text{GJ}$, hot water $10.5\,\text{GJ}$, electrical appliances and lighting $9.0\,\text{GJ}$, sauna $4.5\,\text{GJ}$
+**Find:** the share of space heating in the total consumption as a percentage, and the biggest target for saving
+**Principle:** A share is the ratio of a part to the whole. The total consumption is the sum of the energies of all the uses, because the uses do not overlap.
+**Formula:** $E_\text{tot} = E_\text{heating} + E_\text{water} + E_\text{elec} + E_\text{sauna}$ and share $= \dfrac{E_\text{heating}}{E_\text{tot}}$
+**Conversions:** All energies are in gigajoules, so no conversions are needed. The share is changed into a percentage by multiplying by one hundred.
+**Substitution:** The sum is $E_\text{tot} = 36.0\,\text{GJ} + 10.5\,\text{GJ} + 9.0\,\text{GJ} + 4.5\,\text{GJ} = 60.0\,\text{GJ}$, so the share is $\dfrac{36.0\,\text{GJ}}{60.0\,\text{GJ}} = 0.600 = 60.0\,\%$
+**Answer:** The share of heating is $60\,\%$ of the consumption. The biggest target for saving is space heating, because it uses the most energy: a ten percent saving in heating would reduce the consumption by $3.6\,\text{GJ}$, but the same saving in the sauna by only $0.45\,\text{GJ}$.
+**Reasonableness:** The share is between $0$ and $100\,\%$, and heating is the biggest item, so more than half is believable in a residential building in the north. Checking the sum of the shares: $60\,\% + 17.5\,\% + 15\,\% + 7.5\,\% = 100\,\%$.
+
+## fy2-1-L2-06
+**Given:** decrease of the potential energy of the falling water $100\,\text{J}$ per cycle, electrical energy of the generator $100\,\text{J}$, electrical energy used by the pump $80\,\text{J}$, the water returns to the upper pool
+**Find:** the energy created from nothing in a cycle $E_\text{created}$ in $\text{J}$ and which principle of energy is broken
+**Principle:** Energy is conserved: in an isolated system $E_\text{initial} = E_\text{final}$. At the end of the cycle the water is in the upper pool again, so the energy of the water is the same as at the start. The total energy of the whole device must not change when nothing comes from outside.
+**Formula:** The energy left for the lamp is $E_\text{lamp} = E_\text{elec} - E_\text{pump}$, and because the water is unchanged after the cycle, the same energy is energy created in the device: $E_\text{created} = E_\text{lamp}$
+**Conversions:** All energies are in joules, so no conversions are needed.
+**Substitution:** $E_\text{created} = E_\text{lamp} = 100\,\text{J} - 80\,\text{J} = 20\,\text{J}$
+**Answer:** $20\,\text{J}$ per cycle, two significant figures as in the data. The claim breaks the law of conservation of energy, because energy cannot be created from nothing: the device would have to create $20\,\text{J}$ more energy in every cycle.
+**Reasonableness:** The pump should lift the water back up, and that needs at least as much energy as the water loses in falling, that is $100\,\text{J}$. However, the pump gets only $80\,\text{J}$, so the claim requires $20\,\text{J}$ of energy from nothing. In a real device friction and electricity also change part of the energy into thermal energy, so nothing would be left for the lamp and the device would stop. A perpetual motion machine is not possible.
+
+## fy2-1-L2-07
+**Given:** electrical energy of each lamp $E_\text{elec} = 216\,\text{kJ}$; energy that changes into light $11\,\text{kJ}$ for the incandescent lamp, $16\,\text{kJ}$ for the halogen lamp and $54\,\text{kJ}$ for the LED lamp (example figures)
+**Find:** the difference between the thermal energies of the incandescent lamp and the LED lamp $\Delta E_\text{thermal}$ in $\text{kJ}$
+**Principle:** A lamp changes electrical energy into light and thermal energy, and energy is neither created nor destroyed, so $E_\text{elec} = E_\text{light} + E_\text{thermal}$.
+**Formula:** $E_\text{thermal} = E_\text{elec} - E_\text{light}$ for both lamps and $\Delta E_\text{thermal} = E_\text{thermal,incand} - E_\text{thermal,LED}$
+**Conversions:** All energies are in kilojoules, so no conversions are needed.
+**Substitution:** $E_\text{thermal,incand} = 216\,\text{kJ} - 11\,\text{kJ} = 205\,\text{kJ}$ and $E_\text{thermal,LED} = 216\,\text{kJ} - 54\,\text{kJ} = 162\,\text{kJ}$, so $\Delta E_\text{thermal} = 205\,\text{kJ} - 162\,\text{kJ} = 43\,\text{kJ}$
+**Answer:** The incandescent lamp produces $43\,\text{kJ}$ more thermal energy. Two significant figures match the accuracy of the energy of light $11\,\text{kJ}$.
+**Reasonableness:** The thermal energy of the incandescent lamp is greater because its share of light is smaller ($11\,\text{kJ}$ is only $5\,\%$ of the electrical energy, while the $54\,\text{kJ}$ of the LED is $25\,\%$). Checking backwards: LED $54\,\text{kJ} + 162\,\text{kJ} = 216\,\text{kJ}$. Justification: when the same amount of light is wanted, the LED lamp needs less electrical energy, and less energy changes into useless thermal energy, so the LED is the wiser choice in terms of energy.
+
 ## fy2-1-L3-01
 **Given:** at point A $E_\text{p} = 900\,\text{J}$ and $E_\text{k} = 0\,\text{J}$; at point B $E_\text{p} = 400\,\text{J}$ and $E_\text{k} = 480\,\text{J}$; at point C $E_\text{p} = 0\,\text{J}$ and $E_\text{k} = 750\,\text{J}$
 **Find:** energy changed into thermal energy between points B and C, $\Delta E_\text{thermal}$, in $\text{J}$
@@ -108,3 +153,23 @@
 **Find:** a) the forms of energy at each stage of the nuclear power plant chain; b) where about two thirds of the nuclear energy goes and why the energy has not been lost
 **Principle:** Energy changes form and moves, but is neither created nor destroyed: in the system formed by the power plant, the cooling water and the surroundings $E_\text{initial} = E_\text{final}$. In every change part of the energy changes into thermal energy, which spreads into the surroundings and is hard to use.
 **Model answer:** a) The nuclear energy stored in the atomic nuclei of uranium is released in the reactor and changes into the thermal energy of water and steam. The steam flows into the turbine and turns it, so the energy is kinetic energy. The generator changes the kinetic energy of the turning turbine into electrical energy. b) Only about a third becomes electricity, because the steam leaving the turbine is still warm: energy is transferred from it as heat to the cooling water, which carries it to the sea. In addition, in the turbine, the generator and the pipes part of the energy changes into thermal energy, which is transferred as heat into the surroundings. The energy has not been lost: the electrical energy and the thermal energy transferred to the sea and the surroundings together equal the nuclear energy released. So about two thirds ends up as thermal energy that has spread widely and can no longer easily be used.
+
+## fy2-1-L3-04
+**Given:** consumption by source: bioenergy $380\,\text{PJ}$, oil $290\,\text{PJ}$, nuclear energy $230\,\text{PJ}$, hydro and wind power $120\,\text{PJ}$, coal $100\,\text{PJ}$, natural gas $80\,\text{PJ}$; inhabitants $N = 5.5 \cdot 10^{6}$; $1\,\text{PJ} = 10^{15}\,\text{J}$ and $1\,\text{GJ} = 10^{9}\,\text{J}$
+**Find:** a) the share of fossil fuels in the total consumption as a percentage; b) the total consumption per inhabitant in $\text{GJ}$; c) the minimum replacement of fossil energy in petajoules so that the share of fossil fuels stays below a third
+**Principle:** The total consumption is the sum of the energies of all the sources, and a share is the ratio of a part to the whole. The amount per inhabitant is obtained by dividing the total energy by the number of inhabitants. Energy is conserved, so when fossil energy is replaced with hydro and wind power, the energy needed for the same use does not change, only its source does.
+**Formula:** $E_\text{tot} = \sum E$, share $= \dfrac{E_\text{fossil}}{E_\text{tot}}$ and $E_\text{person} = \dfrac{E_\text{tot}}{N}$; condition c): $E_\text{fossil} - E_\text{replaced} < \dfrac{E_\text{tot}}{3}$
+**Conversions:** Prefixes: $1\,\text{PJ} = 10^{15}\,\text{J}$ and $1\,\text{GJ} = 10^{9}\,\text{J}$, so $1\,\text{PJ} = 10^{15} : 10^{9}\,\text{GJ} = 10^{6}\,\text{GJ}$.
+**Substitution:** The total consumption is $E_\text{tot} = 380\,\text{PJ} + 290\,\text{PJ} + 230\,\text{PJ} + 120\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 1200\,\text{PJ}$. The sum of the fossil fuels is $E_\text{fossil} = 290\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 470\,\text{PJ}$, so the share is $\dfrac{470\,\text{PJ}}{1200\,\text{PJ}} = 0.392 = 39.2\,\%$. In gigajoules the total consumption is $1200\,\text{PJ} = 1200 \cdot 10^{6}\,\text{GJ} = 1.2 \cdot 10^{9}\,\text{GJ}$, and per inhabitant $E_\text{person} = \dfrac{1.2 \cdot 10^{9}\,\text{GJ}}{5.5 \cdot 10^{6}} = 218\,\text{GJ}$. A third of the total consumption is $1200\,\text{PJ} : 3 = 400\,\text{PJ}$, so the amount to be replaced is $E_\text{replaced} > 470\,\text{PJ} - 400\,\text{PJ} = 70\,\text{PJ}$.
+**Answer:** a) The share of fossil fuels is about $39\,\%$. b) The consumption is about $2.2 \cdot 10^{2}\,\text{GJ}$, that is $220\,\text{GJ}$ per inhabitant per year (two significant figures as in the number of inhabitants). c) More than $70\,\text{PJ}$ of fossil energy must be replaced (two significant figures as in the data), for example $71\,\text{PJ}$, which leaves $399\,\text{PJ}$ of fossil energy, that is $33.25\,\%$, and the share is below a third. The total consumption can stay the same because energy is neither created nor destroyed: the same energy needed for use is simply produced from another source, so the replacing hydro and wind power adds as much energy as the fossil energy decreases.
+**Reasonableness:** The share is below $100\,\%$. Checking backwards: $218\,\text{GJ} \cdot 5.5 \cdot 10^{6} \approx 1.2 \cdot 10^{9}\,\text{GJ}$. Limit value: if exactly $70\,\text{PJ}$ is replaced, there is $400\,\text{PJ}$ of fossil energy, exactly a third, so a little more is needed.
+
+## fy2-1-L3-05
+**Given:** input and useful energy of the stages: panel $5.00\,\text{MJ} \to 0.80\,\text{MJ}$, charge controller and battery $0.80\,\text{MJ} \to 0.64\,\text{MJ}$, battery discharge and wires $0.64\,\text{MJ} \to 0.56\,\text{MJ}$, LED lamp $0.56\,\text{MJ} \to 0.14\,\text{MJ}$
+**Find:** a) the thermal energy $E_\text{thermal}$ at each stage and in total in $\text{MJ}$; b) the stage where the most thermal energy is produced, and its share as a percentage; c) the check with the law of conservation and the justification
+**Principle:** At each stage energy is conserved: $E_\text{in} = E_\text{out} + E_\text{thermal}$. The model assumes that the rest of the energy changes into thermal energy, so the thermal energy is calculated as the part that does not continue onwards as useful energy. The thermal energy of the whole chain is the sum of the thermal energies of the stages.
+**Formula:** $E_\text{thermal} = E_\text{in} - E_\text{out}$ at each stage and $E_\text{thermal,tot}$ is the sum of the stages
+**Conversions:** All energies are in megajoules, so no conversions are needed.
+**Substitution:** In the panel $5.00\,\text{MJ} - 0.80\,\text{MJ} = 4.20\,\text{MJ}$, in the charge controller and battery $0.80\,\text{MJ} - 0.64\,\text{MJ} = 0.16\,\text{MJ}$, in the battery discharge and wires $0.64\,\text{MJ} - 0.56\,\text{MJ} = 0.08\,\text{MJ}$ and in the lamp $0.56\,\text{MJ} - 0.14\,\text{MJ} = 0.42\,\text{MJ}$. The sum is $E_\text{thermal,tot} = 4.20\,\text{MJ} + 0.16\,\text{MJ} + 0.08\,\text{MJ} + 0.42\,\text{MJ} = 4.86\,\text{MJ}$. The most is produced in the panel, and its share is $\dfrac{4.20\,\text{MJ}}{4.86\,\text{MJ}} = 0.864 = 86\,\%$.
+**Answer:** a) In total $4.86\,\text{MJ}$ changes into thermal energy (three significant figures as in the table). b) The most thermal energy is produced in the solar panel, about $86\,\%$ of all of it. c) Check: $0.14\,\text{MJ} + 4.86\,\text{MJ} = 5.00\,\text{MJ}$, which equals the radiant energy that arrived at the panel. The energy has not been used up: it has changed into light and thermal energy, which is transferred to the surroundings. The light is only $2.8\,\%$ of the initial energy, because at every stage part of it changes into thermal energy, which cannot be turned back into a useful form.
+**Reasonableness:** The output energy of each stage is smaller than its input energy, for example $0.80 < 5.00$ and $0.14 < 0.56$, as it should be. The light of the lamp is $0.14\,\text{MJ} : 5.00\,\text{MJ} = 0.028$, that is $2.8\,\%$ of what arrived at the panel. The large thermal share of the solar panel is believable, because most of the sunlight does not change into electricity.

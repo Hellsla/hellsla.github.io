@@ -21,13 +21,13 @@ P2. +3/+3/+2.
 P1. +3/+3/+2.
 - Taso 1: monivalinta teho vs. energia; lasku tehosta; aika annetulla teholla.
 - Taso 2 (aineisto): kodin vuorokauden tehokäyrä (figure) → huipputeho ja energia pinta-alana; laitteiden tehotaulukko ja käyttöajat → vuorokauden energia ja suurin kuluttaja. Virheanalyysi: "1000 W:n laite kuluttaa 1000 W tunnissa".
-- Taso 3: Fingridin tyyppinen kulutus–tuotanto-tuntiaineisto (lähde) → huippukulutuksen hetki, säätövoiman tarve, perustelu; mallintaminen portaiden nousun tehosta (oma massa, aika, korkeus) ja vertailu laitteisiin.
+- Taso 3: Fingridin tyyppinen kulutus–tuotanto-tuntiaineisto (lähde) → huippukulutuksen hetki, säätövoiman tarve, perustelu; laitteen käyntijakson aineisto (päällä/pois) → keskiteho ja vuosikustannus. (Portaiden nousun teho vaatisi $mgh$:n, joka kuuluu FY4:ään.)
 
 ### fy2-4 Hyötysuhde
 P1. +3/+3/+2.
 - Taso 1: monivalinta hyötysuhde ei voi ylittää 100 %; lasku hyötysuhteesta; hukkaenergian määrä.
-- Taso 2 (aineisto): taulukko lampputyyppien tehoista ja valovirroista → valotehokkuus ja vertailu; mittaustaulukko vedenkeittimestä (teho, aika, lämpötilan nousu) → hyötysuhde. Ketjun kokonaishyötysuhde (voimalaitos → siirto → laite).
-- Taso 3: aineisto sähköauton ja polttomoottoriauton energiankulutuksesta (kWh/100 km, l/100 km) → vertailu samaan yksikköön ja perusteltu johtopäätös; virheanalyysi: väärin laskettu ketjuhyötysuhde (summa tulon sijaan).
+- Taso 2 (aineisto): taulukko lampputyyppien tehoista ja valovirroista → valotehokkuus ja vertailu; moottorin mittaustaulukko ($E_\text{o}$, $E_\text{a}$) → hyötysuhde. (Vedenkeittimen $cm\Delta T$ ja ketjun kokonaishyötysuhde kuuluvat FY3:een, ks. fy3-15.)
+- Taso 3: aineisto sähköauton ja polttomoottoriauton energiankulutuksesta (kWh/100 km, l/100 km) → vertailu samaan yksikköön ja perusteltu johtopäätös; virheanalyysi: häviöosuus luettu hyötysuhteeksi, ja vuoden lämpöhäviön mallinnus.
 
 ### fy2-5 Polttoaineet ja lämpöarvo $E = Hm$
 P2. +3/+3/+2.

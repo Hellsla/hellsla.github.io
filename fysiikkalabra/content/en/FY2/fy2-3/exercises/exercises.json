@@ -40,6 +40,77 @@
       "answer": 3.0,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L1-06",
+      "level": 1,
+      "text": "Device A transforms energy steadily at a power of $1.0\\,\\text{kW}$ and device B at a power of $2.0\\,\\text{kW}$. Which of the following statements is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Device B transforms twice as much energy every second as device A.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Device B transforms twice as much energy every second as device A.",
+          "feedback": "Correct: power is the energy transformed divided by the time taken, so twice the power means twice the energy in every unit of time.",
+          "correct": true
+        },
+        {
+          "text": "Device B always consumes more energy than device A.",
+          "feedback": "Energy is power times time. If device A is on much longer than B, A can consume more energy even though its power is lower."
+        },
+        {
+          "text": "Device A consumes $1.0\\,\\text{kW}$ of energy in an hour.",
+          "feedback": "A kilowatt is a unit of power, not of energy. In an hour device A consumes $1.0\\,\\text{kWh}$ of energy."
+        },
+        {
+          "text": "The power of the devices tells how much energy they have consumed in total.",
+          "feedback": "Power tells the rate at which energy is transformed, not the total energy. The energy consumed is obtained only when the power is multiplied by time."
+        }
+      ]
+    },
+    {
+      "id": "fy2-3-L1-07",
+      "level": 1,
+      "text": "A device transforms energy steadily, and the energy $E$ it transforms forms a line starting from the origin as a function of time $t$. What does the slope of the line tell you about the device?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The power of the device.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The power of the device.",
+          "feedback": "Correct: the slope of the line is $\\Delta E : \\Delta t$, which by definition is power. The steeper the line, the greater the power.",
+          "correct": true
+        },
+        {
+          "text": "The total energy consumed by the device.",
+          "feedback": "The total energy is read from the graph at a given moment as the height of the line, not from the slope. The same line gives a different energy at a different moment."
+        },
+        {
+          "text": "The operating time of the device.",
+          "feedback": "The operating time is on the horizontal axis. The slope is the change in energy divided by the change in time, not the time."
+        },
+        {
+          "text": "The weight of the device.",
+          "feedback": "The weight of the device cannot be determined from the graph. The slope only tells how fast energy is transformed."
+        }
+      ]
+    },
+    {
+      "id": "fy2-3-L1-08",
+      "level": 1,
+      "text": "An electric motor transforms $3.6\\,\\text{MJ}$ of electrical energy in $2.0\\,\\text{min}$. Calculate the average power of the motor in kilowatts.",
+      "kind": [
+        "model"
+      ],
+      "answer": 30,
+      "unit": "kW",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,110 @@
       "answer": 79,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L2-05",
+      "level": 2,
+      "text": "The table shows the power of household appliances and their average daily operating time. Calculate the total electrical energy the appliances consume in a day in kilowatt-hours. Which appliance consumes the most energy even though it does not have the greatest power?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.96,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Power and daily operating time of appliances",
+        "columns": [
+          "Appliance",
+          "$P\\,(\\text{W})$",
+          "$t\\,(\\text{h})$"
+        ],
+        "rows": [
+          [
+            "fridge (compressor running)",
+            "100",
+            "8.0"
+          ],
+          [
+            "television",
+            "80",
+            "3.5"
+          ],
+          [
+            "laptop",
+            "50",
+            "6.0"
+          ],
+          [
+            "kettle",
+            "2000",
+            "0.20"
+          ],
+          [
+            "hair dryer",
+            "1800",
+            "0.10"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-3-L2-06",
+      "level": 2,
+      "text": "A student solves a problem: “The power of an oven is $2.0\\,\\text{kW}$, and it is on for $90\\,\\text{min}$. The energy is $E = P\\,t = 2.0\\,\\text{kW} \\cdot 90 = 180\\,\\text{kWh}$.” The result is not believable. Find the error and calculate the energy consumed by the oven correctly in kilowatt-hours.",
+      "kind": [
+        "error"
+      ],
+      "answer": 3.0,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L2-07",
+      "level": 2,
+      "text": "In an experiment the reading $E$ of an electricity meter was taken in kilowatt-hours at $10\\,\\text{min}$ intervals while only one heater was on. Draw a graph from the measurement points, fit a line to the points and determine the power of the heater from its slope. Give the answer in watts. Why does the line pass through the origin, and what does its slope tell you?",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 1800,
+      "unit": "W",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Meter reading as a function of time (reading zeroed at the start)",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$E\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0.00"
+          ],
+          [
+            "10",
+            "0.31"
+          ],
+          [
+            "20",
+            "0.59"
+          ],
+          [
+            "30",
+            "0.91"
+          ],
+          [
+            "40",
+            "1.19"
+          ],
+          [
+            "50",
+            "1.51"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +275,111 @@
       "answer": 100,
       "unit": "km",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy2-3-L3-04",
+      "level": 3,
+      "text": "The table contains example data made to resemble Fingrid's hourly data: the average power of Finland's electricity consumption and domestic electricity production in each hour of a weekday morning. When consumption exceeds production, the difference is covered by electricity imports and balancing power. For the period when consumption exceeds production, calculate the total missing electrical energy in gigawatt-hours. Explain in writing when consumption is at its highest, how great a balancing power output is needed at least, and what kind of power plant is suitable for the task.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 2.8,
+      "unit": "GWh",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Electricity consumption and production, average power during the hour",
+        "columns": [
+          "Hour (time)",
+          "Consumption $P_\\text{c}\\,(\\text{MW})$",
+          "Production $P_\\text{p}\\,(\\text{MW})$"
+        ],
+        "rows": [
+          [
+            "05–06",
+            "8400",
+            "8900"
+          ],
+          [
+            "06–07",
+            "9100",
+            "8900"
+          ],
+          [
+            "07–08",
+            "9900",
+            "9300"
+          ],
+          [
+            "08–09",
+            "10400",
+            "9600"
+          ],
+          [
+            "09–10",
+            "10600",
+            "9800"
+          ],
+          [
+            "10–11",
+            "10300",
+            "9900"
+          ],
+          [
+            "11–12",
+            "9800",
+            "9900"
+          ],
+          [
+            "12–13",
+            "9600",
+            "9800"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-3-L3-05",
+      "level": 3,
+      "text": "The electricity consumption of an old fridge was monitored by measuring how long the compressor runs and how long it is off. The power of the compressor when running is $100\\,\\text{W}$, and other consumption is ignored. The annual consumption of a new fridge is $130\\,\\text{kWh}$. The price of electricity is $20\\,\\text{c/kWh}$, that is $0.20\\,\\text{€/kWh}$, and a year has $8760\\,\\text{h}$. Using the table, determine the average power and annual consumption of the old fridge and calculate how many euros a year are saved by changing to the new one. Estimate in writing whether it is worth buying a new fridge costing $600\\,\\text{€}$ for the saving in electricity alone, and which assumptions affect the result.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 43,
+      "unit": "€",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Compressor running and off times over four periods",
+        "columns": [
+          "Period",
+          "Compressor on $(\\text{min})$",
+          "Compressor off $(\\text{min})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "11.5",
+            "18.0"
+          ],
+          [
+            "2",
+            "12.0",
+            "18.5"
+          ],
+          [
+            "3",
+            "11.5",
+            "17.5"
+          ],
+          [
+            "4",
+            "12.0",
+            "18.0"
+          ]
+        ]
+      }
     }
   ]
 }

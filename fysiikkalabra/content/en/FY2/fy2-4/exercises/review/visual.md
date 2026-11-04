@@ -1,15 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: fbdee740d0bad439
+CONTENT-HASH: cef7039ba3a4aa4f
+Mode: delta
+Round: 1
 
 ## Blocking
+(none)
+
+## Fixed
+- exercises.json L3-04: unit "kertaa" (Finnish left over) changed to "times", as in L2-05.
 
 ## Polish
-- [Minor] fy2-4-L3-02 solution — stacked fractions in the substitution are cramped — put the second fraction on its own line with a \\[4pt] gap.
-- [Minor] fy2-4-L2-03 — boxed 0.23 kWh vs substitution 0.228 kWh — say "0.228 kWh, rounded to 0.23 kWh".
-- [Minor] fy2-4-L3-03 solution — heading "Reading the graph" suits a diagram less — "Reading the figure".
+- none
 
 ## Checked
-- Round 2. Round-1 Blocking resolved: open-exercises-L3-1280-1 shows "How many times as large…" with input unit "times"; solution layout and maths intact (solution opened, stacked fractions legible). Other captures unchanged from round 1; the exercise hash differs from round 1 only by the unit edit as far as visible.
+- Opened open-exercises captures (L2, L3) for en: tables, formulas, decimal separators and answers render without clipping.
+- Table captions and column headers translated; units and symbols as in fi.
+- Formula blocks wrap cleanly in the solutions of L2-06 and L3-05.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish (English prose) 4 · accessibility 4
+illustrations 5 - typography 5 - language 5 - accessibility 5

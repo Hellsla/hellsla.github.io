@@ -20,4 +20,19 @@ a["fy2-2-L3-01"] = math.ceil(790 / 140)            # 790 TJ : 140 TJ = 5,64 unit
 E_meri = 370 - 140                                 # reactor 370 TJ − electricity 140 TJ = 230 TJ of heat to the sea
 a["fy2-2-L3-02"] = E_meri * 1000 / 72               # 230 TJ = 230 · 1000 GJ = 230 000 GJ; 230 000 GJ : 72 GJ per house = 3194 -> 3200 houses
 a["fy2-2-L3-03"] = 370 * 1000 * 1000 / 32          # 370 TJ = 370 · 1000 · 1000 MJ = 3,7 · 10^8 MJ; : 32 MJ per litre = 1,16 · 10^7 l of petrol
+# Exercise bank additions (teacher 2026-11-04): L1-06 is multiple choice (no number)
+a["fy2-2-L1-07"] = 50 / 100 * 2400                 # pähkinät: 0,50 · 2400 kJ = 1200 kJ
+a["fy2-2-L1-08"] = 0.35 * 1000                     # 0,35 GJ = 0,35 · 1000 MJ = 350 MJ
+E_aamu = 2.5 * 300 + 1.2 * 400 + 2.0 * 190         # 750 + 480 + 380 = 1610 kJ
+a["fy2-2-L2-05"] = round(E_aamu / 220, 1)          # 1610 kJ : 220 kJ/km = 7,32 -> 7,3 km
+a["fy2-2-L2-06"] = 0.85 + 1200 / 1000 + 450 / 1000 # 0,85 + 1,2 + 0,45 = 2,5 MJ
+ws, wE = [1.0, 2.0, 3.0, 4.0, 5.0], [262, 498, 771, 1003, 1262]   # data of L2-07
+sm, Em = sum(ws) / 5, sum(wE) / 5
+kw = sum((x - sm) * (y - Em) for x, y in zip(ws, wE)) / sum((x - sm) ** 2 for x in ws)   # least squares 250,5 kJ/km
+a["fy2-2-L2-07"] = round(1500 / kw, 1)             # 1,5 MJ = 1500 kJ : 250,5 kJ/km = 5,99 -> 6,0 km (tolerance 0,04: 5,8…6,2)
+Ek = [18 * 3.6, 12 * 42, 1200 * 3.6, 3.2 * 1e6]    # GJ: 64,8; 504; 4320; 3 200 000
+a["fy2-2-L3-04"] = round(max(Ek) / min(Ek), -3)    # 3,2e6 : 64,8 = 49 383 -> 49 000 (tolerance 0,03: 47 500…50 500)
+E_in = 1.4 + 3200 / 1000 + 650 / 1000 + 0.0042 * 1000 + 900 / 1000   # 10,35 MJ
+E_out = 10.2 + 5.0 * 250 / 1000                    # 11,45 MJ
+a["fy2-2-L3-05"] = round(30 * (E_out - E_in) / 37, 2)   # 33 MJ : 37 MJ/kg = 0,89 kg of fat
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

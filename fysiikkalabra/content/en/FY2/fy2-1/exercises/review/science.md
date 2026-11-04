@@ -1,12 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 9b2d1c5d3a2e7f48
+CONTENT-HASH: e52cd3df9b30aa2f
+Mode: full
+Round: 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none)
+
 ## Polish
-- (none beyond the Finnish report's own polish items)
+(none)
 
 ## Checked
-- All 12 exercises compared with the Finnish: texts, numbers, units, answers, tolerances, figure id (fy2-1/kitka-pylvaat) identical. Recomputed: 50, 239, 200 (700-500), 510, 850, 3.0 kJ, 360, 29000, 130, 0.2 J.
-- Solutions follow the Finnish step order (Given ... Reasonableness, with Reading the graph for L1-03); formulas, unit conversions and significant-figure reasons preserved; L1-04 and L3-03 model answers keep the same physics.
+- Scripted comparison against fi: ids, levels, kinds, answers, units, tolerances, figure refs, choice count and correct flags are identical for all 12 exercises (en).
+- All numbers in the 8 new tasks (L1-06..08, L2-05..07, L3-04..05), data tables, texts and solutions.md equal the Finnish (decimal point in JSON and LaTeX in the JSON, comma in solutions of fi-easy as in fi).
+- Recomputed: L2-05 60 %, L2-06 20 J, L2-07 205-162 = 43 kJ, L3-04 39.2 % / 218 GJ / over 70 PJ, L3-05 4.86 MJ, panel 86 %.
+- Feedback of L1-06 and L1-07 keeps the same physics as fi (no misconception introduced, surroundings part of the system).
+- Translation (English): no Finnish left.
+- check_i18n.py: 0 errors for en.

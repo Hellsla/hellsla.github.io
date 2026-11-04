@@ -40,6 +40,77 @@
       "answer": 510.0,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-06",
+      "level": 1,
+      "text": "A charged phone is on a table and is not being used. What form of energy is the energy stored in the battery of the phone?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Chemical energy",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Chemical energy",
+          "feedback": "Correct: the energy is stored in the battery chemically, in the chemical bonds between substances. When the phone is used, the chemical energy first changes into electrical energy and then into, for example, light and thermal energy.",
+          "correct": true
+        },
+        {
+          "text": "Kinetic energy",
+          "feedback": "Kinetic energy belongs to a moving object. A phone at rest on a table does not move, and the energy stored in the battery is not motion; the energy is bound in the substances of the battery."
+        },
+        {
+          "text": "Radiant energy",
+          "feedback": "Radiant energy is the energy of light and other electromagnetic radiation. In a battery the energy is not in the form of radiation but in chemical bonds; radiation is produced only when the screen of the phone starts to light up."
+        },
+        {
+          "text": "Potential energy",
+          "feedback": "Potential energy depends on the height of an object relative to the zero level, like a ball at the edge of a cliff. The energy of the phone battery does not depend on how high the table is, but on the chemical bonds of the substances in the battery."
+        }
+      ]
+    },
+    {
+      "id": "fy2-1-L1-07",
+      "level": 1,
+      "text": "A car drives along a level road and brakes to a stop. Which of the following describes correctly what happens to the kinetic energy of the car?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The kinetic energy changes into thermal energy in the brakes, the tyres and the road, and the total amount of energy stays the same.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The kinetic energy changes into thermal energy in the brakes, the tyres and the road, and the total amount of energy stays the same.",
+          "feedback": "Correct: when braking, friction changes the kinetic energy into thermal energy, so the brakes, the tyres and the road warm up a little. Energy is not lost; it changes form.",
+          "correct": true
+        },
+        {
+          "text": "The kinetic energy disappears, because the car stops.",
+          "feedback": "Energy does not disappear. By the law of conservation of energy it only changes form or moves, and here the kinetic energy changes into thermal energy."
+        },
+        {
+          "text": "The kinetic energy changes into thermal energy in the brakes, but the total energy decreases, because the heat is transferred to the surroundings.",
+          "feedback": "The surroundings are part of the system, so heat transferred to the surroundings does not disappear anywhere. By the law of conservation of energy the total energy stays the same: the kinetic energy has changed into thermal energy, which is in the brakes, the tyres, the road and the air."
+        },
+        {
+          "text": "The kinetic energy is still in the car as kinetic energy, even though the car has stopped.",
+          "feedback": "A car that has stopped has no kinetic energy, because it is not moving. However, the energy has not disappeared; it is in the brakes, the tyres and the road as thermal energy."
+        }
+      ]
+    },
+    {
+      "id": "fy2-1-L1-08",
+      "level": 1,
+      "text": "A phone is being charged with a charger from a wall socket, and the charger feels warm in the hand. Describe the change of energy as a chain, from the energy coming along the cable from the wall socket to the moment it is in the battery. Use the law of conservation of energy to explain why the charger warms up.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": "Electrical energy → (in the charger) electrical energy and thermal energy → chemical energy in the battery; part changes into thermal energy, so the charger warms up, and energy is not lost",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,92 @@
       "answer": 29000.0,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-05",
+      "level": 2,
+      "text": "The table gives, as example figures, the yearly energy consumption of a detached house by use. Calculate what percentage of the total consumption is space heating. Which use would be the biggest target for saving, and why?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 60.0,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Yearly energy consumption of a detached house by use",
+        "columns": [
+          "Use",
+          "$E\\,(\\text{GJ})$"
+        ],
+        "rows": [
+          [
+            "Space heating",
+            "36.0"
+          ],
+          [
+            "Hot water",
+            "10.5"
+          ],
+          [
+            "Electrical appliances and lighting",
+            "9.0"
+          ],
+          [
+            "Sauna",
+            "4.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-1-L2-06",
+      "level": 2,
+      "text": "An inventor demonstrates a water device that he claims works forever without outside energy. Water falling from the upper pool turns a generator and loses potential energy of $100\\,\\text{J}$ per cycle. The generator changes all of this energy into electrical energy. A pump uses $80\\,\\text{J}$ of it and lifts the water back to the upper pool, and the rest of the electrical energy goes to a lamp. How many joules of energy does the device create from nothing in one cycle, if the claim is true? Explain which principle of energy is broken.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 20.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-07",
+      "level": 2,
+      "text": "The table gives, as example figures, the electrical energy taken by three lamps in one hour and how much of it changes into light; for comparison, the lamps take the same electrical energy. The rest of the energy changes into thermal energy. How many kilojoules more thermal energy does the incandescent lamp produce than the LED lamp? Justify which lamp is the wiser one to use in terms of energy.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 43.0,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Electrical energy of the lamps and the energy that changes into light in an hour",
+        "columns": [
+          "Lamp",
+          "$E_\\text{elec}\\,(\\text{kJ})$",
+          "$E_\\text{light}\\,(\\text{kJ})$"
+        ],
+        "rows": [
+          [
+            "Incandescent lamp",
+            "216",
+            "11"
+          ],
+          [
+            "Halogen lamp",
+            "216",
+            "16"
+          ],
+          [
+            "LED lamp",
+            "216",
+            "54"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +257,94 @@
       "answer": "a) nuclear energy → thermal energy → kinetic energy of steam and turbine → electrical energy; b) about two thirds ends up as thermal energy in the sea and the surroundings, and the total energy is conserved",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L3-04",
+      "level": 3,
+      "text": "The table gives the total yearly energy consumption of an imaginary country by source (rounded example figures, not the statistics of a real country). The country has $5.5 \\cdot 10^{6}$ inhabitants. Oil, coal and natural gas are fossil fuels.\n\na) Calculate the share of fossil fuels in the total consumption as a percentage.\n\nb) Calculate the total consumption per inhabitant in gigajoules; $1\\,\\text{PJ} = 10^{15}\\,\\text{J}$ and $1\\,\\text{GJ} = 10^{9}\\,\\text{J}$.\n\nc) The country wants to bring the share of fossil fuels below a third of the total consumption by replacing part of the fossil energy with hydro and wind power. The total consumption stays the same. At least how many petajoules of fossil energy must be replaced? Justify with a calculation and use the law of conservation of energy to explain why the total consumption can stay the same.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 39.2,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Total yearly energy consumption of an example country by source",
+        "columns": [
+          "Energy source",
+          "$E\\,(\\text{PJ})$"
+        ],
+        "rows": [
+          [
+            "Bioenergy",
+            "380"
+          ],
+          [
+            "Oil",
+            "290"
+          ],
+          [
+            "Nuclear energy",
+            "230"
+          ],
+          [
+            "Hydro and wind power",
+            "120"
+          ],
+          [
+            "Coal",
+            "100"
+          ],
+          [
+            "Natural gas",
+            "80"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-1-L3-05",
+      "level": 3,
+      "text": "The LED lamp on a desk gets its electricity from a solar panel and a battery. The table gives the energies of one day at the stages of the chain: the input of each stage and the useful energy that goes on from it. The input of the next stage is the useful energy of the previous stage. The model assumes that the rest of the energy of a stage changes into thermal energy.\n\na) Calculate the energy that changes into thermal energy at each stage and in the whole chain in total.\n\nb) At which stage is the most thermal energy produced, and what percentage of all the thermal energy is that?\n\nc) Check the result with the law of conservation of energy and explain why the radiant energy arriving at the panel has not been used up, even though the light of the lamp is only a small part of it.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 4.86,
+      "unit": "MJ",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "From the solar panel to the lamp: energies during one day",
+        "columns": [
+          "Stage",
+          "$E_\\text{in}\\,(\\text{MJ})$",
+          "$E_\\text{out}\\,(\\text{MJ})$"
+        ],
+        "rows": [
+          [
+            "Solar panel",
+            "5.00",
+            "0.80"
+          ],
+          [
+            "Charge controller and battery",
+            "0.80",
+            "0.64"
+          ],
+          [
+            "Battery discharge and wires",
+            "0.64",
+            "0.56"
+          ],
+          [
+            "LED lamp",
+            "0.56",
+            "0.14"
+          ]
+        ]
+      }
     }
   ]
 }
