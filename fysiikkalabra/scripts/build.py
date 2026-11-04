@@ -49,7 +49,12 @@ else:
 TPL = ROOT / "templates"
 for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "readaloud.js", "kortit.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
-shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
+# p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
+# UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
+# when it is published, and loaded by readaloud.js from there (MODEL_BASE).
+MODEL_DIRS = ("supertonic3-v1", "ort")
+shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True, ignore=shutil.ignore_patterns(*MODEL_DIRS))
+for _d in MODEL_DIRS: shutil.rmtree(SITE / "vendor" / _d, ignore_errors=True)
 if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
 if (ROOT / "assets/units").is_dir():                          # the local courses' unit components (scripts/units.py)
@@ -234,6 +239,7 @@ def home_row(code, title, question, coming=False):
 
 
 ABOUT = "tietoa.html"
+PRIVACY = "tietosuoja.html"   # Tietosuoja (teacher 2026-11-04): no student data, no cookies, what the browser keeps and why
 
 
 def front_chrome(html):
@@ -899,11 +905,16 @@ def build_language(lang):
     about_body = render_md(about_md.read_text()) if about_md else f'<h1>{T("site.about")}</h1><p class="lead">{T("site.about_lead")}</p>'
     # in Kiviruukin lukio's colours under the school's logo (teacher 2026-11-04, after his school pages; site.css .about-page)
     h1 = re.match(r"\s*(<h1>.*?</h1>)", about_body, re.S)
-    hero = ('<header class="about-hero"><img class="about-logo" src="brand/kiviruukin-lukio-valkoinen.svg" alt="Kiviruukin lukio" width="216" height="105">'
+    hero = ('<header class="about-hero"><img class="about-logo" src="brand/kiviruukin-lukio-oikea-valkoinen.svg" alt="Kiviruukin lukio" width="175" height="100">'
             + (h1.group(1) if h1 else "") + '</header>')
     about_body = hero + (about_body[h1.end():] if h1 else about_body)
     (out / ABOUT).write_text(page(T("site.about"), f'<article class="about">{about_body}</article>',
                                   f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead"), main_class="reading about-page"))
+    # Tietosuoja (teacher 2026-11-04): content/<lang>/tietosuoja.md (the Finnish where a language has none), linked from every footer
+    priv_md = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / i18n.SOURCE / "tietosuoja.md") if f.is_file()), None)
+    if priv_md:
+        (out / PRIVACY).write_text(page(T("site.privacy"), f'<article class="privacy">{render_md(priv_md.read_text())}</article>',
+                                        f'<a href="index.html">{T("site.name")}</a> › {T("site.privacy")}', PRIVACY, T("site.privacy_lead"), main_class="reading privacy-page"))
     if SITE.name == "site.tmp":                  # a lesson leaves the live site only with a warning (an annotation on CI)
         live = LIVE / out.relative_to(SITE)
         for old_page in sorted(live.glob("*.html")):
@@ -913,7 +924,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + mixer_built
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + mixer_built
                     + [f"{u}.html" for u, ul in unit_pub.items() if ul == lang and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):

@@ -853,7 +853,21 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
 .ra-speeds label:has(input:checked){border-color:var(--accent-deep);background:var(--accent-soft);color:var(--accent-deep);font-weight:700}
 .ra-speeds input{accent-color:var(--accent);margin:0}
 .ra-note{margin:0;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2);cursor:pointer}
-@media (max-width:479.98px){nav.toc .toc-tools{gap:.2rem;padding-left:.35rem}.ra-start{padding:0 .6rem 0 .5rem;gap:.3rem}.ra-more{min-width:34px}}   /* a phone: room for the longest stage chip beside the button */
+/* under 600 px (teacher 2026-11-04, UI fix 2): Kuuntele is the icon only (its name stays in aria-label and in a
+   visually hidden span) and the menu arrow sits inside the same pill, so at least two stage chips fit beside it */
+@media (max-width:599.98px){
+  nav.toc .toc-tools{gap:0;padding-left:.25rem}
+  nav.toc a{gap:.3rem;padding:0 .6rem 0 .4rem}nav.toc a:not(:has(.toc-no)){padding-left:.6rem}
+  nav.toc .toc-no{width:1.3rem;height:1.3rem}
+  nav.toc .toc-label{max-width:12.5rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}   /* a long section name (investigations) */
+  nav.toc a:not(:has(span)){display:inline-block;max-width:13rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:38px}
+  .toc-tools .ra-start{position:relative;gap:0;padding:0 .15rem 0 .5rem;border-right:0;border-radius:999px 0 0 999px}
+  .toc-tools .ra-start span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+  .toc-tools .ra-more{min-width:28px;padding:0 .3rem 0 0;border-left:0;border-radius:0 999px 999px 0}
+  .toc-tools .ra-more svg{width:18px;height:18px}
+}
+.ra-better{display:flex;align-items:center;gap:.5rem;min-height:44px;margin-top:.5rem;font:500 var(--fs-ui) var(--sans);cursor:pointer}
+.ra-better[hidden]{display:none}.ra-better input{accent-color:var(--accent);margin:0;width:1.15rem;height:1.15rem}
 .ra-on{background:#fff9db;box-shadow:0 0 0 .35rem #fff9db;border-radius:4px}
 ::highlight(ra-sentence){background-color:#ffec99;color:var(--ink)}
 ::highlight(ra-word){background-color:#fcc419;color:var(--ink);text-decoration:underline;text-decoration-thickness:2px}
@@ -868,10 +882,13 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
    replaced by the next one. Without JavaScript the cards are a definition list (.kc-dl). The bold terms of
    Teoriatiivistelmä that name a card get a dotted underline and open a popover (.kc-pop). */
 .kc-intro{font-size:var(--fs-inner);color:var(--ink-2);margin:0 0 1rem}
-.kc-dl{margin:0 0 1rem;display:grid;gap:.6rem}
+.kc-dl{margin:0 0 1rem;display:grid;grid-template-columns:minmax(0,1fr);gap:.6rem;min-width:0}
 .kc-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--inner-radius);padding:.7rem 1rem}
 .kc-item dt{font:700 var(--fs-body) var(--sans);color:var(--ink)}
 .kc-item dd{margin:.15rem 0 0;font-size:var(--fs-inner)}
+/* a long word or formula never widens the page (teacher 2026-11-04, UI fix 5: 360 px scrollWidth === clientWidth) */
+.kc-item,.kc-item dt,.kc-item dd{min-width:0;overflow-wrap:anywhere}
+.kc-item .katex-display{overflow-x:auto;overflow-y:hidden;max-width:100%}
 .kc-formula{display:block}
 .kc-more,.kc-all{font:600 var(--fs-ui) var(--sans);margin:.9rem 0 0}
 .kc-row{display:grid;gap:.9rem;margin:0 0 .5rem}
@@ -983,19 +1000,21 @@ strong.kc-ready{font-weight:inherit}
 .kc-done-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:1rem}
 .kc-done-actions button{border:1px solid var(--line);background:var(--surface);color:var(--ink)}
 .kc-done-actions button.kc-primary{border-color:var(--accent-deep);background:var(--accent-deep);color:#fff}
-.kc-static-module h2{margin-top:2rem}
+.kc-static-module{margin-top:1rem;min-width:0}
+.kc-static-module>summary{cursor:pointer;padding:.55rem 0}
+.kc-static-module>summary h2{display:inline;margin:0;font-size:1.25rem}
 @media print{.kc-chips,.kc-pop,.kc-turn,.kc-actions,.kc-face{display:none!important}.kc-inner{transform:none!important}.kc-back{transform:none;backface-visibility:visible;-webkit-backface-visibility:visible;min-height:0}}
 
 /* Sivustosta in Kiviruukin lukio's colours (teacher 2026-11-04, after his school pages): navy #012169, pink #fca5c7 */
 :root:has(main.about-page){--bg:#fff;--bg-tint:#f3f5f9;--ink:#0b1638;--ink-2:#3c4563;--line:#dfe5eb;--line-2:#ecf0f4;
   --accent:#012169;--accent-deep:#012169;--accent-soft:#fff0f6;--brand-green:#012169;--kr-navy:#012169;--kr-navy-deep:#00174f;--kr-pink:#fca5c7}
 body:has(main.about-page){background-image:none}
-.about-page .about-hero{margin:0 0 2.25rem;padding:2rem 2rem 1.75rem;border-radius:var(--card-radius);color:#fff;
+.about-page .about-hero{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.9rem 1.75rem;margin:0 0 2.25rem;padding:1.25rem 1.75rem;border-radius:var(--card-radius);color:#fff;
   background:linear-gradient(135deg,var(--kr-navy) 0%,var(--kr-navy-deep) 100%)}
-.about-page .about-logo{display:block;width:128px;height:auto;margin:0 0 1.75rem}
+.about-page .about-logo{display:block;flex:none;order:2;width:auto;height:64px;margin:0 0 0 auto}   /* the logo at the right end of the banner, beside the heading (teacher 2026-11-04: less empty blue, logo on the right) */
 .about-page .about-hero h1{margin:0;color:#fff;display:flex;align-items:center;gap:.75rem}
 .about-page .about-hero h1::before{content:"";flex:none;width:26px;height:3px;background:var(--kr-pink)}
 .about-page h2{color:var(--kr-navy);padding-left:.75rem;border-left:4px solid var(--kr-pink)}
 .about-page strong{color:var(--kr-navy)}
-@media (max-width:600px){.about-page .about-hero{padding:1.5rem 1.25rem 1.25rem}.about-page .about-logo{width:104px;margin-bottom:1.25rem}}
+@media (max-width:600px){.about-page .about-hero{gap:.75rem;padding:1rem 1.1rem}.about-page .about-hero h1{gap:.5rem}.about-page .about-hero h1::before{width:16px}.about-page .about-logo{height:48px}}
 .about-page .about-tag{display:inline-block;margin:1.5rem 0 0;padding:.3rem .9rem;border-radius:999px;background:var(--kr-pink);color:var(--kr-navy);font:700 var(--fs-ui) var(--sans);letter-spacing:.01em}
