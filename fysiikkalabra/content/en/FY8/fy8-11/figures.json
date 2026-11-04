@@ -32,5 +32,6 @@
  "bentoniitti": "bentonite",
  "kupari": "copper",
  "valurauta": "cast iron",
- "polttoaine": "fuel"
+ "polttoaine": "fuel",
+ "Kuvaaja mittakaavassa: ytimen sidosenergia nukleonia kohti megaelektronivoltteina massaluvun funktiona, massaluku 20:stä 240:een, pystyakseli 7,0:sta 9,0:aan. Ruudukon väli on vaakasuunnassa 10 ja pystysuunnassa 0,1 megaelektronivolttia. Käyrä on korkeimmillaan noin massaluvun 60 kohdalla ja laskee loivasti raskaita ytimiä kohti. Pystyakselissa on katkosmerkki, koska akseli ei ala nollasta.": "Graph to scale: the binding energy per nucleon of a nucleus in megaelectronvolts as a function of the mass number, mass number from 20 to 240, vertical axis from 7.0 to 9.0. The grid spacing is 10 horizontally and 0.1 megaelectronvolts vertically. The curve is highest at about mass number 60 and falls gently towards heavy nuclei. The vertical axis has a break mark because the axis does not start from zero."
 }

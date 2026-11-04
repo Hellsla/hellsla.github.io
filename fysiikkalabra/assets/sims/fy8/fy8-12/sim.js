@@ -146,7 +146,7 @@ new p5((p) => {
     p.noStroke(); p.fill(...GLASSC); p.rect(XT + 6, YT0, XT1 - XT - 12, YT1 - YT0, 4);
     p.stroke(...INKC); p.strokeWeight(3); p.line(XT, YT0 - 2, XT, YT1 + 2);
     p.stroke(...GAMMA); p.strokeWeight(2); p.line(XT + 14, AXY, XT1 - 2, AXY);
-    lab('$\\text{GM-putki}$', (XT + XT1) / 2, 132, 'c', INKC);
+    lab(__('gm_putki'), (XT + XT1) / 2, 132, 'c', INKC);
     // cable and counter
     p.noFill(); p.stroke(...INKC); p.strokeWeight(3); p.bezier(XT1, AXY, 590, AXY, 590, 300, 560, 318);
     p.stroke(...INKC); p.strokeWeight(2.5); p.fill(...ALU); p.rect(400, 286, 160, 100, 10);

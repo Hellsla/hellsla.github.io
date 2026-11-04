@@ -135,7 +135,7 @@ new p5((p) => {
       const alpha = fate === 3 && phase > 0.7 ? 255 * (1 - (phase - 0.7) / 0.3) : 255;
       p.stroke(INKC[0], INKC[1], INKC[2], alpha); p.strokeWeight(1.2 * sk); p.fill(ALU[0], ALU[1], ALU[2], alpha); p.circle(x, y, 6.5 * sk);
     }
-    lab('$\\text{reaktorin sydän}$', cx, G.title, 'l', INKC);
+    lab(__('sydan_otsikko'), cx, G.title, 'l', INKC);
     lab(__('neutroneja', { N: big(C.N[g]) }), cx + cw / 2, G.cap, 'c', INKC);
   }
   function hash(i) { let x = Math.imul(i ^ 0x9E3779B9, 0x85EBCA6B); x ^= x >>> 13; x = Math.imul(x, 0xC2B2AE35); x ^= x >>> 16; return (x >>> 0) / 4294967296; }
@@ -178,7 +178,7 @@ new p5((p) => {
       if (j % 2 === 0 || sk < 1.5) lab('$' + big(j * ymax / 4) + '$', ox - 10 * sk, GY(j * ymax / 4) + 0.36 * fh, 'r', INKC);
     }
     lab('$N$', ox + 12 * sk, y1 - 18 * sk, 'l', INKC);
-    lab('$\\text{sukupolvi}\\ g$', (ox + x1) / 2, G.xlab + 1.5 * fh, 'c', INKC);
+    lab(__('sukupolvi_akseli'), (ox + x1) / 2, G.xlab + 1.5 * fh, 'c', INKC);
   }
 
   // every canvas text: its ink box pushed to simState.labels (canvas coordinates)
