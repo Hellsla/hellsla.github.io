@@ -182,7 +182,19 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 **Principle:** In an insulated calorimeter energy is conserved: the water gives out heat that warms the ice to $0\,{}^\circ\text{C}$, melts it and warms the melt water to the final temperature $T$. If the warming of the ice is forgotten, all the heat given out by the water is counted as used for melting.
 **Formula:** $c_\text{w} m_\text{w} (T_\text{w} - T) = c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i} + c_\text{w} m_\text{i} T$, so $s = \dfrac{c_\text{w} m_\text{w} (T_\text{w} - T) - c_\text{w} m_\text{i} T - c_\text{i} m_\text{i} \Delta T_\text{i}}{m_\text{i}}$. In part a) $\Delta T_\text{i} = 0$.
 **Conversions:** The changes in temperature are the same in degrees Celsius and in kelvins: $T_\text{w} - T_1 = 21.8\,\text{K}$ and $T_\text{w} - T_2 = 23.8\,\text{K}$, and for the ice of measurement 2 $\Delta T_\text{i} = 0\,{}^\circ\text{C} - (-18.0\,{}^\circ\text{C}) = 18.0\,\text{K}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
-**Substitution:** a) Measurement 1: $s_1 = \dfrac{4190 \cdot (0.200 \cdot 21.8 - 0.0500 \cdot 8.2)\,\text{J}}{0.0500\,\text{kg}} = \dfrac{4190 \cdot 3.95\,\text{J}}{0.0500\,\text{kg}} = 331\,000\,\tfrac{\text{J}}{\text{kg}} = 331\,\tfrac{\text{kJ}}{\text{kg}}$. Measurement 2: $s_2 = \dfrac{4190 \cdot (0.200 \cdot 23.8 - 0.0500 \cdot 6.2)\,\text{J}}{0.0500\,\text{kg}} = \dfrac{4190 \cdot 4.45\,\text{J}}{0.0500\,\text{kg}} = 372\,900\,\tfrac{\text{J}}{\text{kg}} = 373\,\tfrac{\text{kJ}}{\text{kg}}$. c) The warming of the ice is $c_\text{i} m_\text{i} \Delta T_\text{i} = 2100 \cdot 0.0500 \cdot 18.0\,\text{J} = 1890\,\text{J}$, so $s_2' = \dfrac{4190 \cdot 4.45\,\text{J} - 1890\,\text{J}}{0.0500\,\text{kg}} = \dfrac{18\,645.5\,\text{J} - 1890\,\text{J}}{0.0500\,\text{kg}} = \dfrac{16\,755.5\,\text{J}}{0.0500\,\text{kg}} = 335\,100\,\tfrac{\text{J}}{\text{kg}}$
+**Substitution:** a) Measurement 1: 
+
+$$\begin{aligned} s_1 &= \dfrac{4190 \cdot (0.200 \cdot 21.8 - 0.0500 \cdot 8.2)\,\text{J}}{0.0500\,\text{kg}} \\ &= \dfrac{4190 \cdot 3.95\,\text{J}}{0.0500\,\text{kg}} \\ &= 331\,000\,\tfrac{\text{J}}{\text{kg}} \\ &= 331\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
+
+Measurement 2: 
+
+$$\begin{aligned} s_2 &= \dfrac{4190 \cdot (0.200 \cdot 23.8 - 0.0500 \cdot 6.2)\,\text{J}}{0.0500\,\text{kg}} \\ &= \dfrac{4190 \cdot 4.45\,\text{J}}{0.0500\,\text{kg}} \\ &= 372\,900\,\tfrac{\text{J}}{\text{kg}} \\ &= 373\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
+
+c) The warming of the ice is $c_\text{i} m_\text{i} \Delta T_\text{i} = 2100 \cdot 0.0500 \cdot 18.0\,\text{J} = 1890\,\text{J}$, so 
+
+$$\begin{aligned} s_2' &= \dfrac{4190 \cdot 4.45\,\text{J} - 1890\,\text{J}}{0.0500\,\text{kg}} \\ &= \dfrac{18\,645.5\,\text{J} - 1890\,\text{J}}{0.0500\,\text{kg}} \\ &= \dfrac{16\,755.5\,\text{J}}{0.0500\,\text{kg}} \\ &= 335\,100\,\tfrac{\text{J}}{\text{kg}} \end{aligned}$$
+
+
 **Answer:** a) The original results are about $331\,\tfrac{\text{kJ}}{\text{kg}}$ for measurement 1 and about $373\,\tfrac{\text{kJ}}{\text{kg}}$ for measurement 2; the latter differs from the table value by about $12\,\%$ upward. b) The reason is that warming the ice taken from the freezer to $0\,{}^\circ\text{C}$ took part of the heat given out by the water, but the calculation counted it as heat of melting, so $s$ came out too large. c) The corrected latent heat of fusion is $335\,\tfrac{\text{kJ}}{\text{kg}}$, three significant figures like the masses and temperatures; it differs from the table value by less than $1\,\%$.
 **Reasonableness:** The correction is of the right order of magnitude: warming the ice needs $1890\,\text{J}$ and melting it $0.0500 \cdot 334\,000\,\text{J} = 16\,700\,\text{J}$, so the warming is about $11\,\%$ of the heat of melting, and the error $373 - 335 = 38\,\tfrac{\text{kJ}}{\text{kg}}$ is about that much. The corrected result is close to the result of measurement 1 ($331\,\tfrac{\text{kJ}}{\text{kg}}$), and both are close to the table value, as they should be when the same substance is measured twice.
 
