@@ -247,7 +247,7 @@
         "model"
       ],
       "answer": 2.9,
-      "unit": "kertaa",
+      "unit": "times",
       "tolerance": 0.05,
       "data": {
         "caption": "Mass of the objects as a function of volume",
