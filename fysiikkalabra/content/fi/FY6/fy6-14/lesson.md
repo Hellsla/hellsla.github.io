@@ -440,6 +440,8 @@ Kennon $(U, I)$-kuvaaja ei ole laskeva suora kuten pariston (luku *Lähdejännit
   <foreignObject x="427.5" y="255.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$U_\text{t}$</span></div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/solar-panels-jyvaskyla.webp" alt="Tumma talon katto sinistä taivasta vasten; katolla on kaksi riviä tummansinisiä aurinkopaneeleja ja piippu."><figcaption>Aurinkopaneeleja omakotitalon katolla Jyväskylässä. Jokaisessa paneelissa on monta sarjaan kytkettyä aurinkokennoa. Paneelit tuottavat tasajännitettä, joka muutetaan vaihtosuuntaajalla verkon vaihtojännitteeksi.</figcaption></figure>
+
 ## Kaava: Etuvastus ja aurinkokennon teho
 
 ### Etuvastuksen mitoitus

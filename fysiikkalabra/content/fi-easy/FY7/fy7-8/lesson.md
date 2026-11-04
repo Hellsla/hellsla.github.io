@@ -206,6 +206,8 @@ Saman tehon voi siirtää suurella jännitteellä ja pienellä virralla. Kun jä
   <foreignObject x="51" y="197.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$230\,\text{V}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/transformer-750kv.webp" alt="Iso vaalea muuntaja nurmella. Taustalla on sähköaseman rakenteita ja johtoja."><figcaption>Muuntaja, jonka suurempi jännite on $750\,\text{kV}$. Kun jännite on suuri, johdoissa kulkee pieni virta. Silloin johdoissa häviää vähän tehoa.</figcaption></figure>
+
 ### Jännite lasketaan vaiheittain
 Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin. Asuinalueen muuntamo laskee sen kotien $230\,\text{V}$:iin. Suurjännitettä ei tuoda koteihin. Sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku *Sähköturvallisuus*).
 

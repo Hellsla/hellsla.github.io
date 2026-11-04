@@ -204,6 +204,8 @@ Induktiolieden lasilevyn alla on litteä kuparikela, jossa kulkee vaihtovirta ky
   <line x1="500" y1="158" x2="412" y2="178" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/induction-hob.webp" alt="Musta lasinen keittotaso, jossa on neljä keittoaluetta ja edessä kosketusnäppäimet; oikealla takana on teräskattila."><figcaption>Induktioliesi. Lasin alla olevassa käämissä kulkee vaihtovirta, ja sen muuttuva magneettikenttä indusoi kattilan teräspohjaan pyörrevirtoja. Kattila lämpenee itse, ja taso lämpenee vain kattilasta.</figcaption></figure>
+
 ### Miksi kattilan on oltava terästä tai valurautaa
 Induktioliesi lämmittää tehokkaasti vain kattilaa, jonka pohja on ferromagneettista ainetta, kuten terästä tai valurautaa. Ferromagneettinen pohja vahvistaa kelan kenttää ja kokoaa vuon itseensä (luku *Magneetit, magneettinen dipoli ja magneettikenttä*). Lisäksi teräs johtaa sähköä huonommin kuin alumiini, ja pyörrevirrat kulkevat siinä vain ohuessa pintakerroksessa, jonka resistanssi on suuri, joten samalla kelan virralla pohjan sisäenergia kasvaa nopeasti. Alumiini ja kupari eivät ole ferromagneettisia, ja ne johtavat sähköä erittäin hyvin. Niissä pyörrevirrat leviävät paksummalle alueelle, resistanssi jää pieneksi ja lämpenemistä tulee vähän. Tavallinen induktioliesi ei siksi yleensä lämmitä alumiinikattilaa, vaan se tunnistaa sopimattoman kattilan eikä käynnisty. Monessa kattilassa on pohjan alla teräslevy juuri tätä varten.
 

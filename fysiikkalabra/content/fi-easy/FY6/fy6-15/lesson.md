@@ -401,6 +401,8 @@ Ihmisen kautta kulkevan pienen virran katkaisee **vikavirtasuoja**. Se vertaa ka
   <foreignObject x="420" y="17.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$I_\text{L} - I_\text{N} = I_\text{v}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/residual-current-device.webp" alt="Valkoinen vikavirtasuoja. Siinä on keltainen TEST-painike ja musta vipu."><figcaption>Vikavirtasuoja. Se katkaisee virran, jos vaihejohtimen ja nollajohtimen virtojen ero on $30\,\text{mA}$. Keltaisella TEST-painikkeella voi kokeilla, toimiiko suoja.</figcaption></figure>
+
 Vikavirtasuoja ei estä kaikkia iskuja. Jos ihminen koskettaa yhtä aikaa vaihejohdinta ja nollajohdinta, virta palaa nollajohdinta pitkin. Silloin vaihe- ja nollajohtimen virtojen välille ei synny eroa. Siksi jännitteisiin osiin ei kosketa, vaikka ryhmässä olisi vikavirtasuoja.
 
 ### Eristeen läpilyöntilujuus
@@ -460,6 +462,8 @@ Jos johdin putoaa maahan, virta leviää maaperään. Maan potentiaali on suurin
   <path d="M560,304 L546,310.5 L546,297.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="255" y="267.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{potentiaali pienenee}$</span></div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy6/high-voltage-sign.webp" alt="Keltainen kolmio, jossa on musta salamanuoli."><figcaption>Tämä merkki varoittaa vaarallisesta jännitteestä. Merkki on esimerkiksi sähkökeskuksen kannessa. Kannen takana on osia, joissa on jännite. Niihin ei saa koskea.</figcaption></figure>
 
 ### Turvallinen toiminta kotona ja työssä
 Suomessa sähköasennustöitä saavat tehdä vain sähköalan ammattilaiset. Töitä tekevän yrityksen on oltava Turvallisuus- ja kemikaalivirasto Tukesin rekisterissä sähköurakoitsijana. Maallikko saa tehdä vain yksinkertaisia töitä. Maallikko on henkilö, jolla ei ole sähköalan ammattitutkintoa. Maallikko saa esimerkiksi vaihtaa sulakkeen ja lampun, palauttaa lauenneen johdonsuojakatkaisijan tai vikavirtasuojan sekä korjata jatkojohdon tai vaihtaa sen pistotulpan. Hän saa myös kytkeä valaisimen kuivassa tilassa valaisinliittimellä. Ajantasainen luettelo maallikon sallituista sähkötöistä on Tukesin verkkosivuilla. Ennen työtä virta katkaistaan, ja varmistetaan, ettei kohteessa ole jännitettä.

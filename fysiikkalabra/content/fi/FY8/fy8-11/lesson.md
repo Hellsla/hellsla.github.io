@@ -550,6 +550,8 @@ Alun kysymykseen voi nyt vastata. Grammassa uraani-235:tä on $2{,}56 \cdot 10^{
 
 ## Ydinvoima Suomessa
 
+<figure class="unit-photo"><img src="pics/fy8/loviisa-plant.webp" alt="Voimalaitos meren rannalla sinistä taivasta vasten: kaksi pyöreää reaktorirakennusta, korkea piippu ja sähkölinjoja; etualalla on kaislikkoa ja mäntyjä."><figcaption>Loviisan ydinvoimala Suomenlahden rannalla. Pyöreissä rakennuksissa on kaksi painevesireaktoria. Fissioissa vapautuva energia lämmittää vettä, ja syntyvä höyry pyörittää turbiineja.</figcaption></figure>
+
 ### Voimalaitokset
 Suomessa on kaksi ydinvoimalaitosta ja viisi reaktoria. Ydinvoima tuotti vuonna 2024 noin $39\,\%$ Suomen sähköstä (Tilastokeskus: Sähkön ja lämmön tuotanto 2024).
 
@@ -605,6 +607,8 @@ Posiva rakentaa Olkiluotoon Onkaloa, maailman ensimmäistä käytetyn ydinpoltto
   <foreignObject x="440" y="285.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{polttoaine}$</div></foreignObject>
   <line x1="382" y1="290" x2="436" y2="300" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy8/onkalo-repository.webp" alt="Valaistu kalliotunneli: karkeat harmaat kallioseinät, märkä soralattia ja kaukana kaartuvassa tunnelissa lamppuja."><figcaption>Tunneli Onkalossa Olkiluodon peruskalliossa. Käytetty polttoaine sijoitetaan kuparikapseleissa noin $430\,\text{m}$:n syvyyteen, jossa kallio eristää sen ympäristöstä pitkäksi aikaa.</figcaption></figure>
 
 ### Turvallisuus ja jälkilämpö
 Kevytvesireaktori ei voi räjähtää kuin ydinase, koska sen polttoaineessa on uraani-235:tä vain muutama prosentti, kun ydinaseissa käytetään noin $90\,\%$:iin rikastettua uraania. Lisäksi kun vesi kiehuu tai kuumenee, se hidastaa neutroneja huonommin, ja ketjureaktio heikkenee itsestään. Reaktorin pysäyttäminen ei kuitenkaan pysäytä lämmöntuotantoa: fissiotuotteiden hajoaminen tuottaa **jälkilämpöä**, heti sammutuksen jälkeen noin $6\,\%$ ja tunnin kuluttua noin $1$–$2\,\%$ aiemmasta lämpötehosta. Siksi reaktoria on jäähdytettävä vielä pitkään sammutuksen jälkeen. Fukushiman onnettomuudessa vuonna 2011 hyökyaalto katkaisi jäähdytyksen, ja jälkilämpö sulatti polttoainetta kolmessa reaktorissa.

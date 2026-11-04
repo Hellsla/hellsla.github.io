@@ -205,6 +205,8 @@ Pariston napojen välistä jännitettä sanotaan **napajännitteeksi** $U$. Kun 
   <foreignObject x="149.5" y="331.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{paristo}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/lithium-ion-cells.webp" alt="Kaksi vaaleansinistä sylinterimäistä akkukennoa keltaisissa pidikkeissä puupöydällä; kyljissä tekstit INR21700 ja INR18650."><figcaption>Litiumioniakkukennot 21700 ja 18650. Numerot kertovat kennon mitat: halkaisija $21\,\text{mm}$ ja pituus $70\,\text{mm}$ tai $18\,\text{mm}$ ja $65\,\text{mm}$. Kennon sisäinen resistanssi on vain kymmeniä milliohmeja, joten se voi antaa suuren virran ilman, että napajännite laskee paljon.</figcaption></figure>
+
 ### Lähdejännite mitataan ilman virtaa
 Kun paristosta ei oteta virtaa, sisäisen resistanssin jännite $R_\text{s} I$ on nolla, ja napajännite on yhtä suuri kuin lähdejännite. Lähdejännitteen voi siis mitata kytkemällä pariston napoihin pelkän jännitemittarin, sillä hyvä jännitemittari ottaa vain häviävän pienen virran. Uudesta AA-paristosta saadaan näin noin $1{,}6\,\text{V}$. Käytetyn pariston lähdejännite voi olla lähes yhtä suuri, mutta sen sisäinen resistanssi on kasvanut moninkertaiseksi. Pelkkä jännitemittari ei siksi paljasta, onko paristo vielä käyttökelpoinen: vasta kuormitettuna sen napajännite laskee selvästi.
 

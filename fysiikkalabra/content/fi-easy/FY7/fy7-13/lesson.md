@@ -45,6 +45,8 @@
 ### Valo aaltona
 Luvussa *Aaltojen interferenssi* nähtiin, että kahden lähteen aallot muodostavat pysyvän interferenssikuvion. Lähteiden taajuus on sama, ja ne värähtelevät samassa vaiheessa. Matkaero $\Delta s$ tarkoittaa sitä, kuinka paljon pidemmän matkan toinen aalto on kulkenut kuin toinen. Kohdissa, joissa matkaero on kokonainen määrä aallonpituuksia, aallot vahvistavat toisiaan. Kohdissa, joissa matkaero on puoli aallonpituutta yli kokonaisen määrän, aallot heikentävät toisiaan. Valo on sähkömagneettista aaltoliikettä (luku *Sähkömagneettinen säteily ja mustan kappaleen spektri*). Siksi myös valon pitäisi interferoida. Näkyvän valon aallonpituus on kuitenkin vain $400$–$700\,\text{nm}$. Siksi valon interferenssikuvion yksityiskohdat ovat hyvin pieniä.
 
+<figure class="unit-photo"><img src="pics/fy7/laser-interference.webp" alt="Mustalla pohjalla on punaisia renkaita sisäkkäin. Keskellä on kirkas piste."><figcaption>Punaisen laservalon interferenssikuvio. Kirkkaissa renkaissa aallot vahvistavat toisiaan. Tummissa renkaissa aallot kumoavat toisensa.</figcaption></figure>
+
 ### Koherentti valo
 Pysyvä kuvio syntyy vain, kun lähteet ovat **koherentteja**. Silloin niillä on sama taajuus, ja niiden vaihe-ero pysyy samana. Kaksi tavallista lamppua ei tuota kuviota. Lampun valoa lähettävät lukemattomat atomit toisistaan riippumatta. Siksi kahden lampun valon vaihe-ero vaihtelee satunnaisesti ja hyvin nopeasti. Vahvistavan ja heikentävän interferenssin kohdat vaihtavat silloin paikkaa jatkuvasti, ja silmä näkee vain tasaisen valaistuksen. Laserin valo on koherenttia. Koherentit lähteet saadaan myös jakamalla yhden lähteen valo kahteen osaan, esimerkiksi kahdella raolla.
 
@@ -866,6 +868,8 @@ Mitä pidempi aallonpituus on, sitä suuremman matkaeron maksimi vaatii. Siksi s
   <foreignObject x="449" y="295.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = 2$</div></foreignObject>
   <foreignObject x="515.5" y="295.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = 3$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/laser-diffraction.webp" alt="Pimeässä on vihreitä valopisteitä ruudukkona."><figcaption>Vihreän laservalon diffraktiokuvio. Valo on kulkenut tiheän ristikon läpi. Siksi kirkkaat pisteet ovat ruudukossa. Jokaisessa pisteessä aallot vahvistavat toisiaan.</figcaption></figure>
 
 ### CD-levy heijastushilana
 CD-levyn tietoraita kiertää levyn pinnalla tiheänä spiraalina. Raidan vierekkäisten kierrosten etäisyys on $1{,}6\,\mu\text{m}$ (standardi IEC 60908, 1999). DVD-levyllä etäisyys on $0{,}74\,\mu\text{m}$ (standardi ECMA-267, 2001). Levyn pinnasta heijastuva valo käyttäytyy samoin kuin hilan läpi kulkeva valo. Tasavälisistä raidoista heijastuneet aallot interferoivat, ja kukin aallonpituus vahvistuu omassa suunnassaan. Siksi levyn pinnalla näkyy sateenkaaren värejä, jotka vaihtuvat katselukulman mukaan. Tällaista hilaa sanotaan heijastushilaksi.

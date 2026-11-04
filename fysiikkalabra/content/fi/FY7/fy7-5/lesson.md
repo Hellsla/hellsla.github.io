@@ -195,6 +195,8 @@ Luvussa *Virtajohtimen ja käämin magneettikenttä* sähkövirta synnytti magne
   <foreignObject x="435.5" y="171.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/shake-flashlight.webp" alt="Läpinäkyvä muovinen taskulamppu vaalealla pohjalla; rungon sisällä näkyy kuparinvärinen käämi ja vasemmassa päässä musta lamppuosa."><figcaption>Ravistettava taskulamppu. Kun lamppua ravistetaan, sen sisällä oleva magneetti liukuu edestakaisin käämin läpi. Käämin läpi kulkeva magneettivuo muuttuu, joten käämiin indusoituu jännite, joka lataa lampun energiavaraston.</figcaption></figure>
+
 ### Muutos synnyttää jännitteen
 Ilmiötä kutsutaan **sähkömagneettiseksi induktioksi**, ja käämin päiden välille syntyvää jännitettä **induktiojännitteeksi**. Kun käämin päät yhdistetään johtimella tai lampulla, piirissä kulkee induktiovirta. Kaikissa Faradayn kokeissa yhteistä on se, että käämin läpi kulkeva magneettikenttä **muuttuu**. Paikallaan oleva käämi voimakkaassa mutta muuttumattomassa kentässä ei saa jännitettä. Muutos voi syntyä monella tavalla: magneetti tai käämi liikkuu, käämi kääntyy kentässä, silmukan pinta-ala muuttuu tai viereisen sähkömagneetin virta kytketään päälle tai pois. Polkupyörän napadynamossa magneetti pyörii käämien keskellä, kun pyörä pyörii. Kun pyörä seisoo, mikään ei muutu, eikä lamppu pala.
 
