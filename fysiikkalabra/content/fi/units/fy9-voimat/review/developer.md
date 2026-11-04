@@ -35,3 +35,43 @@ s1 G 2746,8 N, G_x 664,5 N, N 2665,2 N, F_μ 666,3 N, b 1330,8 N; c α0 19,29° 
 ## Shared issues
 1. figcat `owner()` cannot resolve unit figures (`lessons/units/<unit>/figures.py`), so a unit cannot use its own figure as a choice figure, an option figure or a `model_figure` by id. Workaround: paste the SVG into the text.
 2. `scripts/inquiry.py` and `scripts/test_inquiry.py` only accept lesson folders, not unit ids, so the inquiry checks the brief lists cannot run on a unit. I used `units.py check` and my own Playwright script instead.
+
+## Round 1 fixes
+
+### Blocking (pedagogy)
+1. **s4 answered before the student reaches it.** Exit ticket q1 replaced: no walker any more; it now asks for the third-law partner of a book's weight on a table (Maa, not the table's normal force). Cut the car sentence ("Auton eteenpäin vie tien lepokitka vetäviin pyöriin …") from `unit.md` Ydinajatus; the hook is now answered with the trailer's forces only. `teacher.md` Pohdinta line no longer gives the car answer and points to the long task *Mikä vie eteenpäin?*. Also took "tien lepokitka vetäviin pyöriin" out of the `tarkistus-1` correct-option feedback ("eteenpäin vievä voima").
+2. **Exam-marking claim and named YTL task.** Dropped from `unit.md` and `teacher.md` ("kevät 2025, tehtävä 4.1" removed). Both now say: "Kokeessa voimakuvion pisteet menetetään puuttuvasta, ylimääräisestä tai väärään suuntaan piirretystä voimasta."
+3. **Correct option longest.** `tarkistus-1` correct option shortened to 65 characters (distractors 63, 67). `kaksi-kappaletta` correct option drops "noin 24 N" (65 vs 66–70); the value 23,5 N stays in its feedback.
+
+### Polish (science)
+1. s5 a Vastaus: "puolet tulosten vaihteluvälistä (0,384–0,445)"; rubric `uncertainty` line says "epävarmuus on puolet vaihteluvälistä".
+2. s6 text: added "Rinteen ja pellon välinen kohta on loiva, eikä nopeus muutu siinä."; s6 b Periaate says the same.
+3. s4 d criterion 3 and solution: "eteenpäin vievä lepokitka vaikuttaa vain vetäviin etupyöriin".
+4. s5 b Johtopäätös: "puhelin lähtee liukumaan jo noin 22°:n kulmassa".
+5. s5 a Periaate: the quick lift presses the cover against the phone, raising N and the friction limit briefly, and the angle is read late, so 33° is not the slip limit.
+6. Static friction labels: the shared `voimakuvio` renderer cannot draw `F_{μ0}` (`F_mu0` becomes `\overline{F}_{mu0}`), so took the reviewer's alternative: `unit.md` now says once that $\overline{F}_\mu$ in force diagrams means either static or kinetic friction.
+
+### Polish (pedagogy)
+- Timing: teacher.md Sovella step now does *Nosturi* and *Jyrkkä pulkkamäki* in class; *Pulkan veto vinossa* and *Ylös lyöty lentopallo* are optional in class, homework otherwise.
+- Correct option first in source: moved to positions 3/2/4/3/2 in virhe-rinne, hihna, suodatin, kaksi-kappaletta, tarkistus-1.
+- lt-6: "Nolla, …" distractor lengthened to 45 characters.
+- Tutki part b (60 kg plateau): not done; the interpret activity takes one question, and the Järkevyys of the solution already compares the 60 kg terminal speed (48 m/s).
+- Cross-chapter synthesis: no change (reviewer: fine).
+
+### Polish (visual)
+- Units in parentheses in `unit.md` are now LaTeX: ($\text{N}$), ($\text{kg}$).
+- `kartta`: the coupled-bodies entry is now `\Sigma F_x = m_i a_x`, the component (scalar) form like the hub `\Sigma F_x = ma_x`; the vector laws keep overlines.
+- `fy4-14/vt` small labels at 390 px: shared figure, see Shared issues 3.
+- `hihna` taller viewBox: not changed; labels are 15 px and legible.
+
+### Also fixed
+- `check_layout` now reported a 2 px overlap of the v and a labels in `kalteva`; moved the arrows apart (offsets 42 and 86).
+
+### Checks after the fixes
+`units.py figures`, `practice.py figures`: written / up to date. `practice.py check units/fy9-voimat`: OK, 6 tasks, 95 points. `units.py check`: 38 units OK. `build.py fy9-voimat` OK. `check_layout` 360 and 1280: OK. Playwright at 390 and 1280: 11 choices and 6 numerics answered "Oikein.", all models and details opened, 0 console errors, 0 `.katex-error`, no raw `$`, no horizontal scroll. Looked at `kartta` and `kalteva` at 390 px.
+
+### Shared issues (added)
+3. `fy4-14/vt` (catalogue figure): axis ticks and curve labels are about 10 px at 390 px; enlarge the fonts there.
+4. `voimakuvio` blocks cannot label static friction `F_{μ0}` (`scripts/fbdspec.py` `tex_of`: a subscript like `mu0` is not mapped to `\mu 0`).
+
+Content hash after Round 1: db8ff4439951f193.

@@ -245,14 +245,14 @@ Liike kuvataan aina valitussa koordinaatistossa: suora $x$-akseli, origo, positi
 
 Sama liike voidaan esittää kolmena kuvaajana: $(t,x)$, $(t,v)$ ja $(t,a)$. Kuvaajien välillä liikutaan kahdella tavalla. Alaspäin: kuvaajan **kulmakerroin** on seuraavan suureen arvo, eli $(t,x)$-kuvaajan kulmakerroin on nopeus ja $(t,v)$-kuvaajan kulmakerroin kiihtyvyys. Ylöspäin: kuvaajan ja aika-akselin välinen **pinta-ala** on edellisen suureen muutos, eli $(t,v)$-kuvaajan pinta-ala on siirtymä.
 
-<svg data-fig="kartta" viewBox="0 0 400 600" role="img" aria-label="Käsitekartta kolmesta kuvaajasta päällekkäin. Ylimpänä paikan kuvaaja, jossa tasaisen liikkeen suora ja tasaisesti kiihtyvän liikkeen ylöspäin kaartuva käyrä. Keskellä nopeuden kuvaaja, jossa vaakasuora suora ja nouseva suora. Alimpana kiihtyvyyden kuvaaja, jossa nolla ja vakio. Oikealla nuolet alaspäin: kuvaajan kulmakerroin on seuraavan suureen arvo, v = Δx/Δt ja a = Δv/Δt. Vasemmalla nuolet ylöspäin: kuvaajan ja aika-akselin välinen pinta-ala on edellisen suureen muutos, Δx ja Δv." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 400 600" role="img" aria-label="Käsitekartta kolmesta kuvaajasta päällekkäin. Ylimpänä paikan kuvaaja, jossa tasaisen liikkeen suora ja tasaisesti kiihtyvän liikkeen ylöspäin kaartuva käyrä. Keskellä nopeuden kuvaaja, jossa vaakasuora suora ja nouseva suora. Alimpana kiihtyvyyden kuvaaja, jossa nolla ja vakio. Oikealla nuolet alaspäin: kuvaajan kulmakerroin on seuraavan suureen arvo, v = Δx/Δt ja a = Δv/Δt. Paikan kuvaajat ovat mustia, nopeuden sinisiä ja kiihtyvyyden oransseja; tasainen liike on yhtenäinen ja tasaisesti kiihtyvä katkoviiva. Vasemmalla nuolet ylöspäin: kuvaajan ja aika-akselin välinen pinta-ala on edellisen suureen muutos, Δx ja Δv." style="max-width:100%;font-size:21px">
   <rect x="92" y="14" width="216" height="136" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="104" y="21.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$(t,x)$</div></foreignObject>
   <foreignObject x="232" y="23" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{paikka}$</div></foreignObject>
   <line x1="116" y1="134" x2="288" y2="134" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="116" y1="134" x2="116" y2="46" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <polyline points="116,134 124,131 132.5,128 140.5,125 149,122 157,119 165,116 173.5,113 181.5,110 190,107 198,104 206,101 214.5,98 222.5,95 231,92 239,89 247,86 255.5,83 263.5,80 272,77 280,74" fill="none" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
-  <polyline points="116,134 124,133 132.5,132 140.5,130.5 149,129 157,127 165,124.5 173.5,121.5 181.5,118.5 190,115 198,111 206,107 214.5,102.5 222.5,97.5 231,92.5 239,87 247,81 255.5,74.5 263.5,68 272,61 280,54" fill="none" stroke="#1971c2" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>
+  <polyline points="116,134 124,133 132.5,132 140.5,130.5 149,129 157,127 165,124.5 173.5,121.5 181.5,118.5 190,115 198,111 206,107 214.5,102.5 222.5,97.5 231,92.5 239,87 247,81 255.5,74.5 263.5,68 272,61 280,54" fill="none" stroke="#1f2933" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>
   <line x1="338" y1="156" x2="338" y2="184" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <path d="M338,196 L332,183 L344,183 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="62" y1="196" x2="62" y2="168" stroke="#2b8a3e" stroke-width="3" stroke-linecap="butt"/>
@@ -264,7 +264,7 @@ Sama liike voidaan esittää kolmena kuvaajana: $(t,x)$, $(t,v)$ ja $(t,a)$. Kuv
   <foreignObject x="232" y="211" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{nopeus}$</div></foreignObject>
   <line x1="116" y1="322" x2="288" y2="322" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="116" y1="322" x2="116" y2="234" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <polyline points="116,278 124,278 132.5,278 140.5,278 149,278 157,278 165,278 173.5,278 181.5,278 190,278 198,278 206,278 214.5,278 222.5,278 231,278 239,278 247,278 255.5,278 263.5,278 272,278 280,278" fill="none" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="116,278 124,278 132.5,278 140.5,278 149,278 157,278 165,278 173.5,278 181.5,278 190,278 198,278 206,278 214.5,278 222.5,278 231,278 239,278 247,278 255.5,278 263.5,278 272,278 280,278" fill="none" stroke="#1971c2" stroke-width="3" stroke-linecap="round"/>
   <polyline points="116,312.5 124,309 132.5,306 140.5,303 149,299.5 157,296.5 165,293 173.5,290 181.5,287 190,283.5 198,280.5 206,277 214.5,274 222.5,271 231,267.5 239,264.5 247,261 255.5,258 263.5,255 272,251.5 280,248.5" fill="none" stroke="#1971c2" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>
   <line x1="338" y1="344" x2="338" y2="372" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <path d="M338,384 L332,371 L344,371 Z" fill="#1f2933" stroke-linejoin="round"/>
@@ -277,14 +277,14 @@ Sama liike voidaan esittää kolmena kuvaajana: $(t,x)$, $(t,v)$ ja $(t,a)$. Kuv
   <foreignObject x="194" y="399" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{kiihtyvyys}$</div></foreignObject>
   <line x1="116" y1="510" x2="288" y2="510" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="116" y1="510" x2="116" y2="422" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <polyline points="116,510 124,510 132.5,510 140.5,510 149,510 157,510 165,510 173.5,510 181.5,510 190,510 198,510 206,510 214.5,510 222.5,510 231,510 239,510 247,510 255.5,510 263.5,510 272,510 280,510" fill="none" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
-  <polyline points="116,466 124,466 132.5,466 140.5,466 149,466 157,466 165,466 173.5,466 181.5,466 190,466 198,466 206,466 214.5,466 222.5,466 231,466 239,466 247,466 255.5,466 263.5,466 272,466 280,466" fill="none" stroke="#1971c2" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>
+  <polyline points="116,510 124,510 132.5,510 140.5,510 149,510 157,510 165,510 173.5,510 181.5,510 190,510 198,510 206,510 214.5,510 222.5,510 231,510 239,510 247,510 255.5,510 263.5,510 272,510 280,510" fill="none" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="116,466 124,466 132.5,466 140.5,466 149,466 157,466 165,466 173.5,466 181.5,466 190,466 198,466 206,466 214.5,466 222.5,466 231,466 239,466 247,466 255.5,466 263.5,466 272,466 280,466" fill="none" stroke="#e8590c" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>
   <line x1="14" y1="534" x2="386" y2="534" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="14" y="545.5" width="153" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\downarrow\ \text{kulmakerroin}$</div></foreignObject>
   <foreignObject x="266" y="545.5" width="120" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px;color:#2b8a3e">$\uparrow\ \text{pinta-ala}$</div></foreignObject>
   <line x1="14" y1="590" x2="50" y2="590" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <foreignObject x="58" y="579" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px;color:#6b7480">$\text{tasainen}$</div></foreignObject>
-  <line x1="150" y1="590" x2="186" y2="590" stroke="#1971c2" stroke-width="3" stroke-linecap="butt" stroke-dasharray="9 6"/>
+  <line x1="150" y1="590" x2="186" y2="590" stroke="#1f2933" stroke-width="3" stroke-linecap="butt" stroke-dasharray="9 6"/>
   <foreignObject x="194" y="579" width="176" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px;color:#6b7480">$\text{tasaisesti kiihtyvä}$</div></foreignObject>
 </svg>
 
@@ -331,13 +331,13 @@ missä $v_0$ on alkunopeus ($\text{m/s}$) ja $a$ kiihtyvyys ($\text{m/s}^2$). Va
 
 ### Kulmakerroin ja pinta-ala
 
-Kaarevan $(t,x)$-kuvaajan hetkellinen nopeus on tangentin kulmakerroin. Kahden käyrän pisteen kautta laskettu suhde on keskinopeus. Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala, ja akselin alapuolinen osa lasketaan negatiivisena. Tasaisesti kiihtyvässä liikkeessä ala on puolisuunnikas, joten keskinopeus on alku- ja loppunopeuden keskiarvo:
+Kaarevan $(t,x)$-kuvaajan hetkellinen nopeus on tangentin kulmakerroin $k$. Kahden käyrän pisteen kautta laskettu suhde on keskinopeus. Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala, ja akselin alapuolinen osa lasketaan negatiivisena. Tasaisesti kiihtyvässä liikkeessä ala on puolisuunnikas, joten keskinopeus on alku- ja loppunopeuden keskiarvo:
 
 ```latex
 \Delta x = \frac{v_0 + v}{2}\,t
 ```
 
-<svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Kaavakuva yhdestä liikkeestä kahtena kuvaajana, joilla on sama aika-akseli. Alhaalla nopeuden kuvaaja: nopeus kasvaa nollasta tasaisesti hetkeen t1, pysyy vakiona hetkeen t2 ja pienenee tasaisesti nollaan hetkellä t3. Kuvaajan alle jäävä alue on väritetty vihreäksi, ja sen pinta-ala on siirtymä Δx. Ylhäällä paikan kuvaaja: ensin ylöspäin kaartuva käyrä, sitten nouseva suora ja lopuksi käyrä, joka loivenee vaakasuoraksi. Paikka kasvaa koko liikkeen ajan yhteensä Δx. Käyrän pisteeseen P on piirretty tangentti, jonka kulmakerroin on nopeus v_P; sama arvo on merkitty alempaan kuvaajaan." style="max-width:100%;font-size:21px">
+<svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Kaavakuva yhdestä liikkeestä kahtena kuvaajana, joilla on sama aika-akseli. Alhaalla nopeuden kuvaaja: nopeus kasvaa nollasta tasaisesti hetkeen t1, pysyy vakiona hetkeen t2 ja pienenee tasaisesti nollaan hetkellä t3. Kuvaajan alle jäävä alue on väritetty vihreäksi, ja sen pinta-ala on siirtymä Δx. Ylhäällä paikan kuvaaja: ensin ylöspäin kaartuva käyrä, sitten nouseva suora ja lopuksi käyrä, joka loivenee vaakasuoraksi. Paikka kasvaa koko liikkeen ajan yhteensä Δx. Käyrän pisteeseen P on piirretty sininen tangentti, jonka kulmakerroin k on nopeus v_P; sama arvo on merkitty alempaan kuvaajaan." style="max-width:100%;font-size:21px">
   <line x1="49" y1="280" x2="370" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M382,280 L369,286 L369,274 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="50" y1="281" x2="50" y2="60" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -363,11 +363,11 @@ Kaarevan $(t,x)$-kuvaajan hetkellinen nopeus on tangentin kulmakerroin. Kahden k
   <polyline points="50,280 52.5,280 54.5,280 57,279.5 59,279.5 61.5,279 63.5,279 66,278.5 68,278 70.5,277.5 72.5,276.5 75,276 77,275 79.5,274.5 81.5,273.5 84,272.5 86,271.5 88.5,270.5 90.5,269.5 93,268 95,267 97.5,265.5 99.5,264 102,262.5 104,261 106.5,259.5 109,257.5 111,256 113.5,254 115.5,252 118,250 120,248 122.5,246 124.5,244 127,242 129,239.5 131.5,237 133.5,235 136,232.5 138,230.5 140.5,228 142.5,226 145,223.5 147,221.5 149.5,219 151.5,217 154,214.5 156,212.5 158.5,210 161,207.5 163,205.5 165.5,203 167.5,201 170,198.5 172,196.5 174.5,194 176.5,192 179,189.5 181,187.5 183.5,185 185.5,183 188,180.5 190,178 192.5,176 194.5,173.5 197,171.5 199,169 201.5,167 203.5,164.5 206,162.5 208,160 210.5,158 213,155.5 215,153.5 217.5,151 219.5,149 222,146.5 224,144 226.5,142 228.5,139.5 231,137.5 233,135 235.5,133 237.5,130.5 240,128.5 242,126 244.5,124 246.5,121.5 249,119.5 251,117.5 253.5,115.5 255.5,113.5 258,111.5 260,109.5 262.5,108 264.5,106 267,104.5 269.5,103 271.5,101.5 274,100 276,99 278.5,97.5 280.5,96.5 283,95 285,94 287.5,93 289.5,92 292,91 294,90.5 296.5,89.5 298.5,89 301,88 303,87.5 305.5,87 307.5,86.5 310,86.5 312,86 314.5,86 316.5,85.5 319,85.5 321,85.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <polyline points="321,85.5 352,85.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <polyline points="50,590 127.5,451.5 244,451.5 321,590 352,590" fill="none" stroke="#1971c2" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <polyline points="81,277.5 158.5,223" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
-  <line x1="104" y1="261" x2="104" y2="493" stroke="#e8590c" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="3 4"/>
+  <polyline points="90.5,270.5 158.5,223" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+  <line x1="104" y1="261" x2="104" y2="493" stroke="#1971c2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="3 4"/>
   <circle cx="104" cy="261" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="73" y="244.5" width="19" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$P$</div></foreignObject>
-  <foreignObject x="143" y="245" width="146" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px;color:#e8590c">$\text{kulmakerroin } v_\text{P}$</div></foreignObject>
+  <foreignObject x="164.5" y="238.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px;color:#1971c2">$k = v_\text{P}$</div></foreignObject>
   <circle cx="104" cy="493" r="7" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="62" y="466.5" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px">$v_\text{P}$</div></foreignObject>
   <foreignObject x="170.5" y="515" width="30" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px;color:#2b8a3e">$\Delta x$</div></foreignObject>
@@ -390,14 +390,14 @@ Kahden kappaleen paikat kirjoitetaan samassa koordinaatistossa, ja ne kohtaavat,
 x_\text{A}(t) = x_\text{B}(t)
 ```
 
-$(t,x)$-kuvaajassa kohtaaminen on viivojen leikkauspiste. Ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Kun takana oleva kappale on aluksi hitaampi, välimatka on suurimmillaan silloin, kun nopeudet ovat yhtä suuret.
+$(t,x)$-kuvaajassa kohtaaminen on viivojen leikkauspiste. Ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Kun takana oleva kappale on aluksi hitaampi ja kiihtyy, välimatka on suurimmillaan silloin, kun nopeudet ovat yhtä suuret.
 
 Mittauspisteisiin sovitetaan suora tai toisen asteen polynomi $x = A\,t^2 + B\,t + C$. Polynomin kertoimesta saadaan kiihtyvyys $a = 2A$.
 
 ## Yleisiä virheitä {Virheet}
 
 - **$(t,x)$-kuvaaja luetaan kuvana radasta.** Nouseva viiva tarkoittaa, että paikka kasvaa, ei ylämäkeä.
-- **Nopeus luetaan $s : t$, kun pitää lukea $\Delta x : \Delta t$.** Alkupaikka ei ole nopeutta.
+- **Nopeus luetaan $x : t$, kun pitää lukea $\Delta x : \Delta t$.** Alkupaikka ei ole nopeutta.
 - **Kulmakerroin kahdesta vierekkäisestä mittauspisteestä.** Lue se sovitetulta suoralta tai tangentilta kahdesta kaukana toisistaan olevasta pisteestä.
 - **Negatiivinen kiihtyvyys luetaan aina hidastumiseksi.** Vauhti pienenee vain, kun kiihtyvyys ja nopeus ovat vastakkaissuuntaiset.
 - **Lakipisteessä kiihtyvyys on nolla.** Nopeus on hetken nolla, mutta kiihtyvyys on yhä $g$ alaspäin.
@@ -406,7 +406,7 @@ Mittauspisteisiin sovitetaan suora tai toisen asteen polynomi $x = A\,t^2 + B\,t
 
 ## Kertaa tarvittaessa {Kertaa}
 
-- Tasainen liike, $s = s_0 + vt$ ja yksikkömuunnokset: [*Tasainen liike – nopeus, paikka ja kuvaajat*](fy1-5.html).
+- Tasainen liike, $x = x_0 + vt$ ja yksikkömuunnokset: [*Tasainen liike – nopeus, paikka ja kuvaajat*](fy1-5.html).
 - Paikka, siirtymä, keskinopeus ja $(t,x)$-kuvaajan kulmakerroin: [*Paikka, nopeus ja tasainen liike kuvaajina*](fy4-1.html).
 - Kiihtyvyys, tangentti, pinta-ala ja vapaa pudotus: [*Kiihtyvyys ja tasaisesti kiihtyvä liike*](fy4-2.html).
 - Kohtaaminen, ohitus ja suurin välimatka: [*Kahden kappaleen liikkeiden vertailu*](fy4-12.html).

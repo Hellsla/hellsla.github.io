@@ -168,7 +168,7 @@
    "title": "Kaksi jäykkää astiaa",
    "source": "example",
    "figure": "fy3-10/pt-suorat",
-   "text": "Kuvaajassa on kahden samanlaisen, suljetun ja jäykän astian kaasun paine kelvinlämpötilan funktiona, kun astioita lämmitetään. Kummankin astian tilavuus on $2{,}0\\,\\textsf{l}$. Lue kuvaajasta kaasun A paine yhdessä lämpötilassa ja laske, kuinka paljon kaasua astiassa A on. Mallivastauksessa verrataan myös astioita A ja B ja tarkastellaan, miksi suorien jatkeet kulkevat origon kautta.",
+   "text": "Kuvaajassa on kahden samanlaisen, suljetun ja jäykän astian kaasun paine kelvinlämpötilan funktiona, kun astioita lämmitetään. Kummankin astian tilavuus on $2{,}0\\,\\textsf{l}$. Lue kuvaajasta kaasun A paine yhdessä lämpötilassa ja laske, kuinka paljon kaasua astiassa A on.",
    "question": {
     "type": "numeric",
     "prompt": "Kuinka suuri on astian A kaasun ainemäärä $n_\\text{A}$? Vastaa mooleina.",
@@ -178,7 +178,7 @@
     "hints": [
      "Valitse suoralta piste, joka on ruudukon viivojen risteyksessä, esimerkiksi lämpötilassa $200\\,\\text{K}$.",
      "Ratkaise tilanyhtälöstä $pV = nRT$ ainemäärä $n$, ja muuta paine pascaleiksi ja tilavuus kuutiometreiksi.",
-     "$n_\\text{A} = \\dfrac{50\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 200\\,\\text{K}}$"
+     "Kaasun A suoralla lämpötilassa $200\\,\\text{K}$ paine on $50\\,\\text{kPa} = 50\\,000\\,\\text{Pa}$, ja $2{,}0\\,\\textsf{l} = 0{,}0020\\,\\text{m}^3$."
     ],
     "mistakes": [
      {
@@ -220,7 +220,7 @@
    "prompt": "Opiskelija laski, kuinka suureksi suljetun lasipullon ilman paine kasvaa, kun pullo lämpenee auringossa $20\\,{}^\\circ\\text{C}$:sta $60\\,{}^\\circ\\text{C}$:seen. Alussa paine oli $100\\,\\text{kPa}$: ”$p_2 = p_1 \\cdot \\tfrac{T_2}{T_1} = 100\\,\\text{kPa} \\cdot \\tfrac{60}{20} = 300\\,\\text{kPa}$.” Mikä ratkaisussa on väärin?",
    "choices": [
     {
-     "text": "Paine pienenee lämmetessä, joten oikein on $33\\,\\text{kPa}$.",
+     "text": "Paine pienenee pullon lämmetessä, joten oikea tulos on $33\\,\\text{kPa}$.",
      "feedback": "Jäykässä pullossa paine kasvaa lämpötilan mukana, koska hiukkaset liikkuvat nopeammin. Kaava on oikein; virhe on se, että lämpötilat ovat celsiusasteina."
     },
     {
@@ -229,7 +229,7 @@
      "correct": true
     },
     {
-     "text": "Ratkaisu on oikein, koska asteet supistuvat pois.",
+     "text": "Ratkaisu on oikein, koska asteet supistuvat pois suhteesta.",
      "feedback": "Yksiköt supistuvat, mutta celsiusasteiden suhde $60 : 20$ ei ole lämpötilojen todellinen suhde, koska celsiusasteikon nolla ei ole absoluuttinen nolla. Kelvineinä suhde on vain $333 : 293$."
     }
    ]
@@ -268,7 +268,7 @@
    "prompt": "Retkikeittimen kaasupullo on käytetty loppuun, ja sen venttiili on auki ulkoilmaan. Pulloon kiinnitetty painemittari näyttää $0\\,\\text{kPa}$. Mikä väite on perusteltu?",
    "choices": [
     {
-     "text": "Pullossa ei ole enää lainkaan kaasua, koska paine on nolla.",
+     "text": "Pullossa ei ole enää lainkaan kaasua, koska paine on nyt nolla.",
      "feedback": "Mittari näyttää ylipainetta eli sitä, kuinka paljon paine on ilmanpainetta suurempi. Lukema $0\\,\\text{kPa}$ tarkoittaa, että pullon paine on sama kuin ilmanpaine, noin $101\\,\\text{kPa}$, ja pullossa on kaasua."
     },
     {
@@ -276,7 +276,7 @@
      "feedback": "Kun venttiili on auki, kaasua virtaa, kunnes paineet ovat samat. Pullon paine on siis ilmanpaine, ei sitä pienempi; mittari näyttäisi alipaineessa negatiivista lukemaa."
     },
     {
-     "text": "Pullossa on yhä kaasua, koska mittari näyttää vain ylipaineen.",
+     "text": "Pullossa on yhä kaasua: mittari näyttää vain ylipaineen.",
      "feedback": "Oikein. Kokonaispaine on $p = p_0 + \\Delta p = 101\\,\\text{kPa} + 0\\,\\text{kPa}$. Tilanyhtälöön sijoitetaan aina kokonaispaine, joten pullossa on kaasua $n = p_0V/(RT)$.",
      "correct": true
     }
@@ -321,7 +321,7 @@
    "hints": [
     "Ilmanpaine painaa luukkua ylhäältä veden kautta ja alhaalta huoltotilasta. Mikä osa paineesta jää jäljelle?",
     "Ylipaine syvyydellä $h$ on $\\rho g h$, ja voima on paine kertaa ala.",
-    "$F = \\rho g h A = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 5{,}0\\,\\text{m} \\cdot 0{,}36\\,\\text{m}^2$"
+    "Luukun ala on $A = (0{,}60\\,\\text{m})^2$. Laske ensin ylipaine pascaleina ja kerro se sitten alalla."
    ],
    "mistakes": [
     {
@@ -337,7 +337,7 @@
      "feedback": "Unohdit putoamiskiihtyvyyden. Ylipaine on $\\rho g h$, ja $g = 9{,}81\\,\\text{m/s}^2$."
     }
    ],
-   "solution": "**Annettu:** syvyys $h = 5{,}0\\,\\text{m}$, luukun sivu $a = 0{,}60\\,\\text{m}$, veden tiheys $\\rho = 1000\\,\\text{kg/m}^3$, $g = 9{,}81\\,\\text{m/s}^2$; ilmanpaine sama veden pinnalla ja luukun alla\n\n**Kysytty:** luukkuun kohdistuva kokonaisvoima $F$ kilonewtoneina\n\n**Periaate:** Vesi on levossa, joten paine luukun yläpinnalla on $p_0 + \\rho g h$. Alhaalta luukkuun vaikuttaa ilmanpaine $p_0$. Ilmanpaineen voimat kumoavat toisensa, joten kokonaisvoima syntyy ylipaineesta $\\rho g h$, ja se on kohtisuorassa luukkua vastaan eli alaspäin (luku *Paine ja hydrostaattinen paine*).\n\n**Kaava:** $\\Delta p = \\rho g h$ ja $p = \\dfrac{F}{A}$, joten $F = \\rho g h\\,a^2$\n\n**Muunnokset:** Kaikki suureet ovat perusyksiköissä. Lopuksi $1\\,\\text{N} = 0{,}001\\,\\text{kN}$.\n\n**Sijoitus:** $F = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 5{,}0\\,\\text{m} \\cdot (0{,}60\\,\\text{m})^2 = 49\\,050\\,\\text{Pa} \\cdot 0{,}36\\,\\text{m}^2 = 17\\,658\\,\\text{N} = 17{,}7\\,\\text{kN}$\n\n**Vastaus:** $F \\approx 18\\,\\text{kN}$, kaksi merkitsevää numeroa kuten syvyys $5{,}0\\,\\text{m}$ ja sivu $0{,}60\\,\\text{m}$.\n\n**Järkevyys:** Luukun päällä on vesipatsas $0{,}36\\,\\text{m}^2 \\cdot 5{,}0\\,\\text{m} = 1{,}8\\,\\text{m}^3$, jonka massa on $1800\\,\\text{kg}$ ja paino noin $18\\,\\text{kN}$: sama tulos. Voima vastaa lähes kahden henkilöauton painoa, joten luukku on tehtävä tukevaksi."
+   "solution": "**Annettu:** syvyys $h = 5{,}0\\,\\text{m}$, luukun sivu $a = 0{,}60\\,\\text{m}$, veden tiheys $\\rho = 1000\\,\\text{kg/m}^3$, $g = 9{,}81\\,\\text{m/s}^2$; ilmanpaine sama veden pinnalla ja luukun alla\n\n**Kysytty:** luukkuun kohdistuva kokonaisvoima $F$ kilonewtoneina\n\n**Periaate:** Vesi on levossa, joten paine luukun yläpinnalla on $p_0 + \\rho g h$. Alhaalta luukkuun vaikuttaa ilmanpaine $p_0$. Ilmanpaineen voimat kumoavat toisensa, joten kokonaisvoima syntyy ylipaineesta $\\rho g h$, ja se on kohtisuorassa luukkua vastaan eli alaspäin (luku *Paine ja hydrostaattinen paine*).\n\n**Kaava:** $\\Delta p = \\rho g h$ ja $p = \\dfrac{F}{A}$, joten $F = \\rho g h\\,a^2$\n\n**Muunnokset:** Kaikki suureet ovat perusyksiköissä. Lopuksi $1\\,\\text{N} = 0{,}001\\,\\text{kN}$.\n\n**Sijoitus:** $F = 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 5{,}0\\,\\text{m} \\cdot (0{,}60\\,\\text{m})^2 = 49\\,050\\,\\text{Pa} \\cdot 0{,}36\\,\\text{m}^2 = 17\\,658\\,\\text{N} = 17{,}7\\,\\text{kN}$\n\n**Vastaus:** $F \\approx 18\\,\\text{kN}$, kaksi merkitsevää numeroa kuten syvyys $5{,}0\\,\\text{m}$ ja sivu $0{,}60\\,\\text{m}$.\n\n**Järkevyys:** Luukun päällä on vesipatsas $0{,}36\\,\\text{m}^2 \\cdot 5{,}0\\,\\text{m} = 1{,}8\\,\\text{m}^3$, jonka massa on $1800\\,\\text{kg}$ ja paino noin $18\\,\\text{kN}$: sama tulos. Voima vastaa noin yhden ison henkilöauton painoa, joten luukku on tehtävä tukevaksi."
   },
   {
    "id": "pumppu",
@@ -381,7 +381,7 @@
    "hints": [
     "Paine ja tilavuus pysyvät samoina, mutta ilman määrä muuttuu. Laske ilman massa kuoressa ennen ja jälkeen lämmityksen.",
     "Tilanyhtälöstä ja ainemäärästä $n = m/M$ saadaan $m = \\dfrac{pVM}{RT}$, kun $T$ on kelvineinä.",
-    "$m_1 = \\dfrac{100\\,000\\,\\text{Pa} \\cdot 2800\\,\\text{m}^3 \\cdot 0{,}0290\\,\\tfrac{\\text{kg}}{\\text{mol}}}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 283{,}15\\,\\text{K}} \\approx 3450\\,\\text{kg}$"
+    "Laske massa lämpötiloissa $T_1 = 283{,}15\\,\\text{K}$ ja $T_2 = 373{,}15\\,\\text{K}$. Poistuva massa on näiden erotus; muista $M = 0{,}0290\\,\\text{kg/mol}$."
    ],
    "mistakes": [
     {
@@ -401,7 +401,7 @@
      "feedback": "Tämä on poistuva ainemäärä mooleina. Muunna se massaksi: $m = nM$, kun $M = 0{,}0290\\,\\text{kg/mol}$."
     }
    ],
-   "solution": "**Annettu:** paine $p = 100\\,\\text{kPa}$ (sama ennen ja jälkeen), tilavuus $V = 2800\\,\\text{m}^3$, lämpötilat $\\theta_1 = 10\\,{}^\\circ\\text{C}$ ja $\\theta_2 = 100\\,{}^\\circ\\text{C}$, moolimassa $M = 29{,}0\\,\\text{g/mol}$, $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$\n\n**Kysytty:** poistuvan ilman massa $\\Delta m$ kilogrammoina\n\n**Periaate:** Kuori on auki, joten sisällä on koko ajan ulkoilman paine, ja kuoren tilavuus pysyy samana. Kun ilma lämpenee, sama tilavuus mahtuu samaan paineeseen vähemmän hiukkasia, ja ylimäärä virtaa ulos alhaalta. Ilmaa kuvataan ideaalikaasuna, mikä sopii tavalliseen paineeseen (luku *Ideaalikaasun tilanyhtälö $pV = nRT$*).\n\n**Kaava:** $pV = nRT$ ja $n = \\dfrac{m}{M}$, joten $m = \\dfrac{pVM}{RT}$ ja $\\Delta m = \\dfrac{pVM}{R}\\left(\\dfrac{1}{T_1} - \\dfrac{1}{T_2}\\right)$\n\n**Muunnokset:** $p = 100 \\cdot 1000\\,\\text{Pa} = 100\\,000\\,\\text{Pa}$, $M = 29{,}0 \\cdot 0{,}001\\,\\text{kg/mol} = 0{,}0290\\,\\text{kg/mol}$, $T_1 = (10 + 273{,}15)\\,\\text{K} = 283{,}15\\,\\text{K}$ ja $T_2 = (100 + 273{,}15)\\,\\text{K} = 373{,}15\\,\\text{K}$\n\n**Sijoitus:** $m_1 = \\dfrac{100\\,000\\,\\text{Pa} \\cdot 2800\\,\\text{m}^3 \\cdot 0{,}0290\\,\\tfrac{\\text{kg}}{\\text{mol}}}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 283{,}15\\,\\text{K}} = 3451\\,\\text{kg}$ ja $m_2 = m_1 \\cdot \\dfrac{T_1}{T_2} = 3451\\,\\text{kg} \\cdot \\dfrac{283{,}15\\,\\text{K}}{373{,}15\\,\\text{K}} = 2619\\,\\text{kg}$, joten $\\Delta m = 3451\\,\\text{kg} - 2619\\,\\text{kg} = 832\\,\\text{kg}$\n\n**Vastaus:** $\\Delta m \\approx 832\\,\\text{kg}$, kolme merkitsevää numeroa kuten moolimassassa $29{,}0\\,\\text{g/mol}$; lämpötilaerot tunnetaan kelvineinä vähintään tällä tarkkuudella.\n\n**Järkevyys:** Ilmaa poistuu noin neljännes, koska kelvinlämpötila kasvaa suhteessa $373 : 283 \\approx 1{,}32$ ja massa pienenee suhteessa $283 : 373 \\approx 0{,}76$. Alkumassa $3450\\,\\text{kg}$ vastaa ilman tiheyttä $3450\\,\\text{kg} : 2800\\,\\text{m}^3 \\approx 1{,}2\\,\\text{kg/m}^3$, joka on ilman tavallinen tiheys."
+   "solution": "**Annettu:** paine $p = 100\\,\\text{kPa}$ (sama ennen ja jälkeen), tilavuus $V = 2800\\,\\text{m}^3$, lämpötilat $\\theta_1 = 10\\,{}^\\circ\\text{C}$ ja $\\theta_2 = 100\\,{}^\\circ\\text{C}$, moolimassa $M = 29{,}0\\,\\text{g/mol}$, $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$\n\n**Kysytty:** poistuvan ilman massa $\\Delta m$ kilogrammoina\n\n**Periaate:** Kuori on auki, joten sisällä on koko ajan ulkoilman paine, ja kuoren tilavuus pysyy samana. Kun ilma lämpenee, sama tilavuus mahtuu samaan paineeseen vähemmän hiukkasia, ja ylimäärä virtaa ulos alhaalta. Ilmaa kuvataan ideaalikaasuna, mikä sopii tavalliseen paineeseen (luku *Ideaalikaasun tilanyhtälö $pV = nRT$*).\n\n**Kaava:** $pV = nRT$ ja $n = \\dfrac{m}{M}$, joten $m = \\dfrac{pVM}{RT}$ ja $\\Delta m = \\dfrac{pVM}{R}\\left(\\dfrac{1}{T_1} - \\dfrac{1}{T_2}\\right)$\n\n**Muunnokset:** $p = 100 \\cdot 1000\\,\\text{Pa} = 100\\,000\\,\\text{Pa}$, $M = 29{,}0 \\cdot 0{,}001\\,\\text{kg/mol} = 0{,}0290\\,\\text{kg/mol}$, $T_1 = (10 + 273{,}15)\\,\\text{K} = 283{,}15\\,\\text{K}$ ja $T_2 = (100 + 273{,}15)\\,\\text{K} = 373{,}15\\,\\text{K}$\n\n**Sijoitus:** $m_1 = \\dfrac{100\\,000\\,\\text{Pa} \\cdot 2800\\,\\text{m}^3 \\cdot 0{,}0290\\,\\tfrac{\\text{kg}}{\\text{mol}}}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 283{,}15\\,\\text{K}} = 3451\\,\\text{kg}$ ja $m_2 = m_1 \\cdot \\dfrac{T_1}{T_2} = 3451\\,\\text{kg} \\cdot \\dfrac{283{,}15\\,\\text{K}}{373{,}15\\,\\text{K}} = 2619\\,\\text{kg}$, joten $\\Delta m = 3451\\,\\text{kg} - 2619\\,\\text{kg} = 832\\,\\text{kg}$\n\n**Vastaus:** $\\Delta m \\approx 830\\,\\text{kg}$. Paine $100\\,\\text{kPa}$, tilavuus $2800\\,\\text{m}^3$ ja lämpötila $10\\,{}^\\circ\\text{C}$ on annettu noin kahden merkitsevän numeron tarkkuudella, joten tulos ilmoitetaan kahdella merkitsevällä numerolla, vaikka moolimassa $29{,}0\\,\\text{g/mol}$ on tarkempi.\n\n**Järkevyys:** Ilmaa poistuu noin neljännes, koska kelvinlämpötila kasvaa suhteessa $373 : 283 \\approx 1{,}32$ ja massa pienenee suhteessa $283 : 373 \\approx 0{,}76$. Alkumassa $3450\\,\\text{kg}$ vastaa ilman tiheyttä $3450\\,\\text{kg} : 2800\\,\\text{m}^3 \\approx 1{,}2\\,\\text{kg/m}^3$, joka on ilman tavallinen tiheys."
   },
   {
    "id": "manta",

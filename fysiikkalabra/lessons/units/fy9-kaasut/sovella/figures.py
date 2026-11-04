@@ -36,6 +36,9 @@ def syringe_graph():
     ax = Axes(f, (62, 306), (316, 62), x=(0, 80), y=(36, 50), xticks=list(range(0, 81, 10)), yticks=list(range(36, 51, 2)),
               xlabel=r"\theta\ ({}^\circ\text{C})", ylabel=r"V\ (\text{ml})", origin_label=False,
               xfmt=lambda v: str(v) if v % 20 == 0 else "", yfmt=lambda v: str(v) if v % 4 == 0 else "")
+    yb = ax.Y(36) - 12                                    # the axis break: the volume axis does not start at zero
+    f.rect(ax.X(0) - 9, yb - 4, 18, 8, WHITE)
+    for dy in (-4, 4): f.line(ax.X(0) - 9, yb + dy + 3, ax.X(0) + 9, yb + dy - 3, INK, 2)
     ax.line([(0, b), (80, b + 80 * k)], INK, 2.5)
     for t, v in zip(TH, V):
         f.line(ax.X(t), ax.Y(v - E), ax.X(t), ax.Y(v + E), MUTED, 2)
@@ -88,11 +91,13 @@ def pane_horizontal():
     longer presses on the glass: the weight down from the centre and the pressure-difference force up at the pad."""
     G = M6 * g; Fp = M6 * (g + A6)
     f = Fig("fy9ka-s6-vaaka", 270, "Voimakuvio: vaakasuora lasilevy kapeana suorakulmiona, kun nosto kiihtyy ylöspäin ja alipaine on "
-            "pienin mahdollinen. Paino G lähtee levyn keskipisteestä suoraan alas. Paine-eron voima F p lähtee levyn yläpinnasta "
+            "pienin mahdollinen. Laikka on harmaana levyn yläpinnan keskellä. Paino G lähtee levyn keskipisteestä suoraan alas. Paine-eron voima F p lähtee levyn yläpinnasta "
             "laikan kohdalta ylös, ja se on painoa pidempi, koska levy kiihtyy ylöspäin. Laikan reunan tukivoima on tässä "
             "rajatapauksessa nolla. Erillään oranssi kiihtyvyysnuoli a ylöspäin.", width=420)
     s = 0.11
     cx, cy, w, h = 180, 135, 260, 20
+    f.rect(cx - 36, cy - h / 2 - 12, 72, 12, MUTED, INK, 1.5, 4)        # the suction pad on the upper face
+    f.tex(cx - 46, cy - h / 2 - 18, r"\text{laikka}", "end", MUTED, size=18)
     d = FBD(f, s, body=(cx, cy, w, h), m=M6, a=(0, A6))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(26, 4))
     d.force("F_p", (0, Fp), (cx, cy - h / 2), "other", tex=r"\overline{F}_\text{p}", lab=(30, 6))
@@ -107,7 +112,7 @@ def pane_vertical():
     the weight and gives the upward acceleration. Drawn at the least underpressure, F_mu0 = mu0 N."""
     G = M6 * g; Fmu = M6 * (g + A6); N = Fmu / MU
     f = Fig("fy9ka-s6-pysty", 400, "Voimakuvio: pystyasentoon käännetty lasilevy kapeana pystysuorana suorakulmiona, laikka levyn "
-            "vasemmalla pinnalla. Paino G keskipisteestä suoraan alas. Paine-eron voima F p työntää levyä oikealta vaakasuoraan "
+            "vasemmalla pinnalla, harmaana. Paino G keskipisteestä suoraan alas. Paine-eron voima F p työntää levyä oikealta vaakasuoraan "
             "vasemmalle kohti laikkaa. Laikan reunan tukivoima N työntää levyä vasemmalta vaakasuoraan oikealle; se on yhtä suuri "
             "kuin F p. Lepokitka F μ0 lähtee levyn vasemmasta yläkulmasta ylös, ja se on painoa pidempi, koska levy kiihtyy "
             "ylöspäin. N on noin 1,7 kertaa kitkan pituinen, koska kitka on pienimmillä alipaineella 0,60 kertaa tukivoima. "
@@ -115,6 +120,8 @@ def pane_vertical():
     s = 0.085
     cx, cy, w, h = 200, 210, 24, 250
     left, right = cx - w / 2, cx + w / 2
+    f.rect(left - 12, cy - 50, 12, 100, MUTED, INK, 1.5, 4)             # the suction pad on the left face
+    f.tex(left - 18, cy + 66, r"\text{laikka}", "end", MUTED, size=18)
     d = FBD(f, s, body=(cx, cy, w, h), m=M6, a=(0, A6))
     d.force("G", (0, -G), (cx, cy), "gravity", lab=(28, 0))
     d.force("F_p", (-N, 0), (right, cy - 20), "other", tex=r"\overline{F}_\text{p}", push=True, lab=(24, -22))

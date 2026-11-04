@@ -11,7 +11,7 @@
     "fy3-7",
     "fy2-3"
    ],
-   "text": "Kesätauon jälkeen jäähallin kaukaloon tehdään uusi jää. Jäähdytetyn betonilaatan päälle ruiskutetaan vettä ohuina kerroksina, kunnes jäätä on koko alalla $3{,}00\\,\\text{cm}$. Hallin kylmäkone poistaa vedestä ja jäästä lämpöä teholla $350\\,\\text{kW}$.\n\n- jäädytettävä ala $1800\\,\\text{m}^2$\n- veden lämpötila letkussa $15{,}0\\,{}^\\circ\\text{C}$, valmiin jään lämpötila $-4{,}0\\,{}^\\circ\\text{C}$\n- veden tiheys $1000\\,\\text{kg/m}^3$, veden $c = 4190\\,\\text{J/(kg}\\cdot\\text{K)}$, jään $c = 2100\\,\\text{J/(kg}\\cdot\\text{K)}$, jään ominaissulamislämpö $334\\,\\text{kJ/kg}$\n\nJäämestari sanoo: ”Kun vesi on jäähtynyt nollaan asteeseen, jäätyminen käy nopeasti, koska lämpötilaa ei tarvitse enää laskea.”",
+   "text": "Kesätauon jälkeen jäähallin kaukaloon tehdään uusi jää. Jäähdytetyn betonilaatan päälle ruiskutetaan vettä ohuina kerroksina, yhteensä $3{,}00\\,\\text{cm}$:n kerros, joka jäätyy koko alalla. Hallin kylmäkone poistaa vedestä ja jäästä lämpöä teholla $350\\,\\text{kW}$.\n\n- jäädytettävä ala $1800\\,\\text{m}^2$\n- veden lämpötila letkussa $15{,}0\\,{}^\\circ\\text{C}$, valmiin jään lämpötila $-4{,}0\\,{}^\\circ\\text{C}$\n- veden tiheys $1000\\,\\text{kg/m}^3$, veden $c = 4190\\,\\text{J/(kg}\\cdot\\text{K)}$, jään $c = 2100\\,\\text{J/(kg}\\cdot\\text{K)}$, jään ominaissulamislämpö $334\\,\\text{kJ/kg}$\n\nJäämestari sanoo: ”Kun vesi on jäähtynyt nollaan asteeseen, jäätyminen käy nopeasti, koska lämpötilaa ei tarvitse enää laskea.”",
    "parts": [
     {
      "id": "a",
@@ -537,7 +537,7 @@
       {
        "key": "conclusion",
        "points": 2,
-       "detail": "Johtopäätös ei pidä: korjattu tulos on taulukkoarvon mukainen, ja ero johtui virheellisestä oletuksesta eikä taulukosta. Muki ei selitä eroa, koska sen lämmön ottaminen pienentäisi tulosta."
+       "detail": "Johtopäätös ei pidä: korjattu tulos on taulukkoarvon mukainen, ja ero johtui virheellisestä oletuksesta eikä taulukosta. Muki ei selitä eroa: sen pitäisi ottaa noin $1890\\,\\text{J}$, mutta styroksimukin lämpökapasiteetti on vain muutama $\\text{J/K}$."
       }
      ]
     },
@@ -553,7 +553,7 @@
        "points": 2
       },
       {
-       "text": "Määrittää jään massan erotuksena punnitsemalla mukin ennen jään lisäämistä ja sen jälkeen.",
+       "text": "Määrittää jään massan erotuksena punnitsemalla mukin ennen jään lisäämistä ja sen jälkeen, jolloin käsittelyn aikana sulanut tai pudonnut jää ei vääristä massaa.",
        "tag": "experiment",
        "points": 1
       },
@@ -685,7 +685,7 @@
      "text": "Kuljettajalle neuvotaan: ”Käytä pitkässä alamäessä moottorijarrutusta, ettei jarru kuumene.” Perustele neuvo energian avulla.",
      "criteria": [
       {
-       "text": "Selittää, että moottorijarrutuksessa potentiaalienergia muuttuu moottorin kitkan ja pumppaustyön kautta sisäenergiaksi moottorissa, ja moottorin jäähdytysjärjestelmä luovuttaa sen ilmaan.",
+       "text": "Selittää, että moottorijarrutuksessa potentiaalienergia muuttuu moottorin kitkan kautta sisäenergiaksi moottorissa, ja moottorin jäähdytysjärjestelmä luovuttaa sen ilmaan.",
        "tag": "concept",
        "points": 2
       },

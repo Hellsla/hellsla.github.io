@@ -31,9 +31,9 @@
 **Järkevyys:** Kaistan lopussa ($12{,}0\,\text{s}$) rekka on kohdassa $-40\,\text{m} + 22{,}5\,\text{m/s} \cdot 12{,}0\,\text{s} = 230\,\text{m}$ ja auto kohdassa $270\,\text{m}$, joten ero on taas $40\,\text{m}$, kuten pitääkin: nopeuskuvaajien väliin jäävät alat ennen ja jälkeen hetken $6{,}0\,\text{s}$ ovat yhtä suuret. Kohtaamisyhtälöllä $\tfrac{1}{2}\,a\,t^2 + (v_0 - v_\text{R})\,t - x_{0\text{R}} = 0$ ei ole reaalisia ratkaisuja, koska diskriminantti $(-7{,}5)^2 - 4 \cdot 0{,}625 \cdot 40 < 0$.
 
 ### d)
-**Kysytty:** miksi rekka saavuttaa vain nopeuteen $72\,\text{km/h}$ kiihdyttävän auton ja miksi liikenteen nopeuteen kannattaa kiihdyttää
+**Kysytty:** miksi rekka saavuttaa tasaisesti vain nopeuteen $72\,\text{km/h}$ kiihdyttävän auton ja miksi liikenteen nopeuteen kannattaa kiihdyttää
 **Periaate:** Siirtymä on $(t,v)$-kuvaajan pinta-ala, ja välimatka muuttuu kahden kuvaajan väliin jäävän alan verran (luku *Kahden kappaleen liikkeiden vertailu*).
-**Mallivastaus:** Tämä auto on koko kaistan ajan rekkaa hitaampi, koska sen suurin nopeus $72\,\text{km/h} = 20\,\text{m/s}$ on pienempi kuin rekan $22{,}5\,\text{m/s}$. $(t,v)$-kuvaajassa rekan vaakasuora viiva on koko ajan auton nousevan viivan yläpuolella, joten rekan siirtymä kasvaa joka hetki enemmän kuin auton ja $40\,\text{m}$:n ero pienenee koko ajan. Kun ero on kurottu umpeen, rekka on auton rinnalla ja menee ohi. Laskelma vahvistaa tämän: kiihdytys kestää $2 \cdot 270\,\text{m} : (15\,\text{m/s} + 20\,\text{m/s}) \approx 15{,}4\,\text{s}$, ja sinä aikana rekka ehtii kohtaan $-40\,\text{m} + 22{,}5\,\text{m/s} \cdot 15{,}4\,\text{s} \approx 307\,\text{m}$, auton ohi ennen kaistan loppua ($270\,\text{m}$). Auton on silloin hidastettava ja liityttävä rekan taakse. Kun auto kiihdyttää liikenteen nopeuteen, se on loppuvaiheessa rekkaa nopeampi, välimatka kasvaa taas ja auto voi liittyä turvallisesti rekan eteen.
+**Mallivastaus:** Tämä auto on koko kaistan ajan rekkaa hitaampi, koska sen suurin nopeus $72\,\text{km/h} = 20\,\text{m/s}$ on pienempi kuin rekan $22{,}5\,\text{m/s}$. $(t,v)$-kuvaajassa rekan vaakasuora viiva on koko ajan auton nousevan viivan yläpuolella, joten rekan siirtymä kasvaa joka hetki enemmän kuin auton ja $40\,\text{m}$:n ero pienenee koko ajan. Kun ero on kurottu umpeen, rekka on auton rinnalla ja menee ohi. Laskelma vahvistaa tämän (auto kiihdyttää tasaisesti koko kaistan matkan): kiihdytys kestää $2 \cdot 270\,\text{m} : (15\,\text{m/s} + 20\,\text{m/s}) \approx 15{,}4\,\text{s}$, auton keskinopeus on $17{,}5\,\text{m/s}$, joten rekka kulkee keskimäärin $5\,\text{m/s}$ nopeammin ja kuroo $5\,\text{m/s} \cdot 15{,}4\,\text{s} \approx 77\,\text{m}$, enemmän kuin $40\,\text{m}$:n eron; ja sinä aikana rekka ehtii kohtaan $-40\,\text{m} + 22{,}5\,\text{m/s} \cdot 15{,}4\,\text{s} \approx 307\,\text{m}$, auton ohi ennen kaistan loppua ($270\,\text{m}$). Auton on silloin hidastettava ja liityttävä rekan taakse. Kun auto kiihdyttää liikenteen nopeuteen, se on loppuvaiheessa rekkaa nopeampi, välimatka kasvaa taas ja auto voi liittyä turvallisesti rekan eteen.
 
 ### Yleisiä virheitä
 - Nopeuksia ei muunneta yksikköön $\text{m/s}$, ja kilometrit tunnissa kerrotaan sekunneilla.
@@ -98,7 +98,7 @@
 **Kysytty:** junan nopeus $v$ ajan $t$ funktiona kuvaajana ja siihen sovitettu malli
 **Kuvaaja:** Vaaka-akselilla on aika $t\ (\text{s})$ ja pystyakselilla nopeus $v\ (\text{km/h})$. Aika-akseli jatkuu noin $55\,\text{s}$:iin, jotta c-kohdan pysähtymishetki mahtuu kuvaajaan.
 
-<svg data-fig="fy9-liike-s3-graph" viewBox="0 0 440 400" role="img" aria-label="Kuvaaja: junan nopeus v kilometreinä tunnissa ajan t funktiona. Yksitoista mustaa pistettä hetkistä 0–40 s. Kolmen ensimmäisen pisteen kohdalla on vaakasuora suora tasolla 90 km/h. Muihin pisteisiin on sovitettu laskeva suora, joka leikkaa vaakasuoran suoran noin hetkellä 10 s ja jota on jatkettu katkoviivana aika-akselille noin hetkeen 48,5 s. Suoran pisteet (12 s; 85 km/h) ja (40 s; 20 km/h) on ympyröity, ja niistä luetaan kulmakerroin noin −2,3 km/h sekunnissa. Laskevan suoran ja aika-akselin väliin jäävä kolmio on väritetty vihreäksi: sen pinta-ala on jarrutusmatka." style="max-width:100%;font-size:22px">
+<svg data-fig="fy9-liike-s3-graph" viewBox="0 0 440 400" role="img" aria-label="Kuvaaja: junan nopeus v kilometreinä tunnissa ajan t funktiona. Yksitoista mustaa pistettä hetkistä 0–40 s. Kolmen ensimmäisen pisteen kohdalla on vaakasuora suora tasolla 90 km/h. Muihin pisteisiin on sovitettu laskeva suora, joka leikkaa vaakasuoran suoran noin hetkellä 10 s ja jota on jatkettu katkoviivana aika-akselille noin hetkeen 48,5 s. Suoran pisteet (12 s; 85 km/h) ja (40 s; 20 km/h) on ympyröity, ja niistä luetaan kulmakerroin noin −2,3 km/h sekunnissa. Laskevan suoran ja aika-akselin väliin jäävä kolmio on väritetty vihreäksi: sen pinta-ala on jarrutusmatka." style="max-width:100%;font-size:24px">
   <line x1="83.5" y1="356" x2="83.5" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="103" y1="356" x2="103" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="122.5" y1="356" x2="122.5" y2="52" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -129,43 +129,43 @@
   <path d="M64,26 L70,39 L58,39 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="83.5" y1="356" x2="83.5" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="103" y1="356" x2="103" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="93.5" y="367" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$8$</div></foreignObject>
+  <foreignObject x="93" y="365.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$8$</div></foreignObject>
   <line x1="122.5" y1="356" x2="122.5" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="141.5" y1="356" x2="141.5" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="126" y="367" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$16$</div></foreignObject>
+  <foreignObject x="125" y="365.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$16$</div></foreignObject>
   <line x1="161" y1="356" x2="161" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="180.5" y1="356" x2="180.5" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="165" y="367" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$24$</div></foreignObject>
+  <foreignObject x="164" y="365.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$24$</div></foreignObject>
   <line x1="200" y1="356" x2="200" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="219.5" y1="356" x2="219.5" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="204" y="367" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$32$</div></foreignObject>
+  <foreignObject x="203" y="365.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$32$</div></foreignObject>
   <line x1="239" y1="356" x2="239" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="258.5" y1="356" x2="258.5" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="243" y="367" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$40$</div></foreignObject>
+  <foreignObject x="242" y="365.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$40$</div></foreignObject>
   <line x1="277.5" y1="356" x2="277.5" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="297" y1="356" x2="297" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="281.5" y="367" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$48$</div></foreignObject>
+  <foreignObject x="280.5" y="365.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$48$</div></foreignObject>
   <line x1="316.5" y1="356" x2="316.5" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="336" y1="356" x2="336" y2="363" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="320.5" y="367" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$56$</div></foreignObject>
+  <foreignObject x="319.5" y="365.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$56$</div></foreignObject>
   <line x1="57" y1="325.5" x2="64" y2="325.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="57" y1="295" x2="64" y2="295" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="21" y="282" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$20$</div></foreignObject>
+  <foreignObject x="19" y="280.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$20$</div></foreignObject>
   <line x1="57" y1="265" x2="64" y2="265" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="57" y1="234.5" x2="64" y2="234.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="21" y="221.5" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$40$</div></foreignObject>
+  <foreignObject x="19" y="220" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$40$</div></foreignObject>
   <line x1="57" y1="204" x2="64" y2="204" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="57" y1="173.5" x2="64" y2="173.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="21" y="160.5" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$60$</div></foreignObject>
+  <foreignObject x="19" y="159" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$60$</div></foreignObject>
   <line x1="57" y1="143" x2="64" y2="143" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="57" y1="113" x2="64" y2="113" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="21" y="100" width="31" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$80$</div></foreignObject>
+  <foreignObject x="19" y="98.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$80$</div></foreignObject>
   <line x1="57" y1="82.5" x2="64" y2="82.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="57" y1="52" x2="64" y2="52" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="10" y="39" width="42" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$100$</div></foreignObject>
-  <foreignObject x="35" y="363" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$0$</div></foreignObject>
-  <foreignObject x="368" y="343" width="57" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$t\ (\text{s})$</div></foreignObject>
-  <foreignObject x="54" y="-3" width="92" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$v\ (\text{km/h})$</div></foreignObject>
+  <foreignObject x="7" y="37.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$100$</div></foreignObject>
+  <foreignObject x="34" y="361.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <foreignObject x="368" y="341.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$t\ (\text{s})$</div></foreignObject>
+  <foreignObject x="54" y="-4.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v\ (\text{km/h})$</div></foreignObject>
   <polygon points="112,82.5 301,356 112,356" fill="#b2f2bb" fill-opacity="0.75"/>
   <polyline points="64,82.5 112,82.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <polyline points="112,82.5 258.5,294.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
@@ -184,10 +184,10 @@
   <circle cx="122.5" cy="97.5" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
   <circle cx="258.5" cy="295" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
   <line x1="112" y1="82.5" x2="112" y2="356" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <foreignObject x="118" y="318.5" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px;color:#6b7480">$10\,\text{s}$</div></foreignObject>
-  <foreignObject x="307" y="315.5" width="77" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px;color:#e8590c">$48{,}5\,\text{s}$</div></foreignObject>
-  <foreignObject x="180.5" y="57" width="134" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$k \approx -2{,}3\,\tfrac{\text{km/h}}{\text{s}}$</div></foreignObject>
-  <foreignObject x="87.5" y="276" width="157" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#2b8a3e">$\text{jarrutusmatka}$</div></foreignObject>
+  <foreignObject x="118" y="317" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$10\,\text{s}$</div></foreignObject>
+  <foreignObject x="307" y="296" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$48{,}5\,\text{s}$</div></foreignObject>
+  <foreignObject x="195" y="110.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$k \approx -2{,}3\,\tfrac{\text{km/h}}{\text{s}}$</div></foreignObject>
+  <foreignObject x="81" y="274.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\text{jarrutusmatka}$</div></foreignObject>
 </svg>
 
 **Mallivastaus:** Pisteistä näkyy kaksi vaihetta. Hetkinä $0$, $4$ ja $8\,\text{s}$ nopeus pysyy noin $90\,\text{km/h}$:ssa: vaihtelu $\pm 1\,\text{km/h}$ on sovelluksen epävarmuuden suuruinen, joten juna kulkee tasaisesti, ja näille pisteille piirretään vaakasuora suora. Hetkestä $12\,\text{s}$ alkaen nopeus pienenee joka neljässä sekunnissa suunnilleen yhtä paljon, joten juna jarruttaa tasaisesti, ja näihin pisteisiin sovitetaan laskeva suora niin, että pisteet jäävät sen molemmille puolille. Kolmea ensimmäistä pistettä ei oteta mukaan jarrutussuoraan, koska ne kuuluvat eri vaiheeseen ja kääntäisivät suoran väärin. Laskevaa suoraa jatketaan katkoviivana aika-akselille c-kohtaa varten.
@@ -315,10 +315,10 @@
 **Järkevyys:** Suhteellinen epävarmuus on $0{,}10 : 8{,}88 \approx 1{,}1\,\%$, mikä sopii pisteiden pieneen, muutaman millimetrin hajontaan. Sovituksen epävarmuus kertoo vain satunnaisesta hajonnasta, ei systemaattisesta virheestä, joka siirtää kaikkia pisteitä samaan suuntaan.
 
 ### c)
-**Annettu:** mittakaava asetettiin seinän tasossa $3{,}00\,\text{m}$:n päässä kamerasta, pallo putosi $3{,}30\,\text{m}$:n päässä kamerasta; a- ja b-kohdasta $a = (8{,}88 \pm 0{,}10)\,\text{m/s}^2$
+**Annettu:** mittakaava asetettiin metrimitan tasossa $3{,}00\,\text{m}$:n päässä kamerasta, pallo putosi $3{,}30\,\text{m}$:n päässä kamerasta; a- ja b-kohdasta $a = (8{,}88 \pm 0{,}10)\,\text{m/s}^2$
 **Kysytty:** systemaattisen virheen syy ja suunta sekä korjattu kiihtyvyys $a_\text{k}$
-**Periaate:** Kauempana oleva kohde näkyy kuvassa pienempänä samassa suhteessa kuin sen etäisyys kamerasta on suurempi. Ohjelma muuntaa pallon kuvassa kulkemat matkat metreiksi seinän mittakaavalla, joten se antaa pallon matkoiksi liian pienet arvot. Kiihtyvyys on verrannollinen matkaan, joten se korjataan samalla suhteella (luku *Mittaaminen ja mittauksen luotettavuus*).
-**Kaava:** $a_\text{k} = \dfrac{d_\text{pallo}}{d_\text{seinä}}\,a$ ja $\Delta a_\text{k} = \dfrac{d_\text{pallo}}{d_\text{seinä}}\,\Delta a$
+**Periaate:** Kauempana oleva kohde näkyy kuvassa pienempänä samassa suhteessa kuin sen etäisyys kamerasta on suurempi. Ohjelma muuntaa pallon kuvassa kulkemat matkat metreiksi mitan tasossa asetetulla mittakaavalla, joten se antaa pallon matkoiksi liian pienet arvot. Kiihtyvyys on verrannollinen matkaan, joten se korjataan samalla suhteella (luku *Mittaaminen ja mittauksen luotettavuus*).
+**Kaava:** $a_\text{k} = \dfrac{d_\text{pallo}}{d_\text{mitta}}\,a$ ja $\Delta a_\text{k} = \dfrac{d_\text{pallo}}{d_\text{mitta}}\,\Delta a$
 **Muunnokset:** Etäisyydet ovat samassa yksikössä, joten niiden suhde on yksikötön.
 **Sijoitus:** $a_\text{k} = \dfrac{3{,}30\,\text{m}}{3{,}00\,\text{m}} \cdot 8{,}88\,\text{m/s}^2 = 1{,}10 \cdot 8{,}88\,\text{m/s}^2 = 9{,}768\,\text{m/s}^2$ ja $\Delta a_\text{k} = 1{,}10 \cdot 0{,}10\,\text{m/s}^2 = 0{,}11\,\text{m/s}^2$
 **Vastaus:** Korjattu putoamiskiihtyvyys on $a_\text{k} \approx (9{,}8 \pm 0{,}1)\,\text{m/s}^2$, kahden desimaalin sijaan yhdellä, koska epävarmuus on noin $0{,}1\,\text{m/s}^2$. Virhe pienensi tulosta noin $9\,\%$.

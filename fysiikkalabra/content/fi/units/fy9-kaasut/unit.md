@@ -176,7 +176,7 @@ Tämän tunnin tehtävät kiertyvät yhden suureen ympärille: **paine on pintaa
 
 Kokeen kaasutehtävissä tarvitaan kaksi tarkistusta ennen lukuja. **Lämpötila kelvineinä**, koska kaasulait ovat verrannollisuuksia, jotka alkavat absoluuttisesta nollapisteestä. **Kokonaispaine**, koska painemittari näyttää yleensä vain ylipaineen, ja kaasun hiukkaset tuottavat koko paineen.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: paine syvyydellä p = p0 + ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. Kaasu: tilanyhtälö p V = n R T, yhdistetty kaasulaki p1 V1 / T1 = p2 V2 / T2 ja kelvinlämpötila T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = p ΔV, energian säilyminen W = Q1 − Q2 ja hyötysuhde eeta = W / Q1." style="max-width:100%;font-size:21px">
+<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: paine syvyydellä p = p0 + ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. Kaasu: tilanyhtälö p V = n R T, yhdistetty kaasulaki p1 V1 / T1 = p2 V2 / T2 ja kelvinlämpötila T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = p ΔV, energian säilyminen W = Q1 − Q2 ja hyötysuhde eeta = W / Q1." style="max-width:min(100%,440px);font-size:21px">
   <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="158.5" y="16.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{paine}$</div></foreignObject>
@@ -224,13 +224,13 @@ Alun kysymys ratkeaa näillä kahdella tarkistuksella. Lämpimässä autotalliss
   <rect x="141" y="60" width="230" height="46" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="76" y="71" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$p_0$</div></foreignObject>
   <foreignObject x="221" y="71" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\Delta p = 230$</div></foreignObject>
-  <foreignObject x="379" y="71" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$331$</div></foreignObject>
+  <foreignObject x="379" y="71" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$331\,\text{kPa}$</div></foreignObject>
   <foreignObject x="50" y="138" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#1971c2">$-20\,{}^\circ\text{C}$</div></foreignObject>
   <rect x="40" y="172" width="101" height="46" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
   <rect x="141" y="172" width="185" height="46" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="76" y="183" width="29" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$p_0$</div></foreignObject>
   <foreignObject x="198.5" y="183" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\Delta p = 185$</div></foreignObject>
-  <foreignObject x="334" y="183" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$286$</div></foreignObject>
+  <foreignObject x="334" y="183" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$286\,\text{kPa}$</div></foreignObject>
   <line x1="39" y1="268" x2="392" y2="268" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M404,268 L391,274 L391,262 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="40" y1="269" x2="40" y2="40" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -288,7 +288,13 @@ Vakiopaineessa laajeneva kaasu tekee työn
 W_\text{k} = p\,\Delta V
 ```
 
-missä $\Delta V$ on tilavuuden muutos (m³); työ on ($V$, $p$)-kuvaajan alle jäävä pinta-ala. Lämpövoimakone ottaa kierroksessa kuumasta lähteestä lämmön $Q_1$, tekee työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään ympäristöön. Energia säilyy, joten
+missä $\Delta V$ on tilavuuden muutos (m³); työ on ($V$, $p$)-kuvaajan alle jäävä pinta-ala. Kaasun sisäenergia muuttuu ensimmäisen pääsäännön mukaan
+
+```latex
+\Delta U = Q - W_\text{k}
+```
+
+missä $Q$ on kaasuun siirtynyt lämpö (J) ja $W_\text{k}$ kaasun tekemä työ. Lämpövoimakone ottaa kierroksessa kuumasta lähteestä lämmön $Q_1$, tekee työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään ympäristöön. Energia säilyy, joten
 
 ```latex
 W = Q_1 - Q_2
@@ -300,7 +306,7 @@ ja hyötysuhde on
 \eta = \frac{W}{Q_1}
 ```
 
-Osa lämmöstä on aina luovutettava kylmempään, joten lämpövoimakoneen hyötysuhde jää selvästi alle $100\,\%$:n. Voimalaitoksessa sama lasketaan tehoista: sähköteho jaettuna polttoaineteholla.
+Osa lämmöstä on aina luovutettava kylmempään, joten lämpövoimakoneen hyötysuhde jää selvästi alle $100\,\%$:n. Mitä pienempi lämpötilaero $T_1 - T_2$ on kuuman lähteen lämpötilaan $T_1$ nähden, sitä pienemmän osan lämmöstä kone voi muuttaa työksi. Voimalaitoksessa sama lasketaan tehoista: sähköteho jaettuna polttoaineteholla.
 
 <svg data-fig="kone" viewBox="0 0 420 470" role="img" aria-label="Lämpövoimakoneen energiavirrat yhden kierroksen aikana, nuolten leveydet mittakaavassa. Ylhäällä kuuma lähde, jonka lämpötila on T1. Siitä tulee alas koneeseen leveä lämpönuoli Q1 = 1000 J. Koneesta lähtee oikealle kapea vihreä nuoli, työ W = 350 J, ja alas kylmempään ympäristöön, jonka lämpötila on T2, lämpönuoli Q2 = 650 J. Lähtevät nuolet ovat yhteensä yhtä leveät kuin tuleva nuoli." style="max-width:100%;font-size:20px">
   <rect x="16" y="12" width="388" height="62" rx="12" fill="#f2a69c" stroke="#c92a2a" stroke-width="2.5"/>

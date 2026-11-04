@@ -8,7 +8,7 @@
  ],
  "prior": [
   "Siirtymä on paikan muutos, ja sen etumerkki kertoo suunnan (luku *Paikka, nopeus ja tasainen liike kuvaajina*)",
-  "Tasaisessa liikkeessä $s = s_0 + vt$, ja $(t,s)$-kuvaajan kulmakerroin on nopeus (luku *Tasainen liike – nopeus, paikka ja kuvaajat*)",
+  "Tasaisessa liikkeessä $x = x_0 + vt$, ja $(t,x)$-kuvaajan kulmakerroin on nopeus (luku *Tasainen liike – nopeus, paikka ja kuvaajat*)",
   "Kiihtyvyys on nopeuden muutos aikaa kohti, ja $(t,v)$-kuvaajan pinta-ala on siirtymä (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*)",
   "Kappaleet kohtaavat, kun niiden paikat ovat samalla hetkellä yhtä suuret (luku *Kahden kappaleen liikkeiden vertailu*)",
   "Mittauspisteisiin sovitetaan suora, ja kulmakerroin luetaan suoralta (luku *Graafinen esitys ja suoran sovittaminen*)"
@@ -29,13 +29,13 @@
    "prompt": "Kärryn $(t,x)$-kuvaaja on hetkestä $4\\,\\text{s}$ hetkeen $6\\,\\text{s}$ vaakasuora viiva korkeudella $x = 8\\,\\text{m}$. Mitä kärry tekee tänä aikana?",
    "choices": [
     {
-     "text": "Se liikkuu tasaisella nopeudella vaakasuoraa rataa.",
-     "feedback": "$(t,x)$-kuvaaja ei ole kuva radasta. Vaakasuora viiva tarkoittaa, että paikka ei muutu, joten nopeus on nolla. Kertaa luvussa *Paikka, nopeus ja tasainen liike kuvaajina*."
-    },
-    {
      "text": "Se on paikallaan kohdassa $x = 8\\,\\text{m}$.",
      "correct": true,
      "feedback": "Oikein. Paikka pysyy samana, joten $\\Delta x = 0$ ja nopeus $v = \\Delta x : \\Delta t = 0$. Kertaa tarvittaessa luvussa *Paikka, nopeus ja tasainen liike kuvaajina*."
+    },
+    {
+     "text": "Se liikkuu tasaisella nopeudella vaakasuoraa rataa.",
+     "feedback": "$(t,x)$-kuvaaja ei ole kuva radasta. Vaakasuora viiva tarkoittaa, että paikka ei muutu, joten nopeus on nolla. Kertaa luvussa *Paikka, nopeus ja tasainen liike kuvaajina*."
     },
     {
      "text": "Se liikkuu nopeudella $8\\,\\text{m} : 2\\,\\text{s} = 4\\,\\text{m/s}$.",
@@ -95,17 +95,17 @@
    "prompt": "Auto liikkuu $x$-akselin negatiiviseen suuntaan, ja sen kiihtyvyys on $-2{,}0\\,\\text{m/s}^2$. Mitä auton vauhdille tapahtuu?",
    "choices": [
     {
+     "text": "Vauhti kasvaa, koska $a$ ja $v$ ovat samansuuntaiset.",
+     "correct": true,
+     "feedback": "Oikein. Kumpikin osoittaa negatiiviseen suuntaan, joten vauhti kasvaa $2{,}0\\,\\text{m/s}$ sekunnissa. Kertaa tarvittaessa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    },
+    {
      "text": "Vauhti pienenee, koska kiihtyvyys on negatiivinen.",
      "feedback": "Etumerkki kertoo suunnan. Nopeus ja kiihtyvyys ovat tässä samansuuntaiset, joten vauhti kasvaa. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
     },
     {
      "text": "Vauhti pysyy samana, koska suunnat kumoavat toisensa.",
      "feedback": "Kiihtyvyys ei ole nolla, joten nopeus muuttuu joka sekunti $2{,}0\\,\\text{m/s}$. Saman suunnan kiihtyvyys kasvattaa vauhtia. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
-    },
-    {
-     "text": "Vauhti kasvaa, koska $a$ ja $v$ ovat samansuuntaiset.",
-     "correct": true,
-     "feedback": "Oikein. Kumpikin osoittaa negatiiviseen suuntaan, joten vauhti kasvaa $2{,}0\\,\\text{m/s}$ sekunnissa. Kertaa tarvittaessa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
     }
    ]
   },
@@ -147,13 +147,13 @@
      "feedback": "Pinta-ala kertoo, kuinka paljon paikka *muuttuu*. Loppupaikka on alkupaikka plus tämä siirtymä. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
     },
     {
+     "text": "Kappaleen keskinopeuden tällä aikavälillä.",
+     "feedback": "Keskinopeus saadaan, kun pinta-ala eli siirtymä jaetaan ajalla. Pinta-ala itse on siirtymä. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
+    },
+    {
      "text": "Kappaleen siirtymän tällä aikavälillä.",
      "correct": true,
      "feedback": "Oikein. Nopeus kertaa aika on metrejä, ja pinta-ala laskee nämä tulot yhteen. Aika-akselin alapuolinen ala on negatiivinen siirtymä. Kertaa tarvittaessa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
-    },
-    {
-     "text": "Kappaleen keskinopeuden tällä aikavälillä.",
-     "feedback": "Keskinopeus saadaan, kun pinta-ala eli siirtymä jaetaan ajalla. Pinta-ala itse on siirtymä. Kertaa luvussa *Kiihtyvyys ja tasaisesti kiihtyvä liike*."
     }
    ]
   },
@@ -164,7 +164,7 @@
    "title": "Raitiovaunu pysäkkien välillä",
    "source": "example",
    "source_note": "Kuvaaja on keksitty esimerkki, jonka luvut vastaavat raitiovaunun tavallista kiihtyvyyttä ja nopeutta kaupungissa.",
-   "text": "Kuvaajassa on alun raitiovaunun nopeus pysäkiltä seuraavalle. Liike on kolmessa vaiheessa: vaunu kiihtyy, ajaa tasaisella nopeudella ja jarruttaa. Lue kuvaajasta jokaisen vaiheen alku- ja loppuhetki sekä nopeus. Päättele, kuinka pitkän matkan vaunu kulkee kussakin vaiheessa, ja vastaa alla koko välin pituudella. Mallivastauksessa on myös vaiheiden kiihtyvyydet ja keskinopeus.\n\n<svg viewBox=\"0 0 440 360\" role=\"img\" aria-label=\"Kuvaaja mittakaavassa: raitiovaunun nopeus v ajan t funktiona pysäkiltä seuraavalle. Ruudukon väli on 10 s ja 2 m/s. Nopeus kasvaa tasaisesti nollasta nopeuteen 10 m/s hetkeen 10 s, pysyy 10 metrissä sekunnissa hetkeen 40 s ja pienenee tasaisesti nollaan hetkellä 60 s.\" style=\"max-width:100%;font-size:21px\">\n  <line x1=\"109.5\" y1=\"300\" x2=\"109.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"154.5\" y1=\"300\" x2=\"154.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"200\" y1=\"300\" x2=\"200\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"245.5\" y1=\"300\" x2=\"245.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"290.5\" y1=\"300\" x2=\"290.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"336\" y1=\"300\" x2=\"336\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"258.5\" x2=\"336\" y2=\"258.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"217.5\" x2=\"336\" y2=\"217.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"176\" x2=\"336\" y2=\"176\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"134.5\" x2=\"336\" y2=\"134.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"93.5\" x2=\"336\" y2=\"93.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"52\" x2=\"336\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"63\" y1=\"300\" x2=\"350\" y2=\"300\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M362,300 L349,306 L349,294 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"64\" y1=\"301\" x2=\"64\" y2=\"38\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M64,26 L70,39 L58,39 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"109.5\" y1=\"300\" x2=\"109.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"154.5\" y1=\"300\" x2=\"154.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"139.5\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$20$</div></foreignObject>\n  <line x1=\"200\" y1=\"300\" x2=\"200\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"245.5\" y1=\"300\" x2=\"245.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"230.5\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$40$</div></foreignObject>\n  <line x1=\"290.5\" y1=\"300\" x2=\"290.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"336\" y1=\"300\" x2=\"336\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"321\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$60$</div></foreignObject>\n  <line x1=\"57\" y1=\"258.5\" x2=\"64\" y2=\"258.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"246\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$2$</div></foreignObject>\n  <line x1=\"57\" y1=\"217.5\" x2=\"64\" y2=\"217.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"205\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$4$</div></foreignObject>\n  <line x1=\"57\" y1=\"176\" x2=\"64\" y2=\"176\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"163.5\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$6$</div></foreignObject>\n  <line x1=\"57\" y1=\"134.5\" x2=\"64\" y2=\"134.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"122\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$8$</div></foreignObject>\n  <line x1=\"57\" y1=\"93.5\" x2=\"64\" y2=\"93.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"22\" y=\"81\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$10$</div></foreignObject>\n  <line x1=\"57\" y1=\"52\" x2=\"64\" y2=\"52\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"22\" y=\"39.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$12$</div></foreignObject>\n  <foreignObject x=\"35\" y=\"307.5\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$0$</div></foreignObject>\n  <foreignObject x=\"368\" y=\"287.5\" width=\"55\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px\">$t\\ (\\text{s})$</div></foreignObject>\n  <foreignObject x=\"54\" y=\"-2.5\" width=\"77\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px\">$v\\ (\\text{m/s})$</div></foreignObject>\n  <polyline points=\"64,300 109.5,93.5 245.5,93.5 336,300\" fill=\"none\" stroke=\"#1971c2\" stroke-width=\"3.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n  <circle cx=\"64\" cy=\"300\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"109.5\" cy=\"93.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"245.5\" cy=\"93.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"336\" cy=\"300\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n</svg>",
+   "text": "Kuvaajassa on raitiovaunun nopeus pysäkiltä seuraavalle pysäkille. Lue kuvaajasta tarvitsemasi hetket ja nopeudet, päättele niistä pysäkkien välinen matka ja vastaa alla. Mallivastauksessa on myös kiihtyvyydet ja keskinopeus.\n\n<svg viewBox=\"0 0 440 360\" role=\"img\" aria-label=\"Kuvaaja mittakaavassa: raitiovaunun nopeus v ajan t funktiona pysäkiltä seuraavalle. Ruudukon väli on 10 s ja 2 m/s. Nopeus kasvaa tasaisesti nollasta nopeuteen 10 m/s hetkeen 10 s, pysyy 10 metrissä sekunnissa hetkeen 40 s ja pienenee tasaisesti nollaan hetkellä 60 s.\" style=\"max-width:100%;font-size:21px\">\n  <line x1=\"109.5\" y1=\"300\" x2=\"109.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"154.5\" y1=\"300\" x2=\"154.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"200\" y1=\"300\" x2=\"200\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"245.5\" y1=\"300\" x2=\"245.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"290.5\" y1=\"300\" x2=\"290.5\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"336\" y1=\"300\" x2=\"336\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"258.5\" x2=\"336\" y2=\"258.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"217.5\" x2=\"336\" y2=\"217.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"176\" x2=\"336\" y2=\"176\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"134.5\" x2=\"336\" y2=\"134.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"93.5\" x2=\"336\" y2=\"93.5\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"64\" y1=\"52\" x2=\"336\" y2=\"52\" stroke=\"#e3dccb\" stroke-width=\"1.5\" stroke-linecap=\"butt\"/>\n  <line x1=\"63\" y1=\"300\" x2=\"350\" y2=\"300\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M362,300 L349,306 L349,294 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"64\" y1=\"301\" x2=\"64\" y2=\"38\" stroke=\"#1f2933\" stroke-width=\"2.5\" stroke-linecap=\"butt\"/>\n  <path d=\"M64,26 L70,39 L58,39 Z\" fill=\"#1f2933\" stroke-linejoin=\"round\"/>\n  <line x1=\"109.5\" y1=\"300\" x2=\"109.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"154.5\" y1=\"300\" x2=\"154.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"139.5\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$20$</div></foreignObject>\n  <line x1=\"200\" y1=\"300\" x2=\"200\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"245.5\" y1=\"300\" x2=\"245.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"230.5\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$40$</div></foreignObject>\n  <line x1=\"290.5\" y1=\"300\" x2=\"290.5\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <line x1=\"336\" y1=\"300\" x2=\"336\" y2=\"307\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"321\" y=\"311.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:center;height:100%;font-size:21px\">$60$</div></foreignObject>\n  <line x1=\"57\" y1=\"258.5\" x2=\"64\" y2=\"258.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"246\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$2$</div></foreignObject>\n  <line x1=\"57\" y1=\"217.5\" x2=\"64\" y2=\"217.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"205\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$4$</div></foreignObject>\n  <line x1=\"57\" y1=\"176\" x2=\"64\" y2=\"176\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"163.5\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$6$</div></foreignObject>\n  <line x1=\"57\" y1=\"134.5\" x2=\"64\" y2=\"134.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"33\" y=\"122\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$8$</div></foreignObject>\n  <line x1=\"57\" y1=\"93.5\" x2=\"64\" y2=\"93.5\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"22\" y=\"81\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$10$</div></foreignObject>\n  <line x1=\"57\" y1=\"52\" x2=\"64\" y2=\"52\" stroke=\"#1f2933\" stroke-width=\"2\" stroke-linecap=\"butt\"/>\n  <foreignObject x=\"22\" y=\"39.5\" width=\"30\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$12$</div></foreignObject>\n  <foreignObject x=\"35\" y=\"307.5\" width=\"19\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:21px\">$0$</div></foreignObject>\n  <foreignObject x=\"368\" y=\"287.5\" width=\"55\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px\">$t\\ (\\text{s})$</div></foreignObject>\n  <foreignObject x=\"54\" y=\"-2.5\" width=\"77\" height=\"25\" overflow=\"visible\"><div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"fig-tex\" style=\"display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px\">$v\\ (\\text{m/s})$</div></foreignObject>\n  <polyline points=\"64,300 109.5,93.5 245.5,93.5 336,300\" fill=\"none\" stroke=\"#1971c2\" stroke-width=\"3.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n  <circle cx=\"64\" cy=\"300\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"109.5\" cy=\"93.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"245.5\" cy=\"93.5\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n  <circle cx=\"336\" cy=\"300\" r=\"6.5\" fill=\"#1971c2\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n</svg>",
    "question": {
     "type": "numeric",
     "prompt": "Kuinka pitkä on pysäkkien välinen matka? Vastaa metreinä.",
@@ -212,17 +212,17 @@
    "prompt": "Pyöräilijä nousee $10\\,\\text{km}$ ylämäkeä nopeudella $20\\,\\text{km/h}$ ja laskee saman matkan takaisin alas nopeudella $60\\,\\text{km/h}$. Opiskelija laski keskivauhdin: ”$(20\\,\\text{km/h} + 60\\,\\text{km/h}) : 2 = 40\\,\\text{km/h}$.” Mikä ratkaisussa on väärin?",
    "choices": [
     {
-     "text": "Ei mikään: nopeuksien keskiarvo on oikea tapa laskea keskivauhti.",
-     "feedback": "Nopeuksien keskiarvo kelpaisi vain, jos kumpaakin nopeutta ajettaisiin yhtä *kauan*. Ylämäkeen kuluu kolme kertaa enemmän aikaa kuin alamäkeen."
-    },
-    {
-     "text": "Keskinopeus on nolla, koska pyöräilijä palaa lähtöpaikkaansa.",
-     "feedback": "Keskinopeus eli siirtymä jaettuna ajalla on tässä nolla, mutta kysymys koskee keskivauhtia, joka lasketaan kuljetusta matkasta: $20\\,\\text{km} : \\tfrac{2}{3}\\,\\text{h} = 30\\,\\text{km/h}$."
-    },
-    {
      "text": "Keskivauhti on matka jaettuna ajalla: $20\\,\\text{km} : \\tfrac{2}{3}\\,\\text{h} = 30\\,\\text{km/h}$.",
      "correct": true,
      "feedback": "Oikein. Ylämäki kestää $10\\,\\text{km} : 20\\,\\text{km/h} = 0{,}50\\,\\text{h}$ ja alamäki $10\\,\\text{km} : 60\\,\\text{km/h} \\approx 0{,}17\\,\\text{h}$, yhteensä $\\tfrac{2}{3}\\,\\text{h}$. Hitaampaa nopeutta ajetaan pidempään, joten se painaa enemmän."
+    },
+    {
+     "text": "Ei mikään: nopeuksien keskiarvo on oikea tapa laskea keskivauhti myös edestakaisella matkalla.",
+     "feedback": "Nopeuksien keskiarvo kelpaisi vain, jos kumpaakin nopeutta ajettaisiin yhtä *kauan*. Ylämäkeen kuluu kolme kertaa enemmän aikaa kuin alamäkeen."
+    },
+    {
+     "text": "Keskinopeus on nolla, koska pyöräilijä palaa lopuksi takaisin samaan lähtöpaikkaansa.",
+     "feedback": "Keskinopeus eli siirtymä jaettuna ajalla on tässä nolla, mutta kysymys koskee keskivauhtia, joka lasketaan kuljetusta matkasta: $20\\,\\text{km} : \\tfrac{2}{3}\\,\\text{h} = 30\\,\\text{km/h}$."
     }
    ]
   },
@@ -426,17 +426,17 @@
    "prompt": "Kaksi kärryä liikkuu samalla radalla. Niiden $(t,x)$-kuvaajat leikkaavat hetkellä $3{,}0\\,\\text{s}$. Mikä väite on oikein?",
    "choices": [
     {
-     "text": "Kärryt ovat hetkellä $3{,}0\\,\\text{s}$ samassa paikassa.",
-     "correct": true,
-     "feedback": "Oikein. Kuvaajassa ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Kohtaamishetkellä kappaleiden kuvaajat leikkaavat toisensa: paikat ovat yhtä suuret."
-    },
-    {
      "text": "Kärryillä on hetkellä $3{,}0\\,\\text{s}$ sama nopeus.",
      "feedback": "Nopeus on $(t,x)$-kuvaajan kulmakerroin. Leikkauspisteessä viivat ovat yleensä eri jyrkkiä, joten nopeudet ovat erisuuret. Samat ovat paikat. Kertaa luvussa *Kahden kappaleen liikkeiden vertailu*."
     },
     {
-     "text": "Kärryt törmäävät, koska niiden radat leikkaavat.",
+     "text": "Kärryt törmäävät toisiinsa, koska niiden radat leikkaavat.",
      "feedback": "$(t,x)$-kuvaaja ei ole kuva radasta. Leikkauspiste kertoo, että kärryt ovat samassa paikassa samalla hetkellä, eli ne kohtaavat tai ohittavat toisensa. Kertaa luvussa *Paikka, nopeus ja tasainen liike kuvaajina*."
+    },
+    {
+     "text": "Kärryt ovat hetkellä $3{,}0\\,\\text{s}$ samassa kohdassa.",
+     "correct": true,
+     "feedback": "Oikein. Kuvaajassa ylempänä oleva viiva tarkoittaa suurempaa paikkakoordinaattia. Kohtaamishetkellä kappaleiden kuvaajat leikkaavat toisensa: paikat ovat yhtä suuret."
     }
    ],
    "practice": "Kertaa kohtaaminen luvussa [*Kahden kappaleen liikkeiden vertailu*](fy4-12.html) ja $(t,x)$-kuvaajan lukeminen luvussa [*Paikka, nopeus ja tasainen liike kuvaajina*](fy4-1.html)."

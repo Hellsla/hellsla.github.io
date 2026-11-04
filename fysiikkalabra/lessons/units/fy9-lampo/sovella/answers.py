@@ -14,7 +14,7 @@ def fit(x, y):
 out = {}
 
 # s1: freezing the ice of a hockey rink (example data)
-A, d = 1800.0, 0.0300                     # m^2, m (3,00 cm = 3,00 * 0,01 m)
+A, d = 1800.0, 0.0300                     # m^2, m (water layer 3,00 cm = 3,00 * 0,01 m)
 m1 = 1000.0 * A * d                       # kg: rho V
 Q_cool = c_w * m1 * (15.0 - 0.0)          # water 15,0 -> 0 °C
 Q_freeze = s_i * m1                       # freezing at 0 °C

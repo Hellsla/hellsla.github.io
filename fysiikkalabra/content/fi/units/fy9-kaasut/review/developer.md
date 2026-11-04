@@ -48,3 +48,30 @@ VERDICT: DONE
 - There is no assets/units/fy9/units.css. At 1280 the solution figures fill the whole column (about 570 px) and the content column sits left with empty space on the right.
 - build.py <id> also rewrites preview/index.html and the module pages (preview/en, preview/fi-easy), not only preview/<id>.html.
 - In this run the mixer.py crash reported earlier for fy9-energia did not occur.
+
+## Round 1 fixes
+
+### Science
+- **1 (Blocking), S3 d letku.** I chose fix (a). The task now says that the group adds the tube's 1,5 ml to every syringe reading because the tube's air belongs to the enclosed air. Criterion 1 and the solution say "sama lisä", and that the slope does not change (no "lähes" or "ei juuri"). The Periaate says that only the bath air follows $V \propto T$. The remedy in criterion 3 and in the Mallivastaus is now "keep all the air in the bath, or leave the tube's constant volume out of the total". θ₀ ≈ −290 °C and the 11 K shift stand.
+- 2 luukku: now "noin yhden ison henkilöauton painoa".
+- 3 pallo: Vastaus is now ≈ 830 kg with two significant figures, justified by 100 kPa, 2800 m³ and 10 °C. The tolerance is unchanged.
+- 4 s1 c adiabatic note: kept at the qualitative level, as advised. No change.
+
+### Pedagogy
+- 1 s1 b: changed to "Perustele tulos laskemalla se kahdella eri tavalla."
+- 2 and 3 theory: added $\Delta U = Q - W_\text{k}$ (display, symbols named) and one sentence on the temperature difference $T_1 - T_2$ relative to $T_1$, in the wording of fy3-11. The theory is now about 600 words.
+- 4 s6 pad: the pad is now drawn grey and labelled "laikka" in s6-vaaka and s6-pysty, and the alt texts mention it. I added no `fbd: draw` marker, because README defines it for exercises, not for long tasks.
+- 5 option lengths: in celsius the correct option is now the middle length (72/68/59). In mittari it is now the shortest (63/62/56).
+- 6 hint 3 of luukku, pallo and aineisto now sets up the step without the final substitution. pumppu, manta and tarkistus-2 are unchanged.
+- 7 Tutki: removed the sentence "Mallivastauksessa verrataan …".
+- 8 teacher.md: the Sovella row gives about 14 min for the four calculations (3–4 min each), and unfinished ones go home.
+
+### Visual
+- 1 kone heat colour: not changed. HEAT is figlib's shared heat colour, and the figure has no acceleration in it.
+- 2 rengas: the bar-end values now read "331 kPa" and "286 kPa".
+- 3 s6 pad: see Pedagogy 4.
+- 4 s3-graph: added a break mark (two slashes) at the bottom of the V axis.
+- 5 kartta: capped at max-width min(100 %, 440 px). At 1280 it is now 440 × 682 px instead of about 950 px tall, and at 390 it is unchanged.
+
+### Checks rerun
+practice.py figures and check (6 tasks, 95 p) · units.py figures and check (38 units ok) · build.py fy9-kaasut · check_layout at 360 and 1280: OK. Playwright at 390 and 1280 with every details element opened: no console errors, no .katex-error, no raw $. I looked at screenshots of kartta, rengas, kone, s3-graph, s6-vaaka and s6-pysty.

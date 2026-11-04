@@ -1,7 +1,7 @@
 [
  {
-  "q": "Kävelijä lähtee liikkeelle vaakasuoralla tiellä. Mihin suuntaan tie vaikuttaa kävelijän jalkaan kitkavoimalla, ja miksi?",
-  "a": "Eteenpäin. Jalka työntää tietä taaksepäin, ja kolmannen lain mukaan tie työntää jalkaa eteenpäin. Tämä tien lepokitka on ainoa vaakasuora ulkoinen voima, joka voi kiihdyttää kävelijää eteenpäin; jäällä se on pieni, ja liikkeelle lähteminen on vaikeaa."
+  "q": "Kirja on levossa pöydällä. Mikä voima on kirjan painon vastavoima Newtonin kolmannen lain mukaan? Onko se pöydän tukivoima?",
+  "a": "Painon vastavoima on voima, jolla kirja vetää Maata ylöspäin: paino on Maan ja kirjan vuorovaikutus, joten vastavoima vaikuttaa Maahan. Pöydän tukivoima ei ole vastavoima, vaikka se on yhtä suuri ja vastakkainen: se vaikuttaa samaan kappaleeseen, kirjaan, ja on yhtä suuri vain siksi, että kirja on levossa (ensimmäinen laki). Tukivoiman vastavoima on kirjan voima pöytään alaspäin."
  },
  {
   "q": "Laatikko ($10{,}0\\,\\text{kg}$) on levossa rinteellä, jonka kaltevuuskulma on $30^\\circ$. Kuinka suuri on rinteen tukivoima?",

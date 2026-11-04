@@ -1,6 +1,6 @@
 # Lämpö ja olomuodon muutokset
 
-> **Miksi** lumen sulattaminen juomavedeksi nuotiolla vie lähes yhtä paljon energiaa kuin saman veden kuumentaminen kiehuvaksi, vaikka lumi on vain vähän pakkasen puolella?
+> **Miksi** lumen sulattaminen juomavedeksi nuotiolla kestää niin kauan, vaikka lumi on vain vähän pakkasen puolella? Kumpi vie enemmän energiaa: sulattaminen vai sulamisveden kuumentaminen kiehuvaksi?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: aurinkoinen talvipäivä Lapissa. Vasemmalla hirsinen laavu, jonka katolla on lunta. Laavun edessä palaa nuotio kivien keskellä, ja sen päällä riippuu kolmijalasta noessa musta pannu, joka on täynnä lunta. Pannusta nousee höyryä. Nuotion vieressä on sanko lunta. Taustalla on lumisia tuntureita ja kuusia." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy9la-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy9la-snow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e6eff5"/></linearGradient><linearGradient id="fy9la-log0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy9la-log1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy9la-log2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy9la-log3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy9la-log4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy9la-log5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy9la-log6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy9la-bench" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy9la-flame" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy9la-bucket" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient></defs>
@@ -160,7 +160,7 @@ Kokeessa seuraa ensin energiaa: mistä se lähtee, mihin se menee ja muuttuuko o
 T = \theta + 273{,}15
 ```
 
-missä $T$ on lämpötila kelvineinä (K) ja $\theta$ celsiusasteina (°C). Lämpötilaero on sama kelvineinä ja celsiusasteina, mutta lämpötilojen suhteet lasketaan kelvineinä. Sisäenergiaa muuttavat lämpö ja työ:
+missä $T$ on lämpötila kelvineinä ($\text{K}$) ja $\theta$ celsiusasteina (${}^\circ\text{C}$). Lämpötilaero on sama kelvineinä ja celsiusasteina, mutta lämpötilojen suhteet lasketaan kelvineinä. Sisäenergiaa muuttavat lämpö ja työ:
 
 ```latex
 \Delta U = Q + W
@@ -174,13 +174,13 @@ missä $\Delta U$ on sisäenergian muutos, $Q$ systeemiin siirtynyt lämpömää
 Q = cm\Delta T
 ```
 
-missä $c$ on ominaislämpökapasiteetti ($\text{J/(kg}\cdot\text{K)}$), $m$ massa (kg) ja $\Delta T$ lämpötilan muutos (K). Kaava pätee vain, kun olomuoto ei muutu. Sulamisessa ja höyrystymisessä
+missä $c$ on ominaislämpökapasiteetti ($\text{J/(kg}\cdot\text{K)}$), $m$ massa ($\text{kg}$) ja $\Delta T$ lämpötilan muutos ($\text{K}$). Kaava pätee vain, kun olomuoto ei muutu. Sulamisessa ja höyrystymisessä
 
 ```latex
 Q = sm \qquad Q = rm
 ```
 
-missä $s$ on ominaissulamislämpö ja $r$ ominaishöyrystymislämpö ($\text{J/kg}$). Puhtaan aineen lämpötila pysyy muutoksen ajan vakiona, koska energia kasvattaa hiukkasten vuorovaikutusenergiaa. Sama energia vapautuu jähmettymisessä ja tiivistymisessä. Vedelle $c = 4190\,\text{J/(kg}\cdot\text{K)}$, jäälle $c = 2100\,\text{J/(kg}\cdot\text{K)}$, $s = 334\,\text{kJ/kg}$ ja $r = 2260\,\text{kJ/kg}$.
+missä $s$ on ominaissulamislämpö ja $r$ ominaishöyrystymislämpö ($\text{J/kg}$). Puhtaan aineen lämpötila pysyy vakiopaineessa muutoksen ajan vakiona, koska energia kasvattaa hiukkasten vuorovaikutusenergiaa. Sama energia vapautuu jähmettymisessä ja tiivistymisessä. Vedelle $c = 4190\,\text{J/(kg}\cdot\text{K)}$, jäälle $c = 2100\,\text{J/(kg}\cdot\text{K)}$, $s = 334\,\text{kJ/kg}$ ja $r = 2260\,\text{kJ/kg}$.
 
 Tästä saadaan vastaus alun kysymykseen. Kilogramman lumen lämmittäminen $-10\,{}^\circ\text{C}$:sta $0\,{}^\circ\text{C}$:seen vie vain $21\,\text{kJ}$, mutta sen sulattaminen $334\,\text{kJ}$, melkein yhtä paljon kuin sulamisveden kuumentaminen kiehuvaksi, $419\,\text{kJ}$.
 
@@ -269,7 +269,7 @@ Kun jäätä ja vettä sekoitetaan, verrataan ensin, riittääkö lämpö, jonka
 \Delta L = \alpha L_0 \Delta T \qquad \Delta V = \gamma V_0 \Delta T
 ```
 
-missä $\alpha$ ja $\gamma$ ovat pituuden ja tilavuuden lämpötilakertoimet (1/K) ja $L_0$ ja $V_0$ alkuperäinen pituus ja tilavuus. Kaavat pätevät, kun lämpötilan muutos on kohtuullinen. Vesi on poikkeus: sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa.
+missä $\alpha$ ja $\gamma$ ovat pituuden ja tilavuuden lämpötilakertoimet ($1/\text{K}$) ja $L_0$ ja $V_0$ alkuperäinen pituus ja tilavuus. Kaavat pätevät kiinteille aineille noin $100\,\text{K}$:n lämpötilan muutokseen asti, ja nesteen $\gamma$ on käyttökelpoinen vain taulukon lämpötilan lähellä. Vesi on poikkeus: sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa.
 
 Lämpö siirtyy johtumalla, konvektiona ja säteilynä, nettomääräisesti lämpimämmästä kappaleesta kylmempään. Rakennusosan läpi johtuva teho on
 
@@ -277,7 +277,7 @@ Lämpö siirtyy johtumalla, konvektiona ja säteilynä, nettomääräisesti läm
 P = UA\Delta T
 ```
 
-missä $U$ on U-arvo ($\text{W/(m}^2\cdot\text{K)}$), $A$ pinta-ala ($\text{m}^2$) ja $\Delta T$ sisä- ja ulkolämpötilan ero (K). Kaava pätee, kun lämpötilat pysyvät vakioina.
+missä $U$ on U-arvo ($\text{W/(m}^2\cdot\text{K)}$), $A$ pinta-ala ($\text{m}^2$) ja $\Delta T$ sisä- ja ulkolämpötilan ero ($\text{K}$). Kaava pätee, kun lämpötilat pysyvät vakioina.
 
 ## Yleisiä virheitä {Virheet}
 

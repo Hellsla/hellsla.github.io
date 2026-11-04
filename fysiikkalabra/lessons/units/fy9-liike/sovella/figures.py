@@ -25,7 +25,7 @@ def train_graph():
             "Kolmen ensimmäisen pisteen kohdalla on vaakasuora suora tasolla 90 km/h. Muihin pisteisiin on sovitettu laskeva suora, joka "
             "leikkaa vaakasuoran suoran noin hetkellä 10 s ja jota on jatkettu katkoviivana aika-akselille noin hetkeen 48,5 s. Suoran "
             "pisteet (12 s; 85 km/h) ja (40 s; 20 km/h) on ympyröity, ja niistä luetaan kulmakerroin noin −2,3 km/h sekunnissa. Laskevan "
-            "suoran ja aika-akselin väliin jäävä kolmio on väritetty vihreäksi: sen pinta-ala on jarrutusmatka.", width=440, size=22)
+            "suoran ja aika-akselin väliin jäävä kolmio on väritetty vihreäksi: sen pinta-ala on jarrutusmatka.", width=440, size=24)
     ax = Axes(f, (64, 356), (336, 52), x=(0, 56), y=(0, 100), xticks=list(range(4, 57, 4)), yticks=list(range(10, 101, 10)),
               xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{km/h})", xfmt=lambda v: fi(v) if v % 8 == 0 else "",
               yfmt=lambda v: fi(v) if v % 20 == 0 else "")
@@ -38,8 +38,8 @@ def train_graph():
         f.circle(ax.X(a), ax.Y(v), 11, "none", INK, 1.5)
     f.line(ax.X(t0), ax.Y(c), ax.X(t0), ax.y0, MUTED, 1.5, "6 5")
     f.tex(ax.X(t0) + 6, ax.Y(8), r"10\,\text{s}", "start", MUTED)
-    f.tex(ax.X(t1) + 6, ax.Y(9), r"48{,}5\,\text{s}", "start", HEAT)
-    f.tex(ax.X(24), ax.Y(94), r"k \approx -2{,}3\,\tfrac{\text{km/h}}{\text{s}}", "start")
+    f.tex(ax.X(t1) + 6, ax.Y(15), r"48{,}5\,\text{s}", "start", MUTED)
+    f.tex(ax.X(27), ax.Y(76), r"k \approx -2{,}3\,\tfrac{\text{km/h}}{\text{s}}", "start")
     f.tex(ax.X(21), ax.Y(22), r"\text{jarrutusmatka}", "middle", GOOD)
     return f.svg()
 

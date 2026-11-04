@@ -50,7 +50,7 @@
      "id": "b",
      "kind": "calc",
      "points": 5,
-     "text": "Kuinka suuren työn nostin tekee autoon ja lavaan? Näytä, että sama tulos saadaan sylinterin ylipaineesta ja ilman tilavuuden muutoksesta. Selitä, miksi sylinterin ilma tekee silti enemmän työtä.",
+     "text": "Kuinka suuren työn nostin tekee autoon ja lavaan? Perustele tulos laskemalla se kahdella eri tavalla. Selitä, miksi sylinterin ilma tekee silti enemmän työtä.",
      "answer": {
       "value": 21.19,
       "unit": "kJ",
@@ -342,10 +342,10 @@
      "id": "d",
      "kind": "word",
      "points": 5,
-     "text": "Toinen ryhmä teki saman mittauksen, mutta heidän ruiskunsa kärkeen oli liitetty letku, jossa oli $1{,}5\\,\\text{ml}$ ilmaa ja joka jäi hauteen ulkopuolelle huoneenlämpöön. Miten tämä muuttaa heidän suoraansa ja nollapisteen arviota? Arvioi, voiko virheen poistaa toistamalla mittauksia.",
+     "text": "Toinen ryhmä teki saman mittauksen, mutta heidän ruiskunsa kärkeen oli liitetty letku, jossa oli $1{,}5\\,\\text{ml}$ ilmaa ja joka jäi hauteen ulkopuolelle huoneenlämpöön. Koska letkun ilma kuuluu suljettuun ilmamäärään, ryhmä lisäsi letkun $1{,}5\\,\\text{ml}$ jokaiseen ruiskun asteikolta luettuun tilavuuteen. Miten tämä muuttaa heidän suoraansa ja nollapisteen arviota? Arvioi, voiko virheen poistaa toistamalla mittauksia.",
      "criteria": [
       {
-       "text": "Selittää, että letkun ilma ei lämpene, joten se lisää jokaiseen lukemaan lähes saman $1{,}5\\,\\text{ml}$: suora siirtyy ylöspäin, mutta sen kulmakerroin ei juuri muutu.",
+       "text": "Selittää, että letkun ilma ei lämpene, joten sen tilavuus pysyy vakiona ja jokaiseen kokonaistilavuuteen tulee sama lisä $1{,}5\\,\\text{ml}$: suora siirtyy ylöspäin, mutta sen kulmakerroin ei muutu.",
        "tag": "experiment",
        "points": 2
       },
@@ -357,7 +357,7 @@
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Virhe on systemaattinen, joten toistot eivät poista sitä; koko ilmamäärä on pidettävä hauteessa tai letkun tilavuus vähennettävä lukemista."
+       "detail": "Virhe on systemaattinen, joten toistot eivät poista sitä; koko ilmamäärä on pidettävä hauteessa, tai letkun vakiotilavuus jätetään pois kokonaistilavuudesta, jolloin ruiskun ilma noudattaa yksinään lakia $V \\propto T$."
       }
      ]
     }

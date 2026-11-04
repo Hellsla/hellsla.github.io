@@ -123,7 +123,8 @@ def kartta():
             yy = y + 66 + j * 34
             f.tex(x_box + 14, yy, law, "start", INK)
             f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=17)
-    return f.svg()
+    # a tall, narrow map: cap its width so that it does not fill a wide screen (labels stay about 24 px)
+    return f.svg().replace("max-width:100%", "max-width:min(100%,440px)", 1)
 
 
 def rengas():
@@ -146,7 +147,7 @@ def rengas():
         f.rect(X(P0), y, s * gauge, 46, light, INK, 2)
         f.tex(X(P0 / 2), y + 23, r"p_0", "middle", INK)
         f.tex(X(P0 + gauge / 2), y + 23, fr"\Delta p = {fi(round(gauge))}", "middle", INK)
-        f.tex(X(total) + 8, y + 23, fi(round(total)), "start", INK)
+        f.tex(X(total) + 8, y + 23, fi(round(total)) + r"\,\text{kPa}", "start", INK)
     f.arrow(x0 - 1, ybase, 404, ybase, INK, 2.5, 13)
     f.line(x0, ybase + 1, x0, 40, INK, 2.5)
     for t in (100, 200, 300):

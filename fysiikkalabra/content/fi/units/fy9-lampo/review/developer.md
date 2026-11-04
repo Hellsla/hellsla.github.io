@@ -70,3 +70,39 @@ Content hash at hand-over: c908c7c1c4a5b48e (`python3 scripts/units.py hash fy9-
 ## Shared issues
 1. Developers working in parallel share one scratchpad, and another unit's developer overwrote my `gen_inquiry.py`. My files now live under `scratchpad/fy9-lampo/`.
 2. No `assets/units/fy9/units.css` was found; fy9-energia reported the same. This time `build.py` did not crash in mixer.py.
+
+## Round 1 fixes
+
+### Science
+1. Blocking, s5 b mug sign: fixed. solutions.md Vastaus now says that the group's formula would also credit heat taken by the mug to the ice, but that the gap of $1890\,\text{J}$ would need about $70\,\text{J/K}$, while a styrofoam mug has a few J/K, and the corrected value already matches the table. The wrong mistake line is replaced with "the mug is accepted without estimating its heat capacity". The rubric `conclusion` detail in tasks.json now says the same.
+2. Blocking, s1 ice thickness with water density: fixed by stating the water layer. tasks.json now reads "ruiskutetaan vettä … yhteensä 3,00 cm:n kerros". solutions.md Annettu says "vesikerroksen paksuus" and the Vastaus line says "kerroksen paksuus". All numbers stay the same, and the answers.py comment is updated.
+3. Blocking, phase change "vakiopaineessa": added in unit.md.
+4. Polish, validity of the expansion formulas: unit.md now says "kiinteille aineille noin 100 K:n muutokseen asti, nesteen γ vain taulukon lämpötilan lähellä".
+5. Polish, exit-ticket item 2: added that wood shortens much less than steel along the grain.
+6. Polish, s3 d: "12 %" changed to "13 %".
+7. Polish, s5 c: weighing by difference is now tied to ice that melts or drops while it is handled (model answer and rubric criterion).
+
+### Pedagogy
+1. Blocking: same fix as Science 1.
+2. Polish, aineisto: the solution now says the start point is read between gridlines (±1 °C). Tolerance raised from 0,03 to 0,07, so readings of −15 and −17 are accepted.
+3. Polish, Miksi quote: rewritten as a question (which takes more energy, melting or heating to boiling). It no longer gives the answer.
+4. Polish, s6 d: "pumppaustyö" removed from the model answer, the Periaate and the rubric. Now only engine friction turns the energy into internal energy and the cooling system releases it.
+5. Polish, units in plain parentheses: all of "(K)", "(kg)", "(°C)", "(1/K)" in unit.md are now LaTeX.
+
+### Visual (PASS)
+1. melting-curve label size: shared catalog figure (fy3-7), not changed. See Shared issues.
+2. Flat sub-heading hierarchy: this comes from the shared template CSS, not the unit. See Shared issues.
+3. Plain units: fixed (Pedagogy 5).
+4. Desktop column: house layout, no change.
+5. kayra labels at 14 px: these meet the brief's minimum of 14 px at 390 px, so not changed.
+
+### Shared issues (added)
+- `fy3-7/melting-curve` renders labels at about 13 px at 390 px. It needs a larger-label variant or the full card width.
+- Template: `###` under a `## Kaava:` section should look visibly smaller than `##`.
+
+### Checks rerun
+- practice.py figures/check: OK (6 tasks, 95 points).
+- units.py figures/check: 38 units ok.
+- build.py fy9-lampo: built.
+- check_layout: OK at 360 and 1280.
+- Playwright at 390 and 1280, with all details open and every task answered: no console errors, no raw `$`, no .katex-error, no horizontal overflow.

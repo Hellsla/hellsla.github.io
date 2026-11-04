@@ -282,7 +282,7 @@ v oikea
 ### d)
 **Kysytty:** suurin tien antama kiihtyvyys asfaltilla ja jäällä sekä miksi etuvetoisella autolla se on pienempi
 **Periaate:** Kiihdyttävä voima on tien lepokitka, joka on enintään $\mu_0 N$. Jos kaikki pyörät vetävät, tukivoima on koko auton paino, $N = mg$.
-**Mallivastaus:** Suurin kiihdyttävä voima on $\mu_0 mg$, joten $ma_\text{max} = \mu_0 mg$ ja $a_\text{max} = \mu_0 g$; massa supistuu. Asfaltilla $a_\text{max} \approx 0{,}8 \cdot 9{,}81\,\text{m/s}^2 \approx 8\,\text{m/s}^2$ ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun vastukset jätetään huomiotta. Etuvetoisessa autossa kitka vaikuttaa vain etupyöriin, ja niiden tukivoima on vain osa auton painosta, esimerkiksi noin puolet. Silloin suurin kiihdyttävä voima on $\mu_0 N_\text{etu} < \mu_0 mg$, ja suurin kiihtyvyys on pienempi. Jäällä etuvetoinen auto voi siis kiihtyä enintään alle $1\,\text{m/s}^2$.
+**Mallivastaus:** Suurin kiihdyttävä voima on $\mu_0 mg$, joten $ma_\text{max} = \mu_0 mg$ ja $a_\text{max} = \mu_0 g$; massa supistuu. Asfaltilla $a_\text{max} \approx 0{,}8 \cdot 9{,}81\,\text{m/s}^2 \approx 8\,\text{m/s}^2$ ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun vastukset jätetään huomiotta. Etuvetoisessa autossa eteenpäin vievä lepokitka vaikuttaa vain vetäviin etupyöriin, ja niiden tukivoima on vain osa auton painosta, esimerkiksi noin puolet. Silloin suurin kiihdyttävä voima on $\mu_0 N_\text{etu} < \mu_0 mg$, ja suurin kiihtyvyys on pienempi. Jäällä etuvetoinen auto voi siis kiihtyä enintään alle $1\,\text{m/s}^2$.
 
 ### Yleisiä virheitä
 - Kävelijää tai autoa ”työntävät” lihakset tai moottori, eli sisäinen voima esitetään ulkoisena.
@@ -295,11 +295,11 @@ v oikea
 ### a)
 **Annettu:** rajakulmat $22^\circ$, $24^\circ$, $21^\circ$, $23^\circ$ ja $33^\circ$; mittauksessa 5 kirjaa nostettiin nykäisten
 **Kysytty:** lepokitkakerroin $\mu_0$ ja sen epävarmuus
-**Periaate:** Rajakulmalla painon kannen suuntainen komponentti on yhtä suuri kuin lepokitkan suurin arvo, ja tukivoima on painon kohtisuora komponentti (luku *Paino, kitka ja kalteva taso*). Mittaus 5 jätetään pois, koska raporttiin on kirjattu karkea virhe: nykäisy antaa puhelimelle lisäkiihtyvyyden, eikä kulma ole silloin liukumisen raja. Tulosta ei poistettaisi pelkästään siksi, että se poikkeaa muista.
+**Periaate:** Rajakulmalla painon kannen suuntainen komponentti on yhtä suuri kuin lepokitkan suurin arvo, ja tukivoima on painon kohtisuora komponentti (luku *Paino, kitka ja kalteva taso*). Mittaus 5 jätetään pois, koska raporttiin on kirjattu karkea virhe: nopea nosto painaa kantta hetkellisesti puhelinta vasten, jolloin tukivoima ja lepokitkan yläraja kasvavat hetkeksi, ja kulma luetaan myöhässä. Siksi $33^\circ$ ei ole liukumisen raja. Tulosta ei poistettaisi pelkästään siksi, että se poikkeaa muista.
 **Kaava:** $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$, joten $\mu_0 = \tan\alpha_\text{ka}$, missä $\alpha_\text{ka}$ on rajakulmien keskiarvo
 **Muunnokset:** Ei tarvita. Kulmat ovat asteina, ja kertoimella ei ole yksikköä.
 **Sijoitus:** $\alpha_\text{ka} = \dfrac{22^\circ + 24^\circ + 21^\circ + 23^\circ}{4} = 22{,}5^\circ$ ja $\mu_0 = \tan 22{,}5^\circ = 0{,}414$. Hajonnan rajat: $\tan 21^\circ = 0{,}384$ ja $\tan 24^\circ = 0{,}445$
-**Vastaus:** $\mu_0 \approx 0{,}41 \pm 0{,}03$, kaksi merkitsevää numeroa, koska kulmat on luettu asteen tarkkuudella ja niiden hajonta on noin $\pm 1{,}5^\circ$. Epävarmuus on arvioitu hajonnan puolivälistä, mikä on tässä valittu yksinkertainen arvio.
+**Vastaus:** $\mu_0 \approx 0{,}41 \pm 0{,}03$, kaksi merkitsevää numeroa, koska kulmat on luettu asteen tarkkuudella ja niiden hajonta on noin $\pm 1{,}5^\circ$. Epävarmuus on puolet tulosten vaihteluvälistä ($0{,}384\text{–}0{,}445$), mikä on tässä valittu yksinkertainen arvio.
 **Järkevyys:** Silikoni on tunnetusti pitävä materiaali, joten kerroin $0{,}4$ on uskottava. Rajakulma on mittausten mukaan noin $22^\circ$, ja $\tan 22{,}5^\circ \approx 0{,}41$ on johdonmukainen sen kanssa. Raportin arvo $0{,}54$ vastaisi rajakulmaa $28^\circ$, jota yksikään huolellinen mittaus ei antanut.
 
 ### b)
@@ -311,7 +311,7 @@ v oikea
 
 *Menetelmä.* Käsin nostaminen ei ole tasaista, ja kulman lukeminen juuri liukumisen hetkellä on vaikeaa. Videokuvaus on hyvä, mutta kulmamittarin pitäisi olla kiinni kirjassa, ja kirjaa pitäisi nostaa hitaasti ja tasaisesti, esimerkiksi ruuvilla tai kirjapinon avulla.
 
-*Johtopäätös.* Tulos koskee vain tätä kuorta ja tätä kirjan kantta, ei kaikkia pintoja. Lisäksi rajakulma on oikealla kaavalla noin $22^\circ$, ei $33^\circ$: puhelin voi lähteä liukumaan jo $25^\circ$:n kannella.
+*Johtopäätös.* Tulos koskee vain tätä kuorta ja tätä kirjan kantta, ei kaikkia pintoja. Lisäksi rajakulma on oikealla kaavalla noin $22^\circ$, ei $33^\circ$: puhelin lähtee liukumaan jo noin $22^\circ$:n kulmassa.
 
 ### c)
 **Kysytty:** koe, jolla samoille pinnoille määritetään liikekitkakerroin
@@ -357,7 +357,7 @@ komponentit G
 ### b)
 **Annettu:** a-kohdasta $v = 10{,}09\,\text{m/s}$, $\mu = 0{,}080$, loppunopeus $0$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** liukumatka $s_2$ pellolla
-**Periaate:** Vaakasuoralla pellolla tukivoima on painon suuruinen, ja ainoa vaakasuora voima on liikekitka taaksepäin. Hidastuvuus on vakio, joten tasaisesti kiihtyvän liikkeen yhtälöt pätevät.
+**Periaate:** Rinteen ja pellon välinen kohta on loiva, joten pellon alkunopeus on a-kohdan nopeus. Vaakasuoralla pellolla tukivoima on painon suuruinen, ja ainoa vaakasuora voima on liikekitka taaksepäin. Hidastuvuus on vakio, joten tasaisesti kiihtyvän liikkeen yhtälöt pätevät.
 **Voimakuvio:** Laskija suorakulmiona: paino $\overline{G}$ alas, tukivoima $\overline{N}$ ylös ja liikekitka $\overline{F}_\mu$ taaksepäin. Kiihtyvyys osoittaa taaksepäin ja nopeus eteenpäin.
 ```voimakuvio
 pinta 0

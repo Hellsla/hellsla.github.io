@@ -111,23 +111,25 @@ def kartta():
     f = Fig("fy9li-kartta", 600, "Käsitekartta kolmesta kuvaajasta päällekkäin. Ylimpänä paikan kuvaaja, jossa tasaisen liikkeen "
             "suora ja tasaisesti kiihtyvän liikkeen ylöspäin kaartuva käyrä. Keskellä nopeuden kuvaaja, jossa vaakasuora suora ja "
             "nouseva suora. Alimpana kiihtyvyyden kuvaaja, jossa nolla ja vakio. Oikealla nuolet alaspäin: kuvaajan kulmakerroin on "
-            "seuraavan suureen arvo, v = Δx/Δt ja a = Δv/Δt. Vasemmalla nuolet ylöspäin: kuvaajan ja aika-akselin välinen pinta-ala on "
+            "seuraavan suureen arvo, v = Δx/Δt ja a = Δv/Δt. Paikan kuvaajat ovat mustia, nopeuden sinisiä ja kiihtyvyyden oransseja; "
+            "tasainen liike on yhtenäinen ja tasaisesti kiihtyvä katkoviiva. Vasemmalla nuolet ylöspäin: kuvaajan ja aika-akselin välinen pinta-ala on "
             "edellisen suureen muutos, Δx ja Δv.", width=400, size=21)
-    rows = [(r"(t,x)", "paikka", lambda u: 0.75 * u, lambda u: 0.15 * u + 0.85 * u * u),
-            (r"(t,v)", "nopeus", lambda u: 0.55, lambda u: 0.12 + 0.8 * u),
-            (r"(t,a)", "kiihtyvyys", lambda u: 0.0, lambda u: 0.55)]
+    rows = [(r"(t,x)", "paikka", lambda u: 0.75 * u, lambda u: 0.15 * u + 0.85 * u * u, INK),
+            (r"(t,v)", "nopeus", lambda u: 0.55, lambda u: 0.12 + 0.8 * u, COLD),
+            (r"(t,a)", "kiihtyvyys", lambda u: 0.0, lambda u: 0.55, HEAT)]
     bx, bw, bh, gap, top = 92, 216, 136, 52, 14
-    for k, (name, word, flat, accel) in enumerate(rows):
+    for k, (name, word, flat, accel, col) in enumerate(rows):
         y = top + k * (bh + gap)
         f.rect(bx, y, bw, bh, WHITE, MUTED, 2, 10)
         f.tex(bx + 12, y + 20, name, "start", INK)
         f.tex(bx + bw - 12, y + 20, r"\text{" + word + "}", "end", MUTED, size=18)
-        # a small graph: axes, then the two sketches (ink: uniform, blue dashed: uniformly accelerated)
+        # a small graph: axes, then the two sketches in the quantity's colour (solid: uniform, dashed: uniformly
+        # accelerated); position ink, velocity blue, acceleration orange
         ox, oy, w, h = bx + 24, y + bh - 16, bw - 52, bh - 56
         f.line(ox, oy, ox + w + 8, oy, INK, 2); f.line(ox, oy, ox, oy - h - 8, INK, 2)
         pts = lambda fn: " ".join(f"{n(ox + w * i / 20)},{n(oy - h * fn(i / 20))}" for i in range(21))
-        f.add(f'<polyline points="{pts(flat)}" fill="none" stroke="{INK}" stroke-width="3" stroke-linecap="round"/>')
-        f.add(f'<polyline points="{pts(accel)}" fill="none" stroke="{COLD}" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>')
+        f.add(f'<polyline points="{pts(flat)}" fill="none" stroke="{col}" stroke-width="3" stroke-linecap="round"/>')
+        f.add(f'<polyline points="{pts(accel)}" fill="none" stroke="{col}" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>')
         if k < 2:                                                               # the arrows to the next box
             ya, yb = y + bh + 6, y + bh + gap - 6
             f.arrow(bx + bw + 30, ya, bx + bw + 30, yb, INK, 3, 13)
@@ -140,7 +142,7 @@ def kartta():
     f.tex(386, yk + 6, r"\uparrow\ \text{pinta-ala}", "end", GOOD)
     f.line(14, yk + 38, 50, yk + 38, INK, 3)
     f.tex(58, yk + 38, r"\text{tasainen}", "start", MUTED, size=18)
-    f.line(150, yk + 38, 186, yk + 38, COLD, 3, "9 6")
+    f.line(150, yk + 38, 186, yk + 38, INK, 3, "9 6")
     f.tex(194, yk + 38, r"\text{tasaisesti kiihtyvä}", "start", MUTED, size=18)
     return f.svg()
 
@@ -153,8 +155,8 @@ def kuvaajat():
             "kuvaaja: nopeus kasvaa nollasta tasaisesti hetkeen t1, pysyy vakiona hetkeen t2 ja pienenee tasaisesti nollaan hetkellä "
             "t3. Kuvaajan alle jäävä alue on väritetty vihreäksi, ja sen pinta-ala on siirtymä Δx. Ylhäällä paikan kuvaaja: ensin "
             "ylöspäin kaartuva käyrä, sitten nouseva suora ja lopuksi käyrä, joka loivenee vaakasuoraksi. Paikka kasvaa koko "
-            "liikkeen ajan yhteensä Δx. Käyrän pisteeseen P on piirretty tangentti, jonka kulmakerroin on nopeus v_P; sama arvo on "
-            "merkitty alempaan kuvaajaan.", width=440, size=21)
+            "liikkeen ajan yhteensä Δx. Käyrän pisteeseen P on piirretty sininen tangentti, jonka kulmakerroin k on nopeus v_P; sama "
+            "arvo on merkitty alempaan kuvaajaan.", width=440, size=21)
     t1, t2, t3, V = 2.0, 5.0, 7.0, 4.0
     def v(t): return V * t / t1 if t < t1 else V if t < t2 else V * (t3 - t) / (t3 - t2)
     def x(t):
@@ -176,11 +178,11 @@ def kuvaajat():
     bot.line([(0, 0), (t1, V), (t2, V), (t3, 0), (7.8, 0)], COLD, 3.5)
     tp = 1.4                                                                     # the tangent at P
     s = V * tp / t1
-    top.line([(tp - 0.6, x(tp) - s * 0.6), (tp + 1.4, x(tp) + s * 1.4)], HEAT, 2.5, dash="8 6")
-    f.line(top.X(tp), top.Y(x(tp)), top.X(tp), bot.Y(v(tp)), HEAT, 1.5, "3 4")
+    top.line([(tp - 0.35, x(tp) - s * 0.35), (tp + 1.4, x(tp) + s * 1.4)], COLD, 2.5, dash="8 6")   # slope = velocity: blue
+    f.line(top.X(tp), top.Y(x(tp)), top.X(tp), bot.Y(v(tp)), COLD, 1.5, "3 4")
     top.point(tp, x(tp), INK, 7)
     f.tex(top.X(tp) - 12, top.Y(x(tp)) - 4, r"P", "end")
-    f.tex(top.X(2.4), top.Y(X3 * 0.12), r"\text{kulmakerroin } v_\text{P}", "start", HEAT, size=19)
+    f.tex(top.X(2.95), top.Y(X3 * 0.15), r"k = v_\text{P}", "start", COLD)                       # right of the tangent's end, under the curve
     bot.point(tp, v(tp), INK, 7)
     f.tex(bot.X(tp) - 12, bot.Y(v(tp)) - 14, r"v_\text{P}", "end", INK)
     f.tex(bot.X(3.5), bot.Y(V * 0.45), r"\Delta x", "middle", GOOD)

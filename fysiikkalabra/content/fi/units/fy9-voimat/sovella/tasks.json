@@ -535,7 +535,7 @@
        "points": 1
       },
       {
-       "text": "Etuvetoisessa autossa kitka vaikuttaa vain etupyöriin, joiden tukivoima on vain osa painosta, joten $\\mu_0 N_\\text{etu} < \\mu_0 mg$.",
+       "text": "Eteenpäin vievä lepokitka vaikuttaa vain vetäviin etupyöriin, joiden tukivoima on vain osa painosta, joten $\\mu_0 N_\\text{etu} < \\mu_0 mg$.",
        "tag": "transfer",
        "points": 1
       }
@@ -590,7 +590,7 @@
       {
        "key": "uncertainty",
        "points": 1,
-       "detail": "Hajonta $21^\\circ\\text{–}24^\\circ$ vastaa kertoimia $0{,}38\\text{–}0{,}45$, eli $\\mu_0 \\approx 0{,}41 \\pm 0{,}03$."
+       "detail": "Hajonta $21^\\circ\\text{–}24^\\circ$ vastaa kertoimia $0{,}38\\text{–}0{,}45$; epävarmuus on puolet vaihteluvälistä, eli $\\mu_0 \\approx 0{,}41 \\pm 0{,}03$."
       },
       {
        "key": "units_precision",
@@ -667,7 +667,7 @@
     "fy4-2",
     "fy4-14"
    ],
-   "text": "Koulun takana on liukurimäki: $40\\,\\text{m}$ pitkä tasainen rinne, jonka kaltevuuskulma on $12^\\circ$, ja sen alla vaakasuora pelto. Muovisen liukurin ja tamppautuneen lumen välinen liikekitkakerroin on $0{,}080$ sekä rinteessä että pellolla. Laskija lähtee rinteen yläpäästä levosta. Ensimmäisessä mallissa ilmanvastusta ei oteta huomioon.",
+   "text": "Koulun takana on liukurimäki: $40\\,\\text{m}$ pitkä tasainen rinne, jonka kaltevuuskulma on $12^\\circ$, ja sen alla vaakasuora pelto. Rinteen ja pellon välinen kohta on loiva, eikä nopeus muutu siinä. Muovisen liukurin ja tamppautuneen lumen välinen liikekitkakerroin on $0{,}080$ sekä rinteessä että pellolla. Laskija lähtee rinteen yläpäästä levosta. Ensimmäisessä mallissa ilmanvastusta ei oteta huomioon.",
    "parts": [
     {
      "id": "a",

@@ -4,7 +4,7 @@
 - **5–15 min, Ennusta (lähtötasotesti).** Kuusi kysymystä yksin, ilman muistiinpanoja. Opiskelijat kirjoittavat vihkoon väärin menneiden kysymysten numerot.
 - **15–25 min, Tutki.** Kahden astian $(T, p)$-kuvaaja pareittain: toinen lukee pisteen ja sanoo sen ääneen, toinen tekee yksikkömuunnokset. Pura yhdessä: miksi kaasun A suora on jyrkempi ja miksi jatkeet kulkevat origon kautta.
 - **25–35 min, Teoriatiivistelmä.** Käy käsitekartta läpi ja pyydä jokaiseen haaraan yksi esimerkki. Palaa Pohdintaan rengaskuvion avulla: kokonaispaine pienenee $14\,\%$, mittarin lukema $20\,\%$.
-- **35–55 min, Sovella.** Neljä monivalintaa pareittain (noin $6\,\text{min}$), sitten neljä laskua yksin. Nopeat jatkavat ilman vihjeitä, hitaat käyttävät vihjeitä yksi kerrallaan.
+- **35–55 min, Sovella.** Neljä monivalintaa pareittain (noin $6\,\text{min}$), sitten neljä laskua yksin (noin $14\,\text{min}$ eli $3$–$4\,\text{min}$ laskua kohden; kesken jääneet lasketaan kotona). Nopeat jatkavat ilman vihjeitä, hitaat käyttävät vihjeitä yksi kerrallaan.
 - **55–65 min, Tarkista osaamisesi ja exit ticket.** Yksin. Selitystehtävä (kaivon imupumppu) arvioidaan kriteereillä itse.
 - **65–75 min, Tehtävät.** Kymmenessä minuutissa ehtii yhden pitkän tehtävän alun koeolosuhteissa, ilman mallivastausta: suositus *Paineilmanostin* a–b (laskutehtävä) tai *Alipainenostin ja lasilevy* a (moduulit yhdistävä). Tehtävän loppu ja muut viisi tehtävää ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia.
 

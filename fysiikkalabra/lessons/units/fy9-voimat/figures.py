@@ -81,7 +81,7 @@ def kartta():
         ("Newtonin lait", [(r"\Sigma\overline{F} = \overline{0}", "I: lepo tai vakionopeus"), (r"\Sigma\overline{F} = m\overline{a}", "II"),
                            (r"\overline{F}_{AB} = -\overline{F}_{BA}", "III")]),
         ("voimat", [(r"G = mg", "paino"), (r"F_\mu = \mu N", "liikekitka"), (r"F_{\mu 0} \le \mu_0 N", "lepokitka")]),
-        ("erikoistilanteet", [(r"G_x = mg\sin\alpha", "rinne"), (r"\Sigma F = m_i a", "kytketyt"), (r"F_\text{v} = G", "rajanopeus")]),
+        ("erikoistilanteet", [(r"G_x = mg\sin\alpha", "rinne"), (r"\Sigma F_x = m_i a_x", "kytketyt"), (r"F_\text{v} = G", "rajanopeus")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 112, 44, 150, 140
     spine = 24
@@ -139,7 +139,7 @@ def kalteva():
     c = _sled(f, x0, y0, 120, deg)
     down = (-t[0], t[1])                                                         # down the slope, figure coordinates (y down)
     away = (-t[1], -t[0])                                                        # out of the slope, figure coordinates
-    for col, lab, off in ((COLD, r"\overline{v}", 46), (HEAT, r"\overline{a}", 80)):
+    for col, lab, off in ((COLD, r"\overline{v}", 42), (HEAT, r"\overline{a}", 86)):
         sx, sy = c[0] + 34 * t[0] + off * away[0], c[1] - 34 * t[1] + off * away[1]
         ex, ey = sx + 64 * down[0], sy + 64 * down[1]
         f.line(sx, sy, ex - 2 * down[0], ey - 2 * down[1], col, 2.5)

@@ -4,7 +4,7 @@
 - **5–15 min, Ennusta (lähtötasotesti).** Kuusi kysymystä yksin, ilman muistiinpanoja. Opiskelijat kirjoittavat vihkoon väärin menneiden kysymysten numerot.
 - **15–25 min, Tutki.** Raitiovaunun $(t,v)$-kuvaaja pareittain: kumpikin laskee yhden vaiheen matkan, ja pari kokoaa koko matkan ja vaiheiden kiihtyvyydet. Pura yhdessä: miksi pinta-ala on matka ja kulmakerroin kiihtyvyys.
 - **25–35 min, Teoriatiivistelmä.** Käy käsitekartta läpi taululla: piirrä yhden liikkeen $(t,x)$- ja $(t,v)$-kuvaaja allekkain ja näytä kulmakerroin alaspäin ja pinta-ala ylöspäin. Palaa Pohdintaan.
-- **35–55 min, Sovella.** Neljä monivalintaa pareittain (noin $6\,\text{min}$), sitten neljä laskua yksin. Nopeat jatkavat ilman vihjeitä, hitaat käyttävät vihjeitä yksi kerrallaan.
+- **35–55 min, Sovella.** Neljä monivalintaa pareittain (noin $6\,\text{min}$), sitten neljä laskua yksin. Jos aika ei riitä, *Hirvi tiellä* ja *Koira ja juoksija* (noin $5\,\text{min}$ kumpikin) jäävät kotitehtäviksi. Nopeat jatkavat ilman vihjeitä, hitaat käyttävät vihjeitä yksi kerrallaan.
 - **55–63 min, Tarkista osaamisesi ja exit ticket.** Yksin. Selitystehtävä arvioidaan kriteereillä itse.
 - **63–75 min, Tehtävät.** Kahdessatoista minuutissa ehtii yhden pitkän tehtävän alun koeolosuhteissa, ilman mallivastausta: suositus *Kiihdytyskaista* a–b (laskutehtävä) tai *Lähijuna saapuu asemalle* a-kohta (kuvaaja ruutupaperille). Tehtävän loppu ja muut tehtävät ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia.
 
@@ -23,7 +23,7 @@ Jos yli kolmannes ryhmästä vastaa väärin kysymyksiin 4 tai 5, käy etumerkit
 - Pitkässä tehtävässä *Keskinopeusvalvonta* (sanallinen) parit voivat kirjoittaa a-kohdan yhdessä ja arvioida sen toisen parin kanssa pisteytyksellä.
 
 ## Nopeat ja hitaat
-- **Nopeat** tekevät Sovella-laskut ilman vihjeitä ja siirtyvät pitkään tehtävään *Kaksi palloa aulassa*, jonka c-kohta vaatii oivalluksen. Lisäkysymys: millä korkeudella pallot ohittaisivat toisensa Kuussa ($g = 1{,}62\,\text{m/s}^2$)? (Ohitushetki on sama $0{,}63\,\text{s}$, korkeus noin $8{,}7\,\text{m}$.)
+- **Nopeat** tekevät Sovella-laskut ilman vihjeitä ja siirtyvät pitkään tehtävään *Kaksi palloa aulassa*, jonka c-kohta vaatii oivalluksen. Lisäkysymys: piirrä molempien pallojen nopeudet samaan $(t,v)$-kuvaajaan ja näytä, että viivojen väliin jäävä pinta-ala ohitushetkeen asti on pallojen alkuetäisyys. (Kuvaajat ovat yhdensuuntaiset, joten ala on suunnikas, jonka korkeus on nopeuksien ero.)
 - **Hitaat** tekevät Sovella-osasta laskut *Potkulauta* ja *Pesäpallon syöttö* vihjeiden kanssa ja jättävät *Koira ja juoksija* kotiin. Teoriatiivistelmän *Kertaa tarvittaessa* -linkit vievät suoraan alkuperäisiin lukuihin, joissa on perustason harjoituksia.
 
 ## Arviointi

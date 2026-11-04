@@ -111,10 +111,10 @@
      "id": "d",
      "kind": "word",
      "points": 3,
-     "text": "Toinen kuljettaja kiihdyttää samalla kaistalla vain nopeuteen $72\\,\\text{km/h}$. Selitä kuvaajien avulla, miksi rekka silloin saavuttaa hänet, ja miksi kiihdytyskaistalla kannattaa kiihdyttää liikenteen nopeuteen.",
+     "text": "Toinen kuljettaja kiihdyttää samalla kaistalla tasaisesti koko kaistan matkan, mutta vain nopeuteen $72\\,\\text{km/h}$. Selitä kuvaajien avulla, miksi rekka silloin saavuttaa hänet, ja miksi kiihdytyskaistalla kannattaa kiihdyttää liikenteen nopeuteen.",
      "criteria": [
       {
-       "text": "Selittää, että auto on koko kaistan ajan rekkaa hitaampi ($72\\,\\text{km/h} < 81\\,\\text{km/h}$), joten $(t,v)$-kuvaajassa rekan suorakulmion ala kasvaa auton alaa nopeammin ja rekan etumatkan vaje pienenee koko ajan.",
+       "text": "Selittää, että auto on koko kaistan ajan rekkaa hitaampi ($72\\,\\text{km/h} < 81\\,\\text{km/h}$), joten $(t,v)$-kuvaajassa rekan suorakulmion ala kasvaa auton alaa nopeammin, ja perustelee määrällisesti: kiihdytys kestää noin $15{,}4\\,\\text{s}$, auton keskinopeus on $17{,}5\\,\\text{m/s}$, joten rekka kulkee keskimäärin noin $5\\,\\text{m/s}$ nopeammin ja kuroo noin $77\\,\\text{m}$ eli enemmän kuin $40\\,\\text{m}$:n eron.",
        "tag": "concept",
        "points": 2
       },
@@ -136,7 +136,7 @@
    "id": "fy9-liike-s2",
    "title": "Kaksi palloa aulassa",
    "source": "example",
-   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä. Ilmanvastus jätetään huomiotta, mikä sopii raskaalle pallolle näin lyhyillä matkoilla.",
+   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä. Ilmanvastus jätetään huomiotta.",
    "skills": [
     "fy4-2",
     "fy4-12",
@@ -285,7 +285,7 @@
    "id": "fy9-liike-s3",
    "title": "Lähijuna saapuu asemalle",
    "source": "example",
-   "source_note": "Aineisto on keksitty esimerkki: luvut on laskettu mallista, jossa juna kulkee aluksi nopeudella $90\\,\\text{km/h}$ ja jarruttaa sitten tasaisesti, ja niihin on lisätty puhelimen paikannuksen kaltaista vaihtelua.",
+   "source_note": "Aineisto on keksitty esimerkki, johon on lisätty puhelimen paikannuksen kaltaista vaihtelua.",
    "skills": [
     "fy1-4",
     "fy4-2",
@@ -434,7 +434,7 @@
     "fy4-2",
     "fy1-3"
    ],
-   "text": "Kunta harkitsee keskinopeusvalvontaa $3{,}0\\,\\text{km}$:n tieosuudelle, jolla nopeusrajoitus on $80\\,\\text{km/h}$. Osuuden alussa ja lopussa on kamera, joka kirjaa ajoneuvon ohitushetken. Järjestelmä laskee ajoneuvon keskinopeuden osuudella ja ilmoittaa ylityksestä, jos keskinopeus on yli $80\\,\\text{km/h}$. Kunnanvaltuuston keskustelussa esitettiin kolme kannanottoa:\n\n1. ”Valvonta on epäreilua: keskinopeus ei todista, että kukaan olisi ajanut ylinopeutta yhdessäkään kohdassa.”\n2. ”Ajoin osuudesta $2{,}0\\,\\text{km}$ nopeudella $100\\,\\text{km/h}$ ja loput $1{,}0\\,\\text{km}$ nopeudella $60\\,\\text{km/h}$, joten keskinopeuteni oli $80\\,\\text{km/h}$.”\n3. ”Kamerat voisi sijoittaa vain $100\\,\\text{m}$:n päähän toisistaan, niin valvontaa olisi helpompi rakentaa.”\n\nKamerat kirjaavat ohitushetken $0{,}5\\,\\text{s}$:n tarkkuudella.",
+   "text": "Kunta harkitsee keskinopeusvalvontaa $3{,}0\\,\\text{km}$:n suoralle tieosuudelle, jolla nopeusrajoitus on $80\\,\\text{km/h}$. Osuuden alussa ja lopussa on kamera, joka kirjaa ajoneuvon ohitushetken. Järjestelmä laskee ajoneuvon keskinopeuden osuudella ja ilmoittaa ylityksestä, jos keskinopeus on yli $80\\,\\text{km/h}$. Kunnanvaltuuston keskustelussa esitettiin kolme kannanottoa:\n\n1. ”Valvonta on epäreilua: keskinopeus ei todista, että kukaan olisi ajanut ylinopeutta yhdessäkään kohdassa.”\n2. ”Ajoin osuudesta $2{,}0\\,\\text{km}$ nopeudella $100\\,\\text{km/h}$ ja loput $1{,}0\\,\\text{km}$ nopeudella $60\\,\\text{km/h}$, joten keskinopeuteni oli $80\\,\\text{km/h}$.”\n3. ”Kamerat voisi sijoittaa vain $100\\,\\text{m}$:n päähän toisistaan, niin valvontaa olisi helpompi rakentaa.”\n\nKamerat kirjaavat ohitushetken $0{,}5\\,\\text{s}$:n tarkkuudella.",
    "parts": [
     {
      "id": "a",
@@ -624,14 +624,14 @@
    "id": "fy9-liike-s6",
    "title": "Pudotus puhelimen videolla",
    "source": "example",
-   "source_note": "Mittaus ja luvut ovat keksittyjä esimerkkejä: pisteet on laskettu tasaisesti kiihtyvästä mallista, jonka kiihtyvyys on pienentynyt mittakaavan virheen verran, ja niihin on lisätty muutaman millimetrin vaihtelua.",
+   "source_note": "Mittaus ja luvut ovat keksittyjä esimerkkejä.",
    "skills": [
     "fy4-2",
     "fy1-4",
     "fy1-3",
     "fy1-6"
    ],
-   "text": "Opiskelija pudotti pallon levosta ja kuvasi putoamisen puhelimella nopeudella $60$ kuvaa sekunnissa. Videoanalyysiohjelmassa hän asetti mittakaavan seinällä olevan metrimitan avulla. Kamera oli $3{,}00\\,\\text{m}$:n päässä seinästä, mutta pallo putosi $0{,}30\\,\\text{m}$ seinän edestä, eli $3{,}30\\,\\text{m}$:n päässä kamerasta. Kauempana oleva kohde näkyy kuvassa pienempänä samassa suhteessa kuin sen etäisyys kamerasta on suurempi.\n\nOhjelma antoi pallon korkeuden $y$ lattiasta $0{,}05\\,\\text{s}$:n välein:\n\n| $t\\ (\\text{s})$ | $y\\ (\\text{m})$ |\n|---|---|\n| $0{,}00$ | $1{,}653$ |\n| $0{,}10$ | $1{,}607$ |\n| $0{,}20$ | $1{,}469$ |\n| $0{,}30$ | $1{,}253$ |\n| $0{,}40$ | $0{,}939$ |\n| $0{,}50$ | $0{,}538$ |\n\nTaulukossa on joka toinen piste. Taulukkolaskentaohjelma sovitti kaikkiin yhteentoista pisteeseen toisen asteen polynomin $y = A\\,t^2 + B\\,t + C$ ja antoi $A = (-4{,}44 \\pm 0{,}05)\\,\\text{m/s}^2$, $B = -0{,}007\\,\\text{m/s}$ ja $C = 1{,}651\\,\\text{m}$.",
+   "text": "Opiskelija pudotti pallon levosta ja kuvasi putoamisen puhelimella nopeudella $60$ kuvaa sekunnissa. Videoanalyysiohjelmassa hän asetti mittakaavan metrimitan avulla. Mitta oli jalustalla $3{,}00\\,\\text{m}$:n päässä kamerasta, ja pallo putosi $0{,}30\\,\\text{m}$ mitan takana, $3{,}30\\,\\text{m}$:n päässä kamerasta.\n\nOhjelma antoi pallon korkeuden $y$ lattiasta joka kolmannesta kuvasta eli $0{,}05\\,\\text{s}$:n välein:\n\n| $t\\ (\\text{s})$ | $y\\ (\\text{m})$ |\n|---|---|\n| $0{,}00$ | $1{,}653$ |\n| $0{,}10$ | $1{,}607$ |\n| $0{,}20$ | $1{,}469$ |\n| $0{,}30$ | $1{,}253$ |\n| $0{,}40$ | $0{,}939$ |\n| $0{,}50$ | $0{,}538$ |\n\nTaulukossa on joka toinen piste. Taulukkolaskentaohjelma sovitti kaikkiin yhteentoista pisteeseen toisen asteen polynomin $y = A\\,t^2 + B\\,t + C$ ja antoi $A = (-4{,}44 \\pm 0{,}05)\\,\\text{m/s}^2$, $B = -0{,}007\\,\\text{m/s}$ ja $C = 1{,}651\\,\\text{m}$.",
    "parts": [
     {
      "id": "a",
@@ -703,7 +703,7 @@
       {
        "key": "error_sources",
        "points": 2,
-       "detail": "Mittakaava asetettiin seinän tasossa, mutta pallo liikkui kamerasta kauempana. Pallon matkat näkyvät kuvassa pienempinä, joten ohjelma antaa liian pienet matkat ja liian pienen kiihtyvyyden."
+       "detail": "Mittakaava asetettiin metrimitan tasossa, mutta pallo liikkui mittaa kauempana kamerasta. Pallon matkat näkyvät kuvassa pienempinä, joten ohjelma antaa liian pienet matkat ja liian pienen kiihtyvyyden."
       },
       {
        "key": "calculation",

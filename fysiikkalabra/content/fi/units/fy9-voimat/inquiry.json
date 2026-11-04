@@ -153,7 +153,7 @@
      "feedback": "Erotus kertoo vain, kuinka paljon työntöä voisi vielä lisätä ennen liukumista. Levossa kitka on yhtä suuri kuin työntö. Kertaa luvussa *Paino, kitka ja kalteva taso*."
     },
     {
-     "text": "Nolla, koska kaappi ei liu'u.",
+     "text": "Nolla, koska kaappi ei liu'u eikä edes liiku.",
      "feedback": "Ilman kitkaa työntö kiihdyttäisi kaappia. Lepokitka vaikuttaa juuri siksi, että pinnat pyrkivät liukumaan. Kertaa luvussa *Paino, kitka ja kalteva taso*."
     }
    ]
@@ -215,17 +215,17 @@
    "prompt": "Pulkka ($25\\,\\text{kg}$ lapsineen) liukuu rinnettä alas, rinteen kaltevuuskulma on $20^\\circ$ ja liikekitkakerroin $0{,}10$. Opiskelija laski kitkan: ”$F_\\mu = \\mu m g = 0{,}10 \\cdot 25\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 25\\,\\text{N}$.” Mikä ratkaisussa on väärin?",
    "choices": [
     {
-     "text": "Tukivoima ei ole $mg$: rinteessä $N = mg\\cos\\alpha$, joten $F_\\mu \\approx 23\\,\\text{N}$.",
-     "feedback": "Oikein. Pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima, joten $N = mg\\cos 20^\\circ$ ja $F_\\mu = 0{,}10 \\cdot 25\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot \\cos 20^\\circ \\approx 23\\,\\text{N}$.",
-     "correct": true
-    },
-    {
      "text": "Kitkan pitäisi olla $\\mu mg\\sin\\alpha \\approx 8{,}4\\,\\text{N}$, koska liike on rinteen suuntaista.",
      "feedback": "Kitka on rinteen suuntainen, mutta sen suuruus riippuu tukivoimasta, joka on kohtisuorassa rinnettä vastaan: $N = mg\\cos\\alpha$. Komponentti $mg\\sin\\alpha$ vie pulkkaa rinnettä alas."
     },
     {
      "text": "Liukuvalle pulkalle pitäisi käyttää lepokitkakerrointa, ei liikekitkakerrointa.",
      "feedback": "Pulkka liukuu, joten siihen vaikuttaa liikekitka $\\mu N$. Lepokitkakerroin antaa vain lepokitkan ylärajan kappaleelle, joka ei liu'u."
+    },
+    {
+     "text": "Tukivoima ei ole $mg$: rinteessä $N = mg\\cos\\alpha$, joten $F_\\mu \\approx 23\\,\\text{N}$.",
+     "feedback": "Oikein. Pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima, joten $N = mg\\cos 20^\\circ$ ja $F_\\mu = 0{,}10 \\cdot 25\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot \\cos 20^\\circ \\approx 23\\,\\text{N}$.",
+     "correct": true
     },
     {
      "text": "Ratkaisussa ei ole virhettä, koska massa ja $g$ ovat rinteessäkin samat.",
@@ -245,13 +245,13 @@
     "prompt": "Mikä opiskelijan voimakuviossa on väärin?",
     "choices": [
      {
+      "text": "Kuviosta puuttuu hihnan voima, joka vie laatikkoa eteenpäin.",
+      "feedback": "Hihna vaikuttaa laatikkoon vain kahdella voimalla: tukivoimalla ja kitkalla. ”Hihnan eteenpäin vievä voima” on juuri kitka, ja se on kuviossa väärään suuntaan."
+     },
+     {
       "text": "Kitkan pitää osoittaa oikealle, koska vain se voi kiihdyttää laatikkoa.",
       "feedback": "Oikein. Kitka on ainoa vaakasuora voima, ja laatikko kiihtyy oikealle, joten lepokitkan on osoitettava oikealle. Hihna pyrkii liukumaan eteenpäin laatikon alta, ja lepokitka estää sen.",
       "correct": true
-     },
-     {
-      "text": "Kuviosta puuttuu hihnan voima, joka vie laatikkoa eteenpäin.",
-      "feedback": "Hihna vaikuttaa laatikkoon vain kahdella voimalla: tukivoimalla ja kitkalla. ”Hihnan eteenpäin vievä voima” on juuri kitka, ja se on kuviossa väärään suuntaan."
      },
      {
       "text": "Tukivoiman pitää olla painoa pidempi, koska laatikko kiihtyy.",
@@ -272,11 +272,6 @@
    "prompt": "Kevyt kahvinsuodatin pudotetaan levosta, ja se saavuttaa pian rajanopeutensa. Miten suodattimen kiihtyvyys muuttuu ajan funktiona, kun suodatin putoaa?",
    "choices": [
     {
-     "text": "Kiihtyvyys alkaa arvosta $g$ ja pienenee vähitellen kohti nollaa.",
-     "feedback": "Oikein. Alussa ilmanvastusta ei ole, joten $a = g$. Nopeuden kasvaessa ilmanvastus kasvaa ja kokonaisvoima pienenee, kunnes rajanopeudella $a = 0$.",
-     "correct": true
-    },
-    {
      "text": "Kiihtyvyys pysyy arvossa $g$, kunnes se putoaa yhtäkkiä nollaan.",
      "feedback": "Ilmanvastus kasvaa vähitellen nopeuden mukana, joten kokonaisvoima ja kiihtyvyys pienenevät vähitellen eivätkä katkea yhtäkkiä."
     },
@@ -287,6 +282,11 @@
     {
      "text": "Kiihtyvyys on koko ajan nolla, koska suodatin on kevyt.",
      "feedback": "Kevyelläkin suodattimella on paino, ja alussa se on ainoa voima. Siksi suodatin kiihtyy aluksi, kunnes ilmanvastus kasvaa painon suuruiseksi."
+    },
+    {
+     "text": "Kiihtyvyys alkaa arvosta $g$ ja pienenee vähitellen kohti nollaa.",
+     "feedback": "Oikein. Alussa ilmanvastusta ei ole, joten $a = g$. Nopeuden kasvaessa ilmanvastus kasvaa ja kokonaisvoima pienenee, kunnes rajanopeudella $a = 0$.",
+     "correct": true
     }
    ]
   },
@@ -298,17 +298,17 @@
    "prompt": "Kevyen, kitkattoman väkipyörän yli kulkevan langan päissä roikkuvat kappaleet, joiden massat ovat $2{,}0\\,\\text{kg}$ ja $3{,}0\\,\\text{kg}$. Kappaleet päästetään levosta. Mikä väite langan jännitysvoimasta $T$ on oikein?",
    "choices": [
     {
-     "text": "$T$ on painojen $19{,}6\\,\\text{N}$ ja $29{,}4\\,\\text{N}$ välissä, noin $24\\,\\text{N}$.",
-     "feedback": "Oikein. Kevyempi kiihtyy ylös, joten $T > m_1 g$, ja raskaampi alas, joten $T < m_2 g$. Yhtälöistä $T = \\tfrac{2 m_1 m_2}{m_1 + m_2}\\,g \\approx 23{,}5\\,\\text{N}$.",
-     "correct": true
-    },
-    {
      "text": "$T = 29{,}4\\,\\text{N}$, koska raskaamman kappaleen paino vetää lankaa.",
      "feedback": "Raskaampi kappale kiihtyy alas, joten siihen vaikuttava kokonaisvoima osoittaa alas ja $T$ on sen painoa pienempi."
     },
     {
      "text": "$T = 49{,}1\\,\\text{N}$, koska lanka kannattelee molempia kappaleita.",
      "feedback": "Painojen summa olisi väkipyörän kiinnityksen voima levossa, ei langan jännitysvoima. Kumpaankin kappaleeseen lanka vetää voimalla $T$, joka on painojen välissä."
+    },
+    {
+     "text": "$T$ on painojen $19{,}6\\,\\text{N}$ ja $29{,}4\\,\\text{N}$ välissä.",
+     "feedback": "Oikein. Kevyempi kiihtyy ylös, joten $T > m_1 g$, ja raskaampi alas, joten $T < m_2 g$. Yhtälöistä $T = \\tfrac{2 m_1 m_2}{m_1 + m_2}\\,g \\approx 23{,}5\\,\\text{N}$.",
+     "correct": true
     },
     {
      "text": "$T = 9{,}8\\,\\text{N}$, koska painojen erotus liikuttaa kappaleita.",
@@ -454,17 +454,17 @@
    "prompt": "Auto ajaa suoraa ylämäkeä tasaisella nopeudella $60\\,\\text{km/h}$. Mikä väite autoon vaikuttavista voimista on oikein?",
    "choices": [
     {
-     "text": "Kokonaisvoima on nolla, joten eteenpäin vievä voima kumoaa vastukset ja painon komponentin.",
-     "feedback": "Oikein. Nopeus ei muutu, joten ensimmäisen lain mukaan kokonaisvoima on nolla. Tien lepokitka vetäviin pyöriin on yhtä suuri kuin ilmanvastus, vierimisvastus ja $mg\\sin\\alpha$ yhteensä.",
-     "correct": true
-    },
-    {
      "text": "Kokonaisvoima osoittaa ylämäkeen, koska auto liikkuu ylämäkeen.",
      "feedback": "Kokonaisvoima osoittaa kiihtyvyyden suuntaan. Tasaisella nopeudella kiihtyvyys on nolla, joten kokonaisvoimakin on nolla. Kertaa luvussa *Newtonin toinen laki*."
     },
     {
+     "text": "Kokonaisvoima on nolla, koska auton nopeus ja suunta eivät muutu.",
+     "feedback": "Oikein. Nopeus ei muutu, joten ensimmäisen lain mukaan kokonaisvoima on nolla: eteenpäin vievä voima on yhtä suuri kuin ilmanvastus, vierimisvastus ja $mg\\sin\\alpha$ yhteensä.",
+     "correct": true
+    },
+    {
      "text": "Kokonaisvoima osoittaa alamäkeen, koska paino vetää autoa alaspäin.",
-     "feedback": "Painon rinteen suuntainen komponentti vetää alamäkeen, mutta tien voima pyöriin kumoaa sen ja vastukset. Nopeus ei muutu, joten kokonaisvoima on nolla. Kertaa luvussa *Paino, kitka ja kalteva taso*."
+     "feedback": "Painon rinteen suuntainen komponentti vetää alamäkeen, mutta eteenpäin vievä voima kumoaa sen ja vastukset. Nopeus ei muutu, joten kokonaisvoima on nolla. Kertaa luvussa *Paino, kitka ja kalteva taso*."
     }
    ],
    "practice": "Kertaa ensimmäinen laki luvussa [*Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*](fy4-3.html) ja rinteen voimat luvussa [*Paino, kitka ja kalteva taso*](fy4-6.html)."

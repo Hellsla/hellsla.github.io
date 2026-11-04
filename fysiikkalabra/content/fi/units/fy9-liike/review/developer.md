@@ -35,3 +35,42 @@ s1 12,0 m/s; 1,25 m/s²; never level within the lane (discriminant −43,75), le
 ## Shared issues
 - figcat ids cannot name a unit's own figures, so a unit figure in inquiry.json has to be pasted as SVG.
 - Seen in passing (not this unit): `check_layout.py` over all previews fails fy9-voimat at 360 px (svg-text overlap).
+
+## Round 1 fixes
+Content hash after the fixes: d1021d5831c47cfe.
+
+### Science
+1. **Blocking, s6 geometry.** Fixed. The metre stick now stands on a tripod $3{,}00\,\text{m}$ from the camera, and the ball falls $0{,}30\,\text{m}$ behind it, $3{,}30\,\text{m}$ from the camera. Solutions c (Annettu, Periaate, $d_\text{mitta}$) and the part c criterion say "metrimitan tasossa" instead of "seinän tasossa". The numbers are unchanged.
+2. **Blocking, s2 source_note.** Fixed. Removed "mikä sopii raskaalle pallolle näin lyhyillä matkoilla". The note now says only "Ilmanvastus jätetään huomiotta."
+3. **Polish, s1 d.** Fixed. The text now says "kiihdyttää … tasaisesti koko kaistan matkan, mutta vain nopeuteen $72\,\text{km/h}$". The solution says the same.
+4. **Polish, unit.md "Kaksi kappaletta".** Fixed. Added "ja kiihtyy".
+5. **Polish, s4.** Fixed: "$3{,}0\,\text{km}$:n suoralle tieosuudelle".
+6. **Polish, `kuvaajat` tangent colour.** Fixed (see Visual 1).
+
+### Pedagogy
+1. **Blocking, s6 source_note and optics sentence.** Fixed. The note is now "Mittaus ja luvut ovat keksittyjä esimerkkejä." The optics sentence is cut from the task text and remains only in the Periaate of solution c.
+2. **Blocking, s3 source_note.** Fixed. It now reads "Aineisto on keksitty esimerkki, johon on lisätty puhelimen paikannuksen kaltaista vaihtelua."
+3. **Blocking, `keskinopeus` option lengths.** Fixed. The distractors are longer and the correct option is now first. Raw lengths are 97, 94 and 85 characters; rendered, the LaTeX option is the shortest.
+4. **Polish, option positions.** Fixed. The correct options in Ennusta are now at positions 1, 3, 2, 1, 3 and 4. In `tarkistus-1` the correct option is third and no longer the longest (52/58/56).
+5. **Polish, s1 d rubric.** Fixed. The 2 p criterion now requires the quantitative step: $15{,}4\,\text{s}$ at an average speed of $17{,}5\,\text{m/s}$, so the truck gains about $5\,\text{m/s}$ and makes up about $77\,\text{m}$, which is more than $40\,\text{m}$. The model answer adds this step.
+6. **Polish, repetitive area items (replace the lift).** Not done in this round. A graph-conversion check needs a new figure, new mistakes and a new solution, so it is not a cheap change. Proposed for round 2.
+7. **Polish, `rata` with graph options.** Not done. It needs four option figures, and the choice schema with SVG options has not been tested in units. Proposed for round 2.
+8. **Polish, Tutki scaffolding.** Fixed. The text no longer names the three phases or "kussakin vaiheessa"; the phases remain only in hint 2.
+9. **Polish, teacher.md.** Fixed. The fast-student extension is now new: the area between the two parallel $(t,v)$ lines up to the passing time equals the initial distance, $12\,\text{m/s} \cdot 0{,}625\,\text{s} = 7{,}5\,\text{m}$. Sovella now names the two items to leave for home (*Hirvi tiellä*, *Koira ja juoksija*).
+
+### Visual
+1. **Blocking, `kuvaajat` tangent.** Fixed. The tangent and the dotted line to $v_\text{P}$ are velocity blue. The label is now "$k = v_\text{P}$", in blue, right of the tangent's end and clear of the curve. The text says "tangentin kulmakerroin $k$".
+2. **Blocking, `kartta` colours.** Fixed. Each row uses its quantity's colour: $(t,x)$ ink, $(t,v)$ blue, $(t,a)$ orange. Solid means tasainen and dashed means tasaisesti kiihtyvä, and the key uses ink. The alt text is updated.
+3. **Blocking, label size at 390 px.** Measured in Playwright at a 390 px viewport. The smallest effective label size, computed as the font size times the rendered width divided by the viewBox width and confirmed by the KaTeX box heights, is 16,1 px in `kartta` and 17,1 px in `kuvaajat`. In the s3 graph it was 14,9 px; I raised that figure's size from 22 to 24, so it is now 16,3 px. All labels are at or above 14 px, so the 9–10 px reading is probably a device-pixel or contact-sheet measurement.
+4. **Blocking, `aineisto` wording.** Fixed: "Kuvaajassa on raitiovaunun nopeus pysäkiltä seuraavalle pysäkille." The exit ticket did not contain "alun".
+5. **Polish, $s$ against $x$.** Fixed. unit.md (Virheet, Kertaa) and the inquiry `prior` item now use $x = x_0 + vt$ and $(t,x)$.
+6. **Polish, shared fy4-2 figures.** Not this unit's file. They are at 13,0 px at 390 px. Listed under Shared issues.
+7. **Polish, s3 label "$k$".** Fixed. It moved to free space at about $(27\,\text{s};\ 76\,\text{km/h})$. The "48,5 s" label is now muted ink instead of orange, and it moved up so that it does not hit "$t\ (\text{s})$" at 1280 px.
+8. **Polish, s6 frame rate.** Fixed: "joka kolmannesta kuvasta eli $0{,}05\,\text{s}$:n välein".
+9. **Polish, hero road edge.** Not changed (optional).
+
+### Checks after the fixes
+`units.py figures`, `practice.py figures` written; `practice.py check units/fy9-liike` OK (6 tasks, 95 p); `units.py check` no fy9-liike errors; `build.py fy9-liike` OK; `check_layout.py` 360, 390, 1280 OK. Playwright 390: 11/11 choices answered with feedback, 6/6 numeric "Oikein.", no console errors, no `.katex-error`, no raw `$`, no horizontal scroll (also at 1280). Looked at `kartta`, `kuvaajat` and the s3 graph at 390.
+
+### Shared issues (added)
+- `fy4-2/ex-tangent` and `fy4-2/ex-tv`: the tick labels are 13 px at 390 px (viewBox 600, size 24), below the 14 px rule.

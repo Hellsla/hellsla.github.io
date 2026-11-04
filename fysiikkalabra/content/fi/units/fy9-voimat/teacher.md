@@ -1,10 +1,10 @@
 ## Tuntisuunnitelma (75 min)
 
-- **0–5 min, Pohdinta.** Auto ja peräkärry. Parit selittävät ensin sanallisesti, miksi voima ja vastavoima eivät estä liikkeelle lähtöä. Vastausta ei anneta vielä: se on teoriatiivistelmän Ydinajatus-osan lopussa (kärryn liikkeen ratkaisevat vain kärryyn vaikuttavat voimat; auton eteenpäin vie tien lepokitka vetäviin pyöriin).
+- **0–5 min, Pohdinta.** Auto ja peräkärry. Parit selittävät ensin sanallisesti, miksi voima ja vastavoima eivät estä liikkeelle lähtöä. Vastausta ei anneta vielä: se on teoriatiivistelmän Ydinajatus-osan lopussa (kärryn liikkeen ratkaisevat vain kärryyn vaikuttavat voimat). Mikä vie autoa eteenpäin, jätetään pitkään tehtävään *Mikä vie eteenpäin?*.
 - **5–15 min, Ennusta (lähtötasotesti).** Kuusi kysymystä yksin, ilman muistiinpanoja. Opiskelijat kirjoittavat vihkoon väärin menneiden kysymysten numerot.
 - **15–23 min, Tutki.** Kahden hyppääjän kuvaaja pareittain. Pura yhdessä: mitä vaakasuora käyrä kertoo kokonaisvoimasta, ja miksi raskaamman rajanopeus on suurempi.
 - **23–33 min, Teoriatiivistelmä.** Käy käsitekartta läpi: piirrä taululle rinteen voimakuvio ja kysy, mitkä nuolet ovat voimia ja mitkä komponentteja. Palaa Pohdintaan.
-- **33–55 min, Sovella.** Neljä monivalintaa pareittain (noin $8\,\text{min}$), sitten neljä laskua yksin. Jokaisessa laskussa voimakuvio piirretään vihkoon ennen yhtälöä; tarkista kuviot kiertämällä luokassa.
+- **33–55 min, Sovella.** Neljä monivalintaa pareittain (noin $8\,\text{min}$), sitten laskut *Nosturi laskee kuormaa* ja *Jyrkkä pulkkamäki* yksin. *Pulkan veto vinossa* ja *Ylös lyöty lentopallo* ovat tunnilla valinnaisia nopeille; muut tekevät ne kotona. Jokaisessa laskussa voimakuvio piirretään vihkoon ennen yhtälöä; tarkista kuviot kiertämällä luokassa.
 - **55–65 min, Tarkista osaamisesi ja exit ticket.** Yksin. Selitystehtävä arvioidaan kriteereillä itse.
 - **65–75 min, Tehtävät.** Yhden pitkän tehtävän alku koeolosuhteissa ilman mallivastausta: suositus *Veneen vinssaus* a–b (voimakuvio ja laskutehtävä) tai *Moottorikelkka ja kaksi rekeä* a–b (kytketyt kappaleet). Tehtävän loppu ja muut viisi tehtävää ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia.
 
@@ -20,7 +20,7 @@ Ennusta-kysymykset ovat diagnostinen testi, eivät arvosana. Jokainen kysymys va
 Jos yli kolmannes ryhmästä vastaa väärin kysymyksiin 1 tai 3, piirrä ennen Sovella-osaa taululle liukuvan kappaleen ja hidastuvan hissin voimakuviot ja kysy jokaisen voiman aiheuttaja: ”liikkeen voimalla” ei ole aiheuttajaa. Kysymyksen 5 virheet korjautuvat yleensä Sovella-tehtävässä *Perusteltu väite: väkipyörä*.
 
 ## Voimakuviot ja arviointi
-Kokeiden arviointiohjeissa voimakuvion pisteytys vaihtelee tehtävästä toiseen. Joissakin tehtävissä (esimerkiksi kevät 2025, tehtävä 4.1) puuttuva, ylimääräinen tai väärään suuntaan piirretty voima on vienyt kaikki kuvion pisteet. Harjoitellessa palaute nimeää jokaisen virheen erikseen. Muistuta, että nopeutta ja kiihtyvyyttä ei piirretä voimiksi ja että komponentit piirretään katkoviivoin.
+Kokeessa voimakuvion pisteet menetetään puuttuvasta, ylimääräisestä tai väärään suuntaan piirretystä voimasta. Harjoitellessa palaute nimeää jokaisen virheen erikseen. Muistuta, että nopeutta ja kiihtyvyyttä ei piirretä voimiksi ja että komponentit piirretään katkoviivoin.
 
 ## Parityö
 - Tutki: toinen lukee kuvaajasta ja sanoo ääneen, toinen piirtää voimakuvion; vaihdetaan rooleja Sovella-osan monivalinnoissa.
