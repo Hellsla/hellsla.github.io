@@ -49,7 +49,12 @@ else:
 TPL = ROOT / "templates"
 for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "readaloud.js", "kortit.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
-shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True)   # p5 + KaTeX, no CDN needed
+# p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
+# UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
+# when it is published, and loaded by readaloud.js from there (MODEL_BASE).
+MODEL_DIRS = ("supertonic3-v1", "ort")
+shutil.copytree(TPL / "vendor", SITE / "vendor", dirs_exist_ok=True, ignore=shutil.ignore_patterns(*MODEL_DIRS))
+for _d in MODEL_DIRS: shutil.rmtree(SITE / "vendor" / _d, ignore_errors=True)
 if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
 if (ROOT / "assets/units").is_dir():                          # the local courses' unit components (scripts/units.py)
@@ -358,7 +363,26 @@ def exercise_choice(e):
     return inquiry.choice_html({"prompt": e.get("prompt") or T("lesson.choose"), "choices": e["choices"]}, md, lid, e["id"])
 
 
-def exercise_html(e, solution_html, read=None, core=False):
+
+def chapter_no(course, lid):
+    """The chapter's number in its module: its place in curriculum.json's slots, the "Luku N" of the module page."""
+    ids = [l["id"] for l in curriculum.get(course, {}).get("lessons", [])]
+    return ids.index(lid) + 1 if lid in ids else None
+
+
+def number_label(num):
+    """An exercise's running number "6-3" (chapter-exercise, teacher 2026-11-04): shown first in the exercise, read
+    out with its word ("Tehtävä 6-3") (site.css keeps it on one line)."""
+    return f'<span class="ex-num"><span class="visually-hidden">{T("lesson.exercise_word")} </span>{num}</span>'
+
+
+def chapter_eyebrow(html, code, n):
+    """'FY3 · Luku 6' over the page's title, so a student knows the number the exercises carry (6-1, 6-2, ...)."""
+    if n is None: return html
+    return html.replace("<h1>", f'<span class="eyebrow ch-no">{esc(code)} · {T("site.chapter_n", n=n)}</span><h1>', 1)
+
+
+def exercise_html(e, solution_html, read=None, core=False, num=None):
     numeric = isinstance(e["answer"], (int, float))
     ans = nbsp_units(f"{fi(answers_shown.fallback(e['answer']) if numeric else e['answer'])} {e.get('unit', '')}".strip())
     if numeric and solution_html:                                                  # the solution's own rounded answer
@@ -380,7 +404,11 @@ def exercise_html(e, solution_html, read=None, core=False):
     fig = (data_table(e["data"]) if e.get("data") else "") + fig + (exercise_choice(e) if e.get("choices") else "")
     tag = f'<span class="ex-core">{T("lesson.core_exercise")}</span>' if core else ""
     solved = "" if numeric else f'<label class="solved"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>'   # a written task opens its answer after this tick (lesson.js part 8)
+<<<<<<< HEAD
     return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}>{tag}{exercise_text(nbsp_units(e["text"]), f"{e['id']}-q")}{fig}{check}{solved}'
+=======
+    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{inquiry.task_text(nbsp_units(e["text"]), pid=f"{e['id']}-q")}{fig}{check}{solved}'
+>>>>>>> claude/project-thread-irf34b-fy2a
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -575,7 +603,7 @@ def build_units(lang, out, unit_pub):
         md = lambda t: nbsp_units(render_md(t))
         tasks_html = ""                                  # the unit's own task set (FY9): its Tehtävät, last on the page
         if units.has_tasks(uid, lang):
-            tasks_html, _ = practice.render(units.task_key(uid), lang, md, solution_html, T("practice.title"), embedded=True)
+            tasks_html, _ = practice.render(units.task_key(uid), lang, md, solution_html, T("practice.title"), embedded=True, prefix=units.number(uid))
         body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": tasks_html, "exit": exit_html}, md)
         if not tasks_html:
             for key in ("check_practice", "further_practice"):   # a unit without tasks has no exercises section: point to the theory summary only
@@ -594,6 +622,7 @@ def build_units(lang, out, unit_pub):
         for ref in dict.fromkeys(re.findall(r'data-src=\\?"(units/[^"\\]+\.json)\\?"', md_text + (f / "inquiry.json").read_text())):
             embedded += (f'<script type="application/json" class="fx-src" data-for="{ref}">'
                          + json.dumps(json.loads(units.asset_source(ref).read_text()), ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + "</script>")
+        body = chapter_eyebrow(body, code, units.number(uid)) if tasks_html else body   # "FY9 · Luku 1.2": the number its tasks carry
         notice_html = "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("units.notice_draft")}</p>'
         html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", code).replace("{{notice}}", notice_html)
                 .replace("{{strings}}", block + head).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
@@ -640,12 +669,14 @@ def build_language(lang):
         solutions = solutions_of(sol_text) if publish != "none" else {}
         ex_html = "" if ex else f'<p class="notice" role="note">{T("lesson.exercises_pending")}</p>'
         core = core_ids(ex)
+        ch_no = chapter_no(meta["course"], meta["id"]); k = 0   # running number over all levels: 6-1 ... 6-12 (teacher 2026-11-04)
         for lvl, items in ex.items():
             ex_html += (f"<details class=\"level\"><summary>{T('lesson.level', n=lvl[-1])} · {T('lesson.level_kind_' + lvl[-1])} "
                         f"<span class=\"count\">{T.count('lesson.level_count', len(items))}</span></summary><p class=\"level-lead\">{T('lesson.level_lead_' + lvl[-1])}</p><ol>")
             for i, e in enumerate(items):
-                show = publish == "all" or (publish == "first" and i == 0)
-                ex_html += exercise_html(e, solutions.get(e["id"]) if show else None, None if isinstance(ex_src, WorkTree) else ex_src.read, core=e["id"] in core)
+                show = publish == "all" or (publish == "first" and i == 0); k += 1
+                ex_html += exercise_html(e, solutions.get(e["id"]) if show else None, None if isinstance(ex_src, WorkTree) else ex_src.read, core=e["id"] in core,
+                                         num=f"{ch_no}-{k}" if ch_no else None)
             ex_html += "</ol></details>"
         exit_q = json.loads((folder / "exit-ticket.json").read_text())
         exit_items = "<ol>" + "".join(
@@ -713,6 +744,7 @@ def build_language(lang):
                 body = re.sub(r'<section class="stage" id="selita".*?</section>', lambda m: concept_cards.mark_terms(m.group(0), meta["course"], lang), body, count=1, flags=re.S)
             body, photo_tail = photos(body)               # a photograph may also open a task (FY4 2026-11-03: Pohdinta)
             main = f'<article id="teoria" class="inquiry">{body}{photo_tail}</article>'
+        main = chapter_eyebrow(main, meta["course"], ch_no)
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
         html = (texts(tpl).replace("<title>{{title}}", "<title>" + esc(plain_tex(meta["title"]))).replace('og:title" content="{{title}}', 'og:title" content="' + esc(plain_tex(meta["title"])))
                 .replace("{{title}}", esc(meta["title"])).replace("{{course}}", meta["course"]).replace("{{notice}}", notice(meta["state"]))

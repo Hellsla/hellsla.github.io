@@ -111,6 +111,8 @@ The field lines of a straight wire are concentric circles around the wire, perpe
   <foreignObject x="554" y="65.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/compass-needles-wire.webp" alt="A blue wire passes through a board, surrounded by four rows of small compass needles."><figcaption>Small compass needles around a current-carrying wire. Close to the wire, the needles turn along the field lines that circle the wire.</figcaption></figure>
+
 ### The right-hand rule
 The direction in which the field goes round is given by the **right-hand rule**: when the thumb of the right hand points in the direction of the current, the curled fingers go round in the direction of the field lines. In the figure the current goes upwards, so seen from above the field goes round anticlockwise. In figures a current towards the viewer is marked with a dot $\odot$ and a current away from the viewer with a cross $\otimes$, like the tip and the tail feathers of an arrow.
 

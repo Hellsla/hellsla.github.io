@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0bf68f3809480a6d
+CONTENT-HASH: 8304191b1ffa6a2e
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figure coil-dims (fig-17-390, theory-1280-2) — $\overline{B}$ label still sits small on the winding lines at the arrow's tail (carried) — optional: enlarge its white patch.
-- [Minor] theory "Magneettivuon tiheyden määrittäminen" — the relative-uncertainty formula is inline in a long paragraph (carried) — consider a display line.
-- [Minor] sim readout and canvas at 390 px (sim-390) — readout may wrap, canvas crowded (carried).
-- for science: fig-13 now draws I pointing right along the lower wire towards the battery's lower terminal, so the circuit shows the current leaving the upper (+) terminal, down through the winding and back; consistent with the figure, no doubt raised.
+- [Minor] compass-needles-wire caption — the view is from above, with the wire coming up through the plate; the needles circulate around it (horizontal above and below the wire, vertical beside it), consistent with the caption — optionally add "Kuva ylhäältä" so the pattern is read as circles, and mention the current is on.
 
 ## Checked
-- fig-13-390 (electromagnet), the only figure the diff changes: the current arrow I under the circuit now has its head at the right end (head and shaft joined cleanly, no gap or overlap), the colour is the purple of the other currents, the label I sits centred under it and is legible, and nothing is clipped. The direction matches the circuit (the battery's raised terminal is on top, so the current flows down through the coil and right along the bottom). The aria-label still fits both states.
-- fig-17-390 and theory-1280-2: unchanged and still intact, the layout beside the text survived.
-- Hash run at start and end: identical.
+- Delta, round 1: rendered preview/fy7-N.html myself with playwright at 390 and 1280 px, scrolled each lazy photo into view (all loaded, naturalWidth 1600, no horizontal overflow; photo sits in the side column at 1280 and column width at 390, credit line visible), opened the per-photo crops and the full-size sources.
+- compass-needles-wire (390, 1280, and full-size source): four rows of needles, blue wire as alt says; the tangential pattern matches the caption.
+- Surroundings intact; hash unchanged at end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

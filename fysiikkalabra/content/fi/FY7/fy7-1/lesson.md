@@ -278,6 +278,8 @@ Kenttää havainnollistetaan **kenttäviivoilla**. Kenttäviivan suunta kussakin
   <circle cx="300" cy="300" r="2.2" fill="#1f2933"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/horseshoe-magnet-filings.webp" alt="Hevosenkenkämagneetti, jonka navoille ja ympärille on tarttunut rautaviilaa tiheinä kaarina ja tupsuina."><figcaption>Rautaviila hevosenkenkämagneetin ympärillä. Jokainen hippu magnetoituu ja asettuu kentän suuntaiseksi, joten viila piirtää näkyviin kenttäviivojen kulun. Navoilla viilaa on eniten, koska kenttä on siellä voimakkain.</figcaption></figure>
+
 ### Maan magneettikenttä
 Maapallolla on magneettikenttä, joka muistuttaa sauvamagneetin kenttää. Se syntyy Maan ulkoytimen sulan raudan liikkeistä ja niihin liittyvistä sähkövirroista. Kompassin neulan pohjoispää kääntyy kohti maantieteellistä pohjoista. Koska erinimiset navat vetävät toisiaan, maantieteellisen pohjoisnavan lähellä on Maan magneettinen **etelänapa** $\text{S}$, ja maantieteellisen etelänavan lähellä on magneettinen pohjoisnapa $\text{N}$.
 
@@ -312,6 +314,8 @@ Magneettiset navat eivät ole täsmälleen maantieteellisten napojen kohdalla, j
   <path d="M353,82.5 L361,76 L364.5,79 L360.5,88 Z" fill="#d0e6fb" stroke="#1f2933" stroke-width="1.2" stroke-linejoin="round"/>
   <circle cx="357" cy="85" r="2.2" fill="#1f2933"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/aurora-saana.webp" alt="Vihreitä revontulia tähtitaivaalla Saana-tunturin yllä Kilpisjärvellä."><figcaption>Revontulet Saanan yllä Kilpisjärvellä. Maan magneettikenttä ohjaa Auringosta tulevia varattuja hiukkasia napa-alueille, ja siksi revontulia näkyy Lapissa usein.</figcaption></figure>
 
 ## Kaava: Magneettikenttien yhteisvaikutus
 Magneettikentän voimakkuutta ja suuntaa kuvaa vektorisuure **magneettivuon tiheys** $\overline{B}$. Sen suunta on kentän suunta ja sen suuruus $B$ kertoo, kuinka voimakas kenttä on. Magneettivuon tiheyden yksikkö on **tesla** $\text{T}$. Teslan määritelmä perustuu magneettikentän voimaan liikkuvaan varaukseen, ja se esitellään luvussa *Varattu hiukkanen sähkö- ja magneettikentässä*. Tesla on suuri yksikkö, joten arkisia kenttiä ilmoitetaan usein millitesloina, $1\,\text{mT} = 10^{-3}\,\text{T}$, tai mikrotesloina, $1\,\mu\text{T} = 10^{-6}\,\text{T}$.

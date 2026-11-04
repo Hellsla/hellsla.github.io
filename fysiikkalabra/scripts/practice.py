@@ -348,9 +348,17 @@ def skills_html(task):
             + ", ".join(f'<a href="{lid}.html">{esc(chapter(lid))}</a>' for lid in task["skills"]) + "</p>")
 
 
-def render(code, lang, md, solution_html, title, embedded=False):
+def number(n, prefix=None):
+    """A task's number: on a module's Sovella itsenäisesti page its place on the page ("2", the page is the module's
+    own and holds a few tasks); in a review unit's task set the unit's number and the place, "1.2-3", like a chapter's
+    exercises "6-3" (teacher 2026-11-04)."""
+    return f"{prefix}-{n}" if prefix else str(n)
+
+
+def render(code, lang, md, solution_html, title, embedded=False, prefix=None):
     """(body html, toc html) of the course's Sovella itsenäisesti page; embedded=True: the tasks only, each a task card
-    under an h3, for the end of a unit page (no header, no stage sections, no table of contents)."""
+    under an h3, for the end of a unit page (no header, no stage sections, no table of contents). prefix: the unit's
+    number, so the tasks are numbered "1.2-1", "1.2-2" (number())."""
     T = i18n.t; data = load(code, lang)
     sols = solution_blocks((folder(code, lang) / "solutions.md").read_text() if (folder(code, lang) / "solutions.md").is_file() else "")
     inline = lambda s: re.sub(r"^<p>(.*)</p>$", r"\1", md(s).strip(), flags=re.S)
@@ -379,7 +387,7 @@ def render(code, lang, md, solution_html, title, embedded=False):
                       f'<div class="reveal-body"><h3>{T("practice.solution")}</h3>{sol}{extra}<h3>{T("practice.rubric")}</h3>{rubric_html(task, md)}</div></details>')
         pts = T.count("practice.task_points", total(task)) if not own else T("practice.kind_own")
         if embedded:
-            body += (f'<div class="activity task-card practice-task" id="{tid}" data-type="practice"><h3>{n}. {esc(task["title"])} <span class="pts">{pts}</span></h3>'
+            body += (f'<div class="activity task-card practice-task" id="{tid}" data-type="practice" data-num="{number(n, prefix)}"><h3>{(f'<span class="ex-num"><span class="visually-hidden">{T("lesson.exercise_word")} </span>{number(n, prefix)}</span> ' if prefix else f"{n}. ")}{esc(task["title"])} <span class="pts">{pts}</span></h3>'
                      f'{badge}<div class="situation">{md(task["text"])}{fig(task)}</div>{parts}{skills_html(task)}<label class="solved"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>{reveal}</div>')
             continue
         body += (f'<section class="stage practice-task" id="{tid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{esc(task["title"])}'
