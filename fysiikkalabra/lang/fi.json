@@ -1856,7 +1856,9 @@
       "nopea": "nopea",
       "selite": "Harmaa piste: neutroni. Oranssi välähdys: fissio. Katkoviiva: mallin ennuste.",
       "lukemat": "Kasvukerroin $k = {{k}}$, mallin ennuste $N_0 k^g = {{m}}$<br>Sukupolvi $g = {{g}}$: neutroneja $N = {{N}}$, niistä fissioita $F = {{F}}$<br><strong>Kasvu edellisestä sukupolvesta $N_g : N_{g-1} = {{r}}$</strong>",
-      "neutroneja": "$\\text{neutroneja}\\ N = {{N}}$"
+      "neutroneja": "$\\text{neutroneja}\\ N = {{N}}$",
+      "sydan_otsikko": "$\\text{reaktorin sydän}$",
+      "sukupolvi_akseli": "$\\text{sukupolvi}\\ g$"
     },
     "fy8-13": {
       "kaynnista": "Käynnistä aika",
@@ -1869,7 +1871,8 @@
       "normaali": "normaali",
       "nopea": "nopea",
       "selite": "Oranssi piste: gammafotoni. Välähdys lyijyssä: fotoni absorboitui.",
-      "lukemat": "Etäisyys $r = {{r}}\\,\\text{m}$, lyijyä $d = {{x}}\\,\\text{mm}$, läpi pääsee ${{f}}\\,\\%$<br><strong>Annosnopeus $\\dot{H} = {{Hd}}\\,\\mu\\text{Sv/h}$</strong><br>Oleskeluaika $t = {{t}}\\,\\text{min}$, annos $H = {{H}}\\,\\mu\\text{Sv}$"
+      "lukemat": "Etäisyys $r = {{r}}\\,\\text{m}$, lyijyä $d = {{x}}\\,\\text{mm}$, läpi pääsee ${{f}}\\,\\%$<br><strong>Annosnopeus $\\dot{H} = {{Hd}}\\,\\mu\\text{Sv/h}$</strong><br>Oleskeluaika $t = {{t}}\\,\\text{min}$, annos $H = {{H}}\\,\\mu\\text{Sv}$",
+      "lahde_kanvas": "$\\text{lähde}$"
     },
     "fy8-12": {
       "mittaa": "Mittaa",
@@ -1895,7 +1898,8 @@
       "k_lahde_tausta": "$\\text{ei lähdettä}$",
       "k_lahde_alfa": "$\\alpha\\text{-lähde}$",
       "k_lahde_beeta": "$\\beta\\text{-lähde}$",
-      "k_lahde_gamma": "$\\gamma\\text{-lähde}$"
+      "k_lahde_gamma": "$\\gamma\\text{-lähde}$",
+      "gm_putki": "$\\text{GM-putki}$"
     },
     "fy8-10": {
       "nayta_kaikki": "Näytä kaikki ytimet",

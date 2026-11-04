@@ -94,7 +94,7 @@ new p5((p) => {
     p.vertex(SX - 44, FLOOR); p.endShape(p.CLOSE);
     p.noStroke(); p.fill(...METAL); p.rect(SX - 40, FLOOR - 116, 10, 112, 3);
     p.fill(...HEATL); p.circle(SX + 6, SY, 24); p.fill(...HEATC); p.circle(SX + 6, SY, 13);
-    lab('$\\text{lähde}$', SX - 10, FLOOR - 120 - 0.8 * fh, 'c', INKC);
+    lab(__('lahde_kanvas'), SX - 10, FLOOR - 120 - 0.8 * fh, 'c', INKC);
   }
 
   // --- the lead plate, as thick as x (1,5 px per mm) ---
