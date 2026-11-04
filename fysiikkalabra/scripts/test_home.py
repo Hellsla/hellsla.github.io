@@ -142,7 +142,7 @@ for lang in i18n.languages():
     if local:
         school = next(iter(local.values()))["school"]
         expect(f"{lang}: the school's courses under its logo (alt = its name), after Tulossa",
-               bool(sec) and re.search(r'<h3 class="mod-group mod-school"><img src="(?:\.\./)?brand/kiviruukin-lukio-oikea-yonsininen\.svg" alt="' + re.escape(_h.escape(school)) + r'"[^>]*></h3><ul class="mod-list local-list">', home) is not None and home.find('class="mod-list up-list"') < sec.start(), sec and sec.start())
+               bool(sec) and re.search(r'<h3 class="mod-group mod-school"><img src="(?:\.\./)?brand/kiviruukin-lukio-rivi-musta\.svg" alt="' + re.escape(_h.escape(school)) + r'"[^>]*></h3><ul class="mod-list local-list">', home) is not None and home.find('class="mod-list up-list"') < sec.start(), sec and sec.start())
         lrows = [r for d, c, r in re.findall(ROW, sec.group(1), re.S)] if sec else []
         lcodes = [c for d, c, r in re.findall(ROW, sec.group(1), re.S)] if sec else []
         expect(f"{lang}: one row per local course, in registry order", lcodes == list(local), lcodes)
