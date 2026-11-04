@@ -159,7 +159,7 @@ def tikapuut_kohteet():
         f.line(X(k), y0, X(k), y0 + (11 if major else 6), INK, 2 if major else 1.5)
     for k, lab in ((0, r"1\,\text{J}"), (3, r"1\,\text{kJ}"), (6, r"1\,\text{MJ}"), (9, r"1\,\text{GJ}"), (12, r"1\,\text{TJ}")):
         f.tex(X(k), y0 + 30, lab, "middle", w=90)
-    f.tex(300, 308, r"\text{jokainen väli on 10-kertainen}", "middle", MUTED, w=340)
+    f.tex(300, 313, r"\text{jokainen väli on 10-kertainen}", "middle", MUTED, w=340)
     items = [(4, 196, r"\text{AA-paristo}", "end", 170), (5, 138, r"\text{teeveden kiehautus}", "start", 250),
              (9, 80, r"\text{salama}", "start", 110)]
     for k, y, lab, anc, wd in items:
