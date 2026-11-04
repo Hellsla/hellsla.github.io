@@ -22,5 +22,27 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "langaton lataus",
+      "explain": "Lataus, jossa lähetinkäämin vaihtovirta synnyttää muuttuvan magneettivuon, ja vuo indusoi jännitteen puhelimen vastaanotinkäämiin. Vuo ja jännite pienenevät jyrkästi, kun käämien väli kasvaa."
+    },
+    {
+      "term": "induktioliesi",
+      "explain": "Liesi, jossa lasin alla olevan kelan vaihtuva magneettikenttä synnyttää kattilan pohjaan pyörrevirtoja. Ne kuumentavat teräs- tai valurautapohjaa, mutta eivät lasia."
+    },
+    {
+      "term": "pyörrevirta",
+      "explain": "Sähkövirta, joka kiertää metallikappaleen sisällä, kun sen läpi kulkeva magneettivuo muuttuu. Metallin resistanssissa virran sähköenergia muuttuu sisäenergiaksi."
+    },
+    {
+      "term": "vaimennus",
+      "explain": "Suure, joka kertoo desibeleinä, kuinka paljon valon teho pienenee kuidussa: $A = 10\\,\\text{dB} \\cdot \\lg (P_0 : P)$. Kun kuitu on koko matkalta samanlaista, $A = aL$."
+    },
+    {
+      "term": "desibeli",
+      "explain": "Yksikkö dB, jolla esimerkiksi kuidun vaimennus ilmoitetaan. Jokainen $10\\,\\text{dB}$:n vaimennus pienentää tehon kymmenesosaan, ja noin $3\\,\\text{dB}$ puolittaa tehon."
+    }
+  ]
 }

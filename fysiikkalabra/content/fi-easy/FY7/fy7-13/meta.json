@@ -19,5 +19,27 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "interferenssi",
+      "explain": "Aaltojen yhteisvaikutus, kun ne kohtaavat. Saman taajuisten, samassa vaiheessa värähtelevien lähteiden aallot vahvistavat toisiaan, kun matkaero on kokonainen määrä aallonpituuksia."
+    },
+    {
+      "term": "diffraktio",
+      "explain": "Valon leviäminen raon taakse myös suuntiin, jotka jäisivät varjoon. Kun rako on aallonpituuden suuruusluokkaa, kapeampi rako levittää valoa enemmän."
+    },
+    {
+      "term": "kaksoisrako",
+      "explain": "Kaksi kapeaa, lähekkäistä rakoa, joihin tulee saman lähteen valo. Raot toimivat koherentteina lähteinä, ja varjostimelle syntyy tasavälisiä kirkkaita ja tummia juovia."
+    },
+    {
+      "term": "hila",
+      "explain": "Levy tai kalvo, jossa on paljon tasavälisiä kapeita rakoja tai viivoja. Kun valo tulee kohtisuoraan hilaan, maksimien suunnat saadaan yhtälöstä $d\\sin\\theta = k\\lambda$."
+    },
+    {
+      "term": "hilavakio",
+      "explain": "Hilan vierekkäisten rakojen etäisyys $d$. Jos millimetrillä on $N$ viivaa, hilavakio on $d = 1\\,\\text{mm} : N$."
+    }
+  ]
 }

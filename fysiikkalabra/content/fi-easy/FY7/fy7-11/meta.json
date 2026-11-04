@@ -19,5 +19,27 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "dispersio",
+      "explain": "Ilmiö, jossa aineen taitekerroin riippuu valon aallonpituudesta. Vedessä ja lasissa violetin valon taitekerroin on suurempi kuin punaisen, joten violetti taittuu enemmän."
+    },
+    {
+      "term": "spektri",
+      "explain": "Värien viuhka, joka syntyy, kun prisma erottaa valkoisen valon väreiksi. Värit ovat valmiina valkoisessa valossa, eikä prisma värjää valoa."
+    },
+    {
+      "term": "poikkeamakulma",
+      "explain": "Kulma $\\delta$, jonka verran säde kääntyy alkuperäisestä suunnastaan, kun se kulkee prisman läpi. Lasiprismassa violetin valon poikkeamakulma on suurempi kuin punaisen."
+    },
+    {
+      "term": "sateenkaari",
+      "explain": "Värikaari, joka syntyy, kun auringonvalo taittuu sadepisaraan, heijastuu sen takapinnasta ja taittuu ulos. Pääkaaressa punainen näkyy noin $42^\\circ$:n kulmassa vastapisteestä."
+    },
+    {
+      "term": "vastapiste",
+      "explain": "Piste suoraan aurinkoa vastapäätä, oman pään varjon kohdalla. Sateenkaari on ympyrän kaari, jonka keskipiste on vastapiste."
+    }
+  ]
 }

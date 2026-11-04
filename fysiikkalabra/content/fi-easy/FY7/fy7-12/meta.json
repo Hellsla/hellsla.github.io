@@ -16,5 +16,23 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "taitekerroin",
+      "explain": "Luku $n = c : v$, joka kertoo, kuinka monta kertaa hitaammin valo etenee aineessa kuin tyhjiössä. Valokuidun ytimessä taitekerroin on vähän suurempi kuin kuoressa."
+    },
+    {
+      "term": "rajakulma",
+      "explain": "Tulokulma, jolla taitekulma on $90^\\circ$. Se on olemassa vain, kun $n_1 > n_2$, ja se saadaan yhtälöstä $\\sin\\alpha_\\text{r} = n_2 : n_1$."
+    },
+    {
+      "term": "kokonaisheijastuminen",
+      "explain": "Kaikki valo heijastuu rajapinnasta takaisin. Näin käy, kun valo tulee aineesta, jonka taitekerroin on suurempi, aineeseen, jonka taitekerroin on pienempi, ja tulokulma on rajakulmaa suurempi."
+    },
+    {
+      "term": "valokuitu",
+      "explain": "Ohut lasikuitu, jossa ytimen taitekerroin on vähän suurempi kuin kuoren. Valo etenee ytimessä kokonaisheijastuen ja kuljettaa tietoa valopulsseina."
+    }
+  ]
 }

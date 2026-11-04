@@ -18,5 +18,27 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "polarisaatio",
+      "explain": "Valon voi polarisoida, koska se on poikittaista aaltoa. Lineaarisesti polarisoituneessa valossa sähkökenttä värähtelee koko ajan samassa suunnassa eli polarisaatiosuunnassa."
+    },
+    {
+      "term": "polarisaattori",
+      "explain": "Kalvo tai suodatin, joka päästää läpi sähkökentän läpäisysuuntaisen osan. Ihanteellinen polarisaattori päästää läpi puolet polarisoimattoman valon intensiteetistä."
+    },
+    {
+      "term": "Malusin laki",
+      "explain": "Kun polarisoitunut valo tulee ihanteelliseen polarisaattoriin, läpi pääsee intensiteetti $I = I_0 \\cos^2\\theta$. Kulma $\\theta$ on valon polarisaatiosuunnan ja läpäisysuunnan välinen kulma."
+    },
+    {
+      "term": "Brewsterin laki",
+      "explain": "Kun valo heijastuu eristeen pinnasta Brewsterin kulmassa, heijastunut valo on täysin polarisoitunutta. Kulmalle pätee $\\tan\\alpha_\\text{B} = n_2 : n_1$."
+    },
+    {
+      "term": "polaroidut aurinkolasit",
+      "explain": "Aurinkolasit, joiden polarisaattorikalvon läpäisysuunta on pystysuora. Ne himmentävät vaakasuorasta pinnasta heijastuvaa häikäisyä, koska se on polarisoitunut enimmäkseen vaakasuunnassa."
+    }
+  ]
 }

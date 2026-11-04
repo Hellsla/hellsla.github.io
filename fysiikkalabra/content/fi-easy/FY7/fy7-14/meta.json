@@ -16,5 +16,27 @@
   ],
   "sim": true,
   "solutions": "all",
-  "image": false
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "ohut kalvo",
+      "explain": "Läpinäkyvä kerros, jonka paksuus on valon aallonpituuden luokkaa, kuten saippuakuplan seinämä. Kalvon kahdesta pinnasta heijastuneet aallot interferoivat."
+    },
+    {
+      "term": "matkaero",
+      "explain": "Kahden aallon kulkemien matkojen ero. Kun valo tulee kohtisuoraan kalvoon, pinnoista heijastuneiden aaltojen matkaero on $2nd$, kun aallonpituus mitataan ilmassa."
+    },
+    {
+      "term": "vahvistava interferenssi",
+      "explain": "Aallot vahvistavat toisiaan, koska ne ovat samassa vaiheessa. Saippuakalvossa ilmassa näin käy, kun $2nd = (k + \\tfrac{1}{2})\\lambda$, koska vain yläpinnan heijastus kääntää aallon."
+    },
+    {
+      "term": "heikentävä interferenssi",
+      "explain": "Aallot heikentävät toisiaan, koska ne ovat vastakkaisessa vaiheessa. Saippuakalvossa ilmassa näin käy, kun $2nd = k\\lambda$, joten hyvin ohut kalvo näyttää mustalta."
+    },
+    {
+      "term": "heijastuksenestopinnoite",
+      "explain": "Lasin pinnan ohut kalvo, jonka pinnoista heijastuneet aallot heikentävät toisiaan. Ohuimman pinnoitteen paksuus on $d = \\lambda : (4n)$, kun sen taitekerroin on ilman ja lasin välissä."
+    }
+  ]
 }
