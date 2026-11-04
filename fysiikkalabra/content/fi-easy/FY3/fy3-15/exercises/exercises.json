@@ -221,7 +221,7 @@
     {
       "id": "fy3-15-L3-01",
       "level": 3,
-      "text": "Yhteistuotantolaitoksen polttoaineteho on $600\\,\\text{MW}$. Kun laitos tuottaa pelkkää sähköä, sähköteho on $240\\,\\text{MW}$. Kun kaikki lauhduttimen lämpö johdetaan kaukolämpöverkkoon, sähköteho on $180\\,\\text{MW}$ ja kaukolämpöteho $348\\,\\text{MW}$. Näiden tilojen välissä sähköteho pienenee lineaarisesti, kun kaukolämpöteho kasvaa. Kaukolämpöverkko tarvitsee nyt lämpöä $200\\,\\text{MW}$. Kuinka suuri on laitoksen sähköteho? Anna vastaus megawatteina. Laske myös laitoksen kokonaishyötysuhde. Perustele, miksi sähkön ja lämmön yhteenlaskettu hyötysuhde ei silti kerro, kumpi tuotantotapa on kannattavampi.",
+      "text": "Yhteistuotantolaitoksen polttoaineteho on $600\\,\\text{MW}$.\n\nKun laitos tuottaa pelkkää sähköä, sähköteho on $240\\,\\text{MW}$. Kun kaikki lauhduttimen lämpö johdetaan kaukolämpöverkkoon, sähköteho on $180\\,\\text{MW}$ ja kaukolämpöteho $348\\,\\text{MW}$. Näiden tilojen välissä sähköteho pienenee lineaarisesti, kun kaukolämpöteho kasvaa.\n\nKaukolämpöverkko tarvitsee nyt lämpöä $200\\,\\text{MW}$. Kuinka suuri on laitoksen sähköteho? Anna vastaus megawatteina.\n\nLaske myös laitoksen kokonaishyötysuhde. Perustele, miksi sähkön ja lämmön yhteenlaskettu hyötysuhde ei silti kerro, kumpi tuotantotapa on kannattavampi.",
       "answer": 206,
       "unit": "MW",
       "tolerance": 0.02
@@ -237,7 +237,7 @@
     {
       "id": "fy3-15-L3-03",
       "level": 3,
-      "text": "Talon lämmittämiseen tarvitaan $100\\,\\text{kWh}$ lämpöä. Sähkö tuotetaan lauhdevoimalaitoksessa, jonka hyötysuhde on 0,400. Voimajohdoissa ja muuntajissa menetetään $5{,}0\\,\\%$. Talon sähkömittariin tulee siis $0{,}950 \\cdot 0{,}400 = 0{,}380$ osa polttoaineen energiasta. Talossa on ilmalämpöpumppu, jonka lämpökerroin on 3,00. Kuinka paljon polttoaineen energiaa pumpun lämmitys vaatii voimalaitoksessa? Anna vastaus kilowattitunteina. Vertaa tulosta suoraan sähkölämmitykseen ja öljykattilaan (hyötysuhde 0,900). Päättele, mikä tavoista säästää polttoainetta eniten.",
+      "text": "Talon lämmittämiseen tarvitaan $100\\,\\text{kWh}$ lämpöä.\n\nSähkö tuotetaan lauhdevoimalaitoksessa, jonka hyötysuhde on 0,400. Voimajohdoissa ja muuntajissa menetetään $5{,}0\\,\\%$. Talon sähkömittariin tulee siis $0{,}950 \\cdot 0{,}400 = 0{,}380$ osa polttoaineen energiasta. Talossa on ilmalämpöpumppu, jonka lämpökerroin on 3,00.\n\nKuinka paljon polttoaineen energiaa pumpun lämmitys vaatii voimalaitoksessa? Anna vastaus kilowattitunteina.\n\nVertaa tulosta suoraan sähkölämmitykseen ja öljykattilaan (hyötysuhde 0,900). Päättele, mikä tavoista säästää polttoainetta eniten.",
       "answer": 87.7,
       "unit": "kWh",
       "tolerance": 0.02

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d5ba7c6f9fd90049
+CONTENT-HASH: 2a315176056af704
 
 ## Blocking
 
@@ -7,11 +7,12 @@ CONTENT-HASH: d5ba7c6f9fd90049
 - [Minor] solutions.md L2-05 Vastaus — a)-kohta puuttuu Vastaus-osasta, kun taas b) on siellä — ok jos a) on Sijoituksessa; harkitse yhtä lausetta "a) 338 kJ/kg".
 - [Minor] solutions.md L1-07, L2-05 Järkevyys — "21 kJ : 334 kJ/kg" on kunnossa, mutta L3-05 Sijoitus-ketjun luvuilta puuttuu yksikkö (4190 · 0,300 · 40 J − …) — lisää yksiköt tai jätä, jos ketju on tarkoituksella luvuin.
 - [Minor] L3-04 ja L3-05 taulukot — sarakeotsikot (KaTeX) näkyvät 1280 px kuvassa eri kohdassa kuin arvot; sivuston yhteinen taulukkotyyli, ei tämän tehtävän vika.
+- [Minor] solutions.md:198 L3-04 c) — pitkä inline-kaava nousee omaksi laatikokseen, ja "joten" jää yksin riville sen alle; kirjoita c) samaan tapaan kuin a): "c) Jään lämpeneminen on" + display-rivit, ja "joten" seuraavan laatikon eteen samalle riville tai pudota se.
 
 ## Checked
-- Round 2 (delta). Round 1 Blocking: none. Round 1 Polish fixed: L2-05 "Piirrä (t, m)-kuvaaja", c)-kohta omalle rivilleen, a)-b)-c) -järjestys, minus-merkki taulukossa (−18,0).
-- open-exercises-1280-7 (L1-06), L2-1280-7, -9, -10 (L2-05, L2-06 MC), L3-1280-7, -8, -9 (L3-04, L3-05 with table and solutions). No 360 px exercise captures exist.
-- Formulas, tables, MC feedback and solution cards render without red source or overflow.
+- Round 3 (delta): L3-04 Sijoitus rivitetty display-`aligned`-riveiksi.
+- review/shots/fy3-14-open-exercises-L3-1280-6.png, -7.png (otettu commitin 6018cf733 jälkeen): "Ensin … = 3,95, joten" ja "= 4,45, joten" yhdellä rivillä; s_1-, s_2- ja s_2'-ketjut yksi =-askel riviä kohden, murtoviivat ja yksiköt siistit, ei ylivuotoa eikä punaista lähdettä. Vastaus ja Järkevyys ennallaan.
+- 360 px: tehtävistä ei ole 360 px kaappauksia; deterministinen layout 360 px -tarkistus on ok, ja levein uusi rivi (s_2':n ensimmäinen murtolauseke) on noin 25 merkkiä.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

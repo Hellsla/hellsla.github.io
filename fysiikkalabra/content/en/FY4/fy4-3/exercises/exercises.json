@@ -39,6 +39,77 @@
       "answer": 6.4,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-06",
+      "level": 1,
+      "text": "An ice hockey puck slides straight at constant velocity on very slippery ice. Friction and air resistance can be ignored. Which statement about the forces acting on the puck is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The net force is zero, because the speed and direction of the puck stay the same",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "A force acts forwards, because motion continues only under the action of a force",
+          "feedback": "A force is needed to change motion, not to maintain it. If no resistance acts on the puck, it continues at the same velocity without a forward-pushing force."
+        },
+        {
+          "text": "The forward force keeps decreasing, because the force given by the hit wears out",
+          "feedback": "The force of the hit acts on the puck only while the stick is touching it. After the puck leaves the stick, no forward-pushing force acts on it that could wear out."
+        },
+        {
+          "text": "The net force is zero, because the speed and direction of the puck stay the same",
+          "feedback": "Correct: by Newton’s first law the velocity stays the same if and only if the net force is zero. The weight and the normal force of the ice cancel each other.",
+          "correct": true
+        },
+        {
+          "text": "The net force points in the direction of motion, because the puck moves there",
+          "feedback": "The net force points in the direction of the change of velocity, not in the direction of the velocity. If the net force pointed in the direction of motion, the puck would speed up and its velocity would not stay the same."
+        }
+      ]
+    },
+    {
+      "id": "fy4-3-L1-07",
+      "level": 1,
+      "text": "A book rests on a horizontal table. The table supports the book with an upward force. Which force is the reaction force of this normal force according to Newton’s third law?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The force of the book on the table, because the normal force is an interaction between the book and the table",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The weight of the book, because it is equally large and oppositely directed to the normal force",
+          "feedback": "The weight and the normal force act on the same object, the book, so they are not an interaction pair. They are equally large because the book is at rest (first law)."
+        },
+        {
+          "text": "The gravitational pull of the Earth on the book, because it acts straight down on the book",
+          "feedback": "The pull of the Earth on the book is the weight of the book, and it belongs to the interaction between the Earth and the book. The normal force is caused by the table, so its reaction force belongs to the interaction between the table and the book."
+        },
+        {
+          "text": "The weight of the table on the floor, because the table supports the book and the floor supports the table",
+          "feedback": "The weight of the table acts on the table and the floor supports it, but this is a different interaction. The reaction force of the normal force is the force that the cause of the normal force receives from the book."
+        },
+        {
+          "text": "The force of the book on the table, because the normal force is an interaction between the book and the table",
+          "feedback": "Correct: the reaction force is equally large and oppositely directed, and it acts on the other party, the table. The book presses the table down, and the table pushes the book up.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy4-3-L1-08",
+      "level": 1,
+      "text": "A child pulls a sled horizontally with a rope, and the sled moves straight at constant velocity. The child pulls the rope with a force of $38\\,\\text{N}$. The weight of the rope is ignored. With what force does the rope pull the child?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 38,
+      "unit": "N",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,13 +144,135 @@
       "answer": 8.9,
       "unit": "kN",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L2-05",
+      "level": 2,
+      "text": "A student pulls a rope whose other end is attached to a wall. Force sensor A is at the student’s end and force sensor B at the wall end. The rope is at rest throughout the measurement, and its weight is ignored. The table gives example data of the sensor readings.\n\nWith what force does the wall pull the rope at the moment when sensor A shows its largest reading? Justify your answer with Newton’s laws. The answer box takes the magnitude of the force.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 4.8,
+      "unit": "N",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Readings of the force sensors at the ends of the rope (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$F_\\text{A}\\,(\\text{N})$",
+          "$F_\\text{B}\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.9",
+            "1.0"
+          ],
+          [
+            "0.5",
+            "2.6",
+            "2.5"
+          ],
+          [
+            "1.0",
+            "4.8",
+            "4.8"
+          ],
+          [
+            "1.5",
+            "3.4",
+            "3.5"
+          ],
+          [
+            "2.0",
+            "1.2",
+            "1.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-3-L2-06",
+      "level": 2,
+      "text": "On an air track a cart glides straight with almost no friction. No horizontal force acts on the cart except a very small air resistance. A motion sensor measured the velocity of the cart. The table gives example data of the measurement.\n\na) Justify with Newton’s first law why no forward-pushing force needs to act on the cart.\n\nb) Calculate the mean of the velocity over the measurement and use it to find the distance travelled by the cart in $6.0\\,\\text{s}$.\n\nThe answer box takes the distance of part b).",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 3.0,
+      "unit": "m",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Velocity of a cart on an air track (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.51"
+          ],
+          [
+            "1.0",
+            "0.50"
+          ],
+          [
+            "2.0",
+            "0.49"
+          ],
+          [
+            "3.0",
+            "0.50"
+          ],
+          [
+            "4.0",
+            "0.51"
+          ],
+          [
+            "5.0",
+            "0.49"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-3-L2-07",
+      "level": 2,
+      "text": "A student reasons: “When a fist hits a wall, the wall pushes the fist back with an equally large force. The forces are opposite and equally large, so they cancel each other and the motion of the fist does not change.”\n\nWhat is the error in the student’s reasoning?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The forces act on different objects, so the force of the wall slows down the fist",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The forces act on different objects, so the force of the wall slows down the fist",
+          "feedback": "Correct: only the forces acting on the fist matter for the motion of the fist, and these include the force of the wall. The force of the fist on the wall acts on the wall and does not cancel it.",
+          "correct": true
+        },
+        {
+          "text": "The force of the wall is smaller, because the wall does not move when the fist hits it",
+          "feedback": "The third law holds regardless of motion: the forces are always equally large, even if the other object stays at rest. The error is in which objects the forces act on."
+        },
+        {
+          "text": "The force of the wall appears only when the fist has already stopped completely",
+          "feedback": "The force and the reaction force appear at the same time and are equally large at every moment. The force of the wall acts on the fist already during the impact and makes it slow down."
+        },
+        {
+          "text": "The motion of the fist is maintained by its own force, which does not cancel with the force of the wall",
+          "feedback": "No force is needed to maintain motion. The force of the fist acts on the wall, not on the fist, so it cannot keep the fist moving or cancel the force of the wall."
+        }
+      ]
     }
   ],
   "level3": [
     {
       "id": "fy4-3-L3-01",
       "level": 3,
-      "text": "A hot-air balloon descends straight down at constant velocity. The combined weight of the balloon, the hot air inside it, the basket and the passengers is $4.62\\,\\text{kN}$, and the buoyancy of the surrounding air is $4.35\\,\\text{kN}$. How large is the air resistance on the balloon, and in which direction does it point? Give the magnitude in kilonewtons and the direction in words; only the magnitude is checked.",
+      "text": "A hot-air balloon descends straight down at constant velocity. The combined weight of the balloon, the hot air inside it, the basket and the passengers is $4.62\\,\\text{kN}$, and the buoyancy of the surrounding air is $4.35\\,\\text{kN}$.\n\nHow large is the air resistance on the balloon, and in which direction does it point? Give the magnitude in kilonewtons and the direction in words; only the magnitude is checked.",
       "answer": 0.27,
       "unit": "kN",
       "tolerance": 0.02
@@ -99,6 +292,76 @@
       "answer": 1.9,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L3-04",
+      "level": 3,
+      "text": "A horse pulls a cart along a horizontal road straight forwards at constant velocity. The rolling resistance of the road on the cart is $410\\,\\text{N}$ and the air resistance on the cart is $40\\,\\text{N}$. The air resistance on the horse is $30\\,\\text{N}$. The mass of the rope is ignored. The values are example data.\n\na) Calculate the force of the rope on the cart.\n\nb) Calculate the force with which the road pushes the hooves of the horse forwards. The feet of the horse do not slip on the road.\n\nc) A student says: “The horse pulls the cart and the cart pulls the horse backwards equally hard, so they cancel each other and nothing can move.” Explain why the reasoning is wrong and what sets the horse and the cart in motion.\n\nThe answer box takes the force of part b).",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 480,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L3-05",
+      "level": 3,
+      "text": "A student pulls a cart on a horizontal table with a rope. A force sensor in the hand at the end of the rope measures the force, and a motion sensor measures the velocity of the cart. The rope is horizontal all the time, and its mass is ignored. The table gives example data of the measurement.\n\na) Deduce from the table when the sum of the forces acting on the cart is zero. Justify with the first law.\n\nb) Determine the force of friction of the table on the cart. When the velocity is constant, the forces opposing the motion of the cart are equally large as the force of the rope.\n\nc) Explain why the reading of the sensor is at the start larger than the friction, and with what force the cart then pulls the rope.\n\nThe answer box takes the force of friction of part b).",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 3.4,
+      "unit": "N",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Velocity of the cart and force of the rope (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00",
+            "5.1"
+          ],
+          [
+            "1.0",
+            "0.31",
+            "4.6"
+          ],
+          [
+            "2.0",
+            "0.55",
+            "4.3"
+          ],
+          [
+            "3.0",
+            "0.69",
+            "3.6"
+          ],
+          [
+            "4.0",
+            "0.70",
+            "3.4"
+          ],
+          [
+            "5.0",
+            "0.71",
+            "3.5"
+          ],
+          [
+            "6.0",
+            "0.70",
+            "3.3"
+          ]
+        ]
+      }
     }
   ]
 }

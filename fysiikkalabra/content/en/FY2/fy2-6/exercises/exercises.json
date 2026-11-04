@@ -284,7 +284,7 @@
     {
       "id": "fy2-6-L3-03",
       "level": 3,
-      "text": "An example municipality proposes a solar park that would replace Olkiluoto 3 ($1600\\,\\text{MW}$). The average power of the solar park over the year is $11\\,\\%$ and that of Olkiluoto 3 $90\\,\\%$ of the rated power. How large should the rated power of the solar park be for it to produce as much energy in a year as Olkiluoto 3? Give the answer in gigawatts. Also consider whether such a park would replace Olkiluoto 3 on a January evening.",
+      "text": "An example municipality proposes a solar park that would replace Olkiluoto 3 ($1600\\,\\text{MW}$). The average power of the solar park over the year is $11\\,\\%$ and that of Olkiluoto 3 $90\\,\\%$ of the rated power.\n\nHow large should the rated power of the solar park be for it to produce as much energy in a year as Olkiluoto 3? Give the answer in gigawatts. Also consider whether such a park would replace Olkiluoto 3 on a January evening.",
       "answer": 13,
       "unit": "GW",
       "tolerance": 0.02

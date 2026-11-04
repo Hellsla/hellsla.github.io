@@ -127,3 +127,98 @@ $$\begin{aligned} x &= 0 + 1{,}5\,\text{m/s} \cdot 33{,}33\ldots\,\text{s} \\ &=
 **Sijoitus:** $v_\text{ka} = \dfrac{10\,\text{m} - 0\,\text{m}}{40\,\text{s} - 0\,\text{s}} = 0{,}25\,\text{m/s}$
 **Vastaus:** $0{,}25\,\text{m/s}$, kaksi merkitsevää numeroa. Loppupaikka $10\,\text{m}$ ja aika $40\,\text{s}$ on annettu kahdella numerolla.
 **Järkevyys:** Robotti kulki $30\,\text{m}$ eteenpäin ja $20\,\text{m}$ takaisin. Siirtymä on $30\,\text{m} - 20\,\text{m} = 10\,\text{m}$, vaikka matka oli $50\,\text{m}$. Etumerkki on positiivinen, koska robotti on lopussa suuremmassa $x$:ssä kuin alussa. Osanopeuksien $3{,}0\,\text{m/s}$, $0$ ja $-1{,}0\,\text{m/s}$ keskiarvo $\dfrac{3{,}0 + 0 - 1{,}0}{3} = 0{,}67\,\text{m/s}$ olisi väärä. Osavälit eivät ole yhtä pitkiä.
+
+## fy4-1-L1-06
+**Kysytty:** mitä laskeva suora $(t, x)$-kuvaajassa kertoo liikkeestä.
+**Periaate:** $(t, x)$-kuvaajan suoran kulmakerroin (suoran jyrkkyys) on nopeus $v = \dfrac{\Delta x}{\Delta t}$. Kun suora laskee, paikka pienenee ajan kuluessa. Silloin kulmakerroin ja nopeus ovat negatiivisia. Kuvaaja näyttää paikan ajan funktiona. Se ei näytä radan muotoa.
+**Mallivastaus:** Paikka pienenee ajan kuluessa, joten nopeus on negatiivinen ja kappale liikkuu negatiiviseen suuntaan. Vaihtoehto, jossa kappale liikkuu alamäkeä, sekoittaa kuvaajan ja radan kuvan. Kappale voi liikkua vaakasuoralla radalla, vaikka kuvaaja laskee. Pysähtynyt kappale on paikallaan, ja silloin kuvaaja on vaakasuora. Suora, jonka kulmakerroin ei muutu, kuvaa vakionopeutta. Se ei kuvaa hidastuvaa liikettä. Aika kasvaa aina oikealle mentäessä, joten mikään kappale ei kulje ajassa taaksepäin.
+**Kuvaajan lukeminen:** Laskevassa suorassa $x$ on pienempi, kun $t$ on suurempi. Siksi $\Delta x < 0$ ja $\Delta t > 0$. Silloin $\dfrac{\Delta x}{\Delta t} < 0$.
+
+## fy4-1-L1-07
+**Kysytty:** mikä väite koko kävelyn siirtymästä on oikein.
+**Periaate:** Siirtymä on loppupaikka miinus alkupaikka, $\Delta x = x_2 - x_1$. Se ei riipu reitistä. Matka on kuljetun reitin pituus. Osasiirtymät, joilla on eri suunta, lasketaan yhteen etumerkkeineen.
+**Mallivastaus:** Kävelijä palaa lähtöpaikkaansa. Siksi loppupaikka on sama kuin alkupaikka ja siirtymä on $0\,\text{m}$. Samaan tulokseen pääsee laskemalla osasiirtymät yhteen: $+40\,\text{m} + (-40\,\text{m}) = 0\,\text{m}$. Kuljettu matka on $40\,\text{m} + 40\,\text{m} = 80\,\text{m}$, mutta matka ei ole siirtymä. Väite, että siirtymä on $-40\,\text{m}$, pitäisi paikkansa vain viimeiselle osuudelle. Se ei päde koko kävelylle. Väite, että vain menomatka lasketaan, unohtaa paluun. Paluu kumoaa menomatkan.
+
+## fy4-1-L1-08
+**Kysytty:** mikä virhe oppilaan nopeuden laskussa on.
+**Periaate:** Suoran kulmakerroin on paikan muutos jaettuna ajan muutoksella, $v = \dfrac{x_2 - x_1}{t_2 - t_1}$. Muutos on aina erotus: loppu miinus alku. Siksi pelkkä toisen pisteen paikka ei kelpaa osoittajaksi. Pelkkä toisen pisteen aika ei kelpaa nimittäjäksi.
+**Mallivastaus:** Oppilas jakoi toisen pisteen paikan $13\,\text{m}$ sen ajalla $6{,}0\,\text{s}$. Hän ei laskenut erotuksia. Oikein: $v = \dfrac{13\,\text{m} - 5{,}0\,\text{m}}{6{,}0\,\text{s} - 2{,}0\,\text{s}} = \dfrac{8{,}0\,\text{m}}{4{,}0\,\text{s}} = 2{,}0\,\text{m/s}$. Oppilaan tapa toimisi vain, jos suora lähtisi origosta hetkellä nolla. Tässä alkupiste on kuitenkin $(2{,}0\,\text{s};\, 5{,}0\,\text{m})$. Etumerkki ei ole väärin, koska paikka kasvaa ja nopeus on positiivinen. Nopeus ei ole paikkojen summa jaettuna aikojen summalla, koska summa ei kuvaa muutosta.
+**Kuvaajan lukeminen:** Suoralta luetaan kaksi pistettä: $(t_1;\, x_1) = (2{,}0\,\text{s};\, 5{,}0\,\text{m})$ ja $(t_2;\, x_2) = (6{,}0\,\text{s};\, 13\,\text{m})$. Nousu on $x_2 - x_1$ ja eteneminen on $t_2 - t_1$.
+
+## fy4-1-L2-05
+**Annettu:** taulukon pisteet $(t;\, x)$ alkaen $(0{,}0\,\text{s};\, 0{,}48\,\text{m})$ ja päättyen $(5{,}0\,\text{s};\, 3{,}53\,\text{m})$; liike on tasaista
+**Kysytty:** nopeus $v$ yksikössä $\text{m/s}$, alkupaikka $x_0$ ja paikka ajan funktiona
+**Periaate:** Tasaisessa liikkeessä $(t, x)$-pisteet ovat suoralla. Mittauksissa on pientä virhettä. Siksi suora sovitetaan pisteiden läpi niin, että pisteet jäävät tasaisesti sen molemmille puolille. Nopeus on suoran kulmakerroin. Alkupaikka on kohta, jossa suora leikkaa paikka-akselin.
+**Kuvaajan lukeminen:** Aika-akselille tulee $t = 0 \ldots 5{,}0\,\text{s}$ ja paikka-akselille $0 \ldots 4\,\text{m}$. Pisteet merkitään, ja suora piirretään niiden läpi. Suora kulkee lähellä pisteitä $(0{,}0\,\text{s};\, 0{,}49\,\text{m})$ ja $(5{,}0\,\text{s};\, 3{,}54\,\text{m})$. Kulmakerroin lasketaan näistä kaukana toisistaan olevista suoran pisteistä. Sitä ei lasketa vierekkäisistä mittauspisteistä.
+**Kaava:** $v = \dfrac{x_2 - x_1}{t_2 - t_1}$ ja $x = x_0 + v\,t$
+**Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.
+**Sijoitus:**
+
+$$\begin{aligned} v &= \dfrac{3{,}54\,\text{m} - 0{,}49\,\text{m}}{5{,}0\,\text{s} - 0{,}0\,\text{s}} \\ &= 0{,}61\,\text{m/s} \end{aligned}$$
+
+Alkupaikka luetaan kohdasta, jossa suora leikkaa paikka-akselin: $x_0 \approx 0{,}49\,\text{m}$. Paikka on siis $x = 0{,}49\,\text{m} + 0{,}61\,\text{m/s} \cdot t$.
+**Vastaus:** $0{,}61\,\text{m/s}$, kaksi merkitsevää numeroa. Taulukon paikat on annettu kahden desimaalin tarkkuudella, ja suoran sovitus rajoittaa tarkkuutta. Suoran luenta voi vaihdella muutamalla prosentilla.
+**Järkevyys:** Tarkistus keskimmäisellä pisteellä: $0{,}49\,\text{m} + 0{,}61\,\text{m/s} \cdot 2{,}0\,\text{s} = 1{,}71\,\text{m}$. Taulukossa on $1{,}67\,\text{m}$, joten ero on pieni. Paikka kasvaa, joten nopeus on positiivinen. Nopeus $0{,}61\,\text{m/s}$ sopii pienelle kärrylle.
+
+## fy4-1-L2-06
+**Annettu:** taulukon paikat kärryille A ja B hetkillä $0{,}0\,\text{s} \ldots 8{,}0\,\text{s}$; liikkeet ovat tasaisia
+**Kysytty:** kumpi kärry on nopeampi ja hetki $t$, jolloin kärryt ovat samassa paikassa, yksikössä $\text{s}$
+**Periaate:** Kummankin kärryn pisteet ovat suoralla. Suoran kulmakerroin on nopeus ja leikkauskohta paikka-akselilla on alkupaikka. Kärryt ovat samassa paikassa, kun suorat leikkaavat. Silloin paikat ovat yhtä suuret samalla hetkellä.
+**Kuvaajan lukeminen:** A:lle sovitetaan suora pisteiden $(0{,}0\,\text{s};\, 1{,}0\,\text{m})$ ja $(8{,}0\,\text{s};\, 13{,}0\,\text{m})$ läheltä. B:lle sovitetaan suora pisteiden $(0{,}0\,\text{s};\, 20{,}0\,\text{m})$ ja $(8{,}0\,\text{s};\, 5{,}7\,\text{m})$ läheltä. Näistä saadaan $v_\text{A} = \dfrac{13{,}0\,\text{m} - 1{,}0\,\text{m}}{8{,}0\,\text{s}} = 1{,}5\,\text{m/s}$ ja $v_\text{B} = \dfrac{5{,}7\,\text{m} - 20{,}0\,\text{m}}{8{,}0\,\text{s}} \approx -1{,}8\,\text{m/s}$. Alkupaikat ovat $x_{0\text{A}} = 1{,}0\,\text{m}$ ja $x_{0\text{B}} = 20{,}0\,\text{m}$. Kärryn B vauhti on suurempi ($1{,}8\,\text{m/s} > 1{,}5\,\text{m/s}$), mutta se kulkee A:ta kohti negatiiviseen suuntaan.
+**Kaava:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ ja $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. Ehdosta $x_\text{A} = x_\text{B}$ saadaan
+$$t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$$
+**Muunnokset:** Kaikki suureet ovat yksiköissä $\text{m}$ ja $\text{m/s}$, joten muunnoksia ei tarvita. B:n nopeus sijoitetaan negatiivisena.
+**Sijoitus:**
+
+$$\begin{aligned} t &= \dfrac{20{,}0\,\text{m} - 1{,}0\,\text{m}}{1{,}5\,\text{m/s} - (-1{,}8\,\text{m/s})} \\ &= \dfrac{19{,}0\,\text{m}}{3{,}3\,\text{m/s}} \\ &= 5{,}8\,\text{s} \end{aligned}$$
+**Vastaus:** $5{,}8\,\text{s}$, kaksi merkitsevää numeroa. Nopeudet $1{,}5\,\text{m/s}$ ja $1{,}8\,\text{m/s}$ on annettu kahdella numerolla.
+**Järkevyys:** Hetkellä $5{,}8\,\text{s}$ kärry A on paikassa $1{,}0\,\text{m} + 1{,}5\,\text{m/s} \cdot 5{,}8\,\text{s} = 9{,}7\,\text{m}$. Kärry B on paikassa $20{,}0\,\text{m} - 1{,}8\,\text{m/s} \cdot 5{,}8\,\text{s} = 9{,}6\,\text{m}$. Paikat ovat siis yhtä suuret pyöristyksen tarkkuudella. Ajanhetki on mittausvälin $0{,}0\ldots 8{,}0\,\text{s}$ sisällä. Taulukossa kärryjen järjestys vaihtuu hetkien $4{,}0\,\text{s}$ ja $6{,}0\,\text{s}$ välillä, kuten pitääkin.
+
+## fy4-1-L2-07
+**Annettu:** robotin pisteet $(t;\, x)$: $(0\,\text{s};\, 2{,}0\,\text{m})$, $(4{,}0\,\text{s};\, 14\,\text{m})$, $(10\,\text{s};\, 14\,\text{m})$, $(16\,\text{s};\, 5{,}0\,\text{m})$ ja $(20\,\text{s};\, 5{,}0\,\text{m})$; pisteiden välillä liike on tasaista
+**Kysytty:** aikaväli, jolla robotti liikkuu negatiiviseen suuntaan, ja nopeus $v$ sillä välillä yksikössä $\text{m/s}$
+**Periaate:** Jokaisella aikavälillä $(t, x)$-kuvaaja on suora, ja sen kulmakerroin on nopeus. Laskeva osa antaa negatiivisen nopeuden. Vaakasuora osa antaa nopeuden nolla. Nouseva osa antaa positiivisen nopeuden. Siksi $(t, v)$-kuvaaja koostuu vaakasuorista viivoista.
+**Kuvaajan lukeminen:** $(t, x)$-kuvaajassa on neljä osaa: nouseva väli $0\ldots4{,}0\,\text{s}$, vaakasuora väli $4{,}0\ldots10\,\text{s}$, laskeva väli $10\ldots16\,\text{s}$ ja vaakasuora väli $16\ldots20\,\text{s}$. Laskeva väli on $10\ldots16\,\text{s}$. Ensimmäisen välin nopeus on $\dfrac{14\,\text{m} - 2{,}0\,\text{m}}{4{,}0\,\text{s}} = 3{,}0\,\text{m/s}$. Nopeuskuvaajassa nopeus on $3{,}0\,\text{m/s}$ välillä $0\ldots4{,}0\,\text{s}$, nolla välillä $4{,}0\ldots10\,\text{s}$, negatiivinen välillä $10\ldots16\,\text{s}$ ja nolla välillä $16\ldots20\,\text{s}$.
+**Kaava:** $v = \dfrac{x_2 - x_1}{t_2 - t_1}$
+**Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.
+**Sijoitus:**
+
+$$\begin{aligned} v &= \dfrac{5{,}0\,\text{m} - 14\,\text{m}}{16\,\text{s} - 10\,\text{s}} \\ &= \dfrac{-9{,}0\,\text{m}}{6{,}0\,\text{s}} \\ &= -1{,}5\,\text{m/s} \end{aligned}$$
+**Vastaus:** $-1{,}5\,\text{m/s}$ välillä $10\ldots16\,\text{s}$, kaksi merkitsevää numeroa kuten paikkojen erotuksessa $9{,}0\,\text{m}$.
+**Järkevyys:** Robotin paikka pienenee välillä $10\ldots16\,\text{s}$, joten nopeuden pitää olla negatiivinen. Tarkistus laskemalla takaisin: $14\,\text{m} + (-1{,}5\,\text{m/s}) \cdot 6{,}0\,\text{s} = 5{,}0\,\text{m}$. Se on taulukon paikka hetkellä $16\,\text{s}$. Vaakasuorilla osilla nopeus on nolla, koska paikka ei muutu.
+
+## fy4-1-L3-04
+**Annettu:** ohjelman paikat $x_\text{ohj}$ hetkillä $0{,}0\ldots5{,}0\,\text{s}$ (esim. $(0{,}0\,\text{s};\, 0{,}30\,\text{m})$ ja $(5{,}0\,\text{s};\, 3{,}52\,\text{m})$); mittanauhan todellinen pituus $2{,}00\,\text{m}$, ohjelman antama pituus $1{,}60\,\text{m}$; liike on tasaista
+**Kysytty:** kärryn todellinen nopeus $v$ yksikössä $\text{m/s}$, hetki jolloin todellinen paikka on $6{,}0\,\text{m}$, ja ennusteen luotettavuus
+**Periaate:** Tasaisessa liikkeessä pisteet ovat suoralla, ja nopeus on suoran kulmakerroin. Mittakaavavirhe kertoo kaikki ohjelman antamat pituudet samalla luvulla. Luku saadaan vertaamalla tunnetun pituuden todellista arvoa ohjelman arvoon. Korjaus kertoo myös nopeuden samalla luvulla.
+**Kuvaajan lukeminen:** Pisteet merkitään $(t, x_\text{ohj})$-kuvaajaan, ja niiden läpi sovitetaan suora. Suora kulkee lähellä pisteitä $(0{,}0\,\text{s};\, 0{,}31\,\text{m})$ ja $(5{,}0\,\text{s};\, 3{,}52\,\text{m})$. Niiden avulla ohjelman antama nopeus on $v_\text{ohj} = \dfrac{3{,}52\,\text{m} - 0{,}31\,\text{m}}{5{,}0\,\text{s}} \approx 0{,}64\,\text{m/s}$ ja ohjelman alkupaikka on $0{,}31\,\text{m}$.
+**Kaava:** korjauskerroin $k = \dfrac{\ell_\text{tod}}{\ell_\text{ohj}}$, todellinen nopeus $v = k\,v_\text{ohj}$ ja paikka $x = k\,(x_{0,\text{ohj}} + v_\text{ohj}\,t)$
+**Muunnokset:** Kaikki pituudet ovat metreinä ja ajat sekunteina, joten yksikkömuunnoksia ei tarvita.
+**Sijoitus:**
+
+$$\begin{aligned} k &= \dfrac{2{,}00\,\text{m}}{1{,}60\,\text{m}} \\ &= 1{,}25 \end{aligned}$$
+
+$$\begin{aligned} v &= 1{,}25 \cdot 0{,}64\,\text{m/s} \\ &= 0{,}80\,\text{m/s} \end{aligned}$$
+
+Todellinen alkupaikka on $1{,}25 \cdot 0{,}31\,\text{m} = 0{,}39\,\text{m}$. Ehdosta $x = 6{,}0\,\text{m}$ saadaan
+
+$$\begin{aligned} t &= \dfrac{6{,}0\,\text{m} - 0{,}39\,\text{m}}{0{,}80\,\text{m/s}} \\ &= 7{,}0\,\text{s} \end{aligned}$$
+**Vastaus:** todellinen nopeus on $0{,}80\,\text{m/s}$, kaksi merkitsevää numeroa kuten mittanauhan arvoissa. Ohjelman antama $0{,}64\,\text{m/s}$ on $20\,\%$ liian pieni. Kärry on todellisessa paikassa $6{,}0\,\text{m}$ noin $7{,}0\,\text{s}$ kuluttua.
+**Järkevyys:** Mittanauha näytti lyhyemmältä kuin se on. Siksi kaikki ohjelman pituudet ovat liian pieniä, ja korjauskertoimen pitää olla suurempi kuin yksi. Näin on, koska $1{,}25$ on suurempi kuin yksi. Tarkistus laskemalla takaisin: $0{,}80\,\text{m/s} \cdot 5{,}0\,\text{s} = 4{,}0\,\text{m}$ on kärryn todellinen siirtymä. Ohjelman siirtymä $3{,}2\,\text{m}$ on $0{,}8$-kertainen siihen nähden. Ennuste $7{,}0\,\text{s}$ on kaukana mittausvälin päästä. Mittaus päättyy hetkeen $5{,}0\,\text{s}$, joten ennuste ulottuu noin $40\,\%$ mittausaikaa pidemmälle. Ennuste on luotettava vain, jos rata on tasainen, kärry jatkaa vakionopeudella eikä rata pääty ennen $6{,}0\,\text{m}$:ä. Mittakaavavirhe on systemaattinen: se vääristää jokaista mittausta samaan suuntaan samalla kertoimella. Siksi mittausten toistaminen ei poista sitä keskiarvossa. Satunnaisvirhe taas hajottaa pisteitä suoran molemmille puolille, ja se pienenee toistamalla. Virhe korjataan vain kalibroimalla mittakaava tunnetulla pituudella samalta etäisyydeltä kuin kärryn rata.
+
+## fy4-1-L3-05
+**Annettu:** rekan pisteet $(t;\, x)$ hetkillä $0\ldots40\,\text{s}$, esim. $(0\,\text{s};\, 205\,\text{m})$ ja $(40\,\text{s};\, 598\,\text{m})$; poliisiauto: $x = 0$ hetkellä $t_0 = 8{,}0\,\text{s}$, nopeus $v_\text{P} = 16\,\text{m/s}$
+**Kysytty:** paikka $x$, jossa poliisiauto saavuttaa rekan, yksikössä $\text{m}$, sekä ennusteen luotettavuus
+**Periaate:** Rekan liike on tasaista. Siksi sen $(t, x)$-pisteet sovitetaan suoralla, jonka kulmakerroin on nopeus ja leikkauskohta paikka-akselilla on alkupaikka. Poliisiauton paikka saadaan tasaisen liikkeen yhtälöstä, jossa aika lasketaan sen ohitushetkestä. Auto saavuttaa rekan, kun paikat ovat yhtä suuret samalla hetkellä.
+**Kuvaajan lukeminen:** Pisteet merkitään kuvaajaan, ja suora sovitetaan niiden läpi. Suora kulkee lähellä pisteitä $(0\,\text{s};\, 203\,\text{m})$ ja $(40\,\text{s};\, 598\,\text{m})$. Niistä rekan nopeus on $v_\text{R} = \dfrac{598\,\text{m} - 203\,\text{m}}{40\,\text{s}} \approx 9{,}9\,\text{m/s}$ ja alkupaikka on $x_{0\text{R}} \approx 203\,\text{m}$.
+**Kaava:** rekka $x_\text{R} = x_{0\text{R}} + v_\text{R}\,t$ ja poliisiauto $x_\text{P} = v_\text{P}\,(t - t_0)$. Ehdosta $x_\text{R} = x_\text{P}$ saadaan
+$$t = \dfrac{x_{0\text{R}} + v_\text{P}\,t_0}{v_\text{P} - v_\text{R}}$$
+ja paikka on $x = x_{0\text{R}} + v_\text{R}\,t$.
+**Muunnokset:** Kaikki suureet ovat yksiköissä $\text{m}$, $\text{s}$ ja $\text{m/s}$, joten muunnoksia ei tarvita.
+**Sijoitus:**
+
+$$\begin{aligned} t &= \dfrac{203\,\text{m} + 16\,\text{m/s} \cdot 8{,}0\,\text{s}}{16\,\text{m/s} - 9{,}9\,\text{m/s}} \\ &= \dfrac{331\,\text{m}}{6{,}1\,\text{m/s}} \\ &= 54\,\text{s} \end{aligned}$$
+
+$$\begin{aligned} x &= 203\,\text{m} + 9{,}9\,\text{m/s} \cdot 54\,\text{s} \\ &= 7{,}4 \cdot 10^2\,\text{m} \end{aligned}$$
+**Vastaus:** $7{,}4 \cdot 10^2\,\text{m}$ eli noin $740\,\text{m}$, kaksi merkitsevää numeroa. Nopeuksien erotus $16 - 9{,}9 = 6{,}1\,\text{m/s}$ rajoittaa tarkkuutta.
+**Järkevyys:** Poliisiauton paikka hetkellä $54\,\text{s}$ on $16\,\text{m/s} \cdot (54\,\text{s} - 8{,}0\,\text{s}) = 7{,}4 \cdot 10^2\,\text{m}$. Se on sama kuin rekan paikka, joten ratkaisu täsmää. Poliisiauto on rekkaa nopeampi, joten saavuttaminen on mahdollista. Ennuste on epävarma, koska aineisto päättyy hetkeen $40\,\text{s}$. Saavuttaminen tapahtuu hetkellä $54\,\text{s}$, eli $14\,\text{s}$ aineiston ulkopuolella. Ennuste olettaa, että rekka ajaa koko ajan samalla nopeudella samaa suoraa tietä. Aineisto ei todista sitä. Pieni virhe rekan nopeudessa kasvaa ennusteessa, koska nopeuksien erotus on pieni. Jos rekan nopeus olisi $0{,}2\,\text{m/s}$ suurempi, aika olisi noin $3\,\%$ pidempi.

@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d363d2c649b787b2
+CONTENT-HASH: 140890ba59fc47db
 
 ## Blocking
-(none)
 
 ## Polish
-- L3-02: the prompt asks "Saavuttaako juoksija bussin?" but only the 4,0 m is graded; accept the gap as evidence or add "Perustele vihkoon". The task mirrors the lesson's maximum-gap argument and is good transfer.
-- L2-03 asks for a sketch and justification but only `t` is checked; the solution's "Kuvaajan lukeminen" lets the student self-assess, which is enough.
-- L2-02 "Kaksi junaa lähtee" reads better as "lähtevät".
+- exercises.json L1-06 — "Kahden auton nopeuksia kuvaavat (t,v)-kuvaajat on piirretty samaan koordinaatistoon" refers to a graph the student cannot see; attach a figure or write "Kuvittele kahden auton (t,v)-kuvaajat samassa koordinaatistossa: ne leikkaavat hetkellä t = 4,0 s."
+- exercises.json L2-05 — kind says graph but only the end rows are used; add "Piirrä pisteet ja sovita suorat" and read the speeds from the fits, or drop "graph" from kind.
+- exercises.json L2-07 — the gap-greatest-at-equal-speeds idea is the lesson's own; asking "Milloin kärryt ovat taas samassa paikassa?" (12 s) would make the student act on the result.
+- exercises.json L1-07 — start delay needs t − t0 and a rearranged equation; sits at the top of level 1.
+- solutions.md L3-05 Mallivastaus — add one numeric line: with the 11,1 m/s cap the car passes at about 9,3 s and 56 m.
 
 ## Checked
-- Levels 5/4/3; none repeats the worked example or exp-3; L3-01 (runner -8,0 m, bus 1,0 m/s², 2,0 s) needs the quadratic and the first root.
-- Rising demand: one formula (L1), conversions and graph reading (L2), reasoning and unfamiliar contexts (L3-02 no meeting and closest approach, L3-03 head-on with acceleration).
-- Solutions follow the seven parts, symbolic first, units and conversions shown; L1-04 and L2-04 show how the graph is read.
-- Answers verified: L3-02 4,0 m, L3-03 10 s, L2-04 3,75 s (3,8 s inside tolerance).
-- `kaksi-karrya` has no marked crossing; its description does not give the answer.
-- Finnish and glossary terms consistent with the lesson; "kohtaavat" for head-on cases.
-- Hash unchanged at the end.
+- Round 2. Earlier report had no Blocking items; the only change is L3-04 Vastaus.
+- L3-04 closing speed at the end of the overtake: 29 m/s + 20 m/s = 49 m/s, so 33 m : 49 m/s ≈ 0,67 s ≈ 0,7 s; correct and now says "ohituksen lopussa", which fixes the earlier 40 m/s (the speeds at the start) inconsistency.
+- Numbers still match: t = 6,0 s, s = 147 m, d = 267 m, 29 m/s = 104 km/h > 80 km/h; the conclusion (do not overtake) is unchanged and argued.
+- Levels fit and plan +3/+3/+2 met; new L3 tasks are multi-step YO style and do not repeat the worked example.
+- MC distractors are misconception-based with repairing feedback; solutions complete (principle, formula, units, substitution, significant figures, sanity check).
+- Figure kaksi-karrya is needed and its description gives the same data without the meeting point.

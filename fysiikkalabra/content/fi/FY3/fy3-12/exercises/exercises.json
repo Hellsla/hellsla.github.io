@@ -160,7 +160,7 @@
     {
       "id": "fy3-12-L2-04",
       "level": 2,
-      "text": "Lumi ja jää heijastavat auringonvaloa paljon paremmin kuin tumma merenpinta tai maa. Oletetaan hypoteettisesti, että lumen ja jään väheneminen pienentäisi maapallon heijastamaa osuutta Auringon säteilystä $30{,}0\\,\\%$:sta $29{,}0\\,\\%$:iin (todellinen muutos on pienempi). Auringosta tulee keskimäärin $340\\,\\text{W/m}^2$. Kuinka paljon maapallon imemä teho neliömetriä kohti kasvaisi? Vertaa tulosta nykyiseen energiaepätasapainoon, joka on noin $1{,}0\\,\\text{W/m}^2$.",
+      "text": "Lumi ja jää heijastavat auringonvaloa paljon paremmin kuin tumma merenpinta tai maa.\n\nOletetaan hypoteettisesti, että lumen ja jään väheneminen pienentäisi maapallon heijastamaa osuutta Auringon säteilystä $30{,}0\\,\\%$:sta $29{,}0\\,\\%$:iin (todellinen muutos on pienempi). Auringosta tulee keskimäärin $340\\,\\text{W/m}^2$.\n\nKuinka paljon maapallon imemä teho neliömetriä kohti kasvaisi? Vertaa tulosta nykyiseen energiaepätasapainoon, joka on noin $1{,}0\\,\\text{W/m}^2$.",
       "answer": 3.4,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -270,7 +270,7 @@
     {
       "id": "fy3-12-L3-01",
       "level": 3,
-      "text": "Hiihtoretkelle pakataan termospulloon $0{,}60\\,\\text{kg}$ kuumaa kahvia. Pullossa on kaksi sisäkkäistä seinää, joiden välistä on poistettu ilma, ja seinien pinnat ovat kiiltävät. Selitä, mitä lämmön siirtymistapoja tyhjiö ja kiiltävät pinnat estävät ja miten. Minkä kautta lämpöä silti karkaa? Pullosta karkaa lämpöä keskimäärin $1{,}4\\,\\text{W}$:n teholla. Kuinka monta kelviniä kahvi jäähtyy $10{,}0\\,\\text{h}$:ssa? Kahvin ominaislämpökapasiteetti on sama kuin veden, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
+      "text": "Hiihtoretkelle pakataan termospulloon $0{,}60\\,\\text{kg}$ kuumaa kahvia. Pullossa on kaksi sisäkkäistä seinää, joiden välistä on poistettu ilma, ja seinien pinnat ovat kiiltävät.\n\nSelitä, mitä lämmön siirtymistapoja tyhjiö ja kiiltävät pinnat estävät ja miten. Minkä kautta lämpöä silti karkaa?\n\nPullosta karkaa lämpöä keskimäärin $1{,}4\\,\\text{W}$:n teholla. Kuinka monta kelviniä kahvi jäähtyy $10{,}0\\,\\text{h}$:ssa? Kahvin ominaislämpökapasiteetti on sama kuin veden, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
       "answer": 20,
       "unit": "K",
       "tolerance": 0.02
@@ -278,7 +278,7 @@
     {
       "id": "fy3-12-L3-02",
       "level": 3,
-      "text": "Kasvihuonekaasujen lisääntymisen vuoksi maapallo saa nykyään keskimäärin $1{,}0\\,\\text{W/m}^2$ enemmän tehoa kuin säteilee avaruuteen. Maapallon pinta-ala on $5{,}1 \\cdot 10^{14}\\,\\text{m}^2$. Kuinka paljon ylimääräistä energiaa maapallolle kertyy vuodessa (365 vuorokautta)? Noin $90\\,\\%$ siitä varastoituu meriin. Oletetaan, että se lämmittää tasaisesti merien ylintä 700 metrin kerrosta, jonka massa on $2{,}6 \\cdot 10^{20}\\,\\text{kg}$ ja ominaislämpökapasiteetti $4{,}0 \\cdot 10^{3}\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Kuinka monta kelviniä kerros lämpenee kymmenessä vuodessa? Miksi suuri vesimassa hidastaa ilmaston lämpenemistä?",
+      "text": "Kasvihuonekaasujen lisääntymisen vuoksi maapallo saa nykyään keskimäärin $1{,}0\\,\\text{W/m}^2$ enemmän tehoa kuin säteilee avaruuteen. Maapallon pinta-ala on $5{,}1 \\cdot 10^{14}\\,\\text{m}^2$.\n\nKuinka paljon ylimääräistä energiaa maapallolle kertyy vuodessa (365 vuorokautta)?\n\nNoin $90\\,\\%$ siitä varastoituu meriin. Oletetaan, että se lämmittää tasaisesti merien ylintä 700 metrin kerrosta, jonka massa on $2{,}6 \\cdot 10^{20}\\,\\text{kg}$ ja ominaislämpökapasiteetti $4{,}0 \\cdot 10^{3}\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.\n\nKuinka monta kelviniä kerros lämpenee kymmenessä vuodessa? Miksi suuri vesimassa hidastaa ilmaston lämpenemistä?",
       "answer": 0.139,
       "unit": "K",
       "tolerance": 0.02
@@ -286,7 +286,7 @@
     {
       "id": "fy3-12-L3-03",
       "level": 3,
-      "text": "Omakotitaloa lämmittää ilma-vesilämpöpumppu, jonka lämpökerroin on lämmityskaudella keskimäärin 2,8. Yläpohjaan puhalletaan lisää eristevillaa, jolloin sen U-arvo pienenee $0{,}35\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$:sta $0{,}10\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$:iin. Yläpohjan pinta-ala on $100\\,\\text{m}^2$. Lämmityskausi kestää $5800\\,\\text{h}$, ja sisä- ja ulkolämpötilan ero on sen aikana keskimäärin $19\\,\\text{K}$. Kuinka monta kilowattituntia sähköä lisäeristys säästää lämmityskaudessa? Naapurin mielestä eristämisellä ei ole lämpöpumpun omistajalle väliä, koska pumppu ottaa lämmön ilmaiseksi ulkoilmasta. Perustele, miksi eristäminen silti kannattaa.",
+      "text": "Omakotitaloa lämmittää ilma-vesilämpöpumppu, jonka lämpökerroin on lämmityskaudella keskimäärin 2,8.\n\nYläpohjaan puhalletaan lisää eristevillaa, jolloin sen U-arvo pienenee $0{,}35\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$:sta $0{,}10\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$:iin. Yläpohjan pinta-ala on $100\\,\\text{m}^2$. Lämmityskausi kestää $5800\\,\\text{h}$, ja sisä- ja ulkolämpötilan ero on sen aikana keskimäärin $19\\,\\text{K}$.\n\nKuinka monta kilowattituntia sähköä lisäeristys säästää lämmityskaudessa?\n\nNaapurin mielestä eristämisellä ei ole lämpöpumpun omistajalle väliä, koska pumppu ottaa lämmön ilmaiseksi ulkoilmasta. Perustele, miksi eristäminen silti kannattaa.",
       "answer": 984,
       "unit": "kWh",
       "tolerance": 0.02

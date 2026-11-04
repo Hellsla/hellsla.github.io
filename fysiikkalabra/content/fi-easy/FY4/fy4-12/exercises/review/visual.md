@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 529acdbf752af739
+CONTENT-HASH: bf1ade76d9a3681f
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the plain Finnish is short-sentenced and matches fi in every number)
 
 ## Polish
-- [Minor] open-exercises-1280-4, task 4 graph — gridlines every 10 m, time ticks every 2 s; readable, optional minor grid.
-- [Minor] Solution cards are long at 390 px; acceptable, collapsed by default.
-- [Minor] "Vastauksessa on kaksi merkitsevää numeroa kuten lähtöarvoissa" repeats in every solution; fine as a fixed step.
+(none)
 
 ## Checked
-- contact-5 (exit ticket, Level 1 and 2 with solutions open); open-exercises-1280-4 at full size (task 3 reasonableness, task 4 graph, solution layout).
-- Finnish editorial voice checked: instructions clear, decimal comma and glossary terms (kohtaaminen, ohitus, paikka) consistent, units upright with thin space.
-- No English words, no overflow or clipping seen in the exercise captures.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- Screenshots of the new tasks (e.g. open-exercises-L2-1280-7 / L3-1280-6) opened: maths aligned, SI units upright, nothing clipped or overflowing.
+- Data table captions and column headers match fi; decimals in tables use a point as in fi.

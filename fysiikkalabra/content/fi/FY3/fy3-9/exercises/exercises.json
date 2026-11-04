@@ -130,7 +130,7 @@
     {
       "id": "fy3-9-L2-03",
       "level": 2,
-      "text": "Fysiikan tunnilla kertakäyttöruiskun kärki liitettiin painemittariin, ja ruiskun mäntää liikutettiin hitaasti, jotta ilman lämpötila pysyi samana. Mitatut tilavuudet $V$ (ml) olivat 10,0; 12,5; 15,0; 20,0; 25,0 ja 30,0, ja niitä vastaavat paineet $p$ (kPa) olivat 203; 159; 134; 99; 81 ja 66. Laske taulukkoon sarake $1/V$, piirrä $p$ $1/V$:n funktiona ja sovita pisteisiin origon kautta kulkeva suora. Suoran kulmakerroin on $pV$. Anna se jouleina.",
+      "text": "Fysiikan tunnilla kertakäyttöruiskun kärki liitettiin painemittariin, ja ruiskun mäntää liikutettiin hitaasti, jotta ilman lämpötila pysyi samana.\n\nMitatut tilavuudet $V$ (ml) olivat 10,0; 12,5; 15,0; 20,0; 25,0 ja 30,0, ja niitä vastaavat paineet $p$ (kPa) olivat 203; 159; 134; 99; 81 ja 66.\n\nLaske taulukkoon sarake $1/V$, piirrä $p$ $1/V$:n funktiona ja sovita pisteisiin origon kautta kulkeva suora. Suoran kulmakerroin on $pV$. Anna se jouleina.",
       "answer": 2.0,
       "unit": "J",
       "tolerance": 0.05
@@ -138,7 +138,7 @@
     {
       "id": "fy3-9-L2-04",
       "level": 2,
-      "text": "Kuumailmapallon kuoren tilavuus on $2800\\,\\text{m}^3$, ja kuoren alaosassa on aukko. Kuori on täynnä $10\\,{}^\\circ\\text{C}$:n ilmaa, joka lämmitetään polttimella $100\\,{}^\\circ\\text{C}$:seen. Paine kuoren sisällä pysyy ulkoilman paineena. Alun perin kuoressa ollut ilma lämpenee kokonaan $100\\,{}^\\circ\\text{C}$:seen. Kuinka monta kuutiometriä tästä $100\\,{}^\\circ\\text{C}$:n ilmasta ei mahdu kuoreen vaan on työntynyt ulos aukosta?",
+      "text": "Kuumailmapallon kuoren tilavuus on $2800\\,\\text{m}^3$, ja kuoren alaosassa on aukko. Kuori on täynnä $10\\,{}^\\circ\\text{C}$:n ilmaa, joka lämmitetään polttimella $100\\,{}^\\circ\\text{C}$:seen. Paine kuoren sisällä pysyy ulkoilman paineena.\n\nAlun perin kuoressa ollut ilma lämpenee kokonaan $100\\,{}^\\circ\\text{C}$:seen.\n\nKuinka monta kuutiometriä tästä $100\\,{}^\\circ\\text{C}$:n ilmasta ei mahdu kuoreen vaan on työntynyt ulos aukosta?",
       "answer": 890,
       "unit": "m³",
       "tolerance": 0.02
@@ -268,7 +268,7 @@
     {
       "id": "fy3-9-L3-01",
       "level": 3,
-      "text": "Sukeltaja on järvessä $20{,}0\\,\\text{m}$:n syvyydessä ja puhaltaa ilmakuplan, jonka tilavuus on $2{,}0\\,\\text{cm}^3$. Kupla nousee pintaan. Ilmanpaine on $101\\,\\text{kPa}$ ja veden tiheys $1000\\,\\text{kg/m}^3$. Oleta, että veden lämpötila on sama koko matkalla, eikä kuplan ilma liukene veteen. Mikä on kuplan tilavuus pinnalla? Perustele tuloksen avulla, miksi paineilmalla sukeltava ei saa pidättää hengitystään noustessaan pintaan.",
+      "text": "Sukeltaja on järvessä $20{,}0\\,\\text{m}$:n syvyydessä ja puhaltaa ilmakuplan, jonka tilavuus on $2{,}0\\,\\text{cm}^3$. Kupla nousee pintaan.\n\nIlmanpaine on $101\\,\\text{kPa}$ ja veden tiheys $1000\\,\\text{kg/m}^3$. Oleta, että veden lämpötila on sama koko matkalla, eikä kuplan ilma liukene veteen.\n\nMikä on kuplan tilavuus pinnalla? Perustele tuloksen avulla, miksi paineilmalla sukeltava ei saa pidättää hengitystään noustessaan pintaan.",
       "answer": 5.9,
       "unit": "cm³",
       "tolerance": 0.02
@@ -276,7 +276,7 @@
     {
       "id": "fy3-9-L3-02",
       "level": 3,
-      "text": "Auton renkaat täytetään $20\\,{}^\\circ\\text{C}$:n tallissa, ja rengaspainemittari näyttää $250{,}0\\,\\text{kPa}$. Mittari näyttää ylipainetta eli sitä, kuinka paljon renkaan ilman paine on ilmanpainetta suurempi. Ilmanpaine on $101\\,\\text{kPa}$. Yöllä auto seisoo pihalla, ja renkaan ilma jäähtyy $-20\\,{}^\\circ\\text{C}$:seen. Renkaan tilavuus pysyy käytännössä samana, eikä ilmaa pääse ulos. Mitä mittari näyttää pakkasaamuna? Perustele, miksi mittarin lukemaa ei voi sijoittaa suoraan kaavaan $p_1/T_1 = p_2/T_2$.",
+      "text": "Auton renkaat täytetään $20\\,{}^\\circ\\text{C}$:n tallissa, ja rengaspainemittari näyttää $250{,}0\\,\\text{kPa}$. Mittari näyttää ylipainetta eli sitä, kuinka paljon renkaan ilman paine on ilmanpainetta suurempi. Ilmanpaine on $101\\,\\text{kPa}$.\n\nYöllä auto seisoo pihalla, ja renkaan ilma jäähtyy $-20\\,{}^\\circ\\text{C}$:seen. Renkaan tilavuus pysyy käytännössä samana, eikä ilmaa pääse ulos.\n\nMitä mittari näyttää pakkasaamuna? Perustele, miksi mittarin lukemaa ei voi sijoittaa suoraan kaavaan $p_1/T_1 = p_2/T_2$.",
       "answer": 202,
       "unit": "kPa",
       "tolerance": 0.02
@@ -284,7 +284,7 @@
     {
       "id": "fy3-9-L3-03",
       "level": 3,
-      "text": "Polkupyörän pumpun sylinteri on $40{,}0\\,\\text{cm}$ pitkä ja yhtä paksu koko matkalta. Kun mäntä on vedetty ylös, sylinteri on täynnä ulkoilmaa, jonka paine on $101\\,\\text{kPa}$. Renkaan ylipaine on $300{,}0\\,\\text{kPa}$. Pumpun venttiili päästää ilmaa renkaaseen vasta, kun sylinterin ilman paine on yhtä suuri kuin renkaan ilman paine. Kuinka pitkän matkan mäntää on painettava, ennen kuin ilmaa alkaa virrata renkaaseen? Oleta, että lämpötila pysyy samana ja letkun tilavuus on mitätön. Perustele, miksi kovan renkaan pumppaaminen tuntuu tehottomalta.",
+      "text": "Polkupyörän pumpun sylinteri on $40{,}0\\,\\text{cm}$ pitkä ja yhtä paksu koko matkalta. Kun mäntä on vedetty ylös, sylinteri on täynnä ulkoilmaa, jonka paine on $101\\,\\text{kPa}$. Renkaan ylipaine on $300{,}0\\,\\text{kPa}$.\n\nPumpun venttiili päästää ilmaa renkaaseen vasta, kun sylinterin ilman paine on yhtä suuri kuin renkaan ilman paine.\n\nKuinka pitkän matkan mäntää on painettava, ennen kuin ilmaa alkaa virrata renkaaseen? Oleta, että lämpötila pysyy samana ja letkun tilavuus on mitätön. Perustele, miksi kovan renkaan pumppaaminen tuntuu tehottomalta.",
       "answer": 29.9,
       "unit": "cm",
       "tolerance": 0.02

@@ -183,7 +183,23 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 **Periaate:** Eristetyssä kalorimetrissä energia säilyy: vesi luovuttaa lämmön, joka lämmittää jään $0\,{}^\circ\text{C}$:seen, sulattaa sen ja lämmittää sulamisveden lopputilan lämpötilaan $T$. Jos jään lämpeneminen unohdetaan, kaikki veden luovuttama lämpö katsotaan sulattamiseen kuluneeksi.
 **Kaava:** $c_\text{v} m_\text{v} (T_\text{v} - T) = c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j} + c_\text{v} m_\text{j} T$, josta $s = \dfrac{c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{v} m_\text{j} T - c_\text{j} m_\text{j} \Delta T_\text{j}}{m_\text{j}}$. Kohdassa a) on $\Delta T_\text{j} = 0$.
 **Muunnokset:** Lämpötilan muutokset ovat samat celsiusasteina ja kelvineinä: $T_\text{v} - T_1 = 21{,}8\,\text{K}$ ja $T_\text{v} - T_2 = 23{,}8\,\text{K}$, ja mittauksen 2 jäälle $\Delta T_\text{j} = 0\,{}^\circ\text{C} - (-18{,}0\,{}^\circ\text{C}) = 18{,}0\,\text{K}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
-**Sijoitus:** a) Mittaus 1: $s_1 = \dfrac{4190 \cdot (0{,}200 \cdot 21{,}8 - 0{,}0500 \cdot 8{,}2)\,\text{J}}{0{,}0500\,\text{kg}} = \dfrac{4190 \cdot 3{,}95\,\text{J}}{0{,}0500\,\text{kg}} = 331\,000\,\tfrac{\text{J}}{\text{kg}} = 331\,\tfrac{\text{kJ}}{\text{kg}}$. Mittaus 2: $s_2 = \dfrac{4190 \cdot (0{,}200 \cdot 23{,}8 - 0{,}0500 \cdot 6{,}2)\,\text{J}}{0{,}0500\,\text{kg}} = \dfrac{4190 \cdot 4{,}45\,\text{J}}{0{,}0500\,\text{kg}} = 372\,900\,\tfrac{\text{J}}{\text{kg}} = 373\,\tfrac{\text{kJ}}{\text{kg}}$. c) Jään lämpeneminen on $c_\text{j} m_\text{j} \Delta T_\text{j} = 2100 \cdot 0{,}0500 \cdot 18{,}0\,\text{J} = 1890\,\text{J}$, joten $s_2' = \dfrac{4190 \cdot 4{,}45\,\text{J} - 1890\,\text{J}}{0{,}0500\,\text{kg}} = \dfrac{18\,645{,}5\,\text{J} - 1890\,\text{J}}{0{,}0500\,\text{kg}} = \dfrac{16\,755{,}5\,\text{J}}{0{,}0500\,\text{kg}} = 335\,100\,\tfrac{\text{J}}{\text{kg}}$
+**Sijoitus:** a) Mittaus 1: 
+
+Ensin $0{,}200 \cdot 21{,}8 - 0{,}0500 \cdot 8{,}2 = 3{,}95$, joten
+
+$$\begin{aligned} s_1 &= \dfrac{4190 \cdot 3{,}95\,\text{J}}{0{,}0500\,\text{kg}} \\ &= 331\,000\,\tfrac{\text{J}}{\text{kg}} \\ &= 331\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
+
+Mittaus 2: 
+
+Ensin $0{,}200 \cdot 23{,}8 - 0{,}0500 \cdot 6{,}2 = 4{,}45$, joten
+
+$$\begin{aligned} s_2 &= \dfrac{4190 \cdot 4{,}45\,\text{J}}{0{,}0500\,\text{kg}} \\ &= 372\,900\,\tfrac{\text{J}}{\text{kg}} \\ &= 373\,\tfrac{\text{kJ}}{\text{kg}} \end{aligned}$$
+
+c) Jään lämpeneminen on $c_\text{j} m_\text{j} \Delta T_\text{j} = 2100 \cdot 0{,}0500 \cdot 18{,}0\,\text{J} = 1890\,\text{J}$, joten 
+
+$$\begin{aligned} s_2' &= \dfrac{4190 \cdot 4{,}45\,\text{J} - 1890\,\text{J}}{0{,}0500\,\text{kg}} \\ &= \dfrac{18\,645{,}5\,\text{J} - 1890\,\text{J}}{0{,}0500\,\text{kg}} \\ &= \dfrac{16\,755{,}5\,\text{J}}{0{,}0500\,\text{kg}} \\ &= 335\,100\,\tfrac{\text{J}}{\text{kg}} \end{aligned}$$
+
+
 **Vastaus:** a) Alkuperäiset tulokset ovat mittaukselle 1 noin $331\,\tfrac{\text{kJ}}{\text{kg}}$ ja mittaukselle 2 noin $373\,\tfrac{\text{kJ}}{\text{kg}}$; jälkimmäinen poikkeaa taulukkoarvosta noin $12\,\%$ ylöspäin. b) Syy on se, että pakastimesta otetun jään lämmittäminen $0\,{}^\circ\text{C}$:seen vei osan veden luovuttamasta lämmöstä, mutta lasku katsoi sen sulamisen lämmöksi, joten $s$ tuli liian suureksi. c) Korjattu sulamislämpö on $335\,\tfrac{\text{kJ}}{\text{kg}}$, kolme merkitsevää numeroa kuten massoissa ja lämpötiloissa; se poikkeaa taulukkoarvosta alle $1\,\%$.
 **Järkevyys:** Korjaus on suuruusluokaltaan oikea: jään lämmittäminen vaatii $1890\,\text{J}$ ja sulattaminen $0{,}0500 \cdot 334\,000\,\text{J} = 16\,700\,\text{J}$, joten lämmitys on noin $11\,\%$ sulatuksen lämmöstä, ja virhe $373 - 335 = 38\,\tfrac{\text{kJ}}{\text{kg}}$ on sen verran. Korjattu tulos on lähellä mittauksen 1 tulosta ($331\,\tfrac{\text{kJ}}{\text{kg}}$), ja molemmat ovat lähellä taulukkoarvoa, kuten pitääkin, kun sama aine mitataan kahdesti.
 
