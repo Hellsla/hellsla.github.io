@@ -149,12 +149,12 @@
       "kind": [
         "data"
       ],
-      "text": "Kaksi suljettua ilmamäärää lämmitetään vesihauteessa. Astiassa A mitataan ilman paine $p$ ja astiassa B ilman tilavuus $V$. Molempien ilma on vesihauteen lämpötilassa $\\theta$ (taulukko, esimerkkiaineisto).\n\na) Laske astian A jokaiselle riville suhteet $p/\\theta$ ja $p/T$ sekä astian B jokaiselle riville suhde $V/T$, kun $T$ on kelvinlämpötila. Päättele laskujesi avulla, kumpi astia esittää isokoorista ja kumpi isobaarista tilanmuutosta, ja perustele, kun $T$ on kelvinlämpötila,, miksi lämpötilan on oltava kelvineinä.\n\nb) Ennusta astian A paine, kun vesihaude kiehuu ja sen lämpötila on $100\\,{}^\\circ\\text{C}$.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "text": "Kaksi suljettua ilmamäärää lämmitetään vesihauteessa. Astiassa A mitataan ilman paine $p$ ja astiassa B ilman tilavuus $V$. Molempien ilma on vesihauteen lämpötilassa $\\theta$ (taulukko, esimerkkiaineisto).\n\na) Laske astian A jokaiselle riville suhteet $p/\\theta$ ja $p/T$ sekä astian B jokaiselle riville suhde $V/T$, kun $T$ on kelvinlämpötila. Päättele laskujesi avulla, kumpi astia esittää isokoorista ja kumpi isobaarista tilanmuutosta, ja perustele, miksi lämpötilan on oltava kelvineinä.\n\nb) Ennusta astian A paine, kun vesihaude kiehuu ja sen lämpötila on $100\\,{}^\\circ\\text{C}$.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "answer": 127,
       "unit": "kPa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Ilman paine pullossa A ja tilavuus ruiskussa B (esimerkkiaineisto)",
+        "caption": "Ilman paine astiassa A ja tilavuus astiassa B (esimerkkiaineisto)",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p_\\text{A}\\,(\\text{kPa})$",
