@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 8824874f7b9c2f5a
-Mode: full
-Round: 1
+CONTENT-HASH: abd49d96b1b5b3bc
 
 ## Blocking
-(none)
-
-## Fixed
-- exercises.json L3-04 — "Lähtötasot ovat kuitenkin eri tasoja" -> "Jokaisella viivalla on kuitenkin eri lähtötaso"; "ionisoi atomin" explained ("eli irrottaa elektronin"); question about the limit wavelength shortened.
-- exercises.json L3-05 — "virityksen taso" -> "viritystaso"; L2-06 — condition reworded ("perustilan ja jonkin ylemmän tason energioiden erotus").
-- solutions.md L2-06 — "vastaavuuden raja" -> "sallittu poikkeama"; Answer "$3$ fotonia" -> "$3$. Atomi absorboi kolme fotonia:" (answer box split the old text).
-- solutions.md L3-05 — "kaskadi" -> "siirtymäketju".
 
 ## Polish
-- L3-05 solution Substitution is one long paragraph (same in fi); structure left as in the reviewed Finnish.
+- exercises.json L1-08 — the transition 2 → 4 (2,55 eV, 486 nm) is the same line as L1-03 (486 nm → 2,55 eV), so two level-1 tasks give the same number (physics right). — Optionally use 3 → 5 (0,967 eV), or keep it and name the link to L1-03.
+- exercises.json L1-08 `kind: ["data"]` — the task has no data table. — Use the kind the schema uses for a one-formula calculation, or drop it.
+- solutions.md:187 (L3-04, first bullet) — "(ylätaso kokonaisluku)" reads as if the condition held. — Write "(ylätason $n_\text{y}$ olisi oltava kokonaisluku)".
+- solutions.md L3-05 — the Substitution is one long paragraph (same in fi). — Optionally split it into steps.
 
 ## Checked
-- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) compared with content/fi by script: ids, answers, units, tolerances, correct flags, choices, feedback, data cells and every number identical (decimal point in JSON, LaTeX per language).
-- solutions.md of the new tasks: all numbers and formulas equal the Finnish; check_i18n.py fi-easy: 0 errors.
-- Recomputed: L1-06 4->1 (97.3 nm), L1-07 121.6 nm, L1-08 2.55 eV, L2-05 13.6 eV, L2-06 3 photons, L2-07 13.06 eV, L3-04 n=3 and 365 THz, L3-05 n=4 and 97.25 nm; all match.
-- No Finnish left in the plain Finnish (selkosuomi) text where it should not be.
+- Only change since the passed version: commit 41862d574 (answers.py, numpy.polyfit → `_polyfit1`); exercises.json and solutions.md are unchanged (git diff e8ad9bdb8..HEAD).
+- `_polyfit1` is the ordinary least-squares line (slope Σ(x−x̄)(y−ȳ)/Σ(x−x̄)², intercept ȳ − k x̄); no numpy import is left, and answers.py runs with numpy blocked.
+- Old (numpy) and new answers.py outputs compared in one script: all 19 numeric answers identical (max difference 0).
+- Independent recomputation (own formulas; L2-05 via the normal equations): slope −3288,75 THz → E_ion = 13,60 eV; intercept 822,0 THz = 3,40 eV = 13,6 eV/4; the fitted line passes through 723,3 THz and 460,2 THz at 0,0300 and 0,1100, as the solution says ✓.
+- All other answers recomputed and agree with exercises.json within tolerance: L1-01..08, L2-01..07, L3-01..05 (e.g. L1-07 121,6 nm, L2-07 13,06 eV, L3-04 365,3 THz, L3-05 97,25 nm).
+- answer, unit, tolerance and correct flags identical in fi, en and fi-easy.
+- check_solutions.py fy8-3: 0 missing or incomplete; answers_shown.py: every shown answer agrees; lint_lesson.py: 0 errors (only word-count and palette warnings).
+- Hash abd49d96b1b5b3bc at the start and the end.
