@@ -1,20 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 776976f81cfa9ae4
+VERDICT: PASS
+CONTENT-HASH: cf52e4c26916eaa1
+ROUND: 2
 
 ## Blocking
-- exercises/solutions.md:155 (L2-07 c) — A: "lampun jälkeinen virta on joskus suurempi (mittaus 4) kuin ennen lamppua, mikä ei olisi mahdollista, jos virta kuluisi" is false. The pair in measurement 4 differs by 0,01 A, one display step, and the Periaate (line 153) itself says such differences in either direction come from the reading's uncertainty. A single higher reading is therefore entirely possible even if the current did drop slightly. The model solution teaches a wrong inference from data. Fix: replace the sentence with "Lisäksi erot ovat mittauksittain kumpaankin suuntaan eivätkä ylitä yhtä näyttöaskelta $0{,}01\,\text{A}$, joten ne selittyvät lukeman epävarmuudella."
 
 ## Polish
-- exercises.json:210 and :215 (L2-07): "Ampeerimittarin pienin lukema on 0,01 A" literally names the smallest value the meter shows, not its resolution (guardrails: keep the terms apart). Write "Ampeerimittarin resoluutio eli pienin näyttöaskel on $0{,}01\,\text{A}$" and use the same term in the answer and in solutions.md:155.
-- exercises.json:332 (L3-05): "kaikki johdon elektronit liikkuvat samalla nopeudella" should be "kaikki johdon vapaat elektronit", because the given count and the model are about free electrons only.
-- solutions.md:149 (L2-06 Periaate): "Virta kulkee mieluummin johtoa pitkin" gives the current a will. Write "Paksu johto päästää virran kulkemaan paljon helpommin kuin lampun hehkulanka, joten lähes koko virta kulkee johdon kautta."
-- L1-08 vs L2-02: the same N = It/e computation, and the level-1 task (two conversions) is harder than the level-2 one (none). Consider giving L1-08 the values in A and s, or swapping their levels.
-- Plan drift (docs/exercise-bank/FY6.md): L1-07 asks about an open switch instead of "mikä kaavio vastaa kuvattua piiriä", and L2-06 describes the two faulty circuits in words instead of the planned two diagrams. This is acceptable, but update the plan or the tasks so that they agree.
+- solutions.md:149 (L2-06 Periaate vs Mallivastaus b) — the Periaate now says "lähes koko virta kulkee johdon kautta", but the Mallivastaus says "Lampun läpi ei kulje virtaa". Make them agree (guardrail 6): in b) write "Lampun läpi kulkee vain mitättömän pieni virta, joten lamppu ei pala."
+- solutions.md:174 (L3-05 c) — the added sentence is right, but it gives no mechanism. Add the cause in one clause: "koska sähköinen vuorovaikutus eli työntö etenee piirissä lähes valon nopeudella, ja kaikki vapaat elektronit alkavat liikkua lähes samanaikaisesti."
+- Plan drift (docs/exercise-bank/FY6.md fy6-1), carried over and extended: L1-07 asks about an imagined open switch, not "mikä kaavio vastaa kuvattua piiriä". L2-06 describes the circuits in words, not with two diagrams. L1-08 now uses 0,25 A, but the plan still says 2,5 mA. Update the plan so that it matches the tasks.
 
 ## Checked
-- All 15 numeric answers recomputed in one script with my own formulas; they agree with answers.py and exercises.json: L1-08 9,36·10¹⁷, L2-05 22,8 C (mean 0,38 A), L3-04 12,5 Wh, L3-05 0,0192 mm/s.
-- L2-07 means 0,310 A and 0,306 A. L3-04: 3,35 Ah, U_ka 3,73 V, 45 kJ, estimate 13,4 Wh, 7,2 % too high. L3-05: 14,5 h for 1,0 m.
-- The data are realistic: 1,3·10²³ free electrons per metre is a copper wire of about 1,5 mm². The phone-battery data (4,0 → 3,4 V, about 12 Wh) and the dimming-lamp table are both plausible.
-- The tolerances accept each solution's rounded answer (23 C, 9,4·10¹⁷, 13 Wh at 4 %, 0,019 mm/s), counting the one-digit step rule in lesson.js.
-- MC L1-06 and L1-07: exactly one correct option each, and every distractor's feedback is right and matches the brief's misconceptions.
-- Notation (I, Q, t, U, E, N, e) matches the brief, and every new task has a complete solution that is symbolic first.
+- Hash cf52e4c26916eaa1 at start and end. Counts 8/7/5.
+- Round-1 Blocking (L2-07 c, the "mittaus 4" inference) resolved: the solution now says that the differences go in both directions, are no larger than one display step and come from the reading's uncertainty.
+- Round-1 Polish resolved: "resoluutio eli pienin näyttöaskel" in L2-07 task, answer and solution; "vapaat elektronit" in L3-05; the L2-06 Periaate no longer gives the current a will; L1-08 is no longer harder than L2-02 (no mA conversion).
+- L1-08 recomputed: N = 0,25 A · 60 s : e = 9,36·10¹⁹, so 9,4·10¹⁹. The text, the solution, answers.py and exercises.json agree, and the reasonableness estimate (15 C · 6,2·10¹⁸) is right.
+- I recomputed every answer from answers.py in one script and checked each new task with my own formulas: L2-05 22,8 C, L3-04 12,5 Wh, L3-05 0,0192 mm/s. All are within tolerance of exercises.json.
+- L3-04: removing the "noin 13 Wh" clause leaves a consistent rounding reason.
+- L2-06: "oikosulku" is now named, and the safety sentence about a real battery is exact.
+- MC L1-06 and L1-07: still exactly one correct option each, with correct feedback.

@@ -1,20 +1,23 @@
-VERDICT: PASS
-CONTENT-HASH: ec2ed7b04e946880
+VERDICT: FAIL
+CONTENT-HASH: f9e998c9ae9437e4
+ROUND: 2
 
 ## Blocking
+- [Major] fy6-2-L1-08 solutions.md, Järkevyys (open-exercises-1280-8) — "koska lukema on yli kolmasosa alueesta 20 V" is false: 5,98 V / 20 V = 0,299, just under a third — a wrong statement in a model solution of a new task — write "koska lukema on noin kolmasosa alueesta 20 V" (or "lähes kolmasosa").
 
 ## Polish
-- [Minor] data tables (L2-05, L2-07, L3-04) — numeric column headers are centred while values are left-aligned (template-wide) — align numeric cells with their headers.
-- [Minor] fy6-2-L1-08 — a level 1 task that needs the "% + n numeroa" rule; correct and solved step by step, but at the upper edge of level 1 — fine to keep, or move to L2 if the bank needs room.
-- [Minor] fy6-2-L2-07 d) — "kerro, auttaisiko toistaminen" is answered, but the solution could name that averaging reduces scatter 0,03 V, not the meter's 0,08 V limit; already implied in Järkevyys.
-- [Minor] fy6-2-L3-04 Järkevyys — "hieman alle 1,0 MΩ, joten jännite pienenee hieman" while the drop is 4,8 %; "noin 9 % pienempi" is more exact.
+- [Minor] data tables (L2-05, L2-07, L3-04) — numeric column headers sit at the right while values are left-aligned, so "U (V)" does not stand over its numbers (template-wide) — align numeric cells with their headers.
+- [Minor] fy6-2-L3-04 Järkevyys (open-exercises-L3-1280-7) — the sentence "Pienempien vastusten tapauksessa [box] mikä on lähes 6,00 V" is cut in two by the equation box — put the check in a sentence of its own or write the two lines inline.
+- [Minor] fy6-2-L1-08 — the task asks for the form U ± ΔU but the answer box takes only ΔU; fine, the solution gives both — optional: say "Ilmoita ensin mittaustulos muodossa ..., kirjoita sitten vastauslaatikkoon ΔU".
+- [Minor] fy6-2-L1-08 — a level 1 task with the "% + n numeroa" rule is at the upper edge of level 1 (carried over from the old L1-08, same type).
 
 ## Checked
-- open-exercises-1280-6 to -8 (L1-06, L1-07, L1-08: choices, feedback, solution cards, ± notation)
-- open-exercises-L2-1280-5, -6, -8, -9 (L2-05 table, aligned Sijoitus rows, L2-06, L2-07 table and solution)
-- open-exercises-L3-1280-6, -7 (L3-04 equations, fractions, boxes; L3-05 task and start of solution)
-- Not available: 360 px captures of the exercise cards; packet layout 360 px check ok.
-- Maths re-computed: 0,0304 A; 11,235 mV; 0,08245 V; 4,76 %; 2,90 Ω (117,71 Ω, 118 ± 3 Ω contains 120 Ω) all agree with answers and chips.
+- Round 1 had no Blocking items; the changes since are the reordered choices (L1-06, L1-07: correct answer no longer first), the new L1-08 (replaces the 10 A range task), the "täyteen ladattu akku" reframing in L2-07, the derivation and back-substitution in L3-04, and the 10 MΩ meter in L3-05.
+- open-exercises-1280-6, -7, -8 (L1-06, L1-07 choices and feedback; L1-08 task, answer chip, full solution)
+- open-exercises-L2-1280-8, -9 (L2-07 task, table, solution, wording "lepojännite")
+- open-exercises-L3-1280-6, -7 (L3-04 derivation rows, Vastaus, Järkevyys; L3-05 task and start of solution)
+- Not available: 360 px captures of exercise cards (packet layout 360 px check ok).
+- Maths re-computed: 0,005 · 5,98 + 0,02 = 0,0499 V -> 0,05 V; 5,714 V; 6,29 µA = 5,714 + 0,571 µA; 0,45 µA vs 38,4 mA; R = 117,71 Ω, ΔR 2,90 Ω; all agree with answers.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4
