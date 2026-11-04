@@ -1953,6 +1953,28 @@
       "linnunrata": "Linnunrata",
       "lab_vety": "vety laboratoriossa",
       "lukemat": "Galaksi {{n}}: etäisyys $d = {{d}}\\,\\text{Mpc}$<br>$\\text{H}\\alpha$-viiva: $\\lambda_0 = 656{,}3\\,\\text{nm}$, $\\lambda = {{lam}}\\,\\text{nm}$, $\\Delta\\lambda = {{dlam}}\\,\\text{nm}$<br>Punasiirtymä $z = {{z}}$, nopeus $v = {{v}}\\,\\text{km/s}$<br><strong>Suora $v = H_0\\,d$: $H_0 = {{H0}}\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$, $\\tfrac{1}{H_0} = {{age}} \\cdot 10^{9}\\,\\text{a}$</strong>"
+    },
+    "fy8-14": {
+      "kaynnista": "Käynnistä keruu",
+      "pysayta": "Pysäytä",
+      "lkm": "Koinsidensseja $N = {{n}}$",
+      "kohde": "Potilas",
+      "kohde_1": "yksi kasvain",
+      "kohde_2": "kaksi kasvainta",
+      "kohde_0": "ei kasvainta",
+      "ilmaisu": "Ilmaisu",
+      "ilmaisu_1": "koinsidenssi",
+      "ilmaisu_0": "yksittäiset fotonit",
+      "nopeus": "Nopeus",
+      "hidas": "hidas",
+      "normaali": "normaali",
+      "nopea": "nopea",
+      "selite": "Oranssi piste: annihilaatiofotoni. Viiva: jana samaan aikaan osuneiden ilmaisimien välillä.",
+      "lukemat": "Koinsidensseja $N = {{n}}$<br><strong>Kuvan kirkkain kohta $(x, y) = ({{x}}, {{y}})\\,\\text{cm}$</strong><br>Etäisyys kasvaimesta ${{e}}\\,\\text{cm}$, kasvaimen kautta kulkevia viivoja ${{o}}\\,\\%$",
+      "lukemat_ei": "Koinsidensseja $N = {{n}}$<br><strong>Kuvan kirkkain kohta $(x, y) = ({{x}}, {{y}})\\,\\text{cm}$</strong><br>Kasvainta ei ole, koska merkkiaine on jakautunut tasaisesti.",
+      "lukemat_0": "Koinsidensseja $N = 0$<br><strong>Kuva ei ole vielä alkanut muodostua.</strong>",
+      "lukemat_yks": "Havaittuja fotoneja $N = {{n}}$<br><strong>Kuvaa ei synny.</strong> Yksittäisestä fotonista tiedetään vain ilmaisin, ei suuntaa.",
+      "ei_kuvaa_kanvas": "$\\text{ei kuvaa}$"
     }
   },
   "practice": {
