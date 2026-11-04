@@ -171,7 +171,7 @@ main.home+footer.bottom{margin-top:1.75rem}
 /* the learning model (moved to the top of Lukuvinkit 2026-11-03): the six stage names the lessons use, a compact
    numbered sequence on thin rules, two columns in the reading column, more tips behind a disclosure */
 .path{margin:0 0 2.6rem}
-.path h2{margin-top:.6rem}
+.path h1,.path h2{margin-top:.6rem}
 .path .section-lead{margin-bottom:.4rem}
 .path-steps{list-style:none;counter-reset:step;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:1fr;column-gap:1.6rem;border-top:1px solid var(--line)}
 .path-steps li{counter-increment:step;margin:0;display:grid;align-content:start;grid-template-columns:2rem minmax(0,1fr);column-gap:.4rem;padding:.6rem 0;border-bottom:1px solid var(--line-2);font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}

@@ -243,19 +243,20 @@ ABOUT = "tietoa.html"
 def front_chrome(html):
     """The front page's own header and footer (teacher 2026-11-03): Näin opiskelet beside Moduulit and Lukuvinkit and
     Sivustosta after them (2026-11-04); its footer ends in Sivustosta like every page's."""
-    html = html.replace('<a class="nav-reading"', f'<a class="nav-study" href="{reading_tips.PAGE}#{STUDY_ID}">{esc(T("site.study"))}</a><a class="nav-reading"', 1)
+    html = html.replace('<a class="nav-reading"', f'<a class="nav-study" href="{STUDY_PAGE}">{esc(T("site.study"))}</a><a class="nav-reading"', 1)
     html = html.replace(f'{esc(T("site.reading_tips"))}</a>', f'{esc(T("site.reading_tips"))}</a><a class="nav-about" href="{ABOUT}">{esc(T("site.about"))}</a>', 1)   # Sivustosta in the header too (teacher 2026-11-04)
     return html
 
 
 STUDY_ID = "nain-opiskelet"
+STUDY_PAGE = STUDY_ID + ".html"   # a page of its own (teacher 2026-11-04: Lukuvinkit only the books, Näin opiskelet only the study tips)
 
 
 def study_guide():
-    """Näin opiskelet Ruukkilabrassa (moved from the front page to the top of Lukuvinkit, teacher 2026-11-03): the six
+    """Näin opiskelet Ruukkilabrassa (moved from the front page 2026-11-03; its own page nain-opiskelet.html, teacher 2026-11-04): the six
     stages with the names the lessons use (lang inquiry.stage_*), where to start, more tips behind a disclosure."""
     stages = "".join(f'<li><strong>{T("inquiry.stage_" + k)}</strong><span>{T("site.home_path_" + k)}</span></li>' for k in inquiry.STAGE_IDS)
-    return (f'<section class="path" id="{STUDY_ID}" aria-labelledby="h-path"><h2 id="h-path">{T("site.home_path")}</h2>'
+    return (f'<section class="path" id="{STUDY_ID}" aria-labelledby="h-path"><h1 id="h-path">{T("site.home_path")}</h1>'
             f'<p class="section-lead">{T("site.home_start_lead")}</p><ol class="path-steps">{stages}</ol>'
             f'<details class="more-tips"><summary>{T("site.home_start_more")}</summary><ul>'
             + "".join(f"<li>{esc(x)}</li>" for x in T("site.home_start_items")) + '</ul></details></section>')
@@ -408,7 +409,7 @@ def link_languages():
                         if (OUTS[other] / module).is_file(): target = f"{module}#unavailable-{name[:-5]}"
                         else:                    # a local course (or its investigation) this language lacks: the course's front page note
                             home = (OUTS[other] / "index.html").read_text()
-                            guide = (tuple(local_courses.load()) if name.startswith("tvt-") else ())   # a TVT-ohje: its course's note
+                            guide = (("FY10",) if name.startswith("tvt-") else ())   # a TVT-ohje: its course's note (the guides are FY10's, as below)
                             ids = [i for i in (name[:-5], module[:-5]) + guide if f'id="unavailable-{i}"' in home]
                             target = "index.html" + (f"#unavailable-{ids[0]}" if ids else "")
                             key = "site.lang_unavailable_home"
@@ -850,7 +851,7 @@ def build_language(lang):
     # The front page (teacher 2026-10-29, trimmed 2026-10-31, compacted 2026-11-03 "tiivistä etusivu": the whole page in
     # one desktop screen). The heading and one line under it, then the module list in two columns from 700 px: the
     # modules on the left; on the right Tulossa (dimmed) and the school's own courses under the school's name. The
-    # study guide is on the Lukuvinkit page (study_guide), linked from the header as "Näin opiskelet".
+    # study guide is a page of its own, nain-opiskelet.html (study_guide), linked from the header as "Näin opiskelet".
     school = next(iter(local.values()))["school"] if local else ""
     home = (local_notes +
         f'<section class="home-intro" aria-labelledby="h-intro"><h1 id="h-intro">{T("site.home_h1")}</h1>'
@@ -869,8 +870,11 @@ def build_language(lang):
                                              f'<a href="index.html">{T("site.name")}</a> › {T("cards.app_title")}', concept_cards.APP, T("cards.app_description"), main_class="reading kc-app-page"))
     # Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): a reading list of physics books, linked from every header and footer
     rt = reading_tips.load(lang) if reading_tips.SOURCE.is_file() else None
-    if rt: (out / reading_tips.PAGE).write_text(page(rt["title"], study_guide() + reading_tips.body(T, lang), f'<a href="index.html">{T("site.name")}</a> › {esc(rt["title"])}',
+    if rt: (out / reading_tips.PAGE).write_text(page(rt["title"], reading_tips.body(T, lang), f'<a href="index.html">{T("site.name")}</a> › {esc(rt["title"])}',
                                               reading_tips.PAGE, rt["description"], main_class="reading reading-tips"))
+    # Näin opiskelet (teacher 2026-11-04): the study guide alone, apart from the books of Lukuvinkit
+    (out / STUDY_PAGE).write_text(page(T("site.study"), study_guide(), f'<a href="index.html">{T("site.name")}</a> › {esc(T("site.study"))}',
+                                       STUDY_PAGE, T("site.home_start_lead"), main_class="reading study-page"))
     # Sivustosta (teacher 2026-11-04): the teacher's own text, content/<lang>/tietoa.md (the Finnish where a language has
     # none). No page of the site links to the teacher's portfolio (teacher 2026-11-04: students should not find it)
     about_md = next((f for f in (ROOT / "content" / lang / "tietoa.md", ROOT / "content" / i18n.SOURCE / "tietoa.md") if f.is_file()), None)
@@ -891,7 +895,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + mixer_built
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + mixer_built
                     + [f"{u}.html" for u, ul in unit_pub.items() if ul == lang and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):

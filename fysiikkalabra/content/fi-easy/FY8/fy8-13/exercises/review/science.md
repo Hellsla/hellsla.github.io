@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6f9c91031189e5cf
+CONTENT-HASH: 774a8c852b1e5169
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:34 (L1-04, Periaate) — the added gloss "annosnopeus pienenee etäisyyden neliön verran" reads literally as a subtraction of r² and is imprecise next to the correct "kääntäen verrannollinen etäisyyden neliöön" — replace with e.g. "Se tarkoittaa, että kun etäisyys kaksinkertaistuu, annosnopeus pienenee neljäsosaan."
-- Packet: `check_lesson.py has not been run`; run the deterministic checks before release.
+- exercises/solutions.md:34 (L1-04, Periaate) — "annosnopeus pienenee etäisyyden neliön verran" reads literally as a subtraction of r² — replace with e.g. "kun etäisyys kaksinkertaistuu, annosnopeus pienenee neljäsosaan" (carried, still open).
+- Packet — `check_lesson.py has not been run`; run the deterministic checks before release (carried).
 
 ## Checked
-- One script recomputed all 12 answers with own formulas; all agree with exercises.json and answers.py within tolerance (4,17→4,2; 12,77→13; 18,92→19).
-- Units and 2 % tolerances fit the data's significant figures.
-- Point-source / no-air-attenuation and narrow-beam half-value-layer conditions stated or inherited from the brief; d½ given where used.
-- L2-01 thyroid-only effective dose and L3-03 lung-alpha + whole-body-gamma sum (Σw_T = 1) correct.
-- L2-03/L3-02 state proportionality and equal-occupancy assumptions; STUK figures consistent with the brief.
-- L1-03 approximate dose rate flagged; result called a suuruusluokan arvio.
-- Every solution complete, symbolic first, conversions right, sig-fig reasons and real reasonableness checks.
-- Notation same as the brief (D, H_T, H_E, w_R, w_T, Ḣ, d_{1/2}, H_ka).
-- Simplified-language splits keep every number and assumption of the Finnish set.
+- Delta re-review: the only change since the passed version is commit fd2e54e95 in exercises/solutions.md (360 px narrowing); hash 774a8c852b1e5169 equals the packet's, at start and end. No task, answer, unit, tolerance or other file changed.
+- solutions.md:89 (L2-04 reasonableness) — `96 → 48 → 24 → 12 → 6 → 3` then (yksikkönä $\mu\text{Sv/h}$): the unit now applies to the whole chain instead of only the last entry, which is if anything more correct; 96/2⁵ = 3 µSv/h, both `$…$` pairs closed, sentence reads correctly.
+- solutions.md:95 (L3-01 formula) — inside `\left[…\right]` only `\left(\dfrac{r_1}{r_\text{A}}\right)^2` → `\left(\tfrac{r_1}{r_\text{A}}\right)^2`: same fraction, text-size only; braces and \left/\right pairs balanced (scripted check); H_A − H_B = Ḣ₁ t[(r₁/r_A)² − (½)^{d/d½}] still equals the two terms stated before it.
+- Previous review's recomputation of all 12 answers and its other checks stand (content unchanged).

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6f9c91031189e5cf
+CONTENT-HASH: 774a8c852b1e5169
 
 ## Blocking
+(none)
 
 ## Polish
-- L2-03, L3-01 — kysymys ei ole viimeinen lause: oletukset tai etumerkkiohje tulevat sen jälkeen. Siirrä oletukset ensin, lopuksi kysymys.
-- L3-01 — "annos tavalla A miinus annos tavalla B ... etumerkin kanssa" on selkeälle suomelle raskas. Kysy: "Kumpi tapa antaa pienemmän annoksen, ja kuinka paljon pienemmän?"
-- solutions L1-04 Järkevyys — "Etäisyys nelinkertaistuu eli kaksinkertaistuu kahdesti" on sekava. Korjaus: "Etäisyys kasvaa nelinkertaiseksi: se kaksinkertaistuu kaksi kertaa."
-- solutions L2-04 — Kaava-rivin $\log_2$ ei kuulu lukuun; jätä pois, Sijoitus ($32 = 2^5$) riittää.
+- L2-03, L3-01 — kysymys ei ole viimeinen lause (kantaan jäänyt).
+- L3-01 — "annos tavalla A miinus annos tavalla B ... etumerkin kanssa" on raskas selkeälle suomelle (kantaan jäänyt).
+- solutions L1-04 Järkevyys — "nelinkertaistuu eli kaksinkertaistuu kahdesti" on sekava; "kasvaa nelinkertaiseksi: se kaksinkertaistuu kaksi kertaa" (kantaan jäänyt).
+- solutions L2-04 — Kaava-rivin $\log_2$ ei kuulu lukuun (kantaan jäänyt).
 
 ## Checked
-- 12 tehtävää (5/4/3), kaikki vastaukset laskettu uudelleen: oikein.
-- Ratkaisut etenevät Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys; periaate selitetty, mitään ei ohiteta.
-- Suomi: desimaalipilkku, "$65{,}0\,\text{kg}$", "$5{,}0\,\text{h}$:n lennolla" oikein; arkiset tilanteet.
-- Kuvaaja-tehtävä (vaimennus) ja tehtäväkuvat: fig-12-390 (fi-easy) avattu; kuvaus ei paljasta vastausta.
+- Delta: L2-04 Järkevyys and L3-01 Kaava only; values and answers unchanged (the h·(c/X) regrouping in the other chapters does not occur here). L2-04 Järkevyys: the chain of five halvings is followed by "(yksikkönä µSv/h)"; unit stated once, the chain reads cleaner and the meaning is unchanged. L3-01: \tfrac in the bracket only changes size.
+- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Järkevyys chain and the Kaava bracket fit the column, nothing clipped, no page scroll.
+- Järkevyys wraps over four short lines at 360 px; the chain stays readable, the unit parenthetical is clear.
+- Levels, tasks and answers untouched by the commit; earlier PASS stands.

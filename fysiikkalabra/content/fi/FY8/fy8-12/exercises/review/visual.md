@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4b839b87d3d53c27
+CONTENT-HASH: 2154b64dd2c82968
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md fy8-12-L2-01 — answer line "Kolme merkitsevää numeroa kuten mittausajassa" fine; no change needed (listed only to record that the ratio spacing fix `{1260 : 180}\,\text{s}` is in).
+(none)
 
 ## Checked
-- Delta: opened open-exercises-1280-1 (L1-01: new energy clause in task and Annettu, chains aligned, answer box inside card) and open-exercises-L2-1280-1 (L2-01: staged chain, boxed 6,60 1/s, no overflow).
-- Read the diffs of L3-03 (question now a single sentence with "$10^{6}$"), L2-04 Järkevyys and the grouped ratios: LaTeX valid, units upright, decimal commas.
+- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (L1-05 Sijoitus) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
+- Result: h · \dfrac{c}{X} wraps after 'h ·' into a 2–4 row block, fraction bar intact, units upright with thin spaces, decimal comma; document scrollWidth = 360 = viewport, no clipped KaTeX.
+- LaTeX valid, no red KaTeX; hash at start and end the same.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4

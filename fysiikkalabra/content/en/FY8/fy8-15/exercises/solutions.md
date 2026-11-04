@@ -74,7 +74,7 @@
 **Principle:** In pair production the masses of the electron and the positron are made from the energy of the photon, so the energy of the photon must be at least the sum of their rest energies. The energy of a photon is $\tfrac{hc}{\lambda}$, so the smallest energy corresponds to the greatest wavelength.
 **Formula:** $E = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E}$
 **Conversions:** $E = 2 \cdot 0.511 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.6372 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Substitution:** $\lambda = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{1.6372 \cdot 10^{-13}\,\text{J}} = 1.2133 \cdot 10^{-12}\,\text{m} = 1.2133\,\text{pm}$
+**Substitution:** $\lambda = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{1.6372 \cdot 10^{-13}\,\text{J}} = 1.2133 \cdot 10^{-12}\,\text{m} = 1.2133\,\text{pm}$
 **Answer:** $1.21\,\text{pm}$, three significant figures like the rest energy $0.511\,\text{MeV}$.
 **Reasonableness:** The wavelength of a gamma photon is of the order of picometres, like that of the gamma radiation in the chapter *The atomic nucleus and radioactive decay*. A photon with a longer wavelength is not enough to make a pair, because its energy is smaller than $1.022\,\text{MeV}$.
 

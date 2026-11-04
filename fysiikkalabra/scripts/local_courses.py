@@ -40,12 +40,19 @@ TEXT_FIELDS = ("title", "subtitle", "school", "description")
 esc = lambda s: _h.escape(str(s), quote=True)
 
 
+def order(code):
+    """Sort key of a course code: its letters, then its number as a number (FY9 < FY10 < FY14)."""
+    m = re.fullmatch(r"([A-Za-z]*)(\d*)", code)
+    return (m.group(1), int(m.group(2) or 0)) if m else (code, 0)
+
+
 def load(lang=i18n.SOURCE):
     """{code: course} published in lang: the Finnish registry with that language's texts over it. A test copy of the
     project without the registry has no local courses."""
     src = ROOT / REGISTRY
     if not src.is_file(): return {}
-    base = {k: v for k, v in json.loads(src.read_text()).items() if not k.startswith("_")}
+    # In course-number order (teacher 2026-11-04 "kurssit numeroiden mukaisessa järjestyksessä"): FY9 before FY10, FY14
+    base = dict(sorted(((k, v) for k, v in json.loads(src.read_text()).items() if not k.startswith("_")), key=lambda kv: order(kv[0])))
     if lang == i18n.SOURCE: return base
     tr = ROOT / "content" / lang / REGISTRY
     tr = {k: v for k, v in json.loads(tr.read_text()).items() if not k.startswith("_")} if tr.is_file() else {}
