@@ -107,3 +107,80 @@
 **Kysytty:** sävelen perustaajuus, spektristä puuttuvat harmonisen sarjan jäsenet ja niiden merkitys klarinetin ilmapatsaalle
 **Periaate:** Soittimen spektrin piikit ovat ilmapatsaan ominaistaajuuksilla, ja perustaajuus on alin ominaistaajuus. Molemmista päistä avoimessa putkessa ominaistaajuudet ovat kaikki perustaajuuden monikerrat $n f_1$, mutta toisesta päästä suljetussa putkessa vain parittomat monikerrat, koska suljetussa päässä on aina solmu ja avoimessa kupu (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*).
 **Mallivastaus:** Alin piikki on $147\,\text{Hz}$, ja muut ovat sen kerrannaisia: $441\,\text{Hz} = 3 \cdot 147\,\text{Hz}$, $735\,\text{Hz} = 5 \cdot 147\,\text{Hz}$ ja $1029\,\text{Hz} = 7 \cdot 147\,\text{Hz}$. Perustaajuus on siis $147\,\text{Hz}$. Harmonisen sarjan parilliset jäsenet $294\,\text{Hz}$, $588\,\text{Hz}$ ja $882\,\text{Hz}$ puuttuvat lähes kokonaan. Vain parittomat monikerrat ovat toisesta päästä suljetun putken ominaistaajuuksia, joten klarinetin ilmapatsas värähtelee kuin putki, jonka toinen pää on suljettu: suukappaleen pää, jossa ruoko on, toimii suljettuna päänä, jossa on ilman liikkeen solmu, ja kellon pää avoimena päänä, jossa on kupu. Puuttuvat yläsävelet antavat klarinetille sen tumman sointivärin.
+
+## fy5-14-L1-06
+**Kysytty:** mikä korkeammasta äänestä on pakostakin totta
+**Periaate:** Äänenkorkeuden määrää taajuus: mitä enemmän paineen värähdyksiä sekunnissa, sitä korkeammalta ääni kuulostaa. Voimakkuus riippuu amplitudista, ja äänen nopeus ilmassa on kaikille taajuuksille sama.
+**Mallivastaus:** Korkeamman äänen taajuus on suurempi, joten ilman paine vaihtelee useammin sekunnissa. Amplitudin ei tarvitse olla suurempi, koska äänet kuulostavat yhtä voimakkailta. Aallonpituus ei ole pidempi vaan lyhyempi, koska $\lambda = \tfrac{v}{f}$ ja nopeus $v$ on sama. Jaksonaika on myös lyhyempi, koska $T = \tfrac{1}{f}$.
+
+## fy5-14-L1-07
+**Kysytty:** mitä kuulija kuulee sireenin äänenkorkeudelle auton lähestyessä
+**Periaate:** Lähestyvän lähteen edessä aaltorintamat ovat tiheässä, koska lähde liikkuu rintamien perässä. Aallonpituus on silloin lyhyempi ja kuultu taajuus $f = \tfrac{v}{\lambda}$ suurempi kuin lähteen oma taajuus. Kuultu taajuus riippuu lähteen nopeudesta, ei etäisyydestä.
+**Mallivastaus:** Kuulija kuulee sireenin äänen vakiotaajuisena ja sireenin omaa taajuutta korkeampana koko lähestymisen ajan, koska auton nopeus on vakio ja aaltorintamat ovat sen edessä tiheässä. Etäisyyden pienentyessä kasvaa vain äänen voimakkuus. Ohitushetkellä kuultu taajuus laskee äkillisesti sireenin omaa taajuutta matalammaksi. Lähteen liike ei hidasta ääntä: äänen nopeus ilmassa on sama.
+
+## fy5-14-L1-08
+**Annettu:** äänirautojen taajuudet $f_1 = 392\,\text{Hz}$ ja $f_2 = 398\,\text{Hz}$
+**Kysytty:** huojunnan jaksonaika $T_\text{h}$ sekunteina
+**Periaate:** Voimakkaita hetkiä on sekunnissa taajuuseron verran. Kahden peräkkäisen voimakkaan hetken väli on huojuntataajuuden käänteisluku.
+**Kaava:** $f_\text{h} = |f_1 - f_2|$ ja $T_\text{h} = \dfrac{1}{f_\text{h}}$
+**Muunnokset:** Ei tarvita: taajuudet ovat hertseinä, joten jaksonaika tulee sekunteina.
+**Sijoitus:** $f_\text{h} = |392\,\text{Hz} - 398\,\text{Hz}| = 6\,\text{Hz}$, joten $T_\text{h} = \dfrac{1}{6\,\text{Hz}} = 0{,}1667\,\text{s}$
+**Vastaus:** $0{,}167\,\text{s}$, kolme merkitsevää numeroa.
+**Järkevyys:** Voimakkaita hetkiä on $6$ sekunnissa, ja $6 \cdot 0{,}167\,\text{s} \approx 1{,}0\,\text{s}$. Taajuusero on alle $10\,\text{Hz}$, joten huojunta erottuu selvästi.
+
+## fy5-14-L2-05
+**Annettu:** torven taajuus paikallaan $f_0 = 392\,\text{Hz}$, neljä mitattua taajuutta $431\,\text{Hz}$, $429\,\text{Hz}$, $432\,\text{Hz}$ ja $430\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$
+**Kysytty:** auton nopeus $v_\text{s}$
+**Periaate:** Auto eli äänilähde lähestyy paikallaan olevaa kuulijaa, joten pätee liikkuvan lähteen Dopplerin kaava miinusmerkillä. Mittaukset vaihtelevat hieman, joten käytetään niiden keskiarvoa $f_\text{ka}$. Kaavasta ratkaistaan lähteen nopeus.
+**Kuvaajan lukeminen:** Taulukon neljän taajuuden summa on $431 + 429 + 432 + 430 = 1722$ hertsiä, joten keskiarvo on $f_\text{ka} = \dfrac{1722\,\text{Hz}}{4} = 430{,}5\,\text{Hz}$.
+**Kaava:** $f_\text{ka} = f_0 \cdot \dfrac{v}{v - v_\text{s}}$, josta $v - v_\text{s} = \dfrac{f_0 v}{f_\text{ka}}$ ja $v_\text{s} = v \left(1 - \dfrac{f_0}{f_\text{ka}}\right)$
+**Muunnokset:** Ei tarvita: taajuudet ovat hertseinä, ja niiden suhteesta yksikkö supistuu.
+**Sijoitus:** $v_\text{s} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430{,}5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0{,}08943 = 30{,}41\,\text{m/s}$
+**Vastaus:** $30{,}4\,\text{m/s}$, kolme merkitsevää numeroa kuten taajuuksissa.
+**Järkevyys:** $30{,}4\,\text{m/s}$ on noin $109\,\text{km/h}$, mikä on suurin piirtein maantienopeus. Arvio $f_0 \cdot \tfrac{v_\text{s}}{v} = 392\,\text{Hz} \cdot \tfrac{30{,}4}{340} \approx 35\,\text{Hz}$ vastaa mitattua nousua $430{,}5\,\text{Hz} - 392\,\text{Hz} = 38{,}5\,\text{Hz}$ kohtuullisesti, koska nimittäjässä on $v - v_\text{s}$ eikä $v$. Mittaukset poikkeavat keskiarvosta enintään $1{,}5\,\text{Hz}$, mikä vastaa noin $0{,}4\,\text{m/s}$:n vaihtelua nopeudessa.
+
+## fy5-14-L2-06
+**Annettu:** huilun ja viulun spektrien piikit taajuuksilla $262\,\text{Hz}$, $524\,\text{Hz}$, $785\,\text{Hz}$, $1047\,\text{Hz}$ ja $1309\,\text{Hz}$ sekä niiden suhteelliset korkeudet taulukossa
+**Kysytty:** perustaajuus $f_1$ sekä se, kumpi soitin kuulostaa kirkkaammalta
+**Periaate:** Soittimen osasävelet muodostavat harmonisen sarjan $f_n = n f_1$, joten perustaajuus on sarjan alin taajuus ja piikkien väli. Se ei välttämättä ole voimakkain piikki. Sointiväri riippuu yläsävelten voimakkuuksista: kirkkaassa äänessä yläsävelet ovat voimakkaita.
+**Kuvaajan lukeminen:** Alin piikki on $262\,\text{Hz}$ molemmissa spektreissä. Piikit ovat sen monikertoja: $\dfrac{524}{2} = 262$, $\dfrac{785}{3} \approx 262$, $\dfrac{1047}{4} \approx 262$ ja $\dfrac{1309}{5} \approx 262$. Viulun voimakkain piikki on toinen harmoninen $524\,\text{Hz}$, mutta se ei ole perustaajuus.
+**Kaava:** $f_n = n f_1$, joten $f_1 = \dfrac{f_n}{n}$
+**Muunnokset:** Ei tarvita: kaikki taajuudet ovat hertseinä.
+**Sijoitus:** $f_1 = \dfrac{1309\,\text{Hz}}{5} = 261{,}8\,\text{Hz}$
+**Vastaus:** $262\,\text{Hz}$, kolme merkitsevää numeroa kuten taulukossa. Viulu kuulostaa kirkkaammalta, koska sen yläsävelet ovat voimakkaita: jo kolmas piikki on korkeudeltaan $0{,}80$, kun huilulla se on vain $0{,}08$. Huilun ääni on lähes puhdas perussävel, ja sen sointi on pehmeä.
+**Järkevyys:** Monikerrat $2 \cdot 262\,\text{Hz} = 524\,\text{Hz}$ ja $5 \cdot 262\,\text{Hz} = 1310\,\text{Hz}$ vastaavat taulukon piikkejä. Pienet erot johtuvat siitä, että FFT lukee taajuudet noin hertsin tarkkuudella. Taajuus $262\,\text{Hz}$ on keski-C:n kohdalla, joka sopii molemmille soittimille.
+
+## fy5-14-L2-07
+**Annettu:** auton nopeus $v_\text{s} = 30{,}0\,\text{m/s}$, torven taajuus $f_0 = 500\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$, opiskelijan tulos $544\,\text{Hz}$
+**Kysytty:** opiskelijan virhe ja oikea kuultu taajuus $f$
+**Periaate:** Opiskelija käytti kaavaa, joka koskee liikkuvaa kuulijaa. Tässä kuulija on paikallaan ja äänilähde eli auto liikkuu, joten pätee liikkuvan lähteen kaava. Lähteen liike lyhentää aallonpituutta lähteen edessä ($\lambda = (v - v_\text{s}) T_0$), kun taas kuulijan liike ei muuta aallonpituutta. Auto lähestyy, joten merkki valitaan niin, että $f > f_0$. Virhe ei ole siinä, että Doppler muuttaisi vain voimakkuutta: lähestyessä muuttuu myös taajuus.
+**Kaava:** $f = f_0 \cdot \dfrac{v}{v - v_\text{s}}$
+**Muunnokset:** Ei tarvita: nopeudet ovat jo yksikössä m/s.
+**Sijoitus:**
+$\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30{,}0)\,\text{m/s}} \\ &= 500\,\text{Hz} \cdot \dfrac{340}{310{,}0} \\ &= 548{,}4\,\text{Hz} \end{aligned}$
+**Vastaus:** $548\,\text{Hz}$, kolme merkitsevää numeroa kuten lähtötiedoissa. Opiskelijan arvo $544\,\text{Hz}$ on noin $4\,\text{Hz}$ liian pieni.
+**Järkevyys:** Taajuus nousee, koska auto lähestyy: $548\,\text{Hz} > 500\,\text{Hz}$. Pienen nopeuden arvio $f_0 \cdot \tfrac{v_\text{s}}{v} = 500\,\text{Hz} \cdot \tfrac{30{,}0}{340} \approx 44\,\text{Hz}$ on lähellä todellista nousua $48\,\text{Hz}$, ja todellinen nousu on hieman suurempi, koska nimittäjässä on $v - v_\text{s}$.
+
+## fy5-14-L3-04
+**Annettu:** anturin taajuus $f_0 = 4{,}00\,\text{MHz} = 4{,}00 \cdot 10^6\,\text{Hz}$, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$, taajuuden muutokset $\Delta f$ taulukossa, veri virtaa suoraan kohti anturia
+**Kysytty:** veren suurin mitattu virtausnopeus $v_\text{v}$
+**Periaate:** Anturi on paikallaan, ja punasolu liikkuu kohti sitä nopeudella $v_\text{v}$. Punasolu on ensin liikkuva kuulija, joka lähestyy lähdettä ja kuulee taajuuden $f_1 = f_0 \cdot \tfrac{v + v_\text{v}}{v}$. Se heijastaa saman taajuuden takaisin, joten se on sitten liikkuva lähde, joka lähestyy paikallaan olevaa anturia, ja anturi vastaanottaa taajuuden $f = f_1 \cdot \tfrac{v}{v - v_\text{v}}$. Doppler-siirtymä tulee siis kahdesti, minkä vuoksi muutos on lähes kaksinkertainen yhteen siirtymään verrattuna. Suurin virtausnopeus vastaa suurinta taajuuden muutosta.
+**Kuvaajan lukeminen:** Taulukon suurin muutos on $\Delta f = 2{,}47\,\text{kHz}$ hetkellä $t = 0{,}20\,\text{s}$.
+**Kaava:** $f = f_0 \cdot \dfrac{v + v_\text{v}}{v - v_\text{v}}$, josta $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{v}}{v - v_\text{v}}$ ja $v_\text{v} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
+**Muunnokset:** $\Delta f = 2{,}47\,\text{kHz} = 2470\,\text{Hz}$ ja $f_0 = 4{,}00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
+**Sijoitus:** Nimittäjä on $2 f_0 + \Delta f = 8\,000\,000\,\text{Hz} + 2470\,\text{Hz} = 8\,002\,470\,\text{Hz}$.
+$\begin{aligned} v_\text{v} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\,002\,470\,\text{Hz}} \\ &= 0{,}4753\,\text{m/s} \end{aligned}$
+**Vastaus:** $0{,}475\,\text{m/s}$, kolme merkitsevää numeroa kuten taajuuden muutoksessa.
+**Järkevyys:** Nopeus on paljon pienempi kuin äänen nopeus, joten $v_\text{v} \approx \tfrac{v \, \Delta f}{2 f_0} = 0{,}4755\,\text{m/s}$, mikä poikkeaa tuloksesta alle $0{,}1\,\%$. Yhden siirtymän tulos olisi $\tfrac{v \, \Delta f}{f_0} \approx 0{,}95\,\text{m/s}$, kaksinkertainen. Alle metrin sekunnissa oleva huippunopeus on uskottava verisuonessa.
+
+## fy5-14-L3-05
+**Annettu:** etäisyydet $s$ ja ajat $t$ taulukossa; ajassa on kiinteä laitteen viive $t_0$
+**Kysytty:** äänen nopeus $v$ suoran kulmakertoimesta sekä viiveen $t_0$ arvio
+**Periaate:** Ääni etenee ilmassa tasaisella nopeudella, joten kulkuaika on $\tfrac{s}{v}$ ja mitattu aika $t = \tfrac{s}{v} + t_0$. Kuvaajassa $s(t)$ on suora, jonka kulmakerroin on $v$ ja joka leikkaa aika-akselin kohdassa $t_0$. Viive siirtää kaikkia pisteitä yhtä paljon ajassa, joten kulmakerroin ei riipu siitä.
+**Kuvaajan lukeminen:** Kuvaajassa $t$ on vaaka- ja $s$ pystyakselilla, ja pisteet asettuvat nousevalle suoralle. Suoralle valitaan pisteet $(1{,}88\,\text{ms};\ 0{,}50\,\text{m})$ ja $(7{,}71\,\text{ms};\ 2{,}50\,\text{m})$, jotka ovat kaukana toisistaan. Niiden erotukset ovat $\Delta s = 2{,}50\,\text{m} - 0{,}50\,\text{m} = 2{,}00\,\text{m}$ ja $\Delta t = 7{,}71\,\text{ms} - 1{,}88\,\text{ms} = 5{,}83\,\text{ms}$.
+**Kaava:** $v = \dfrac{\Delta s}{\Delta t}$
+**Muunnokset:** $\Delta t = 5{,}83\,\text{ms} = 5{,}83 \cdot 10^{-3}\,\text{s}$.
+**Sijoitus:**
+$\begin{aligned} v &= \dfrac{2{,}00\,\text{m}}{5{,}83 \cdot 10^{-3}\,\text{s}} \\ &= 343{,}1\,\text{m/s} \end{aligned}$
+**Vastaus:** $343\,\text{m/s}$, kolme merkitsevää numeroa kuten mittausten erotuksissa. Suora ei kulje origon kautta, koska ajanotto kattaa äänen kulkuajan lisäksi laitteen viiveen: kun $s = 0$, aika ei ole nolla. Viive saadaan ensimmäisestä pisteestä: $t_0 = 1{,}88\,\text{ms} - \tfrac{0{,}50\,\text{m}}{343\,\text{m/s}} = 1{,}88\,\text{ms} - 1{,}46\,\text{ms} = 0{,}42\,\text{ms}$.
+**Järkevyys:** Tulos poikkeaa taulukkoarvosta $340\,\text{m/s}$ noin $1\,\%$, joten se sopii huoneenlämpöiselle ilmalle. Viimeisestä pisteestä viiveeksi tulee $7{,}71\,\text{ms} - 7{,}29\,\text{ms} = 0{,}42\,\text{ms}$, sama kuin ensimmäisestä. Jos nopeus laskettaisiin ensimmäisestä pisteestä jakamalla, $\tfrac{0{,}50\,\text{m}}{1{,}88\,\text{ms}} \approx 266\,\text{m/s}$, tulos olisi noin $22\,\%$ liian pieni, koska viive on osa ajasta.

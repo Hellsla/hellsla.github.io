@@ -29,4 +29,24 @@ a["fy5-13-L3-02"] = 440 - 330                            # successive eigenfrequ
 # L = v/(4 f1) = 340 / 680 = 0,500 m
 f1 = (850 - 510) / 2
 a["fy5-13-L3-03"] = 340 / (4 * f1)
+# Exercise-bank additions (L1-06, L1-07 and L2-07 are multiple choice with a text answer: no number here)
+# L1-08 error analysis: student took λ = L; correct f1 = v/(2L) = 120 / 1,20 = 100 Hz
+a["fy5-13-L1-08"] = 120 / (2 * 0.60)
+# L2-05 data: f/n for each row, mean = f1, v = 2 L f1 (example data, L = 0,640 m)
+f_n = [96.0, 191.0, 289.0, 383.0, 481.0]
+f1_ka = sum(f / n for n, f in enumerate(f_n, start=1)) / len(f_n)   # 479,78 / 5 = 95,96 Hz
+a["fy5-13-L2-05"] = round(2 * 0.640 * f1_ka)             # 122,8 m/s -> 123 m/s
+# L2-06 resonance tube, 512 Hz: λ = L3 - L1 = 83,3 - 16,3 = 67,0 cm; v = f λ = 343,0 m/s -> 343 m/s
+a["fy5-13-L2-06"] = round(512 * (83.3 - 16.3) / 100)
+# L3-04 string tension data: f1^2/F is constant (mean 330,1 Hz^2/N); f1(120 N) = sqrt(k * 120) = 199,0 Hz
+F = [20.0, 40.0, 60.0, 80.0]
+f1 = [81.0, 115.5, 140.0, 163.0]
+k = sum(f * f / t for f, t in zip(f1, F)) / len(F)
+a["fy5-13-L3-04"] = round((k * 120) ** 0.5)              # 199 Hz
+# L3-05 pipes A (open: f/n) and B (closed: f/n with n = 1, 3, 5), L = 0,800 m, example data
+fa = sum(f / n for n, f in zip((1, 2, 3), (207, 413, 621))) / 3     # 206,83 Hz
+fb = sum(f / n for n, f in zip((1, 3, 5), (103, 311, 517))) / 3     # 103,36 Hz
+v_a = 2 * 0.800 * fa                                     # 330,9 m/s
+v_b = 4 * 0.800 * fb                                     # 330,7 m/s
+a["fy5-13-L3-05"] = round((v_a + v_b) / 2)               # 330,8 -> 331 m/s
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -107,3 +107,120 @@
 **Kysytty:** miksi vastamelu vaimentaa matalaa huminaa paremmin kuin puhetta
 **Periaate:** Vastamelu kumoaa melun heikentävällä interferenssillä vain, jos se on korvan kohdalla vastakkaisessa vaiheessa. Aallonpituus $\lambda = \dfrac{v}{f}$ ja jaksonaika $T = \dfrac{1}{f}$ kertovat, kuinka tarkasti ajoituksen ja paikan on osuttava.
 **Mallivastaus:** Huminan aallonpituus on $\lambda = \dfrac{343\,\text{m/s}}{100\,\text{Hz}} \approx 3{,}4\,\text{m}$ ja jaksonaika $10\,\text{ms}$. Koko korvakäytävä ja kuvun sisus ovat pieniä aallonpituuteen verrattuna, ja elektroniikalla on aikaa muodostaa vastakkainen signaali, joten vastamelu pysyy korvan kohdalla vastakkaisessa vaiheessa. Puheen aallonpituudet ovat $\dfrac{343\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$ ja $\dfrac{343\,\text{m/s}}{1000\,\text{Hz}} \approx 34\,\text{cm}$, ja jaksonaika on enintään $1\,\text{ms}$. Pienikin ajoitusvirhe tai muutaman senttimetrin paikkaero siirtää vaihetta paljon, jolloin aallot eivät enää kumoa toisiaan. Lisäksi puhe vaihtelee nopeasti, kun taas humina on tasaista. Korkeita ääniä vaimentavat lähinnä kuulokkeiden kuvut.
+
+## fy5-16-L1-06
+**Kysytty:** mikä toimenpide lyhentää luokan jälkikaiunta-aikaa
+**Periaate:** Jälkikaiunta-aika on aika, jossa taso laskee $60\,\text{dB}$ äänilähteen vaiettua. Kovat pinnat heijastavat ääntä ja pitävät sen huoneessa, pehmeät ja huokoiset pinnat vaimentavat heijastuksia, joten taso laskee nopeammin.
+**Mallivastaus:** Jälkikaiunta-aikaa lyhentää se, että kattoon asennetaan huokoisia vaimennuslevyjä, jotka imevät osan niihin osuvasta äänestä. Kiiltävät laatat ja lasipinnat ovat kovia pintoja, jotka heijastavat ääntä takaisin huoneeseen ja pidentäisivät aikaa. Äänen voimakkuuden pienentäminen ei auta, koska jälkikaiunta-aika mitataan $60\,\text{dB}$:n pudotuksena eikä se riipu alkutasosta.
+
+## fy5-16-L1-07
+**Annettu:** ulkotaso $L_\text{ulko} = 68\,\text{dB}$, sisätaso $L_\text{sisä} = 41\,\text{dB}$
+**Kysytty:** seinän ja ikkunoiden vaimennus $\Delta L$
+**Periaate:** Vaimennus kertoo, kuinka monta desibeliä rakenne pienentää tasoa, joten se on ulko- ja sisätason erotus.
+**Kaava:** $\Delta L = L_\text{ulko} - L_\text{sisä}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $\Delta L = 68\,\text{dB} - 41\,\text{dB} = 27\,\text{dB}$
+**Vastaus:** $27\,\text{dB}$, kokonaisina desibeleinä kuten lähtötiedot.
+**Järkevyys:** Vaimennus lisättynä sisätasoon antaa ulkotason: $41\,\text{dB} + 27\,\text{dB} = 68\,\text{dB}$. Sisällä on hiljaisempaa kuin ulkona, kuten pitääkin.
+
+## fy5-16-L1-08
+**Kysytty:** miten kaiutin tuottaa äänen sähköisestä signaalista
+**Periaate:** Kaiuttimessa signaali on vaihtovirta, joka kulkee magneetin kentässä olevassa kelassa. Magneettikenttä kohdistaa virtaan vaihtuvan voiman, joten kela ja siihen kiinnitetty kartio värähtelevät, ja kartio synnyttää ilmaan ääniaallon.
+**Mallivastaus:** Kelan vaihtovirta ja magneetti saavat kartion värähtelemään signaalin tahdissa, ja kartio työntää ilmaa edestakaisin. Ääni, joka liikuttaa kalvoa ja synnyttää jännitteen, on mikrofonin toimintaa eikä kaiuttimen. Magneetti on kaiuttimessa paikallaan, eikä äänen synty perustu ilman lämpenemiseen.
+
+## fy5-16-L2-05
+**Annettu:** ennen levyjä taso laskee $90{,}3\,\text{dB}$:stä $74{,}4\,\text{dB}$:iin ja levyjen jälkeen $90{,}2\,\text{dB}$:stä $50{,}1\,\text{dB}$:iin ajassa $\Delta t = 0{,}40\,\text{s}$; lasku on tasainen
+**Kysytty:** jälkikaiunta-ajan lyhenemä prosentteina
+**Periaate:** Kun taso laskee tasaisesti, jälkikaiunta-aika on aika, jossa lasku on $60\,\text{dB}$. Lasketaan se kummallekin mittaukselle mitatun pudotuksen ja ajan avulla ja verrataan aikoja.
+**Kuvaajan lukeminen:** Pudotus ennen levyjä on $\Delta L_1 = 90{,}3\,\text{dB} - 74{,}4\,\text{dB} = 15{,}9\,\text{dB}$ ja levyjen jälkeen $\Delta L_2 = 90{,}2\,\text{dB} - 50{,}1\,\text{dB} = 40{,}1\,\text{dB}$.
+**Kaava:** $T = \dfrac{60\,\text{dB}}{\Delta L} \cdot \Delta t$ ja lyhenemä $= \dfrac{T_1 - T_2}{T_1} \cdot 100\,\%$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:**
+$$\begin{aligned}
+T_1 &= \frac{60\,\text{dB}}{15{,}9\,\text{dB}} \cdot 0{,}40\,\text{s} \\
+&= 1{,}51\,\text{s} \\
+T_2 &= \frac{60\,\text{dB}}{40{,}1\,\text{dB}} \cdot 0{,}40\,\text{s} \\
+&= 0{,}599\,\text{s} \\
+\text{lyhenemä} &= \frac{1{,}51 - 0{,}599}{1{,}51} \cdot 100\,\% \\
+&= 60{,}3\,\%
+\end{aligned}$$
+**Vastaus:** $60{,}3\,\%$. Lähtötiedoissa on kolme merkitsevää numeroa, joten tulos annetaan kolmella.
+**Järkevyys:** Jälkikaiunta-aika lyheni noin $1{,}5\,\text{s}$:sta noin $0{,}6\,\text{s}$:iin, eli se on noin $0{,}4$-kertainen. Levyjen jälkeen taso laskee $40{,}1\,\text{dB} : 15{,}9\,\text{dB} \approx 2{,}5$ kertaa nopeammin, ja $1 - 1 : 2{,}5 = 0{,}6$ vastaa tulosta. Aika $0{,}6\,\text{s}$ sopii puheluokkaan.
+
+## fy5-16-L2-06
+**Annettu:** vaimennus $\Delta L = L_\text{ilman} - L_\text{este}$ taajuuksilla $125$, $500$, $2000$ ja $4000\,\text{Hz}$ taulukon arvoista; äänen nopeus $v = 343\,\text{m/s}$
+**Kysytty:** a) ero vaimennuksessa taajuuksilla $4000\,\text{Hz}$ ja $500\,\text{Hz}$; b) miksi matala ääni vaimenee huonommin
+**Periaate:** Esteen vaimennus on tason pudotus esteen takana. Aalto kiertyy esteen ohi sitä paremmin, mitä pidempi sen aallonpituus $\lambda = \dfrac{v}{f}$ on esteen kokoon verrattuna.
+**Kuvaajan lukeminen:** Taulukosta vaimennukset ovat $125\,\text{Hz}$: $8{,}1\,\text{dB}$, $500\,\text{Hz}$: $13{,}4\,\text{dB}$, $2000\,\text{Hz}$: $22{,}2\,\text{dB}$ ja $4000\,\text{Hz}$: $25{,}2\,\text{dB}$.
+**Kaava:** $\Delta L = L_\text{ilman} - L_\text{este}$ ja $\lambda = \dfrac{v}{f}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:**
+$$\begin{aligned}
+\Delta L_{500} &= 68{,}4\,\text{dB} - 55{,}0\,\text{dB} \\
+&= 13{,}4\,\text{dB} \\
+\Delta L_{4000} &= 60{,}3\,\text{dB} - 35{,}1\,\text{dB} \\
+&= 25{,}2\,\text{dB} \\
+\Delta L_{4000} - \Delta L_{500} &= 11{,}8\,\text{dB}
+\end{aligned}$$
+Aallonpituudet ovat $\lambda_{125} = \dfrac{343\,\text{m/s}}{125\,\text{Hz}} = 2{,}7\,\text{m}$ ja $\lambda_{4000} = \dfrac{343\,\text{m/s}}{4000\,\text{Hz}} = 0{,}086\,\text{m}$.
+**Vastaus:** a) $11{,}8\,\text{dB}$. b) Matalan äänen aallonpituus $2{,}7\,\text{m}$ on esteen korkeuden luokkaa, joten aalto taipuu esteen yli ja äänen taso esteen takana pysyy suurempana. Korkean äänen aallonpituus $0{,}086\,\text{m}$ on paljon esteen kokoa pienempi, joten este jättää sen varjoonsa.
+**Järkevyys:** Vaimennus kasvaa taajuuden mukana joka rivillä: $8{,}1 < 13{,}4 < 22{,}2 < 25{,}2\,\text{dB}$. Siksi tulos on positiivinen, ja ero on pienempi kuin suurin vaimennus $25{,}2\,\text{dB}$.
+
+## fy5-16-L2-07
+**Annettu:** $L_\text{A} = 83\,\text{dB}$, $L_\text{B} = 80\,\text{dB}$; lähteiden intensiteetit summautuvat
+**Kysytty:** a) miksi desibelejä ei lasketa yhteen; b) yhteinen taso $L$
+**Periaate:** Desibeliasteikko on logaritminen, joten tasot eivät summaudu. Summautuvat intensiteetit, ja taso lasketaan vasta summasta. Vertaamalla suurempaan tasoon $L_\text{A}$ ei tarvita vertailuintensiteettiä $I_0$.
+**Kaava:** $\dfrac{I_\text{B}}{I_\text{A}} = 10^{\,(L_\text{B} - L_\text{A}) / (10\,\text{dB})}$ ja $L = L_\text{A} + 10\,\text{dB} \cdot \lg \dfrac{I_\text{A} + I_\text{B}}{I_\text{A}}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:**
+$$\begin{aligned}
+\frac{I_\text{B}}{I_\text{A}} &= 10^{\,-0{,}30} \\
+&= 0{,}501 \\
+L &= 83\,\text{dB} + 10\,\text{dB} \cdot \lg 1{,}501 \\
+&= 83\,\text{dB} + 1{,}76\,\text{dB} \\
+&= 84{,}76\,\text{dB}
+\end{aligned}$$
+**Vastaus:** a) Taso on logaritminen suure: kun intensiteetti kasvaa kertoimella, taso kasvaa vain desibelien lisäyksenä, joten tasojen summa $163\,\text{dB}$ ei kuvaa mitään todellista äänenvoimakkuutta. b) $85\,\text{dB}$, kokonaisina desibeleinä kuten lähtötiedot.
+**Järkevyys:** Yhteinen taso on suurempi kuin kumpikaan yksin ($83\,\text{dB}$ ja $80\,\text{dB}$) mutta vain vähän suurempi kuin voimakkaampi kone. Se on pienempi kuin $86\,\text{dB}$, joka saataisiin kahdesta $83\,\text{dB}$:n koneesta ($83\,\text{dB} + 3\,\text{dB}$), kuten heikomman koneen kohdalla pitääkin.
+
+## fy5-16-L3-04
+**Annettu:** sahaus $L_1 = 97\,\text{dB}$, $t_1 = 1{,}0\,\text{h}$; höyläys $L_2 = 91\,\text{dB}$, $t_2 = 2{,}0\,\text{h}$; kokoaminen $L_3 = 85\,\text{dB}$, $t_3 = 3{,}0\,\text{h}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
+**Kysytty:** a) päivän annos prosentteina; b) kuulonsuojainten pienin vaimennus $\Delta L$; c) riittääkö sahan koteloiminen
+**Periaate:** Annos on korvaan kertynyt energia, joten vaiheiden osuudet lasketaan yhteen. Osuus on keston ja kyseisen tason sallitun ajan suhde. Kuulonsuojain pienentää kaikkien vaiheiden intensiteettiä samalla kertoimella, joten annos jaetaan luvulla $2^{\,\Delta L / (3\,\text{dB})}$.
+**Kaava:** $t_{\text{sall},i} = \dfrac{t_0}{2^{\,n_i}}$, missä $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$; annos $D = \sum \dfrac{t_i}{t_{\text{sall},i}}$; ehto $\dfrac{D}{2^{\,\Delta L / (3\,\text{dB})}} \le 1$
+**Muunnokset:** Ei tarvita: ajat ovat tunteina, ja yksikkö supistuu.
+**Sijoitus:**
+Sahaus: $n_1 = \dfrac{97 - 85}{3} = 4$, joten $t_{\text{sall},1} = 8\,\text{h} : 16 = 0{,}50\,\text{h}$ ja osuus on $1{,}0\,\text{h} : 0{,}50\,\text{h} = 2{,}0$. Höyläys: $n_2 = 2$, $t_{\text{sall},2} = 2{,}0\,\text{h}$ ja osuus $1{,}0$. Kokoaminen: $n_3 = 0$, $t_{\text{sall},3} = 8\,\text{h}$ ja osuus $0{,}375$.
+$$\begin{aligned}
+D &= 2{,}0 + 1{,}0 + 0{,}375 \\
+&= 3{,}375 \approx 3{,}4
+\end{aligned}$$
+Kohta b:
+$$\begin{aligned}
+2^{\,\Delta L / (3\,\text{dB})} &\ge 3{,}375 \\
+\Delta L &\ge 3\,\text{dB} \cdot \frac{\lg 3{,}375}{\lg 2} \\
+&= 3\,\text{dB} \cdot 1{,}755 \\
+&= 5{,}26\,\text{dB}
+\end{aligned}$$
+Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$, jolloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{sall},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$, osuus $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $D = 0{,}198 + 1{,}0 + 0{,}375 = 1{,}57$.
+**Vastaus:** a) $340\,\%$. b) vähintään $5{,}3\,\text{dB}$. c) Ei riitä yksin, koska annos on edelleen noin $160\,\%$ vertailuannoksesta. Kotelon lisäksi tarvitaan esimerkiksi kuulonsuojaimet, joiden vaimennus on vähintään $\dfrac{3\,\text{dB} \cdot \lg 1{,}57}{\lg 2} = 2{,}0\,\text{dB}$, tai höyläyskoneen sijoittaminen erilleen työpisteestä.
+**Järkevyys:** Sahaus ja höyläys ovat yli toiminta-arvon, joten annoksen täytyy olla yli $100\,\%$. Tavalliset suojaimet vaimentavat $20$–$30\,\text{dB}$, joten $5{,}3\,\text{dB}$ täyttyy helposti.
+
+## fy5-16-L3-05
+**Annettu:** $L_1 = 112\,\text{dB}$ etäisyydellä $r_1 = 2{,}0\,\text{m}$, kuulija etäisyydellä $r_2 = 8{,}0\,\text{m}$; tulppien vaimennus $\Delta L = 8\,\text{dB}$; konsertin kesto $t = 3{,}0\,\text{h}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
+**Kysytty:** a) taso ilman tulppia; b) sallittu aika tulppien kanssa; c) annos prosentteina ja riittääkö siirtyminen etäisyydelle $16\,\text{m}$
+**Periaate:** Pistemäisen lähteen taso laskee $6\,\text{dB}$ jokaisella etäisyyden kaksinkertaistumisella. Tulpat vähentävät korvaan pääsevää tasoa vaimennuksensa verran, ja sallittu aika saadaan säännöstä, jossa jokainen $3\,\text{dB}$ toiminta-arvon yli puolittaa ajan. Annos on kuunteluajan ja sallitun ajan suhde.
+**Kaava:** $L_2 = L_1 - k \cdot 6\,\text{dB}$, missä $2^{\,k} = \dfrac{r_2}{r_1}$; $L = L_2 - \Delta L$; $t_\text{sall} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Muunnokset:** Ei tarvita: $r_2 : r_1 = 8{,}0\,\text{m} : 2{,}0\,\text{m} = 4$, joten $k = 2$.
+**Sijoitus:**
+Kohta a: $L_2 = 112\,\text{dB} - 2 \cdot 6\,\text{dB} = 100\,\text{dB}$.
+Kohta b: tulppien kanssa taso on $L = 100\,\text{dB} - 8\,\text{dB} = 92\,\text{dB}$.
+$$\begin{aligned}
+n &= \frac{92\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \\
+&= 2{,}33 \\
+t_\text{sall} &= \frac{8\,\text{h}}{2^{\,2{,}33}} \\
+&= 1{,}59\,\text{h}
+\end{aligned}$$
+Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\,\%$. Etäisyydellä $16\,\text{m}$ taso on $100\,\text{dB} - 6\,\text{dB} = 94\,\text{dB}$ ja tulppien kanssa $86\,\text{dB}$. Silloin $n = \dfrac{1}{3}$, $t_\text{sall} = \dfrac{8\,\text{h}}{2^{1/3}} = 6{,}35\,\text{h}$ ja annos on $\dfrac{3{,}0\,\text{h}}{6{,}35\,\text{h}} = 0{,}47$ eli $47\,\%$.
+**Vastaus:** a) $100\,\text{dB}$. b) $1{,}6\,\text{h}$, kaksi merkitsevää numeroa kuten vaimennuksessa ja kestossa. c) Paikallaan etäisyydellä $8{,}0\,\text{m}$ annos on $190\,\%$ eli liian suuri. Siirtyminen etäisyydelle $16\,\text{m}$ riittää, koska annos putoaa noin $47\,\%$:iin.
+**Järkevyys:** Ilman tulppia sallittu aika olisi vain $8\,\text{h} : 2^5 = 0{,}25\,\text{h}$, joten $8\,\text{dB}$:n vaimennus pidentää sitä noin kuusinkertaiseksi, ja $1{,}59\,\text{h} : 0{,}25\,\text{h} = 6{,}3 \approx 2^{8/3} = 6{,}35$.
