@@ -86,13 +86,13 @@
 **Conversions:** Not needed: the dose rates are in the same unit, and the thickness comes out in the same unit as the half-value thickness, that is, in millimetres.
 **Substitution:** $\dfrac{\dot{H}_0}{\dot{H}} = \dfrac{96\,\mu\text{Sv/h}}{3.0\,\mu\text{Sv/h}} = 32 = 2^5$, so $d = 6.0\,\text{mm} \cdot 5 = 30\,\text{mm}$
 **Answer:** $30\,\text{mm}$, two significant figures like the half-value thickness $6.0\,\text{mm}$ and the target $3.0\,\mu\text{Sv/h}$.
-**Reasonableness:** Five halvings in a row: $96 \to 48 \to 24 \to 12 \to 6 \to 3\,\mu\text{Sv/h}$. Three centimetres of lead is a typical thickness for the shield of a gamma source.
+**Reasonableness:** Five halvings in a row: $96 \to 48 \to 24 \to 12 \to 6 \to 3$ (in $\mu\text{Sv/h}$). Three centimetres of lead is a typical thickness for the shield of a gamma source.
 
 ## fy8-13-L3-01
 **Given:** dose rate $\dot{H}_1 = 80\,\mu\text{Sv/h}$ at distance $r_1 = 1.0\,\text{m}$ without a shield, working time $t = 30\,\text{min}$; A: $r = 2.0\,\text{m}$ without a shield; B: $r = 1.0\,\text{m}$ and lead $d = 18\,\text{mm}$, $d_{1/2} = 6.0\,\text{mm}$
 **Asked:** the difference of the doses $H_\text{A} - H_\text{B}$ in microsieverts, with its sign
 **Principle:** In method A the dose rate is reduced by distance according to the inverse-square law, in method B by lead according to the half-value thickness. The working time is the same in both, so the doses are obtained by multiplying each dose rate by the same time.
-**Formula:** $H_\text{A} = \dot{H}_1 \left(\dfrac{r_1}{r_\text{A}}\right)^2 t$ and $H_\text{B} = \dot{H}_1 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} t$, so $H_\text{A} - H_\text{B} = \dot{H}_1 t \left[\left(\dfrac{r_1}{r_\text{A}}\right)^2 - \left(\tfrac{1}{2}\right)^{d/d_{1/2}}\right]$
+**Formula:** $H_\text{A} = \dot{H}_1 \left(\dfrac{r_1}{r_\text{A}}\right)^2 t$ and $H_\text{B} = \dot{H}_1 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} t$, so $H_\text{A} - H_\text{B} = \dot{H}_1 t \left[\left(\tfrac{r_1}{r_\text{A}}\right)^2 - \left(\tfrac{1}{2}\right)^{d/d_{1/2}}\right]$
 **Conversions:** $t = 30\,\text{min} = 30 \cdot \tfrac{1}{60}\,\text{h} = 0.50\,\text{h}$
 **Substitution:** $H_\text{A} = 80\,\mu\text{Sv/h} \cdot \left(\tfrac{1.0\,\text{m}}{2.0\,\text{m}}\right)^2 \cdot 0.50\,\text{h} = 20\,\mu\text{Sv/h} \cdot 0.50\,\text{h} = 10\,\mu\text{Sv}$ and $H_\text{B} = 80\,\mu\text{Sv/h} \cdot \left(\tfrac{1}{2}\right)^{3} \cdot 0.50\,\text{h} = 10\,\mu\text{Sv/h} \cdot 0.50\,\text{h} = 5.0\,\mu\text{Sv}$, so $H_\text{A} - H_\text{B} = 10\,\mu\text{Sv} - 5.0\,\mu\text{Sv} = 5.0\,\mu\text{Sv}$
 **Answer:** $H_\text{A} - H_\text{B} = +5.0\,\mu\text{Sv}$, so method B gives the smaller dose; two significant figures like the distances and the half-value thickness.

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 47b5fbdb32fc22eb
+CONTENT-HASH: 0fdb00d7ade003fa
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json L1-05 — the unit "10^-3 eV" is clear; the answer chip shows "1.17" without it, fine.
-- [Minor] solutions.md — "Answer:" lines state the significant figures well; the "Given" lines are one long clause in L2-01, could be split.
-- [Minor] L3-03 — three wavelengths in one sentence; a small table would read better on a phone.
+- [Minor] L2-01 Given — one long clause; split (carried).
+- [Minor] L3-03 — three wavelengths in one sentence; a small table would read better on a phone (carried).
 
 ## Checked
-open-exercises-L3-1280-1 (L3-01 with its solution): numbers with units in LaTeX, fractions aligned, decimal point, no Finnish headings or terms (Annettu, Kysytty, Sijoitus all in English). Grep over exercises.json and solutions.md found no Finnish characters.
+- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (L1-05 and L2-03 Sijoitus (three formulas)) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
+- Result: h · \dfrac{c}{X} wraps after 'h ·' into a 2–4 row block, fraction bar intact, units upright with thin spaces, decimal point; document scrollWidth = 360 = viewport, no clipped KaTeX.
+- LaTeX valid, no red KaTeX; hash at start and end the same.
 
 ## Scores
-illustrations n/a · typography 4 · English 4 · accessibility 4
+illustrations n/a · typography 5 · English 5 · accessibility 4

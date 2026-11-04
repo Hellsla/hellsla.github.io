@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c5bdb6df16d2f7ca
+CONTENT-HASH: 5ed5af187d8f9cb2
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- Level 1 is mostly charge/baryon-number counting (L1-01 to L1-03, L1-05 are the same skill); L1-01 repeats the lesson `kvarkit` Delta++ reasoning. Swap one for a mediator or interaction item.
-- No exercise at levels 1-2 asks the student to decide with the conservation laws whether a given reaction is possible; it appears first in L3-03 (and the exit ticket). Add one at level 2.
-- Nothing practises beta decay at the quark level or naming mediators; consider one short level 1 task.
-- L3-02 (antimatter fuel) is a fine new context; keep.
+- Level 1 is mostly charge/baryon-number counting; L1-01 repeats the lesson's Delta++ reasoning (carried).
+- No level 1-2 task asks whether a given reaction is possible (carried).
+- Nothing practises beta decay at quark level or mediators (carried).
 
 ## Checked
-- exercises.json and solutions.md read: levels rise (count, energy, reasoning); solutions follow given, asked, principle, formula, substitution, answer, reasonableness and explain why; no copy of the worked example.
+- Delta: L2-03 Sijoitus: h·(c/X) instead of (h·c)/X — same value, intermediate results and answers unchanged, so the arithmetic and the student's path (Kaava hc/λ, then Sijoitus) still agree; the fraction now shows c/X as the quantity being divided, which is arguably clearer for tracing the units.
+- Opened own 360 px captures (?ratkaisut=1) of every changed solution step (scratchpad shots-fx/): the Sijoitus now wraps as 'h · [fraction c/X] = result' on two to four short rows, nothing clipped, no page scroll; same fraction-over-line form as the other solutions.
+- Levels, tasks and answers untouched by the commit; earlier PASS stands.

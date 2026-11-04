@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 47b5fbdb32fc22eb
+CONTENT-HASH: 0fdb00d7ade003fa
 
 ## Blocking
 
 ## Polish
+- Packet (tooling) — the en exercise brief in packet-science.md is still empty (Finnish heading filter); not a content issue (carried).
 
 ## Checked
-- All 12 answers recomputed in one script with my own formulas, and all agree with answers.py and exercises.json: 0.01296, 7495, 8400, 75, 1.170·10⁻³ eV, 95.93, 14.51, 1.287, 160.88, 25 %, 7.274 MeV, 129.86.
-- Every number in exercises.json and solutions.md matches the reviewed content/fi set.
-- v = cz is used only with z ≤ 0.035, and the condition is stated (L1-02, L2-01, L3-03); own motion is ignored where it is said to be (L1-03, L1-04, L2-04); L2-02 states the constant-rate assumption.
-- L3-02 uses atomic masses with the electron count balanced (6 = 6); the per-nucleon check 7.07 → 7.68 MeV is consistent.
-- L3-03 line matching by equal ratios (1.030), and the longest line is used for z; L2-03 reasonableness (964 nm near-IR, photon-to-baryon argument) is correct.
-- The rounding reasons name the limiting datum; tolerances of 2 % fit the data.
-- Note for tooling, not content: the en exercise brief in packet-science.md is empty (the section extraction looks for the Finnish headings Kaava/Esimerkki). I judged notation from the en lesson text.
+- Delta re-review: the only change since the passed version is commit fd2e54e95 in exercises/solutions.md (360 px narrowing); hash 0fdb00d7ade003fa equals the packet's, at start and end. No task, answer, unit, tolerance or other file changed.
+- solutions.md:47 (L1-05) — `\dfrac{6.626·10⁻³⁴ J s · 2.998·10⁸ m/s}{X}` → `6.626·10⁻³⁴ J s · \dfrac{2.998·10⁸ m/s}{X}` is identical (a·b/X = a·(b/X)); X = 1.06 · 10⁻³ m still the denominator, braces balanced (old numerator's closing brace now closes the new one), units J s · m/s / (m) give J; recomputed 1.8740 · 10⁻²² J → 1.1698 · 10⁻³ eV, as written.
+- solutions.md:77 (L2-03) — `\dfrac{6.626·10⁻³⁴ J s · 2.998·10⁸ m/s}{X}` → `6.626·10⁻³⁴ J s · \dfrac{2.998·10⁸ m/s}{X}` is identical (a·b/X = a·(b/X)); X = 9.636 · 10⁻⁷ m still the denominator, braces balanced (old numerator's closing brace now closes the new one), units J s · m/s / (m) give J; recomputed 2.0615 · 10⁻¹⁹ J → 1.287 eV, as written.
+- Decimal point kept in every changed number; `\,\text{}` units unchanged.
+- Previous review's recomputation of all 12 answers and its other checks stand (content unchanged).
