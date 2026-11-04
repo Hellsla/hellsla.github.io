@@ -53,7 +53,7 @@
           "feedback": "Rounding is not to the nearest ten but to significant figures. Two significant figures give $99\\,\\text{cm}^2$; $100\\,\\text{cm}^2$ is rounded too much. Review this in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html)."
         }
       ],
-      "fold": "Osa I"
+      "fold": "Part I"
     },
     {
       "id": "osa1-2",
@@ -80,7 +80,7 @@
           "feedback": "Energy is also converted into forms other than useful ones in the power plant ($60\\,\\%$) and in the lamp ($70\\,\\%$). The efficiencies are multiplied: about $11\\,\\%$. Review this in the chapter [*Efficiency*](fy2-4.html)."
         }
       ],
-      "fold": "Osa I"
+      "fold": "Part I"
     },
     {
       "id": "osa1-3",
@@ -107,7 +107,7 @@
           "feedback": "It is the velocity that changes direction, not the acceleration. The weight points down all the time, so the acceleration is $g$ downwards throughout the flight. Review this in the chapter [*Newton's second law*](fy4-4.html)."
         }
       ],
-      "fold": "Osa I"
+      "fold": "Part I"
     },
     {
       "id": "osa1-4",
@@ -134,7 +134,7 @@
           "feedback": "Correct. The magnetic flux changes in the wall of the pipe, and by Lenz's law the magnetic field of the induced eddy currents opposes the change that produces them. Review this in the chapter [*Lenz's law and eddy currents*](fy7-6.html)."
         }
       ],
-      "fold": "Osa I"
+      "fold": "Part I"
     },
     {
       "id": "osa1-5",
@@ -161,7 +161,7 @@
           "feedback": "Correct. At constant volume $\\tfrac{p_2}{p_1} = \\tfrac{T_2}{T_1} = \\tfrac{313\\,\\text{K}}{293\\,\\text{K}} \\approx 1.07$, so the pressure increases by about $7\\,\\%$. Review this in the chapter [*Ideal gas law*](fy3-10.html)."
         }
       ],
-      "fold": "Osa I"
+      "fold": "Part I"
     },
     {
       "id": "osa1-6",
@@ -188,7 +188,7 @@
           "feedback": "A longer orbit is travelled more slowly, not faster: high up gravity is weaker and $v = \\sqrt{\\tfrac{GM}{r}}$ is smaller. The period increases both because the orbit is longer and because the speed is smaller. Review this in the chapter [*Satellites and planets in circular orbits*](fy5-6.html)."
         }
       ],
-      "fold": "Osa I"
+      "fold": "Part I"
     },
     {
       "id": "osa1-7",
@@ -215,7 +215,7 @@
           "feedback": "The current of the battery increases, but it is shared between the lamps. The voltage and current of the first lamp stay almost the same, so it does not become brighter. Review this in the chapter [*Resistors in series and in parallel*](fy6-4.html)."
         }
       ],
-      "fold": "Osa I"
+      "fold": "Part I"
     },
     {
       "id": "osa1-8",
@@ -241,7 +241,7 @@
         }
       ],
       "solution": "**Given:** spring constant $k = 40.0\\,\\text{N/m}$, mass $m = 250\\,\\text{g}$\n\n**Find:** the period $T$\n\n**Principle:** The spring force on the mass is proportional to the displacement from the equilibrium position, so the motion is simple harmonic oscillation. Gravity only shifts the equilibrium position and does not change the period. The mass of the spring is neglected.\n\n**Formula:** $T = 2\\pi\\sqrt{\\dfrac{m}{k}}$\n\n**Conversions:** $m = 250\\,\\text{g} = 250 \\cdot 10^{-3}\\,\\text{kg} = 0.250\\,\\text{kg}$\n\n**Substitution:** $T = 2\\pi\\sqrt{\\dfrac{0.250\\,\\text{kg}}{40.0\\,\\text{N/m}}} = 2\\pi \\cdot 0.07906\\,\\text{s} = 0.4967\\,\\text{s}$\n\n**Answer:** $T \\approx 0.497\\,\\text{s}$, three significant figures like the spring constant and the mass.\n\n**Reasonableness:** Unit: $\\sqrt{\\tfrac{\\text{kg}}{\\text{N/m}}} = \\sqrt{\\tfrac{\\text{kg} \\cdot \\text{m}}{\\text{kg} \\cdot \\text{m/s}^2}} = \\text{s}$. About two oscillations per second fits the motion of a school spring and mass.",
-      "fold": "Osa I"
+      "fold": "Part I"
     },
     {
       "id": "osa1-9",
@@ -267,7 +267,7 @@
         }
       ],
       "solution": "**Given:** power $P = 1.50\\,\\text{kW}$, voltage $U = 230\\,\\text{V}$\n\n**Find:** the resistance $R$\n\n**Principle:** Electric power is the product of voltage and current, and the current through a resistor obeys Ohm's law. When the current is eliminated, the power depends only on the voltage and the resistance.\n\n**Formula:** $P = UI$ and $I = \\dfrac{U}{R}$, so $P = \\dfrac{U^2}{R}$, that is $R = \\dfrac{U^2}{P}$\n\n**Conversions:** $P = 1.50\\,\\text{kW} = 1.50 \\cdot 1000\\,\\text{W} = 1500\\,\\text{W}$\n\n**Substitution:** $R = \\dfrac{(230\\,\\text{V})^2}{1500\\,\\text{W}} = \\dfrac{52\\,900\\,\\text{V}^2}{1500\\,\\text{W}} = 35.27\\,\\Omega$\n\n**Answer:** $R \\approx 35.3\\,\\Omega$, three significant figures like the power and the voltage.\n\n**Reasonableness:** The current is $\\tfrac{230\\,\\text{V}}{35.3\\,\\Omega} = 6.5\\,\\text{A}$ and $230\\,\\text{V} \\cdot 6.5\\,\\text{A} \\approx 1500\\,\\text{W}$. The current is below the $10$–$16\\,\\text{A}$ limit of an ordinary socket, as it should be for a household appliance.",
-      "fold": "Osa I"
+      "fold": "Part I"
     },
     {
       "id": "osa1-10",
@@ -293,7 +293,7 @@
         }
       ],
       "solution": "**Given:** wavelength $\\lambda = 405\\,\\text{nm}$, Planck constant $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, speed of light $c = 2.998 \\cdot 10^8\\,\\text{m/s}$\n\n**Find:** the energy of a photon $E$ in electronvolts\n\n**Principle:** Light carries energy in quanta, photons. The energy of one photon is proportional to the frequency of the light, and the frequency follows from the wavelength, because the speed of light is $c = f\\lambda$.\n\n**Formula:** $E = hf$ and $f = \\dfrac{c}{\\lambda}$, so $E = \\dfrac{hc}{\\lambda}$\n\n**Conversions:** $\\lambda = 405\\,\\text{nm} = 405 \\cdot 10^{-9}\\,\\text{m}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Substitution:** $hc = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2.998 \\cdot 10^8\\,\\text{m/s} = 1.986 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$, so $E = \\dfrac{1.986 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{405 \\cdot 10^{-9}\\,\\text{m}} = 4.905 \\cdot 10^{-19}\\,\\text{J}$ and in electronvolts $E = \\dfrac{4.905 \\cdot 10^{-19}\\,\\text{J}}{1.602 \\cdot 10^{-19}\\,\\text{J/eV}} = 3.062\\,\\text{eV}$\n\n**Answer:** $E \\approx 3.06\\,\\text{eV}$, three significant figures like the wavelength.\n\n**Reasonableness:** The photons of visible light have energies of about $1.6$–$3.3\\,\\text{eV}$, and violet is near the short-wavelength end, so the energy is at the upper end of the range. Check: $\\tfrac{1240\\,\\text{eV}\\,\\text{nm}}{405\\,\\text{nm}} = 3.06\\,\\text{eV}$.",
-      "fold": "Osa I"
+      "fold": "Part I"
     }
   ]
 }

@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1e30cf3d05232256
+CONTENT-HASH: 5bf67fc9ccdd56f9
 
-Pedagogy review (round 2) of the English translation of fy9-harjoituskoe (source reviewed and passed).
+Pedagogy review (round 3) of the English translation of fy9-harjoituskoe (source reviewed and passed).
 
 ## Blocking
-None (round 1 had none).
+None (rounds 1 and 2 had none).
 
 ## Polish
-1. [Minor] The Part I tag still shows the Finnish "OSA I" (see visual.md Blocking 1). For a student this is a small label, but it should become "Part I" once the shared fix lands.
-
-## Round-1 fixes verified
-- s7 b: "What percentage of the mechanical energy of the ball is converted into other forms of energy in the bounce of the preliminary test?"
-- s10 a: "From the data, draw a graph whose points lie on a straight line, and fit a line to them."
-- s10 e criterion 0: "when the mass is doubled (0.300 kg → 0.600 kg), the period increases only …".
+None. Round-2 Polish 1 (the Finnish "OSA I" tag) is fixed: the ten Part I items now carry "Part I".
 
 ## Checked
-- Structure, points (120 p), ids, kinds, criteria keys, feedback per misconception, chapter names and the teacher.md time plan are unchanged from round 1, where they were checked against the source.
-- The s3 c question now asks "by what percentage has it changed?" (my wording fix).
+- The fold tag "Part I" matches how the rest of the unit names the exam parts: the Part I activity title "Part I: ten short items (20 p)", the unit.md points table and time plan (Part I / II / III), the time-plan figure ($\text{Part I}$) and the problem titles "Part II: …", "Part III: …". A student sees one name for each part throughout.
+- The diff since round 2 is only the ten fold values; structure, points (120 p), ids, kinds, criteria keys, feedback and the teacher.md time plan are unchanged from the earlier checks against the source.
+- check_i18n.py en 0 errors; units.py check ok; practice.py check: 10 tasks, 165 points (same as fi).

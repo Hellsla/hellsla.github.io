@@ -1,24 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 1e30cf3d05232256
+VERDICT: PASS
+CONTENT-HASH: 5bf67fc9ccdd56f9
 
-Visual & editorial review (round 2) of the English translation of fy9-harjoituskoe.
+Visual & editorial review (round 3) of the English translation of fy9-harjoituskoe.
 
 ## Blocking
-1. [Major, not fixed] inquiry.json activities 2–11 `"fold": "Osa I"`: the preview (preview/en/fy9-harjoituskoe.html, 390 and 1280) still shows the Finnish tag "OSA I" on all ten Part I items. The translation cannot fix it: I tried "Part I", and check_i18n.py fails ("'Part I' differs from Finnish 'Osa I' (only texts are translated)"), so I reverted it. `fold` is still missing from scripts/check_i18n.py TEXT_KEYS. Fix (Shared issues): add `fold` to TEXT_KEYS, then set the ten values to "Part I" here.
+None. Round-2 Blocking 1 (Finnish "OSA I" fold tag) is fixed: scripts/check_i18n.py now lists `fold` in TEXT_KEYS, and inquiry.json activities 2–11 read `"fold": "Part I"`. The preview shows the tag "PART I" (uppercased by CSS, like the source's "OSA I") on all ten Part I items at 390 and 1280; the text "Osa"/"OSA" no longer appears on the page.
 
 ## Polish
 1. [Minor] The Finnish-derived subscripts ($m_\text{j}$, $F_\text{v}$, $R_\text{l}$, $c_\text{k}$) stay because the formulas must match the source. They are acceptable because each is defined in words.
 
-## Round-1 fixes verified
-- Blocking 2 (s7 b grammar): fixed, "What percentage of the mechanical energy …".
-- Polish 1–4 (s8 figure description "between 1.1 and 6.5 m²/s² and between 12 and 71 mN", s3 c "a relative change of", s10 a, s5 b "angles of incidence"): all fixed. I also changed s3 c to "by what percentage has it changed?".
-
-## Shared issues
-- scripts/check_i18n.py `TEXT_KEYS` (and so translate_kit) lacks inquiry.json `fold`. Every translated unit that uses folds shows Finnish there.
-
 ## Checked
-- I built with `python3 scripts/build.py fy9-harjoituskoe` and opened preview/en/fy9-harjoituskoe.html in Playwright at 390 and 1280 with every details element open. There is no horizontal scroll (scrollWidth 390 / 1280), no KaTeX errors, no raw `$`, no comma decimals and no console errors. The figures are 298–358 px wide at 390 and 569–608 px at 1280, and their text is English.
-- check_i18n.py: en 0 errors.
+- Consistency: "Part I" is the same wording as the Part I activity title, the unit.md table, headings and time plan, the plan figure and the "Part II: …"/"Part III: …" problem titles. No wording change needed.
+- Only inquiry.json changed since round 2 (10 fold lines).
+- Built with `python3 scripts/build.py fy9-harjoituskoe`; opened preview/en/fy9-harjoituskoe.html in Playwright (scripts/_browser.launch) at 390 and 1280 with every details element open: scrollWidth 390 / 1280 (no horizontal scroll), 0 KaTeX errors, no raw `$`, no comma decimals, no console or page errors. The fold pill sits on one line beside the item title at both widths.
+- check_i18n.py: en 0 errors; units.py check: 77 units ok; practice.py check: en 10 tasks, 165 points.
 
 ## Scores
 illustrations 4 · typography 4 · English 4 · accessibility 4
