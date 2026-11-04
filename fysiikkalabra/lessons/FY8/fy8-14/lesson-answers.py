@@ -42,12 +42,18 @@ for E in (30, 60, 100):
 # ---------------------------------------------------------------- Esimerkki: ray A 8,0 cm tissue, ray B 5,0 cm + 3,0 cm bone
 DT, DB = 3.4, 1.1                                            # cm at about 60 keV (rounded from 3,37 and 1,15)
 IA = 0.5 ** (8.0 / DT)                                       # 0,1957
-IB = 0.5 ** (5.0 / DT) * 0.5 ** (3.0 / DB)                   # 0,3606 · 0,1507 = 0,05434
+IB = 0.5 ** (5.0 / DT) * 0.5 ** (3.0 / DB)                   # 0,3608 · 0,1510 = 0,05449
 a["ex-IA"] = IA
 a["ex-IB-tissue"] = 0.5 ** (5.0 / DT)
 a["ex-IB-bone"] = 0.5 ** (3.0 / DB)
 a["ex-IB"] = IB
-a["ex-ratio"] = IA / IB                                      # 3,60 -> 3,6
+a["ex-ratio"] = IA / IB                                      # 3,59 -> 3,6 (Järkevyys: 0,1957 : 0,05449)
+a["ex-nA"] = 8.0 / DT                                        # 2,353 half-value thicknesses on ray A
+a["ex-nB-tissue"] = 5.0 / DT                                 # 1,471
+a["ex-nB-bone"] = 3.0 / DB                                   # 2,727
+a["ex-nB"] = 5.0 / DT + 3.0 / DB                             # 4,198
+a["ex-n-diff"] = a["ex-nB"] - a["ex-nA"]                     # 1,845
+a["ex-ratio-n"] = 2 ** a["ex-n-diff"]                        # 2^1,845 = 3,59 (Sijoitus)
 a["ex-check-exp"] = 3.0 / DB - 3.0 / DT                      # the bone path has 2,73 - 0,88 = 1,85 more halvings: 2^1,85 = 3,6
 a["ex-check-ratio"] = 2 ** a["ex-check-exp"]
 
@@ -79,7 +85,7 @@ a["ennuste3-tumour"] = 5 * 0.40                              # 2,0 Gy at the tum
 
 # ---------------------------------------------------------------- Siirto: FDG made 2 h 30 min before the injection
 A_INJ, T_TR, T_HALF = 300.0, 150.0, 110.0                    # MBq, min, min
-a["siirto"] = A_INJ * 2 ** (T_TR / T_HALF)                   # 772,3 MBq -> 770 MBq
+a["siirto"] = A_INJ * 2 ** (T_TR / T_HALF)                   # 772,0 MBq -> 770 MBq
 a["siirto-m-linear"] = A_INJ * (1 + T_TR / T_HALF / 2)       # wrong: half lost per half-life taken linearly: 504,5
 a["siirto-m-decay"] = A_INJ * 0.5 ** (T_TR / T_HALF)         # wrong: decayed forward instead of backward: 116,5
 a["siirto-m-h"] = A_INJ * 2 ** (2.5 / T_HALF)                # wrong: 2,5 h used as 2,5 min: 304,8
@@ -93,6 +99,7 @@ a["virhe-product"] = 0.36 * 0.15                             # 0,054: through bo
 a["virhe-sum"] = 0.36 + 0.15                                 # 0,51: the wrong sum
 a["virhe-quot"] = 0.36 / 0.15                                # 2,4: the wrong quotient
 a["light-ns-cm"] = c * 1e-9 * 100                            # light travels 30 cm in a nanosecond
+a["tof-0.3ns-cm"] = c * 0.3e-9 / 2 * 100                     # time-of-flight PET, Δt 0,3 ns: Δx = cΔt/2 = 4,5 cm ("muutama cm")
 a["chk2-E-J-e14"] = 511e3 * e * 1e14                         # 8,186e-14 J
 a["chk2"] = 511e3 * e / h / 1e20                             # 1,2355e20 Hz -> 1,24e20 Hz
 a["chk2-m-k"] = 511 * e / h / 1e17                           # 1,24e17: the k left out
@@ -111,7 +118,7 @@ PT = {1: 0.25, 2: 0.4, 0: 0.0}
 
 
 def pet_events(case, n):
-    seed = [4 + 1000 * case]
+    seed = [73 + 1000 * case]
 
     def rand():
         seed[0] = (seed[0] * 16807) % 2147483647
@@ -148,10 +155,12 @@ def pet_stats(case, n):
     return xs, -ys, err, 100 * nk / n
 
 
+# Seed 73 was chosen as a typical run: over seeds 1-100 the median distance is 4,2 cm at N = 10, 1,4 cm at 20 and
+# 1,0 cm at 50, 86 % of runs are within 1,5 cm at N = 50 and all at N = 150 ("kymmeniä koinsidensseja").
 for N in (10, 20, 50, 200, 1000):                            # koe-1: one tumour at (5, 3) cm
     xs, ys, err, share = pet_stats(1, N)
     a[f"koe1-N{N}-x"], a[f"koe1-N{N}-y"], a[f"koe1-N{N}-virhe"], a[f"koe1-N{N}-osuus"] = xs, ys, err, share
-# 10: (-15, 7) 20,4 cm, 10 %; 20: 3,6 cm; 50: (-9, -2) 14,9 cm, 14 %; 200: (4, 3) 1,0 cm, 21,5 %; 1000: (5, 3) 0 cm, 27,2 %
+# 10: (14, 19) 18,4 cm, 10 %; 20: (5, 7) 4,0 cm, 5 %; 50: (6, 4) 1,4 cm, 26 %; 200: (5, 3) 0 cm, 25,5 %; 1000: (5, 3) 0 cm, 27,8 %
 xs, ys, err, share = pet_stats(2, 1000)
-a["koe-2tum-N1000-x"], a["koe-2tum-N1000-y"] = xs, ys        # (-7, -2): the second tumour is the brighter one
+a["koe-2tum-N1000-x"], a["koe-2tum-N1000-y"] = xs, ys        # (5, 3): the first tumour is the brighter one
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

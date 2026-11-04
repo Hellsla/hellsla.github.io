@@ -26,7 +26,7 @@
 **Muunnokset:** Ei tarvita: aktiivisuus on megabecquereleinä, ja kertoimen yksikkö on millisievert megabecquerelia kohti.
 **Sijoitus:** $H_\text{E} = 0{,}019\,\tfrac{\text{mSv}}{\text{MBq}} \cdot 300\,\text{MBq} = 5{,}7\,\text{mSv}$
 **Vastaus:** $5{,}7\,\text{mSv}$, kaksi merkitsevää numeroa kuten kertoimessa $0{,}019\,\tfrac{\text{mSv}}{\text{MBq}}$.
-**Järkevyys:** Arviolla $0{,}02 \cdot 300 = 6$. Annos on samaa suuruusluokkaa kuin suomalaisen keskimääräinen vuosiannos $5{,}9\,\text{mSv}$, mikä sopii luvun annostaulukon arvoon noin $6\,\text{mSv}$.
+**Järkevyys:** Arviolla $0{,}02 \cdot 300 = 6$. Annos on samaa suuruusluokkaa kuin luonnon säteilyn keskimääräinen vuosiannos Suomessa $5{,}1\,\text{mSv}$, mikä sopii luvun annostaulukon arvoon noin $6\,\text{mSv}$.
 
 ## fy8-14-L1-04
 **Annettu:** kasvaimen massa $m = 50\,\text{g}$, absorboitunut annos $D = 2{,}0\,\text{Gy}$
@@ -52,7 +52,7 @@
 **Annettu:** elävän puun hiilen aktiivisuus $A_0 = 0{,}23\,\text{Bq}$ grammaa kohti, löydön aktiivisuus $A = 0{,}029\,\text{Bq}$ grammaa kohti, hiili-14:n puoliintumisaika $T_{1/2} = 5700\,\text{a}$
 **Kysytty:** puuhiilen ikä $t$ vuosina
 **Periaate:** Elävä puu pitää hiili-14:n osuuden hiilestään samana kuin ilmakehässä. Kun puu kuolee, uutta hiili-14:ää ei tule, ja aktiivisuus grammaa kohti pienenee hajoamislain mukaan. Iän ratkaisemiseksi eksponentissa oleva aika ratkaistaan logaritmilla.
-**Kaava:** $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, josta $\dfrac{A_0}{A} = 2^{t/T_{1/2}}$ ja $t = T_{1/2} \cdot \dfrac{\ln (A_0 : A)}{\ln 2}$
+**Kaava:** $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, josta $\dfrac{A_0}{A} = 2^{t/T_{1/2}}$. Otetaan molemmilta puolilta luonnollinen logaritmi ja käytetään sääntöä $\ln 2^{x} = x \ln 2$: $\ln \dfrac{A_0}{A} = \dfrac{t}{T_{1/2}} \cdot \ln 2$, josta $t = T_{1/2} \cdot \dfrac{\ln (A_0 : A)}{\ln 2}$
 **Muunnokset:** Ei tarvita: aktiivisuudet ovat samassa yksikössä, joten niiden suhde on paljas luku, ja ikä saadaan vuosina kuten puoliintumisaika.
 **Sijoitus:** $t = 5700\,\text{a} \cdot \dfrac{\ln (0{,}23 : 0{,}029)}{\ln 2} = 5700\,\text{a} \cdot \dfrac{\ln 7{,}931}{0{,}69315} = 5700\,\text{a} \cdot \dfrac{2{,}0708}{0{,}69315} = 5700\,\text{a} \cdot 2{,}9875 = 17\,029\,\text{a}$
 **Vastaus:** $1{,}7 \cdot 10^{4}\,\text{a}$ eli noin $17\,000$ vuotta, kaksi merkitsevää numeroa kuten aktiivisuuksissa $0{,}23\,\text{Bq}$ ja $0{,}029\,\text{Bq}$.
@@ -62,7 +62,7 @@
 **Annettu:** pulssitaajuus ilman nauhaa $I_0 = 1200\,\tfrac{1}{\text{s}}$, nauhan kanssa $I = 900\,\tfrac{1}{\text{s}}$ (taustasäteily vähennetty), teräksen puoliintumispaksuus $d_{1/2} = 0{,}73\,\text{mm}$
 **Kysytty:** nauhan paksuus $d$ millimetreinä
 **Periaate:** Fotonisäteilyn intensiteetti vaimenee teräksessä puoliintumispaksuuden mukaan, ja ilmaisimen nettopulssitaajuus on verrannollinen siihen osuvan säteilyn intensiteettiin. Siksi pulssitaajuuksien suhde on sama kuin intensiteettien suhde.
-**Kaava:** $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, josta $\dfrac{I_0}{I} = 2^{d/d_{1/2}}$ ja $d = d_{1/2} \cdot \dfrac{\ln (I_0 : I)}{\ln 2}$
+**Kaava:** $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, josta $\dfrac{I_0}{I} = 2^{d/d_{1/2}}$. Otetaan molemmilta puolilta luonnollinen logaritmi ja käytetään sääntöä $\ln 2^{x} = x \ln 2$: $\ln \dfrac{I_0}{I} = \dfrac{d}{d_{1/2}} \cdot \ln 2$, josta $d = d_{1/2} \cdot \dfrac{\ln (I_0 : I)}{\ln 2}$
 **Muunnokset:** Ei tarvita: pulssitaajuudet ovat samassa yksikössä, ja paksuus saadaan millimetreinä kuten puoliintumispaksuus.
 **Sijoitus:** $d = 0{,}73\,\text{mm} \cdot \dfrac{\ln (1200 : 900)}{\ln 2} = 0{,}73\,\text{mm} \cdot \dfrac{0{,}28768}{0{,}69315} = 0{,}73\,\text{mm} \cdot 0{,}41504 = 0{,}3030\,\text{mm}$
 **Vastaus:** $0{,}30\,\text{mm}$, kaksi merkitsevää numeroa kuten puoliintumispaksuudessa $0{,}73\,\text{mm}$.
@@ -112,7 +112,7 @@
 **Annettu:** lyijyn puoliintumispaksuus $511\,\text{keV}$:n fotoneille $d_{1/2} = 3{,}9\,\text{mm}$, läpi pääsevä osuus ${I : I_0} = 5{,}0\,\% = 0{,}050$
 **Kysytty:** lyijysuojan paksuus $d$ millimetreinä
 **Periaate:** Jokainen puoliintumispaksuus puolittaa fotonisäteilyn intensiteetin, joten vaimeneminen noudattaa yhtälöä $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$. Paksuus on eksponentissa, joten se ratkaistaan logaritmilla.
-**Kaava:** $\dfrac{I_0}{I} = 2^{d/d_{1/2}}$, josta $d = d_{1/2} \cdot \dfrac{\ln (I_0 : I)}{\ln 2}$
+**Kaava:** $\dfrac{I_0}{I} = 2^{d/d_{1/2}}$. Otetaan molemmilta puolilta luonnollinen logaritmi ja käytetään sääntöä $\ln 2^{x} = x \ln 2$: $\ln \dfrac{I_0}{I} = \dfrac{d}{d_{1/2}} \cdot \ln 2$, josta $d = d_{1/2} \cdot \dfrac{\ln (I_0 : I)}{\ln 2}$
 **Muunnokset:** $5{,}0\,\% = 0{,}050$, joten ${I_0 : I} = {1 : 0{,}050} = 20$. Paksuus saadaan millimetreinä kuten puoliintumispaksuus.
 **Sijoitus:** $d = 3{,}9\,\text{mm} \cdot \dfrac{\ln 20}{\ln 2} = 3{,}9\,\text{mm} \cdot \dfrac{2{,}9957}{0{,}69315} = 3{,}9\,\text{mm} \cdot 4{,}3219 = 16{,}86\,\text{mm}$
 **Vastaus:** noin $17\,\text{mm}$, kaksi merkitsevää numeroa kuten puoliintumispaksuudessa $3{,}9\,\text{mm}$ ja osuudessa $5{,}0\,\%$.

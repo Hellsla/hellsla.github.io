@@ -51,30 +51,37 @@
  {
   "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(S[1],'1'); I(R[0],10);",
   "expr": "window.simState.virhe",
-  "expected": 20.396078,
+  "expected": 18.35756,
   "tol": 0.001,
-  "note": "koe 1: N = 10: the brightest point 20,4 cm from the tumour (lesson-answers koe1-N10-virhe)"
+  "note": "koe 1: N = 10: the brightest point 18,4 cm from the tumour (lesson-answers koe1-N10-virhe, seed 73)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(S[1],'1'); I(R[0],20);",
+  "expr": "window.simState.virhe",
+  "expected": 4.0,
+  "tol": 0.001,
+  "note": "koe 1: N = 20: 4,0 cm"
  },
  {
   "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(S[1],'1'); I(R[0],50);",
   "expr": "window.simState.virhe",
-  "expected": 14.866069,
+  "expected": 1.414214,
   "tol": 0.001,
-  "note": "koe 1: N = 50: 14,9 cm"
+  "note": "koe 1: N = 50: 1,4 cm"
  },
  {
   "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(S[1],'1'); I(R[0],200);",
   "expr": "window.simState.virhe",
-  "expected": 1.0,
+  "expected": 0.0,
   "tol": 0.001,
-  "note": "koe 1: N = 200: 1,0 cm"
+  "note": "koe 1: N = 200: 0 cm, the brightest point is the tumour"
  },
  {
   "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(S[1],'1'); I(R[0],200);",
   "expr": "window.simState.osuus",
-  "expected": 21.5,
+  "expected": 25.5,
   "tol": 0.001,
-  "note": "koe 1: N = 200: 21,5 % of the lines within 1 cm of the tumour"
+  "note": "koe 1: N = 200: 25,5 % of the lines within 1 cm of the tumour"
  },
  {
   "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(S[1],'1'); I(R[0],1000);",
@@ -93,16 +100,16 @@
  {
   "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(S[1],'1'); I(R[0],1000);",
   "expr": "window.simState.osuus",
-  "expected": 27.2,
+  "expected": 27.8,
   "tol": 0.001,
-  "note": "N = 1000: 27,2 % of the lines through the tumour"
+  "note": "N = 1000: 27,8 % of the lines through the tumour"
  },
  {
   "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'2'); I(S[1],'1'); I(R[0],1000);",
   "expr": "window.simState.xmax * 100 + window.simState.ymax",
-  "expected": -702,
+  "expected": 503,
   "tol": 0,
-  "note": "two tumours, N = 1000: the brightest point (-7, -2) cm, the second tumour (lesson-answers koe-2tum)"
+  "note": "two tumours, N = 1000: the brightest point (5, 3) cm, the first tumour (lesson-answers koe-2tum)"
  },
  {
   "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'2'); I(S[1],'1'); I(R[0],1000);",

@@ -57,11 +57,11 @@
         {
           "text": "Annihilaatio tapahtui jossain ilmaisimien välisellä janalla, mutta yksi havainto ei kerro, missä kohdassa janaa.",
           "correct": true,
-          "feedback": "Simulaatio tukee tätä: jokaisesta koinsidenssista piirtyy jana kahden ilmaisimen välille, ja janat kulkevat koko kehon poikki. Fotonit lähtevät vastakkaisiin suuntiin, joten lähde on janalla, mutta sen kohtaa janalla yksi havainto ei paljasta. Paikka selviää vasta monen janan leikkauskohdista."
+          "feedback": "Simulaatio tukee tätä: jokaisesta koinsidenssista piirtyy jana kahden ilmaisimen välille, ja janat kulkevat koko kehon poikki. Fotonit lähtevät vastakkaisiin suuntiin, joten lähde on janalla. Kun saapumisaikojen eroa ei mitata, kuten mallissa, yksi havainto ei paljasta kohtaa janalla. Paikka selviää vasta monen janan leikkauskohdista."
         },
         {
           "text": "Annihilaatio tapahtui tarkalleen ilmaisimien välisen janan keskipisteessä, koska fotonit saapuivat yhtä aikaa.",
-          "feedback": "Simulaatiossa janat kulkevat kasvaimen kautta myös silloin, kun kasvain ei ole janan keskellä. Fotonit saapuvat ilmaisimiin muutaman nanosekunnin sisällä, ja laite pitää niitä samanaikaisina, vaikka toinen kulki pidemmän matkan: valo kulkee nanosekunnissa noin $30\\,\\text{cm}$. Keskipisteestä ei siis voi päätellä mitään."
+          "feedback": "Simulaatiossa janat kulkevat kasvaimen kautta myös silloin, kun kasvain ei ole janan keskellä. Fotonit saapuvat ilmaisimiin muutaman nanosekunnin sisällä, ja koinsidenssi-ilmaisu pitää niitä samanaikaisina, vaikka toinen kulki pidemmän matkan: valo kulkee nanosekunnissa noin $30\\,\\text{cm}$. Nykyaikainen laite mittaa aikaeron noin $0{,}3\\,\\text{ns}$:n tarkkuudella, mikä rajaa lähteen janalla muutaman senttimetrin matkalle, mutta ei yhteen pisteeseen. Kuva syntyy silti monista janoista."
         },
         {
           "text": "Annihilaatio tapahtui jommankumman ilmaisimen lähellä, koska fotoni syntyy siellä, missä se havaitaan.",
@@ -82,17 +82,17 @@
       },
       "choices": [
         {
-          "text": "Satoja, koska vain osa janoista kulkee kasvaimen kautta ja muut janat leikkaavat toisiaan satunnaisissa kohdissa.",
+          "text": "Kymmeniä, koska vain osa janoista kulkee kasvaimen kautta ja muut janat leikkaavat toisiaan satunnaisissa kohdissa.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $10$ ja $50$ koinsidenssin jälkeen kirkkain kohta oli $20\\,\\text{cm}$:n ja $15\\,\\text{cm}$:n päässä kasvaimesta, $200$ koinsidenssin jälkeen $1{,}0\\,\\text{cm}$:n ja $1000$:n jälkeen $0\\,\\text{cm}$:n päässä. Kasvaimen kautta kulki vain noin neljäsosa janoista."
+          "feedback": "Mallin arvot tukevat tätä: $10$ koinsidenssin jälkeen kirkkain kohta oli noin $18\\,\\text{cm}$:n ja $20$:n jälkeen $4{,}0\\,\\text{cm}$:n päässä kasvaimesta, $50$:n jälkeen enää $1{,}4\\,\\text{cm}$:n ja $200$:n jälkeen $0\\,\\text{cm}$:n päässä. Kasvaimen kautta kulki vain noin neljäsosa janoista. Pienillä $N$:n arvoilla tulos vaihtelee sattumalta: toisessa arvontajärjestyksessä kirkkain kohta voisi osua kasvaimeen jo $20$:llä tai vasta noin $100$:lla koinsidenssilla."
         },
         {
           "text": "Kaksi riittää, koska kaksi janaa leikkaa toisensa yhdessä pisteessä.",
-          "feedback": "Mallin arvot kumoavat tämän: vielä $50$ koinsidenssin jälkeen kirkkain kohta oli noin $15\\,\\text{cm}$:n päässä kasvaimesta. Merkkiainetta on koko kehossa, joten suurin osa janoista ei kulje kasvaimen kautta, ja niiden satunnaiset leikkauskohdat hukuttavat kasvaimen, kunnes janoja on satoja."
+          "feedback": "Mallin arvot kumoavat tämän: vielä $20$ koinsidenssin jälkeen kirkkain kohta oli $4{,}0\\,\\text{cm}$:n päässä kasvaimesta. Merkkiainetta on koko kehossa, joten suurin osa janoista ei kulje kasvaimen kautta, ja niiden satunnaiset leikkauskohdat hukuttavat kasvaimen, kunnes janoja on kymmeniä."
         },
         {
           "text": "Yksi riittää, koska jana kulkee aina sen kohdan kautta, johon merkkiainetta on kertynyt eniten.",
-          "feedback": "Mallin arvot kumoavat tämän: kasvaimen kautta kulki vain noin neljäsosa janoista, ja $10$ koinsidenssin jälkeen kirkkain kohta oli $20\\,\\text{cm}$:n päässä kasvaimesta. Yksi jana alkaa siitä kohdasta, jossa yksittäinen ydin sattui hajoamaan, ja se voi olla missä tahansa kehossa."
+          "feedback": "Mallin arvot kumoavat tämän: kasvaimen kautta kulki vain noin neljäsosa janoista, ja $10$ koinsidenssin jälkeen kirkkain kohta oli noin $18\\,\\text{cm}$:n päässä kasvaimesta. Yksi jana alkaa siitä kohdasta, jossa yksittäinen ydin sattui hajoamaan, ja se voi olla missä tahansa kehossa."
         }
       ]
     },
@@ -129,15 +129,15 @@
       "type": "sim",
       "text": "Potilaan poikkileikkaus on PET-laitteen ilmaisinrenkaassa. Kerää koinsidensseja ja seuraa, miten janoista syntyy oikealle kuva ja missä sen kirkkain kohta on.",
       "howto": "*Käynnistä keruu* kerää koinsidensseja, ja *Pysäytä* pysäyttää keruun. *Koinsidensseja* asettaa kerättyjen koinsidenssien määrän $N$ suoraan väliltä $0$–$2000$. *Potilas* valitsee, onko kehossa yksi kasvain, kaksi kasvainta vai ei kasvainta; kasvainta ei ole piirretty kehoon, vaan se löytyy kuvasta. *Ilmaisu* vaihtaa koinsidenssi-ilmaisun ja yksittäisten fotonien laskemisen välillä. Vasemmalla annihilaatiopisteestä lentää kaksi oranssia fotonia vastakkaisiin suuntiin, osutut ilmaisimet välähtävät ja niiden välille piirtyy jana. Oikealla on janoista laskettu kuva: mitä useampi jana kulkee kuvapisteen kautta, sitä kirkkaampi se on. *Nopeus* muuttaa vain keruun tahtia.",
-      "model": "Merkkiaine on jakautunut tasaisesti kehoon, ja kasvaimesta tulee $25\\,\\%$ annihilaatioista (kahdella kasvaimella $20\\,\\%$ kummastakin). Kasvaimen säde on noin $1\\,\\text{cm}$, joten sen merkkiainepitoisuus on monikymmenkertainen muuhun kehoon verrattuna. Fotonit lähtevät tarkalleen vastakkaisiin suuntiin satunnaisessa tasosuunnassa, eikä keho vaimenna tai sirota niitä. Positronin kulkemaa matkaa ja satunnaisia koinsidensseja ei ole mukana. Rengas on kaksiulotteinen ja havaitsee jokaisen fotoniparin. Todellinen laite kerää kymmeniä miljoonia koinsidensseja. Lukemat ovat mallin arvoja eivätkä mittauksia.",
-      "calc": "Annihilaatiot arvotaan aina samassa järjestyksessä, joten sama $N$ antaa aina saman kuvan. Kuva on $41 \\cdot 41$ pisteen ruudukko, jonka pisteiden väli on $1\\,\\text{cm}$. Jokainen jana lisää yhden osuman jokaiseen kuvapisteeseen, jonka etäisyys janasta on alle $0{,}6\\,\\text{cm}$. Kirkkain kohta on se piste, jossa osumia on eniten, ja lukema *etäisyys kasvaimesta* on sen etäisyys lähimmän kasvaimen keskipisteestä. *Kasvaimen kautta kulkevia viivoja* on niiden janojen osuus, jotka kulkevat alle $1{,}0\\,\\text{cm}$:n päästä kasvaimen keskipisteestä. Yksittäisten fotonien ilmaisussa kustakin parista havaitaan vain toinen fotoni, joten tiedossa on vain ilmaisin eikä janaa."
+      "model": "Merkkiaine on jakautunut tasaisesti kehoon, ja kasvaimesta tulee $25\\,\\%$ annihilaatioista (kahdella kasvaimella $20\\,\\%$ kummastakin). Kasvaimen säde on noin $1\\,\\text{cm}$, joten sen merkkiainepitoisuus on monikymmenkertainen muuhun kehoon verrattuna. Fotonit lähtevät tarkalleen vastakkaisiin suuntiin satunnaisessa tasosuunnassa, eikä keho vaimenna tai sirota niitä. Positronin kulkemaa matkaa ja satunnaisia koinsidensseja ei ole mukana. Rengas on kaksiulotteinen ja havaitsee jokaisen fotoniparin. Malli ei käytä fotonien saapumisaikojen eroa. Todellinen laite kerää kymmeniä miljoonia koinsidensseja. Lukemat ovat mallin arvoja eivätkä mittauksia.",
+      "calc": "Annihilaatiot arvotaan aina samassa järjestyksessä, joten sama $N$ antaa aina saman kuvan. Toinen arvontajärjestys antaisi pienillä $N$:n arvoilla toisenlaisen tuloksen, koska janojen satunnaiset leikkauskohdat vaihtelevat. Kuva on $41 \\cdot 41$ pisteen ruudukko, jonka pisteiden väli on $1\\,\\text{cm}$. Jokainen jana lisää yhden osuman jokaiseen kuvapisteeseen, jonka etäisyys janasta on alle $0{,}6\\,\\text{cm}$. Kirkkain kohta on se piste, jossa osumia on eniten, ja lukema *etäisyys kasvaimesta* on sen etäisyys lähimmän kasvaimen keskipisteestä. *Kasvaimen kautta kulkevia viivoja* on niiden janojen osuus, jotka kulkevat alle $1{,}0\\,\\text{cm}$:n päästä kasvaimen keskipisteestä. Yksittäisten fotonien ilmaisussa kustakin parista havaitaan vain toinen fotoni, joten tiedossa on vain ilmaisin eikä janaa."
     },
     {
       "id": "koe-1",
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: kuinka monta janaa tarvitaan",
-      "intro": "Testaa ennusteet 1 ja 2. Potilaalla on yksi kasvain, ja ilmaisu on koinsidenssi. Muuta vain koinsidenssien määrää $N$ ja kirjaa kuvan kirkkaimman kohdan etäisyys kasvaimesta ainakin arvoilla $N = 10$, $50$ ja $200$, halutessasi myös $N = 1000$. Katso samalla, millaisia janoja renkaaseen piirtyy.",
+      "intro": "Testaa ennusteet 1 ja 2. Potilaalla on yksi kasvain, ja ilmaisu on koinsidenssi. Muuta vain koinsidenssien määrää $N$ ja kirjaa kuvan kirkkaimman kohdan etäisyys kasvaimesta ainakin arvoilla $N = 10$, $20$, $50$ ja $200$. Katso samalla, millaisia janoja renkaaseen piirtyy.",
       "initial": {
         "N": 0,
         "kohde": "1",
@@ -187,10 +187,10 @@
         "koe-1"
       ],
       "prompt": "Kirjoita taulukkosi perusteella: Mitä yksi koinsidenssi kertoo lähteen paikasta? Miten kirkkaimman kohdan etäisyys kasvaimesta muuttui, kun koinsidensseja kertyi lisää, ja miksi? Mitä tämä merkitsee potilaan annokselle?",
-      "model": "Yksi koinsidenssi kertoo, että annihilaatio tapahtui jossain kahden ilmaisimen välisellä janalla, koska fotonit lähtevät vastakkaisiin suuntiin. Mallin arvoilla kuvan kirkkain kohta oli $10$ koinsidenssin jälkeen noin $20\\,\\text{cm}$:n ja $50$:n jälkeen noin $15\\,\\text{cm}$:n päässä kasvaimesta, mutta $200$:n jälkeen enää $1{,}0\\,\\text{cm}$:n ja $1000$:n jälkeen $0\\,\\text{cm}$:n päässä. Kasvaimen kautta kulki vain noin $10$–$27\\,\\%$ janoista, koska merkkiainetta on koko kehossa. Vähillä janoilla satunnaiset leikkauskohdat ovat yhtä kirkkaita kuin kasvain, ja vasta satojen janojen jälkeen kasvaimen kautta kulkevat janat erottuvat. Hyvä kuva vaatii siis paljon hajoamisia eli riittävän aktiivisuuden. Se on optimointia: aktiivisuus valitaan niin suureksi, että kuva vastaa kysymykseen, mutta ei suuremmaksi.",
+      "model": "Yksi koinsidenssi kertoo, että annihilaatio tapahtui jossain kahden ilmaisimen välisellä janalla, koska fotonit lähtevät vastakkaisiin suuntiin; malli ei käytä saapumisaikojen eroa. Mallin arvoilla kuvan kirkkain kohta oli $10$ koinsidenssin jälkeen noin $18\\,\\text{cm}$:n ja $20$:n jälkeen $4{,}0\\,\\text{cm}$:n päässä kasvaimesta, mutta $50$:n jälkeen enää $1{,}4\\,\\text{cm}$:n ja $200$:n jälkeen $0\\,\\text{cm}$:n päässä. Suurilla $N$:n arvoilla kasvaimen kautta kulki noin neljäsosa janoista, koska merkkiainetta on koko kehossa. Vähillä janoilla satunnaiset leikkauskohdat ovat yhtä kirkkaita kuin kasvain, ja vasta kymmenien janojen jälkeen kasvaimen kautta kulkevat janat erottuvat. Pienillä $N$:n arvoilla tulos vaihtelee sattumalta. Hyvä kuva vaatii siis paljon hajoamisia eli riittävän aktiivisuuden. Se on optimointia: aktiivisuus valitaan niin suureksi, että kuva vastaa kysymykseen, mutta ei suuremmaksi.",
       "criteria": [
         "Kerron, että yksi koinsidenssi rajaa lähteen kahden ilmaisimen väliselle janalle, ja perustelen sen vastakkaisiin suuntiin lähtevillä fotoneilla.",
-        "Kerron mallin arvoilla, että kirkkain kohta osui kasvaimeen vasta, kun koinsidensseja oli satoja.",
+        "Kerron mallin arvoilla, että kirkkain kohta osui kasvaimeen vasta, kun koinsidensseja oli kymmeniä, ja että pienillä määrillä tulos vaihtelee sattumalta.",
         "Selitän, että vain osa janoista kulkee kasvaimen kautta, koska merkkiainetta on myös muualla kehossa.",
         "Yhdistän tarvittavan koinsidenssien määrän aktiivisuuteen ja potilaan annokseen.",
         "Kutsun simulaation lukuja mallin arvoiksi enkä mittauksiksi."

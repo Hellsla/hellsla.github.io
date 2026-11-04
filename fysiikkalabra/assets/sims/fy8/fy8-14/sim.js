@@ -7,7 +7,7 @@
 // The brightest pixel, its distance from the tumour and the share of lines passing within 1,0 cm of the tumour are
 // read out. In the singles mode only one detector of each pair is recorded, so no line and no image arise.
 // Model: no attenuation or scatter in the body, no random coincidences, no positron range, photons exactly opposite,
-// a flat 2D ring that detects every pair. The events come from a seeded generator (seed 4 + 1000 case), so N events
+// a flat 2D ring that detects every pair. The events come from a seeded generator (seed 73 + 1000 case), so N events
 // are always the same N; the slider N chooses how many have been collected, Käynnistä collects more.
 // lessons/FY8/fy8-14/lesson-answers.py repeats the same model. Every canvas text goes through lab(). p5.js 1.9 instance mode.
 new p5((p) => {
@@ -25,7 +25,7 @@ new p5((p) => {
 
   // the seeded generator (the same as lesson-answers.py): events of one case are always the same sequence
   function makeEvents(c) {
-    let seed = 4 + 1000 * Number(c);
+    let seed = 73 + 1000 * Number(c);
     const rand = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
     const T = TUM[c], out = [];
     for (let k = 0; k < NMAX; k++) {

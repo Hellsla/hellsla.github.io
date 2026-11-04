@@ -1,11 +1,10 @@
 VERDICT: DONE
 
-Drafted the chapter Säteily lääketieteessä ja teknologiassa.
+Round-1 fixes.
 
-- `lesson.md`: Ydinajatus (the X-ray tube, X-ray images and CT, a table of typical doses, tracers with Tc-99m and SPECT, PET with 511 keV annihilation photons and coincidence detection, radiotherapy from several directions, technology uses, and justification, optimisation and dose limits). Kaava covers attenuation through layers and $E_\gamma = m_e c^2$. The worked example on X-ray contrast has seven stages. There are two misconceptions and a summary. The text has 6 figures, including the hero.
-- `figures.py`: hero, rontgen, pet, sadehoito, mittari, kontrasti (graph to scale).
-- `lesson-answers.py`, `answers.py`: every number. NIST XCOM μ/ρ, ICRP 128 and STUK values come from my own knowledge, because the network was closed. The PET model is repeated in Python and matches sim.js (checked with node).
-- New sim `assets/sims/fy8/fy8-14/sim.js`: PET coincidence localisation with back-projection, a seeded generator and an adapter (N, kohde, ilmaisu). Its texts are in `lang/fi.json` under `sims.fy8-14`. `tests/sims/fy8-14.json` has 20 assertions. `meta.json` now has `"sim": true`.
-- `inquiry.json`: 3 predictions; koe-1 (how many coincidences are needed); an interpret table on X-ray energy and contrast; the transfer task (FDG transport); 3 checks; the exit ticket.
-- Exercises 5/4/3 with complete solutions.
-- `glossary.json`: röntgensäteily, merkkiaine, sädehoito.
+- Sim seed 4 -> 73 (`sim.js`, `lesson-answers.py`): over seeds 1-100 the model's median distance is 4,2 cm at N = 10, 1,4 cm at 20, 1,0 cm at 50, all within 1,5 cm by N = 150; seed 73 is typical and monotonic (18,4 / 4,0 / 1,4 / 0 cm at N = 10/20/50/200). `tests/sims/fy8-14.json` updated, N = 20 assertion added (21 pass).
+- `inquiry.json`: ennuste-2 "Kymmeniä", feedback and johtopäätös values and criterion; chance variation stated (calc, feedback, model); koe-1 records N = 10, 20, 50, 200; time-of-flight in ennuste-1 feedback and sim model ("malli ei käytä saapumisaikojen eroa").
+- `lesson.md`: characteristic X-rays in the definition, heading and summary; time-of-flight PET (0,3 ns -> a few cm); Kaava and Esimerkki rewritten with halving counts n = d : d½ and 2^(n_B - n_A), no nested exponents; Järkevyys via the transmitted fractions.
+- `glossary.json`: röntgensäteily includes characteristic X-rays.
+- `exit-ticket.json`: PET localisation question replaces the X-ray contrast one.
+- Exercises: L3-02 mammography 30 kV, mean about 20 keV, 30 keV assumed; L1-03 5,1 mSv; logarithm step shown in L2-01, L2-02, L3-03.

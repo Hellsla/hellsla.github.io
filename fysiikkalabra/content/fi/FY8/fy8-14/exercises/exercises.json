@@ -87,7 +87,7 @@
     {
       "id": "fy8-14-L3-02",
       "level": 3,
-      "text": "Mammografiassa käytetään noin $30\\,\\text{keV}$:n röntgensäteilyä. Tällä energialla pehmytkudoksen puoliintumispaksuus on $1{,}8\\,\\text{cm}$ ja luun tai kalkkeuman $0{,}27\\,\\text{cm}$. Kaksi yhtä pitkää sädettä kulkee kudoksen läpi: toinen pelkän pehmytkudoksen läpi, toisen matkalla $1{,}0\\,\\text{cm}$ pehmytkudosta on korvautunut samanpaksuisella kalkkeutuneella kudoksella, joka vaimentaa kuin luu. Kuinka monta kertaa suurempi intensiteetti osuu ilmaisimeen pelkän pehmytkudoksen läpi kulkeneen säteen kohdalla?",
+      "text": "Mammografiassa röntgenputken jännite on noin $30\\,\\text{kV}$, ja fotonien keskimääräinen energia on noin $20\\,\\text{keV}$. Oletetaan tässä fotonien energiaksi $30\\,\\text{keV}$. Tällä energialla pehmytkudoksen puoliintumispaksuus on $1{,}8\\,\\text{cm}$ ja luun tai kalkkeuman $0{,}27\\,\\text{cm}$. Kaksi yhtä pitkää sädettä kulkee kudoksen läpi: toinen pelkän pehmytkudoksen läpi, toisen matkalla $1{,}0\\,\\text{cm}$ pehmytkudosta on korvautunut samanpaksuisella kalkkeutuneella kudoksella, joka vaimentaa kuin luu. Kuinka monta kertaa suurempi intensiteetti osuu ilmaisimeen pelkän pehmytkudoksen läpi kulkeneen säteen kohdalla?",
       "answer": 8.9,
       "unit": "",
       "tolerance": 0.02

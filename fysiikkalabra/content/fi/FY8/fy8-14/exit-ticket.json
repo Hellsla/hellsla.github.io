@@ -1,7 +1,7 @@
 [
   {
-    "q": "Miksi luu näkyy röntgenkuvassa vaaleana ja keuhkot tummina?",
-    "a": "Luu vaimentaa röntgensäteilyä paljon enemmän kuin pehmytkudos, koska se on tiheämpää ja sen kalsiumatomeissa on paljon elektroneja: sen puoliintumispaksuus on pienempi. Luun taakse osuu siksi vähemmän säteilyä, ja kohta näkyy vaaleana. Keuhkojen ilma päästää säteilyn läpi lähes vaimentamatta, joten ilmaisimeen osuu paljon säteilyä ja keuhkot näkyvät tummina."
+    "q": "Miksi yksi koinsidenssi ei riitä PET-kuvauksessa paikantamaan merkkiaineen kertymää?",
+    "a": "Yksi koinsidenssi kertoo vain, että annihilaatio tapahtui jossain kahden ilmaisimen välisellä janalla, koska fotonit lähtevät vastakkaisiin suuntiin. Merkkiainetta on koko kehossa, joten janoja tulee kaikkialta, ja kertymä erottuu vasta, kun monet janat leikkaavat samassa kohdassa. Saapumisaikojen ero rajaa lähteen janalla vain muutaman senttimetrin matkalle, joten kuva syntyy silti monista janoista."
   },
   {
     "q": "Mitä tarkoittavat säteilyn lääketieteellisen käytön periaatteet oikeutus ja optimointi?",

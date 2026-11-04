@@ -53,9 +53,9 @@
 
 ## Ydinajatus
 
-### Röntgensäteily syntyy, kun elektronit jarruttavat
+### Röntgensäteily syntyy, kun nopeat elektronit osuvat anodiin
 
-**Röntgensäteily** on suurienergistä fotonisäteilyä, joka syntyy, kun nopeat elektronit jarruttavat aineessa. Röntgenputkessa hehkuvasta katodista irtoavia elektroneja kiihdytetään jännitteellä $U$ kohti volframista tehtyä anodia. Jokainen elektroni saa liike-energian $eU$, joten esimerkiksi jännitteellä $80\,\text{kV}$ syntyvän fotonin energia on enintään $80\,\text{keV}$. Valtaosa elektronien energiasta, noin $99\,\%$, muuttuu anodissa lämmöksi, ja vain pieni osa säteilee röntgenfotoneina. Röntgen- ja gammafotoni ovat samaa sähkömagneettista säteilyä: nimi kertoo, syntyikö fotoni elektronien jarrutuksessa vai ytimen siirtymässä. Molemmat ionisoivat ja vaimenevat aineessa samalla tavalla (luku *Ionisoiva säteily ja elimistö*).
+**Röntgensäteily** on suurienergistä fotonisäteilyä, joka syntyy, kun nopeat elektronit jarruttavat aineessa (jarrutussäteily) tai kun ne irrottavat elektronin atomin sisimmältä kuorelta ja ulomman kuoren elektroni siirtyy sen paikalle (karakteristinen röntgensäteily). Röntgenputkessa hehkuvasta katodista irtoavia elektroneja kiihdytetään jännitteellä $U$ kohti volframista tehtyä anodia. Jokainen elektroni saa liike-energian $eU$, joten esimerkiksi jännitteellä $80\,\text{kV}$ syntyvän fotonin energia on enintään $80\,\text{keV}$. Valtaosa elektronien energiasta, noin $99\,\%$, muuttuu anodissa lämmöksi, ja vain pieni osa säteilee röntgenfotoneina. Jarrutussäteilyn spektri on jatkuva, ja sen päällä ovat anodin atomien karakteristiset terävät piikit; volframilla ne ovat noin $59\,\text{keV}$:n kohdalla. Röntgen- ja gammafotoni ovat samaa sähkömagneettista säteilyä: nimi kertoo, syntyikö fotoni elektronien jarrutuksessa tai atomin sisäkuoren siirtymässä vai ytimen siirtymässä. Molemmat ionisoivat ja vaimenevat aineessa samalla tavalla (luku *Ionisoiva säteily ja elimistö*).
 
 <svg data-fig="rontgen" viewBox="0 0 600 380" role="img" aria-label="Kaavakuva, ei mittakaavassa: röntgenkuvaus. Ylhäällä lasinen röntgenputki: vasemmalla hehkuva katodi, josta elektronit kiihdytetään oikealle anodille. Anodista lähtee alaspäin viuhkana röntgenfotoneja aaltoviivoina. Niiden tiellä on kyynärvarren poikkileikkaus: pehmytkudos ja sen sisällä kaksi luuta. Luihin osuvat fotonit pysähtyvät, muut jatkavat kudoksen läpi alla olevaan ilmaisimeen. Ilmaisimeen piirtyy luiden kohdalle vaaleampi varjo, koska sinne osuu vähemmän säteilyä." style="max-width:100%;font-size:24px">
   <rect x="250" y="304" width="4" height="22" fill="#6c757d"/>
@@ -276,7 +276,7 @@ PET-kuvauksen eli positroniemissiotomografian merkkiaineena on yleensä fluori-1
   <foreignObject x="420" y="303.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{lähde janalla}$</div></foreignObject>
 </svg>
 
-Potilasta ympäröi ilmaisinrengas. Kun kaksi vastakkaista ilmaisinta havaitsee fotonin muutaman nanosekunnin sisällä toisistaan eli **koinsidenssissa**, laite päättelee, että fotonit syntyivät samassa annihilaatiossa jossain näiden ilmaisimien välisellä janalla. Yksi jana ei kerro, missä kohdassa janaa lähde on. Kun janoja kertyy miljoonia, ne leikkaavat tiheimmin siellä, missä merkkiainetta on eniten, ja tietokone laskee niistä kuvan. Lyhyen puoliintumisajan vuoksi fluori-18 valmistetaan hiukkaskiihdyttimellä, syklotronilla, lähellä kuvauspaikkaa, esimerkiksi Turun PET-keskuksessa.
+Potilasta ympäröi ilmaisinrengas. Kun kaksi vastakkaista ilmaisinta havaitsee fotonin muutaman nanosekunnin sisällä toisistaan eli **koinsidenssissa**, laite päättelee, että fotonit syntyivät samassa annihilaatiossa jossain näiden ilmaisimien välisellä janalla. Jos fotonien saapumisaikojen eroa ei mitata, yksi jana ei kerro, missä kohdassa janaa lähde on. Nykyaikaiset PET-laitteet mittaavat myös tämän aikaeron (lentoaika-PET) noin $0{,}3\,\text{ns}$:n tarkkuudella. Valo kulkee nanosekunnissa noin $30\,\text{cm}$, joten aikaero rajaa lähteen janalla muutaman senttimetrin matkalle. Varsinainen kuva syntyy silti vasta monista janoista: kun janoja kertyy miljoonia, ne leikkaavat tiheimmin siellä, missä merkkiainetta on eniten, ja tietokone laskee niistä kuvan. Lyhyen puoliintumisajan vuoksi fluori-18 valmistetaan hiukkaskiihdyttimellä, syklotronilla, lähellä kuvauspaikkaa, esimerkiksi Turun PET-keskuksessa.
 
 ### Sädehoito: suuri annos kasvaimeen, pieni terveelle kudokselle
 
@@ -363,13 +363,10 @@ Henkilökunta suojautuu ajalla, etäisyydellä ja suojalla (luku *Säteilyannos 
 Jokainen kudoskerros vaimentaa säteilyä puoliintumispaksuutensa mukaan (luku *Ionisoiva säteily ja elimistö*). Kun säde kulkee ensin pehmytkudoksen ja sitten luun läpi, luun läpi pääsee sama osuus siitä säteilystä, joka pääsi pehmytkudoksen läpi. Osuudet siis kerrotaan:
 
 ```latex
-\begin{aligned}
-&I = I_0 \left(\tfrac{1}{2}\right)^{d_\text{kudos}/d_{1/2}^\text{kudos}} \\
-&\quad \cdot \left(\tfrac{1}{2}\right)^{d_\text{luu}/d_{1/2}^\text{luu}}
-\end{aligned}
+I = I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{kudos}} \cdot \left(\tfrac{1}{2}\right)^{n_\text{luu}}
 ```
 
-missä $I_0$ on säteeseen tulevan säteilyn intensiteetti, $I$ kerrosten läpi päässeen säteilyn intensiteetti, $d_\text{kudos}$ ja $d_\text{luu}$ pehmytkudoksen ja luun paksuudet sekä $d_{1/2}^\text{kudos}$ ja $d_{1/2}^\text{luu}$ niiden puoliintumispaksuudet. Kerrosten järjestyksellä ei ole väliä, ja kolmannelle kerrokselle tulee kolmas samanlainen tekijä. Röntgenkuvan kontrasti saadaan vertaamalla kahta sädettä, joista toinen kulkee pelkän pehmytkudoksen ja toinen myös luun läpi. Puoliintumispaksuus riippuu fotonien energiasta. Todellisessa röntgenputken säteilyssä on monen energian fotoneja, joten tässä käytetään keskimääräistä energiaa noin $60\,\text{keV}$.
+missä $I_0$ on säteeseen tulevan säteilyn intensiteetti, $I$ kerrosten läpi päässeen säteilyn intensiteetti ja $n$ kerroksen paksuus puoliintumispaksuuksina: $n_\text{kudos} = d_\text{kudos} : d_{1/2}^\text{kudos}$ ja $n_\text{luu} = d_\text{luu} : d_{1/2}^\text{luu}$. Tässä $d_\text{kudos}$ ja $d_\text{luu}$ ovat pehmytkudoksen ja luun paksuudet sekä $d_{1/2}^\text{kudos}$ ja $d_{1/2}^\text{luu}$ niiden puoliintumispaksuudet. Koska $\left(\tfrac{1}{2}\right)^{n_\text{kudos}} \cdot \left(\tfrac{1}{2}\right)^{n_\text{luu}} = \left(\tfrac{1}{2}\right)^{n_\text{kudos} + n_\text{luu}}$, puoliintumispaksuuksien lukumäärät voi myös laskea yhteen. Kerrosten järjestyksellä ei ole väliä, ja kolmannelle kerrokselle tulee kolmas samanlainen tekijä. Röntgenkuvan kontrasti saadaan vertaamalla kahta sädettä, joista toinen kulkee pelkän pehmytkudoksen ja toinen myös luun läpi. Puoliintumispaksuus riippuu fotonien energiasta. Todellisessa röntgenputken säteilyssä on monen energian fotoneja, joten tässä käytetään keskimääräistä energiaa noin $60\,\text{keV}$.
 
 <svg data-fig="kontrasti" viewBox="0 0 600 380" role="img" aria-label="Kuvaaja mittakaavassa: läpi päässeen röntgensäteilyn osuus I per I nolla kerroksen paksuuden d funktiona, paksuus nollasta 8 senttimetriin, fotonien energia noin 60 kiloelektronivolttia. Pehmytkudoksessa osuus puolittuu jokaisen 3,4 senttimetrin kerroksen jälkeen, luussa jo 1,1 senttimetrin jälkeen: 1,1 senttimetrin kohdalla luun läpi pääsee puolet ja 2,2 senttimetrin kohdalla neljäsosa, kun pehmytkudoksen läpi pääsee 3,4 senttimetrin kohdalla puolet. Luun käyrä laskee siis paljon jyrkemmin." style="max-width:100%;font-size:24px">
   <line x1="146" y1="312" x2="146" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -454,28 +451,50 @@ Kyynärvarren röntgenkuvassa säde A kulkee $8{,}0\,\text{cm}$ pehmytkudosta. S
 
 <!-- vaihe -->
 
-**Periaate.** Kumpaankin säteeseen tulee sama intensiteetti $I_0$. Jokainen kerros päästää läpi osuuden $\left(\tfrac{1}{2}\right)^{d/d_{1/2}}$ siihen tulevasta säteilystä, joten säteen B osuudet kerrotaan. Suhteessa $I_0$ supistuu.
+**Periaate.** Kumpaankin säteeseen tulee sama intensiteetti $I_0$. Jokainen kerros päästää läpi osuuden $\left(\tfrac{1}{2}\right)^{n}$ siihen tulevasta säteilystä, missä $n$ on kerroksen paksuus puoliintumispaksuuksina. Säteen B osuudet kerrotaan, eli sen puoliintumispaksuuksien lukumäärät lasketaan yhteen. Suhteessa $I_0$ supistuu.
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Kun $I_\text{A} = I_0 \left(\tfrac{1}{2}\right)^{d_\text{A}/d_{1/2}^\text{kudos}}$ ja $I_\text{B} = I_0 \left(\tfrac{1}{2}\right)^{d_\text{kudos}/d_{1/2}^\text{kudos}} \left(\tfrac{1}{2}\right)^{d_\text{luu}/d_{1/2}^\text{luu}}$, suhde on
+**Kaava ratkaistuna.** Säteelle A $n_\text{A} = d_\text{A} : d_{1/2}^\text{kudos}$ ja säteelle B $n_\text{B} = d_\text{kudos} : d_{1/2}^\text{kudos} + d_\text{luu} : d_{1/2}^\text{luu}$. Kun $I_\text{A} = I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{A}}$ ja $I_\text{B} = I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{B}}$, suhde on
 
 ```latex
-\frac{I_\text{A}}{I_\text{B}} = \frac{\left(\tfrac{1}{2}\right)^{d_\text{A}/d_{1/2}^\text{kudos}}}{\left(\tfrac{1}{2}\right)^{d_\text{kudos}/d_{1/2}^\text{kudos}} \left(\tfrac{1}{2}\right)^{d_\text{luu}/d_{1/2}^\text{luu}}}
+\begin{aligned}
+\frac{I_\text{A}}{I_\text{B}} &= \frac{I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{A}}}{I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{B}}} \\
+&= 2^{\,n_\text{B} - n_\text{A}}
+\end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Ei tarvita: kaikki paksuudet ovat senttimetreinä, joten eksponenttien yksiköt supistuvat.
+**Yksikkömuunnokset.** Ei tarvita: kaikki paksuudet ovat senttimetreinä, joten lukumäärien $n$ yksiköt supistuvat.
 
 <!-- vaihe -->
 
-**Sijoitus.** Lasketaan ensin läpi päässeet osuudet: $\tfrac{I_\text{A}}{I_0} = \left(\tfrac{1}{2}\right)^{8{,}0\,\text{cm} / 3{,}4\,\text{cm}} = 0{,}1957$ ja $\tfrac{I_\text{B}}{I_0} = \left(\tfrac{1}{2}\right)^{5{,}0\,\text{cm} / 3{,}4\,\text{cm}} \cdot \left(\tfrac{1}{2}\right)^{3{,}0\,\text{cm} / 1{,}1\,\text{cm}} = 0{,}3608 \cdot 0{,}1510 = 0{,}05449$. Suhde on
+**Sijoitus.** Lasketaan ensin puoliintumispaksuuksien lukumäärät:
 
 ```latex
 \begin{aligned}
-&\frac{I_\text{A}}{I_\text{B}} = \frac{0{,}1957}{0{,}05449} \\
-&= 3{,}59
+n_\text{A} &= d_\text{A} : d_{1/2}^\text{kudos} \\
+&= 8{,}0\,\text{cm} : 3{,}4\,\text{cm} = 2{,}353
+\end{aligned}
+```
+
+```latex
+\begin{aligned}
+n_\text{B} &= d_\text{kudos} : d_{1/2}^\text{kudos} + d_\text{luu} : d_{1/2}^\text{luu} \\
+&= 5{,}0\,\text{cm} : 3{,}4\,\text{cm} \\
+&\quad + 3{,}0\,\text{cm} : 1{,}1\,\text{cm} \\
+&= 1{,}471 + 2{,}727 = 4{,}198
+\end{aligned}
+```
+
+Suhde on
+
+```latex
+\begin{aligned}
+\frac{I_\text{A}}{I_\text{B}} &= 2^{\,n_\text{B} - n_\text{A}} \\
+&= 2^{\,4{,}198 - 2{,}353} \\
+&= 2^{\,1{,}845} = 3{,}59
 \end{aligned}
 ```
 
@@ -485,7 +504,7 @@ Kyynärvarren röntgenkuvassa säde A kulkee $8{,}0\,\text{cm}$ pehmytkudosta. S
 
 <!-- vaihe -->
 
-**Järkevyys.** Säteet eroavat vain siinä, että säteellä B $3{,}0\,\text{cm}$ pehmytkudosta on korvautunut luulla. Luussa se on $3{,}0 : 1{,}1 = 2{,}73$ puoliintumispaksuutta, pehmytkudoksessa olisi ollut $3{,}0 : 3{,}4 = 0{,}88$. Säde B puolittuu siis noin $1{,}85$ kertaa useammin, ja $2^{1{,}85} \approx 3{,}6$, kuten edellä.
+**Järkevyys.** Lasketaan sama toista tietä, läpi päässeiden osuuksien kautta: $\left(\tfrac{1}{2}\right)^{2{,}353} = 0{,}1957$ ja $\left(\tfrac{1}{2}\right)^{4{,}198} = 0{,}05449$, joten $I_\text{A} : I_\text{B} = 0{,}1957 : 0{,}05449 = 3{,}59$, kuten edellä. Suhde on myös suuruusluokaltaan järkevä: säteellä B on noin kaksi puoliintumispaksuutta enemmän, ja $2^2 = 4$.
 
 ## Yleinen virhekäsitys
 
@@ -495,8 +514,8 @@ Toinen virhe on ajatella, että säteilysuojelu tarkoittaa mahdollisimman pient�
 
 ## Tiivistelmä
 
-- Röntgensäteily syntyy, kun elektronit jarruttavat anodissa; jännite $U$ antaa fotonille enintään energian $eU$.
-- Röntgenkuvan ja TT-kuvan kontrasti syntyy siitä, että luu vaimentaa säteilyä enemmän kuin pehmytkudos; kerrosten läpi pääsevät osuudet kerrotaan: $I = I_0 \left(\tfrac{1}{2}\right)^{d_\text{kudos}/d_{1/2}^\text{kudos}} \left(\tfrac{1}{2}\right)^{d_\text{luu}/d_{1/2}^\text{luu}}$.
+- Röntgensäteily syntyy, kun nopeat elektronit jarruttavat anodissa tai irrottavat elektroneja sen atomien sisäkuorilta; jännite $U$ antaa fotonille enintään energian $eU$.
+- Röntgenkuvan ja TT-kuvan kontrasti syntyy siitä, että luu vaimentaa säteilyä enemmän kuin pehmytkudos; kerrosten läpi pääsevät osuudet kerrotaan: $I = I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{kudos}} \cdot \left(\tfrac{1}{2}\right)^{n_\text{luu}}$, missä $n = d : d_{1/2}$.
 - Merkkiaine kertyy tutkittavaan elimeen; teknetium-$99\text{m}$ lähettää $140\,\text{keV}$:n gammasäteilyä, ja sen puoliintumisaika on $6{,}01\,\text{h}$.
 - PET: positroni ja elektroni annihiloituvat kahdeksi vastakkaiseksi fotoniksi, joiden energia on $E_\gamma = m_e c^2 = 511\,\text{keV}$; koinsidenssi antaa janan, ja monien janojen leikkauskohdat paljastavat merkkiaineen paikan.
 - Sädehoidossa kasvainta säteilytetään useasta suunnasta ja moneen osaan jaettuna, jotta kasvain saa suuren annoksen ja terve kudos pienen.
