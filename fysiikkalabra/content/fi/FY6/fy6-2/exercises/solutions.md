@@ -138,7 +138,7 @@
 **Muunnokset:** $p = 0{,}5\,\% = 0{,}005$; lukema ja resoluutio ovat jo voltteina.
 **Sijoitus:** $\Delta U = 0{,}005 \cdot 5{,}98\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}0299\,\text{V} + 0{,}02\,\text{V} = 0{,}0499\,\text{V}$
 **Vastaus:** $\Delta U = 0{,}05\,\text{V}$, yksi merkitsevä numero, koska ensimmäinen numero on 4 (laskimen arvo $0{,}0499\,\text{V}$). Mittaustulos on $U = 5{,}98\,\text{V} \pm 0{,}05\,\text{V}$ eli väli $5{,}93$–$6{,}03\,\text{V}$. Lukema kirjoitetaan samalla desimaalien määrällä kuin virheraja.
-**Järkevyys:** Virheraja $0{,}05\,\text{V}$ on alle prosentti lukemasta $5{,}98\,\text{V}$, koska lukema on yli kolmasosa alueesta $20\,\text{V}$. Prosenttiosa $0{,}03\,\text{V}$ ja numeroiden osuus $0{,}02\,\text{V}$ ovat samaa suuruusluokkaa, joten molemmat vaikuttavat.
+**Järkevyys:** Virheraja $0{,}05\,\text{V}$ on alle prosentti lukemasta $5{,}98\,\text{V}$, koska lukema on noin kolmasosa alueesta $20\,\text{V}$ ($5{,}98 : 20 = 0{,}30$). Prosenttiosa $0{,}03\,\text{V}$ ja numeroiden osuus $0{,}02\,\text{V}$ ovat samaa suuruusluokkaa, joten molemmat vaikuttavat.
 
 ## fy6-2-L2-05
 **Annettu:** esimerkkiaineisto: alueella $2\,\text{V}$ lukema $1{,}847\,\text{V}$ ja resoluutio $0{,}001\,\text{V}$, alueella $20\,\text{V}$ lukema $1{,}85\,\text{V}$ ja resoluutio $0{,}01\,\text{V}$, alueella $200\,\text{V}$ lukema $1{,}8\,\text{V}$ ja resoluutio $0{,}1\,\text{V}$; virheraja kaikilla alueilla $\pm(0{,}5\,\% + 2\ \text{numeroa})$
