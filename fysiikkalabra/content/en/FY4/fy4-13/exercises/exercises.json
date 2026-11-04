@@ -87,7 +87,7 @@
     {
       "id": "fy4-13-L1-08",
       "level": 1,
-      "text": "A cart is on a frictionless table and is tied by a string over a pulley to a descending hanging mass. When drawing the free-body diagram of the cart, we ask which forces act on the cart in the direction of the table. Which statement is correct?",
+      "text": "A cart is on a frictionless table and is tied by a string over a pulley to a descending hanging mass. You are drawing the free-body diagram of the cart. Which forces act on the cart along the table? Which statement is correct?",
       "kind": [
         "concept"
       ],
@@ -323,7 +323,7 @@
     {
       "id": "fy4-13-L3-05",
       "level": 3,
-      "text": "A cart on a frictionless track has an unknown mass $m_1$. A light, inextensible string tied to it passes over a light, frictionless pulley, and a mass $m_2$ that varies hangs from the end of the string. The cart is released from rest, and the time $t$ is measured that the hanging mass takes to descend the distance $0.80\\,\\text{m}$ to the floor. The table shows example data of the measurements.\n\na) Calculate the acceleration of the hanging mass from each measurement. From the equations of motion of the two bodies, derive a formula for calculating the mass of the cart from the mass $m_2$ and the acceleration $a$.\n\nb) Determine the mass of the cart from each measurement and calculate their mean.\n\nc) The hanging mass of $0.200\\,\\text{kg}$ hits the floor; the track is long enough, so the cart does not hit the pulley. What happens to the cart after that? Justify and calculate the speed of the cart at that moment.\n\nThe answer box takes the mean mass of the cart from part b).",
+      "text": "A cart on a frictionless track has an unknown mass $m_1$. A light, inextensible string tied to it passes over a light, frictionless pulley, and a mass $m_2$ that varies hangs from the end of the string. The cart is released from rest, and the time $t$ that the hanging mass takes to descend $0.80\\,\\text{m}$ to the floor is measured. The table shows example data of the measurements.\n\na) Calculate the acceleration of the hanging mass from each measurement. From the equations of motion of the two bodies, derive a formula for calculating the mass of the cart from the mass $m_2$ and the acceleration $a$.\n\nb) Determine the mass of the cart from each measurement and calculate their mean.\n\nc) The hanging mass of $0.200\\,\\text{kg}$ hits the floor; the track is long enough, so the cart does not hit the pulley. What happens to the cart after that? Justify and calculate the speed of the cart at that moment.\n\nThe answer box takes the mean mass of the cart from part b).",
       "kind": [
         "data",
         "model",

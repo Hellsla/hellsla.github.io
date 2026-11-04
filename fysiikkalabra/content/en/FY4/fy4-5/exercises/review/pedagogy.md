@@ -1,12 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6af210326c2faf1b
+CONTENT-HASH: c0a8a9997259eb61
+Mode: translation review of the 8 new exercises (L1-06..08, L2-05..07, L3-04..05) against the reviewed Finnish
+Round: 1
 
 ## Blocking
+(none)
+
+## Fixed
+- See science.md: one sentence in the L1-06 model answer reworded; nothing else needed changing.
 
 ## Polish
-- Layout check (`check_layout.py fy4-5 --lang en`, 360 and 1280 px) reports a figure-label overlap "N / F_y" that is identical in the Finnish preview (generated figure, not translation text).
+(none)
 
 ## Checked
-- Delta `git diff a6af45ae` of fi, en and fi-easy for fy4-5; every changed passage compared with the Finnish: L3-03 answer is phrased as in the Finnish: first the two-decimal result and the one-significant-figure-rounded value, then why (difference, decimals); spec blocks sit directly under each Voimakuvio step as in the Finnish.
-- All `voimakuvio` blocks in solutions.md identical to the Finnish (check_i18n enforces); `check_i18n.py` 0 errors; `build.py fy4-5` builds; `figures.py fy4-5 --lang en --check` up to date.
-Delta: English diagram labels and aria-labels now show the same symbols as the English text (F_d, F_b, G_c, ...), so a student reads one notation; nothing else changed.
+- Choices and feedback of L1-06 and L1-08 keep the Finnish pedagogy: each wrong option has feedback that names the misconception (motion force, normal force dropped, velocity as a force, N = G, N = 0) in natural English.
+- Parts a)-d) and the answer-box sentence ("The answer box takes ...") correspond to the Finnish in L2-05, L2-06, L2-07, L3-04, L3-05.
+- The student's quoted solution in L2-06 keeps the same error structure and numbers as the Finnish.
+- Terms consistent with the course: net force, normal force, weight, free-body diagram, components, tension; overline vectors in the same places as fi.
+- Solutions keep the Finnish structure (Given, Find, Principle, Free-body diagram, Formula, Substitution, Answer, Reasonableness) with natural phrasing.

@@ -78,7 +78,7 @@
       "kind": [
         "model"
       ],
-      "text": "The mass of an ice hockey puck is $170\\,\\text{g}$. The hit of the stick gives the puck a horizontal acceleration of $400\\,\\text{m/s}^2$. What is the net force acting on the puck during the hit?",
+      "text": "The mass of an ice hockey puck is $170\\,\\text{g}$. A hit from the stick gives the puck a horizontal acceleration of $400\\,\\text{m/s}^2$. What is the net force acting on the puck during the hit?",
       "answer": 68,
       "unit": "N",
       "tolerance": 0.02
@@ -139,7 +139,7 @@
         "graph",
         "experiment"
       ],
-      "text": "On an air track a cart was pulled by a horizontal constant force whose magnitude was varied. The mass of the cart stayed the same, and the friction was so small that it can be ignored. For each force $F$ the acceleration $a$ of the cart was measured. The table is an example data set.\n\nDraw the $(F, a)$ graph of the measurement points and fit a straight line through the origin to the points. Determine the slope of the line and use it to find the mass of the cart. Enter the mass of the cart in the answer box.",
+      "text": "On an air track a cart was pulled by a constant horizontal force, and the magnitude of the force was varied. The mass of the cart stayed the same, and the friction was so small that it can be ignored. For each force $F$ the acceleration $a$ of the cart was measured. The table is an example data set.\n\nDraw the $(F, a)$ graph of the measurement points and fit a straight line through the origin to the points. Determine the slope of the line and use it to find the mass of the cart. Enter the mass of the cart in the answer box.",
       "answer": 0.5,
       "unit": "kg",
       "tolerance": 0.04,
@@ -181,7 +181,7 @@
         "graph",
         "experiment"
       ],
-      "text": "A cart was pulled on a horizontal track every time with the same horizontal force. The mass $m$ of the cart was changed by adding weights to it, and with each mass the acceleration $a$ was measured. Friction was small and is ignored. The table is an example data set.\n\na) For each mass calculate the reciprocal $1/m$ and draw the $(1/m, a)$ graph. Fit a straight line through the origin to the points and determine its slope. What does the slope tell?\n\nb) Which quantities had to be kept constant for the measurement to be a fair test? Enter the magnitude of the pulling force in the answer box.",
+      "text": "A cart was pulled on a horizontal track every time with the same horizontal force. The mass $m$ of the cart was changed by adding weights to it, and with each mass the acceleration $a$ was measured. Friction was small and is ignored. The table is an example data set.\n\na) For each mass calculate the reciprocal $1/m$ and draw the $(1/m, a)$ graph. Fit a straight line through the origin to the points and determine its slope. What does the slope tell you?\n\nb) Which quantities had to be kept constant for the measurement to be a fair test? Enter the magnitude of the pulling force in the answer box.",
       "answer": 1.2,
       "unit": "N",
       "tolerance": 0.04,
