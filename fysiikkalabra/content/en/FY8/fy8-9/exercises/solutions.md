@@ -63,7 +63,7 @@ The statement that all have decayed is an error, because the second half-life re
 **Conversions:** None are needed: the time and the half-life are both in years, so their ratio is a pure number. Finally the fraction is converted to a percentage by multiplying by $100$.
 **Substitution:** $\dfrac{N}{N_0} = \left(\tfrac{1}{2}\right)^{144\,\text{a} : 28.8\,\text{a}} = \left(\tfrac{1}{2}\right)^{5.00} = \tfrac{1}{32} = 0.03125 = 3.125\,\%$
 **Answer:** $3.13\,\%$, three significant figures like the given values.
-**Reasonableness:** After five half-lives the fraction has been halved five times: $100\,\% \to 50\,\% \to 25\,\% \to 12.5\,\% \to 6.25\,\% \to 3.125\,\%$. The sample is not empty, but only a small fraction of it is left.
+**Reasonableness:** After five half-lives the fraction has been halved five times: $100\,\% \!\to\! 50\,\% \!\to\! 25\,\% \!\to\! 12.5\,\% \!\to\! 6.25\,\% \!\to\! 3.125\,\%$. The sample is not empty, but only a small fraction of it is left.
 
 ## fy8-9-L1-08
 **Given:** half-life $T_{1/2} = 5.27\,\text{a}$, activity $A = 0.100\,A_0$
