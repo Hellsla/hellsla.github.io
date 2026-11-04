@@ -118,3 +118,79 @@
 **Sijoitus:** Summa on $8{,}24\,\text{cm} + 8{,}27\,\text{cm} + 8{,}25\,\text{cm} + 8{,}29\,\text{cm} + 8{,}25\,\text{cm} = 41{,}30\,\text{cm}$, joten $\bar{x} = \dfrac{41{,}30\,\text{cm}}{5} = 8{,}26\,\text{cm}$ ja $\Delta x_\text{sys} = 8{,}26\,\text{cm} - 8{,}00\,\text{cm} = 0{,}26\,\text{cm}$
 **Vastaus:** $0{,}26\,\text{cm}$, kaksi merkitsevää numeroa; erotus on kahden desimaalin tarkkuudella.
 **Järkevyys:** Satunnaisvirheen arvio $\dfrac{8{,}29\,\text{cm} - 8{,}24\,\text{cm}}{2} = 0{,}025\,\text{cm} \approx 0{,}03\,\text{cm}$ on noin kymmenesosa systemaattisesta virheestä, joten virheen ratkaisee systemaattinen osa, esimerkiksi väärä nollakohta. Jos kaikista lukemista vähennetään $0{,}26\,\text{cm}$, ne ovat $7{,}98\,\text{cm}$–$8{,}03\,\text{cm}$ eli lähellä oikeaa arvoa.
+
+## fy1-3-L1-06
+**Kysytty:** mikä tilanteista on systemaattinen virhe.
+**Periaate:** Systemaattinen virhe on joka mittauksessa suunnaltaan ja suuruudeltaan lähes sama, esimerkiksi mittarin väärä nollakohta. Satunnaisvirhe vaihtelee sattumanvaraisesti kumpaan suuntaan tahansa, ja karkea virhe on yksittäinen erehdys, joka näkyy muista poikkeavana tuloksena.
+**Mallivastaus:** Systemaattinen virhe on lämpömittarin väärä nollakohta: jäävedessä mittari näyttää joka kerralla noin $1{,}5\,^\circ\text{C}$ liikaa, joten kaikki lukemat siirtyvät samaan suuntaan. Toistaminen ja keskiarvo eivät poista sitä, mutta vertailu tunnettuun arvoon (jäävesi on $0\,^\circ\text{C}$) paljastaa sen, ja lukemat korjataan vähentämällä virhe. Kellon vaihteleva pysäytyshetki ja vaihteleva katselusuunta ovat satunnaisvirheitä, joita keskiarvo pienentää. Väärin kirjattu luku $34{,}2\,\text{s}$ on karkea virhe, joka tarkistetaan ja korjataan.
+
+## fy1-3-L1-07
+**Annettu:** $x_1 = 5{,}41\,\text{cm}$, $x_2 = 5{,}47\,\text{cm}$, $x_3 = 5{,}39\,\text{cm}$, $x_4 = 5{,}44\,\text{cm}$, $x_5 = 5{,}43\,\text{cm}$; $n = 5$
+**Kysytty:** keskiarvo $\bar{x}$ yksikössä $\text{cm}$, pyöristettynä virhe-arvion $\Delta x$ tarkkuuteen
+**Periaate:** Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$. Virhe-arvio pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1), ja keskiarvo pyöristetään samaan desimaaliin, koska numerot virhe-arvion desimaalin jälkeen ovat jo epävarmoja.
+**Kaava:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{n}$ ja $\Delta x = \dfrac{x_\text{max} - x_\text{min}}{2}$
+**Muunnokset:** Kaikki pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
+**Sijoitus:** $\bar{x} = \dfrac{5{,}41\,\text{cm} + 5{,}47\,\text{cm} + 5{,}39\,\text{cm} + 5{,}44\,\text{cm} + 5{,}43\,\text{cm}}{5} = \dfrac{27{,}14\,\text{cm}}{5} = 5{,}428\,\text{cm}$ ja $\Delta x = \dfrac{5{,}47\,\text{cm} - 5{,}39\,\text{cm}}{2} = 0{,}04\,\text{cm}$
+**Vastaus:** $5{,}43\,\text{cm}$, sillä virhe-arvio $0{,}04\,\text{cm}$ on yhden numeron luku sadasosien kohdalla (ensimmäinen numero ei ole 1). Tulos on $5{,}43\,\text{cm} \pm 0{,}04\,\text{cm}$.
+**Järkevyys:** Väli $5{,}43\,\text{cm} \pm 0{,}04\,\text{cm}$ eli $5{,}39\,\text{cm}$–$5{,}47\,\text{cm}$ kattaa kaikki viisi tulosta. Tulos $5{,}4283\,\text{cm}$ olisi väärin, koska se antaisi ymmärtää tietävän leveyden kymmenestuhannesosien tarkkuudella, vaikka virhe-arvio on sadasosia.
+
+## fy1-3-L1-08
+**Annettu:** pienin asteikkoväli $d = 0{,}2\,^\circ\text{C}$
+**Kysytty:** lukeman epävarmuuden arvio $\Delta T$ yksikössä $^\circ\text{C}$
+**Periaate:** Kun arvo luetaan asteikolta, lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida puoleksi pienimmästä asteikkovälistä. Se on arvio lukemisesta; mittauksen kokonaisepävarmuuteen voivat vaikuttaa myös mittari ja menetelmä.
+**Kaava:** $\Delta T = \dfrac{d}{2}$
+**Muunnokset:** Ei tarvita: asteikkoväli on jo asteina Celsius.
+**Sijoitus:** $\Delta T = \dfrac{0{,}2\,^\circ\text{C}}{2} = 0{,}1\,^\circ\text{C}$
+**Vastaus:** $0{,}1\,^\circ\text{C}$, yksi merkitsevä numero kuten asteikkovälissä $0{,}2\,^\circ\text{C}$.
+**Järkevyys:** Arvio on pienempi kuin asteikkoväli, kuten pitääkin: lukema voidaan sijoittaa viivojen väliin noin puolen välin tarkkuudella. Lukema $21{,}6\,^\circ\text{C}$ ilmoitettaisiin siis muodossa $21{,}6\,^\circ\text{C} \pm 0{,}1\,^\circ\text{C}$.
+
+## fy1-3-L2-05
+**Annettu:** taulukon kahdeksan aikaa $t_{10}$ (10 kierrosta): $18{,}12\,\text{s}$, $18{,}31\,\text{s}$, $18{,}05\,\text{s}$, $18{,}27\,\text{s}$, $18{,}19\,\text{s}$, $18{,}35\,\text{s}$, $18{,}10\,\text{s}$ ja $18{,}22\,\text{s}$; $n = 8$
+**Kysytty:** yhden kierroksen ajan keskiarvo $\bar{T}$ yksikössä $\text{s}$
+**Periaate:** Käsin otetussa ajassa on satunnaisvirhe, joten tulokseksi otetaan keskiarvo ja virhe-arvioksi vaihteluvälin puolikas. Kymmenen kierroksen ajasta saadaan yhden kierroksen aika jakamalla sekä keskiarvo että virhe-arvio tarkalla luvulla $10$.
+**Kaava:** $\bar{t}_{10} = \dfrac{t_1 + \dots + t_8}{n}$, $\;\Delta t_{10} = \dfrac{t_\text{max} - t_\text{min}}{2}$, $\;\bar{T} = \dfrac{\bar{t}_{10}}{10}$ ja $\Delta T = \dfrac{\Delta t_{10}}{10}$
+**Muunnokset:** Ei tarvita: kaikki ajat ovat sekunteina.
+**Sijoitus:** Summa on $145{,}61\,\text{s}$, joten $\bar{t}_{10} = \dfrac{145{,}61\,\text{s}}{8} = 18{,}20125\,\text{s}$ ja $\Delta t_{10} = \dfrac{18{,}35\,\text{s} - 18{,}05\,\text{s}}{2} = 0{,}15\,\text{s}$. Siis $\bar{T} = \dfrac{18{,}20125\,\text{s}}{10} = 1{,}820125\,\text{s}$ ja $\Delta T = \dfrac{0{,}15\,\text{s}}{10} = 0{,}015\,\text{s}$.
+**Vastaus:** $\bar{T} = 1{,}820\,\text{s}$ eli $1{,}82\,\text{s}$. Virhe-arvio $0{,}015\,\text{s}$ on kahden numeron luku, koska ensimmäinen numero on 1, joten tulos pyöristetään tuhannesosiin: $T = 1{,}820\,\text{s} \pm 0{,}015\,\text{s}$.
+**Järkevyys:** Levy pyörii noin $33$ kierrosta minuutissa, jolloin yksi kierros kestää $60\,\text{s} : 33 \approx 1{,}8\,\text{s}$, mikä sopii tulokseen. Kymmenen kierroksen mittaus pienentää reaktioajan suhteellista osuutta: virhe-arvio $0{,}15\,\text{s}$ on vain noin $0{,}8\,\%$ ajasta $18{,}2\,\text{s}$.
+
+## fy1-3-L2-06
+**Annettu:** tunnettu tilavuus $V_\text{oikea} = 50{,}0\,\text{ml}$; ryhmän A tulokset $50{,}9\,\text{ml}$, $51{,}1\,\text{ml}$, $50{,}8\,\text{ml}$, $51{,}0\,\text{ml}$, $50{,}9\,\text{ml}$ ja ryhmän B tulokset $49{,}4\,\text{ml}$, $50{,}5\,\text{ml}$, $49{,}8\,\text{ml}$, $50{,}3\,\text{ml}$, $50{,}1\,\text{ml}$
+**Kysytty:** sarjan A keskiarvon poikkeama $\bar{V}_\text{A} - V_\text{oikea}$ etumerkkeineen yksikössä $\text{ml}$; kumpi sarja on toistettavampi ja kumpi lähempänä oikeaa arvoa
+**Periaate:** Toistettavuus kertoo satunnaisvirheestä, ja sitä kuvaa vaihteluvälin puolikas $\Delta V$. Keskiarvon ero tunnettuun arvoon kertoo systemaattisesta virheestä, jota toistaminen ei pienennä.
+**Kaava:** $\bar{V} = \dfrac{V_1 + \dots + V_5}{n}$, $\;\Delta V = \dfrac{V_\text{max} - V_\text{min}}{2}$ ja poikkeama $\bar{V}_\text{A} - V_\text{oikea}$
+**Muunnokset:** Ei tarvita: kaikki tilavuudet ovat millilitroina.
+**Sijoitus:** $\bar{V}_\text{A} = \dfrac{254{,}7\,\text{ml}}{5} = 50{,}94\,\text{ml}$, joten poikkeama on $50{,}94\,\text{ml} - 50{,}0\,\text{ml} = 0{,}94\,\text{ml}$. Lisäksi $\Delta V_\text{A} = \dfrac{51{,}1\,\text{ml} - 50{,}8\,\text{ml}}{2} = 0{,}15\,\text{ml}$ ja $\Delta V_\text{B} = \dfrac{50{,}5\,\text{ml} - 49{,}4\,\text{ml}}{2} = 0{,}55\,\text{ml}$; $\bar{V}_\text{B} = 50{,}02\,\text{ml}$.
+**Vastaus:** $+0{,}94\,\text{ml}$, kaksi merkitsevää numeroa kuten tuloksissa. Sarja A on toistettavampi ($0{,}15\,\text{ml} < 0{,}55\,\text{ml}$), mutta sen tulokset ovat kaikki yli $50\,\text{ml}$, eli siinä on systemaattinen virhe. Sarjan B keskiarvo on lähempänä oikeaa arvoa, vaikka hajonta on suurempi.
+**Järkevyys:** Kaikki A:n tulokset ovat samalla puolella oikeaa arvoa, joten poikkeama ei ole satunnaista. Hyvä toistettavuus ei siis takaa oikeaa tulosta.
+
+## fy1-3-L2-07
+**Annettu:** heilahdusaika $T \approx 1{,}5\,\text{s}$; reaktioajan epävarmuus koko mitatulle ajalle $\Delta t = 0{,}2\,\text{s}$ (arvio); vaadittu suhteellinen epävarmuus enintään $1\,\%$
+**Kysytty:** heilahdusten vähimmäismäärä $N$
+**Periaate:** Reaktioaika vaikuttaa kerran alussa ja kerran lopussa, oli mitattava aika lyhyt tai pitkä. Kun mitataan $N$ heilahdusta ja aika jaetaan luvulla $N$, myös epävarmuus jaetaan luvulla $N$.
+**Kaava:** $\Delta T = \dfrac{\Delta t}{N}$ ja vaatimus $\dfrac{\Delta T}{T} \le 0{,}01$, joten $\dfrac{\Delta t}{N \cdot T} \le 0{,}01$, josta $N \ge \dfrac{\Delta t}{0{,}01 \cdot T}$
+**Muunnokset:** Ei tarvita: kaikki ajat ovat sekunteina, ja $1\,\% = 0{,}01$.
+**Sijoitus:** $N \ge \dfrac{0{,}2\,\text{s}}{0{,}01 \cdot 1{,}5\,\text{s}} = 13{,}33\ldots$
+**Vastaus:** Heilahduksia täytyy mitata vähintään $14$, koska $N$ on kokonaisluku ja $13$ ei riitä ($\dfrac{0{,}2}{13 \cdot 1{,}5} = 1{,}03\,\%$).
+**Järkevyys:** Tarkistus: $N = 14$ antaa $\Delta T = 0{,}2\,\text{s} : 14 = 0{,}014\,\text{s}$ ja $0{,}014\,\text{s} : 1{,}5\,\text{s} = 0{,}95\,\%$, joten vaatimus täyttyy. Yhden heilahduksen mittaus antaisi epävarmuudeksi $0{,}2 : 1{,}5 = 13\,\%$.
+**Mallivastaus:** Reaktioajan virhe ei kasva ajan pituuden mukana, vaan se on suunnilleen sama alussa ja lopussa. Pitkä mittaus jaetaan monelle heilahdukselle, jolloin yhteen heilahdukseen tuleva osuus pienenee. Toistaminen pienentää myös satunnaisvirhettä keskiarvon avulla.
+
+## fy1-3-L3-04
+**Annettu:** taulukon kahdeksan aikaa; kuudes tulos $2{,}97\,\text{s}$ poikkeaa muista, ja syy (kello pysäytettiin myöhään) on kirjattu
+**Kysytty:** saako tuloksen jättää pois, ja keskiarvo $\bar{t}$ yksikössä $\text{s}$
+**Periaate:** Selvästi poikkeava tulos tarkistetaan, mutta sitä ei poisteta pelkästään siksi, että se poikkeaa. Se saa jäädä pois vain, jos karkean virheen syy löytyy ja poisjättö perustellaan ja kirjataan. Tässä syy tunnetaan: kello pysäytettiin myöhässä.
+**Kaava:** $\bar{t} = \dfrac{t_1 + \dots + t_n}{n}$, missä $n = 7$ jäljelle jäävää tulosta
+**Muunnokset:** Ei tarvita: kaikki ajat ovat sekunteina.
+**Sijoitus:** $\bar{t} = \dfrac{2{,}41\,\text{s} + 2{,}38\,\text{s} + 2{,}44\,\text{s} + 2{,}40\,\text{s} + 2{,}43\,\text{s} + 2{,}39\,\text{s} + 2{,}42\,\text{s}}{7} = \dfrac{16{,}87\,\text{s}}{7} = 2{,}41\,\text{s}$
+**Vastaus:** Tuloksen saa jättää pois, koska syy tunnetaan ja se on kirjattu; keskiarvo on $2{,}41\,\text{s}$, kolme merkitsevää numeroa kuten mittauksissa. Jäljelle jäävien tulosten vaihteluvälin puolikas on $\dfrac{2{,}44\,\text{s} - 2{,}38\,\text{s}}{2} = 0{,}03\,\text{s}$. Jos syytä ei olisi löytynyt, tulosta ei saisi poistaa vain siksi, että se poikkeaa: mittaus toistettaisiin ja asia kirjattaisiin.
+**Järkevyys:** Poikkeavan tuloksen kanssa keskiarvo olisi $\dfrac{19{,}84\,\text{s}}{8} = 2{,}48\,\text{s}$, eli yksi virhe siirtäisi sitä $0{,}07\,\text{s}$ eli enemmän kuin kaksi kertaa vaihteluvälin puolikkaan. Poikkeama $2{,}97\,\text{s} - 2{,}41\,\text{s} = 0{,}56\,\text{s}$ on selvästi suurempi kuin muiden tulosten hajonta $0{,}03\,\text{s}$, joten se on karkea virhe eikä satunnaisvirhettä.
+
+## fy1-3-L3-05
+**Annettu:** $\rho_\text{A} = 2{,}74\,\text{g/cm}^3$, $\Delta\rho_\text{A} = 0{,}05\,\text{g/cm}^3$; $\rho_\text{B} = 2{,}60\,\text{g/cm}^3$, $\Delta\rho_\text{B} = 0{,}05\,\text{g/cm}^3$; oppilaan päätelmä: ero on noin $5\,\%$, joten tulokset ovat sopusoinnussa
+**Kysytty:** oppilaan päättelyn virhe ja erotus $|\rho_\text{A} - \rho_\text{B}| - (\Delta\rho_\text{A} + \Delta\rho_\text{B})$ yksikössä $\text{g/cm}^3$
+**Periaate:** Kahden tuloksen sopusointua arvioidaan epävarmuusväleillä, ei sillä, kuinka monta prosenttia tulokset eroavat. Jos välit $\rho \pm \Delta\rho$ menevät päällekkäin, eroa ei voida osoittaa; jos eivät, ero on suurempi kuin arvioidut epävarmuudet selittävät. Epävarmuudet ovat arvioita, eivät varmoja rajoja.
+**Kaava:** $E = |\rho_\text{A} - \rho_\text{B}| - (\Delta\rho_\text{A} + \Delta\rho_\text{B})$
+**Muunnokset:** Ei tarvita: kaikki arvot ovat yksikössä $\text{g/cm}^3$.
+**Sijoitus:** $E = |2{,}74\,\text{g/cm}^3 - 2{,}60\,\text{g/cm}^3| - (0{,}05\,\text{g/cm}^3 + 0{,}05\,\text{g/cm}^3) = 0{,}14\,\text{g/cm}^3 - 0{,}10\,\text{g/cm}^3 = 0{,}04\,\text{g/cm}^3$
+**Vastaus:** $0{,}04\,\text{g/cm}^3$, kaksi desimaalia kuten tuloksissa. Oppilaan virhe on arvioida sopusointua prosenttierolla: välit $2{,}69$–$2{,}79\,\text{g/cm}^3$ ja $2{,}55$–$2{,}65\,\text{g/cm}^3$ eivät mene päällekkäin, vaan niiden väliin jää $0{,}04\,\text{g/cm}^3$. Tulokset eivät ole sopusoinnussa, ja syy on etsittävä esimerkiksi systemaattisesta virheestä. Ero ei silti todista kummankaan tuloksen vääräksi.
+**Järkevyys:** Epävarmuudet ovat noin $2\,\%$ tuloksista, joten $5\,\%$ ero on yli kaksinkertainen niihin verrattuna. Jos B olisi $2{,}66\,\text{g/cm}^3$, välit osuisivat päällekkäin, vaikka tulokset eroaisivat vielä $0{,}08\,\text{g/cm}^3$.

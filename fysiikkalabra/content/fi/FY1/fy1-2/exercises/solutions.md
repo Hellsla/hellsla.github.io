@@ -49,6 +49,26 @@
 **Vastaus:** $400{,}7\,\text{px}$, neljä merkitsevää numeroa kuten lähtöarvoissa $1{,}392\cdot10^{6}\,\text{km}$ ja $3474\,\text{km}$.
 **Järkevyys:** Karkeasti $\dfrac{1{,}4\cdot10^{6}}{3{,}5\cdot10^{3}} = 0{,}4\cdot10^{3} = 400$. Aurinko on halkaisijaltaan noin 400 Kuuta, mikä sopii siihen, että se on paljon Kuuta suurempi.
 
+## fy1-2-L1-06
+**Kysytty:** mikä annetuista yksiköistä on SI-järjestelmän perusyksikkö.
+**Periaate:** SI-järjestelmässä on seitsemän perusyksikköä: metri, kilogramma, sekunti, ampeeri, kelvin, mooli ja kandela. Kaikki muut yksiköt johdetaan niistä, joko kertomalla ja jakamalla tai etuliitteellä. Perusyksikön tunnistaa siitä, ettei sitä ole määritelty toisten yksiköiden avulla.
+**Mallivastaus:** Kilogramma on massan SI-perusyksikkö. Newton on voiman yksikkö, ja se määritellään kilogramman, metrin ja sekunnin avulla, joten se on johdettu yksikkö. Gramma on tuhannesosa kilogrammasta, $1\,\text{g} = 10^{-3}\,\text{kg}$, eli etuliitteellä saatu yksikkö. Litra ei kuulu SI-yksiköihin, ja tilavuuden SI-yksikkö $\text{m}^3$ johdetaan metristä: $\text{m}\cdot\text{m}\cdot\text{m}$.
+
+## fy1-2-L1-07
+**Annettu:** nopeus $v = 18\,\text{km/h}$
+**Kysytty:** nopeus $v$ yksikössä m/s
+**Periaate:** Suure ei muutu, kun yksikkö vaihdetaan; vain lukuarvo muuttuu. Nopeuden yksikkö on pituus jaettuna ajalla, joten sekä kilometri että tunti korvataan arvollaan SI-yksiköissä.
+**Kaava:** nopeus on matka jaettuna ajalla, $v = \dfrac{s}{t}$, joten yksikkö on pituusyksikkö jaettuna aikayksiköllä
+**Muunnokset:** Kilometrin paikalle kirjoitetaan $1000\,\text{m}$ ja tunnin paikalle $3600\,\text{s}$, koska $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$.
+**Sijoitus:** $v = 18\,\dfrac{\text{km}}{\text{h}} = 18\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 5{,}0\,\dfrac{\text{m}}{\text{s}}$
+**Vastaus:** $5{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten lähtöarvossa $18\,\text{km/h}$.
+**Järkevyys:** Sekunti on tuntia paljon lyhyempi aika, ja kilometri on metriä paljon pidempi matka. Pyöräilijä etenee tunnissa $18\,\text{km}$ eli sekunnissa muutaman metrin, ja $5{,}0\,\text{m}$ sekunnissa sopii tavalliseen pyöräilyyn.
+
+## fy1-2-L1-08
+**Kysytty:** tiheyden yksikkö, kun massa on kilogrammoina ja tilavuus kuutiometreinä.
+**Periaate:** Kaavassa $\rho = \dfrac{m}{V}$ massa jaetaan tilavuudella. Yksiköille tehdään sama kuin suureille: suureen yksikkö saadaan sijoittamalla kaavaan suureiden yksiköt. Tilavuuden yksikkö on kolmen pituuden tulo, $\text{m}\cdot\text{m}\cdot\text{m} = \text{m}^3$.
+**Mallivastaus:** Sijoitetaan yksiköt kaavaan: $\dfrac{\text{kg}}{\text{m}^3}$, eli tiheyden yksikkö on $\text{kg/m}^3$. Kilogramma on osoittajassa, koska massa on kaavan osoittajassa. Tulo $\text{kg}\cdot\text{m}^3$ ei tule jakolaskusta, käänteinen $\text{m}^3/\text{kg}$ kuvaisi tilavuutta massayksikköä kohti, ja neliömetri on pinta-alan yksikkö. Yksikkötarkastelulla voi siis tarkistaa, onko kaava kirjoitettu oikein.
+
 ## fy1-2-L2-01
 **Annettu:** kellotaajuus $f = 3{,}2\,\text{GHz}$, aika $t = 5{,}0\,\text{ms}$; $1\,\text{GHz} = 10^{9}\,\text{Hz}$ ja $1\,\text{Hz} = 1/\text{s}$
 **Kysytty:** kellojaksojen lukumäärä $N$
@@ -67,7 +87,7 @@
 **Muunnokset:** $L = 1{,}0\,\text{mm} = 1{,}0\cdot10^{-3}\,\text{m}$ ja $l = 2{,}0\,\mu\text{m} = 2{,}0\cdot10^{-6}\,\text{m}$.
 **Sijoitus:** $N = \dfrac{1{,}0\cdot10^{-3}\,\text{m}}{2{,}0\cdot10^{-6}\,\text{m}} = 0{,}50\cdot10^{3} = 5{,}0\cdot10^{2} = 500$
 **Vastaus:** $500$ bakteeria, kaksi merkitsevää numeroa kuten lähtöarvoissa $1{,}0\,\text{mm}$ ja $2{,}0\,\mu\text{m}$.
-**Järkevyys:** Millimetri on tuhat mikrometriä, joten 1 mm:iin mahtuisi 1000 mikrometrin mittaista kappaletta. Bakteeri on kaksi mikrometriä pitkä, joten niitä mahtuu puolet siitä, 500.
+**Järkevyys:** Millimetri on tuhat mikrometriä, joten $1\,\text{mm}$:iin mahtuisi 1000 mikrometrin mittaista kappaletta. Bakteeri on kaksi mikrometriä pitkä, joten niitä mahtuu puolet siitä, 500.
 
 ## fy1-2-L2-03
 **Annettu:** pinta-ala $A = 2{,}4\,\text{km}^2$; $1\,\text{ha} = 10\,000\,\text{m}^2$
@@ -88,6 +108,36 @@
 **Sijoitus:** $s = 15{,}341\,\dfrac{\text{km}}{\text{s}}\cdot 86\,400\,\text{s} = 1\,325\,462\,\text{km} = 1{,}3255\cdot10^{6}\,\text{km}$
 **Vastaus:** $1{,}3255$ milj. km, viisi merkitsevää numeroa kuten nopeudessa $15{,}341\,\text{km/s}$; vuorokauden pituus on tarkka.
 **Järkevyys:** Pyöristetyillä luvuilla $15\,\text{km/s}\cdot 9\cdot10^{4}\,\text{s} = 1{,}35\cdot10^{6}\,\text{km}$. Vuorokaudessa luotain kulkee reilun miljoonan kilometrin, noin kolmen Maa–Kuu-etäisyyden verran.
+
+## fy1-2-L2-05
+**Annettu:** taulukosta nopeudet: pikalaiva $38{,}0$ solmua, juna $66{,}0\,\text{km/h}$, pyöräilijä $14{,}0\,\text{m/s}$ ja kalastusvene $21{,}0$ solmua; $1\,\text{solmu} = 1{,}852\,\text{km/h}$
+**Kysytty:** nopein kulkuneuvo ja sen nopeus $v$ yksikössä m/s
+**Periaate:** Lukuarvoja voi verrata vasta, kun ne on ilmoitettu samassa yksikössä. Siksi kaikki nopeudet muunnetaan yksikköön m/s, ja suurin valitaan. Taulukon suurin lukuarvo $66{,}0$ ei kerro mitään, koska se on eri yksikössä kuin muut.
+**Kaava:** $1\,\text{solmu} = 1{,}852\,\tfrac{\text{km}}{\text{h}}$ ja $1\,\tfrac{\text{km}}{\text{h}} = \tfrac{1000\,\text{m}}{3600\,\text{s}}$, joten $v = n\cdot 1{,}852\cdot\tfrac{1000\,\text{m}}{3600\,\text{s}}$, kun solmuja on $n$
+**Muunnokset:** Pikalaiva $38{,}0\cdot1{,}852\,\text{km/h} = 70{,}38\,\text{km/h}$, kalastusvene $21{,}0\cdot1{,}852\,\text{km/h} = 38{,}89\,\text{km/h}$. Pyöräilijä on jo yksikössä m/s.
+**Sijoitus:** pikalaiva $70{,}38\,\tfrac{\text{km}}{\text{h}} = 70{,}38\cdot\tfrac{1000\,\text{m}}{3600\,\text{s}} = 19{,}55\,\tfrac{\text{m}}{\text{s}}$; juna $66{,}0\cdot\tfrac{1000\,\text{m}}{3600\,\text{s}} = 18{,}33\,\tfrac{\text{m}}{\text{s}}$; kalastusvene $38{,}89\cdot\tfrac{1000\,\text{m}}{3600\,\text{s}} = 10{,}80\,\tfrac{\text{m}}{\text{s}}$; pyöräilijä $14{,}0\,\tfrac{\text{m}}{\text{s}}$. Nopeusjärjestys on pikalaiva, juna, pyöräilijä, kalastusvene.
+**Vastaus:** nopein on pikalaiva, $19{,}5\,\text{m/s}$, kolme merkitsevää numeroa kuten lähtöarvossa $38{,}0$ solmua; muunnoskerroin $1{,}852$ on tarkka.
+**Järkevyys:** Pikalaiva kulkee tunnissa $70\,\text{km}$ ja juna $66\,\text{km}$, joten laiva on vähän nopeampi. Pyöräilijän $14\,\text{m/s}$ on noin $50\,\text{km/h}$, mikä on alle kummankin.
+
+## fy1-2-L2-06
+**Annettu:** taulukosta viiden omenan massat $152{,}4$, $147{,}9$, $160{,}8$, $155{,}3$ ja $158{,}1$; sarakkeen otsikossa yksikkö $\text{kg}$
+**Kysytty:** virhe taulukossa ja omenan keskimassa $\overline{m}$ kilogrammoina
+**Periaate:** Mittaustulosta arvioidaan aina järkevyydellä. Omena ei painaisi $150\,\text{kg}$, joten otsikon yksikkö on väärin: lukuarvot on mitattu grammoina. Keskiarvo on massojen summa jaettuna lukumäärällä, ja yksikkö korjataan sijoittamalla.
+**Kaava:** $\overline{m} = \dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$
+**Muunnokset:** Oikea otsikko on $m\,(\text{g})$. Gramman paikalle kirjoitetaan sen arvo kilogrammoina, $1\,\text{g} = 10^{-3}\,\text{kg}$.
+**Sijoitus:** $\overline{m} = \dfrac{152{,}4 + 147{,}9 + 160{,}8 + 155{,}3 + 158{,}1}{5}\,\text{g} = \dfrac{774{,}5}{5}\,\text{g} = 154{,}9\,\text{g} = 154{,}9\cdot10^{-3}\,\text{kg} = 0{,}1549\,\text{kg}$
+**Vastaus:** $0{,}1549\,\text{kg}$, neljä merkitsevää numeroa kuten punnituksissa, jotka on annettu kymmenesosagrammaan. Omenoiden lukumäärä on tarkka luku.
+**Järkevyys:** Omena painaa noin $150\,\text{g}$ eli noin $0{,}15\,\text{kg}$, ja arvot ovat lähellä toisiaan. Keskiarvo $154{,}9\,\text{g}$ on lukujen $147{,}9$ ja $160{,}8$ välissä, kuten keskiarvon pitää.
+
+## fy1-2-L2-07
+**Annettu:** virtaama $q = 0{,}20\,\tfrac{\textsf{l}}{\text{s}}$ ja ämpärin tilavuus $V = 12\,\textsf{l}$; oppilaan tulos $t = qV = 2{,}4$ sekuntia
+**Kysytty:** oppilaan virhe ja oikea täyttöaika $t$ minuutteina
+**Periaate:** Aikaa laskettaessa tuloksen yksikön on oltava aikayksikkö. Virtaama kertoo, montako litraa tulee sekunnissa, joten kaavan on oltava $V = qt$.
+**Kaava:** $V = qt$, josta $t = \dfrac{V}{q}$
+**Muunnokset:** Yksikkö tarkistetaan sijoittamalla: oppilaan kaavassa $\tfrac{\textsf{l}}{\text{s}}\cdot\textsf{l} = \tfrac{\textsf{l}^2}{\text{s}}$, mikä ei ole aikayksikkö, joten kaava on väärä. Sekunnit muunnetaan lopuksi minuuteiksi: $1\,\text{min} = 60\,\text{s}$.
+**Sijoitus:** $t = \dfrac{12\,\textsf{l}}{0{,}20\,\textsf{l}/\text{s}} = 60\,\text{s} = \dfrac{60}{60}\,\text{min} = 1{,}0\,\text{min}$
+**Vastaus:** $1{,}0\,\text{min}$, kaksi merkitsevää numeroa kuten virtaamassa $0{,}20\,\tfrac{\textsf{l}}{\text{s}}$ ja tilavuudessa $12\,\textsf{l}$. Oppilaan $2{,}4$ ei ole sekunteja vaan yksikössä $\tfrac{\textsf{l}^2}{\text{s}}$.
+**Järkevyys:** Joka sekunti tulee viidesosa litraa, joten litra täyttyy viidessä sekunnissa ja $12\,\textsf{l}$ kahtatoista kertaa pidemmässä ajassa, $60\,\text{s}$. Täyttöaika on siis minuutin luokkaa, kuten ämpärin täyttämisestä tietää.
 
 ## fy1-2-L3-01
 **Annettu:** $c = 2{,}998\cdot10^{5}\,\text{km/s}$, $1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$, $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$
@@ -118,3 +168,23 @@
 **Sijoitus:** $t = \dfrac{2\cdot 2{,}169\cdot10^{10}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}} = 1{,}447\cdot10^{5}\,\text{s}$. Tunteja on $1{,}447\cdot10^{5}\,\text{s} : 3600\,\text{s} = 40{,}2$, joten $t = 40{,}2\,\text{h}$
 **Vastaus:** $40{,}2\,\text{h}$, kolme merkitsevää numeroa kuten etäisyydessä $145\,\text{AU}$.
 **Järkevyys:** Yhteen suuntaan valolla kestää noin $145\cdot 8{,}3\,\text{min} = 1200\,\text{min} = 20\,\text{h}$, joten edestakaisin tulee noin 40 tuntia. Vastaus saapuu siis yli vuorokauden kuluttua.
+
+## fy1-2-L3-04
+**Annettu:** $T = k\,L^{a}g^{b}m^{c}$, jossa $k$ on yksikötön; $L_1 = 0{,}250\,\text{m}$, $T_1 = 1{,}00\,\text{s}$, $L_2 = 1{,}00\,\text{m}$
+**Kysytty:** eksponentit $a$, $b$ ja $c$ sekä jaksonaika $T_2$ sekunteina
+**Periaate:** Yhtälön kummallakin puolella on oltava sama yksikkö. Yksiköistä saadaan siis ehdot eksponenteille. Kaavan muoto on tämän jälkeen tiedossa, ja yksikötön kerroin $k$ jää samaksi, kun heilurin pituus vaihtuu samassa paikassa.
+**Kaava:** Yksiköt: $\text{s} = \text{m}^{a}\cdot\left(\tfrac{\text{m}}{\text{s}^2}\right)^{b}\cdot\text{kg}^{c} = \text{m}^{a+b}\,\text{s}^{-2b}\,\text{kg}^{c}$. Kilogramma esiintyy vain massassa, joten $c = 0$. Sekunnit antavat $-2b = 1$, eli $b = -\tfrac{1}{2}$, ja metrit $a + b = 0$, eli $a = \tfrac{1}{2}$. Siis $T = k\sqrt{\dfrac{L}{g}}$, ja koska $k$ ja $g$ pysyvät samoina, $T_2 = T_1\sqrt{\dfrac{L_2}{L_1}}$.
+**Muunnokset:** Ei tarvita: pituudet ovat metreinä ja aika sekunteina.
+**Sijoitus:** $T_2 = 1{,}00\,\text{s}\cdot\sqrt{\dfrac{1{,}00\,\text{m}}{0{,}250\,\text{m}}} = 1{,}00\,\text{s}\cdot\sqrt{4{,}00} = 2{,}00\,\text{s}$
+**Vastaus:** $a = \tfrac{1}{2}$, $b = -\tfrac{1}{2}$ ja $c = 0$; $T_2 = 2{,}00\,\text{s}$, kolme merkitsevää numeroa kuten mittauksessa. Massa ei vaikuta jaksonaikaan.
+**Järkevyys:** Heilurin pituus on nelinkertainen ja jaksonaika kaksinkertainen, koska $\sqrt{4} = 2$. Metrin heilurin jakso on noin kaksi sekuntia, mikä sopii seinäkellon heiluriin.
+
+## fy1-2-L3-05
+**Annettu:** taulukosta laite A: $E_\text{A} = 0{,}65\,\text{kWh}$, $P_\text{A} = 85{,}0\,\text{W}$; laite B: $E_\text{B} = 2{,}20\,\text{MJ}$, $P_\text{B} = 0{,}100\,\text{kW}$; $1\,\text{W} = 1\,\text{J/s}$
+**Kysytty:** kumpi laite toimii kauemmin ja kuinka monta tuntia kauemmin
+**Periaate:** Lukuarvoja $0{,}65$ ja $2{,}20$ ei voi verrata, koska yksiköt $\text{kWh}$ ja $\text{MJ}$ ovat eri suuria. Laite toimii ajan $t = \tfrac{E}{P}$, kunnes varastoitu energia on kulunut. Energia ja teho muunnetaan siksi yksiköihin J ja W.
+**Kaava:** $t = \dfrac{E}{P}$
+**Muunnokset:** Kilowattitunnin paikalle kirjoitetaan $1000\,\text{W}\cdot3600\,\text{s}$. $E_\text{A} = 0{,}65\cdot1000\,\text{W}\cdot3600\,\text{s} = 2{,}34\cdot10^{6}\,\text{J}$, $E_\text{B} = 2{,}20\cdot10^{6}\,\text{J}$ ja $P_\text{B} = 0{,}100\cdot1000\,\text{W} = 100\,\text{W}$. Sekunnit muunnetaan tunneiksi, $1\,\text{h} = 3600\,\text{s}$.
+**Sijoitus:** $t_\text{A} = \dfrac{2{,}34\cdot10^{6}\,\text{J}}{85{,}0\,\text{W}} = 2{,}753\cdot10^{4}\,\text{s} = 7{,}647\,\text{h}$ ja $t_\text{B} = \dfrac{2{,}20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2{,}20\cdot10^{4}\,\text{s} = 6{,}111\,\text{h}$. Erotus $7{,}647\,\text{h} - 6{,}111\,\text{h} = 1{,}54\,\text{h}$
+**Vastaus:** Väite ei pidä paikkaansa: laite A toimii kauemmin, noin $1{,}5\,\text{h}$, kaksi merkitsevää numeroa kuten energiassa $0{,}65\,\text{kWh}$. Laitteen B energia on vain $0{,}61\,\text{kWh}$, ja sen teho on suurempi.
+**Järkevyys:** Laitteen A energia $650\,\text{Wh}$ jaettuna tehon $85\,\text{W}$ arviolla $90\,\text{W}$ antaa noin $7\,\text{h}$. Laitteen B energia on $2{,}2:3{,}6 = 0{,}61\,\text{kWh}$, ja $610\,\text{Wh} : 100\,\text{W}$ on noin $6\,\text{h}$.
