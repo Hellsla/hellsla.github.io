@@ -19,9 +19,17 @@ investigation and a course unit (or the pages named):
     2026-11-03 "the quality in chrome seems really awful") when the device's voice reads
   - Tauko pauses and Kuuntele continues; a click on a stage moves the reading there (to the next stage that is read,
     paused, when that stage is not read); the speed menu (0,8 / 1 / 1,25) sets the rate; Esc stops
-  - at 360, 768 and 1280 px the bar fits the window (no horizontal scroll), its controls are at least 40 px high
+  - at 360, 768 and 1280 px the bar fits the window (no horizontal scroll), its controls are at least 40 px high;
+    under 600 px Kuuntele is the icon only (its name in aria-label) with the menu arrow in the same pill, and at least
+    two stage chips of a lesson show beside it (teacher 2026-11-04, UI fix 2)
+  - on a phone-sized window (or with Save-Data, or without WebGPU) the device's voice is the default: Kuuntele speaks
+    with it and nothing of the neural model is fetched; the menu offers the better voice (lang js.ra_better), and the
+    download starts only when it is chosen (teacher 2026-11-04, UI fix 1)
+The neural voice itself is checked with the real model from Hellsla/ruukkilabra-models (UI fix 3): a local clone
+(FL_MODELS_DIR, or ruukkilabra-models beside this repository) when there is one, else its GitHub Pages copy; that check
+is skipped, and says so, when neither can be reached.
 Exit status 1 on any failure."""
-import functools, http.server, json, re, sys, threading, pathlib
+import functools, http.server, json, os, re, sys, threading, pathlib, urllib.request
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
 import i18n
@@ -112,7 +120,17 @@ with sync_playwright() as pw:
             start = pg.locator(".ra-start")
             lesson = pg.evaluate("!!document.querySelector('main section.stage#herata, main section.stage#selita')")   # a lesson or a course unit
             expect(f"{tag}: one Kuuntele button, in this language, with an icon", start.count() == 1 and T("js.ra_listen") in start.inner_text()
-                   and start.locator("svg").count() == 1 and start.get_attribute("aria-pressed") == "false", start.count())
+                   and start.locator("svg").count() == 1 and start.get_attribute("aria-pressed") == "false"
+                   and start.get_attribute("aria-label") == T("js.ra_listen"), start.count())
+            if w < 600 and pg.locator("nav.toc .toc-tools").count():
+                pill = pg.evaluate("""(() => { const s = document.querySelector('.ra-start'), m = document.querySelector('.ra-more'), t = document.querySelector('nav.toc'),
+                    sp = s.querySelector('span').getBoundingClientRect(), a = s.getBoundingClientRect(), b = m.getBoundingClientRect(), tools = t.querySelector('.toc-tools').getBoundingClientRect();
+                    const chips = [...t.querySelectorAll(':scope > a')].filter(c => { const r = c.getBoundingClientRect(); return r.left >= t.getBoundingClientRect().left - 1 && r.right <= tools.left + 1; }).length;
+                    return { icon: sp.width <= 1 && a.width <= 48, joined: Math.abs(b.left - a.right) < 1.5, chips, n: t.querySelectorAll(':scope > a').length }; })()""")
+                # a lesson's numbered stage chips: at least two beside the button; a TVT guide's or an investigation's
+                # long section names: at least one
+                expect(f"{tag}: under 600 px Kuuntele is the icon only, the menu arrow in the same pill, {'two stage chips' if lesson else 'a chip'} beside it",
+                       pill["icon"] and pill["joined"] and pill["chips"] >= (min(2, pill["n"]) if lesson else 1), pill)
             if w == 1280:
                 expect(f"{tag}: the button is at the right end of the stage bar", pg.evaluate("""(() => { const t = document.querySelector('nav.toc'), b = document.querySelector('.ra-start');
                     if (!t) return true; const tools = t.querySelector('.toc-tools'); return !!tools && tools.contains(b) && t.lastElementChild === tools
@@ -208,21 +226,72 @@ with sync_playwright() as pw:
         pg.close()
     b.close()
 
-# The neural voice (teacher 2026-11-03: Supertonic 3, "Nainen / Mies"): the real model in vendor/supertonic3-v1 on the
-# CPU (headless Chromium has no WebGPU), on one Finnish lesson: it loads, the first sentence is synthesised and played
-# with the sentence highlighted, the menu has Nainen and Mies, and Mies gives a new synthesis of the same sentence.
+# The models (UI fix 3): a local clone of Hellsla/ruukkilabra-models, served here, or its GitHub Pages copy.
+MODELS_URL = "https://hellsla.github.io/ruukkilabra-models/"
+mdir = pathlib.Path(os.environ.get("FL_MODELS_DIR") or ROOT.parent.parent / "ruukkilabra-models")
+MBASE = None
+if (mdir / "supertonic3-v1/manifest.json").is_file():
+    class Cors(Quiet):                       # another origin here, as GitHub Pages it sends Access-Control-Allow-Origin: *
+        def end_headers(self): self.send_header("Access-Control-Allow-Origin", "*"); super().end_headers()
+    msrv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), functools.partial(Cors, directory=str(mdir)))
+    msrv.handle_error = lambda *a: None       # a page closed during a download: a broken pipe, not a failure
+    threading.Thread(target=msrv.serve_forever, daemon=True).start()
+    MBASE = f"http://127.0.0.1:{msrv.server_address[1]}/"
+else:
+    try:
+        with urllib.request.urlopen(MODELS_URL + "supertonic3-v1/manifest.json", timeout=15) as r:
+            if r.status == 200: MBASE = MODELS_URL
+    except Exception: pass
 NPAGE = pick("fy3-6.html") or (targets[0] if targets else None)
-if NPAGE and (SITE / "vendor/supertonic3-v1/manifest.json").is_file():
+MODEL_FILES = "supertonic3-v1/"
+
+# A phone-sized window (teacher 2026-11-04, UI fix 1): the device's voice by default, no model fetched before the
+# better voice is chosen in the menu; choosing it starts the download.
+if NPAGE:
+    with sync_playwright() as pw:
+        b = launch(pw)
+        pg = b.new_page(viewport={"width": 360, "height": 800})
+        errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
+        asked = []; pg.on("request", lambda r: asked.append(r.url) if MODEL_FILES in r.url or "/ort/" in r.url else None)
+        pg.add_init_script(MOCK.replace("window.flTtsEngine = 'browser';", f"window.flTtsModelBase = {json.dumps(MBASE or MODELS_URL)};"))
+        pg.goto(BASE + NPAGE); pg.wait_for_timeout(400)
+        T = i18n.T(i18n.SOURCE)
+        st = pg.evaluate("flSpeech.state()")
+        expect(f"{NPAGE} 360px: the device's voice is the default on a phone", st["engine"] == "browser" and st["light"], st)
+        pg.click(".ra-start"); pg.wait_for_timeout(300)
+        expect(f"{NPAGE} 360px: Kuuntele speaks with the device's voice and fetches nothing of the model",
+               pg.evaluate("window.__spoken.length") > 0 and not asked, asked[:3])
+        pg.click(".ra-start"); pg.wait_for_timeout(100)
+        pg.click(".ra-more"); pg.wait_for_timeout(100)
+        better = pg.evaluate("(() => { const l = document.querySelector('.ra-menu .ra-better'); return l && { shown: !l.hidden && !!l.offsetParent, text: l.textContent.trim(), on: l.querySelector('input').checked, voice: !document.querySelector('.ra-voice').hidden }; })()")
+        expect(f"{NPAGE} 360px: the menu offers \"{T('js.ra_better')}\", not chosen, no Nainen / Mies yet",
+               bool(better) and better["shown"] and better["text"] == T("js.ra_better") and not better["on"] and not better["voice"], better)
+        expect(f"{NPAGE} 360px: still nothing of the model fetched with the menu open", not asked, asked[:3])
+        pg.check(".ra-better input"); pg.wait_for_timeout(1500)
+        expect(f"{NPAGE} 360px: choosing the better voice starts the download and shows Nainen / Mies",
+               any(MODEL_FILES + "manifest.json" in u for u in asked) and pg.evaluate("!document.querySelector('.ra-voice').hidden"), asked[:3])
+        expect(f"{NPAGE} 360px: no script errors", not errs, errs[:3])
+        b.close()
+
+# The neural voice (teacher 2026-11-03: Supertonic 3, "Nainen / Mies"): the real model on the CPU (headless Chromium
+# has no WebGPU, so it is chosen in the menu first), on one Finnish lesson: it loads, the first sentence is synthesised
+# and played with the sentence highlighted, the menu has Nainen and Mies, and Mies gives a new synthesis of the same
+# sentence.
+if NPAGE and not MBASE:
+    print(f"SKIP neural voice: no models in {mdir} and {MODELS_URL} cannot be reached")
+if NPAGE and MBASE:
     with sync_playwright() as pw:
         b = launch(pw)
         pg = b.new_page(viewport={"width": 1280, "height": 800})
         errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
-        pg.add_init_script("""window.flTtsGpu = false; window.flTtsWorkers = 1; window.__bufs = [];
+        pg.add_init_script("""window.flTtsGpu = false; window.flTtsWorkers = 1; window.__bufs = []; window.flTtsModelBase = """ + json.dumps(MBASE) + """;
           const cb = AudioContext.prototype.createBuffer; AudioContext.prototype.createBuffer = function (c, n, sr) { window.__bufs.push([n, sr]); return cb.call(this, c, n, sr); };""")
         pg.goto(BASE + NPAGE); pg.wait_for_timeout(400)
         T = i18n.T(i18n.SOURCE)
         opts = pg.evaluate("[...document.querySelectorAll('.ra-voice select option')].map(o => o.textContent)")
         expect(f"neural {NPAGE}: the voice menu is {T('js.ra_female')} / {T('js.ra_male')}", opts == [T("js.ra_female"), T("js.ra_male")], opts)
+        if not pg.evaluate("flSpeech.state().engine === 'neural'"):
+            pg.click(".ra-more"); pg.check(".ra-better input"); pg.keyboard.press("Escape")
         pg.click(".ra-start")
         st = {}
         for _ in range(240):
