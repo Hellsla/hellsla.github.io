@@ -664,10 +664,12 @@ details.level>ol>li:last-child{border-bottom:0}
   .intro-row.no-media{grid-template-columns:minmax(0,var(--measure))}
   .intro-more{max-width:none}.prior ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(18rem,1fr));column-gap:2.5rem}   /* short fixed items, read row by row */
   /* Tutki: the experiments in the reading column, the simulation beside them in a column that stays in view (sticky)
-     while the student works through the experiments that use it; a panel taller than the window scrolls inside itself */
+     while the student works through the experiments that use it. It never scrolls inside itself (Lauri 2026-11-04: a box
+     with its own scrollbar confuses): a panel taller than the window moves with the page until its far edge is in view
+     and sticks there (inquiry.js sets top), so the page scroll alone brings the controls and the picture into view */
   .stage>.lab{--wide:1;display:grid;grid-template-columns:minmax(min(30rem,50%),1fr) minmax(0,40rem);column-gap:2rem;align-items:start}   /* half and half on a small laptop; from 1280 px the 600 px canvas keeps its native size */
   .lab-main{grid-column:1;grid-row:1;min-width:0}
-  .lab-side{grid-column:2;grid-row:1;min-width:0;position:sticky;top:var(--sticky-top);max-height:calc(100vh - var(--sticky-top) - .75rem);overflow-y:auto;overscroll-behavior:auto;scrollbar-width:thin;border-radius:var(--card-radius)}
+  .lab-side{grid-column:2;grid-row:1;min-width:0;position:sticky;top:var(--sticky-top);border-radius:var(--card-radius)}
   .lab-side>.activity{margin:0}
   .lab-side .act-sim>p{margin:0 0 .6rem;font-size:var(--fs-ui);color:var(--ink-2)}
   .lab-side #sim,.inquiry .lab-side #sim{margin:0;padding:.1rem 1rem .8rem}
