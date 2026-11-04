@@ -162,6 +162,8 @@ Magneettikenttä $\overline{B}$ (luku *Magneetit, magneettinen dipoli ja magneet
   <foreignObject x="16" y="9.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}\ \text{paperiin}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/aurora-levi.webp" alt="Leveä vihreä revontulivyö tähtitaivaalla Levitunturin yllä. Alhaalla on kivikkoinen tunturinrinne ja muutamia mäntyjä."><figcaption>Revontulet Levin yllä Kittilässä. Auringosta tulevat varatut hiukkaset kiertävät Maan magneettikentän kenttäviivojen ympäri ja kulkevat niitä pitkin napa-alueille. Yläilmakehässä ne törmäävät happi- ja typpiatomeihin, jotka lähettävät valoa.</figcaption></figure>
+
 ### Voima ei muuta vauhtia: rata on ympyrä
 Koska magneettinen voima on joka hetki kohtisuorassa nopeutta vastaan, se ei tee työtä. Hiukkasen liike-energia ja vauhti pysyvät samoina; vain liikkeen suunta muuttuu. Kun hiukkanen liikkuu kohtisuorassa homogeenista kenttää vastaan, voima on koko ajan yhtä suuri ja osoittaa kohti samaa pistettä. Hiukkanen on silloin tasaisessa ympyräliikkeessä, ja magneettinen voima toimii sen keskeisvoimana (luku *Tasainen ympyräliike ja normaalikiihtyvyys*).
 
@@ -249,6 +251,8 @@ Esimerkiksi protoniin, joka lentää vauhdilla $1{,}0 \cdot 10^{6}\,\text{m/s}$ 
   <foreignObject x="354" y="9.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}\ \text{paperista ulos}$</div></foreignObject>
   <foreignObject x="414" y="321.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{myötäpäivään}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/electron-beam-circle.webp" alt="Pimeässä lasipallossa hehkuu sinivihreä ympyränmuotoinen elektronisuihku. Pallon poikki kulkee mitta-asteikko, ja alhaalla on elektronitykki."><figcaption>Elektronisuihku kulkee ympyrää lasipallossa, jossa on harvaa heliumkaasua. Käämit tuottavat lähes homogeenisen magneettikentän, joka on kohtisuorassa suihkua vastaan. Elektronit törmäävät kaasun atomeihin, jotka hehkuvat, joten rata näkyy.</figcaption></figure>
 
 ## Kaava: Magneettinen voima ja ympyrärata
 Magneettikentässä liikkuvaan varattuun hiukkaseen vaikuttavan magneettisen voiman suuruus on
@@ -401,6 +405,8 @@ Samalla vauhdilla ja varauksella radan säde on suoraan verrannollinen massaan, 
 
 ## Hiukkaskiihdytin
 Hiukkaskiihdyttimessä tarvitaan molempia kenttiä. Koska magneettinen voima ei tee työtä, vain sähkökenttä voi kasvattaa hiukkasen energiaa: aina kun hiukkanen kulkee kiihdytysvälin jännitteen $U$ yli, sen liike-energia kasvaa $qU$:n verran. Magneetit puolestaan taivuttavat ja kohdistavat hiukkassuihkua. Rengaskiihdyttimessä sama hiukkanen kulkee saman kiihdytysvälin läpi yhä uudelleen. Kun vauhti kasvaa, magneettikenttää vahvistetaan, jotta radan säde $r = mv : (qB)$ pysyy samana ja hiukkaset pysyvät renkaassa.
+
+<figure class="unit-photo"><img src="pics/fy7/berkeley-cyclotron.webp" alt="Mustavalkoinen valokuva vuodelta 1939: kaksi miestä seisoo suuren syklotronin sähkömagneetin ja tyhjiökammion vieressä hallissa."><figcaption>Berkeleyn 60 tuuman syklotroni vuonna 1939. Valtava sähkömagneetti taivuttaa hiukkaset ympyräradalle, ja sähkökenttä kiihdyttää niitä joka kierroksella.</figcaption></figure>
 
 Euroopan hiukkasfysiikan tutkimuskeskuksen CERNin LHC-kiihdyttimen rengas on $26{,}7\,\text{km}$ pitkä. Sen $1232$ suprajohtavaa taivutusmagneettia tuottavat enimmillään noin $8{,}3\,\text{T}$:n kentän, ja protonien energia on vuodesta 2022 ollut $6{,}8\,\text{TeV}$ eli noin $1{,}1 \cdot 10^{-6}\,\text{J}$ protonia kohti (CERN 2017, *LHC the guide*; CERN 2022). Protonit kulkevat lähes valon nopeudella, joten kaava $r = mv : (qB)$ ei niille enää sellaisenaan päde, mutta periaate on sama: mitä suurempi energia, sitä voimakkaampi kenttä tai sitä suurempi rengas tarvitaan.
 
