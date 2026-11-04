@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 5b156b425ef70725
+CONTENT-HASH: 9cc05aa0e9ac599c
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] Photo (a house with lights) does not show the series-string wiring the caption mentions; it illustrates context only (acceptable).
 
 ## Checked
-batch delta review: opened theory-1280-1 (Sarjaankytkentä paragraph with new "vastuksen sisäenergiaksi, joka siirtyy lämpönä ympäristöön" beside its figure) and theory-1280-2; changed howto and feedback wording fluent; layout intact.
+batch delta review: rendered the new figure.unit-photo at 390 px and 1280 px from the built page (own captures, plus fig-row-1280 to confirm the existing figures survived); photo loads, no horizontal overflow, caption and credit line legible, alt text matches the image, LaTeX in captions renders ($6{,}3\,\text{V}$, $656\,\text{nm}$, $n = 3$) with units upright; no clipping.

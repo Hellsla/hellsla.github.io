@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4e3bd3e6b6ae5300
+CONTENT-HASH: 8cd606ab836e275a
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] meta.json key_concepts "mittausalue" — "Suurin arvo, jonka mittari näyttää valitulla asennolla" reads as if the meter always shows it — "Suurin arvo, jonka mittari voi näyttää valitulla asennolla."
+- [Minor] fy6-2-theory-1280-2: the breadboard photo sits beside the Yleismittarin virheraja heading, although it illustrates the parallel voltmeter connection in the Ydinajatus text above. The probes are small at 1280; acceptable.
 
 ## Checked
-- batch delta review: the only change is meta.json key_concepts. I captured the "Luvun tärkeät käsitteet" panel from preview/fi-easy/fy6-2.html at 390 and 1280 px and opened it (the review/shots set has no capture of the panel). It sits between the opening and stage 1: term bold over its explanation at 390 px, two columns at 1280 px. Nothing is clipped, there is no horizontal overflow and no KaTeX error. The terms match the lesson's usage, and the explanations are plain, correct S2 Finnish.
+batch delta review: opened fy6-2-theory-1280 captures holding the new unit-photo (floats right, 20 rem wide, no clipping or overflow, figure beside it intact, credit line present, alt text and caption natural Finnish, any quantity in the caption set as LaTeX with its unit) plus the surrounding figures and formulas.

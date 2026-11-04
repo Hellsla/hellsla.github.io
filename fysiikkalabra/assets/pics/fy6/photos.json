@@ -1,0 +1,57 @@
+{
+  "macro-circuit-board.webp": {
+    "title": "Macro circuit board",
+    "creator": "Ingo Dierking",
+    "source": "https://commons.wikimedia.org/wiki/File:Macro_circuit_board.JPG",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1067
+  },
+  "multimeter-breadboard.webp": {
+    "title": "Multimeter probes on breadboard",
+    "creator": "Zeroping",
+    "source": "https://commons.wikimedia.org/wiki/File:Multimeter_probes_on_breadboard.jpg",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1200
+  },
+  "filament-bulb.webp": {
+    "title": "Quad coiled filament incandescent light bulb",
+    "creator": "WClarke",
+    "source": "https://commons.wikimedia.org/wiki/File:Quad_coiled_filament_incandescent_light_bulb.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1200
+  },
+  "christmas-lights.webp": {
+    "title": "Christmas lights 2",
+    "creator": "Daniel Schwen",
+    "source": "https://commons.wikimedia.org/wiki/File:Christmas_lights_2.jpg",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1018
+  },
+  "swallows-power-line.webp": {
+    "title": "Barn Swallows on Power Line",
+    "creator": "Mathieu Landretti",
+    "source": "https://commons.wikimedia.org/wiki/File:Barn_Swallows_on_Power_Line.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "edit": "Pienennetty, WebP",
+    "checked": "2026-11-03",
+    "width": 1600,
+    "height": 1200
+  }
+}

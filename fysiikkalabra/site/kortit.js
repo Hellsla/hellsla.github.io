@@ -4,7 +4,7 @@
    { [card id]: { tila: "osasin" | "kertaa", osasinPutki: n, muokattu: ms } }. "Kertaa myöhemmin" (or "Lisää
    kertauspakkaan") puts a card in the student's review deck (tila "kertaa"); three "Osasin" in a row take it out.
    Nothing is sent anywhere. Each .kc-data element (written by the build) holds the cards and the texts of one place:
-     .kc-section   a lesson after the exit ticket: the chapter's cards as a row (at most 8, then a link), and in
+     .kc-section   a lesson after the exit ticket: the chapter's cards two at a time (row()), and in
                    Teoriatiivistelmä the popovers of bold terms (strong[data-kortti]) and the chips after the summary list
      .kc-deck      a module page: "Kertauspakkasi", the deck's count and chapters, "Kertaa nyt"
      .kc-practice  Sovella itsenäisesti: the deck's cards of the module (the section stays hidden when there are none)
@@ -171,7 +171,43 @@
   };
 
   /* ---------------------------------------------------------------- places */
-  const row = (cards, opts) => { const r = el('div', 'kc-row'); cards.forEach((c) => r.append(card(c, opts))); return r; };
+  /** Two cards side by side (teacher 2026-11-04, "kaksi aina näkyy ja kun sen kääntää tulee uusi"): the rest wait in
+      order; an answered card (Osasin or Kertaa myöhemmin) gives its place to the next one after a moment, so its
+      status can be read. When none are left, "Aloita alusta" starts the same cards again. Never scrolls sideways. */
+  const SLOTS = 2, NEXT_MS = 1400;
+  const row = (cards, opts) => {
+    const box = el('div', 'kc-pair'), r = el('div', 'kc-row'), foot = el('div', 'kc-pair-foot');
+    const left = el('p', 'kc-left'); left.setAttribute('aria-live', 'polite');
+    const again = el('button', 'kc-restart', t('row_restart')); again.type = 'button'; again.hidden = true;
+    foot.append(left, again); box.append(r, foot);
+    let queue = [];
+    const sync = () => {
+      left.textContent = queue.length ? t('row_left', { n: queue.length }) : r.children.length ? '' : t('row_done');
+      again.hidden = !!(queue.length || r.children.length);
+    };
+    const make = (c) => {
+      const node = card(c, Object.assign({}, opts, { onAnswer: () => {
+        node.querySelectorAll('.kc-actions button').forEach((b) => { b.disabled = true; });
+        setTimeout(() => {
+          const had = node.contains(document.activeElement);
+          let to = null;
+          if (queue.length) { const n = make(queue.shift()); n.classList.add('is-new'); node.replaceWith(n); to = n.querySelector('.kc-face'); }
+          else { node.remove(); to = r.querySelector('.kc-face:not([inert])') || (r.children.length ? null : again); }
+          sync();
+          if (had && to) { if (to === again) again.hidden = false; to.focus({ preventScroll: true }); }
+        }, NEXT_MS);
+      } }));
+      return node;
+    };
+    const start = () => {
+      queue = cards.slice(); r.textContent = '';
+      queue.splice(0, SLOTS).forEach((c) => r.append(make(c)));
+      sync();
+    };
+    again.addEventListener('click', () => { start(); const f = r.querySelector('.kc-face'); if (f) f.focus({ preventScroll: true }); });
+    start();
+    return box;
+  };
 
   const lesson = (sec, d) => {
     const byId = Object.fromEntries(d.cards.map((c) => [c.id, c]));
@@ -191,16 +227,10 @@
       mine.forEach((c) => { const li = el('li'); li.append(termButton(c.kasite, c, 'kc-chip')); ul.append(li); });
       box.append(ul); maths(box); box.hidden = false;
     });
-    // the section: the chapter's cards as a row, at most 8
+    // the section: the chapter's cards two at a time, an answered one replaced by the next
     const list = sec.querySelector('dl.kc-dl');
-    const shown = mine.slice(0, 8);
-    const r = row(shown, { base: d.base });
+    const r = row(mine, { base: d.base });
     if (list) list.replaceWith(r); else sec.append(r);
-    if (mine.length > shown.length && d.app) {
-      const p = el('p', 'kc-all'), a = el('a', null, t('show_all', { n: mine.length }));
-      a.href = `${d.app}?moduuli=${encodeURIComponent(d.moduuli)}&luku=${encodeURIComponent(d.luku)}`;
-      p.append(a); r.after(p);
-    }
   };
 
   const deck = (sec, d) => {

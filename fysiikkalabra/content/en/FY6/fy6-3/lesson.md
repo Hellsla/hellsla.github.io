@@ -269,6 +269,8 @@ In a metal, the positive ions form a regular lattice, and the free electrons mov
   <foreignObject x="430" y="271.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/filament-bulb.webp" alt="A clear incandescent bulb close up. A thin coiled wire glows orange-yellow."><figcaption>The thin tungsten filament of an incandescent bulb glows when a current flows through it. Collisions of the electrons with the metal ions turn electric energy into internal energy of the wire, and the wire heats up.</figcaption></figure>
+
 ## Formula: Ohm's law and resistivity
 The resistance is the ratio of the voltage across a component to the current through it:
 ```latex

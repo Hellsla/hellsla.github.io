@@ -204,6 +204,8 @@ A wrongly connected meter changes the circuit a lot. If an ammeter is connected 
   <foreignObject x="396" y="313.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{in series}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/multimeter-breadboard.webp" alt="A red and a black probe touch a breadboard holding a resistor and a red LED."><figcaption>Multimeter probes on a breadboard. When the probes are placed at two points of a circuit, the meter is connected in parallel with the part between them and measures its voltage.</figcaption></figure>
+
 ## Formula: Error limit of a multimeter
 
 ### The error limit given by the manufacturer

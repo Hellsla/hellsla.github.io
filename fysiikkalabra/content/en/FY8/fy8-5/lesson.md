@@ -1316,6 +1316,8 @@ When the measurement results are marked as dots, an electron cloud is formed tha
 
 The cloud is densest at the nucleus, but the most common distance from the nucleus is not zero. A thin spherical shell farther from the nucleus holds more volume than a small sphere right around the nucleus, so a $1\text{s}$ electron is detected most often at a distance of about $0.053\,\text{nm}$. This is the same as the radius of the smallest orbit of the Bohr model: in the wave model the Bohr orbit is the most common distance, not a path travelled by the electron.
 
+<figure class="unit-photo"><img src="pics/fy8/stm-laboratory.webp" alt="A large laboratory instrument whose parts are wrapped in aluminium foil, surrounded by tubes, cables and pumps."><figcaption>A scanning tunnelling microscope in a laboratory in Seoul. Its sharp tip moves just above the surface of a sample, and the tiny electric current between the tip and the surface gives an image of the individual atoms of the surface.</figcaption></figure>
+
 ## Formula: Shells, orbitals and energy levels
 In the hydrogen atom the energy of a state depends only on the principal quantum number $n$, and the wave model gives the same energy levels as the Bohr model:
 ```latex
