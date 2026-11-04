@@ -871,8 +871,13 @@ def build_language(lang):
     # none). No page of the site links to the teacher's portfolio (teacher 2026-11-04: students should not find it)
     about_md = next((f for f in (ROOT / "content" / lang / "tietoa.md", ROOT / "content" / i18n.SOURCE / "tietoa.md") if f.is_file()), None)
     about_body = render_md(about_md.read_text()) if about_md else f'<h1>{T("site.about")}</h1><p class="lead">{T("site.about_lead")}</p>'
+    # in Kiviruukin lukio's colours under the school's logo (teacher 2026-11-04, after his school pages; site.css .about-page)
+    h1 = re.match(r"\s*(<h1>.*?</h1>)", about_body, re.S)
+    hero = ('<header class="about-hero"><img class="about-logo" src="brand/kiviruukin-lukio-valkoinen.svg" alt="Kiviruukin lukio" width="216" height="105">'
+            + (h1.group(1) if h1 else "") + '</header>')
+    about_body = hero + (about_body[h1.end():] if h1 else about_body)
     (out / ABOUT).write_text(page(T("site.about"), f'<article class="about">{about_body}</article>',
-                                  f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead")))
+                                  f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead"), main_class="reading about-page"))
     if SITE.name == "site.tmp":                  # a lesson leaves the live site only with a warning (an annotation on CI)
         live = LIVE / out.relative_to(SITE)
         for old_page in sorted(live.glob("*.html")):
