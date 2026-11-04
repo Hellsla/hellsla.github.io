@@ -35,7 +35,7 @@
 **Formula:** $f = \dfrac{n}{t}$, where $n$ is the number of revolutions in the time $t$
 **Conversions:** $t = 1\,\text{min} = 60\,\text{s}$
 **Substitution:** $f = \dfrac{1500}{60\,\text{s}} = 25\,\tfrac{1}{\text{s}} = 25\,\text{Hz}$
-**Answer:** $25\,\text{Hz}$; the reading $1500$ revolutions per minute is exact, so the result is exactly $25\,\text{Hz}$.
+**Answer:** $25\,\text{Hz}$. The reading $1500$ revolutions per minute is exact, so the result is exactly $25\,\text{Hz}$.
 **Reasonableness:** The grid frequency $50\,\text{Hz}$ would correspond to $3000$ revolutions per minute with one pair of magnetic poles. Half of that gives half the frequency, so such a generator has two pairs of poles so that the frequency of the voltage is $50\,\text{Hz}$.
 
 ## fy7-7-L1-05
