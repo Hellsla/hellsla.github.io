@@ -464,7 +464,7 @@
   // task's Vastaus and Näytä ratkaisu open after one Tarkista with a number (part 1); a written task's answer, an
   // exercise drawn on paper and a Sovella itsenäisesti task's model answer and rubric after the tick "Olen tehnyt
   // ratkaisun" (label.solved; an inquiry explanation's own tick is in inquiry.js). A locked control stays in view,
-  // dimmed, with the reason beside it, so the student knows the solution is there. Nothing is kept: a reload locks
+  // dimmed, with a lock symbol beside it (the reason as hover and screen-reader text), so the student knows the solution is there. Nothing is kept: a reload locks
   // again. ?ratkaisut=1 (the teacher) opens every lock on the page.
   const OPEN_ALL = (() => { try { return new URLSearchParams(location.search).get('ratkaisut') === '1'; } catch (e) { return false; } })();
   window.flSolutionsOpen = OPEN_ALL;
@@ -477,10 +477,16 @@
     const sum = e.target.closest && e.target.closest('summary');
     if (sum && sum.parentElement.dataset.locked && sum.parentElement.firstElementChild === sum) e.preventDefault();
   }, true);
+  // Only the lock symbol shows; the reason stays as hover text (title) and as hidden text for screen readers (teacher 2026-11-04).
+  const lockNote = window.flLockNote = (text, n) => {
+    n = n || document.createElement('span'); n.className = 'lock-note'; n.title = text;
+    const t = document.createElement('span'); t.className = 'visually-hidden'; t.textContent = text; n.replaceChildren(t);
+    return n;
+  };
   const lockBoxes = (boxes, why) => {
     if (OPEN_ALL || !boxes.length) return () => {};
     const notes = [], buttons = [];
-    const note = () => { const n = document.createElement('span'); n.className = 'lock-note'; n.textContent = msg(why); notes.push(n); return n; };
+    const note = () => { const n = lockNote(msg(why)); notes.push(n); return n; };
     const head = boxes[0].parentElement.querySelector(':scope > .ex-head');
     boxes.forEach((d) => {
       d.open = false; d.dataset.locked = '1';

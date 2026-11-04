@@ -167,7 +167,7 @@
     {
       "id": "fy1-8-L2-05",
       "level": 2,
-      "text": "Oppilas tutkii, vierivätkö kevyt ($50\\,\\text{g}$) ja raskas ($200\\,\\text{g}$) pallo saman rinteen alas yhtä nopeasti. Hän muuttaa vain massaa ja mittaa kummallakin pallolla viisi kulkuaikaa käsikellolla. Hän päättelee: ”Raskas pallo on nopeampi, koska sen keskimääräinen aika on lyhyempi.” Laske kummankin pallon aikojen keskiarvo ja epävarmuus (puolet vaihteluvälistä). Kuinka monta prosenttia keskiarvojen erotus on epävarmuudesta? Päättele lisäksi, tukeeko aineisto oppilaan päätelmää.",
+      "text": "Oppilas tutkii, vierivätkö kevyt ($50\\,\\text{g}$) ja raskas ($200\\,\\text{g}$) pallo saman rinteen alas yhtä nopeasti. Hän muuttaa vain massaa ja mittaa kummallakin pallolla viisi kulkuaikaa käsikellolla.\n\nHän päättelee: ”Raskas pallo on nopeampi, koska sen keskimääräinen aika on lyhyempi.”\n\nLaske kummankin pallon aikojen keskiarvo ja epävarmuus (puolet vaihteluvälistä). Kuinka monta prosenttia keskiarvojen erotus on epävarmuudesta? Päättele lisäksi, tukeeko aineisto oppilaan päätelmää.",
       "kind": [
         "data",
         "error"
@@ -245,7 +245,7 @@
     {
       "id": "fy1-8-L2-07",
       "level": 2,
-      "text": "Oppilas mittaa leluauton paikan eri ajanhetkillä (taulukko). Hän piirtää kuvaajan, jossa matka $s$ on vaaka-akselilla ja aika $t$ pystyakselilla, eikä akseleille ole merkitty suureita eikä yksiköitä. Hän lukee sovitetun suoran kulmakertoimeksi $3{,}3$ ja ilmoittaa sen auton nopeudeksi. Piirrä pisteisiin sovitettu suora oikein päin ($t$ vaaka-akselilla) ja lue sen kulmakerroin kahdesta suoran pisteestä, jotka ovat selvästi erillään. Mikä on auton nopeus? Vastaa yksikössä m/s ja selitä, mitä oppilaan luku $3{,}3$ oikeasti kuvaa.",
+      "text": "Oppilas mittaa leluauton paikan eri ajanhetkillä (taulukko). Hän piirtää kuvaajan, jossa matka $s$ on vaaka-akselilla ja aika $t$ pystyakselilla, eikä akseleille ole merkitty suureita eikä yksiköitä. Hän lukee sovitetun suoran kulmakertoimeksi $3{,}3$ ja ilmoittaa sen auton nopeudeksi.\n\nPiirrä pisteisiin sovitettu suora oikein päin ($t$ vaaka-akselilla) ja lue sen kulmakerroin kahdesta suoran pisteestä, jotka ovat selvästi erillään. Mikä on auton nopeus? Vastaa yksikössä m/s ja selitä, mitä oppilaan luku $3{,}3$ oikeasti kuvaa.",
       "kind": [
         "data",
         "graph",
@@ -313,7 +313,7 @@
     {
       "id": "fy1-8-L3-04",
       "level": 3,
-      "text": "Oppilas tutki, vaikuttaako pallon massa vierimisaikaan (vrt. kevyen ja raskaan pallon mittaukset). Viiden toiston tulokset ovat keskiarvoina $\\bar{t}_{50} = 3{,}12\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ ja $\\bar{t}_{200} = 3{,}08\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ (epävarmuus on puolet vaihteluvälistä). Käsikellon ajanoton epävarmuudeksi arvioitiin yksittäisessä mittauksessa $0{,}15\\,\\text{s}$. Pohdinnassa lukee: ”Koe onnistui hyvin. Raskaan pallon keskiarvo on pienempi, joten hypoteesi oli oikein. Virheitä oli vähän.” Kuinka monta kertaa käsiajanoton epävarmuus $0{,}15\\,\\text{s}$ on keskiarvojen erotus? Perustele sen avulla ja tulosten väleillä, mitkä pohdinnan väitteet aineisto tukee ja mitkä ei, ja kirjoita pohdintaan kaksi parempaa lausetta.",
+      "text": "Oppilas tutki, vaikuttaako pallon massa vierimisaikaan (vrt. kevyen ja raskaan pallon mittaukset). Viiden toiston tulokset ovat keskiarvoina $\\bar{t}_{50} = 3{,}12\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ ja $\\bar{t}_{200} = 3{,}08\\,\\text{s} \\pm 0{,}04\\,\\text{s}$ (epävarmuus on puolet vaihteluvälistä). Käsikellon ajanoton epävarmuudeksi arvioitiin yksittäisessä mittauksessa $0{,}15\\,\\text{s}$.\n\nPohdinnassa lukee: ”Koe onnistui hyvin. Raskaan pallon keskiarvo on pienempi, joten hypoteesi oli oikein. Virheitä oli vähän.”\n\nKuinka monta kertaa käsiajanoton epävarmuus $0{,}15\\,\\text{s}$ on keskiarvojen erotus? Perustele sen avulla ja tulosten väleillä, mitkä pohdinnan väitteet aineisto tukee ja mitkä ei, ja kirjoita pohdintaan kaksi parempaa lausetta.",
       "kind": [
         "data",
         "reasoning",
@@ -346,7 +346,7 @@
     {
       "id": "fy1-8-L3-05",
       "level": 3,
-      "text": "Oppilas suunnittelee tutkimuksen kysymykseen ”Riippuuko veden jäähtymisnopeus astian materiaalista?” Hän kaataa yhtä monta desilitraa $80\\,{}^\\circ\\text{C}$ vettä kolmeen samankokoiseen astiaan (lasi, metalli, muovi) ja lukee lämpötilan joka minuutti. Riippumaton (muutettava) muuttuja on astian materiaali ja riippuva muuttuja lämpötilan lasku. Esikokeen lasiastian lämpötilat ovat taulukossa. Arvioi alun jäähtymisnopeus taulukon kolmen ensimmäisen minuutin muutoksesta. Lämpötilan laskun $\\Delta T_\\text{lasku}$ epävarmuudeksi arvioidaan $1{,}0\\,\\text{K}$, ja laskun suhteellisen epävarmuuden halutaan olevan enintään $5{,}0\\,\\%$. Oleta, että hitaimmin jäähtyvässäkin astiassa alun nopeus on suunnilleen sama kuin lasiastiassa. Kuinka pitkä mittausjakso vähintään pitää suunnitella? Nimeä lisäksi kolme vakioitavaa suuretta perusteluineen ja kerro, miten kolmen astian jäähtymiskäyriä verrataan.",
+      "text": "Oppilas suunnittelee tutkimuksen kysymykseen ”Riippuuko veden jäähtymisnopeus astian materiaalista?” Hän kaataa yhtä monta desilitraa $80\\,{}^\\circ\\text{C}$ vettä kolmeen samankokoiseen astiaan (lasi, metalli, muovi) ja lukee lämpötilan joka minuutti. Riippumaton (muutettava) muuttuja on astian materiaali ja riippuva muuttuja lämpötilan lasku.\n\nEsikokeen lasiastian lämpötilat ovat taulukossa. Arvioi alun jäähtymisnopeus taulukon kolmen ensimmäisen minuutin muutoksesta. Lämpötilan laskun $\\Delta T_\\text{lasku}$ epävarmuudeksi arvioidaan $1{,}0\\,\\text{K}$, ja laskun suhteellisen epävarmuuden halutaan olevan enintään $5{,}0\\,\\%$. Oleta, että hitaimmin jäähtyvässäkin astiassa alun nopeus on suunnilleen sama kuin lasiastiassa.\n\nKuinka pitkä mittausjakso vähintään pitää suunnitella? Nimeä lisäksi kolme vakioitavaa suuretta perusteluineen ja kerro, miten kolmen astian jäähtymiskäyriä verrataan.",
       "kind": [
         "data",
         "model",

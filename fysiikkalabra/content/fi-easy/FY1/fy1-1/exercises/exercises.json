@@ -130,7 +130,7 @@
     {
       "id": "fy1-1-L2-05",
       "level": 2,
-      "text": "Taulukossa on planeettojen keskimääräinen etäisyys $r$ Auringosta tähtitieteellisinä yksikköinä. Yksi tähtitieteellinen yksikkö on $1\\,\\text{AU}$ eli Maan etäisyys Auringosta. Aurinkokunnan pienoismalli piirretään käytävälle. Neptunus on mallissa $2{,}0\\,\\text{m}$ päässä Auringosta, ja kaikki etäisyydet pienenevät samalla kertoimella. Kuinka kaukana Auringosta Jupiter on pienoismallissa? Anna vastaus senttimetreinä. Mikä planeetta on pienoismallissa lähimpänä käytävän kohtaa, joka on $1{,}0\\,\\text{m}$ päässä Auringosta?",
+      "text": "Taulukossa on planeettojen keskimääräinen etäisyys $r$ Auringosta tähtitieteellisinä yksikköinä. Yksi tähtitieteellinen yksikkö on $1\\,\\text{AU}$ eli Maan etäisyys Auringosta.\n\nAurinkokunnan pienoismalli piirretään käytävälle. Neptunus on mallissa $2{,}0\\,\\text{m}$ päässä Auringosta, ja kaikki etäisyydet pienenevät samalla kertoimella.\n\nKuinka kaukana Auringosta Jupiter on pienoismallissa? Anna vastaus senttimetreinä. Mikä planeetta on pienoismallissa lähimpänä käytävän kohtaa, joka on $1{,}0\\,\\text{m}$ päässä Auringosta?",
       "kind": [
         "data",
         "model"
@@ -297,7 +297,7 @@
     {
       "id": "fy1-1-L3-04",
       "level": 3,
-      "text": "Arvioi, kuinka monta sadepisaraa putoaa jalkapallokentälle yhden sadekuuron aikana. Käytä näitä oletuksia. Kuuro kasvattaa kentälle kertyvän vesikerroksen paksuutta nopeudella $5{,}0\\,\\text{mm/h}$ ja kestää $10\\,\\text{min}$. Kentän ala on $6{,}0\\cdot10^{3}\\,\\text{m}^2$. Jokainen pisara on pallo, jonka halkaisija on $2{,}0\\,\\text{mm}$. Pallon tilavuus on $V = 4\\pi r^{3}/3$. Kuinka monta pisaraa kentälle putoaa miljardeina? Mikä oletuksista vaikuttaa tulokseen eniten, jos sen arvo on $20\\,\\%$ liian suuri? Selitä, miksi. Perustele laskemalla.",
+      "text": "Arvioi, kuinka monta sadepisaraa putoaa jalkapallokentälle yhden sadekuuron aikana.\n\nKäytä näitä oletuksia. Kuuro kasvattaa kentälle kertyvän vesikerroksen paksuutta nopeudella $5{,}0\\,\\text{mm/h}$ ja kestää $10\\,\\text{min}$. Kentän ala on $6{,}0\\cdot10^{3}\\,\\text{m}^2$. Jokainen pisara on pallo, jonka halkaisija on $2{,}0\\,\\text{mm}$. Pallon tilavuus on $V = 4\\pi r^{3}/3$.\n\nKuinka monta pisaraa kentälle putoaa miljardeina? Mikä oletuksista vaikuttaa tulokseen eniten, jos sen arvo on $20\\,\\%$ liian suuri? Selitä, miksi. Perustele laskemalla.",
       "kind": [
         "reasoning",
         "model"

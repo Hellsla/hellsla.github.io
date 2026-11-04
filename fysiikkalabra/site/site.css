@@ -438,7 +438,7 @@ li.ex-js>details.answer:not([open]),li.ex-js>details.solution:not([open]){margin
 /* try first (teacher 2026-11-03, lesson.js part 8, inquiry.js): a locked control stays in view, dimmed, with its reason */
 .ex-toggle:disabled{color:var(--ink-2);opacity:.7;cursor:not-allowed;text-decoration:none}
 .lock-note{display:inline-block;font:400 var(--fs-small) var(--sans);color:var(--ink-2)}
-.lock-note::before{content:"🔒\FE0E  ";font-size:.85em}
+.lock-note{cursor:help}.lock-note::before{content:"🔒\FE0E";content:"🔒\FE0E"/"";font-size:1.4em;line-height:1;vertical-align:-.1em}
 summary .lock-note{margin-left:.6rem}
 details[data-locked]>summary{cursor:not-allowed;color:var(--ink-2)}
 .show-model[aria-disabled=true]{opacity:.6;cursor:not-allowed}.choice-actions .lock-note{align-self:center}

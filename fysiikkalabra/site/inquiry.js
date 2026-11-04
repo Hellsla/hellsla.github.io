@@ -327,8 +327,8 @@
     const tick = ex.querySelector('.drew input'), draw = ex.classList.contains('draw');
     const OPEN = !!window.flSolutionsOpen;
     const ready = () => OPEN || !tick || tick.checked;
-    const lockNote = document.createElement('span'); lockNote.className = 'lock-note'; lockNote.textContent = msg('locked_done');
-    if (draw) lockNote.textContent = msg('locked_drawn');
+    const lockText = msg(draw ? 'locked_drawn' : 'locked_done');
+    const lockNote = window.flLockNote ? window.flLockNote(lockText) : Object.assign(document.createElement('span'), { className: 'lock-note', textContent: lockText });
     const mark = () => {
       if (ready()) { btn.removeAttribute('aria-disabled'); lockNote.remove(); }
       else { btn.setAttribute('aria-disabled', 'true'); btn.after(lockNote); }

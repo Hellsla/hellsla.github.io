@@ -240,7 +240,7 @@
     {
       "id": "fy1-4-L2-07",
       "level": 2,
-      "text": "From each of two uniform metals, A and B, objects of different volumes made of the same material were produced, and the mass of each was weighed. Plot the data points of both materials in the same coordinate system and fit a separate line to each. How many times greater is the slope of the line of B than that of A? What does the slope mean in this graph, and which material is denser?",
+      "text": "From each of two uniform metals, A and B, objects of different volumes made of the same material were produced, and the mass of each was weighed.\n\nPlot the data points of both materials in the same coordinate system and fit a separate line to each. How many times greater is the slope of the line of B than that of A? What does the slope mean in this graph, and which material is denser?",
       "kind": [
         "data",
         "graph",
@@ -290,7 +290,7 @@
     {
       "id": "fy1-4-L3-01",
       "level": 3,
-      "text": "A student measured the position $s$ of a trolley as a function of time $t$, but started the stopwatch only when the trolley had already travelled some distance from the start of the track. The line fitted to the data points is $s = 0.85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0.40\\,\\text{m}$, where $s$ is measured from the start of the track. What time on the stopwatch corresponds to the moment when the trolley was at the start of the track ($s = 0$)? Give the answer in seconds with its sign and justify the sign.",
+      "text": "A student measured the position $s$ of a trolley as a function of time $t$, but started the stopwatch only when the trolley had already travelled some distance from the start of the track.\n\nThe line fitted to the data points is $s = 0.85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0.40\\,\\text{m}$, where $s$ is measured from the start of the track.\n\nWhat time on the stopwatch corresponds to the moment when the trolley was at the start of the track ($s = 0$)? Give the answer in seconds with its sign and justify the sign.",
       "answer": -0.47,
       "unit": "s",
       "tolerance": 0.02
@@ -306,7 +306,7 @@
     {
       "id": "fy1-4-L3-03",
       "level": 3,
-      "text": "Two points are read from the line $y = 2.0\\,x$, and the reading error of each $y$ value is at most $0.1$ units. The slope is calculated either from the points $x = 4.0$ and $x = 4.5$ or from the points $x = 1.0$ and $x = 9.0$. How many times greater is the relative uncertainty of the slope when it is calculated from the close points? Use the worst case, in which the reading errors add up in the difference $\\Delta y$. Justify why points far apart are the better choice.",
+      "text": "Two points are read from the line $y = 2.0\\,x$, and the reading error of each $y$ value is at most $0.1$ units. The slope is calculated either from the points $x = 4.0$ and $x = 4.5$ or from the points $x = 1.0$ and $x = 9.0$.\n\nHow many times greater is the relative uncertainty of the slope when it is calculated from the close points? Use the worst case, in which the reading errors add up in the difference $\\Delta y$. Justify why points far apart are the better choice.",
       "answer": 16,
       "unit": "times",
       "tolerance": 0.02

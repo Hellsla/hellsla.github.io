@@ -130,7 +130,7 @@
     {
       "id": "fy1-5-L2-05",
       "level": 2,
-      "text": "The motion of a walker was filmed, and the position $s$ of the walker from the starting mark was measured by video analysis as a function of time $t$. The walker moves uniformly, and the points deviate from a straight line because of measurement uncertainty. Draw a graph of the points and fit a straight line to them. Determine the speed of the walker from the slope of the line and use it to predict the position of the walker at time $12\\,\\text{s}$. How many metres from the starting mark is the walker then? Justify why the prediction is a model value and not a measurement.",
+      "text": "The motion of a walker was filmed, and the position $s$ of the walker from the starting mark was measured by video analysis as a function of time $t$. The walker moves uniformly, and the points deviate from a straight line because of measurement uncertainty.\n\nDraw a graph of the points and fit a straight line to them. Determine the speed of the walker from the slope of the line and use it to predict the position of the walker at time $12\\,\\text{s}$. How many metres from the starting mark is the walker then? Justify why the prediction is a model value and not a measurement.",
       "kind": [
         "data",
         "graph",
@@ -188,7 +188,7 @@
     {
       "id": "fy1-5-L2-07",
       "level": 2,
-      "text": "A toy car drives uniformly at about $0.80\\,\\text{m/s}$. The travel time of the car is measured by hand, and the uncertainty of the timing is about $0.2\\,\\text{s}$ regardless of the length of the time measured. You are planning a measurement of the speed in which the relative uncertainty of the time must be at most $2.0\\,\\%$. Assume that the distance is measured so accurately that its uncertainty does not affect the result. What is the minimum distance the car must travel during the measurement? Explain why a long distance improves the measurement.",
+      "text": "A toy car drives uniformly at about $0.80\\,\\text{m/s}$. The travel time of the car is measured by hand, and the uncertainty of the timing is about $0.2\\,\\text{s}$ regardless of the length of the time measured.\n\nYou are planning a measurement of the speed in which the relative uncertainty of the time must be at most $2.0\\,\\%$. Assume that the distance is measured so accurately that its uncertainty does not affect the result.\n\nWhat is the minimum distance the car must travel during the measurement? Explain why a long distance improves the measurement.",
       "kind": [
         "experiment",
         "model"
@@ -202,7 +202,7 @@
     {
       "id": "fy1-5-L3-01",
       "level": 3,
-      "text": "The Voyager 2 probe crossed the heliopause on 5 November 2018 at a distance of $119.7\\,\\text{AU}$ from the Sun (NASA/JPL), and its speed relative to the Sun is $15.341\\,\\text{km/s}$ (JPL). Assume the speed is constant. How many days after the heliopause crossing is the probe, according to the model, $150\\,\\text{AU}$ from the Sun? Use the values $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$ and $1\\,\\text{day} = 86\\,400\\,\\text{s}$. The result is a model value.",
+      "text": "The Voyager 2 probe crossed the heliopause on 5 November 2018 at a distance of $119.7\\,\\text{AU}$ from the Sun (NASA/JPL), and its speed relative to the Sun is $15.341\\,\\text{km/s}$ (JPL). Assume the speed is constant.\n\nHow many days after the heliopause crossing is the probe, according to the model, $150\\,\\text{AU}$ from the Sun? Use the values $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$ and $1\\,\\text{day} = 86\\,400\\,\\text{s}$. The result is a model value.",
       "answer": 3420,
       "unit": "days",
       "tolerance": 0.02
@@ -210,7 +210,7 @@
     {
       "id": "fy1-5-L3-02",
       "level": 3,
-      "text": "According to the model, Voyager 2 is at a distance of $150\\,\\text{AU}$ from the Earth. A radio signal travels in vacuum uniformly at $299\\,792\\,458\\,\\text{m/s}$. How many hours pass from the moment a command leaves the Earth to the moment the reply of the probe reaches the Earth? The motion of the probe and its processing time for the reply are ignored. Use the value $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$. Justify why the motion can be ignored.",
+      "text": "According to the model, Voyager 2 is at a distance of $150\\,\\text{AU}$ from the Earth. A radio signal travels in vacuum uniformly at $299\\,792\\,458\\,\\text{m/s}$.\n\nHow many hours pass from the moment a command leaves the Earth to the moment the reply of the probe reaches the Earth? The motion of the probe and its processing time for the reply are ignored. Use the value $1\\,\\text{AU} = 149\\,597\\,870.7\\,\\text{km}$. Justify why the motion can be ignored.",
       "answer": 41.6,
       "unit": "h",
       "tolerance": 0.02
@@ -226,7 +226,7 @@
     {
       "id": "fy1-5-L3-04",
       "level": 3,
-      "text": "The position $s$ of a cyclist from the start of the track was measured by video analysis as a function of time $t$. Draw a graph of the points. The cyclist's speed changes partway, so the motion cannot be modelled with a single straight line. Find in the table the moment when the speed changes, and model the motion as two uniform parts. Use the model to calculate the cyclist's average speed in the interval $5.0\\,\\text{s} - 35\\,\\text{s}$, where the average speed is the distance travelled in the interval divided by the length of the interval. The moment $35\\,\\text{s}$ is not in the table. Why is the average speed not the mean of the speeds of the parts?",
+      "text": "The position $s$ of a cyclist from the start of the track was measured by video analysis as a function of time $t$. Draw a graph of the points.\n\nThe cyclist's speed changes partway, so the motion cannot be modelled with a single straight line. Find in the table the moment when the speed changes, and model the motion as two uniform parts.\n\nUse the model to calculate the cyclist's average speed in the interval $5.0\\,\\text{s} - 35\\,\\text{s}$, where the average speed is the distance travelled in the interval divided by the length of the interval. The moment $35\\,\\text{s}$ is not in the table. Why is the average speed not the mean of the speeds of the parts?",
       "kind": [
         "data",
         "graph",
@@ -276,7 +276,7 @@
     {
       "id": "fy1-5-L3-05",
       "level": 3,
-      "text": "A fast bullet is filmed with a camera that takes a picture every $0.010\\,\\text{s}$. The position $s$ of the bullet from the starting point, measured from the pictures, is in the table. The speed of the bullet is constant during this time. Calculate the speed of the bullet. A $(t, s)$ graph is drawn in which $1.0\\,\\text{s}$ on the horizontal axis is $10\\,\\text{cm}$ and $1.0\\,\\text{m}$ on the vertical axis is $1.0\\,\\text{cm}$. How many centimetres does the line rise during one imaging interval, and how long is the imaging interval on the horizontal axis? Use these to justify why the line looks almost vertical but cannot be exactly vertical.",
+      "text": "A fast bullet is filmed with a camera that takes a picture every $0.010\\,\\text{s}$. The position $s$ of the bullet from the starting point, measured from the pictures, is in the table. The speed of the bullet is constant during this time. Calculate the speed of the bullet.\n\nA $(t, s)$ graph is drawn in which $1.0\\,\\text{s}$ on the horizontal axis is $10\\,\\text{cm}$ and $1.0\\,\\text{m}$ on the vertical axis is $1.0\\,\\text{cm}$.\n\nHow many centimetres does the line rise during one imaging interval, and how long is the imaging interval on the horizontal axis? Use these to justify why the line looks almost vertical but cannot be exactly vertical.",
       "kind": [
         "data",
         "graph",

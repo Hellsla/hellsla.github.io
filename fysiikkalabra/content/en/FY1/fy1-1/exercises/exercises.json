@@ -130,7 +130,7 @@
     {
       "id": "fy1-1-L2-05",
       "level": 2,
-      "text": "The table shows the mean distance $r$ of the planets from the Sun in astronomical units; one astronomical unit is $1\\,\\text{AU}$, the distance from the Earth to the Sun. A scale model of the solar system is drawn in a corridor so that Neptune is $2.0\\,\\text{m}$ from the Sun and all distances are reduced by the same factor. How far from the Sun is Jupiter in the model? Give the answer in centimetres. Which planet is closest in the model to the point of the corridor that is $1.0\\,\\text{m}$ from the Sun?",
+      "text": "The table shows the mean distance $r$ of the planets from the Sun in astronomical units; one astronomical unit is $1\\,\\text{AU}$, the distance from the Earth to the Sun.\n\nA scale model of the solar system is drawn in a corridor so that Neptune is $2.0\\,\\text{m}$ from the Sun and all distances are reduced by the same factor.\n\nHow far from the Sun is Jupiter in the model? Give the answer in centimetres. Which planet is closest in the model to the point of the corridor that is $1.0\\,\\text{m}$ from the Sun?",
       "kind": [
         "data",
         "model"
@@ -297,7 +297,7 @@
     {
       "id": "fy1-1-L3-04",
       "level": 3,
-      "text": "Estimate how many raindrops fall on a football pitch during one rain shower. Assumptions: the shower increases the thickness of the water layer on the pitch at the rate $5.0\\,\\text{mm/h}$ and lasts $10\\,\\text{min}$, the area of the pitch is $6.0\\cdot10^{3}\\,\\text{m}^2$ and every drop is a sphere with a diameter of $2.0\\,\\text{mm}$. The volume of a sphere is $V = 4\\pi r^{3}/3$. How many drops fall on the pitch, in billions? Which of the assumptions affects the result most if its value is $20\\,\\%$ too large, and why? Justify by calculation.",
+      "text": "Estimate how many raindrops fall on a football pitch during one rain shower.\n\nAssumptions: the shower increases the thickness of the water layer on the pitch at the rate $5.0\\,\\text{mm/h}$ and lasts $10\\,\\text{min}$, the area of the pitch is $6.0\\cdot10^{3}\\,\\text{m}^2$ and every drop is a sphere with a diameter of $2.0\\,\\text{mm}$. The volume of a sphere is $V = 4\\pi r^{3}/3$.\n\nHow many drops fall on the pitch, in billions? Which of the assumptions affects the result most if its value is $20\\,\\%$ too large, and why? Justify by calculation.",
       "kind": [
         "reasoning",
         "model"

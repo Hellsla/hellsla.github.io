@@ -240,7 +240,7 @@
     {
       "id": "fy1-4-L2-07",
       "level": 2,
-      "text": "Metalleista A ja B kummastakin tehtiin eri kokoisia kappaleita. Kummankin metallin kappaleet ovat tasalaatuisia eli samaa ainetta joka kohdasta. Jokaisen kappaleen massa punnittiin. Piirrä kummankin aineen mittauspisteistä kuvaaja samaan koordinaatistoon. Sovita kumpaankin oma suora. Kuinka monta kertaa suurempi on B:n suoran kulmakerroin kuin A:n? Mitä kulmakerroin tässä kuvaajassa tarkoittaa? Kumpi aine on tiheämpi?",
+      "text": "Metalleista A ja B kummastakin tehtiin eri kokoisia kappaleita. Kummankin metallin kappaleet ovat tasalaatuisia eli samaa ainetta joka kohdasta. Jokaisen kappaleen massa punnittiin.\n\nPiirrä kummankin aineen mittauspisteistä kuvaaja samaan koordinaatistoon. Sovita kumpaankin oma suora. Kuinka monta kertaa suurempi on B:n suoran kulmakerroin kuin A:n? Mitä kulmakerroin tässä kuvaajassa tarkoittaa? Kumpi aine on tiheämpi?",
       "kind": [
         "data",
         "graph",
@@ -290,7 +290,7 @@
     {
       "id": "fy1-4-L3-01",
       "level": 3,
-      "text": "Oppilas mittasi kärryn paikkaa $s$ ajan $t$ funktiona. Hän käynnisti sekuntikellon vasta sitten, kun kärry oli jo kulkenut radan alusta. Mittauspisteisiin sovitettu suora on $s = 0{,}85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0{,}40\\,\\text{m}$. Tässä $s$ mitataan radan alusta. Mikä aika sekuntikellon mukaan vastaa hetkeä, jolloin kärry oli radan alussa ($s = 0$)? Anna vastaus etumerkkeineen sekunteina ja perustele etumerkki.",
+      "text": "Oppilas mittasi kärryn paikkaa $s$ ajan $t$ funktiona. Hän käynnisti sekuntikellon vasta sitten, kun kärry oli jo kulkenut radan alusta.\n\nMittauspisteisiin sovitettu suora on $s = 0{,}85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0{,}40\\,\\text{m}$. Tässä $s$ mitataan radan alusta.\n\nMikä aika sekuntikellon mukaan vastaa hetkeä, jolloin kärry oli radan alussa ($s = 0$)? Anna vastaus etumerkkeineen sekunteina ja perustele etumerkki.",
       "answer": -0.47,
       "unit": "s",
       "tolerance": 0.02
@@ -306,7 +306,7 @@
     {
       "id": "fy1-4-L3-03",
       "level": 3,
-      "text": "Suoralta $y = 2{,}0\\,x$ luetaan kaksi pistettä. Kummankin $y$-arvon lukemavirhe on enintään $0{,}1$ yksikköä. Kulmakerroin lasketaan joko pisteistä $x = 4{,}0$ ja $x = 4{,}5$ tai pisteistä $x = 1{,}0$ ja $x = 9{,}0$. Kuinka monta kertaa suurempi on kulmakertoimen suhteellinen epävarmuus, kun se lasketaan lähekkäisistä pisteistä? Käytä pahinta tapausta, jossa lukemavirheet summautuvat erotukseen $\\Delta y$. Perustele, miksi kaukana toisistaan olevat pisteet ovat parempi valinta.",
+      "text": "Suoralta $y = 2{,}0\\,x$ luetaan kaksi pistettä. Kummankin $y$-arvon lukemavirhe on enintään $0{,}1$ yksikköä. Kulmakerroin lasketaan joko pisteistä $x = 4{,}0$ ja $x = 4{,}5$ tai pisteistä $x = 1{,}0$ ja $x = 9{,}0$.\n\nKuinka monta kertaa suurempi on kulmakertoimen suhteellinen epävarmuus, kun se lasketaan lähekkäisistä pisteistä? Käytä pahinta tapausta, jossa lukemavirheet summautuvat erotukseen $\\Delta y$. Perustele, miksi kaukana toisistaan olevat pisteet ovat parempi valinta.",
       "answer": 16,
       "unit": "kertaa",
       "tolerance": 0.02
