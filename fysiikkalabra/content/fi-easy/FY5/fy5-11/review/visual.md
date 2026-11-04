@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e92a25f237bdd1db
+CONTENT-HASH: 5ff2de8d2affde03
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] hero — the straight crest rows on the open sea are faint at 390 px; the half-circles in the basin carry the point well, so this is optional.
+- [Minor] figure.unit-photo (ripple-tank-single-slit) — the photo is soft-focus, and at 390 px the slit itself is hard to locate. The straight crests on the right and the arcs on the left read only faintly, so the caption claims more than a phone reader can see — optionally a sharper or tighter crop, or a caption phrase saying where the slit is ("raon kohta on keskellä tumma").
 
 ## Checked
-- Delta review, category illustration: only the hero (`data-fig="hero"`) and its aria-label changed.
-- fy5-11-top-390.png and fy5-11-intro-1280.png (hero at 390 px and 1280 px, fi-easy page): a harbour with a breakwater gap, circular wavefronts spreading into the basin and corners. Layout survived: the picture sits in the 16:8 frame, nothing clipped, no horizontal overflow, the first screen is unchanged around it.
-- Hero SVG source is identical in fi, en and fi-easy (checked by comparing the SVG body); the screenshots are the same picture. No text in the picture; flat vector style and palette match the other FY5 openings.
-- Alt text compared with the picture item by item and read in its own language: it matches what is drawn, nothing is claimed that is missing, and it does not give away the chapter's answer.
-- The picture fits the opening question in the Pohdinta; nothing physically misleading seen (science review carried over).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-11.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.

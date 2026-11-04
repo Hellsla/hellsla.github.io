@@ -1,7 +1,7 @@
 {
   "id": "fy5-4",
   "course": "FY5",
-  "title": "Tasainen ympyräliike ja normaalikiihtyvyys",
+  "title": "Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö",
   "goals": [
     "LOPS FY5: tasainen ympyräliike ja normaalikiihtyvyys",
     "Täsmennys: normaalikiihtyvyyden suunta ja suuruus a_n = v²/r; Newtonin 2. laki tasaisessa ympyräliikkeessä (voimakuvio, kokonaisvoima keskipistettä kohti)"

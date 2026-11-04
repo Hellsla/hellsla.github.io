@@ -1,7 +1,7 @@
 {
   "id": "fy5-8",
   "course": "FY5",
-  "title": "Harmoninen voima ja jousen potentiaalienergia",
+  "title": "Jousivoima ja jousen energia",
   "goals": [
     "LOPS FY5: harmoninen voima",
     "LOPS FY5: harmonisen voiman potentiaalienergia",
@@ -14,6 +14,20 @@
     "harmoninen voima",
     "jousivakio",
     "jousen potentiaalienergia"
+  ],
+  "key_concepts": [
+    {
+      "term": "harmoninen voima",
+      "explain": "Voima, joka osoittaa aina kohti tasapainoasemaa ja kasvaa samassa suhteessa kuin poikkeama."
+    },
+    {
+      "term": "jousivakio",
+      "explain": "Kertoo, kuinka jäykkä jousi on: kuinka suuri voima tarvitaan, kun jousta venytetään metrin verran."
+    },
+    {
+      "term": "jousen potentiaalienergia",
+      "explain": "Energia, joka on varastoitunut venytettyyn tai puristettuun jouseen."
+    }
   ],
   "sim": true,
   "solutions": "all",

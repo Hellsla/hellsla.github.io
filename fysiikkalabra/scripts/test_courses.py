@@ -67,7 +67,7 @@ c2 = json.loads((T / "curriculum.json").read_text()); del c2["FY4"]["tavoitteet"
 code, out = run("new_course.py", "FY4", "--check")
 expect("a course without its LOPS goals is reported missing, nothing invented", code == 1 and "'tavoitteet' is missing" in out, out)
 (T / "curriculum.json").write_text(json.dumps(cur, ensure_ascii=False, indent=2) + "\n")
-c3 = json.loads(json.dumps(cur)); c3["FY8"].pop("initialized", None)   # a course that stays uninitialized in the copy, whichever courses main has initialized
+c3 = json.loads(json.dumps(cur)); c3["FY8"].pop("initialized", None)   # an uninitialized course in the copy, whatever the real project has initialized
 (T / "curriculum.json").write_text(json.dumps(c3, ensure_ascii=False, indent=2) + "\n")
 code, out = run("courses.py", "init-lesson", "fy8-1")
 expect("a lesson of an uninitialized course is refused", code != 0 and "not initialized" in out, out)
@@ -92,8 +92,11 @@ def maths_quantities(text):
         n = re.match(r"[\d ,]*\d", m.group(0)).group(0)
         text = text[:m.start()] + "$" + n.replace(" ", "").replace(",", "{,}") + "$" + text[m.start() + len(n):]
     return text
+def no_photos(text):
+    """fy3-2's illustration photo (2026-11-03) lives in FY3's picture folder; the FY4 fixture keeps only its own picture."""
+    return re.sub(r'<figure class="unit-photo[^\n]*</figure>\n\n', "", text)
 for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
-    text_file(L, n).parent.mkdir(exist_ok=True); text_file(L, n).write_text(maths_quantities(text_file(src, n).read_text().replace("fy3-2", "fy4-1")))
+    text_file(L, n).parent.mkdir(exist_ok=True); text_file(L, n).write_text(maths_quantities(no_photos(text_file(src, n).read_text()).replace("fy3-2", "fy4-1")))
 for n in ("answers.py", "sim-spec.md", "figures.py"): (C / n).write_text((src_code / n).read_text().replace("fy3-2", "fy4-1"))   # figures.py: an exercise shows one of its figures by id
 meta.update(sim=True, glossary=json.loads((src / "meta.json").read_text())["glossary"]); (L / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2))
 S = T / "assets/sims/fy4/fy4-1"; S.mkdir(parents=True)

@@ -1,4 +1,4 @@
-# Sound intensity
+# Intensity and the decibel scale
 
 > **Why** is the loudness of a sound given in decibels and not in watts per square metre, and what does a decibel reading actually tell us?
 
@@ -215,6 +215,8 @@ A small sound source that radiates evenly in all directions is a point source. W
   <foreignObject x="42" y="311.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/sound-level-meter-park.webp" alt="People sit on benches under trees in a park. A red digital display on a post reads 62 dB."><figcaption>A noise display in the People's Park in Chengdu, China. The display shows the sound intensity level in decibels. $62\,\text{dB}$ is about the level of normal conversation.</figcaption></figure>
+
 ### Threshold of hearing and threshold of pain
 The human ear is astonishingly sensitive. The weakest sound that a young person with normal hearing can distinguish at a frequency of about $1000\,\text{Hz}$ has an intensity of about $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. This is called the **threshold of hearing**. The threshold of hearing is not silence but the weakest audible sound, and it is different at different frequencies. The loudest sounds begin to feel painful when the intensity is about $1\,\text{W/m}^2$. This threshold of pain is a trillion, that is $10^{12}$, times the threshold of hearing. Such a wide range is hard to present on an ordinary scale.
 
@@ -263,7 +265,7 @@ That is why the loudness of a sound is described by the **sound intensity level*
   <foreignObject x="400" y="53.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1$</div></foreignObject>
 </svg>
 
-The ear is not equally sensitive to all frequencies: low and very high sounds seem quieter at the same intensity than sounds of about $1000$–$4000\,\text{Hz}$. Sound level meters therefore weight the frequencies according to the sensitivity of the ear, and such a weighted reading is written $\text{dB(A)}$. In this chapter we calculate unweighted sound intensity levels. The effects of noise and the protection of hearing are covered in the chapter *Sound in our environment*.
+The ear is not equally sensitive to all frequencies: low and very high sounds seem quieter at the same intensity than sounds of about $1000$–$4000\,\text{Hz}$. Sound level meters therefore weight the frequencies according to the sensitivity of the ear, and such a weighted reading is written $\text{dB(A)}$. In this chapter we calculate unweighted sound intensity levels. The effects of noise and the protection of hearing are covered in the chapter *Noise, acoustics and sound reproduction*.
 
 ## Formula: Sound intensity level
 
@@ -386,7 +388,7 @@ When the intensity doubles, the level increases by $10\,\text{dB} \cdot \lg 2 \a
 </svg>
 
 ### Combined level of several sources
-When two independent sound sources, for example two machines or two players, are heard at the same place, their powers and therefore their intensities add up: $I = I_1 + I_2$. Decibels are not added; the combined level is calculated from the total intensity. Two equally strong sources double the intensity, so $80\,\text{dB}$ and $80\,\text{dB}$ together give about $83\,\text{dB}$. If one source is much weaker, it hardly changes the level: $70\,\text{dB}$ and $60\,\text{dB}$ give an intensity of $1.1 \cdot 10^{-5}\,\text{W/m}^2$, that is about $70.4\,\text{dB}$. The rule does not apply to two loudspeakers that play the same pure tone: their waves interfere as in the chapter *Interference of waves*.
+When two independent sound sources, for example two machines or two players, are heard at the same place, their powers and therefore their intensities add up: $I = I_1 + I_2$. Decibels are not added; the combined level is calculated from the total intensity. Two equally strong sources double the intensity, so $80\,\text{dB}$ and $80\,\text{dB}$ together give about $83\,\text{dB}$. If one source is much weaker, it hardly changes the level: $70\,\text{dB}$ and $60\,\text{dB}$ give an intensity of $1.1 \cdot 10^{-5}\,\text{W/m}^2$, that is about $70.4\,\text{dB}$. The rule does not apply to two loudspeakers that play the same pure tone: their waves interfere as in the chapter *When waves combine: superposition and interference*.
 
 <svg data-fig="summa" viewBox="0 0 600 360" role="img" aria-label="Two bar charts to scale. On the left the intensities in units of 10 to the power minus 4 watts per square metre: each loudspeaker alone 1.0 and together 2.0, so the combined bar is twice as tall. On the right the same situations as sound intensity levels: each alone 80 dB and together 83 dB, so the combined bar is only slightly taller." style="max-width:100%;font-size:24px">
   <line x1="300" y1="14" x2="300" y2="346" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>

@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Miten magneettikentän suunta jossakin pisteessä määritetään kompassin avulla?",
+    "a": "Kompassi asetetaan pisteeseen. Kentän suunta on se suunta, johon neulan pohjoispää osoittaa. Neula asettuu kenttäviivan suuntaiseksi."
+  },
+  {
+    "q": "Jääkaappimagneetin kenttä on magneetin pinnalla noin $5\\,\\text{mT}$. Kuinka monta mikroteslaa se on? Kuinka monta kertaa suurempi se on kuin Maan kenttä Etelä-Suomessa ($52\\,\\mu\\text{T}$)?",
+    "a": "$5\\,\\text{mT} = 5 \\cdot 1000\\,\\mu\\text{T} = 5000\\,\\mu\\text{T}$. Suhde on $5000\\,\\mu\\text{T} : 52\\,\\mu\\text{T} \\approx 96$. Magneetin pinnalla kenttä on siis noin sata kertaa Maan kenttää suurempi."
+  },
+  {
+    "q": "Miksi kaksi kenttäviivaa ei voi koskaan leikata toisiaan?",
+    "a": "Kenttäviivan suunta kertoo kentän suunnan. Leikkauspisteessä kentällä olisi kaksi eri suuntaa. Kentällä on kuitenkin jokaisessa pisteessä vain yksi suunta."
+  }
+]

@@ -1,7 +1,7 @@
 {
   "id": "fy5-11",
   "course": "FY5",
-  "title": "Aaltojen heijastuminen ja diffraktio",
+  "title": "Aalto kohtaa esteen tai raon",
   "goals": [
     "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
     "LOPS FY5: mekaanisten aaltojen diffraktio ja interferenssi",
@@ -15,6 +15,24 @@
     "heijastuslaki",
     "Huygensin periaate",
     "diffraktio"
+  ],
+  "key_concepts": [
+    {
+      "term": "heijastuminen",
+      "explain": "Aalto osuu esteeseen ja palaa takaisin, esimerkiksi kaiku."
+    },
+    {
+      "term": "heijastuslaki",
+      "explain": "Aalto heijastuu pinnasta samassa kulmassa, jossa se tulee pinnalle."
+    },
+    {
+      "term": "Huygensin periaate",
+      "explain": "Aaltorintaman jokainen piste toimii uuden pienen aallon lähteenä. Näistä aalloista syntyy uusi aaltorintama."
+    },
+    {
+      "term": "diffraktio",
+      "explain": "Aalto taipuu esteen reunan taakse tai leviää kapean aukon jälkeen."
+    }
   ],
   "sim": true,
   "solutions": "all",

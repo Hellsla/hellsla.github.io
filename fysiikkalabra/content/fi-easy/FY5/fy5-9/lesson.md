@@ -1,4 +1,4 @@
-# Harmoninen värähtely ja heiluri
+# Jousivärähtelijä ja heiluri
 
 > **Miksi** jokainen keinu, heiluri ja jousen varassa pomppiva kappale värähtelee omassa tahdissaan, ja mikä sen tahdin määrää?
 
@@ -123,7 +123,7 @@
 </svg>
 
 ## Ydinajatus
-Luvussa *Harmoninen voima ja jousen potentiaalienergia* jousen voima oli $F = -kx$. Voima on suoraan verrannollinen poikkeamaan $x$ tasapainoasemasta. Se osoittaa aina kohti tasapainoasemaa. Tasapainoasema on kohta, jossa kappale on levossa, kun jousi ei vedä eikä työnnä.
+Luvussa *Jousivoima ja jousen energia* jousen voima oli $F = -kx$. Voima on suoraan verrannollinen poikkeamaan $x$ tasapainoasemasta. Se osoittaa aina kohti tasapainoasemaa. Tasapainoasema on kohta, jossa kappale on levossa, kun jousi ei vedä eikä työnnä.
 
 Vedetään kappale sivuun ja päästetään irti. Voima kiihdyttää kappaletta kohti tasapainoasemaa. Tasapainoasemassa voima on nolla, mutta kappaleella on nopeutta. Siksi se jatkaa toiselle puolelle. Siellä voima jarruttaa kappaleen, pysäyttää sen ääriasennossa ja kääntää takaisin. Sama liike toistuu: kappale värähtelee. Kun värähtelyn aiheuttaa harmoninen voima, liikettä sanotaan **harmoniseksi värähtelyksi**.
 
@@ -171,7 +171,7 @@ Vedetään kappale sivuun ja päästetään irti. Voima kiihdyttää kappaletta 
 Kuvassa näkyy liikkeen rytmi. Ääriasennoissa $x = A$ ja $x = -A$ nopeus on nolla. Siellä voima ja kiihtyvyys ovat suurimmillaan. Tasapainoasemassa on päinvastoin: voima ja kiihtyvyys ovat nolla, ja nopeus on suurimmillaan. Kiihtyvyys osoittaa aina kohti tasapainoasemaa, samaan suuntaan kuin voima.
 
 ### Paikka ajan funktiona
-Piirretään harmonisen värähtelijän paikka ajan funktiona. Saadaan siniaallon muotoinen käyrä. Luvun *Jaksollinen liike* käsitteet näkyvät siinä suoraan.
+Piirretään harmonisen värähtelijän paikka ajan funktiona. Saadaan siniaallon muotoinen käyrä. Luvun *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi* käsitteet näkyvät siinä suoraan.
 
 Amplitudi $A$ on suurin poikkeama tasapainoasemasta. Jaksonaika $T$ on aika, jonka kappale tarvitsee yhteen kokonaiseen edestakaiseen värähdykseen. Sen jälkeen kappale on samassa kohdassa ja liikkuu samaan suuntaan. Jaksonajan näkee esimerkiksi kahden peräkkäisen huipun välistä. Taajuus $f = \tfrac{1}{T}$ kertoo, montako värähdystä tapahtuu sekunnissa.
 
@@ -199,6 +199,8 @@ Amplitudi $A$ on suurin poikkeama tasapainoasemasta. Jaksonaika $T$ on aika, jon
   <line x1="230" y1="96" x2="230" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="380" y1="96" x2="380" y2="96" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy5/foucault-pendulum.webp" alt="Kiiltävä metallipallo roikkuu ohuen vaijerin varassa. Alla on värikäs pyöreä alusta."><figcaption>Foucault'n heiluri tiedemuseossa Japanissa. Kun heilahdus on pieni, heilurin jaksonaika ei riipu amplitudista. Se riippuu vain heilurin pituudesta ja putoamiskiihtyvyydestä.</figcaption></figure>
 
 ### Miksi amplitudi ei muuta jaksonaikaa
 Harmonisella värähtelijällä on erikoinen ominaisuus. Kaksinkertaista amplitudi. Silloin kappale kulkee yhden jakson aikana kaksinkertaisen matkan. Samalla voima jokaisessa vastaavassa kohdassa kaksinkertaistuu, koska $F$ on verrannollinen poikkeamaan.

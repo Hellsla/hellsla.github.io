@@ -252,7 +252,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Homogeenisessa magneettikentässä $B = 0{,}30\\,\\text{T}$ on $20\\,\\text{cm}$ suoraa johdinta, jossa kulkee $5{,}0\\,\\text{A}$:n virta. Johtimen ja kentän välinen kulma on $30^\\circ$. Opiskelija laskee\n\n$$\\begin{aligned} F &= I l B \\cos 30^\\circ \\\\ &= 5{,}0\\,\\text{A} \\cdot 0{,}20\\,\\text{m} \\cdot 0{,}30\\,\\text{T} \\cdot 0{,}866 \\\\ &\\approx 0{,}26\\,\\text{N} \\end{aligned}$$\n\nMissä on virhe?",
+      "prompt": "Homogeenisessa magneettikentässä $B = 0{,}30\\,\\text{T}$ on $20\\,\\text{cm}$ suoraa johdinta, jossa kulkee $5{,}0\\,\\text{A}$:n virta. Johtimen ja kentän välinen kulma on $30^\\circ$. Opiskelija laskee\n\n$$\\begin{aligned} F &= I l B \\cos 30^\\circ \\\\ &= 5{,}0\\,\\text{A} \\cdot 0{,}20\\,\\text{m} \\cdot 0{,}30\\,\\text{T} \\\\ &\\quad \\cdot 0{,}866 \\\\ &\\approx 0{,}26\\,\\text{N} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
           "text": "Kaavassa pitää olla $\\sin\\alpha$, koska voimaa synnyttää kentän johtimeen kohtisuora komponentti. Oikea tulos on $0{,}15\\,\\text{N}$.",

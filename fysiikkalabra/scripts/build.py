@@ -162,7 +162,7 @@ def fig_side(text_html, svg):
     return 0.6 <= text_height(text_html) / fig_h <= 1.5
 
 
-PHOTO = re.compile(r'<figure class="unit-photo"><img src="((?:pics/[a-z0-9]+|shared/pics)/[^"]+)"([^>]*)>(?:<figcaption>(.*?)</figcaption>)?</figure>', re.S)
+PHOTO = re.compile(r'<figure class="unit-photo( wide)?"><img src="((?:pics/[a-z0-9]+|shared/pics)/[^"]+)"([^>]*)>(?:<figcaption>(.*?)</figcaption>)?</figure>', re.S)
 
 
 def photo_credits(ref):
@@ -178,13 +178,14 @@ def photo_credits(ref):
 
 def photos(html):
     """(html, credits section) of a lesson's photographs: each `<figure class="unit-photo"><img src alt><figcaption>`
+    (class "unit-photo wide": a data map or chart that needs the column's width, 2026-11-03 FY2 temperature map)
     written in the text gets its size, lazy loading and a short credit under the caption from photos.json, and the
     page ends with the full credits (the FY14 units' form, scripts/units.py tail_html)."""
     used = []
     def one(m):
-        ref, attrs, cap = m.group(1), m.group(2), m.group(3) or ""
+        wide, ref, attrs, cap = m.group(1) or "", m.group(2), m.group(3), m.group(4) or ""
         c = photo_credits(ref); used.append(c)
-        return (f'<figure class="unit-photo"><img src="{ref}"{attrs} width="{c["width"]}" height="{c["height"]}" loading="lazy" decoding="async">'
+        return (f'<figure class="unit-photo{wide}"><img src="{ref}"{attrs} width="{c["width"]}" height="{c["height"]}" loading="lazy" decoding="async">'
                 f'<figcaption>{cap} <span class="photo-credit">{T("lesson.photo_by")}: {esc(c["creator"])}, {esc(c["licence"])}</span></figcaption></figure>')
     html = PHOTO.sub(one, html)
     if not used: return html, ""
@@ -216,6 +217,43 @@ def plain_tex(s):
 def texts(html):
     """{{t:site.footer}} in a template -> the text in the language being built (lang/<lang>.json)."""
     return re.sub(r"\{\{t:([\w.]+)\}\}", lambda m: esc(T(m.group(1))), html)
+
+
+# Modules the front page still lists dimmed under Tulossa although some of their chapters are published (teacher
+# 2026-11-03, "tiivistä etusivu": FY6–FY8 stay there until the teacher moves them; curriculum.json "_front_page").
+HOME_COMING = tuple(curriculum.get("_front_page", {}).get("coming", []))
+
+
+def home_row(code, title, question, coming=False):
+    """A front page row: one link over the whole row with the module's icon, code, title and Miksi question; the arrow
+    appears on hover and focus only. The question is cut to one line in two columns, so it is whole in title too."""
+    q = esc(question)
+    return (f'<li><a class="mod-row{" coming" if coming else ""}" href="{code}.html">{module_icons.img(code, 40)}'
+            f'<span class="mod-text"><span class="mod-name"><span class="mod-code">{code}</span> <span class="mod-title">{esc(title)}</span></span>'
+            f'<span class="mod-q" title="{q}">{q}</span></span><span class="mod-go" aria-hidden="true">→</span></a></li>')
+
+
+ABOUT = "tietoa.html"
+
+
+def front_chrome(html):
+    """The front page's own header and footer (teacher 2026-11-03): Näin opiskelet beside Moduulit and Lukuvinkit, and
+    in the footer Tietoa sivustosta in place of the portfolio link, which is on that page now."""
+    html = html.replace('<a class="nav-reading"', f'<a class="nav-study" href="{reading_tips.PAGE}#{STUDY_ID}">{esc(T("site.study"))}</a><a class="nav-reading"', 1)
+    return re.sub(r'(<footer class="bottom">.*?)<a href="[^"]*">[^<]*</a></footer>', lambda m: m.group(1) + f'<a href="{ABOUT}">{esc(T("site.about"))}</a></footer>', html, count=1, flags=re.S)
+
+
+STUDY_ID = "nain-opiskelet"
+
+
+def study_guide():
+    """Näin opiskelet Ruukkilabrassa (moved from the front page to the top of Lukuvinkit, teacher 2026-11-03): the six
+    stages with the names the lessons use (lang inquiry.stage_*), where to start, more tips behind a disclosure."""
+    stages = "".join(f'<li><strong>{T("inquiry.stage_" + k)}</strong><span>{T("site.home_path_" + k)}</span></li>' for k in inquiry.STAGE_IDS)
+    return (f'<section class="path" id="{STUDY_ID}" aria-labelledby="h-path"><h2 id="h-path">{T("site.home_path")}</h2>'
+            f'<p class="section-lead">{T("site.home_start_lead")}</p><ol class="path-steps">{stages}</ol>'
+            f'<details class="more-tips"><summary>{T("site.home_start_more")}</summary><ul>'
+            + "".join(f"<li>{esc(x)}</li>" for x in T("site.home_start_items")) + '</ul></details></section>')
 
 
 def page(title, body, crumbs, name, description, main_class="reading", full_title=None):
@@ -579,6 +617,7 @@ def build_language(lang):
             for q in exit_q) + "</ol>"
         lesson_md = (folder / "lesson.md").read_text()
         lesson_html = staged_example(fig_rows(named_sections(nbsp_units(render_md(example_md(lesson_md))))))
+        lesson_raw = lesson_html                          # the inquiry layout credits the photographs of the whole page (theory and tasks)
         lesson_html, photo_tail = photos(lesson_html)
         inq = inquiry.load(folder)
         if inq is not None:
@@ -617,7 +656,7 @@ def build_language(lang):
                     f'<section id="exit"><h2>{inquiry.exit_title()}</h2>{exit_items}</section>\n'
                     f'<section id="exercises"><h2>{inquiry.exercises_title()}</h2>{howto if ex else ""}{ex_html}</section>{photo_tail}')
         else:                                             # inquiry layout: the same parts placed by inquiry.json (scripts/inquiry.py)
-            lesson_html = lesson_html.replace("<!-- sim -->", "")
+            lesson_html = lesson_raw.replace("<!-- sim -->", "")
             pieces = re.split(r"(?=<h2[ >])", lesson_html)
             intro = pieces[0] if not pieces[0].startswith("<h2") else ""
             sections = {}
@@ -626,8 +665,10 @@ def build_language(lang):
                 if m: sections[_h.unescape(m.group(1) or m.group(2))] = re.sub(r"^<h2[^>]*>(.*?)</h2>", r'<h3 class="theory-h">\1</h3>',
                                                                      re.sub(r"<(/?)h3>", r"<\1h4>", piece), count=1)   # a ### subheading under its section heading
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": f'{howto if ex else ""}{ex_html}',
+                     "concepts": inquiry.key_concepts_html(meta["id"], meta.get("key_concepts"), lambda t: nbsp_units(render_md(t))),   # Selkeä suomi only (NOTES.md §12)
                      "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>'}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
+            body, photo_tail = photos(body)               # a photograph may also open a task (FY4 2026-11-03: Pohdinta)
             main = f'<article id="teoria" class="inquiry">{body}{photo_tail}</article>'
         skey = (meta["id"] if where[0] == "lesson" else where[1].name) if where else None   # the sim's block of lang "sims"
         html = (texts(tpl).replace("<title>{{title}}", "<title>" + esc(plain_tex(meta["title"]))).replace('og:title" content="{{title}}', 'og:title" content="' + esc(plain_tex(meta["title"])))
@@ -674,8 +715,12 @@ def build_language(lang):
     built_ids = {m["id"] for ms in built.values() for m in ms}
     legacy_ids = {m["id"] for ms in built.values() for m in ms if m["state"] == "legacy"}
 
+    # The front page's module list (teacher 2026-11-03, "tiivistä etusivu"): one row per module, the whole row one link
+    # to its page, with the icon, code, title and Miksi question only (no counts, credits or calls to action). The
+    # modules with published lessons on the left, except those the teacher still shows under Tulossa (HOME_COMING),
+    # which go dimmed to the right column with the modules that have none yet.
     # Availability is what this language's build published (built_ids, practice_built), never a hardcoded count and
-    # never a student's progress. A module with at least one lesson goes to the catalogue, the rest to "Tulossa".
+    # never a student's progress: the module page says it.
     def availability(done, n):
         """Concrete labels for a module: (main, extra), e.g. ("8 oppituntia", "") or ("2 oppituntia saatavilla", "14 tulossa")."""
         if not done: return T.count("site.lessons_planned", n), ""
@@ -689,18 +734,8 @@ def build_language(lang):
         kind = T("site.course_type_required") if mod.get("type") == "pakollinen" else T("site.course_type_optional")
         main_label, extra_label = availability(done, len(slots))
         credits = f'{T("site.credits", n=mod.get("op", ""))} · {kind}'
-        if done:   # one link per row (the heading's), stretched over the row by CSS; the arrow is only its visible cue
-            catalogue += (f'<li class="mod-row">{module_icons.img(code)}<span class="mod-code">{code}</span>'
-                          f'<div class="mod-main"><h3 class="mod-title"><a class="mod-link" href="{code}.html">'
-                          f'<span class="visually-hidden">{code} </span>{esc(mod["title"])}</a></h3>'
-                          f'<p class="mod-q">{esc(T("site.module_question." + code))}</p></div>'
-                          f'<p class="mod-meta"><span class="mod-avail">{main_label}</span>'
-                          + (f'<span class="mod-coming">{extra_label}</span>' if extra_label else "")
-                          + f'<span class="mod-credits">{credits}</span></p>'
-                          f'<span class="mod-go" aria-hidden="true">{T("site.open_module")}</span></li>')
-        else:
-            upcoming += (f'<li><a href="{code}.html">{module_icons.img(code, 36, "up-icon")}<span class="mod-code">{code}</span> <span class="up-title">{esc(mod["title"])}</span></a>'
-                         f'<span class="up-meta">{main_label}</span></li>')
+        if done and code not in HOME_COMING: catalogue += home_row(code, mod["title"], T("site.module_question." + code))
+        else: upcoming += home_row(code, mod["title"], T("site.module_question." + code), coming=True)
 
         items = chapter_cards(code, mod, slots, built_ids, legacy_ids, cards)
         # a language link from a page this language lacks lands here (link_languages): the note at its #unavailable-<id> says so
@@ -786,7 +821,7 @@ def build_language(lang):
     local_rows = ""
     for code, c in local.items():
         cu = [(u, units.load(u, ul), os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/")) for u, ul in unit_pub.items() if units.load(u, ul)["course"] == code]
-        local_rows += local_courses.home_row(code, c, T, sum(code in d["courses"] for d in inv_built.values()), len(cu))
+        local_rows += home_row(code, c["title"], c["subtitle"])
         (out / f"{code}.html").write_text(page(f"{code} {c['title']}", local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids},
                                                                                                   [(i, d) for i, d in inv_built.items() if code in d["courses"]],
                                                                                                   guides.course_section(T, published, lang) if code == "FY10" else "", cu)
@@ -796,32 +831,29 @@ def build_language(lang):
                           f'{T("site.local_unavailable_note", title=esc(code + " " + c["title"]))}</p>'
                           for code, c in local_courses.load().items() if code not in local)
 
-    # The front page (teacher 2026-10-29, trimmed 2026-10-31: a learning environment, not a product page). A short
-    # opening that says how one studies here, then what can be studied: the published modules, the school-specific
-    # courses with what they already publish, the modules still coming, and last one short study guide. No sample
-    # lesson and no call to action: the module list follows the opening directly.
-    stages = "".join(f'<li><strong>{T("inquiry.stage_" + k)}</strong><span>{T("site.home_path_" + k)}</span></li>' for k in inquiry.STAGE_IDS)
+    # The front page (teacher 2026-10-29, trimmed 2026-10-31, compacted 2026-11-03 "tiivistä etusivu": the whole page in
+    # one desktop screen). The heading and one line under it, then the module list in two columns from 700 px: the
+    # modules on the left; on the right Tulossa (dimmed) and the school's own courses under the school's name. The
+    # study guide is on the Lukuvinkit page (study_guide), linked from the header as "Näin opiskelet".
+    school = next(iter(local.values()))["school"] if local else ""
     home = (local_notes +
-        f'<section class="home-intro" aria-labelledby="h-intro"><p class="motto">{T("site.home_tagline")}</p>'
-        f'<h1 id="h-intro">{T("site.home_title")}</h1><p class="lead">{T("site.home_lead")}</p></section>'
-        f'<section class="catalogue" aria-labelledby="moduulit"><h2 id="moduulit">{T("site.modules")}</h2>'
-        f'<p class="section-lead">{T("site.modules_lead")}</p><ul class="mod-list">{catalogue}</ul></section>'
-        + (f'<section class="local-courses" aria-labelledby="h-local"><h2 id="h-local">{T("site.local_courses")}</h2>'
-           f'<p class="section-lead">{T("site.local_courses_lead")}</p><ul class="mod-list">{local_rows}</ul></section>' if local_rows else "")
-        + concept_cards.home_section(T, UP)   # Käsitetakomo, the concept cards beside the site (teacher 2026-11-03, scripts/concept_cards.py)
-        + (f'<section class="upcoming" aria-labelledby="h-upcoming"><h2 id="h-upcoming">{T("site.upcoming")}</h2>'
-           f'<p class="section-lead">{T("site.upcoming_lead")}</p><ul class="up-list">{upcoming}</ul></section>' if upcoming else "")
-        # one study guide: the stages with the names the lessons use (lang inquiry.stage_*), where to start, more tips behind a disclosure
-        + f'<section class="path" aria-labelledby="h-path"><h2 id="h-path">{T("site.home_path")}</h2>'
-        f'<p class="section-lead">{T("site.home_start_lead")}</p><ol class="path-steps">{stages}</ol>'
-        f'<details class="more-tips"><summary>{T("site.home_start_more")}</summary><ul>'
-        + "".join(f"<li>{esc(x)}</li>" for x in T("site.home_start_items")) + '</ul></details></section>')
-    (out / "index.html").write_text(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",
-                                         full_title=f'{T("site.name")} — {T("site.subtitle")}'))
+        f'<section class="home-intro" aria-labelledby="h-intro"><h1 id="h-intro">{T("site.home_h1")}</h1>'
+        f'<p class="lead">{T("site.home_sub")}</p></section>'
+        f'<section class="catalogue" id="moduulit" aria-labelledby="h-modules"><h2 id="h-modules" class="visually-hidden">{T("site.modules")}</h2>'
+        f'<div class="mod-cols"><ul class="mod-list">{catalogue}</ul><div class="mod-side">'
+        + (f'<h3 class="mod-group">{T("site.upcoming")}</h3><ul class="mod-list up-list">{upcoming}</ul>' if upcoming else "")
+        + (f'<h3 class="mod-group">{esc(school)}</h3><ul class="mod-list local-list">{local_rows}</ul>' if local_rows else "")
+        + '</div></div></section>')
+    (out / "index.html").write_text(front_chrome(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",
+                                         full_title=f'{T("site.name")} — {T("site.subtitle")}')))
     # Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): a reading list of physics books, linked from every header and footer
     rt = reading_tips.load(lang) if reading_tips.SOURCE.is_file() else None
-    if rt: (out / reading_tips.PAGE).write_text(page(rt["title"], reading_tips.body(T, lang), f'<a href="index.html">{T("site.name")}</a> › {esc(rt["title"])}',
+    if rt: (out / reading_tips.PAGE).write_text(page(rt["title"], study_guide() + reading_tips.body(T, lang), f'<a href="index.html">{T("site.name")}</a> › {esc(rt["title"])}',
                                               reading_tips.PAGE, rt["description"], main_class="reading reading-tips"))
+    # Tietoa sivustosta (teacher 2026-11-03): a page to fill later; the link back to the portfolio moved here from the front page
+    (out / ABOUT).write_text(page(T("site.about"), f'<h1>{T("site.about")}</h1><p class="lead">{T("site.about_lead")}</p>'
+                                  f'<p><a href="{HOME}">{T("site.back_to_portfolio")}</a></p>',
+                                  f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead")))
     if SITE.name == "site.tmp":                  # a lesson leaves the live site only with a warning (an annotation on CI)
         live = LIVE / out.relative_to(SITE)
         for old_page in sorted(live.glob("*.html")):
@@ -831,7 +863,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html"] + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built]
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built]
                     + [f"{u}.html" for u, ul in unit_pub.items() if ul == lang and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):

@@ -1,4 +1,4 @@
-# Newtonin gravitaatiolaki
+# Kappaleiden välinen gravitaatiovoima
 
 > **Miksi** pudonnut omena syöksyy Maata kohti, mutta Maa ei näytä liikahtavankaan omenaa kohti?
 
@@ -189,6 +189,8 @@ Gravitaatio on vuorovaikutus, joten siihen pätee Newtonin kolmas laki. Maa vet�
   <foreignObject x="433.5" y="315.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$a = 9{,}8\,\text{m/s}^2$</div></foreignObject>
   <foreignObject x="265" y="9.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$F_1 = F_2$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy5/artemis2-earthset.webp" alt="Kuun pinta kuvan alaosassa. Sen takana näkyy sininen Maa."><figcaption>Maa laskee Kuun taakse. Artemis II -astronautit ottivat kuvan Orion-aluksesta vuonna 2026. Maa ja Kuu vetävät toisiaan yhtä suurella voimalla.</figcaption></figure>
 
 Ero on kiihtyvyyksissä. Newtonin toisen lain mukaan kappaleen kiihtyvyys on $a = \tfrac{F}{m}$. Omenan massa on $0{,}20\,\text{kg}$, ja siihen vaikuttaa noin $1{,}96\,\text{N}$:n voima. Silloin omenan kiihtyvyys on noin $9{,}8\,\text{m/s}^2$. Sama voima antaa Maalle kiihtyvyyden noin $3 \cdot 10^{-25}\,\text{m/s}^2$. Maan massa on $5{,}97 \cdot 10^{24}\,\text{kg}$. Maa todella liikahtaa omenaa kohti, mutta niin vähän, ettei sitä voi mitata.
 

@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cebd9c43182ad10d
+CONTENT-HASH: 6085c886da7ca1a5
+
 ## Blocking
-(none)
+- none
+
 ## Polish
-- [Minor] lesson figures 6 and 7: labels fit after widening of the label boxes; nothing to fix.
+- none
+
 ## Checked
-- Captures opened (en): fy5-3-sim-390, fy5-3-fig-7-390, fy5-3-sim-1280, fy5-3-fig-9-390, fy5-3-fig-8-390, fy5-3-exp-koe-1-390-2, fy5-3-example-390-1, fy5-3-lab-1280-1.
-- The sim label "Animation speed" and "Cut the string" fit at 390 and 1280 px; $v_\text{cut}$ renders in the readout, table header and text.
-- check_layout.py at 345 px: OK for preview/en/fy5-3. Maths, units and subscripts match the Finnish typography.
-## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 4
+- batch delta review: opened fy5-3-1280-0 and fy5-3-360-0; photo loads, floats right beside the text at 1280 px and sits in the column at 360 px without clipping or overflow; caption and alt are natural English, factual and consistent with the picture and the adjacent paragraph; credit line present under the caption.

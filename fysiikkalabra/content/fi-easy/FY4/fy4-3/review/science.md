@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: bace334ccb09b0df
+CONTENT-HASH: 439993a1b66dbd2f
 
 ## Blocking
+(none)
 
 ## Polish
+- none
 
 ## Checked
-Re-review after the skaters figure was redrawn in all languages. Compared lesson.md (incl. the redrawn "luistelijat" SVG: A/B labels, geometry identical to Finnish, aria-label text matching the Finnish description), figures.json, inquiry.json, exit-ticket.json and meta.json with the reviewed Finnish source: same physics, numbers, units, symbols, answers and teaching sequence; nothing added or dropped.
-plain Finnish (short clear sentences) reads naturally; no Finnish left in text, units or experiment names (only data-fig ids). check_i18n at 0 errors.
-Newton's first law (inertia) and third law (action and reaction pair, equal and opposite, same kind, different bodies) correct; force diagrams consistent with the text.
+- batch delta review, round 2 (diff f83714cd..b8a6e1bb): inertia key concept now 'nopeutta tai liikkeen suuntaa vaikea muuttaa', correct and consistent with the first law; no other content changed.

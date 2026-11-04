@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-5-L1-01",
+      "level": 1,
+      "text": "In heavy elements the electrons are in shells farther and farther out. What is the greatest number of electrons that fit in the shell $n = 5$?",
+      "answer": 50,
+      "unit": "electrons",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L1-02",
+      "level": 1,
+      "text": "In a computer simulation, the position of the $2\\text{s}$ electron of a hydrogen atom is measured $8000$ times. Of the measurements, $421$ land inside the nodal sphere of the $2\\text{s}$ orbital. Based on the measurements, estimate the probability with which the $2\\text{s}$ electron is detected inside the nodal sphere. Give the answer as a percentage.",
+      "answer": 5.26,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L1-03",
+      "level": 1,
+      "text": "The position of the $1\\text{s}$ electron of a hydrogen atom is measured $3000$ times, and the $90\\,\\%$ boundary of the $1\\text{s}$ orbital is drawn in the picture. How many measurements do you expect to land outside the boundary?",
+      "answer": 300,
+      "unit": "hits",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L1-04",
+      "level": 1,
+      "text": "The electron of a hydrogen atom is in the $3\\text{p}$ state. At least how much energy is needed to release the electron from the atom? Give the answer in electronvolts.",
+      "answer": 1.51,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L1-05",
+      "level": 1,
+      "text": "The electron of a hydrogen atom is in the shell $n = 5$. What is its energy in electronvolts?",
+      "answer": -0.544,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-5-L2-01",
+      "level": 2,
+      "text": "The electron of a hydrogen atom moves from the $3\\text{p}$ orbital to the $1\\text{s}$ orbital, and the atom emits a photon. What is the wavelength of the photon? Give the answer in nanometres.",
+      "answer": 103,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-02",
+      "level": 2,
+      "text": "An argon atom has $18$ electrons, and in the ground state they fill the orbitals in the order $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$. How many electrons are in the outermost shell of argon?",
+      "answer": 8,
+      "unit": "electrons",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-03",
+      "level": 2,
+      "text": "Two boundaries are drawn for the $1\\text{s}$ orbital of a hydrogen atom: the $50\\,\\%$ boundary, whose radius is $0.071\\,\\text{nm}$, and the $90\\,\\%$ boundary, whose radius is $0.14\\,\\text{nm}$. The position of the electron is measured $2400$ times. How many measurements do you expect to land between the boundaries?",
+      "answer": 960,
+      "unit": "hits",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-04",
+      "level": 2,
+      "text": "The electron of a hydrogen atom is in the shell $n = 2$. What is the greatest wavelength at which a photon can still release the electron from the atom? Give the answer in nanometres.",
+      "answer": 365,
+      "unit": "nm",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-5-L3-01",
+      "level": 3,
+      "text": "An ultraviolet photon with a wavelength of $97.3\\,\\text{nm}$ hits a hydrogen atom in the ground state, and the atom absorbs it. How many orbitals does the shell to which the electron moves have?",
+      "answer": 16,
+      "unit": "orbitals",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L3-02",
+      "level": 3,
+      "text": "In light atoms, the electrons fill the orbitals in the ground state in the order $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$, and at most two electrons fit in each orbital. In an atom of a certain element the $3\\text{p}$ subshell is exactly half full. How many electrons does the atom have?",
+      "answer": 15,
+      "unit": "electrons",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L3-03",
+      "level": 3,
+      "text": "The electron of a hydrogen atom is in the $2\\text{s}$ state, and its position is measured $5000$ times. The $90\\,\\%$ boundary of the $2\\text{s}$ orbital is drawn in the picture. On average $5.3\\,\\%$ of the measurements land inside the nodal sphere, and this inner part belongs practically entirely to the region of the orbital. How many measurements do you expect to land in the region of the orbital outside the nodal sphere?",
+      "answer": 4240,
+      "unit": "hits",
+      "tolerance": 0.02
+    }
+  ]
+}

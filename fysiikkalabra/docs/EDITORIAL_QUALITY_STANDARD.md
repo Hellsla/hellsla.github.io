@@ -145,7 +145,10 @@ huomata, että …", stacked "Tämä tarkoittaa, että …", every paragraph end
 form; exercise instructions that say exactly what to do; observations, conclusions and assumptions kept apart;
 correct case after a number and unit ("$80\,\text{N}$:n voimalla", the quantity in LaTeX: NOTES §1). A complete explanation is better than a shorter
 incomplete one: never shorten for brevity, never rewrite a correct sentence because another phrasing is possible.
-English and Selkeä suomi versions are judged in their own language by the same standard.
+English and Selkeä suomi versions are judged in their own language by the same standard. Selkeä suomi is also judged
+for S2 students (NOTES.md §12): a difficult word or physics term explained where it first appears, abstract ideas made
+concrete with a correct example, instructions that say what to do in order, *Luvun tärkeät käsitteet* that name the
+chapter's central concepts in plain sentences; never fragmented, childish or padded, and the physics unchanged.
 - **5** Reads like carefully authored educational prose throughout.
 - **4** Fluent; a few awkward sentences.
 - **3** Understandable but mechanical or repetitive in places; a term used inconsistently.

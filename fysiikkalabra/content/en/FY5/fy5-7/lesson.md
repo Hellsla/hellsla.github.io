@@ -1,4 +1,4 @@
-# Periodic motion
+# Describing oscillation: period, frequency and amplitude
 
 > **Why** can the motion of a child on a swing be described with a few numbers, even though the swing is in a different place at every moment?
 
@@ -151,7 +151,7 @@
 </svg>
 
 ## Key idea
-Motion is **periodic** when it repeats in the same way at equal intervals of time. A uniformly rotating carousel (chapter *Circular motion and speed*), the pendulum of a pendulum clock, a swing and a weight bouncing on a spring all move periodically. The last three are also in **oscillation**: the object moves back and forth on both sides of the **equilibrium position**. The equilibrium position is the position where an object placed at rest stays at rest. A child on a carousel does not oscillate, although the motion is periodic, because the child goes round and does not move back and forth on both sides of one point.
+Motion is **periodic** when it repeats in the same way at equal intervals of time. A uniformly rotating carousel (chapter *Moving in a circle: period and speed*), the pendulum of a pendulum clock, a swing and a weight bouncing on a spring all move periodically. The last three are also in **oscillation**: the object moves back and forth on both sides of the **equilibrium position**. The equilibrium position is the position where an object placed at rest stays at rest. A child on a carousel does not oscillate, although the motion is periodic, because the child goes round and does not move back and forth on both sides of one point.
 
 The position of an oscillating object is described by the **displacement** $x$, that is, the distance of the object from the equilibrium position, with a sign. At the equilibrium position $x = 0$, and one direction is chosen as positive, for the weight on a spring for example up. The greatest displacement is the **amplitude** $A$. It is measured from the equilibrium position to an extreme position, not from one extreme position to the other: the distance between the highest and the lowest position is $2A$. In this chapter the oscillation is assumed not to die out, so the amplitude stays the same.
 
@@ -212,8 +212,10 @@ The position of an oscillating object is described by the **displacement** $x$, 
   <foreignObject x="429.5" y="319.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$x = 0$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy5/girl-on-swing.webp" alt="A child swings on a wooden swing in a green meadow. High rocky mountains rise in the background."><figcaption>A swing in the Dolomites, Italy. Swinging is periodic motion: the swing returns to the same point at nearly equal time intervals.</figcaption></figure>
+
 ### Period and frequency
-The **period** $T$ is the duration of one full oscillation (one cycle): the time after which the object is again in the same place and moving in the same direction. When the weight leaves the equilibrium position going up, it reaches the highest position, returns to the equilibrium position, reaches the lowest position and returns to the equilibrium position again. This is one oscillation. The **frequency** $f$ is the number of full oscillations per unit time. The period and the frequency correspond to the period and the rotation frequency in the chapter *Circular motion and speed*: one oscillation corresponds to one revolution. The period is measured most precisely from the duration of several oscillations: if $n$ oscillations take the time $t_n$, the period is $T = \tfrac{t_n}{n}$.
+The **period** $T$ is the duration of one full oscillation (one cycle): the time after which the object is again in the same place and moving in the same direction. When the weight leaves the equilibrium position going up, it reaches the highest position, returns to the equilibrium position, reaches the lowest position and returns to the equilibrium position again. This is one oscillation. The **frequency** $f$ is the number of full oscillations per unit time. The period and the frequency correspond to the period and the rotation frequency in the chapter *Moving in a circle: period and speed*: one oscillation corresponds to one revolution. The period is measured most precisely from the duration of several oscillations: if $n$ oscillations take the time $t_n$, the period is $T = \tfrac{t_n}{n}$.
 
 ### An oscillation as a graph
 When the displacement is drawn as a function of time, the result is a $(t, x)$ graph (chapter *Position, velocity and uniform motion as graphs*). The graph of periodic motion repeats in the same way at intervals of one period. The period is read between two successive peaks or between two passes through the equilibrium position in which the object moves in the same direction. Successive passes are only half a period apart, because the object passes the equilibrium position once going up and once coming down. The amplitude is read from the level $x = 0$ of the equilibrium position to the level of a peak.

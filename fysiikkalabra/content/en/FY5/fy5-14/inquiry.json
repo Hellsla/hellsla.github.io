@@ -7,9 +7,9 @@
     "explain beats and the Doppler effect and calculate the frequency heard."
   ],
   "prior": [
-    "Sound is a longitudinal wave, and the speed of a wave is $v = f\\lambda$ (chapter *Mechanical waves*)",
-    "When waves meet, their displacements add up (chapter *Interference of waves*)",
-    "The natural frequencies of a string and of a tube open at both ends are multiples of the fundamental frequency (chapter *Standing waves*)"
+    "Sound is a longitudinal wave, and the speed of a wave is $v = f\\lambda$ (chapter *How waves form and travel*)",
+    "When waves meet, their displacements add up (chapter *When waves combine: superposition and interference*)",
+    "The natural frequencies of a string and of a tube open at both ends are multiples of the fundamental frequency (chapter *Standing waves: nodes, antinodes and natural frequencies*)"
   ],
   "activities": [
     {
@@ -30,7 +30,7 @@
         {
           "text": "$220\\,\\text{Hz}$, $330\\,\\text{Hz}$, $440\\,\\text{Hz}$ and so on.",
           "correct": true,
-          "feedback": "Correct. The natural frequencies of a string fixed at both ends are whole-number multiples of the fundamental frequency, $f_n = n f_1$ (chapter *Standing waves*). Today we will see that the string sounds at all of these at the same time and that they decide the timbre of the sound."
+          "feedback": "Correct. The natural frequencies of a string fixed at both ends are whole-number multiples of the fundamental frequency, $f_n = n f_1$ (chapter *Standing waves: nodes, antinodes and natural frequencies*). Today we will see that the string sounds at all of these at the same time and that they decide the timbre of the sound."
         },
         {
           "text": "Only $330\\,\\text{Hz}$, $550\\,\\text{Hz}$, $770\\,\\text{Hz}$ and so on.",
@@ -365,7 +365,7 @@
       "tolerance": 0.01,
       "hints": [
         "At which point of the circle does the buzzer move straight towards the listener? How large is its speed then?",
-        "In uniform circular motion the speed is $v_\\text{s} = \\tfrac{2\\pi r}{T}$ (chapter *Circular motion and speed*). The greatest frequency is heard when the buzzer approaches the listener at this speed.",
+        "In uniform circular motion the speed is $v_\\text{s} = \\tfrac{2\\pi r}{T}$ (chapter *Moving in a circle: period and speed*). The greatest frequency is heard when the buzzer approaches the listener at this speed.",
         "$v_\\text{s} = \\tfrac{2\\pi \\cdot 1.00\\,\\text{m}}{0.500\\,\\text{s}} = 12.57\\,\\text{m/s}$ and $f = f_0 \\cdot \\tfrac{v}{v - v_\\text{s}}$."
       ],
       "mistakes": [

@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ec38db9d87b5fd39
+CONTENT-HASH: 4aa09c757dcbf43d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises solutions use "1/s" with Hz, as the Finnish.
+(none)
 
 ## Checked
-- Numbers, formulas, units, decimal commas compared with the Finnish by script: no differences in lesson, inquiry, exit ticket, meta.
-- Terms explained once in plain Finnish (tangentti, normaali, kokonaisvoima); keskipakoisvoima only as a misconception; keskeisvoima as the sum of real forces; nothing dropped.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: normaalikiihtyvyys (towards the centre, changes direction, not speed), keskeisvoima as the sum of real forces, not a new force, and ympyräliike agree with the lesson.

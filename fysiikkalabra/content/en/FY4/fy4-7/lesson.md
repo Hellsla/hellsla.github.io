@@ -353,6 +353,8 @@ E_\text{mech} = E_\text{k} + E_\text{p}
 ```
 where $E_\text{mech}$ is the mechanical energy ($\text{J}$). Because potential energy depends on the zero level, the value of the mechanical energy depends on it too. Always state in a calculation what the zero level is.
 
+<figure class="unit-photo"><img src="pics/fy4/roller-coaster-loop.webp" alt="A red roller coaster loop against a blue sky. At the top of the loop the car travels with the riders upside down."><figcaption>A roller coaster car at the top of a loop on a sunny day.</figcaption></figure>
+
 ## Worked example
 A snowboarder whose mass with equipment is $68\,\text{kg}$ goes down a slope. At a point $25\,\text{m}$ above the bottom of the slope her speed is $12\,\text{m/s}$. How great is the snowboarder's mechanical energy at this point when the bottom of the slope is chosen as the zero level?
 

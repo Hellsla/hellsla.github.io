@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9cb596630b684518
+CONTENT-HASH: d8618569440fdbd2
 
 ## Blocking
 - none
@@ -8,9 +8,4 @@ CONTENT-HASH: 9cb596630b684518
 - none
 
 ## Checked
-- fy5-15-intro-1280: uusi tavoite rivittyy kolmeen riviin laatikossa, ei leikkaannu; kuva ja Pohjatiedot ennallaan.
-- Teksti on selkokielistä, grammaattisesti oikea; ei LaTeX-muutoksia.
-- Muut kaappaukset ennallaan (muutos vain inquiry.json learn-rivi).
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-15.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.

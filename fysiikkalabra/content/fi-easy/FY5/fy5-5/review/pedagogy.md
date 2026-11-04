@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: e8e8246b7986df8e
-
+CONTENT-HASH: 32e63de67a0a9c1b
 ## Blocking
-(none)
 
 ## Polish
-- "tasa-aineinen" and "pallosymmetrinen" are not opened in the lesson text (pistemäinen is); a short gloss would help an S2 reader. Optional.
-
+- *gravitaatiokenttä*: "jokaiseen kappaleeseen" → "jokaiseen toiseen kappaleeseen".
 ## Checked
-- Sentences split, one idea each; no step, feedback, hint, criterion or model answer dropped; learn goals and prior items as in the Finnish.
-- Captures opened: contact-1, theory-1280-2, sim at 390 in contact-1; layout matches the Finnish; check_layout fy5-5 --lang fi-easy --width 345: OK.
+batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.

@@ -1,4 +1,4 @@
-# Circular motion and speed
+# Moving in a circle: period and speed
 
 > **Why** does a child standing at the edge of a roundabout rush along much faster than a child standing next to the centre pole, even though both complete a turn equally fast?
 
@@ -213,7 +213,7 @@ A puck tied to a string circles a peg on the ice. The string pulls the puck towa
 </svg>
 
 ### A change of direction is a change of velocity
-The change of velocity $\Delta\overline{v}$ is seen when two successive velocity vectors are drawn starting from the same point. The change $\Delta\overline{v}$ is the vector that must be added to $\overline{v}_1$ to get $\overline{v}_2$. On a circular path the vectors are equally long but their directions differ, so $\Delta\overline{v}$ is not zero when the time interval is shorter than one revolution. Acceleration means a change of velocity, not only a change of speed. In uniform circular motion an object is therefore accelerating, and by Newton's second law a net force that is not zero acts on it. This net force points to the side of the centre of the circle, that is, to the inside of the path, not outwards. The magnitude of the acceleration is calculated in the chapter *Uniform circular motion and centripetal acceleration*.
+The change of velocity $\Delta\overline{v}$ is seen when two successive velocity vectors are drawn starting from the same point. The change $\Delta\overline{v}$ is the vector that must be added to $\overline{v}_1$ to get $\overline{v}_2$. On a circular path the vectors are equally long but their directions differ, so $\Delta\overline{v}$ is not zero when the time interval is shorter than one revolution. Acceleration means a change of velocity, not only a change of speed. In uniform circular motion an object is therefore accelerating, and by Newton's second law a net force that is not zero acts on it. This net force points to the side of the centre of the circle, that is, to the inside of the path, not outwards. The magnitude of the acceleration is calculated in the chapter *Centripetal acceleration and the equation of motion in a circle*.
 
 <svg data-fig="dv" viewBox="0 0 600 340" role="img" aria-label="Formula figure: on the left an arc of a circular path and two successive positions of an object, where the velocities are equally long but point in different directions. On the right the same vectors have been moved to start from the same point, and the black arrow from the tip of the first to the tip of the second is the change of velocity. The second velocity is the first velocity plus the change of velocity." style="max-width:100%;font-size:24px">
   <path d="M290,300 L290,292 L289,283.5 L288,275.5 L287,267.5 L285,259.5 L283,251.5 L280.5,244 L277.5,236.5 L274.5,229 L271,221.5 L267,214.5 L262.5,207.5 L258,200.5 L253,194 L248,188 L242.5,182 L236.5,176 L230.5,170.5 L224,165.5 L217.5,160.5 L210.5,156 L203.5,152 L196.5,148 L189,144.5 L181.5,141.5 L174,139 L166,136.5 L158,134.5 L150.5,132.5 L142,131.5 L134,130.5 L126,130 L118,130 L109.5,130.5 L101.5,131 L93.5,132 L85.5,133.5 L77.5,135.5 L69.5,137.5 L62,140.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
@@ -248,6 +248,8 @@ Uniform circular motion is described by the **period** $T$, which is the time in
 f = \frac{1}{T}
 ```
 where $f$ is the rotation frequency ($\tfrac{1}{\text{s}}$) and $T$ the period ($\text{s}$). When the period is $T = 0.50\,\text{s}$, the object makes $2.0$ revolutions per second, that is, $f = 2.0\,\tfrac{1}{\text{s}}$. The rotation frequency is also often given in revolutions per minute. For example, $45\,\tfrac{1}{\text{min}}$ is converted by substituting $1\,\text{min} = 60\,\text{s}$, which gives $45\,\tfrac{1}{\text{min}} = \tfrac{45}{60\,\text{s}} = 0.75\,\tfrac{1}{\text{s}}$.
+
+<figure class="unit-photo"><img src="pics/fy5/playground-carousel.webp" alt="A red hand-pushed roundabout in a playground. The round floor has rails at the edge and an axle in the middle."><figcaption>A playground roundabout. Every point of the roundabout makes a revolution in the same time, but the distance travelled at the edge is longer than near the axle.</figcaption></figure>
 
 In one revolution the object travels a distance equal to the circumference $2\pi r$ of the circle, and this takes the period $T$. Because the speed is constant, the magnitude of the velocity on the circular path, the **speed along the path**, is the distance travelled divided by the time:
 ```latex

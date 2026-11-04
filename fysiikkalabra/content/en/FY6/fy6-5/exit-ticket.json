@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A current of $0.50\\,\\text{A}$ arrives at a junction. Two branches leave the junction, and the current in one of them is $0.35\\,\\text{A}$. How large is the current in the other branch?",
+    "a": "By the current law the sum of the leaving currents is $0.50\\,\\text{A}$, so the current in the other branch is $0.50\\,\\text{A} - 0.35\\,\\text{A} = 0.15\\,\\text{A}$."
+  },
+  {
+    "q": "A series connection has a $9.0\\,\\text{V}$ voltage source and three resistors. The voltages of two resistors are $2.0\\,\\text{V}$ and $3.5\\,\\text{V}$. How large is the voltage of the third resistor?",
+    "a": "By the voltage law the voltages of the resistors are together the voltage of the source, so the voltage of the third resistor is $9.0\\,\\text{V} - 2.0\\,\\text{V} - 3.5\\,\\text{V} = 3.5\\,\\text{V}$."
+  }
+]

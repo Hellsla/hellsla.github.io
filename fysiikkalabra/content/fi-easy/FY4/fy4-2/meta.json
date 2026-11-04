@@ -18,6 +18,28 @@
     "putoamiskiihtyvyys",
     "vapaa pudotus"
   ],
+  "key_concepts": [
+    {
+      "term": "kiihtyvyys",
+      "explain": "Kertoo, kuinka nopeasti nopeus muuttuu. Kiihtyvyys on vektorisuure, eli sillä on suuruus ja suunta."
+    },
+    {
+      "term": "tasaisesti kiihtyvä liike",
+      "explain": "Liike, jossa nopeus muuttuu joka sekunti yhtä paljon. Kiihtyvyys pysyy samana."
+    },
+    {
+      "term": "$(t,v)$-kuvaaja",
+      "explain": "Kuvaaja, jossa vaaka-akselilla on aika ja pystyakselilla nopeus. Suoran jyrkkyys kertoo kiihtyvyyden."
+    },
+    {
+      "term": "hetkellinen nopeus",
+      "explain": "Nopeus yhdellä tietyllä hetkellä, esimerkiksi se, mitä auton nopeusmittari näyttää."
+    },
+    {
+      "term": "vapaa pudotus",
+      "explain": "Putoaminen, jossa kappaleeseen vaikuttaa vain paino. Ilmanvastus on niin pieni, ettei sitä oteta huomioon."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "contribution": "Branching direct-current circuits get two laws: the current law, from conservation of charge, and the voltage law, using potential; potential, the zero point and the potential graph make the sharing of voltage visible.",
+  "learn": [
+    "calculate the currents of a branching circuit with Kirchhoff's current law and Ohm's law.",
+    "determine the potentials at points of a circuit and read a potential graph.",
+    "explain with the voltage law why the voltage of a source is shared among the resistors of a loop."
+  ],
+  "prior": [
+    "The voltage across the branches of a parallel connection is the same, and the same current passes through every part of a series connection (chapter *Resistors in series and in parallel*)",
+    "The voltage of a resistor is $U = RI$ (chapter *Resistance and Ohm's law*)",
+    "Voltage tells how much energy per unit of charge changes from one form to another (chapter *Electric circuit, current and voltage*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Small birds sit in a row on the wire of a high-voltage line. A current of hundreds of amperes flows in the wire, and its voltage relative to the ground is tens or hundreds of kilovolts. Still the birds sit calmly, preen their feathers and fly away unharmed. The wire is bare metal, and the birds' feet are right against it.",
+      "question": "What decides whether current flows through an object that touches a circuit at two points?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: parallel connection",
+      "optional": true,
+      "prompt": "Two different bulbs are connected in parallel to the same battery. Which of the following is always true?",
+      "choices": [
+        {
+          "text": "The voltage across both bulbs is the same.",
+          "correct": true,
+          "feedback": "Correct. In a parallel connection each branch is connected to the same two points, so the voltage across every branch is the same (chapter *Resistors in series and in parallel*). Today we see why this is so and how the current divides among the branches."
+        },
+        {
+          "text": "The same current flows through both bulbs.",
+          "feedback": "The same current passes through components connected in series. In a parallel connection the current divides among the branches, and the currents of different bulbs are different. What they share is the voltage (chapter *Resistors in series and in parallel*)."
+        },
+        {
+          "text": "The voltage of the battery is divided equally between the bulbs.",
+          "feedback": "Voltage is shared among components in a series connection. Bulbs connected in parallel are each directly between the terminals of the battery, so the voltage across each is the whole voltage of the battery (chapter *Resistors in series and in parallel*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: how does the current divide?",
+      "figure": "fy6-5/junction-q",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "A current of $0.30\\,\\text{A}$ arrives at a junction. Two parallel branches leave the junction, with resistors of $30\\,\\Omega$ and $60\\,\\Omega$. How does the current divide between the branches?",
+      "choices": [
+        {
+          "text": "A current of $0.30\\,\\text{A}$ flows into each branch, because the current of the source is enough for both branches.",
+          "feedback": "The values of the model refute this: the currents of the branches are $0.20\\,\\text{A}$ and $0.10\\,\\text{A}$, together $0.30\\,\\text{A}$. No charge is created at the junction, so no more current can leave into the branches than arrives at the junction."
+        },
+        {
+          "text": "A current of $0.15\\,\\text{A}$ flows into each branch, because the current divides equally.",
+          "feedback": "The model calculates a different division: $0.20\\,\\text{A}$ flows into the $30\\,\\Omega$ branch and $0.10\\,\\text{A}$ into the $60\\,\\Omega$ branch. The currents are together $0.30\\,\\text{A}$, but they divide equally only when the resistances of the branches are equal."
+        },
+        {
+          "text": "The currents of the branches are together $0.30\\,\\text{A}$, and the branch with the smaller resistance carries the larger current.",
+          "correct": true,
+          "feedback": "The values of the model support this: the current in the $30\\,\\Omega$ branch is $0.20\\,\\text{A}$ and in the $60\\,\\Omega$ branch $0.10\\,\\text{A}$, together $0.30\\,\\text{A}$. The voltage across the branches is the same $6.0\\,\\text{V}$, so by Ohm's law half the resistance gets twice the current."
+        },
+        {
+          "text": "The currents of the branches are together $0.30\\,\\text{A}$, and the branch with the larger resistance carries the larger current.",
+          "feedback": "In the model the opposite happens: only $0.10\\,\\text{A}$ flows into the $60\\,\\Omega$ branch. A large resistance opposes the current: when the voltage across the branches is the same, the current $I = U : R$ is smaller the larger the resistance is."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: potential at different points of the circuit",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "The circuit has a voltage source of $9.0\\,\\text{V}$, a resistor $R_1 = 10\\,\\Omega$ and after it, in parallel, the resistors $R_2 = 30\\,\\Omega$ and $R_3 = 60\\,\\Omega$. The points $A$–$F$ are marked on the wires: $A$ is right after the positive terminal, $B$ and $C$ after the resistor $R_1$, and $F$ on the wire of the negative terminal. The black lead of the voltmeter is attached to the wire of the negative terminal. The red lead is used to touch the points $A$–$F$ in turn. How does the reading change from one point to another?",
+      "choices": [
+        {
+          "text": "The reading decreases steadily the farther along the wire one goes from the positive terminal.",
+          "feedback": "The readings of the model do not support this: at all points of the same wire the reading is the same, for example $6.0\\,\\text{V}$ at the points $B$ and $C$. The resistance of a wire is so small that the potential does not change in it; it drops only in the resistors."
+        },
+        {
+          "text": "The reading changes only at the resistors, and at all points of the same wire it is the same.",
+          "correct": true,
+          "feedback": "The readings of the model confirm this: the reading is $9.0\\,\\text{V}$ after the positive terminal ($A$), $6.0\\,\\text{V}$ at the points $B$ and $C$, and $0\\,\\text{V}$ at the points $D$, $E$ and $F$. The potential drops $3.0\\,\\text{V}$ in the resistor $R_1$ and $6.0\\,\\text{V}$ in the resistor of the branch, together as much as the voltage of the source."
+        },
+        {
+          "text": "The reading is $9.0\\,\\text{V}$ at every point, because the voltage of the source acts in the whole circuit.",
+          "feedback": "The readings of the model differ from this: only after the positive terminal ($A$) is the reading $9.0\\,\\text{V}$; at the points $B$ and $C$ it is $6.0\\,\\text{V}$ and on the wire of the negative terminal $0\\,\\text{V}$. The voltage of the source is the potential difference between its terminals, and it is shared among the resistors of the loop."
+        },
+        {
+          "text": "The reading is zero everywhere except at the positive terminal of the source, because the voltage is only in the source.",
+          "feedback": "The values of the model refute this: at the points $B$ and $C$ the reading is $6.0\\,\\text{V}$. The meter shows the potential of the measuring point relative to the zero point, and the potential drops gradually, one resistor at a time."
+        }
+      ],
+      "figure": "fy6-5/circuit-q"
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Change the voltage of the source and the resistors and move the red lead of the meter. Follow the currents, the potentials and the potential graph.",
+      "howto": "The sliders set the voltage $U$ of the source and the resistors $R_1$, $R_2$ and $R_3$. *Measuring point* moves the red lead of the voltmeter to the point $A$–$F$ of the wire, and *Zero point* chooses where the black lead of the meter and the earth symbol are attached. In the picture the potential of each point is a blue number, and the blue shade of a wire is darker the higher the potential is. The purple arrows are the currents in the agreed direction from the positive terminal to the negative terminal. Below is the potential graph of the loop $F$ → source → $A$ → $R_1$ → $B$ → $R_2$ → $E$ → $F$, in which the red dashed line is the potential of the measuring point.",
+      "model": "The voltage source is ideal: it has no internal resistance, so the voltage between its terminals is always $U$. The wires have no resistance, and the resistances of the resistors stay constant. The voltmeter draws no current. The numbers are values calculated by the model, not measurements: in a real circuit the wires and the source have a small resistance, so the readings differ slightly.",
+      "calc": "The total resistance of the parallel resistors is $R_{23}$, where $\\tfrac{1}{R_{23}} = \\tfrac{1}{R_2} + \\tfrac{1}{R_3}$, and the current of the whole circuit is\n\n$$I_1 = \\frac{U}{R_1 + R_{23}}$$\n\nThe voltage of the resistor $R_1$ is $U_1 = R_1 I_1$, and by the voltage law the voltage of the branches is $U_2 = U_3 = U - U_1$. The currents of the branches are $I_2 = U_2 : R_2$ and $I_3 = U_3 : R_3$, and their sum is $I_1$. Relative to the negative terminal the potential of the point $A$ is $U$, that of the points $B$ and $C$ is $U - U_1$, and that of the points $D$, $E$ and $F$ is zero. When $B$ is chosen as the zero point, the potential of $B$ is subtracted from all potentials."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: currents at a junction",
+      "intro": "Test prediction 1. The voltage of the source and the resistors $R_1$ and $R_2$ stay constant; change only the resistor $R_3$. Record the currents for at least two values, for example $30\\,\\Omega$, $60\\,\\Omega$ and $120\\,\\Omega$. On every row calculate $I_2 + I_3$ and compare it with the current $I_1$. Which branch carries the larger current?",
+      "initial": {
+        "U": 9,
+        "R1": 10,
+        "R2": 30,
+        "R3": 60,
+        "probe": "A",
+        "ground": "F"
+      },
+      "locked": [
+        "U",
+        "R1",
+        "R2"
+      ],
+      "vary": "R3",
+      "names": {
+        "U": "source voltage U",
+        "R1": "resistor R₁",
+        "R2": "resistor R₂",
+        "R3": "resistor R₃",
+        "probe": "measuring point",
+        "ground": "zero point"
+      },
+      "units": {
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω",
+        "R3": "Ω"
+      },
+      "values": {
+        "probe": {
+          "A": "point A",
+          "B": "point B",
+          "C": "point C",
+          "D": "point D",
+          "E": "point E",
+          "F": "point F"
+        },
+        "ground": {
+          "F": "source's negative terminal",
+          "B": "junction B"
+        }
+      },
+      "measure": [
+        {
+          "key": "I1",
+          "label": "I₁ (A)"
+        },
+        {
+          "key": "I2",
+          "label": "I₂ (A)"
+        },
+        {
+          "key": "I3",
+          "label": "I₃ (A)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: a round trip with the potential meter",
+      "intro": "Test prediction 2. The zero point is the negative terminal of the source, and the values of the circuit stay constant; move only the measuring point. Record the potential at at least three points, preferably at all the points $A$–$F$. At which points is the reading the same, and where does it change?",
+      "initial": {
+        "U": 9,
+        "R1": 10,
+        "R2": 30,
+        "R3": 60,
+        "probe": "A",
+        "ground": "F"
+      },
+      "locked": [
+        "U",
+        "R1",
+        "R2",
+        "R3",
+        "ground"
+      ],
+      "vary": "probe",
+      "names": {
+        "U": "source voltage U",
+        "R1": "resistor R₁",
+        "R2": "resistor R₂",
+        "R3": "resistor R₃",
+        "probe": "measuring point",
+        "ground": "zero point"
+      },
+      "units": {
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω",
+        "R3": "Ω"
+      },
+      "values": {
+        "probe": {
+          "A": "point A",
+          "B": "point B",
+          "C": "point C",
+          "D": "point D",
+          "E": "point E",
+          "F": "point F"
+        },
+        "ground": {
+          "F": "source's negative terminal",
+          "B": "junction B"
+        }
+      },
+      "measure": [
+        {
+          "key": "Vp",
+          "label": "V (V)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: move the zero point",
+      "optional": true,
+      "intro": "The values of the circuit stay constant; change only the zero point. Record the potentials of the points $A$, $B$ and $F$ and the voltage of the resistor $R_1$ with each zero point. What changes and what does not?",
+      "initial": {
+        "U": 9,
+        "R1": 10,
+        "R2": 30,
+        "R3": 60,
+        "probe": "A",
+        "ground": "F"
+      },
+      "locked": [
+        "U",
+        "R1",
+        "R2",
+        "R3",
+        "probe"
+      ],
+      "vary": "ground",
+      "names": {
+        "U": "source voltage U",
+        "R1": "resistor R₁",
+        "R2": "resistor R₂",
+        "R3": "resistor R₃",
+        "probe": "measuring point",
+        "ground": "zero point"
+      },
+      "units": {
+        "U": "V",
+        "R1": "Ω",
+        "R2": "Ω",
+        "R3": "Ω"
+      },
+      "values": {
+        "probe": {
+          "A": "point A",
+          "B": "point B",
+          "C": "point C",
+          "D": "point D",
+          "E": "point E",
+          "F": "point F"
+        },
+        "ground": {
+          "F": "source's negative terminal",
+          "B": "junction B"
+        }
+      },
+      "measure": [
+        {
+          "key": "VA",
+          "label": "V_A (V)"
+        },
+        {
+          "key": "VB",
+          "label": "V_B (V)"
+        },
+        {
+          "key": "VF",
+          "label": "V_F (V)"
+        },
+        {
+          "key": "U1",
+          "label": "U₁ (V)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: currents and potentials",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Based on your tables, write: what is the relationship between the currents $I_1$, $I_2$ and $I_3$ on every row, and which branch carries the larger current? At which points of the circuit does the potential change, and how large are the changes in total?",
+      "model": "On every row $I_2 + I_3 = I_1$; for example, when $R_3 = 60\\,\\Omega$, the currents are $0.20\\,\\text{A} + 0.10\\,\\text{A} = 0.30\\,\\text{A}$. The current arriving at the junction divides among the branches, and no current disappears or appears. The branch with the smaller resistance carries the larger current, because the voltage across the branches is the same. The potential was $9.0\\,\\text{V}$ after the positive terminal ($A$), $6.0\\,\\text{V}$ at the points $B$ and $C$ and $0\\,\\text{V}$ at the points $D$, $E$ and $F$: it stayed the same at the points of the same wire and changed only in the source and the resistors. In the source the potential rose by $9.0\\,\\text{V}$, and in the resistors it dropped by the same amount in total, $3.0\\,\\text{V} + 6.0\\,\\text{V}$. The values are calculated by the model: in the model the wires and the source have no resistance.",
+      "criteria": [
+        "The answer says that the sum of the currents of the branches is on every row the current of the main wire, and justifies it with the numbers of the table.",
+        "The answer says that the branch with the smaller resistance carries the larger current.",
+        "The answer says that the potential is the same at the points of the same wire and changes only in the source and the resistors.",
+        "The answer says that the drops of potential in the resistors are together as large as the rise in the source."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments and with Kirchhoff's laws. Then return to the question at the start: why does no significant current flow through a bird sitting on a wire, even though the potential of the wire relative to the ground is high?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The circuit has a $9.0\\,\\text{V}$ source, a resistor $R_1 = 10\\,\\Omega$ and after it, in parallel, the resistors $R_2 = 30\\,\\Omega$ and $R_3 = 60\\,\\Omega$. The current of the main wire has been correctly calculated as $I_1 = 0.30\\,\\text{A}$. A student calculates the currents of the branches like this:\n\n$$\\begin{aligned} I_2 &= \\frac{9.0\\,\\text{V}}{30\\,\\Omega} = 0.30\\,\\text{A} \\\\ I_3 &= \\frac{9.0\\,\\text{V}}{60\\,\\Omega} = 0.15\\,\\text{A} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The voltage of the branches is not the voltage of the source but $9.0\\,\\text{V} - R_1 I_1 = 6.0\\,\\text{V}$, so $I_2 = 0.20\\,\\text{A}$ and $I_3 = 0.10\\,\\text{A}$.",
+          "correct": true,
+          "feedback": "Correct. By the voltage law part of the voltage of the source, $10\\,\\Omega \\cdot 0.30\\,\\text{A} = 3.0\\,\\text{V}$, stays across the resistor $R_1$. The error could have been noticed from the current law: the student's branch currents are together $0.45\\,\\text{A}$, more than arrives at the junction."
+        },
+        {
+          "text": "The currents have been calculated correctly, but the current $I_1$ of the main wire is wrong: it should be $0.45\\,\\text{A}$.",
+          "feedback": "The current of the main wire is correct: the total resistance is $10\\,\\Omega + 20\\,\\Omega = 30\\,\\Omega$ and $9.0\\,\\text{V} : 30\\,\\Omega = 0.30\\,\\text{A}$. The error is in the branches, whose voltage is not the whole voltage of the source."
+        },
+        {
+          "text": "In parallel branches the current is the same, so the current of each branch is $0.15\\,\\text{A}$.",
+          "feedback": "In parallel branches it is the voltage that is the same, not the current. The currents of the branches are different because the resistances are different: the current in the $30\\,\\Omega$ branch is twice the current in the $60\\,\\Omega$ branch."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A small bird sits on a high-voltage wire, and the distance between its feet is $4.0\\,\\text{cm}$. A current of $400\\,\\text{A}$ flows in the wire, and the resistance of the conductor is $0.12\\,\\Omega$ per kilometre. How large is the voltage between the bird's feet? Assume that almost all the current flows along the conductor. Give the answer in millivolts.",
+      "answer": 1.92,
+      "unit": "mV",
+      "tolerance": 0.02,
+      "hints": [
+        "The voltage between the bird's feet is the same as the voltage of the piece of conductor between the feet. How long is that piece, and what is its resistance?",
+        "The resistance of the piece is $0.12\\,\\Omega$ divided by a kilometre and multiplied by the length of the piece. Convert both $1\\,\\text{km} = 1000\\,\\text{m}$ and $4.0\\,\\text{cm} = 0.040\\,\\text{m}$.",
+        "$R = \\dfrac{0.12\\,\\Omega}{1000\\,\\text{m}} \\cdot 0.040\\,\\text{m} = 4.8 \\cdot 10^{-6}\\,\\Omega$, and the voltage is $U = RI$."
+      ],
+      "mistakes": [
+        {
+          "value": 192,
+          "feedback": "You used $4.0\\,\\text{m}$ as the length. The distance between the feet is $4.0\\,\\text{cm} = 0.040\\,\\text{m}$, so the voltage is a hundred times smaller."
+        },
+        {
+          "value": 1920,
+          "feedback": "You used the resistance $0.12\\,\\Omega$ per metre. The resistance is given per kilometre, so the resistance of a metre is $0.12\\,\\Omega : 1000 = 0.000\\,12\\,\\Omega$."
+        }
+      ],
+      "solution": "**Given:** current $I = 400\\,\\text{A}$, resistance of the conductor $0.12\\,\\Omega$ per kilometre, distance between the feet $l = 4.0\\,\\text{cm}$\n\n**Find:** the voltage $U$ between the feet in millivolts\n\n**Principle:** The bird and the piece of conductor between its feet are parallel branches between the same two points, so the voltage across them is the same. The resistance of the piece is negligible compared with the resistance of the bird, so by Ohm's law a negligible current flows through the bird, and by the current law almost all the current continues along the piece. Ohm's law gives the voltage of the piece.\n\n**Formula:** the resistance of the piece $R = \\dfrac{0.12\\,\\Omega}{1\\,\\text{km}} \\cdot l$ and $U = RI$, so $U = \\dfrac{0.12\\,\\Omega}{1\\,\\text{km}} \\cdot l \\cdot I$\n\n**Conversions:** $1\\,\\text{km} = 1000\\,\\text{m}$, $l = 4.0\\,\\text{cm} = 4.0 \\cdot 0.01\\,\\text{m} = 0.040\\,\\text{m}$ and finally $1\\,\\text{V} = 1000\\,\\text{mV}$.\n\n**Substitution:** $R = \\dfrac{0.12\\,\\Omega}{1000\\,\\text{m}} \\cdot 0.040\\,\\text{m} = 4.8 \\cdot 10^{-6}\\,\\Omega$ and $U = 4.8 \\cdot 10^{-6}\\,\\Omega \\cdot 400\\,\\text{A} = 1.92 \\cdot 10^{-3}\\,\\text{V} = 1.92\\,\\text{mV}$\n\n**Answer:** $1.9\\,\\text{mV}$, two significant figures like the resistance $0.12\\,\\Omega$ and the distance between the feet $4.0\\,\\text{cm}$.\n\n**Reasonableness:** Over a kilometre the voltage would be $0.12\\,\\Omega \\cdot 400\\,\\text{A} = 48\\,\\text{V}$, and $4\\,\\text{cm}$ is the $25\\,000$th part of that: $48\\,\\text{V} : 25\\,000 \\approx 2\\,\\text{mV}$. Such a small voltage does not drive a significant current through the bird's body, even though the potential of the wire relative to the ground is tens or hundreds of kilovolts."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. The tasks of level 1 use a single law, the tasks of level 2 combine Kirchhoff's laws and Ohm's law, and level 3 requires reasoning in branching circuits and in the choice of the zero point."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A bulb and a resistor are connected in series to a battery. The ammeter between the positive terminal of the battery and the bulb shows $0.40\\,\\text{A}$. What does an ammeter connected between the bulb and the resistor show?",
+      "choices": [
+        {
+          "text": "$0.40\\,\\text{A}$, because the same amount of charge passes through every part of a series connection each second.",
+          "correct": true,
+          "feedback": "Correct. No charge disappears in the bulb, so the current is the same everywhere in a series connection. In the bulb electrical energy changes into light and internal energy of the filament, and the potential drops, but the current is not used up."
+        },
+        {
+          "text": "Less than $0.40\\,\\text{A}$, because the bulb uses up part of the current as light and heat.",
+          "feedback": "The bulb changes electrical energy into light and internal energy of the filament, but the charges do not disappear. After the bulb the current is the same $0.40\\,\\text{A}$; in the bulb the potential decreases, not the current."
+        },
+        {
+          "text": "More than $0.40\\,\\text{A}$, because after the bulb only one component opposes the current.",
+          "feedback": "The current does not depend on how many components remain after the meter: the current of a series connection is decided by the resistance of the whole loop, and the same current passes through every part. The meter shows $0.40\\,\\text{A}$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Moving the zero point",
+      "prompt": "The point $A$ is on the wire of the positive terminal of the source and the point $B$ after the resistor $R_1$. When the zero point is the negative terminal of the source, the potential of the point $A$ is $9.0\\,\\text{V}$ and the potential of the point $B$ is $6.0\\,\\text{V}$. After that the point $B$ is chosen as the zero point. What is the potential of the point $A$ now? Give the answer in volts.",
+      "answer": 3.0,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "Does the voltage between the points $A$ and $B$ change when the zero point moves?",
+        "In the new choice $V_B = 0$, and $V_A - V_B$ is the same voltage as before.",
+        "$U_{AB} = 9.0\\,\\text{V} - 6.0\\,\\text{V}$, so $V_A = 0 + U_{AB}$."
+      ],
+      "mistakes": [
+        {
+          "value": 15,
+          "feedback": "You added the potentials. Voltage is the difference of potentials: $U_{AB} = 9.0\\,\\text{V} - 6.0\\,\\text{V} = 3.0\\,\\text{V}$, and it does not change when the zero point is moved."
+        },
+        {
+          "value": 9,
+          "feedback": "Potential depends on the zero point. When the potential of the point $B$ is agreed to be $0\\,\\text{V}$, the potentials of all points decrease by $6.0\\,\\text{V}$, so the potential of the point $A$ is $3.0\\,\\text{V}$."
+        }
+      ],
+      "solution": "**Given:** relative to the negative terminal $V_A = 9.0\\,\\text{V}$ and $V_B = 6.0\\,\\text{V}$; the new zero point is $B$\n\n**Find:** the potential $V_A'$ of the point $A$ in volts when $V_B' = 0$\n\n**Principle:** Voltage is the difference between the potentials of two points, and it does not depend on the choice of the zero point. Moving the zero point changes all potentials by the same amount.\n\n**Formula:** $V_A' - V_B' = V_A - V_B$, from which $V_A' = V_B' + V_A - V_B$\n\n**Conversions:** Not needed: the potentials are in volts.\n\n**Substitution:** $V_A' = 0\\,\\text{V} + 9.0\\,\\text{V} - 6.0\\,\\text{V} = 3.0\\,\\text{V}$\n\n**Answer:** $3.0\\,\\text{V}$, to one decimal place like the given potentials.\n\n**Reasonableness:** When the old value of $B$, $6.0\\,\\text{V}$, is subtracted from all potentials, $B$ gets the value $0$ and $A$ the value $3.0\\,\\text{V}$. The potential of the negative terminal of the source is now $-6.0\\,\\text{V}$, and the voltage between the terminals is still $3.0\\,\\text{V} - (-6.0\\,\\text{V}) = 9.0\\,\\text{V}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain the potential graph",
+      "optional": true,
+      "prompt": "Explain what the rise, the drop and the horizontal part of a potential graph tell about a circuit. Why does the graph end at the same value from which it started, when the loop has been traversed once?",
+      "model": "The rise is at the voltage source: in the source the potential rises from the negative terminal to the positive terminal by the voltage of the source, and the charges gain energy. The drop is at a resistor: in the direction of the current the potential drops by the voltage $RI$, and electrical energy changes into internal energy of the resistor. The horizontal part is a wire whose resistance is neglected, so all its points have the same potential. When the loop has been traversed, we are at the same point as at the start, and one point has only one potential. Therefore the rises and drops are together zero: this is Kirchhoff's voltage law.",
+      "criteria": [
+        "The answer says that the rise is in the source and its size is the voltage of the source.",
+        "The answer says that the drop is in a resistor and its size is the voltage $RI$ of the resistor.",
+        "The answer says that the horizontal part is a wire, at all points of which the potential is the same.",
+        "The answer justifies the return to the same value by the fact that one point has one potential, and names the voltage law."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer first yourself and only then open the answer."
+    }
+  ]
+}

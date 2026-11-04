@@ -477,8 +477,10 @@ def _line(fname, body, lid):
     if fname == "meta.json":
         if s.startswith('"sim"'): return "simulation"
         if s.startswith(('"title"', '"glossary"')): return "wording"
+        if s.startswith(('"key_concepts"', '"term"')): return "wording"   # a glossary term (check_i18n.py), its symbols set as LaTeX
+        if s.startswith('"explain"'): return "numbers" if SUBSTANTIVE.search(body) else "wording"   # Selkeä suomi "Luvun tärkeät käsitteet" (NOTES.md §12): prose
         if s.startswith(('"image"', '"solutions"')): return "structure"
-        if s.strip() in ("{", "}", "[", "]", "],", ""): return "comments"
+        if s.strip() in ("{", "}", "},", "[", "]", "],", ""): return "comments"
         return "objectives"
     if fname.endswith(".md") and PHOTO_LINE.match(s): return "photo"       # a photograph with its alt text and caption
     if fname.endswith(".md") and s.startswith("# "): return "wording"      # the page title, the same as meta.json "title"
@@ -486,7 +488,7 @@ def _line(fname, body, lid):
     return "numbers" if SUBSTANTIVE.search(body) else "wording"
 
 
-PHOTO_LINE = re.compile(r'<figure class="unit-photo"><img src="(?:pics/[a-z0-9]+|shared/pics)/[^"]+"[^>]*>(?:<figcaption>.*?</figcaption>)?</figure>\s*$')
+PHOTO_LINE = re.compile(r'<figure class="unit-photo(?: wide)?"><img src="(?:pics/[a-z0-9]+|shared/pics)/[^"]+"[^>]*>(?:<figcaption>.*?</figcaption>)?</figure>\s*$')
 
 
 def _is_photo(path):

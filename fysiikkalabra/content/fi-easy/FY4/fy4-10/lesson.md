@@ -232,6 +232,8 @@ Kuvassa samanmassaiset vaunut tarttuvat yhteen tarranauhalla. Kokonaisliikemää
 ### Vastaus alun kysymykseen
 Biljardipallot ovat yhtä raskaita, ja niiden törmäys on lähes kimmoisa. Lyöntipallon nopeus on $v$. Liikemäärän säilymisestä seuraa, että pallojen nopeuksien summa pysyy samana: $v_1' + v_2' = v$. Liike-energian säilymisestä seuraa, että nopeuksien neliöiden summa pysyy samana: $v_1'^2 + v_2'^2 = v^2$. Korotetaan ensimmäinen ehto toiseen potenssiin ja vähennetään siitä toinen ehto. Saadaan $2 v_1' v_2' = 0$, joten toinen palloista on törmäyksen jälkeen levossa. Lyöntipallo ei voi kulkea toisen pallon läpi, joten se pysähtyy. Toinen pallo jatkaa nopeudella $v$. Oikeassa pelissä pallot myös pyörivät, eikä törmäys ole täysin kimmoisa. Siksi lyöntipallo voi jäädä hiukan liikkeeseen.
 
+<figure class="unit-photo"><img src="pics/fy4/newtons-cradle.webp" alt="Newtonin kehto: rivi riippuvia teräskuulia."><figcaption>Newtonin kehto. Vasemmalta tuleva kuula osuu muihin kuuliin. Liikkuva kuula näkyy kuvassa epäselvänä.</figcaption></figure>
+
 ## Kaava: Liikemäärän säilymislaki
 
 ### Säilymislaki vektoreina ja yhdessä ulottuvuudessa
@@ -384,7 +386,7 @@ Ratapihalla tavaravaunu A, jonka massa on $32\,000\,\text{kg}$, liikkuu nopeudel
 **Järkevyys.** Yhteinen nopeus on vaunujen alkunopeuksien $0{,}50\,\text{m/s}$ ja $1{,}5\,\text{m/s}$ välissä. Se on lähempänä raskaamman vaunun A nopeutta, kuten pitääkin. Liike-energia pienenee $38{,}3\,\text{kJ}$:sta $32{,}5\,\text{kJ}$:iin eli noin $15\,\%$. Se sopii täysin kimmottomaan törmäykseen: liike-energiaa muuttuu kytkimien ja puskurien sisäenergiaksi ja ääneksi.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että liike-energia säilyy törmäyksessä samalla tavalla kuin liikemäärä. Liikemäärä säilyy aina, kun ulkoisten voimien impulssi on merkityksettömän pieni. Liike-energia säilyy vain kimmoisassa törmäyksessä. Jos yhteen tarttuvien vaunujen nopeus lasketaan liike-energian säilymisestä, tulos on liian suuri.
+Moni ajattelee, että liike-energia säilyy törmäyksessä samalla tavalla kuin liikemäärä. Liikemäärä säilyy aina, kun ulkoisten voimien impulssi on niin pieni, ettei sillä ole merkitystä. Liike-energia säilyy vain kimmoisassa törmäyksessä. Jos yhteen tarttuvien vaunujen nopeus lasketaan liike-energian säilymisestä, tulos on liian suuri.
 
 Toinen virhe on unohtaa etumerkit. Jos kappaleet liikkuvat toisiaan kohti, niiden liikemäärät ovat vastakkaissuuntaiset. Silloin toinen liikemääristä on negatiivinen. Kolmas virhe on ajatella, että liikemäärä katoaa, kun lattialle pudonnut savipallo pysähtyy. Pallon liikemäärä siirtyy Maahan. Pallo ja Maa muodostavat systeemin, ja sen kokonaisliikemäärä säilyy. Maan massa on kuitenkin niin suuri, ettei sen nopeuden muutosta huomaa.
 

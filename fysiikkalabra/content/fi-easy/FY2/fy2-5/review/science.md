@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ae11bc9f9a4036e3
+CONTENT-HASH: d97d2d20d17f17de
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- New hero: the larger petrol flame shows burning rate (power), which the lesson's own feedback separates from heating value; the same image passed in the fi version, so not blocking.
 
 ## Checked
-- Translation review against the reviewed Finnish (2026-10-29, after the option rebalance 01da3ae6): lesson.md opening question; choices of the energy-conversion check, the fuel table, the mass table and the concept check; new checks 2 (43 vs 15 MJ/kg, 1.0 kg vs 4.0 kg, 60 MJ vs 43 MJ, E = Hm) and 3 (22 MJ/kg food label vs 15 MJ/kg firewood); renumbered checks 4 and 5; exit ticket with the single E = Hm question. Physics, numbers, units, LaTeX, correct options and per-option feedback match the Finnish; figures labelled in the language. Selkeä suomi: short sentences, same terms, decimal comma, every formula kept.
+- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.

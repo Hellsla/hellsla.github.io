@@ -413,7 +413,7 @@ def experiment_html(a, md, lid):
     bare = lambda k: tex_name(re.sub(r"\s+\([^()]*\)$", "", names.get(k, k)))   # "wavelength λ (nm)" -> "wavelength λ" beside a value that has its unit
     def fmt(k, v):   # name, value and unit on one line; a number and its unit are maths (teacher 2026-10-28, "kaikki LaTeXilla")
         tn = bare
-        if str(v) in words.get(k, {}): return f'<span class="nobr">{tn(k)}: {esc(words[k][str(v)])}</span>'
+        if str(v) in words.get(k, {}): return f'<span>{tn(k)}: {esc(words[k][str(v)])}</span>'   # words may wrap at 360 px ("direction of the current: downwards at the front", FY7 2026-11-04)
         if isinstance(v, str) and str(sim_words.get(v, v)) != v: v = sim_words[v]   # a sim value named in the page's language (lang sims.<id>.values), the Finnish page unchanged
         u = units.get(k, "")
         if isinstance(v, str) and re.fullmatch(r"-?\d+(?:\.\d+)?", v) and (not u or UNIT.fullmatch(u)):   # a select's number ("0.5"):
@@ -497,6 +497,25 @@ def intro_html(intro, inquiry, n_opt, md):
     return f'<div class="intro"><div class="intro-head">{head}</div>{row}' + (f'<div class="intro-more">{more}</div>' if more else "") + '</div>'
 
 
+KEY_CONCEPTS = (3, 5)    # how many "Luvun tärkeät käsitteet" a Selkeä suomi lesson shows (teacher 2026-11-03)
+
+
+def key_concepts_html(lid, items, md):
+    """"Luvun tärkeät käsitteet" (teacher 2026-11-03, NOTES.md §12): the S2 vocabulary activity of a Selkeä suomi
+    lesson, between the opening and the first stage. meta.json "key_concepts" lists 3–5 {"term", "explain"}: the
+    Finnish physics term in bold and a short plain-Finnish explanation. The student writes the meanings in a notebook
+    in any language (teacher 2026-11-03: no note fields on the page). Voluntary and never assessed; no language is
+    asked or translated. Only a language whose lessons carry the list shows it (check_i18n.py: fi-easy only)."""
+    if not items: return ""
+    rows = []
+    for k in items:
+        term = k["term"][:1].upper() + k["term"][1:]   # a symbol in the term is LaTeX: "$(t,x)$-kuvaaja"
+        rows.append(f'<dt class="kc-term">{inline(md, term)}</dt><dd class="kc-explain">{inline(md, k["explain"])}</dd>')
+    return (f'<section class="kc" id="kasitteet" aria-labelledby="kc-{lid}-h"><h2 class="intro-h kc-h" id="kc-{lid}-h">{T("lesson.kc_title")} '
+            f'<span class="opt-tag">{T("lesson.kc_optional")}</span></h2><p class="kc-lead">{T("lesson.kc_lead")}</p>'
+            f'<dl class="kc-list">{"".join(rows)}</dl></section>')
+
+
 SENT = re.compile(r"(?<=[.!])\s+(?=[A-ZÅÄÖ])")
 
 
@@ -537,7 +556,7 @@ def task_text(html, cls="task", pid=None):
 
 def toc_link(sid, n, title):
     """A stage in the navigation: its number (as on the stage heading) and its name. The chip bar shows the short name
-    (NAV); the side column on a wide screen shows the rest of the title too ("Tarkista osaamisesi", .toc-rest)."""
+    (NAV); a wide window shows the rest of the title too ("Tarkista osaamisesi", .toc-rest)."""
     short = nav().get(sid, title)
     rest = title[len(short):] if title.startswith(short) else ""
     return (f'<a href="#{sid}"><span class="toc-no" aria-hidden="true">{n}</span><span class="toc-label">{short}'
@@ -569,7 +588,7 @@ def render(folder, inquiry, parts, md):
         by_stage["selita"].append({"id": "theory-rest", "type": "theory", "stage": "selita", "sections": leftover})
     elif leftover:                                     # append to the last theory activity in Teoriatiivistelmä
         last = [a for a in by_stage["selita"] if a["type"] == "theory"][-1]; last["sections"] = list(last["sections"]) + leftover
-    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md)]
+    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md) + parts.get("concepts", "")]
 
     def act(a):
         t, aid = a["type"], a["id"]

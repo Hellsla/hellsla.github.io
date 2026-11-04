@@ -1,7 +1,7 @@
 {
   "id": "fy5-7",
   "course": "FY5",
-  "title": "Jaksollinen liike",
+  "title": "Värähtelyn suureet: jaksonaika, taajuus ja amplitudi",
   "goals": [
     "LOPS FY5: jaksollinen liike, jaksonaika, taajuus ja amplitudi",
     "LOPS FY5: osaa kuvata jaksollista liikettä fysikaalisilla ja matemaattisilla käsitteillä",
@@ -17,6 +17,28 @@
     "amplitudi",
     "vaihe",
     "sinifunktion sovitus"
+  ],
+  "key_concepts": [
+    {
+      "term": "jaksollinen liike",
+      "explain": "Liike, joka toistuu samanlaisena yhtä pitkin väliajoin, esimerkiksi heilurin heilahtelu."
+    },
+    {
+      "term": "tasapainoasema",
+      "explain": "Asema, jossa värähtelijä pysyisi levossa. Poikkeama mitataan siitä."
+    },
+    {
+      "term": "jaksonaika",
+      "explain": "Yhden täyden värähdyksen kesto. Sen jälkeen kappale on taas samassa paikassa ja liikkuu samaan suuntaan."
+    },
+    {
+      "term": "taajuus",
+      "explain": "Kertoo, montako täyttä värähdystä tapahtuu sekunnissa. Yksikkö on hertsi."
+    },
+    {
+      "term": "amplitudi",
+      "explain": "Värähtelijän suurin poikkeama tasapainoasemasta."
+    }
   ],
   "sim": true,
   "solutions": "all",

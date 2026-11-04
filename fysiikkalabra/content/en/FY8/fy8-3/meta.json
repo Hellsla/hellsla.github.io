@@ -1,0 +1,21 @@
+{
+  "id": "fy8-3",
+  "course": "FY8",
+  "title": "Energy levels of the hydrogen atom and the Bohr model",
+  "goals": [
+    "LOPS FY8: structure of the atom, the quantum states of the electrons of an atom and the principle of the wave-mechanical atomic model",
+    "Clarification: the energy levels of the hydrogen atom in the field of the nucleus, transitions and spectral lines; the Bohr model as a historical intermediate stage"
+  ],
+  "prerequisites": [
+    "fy8-2"
+  ],
+  "glossary": [
+    "perustila",
+    "viritystila",
+    "ionisaatioenergia",
+    "Bohrin malli"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

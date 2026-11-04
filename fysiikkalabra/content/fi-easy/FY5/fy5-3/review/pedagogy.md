@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 5ba8167a14fad42b
+CONTENT-HASH: bbf844f09f395efa
 ## Blocking
-(none)
+
 ## Polish
-- [Minor] none beyond what the Finnish reviews noted (teaching structure is unchanged).
+- Otsikossa on *jaksonaika*, mutta teksti ja käsitelista käyttävät vain sanaa *kierrosaika*. Selitykseen voisi lisätä "kierrosaika eli jaksonaika", jotta S2-lukija yhdistää otsikon ja käsitteen.
+- *ratanopeus*: "Nopeus osoittaa radan suuntaan" on epätarkka; "ympyrän tangentin suuntaan" tai "radan kulkusuuntaan" olisi selvempi.
 ## Checked
-- lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json and the sim labels (lang/fi-easy.json sims.fy5-3): every stage, prediction, hint, feedback, rubric and model answer is kept; the learning path, activity order and workload equal the Finnish version.
-- Plain Finnish: short sentences, terms explained at first use, nothing dropped relative to the Finnish version.
-- Captures opened: sim-390, lab-1280-1.
+batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.

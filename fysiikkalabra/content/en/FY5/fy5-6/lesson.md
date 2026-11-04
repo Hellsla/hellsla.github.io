@@ -1,4 +1,4 @@
-# Circular orbits under gravity
+# Satellites and planets in circular orbits
 
 > **Why** does the International Space Station ISS not fall to the Earth, and why do the astronauts float inside it?
 
@@ -459,7 +459,7 @@
 </svg>
 
 ## Key idea
-A body that goes round another body under gravity is called a satellite. The Moon is a natural satellite of the Earth; the ISS and weather satellites are built by people. The path along which a satellite goes round is called an orbit. In space practically only one force acts on a satellite: the gravitational force of the Earth, which points towards the centre of the Earth. Because it is the only force, it is also the net force. In the chapter *Uniform circular motion and centripetal acceleration* we found that in uniform circular motion the net force points to the centre of the path and gives the body its centripetal acceleration. In a circular orbit the gravitational force does exactly this: it is perpendicular to the velocity, so it does not change the speed but turns the direction of the velocity all the time.
+A body that goes round another body under gravity is called a satellite. The Moon is a natural satellite of the Earth; the ISS and weather satellites are built by people. The path along which a satellite goes round is called an orbit. In space practically only one force acts on a satellite: the gravitational force of the Earth, which points towards the centre of the Earth. Because it is the only force, it is also the net force. In the chapter *Centripetal acceleration and the equation of motion in a circle* we found that in uniform circular motion the net force points to the centre of the path and gives the body its centripetal acceleration. In a circular orbit the gravitational force does exactly this: it is perpendicular to the velocity, so it does not change the speed but turns the direction of the velocity all the time.
 
 <svg data-fig="orbit" viewBox="0 0 600 360" role="img" aria-label="Diagram, not to scale: a satellite orbits the Earth in a circular orbit drawn with a dashed line. The satellite is at the highest point of the orbit. The blue velocity arrow v points to the right along the tangent of the orbit. The red arrow of the gravitational force F points towards the centre of the Earth, and beside it the orange arrow of the centripetal acceleration a n points in the same direction. A thin dashed line continues straight to the right: the satellite would move along it without gravity." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy56o-earth" cx="0.35" cy="0.35" r="0.8"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient></defs>
@@ -596,7 +596,7 @@ The orbital speed depends only on the mass $M$ of the central body and on the or
   <foreignObject x="235" y="95" width="150" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v = \sqrt{\dfrac{\gamma M}{r}}$</div></foreignObject>
 </svg>
 
-In one revolution the satellite travels the circumference $2\pi r$ of the circle, so the orbital period follows from the relation $v = \tfrac{2\pi r}{T}$ of the chapter *Uniform circular motion and centripetal acceleration*:
+In one revolution the satellite travels the circumference $2\pi r$ of the circle, so the orbital period follows from the relation $v = \tfrac{2\pi r}{T}$ of the chapter *Centripetal acceleration and the equation of motion in a circle*:
 ```latex
 T = \frac{2\pi r}{v}
 ```
@@ -632,6 +632,8 @@ The station and the astronaut are in free fall: only gravity acts on each, and e
   <foreignObject x="511.5" y="203.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
   <foreignObject x="427.5" y="341.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$N = 0$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy5/iss-from-soyuz.webp" alt="The International Space Station with its solar panels against black space. The cloudy surface of the Earth is visible below."><figcaption>The International Space Station photographed from a Soyuz spacecraft in October 2018. The station is always in free fall towards the Earth, but its orbital speed is so high that it never hits the Earth.</figcaption></figure>
 
 The same state can be experienced for a moment on the Earth too: during a jump, in a freely falling lift, or in an aeroplane whose engines are adjusted so that it flies along the path of a projectile. Weightlessness is not explained by any "centrifugal force" cancelling gravity. If some force cancelled gravity, the net force would be zero, and the station would continue straight ahead and would not orbit the Earth.
 

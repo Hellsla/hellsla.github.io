@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-1-L1-01",
+      "level": 1,
+      "text": "Vihreä laserosoitin lähettää valoa. Valon aallonpituus on $532\\,\\text{nm}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka suuri on yhden fotonin energia? Anna vastaus jouleina.",
+      "answer": 3.73e-19,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-02",
+      "level": 1,
+      "text": "Mikroaaltouuni lämmittää ruokaa sähkömagneettisella säteilyllä. Säteilyn taajuus on $2{,}45\\,\\text{GHz}$. Planckin vakio on $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$. Kuinka suuri on yhden mikroaaltofotonin energia? Anna vastaus jouleina.",
+      "answer": 1.62e-24,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-03",
+      "level": 1,
+      "text": "Fotonin energia on $3{,}2 \\cdot 10^{-19}\\,\\text{J}$. Yksi elektronivoltti on $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka suuri on fotonin energia elektronivoltteina?",
+      "answer": 2.0,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-04",
+      "level": 1,
+      "text": "Vettä ja pintoja puhdistetaan UV-C-lampuilla. Niiden säteilyn aallonpituus on $254\\,\\text{nm}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka suuri on yhden fotonin energia? Anna vastaus elektronivoltteina.",
+      "answer": 4.88,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L1-05",
+      "level": 1,
+      "text": "Sinkin irrotustyö on $4{,}31\\,\\text{eV}$. Irrotustyö on pienin energia, jolla elektroni saadaan irti metallista. Sinkkilevyyn osuu fotoneja, joiden energia on $5{,}00\\,\\text{eV}$. Kuinka suuri on irtoavien elektronien suurin liike-energia? Anna vastaus elektronivoltteina.",
+      "answer": 0.69,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-1-L2-01",
+      "level": 2,
+      "text": "Cesiumin irrotustyö on $2{,}14\\,\\text{eV}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Mikä on pisin aallonpituus, jolla valo vielä irrottaa elektroneja cesiumista? Anna vastaus nanometreinä.",
+      "answer": 579,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L2-02",
+      "level": 2,
+      "text": "Punainen laserosoitin lähettää valoa. Valon aallonpituus on $650\\,\\text{nm}$ ja teho $5{,}0\\,\\text{mW}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ ja $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$. Kuinka monta fotonia laser lähettää sekunnissa?",
+      "answer": 1.6e+16,
+      "unit": "1/s",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-1-L2-03",
+      "level": 2,
+      "text": "Kaukoultraviolettilamppu lähettää säteilyä, jonka aallonpituus on $222\\,\\text{nm}$. Säteily osuu magnesiumpintaan. Magnesiumin irrotustyö on $3{,}68\\,\\text{eV}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka suuri on irtoavien elektronien suurin liike-energia? Anna vastaus elektronivoltteina.",
+      "answer": 1.91,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L2-04",
+      "level": 2,
+      "text": "Tuntematonta metallia valaistaan ultraviolettisäteilyllä. Säteilyn aallonpituus on $300\\,\\text{nm}$. Irtoavien elektronien suurimmaksi liike-energiaksi mitataan $1{,}85\\,\\text{eV}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka suuri on metallin irrotustyö? Anna vastaus elektronivoltteina.",
+      "answer": 2.28,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-1-L3-01",
+      "level": 3,
+      "text": "Natriumpinnan irrotustyö on $2{,}28\\,\\text{eV}$. Pintaa valaistaan ultraviolettisäteilyllä, jonka aallonpituus on $350\\,\\text{nm}$. Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka suuri on nopeimpien irtoavien elektronien vauhti? Anna vastaus yksikössä $\\text{m/s}$.",
+      "answer": 666000.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L3-02",
+      "level": 3,
+      "text": "Natriumpinnan irrotustyö on $2{,}28\\,\\text{eV}$. Pintaa valaistaan hyvin himmeällä sinisellä valolla, jonka intensiteetti on $1{,}0 \\cdot 10^{-6}\\,\\text{W/m}^2$. Kokeessa elektroneja alkaa irrota heti. Tutki, mitä aaltomalli ennustaisi. Oleta, että yksi elektroni kerää kaiken energian, joka osuu sen kohdalle pinta-alalle $1{,}0 \\cdot 10^{-20}\\,\\text{m}^2$. Tämä on suunnilleen yhden atomin poikkipinta-ala. Oleta myös, ettei energiaa häviä minnekään. Käytä arvoa $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka kauan elektronin pitäisi kerätä energiaa, ennen kuin se on saanut irrotustyön verran? Anna vastaus vuorokausina.",
+      "answer": 420,
+      "unit": "vrk",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-1-L3-03",
+      "level": 3,
+      "text": "Tuntematonta metallia valaistaan kahdella eri taajuudella, ja irtoavien elektronien suurin liike-energia mitataan. Taajuudella $7{,}0 \\cdot 10^{14}\\,\\text{Hz}$ se on $0{,}60\\,\\text{eV}$. Taajuudella $1{,}00 \\cdot 10^{15}\\,\\text{Hz}$ se on $1{,}84\\,\\text{eV}$. Suurin liike-energia riippuu taajuudesta suoran viivan mukaan eli lineaarisesti. Mikä on metallin rajataajuus? Sen alapuolella elektroneja ei irtoa. Anna vastaus hertseinä.",
+      "answer": 550000000000000.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    }
+  ]
+}

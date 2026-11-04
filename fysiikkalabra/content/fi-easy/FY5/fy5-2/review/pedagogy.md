@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d431b09626d1bc1c
-
+CONTENT-HASH: e3e3fdce6c1f6d9e
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md (hero) — Polish: the closing sentence of the alt text ('this raises the question...') does a job the Pohdinta already does; the alt text may describe only what is seen.
 
 ## Checked
-- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
-- Plank on two trestles, painter between them, a can on the unsupported overhang: this is exactly the Pohdinta situation. Nothing is annotated, so the answer is not given. Statics is plausible (painter's weight between supports, can on the overhang, nothing beneath it).
-- The easy-Finnish alt text (short sentences) matches the picture element by element and is in correct language; the opening question's wording is unchanged.
-- Hero is legible at 390 px and 1280 px (top captures) and carries no text.
+- Delta: meta.json key_concepts "painopiste" now reads "Tasa-aineisen ja symmetrisen kappaleen painopiste on sen keskellä."
+- The new wording matches the lesson's own definition word for word (lesson.md, Ydinajatus: "Tasa-aineisen ja symmetrisen kappaleen, kuten tasapaksun lankun, painopiste on keskellä").
+- The added condition removes the oversimplification that any symmetric body has its centre of gravity at the centre. The sentence is still short S2 Finnish, and "tasa-aineinen" is explained by the lesson's example.
+- The other key concepts are unchanged since the passed batch review.

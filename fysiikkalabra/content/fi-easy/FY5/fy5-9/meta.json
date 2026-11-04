@@ -1,7 +1,7 @@
 {
   "id": "fy5-9",
   "course": "FY5",
-  "title": "Harmoninen värähtely ja heiluri",
+  "title": "Jousivärähtelijä ja heiluri",
   "goals": [
     "LOPS FY5: harmoninen voima ja värähtelyliike",
     "Kokeellisesti: heilurin heilahdusajan määrittäminen",
@@ -16,6 +16,24 @@
     "heiluri",
     "värähtelyn energia",
     "vaimeneminen"
+  ],
+  "key_concepts": [
+    {
+      "term": "harmoninen värähtely",
+      "explain": "Värähtely, jonka aiheuttaa harmoninen voima. Jaksonaika ei riipu siitä, kuinka suuri värähtely on."
+    },
+    {
+      "term": "heiluri",
+      "explain": "Langan varassa riippuva kappale, joka heilahtelee painovoiman vaikutuksesta tasapainoaseman molemmin puolin."
+    },
+    {
+      "term": "värähtelyn energia",
+      "explain": "Liike-energian ja potentiaalienergian summa. Ilman kitkaa se pysyy samana."
+    },
+    {
+      "term": "vaimeneminen",
+      "explain": "Värähtely pienenee, kun kitka tai ilmanvastus muuttaa osan sen energiasta sisäenergiaksi."
+    }
   ],
   "sim": true,
   "solutions": "all",

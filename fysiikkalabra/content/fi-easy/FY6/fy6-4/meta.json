@@ -1,0 +1,33 @@
+{
+  "id": "fy6-4",
+  "course": "FY6",
+  "title": "Vastusten sarja- ja rinnankytkennät",
+  "goals": [
+    "LOPS FY6: vastusten kytkennät"
+  ],
+  "prerequisites": [
+    "fy6-3"
+  ],
+  "glossary": [
+    "sarjaankytkentä",
+    "rinnankytkentä",
+    "kokonaisresistanssi"
+  ],
+  "key_concepts": [
+    {
+      "term": "sarjaankytkentä",
+      "explain": "Vastukset ovat peräkkäin. Sama virta kulkee jokaisen vastuksen läpi."
+    },
+    {
+      "term": "rinnankytkentä",
+      "explain": "Vastukset ovat eri haaroissa samojen kahden haarautumispisteen välissä. Jokaisen haaran yli on sama jännite."
+    },
+    {
+      "term": "kokonaisresistanssi",
+      "explain": "Yhden vastuksen resistanssi, joka korvaisi koko kytkennän niin, että virta ja jännite pysyvät samoina."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

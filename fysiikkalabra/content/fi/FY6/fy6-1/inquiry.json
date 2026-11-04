@@ -1,0 +1,424 @@
+{
+  "version": 1,
+  "contribution": "Luku aloittaa sähköopin: sähköinen vuorovaikutus, johteet ja eristeet, suljettu virtapiiri, sähkövirta $I = Q/t$, varaus $Q = Ne$ ja jännite $U = E/Q$ sekä kytkentäkaavion piirrosmerkit. Simulaatiossa opiskelija laskee itse poikkileikkausten läpi kulkevat varaukset ja huomaa, ettei virta kulu lampussa.",
+  "learn": [
+    "selittämään, mitä sähkövirta ja jännite ovat ja miksi virta ei kulu lampussa.",
+    "laskemaan virran, varauksen ja siirtyneen energian kaavoilla $I = \\tfrac{Q}{t}$ ja $U = \\tfrac{E}{Q}$.",
+    "piirtämään ja lukemaan yksinkertaisen virtapiirin kytkentäkaavion."
+  ],
+  "prior": [
+    "Energia ei häviä eikä synny tyhjästä, vaan se muuttuu muodosta toiseen (luku *Energialajit ja energian säilyminen*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Painat taskulampun katkaisijaa, ja lamppu syttyy samalla hetkellä. Taskulampun sisällä paristot, katkaisija ja lamppu on yhdistetty metalliliuskoilla. Lamppu on palanut monta iltaa, ja paristot ovat vähitellen tyhjentyneet.",
+      "question": "Mitä taskulampun johtimissa oikeastaan liikkuu, ja mitä paristosta kuluu, kun lamppu palaa?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: energian säilyminen",
+      "optional": true,
+      "prompt": "Taskulampun lamppu palaa. Mihin paristosta lamppuun siirtyvä energia päätyy?",
+      "choices": [
+        {
+          "text": "Se muuttuu lampussa valoksi ja sisäenergiaksi, joka siirtyy lämpönä pois.",
+          "correct": true,
+          "feedback": "Oikein. Energia säilyy, mutta sen muoto muuttuu: sähköinen energia muuttuu hehkulangassa valoksi ja langan sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Tässä luvussa nähdään, että varaus ei muutu eikä kulu, vaan se kuljettaa energian paristosta lamppuun."
+        },
+        {
+          "text": "Se häviää lampussa, koska lamppu kuluttaa energian loppuun.",
+          "feedback": "Energia ei häviä. Lamppu muuttaa sähköisen energian valoksi ja hehkulangan sisäenergiaksi, ja energia siirtyy valona ja lämpönä ympäristöön. Arkikielen kuluttaa tarkoittaa fysiikassa muuttamista toiseen muotoon."
+        },
+        {
+          "text": "Se palaa johtoja pitkin takaisin paristoon ja lataa sen uudelleen.",
+          "feedback": "Jos energia palaisi paristoon, paristo ei koskaan tyhjenisi. Lampussa energia muuttuu valoksi ja hehkulangan sisäenergiaksi, ja se siirtyy valona ja lämpönä ympäristöön. Paristoon palaa varaus, ei energia."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: ennen ja jälkeen lampun",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "Paristo ja lamppu on kytketty suljetuksi virtapiiriksi. Poikkileikkaus $A$ on johdossa, joka tuo virran paristosta lamppuun, ja poikkileikkaus $B$ johdossa, joka vie virran lampusta takaisin paristoon. Verrataan varauksia, jotka kulkevat $10\\,\\text{s}$:ssa poikkileikkausten läpi. Mitä arvelet?",
+      "choices": [
+        {
+          "text": "Kummankin poikkileikkauksen läpi kulkee yhtä suuri varaus.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa yhdellä lampulla $Q_A = Q_B$: yhdellä paristolla $1{,}00\\,\\text{C}$, kahdella $2{,}00\\,\\text{C}$ ja kolmella $3{,}00\\,\\text{C}$. Varaus ei kulu lampussa, vaan sama varaus palaa paristoon. Lamppu muuttaa vain sen tuomaa energiaa valoksi ja hehkulangan sisäenergiaksi."
+        },
+        {
+          "text": "Kohdan $A$ läpi kulkee enemmän, koska lamppu kuluttaa osan virrasta.",
+          "feedback": "Mallin arvoissa varaukset ovat yhtä suuret, esimerkiksi kahdella paristolla $Q_A = Q_B = 2{,}00\\,\\text{C}$. Lamppu ei kuluta varausta: jokainen lamppuun tuleva elektroni lähtee siitä toisesta päästä. Lampussa muuttuu energian muoto."
+        },
+        {
+          "text": "Kohdan $B$ läpi ei kulje mitään, koska lamppu käyttää kaiken virran.",
+          "feedback": "Jos kohdan $B$ läpi ei kulkisi varausta, piiri olisi kuin katkaistu, eikä lamppukaan palaisi. Mallin arvoissa $Q_B$ on yhtä suuri kuin $Q_A$, esimerkiksi $2{,}00\\,\\text{C}$ kahdella paristolla."
+        },
+        {
+          "text": "Kohdan $B$ läpi kulkee enemmän, koska elektronit tulevat sen kautta.",
+          "feedback": "Elektronit kulkevat todella kohdan $B$ kautta ennen lamppua, koska ne liikkuvat sovittua virran suuntaa vastaan. Ne eivät silti häviä lampussa, joten varaus on mallin arvoissa sama molemmissa kohdissa, esimerkiksi $2{,}00\\,\\text{C}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: toinen lamppu samaan silmukkaan",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "Kahden pariston piiriin lisätään toinen samanlainen lamppu samaan silmukkaan ensimmäisen perään. Mitä tapahtuu varauksille, jotka kulkevat $10\\,\\text{s}$:ssa poikkileikkausten $A$ ja $B$ läpi?",
+      "choices": [
+        {
+          "text": "Kumpikin varaus pienenee, ja ne pysyvät keskenään yhtä suurina.",
+          "correct": true,
+          "feedback": "Oikein. Mallin arvoissa varaus pieneni kahden lampun piirissä $2{,}00\\,\\text{C}$:sta $1{,}00\\,\\text{C}$:iin, ja se oli sama kohdissa $A$ ja $B$. Kaksi lamppua vastustaa virtaa enemmän kuin yksi, joten virta pienenee koko silmukassa yhtä paljon."
+        },
+        {
+          "text": "Varaukset pysyvät ennallaan, koska paristo antaa aina saman virran.",
+          "feedback": "Paristo ei anna aina samaa virtaa. Mallin arvoissa varaus pieneni $2{,}00\\,\\text{C}$:sta $1{,}00\\,\\text{C}$:iin, kun toinen lamppu lisättiin. Virta riippuu sekä paristosta että siitä, mitä piirissä on."
+        },
+        {
+          "text": "Kohdassa $A$ varaus pysyy ennallaan, mutta kohdassa $B$ se pienenee.",
+          "feedback": "Lamput eivät kuluta varausta, joten kohdan $B$ läpi kulkee yhtä paljon kuin kohdan $A$ läpi. Mallin arvoissa molemmat pienenivät $1{,}00\\,\\text{C}$:iin, eli virta pieneni koko silmukassa."
+        },
+        {
+          "text": "Kumpikin varaus kasvaa, koska kahden lampun piirissä on enemmän virtaa.",
+          "feedback": "Toinen lamppu ei tuo piiriin lisää varausta. Mallin arvoissa varaus pieneni $2{,}00\\,\\text{C}$:sta $1{,}00\\,\\text{C}$:iin molemmissa kohdissa, ja kumpikin lamppu palaa himmeämmin kuin yksi lamppu."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Simulaation johto on täynnä vapaita elektroneja. Sulje ja avaa kytkin, vaihda paristojen ja lamppujen määrää ja mittaa, kuinka paljon varausta kulkee kohtien $A$ ja $B$ läpi.",
+      "howto": "Valitse paristojen määrä (jokainen $1{,}5\\,\\text{V}$), lamppujen määrä ja onko kytkin suljettu vai auki. Paina *Mittaa*: simulaatio laskee $10{,}0\\,\\text{s}$:n ajan ne siniset pisteet, jotka kulkevat poikkileikkausten $A$ ja $B$ läpi, ja näyttää varaukset $Q_A$ ja $Q_B$ kuvan alla. Poikkileikkaus $A$ on yläjohdossa ennen lamppuja ja $B$ oikean reunan paluujohdossa lamppujen jälkeen. Asetuksen muuttaminen ja *Nollaa* tyhjentävät mittauksen. *Nopeus* muuttaa vain kuvan tahtia; mittaus kestää aina $10{,}0\\,\\text{s}$ simulaation aikaa.",
+      "model": "Arvot ovat simulaation laskemia mallin arvoja. Yksi sininen piste esittää elektronijoukkoa, jonka varaus on yhteensä $0{,}05\\,\\text{C}$, eli noin $3 \\cdot 10^{17}$ elektronia. Elektronien liike on kuvassa hyvin paljon suurennettu: todellisuudessa ne etenevät johdossa alle millimetrin sekunnissa. Mallissa jokainen lamppu vastustaa virtaa samalla tavalla jännitteestä riippumatta; todellisen hehkulampun virta kasvaa jännitteen mukana selvästi hitaammin. Johtojen ja paristojen oma vastus jätetään huomiotta. Mallissa varaus ei synny eikä katoa missään piirin kohdassa, joten $Q_A = Q_B$ on mallin ominaisuus eikä erillinen mittaus; todellisilla virtamittareilla mitattuna tulos on sama.",
+      "calc": "Mittari laskee pisteet, jotka kulkevat poikkileikkauksen läpi, ja kertoo niiden lukumäärän pisteen varauksella $0{,}05\\,\\text{C}$. Virran saa itse laskemalla $I = Q/t$, kun $t = 10{,}0\\,\\text{s}$. Lampun kirkkaus kasvaa lampun tehon mukana."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: varaus ennen ja jälkeen lampun",
+      "intro": "Alkutila valitsee yhden lampun ja suljetun kytkimen. Valitse paristojen määrä, paina *Mittaa* ja odota, kunnes mittaus on valmis. Kirjaa mittaus vasta silloin. Toista yhdellä, kahdella ja kolmella paristolla.",
+      "initial": {
+        "paristot": 1,
+        "lamput": 1,
+        "kytkin": "suljettu"
+      },
+      "names": {
+        "paristot": "paristoja",
+        "lamput": "lamppuja",
+        "kytkin": "kytkin"
+      },
+      "values": {
+        "kytkin": {
+          "suljettu": "suljettu"
+        }
+      },
+      "locked": [
+        "lamput",
+        "kytkin"
+      ],
+      "vary": "paristot",
+      "measure": [
+        {
+          "key": "QA",
+          "label": "Q_A (C)"
+        },
+        {
+          "key": "QB",
+          "label": "Q_B (C)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske taulukon rivin, jossa paristoja on kaksi, varauksesta $Q_A$ lampun läpi kulkeva sähkövirta. Mittaus kesti $10{,}0\\,\\text{s}$. Vastaa ampeereina.",
+        "answer": 0.2,
+        "unit": "A",
+        "tolerance": 0.03,
+        "hints": [
+          "Virta kertoo, kuinka suuri varaus kulkee poikkileikkauksen läpi sekunnissa.",
+          "Käytä kaavaa $I = \\tfrac{Q}{t}$, missä $Q$ on taulukon varaus ja $t = 10{,}0\\,\\text{s}$.",
+          "$I = \\tfrac{Q_A}{10{,}0\\,\\text{s}}$, missä $Q_A$ on kahden pariston rivin varaus coulombeina."
+        ],
+        "mistakes": [
+          {
+            "value": 20,
+            "feedback": "Kerroit varauksen ajalla. Virta on varaus jaettuna ajalla: kuinka monta coulombia kulkee yhdessä sekunnissa."
+          },
+          {
+            "value": 5,
+            "feedback": "Jaoit ajan varauksella. Virta on varaus jaettuna ajalla, $I = \\tfrac{Q}{t}$, jolloin yksiköksi tulee $\\text{C/s} = \\text{A}$."
+          }
+        ],
+        "solution": "**Annettu:** taulukosta kahden pariston rivin varaus $Q_A = 2{,}00\\,\\text{C}$ (mallin arvo) ja mittausaika $t = 10{,}0\\,\\text{s}$\n\n**Kysytty:** lampun läpi kulkeva sähkövirta $I$ yksikössä $\\text{A}$\n\n**Periaate:** Sähkövirta on poikkileikkauksen läpi kulkeva varaus aikayksikössä. Poikkileikkaus $A$ on samassa silmukassa kuin lamppu, ja varausta ei kulu, joten sen läpi kulkeva virta on sama kuin lampun läpi kulkeva virta.\n\n**Kaava:** $I = \\dfrac{Q_A}{t}$\n\n**Muunnokset:** Varaus on coulombeina ja aika sekunteina, joten virta saadaan suoraan ampeereina.\n\n**Sijoitus:** $I = \\dfrac{2{,}00\\,\\text{C}}{10{,}0\\,\\text{s}} = 0{,}200\\,\\text{A}$\n\n**Vastaus:** $0{,}200\\,\\text{A}$, kolme merkitsevää numeroa kuten varauksessa $2{,}00\\,\\text{C}$ ja ajassa $10{,}0\\,\\text{s}$.\n\n**Järkevyys:** Kohdan $B$ varaus $Q_B = 2{,}00\\,\\text{C}$ antaa saman virran, joten lamppu ei kuluta varausta. Yhdellä paristolla virta oli $0{,}100\\,\\text{A}$ ja kolmella $0{,}300\\,\\text{A}$, joten kaksinkertainen jännite antoi tässä mallissa kaksinkertaisen virran. Taskulampun lampun virta on tavallisesti juuri muutamia ampeerin kymmenesosia."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: toinen lamppu",
+      "intro": "Alkutila valitsee kaksi paristoa ja suljetun kytkimen. Mittaa ensin yhdellä lampulla ja sitten kahdella lampulla: paina joka kerta *Mittaa*, odota, että mittaus on valmis, ja kirjaa mittaus. Katso myös, kuinka kirkkaasti lamput palavat.",
+      "initial": {
+        "paristot": 2,
+        "lamput": 1,
+        "kytkin": "suljettu"
+      },
+      "names": {
+        "paristot": "paristoja",
+        "lamput": "lamppuja",
+        "kytkin": "kytkin"
+      },
+      "values": {
+        "kytkin": {
+          "suljettu": "suljettu"
+        }
+      },
+      "locked": [
+        "paristot",
+        "kytkin"
+      ],
+      "vary": "lamput",
+      "measure": [
+        {
+          "key": "QA",
+          "label": "Q_A (C)"
+        },
+        {
+          "key": "QB",
+          "label": "Q_B (C)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Mitä kahden lampun mittaus osoittaa virrasta?",
+        "choices": [
+          {
+            "text": "Virta on pienempi kuin yhden lampun piirissä mutta sama kohdissa $A$ ja $B$.",
+            "correct": true,
+            "feedback": "Oikein. Mallin arvoissa $Q_A = Q_B = 1{,}00\\,\\text{C}$, joten virta on $0{,}100\\,\\text{A}$ koko silmukassa. Yhdellä lampulla se oli $0{,}200\\,\\text{A}$. Kumpikin lamppu palaa yhtä himmeästi, koska sama virta kulkee molempien läpi."
+          },
+          {
+            "text": "Ensimmäinen lamppu käyttää osan varauksesta, joten toiselle jää vähemmän.",
+            "feedback": "Silloin varaus olisi kohdassa $B$ pienempi kuin kohdassa $A$. Mallin arvoissa ne ovat yhtä suuret, $1{,}00\\,\\text{C}$, ja lamput palavat yhtä kirkkaasti. Varaus ei kulu."
+          },
+          {
+            "text": "Paristo antaa saman virran kuin ennen, ja kumpikin lamppu saa siitä puolet.",
+            "feedback": "Virta ei jakaudu peräkkäisten lamppujen kesken, vaan sama virta kulkee molempien läpi. Mallin arvoissa koko silmukan virta pieneni $0{,}200\\,\\text{A}$:sta $0{,}100\\,\\text{A}$:iin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Selitä mittaustesi avulla, kuluuko sähkövirta lampussa. Käytä sanoja varaus, sähkövirta ja energia, ja kerro, mikä virran suuruuteen vaikutti.",
+      "criteria": [
+        "Vastaus kertoo, että kohtien $A$ ja $B$ läpi kulki joka mittauksessa yhtä suuri varaus, joten virta on sama lampun molemmin puolin.",
+        "Vastaus kertoo, että lamppu ei kuluta varausta vaan muuttaa sähköisen energian valoksi ja hehkulangan sisäenergiaksi.",
+        "Vastaus laskee tai mainitsee virran $I = \\tfrac{Q}{t}$ jostakin mittauksesta.",
+        "Vastaus kertoo, että paristojen lisääminen suurensi virtaa ja toinen lamppu pienensi sitä koko silmukassa."
+      ],
+      "model": "Kokeessa 1 kohtien $A$ ja $B$ läpi kulki mallin arvoissa joka rivillä sama varaus: yhdellä paristolla $1{,}00\\,\\text{C}$, kahdella $2{,}00\\,\\text{C}$ ja kolmella $3{,}00\\,\\text{C}$ ajassa $10{,}0\\,\\text{s}$. Virta $I = \\tfrac{Q}{t}$ oli siis esimerkiksi kahdella paristolla $0{,}200\\,\\text{A}$ lampun molemmin puolin. Sähkövirta ei kulu lampussa: jokainen lamppuun tuleva elektroni lähtee siitä ja palaa paristoon. Lampussa muuttuu energian muoto, kun varauksen tuoma sähköinen energia muuttuu valoksi ja hehkulangan sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Suurempi jännite antoi suuremman virran. Kokeessa 2 toinen lamppu samassa silmukassa pienensi varauksen $1{,}00\\,\\text{C}$:iin sekä kohdassa $A$ että kohdassa $B$, joten virta pieneni koko silmukassa yhtä paljon."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi mittauksiin. Muuttuiko käsityksesi siitä, mitä lampussa kuluu? Palaa myös alun taskulamppuun: mikä paristosta kuluu, kun lamppu palaa monta iltaa?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "figure": "fy6-1/virhe-kaavio",
+      "prompt": "Opiskelija piirsi kytkentäkaavion piiristä, jossa paristo, kytkin ja lamppu ovat samassa silmukassa. Kun piiri rakennettiin kaavion mukaan ja kytkin suljettiin, lamppu ei syttynyt. Mikä kaaviossa on vialla?",
+      "choices": [
+        {
+          "text": "Lampun molemmat johdot päätyvät plusnapaan, joten silmukka ei kulje pariston läpi.",
+          "correct": true,
+          "feedback": "Oikein. Alareunan johto palaa lampulta yläjohtoon pariston plusnavan viereen, ja miinusnapa jää kytkemättä. Silmukka ei kulje pariston läpi, joten virtapiiri ei ole suljettu pariston kautta eikä virtaa kulje."
+        },
+        {
+          "text": "Lamppu on piirretty ympyränä, jossa on risti, vaikka sen pitäisi olla suorakulmio.",
+          "feedback": "Ympyrä, jonka sisällä on risti, on juuri lampun piirrosmerkki. Suorakulmio on vastus. Vika on kytkennässä: lampun molemmat johdot päätyvät pariston plusnapaan."
+        },
+        {
+          "text": "Pariston merkit ovat väärin päin, sillä lyhyen paksun viivan pitäisi olla plusnapa.",
+          "feedback": "Pitkä ohut viiva on plusnapa ja lyhyt paksu viiva miinusnapa, kuten kaaviossa. Vika on siinä, että miinusnapaa ei ole kytketty mihinkään, joten silmukka ei kulje pariston läpi."
+        },
+        {
+          "text": "Kytkin on yläjohdossa, ja sen pitäisi olla lampun ja miinusnavan välissä.",
+          "feedback": "Kytkimen paikalla silmukassa ei ole väliä, koska sama virta kulkee silmukan joka kohdan läpi. Vika on siinä, että lampun molemmat johdot päätyvät pariston plusnapaan."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Sähköpotkulaudan akun jännite on $36\\,\\text{V}$. Ajon aikana moottorin läpi kulkee keskimäärin $8{,}0\\,\\text{A}$:n virta, ja ajomatka kestää $25\\,\\text{min}$. Kuinka paljon energiaa akku siirtää moottorille ajon aikana? Vastaa kilojouleina.",
+      "answer": 432,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "hints": [
+        "Selvitä ensin, kuinka suuri varaus kulkee moottorin läpi ajon aikana. Virta on coulombeja sekunnissa.",
+        "Varaus on $Q = It$, kun aika on sekunteina: $25\\,\\text{min} = 25 \\cdot 60\\,\\text{s}$. Jännite kertoo energian jokaista coulombia kohti.",
+        "$E = UQ = 36\\,\\text{V}\\cdot 8{,}0\\,\\text{A}\\cdot 1500\\,\\text{s}$; muuta lopuksi joulet kilojouleiksi."
+      ],
+      "mistakes": [
+        {
+          "value": 7.2,
+          "feedback": "Käytit aikaa minuutteina. Ampeeri on coulombi sekunnissa, joten aika on muutettava sekunneiksi: $25\\,\\text{min} = 1500\\,\\text{s}$."
+        },
+        {
+          "value": 12000,
+          "feedback": "Tämä on moottorin läpi kulkenut varaus $Q = 12\\,000\\,\\text{C}$. Energia saadaan, kun varaus kerrotaan jännitteellä: jokainen coulombi siirtää $36\\,\\text{J}$."
+        }
+      ],
+      "solution": "**Annettu:** akun jännite $U = 36\\,\\text{V}$, virta $I = 8{,}0\\,\\text{A}$, aika $t = 25\\,\\text{min}$\n\n**Kysytty:** akusta moottorille siirtynyt energia $E$ kilojouleina\n\n**Periaate:** Virta pysyy keskimäärin samana, joten moottorin läpi kulkenut varaus on $Q = It$. Jännite kertoo, kuinka paljon energiaa jokainen coulombi siirtää, joten energia on jännitteen ja varauksen tulo $E = UQ$.\n\n**Kaava:** $Q = It$ ja $E = UQ$, joten $E = UIt$\n\n**Muunnokset:** $25\\,\\text{min} = 25 \\cdot 60\\,\\text{s} = 1500\\,\\text{s}$; lopuksi $1\\,\\text{kJ} = 1000\\,\\text{J}$.\n\n**Sijoitus:** $E = 36\\,\\text{V}\\cdot 8{,}0\\,\\text{A}\\cdot 1500\\,\\text{s} = 36\\,\\text{V}\\cdot 12\\,000\\,\\text{C} = 432\\,000\\,\\text{J} = 432\\,\\text{kJ}$\n\n**Vastaus:** $4{,}3 \\cdot 10^{2}\\,\\text{kJ}$, kaksi merkitsevää numeroa kuten virrassa $8{,}0\\,\\text{A}$, jännitteessä $36\\,\\text{V}$ ja ajassa $25\\,\\text{min}$.\n\n**Järkevyys:** Arvio pyöreillä luvuilla: noin $300\\,\\text{J}$ sekunnissa ($36 \\cdot 8 \\approx 300$) ja noin $1500\\,\\text{s}$ antaa noin $450\\,000\\,\\text{J}$. Tulos on samaa suuruusluokkaa. Se on noin $0{,}12\\,\\text{kWh}$, mikä sopii potkulaudan akulle, jonka energia on muutamia satoja wattitunteja."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele vielä kolmella tasolla. Muuta ajat sekunneiksi ja virrat ampeereiksi ennen kuin lasket, ja piirrä kytkentäkaavio, kun tehtävässä on virtapiiri."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Lamppu on kahden metrin päässä paristosta. Kun kytkin suljetaan, lamppu syttyy heti, vaikka vapaat elektronit etenevät johdossa alle millimetrin sekunnissa. Miksi?",
+      "choices": [
+        {
+          "text": "Johto on täynnä vapaita elektroneja, jotka alkavat liikkua kaikkialla yhtä aikaa.",
+          "correct": true,
+          "feedback": "Oikein. Kun piiri suljetaan, sähkökenttä syntyy koko johtoon lähes valon nopeudella. Hehkulangassa olevat elektronit alkavat liikkua samalla hetkellä kuin pariston vieressä olevat, joten lamppu syttyy heti."
+        },
+        {
+          "text": "Elektronit kulkevat paristosta lamppuun lähes valon nopeudella, kun piiri suljetaan.",
+          "feedback": "Yksittäiset elektronit etenevät hitaasti. Lähes valon nopeudella syntyy sähkökenttä, joka panee kaikki johdon vapaat elektronit liikkeelle yhtä aikaa, myös lampussa olevat."
+        },
+        {
+          "text": "Paristo on varastoinut elektroneja valmiiksi johtoon lampun lähelle.",
+          "feedback": "Paristo ei varastoi elektroneja johtoon. Johdon metallissa on aina vapaita elektroneja, ja suljettu piiri panee ne kaikki liikkumaan yhtä aikaa."
+        },
+        {
+          "text": "Lampun hehkulanka hehkuu jo ennen kuin virta kulkee sen läpi.",
+          "feedback": "Hehkulanka hehkuu vain, kun sen läpi kulkee virta. Lamppu syttyy heti, koska kaikki johdon vapaat elektronit alkavat liikkua yhtä aikaa, myös hehkulangassa."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laskeminen",
+      "prompt": "Puhelimen laturi antaa puhelimelle $2{,}0\\,\\text{A}$:n virran $45\\,\\text{min}$ ajan. Kuinka suuri varaus kulkee latausjohdon läpi tänä aikana? Vastaa coulombeina.",
+      "answer": 5400,
+      "unit": "C",
+      "tolerance": 0.02,
+      "hints": [
+        "Virta kertoo, kuinka monta coulombia kulkee sekunnissa. Mikä on aika sekunteina?",
+        "$45\\,\\text{min} = 45 \\cdot 60\\,\\text{s} = 2700\\,\\text{s}$, ja varaus on $Q = It$.",
+        "$Q = 2{,}0\\,\\text{A}\\cdot 2700\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 90,
+          "feedback": "Käytit aikaa minuutteina. Ampeeri on coulombi sekunnissa, joten aika on muutettava sekunneiksi: $45\\,\\text{min} = 2700\\,\\text{s}$."
+        },
+        {
+          "value": 1350,
+          "feedback": "Jaoit ajan virralla. Varaus on virran ja ajan tulo, $Q = It$."
+        }
+      ],
+      "solution": "**Annettu:** virta $I = 2{,}0\\,\\text{A}$, aika $t = 45\\,\\text{min}$\n\n**Kysytty:** latausjohdon läpi kulkenut varaus $Q$ yksikössä $\\text{C}$\n\n**Periaate:** Virta pysyy samana koko latauksen ajan, joten kulkenut varaus saadaan virran määritelmästä: virta on varaus aikayksikössä.\n\n**Kaava:** $I = \\dfrac{Q}{t}$, josta $Q = It$\n\n**Muunnokset:** $45\\,\\text{min} = 45 \\cdot 60\\,\\text{s} = 2700\\,\\text{s}$\n\n**Sijoitus:** $Q = 2{,}0\\,\\text{A}\\cdot 2700\\,\\text{s} = 5400\\,\\text{C}$\n\n**Vastaus:** $5{,}4 \\cdot 10^{3}\\,\\text{C}$, kaksi merkitsevää numeroa kuten virrassa $2{,}0\\,\\text{A}$ ja ajassa $45\\,\\text{min}$.\n\n**Järkevyys:** Joka sekunti kulkee $2\\,\\text{C}$, ja $45$ minuutissa on $2700$ sekuntia, joten varaus on kaksinkertainen sekuntimäärä. Ampeeritunteina se on $5400\\,\\text{C} : 3600\\,\\text{s} = 1{,}5\\,\\text{Ah} = 1500\\,\\text{mAh}$, noin kolmasosa tavallisen puhelimen akun varauksesta.",
+      "practice": "Harjoittele yksikkömuunnoksia tason 2 tehtävissä."
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. Kytkentäkaavio",
+      "layout": "figures",
+      "prompt": "Pöytävalaisimessa on paristo, kytkin ja kaksi lamppua samassa silmukassa niin, että kytkin sammuttaa ja sytyttää molemmat lamput. Mikä kytkentäkaavio esittää valaisimen piirin oikein?",
+      "choices": [
+        {
+          "text": "",
+          "figure": "fy6-1/valinta-a",
+          "correct": true,
+          "feedback": "Oikein. Paristo, kaksi lampun merkkiä ja kytkin ovat samassa suljetussa silmukassa. Kun kytkin avataan, silmukka katkeaa ja molemmat lamput sammuvat."
+        },
+        {
+          "text": "",
+          "figure": "fy6-1/valinta-b",
+          "feedback": "Kytkentä on oikein, mutta suorakulmio on vastuksen piirrosmerkki. Lamppu piirretään ympyränä, jonka sisällä on risti."
+        },
+        {
+          "text": "",
+          "figure": "fy6-1/valinta-c",
+          "feedback": "Tässä kytkin on johdon haarassa, joka ei johda mihinkään. Silmukka on suljettu ilman kytkintä, joten lamput palaisivat koko ajan eikä kytkin vaikuttaisi niihin."
+        }
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kolme nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

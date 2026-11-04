@@ -1,7 +1,7 @@
 {
   "id": "fy5-14",
   "course": "FY5",
-  "title": "Äänen ominaisuudet",
+  "title": "Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö",
   "goals": [
     "LOPS FY5: ääni aaltoliikkeenä sekä äänen ominaisuudet ja eteneminen",
     "Kokeellisesti: äänen nopeuden määrittäminen ja äänen taajuusanalyysi",
@@ -21,6 +21,28 @@
     "huojunta",
     "Doppler-ilmiö",
     "ultraääni"
+  ],
+  "key_concepts": [
+    {
+      "term": "äänenkorkeus",
+      "explain": "Kuinka korkealta ääni kuulostaa. Mitä suurempi taajuus, sitä korkeampi ääni."
+    },
+    {
+      "term": "sointiväri",
+      "explain": "Äänen laatu, jonka perusteella eri soittimet erottaa, vaikka ne soittavat samaa säveltä."
+    },
+    {
+      "term": "huojunta",
+      "explain": "Äänen voimakkuus vaihtelee säännöllisesti, kun kaksi lähes samantaajuista ääntä soi yhtä aikaa."
+    },
+    {
+      "term": "Doppler-ilmiö",
+      "explain": "Liikkuvan lähteen ääni kuulostaa korkeammalta, kun lähde tulee kohti, ja matalammalta, kun se menee poispäin."
+    },
+    {
+      "term": "ultraääni",
+      "explain": "Ääni, jonka taajuus on niin suuri, ettei ihminen kuule sitä."
+    }
   ],
   "sim": true,
   "solutions": "all",

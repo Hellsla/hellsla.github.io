@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d431b09626d1bc1c
+CONTENT-HASH: e3e3fdce6c1f6d9e
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] hero alt: the plank overhang is described as reaching "far" beyond the trestle, but in the picture it is moderate; the pink (still unpainted) part of the wall is not mentioned. Soften "far" and optionally add the two-tone wall.
+- none
 
 ## Checked
-- Delta (illustration only). Opened fy5-2-top-390 (fi), fy5-2-intro-1280 (fi), fy5-2-fig-1-390 in fi, en and fi-easy (same picture in all three, only rendering noise differs).
-- Hero is a flat vector scene in the figure palette on the paper tone, no text in the picture, subject in the middle third, readable at 366 px width, nothing clipped except the intended close-up crop; 16:9-ish column width, layout around it intact.
-- Alt text (fi-easy) read against the picture: it describes what is drawn, with no contradiction; language natural and consistent with the chapter's opening question.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy5-2.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

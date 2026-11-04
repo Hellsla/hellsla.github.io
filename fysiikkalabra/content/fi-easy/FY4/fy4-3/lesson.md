@@ -402,6 +402,8 @@ Curlingin heittäjä työntää kiveä vain hetken. Kun käsi irtoaa, mikään e
 
 Jos kitkaa ei olisi lainkaan, kiven nopeus ei muuttuisi. Kivi liukuisi samaan suuntaan loputtomiin. Tämä on **Newtonin ensimmäinen laki** eli **jatkavuuden laki**. Laki sanoo: jos kappaleeseen vaikuttavien voimien summa on nolla, kappale pysyy levossa tai liikkuu suoraan tasaisella nopeudella. Voimaa tarvitaan liikkeen *muuttamiseen*, ei liikkeen ylläpitämiseen. Kappaleen liiketila ei muutu itsestään. Tätä sanotaan **inertiaksi** eli hitaudeksi.
 
+<figure class="unit-photo"><img src="pics/fy4/tug-of-war.webp" alt="Kolme miestä vetää köyttä ja nojaa taaksepäin."><figcaption>Köydenvetäjät nojaavat taaksepäin. He painavat jalkansa maata vasten.</figcaption></figure>
+
 Arjessa näyttää siltä, että liike loppuu itsestään. Syy on se, että maan päällä kitka ja ilmanvastus hidastavat lähes kaikkea, mikä liikkuu. Pyörä pysähtyy, kun polkeminen loppuu, koska tie ja ilma jarruttavat sitä. Syy ei ole se, että "liikkeen voima" kuluisi loppuun. Mitä pienempi kitka on, sitä kauemmin liike jatkuu: jäällä pidemmälle kuin asfaltilla ja avaruudessa lähes loputtomiin.
 
 ### Voima ja vastavoima
@@ -460,6 +462,8 @@ Luistelija A työntää luistelijaa B. Silloin kumpikin lähtee liukumaan poisp�
   <foreignObject x="495" y="320.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{B}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy4/falcon9-crew9-launch.webp" alt="Valkoinen raketti nousee suoraan ylös. Raketin alla on kirkas liekki ja maassa isoja valkoisia pilviä."><figcaption>Falcon 9 -raketti lähtee Floridassa vuonna 2024. Raketti työntää kaasuja alaspäin. Kaasut työntävät rakettia ylöspäin yhtä suurella voimalla. Raketti ei tarvitse ilmaa eikä maata, jota vasten työntää.</figcaption></figure>
+
 Aikuinen ja lapsi saavat toisiltaan yhtä suuren voiman, vaikka aikuinen on paljon raskaampi. Lapsi lähtee silti liikkeelle suuremmalla nopeudella. Syy on se, että samasta voimasta pienemmän massan liike muuttuu enemmän. Tähän palataan luvussa *Newtonin toinen laki*. Tärkeintä on muistaa, että voima ja vastavoima vaikuttavat **eri kappaleisiin**. Siksi ne eivät koskaan kumoa toisiaan. Siksi niitä ei myöskään piirretä saman kappaleen voimakuvioon.
 
 ## Kaava: Newtonin ensimmäinen ja kolmas laki
@@ -469,7 +473,7 @@ Newtonin ensimmäinen laki on ehto kappaleeseen vaikuttavien voimien summalle:
 ```
 Tässä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien vektorisumma eli **kokonaisvoima** (N). Merkintä $\overline{v}$ on kappaleen nopeus (m/s). Vakionopeus tarkoittaa, että nopeuden suuruus ja suunta pysyvät samoina. Myös lepo $\overline{v} = \overline{0}$ on vakionopeus.
 
-Kokonaisvoima nolla ei tarkoita, että voimia ei olisi. Se tarkoittaa, että voimat kumoavat toisensa. Ajatellaan autoa, joka ajaa suoralla tiellä tasaisella nopeudella. Pystysuunnassa siihen vaikuttavat paino ja tien tukivoima. Vaakasuunnassa tie vaikuttaa renkaisiin voimalla eteenpäin, ja ilmanvastus vaikuttaa taaksepäin. Nopeus ei muutu. Siksi eteenpäin vievä voima on yhtä suuri kuin ilmanvastus, kun vierimisvastus jätetään huomiotta.
+Kokonaisvoima nolla ei tarkoita, että voimia ei olisi. Se tarkoittaa, että voimat kumoavat toisensa eli niiden yhteisvaikutus on nolla. Ajatellaan autoa, joka ajaa suoralla tiellä tasaisella nopeudella. Pystysuunnassa siihen vaikuttavat paino ja tien tukivoima. Vaakasuunnassa tie vaikuttaa renkaisiin voimalla eteenpäin, ja ilmanvastus vaikuttaa taaksepäin. Nopeus ei muutu. Siksi eteenpäin vievä voima on yhtä suuri kuin ilmanvastus, kun vierimisvastus jätetään huomiotta.
 
 <svg data-fig="auto" viewBox="0 0 600 330" role="img" aria-label="Kaksi kuvaa autosta, joka ajaa suoralla tiellä tasaisella nopeudella. Vasemmalla on tilannekuva: auto ja sen yllä ohut sininen nuoli v oikealle. Oikealla on auton voimakuvio, ja auto on suorakulmio. Paino G osoittaa keskipisteestä alas ja tien tukivoima N alapinnasta ylös. Ne ovat yhtä pitkät. Tien voima F renkaisiin alkaa alapinnan etukulmasta ja osoittaa eteenpäin. Ilmanvastus F v alkaa auton takasivulta ja osoittaa taaksepäin. Vaakasuorat nuolet ovat yhtä pitkät, joten voimat kumoavat toisensa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy43a-car" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>

@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e8e8246b7986df8e
+CONTENT-HASH: 20c69152d215564e
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Captures opened: contact-1 (top, sim, fig-1 to fig-7, example), theory-1280-2.
-- Figure labels identical to the Finnish; aria-labels split into short sentences with the same content; sim legend 12 words, visible.
-- Decimal comma, \cdot, upright units; plain sentences read naturally after the two fixes.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-5.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.

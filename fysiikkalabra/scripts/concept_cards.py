@@ -87,14 +87,6 @@ def lesson_link(code, lid, T, up):
     return f'<p class="concept-link"><a href="{href(up, code, topics)}">{T("cards.lesson_link")}</a></p>'
 
 
-def home_section(T, up):
-    """The front page's section, or "" without the card app."""
-    if not cards(): return ""
-    return (f'<section class="concept-home" aria-labelledby="h-cards"><h2 id="h-cards">{T("cards.title")}</h2>'
-            f'<p class="section-lead">{T("cards.home_lead")}</p><ul class="lessons practice-link concept-cards"><li class="live">'
-            f'<a href="{href(up, None)}">{T("cards.home_link")}</a></li></ul></section>')
-
-
 if __name__ == "__main__":
     if sys.argv[1:] != ["check"]: sys.exit(__doc__)
     errs = errors()

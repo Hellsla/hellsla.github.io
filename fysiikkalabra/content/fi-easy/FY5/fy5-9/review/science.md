@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 597b8d6223da9b0e
+CONTENT-HASH: f2a9090c70f3a05f
 
 ## Blocking
+(none)
 
 ## Polish
+- värähtelyn energia: "Ilman kitkaa" could say "Ilman kitkaa ja ilmanvastusta", as the summary does.
 
 ## Checked
-- Selkokielinen versio verrattuna suomenkieliseen lukuun (kolme PASS-arviota): lesson.md, inquiry.json (25 aktiviteettia, rakenne ja avaimet identtiset), exit-ticket.json, meta.json, figures.json ja lang/fi-easy.json sims.fy5-9.
-- Kaikki luvut ja kaavat tarkistettu skriptillä: identtiset (desimaalipilkku); yksikään vaihe, vihje, virhepalaute, kriteeri tai mallivastaus ei puutu. Pitkät virkkeet on pilkottu, syy-seuraussuhteet säilyvät (amplitudin riippumattomuus, massan supistuminen heilurissa, pienen kulman ehto, epävarmuuden jakautuminen kymmenelle jaksolle).
-- Lisätyt selitykset (tasapainoasema, jousivakio "kertoo, kuinka jäykkä jousi on") ovat oikein.
-- Avaruusaseman tehtävä ja ratkaisu vastaavat suomenkielistä sellaisenaan.
-- Simulaation 19 tekstiä on kopioitu suomenkielisestä sellaisenaan; ne ovat jo lyhyitä ja selkeitä.
-- Korjattu: koe-mittauksen tilanne "Hän poikkesi heiluria noin $5^\circ$" (väärä verbi) → "Hän vei heilurin sivuun noin $5^\circ$:n kulmaan."
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Re-check after fix: vaimeneminen now says friction or air resistance turns part of the energy into internal energy (sisäenergiaksi), matching the lesson and the heat guardrail. harmoninen värähtely (period independent of amplitude), heiluri and värähtelyn energia agree with the lesson.

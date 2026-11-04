@@ -1,4 +1,4 @@
-# Aaltojen heijastuminen ja diffraktio
+# Aalto kohtaa esteen tai raon
 
 > **Miksi** aallot ylettyvät aallonmurtajan kapeasta aukosta myös sataman nurkkiin eivätkä kulje vain suoraan aukon kohdalle?
 
@@ -898,7 +898,7 @@
 ## Ydinajatus
 
 ### Aaltorintama ja säde
-Aaltoa on helpointa kuvata ylhäältä katsottuna. **Aaltorintama** on viiva, joka yhdistää aallon samassa vaiheessa olevat kohdat, esimerkiksi yhden aallonharjan. Kahden peräkkäisen harjan välinen etäisyys on aallonpituus $\lambda$ (luku *Mekaaninen aaltoliike*). **Säde** on nuoli, joka näyttää aallon etenemissuunnan, ja se on aina kohtisuorassa aaltorintamaa vastaan. Suoran rintaman aalto on tasoaalto, ja pistemäisestä lähteestä, kuten veteen pudonneesta kivestä, lähtee ympyräaalto, jonka säteet osoittavat lähteestä poispäin joka suuntaan.
+Aaltoa on helpointa kuvata ylhäältä katsottuna. **Aaltorintama** on viiva, joka yhdistää aallon samassa vaiheessa olevat kohdat, esimerkiksi yhden aallonharjan. Kahden peräkkäisen harjan välinen etäisyys on aallonpituus $\lambda$ (luku *Aaltojen synty ja eteneminen*). **Säde** on nuoli, joka näyttää aallon etenemissuunnan, ja se on aina kohtisuorassa aaltorintamaa vastaan. Suoran rintaman aalto on tasoaalto, ja pistemäisestä lähteestä, kuten veteen pudonneesta kivestä, lähtee ympyräaalto, jonka säteet osoittavat lähteestä poispäin joka suuntaan.
 
 <svg data-fig="rintamat" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva kahdesta aallosta ylhäältä katsottuna. Vasemmalla tasoaalto: aaltorintamat ovat yhdensuuntaisia suoria, joiden väli on aallonpituus lambda, ja säteet ovat niitä vastaan kohtisuoria nuolia. Oikealla pistemäisestä lähteestä lähtevä ympyräaalto: aaltorintamat ovat samankeskisiä ympyröitä ja säteet lähtevät lähteestä joka suuntaan, kohtisuoraan rintamia vastaan." style="max-width:100%;font-size:24px">
   <rect x="12" y="44" width="276" height="236" rx="8" fill="#eef5f9"/>
@@ -1030,6 +1030,8 @@ Kun aalto kulkee raosta tai esteen ohi, se taipuu myös esteen taakse, alueelle,
   <line x1="320" y1="318" x2="350" y2="318" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
   <path d="M362,318 L349,324 L349,312 Z" fill="#1971c2" stroke-linejoin="round"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy5/ripple-tank-single-slit.webp" alt="Epäterävä harmaa kuva vedenpinnasta. Oikealla on vinoja suoria vaaleita juovia, vasemmalla kaarevia renkaita."><figcaption>Diffraktio aaltoaltaassa. Oikealta tulevat suorat aaltorintamat kulkevat kapean raon läpi, ja raon takana vasemmalla aallot leviävät kaarevina rintamina.</figcaption></figure>
 
 Sama pätee esteeseen. Laituripaalun kaltainen este, joka on aallonpituutta kapeampi, ei juuri jätä taakseen varjoa, koska aalto taipuu sen ympäri. Aallonpituutta paljon leveämmän esteen taakse jää suojaisa alue. Diffraktio on siis voimakasta silloin, kun raon tai esteen leveys on aallonpituuden suuruusluokkaa tai pienempi. Ääni taipuu ovesta käytävään, koska puheäänen aallonpituus on noin metrin suuruusluokkaa, oviaukon levyinen.
 

@@ -139,6 +139,8 @@ Suljettu jäykkä astia ei muuta muotoaan. Siksi kaasun tilavuus ja ainemäärä
 
 Piirrä mittaustulokset kuvaajaan. Pisteet asettuvat lähes suoralle: paine kasvaa lähes yhtä paljon jokaista celsiusastetta kohti. Oikeissa mittauksissa pisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksissa on epävarmuutta. Mittausepävarmuus kertoo, kuinka epävarma mittaustulos on. Se ei yleensä tarkoita ehdotonta suurinta mahdollista poikkeamaa oikeasta arvosta. Tässä paineen lukeman epävarmuudeksi on arvioitu $\pm 1\,\text{kPa}$. Valmistajan ilmoittama virheraja mittarille on eri asia. Se on laitteen ominaisuus. Mittauksen epävarmuuteen vaikuttavat lisäksi esimerkiksi lukeminen ja hauteen lämpötilan tasaantuminen. Piirrä suora siksi pisteiden joukon keskeltä. Suoran pitää kulkea epävarmuusvälien kautta. Sen ei tarvitse kulkea jokaisen pisteen kautta.
 
+<figure class="unit-photo"><img src="pics/fy3/liquid-nitrogen-dish.webp" alt="Käsi pitelee lasimaljaa, jossa on nestemäistä typpeä. Maljasta valuu valkoista sumua."><figcaption>Nestemäistä typpeä lasimaljassa tiedefestivaalilla vuonna 2025. Valkoinen sumu on pieniä vesipisaroita.</figcaption></figure>
+
 Jatka suoraa mittausalueen ulkopuolelle kohti kylmempää, kunnes paine on nolla. Tätä sanotaan ekstrapoloinniksi (suoran jatkamiseksi): tulos saadaan alueelta, jolla ei ole mitattu mitään. Mikromallin mukaan paine syntyy hiukkasten törmäyksistä seinään. Ideaalikaasun mallissa paine olisi nolla siinä lämpötilassa, jossa hiukkasten keskimääräinen liike-energia on pienimmillään. Lämpötila, jossa suora osuu nollapaineeseen, on kokeen antama arvio absoluuttiselle nollapisteelle. Se on vain arvio. Todellinen kaasu nesteytyy jo ennen sitä, ja jatke on malli.
 
 ## Kaava: Nollapaineen lämpötila
@@ -166,7 +168,7 @@ Arvioi epävarmuus piirtämällä kaksi ääriviivaa. Molempien pitää vielä k
 ```latex
 \Delta\theta_0 = \frac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}
 ```
-Tässä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_{0,\text{min}}$ pienempi nollapaineen lämpötila. Tulos on muotoa $\theta_0 \pm \Delta\theta_0$. Väli on arvio, ei taattu raja. Se ottaa huomioon pisteiden epävarmuuden. Se ei ota huomioon sitä, pysyykö riippuvuus suorana mittausalueen ulkopuolella.
+Tässä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_{0,\text{min}}$ pienempi nollapaineen lämpötila. Tulos on muotoa $\theta_0 \pm \Delta\theta_0$. Väli on arvio, ei taattu raja. Se ottaa huomioon pisteiden epävarmuuden. Se ei ota huomioon sitä, pysyykö paineen ja lämpötilan välinen yhteys suorana mittausalueen ulkopuolella.
 
 <svg viewBox="0 0 600 368" role="img" aria-label="Kaasun paine lämpötilan funktiona koko lämpötila-alueella −300 °C … 100 °C. Mittauspisteet ovat vain alueella 10–100 °C. Paras suora ja sen katkoviivajatke ekstrapoloivat nollapaineeseen. Se on lämpötilassa θ₀ ≈ −276 °C. Jyrkin ja loivin ääriviiva osuvat p = 0 -akselille lämpötiloissa noin −259 °C ja −295 °C. Siitä saadaan epävarmuusväli. Kuva on mittakaavassa. Virhejanat (±1 kPa) ovat pisteiden kokoisia." style="max-width:100%;font-size:24px">
 <line x1="78.0" y1="270.0" x2="78.0" y2="30.0" stroke="#e3dccb" stroke-width="1.5"/>

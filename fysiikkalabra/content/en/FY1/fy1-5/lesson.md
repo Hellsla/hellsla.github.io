@@ -229,7 +229,7 @@ Uniform motion is motion along a straight line at constant speed: in equal inter
   <foreignObject x="80" y="301.5" width="440" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{equal distances in equal intervals of time}$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy1/night-traffic-light-trails.webp" alt="Red and white streaks of light run side by side through a dark picture. A speed limit sign shows on the right."><figcaption>With a long exposure the lights of cars draw lines in the picture. The photo records the path of the motion.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy1/city-highway-light-trails.webp" alt="A city motorway at night: white streaks of light on the left lanes and red ones on the right, street lamps along the road and tall buildings behind."><figcaption>With a long exposure the lights of cars draw lines in the picture: the white ones are headlights and the red ones rear lights. The photo records the path of the motion, but it does not show whether the motion was uniform.</figcaption></figure>
 
 ### Direct proportionality
 Two quantities are directly proportional if their ratio is always the same. When uniform motion starts from the zero point, the position $s$, which here equals the distance travelled, and the time $t$ are directly proportional: double the time gives double the distance, and the ratio $s : t$ is the speed $v$. In a $(t, s)$ graph this shows as a straight line through the origin.

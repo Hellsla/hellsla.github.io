@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: ec38db9d87b5fd39
-
+CONTENT-HASH: 4aa09c757dcbf43d
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Many short items are intentionally identical to the Finnish (choices, hints); acceptable.
 
 ## Checked
-- Every stage, prediction, hint, feedback, criterion and model answer present. Simplified in this review: learn goal, two prerequisites, the hard criterion sentences, the exit-ticket question 3 and the long solution lines (hint wording kept).
-- Short sentences, one idea each, terms explained.
+batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.

@@ -283,6 +283,8 @@
 
 Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja systemaattiseen virheeseen. Ne erottaa toisistaan se, miten ne käyttäytyvät, kun mittaus toistetaan.
 
+<figure class="unit-photo"><img src="pics/fy1/caliper-measurement.webp" alt="Kädet pitelevät metallista työntömittaa, jonka leukojen välissä on pieni kappale. Pöydällä on työkaluja."><figcaption>Työntömitalla pituuden voi lukea millimetrin osien tarkkuudella. Mittausvälineen tarkkuus on yksi mittaustuloksen epävarmuuden lähde.</figcaption></figure>
+
 ### Karkea virhe
 **Karkea virhe** on yksittäinen selvä erehdys: mittari luetaan väärin, luku kirjataan väärin (esimerkiksi $3{,}52\,\text{s}$ eikä $3{,}25\,\text{s}$), kello käynnistetään kerran vahingossa vasta, kun kuula on jo liikkeellä, tai tulos kirjataan väärässä yksikössä. Se näkyy yleensä tuloksena, joka poikkeaa selvästi muista. Karkeaa virhettä ei arvioida eikä keskiarvoisteta, vaan se etsitään: poikkeava tulos tarkistetaan ja mittaus voidaan tarvittaessa toistaa. Tulosta ei poisteta pelkästään siksi, että se poikkeaa muista: se jätetään pois laskuista vain, jos virheen syy löytyy, ja poisjättö perustellaan ja kirjataan.
 

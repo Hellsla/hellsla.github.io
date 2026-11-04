@@ -17,6 +17,24 @@
     "termodynamiikan ensimmäinen pääsääntö",
     "eristetty systeemi"
   ],
+  "key_concepts": [
+    {
+      "term": "sisäenergia",
+      "explain": "Aineen hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa."
+    },
+    {
+      "term": "lämpö",
+      "explain": "Energiaa, joka siirtyy lämpimämmästä kappaleesta kylmempään lämpötilaeron takia."
+    },
+    {
+      "term": "lämpömäärä",
+      "explain": "Kertoo, kuinka paljon energiaa siirtyy lämpönä."
+    },
+    {
+      "term": "termodynamiikan ensimmäinen pääsääntö",
+      "explain": "Kun systeemin liike- ja potentiaalienergia eivät muutu, sisäenergia muuttuu yhtä paljon kuin systeemiin tulee energiaa lämpönä ja työnä yhteensä."
+    }
+  ],
   "sim": true,
   "image": false
 }

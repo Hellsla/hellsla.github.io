@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 87b0781f936cb0e9
+CONTENT-HASH: 59a571abcd4ef802
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fig-8-390 — the $\overline{v}_\text{h}$ label touches a wavefront arc, as in the passed Finnish figure (shared figures.py).
+- none
 
 ## Checked
-- Re-shot after the fixes; contact-1 and contact-3 opened.
-- fig-1-390 (opening), fig-4-390 (taajuusasteikko), fig-5-390 (äänirauta/kitara), fig-7-390 (huojunta, $T_\text{h}$), fig-8-390 (lähde liikkuu / kuulija liikkuu): Finnish labels, decimal comma, nothing clipped.
-- sim-390: "Lähteen nopeus", readouts and legend wrap cleanly.
-- example-390 (stages 1–7), theory (contact-3 #25–#28), exp-koe-1-390, open-exit-1280, open-tarkista-1280.
-- Plain Finnish: short main clauses, consistent glossary terms, decimal comma, LaTeX numbers with units.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review: the new licensed photo (figure.unit-photo) captured in context from preview/fi-easy/fy5-14.html at 390 and 1280 px and opened (review/shots has no dedicated photo capture). The image loads at full resolution, scales inside the column on a phone and sits beside its paragraph at 1280 px. The caption is under the image with its credit line ("Kuva: …, licence"). Nothing is clipped and there is no horizontal overflow. The caption and alt text were read against the picture and the neighbouring paragraph: plain S2 Finnish, quantities in LaTeX.

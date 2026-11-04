@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cba23ec607e17a7b
+CONTENT-HASH: fae69bc31f6b2519
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- kuulokynnys: the lesson ties it to about 1000 Hz and says it differs between frequencies; the key concept could add "noin 1000 Hz:n taajuudella".
 
 ## Checked
-- Selkokielinen versio verrattuna content/fi (PASS d141c14dfc9f5692): lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json, lang/fi-easy.json sims.fy5-15.
-- Kaikki luvut identtiset (lesson 195, inquiry 407, exit-ticket 25; skriptivertailu), kaavat ja oletukset (tasainen säteily, ei heijastuksia, riippumattomat lähteet, interferenssipoikkeus) säilyneet.
-- Oikeat vaihtoehdot, palautteet, vihjeet, virheet ja mallivastaukset säilyneet; esimerkin 3,98·10⁻³ W/m² ja 5,00 W sekä ennusteiden 84,0/93,0 dB ennallaan.
-- Termit: intensiteetti, intensiteettitaso, kuulokynnys, kipukynnys, etäisyyden neliön käänteislaki, desibeli; logaritmi lg selitetty.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: intensiteetti (power per area), intensiteettitaso relative to the threshold, +10 dB = ×10 intensity, and kuulokynnys agree with the lesson.

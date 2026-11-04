@@ -264,7 +264,7 @@
 ## Ydinajatus
 Liikkeen kuvaaminen alkaa sopimuksesta. Valitaan suora, jota pitkin kappale liikkuu. Suoralle valitaan origo eli nollakohta ja positiivinen suunta. Tämä suora on $x$-akseli. **Paikka** $x$ kertoo, missä kappale on origoon nähden. Etumerkki kertoo, kummalla puolella kappale on. Paikka $x = -3\,\text{m}$ on kolme metriä origosta negatiiviseen suuntaan. Aika $t$ mitataan kellolla. Liike kuvataan kertomalla paikka jokaisella hetkellä.
 
-Kappale voi siirtyä paikasta $x_1$ paikkaan $x_2$. Silloin sen **siirtymä** on paikan muutos $\Delta x = x_2 - x_1$. Siirtymä on vektorisuure. Vektorisuureella on suuruus ja suunta. Suoralla suunta kerrotaan etumerkillä. Plus tarkoittaa positiivista suuntaa ja miinus vastakkaista suuntaa. Siirtymä ei ole sama asia kuin kuljettu matka $s$. Matka on reitin pituus. Matka ei voi olla negatiivinen. Pyöräilijä voi ajaa kaupalle ja takaisin. Silloin matka on neljä kilometriä. Siirtymä on nolla, koska loppupaikka on sama kuin alkupaikka.
+Kappale voi siirtyä paikasta $x_1$ paikkaan $x_2$. Silloin sen **siirtymä** on paikan muutos $\Delta x = x_2 - x_1$. Siirtymä on **vektorisuure**. Vektorisuureella on sekä suuruus että suunta. Esimerkiksi tuulen nopeus on vektorisuure: pitää tietää, kuinka kovaa tuulee ja mihin suuntaan. Suoralla suunta kerrotaan etumerkillä. Plus tarkoittaa positiivista suuntaa ja miinus vastakkaista suuntaa. Siirtymä ei ole sama asia kuin kuljettu matka $s$. Matka on reitin pituus. Matka ei voi olla negatiivinen. Pyöräilijä voi ajaa kaupalle ja takaisin. Silloin matka on neljä kilometriä. Siirtymä on nolla, koska loppupaikka on sama kuin alkupaikka.
 
 <svg data-fig="displacement" viewBox="0 0 600 392" role="img" aria-label="Kaavakuva kahdesta siirtymästä x-akselilla. Akseli on piirretty mittakaavassa. Ylhäällä kappale siirtyy paikasta x1 = 2 m paikkaan x2 = 8 m. Siirtymä on +6 m ja osoittaa oikealle. Alhaalla kappale siirtyy paikasta x1 = 8 m paikkaan x2 = 3 m. Siirtymä on −5 m ja osoittaa vasemmalle." style="max-width:100%;font-size:24px">
   <line x1="50" y1="104" x2="482" y2="104" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -341,6 +341,8 @@ Kappale voi siirtyä paikasta $x_1$ paikkaan $x_2$. Silloin sen **siirtymä** on
 
 **Nopeus** kertoo, kuinka nopeasti paikka muuttuu ja mihin suuntaan. Nopeus on myös vektorisuure. Sen etumerkki kertoo suunnan. Nopeuden itseisarvo $|v|$ on vauhti. Vauhti on nopeuden suuruus ilman etumerkkiä. Tasaisessa liikkeessä nopeus pysyy vakiona. Silloin paikka muuttuu yhtä paljon jokaisessa yhtä pitkässä aikavälissä.
 
+<figure class="unit-photo"><img src="pics/fy4/highway-light-trails.webp" alt="Kaartuva moottoritie yöllä. Tiellä on punaisia ja valkoisia valoviivoja."><figcaption>Kuva on otettu yöllä pitkällä valotusajalla. Autojen valot näkyvät viivoina. Punaiset viivat ovat takavaloja ja valkoiset ajovaloja.</figcaption></figure>
+
 Liike voidaan piirtää **$(t,x)$-kuvaajaksi**. Vaaka-akselilla on aika ja pystyakselilla paikka. Tasaisen liikkeen kuvaaja on suora. Suoran jyrkkyys eli kulmakerroin on nopeus. Jyrkempi suora tarkoittaa suurempaa nopeutta. Vaakasuora suora tarkoittaa, että kappale on paikallaan. Laskeva suora tarkoittaa liikettä negatiiviseen suuntaan. Kuvaaja ei ole kuva kappaleen reitistä. Nouseva viiva ei tarkoita ylämäkeä. Se tarkoittaa, että paikka kasvaa.
 
 ## Kaava: Keskinopeus ja tasaisen liikkeen yhtälö
@@ -350,7 +352,7 @@ v_\text{ka} = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1}
 ```
 missä $v_\text{ka}$ on keskinopeus (m/s), $\Delta x$ siirtymä (m), $\Delta t$ kulunut aika (s) ja $x_1$ ja $x_2$ paikat (m) hetkillä $t_1$ ja $t_2$. Vektorina nopeus kirjoitetaan $\overline{v}$ ja siirtymä $\Delta\overline{x}$. Suoralla käytetään niiden komponentteja $v$ ja $\Delta x$. Niiden etumerkki kertoo suunnan.
 
-Tasaisessa liikkeessä keskinopeus on sama millä tahansa aikavälillä. Sitä kutsutaan nopeudeksi $v$. Epätasaisessa liikkeessä keskinopeus kertoo vain yhden asian. Se kertoo vakionopeuden, jolla sama siirtymä tehtäisiin samassa ajassa. Kappale voi olla hetkellä $t = 0$ paikassa $x_0$. Silloin kaavasta saadaan paikka ajan funktiona:
+Tasaisessa liikkeessä keskinopeus on sama millä tahansa aikavälillä. Sitä kutsutaan nopeudeksi $v$. Epätasaisessa liikkeessä keskinopeus kertoo vain yhden asian. Se kertoo vakionopeuden, jolla sama siirtymä tehtäisiin samassa ajassa. Kappale voi olla hetkellä $t = 0$ paikassa $x_0$. Silloin kaavasta saadaan paikka ajan funktiona eli paikka millä tahansa hetkellä:
 ```latex
 x = x_0 + v\,t
 ```

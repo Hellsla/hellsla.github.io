@@ -14,6 +14,20 @@
     "watti",
     "kilowattitunti"
   ],
+  "key_concepts": [
+    {
+      "term": "teho",
+      "explain": "Kertoo, kuinka nopeasti energiaa muuntuu tai siirtyy. Teho on energia jaettuna ajalla."
+    },
+    {
+      "term": "watti",
+      "explain": "Tehon yksikkö. Yksi watti tarkoittaa, että energiaa muuntuu yksi joule sekunnissa."
+    },
+    {
+      "term": "kilowattitunti",
+      "explain": "Energian yksikkö, jolla sähkö laskutetaan. Se on energia, jonka kilowatin laite muuntaa tunnissa."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

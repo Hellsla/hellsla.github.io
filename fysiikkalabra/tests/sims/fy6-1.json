@@ -1,0 +1,147 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.paristot===2 && S.lamput===1 && S.kytkin==='suljettu' && S.QA===null && S.QB===null && S.mittaa===false && S.t===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: two cells, one lamp, switch closed, no measurement yet (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===4 && L[0]==='1,2,3' && L[1]==='1,2' && L[2]==='suljettu,auki' && L[3]==='0.5,1,3' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "selects: cells 1-3, lamps 1-2, switch closed/open, speed"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b[0]==='Mittaa' && b[1]==='Nollaa' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button first; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='kytkin,lamput,paristot' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares paristot, lamput and kytkin"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return document.getElementById('sim-root').clientWidth < 500 || (c.width===600 && c.height===400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 in the wide layout"
+ },
+ {
+  "expr": "window.simState.U",
+  "expected": 3.0,
+  "tol": 0.001,
+  "note": "two cells: U = 2 · 1,5 V = 3,0 V"
+ },
+ {
+  "expr": "window.simState.I",
+  "expected": 0.2,
+  "tol": 0.001,
+  "note": "model current I = 3,0 V / 15 Ω = 0,20 A (not shown)"
+ },
+ {
+  "expr": "window.simState.dotsPerS",
+  "expected": 4,
+  "tol": 0.001,
+  "note": "0,20 A carries 4 dots of 0,05 C per second"
+ },
+ {
+  "setup": "const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'3');",
+  "expr": "window.simState.I",
+  "expected": 0.3,
+  "tol": 0.001,
+  "note": "three cells: 4,5 V, 0,30 A"
+ },
+ {
+  "setup": "",
+  "expr": "window.simState.kirkkaus",
+  "expected": 1,
+  "tol": 0.001,
+  "note": "the brightest case: three cells, one lamp"
+ },
+ {
+  "setup": "const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[1],'2');",
+  "expr": "window.simState.I",
+  "expected": 0.15,
+  "tol": 0.001,
+  "note": "two lamps in the loop: 0,15 A"
+ },
+ {
+  "setup": "const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[2],'auki');",
+  "expr": "window.simState.I + window.simState.kirkkaus",
+  "expected": 0,
+  "tol": 0.0001,
+  "note": "open switch: no current, the lamps dark"
+ },
+ {
+  "setup": "(async () => { const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'2'); I(S[1],'1'); I(S[2],'suljettu'); I(S[3],'3'); await new Promise((r)=>setTimeout(r,150)); document.querySelector('#sim-root button').click(); await new Promise((r)=>{const t0=Date.now(); const f=()=>{ if (window.simState.QA!==null || Date.now()-t0>9000) r(); else setTimeout(f,100); }; f();}); })()",
+  "expr": "window.simState.QA",
+  "expected": 2.0,
+  "tol": 0.001,
+  "note": "two cells, one lamp, 10,0 s: 40 dots through A, Q_A = 2,00 C"
+ },
+ {
+  "setup": "",
+  "expr": "window.simState.QB",
+  "expected": 2.0,
+  "tol": 0.001,
+  "note": "the same 2,00 C through B after the lamp"
+ },
+ {
+  "setup": "",
+  "expr": "(window.simState.mittaa ? 1 : 0) + Math.abs(window.simState.t - 10)",
+  "expected": 0,
+  "tol": 0.0001,
+  "note": "the measurement stops at t = 10,0 s"
+ },
+ {
+  "setup": "",
+  "expr": "document.querySelector('#sim-root button').disabled ? 0 : 1",
+  "expected": 1,
+  "tol": 0,
+  "note": "Mittaa is available again"
+ },
+ {
+  "setup": "(async () => { const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'3'); I(S[1],'2'); I(S[2],'suljettu'); I(S[3],'3'); await new Promise((r)=>setTimeout(r,150)); document.querySelector('#sim-root button').click(); await new Promise((r)=>{const t0=Date.now(); const f=()=>{ if (window.simState.QA!==null || Date.now()-t0>9000) r(); else setTimeout(f,100); }; f();}); })()",
+  "expr": "window.simState.QA + window.simState.QB",
+  "expected": 3.0,
+  "tol": 0.001,
+  "note": "three cells, two lamps: Q_A = Q_B = 1,50 C"
+ },
+ {
+  "setup": "(async () => { const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'1'); I(S[1],'1'); I(S[2],'suljettu'); I(S[3],'3'); await new Promise((r)=>setTimeout(r,150)); document.querySelector('#sim-root button').click(); await new Promise((r)=>{const t0=Date.now(); const f=()=>{ if (window.simState.QA!==null || Date.now()-t0>9000) r(); else setTimeout(f,100); }; f();}); })()",
+  "expr": "window.simState.QB",
+  "expected": 1.0,
+  "tol": 0.001,
+  "note": "one cell, one lamp: 1,00 C"
+ },
+ {
+  "setup": "const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[0],'2');",
+  "expr": "window.simState.QA === null && window.simState.QB === null ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "changing a control clears the measurement"
+ },
+ {
+  "setup": "(async () => { const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(S[2],'auki'); I(S[3],'3'); await new Promise((r)=>setTimeout(r,150)); document.querySelector('#sim-root button').click(); await new Promise((r)=>{const t0=Date.now(); const f=()=>{ if (window.simState.QA!==null || Date.now()-t0>9000) r(); else setTimeout(f,100); }; f();}); })()",
+  "expr": "window.simState.QA + window.simState.QB",
+  "expected": 0,
+  "tol": 0.0001,
+  "note": "open switch: nothing passes A or B in 10 s"
+ },
+ {
+  "setup": "document.querySelectorAll('#sim-root button')[1].click();",
+  "expr": "window.simState.QA === null && window.simState.t === 0 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "Nollaa clears the measurement"
+ }
+]

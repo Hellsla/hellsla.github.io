@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 55ae0e4b739c0193
-
+CONTENT-HASH: cf4d35d21384f84f
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md (hero) — Polish: the cropped playfield (bumpers cut at the top edge) is fine for a close-up, but a student unfamiliar with pinball may not see where the ball will go; the alt text names the launch lane, which helps.
-
+- *jousivakio*: "kun jousta venytetään metrin verran" voi lukeutua kirjaimellisesti; tekstin oma muoto "montako newtonia tarvitaan yhtä venymämetriä kohti" olisi yhtenäisempi.
 ## Checked
-- Delta only: the hero illustration and its alt text; the rest of the lesson is as previously approved.
-- Plunger pulled out by hand, compressing the coil spring between the plunger head and the front wall, ball resting on the head: this is correct physics for a pinball launcher and matches the question (spring compression and launch speed). No force arrows or numbers disclose the answer.
-- The easy-Finnish alt text (short sentences) matches the picture element by element and is in correct language; the opening question's wording is unchanged.
-- Hero is legible at 390 px and 1280 px (top captures) and carries no text.
+batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.

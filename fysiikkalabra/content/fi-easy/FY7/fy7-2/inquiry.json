@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "contribution": "Varattu hiukkanen sähkö- ja magneettikentässä. Magneettinen voima $F = qvB$ kääntää liikkeen suuntaa, mutta ei muuta vauhtia. Rata on ympyrä, jonka säde on $r = mv : (qB)$. Nopeusvalitsin, massaspektrometri ja hiukkaskiihdytin käyttävät kahta asiaa yhdessä: sähkökenttä kiihdyttää hiukkasia ja magneettikenttä taivuttaa niiden rataa.",
+  "learn": [
+    "selittämään, miksi magneettinen voima kääntää varatun hiukkasen rataa mutta ei muuta sen vauhtia.",
+    "määrittämään magneettisen voiman suunnan sekä laskemaan sen suuruuden ja ympyräradan säteen.",
+    "laskemaan hiukkasen vauhdin nopeusvalitsimessa ja massan massaspektrometrissä."
+  ],
+  "prior": [
+    "Sähkökentässä varattuun hiukkaseen vaikuttaa voima $F = qE$. Kun hiukkanen kulkee jännitteen $U$ yli, se saa energiaa $W = qU$ (luku *Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia*)",
+    "Magneettikentän voimakkuutta kuvaa magneettivuon tiheys $B$. Sen yksikkö on tesla (luku *Magneetit, magneettinen dipoli ja magneettikenttä*)",
+    "Tasaisessa ympyräliikkeessä kokonaisvoima osoittaa kohti radan keskipistettä. Sen suuruus on $\\tfrac{mv^2}{r}$ (luku *Tasainen ympyräliike ja normaalikiihtyvyys*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Radiohiiliajoituksella selvitetään muinaisen puunpalan ikä. Ikä selviää siitä, kuinka paljon näytteessä on vielä radioaktiivista hiili-14:ää. Näytteen hiilestä vain noin yksi biljoonasta atomista on hiili-14:ää. Kemiallisesti hiili-14 käyttäytyy kuin tavallinen hiili-12.\n\nLaboratoriossa näytteen hiiliatomeista tehdään ioneja. Ioni on atomi, jolla on sähkövaraus. Ionit kiihdytetään suureen vauhtiin ja ohjataan magneettikenttään. Ilmaisimella hiili-12-ionit ja hiili-14-ionit osuvat eri kohtiin. Siksi ne voidaan laskea erikseen.",
+      "question": "Miten magneettikenttä voi lajitella hiukkasia, jotka eroavat toisistaan vain massaltaan?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: sähkökenttä kiihdyttää",
+      "optional": true,
+      "prompt": "Protoni kiihdytetään levosta jännitteellä $1000\\,\\text{V}$. Sen vauhdiksi tulee $4{,}4 \\cdot 10^{5}\\,\\text{m/s}$. Mikä on vauhti, kun jännite on $4000\\,\\text{V}$?",
+      "choices": [
+        {
+          "text": "$8{,}8 \\cdot 10^{5}\\,\\text{m/s}$, koska vauhti on verrannollinen jännitteen neliöjuureen.",
+          "correct": true,
+          "feedback": "Oikein. Kenttä tekee protoniin työn $W = qU$. Työ muuttuu liike-energiaksi $\\tfrac{1}{2}mv^2$ (luku *Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia*). Nelinkertainen jännite antaa nelinkertaisen liike-energian. Se vastaa kaksinkertaista vauhtia, koska $v = \\sqrt{2qU : m}$."
+        },
+        {
+          "text": "$1{,}8 \\cdot 10^{6}\\,\\text{m/s}$, koska vauhti on suoraan verrannollinen jännitteeseen.",
+          "feedback": "Jännite on verrannollinen liike-energiaan, ei vauhtiin: $qU = \\tfrac{1}{2}mv^2$. Nelinkertainen liike-energia vaatii vain kaksinkertaisen vauhdin, koska vauhti on yhtälössä toisessa potenssissa."
+        },
+        {
+          "text": "$4{,}4 \\cdot 10^{5}\\,\\text{m/s}$, koska sama sähkökenttä antaa protonille aina saman vauhdin.",
+          "feedback": "Suurempi jännite tarkoittaa, että kenttä tekee protoniin enemmän työtä: $W = qU$. Työ kasvattaa liike-energiaa, joten vauhti kasvaa."
+        },
+        {
+          "text": "$7{,}0 \\cdot 10^{6}\\,\\text{m/s}$, koska vauhti kasvaa jännitteen neliön mukana.",
+          "feedback": "Neliö kuuluu vauhtiin, ei jännitteeseen. Yhtälöstä $qU = \\tfrac{1}{2}mv^2$ nähdään, että vauhti on verrannollinen jännitteen neliöjuureen. Nelinkertainen jännite kaksinkertaistaa vauhdin."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: vauhti magneettikentässä",
+      "prompt": "Protoni lentää tyhjiökammioon, jossa on homogeeninen magneettikenttä mutta ei sähkökenttää. Protonin nopeus on kohtisuorassa kenttää vastaan. Miten protonin vauhti muuttuu kentässä?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Vauhti kasvaa, koska magneettikenttä vetää protonia puoleensa.",
+          "feedback": "Mallin arvot kumoavat tämän. Kun protoni on kiertänyt puoliympyrän ja palannut ilmaisimeen, sen vauhti on yhä sama kuin alussa, esimerkiksi $1{,}00 \\cdot 10^{6}\\,\\text{m/s}$. Magneettinen voima on kohtisuorassa nopeutta vastaan. Siksi se ei tee työtä eikä kasvata liike-energiaa."
+        },
+        {
+          "text": "Vauhti pienenee, koska magneettikenttä jarruttaa liikettä.",
+          "feedback": "Mallin arvot kumoavat tämän. Vauhti on lopussa sama kuin alussa, esimerkiksi $1{,}00 \\cdot 10^{6}\\,\\text{m/s}$. Voima on koko ajan kohtisuorassa liikettä vastaan. Se ei jarruta eikä kiihdytä, vaan kääntää liikkeen suuntaa."
+        },
+        {
+          "text": "Vauhti pysyy samana, mutta liikkeen suunta muuttuu.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Vauhti on lopussa sama kuin alussa, esimerkiksi $1{,}00 \\cdot 10^{6}\\,\\text{m/s}$, vaikka protoni on kääntynyt puoliympyrän verran ja kulkee vastakkaiseen suuntaan. Magneettinen voima on koko ajan kohtisuorassa nopeutta vastaan, joten se ei tee työtä."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kaksinkertainen vauhti",
+      "prompt": "Samaan magneettikenttään lähetetään protoni kaksinkertaisella vauhdilla. Miten käy protonin ympyräradan säteelle $r$? Simulaatiossa osumakohdan etäisyys raosta on radan halkaisija $d = 2r$.",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Säde puolittuu, koska suurempaan vauhtiin vaikuttaa suurempi voima.",
+          "feedback": "Mallin arvot kumoavat tämän. Vauhdilla $1{,}0 \\cdot 10^{6}\\,\\text{m/s}$ protoni osuu ilmaisimeen $10{,}4\\,\\text{cm}$:n päähän raosta. Vauhdilla $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$ se osuu $20{,}9\\,\\text{cm}$:n päähän. Voima kyllä kaksinkertaistuu. Nopeamman hiukkasen pitäminen samalla radalla vaatisi kuitenkin keskeisvoiman $mv^2 : r$, ja se kasvaa vauhdin neliön mukana."
+        },
+        {
+          "text": "Säde pysyy samana, koska voima kasvaa samassa suhteessa kuin vauhti.",
+          "feedback": "Mallin arvot kumoavat tämän. Osumakohta siirtyy $10{,}4\\,\\text{cm}$:stä $20{,}9\\,\\text{cm}$:iin. Voima kasvaa vauhdin mukana. Keskeisvoiman tarve $mv^2 : r$ kasvaa kuitenkin vauhdin neliön mukana, joten rata loivenee."
+        },
+        {
+          "text": "Säde kaksinkertaistuu, koska rata loivenee vauhdin kasvaessa.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Osumakohdan etäisyys raosta eli radan halkaisija kasvaa $10{,}4\\,\\text{cm}$:stä $20{,}9\\,\\text{cm}$:iin. Yhtälöstä $qvB = mv^2 : r$ saadaan $r = mv : (qB)$. Säde on siis suoraan verrannollinen vauhtiin."
+        },
+        {
+          "text": "Säde nelinkertaistuu, koska liike-energia nelinkertaistuu.",
+          "feedback": "Mallin arvot kumoavat tämän. Osumakohta vain kaksinkertaistuu: $10{,}4\\,\\text{cm}$:stä $20{,}9\\,\\text{cm}$:iin. Säde riippuu tulosta $mv$ eikä liike-energiasta: $r = mv : (qB)$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: nopeusvalitsin",
+      "prompt": "Kammion sähkökenttä ja magneettikenttä on säädetty niin, että protoni kulkee kammion läpi suoraan. Samalla vauhdilla kammioon lähetetään alfahiukkanen. Sen massa on noin nelinkertainen ja varaus kaksinkertainen protoniin verrattuna. Miten alfahiukkanen kulkee?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Se kulkee suoraan kuten protoni, koska vauhti on sama.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: kaikkien hiukkasten poikkeama on $0\\,\\text{cm}$. Alfahiukkaseen vaikuttavat voimat $F_\\text{s} = qE$ ja $F_\\text{m} = qvB$ ovat kumpikin kaksinkertaiset protoniin verrattuna, $4{,}8 \\cdot 10^{-14}\\,\\text{N}$. Ne ovat silti yhtä suuret ja vastakkaiset. Valitsin valitsee vauhdin $v = E : B$, ei massaa eikä varausta."
+        },
+        {
+          "text": "Se kaartuu sähköisen voiman suuntaan, koska sen varaus on suurempi.",
+          "feedback": "Mallin arvot kumoavat tämän: alfahiukkanenkin kulkee suoraan. Kaksinkertainen varaus kaksinkertaistaa sähköisen voiman, mutta myös magneettisen voiman $qvB$. Voimat kumoavat siis yhä toisensa."
+        },
+        {
+          "text": "Se kaartuu, koska kentät on säädetty protonin massan mukaan.",
+          "feedback": "Mallin arvot kumoavat tämän: poikkeama on $0\\,\\text{cm}$ kaikilla hiukkasilla. Massa ei esiinny ehdossa $qE = qvB$ lainkaan. Kun voimat ovat yhtä suuret ja vastakkaiset, kokonaisvoima on nolla. Nollavoima ei taivuta raskastakaan hiukkasta."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse hiukkanen ja kentät ja paina *Laukaise*. Seuraa, miten rata kaartuu, mihin hiukkanen osuu ja mitä sen vauhdille tapahtuu.",
+      "howto": "Hiukkanen tulee kammioon vasemman seinän raosta ja liikkuu aluksi oikealle. Valitse hiukkanen, sen vauhti $v$, magneettikentän $B$ suuruus ja suunta sekä levyjen välisen sähkökentän $E$ voimakkuus. Paina sitten *Laukaise*.\n\nSininen nuoli on nopeus. Punaiset nuolet ovat magneettinen voima $\\overline{F}_\\text{m}$ ja sähköinen voima $\\overline{F}_\\text{s}$. Pidempi voimanuoli on aina yhtä pitkä, ja lyhyempi on piirretty samassa suhteessa. Vasen seinä on ilmaisin. Lukema $d$ on osumakohdan etäisyys raosta. Jos hiukkanen tulee ulos oikeasta reunasta, lukemissa näkyy sen poikkeama $y$ raon korkeudesta. Ruudukon ruudun sivu on $5\\,\\text{cm}$. Kun muutat jotakin arvoa, hiukkanen palaa raolle. Kohta *Nopeus* muuttaa vain animaation tahtia.",
+      "model": "Kammio on tyhjiö, ja kentät ovat homogeenisia koko kammiossa. Magneettikenttä on kohtisuorassa paperia vastaan. Sähkökenttä osoittaa alalevystä ($+$) ylälevyyn ($-$). Hiukkasten massat ja varaukset ovat todellisia: protoni $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$ ja $+e$, deuteroni $3{,}344 \\cdot 10^{-27}\\,\\text{kg}$ ja $+e$, alfahiukkanen $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$ ja $+2e$ sekä negatiivinen vetyioni $1{,}674 \\cdot 10^{-27}\\,\\text{kg}$ ja $-e$.\n\nPainovoima jätetään pois, koska se on noin $10^{12}$ kertaa pienempi kuin magneettinen voima. Vauhdit ovat alle $1\\,\\%$ valon nopeudesta, joten klassinen mekaniikka riittää. Liike näytetään hidastettuna. Normaalinopeudella yksi sekunti animaatiota vastaa aikaa $1{,}0 \\cdot 10^{-7}\\,\\text{s}$. Lukemat ovat mallin arvoja, eivät mittauksia.",
+      "calc": "Simulaatio laskee radan pienillä aika-askelilla Newtonin toisesta laista. Hiukkaseen vaikuttavat sähköinen voima $q\\overline{E}$ ja magneettinen voima. Magneettisen voiman suuruus on $qvB$, ja sen suunta on kohtisuorassa sekä nopeutta että kenttää vastaan. Positiivisen varauksen voiman suunta saadaan oikean käden säännöllä. Osumakohta $d$, poikkeama $y$ ja vauhti saadaan lasketusta radasta. Niissä ei käytetä säteen kaavaa. Lukemien voimat $F_\\text{m} = qvB$ ja $F_\\text{s} = qE$ on laskettu lähtövauhdilla."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vain vauhti muuttuu",
+      "intro": "Testaa ennusteet 1 ja 2. Hiukkanen on protoni. Magneettikenttä on $0{,}20\\,\\text{T}$ ja osoittaa paperista ulos. Sähkökenttää ei ole. Muuta vain vauhtia. Paina *Laukaise*, seuraa rataa ja kirjaa osumakohta $d$ ja vauhti lopussa. Tee mittaus ainakin vauhdeilla $1{,}0 \\cdot 10^{6}\\,\\text{m/s}$ ja $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Voit mitata myös muilla vauhdeilla. Taulukossa vauhti on yksikössä $\\text{Mm/s}$, ja $1\\,\\text{Mm/s} = 10^{6}\\,\\text{m/s}$. Radan säde on puolet osumakohdan etäisyydestä.",
+      "initial": {
+        "hiukkanen": "protoni",
+        "v": 1,
+        "B": 0.2,
+        "suunta": "ulos",
+        "E": 0
+      },
+      "locked": [
+        "hiukkanen",
+        "B",
+        "suunta",
+        "E"
+      ],
+      "vary": "v",
+      "names": {
+        "hiukkanen": "hiukkanen",
+        "v": "vauhti v",
+        "B": "magneettikenttä B",
+        "suunta": "kentän suunta",
+        "E": "sähkökenttä E"
+      },
+      "units": {
+        "v": "Mm/s",
+        "B": "T",
+        "E": "kV/m"
+      },
+      "values": {
+        "B": {
+          "0.2": "$0{,}20\\,\\text{T}$"
+        },
+        "hiukkanen": {
+          "protoni": "protoni",
+          "deuteroni": "deuteroni",
+          "alfa": "alfahiukkanen",
+          "vetyioni": "negatiivinen vetyioni"
+        },
+        "suunta": {
+          "ulos": "paperista ulos",
+          "sisaan": "paperiin sisään"
+        }
+      },
+      "measure": [
+        {
+          "key": "d",
+          "label": "d (cm)"
+        },
+        {
+          "key": "vLoppu",
+          "label": "v lopussa (Mm/s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: nopeusvalitsin",
+      "intro": "Testaa ennuste 3. Kammiossa on nyt sähkökenttä $150\\,\\text{kV/m}$ ja magneettikenttä $0{,}15\\,\\text{T}$ paperista ulos. Vauhti on $1{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Vaihda vain hiukkasta. Paina *Laukaise* ja kirjaa poikkeama ja voimat ainakin protonilla ja alfahiukkasella. Voimat ovat femtonewtoneina, ja $1\\,\\text{fN} = 10^{-15}\\,\\text{N}$.",
+      "initial": {
+        "hiukkanen": "protoni",
+        "v": 1,
+        "B": 0.15,
+        "suunta": "ulos",
+        "E": 150
+      },
+      "locked": [
+        "v",
+        "B",
+        "suunta",
+        "E"
+      ],
+      "vary": "hiukkanen",
+      "names": {
+        "hiukkanen": "hiukkanen",
+        "v": "vauhti v",
+        "B": "magneettikenttä B",
+        "suunta": "kentän suunta",
+        "E": "sähkökenttä E"
+      },
+      "units": {
+        "v": "Mm/s",
+        "B": "T",
+        "E": "kV/m"
+      },
+      "values": {
+        "hiukkanen": {
+          "protoni": "protoni",
+          "deuteroni": "deuteroni",
+          "alfa": "alfahiukkanen",
+          "vetyioni": "negatiivinen vetyioni"
+        },
+        "suunta": {
+          "ulos": "paperista ulos",
+          "sisaan": "paperiin sisään"
+        }
+      },
+      "measure": [
+        {
+          "key": "poikkeama",
+          "label": "y (cm)"
+        },
+        {
+          "key": "Fm15",
+          "label": "F_m (fN)"
+        },
+        {
+          "key": "Fs15",
+          "label": "F_s (fN)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mitä magneettikenttä tekee?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella vastaus näihin kysymyksiin. Muuttiko magneettikenttä protonin vauhtia? Miten osumakohta ja radan säde riippuivat vauhdista? Miksi nopeusvalitsimen läpi kulkivat suoraan kaikki hiukkaset, vaikka niiden massat ja varaukset olivat erilaiset?",
+      "model": "Vauhti oli lopussa sama kuin alussa, esimerkiksi $1{,}00 \\cdot 10^{6}\\,\\text{m/s}$, vaikka protonin liike kääntyi vastakkaiseen suuntaan. Magneettinen voima on kohtisuorassa nopeutta vastaan, eikä se tee työtä.\n\nKun vauhti kaksinkertaistui $1{,}0 \\cdot 10^{6}\\,\\text{m/s}$:sta $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$:iin, osumakohta siirtyi $10{,}4\\,\\text{cm}$:stä $20{,}9\\,\\text{cm}$:iin. Myös säde $r = d : 2$ kaksinkertaistui. Säde on siis suoraan verrannollinen vauhtiin.\n\nNopeusvalitsimessa poikkeama oli $0\\,\\text{cm}$ kaikilla hiukkasilla. Alfahiukkaseen vaikutti sekä sähköinen että magneettinen voima $48\\,\\text{fN}$. Se on kaksinkertainen protonin voimaan $24\\,\\text{fN}$ verrattuna. Voimat olivat silti yhtä suuret ja vastakkaiset, joten kokonaisvoima oli nolla. Ehdosta $qE = qvB$ varaus supistuu pois. Suoraan kulkee hiukkanen, jonka vauhti on $v = E : B = 1{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Luvut ovat mallin arvoja.",
+      "criteria": [
+        "Totesin taulukon perusteella, että vauhti pysyi samana. Perustelin sen sillä, että voima on kohtisuorassa nopeutta vastaan.",
+        "Vertasin osumakohtia ja päättelin, että säde kaksinkertaistui, kun vauhti kaksinkertaistui.",
+        "Selitin nopeusvalitsimen sillä, että sähköinen ja magneettinen voima ovat yhtä suuret ja vastakkaiset kaikille hiukkasille, joiden vauhti on $E : B$.",
+        "Mainitsin, että luvut ovat mallin arvoja."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Nopeusvalitsin ja massaspektrometri",
+        "Hiukkaskiihdytin"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $r = mv : (qB)$. Palaa sitten alun kysymykseen. Miksi hiili-14-ionit osuvat ilmaisimeen eri kohtaan kuin hiili-12-ionit? Niillä on sama varaus, ja ne tulevat magneettikenttään samalla vauhdilla nopeusvalitsimen jälkeen.",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2",
+        "ennuste-3"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija laskee, kuinka suurta ympyrää protoni kiertää. Protoni kiihdytetään levosta jännitteellä $2{,}0\\,\\text{kV}$, ja sitten se lentää kohtisuoraan magneettikenttään $0{,}10\\,\\text{T}$. Opiskelija kirjoittaa\n\n$$\\begin{aligned} qU &= mv^2 \\\\ v &= \\sqrt{\\frac{qU}{m}} = 4{,}38 \\cdot 10^{5}\\,\\text{m/s} \\\\ r &= \\frac{mv}{qB} = 4{,}57\\,\\text{cm} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Liike-energia on $\\tfrac{1}{2}mv^2$. Oikea vauhti on siis $6{,}19 \\cdot 10^{5}\\,\\text{m/s}$ ja säde $6{,}46\\,\\text{cm}$.",
+          "correct": true,
+          "feedback": "Oikein. Kentän tekemä työ $qU$ on yhtä suuri kuin liike-energia $\\tfrac{1}{2}mv^2$, joten $v = \\sqrt{2qU : m}$. Kun kerroin $\\tfrac{1}{2}$ unohtuu, vauhti ja säde jäävät tekijällä $\\sqrt{2} \\approx 1{,}41$ liian pieniksi: $4{,}57\\,\\text{cm} \\cdot 1{,}41 = 6{,}46\\,\\text{cm}$."
+        },
+        {
+          "text": "Jännite olisi pitänyt sijoittaa kilovoltteina eli lukuna $2{,}0$ eikä voltteina.",
+          "feedback": "SI-yksikköinen jännite on voltteina: $2{,}0\\,\\text{kV} = 2{,}0 \\cdot 1000\\,\\text{V} = 2000\\,\\text{V}$. Opiskelija käytti sitä oikein. Virhe on energiayhtälössä."
+        },
+        {
+          "text": "Säteen kaava on väärin päin. Oikea kaava on $r = qB : (mv)$, joten säde on paljon pienempi.",
+          "feedback": "Säteen kaava $r = mv : (qB)$ on oikein. Nopeampi ja raskaampi hiukkanen kaartuu loivemmin, ja voimakkaampi kenttä taivuttaa tiukemmin. Käänteisen lausekkeen yksikkö olisi $1/\\text{m}$ eikä metri. Virhe on vauhdin laskussa."
+        },
+        {
+          "text": "Magneettikenttä kasvattaa protonin vauhtia, joten vauhti olisi laskettava kentässä uudelleen.",
+          "feedback": "Magneettinen voima on kohtisuorassa nopeutta vastaan eikä tee työtä. Vauhti pysyy siis kentässä samana. Virhe on kiihdytysvaiheen energiayhtälössä."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Puolijohdetehtaan ioni-istutin ampuu boori-ioneja piikiekkoon. Ionien massa on $11{,}01\\,\\text{u}$ ($1\\,\\text{u} = 1{,}661 \\cdot 10^{-27}\\,\\text{kg}$) ja varaus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Ionit kiihdytetään levosta jännitteellä $20{,}0\\,\\text{kV}$. Sen jälkeen ne ohjataan erottelumagneettiin. Siellä niiden on kuljettava ympyränkaarta, jonka säde on $0{,}300\\,\\text{m}$, jotta ne pääsevät raon läpi. Kuinka suuri magneettivuon tiheyden on oltava? Vastaa teslaina.",
+      "answer": 0.225,
+      "unit": "T",
+      "tolerance": 0.02,
+      "hints": [
+        "Tilanteessa on kaksi vaihetta. Mitä sähkökenttä tekee kiihdytyksessä? Mikä voima pitää ionin ympyräradalla magneetissa?",
+        "Kiihdytyksestä saadaan $qU = \\tfrac{1}{2}mv^2$, josta $v = \\sqrt{2qU : m}$. Magneetissa $qvB = mv^2 : r$, josta $B = mv : (qr)$.",
+        "Massa on $m = 11{,}01 \\cdot 1{,}661 \\cdot 10^{-27}\\,\\text{kg} = 1{,}829 \\cdot 10^{-26}\\,\\text{kg}$. Vauhti on $v = 5{,}92 \\cdot 10^{5}\\,\\text{m/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.159,
+          "feedback": "Unohdit kertoimen $\\tfrac{1}{2}$ liike-energiasta. Oikein on $qU = \\tfrac{1}{2}mv^2$, joten $v = \\sqrt{2qU : m}$. Ilman kerrointa vauhti ja kenttä jäävät tekijällä $\\sqrt{2}$ liian pieniksi."
+        },
+        {
+          "value": 0.00712,
+          "feedback": "Sijoitit jännitteen kilovoltteina. Muunna se ensin voltteihin: $20{,}0\\,\\text{kV} = 20{,}0 \\cdot 1000\\,\\text{V} = 20\\,000\\,\\text{V}$."
+        }
+      ],
+      "solution": "**Annettu:** boori-ioni, massa $m = 11{,}01\\,\\text{u}$, $1\\,\\text{u} = 1{,}661 \\cdot 10^{-27}\\,\\text{kg}$, varaus $q = e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$; kiihdytysjännite $U = 20{,}0\\,\\text{kV}$, ionit lähtevät levosta; radan säde magneetissa $r = 0{,}300\\,\\text{m}$\n\n**Kysytty:** erottelumagneetin magneettivuon tiheys $B$ teslaina\n\n**Periaate:** Kiihdytyksessä sähkökentän tekemä työ $qU$ muuttuu kokonaan ionin liike-energiaksi, koska ioni lähtee levosta tyhjiössä. Magneetissa ionin nopeus on kohtisuorassa kenttää vastaan. Magneettinen voima $qvB$ on siis ympyräradan keskeisvoima, eikä se muuta vauhtia.\n\n**Kaava:** $qU = \\tfrac{1}{2}mv^2$, josta $v = \\sqrt{\\dfrac{2qU}{m}}$; $qvB = \\dfrac{mv^2}{r}$, josta $B = \\dfrac{mv}{qr}$\n\n**Muunnokset:** $m = 11{,}01 \\cdot 1{,}661 \\cdot 10^{-27}\\,\\text{kg} = 1{,}8288 \\cdot 10^{-26}\\,\\text{kg}$ ja $U = 20{,}0\\,\\text{kV} = 20{,}0 \\cdot 1000\\,\\text{V} = 20\\,000\\,\\text{V}$\n\n**Sijoitus:** $v = \\sqrt{\\dfrac{2 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 20\\,000\\,\\text{V}}{1{,}8288 \\cdot 10^{-26}\\,\\text{kg}}} = 5{,}919 \\cdot 10^{5}\\,\\text{m/s}$ ja $B = \\dfrac{1{,}8288 \\cdot 10^{-26}\\,\\text{kg} \\cdot 5{,}919 \\cdot 10^{5}\\,\\text{m/s}}{1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 0{,}300\\,\\text{m}} = 0{,}2252\\,\\text{T}$\n\n**Vastaus:** $0{,}225\\,\\text{T}$, kolme merkitsevää numeroa kuten jännitteessä $20{,}0\\,\\text{kV}$ ja säteessä $0{,}300\\,\\text{m}$.\n\n**Järkevyys:** Kenttä on samaa suuruusluokkaa kuin vahvan kestomagneetin pinnalla. Sähkömagneetti tuottaa sellaisen helposti. Vauhti $5{,}9 \\cdot 10^{5}\\,\\text{m/s}$ on noin $0{,}2\\,\\%$ valon nopeudesta, joten klassinen kaava pätee. Takaisin laskettuna $r = mv : (qB) = 0{,}300\\,\\text{m}$, kuten pitääkin."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 2 tehtävissä yhdistetään kaksi vaihetta. Taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Protoni kiertää ympyrärataa homogeenisessa magneettikentässä tyhjiössä. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Vauhti pysyy samana, koska magneettinen voima on kohtisuorassa nopeutta vastaan.",
+          "correct": true,
+          "feedback": "Oikein. Voima on koko ajan kohtisuorassa nopeutta vastaan, joten se ei tee työtä. Liike-energia ja vauhti pysyvät samoina. Vain liikkeen suunta muuttuu."
+        },
+        {
+          "text": "Vauhti kasvaa vähitellen, koska magneettinen voima vaikuttaa protoniin koko ajan.",
+          "feedback": "Voima muuttaa vauhtia vain, jos sillä on nopeuden suuntainen osa. Magneettinen voima on kohtisuorassa nopeutta vastaan, joten se muuttaa vain liikkeen suuntaa."
+        },
+        {
+          "text": "Magneettinen voima osoittaa kentän suuntaan ja pitää protonin radallaan.",
+          "feedback": "Magneettinen voima on kohtisuorassa myös kenttää vastaan. Ympyräradalla se osoittaa kohti radan keskipistettä. Keskipiste on tasossa, joka on kohtisuorassa kenttää vastaan."
+        },
+        {
+          "text": "Protoniin ei vaikuta voimaa, koska se liikkuu koko ajan samalla vauhdilla.",
+          "feedback": "Tasainen vauhti ei tarkoita, ettei voimaa olisi. Ympyrärata vaatii keskeisvoiman, joka muuttaa nopeuden suuntaa. Sen antaa magneettinen voima $qvB$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Voiman suunta",
+      "figure": "fy7-2/track-sign",
+      "prompt": "Kuvassa hiukkanen tulee vasemmalta tyhjiökammioon, jossa magneettikenttä osoittaa paperiin sisään. Hiukkasen rata kaartuu alaspäin. Mikä on hiukkasen varauksen merkki?",
+      "choices": [
+        {
+          "text": "Negatiivinen",
+          "correct": true,
+          "feedback": "Oikein. Positiiviselle varaukselle oikean käden sääntö antaa voiman suunnan: peukalo osoittaa oikealle nopeuden suuntaan, muut sormet osoittavat paperiin sisään, ja kämmen työntää ylöspäin. Tässä rata kaartuu alaspäin. Voima on siis vastakkainen, ja varaus on negatiivinen."
+        },
+        {
+          "text": "Positiivinen",
+          "feedback": "Tarkista oikean käden sääntö: peukalo osoittaa oikealle nopeuden suuntaan ja muut sormet osoittavat paperiin sisään kentän suuntaan. Kämmen työntää ylöspäin, joten positiivinen hiukkanen kaartuisi ylös. Alaspäin kaartuvan hiukkasen varaus on negatiivinen."
+        },
+        {
+          "text": "Varaukseton",
+          "feedback": "Varauksettomaan hiukkaseen ei vaikuta magneettista voimaa, joten se kulkisi suoraan. Kaartuva rata kertoo, että hiukkasella on varaus."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "3. Radan säde",
+      "prompt": "Alfahiukkasen massa on $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$ ja varaus $2e = 3{,}204 \\cdot 10^{-19}\\,\\text{C}$. Se lentää vauhdilla $1{,}5 \\cdot 10^{6}\\,\\text{m/s}$ kohtisuoraan magneettikenttään, jonka magneettivuon tiheys on $0{,}50\\,\\text{T}$. Kuinka suuri on hiukkasen ympyräradan säde? Vastaa senttimetreinä.",
+      "answer": 6.2,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä voima pitää hiukkasen ympyräradalla, ja mihin suuntaan se osoittaa?",
+        "Magneettinen voima on keskeisvoima: $qvB = mv^2 : r$, josta $r = mv : (qB)$.",
+        "Muista, että alfahiukkasen varaus on $2e$: $r = \\dfrac{6{,}645 \\cdot 10^{-27} \\cdot 1{,}5 \\cdot 10^{6}}{3{,}204 \\cdot 10^{-19} \\cdot 0{,}50}\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 12.4,
+          "feedback": "Tulos on kaksinkertainen. Alfahiukkasen varaus on $2e = 3{,}204 \\cdot 10^{-19}\\,\\text{C}$, ei $e$. Tarkista myös, että laskit säteen etkä halkaisijaa."
+        }
+      ],
+      "solution": "**Annettu:** alfahiukkanen, $m = 6{,}645 \\cdot 10^{-27}\\,\\text{kg}$, $q = 2e = 3{,}204 \\cdot 10^{-19}\\,\\text{C}$, $v = 1{,}5 \\cdot 10^{6}\\,\\text{m/s}$ kohtisuorassa kenttää vastaan, $B = 0{,}50\\,\\text{T}$\n\n**Kysytty:** ympyräradan säde $r$ senttimetreinä\n\n**Periaate:** Magneettinen voima $qvB$ on kohtisuorassa nopeutta vastaan ja koko ajan yhtä suuri. Siksi hiukkanen on tasaisessa ympyräliikkeessä, ja magneettinen voima on sen keskeisvoima.\n\n**Kaava:** $qvB = \\dfrac{mv^2}{r}$, josta $r = \\dfrac{mv}{qB}$\n\n**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten säde saadaan metreinä. Lopuksi $1\\,\\text{m} = 100\\,\\text{cm}$.\n\n**Sijoitus:** $r = \\dfrac{6{,}645 \\cdot 10^{-27}\\,\\text{kg} \\cdot 1{,}5 \\cdot 10^{6}\\,\\text{m/s}}{3{,}204 \\cdot 10^{-19}\\,\\text{C} \\cdot 0{,}50\\,\\text{T}} = 0{,}06222\\,\\text{m} = 6{,}222\\,\\text{cm}$\n\n**Vastaus:** $6{,}2\\,\\text{cm}$, kaksi merkitsevää numeroa kuten vauhdissa $1{,}5 \\cdot 10^{6}\\,\\text{m/s}$ ja kentässä $0{,}50\\,\\text{T}$.\n\n**Järkevyys:** Protoni kiertäisi samalla vauhdilla samassa kentässä säteellä $3{,}1\\,\\text{cm}$. Alfahiukkasen massa on noin nelinkertainen mutta varaus kaksinkertainen. Säteen $r = mv : (qB)$ pitää siis olla noin kaksinkertainen, ja se on."
+    },
+    {
+      "id": "tarkistus-4",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "4. Selitä: hiukkaskiihdytin",
+      "optional": true,
+      "prompt": "CERNin LHC-kiihdyttimessä protonit kiertävät $26{,}7\\,\\text{km}$:n pituista rengasta. Selitä, miksi protonien energiaa kasvatetaan sähkökentillä eikä magneeteilla. Selitä myös, miksi suuremman energian kiihdytin tarvitsee voimakkaammat magneetit tai suuremman renkaan.",
+      "model": "Magneettinen voima on aina kohtisuorassa protonin nopeutta vastaan. Siksi se ei tee työtä eikä voi kasvattaa protonin liike-energiaa. Energiaa kasvattaa sähkökenttä. Aina kun protoni kulkee kiihdytysvälin jännitteen $U$ yli, kenttä tekee siihen työn $qU$.\n\nMagneettien tehtävä on taivuttaa protonien rata renkaaksi. Radan säde on $r = mv : (qB)$, joten nopeampi protoni kaartuu loivemmin. Jotta se pysyisi samassa renkaassa, kenttää $B$ on vahvistettava. Kun magneettien kenttää ei voi enää kasvattaa, suurempi energia vaatii suuremman säteen eli suuremman renkaan. Lähellä valon nopeutta kaava muuttuu suhteellisuusteorian mukaiseksi, mutta periaate on sama.",
+      "criteria": [
+        "Sanon, että magneettinen voima on kohtisuorassa nopeutta vastaan. Siksi se ei tee työtä eikä muuta vauhtia.",
+        "Sanon, että sähkökenttä kasvattaa energiaa, koska se tekee protoniin työn $qU$.",
+        "Käytän säteen kaavaa $r = mv : (qB)$: suurempi vauhti vaatii voimakkaamman kentän tai suuremman säteen.",
+        "Erotan magneettien tehtävän (radan taivutus) sähkökenttien tehtävästä (kiihdytys)."
+      ]
+    },
+    {
+      "id": "lopuksi",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "fy5-15",
   "course": "FY5",
-  "title": "Äänen voimakkuus",
+  "title": "Intensiteetti ja desibeliasteikko",
   "goals": [
     "LOPS FY5: äänen intensiteettitaso",
     "Täsmennys: intensiteetti, intensiteettitaso desibeleinä ja kuulokynnys",
@@ -15,6 +15,24 @@
     "intensiteettitaso",
     "desibeli",
     "kuulokynnys"
+  ],
+  "key_concepts": [
+    {
+      "term": "intensiteetti",
+      "explain": "Kertoo, kuinka paljon ääniaallon energiaa kulkee sekunnissa pinta-alayksikön läpi."
+    },
+    {
+      "term": "intensiteettitaso",
+      "explain": "Äänen voimakkuus ilmoitettuna desibeleinä kuulokynnykseen verrattuna."
+    },
+    {
+      "term": "desibeli",
+      "explain": "Intensiteettitason yksikkö. Kun taso kasvaa kymmenellä desibelillä, intensiteetti kymmenkertaistuu."
+    },
+    {
+      "term": "kuulokynnys",
+      "explain": "Heikoin ääni, jonka ihminen juuri ja juuri kuulee."
+    }
   ],
   "sim": true,
   "solutions": "all",

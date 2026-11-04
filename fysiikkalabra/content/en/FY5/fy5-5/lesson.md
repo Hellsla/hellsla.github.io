@@ -1,4 +1,4 @@
-# Newton's law of gravitation
+# The gravitational force between bodies
 
 > **Why** does a dropped apple rush towards the Earth, while the Earth does not seem to move towards the apple at all?
 
@@ -189,6 +189,8 @@ Gravitation is an interaction, so Newton's third law applies to it. The Earth pu
   <foreignObject x="433.5" y="315.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$a = 9.8\,\text{m/s}^2$</div></foreignObject>
   <foreignObject x="265" y="9.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$F_1 = F_2$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy5/artemis2-earthset.webp" alt="The cratered surface of the Moon at the bottom of the picture, with the blue Earth setting behind it against black space."><figcaption>The Earth sets behind the Moon's horizon. The Artemis II crew took the photo from the Orion spacecraft in April 2026 as it flew past the Moon. The Earth and the Moon pull each other with gravitational forces of equal size.</figcaption></figure>
 
 The difference is in the accelerations. By Newton's second law the acceleration of a body is $a = \tfrac{F}{m}$. When a force of about $1.96\,\text{N}$ acts on an apple of $0.20\,\text{kg}$, the acceleration of the apple is about $9.8\,\text{m/s}^2$. The same force gives the Earth, whose mass is $5.97 \cdot 10^{24}\,\text{kg}$, an acceleration of about $3 \cdot 10^{-25}\,\text{m/s}^2$. The Earth really does move towards the apple, but so little that it cannot be measured.
 

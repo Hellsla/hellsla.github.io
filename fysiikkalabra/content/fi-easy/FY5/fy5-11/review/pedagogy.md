@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: e92a25f237bdd1db
+CONTENT-HASH: 291341ab171a800c
 ## Blocking
-(none)
+
 ## Polish
-- hero — The picture displays the diffraction result; it poses the question rather than answers it, so no gating issue.
+- *heijastuslaki*: "samassa kulmassa, jossa se tulee pinnalle" ei mainitse normaalia, vaikka teksti korostaa, että kulmat mitataan normaalista. Esim. "Heijastuskulma on yhtä suuri kuin tulokulma. Kulmat mitataan pinnan normaalista."
 ## Checked
-- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
-- Straight crests at sea, narrow gap, semicircular crests filling the basin and reaching the corners: matches the opening question and Pohdinta; no misleading physics; alt matches the picture.
-- Alt text is in short plain-Finnish sentences, matching the easy-language version; no text inside the picture; the 390 px capture shows the picture intact.
+batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6aa8d65bf01d593f
+CONTENT-HASH: 711fb9178951eb1e
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md title "Kahden kappaleen liikkeiden vertailu" is clear and plain, but it no longer says that the chapter finds when and where two bodies meet. The Miksi question and the Ydinajatus do say it, so this is only taste.
+- meta.json key_concepts — "paikka" and "kiihtyvyys" are earlier-chapter terms; fine as glossary-limited, but "kohtaaminen" and "ohitus" carry the chapter.
 
 ## Checked
-- Batch delta review: the rename matches lesson.md and meta.json; the old name "kohtaaminen ja ohitus" is not left in any student-facing text of this version, and no other fi-easy chapter refers to it by name. The inquiry exercises text is shorter and keeps the working instructions (position as a function of time, draw the (t, x) graph).
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

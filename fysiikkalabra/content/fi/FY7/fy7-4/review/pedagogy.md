@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 304ecd496a987db8
+CONTENT-HASH: c4613d821092c131
 
 ## Blocking
 
@@ -20,3 +20,4 @@ CONTENT-HASH: 304ecd496a987db8
 - Sim at 390 px: controls, readout and its three fold-outs understandable, nothing clipped.
 - Finnish: case endings after number+unit correct; terms match glossary.
 - Workload one lesson: optional retrieval, reflect, Etsi virhe, check-3.
+- Delta (CI layout fix): the Etsi virhe product row now continues on its own line with \quad \cdot 0,866; same numbers, reads in order, error still findable.

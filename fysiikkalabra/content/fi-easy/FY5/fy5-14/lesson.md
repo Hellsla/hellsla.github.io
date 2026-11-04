@@ -1,4 +1,4 @@
-# Äänen ominaisuudet
+# Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö
 
 > **Miksi** ohi ajavan ambulanssin sireeni kuulostaa madaltuvan juuri ohitushetkellä, vaikka sireeni itse soi koko ajan samalla tavalla?
 
@@ -91,7 +91,7 @@
 ## Ydinajatus
 
 ### Ääni on pitkittäinen paineaalto
-Kaiuttimen kalvo tai kitaran kieli värähtelee. Se työntää ilman hiukkasia vuorotellen eteen ja taakse. Hiukkaset eivät kulje äänen mukana. Ne värähtelevät paikoillaan samaan suuntaan, johon aalto etenee. Tällainen aalto on pitkittäinen aalto, ja ääni ilmassa on sellainen (luku *Mekaaninen aaltoliike*). Kohtaan, johon hiukkaset tiivistyvät, syntyy tihentymä. Siinä paine on hieman suurempi kuin normaali ilmanpaine $p_0$. Tihentymien väliin jää harvennus, jossa paine on pienempi. Paineen vaihtelu on pientä. Tavallisessa puheessa se on noin $0{,}02\,\text{Pa}$, kun ilmanpaine on noin $101\,\text{kPa}$. Ääni tarvitsee väliaineen. Väliaine voi olla kaasu, neste tai kiinteä aine. Tyhjiössä ääni ei etene.
+Kaiuttimen kalvo tai kitaran kieli värähtelee. Se työntää ilman hiukkasia vuorotellen eteen ja taakse. Hiukkaset eivät kulje äänen mukana. Ne värähtelevät paikoillaan samaan suuntaan, johon aalto etenee. Tällainen aalto on pitkittäinen aalto, ja ääni ilmassa on sellainen (luku *Aaltojen synty ja eteneminen*). Kohtaan, johon hiukkaset tiivistyvät, syntyy tihentymä. Siinä paine on hieman suurempi kuin normaali ilmanpaine $p_0$. Tihentymien väliin jää harvennus, jossa paine on pienempi. Paineen vaihtelu on pientä. Tavallisessa puheessa se on noin $0{,}02\,\text{Pa}$, kun ilmanpaine on noin $101\,\text{kPa}$. Ääni tarvitsee väliaineen. Väliaine voi olla kaasu, neste tai kiinteä aine. Tyhjiössä ääni ei etene.
 
 <svg data-fig="pitkittainen" viewBox="0 0 600 356" role="img" aria-label="Kaavakuva, ei mittakaavassa. Ylhäällä vasemmalla kaiutin, jonka edessä on ilmaa putkessa. Ilman hiukkaset on piirretty sinisinä pisteinä, ja ne ovat paikoin tiheässä ja paikoin harvassa: tiheät kohdat ovat tihentymiä ja harvat harvennuksia. Hiukkaset värähtelevät edestakaisin aallon etenemissuunnassa, mitä esittää pieni kaksipäinen nuoli, ja aalto etenee oikealle, mitä esittää sininen nuoli. Alhaalla on saman hetken paine paikan funktiona: käyrä vaihtelee normaalin ilmanpaineen p0 molemmin puolin, ja sen huiput ovat tihentymien kohdalla. Kahden vierekkäisen tihentymän etäisyys on aallonpituus lambda." style="max-width:100%;font-size:24px">
   <rect x="86" y="70" width="470" height="68" fill="#eef5f9"/>
@@ -325,7 +325,7 @@ Kaiuttimen kalvo tai kitaran kieli värähtelee. Se työntää ilman hiukkasia v
   <foreignObject x="217" y="329.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda$</div></foreignObject>
 </svg>
 
-Kahden peräkkäisen tihentymän etäisyys on aallonpituus $\lambda$. Kaikille aalloille pätee sama: äänen nopeus on $v = f\lambda$, missä $f$ on taajuus (luku *Mekaaninen aaltoliike*). Kun ääni siirtyy aineesta toiseen, sen taajuus pysyy samana. Rajapinnan hiukkaset värähtelevät nimittäin samaan tahtiin kuin tuleva aalto. Nopeus ja aallonpituus sen sijaan muuttuvat.
+Kahden peräkkäisen tihentymän etäisyys on aallonpituus $\lambda$. Kaikille aalloille pätee sama: äänen nopeus on $v = f\lambda$, missä $f$ on taajuus (luku *Aaltojen synty ja eteneminen*). Kun ääni siirtyy aineesta toiseen, sen taajuus pysyy samana. Rajapinnan hiukkaset värähtelevät nimittäin samaan tahtiin kuin tuleva aalto. Nopeus ja aallonpituus sen sijaan muuttuvat.
 
 ### Äänen nopeus
 Äänen nopeus riippuu väliaineesta. Ääni etenee nopeammin, kun aine puristuu huonosti kokoon ja sen tiheys on pieni. Vesi on paljon tiheämpää kuin ilma. Se puristuu kuitenkin niin huonosti kokoon, että ääni kulkee vedessä yli nelinkertaisella nopeudella ilmaan verrattuna. Kaasussa nopeus kasvaa, kun lämpötila nousee. Silloin hiukkaset liikkuvat nopeammin ja välittävät painevaihtelun nopeammin eteenpäin. Ilmassa nopeus kasvaa noin $0{,}6\,\text{m/s}$ jokaista celsiusastetta kohti. Tässä luvussa ilmalle käytetään arvoa $v = 340\,\text{m/s}$. Se vastaa noin $15\,{}^\circ\text{C}$:n lämpötilaa, kuten aiemmissa luvuissa.
@@ -339,7 +339,7 @@ Kahden peräkkäisen tihentymän etäisyys on aallonpituus $\lambda$. Kaikille a
 | teräs | noin 5900 |
 
 ### Äänen nopeuden määrittäminen
-Äänen nopeus määritetään mittaamalla, kuinka kauan ääni kulkee tunnetun matkan. Kaikumenetelmässä lyödään kaksi puukapulaa yhteen etäisyydellä $d$ seinästä. Sitten mitataan aika $t$, jonka kuluttua kaiku palaa. Ääni kulkee seinään ja takaisin eli matkan $2d$, joten $v = \tfrac{2d}{t}$. Tarkempi tapa käyttää kahta mikrofonia. Ne ovat etäisyydellä $d$ toisistaan samalla suoralla äänilähteen kanssa. Mittausohjelma tallentaa molempien mikrofonien signaalit. Äänen saapumisaikojen ero $\Delta t$ luetaan kuvaajasta, ja silloin $v = \tfrac{d}{\Delta t}$. Kolmas tapa on resonanssiputki. Siinä aallonpituus saadaan seisovan aallon pituudesta (luku *Seisovat aallot*).
+Äänen nopeus määritetään mittaamalla, kuinka kauan ääni kulkee tunnetun matkan. Kaikumenetelmässä lyödään kaksi puukapulaa yhteen etäisyydellä $d$ seinästä. Sitten mitataan aika $t$, jonka kuluttua kaiku palaa. Ääni kulkee seinään ja takaisin eli matkan $2d$, joten $v = \tfrac{2d}{t}$. Tarkempi tapa käyttää kahta mikrofonia. Ne ovat etäisyydellä $d$ toisistaan samalla suoralla äänilähteen kanssa. Mittausohjelma tallentaa molempien mikrofonien signaalit. Äänen saapumisaikojen ero $\Delta t$ luetaan kuvaajasta, ja silloin $v = \tfrac{d}{\Delta t}$. Kolmas tapa on resonanssiputki. Siinä aallonpituus saadaan seisovan aallon pituudesta (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*).
 
 ### Äänenkorkeus ja kuuloalue
 Äänenkorkeus määräytyy taajuudesta. Mitä suurempi taajuus on, sitä korkeampi ääni on. Kun taajuus kaksinkertaistuu, ääni nousee oktaavin. Esimerkiksi viritysääni a on $440\,\text{Hz}$ ja oktaavia ylempi a on $880\,\text{Hz}$. Nuori ihminen kuulee taajuuksia noin $20\,\text{Hz}$:stä noin $20\,\text{kHz}$:iin. Ylin kuultava taajuus laskee iän myötä. Kuuloalueen äänten aallonpituudet ovat ilmassa noin $17\,\text{m}$:stä $1{,}7\,\text{cm}$:iin. Kuuloaluetta matalampi ääni on infraääntä ja korkeampi ääni on ultraääntä. Ne ovat samanlaisia pitkittäisiä aaltoja kuin kuultava ääni. Ihmisen korva ei kuitenkaan aisti niitä.
@@ -391,10 +391,10 @@ Kahden peräkkäisen tihentymän etäisyys on aallonpituus $\lambda$. Kaikille a
   <foreignObject x="377" y="19.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{ultraäänikuvaus}$</div></foreignObject>
 </svg>
 
-Infraääntä syntyy esimerkiksi maanjäristyksissä, ukkosessa ja tulivuorenpurkauksissa. Myös norsut viestivät osin infraäänellä. Infraääni vaimenee ilmassa vähän, joten se voi kulkea satoja kilometrejä. Lepakot ja delfiinit käyttävät ultraääntä kaikuluotaukseen. Lyhyt aallonpituus heijastuu pienistäkin kohteista, kuten hyönteisistä. Tekniikassa ultraääntä käytetään esimerkiksi pesulaitteissa, materiaalien vikojen etsimisessä ja veneiden kaikuluotaimissa. Lääketieteen ultraäänikuvaukseen palataan myöhemmin tällä kurssilla. Äänen voimakkuutta ja desibelejä käsitellään luvussa *Äänen voimakkuus*.
+Infraääntä syntyy esimerkiksi maanjäristyksissä, ukkosessa ja tulivuorenpurkauksissa. Myös norsut viestivät osin infraäänellä. Infraääni vaimenee ilmassa vähän, joten se voi kulkea satoja kilometrejä. Lepakot ja delfiinit käyttävät ultraääntä kaikuluotaukseen. Lyhyt aallonpituus heijastuu pienistäkin kohteista, kuten hyönteisistä. Tekniikassa ultraääntä käytetään esimerkiksi pesulaitteissa, materiaalien vikojen etsimisessä ja veneiden kaikuluotaimissa. Lääketieteen ultraäänikuvaukseen palataan myöhemmin tällä kurssilla. Äänen voimakkuutta ja desibelejä käsitellään luvussa *Intensiteetti ja desibeliasteikko*.
 
 ### Sointiväri ja harmoninen sarja
-Huilu, viulu ja laulaja voivat tuottaa saman sävelen, ja silti ne kuulostavat erilaisilta. Ero on äänen sointivärissä. Soittimen kieli tai ilmapatsas värähtelee yhtä aikaa monella ominaistaajuudella (luku *Seisovat aallot*). Alin niistä on perustaajuus $f_1$. Sitä suuremmat taajuudet ovat yläsäveliä. Kielessä ja molemmista päistä avoimessa putkessa yläsävelet ovat perustaajuuden kokonaislukukertoja. Nämä taajuudet muodostavat harmonisen sarjan
+Huilu, viulu ja laulaja voivat tuottaa saman sävelen, ja silti ne kuulostavat erilaisilta. Ero on äänen sointivärissä. Soittimen kieli tai ilmapatsas värähtelee yhtä aikaa monella ominaistaajuudella (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*). Alin niistä on perustaajuus $f_1$. Sitä suuremmat taajuudet ovat yläsäveliä. Kielessä ja molemmista päistä avoimessa putkessa yläsävelet ovat perustaajuuden kokonaislukukertoja. Nämä taajuudet muodostavat harmonisen sarjan
 ```latex
 f_n = n f_1, \quad n = 1, 2, 3, \ldots
 ```
@@ -457,7 +457,7 @@ missä $f_n$ on sarjan $n$:s taajuus (Hz) ja $f_1$ on perustaajuus (Hz). Äänen
 </svg>
 
 ### FFT-spektri
-Mikrofoni mittaa ilmanpaineen vaihtelua ajan funktiona. Mittausohjelma laskee mittaussarjasta äänen spektrin eli FFT-kuvaajan (*Fast Fourier Transform*, nopea Fourier-muunnos). Spektri näyttää, mitä taajuuksia äänessä on ja kuinka voimakkaina ne ovat. Jokainen äänen siniaaltoinen osa näkyy piikkinä omalla taajuudellaan. Luvussa *Aaltojen interferenssi* monimutkainen aalto koottiin samalla tavalla siniaaltojen summana. Soittimen spektrissä piikit ovat harmonisen sarjan taajuuksilla. Vierekkäisten piikkien väli on siis perustaajuus. Perustaajuus on yleensä myös alimman piikin taajuus. Korkein piikki ei aina ole perustaajuuden kohdalla.
+Mikrofoni mittaa ilmanpaineen vaihtelua ajan funktiona. Mittausohjelma laskee mittaussarjasta äänen spektrin eli FFT-kuvaajan (*Fast Fourier Transform*, nopea Fourier-muunnos). Spektri näyttää, mitä taajuuksia äänessä on ja kuinka voimakkaina ne ovat. Jokainen äänen siniaaltoinen osa näkyy piikkinä omalla taajuudellaan. Luvussa *Aaltojen yhteisvaikutus: superpositio ja interferenssi* monimutkainen aalto koottiin samalla tavalla siniaaltojen summana. Soittimen spektrissä piikit ovat harmonisen sarjan taajuuksilla. Vierekkäisten piikkien väli on siis perustaajuus. Perustaajuus on yleensä myös alimman piikin taajuus. Korkein piikki ei aina ole perustaajuuden kohdalla.
 
 ## Kaava: Huojunta ja Dopplerin ilmiö
 
@@ -490,6 +490,8 @@ missä $f_\text{h}$ on huojuntataajuus (Hz) ja $f_1$ ja $f_2$ ovat äänten taaj
 </svg>
 
 Huojuntaa käytetään soittimien virittämiseen. Kun kieltä kiristetään kohti viritysäänen taajuutta, huojunta hidastuu. Huojunta lakkaa, kun taajuudet ovat samat. Huojunta erottuu selvästi, kun taajuusero on enintään noin $10\,\text{Hz}$. Suuremmalla erolla korva kuulee karhean äänen tai kaksi eri ääntä.
+
+<figure class="unit-photo"><img src="pics/fy5/ambulance-panning.webp" alt="Valkoinen ambulanssi ajaa kadulla. Tausta on sumea."><figcaption>Ambulanssi ajaa Torontossa. Kun ambulanssi tulee kohti, sireeni kuulostaa korkeammalta. Kun se menee poispäin, sireeni kuulostaa matalammalta.</figcaption></figure>
 
 ### Dopplerin ilmiö, kun lähde liikkuu
 Ajatellaan, että äänilähde liikkuu. Jokainen aaltorintama lähtee siitä kohdasta, jossa lähde on sillä hetkellä. Rintama leviää ilmassa nopeudella $v$ joka suuntaan. Lähteen jaksonaika on $T_0 = \tfrac{1}{f_0}$. Sinä aikana edellinen rintama etenee matkan $v T_0$. Lähde ehtii kulkea sen perässä matkan $v_\text{s} T_0$. Lähteen edessä rintamien väli eli aallonpituus on siksi $(v - v_\text{s}) T_0$. Lähteen takana se on $(v + v_\text{s}) T_0$. Paikallaan oleva kuulija kuulee taajuuden $f = \tfrac{v}{\lambda}$, joten

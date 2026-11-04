@@ -7,8 +7,8 @@
     "determine the period of a pendulum from a measurement, with its uncertainty."
   ],
   "prior": [
-    "The period $T$ is the duration of one cycle, the frequency is $f = \\tfrac{1}{T}$ and the amplitude is the greatest displacement from the equilibrium position (chapter *Periodic motion*)",
-    "A harmonic force $F = -kx$ points towards the equilibrium position, and the elastic potential energy of a spring is $\\tfrac{1}{2}kx^2$ (chapter *Harmonic force and elastic potential energy*)"
+    "The period $T$ is the duration of one cycle, the frequency is $f = \\tfrac{1}{T}$ and the amplitude is the greatest displacement from the equilibrium position (chapter *Describing oscillation: period, frequency and amplitude*)",
+    "A harmonic force $F = -kx$ points towards the equilibrium position, and the elastic potential energy of a spring is $\\tfrac{1}{2}kx^2$ (chapter *Spring force and spring energy*)"
   ],
   "activities": [
     {
@@ -29,7 +29,7 @@
         {
           "text": "To the left, towards the equilibrium position, $2.0\\,\\text{N}$.",
           "correct": true,
-          "feedback": "Correct. The harmonic force is $F = -kx$: its magnitude is $kx = 40\\,\\text{N/m} \\cdot 0.050\\,\\text{m} = 2.0\\,\\text{N}$, and the minus sign tells us that it points against the displacement, that is, towards the equilibrium position (chapter *Harmonic force and elastic potential energy*). Today we find out what kind of motion this force produces when the body is released."
+          "feedback": "Correct. The harmonic force is $F = -kx$: its magnitude is $kx = 40\\,\\text{N/m} \\cdot 0.050\\,\\text{m} = 2.0\\,\\text{N}$, and the minus sign tells us that it points against the displacement, that is, towards the equilibrium position (chapter *Spring force and spring energy*). Today we find out what kind of motion this force produces when the body is released."
         },
         {
           "text": "To the right, in the direction of the displacement, $2.0\\,\\text{N}$.",

@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2b12720899ac0ca4
+CONTENT-HASH: d10acd84a4cef2c2
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Re-ran figures.py fy5-16 --lang fi-easy after the alt-text fix; captures current.
-- contact-1 opened: fig-1…8 (decibel scale, bar chart 0,5/0,25, noise control, room, decay graph, anti-noise, loudspeaker/microphone) with Finnish labels identical to the reviewed Finnish figures, nothing clipped.
-- example-390 (contact-1 #10–#11): staged, decimal commas, thin-space units, aligned rows.
-- top-390 and Pohdinta stage: heading, Miksi question, Tällä tunnilla opit.
-- Text: short sentences, natural Finnish, no mechanical phrasing beyond some repeated "siis"; alt texts split into short sentences.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy5-16.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

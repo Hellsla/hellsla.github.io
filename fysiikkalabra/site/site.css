@@ -45,7 +45,7 @@
   --measure:38rem;--gap:2.5rem;   /* text column (about 70 characters) and the gutter between the text and margin tracks */
   --stage-space:4.5rem;          /* above a stage */
   --card-pad:1.25rem 1.5rem;--card-radius:16px;--inner-radius:10px;
-  --sticky-top:4.5rem;           /* below the sticky chip bar; the side column has no bar above the content */
+  --sticky-top:4.5rem;           /* below the sticky stage bar */
   /* figure palette (NOTES.md §3): one meaning per colour across every lesson; text and patterns carry the same information */
   --fig-ink:#1f2933;--fig-muted:#6b7480;--fig-line:#c9c2b2;--fig-paper:#fffdf8;
   --fig-water:#2f74b5;--fig-water-light:#bcdcf3;--fig-sand:#d9b26a;--fig-sand-dark:#a97a35;--fig-sand-light:#f1dfb5;
@@ -77,7 +77,7 @@ header.top nav>a,.lang-menu>summary{display:inline-flex;align-items:center;min-h
 header.top nav>a:hover,.lang-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
 @media (max-width:29.99rem){header.top nav>a.nav-modules{display:none}.brand-name small{letter-spacing:.06em}.lang-menu>summary{padding:0 10px}}
-@media (max-width:39.99rem){header.top nav>a.nav-reading{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
+@media (max-width:39.99rem){header.top nav>a.nav-reading,header.top nav>a.nav-study{display:none}}   /* Lukuvinkit gives way first on a phone; the footer of every page links to it */
 .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 /* the language control: the current language on a quiet button, the others in a small panel (a <details>, no script) */
 .lang-menu{position:relative;margin:0}
@@ -128,65 +128,56 @@ main.home section{margin:0}
 main.home,main.reading:not(.lesson){hyphens:auto;overflow-wrap:break-word}   /* long Finnish compounds wrap with enlarged text instead of running off a phone */
 main.home h2{font:600 clamp(1.5rem,1.3rem + .6vw,1.75rem)/1.2 var(--serif);letter-spacing:-.01em;margin:0 0 .4rem}
 .section-lead{font-size:var(--fs-ui);color:var(--ink-2);max-width:40rem;margin:0 0 1rem}
-.home-intro{padding:clamp(1.4rem,4vw,3.2rem) 0 clamp(1.6rem,4vw,2.6rem);max-width:44rem}
-.motto{display:flex;align-items:center;gap:.7rem;margin:0 0 .7rem;font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--copper-ink)}
-.motto::before{content:"";width:28px;height:2px;background:var(--copper);flex:none}
-.home-intro h1{font:500 clamp(2.1rem,1.5rem + 3vw,3.5rem)/1.06 var(--serif);letter-spacing:-.025em;margin:0 0 .8rem;color:var(--ink)}
-.home-intro .lead{font:400 clamp(1.125rem,1.05rem + .3vw,1.3rem)/1.5 var(--sans);color:var(--ink-2);max-width:36rem;margin:0}
-.catalogue{padding-top:.4rem}
-.mod-list,.up-list{list-style:none;margin:0;padding:0}
-.mod-row{position:relative;display:grid;grid-template-columns:minmax(0,1fr);column-gap:.9rem;row-gap:.3rem;margin:0;padding:1.15rem .5rem 1.2rem;border-top:1px solid var(--line)}
-.mod-row:last-child{border-bottom:1px solid var(--line)}
-.mod-row:hover{background:color-mix(in srgb,var(--bg-tint) 60%,transparent)}
-.mod-row:active{background:var(--bg-tint)}
+/* compacted 2026-11-03 ("tiivistä etusivu"): the heading, one line under it and the module list in two columns from
+   700 px fit one desktop screen with the footer. A row is one link: icon, code, title and the Miksi question in the
+   secondary colour (cut to one line in two columns, whole in its title); hover and focus tint the row and show the
+   arrow. On the right, Tulossa is dimmed (--text-muted, a faded icon, no hover tint) and the school's own courses
+   follow under the school's name; the group headings are small and low, so they never match a row's height. */
+:root{--text-muted:#5f6370}
+main.home{max-width:none}
+main.home+footer.bottom{margin-top:1.75rem}
+.home-intro{padding:clamp(.6rem,2vw,1.6rem) 0 clamp(1rem,2.2vw,1.6rem)}
+.home-intro h1{font:500 clamp(2rem,1.55rem + 1.9vw,3rem)/1.08 var(--serif);letter-spacing:-.025em;margin:0 0 .45rem;color:var(--ink)}
+.home-intro .lead{font:400 clamp(1.0625rem,1rem + .25vw,1.1875rem)/1.45 var(--sans);color:var(--ink-2);max-width:none;margin:0;hyphens:manual}
+@media (min-width:64rem){.home-intro .lead{white-space:nowrap}}
+.mod-cols{display:grid;grid-template-columns:minmax(0,1fr);gap:1.4rem 2.5rem;align-items:start}
+@media (min-width:700px){.mod-cols{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(1.25rem,3vw,2.5rem)}}
+.mod-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.mod-list>li{margin:0;border-bottom:1px solid var(--line)}
+.mod-group{font:700 .75rem/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin:0 0 .35rem}
+.mod-group~.mod-group{margin-top:1rem}
+.mod-row{display:flex;align-items:center;gap:.8rem;min-height:56px;padding:.45rem .6rem;color:var(--ink);text-decoration:none;border-radius:8px}
+.mod-icon{display:block;width:40px;height:40px;flex:none}
+.mod-text{display:flex;flex-direction:column;flex:1;min-width:0}
+.mod-name{font:600 1.0625rem/1.3 var(--sans);color:var(--ink)}
 .mod-code{font:700 var(--fs-small)/1.5 var(--sans);letter-spacing:.06em;color:var(--accent-deep)}
-.mod-main{min-width:0}
-.mod-title{font:500 clamp(1.3rem,1.2rem + .4vw,1.5rem)/1.2 var(--serif);margin:0 0 .25rem;letter-spacing:-.01em}
-.mod-link{color:var(--ink);text-decoration:none}
-.mod-link::after{content:"";position:absolute;inset:0;z-index:1}   /* the whole row is the link's target */
-.mod-row:hover .mod-link{color:var(--accent-deep);text-decoration:underline;text-decoration-thickness:1px}
-.mod-q{margin:0;font-size:1rem;line-height:1.5;color:var(--ink-2);max-width:34rem}
-.mod-meta{display:flex;flex-wrap:wrap;gap:.1rem .9rem;margin:.15rem 0 0;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
-.mod-avail{font-weight:700;color:var(--ink)}
-.mod-go{justify-self:start;font:700 var(--fs-ui)/1.4 var(--sans);color:var(--accent-deep);margin-top:.15rem}
-.mod-row:hover .mod-go{text-decoration:underline}
-@supports selector(:has(*)){.mod-link:focus-visible{outline:none}.mod-row:has(.mod-link:focus-visible){outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}}
-/* the module icon (teacher 2026-10-31, scripts/module_icons.py): decorative, in its own column at the row's left edge,
-   beside the code and the title on a phone; the name stays the row's main element and the row keeps one link */
-.mod-row:has(> .mod-icon){grid-template-columns:2.75rem minmax(0,1fr);column-gap:.85rem}
-.mod-icon{display:block;width:2.75rem;height:2.75rem;grid-row:1 / span 2;align-self:start;margin-top:.1rem}
-.mod-row:has(> .mod-icon)>:not(.mod-icon){grid-column:2}
-@media (min-width:64rem){
-  .mod-row{grid-template-columns:4rem minmax(0,1fr) 15rem 9.5rem;align-items:baseline;padding:1.3rem .75rem}
-  .mod-meta{grid-column:3;flex-direction:column;margin:0}
-  .mod-go{grid-column:4;justify-self:end;margin:0}
-  .mod-row:has(> .mod-icon){grid-template-columns:3rem 4rem minmax(0,1fr) 15rem 9.5rem;column-gap:.9rem}
-  .mod-icon{width:3rem;height:3rem;grid-row:1;align-self:start;margin:-.2rem 0 0}
-  .mod-row:has(> .mod-icon)>.mod-code{grid-column:2}.mod-row:has(> .mod-icon)>.mod-main{grid-column:3}
-  .mod-row:has(> .mod-icon)>.mod-meta{grid-column:4}.mod-row:has(> .mod-icon)>.mod-go{grid-column:5}
+.mod-name .mod-code{margin-right:.35rem}
+.mod-q{font-size:var(--fs-small);line-height:1.4;color:var(--ink-2)}
+.mod-go{flex:none;width:1.25rem;font:700 1.125rem/1 var(--sans);color:var(--accent-deep);text-align:right;opacity:0}
+.mod-row:hover,.mod-row:focus-visible{background:var(--bg-tint)}
+.mod-row:hover .mod-go,.mod-row:focus-visible .mod-go{opacity:1}
+.mod-row:hover .mod-title{color:var(--accent-deep)}
+.mod-row:focus-visible{outline-offset:0}
+.mod-row.coming .mod-code,.mod-row.coming .mod-title,.mod-row.coming .mod-q{color:var(--text-muted)}
+.mod-row.coming .mod-name{font-weight:500}
+.mod-row.coming .mod-icon{filter:grayscale(1);opacity:.55}
+.mod-row.coming:hover{background:none}.mod-row.coming:hover .mod-go{opacity:0}.mod-row.coming:hover .mod-title{color:var(--text-muted)}
+@media (min-width:700px){   /* two columns: at most 64 px a row; a long title may take two lines in the narrow range, never cut */
+  .mod-row{min-height:60px;padding-block:.2rem}
+  .mod-q{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 }
-.upcoming{margin-top:2.8rem!important}
-.upcoming h2{font-size:1.375rem!important}
-.up-list{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
-@media (min-width:64rem){.up-list{grid-template-columns:1fr 1fr;column-gap:2rem}}
-.up-list li{margin:0;display:flex;flex-direction:column;border-bottom:1px solid var(--line);padding:.15rem .25rem .55rem}
-@media (min-width:40rem){.up-list li{flex-direction:row;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0 .8rem;padding:.2rem .25rem}}
-.up-list a{display:flex;align-items:baseline;gap:.6rem;max-width:100%;min-height:44px;padding:.55rem 0 .2rem;color:var(--ink);text-decoration:none;font-size:1rem}
-.up-list a .mod-code{line-height:1.5;flex:none}.up-list .up-title{min-width:0}
-.up-list a:has(.up-icon){align-items:center}@media (min-width:40rem){.up-list li:has(.up-icon){align-items:center}}.up-icon{display:block;width:2.25rem;height:2.25rem;flex:none}   /* Tulossa keeps its compact rows: a smaller icon, the row no taller */
-.up-list a:hover .up-title{text-decoration:underline;color:var(--accent-deep)}
-.up-meta{font-size:var(--fs-small);color:var(--ink-2)}
-/* the learning model: the six stage names the lessons use, a compact numbered sequence on thin rules */
-.path{margin-top:3.2rem!important}
+@media (min-width:700px) and (max-width:63.99rem){.mod-name{font-size:.9375rem;line-height:1.25}.mod-q{font-size:.8125rem;line-height:1.3}.mod-row{gap:.6rem;padding-inline:.4rem}}
+/* the learning model (moved to the top of Lukuvinkit 2026-11-03): the six stage names the lessons use, a compact
+   numbered sequence on thin rules, two columns in the reading column, more tips behind a disclosure */
+.path{margin:0 0 2.6rem}
+.path h2{margin-top:.6rem}
 .path .section-lead{margin-bottom:.4rem}
-.path-steps{list-style:none;counter-reset:step;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
+.path-steps{list-style:none;counter-reset:step;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:1fr;column-gap:1.6rem;border-top:1px solid var(--line)}
 .path-steps li{counter-increment:step;margin:0;display:grid;align-content:start;grid-template-columns:2rem minmax(0,1fr);column-gap:.4rem;padding:.6rem 0;border-bottom:1px solid var(--line-2);font-size:var(--fs-ui);line-height:1.45;color:var(--ink-2)}
 .path-steps li::before{content:counter(step);grid-row:span 2;font:600 1.25rem/1.2 var(--serif);color:var(--copper-ink)}
 .path-steps strong{font:700 1rem/1.35 var(--sans);color:var(--ink)}
-@media (min-width:48rem){.path-steps{grid-template-columns:repeat(3,1fr);column-gap:1.6rem}}
-@media (min-width:72rem){.path-steps{grid-template-columns:repeat(6,1fr);column-gap:1.2rem;border-top:0}.path-steps li{display:flex;flex-direction:column;gap:.15rem;border-bottom:0;border-top:2px solid var(--line);padding:.7rem 0 0}.path-steps li::before{margin-bottom:.1rem}}
-details.more-tips{margin:1rem 0 0;max-width:44rem}
-@media (max-width:71.99rem){details.more-tips{margin-top:.4rem}}
+@container content (min-width:34rem){.path-steps{grid-template-columns:repeat(2,1fr)}}
+details.more-tips{margin:.6rem 0 0}
 details.more-tips>summary{min-height:44px;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
 details.more-tips ul{margin:.3rem 0 0;padding-left:1.3rem;font-size:1rem;line-height:1.55;color:var(--ink-2)}
 details.more-tips li{margin:.35rem 0}
@@ -247,7 +238,6 @@ ol.lessons li.ch-card.live:hover>a{text-decoration:underline}
    the national modules, rows as the catalogue's; the course page reuses the module page's parts (eyebrow, notes,
    the numbered list with "suunnitteilla" tags) and adds plain lists for goals, ways of working, the report sections
    and the chapters to prepare with. No cards, the one reading column. */
-.local-courses{margin-top:2.8rem!important}
 .notice.local-status{border-left-color:var(--copper);margin-bottom:1.2rem}
 .local-desc{max-width:38rem}
 .local-goals,.local-report{max-width:38rem;padding-left:1.3rem}
@@ -365,9 +355,10 @@ table thead,table tbody{display:table;width:100%}
    and pad less; a number with its unit stays on one line (KaTeX, nbsp). */
 @media (max-width:48rem){th,td{white-space:normal;hyphens:auto;-webkit-hyphens:auto;padding:.4rem .5rem}}
 
-/* stage navigation. Phone to laptop: a bar of chips that sticks under the top edge. From 85rem of window: a side column
-   (below). Each stage shows its number, so the nav and the stage headings read as one sequence; the stage on screen
-   is marked (lesson.js sets aria-current). */
+/* stage navigation = the progress bar (teacher 2026-11-03): a bar of chips that sticks under the top edge at every width;
+   on a narrow window it scrolls sideways inside itself (never the page). Each stage shows its number, so the nav and the
+   stage headings read as one sequence; the stage on screen is marked (lesson.js sets aria-current) and a stage whose
+   answers are all given shows a tick (a.is-done). The Kuuntele button (readaloud.js, .toc-tools) sits at its right end. */
 nav.toc{position:sticky;top:0;z-index:5;display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none;margin:0 -16px 1rem;padding:.4rem 16px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 nav.toc::-webkit-scrollbar{display:none}
 nav.toc .toc-head{display:none}
@@ -375,9 +366,17 @@ nav.toc a{flex:none;display:inline-flex;align-items:center;gap:.45rem;min-height
 nav.toc a:not(:has(.toc-no)){padding-left:.9rem}
 nav.toc .toc-no{display:inline-grid;place-items:center;width:1.45rem;height:1.45rem;border-radius:50%;border:1px solid var(--line);background:var(--surface);font-size:.75rem;font-weight:700;color:var(--ink-2)}
 nav.toc .toc-rest{display:none}
+@media (min-width:80rem){nav.toc .toc-rest{display:inline}}   /* a wide bar has room for "Tarkista osaamisesi" */
 nav.toc a:hover{background:var(--bg-tint);color:var(--ink)}
 nav.toc a[aria-current]{background:var(--accent-deep);color:#fff}
 nav.toc a[aria-current] .toc-no{background:#fff;border-color:#fff;color:var(--accent-deep)}
+nav.toc a.is-done .toc-no{font-size:0;background:var(--accent);border-color:var(--accent)}
+nav.toc a.is-done .toc-no::after{content:"";width:.7rem;height:.38rem;margin-top:-.15rem;border:solid #fff;border-width:0 0 2.5px 2.5px;transform:rotate(-45deg)}
+nav.toc a.is-done[aria-current] .toc-no{background:#fff;border-color:#fff}nav.toc a.is-done[aria-current] .toc-no::after{border-color:var(--accent-deep)}
+nav.toc a.is-done:not(:has(.toc-no)) .toc-label::before{content:"\2713\00a0";font-weight:700}
+nav.toc .toc-tools{position:sticky;right:0;flex:none;display:flex;align-items:center;gap:.25rem;margin-left:auto;padding-left:.5rem;background:var(--bg);box-shadow:-.6rem 0 .6rem -.2rem var(--bg)}
+nav.toc .toc-tools[hidden]{display:none}
+@media (max-width:1099.98px){nav.toc .toc-tools{right:-16px;margin-right:-16px;padding-right:16px}}   /* covers the bar's own side padding too, so no chip shows beside it */
 @media (min-width:1100px){nav.toc{margin-inline:0;padding-inline:0}}
 article h2,article h3,.stage,.activity{scroll-margin-top:var(--sticky-top)}#sim,#exercises,#exit{scroll-margin-top:var(--sticky-top)}
 
@@ -468,6 +467,17 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
 .prior{margin:0 0 .9rem}
 .prior-ref{display:block;font-size:var(--fs-small);color:var(--ink-2)}
 .path-note{max-width:var(--measure);margin:0;font-size:var(--fs-small);color:var(--ink-2);line-height:1.5}
+/* Luvun tärkeät käsitteet (Selkeä suomi, inquiry.py key_concepts_html; teacher 2026-11-03): one quiet panel in the
+   reading column between the opening and the first stage; each concept is its term, a short explanation and the
+   student's own note field, one under another on a phone, the note field beside its explanation from 40rem. */
+.kc{max-width:var(--measure);margin:2rem 0 0;padding:1rem 1.1rem 1.1rem;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.kc-h{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem .6rem;margin:0 0 .4rem}.kc-h .opt-tag{margin:0}
+.kc-lead{margin:0 0 .8rem;font-size:var(--fs-inner);line-height:1.55}
+.kc-list{margin:0;padding:0}
+.kc-term{margin:0;padding:.75rem 0 0;border-top:1px solid var(--line-2);font-size:var(--fs-inner);font-weight:700}
+.kc-explain{margin:.15rem 0 .75rem;font-size:var(--fs-inner);line-height:1.5}
+@media (min-width:40rem){.kc-list{display:grid;grid-template-columns:minmax(9rem,14rem) minmax(0,1fr);column-gap:1.2rem}
+  .kc-term,.kc-explain{border-top:1px solid var(--line-2);padding:.75rem 0;margin:0}}
 .path-count{white-space:nowrap}
 
 /* level 1: the stage. A numbered heading on a full-width rule, with clear room above, so the start of each stage
@@ -617,25 +627,7 @@ details.level>ol>li::marker{font-weight:700;color:var(--accent-deep)}
   .fig-row.side>.fig-text>:last-child{margin-bottom:0}
 }
 
-/* ---- the side column (window at least 85rem): the stage navigation leaves the top bar and stays beside the content */
-@media (min-width:85rem){
-  :root{--sticky-top:1.25rem}
-  .lesson-page{width:min(92rem,calc(100% - 48px));display:grid;grid-template-columns:12.5rem minmax(0,1fr);column-gap:3rem;align-items:start}
-  .lesson-page>header.top,.lesson-page>.crumbs,.lesson-page>.notice,.lesson-page>footer.bottom{grid-column:1/-1}
-  .lesson-page>nav.toc{grid-column:1;position:sticky;top:1.25rem;flex-direction:column;gap:.15rem;margin:0;padding:.2rem 0 1rem;overflow:visible;max-height:calc(100vh - 2.5rem);overflow-y:auto;
-    background:none;backdrop-filter:none;-webkit-backdrop-filter:none;border:0}
-  .lesson-page>main.reading{grid-column:2;max-width:none;margin:0}
-  nav.toc .toc-head{display:block;margin:0 0 .8rem;padding:0 0 .8rem;border-bottom:1px solid var(--line);font:500 1rem/1.3 var(--serif);color:var(--ink)}
-  nav.toc .toc-head>span:first-child{display:block;font:700 .75rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:.3rem}
-  nav.toc a{position:relative;border-radius:10px;min-height:42px;padding:.3rem .6rem;font-size:var(--fs-ui);line-height:1.3;white-space:normal}
-  nav.toc a:not(:has(.toc-no)){padding-left:2.6rem}
-  nav.toc .toc-rest{display:inline}
-  nav.toc .toc-no{width:1.6rem;height:1.6rem;font-size:.8rem;margin-right:.1rem}
-  nav.toc a.toc-sub{min-height:40px;font-weight:500}
-  nav.toc a.toc-end{margin-top:.5rem;border-top:1px solid var(--line);border-radius:0 0 10px 10px;padding-top:.6rem}
-  nav.toc a[aria-current]{background:var(--accent-deep);color:#fff}
-}
-@media (min-width:85rem) and (max-height:34rem){.lesson-page>nav.toc{position:static}}
+/* (2026-11-03, the progress bar brief: the stage bar stays at the top at every width; the side column of wide windows was retired) */
 .nobr{white-space:nowrap}.math-glue{white-space:nowrap}   /* lesson.html flGlueMath: a short formula and the punctuation beside it */
 .katex .katex-mathml{width:1px;height:1px;overflow:hidden}   /* the screen-reader copy of a formula is clipped but would still widen its scroll box */
 
@@ -685,7 +677,7 @@ nav.chapter-nav a:focus-visible{outline:3px solid var(--accent);outline-offset:2
 nav.chapter-nav a.prev .dir::before{content:"← "}nav.chapter-nav a.next .dir::after{content:" →"}
 /* Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the chapter's small link above the chapter navigation, the front page's section */
 p.concept-link{max-width:var(--measure);margin:3rem 0 0;font-size:var(--fs-ui)}p.concept-link a,ul.concept-cards a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--accent-deep);text-decoration:none;overflow-wrap:anywhere}p.concept-link a:hover,ul.concept-cards a:hover{text-decoration:underline}p.concept-link a::after{content:"→";margin-left:.5em;flex:none}
-p.concept-link+nav.chapter-nav{margin-top:1rem}.concept-home{margin-top:2.8rem!important}ul.concept-cards a::after{content:"→";margin-left:.5em;flex:none}
+p.concept-link+nav.chapter-nav{margin-top:1rem}
 /* after a wrong answer in Tarkista osaamisesi: where to practise, as a suggestion (inquiry.py, teacher 2026-10-29) */
 .practice-hint{display:none;margin:.6rem 0 0;padding:.55rem .8rem;border-radius:var(--inner-radius);background:var(--bg-tint);font-size:var(--fs-inner);line-height:1.5}
 fieldset.choice[data-state="no"] .practice-hint,.numeric:has(output[data-state="no"]) .practice-hint{display:block}
@@ -730,10 +722,13 @@ figure.unit-photo img{display:block;width:auto;max-width:min(100%,24rem);height:
 figure.unit-photo figcaption{display:table-caption;caption-side:bottom;margin-top:.5rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
 figure.unit-photo .photo-credit{display:block;margin-top:.2rem;font-size:var(--fs-small)}
 figure.unit-photo.logo img{width:100%;max-width:16rem;max-height:none}
+figure.unit-photo.wide{display:block;width:100%;max-width:var(--measure)}
+figure.unit-photo.wide img{width:100%;max-width:100%;max-height:none}
+figure.unit-photo.wide figcaption{display:block;max-width:var(--measure)}
 /* On a wide screen a photo in the running text sits beside the text column, in the empty space to its right
    (teacher 2026-11-01); inside a box or on a narrower screen it stays in the column. */
 @media (min-width:80rem){
-  .act-theory>figure.unit-photo:not(:has(+ .fx-wide, + .fig-row.side, + .example, + .fx-map, + .fx-timeline, + * + .fx-wide, + * + .fig-row.side, + * + .example, + * + .fx-map, + * + .fx-timeline, + * + * + .fx-wide, + * + * + .fig-row.side, + * + * + .example, + * + * + .fx-map, + * + * + .fx-timeline)){float:right;clear:right;margin:.35rem calc(100% - var(--measure) - 4.5rem - 20rem) 1rem 0}
+  .act-theory>figure.unit-photo:not(.wide):not(:has(+ .fx-wide, + .fig-row.side, + .example, + .fx-map, + .fx-timeline, + * + .fx-wide, + * + .fig-row.side, + * + .example, + * + .fx-map, + * + .fx-timeline, + * + * + .fx-wide, + * + * + .fig-row.side, + * + * + .example, + * + * + .fx-map, + * + * + .fx-timeline)){float:right;clear:right;margin:.35rem calc(100% - var(--measure) - 4.5rem - 20rem) 1rem 0}
   details .activity.act-theory>figure.unit-photo.unit-photo{float:none;margin:1.25rem 0 1.5rem}
   .act-theory>.fx-wide,.act-theory>.fig-row.side,.act-theory>.example,.act-theory>.fx-map,.act-theory>.fx-timeline,.act-sim,section.stage,.unit-credits{clear:right}
 }
@@ -801,31 +796,31 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
   #sim.sim-expanded #sim-root .controls>label{flex-basis:100%}
 }
 @media print{.zoom-btn,.sim-expand,dialog.zoom-dlg{display:none!important}}
-/* Read aloud (readaloud.js, teacher 2026-11-03): the Kuuntele button under the title, the control bar fixed at the
-   bottom while reading, and where the reading is: the block tinted, the sentence and the word highlighted (CSS Custom
-   Highlight API, the page itself is not changed). Outline and shadow only, so the layout never moves. */
-.ra-bar{margin:.25rem 0 1rem}
+/* Read aloud (readaloud.js, teacher 2026-11-03): Kuuntele / Tauko at the right end of the stage bar, its menu (speed,
+   voice) and its note floating under the bar, and where the reading is: the block tinted, the sentence and the word
+   highlighted (CSS Custom Highlight API, the page itself is not changed). Outline and shadow only, so the layout never moves. */
+.ra-bar{margin:.25rem 0 1rem;display:flex;gap:.25rem}.ra-bar[hidden]{display:none}
 .ra-ui svg{width:22px;height:22px;max-width:none;flex:none;background:none;border:0;border-radius:0;padding:0}   /* not the figure frame of article svg */
-.ra-start,.ra-btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;min-height:44px;min-width:44px;font:600 var(--fs-ui) var(--sans);border:1px solid var(--accent-deep);border-radius:999px;background:var(--surface);color:var(--accent-deep);cursor:pointer}
-.ra-start{padding:0 1.1rem 0 .9rem}
-.ra-start[aria-pressed="true"],.ra-btn.ra-main{background:var(--accent-deep);color:#fff}
-.ra-start:hover,.ra-btn:hover{background:var(--accent-soft);color:var(--accent-deep)}
-.ra-start[aria-pressed="true"]:hover,.ra-btn.ra-main:hover{background:var(--accent);color:#fff}
-.ra-start:focus-visible,.ra-btn:focus-visible,.ra-speed:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.ra-dock{position:fixed;left:50%;bottom:max(.75rem,env(safe-area-inset-bottom));transform:translateX(-50%);z-index:60;width:max-content;max-width:calc(100vw - 1.5rem);
-  padding:.5rem .6rem;border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:0 10px 30px rgba(20,23,30,.18)}
-.ra-dock[hidden]{display:none}
-.ra-row{display:flex;align-items:center;gap:.4rem}
-.ra-speed{min-height:44px;padding:0 .5rem;font:500 var(--fs-ui) var(--sans);color:var(--ink);border:1px solid var(--line);border-radius:10px;background:var(--surface)}
-.ra-note{margin:.4rem .2rem 0;max-width:22rem;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
-.ra-note[hidden]{display:none}
-html.ra-reading body{padding-bottom:6rem}
+.ra-start,.ra-more{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;min-height:40px;min-width:40px;font:600 var(--fs-small) var(--sans);border:1px solid var(--accent-deep);border-radius:999px;background:var(--surface);color:var(--accent-deep);cursor:pointer;white-space:nowrap}
+.ra-start{padding:0 .95rem 0 .75rem}.ra-more{padding:0}
+.ra-start[aria-pressed="true"]{background:var(--accent-deep);color:#fff}
+.ra-start:hover,.ra-more:hover,.ra-more[aria-expanded="true"]{background:var(--accent-soft);color:var(--accent-deep)}
+.ra-start[aria-pressed="true"]:hover{background:var(--accent);color:#fff}
+.ra-start:focus-visible,.ra-more:focus-visible,.ra-speeds input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.ra-menu,.ra-note{position:fixed;z-index:60;max-width:min(20rem,calc(100vw - 16px));padding:.75rem .9rem;border:1px solid var(--line);border-radius:14px;background:var(--surface);box-shadow:0 10px 30px rgba(20,23,30,.18)}
+.ra-menu[hidden],.ra-note[hidden]{display:none}
+.ra-speeds{margin:0;padding:0;border:0;min-width:0;display:flex;flex-wrap:wrap;gap:.35rem}
+.ra-speeds legend{padding:0;margin:0 0 .4rem;font:600 var(--fs-small) var(--sans);color:var(--ink-2)}
+.ra-speeds label{display:inline-flex;align-items:center;gap:.35rem;min-height:44px;padding:0 .8rem;border:1px solid var(--line);border-radius:999px;font:500 var(--fs-ui) var(--sans);cursor:pointer}
+.ra-speeds label:has(input:checked){border-color:var(--accent-deep);background:var(--accent-soft);color:var(--accent-deep);font-weight:700}
+.ra-speeds input{accent-color:var(--accent);margin:0}
+.ra-note{margin:0;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2);cursor:pointer}
+@media (max-width:479.98px){nav.toc .toc-tools{gap:.2rem;padding-left:.35rem}.ra-start{padding:0 .6rem 0 .5rem;gap:.3rem}.ra-more{min-width:34px}}   /* a phone: room for the longest stage chip beside the button */
 .ra-on{background:#fff9db;box-shadow:0 0 0 .35rem #fff9db;border-radius:4px}
 ::highlight(ra-sentence){background-color:#ffec99;color:var(--ink)}
 ::highlight(ra-word){background-color:#fcc419;color:var(--ink);text-decoration:underline;text-decoration-thickness:2px}
-@media (max-width:400px){.ra-row{gap:.25rem}.ra-speed{padding:0 .25rem}}
 @media print{.ra-ui{display:none!important}.ra-on{background:none;box-shadow:none}}
-.ra-voice{display:flex;align-items:center;gap:.5rem;margin:.45rem .2rem 0;font:500 var(--fs-small) var(--sans);color:var(--ink-2)}
+.ra-voice{display:flex;align-items:center;gap:.5rem;margin:.75rem 0 0;font:500 var(--fs-small) var(--sans);color:var(--ink-2)}
 .ra-voice[hidden]{display:none}
 .ra-voice select{flex:1;min-width:0;max-width:17rem;min-height:44px;padding:0 .4rem;font:500 var(--fs-ui) var(--sans);color:var(--ink);border:1px solid var(--line);border-radius:10px;background:var(--surface)}
 .ra-voice select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}

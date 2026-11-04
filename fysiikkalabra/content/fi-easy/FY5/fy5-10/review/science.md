@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 59746f905b5818b2
+CONTENT-HASH: 2173dd681221e44c
 
 ## Blocking
+(none)
 
 ## Polish
+- aallonpituus is defined by crests only, while the example of a longitudinal wave (ääni ilmassa) has none; the lesson adds "tai tihentymien".
 
 ## Checked
-- Selkeä suomi -versio verrattuna lukuun *Mekaaninen aaltoliike* (kolme PASS-arviota): lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json ja `sims.fy5-10` (lang/fi-easy.json; 20 lyhyttä käyttöliittymätekstiä jätetty yleiskielisiksi, selite yksinkertaistettu).
-- Kaikki luvut ja kaavat samat kuin suomenkielisessä (skriptivertailu: ei puuttuvia tai lisättyjä lukuja); jokainen ennuste, palaute, koe, vihje, virhepalaute ja malliratkaisu säilyy.
-- Korjattu kaksi fysiikan virhettä: "Tasapainoasema on paikka, jossa kohta on levossa" (A: värähtelevä kohta kulkee tasapainoaseman läpi suurimmalla nopeudellaan) → "paikka, jossa kohta on, kun naru on levossa"; "Se ei riipu pienestäkään amplitudista" (merkitys vääristyi) → "Se ei myöskään riipu amplitudista, kun amplitudi on pieni" (B-ehto säilyy).
-- Esimerkin tulos: "kahdella merkitsevällä numerolla" (oli "kahdella numerolla").
-- Termit: aaltoliike, väliaine, häiriö, tasapainoasema, pulssi, harja/pohja, tihentymä/harvennus selitetään ensikäytössä.
+batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: aaltoliike (energy moves, matter does not), aallon nopeus (depends on the medium) and both wave types agree with the lesson.

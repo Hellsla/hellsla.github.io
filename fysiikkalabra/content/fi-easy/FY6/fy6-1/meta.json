@@ -1,0 +1,44 @@
+{
+  "id": "fy6-1",
+  "course": "FY6",
+  "title": "Virtapiiri, sähkövirta ja jännite",
+  "goals": [
+    "LOPS FY6: jännite ja sähkövirta tasavirtapiireissä",
+    "Tarkennus: perusasiat, jotka liittyvät sähköiseen vuorovaikutukseen, sähkövirtaan ja tasavirtapiirien osiin",
+    "Taidot: kytkentäkaavioiden piirtäminen"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "sähkövirta",
+    "jännite",
+    "virtapiiri",
+    "kytkentäkaavio",
+    "johde",
+    "eriste"
+  ],
+  "key_concepts": [
+    {
+      "term": "sähkövirta",
+      "explain": "Varausten liikettä samaan suuntaan johtimessa. Virta kulkee vain suljetussa piirissä."
+    },
+    {
+      "term": "jännite",
+      "explain": "Kertoo, kuinka paljon energiaa siirtyy jokaista varausyksikköä kohti, kun varaus kulkee kahden kohdan välillä. Mitä suurempi jännite, sitä enemmän energiaa sama varaus siirtää."
+    },
+    {
+      "term": "virtapiiri",
+      "explain": "Suljettu reitti jännitelähteestä laitteen kautta takaisin lähteen toiseen napaan."
+    },
+    {
+      "term": "johde",
+      "explain": "Aine, jossa varaukset pääsevät liikkumaan, esimerkiksi metalli."
+    },
+    {
+      "term": "eriste",
+      "explain": "Aine, jossa varaukset eivät pääse liikkumaan, esimerkiksi muovi, kumi tai lasi."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

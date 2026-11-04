@@ -1,7 +1,7 @@
 {
   "id": "fy5-16",
   "course": "FY5",
-  "title": "Ääni ympäristössämme",
+  "title": "Melu, akustiikka ja äänentoisto",
   "goals": [
     "LOPS FY5: ääni aaltoliikkeenä, äänen intensiteettitaso, äänen ominaisuudet ja eteneminen",
     "Temaattinen tarkastelu: melun haittavaikutukset ja kuulon suojaaminen",
@@ -17,6 +17,24 @@
     "jälkikaiunta",
     "kaiutin",
     "mikrofoni"
+  ],
+  "key_concepts": [
+    {
+      "term": "melu",
+      "explain": "Ääni, joka häiritsee tai voi vahingoittaa kuuloa."
+    },
+    {
+      "term": "jälkikaiunta",
+      "explain": "Ääni kuuluu vielä hetken lähteen hiljennyttyä, koska se heijastuu huoneen pinnoista."
+    },
+    {
+      "term": "kaiutin",
+      "explain": "Laite, joka muuttaa sähköisen signaalin ääneksi."
+    },
+    {
+      "term": "mikrofoni",
+      "explain": "Laite, joka muuttaa äänen sähköiseksi signaaliksi."
+    }
   ],
   "sim": false,
   "solutions": "all",

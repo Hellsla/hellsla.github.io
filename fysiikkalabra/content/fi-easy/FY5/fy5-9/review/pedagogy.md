@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0e718a50224ca1ac
+CONTENT-HASH: f2a9090c70f3a05f
 ## Blocking
-(none)
+
 ## Polish
-- hero — Question names a swing, but the hero shows a clock pendulum and a door bouncer; a swing would tie it to the opening question more directly (taste).
+- meta.json key_concepts "heiluri" (unchanged, carried from the batch review): a pendulum is harmonic only for small swings, as the lesson says ("Pienillä kulmilla …"). Adding "Pienillä heilahduksilla heilurin värähtely on harmonista." would keep it consistent with "harmoninen värähtely".
 ## Checked
-- Delta review: only the hero illustration and its alt text changed; the rest stays as previously approved.
-- Hero shows two oscillators, one displaced pendulum and one spring-hung baby at rest, matching the question's pendulum and spring; no wrong physics (pendulum hangs below its pivot, spring fixed to the door frame, toes on the floor); alt matches the picture (clock, glass door, coil spring, baby, window, plant, picture, armchair).
-- Alt text is in short plain-Finnish sentences, matching the easy-language version; no text inside the picture; the 390 px capture shows the picture intact.
+- Delta: meta.json key_concepts "vaimeneminen" now reads "… muuttaa osan sen energiasta sisäenergiaksi."
+- The new wording matches the lesson's Vaimeneminen section ("muuttavat osan mekaanisesta energiasta sisäenergiaksi") and the term used in earlier courses. "Osan" correctly says that the energy decreases gradually, period by period, and does not vanish at once.
+- The S2 reading level is kept: one sentence, and the cause (kitka, ilmanvastus) is named.
+- The other key concepts are unchanged since the passed batch review.

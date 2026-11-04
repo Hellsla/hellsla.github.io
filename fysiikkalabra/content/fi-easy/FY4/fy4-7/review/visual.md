@@ -1,20 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f885cf951601f6aa
+CONTENT-HASH: fd6d2c933a0de638
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] lesson.md, "Konservatiivinen voima palauttaa energian" — "Lisäksi kappale lähtee levosta korkeudelta h ja liikkuu ilman kitkaa. Se saa alas tullessaan saman nopeuden…" — "Lisäksi" does not connect clearly to the previous sentence and the subject "kappale" changes — suggested: "Lisäksi kappale, joka lähtee levosta korkeudelta $h$ ja liikkuu ilman kitkaa, saa alas tullessaan saman nopeuden, putoaa se suoraan tai liukuu jyrkkää tai loivaa ramppia."
-- [Minor] Experiment 3 readings table at 390 px — header "kitka" and "Emek lopussa (J)" wrap on two lines — cosmetic, widen the first column.
-- [Minor] Figure 1 (hero) — arrows are plain $v$ where the other figures use $\overline{v}$ — cosmetic consistency.
-- [Minor] Theory text — the "Tämä tarkoittaa: jos nopeus kasvaa…" sentence repeats the point just made — optional, may stay as plain-language support.
+- [Minor] lesson.md, after the $E_\text{mek}$ formula — "Siksi myös… Kerro siksi" repeats "siksi" — "Kerro laskussa aina, mikä nollataso on."
 
 ## Checked
-- Contact sheets 1, 3 and 4; fig-3, fig-4 and fig-5 at 390 px (labels are Finnish: "sama korkeus, sama nopeus", "nollataso lattia/pöytä", decimal comma in the graph and shelf figure); hero and fig-2 via contact sheet.
-- Worked example (390), Pohdinta, Ennusta, Tutki, experiment tables, Tarkista osaamisesi, Tehtävät stage, 1280 layout of top, simulation, lab, theory and open states.
-- Text of lesson.md read in full: short sentences, glossary terms (liike-energia, potentiaalienergia, nollataso, mekaaninen energia, konservatiivinen voima) used consistently, decimal comma and thin-space units in KaTeX.
-- Simulation labels (Käynnistä, Alusta, Animaation nopeus) fit; no overflow at 390.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-7.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
