@@ -1102,10 +1102,11 @@ window.flGlueMath=function(root){var WJ='\u2060';(root||document.body).querySele
 <script>/* KaTeX lazily (teacher 2026-11-04, UI fix 4): the page is typeset element by element, and what is inside a closed
    <details> (a hint, a model answer, a solution, an optional box) only when that box is first opened (toggle event, once).
    Its <summary> is typeset at once, as it shows. Before printing every box that waits is typeset at once (lesson.js opens
-   them in beforeprint). flGlueMath runs on each root that was typeset. */
+   them in beforeprint). The simulation's boxes (#sim details.sim-box: Mallin oletukset, Laskennan selitys) are small
+   and typeset at once, as test_sims reads their text closed. flGlueMath runs on each root that was typeset. */
 window.flMath=function(root){var O={delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false,ignoredClasses:['fl-math-later','fl-math-done']};
 var open=function(d){if(d.dataset.flMath!=='wait')return;d.dataset.flMath='done';d.classList.remove('fl-math-later');window.flMath(d);};
-root.querySelectorAll('details:not([open])').forEach(function(d){if(d.dataset.flMath)return;d.dataset.flMath='wait';d.classList.add('fl-math-later');
+root.querySelectorAll('details:not([open])').forEach(function(d){if(d.dataset.flMath||d.closest('#sim'))return;d.dataset.flMath='wait';d.classList.add('fl-math-later');
 var s=d.querySelector(':scope>summary');if(s){renderMathInElement(s,O);flGlueMath(s);s.classList.add('fl-math-done');}
 d.addEventListener('toggle',function(){if(d.open)open(d);});d.flMathOpen=function(){open(d);};});
 renderMathInElement(root,O);flGlueMath(root);};
