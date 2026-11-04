@@ -50,6 +50,7 @@ Valo on sähkömagneettista aaltoliikettä (luku *Sähkömagneettinen säteily j
 Kahden aineen välistä pintaa sanotaan rajapinnaksi. Kun valo osuu rajapintaan, osa valosta **heijastuu** takaisin samaan aineeseen. Osa jatkaa toiseen aineeseen. Rajapinnan läpi menevä valo yleensä muuttaa suuntaansa. Sanomme, että se **taittuu**.
 
 Kulmat mitataan aina rajapinnan **normaalista**. Normaali on suora, joka on kohtisuorassa rajapintaa vastaan kohdassa, johon säde osuu. Kulmia on kolme:
+
 - Tulevan säteen ja normaalin välinen kulma on tulokulma $\alpha_1$.
 - Heijastuneen säteen ja normaalin välinen kulma on heijastuskulma $\beta$.
 - Taittuneen säteen ja normaalin välinen kulma on taitekulma $\alpha_2$.
