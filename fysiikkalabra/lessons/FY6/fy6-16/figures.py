@@ -172,23 +172,23 @@ def curve():
     pts = [(0, 0), (0, 11)] + [(t1 + (tend - t1) * i / 80, P(t1 + (tend - t1) * i / 80)) for i in range(81)] + [(tend, 0)]
     ax.line(pts, HEAT, 3)
     f.tex(ax.X(t1 / 2), ax.Y(5.5), r"W_\text{verkko} = Pt", "middle", w=190, bg=True)
-    for t, p, lab, anchor, dx, dy in ((0, 11, r"20\,\%", "start", 10, -22), (t1, 11, r"90\,\%", "middle", 0, -22),
-                                      (tend, P(tend), r"99\,\%", "middle", 0, -30)):
+    for t, p, lab, anchor, dx, dy in ((0, 11, r"\text{varaus}\ 20\,\%", "start", 10, -22), (t1, 11, r"\text{varaus}\ 90\,\%", "middle", 0, -22),
+                                      (tend, P(tend), r"\text{varaus}\ 99\,\%", "middle", 0, -30)):
         ax.point(t, p, HEAT)
-        f.tex(ax.X(t) + dx, ax.Y(p) + dy, lab, anchor, w=76, bg=True)
+        f.tex(ax.X(t) + dx, ax.Y(p) + dy, lab, anchor, w=150, bg=True)
     return f.svg()
 
 
 # --- task figure: a charge whose current the load management halved ----------------------------------------------
 def task_curve():
     f = Fig("fy616-lataus-ex", 340, "Kuvaaja mittakaavassa: latausaseman verkosta ottama teho P kilowatteina ajan t funktiona "
-            "tunteina yhden latauksen aikana. Ruudukon välit ovat 0,5 tuntia ja 1 kilowatti. Teho on ensin 11 kilowattia ajan "
+            "tunteina yhden latauksen aikana. Ruudukon pystyviivat ovat 0,5 tunnin välein, vaakaviivat kohdissa 2, 4, 5,5, 8 ja 11 kilowattia. Teho on ensin 11 kilowattia ajan "
             "0–2,0 tuntia, sitten 5,5 kilowattia ajan 2,0–3,0 tuntia, minkä jälkeen lataus päättyy ja teho on nolla.")
     from figlib import Axes
     ax = Axes(f, (84, 290), (470, 60), x=(0, 3.5), y=(0, 12), xticks=[0.5 * k for k in range(1, 8)],
-              yticks=list(range(1, 13)), xlabel=r"t\ (\text{h})", ylabel=r"P\ (\text{kW})",
+              yticks=[2, 4, 5.5, 8, 11], xlabel=r"t\ (\text{h})", ylabel=r"P\ (\text{kW})",
               xfmt=lambda v: fi(v) if abs(v - round(v)) < 1e-9 or v == 0.5 else ("" if v == 3.5 else fi(v)),
-              yfmt=lambda v: fi(v) if v % 2 == 0 else "")
+              )
     ax.line([(0, 11), (2.0, 11), (2.0, 5.5), (3.0, 5.5), (3.0, 0)], HEAT, 3)
     return f.svg()
 

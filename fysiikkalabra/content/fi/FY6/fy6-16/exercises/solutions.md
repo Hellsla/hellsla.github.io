@@ -34,7 +34,7 @@
 **Periaate:** Lataus maksetaan verkosta otetusta energiasta, ja jokainen kilowattitunti maksaa saman hinnan. Kustannus on siis hinta kertaa energia.
 **Kaava:** $K = a W_\text{verkko}$
 **Muunnokset:** $a = 14\,\text{snt/kWh} = 14 \cdot 0{,}01\,\text{€/kWh} = 0{,}14\,\text{€/kWh}$
-**Sijoitus:** $K = 0{,}14\,\tfrac{\text{€}}{\text{kWh}} \cdot 45\,\text{kWh} = 6{,}30\,\text{€}$
+**Sijoitus:** $K = 0{,}14\,\text{€/kWh} \cdot 45\,\text{kWh} = 6{,}30\,\text{€}$
 **Vastaus:** $6{,}3\,\text{€}$, kaksi merkitsevää numeroa kuten energiassa $45\,\text{kWh}$ ja hinnassa $14\,\text{snt/kWh}$.
 **Järkevyys:** Sentteinä $45 \cdot 14\,\text{snt} = 630\,\text{snt}$. Kymmenellä sentillä hinta olisi $4{,}50\,\text{€}$ ja viidellätoista $6{,}75\,\text{€}$, joten tulos on niiden välissä lähellä jälkimmäistä.
 
@@ -95,9 +95,9 @@
 **Periaate:** Akkuun menee kummallakin tavalla sama energia, mutta verkosta otetaan akkuun menevä energia jaettuna hyötysuhteella. Säästö syntyy siitä, että latausasemalla verkosta otetaan vähemmän, ja se maksetaan samalla hinnalla.
 **Kaava:** $W_\text{verkko} = \dfrac{W_\text{akku}}{\eta}$ ja $K = a W_\text{verkko}$, joten $\Delta K = a \left(\dfrac{W_\text{akku}}{\eta_1} - \dfrac{W_\text{akku}}{\eta_2}\right)$
 **Muunnokset:** $\eta_1 = 0{,}82$, $\eta_2 = 0{,}92$ ja $a = 15\,\text{snt/kWh} = 0{,}15\,\text{€/kWh}$
-**Sijoitus:** $\Delta K = 0{,}15\,\tfrac{\text{€}}{\text{kWh}} \cdot \left(\dfrac{3000\,\text{kWh}}{0{,}82} - \dfrac{3000\,\text{kWh}}{0{,}92}\right) = 0{,}15\,\tfrac{\text{€}}{\text{kWh}} \cdot (3658{,}5\,\text{kWh} - 3260{,}9\,\text{kWh}) = 0{,}15\,\tfrac{\text{€}}{\text{kWh}} \cdot 397{,}7\,\text{kWh} = 59{,}7\,\text{€}$
+**Sijoitus:** $\Delta K = 0{,}15\,\text{€/kWh} \cdot \left(\dfrac{3000\,\text{kWh}}{0{,}82} - \dfrac{3000\,\text{kWh}}{0{,}92}\right) = 0{,}15\,\text{€/kWh} \cdot (3658{,}5\,\text{kWh} - 3260{,}9\,\text{kWh}) = 0{,}15\,\text{€/kWh} \cdot 397{,}7\,\text{kWh} = 59{,}7\,\text{€}$
 **Vastaus:** $60\,\text{€}$, kaksi merkitsevää numeroa kuten hyötysuhteissa $82\,\%$ ja $92\,\%$.
-**Järkevyys:** Hyötysuhteiden ero on kymmenen prosenttiyksikköä, joten verkosta otettu energia eroaa noin $10\text{–}12\,\%$, eli noin $400\,\text{kWh}$. $400\,\text{kWh} \cdot 0{,}15\,\text{€/kWh} = 60\,\text{€}$. Säästö on pieni verrattuna latausaseman hintaan; tärkeämpi syy latausasemaan on turvallisuus.
+**Järkevyys:** Hyötysuhteiden ero on kymmenen prosenttiyksikköä, joten verkosta otettu energia eroaa noin $10\text{–}12\,\%$ vuoden kulutuksesta ($3260\,\text{kWh}$ tai $3660\,\text{kWh}$), eli noin $400\,\text{kWh}$. $400\,\text{kWh} \cdot 0{,}15\,\text{€/kWh} = 60\,\text{€}$. Säästö on pieni verrattuna latausaseman hintaan; tärkeämpi syy latausasemaan on turvallisuus.
 
 ## fy6-16-L3-02
 **Annettu:** virta kasvaa $I_1 = 10\,\text{A}$:sta $I_2 = 16\,\text{A}$:iin, kaapelin resistanssi $R$ pysyy samana
@@ -106,7 +106,7 @@
 **Kaava:** $P = RI^2$, joten $\dfrac{P_2}{P_1} = \dfrac{R I_2^2}{R I_1^2} = \left(\dfrac{I_2}{I_1}\right)^2$ ja kasvu on $\dfrac{P_2}{P_1} - 1$
 **Muunnokset:** Ei tarvita: ampeerit supistuvat. Kasvu muunnetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** $\dfrac{P_2}{P_1} = \left(\dfrac{16\,\text{A}}{10\,\text{A}}\right)^2 = 1{,}6^2 = 2{,}56$, joten kasvu on $2{,}56 - 1 = 1{,}56 = 156\,\%$
-**Vastaus:** $156\,\%$; virrat on annettu kokonaislukuina, joten tulos lasketaan tarkasti.
+**Vastaus:** $156\,\%$; $10\,\text{A}$ ja $16\,\text{A}$ ovat latauslaitteen tarkat asetukset, joten $156\,\%$ annetaan sellaisena kuin se laskettiin.
 **Järkevyys:** Virta kasvaa $60\,\%$, mutta teho yli kaksinkertaistuu, koska virta on neliössä. Jos virta kaksinkertaistuisi, teho nelinkertaistuisi eli kasvaisi $300\,\%$; $156\,\%$ on sopivasti $60\,\%$:n ja $300\,\%$:n välissä.
 
 ## fy6-16-L3-03

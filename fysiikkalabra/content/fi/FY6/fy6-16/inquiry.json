@@ -68,7 +68,7 @@
           "feedback": "Virta ei jakaudu: jokaisessa kolmessa vaihejohtimessa kulkee $16\\,\\text{A}$. Jokainen vaihe siirtää tehon $UI$, joten kokonaisteho on $3UI \\approx 11\\,\\text{kW}$, kolme kertaa yksivaiheisen aseman teho."
         },
         {
-          "text": "Noin puolitoista kertaa nopeammin, koska kolmivaiheinen jännite on $400\\,\\text{V}$.",
+          "text": "Noin $1{,}7$ kertaa nopeammin, koska kolmivaiheinen jännite on $400\\,\\text{V}$ eikä $230\\,\\text{V}$.",
           "feedback": "Vaihejohtimien välinen jännite on $400\\,\\text{V}$, mutta asema ottaa jokaisesta vaiheesta virran jännitteellä $230\\,\\text{V}$ nollajohtimeen nähden. Kolme vaihetta siirtävät kukin tehon $230\\,\\text{V} \\cdot 16\\,\\text{A}$, joten teho on kolminkertainen, noin $11\\,\\text{kW}$."
         }
       ]

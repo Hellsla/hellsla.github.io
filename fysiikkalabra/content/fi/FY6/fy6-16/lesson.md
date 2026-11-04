@@ -174,7 +174,7 @@
 ### Akku, teho ja latausaika
 Sähköauton akku on suuri litiumioniakku (luku *Akut ja latauspiiri*). Tässä luvussa käytetään esimerkkiautoa, jonka akun nimellisjännite on $400\,\text{V}$ ja kapasiteetti $160\,\text{Ah}$. Akun energia on silloin $W = UQ = 400\,\text{V} \cdot 160\,\text{Ah} = 64\,\text{kWh}$, ja se riittää noin $350\,\text{km}$:n ajoon, kun auto käyttää $18\,\text{kWh}$ sadalla kilometrillä. Akkuun mahtuu siis yhtä paljon energiaa kuin $6\,\text{kW}$:n kiuas käyttää yli kymmenessä tunnissa.
 
-Latausaika riippuu siitä, kuinka paljon energiaa akkuun pitää siirtää ja kuinka suurella teholla se tehdään. Latauksessa osa verkosta otetusta energiasta ei päädy akkuun, vaan muuttuu auton laturin, johtojen ja akun sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Kotilatauksen hyötysuhde on tyypillisesti noin $85\text{–}90\,\%$. Hyötysuhde on enintään $100\,\%$. Todellisissa laitteissa se jää usein alle $100\,\%$, koska osa otetusta energiasta ei päädy määriteltyyn hyödylliseen käyttötarkoitukseen. Verkosta on siksi otettava enemmän energiaa kuin akkuun varastoituu.
+Latausaika riippuu siitä, kuinka paljon energiaa akkuun pitää siirtää ja kuinka suurella teholla se tehdään. Latauksessa osa verkosta otetusta energiasta ei päädy akkuun, vaan muuttuu auton laturin, johtojen ja akun sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Kotilatauksen hyötysuhde on tyypillisesti noin $80\text{–}95\,\%$, ja se jää aina alle $100\,\%$. Verkosta on siksi otettava enemmän energiaa kuin akkuun varastoituu.
 
 ### Yksi vaihe vai kolme
 Suomalaiseen omakotitaloon tulee yleensä **kolmivaihesähkö**: kolme vaihejohdinta $\text{L}_1$, $\text{L}_2$ ja $\text{L}_3$ sekä nollajohdin $\text{N}$. Jokaisen vaihejohtimen ja nollajohtimen välillä on jännite $230\,\text{V}$. Tavallinen pistorasia ja vedenkeitin käyttävät yhtä vaihetta, kiuas ja latausasema yleensä kaikkia kolmea. Kun laite ottaa jokaisesta vaihejohtimesta saman virran $I$, jokainen vaihe siirtää tehon $UI$, ja kokonaisteho on kolminkertainen. Vaihejohtimien välinen jännite on $400\,\text{V}$, mutta sitä ei tässä tarvita.
@@ -262,7 +262,7 @@ Sähköverkosta tuleva kaapeli kulkee mittarin kautta **sähkökeskukseen**. Kes
 </svg>
 
 ### Miksi latausasemalla on oma ryhmä ja vikavirtasuoja
-Auton lataus on kodin pisin suuri kuorma: virta voi kulkea tuntikausia lähes ryhmän sulakkeen suuruisena. Jos samassa ryhmässä olisi muitakin pistorasioita, sulake ei tietäisi, mistä virta tulee, ja johto voisi olla jatkuvasti täydessä kuormassa. Siksi sähköasennusstandardi edellyttää, että jokaisella latauspisteellä on **oma ryhmä**, joka on mitoitettu sen virralle. Latauspisteellä on myös oma **vikavirtasuoja**: se katkaisee virran, jos osa siitä vuotaa muuta reittiä, esimerkiksi märän kaapelin ja ihmisen kautta maahan, ja ero on yli $30\,\text{mA}$. Ulkona kaapeli kastuu, jäätyy ja jää joskus renkaan alle, joten eristeen vaurio on todennäköisempi kuin sisällä. Ulos asennetun aseman kotelolla on suojausluokitus, esimerkiksi IP54, joka kertoo, että se kestää pölyä ja roiskevettä.
+Auton lataus on kodin pisin suuri kuorma: virta voi kulkea tuntikausia lähes ryhmän sulakkeen suuruisena. Jos samassa ryhmässä olisi muitakin pistorasioita, johto ja pistorasia olisivat tuntikausia lähes nimellisvirralla, pistorasian kosketuskohdat lämpenisivät ja muut kuormat voisivat katkaista latauksen. Siksi sähköasennusstandardi edellyttää, että jokaisella latauspisteellä on **oma ryhmä**, joka on mitoitettu sen virralle. Latauspisteellä on myös oma **vikavirtasuoja**: se katkaisee virran, jos osa siitä vuotaa muuta reittiä, esimerkiksi märän kaapelin ja ihmisen kautta maahan, ja ero on yli $30\,\text{mA}$. Ulkona kaapeli kastuu, jäätyy ja jää joskus renkaan alle, joten eristeen vaurio on todennäköisempi kuin sisällä. Ulos asennetun aseman kotelolla on kotelointiluokka (IP-luokka), esimerkiksi IP54, joka kertoo, että se kestää pölyä ja roiskevettä.
 
 ### Pääsulake ja samanaikaiset kuormat
 Pääsulakkeet rajoittavat koko talon virtaa. Kun pääsulakkeet ovat $3 \cdot 25\,\text{A}$, talo voi ottaa verkosta enintään noin $3 \cdot 230\,\text{V} \cdot 25\,\text{A} \approx 17\,\text{kW}$, ja silloinkin vain, jos kuorma jakautuu tasan kolmeen vaiheeseen. Ratkaisevaa on jokaisen vaihejohtimen oma virta. Kuvassa samaan aikaan ovat päällä $9{,}0\,\text{kW}$:n kiuas, joka ottaa jokaisesta vaiheesta $13{,}0\,\text{A}$, $11\,\text{kW}$:n latausasema, joka ottaa jokaisesta vaiheesta $16\,\text{A}$, ja vaiheessa $\text{L}_1$ vedenkeitin, $8{,}7\,\text{A}$. Vaiheen $\text{L}_1$ virta on $37{,}7\,\text{A}$ ja muiden $29{,}0\,\text{A}$.
@@ -306,7 +306,7 @@ Pääsulakkeet rajoittavat koko talon virtaa. Kun pääsulakkeet ovat $3 \cdot 2
   <foreignObject x="221" y="7.5" width="210" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pääsulake}\ 25\,\text{A}$</div></foreignObject>
 </svg>
 
-Pääsulake kestää lyhyen ylikuorman, mutta pitkään jatkuessa se palaa, ja koko talo pimenee. Siksi latausasemassa on usein **kuormanhallinta**: se mittaa pääsulakkeiden virtaa ja pienentää latausvirtaa, kun muut laitteet ovat päällä. Kun kiuas ottaa $13{,}0\,\text{A}$, autolle jää jokaisessa vaiheessa noin $12\,\text{A}$ eli noin $8{,}3\,\text{kW}$. Jos vedenkeitinkin kytketään, vaiheeseen $\text{L}_1$ jää vain noin $3\,\text{A}$, joten kuormanhallinta keskeyttää latauksen hetkeksi.
+Pääsulake ei pala heti pienestä ylikuormasta, mutta jos ylikuorma on riittävän suuri ja jatkuu pitkään, se voi palaa, ja koko talo pimenee. Siksi latausasemassa on usein **kuormanhallinta**: se mittaa pääsulakkeiden virtaa ja pienentää latausvirtaa, kun muut laitteet ovat päällä. Kun kiuas ottaa $13{,}0\,\text{A}$, autolle jää jokaisessa vaiheessa noin $12\,\text{A}$ eli noin $8{,}3\,\text{kW}$. Jos vedenkeitinkin kytketään, vaiheeseen $\text{L}_1$ jää vain noin $3\,\text{A}$, joten kuormanhallinta keskeyttää latauksen hetkeksi.
 
 ### Johdon ja liitoksen lämpeneminen
 Johto on vastus, jonka läpi kulkee sama virta kuin laitteen. Virta kulkee laitteelle vaihejohdinta ja palaa nollajohdinta pitkin, joten kuparia on kaksi kertaa johdon pituus. Joulen lain mukaan johtoon tuleva teho on $RI^2$ (luku *Sähköteho ja vastuksen lämpeneminen*): kun virta kaksinkertaistuu, lämpenemisteho nelinkertaistuu. Kelalla olevan $25\,\text{m}$:n jatkojohdon, jonka johtimet ovat $1{,}5\,\text{mm}^2$, resistanssi on noin $0{,}57\,\Omega$, ja virralla $10\,\text{A}$ siihen tulee noin $57\,\text{W}$. Kelalla lämpö ei pääse pois, joten kela kuumenee, ja kuumeneminen vanhentaa eristettä. Eristeen läpilyöntilujuus voi silloin heiketä, ja eriste voi pettää.
@@ -314,20 +314,20 @@ Johto on vastus, jonka läpi kulkee sama virta kuin laitteen. Virta kulkee laitt
 Vielä vaarallisempi on löystynyt tai hapettunut liitos. Vanhan pistorasian kosketusresistanssi voi olla esimerkiksi $0{,}10\,\Omega$, jolloin virralla $10\,\text{A}$ liitokseen tulee teho $10\,\text{W}$. Se keskittyy herneen kokoiseen kohtaan, ja lataus kestää tunteja. Siksi säännölliseen lataamiseen suositellaan latausasemaa, ja jatkojohtoa ei käytetä.
 
 ### Lukuarvojen lähteet
-Luvun lukuarvot ovat tyypillisiä esimerkkiarvoja, eivät tietyn auton tai talon mittauksia. Verkkojännite $230\,\text{V}$ ja vakiovirrat $10\,\text{A}$, $16\,\text{A}$ ja $25\,\text{A}$ ovat Suomen sähköverkon ja kotien asennusten tavallisia arvoja. Akun koko $64\,\text{kWh}$ ja kulutus $18\,\text{kWh}$ sadalla kilometrillä ovat pienen ja keskikokoisen sähköauton suuruusluokkaa. Hyötysuhde $85\text{–}90\,\%$ on arvio. Vaatimus latauspisteen omasta ryhmästä ja vikavirtasuojasta on sähköasennusstandardista SFS 6000-7-722, ja Tukes ohjeistaa sähköauton latauksesta kotona. Kuparin resistiivisyys on luvun *Resistanssi ja Ohmin laki* taulukosta.
+Luvun lukuarvot ovat tyypillisiä esimerkkiarvoja, eivät tietyn auton tai talon mittauksia. Verkkojännite $230\,\text{V}$ ja vakiovirrat $10\,\text{A}$, $16\,\text{A}$ ja $25\,\text{A}$ ovat Suomen sähköverkon ja kotien asennusten tavallisia arvoja. Akun koko $64\,\text{kWh}$ ja kulutus $18\,\text{kWh}$ sadalla kilometrillä ovat pienen ja keskikokoisen sähköauton suuruusluokkaa. Hyötysuhde $80\text{–}95\,\%$ on arvio. Vaatimus latauspisteen omasta ryhmästä ja vikavirtasuojasta on sähköasennusstandardista SFS 6000-7-722, ja Tukes ohjeistaa sähköauton latauksesta kotona. Kuparin resistiivisyys on luvun *Resistanssi ja Ohmin laki* taulukosta.
 
 ## Kaava: Latausaika, latausteho ja johdon lämpeneminen
 Latauksen hyötysuhde kertoo, kuinka suuri osa verkosta otetusta energiasta varastoituu akkuun:
 ```latex
 \eta = \frac{W_\text{akku}}{W_\text{verkko}}
 ```
-missä $\eta$ on hyötysuhde, $W_\text{akku}$ akkuun varastoitunut energia (kWh) ja $W_\text{verkko}$ verkosta otettu energia (kWh).
+missä $\eta$ on hyötysuhde, $W_\text{akku}$ akkuun varastoitunut energia ($\text{kWh}$) ja $W_\text{verkko}$ verkosta otettu energia ($\text{kWh}$).
 
 Kun latausteho $P$ on vakio, verkosta otettu energia on $W_\text{verkko} = Pt$ (luku *Sähköenergia kotona*). Latausaika on siksi
 ```latex
 t = \frac{W_\text{akku}}{\eta P}
 ```
-missä $t$ on latausaika (h) ja $P$ verkosta otettu teho (kW). Kuvan mallissa teho pysyy vakiona, kunnes akku on noin $90\,\%$:n varaustasossa. Sen jälkeen teho pienenee, koska akun lähdejännite kasvaa ja ohjauspiiri pienentää virtaa (luku *Akut ja latauspiiri*). Verkosta otettu energia on käyrän alle jäävä pinta-ala. Kaava sopii siis latauksen tasaiseen osaan, esimerkiksi varaustasosta $20\,\%$ tasoon $80\,\%$.
+missä $t$ on latausaika ($\text{h}$) ja $P$ verkosta otettu teho ($\text{kW}$). Kuvan mallissa teho pysyy vakiona, kunnes akku on noin $90\,\%$:n varaustasossa. Sen jälkeen teho pienenee, koska akun lähdejännite kasvaa ja ohjauspiiri pienentää virtaa (luku *Akut ja latauspiiri*). Verkosta otettu energia on käyrän alle jäävä pinta-ala. Kaava sopii siis latauksen tasaiseen osaan, esimerkiksi varaustasosta $20\,\%$ tasoon $80\,\%$.
 
 <svg data-fig="kayra" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva, malli eikä mittaus: sähköauton latausasemalta verkosta otettu teho P kilowatteina ajan t funktiona tunteina, kun 64 kilowattitunnin akku ladataan 20 prosentin varaustasosta. Teho pysyy 11 kilowatissa noin 4,5 tuntia, kunnes varaustaso on 90 prosenttia. Sen jälkeen teho pienenee yhä hitaammin, ja lataus päättyy noin 6,0 tunnin kohdalla, kun varaustaso on 99 prosenttia. Tasaisen osan alle jäävä pinta-ala on varjostettu: se on verkosta otettu energia teho kertaa aika." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy616-energy" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078"/></linearGradient></defs>
@@ -381,30 +381,30 @@ missä $t$ on latausaika (h) ja $P$ verkosta otettu teho (kW). Kuvan mallissa te
   <polyline points="84,300 84,89 340,89 341,95 342,101 343,106.5 344,112 345.5,117.5 346.5,122.5 347.5,127.5 348.5,132.5 349.5,137.5 350.5,142 351.5,146.5 352.5,150.5 353.5,155 354.5,159 356,163 357,167 358,170.5 359,174.5 360,178 361,181.5 362,185 363,188 364,191 365.5,194.5 366.5,197.5 367.5,200 368.5,203 369.5,206 370.5,208.5 371.5,211 372.5,213.5 373.5,216 374.5,218.5 376,221 377,223 378,225 379,227.5 380,229.5 381,231.5 382,233.5 383,235 384,237 385.5,239 386.5,240.5 387.5,242.5 388.5,244 389.5,245.5 390.5,247 391.5,248.5 392.5,250 393.5,251.5 394.5,253 396,254 397,255.5 398,256.5 399,258 400,259 401,260.5 402,261.5 403,262.5 404,263.5 405.5,264.5 406.5,265.5 407.5,266.5 408.5,267.5 409.5,268.5 410.5,269.5 411.5,270 412.5,271 413.5,272 414.5,272.5 416,273.5 417,274 418,275 419,275.5 420,276.5 421,277 422,277.5 423,278.5 424,279 424,300" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <foreignObject x="117" y="180" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$W_\text{verkko} = Pt$</span></div></foreignObject>
   <circle cx="84" cy="89" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="94" y="52.5" width="76" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$20\,\%$</span></div></foreignObject>
+  <foreignObject x="94" y="52.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{varaus}\ 20\,\%$</span></div></foreignObject>
   <circle cx="340" cy="89" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="302" y="52.5" width="76" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$90\,\%$</span></div></foreignObject>
+  <foreignObject x="265" y="52.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{varaus}\ 90\,\%$</span></div></foreignObject>
   <circle cx="424" cy="279" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
-  <foreignObject x="386" y="234.5" width="76" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$99\,\%$</span></div></foreignObject>
+  <foreignObject x="349" y="234.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{varaus}\ 99\,\%$</span></div></foreignObject>
 </svg>
 
 Yksivaiheisen laitteen teho on $P = UI$. Kolmivaiheisen laitteen, joka ottaa jokaisesta vaihejohtimesta saman virran, teho on
 ```latex
 P = 3UI
 ```
-missä $U = 230\,\text{V}$ on vaihejohtimen ja nollajohtimen välinen jännite ja $I$ yhden vaihejohtimen virta (A).
+missä $U = 230\,\text{V}$ on vaihejohtimen ja nollajohtimen välinen jännite ja $I$ yhden vaihejohtimen virta ($\text{A}$).
 
 Johtoon tuleva lämpenemisteho saadaan Joulen laista ja johtimen resistanssista $R = \rho l : A$ (luku *Resistanssi ja Ohmin laki*), kun kuparin pituudeksi otetaan meno- ja paluujohdin yhteensä:
 ```latex
 P_\text{johto} = \rho \frac{2l}{A} I^2
 ```
-missä $P_\text{johto}$ on johtoon tuleva teho (W), $\rho$ kuparin resistiivisyys $1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m}$, $l$ johdon pituus (m), $A$ yhden johtimen poikkipinta-ala ($\text{m}^2$) ja $I$ virta (A).
+missä $P_\text{johto}$ on johtoon tuleva teho ($\text{W}$), $\rho$ kuparin resistiivisyys $1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m}$, $l$ johdon pituus ($\text{m}$), $A$ yhden johtimen poikkipinta-ala ($\text{m}^2$) ja $I$ virta ($\text{A}$).
 
 Latauksen hinta lasketaan verkosta otetusta energiasta, ei akkuun varastoituneesta:
 ```latex
 K = a W_\text{verkko}
 ```
-missä $K$ on kustannus (€) ja $a$ energian ja siirron hinta yhteensä (€/kWh). Sadan kilometrin ajo, $18\,\text{kWh}$ akusta, vaatii hyötysuhteella $90\,\%$ verkosta $20\,\text{kWh}$, ja hinnalla $15\,\text{snt/kWh}$ se maksaa noin $3{,}0\,\text{€}$.
+missä $K$ on kustannus ($\text{€}$) ja $a$ energian ja siirron hinta yhteensä ($\text{€/kWh}$). Sadan kilometrin ajo, $18\,\text{kWh}$ akusta, vaatii hyötysuhteella $90\,\%$ verkosta $20\,\text{kWh}$, ja hinnalla $15\,\text{snt/kWh}$ se maksaa noin $3{,}0\,\text{€}$.
 
 ## Esimerkki
 Esimerkkiauton akun energia on $64\,\text{kWh}$. Akku ladataan yöllä varaustasosta $20\,\%$ tasoon $80\,\%$ kolmivaiheisella latausasemalla, joka ottaa jokaisesta vaihejohtimesta virran $16\,\text{A}$. Vaihejännite on $230\,\text{V}$, latauksen hyötysuhde $90\,\%$ ja teho pysyy koko latauksen ajan vakiona. Kuinka kauan lataus kestää, ja paljonko se maksaa, kun sähkö maksaa siirtoineen $15\,\text{snt/kWh}$?
@@ -444,7 +444,7 @@ Esimerkkiauton akun energia on $64\,\text{kWh}$. Akku ladataan yöllä varaustas
 &\phantom{t} = \frac{38{,}4\,\text{kWh}}{0{,}90 \cdot 11{,}04\,\text{kW}} \\
 &\phantom{t} \approx 3{,}86\,\text{h} \\
 &K = \frac{a W_\text{akku}}{\eta} \\
-&\phantom{K} = \frac{0{,}15\,\tfrac{\text{€}}{\text{kWh}} \cdot 38{,}4\,\text{kWh}}{0{,}90} \\
+&\phantom{K} = \frac{0{,}15\,\text{€/kWh} \cdot 38{,}4\,\text{kWh}}{0{,}90} \\
 &\phantom{K} = 6{,}40\,\text{€}
 \end{aligned}
 ```
@@ -463,7 +463,7 @@ Moni ajattelee, että kun sulake palaa toistuvasti, sen tilalle voi vaihtaa suur
 Toinen yleinen virhe on olettaa, että $64\,\text{kWh}$:n akun täyttäminen vie verkosta $64\,\text{kWh}$. Häviöiden vuoksi verkosta otetaan enemmän: akkuun menevä energia jaetaan hyötysuhteella, ei kerrota sillä.
 
 ## Tiivistelmä
-- Latausaika on akkuun siirrettävä energia jaettuna hyötysuhteen ja tehon tulolla, $t = W_\text{akku} : (\eta P)$. Hyötysuhde jää usein alle $100\,\%$, joten verkosta otetaan enemmän energiaa kuin akkuun varastoituu, ja hinta maksetaan verkosta otetusta energiasta.
+- Latausaika on akkuun siirrettävä energia jaettuna hyötysuhteen ja tehon tulolla, $t = W_\text{akku} : (\eta P)$. Hyötysuhde jää alle $100\,\%$, koska latauksessa on aina häviöitä, joten verkosta otetaan enemmän energiaa kuin akkuun varastoituu, ja hinta maksetaan verkosta otetusta energiasta.
 - Yksivaiheisen latauksen teho on $P = UI$, kolmivaiheisen $P = 3UI$, kun jokaisessa vaihejohtimessa on sama virta. Samalla $16\,\text{A}$:n virralla kolmivaiheinen asema lataa kolme kertaa nopeammin.
 - Pääsulakkeet rajoittavat jokaisen vaihejohtimen virtaa. Saman vaiheen virrat lasketaan yhteen, ja kuormanhallinta pienentää latausvirtaa, kun kiuas tai muut laitteet ovat päällä.
 - Latausasemalla on oma ryhmä ja oma vikavirtasuoja: lataus on pitkä suuri kuorma, ja ulkona kaapelin eriste voi vaurioitua.
