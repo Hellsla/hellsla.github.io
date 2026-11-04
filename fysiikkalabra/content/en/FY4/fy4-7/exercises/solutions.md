@@ -190,7 +190,7 @@ E_\text{mech} &= 560\,\text{J} - 1030\,\text{J} \\
 &= -470\,\text{J}
 \end{aligned}
 ```
-**Answer:** $-4.7 \cdot 10^{2}\,\text{J}$, that is, with two significant figures like the mass and the speed. The error: the student used the depth as a positive height, although $h < 0$ below the zero level.
+**Answer:** $-4.7 \cdot 10^{2}\,\text{J}$, with two significant figures like the mass and the speed. The error: the student used the depth as a positive height, although $h < 0$ below the zero level.
 **Reasonableness:** The diver is below the zero level, so the potential energy is negative, and its absolute value $1030\,\text{J}$ is greater than the kinetic energy $560\,\text{J}$. That is why the sum is also negative. The student’s positive result $1590\,\text{J}$ cannot be right, because below the zero level the potential energy decreases the mechanical energy.
 
 ## fy4-7-L2-07

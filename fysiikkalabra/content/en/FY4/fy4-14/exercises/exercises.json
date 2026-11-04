@@ -412,7 +412,7 @@
     {
       "id": "fy4-14-L3-05",
       "level": 3,
-      "text": "A raindrop whose mass is $0.0140\\,\\text{g}$ falls from a cloud from a height of $1.50\\,\\text{km}$. Near the ground, according to measurements, the speed of the drop is constant $8.0\\,\\text{m/s}$ (example data). Assume that the drop starts from rest and moves vertically.\n\na) What is the air resistance acting on the drop near the ground?\n\nb) What speed would the drop have at the bottom if there were no air resistance and the acceleration of the drop were $g$ all the way?\n\nc) Using these results, explain why raindrops are not dangerous, and tell how the air resistance changes as the drop falls.\n\nThe answer box takes the result of part b).",
+      "text": "A raindrop whose mass is $0.0140\\,\\text{g}$ falls from a cloud $1.50\\,\\text{km}$ above the ground. Near the ground, according to measurements, the speed of the drop is a constant $8.0\\,\\text{m/s}$ (example data). Assume that the drop starts from rest and moves vertically.\n\na) What is the air resistance acting on the drop near the ground?\n\nb) What speed would the drop have at the bottom if there were no air resistance and the acceleration of the drop were $g$ all the way?\n\nc) Using these results, explain why raindrops are not dangerous, and tell how the air resistance changes as the drop falls.\n\nThe answer box takes the result of part b).",
       "kind": [
         "model",
         "reasoning"
