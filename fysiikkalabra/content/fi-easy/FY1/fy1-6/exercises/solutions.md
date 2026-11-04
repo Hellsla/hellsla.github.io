@@ -119,3 +119,78 @@
 **Sijoitus:** $\Delta v = 9{,}81\,\text{m/s}^2 \cdot 3{,}00\,\text{s} - 25{,}0\,\text{m/s} = 29{,}43\,\text{m/s} - 25{,}0\,\text{m/s} = 4{,}43\,\text{m/s}$
 **Vastaus:** $4{,}4\,\text{m/s}$. Aika $3{,}00\,\text{s}$ antaa nopeudelle $29{,}43\,\text{m/s}$ kolme merkitsevää numeroa. Erotuksella on kuitenkin yhtä monta desimaalia kuin heikoimmalla luvulla eli mitatulla arvolla $25{,}0\,\text{m/s}$.
 **Järkevyys:** Erotus on positiivinen, koska ilma hidastaa palloa. Se on pieni osa nopeudesta: $\dfrac{4{,}4}{29{,}4} \approx 15\,\%$. Kolmen sekunnin pudotuksessa ilmanvastus on jo merkittävä mutta ei hallitseva. Se sopii pallolle.
+
+## fy1-6-L1-06
+**Kysytty:** kumpi osuu Kuun pinnalla maahan ensin, vasara vai höyhen.
+**Periaate:** Kuussa ei ole ilmakehää, joten ilmanvastusta ei ole. Kappaleet ovat vapaassa pudotuksessa. Silloin levosta lähteneen kappaleen nopeus on $v = g\,t$. Putoamiskiihtyvyys $g$ on sama kaikille kappaleille. Massalla ei ole väliä.
+**Mallivastaus:** Vasara ja höyhen osuvat maahan yhtä aikaa. Molempien nopeus kasvaa joka sekunti saman verran ($1{,}62\,\text{m/s}$ Kuussa). Niillä on siis koko matkan sama nopeus. Maassa höyhen putoaa hitaammin vain siksi, että ilma hidastaa eniten kevyttä ja leveää kappaletta.
+
+## fy1-6-L1-07
+**Kysytty:** mitä $(t, v)$-suoran kulmakerroin $9{,}8\,\text{m/s}^2$ kertoo.
+**Periaate:** Kulmakerroin on $\dfrac{\Delta v}{\Delta t}$ eli nopeuden muutos yhtä aikayksikköä kohti. Putoamiskiihtyvyys $g$ on siis kuvaajan kulmakerroin. Sen yksikkö $\text{m/s}^2$ tarkoittaa $\text{m/s}$ sekunnissa.
+**Mallivastaus:** Nopeus kasvaa joka sekunti $9{,}8\,\text{m/s}$. Luku ei ole nopeus eikä matka. Nopeus hetkellä $t$ on $v = g\,t$. Se on esimerkiksi $9{,}8\,\text{m/s}$ vasta hetkellä $1{,}0\,\text{s}$ ja $19{,}6\,\text{m/s}$ hetkellä $2{,}0\,\text{s}$.
+**Kuvaajan lukeminen:** Kulmakerroin luetaan suoran kahdesta pisteestä. Kun aika kasvaa $\Delta t = 1\,\text{s}$, suora nousee $\Delta v = 9{,}8\,\text{m/s}$.
+
+## fy1-6-L1-08
+**Annettu:** nopeuden kasvu sekunnissa on $g = 9{,}81\,\text{m/s}^2$ eli $9{,}81\,\text{m/s}$ joka sekunti
+**Kysytty:** nopeuden kasvu sekunnissa yksikössä $\text{km/h}$
+**Periaate:** Putoamiskiihtyvyys kertoo nopeuden kasvun sekunnissa. Sen voi ilmoittaa toisessa yksikössä. Silloin nopeus muunnetaan yksiköstä $\text{m/s}$ yksikköön $\text{km/h}$.
+**Kaava:** $\Delta v = g\,\Delta t$. Kaava on jo ratkaistu kysytyn suureen suhteen.
+**Muunnokset:** Kun $\Delta t = 1\,\text{s}$, nopeus kasvaa $g$:n verran. Tunnissa ($3600\,\text{s}$) kertyy $3600\,\text{m} = 3{,}6\,\text{km}$. Siis $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+**Sijoitus:** $\Delta v = 9{,}81\,\text{m/s}^2 \cdot 1\,\text{s} = 9{,}81 \cdot 1\,\text{m/s} = 9{,}81 \cdot 3{,}6\,\text{km/h} = 35{,}316\,\text{km/h}$
+**Vastaus:** $35{,}3\,\text{km/h}$ sekunnissa, kolme merkitsevää numeroa kuten luvussa $9{,}81$.
+**Järkevyys:** Nopeus kasvaa noin $10\,\text{m/s}$ sekunnissa ja $10 \cdot 3{,}6 = 36\,\text{km/h}$. Tämä vastaa tulosta. Kolmessa sekunnissa nopeus olisi jo noin $106\,\text{km/h}$.
+
+## fy1-6-L2-05
+**Annettu:** taulukon mittauspisteet $(t;\ v)$: $(0{,}10\,\text{s};\ 0{,}95\,\text{m/s})$, $(0{,}20\,\text{s};\ 2{,}03\,\text{m/s})$, $(0{,}30\,\text{s};\ 2{,}91\,\text{m/s})$, $(0{,}40\,\text{s};\ 3{,}88\,\text{m/s})$, $(0{,}50\,\text{s};\ 4{,}94\,\text{m/s})$ ja $(0{,}60\,\text{s};\ 5{,}83\,\text{m/s})$
+**Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$ ja sen vertailu taulukkoarvoon $9{,}81\,\text{m/s}^2$
+**Periaate:** Kappale lähtee levosta ja ilmanvastus on pieni. Siksi pisteisiin sopii suora $v = g\,t$. Suoran kulmakerroin on putoamiskiihtyvyys. Suora piirretään pisteiden joukon keskeltä. Kulmakerroin lasketaan suoran pisteistä, ei mittauspisteistä.
+**Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle. Suoran molemmille puolille jää pisteitä. Suora kulkee lähes origon kautta. Sovitettu suora kulkee likimain pisteiden $(0\,\text{s};\ 0\,\text{m/s})$ ja $(0{,}60\,\text{s};\ 5{,}85\,\text{m/s})$ kautta. Ne luetaan suoralta ja valitaan kaukana toisistaan.
+**Kaava:** $g = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$
+**Muunnokset:** Ei tarvita: nopeus on yksikössä $\text{m/s}$ ja aika yksikössä $\text{s}$.
+**Sijoitus:** $g = \dfrac{5{,}85\,\text{m/s} - 0\,\text{m/s}}{0{,}60\,\text{s} - 0\,\text{s}} = 9{,}75\,\text{m/s}^2$
+**Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska suora sovitetaan silmällä. Silmällä sovitus vaihtelee, joten noin $9{,}3\text{–}10{,}2\,\text{m/s}^2$ on hyvä vastaus. Tulos $9{,}75\,\text{m/s}^2$ on $0{,}6\,\%$ pienempi kuin taulukkoarvo $9{,}81\,\text{m/s}^2$. Ero on alle prosentin. Mittaus tukee siis mallia $v = g\,t$, ja mittauspisteiden hajonta on satunnaista.
+**Järkevyys:** Suoran mukaan nopeus hetkellä $0{,}30\,\text{s}$ on $9{,}75 \cdot 0{,}30 \approx 2{,}9\,\text{m/s}$. Tämä vastaa taulukon kolmatta riviä. Kulmakerroin on lähellä tunnettua arvoa $9{,}81\,\text{m/s}^2$.
+
+## fy1-6-L2-06
+**Annettu:** taulukon mittauspisteet $(t;\ v)$: $(0{,}0\,\text{s};\ 1{,}97\,\text{m/s})$, $(0{,}1\,\text{s};\ 2{,}93\,\text{m/s})$, $(0{,}2\,\text{s};\ 3{,}95\,\text{m/s})$, $(0{,}3\,\text{s};\ 4{,}89\,\text{m/s})$, $(0{,}4\,\text{s};\ 5{,}90\,\text{m/s})$ ja $(0{,}5\,\text{s};\ 6{,}86\,\text{m/s})$; kappale päästettiin levosta ennen mittauksen alkua
+**Kysytty:** aika $t_0$ pudotuksen alun ja mittauksen alun välillä yksikössä $\text{s}$
+**Periaate:** Nopeus kasvaa tasaisesti, joten pisteisiin sopii suora $v = k\,t + b$. Sen kulmakerroin $k$ on putoamiskiihtyvyys $g$. Suora ei kulje origon kautta, koska kappale liikkui jo hetkellä $t = 0$. Vakiotermi $b$ on nopeus mittauksen alkaessa. Levosta lähtenyt kappale saavuttaa nopeuden $b$ ajassa $\dfrac{b}{g}$. Tämä on aika pudotuksen alusta mittauksen alkuun.
+**Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle. Suora leikkaa $v$-akselin kohdassa $b \approx 2{,}0\,\text{m/s}$. Sovitettu suora kulkee likimain pisteiden $(0{,}0\,\text{s};\ 2{,}0\,\text{m/s})$ ja $(0{,}5\,\text{s};\ 6{,}9\,\text{m/s})$ kautta. Siis $k = \dfrac{6{,}9\,\text{m/s} - 2{,}0\,\text{m/s}}{0{,}5\,\text{s} - 0\,\text{s}} = 9{,}8\,\text{m/s}^2$.
+**Kaava:** $t_0 = \dfrac{b}{k}$, koska $v = k\,t_0$ kertoo ajan, jossa levosta lähtenyt kappale saavuttaa nopeuden $b$
+**Muunnokset:** Ei tarvita: nopeus on yksikössä $\text{m/s}$ ja kulmakerroin yksikössä $\text{m/s}^2$.
+**Sijoitus:** $t_0 = \dfrac{2{,}0\,\text{m/s}}{9{,}8\,\text{m/s}^2} = 0{,}20\,\text{s}$
+**Vastaus:** $0{,}20\,\text{s}$, kaksi merkitsevää numeroa, koska vakiotermi luetaan kuvaajasta kahden numeron tarkkuudella. Suoran ja $v$-akselin leikkauskohta $b \approx 2{,}0\,\text{m/s}$ on kappaleen nopeus mittauksen alkaessa. Suora ei kulje origon kautta, koska aika $t$ lasketaan mittauksen alusta eikä pudotuksen alusta.
+**Järkevyys:** Kulmakerroin $9{,}8\,\text{m/s}^2$ on putoamiskiihtyvyys. Malli on siis oikea, ja vain ajan nollakohta on siirtynyt. Kappale oli pudonnut $0{,}20\,\text{s}$. Nopeus $9{,}8 \cdot 0{,}20 \approx 2{,}0\,\text{m/s}$ vastaa taulukon ensimmäistä riviä.
+
+## fy1-6-L2-07
+**Annettu:** kappaleen pituus $L = 5{,}0\,\text{cm}$; portti 1: $\Delta t_\text{valo,1} = 25{,}0\,\text{ms}$ ja valokatkoksen puolivälin hetki $t_1 = 0{,}320\,\text{s}$; portti 2: $\Delta t_\text{valo,2} = 11{,}1\,\text{ms}$ ja valokatkoksen puolivälin hetki $t_2 = 0{,}575\,\text{s}$
+**Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$
+**Periaate:** Kappaleen nopeus portissa on kappaleen pituus jaettuna ajalla, jonka valo on ollut katkennut: $v = \dfrac{L}{\Delta t_\text{valo}}$. Tämä on keskinopeus katkoksen aikana. Tasaisesti kiihtyvässä liikkeessä se on yhtä suuri kuin nopeus katkoksen puolivälissä. Siksi kello merkitsee hetken, jolloin katkos on puolivälissä. Nopeus kasvaa tasaisesti, joten kiihtyvyys on nopeuden muutos jaettuna ajan muutoksella: $g = \dfrac{\Delta v}{\Delta t}$. Pudotushetkeä ei tarvita, koska tulokseen vaikuttavat vain aikaero $t_2 - t_1$ ja nopeuksien erotus. Jos kellon lukema pudotushetkellä on väärä, se siirtää molempia aikoja yhtä paljon ja kumoutuu erotuksessa.
+**Kaava:** $v = \dfrac{L}{\Delta t_\text{valo}}$ ja $g = \dfrac{v_2 - v_1}{t_2 - t_1}$
+**Muunnokset:** $L = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$, koska $1\,\text{cm} = 0{,}01\,\text{m}$. $\Delta t_\text{valo,1} = 25{,}0\,\text{ms} = 0{,}0250\,\text{s}$ ja $\Delta t_\text{valo,2} = 11{,}1\,\text{ms} = 0{,}0111\,\text{s}$, koska $1\,\text{ms} = 0{,}001\,\text{s}$.
+**Sijoitus:** $v_1 = \dfrac{0{,}050\,\text{m}}{0{,}0250\,\text{s}} = 2{,}00\,\text{m/s}$ ja $v_2 = \dfrac{0{,}050\,\text{m}}{0{,}0111\,\text{s}} = 4{,}50\,\text{m/s}$. Sitten $g = \dfrac{4{,}50\,\text{m/s} - 2{,}00\,\text{m/s}}{0{,}575\,\text{s} - 0{,}320\,\text{s}} = \dfrac{2{,}50\,\text{m/s}}{0{,}255\,\text{s}} = 9{,}8\,\text{m/s}^2$
+**Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska kappaleen pituus $L = 5{,}0\,\text{cm}$ on annettu kahdella numerolla ja rajoittaa tulosta. Kahden portin avulla saatu $g$ ei vaadi tietoa pudotushetkestä. Nopeudet saadaan kappaleen pituudesta ja valon katkeamisajasta. Kiihtyvyys saadaan aikaerosta $t_2 - t_1$.
+**Järkevyys:** Tulos on lähellä tunnettua arvoa $9{,}81\,\text{m/s}^2$. Nopeus $2{,}00\,\text{m/s}$ vaatii vain noin $0{,}20\,\text{s}$ putoamista, vaikka kello näyttää $0{,}320\,\text{s}$. Kello on käynnistetty ennen pudotusta, mikä ei haittaa aikaeroa. Nopeus $2{,}0\,\text{m/s}$ vastaa pudotusaikaa $\dfrac{2{,}0}{9{,}8} \approx 0{,}20\,\text{s}$ ja nopeus $4{,}5\,\text{m/s}$ aikaa $0{,}46\,\text{s}$. Niiden ero on $0{,}25\,\text{s}$ kuten kellon aikaerokin.
+
+## fy1-6-L3-04
+**Annettu:** pallon ja suodatinpaperin nopeudet taulukossa hetkinä $0{,}05\,\text{s}$–$0{,}60\,\text{s}$, paperin nopeus hetkellä $0{,}40\,\text{s}$ on $1{,}49\,\text{m/s}$, $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** kohta, jossa malli $v = g\,t$ lakkaa pätemästä suodatinpaperille, ja suodatinpaperin nopeuden vaje mallista hetkellä $t = 0{,}40\,\text{s}$ prosentteina
+**Periaate:** Malli $v = g\,t$ pätee, kun ilmanvastusta ei ole. Pallon mittauspisteet asettuvat suoralle, joka kulkee origon kautta. Suoran kulmakerroin on noin $9{,}8\,\text{m/s}^2$. Pallolle ilmanvastus on siis tässä pieni. Suodatinpaperi on kevyt ja leveä, joten ilma hidastaa sitä. Sen kuvaaja on aluksi samalla suoralla, mutta kaartuu siitä alaspäin. Lopuksi kuvaaja tasoittuu lähes vakionopeuteen $1{,}5\,\text{m/s}$. Ilmanvastus kasvaa nopeuden kasvaessa, ja lopulta se melkein kumoaa nopeuden kasvun.
+**Kuvaajan lukeminen:** Hetkellä $0{,}05\,\text{s}$ paperin piste on pallon suoralla. Hetkellä $0{,}10\,\text{s}$ paperin nopeus $0{,}93\,\text{m/s}$ jää mallin arvosta $0{,}98\,\text{m/s}$ jo $\dfrac{0{,}98 - 0{,}93}{0{,}98} \approx 5\,\%$. Kriteeriksi otetaan, että poikkeama on yli $5\,\%$. Hetken $0{,}30\,\text{s}$ jälkeen paperin nopeus ei enää juuri kasva, vaikka pallon nopeus kasvaa edelleen.
+**Kaava:** $v_\text{malli} = g\,t$ ja vaje $= \dfrac{v_\text{malli} - v_\text{paperi}}{v_\text{malli}} \cdot 100\,\%$
+**Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat yksikössä $\text{s}$.
+**Sijoitus:** $v_\text{malli} = 9{,}81\,\text{m/s}^2 \cdot 0{,}40\,\text{s} = 3{,}924\,\text{m/s}$. Erotus on $3{,}924\,\text{m/s} - 1{,}49\,\text{m/s} = 2{,}434\,\text{m/s}$, joten
+$$\begin{aligned} \text{vaje} &= \dfrac{2{,}434\,\text{m/s}}{3{,}924\,\text{m/s}} \cdot 100\,\% \\ &= 62{,}0\,\% \end{aligned}$$
+**Vastaus:** Suodatinpaperin nopeus on hetkellä $0{,}40\,\text{s}$ noin $62\,\%$ pienempi kuin mallin antama nopeus. Malli lakkaa pätemästä paperille noin hetkellä $0{,}10\,\text{s}$. Silloin poikkeama ylittää $5\,\%$, ja se kasvaa siitä eteenpäin. Ilmanvastus kasvaa nopeuden ja kappaleen leveyden mukana. Palloon ilmanvastus vaikuttaa vähän, joten malli pätee sille koko mitatulla välillä.
+**Järkevyys:** Pallon nopeus $3{,}93\,\text{m/s}$ vastaa mallia $3{,}924\,\text{m/s}$. Paperin pienempi nopeus sopii kevyelle ja leveälle kappaleelle ilmassa.
+
+## fy1-6-L3-05
+**Annettu:** kellon lukemat ja nopeudet: $(0{,}65\,\text{s};\ 4{,}9\,\text{m/s})$, $(1{,}65\,\text{s};\ 14{,}7\,\text{m/s})$ ja $(2{,}65\,\text{s};\ 24{,}5\,\text{m/s})$; kappale lähti levosta, kello oli käynnissä jo ennen pudotusta
+**Kysytty:** miksi osamäärät $\dfrac{v}{t}$ eroavat, putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$ ja kellon käynnistyksen ja pudotuksen väli $t_0$ yksikössä $\text{s}$
+**Periaate:** Kaava $v = g\,t$ pätee, kun $t$ on aika pudotuksen alusta. Kellon lukema on $t = t_0 + t_\text{putoaa}$. Siksi osamäärä $\dfrac{v}{t}$ on liian pieni. Virhe on suhteellisesti suurin lyhyellä lukemalla. Nopeuden muutos $\Delta v$ ja aikaero $\Delta t$ eivät riipu kellon nollakohdasta, koska $t_0$ kumoutuu erotuksessa. Siksi $g = \dfrac{\Delta v}{\Delta t}$ on oikea menetelmä.
+**Kaava:** $g = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $t_0 = t - t_\text{putoaa} = t - \dfrac{v}{g}$
+**Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat yksikössä $\text{s}$.
+**Sijoitus:** Osamäärät: $\dfrac{4{,}9}{0{,}65} = 7{,}5$, $\dfrac{14{,}7}{1{,}65} = 8{,}9$ ja $\dfrac{24{,}5}{2{,}65} = 9{,}2$ (yksikkö $\text{m/s}^2$). Ne lähestyvät arvoa $9{,}8$, kun kellon lukema kasvaa. Kulmakerroin: $g = \dfrac{24{,}5\,\text{m/s} - 4{,}9\,\text{m/s}}{2{,}65\,\text{s} - 0{,}65\,\text{s}} = \dfrac{19{,}6\,\text{m/s}}{2{,}00\,\text{s}} = 9{,}8\,\text{m/s}^2$. Myös pareilla $(1)$ ja $(2)$ sekä $(2)$ ja $(3)$ saadaan sama arvo. Todellinen putoamisaika ensimmäisellä rivillä on $\dfrac{4{,}9\,\text{m/s}}{9{,}8\,\text{m/s}^2} = 0{,}50\,\text{s}$. Siis $t_0 = 0{,}65\,\text{s} - 0{,}50\,\text{s} = 0{,}15\,\text{s}$.
+**Vastaus:** $t_0 = 0{,}15\,\text{s}$, kaksi merkitsevää numeroa kuten kellon lukemissa. Putoamiskiihtyvyys on $9{,}8\,\text{m/s}^2$. Osamäärät $\dfrac{v}{t}$ ovat liian pieniä, koska kellon lukema on aina $0{,}15\,\text{s}$ liian suuri. Virhe vaikuttaa eniten lyhyeen lukemaan. Kulmakerroin toimii, koska nopeuden muutos ja aikaero eivät riipu kellon nollakohdasta.
+**Järkevyys:** Kellon virhe on sama kaikilla riveillä: todelliset putoamisajat ovat $0{,}50\,\text{s}$, $1{,}50\,\text{s}$ ja $2{,}50\,\text{s}$. Lasku $9{,}8 \cdot 2{,}50 = 24{,}5\,\text{m/s}$ vastaa kolmatta riviä. Tulos $9{,}8\,\text{m/s}^2$ on lähellä tunnettua arvoa $9{,}81\,\text{m/s}^2$.

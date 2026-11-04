@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f2b127d4e8340cd8
+CONTENT-HASH: 13e96d6e5441e8cb
 ## Blocking
 (none)
 ## Polish
@@ -15,3 +15,4 @@ CONTENT-HASH: f2b127d4e8340cd8
 - Worked example: seven single-idea stages, unit conversion and sanity check included; siirto and Tarkista tasks with progressive hints and real common-mistake feedback.
 - Multiple-choice distractors (energy used up, unit prefix confusion 1000 vs 7000) are misconception-based.
 - Exit ticket tests the core ideas (joule, kJ, conservation); Finnish reads correctly at a 16-19 level; phone layout fits.
+- Round 2 delta (figure label nudged, text unchanged): tikapuut caption "jokainen väli on 10-kertainen" moved 4 SVG units lower; wording and meaning unchanged, scale labels and caption now separate and inside the figure (fig-9 capture); no pedagogical effect.
