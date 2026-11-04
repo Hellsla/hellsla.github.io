@@ -1,8 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f79a923c1c959a87
+CONTENT-HASH: d97dd20b77970096
+
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.
+- delta review: the Find-the-error task is unchanged in content and difficulty; splitting the display formula over two rows (symbolic step, then substitution and result) makes the student's wrong calculation easier to read and keeps the error to be found in the same place.
+- Options, feedback and optional status unchanged; the sequence of the inquiry is unaffected.

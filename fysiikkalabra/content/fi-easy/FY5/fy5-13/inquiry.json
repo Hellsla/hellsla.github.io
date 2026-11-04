@@ -314,7 +314,7 @@
       "type": "choice",
       "title": "Etsi virhe",
       "optional": true,
-      "prompt": "Opiskelija laskee yläpäästään suljetun urkupillin perustaajuuden. Pillin pituus on $0{,}85\\,\\text{m}$ ja äänen nopeus $340\\,\\text{m/s}$:\n\n$$f_1 = \\frac{v}{2L} = \\frac{340\\,\\text{m/s}}{2 \\cdot 0{,}85\\,\\text{m}} = 200\\,\\text{Hz}$$\n\nMissä on virhe?",
+      "prompt": "Opiskelija laskee yläpäästään suljetun urkupillin perustaajuuden. Pillin pituus on $0{,}85\\,\\text{m}$ ja äänen nopeus $340\\,\\text{m/s}$:\n\n$$\\begin{aligned} f_1 &= \\frac{v}{2L} \\\\ &= \\frac{340\\,\\text{m/s}}{2 \\cdot 0{,}85\\,\\text{m}} = 200\\,\\text{Hz} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
           "text": "Suljetussa päässä on solmu ja avoimessa kupu, joten $L = \\tfrac{\\lambda}{4}$ ja $f_1 = \\tfrac{v}{4L} = 100\\,\\text{Hz}$.",
