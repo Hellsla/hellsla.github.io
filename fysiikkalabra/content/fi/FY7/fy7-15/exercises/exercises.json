@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy7-15-L1-01",
+      "level": 1,
+      "text": "Auringonvalo on polarisoimatonta. Sen intensiteetti on $640\\,\\text{W/m}^2$, kun se tulee ihanteelliseen polarisaattoriin. Kuinka suuri on valon intensiteetti polarisaattorin jälkeen?",
+      "answer": 320.0,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-02",
+      "level": 1,
+      "text": "Polarisoituneen valon intensiteetti on $200\\,\\text{W/m}^2$. Valo tulee ihanteelliseen analysaattoriin, jonka läpäisysuunta on $30{,}0^\\circ$:n kulmassa valon polarisaatiosuuntaan nähden. Kuinka suuri on valon intensiteetti analysaattorin jälkeen?",
+      "answer": 150.0,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-03",
+      "level": 1,
+      "text": "Polarisoituneen valon intensiteetti on $80{,}0\\,\\text{W/m}^2$. Ihanteellisen polarisaattorin läpäisysuunta on $70{,}0^\\circ$:n kulmassa valon polarisaatiosuuntaan nähden. Kuinka suuri on valon intensiteetti polarisaattorin jälkeen?",
+      "answer": 9.3582,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-04",
+      "level": 1,
+      "text": "Auringonvalo heijastuu akryylilevyn pinnasta. Akryylin taitekerroin on $1{,}49$ ja ilman $1{,}00$. Millä tulokulmalla heijastunut valo on täysin polarisoitunutta?",
+      "answer": 56.1328,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-05",
+      "level": 1,
+      "text": "Timantin taitekerroin on $2{,}42$. Millä tulokulmalla ilmasta timantin pintaan tuleva valo heijastuu täysin polarisoituneena? Ilman taitekerroin on $1{,}00$.",
+      "answer": 67.5485,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-15-L2-01",
+      "level": 2,
+      "text": "Polarisoimattoman valon intensiteetti on $900\\,\\text{W/m}^2$. Valo kulkee kahden ihanteellisen polarisaattorin läpi, ja polarisaattorien läpäisysuuntien välinen kulma on $40{,}0^\\circ$. Kuinka suuri on valon intensiteetti toisen polarisaattorin jälkeen?",
+      "answer": 264.0708,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L2-02",
+      "level": 2,
+      "text": "Polarisoitunut valo tulee ihanteelliseen analysaattoriin. Kuinka suuri on valon polarisaatiosuunnan ja analysaattorin läpäisysuunnan välinen kulma, kun analysaattorin läpi pääsee $25{,}0\\,\\%$ siihen tulevan valon intensiteetistä?",
+      "answer": 60.0,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L2-03",
+      "level": 2,
+      "text": "Ilmasta läpinäkyvän muovilevyn pintaan tuleva valo heijastuu täysin polarisoituneena, kun tulokulma on $57{,}5^\\circ$. Kuinka suuri on muovin taitekerroin? Ilman taitekerroin on $1{,}00$.",
+      "answer": 1.5697,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L2-04",
+      "level": 2,
+      "text": "Valo tulee ilmasta lasilevyn pintaan Brewsterin kulmassa. Lasin taitekerroin on $1{,}50$ ja ilman $1{,}00$. Kuinka suuressa kulmassa pinnan normaaliin nähden taittunut säde etenee lasissa?",
+      "answer": 33.6901,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-15-L3-01",
+      "level": 3,
+      "text": "Kaksi ihanteellista polarisaattoria on ristissä, joten niiden läpi ei pääse valoa. Niiden väliin asetetaan kolmas polarisaattori, jonka läpäisysuunta on $30{,}0^\\circ$:n kulmassa ensimmäisen polarisaattorin läpäisysuuntaan nähden. Ensimmäiseen polarisaattoriin tulee polarisoimatonta valoa, jonka intensiteetti on $800\\,\\text{W/m}^2$. Kuinka suuri on viimeisen polarisaattorin läpi tulevan valon intensiteetti?",
+      "answer": 75.0,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L3-02",
+      "level": 3,
+      "text": "Sukeltaja katsoo altaan pohjalta ylöspäin. Altaan pohjalla olevan lampun valo osuu veden alta vedenpintaan, ja osa siitä heijastuu takaisin veteen. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$. Millä tulokulmalla takaisin veteen heijastunut valo on täysin polarisoitunutta?",
+      "answer": 36.9388,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L3-03",
+      "level": 3,
+      "text": "Opiskelija mittaa puhelimen näytön polarisoitunutta valoa valoanturilla, jonka edessä on polarisaattorikalvo. Kun kalvon läpäisysuunta on näytön polarisaation suuntainen, anturi näyttää $420\\,\\text{lx}$. Kun kalvoa on kierretty siitä $90{,}0^\\circ$, anturi näyttää $16\\,\\text{lx}$. Tämä lukema on huoneen taustavaloa, joka lisää jokaiseen lukemaan saman verran. Oletetaan, että taustavalo ei riipu kalvon asennosta, kalvo on ihanteellinen ja anturin lukema on verrannollinen valon intensiteettiin. Mitä anturi näyttää, kun kalvoa on kierretty $60{,}0^\\circ$ suurimman lukeman asennosta?",
+      "answer": 117.0,
+      "unit": "lx",
+      "tolerance": 0.02
+    }
+  ]
+}

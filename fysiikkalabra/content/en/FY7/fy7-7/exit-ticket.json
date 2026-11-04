@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The voltage of the wall socket is $230\\,\\text{V}$. How large is the peak value of the voltage?",
+    "a": "$230\\,\\text{V}$ is the rms value, so the peak value is $U_0 = U \\cdot \\sqrt{2} = 230\\,\\text{V} \\cdot \\sqrt{2} \\approx 325\\,\\text{V}$."
+  },
+  {
+    "q": "Why does the magnet rotate, and not the coil from which the electricity is taken, in a power-plant generator?",
+    "a": "The flux through a stationary coil changes because of the rotating magnet in the same way as in a rotating coil, so the same alternating voltage arises. The large current is taken straight from the stationary coils to the conductors without slip rings and brushes."
+  }
+]

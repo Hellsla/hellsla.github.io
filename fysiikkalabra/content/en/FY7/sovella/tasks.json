@@ -1,0 +1,817 @@
+{
+  "intro": "Five tasks bring the module together: the motion of a charged particle in electric and magnetic fields, a generator and induction, the transmission of electrical energy and the force between current-carrying conductors, thermal radiation, the path of light in an optical fibre, interference in a thin film, and the interference of light at a grating. In each one you decide which models fit the situation and justify your choice.",
+  "tasks": [
+    {
+      "id": "fy7-s1",
+      "title": "Ion implanter",
+      "source": "example",
+      "source_note": "The dimensions and voltages of the device are made up but of the same order of magnitude as in a small ion implanter. Masses of the boron atoms: AME2020 atomic mass evaluation (Wang et al., 2021); share of boron-10 in natural boron: IUPAC (2013).",
+      "text": "In the manufacture of microchips, boron ions are shot into a silicon wafer so that the electrical conductivity of the silicon changes in the desired way. In an ion implanter, positive ions with a charge of one elementary charge come from the ion source and are accelerated by a voltage, pass through a velocity selector and are guided through an analysing magnet to the wafer. In the field of the magnet the ions travel along a semicircle, and only ions whose path hits a slit in the wall of the chamber reach the wafer. About $19.9\\,\\%$ of natural boron is the isotope boron-10 and the rest is boron-11. Only boron-11 ions are wanted at the wafer.\n\nData:\n\n- mass of a boron-11 ion $m_{11} = 1.8281 \\cdot 10^{-26}\\,\\text{kg}$ and of a boron-10 ion $m_{10} = 1.6627 \\cdot 10^{-26}\\,\\text{kg}$\n- charge of an ion $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$\n- accelerating voltage $U = 30.0\\,\\text{kV}$; the kinetic energy of the ions before acceleration is negligibly small\n- distance between the plates of the velocity selector $d = 2.00\\,\\text{cm}$ and magnetic field $B_\\text{s} = 0.200\\,\\text{T}$\n- radius of the path of the boron-11 ions in the analysing magnet $r = 40.0\\,\\text{cm}$.\n\nIn the figure both magnetic fields point into the page. The effect of gravity on the ions is negligibly small.",
+      "figure": "fy7-sovella/fy7-s1-implanter",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 3,
+          "text": "The voltage between the plates of the selector is adjusted so that the boron-11 ions pass through the selector in a straight line. Which forces act on an ion travelling straight through the selector, in which directions do they point and how do their magnitudes compare? Which plate is positive? Justify your answer. You may illustrate your answer with a force diagram.",
+          "criteria": [
+            {
+              "text": "Names the forces acting on the ion: the magnetic force $\\overline{F}_\\text{m}$ and the electric force $\\overline{F}_\\text{s}$. The weight is left out because it is negligibly small.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Justifies the directions and magnitudes: the magnetic force is perpendicular to the velocity and the field and on a positive ion points upwards, the electric force points downwards, and the forces are equal in magnitude because the ion travels straight at constant velocity.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Concludes that the electric field points in the direction of the electric force on the positive ion, that is, downwards, so the upper plate is positive.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the speed of the boron-11 ions after the acceleration?",
+          "answer": {
+            "value": 725000.0,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies with the energy principle: the work $W = eU$ done on the ion by the electric field becomes the kinetic energy of the ion.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$eU = \\tfrac{1}{2} m_{11} v^2$, so $v = \\sqrt{\\dfrac{2eU}{m_{11}}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 7.25 \\cdot 10^{5}\\,\\text{m/s}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "What voltage must be connected between the plates of the selector?",
+          "answer": {
+            "value": 2900,
+            "unit": "V",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$eE = evB_\\text{s}$ and in a uniform field $E = U_\\text{s} : d$, so $U_\\text{s} = vB_\\text{s}d$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E = vB_\\text{s} \\approx 1.45 \\cdot 10^{5}\\,\\text{V/m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$U_\\text{s} \\approx 2.90\\,\\text{kV}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "How strong must the magnetic field of the analysing magnet be? If boron-10 ions could also pass through the selector at the same speed, how far from the slit of the boron-11 ions would they hit the wall of the chamber?",
+          "answer": [
+            {
+              "name": "B",
+              "value": 0.207,
+              "unit": "T",
+              "tolerance": 0.02
+            },
+            {
+              "name": "dx",
+              "value": 7.24,
+              "unit": "cm",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Uses the magnetic force as the centripetal force of the circular motion: $evB = \\dfrac{mv^2}{r}$, so at the same speed the radius of the path is directly proportional to the mass.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$B = \\dfrac{m_{11}v}{er}$ and $r_{10} = \\dfrac{m_{10}}{m_{11}}\\,r$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$B \\approx 0.207\\,\\text{T}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The ions hit the wall at the far end of a diameter from the point of entry, so the distance between the points of impact is $2(r - r_{10}) \\approx 7.2\\,\\text{cm}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "In reality the kinetic energy of the ions after the acceleration varies by as much as $10\\,\\%$ because the conditions in the ion source and the accelerating voltage vary. An engineer suggests: “The analysing magnet is unnecessary. All the ions are accelerated by the same voltage, so the boron-10 ions are faster and do not get through the selector.” Evaluate the suggestion.",
+          "criteria": [
+            {
+              "text": "States that the selector lets straight through every ion whose speed is $E : B_\\text{s}$, regardless of its mass and charge: it selects speed, not mass.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Calculates that a boron-10 ion passes through the selector if its kinetic energy is $m_{10} : m_{11} \\approx 0.91$ of the full value, that is, about $9\\,\\%$ smaller, which is possible when the energy varies by as much as $10\\,\\%$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The suggestion does not work: without the variation in energy the engineer would be right, because a boron-10 ion that has received the full acceleration is faster, but when the energy varies, boron-10 ions also get through the selector, and only the magnet separates ions travelling at the same speed according to their mass."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy7-2",
+        "transfer": "fy7-2",
+        "math": "fy7-2",
+        "communication": "fy7-2"
+      }
+    },
+    {
+      "id": "fy7-s2",
+      "title": "Hub dynamo",
+      "source": "example",
+      "source_note": "The data of the dynamo and the graph of the voltage are made up but typical: a bicycle dynamo light is usually $6\\,\\text{V}$ and $3\\,\\text{W}$, and a hub dynamo often has $28$ magnetic poles.",
+      "text": "In a dynamo built into the hub of a bicycle's front wheel, a ring of permanent magnets with $28$ magnetic poles, alternately north and south poles, rotates with the wheel. The stationary coil has an iron core, and the magnetic flux through it changes direction each time the next pole passes it. The voltage therefore has $14$ cycles for every revolution of the wheel. The diameter of the wheel with its tyre is $0.70\\,\\text{m}$. A light with a rated voltage of $6.0\\,\\text{V}$ and a power of $3.0\\,\\text{W}$ can be connected to the dynamo.\n\nA cyclist measured the voltage of the dynamo with an oscilloscope while the light was off and the cyclist rode at a steady speed. The graph is below.",
+      "figure": "fy7-sovella/fy7-s2-signal",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "From the graph, determine the frequency and the effective value of the voltage.",
+          "answer": [
+            {
+              "name": "f",
+              "value": 33.3,
+              "unit": "Hz",
+              "tolerance": 0.02
+            },
+            {
+              "name": "U",
+              "value": 9.9,
+              "unit": "V",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Three cycles last $90\\,\\text{ms}$, so $T = 30\\,\\text{ms}$; the peak value $e_0 = 14\\,\\text{V}$ is read at the peak."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$f = \\dfrac{1}{T}$ and $U = \\dfrac{e_0}{\\sqrt{2}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$f \\approx 33\\,\\text{Hz}$ and $U \\approx 9.9\\,\\text{V}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "At what speed was the cyclist riding?",
+          "answer": {
+            "value": 18.8,
+            "unit": "km/h",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the wheel turns $14$ times more slowly than the voltage oscillates, and that in one revolution the wheel advances the length of its circumference $\\pi D$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = \\pi D \\cdot \\dfrac{f}{14}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 5.2\\,\\text{m/s} \\approx 19\\,\\text{km/h}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "The light shines properly when the effective value of the voltage of the dynamo is at least the rated voltage of the light. Estimate the lowest speed at which this is so, assuming that the light receives the same voltage as was measured with no load.",
+          "answer": {
+            "value": 11.4,
+            "unit": "km/h",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the peak value of the voltage is directly proportional to the rotation frequency and therefore to the speed, because the faster the cyclist rides, the faster the magnets pass the coil and the faster the flux changes.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dfrac{v_\\text{min}}{v} = \\dfrac{U_\\text{lamp}}{U}$, so $v_\\text{min} = v \\cdot \\dfrac{U_\\text{lamp}}{U}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{min} \\approx 3.2\\,\\text{m/s} \\approx 11\\,\\text{km/h}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The cyclist claims: “When the light is on, pedalling is harder, even though nothing in the dynamo rubs against anything else. When the light is off, the dynamo does not brake the wheel at all.” Evaluate both parts of the claim.",
+          "criteria": [
+            {
+              "text": "Explains that the first part of the claim is true: when the light is on, an induced current flows in the coil, and its magnetic field opposes the change that produces it, that is, it brakes the rotating magnet ring.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Justifies with conservation of energy: the energy radiated by the light comes from the cyclist's work, so some force brakes the rotation even though nothing rubs.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Explains that the second part of the claim is not exactly true: when the light is off, no current flows in the coil, but the changing magnetic field produces eddy currents in the metal parts of the dynamo, such as the iron core and the hub, so a little braking remains.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 4,
+          "text": "When the light is on, the efficiency of the dynamo is $60\\,\\%$. How large an extra force must the cyclist overcome at the speed of part b? Does it matter, when air resistance and rolling resistance at this speed total about $10\\,\\text{N}$?",
+          "answer": {
+            "value": 0.95,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Connects power and force: the power of the braking force $P = Fv$ is the power taken by the dynamo, which is the power of the light divided by the efficiency.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$F = \\dfrac{P_\\text{lamp}}{\\eta v}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 0.95\\,\\text{N}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The extra force is about a tenth of the sum of air resistance and rolling resistance, $10\\,\\text{N}$: the difference can be felt, but it is small."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy7-7",
+        "math": "fy7-7",
+        "transfer": "fy7-7",
+        "concept": "fy7-6",
+        "communication": "fy7-6"
+      }
+    },
+    {
+      "id": "fy7-s3",
+      "title": "Electricity supply for a mine",
+      "source": "example",
+      "source_note": "The mine, the line and the powers are made up. The resistivity and density of aluminium are table values.",
+      "text": "A mining company opens a new mine $25\\,\\text{km}$ from the nearest substation. A power of about $6.0\\,\\text{MW}$ is transmitted to the mine continuously. From the substation it is possible to build either a $20\\,\\text{kV}$ line straight to the mine or a $110\\,\\text{kV}$ line, at the end of which a transformer is built at the mine. The transformer steps the voltage down to $20\\,\\text{kV}$ for the mine's own network.\n\nIn both options the line has two aluminium conductors with a cross-sectional area of $150\\,\\text{mm}^2$. The resistivity of aluminium is $2.82 \\cdot 10^{-8}\\,\\Omega\\,\\text{m}$ and its density is $2700\\,\\text{kg/m}^3$.\n\nReal power lines are three-phase, but a simple model is enough here: the substation sends a power of $6.0\\,\\text{MW}$ into the line, the power is calculated as for direct current, the voltages and currents are effective values, and the transformer is ideal.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much power is converted into heat in the line if the $20\\,\\text{kV}$ line is used? What percentage of the transmitted power is that?",
+          "answer": {
+            "value": 846,
+            "unit": "kW",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Calculates the resistance of the conductors from the length of the whole circuit, $2 \\cdot 25\\,\\text{km}$: $R = \\rho\\dfrac{l}{A} \\approx 9.4\\,\\Omega$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I = \\dfrac{P}{U}$ and $P_\\text{h} = RI^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P_\\text{h} \\approx 850\\,\\text{kW}$, that is, about $14\\,\\%$ of the transmitted power"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "How large is the power loss if the $110\\,\\text{kV}$ line is used?",
+          "answer": {
+            "value": 28.0,
+            "unit": "kW",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the same power at $5.5$ times the voltage means a current $5.5$ times smaller, so the loss decreases by a factor of $5.5^2 \\approx 30$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P_\\text{h} = R\\left(\\dfrac{P}{U}\\right)^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P_\\text{h} \\approx 28\\,\\text{kW}$, that is, about $0.5\\,\\%$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "The equipment of the mine works correctly when the voltage of the network deviates from the rated value $20\\,\\text{kV}$ by at most $10\\,\\%$. What voltage is left at the mine end of the $20\\,\\text{kV}$ line? Is it acceptable?",
+          "answer": {
+            "value": 17.2,
+            "unit": "kV",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "text": "Justifies that part of the transmission voltage is left across the resistance of the conductors: the voltage drop is $RI$, and what is left at the mine is the difference between the transmission voltage and the voltage drop.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$U_\\text{mine} = U - RI$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "$U_\\text{mine} \\approx 17.2\\,\\text{kV}$ is about $14\\,\\%$ below the rated value, so it is not acceptable; in the $110\\,\\text{kV}$ line the voltage drop is only about $0.5\\,\\text{kV}$, that is, $0.5\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "A municipal councillor suggests: “Let us build the cheaper $20\\,\\text{kV}$ line without a transformer and make the conductors thicker, so that the losses are as small as with the $110\\,\\text{kV}$ line.” Evaluate the suggestion.",
+          "criteria": [
+            {
+              "text": "Calculates that the resistance must be about $30$ times smaller, so the cross-sectional area must be about $4500\\,\\text{mm}^2$, which corresponds to a solid conductor about $7.6\\,\\text{cm}$ thick.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Estimates the amount of aluminium: the mass of the conductors would grow from about $20\\,\\text{t}$ to about $610\\,\\text{t}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Explains why raising the voltage is more effective: the loss depends on the square of the current and the current decreases in the same ratio as the voltage increases, but a thicker conductor reduces the loss only in the same ratio as the cross-sectional area increases.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The suggestion would work in principle, but the line would be enormously heavy and expensive. That is why long transmission is done at high voltage."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 4,
+          "text": "The two conductors of the line run side by side on the poles at a distance of $1.5\\,\\text{m}$ from each other. Do the conductors attract or repel each other? How large is the force on each metre of conductor in the $20\\,\\text{kV}$ line in normal operation and in a short circuit near the substation, when the current briefly rises to $8.0\\,\\text{kA}$? Does the force matter? The permeability of vacuum is $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$.",
+          "answer": [
+            {
+              "name": "F",
+              "value": 0.012,
+              "unit": "N/m",
+              "tolerance": 0.03
+            },
+            {
+              "name": "Fk",
+              "value": 8.5,
+              "unit": "N/m",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Justifies that currents of equal magnitude flow in the conductors in opposite directions, because the current returns to the substation along the other conductor, and that currents in opposite directions repel each other.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The magnetic field of the other conductor is $B = \\dfrac{\\mu_0 I}{2\\pi r}$ and the force is $F = IlB$, so $\\dfrac{F}{l} = \\dfrac{\\mu_0 I^2}{2\\pi r}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "In normal operation $\\dfrac{F}{l} \\approx 0.012\\,\\text{N/m}$ and in a short circuit about $8.5\\,\\text{N/m}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Compares with the weight of the conductor, about $4.0\\,\\text{N}$ per metre: in normal operation the force is negligible, but in a short circuit it is about twice the weight, so the conductors swing apart and may slap together."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy7-8",
+        "math": "fy7-8",
+        "concept": "fy7-8",
+        "communication": "fy7-8"
+      }
+    },
+    {
+      "id": "fy7-s4",
+      "title": "Pyrometer in a rolling mill",
+      "source": "model",
+      "source_note": "The spectrum has been calculated from the black-body radiation model. The data of the steel, the fibre and the thermocouple are made-up examples.",
+      "text": "In the hot rolling mill of a steelworks, a glowing steel slab is flattened into a plate. The temperature of the slab is monitored with a pyrometer, which measures the spectrum of the radiation coming from the slab at wavelengths of about $0.5$–$2.5\\,\\mu\\text{m}$ without touching the slab. The light passes through a protective window near the rolls and is guided along an optical fibre to a protected measuring instrument, because the instrument cannot withstand the heat.\n\nThe figure shows the spectrum of the radiation emitted by the slab over a wider range of wavelengths, assuming that the slab is a black body.\n\nData:\n\n- constant $b = 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$\n- refractive index of the core of the fibre $1.44$ and of the cladding $1.42$, of air $1.00$\n- refractive index of the glass of the protective window $1.50$; on the surface of the window there is a thin film of magnesium fluoride with a refractive index of $1.38$.\n\nAssume that the refractive indices are the same at all wavelengths.",
+      "figure": "fy7-sovella/fy7-s4-spectrum",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Determine the temperature of the surface of the slab in degrees Celsius.",
+          "answer": {
+            "value": 1176,
+            "unit": "°C",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The peak is on a grid line: $\\lambda_\\text{max} = 2.0\\,\\mu\\text{m}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\lambda_\\text{max} T = b$, so $T = \\dfrac{b}{\\lambda_\\text{max}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T \\approx 1450\\,\\text{K}$, that is, about $1180\\,{}^\\circ\\text{C}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 3,
+          "text": "The roller operator wonders: “According to the graph the slab radiates almost everything as infrared. Why does it then glow orange-red?” Explain.",
+          "criteria": [
+            {
+              "text": "Explains that the spectrum is continuous: a small part of the radiation is in the range of visible light, even though the peak is in the infrared.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Explains that in the visible range the intensity increases with increasing wavelength, so there is much more red and orange light than blue.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "States that the hot slab radiates with such a high power that even a small visible fraction is enough for the eye; an object at room temperature does not glow, because there is practically no visible light in its spectrum.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Light that hits the end of the fibre continues along the fibre only if it is totally internally reflected at the interface between the core and the cladding. What is the critical angle at this interface? What is the greatest angle of incidence allowed for light entering the end face of the fibre from air?",
+          "answer": [
+            {
+              "name": "ar",
+              "value": 80.4,
+              "unit": "°",
+              "tolerance": 0.01
+            },
+            {
+              "name": "th",
+              "value": 13.8,
+              "unit": "°",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Sees the geometry of the two interfaces: at the end face the light is refracted to an angle $\\beta$, and since the end face is perpendicular to the side surface of the core, the angle of incidence on the side surface is $90^\\circ - \\beta$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$ and $1.00 \\cdot \\sin\\theta = n_1\\sin\\beta$, where $\\beta = 90^\\circ - \\alpha_\\text{r}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\beta \\approx 9.56^\\circ$ and $\\sin\\theta \\approx 0.239$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\alpha_\\text{r} \\approx 80.4^\\circ$ and $\\theta \\approx 13.8^\\circ$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "The temperature of the same slab was measured as $1210\\,{}^\\circ\\text{C}$ with a thermocouple pushed into a hole drilled in it. The foreman suspects that the pyrometer reads wrongly. Evaluate whether the result of part a conflicts with the reading of the thermocouple and what the difference may be due to.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The peak is flat, so its position can be read to an accuracy of about $\\pm 0.05\\,\\mu\\text{m}$; in temperature this corresponds to about $\\pm 36\\,\\text{K}$."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "The surface cools faster than the interior of the slab, which the thermocouple measures, through radiation and the effect of the rolls and the air, so the surface may really be cooler."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The emissivity of steel and of the scale layer on its surface depends on the wavelength, so the shape of the spectrum and the position of the peak differ from the spectrum of a black body, and the temperature given by the model is only approximate. Merely a radiation weaker than that of a black body, by the same fraction at every wavelength, would not shift the peak."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The difference, about $34\\,\\text{K}$, is within the reading accuracy and is also explained by the cooling of the surface, so the pyrometer cannot be said to read wrongly."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 3,
+          "text": "The film of the protective window is designed so that the window reflects as little as possible at the wavelength of the peak of the spectrum, $2.0\\,\\mu\\text{m}$, when the light arrives perpendicularly. How thick is the thinnest film that works in this way? An installer notices that greenish light is reflected from the window in daylight and suspects that the film is wrong. Evaluate the suspicion.",
+          "answer": {
+            "value": 362,
+            "unit": "nm",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies that both reflections, from air to film and from film to glass, take place against a material with a higher refractive index, so the phase shifts cancel each other and the reflected waves weaken each other when $2nd = (k + \\tfrac{1}{2})\\lambda$; for the thinnest film $k = 0$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d = \\dfrac{\\lambda}{4n} \\approx 362\\,\\text{nm} \\approx 0.36\\,\\mu\\text{m}$"
+            },
+            {
+              "text": "Explains the green reflection: the path difference $2nd = 1000\\,\\text{nm}$ is twice $500\\,\\text{nm}$, so green light is reinforced in the reflection ($2nd = k\\lambda$, $k = 2$). The film is therefore not wrong but designed for the infrared.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy7-9",
+        "math": "fy7-9",
+        "concept": "fy7-9",
+        "communication": "fy7-9",
+        "transfer": "fy7-12",
+        "experiment": "fy7-9"
+      }
+    },
+    {
+      "id": "fy7-s5",
+      "title": "Spectrum of a hydrogen lamp",
+      "source": "simulated",
+      "source_note": "Wavelengths: NIST Atomic Spectra Database (2024), wavelengths in air. The angles have been calculated from the model of the interference of light for an invented grating and rounded to the reading accuracy of the goniometer, $0.1^\\circ$, so they contain variation consistent with that accuracy.",
+      "text": "A group of students studied the light of a hydrogen lamp with a grating spectrometer. The light passes through a narrow slit and a lens and strikes the grating perpendicularly, and the directions of the maxima are measured with a rotating telescope. The line density of the grating had been marked on the device, but the marking had worn illegible. The group measured the directions $\\theta$ of the maxima of four spectral lines of hydrogen relative to the direction of the incident light. The wavelengths $\\lambda$ of the lines are from a data book.\n\n| line | $\\lambda\\ (\\text{nm})$ | order | $\\theta$ |\n|---|---|---|---|\n| red | $656.28$ | $1$ | $23.2^\\circ$ |\n| blue-green | $486.13$ | $1$ | $17.0^\\circ$ |\n| blue | $434.05$ | $1$ | $15.1^\\circ$ |\n| violet | $410.17$ | $1$ | $14.2^\\circ$ |\n| red | $656.28$ | $2$ | $52.0^\\circ$ |\n| blue-green | $486.13$ | $2$ | $35.7^\\circ$ |\n\nThe group also noticed a yellow line in the spectrum that does not belong to hydrogen. Its first-order maximum was at an angle of $20.7^\\circ$. The reading accuracy of the goniometer is $0.1^\\circ$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "From the measurements, form a graph such that, according to the model, the same straight line through the origin fits all six points.",
+          "criteria": [
+            {
+              "text": "Justifies the quantities of the graph from the condition for maxima $d\\sin\\theta = k\\lambda$: when $k\\lambda$ is on the horizontal axis and $\\sin\\theta$ on the vertical axis, the points of both orders are on the same straight line, whose gradient is $\\tfrac{1}{d}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The sines of the angles and the products $k\\lambda$ have been calculated, for example for the second-order red line $\\sin 52.0^\\circ \\approx 0.788$ and $k\\lambda \\approx 1313\\,\\text{nm}$."
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "A straight line through the origin fits all six points."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "From the graph, determine the line density of the grating, that is, the number of lines per millimetre.",
+          "answer": {
+            "value": 600,
+            "unit": "1/mm",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The gradient $\\approx 6.00 \\cdot 10^{-4}\\,\\tfrac{1}{\\text{nm}}$ has been read from a point of the line far from the origin, for example $(1300\\,\\text{nm};\\ 0.780)$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The gradient is $\\tfrac{1}{d}$, so $d = \\tfrac{1}{\\text{gradient}}$, and the line density is $1\\,\\text{mm} : d$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d \\approx 1.67\\,\\mu\\text{m}$, so there are about $600$ lines per millimetre."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the wavelength of the yellow line?",
+          "answer": {
+            "value": 589,
+            "unit": "nm",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\lambda = d\\sin\\theta$ when $k = 1$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\lambda = 1667\\,\\text{nm} \\cdot \\sin 20.7^\\circ$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\lambda \\approx 589\\,\\text{nm}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "According to the data book, the yellow line of helium has a wavelength of $587.56\\,\\text{nm}$ and the yellow lines of sodium have wavelengths of $588.99\\,\\text{nm}$ and $589.59\\,\\text{nm}$. The group concludes that the lamp contains sodium as an impurity. Evaluate the conclusion. How could the measurement be improved so that helium and sodium could be told apart?",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "A reading accuracy of $0.1^\\circ$ corresponds in the first order to an uncertainty of about $\\pm 3\\,\\text{nm}$ in the wavelength."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The result fits sodium but also helium, because the difference between them, about $1.4\\,\\text{nm}$, is smaller than the uncertainty: the conclusion is not justified by this measurement."
+            },
+            {
+              "text": "Proposes a justified improvement: in the second order $\\sin\\theta = \\dfrac{k\\lambda}{d}$ changes twice as much with the wavelength and the difference in angle grows to about $0.14^\\circ$, but this is only slightly larger than the reading accuracy, so a more accurate goniometer or a grating with more lines is also needed.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "A student remarks: “In a glass prism violet light is deviated from its direction the most, but in a grating red light. One of the observations must be wrong.” Evaluate the claim.",
+          "criteria": [
+            {
+              "text": "Explains that in a grating a maximum forms in the direction where the path difference of the waves coming from adjacent slits is a multiple of the wavelength; a longer wavelength requires a larger angle, so red is deviated the most.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Explains that in a prism light is refracted and the refractive index of glass is greater for violet light than for red, so violet is refracted the most.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The claim is wrong: both observations are correct, because the colours are separated by different phenomena, in the grating by interference and in the prism by refraction."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy7-13",
+        "math": "fy7-13",
+        "graph": "fy7-13",
+        "experiment": "fy7-13",
+        "concept": "fy7-11",
+        "communication": "fy7-13"
+      }
+    }
+  ]
+}

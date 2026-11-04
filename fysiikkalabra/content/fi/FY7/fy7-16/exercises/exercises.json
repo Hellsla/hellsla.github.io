@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy7-16-L1-01",
+      "level": 1,
+      "text": "Tietoliikennekuidun vaimennuskerroin on $0{,}18\\,\\text{dB/km}$. Kuinka monta desibeliä on $50\\,\\text{km}$:n pituisen kuidun vaimennus?",
+      "answer": 9.0,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-02",
+      "level": 1,
+      "text": "Valon teho kuidun alussa on $2{,}0\\,\\text{mW}$ ja lopussa $0{,}50\\,\\text{mW}$. Kuinka suuri on kuidun vaimennus desibeleinä?",
+      "answer": 6.0206,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-03",
+      "level": 1,
+      "text": "Oletetaan, että induktiolieden kattilan pohjan pyörrevirrat voidaan kuvata yhtenä virtasilmukkana, jonka resistanssi on $0{,}010\\,\\Omega$ ja jossa kulkee vaihtovirta, jonka tehollinen arvo on $400\\,\\text{A}$. Kuinka suurella teholla pyörrevirrat muuttavat sähköenergiaa pohjan sisäenergiaksi? Vastaa kilowatteina.",
+      "answer": 1.6,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-04",
+      "level": 1,
+      "text": "Langattoman laturin magneettikenttä on puhelimen vastaanotinkäämin kohdalla homogeeninen ja kohtisuorassa käämin tasoa vastaan, ja magneettivuon tiheyden huippuarvo on $0{,}50\\,\\text{mT}$. Käämin yhden kierroksen pinta-ala on $12\\,\\text{cm}^2$. Kuinka suuri on vuon huippuarvo yhden kierroksen läpi? Vastaa mikroweebereinä.",
+      "answer": 0.6,
+      "unit": "µWb",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-05",
+      "level": 1,
+      "text": "Oletetaan, että langaton laturi ottaa pistorasiasta tehon $10{,}0\\,\\text{W}$ ja puhelimen akkuun siirtyy teho $7{,}2\\,\\text{W}$. Kuinka suuri on latauksen hyötysuhde? Vastaa prosentteina.",
+      "answer": 72.0,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-16-L2-01",
+      "level": 2,
+      "text": "Puhelimen vastaanotinkäämissä on $10$ kierrosta. Laturin taajuus on $140\\,\\text{kHz}$, ja yhden kierroksen läpi kulkeva magneettivuo vaihtelee sinimuotoisesti huippuarvolla $0{,}40\\,\\mu\\text{Wb}$. Kuinka suuri on käämiin indusoituvan jännitteen huippuarvo?",
+      "answer": 3.5186,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L2-02",
+      "level": 2,
+      "text": "Kuituyhteyden lähetin syöttää kuituun tehon $1{,}0\\,\\text{mW}$, ja vastaanotin tunnistaa pulssit, kun teho on vähintään $1{,}0\\,\\mu\\text{W}$. Kuidun vaimennuskerroin on $0{,}20\\,\\text{dB/km}$. Kuinka pitkä yhteys voi enintään olla ilman vahvistinta? Liitosten vaimennusta ei oteta huomioon.",
+      "answer": 150.0,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L2-03",
+      "level": 2,
+      "text": "Induktiolieden keittoalue ottaa sähköverkosta tehon $2{,}0\\,\\text{kW}$. Oletetaan, että $85\\,\\%$ tehosta siirtyy kattilan veteen. Kattilassa on $1{,}5\\,\\text{kg}$ vettä, jonka lämpötila on $15\\,{}^\\circ\\text{C}$. Kuinka kauan kestää lämmittää vesi kiehumispisteeseen $100\\,{}^\\circ\\text{C}$? Veden ominaislämpökapasiteetti on $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Vastaa minuutteina.",
+      "answer": 5.2375,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L2-04",
+      "level": 2,
+      "text": "Mittauksessa (Ravenscraft, OneZero, 2020) puhelimen lataaminen tyhjästä täyteen otti pistorasiasta johtolaturilla $14{,}26\\,\\text{Wh}$ ja latausalustalla $21{,}01\\,\\text{Wh}$ energiaa. Oletetaan, että puhelin ladataan tyhjästä täyteen kerran päivässä vuoden ajan ($365$ päivää). Kuinka paljon enemmän energiaa latausalusta kuluttaa vuodessa kuin johtolaturi? Vastaa kilowattitunteina.",
+      "answer": 2.4638,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-16-L3-01",
+      "level": 3,
+      "text": "Merikaapeli C-Lion1 on $1172\\,\\text{km}$ pitkä (Cinia, 2016). Oletetaan, että sen kuitujen vaimennuskerroin on $0{,}18\\,\\text{dB/km}$ ja että kuidun yhden osuuden vaimennus saa olla enintään $20\\,\\text{dB}$, ennen kuin optinen vahvistin palauttaa valon tehon. Osuudet ovat yhtä pitkiä, ja vahvistimet ovat osuuksien välissä; lähetin ja vastaanotin ovat kaapelin päissä. Kuinka monta vahvistinta kaapelissa on vähintään oltava?",
+      "answer": 10,
+      "unit": "vahvistinta",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L3-02",
+      "level": 3,
+      "text": "Induktiolieden kela taajuudella $25\\,\\text{kHz}$ synnyttää kattilan pohjaan sinimuotoisesti vaihtelevan magneettikentän, jonka magneettivuon tiheyden huippuarvo on $4{,}0\\,\\text{mT}$. Oletetaan, että kenttä on homogeeninen ja kohtisuorassa pohjaa vastaan, että pohjan pyörrevirrat voidaan kuvata yhtenä silmukkana, jonka säde on $8{,}0\\,\\text{cm}$ ja resistanssi $0{,}050\\,\\Omega$, ja että pyörrevirran oma magneettikenttä jätetään huomiotta. Kuinka suurella keskimääräisellä teholla pohja lämpenee? Vastaa kilowatteina.",
+      "answer": 1.596,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L3-03",
+      "level": 3,
+      "text": "Kuituyhteyden lähetin syöttää kuituun tehon $1{,}0\\,\\text{mW}$, ja vastaanotin tarvitsee vähintään tehon $10\\,\\mu\\text{W}$. Kuidun vaimennuskerroin on $0{,}20\\,\\text{dB/km}$, ja yhteydessä on neljä liitosta, joista kukin vaimentaa $0{,}50\\,\\text{dB}$. Kuidun lasin taitekerroin on $1{,}47$. Kuinka kauan valopulssilta kestää kulkea pisimmän mahdollisen yhteyden päästä päähän, kun pulssi kulkee kuidun akselin suuntaisesti? Valon nopeus tyhjiössä on $3{,}00 \\cdot 10^8\\,\\text{m/s}$. Vastaa millisekunteina.",
+      "answer": 0.441,
+      "unit": "ms",
+      "tolerance": 0.02
+    }
+  ]
+}

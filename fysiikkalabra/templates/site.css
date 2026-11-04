@@ -679,6 +679,7 @@ details.reveal>summary{min-height:52px;flex-wrap:wrap;gap:.1rem .6rem;font:700 v
 h4.sol-part{margin:1rem 0 .4rem;font:700 var(--fs-body) var(--sans)}
 .reveal-body .steps{padding:.9rem 1.1rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6}
 .reveal-body .steps p{margin:0 0 .5rem}.reveal-body .steps strong{color:var(--accent-deep)}.reveal-body .steps svg{display:block;margin:.6rem auto}
+.reveal-body .steps .katex svg{margin:0}   /* KaTeX draws \sqrt as a 400em-wide svg clipped by .hide-tail: the figure margin above pushed the surd out of its box (FY7 Sovella visual review 2026-11-04) */
 .rubric{font-size:var(--fs-inner)}.rubric-lead{color:var(--ink-2)}
 .rubric-part{margin:0 0 1rem;padding:.7rem .9rem;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--inner-radius)}
 .rubric-part-h{display:flex;justify-content:space-between;margin:0 0 .4rem;font-weight:700}

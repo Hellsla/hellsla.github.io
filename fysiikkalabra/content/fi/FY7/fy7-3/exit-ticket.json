@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Käämin virta kaksinkertaistetaan, ja samalla kierrosten määrä puolitetaan niin, että käämin pituus pysyy samana. Miten magneettivuon tiheys käämin sisällä muuttuu?",
+    "a": "Se pysyy samana. Kaavassa $B = \\mu_0 \\tfrac{N I}{l}$ tulo $N I$ ei muutu, kun $I$ kaksinkertaistuu ja $N$ puolittuu, ja pituus $l$ on sama."
+  },
+  {
+    "q": "Katsot käämiä sen toisesta päästä, ja virta kiertää kierroksissa vastapäivään. Onko sinua kohti oleva pää pohjois- vai etelänapa?",
+    "a": "Pohjoisnapa. Kun oikean käden sormet kiertävät virran suuntaan vastapäivään, peukalo osoittaa sinua kohti, joten kenttä tulee käämistä ulos sinun puoleltasi."
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "id": "fy7-12",
+  "course": "FY7",
+  "title": "Total internal reflection and optical fibre",
+  "goals": [
+    "LOPS FY7: total internal reflection",
+    "Thematic study: optical data transmission"
+  ],
+  "prerequisites": [
+    "fy7-10"
+  ],
+  "glossary": [
+    "kokonaisheijastuminen",
+    "rajakulma",
+    "valokuitu"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

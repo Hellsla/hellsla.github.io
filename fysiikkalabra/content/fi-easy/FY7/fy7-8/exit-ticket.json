@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Muuntajan ensiökäämissä on $500$ kierrosta ja toisiokäämissä $25$ kierrosta. Ensiöjännite on $230\\,\\text{V}$. Kuinka suuri on toisiojännite?",
+    "a": "$U_2 = U_1 N_2 : N_1 = 230\\,\\text{V} \\cdot 25 : 500 = 11{,}5\\,\\text{V}$. Toisiokäämissä on vähemmän kierroksia, joten muuntaja laskee jännitettä."
+  },
+  {
+    "q": "Siirtojohdon virta pienenee kolmasosaan. Johdon resistanssi pysyy samana. Miten johdossa lämmöksi muuttuva teho muuttuu?",
+    "a": "Se pienenee yhdeksäsosaan, koska $P_\\text{h} = R I^2$ ja $(1 : 3)^2 = 1 : 9$."
+  }
+]

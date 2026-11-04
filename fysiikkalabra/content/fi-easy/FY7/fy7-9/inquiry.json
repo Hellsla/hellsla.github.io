@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "contribution": "Valo ja muu sähkömagneettinen säteily ovat toisiaan synnyttäviä sähkö- ja magneettikenttiä ($c = f\\lambda$). Luvussa käsitellään säteilyn lähteet (kiihtyvä varaus, kuuma kappale), spektri radioaalloista gammasäteilyyn sekä mustan kappaleen säteily ja Wienin siirtymälaki. Simulaatiolla opiskelija löytää mallin arvoista, että $\\lambda_\\text{max} T$ on vakio ja että huoneenlämpöinen kappale säteilee infrapunaa.",
+  "learn": [
+    "selittämään, mitä sähkömagneettinen säteily on, miten se syntyy ja miten spektrin alueet eroavat toisistaan.",
+    "laskemaan aallonpituuden, taajuuden ja mustan kappaleen spektrin huipun yhtälöillä $c = f\\lambda$ ja $\\lambda_\\text{max} T = b$.",
+    "päättelemään kappaleen lämpötilan sen säteilyn spektristä ja hehkun väristä."
+  ],
+  "prior": [
+    "Aalto etenee yhden jaksonajan aikana yhden aallonpituuden verran, ja $v = f\\lambda$ (luku *Mekaaninen aaltoliike*)",
+    "Muuttuva magneettivuo indusoi jännitteen (luku *Sähkömagneettinen induktio*)",
+    "Kaikki kappaleet lähettävät lämpösäteilyä, ja kuumempi kappale säteilee enemmän (luku *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Sepän ahjossa kuumennettava rautatanko ei aluksi hehku lainkaan, vaikka se on jo polttavan kuuma. Sitten se alkaa hehkua tummanpunaisena. Kun tanko kuumenee lisää, se muuttuu oranssiksi, keltaiseksi ja lähes valkoiseksi. Huoneenlämpöinen tanko ei hehku. Silti lämpökamera näkee sen ja sinut pilkkopimeässäkin.",
+      "question": "Miksi hehkun väri muuttuu lämpötilan mukana, ja mitä lämpökamera näkee, jota silmä ei näe?"
+    },
+    {
+      "id": "kertaus-aalto",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: aallon taajuus ja aallonpituus",
+      "prompt": "Aallon taajuus kaksinkertaistuu, ja aallon nopeus pysyy samana. Miten aallonpituus muuttuu?",
+      "choices": [
+        {
+          "text": "Se puolittuu.",
+          "correct": true,
+          "feedback": "Oikein. Aalto etenee yhden jaksonajan aikana yhden aallonpituuden verran, joten $v = f\\lambda$ (luku *Mekaaninen aaltoliike*). Nopeus $v$ pysyy samana ja taajuus $f$ kaksinkertaistuu. Silloin aallonpituus $\\lambda$ puolittuu. Sama pätee valoon, jonka nopeus on $c$."
+        },
+        {
+          "text": "Se kaksinkertaistuu.",
+          "feedback": "Kun taajuus kasvaa, jaksonaika lyhenee. Silloin aalto ehtii edetä lyhyemmän matkan yhden jakson aikana. Koska $v = f\\lambda$ ja $v$ pysyy samana, kaksinkertainen taajuus puolittaa aallonpituuden (luku *Mekaaninen aaltoliike*)."
+        },
+        {
+          "text": "Se pysyy samana.",
+          "feedback": "Aallonpituus, taajuus ja nopeus liittyvät toisiinsa: $v = f\\lambda$ (luku *Mekaaninen aaltoliike*). Nopeus $v$ pysyy samana ja taajuus $f$ kaksinkertaistuu. Silloin aallonpituuden $\\lambda$ täytyy puolittua."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-huippu",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kuumempi kappale",
+      "prompt": "Kappaleen absoluuttinen lämpötila nostetaan $3000\\,\\text{K}$:sta $6000\\,\\text{K}$:iin. Miten käy sen säteilyn spektrin huipun eli voimakkaimman säteilyn aallonpituuden?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Huipun aallonpituus puolittuu.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: $3000\\,\\text{K}$:ssa huippu on $966\\,\\text{nm}$:n ja $6000\\,\\text{K}$:ssa $483\\,\\text{nm}$:n kohdalla. Kun absoluuttinen lämpötila kaksinkertaistuu, huipun aallonpituus puolittuu. Tulo $\\lambda_\\text{max} T$ pysyy siis samana."
+        },
+        {
+          "text": "Huipun aallonpituus kaksinkertaistuu.",
+          "feedback": "Mallin arvot kumoavat tämän: huippu siirtyy $966\\,\\text{nm}$:stä $483\\,\\text{nm}$:iin eli lyhyemmille aallonpituuksille. Siksi kuumempi kappale hehkuu punaisen sijaan keltaisena ja valkoisena. Sen säteilyssä on enemmän lyhytaaltoista valoa."
+        },
+        {
+          "text": "Huippu pysyy samassa kohdassa, käyrä vain nousee korkeammaksi.",
+          "feedback": "Käyrä nousee, mutta mallin arvot näyttävät myös huipun siirtyvän $966\\,\\text{nm}$:stä $483\\,\\text{nm}$:iin. Jos huippu ei siirtyisi, hehkun väri ei muuttuisi lämpötilan mukana."
+        },
+        {
+          "text": "Huipun aallonpituus pienenee neljäsosaan.",
+          "feedback": "Mallin arvot kumoavat tämän: huippu siirtyy $966\\,\\text{nm}$:stä $483\\,\\text{nm}$:iin eli puoleen, ei neljäsosaan. Huipun aallonpituus on kääntäen verrannollinen absoluuttiseen lämpötilaan."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-huone",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: huoneenlämpöinen kappale",
+      "prompt": "Huoneenlämpöinen kivi on pimeässä huoneessa. Kiven lämpötila on $300\\,\\text{K}$. Mitä sen lähettämästä säteilystä voi sanoa?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Kivi ei säteile lainkaan, koska se ei ole kuuma.",
+          "feedback": "Mallin mukaan $300\\,\\text{K}$:n kappaleen spektrin huippu on $9659\\,\\text{nm}$:n eli noin $9{,}7\\,\\mu\\text{m}$:n kohdalla. Jokainen kappale säteilee, koska sen hiukkaset ovat lämpöliikkeessä. Kivi säteilee vain infrapunaa."
+        },
+        {
+          "text": "Kivi säteilee pääosin infrapunaa, jota silmä ei näe.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: $300\\,\\text{K}$:ssa huippu on $9659\\,\\text{nm}$:n eli noin $9{,}7\\,\\mu\\text{m}$:n kohdalla. Näkyvän valon osuus on mitättömän pieni. Lämpökamera näkee tämän säteilyn."
+        },
+        {
+          "text": "Kivi säteilee heikkoa punaista valoa, joka näkyy pimeässä.",
+          "feedback": "Mallin mukaan $300\\,\\text{K}$:n kappaleen säteilystä näkyvää valoa on alle $0{,}01\\,\\%$, ja huippu on $9{,}7\\,\\mu\\text{m}$:n kohdalla. Punainen hehku näkyy vasta noin $800\\,\\text{K}$:n lämpötilassa."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Kuvassa on kuumennettava kappale ja sen lähettämän säteilyn spektri. Muuta lämpötilaa. Seuraa, miten käyrä, sen huippu ja hehkun väri muuttuvat.",
+      "howto": "Säädä kappaleen pintalämpötilaa $T$. Kuvaajassa on säteilyteho aallonpituuden funktiona. Oranssi piste ja katkoviiva näyttävät huipun aallonpituuden $\\lambda_\\text{max}$. Värikaista on näkyvä valo. Valitse *Aallonpituusalue*: lyhyet aallonpituudet näyttävät välin $0$–$3000\\,\\text{nm}$ ja pitkät välin $0$–$30\\,\\mu\\text{m}$. Jos huippu on alueen ulkopuolella, oikeassa reunassa oleva nuoli osoittaa sen suunnan. Pystyakselin asteikko muuttuu käyrän mukana, joten seuraa myös asteikon lukuja. Lukemat-riviltä näet huipun aallonpituuden, näkyvän valon osuuden ja hehkun värin.",
+      "model": "Kappale on musta kappale: se imee kaiken siihen osuvan säteilyn. Sen spektri riippuu vain pintalämpötilasta. Ympäristöstä tulevaa ja heijastuvaa säteilyä ei ole mukana. Hehkun väri on laskettu spektristä silmän värinäön mallilla, ja värin nimi on likimääräinen. Pimeässä hehku näkyy noin $800\\,\\text{K}$:sta alkaen. Lukemat ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Käyrä on mustan kappaleen säteilyn spektri, joka on laskettu Planckin säteilylaista. Pystyakselin suure $M_\\lambda$ on teho, jonka kappale säteilee pinta-alaa ja aallonpituusväliä kohti. Simulaatio etsii käyrän korkeimman kohdan ja ilmoittaa sen aallonpituuden $\\lambda_\\text{max}$. Näkyvän valon osuus on aallonpituuksien $380\\,\\text{nm}$ ja $750\\,\\text{nm}$ välillä säteilevä teho jaettuna koko säteilyteholla. Celsiusasteet ovat $t = T - 273{,}15\\,\\text{K}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: huipun paikka ja lämpötila",
+      "intro": "Testaa ennuste 1. Aallonpituusalue on lyhyet aallonpituudet. Muuta vain lämpötilaa. Kirjaa ainakin lämpötilat $3000\\,\\text{K}$, $4500\\,\\text{K}$ ja $6000\\,\\text{K}$, halutessasi muitakin. Laske jokaiselle riville tulo $\\lambda_\\text{max} T$.",
+      "initial": {
+        "T": 3000,
+        "alue": "lyhyt"
+      },
+      "locked": [
+        "alue"
+      ],
+      "vary": "T",
+      "names": {
+        "T": "pintalämpötila",
+        "alue": "aallonpituusalue"
+      },
+      "units": {
+        "T": "K"
+      },
+      "values": {
+        "alue": {
+          "lyhyt": "lyhyet aallonpituudet",
+          "pitka": "pitkät aallonpituudet"
+        }
+      },
+      "measure": [
+        {
+          "key": "lmax",
+          "label": "λ_max (nm)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kylmät kappaleet",
+      "intro": "Testaa ennuste 2. Aallonpituusalue on nyt pitkät aallonpituudet. Kirjaa huoneenlämpö $300\\,\\text{K}$ ja ainakin yksi lämpötila väliltä $600$–$900\\,\\text{K}$. Katso Lukemat-riviltä myös näkyvän valon osuus ja hehkun väri.",
+      "initial": {
+        "T": 300,
+        "alue": "pitka"
+      },
+      "locked": [
+        "alue"
+      ],
+      "vary": "T",
+      "names": {
+        "T": "pintalämpötila",
+        "alue": "aallonpituusalue"
+      },
+      "units": {
+        "T": "K"
+      },
+      "values": {
+        "alue": {
+          "lyhyt": "lyhyet aallonpituudet",
+          "pitka": "pitkät aallonpituudet"
+        }
+      },
+      "measure": [
+        {
+          "key": "lmax",
+          "label": "λ_max (nm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: huippu ja lämpötila",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: Miten spektrin huipun aallonpituus muuttuu, kun lämpötila kaksinkertaistuu? Mitä huomaat tulosta $\\lambda_\\text{max} T$? Millä aallonpituusalueella huoneenlämpöisen kappaleen huippu on? Miksi kappale ei hehku?",
+      "model": "Lämpötila kaksinkertaistuu $3000\\,\\text{K}$:sta $6000\\,\\text{K}$:iin. Silloin huippu siirtyy $966\\,\\text{nm}$:stä $483\\,\\text{nm}$:iin eli puolittuu. Tulo $\\lambda_\\text{max} T$ on joka rivillä sama, noin $2{,}90 \\cdot 10^{6}\\,\\text{nm} \\cdot \\text{K} = 2{,}90 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Siksi huipun aallonpituus on kääntäen verrannollinen absoluuttiseen lämpötilaan. Huoneenlämpöisen kappaleen ($300\\,\\text{K}$) huippu on $9659\\,\\text{nm}$:n eli noin $9{,}7\\,\\mu\\text{m}$:n kohdalla infrapuna-alueella. Näkyvää valoa on alle $0{,}01\\,\\%$. Siksi kappale ei hehku, vaikka se säteilee. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Kerroin, että huipun aallonpituus puolittuu, kun absoluuttinen lämpötila kaksinkertaistuu.",
+        "Laskin tulon $\\lambda_\\text{max} T$ ja totesin sen samaksi kaikilla riveillä, noin $2{,}9 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$.",
+        "Totesin, että huoneenlämpöisen kappaleen huippu on infrapuna-alueella, noin $10\\,\\mu\\text{m}$:n kohdalla.",
+        "Selitin, ettei kappale hehku, koska sen säteilystä lähes mikään ei ole näkyvää valoa."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi teoriaan ja mallin arvoihin. Palaa sitten alun kysymykseen: Miksi kuumeneva rauta hehkuu ensin punaisena ja sitten keltaisena? Mitä lämpökamera näkee?",
+      "predictions": [
+        "ennuste-huippu",
+        "ennuste-huone"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Keittolevyn hehkuvan vastuksen lämpötila on $900\\,{}^\\circ\\text{C}$. Opiskelija laskee sen säteilyn huipun aallonpituuden\n\n$$\\begin{aligned} \\lambda_\\text{max} &= \\frac{b}{T} \\\\ &= \\frac{2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{900\\,\\text{K}} \\\\ &= 3{,}22\\,\\mu\\text{m} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Lämpötila on celsiusasteina. Kelvineinä se on $1173\\,\\text{K}$, ja silloin huippu on $2{,}47\\,\\mu\\text{m}$.",
+          "correct": true,
+          "feedback": "Oikein. Wienin siirtymälaissa $T$ on absoluuttinen lämpötila: $T = (900 + 273{,}15)\\,\\text{K} = 1173\\,\\text{K}$. Silloin $\\lambda_\\text{max} = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : 1173\\,\\text{K} = 2{,}47\\,\\mu\\text{m}$. Celsiusasteilla tulos olisi sitä väärempi, mitä kylmempi kappale on."
+        },
+        {
+          "text": "Kaava on väärin päin. Oikein on $\\lambda_\\text{max} = b T$, ja silloin huippu on $2{,}61\\,\\text{m}$.",
+          "feedback": "Kaava $\\lambda_\\text{max} = b : T$ on oikein, sillä kuumemman kappaleen huippu on lyhyemmällä aallonpituudella. Tulon $b T$ yksikkö olisi $\\text{m} \\cdot \\text{K}^2$ eikä metri, joten se ei voi olla aallonpituus. Virhe on lämpötilassa: se on celsiusasteina, ja kelvineinä $T = 1173\\,\\text{K}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, sillä lämpötilan muutos on sama celsiusasteina ja kelvineinä.",
+          "feedback": "Lämpötilan muutos on sama molemmissa asteikoissa. Wienin siirtymälaissa on kuitenkin lämpötila itse, ei muutos. Laki vaatii absoluuttisen lämpötilan $T = 1173\\,\\text{K}$, ja silloin $\\lambda_\\text{max} = 2{,}47\\,\\mu\\text{m}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen: hehkulamppu",
+      "prompt": "Vanhanaikaisen hehkulampun volframilanka on noin $2430\\,{}^\\circ\\text{C}$:n lämpötilassa. Oletetaan, että lanka säteilee kuin musta kappale. Millä aallonpituudella sen spektrin huippu on? Vastaa nanometreinä.",
+      "answer": 1072.08,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä laki kertoo spektrin huipun paikan, kun lämpötila tunnetaan? Missä yksikössä lämpötilan on oltava?",
+        "Käytä Wienin siirtymälakia $\\lambda_\\text{max} = b : T$. Siinä $T$ on kelvineinä.",
+        "$T = (2430 + 273{,}15)\\,\\text{K} = 2703{,}15\\,\\text{K}$, joten $\\lambda_\\text{max} = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : 2703{,}15\\,\\text{K}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1192.59,
+          "feedback": "Sijoitit lämpötilan celsiusasteina. Wienin siirtymälaki vaatii absoluuttisen lämpötilan: $T = (2430 + 273{,}15)\\,\\text{K} = 2703\\,\\text{K}$."
+        },
+        {
+          "value": 1.07208,
+          "feedback": "Tulos on oikein mikrometreinä. Muunna se nanometreiksi: $1\\,\\mu\\text{m} = 1000\\,\\text{nm}$."
+        }
+      ],
+      "solution": "**Annettu:** hehkulangan lämpötila $t = 2430\\,{}^\\circ\\text{C}$, Wienin siirtymälain vakio $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Hehkulanka oletetaan mustaksi kappaleeksi.\n\n**Kysytty:** spektrin huipun aallonpituus $\\lambda_\\text{max}$ nanometreinä\n\n**Periaate:** Kuuma volframilanka säteilee likimain kuin musta kappale. Sen spektrin huipun paikka riippuu vain lämpötilasta. Wienin siirtymälaki $\\lambda_\\text{max} T = b$ antaa huipun, kun lämpötila on absoluuttinen eli kelvineinä.\n\n**Kaava:** $\\lambda_\\text{max} T = b$, josta $\\lambda_\\text{max} = \\dfrac{b}{T}$\n\n**Muunnokset:** $T = (2430 + 273{,}15)\\,\\text{K} = 2703{,}15\\,\\text{K}$. Lopuksi $1\\,\\text{m} = 10^{9}\\,\\text{nm}$.\n\n**Sijoitus:** $\\lambda_\\text{max} = \\dfrac{2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{2703{,}15\\,\\text{K}} = 1{,}072 \\cdot 10^{-6}\\,\\text{m} = 1072\\,\\text{nm}$\n\n**Vastaus:** $1{,}07 \\cdot 10^{3}\\,\\text{nm}$, kolme merkitsevää numeroa kuten lämpötilassa $2430\\,{}^\\circ\\text{C}$.\n\n**Järkevyys:** Huippu on punaisen valon rajaa $750\\,\\text{nm}$ pidemmällä aallonpituudella eli infrapuna-alueella. Suurin osa lampun säteilystä on siis infrapunaa. Siksi hehkulamppu lämpenee ja tuottaa valoa huonolla hyötysuhteella. Tulos on Auringon huipun $502\\,\\text{nm}$ ja huoneenlämpöisen kappaleen huipun $9{,}7\\,\\mu\\text{m}$ välissä, kuten lämpötilankin perusteella pitää."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 2 tehtävissä tarvitaan lisäksi yksikkömuunnos tai kaksi vaihetta. Taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite: säteilyn lähde",
+      "prompt": "Missä seuraavista tilanteista elektroni lähettää sähkömagneettista säteilyä?",
+      "choices": [
+        {
+          "text": "Elektroni värähtelee edestakaisin lähettimen antennissa.",
+          "correct": true,
+          "feedback": "Oikein. Värähtelevä elektroni on koko ajan kiihtyvässä liikkeessä, ja kiihtyvä varaus lähettää sähkömagneettista säteilyä. Säteilyn taajuus on sama kuin värähtelyn taajuus."
+        },
+        {
+          "text": "Elektroni liikkuu tyhjiössä tasaisella nopeudella suoraan eteenpäin.",
+          "feedback": "Tasaisella nopeudella suoraan liikkuvan elektronin kentät kulkevat sen mukana, eikä se säteile. Säteilyä syntyy vasta, kun varauksen nopeus tai liikkeen suunta muuttuu. Silloin varaus on kiihtyvässä liikkeessä."
+        },
+        {
+          "text": "Elektroni on levossa varatun metallipallon pinnalla.",
+          "feedback": "Levossa olevan varauksen sähkökenttä ei muutu, joten säteilyä ei synny. Sähkömagneettinen säteily vaatii kiihtyvässä liikkeessä olevan varauksen, kuten antennissa värähtelevän elektronin."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske: laavan lämpötila",
+      "prompt": "Tulivuoresta virtaavan hehkuvan laavan säteilyn spektrin huippu on aallonpituudella $2{,}1\\,\\mu\\text{m}$. Oletetaan, että laava säteilee kuin musta kappale. Kuinka kuumaa laava on? Vastaa celsiusasteina.",
+      "answer": 1106.85,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä laki yhdistää spektrin huipun ja lämpötilan? Missä yksikössä se antaa lämpötilan?",
+        "Wienin siirtymälaista saat $T = b : \\lambda_\\text{max}$ kelvineinä. Celsiusasteet saat vähentämällä siitä $273{,}15\\,\\text{K}$.",
+        "$T = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : (2{,}1 \\cdot 10^{-6}\\,\\text{m}) = 1380\\,\\text{K}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1380.0,
+          "feedback": "Tämä on lämpötila kelvineinä. Celsiusasteet saat vähentämällä siitä $273{,}15\\,\\text{K}$."
+        },
+        {
+          "value": 1653.15,
+          "feedback": "Lisäsit $273{,}15\\,\\text{K}$. Kelvineistä celsiusasteisiin mentäessä se kuitenkin vähennetään: $t = (1380 - 273{,}15)\\,{}^\\circ\\text{C}$."
+        }
+      ],
+      "solution": "**Annettu:** laavan spektrin huipun aallonpituus $\\lambda_\\text{max} = 2{,}1\\,\\mu\\text{m}$, Wienin siirtymälain vakio $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Laava oletetaan mustaksi kappaleeksi.\n\n**Kysytty:** laavan pintalämpötila $t$ celsiusasteina\n\n**Periaate:** Hehkuva laava säteilee likimain kuin musta kappale. Sen spektrin huipun paikka riippuu vain pintalämpötilasta. Wienin siirtymälaki antaa absoluuttisen lämpötilan, ja se muutetaan lopuksi celsiusasteiksi.\n\n**Kaava:** $\\lambda_\\text{max} T = b$, josta $T = \\dfrac{b}{\\lambda_\\text{max}}$, ja $t = T - 273{,}15\\,\\text{K}$ celsiusasteina\n\n**Muunnokset:** $\\lambda_\\text{max} = 2{,}1\\,\\mu\\text{m} = 2{,}1 \\cdot 10^{-6}\\,\\text{m}$. Lopuksi kelvineistä vähennetään $273{,}15\\,\\text{K}$, jolloin saadaan celsiusasteet.\n\n**Sijoitus:** $T = \\dfrac{2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{2{,}1 \\cdot 10^{-6}\\,\\text{m}} = 1380\\,\\text{K}$, joten $t = (1380 - 273{,}15)\\,{}^\\circ\\text{C} = 1106{,}85\\,{}^\\circ\\text{C}$\n\n**Vastaus:** $1{,}1 \\cdot 10^{3}\\,{}^\\circ\\text{C}$, kaksi merkitsevää numeroa kuten aallonpituudessa $2{,}1\\,\\mu\\text{m}$.\n\n**Järkevyys:** Huippu on infrapuna-alueella, mutta silmä näkee spektrin lyhytaaltoisen reunan, ja laava hehkuu oranssina. Lämpötila on samaa suuruusluokkaa kuin sulan kiven, noin tuhat celsiusastetta. Se on myös paljon pienempi kuin Auringon pinnan $5772\\,\\text{K}$, kuten pitää."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: Aurinko ja ihminen",
+      "prompt": "Selitä, miksi Auringon säteilyn spektrin huippu on näkyvän valon alueella mutta ihmisen kehon säteilyn huippu infrapuna-alueella. Selitä myös, miksi lämpökamera näkee ihmisen pimeässä, vaikka silmä ei näe.",
+      "model": "Sekä Aurinko että ihmisen iho säteilevät likimain kuin musta kappale. Sen spektri riippuu vain pintalämpötilasta. Wienin siirtymälain $\\lambda_\\text{max} T = b$ mukaan huipun aallonpituus on kääntäen verrannollinen absoluuttiseen lämpötilaan. Auringon pinta on noin $5800\\,\\text{K}$, joten huippu on noin $500\\,\\text{nm}$:n kohdalla näkyvän valon alueella. Iho on noin $307\\,\\text{K}$ eli noin $19$ kertaa kylmempi. Siksi huippu on noin $19$ kertaa pidemmällä aallonpituudella, noin $9{,}4\\,\\mu\\text{m}$:n kohdalla infrapuna-alueella. Ihminen säteilee siis itse, myös pimeässä. Lähes kaikki säteily on kuitenkin infrapunaa, jota silmä ei havaitse. Lämpökamera mittaa infrapunasäteilyä aallonpituuksilla noin $8$–$14\\,\\mu\\text{m}$, joten se näkee ihmisen ilman valoa.",
+      "criteria": [
+        "Kerron, että spektrin huipun paikka riippuu vain pintalämpötilasta ja kuumemman kappaleen huippu on lyhyemmällä aallonpituudella.",
+        "Käytän Wienin siirtymälakia tai vertaan lämpötiloja kelvineinä: noin $5800\\,\\text{K}$ ja $307\\,\\text{K}$.",
+        "Selitän, että ihminen säteilee itse ja että säteily on lähes kokonaan infrapunaa, jota silmä ei näe.",
+        "Kerron, että lämpökamera havaitsee infrapunasäteilyä ja siksi näkee ihmisen ilman valoa."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sitten."
+    }
+  ]
+}

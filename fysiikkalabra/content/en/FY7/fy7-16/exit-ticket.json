@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A coin is left between the phone and the wireless charger. Why does the coin get hot?",
+    "a": "The changing magnetic field of the transmitter coil of the charger passes through the coin, and the flux through the coin changes all the time. Eddy currents are induced in the coin, and in the resistance of the coin their electrical energy changes into internal energy of the coin. This is why the charger detects a foreign metal object and stops charging."
+  },
+  {
+    "q": "At the end of a fibre the power of the light is a hundredth of the power at the start. What is the attenuation of the fibre in decibels?",
+    "a": "$A = 10\\,\\text{dB} \\cdot \\lg 100 = 20\\,\\text{dB}$. Every $10\\,\\text{dB}$ reduces the power to a tenth, and a tenth of a tenth is a hundredth."
+  }
+]

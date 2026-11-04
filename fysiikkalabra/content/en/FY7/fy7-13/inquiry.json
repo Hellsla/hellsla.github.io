@@ -1,0 +1,474 @@
+{
+  "version": 1,
+  "contribution": "Light is shown to be a wave through interference and diffraction: coherent light, the slit and the double slit qualitatively, and the grating equation $d\\sin\\theta = k\\lambda$ quantitatively. With the simulation the student observes that a denser grating and a longer wavelength increase the angle and that $d\\sin\\theta_1$ is one wavelength; measuring the wavelength of a laser with a grating, with uncertainties, and the CD and DVD as reflection gratings.",
+  "learn": [
+    "explain how the interference and diffraction of light arise in slits and in a grating.",
+    "calculate the directions of the maxima, the grating spacing and the wavelength of light with the grating equation.",
+    "determine the wavelength of a laser from the grating and distances measured on the screen."
+  ],
+  "prior": [
+    "The waves from two sources oscillating in the same phase reinforce each other when the path difference is a whole number of wavelengths (chapter *Interference of waves*)",
+    "Light is electromagnetic wave motion, and the wavelength of visible light is $400$–$700\\,\\text{nm}$ (chapter *Electromagnetic radiation and the black-body spectrum*)",
+    "In a prism violet light is refracted most, because the refractive index of glass is largest for it (chapter *Dispersion: the prism and the rainbow*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In a physics lesson the teacher switches off the lights and aims the beam of a red laser pointer through a slide frame. The frame holds a thin transparent film that looks just like ordinary plastic. Instead of a single spot, a horizontal row of evenly spaced red dots appears on the wall.",
+      "question": "How can one straight ray of light split into many directions, and what decides the positions of the dots?"
+    },
+    {
+      "id": "kertaus-interferenssi",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: interference",
+      "prompt": "Two sources of the same frequency, oscillating in the same phase, emit waves. Point P is $1.5$ wavelengths farther from one source than from the other. What happens at point P?",
+      "choices": [
+        {
+          "text": "The waves reinforce each other, because the path difference is larger than one wavelength.",
+          "feedback": "Constructive interference needs a path difference that is a whole number of wavelengths: $0$, $\\lambda$, $2\\lambda$ and so on. The path difference $1.5\\lambda$ is half a wavelength more, so the waves arrive in opposite phases and weaken each other."
+        },
+        {
+          "text": "Nothing special happens, because interference occurs only when the distances are equal.",
+          "feedback": "Interference occurs everywhere the waves overlap. The path difference decides whether the waves reinforce or weaken each other. With a path difference of $1.5\\lambda$ they weaken each other."
+        },
+        {
+          "text": "The waves weaken each other, because they arrive in opposite phases.",
+          "correct": true,
+          "feedback": "Correct. The path difference $1.5\\lambda$ is half a wavelength more than a whole number, so the crest of one wave meets the trough of the other (chapter *Interference of waves*). Today the same condition explains the bright and dark places of light."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-tiheys",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: a denser grating",
+      "prompt": "The beam of a red laser passes through a grating onto a screen. The grating is replaced by a denser one: there are $600$ lines per millimetre instead of $300$. The screen and the laser stay in place. How do the dots $k = \\pm 1$ next to the central maximum change?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "They stay in place, but there are more of them, because there are more slits.",
+          "feedback": "The values of the model disprove this: the dot moves from $19.9\\,\\text{cm}$ to $42.4\\,\\text{cm}$. The directions of the maxima depend on the spacing $d$ of the slits, not on the number of slits. In fact a denser grating gives fewer maxima: a grating with $600$ lines gives only $k = 0, \\pm 1, \\pm 2$."
+        },
+        {
+          "text": "They move farther from the central maximum.",
+          "correct": true,
+          "feedback": "The values of the model support this: when $L = 1.00\\,\\text{m}$, the dot is $19.9\\,\\text{cm}$ from the central maximum with a $300$-line grating and $42.4\\,\\text{cm}$ with a $600$-line grating. In a denser grating the spacing $d$ of the slits is smaller, so a larger angle is needed to reach the same path difference $\\lambda$."
+        },
+        {
+          "text": "They move closer to the central maximum.",
+          "feedback": "The values of the model disprove this: with a $300$-line grating the dot is $19.9\\,\\text{cm}$ and with a $600$-line grating $42.4\\,\\text{cm}$ from the central maximum. When the spacing $d$ of the slits decreases, the path difference $d\\sin\\theta$ grows more slowly with the angle, so the maximum is at a larger angle."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-vari",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the colour of the light",
+      "prompt": "Light from a blue ($450\\,\\text{nm}$), a green ($532\\,\\text{nm}$) and a red ($650\\,\\text{nm}$) laser is directed in turn at the same grating, which has $600$ lines per millimetre. Which colour has its first-order maximum at the largest angle?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Blue, because blue light is bent the most in a prism, too.",
+          "feedback": "The values of the model disprove this: the maximum of blue is at $15.66^\\circ$ and that of red at $22.95^\\circ$. In a prism blue is refracted most, because the refractive index of glass is largest for it. In a grating the angle is decided by the path difference: a longer wavelength needs a larger path difference and therefore a larger angle."
+        },
+        {
+          "text": "Red, because its wavelength is the longest.",
+          "correct": true,
+          "feedback": "The values of the model support this: the angles are $15.66^\\circ$ ($450\\,\\text{nm}$), $18.61^\\circ$ ($532\\,\\text{nm}$) and $22.95^\\circ$ ($650\\,\\text{nm}$). In a maximum the path difference $d\\sin\\theta$ is one wavelength, so a longer wavelength needs a larger angle. The order is the opposite of that in a prism."
+        },
+        {
+          "text": "All at the same angle, because the grating is the same.",
+          "feedback": "The values of the model disprove this: the angles are $15.66^\\circ$, $18.61^\\circ$ and $22.95^\\circ$. The same grating gives the same spacing $d$ of the slits, but the path difference in a maximum must be exactly one wavelength, so the angle depends on the wavelength."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A laser beam passes through a grating onto a screen. Change the line density of the grating, the wavelength of the light and the distance of the screen, and follow where the dots land.",
+      "howto": "Adjust the line density $N$ of the grating, that is the number of lines per millimetre, the wavelength $\\lambda$ of the laser and the distance $L$ from the grating to the screen. The picture is from above: the laser is on the left, the grating in front of it and the screen on the right. The scale of the screen shows the distance $x$ from the central maximum in centimetres. The arc shows the angle $\\theta_1$ of the first order from the direction of the beam. A faint ray that does not hit the screen is a maximum that goes past the edge of the screen. From the readouts you see the grating spacing $d$, the angles and distances of the first two orders and the number of maxima.",
+      "model": "The laser beam arrives perpendicular to the grating, and the screen is perpendicular to the beam. The light has one wavelength. The picture is to scale: the screen is $1.80\\,\\text{m}$ wide. The model calculates only the directions of the maxima. The dimming of the dots of higher orders is only an illustration, not a calculated value, and the effect of the width of the slits is not shown in the model. The readouts are values calculated by the model, not measurements.",
+      "calc": "The grating spacing is calculated from the line density:\n\n$$d = \\frac{1\\,\\text{mm}}{N}$$\n\nThe maximum of order $k$ is in the direction for which $d\\sin\\theta = k\\lambda$. A maximum forms only when $k\\lambda < d$, so the number of maxima is $2k_\\text{max} + 1$, where $k_\\text{max}$ is the largest whole number that satisfies this condition. On the screen the distance of a maximum from the central maximum is $x = L\\tan\\theta$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: line density of the grating",
+      "intro": "Test prediction 1. The wavelength is $650\\,\\text{nm}$ and the distance of the screen is $1.00\\,\\text{m}$; change only the line density $N$. Record at least the values $300$, $600$ and $1000$. Follow the angle $\\theta_1$ and the distance $x_1$.",
+      "initial": {
+        "N": 300,
+        "lambda": 650,
+        "L": 1.0
+      },
+      "locked": [
+        "lambda",
+        "L"
+      ],
+      "vary": "N",
+      "names": {
+        "N": "line density N",
+        "lambda": "wavelength λ",
+        "L": "screen distance L"
+      },
+      "units": {
+        "N": "lines/mm",
+        "lambda": "nm",
+        "L": "m"
+      },
+      "measure": [
+        {
+          "key": "theta1",
+          "label": "θ_1 (°)"
+        },
+        {
+          "key": "x1",
+          "label": "x_1 (cm)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "From the readings of the row $N = 600$, calculate the path difference $\\Delta s = d\\sin\\theta_1$ of adjacent slits, when the grating spacing is $d = 1\\,\\text{mm} : 600$. Answer in nanometres and compare the result with the wavelength of the laser.",
+        "answer": 650,
+        "unit": "nm",
+        "tolerance": 0.02,
+        "hints": [
+          "The grating spacing is $d = 1\\,\\text{mm} : 600$. How much is that in nanometres?",
+          "$1\\,\\text{mm} = 1\\,000\\,000\\,\\text{nm}$, so $d = 1\\,000\\,000\\,\\text{nm} : 600 = 1667\\,\\text{nm}$.",
+          "Multiply the grating spacing by the sine of the angle in the table: $1667\\,\\text{nm} \\cdot \\sin 22.95^\\circ$."
+        ],
+        "mistakes": [
+          {
+            "value": 705.9,
+            "feedback": "You used the tangent. The path difference comes from the right-angled triangle between the slits, where $d$ is the hypotenuse, so $\\Delta s = d\\sin\\theta_1$."
+          }
+        ],
+        "solution": "**Given:** line density $N = 600$ lines per millimetre, reading of the simulation $\\theta_1 = 22.95^\\circ$, wavelength of the laser $\\lambda = 650\\,\\text{nm}$\n\n**Find:** the path difference $\\Delta s$ of adjacent slits in the direction of the first-order maximum, in nanometres\n\n**Principle:** When light arrives perpendicular to the grating, the path difference of rays leaving adjacent slits at angle $\\theta$ is $d\\sin\\theta$. In the first-order maximum the waves should arrive in the same phase, so the path difference should be one wavelength.\n\n**Formula:** $d = \\dfrac{1\\,\\text{mm}}{N}$ and $\\Delta s = d\\sin\\theta_1$\n\n**Conversions:** $1\\,\\text{mm} = 1\\,000\\,000\\,\\text{nm}$, so $d = 1\\,000\\,000\\,\\text{nm} : 600 = 1666.7\\,\\text{nm}$.\n\n**Substitution:** $\\Delta s = 1666.7\\,\\text{nm} \\cdot \\sin 22.95^\\circ = 1666.7\\,\\text{nm} \\cdot 0.3900 = 650\\,\\text{nm}$\n\n**Answer:** $650\\,\\text{nm}$, three significant figures like the wavelength; the path difference is exactly the wavelength of the laser.\n\n**Reasonableness:** The other rows give the same: $3333\\,\\text{nm} \\cdot \\sin 11.24^\\circ = 650\\,\\text{nm}$ and $1000\\,\\text{nm} \\cdot \\sin 40.54^\\circ = 650\\,\\text{nm}$. In a denser grating $d$ is smaller, so $\\sin\\theta_1$ must be larger for the product to stay equal to the wavelength."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: wavelength",
+      "intro": "Test prediction 2. The grating has $600$ lines per millimetre and the distance of the screen is $1.00\\,\\text{m}$; change only the wavelength $\\lambda$. Record at least blue $450\\,\\text{nm}$, green $532\\,\\text{nm}$ and red $650\\,\\text{nm}$.",
+      "initial": {
+        "N": 600,
+        "lambda": 450,
+        "L": 1.0
+      },
+      "locked": [
+        "N",
+        "L"
+      ],
+      "vary": "lambda",
+      "names": {
+        "N": "line density N",
+        "lambda": "wavelength λ",
+        "L": "screen distance L"
+      },
+      "units": {
+        "N": "lines/mm",
+        "lambda": "nm",
+        "L": "m"
+      },
+      "measure": [
+        {
+          "key": "theta1",
+          "label": "θ_1 (°)"
+        },
+        {
+          "key": "x1",
+          "label": "x_1 (cm)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Use the grating equation to calculate the angle at which the first-order maximum of green light ($532\\,\\text{nm}$) lies when the grating has $600$ lines per millimetre. Compare the result with the reading of the simulation.",
+        "answer": 18.6146,
+        "unit": "°",
+        "tolerance": 0.02,
+        "hints": [
+          "First calculate the grating spacing $d = 1\\,\\text{mm} : 600$ in metres.",
+          "From the grating equation $\\sin\\theta_1 = \\lambda : d$, when $k = 1$.",
+          "$\\sin\\theta_1 = 532 \\cdot 10^{-9}\\,\\text{m} : (1.667 \\cdot 10^{-6}\\,\\text{m}) = 0.3192$. Take the inverse sine of the result."
+        ],
+        "mistakes": [
+          {
+            "value": 17.7031,
+            "feedback": "You used the inverse tangent. The grating equation contains the sine of the angle: $\\sin\\theta_1 = \\lambda : d$."
+          },
+          {
+            "value": 0.3192,
+            "feedback": "This is the sine of the angle. Calculate the angle with the inverse sine: $\\theta_1 = \\sin^{-1} 0.3192$."
+          }
+        ],
+        "solution": "**Given:** line density $N = 600$ lines per millimetre, wavelength $\\lambda = 532\\,\\text{nm}$, order $k = 1$\n\n**Find:** the angle $\\theta_1$ of the first-order maximum from the direction of the central maximum, in degrees\n\n**Principle:** Light arrives perpendicular to the grating, so a maximum lies in a direction where the path difference $d\\sin\\theta$ of adjacent slits is a whole number of wavelengths. In the first order the path difference is one wavelength.\n\n**Formula:** $d = \\dfrac{1\\,\\text{mm}}{N}$ and $d\\sin\\theta_1 = k\\lambda$, so $\\theta_1 = \\sin^{-1}\\dfrac{k\\lambda}{d}$\n\n**Conversions:** $d = 1 \\cdot 10^{-3}\\,\\text{m} : 600 = 1.667 \\cdot 10^{-6}\\,\\text{m}$ and $532\\,\\text{nm} = 532 \\cdot 10^{-9}\\,\\text{m}$.\n\n**Substitution:** $\\theta_1 = \\sin^{-1}\\dfrac{1 \\cdot 532 \\cdot 10^{-9}\\,\\text{m}}{1.667 \\cdot 10^{-6}\\,\\text{m}} = \\sin^{-1} 0.3192 = 18.61^\\circ$\n\n**Answer:** $18.6^\\circ$, three significant figures like the wavelength $532\\,\\text{nm}$; the same as the reading of the simulation, $18.61^\\circ$.\n\n**Reasonableness:** The wavelength of green lies between that of blue, $450\\,\\text{nm}$, and that of red, $650\\,\\text{nm}$, and so does the angle: $15.66^\\circ < 18.61^\\circ < 22.95^\\circ$. Check: $1.667\\,\\mu\\text{m} \\cdot \\sin 18.61^\\circ = 0.532\\,\\mu\\text{m}$."
+      }
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Extra experiment: distance of the screen",
+      "intro": "The grating has $300$ lines per millimetre and the wavelength is $650\\,\\text{nm}$; change only the distance $L$ of the screen. Record at least the values $0.50\\,\\text{m}$, $1.00\\,\\text{m}$ and $2.00\\,\\text{m}$. Does the angle $\\theta_1$ change, and how does the distance $x_1$ change?",
+      "initial": {
+        "N": 300,
+        "lambda": 650,
+        "L": 0.5
+      },
+      "locked": [
+        "N",
+        "lambda"
+      ],
+      "vary": "L",
+      "names": {
+        "N": "line density N",
+        "lambda": "wavelength λ",
+        "L": "screen distance L"
+      },
+      "units": {
+        "N": "lines/mm",
+        "lambda": "nm",
+        "L": "m"
+      },
+      "measure": [
+        {
+          "key": "theta1",
+          "label": "θ_1 (°)"
+        },
+        {
+          "key": "x1",
+          "label": "x_1 (cm)"
+        },
+        {
+          "key": "x2",
+          "label": "x_2 (cm)"
+        }
+      ],
+      "min": 3,
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what decides the directions of the maxima",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "On the basis of your tables, write: how do the line density of the grating and the wavelength of the light affect the angle of the first-order maximum? Which quantity stayed the same in experiment 1 even though the grating changed?",
+      "model": "In experiment 1 a denser grating increased the angle: with a $300$-line grating $\\theta_1 = 11.24^\\circ$ and $x_1 = 19.9\\,\\text{cm}$, with a $600$-line grating $22.95^\\circ$ and $42.4\\,\\text{cm}$ and with a $1000$-line grating $40.54^\\circ$ and $85.5\\,\\text{cm}$. The product $d\\sin\\theta_1$ was $650\\,\\text{nm}$ in every row, that is the wavelength of the laser: in a maximum the path difference of adjacent slits is one wavelength. In experiment 2 a longer wavelength increased the angle: blue $450\\,\\text{nm}$ $15.66^\\circ$, green $532\\,\\text{nm}$ $18.61^\\circ$ and red $650\\,\\text{nm}$ $22.95^\\circ$. So in a grating red light is deviated most, unlike in a prism. The results fit the condition $d\\sin\\theta = k\\lambda$. The values are calculated by the model.",
+      "criteria": [
+        "I said that a denser grating, that is a smaller grating spacing, increases the angle of the maximum, and I used values from the table.",
+        "I said that a longer wavelength increases the angle, so red is deviated more than blue.",
+        "I noted that the product $d\\sin\\theta_1$ equals the wavelength, that is the path difference is one wavelength."
+      ]
+    },
+    {
+      "id": "mittaus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Measurement: wavelength of a green laser",
+      "source": "example",
+      "text": "Students measured the wavelength of a green laser pointer with a grating. The laser, the grating and the screen were set in a line so that the beam hit both the grating and the screen perpendicularly. The distance from the grating to the screen and the separations of the symmetric maxima were measured with a tape measure. Estimating the centre of a dot was the most uncertain part, so the measurement uncertainty of a separation was estimated as $0.3\\,\\text{cm}$. The uncertainty of the distance $x$ measured from the central maximum is then half of that, $\\Delta x = 0.15\\,\\text{cm}$.\n\n| quantity | value | measurement uncertainty |\n|---|---|---|\n| line density $N$ of the grating | $300$ lines per millimetre | (value from the manufacturer) |\n| distance $L$ from the grating to the screen | $1.500\\,\\text{m}$ | $\\Delta L = 0.005\\,\\text{m}$ |\n| separation of maxima $+1$ and $-1$ | $48.4\\,\\text{cm}$ | $0.3\\,\\text{cm}$ |\n| separation of maxima $+2$ and $-2$ | $101.2\\,\\text{cm}$ | $0.3\\,\\text{cm}$ |",
+      "question": {
+        "type": "numeric",
+        "prompt": "Calculate the wavelength of the laser from the second-order maxima. Answer in nanometres. At the end of the solution, estimate how large the uncertainty of the result is.",
+        "answer": 532.728,
+        "unit": "nm",
+        "tolerance": 0.02,
+        "hints": [
+          "The separation of maxima $+2$ and $-2$ is twice the distance $x_2$ of the second-order maximum from the central maximum.",
+          "First calculate the angle from the equation $\\tan\\theta_2 = x_2 : L$ and then the wavelength from the grating equation with $k = 2$.",
+          "$\\theta_2 = \\tan^{-1}(0.506\\,\\text{m} : 1.500\\,\\text{m}) = 18.64^\\circ$ and $d = 1 \\cdot 10^{-3}\\,\\text{m} : 300$."
+        ],
+        "mistakes": [
+          {
+            "value": 1065.46,
+            "feedback": "You forgot the order. In a second-order maximum the path difference is two wavelengths, so $\\lambda = d\\sin\\theta_2 : 2$."
+          },
+          {
+            "value": 932.14,
+            "feedback": "You used the separation of the maxima, $101.2\\,\\text{cm}$, as the distance $x_2$. The distance is measured from the central maximum, so $x_2$ is half of the separation."
+          },
+          {
+            "value": 562.22,
+            "feedback": "You used the ratio $x_2 : L$ in place of the sine, but it is the tangent of the angle. At $18.6^\\circ$ the tangent is already clearly larger than the sine, so first calculate the angle and only then its sine."
+          }
+        ],
+        "solution": "**Given:** line density $N = 300$ lines per millimetre, distance from the grating to the screen $L = 1.500\\,\\text{m}$ ($\\Delta L = 0.005\\,\\text{m}$), separation of the maxima $\\pm 2$ $101.2\\,\\text{cm}$, order $k = 2$, $\\Delta x = 0.15\\,\\text{cm}$\n\n**Find:** the wavelength $\\lambda$ of the laser light in nanometres and its uncertainty\n\n**Principle:** The beam arrives perpendicular to the grating, so the maxima obey the grating equation. The screen is perpendicular to the beam, so the angle comes from the right-angled triangle whose legs are $x_2$ and $L$. The farther maximum gives a smaller relative uncertainty, because its $x$ is larger.\n\n**Formula:** $\\tan\\theta_2 = \\dfrac{x_2}{L}$ and $d\\sin\\theta_2 = k\\lambda$, so $\\lambda = \\dfrac{d\\sin\\theta_2}{k}$, where $d = \\dfrac{1\\,\\text{mm}}{N}$\n\n**Conversions:** $d = 1 \\cdot 10^{-3}\\,\\text{m} : 300 = 3.333 \\cdot 10^{-6}\\,\\text{m}$ and $x_2 = 101.2\\,\\text{cm} : 2 = 50.6\\,\\text{cm} = 50.6 \\cdot 0.01\\,\\text{m} = 0.506\\,\\text{m}$.\n\n**Substitution:** $\\theta_2 = \\tan^{-1}\\dfrac{0.506\\,\\text{m}}{1.500\\,\\text{m}} = 18.64^\\circ$, so $\\lambda = \\dfrac{3.333 \\cdot 10^{-6}\\,\\text{m} \\cdot \\sin 18.64^\\circ}{2} = 5.327 \\cdot 10^{-7}\\,\\text{m} = 533\\,\\text{nm}$. Uncertainty: the largest value is obtained when $x_2 = 50.75\\,\\text{cm}$ and $L = 1.495\\,\\text{m}$, and it is $536\\,\\text{nm}$; the smallest value, when $x_2 = 50.45\\,\\text{cm}$ and $L = 1.505\\,\\text{m}$, is $530\\,\\text{nm}$.\n\n**Answer:** $533\\,\\text{nm}$, uncertainty about $3\\,\\text{nm}$; three significant figures, because the uncertainty is of the order of a few nanometres.\n\n**Reasonableness:** The stated wavelength of a green laser pointer, $532\\,\\text{nm}$, lies between $530$ and $536\\,\\text{nm}$. From the first-order maxima ($x_1 = 24.2\\,\\text{cm}$) the same method gives $531\\,\\text{nm}$ and the interval $526$–$536\\,\\text{nm}$, that is an uncertainty of about $5\\,\\text{nm}$: the farther maximum really does give a more accurate result."
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the theory and the values of the model in the experiments. Then return to the question at the start: why did the laser beam that passed through a transparent film draw a row of dots on the wall, and what decided the spacing of the dots?",
+      "predictions": [
+        "ennuste-tiheys",
+        "ennuste-vari"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student calculates the angle of the first-order maximum of a red laser ($650\\,\\text{nm}$) for a grating with $600$ lines per millimetre: \"$d = 1\\,\\text{mm} : 600 = 1.67 \\cdot 10^{-3}\\,\\text{m}$, so $\\sin\\theta = 650 \\cdot 10^{-9}\\,\\text{m} : (1.67 \\cdot 10^{-3}\\,\\text{m}) = 3.9 \\cdot 10^{-4}$ and $\\theta = 0.022^\\circ$. So the maxima almost overlap.\" Where is the error?",
+      "choices": [
+        {
+          "text": "The angle must be calculated from the tangent, because the position of the maximum is measured on the screen.",
+          "feedback": "The grating equation contains the sine of the angle, $d\\sin\\theta = k\\lambda$; the tangent is needed only when the angle is calculated from distances on the screen. The error is in the grating spacing: $1\\,\\text{mm} : 600 = 1.667 \\cdot 10^{-6}\\,\\text{m}$, so $\\theta = 22.95^\\circ$."
+        },
+        {
+          "text": "The grating spacing must be calculated by multiplying: $d = 600 \\cdot 1\\,\\text{mm}$.",
+          "feedback": "The grating spacing is the distance between adjacent lines. When $600$ lines fit into a millimetre, the spacing is a six-hundredth of a millimetre. The error is in the conversion: $1\\,\\text{mm} : 600 = 1.667 \\cdot 10^{-6}\\,\\text{m}$."
+        },
+        {
+          "text": "The grating spacing is wrong: $1\\,\\text{mm} : 600$ is $1.67 \\cdot 10^{-6}\\,\\text{m}$, not $1.67 \\cdot 10^{-3}\\,\\text{m}$.",
+          "correct": true,
+          "feedback": "Correct. $1\\,\\text{mm} = 1 \\cdot 10^{-3}\\,\\text{m}$, so $d = 1 \\cdot 10^{-3}\\,\\text{m} : 600 = 1.667 \\cdot 10^{-6}\\,\\text{m}$. Then $\\sin\\theta = 0.390$ and $\\theta = 22.95^\\circ$, which fits a school grating. An angle of $0.022^\\circ$ would be too small to be seen."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: a DVD as a reflection grating",
+      "prompt": "The distance between adjacent turns of the data track of a DVD is $0.74\\,\\mu\\text{m}$ (standard ECMA-267, 2001). The beam of a red laser with a wavelength of $650\\,\\text{nm}$ hits the surface of the disc perpendicularly. Assume that the disc acts as a reflection grating whose grating spacing is the distance between the tracks. At what angle to the incident beam is the first-order maximum reflected?",
+      "answer": 61.4474,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "In a reflection grating the directions of the maxima obey the same grating equation as in a transmission grating. What is the grating spacing?",
+        "The grating spacing is $d = 0.74\\,\\mu\\text{m}$, and in the first order $\\sin\\theta = \\lambda : d$.",
+        "$\\sin\\theta = 650 \\cdot 10^{-9}\\,\\text{m} : (0.74 \\cdot 10^{-6}\\,\\text{m}) = 0.878$. Take the inverse sine of the result."
+      ],
+      "mistakes": [
+        {
+          "value": 23.9695,
+          "feedback": "You used the track spacing of a CD, $1.6\\,\\mu\\text{m}$. The tracks of a DVD are closer together, $0.74\\,\\mu\\text{m}$ apart, so the angle is much larger."
+        },
+        {
+          "value": 41.2954,
+          "feedback": "You used the inverse tangent. The grating equation contains the sine of the angle: $\\sin\\theta = \\lambda : d$."
+        }
+      ],
+      "solution": "**Given:** distance between tracks $d = 0.74\\,\\mu\\text{m}$ (ECMA-267, 2001), wavelength $\\lambda = 650\\,\\text{nm}$, order $k = 1$, light perpendicular to the disc\n\n**Find:** the angle $\\theta$ of the first-order maximum to the incident beam, in degrees\n\n**Principle:** Waves reflected from evenly spaced tracks interfere in the same way as waves from the slits of a grating. When light arrives perpendicularly, the path difference of waves reflected at angle $\\theta$ from adjacent tracks is $d\\sin\\theta$, and a maximum forms when it is a whole number of wavelengths.\n\n**Formula:** $d\\sin\\theta = k\\lambda$, so $\\theta = \\sin^{-1}\\dfrac{k\\lambda}{d}$\n\n**Conversions:** $650\\,\\text{nm} = 650 \\cdot 10^{-9}\\,\\text{m}$ and $0.74\\,\\mu\\text{m} = 0.74 \\cdot 10^{-6}\\,\\text{m}$.\n\n**Substitution:** $\\theta = \\sin^{-1}\\dfrac{1 \\cdot 650 \\cdot 10^{-9}\\,\\text{m}}{0.74 \\cdot 10^{-6}\\,\\text{m}} = \\sin^{-1} 0.8784 = 61.45^\\circ$\n\n**Answer:** $61^\\circ$, two significant figures like the track spacing $0.74\\,\\mu\\text{m}$.\n\n**Reasonableness:** The wavelength is almost as large as the track spacing, so the angle must be large. For a CD ($1.6\\,\\mu\\text{m}$) the same maximum would be at an angle of only $24^\\circ$. A second order from a DVD does not form, because $\\sin\\theta = 2 \\cdot 0.650 : 0.74 = 1.76 > 1$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. The tasks of level 1 use one formula, the tasks of level 2 combine the grating equation and the distances measured on the screen, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: a narrow slit",
+      "prompt": "A laser beam passes through an adjustable slit onto a screen. The slit is already so narrow that the light clearly spreads out behind it. The slit is narrowed further. How does the bright central region on the screen change?",
+      "choices": [
+        {
+          "text": "It stays equally wide but becomes dimmer, because less light gets through.",
+          "feedback": "The pattern does become dimmer, but its width changes too: in a narrower slit diffraction is stronger, so the light spreads wider and the central region widens."
+        },
+        {
+          "text": "It widens, because diffraction is stronger in a narrower slit.",
+          "correct": true,
+          "feedback": "Correct. When the width of the slit is of the order of the wavelength, the narrower the slit, the wider the light spreads behind it. So the central region widens, even though less light gets into the slit and the pattern becomes dimmer."
+        },
+        {
+          "text": "It narrows, because a narrower slit lets through a narrower beam of light.",
+          "feedback": "That would happen if light always travelled straight, as it does through a wide opening. When the slit is of the order of the wavelength, diffraction spreads the light the more, the narrower the slit is, so the central region widens."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: sodium light in a grating",
+      "prompt": "The wavelength of the yellow light of a sodium lamp is $589\\,\\text{nm}$. The light hits perpendicularly a grating that has $500$ lines per millimetre. At what angle from the direction of the central maximum is the second-order maximum? Answer in degrees.",
+      "answer": 36.0861,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate the grating spacing $d = 1\\,\\text{mm} : 500$ in metres.",
+        "From the grating equation $\\sin\\theta = k\\lambda : d$, where $k = 2$.",
+        "$\\sin\\theta = 2 \\cdot 589 \\cdot 10^{-9}\\,\\text{m} : (2.00 \\cdot 10^{-6}\\,\\text{m}) = 0.589$. Take the inverse sine of the result."
+      ],
+      "mistakes": [
+        {
+          "value": 17.1276,
+          "feedback": "This is the angle of the first-order maximum. In the second order the path difference is two wavelengths: $\\sin\\theta = 2\\lambda : d$."
+        },
+        {
+          "value": 0.589,
+          "feedback": "This is the sine of the angle. Calculate the angle with the inverse sine: $\\theta = \\sin^{-1} 0.589$."
+        }
+      ],
+      "solution": "**Given:** wavelength $\\lambda = 589\\,\\text{nm}$, line density $N = 500$ lines per millimetre, order $k = 2$\n\n**Find:** the angle $\\theta$ of the second-order maximum from the direction of the central maximum, in degrees\n\n**Principle:** Light arrives perpendicular to the grating, so the maxima lie in directions where the path difference $d\\sin\\theta$ of adjacent slits is a whole number of wavelengths. In the second-order maximum the path difference is two wavelengths.\n\n**Formula:** $d = \\dfrac{1\\,\\text{mm}}{N}$ and $d\\sin\\theta = k\\lambda$, so $\\theta = \\sin^{-1}\\dfrac{k\\lambda}{d}$\n\n**Conversions:** $d = 1 \\cdot 10^{-3}\\,\\text{m} : 500 = 2.00 \\cdot 10^{-6}\\,\\text{m}$ and $589\\,\\text{nm} = 589 \\cdot 10^{-9}\\,\\text{m}$.\n\n**Substitution:** $\\theta = \\sin^{-1}\\dfrac{2 \\cdot 589 \\cdot 10^{-9}\\,\\text{m}}{2.00 \\cdot 10^{-6}\\,\\text{m}} = \\sin^{-1} 0.589 = 36.09^\\circ$\n\n**Answer:** $36.1^\\circ$, three significant figures like the wavelength $589\\,\\text{nm}$.\n\n**Reasonableness:** The first-order maximum is at an angle of $17.13^\\circ$. The angle of the second order is larger but not double, because it is the sine of the angle that doubles, not the angle. Check: $2.00\\,\\mu\\text{m} \\cdot \\sin 36.09^\\circ = 1.178\\,\\mu\\text{m} = 2 \\cdot 0.589\\,\\mu\\text{m}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: the colours of a CD",
+      "prompt": "Explain why rainbow colours are seen on the surface of a CD in white light and why the colours change when the disc is tilted.",
+      "model": "The data track of a CD winds on the surface as an evenly spaced spiral, and the distance between adjacent turns is $1.6\\,\\mu\\text{m}$. The disc acts as a reflection grating: waves reflected from the evenly spaced tracks interfere, and a wave is reinforced in the direction in which the path difference of waves reflected from adjacent tracks is a whole number of wavelengths. White light contains all the wavelengths of visible light, and each is reinforced in its own direction: a longer wavelength, that is red, at a larger angle than blue. So different colours reach the eye from different places and different angles. When the disc is tilted, the direction of the eye relative to the disc changes, and the maximum of another wavelength reaches the eye.",
+      "criteria": [
+        "I say that the evenly spaced tracks of a CD act as a reflection grating.",
+        "I explain that waves reflected from the tracks interfere and are reinforced when the path difference is a whole number of wavelengths.",
+        "I explain that different wavelengths are reinforced in different directions, so the viewing angle decides the colour that is seen."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and only then open the answer."
+    }
+  ]
+}

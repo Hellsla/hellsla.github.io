@@ -1,0 +1,460 @@
+{
+  "version": 1,
+  "contribution": "Sähkövirta synnyttää magneettikentän: suoran johtimen kenttä kiertää johdinta ($B = \\mu_0 I : (2\\pi r)$, oikean käden sääntö), pitkän käämin kenttä on sisällä lähes homogeeninen ($B = \\mu_0 \\tfrac{N I}{l}$) ja rautasydän tekee käämistä sähkömagneetin; LOPS-mittaus käämin kentästä virran funktiona antaa $\\mu_0$:n epävarmuuksineen.",
+  "learn": [
+    "päättelemään oikean käden säännöllä suoran johtimen ja käämin magneettikentän suunnan.",
+    "laskemaan suoran johtimen ja pitkän käämin magneettivuon tiheyden.",
+    "määrittämään mittaustuloksista sovitetun suoran avulla tyhjiön permeabiliteetin ja sen epävarmuuden."
+  ],
+  "prior": [
+    "Magneettikentän suunta on kompassin pohjoispään suunta, ja sauvamagneetin ulkopuolella kenttäviivat kulkevat pohjoisnavalta etelänavalle (luku *Magneetit, magneettinen dipoli ja magneettikenttä*)",
+    "Magneettivuon tiheyden $B$ yksikkö on tesla, ja Maan magneettikenttä on Suomessa noin $50\\,\\mu\\text{T}$ (luku *Magneetit, magneettinen dipoli ja magneettikenttä*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Pöydällä on kompassi, ja sen yläpuolella kulkee pohjois–eteläsuuntainen kuparijohdin. Kun johtimeen kytketään virta $3\\,\\text{A}$, neula kääntyy lähes poikittain johtimeen nähden, kun johdin on aivan neulan yläpuolella. Kun virran suunta vaihdetaan, neula kääntyy toiseen suuntaan, ja kun virta katkaistaan, neula palaa osoittamaan pohjoiseen. Kupari ei ole magneettista ainetta: kuparinaula ei tartu magneettiin.",
+      "question": "Mistä kompassia kääntävä magneettikenttä tulee, ja miten saman ilmiön voi tehdä niin voimakkaaksi, että se nostaa autonromun?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: kompassi magneettikentässä",
+      "optional": true,
+      "prompt": "Kompassi asetetaan sauvamagneetin viereen. Mihin suuntaan kompassin neulan pohjoispää kääntyy?",
+      "choices": [
+        {
+          "text": "Kenttäviivan suuntaan eli siihen suuntaan, johon magneettikenttä osoittaa kompassin kohdalla.",
+          "correct": true,
+          "feedback": "Oikein. Kompassi on pieni magneetti, joka kääntyy kentän suuntaiseksi; siksi sillä voi tutkia kentän suuntaa (luku *Magneetit, magneettinen dipoli ja magneettikenttä*). Tällä tunnilla kompassi paljastaa myös virtajohtimen kentän."
+        },
+        {
+          "text": "Aina kohti magneetin pohjoisnapaa, koska samannimiset navat vetävät toisiaan puoleensa.",
+          "feedback": "Samannimiset navat hylkivät toisiaan. Neulan pohjoispää kääntyy kenttäviivan suuntaan, ja magneetin ulkopuolella kenttäviivat kulkevat pohjoisnavalta etelänavalle."
+        },
+        {
+          "text": "Aina maantieteelliseen pohjoiseen, koska Maan kenttä on magneetin kenttää voimakkaampi.",
+          "feedback": "Magneetin lähellä sen kenttä on yleensä paljon Maan kenttää (noin $50\\,\\mu\\text{T}$) voimakkaampi, joten neula kääntyy magneetin kenttäviivan suuntaan."
+        },
+        {
+          "text": "Kohtisuoraan kenttäviivoja vastaan, koska magneettinen voima on aina kohtisuorassa kenttää vastaan.",
+          "feedback": "Kohtisuoruus koskee liikkuvaan varaukseen kohdistuvaa voimaa (luku *Varattu hiukkanen sähkö- ja magneettikentässä*). Kompassin neula on magneettinen dipoli, ja se kääntyy kentän suuntaiseksi."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: venytetty käämi",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "Käämissä on $200$ kierrosta, sen pituus on $20\\,\\text{cm}$ ja siinä kulkee virta $2{,}0\\,\\text{A}$. Käämi venytetään $40\\,\\text{cm}$:n pituiseksi niin, että kierrokset jakautuvat tasaisesti koko matkalle. Virta ja kierrosten määrä pysyvät samoina. Miten magneettivuon tiheys käämin keskellä muuttuu?",
+      "choices": [
+        {
+          "text": "Se pysyy samana, koska kierroksia ja virtaa on yhtä paljon kuin ennen.",
+          "feedback": "Mallin arvot kumoavat tämän: käämin keskellä $B$ pienenee arvosta $2{,}46\\,\\text{mT}$ arvoon $1{,}25\\,\\text{mT}$. Kenttä ei riipu kierrosten kokonaismäärästä vaan siitä, kuinka tiheässä ne ovat: venytetyssä käämissä kierroksia on metrillä puolet vähemmän."
+        },
+        {
+          "text": "Se noin puolittuu, koska kierrokset ovat nyt kaksi kertaa harvemmassa.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: $B$ pienenee arvosta $2{,}46\\,\\text{mT}$ arvoon $1{,}25\\,\\text{mT}$, ja kierrostiheys $n$ puolittuu arvosta $1000\\,\\tfrac{1}{\\text{m}}$ arvoon $500\\,\\tfrac{1}{\\text{m}}$. Kentän keskellä tuottavat lähinnä lähimmät kierrokset, ja niitä on nyt harvemmassa."
+        },
+        {
+          "text": "Se kasvaa, koska pidempi käämi on suurempi magneetti ja sen kenttä on laajempi.",
+          "feedback": "Mallin arvot kumoavat tämän: keskellä $B$ pienenee arvosta $2{,}46\\,\\text{mT}$ arvoon $1{,}25\\,\\text{mT}$. Pidemmän käämin kenttä ulottuu pidemmälle, mutta se on heikompi, koska samat kierrokset jakautuvat pidemmälle matkalle."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: käämin pää",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "Saman $20\\,\\text{cm}$:n käämin akselille asetetaan magneettikenttäanturi. Anturi siirretään käämin keskeltä käämin pään kohdalle, aukon keskelle. Kuinka suuri magneettivuon tiheys on käämin päässä keskikohtaan verrattuna?",
+      "choices": [
+        {
+          "text": "Yhtä suuri, koska käämin sisällä kenttä on homogeeninen aivan päihin asti.",
+          "feedback": "Mallin arvot kumoavat tämän: keskellä $B = 2{,}46\\,\\text{mT}$, päässä vain $1{,}25\\,\\text{mT}$. Kenttä on lähes homogeeninen keskiosassa, mutta päässä toisella puolella ei ole enää kierroksia, ja kenttäviivat levenevät."
+        },
+        {
+          "text": "Noin puolet keskikohdan arvosta, koska kierroksia on enää vain toisella puolella.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: keskellä $B = 2{,}46\\,\\text{mT}$ ja päässä $1{,}25\\,\\text{mT}$, noin puolet. Keskellä kierroksia on kummallakin puolella, päässä vain toisella."
+        },
+        {
+          "text": "Lähes nolla, koska käämin pää on jo käämin ulkopuolella.",
+          "feedback": "Mallin arvot kumoavat tämän: päässä $B = 1{,}25\\,\\text{mT}$, noin puolet keskikohdan arvosta $2{,}46\\,\\text{mT}$. Kenttä heikkenee nopeasti vasta käämin ulkopuolella: $2\\,\\text{cm}$ pään ulkopuolella se on enää noin $0{,}36\\,\\text{mT}$."
+        },
+        {
+          "text": "Suurempi kuin keskellä, koska napojen kohdalla kenttäviivat ovat tiheimmillään.",
+          "feedback": "Mallin arvot kumoavat tämän: päässä $B = 1{,}25\\,\\text{mT}$ on pienempi kuin keskellä $2{,}46\\,\\text{mT}$. Käämin päässä kenttäviivat eivät tihene vaan levenevät, kun ne kääntyvät ulkopuolelle."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Käämin akselilla liikkuu magneettikenttäanturi. Muuta virtaa, kierroksia, käämin pituutta ja anturin paikkaa ja seuraa, miten magneettivuon tiheys muuttuu.",
+      "howto": "Säädä virta $I$, kierrosten lukumäärä $N$, käämin pituus $l$ ja anturin paikka $x$ käämin keskeltä mitattuna. Anturin lukema näkyy anturin yläpuolella ja lukemissa. Alempi kuvaaja näyttää magneettivuon tiheyden $B$ koko akselilla; vaalea alue on käämin kohta, ja rengastettu piste on anturin paikka. Virran suunnan valinta kääntää kentän ja vaihtaa napojen paikat. Nopeus muuttaa vain virtamerkkien liikkeen tahtia.",
+      "model": "Käämin säde on $2{,}0\\,\\text{cm}$, ja kierrokset ovat tasavälein koko pituudella. Malli laskee kentän vain käämin akselilla laskemalla yhteen kaikkien kierrosten kentät. Käämissä ei ole rautasydäntä, eikä Maan magneettikenttää ole otettu mukaan. Kenttäviivat on piirretty kaavamaisesti, ja yksi piirretty kierros vastaa kahtakymmentä todellista. Lukemat ovat mallin arvoja, eivät mittauksia.",
+      "calc": "Käämin keskellä ja sen akselilla etäisyydellä $x$ keskeltä malli laskee\n\n$$\\begin{aligned} &B = \\frac{\\mu_0\\, N I}{2 l}\\,(k_1 - k_2) \\\\ &k_1 = \\frac{x + \\tfrac{l}{2}}{\\sqrt{(x + \\tfrac{l}{2})^2 + R^2}} \\\\ &k_2 = \\frac{x - \\tfrac{l}{2}}{\\sqrt{(x - \\tfrac{l}{2})^2 + R^2}} \\end{aligned}$$\n\nmissä $R = 2{,}0\\,\\text{cm}$ on käämin säde ja $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$. Kun käämi on paljon pidempi kuin sen säde, keskikohdan arvo on lähes $B = \\mu_0 \\tfrac{N I}{l}$: esimerkiksi oletusarvoilla $1{,}23\\,\\text{mT}$, kun pitkän käämin kaava antaa $1{,}26\\,\\text{mT}$. Kierrostiheys on $n = N : l$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vain käämin pituus muuttuu",
+      "intro": "Testaa ennuste 1. Virta, kierrosten määrä ja anturin paikka käämin keskellä pysyvät vakioina; muuta vain käämin pituutta. Kirjaa magneettivuon tiheys ainakin pituuksilla $20\\,\\text{cm}$ ja $40\\,\\text{cm}$, halutessasi myös $10\\,\\text{cm}$ ja $30\\,\\text{cm}$. Vertaa $B$:tä ja kierrostiheyttä $n$.",
+      "initial": {
+        "I": 2,
+        "N": "200",
+        "l": 20,
+        "x": 0,
+        "dir": "1"
+      },
+      "locked": [
+        "I",
+        "N",
+        "x",
+        "dir"
+      ],
+      "vary": "l",
+      "names": {
+        "I": "virta",
+        "N": "kierroksia",
+        "l": "käämin pituus (cm)",
+        "x": "anturin paikka",
+        "dir": "virran suunta"
+      },
+      "units": {
+        "I": "A",
+        "l": "cm",
+        "x": "cm"
+      },
+      "values": {
+        "dir": {
+          "1": "etupuolella alaspäin",
+          "-1": "etupuolella ylöspäin"
+        },
+        "N": {
+          "100": "100 kierrosta",
+          "200": "200 kierrosta",
+          "400": "400 kierrosta"
+        }
+      },
+      "measure": [
+        {
+          "key": "B",
+          "label": "B (mT)"
+        },
+        {
+          "key": "n",
+          "label": "n (1/m)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: vain anturin paikka muuttuu",
+      "intro": "Testaa ennuste 2. Käämin pituus on $20\\,\\text{cm}$, joten sen päät ovat kohdissa $x = -10\\,\\text{cm}$ ja $x = 10\\,\\text{cm}$. Siirrä vain anturia ja kirjaa $B$ ainakin keskeltä ja käämin päästä, halutessasi myös kohdista $5\\,\\text{cm}$ ja $15\\,\\text{cm}$.",
+      "initial": {
+        "I": 2,
+        "N": "200",
+        "l": 20,
+        "x": 0,
+        "dir": "1"
+      },
+      "locked": [
+        "I",
+        "N",
+        "l",
+        "dir"
+      ],
+      "vary": "x",
+      "names": {
+        "I": "virta",
+        "N": "kierroksia",
+        "l": "käämin pituus",
+        "x": "anturin paikka",
+        "dir": "virran suunta"
+      },
+      "units": {
+        "I": "A",
+        "l": "cm",
+        "x": "cm"
+      },
+      "values": {
+        "dir": {
+          "1": "etupuolella alaspäin",
+          "-1": "etupuolella ylöspäin"
+        },
+        "N": {
+          "100": "100 kierrosta",
+          "200": "200 kierrosta",
+          "400": "400 kierrosta"
+        }
+      },
+      "measure": [
+        {
+          "key": "B",
+          "label": "B (mT)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä määrää käämin kentän?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten käämin keskellä oleva kenttä muuttui, kun sama käämi venytettiin kaksinkertaiseen pituuteen? Mikä suure siis määrää kentän? Miten kenttä muuttui, kun anturi siirtyi keskeltä käämin päähän ja sen ulkopuolelle?",
+      "model": "Kun $200$ kierroksen käämi venytettiin $20\\,\\text{cm}$:stä $40\\,\\text{cm}$:iin, keskikohdan kenttä pieneni noin puoleen, mallin arvoista $2{,}46\\,\\text{mT}$ arvoon $1{,}25\\,\\text{mT}$. Samalla kierrostiheys $n = N : l$ puolittui. Kenttää ei siis määrää kierrosten kokonaismäärä vaan kierrostiheys ja virta. Kokeessa 2 kenttä pysyi lähes samana käämin keskiosassa ($2{,}46\\,\\text{mT}$ keskellä, $2{,}41\\,\\text{mT}$ kohdassa $5\\,\\text{cm}$), oli käämin päässä noin puolet ($1{,}25\\,\\text{mT}$) ja heikkeni käämin ulkopuolella nopeasti. Pitkän käämin sisällä kenttä on siis lähes homogeeninen, mutta ei aivan päihin asti. Mallissa ei ole rautasydäntä eikä Maan kenttää.",
+      "criteria": [
+        "Vertaan kokeen 1 lukuja ja kerron, että kaksinkertainen pituus noin puolitti kentän.",
+        "Päättelen, että kenttä riippuu kierrostiheydestä $N : l$, ei kierrosten kokonaismäärästä.",
+        "Kerron kokeen 2 lukujen avulla, että kenttä on keskiosassa lähes vakio ja päässä noin puolet.",
+        "Kutsun lukuja mallin arvoiksi ja mainitsen ainakin yhden mallin oletuksen."
+      ]
+    },
+    {
+      "id": "mittaus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Mittaus: tyhjiön permeabiliteetti käämistä",
+      "source": "example",
+      "figure": "fy7-3/coil-fit",
+      "text": "Ryhmä mittasi magneettivuon tiheyden käämin keskeltä magneettikenttäanturilla. Käämissä on $N = 320$ kierrosta, ja sen pituus mitattiin viivaimella: $l = 16{,}0\\,\\text{cm}$, epävarmuus $\\Delta l = 0{,}2\\,\\text{cm}$. Käämin halkaisija on $3{,}0\\,\\text{cm}$. Virtaa muutettiin virtalähteellä, ja jokaisella virralla kirjattiin lukemat.\n\n| $I$ (A) | $B$ (mT) |\n| --- | --- |\n| $0{,}00$ | $0{,}04$ |\n| $0{,}50$ | $1{,}27$ |\n| $1{,}00$ | $2{,}51$ |\n| $1{,}50$ | $3{,}69$ |\n| $2{,}00$ | $4{,}99$ |\n| $2{,}50$ | $6{,}20$ |\n\nVernier Graphical Analysis sovitti pisteisiin suoran $B = A I + B_0$ ja ilmoitti kulmakertoimen $A = 2{,}465\\,\\tfrac{\\text{mT}}{\\text{A}}$, sen epävarmuuden $\\Delta A = 0{,}012\\,\\tfrac{\\text{mT}}{\\text{A}}$ ja vakiotermin $B_0 = 0{,}035\\,\\text{mT}$. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Määritä mittauksesta tyhjiön permeabiliteetti $\\mu_0$. Anna vastaus muodossa $\\ldots \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$ eli kirjoita vastaukseksi kerroin.",
+        "answer": 1.23,
+        "unit": "· 10⁻⁶ Vs/(Am)",
+        "tolerance": 0.02,
+        "hints": [
+          "Mitä suoran kulmakerroin $A$ tarkoittaa käämin kaavassa $B = \\mu_0 \\tfrac{N}{l} I$?",
+          "Kulmakerroin on $A = \\mu_0 \\tfrac{N}{l}$, joten $\\mu_0 = A l : N$. Muunna ensin $A$ yksikköön $\\tfrac{\\text{T}}{\\text{A}}$ ja $l$ metreiksi.",
+          "$\\mu_0 = 2{,}465 \\cdot 10^{-3}\\,\\tfrac{\\text{T}}{\\text{A}} \\cdot 0{,}160\\,\\text{m} : 320$."
+        ],
+        "mistakes": [
+          {
+            "value": 123,
+            "feedback": "Pituus on jäänyt senttimetreiksi. Muunna $l = 16{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}160\\,\\text{m}$ ennen sijoitusta."
+          },
+          {
+            "value": 1233,
+            "feedback": "Tarkista millitesla: $A = 2{,}465\\,\\tfrac{\\text{mT}}{\\text{A}} = 2{,}465 \\cdot 10^{-3}\\,\\tfrac{\\text{T}}{\\text{A}}$, ja vastaukseksi kirjoitetaan kerroin, joka kerrotaan luvulla $10^{-6}$."
+          }
+        ],
+        "solution": "**Annettu:** kierroksia $N = 320$, käämin pituus $l = 16{,}0\\,\\text{cm}$, sovitetun suoran kulmakerroin $A = 2{,}465\\,\\tfrac{\\text{mT}}{\\text{A}}$\n\n**Kysytty:** tyhjiön permeabiliteetti $\\mu_0$ yksikössä $\\tfrac{\\text{Vs}}{\\text{Am}}$\n\n**Periaate:** Pitkän käämin keskellä $B = \\mu_0 \\tfrac{N}{l} I$, joten $B$ on suoraan verrannollinen virtaan ja suoran kulmakerroin on $\\mu_0 \\tfrac{N}{l}$. Kulmakerroin luetaan sovitetusta suorasta eikä kahdesta mittauspisteestä, koska suora ottaa huomioon kaikki pisteet. Vakiotermi $B_0$ ei vaikuta kulmakertoimeen.\n\n**Kuvaajan lukeminen:** Sovitettu suora kulkee likimain pisteiden $(0;\\ 0{,}04\\,\\text{mT})$ ja $(2{,}5\\,\\text{A};\\ 6{,}2\\,\\text{mT})$ kautta, joten kulmakerroin on noin $(6{,}2 - 0{,}04)\\,\\text{mT} : 2{,}5\\,\\text{A} \\approx 2{,}46\\,\\tfrac{\\text{mT}}{\\text{A}}$; ohjelman tarkka arvo on $2{,}465\\,\\tfrac{\\text{mT}}{\\text{A}}$.\n\n**Kaava:** $A = \\mu_0 \\dfrac{N}{l}$, josta $\\mu_0 = \\dfrac{A l}{N}$\n\n**Muunnokset:** $A = 2{,}465 \\cdot 10^{-3}\\,\\tfrac{\\text{T}}{\\text{A}}$ ja $l = 16{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}160\\,\\text{m}$. Yksikkö: $\\tfrac{\\text{T}\\cdot\\text{m}}{\\text{A}} = \\tfrac{\\text{Vs}}{\\text{m}^2} \\cdot \\tfrac{\\text{m}}{\\text{A}} = \\tfrac{\\text{Vs}}{\\text{Am}}$.\n\n**Sijoitus:** $\\mu_0 = \\dfrac{2{,}465 \\cdot 10^{-3}\\,\\tfrac{\\text{T}}{\\text{A}} \\cdot 0{,}160\\,\\text{m}}{320} = 1{,}2326 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$\n\n**Vastaus:** $\\mu_0 \\approx 1{,}23 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, kolme merkitsevää numeroa kuten pituudessa $16{,}0\\,\\text{cm}$.\n\n**Järkevyys:** Taulukkoarvo on $4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} = 1{,}257 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$. Mittaus antaa noin $2\\,\\%$ pienemmän arvon. Ero on hieman suurempi kuin mittausepävarmuus, ja sen syy selviää seuraavassa tehtävässä. Pieni ero on odotettavissakin, koska lyhyen käämin keskellä kenttä on hieman pienempi kuin pitkän käämin kaava antaa."
+      }
+    },
+    {
+      "id": "epavarmuus",
+      "stage": "tutki",
+      "type": "numeric",
+      "title": "Tuloksen epävarmuus",
+      "prompt": "Arvioi edellisen mittauksen tuloksen $\\mu_0$ suhteellinen epävarmuus. Ota huomioon kulmakertoimen epävarmuus $\\Delta A = 0{,}012\\,\\tfrac{\\text{mT}}{\\text{A}}$ ja pituuden epävarmuus $\\Delta l = 0{,}2\\,\\text{cm}$; kierrosten lukumäärä tunnetaan tarkasti. Laske tekijöiden suhteelliset epävarmuudet yhteen. Anna vastaus prosentteina.",
+      "answer": 1.7,
+      "unit": "%",
+      "tolerance": 0.05,
+      "hints": [
+        "Tulos on $\\mu_0 = A l : N$. Kun suureet kerrotaan tai jaetaan, mitkä epävarmuudet lasketaan yhteen?",
+        "Yksinkertainen arvio: tulon ja osamäärän suhteellinen epävarmuus on tekijöiden suhteellisten epävarmuuksien summa, $\\tfrac{\\Delta \\mu_0}{\\mu_0} = \\tfrac{\\Delta A}{A} + \\tfrac{\\Delta l}{l}$.",
+        "$\\tfrac{\\Delta A}{A} = 0{,}012 : 2{,}465$ ja $\\tfrac{\\Delta l}{l} = 0{,}2 : 16{,}0$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.49,
+          "feedback": "Otit huomioon vain kulmakertoimen epävarmuuden. Myös viivaimella mitattu pituus on epävarma: $\\Delta l : l = 0{,}2\\,\\text{cm} : 16{,}0\\,\\text{cm} = 1{,}25\\,\\%$."
+        },
+        {
+          "value": 1.25,
+          "feedback": "Otit huomioon vain pituuden epävarmuuden. Lisää kulmakertoimen suhteellinen epävarmuus $0{,}012 : 2{,}465 \\approx 0{,}49\\,\\%$."
+        }
+      ],
+      "solution": "**Annettu:** $A = 2{,}465\\,\\tfrac{\\text{mT}}{\\text{A}}$, $\\Delta A = 0{,}012\\,\\tfrac{\\text{mT}}{\\text{A}}$, $l = 16{,}0\\,\\text{cm}$, $\\Delta l = 0{,}2\\,\\text{cm}$, $N = 320$ tarkasti; edellisestä tehtävästä $\\mu_0 = 1{,}23 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$\n\n**Kysytty:** suhteellinen epävarmuus $\\Delta \\mu_0 : \\mu_0$ prosentteina\n\n**Periaate:** Tulos lasketaan tulona ja osamääränä $\\mu_0 = A l : N$. Yksinkertainen arvio epävarmuudelle saadaan laskemalla tekijöiden suhteelliset epävarmuudet yhteen. Kierrosten määrä on laskettu, joten se ei lisää epävarmuutta.\n\n**Kaava:** $\\dfrac{\\Delta \\mu_0}{\\mu_0} = \\dfrac{\\Delta A}{A} + \\dfrac{\\Delta l}{l}$\n\n**Muunnokset:** Ei tarvita: kummassakin osamäärässä yksiköt supistuvat, kun osoittaja ja nimittäjä ovat samassa yksikössä.\n\n**Sijoitus:** $\\dfrac{\\Delta \\mu_0}{\\mu_0} = \\dfrac{0{,}012\\,\\tfrac{\\text{mT}}{\\text{A}}}{2{,}465\\,\\tfrac{\\text{mT}}{\\text{A}}} + \\dfrac{0{,}2\\,\\text{cm}}{16{,}0\\,\\text{cm}} = 0{,}00487 + 0{,}0125 = 0{,}0174$\n\n**Vastaus:** noin $1{,}7\\,\\%$, kaksi merkitsevää numeroa, koska epävarmuus on itsekin arvio. Siis $\\Delta \\mu_0 \\approx 0{,}017 \\cdot 1{,}23 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\approx 0{,}02 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$ ja tulos $\\mu_0 = (1{,}23 \\pm 0{,}02) \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$.\n\n**Järkevyys:** Pituuden mittaus on suurin epävarmuuden lähde, mikä on uskottavaa: $2\\,\\text{mm}$ on $16\\,\\text{cm}$:stä yli prosentti. Taulukkoarvo $1{,}257 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$ jää hieman välin $1{,}21$–$1{,}25$ ulkopuolelle. Ero viittaa systemaattiseen virheeseen: käämin halkaisija on $3{,}0\\,\\text{cm}$, joten se ei ole kovin pitkä paksuuteensa verrattuna, ja sen keskellä kenttä on noin $98\\,\\%$ pitkän käämin kaavan arvosta. Kun tämä otetaan huomioon, tulos on noin $1{,}25 \\cdot 10^{-6}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$."
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja kaavaan $B = \\mu_0 \\tfrac{N I}{l}$. Palaa sitten alun kysymykseen: mistä kompassia kääntävä kenttä tulee, ja mitkä kolme keinoa tekevät nosturin magneetista niin voimakkaan, että se nostaa autonromun?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija laskee magneettivuon tiheyden käämissä, jossa on $500$ kierrosta, pituus $25\\,\\text{cm}$ ja virta $2{,}0\\,\\text{A}$. Hän kirjoittaa $B = \\mu_0 \\tfrac{N I}{l} = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot \\tfrac{500 \\cdot 2{,}0\\,\\text{A}}{25} = 5{,}0 \\cdot 10^{-5}\\,\\text{T}$ ja päättelee, että käämin kenttä on Maan kentän suuruinen. Mikä laskussa on vialla?",
+      "choices": [
+        {
+          "text": "Pituus on sijoitettu senttimetreinä; metreinä $l = 0{,}25\\,\\text{m}$, jolloin $B \\approx 5{,}0\\,\\text{mT}$.",
+          "correct": true,
+          "feedback": "Oikein. $\\mu_0$:n yksikkö sisältää metrin, joten pituus on sijoitettava metreinä: $25 \\cdot 0{,}01\\,\\text{m} = 0{,}25\\,\\text{m}$. Tulos kasvaa satakertaiseksi, $5{,}0\\,\\text{mT}$, mikä on noin satakertainen Maan kenttään verrattuna."
+        },
+        {
+          "text": "Käämille olisi pitänyt käyttää kaavaa $B = \\tfrac{\\mu_0 I}{2\\pi r}$, koska käämi on kierretty johdin.",
+          "feedback": "Suoran johtimen kaava antaa kentän yhden suoran johtimen ympärillä. Käämin sisällä kierrosten kentät vahvistavat toisiaan, ja silloin käytetään kaavaa $B = \\mu_0 \\tfrac{N I}{l}$. Virhe on pituuden yksikössä."
+        },
+        {
+          "text": "Kierrosten määrä olisi pitänyt jakaa käämin pituudella ennen kertomista virralla.",
+          "feedback": "Laskujärjestys ei muuta tulosta: $\\tfrac{N}{l} \\cdot I$ ja $\\tfrac{N I}{l}$ ovat sama asia. Virhe on siinä, että pituus on sijoitettu senttimetreinä."
+        },
+        {
+          "text": "Laskussa ei ole virhettä; käämin kenttä on tavallisesti yhtä heikko kuin Maan kenttä.",
+          "feedback": "Koulun käämien kentät ovat tyypillisesti millitesloja, satoja kertoja Maan kenttää voimakkaampia. Tarkista yksiköt: $\\mu_0$:n yksikkö vaatii pituuden metreinä."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "optional": true,
+      "prompt": "Laboratoriossa halutaan tutkia elektronisuihkua ilman Maan magneettikentän vaikutusta. Suihku kulkee pitkän käämin akselilla, ja käämi on suunnattu niin, että sen akseli on Maan magneettikentän suuntainen. Käämin pituus on $0{,}80\\,\\text{m}$, ja siinä on $120$ kierrosta. Kuinka suuri virta käämissä on kuljettava, jotta sen kenttä kumoaa käämin sisällä Maan magneettikentän $50\\,\\mu\\text{T}$? Käämi on paljon pidempi kuin paksu.",
+      "answer": 0.27,
+      "unit": "A",
+      "tolerance": 0.03,
+      "hints": [
+        "Kuinka suuri käämin kentän on oltava, ja mihin suuntaan sen on osoitettava, jotta kokonaiskenttä on nolla?",
+        "Käämin kentän suuruuden on oltava $50\\,\\mu\\text{T}$ Maan kenttää vastaan. Ratkaise virta käämin kaavasta $B = \\mu_0 \\tfrac{N I}{l}$.",
+        "$I = \\dfrac{B l}{N \\mu_0} = \\dfrac{50 \\cdot 10^{-6}\\,\\text{T} \\cdot 0{,}80\\,\\text{m}}{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 120}$"
+      ],
+      "mistakes": [
+        {
+          "value": 26.5,
+          "feedback": "Pituus on jäänyt senttimetreiksi. Kaavassa pituus on metreinä: $l = 0{,}80\\,\\text{m}$."
+        },
+        {
+          "value": 3.33,
+          "feedback": "Tarkista $\\mu_0$: se on $4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, ei $10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$."
+        }
+      ],
+      "solution": "**Annettu:** käämin pituus $l = 0{,}80\\,\\text{m}$, kierroksia $N = 120$, Maan magneettikenttä $B_\\text{Maa} = 50\\,\\mu\\text{T}$; käämi on pitkä ja sen akseli Maan kentän suuntainen; $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$\n\n**Kysytty:** käämin virta $I$ ampeereina\n\n**Periaate:** Magneettikentät lasketaan yhteen vektoreina. Kun käämin kenttä on yhtä suuri ja vastakkaissuuntainen kuin Maan kenttä, kokonaiskenttä on käämin sisällä nolla. Käämi on pitkä, joten sen sisällä kenttä on lähes homogeeninen ja pitkän käämin kaava pätee. Kentän suunta valitaan virran suunnalla oikean käden säännön mukaan.\n\n**Kaava:** $B = \\mu_0 \\dfrac{N I}{l}$, josta $I = \\dfrac{B l}{N \\mu_0}$, kun $B = B_\\text{Maa}$\n\n**Muunnokset:** $B = 50\\,\\mu\\text{T} = 50 \\cdot 10^{-6}\\,\\text{T}$; pituus on jo metreinä.\n\n**Sijoitus:** $I = \\dfrac{50 \\cdot 10^{-6}\\,\\text{T} \\cdot 0{,}80\\,\\text{m}}{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 120} = 0{,}2653\\,\\text{A}$\n\n**Vastaus:** $0{,}27\\,\\text{A}$, kaksi merkitsevää numeroa kuten Maan kenttä $50\\,\\mu\\text{T}$ ja pituus $0{,}80\\,\\text{m}$.\n\n**Järkevyys:** Kierrostiheys on $120 : 0{,}80\\,\\text{m} = 150$ kierrosta metrillä. Tuhat kierrosta metrillä ja $1\\,\\text{A}$ antavat noin $1{,}3\\,\\text{mT}$, joten $150$ kierrosta metrillä ja $0{,}27\\,\\text{A}$ antavat noin $1{,}3\\,\\text{mT} \\cdot 0{,}15 \\cdot 0{,}27 \\approx 0{,}05\\,\\text{mT} = 50\\,\\mu\\text{T}$, kuten pitääkin. Maan kenttä on heikko, joten pieni virta riittää."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään suoran johtimen tai käämin kaavaa suoraan, tason 2 tehtävissä ratkaistaan kaavasta jokin muu suure tai yhdistetään kaksi vaihetta, ja taso 3 vaatii kenttien yhdistämistä ja päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Kentän suunta",
+      "prompt": "Pystysuora johdin kulkee pöytälevyn läpi, ja siinä kulkee voimakas virta ylöspäin. Johtimen ympärille pöydälle asetetaan neljä kompassia, yksi kuhunkin ilmansuuntaan. Johtimen kenttä on paljon Maan kenttää voimakkaampi. Miten kompassien neulat asettuvat ylhäältä katsottuna?",
+      "choices": [
+        {
+          "text": "Ne asettuvat johdinta kiertävän ympyrän tangentin suuntaan, ja pohjoispäät kiertävät vastapäivään.",
+          "correct": true,
+          "feedback": "Oikein. Kenttäviivat ovat johdinta kiertäviä ympyröitä. Oikean käden peukalo ylöspäin virran suuntaan, ja sormet kiertävät ylhäältä katsottuna vastapäivään."
+        },
+        {
+          "text": "Ne asettuvat johdinta kiertävän ympyrän tangentin suuntaan, ja pohjoispäät kiertävät myötäpäivään.",
+          "feedback": "Kenttä kiertää johdinta, mutta suunta on väärä. Laita oikean käden peukalo ylöspäin virran suuntaan: ylhäältä katsottuna sormet kiertävät vastapäivään. Myötäpäivään kenttä kiertäisi, jos virta kulkisi alaspäin."
+        },
+        {
+          "text": "Ne osoittavat suoraan johtimesta poispäin, kuten sähkökentän kenttäviivat varatusta johtimesta.",
+          "feedback": "Virtajohtimen magneettikentän kenttäviivat eivät lähde johtimesta, vaan ne ovat suljettuja ympyröitä johtimen ympärillä. Siksi neulat asettuvat poikittain säteeseen nähden."
+        },
+        {
+          "text": "Ne osoittavat kaikki samaan suuntaan, koska johtimen kenttä on homogeeninen kuten käämin sisällä.",
+          "feedback": "Suoran johtimen kenttä ei ole homogeeninen: sen suunta kiertää johdinta ja suuruus pienenee etäisyyden kasvaessa. Homogeeninen kenttä on pitkän käämin sisällä."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Johtimen kenttä",
+      "prompt": "Hitsauskoneen kaapelissa kulkee virta $150\\,\\text{A}$. Kuinka suuri on kaapelin magneettivuon tiheys $2{,}0\\,\\text{cm}$:n etäisyydellä kaapelin keskeltä? Kaapeli on suora, ja paluujohdin on kaukana. Anna vastaus millitesloina.",
+      "answer": 1.5,
+      "unit": "mT",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä kaava kertoo suoran johtimen kentän etäisyydellä $r$?",
+        "$B = \\dfrac{\\mu_0 I}{2\\pi r}$, ja etäisyys sijoitetaan metreinä.",
+        "$B = \\dfrac{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 150\\,\\text{A}}{2\\pi \\cdot 0{,}020\\,\\text{m}}$"
+      ],
+      "mistakes": [
+        {
+          "value": 0.015,
+          "feedback": "Etäisyys on jäänyt senttimetreiksi. Muunna $2{,}0\\,\\text{cm} = 2{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}020\\,\\text{m}$."
+        },
+        {
+          "value": 9.42,
+          "feedback": "Nimittäjästä puuttuu $2\\pi$. Kenttä jakautuu johdinta kiertävälle ympyrälle, jonka kehän pituus on $2\\pi r$."
+        }
+      ],
+      "solution": "**Annettu:** virta $I = 150\\,\\text{A}$, etäisyys $r = 2{,}0\\,\\text{cm}$, $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$; suora kaapeli, paluujohdin kaukana\n\n**Kysytty:** magneettivuon tiheys $B$ millitesloina\n\n**Periaate:** Kaapeli on suora ja paljon pidempi kuin etäisyys $2\\,\\text{cm}$, ja paluujohdin on kaukana, joten pitkän suoran johtimen kaava pätee eikä toinen johdin heikennä kenttää.\n\n**Kaava:** $B = \\dfrac{\\mu_0 I}{2\\pi r}$\n\n**Muunnokset:** $r = 2{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}020\\,\\text{m}$; lopuksi $1\\,\\text{mT} = 10^{-3}\\,\\text{T}$.\n\n**Sijoitus:** $B = \\dfrac{4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}} \\cdot 150\\,\\text{A}}{2\\pi \\cdot 0{,}020\\,\\text{m}} = 1{,}5 \\cdot 10^{-3}\\,\\text{T} = 1{,}5\\,\\text{mT}$\n\n**Vastaus:** $1{,}5\\,\\text{mT}$, kaksi merkitsevää numeroa kuten etäisyys $2{,}0\\,\\text{cm}$.\n\n**Järkevyys:** Kaavassa $\\mu_0 : 2\\pi = 2 \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$, joten $B = 2 \\cdot 10^{-7} \\cdot 150 : 0{,}02\\,\\text{T} = 1{,}5 \\cdot 10^{-3}\\,\\text{T}$. Kenttä on noin $30$-kertainen Maan kenttään verrattuna, mikä sopii siihen, että hitsauskaapeli kääntää tasavirralla lähellä olevan kompassin selvästi."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: nosturin sähkömagneetti",
+      "optional": true,
+      "prompt": "Selitä, miksi romuttamon nosturin magneetissa on käämi ja rautasydän, ja miksi nosturi päästää romun irti, kun virta katkaistaan. Käytä käsitteitä virta, magneettikenttä, alkeisalue ja kierrostiheys.",
+      "model": "Käämissä kulkeva virta synnyttää magneettikentän, joka on käämin sisällä sitä voimakkaampi, mitä suurempi virta ja kierrostiheys $N : l$ ovat. Rautasydämessä käämin kenttä kääntää raudan alkeisalueet samansuuntaisiksi, joten rauta magnetoituu ja sen oma kenttä lisätään käämin kenttään: kokonaiskenttä on moninkertainen. Voimakas kenttä magnetoi myös romun teräksen, ja magneetti vetää sitä puoleensa. Kun virta katkaistaan, käämin kenttä häviää, ja pehmeän raudan alkeisalueet palaavat lähes epäjärjestykseen, joten magneetti menettää vetovoimansa ja romu putoaa. Kestomagneetin alkeisalueet pysyvät järjestyksessä, eikä sitä voi kytkeä pois.",
+      "criteria": [
+        "Kerron, että käämin virta synnyttää magneettikentän, joka kasvaa virran ja kierrostiheyden mukana.",
+        "Selitän rautasydämen vaikutuksen alkeisalueilla: ne kääntyvät samansuuntaisiksi ja voimistavat kenttää.",
+        "Selitän, miksi kenttä ja vetovoima häviävät, kun virta katkaistaan.",
+        "Vertaan sähkömagneettia kestomagneettiin."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

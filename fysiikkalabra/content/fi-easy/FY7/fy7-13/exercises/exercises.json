@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy7-13-L1-01",
+      "level": 1,
+      "text": "Hilassa on $300$ viivaa millimetrillä. Kuinka suuri on hilavakio? Anna vastaus mikrometreinä.",
+      "answer": 3.3333,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L1-02",
+      "level": 1,
+      "text": "Punaisen laserin valon aallonpituus on $650\\,\\text{nm}$. Valo osuu kohtisuoraan hilaan, jonka hilavakio on $2{,}00\\,\\mu\\text{m}$. Missä kulmassa keskimaksimin suunnasta ensimmäisen kertaluvun maksimi on?",
+      "answer": 18.9656,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L1-03",
+      "level": 1,
+      "text": "Valo osuu kohtisuoraan hilaan, jonka hilavakio on $2{,}50\\,\\mu\\text{m}$. Toisen kertaluvun maksimi on kulmassa $30{,}0^\\circ$ keskimaksimin suunnasta. Kuinka suuri on valon aallonpituus? Anna vastaus nanometreinä.",
+      "answer": 625.0,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L1-04",
+      "level": 1,
+      "text": "Varjostin on $1{,}20\\,\\text{m}$ päässä hilasta. Se on kohtisuorassa laserin sädettä vastaan. Ensimmäisen kertaluvun maksimi on varjostimella $30{,}0\\,\\text{cm}$ päässä keskimaksimista. Missä kulmassa keskimaksimin suunnasta maksimi on?",
+      "answer": 14.0362,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L1-05",
+      "level": 1,
+      "text": "Helium-neonlaserin valon aallonpituus on $633\\,\\text{nm}$. Valo osuu kohtisuoraan hilaan. Ensimmäisen kertaluvun maksimi on kulmassa $22{,}0^\\circ$ keskimaksimin suunnasta. Kuinka suuri on hilavakio? Anna vastaus mikrometreinä.",
+      "answer": 1.6898,
+      "unit": "µm",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-13-L2-01",
+      "level": 2,
+      "text": "Sinisen laserin valon aallonpituus on $450\\,\\text{nm}$. Valo osuu kohtisuoraan hilaan, jossa on $600$ viivaa millimetrillä. Hilan takana on niin leveä varjostin, että kaikki syntyvät maksimit osuvat siihen. Kuinka monta valopistettä varjostimella näkyy?",
+      "answer": 7,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L2-02",
+      "level": 2,
+      "text": "Punaisen laserin valon aallonpituus on $650\\,\\text{nm}$. Valo osuu kohtisuoraan hilaan, jossa on $100$ viivaa millimetrillä. Varjostin on $2{,}50\\,\\text{m}$ päässä hilasta kohtisuorassa sädettä vastaan. Kuinka kaukana keskimaksimista ensimmäisen kertaluvun maksimi on varjostimella? Anna vastaus senttimetreinä.",
+      "answer": 16.2844,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L2-03",
+      "level": 2,
+      "text": "Vihreän laserin säteen aallonpituus on $532\\,\\text{nm}$. Säde osuu kohtisuoraan hilaan, jonka viivatiheyttä ei tiedetä. Varjostin on $1{,}00\\,\\text{m}$ päässä hilasta. Sillä ensimmäisen kertaluvun maksimit $k = 1$ ja $k = -1$ ovat $66{,}8\\,\\text{cm}$ päässä toisistaan. Kuinka monta viivaa hilassa on millimetrillä?",
+      "answer": 595.4827,
+      "unit": "1/mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L2-04",
+      "level": 2,
+      "text": "Valkoisessa valossa on kaikkia aallonpituuksia välillä $400$–$700\\,\\text{nm}$. Valo osuu kohtisuoraan hilaan, jossa on $300$ viivaa millimetrillä. Varjostin on $1{,}00\\,\\text{m}$ päässä hilasta kohtisuorassa valoa vastaan. Kuinka leveä ensimmäisen kertaluvun spektri on varjostimella? Toisin sanoen: kuinka kaukana toisistaan sen violetti reuna ja punainen reuna ovat? Anna vastaus senttimetreinä.",
+      "answer": 9.3916,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-13-L3-01",
+      "level": 3,
+      "text": "Hilaan osuu kohtisuoraan valkoista valoa, jossa on kaikkia aallonpituuksia välillä $400$–$700\\,\\text{nm}$. Toisen kertaluvun spektrin punainen reuna ($700\\,\\text{nm}$) on samassa suunnassa kuin erään toisen aallonpituuden kolmannen kertaluvun maksimi. Kuinka suuri tämä aallonpituus on? Mitä tulos kertoo toisen ja kolmannen kertaluvun spektreistä? Anna vastaus nanometreinä.",
+      "answer": 466.6667,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L3-02",
+      "level": 3,
+      "text": "Opiskelija tutkii CD-levyä heijastushilana. Hän tekee pahviseen varjostimeen reiän. Hän ohjaa punaisen laserin säteen, jonka aallonpituus on $650\\,\\text{nm}$, reiän läpi kohtisuoraan levyn pintaan. Varjostin on levyn suuntainen ja $10{,}0\\,\\text{cm}$ päässä levystä. Levystä heijastuneet ensimmäisen kertaluvun maksimit näkyvät varjostimella reiän molemmin puolin. Ne ovat $89\\,\\text{mm}$ päässä toisistaan. Kuinka suuri on levyn vierekkäisten raitojen etäisyys? Anna vastaus mikrometreinä.",
+      "answer": 1.5988,
+      "unit": "µm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-13-L3-03",
+      "level": 3,
+      "text": "Hilan viivatiheyttä ei tunneta. Punaisen laserin säteen aallonpituus on $650\\,\\text{nm}$, ja säde osuu kohtisuoraan hilaan. Ensimmäisen kertaluvun maksimi on $1{,}00\\,\\text{m}$ päässä olevalla varjostimella $19{,}9\\,\\text{cm}$ päässä keskimaksimista. Samassa asetelmassa vihreän laserin ensimmäisen kertaluvun maksimi on $16{,}2\\,\\text{cm}$ päässä keskimaksimista. Kuinka suuri on vihreän laserin valon aallonpituus? Anna vastaus nanometreinä.",
+      "answer": 532.5781,
+      "unit": "nm",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "contribution": "A voltage appears in a coil only when the magnetic flux through it changes: the magnetic flux $\\Phi = BA$, Faraday's law $e = -N \\cdot \\Delta\\Phi : \\Delta t$ as the slope of the flux graph, and the voltage of a moving rod $e = vBl$ derived from the magnetic force on the electrons of the rod; in the simulation a coil moves through a region of field and the graphs $\\Phi(t)$ and $e(t)$ are drawn.",
+  "learn": [
+    "calculate the magnetic flux and the induced voltage in a coil using Faraday's law.",
+    "deduce the induced voltage from the slope of the magnetic flux graph.",
+    "explain the induced voltage of a moving rod using the magnetic force on the electrons."
+  ],
+  "prior": [
+    "A magnetic field exerts a force $F = qvB$ on a moving charged particle when the velocity is perpendicular to the field (chapter *Charged particle in electric and magnetic fields*)",
+    "A current-carrying wire and a coil produce a magnetic field around them (chapter *Magnetic field of a wire and a coil*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The hub dynamo of a bicycle has no battery or accumulator. When the bicycle stands still, the lamp is dark. As soon as the wheel begins to turn, the lamp lights up, and the faster you ride, the brighter it shines. Inside the dynamo there is a permanent magnet and a wire coil. In 1831 Michael Faraday made a similar observation in his laboratory: a magnet beside a coil produced no current, but a moving magnet did.",
+      "question": "What decides whether a voltage appears in the coil in the situation of the magnet and the coil, and what does the size of the voltage depend on?"
+    },
+    {
+      "id": "kertaus-voima",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the magnetic force on a charge",
+      "prompt": "An electron is at rest in a uniform magnetic field whose magnetic flux density is $0.50\\,\\text{T}$. What force does the field exert on the electron?",
+      "choices": [
+        {
+          "text": "No force, because the magnetic force $F = qvB$ is zero when the velocity is zero.",
+          "correct": true,
+          "feedback": "Correct. A magnetic field acts only on a moving charge (chapter *Charged particle in electric and magnetic fields*). Today this explains why the electrons of a metal rod moving in a field shift to one end of the rod, but the electrons of a rod at rest do not."
+        },
+        {
+          "text": "A force along the field, because the electron in a field is like a compass needle.",
+          "feedback": "A compass needle is a magnetic dipole, but the field acts on an electron only when it moves: $F = qvB$, and at zero velocity the force is zero (chapter *Charged particle in electric and magnetic fields*)."
+        },
+        {
+          "text": "A force perpendicular to the field, whose magnitude depends on the field.",
+          "feedback": "The force is perpendicular to the field only when the charge moves, and its magnitude is $F = qvB$. No force acts on an electron at rest (chapter *Charged particle in electric and magnetic fields*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-sisalla",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: the coil completely in the field",
+      "prompt": "A square coil moves at a steady speed through a region of magnetic field. The region of the field is wider than the coil. The ends of the coil are connected to a voltmeter. What does the meter show when the coil is completely inside the field and still moving at the same speed?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The greatest voltage, because the whole coil is then in the magnetic field.",
+          "feedback": "The values of the model contradict this: when the coil is completely inside the field, the voltage is $0\\,\\text{mV}$, even though the flux is then at its greatest, $2.0\\,\\text{mWb}$. A voltage does not arise from the field but from a change in flux, and inside the field the flux through the coil does not change."
+        },
+        {
+          "text": "Zero, because the magnetic field through the coil does not then change.",
+          "correct": true,
+          "feedback": "The values of the model support this: inside the field the voltage is $0\\,\\text{mV}$, and the flux graph is horizontal at $2.0\\,\\text{mWb}$. The voltage is $-20\\,\\text{mV}$ only during entry and $+20\\,\\text{mV}$ during exit, when the flux through the coil changes."
+        },
+        {
+          "text": "The same voltage as on entry, because the coil is still moving at the same speed.",
+          "feedback": "The values of the model contradict this: on entry the voltage is $-20\\,\\text{mV}$, but inside the field it is $0\\,\\text{mV}$. Motion alone is not enough: a voltage arises only when the flux through the coil changes. Inside the field, as much field enters the area of the coil as leaves it."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-vauhti",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: double the speed",
+      "prompt": "The same coil is driven through the same field first at a speed of $0.10\\,\\text{m/s}$ and then at $0.20\\,\\text{m/s}$. How does the voltage change during the time in which the coil is entering the field?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "It stays the same, because the coil and the field are the same.",
+          "feedback": "The values of the model contradict this: at a speed of $0.10\\,\\text{m/s}$ the voltage is $-20.0\\,\\text{mV}$, and at $0.20\\,\\text{m/s}$ it is $-40.0\\,\\text{mV}$. The change in flux is the same, $2.0\\,\\text{mWb}$, but it happens in half the time, so the rate of change and the voltage double."
+        },
+        {
+          "text": "It doubles, but the entry takes half as long.",
+          "correct": true,
+          "feedback": "The values of the model support this: the voltage changes from $-20.0\\,\\text{mV}$ to $-40.0\\,\\text{mV}$, and the duration of the entry shortens from $1.00\\,\\text{s}$ to $0.50\\,\\text{s}$. The same change in flux happens in half the time, so the rate of change is twice as great."
+        },
+        {
+          "text": "It halves, because the coil is at the edge of the field for a shorter time.",
+          "feedback": "The values of the model contradict this: the voltage grows from $-20.0\\,\\text{mV}$ to $-40.0\\,\\text{mV}$. A shorter time does not make the voltage smaller but greater, because the same change in flux $2.0\\,\\text{mWb}$ happens faster. Only the duration of the voltage pulse is shorter."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A square coil moves at a steady speed through a region of magnetic field. Start the motion and follow how the magnetic flux and the induced voltage change with time.",
+      "howto": "Choose the speed $v$ of the coil, the magnetic flux density $B$ and the number of turns $N$, and press *Start*. The coil starts from the left of the field and passes through the region. The green crosses show the magnetic field, which points into the paper, and the blue arrow shows the velocity of the coil. The graphs are drawn during the motion: the upper one is the magnetic flux $\\Phi$ through one turn and the lower one the induced voltage $e$ of the coil. When the coil has passed through the field, the readout line shows the voltage on entry, its duration and the voltage inside the field. The *Speed* menu changes only the pace of the animation, not the speed of the coil. If you change the controls during the motion, the coil returns to the start.",
+      "model": "The coil is a square of side $l = 0.10\\,\\text{m}$. The field is uniform in a region $0.20\\,\\text{m}$ wide and zero outside it, and the edge of the field is sharp. The vertical sides of the coil are always within the height of the field region. The coil moves at a steady speed, and nothing slows it down. The voltmeter draws no current, so no current flows in the coil. The readouts are values calculated by the model, not measurements.",
+      "calc": "When the leading side of the coil is a distance $x$ inside the field, the flux through one turn is $\\Phi = B \\cdot l \\cdot x$, until the whole coil is in the field. During entry $x$ grows steadily, so the induced voltage is\n\n$$e = -N\\frac{\\Delta\\Phi}{\\Delta t} = -NBlv$$\n\nInside the field the flux is constant, $\\Phi = Bl^2$, so $e = 0$. During exit the flux decreases as fast as it grew, so $e = +NBlv$. The entry lasts a time $\\Delta t = l : v$. The meaning of the minus sign becomes clear in the chapter *Lenz's law and eddy currents*."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the speed changes",
+      "intro": "Test the predictions. The magnetic flux density $B = 0.20\\,\\text{T}$ and the number of turns $N = 10$ stay the same; change only the speed $v$ of the coil. Drive the coil through the field by pressing *Start* and record the result when the coil has passed through the field. Record at least the speeds $0.10\\,\\text{m/s}$ and $0.20\\,\\text{m/s}$, and if you like also $0.05\\,\\text{m/s}$ and $0.15\\,\\text{m/s}$. For each row, calculate the product of the voltage and the duration of the entry, $e \\cdot \\Delta t$.",
+      "initial": {
+        "v": 0.1,
+        "B": 0.2,
+        "N": 10
+      },
+      "locked": [
+        "B",
+        "N"
+      ],
+      "vary": "v",
+      "names": {
+        "v": "speed",
+        "B": "magnetic flux density",
+        "N": "number of turns"
+      },
+      "units": {
+        "v": "m/s",
+        "B": "T",
+        "N": ""
+      },
+      "measure": [
+        {
+          "key": "e_tulo",
+          "label": "e on entry (mV)"
+        },
+        {
+          "key": "t_tulo",
+          "label": "Δt (s)"
+        },
+        {
+          "key": "e_sisalla",
+          "label": "e inside the field (mV)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: only the number of turns changes",
+      "intro": "The speed $v = 0.10\\,\\text{m/s}$ and the magnetic flux density $B = 0.20\\,\\text{T}$ stay the same; change only the number of turns $N$. Drive the coil through the field with each choice and record the voltage on entry. Record at least two numbers of turns, for example $5$ and $20$.",
+      "initial": {
+        "v": 0.1,
+        "B": 0.2,
+        "N": 10
+      },
+      "locked": [
+        "v",
+        "B"
+      ],
+      "vary": "N",
+      "names": {
+        "v": "speed",
+        "B": "magnetic flux density",
+        "N": "number of turns"
+      },
+      "units": {
+        "v": "m/s",
+        "B": "T",
+        "N": ""
+      },
+      "measure": [
+        {
+          "key": "e_tulo",
+          "label": "e on entry (mV)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what does the induced voltage depend on?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write on the basis of your tables: how does the voltage on entry depend on the speed of the coil and the number of turns, and what is the voltage when the coil is completely inside the field? What do you notice about the result $e \\cdot \\Delta t$ in experiment 1? Compare it with the greatest flux through one turn, $2.0\\,\\text{mWb}$, and the number of turns.",
+      "model": "In experiment 1 the voltage on entry was $-20.0\\,\\text{mV}$ at a speed of $0.10\\,\\text{m/s}$ and $-40.0\\,\\text{mV}$ at $0.20\\,\\text{m/s}$, so the voltage is proportional to the speed. The entry lasted $1.00\\,\\text{s}$ and $0.50\\,\\text{s}$ respectively, so the product $e \\cdot \\Delta t = -20\\,\\text{mV}\\cdot\\text{s}$ stayed the same. It is $-N\\Delta\\Phi = -10 \\cdot 2.0\\,\\text{mWb} = -20\\,\\text{mWb}$, since $1\\,\\text{mV}\\cdot\\text{s} = 1\\,\\text{mWb}$. The voltage is therefore $e = -N \\cdot \\Delta\\Phi : \\Delta t$: the same change in flux in a shorter time gives a greater voltage. In experiment 2 the voltage was $-10.0\\,\\text{mV}$ with $5$ turns and $-40.0\\,\\text{mV}$ with $20$ turns, so it is proportional to the number of turns. When the coil was completely inside the field, the voltage was zero, because the flux did not change. The values are calculated by the model.",
+      "criteria": [
+        "I said that the voltage on entry doubles when the speed doubles, and doubles when the number of turns doubles.",
+        "I said that the voltage is zero when the coil is completely inside the field, because the flux then does not change.",
+        "I calculated the product $e \\cdot \\Delta t$ and noticed that it is the same at every speed and equal to $N \\cdot \\Delta\\Phi = 20\\,\\text{mWb}$ (apart from the sign).",
+        "I concluded that the voltage is proportional to the rate of change of flux $\\Delta\\Phi : \\Delta t$ and to the number of turns."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the values of the model and with Faraday's law $e = -N \\cdot \\Delta\\Phi : \\Delta t$. Then return to the opening question: why does the bicycle dynamo light the lamp only when the wheel is turning, and why does the lamp shine brighter the faster you ride?",
+      "predictions": [
+        "ennuste-sisalla",
+        "ennuste-vauhti"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A coil has $200$ turns and a cross-sectional area of $6.0\\,\\text{cm}^2$. The field along the axis of the coil grows steadily from zero to $0.30\\,\\text{T}$ in $0.050\\,\\text{s}$. A student calculates\n\n$$\\begin{aligned} &A = 6.0\\,\\text{cm}^2 = 0.060\\,\\text{m}^2 \\\\ &|e| = \\frac{N \\Delta B \\cdot A}{\\Delta t} \\\\ &= \\frac{200 \\cdot 0.30\\,\\text{T} \\cdot 0.060\\,\\text{m}^2}{0.050\\,\\text{s}} \\\\ &= 72\\,\\text{V} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The conversion of the area is wrong: $1\\,\\text{cm}^2 = 10^{-4}\\,\\text{m}^2$, so the correct result is $0.72\\,\\text{V}$.",
+          "correct": true,
+          "feedback": "Correct. A square centimetre is $(0.01\\,\\text{m})^2 = 10^{-4}\\,\\text{m}^2$, so $A = 6.0 \\cdot 10^{-4}\\,\\text{m}^2$ and $|e| = 200 \\cdot 0.30\\,\\text{T} \\cdot 6.0 \\cdot 10^{-4}\\,\\text{m}^2 : 0.050\\,\\text{s} = 0.72\\,\\text{V}$. The student multiplied the centimetres by $0.01$ only once, although in an area the centimetre is squared."
+        },
+        {
+          "text": "The number of turns should not be multiplied in, because all the turns are in the same field: $0.36\\,\\text{V}$.",
+          "feedback": "The turns are in series, and the same voltage appears in each, so the voltages add up: $N$ belongs in the formula. In experiment 2 the voltage doubled when the number of turns doubled. The error is in the conversion of the area: $6.0\\,\\text{cm}^2 = 6.0 \\cdot 10^{-4}\\,\\text{m}^2$."
+        },
+        {
+          "text": "The minus sign is missing: the result is $-72\\,\\text{V}$, and otherwise the calculation is correct.",
+          "feedback": "The minus sign only gives the direction of the voltage, and here the magnitude $|e|$ is calculated, so its absence is not an error. The result $72\\,\\text{V}$ is, however, a hundred times too large: $6.0\\,\\text{cm}^2 = 6.0 \\cdot 10^{-4}\\,\\text{m}^2$, so $|e| = 0.72\\,\\text{V}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: the shake-powered torch",
+      "prompt": "A shake-powered torch has no battery. When the torch is shaken, a magnet inside it slides through a coil of $600$ turns. When the magnet enters the coil, the magnetic flux through one turn grows by $0.12\\,\\text{mWb}$ in $15\\,\\text{ms}$. How large is the induced voltage in the coil on average during this time? Give the answer in volts.",
+      "answer": 4.8,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "What changes in the flux through the coil, and how fast? How many turns are in series?",
+        "The magnitude of the induced voltage is $|e| = N \\cdot \\Delta\\Phi : \\Delta t$. First convert the flux to webers and the time to seconds.",
+        "$\\Delta\\Phi = 0.12 \\cdot 10^{-3}\\,\\text{Wb}$ and $\\Delta t = 15 \\cdot 10^{-3}\\,\\text{s}$, so $|e| = 600 \\cdot 0.12 \\cdot 10^{-3}\\,\\text{Wb} : (15 \\cdot 10^{-3}\\,\\text{s})$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.008,
+          "feedback": "You calculated the voltage of one turn. The $600$ turns of the coil are in series, and the same voltage appears in each, so the voltage of the coil is $600$ times as great."
+        },
+        {
+          "value": 0.0048,
+          "feedback": "You substituted the time $15$ as if it were in seconds. The time is $15\\,\\text{ms} = 15 \\cdot 0.001\\,\\text{s} = 0.015\\,\\text{s}$, so the voltage is a thousand times greater."
+        },
+        {
+          "value": 4800,
+          "feedback": "You substituted the flux $0.12$ as if it were in webers. The flux is $0.12\\,\\text{mWb} = 0.12 \\cdot 10^{-3}\\,\\text{Wb}$, so the voltage is a thousandth of this."
+        }
+      ],
+      "solution": "**Given:** number of turns $N = 600$, change in flux through one turn $\\Delta\\Phi = 0.12\\,\\text{mWb}$, time $\\Delta t = 15\\,\\text{ms}$\n\n**Find:** average magnitude of the induced voltage $|e|$ in volts\n\n**Principle:** When the magnet slides into the coil, the magnetic flux through the coil grows, so an induced voltage appears in the coil according to Faraday's law. The flux does not necessarily grow steadily, so the quotient of the total change in flux and the time gives the average of the voltage over this interval. The turns are in series, so the voltage is $N$ times the voltage of one turn.\n\n**Formula:** $|e| = N\\dfrac{\\Delta\\Phi}{\\Delta t}$\n\n**Conversions:** $\\Delta\\Phi = 0.12\\,\\text{mWb} = 0.12 \\cdot 10^{-3}\\,\\text{Wb}$ and $\\Delta t = 15\\,\\text{ms} = 15 \\cdot 10^{-3}\\,\\text{s} = 0.015\\,\\text{s}$\n\n**Substitution:** $|e| = 600 \\cdot \\dfrac{0.12 \\cdot 10^{-3}\\,\\text{Wb}}{0.015\\,\\text{s}} = 600 \\cdot 8.0 \\cdot 10^{-3}\\,\\text{V} = 4.8\\,\\text{V}$\n\n**Answer:** $4.8\\,\\text{V}$, two significant figures like the change in flux $0.12\\,\\text{mWb}$ and the time $15\\,\\text{ms}$.\n\n**Reasonableness:** One turn would give only $8.0\\,\\text{mV}$, which would not be enough for an LED. An LED needs a voltage of about $2$–$3\\,\\text{V}$, so a coil of hundreds of turns and fast shaking are essential. If shaken more slowly, the same change in flux takes longer and the voltage stays smaller."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks use one formula, $\\Phi = BA$, $e = -N \\cdot \\Delta\\Phi : \\Delta t$ or $e = vBl$, level 2 tasks combine two steps or read a flux graph, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: when does a voltage appear?",
+      "prompt": "In which of these situations does an induced voltage appear between the ends of the coil?",
+      "choices": [
+        {
+          "text": "A strong permanent magnet is at rest inside the coil.",
+          "feedback": "A large flux passes through the coil, but it does not change, so no voltage appears. The induced voltage depends on the rate of change of flux $\\Delta\\Phi : \\Delta t$, not on the size of the flux."
+        },
+        {
+          "text": "The coil moves steadily completely inside a uniform field.",
+          "feedback": "When the coil is completely in a uniform field, the flux $\\Phi = BA$ through it stays the same even though the coil moves. The flux does not change, so the voltage is zero, as in the simulation inside the field."
+        },
+        {
+          "text": "The current of an electromagnet next to the coil is switched off.",
+          "correct": true,
+          "feedback": "Correct. When the current is cut off, the field of the electromagnet disappears quickly, so the flux through the coil decreases and an induced voltage appears in the coil. Nothing needs to be moved: it is enough that the flux changes."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: a moving rod",
+      "prompt": "A metal rod of length $50\\,\\text{cm}$ moves at a speed of $4.0\\,\\text{m/s}$ perpendicular to a uniform magnetic field. The magnetic flux density of the field is $0.25\\,\\text{T}$, and the rod is perpendicular to both the field and the direction of motion. How large is the induced voltage between the ends of the rod? Give the answer in volts.",
+      "answer": 0.5,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "What acts on the electrons of the rod when the rod moves in the field, and where do the electrons move to?",
+        "The voltage between the ends of the rod is $e = vBl$ when the velocity, the rod and the field are mutually perpendicular.",
+        "$l = 50\\,\\text{cm} = 0.50\\,\\text{m}$, so $e = 4.0\\,\\text{m/s} \\cdot 0.25\\,\\text{T} \\cdot 0.50\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 50,
+          "feedback": "You substituted the length in centimetres. Since $\\text{T} = \\tfrac{\\text{V}\\cdot\\text{s}}{\\text{m}^2}$, the result is in volts only if the length is in metres: $50\\,\\text{cm} = 50 \\cdot 0.01\\,\\text{m} = 0.50\\,\\text{m}$."
+        },
+        {
+          "value": 1.0,
+          "feedback": "The length of the rod is missing. The voltage arises along the whole length of the rod: the electric field $E = vB$ inside the rod is multiplied by the length of the rod, $e = vBl$."
+        }
+      ],
+      "solution": "**Given:** length of the rod $l = 50\\,\\text{cm}$, speed $v = 4.0\\,\\text{m/s}$, magnetic flux density $B = 0.25\\,\\text{T}$; the velocity, the rod and the field are mutually perpendicular\n\n**Find:** induced voltage $e$ between the ends of the rod in volts\n\n**Principle:** The electrons that move with the rod experience a magnetic force $evB$ along the rod, so electrons collect at one end of the rod. The electric field that appears grows until the electric force $eE$ cancels the magnetic force, that is, $E = vB$. The field is uniform, so the voltage between the ends is $El$.\n\n**Formula:** $e = vBl$\n\n**Conversions:** $l = 50\\,\\text{cm} = 50 \\cdot 0.01\\,\\text{m} = 0.50\\,\\text{m}$\n\n**Substitution:** $e = 4.0\\,\\text{m/s} \\cdot 0.25\\,\\text{T} \\cdot 0.50\\,\\text{m} = 0.50\\,\\text{V}$\n\n**Answer:** $0.50\\,\\text{V}$, two significant figures like the given values.\n\n**Reasonableness:** The units fit: $\\tfrac{\\text{m}}{\\text{s}} \\cdot \\tfrac{\\text{V}\\cdot\\text{s}}{\\text{m}^2} \\cdot \\text{m} = \\text{V}$. The voltage is under a volt, as is to be expected for a laboratory-sized device; the same voltage follows from Faraday's law, since the area swept by the rod grows every second by $0.50\\,\\text{m} \\cdot 4.0\\,\\text{m} = 2.0\\,\\text{m}^2$, and $0.25\\,\\text{T} \\cdot 2.0\\,\\tfrac{\\text{m}^2}{\\text{s}} = 0.50\\,\\tfrac{\\text{Wb}}{\\text{s}}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: the voltage in a moving rod",
+      "prompt": "A metal rod moves perpendicular to a magnetic field. Explain why a voltage appears between the ends of the rod, and why the voltage does not grow without limit but settles at the value $e = vBl$.",
+      "model": "The conduction electrons of the rod move along with it. A magnetic field exerts on a moving charge a force $F_\\text{m} = evB$, which is perpendicular to the velocity and the field, that is, along the rod. The electrons shift to one end of the rod, which becomes negative, and positive charge is left at the other end. An electric field $E$ appears inside the rod between the charges and exerts on the electrons an opposite force $F_\\text{s} = eE$. Electrons shift until the forces are equal: $eE = evB$, that is, $E = vB$. In a uniform field the voltage is $El$, so $e = vBl$. At a greater speed the magnetic force is greater, so a greater electric field is needed for balance and the voltage is greater. In a rod at rest no voltage appears, because the magnetic force is zero.",
+      "criteria": [
+        "I say that the magnetic field exerts a force $evB$ along the rod on the electrons that move with it.",
+        "I say that the electrons collect at one end of the rod, so that an electric field and a voltage appear between the ends.",
+        "I explain that the shift stops when the electric force $eE$ equals the magnetic force, so $E = vB$ and $e = El = vBl$.",
+        "I mention that no voltage appears in a rod at rest, because the magnetic force is then zero."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and only then open the answer."
+    }
+  ]
+}

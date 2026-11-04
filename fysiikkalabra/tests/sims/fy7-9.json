@@ -1,0 +1,186 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.T===5800 && S.alue==='lyhyt' && Math.abs(S.lmax-499.62)<0.05 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: T = 5800 K, short wavelengths, λ_max = 499,6 nm (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); const O=[...document.querySelectorAll('#sim-root select option')].map(o=>o.value).join(','); return R.length===1 && R[0].min==='200' && R[0].max==='10000' && R[0].step==='100' && O==='lyhyt,pitka' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider T 200–10 000 K by 100; one select lyhyt | pitka"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=k.findIndex(x=>x==='canvas'||/sim-canvas/.test(x)); return c>=0 && c<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='T,alue' && P.T.unit==='K' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares T (K) and alue"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,3000); I(Se,'lyhyt');",
+  "expr": "window.simState.lmax",
+  "expected": 965.924,
+  "tol": 0.01,
+  "note": "3000 K: λ_max = 966 nm, the curve's peak"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,6000); I(Se,'lyhyt');",
+  "expr": "window.simState.lmax",
+  "expected": 482.962,
+  "tol": 0.01,
+  "note": "6000 K: λ_max = 483 nm, half of 3000 K's"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,4500); I(Se,'lyhyt');",
+  "expr": "window.simState.lmax",
+  "expected": 643.949,
+  "tol": 0.01,
+  "note": "4500 K: λ_max = 644 nm"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,300); I(Se,'pitka');",
+  "expr": "window.simState.lmax",
+  "expected": 9659.24,
+  "tol": 0.01,
+  "note": "300 K: λ_max = 9659 nm, infrared"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,1000); I(Se,'lyhyt');",
+  "expr": "window.simState.lmax * window.simState.T / 1e6",
+  "expected": 2.89777,
+  "tol": 0.01,
+  "note": "λ_max T = 2,898 · 10⁶ nm·K at 1000 K (peak beyond the short range)"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,3000); I(Se,'lyhyt');",
+  "expr": "window.simState.tC",
+  "expected": 2726.85,
+  "tol": 0.01,
+  "note": "t = T − 273,15 = 2726,85 °C"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,2700); I(Se,'lyhyt');",
+  "expr": "window.simState.nakyva",
+  "expected": 7.0228,
+  "tol": 0.01,
+  "note": "2700 K: visible share 7,0 %"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,5800); I(Se,'lyhyt');",
+  "expr": "window.simState.nakyva",
+  "expected": 43.917,
+  "tol": 0.01,
+  "note": "5800 K: visible share 43,9 %"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,300); I(Se,'pitka');",
+  "expr": "window.simState.nakyva < 0.01 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "300 K: visible share below 0,01 %"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,300); I(Se,'lyhyt');",
+  "expr": "window.simState.huippu === 'ir' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "300 K: peak region ir"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,6000); I(Se,'lyhyt');",
+  "expr": "window.simState.huippu === 'nakyva' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "6000 K: peak region nakyva"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,10000); I(Se,'lyhyt');",
+  "expr": "window.simState.huippu === 'uv' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "10000 K: peak region uv"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,300); I(Se,'lyhyt');",
+  "expr": "window.simState.vari === 'v0' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "300 K: glow colour v0"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,900); I(Se,'lyhyt');",
+  "expr": "window.simState.vari === 'v1' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "900 K: glow colour v1"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,2000); I(Se,'lyhyt');",
+  "expr": "window.simState.vari === 'v4' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "2000 K: glow colour v4"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,5800); I(Se,'lyhyt');",
+  "expr": "window.simState.vari === 'v6' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "5800 K: glow colour v6"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,9000); I(Se,'lyhyt');",
+  "expr": "window.simState.vari === 'v7' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "9000 K: glow colour v7"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,700); I(Se,'lyhyt');",
+  "expr": "window.simState.glow",
+  "expected": 0,
+  "tol": 0,
+  "note": "700 K: no glow"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,2000); I(Se,'lyhyt');",
+  "expr": "window.simState.glow",
+  "expected": 1,
+  "tol": 0,
+  "note": "2000 K: full glow"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,5800); I(Se,'pitka');",
+  "expr": "window.simState.alue === 'pitka' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "the select sets the long range"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,6000); I(Se,'lyhyt');",
+  "expr": "(() => /483/.test(document.querySelector('#sim-root .readout').textContent + document.querySelector('#sim-root .readout').innerHTML) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows λ_max = 483 nm"
+ },
+ {
+  "setup": "const R=document.querySelector('#sim-root input[type=range]'), Se=document.querySelector('#sim-root select'); const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R,300); I(Se,'pitka');",
+  "expr": "(() => /alle/.test(document.querySelector('#sim-root .readout').textContent) && /infrapuna/.test(document.querySelector('#sim-root .readout').textContent) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "300 K: the readout says below 0,01 % and infrared"
+ }
+]

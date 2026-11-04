@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Hilassa on $250$ viivaa millimetrillä. Kuinka suuri on hilavakio?",
+    "a": "$d = 1\\,\\text{mm} : 250 = 1 \\cdot 10^{-3}\\,\\text{m} : 250 = 4{,}0 \\cdot 10^{-6}\\,\\text{m} = 4{,}0\\,\\mu\\text{m}$."
+  },
+  {
+    "q": "Miksi kaksi tavallista lamppua ei tuota seinälle kirkkaiden ja tummien juovien kuviota, vaikka laser ja kaksoisrako tuottavat?",
+    "a": "Kahden lampun valo ei ole koherenttia. Lamppujen lukemattomat atomit lähettävät valoa toisistaan riippumatta. Siksi valojen vaihe-ero vaihtelee satunnaisesti ja hyvin nopeasti. Vahvistavan ja heikentävän interferenssin kohdat vaihtavat paikkaa jatkuvasti, ja silmä näkee tasaisen valaistuksen. Kaksoisraossa molemmat raot saavat valonsa samasta aaltorintamasta, joten niiden vaihe-ero pysyy samana."
+  }
+]

@@ -1,0 +1,305 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.N===300 && S.lambda===650 && Math.abs(S.L-1)<1e-9 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: N = 300 lines/mm, λ = 650 nm, L = 1,00 m (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===3 && R[0].min==='100' && R[0].max==='1000' && R[0].step==='50' && R[1].min==='400' && R[1].max==='700' && R[1].step==='1' && R[2].min==='0.5' && R[2].max==='2' && R[2].step==='0.05' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "three sliders: N 100–1000 by 50, λ 400–700 nm by 1, L 0,50–2,00 m by 0,05"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=k.findIndex(x=>x==='canvas'||/sim-canvas/.test(x)); return c>=0 && c<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='L,N,lambda' && P.lambda.unit==='nm' && P.L.unit==='m' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares N, lambda (nm) and L (m)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.d",
+  "expected": 3.3333,
+  "tol": 0.01,
+  "note": "the default setup (lesson's figure: 300 lines/mm, 650 nm, 1,00 m): d = 3.3333"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.theta1",
+  "expected": 11.2447,
+  "tol": 0.01,
+  "note": "the default setup (lesson's figure: 300 lines/mm, 650 nm, 1,00 m): theta1 = 11.2447"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.x1",
+  "expected": 19.8817,
+  "tol": 0.01,
+  "note": "the default setup (lesson's figure: 300 lines/mm, 650 nm, 1,00 m): x1 = 19.8817"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.theta2",
+  "expected": 22.9545,
+  "tol": 0.01,
+  "note": "the default setup (lesson's figure: 300 lines/mm, 650 nm, 1,00 m): theta2 = 22.9545"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.x2",
+  "expected": 42.3538,
+  "tol": 0.01,
+  "note": "the default setup (lesson's figure: 300 lines/mm, 650 nm, 1,00 m): x2 = 42.3538"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.kmax",
+  "expected": 5,
+  "tol": 0,
+  "note": "the default setup (lesson's figure: 300 lines/mm, 650 nm, 1,00 m): kmax = 5"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.count",
+  "expected": 11,
+  "tol": 0,
+  "note": "the default setup (lesson's figure: 300 lines/mm, 650 nm, 1,00 m): count = 11"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.onScreen",
+  "expected": 7,
+  "tol": 0,
+  "note": "the default setup (lesson's figure: 300 lines/mm, 650 nm, 1,00 m): onScreen = 7"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],600); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.theta1",
+  "expected": 22.9545,
+  "tol": 0.01,
+  "note": "koe 1: 600 lines/mm: theta1 = 22.9545"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],600); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.x1",
+  "expected": 42.3538,
+  "tol": 0.01,
+  "note": "koe 1: 600 lines/mm: x1 = 42.3538"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],600); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.x2",
+  "expected": 124.6445,
+  "tol": 0.01,
+  "note": "koe 1: 600 lines/mm: x2 = 124.6445"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],600); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.count",
+  "expected": 5,
+  "tol": 0,
+  "note": "koe 1: 600 lines/mm: count = 5"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.d",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "koe 1: 1000 lines/mm, only the first order: d = 1.0"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.theta1",
+  "expected": 40.5416,
+  "tol": 0.01,
+  "note": "koe 1: 1000 lines/mm, only the first order: theta1 = 40.5416"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.x1",
+  "expected": 85.5337,
+  "tol": 0.01,
+  "note": "koe 1: 1000 lines/mm, only the first order: x1 = 85.5337"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.kmax",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 1: 1000 lines/mm, only the first order: kmax = 1"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.count",
+  "expected": 3,
+  "tol": 0,
+  "note": "koe 1: 1000 lines/mm, only the first order: count = 3"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.onScreen",
+  "expected": 3,
+  "tol": 0,
+  "note": "koe 1: 1000 lines/mm, only the first order: onScreen = 3"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],650); I(R[2],1);",
+  "expr": "window.simState.theta2 === null && window.simState.x2 === null ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 1: 1000 lines/mm, only the first order: no second order since 2λ > d"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],600); I(R[1],450); I(R[2],1);",
+  "expr": "window.simState.theta1",
+  "expected": 15.6643,
+  "tol": 0.01,
+  "note": "koe 2: 450 nm: theta1 = 15.6643"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],600); I(R[1],450); I(R[2],1);",
+  "expr": "window.simState.x1",
+  "expected": 28.0415,
+  "tol": 0.01,
+  "note": "koe 2: 450 nm: x1 = 28.0415"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],600); I(R[1],532); I(R[2],1);",
+  "expr": "window.simState.theta1",
+  "expected": 18.6146,
+  "tol": 0.01,
+  "note": "koe 2: 532 nm: theta1 = 18.6146"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],600); I(R[1],532); I(R[2],1);",
+  "expr": "window.simState.x1",
+  "expected": 33.682,
+  "tol": 0.01,
+  "note": "koe 2: 532 nm: x1 = 33.682"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],0.5);",
+  "expr": "window.simState.x1",
+  "expected": 9.9408,
+  "tol": 0.01,
+  "note": "koe 3: L = 0,50 m: x1 = 9.9408"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],0.5);",
+  "expr": "window.simState.x2",
+  "expected": 21.1769,
+  "tol": 0.01,
+  "note": "koe 3: L = 0,50 m: x2 = 21.1769"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],0.5);",
+  "expr": "window.simState.onScreen",
+  "expected": 9,
+  "tol": 0,
+  "note": "koe 3: L = 0,50 m: onScreen = 9"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],2);",
+  "expr": "window.simState.theta1",
+  "expected": 11.2447,
+  "tol": 0.01,
+  "note": "koe 3: L = 2,00 m, the third order misses the screen: theta1 = 11.2447"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],2);",
+  "expr": "window.simState.x1",
+  "expected": 39.7633,
+  "tol": 0.01,
+  "note": "koe 3: L = 2,00 m, the third order misses the screen: x1 = 39.7633"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],2);",
+  "expr": "window.simState.x2",
+  "expected": 84.7076,
+  "tol": 0.01,
+  "note": "koe 3: L = 2,00 m, the third order misses the screen: x2 = 84.7076"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],300); I(R[1],650); I(R[2],2);",
+  "expr": "window.simState.onScreen",
+  "expected": 5,
+  "tol": 0,
+  "note": "koe 3: L = 2,00 m, the third order misses the screen: onScreen = 5"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],100); I(R[1],400); I(R[2],1);",
+  "expr": "window.simState.theta1",
+  "expected": 2.2924,
+  "tol": 0.01,
+  "note": "100 lines/mm, 400 nm: 25 orders: theta1 = 2.2924"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],100); I(R[1],400); I(R[2],1);",
+  "expr": "window.simState.x1",
+  "expected": 4.0032,
+  "tol": 0.01,
+  "note": "100 lines/mm, 400 nm: 25 orders: x1 = 4.0032"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],100); I(R[1],400); I(R[2],1);",
+  "expr": "window.simState.kmax",
+  "expected": 24,
+  "tol": 0,
+  "note": "100 lines/mm, 400 nm: 25 orders: kmax = 24"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],700); I(R[2],2);",
+  "expr": "window.simState.x1",
+  "expected": 196.0392,
+  "tol": 0.01,
+  "note": "1000 lines/mm, 700 nm, 2,00 m: the first order misses the screen: x1 = 196.0392"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],700); I(R[2],2);",
+  "expr": "window.simState.onScreen",
+  "expected": 1,
+  "tol": 0,
+  "note": "1000 lines/mm, 700 nm, 2,00 m: the first order misses the screen: onScreen = 1"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],700); I(R[2],2);",
+  "expr": "window.simState.theta2 === null && window.simState.x2 === null ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "1000 lines/mm, 700 nm, 2,00 m: the first order misses the screen: no second order since 2λ > d"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],650); I(R[2],1);",
+  "expr": "(() => /ei synny/.test(document.querySelector('#sim-root .readout').textContent) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout says that the second order does not exist"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],700); I(R[2],2);",
+  "expr": "(() => /ohi varjostimen/.test(document.querySelector('#sim-root .readout').textContent) ? 1 : 0)()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout says that the first order misses the screen"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],600); I(R[1],532); I(R[2],1);",
+  "expr": "(() => { const r=document.querySelector('#sim-root .readout'); const s=r.innerHTML+r.textContent; return /18\\{?,\\}?61/.test(s) && /33\\{?,\\}?7/.test(s) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows θ1 = 18,61° and x1 = 33,7 cm"
+ }
+]
