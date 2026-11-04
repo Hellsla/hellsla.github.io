@@ -42,10 +42,17 @@ out.update({"fy8-s2-dm": round(dm, 6), "fy8-s2-a": round(Q_MeV, 3), "fy8-s2-QJ":
             "fy8-s2-fracPu": round(frac_Pu, 4), "fy8-s2-mPu": round(m_Pu_fuel, 3), "fy8-s2-share": round(m238 / m_Pu_fuel, 3),
             "fy8-s2-d": round(P14), "fy8-s2-d-factor": round(0.5 ** (14 / 87.7), 4), "fy8-s2-d-el": round(Pel * 0.5 ** (14 / 87.7), 1),
             "fy8-s2-Po-1a": round(0.5 ** (365.25 / 138), 4), "fy8-s2-ratioU": float(f"{ratio_U:.3g}")})
+# e) 10 Bq of Pu-238 kept in the lungs (1,2 kg) for a year; w_R = 20 (alpha), w_T = 0,12 (lungs)
+E_lung = 10 * year * Q_J
+D_lung = E_lung / 1.2
+H_T = 20 * D_lung
+H_E = 0.12 * H_T
+out.update({"fy8-s2-e-E": float(f"{E_lung:.3g}"), "fy8-s2-e-D": float(f"{D_lung:.3g}"), "fy8-s2-e-HT": float(f"{H_T:.3g}"),
+            "fy8-s2-e": round(H_E * 1e3, 3), "fy8-s2-e-share": round(H_E * 1e3 / 5.9, 3), "fy8-s2-e-At": float(f"{10 * year:.4g}")})
 
 # fy8-s3: the school's Cs-137 source and a GM tube (invented data: K = 30 720 cm²/min, d = 1,2 cm, background 22,4 /min)
 rs = [2.0, 3.0, 4.0, 5.0, 6.0, 8.0, 10.0, 14.0, 20.0]       # cm
-Ns = [3048, 1742, 1171, 809, 628, 380, 272, 150, 94]       # pulses in 1,0 min
+Ns = [3048, 1806, 1172, 790, 617, 405, 256, 152, 94]       # pulses in 1,0 min
 Rb = 112 / 5.0                                              # background, 1/min
 net = [n - Rb for n in Ns]
 ys = [1 / math.sqrt(v) for v in net]                        # 1/sqrt(R) in sqrt(min)
@@ -97,7 +104,7 @@ t_ok = 2.0e9
 g235 = 2 ** (t_ok / T235); g238 = 2 ** (t_ok / T238)
 r_then = (x235 * g235) / (x238 * g238)
 share = 100 * x235 * g235 / (x235 * g235 + x238 * g238)
-P_ok, t_run = 100e3, 1.5e5 * year                           # c
+P_ok, t_run = 100e3, 1.5e5 * year                           # c (the fissions and mass: background for the solution)
 E_ok = P_ok * t_run
 Ef = 200e6 * e
 n_f = E_ok / Ef
@@ -108,6 +115,7 @@ out.update({"fy8-s5-g235": round(g235, 3), "fy8-s5-g238": round(g238, 4), "fy8-s
             "fy8-s5-exp238": round(t_ok / T238, 4), "fy8-s5-n235": round(x235 * g235, 3), "fy8-s5-n238": round(x238 * g238, 1),
             "fy8-s5-a": round(share, 2), "fy8-s5-ratio": round(r_then, 4), "fy8-s5-E": float(f"{E_ok:.3g}"),
             "fy8-s5-Ef": float(f"{Ef:.4g}"), "fy8-s5-nf": float(f"{n_f:.3g}"), "fy8-s5-m235": float(f"{m235:.4g}"),
-            "fy8-s5-c": round(m_ok / 1000, 2), "fy8-s5-tOL3": float(f"{t_OL3:.3g}"), "fy8-s5-tOL3-a": round(t_OL3 / year, 2),
+            "fy8-s5-m": round(m_ok / 1000, 2), "fy8-s5-tOL3": float(f"{t_OL3:.3g}"), "fy8-s5-c": round(t_OL3 / year, 2),
+            "fy8-s5-Pratio": round(4300e6 / P_ok), "fy8-s5-c-direct": round(P_ok / 4300e6 * 1.5e5, 2),
             "fy8-s5-Pu-halvings": round(2.0e9 / 24100)})
 print(json.dumps(out))

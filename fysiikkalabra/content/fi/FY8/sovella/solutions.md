@@ -95,9 +95,20 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 **Vastaus:** Lämpöteho on noin $P \approx 1790\,\text{W}$, ja samalla hyötysuhteella sähköteho olisi noin $98\,\text{W}$. Todellinen sähköteho pienenee nopeammin, koska lämpösähköparit vanhenevat ja hyötysuhde pienenee. Hajoamislaki antaa siksi sähköteholle vain ylärajan.
 **Järkevyys:** $14$ vuotta on noin kuudesosa puoliintumisajasta, joten tehosta on kadonnut noin $10\,\%$, selvästi alle puolet. Generaattori riittää siis vuosikymmenten lentoon.
 
+### e)
+**Annettu:** aktiivisuus $A = 10\,\text{Bq}$, aika $t = 1\,\text{a}$, a-kohdan $Q = 8{,}961 \cdot 10^{-13}\,\text{J}$, keuhkojen massa $m = 1{,}2\,\text{kg}$, $w_\text{R} = 20$ ja $w_\text{T} = 0{,}12$
+**Kysytty:** efektiivinen annos $H_\text{E}$ vuodessa ja vertailu keskimääräiseen vuosiannokseen
+**Periaate:** Alfahiukkaset pysähtyvät muutaman solun matkalle, joten jokaisen hajoamisen energia jää keuhkokudokseen. Aktiivisuus on hajoamisia sekunnissa, ja puoliintumisaika $87{,}7\,\text{a}$ on niin pitkä, että aktiivisuus pysyy vuoden ajan likimain vakiona. Absorboitunut annos on energia massaa kohti. Alfasäteilyn painotuskerroin antaa keuhkojen ekvivalenttiannoksen, ja koska vain keuhkot säteilytetään, efektiivinen annos saadaan keuhkojen painotuskertoimella.
+**Kaava:** $E = AtQ$, $D = \dfrac{E}{m}$, $H_\text{T} = w_\text{R} D$ ja $H_\text{E} = w_\text{T} H_\text{T}$
+**Muunnokset:** $t = 365{,}25 \cdot 24 \cdot 3600\,\text{s} = 3{,}156 \cdot 10^{7}\,\text{s}$
+**Sijoitus:** $E = 10\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\,\text{s} \cdot 8{,}961 \cdot 10^{-13}\,\text{J} = 2{,}83 \cdot 10^{-4}\,\text{J}$, $D = \dfrac{2{,}83 \cdot 10^{-4}\,\text{J}}{1{,}2\,\text{kg}} = 2{,}36 \cdot 10^{-4}\,\text{Gy}$, $H_\text{T} = 20 \cdot 2{,}36 \cdot 10^{-4}\,\text{Gy} = 4{,}71 \cdot 10^{-3}\,\text{Sv}$ ja $H_\text{E} = 0{,}12 \cdot 4{,}71 \cdot 10^{-3}\,\text{Sv} = 5{,}66 \cdot 10^{-4}\,\text{Sv}$
+**Vastaus:** Efektiivinen annos olisi noin $H_\text{E} \approx 0{,}57\,\text{mSv}$ vuodessa, kaksi merkitsevää numeroa kuten massassa $1{,}2\,\text{kg}$. Se on noin kymmenesosa suomalaisen keskimääräisestä vuosiannoksesta $5{,}9\,\text{mSv}$, vaikka $10\,\text{Bq}$ on hyvin pieni aktiivisuus. Siksi plutoniumin pääsy elimistöön estetään kestävällä keraamisella polttoaineella ja tiiviillä kapseleilla.
+**Järkevyys:** Ulkopuolelta sama $10\,\text{Bq}$:n alfasäteilijä olisi lähes vaaraton, koska alfahiukkaset pysähtyvät ihon kuolleeseen pintakerrokseen. Keuhkoissa kerroin $20$ kasvattaa annoksen, ja kerroin $0{,}12$ pienentää sen koko kehon riskiksi. Tulos on samaa suuruusluokkaa kuin väestön annosraja säteilyn käytöstä, $1\,\text{mSv}$ vuodessa.
+
 ### Hyväksytään myös
 - b-kohdassa hajoamisvakion voi laskea vuosissa ja muuttaa vasta lopuksi sekunteihin, ja massan voi laskea ainemäärän avulla moolimassasta $238\,\tfrac{\text{g}}{\text{mol}}$; vastaukseksi hyväksytään $3{,}5\,\text{kg}$.
 - d-kohdassa voi käyttää muotoa $P = P_0 e^{-\lambda t}$.
+- e-kohdassa hajoamisen energiaksi hyväksytään myös alfahiukkasen liike-energia noin $5{,}5\,\text{MeV}$, jolloin annos on noin $0{,}56\,\text{mSv}$.
 
 ### Yleisiä virheitä
 - a-kohdassa elektronien massat vähennetään atomimassoista erikseen vain toiselta puolelta.
@@ -106,6 +117,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 - c-kohdassa pitkää puoliintumisaikaa pidetään aina parempana, vaikka se tarkoittaa pientä aktiivisuutta.
 - c-kohdassa alfasäteilyä pidetään vaarattomana, vaikka se on hyvin vaarallista elimistön sisällä.
 - d-kohdassa teho vähennetään lineaarisesti, esimerkiksi $\tfrac{14}{87{,}7}$ puolikkaasta.
+- e-kohdassa absorboitunut annos annetaan sieverteinä ilman painotuskertoimia, tai energia jaetaan koko kehon massalla, vaikka vain keuhkot säteilytetään.
 
 ## fy8-s3
 
@@ -113,45 +125,45 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 **Kysytty:** kuvaaja, jonka pisteiden pitäisi oletuksen mukaan olla origon kautta kulkevalla suoralla, ja päätelmä siitä
 **Kuvaaja:** Taustan pulssitaajuus on $R_\text{t} = \dfrac{112}{5{,}0\,\text{min}} = 22{,}4\,\tfrac{1}{\text{min}}$. Se vähennetään jokaisesta lukemasta, jolloin saadaan lähteen nettopulssitaajuus $R$. Jos lähde on pistemäinen ja säteily leviää tasaisesti kaikkiin suuntiin, etäisyydellä $r$ fotonit jakautuvat pallon pinnalle, jonka ala on $4\pi r^2$. Putken ikkunaan osuu silloin osuus, joka on verrannollinen suureeseen $\tfrac{1}{r^2}$, joten oletuksen mukaan $R = \dfrac{K}{r^2}$. Vaaka-akselille valitaan $\tfrac{1}{r^2}$ ja pystyakselille $R$.
 
-| $r\ (\text{cm})$ | $\tfrac{1}{r^2}\ (\tfrac{1}{\text{cm}^2})$ | $R\ (\tfrac{1}{\text{min}})$ | $Rr^2\ (10^{3}\,\tfrac{\text{cm}^2}{\text{min}})$ |
+| $r\ (\text{cm})$ | $1/r^2\ (1/\text{cm}^2)$ | $R\ (1/\text{min})$ | $Rr^2\ (10^{3}\,\text{cm}^2/\text{min})$ |
 |---|---|---|---|
 | $2{,}0$ | $0{,}250$ | $3026$ | $12{,}1$ |
-| $3{,}0$ | $0{,}111$ | $1720$ | $15{,}5$ |
-| $4{,}0$ | $0{,}0625$ | $1149$ | $18{,}4$ |
-| $5{,}0$ | $0{,}0400$ | $787$ | $19{,}7$ |
-| $6{,}0$ | $0{,}0278$ | $606$ | $21{,}8$ |
-| $8{,}0$ | $0{,}0156$ | $358$ | $22{,}9$ |
-| $10{,}0$ | $0{,}0100$ | $250$ | $25{,}0$ |
-| $14{,}0$ | $0{,}0051$ | $128$ | $25{,}0$ |
+| $3{,}0$ | $0{,}111$ | $1784$ | $16{,}1$ |
+| $4{,}0$ | $0{,}0625$ | $1150$ | $18{,}4$ |
+| $5{,}0$ | $0{,}0400$ | $768$ | $19{,}2$ |
+| $6{,}0$ | $0{,}0278$ | $595$ | $21{,}4$ |
+| $8{,}0$ | $0{,}0156$ | $383$ | $24{,}5$ |
+| $10{,}0$ | $0{,}0100$ | $234$ | $23{,}4$ |
+| $14{,}0$ | $0{,}0051$ | $130$ | $25{,}4$ |
 | $20{,}0$ | $0{,}0025$ | $72$ | $28{,}6$ |
 
-<svg data-fig="fy8-s3-inv" viewBox="0 0 600 420" role="img" aria-label="Kuvaaja: nettopulssitaajuus R pulsseina minuutissa etäisyyden neliön käänteisarvon 1 per r toiseen funktiona, vaaka-akseli nollasta 0,26:een per neliösenttimetri ja pystyakseli nollasta 3500:aan per minuutti. Yhdeksän mustaa pistettä: (0,0025; 72), (0,0051; 128), (0,0100; 250), (0,0156; 358), (0,0278; 606), (0,0400; 787), (0,0625; 1149), (0,111; 1720) ja (0,250; 3026). Origosta lähtee katkoviivana suora, joka kulkee kaukaisimman pisteen kautta. Lähimmät pisteet ovat selvästi suoran alapuolella, ja pisteet muodostavat alaspäin kaartuvan käyrän eivätkä suoraa." style="max-width:100%;font-size:24px">
-  <line x1="171" y1="370" x2="171" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="242.5" y1="370" x2="242.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="313.5" y1="370" x2="313.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="384.5" y1="370" x2="384.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="456" y1="370" x2="456" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="100" y1="325.5" x2="470" y2="325.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="100" y1="281.5" x2="470" y2="281.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="100" y1="237" x2="470" y2="237" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="100" y1="193" x2="470" y2="193" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="100" y1="148.5" x2="470" y2="148.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="100" y1="104.5" x2="470" y2="104.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="100" y1="60" x2="470" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="99" y1="370" x2="484" y2="370" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M496,370 L483,376 L483,364 Z" fill="#1f2933" stroke-linejoin="round"/>
+<svg data-fig="fy8-s3-inv" viewBox="0 0 600 420" role="img" aria-label="Kuvaaja: nettopulssitaajuus R pulsseina minuutissa etäisyyden neliön käänteisarvon 1 per r toiseen funktiona, vaaka-akseli nollasta 0,26:een per neliösenttimetri ja pystyakseli nollasta 3500:aan per minuutti. Yhdeksän mustaa pistettä: (0,0025; 72), (0,0051; 130), (0,0100; 234), (0,0156; 383), (0,0278; 595), (0,0400; 768), (0,0625; 1150), (0,111; 1784) ja (0,250; 3026). Origosta lähtee katkoviivana suora, joka kulkee kaukaisimman pisteen kautta. Lähimmät pisteet ovat selvästi suoran alapuolella, ja pisteet muodostavat alaspäin kaartuvan käyrän eivätkä suoraa." style="max-width:100%;font-size:24px">
+  <line x1="161.5" y1="370" x2="161.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="223" y1="370" x2="223" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="284.5" y1="370" x2="284.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="346" y1="370" x2="346" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="407.5" y1="370" x2="407.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="100" y1="325.5" x2="420" y2="325.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="100" y1="281.5" x2="420" y2="281.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="100" y1="237" x2="420" y2="237" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="100" y1="193" x2="420" y2="193" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="100" y1="148.5" x2="420" y2="148.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="100" y1="104.5" x2="420" y2="104.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="100" y1="60" x2="420" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="99" y1="370" x2="434" y2="370" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M446,370 L433,376 L433,364 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="100" y1="371" x2="100" y2="46" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M100,34 L106,47 L94,47 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="171" y1="370" x2="171" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="142" y="379.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}05$</div></foreignObject>
-  <line x1="242.5" y1="370" x2="242.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="213.5" y="379.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}10$</div></foreignObject>
-  <line x1="313.5" y1="370" x2="313.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="284.5" y="379.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}15$</div></foreignObject>
-  <line x1="384.5" y1="370" x2="384.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="355.5" y="379.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}20$</div></foreignObject>
-  <line x1="456" y1="370" x2="456" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="427" y="379.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}25$</div></foreignObject>
+  <line x1="161.5" y1="370" x2="161.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="132.5" y="379.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}05$</div></foreignObject>
+  <line x1="223" y1="370" x2="223" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="194" y="379.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}10$</div></foreignObject>
+  <line x1="284.5" y1="370" x2="284.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="255.5" y="379.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}15$</div></foreignObject>
+  <line x1="346" y1="370" x2="346" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="317" y="379.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}20$</div></foreignObject>
+  <line x1="407.5" y1="370" x2="407.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="378.5" y="379.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0{,}25$</div></foreignObject>
   <line x1="93" y1="325.5" x2="100" y2="325.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="93" y1="281.5" x2="100" y2="281.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="30" y="267" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1000$</div></foreignObject>
@@ -163,40 +175,40 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
   <foreignObject x="30" y="90" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$3000$</div></foreignObject>
   <line x1="93" y1="60" x2="100" y2="60" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="70" y="375.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
-  <foreignObject x="502" y="355.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\tfrac{1}{r^2}\ (\tfrac{1}{\text{cm}^2})$</div></foreignObject>
-  <foreignObject x="90" y="3.5" width="87" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R\ (\tfrac{1}{\text{min}})$</div></foreignObject>
-  <polyline points="100,370 274,60" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="9 6"/>
-  <foreignObject x="284" y="63" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$R \sim \tfrac{1}{r^2}$</div></foreignObject>
-  <circle cx="456" cy="102" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="258" cy="217.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="189" cy="268.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="157" cy="300.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="139.5" cy="316.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="122" cy="338.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="114" cy="348" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="107.5" cy="358.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="103.5" cy="363.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <foreignObject x="452" y="355.5" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1/r^2\ (1/\text{cm}^2)$</div></foreignObject>
+  <foreignObject x="90" y="3.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R\ (1/\text{min})$</div></foreignObject>
+  <polyline points="100,370 250.5,60" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="9 6"/>
+  <foreignObject x="260.5" y="63" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$R \sim 1/r^2$</div></foreignObject>
+  <circle cx="407.5" cy="102" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="237" cy="212" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="177" cy="268" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="149" cy="302" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="134" cy="317.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="119" cy="336" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="112.5" cy="349.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="106.5" cy="358.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="103" cy="363.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
 </svg>
 
-**Mallivastaus:** Pisteet eivät asetu origon kautta kulkevalle suoralle. Kaukaisimman pisteen kautta piirretty origosuora kulkee lähimpien pisteiden yläpuolella, ja pisteet muodostavat alaspäin kaartuvan käyrän. Saman näkee taulukon tulosta $Rr^2$: oletuksen mukaan se olisi vakio, mutta se kasvaa etäisyyden kasvaessa noin $12\,000$:sta $29\,000$:een. Pulssitaajuus siis kasvaa lähdettä lähestyttäessä hitaammin kuin $\tfrac{1}{r^2}$. Oletus ei sellaisenaan päde ainakaan lähellä lähdettä, joten jokin sen osista on väärä: esimerkiksi etäisyys ei ole oikea etäisyys lähteestä siihen kohtaan, jossa säteily havaitaan.
+**Mallivastaus:** Pisteet eivät asetu origon kautta kulkevalle suoralle. Kaukaisimman pisteen kautta piirretty origosuora kulkee lähimpien pisteiden yläpuolella, ja pisteet muodostavat alaspäin kaartuvan käyrän. Saman näkee taulukon tulosta $Rr^2$: oletuksen mukaan se olisi vakio, mutta satunnaisvaihtelua lukuun ottamatta se kasvaa etäisyyden kasvaessa noin $12\,000$:sta $29\,000$:een. Pulssitaajuus siis kasvaa lähdettä lähestyttäessä hitaammin kuin $\tfrac{1}{r^2}$. Oletus ei sellaisenaan päde ainakaan lähellä lähdettä, joten jokin sen osista on väärä: esimerkiksi etäisyys ei ole oikea etäisyys lähteestä siihen kohtaan, jossa säteily havaitaan.
 
 ### b)
 **Kysytty:** kuvaaja, jonka pisteiden pitäisi mallin $R = \dfrac{K}{(r + d)^2}$ mukaan olla suoralla, ja siitä matka $d$
-**Kuvaaja:** Mallista saadaan $\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \cdot r + \dfrac{d}{\sqrt{K}}$. Suure $\tfrac{1}{\sqrt{R}}$ on siis $r$:n ensimmäisen asteen funktio, ja suora leikkaa $r$-akselin kohdassa $r = -d$. Vaaka-akselille valitaan $r$ ja pystyakselille $\tfrac{1}{\sqrt{R}} = R^{-1/2}$, jonka yksikkö on $\sqrt{\text{min}} = \text{min}^{1/2}$. Esimerkiksi $20\,\text{cm}$:ssä $\dfrac{1}{\sqrt{71{,}6\,\tfrac{1}{\text{min}}}} = 0{,}1182\,\sqrt{\text{min}} = 11{,}82 \cdot 10^{-2}\,\sqrt{\text{min}}$.
+**Kuvaaja:** Mallista saadaan $\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \cdot r + \dfrac{d}{\sqrt{K}}$. Suure $\tfrac{1}{\sqrt{R}}$ on siis $r$:n ensimmäisen asteen funktio, ja suora leikkaa $r$-akselin kohdassa $r = -d$. Vaaka-akselille valitaan $r$ ja pystyakselille $\tfrac{1}{\sqrt{R}} = R^{-1/2}$, jonka yksikkö on $\sqrt{\text{min}} = \text{min}^{1/2}$. Esimerkiksi $20\,\text{cm}$:ssä $R = 71{,}6\,\tfrac{1}{\text{min}}$, joten $\tfrac{1}{\sqrt{R}} = 11{,}82 \cdot 10^{-2}\,\sqrt{\text{min}}.$
 
 | $r\ (\text{cm})$ | $\tfrac{1}{\sqrt{R}}\ (10^{-2}\,\sqrt{\text{min}})$ |
 |---|---|
 | $2{,}0$ | $1{,}82$ |
-| $3{,}0$ | $2{,}41$ |
+| $3{,}0$ | $2{,}37$ |
 | $4{,}0$ | $2{,}95$ |
-| $5{,}0$ | $3{,}57$ |
-| $6{,}0$ | $4{,}06$ |
-| $8{,}0$ | $5{,}29$ |
-| $10{,}0$ | $6{,}33$ |
-| $14{,}0$ | $8{,}85$ |
+| $5{,}0$ | $3{,}61$ |
+| $6{,}0$ | $4{,}10$ |
+| $8{,}0$ | $5{,}11$ |
+| $10{,}0$ | $6{,}54$ |
+| $14{,}0$ | $8{,}78$ |
 | $20{,}0$ | $11{,}82$ |
 
-<svg data-fig="fy8-s3-lin" viewBox="0 0 600 450" role="img" aria-label="Kuvaaja: nettopulssitaajuuden neliöjuuren käänteisarvo, R potenssiin miinus yksi kahdesosa, yksikössä 10 potenssiin miinus 2 minuutti potenssiin yksi kahdesosa etäisyyden r funktiona, r miinus kahdesta 22 senttimetriin. Yhdeksän mustaa pistettä: (2,0; 1,82), (3,0; 2,41), (4,0; 2,95), (5,0; 3,57), (6,0; 4,06), (8,0; 5,29), (10,0; 6,33), (14,0; 8,85) ja (20,0; 11,82). Pisteisiin on sovitettu suora, ja sitä on jatkettu katkoviivana r-akselille, jonka se leikkaa kohdassa r = −1,3 cm. Suoralta on merkitty piste (20,0; 12,0) ja leikkauskohta (−1,3; 0)." style="max-width:100%;font-size:24px">
+<svg data-fig="fy8-s3-lin" viewBox="0 0 600 450" role="img" aria-label="Kuvaaja: nettopulssitaajuuden neliöjuuren käänteisarvo, R potenssiin miinus yksi kahdesosa, yksikössä 10 potenssiin miinus 2 minuutti potenssiin yksi kahdesosa etäisyyden r funktiona, r miinus kahdesta 22 senttimetriin. Yhdeksän mustaa pistettä: (2,0; 1,82), (3,0; 2,37), (4,0; 2,95), (5,0; 3,61), (6,0; 4,10), (8,0; 5,11), (10,0; 6,54), (14,0; 8,78) ja (20,0; 11,82). Pisteisiin on sovitettu suora, ja sitä on jatkettu katkoviivana r-akselille, jonka se leikkaa kohdassa r = −1,3 cm. Suoralta on merkitty piste (20,0; 12,0) ja leikkauskohta (−1,3; 0)." style="max-width:100%;font-size:24px">
   <line x1="122.5" y1="396" x2="122.5" y2="84" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="155" y1="396" x2="155" y2="84" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="187.5" y1="396" x2="187.5" y2="84" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -269,13 +281,13 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
   <polyline points="101,396 155,351.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
   <polyline points="155,351.5 472,88.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="155" cy="352.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="171" cy="338" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="171" cy="339" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="187.5" cy="325" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="204" cy="310.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="220" cy="298.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="252.5" cy="269" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="285" cy="244" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="350" cy="183.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="204" cy="309.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="220" cy="297.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="252.5" cy="273.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="285" cy="239" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="350" cy="185" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="447.5" cy="112.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <circle cx="101.5" cy="396" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
   <circle cx="447.5" cy="108" r="11" fill="none" stroke="#1f2933" stroke-width="1.5"/>
@@ -344,17 +356,19 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 **Kaava:** $\dfrac{7 - N_n}{N_n} = 7{,}16$, josta $N_n = \dfrac{7}{1 + 7{,}16}$. Hajoamislaista $N_n = N_0 \left(\tfrac{1}{2}\right)^{t / T_{1/2}}$, missä $N_0 = 1$, saadaan $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{N_0}{N_n}}{\lg 2}$.
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $N_n = \dfrac{7}{8{,}163} = 0{,}8575$, $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{1}{0{,}8575}}{\lg 2} = \dfrac{0{,}0668}{0{,}3010} = 0{,}222$, joten $t = 0{,}222 \cdot 609\,\text{s} = 135\,\text{s}$ hetkestä $1\,\text{s}$ lähtien.
-**Vastaus:** Ytimiä alkoi syntyä noin $1\,\text{s} + 135\,\text{s} \approx 136\,\text{s}$ eli noin $2\,\text{min}$ alkuräjähdyksen jälkeen. Kaksi merkitsevää numeroa riittää, koska alkusuhde tunnetaan vain likimain.
-**Järkevyys:** Neutroneista hajosi vain noin $14\,\%$, joten aikaa kului vähemmän kuin yksi puoliintumisaika. Tulos on samaa suuruusluokkaa kuin luvun *Maailmankaikkeuden kehitys* tieto, että ytimiä alkoi syntyä noin kolmen minuutin kohdalla.
+**Vastaus:** Ytimiä alkoi syntyä noin $1\,\text{s} + 135\,\text{s} \approx 140\,\text{s}$ eli noin $2\,\text{min}$ alkuräjähdyksen jälkeen. Kaksi merkitsevää numeroa riittää, koska alkusuhde tunnetaan vain likimain.
+**Järkevyys:** Neutroneista hajosi vain noin $14\,\%$, joten aikaa kului vähemmän kuin yksi puoliintumisaika. Tulos on minuuttien suuruusluokkaa; d-kohdassa sitä verrataan tarkempien mallien noin kolmeen minuuttiin.
 
 ### d)
-**Kysytty:** muuttuuko c-kohdan tulos vähän, jos alkusuhde on $1 : 5$, ja mitä tulos edellyttää
+**Kysytty:** muuttuuko c-kohdan tulos vähän, jos alkusuhde on $1 : 5$, mitä tulos edellyttää ja miten se sopii tarkempien mallien noin kolmeen minuuttiin
 **Periaate:** Lasketaan sama aika suhteella $1 : 5$: nukleoneja on nyt $6$ jokaista alkuperäistä neutronia kohti. Tuloksen herkkyys kertoo, kuinka luotettava menetelmä on.
 **Mallivastaus:** *Lasku.* Neutroneja on jäljellä $N_n = \dfrac{6}{1 + 7{,}16} = 0{,}735$, joten $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{1}{0{,}735}}{\lg 2} = 0{,}444$ ja $t = 0{,}444 \cdot 609\,\text{s} = 270\,\text{s}$. Ytimet syntyisivät noin $271\,\text{s}$ eli noin $4{,}5\,\text{min}$ alkuräjähdyksen jälkeen.
 
-*Arvio.* Väite on väärä: aika lähes kaksinkertaistuu, vaikka alkusuhde muuttui vain vähän. Syy on se, että neutroneista ehtii hajota vain pieni osa: jos alkusuhde on lähempänä loppusuhdetta, neutroneja tarvitsee hajota vähemmän ja aika lyhenee, ja kaukana olevassa tilanteessa päinvastoin. Pieni muutos alkusuhteessa muuttaa siksi aikaa suhteessa paljon. Menetelmä antaa oikean suuruusluokan, muutamia minuutteja, mutta ei tarkkaa aikaa.
+*Arvio.* Väite on väärä: aika lähes kaksinkertaistuu, vaikka alkusuhde muuttui vain vähän. Syy on se, että aika riippuu siitä, kuinka suuri osa neutroneista ehtii hajota. Suhteella $1 : 6$ neutroneista hajoaa vain noin $14\,\%$, suhteella $1 : 5$ noin $26\,\%$. Kun hajoava osuus on näin pieni, pienikin muutos alkusuhteessa muuttaa sitä ja samalla aikaa suhteessa paljon. Menetelmä antaa oikean suuruusluokan, muutamia minuutteja, mutta ei tarkkaa aikaa.
 
-*Oletukset.* c-kohdan tulos edellyttää, että hetken $1\,\text{s}$ jälkeen neutroneja muuttui protoneiksi vain vapaan neutronin hajoamisessa eikä muissa reaktioissa, että ytimet syntyivät käytännössä yhdellä hetkellä ja että lähes kaikki neutronit päätyivät helium-4:ään. Luvun *Maailmankaikkeuden kehitys* mukaan ytimiä alkoi syntyä noin kolmen minuutin kohdalla, joten molemmat tulokset ovat oikeaa suuruusluokkaa.
+*Oletukset.* c-kohdan tulos edellyttää, että hetken $1\,\text{s}$ jälkeen neutroneja muuttui protoneiksi vain vapaan neutronin hajoamisessa eikä muissa reaktioissa, että ytimet syntyivät käytännössä yhdellä hetkellä ja että lähes kaikki neutronit päätyivät helium-4:ään.
+
+*Vertailu.* Tarkempien mallien mukaan ytimiä alkoi syntyä noin kolmen minuutin kuluttua. c-kohdan noin $2\,\text{min}$ ja suhteen $1 : 5$ noin $4{,}5\,\text{min}$ ovat molemmat samaa suuruusluokkaa: minuutteja, ei sekunteja eikä tunteja. Yksinkertainen malli antaa siis oikean suuruusluokan.
 
 ### Hyväksytään myös
 - c-kohdan voi ratkaista muodosta $N = N_0 e^{-\lambda t}$, kun $\lambda = \tfrac{\ln 2}{609\,\text{s}}$.
@@ -389,17 +403,17 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 *Sammuminen.* Fissioiden energia muuttui lämmöksi, ja malmi kuumeni niin, että vesi kiehui pois. Ilman hidastinta neutronit pysyivät nopeina, kasvukerroin putosi alle ykkösen ja ketjureaktio sammui. Kun malmi jäähtyi, vettä virtasi takaisin ja reaktio käynnistyi uudelleen. Tämä selittää havaitut jaksot, noin puoli tuntia toimintaa ja parin tunnin tauko. Reaktori säätyi siis itse, samaan tapaan kuin kevytvesireaktori, jossa kiehuminen pienentää hidastuskykyä.
 
 ### c)
-**Annettu:** teho $P = 100\,\text{kW}$, aika $t = 150\,000\,\text{a}$, yhden fission energia $E_\text{f} = 200\,\text{MeV}$, uraani-235:n atomimassa $235{,}04\,\text{u}$ ja Olkiluoto 3:n lämpöteho $P_\text{OL3} = 4300\,\text{MW}$
-**Kysytty:** fissioituneen uraani-235:n massa $m$ ja aika, jossa Olkiluoto 3 tuottaa saman energian
-**Periaate:** Reaktorien tuottama energia on teho kertaa aika. Fissioiden määrä on tämä energia jaettuna yhden fission energialla, ja massa on fissioiden määrä kertaa yhden uraani-235-atomin massa. Oletetaan, että koko teho tuli uraani-235:n fissioista.
-**Kaava:** $E = Pt$, $n = \dfrac{E}{E_\text{f}}$, $m = n \cdot m_{235}$ ja $t_\text{OL3} = \dfrac{E}{P_\text{OL3}}$
-**Muunnokset:** $t = 150\,000 \cdot 365{,}25 \cdot 24 \cdot 3600\,\text{s} = 4{,}734 \cdot 10^{12}\,\text{s}$. $E_\text{f} = 200 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}204 \cdot 10^{-11}\,\text{J}$. $m_{235} = 235{,}04 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg} = 3{,}903 \cdot 10^{-25}\,\text{kg}$.
-**Sijoitus:** $E = 100 \cdot 10^{3}\,\text{W} \cdot 4{,}734 \cdot 10^{12}\,\text{s} = 4{,}73 \cdot 10^{17}\,\text{J}$, $n = \dfrac{4{,}73 \cdot 10^{17}\,\text{J}}{3{,}204 \cdot 10^{-11}\,\text{J}} = 1{,}48 \cdot 10^{28}$, $m = 1{,}48 \cdot 10^{28} \cdot 3{,}903 \cdot 10^{-25}\,\text{kg} = 5{,}77 \cdot 10^{3}\,\text{kg}$ ja $t_\text{OL3} = \dfrac{4{,}73 \cdot 10^{17}\,\text{J}}{4300 \cdot 10^{6}\,\text{W}} = 1{,}10 \cdot 10^{8}\,\text{s} = 3{,}5\,\text{a}$
-**Vastaus:** Oklossa fissioitui noin $m \approx 5{,}8\,\text{t}$ eli suuruusluokaltaan $6\,\text{t}$ uraani-235:tä. Olkiluoto 3 tuottaa saman energian noin $3{,}5$ vuodessa. Teho ja aika ovat vain suuruusluokka-arvioita, joten tuloksessakin on korkeintaan kaksi merkitsevää numeroa.
-**Järkevyys:** Luonnonreaktorin teho oli noin $40\,000$ kertaa pienempi kuin Olkiluoto 3:n, mutta se toimi noin $40\,000$ kertaa kauemmin kuin $3{,}5$ vuotta. Tulos on samaa suuruusluokkaa kuin kirjallisuuden arviot muutamasta tonnista. Malmin uraani-235:n osuus pieneni vain osittain, joten malmissa on täytynyt olla satoja tonneja uraania.
+**Annettu:** Oklon teho $P_\text{O} = 100\,\text{kW}$, aika $t_\text{O} = 150\,000\,\text{a}$ ja Olkiluoto 3:n lämpöteho $P_\text{OL3} = 4300\,\text{MW}$
+**Kysytty:** aika $t_\text{OL3}$, jossa Olkiluoto 3 tuottaa saman energian
+**Periaate:** Lämpöenergia on teho kertaa aika. Kun molemmat tuottavat saman energian, ajat ovat kääntäen verrannollisia tehoihin.
+**Kaava:** $P_\text{O} t_\text{O} = P_\text{OL3} t_\text{OL3}$, josta $t_\text{OL3} = \dfrac{P_\text{O}}{P_\text{OL3}}\, t_\text{O}$
+**Muunnokset:** $P_\text{O} = 100\,\text{kW} = 0{,}100\,\text{MW}$. Aikaa ei tarvitse muuntaa sekunneiksi, koska tulos saadaan suoraan vuosina.
+**Sijoitus:** $t_\text{OL3} = \dfrac{0{,}100\,\text{MW}}{4300\,\text{MW}} \cdot 150\,000\,\text{a} = 3{,}49\,\text{a}$
+**Vastaus:** Olkiluoto 3 tuottaa saman energian noin $3{,}5$ vuodessa. Teho ja aika ovat vain suuruusluokka-arvioita, joten tuloksessa on korkeintaan kaksi merkitsevää numeroa.
+**Järkevyys:** Luonnonreaktorin teho oli noin $43\,000$ kertaa pienempi kuin Olkiluoto 3:n, mutta se toimi noin $43\,000$ kertaa kauemmin kuin $3{,}5$ vuotta. Energia on $E = 100 \cdot 10^{3}\,\text{W} \cdot 4{,}73 \cdot 10^{12}\,\text{s} \approx 4{,}7 \cdot 10^{17}\,\text{J}$. Yhden fission noin $200\,\text{MeV}$:n avulla se vastaa noin $1{,}5 \cdot 10^{28}$ fissiota eli noin $6\,\text{t}$ uraani-235:tä, mikä on samaa suuruusluokkaa kuin kirjallisuuden arviot.
 
 ### d)
-**Kysytty:** arvio väitteestä, että Oklon perusteella Onkalon loppusijoitus on varmasti turvallinen
+**Kysytty:** miten plutoniumin pysyminen paikallaan voidaan päätellä, ja arvio väitteestä, että Oklon perusteella Onkalon loppusijoitus on varmasti turvallinen
 **Periaate:** Luonnon esimerkki voi tukea mallia, jos olosuhteet ovat samankaltaiset, mutta se ei todista toisen paikan turvallisuutta. On myös tarkistettava, mitä Oklossa voidaan ylipäätään havaita: plutonium-239:n puoliintumisaika on $24\,100\,\text{a}$.
 **Mallivastaus:** *Mitä Oklossa nähdään.* Kahdessa miljardissa vuodessa on kulunut $2{,}0 \cdot 10^{9}\,\text{a} : 24\,100\,\text{a} \approx 83\,000$ plutonium-239:n puoliintumisaikaa, joten plutoniumia ei ole jäljellä yhtään. Sen pysyminen paikallaan päätellään sen hajoamistuotteesta: plutonium-239 hajoaa alfahajoamisella uraani-235:ksi, ja tätä uraania on löytynyt samoista kohdista. Monet fissiotuotteet ovat myös pysyneet lähellä syntypaikkaansa, mutta osa liikkuvammista aineista on kulkeutunut pois.
 
@@ -410,11 +424,11 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 ### Hyväksytään myös
 - a-kohdan voi laskea myös isotooppien määrien suhteena $\dfrac{0{,}720}{99{,}274} \cdot 2^{t / T_{235} - t / T_{238}} \approx 0{,}038$, josta osuus on $\dfrac{0{,}038}{1{,}038} \approx 3{,}7\,\%$, tai muodosta $N = N_0 e^{-\lambda t}$.
 - a-kohdan vastaukseksi hyväksytään $3{,}7\,\%$ ja suhde noin $1 : 26$.
-- c-kohdan vastaukseksi hyväksytään $6\,\text{t}$ ja $5{,}8\,\text{t}$; Olkiluoto 3:n ajaksi noin $3$–$4$ vuotta.
+- c-kohdan voi laskea myös energian kautta jouleina, $E = P_\text{O} t_\text{O} \approx 4{,}7 \cdot 10^{17}\,\text{J}$ ja $t_\text{OL3} = \dfrac{E}{P_\text{OL3}} \approx 1{,}1 \cdot 10^{8}\,\text{s}$; vastaukseksi hyväksytään $3{,}5\,\text{a}$.
 
 ### Yleisiä virheitä
 - a-kohdassa lasketaan vain uraani-235:n määrä taaksepäin ja jaetaan se nykyisellä uraani-238:n määrällä.
 - a-kohdassa kerrotaan, kun pitäisi jakaa: osuudeksi saadaan nykyistä pienempi, vaikka uraani-235 hajoaa nopeammin.
 - b-kohdassa vesi selitetään jäähdytteeksi, joka sammuttaa reaktion, vaikka sen tehtävä on hidastaa neutroneja.
-- c-kohdassa vuosia ei muunneta sekunneiksi tai megaelektronivoltteja jouleiksi.
+- c-kohdassa kilowatit ja megawatit sekoitetaan, jolloin tulos on tuhatkertaisesti väärä.
 - d-kohdassa Oklon havaintoa pidetään joko todisteena Onkalon turvallisuudesta tai täysin merkityksettömänä.

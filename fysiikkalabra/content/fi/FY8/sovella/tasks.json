@@ -272,6 +272,39 @@
        "detail": "Laskussa oletettiin hyötysuhde vakioksi. Lämpösähköparit vanhenevat, joten hyötysuhde pienenee, ja hajoamislaki antaa sähköteholle vain ylärajan."
       }
      ]
+    },
+    {
+     "id": "e",
+     "kind": "calc",
+     "points": 4,
+     "text": "Plutonium-238 on vaarallisinta, jos sitä joutuu elimistöön. Oletetaan, että laukaisuonnettomuudessa ihmisen keuhkoihin jäisi plutoniumdioksidipölyä, jonka aktiivisuus on $10\\,\\text{Bq}$, ja että pöly pysyisi keuhkoissa koko vuoden. Keuhkojen massa on $1{,}2\\,\\text{kg}$, alfasäteilyn painotuskerroin on $20$ ja keuhkojen kudoksen painotuskerroin $0{,}12$. Kuinka suuri efektiivinen annos tästä aiheutuisi vuodessa? Vertaa tulosta suomalaisen keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$.",
+     "answer": {
+      "value": 0.57,
+      "unit": "mSv",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "text": "Perustelee, että alfahiukkaset pysähtyvät keuhkokudokseen, joten vuodessa siihen absorboituu energia $E = AtQ$, kun aktiivisuus pysyy vuoden ajan likimain vakiona, ja laskee $E \\approx 2{,}8 \\cdot 10^{-4}\\,\\text{J}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$D = \\dfrac{E}{m}$, $H_\\text{T} = w_\\text{R} D$ ja $H_\\text{E} = w_\\text{T} H_\\text{T}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$H_\\text{E} \\approx 0{,}57\\,\\text{mSv}$ eli noin $0{,}6\\,\\text{mSv}$ vuodessa."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Annos on noin kymmenesosa suomalaisen keskimääräisestä vuosiannoksesta, vaikka $10\\,\\text{Bq}$ on hyvin pieni aktiivisuus: elimistön sisällä alfasäteilijä on vaarallinen, ja siksi plutoniumin pääsy elimistöön estetään."
+      }
+     ]
     }
    ],
    "links": {
@@ -286,7 +319,7 @@
    "title": "Koulun cesiumlähde",
    "source": "example",
    "source_note": "Pulssimäärät on laskettu mallista ja niihin on lisätty satunnaisvaihtelua mittauksen tapaan; ne eivät ole oikean mittauksen tuloksia. Ulkoilman taustasäteilyn annosnopeus: STUK (2026).",
-   "text": "Lukion fysiikan luokassa on suljettu cesium-137-säteilylähde. Opiskelijat asettivat lähteen GM-putken eteen ja laskivat pulssit $1{,}0\\,\\text{min}$:n ajan eri etäisyyksillä $r$. Etäisyys mitattiin lähteestä putken ikkunaan millimetriasteikolla. Ennen mittausta he mittasivat taustasäteilyä ilman lähdettä ja saivat $112$ pulssia $5{,}0\\,\\text{min}$:ssa.\n\n| $r\\ (\\text{cm})$ | pulsseja $1{,}0\\,\\text{min}$:ssa |\n|---|---|\n| $2{,}0$ | $3048$ |\n| $3{,}0$ | $1742$ |\n| $4{,}0$ | $1171$ |\n| $5{,}0$ | $809$ |\n| $6{,}0$ | $628$ |\n| $8{,}0$ | $380$ |\n| $10{,}0$ | $272$ |\n| $14{,}0$ | $150$ |\n| $20{,}0$ | $94$ |\n\nRadioaktiivinen hajoaminen on satunnaista. Kun pulsseja lasketaan $N$, niiden määrän satunnaisvaihtelu on noin $\\sqrt{N}$.",
+   "text": "Lukion fysiikan luokassa on suljettu cesium-137-säteilylähde. Opiskelijat asettivat lähteen GM-putken eteen ja laskivat pulssit $1{,}0\\,\\text{min}$:n ajan eri etäisyyksillä $r$. Etäisyys mitattiin lähteestä putken ikkunaan millimetriasteikolla. Ennen mittausta he mittasivat taustasäteilyä ilman lähdettä ja saivat $112$ pulssia $5{,}0\\,\\text{min}$:ssa.\n\n| $r\\ (\\text{cm})$ | pulsseja $1{,}0\\,\\text{min}$:ssa |\n|---|---|\n| $2{,}0$ | $3048$ |\n| $3{,}0$ | $1806$ |\n| $4{,}0$ | $1172$ |\n| $5{,}0$ | $790$ |\n| $6{,}0$ | $617$ |\n| $8{,}0$ | $405$ |\n| $10{,}0$ | $256$ |\n| $14{,}0$ | $152$ |\n| $20{,}0$ | $94$ |\n\nRadioaktiivinen hajoaminen on satunnaista. Kun pulsseja lasketaan $N$, niiden määrän satunnaisvaihtelu on noin $\\sqrt{N}$.",
    "parts": [
     {
      "id": "a",
@@ -316,7 +349,7 @@
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Oletus ei sellaisenaan päde lähellä lähdettä: pulssitaajuus kasvaa lähestyttäessä hitaammin kuin $\\tfrac{1}{r^2}$, joten jokin oletuksista, esimerkiksi etäisyyden mittaustapa, ei pidä."
+       "detail": "Oletus ei sellaisenaan päde lähellä lähdettä: pulssitaajuus kasvaa lähestyttäessä hitaammin kuin $\\tfrac{1}{r^2}$. Todennäköisin syy on, että mitattu etäisyys $r$ ei ole etäisyys putken havaintokohtaan."
       }
      ]
     },
@@ -528,7 +561,7 @@
      "id": "d",
      "kind": "word",
      "points": 4,
-     "text": "Hetken $1\\,\\text{s}$ neutronien ja protonien suhde tunnetaan vain likimain. Opiskelija väittää: ”Jos suhde olisi ollut $1 : 5$ eikä $1 : 6$, c-kohdan tulos muuttuisi vain vähän, joten menetelmä on luotettava.” Arvioi väitettä laskemalla. Mitä muuta c-kohdan tulos edellyttää?",
+     "text": "Hetken $1\\,\\text{s}$ neutronien ja protonien suhde tunnetaan vain likimain. Opiskelija väittää: ”Jos suhde olisi ollut $1 : 5$ eikä $1 : 6$, c-kohdan tulos muuttuisi vain vähän, joten menetelmä on luotettava.” Arvioi väitettä laskemalla. Mitä muuta c-kohdan tulos edellyttää? Tarkempien mallien mukaan ytimiä alkoi syntyä noin kolmen minuutin kuluttua alkuräjähdyksestä. Miten hyvin c-kohdan tulos sopii tähän?",
      "criteria": [
       {
        "key": "calculation",
@@ -546,7 +579,7 @@
        "detail": "c-kohta olettaa, että hetken $1\\,\\text{s}$ jälkeen neutroneja muuttui protoneiksi vain vapaan neutronin hajoamisessa ja että ytimet syntyivät yhdellä hetkellä."
       },
       {
-       "text": "Vertaa tulosta lukujen tietoon, että ytimiä syntyi noin kolmen minuutin kohdalla, ja toteaa suuruusluokan oikeaksi.",
+       "text": "Vertaa c-kohdan tulosta tarkempien mallien noin kolmeen minuuttiin ja toteaa suuruusluokan oikeaksi: minuutteja, ei sekunteja eikä tunteja.",
        "tag": "communication",
        "points": 1
       }
@@ -636,33 +669,28 @@
     {
      "id": "c",
      "kind": "calc",
-     "points": 4,
-     "text": "Arvioiden mukaan Oklon reaktorien yhteinen lämpöteho oli keskimäärin noin $100\\,\\text{kW}$, ja ne toimivat jaksoittain yhteensä noin $150\\,000$ vuoden ajan. Yksi uraani-235:n fissio vapauttaa keskimäärin noin $200\\,\\text{MeV}$. Kuinka paljon uraani-235:tä fissioitui? Kuinka kauan Olkiluoto 3:n reaktorilta, jonka lämpöteho on $4300\\,\\text{MW}$, kuluu saman energian tuottamiseen? Uraani-235:n atomimassa on $235{,}04\\,\\text{u}$, $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+     "points": 3,
+     "text": "Arvioiden mukaan Oklon reaktorien yhteinen lämpöteho oli keskimäärin noin $100\\,\\text{kW}$, ja ne toimivat jaksoittain yhteensä noin $150\\,000$ vuoden ajan. Kuinka kauan Olkiluoto 3:n reaktorilta, jonka lämpöteho on $4300\\,\\text{MW}$, kuluu saman energian tuottamiseen?",
      "answer": {
-      "value": 5.8,
-      "unit": "t",
-      "tolerance": 0.03
+      "value": 3.5,
+      "unit": "a",
+      "tolerance": 0.05
      },
      "criteria": [
       {
-       "text": "Perustelee, että energia on teho kertaa aika ja fissioiden määrä energia jaettuna yhden fission energialla, kun $200\\,\\text{MeV}$ on muunnettu jouleiksi sijoittamalla.",
-       "tag": "transfer",
-       "points": 1
-      },
-      {
-       "key": "calculation",
+       "key": "equation",
        "points": 1,
-       "detail": "$E \\approx 4{,}7 \\cdot 10^{17}\\,\\text{J}$ ja fissioita noin $1{,}5 \\cdot 10^{28}$."
+       "detail": "Energia on teho kertaa aika, $P_\\text{O} t_\\text{O} = P_\\text{OL3} t_\\text{OL3}$, josta $t_\\text{OL3} = \\dfrac{P_\\text{O}}{P_\\text{OL3}}\\, t_\\text{O}$."
       },
       {
        "key": "units_precision",
        "points": 1,
-       "detail": "Noin $5{,}8\\,\\text{t}$ eli suuruusluokaltaan $6\\,\\text{t}$ uraani-235:tä."
+       "detail": "Noin $3{,}5\\,\\text{a}$, kun tehot on muunnettu samaan yksikköön."
       },
       {
        "key": "reasonableness",
        "points": 1,
-       "detail": "Olkiluoto 3 tuottaa saman energian noin $1{,}1 \\cdot 10^{8}\\,\\text{s}$:ssa eli noin $3{,}5$ vuodessa: luonnonreaktori oli hyvin pieni, mutta se toimi hyvin kauan."
+       "detail": "Luonnonreaktorin teho oli noin $43\\,000$ kertaa pienempi kuin Olkiluoto 3:n, mutta se toimi noin $43\\,000$ kertaa kauemmin: se oli pieni mutta hyvin pitkäikäinen."
       }
      ]
     },
@@ -670,10 +698,10 @@
      "id": "d",
      "kind": "word",
      "points": 4,
-     "text": "Kirjoittaja väittää: ”Oklon fissiotuotteet ja plutonium ovat pysyneet kalliossa paikallaan kaksi miljardia vuotta. Siksi on varmaa, että Onkaloon loppusijoitettu käytetty polttoaine pysyy turvallisesti paikallaan.” Arvioi väitettä.",
+     "text": "Kirjoittaja väittää: ”Oklon fissiotuotteet ja plutonium ovat pysyneet kalliossa paikallaan kaksi miljardia vuotta. Siksi on varmaa, että Onkaloon loppusijoitettu käytetty polttoaine pysyy turvallisesti paikallaan.” Plutonium-239 hajoaa alfahajoamisella uraani-235:ksi. Miten Oklosta voidaan ylipäätään päätellä, pysyikö plutonium paikallaan? Arvioi väitettä.",
      "criteria": [
       {
-       "text": "Toteaa, että plutonium-239:stä ei ole enää mitään jäljellä, koska kahdessa miljardissa vuodessa on kulunut noin $83\\,000$ puoliintumisaikaa: sen pysyminen paikallaan päätellään sen hajoamistuotteesta uraani-235:stä.",
+       "text": "Toteaa, että plutonium-239:stä ei ole enää mitään jäljellä, koska kahdessa miljardissa vuodessa on kulunut noin $83\\,000$ puoliintumisaikaa, ja päättelee, että sen pysyminen paikallaan nähdään sen hajoamistuotteesta uraani-235:stä.",
        "tag": "concept",
        "points": 1
       },

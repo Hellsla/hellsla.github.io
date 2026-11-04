@@ -6,7 +6,7 @@ from figlib import Fig, Axes, INK, MUTED, COLD, fi
 
 # fy8-s3 data (answers.py): distances (cm), pulses in 1,0 min, background 112 pulses in 5,0 min
 RS = [2.0, 3.0, 4.0, 5.0, 6.0, 8.0, 10.0, 14.0, 20.0]
-NS = [3048, 1742, 1171, 809, 628, 380, 272, 150, 94]
+NS = [3048, 1806, 1172, 790, 617, 405, 256, 152, 94]
 RB = 112 / 5.0
 
 
@@ -41,16 +41,16 @@ def inverse_square():
     k0 = ys[-1] / xs[-1]                                         # through the origin and the 20 cm point
     f = Fig("fy8-s3-inv", 420, "Kuvaaja: nettopulssitaajuus R pulsseina minuutissa etäisyyden neliön käänteisarvon 1 per r toiseen "
             "funktiona, vaaka-akseli nollasta 0,26:een per neliösenttimetri ja pystyakseli nollasta 3500:aan per minuutti. Yhdeksän "
-            "mustaa pistettä: (0,0025; 72), (0,0051; 128), (0,0100; 250), (0,0156; 358), (0,0278; 606), (0,0400; 787), "
-            "(0,0625; 1149), (0,111; 1720) ja (0,250; 3026). Origosta lähtee katkoviivana suora, joka kulkee kaukaisimman "
+            "mustaa pistettä: (0,0025; 72), (0,0051; 130), (0,0100; 234), (0,0156; 383), (0,0278; 595), (0,0400; 768), "
+            "(0,0625; 1150), (0,111; 1784) ja (0,250; 3026). Origosta lähtee katkoviivana suora, joka kulkee kaukaisimman "
             "pisteen kautta. Lähimmät pisteet ovat selvästi suoran alapuolella, ja pisteet muodostavat alaspäin kaartuvan "
             "käyrän eivätkä suoraa.")
-    ax = Axes(f, (100, 370), (470, 60), x=(0, 0.26), y=(0, 3500), xticks=[0.05, 0.10, 0.15, 0.20, 0.25],
+    ax = Axes(f, (100, 370), (420, 60), x=(0, 0.26), y=(0, 3500), xticks=[0.05, 0.10, 0.15, 0.20, 0.25],
               yticks=[500, 1000, 1500, 2000, 2500, 3000, 3500],
-              xlabel=r"\tfrac{1}{r^2}\ (\tfrac{1}{\text{cm}^2})", ylabel=r"R\ (\tfrac{1}{\text{min}})",
+              xlabel=r"1/r^2\ (1/\text{cm}^2)", ylabel=r"R\ (1/\text{min})",
               xfmt=lambda v: "0{,}" + f"{round(v * 100):02d}", yfmt=lambda v: str(round(v)) if v % 1000 == 0 else "")
     ax.line([(0, 0), (3500 / k0, 3500)], MUTED, 2.5, dash="9 6")
-    f.tex(ax.X(3500 / k0) + 10, ax.Y(3300), r"R \sim \tfrac{1}{r^2}", "start", MUTED)
+    f.tex(ax.X(3500 / k0) + 10, ax.Y(3300), r"R \sim 1/r^2", "start", MUTED)
     for x, y in zip(xs, ys): ax.point(x, y)
     return f.svg()
 
@@ -62,7 +62,7 @@ def linearised():
     r0 = -b / k
     f = Fig("fy8-s3-lin", 450, "Kuvaaja: nettopulssitaajuuden neliöjuuren käänteisarvo, R potenssiin miinus yksi kahdesosa, yksikössä 10 potenssiin "
             "miinus 2 minuutti potenssiin yksi kahdesosa etäisyyden r funktiona, r miinus kahdesta 22 senttimetriin. Yhdeksän mustaa pistettä: "
-            "(2,0; 1,82), (3,0; 2,41), (4,0; 2,95), (5,0; 3,57), (6,0; 4,06), (8,0; 5,29), (10,0; 6,33), (14,0; 8,85) ja "
+            "(2,0; 1,82), (3,0; 2,37), (4,0; 2,95), (5,0; 3,61), (6,0; 4,10), (8,0; 5,11), (10,0; 6,54), (14,0; 8,78) ja "
             "(20,0; 11,82). Pisteisiin on sovitettu suora, ja sitä on jatkettu katkoviivana r-akselille, jonka se leikkaa "
             "kohdassa r = −1,3 cm. Suoralta on merkitty piste (20,0; 12,0) ja leikkauskohta (−1,3; 0).")
     ax = Axes(f, (90, 396), (480, 84), x=(-2, 22), y=(0, 13), xticks=[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22],
