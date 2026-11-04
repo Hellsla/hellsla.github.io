@@ -74,7 +74,7 @@
 **Periaate:** Parinmuodostuksessa fotonin energiasta syntyvät elektronin ja positronin massat. Siksi fotonin energian on oltava vähintään niiden lepoenergioiden summa. Fotonin energia on $\tfrac{hc}{\lambda}$, joten pienin energia vastaa suurinta aallonpituutta.
 **Kaava:** $E = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E}$
 **Muunnokset:** $E = 2 \cdot 0{,}511 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}6372 \cdot 10^{-13}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Sijoitus:** $\lambda = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{1{,}6372 \cdot 10^{-13}\,\text{J}} = 1{,}2133 \cdot 10^{-12}\,\text{m} = 1{,}2133\,\text{pm}$
+**Sijoitus:** $\lambda = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{1{,}6372 \cdot 10^{-13}\,\text{J}} = 1{,}2133 \cdot 10^{-12}\,\text{m} = 1{,}2133\,\text{pm}$
 **Vastaus:** $1{,}21\,\text{pm}$, kolme merkitsevää numeroa kuten lepoenergiassa $0{,}511\,\text{MeV}$.
 **Järkevyys:** Gammafotonin aallonpituus on pikometrien luokkaa, kuten luvun *Atomiydin ja radioaktiivinen hajoaminen* gammasäteilyllä. Pidempiaaltoinen fotoni ei riitä parin syntymiseen, koska sen energia on pienempi kuin $1{,}022\,\text{MeV}$.
 

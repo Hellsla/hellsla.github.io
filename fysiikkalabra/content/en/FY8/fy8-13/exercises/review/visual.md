@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ff5af81cc1f9f12e
+CONTENT-HASH: c8529fc08d8728d3
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] L2-03 (exercises.json) — the closing bold run contains the question and the assumptions together; end with the question alone.
-- [Minor] vaimennus task figure — grid 1 cm and 5 µSv/h with darker lines every fifth/second is legible at 390 px; the y-axis labels at 10 steps while the half-value (40) sits between grid labels, fine.
-- [Minor] solutions.md L3-01 — the long Formula line with the bracketed difference is the widest in the set; it fits at 1280 but check at 360 px.
+- [Minor] L2-03 — closing bold run holds the question and the assumptions together (carried).
+- [Minor] solutions L3-01 Formula (open at 360 px): the \tfrac fractions in the bracket are rendered about 7 px tall and the lone "=" is left at the end of the previous line; readable but the weakest spot of the change. Optional: break the line before the bracket or use \dfrac with an `aligned` split.
 
 ## Checked
-- Captures: open-exercises-1280-1 (L1), L2-1280-3, L3-1280-1, open-tarkista-1280-2 (graph task, hints, solution); fig-12-390.
-- Solutions follow the step order principle, formula, substitution, result, reasonableness; units upright LaTeX with thin spaces; fractions and exponents render cleanly; calculation blocks break at meaningful boundaries.
-- Task figure gives every value the task needs and does not state the answer; its English description matches the figure.
+- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (L2-04 Järkevyys and L3-01 Kaava) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
+- Result: no h·c/X formulas in fy8-13; the changed items fit the 360 px column, document scrollWidth = 360 = viewport, no clipped KaTeX.
+- fy8-13 L2-04 Järkevyys ("(in µSv/h)") and L3-01 Kaava with \tfrac in the bracket checked at 360 px; see Polish.
+- LaTeX valid, no red KaTeX; hash at start and end the same.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish n/a (English: 5) · accessibility 4
+illustrations n/a · typography 4 · English 5 · accessibility 4
