@@ -110,6 +110,9 @@ for lang in i18n.languages():
            'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr, ftr)
     about = (out / "tietoa.html").read_text() if (out / "tietoa.html").is_file() else ""
     expect(f"{lang}: tietoa.html exists", bool(about))
+    expect(f"{lang}: Sivustosta opens with Kiviruukin lukio's logo in the school's colours (teacher 2026-11-04)",
+           '<main class="reading about-page">' in about and (SITE / "brand/kiviruukin-lukio-valkoinen.svg").is_file()
+           and f'src="{"" if out == SITE else "../"}brand/kiviruukin-lukio-valkoinen.svg"' in about)
     leaks = sorted(str(f.relative_to(out)) for f in out.glob("*.html") if ('href="' + "../" * len(out.relative_to(ROOT.parent).parts) + 'index.html"') in f.read_text())
     expect(f"{lang}: no page links out of the site to the teacher's portfolio (teacher 2026-11-04)", not leaks, leaks[:5])
     expect(f"{lang}: the front page header links Sivustosta after Lukuvinkit",
