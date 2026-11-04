@@ -207,3 +207,102 @@ a alas
 **Substitution:** $a = \dfrac{15.0\,\text{m/s} - 2.0\,\text{m/s}}{2.0\,\text{s} - 0\,\text{s}} = 6.5\,\text{m/s}^2$ and $F_\text{v} = 0.150\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 6.5\,\text{m/s}^2) = 0.150\,\text{kg}\cdot 3.31\,\text{m/s}^2 = 0.4965\,\text{N}$
 **Answer:** $0.50\,\text{N}$ upward, two significant figures, because the acceleration $6.5\,\text{m/s}^2$ read from the graph is given to two digits.
 **Reasonableness:** The weight of the ball is $0.150\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 1.5\,\text{N}$. The acceleration is about two thirds of the free-fall acceleration, so the air resistance cancels about a third of the weight, about $0.5\,\text{N}$. Later the curve flattens, the air resistance grows and approaches the weight.
+
+## fy4-14-L1-06
+**Find:** which statement correctly describes a falling object that has reached its terminal velocity.
+**Principle:** At terminal velocity the speed of the object does not change, so the acceleration is zero. By Newton's second law the net force is then zero, even though the object is moving. The weight down and the air resistance up still act on the object.
+**Model answer:** The correct statement is that the air resistance and the weight are equal and the net force is zero. If the air resistance were greater than the weight, the net force would point up and the object would slow down. If the weight were greater, the net force would point down and the speed would grow. The claim that no forces act at all is wrong, because the speed stays constant only since two forces cancel each other. The direction of motion does not tell the magnitudes of the forces.
+
+## fy4-14-L1-07
+**Find:** which of the balls of the same size and shape, the one filled with sand or the empty one, reaches the greater terminal velocity.
+**Principle:** At terminal velocity the air resistance is equal to the weight. About the same air resistance acts on balls of the same size and shape at the same speed, and the air resistance grows as the speed grows.
+**Model answer:** The sand ball reaches the greater terminal velocity. Its weight is greater, so the air resistance must grow greater before it cancels the weight. Air resistance grows only as the speed grows, so the heavier ball has to accelerate to a greater speed. The empty ball levels off at a smaller speed, because its weight is smaller. The claim that all objects fall in the same way holds only without air resistance. In air the difference in weight shows in the terminal velocity.
+
+## fy4-14-L1-08
+**Given:** $m = 60.0\,\text{kg}$, air resistance $F_\text{v} = 1500\,\text{N}$, the skydiver moves down; the student's result $2089\,\text{N}$; $g = 9.81\,\text{m/s}^2$
+**Find:** the magnitude of the net force $\Sigma F$ in $\text{N}$ and the student's error
+**Principle:** The net force is the sum of the forces acting on the object, and its direction is the direction of the acceleration, not the direction of the motion. Air resistance points against the velocity, that is up, even though the skydiver moves down. The student added the air resistance to the weight, as if it pointed down with the motion.
+**Free-body diagram:** The skydiver as a rectangle, positive direction down. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{v}$ from the bottom surface up, longer than the weight. The velocity down is marked separately next to the diagram.
+```voimakuvio
+G 588,6
+F_v 1500 ylös työntö @ala
+a ylös
+v alas
+```
+**Formula:** $\Sigma F = mg - F_\text{v}$, and the magnitude of the net force is $|\Sigma F|$
+**Conversions:** The mass is in kilograms and the force in newtons, so no conversions are needed.
+**Substitution:** $\Sigma F = 60.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 - 1500\,\text{N} = 588.6\,\text{N} - 1500\,\text{N} = -911.4\,\text{N}$
+**Answer:** $911\,\text{N}$ upward (the minus sign tells the direction when the positive direction is down), three significant figures like the mass $60.0\,\text{kg}$.
+**Reasonableness:** The air resistance $1500\,\text{N}$ is about $2.5$ times the weight $588.6\,\text{N}$, so about $1.5$ weights is left upward, that is about $900\,\text{N}$. The skydiver slows down but still moves down.
+
+## fy4-14-L2-05
+**Given:** $m = 20.0\,\text{g}$; from the table $v_1 = 3.35\,\text{m/s}$ at $t_1 = 0.40\,\text{s}$ and $v_2 = 5.15\,\text{m/s}$ at $t_2 = 0.80\,\text{s}$; $g = 9.81\,\text{m/s}^2$
+**Find:** the air resistance $F_\text{v}$ at the moment $t = 0.60\,\text{s}$ in $\text{N}$
+**Principle:** The acceleration is the slope of the $(t,v)$ graph. The slope between the points on either side of the moment $0.60\,\text{s}$ gives the acceleration at that moment. Only the weight and the air resistance act on the ball, so Newton's second law gives the air resistance.
+**Reading the graph:** The points $(0.40\,\text{s};\, 3.35\,\text{m/s})$ and $(0.80\,\text{s};\, 5.15\,\text{m/s})$ are symmetrically on both sides of the moment $0.60\,\text{s}$, and the slope of the line drawn through them is the acceleration. The points are far apart, so the error of a single measurement has little effect.
+**Free-body diagram:** The ball as a rectangle, positive direction down. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{v}$ from the bottom surface up, shorter than the weight.
+```voimakuvio
+G 0,1962
+F_v 0,1062 ylös työntö @ala
+a alas
+```
+**Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $mg - F_\text{v} = ma$, so $F_\text{v} = m(g - a)$
+**Conversions:** $m = 20.0\,\text{g} = 20.0 \cdot 10^{-3}\,\text{kg} = 0.0200\,\text{kg}$
+**Substitution:** $a = \dfrac{5.15\,\text{m/s} - 3.35\,\text{m/s}}{0.80\,\text{s} - 0.40\,\text{s}} = 4.50\,\text{m/s}^2$ and $F_\text{v} = 0.0200\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 4.50\,\text{m/s}^2) = 0.0200\,\text{kg}\cdot 5.31\,\text{m/s}^2 = 0.1062\,\text{N}$
+**Answer:** $0.106\,\text{N}$ upward, three significant figures like the mass $20.0\,\text{g}$ and the speeds.
+**Reasonableness:** The weight of the ball is $0.0200\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 0.196\,\text{N}$, and the air resistance $0.106\,\text{N}$ is about half of it. The acceleration $4.50\,\text{m/s}^2$ is about half of the free-fall acceleration, as it should be. At the end of the table the speed is almost constant, $5.8\,\text{m/s}$, and then the air resistance is close to the weight $0.196\,\text{N}$.
+
+## fy4-14-L2-06
+**Given:** from the table cone 4: $m_4 = 4.8\,\text{g}$ and $v_4 = 1.49\,\text{m/s}$; cone 1: $m_1 = 1.2\,\text{g}$ and $v_1 = 0.72\,\text{m/s}$; the cones are at terminal velocity; $g = 9.81\,\text{m/s}^2$
+**Find:** a) the air resistance $F_\text{v}$ acting on cone 4 at terminal velocity in $\text{N}$; b) how many times greater it is than the one acting on cone 1
+**Principle:** When the cone no longer accelerates, its net force is zero. At terminal velocity the air resistance is therefore equal to the weight. The speed is not needed to calculate the air resistance, the mass is enough.
+**Free-body diagram:** The cone as a rectangle, positive direction down. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{v}$ from the bottom surface up, equally long.
+```voimakuvio
+G 0,04709
+F_v 0,04709 ylös työntö @ala
+a 0
+```
+**Formula:** $mg - F_\text{v} = 0$, so $F_\text{v} = mg$
+**Conversions:** $m_4 = 4.8\,\text{g} = 4.8 \cdot 10^{-3}\,\text{kg}$
+**Substitution:** a) $F_\text{v} = 4.8 \cdot 10^{-3}\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 0.047088\,\text{N}$. b) The ratio of the air resistances is the same as the ratio of the masses: $4.8\,\text{g} : 1.2\,\text{g} = 4.0$. The ratio of the speeds is $1.49\,\text{m/s} : 0.72\,\text{m/s} = 2.1$.
+**Answer:** a) $0.047\,\text{N}$ upward, two significant figures like the mass $4.8\,\text{g}$. b) The air resistance is $4.0$ times greater, but the speed only about $2.1$ times greater. So the air resistance grows faster than the speed: when the speed doubles, the air resistance grows about fourfold.
+**Reasonableness:** The weight of the cone is about $5\,\text{g}$, and the weight of $1\,\text{g}$ is about $0.01\,\text{N}$, so the weight is about $0.05\,\text{N}$, and the air resistance at terminal velocity is equal to it. A heavier cone has a greater terminal velocity, as the data shows: the speeds grow from $0.72\,\text{m/s}$ to $1.49\,\text{m/s}$.
+
+## fy4-14-L2-07
+**Find:** which statement about the net force acting on the skydiver is correct on the basis of the data in the table.
+**Principle:** By Newton's second law the net force points in the direction of the acceleration, not the direction of the motion. The acceleration is the change of speed divided by time, so it is read from the change of speed in the table.
+**Model answer:** In the table the downward speed decreases during the first second from $52.0\,\text{m/s}$ to $24.5\,\text{m/s}$, that is about $27.5\,\text{m/s}$ per second. The skydiver moves down but slows down, so the acceleration and the net force point up. The air resistance is then greater than the weight. At the end the speed is almost constant, $7.3\,\text{m/s}$ and $7.2\,\text{m/s}$, so the acceleration and the net force are almost zero and the air resistance is the size of the weight. The claim that the net force points down because the motion is down mixes up the directions of the force and the velocity. The claim that the net force would be zero all the time contradicts the changing speed.
+
+## fy4-14-L3-04
+**Given:** $m = 82.0\,\text{kg}$; from the table $v_1 = 33.0\,\text{m/s}$ at $t_1 = 0.5\,\text{s}$ and $v_2 = 15.5\,\text{m/s}$ at $t_2 = 1.5\,\text{s}$; at the end $v \approx 5.6\,\text{m/s}$; $g = 9.81\,\text{m/s}^2$; positive direction down
+**Find:** a) the air resistance $F_\text{v}$ at the moment $t = 1.0\,\text{s}$ in $\text{N}$; b) the air resistance as a multiple of the weight and the direction of the net force; c) the air resistance at the end
+**Principle:** The acceleration is the change of speed divided by time, and the points on either side of the moment $1.0\,\text{s}$ give it for that moment. Only the weight and the air resistance act on the skydiver, so Newton's second law gives the air resistance. The direction of the acceleration determines the direction of the net force.
+**Reading the graph:** From the table we read the points $(0.5\,\text{s};\, 33.0\,\text{m/s})$ and $(1.5\,\text{s};\, 15.5\,\text{m/s})$, which are on both sides of the moment $1.0\,\text{s}$. The speed decreases, so the slope, that is the acceleration, is negative. The speeds at the end, $5.7\,\text{m/s}$ and $5.6\,\text{m/s}$, are almost the same, so the acceleration there is almost zero.
+**Free-body diagram:** The skydiver as a rectangle, positive direction down. The weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{v}$ from the bottom surface up, clearly longer than the weight. The velocity down is marked separately next to the diagram.
+```voimakuvio
+G 804,4
+F_v 2239 ylös työntö @ala
+a ylös
+v alas
+```
+**Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $mg - F_\text{v} = ma$, so $F_\text{v} = m(g - a)$. At the end $a = 0$, so $F_\text{v} = mg$.
+**Conversions:** The speeds are in $\text{m/s}$, the times in seconds and the mass in kilograms, so no conversions are needed.
+**Substitution:** a) $a = \dfrac{15.5\,\text{m/s} - 33.0\,\text{m/s}}{1.5\,\text{s} - 0.5\,\text{s}} = -17.5\,\text{m/s}^2$ and $F_\text{v} = 82.0\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 17.5\,\text{m/s}^2) = 82.0\,\text{kg}\cdot 27.31\,\text{m/s}^2 = 2239.42\,\text{N}$. b) $mg = 82.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 804.42\,\text{N}$, so $F_\text{v} : mg = 2239.42\,\text{N} : 804.42\,\text{N} = 2.78$. c) $F_\text{v} = mg = 804.42\,\text{N}$.
+**Answer:** a) $2240\,\text{N}$ upward, three significant figures like the mass $82.0\,\text{kg}$. b) The air resistance is about $2.8$ times the weight. The net force $\Sigma F = mg - F_\text{v} = -1435\,\text{N}$ points up, because the acceleration is up. The skydiver does not rise, because the net force only decreases the downward speed: the speed is positive downward at every point of the table. c) The air resistance is about $804\,\text{N}$, the size of the weight. The speed stays constant, because the weight and the air resistance cancel each other and the net force is zero.
+**Reasonableness:** The air resistance is about three times the weight, so the net force is about two weights upward and the acceleration is about $2g \approx 20\,\text{m/s}^2$. The calculated $17.5\,\text{m/s}^2$ is close to this. As the speed decreases, the air resistance decreases, the acceleration approaches zero and the speed levels off, as the end of the table shows.
+
+## fy4-14-L3-05
+**Given:** $m = 0.0140\,\text{g}$, drop height $h = 1.50\,\text{km}$, speed near the ground constant $v = 8.0\,\text{m/s}$; the drop starts from rest and moves vertically; $g = 9.81\,\text{m/s}^2$
+**Find:** a) the air resistance $F_\text{v}$ near the ground; b) the speed $v$ of the drop at the bottom in $\text{m/s}$ if there were no air resistance; c) an explanation of why raindrops are not dangerous
+**Principle:** When the speed is constant, the acceleration is zero and the air resistance is equal to the weight. If there were no air resistance, only the weight would act on the drop and the acceleration would be $g$ all the way, so the formula of uniformly accelerated motion $v^2 = 2gh$ gives the final speed when starting from rest.
+**Free-body diagram:** The drop as a small rectangle, positive direction down. Near the ground the weight $\overline{G}$ from the centre down and the air resistance $\overline{F}_\text{v}$ from the bottom surface up, equally long.
+```voimakuvio
+G 1,373
+F_v 1,373 ylös työntö @ala
+a 0
+```
+**Formula:** a) $mg - F_\text{v} = 0$, so $F_\text{v} = mg$. b) $v^2 = 2gh$, so $v = \sqrt{2gh}$.
+**Conversions:** $m = 0.0140\,\text{g} = 1.40 \cdot 10^{-5}\,\text{kg}$ and $h = 1.50\,\text{km} = 1500\,\text{m}$
+**Substitution:** a) $F_\text{v} = 1.40 \cdot 10^{-5}\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 1.373 \cdot 10^{-4}\,\text{N}$. b) $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 1500\,\text{m}} = \sqrt{29430\,\text{m}^2/\text{s}^2} = 171.55\,\text{m/s}$
+**Answer:** a) $1.37 \cdot 10^{-4}\,\text{N}$ upward. b) $172\,\text{m/s}$, three significant figures like the height $1.50\,\text{km}$. c) Without air resistance the speed would be about $620\,\text{km/h}$, over $20$ times the real $8.0\,\text{m/s}$, and the drop would be dangerous. As the drop falls, the air resistance grows as the speed grows until it is the size of the weight. Then the net force is zero and the speed stays constant. The weight of the drop is only about $1.4 \cdot 10^{-4}\,\text{N}$, so a small air resistance is enough to cancel it already at a small speed.
+**Reasonableness:** With the acceleration $g$ the drop would reach the speed $8.0\,\text{m/s}$ in the time $8.0\,\text{m/s} : 9.81\,\text{m/s}^2 = 0.82\,\text{s}$, that is within a few metres, even though the distance is $1500\,\text{m}$. In reality the air resistance limits the speed right at the start, so the drop travels almost the whole distance at a constant speed and falls for only about $190\,\text{s}$. The result $171.55\,\text{m/s}$ is of the right order of magnitude, since $\sqrt{2 \cdot 10 \cdot 1500} \approx 170$.

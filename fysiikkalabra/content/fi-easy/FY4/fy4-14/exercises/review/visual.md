@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: b18f3a22fd4f0457
+CONTENT-HASH: f67dd6c2ff7ada86
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed: the plain Finnish already matched fi in every number and was clear)
+
 ## Polish
-- [Minor] single-body solution diagrams (Taso 1) — small with tiny arrowheads at 1280; legible, enlarge by about a quarter.
-- [Minor] car diagram (Taso 2, tehtävä 4) — F_r label touches the F_v arrow shaft; the a arrow sits close to the N label.
-- [Minor] car and cyclist diagram caption "vaaka- ja pystysuorat voimat eri mittakaavassa" is small grey text; raise to figure label size.
+(none)
 
 ## Checked
-- contact-5, -6: Taso 1, 2 and 3 with every solution open (Annettu / Kysytty / Periaate / Voimakuvio / Kaava / Muunnokset / Sijoitus / Vastaus / Järkevyys), the cyclist, car, stone and tangent graph tasks.
-- Force diagrams: shafts visible, labels by their own arrows, colours per project convention; the (t, v) graph has axes with units and the tangent clearly marked.
-- No English words on the page; instructions say exactly what to do; "Järkevyys" notes in a separate tinted box; decimal comma and units in LaTeX.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, data cells and every number in texts, choices, feedback (decimal point in en JSON and LaTeX) and solutions.md (618 numbers, 347 math fragments) identical.
+- Visual: table captions, column headers (Cone/Kartio, v_terminal/v_raja) and voimakuvio blocks match fi; screenshots of the new tasks checked, no overflow or untranslated labels.
+- Selkosuomi: short sentences, terms (ilmanvastus, rajanopeus, kokonaisvoima, kulmakerroin) used consistently and explained; instructions split into separate short sentences.
+- check_i18n.py fi-easy: 0 errors.

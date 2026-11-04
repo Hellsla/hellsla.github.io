@@ -44,6 +44,78 @@
       "unit": "N",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L1-06",
+      "level": 1,
+      "text": "Kappale putoaa ilmassa ja on saavuttanut rajanopeutensa. Mikä seuraavista kuvaa tilannetta oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Ilmanvastus ja paino ovat yhtä suuret, koska kokonaisvoima on nolla",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Ilmanvastus on painoa suurempi, koska kappale ei enää kiihdy alaspäin",
+          "feedback": "Jos ilmanvastus olisi painoa suurempi, kokonaisvoima osoittaisi ylös ja kappale hidastuisi. Rajanopeudella nopeus ei muutu, joten voimat ovat yhtä suuret."
+        },
+        {
+          "text": "Kappaleeseen ei vaikuta voimia, koska sen nopeus pysyy vakiona",
+          "feedback": "Voimia on edelleen kaksi: paino alas ja ilmanvastus ylös. Nopeus pysyy vakiona, koska voimien summa on nolla, ei siksi, ettei voimia olisi."
+        },
+        {
+          "text": "Ilmanvastus ja paino ovat yhtä suuret, koska kokonaisvoima on nolla",
+          "correct": true,
+          "feedback": "Oikein: rajanopeudella kiihtyvyys on nolla, joten Newtonin toisen lain mukaan kokonaisvoima on nolla ja ilmanvastus kumoaa painon."
+        },
+        {
+          "text": "Paino on ilmanvastusta suurempi, koska kappale liikkuu yhä alaspäin",
+          "feedback": "Liikkeen suunta ei kerro voimien suuruuksia. Jos paino olisi suurempi, kokonaisvoima osoittaisi alas ja nopeus kasvaisi vielä."
+        }
+      ]
+    },
+    {
+      "id": "fy4-14-L1-07",
+      "level": 1,
+      "text": "Kaksi samankokoista ja samanmuotoista palloa pudotetaan korkealta ilmassa. Toinen on täytetty hiekalla ja toinen on tyhjä. Kumpi pallo saavuttaa suuremman rajanopeuden?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Hiekkapallo, koska suuremman painon kumoamiseen tarvitaan suurempi ilmanvastus",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Hiekkapallo, koska suuremman painon kumoamiseen tarvitaan suurempi ilmanvastus",
+          "correct": true,
+          "feedback": "Oikein: samalla nopeudella samankokoisiin ja samanmuotoisiin palloihin vaikuttaa suunnilleen sama ilmanvastus. Raskaampi pallo kiihtyy siis pidempään ja ilmanvastus kasvaa suuremmaksi ennen kuin se on painon suuruinen."
+        },
+        {
+          "text": "Tyhjä pallo, koska ilma hidastaa raskasta palloa enemmän kuin kevyttä",
+          "feedback": "Samankokoisiin ja samanmuotoisiin palloihin vaikuttaa samalla nopeudella suunnilleen sama ilmanvastus. Ilma ei hidasta raskasta palloa enemmän, vaan sen paino on suurempi."
+        },
+        {
+          "text": "Molemmat saavuttavat saman, koska kaikki kappaleet putoavat samalla kiihtyvyydellä",
+          "feedback": "Näin on vain ilman ilmanvastusta. Ilmassa ilmanvastus pienentää kiihtyvyyttä, ja rajanopeus riippuu siitä, milloin ilmanvastus on kasvanut painon suuruiseksi."
+        },
+        {
+          "text": "Molemmat saavuttavat saman, koska pallojen koko ja muoto ovat samat",
+          "feedback": "Koko ja muoto määräävät ilmanvastuksen tietyllä nopeudella, mutta rajanopeuteen vaikuttaa myös paino. Raskaamman pallon ilmanvastuksen täytyy kasvaa suuremmaksi, joten sen nopeus on suurempi."
+        }
+      ]
+    },
+    {
+      "id": "fy4-14-L1-08",
+      "level": 1,
+      "text": "Laskuvarjohyppääjän massa varusteineen on $60{,}0\\,\\text{kg}$. Varjon auetessa hän liikkuu yhä alaspäin, ja ilmanvastus on $1500\\,\\text{N}$.\n\nOppilas ratkaisi kokonaisvoiman suuruuden näin: \"Hyppääjä liikkuu alas, joten kokonaisvoima osoittaa alas ja sen suuruus on $mg + F_\\text{v} = 2089\\,\\text{N}$.\"\n\nEtsi oppilaan ajatusvirhe ja laske kokonaisvoiman suuruus oikein. Vastauslaatikkoon tulee oikea kokonaisvoiman suuruus.",
+      "kind": [
+        "error"
+      ],
+      "answer": 911.4,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
     }
   ],
   "level2": [
@@ -82,6 +154,171 @@
       "unit": "m/s²",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L2-05",
+      "level": 2,
+      "text": "Vaahtomuovipallon massa on $20{,}0\\,\\text{g}$. Pallo pudotetaan levosta, ja sen nopeus mitataan videolta. Taulukko on esimerkkiaineisto.\n\nMääritä pallon kiihtyvyys hetkellä $t = 0{,}60\\,\\text{s}$ kulmakertoimena taulukon pisteistä $t = 0{,}40\\,\\text{s}$ ja $t = 0{,}80\\,\\text{s}$. Kuinka suuri ilmanvastus palloon vaikuttaa tällä hetkellä?",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 0.1062,
+      "unit": "N",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Pudotetun vaahtomuovipallon nopeus (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "0.00"
+          ],
+          [
+            "0.20",
+            "1.85"
+          ],
+          [
+            "0.40",
+            "3.35"
+          ],
+          [
+            "0.60",
+            "4.45"
+          ],
+          [
+            "0.80",
+            "5.15"
+          ],
+          [
+            "1.00",
+            "5.55"
+          ],
+          [
+            "1.20",
+            "5.75"
+          ],
+          [
+            "1.40",
+            "5.80"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-14-L2-06",
+      "level": 2,
+      "text": "Oppilaat pudottivat korkealta paperikartioita, jotka olivat samanmuotoisia mutta joiden massa kasvoi, kun niitä oli sisäkkäin useampi. Kokeessa mitattiin kunkin kartion nopeus, kun se oli lakannut kiihtymästä. Taulukko on esimerkkiaineisto.\n\na) Kuinka suuri ilmanvastus kartioon 4 vaikuttaa rajanopeudella?\n\nb) Kuinka monta kertaa suurempi tämä ilmanvastus on kuin kartioon 1 vaikuttava, ja mitä vertailu kertoo ilmanvastuksen riippuvuudesta nopeudesta?\n\nVastauslaatikkoon tulee kohdan a) tulos.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 0.047088,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations",
+      "data": {
+        "caption": "Paperikartioiden rajanopeudet (esimerkkiaineisto)",
+        "columns": [
+          "Kartio",
+          "$m\\,(\\text{g})$",
+          "$v_\\text{raja}\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "1.2",
+            "0.72"
+          ],
+          [
+            "2",
+            "2.4",
+            "1.05"
+          ],
+          [
+            "3",
+            "3.6",
+            "1.28"
+          ],
+          [
+            "4",
+            "4.8",
+            "1.49"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-14-L2-07",
+      "level": 2,
+      "text": "Taulukossa on laskuvarjohyppääjän nopeus alaspäin ajan funktiona varjon auettua. Aineisto on esimerkkiaineisto, ja hyppääjä liikkuu koko ajan alaspäin.\n\nMikä väite hyppääjään vaikuttavasta kokonaisvoimasta on oikea?",
+      "kind": [
+        "data",
+        "concept"
+      ],
+      "answer": "Se osoittaa ensin ylös ja on lopussa lähes nolla, koska nopeus pienenee ja tasaantuu",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Se osoittaa koko ajan alas, koska hyppääjä liikkuu koko ajan alas",
+          "feedback": "Kokonaisvoima osoittaa kiihtyvyyden suuntaan, ei nopeuden. Nopeus pienenee alussa nopeasti, joten kiihtyvyys ja kokonaisvoima osoittavat ylös."
+        },
+        {
+          "text": "Se osoittaa ensin ylös ja on lopussa lähes nolla, koska nopeus pienenee ja tasaantuu",
+          "correct": true,
+          "feedback": "Oikein: alussa nopeus pienenee jyrkästi, joten kiihtyvyys ja kokonaisvoima osoittavat ylös. Lopussa nopeus on lähes vakio, joten kokonaisvoima on lähes nolla."
+        },
+        {
+          "text": "Se on nolla koko ajan, koska hyppääjän nopeus on aina yhtä suuri",
+          "feedback": "Nopeus ei ole vakio: se pienenee taulukossa aluksi yli 50 metristä sekunnissa alle kymmeneen. Muuttuva nopeus tarkoittaa, että kokonaisvoima ei ole nolla."
+        },
+        {
+          "text": "Se osoittaa lopussa ylös, koska ilmanvastus on silloin suurimmillaan",
+          "feedback": "Lopussa nopeus pysyy lähes vakiona, joten kokonaisvoima on lähes nolla. Ilmanvastus on silloin painon suuruinen, ei sitä suurempi."
+        }
+      ],
+      "data": {
+        "caption": "Hyppääjän nopeus varjon auettua (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "52.0"
+          ],
+          [
+            "1.0",
+            "24.5"
+          ],
+          [
+            "2.0",
+            "12.8"
+          ],
+          [
+            "3.0",
+            "8.9"
+          ],
+          [
+            "4.0",
+            "7.6"
+          ],
+          [
+            "5.0",
+            "7.3"
+          ],
+          [
+            "6.0",
+            "7.2"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -111,6 +348,78 @@
       "unit": "N",
       "tolerance": 0.05,
       "figure": "fy4-14/ex-tangentti",
+      "fbd": "equations"
+    },
+    {
+      "id": "fy4-14-L3-04",
+      "level": 3,
+      "text": "Laskuvarjohyppääjän massa varusteineen on $82{,}0\\,\\text{kg}$. Taulukossa on hänen nopeutensa alaspäin varjon avautumisen jälkeen. Aineisto on esimerkkiaineisto.\n\na) Kuinka suuri ilmanvastus on hetkellä $t = 1{,}0\\,\\text{s}$? Arvioi kiihtyvyys pisteistä $t = 0{,}5\\,\\text{s}$ ja $t = 1{,}5\\,\\text{s}$ ja valitse positiiviseksi suunnaksi alas.\n\nb) Kuinka monta kertaa painon suuruinen ilmanvastus tällöin on, ja mihin suuntaan kokonaisvoima osoittaa? Perustele, miksi hyppääjä ei kuitenkaan nouse.\n\nc) Päättele taulukosta ilmanvastus lopussa ja perustele, miksi nopeus pysyy silloin vakiona.\n\nVastauslaatikkoon tulee kohdan a) tulos.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 2239.42,
+      "unit": "N",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Hyppääjän nopeus varjon avautumisen jälkeen (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "50.0"
+          ],
+          [
+            "0.5",
+            "33.0"
+          ],
+          [
+            "1.0",
+            "22.0"
+          ],
+          [
+            "1.5",
+            "15.5"
+          ],
+          [
+            "2.0",
+            "11.5"
+          ],
+          [
+            "3.0",
+            "7.6"
+          ],
+          [
+            "4.0",
+            "6.2"
+          ],
+          [
+            "5.0",
+            "5.7"
+          ],
+          [
+            "6.0",
+            "5.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-14-L3-05",
+      "level": 3,
+      "text": "Sadepisara, jonka massa on $0{,}0140\\,\\text{g}$, putoaa pilvestä korkeudelta $1{,}50\\,\\text{km}$. Maan lähellä pisaran nopeus on mittausten mukaan vakio $8{,}0\\,\\text{m/s}$ (esimerkkiaineisto). Oletetaan, että pisara lähtee levosta ja liikkuu pystysuoraan.\n\na) Kuinka suuri ilmanvastus pisaraan vaikuttaa Maan lähellä?\n\nb) Kuinka suuri nopeus pisaralla olisi alhaalla, jos ilmanvastusta ei olisi ja pisaran kiihtyvyys olisi koko matkan $g$?\n\nc) Perustele näiden tulosten avulla, miksi sadepisarat eivät ole vaarallisia, ja kerro, miten ilmanvastus muuttuu pisaran pudotessa.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 171.55,
+      "unit": "m/s",
+      "tolerance": 0.02,
       "fbd": "equations"
     }
   ]

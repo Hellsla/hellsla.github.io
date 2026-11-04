@@ -39,6 +39,77 @@
       "answer": -255.06,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L1-06",
+      "level": 1,
+      "text": "A car drives on a level road first at speed $v$ and then at speed $2v$. The mass of the car is the same in both cases.\n\nWhich statement about the change in the kinetic energy of the car is correct?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "The kinetic energy becomes four times as great, because it is proportional to the square of the speed.",
+      "choices": [
+        {
+          "text": "The kinetic energy doubles, because it is proportional to the speed.",
+          "feedback": "The kinetic energy is not proportional to the speed but to the square of the speed: $E_\\text{k} = \\tfrac{1}{2}\\,mv^2$. Twice the speed gives four times the square."
+        },
+        {
+          "text": "The kinetic energy becomes eight times as great, because it is proportional to the third power of the speed.",
+          "feedback": "In the formula for kinetic energy the speed is raised to the second power, not the third. The square of twice the speed is $2^2 = 4$, not $2^3 = 8$."
+        },
+        {
+          "text": "The kinetic energy becomes four times as great, because it is proportional to the square of the speed.",
+          "correct": true,
+          "feedback": "Correct: $\\tfrac{1}{2}\\,m(2v)^2 = 4 \\cdot \\tfrac{1}{2}\\,mv^2$. That is why doubling the speed makes the kinetic energy four times as great."
+        },
+        {
+          "text": "The kinetic energy stays the same, because it depends only on the mass of the car.",
+          "feedback": "Kinetic energy depends on the speed as well as the mass. When the mass stays the same, a change in speed changes the kinetic energy."
+        }
+      ]
+    },
+    {
+      "id": "fy4-7-L1-07",
+      "level": 1,
+      "kind": [
+        "reasoning"
+      ],
+      "text": "A lift raises a person whose mass is $80\\,\\text{kg}$ to a higher floor. The potential energy of the person increases by $9.4\\,\\text{kJ}$. By how many metres does the lift raise the person?",
+      "answer": 12.0,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L1-08",
+      "level": 1,
+      "text": "A bucket is $3.0\\,\\text{m}$ below the ground in a well and moves downward at a speed of $2.0\\,\\text{m/s}$. The zero level is the ground.\n\nWhich statement about the kinetic energy $E_\\text{k}$ and the potential energy $E_\\text{p}$ of the bucket is correct?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "$E_\\text{k} > 0$ and $E_\\text{p} < 0$, because kinetic energy does not depend on direction and the height is negative.",
+      "choices": [
+        {
+          "text": "$E_\\text{k} < 0$ and $E_\\text{p} < 0$, because the bucket moves down and is below the zero level.",
+          "feedback": "Kinetic energy cannot be negative, because $E_\\text{k} = \\tfrac{1}{2}\\,mv^2$ and $v^2 \\ge 0$. The direction of motion does not affect the kinetic energy."
+        },
+        {
+          "text": "$E_\\text{k} > 0$ and $E_\\text{p} < 0$, because kinetic energy does not depend on direction and the height is negative.",
+          "correct": true,
+          "feedback": "Correct: $v^2$ is positive whatever the direction, and below the zero level $h < 0$, so $E_\\text{p} = m g h < 0$."
+        },
+        {
+          "text": "$E_\\text{k} > 0$ and $E_\\text{p} > 0$, because energy is always positive when an object moves.",
+          "feedback": "Potential energy can be negative. Below the zero level the height $h$ is negative, so $E_\\text{p} = m g h$ is also negative."
+        },
+        {
+          "text": "$E_\\text{k} < 0$ and $E_\\text{p} > 0$, because the velocity points down and the depth is a positive number.",
+          "feedback": "The situation is the other way round: the kinetic energy is positive and the potential energy is negative. In the formula $h$ is the height from the zero level, not the depth."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +144,115 @@
       "answer": 14.857844916257388,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "A rubber ball with a mass of $0.057\\,\\text{kg}$ was dropped from above the floor. With video analysis the height $h$ of the ball from the floor and its speed $v$ were measured as functions of the time $t$. Air resistance was so small that it is ignored. Example data is below.\n\na) For each moment, calculate the kinetic energy, the potential energy and the mechanical energy. The zero level is the floor.\n\nb) Describe how the three energies change during the drop.\n\nc) Calculate the mean $E_{\\text{mech,av}}$ of the mechanical energy over all moments.\n\nWrite the mean of part c) in the answer box.",
+      "answer": 1.0,
+      "unit": "J",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Height $h$ and speed $v$ of the dropped ball as functions of the time $t$ (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$h\\,(\\text{m})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1.80",
+            "0.00"
+          ],
+          [
+            "0.1",
+            "1.75",
+            "0.98"
+          ],
+          [
+            "0.2",
+            "1.60",
+            "1.99"
+          ],
+          [
+            "0.3",
+            "1.36",
+            "2.91"
+          ],
+          [
+            "0.4",
+            "1.02",
+            "3.95"
+          ],
+          [
+            "0.5",
+            "0.58",
+            "4.88"
+          ],
+          [
+            "0.6",
+            "0.04",
+            "5.92"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-7-L2-06",
+      "level": 2,
+      "kind": [
+        "error"
+      ],
+      "text": "A diver whose mass with equipment is $70\\,\\text{kg}$ has jumped into the water from a tower. When he is $1.5\\,\\text{m}$ below the surface of the water, his speed is $4.0\\,\\text{m/s}$. The zero level is the water surface. The task calculates only the mechanical energy $E_\\text{k} + E_\\text{p}$ as defined.\n\nA student calculated the mechanical energy of the diver like this: “$E_\\text{mech} = \\tfrac{1}{2}\\,mv^2 + mgh = \\tfrac{1}{2} \\cdot 70\\,\\text{kg} \\cdot (4.0\\,\\text{m/s})^2 + 70\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 1.5\\,\\text{m} \\approx 1590\\,\\text{J}$.”\n\na) Explain the student’s error.\n\nb) Calculate the mechanical energy of the diver correctly.\n\nWrite the result of part b) in the answer box.",
+      "answer": -470.0,
+      "unit": "J",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy4-7-L2-07",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "text": "The kinetic energy of a cart was measured at different speeds. The mass of the cart was not written down, so it has to be determined from the measurement data. Example data is below.\n\nDraw the $(v^2, E_\\text{k})$ graph and fit to it a line through the origin. Using the formula $E_\\text{k} = \\tfrac{1}{2}\\,mv^2$, justify why the slope of the line gives the mass of the cart, and determine the mass.\n\nWrite the mass of the cart in the answer box.",
+      "answer": 0.52,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Speed $v$ and kinetic energy $E_\\text{k}$ of the cart (example data)",
+        "columns": [
+          "$v\\,(\\text{m/s})$",
+          "$E_\\text{k}\\,(\\text{J})$"
+        ],
+        "rows": [
+          [
+            "0.40",
+            "0.043"
+          ],
+          [
+            "0.80",
+            "0.17"
+          ],
+          [
+            "1.20",
+            "0.37"
+          ],
+          [
+            "1.60",
+            "0.66"
+          ],
+          [
+            "2.00",
+            "1.04"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +279,94 @@
       "answer": 214.4449999999997,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-7-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model"
+      ],
+      "text": "A tennis ball with a mass of $0.058\\,\\text{kg}$ was dropped onto a hard floor. From a video, the highest point of the ball above the floor was measured before the drop and after each bounce. The ball moves vertically, and at the highest point its speed is zero. Example data is below.\n\na) Calculate the mechanical energy of the ball at each highest point when the zero level is the floor.\n\nb) On average, what percentage of the mechanical energy changes into other energy in one bounce?\n\nc) How much mechanical energy has changed into other energy during the first four bounces? Where has the energy gone?\n\nd) Another student chooses as the zero level the surface of a table that is $1.00\\,\\text{m}$ above the floor. With her zero level, calculate the mechanical energy of the ball at the moment of the drop and after the fourth bounce. Justify why the result of part c) is still the same.\n\nWrite the energy of part c) in the answer box.",
+      "answer": 0.61,
+      "unit": "J",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Highest point $h$ of the ball above the floor (example data)",
+        "columns": [
+          "Bounces",
+          "$h\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1.50"
+          ],
+          [
+            "1",
+            "1.09"
+          ],
+          [
+            "2",
+            "0.80"
+          ],
+          [
+            "3",
+            "0.57"
+          ],
+          [
+            "4",
+            "0.42"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-7-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model"
+      ],
+      "text": "Along a sledding hill there were five measuring points where the height $h$ of the sledder above the bottom of the slope and the speed $v$ were measured. The total mass of the sledder and the sled is $48\\,\\text{kg}$. Example data is below.\n\na) Calculate the mechanical energy at each measuring point when the zero level is the bottom of the slope.\n\nb) How much mechanical energy has changed into other energy between points 1 and 5?\n\nc) Between which points does the most mechanical energy change? Justify with an observation about the speed, and explain why the energy does not disappear anywhere.\n\nd) Choose the height of point 1 as the zero level. Calculate the mechanical energy at points 1 and 5 and justify why the result of part b) does not change.\n\nWrite the energy of part b) in kilojoules in the answer box.",
+      "answer": 1.6,
+      "unit": "kJ",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Height $h$ and speed $v$ of the sledder at the measuring points (example data)",
+        "columns": [
+          "Point",
+          "$h\\,(\\text{m})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "18.0",
+            "1.5"
+          ],
+          [
+            "2",
+            "14.0",
+            "8.3"
+          ],
+          [
+            "3",
+            "10.0",
+            "11.5"
+          ],
+          [
+            "4",
+            "6.0",
+            "14.0"
+          ],
+          [
+            "5",
+            "2.0",
+            "15.8"
+          ]
+        ]
+      }
     }
   ]
 }

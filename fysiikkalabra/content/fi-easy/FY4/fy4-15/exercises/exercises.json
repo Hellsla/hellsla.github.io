@@ -39,6 +39,52 @@
       "answer": 18.0,
       "unit": "MWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-06",
+      "level": 1,
+      "text": "Kahdella vesivoimalalla on sama virtaama ja sama hyötysuhde. Toisen voimalan putouskorkeus on kaksinkertainen toiseen verrattuna. Kaksinkertaisen putouksen voimalan teho on kaksinkertainen. Mikä seuraavista selittää tämän?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Jokainen turbiinin läpi virtaava vesikilogramma menettää pudotessaan kaksi kertaa enemmän potentiaalienergiaa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Vesi putoaa korkeammalta kaksi kertaa nopeammin, joten turbiinin läpi kulkee kaksi kertaa enemmän vettä.",
+          "feedback": "Virtaama on tehtävässä kummallakin voimalalla sama. Turbiinin läpi kulkee siis sekunnissa yhtä paljon vettä. Teho kasvaa, koska jokaisesta vesikilogrammasta saadaan enemmän energiaa."
+        },
+        {
+          "text": "Vesi muuttuu pudotessaan raskaammaksi, joten sen massa ja sen tuoma teho kaksinkertaistuvat.",
+          "feedback": "Veden massa ei muutu pudotessa. Turbiinin läpi kulkeva massa sekunnissa, $\\rho Q$, on kummallakin voimalalla sama. Ero syntyy siitä, että jokainen kilogramma menettää enemmän potentiaalienergiaa."
+        },
+        {
+          "text": "Jokainen turbiinin läpi virtaava vesikilogramma menettää pudotessaan kaksi kertaa enemmän potentiaalienergiaa.",
+          "correct": true,
+          "feedback": "Oikein. Potentiaalienergian muutos on $mgh$, joten se on suoraan verrannollinen putouskorkeuteen $h$. Massa sekunnissa on sama ja korkeus kaksinkertainen. Silloin veden tuoma teho $\\rho Q g h$ kaksinkertaistuu. Samalla hyötysuhteella myös sähköteho kaksinkertaistuu."
+        },
+        {
+          "text": "Korkeampi putous kasvattaa hyötysuhdetta, koska turbiini pyörii silloin nopeammin ja häviää vähemmän.",
+          "feedback": "Tehtävässä hyötysuhde on kummallakin voimalalla sama. Hyötysuhde ei myöskään voi olla yli $100\\,\\%$. Teho kasvaa siksi, että veden tuoma teho kasvaa putouskorkeuden mukana."
+        }
+      ]
+    },
+    {
+      "id": "fy4-15-L1-07",
+      "level": 1,
+      "text": "Joen vettä virtaa voimalan turbiinien läpi $35{,}0\\,\\text{m}^3$ sekunnissa. Putouskorkeus on $8{,}50\\,\\text{m}$. Kuinka suuri teho vapautuu putoavan veden potentiaalienergiasta? Hyötysuhdetta ei oteta huomioon.",
+      "answer": 2.918475,
+      "unit": "MW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-08",
+      "level": 1,
+      "text": "Tietyn ajan kuluessa tuulivoimalan roottorin läpi virtaa ilmaa, jonka massa on $2{,}50\\cdot 10^{3}\\,\\text{kg}$ ja nopeus $12{,}0\\,\\text{m/s}$. Kuinka suuri on tämän ilman liike-energia?",
+      "answer": 180.0,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +119,108 @@
       "answer": 5.725901,
       "unit": "MWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-05",
+      "level": 2,
+      "text": "Taulukko on esimerkkiaineisto tuulivoimalan sähkötehosta eri tuulen nopeuksilla. Taulukossa on myös se, kuinka monta tuntia vuodessa tuuli puhaltaa kullakin nopeudella. Voimalan nimellisteho eli suurin teho on $2000\\,\\text{kW}$.\n\nMuina aikoina tuuli on liian heikko tai voimala on pysäytetty. Silloin se ei tuota sähköä. Oletetaan, että teho pysyy kullakin nopeudella taulukon arvossa koko ilmoitetun ajan.\n\nLaske voimalan vuodessa tuottama sähköenergia gigawattitunteina.",
+      "kind": [
+        "data"
+      ],
+      "answer": 5.5,
+      "unit": "GWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Tuulivoimalan teho ja tuulen nopeuden esiintymisaika vuodessa (esimerkkiaineisto)",
+        "columns": [
+          "$v\\,(\\text{m/s})$",
+          "$P\\,(\\text{kW})$",
+          "$t\\,(\\text{h})$"
+        ],
+        "rows": [
+          [
+            "4",
+            "100",
+            "1500"
+          ],
+          [
+            "6",
+            "340",
+            "2200"
+          ],
+          [
+            "8",
+            "850",
+            "1800"
+          ],
+          [
+            "10",
+            "1650",
+            "1000"
+          ],
+          [
+            "12",
+            "2000",
+            "700"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-15-L2-06",
+      "level": 2,
+      "text": "Taulukko on esimerkkiaineisto joen keskivirtaamasta $Q$ pienvesivoimalan kohdalla huhtikuusta syyskuuhun. Voimalan putouskorkeus on $9{,}0\\,\\text{m}$ ja hyötysuhde $0{,}85$.\n\nOletetaan, että koko virtaama kulkee turbiinin läpi. Putouskorkeus ja hyötysuhde pysyvät vakioina. Jokaisessa kuukaudessa on $30$ vuorokautta.\n\na) Laske voimalan tuottama sähköenergia huhtikuusta syyskuuhun yhteensä gigawattitunteina.\n\nb) Kuinka monta kertaa suurempi sähköteho voimalalla on toukokuussa kuin elokuussa? Selitä taulukon avulla, miksi voimalan tuotanto vaihtelee vuoden aikana.\n\nVastauskenttään tulee kohdan a) tulos.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 19,
+      "unit": "GWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Joen keskivirtaama kuukausittain (esimerkkiaineisto)",
+        "columns": [
+          "Kuukausi",
+          "$Q\\,(\\text{m}^3\\text{/s})$"
+        ],
+        "rows": [
+          [
+            "Huhtikuu",
+            "85"
+          ],
+          [
+            "Toukokuu",
+            "120"
+          ],
+          [
+            "Kesäkuu",
+            "45"
+          ],
+          [
+            "Heinäkuu",
+            "30"
+          ],
+          [
+            "Elokuu",
+            "28"
+          ],
+          [
+            "Syyskuu",
+            "40"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-15-L2-07",
+      "level": 2,
+      "text": "Oppilas laski tuulivoimalan sähkötehon ja sai oudon pienen tuloksen. Hänen ratkaisunsa on tässä.\n\n”Roottorin halkaisija on $60\\,\\text{m}$, tuulen nopeus $7{,}0\\,\\text{m/s}$, ilman tiheys $1{,}25\\,\\text{kg/m}^3$ ja hyötysuhde $0{,}40$. Pinta-ala on $A = \\pi r^2 = 2827\\,\\text{m}^2$ ja teho $P = \\tfrac{1}{2}\\eta\\rho A v = 0{,}5 \\cdot 0{,}40 \\cdot 1{,}25 \\cdot 2827 \\cdot 7{,}0 = 4948\\,\\text{W} \\approx 4{,}9\\,\\text{kW}$.”\n\nSelitä, mikä oppilaan kaavassa on virhe. Laske sitten voimalan oikea sähköteho. Vastauskenttään tulee oikea teho kilowatteina.",
+      "kind": [
+        "error"
+      ],
+      "answer": 240,
+      "unit": "kW",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +247,98 @@
       "answer": 5.09684,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L3-04",
+      "level": 3,
+      "text": "Taulukko on esimerkkiaineisto tuulivoimalan sähkötehosta eri tuulen nopeuksilla. Roottorin halkaisija on $80\\,\\text{m}$, ilman tiheys $1{,}25\\,\\text{kg/m}^3$ ja voimalan nimellisteho on $2{,}0\\,\\text{MW}$. Taulukon nopeuksilla voimala toimii nimellistehonsa alapuolella. Hyötysuhteen oletetaan olevan likimain vakio.\n\nTutkitaan, noudattaako teho mallia $P = k v^3$.\n\na) Laske jokaiselle taulukon riville suhde $P/v^3$. Perustele sen avulla, että teho on verrannollinen nopeuden kolmanteen potenssiin.\n\nb) Laske suhteiden $P/v^3$ keskiarvosta voimalan hyötysuhde prosentteina.\n\nc) Mikä olisi mallin mukainen teho nopeudella $13\\,\\text{m/s}$? Vertaa tulosta nimellistehoon. Selitä, mitä ero kertoo siitä, missä malli pätee.\n\nVastauskenttään tulee kohdan b) tulos.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 40,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Tuulivoimalan sähköteho tuulen nopeuden funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$v\\,(\\text{m/s})$",
+          "$P\\,(\\text{kW})$"
+        ],
+        "rows": [
+          [
+            "4",
+            "80"
+          ],
+          [
+            "5",
+            "155"
+          ],
+          [
+            "6",
+            "275"
+          ],
+          [
+            "7",
+            "425"
+          ],
+          [
+            "8",
+            "650"
+          ],
+          [
+            "9",
+            "905"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-15-L3-05",
+      "level": 3,
+      "text": "Tuulivoimapuiston sähköntuotanto ylittää yöllä kulutuksen. Taulukko on esimerkkiaineisto puiston ylijäämätehosta kuuden peräkkäisen tunnin ajalta. Teho on kunkin tunnin keskiarvo.\n\nYlijäämäsähkö käytetään pumppaamaan vettä ala-altaasta yläaltaaseen. Yläallas on $85{,}0\\,\\text{m}$ korkeammalla. Pumppujen hyötysuhde on $0{,}800$ eli $80{,}0\\,\\%$ sähköenergiasta muuttuu veden potentiaalienergiaksi. Oletetaan, että koko vesimäärä nostetaan korkeuseron $85{,}0\\,\\text{m}$ verran. Yläaltaan tilavuus on $1{,}20\\cdot 10^{6}\\,\\text{m}^3$.\n\na) Kuinka suuri tilavuus vettä saadaan pumpattua yläaltaaseen kuuden tunnin aikana?\n\nb) Mahtuuko vesi yläaltaaseen?\n\nc) Kuinka monta tuntia varastoitu potentiaalienergia riittäisi $40{,}0\\,\\text{MW}$:n kulutukselle? Turbiinin ja generaattorin häviöt jätetään tässä huomiotta. Perustele, miksi pumppuvoimala sopii hyvin tuulivoiman rinnalle.\n\nVastauskenttään tulee kohdan a) tulos.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 1040000.0,
+      "unit": "m³",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Tuulivoimapuiston ylijäämäteho yöllä (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$P\\,(\\text{MW})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "40"
+          ],
+          [
+            "2",
+            "52"
+          ],
+          [
+            "3",
+            "62"
+          ],
+          [
+            "4",
+            "58"
+          ],
+          [
+            "5",
+            "48"
+          ],
+          [
+            "6",
+            "40"
+          ]
+        ]
+      }
     }
   ]
 }

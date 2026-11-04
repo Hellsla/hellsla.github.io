@@ -117,3 +117,182 @@
 **Sijoitus:** $\tfrac{1}{2}\,m v^2 = \tfrac{1}{2} \cdot 55{,}0\,\text{kg} \cdot (7{,}00\,\text{m/s})^2 = 1347{,}5\,\text{J}$ ja $m g h = 55{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 2{,}10\,\text{m} \approx 1133{,}1\,\text{J}$, joten $E_\text{muu} = 1347{,}5\,\text{J} - 1133{,}1\,\text{J} \approx 214\,\text{J}$
 **Vastaus:** $214\,\text{J}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Ilman kitkaa luistelija nousisi korkeudelle $\tfrac{v^2}{2g} = \tfrac{49\,\text{m}^2/\text{s}^2}{19{,}62\,\text{m/s}^2} \approx 2{,}50\,\text{m}$. Hän nousee $2{,}10\,\text{m}$ eli noin $16\,\%$ vähemmän, ja muuttunut energia $214\,\text{J}$ on noin $16\,\%$ alkuperäisestä $1347{,}5\,\text{J}$:sta. Tulos on positiivinen, koska kitka vain vähentää mekaanista energiaa.
+
+## fy4-7-L1-06
+**Kysytty:** miten auton liike-energia muuttuu, kun nopeus kaksinkertaistuu ja massa pysyy samana
+**Periaate:** Liike-energia $E_\text{k} = \tfrac{1}{2}\,mv^2$ riippuu nopeuden neliöstä. Kun nopeus kasvaa kaksinkertaiseksi, neliö kasvaa kertoimella $2^2 = 4$, ja massa pysyy samana.
+**Mallivastaus:** Liike-energia kasvaa nelinkertaiseksi, koska $\tfrac{1}{2}\,m(2v)^2 = 4 \cdot \tfrac{1}{2}\,mv^2$. Väite kaksinkertaistumisesta on väärä, koska liike-energia ei ole verrannollinen nopeuteen vaan sen neliöön. Väite kahdeksankertaistumisesta on väärä, koska nopeus on kaavassa toisessa eikä kolmannessa potenssissa. Väite muuttumattomuudesta on väärä, koska liike-energia riippuu massan lisäksi nopeudesta.
+
+## fy4-7-L1-07
+**Annettu:** massa $m = 80\,\text{kg}$, potentiaalienergian muutos $\Delta E_\text{p} = 9{,}4\,\text{kJ}$, $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** nostokorkeus $\Delta h$ yksikössä $\text{m}$
+**Periaate:** Potentiaalienergian muutos on verrannollinen korkeuden muutokseen. Kun muutos ja massa tunnetaan, korkeuden muutos ratkaistaan kaavasta.
+**Kaava:** $\Delta E_\text{p} = m g\,\Delta h$, joten $\Delta h = \dfrac{\Delta E_\text{p}}{m g}$
+**Muunnokset:** $9{,}4\,\text{kJ} = 9{,}4 \cdot 1000\,\text{J} = 9400\,\text{J}$
+**Sijoitus:** $\Delta h = \dfrac{9400\,\text{J}}{80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{9400\,\text{J}}{784{,}8\,\text{N}} \approx 11{,}98\,\text{m}$
+**Vastaus:** $12\,\text{m}$, kaksi merkitsevää numeroa kuten massassa ja energiassa.
+**Järkevyys:** Pyöristetyillä luvuilla $80\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 12\,\text{m} = 9600\,\text{J} \approx 9{,}4\,\text{kJ}$. Noin $12\,\text{m}$ vastaa neljän kerroksen korkeutta, mikä sopii hissin matkaksi.
+
+## fy4-7-L1-08
+**Kysytty:** ämpärin liike-energian ja potentiaalienergian etumerkit, kun ämpäri on nollatason alapuolella ja liikkuu
+**Periaate:** Liike-energia $E_\text{k} = \tfrac{1}{2}\,mv^2$ sisältää nopeuden neliön, joten se ei ole koskaan negatiivinen eikä riipu liikkeen suunnasta. Potentiaalienergia $E_\text{p} = m g h$ lasketaan korkeudesta nollatasosta, ja nollatason alapuolella $h < 0$.
+**Mallivastaus:** Liike-energia on positiivinen ja potentiaalienergia negatiivinen. Ämpäri liikkuu, joten $E_\text{k} > 0$, ja se on nollatason alapuolella, joten $E_\text{p} = m g h < 0$. Väite, jonka mukaan molemmat olisivat negatiiviset, on väärä, koska alaspäin suuntautuva liike ei tee liike-energiasta negatiivista. Väite, jonka mukaan molemmat olisivat positiiviset, on väärä, koska nollatason alapuolella potentiaalienergia on negatiivinen. Väite, jonka mukaan liike-energia olisi negatiivinen ja potentiaalienergia positiivinen, on väärä, koska se kääntää etumerkit päinvastaisiksi: kaavassa $h$ on korkeus nollatasosta, ei syvyys.
+
+## fy4-7-L2-05
+**Annettu:** massa $m = 0{,}057\,\text{kg}$, taulukon seitsemän mittausta $(t, h, v)$ hetkillä $0{,}0\,\text{s}$, $0{,}1\,\text{s}$, $\ldots$, $0{,}6\,\text{s}$; nollataso on lattia; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** $E_\text{k}$, $E_\text{p}$ ja $E_\text{mek}$ jokaisella hetkellä, näiden muutos ajan kuluessa ja mekaanisen energian keskiarvo $E_{\text{mek,ka}}$ jouleina
+**Periaate:** Liike-energia lasketaan nopeudesta ja potentiaalienergia korkeudesta lattian yläpuolella. Mekaaninen energia on niiden summa. Ilmanvastus jätetään huomiotta, joten mekaanisen energian pitäisi pysyä samana, ja mittausvirheet aiheuttavat vain pientä hajontaa.
+**Kaava:** $E_\text{k} = \tfrac{1}{2}\,mv^2$, $E_\text{p} = m g h$ ja $E_\text{mek} = E_\text{k} + E_\text{p}$. Keskiarvo on mekaanisten energioiden summa jaettuna mittausten määrällä $7$.
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** Esimerkiksi hetkellä $t = 0{,}3\,\text{s}$:
+```latex
+\begin{aligned}
+E_\text{k} &= \tfrac{1}{2} \cdot 0{,}057\,\text{kg} \cdot (2{,}91\,\text{m/s})^2 \\
+&= 0{,}241\,\text{J} \\
+E_\text{p} &= 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}36\,\text{m} \\
+&= 0{,}760\,\text{J} \\
+E_\text{mek} &= 0{,}241\,\text{J} + 0{,}760\,\text{J} \\
+&= 1{,}001\,\text{J}
+\end{aligned}
+```
+Samoin muille hetkille (jouleina):
+```latex
+\begin{array}{c|ccc}
+t\,(\text{s}) & E_\text{k} & E_\text{p} & E_\text{mek} \\ \hline
+0{,}0 & 0{,}000 & 1{,}007 & 1{,}007 \\
+0{,}1 & 0{,}027 & 0{,}979 & 1{,}006 \\
+0{,}2 & 0{,}113 & 0{,}895 & 1{,}008 \\
+0{,}3 & 0{,}241 & 0{,}760 & 1{,}001 \\
+0{,}4 & 0{,}445 & 0{,}570 & 1{,}015 \\
+0{,}5 & 0{,}679 & 0{,}324 & 1{,}003 \\
+0{,}6 & 0{,}999 & 0{,}022 & 1{,}021
+\end{array}
+```
+Kohta b): liike-energia kasvaa lähes nollasta noin yhteen jouleen, potentiaalienergia pienenee yhtä paljon, ja niiden summa eli mekaaninen energia pysyy lähes samana. Se vaihtelee vain alle $1{,}5\,\%$ keskiarvosta, mikä on mittausvirheen suuruusluokkaa.
+Kohta c): mekaanisten energioiden summa on $7{,}061\,\text{J}$, joten $E_{\text{mek,ka}} = 7{,}061\,\text{J} : 7 \approx 1{,}009\,\text{J}$.
+**Vastaus:** $1{,}0\,\text{J}$, kaksi merkitsevää numeroa kuten massassa $0{,}057\,\text{kg}$.
+**Järkevyys:** Alussa pallo on levossa korkeudella $1{,}80\,\text{m}$, joten $E_\text{mek} = m g h = 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}80\,\text{m} \approx 1{,}01\,\text{J}$, sama kuin keskiarvo. Viimeisellä hetkellä pallo on lähes lattiassa, ja lähes kaikki energia on liike-energiaa.
+
+## fy4-7-L2-06
+**Annettu:** massa $m = 70\,\text{kg}$, syvyys $1{,}5\,\text{m}$ nollatason eli vedenpinnan alapuolella, nopeus $v = 4{,}0\,\text{m/s}$, $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** oppilaan virhe ja sukeltajan mekaaninen energia $E_\text{mek}$ jouleina
+**Periaate:** Potentiaalienergia lasketaan korkeudesta nollatason yläpuolella. Vedenpinnan alapuolella korkeus on negatiivinen, $h = -1{,}5\,\text{m}$, joten potentiaalienergia on negatiivinen. Oppilas sijoitti kaavaan syvyyden positiivisena lukuna ja sai positiivisen potentiaalienergian. Liike-energia on positiivinen suunnasta riippumatta.
+**Kaava:** $E_\text{mek} = E_\text{k} + E_\text{p} = \tfrac{1}{2}\,mv^2 + m g h$, missä $h = -1{,}5\,\text{m}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** Korkeus on $h = -1{,}5\,\text{m}$, joten
+```latex
+\begin{aligned}
+E_\text{k} &= \tfrac{1}{2} \cdot 70\,\text{kg} \cdot (4{,}0\,\text{m/s})^2 \\
+&= 560\,\text{J} \\
+E_\text{p} &= 70\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (-1{,}5\,\text{m}) \\
+&\approx -1030\,\text{J} \\
+E_\text{mek} &= 560\,\text{J} - 1030\,\text{J} \\
+&= -470\,\text{J}
+\end{aligned}
+```
+**Vastaus:** $-4{,}7 \cdot 10^{2}\,\text{J}$ eli kahdella merkitsevällä numerolla, kuten massassa ja nopeudessa. Virhe: oppilas käytti syvyyttä positiivisena korkeutena, vaikka $h < 0$ nollatason alapuolella.
+**Järkevyys:** Sukeltaja on nollatason alapuolella, joten potentiaalienergia on negatiivinen ja sen itseisarvo $1030\,\text{J}$ on suurempi kuin liike-energia $560\,\text{J}$. Siksi myös summa on negatiivinen. Oppilaan positiivinen tulos $1590\,\text{J}$ ei voi pitää paikkaansa, koska nollatason alapuolella potentiaalienergia pienentää mekaanista energiaa.
+
+## fy4-7-L2-07
+**Annettu:** esimerkkiaineiston viisi mittausta $(v, E_\text{k})$: $(0{,}40\,\text{m/s};\,0{,}043\,\text{J})$, $(0{,}80\,\text{m/s};\,0{,}17\,\text{J})$, $(1{,}20\,\text{m/s};\,0{,}37\,\text{J})$, $(1{,}60\,\text{m/s};\,0{,}66\,\text{J})$ ja $(2{,}00\,\text{m/s};\,1{,}04\,\text{J})$
+**Kysytty:** kärryn massa $m$ yksikössä $\text{kg}$
+**Periaate:** Liike-energia on $E_\text{k} = \tfrac{1}{2}\,mv^2$. Kun $E_\text{k}$ piirretään nopeuden neliön $v^2$ funktiona, kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on $\tfrac{1}{2}\,m$. Massa saadaan siis kulmakertoimen kaksinkertaisena.
+**Kuvaajan lukeminen:** Lasketaan ensin $v^2$: $0{,}16$, $0{,}64$, $1{,}44$, $2{,}56$ ja $4{,}00\,\text{m}^2/\text{s}^2$. Piirretään pisteet $(v^2, E_\text{k})$ ja sovitetaan niihin origon kautta kulkeva suora. Suoralta luetaan kaukainen piste: kun $v^2 = 4{,}00\,\text{m}^2/\text{s}^2$, suoran arvo on noin $E_\text{k} = 1{,}04\,\text{J}$.
+**Kaava:** kulmakerroin $k = \dfrac{\Delta E_\text{k}}{\Delta (v^2)} = \tfrac{1}{2}\,m$, joten $m = 2k$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Kulmakertoimen yksikkö on $\text{J} : (\text{m}^2/\text{s}^2) = \text{kg}$.
+**Sijoitus:** $k = \dfrac{1{,}04\,\text{J} - 0\,\text{J}}{4{,}00\,\text{m}^2/\text{s}^2 - 0\,\text{m}^2/\text{s}^2} = 0{,}26\,\text{kg}$, joten $m = 2 \cdot 0{,}26\,\text{kg} = 0{,}52\,\text{kg}$
+**Vastaus:** $0{,}52\,\text{kg}$, kaksi merkitsevää numeroa kuten mittausarvoissa.
+**Järkevyys:** Tarkistus yhdellä pisteellä: $\tfrac{1}{2} \cdot 0{,}52\,\text{kg} \cdot (1{,}20\,\text{m/s})^2 = 0{,}37\,\text{J}$, sama kuin taulukossa. Kärryn massa $0{,}52\,\text{kg}$ on tavallinen laboratoriokärrylle.
+
+## fy4-7-L3-04
+**Annettu:** massa $m = 0{,}058\,\text{kg}$, korkeimmat kohdat $1{,}50\,\text{m}$, $1{,}09\,\text{m}$, $0{,}80\,\text{m}$, $0{,}57\,\text{m}$ ja $0{,}42\,\text{m}$ lattian yläpuolella; korkeimmassa kohdassa $v = 0$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** mekaaninen energia korkeimmissa kohdissa, keskimääräinen prosenttiosuus, neljässä ensimmäisessä pomppauksessa muuttunut energia $\Delta E$ jouleina ja tulosten riippumattomuus nollatasosta
+**Periaate:** Korkeimmassa kohdassa nopeus on nolla, joten mekaaninen energia on pelkkää potentiaalienergiaa, $E_\text{mek} = E_\text{p} = m g h$. Jos mekaaninen energia säilyisi, pallo palaisi aina samaan korkeuteen. Korkeus pienenee, joten osa mekaanisesta energiasta muuttuu muuksi energiaksi: törmäyksessä pallo ja lattia lämpenevät hieman, pallo värähtelee ja ääntä syntyy. Muuttunut määrä on mekaanisen energian väheneminen.
+**Kaava:** $E_\text{mek} = m g h$. Muuttunut energia on $\Delta E = E_\text{mek,0} - E_\text{mek,4} = m g\,(h_0 - h_4)$. Osuus yhdessä pomppauksessa saadaan korkeuksien suhteesta, koska $E_\text{mek}$ on verrannollinen korkeuteen.
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** Kohta a): $m g = 0{,}058\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}569\,\text{N}$, ja $E_n = m g h_n$:
+```latex
+\begin{aligned}
+E_0 &= 0{,}569\,\text{N} \cdot 1{,}50\,\text{m} \\
+&= 0{,}853\,\text{J} \\
+E_1 &= 0{,}569\,\text{N} \cdot 1{,}09\,\text{m} \\
+&= 0{,}620\,\text{J} \\
+E_2 &= 0{,}569\,\text{N} \cdot 0{,}80\,\text{m} \\
+&= 0{,}455\,\text{J} \\
+E_3 &= 0{,}569\,\text{N} \cdot 0{,}57\,\text{m} \\
+&= 0{,}324\,\text{J} \\
+E_4 &= 0{,}569\,\text{N} \cdot 0{,}42\,\text{m} \\
+&= 0{,}239\,\text{J}
+\end{aligned}
+```
+Kohta b): peräkkäisten korkeuksien suhteet ovat $\dfrac{1{,}09}{1{,}50} = 0{,}727$, $\dfrac{0{,}80}{1{,}09} = 0{,}734$, $\dfrac{0{,}57}{0{,}80} = 0{,}713$ ja $\dfrac{0{,}42}{0{,}57} = 0{,}737$. Suhteiden summa on $2{,}911$, joten keskiarvo on $2{,}911 : 4 = 0{,}728$. Jokaisessa pomppauksessa mekaanisesta energiasta säilyy siis noin $73\,\%$ ja noin $27\,\%$ muuttuu muuksi energiaksi.
+Kohta c):
+```latex
+\begin{aligned}
+\Delta E &= 0{,}853\,\text{J} - 0{,}239\,\text{J} \\
+&= 0{,}614\,\text{J}
+\end{aligned}
+```
+Kohta d): nollataso on $1{,}00\,\text{m}$ lattian yläpuolella, joten korkeudet ovat $h' = h - 1{,}00\,\text{m}$:
+```latex
+\begin{aligned}
+E_0' &= 0{,}569\,\text{N} \cdot 0{,}50\,\text{m} \\
+&= 0{,}285\,\text{J} \\
+E_4' &= 0{,}569\,\text{N} \cdot (-0{,}58\,\text{m}) \\
+&= -0{,}330\,\text{J} \\
+E_4' - E_0' &= -0{,}615\,\text{J}
+\end{aligned}
+```
+Muutos on sama kuin lattian nollatasolla, koska $m g\,(h_4' - h_0') = m g\,(h_4 - h_0)$: nollatason korkeus supistuu pois erotuksesta. Mekaanisen energian arvo riippuu nollatasosta, mutta sen muutos ei.
+**Vastaus:** $0{,}61\,\text{J}$, kaksi merkitsevää numeroa kuten massassa $0{,}058\,\text{kg}$. Energia on mennyt pallon, lattian ja ilman sisäenergiaksi sekä ääneksi.
+**Järkevyys:** Kokonaismuutos on $1 - \dfrac{0{,}42}{1{,}50} = 72\,\%$ alkuperäisestä energiasta, ja $0{,}72 \cdot 0{,}853\,\text{J} = 0{,}614\,\text{J}$. Neljä pomppausta, joissa säilyy $73\,\%$, antaa $0{,}73^4 \approx 0{,}28$ eli jäljellä $28\,\%$, mikä vastaa taulukon suhdetta $0{,}42 : 1{,}50 = 0{,}28$.
+
+## fy4-7-L3-05
+**Annettu:** massa $m = 48\,\text{kg}$, mittauspisteet $(h, v)$: $(18{,}0\,\text{m};\,1{,}5\,\text{m/s})$, $(14{,}0\,\text{m};\,8{,}3\,\text{m/s})$, $(10{,}0\,\text{m};\,11{,}5\,\text{m/s})$, $(6{,}0\,\text{m};\,14{,}0\,\text{m/s})$ ja $(2{,}0\,\text{m};\,15{,}8\,\text{m/s})$; nollataso on rinteen alapää; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** mekaaninen energia $E_\text{mek}$ pisteissä 1–5, pisteiden 1 ja 5 välillä muuksi energiaksi muuttunut energia $\Delta E$ kilojouleina sekä tuloksen riippumattomuus nollatasosta
+**Periaate:** Jokaisessa pisteessä mekaaninen energia on liike-energian ja potentiaalienergian summa. Ilman kitkaa ja ilmanvastusta se pysyisi samana, joten sen väheneminen kertoo, kuinka paljon energiaa on muuttunut muuksi energiaksi eli sisäenergiaksi kitkan ja ilmanvastuksen vaikutuksesta. Korkeus on pystysuora etäisyys nollatasosta, ei matka rinnettä pitkin.
+**Kaava:** $E_\text{mek} = \tfrac{1}{2}\,mv^2 + m g h$ ja $\Delta E = E_\text{mek,1} - E_\text{mek,5}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten energiat tulevat jouleina. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:** Kohta a), esimerkkinä piste 1, jossa $m g = 48\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 470{,}9\,\text{N}$:
+```latex
+\begin{aligned}
+E_\text{k} &= \tfrac{1}{2} \cdot 48\,\text{kg} \cdot (1{,}5\,\text{m/s})^2 \\
+&= 54\,\text{J} \\
+E_\text{p} &= 470{,}9\,\text{N} \cdot 18{,}0\,\text{m} \\
+&\approx 8476\,\text{J} \\
+E_\text{mek} &\approx 8530\,\text{J}
+\end{aligned}
+```
+Kaikki pisteet (jouleina):
+```latex
+\begin{array}{c|ccc}
+\text{Piste} & E_\text{k} & E_\text{p} & E_\text{mek} \\ \hline
+1 & 54 & 8476 & 8530 \\
+2 & 1653 & 6592 & 8246 \\
+3 & 3174 & 4709 & 7883 \\
+4 & 4704 & 2825 & 7529 \\
+5 & 5991 & 942 & 6933
+\end{array}
+```
+Kohta b):
+```latex
+\begin{aligned}
+\Delta E &= 8530\,\text{J} - 6933\,\text{J} \\
+&= 1597\,\text{J} \\
+&\approx 1{,}6\,\text{kJ}
+\end{aligned}
+```
+Kohta c): peräkkäisten pisteiden mekaanisen energian erotukset ovat $284\,\text{J}$, $363\,\text{J}$, $354\,\text{J}$ ja $596\,\text{J}$. Eniten energiaa muuttuu pisteiden 4 ja 5 välillä, missä nopeus on suurin, ja vähiten pisteiden 1 ja 2 välillä, missä nopeus on pienin. Tämä sopii ilmanvastukseen, joka kasvaa nopeuden kasvaessa, ja lumen kitka vaikuttaa sen lisäksi. Energia ei häviä: kitka ja ilmanvastus lämmittävät pulkkaa, lunta ja ilmaa, joten mekaaninen energia muuttuu niiden sisäenergiaksi.
+Kohta d): nollataso on pisteen 1 korkeudella, joten pisteen 5 korkeus on $h' = 2{,}0\,\text{m} - 18{,}0\,\text{m} = -16{,}0\,\text{m}$ ja pisteen 1 korkeus on $0$:
+```latex
+\begin{aligned}
+E_1' &= 54\,\text{J} + 0\,\text{J} \\
+&= 54\,\text{J} \\
+E_5' &= 5991\,\text{J} - 7534\,\text{J} \\
+&= -1543\,\text{J} \\
+E_1' - E_5' &= 1597\,\text{J}
+\end{aligned}
+```
+Erotus on sama, koska nollatason valinta lisää molempiin mekaanisiin energioihin saman luvun, joka supistuu erotuksesta pois.
+**Vastaus:** $1{,}6\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $48\,\text{kg}$.
+**Järkevyys:** Jos mekaaninen energia säilyisi, pisteen 5 nopeus olisi noin $17{,}8\,\text{m/s}$, ja mitattu $15{,}8\,\text{m/s}$ on sitä pienempi. Muuttunut energia on noin $19\,\%$ alkuperäisestä $8530\,\text{J}$:sta, mikä on kohtuullinen osuus pulkkamäelle.
