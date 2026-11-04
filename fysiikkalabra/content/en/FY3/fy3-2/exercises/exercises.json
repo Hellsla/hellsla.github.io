@@ -186,7 +186,7 @@
     {
       "id": "fy3-2-L2-06",
       "level": 2,
-      "text": "A student measures the work and power in a staircase. The student's mass is $62\\,\\text{kg}$. The staircase has 18 steps, each with a height of $0.17\\,\\text{m}$. The student climbs the stairs three times at as steady a pace as possible, and timing gives the climbing times in the table (example data set).\n\nAssume that only lifting the student's weight to the height of the staircase requires work. Calculate the student's average power during the climb using the average of the climbing times.",
+      "text": "A student measures the work and power while climbing a staircase. The student's mass is $62\\,\\text{kg}$. The staircase has 18 steps, each with a height of $0.17\\,\\text{m}$. The student climbs the stairs three times at as steady a pace as possible, and timing gives the climbing times in the table (example data set).\n\nAssume that only lifting the student's weight to the height of the staircase requires work. Calculate the student's average power during the climb using the average of the climbing times.",
       "kind": [
         "experiment",
         "data"

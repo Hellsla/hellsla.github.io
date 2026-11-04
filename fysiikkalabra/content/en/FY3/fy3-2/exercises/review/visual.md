@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d1ba268bbb90b188
+CONTENT-HASH: 8eacddf7d35b9750
+Mode: full
+Round: 1
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md L1-04, L2-04, L3-01 — ranges are written with \ldots ("0 . . . 6 m") in the solutions but with an en dash in the task text — use "0–6 m" throughout.
-- [Minor] solutions L1-03 reasonableness — units set as stacked fractions (9.81 m over s^2) are cramped; write 9.81 m/s^2 as in the rest.
-- [Minor] exercises.json — numbers with units in prose ("80 N", "25 metres", "12 seconds") are plain text beside maths — set as maths.
+- none
 
 ## Checked
-- contact-4; open-exercises-1280-4 (the pull-steps graph, L1-04) and L3-1280-1 at full size; L1-01 to L1-03 and L2 in contact-4.
-- The graph has labelled axes with units, a 1 m / 5 N grid, and an English aria-label with the force levels; it does not give the answer away. Solutions: sections, chains and answer boxes read well.
+- Opened captures fy3-2-open-exercises-1280-7 (L1-06/07 solutions), fy3-2-open-exercises-L2-1280-6 and fy3-2-open-exercises-L3-1280-5 of en: text, inline maths, display blocks and data tables render without overflow or clipping.
+- Data tables (L2-05, L2-06, L3-04, L3-05) have captions and headers in English; unit symbols in math.
+- Decimal point rendered in en.
+- Answer boxes show the right units (J, W, cm, kW, m/s); no Finnish remnants in the English captures.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish (English text) 4 · accessibility 4
+illustrations 4 · typography 5 · language 5 · accessibility 4

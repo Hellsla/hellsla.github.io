@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: c3e585d1b7a369b5
+CONTENT-HASH: 53ff54324c3cdd71
+Mode: full
+Round: 1
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions L2-04, L3-01 — "Kuvaajassa on..." although the task shows no graph — say "Piirretään kuvaaja:" or similar.
-- [Minor] solutions — units written both as m/s² and stacked fractions in one solution — one form.
-- [Minor] exercises.json L1-01, L2-01, L3-01 — plain-text numbers with units beside inline maths.
-- [Minor] L3-01 text "voiman matkan suhteen keskimääräinen suuruus" is heavy for fi-easy — "voiman keskiarvo matkan suhteen".
+- none
 
 ## Checked
-- open-exercises L1 4, L2 3, L3 1, L3 3 (1280); pull-steps graph (units, ticks, description match).
+- Opened captures fy3-2-open-exercises-1280-7 (L1-06/07 solutions), fy3-2-open-exercises-L2-1280-6 and fy3-2-open-exercises-L3-1280-5 of fi-easy: text, inline maths, display blocks and data tables render without overflow or clipping.
+- Data tables (L2-05, L2-06, L3-04, L3-05) have captions and headers in plain Finnish (selkosuomi); unit symbols in math.
+- Decimal comma rendered in the data tables and maths in fi-easy.
+- Answer boxes show the right units (J, W, cm, kW, m/s); no Finnish remnants in the English captures.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · language 5 · accessibility 4
