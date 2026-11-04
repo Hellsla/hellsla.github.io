@@ -119,3 +119,73 @@
 **Sijoitus:** $v = 3{,}10\,\text{m/s} + 2 \cdot (-4{,}86\,\text{m/s}^2) \cdot 0{,}500\,\text{s} = 3{,}10\,\text{m/s} - 4{,}86\,\text{m/s} = -1{,}76\,\text{m/s}$
 **Vastaus:** $-1{,}76\,\text{m/s}$, kolme merkitsevää numeroa, koska polynomin kertoimet ja hetki $0{,}500\,\text{s}$ on annettu kolmella merkitsevällä numerolla. Negatiivinen etumerkki tarkoittaa, että pallo liikkuu jo alaspäin.
 **Järkevyys:** Mittauksesta saatu kiihtyvyys $-9{,}72\,\text{m/s}^2$ on lähellä arvoa $-g$, kuten pitääkin. Pallo on lakipisteessä hetkellä $3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}$, joten hetkellä $0{,}500\,\text{s}$ se on jo laskeutumassa ja nopeuden täytyy olla negatiivinen. Laskeutumista on kulunut $0{,}18\,\text{s}$, ja $9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}$.
+
+## fy4-2-L1-06
+**Kysytty:** mihin suuntaan itään ajavan ja jarruttavan auton kiihtyvyys osoittaa.
+**Periaate:** Kiihtyvyys on nopeuden muutos jaettuna ajalla, $a = \Delta v : \Delta t$, joten se osoittaa nopeuden muutoksen suuntaan. Jarrutuksessa nopeus pienenee: loppunopeus on pienempi kuin alkunopeus, ja muutos $\Delta v = v_2 - v_1$ osoittaa vastakkaiseen suuntaan kuin liike. Kun liike on itään, kiihtyvyys osoittaa länteen. Suoralla tämä näkyy etumerkkinä: jos itä on positiivinen, kiihtyvyys on negatiivinen.
+**Mallivastaus:** Kiihtyvyys osoittaa länteen, koska nopeus pienenee ja kiihtyvyys osoittaa nopeuden muutoksen suuntaan. Se ei osoita liikkeen suuntaan, sillä silloin auto kiihtyisi. Se ei ole nolla, koska nopeus muuttuu, eikä sillä ole pystykomponenttia, koska nopeus muuttuu vain vaakasuunnassa.
+
+## fy4-2-L1-07
+**Annettu:** kuvaajasta nopeus $v_1 = 2{,}0\,\text{m/s}$ hetkellä $t = 0$ ja $v_2 = 7{,}0\,\text{m/s}$ hetkellä $t = 5{,}0\,\text{s}$; kuvaaja on suora ja nopeus pysyy positiivisena
+**Kysytty:** kuljettu matka $\Delta x$ metreinä
+**Periaate:** Potkulauta liikkuu koko ajan samaan suuntaan, joten matka on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala. Kuvaajan alla on suorakulmio (korkeus $v_1$) ja sen päällä kolmio (korkeus $v_2 - v_1$), eli puolisuunnikas.
+**Kuvaajan lukeminen:** Suoran päätepisteet ovat ruudukon viivojen risteyksissä: alkupiste $(0;\, 2{,}0\,\text{m/s})$ ja loppupiste $(5{,}0\,\text{s};\, 7{,}0\,\text{m/s})$.
+**Kaava:** $\Delta x = v_1\,t + \tfrac{1}{2}\,(v_2 - v_1)\,t$, eli nopeuksien keskiarvo kertaa aika
+**Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$ ja aika sekunteina, joten tulos tulee metreinä. Muunnoksia ei tarvita.
+**Sijoitus:** $\Delta x = 2{,}0\,\text{m/s} \cdot 5{,}0\,\text{s} + \tfrac{1}{2} \cdot 5{,}0\,\text{m/s} \cdot 5{,}0\,\text{s} = 10\,\text{m} + 12{,}5\,\text{m} = 22{,}5\,\text{m}$
+**Vastaus:** $22{,}5\,\text{m}$, kolme merkitsevää numeroa, koska luetut arvot ovat tarkasti ruudukon viivoilla.
+**Järkevyys:** Keskinopeus on $(2{,}0\,\text{m/s} + 7{,}0\,\text{m/s}) : 2 = 4{,}5\,\text{m/s}$, ja $4{,}5\,\text{m/s} \cdot 5{,}0\,\text{s} = 22{,}5\,\text{m}$. Matka on suurempi kuin alkunopeudella kuljettu $10\,\text{m}$ ja pienempi kuin loppunopeudella kuljettu $35\,\text{m}$, kuten pitääkin.
+
+## fy4-2-L1-08
+**Kysytty:** mikä oppilaan ratkaisussa on virheellistä.
+**Periaate:** Kivi putoaa vakiokiihtyvyydellä $g$, joten nopeus $v = g\,t$ kasvaa tasaisesti nollasta arvoon $19{,}6\,\text{m/s}$. Matka $v\,t$ pätee vain, jos nopeus on koko ajan sama. Tässä nopeus muuttuu koko ajan, joten matka on $(t,v)$-kuvaajan kolmion ala eli keskinopeus kertaa aika.
+**Mallivastaus:** Virhe on se, että matka laskettiin loppunopeudella, vaikka kiven nopeus kasvaa koko putoamisen ajan. Nopeuden laskenta oli oikein. Oikea matka saadaan keskinopeudesta: $\tfrac{1}{2} \cdot 19{,}6\,\text{m/s} \cdot 2{,}0\,\text{s} \approx 20\,\text{m}$, mikä on puolet oppilaan tuloksesta. Kaivon syvyys on siis noin $20\,\text{m}$. Massaa ei tarvita, koska putoamiskiihtyvyys on kaikille kappaleille sama, kun ilmanvastus on pieni.
+
+## fy4-2-L2-05
+**Annettu:** taulukon $(t,v)$-pisteet, seitsemän mittausta välillä $0 \ldots 3{,}0\,\text{s}$; kärry kiihtyy tasaisesti
+**Kysytty:** kärryn kiihtyvyys $a$ yksikössä $\text{m/s}^2$
+**Periaate:** Tasaisesti kiihtyvässä liikkeessä $(t,v)$-kuvaaja on suora, ja sen kulmakerroin on kiihtyvyys, koska $v = v_0 + a\,t$. Mittauspisteet eivät ole täsmälleen suoralla, joten suora sovitetaan kaikkiin pisteisiin yhtä aikaa.
+**Kuvaajan lukeminen:** Pisteet $(t,v)$ nousevat suunnilleen suoraa pitkin. Sovitetun suoran yhtälö on laskimella tai taulukkolaskennalla $v \approx 0{,}84\,\text{m/s}^2 \cdot t + 0{,}22\,\text{m/s}$.
+**Kaava:** $a = \dfrac{\Delta v}{\Delta t}$ eli sovitetun suoran kulmakerroin $k$
+**Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina, joten kulmakerroin on yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
+**Sijoitus:** Kulmakerroin saadaan suoran kahdesta kaukana toisistaan olevasta pisteestä: $a = \dfrac{2{,}73\,\text{m/s} - 0{,}22\,\text{m/s}}{3{,}0\,\text{s} - 0\,\text{s}} \approx 0{,}84\,\text{m/s}^2$. Tarkistus aineiston päätepisteillä: $\dfrac{2{,}71\,\text{m/s} - 0{,}21\,\text{m/s}}{3{,}0\,\text{s}} \approx 0{,}83\,\text{m/s}^2$.
+**Vastaus:** $0{,}84\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska mittausten nopeudet on annettu kahden desimaalin tarkkuudella ja pisteet hajoavat hieman.
+**Järkevyys:** Alkunopeus $0{,}22\,\text{m/s}$ on lähellä mitattua $0{,}21\,\text{m/s}$, ja sovituksen arvo hetkellä $3{,}0\,\text{s}$ on $0{,}22\,\text{m/s} + 0{,}84\,\text{m/s}^2 \cdot 3{,}0\,\text{s} \approx 2{,}74\,\text{m/s}$, lähellä mitattua $2{,}71\,\text{m/s}$. Kiihtyvyys on pieni verrattuna arvoon $g = 9{,}81\,\text{m/s}^2$, kuten loivalla tasolla pitääkin.
+
+## fy4-2-L2-06
+**Annettu:** taulukon $(t,x)$-pisteet, kuusi mittausta välillä $0 \ldots 2{,}0\,\text{s}$; kärry lähtee levosta paikasta $x_0 = 0$
+**Kysytty:** kärryn kiihtyvyys $a$ yksikössä $\text{m/s}^2$
+**Periaate:** Kärry lähtee levosta ja kiihtyy tasaisesti, joten $x = \tfrac{1}{2}\,a\,t^2$. Silloin $x$ on suoraan verrannollinen suureeseen $t^2$: kun piirretään $(t^2,x)$-kuvaaja, pisteet ovat suoralla, jonka kulmakerroin on $k = \tfrac{1}{2}\,a$. Näin käyrän sovitus muuttuu suoran sovitukseksi.
+**Kuvaajan lukeminen:** Lasketaan $t^2$ jokaiselle hetkelle: $0$, $0{,}16$, $0{,}64$, $1{,}44$, $2{,}56$ ja $4{,}00$ (yksikkö $\text{s}^2$). Pisteet $(t^2,x)$ sopivat suoralle, ja sovitetun suoran kulmakerroin on $k \approx 0{,}577\,\text{m/s}^2$.
+**Kaava:** $a = 2k$
+**Muunnokset:** Kulmakerroin on yksikössä $\text{m} : \text{s}^2 = \text{m/s}^2$, joten muunnoksia ei tarvita.
+**Sijoitus:** $a = 2 \cdot 0{,}577\,\text{m/s}^2 \approx 1{,}15\,\text{m/s}^2$. Tarkistus päätepisteellä: $k \approx 2{,}32\,\text{m} : 4{,}00\,\text{s}^2 = 0{,}58\,\text{m/s}^2$, joten $a \approx 1{,}16\,\text{m/s}^2$.
+**Vastaus:** $1{,}15\,\text{m/s}^2$, kolme merkitsevää numeroa kuten sovitetussa kulmakertoimessa; mittausten hajonta rajoittaa kuitenkin tarkkuuden noin kahteen merkitsevään numeroon.
+**Järkevyys:** Sovituksen mukaan paikka hetkellä $2{,}0\,\text{s}$ on $\tfrac{1}{2} \cdot 1{,}15\,\text{m/s}^2 \cdot (2{,}0\,\text{s})^2 = 2{,}30\,\text{m}$, lähellä mitattua $2{,}32\,\text{m}$. Suoran vakiotermi on lähellä nollaa, kuten pitääkin, kun kärry lähtee origosta.
+
+## fy4-2-L2-07
+**Kysytty:** kummalla mittaustavalla voidaan parhaiten tutkia, onko kärryn kiihtyvyys koko matkan ajan vakio.
+**Periaate:** Kiihtyvyys on vakio, jos $(t,v)$-kuvaaja on suora. Sen toteaminen vaatii monta mittauspistettä eri hetkiltä, jotta nähdään, pysyykö kulmakerroin samana. Mittauksen tarkkuus on toinen asia kuin mittauspisteiden määrä: tarkkakaan yksittäinen aika ei kerro, miten nopeus muuttuu matkan varrella.
+**Mallivastaus:** Parempi vastaus saadaan videoanalyysilla. Sen jokaisesta kuvasta saadaan kärryn paikka ja siitä nopeus, joten $(t,v)$-kuvaajaan tulee monta pistettä, ja nähdään, onko kuvaaja suora. Kaksi valoporttia antaa vain yhden keskimääräisen kiihtyvyyden, vaikka aika mitataan tarkasti, joten niillä ei voi päätellä muuttuuko kiihtyvyys. Kiihtyvyyttä ei voi myöskään olettaa vakioksi, koska juuri se tutkitaan. Valoportit sopivat paremmin tilanteeseen, jossa vakiokiihtyvyys jo tiedetään ja halutaan tarkka yksittäinen arvo.
+
+## fy4-2-L3-04
+**Annettu:** auto lähtee levosta; nopeus $v$ hetkillä $t = 0$, $2{,}0$, $4{,}0$, $6{,}0$ ja $8{,}0\,\text{s}$ on $0$, $36$, $62$, $83$ ja $100\,\text{km/h}$
+**Kysytty:** a) kiihtyvyys jokaisella kahden sekunnin välillä ja onko se vakio; b) kuljettu matka $s$ ajassa $8{,}0\,\text{s}$ metreinä
+**Periaate:** Auto liikkuu koko ajan samaan suuntaan. Kiihtyvyys aikavälillä on nopeuden muutos jaettuna ajalla, $a = \Delta v : \Delta t$. Jos kiihtyvyys olisi vakio, nopeus kasvaisi yhtä paljon joka välillä. Matka on $(t,v)$-kuvaajan alle jäävä pinta-ala, ja kun nopeus oletetaan muuttuvan tasaisesti kunkin välin sisällä, jokaisen välin ala on puolisuunnikas: nopeuksien keskiarvo kertaa $2{,}0\,\text{s}$.
+**Kuvaajan lukeminen:** Taulukon nopeudet luetaan $(t,v)$-pisteiksi: $(0;\, 0)$, $(2{,}0\,\text{s};\, 36\,\text{km/h})$, $(4{,}0\,\text{s};\, 62\,\text{km/h})$, $(6{,}0\,\text{s};\, 83\,\text{km/h})$ ja $(8{,}0\,\text{s};\, 100\,\text{km/h})$. Kuvaaja nousee, mutta kaartuu loivemmaksi.
+**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $\Delta s = \dfrac{v_1 + v_2}{2} \cdot \Delta t$; kokonaismatka on välien matkojen summa
+**Muunnokset:** Muunnetaan nopeudet yksikköön $\text{m/s}$: $v = \dfrac{v_{\text{km/h}}}{3{,}6}$. Arvot ovat $0$, $10{,}0$, $17{,}2$, $23{,}1$ ja $27{,}8\,\text{m/s}$.
+**Sijoitus:** a) Kiihtyvyydet ovat ($\text{m/s}^2$) $\dfrac{10{,}0 - 0}{2{,}0} = 5{,}0$, $\dfrac{17{,}2 - 10{,}0}{2{,}0} = 3{,}6$, $\dfrac{23{,}1 - 17{,}2}{2{,}0} \approx 2{,}9$ ja $\dfrac{27{,}8 - 23{,}1}{2{,}0} \approx 2{,}4$. b) Välien matkat ovat $10{,}0\,\text{m}$, $27{,}2\,\text{m}$, $40{,}3\,\text{m}$ ja $50{,}8\,\text{m}$. Niiden summa on $128{,}3\,\text{m}$.
+**Vastaus:** a) Kiihtyvyys ei ole vakio: se pienenee joka välillä arvosta $5{,}0\,\text{m/s}^2$ arvoon $2{,}4\,\text{m/s}^2$, joten $(t,v)$-kuvaaja kaartuu loivemmaksi eikä ole suora. Muutos on paljon suurempi kuin lukemisen epätarkkuus. b) Matka on noin $128\,\text{m}$, kolme merkitsevää numeroa kuten nopeuksien muunnoksessa. Kuvaaja on ylöspäin kupera, joten kunkin välin suora jänne kulkee käyrän alapuolella ja todellinen matka on hieman suurempi kuin laskettu.
+**Järkevyys:** Jos kiihtyvyys olisi koko ajan keskimäärin $27{,}8\,\text{m/s} : 8{,}0\,\text{s} \approx 3{,}5\,\text{m/s}^2$, matka olisi $\tfrac{1}{2} \cdot 27{,}8\,\text{m/s} \cdot 8{,}0\,\text{s} \approx 111\,\text{m}$. Laskettu matka on suurempi, koska auto saavuttaa suuren nopeuden jo aikaisin. Tulos on alle keskinopeudella $27{,}8\,\text{m/s}$ kuljettavan $222\,\text{m}$, kuten pitääkin, ja kiihtyvyys $5\,\text{m/s}^2$ vastaa noin puolta $g$:stä, mikä on tavallinen auton alkukiihtyvyys.
+
+## fy4-2-L3-05
+**Annettu:** taulukon $(t,v)$-pisteet välillä $0 \ldots 4{,}0\,\text{s}$, ylöspäin radalla positiivinen suunta; kitka on pieni
+**Kysytty:** a) kiihtyvyys $a$, alkunopeus $v_0$ ja perustelu vakiokiihtyvyydelle; b) suurin etäisyys $s$ lähtöpisteestä ylöspäin metreinä; c) $(t,a)$- ja $(t,x)$-kuvaajien muodot
+**Periaate:** Jos $(t,v)$-pisteet ovat suoralla, kiihtyvyys on vakio ja liike tasaisesti kiihtyvää: $v = v_0 + a\,t$, jossa kulmakerroin on $a$ ja leikkauskohta pystyakselilla $v_0$. Kärry kääntyy, kun $v = 0$. Sen jälkeen se palaa alas, koska kiihtyvyys osoittaa edelleen alas radalla. Suurin etäisyys saadaan paikan yhtälöstä tai $(t,v)$-kuvaajan kolmion alasta hetkeen $v = 0$ asti.
+**Kuvaajan lukeminen:** Pisteet ovat suunnilleen suoralla, ja nopeus pienenee noin $0{,}8\,\text{m/s}$ jokaista sekuntia kohti. Sovitus antaa $v \approx -0{,}81\,\text{m/s}^2 \cdot t + 2{,}42\,\text{m/s}$, joten $a \approx -0{,}81\,\text{m/s}^2$ ja $v_0 \approx 2{,}42\,\text{m/s}$. Suoran paikka pisteiden joukossa osoittaa vakiokiihtyvyyttä: pisteet ovat suoran molemmilla puolilla ilman kaarevuutta, ja nopeus pienenee jokaisella $0{,}5\,\text{s}$:n välillä noin yhtä paljon ($0{,}37 \ldots 0{,}44\,\text{m/s}$).
+**Kaava:** Käännöshetki ehdosta $v = v_0 + a\,t_k = 0$ on $t_k = -\dfrac{v_0}{a}$, ja etäisyys $s = v_0\,t_k + \tfrac{1}{2}\,a\,t_k^2$, joka sievenee muotoon $s = \dfrac{v_0^2}{2\,|a|}$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.
+**Sijoitus:** $t_k = \dfrac{2{,}42\,\text{m/s}}{0{,}81\,\text{m/s}^2} \approx 2{,}99\,\text{s}$. Etäisyys on $s = \dfrac{(2{,}42\,\text{m/s})^2}{2 \cdot 0{,}81\,\text{m/s}^2} = \dfrac{5{,}86\,\text{m}^2/\text{s}^2}{1{,}62\,\text{m/s}^2} \approx 3{,}61\,\text{m}$. c) Kuvaajia ei piirretä vastauslaatikkoon, vaan ne kuvataan sanoin alla.
+**Vastaus:** Kärry ehtii noin $3{,}6\,\text{m}$ lähtöpisteestä ylöspäin, kaksi merkitsevää numeroa, koska kiihtyvyys ja alkunopeus on sovitettu hajonneesta aineistosta. c) $(t,a)$-kuvaaja on vaakasuora suora arvossa $a \approx -0{,}81\,\text{m/s}^2$ koko aikavälin ajan, koska kiihtyvyys on vakio ja osoittaa alas radalla myös käännöshetkellä. $(t,x)$-kuvaaja on alaspäin aukeava paraabeli, joka lähtee origosta, nousee aluksi jyrkästi ja loivenee, saa huippunsa $x \approx 3{,}6\,\text{m}$ hetkellä $t \approx 3{,}0\,\text{s}$ (tangentti vaakasuora, koska $v = 0$) ja laskee sen jälkeen; kärry palaa lähtöpisteeseen hetkellä $2\,t_k \approx 6{,}0\,\text{s}$, joten välillä $0 \ldots 5{,}0\,\text{s}$ kuvaaja on vielä positiivinen.
+**Järkevyys:** Nousun keskinopeus on $2{,}42\,\text{m/s} : 2 = 1{,}21\,\text{m/s}$, ja $1{,}21\,\text{m/s} \cdot 2{,}99\,\text{s} \approx 3{,}6\,\text{m}$. Aineiston viimeinen nopeus $-0{,}83\,\text{m/s}$ on lähellä sovituksen arvoa $2{,}42 - 0{,}81 \cdot 4{,}0 \approx -0{,}82\,\text{m/s}$, ja aineisto sisältää käännöshetken $t \approx 3{,}0\,\text{s}$ ($v \approx 0$). Kiihtyvyys $0{,}81\,\text{m/s}^2$ on loivalle kaltevuudelle uskottava: se vastaa kaltevuuskulmaa, jossa $g \sin\alpha \approx 0{,}81\,\text{m/s}^2$, eli $\alpha \approx 5\,{}^\circ$.
