@@ -229,7 +229,7 @@
     {
       "id": "fy3-6-L3-01",
       "level": 3,
-      "text": "Ennen vanhaan savusaunan pesuvesi lämmitettiin pudottamalla kiukaan kuumia kiviä puusaaviin. Saavissa on $20\\,\\text{kg}$ järvivettä, jonka lämpötila on $10\\,{}^\\circ\\text{C}$. Kiuas on kuumentanut kivet $300\\,{}^\\circ\\text{C}$:een. Kuinka monta kilogrammaa kiviä saaviin on pudotettava, jotta veden lämpötila nousee $40\\,{}^\\circ\\text{C}$:seen? Kivien ominaislämpökapasiteetti on $800\\,\\text{J/(kg}\\cdot\\text{K)}$. Oleta, ettei lämpöä siirry saaviin eikä ilmaan. Oleta myös, ettei vettä höyrysty. Perustele, mikä on kivien loppulämpötila.",
+      "text": "Ennen vanhaan savusaunan pesuvesi lämmitettiin pudottamalla kiukaan kuumia kiviä puusaaviin.\n\nSaavissa on $20\\,\\text{kg}$ järvivettä, jonka lämpötila on $10\\,{}^\\circ\\text{C}$. Kiuas on kuumentanut kivet $300\\,{}^\\circ\\text{C}$:een.\n\nKuinka monta kilogrammaa kiviä saaviin on pudotettava, jotta veden lämpötila nousee $40\\,{}^\\circ\\text{C}$:seen? Kivien ominaislämpökapasiteetti on $800\\,\\text{J/(kg}\\cdot\\text{K)}$. Oleta, ettei lämpöä siirry saaviin eikä ilmaan. Oleta myös, ettei vettä höyrysty. Perustele, mikä on kivien loppulämpötila.",
       "answer": 12,
       "unit": "kg",
       "tolerance": 0.02
@@ -237,7 +237,7 @@
     {
       "id": "fy3-6-L3-02",
       "level": 3,
-      "text": "Mökin rannassa on matala lahdelma. Sen pinta-ala on $2000\\,\\text{m}^2$ ja keskisyvyys $1{,}2\\,\\text{m}$. Aurinkoisena kesäpäivänä lahden vesi saa auringosta energiaa $18\\,\\text{MJ}$ jokaista pinnan neliömetriä kohti. Kuutiometrissä vettä on $1000\\,\\text{kg}$. Oleta, että energia jää veteen ja vesi sekoittuu tasaisesti. Kuinka monta kelviniä lahden veden lämpötila nousee päivän aikana? Perustele myös, miksi tulos ei riipu lahden pinta-alasta.",
+      "text": "Mökin rannassa on matala lahdelma. Sen pinta-ala on $2000\\,\\text{m}^2$ ja keskisyvyys $1{,}2\\,\\text{m}$.\n\nAurinkoisena kesäpäivänä lahden vesi saa auringosta energiaa $18\\,\\text{MJ}$ jokaista pinnan neliömetriä kohti. Kuutiometrissä vettä on $1000\\,\\text{kg}$. Oleta, että energia jää veteen ja vesi sekoittuu tasaisesti.\n\nKuinka monta kelviniä lahden veden lämpötila nousee päivän aikana? Perustele myös, miksi tulos ei riipu lahden pinta-alasta.",
       "answer": 3.6,
       "unit": "K",
       "tolerance": 0.02
@@ -245,7 +245,7 @@
     {
       "id": "fy3-6-L3-03",
       "level": 3,
-      "text": "Mökille suunnitellaan lämpövarastoa, johon kesän aurinkolämpöä talletetaan. Vaihtoehtoja on kaksi. Ensimmäinen on $1{,}0\\,\\text{m}^3$ vettä, jonka massa on $1000\\,\\text{kg}$. Toinen on kuiva hiekka, jota on $1600\\,\\text{kg}$ kuutiometrissä. Kummankin varaston lämpötila vaihtelee $20\\,{}^\\circ\\text{C}$:n ja $70\\,{}^\\circ\\text{C}$:n välillä. Kuinka monta kuutiometriä hiekkaa tarvitaan, jotta siihen varastoituu yhtä paljon energiaa kuin vesivarastoon? Perustele, miksi tilavuuksien suhde on pienempi kuin ominaislämpökapasiteettien suhde.",
+      "text": "Mökille suunnitellaan lämpövarastoa, johon kesän aurinkolämpöä talletetaan.\n\nVaihtoehtoja on kaksi. Ensimmäinen on $1{,}0\\,\\text{m}^3$ vettä, jonka massa on $1000\\,\\text{kg}$. Toinen on kuiva hiekka, jota on $1600\\,\\text{kg}$ kuutiometrissä. Kummankin varaston lämpötila vaihtelee $20\\,{}^\\circ\\text{C}$:n ja $70\\,{}^\\circ\\text{C}$:n välillä.\n\nKuinka monta kuutiometriä hiekkaa tarvitaan, jotta siihen varastoituu yhtä paljon energiaa kuin vesivarastoon? Perustele, miksi tilavuuksien suhde on pienempi kuin ominaislämpökapasiteettien suhde.",
       "answer": 3.3,
       "unit": "m³",
       "tolerance": 0.02

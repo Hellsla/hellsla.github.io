@@ -276,7 +276,7 @@
     {
       "id": "fy3-4-L3-02",
       "level": 3,
-      "text": "The rainwater barrel at a cottage is full of water, and its tight lid is against the water. The area of the lid is $0.25\\,\\text{m}^2$. A thin vertical hose is installed through the lid and filled with water to a height of $4.0\\,\\text{m}$ above the lid. The hose holds only $0.40\\,\\textsf{l}$ of water. By how much does the force with which the water in the barrel presses on the lid increase? Give the answer in kilonewtons.",
+      "text": "The rainwater barrel at a cottage is full of water, and its tight lid is against the water. The area of the lid is $0.25\\,\\text{m}^2$.\n\nA thin vertical hose is installed through the lid and filled with water to a height of $4.0\\,\\text{m}$ above the lid. The hose holds only $0.40\\,\\textsf{l}$ of water.\n\nBy how much does the force with which the water in the barrel presses on the lid increase? Give the answer in kilonewtons.",
       "answer": 9.8,
       "unit": "kN",
       "tolerance": 0.02

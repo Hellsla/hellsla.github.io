@@ -133,7 +133,7 @@
     {
       "id": "fy3-11-L2-03",
       "level": 2,
-      "text": "In a physics lesson there is air in a cylinder closed by a lightly moving piston. The air is heated, and a quantity of heat of $700.0\\,\\text{J}$ is transferred to it. The air expands so that its pressure stays at $125\\,\\text{kPa}$ and its volume grows by $1.60\\,\\textsf{l}$. By how much does the internal energy of the air change? Use the first law $\\Delta U = Q - W_\\text{g}$, where $W_\\text{g}$ is the work done by the air. Give the answer with its sign.",
+      "text": "In a physics lesson there is air in a cylinder closed by a lightly moving piston. The air is heated, and a quantity of heat of $700.0\\,\\text{J}$ is transferred to it. The air expands so that its pressure stays at $125\\,\\text{kPa}$ and its volume grows by $1.60\\,\\textsf{l}$.\n\nBy how much does the internal energy of the air change? Use the first law $\\Delta U = Q - W_\\text{g}$, where $W_\\text{g}$ is the work done by the air. Give the answer with its sign.",
       "answer": 500,
       "unit": "J",
       "tolerance": 0.02
@@ -264,7 +264,7 @@
     {
       "id": "fy3-11-L3-01",
       "level": 3,
-      "text": "A city combined heat and power plant burns wood chips at a power of $320\\,\\text{MW}$ and at the same time produces $96\\,\\text{MW}$ of electricity and $180\\,\\text{MW}$ of district heating. If the plant did not exist, the same electric power would be produced in a condensing power plant with an efficiency of $40.0\\,\\%$, and the same district heating in a heating plant whose boiler heats the water of the district heating network with an efficiency of $90.0\\,\\%$. How much more fuel power would such separate production need? Justify why the heating plant reaches a much higher efficiency than the condensing power plant.",
+      "text": "A city combined heat and power plant burns wood chips at a power of $320\\,\\text{MW}$ and at the same time produces $96\\,\\text{MW}$ of electricity and $180\\,\\text{MW}$ of district heating.\n\nIf the plant did not exist, the same electric power would be produced in a condensing power plant with an efficiency of $40.0\\,\\%$, and the same district heating in a heating plant whose boiler heats the water of the district heating network with an efficiency of $90.0\\,\\%$.\n\nHow much more fuel power would such separate production need? Justify why the heating plant reaches a much higher efficiency than the condensing power plant.",
       "answer": 120,
       "unit": "MW",
       "tolerance": 0.02
@@ -272,7 +272,7 @@
     {
       "id": "fy3-11-L3-02",
       "level": 3,
-      "text": "Heating a detached house takes $16.0\\,\\text{MWh}$ of heat a year. The house now has direct electric heating, in which electric resistors turn practically all the electrical energy into internal energy, which is transferred as heat to the room. The owner is considering a heat pump that would take heat from the outdoor air and take care of all the heating. The coefficient of performance of the pump is 2.50 as a yearly average. How many megawatt-hours of electricity would the pump save in a year? How much heat would it take from the outdoor air during the year? Use conservation of energy to justify why the pump is not a perpetual motion machine even though it gives the house more heat than the electricity it uses.",
+      "text": "Heating a detached house takes $16.0\\,\\text{MWh}$ of heat a year. The house now has direct electric heating, in which electric resistors turn practically all the electrical energy into internal energy, which is transferred as heat to the room.\n\nThe owner is considering a heat pump that would take heat from the outdoor air and take care of all the heating. The coefficient of performance of the pump is 2.50 as a yearly average.\n\nHow many megawatt-hours of electricity would the pump save in a year? How much heat would it take from the outdoor air during the year? Use conservation of energy to justify why the pump is not a perpetual motion machine even though it gives the house more heat than the electricity it uses.",
       "answer": 9.6,
       "unit": "MWh",
       "tolerance": 0.02
@@ -280,7 +280,7 @@
     {
       "id": "fy3-11-L3-03",
       "level": 3,
-      "text": "A petrol car uses $6.00\\,\\textsf{l}$ of petrol over $100\\,\\text{km}$ when it drives on a main road at a steady speed of $80.0\\,\\text{km/h}$. The density of petrol is $0.750\\,\\text{kg/l}$ and its heat of combustion is $43.0\\,\\text{MJ/kg}$. The efficiency of the engine is $28.0\\,\\%$. What is the average mechanical power of the engine? Give the answer in kilowatts. Where does the rest of the energy of the fuel go, and why does an electric car, whose motor has an efficiency of about $90\\,\\%$, need much less energy for the same distance?",
+      "text": "A petrol car uses $6.00\\,\\textsf{l}$ of petrol over $100\\,\\text{km}$ when it drives on a main road at a steady speed of $80.0\\,\\text{km/h}$. The density of petrol is $0.750\\,\\text{kg/l}$ and its heat of combustion is $43.0\\,\\text{MJ/kg}$. The efficiency of the engine is $28.0\\,\\%$.\n\nWhat is the average mechanical power of the engine? Give the answer in kilowatts. Where does the rest of the energy of the fuel go, and why does an electric car, whose motor has an efficiency of about $90\\,\\%$, need much less energy for the same distance?",
       "answer": 12.0,
       "unit": "kW",
       "tolerance": 0.02
