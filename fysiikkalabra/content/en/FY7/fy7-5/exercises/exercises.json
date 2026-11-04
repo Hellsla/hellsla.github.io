@@ -56,8 +56,8 @@
           "feedback": "The size of the flux does not prevent a voltage from appearing. The voltage depends on the rate of change of the flux, not on the value of the flux; even a large flux gives zero voltage if it does not change."
         },
         {
-          "text": "No current flows in the coil, and a voltage would need a current in order to appear.",
-          "feedback": "Cause and effect are the other way round: the voltage arises from the change in flux, and in a closed circuit it produces the current. The absence of current is due to the fact that no voltage appears."
+          "text": "No current flows in the coil, and a voltage needs a current in order to appear.",
+          "feedback": "Cause and effect are the other way round: the voltage arises from the change in flux, and in a closed circuit it produces the current. There is no current because no voltage appears."
         },
         {
           "text": "The flux does not change, and the voltage depends only on the rate of change of the flux.",

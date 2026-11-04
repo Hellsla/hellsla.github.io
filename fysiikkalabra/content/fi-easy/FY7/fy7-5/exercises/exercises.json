@@ -127,7 +127,7 @@
       "kind": [
         "data"
       ],
-      "text": "Käämissä on $120$ kierrosta. Taulukossa on esimerkkiaineisto. Siinä on yhden kierroksen läpi kulkeva magneettivuo $\\Phi$ eri ajanhetkillä, kun käämiä siirretään magneettikentässä. Vuo muuttuu jokaisen $0{,}10\\,\\text{s}$:n välin aikana likimain tasaisesti.\n\nKuinka suuri on käämin induktiojännitteen suurin itseisarvo mittausjaksolla?",
+      "text": "Käämissä on $120$ kierrosta. Taulukossa on esimerkkiaineisto. Siinä on yhden kierroksen läpi kulkeva magneettivuo $\\Phi$ eri ajanhetkillä, kun käämiä siirretään magneettikentässä. Vuo muuttuu jokaisen $0{,}10\\,\\text{s}$:n välin aikana likimain tasaisesti.\n\nKuinka suuri on käämin induktiojännitteen suurin itseisarvo (luvun suuruus ilman plus- tai miinusmerkkiä) mittausjaksolla?",
       "answer": 1.45,
       "unit": "V",
       "tolerance": 0.03,
