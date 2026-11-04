@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5f3c4888687a23c4
+CONTENT-HASH: 309a5b315853626c
 
 ## Blocking
 
 ## Polish
 - content/fi/FY1/fy1-1/exercises/exercises.json:228 (L2-07) — the task says "pisteet asettuvat suoralle". Measured points lie on the line only approximately; the residuals here are −0,28…+0,31 mm. — Write "asettuvat likimain suoralle", in line with the fits guardrail.
-- content/fi/FY1/fy1-1/exercises/exercises.json:65 (L1-06) — the new distractor "Malli on teoria, jota ei voi enää muuttaa" mixes up model and theory. The feedback refutes "unchangeable" correctly but leaves "a model is a theory" unanswered. — Add half a sentence: a theory too stays open to revision.
+- content/fi/FY1/fy1-1/exercises/exercises.json:65 (L1-06) — the distractor "Malli on teoria, jota ei voi enää muuttaa" mixes up model and theory. The feedback refutes "unchangeable" correctly but leaves "a model is a theory" unanswered. — Add half a sentence: a theory too stays open to revision.
 
 ## Checked
-- Round-1 Blocking (L2-07 uncertainty) fixed. The solution uses the guardrail's scale-reading wording. It calls 0,25 mm : 300 ≈ 0,001 mm "vain lukeman osuus" and names the other error sources, which justify two figures.
-- L2-07 recomputed: the least-squares slope through the origin is 0,1019 mm, and the line gives 30,56 mm at N = 300 (the solution says 30,6). The answer 0,102 ± 5 % covers the stated range 0,097–0,107 mm. The origin has a physical reason.
-- L2-05 new part: 1,0 m in the model ↔ 15,05 AU. Uranus is 4,15 AU away from it and Saturn 5,47 AU, so the answer Uranus is right. In model distances this is 127,6 cm against 63,7 cm.
-- L1-06: exactly one option is correct; every distractor is wrong and its feedback is right.
-- answers.py now uses the task's 1 AU = 1,496·10⁸ km. L3-05: 143,16 AU, and the comment matches the solution (23,46 AU).
-- All 19 numeric answers: answers.py agrees with exercises.json, and the round-1 recomputation still holds for the unchanged tasks.
-- L3-04 rewording: no physics change; N = 1,19·10⁹, and the sensitivity 1,2³ → −42 % still holds.
+- Round 3 diff (`git diff HEAD~1 -- content/fi/FY1`): only solutions.md:183 (L3-04 Kaava) changed, from one line with \quad separators to three formulas joined by commas and "ja".
+- L3-04 formulas are unchanged: V_sade = hA, V_pisara = (4/3)πr³, N = V_sade/V_pisara. Recomputed: h = 8,33·10⁻⁴ m, V_sade = 5,0 m³, V_pisara = 4,19·10⁻⁹ m³, N = 1,19·10⁹. A 20 % larger diameter gives −42 %, so the answer and the sensitivity still hold.
+- Everything else is unchanged since round 2 (PASS). The round-2 checks still apply: L2-07 fit and uncertainty, L2-05 scale model, L1-06 options, L3-05, and all 19 numeric answers against answers.py.
 - The hash was the same at the start and the end.
