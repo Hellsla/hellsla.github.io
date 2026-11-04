@@ -863,8 +863,9 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
 .ra-voice select{flex:1;min-width:0;max-width:17rem;min-height:44px;padding:0 .4rem;font:500 var(--fs-ui) var(--sans);color:var(--ink);border:1px solid var(--line);border-radius:10px;background:var(--surface)}
 .ra-voice select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 /* Concept cards (kortit.js, teacher 2026-11-03: "kortit tulevat luvun luo"). One card everywhere: both faces in one
-   grid cell, so a turned card keeps its height and a row never gets an empty column; a row of cards scrolls sideways
-   from 40rem and stacks on a phone. Without JavaScript the cards are a definition list (.kc-dl). The bold terms of
+   grid cell, so a turned card keeps its height and a row never gets an empty column; a lesson and Sovella show two
+   cards side by side from 36rem (stacked on a phone), never a sideways scroll (teacher 2026-11-04), an answered card
+   replaced by the next one. Without JavaScript the cards are a definition list (.kc-dl). The bold terms of
    Teoriatiivistelmä that name a card get a dotted underline and open a popover (.kc-pop). */
 .kc-intro{font-size:var(--fs-inner);color:var(--ink-2);margin:0 0 1rem}
 .kc-dl{margin:0 0 1rem;display:grid;gap:.6rem}
@@ -874,11 +875,13 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
 .kc-formula{display:block}
 .kc-more,.kc-all{font:600 var(--fs-ui) var(--sans);margin:.9rem 0 0}
 .kc-row{display:grid;gap:.9rem;margin:0 0 .5rem}
-@media (min-width:40rem){
-  .kc-row{grid-auto-flow:column;grid-auto-columns:minmax(16.5rem,18rem);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;
-    padding:.25rem .25rem 1rem;margin-inline:-.25rem;scrollbar-width:thin}
-  .kc-row>.kc-card{scroll-snap-align:start}
-}
+@media (min-width:36rem){.kc-pair .kc-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kc-pair-foot{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem;margin:.2rem 0 0}
+.kc-left{margin:0;font-size:var(--fs-small);color:var(--ink-2)}.kc-left:empty{display:none}
+.kc-restart{font:600 var(--fs-ui) var(--sans);min-height:40px;padding:0 .85rem;border-radius:999px;cursor:pointer;border:1px solid var(--accent-deep);background:var(--surface);color:var(--accent-deep)}
+.kc-restart:hover{background:var(--accent-soft)}.kc-restart[hidden]{display:none}
+.kc-card.is-new{animation:kc-in .35s ease-out}
+@keyframes kc-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 .kc-card{perspective:1400px;min-width:0}
 .kc-inner{display:grid;height:100%;transition:transform .45s cubic-bezier(.3,.7,.3,1);transform-style:preserve-3d}
 .kc-card.is-flipped .kc-inner{transform:rotateY(180deg)}
@@ -912,7 +915,7 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
 .kc-status{margin:0;font-size:var(--fs-small);color:var(--ink-2);min-height:1.2em}
 .kc-status:empty{display:none}
 .kc-card.in-deck .kc-face{border-color:#e0a77f;box-shadow:inset 4px 0 0 #d9822b,0 6px 18px rgba(20,23,30,.06)}
-@media (prefers-reduced-motion:reduce){.kc-inner{transition:none}}
+@media (prefers-reduced-motion:reduce){.kc-inner{transition:none}.kc-card.is-new{animation:none}}
 /* the bold terms and the chips of Teoriatiivistelmä */
 strong.kc-ready{font-weight:inherit}
 .kc-term-btn{font:inherit;font-weight:700;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;
