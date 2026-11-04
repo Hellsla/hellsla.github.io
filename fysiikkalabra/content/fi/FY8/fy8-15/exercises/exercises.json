@@ -257,7 +257,7 @@
       "choices": [
         {
           "text": "Kaikki perushiukkaset hajoavat, joten neutronin hajoaminen on varmaa",
-          "feedback": "Kaikki perushiukkaset eivät hajoa: elektroni on stabiili. Väitteen kumoaa kuitenkin se, että perushiukkanenkin voi hajota, esimerkiksi myoni. Hajoamisen ratkaisevat säilymislait ja $Q > 0$, ei perushiukkasuus."
+          "feedback": "Kaikki perushiukkaset eivät hajoa: elektroni on stabiili. Hajoaminen ei riipu siitä, onko hiukkanen perushiukkanen: myoni on perushiukkanen mutta hajoaa, ja protoni koostuu kvarkeista mutta on stabiili. Hajoamisen ratkaisevat säilymislait ja $Q > 0$."
         },
         {
           "text": "Neutroni koostuu kvarkeista, ja kvarkin laji voi muuttua",

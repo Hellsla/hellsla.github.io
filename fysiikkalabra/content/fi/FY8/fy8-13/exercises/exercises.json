@@ -123,7 +123,7 @@
     {
       "id": "fy8-13-L2-05",
       "level": 2,
-      "text": "Taulukossa on suomalaisen keskimääräinen efektiivinen vuosiannos lähteittäin. Aineisto on esimerkkiaineisto, joka perustuu STUK-A263:n (2020) keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$.\n\na) Laske lähteiden annosten summa.\n\nb) Kuinka monta prosenttia kokonaisannoksesta tulee sisäilman radonista? Anna vastaus prosentteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "text": "Taulukossa on suomalaisen keskimääräinen efektiivinen vuosiannos lähteittäin. Aineisto on esimerkkiaineisto, joka perustuu STUK-A263:n (2020) keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$. Muuhun luonnon säteilyyn kuuluvat maaperän ja rakennusaineiden säteily, kosminen säteily ja kehon omat radioaktiiviset aineet.\n\na) Laske lähteiden annosten summa.\n\nb) Kuinka monta prosenttia kokonaisannoksesta tulee sisäilman radonista? Anna vastaus prosentteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
       "kind": [
         "data"
       ],
@@ -142,7 +142,7 @@
             "4.0"
           ],
           [
-            "Muu luonnon säteily (maaperä ja rakennusaineet, kosminen säteily, kehon omat radioaktiiviset aineet)",
+            "Muu luonnon säteily",
             "1.1"
           ],
           [
