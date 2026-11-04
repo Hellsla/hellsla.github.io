@@ -27,7 +27,7 @@
       "prompt": "Opiskelija laskee auton nopeuden oikein. Ratkaisun viimeisellä rivillä on $v = 14$. Mikä väite vastauksesta on totta?",
       "choices": [
         {
-          "text": "Vastaus on puutteellinen: ilman yksikköä ei tiedä, onko nopeus $\\text{m/s}$ vai $\\text{km/h}$.",
+          "text": "Vastaus on puutteellinen: ei tiedä, onko nopeus $\\text{m/s}$ vai $\\text{km/h}$.",
           "correct": true,
           "feedback": "Oikein. Suure on luku kertaa yksikkö. $14\\,\\text{m/s}$ on noin $50\\,\\text{km/h}$, mutta $14\\,\\text{km/h}$ on pyöräilijän vauhti. Ilman yksikköä lukija ei tiedä, kumpaa tarkoitat. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
         },
@@ -79,7 +79,7 @@
       "prompt": "Laskussa on kolme vaihetta peräkkäin. Opiskelija pyöristää jokaisen välituloksen kahteen merkitsevään numeroon. Hän tekee niin, koska lähtöarvoissakin on kaksi numeroa. Mitä tästä seuraa?",
       "choices": [
         {
-          "text": "Pyöristysvirheet kasvavat vaihe vaiheelta, ja lopputuloksen viimeinen numero voi olla väärä.",
+          "text": "Pyöristysvirhe kasvaa joka vaiheessa, ja viimeinen numero voi olla väärä.",
           "correct": true,
           "feedback": "Oikein. Älä pyöristä välituloksia, tai pidä niissä ainakin pari numeroa enemmän. Pyöristä vain lopputulos. Esimerkiksi $64 \\cdot 1{,}1 \\approx 70$, mutta $64 \\cdot 1{,}111 \\approx 71$. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
         },
@@ -110,7 +110,7 @@
           "feedback": "Oikein. Lopputuloksessa on yhtä monta merkitsevää numeroa kuin epätarkimmassa lähtöarvossa. Laskin ei näytä lopun nollaa. Merkintä $3{,}0\\,\\text{N}$ kertoo, että tulos tunnetaan kymmenesosan tarkkuudella. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
         },
         {
-          "text": "$F = 3\\,\\text{N}$, koska laskin näyttää juuri tämän luvun.",
+          "text": "$F = 3\\,\\text{N}$, koska laskin näyttää tulokseksi juuri tämän luvun.",
           "feedback": "Laskin jättää lopun nollat pois. $3\\,\\text{N}$ näyttää yhden merkitsevän numeron tarkkuuden, vaikka lähtöarvoissa on kaksi. Kirjoita $3{,}0\\,\\text{N}$. Kertaa luvussa [*Mittaaminen ja mittauksen luotettavuus*](fy1-3.html)."
         },
         {
@@ -131,7 +131,7 @@
       "prompt": "Tehtävässä pitää määrittää kärryn nopeus graafisesti eli kuvaajasta. Kuvaaja on $(t, x)$-kuvaaja. Siinä on seitsemän mittauspistettä, ja niihin on sovitettu suora. Mistä nopeus kannattaa lukea?",
       "choices": [
         {
-          "text": "Sovitetun suoran kulmakertoimesta, kahdesta suoran pisteestä, jotka ovat kaukana toisistaan.",
+          "text": "Sovitteen kulmakertoimesta, kahdesta suoran pisteestä kaukana toisistaan.",
           "correct": true,
           "feedback": "Oikein. Sovite eli sovitettu suora kokoaa kaikkien pisteiden tiedon. Kun luet kaksi pistettä kaukana toisistaan, lukemisen suhteellinen virhe on pieni. Näytä lukemasi pisteet vastauksessa. Kertaa luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
         },
@@ -513,7 +513,7 @@
       "prompt": "Raskas kuorma-auto ja pieni henkilöauto törmäävät. Kuorma-auto kohdistaa henkilöautoon voiman. Henkilöauto kohdistaa kuorma-autoon voiman. Miten nämä voimat ovat suhteessa toisiinsa törmäyksen aikana?",
       "choices": [
         {
-          "text": "Ne ovat yhtä suuret ja vastakkaiset. Henkilöauto kiihtyy enemmän, koska sen massa on pienempi.",
+          "text": "Ne ovat yhtä suuret ja vastakkaiset. Kevyempi henkilöauto kiihtyy enemmän.",
           "correct": true,
           "feedback": "Oikein. Voimat ovat saman vuorovaikutuksen voimapari. Newtonin kolmannen lain mukaan ne ovat yhtä suuret. Sama voima antaa pienemmälle massalle suuremman kiihtyvyyden. Kertaa luvussa [*Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*](fy4-3.html)."
         },
@@ -764,9 +764,9 @@
       "prompt": "Sauvamagneetti on työnnetty käämin sisään. Magneetti pidetään siellä paikallaan. Käämin päihin on kytketty jännitemittari. Mittari näyttää nollaa. Mikä väite on oikein?",
       "choices": [
         {
-          "text": "Jännite indusoituu eli syntyy vain silloin, kun käämin läpi kulkeva magneettivuo muuttuu.",
+          "text": "Jännite syntyy vain, kun käämin läpi kulkeva magneettivuo muuttuu.",
           "correct": true,
-          "feedback": "Oikein. Induktiolain mukaan indusoitunut jännite on verrannollinen siihen, kuinka nopeasti magneettivuo muuttuu. Paikallaan oleva magneetti antaa vakiovuon. Siksi jännite on nolla. Kertaa tämä moduulissa FY7."
+          "feedback": "Oikein. Jännite indusoituu eli syntyy käämiin. Induktiolain mukaan indusoitunut jännite on verrannollinen siihen, kuinka nopeasti magneettivuo muuttuu. Paikallaan oleva magneetti antaa vakiovuon. Siksi jännite on nolla. Kertaa tämä moduulissa FY7."
         },
         {
           "text": "Magneetti on liian heikko. Vahvempi paikallaan oleva magneetti indusoisi jännitteen.",
@@ -778,7 +778,7 @@
         },
         {
           "text": "Käämi on magneetin sisällä oikosulussa, joten mittari ei voi näyttää jännitettä.",
-          "feedback": "Magneetti ei oikosulje käämiä. Jännite on nolla, koska magneettivuo ei muutu. Liikuta magneettia. Silloin mittarin viisari liikkuu. Kertaa tämä moduulissa FY7."
+          "feedback": "Magneetti ei oikosulje käämiä. Jännite on nolla, koska magneettivuo ei muutu. Liikuta magneettia. Silloin mittari näyttää jännitettä. Kertaa tämä moduulissa FY7."
         }
       ]
     },
@@ -818,13 +818,13 @@
       "prompt": "Puhtaaseen sinkkilevyyn osuu ensin voimakas punainen valo. Sitten siihen osuu ultraviolettilampun heikko valo. Levystä irtoaa elektroneja vain ultraviolettivalossa. Mikä selittää havainnon?",
       "choices": [
         {
-          "text": "Ultraviolettifotonin energia on suurempi kuin sinkin irrotustyö. Punaisen fotonin energia ei ole.",
+          "text": "Ultraviolettifotonin energia on suurempi kuin irrotustyö, punaisen fotonin pienempi.",
           "correct": true,
           "feedback": "Oikein. Valo antaa energiansa fotoneina. Fotonin energia on $E = hf$. Yksi fotoni irrottaa yhden elektronin vain, jos fotonin energia on vähintään yhtä suuri kuin irrotustyö. Valon voimakkuus kertoo vain fotonien määrän. Kertaa luvussa [*Valosähköinen ilmiö ja fotoni*](fy8-1.html)."
         },
         {
           "text": "Punaista valoa on liian vähän. Vielä voimakkaampi punainen valo irrottaisi elektroneja.",
-          "feedback": "Voimakkaampi valo tuo enemmän fotoneja. Jokaisen fotonin energia pysyy kuitenkin samana. Jos yksi punainen fotoni ei riitä, eivät monta fotonia riitä erikseenkään. Kertaa luvussa [*Valosähköinen ilmiö ja fotoni*](fy8-1.html)."
+          "feedback": "Voimakkaampi valo tuo enemmän fotoneja. Jokaisen fotonin energia pysyy kuitenkin samana. Jos yksi punainen fotoni ei riitä, eivät monetkaan fotonit riitä erikseen. Kertaa luvussa [*Valosähköinen ilmiö ja fotoni*](fy8-1.html)."
         },
         {
           "text": "Punainen valo lämmittää levyä, ja lämpö sitoo elektronit tiukemmin metalliin.",
@@ -898,7 +898,7 @@
       "prompt": "Tehtävässä on taulukko. Siinä kerrotaan, kuinka paljon jousi venyy eri kuormilla. Tehtävässä pyydetään määrittämään jousivakio graafisesti eli kuvaajan avulla. Mikä vastaus tekee sen, mitä tehtävässä pyydetään?",
       "choices": [
         {
-          "text": "Pisteet piirretään kuvaajaan, niihin sovitetaan suora, ja jousivakio on suoran kulmakerroin.",
+          "text": "Pisteisiin sovitetaan kuvaajassa suora, ja jousivakio on suoran kulmakerroin.",
           "correct": true,
           "feedback": "Oikein. Graafinen määritys tarkoittaa, että tulos luetaan kuvaajaan sovitetusta suorasta. Lukeminen näytetään vastauksessa: kaksi suoran pistettä tai ohjelman antama sovitteen yhtälö."
         },

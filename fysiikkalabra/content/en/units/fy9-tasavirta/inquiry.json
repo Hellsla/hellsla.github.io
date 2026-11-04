@@ -18,7 +18,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "The electricity of a summer cottage comes from a battery whose voltage is $12\\,\\text{V}$ and capacity $100\\,\\text{Ah}$. A solar panel charges the battery full during the day. In the evening LED lights with a total power of $6.0\\,\\text{W}$ and a cool box with a power of $48\\,\\text{W}$ are connected to the battery. In the exam a situation like this can be the start of a problem: the numbers are given, but the formula is not.",
+      "text": "The electricity of a summer cottage comes from a battery whose voltage is $12\\,\\text{V}$ and capacity $100\\,\\text{Ah}$. A solar panel fully charges the battery during the day. In the evening LED lights with a total power of $6.0\\,\\text{W}$ and a cool box with a power of $48\\,\\text{W}$ are connected to the battery. In the exam a situation like this can be the start of a problem: the numbers are given, but the formula is not.",
       "question": "How large a current is drawn from the battery, and for how many hours does a full battery last when both devices are on?"
     },
     {
@@ -439,7 +439,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "2. Calculation",
-      "prompt": "First $0.30\\,\\text{A}$ is drawn from the battery of a torch, and the terminal voltage is then $4.40\\,\\text{V}$, and then $0.80\\,\\text{A}$, and the terminal voltage is then $4.10\\,\\text{V}$. What is the emf of the battery?",
+      "prompt": "When $0.30\\,\\text{A}$ is drawn from a torch battery, its terminal voltage is $4.40\\,\\text{V}$; when $0.80\\,\\text{A}$ is drawn, it is $4.10\\,\\text{V}$. What is the emf of the battery?",
       "answer": 4.58,
       "unit": "V",
       "tolerance": 0.02,

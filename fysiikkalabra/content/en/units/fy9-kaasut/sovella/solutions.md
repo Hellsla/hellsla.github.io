@@ -14,9 +14,9 @@
 **Given:** $m = 1800\,\text{kg}$, lifting height $h = 1.20\,\text{m}$, from part a $\Delta p = 562.1\,\text{kPa}$ and $A = 0.031\,42\,\text{m}^2$, pressure of the outside air $p_0 = 101\,\text{kPa}$
 **Find:** the work $W$ done by the lift on the car and the platform in kilojoules, the same work from the pressure difference, and why the air does more work
 **Principle:** The platform rises at a constant speed, so the piston does lifting work on it, which is the force times the distance (chapter *Work and energy*). The force is $\Delta p\,A$, and $Ah$ is the change in volume of the air in the cylinder, so the same work is $\Delta p\,\Delta V$. The air in the cylinder itself pushes the piston with the total pressure, and its work is $p\,\Delta V$ (chapter *Work done by a gas and the heat engine*).
-**Formula:** $W = mgh$ and $W = \Delta p\,A h = \Delta p\,\Delta V$; the work of the air $W_\text{k} = (p_0 + \Delta p)\,\Delta V$
+**Formula:** $W = mgh$ and $W = \Delta p\,A h = \Delta p\,\Delta V$; the work of the air $W_\text{g} = (p_0 + \Delta p)\,\Delta V$
 **Conversions:** $\Delta V = Ah = 0.031\,42\,\text{m}^2 \cdot 1.20\,\text{m} = 0.037\,70\,\text{m}^3 = 37.7\,\textsf{l}$, and $1\,\text{kPa} \cdot 1\,\textsf{l} = 1\,\text{J}$.
-**Substitution:** $W = 1800\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.20\,\text{m} = 21\,190\,\text{J}$ and $\Delta p\,\Delta V = 562.1\,\text{kPa} \cdot 37.70\,\textsf{l} = 21\,190\,\text{J}$. The work of the air $W_\text{k} = 663.1\,\text{kPa} \cdot 37.70\,\textsf{l} = 25\,000\,\text{J}$, of which $p_0\,\Delta V = 101\,\text{kPa} \cdot 37.70\,\textsf{l} = 3810\,\text{J}$.
+**Substitution:** $W = 1800\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.20\,\text{m} = 21\,190\,\text{J}$ and $\Delta p\,\Delta V = 562.1\,\text{kPa} \cdot 37.70\,\textsf{l} = 21\,190\,\text{J}$. The work of the air $W_\text{g} = 663.1\,\text{kPa} \cdot 37.70\,\textsf{l} = 25\,000\,\text{J}$, of which $p_0\,\Delta V = 101\,\text{kPa} \cdot 37.70\,\textsf{l} = 3810\,\text{J}$.
 **Answer:** $W \approx 21.2\,\text{kJ}$, three significant figures like the lifting height $1.20\,\text{m}$. The air in the cylinder does the work $25.0\,\text{kJ}$, because it pushes the piston with the total pressure. Above the piston there is outside air, and during the lift the piston pushes it out of the way: this takes $3.8\,\text{kJ}$, and only the rest lifts the car.
 **Reasonableness:** The two different ways give the same result, because $\Delta p\,A$ is exactly as large as the weight. The result is equal to the increase in the car's potential energy.
 
@@ -63,12 +63,12 @@
 
 ### c)
 **Given:** $P_0 = 485.1\,\text{kW}$, $P_\text{s} = 174.6\,\text{kW}$, $75\,\%$ of the heat recovered
-**Find:** why not all of the fuel power is obtained as electricity, and the total efficiency $\eta_\text{kok}$
+**Find:** why not all of the fuel power is obtained as electricity, and the total efficiency $\eta_\text{tot}$
 **Principle:** The engine is a heat engine. It can turn heat into work only if it gives part of the heat to a colder environment: with the exhaust gases and the cooling water (chapter *Work done by a gas and the heat engine*). Energy is conserved, so the heat power given away is the difference between the fuel power and the electrical power. In the total efficiency the electricity and the recovered heat are counted as useful.
-**Formula:** $P_2 = P_0 - P_\text{s}$, $P_\text{l} = 0.75\,P_2$ and $\eta_\text{kok} = \dfrac{P_\text{s} + P_\text{l}}{P_0}$
+**Formula:** $P_2 = P_0 - P_\text{s}$, $P_\text{l} = 0.75\,P_2$ and $\eta_\text{tot} = \dfrac{P_\text{s} + P_\text{l}}{P_0}$
 **Conversions:** Not needed: the powers are in kilowatts, and $75\,\% = 0.75$.
-**Substitution:** $P_2 = 485.1\,\text{kW} - 174.6\,\text{kW} = 310.5\,\text{kW}$, $P_\text{l} = 0.75 \cdot 310.5\,\text{kW} = 232.9\,\text{kW}$ and $\eta_\text{kok} = \dfrac{174.6\,\text{kW} + 232.9\,\text{kW}}{485.1\,\text{kW}} = 0.840$
-**Answer:** $\eta_\text{kok} \approx 84\,\%$, two significant figures like the efficiencies $36\,\%$ and $75\,\%$. Even a frictionless engine must give heat to a colder place, so the share of electricity stays well below $100\,\%$. The total efficiency is high because the heat given away is used for heating; not a bit more electricity is obtained because of it.
+**Substitution:** $P_2 = 485.1\,\text{kW} - 174.6\,\text{kW} = 310.5\,\text{kW}$, $P_\text{l} = 0.75 \cdot 310.5\,\text{kW} = 232.9\,\text{kW}$ and $\eta_\text{tot} = \dfrac{174.6\,\text{kW} + 232.9\,\text{kW}}{485.1\,\text{kW}} = 0.840$
+**Answer:** $\eta_\text{tot} \approx 84\,\%$, two significant figures like the efficiencies $36\,\%$ and $75\,\%$. Even a frictionless engine must give heat to a colder place, so the share of electricity stays well below $100\,\%$. The total efficiency is high because the heat given away is used for heating; it does not increase the electricity obtained.
 **Reasonableness:** What goes to waste is $485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \approx 78\,\text{kW}$, that is, $16\,\%$, the same as $25\,\%$ of the heat power. The result is of the same order of magnitude as the $85$–$90\,\%$ of combined heat and power plants.
 
 ### Yleisiä virheitä

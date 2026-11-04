@@ -111,7 +111,7 @@
           "id": "d",
           "kind": "word",
           "points": 3,
-          "text": "Another driver accelerates uniformly on the same lane over the whole length of the lane, but only to $72\\,\\text{km/h}$. Explain with graphs why the lorry then catches up with him, and why it is worth accelerating to the speed of the traffic on an acceleration lane.",
+          "text": "Another driver accelerates uniformly on the same lane over the whole length of the lane, but only to $72\\,\\text{km/h}$. Explain with graphs why the lorry then catches up with this car, and why it is worth accelerating to the speed of the traffic on an acceleration lane.",
           "criteria": [
             {
               "text": "Explains that the car is slower than the lorry for the whole lane ($72\\,\\text{km/h} < 81\\,\\text{km/h}$), so in the $(t,v)$ graph the area of the lorry's rectangle grows faster than the car's area, and justifies this quantitatively: the acceleration lasts about $15.4\\,\\text{s}$ and the car's average velocity is $17.5\\,\\text{m/s}$, so the lorry travels on average about $5\\,\\text{m/s}$ faster and makes up about $77\\,\\text{m}$, more than the gap of $40\\,\\text{m}$.",
@@ -291,7 +291,7 @@
         "fy4-2",
         "fy1-3"
       ],
-      "text": "A passenger recorded the velocity of a local train every four seconds with the positioning app of her phone as the train approached a station. The app gives the velocity in kilometres per hour as whole numbers. According to the manufacturer, the uncertainty of the displayed velocity is about $\\pm 1\\,\\text{km/h}$.\n\n| $t\\ (\\text{s})$ | $v\\ (\\text{km/h})$ |\n|---|---|\n| $0$ | $91$ |\n| $4$ | $89$ |\n| $8$ | $90$ |\n| $12$ | $84$ |\n| $16$ | $77$ |\n| $20$ | $67$ |\n| $24$ | $56$ |\n| $28$ | $49$ |\n| $32$ | $39$ |\n| $36$ | $28$ |\n| $40$ | $21$ |\n\nThe recording stopped at $40\\,\\text{s}$, when the train was still moving.",
+      "text": "A passenger recorded the velocity of a local train every four seconds with the positioning app of a phone as the train approached a station. The app gives the velocity in kilometres per hour as whole numbers. According to the manufacturer, the uncertainty of the displayed velocity is about $\\pm 1\\,\\text{km/h}$.\n\n| $t\\ (\\text{s})$ | $v\\ (\\text{km/h})$ |\n|---|---|\n| $0$ | $91$ |\n| $4$ | $89$ |\n| $8$ | $90$ |\n| $12$ | $84$ |\n| $16$ | $77$ |\n| $20$ | $67$ |\n| $24$ | $56$ |\n| $28$ | $49$ |\n| $32$ | $39$ |\n| $36$ | $28$ |\n| $40$ | $21$ |\n\nThe recording stopped at $40\\,\\text{s}$, when the train was still moving.",
       "parts": [
         {
           "id": "a",
@@ -434,7 +434,7 @@
         "fy4-2",
         "fy1-3"
       ],
-      "text": "A municipality is considering average speed enforcement on a straight $3.0\\,\\text{km}$ section of road with a speed limit of $80\\,\\text{km/h}$. At the beginning and the end of the section there is a camera that records the moment a vehicle passes. The system calculates the vehicle's average velocity on the section and reports an offence if the average velocity is over $80\\,\\text{km/h}$. In the municipal council's debate three opinions were put forward:\n\n1. “The enforcement is unfair: the average velocity does not prove that anyone drove too fast at any single point.”\n2. “I drove $2.0\\,\\text{km}$ of the section at $100\\,\\text{km/h}$ and the remaining $1.0\\,\\text{km}$ at $60\\,\\text{km/h}$, so my average velocity was $80\\,\\text{km/h}$.”\n3. “The cameras could be placed only $100\\,\\text{m}$ apart, so the enforcement would be easier to build.”\n\nThe cameras record the moment of passing to within $0.5\\,\\text{s}$.",
+      "text": "A municipality is considering average speed enforcement on a straight $3.0\\,\\text{km}$ section of road with a speed limit of $80\\,\\text{km/h}$. At the beginning and the end of the section there is a camera that records the moment a vehicle passes. The system calculates the vehicle's average speed on the section and reports an offence if the average speed is over $80\\,\\text{km/h}$. In the municipal council's debate three opinions were put forward:\n\n1. “The enforcement is unfair: the average speed does not prove that anyone drove too fast at any single point.”\n2. “I drove $2.0\\,\\text{km}$ of the section at $100\\,\\text{km/h}$ and the remaining $1.0\\,\\text{km}$ at $60\\,\\text{km/h}$, so my average speed was $80\\,\\text{km/h}$.”\n3. “The cameras could be placed only $100\\,\\text{m}$ apart, so the enforcement would be easier to build.”\n\nThe cameras record the moment of passing to within $0.5\\,\\text{s}$.",
       "parts": [
         {
           "id": "a",
@@ -443,19 +443,19 @@
           "text": "Assess the first opinion. Justify your answer with a $(t,x)$ or $(t,v)$ graph.",
           "criteria": [
             {
-              "text": "Explains that the average velocity is the displacement divided by the time, that is, in the $(t,x)$ graph the slope of the line through the points of the beginning and the end of the section.",
+              "text": "Explains that the average speed is the displacement divided by the time, that is, in the $(t,x)$ graph the slope of the line through the points of the beginning and the end of the section.",
               "tag": "concept",
               "points": 2
             },
             {
-              "text": "Justifies with a graph: if the velocity were at most $80\\,\\text{km/h}$ all the time, the area under the $(t,v)$ graph would be at most $80\\,\\text{km/h}$ times the time, so the average velocity could not exceed the limit (or: the $(t,x)$ graph cannot rise more steeply on average than at its steepest point).",
+              "text": "Justifies with a graph: if the velocity were at most $80\\,\\text{km/h}$ all the time, the area under the $(t,v)$ graph would be at most $80\\,\\text{km/h}$ times the time, so the average speed could not exceed the limit (or: the $(t,x)$ graph cannot rise more steeply on average than at its steepest point).",
               "tag": "graph",
               "points": 2
             },
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "The opinion is wrong: an average velocity over $80\\,\\text{km/h}$ proves that the velocity has been over $80\\,\\text{km/h}$ at some point. The converse does not hold: an average velocity below the limit does not prove that there was no speeding."
+              "detail": "The opinion is wrong: an average speed over $80\\,\\text{km/h}$ proves that the velocity has been over $80\\,\\text{km/h}$ at some point. The converse does not hold: an average speed below the limit does not prove that there was no speeding."
             }
           ]
         },
@@ -463,7 +463,7 @@
           "id": "b",
           "kind": "calc",
           "points": 5,
-          "text": "Assess the second opinion by calculating the driver's average velocity on the section.",
+          "text": "Assess the second opinion by calculating the driver's average speed on the section.",
           "answer": {
             "value": 81.8,
             "unit": "km/h",
@@ -488,7 +488,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "The opinion is wrong: the mean of the velocities would do only if each velocity were driven for equally long. The driver drove faster for the longer distance, and the average velocity exceeds the limit."
+              "detail": "The opinion is wrong: the mean of the velocities would do only if each velocity were driven for equally long. The driver drove faster for the longer distance, and the average speed exceeds the limit."
             }
           ]
         },
@@ -496,15 +496,15 @@
           "id": "c",
           "kind": "word",
           "points": 5,
-          "text": "Assess the third opinion. How large is the uncertainty of the average velocity on the $3.0\\,\\text{km}$ section and on a $100\\,\\text{m}$ section when the car is driving at $80\\,\\text{km/h}$?",
+          "text": "Assess the third opinion. How large is the uncertainty of the average speed on the $3.0\\,\\text{km}$ section and on a $100\\,\\text{m}$ section when the car is driving at $80\\,\\text{km/h}$?",
           "criteria": [
             {
               "key": "uncertainty",
               "points": 2,
-              "detail": "Because of the two records the uncertainty of the travel time is about $1\\,\\text{s}$. On the $3.0\\,\\text{km}$ section the time is $135\\,\\text{s}$, so the uncertainty of the average velocity is about $80\\,\\text{km/h} \\cdot 1\\,\\text{s} : 135\\,\\text{s} \\approx 0.6\\,\\text{km/h}$."
+              "detail": "Because of the two records the uncertainty of the travel time is about $1\\,\\text{s}$. On the $3.0\\,\\text{km}$ section the time is $135\\,\\text{s}$, so the uncertainty of the average speed is about $80\\,\\text{km/h} \\cdot 1\\,\\text{s} : 135\\,\\text{s} \\approx 0.6\\,\\text{km/h}$."
             },
             {
-              "text": "Calculates the short section: the time is $4.5\\,\\text{s}$, so an error of one second changes the average velocity by about $18\\,\\text{km/h}$, that is, by over $20\\,\\%$.",
+              "text": "Calculates the short section: the time is $4.5\\,\\text{s}$, so an error of one second changes the average speed by about $18\\,\\text{km/h}$, that is, by over $20\\,\\%$.",
               "tag": "math",
               "points": 2
             },
@@ -526,7 +526,7 @@
     },
     {
       "id": "fy9-liike-s5",
-      "title": "A trolley on a sloping track",
+      "title": "A cart on a sloping track",
       "source": "example",
       "source_note": "The report and its results are invented examples.",
       "skills": [
@@ -535,7 +535,7 @@
         "fy1-4",
         "fy1-8"
       ],
-      "text": "A group of students investigated whether the motion of a trolley on a sloping track is uniformly accelerated. An extract from the group's report:\n\n> We released the trolley from rest at the top of the track. One member of the group started a stopwatch when the trolley set off and stopped it when the trolley passed the $1.20\\,\\text{m}$ mark of the measuring tape. The time was $1.6\\,\\text{s}$. We calculated the acceleration to be $0.94\\,\\text{m/s}^2$. Because we got a value for the acceleration, the trolley's motion is uniformly accelerated.\n\nThe group estimated that the uncertainty of the hand timing is about $0.2\\,\\text{s}$.",
+      "text": "A group of students investigated whether the motion of a cart on a sloping track is uniformly accelerated. An extract from the group's report:\n\n> We released the cart from rest at the top of the track. One member of the group started a stopwatch when the cart set off and stopped it when the cart passed the $1.20\\,\\text{m}$ mark of the measuring tape. The time was $1.6\\,\\text{s}$. We calculated the acceleration to be $0.94\\,\\text{m/s}^2$. Because we got a value for the acceleration, the cart's motion is uniformly accelerated.\n\nThe group estimated that the uncertainty of the hand timing is about $0.2\\,\\text{s}$.",
       "parts": [
         {
           "id": "a",
@@ -579,7 +579,7 @@
             {
               "key": "error_sources",
               "points": 2,
-              "detail": "For example the reaction time at the beginning and the end of the timing, the trolley possibly being pushed at the start, judging the point of passing from the side, only one measurement without repeats."
+              "detail": "For example the reaction time at the beginning and the end of the timing, the cart possibly being pushed at the start, judging the point of passing from the side, only one measurement without repeats."
             },
             {
               "key": "conclusion",
@@ -592,10 +592,10 @@
           "id": "c",
           "kind": "word",
           "points": 6,
-          "text": "Plan an experiment that can reliably find out whether the trolley's motion is uniformly accelerated and determine its acceleration.",
+          "text": "Plan an experiment that can reliably find out whether the cart's motion is uniformly accelerated and determine its acceleration.",
           "criteria": [
             {
-              "text": "Measures the trolley's position at many moments, for example by video analysis (known frame rate, scale in the plane of the track) or with light gates at different points.",
+              "text": "Measures the cart's position at many moments, for example by video analysis (known frame rate, scale in the plane of the track) or with light gates at different points.",
               "tag": "experiment",
               "points": 2
             },
@@ -605,7 +605,7 @@
               "points": 2
             },
             {
-              "text": "Repeats the measurements, keeps the slope of the track and the way of starting the same (the trolley is released from rest without a push) and estimates the uncertainty of the acceleration from the spread of the repeats or from the fit.",
+              "text": "Repeats the measurements, keeps the slope of the track and the way of starting the same (the cart is released from rest without a push) and estimates the uncertainty of the acceleration from the spread of the repeats or from the fit.",
               "tag": "experiment",
               "points": 2
             }
@@ -631,7 +631,7 @@
         "fy1-3",
         "fy1-6"
       ],
-      "text": "A student dropped a ball from rest and filmed the fall with a phone at $60$ frames per second. In a video analysis program she set the scale with a metre stick. The stick was on a stand $3.00\\,\\text{m}$ from the camera, and the ball fell $0.30\\,\\text{m}$ behind the stick, $3.30\\,\\text{m}$ from the camera.\n\nThe program gave the ball's height $y$ above the floor from every third frame, that is, every $0.05\\,\\text{s}$:\n\n| $t\\ (\\text{s})$ | $y\\ (\\text{m})$ |\n|---|---|\n| $0.00$ | $1.653$ |\n| $0.10$ | $1.607$ |\n| $0.20$ | $1.469$ |\n| $0.30$ | $1.253$ |\n| $0.40$ | $0.939$ |\n| $0.50$ | $0.538$ |\n\nThe table shows every second point. A spreadsheet program fitted a quadratic polynomial $y = A\\,t^2 + B\\,t + C$ to all eleven points and gave $A = (-4.44 \\pm 0.05)\\,\\text{m/s}^2$, $B = -0.007\\,\\text{m/s}$ and $C = 1.651\\,\\text{m}$.",
+      "text": "A student dropped a ball from rest and filmed the fall with a phone at $60$ frames per second. In a video analysis program the student set the scale with a metre stick. The stick was on a stand $3.00\\,\\text{m}$ from the camera, and the ball fell $0.30\\,\\text{m}$ behind the stick, $3.30\\,\\text{m}$ from the camera.\n\nThe program gave the ball's height $y$ above the floor from every third frame, that is, every $0.05\\,\\text{s}$:\n\n| $t\\ (\\text{s})$ | $y\\ (\\text{m})$ |\n|---|---|\n| $0.00$ | $1.653$ |\n| $0.10$ | $1.607$ |\n| $0.20$ | $1.469$ |\n| $0.30$ | $1.253$ |\n| $0.40$ | $0.939$ |\n| $0.50$ | $0.538$ |\n\nThe table shows every second point. A spreadsheet program fitted a quadratic polynomial $y = A\\,t^2 + B\\,t + C$ to all eleven points and gave $A = (-4.44 \\pm 0.05)\\,\\text{m/s}^2$, $B = -0.007\\,\\text{m/s}$ and $C = 1.651\\,\\text{m}$.",
       "parts": [
         {
           "id": "a",

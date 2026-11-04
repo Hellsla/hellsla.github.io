@@ -296,12 +296,12 @@
         },
         {
           "text": "$750\\,\\text{J}$",
-          "feedback": "Correct. $W_\\text{k} = p\\,\\Delta V = 250\\,\\text{kPa} \\cdot 3.0\\,\\textsf{l} = 250\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 750\\,\\text{J}$, the rectangle under the graph.",
+          "feedback": "Correct. $W_\\text{g} = p\\,\\Delta V = 250\\,\\text{kPa} \\cdot 3.0\\,\\textsf{l} = 250\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 750\\,\\text{J}$, the rectangle under the graph.",
           "correct": true
         },
         {
           "text": "$0\\,\\text{J}$",
-          "feedback": "Constant pressure does not mean that no work is done. Work is done when the volume changes and the piston moves: $W_\\text{k} = p\\,\\Delta V$."
+          "feedback": "Constant pressure does not mean that no work is done. Work is done when the volume changes and the piston moves: $W_\\text{g} = p\\,\\Delta V$."
         },
         {
           "text": "$750\\,\\text{kJ}$",
@@ -414,28 +414,28 @@
       "tolerance": 0.02,
       "hints": [
         "The gas gets energy as heat but gives it away by doing work on the piston.",
-        "At constant pressure the work done by the gas is $W_\\text{k} = p\\,\\Delta V$, and the change in internal energy is $\\Delta U = Q - W_\\text{k}$.",
-        "$W_\\text{k} = 150\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 450\\,\\text{J}$"
+        "At constant pressure the work done by the gas is $W_\\text{g} = p\\,\\Delta V$, and the change in internal energy is $\\Delta U = Q - W_\\text{g}$.",
+        "$W_\\text{g} = 150\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 450\\,\\text{J}$"
       ],
       "mistakes": [
         {
           "value": 1650,
-          "feedback": "You added the work and the heat together. An expanding gas does work and gives away energy in doing so, so the work is subtracted: $\\Delta U = Q - W_\\text{k}$."
+          "feedback": "You added the work and the heat together. An expanding gas does work and gives away energy in doing so, so the work is subtracted: $\\Delta U = Q - W_\\text{g}$."
         },
         {
           "value": 1200,
-          "feedback": "This is the heat received by the gas. Part of it goes into the work the gas does on the piston: $W_\\text{k} = p\\,\\Delta V$."
+          "feedback": "This is the heat received by the gas. Part of it goes into the work the gas does on the piston: $W_\\text{g} = p\\,\\Delta V$."
         },
         {
           "value": 450,
-          "feedback": "This is the work done by the gas. The change in internal energy is the difference between the heat and the work: $\\Delta U = Q - W_\\text{k}$."
+          "feedback": "This is the work done by the gas. The change in internal energy is the difference between the heat and the work: $\\Delta U = Q - W_\\text{g}$."
         },
         {
           "value": 450000,
           "feedback": "Pressure in pascals and volume in litres give a work a thousand times too large. Convert the change in volume: $3.0\\,\\textsf{l} = 0.0030\\,\\text{m}^3$."
         }
       ],
-      "solution": "**Given:** heat $Q = 1.20\\,\\text{kJ}$, pressure $p = 150\\,\\text{kPa}$ (constant), volumes $V_1 = 2.0\\,\\textsf{l}$ and $V_2 = 5.0\\,\\textsf{l}$\n\n**Find:** the change $\\Delta U$ in the internal energy of the gas, in joules\n\n**Principle:** Energy is conserved: the internal energy of the gas increases by the heat received and decreases by the work the expanding gas does on the piston. The pressure is constant, so the work is the pressure times the change in volume (chapter *Work done by a gas and the heat engine*).\n\n**Formula:** $W_\\text{k} = p\\,(V_2 - V_1)$ and $\\Delta U = Q - W_\\text{k}$, so $\\Delta U = Q - p\\,(V_2 - V_1)$\n\n**Conversions:** $Q = 1.20 \\cdot 1000\\,\\text{J} = 1200\\,\\text{J}$, $p = 150 \\cdot 1000\\,\\text{Pa} = 150\\,000\\,\\text{Pa}$ and $V_2 - V_1 = 3.0\\,\\textsf{l} = 3.0 \\cdot 0.001\\,\\text{m}^3 = 0.0030\\,\\text{m}^3$\n\n**Substitution:** $W_\\text{k} = 150\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 450\\,\\text{J}$ and $\\Delta U = 1200\\,\\text{J} - 450\\,\\text{J} = 750\\,\\text{J}$\n\n**Answer:** $\\Delta U \\approx 750\\,\\text{J}$ (the internal energy increases), two significant figures like the volumes $2.0\\,\\textsf{l}$ and $5.0\\,\\textsf{l}$.\n\n**Reasonableness:** The increase in internal energy is positive and smaller than the heat received, as it must be when the gas does work at the same time. A check with kilopascals and litres: $150\\,\\text{kPa} \\cdot 3.0\\,\\textsf{l} = 450\\,\\text{J}$, because $1\\,\\text{kPa} \\cdot 1\\,\\textsf{l} = 1\\,\\text{J}$."
+      "solution": "**Given:** heat $Q = 1.20\\,\\text{kJ}$, pressure $p = 150\\,\\text{kPa}$ (constant), volumes $V_1 = 2.0\\,\\textsf{l}$ and $V_2 = 5.0\\,\\textsf{l}$\n\n**Find:** the change $\\Delta U$ in the internal energy of the gas, in joules\n\n**Principle:** Energy is conserved: the internal energy of the gas increases by the heat received and decreases by the work the expanding gas does on the piston. The pressure is constant, so the work is the pressure times the change in volume (chapter *Work done by a gas and the heat engine*).\n\n**Formula:** $W_\\text{g} = p\\,(V_2 - V_1)$ and $\\Delta U = Q - W_\\text{g}$, so $\\Delta U = Q - p\\,(V_2 - V_1)$\n\n**Conversions:** $Q = 1.20 \\cdot 1000\\,\\text{J} = 1200\\,\\text{J}$, $p = 150 \\cdot 1000\\,\\text{Pa} = 150\\,000\\,\\text{Pa}$ and $V_2 - V_1 = 3.0\\,\\textsf{l} = 3.0 \\cdot 0.001\\,\\text{m}^3 = 0.0030\\,\\text{m}^3$\n\n**Substitution:** $W_\\text{g} = 150\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 450\\,\\text{J}$ and $\\Delta U = 1200\\,\\text{J} - 450\\,\\text{J} = 750\\,\\text{J}$\n\n**Answer:** $\\Delta U \\approx 750\\,\\text{J}$ (the internal energy increases), two significant figures like the volumes $2.0\\,\\textsf{l}$ and $5.0\\,\\textsf{l}$.\n\n**Reasonableness:** The increase in internal energy is positive and smaller than the heat received, as it must be when the gas does work at the same time. A check with kilopascals and litres: $150\\,\\text{kPa} \\cdot 3.0\\,\\textsf{l} = 450\\,\\text{J}$, because $1\\,\\text{kPa} \\cdot 1\\,\\textsf{l} = 1\\,\\text{J}$."
     },
     {
       "id": "lisaa",

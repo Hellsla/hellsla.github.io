@@ -359,7 +359,7 @@
       "unit": "kN",
       "tolerance": 0.02,
       "hints": [
-        "What is the change in the passenger's momentum when he stops?",
+        "What is the change in the passenger's momentum when the passenger stops?",
         "The impulse–momentum principle: $F_\\text{avg}\\,\\Delta t = |\\Delta p| = mv$. First convert the speed into the unit $\\text{m/s}$.",
         "$40\\,\\text{km/h} = 40 \\cdot \\dfrac{1000\\,\\text{m}}{3600\\,\\text{s}} \\approx 11.1\\,\\text{m/s}$."
       ],
@@ -428,7 +428,7 @@
         },
         {
           "text": "In the collision momentum is conserved, in the swing mechanical energy.",
-          "feedback": "Correct. The collision is so short that the external forces have no time to change the momentum. In the swing the force of the string is perpendicular to the motion, so only the weight does work, and the mechanical energy is conserved. Review in the chapter *Conservation of mechanical energy and the work–energy principle* why the force of the string does no work.",
+          "feedback": "Correct. The collision is so short that the external forces have no time to change the momentum. In the swing the force of the string is perpendicular to the motion, so only the weight does work, and the mechanical energy is conserved. See the chapter *Conservation of mechanical energy and the work–energy principle* for why the force of the string does no work.",
           "correct": true
         },
         {

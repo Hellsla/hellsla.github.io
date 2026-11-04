@@ -198,7 +198,7 @@ Moduulin kaikki ilmiöt alkavat **värähtelystä**. Värähtelyssä kappale lii
   <foreignObject x="319" y="670" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{taso}$</div></foreignObject>
 </svg>
 
-Kokeen aaltotehtävissä kannattaa ensin kysyä, mikä määrää minkin suureen. Lähde määrää taajuuden. Väliaine määrää nopeuden. Aallonpituus seuraa niistä. Aalto voi kohdata esteen, raon tai toisen aallon. Silloin aalto heijastuu, taipuu tai interferoi eli yhdistyy toisen aallon kanssa. Kaikissa näissä ratkaisee, kun matkoja verrataan aallonpituuteen.
+Kokeen aaltotehtävissä kannattaa ensin kysyä, mikä määrää minkin suureen. Lähde määrää taajuuden. Väliaine määrää nopeuden. Aallonpituus seuraa niistä. Aalto voi kohdata esteen, raon tai toisen aallon. Silloin aalto heijastuu, taipuu tai interferoi eli yhdistyy toisen aallon kanssa. Kaikissa näissä ratkaisee se, kuinka suuria matkat ovat aallonpituuteen verrattuna.
 
 Nyt voimme vastata alun kysymykseen. Pilli värähtelee taajuudella $3{,}0\,\text{kHz}$. Kun ääni siirtyy veteen, taajuus säilyy samana, joten sävel on sama. Äänen nopeus on hallin lämpimässä ilmassa noin $350\,\text{m/s}$ ja vedessä noin $1500\,\text{m/s}$. Siksi aallonpituus kasvaa: se on ilmassa $0{,}12\,\text{m}$ ja vedessä $0{,}50\,\text{m}$. Suurin osa äänestä kuitenkin heijastuu vedenpinnasta. Siksi vihellys kuuluu veden alla heikkona.
 
@@ -307,10 +307,10 @@ missä $f_\text{h}$ on huojuntataajuus ($\text{Hz}$), $f_0$ lähteen taajuus ja 
 ## Yleisiä virheitä {Virheet}
 
 - **Amplitudi mitataan ääriasemasta toiseen.** Amplitudi mitataan tasapainoasemasta. Siksi se on puolet ääriasemien välisestä matkasta.
-- **Puolikas jakso.** Kappale ohittaa tasapainoaseman kaksi kertaa peräkkäin vain ajan $\tfrac{T}{2}$ välein. Jakso on kahden huipun väli.
+- **Puolikas jakso.** Kaksi peräkkäistä tasapainoaseman ohitusta on vain ajan $\tfrac{T}{2}$ päässä toisistaan. Jakso on kahden huipun väli.
 - **Taajuus muuttuu väliaineessa.** Taajuus säilyy, kun aalto siirtyy väliaineesta toiseen. Nopeus ja aallonpituus muuttuvat.
 - **Ajanhetken kuva ja yhden kohdan kuvaaja menevät sekaisin.** Lue ensin vaaka-akseli. $(x, y)$-kuvaajasta luetaan $\lambda$, ja $(t, y)$-kuvaajasta luetaan $T$.
-- **Desibelit lasketaan yhteen.** Kaksi yhtä voimakasta lähdettä nostaa tasoa vain noin $3\,\text{dB}$, koska intensiteetit lasketaan yhteen.
+- **Desibelit lasketaan yhteen.** Kaksi yhtä voimakasta riippumatonta eli toisistaan erillistä lähdettä nostaa tasoa vain noin $3\,\text{dB}$, koska intensiteetit lasketaan yhteen.
 - **Kaikua ei jaeta kahdella.** Kaiku kulkee matkan edestakaisin, joten $d = \tfrac{vt}{2}$.
 - **Dopplerin etumerkki.** Tarkista lopuksi: kun lähde lähestyy, $f > f_0$. Kun lähde loittonee eli menee kauemmas, $f < f_0$.
 

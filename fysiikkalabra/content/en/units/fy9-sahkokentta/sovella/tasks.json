@@ -357,12 +357,12 @@
           "text": "Form from the data a quantity as a function of which the graph of the capacitance is a straight line. Justify your choice. Present the graph and fit a straight line to the points.",
           "criteria": [
             {
-              "text": "Justifies the linearisation: for a parallel-plate capacitor $C = \\varepsilon_0 A \\cdot \\tfrac{1}{d}$, so $C$ is directly proportional to the quantity $\\tfrac{1}{d}$; the own capacitance of the leads and the meter adds a constant term.",
+              "text": "Justifies the linearisation: for a parallel-plate capacitor $C = \\varepsilon_0 A \\cdot \\tfrac{1}{d}$, so $C$ is directly proportional to the quantity $\\tfrac{1}{d}$; the capacitance of the leads and the meter themselves adds a constant term.",
               "tag": "concept",
               "points": 2
             },
             {
-              "text": "Calculates the values of the quantity $\\tfrac{1}{d}$ into the table correctly with units.",
+              "text": "Adds a correctly calculated column of $\\tfrac{1}{d}$, with its unit, to the table.",
               "tag": "math",
               "points": 1
             },
@@ -433,7 +433,7 @@
               "detail": "The extension of the line crosses the vertical axis at about $22\\,\\text{pF}$, when $\\tfrac{1}{d} \\to 0$."
             },
             {
-              "text": "Interprets the constant term: it is the own capacitance of the leads and the meter, which is measured in addition to the capacitance of the plates; the meter would show it even if the plates were very far apart.",
+              "text": "Interprets the constant term: it is the capacitance of the leads and the meter themselves, which is measured in addition to the capacitance of the plates; the meter would show it even if the plates were very far apart.",
               "tag": "graph",
               "points": 1
             },
@@ -548,7 +548,7 @@
               "points": 1
             },
             {
-              "text": "Gives correct instructions: leave with short steps with the feet together or by jumping with both feet together, do not approach the conductor, and report the damage to the number $112$.",
+              "text": "Gives correct instructions: leave with short steps with the feet together or by jumping with both feet together, do not approach the conductor, and call the emergency number $112$ to report the damage.",
               "tag": "communication",
               "points": 2
             },

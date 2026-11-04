@@ -105,7 +105,7 @@
         },
         {
           "text": "They do not affect each other, because the field only circles the wire.",
-          "feedback": "The field circles the wire in circles, and at the other wire it is perpendicular to it. That is why the force is as large as possible, $F = I_2 l B_1$. Review this in the chapter *Force on a current-carrying wire: the electric motor and the loudspeaker*."
+          "feedback": "The field lines are circles around the wire, and at the other wire it is perpendicular to it. That is why the force is as large as possible, $F = I_2 l B_1$. Review this in the chapter *Force on a current-carrying wire: the electric motor and the loudspeaker*."
         }
       ]
     },
@@ -264,7 +264,7 @@
         },
         {
           "text": "The sign cannot be deduced, because the field bends all particles the same way.",
-          "feedback": "The field bends positive and negative charges in opposite directions, and an uncharged neutron would go straight. A path curving downwards tells of a negative charge. Review this in the chapter *Charged particle in electric and magnetic fields*."
+          "feedback": "The field bends positive and negative charges in opposite directions, and an uncharged neutron would go straight. A path curving downwards shows that the charge is negative. Review this in the chapter *Charged particle in electric and magnetic fields*."
         }
       ]
     },

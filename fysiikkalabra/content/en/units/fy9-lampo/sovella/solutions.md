@@ -290,7 +290,7 @@ The circled points in the graph are the two points of the line from which the sl
 **Conversions:** $4.0\,\text{km} = 4.0 \cdot 1000\,\text{m} = 4000\,\text{m}$.
 **Substitution:** $mgh = 1600\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 250\,\text{m} = 3\,924\,000\,\text{J}$, $Fs = 450\,\text{N} \cdot 4000\,\text{m} = 1\,800\,000\,\text{J}$ and $\Delta T = \dfrac{0.85 \cdot 2\,124\,000\,\text{J}}{13\,500\,\tfrac{\text{J}}{\text{K}}} = \dfrac{1\,805\,400\,\text{J}}{13\,500\,\tfrac{\text{J}}{\text{K}}} = 133.7\,\text{K}$
 **Answer:** about $1.3 \cdot 10^{2}\,\text{K}$, that is $130\,\text{K}$, two significant figures like the distance $4.0\,\text{km}$.
-**Reasonableness:** The downhill releases about four times more energy to the brakes than one stop from $90\,\text{km/h}$ ($1.81\,\text{MJ}$ and $0.43\,\text{MJ}$), so the rise is about four times larger. Without cooling the discs would heat to about $150\,{}^\circ\text{C}$, which is possible but already near the comfortable operating range of an ordinary brake.
+**Reasonableness:** The downhill releases about four times more energy to the brakes than one stop from $90\,\text{km/h}$ ($1.81\,\text{MJ}$ and $0.43\,\text{MJ}$), so the rise is about four times larger. Without cooling the discs would heat to about $150\,{}^\circ\text{C}$, which is possible but already near the upper end of the normal operating range of an ordinary brake.
 
 ### c)
 **Given:** the energy reaching the discs in part b $Q = 1.805\,\text{MJ}$; the temperature of the discs rose by $80\,\text{K}$; $c\,m_\text{discs} = 13\,500\,\text{J/K}$

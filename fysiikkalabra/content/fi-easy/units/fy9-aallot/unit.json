@@ -4,7 +4,7 @@
   "chapter": 4,
   "order": 1,
   "title": "Värähtely, aallot ja ääni",
-  "description": "Kerrataan FY5-moduulin asioita: värähtelyn suureet, jousivoima ja jousen energia, jousivärähtelijä ja heiluri, aaltojen eteneminen, heijastuminen ja diffraktio, interferenssi, seisovat aallot, ääni ja Dopplerin ilmiö, intensiteetti ja desibelit, melu sekä ultraääni ja maanjäristysaallot. Niistä ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
+  "description": "Kerrataan FY5-moduulin asioita: värähtelyn suureet, jousivoima ja jousen energia, jousivärähtelijä ja heiluri, aaltojen eteneminen, heijastuminen ja diffraktio, interferenssi, seisovat aallot, ääni ja Dopplerin ilmiö, intensiteetti ja desibelit, melu sekä ultraääni ja maanjäristysaallot, ja niistä ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
   "kind": "review",
   "minutes": 75,
   "subjects": [
@@ -18,7 +18,7 @@
     },
     {
       "term": "taajuus",
-      "explain": "Kertoo, kuinka monta värähdystä tapahtuu sekunnissa: $f = \\frac{1}{T}$. Taajuuden määrää lähde, ja se ei muutu, kun aalto siirtyy toiseen aineeseen."
+      "explain": "Kertoo, kuinka monta värähdystä tapahtuu sekunnissa: $f = \\frac{1}{T}$. Taajuuden määrää lähde, ja se ei muutu, kun aalto siirtyy toiseen väliaineeseen."
     },
     {
       "term": "aallonpituus",
@@ -26,7 +26,7 @@
     },
     {
       "term": "interferenssi",
-      "explain": "Kaksi aaltoa kohtaa ja yhdistyy. Aallot voivat vahvistaa toisiaan tai heikentää toisiaan. Sen ratkaisee matkaero."
+      "explain": "Kaksi aaltoa kohtaa ja yhdistyy, jolloin ne vahvistavat tai heikentävät toisiaan. Matkaero ratkaisee, kumpi tapahtuu."
     },
     {
       "term": "intensiteettitaso",

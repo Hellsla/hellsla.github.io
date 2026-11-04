@@ -308,8 +308,8 @@ Harjoituskoe on samanlainen kuin fysiikan ylioppilaskoe. Aikaa on kuusi tuntia. 
 | Osa | Mihin vastaat | Pisteet |
 |---|---|---|
 | Osa I | pakollinen, $10$ lyhyttä kohtaa | $20$ p |
-| Osa II | $4$ tehtävää seitsemästä | $4 \cdot 15$ p |
-| Osa III | $2$ aineistotehtävää kolmesta | $2 \cdot 20$ p |
+| Osa II | $4$ tehtävää seitsemästä | $4 \cdot 15$ p |
+| Osa III | $2$ aineistotehtävää kolmesta | $2 \cdot 20$ p |
 
 Kokeesta voi saada enintään $120$ p. Ehkä vastaat Osassa II tai III useampaan tehtävään kuin ohje sanoo. Silloin lasket arvioinnissa mukaan vain ne tehtävät, jotka valitsit ennen kuin avasit mallivastaukset.
 
@@ -387,7 +387,7 @@ Sivu tarkistaa Osan I kohdat. Monivalinnasta ja väitteestä saat $2$ p, jos ens
 1. Merkitse ensin tehtävä tehdyksi. Avaa vasta sitten tehtävän mallivastaus ja pisteytysohje.
 2. Käy pisteytysohje läpi kohta kohdalta. Anna itsellesi kriteerin pisteet vain, jos vastauksessasi on se, mitä kriteeri vaatii. Hyvä aikomus ei riitä. Oikea luku ilman perustelua ei myöskään riitä.
 3. Lue kohta *Yleisiä virheitä*. Jos teit jonkin näistä virheistä, tarkista, ettet antanut siitä itsellesi pisteitä. Kohta *Hyväksytään myös* kertoo, mitkä muut ratkaisut ovat oikein.
-4. Laske yhteen jokaisen tehtävän pisteet ja koko kokeen pisteet. Pisteitä on enintään $120$ p.
+4. Laske yhteen jokaisen tehtävän pisteet ja koko kokeen pisteet. Koko kokeesta voi saada enintään $120$ p.
 
 ### Mitä seuraavaksi
 Jokaisessa tehtävässä on luettelo luvuista, joiden taitoja tehtävä käyttää. Jos sait tehtävästä alle puolet pisteistä, kertaa nämä luvut. Tee niistä vielä yksi tehtävä. Vertaa myös ajankäyttöäsi suunnitelmaan. Jos jokin osa vei paljon enemmän aikaa, harjoittele sen osan tehtäviä ennen oikeaa koetta.

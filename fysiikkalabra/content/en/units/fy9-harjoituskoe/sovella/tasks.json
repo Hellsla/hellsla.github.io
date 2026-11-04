@@ -312,7 +312,7 @@
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "What is the fundamental frequency at the church temperature of $8\\,{}^\\circ\\text{C}$, and by how many per cent has it changed?",
+          "text": "What is the fundamental frequency at the church temperature of $8\\,{}^\\circ\\text{C}$, and by what percentage has it changed?",
           "answer": {
             "value": 128.3,
             "unit": "Hz",
@@ -354,7 +354,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$|\\Delta L| \\approx 0.36\\,\\text{mm}$, relatively $0.028\\,\\%$."
+              "detail": "$|\\Delta L| \\approx 0.36\\,\\text{mm}$, a relative change of $0.028\\,\\%$."
             },
             {
               "text": "The shortening pipe would raise the frequency by only about $0.03\\,\\%$, while the cooling of the air lowers it by about $2\\,\\%$.",
@@ -608,7 +608,7 @@
           },
           "criteria": [
             {
-              "text": "At the edge of the bright area the ray meets the surface at the critical angle; rays at larger angles are totally reflected.",
+              "text": "At the edge of the bright area the ray meets the surface at the critical angle; rays at larger angles of incidence are totally reflected.",
               "tag": "concept",
               "points": 2
             },
@@ -873,7 +873,7 @@
           "id": "b",
           "kind": "calc",
           "points": 3,
-          "text": "By how many per cent of the mechanical energy of the ball is converted into other forms of energy in the bounce of the preliminary test?",
+          "text": "What percentage of the mechanical energy of the ball is converted into other forms of energy in the bounce of the preliminary test?",
           "answer": {
             "value": 76.0,
             "unit": "%",
@@ -1304,7 +1304,7 @@
           "id": "a",
           "kind": "graph",
           "points": 7,
-          "text": "Draw a graph of the data whose points lie on a straight line, and fit a line to them. Justify why you chose these quantities for the axes.",
+          "text": "From the data, draw a graph whose points lie on a straight line, and fit a line to them. Justify why you chose these quantities for the axes.",
           "criteria": [
             {
               "text": "Chooses $m$ and $T^2$ for the axes and justifies the choice with the period of a mass–spring oscillator $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$, from which $T^2$ is proportional to the mass.",
@@ -1430,7 +1430,7 @@
           "text": "A student claims that the period doubles when the mass is doubled. Assess the claim on the basis of the data.",
           "criteria": [
             {
-              "text": "In the data, from $0.300\\,\\text{kg} \\to 0.600\\,\\text{kg}$ the period increases only $0.713\\,\\text{s} \\to 0.990\\,\\text{s}$, that is by a factor of about $1.39$.",
+              "text": "In the data, when the mass is doubled ($0.300\\,\\text{kg} \\to 0.600\\,\\text{kg}$), the period increases only $0.713\\,\\text{s} \\to 0.990\\,\\text{s}$, that is by a factor of about $1.39$.",
               "tag": "graph",
               "points": 1
             },

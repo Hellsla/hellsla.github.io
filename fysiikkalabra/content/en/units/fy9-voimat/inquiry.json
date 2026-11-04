@@ -26,7 +26,7 @@
       "id": "lt-1",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 1: a sliding puck",
+      "title": "Diagnostic 1: a sliding puck",
       "prompt": "An ice-hockey puck has left the stick and slides straight forwards on the ice. Air resistance is ignored. Which forces act on the puck while it slides?",
       "choices": [
         {
@@ -48,7 +48,7 @@
       "id": "lt-2",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 2: a collision",
+      "title": "Diagnostic 2: a collision",
       "prompt": "A lorry and a small car collide. Which one does the larger force act on in the collision?",
       "choices": [
         {
@@ -70,7 +70,7 @@
       "id": "lt-3",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 3: the lift stops",
+      "title": "Diagnostic 3: the lift stops",
       "prompt": "A lift moves upwards and slows down to stop at the top floor. In which direction does the net force on the lift car point?",
       "choices": [
         {
@@ -92,7 +92,7 @@
       "id": "lt-4",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 4: an oblique pull",
+      "title": "Diagnostic 4: an oblique pull",
       "prompt": "A child pulls a sledge by a rope that rises obliquely upwards, and the sledge slides on horizontal snow. How do the normal force $N$ of the snow and the weight $G$ of the sledge compare?",
       "choices": [
         {
@@ -114,7 +114,7 @@
       "id": "lt-5",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 5: a hanging mass and a cart",
+      "title": "Diagnostic 5: a hanging mass and a cart",
       "prompt": "A cart is on a horizontal table, and a string tied to it runs over a pulley at the edge of the table to a hanging mass $m_2$. There is no friction. When the cart is released, the hanging mass descends with acceleration. How large is the tension $T$ in the string?",
       "choices": [
         {
@@ -136,7 +136,7 @@
       "id": "lt-6",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 6: static friction",
+      "title": "Diagnostic 6: static friction",
       "prompt": "A cupboard is pushed horizontally with a force of $40\\,\\text{N}$, but it does not move. The largest possible value of static friction is $\\mu_0 N = 90\\,\\text{N}$. How large is the friction force on the cupboard?",
       "choices": [
         {
@@ -499,7 +499,7 @@
         }
       ],
       "practice": "Review a free-body diagram and an equation of motion for each body in the chapter [*Equation of motion for connected bodies*](fy4-13.html) and friction in the chapter [*Weight, friction and the inclined plane*](fy4-6.html).",
-      "solution": "**Given:** $m_\\text{A} = 30\\,\\text{kg}$, $m_\\text{B} = 20\\,\\text{kg}$, push $F = 120\\,\\text{N}$, coefficient of kinetic friction $\\mu = 0.15$ for both, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the force $P$ with which A pushes B\n\n**Principle:** The boxes move together, so they have the same acceleration. The acceleration comes from the whole system, in which the forces between A and B are internal and cancel each other (third law). Then B alone is chosen as the object, and the force of A becomes external (chapter *Equation of motion for connected bodies*).\n\n**Free-body diagram:** Box B as a rectangle, positive direction to the right. The weight $\\overline{G}$ from the centre downwards, the normal force $\\overline{N}$ from the bottom surface upwards, the push of A $\\overline{P}$ from the left side to the right and kinetic friction $\\overline{F}_\\mu$ from the rear corner of the bottom surface to the left.\n```voimakuvio\npinta 0\nG 196,2\nN 196,2\nP 48 0 työntö @vasen\nF_mu 29,43 vasen\na oikea\n```\n\n**Formula:** System: $F - \\mu(m_\\text{A} + m_\\text{B})g = (m_\\text{A} + m_\\text{B})a$. B: $P - \\mu m_\\text{B} g = m_\\text{B} a$, so $P = m_\\text{B}(a + \\mu g) = \\dfrac{m_\\text{B}}{m_\\text{A} + m_\\text{B}}\\,F$\n\n**Conversions:** None needed, the quantities are in base units.\n\n**Substitution:** $a = \\dfrac{120\\,\\text{N} - 0.15 \\cdot 50\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2}{50\\,\\text{kg}} = \\dfrac{46.425\\,\\text{N}}{50\\,\\text{kg}} = 0.9285\\,\\text{m/s}^2$ and $P = 20\\,\\text{kg} \\cdot (0.9285\\,\\text{m/s}^2 + 1.4715\\,\\text{m/s}^2) = 48.0\\,\\text{N}$\n\n**Answer:** $P \\approx 48\\,\\text{N}$, two significant figures like the coefficient of friction $0.15$.\n\n**Reasonableness:** When the coefficient of friction is the same, B gets its share of the mass of the push: $\\tfrac{20}{50} \\cdot 120\\,\\text{N} = 48\\,\\text{N}$. The force is smaller than the push $120\\,\\text{N}$, as it should be. A pushes B with a force of $48\\,\\text{N}$, and B pushes A backwards with a force of the same magnitude."
+      "solution": "**Given:** $m_\\text{A} = 30\\,\\text{kg}$, $m_\\text{B} = 20\\,\\text{kg}$, push $F = 120\\,\\text{N}$, coefficient of kinetic friction $\\mu = 0.15$ for both, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the force $P$ with which A pushes B\n\n**Principle:** The boxes move together, so they have the same acceleration. The acceleration comes from the whole system, in which the forces between A and B are internal and cancel each other (third law). Then B alone is chosen as the object, and the force of A becomes external (chapter *Equation of motion for connected bodies*).\n\n**Free-body diagram:** Box B as a rectangle, positive direction to the right. The weight $\\overline{G}$ from the centre downwards, the normal force $\\overline{N}$ from the bottom surface upwards, the push of A $\\overline{P}$ from the left side to the right and kinetic friction $\\overline{F}_\\mu$ from the rear corner of the bottom surface to the left.\n```voimakuvio\npinta 0\nG 196,2\nN 196,2\nP 48 0 työntö @vasen\nF_mu 29,43 vasen\na oikea\n```\n\n**Formula:** System: $F - \\mu(m_\\text{A} + m_\\text{B})g = (m_\\text{A} + m_\\text{B})a$. B: $P - \\mu m_\\text{B} g = m_\\text{B} a$, so $P = m_\\text{B}(a + \\mu g) = \\dfrac{m_\\text{B}}{m_\\text{A} + m_\\text{B}}\\,F$\n\n**Conversions:** None needed, the quantities are in base units.\n\n**Substitution:** $a = \\dfrac{120\\,\\text{N} - 0.15 \\cdot 50\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2}{50\\,\\text{kg}} = \\dfrac{46.425\\,\\text{N}}{50\\,\\text{kg}} = 0.9285\\,\\text{m/s}^2$ and $P = 20\\,\\text{kg} \\cdot (0.9285\\,\\text{m/s}^2 + 1.4715\\,\\text{m/s}^2) = 48.0\\,\\text{N}$\n\n**Answer:** $P \\approx 48\\,\\text{N}$, two significant figures like the coefficient of friction $0.15$.\n\n**Reasonableness:** When the coefficient of friction is the same, B gets the same fraction of the push as its fraction of the total mass: $\\tfrac{20}{50} \\cdot 120\\,\\text{N} = 48\\,\\text{N}$. The force is smaller than the push $120\\,\\text{N}$, as it should be. A pushes B with a force of $48\\,\\text{N}$, and B pushes A backwards with a force of the same magnitude."
     },
     {
       "id": "tarkistus-3",

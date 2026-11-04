@@ -84,7 +84,7 @@
 ### Yleisiä virheitä
 - In part a the refractive indices are swapped, $\sin\alpha_\text{r} = \tfrac{n_1}{n_2} > 1$, or the angle relative to the axis is given as the angle of incidence.
 - In part b the speed of light in a vacuum is used, which gives $t \approx 46.7\,\mu\text{s}$.
-- In part c the attenuation is divided by ten and multiplied into the power, or the attenuation of the splices is forgotten, which gives $P \approx 0.98\,\text{mW}$.
+- In part c the attenuation in decibels is divided by ten and the power is multiplied by that number, or the attenuation of the splices is forgotten, which gives $P \approx 0.98\,\text{mW}$.
 
 ## fy9-magnetismi-valo-s3
 

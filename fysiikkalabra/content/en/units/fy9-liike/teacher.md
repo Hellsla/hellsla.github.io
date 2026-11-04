@@ -6,7 +6,7 @@
 - **25–35 min, Theory summary.** Go through the concept map on the board: draw the $(t,x)$ and $(t,v)$ graphs of one motion one above the other and show the slope downwards and the area upwards. Return to Think about it.
 - **35–55 min, Apply.** Four multiple-choice questions in pairs (about $6\,\text{min}$), then four calculations alone. If time runs short, *A moose on the road* and *The dog and the jogger* (about $5\,\text{min}$ each) are left as homework. Fast students continue without hints, slower ones use the hints one at a time.
 - **55–63 min, Check your understanding and exit ticket.** Alone. The students assess the explanation task themselves with the criteria.
-- **63–75 min, Tasks.** Twelve minutes is enough for the beginning of one long task in exam conditions, without the model answer: recommended *The acceleration lane* a–b (a calculation task) or *A local train arrives at the station* part a (a graph on squared paper). The rest of the task and the other tasks are homework, two or three at a time before the next lesson.
+- **63–75 min, Exercises.** Twelve minutes is enough for the beginning of one long task in exam conditions, without the model answer: recommended *The acceleration lane* a–b (a calculation task) or *A local train arrives at the station* part a (a graph on squared paper). The rest of the task and the other tasks are homework, two or three at a time before the next lesson.
 
 ## Using the starting-level test
 The Predict questions are a diagnostic test, not a grade. Each question corresponds to one chapter:

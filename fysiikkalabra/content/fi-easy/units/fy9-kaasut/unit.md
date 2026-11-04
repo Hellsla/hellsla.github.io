@@ -327,7 +327,7 @@ Osa lämmöstä on aina annettava kylmempään paikkaan. Siksi lämpövoimakonee
 
 - **Celsiusasteet suhteessa.** Kaasu lämpenee $20\,{}^\circ\text{C}$:sta $40\,{}^\circ\text{C}$:seen. Sen paine kasvaa vain noin $7\,\%$. Paine ei kaksinkertaistu: $313\,\text{K} : 293\,\text{K} \approx 1{,}07$.
 - **Ylipaine kaasulakiin.** Mittarin lukema ei ole kaasun paine. Lisää ilmanpaine ennen laskua. Vähennä se vasta lopuksi, jos kysytään mittarin lukemaa.
-- **Yksiköt sekaisin.** Tilanyhtälössä paine on pascaleina ja tilavuus kuutiometreinä. Kilopascalit ja litrat sopivat yhteen, koska $1\,\text{kPa} \cdot 1\,\textsf{l} = 1\,\text{J}$. Kilopascalit ja kuutiometrit antavat tuhat kertaa liian suuren tuloksen.
+- **Yksiköt sekaisin.** Tilanyhtälössä paine on pascaleina ja tilavuus kuutiometreinä. Kilopascalit ja litrat sopivat yhteen, koska $1\,\text{kPa} \cdot 1\,\textsf{l} = 1\,\text{J}$. Kilopascalit ja kuutiometrit antavat tuloksen, joka on tuhat kertaa väärä.
 - **Paine ja voima sekaisin.** Sama voima pienelle alalle antaa suuren paineen. Paineesta saadaan voima vain niin, että paine kerrotaan alalla.
 - **Imu vetää.** Imukuppi tai pilli ei vedä mitään. Ulkoilman paine työntää, kun paine sisällä on pienempi.
 - **Lämpövoimakone voisi muuttaa kaiken lämmön työksi.** Kitkan poistaminen ei auta. Lämpöä $Q_2$ ei voi välttää.

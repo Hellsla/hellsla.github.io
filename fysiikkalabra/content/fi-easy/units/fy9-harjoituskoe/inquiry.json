@@ -91,7 +91,7 @@
       "choices": [
         {
           "text": "Nopeus on nolla, joten myös kiihtyvyys ja kokonaisvoima ovat nolla.",
-          "feedback": "Jos kiihtyvyys olisi nolla, pallo jäisi lakipisteeseen ilmaan. Palloon vaikuttaa koko ajan paino. Siksi kiihtyvyys on $g$ alaspäin myös silloin, kun nopeus on nolla. Kertaa luvussa [*Newtonin toinen laki*](fy4-4.html)."
+          "feedback": "Jos kiihtyvyys olisi nolla, pallo jäisi lakipisteeseen paikalleen. Palloon vaikuttaa koko ajan paino. Siksi kiihtyvyys on $g$ alaspäin myös silloin, kun nopeus on nolla. Kertaa luvussa [*Newtonin toinen laki*](fy4-4.html)."
         },
         {
           "text": "Nopeus on nolla, mutta kiihtyvyys on $g$ alaspäin, koska paino vaikuttaa.",
@@ -103,7 +103,7 @@
           "feedback": "Heittovoima vaikuttaa vain heiton aikana, kun pallo on kädessä. Lennon aikana palloon vaikuttaa vain paino. Siksi pallo ei ole tasapainossa. Kertaa luvussa [*Newtonin toinen laki*](fy4-4.html)."
         },
         {
-          "text": "Lakipisteessä kiihtyvyyden suunta vaihtuu ylöspäin osoittavasta alaspäin osoittavaksi.",
+          "text": "Lakipisteessä kiihtyvyyden suunta vaihtuu ylöspäin osoittavasta alaspäin.",
           "feedback": "Nopeuden suunta vaihtuu, mutta kiihtyvyyden suunta ei vaihdu. Paino osoittaa koko ajan alaspäin. Siksi kiihtyvyys on $g$ alaspäin koko lennon ajan. Kertaa luvussa [*Newtonin toinen laki*](fy4-4.html)."
         }
       ],
@@ -206,7 +206,7 @@
           "feedback": "Rinnankytkennän kokonaisresistanssi on pienempi kuin kummankaan lampun resistanssi. Siksi pariston virta kasvaa. Lampun jännite ja virta pysyvät lähes samoina. Kertaa luvussa [*Vastusten sarja- ja rinnankytkennät*](fy6-4.html)."
         },
         {
-          "text": "Epätosi: lampun jännite pysyy lähes samana, joten myös sen virta pysyy lähes samana.",
+          "text": "Epätosi: lampun jännite pysyy lähes samana, joten sen virtakin pysyy.",
           "correct": true,
           "feedback": "Oikein. Rinnan kytketyillä lampuilla on sama jännite. Se on pariston napajännite, joka pienenee vain vähän sisäisen resistanssin takia. Siksi ensimmäinen lamppu himmenee vain vähän. Kertaa luvussa [*Lähdejännite ja sisäinen resistanssi*](fy6-8.html)."
         },

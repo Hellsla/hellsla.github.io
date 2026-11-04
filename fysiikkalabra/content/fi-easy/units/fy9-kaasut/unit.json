@@ -4,7 +4,7 @@
   "chapter": 2,
   "order": 3,
   "title": "Paine, kaasut ja lämpövoimakone",
-  "description": "Kerrataan FY3-moduulin aiheita: paine ja hydrostaattinen paine, Boylen laki ja kaasujen tilanmuutokset, ideaalikaasun tilanyhtälö, absoluuttisen nollapisteen määrittäminen sekä kaasun työ, lämpövoimakone ja voimalaitoksen hyötysuhde. Niistä ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
+  "description": "Kerrataan FY3-moduulin aiheita. Aiheet ovat paine ja hydrostaattinen paine, Boylen laki ja kaasujen tilanmuutokset, ideaalikaasun tilanyhtälö, absoluuttisen nollapisteen määrittäminen sekä kaasun työ, lämpövoimakone ja voimalaitoksen hyötysuhde. Lopuksi ratkaistaan ylioppilaskokeen tyylisiä tehtäviä.",
   "kind": "review",
   "minutes": 75,
   "subjects": [
@@ -22,7 +22,7 @@
     },
     {
       "term": "kelvin",
-      "explain": "Lämpötilan yksikkö, joka alkaa absoluuttisesta nollapisteestä. Kelvinlämpötila on $T = \\theta + 273{,}15\\,\\text{K}$."
+      "explain": "Lämpötilan yksikkö. Kelvinasteikko alkaa absoluuttisesta nollapisteestä. Kelvinlämpötila on $T = \\theta + 273{,}15\\,\\text{K}$."
     },
     {
       "term": "absoluuttinen nollapiste",

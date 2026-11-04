@@ -27,4 +27,4 @@
 ## Notes
 - The data of the lesson are invented examples with small variation added; the source note of the problems says so too.
 - The graph of the Investigate stage is familiar from an exercise of the chapter *Thermodynamic system, state variables and temperature*. In the review the emphasis is on interpreting the line and on the validity of the extrapolation.
-- The ICT guides *Graph of measurement points*, *Fitting a straight line to measurement points*, *Interpreting the slope and the constant term* and *Uncertainty of the slope* are a good support if the students draw the graphs with a program.
+- The ICT guides *Graph of measurement points*, *Fitting a straight line to measurement points*, *Interpreting the slope and the constant term* and *Uncertainty of the slope* (in Finnish) are a good support if the students draw the graphs with a program.

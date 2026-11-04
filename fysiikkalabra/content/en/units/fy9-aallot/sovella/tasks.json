@@ -101,7 +101,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "When the string and the keyboard note sound at the same time, the guitarist hears $6$ beats in $4.0$ seconds. He tightens the string slightly, and the beats become slower. What was the frequency of the string before it was tightened?",
+          "text": "When the string and the keyboard note sound at the same time, the guitarist hears $6$ beats in $4.0$ seconds. They tighten the string slightly, and the beats become slower. What was the frequency of the string before it was tightened?",
           "answer": {
             "value": 108.5,
             "unit": "Hz",
@@ -139,7 +139,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "The lowest one left is $f_2 = 2f_1 = 220\\,\\text{Hz}$: the string vibrates as two antinodes, and twice the frequency is an octave up."
+              "detail": "The lowest one left is $f_2 = 2f_1 = 220\\,\\text{Hz}$: the string vibrates in two segments, with an antinode in each half, and twice the frequency is an octave up."
             }
           ]
         }
@@ -219,7 +219,7 @@
             {
               "key": "assumptions",
               "points": 1,
-              "detail": "During the echo the bat moves $6.0\\,\\text{m/s} \\cdot 0.0120\\,\\text{s} \\approx 7\\,\\text{cm}$, so the distance changes by only a few per cent; the effect is small but shows in the third figure."
+              "detail": "During the echo the bat moves $6.0\\,\\text{m/s} \\cdot 0.0120\\,\\text{s} \\approx 7\\,\\text{cm}$, so the distance changes by only a few per cent; the effect is small but shows in the third significant figure."
             }
           ]
         },

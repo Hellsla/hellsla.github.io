@@ -14,7 +14,7 @@
   "key_concepts": [
     {
       "term": "kuvaaja",
-      "explain": "Kuva, joka näyttää, miten yksi suure riippuu toisesta. Aineistotehtävässä mittaustulokset piirretään kuvaajaksi ja niihin sovitetaan suora."
+      "explain": "Kuva, joka näyttää, miten yksi suure riippuu toisesta. Aineistotehtävässä mittaustulokset piirretään kuvaajaksi ja niihin sovitetaan malli, usein suora."
     },
     {
       "term": "kulmakerroin",

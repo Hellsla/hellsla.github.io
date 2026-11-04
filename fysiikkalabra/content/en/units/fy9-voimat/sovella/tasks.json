@@ -161,7 +161,7 @@
             {
               "key": "fbd_directions",
               "points": 1,
-              "detail": "Frictions backwards, rope 2 pulls A backwards and B forwards."
+              "detail": "Friction forces backwards, rope 2 pulls A backwards and B forwards."
             },
             {
               "key": "fbd_representation",
@@ -535,7 +535,7 @@
               "points": 1
             },
             {
-              "text": "The static friction pushing forwards acts only on the driving front wheels, whose normal force is only part of the weight, so $\\mu_0 N_\\text{etu} < \\mu_0 mg$.",
+              "text": "The static friction pushing forwards acts only on the driving front wheels, whose normal force is only part of the weight, so $\\mu_0 N_\\text{etu} < \\mu_0 mg$ (etu = front).",
               "tag": "transfer",
               "points": 1
             }

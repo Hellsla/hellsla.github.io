@@ -341,7 +341,7 @@ v &= \sqrt{\frac{\gamma M}{r}}
 
 Kaavoissa $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ on gravitaatiovakio, $m_1$ ja $m_2$ ovat kappaleiden massat ($\text{kg}$), $M$ on keskuskappaleen massa ($\text{kg}$) ja $r$ on keskipisteiden välinen etäisyys ($\text{m}$). Keskuskappale on se kappale, jota satelliitti kiertää.
 
-Gravitaatiolaki pätee pistemäisille kappaleille ja pallosymmetrisille kappaleille. Pallosymmetrinen kappale on pallo, joka on samanlainen joka suuntaan.
+Gravitaatiolaki pätee pistemäisille kappaleille ja pallosymmetrisille kappaleille. Pallosymmetrisessä kappaleessa massa on jakautunut samalla tavalla joka suuntaan keskipisteestä, kuten Maassa.
 
 Satelliitin ratanopeus saadaan ehdosta $\gamma\tfrac{Mm}{r^2} = m\tfrac{v^2}{r}$. Se pätee ympyräradalle, kun keskuskappaleen massa on paljon suurempi kuin satelliitin massa. Maan satelliitille $r = R + h$, missä $R = 6371\,\text{km}$. Kiertoaika on $T = \tfrac{2\pi r}{v}$.
 

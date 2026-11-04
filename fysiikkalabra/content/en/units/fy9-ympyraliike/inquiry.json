@@ -26,7 +26,7 @@
       "id": "lt-1",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 1: the lever arm",
+      "title": "Starting-level check 1: the lever arm",
       "prompt": "A wheel nut is being undone with a spanner. The hand pulls the handle $0.30\\,\\text{m}$ from the centre of the nut, but the force is at a slant to the handle. Besides the size of the force, what is needed to calculate the moment of the force?",
       "choices": [
         {
@@ -48,7 +48,7 @@
       "id": "lt-2",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 2: two supports",
+      "title": "Starting-level check 2: two supports",
       "prompt": "A uniform plank rests on two trestles. Trestle 1 is $0.5\\,\\text{m}$ and trestle 2 is $1.5\\,\\text{m}$ from the middle of the plank. Which trestle carries a larger share of the weight of the plank?",
       "choices": [
         {
@@ -70,7 +70,7 @@
       "id": "lt-3",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 3: two points on the same record",
+      "title": "Starting-level check 3: two points on the same record",
       "prompt": "The record on a record player turns steadily. There are two stickers on the record: A is $5\\,\\text{cm}$ and B $15\\,\\text{cm}$ from the centre. How do the periods and the speeds of the stickers compare?",
       "choices": [
         {
@@ -92,7 +92,7 @@
       "id": "lt-4",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 4: a car on a bend",
+      "title": "Starting-level check 4: a car on a bend",
       "prompt": "A car drives round a bend of a level road at a constant speed. Air resistance and rolling resistance are not taken into account. What horizontal force acts on the car?",
       "choices": [
         {
@@ -114,7 +114,7 @@
       "id": "lt-5",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 5: gravitation further away",
+      "title": "Starting-level check 5: gravitation further away",
       "prompt": "The weight of a space probe on the surface of the Earth is $800\\,\\text{N}$. The probe rises to a height of $6371\\,\\text{km}$, where its distance from the centre of the Earth is two Earth radii. How large is the gravitational force of the Earth on the probe then?",
       "choices": [
         {
@@ -136,7 +136,7 @@
       "id": "lt-6",
       "stage": "ennusta",
       "type": "choice",
-      "title": "Starting level 6: weightlessness",
+      "title": "Starting-level check 6: weightlessness",
       "prompt": "A space station orbits the Earth at a height of about $400\\,\\text{km}$, and an astronaut floats inside it. Which explanation is physically correct?",
       "choices": [
         {

@@ -173,7 +173,7 @@
 
 ### a)
 **Kysytty:** miten termospullon rakenne hidastaa jäähtymistä, kun lämpö siirtyy eri tavoilla
-**Periaate:** Lämpö siirtyy johtumalla, konvektiolla ja lämpösäteilynä. Kun on lämpötilaero, energiaa siirtyy nettona lämpimämmästä kylmempään. Pullon pitää siksi hidastaa jokaista siirtymistapaa.
+**Periaate:** Lämpö siirtyy johtumalla, konvektiolla ja lämpösäteilynä. Kun on lämpötilaero, energiaa siirtyy nettona lämpimämmästä kylmempään. Nettona tarkoittaa, että molempiin suuntiin siirtyvä energia lasketaan yhteen. Pullon pitää siksi hidastaa jokaista siirtymistapaa.
 **Mallivastaus:** *Johtuminen.* Energia johtuu, kun hiukkaset törmäävät ja antavat liike-energiaa naapureilleen. Seinien välissä on tyhjiö. Siinä ei ole hiukkasia, joten energia ei johdu sisäseinästä ulkoseinään. *Konvektio.* Konvektiossa lämmin neste tai kaasu virtaa ja vie energiaa mukanaan. Tyhjiössä ei ole ilmaa, joka voisi virrata. Korkki estää lämpimän ilman ja höyryn virtauksen pullon suusta. *Lämpösäteily.* Lämpösäteily kulkee myös tyhjiön läpi. Hopeoidut pinnat heijastavat suurimman osan teen säteilystä takaisin. Ne myös säteilevät itse vähän. *Haihtuminen.* Korkki estää vesihöyryä pääsemästä ulos. Haihtuminen veisi teestä energiaa. Energiaa siirtyy silti nettona teestä ympäristöön, mutta hitaasti. Se siirtyy lähinnä pullon suun ja korkin kautta. Se siirtyy myös kohdasta, jossa seinät yhtyvät, koska lasi johtaa siellä lämpöä.
 
 ### b)

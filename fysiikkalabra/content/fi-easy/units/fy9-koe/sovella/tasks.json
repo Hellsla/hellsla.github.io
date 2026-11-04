@@ -6,7 +6,7 @@
       "title": "Pyörällä vaaralle",
       "source": "example",
       "source_note": "Luvut on valittu todenmukaisiksi, mutta ne eivät ole oikea mittaus.",
-      "text": "Pyöräilijä ajaa tietä ylös vaaran laelle. Vaara on korkea mäki. Pyöräilijän ja pyörän yhteinen massa on $82{,}0\\,\\text{kg}$. Tien pituus on $1{,}20\\,\\text{km}$. Tien aikana korkeus kasvaa $45{,}0\\,\\text{m}$. Pyöräilijän urheilukellon mukaan nousu kestää $4\\,\\text{min}\\ 30\\,\\text{s}$. Nopeus pysyy koko nousun ajan suunnilleen samana. Ilmanvastus ja renkaiden vierimisvastus vastustavat liikettä. Niiden yhteinen voima on keskimäärin $18\\,\\text{N}$. Lihasten hyötysuhde on noin $22\\,\\%$. Niin suuri osa ravinnon energiasta muuttuu työksi, joka pyörittää polkimia.",
+      "text": "Pyöräilijä ajaa tietä ylös vaaran laelle. Vaara on korkea mäki. Pyöräilijän ja pyörän yhteinen massa on $82{,}0\\,\\text{kg}$. Tien pituus on $1{,}20\\,\\text{km}$. Tien matkalla korkeus nousee $45{,}0\\,\\text{m}$. Pyöräilijän urheilukellon mukaan nousu kestää $4\\,\\text{min}\\ 30\\,\\text{s}$. Nopeus pysyy koko nousun ajan suunnilleen samana. Ilmanvastus ja renkaiden vierimisvastus vastustavat liikettä. Niiden yhteinen voima on keskimäärin $18\\,\\text{N}$. Lihasten hyötysuhde on noin $22\\,\\%$. Niin suuri osa ravinnon energiasta muuttuu työksi, joka pyörittää polkimia.",
       "parts": [
         {
           "id": "a",
@@ -310,7 +310,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Teestä siirtyy silti energiaa ympäristöön, mutta hitaasti. Energiaa siirtyy esimerkiksi pullon suun kautta ja kohdasta, jossa seinät yhtyvät."
+              "detail": "Teestä siirtyy silti nettona energiaa ympäristöön, mutta hitaasti. Energiaa siirtyy esimerkiksi pullon suun kautta ja kohdasta, jossa seinät yhtyvät."
             }
           ]
         },
@@ -366,7 +366,7 @@
           "text": "Pitääkö termospullo myös jääveden kylmänä? Perustele.",
           "criteria": [
             {
-              "text": "Samat rakenteet hidastavat energian siirtymistä kumpaankin suuntaan. Nyt energiaa siirtyy lämpimästä ympäristöstä kylmään veteen.",
+              "text": "Samat rakenteet hidastavat energian siirtymistä kumpaankin suuntaan. Nyt energiaa siirtyy nettona lämpimästä ympäristöstä kylmään veteen.",
               "tag": "concept",
               "points": 1
             },
@@ -409,7 +409,7 @@
           "text": "Suunnittele koe, jolla ryhmä voi selvittää asian.",
           "criteria": [
             {
-              "text": "Muutettava suure on veden massa. Esimerkiksi viisi eri vesimäärää keittimen pienimmästä merkistä suurimpaan.",
+              "text": "Muutettava suure on veden massa. Esimerkiksi mitataan viisi eri vesimäärää keittimen pienimmästä merkistä suurimpaan.",
               "tag": "experiment",
               "points": 1
             },

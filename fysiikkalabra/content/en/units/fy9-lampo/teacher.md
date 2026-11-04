@@ -2,9 +2,9 @@
 
 - **0–5 min, Think about it.** Snow into drinking water over a campfire. In pairs, students estimate in words which takes more energy: melting a kilogram of snow or heating the same water to boiling. The answer is not given yet: it is in the Formula part of the theory summary ($Q = sm = 334\,\text{kJ}$ and $Q = cm\Delta T = 419\,\text{kJ}$, warming the snow to zero degrees only about $21\,\text{kJ}$).
 - **5–15 min, Predict (starting-point test).** Six questions alone, without notes. Students write the numbers of the questions they got wrong in their notebooks.
-- **15–25 min, Investigate.** The heating curve of a block of ice in pairs: each reads the duration and temperatures of one stage from the curve, and the pair calculates the specific heat capacity of ice. Discuss together: why the curve has a horizontal part and why the ice part is steeper than the water part.
+- **15–25 min, Investigate.** The heating curve of a block of ice in pairs: each reads the energy and temperatures of one stage from the curve, and the pair calculates the specific heat capacity of ice. Discuss together: why the curve has a horizontal part and why the ice part is steeper than the water part.
 - **25–35 min, Theory summary.** Go through the concept map and the heating curve. For each branch, ask the students for one everyday example. Return to Think about it.
-- **35–55 min, Apply.** Four multiple-choice questions in pairs (about $6\,\text{min}$), then four calculations alone. Fast students continue without hints, slower students use the hints one at a time.
+- **35–55 min, Apply.** Four multiple-choice questions in pairs (about $6\,\text{min}$), then four calculations alone. Students who finish quickly continue without hints, others use the hints one at a time.
 - **55–65 min, Check your understanding and exit ticket.** Alone. The explanation question is self-assessed with the criteria.
 - **65–75 min, Tasks.** Ten minutes is enough for the beginning of one long problem in exam conditions, without the model answer. Recommendation: *New ice for the ice rink* a (calculation) or *Brakes on a fell road* a–b (combining modules). The rest of the problem and the other five problems are homework, two or three at a time before the next lesson. *Vaporisation of boiling water* ($20$ points) is done at home on graph paper or with a spreadsheet.
 

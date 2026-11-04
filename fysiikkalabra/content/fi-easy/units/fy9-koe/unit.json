@@ -21,11 +21,15 @@
     },
     {
       "term": "kulmakerroin",
-      "explain": "Kertoo, kuinka jyrkästi suora nousee. Se lasketaan sovitteelta kahdesta kaukana olevasta pisteestä: $k = \\frac{\\Delta y}{\\Delta x}$."
+      "explain": "Kertoo, kuinka jyrkästi suora nousee. Se lasketaan sovitteelta eli sovitetulta suoralta kahdesta pisteestä, jotka ovat kaukana toisistaan: $k = \\frac{\\Delta y}{\\Delta x}$."
     },
     {
       "term": "malli",
       "explain": "Yksinkertaistettu kuvaus ilmiöstä. Mallissa on oletuksia, esimerkiksi kitkaa ei ole. Vastauksessa kerrotaan, mitä malli jättää pois."
+    },
+    {
+      "term": "merkitsevä numero",
+      "explain": "Numero, joka kertoo mittauksen tarkkuuden. Lopputuloksessa on yhtä monta merkitsevää numeroa kuin epätarkimmassa lähtöarvossa."
     }
   ]
 }

@@ -173,7 +173,7 @@ In a direct-current circuit the source maintains a **voltage**, and the voltage 
   <foreignObject x="157" y="47" width="66" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$U,\ I,\ R$</div></foreignObject>
   <line x1="24" y1="122" x2="44" y2="122" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="100" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="110" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{virta ja resistanssi}$</div></foreignObject>
+  <foreignObject x="58" y="110" width="226" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{current and resistance}$</div></foreignObject>
   <foreignObject x="266" y="112" width="96" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{quantities}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="156" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$I = Q/t$</div></foreignObject>
@@ -184,7 +184,7 @@ In a direct-current circuit the source maintains a **voltage**, and the voltage 
   <foreignObject x="319" y="258" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{wire}$</div></foreignObject>
   <line x1="24" y1="326" x2="44" y2="326" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="304" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="314" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{kytkennät}$</div></foreignObject>
+  <foreignObject x="58" y="314" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{connections}$</div></foreignObject>
   <foreignObject x="274" y="316" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Kirchhoff}$</div></foreignObject>
   <line x1="54" y1="346" x2="362" y2="346" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="360" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$R = R_1 + R_2$</div></foreignObject>
@@ -195,7 +195,7 @@ In a direct-current circuit the source maintains a **voltage**, and the voltage 
   <foreignObject x="319" y="462" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{loop}$</div></foreignObject>
   <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="518" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{teho ja energia}$</div></foreignObject>
+  <foreignObject x="58" y="518" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{power and energy}$</div></foreignObject>
   <foreignObject x="310" y="520" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Joule}$</div></foreignObject>
   <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="564" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = UI$</div></foreignObject>
@@ -206,7 +206,7 @@ In a direct-current circuit the source maintains a **voltage**, and the voltage 
   <foreignObject x="301" y="666" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{energy}$</div></foreignObject>
   <line x1="24" y1="734" x2="44" y2="734" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="712" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="722" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{lähde}$</div></foreignObject>
+  <foreignObject x="58" y="722" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{source}$</div></foreignObject>
   <foreignObject x="292" y="724" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{battery}$</div></foreignObject>
   <line x1="54" y1="754" x2="362" y2="754" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="769" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$U = E - R_\text{s} I$</div></foreignObject>

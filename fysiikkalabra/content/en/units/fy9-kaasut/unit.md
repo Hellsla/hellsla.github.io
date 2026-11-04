@@ -183,7 +183,7 @@ The gas problems of the exam need two checks before the numbers. **The temperatu
   <foreignObject x="158.5" y="46.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$p = F/A$</div></foreignObject>
   <line x1="24" y1="122" x2="44" y2="122" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="100" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="109.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{neste}$</div></foreignObject>
+  <foreignObject x="58" y="109.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{liquid}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="153.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$p = p_0 + \rho g h$</div></foreignObject>
   <foreignObject x="292" y="156" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{at depth}$</div></foreignObject>
@@ -193,7 +193,7 @@ The gas problems of the exam need two checks before the numbers. **The temperatu
   <foreignObject x="239" y="224" width="123" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{total pressure}$</div></foreignObject>
   <line x1="24" y1="288" x2="44" y2="288" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="266" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="275.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{kaasu}$</div></foreignObject>
+  <foreignObject x="58" y="275.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{gas}$</div></foreignObject>
   <line x1="54" y1="308" x2="362" y2="308" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="319.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$pV = nRT$</div></foreignObject>
   <foreignObject x="257" y="322" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{ideal gas law}$</div></foreignObject>
@@ -203,10 +203,10 @@ The gas problems of the exam need two checks before the numbers. **The temperatu
   <foreignObject x="292" y="390" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kelvins}$</div></foreignObject>
   <line x1="24" y1="454" x2="44" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="441.5" width="172" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{lämpövoimakone}$</div></foreignObject>
+  <foreignObject x="58" y="441.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{heat engine}$</div></foreignObject>
   <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="485.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W_\text{k} = p\,\Delta V$</div></foreignObject>
-  <foreignObject x="274" y="488" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{work by gas}$</div></foreignObject>
+  <foreignObject x="58" y="485.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W_\text{g} = p\,\Delta V$</div></foreignObject>
+  <foreignObject x="239" y="488" width="123" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{work done by gas}$</div></foreignObject>
   <foreignObject x="58" y="519.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Q_1 - Q_2$</div></foreignObject>
   <foreignObject x="248" y="522" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{conservation}$</div></foreignObject>
   <foreignObject x="58" y="553.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = W/Q_1$</div></foreignObject>
@@ -285,16 +285,16 @@ where $\theta$ is the numerical value of the Celsius temperature. In an experime
 A gas expanding at constant pressure does the work
 
 ```latex
-W_\text{k} = p\,\Delta V
+W_\text{g} = p\,\Delta V
 ```
 
 where $\Delta V$ is the change in volume (m³); the work is the area under the ($V$, $p$) graph. By the first law of thermodynamics the internal energy of the gas changes by
 
 ```latex
-\Delta U = Q - W_\text{k}
+\Delta U = Q - W_\text{g}
 ```
 
-where $Q$ is the heat transferred to the gas (J) and $W_\text{k}$ the work done by the gas. In one cycle a heat engine takes the heat $Q_1$ from a hot source, does the work $W$ and gives the heat $Q_2$ to a colder environment. Energy is conserved, so
+where $Q$ is the heat transferred to the gas (J) and $W_\text{g}$ the work done by the gas. In one cycle a heat engine takes the heat $Q_1$ from a hot source, does the work $W$ and gives the heat $Q_2$ to a colder environment. Energy is conserved, so
 
 ```latex
 W = Q_1 - Q_2

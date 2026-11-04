@@ -107,7 +107,7 @@ Fysiikan koe tehdään tietokoneella. Kirjoitat vastauksen tekstinä. Kaavat kir
 - **Osa II**: valitse 4 tehtävää seitsemästä. Jokainen tehtävä on 15 pistettä. Tehtävissä vertaat, arvioit ja käytät fysiikan tietoja.
 - **Osa III**: valitse 2 tehtävää kolmesta. Jokainen tehtävä on 20 pistettä. Tehtävissä on aineisto. Luet dataa, käsittelet ja muutat sitä ja teet siitä päätelmiä.
 
-Kokeesta saa yhteensä enintään 120 pistettä. Ylioppilastutkintolautakunnan määräykset ja kokeen omat ohjeet kertovat, mitkä apuvälineet ja ohjelmat ovat sallittuja. Tarkista ne ennen koetta, koska ne voivat muuttua. Harjoittele kokeen ohjelmilla etukäteen.
+Kokeesta saa yhteensä enintään 120 pistettä. Ylioppilastutkintolautakunnan eli kokeen järjestäjän määräykset ja kokeen omat ohjeet kertovat, mitkä apuvälineet ja ohjelmat ovat sallittuja. Tarkista ne ennen koetta, koska ne voivat muuttua. Harjoittele kokeen ohjelmilla etukäteen.
 
 ### Ajankäyttö ja tehtävien valinta
 Lue ensin kokeen ohjeet. Niissä kerrotaan, mihin tehtäviin vastaat ja kuinka moneen. Katso sitten kaikki tehtävät. Merkitse ne, jotka osaat varmasti. Osissa II ja III valitset tehtävät itse. Valitse tehtävät, joiden ilmiön tunnet ja joiden kaikkiin kohtiin osaat vastata. Jaa aika suunnilleen pisteiden mukaan. Kuusi tuntia on $360\,\text{min}$. Varaa lukemiseen, valintaan ja tarkistukseen yhteensä noin $50\,\text{min}$. Silloin Osalle I jää noin $60\,\text{min}$, jokaiselle Osan II tehtävälle noin $35\,\text{min}$ ja jokaiselle Osan III tehtävälle noin $55\,\text{min}$. Jos et pääse eteenpäin, kirjoita se, minkä osaat. Palaa tehtävään myöhemmin.
@@ -261,9 +261,9 @@ Voit tehdä kuvaajan kuvaajaohjelmalla, esimerkiksi Graphical Analysisilla. Liit
 ## Yleisiä virheitä {Virheet}
 
 - Lopputuloksesta puuttuu yksikkö, tai siinä on liian monta merkitsevää numeroa.
-- Välitulokset pyöristetään. Silloin virhe kasvaa lopputulokseen.
+- Välitulokset pyöristetään. Silloin lopputulokseen tulee suurempi virhe.
 - Kaava kirjoitetaan, mutta ei perustella, miksi se pätee tilanteessa.
-- Yksikkö jää muuttamatta: $\text{km/h}$ jää muuttamatta yksikköön $\text{m/s}$, tai celsiusaste jää muuttamatta kelviniksi.
+- Yksikköä ei muuteta: esimerkiksi $\text{km/h}$ jää muuttamatta yksikköön $\text{m/s}$ tai celsiusaste kelviniksi.
 - Kulmakerroin lasketaan kahdesta vierekkäisestä mittauspisteestä eikä sovitteesta.
 - Selitykseksi kirjoitetaan vain kaava. Syy ja seuraus puuttuvat.
 - Tulosta ei verrata kokemukseen. Silloin selvä laskuvirhe jää huomaamatta.

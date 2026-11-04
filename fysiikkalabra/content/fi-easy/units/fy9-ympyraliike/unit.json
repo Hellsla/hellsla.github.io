@@ -14,7 +14,7 @@
   "key_concepts": [
     {
       "term": "voiman varsi",
-      "explain": "Akselin kohtisuora etäisyys voiman vaikutussuorasta. Vinon voiman varsi on lyhyempi kuin etäisyys vaikutuskohtaan: $r = d\\sin\\alpha$."
+      "explain": "Akselin kohtisuora etäisyys voiman vaikutussuorasta eli suorasta, jonka suuntaan voima vaikuttaa. Vinon voiman varsi on lyhyempi kuin etäisyys vaikutuskohtaan: $r = d\\sin\\alpha$."
     },
     {
       "term": "momentti",

@@ -26,7 +26,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Starting level 1: a horizontal line",
-      "prompt": "From $4\\,\\text{s}$ to $6\\,\\text{s}$ the $(t,x)$ graph of a trolley is a horizontal line at the height $x = 8\\,\\text{m}$. What does the trolley do during this time?",
+      "prompt": "From $4\\,\\text{s}$ to $6\\,\\text{s}$ the $(t,x)$ graph of a cart is a horizontal line at the height $x = 8\\,\\text{m}$. What does the cart do during this time?",
       "choices": [
         {
           "text": "It stands still at $x = 8\\,\\text{m}$.",
@@ -52,7 +52,7 @@
       "choices": [
         {
           "text": "The displacement is $400\\,\\text{m}$, because the runner went round the whole track, and the average velocity is $5.0\\,\\text{m/s}$.",
-          "feedback": "$400\\,\\text{m}$ is the distance travelled. The displacement is the final position minus the initial position, and the runner ends up where she started. Review in the chapter *Position, velocity and uniform motion as graphs*."
+          "feedback": "$400\\,\\text{m}$ is the distance travelled. The displacement is the final position minus the initial position, and the runner ends up at the starting point. Review in the chapter *Position, velocity and uniform motion as graphs*."
         },
         {
           "text": "The displacement is $-400\\,\\text{m}$, because at the end the runner turns back towards the start.",
@@ -230,8 +230,8 @@
       "id": "rata",
       "stage": "sovella",
       "type": "choice",
-      "title": "Choose the graph: a trolley on a track",
-      "prompt": "A trolley is pushed up a sloping track. It slows down, stops for an instant and rolls back down. The acceleration is the same all the time, and up is the positive direction. What does the trolley's $(t,v)$ graph look like?",
+      "title": "Choose the graph: a cart on a track",
+      "prompt": "A cart is pushed up a sloping track. It slows down, stops for an instant and rolls back down. The acceleration is the same all the time, and up is the positive direction. What does the cart's $(t,v)$ graph look like?",
       "choices": [
         {
           "text": "Shaped like the letter V: first a falling, then a rising line.",
@@ -240,11 +240,11 @@
         {
           "text": "A falling straight line that continues below the time axis.",
           "correct": true,
-          "feedback": "Correct. A constant acceleration gives a straight line with a negative slope. The velocity is zero at the moment of turning and negative after it, because the trolley moves down."
+          "feedback": "Correct. A constant acceleration gives a straight line with a negative slope. The velocity is zero at the moment of turning and negative after it, because the cart moves down."
         },
         {
           "text": "A falling straight line that stops at zero and continues horizontally.",
-          "feedback": "The trolley is at rest for only an instant. The acceleration does not change at the moment of turning, so the velocity keeps decreasing and becomes negative."
+          "feedback": "The cart is at rest for only an instant. The acceleration does not change at the moment of turning, so the velocity keeps decreasing and becomes negative."
         },
         {
           "text": "A curve bending upwards, like the position graph of accelerated motion.",
@@ -258,7 +258,7 @@
       "type": "choice",
       "title": "Read the tangent",
       "figure": "fy4-2/ex-tangent",
-      "prompt": "The graph shows the position of a trolley accelerating from rest and the tangent drawn at the point of the curve at $4.0\\,\\text{s}$. What is the trolley's velocity at $4.0\\,\\text{s}$?",
+      "prompt": "The graph shows the position of a cart accelerating from rest and the tangent drawn at the point of the curve at $4.0\\,\\text{s}$. What is the cart's velocity at $4.0\\,\\text{s}$?",
       "choices": [
         {
           "text": "$2.0\\,\\text{m/s}$, because $8.0\\,\\text{m} : 4.0\\,\\text{s} = 2.0\\,\\text{m/s}$",
@@ -363,7 +363,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "The dog and the jogger",
-      "prompt": "A jogger runs along a straight path at a constant velocity of $3.0\\,\\text{m/s}$. When she is $24\\,\\text{m}$ ahead of a dog, the dog, which has been standing still, sets off after her and accelerates uniformly at $1.5\\,\\text{m/s}^2$. After how many seconds does the dog catch up with the jogger?",
+      "prompt": "A jogger runs along a straight path at a constant velocity of $3.0\\,\\text{m/s}$. When the jogger is $24\\,\\text{m}$ ahead of a dog, the dog, which has been standing still, sets off after the jogger and accelerates uniformly at $1.5\\,\\text{m/s}^2$. After how many seconds does the dog catch up with the jogger?",
       "answer": 8.0,
       "unit": "s",
       "tolerance": 0.03,
@@ -379,7 +379,7 @@
         },
         {
           "value": 4.0,
-          "feedback": "You left out the jogger's head start of $24\\,\\text{m}$. Her position is $24\\,\\text{m} + vt$."
+          "feedback": "You left out the jogger's head start of $24\\,\\text{m}$. The jogger's position is $24\\,\\text{m} + vt$."
         },
         {
           "value": 5.12,
@@ -423,18 +423,18 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Concept",
-      "prompt": "Two trolleys move on the same track. Their $(t,x)$ graphs cross at $3.0\\,\\text{s}$. Which statement is correct?",
+      "prompt": "Two carts move on the same track. Their $(t,x)$ graphs cross at $3.0\\,\\text{s}$. Which statement is correct?",
       "choices": [
         {
-          "text": "The trolleys have the same velocity at $3.0\\,\\text{s}$.",
+          "text": "The carts have the same velocity at $3.0\\,\\text{s}$.",
           "feedback": "The velocity is the slope of the $(t,x)$ graph. At the crossing point the lines usually have different steepness, so the velocities are different. What is the same is the positions. Review in the chapter *Comparing the motions of two bodies*."
         },
         {
-          "text": "The trolleys collide, because their tracks cross.",
-          "feedback": "A $(t,x)$ graph is not a picture of the track. The crossing point tells you that the trolleys are at the same position at the same moment, that is, they meet or pass each other. Review in the chapter *Position, velocity and uniform motion as graphs*."
+          "text": "The carts collide, because their tracks cross.",
+          "feedback": "A $(t,x)$ graph is not a picture of the track. The crossing point tells you that the carts are at the same position at the same moment, that is, they meet or pass each other. Review in the chapter *Position, velocity and uniform motion as graphs*."
         },
         {
-          "text": "The trolleys are at the same place at $3.0\\,\\text{s}$.",
+          "text": "The carts are at the same place at $3.0\\,\\text{s}$.",
           "correct": true,
           "feedback": "Correct. In the graph the upper line means a greater position coordinate. At the moment of meeting the bodies' graphs cross: the positions are equal."
         }

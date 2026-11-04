@@ -3,7 +3,7 @@
 ### a)
 **Annettu:** kielen värähtelevän osan pituus $L = 648\,\text{mm}$, perustaajuus $f_1 = 110{,}0\,\text{Hz}$, äänen nopeus ilmassa $v_\text{ilma} = 343\,\text{m/s}$
 **Kysytty:** aallon nopeus $v$ kielessä sekä perustaajuuden aallonpituus kielessä $\lambda_1$ ja ilmassa $\lambda_\text{ilma}$
-**Periaate:** Kieli on kiinni satulassa ja tallassa, joten kielen päissä on solmut. Perustaajuudella kielessä on yksi kupu. Kielen pituus on puolet aallonpituudesta (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*). Kieli saa ilman värähtelemään samalla taajuudella. Ääni etenee ilmassa kuitenkin eri nopeudella kuin aalto kielessä. Siksi aallonpituus on eri (luku *Aaltojen synty ja eteneminen*).
+**Periaate:** Kieli on kiinni satulassa ja tallassa, joten kielen päissä on solmut. Perustaajuudella kielessä on yksi kupu. Kielen pituus on puolet aallonpituudesta (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*). Kieli saa ilman värähtelemään samalla taajuudella. Ääni etenee ilmassa kuitenkin eri nopeudella kuin aalto kielessä. Siksi aallonpituuskin on erilainen (luku *Aaltojen synty ja eteneminen*).
 **Kaava:** $L = \dfrac{\lambda_1}{2}$, joten $\lambda_1 = 2L$ ja $v = f_1\lambda_1 = 2Lf_1$; ilmassa $\lambda_\text{ilma} = \dfrac{v_\text{ilma}}{f_1}$
 **Muunnokset:** $648\,\text{mm} = 648 \cdot 0{,}001\,\text{m} = 0{,}648\,\text{m}$
 **Sijoitus:** $\lambda_1 = 2 \cdot 0{,}648\,\text{m} = 1{,}296\,\text{m}$, $v = 110{,}0\,\tfrac{1}{\text{s}} \cdot 1{,}296\,\text{m} = 142{,}56\,\text{m/s}$ ja $\lambda_\text{ilma} = \dfrac{343\,\text{m/s}}{110{,}0\,\text{Hz}} = 3{,}118\,\text{m}$
@@ -27,7 +27,7 @@
 **Kaava:** $f_\text{h} = \dfrac{N}{t}$ ja $f_\text{h} = |f_\text{kieli} - f_\text{vert}|$, joten $f_\text{kieli} = f_\text{vert} - f_\text{h}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $f_\text{h} = \dfrac{6}{4{,}0\,\text{s}} = 1{,}5\,\text{Hz}$, joten $f_\text{kieli} = 110{,}0\,\text{Hz} - 1{,}5\,\text{Hz} = 108{,}5\,\text{Hz}$
-**Vastaus:** $f_\text{kieli} = 108{,}5\,\text{Hz}$. Tarkkuus on desimaalin kymmenesosa. Vertailuääni tunnetaan $0{,}1\,\text{Hz}$:n tarkkuudella, ja huojunta $1{,}5\,\text{Hz}$ tunnetaan kahden numeron tarkkuudella.
+**Vastaus:** $f_\text{kieli} = 108{,}5\,\text{Hz}$. Tarkkuus on desimaalin kymmenesosa, koska vertailuääni tunnetaan $0{,}1\,\text{Hz}$:n tarkkuudella, ja huojunta $1{,}5\,\text{Hz}$ tunnetaan kahden numeron tarkkuudella.
 **Järkevyys:** Jos kielen taajuus olisi ollut $111{,}5\,\text{Hz}$, kiristäminen olisi kasvattanut eroa. Silloin huojunta olisi nopeutunut. Taajuusero $1{,}5\,\text{Hz}$ on alle noin $10\,\text{Hz}$, joten huojunta todella kuuluu.
 
 ### d)

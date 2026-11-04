@@ -6,7 +6,7 @@
       "title": "Osa II: Kiuas ja löyly",
       "source": "example",
       "source_note": "Luvut on valittu niin, että ne ovat todenmukaisia, mutta ne eivät ole mittaustuloksia.",
-      "text": "Kesämökin saunassa on sähkökiuas. Kiukaan teho on $6{,}0\\,\\text{kW}$. Kiukaassa on $25\\,\\text{kg}$ kiuaskiviä. Kivien ominaislämpökapasiteetti on $0{,}80\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$. Kiuas on päällä $50\\,\\text{min}$ ennen saunomista. Sinä aikana kivien lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $280\\,{}^\\circ\\text{C}$:een.\n\nSaunomisen aikana kiukaalle heitetään löylyä eli vettä kymmenen kauhallista. Vettä on yhteensä $1{,}2\\,\\text{l}$, ja sen lämpötila on $18\\,{}^\\circ\\text{C}$. Vesi höyrystyy kokonaan kuumilla kivillä. Oletetaan, että höyryn lämpötila on syntyessään $100\\,{}^\\circ\\text{C}$. Oletetaan myös, että kaikki höyrystymiseen tarvittava energia tulee kivistä. Veden ominaislämpökapasiteetti on $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$ ja ominaishöyrystymislämpö $2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$.",
+      "text": "Kesämökin saunassa on sähkökiuas. Kiukaan teho on $6{,}0\\,\\text{kW}$. Kiukaassa on $25\\,\\text{kg}$ kiuaskiviä. Kivien ominaislämpökapasiteetti on $0{,}80\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$. Kiuas on päällä $50\\,\\text{min}$ ennen saunomista. Sinä aikana kivien lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $280\\,{}^\\circ\\text{C}$:een.\n\nSaunomisen aikana kiukaalle heitetään vettä kymmenen kauhallista, ja vedestä syntyy löyly. Vettä on yhteensä $1{,}2\\,\\text{l}$, ja sen lämpötila on $18\\,{}^\\circ\\text{C}$. Vesi höyrystyy kokonaan kuumilla kivillä. Oletetaan, että höyryn lämpötila on syntyessään $100\\,{}^\\circ\\text{C}$. Oletetaan myös, että kaikki höyrystymiseen tarvittava energia tulee kivistä. Veden ominaislämpökapasiteetti on $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$ ja ominaishöyrystymislämpö $2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$.",
       "parts": [
         {
           "id": "a",
@@ -502,7 +502,7 @@
           "id": "d",
           "kind": "calc",
           "points": 3,
-          "text": "Oletetaan, että jatkojohdon johtimien poikkipinta-ala olisi $2{,}5\\,\\text{mm}^2$. Kuinka suuri teho muuttuisi silloin lämmöksi?",
+          "text": "Oletetaan, että jatkojohdon johtimien poikkipinta-ala on $2{,}5\\,\\text{mm}^2$. Kuinka suuri teho muuttuisi silloin lämmöksi?",
           "answer": {
             "value": 70.4,
             "unit": "W",
@@ -775,7 +775,7 @@
             {
               "key": "uncertainty",
               "points": 2,
-              "detail": "Ikä lasketaan ääriarvoilla eli suurimmalla ja pienimmällä arvolla $0{,}194$ ja $0{,}202\\,\\tfrac{\\text{Bq}}{\\text{g}}$: noin $930$ ja $1260$ vuotta."
+              "detail": "Ikä lasketaan ääriarvoilla eli pienimmällä ja suurimmalla arvolla $0{,}194$ ja $0{,}202\\,\\tfrac{\\text{Bq}}{\\text{g}}$: noin $930$ ja $1260$ vuotta."
             },
             {
               "key": "calculation",
@@ -1298,7 +1298,7 @@
       "title": "Osa III: Jousi ja sen oma massa",
       "source": "example",
       "source_note": "Aineistossa on vaihtelua samalla tavalla kuin mittauksissa, mutta se ei ole mittaus.",
-      "text": "Opiskelijat ripustivat kierrejousen telineeseen. He kiinnittivät jousen alapäähän punnuksia. Jokaisella punnuksella jousi pantiin värähtelemään ylös ja alas pienellä amplitudilla eli pienellä liikkeellä. Opiskelijat mittasivat, kuinka kauan kymmenen värähdystä kestää. Tämä aika on $t_{10}$. Jousen oma massa on $61\\,\\text{g}$.\n\n| Punnuksen massa $m\\ (\\text{kg})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $0{,}100$ | $4{,}37$ |\n| $0{,}200$ | $5{,}86$ |\n| $0{,}300$ | $7{,}13$ |\n| $0{,}400$ | $8{,}19$ |\n| $0{,}500$ | $9{,}03$ |\n| $0{,}600$ | $9{,}90$ |\n\nLisäksi he mittasivat venymän. Kun jouseen ripustetaan $0{,}300\\,\\text{kg}$:n punnus, levossa oleva jousi on $11{,}8\\,\\text{cm}$ pidempi kuin ilman punnusta.",
+      "text": "Opiskelijat ripustivat kierrejousen telineeseen. He kiinnittivät jousen alapäähän punnuksia. Jokaisella punnuksella jousi pantiin värähtelemään ylös ja alas pienellä amplitudilla eli niin, että punnus poikkeaa vain vähän tasapainoasemasta. Opiskelijat mittasivat, kuinka kauan kymmenen värähdystä kestää. Tämä aika on $t_{10}$. Jousen oma massa on $61\\,\\text{g}$.\n\n| Punnuksen massa $m\\ (\\text{kg})$ | $t_{10}\\ (\\text{s})$ |\n|---|---|\n| $0{,}100$ | $4{,}37$ |\n| $0{,}200$ | $5{,}86$ |\n| $0{,}300$ | $7{,}13$ |\n| $0{,}400$ | $8{,}19$ |\n| $0{,}500$ | $9{,}03$ |\n| $0{,}600$ | $9{,}90$ |\n\nLisäksi he mittasivat venymän. Kun jouseen ripustetaan $0{,}300\\,\\text{kg}$:n punnus, levossa oleva jousi on $11{,}8\\,\\text{cm}$ pidempi kuin ilman punnusta.",
       "parts": [
         {
           "id": "a",

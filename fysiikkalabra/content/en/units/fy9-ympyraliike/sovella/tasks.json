@@ -36,7 +36,7 @@
             {
               "key": "fbd_forces",
               "points": 1,
-              "detail": "The trailer and the boat as the body: the weights $\\overline{G}_\\text{t}$ and $\\overline{G}_\\text{v}$ down from the centres of gravity, the normal force $\\overline{N}$ at the axle and the force $\\overline{F}$ of the coupling up."
+              "detail": "The trailer and the boat as the body: the weights $\\overline{G}_\\text{t}$ and $\\overline{G}_\\text{b}$ down from the centres of gravity, the normal force $\\overline{N}$ at the axle and the force $\\overline{F}$ of the coupling up."
             },
             {
               "text": "Justifies the pivot point: about the axle the lever arm of the normal force $N$ is zero.",

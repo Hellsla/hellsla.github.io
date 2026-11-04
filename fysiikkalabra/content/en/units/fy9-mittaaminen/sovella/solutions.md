@@ -294,9 +294,9 @@ The uncertainty of the height of the stack is larger than $0.5\,\text{mm}$, beca
 **Reasonableness:** The mass of a $100\,\text{ml}$ glass measuring cylinder is typically about $100$–$200\,\text{g}$, and the density is smaller than that of water but larger than that of ethanol. According to the line, the mass on the row $20\,\text{ml}$ is $118.6\,\text{g} + 0.919\,\tfrac{\text{g}}{\text{ml}} \cdot 20\,\text{ml} = 137.0\,\text{g}$, which matches the measured $137.6\,\text{g}$.
 
 ### d)
-**Given:** the graph of part b, where the points have uncertainty bars of $\pm 1\,\text{ml}$; from part c $k = 0.919\,\text{g/cm}^3$; the densities of the table $1.00$, $0.92$ and $0.79\,\text{g/cm}^3$
+**Given:** the graph of part b, where the points have uncertainty bars of $\pm 1\,\text{ml}$; from part c $k = 0.919\,\text{g/cm}^3$; the data-book densities $1.00$, $0.92$ and $0.79\,\text{g/cm}^3$
 **Find:** the uncertainty of the density $\Delta\rho$ and the identification of the liquid
-**Principle:** The steepest and the shallowest line that still pass through all the uncertainty bars bound the estimated range of the slope. Half of it is taken as the uncertainty, and the result is compared with the densities of the table.
+**Principle:** The steepest and the shallowest line that still pass through all the uncertainty bars bound the estimated range of the slope. Half of it is taken as the uncertainty, and the result is compared with the data-book densities.
 **Reading the graph:** The slope of the steepest line is about $k_\text{max} = 0.932\,\text{g/cm}^3$ and that of the shallowest $k_\text{min} = 0.908\,\text{g/cm}^3$.
 **Formula:** $\Delta\rho = \dfrac{k_\text{max} - k_\text{min}}{2}$
 **Conversions:** Not needed: all the densities are in the unit $\text{g/cm}^3$.

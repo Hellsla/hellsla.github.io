@@ -32,7 +32,8 @@
 
 ### Yleisiä virheitä
 - a-kohdassa pinta-ala lasketaan halkaisijasta eikä säteestä. Silloin ylipaineeksi tulee neljäsosa oikeasta.
-- c-kohdassa Boylen lakiin sijoitetaan a-kohdan ylipaine eikä kokonaispaine. Tai säiliön mittarin lukemaa $900\,\text{kPa}$ käytetään ilman ilmanpainetta.
+- c-kohdassa Boylen lakiin sijoitetaan a-kohdan ylipaine eikä kokonaispaine.
+- c-kohdassa säiliön mittarin lukemaa $900\,\text{kPa}$ käytetään ilman ilmanpainetta.
 - b-kohdassa ilman työ $p\,\Delta V$ lasketaan kokonaispaineella, ja sitä pidetään energiana, jonka auto saa.
 - c-kohdassa unohdetaan, että ilma ei virtaa säiliöstä sylinteriin, kun säiliön paine on pienempi kuin sylinterin paine.
 
@@ -265,9 +266,11 @@ Kuvaajassa on kaksi ympyröityä kohtaa. Ne ovat ne kaksi suoran pistettä, jois
 **Mallivastaus:** Jokaiseen kirjattuun tilavuuteen tulee sama lisä $1{,}5\,\text{ml}$. Siksi suora siirtyy ylöspäin, mutta sen kulmakerroin ei muutu. Kulmakertoimen määrää vain hauteessa oleva ilma. Nollakohta on silloin $\theta_0 = -\dfrac{V_0 + 1{,}5\,\text{ml}}{k}$. Arvio siirtyy siis kylmemmäksi noin $\dfrac{1{,}5\,\text{ml}}{0{,}135\,\text{ml}/{}^\circ\text{C}} \approx 11\,\text{K}$. Tämän ryhmän tulos olisi noin $-290\,{}^\circ\text{C}$. Virhe on systemaattinen. Siksi useammat toistot tai useammat mittauspisteet eivät poista sitä. Koko ilmamäärä on pidettävä hauteessa. Toinen tapa on jättää letkun vakiotilavuus pois kokonaistilavuudesta. Ruiskun ilman ainemäärä pysyy silloinkin vakiona. Siksi pelkät asteikon lukemat noudattavat lakia $V \propto T$ ja antavat oikean nollakohdan.
 
 ### Yleisiä virheitä
-- Kuvaajan pisteet yhdistetään murtoviivaksi. Tai suora pakotetaan kulkemaan origon kautta, vaikka vaaka-akselilla on celsiusasteet.
+- Kuvaajan pisteet yhdistetään murtoviivaksi.
+- Suora pakotetaan kulkemaan origon kautta, vaikka vaaka-akselilla on celsiusasteet.
 - Kulmakerroin lasketaan kahdesta vierekkäisestä mittauspisteestä eikä sovitetusta suorasta.
-- b-kohdassa tulosta $-279\,{}^\circ\text{C}$ pidetään epäonnistuneena, koska se ei ole $-273\,{}^\circ\text{C}$. Tai ekstrapolointia ei mainita.
+- b-kohdassa tulosta $-279\,{}^\circ\text{C}$ pidetään epäonnistuneena, koska se ei ole $-273\,{}^\circ\text{C}$.
+- b-kohdassa ekstrapolointia ei mainita.
 - c-kohdassa millilitroja ei muunneta kuutiometreiksi. Silloin ainemäärä tulee miljoona kertaa liian suureksi.
 - d-kohdassa oletetaan, että toistot poistavat virheen, jonka letku aiheuttaa.
 
@@ -290,7 +293,7 @@ Kuvaajassa on kaksi ympyröityä kohtaa. Ne ovat ne kaksi suoran pistettä, jois
 **Muunnokset:** Laskussa muunnoksia ei tarvita. Vertailua varten lämpötilat kelvineinä: meri on $3 + 273 = 276\,\text{K}$ ja ilma $253\,\text{K}$.
 **Sijoitus:** $\eta = \dfrac{30\,\text{kW}}{500\,\text{kW}} = 0{,}060 = 6{,}0\,\%$ ja $P_2 = 500\,\text{kW} - 30\,\text{kW} = 470\,\text{kW}$
 **Vastaus:** $\eta \approx 6{,}0\,\%$ ja $P_2 \approx 470\,\text{kW}$. Vastauksissa on kaksi merkitsevää numeroa, kuten työtehossa $30\,\text{kW}$. Hyötysuhde on pieni, koska lämpötilaero $23\,\text{K}$ on pieni verrattuna kuuman lähteen lämpötilaan $276\,\text{K}$. Mitä pienempi tämä suhde on, sitä pienempi osa lämmöstä voi muuttua työksi.
-**Järkevyys:** Energia säilyy: $30\,\text{kW} + 470\,\text{kW} = 500\,\text{kW}$. Kone ei riko lakeja, koska se luovuttaa melkein kaiken lämmön kylmempään. Hyötysuhde on paljon pienempi kuin voimalaitoksen hyötysuhde, noin $40\,\%$. Voimalaitoksessa höyry on satoja asteita kuumempaa kuin lauhdutin. Lauhdutin on laitteen kylmä osa, jossa höyry jäähtyy.
+**Järkevyys:** Energia säilyy: $30\,\text{kW} + 470\,\text{kW} = 500\,\text{kW}$. Kone ei riko lakeja, koska se luovuttaa melkein kaiken lämmön kylmempään. Hyötysuhde on paljon pienempi kuin voimalaitoksen hyötysuhde, noin $40\,\%$. Voimalaitoksessa höyry on satoja asteita kuumempaa kuin lauhdutin. Lauhdutin on laitteen kylmä osa, jossa höyry tiivistyy eli muuttuu vedeksi.
 
 ### c)
 **Kysytty:** miksi lämpöpumppu voi lämmittää hyttejä merivedellä, vaikka esitteen moottori ei voi toimia
@@ -411,7 +414,8 @@ Jos pisteet ovat suoralla, mutta suora ei kulje origon kautta, mittauksessa on s
 **Mallivastaus:** Märällä lasilla tarvitaan $\Delta p = \dfrac{792{,}7\,\text{N}}{0{,}30 \cdot 0{,}070\,69\,\text{m}^2} \approx 37\,\text{kPa}$. Nostimen $60\,\text{kPa}$ riittää siis juuri ja juuri pitämään levyn. Varmuuskerroin on kuitenkin vain $60 : 37 \approx 1{,}6$. Se on alle kahden, jota ohje vaatii. Kuivana pystynosto täyttää ohjeen, $60 : 18{,}7 \approx 3{,}2$. Vaakanosto täyttää ohjeen selvästi, $60 : 11{,}2 \approx 5{,}4$. Pystyasento on vaativampi, koska paineen voima on kohtisuorassa lasin pintaa vastaan eli vaakasuora. Paineen voima ei kannata painoa lainkaan. Painon kantaa kitka, joka on enintään $\mu_0$ kertaa tukivoima. Asentaja ei saa nostaa märkää levyä pystyssä tällä nostimella. Lasi on kuivattava. Toinen vaihtoehto on käyttää kahta laikkaa, jolloin ala kaksinkertaistuu.
 
 ### Yleisiä virheitä
-- a-kohdassa pinta-ala lasketaan halkaisijasta eikä säteestä. Tai levyn paksuus jätetään millimetreiksi.
+- a-kohdassa pinta-ala lasketaan halkaisijasta eikä säteestä.
+- a-kohdassa levyn paksuus jätetään millimetreiksi.
 - a-kohdassa unohdetaan kiihtyvyys, ja lasketaan pelkkä paino.
 - b-kohdassa paine-eron voima piirretään ylöspäin kannattamaan levyä. Paineen voima on kuitenkin aina kohtisuorassa pintaa vastaan.
 - b-kohdassa kitka lasketaan painosta, $\mu_0 mg$. Oikein kitka lasketaan tukivoimasta $N = \Delta p\,A$.

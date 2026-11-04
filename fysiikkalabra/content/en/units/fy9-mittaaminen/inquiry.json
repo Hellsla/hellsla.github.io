@@ -161,7 +161,7 @@
           "feedback": "The measurements show that the line is valid only in the range $0$–$10\\,\\text{N}$. A large force can stretch the spring permanently, and then the relationship is no longer a straight line. Extrapolation is discussed in the chapter *Graphing and fitting a straight line*."
         },
         {
-          "text": "The extension of the line is only an estimate, since forces above $10\\,\\text{N}$ were not measured.",
+          "text": "Extending the line gives only an estimate, since forces above $10\\,\\text{N}$ were not measured.",
           "correct": true,
           "feedback": "Correct. Extrapolation assumes that the relationship stays the same outside the measured range. The estimate is justified only if we know that the spring can take $40\\,\\text{N}$ without stretching permanently. This is discussed in the chapter *Graphing and fitting a straight line*."
         },

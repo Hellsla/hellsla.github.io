@@ -49,7 +49,7 @@
 ### b)
 **Given:** from part a $P_0 = 110.8\,\text{MW}$; electrical power $P_\text{el} = 30\,\text{MW}$, district heating power $P_\text{dh} = 70\,\text{MW}$
 **Find:** the electrical efficiency $\eta_\text{el}$ and the overall efficiency $\eta_\text{tot}$ as percentages
-**Principle:** Efficiency is the share of the useful power in the power taken in. In the electrical efficiency only electricity is useful, in the overall efficiency electricity and district heat together (chapter *Energy production and the efficiency of power plants*).
+**Principle:** Efficiency is the fraction of the power taken in that is useful. In the electrical efficiency only electricity is useful, in the overall efficiency electricity and district heat together (chapter *Energy production and the efficiency of power plants*).
 **Formula:** $\eta_\text{el} = \dfrac{P_\text{el}}{P_0}$ and $\eta_\text{tot} = \dfrac{P_\text{el} + P_\text{dh}}{P_0}$
 **Conversions:** All the powers are in megawatts, so the unit cancels. The ratio is converted to a percentage by multiplying it by $100\,\%$.
 **Substitution:** $\eta_\text{el} = \dfrac{30\,\text{MW}}{110.8\,\text{MW}} = 0.271 = 27.1\,\%$ and $\eta_\text{tot} = \dfrac{30\,\text{MW} + 70\,\text{MW}}{110.8\,\text{MW}} = 0.902 = 90.2\,\%$
@@ -86,7 +86,7 @@
 **Find:** a graph of the daily electricity consumption $E$ as a function of the outdoor temperature $T$, and a model fitted to it
 **Graph:** On the horizontal axis is the outdoor temperature $T\ ({}^\circ\text{C})$ and on the vertical axis the daily consumption $E\ (\text{kWh})$. The horizontal axis needs negative temperatures, and the scale continues for parts c and d from $-30\,{}^\circ\text{C}$ to $+20\,{}^\circ\text{C}$.
 
-<svg data-fig="fy9-energia-s3-graph" viewBox="0 0 600 440" role="img" aria-label="Graph: the house&#x27;s daily electricity consumption E as a function of the outdoor temperature T. Eight black points at temperatures −19…2 °C. A falling straight line is fitted to the points and extended as a dashed line in both directions. The line passes through the points (−20 °C; 191 kWh) and (0 °C; 93 kWh); these two points of the line are circled, and the slope, about −4.9 kWh per degree, is read from them. At the temperature −28 °C about 230 kWh is read from the line. The line falls to the level of the other consumption, 12 kWh, at about 17 °C." style="max-width:100%;font-size:24px">
+<svg data-fig="fy9-energia-s3-graph" viewBox="0 0 600 440" role="img" aria-label="Graph: the house&#x27;s daily electricity consumption E as a function of the outdoor temperature T. Eight black points at temperatures −19…2 °C. A falling straight line is fitted to the points and extended as a dashed line in both directions. The line passes through the points (−20 °C, 191 kWh) and (0 °C, 93 kWh); these two points of the line are circled, and the slope, about −4.9 kWh per degree, is read from them. At the temperature −28 °C about 230 kWh is read from the line. The line falls to the level of the other consumption, 12 kWh, at about 17 °C." style="max-width:100%;font-size:24px">
   <line x1="125.5" y1="390" x2="125.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="167" y1="390" x2="167" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="209" y1="390" x2="209" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -231,7 +231,7 @@ Recommendation: the submarine cable and the wind turbines together. The cable se
 ### a)
 **Given:** from the report, water $m = 1.0\,\text{kg}$, initial temperature $T_1 = 15\,{}^\circ\text{C}$, final temperature $T_2 = 96\,{}^\circ\text{C}$, time $t = 3\,\text{min}\ 5\,\text{s}$, power on the rating plate $P = 2200\,\text{W}$; $c = 4190\,\text{J/(kg}\cdot\text{K)}$
 **Find:** the efficiency $\eta$ of the kettle from the data of the report
-**Principle:** The efficiency is the share of the energy transferred to the water in the electrical energy taken by the kettle (chapter *Efficiency*). The energy transferred to the water is the heat $Q = cm\Delta T$ transferred to the water, because the water warms up and, according to the report, does not boil away (chapter *Heating and cooling of matter*). The electrical energy is power multiplied by time.
+**Principle:** The efficiency is the fraction of the electrical energy taken by the kettle that is transferred to the water (chapter *Efficiency*). The energy transferred to the water is the heat $Q = cm\Delta T$ transferred to the water, because the water warms up and, according to the report, does not boil away (chapter *Heating and cooling of matter*). The electrical energy is power multiplied by time.
 **Formula:** $\eta = \dfrac{Q}{E}$, where $Q = cm\,(T_2 - T_1)$ and $E = P\,t$, so $\eta = \dfrac{cm\,(T_2 - T_1)}{P\,t}$
 **Conversions:** $3\,\text{min}\ 5\,\text{s} = 3 \cdot 60\,\text{s} + 5\,\text{s} = 185\,\text{s}$. A temperature difference is the same in degrees Celsius and in kelvins: $96\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 81\,\text{K}$.
 **Substitution:** $\eta = \dfrac{4190\,\text{J}/(\text{kg} \cdot \text{K}) \cdot 1.0\,\text{kg} \cdot 81\,\text{K}}{2200\,\text{W} \cdot 185\,\text{s}} = \dfrac{339\,390\,\text{J}}{407\,000\,\text{J}} = 0.834 = 83.4\,\%$

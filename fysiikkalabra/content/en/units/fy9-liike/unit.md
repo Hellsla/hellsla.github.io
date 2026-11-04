@@ -402,7 +402,7 @@ A straight line or a quadratic polynomial $x = A\,t^2 + B\,t + C$ is fitted to m
 - **A negative acceleration is always read as slowing down.** The speed decreases only when the acceleration and the velocity point in opposite directions.
 - **At the highest point the acceleration is zero.** The velocity is zero for an instant, but the acceleration is still $g$ downwards.
 - **The crossing point of $(t,v)$ graphs is read as a meeting.** There the velocities are equal; at a meeting it is the positions that are equal.
-- **Mixed-up units.** Convert before substituting, by substituting the units: $72\,\text{km/h} = \dfrac{72 \cdot 1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$.
+- **Mixed-up units.** Convert the units before you substitute, by writing them out: $72\,\text{km/h} = \dfrac{72 \cdot 1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$.
 
 ## Review if needed {Kertaa}
 

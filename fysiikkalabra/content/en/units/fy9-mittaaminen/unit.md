@@ -144,14 +144,14 @@
 
 Almost every matriculation exam in physics has a problem that gives a set of measurement data and asks for a quantity to be determined from it. The solution always proceeds in the same order: the measurement results and their uncertainty, the graph, the fit, the interpretation of the fit and finally the result with its uncertainty. Points can be gained or lost at every step.
 
-<svg data-fig="kartta" viewBox="0 0 600 448" role="img" aria-label="Diagram: from measurement to result in five steps joined by downward arrows. 1 Measurement: reading, uncertainty Δx and precision. 2 Graph: quantity and unit on the axes. 3 Fit: straight line or linearisation. 4 Interpretation: slope k and constant term b with their units. 5 Result: k ± Δk and the range of validity of the model." style="max-width:100%;font-size:26px">
+<svg data-fig="kartta" viewBox="0 0 600 448" role="img" aria-label="Diagram: from measurement to result in five steps joined by downward arrows. 1 Measure: reading, uncertainty Δx and precision. 2 Graph: quantity and unit on the axes. 3 Fit: straight line or linearisation. 4 Interpret: slope k and constant term b with their units. 5 Result: k ± Δk and the range of validity of the model." style="max-width:100%;font-size:26px">
   <rect x="14" y="14" width="572" height="64" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
   <rect x="14" y="14" width="196" height="64" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
   <rect x="196" y="16.5" width="14" height="59" fill="#d0e6fb"/>
   <line x1="210" y1="14" x2="210" y2="78" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
   <circle cx="42" cy="46" r="18" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
   <foreignObject x="31" y="30.5" width="22" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$1$</div></foreignObject>
-  <foreignObject x="70" y="30.5" width="132" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{Measurement}$</div></foreignObject>
+  <foreignObject x="70" y="30.5" width="132" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{Measure}$</div></foreignObject>
   <foreignObject x="222" y="30.5" width="358" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{reading}, \ \Delta x, \ \text{precision}$</div></foreignObject>
   <line x1="110" y1="80" x2="110" y2="91" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M110,102 L104.5,90 L115.5,90 Z" fill="#1f2933" stroke-linejoin="round"/>
@@ -181,7 +181,7 @@ Almost every matriculation exam in physics has a problem that gives a set of mea
   <line x1="210" y1="284" x2="210" y2="348" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
   <circle cx="42" cy="316" r="18" fill="#ffffff" stroke="#e8590c" stroke-width="2.5"/>
   <foreignObject x="31" y="300.5" width="22" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$4$</div></foreignObject>
-  <foreignObject x="70" y="300.5" width="132" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{Interpretation}$</div></foreignObject>
+  <foreignObject x="70" y="300.5" width="132" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{Interpret}$</div></foreignObject>
   <foreignObject x="222" y="300.5" width="358" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$k \text{ and } b \text{ with units}$</div></foreignObject>
   <line x1="110" y1="350" x2="110" y2="361" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M110,372 L104.5,360 L115.5,360 Z" fill="#1f2933" stroke-linejoin="round"/>
@@ -400,4 +400,4 @@ In uniformly accelerated motion from rest, when time is counted from the start o
 - Types of error, the mean and uncertainty: in the chapter [*Measuring and the reliability of a measurement*](fy1-3.html).
 - The graph, fitting a straight line and the slope: in the chapter [*Graphing and fitting a straight line*](fy1-4.html).
 - Density as the slope and the mass of the container as the constant term: in the chapter [*Density*](fy1-7.html).
-- Drawing and fitting a graph with a program: the ICT guides *Graph of measurement points*, *Fitting a straight line to measurement points*, *Interpreting the slope and the constant term* and *Uncertainty of the slope*.
+- Drawing and fitting a graph with a program: the ICT guides *Graph of measurement points*, *Fitting a straight line to measurement points*, *Interpreting the slope and the constant term* and *Uncertainty of the slope* (in Finnish).

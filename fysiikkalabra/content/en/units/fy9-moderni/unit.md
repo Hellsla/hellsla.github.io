@@ -411,25 +411,25 @@
 
 What joins the phenomena of the module is **quantised energy**. Light exchanges energy with matter as photons whose energy is $E = hf$, and one photon gives its energy to one electron. The electrons of an atom and the nucleons of a nucleus can only be in certain energy states, so in transitions a photon of a definite energy is created or disappears. The differences between electron levels are electronvolts, the energies of nuclear levels and nuclear reactions millions of electronvolts. In the nucleus mass and energy are linked: $E = mc^2$.
 
-<svg data-fig="kartta" viewBox="0 0 380 744" role="img" aria-label="Concept map. At the top is the node quantised energy: the photon energy E = h f and the link between mass and energy E = m c squared. Three branches lead down from it. The photon and the atom, the world of electronvolts: the photoelectric equation h f = W + E k max, the photon of a spectral line h f = E y minus E a and the threshold voltage of an LED e U k approximately h f. The nucleus, the world of megaelectronvolts: the decay law N = N 0 times one half to the power t over T half, the activity A = lambda N and the reaction energy Q = the mass difference times c squared. Radiation and people, dose: the absorbed dose D = E over m, the equivalent dose H T = w R times D T and the inverse square law of distance. At the bottom, a rule joining all the branches: first one particle, then the number." style="max-width:min(100%,420px);font-size:20px">
+<svg data-fig="kartta" viewBox="0 0 380 744" role="img" aria-label="Concept map. At the top is the node quantised energy: the photon energy E = h f and the link between mass and energy E = m c squared. Three branches lead down from it. The photon and the atom, the world of electronvolts: the photoelectric equation h f = W + E k max, the photon of a spectral line h f = E u minus E l and the threshold voltage of an LED e U k approximately h f. The nucleus, the world of megaelectronvolts: the decay law N = N 0 times one half to the power t over T half, the activity A = lambda N and the reaction energy Q = the mass difference times c squared. Radiation and people, dose: the absorbed dose D = E over m, the equivalent dose H T = w R times D T and the inverse square law of distance. At the bottom, a rule joining all the branches: first one particle, then the number." style="max-width:min(100%,420px);font-size:20px">
   <line x1="24" y1="80" x2="24" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="108" y="18" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{quantised energy}$</div></foreignObject>
   <foreignObject x="129" y="47" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$E = hf,\quad E = mc^2$</div></foreignObject>
   <line x1="24" y1="122" x2="44" y2="122" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="100" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="110" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{fotoni ja atomi}$</div></foreignObject>
+  <foreignObject x="58" y="110" width="216" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{the photon and the atom}$</div></foreignObject>
   <foreignObject x="336" y="112" width="26" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{eV}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="156" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$hf = W + E_\text{k,max}$</div></foreignObject>
   <foreignObject x="283" y="158" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{emission}$</div></foreignObject>
-  <foreignObject x="58" y="209" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$hf = E_\text{y} - E_\text{a}$</div></foreignObject>
+  <foreignObject x="58" y="209" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$hf = E_\text{u} - E_\text{l}$</div></foreignObject>
   <foreignObject x="283" y="210" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{spectrum}$</div></foreignObject>
   <foreignObject x="58" y="260" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$eU_\text{k} \approx hf$</div></foreignObject>
   <foreignObject x="327" y="262" width="35" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{LED}$</div></foreignObject>
   <line x1="24" y1="326" x2="44" y2="326" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="304" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="314" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{ydin}$</div></foreignObject>
+  <foreignObject x="58" y="314" width="122" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{the nucleus}$</div></foreignObject>
   <foreignObject x="327" y="316" width="35" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{MeV}$</div></foreignObject>
   <line x1="54" y1="346" x2="362" y2="346" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="361" width="167" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}$</div></foreignObject>
@@ -440,7 +440,7 @@ What joins the phenomena of the module is **quantised energy**. Light exchanges 
   <foreignObject x="283" y="466" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{reaction}$</div></foreignObject>
   <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="518" width="185" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{säteily ja ihminen}$</div></foreignObject>
+  <foreignObject x="58" y="518" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{radiation and people}$</div></foreignObject>
   <foreignObject x="319" y="520" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{dose}$</div></foreignObject>
   <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="58" y="564" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$D = E/m$</div></foreignObject>
@@ -508,12 +508,12 @@ This answers the opening question. The energy of a red photon of a grow light ($
 \begin{aligned}
 E &= hf = \frac{hc}{\lambda} \\
 hf &= W + E_\text{k,max} \\
-hf &= E_\text{y} - E_\text{a} \\
+hf &= E_\text{u} - E_\text{l} \\
 p &= \frac{h}{\lambda}
 \end{aligned}
 ```
 
-where $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ is the Planck constant, $f$ the frequency, $\lambda$ the wavelength, $W$ the work function of the metal, $E_\text{k,max}$ the largest kinetic energy of an emitted electron, $E_\text{y}$ and $E_\text{a}$ the energies of the upper and the lower energy state and $p$ the momentum of the photon. Electrons are emitted only when $hf \geq W$. An atom absorbs only a photon whose energy is exactly the difference of levels, unless the photon ionises the atom. For hydrogen $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$. At the threshold voltage of an LED $eU_\text{k} \approx hf$. Conversions: $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$ and $hc \approx 1240\,\text{eV}\,\text{nm}$.
+where $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ is the Planck constant, $f$ the frequency, $\lambda$ the wavelength, $W$ the work function of the metal, $E_\text{k,max}$ the largest kinetic energy of an emitted electron, $E_\text{u}$ and $E_\text{l}$ the energies of the upper and the lower energy state and $p$ the momentum of the photon. Electrons are emitted only when $hf \geq W$. An atom absorbs only a photon whose energy is exactly the difference of levels, unless the photon ionises the atom. For hydrogen $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$. At the threshold voltage of an LED $eU_\text{k} \approx hf$. Conversions: $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$ and $hc \approx 1240\,\text{eV}\,\text{nm}$.
 
 ### The nucleus and decay
 
@@ -600,7 +600,7 @@ where $D$ is the absorbed dose ($\text{Gy}$), $E$ the absorbed energy, $m$ the m
 ## Common mistakes {Virheet}
 
 - **Brighter light, more energetic photons.** The intensity tells the number of photons; the frequency sets the energy of one photon.
-- **The photon carries the energy of a level.** The photon energy is the difference of levels $E_\text{y} - E_\text{a}$, not $|E_n|$.
+- **The photon carries the energy of a level.** The photon energy is the difference of levels $E_\text{u} - E_\text{l}$, not $|E_n|$.
 - **Electronvolts into a formula with $h$ in joules.** Convert first: $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 - **Two half-lives make everything decay.** After two half-lives a quarter is left, and each half-life halves what is left.
 - **Mixing up mass number and mass.** The mass number is conserved, but the mass decreases when energy is released.

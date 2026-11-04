@@ -1,5 +1,5 @@
 {
-  "intro": "Tässä on kuusi ylioppilaskokeen tyylistä tehtävää. Ne kokoavat yhteen tunnin asiat: värähtelyt, aallot ja äänen. Ratkaise tehtävät kuten kokeessa. Toimi näin:\n1. Nimeä ilmiö ja malli. Perustele, miksi malli sopii tilanteeseen.\n2. Ratkaise kysytty suure kaavasta ennen kuin sijoitat luvut.\n3. Arvioi, onko tulos järkevä.\n\nAvaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "intro": "Tässä on kuusi ylioppilaskokeen tyylistä tehtävää. Ne kokoavat yhteen tunnin asiat: värähtelyt, aallot ja äänen. Ratkaise tehtävät kuten kokeessa. Toimi näin:\n\n1. Nimeä ilmiö ja malli. Perustele, miksi malli sopii tilanteeseen.\n2. Ratkaise kysytty suure kaavasta ennen kuin sijoitat luvut.\n3. Arvioi, onko tulos järkevä.\n\nAvaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
   "tasks": [
     {
       "id": "fy9-aallot-s1",
@@ -11,7 +11,7 @@
         "fy5-10",
         "fy5-14"
       ],
-      "text": "Kitarassa on A-kieli. Kielen värähtelevä osa satulasta tallaan on $648\\,\\text{mm}$. Kun kieltä soitetaan vapaana, se soi perustaajuudellaan $110{,}0\\,\\text{Hz}$. Kun kieltä painetaan nauhaa vasten, kielen värähtelevä osa ulottuu nauhasta tallaan. Kitaristi virittää eli säätää kieltä niin, että se soi samalla tavalla kuin kosketinsoittimen A-sävel. Sävelen taajuus on $110{,}0\\,\\text{Hz}$.\n\n- äänen nopeus huoneilmassa $343\\,\\text{m/s}$\n- kielen kireys pysyy samana a- ja b-kohdassa",
+      "text": "Kitarassa on A-kieli. Kielen värähtelevä osa satulasta tallaan on $648\\,\\text{mm}$. Kun kieltä soitetaan vapaana, se soi perustaajuudellaan $110{,}0\\,\\text{Hz}$. Kun kieltä painetaan nauhaa vasten, kielen värähtelevä osa ulottuu nauhasta tallaan. Kitaristi virittää eli säätää kieltä niin, että se soi samalla taajuudella kuin kosketinsoittimen A-sävel. Sävelen taajuus on $110{,}0\\,\\text{Hz}$.\n\n- äänen nopeus huoneilmassa $343\\,\\text{m/s}$\n- kielen kireys pysyy samana a- ja b-kohdassa",
       "parts": [
         {
           "id": "a",

@@ -127,7 +127,7 @@
 **Mallivastaus:** Raskaampi laatikko painaa lavaa enemmän. Siksi suurin mahdollinen lepokitka $\mu_0 mg$ kasvaa. Raskaamman laatikon hidastamiseen tarvitaan kuitenkin myös suurempi voima $ma$. Tämä voima kasvaa samassa suhteessa. Massa supistuu eli häviää ehdosta $ma \le \mu_0 mg$. Siksi suurin sallittu hidastuvuus $a_\text{max} = \mu_0 g$ ei riipu massasta. Ehdotus ei siis auta. Toimivia keinoja ovat nämä: laatikko sidotaan lavaan liinoilla, tai kitkakerrointa suurennetaan, esimerkiksi laatikon alle laitetaan kuminen liukueste.
 
 ### Yleisiä virheitä
-- Voimakuvioon piirretään voima, joka osoittaa eteenpäin ja ”vie laatikkoa eteenpäin”. Tai kitka piirretään eteenpäin.
+- Voimakuvioon piirretään voima, joka osoittaa eteenpäin ja ”vie laatikkoa eteenpäin”, tai kitka piirretään osoittamaan eteenpäin.
 - b-kohdassa massa yritetään laskea tai arvata, vaikka se supistuu yhtälöstä.
 - c-kohdassa nopeus jätetään yksikköön $\text{km/h}$. Silloin matkaksi tulee $725$, eikä yksikkö ole järkevä.
 - c-kohdassa käytetään kaavaa $s = \tfrac{1}{2}at^2$, vaikka aikaa ei ole laskettu.
@@ -215,7 +215,7 @@
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $P_\text{j} = 0{,}560\,\Omega \cdot (14{,}27\,\text{A})^2 = 114{,}0\,\text{W}$
 **Vastaus:** $P_\text{j} \approx 1{,}1 \cdot 10^2\,\text{W}$ eli noin $110\,\text{W}$. Tuloksessa on kaksi merkitsevää numeroa, kuten a- ja b-kohdissa.
-**Järkevyys:** Jännite laskee johdossa $0{,}560\,\Omega \cdot 14{,}27\,\text{A} = 8{,}0\,\text{V}$. Laitteille jää siis $222\,\text{V}$. Johdon teho on noin $3\,\%$ laitteiden tehosta. Teho jakautuu koko johdolle ja lämmittää johtoa selvästi.
+**Järkevyys:** Jännite laskee johdossa $0{,}560\,\Omega \cdot 14{,}27\,\text{A} = 8{,}0\,\text{V}$. Laitteille jää siis $222\,\text{V}$. Johdon teho on noin $3\,\%$ laitteiden tehosta. Teho kuitenkin jakautuu koko johdolle ja lämmittää johtoa selvästi.
 
 ### d)
 **Annettu:** poikkipinta-ala $A' = 2{,}5\,\text{mm}^2$, muuten kuten edellä; $R_\text{l} = 15{,}56\,\Omega$
@@ -730,7 +730,7 @@ Suoraa ei pakoteta kulkemaan origon kautta, koska myös jousi itse värähtelee.
 ### c)
 **Annettu:** a-kohdan suora: kulmakerroin $1{,}578\,\tfrac{\text{s}^2}{\text{kg}}$, vakiotermi $b = 0{,}0324\,\text{s}^2$; jousen massa $61\,\text{g}$
 **Kysytty:** miksi suora ei kulje origon kautta ja kuinka suuri osa $m_\text{j}$ jousen massasta värähtelee punnuksen mukana
-**Periaate:** Punnuksen lisäksi myös jousi liikkuu. Jousen alapää liikkuu punnuksen mukana, ja yläpää on paikallaan. Jousen liike vaikuttaa siis samalla tavalla kuin osa jousen massasta olisi punnuksessa. Värähtelevä massa on $m + m_\text{j}$. Silloin $T^2 = \tfrac{4\pi^2}{k}(m + m_\text{j})$, ja suora leikkaa massa-akselin kohdassa $m = -m_\text{j}$.
+**Periaate:** Punnuksen lisäksi myös jousi liikkuu. Jousen alapää liikkuu punnuksen mukana, ja yläpää on paikallaan. Jousen liike vaikuttaa siis samalla tavalla kuin jos osa jousen massasta olisi punnuksessa. Värähtelevä massa on $m + m_\text{j}$. Silloin $T^2 = \tfrac{4\pi^2}{k}(m + m_\text{j})$, ja suora leikkaa massa-akselin kohdassa $m = -m_\text{j}$.
 **Kuvaajan lukeminen:** Kun $T^2 = 0$, sovitteesta saadaan $0 = 1{,}578\,\tfrac{\text{s}^2}{\text{kg}} \cdot m + 0{,}0324\,\text{s}^2$. Siksi suora leikkaa massa-akselin kohdassa $m = -\tfrac{b}{\text{kulmakerroin}}$.
 **Kaava:** $m_\text{j} = \dfrac{b}{\text{kulmakerroin}}$
 **Muunnokset:** Lopuksi $1\,\text{kg} = 1000\,\text{g}$.

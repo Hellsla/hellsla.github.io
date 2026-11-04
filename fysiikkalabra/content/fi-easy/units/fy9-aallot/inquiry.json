@@ -160,7 +160,7 @@
       "title": "Kaksi pahviputkea",
       "source": "example",
       "source_note": "Keksitty esimerkki: taajuudet on laskettu putkien ominaistaajuuksista äänen nopeudella $343\\,\\text{m/s}$. Niihin on lisätty vaihtelua, joka on samanlaista kuin mittauksissa. Putken päätä ei ole korjattu.",
-      "text": "Fysiikan tunnilla tutkittiin kahta samanlaista pahviputkea. Kummankin putken pituus on $0{,}600\\,\\text{m}$. Toinen putki seisoi niin, että sen toinen pää oli tiiviisti pöytää vasten. Toista putkea pidettiin ilmassa, ja sen molemmat päät olivat auki. Kumpaakin putkea naputettiin. Puhelimen taajuusanalyysisovellus näytti äänen spektrissä neljä selvää piikkiä. Luokan lämpötila oli $20\\,{}^\\circ\\text{C}$.\n\n| Piikki | A: $f\\ (\\text{Hz})$ | B: $f\\ (\\text{Hz})$ |\n|---|---|---|\n| 1 | $284$ | $142$ |\n| 2 | $573$ | $430$ |\n| 3 | $857$ | $713$ |\n| 4 | $1146$ | $1001$ |\n\nTee näin:\n1. Laske taajuuksien suhteet. Päättele niistä, kumpi putki seisoi pöytää vasten.\n2. Määritä äänen nopeus kummankin putken mittauksista.\n3. Vastaa alla putken B luvulla. Mallivastauksessa verrataan molempia putkia.",
+      "text": "Fysiikan tunnilla tutkittiin kahta samanlaista pahviputkea. Kummankin putken pituus on $0{,}600\\,\\text{m}$. Toinen putki seisoi niin, että sen toinen pää oli tiiviisti pöytää vasten. Toista putkea pidettiin ilmassa, ja sen molemmat päät olivat auki. Kumpaakin putkea naputettiin. Puhelimen taajuusanalyysisovellus näytti äänen spektrissä neljä selvää piikkiä. Luokan lämpötila oli $20\\,{}^\\circ\\text{C}$.\n\n| Piikki | A: $f\\ (\\text{Hz})$ | B: $f\\ (\\text{Hz})$ |\n|---|---|---|\n| 1 | $284$ | $142$ |\n| 2 | $573$ | $430$ |\n| 3 | $857$ | $713$ |\n| 4 | $1146$ | $1001$ |\n\nTee näin:\n\n1. Laske taajuuksien suhteet. Päättele niistä, kumpi putki seisoi pöytää vasten.\n2. Määritä äänen nopeus kummankin putken mittauksista.\n3. Vastaa alla putken B luvulla. Mallivastauksessa verrataan molempia putkia.",
       "question": {
         "type": "numeric",
         "prompt": "Kuinka suuri äänen nopeus saadaan putken B taajuuksista?",
@@ -254,12 +254,12 @@
         },
         {
           "text": "Matalan äänen aallonpituus on pitkä, joten ääni taipuu kulman taakse.",
-          "feedback": "Oikein. Esimerkiksi $60\\,\\text{Hz}$:n äänen aallonpituus on $\\tfrac{340\\,\\text{m/s}}{60\\,\\text{Hz}} \\approx 5{,}7\\,\\text{m}$. Äänen $8\\,\\text{kHz}$ aallonpituus on vain noin $4\\,\\text{cm}$. Diffraktio eli aallon taipuminen on voimakasta, kun este tai aukko on aallonpituuden suuruusluokkaa tai pienempi. Kertaa tarvittaessa luvussa *Aalto kohtaa esteen tai raon*.",
+          "feedback": "Oikein. Esimerkiksi $60\\,\\text{Hz}$:n äänen aallonpituus on $\\tfrac{340\\,\\text{m/s}}{60\\,\\text{Hz}} \\approx 5{,}7\\,\\text{m}$. $8\\,\\text{kHz}$:n äänen aallonpituus on vain noin $4\\,\\text{cm}$. Diffraktio eli aallon taipuminen on voimakasta, kun este tai aukko on aallonpituuden suuruusluokkaa tai pienempi. Kertaa tarvittaessa luvussa *Aalto kohtaa esteen tai raon*.",
           "correct": true
         },
         {
           "text": "Bassorumpu on aina musiikin voimakkain soitin, joten se kuuluu kauas.",
-          "feedback": "Voimakkuus ei selitä, miksi juuri matalat äänet kiertävät kulman. Korkeat äänet etenevät lähes suoraan. Äänen $60\\,\\text{Hz}$ aallonpituus on kuitenkin noin $5{,}7\\,\\text{m}$. Se on samaa kokoa kuin rakennukset, joten ääni taipuu. Kertaa luvussa *Aalto kohtaa esteen tai raon*."
+          "feedback": "Voimakkuus ei selitä, miksi juuri matalat äänet kiertävät kulman. Korkeat äänet etenevät lähes suoraan. $60\\,\\text{Hz}$:n äänen aallonpituus on kuitenkin noin $5{,}7\\,\\text{m}$. Se on samaa kokoa kuin rakennukset, joten ääni taipuu. Kertaa luvussa *Aalto kohtaa esteen tai raon*."
         }
       ]
     },
@@ -320,7 +320,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Moottoriveneen aallot",
-      "prompt": "Moottorivene synnyttää aaltoja. Aallot saapuvat poijuun, joka on ankkuroitu laiturin viereen. Poiju nousee ja laskee. Kahdeksan ($8$) täyttä värähdystä kestää $14{,}4\\,\\text{s}$. Laiturilta arvioidaan, että peräkkäisten aallonharjojen väli on $3{,}1\\,\\text{m}$. Kuinka suurella nopeudella aallot etenevät?",
+      "prompt": "Moottorivene synnyttää aaltoja. Aallot saapuvat poijuun, joka on ankkuroitu laiturin viereen. Poiju nousee ja laskee. $8$ täyttä värähdystä kestää $14{,}4\\,\\text{s}$. Laiturilta arvioidaan, että peräkkäisten aallonharjojen väli on $3{,}1\\,\\text{m}$. Kuinka suurella nopeudella aallot etenevät?",
       "answer": 1.722,
       "unit": "m/s",
       "tolerance": 0.02,
@@ -469,7 +469,7 @@
         "Vastaus perustelee, että heilurissa palauttava voima on painon radan suuntainen komponentti eli osa. Se kaksinkertaistuu massan mukana, joten kiihtyvyys pysyy samana.",
         "Vastaus päättelee, että pienempi kiihtyvyys samoissa kohdissa tarkoittaa hitaampaa liikettä ja pidempää jaksonaikaa. Vastaus mainitsee, että heilurin kaava pätee pienillä heilahduksilla."
       ],
-      "model": "Jousivärähtelijän jaksonaika kasvaa, mutta heilurin jaksonaika ei kasva. Jousen voima $F = -kx$ riippuu vain jousesta ja poikkeamasta. Se ei riipu punnuksen massasta. Kun massa kaksinkertaistuu, sama voima antaa samassa kohdassa vain puolet kiihtyvyydestä. Tämä seuraa Newtonin toisesta laista $a = \\tfrac{F}{m}$. Punnus liikkuu hitaammin, ja jaksonaika kasvaa: $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ kasvaa kertoimella $\\sqrt{2} \\approx 1{,}4$. Heilurissa punnusta palauttaa eli vetää takaisin painon radan suuntainen komponentti $mg\\sin\\alpha$. Se kaksinkertaistuu massan mukana. Siksi kiihtyvyys $g\\sin\\alpha$ pysyy samana kuten vapaassa pudotuksessa. Siksi heilurin jaksonaika $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ ei riipu massasta. Kaava $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ pätee pienillä heilahduksilla. Silloin heilurin palauttava voima on harmoninen.",
+      "model": "Jousivärähtelijän jaksonaika kasvaa, mutta heilurin jaksonaika ei kasva. Jousen voima $F = -kx$ riippuu vain jousesta ja poikkeamasta. Se ei riipu punnuksen massasta. Kun massa kaksinkertaistuu, sama voima antaa samassa kohdassa vain puolet kiihtyvyydestä. Tämä seuraa Newtonin toisesta laista $a = \\tfrac{F}{m}$. Punnus liikkuu hitaammin, ja jaksonaika kasvaa: $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ kasvaa kertoimella $\\sqrt{2} \\approx 1{,}4$. Heilurissa punnusta palauttaa eli vetää takaisin painon radan suuntainen komponentti $mg\\sin\\alpha$. Se kaksinkertaistuu massan mukana. Kiihtyvyys $g\\sin\\alpha$ pysyy siis samana kuten vapaassa pudotuksessa. Siksi heilurin jaksonaika $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ ei riipu massasta. Kaava $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ pätee pienillä heilahduksilla. Silloin heilurin palauttava voima on harmoninen.",
       "practice": "Kertaa jaksonajat luvussa [*Jousivärähtelijä ja heiluri*](fy5-9.html). Kertaa jousen voima luvussa [*Jousivoima ja jousen energia*](fy5-8.html)."
     },
     {

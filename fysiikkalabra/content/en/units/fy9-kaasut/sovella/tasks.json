@@ -11,7 +11,7 @@
         "fy3-11",
         "fy3-9"
       ],
-      "text": "The car lift of a small repair shop works with compressed air. The piston of the lift's vertical cylinder has a diameter of $0.200\\,\\text{m}$, and the piston supports the lifting platform on which the car stands. The mass of the car and the platform together is $1800\\,\\text{kg}$. Above the piston is outside air at a pressure of $101\\,\\text{kPa}$. The compressed air comes from the compressor's tank, whose volume is $100\\,\\textsf{l}$ and whose gauge shows a gauge pressure of $900\\,\\text{kPa}$ when the compressor switches off.\n\nThe car is lifted slowly at a constant speed $1.20\\,\\text{m}$ up. Before the lift there is hardly any air in the cylinder under the piston. Assume that the temperature of the air stays the same all the time and that the friction of the piston is negligible.",
+      "text": "The car lift of a small repair shop works with compressed air. The piston of the lift's vertical cylinder has a diameter of $0.200\\,\\text{m}$, and the piston supports the lifting platform on which the car stands. The mass of the car and the platform together is $1800\\,\\text{kg}$. Above the piston is outside air at a pressure of $101\\,\\text{kPa}$. The compressed air comes from the compressor's tank, whose volume is $100\\,\\textsf{l}$ and whose gauge shows a gauge pressure of $900\\,\\text{kPa}$ when the compressor switches off.\n\nThe car is lifted $1.20\\,\\text{m}$ slowly at a constant speed. Before the lift there is hardly any air in the cylinder under the piston. Assume that the temperature of the air stays the same all the time and that the friction of the piston is negligible.",
       "parts": [
         {
           "id": "a",
@@ -216,7 +216,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "The heat power given away $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, recovered $0.75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$, so $\\eta_\\text{kok} = (175 + 233) : 485 \\approx 84\\,\\%$."
+              "detail": "The heat power given away $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, recovered $0.75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$, so $\\eta_\\text{tot} = (175 + 233) : 485 \\approx 84\\,\\%$."
             },
             {
               "key": "conclusion",
