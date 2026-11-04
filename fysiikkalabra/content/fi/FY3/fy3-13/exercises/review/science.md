@@ -1,21 +1,22 @@
 VERDICT: FAIL
-CONTENT-HASH: d63da7091321ba6b
+CONTENT-HASH: 5c05f2a4a93f43a5
 
-Exercise-bank round: 8 new tasks reviewed in full; old tasks unchanged.
+Round 2 (exercise bank): round-1 Blocking item and the fix diff (HEAD~2..HEAD~1) re-checked; new tasks re-read in full.
 
 ## Blocking
-- solutions.md:133 and exercises.json:80 (fy3-13-L1-07) — A: the rounding rule taught is wrong. A sum is limited by its least precise term: −195,8 °C is given to 0,1 °C, so T = 77,4 K, not "77,35 K, kaksi desimaalia, sillä 273,15 ei pyöristetä ja −195,8 on annettu kymmenesosan tarkkuudella" (the reason contradicts the result). — Fix: answer 77.4; Vastaus "$77{,}4\,\text{K}$, kymmenesosan tarkkuudella kuten $-195{,}8\,{}^\circ\text{C}$; tarkka $273{,}15$ ei rajoita"; Sijoitus "= 77,35 K ≈ 77,4 K"; answers.py round(…, 1).
+- lessons/FY3/fy3-13/answers.py:31 (fy3-13-L1-07) — A: `round(-195.8 + 273.15, 1)` prints 77.3, not 77.4 (the float sum is 77.34999…), so answers.py now disagrees with exercises.json:77 (77.4) and solutions.md (77,4 K). The answer check passes only through the 2 % tolerance. — Fix: `round(-195.8 + 273.15 + 1e-9, 1)` (or `float(Decimal("-195.8") + Decimal("273.15")).quantize…`), and check that it prints 77.4.
 
 ## Polish
-- solutions.md:160 (L2-06) — sig-fig reason contradicts itself ("kolme numeroa, koska … kulmakerroin kahteen numeroon"). With k = 0,33 (2 numbers) the honest result is ≈ −3,0·10² °C; say "−302 °C, mutta vain noin kahden numeron tarkkuudella (k:ssa kaksi numeroa)".
-- solutions.md:196 (L3-05) — "kolme numeroa kuten kalibrointipaineissa": the limiting datum is the difference 94,0 − 100,4 = −6,4 kPa (two numbers); with Δθ ≈ 2,7 °C, write −17 ± 3 °C or justify the extra digit from the uncertainty.
-- solutions.md:130 (L1-07) — $T = \theta + 273{,}15\,\text{K}$ mixes a °C value and K; use the brief's $T = \theta + 273{,}15$.
-- exercises.json:74 (L1-07) has kind "concept" though it is a numeric substitution; exercises.json:154 (L2-05) has kind "graph" but neither figure nor graph-reading step.
-- solutions.md:139/161/186 — "toistaminen pienentää satunnaisvaihtelua" (say "keskiarvon satunnaista virhettä"), "välillä 75 °C" (→ "75 °C:n levyiseltä väliltä"), "Ääriviivat osuvat kumpikin samaan keskimääräiseen nollapisteeseen" (→ "Sarjojen välien keskikohdat ovat lähellä toisiaan").
+- exercises.json:69 (L1-06, distractor "hiukkaset pysähtyvät kokonaan") — the new feedback "ei siitä, että liike pysähtyisi sinulle tutun mallin mukaan" is hard to parse and no longer says plainly what the guardrail says. Suggest: "Väärin: absoluuttisessa nollapisteessä hiukkasten energia on pienimmillään, mutta liike ei lopu kokonaan."
+- solutions.md:237 (L3-05) — "desimaali annetaan, jotta tulos vastaa vastauskentän arvoa" is not a physics reason. Either give −17 ± 3 °C as the result, or justify −17,5 ± 2,7 °C as unrounded intermediate values.
+- exercises.json:74 (L1-07) — "kind" was removed rather than corrected; if the field is expected for every new task, use ["data"] or the bank's substitution kind.
 
 ## Checked
-- One script recomputed every new answer: L1-07 77,35 K; L2-05 sums 250 / 588,9, centroid (50; 117,78), θ0 = −274,46 °C, and the least-squares slope of the data is exactly 0,363; L2-06 B −302,2 °C, A's LS fit −269,6 °C (stated −270, residual at 95 °C 0,13 kPa); L2-07 −370 °C, steps 6,6/5,4/4,0 kPa, first-two-point line −295 °C, ideal 125,3 vs 120,0 kPa; L3-04 A −242,5/−302,0 → 29,75, B −258,44/−279,90 → 10,73 °C, midpoints −272/−269; L3-05 k = 0,366, −17,49 °C, Δθ 2,73 °C.
-- L1-06, L1-08: exactly one correct option, feedback right; motion does not stop at 0 K (guardrail).
-- L2-07 leak mechanism (gas escapes on heating, slope falls) right; data consistent with ≈4 % loss.
-- L3-04 extreme lines as in the brief's lesson; data close to ideal-gas values (129,7 / 180,4 kPa).
-- Levels and plan coverage fit (fitting-range comparison, leaking vessel, extreme-line uncertainty); renders of new L3 tasks without overflow.
+- Round-1 Blocking resolved in the task: L1-07 answer 77,4 K, Vastaus "kymmenesosan tarkkuudella kuten −195,8 °C; tarkka 273,15 ei rajoita", Sijoitus 77,35 ≈ 77,4 K; back-check −195,75 ≈ −195,8 °C right. (answers.py still off, see above.)
+- Round-1 Polish resolved: L2-06 now −302 °C "vain noin kahden numeron tarkkuudella (−3,0·10² °C)"; L3-05 names the limiting difference −6,4 kPa; formula T = θ + 273,15; L2-05 "graph" kind removed; "keskiarvon satunnaista virhettä", "75 °C:n levyiseltä väliltä" and midpoint wording fixed.
+- One script recomputed: L2-05 θ0 −274,46 °C; L2-06 −302,2 °C; L2-07 −370 °C, steps 6,6/5,4/4,0 kPa; L3-04 −242,5/−302,0 → 29,75 and −258,44/−279,90 → 10,73 °C; L3-05 k 0,3660, −17,49 °C, Δθ 2,73 °C. All match answers.py (except L1-07) and the solutions.
+- L1-06: exactly one correct option ("alin mahdollinen lämpötila…"); the other three distractors wrong and their feedback right; Mallivastaus keeps "ei pidä ymmärtää niin, että hiukkaset pysähtyisivät" (guardrail met).
+- L1-08: options reordered and reworded; one correct option, interpolation / repetition / every-point distractors wrong, feedback right.
+- L2-07: "Ryhmä epäilee vuotoa… Tukeeko taulukko epäilyä?" — the falling slopes (0,33 → 0,27 → 0,20 kPa/°C, steps ≫ ±0,5 kPa) do support it; solution answers that question.
+- Aligned Sijoitus blocks: every line recomputed, values unchanged.
+- No Newton's laws or other FY4 content; levels and plan coverage unchanged and fit.

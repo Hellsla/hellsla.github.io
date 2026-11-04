@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 24fb5d210fa3c9a2
+CONTENT-HASH: efc5ef56d8cd646f
+Round: 2
 
 ## Blocking
 
 ## Polish
-- solutions.md fy3-2-L3-05 d) — the check is circular: $t = h/v$ is derived from the same $v$, so $P t = m g h$ holds by algebra and checks nothing about the data — replace d) with a real comparison, e.g. "Laske työ $m g h$ taulukon viimeiselle pisteelle ($8{,}0\,\text{s}$; $6{,}5\,\text{m}$) ja vertaa tehoon kerrottuna ajalla $8{,}0\,\text{s}$", and drop the 12 m that the table does not contain.
-- exercises.json fy3-2-L3-05 b) and L3-04 — "voimien summa on nolla" (Newton's first law) is used as justification, but FY3 does not teach it (FY4). Rephrase the b) task to "Perustele, miksi nostovoima on yhtä suuri kuin paino, kun kuorma nousee tasaisella nopeudella (kuten kaavan $W = m g h$ johdossa)" and word the model answer from the lesson's own statement.
-- solutions.md fy3-2-L3-04 a) — the solution never answers "miksi työ on kolmion pinta-ala" in a sentence: add "koska voima kasvaa nollasta tasaisesti, kuvaaja on origon kautta kulkeva suora ja sen alle jää kolmio".
-- exercises.json fy3-2-L2-07 — a "Etsi virhe" task has no explicit written model answer (only Periaate); add "Mallivastaus:" line stating the error (the mass 40 was used as force).
-- exercises.json fy3-2-L1-08 — the 500 kg and the height are not needed for the answer (intended); consider saying "samaan korkeuteen" only, or note in the solution that the numbers cancel.
+- exercises.json fy3-2-L3-05 d) — "tehon ja ajan 8,0 s tulona saatuun työhön" is a little heavy; "vertaa sitä tuloon $P t$, kun $t = 8{,}0\,\text{s}$" reads more easily.
+- exercises.json fy3-2-L1-08 — the 500 kg and the height are now explained as irrelevant in the model answer; consider dropping the numbers from the task, optional.
+- solutions.md — the Kaava lines now use "0,5 ·" instead of 1/2; consistent, but the lesson's own notation should be checked to match.
 
 ## Checked
-- Counts 8/7/5; ids and levels fit the plan (data at level 2, MC at level 1, error analysis, experiment, YO-style level 3).
-- Recomputed all answers: 1,5 m/s; 55,3 J; 230 W (229,8); 590 J; 0,50 J and 25 cm; 3,6 kW; all match the stated answers and tolerances.
-- No new task repeats the worked example (spring triangle) or an existing task.
-- MC distractors L1-06 and L1-08 are real misconceptions (steady speed, equal forces, work in lifting only; power vs work), each with its own repairing feedback.
-- Solutions follow the full staged form with explained principles and sensible estimates.
-- Number+unit typography and case endings ($40\,\text{kg}$:n) are correct in the new tasks.
-- Phone/render: no 360 px exercise capture in the packet; not judged beyond the layout check that passed.
+- Round-1 Polish carried and fixed: L3-05 d) is no longer circular (P t = 28,8 kJ against m g h = 28,7 kJ for the last table point, 8,0 s and 6,5 m); b) is reworded to the constant-speed argument of the W = m g h derivation, so Newton's first law is no longer used; L3-04 now states why the work is a triangle; L2-07 has a written Mallivastaus (mass 40 used as force, W approx 590 J); L1-08 explains the unused numbers.
+- Recomputed: 55,3 J, 230 W, 590 J, 25 cm, 3,6 kW, 1,5 m/s; match answers and tolerances.
+- MC correct positions shuffled (L1-06 third, L1-08 fourth), new distractors in L1-06 and L1-08 are real misconceptions with repairing feedback.
+- Typographic quotes in L2-07 fixed; the long solutions are split into aligned blocks.
+- Set 8/7/5; no duplicate of the worked example; levels fit the plan.
 - Hash unchanged at the end.

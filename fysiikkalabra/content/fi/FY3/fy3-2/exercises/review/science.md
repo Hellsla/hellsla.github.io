@@ -1,22 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 24fb5d210fa3c9a2
+CONTENT-HASH: efc5ef56d8cd646f
 
-Full review of the 20-task set; focus on the 8 new tasks (L1-06..08, L2-05..07, L3-04..05).
+Round 2. Delta review of the round-1 Polish fixes (HEAD~2..HEAD~1) on the 20-task set; focus on the 8 new tasks.
 
 ## Blocking
 - none
 
 ## Polish
-- exercises/exercises.json:302 (L3-05 b) and solutions.md:194 — the model answer justifies "nostovoima = paino" by "voimien summa on nolla", which is Newton's first law (FY4 per the scope note). — Accept the lesson's own statement ("tasaisella nopeudella nostovoima on yhtä suuri kuin paino") as the reason, or say the sum-of-forces argument comes in FY4.
-- exercises/solutions.md:152 (L2-05, Vastaus) — the sig-fig reason ("kolme numeroa mutta viimeinen epävarma") is not a rule; the limiting data are $\Delta s = 1{,}0\,\text{m}$ and $6{,}0\,\text{N}$. — Cite those.
-- exercises/solutions.md:178 (L3-04, Periaate) — "Energia säilyy: jousen venyttämiseen tehty työ voidaan käyttää nostamiseen" needs its condition. — Add "häviöittä" (the task itself only asks for an equal amount of work).
-- exercises/exercises.json:75 (L1-07) — v = P/F with kN and kW conversions is a rearrangement plus conversion, level-2 by this set's own answers.py comment. — Acceptable at level 1; or give W and N.
-- docs/exercise-bank/FY3.md:15,17 — plan items "työn merkki" (L1), "liike-energian muutos" (L2) and "kulman unohtaminen vinossa vedossa" (L3) are not in the set; the last two are FY4 (E_k, cos α), so leaving them out is right. — Update the plan lines.
+- exercises/exercises.json:75 (L1-07) — v = P/F with kN and kW is a rearrangement plus conversion, level 2 by this set's own answers.py comment (carried from round 1). — Acceptable at level 1; or give W and N.
+- docs/exercise-bank/FY3.md:15 — Taso 1 still lists "työn merkki", which no task asks. — Drop it from the plan or add a sign item later.
+- exercises/exercises.json:298 (L3-05) — "graph" was dropped from `kind`, but a) asks for a fitted line through the origin and the solution has a "Kuvaajan lukeminen" step. — Keep "graph", or call the step a table reading.
 
 ## Checked
-- All six new numeric answers recomputed independently (own models, least-squares fits through origin): L1-07 1,5 m/s; L2-05 55,3 J; L2-06 229,8 W; L2-07 588,6 J; L3-04 F/s = 1,001 N/cm, W = 0,500 J, h = 25,5 cm; L3-05 v = 0,815 m/s, P = 3,60 kW, Pt = mgh = 53,0 kJ. All inside tolerance; answers.py lines right.
-- L2-05 bounds 24–72 J valid (F decreases monotonically); L3-04 trapezoid sum from origin 0,500 J as stated.
-- L2-06: time range 7,8–8,4 s → 222–239 W as stated; assumption "only lifting the weight" stated in task; mean reduces random error (guardrail wording).
-- Origin lines justified physically in L3-04 (free length) and L3-05 (time from start of lift); slope from fitted line, not raw neighbours.
-- L1-06, L1-08: exactly one correct option, every distractor really wrong with correct feedback.
-- L2-07 error task: mass used as force, correct W = mgh = 590 J; no duplicate of existing tasks; all in FY3 scope.
+- L3-05 b): reason is now the lesson's own statement (constant speed → lifting force equals weight, as in the W = mgh derivation); no Newton's-law argument left, so the set stays within FY3.
+- L3-05 d) recomputed: least-squares slope through origin 0,815 m/s, P = 3598 W → 3,6 kW; P·8,0 s = 28,78 kJ vs mgh = 4414,5 N · 6,5 m = 28,69 kJ, difference 0,3 % as stated ("alle prosentin").
+- L2-05: sig-fig reason now cites Δs = 1,0 m and 6,0 N; aligned trapezoid sum 17,6 + 16,15 + 13,05 + 8,5 = 55,3 J → 55 J.
+- L3-04: "häviöittä" added to the energy statement; W = 0,500 J, h = 25,48 cm → 25 cm.
+- L2-06 aligned block: mean 8,1 s, h = 3,06 m, W = 1861,2 J, P = 229,8 W; unchanged results.
+- L2-07: new model answer names the error (mass 40 used as a force) and gives W = mgh ≈ 590 J (588,6 J).
+- L1-06, L1-08: options reordered/reworded only; exactly one correct option, `answer` matches it, distractors still wrong with right feedback; L1-08 note that 500 kg and the height do not affect the comparison is correct.
+- Plan lines 16-17 updated: kinetic energy and the oblique pull left out as FY4, P = Fv lift task named.
+- Hash checked at start and end: unchanged.

@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 7f00ff02dc7b5fbb
+CONTENT-HASH: aee75e10fdf5cfc4
+ROUND: 2
 
 ## Blocking
-(none)
+(none) Earlier Blocking: none. Round-1 Polish on L3-05 (chain broken mid-product, "b)" left at line end, inline display fraction) is resolved: the Sijoitus is now one aligned display block and the 612 kg comparison uses a colon.
 
 ## Polish
-- [Minor] L3-05 Sijoitus (open-exercises-L3-1280-6) — the inline chain breaks mid-product ("935 kg · / 3,71 m/s²") and the "b)" label is left at the end of the previous line ("= 3469 N. b)") — put each of a) and b) on its own line, or split the Paino-Maassa/Marsissa chains into two lines.
-- [Minor] L3-05 Vastaus (L3-1280-6) — an inline display fraction "(6000/9,81 ≈ 612 kg)" inside a sentence makes the line tall — use \tfrac or the colon "6000 : 9,81" so the line height stays even.
-- [Minor] Task tables (L2-05, L3-04, L3-05, 1280 px) — the column header is centred but the numbers sit left or right, so header and values do not line up — align header and cells the same way (right for numbers).
-- [Minor] L1-06 feedback of the "Massa pienenee" choice — "riippuvainen paikan g:stä" is clumsy; "riippuu paikan $g$:stä" reads more naturally.
+- [Minor] Task tables (L2-05, L3-04, L3-05, 1280 px) — column header is centred while the numbers sit left or right, so they do not line up — align header and cells the same way.
+- [Minor] L2-07 (open-exercises-L2-1280-7) — for the error task the Mallivastaus a) stands before Kysytty/Periaate; the usual order (given, asked, principle) is broken only here — optional: keep the order and put the model answer after Sijoitus.
 - [Minor] No 360 px captures of the new tasks exist (only the collapsed stage-exercises-390); check_layout 360 is clean.
 
 ## Checked
-- stage-exercises-390: level cards show 8 / 7 / 5 tasks.
-- open-exercises-1280-6/7/8: L1-06 (MC with feedback), L1-07 (MC), L1-08 (answer, solution, Järkevyys).
-- open-exercises-L2-1280-5/6/7/8: L2-05 (table, ΔG/Δm chains), L2-06 (table, fraction rows), L2-07 (error task, solution).
-- open-exercises-L3-1280-4/5/6/7/8: L3-04 (table, solution, Mars verdict), L3-05 (table, solution, Järkevyys).
-- Quantities are in KaTeX with decimal commas, tables show the decimal comma, no clipping or overflow at 1280.
+- open-exercises-1280-8: L1-08 (0,18 t, Muunnokset 1 t = 1000 kg, answer 670 N matches 667,8 N).
+- open-exercises-L2-1280-5, -7: L2-05 (table, origin and (0,50 kg; 4,90 N) read-off, 9,8 m/s²), L2-06 and L2-07 (error task, "kymmenesosa" now matches 4,9/9,81).
+- open-exercises-L3-1280-6, -7: L3-04 (3,6 m/s², Mars verdict), L3-05 (aligned Sijoitus, a) and b) in one block).
+- Reordered MC choices (L1-06, L1-07) read in the diff; quantities in KaTeX, decimal comma, no clipping or overflow at 1280.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

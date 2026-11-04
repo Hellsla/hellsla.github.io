@@ -1,22 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d63da7091321ba6b
+CONTENT-HASH: 5c05f2a4a93f43a5
+Round: 2
 
 ## Blocking
 
 ## Polish
-- exercises.json fy3-13-L2-07 — the task says "Pullon korkki vuoti hieman", but b) asks the student to deduce from the table that gas leaks: the diagnosis is given away before the student acts — word it as "Ryhmä epäilee, että pullon korkki vuotaa" and ask b) "Tukeeko taulukko epäilyä? Perustele kulmakertoimien avulla ja selitä, miksi vuoto vääristää tulosta." (also adjust solutions.md "miksi taulukko paljastaa vuodon").
-- exercises.json fy3-13-L1-06, option 2 feedback and solutions.md Periaate — "liike ei lopu kokonaan" is a quantum-level remark the lesson does not teach (its glossary says only "pienimmillään"), and in the lesson's classical model option 2 reads as nearly true — change the feedback to "Väärin: kyse on pienimmästä mahdollisesta energiasta, ei siitä, että liike pysähtyisi sinulle tutun mallin mukaan; tarkka kuva kuuluu myöhempään kurssiin", or reword the option to a plainly wrong claim ("kaikki aineet ovat kiinteitä").
-- exercises.json fy3-13-L1-07 — marked `"kind": ["concept"]` although it is a plain numeric conversion (and the same task type as fy3-3 L1-03) — drop the kind or add a conceptual prompt, e.g. ask also whether the result can be negative.
-- solutions.md fy3-13-L2-06 Vastaus — "kolme merkitsevää numeroa, koska paine-ero $5{,}0\,\text{kPa}$ rajoittaa kulmakerrointa kahteen numeroon" contradicts itself — write "$-302\,{}^\circ\text{C}$ (kaksi merkitsevää numeroa riittäisi: $-3{,}0\cdot 10^2$, mutta tulos annetaan kokonaisina asteina)", or simply "$-302\,{}^\circ\text{C}$".
-- solutions.md fy3-13-L3-04 Järkevyys — "Ääriviivat osuvat kumpikin samaan keskimääräiseen nollapisteeseen" is vague — say "Molempien sarjojen välin keskikohta ($-272\,{}^\circ\text{C}$ ja $-269\,{}^\circ\text{C}$) on lähellä arvoa $-273{,}15\,{}^\circ\text{C}$".
+- solutions.md fy3-13-L2-06 Vastaus — "$-302\,{}^\circ\text{C}$, mutta vain noin kahden numeron tarkkuudella" is now consistent; the box answer -302 is fine.
+- exercises.json fy3-13-L1-07 — the "concept" kind is dropped; the task is a plain conversion with a 77,4 K answer; acceptable, as it matches the example form.
+- solutions.md fy3-13-L3-05 Vastaus — the closing sentence "desimaali annetaan, jotta tulos vastaa vastauskentän arvoa" speaks of the answer box, not of the physics; delete it and state only "$-17{,}5 \pm 2{,}7\,{}^\circ\text{C}$ (käytännössä $-17 \pm 3\,{}^\circ\text{C}$)".
 
 ## Checked
-- Counts 8/7/5; ids and levels fit the plan (concept MC, fit and extrapolation, different fit range, leaking vessel, extreme-line uncertainty, calibration and extrapolation).
-- Recomputed all answers from the tables: $-274{,}5\,{}^\circ\text{C}$ (mean point, k 0,363), $-302\,{}^\circ\text{C}$ (group B), $-370\,{}^\circ\text{C}$ (leak), 10,7 °C (series B; A 29,75 °C), $-17{,}5\,{}^\circ\text{C}$ and 2,7 °C; all match; fitted slopes (0,363; 0,370) are right.
-- L3-04 and L3-05 are YO-style multi-step tasks and use the lesson's extreme-line method and ekstrapolointi idea; the level fits, and the L3-05 contrast (short extrapolation vs. 270 °C) teaches a real point.
-- Data tasks give the uncertainty and the method needed; no trap the lesson did not prepare.
-- Solutions are staged, with sensible sanity checks (mid-point and other points against the line).
-- L1-08 distractors (interpolation, repetition, line through every point) are real misconceptions with repairing feedback.
-- Finnish and number+unit typography fine in the new tasks.
-- No 360 px exercise capture in the packet; layout check passed; not judged further.
+- Round-1 Polish carried and fixed: L2-07 now says "Ryhmä epäilee" and b) asks "Tukeeko taulukko epäilyä?", so the diagnosis is no longer given away; L1-06 option 4 feedback no longer says motion does not stop and refers to a later course; the self-contradicting significant-figure remark in L2-06 is fixed; L3-04 Järkevyys reworded.
+- Recomputed: 77,35 K -> 77,4 K, -274,5 °C (k 0,363), -302 °C, -370 °C, 10,7 °C (series B; A 29,75 °C), -17,5 °C and 2,7 °C; all match.
+- MC correct positions shuffled (L1-06 third, L1-08 fourth); distractors are real misconceptions with repairing feedback.
+- Display math in the solutions split into short aligned blocks, which suits a 360 px screen; no 360 px exercise capture was in the packet.
+- Set 8/7/5; levels fit the plan.
 - Hash unchanged at the end.

@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ba1c9a6597054a40
+CONTENT-HASH: 5a7036e668845eab
+Round: 2
 
 ## Blocking
 
 ## Polish
-- exercises.json fy3-3-L2-05 b) and L3-04 c) — the student must classify the error as "systemaattinen vai satunnainen", but the lesson brief never defines these terms; only the solution does — add one sentence to each task, e.g. "Systemaattinen virhe poikkeaa joka mittauksessa samaan suuntaan, satunnainen vaihtelee suuntaan ja toiseen."
-- solutions.md fy3-3-L3-05 Järkevyys — "419 K, mikä on noin 146 °C pyöristetyllä suhteella" next to the answer 145 °C is confusing (145,45 rounds to 145) — write "$418{,}6\,\text{K} - 273{,}15 = 145{,}5\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$" and drop the 146 remark.
-- exercises.json fy3-3-L3-04 a) — the task asks for three means but the box checks only b); say "Muut kohdat tarkistat ratkaisusta."
-- exercises.json fy3-3-L1-07 — a second plain °C to K conversion beside L1-01; it adds a negative value, which is good, but consider asking for a freezer at -40 °C compared with an absolute-zero check, or leave as is.
-- solutions.md fy3-3-L2-06 — the answer is explained by "lasku suhteessa lämpötilaeroon on sama 0,17", which is a nice insight but is stated as a result, not asked in c); add "Vihje: laske lasku jaettuna lämpötilaerolla huoneeseen" to c) or leave as an extension.
+- solutions.md fy3-3-L2-06 — the hint in c) now leads the student to the 0,17 ratio; good, but "osaa tunnin alun lämpötilaerosta" is clumsy, write "osan tunnin alun lämpötilaerosta".
+- exercises.json fy3-3-L1-07 — still a second plain °C to K conversion beside L1-01 (with a negative value); acceptable.
+- exercises.json fy3-3-L3-04 b) and d) — the sentence defining systematic and random error is placed inside the task text; fine, but would read better as a separate short note under the table.
 
 ## Checked
-- Counts 8/7/5; ids and levels fit the plan (system type MC, state-variable MC, calibration, cooling series, settling time, body-temperature methods, pressurised tank).
-- Recomputed all answers: 255 K; 1,5 K (7,5/5); 1,741 (10,1/5,8); 40 s; 0,6 K (means 37,0 / 36,4); 145,5 °C and 797/696 kPa; all match.
-- The L3-05 trap (overpressure is not proportional to T) is explicitly prepared (total pressure first) and explained.
-- MC distractors in L1-06 and L1-08 are real misconceptions; each feedback repairs it without just restating the answer.
-- Solutions are complete and staged; the sanity checks are meaningful.
-- 1280 px capture of L3-04 shows the 4-column table and solution without clipping; no 360 px exercise capture was in the packet.
+- Round-1 Polish carried and fixed: the systematic/random definition is now in L2-05 b) and L3-04 c); the circular 146 °C remark is replaced by "418,61 K - 273,15 = 145,46 °C approx 145 °C"; L3-04 a) says the other parts are checked from the solution; L2-06 c) has the hint; L3-05 now defines ylipaine and says the total pressure is proportional to T.
+- Recomputed: 255 K, 1,5 K, 1,741, 40 s, 0,6 K, 145,46 °C, 797 and 696 kPa, 13,6 %; all match.
+- MC correct positions shuffled (L1-06 third, L1-08 second); distractors are real misconceptions.
+- Long solutions are split into aligned blocks, nothing is skipped; no 360 px exercise capture was in the packet.
+- Set 8/7/5; levels fit the plan.
 - Hash unchanged at the end.
