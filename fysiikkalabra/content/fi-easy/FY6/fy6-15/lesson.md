@@ -401,7 +401,7 @@ Ihmisen kautta kulkevan pienen virran katkaisee **vikavirtasuoja**. Se vertaa ka
   <foreignObject x="420" y="17.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$I_\text{L} - I_\text{N} = I_\text{v}$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy6/residual-current-device.webp" alt="Valkoinen vikavirtasuoja. Siinä on keltainen TEST-painike ja musta vipu."><figcaption>Vikavirtasuoja. Se katkaisee virran, jos vaihejohtimen ja nollajohtimen virtojen ero on $30\,\text{mA}$. Keltaisella TEST-painikkeella voi kokeilla, toimiiko suoja.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy6/residual-current-device.webp" alt="Valkoinen vikavirtasuoja. Siinä on keltainen TEST-painike ja musta vipu."><figcaption>Vikavirtasuoja. Siihen on merkitty $I_{\Delta n} = 0{,}03\,\text{A}$. Se tarkoittaa, että suoja katkaisee virran, jos vaihejohtimen ja nollajohtimen virtojen ero on $30\,\text{mA}$. Keltaisella TEST-painikkeella voi kokeilla, toimiiko suoja.</figcaption></figure>
 
 Vikavirtasuoja ei estä kaikkia iskuja. Jos ihminen koskettaa yhtä aikaa vaihejohdinta ja nollajohdinta, virta palaa nollajohdinta pitkin. Silloin vaihe- ja nollajohtimen virtojen välille ei synny eroa. Siksi jännitteisiin osiin ei kosketa, vaikka ryhmässä olisi vikavirtasuoja.
 

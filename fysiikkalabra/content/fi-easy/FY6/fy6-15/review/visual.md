@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2115e86f063882f4
+CONTENT-HASH: 90d13afc4a734efd
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy6-15 RCD caption: 'jos ... ero on $30\,\text{mA}$' reads as an exact value; better 'ero on vähintään noin $30\,\text{mA}$' (for science).
+- [Minor] caption: $I_{\Delta n}$ is not explained in words; "merkitty" could be "Siihen on merkitty nimellisvikavirta $I_{\Delta n} = ...$" if the lesson has not introduced it. The $0{,}03\,\text{A}$ = $30\,\text{mA}$ link is clear.
 
 ## Checked
-batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-15.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photos residual-current-device and high-voltage-sign: alts match (white RCD, yellow TEST button, black lever; yellow triangle with black lightning arrow).
+batch delta review: caption with $I_{\Delta n} = 0{,}03\,\text{A}$ renders upright unit, subscript legible. Rendered preview/fi-easy/fy6-15.html at 390 and 1280 px, photo figure opened at 390; KaTeX renders without error, no clipping, no horizontal overflow.
