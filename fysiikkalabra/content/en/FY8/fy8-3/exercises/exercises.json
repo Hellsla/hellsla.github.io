@@ -39,6 +39,55 @@
       "answer": 457,
       "unit": "THz",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-06",
+      "level": 1,
+      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. Consider four transitions $5 \\to 4$, $3 \\to 2$, $2 \\to 1$ and $4 \\to 1$, where the pair of numbers gives the initial level and the final level. Which transition emits the photon with the shortest wavelength?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$4 \\to 1$, because the energy difference is the greatest, and a large photon energy means a short wavelength.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$5 \\to 4$, because the initial level is the highest, and the higher up the electron comes from, the greater the energy difference.",
+          "feedback": "The energy of the photon is the difference between the energies of the levels, not the height of the initial level. Up high the levels are close together near zero, so the difference $E_5 - E_4$ is only about $0.31\\,\\text{eV}$ and the wavelength is long, about $4000\\,\\text{nm}$."
+        },
+        {
+          "text": "$3 \\to 2$, because it produces visible light, and visible light has the shortest wavelength of all.",
+          "feedback": "Visible light does not have the shortest wavelength: the wavelength of ultraviolet radiation is shorter than that of visible light. The photon of the transition $3 \\to 2$ has an energy of only about $1.89\\,\\text{eV}$ and a wavelength of $656\\,\\text{nm}$, whereas the transitions ending in the ground state are ultraviolet."
+        },
+        {
+          "text": "$4 \\to 1$, because the energy difference is the greatest, and a large photon energy means a short wavelength.",
+          "feedback": "Correct: the energy of the photon is the difference between the levels, and the wavelength is inversely proportional to the energy. The difference $E_4 - E_1 = 12.75\\,\\text{eV}$ is the greatest of the four, so the wavelength $97.3\\,\\text{nm}$ is the shortest.",
+          "correct": true
+        },
+        {
+          "text": "$2 \\to 1$, because a transition ending in the ground state is always the biggest jump and gives the greatest energy.",
+          "feedback": "There are many transitions ending in the ground state, and the greatest energy difference comes from the initial level that is higher up. The difference $E_2 - E_1 = 10.2\\,\\text{eV}$ is smaller than $E_4 - E_1 = 12.75\\,\\text{eV}$, so $2 \\to 1$ gives a longer wavelength."
+        }
+      ]
+    },
+    {
+      "id": "fy8-3-L1-07",
+      "level": 1,
+      "text": "The transitions of the hydrogen atom that end in the ground state $n = 1$ form the Lyman series. The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. Calculate the longest wavelength of the series in nanometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 122,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-08",
+      "level": 1,
+      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. A hydrogen atom on level $n = 2$ absorbs a photon and is excited to level $n = 4$. What is the energy of the absorbed photon in electron volts?",
+      "answer": 2.55,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "kind": [
+        "data"
+      ]
     }
   ],
   "level2": [
@@ -74,6 +123,97 @@
       "answer": 1.9,
       "unit": "eV",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy8-3-L2-05",
+      "level": 2,
+      "text": "The table shows four lines of the Balmer series of hydrogen. Each line is produced in a transition from level $n$ to level $2$, and the uncertainty of the wavelengths is $\\pm 0.5\\,\\text{nm}$. Denote the ionisation energy of hydrogen from the ground state by $E_\\text{ion}$, so that $E_n = -\\tfrac{E_\\text{ion}}{n^2}$ and the frequency of the photon is $f = \\tfrac{E_n - E_2}{h}$.\n\na) Calculate the frequencies of the lines, $f = \\tfrac{c}{\\lambda}$, and draw a graph of the points with $f$ as a function of $\\tfrac{1}{n^2}$. Fit a straight line to the points.\n\nb) Determine the slope of the fitted line and use it to deduce the ionisation energy $E_\\text{ion}$ in electron volts. Explain why the points should lie on a straight line.\n\nEnter the result of part b) in the box in electron volts ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 13.6,
+      "unit": "eV",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Balmer lines of hydrogen (example data)",
+        "columns": [
+          "$n$",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "3",
+            "656.7"
+          ],
+          [
+            "4",
+            "486.1"
+          ],
+          [
+            "5",
+            "434.5"
+          ],
+          [
+            "6",
+            "410.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-3-L2-06",
+      "level": 2,
+      "text": "The figure shows the energy-level diagram of an imaginary atom. The atom is in the ground state $E_1$. Photons of five different wavelengths are sent to the atom, and the table gives their wavelengths. The atom absorbs a photon only if the energy of the photon corresponds to the difference between some level above the ground state and the ground state ($\\pm 0.05\\,\\text{eV}$). How many of the photons in the table does the atom absorb?\n\nCalculate the energies of the photons and compare them with the energy differences read from the diagram. Enter in the box the number of photons absorbed ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "figure": "fy8-3/levels-task",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 3,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Photons sent to the atom (example data)",
+        "columns": [
+          "Photon",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "300"
+          ],
+          [
+            "B",
+            "413"
+          ],
+          [
+            "C",
+            "500"
+          ],
+          [
+            "D",
+            "207"
+          ],
+          [
+            "E",
+            "248"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-3-L2-07",
+      "level": 2,
+      "text": "A student solves a problem: “The electron of a hydrogen atom moves from level $n = 5$ to the ground state. On orbit $n = 5$ the electron is $5^2 = 25$ times farther from the nucleus than in the ground state, so the energy of the photon produced is $25$ times the ionisation energy of the ground state, $13.6\\,\\text{eV}$, that is $340\\,\\text{eV}$.” The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$.\n\na) Explain what is wrong in the student's reasoning.\n\nb) Calculate the energy of the photon correctly.\n\nEnter in the box the result of part b) in electron volts.",
+      "kind": [
+        "error"
+      ],
+      "answer": 13.1,
+      "unit": "eV",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +240,82 @@
       "answer": 6.8,
       "unit": "eV",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L3-04",
+      "level": 3,
+      "text": "Three emission lines were measured in the spectrum of a distant gas cloud. The cloud contains only hydrogen atoms, whose energy levels are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. All three lines are produced in transitions that end on the same level, but the initial levels are different levels. The uncertainty of the wavelengths is $\\pm 1\\,\\text{nm}$ ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).\n\na) Calculate the energies of the photons of the lines and deduce on which level $n$ the transitions end, and explain why the other levels do not work. Also find the initial level of each line.\n\nb) What is the minimum frequency a photon must have in order to ionise an atom from the level on which the transitions end? In which part of the spectrum is this limiting wavelength?\n\nEnter in the box the frequency of part b) in terahertz.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 365,
+      "unit": "THz",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Emission lines of the cloud (example data)",
+        "columns": [
+          "Line",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "I",
+            "1876"
+          ],
+          [
+            "II",
+            "1282"
+          ],
+          [
+            "III",
+            "1094"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-3-L3-05",
+      "level": 3,
+      "text": "Hydrogen gas in the ground state is illuminated with monochromatic ultraviolet light. Each atom absorbs one photon and is excited to the same higher level, from which it returns to the ground state emitting photons either directly or through intermediate levels. The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. The table shows the lines of the light emitted by the gas; the light of the source itself has been filtered out before the measurement. The uncertainty of the wavelengths is at most $1\\,\\text{nm}$ ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).\n\na) Calculate the energies of the photons of the lines and identify the initial and final level of each line.\n\nb) Deduce to which level the atoms were excited. Explain why the level of excitation cannot be higher.\n\nc) Calculate the wavelength of the ultraviolet source in nanometres.\n\nEnter in the box the result of part c).",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 97.3,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Emission lines of the gas (example data)",
+        "columns": [
+          "Line",
+          "$\\lambda\\,(\\text{nm})$"
+        ],
+        "rows": [
+          [
+            "a",
+            "102.6"
+          ],
+          [
+            "b",
+            "121.6"
+          ],
+          [
+            "c",
+            "486.1"
+          ],
+          [
+            "d",
+            "656.3"
+          ],
+          [
+            "e",
+            "1875"
+          ]
+        ]
+      }
     }
   ]
 }
