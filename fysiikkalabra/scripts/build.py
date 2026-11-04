@@ -904,7 +904,7 @@ def build_language(lang):
     about_body = render_md(about_md.read_text()) if about_md else f'<h1>{T("site.about")}</h1><p class="lead">{T("site.about_lead")}</p>'
     # in Kiviruukin lukio's colours under the school's logo (teacher 2026-11-04, after his school pages; site.css .about-page)
     h1 = re.match(r"\s*(<h1>.*?</h1>)", about_body, re.S)
-    hero = ('<header class="about-hero"><img class="about-logo" src="brand/kiviruukin-lukio-valkoinen.svg" alt="Kiviruukin lukio" width="216" height="105">'
+    hero = ('<header class="about-hero"><img class="about-logo" src="brand/kiviruukin-lukio-oikea-valkoinen.svg" alt="Kiviruukin lukio" width="175" height="100">'
             + (h1.group(1) if h1 else "") + '</header>')
     about_body = hero + (about_body[h1.end():] if h1 else about_body)
     (out / ABOUT).write_text(page(T("site.about"), f'<article class="about">{about_body}</article>',
