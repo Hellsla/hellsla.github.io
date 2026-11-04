@@ -150,7 +150,7 @@
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:**
 
-$$\begin{aligned} W_1 &= 0.5 \cdot (18.0 + 17.2)\,\text{N} \cdot 1.0\,\text{m} = 17.6\,\text{J} \\ W_2 &= 0.5 \cdot (17.2 + 15.1)\,\text{N} \cdot 1.0\,\text{m} = 16.15\,\text{J} \\ W_3 &= 0.5 \cdot (15.1 + 11.0)\,\text{N} \cdot 1.0\,\text{m} = 13.05\,\text{J} \\ W_4 &= 0.5 \cdot (11.0 + 6.0)\,\text{N} \cdot 1.0\,\text{m} = 8.5\,\text{J} \\ W &= 17.6\,\text{J} + 16.15\,\text{J} + 13.05\,\text{J} + 8.5\,\text{J} = 55.3\,\text{J} \end{aligned}$$
+$$\begin{aligned} W_1 &= 0.5 \cdot (18.0 + 17.2)\,\text{N} \cdot 1.0\,\text{m} \\ &= 17.6\,\text{J} \\ W_2 &= 0.5 \cdot (17.2 + 15.1)\,\text{N} \cdot 1.0\,\text{m} \\ &= 16.15\,\text{J} \\ W_3 &= 0.5 \cdot (15.1 + 11.0)\,\text{N} \cdot 1.0\,\text{m} \\ &= 13.05\,\text{J} \\ W_4 &= 0.5 \cdot (11.0 + 6.0)\,\text{N} \cdot 1.0\,\text{m} \\ &= 8.5\,\text{J} \\ W &= 17.6\,\text{J} + 16.15\,\text{J} + 13.05\,\text{J} + 8.5\,\text{J} \\ &= 55.3\,\text{J} \end{aligned}$$
 **Answer:** $55\,\text{J}$, two significant figures, because the width of a part $\Delta s = 1.0\,\text{m}$ and the final force $6.0\,\text{N}$ are given with two significant figures.
 **Reasonableness:** The average force over the whole $4.0\,\text{m}$ is $55.3\,\text{J} / 4.0\,\text{m} \approx 14\,\text{N}$, which is between the smallest ($6.0\,\text{N}$) and the greatest ($18.0\,\text{N}$) value of the force. Rough estimate: $18\,\text{N} \cdot 4.0\,\text{m} = 72\,\text{J}$ is an upper limit and $6\,\text{N} \cdot 4.0\,\text{m} = 24\,\text{J}$ a lower limit, and the result is between them.
 
@@ -162,7 +162,7 @@ $$\begin{aligned} W_1 &= 0.5 \cdot (18.0 + 17.2)\,\text{N} \cdot 1.0\,\text{m} =
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:**
 
-$$\begin{aligned} \textstyle\sum t &= 8.1\,\text{s} + 7.8\,\text{s} + 8.4\,\text{s} = 24.3\,\text{s} \\ t_\text{avg} &= \dfrac{24.3\,\text{s}}{3} = 8.1\,\text{s} \\ h &= 18 \cdot 0.17\,\text{m} = 3.06\,\text{m} \\ W &= 62\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2} \cdot 3.06\,\text{m} = 1861.2\,\text{J} \\ P &= \dfrac{1861.2\,\text{J}}{8.1\,\text{s}} = 229.8\,\text{W} \end{aligned}$$
+$$\begin{aligned} \textstyle\sum t &= 8.1\,\text{s} + 7.8\,\text{s} + 8.4\,\text{s} \\ &= 24.3\,\text{s} \\ t_\text{avg} &= \dfrac{24.3\,\text{s}}{3} = 8.1\,\text{s} \\ h &= 18 \cdot 0.17\,\text{m} = 3.06\,\text{m} \\ W &= 62\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2} \cdot 3.06\,\text{m} \\ &= 1861.2\,\text{J} \\ P &= \dfrac{1861.2\,\text{J}}{8.1\,\text{s}} \\ &= 229.8\,\text{W} \end{aligned}$$
 **Answer:** $230\,\text{W}$, two significant figures like the mass $62\,\text{kg}$ and the time $8.1\,\text{s}$.
 **Reasonableness:** Rough estimate: the weight is about $600\,\text{N}$ and the height about $3\,\text{m}$, so the work is about $1800\,\text{J}$ and the power $\tfrac{1800\,\text{J}}{8\,\text{s}} \approx 225\,\text{W}$. The range of the three time measurements $7.8\ldots 8.4\,\text{s}$ corresponds to a power of $222\ldots 239\,\text{W}$, so the result $230\,\text{W}$ is within this range. The power of a person climbing stairs quickly is hundreds of watts.
 
@@ -188,7 +188,7 @@ $$\begin{aligned} G &= 40\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2} = 
 **Conversions:** $10.0\,\text{cm} = 0.100\,\text{m}$, so that the work comes out in joules. Finally $h$ is converted to centimetres: $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:**
 
-$$\begin{aligned} W &= 0.5 \cdot 10.0\,\text{N} \cdot 0.100\,\text{m} = 0.500\,\text{J} \\ h &= \dfrac{0.500\,\text{J}}{0.20\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2}} = 0.2548\,\text{m} = 25.48\,\text{cm} \end{aligned}$$
+$$\begin{aligned} W &= 0.5 \cdot 10.0\,\text{N} \cdot 0.100\,\text{m} \\ &= 0.500\,\text{J} \\ h &= \dfrac{0.500\,\text{J}}{0.20\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2}} = 0.2548\,\text{m} \\ &= 25.48\,\text{cm} \end{aligned}$$
 **Answer:** a) the force is approximately proportional to the extension, $F \approx 1.0\,\tfrac{\text{N}}{\text{cm}} \cdot s$; b) $W = 0.50\,\text{J}$; c) $25\,\text{cm}$ ($25.5\,\text{cm}$ before rounding), two significant figures like the mass $0.20\,\text{kg}$.
 **Reasonableness:** If the force were $10.0\,\text{N}$ over the whole distance, the work would be $10.0\,\text{N} \cdot 0.100\,\text{m} = 1.0\,\text{J}$; the work of the triangle is half of this, because the average force is $5.0\,\text{N}$. The trapezium sum of the measured points gives the same: $0.020\,\text{m} \cdot 25.0\,\text{N} = 0.50\,\text{J}$. The weight of the object is $0.20\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \approx 2.0\,\text{N}$, and $2.0\,\text{N} \cdot 0.25\,\text{m} \approx 0.50\,\text{J}$.
 
@@ -201,6 +201,6 @@ $$\begin{aligned} W &= 0.5 \cdot 10.0\,\text{N} \cdot 0.100\,\text{m} = 0.500\,\
 **Conversions:** All quantities are in SI units. Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:**
 
-$$\begin{aligned} G &= 450\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2} = 4414.5\,\text{N} \\ P &= 4414.5\,\text{N} \cdot 0.815\,\dfrac{\text{m}}{\text{s}} = 3598\,\text{W} = 3.598\,\text{kW} \\ P t &= 3598\,\text{W} \cdot 8.0\,\text{s} = 28\,780\,\text{J} \\ m g h &= 4414.5\,\text{N} \cdot 6.5\,\text{m} = 28\,690\,\text{J} \end{aligned}$$
+$$\begin{aligned} G &= 450\,\text{kg} \cdot 9.81\,\dfrac{\text{m}}{\text{s}^2} \\ &= 4414.5\,\text{N} \\ P &= 4414.5\,\text{N} \cdot 0.815\,\dfrac{\text{m}}{\text{s}} = 3598\,\text{W} \\ &= 3.598\,\text{kW} \\ P t &= 3598\,\text{W} \cdot 8.0\,\text{s} \\ &= 28\,780\,\text{J} \\ m g h &= 4414.5\,\text{N} \cdot 6.5\,\text{m} \\ &= 28\,690\,\text{J} \end{aligned}$$
 **Answer:** $3.6\,\text{kW}$, two significant figures like the mass and the height measurements. Justifications: a) the height grows steadily, so the velocity is approximately constant, $v \approx 0.82\,\text{m/s}$; b) as the lesson says, at constant velocity the lifting force is equal to the weight, as in the derivation of the formula $W = m g h$; d) the works are $28.8\,\text{kJ}$ and $28.7\,\text{kJ}$, that is, they differ by less than one percent.
 **Reasonableness:** Rough estimate: the weight is about $4400\,\text{N}$ and the velocity about $0.8\,\text{m/s}$, so the power is about $3500\,\text{W}$. The comparison d) is consistent: the work $P t$ given by the fitted line and the work $m g h$ calculated from the point of the table differ by less than one percent. A power of a few kilowatts is believable for the lifting motor of a construction crane when only the lifting work is taken into account.

@@ -150,7 +150,7 @@
 **Muunnokset:** Voimat ovat newtoneina ja matkat metreinä. Muunnoksia ei siis tarvita.
 **Sijoitus:**
 
-$$\begin{aligned} W_1 &= 0{,}5 \cdot (18{,}0 + 17{,}2)\,\text{N} \cdot 1{,}0\,\text{m} = 17{,}6\,\text{J} \\ W_2 &= 0{,}5 \cdot (17{,}2 + 15{,}1)\,\text{N} \cdot 1{,}0\,\text{m} = 16{,}15\,\text{J} \\ W_3 &= 0{,}5 \cdot (15{,}1 + 11{,}0)\,\text{N} \cdot 1{,}0\,\text{m} = 13{,}05\,\text{J} \\ W_4 &= 0{,}5 \cdot (11{,}0 + 6{,}0)\,\text{N} \cdot 1{,}0\,\text{m} = 8{,}5\,\text{J} \\ W &= 17{,}6\,\text{J} + 16{,}15\,\text{J} + 13{,}05\,\text{J} + 8{,}5\,\text{J} = 55{,}3\,\text{J} \end{aligned}$$
+$$\begin{aligned} W_1 &= 0{,}5 \cdot (18{,}0 + 17{,}2)\,\text{N} \cdot 1{,}0\,\text{m} \\ &= 17{,}6\,\text{J} \\ W_2 &= 0{,}5 \cdot (17{,}2 + 15{,}1)\,\text{N} \cdot 1{,}0\,\text{m} \\ &= 16{,}15\,\text{J} \\ W_3 &= 0{,}5 \cdot (15{,}1 + 11{,}0)\,\text{N} \cdot 1{,}0\,\text{m} \\ &= 13{,}05\,\text{J} \\ W_4 &= 0{,}5 \cdot (11{,}0 + 6{,}0)\,\text{N} \cdot 1{,}0\,\text{m} \\ &= 8{,}5\,\text{J} \\ W &= 17{,}6\,\text{J} + 16{,}15\,\text{J} + 13{,}05\,\text{J} + 8{,}5\,\text{J} \\ &= 55{,}3\,\text{J} \end{aligned}$$
 **Vastaus:** $55\,\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, koska osan leveys $\Delta s = 1{,}0\,\text{m}$ ja loppuvoima $6{,}0\,\text{N}$ on annettu kahdella merkitsevällä numerolla.
 **Järkevyys:** Keskimääräinen voima koko $4{,}0\,\text{m}$:n matkalla on $55{,}3\,\text{J} / 4{,}0\,\text{m} \approx 14\,\text{N}$. Se on voiman pienimmän ($6{,}0\,\text{N}$) ja suurimman ($18{,}0\,\text{N}$) arvon välissä. Karkea arvio: $18\,\text{N} \cdot 4{,}0\,\text{m} = 72\,\text{J}$ on yläraja ja $6\,\text{N} \cdot 4{,}0\,\text{m} = 24\,\text{J}$ on alaraja. Tulos on niiden välissä.
 
@@ -162,7 +162,7 @@ $$\begin{aligned} W_1 &= 0{,}5 \cdot (18{,}0 + 17{,}2)\,\text{N} \cdot 1{,}0\,\t
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei siis tarvita.
 **Sijoitus:**
 
-$$\begin{aligned} \textstyle\sum t &= 8{,}1\,\text{s} + 7{,}8\,\text{s} + 8{,}4\,\text{s} = 24{,}3\,\text{s} \\ t_\text{ka} &= \dfrac{24{,}3\,\text{s}}{3} = 8{,}1\,\text{s} \\ h &= 18 \cdot 0{,}17\,\text{m} = 3{,}06\,\text{m} \\ W &= 62\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2} \cdot 3{,}06\,\text{m} = 1861{,}2\,\text{J} \\ P &= \dfrac{1861{,}2\,\text{J}}{8{,}1\,\text{s}} = 229{,}8\,\text{W} \end{aligned}$$
+$$\begin{aligned} \textstyle\sum t &= 8{,}1\,\text{s} + 7{,}8\,\text{s} + 8{,}4\,\text{s} \\ &= 24{,}3\,\text{s} \\ t_\text{ka} &= \dfrac{24{,}3\,\text{s}}{3} = 8{,}1\,\text{s} \\ h &= 18 \cdot 0{,}17\,\text{m} = 3{,}06\,\text{m} \\ W &= 62\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2} \cdot 3{,}06\,\text{m} \\ &= 1861{,}2\,\text{J} \\ P &= \dfrac{1861{,}2\,\text{J}}{8{,}1\,\text{s}} \\ &= 229{,}8\,\text{W} \end{aligned}$$
 **Vastaus:** $230\,\text{W}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa $62\,\text{kg}$ ja ajassa $8{,}1\,\text{s}$.
 **Järkevyys:** Karkea arvio: paino on noin $600\,\text{N}$ ja korkeus noin $3\,\text{m}$. Työ on silloin noin $1800\,\text{J}$ ja teho $\tfrac{1800\,\text{J}}{8\,\text{s}} \approx 225\,\text{W}$. Kolmen ajanoton vaihteluväli $7{,}8\ldots 8{,}4\,\text{s}$ vastaa tehoa $222\ldots 239\,\text{W}$. Tulos $230\,\text{W}$ on tämän välin sisällä. Portaita nopeasti nousevan ihmisen teho on satoja watteja.
 
@@ -188,7 +188,7 @@ $$\begin{aligned} G &= 40\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2} 
 **Muunnokset:** $10{,}0\,\text{cm} = 0{,}100\,\text{m}$, jotta työ tulee jouleina. Lopuksi $h$ muunnetaan senttimetreiksi: $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:**
 
-$$\begin{aligned} W &= 0{,}5 \cdot 10{,}0\,\text{N} \cdot 0{,}100\,\text{m} = 0{,}500\,\text{J} \\ h &= \dfrac{0{,}500\,\text{J}}{0{,}20\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2}} = 0{,}2548\,\text{m} = 25{,}48\,\text{cm} \end{aligned}$$
+$$\begin{aligned} W &= 0{,}5 \cdot 10{,}0\,\text{N} \cdot 0{,}100\,\text{m} \\ &= 0{,}500\,\text{J} \\ h &= \dfrac{0{,}500\,\text{J}}{0{,}20\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2}} = 0{,}2548\,\text{m} \\ &= 25{,}48\,\text{cm} \end{aligned}$$
 **Vastaus:** a) voima on likimain verrannollinen venymään, $F \approx 1{,}0\,\tfrac{\text{N}}{\text{cm}} \cdot s$; b) $W = 0{,}50\,\text{J}$; c) $25\,\text{cm}$ ($25{,}5\,\text{cm}$ ennen pyöristystä). Vastauksessa on kaksi merkitsevää numeroa, kuten massassa $0{,}20\,\text{kg}$.
 **Järkevyys:** Jos voima olisi koko matkan $10{,}0\,\text{N}$, työ olisi $10{,}0\,\text{N} \cdot 0{,}100\,\text{m} = 1{,}0\,\text{J}$. Kolmion työ on tästä puolet, koska keskimääräinen voima on $5{,}0\,\text{N}$. Mittauspisteiden puolisuunnikassumma antaa saman: $0{,}020\,\text{m} \cdot 25{,}0\,\text{N} = 0{,}50\,\text{J}$. Kappaleen paino on $0{,}20\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 2{,}0\,\text{N}$, ja $2{,}0\,\text{N} \cdot 0{,}25\,\text{m} \approx 0{,}50\,\text{J}$.
 
@@ -201,6 +201,6 @@ $$\begin{aligned} W &= 0{,}5 \cdot 10{,}0\,\text{N} \cdot 0{,}100\,\text{m} = 0{
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:**
 
-$$\begin{aligned} G &= 450\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2} = 4414{,}5\,\text{N} \\ P &= 4414{,}5\,\text{N} \cdot 0{,}815\,\dfrac{\text{m}}{\text{s}} = 3598\,\text{W} = 3{,}598\,\text{kW} \\ P t &= 3598\,\text{W} \cdot 8{,}0\,\text{s} = 28\,780\,\text{J} \\ m g h &= 4414{,}5\,\text{N} \cdot 6{,}5\,\text{m} = 28\,690\,\text{J} \end{aligned}$$
+$$\begin{aligned} G &= 450\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2} \\ &= 4414{,}5\,\text{N} \\ P &= 4414{,}5\,\text{N} \cdot 0{,}815\,\dfrac{\text{m}}{\text{s}} = 3598\,\text{W} \\ &= 3{,}598\,\text{kW} \\ P t &= 3598\,\text{W} \cdot 8{,}0\,\text{s} \\ &= 28\,780\,\text{J} \\ m g h &= 4414{,}5\,\text{N} \cdot 6{,}5\,\text{m} \\ &= 28\,690\,\text{J} \end{aligned}$$
 **Vastaus:** $3{,}6\,\text{kW}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa ja korkeusmittauksissa. Perustelut: a) korkeus kasvaa tasaisesti, joten nopeus on likimain vakio, $v \approx 0{,}82\,\text{m/s}$; b) oppitunnin mukaan tasaisella nopeudella nostovoima on yhtä suuri kuin paino, kuten kaavan $W = m g h$ johdossa; d) työt ovat $28{,}8\,\text{kJ}$ ja $28{,}7\,\text{kJ}$, eli ne eroavat alle prosentin.
 **Järkevyys:** Karkea arvio: paino on noin $4400\,\text{N}$ ja nopeus noin $0{,}8\,\text{m/s}$, joten teho on noin $3500\,\text{W}$. Vertailu d) on johdonmukainen. Sovitetun suoran antama työ $P t$ ja taulukon pisteestä laskettu $m g h$ eroavat alle prosentin. Kilowattien teho on uskottava rakennusnosturin nostomoottorille, kun otetaan huomioon vain nostotyö.

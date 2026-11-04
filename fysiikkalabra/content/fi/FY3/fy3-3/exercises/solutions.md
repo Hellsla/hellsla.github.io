@@ -206,7 +206,7 @@ $$\begin{aligned}
 s_\text{korva} &= (37{,}2 - 36{,}8) : 2 = 0{,}2\,\text{K} \\
 s_\text{otsa} &= (36{,}7 - 36{,}0) : 2 = 0{,}35\,\text{K} \\
 s_\text{suu} &= (37{,}1 - 36{,}9) : 2 = 0{,}1\,\text{K} \\
-\theta_\text{otsa,korj} &= 37{,}6 - 0{,}6 = 37{,}0\,{}^\circ\text{C}
+\theta_\text{otsa,korj} &= 37{,}6 - 0{,}6 \\ &= 37{,}0\,{}^\circ\text{C}
 \end{aligned}$$
 **Vastaus:** $0{,}6\,\text{K}$, yksi merkitsevä numero, koska lukemat on annettu $0{,}1\,\text{K}$:n tarkkuudella. Ero on systemaattinen, koska jokainen otsalukema ($36{,}0\ldots 36{,}7\,{}^\circ\text{C}$) on pienempi kuin jokainen suulukema ($36{,}9\ldots 37{,}1\,{}^\circ\text{C}$), ja ero $0{,}6\,\text{K}$ on suurempi kuin otsamittarin hajonta $0{,}35\,\text{K}$. Kun suu näyttää $37{,}6\,{}^\circ\text{C}$, otsamittari näyttäisi keskimäärin $37{,}0\,{}^\circ\text{C}$ eli alle kuumerajan, joten kuume jäisi havaitsematta, vaikka henkilöllä on kuume.
 **Järkevyys:** Korvamittarin keskiarvo on sama kuin viitteen, ja sen hajonta $0{,}2\,\text{K}$ on pieni, joten korvamittari on tässä aineistossa luotettavin. Otsamittarin keskiarvo $36{,}4\,{}^\circ\text{C}$ on viitettä pienempi, ja kaikki viisi otsalukemaa ovat viitteen pienintä lukemaa $36{,}9\,{}^\circ\text{C}$ pienempiä. Toistaminen pienentää keskiarvon satunnaista virhettä mutta ei poista systemaattista virhettä, joten viidenkin mittauksen keskiarvo on kuumetta arvioitaessa liian pieni.

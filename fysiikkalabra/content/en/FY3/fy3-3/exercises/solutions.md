@@ -206,7 +206,7 @@ $$\begin{aligned}
 s_\text{ear} &= (37.2 - 36.8) : 2 = 0.2\,\text{K} \\
 s_\text{forehead} &= (36.7 - 36.0) : 2 = 0.35\,\text{K} \\
 s_\text{mouth} &= (37.1 - 36.9) : 2 = 0.1\,\text{K} \\
-\theta_\text{forehead,corr} &= 37.6 - 0.6 = 37.0\,{}^\circ\text{C}
+\theta_\text{forehead,corr} &= 37.6 - 0.6 \\ &= 37.0\,{}^\circ\text{C}
 \end{aligned}$$
 **Answer:** $0.6\,\text{K}$, one significant figure, because the readings are given to the accuracy of $0.1\,\text{K}$. The difference is systematic, because every forehead reading ($36.0\ldots 36.7\,{}^\circ\text{C}$) is lower than every mouth reading ($36.9\ldots 37.1\,{}^\circ\text{C}$), and the difference $0.6\,\text{K}$ is larger than the spread of the forehead thermometer, $0.35\,\text{K}$. When the mouth shows $37.6\,{}^\circ\text{C}$, the forehead thermometer would show $37.0\,{}^\circ\text{C}$ on average, which is below the fever limit, so the fever would go undetected although the person has a fever.
 **Reasonableness:** The mean of the ear thermometer is the same as that of the reference, and its spread of $0.2\,\text{K}$ is small, so the ear thermometer is the most reliable in this data. The mean of the forehead thermometer, $36.4\,{}^\circ\text{C}$, is lower than the reference, and all five forehead readings are lower than the lowest reference reading, $36.9\,{}^\circ\text{C}$. Repeating reduces the random error of the mean but does not remove the systematic error, so even the mean of five measurements is too low for assessing a fever.
