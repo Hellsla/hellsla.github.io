@@ -27,12 +27,12 @@ m_bussi = 30 * 36 * 74 / 25                            # bus per passenger: 30 l
 a["fy2-8-L3-03"] = m_bensa / m_bussi                   # car alone / bus per passenger = 13 248 / 3196,8 = 4,14 -> 4,1
 # Exercise bank additions (teacher 2026-11-04): L1-06, L1-07 and L2-07 are multiple choice (no number)
 a["fy2-8-L1-08"] = 12 * 40000 / 1e3                    # nuclear, school 40 000 kWh: m = 12 · 40 000 g = 480 000 g -> 480 kg
-a["fy2-8-L2-05"] = (414.2 - 369.7) / (2020 - 2000)     # CO2 data: slope 44,5 ppm / 20 a = 2,225 -> 2,2 ppm/a
+a["fy2-8-L2-05"] = (414 - 380) / (2020 - 2005)          # CO2 data (NOAA, rounded): slope 34 ppm / 15 a = 2,27 -> 2,3 ppm/a
 m10, m20 = 30 + 12 + 10 + 6 + 3, 18 + 10 + 9 + 6 + 2   # sector data: totals 61 Mt and 45 Mt
 a["fy2-8-L2-06"] = (m10 - m20) / m10 * 100             # reduction 16 / 61 = 26,2 % -> 26 %
-k_viim = (414.2 - 369.7) / 20                          # last period 2000-2020: 2,225 ppm/a (earlier: 1,095 and 1,545)
-a["fy2-8-L3-04"] = 414.2 + k_viim * 20                 # forecast 2040: 414,2 + 44,5 = 458,7 -> 459 ppm (whole-data slope 1,62 gives 446,6)
+k_viim = (414 - 370) / 20                                # last period 2000-2020: 2,2 ppm/a (earlier: 1,1 and 1,55)
+a["fy2-8-L3-04"] = 414 + k_viim * 20                    # forecast 2040: 414 + 44 = 458 ppm (whole-data slope 97/60 gives 446)
 m_nyt = (820 * 40 + 490 * 30 + 230 * 20 + 12 * 10) * 1e6 / 1e6   # g/kWh · GWh -> t: 52 220 t
-m_uusi = (12 * 40 + 490 * 30 + 230 * 20 + 12 * 10) * 1e6 / 1e6   # coal replaced by wind: 19 900 t
-a["fy2-8-L3-05"] = (m_nyt - m_uusi) / m_nyt * 100      # reduction 32 320 / 52 220 = 61,9 % -> 62 %
+m_uusi = (490 * 40 + 230 * 20 + 12 * 40) * 1e6 / 1e6            # coal -> 30 GWh wind + 10 GWh gas: 24 680 t
+a["fy2-8-L3-05"] = (m_nyt - m_uusi) / m_nyt * 100       # reduction 27 540 / 52 220 = 52,7 % -> 53 %
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

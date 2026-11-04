@@ -26,14 +26,14 @@ E_h = H["turve"] * 36 * 1000                              # 36 t/h = 36 000 kg p
 a["fy2-5-L3-03"] = 0.35 * E_h / 3600                      # E_hyöty = 126 000 MJ per 3600 s = 35 MJ/s = 35 MW
 # Bank additions (L1-06 and L2-06 are multiple choice: no number)
 a["fy2-5-L1-07"] = 255 / H["pelletti"]                    # m = E : H = 255 : 17 = 15,0 kg
-a["fy2-5-L1-08"] = (H["maakaasu"] * 3.0) / 3.6            # E = 48 · 3,0 = 144 MJ; 144 : 3,6 = 40 kWh
+a["fy2-5-L1-08"] = 144 / 3.6                            # given E = 144 MJ; 1 kWh = 3,6 MJ (exact): 144 : 3,6 = 40 kWh
 H_w = {20: 14.7, 40: 10.4}                                # example table: H (MJ/kg) at moisture 20 % and 40 %
 a["fy2-5-L2-05"] = 200 / H_w[40] - 200 / H_w[20]          # 200 : 10,4 = 19,23 kg; 200 : 14,7 = 13,61 kg; difference 5,62 kg -> 5,6 kg
-slope = (9.40 - 12.00) / (40 - 0)                         # kg/min from the line through (0, 12,00) and (40, 9,40): -0,065
+slope = (9.40 - 12.00) / (40 - 0)                         # kg/min from the fitted line's ends (0, 12,00) and (40, 9,40): -0,065
 a["fy2-5-L2-07"] = H["pelletti"] * (-slope) / 60 * 1000   # 17 MJ/kg · 0,065 kg/min : 60 s/min = 0,01842 MJ/s = 18,4 kW -> 18 kW
 kWh_year = 2100 + 1900 + 1600 + 1100 + 600 + 250 + 200 + 250 + 600 + 1100 + 1600 + 2000   # 13 300 kWh
 E_year = kWh_year * 3.6                                   # 47 880 MJ useful
 a["fy2-5-L3-04"] = E_year / 0.85 / H["pelletti"]          # pellets: 47 880 : 0,85 : 17 = 3313 kg -> 3300 kg
 # L3-04 c) oil 47 880 : 0,90 : 43 = 1237 kg; d) eta 0,70: 4023 kg, i.e. 710 kg more
-a["fy2-5-L3-05"] = 36000 / 0.70 / H["polttopuu"] - 36000 / 0.90 / H["pelletti"]   # wood 3429 kg - pellets 2353 kg = 1076 kg -> 1100 kg
+a["fy2-5-L3-05"] = 36000 / 0.70 / H["polttopuu"] - 36000 / 0.85 / H["pelletti"]   # wood 3429 kg - pellets 2491 kg = 937 kg -> 940 kg (oil 930 kg; pellets at eta 0,75: 2824 kg)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

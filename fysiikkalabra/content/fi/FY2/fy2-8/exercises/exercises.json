@@ -48,55 +48,55 @@
       "kind": [
         "concept"
       ],
-      "answer": "Kasvihuonekaasut päästävät Auringon säteilyn suurelta osin läpi mutta hidastavat maanpinnan lämpösäteilyn pääsyä avaruuteen.",
+      "answer": "Kasvihuonekaasut päästävät Auringon säteilyn läpi mutta hidastavat maanpinnan lämpösäteilyn poistumista.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Ilmakehän kaasut heijastavat suurimman osan Auringon säteilystä takaisin avaruuteen.",
-          "feedback": "Näin ei ole. Suuri osa Auringon säteilystä kulkee ilmakehän läpi maanpinnalle ja lämmittää sen. Kasvihuonekaasut vaikuttavat vasta maanpinnan lähettämään lämpösäteilyyn."
+          "text": "Ilmakehän kaasut heijastavat suurimman osan Auringon säteilystä takaisin avaruuteen ennen maanpintaa.",
+          "feedback": "Näin ei ole. Suuri osa Auringon säteilystä kulkee ilmakehän läpi maanpinnalle ja lämmittää sen. Kasvihuonekaasut vaikuttavat ennen kaikkea maanpinnan lähettämään lämpösäteilyyn."
         },
         {
-          "text": "Kasvihuonekaasut päästävät Auringon säteilyn suurelta osin läpi mutta hidastavat maanpinnan lämpösäteilyn pääsyä avaruuteen.",
-          "feedback": "Oikein: maanpinta lämpenee Auringon säteilystä ja lähettää lämpösäteilyä, jonka kasvihuonekaasut hidastavat. Siksi keskilämpötila on noin $+15\\,{}^\\circ\\text{C}$ eikä noin $-18\\,{}^\\circ\\text{C}$.",
-          "correct": true
+          "text": "Ilmakehä imee kaiken Auringon säteilyn itseensä ja lämmittää sillä maanpintaa alhaalta päin.",
+          "feedback": "Ilmakehä ei imekään kaikkea säteilyä: suuri osa Auringon säteilystä pääsee suoraan maanpinnalle ja lämmittää sen."
         },
         {
-          "text": "Ilmakehä tuottaa itse lämpöenergiaa ja lämmittää sillä maanpintaa.",
+          "text": "Ilmakehä tuottaa itse lämpöenergiaa ja lämmittää sillä maanpintaa sekä päivällä että yöllä.",
           "feedback": "Ilmakehä ei ole energianlähde. Maanpinnan lämpenemisen energia tulee Auringosta, ja ilmakehä vain hidastaa energian poistumista."
         },
         {
-          "text": "Ilmakehässä on aukko, jonka kautta Auringon säteily pääsee tavallista enemmän maanpinnalle.",
-          "feedback": "Aukko ei kuvaa kasvihuoneilmiötä. Ilmiö perustuu siihen, että kaasut hidastavat maanpinnan lämpösäteilyn poistumista, ei siihen, että Auringon säteilyä pääsisi läpi tavallista enemmän."
+          "text": "Kasvihuonekaasut päästävät Auringon säteilyn läpi mutta hidastavat maanpinnan lämpösäteilyn poistumista.",
+          "feedback": "Oikein: maanpinta lämpenee Auringon säteilystä ja lähettää lämpösäteilyä, jonka kasvihuonekaasut hidastavat. Siksi keskilämpötila on noin $+15\\,{}^\\circ\\text{C}$ eikä noin $-18\\,{}^\\circ\\text{C}$.",
+          "correct": true
         }
       ]
     },
     {
       "id": "fy2-8-L1-07",
       "level": 1,
-      "text": "Mikä seuraavista väitteistä koskee ilmastoa eikä säätä?",
+      "text": "Mikä seuraavista väitteistä koskee ilmastoa eikä säätä? Väitteet ovat esimerkkejä, eivät mittaustuloksia.",
       "kind": [
         "concept"
       ],
-      "answer": "Esimerkkiväite: Rovaniemellä tammikuun keskilämpötila on kolmenkymmenen vuoden keskiarvona noin $-10\\,{}^\\circ\\text{C}$.",
+      "answer": "Oulussa tammikuun keskilämpötila on vuosien 1991–2020 jaksolla noin $-10\\,{}^\\circ\\text{C}$.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Tiistaina Oulussa oli aamulla pakkasta ja iltapäivällä tuli räntää.",
-          "feedback": "Tämä kuvaa yhden päivän tilannetta tietyssä paikassa, joten se on säätä. Sää vaihtelee tunnista ja päivästä toiseen."
-        },
-        {
-          "text": "Tämän viikon sää oli Suomessa tavallista lämpimämpi kuin viime viikolla.",
-          "feedback": "Viikkojen vertailu kuvaa lyhyttä ajanjaksoa, joten se on säätä. Ilmastosta puhutaan vasta, kun tarkastellaan pitkää ajanjaksoa."
-        },
-        {
-          "text": "Esimerkkiväite: Rovaniemellä tammikuun keskilämpötila on kolmenkymmenen vuoden keskiarvona noin $-10\\,{}^\\circ\\text{C}$.",
+          "text": "Oulussa tammikuun keskilämpötila on vuosien 1991–2020 jaksolla noin $-10\\,{}^\\circ\\text{C}$.",
           "feedback": "Oikein: ilmasto on sään pitkän ajan keskiarvo ja vaihtelu tietyllä alueella, tyypillisesti vähintään kolmenkymmenen vuoden ajalta.",
           "correct": true
         },
         {
-          "text": "Viime yönä Kuopiossa satoi lunta kymmenen senttimetriä.",
+          "text": "Oulussa oli tiistaina aamulla pakkasta $-10\\,{}^\\circ\\text{C}$ ja iltapäivällä tuli räntää.",
+          "feedback": "Tämä kuvaa yhden päivän tilannetta tietyssä paikassa, joten se on säätä. Sää vaihtelee tunnista ja päivästä toiseen."
+        },
+        {
+          "text": "Tämän viikon keskilämpötila Suomessa oli $3\\,{}^\\circ\\text{C}$ korkeampi kuin viime viikolla.",
+          "feedback": "Viikkojen vertailu kuvaa lyhyttä ajanjaksoa, joten se on säätä. Ilmastosta puhutaan vasta, kun tarkastellaan pitkää ajanjaksoa."
+        },
+        {
+          "text": "Viime yönä Kuopiossa satoi lunta $10\\,\\text{cm}$, ja aamulla oli $-5\\,{}^\\circ\\text{C}$.",
           "feedback": "Tämä on yksittäinen tapahtuma tietyssä paikassa ja ajassa, joten se on säätä."
         }
       ]
@@ -146,40 +146,35 @@
     {
       "id": "fy2-8-L2-05",
       "level": 2,
-      "text": "Taulukossa on ilmakehän hiilidioksidipitoisuus $c$ eri vuosina (esimerkkiaineisto, pyöristetty Mauna Loan mittausaseman vuosikeskiarvoista). Oletetaan, että pitoisuus kasvaa vuosien $2000$ ja $2020$ välillä tasaisesti, eli mallina on suora. Kuinka monta ppm pitoisuus kasvaa tämän mallin mukaan keskimäärin vuodessa? Anna vastaus yksikössä ppm/a.",
+      "text": "Taulukossa on ilmakehän hiilidioksidipitoisuus $c$ eri vuosina (NOAA:n Mauna Loan mittausaseman vuosikeskiarvot, pyöristetty kokonaisiksi ppm-arvoiksi). Oletetaan, että pitoisuus kasvaa vuosien $2005$ ja $2020$ välillä tasaisesti, eli mallina on suora. Kuinka monta ppm pitoisuus kasvaa tämän mallin mukaan keskimäärin vuodessa? Anna vastaus yksikössä ppm/a.",
       "kind": [
-        "data",
-        "graph"
+        "data"
       ],
-      "answer": 2.2,
+      "answer": 2.3,
       "unit": "ppm/a",
       "tolerance": 0.03,
       "data": {
-        "caption": "Ilmakehän hiilidioksidipitoisuus (esimerkkiaineisto)",
+        "caption": "Ilmakehän hiilidioksidipitoisuus, Mauna Loa (NOAA)",
         "columns": [
           "$t\\,(\\text{a})$",
           "$c\\,(\\text{ppm})$"
         ],
         "rows": [
           [
-            "2000",
-            "369.7"
-          ],
-          [
             "2005",
-            "379.8"
+            "380"
           ],
           [
             "2010",
-            "389.9"
+            "390"
           ],
           [
             "2015",
-            "400.8"
+            "401"
           ],
           [
             "2020",
-            "414.2"
+            "414"
           ]
         ]
       }
@@ -237,26 +232,26 @@
       "kind": [
         "error"
       ],
-      "answer": "Tulos $1640$ on grammoina, joten vastaus on $1640 \\cdot 0{,}001\\,\\text{kg} = 1{,}64\\,\\text{kg}$.",
+      "answer": "Tulos $1640$ on grammoina eikä kilogrammoina, joten oikea vastaus on $1{,}6\\,\\text{kg}$.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Päästökerroin pitäisi jakaa energialla eikä kertoa sillä.",
+          "text": "Päästökerroin pitäisi jakaa energialla eikä kertoa sillä, jolloin tulos olisi pienempi.",
           "feedback": "Päästö saadaan kertomalla päästökerroin energialla, $m = e \\cdot E$. Kertolasku oli oikein: yksikkö $\\text{g/kWh} \\cdot \\text{kWh}$ antaa grammat."
         },
         {
-          "text": "Energia pitäisi ensin muuttaa megajouleiksi, ja vasta sitten kertoa päästökertoimella.",
+          "text": "Energia pitäisi muuttaa megajouleiksi ennen kertomista, koska kerroin sisältää energian yksikön.",
           "feedback": "Muunnosta ei tarvita, koska päästökertoimen yksikkö on $\\text{g/kWh}$ ja energia on jo kilowattitunteina. Kilowattitunnit supistuvat suoraan."
         },
         {
-          "text": "Tulos $1640$ on grammoina, joten vastaus on $1640 \\cdot 0{,}001\\,\\text{kg} = 1{,}64\\,\\text{kg}$.",
+          "text": "Tulos $1640$ on grammoina eikä kilogrammoina, joten oikea vastaus on $1{,}6\\,\\text{kg}$.",
           "feedback": "Oikein: kilowattitunnit supistuvat ja jäljelle jäävät grammat. Opiskelija unohti yksikkömuunnoksen, ja vastaus oli tuhatkertainen.",
           "correct": true
         },
         {
-          "text": "Kerroin $820\\,\\text{g/kWh}$ koskee vain yhtä kilowattituntia, joten kahden kilowattitunnin päästö on silti $820\\,\\text{g}$.",
-          "feedback": "Päästö on suoraan verrannollinen energiaan: kaksinkertainen energia tuottaa kaksinkertaisen päästön, $2{,}0 \\cdot 820\\,\\text{g} = 1640\\,\\text{g}$."
+          "text": "Tulos $1640$ on milligrammoina eikä grammoina, joten oikea vastaus on $0{,}0016\\,\\text{kg}$.",
+          "feedback": "Yksikkö $\\text{g/kWh} \\cdot \\text{kWh}$ antaa grammat, ei milligrammoja. Tulos $1640\\,\\text{g}$ on $1{,}6\\,\\text{kg}$."
         }
       ]
     }
@@ -289,18 +284,17 @@
     {
       "id": "fy2-8-L3-04",
       "level": 3,
-      "text": "Taulukossa on ilmakehän hiilidioksidipitoisuus $c$ eri vuosina (esimerkkiaineisto, pyöristetty Mauna Loan mittausaseman vuosikeskiarvoista).\n\na) Laske pitoisuuden keskimääräinen kasvunopeus kullakin kahdenkymmenen vuoden jaksolla.\n\nb) Ennusta pitoisuus vuonna $2040$ suoralla, joka jatkaa viimeisen jakson ($2000$–$2020$) kasvunopeudella pisteestä $2020$. Anna ennuste yksikössä ppm.\n\nc) Vertaa ennustetta ennusteeseen, joka saataisiin koko aineiston kasvunopeudella ($1960$–$2020$), ja perustele, kumpi ennuste on uskottavampi ja kuinka pitkälle suoraan mallina voi luottaa.",
+      "text": "Taulukossa on ilmakehän hiilidioksidipitoisuus $c$ eri vuosina (NOAA:n Mauna Loan mittausaseman vuosikeskiarvot, pyöristetty kokonaisiksi ppm-arvoiksi).\n\na) Laske pitoisuuden keskimääräinen kasvunopeus kullakin kahdenkymmenen vuoden jaksolla.\n\nb) Ennusta pitoisuus vuonna $2040$ suoralla, joka jatkaa viimeisen jakson ($2000$–$2020$) kasvunopeudella pisteestä $2020$. Anna ennuste yksikössä ppm.\n\nc) Vertaa ennustetta ennusteeseen, joka saataisiin koko aineiston kasvunopeudella ($1960$–$2020$), ja perustele, kumpi ennuste on uskottavampi ja kuinka pitkälle suoraan mallina voi luottaa.",
       "kind": [
         "data",
-        "graph",
         "model",
         "reasoning"
       ],
-      "answer": 459,
+      "answer": 458,
       "unit": "ppm",
       "tolerance": 0.01,
       "data": {
-        "caption": "Ilmakehän hiilidioksidipitoisuus (esimerkkiaineisto)",
+        "caption": "Ilmakehän hiilidioksidipitoisuus, Mauna Loa (NOAA)",
         "columns": [
           "$t\\,(\\text{a})$",
           "$c\\,(\\text{ppm})$"
@@ -308,19 +302,19 @@
         "rows": [
           [
             "1960",
-            "316.9"
+            "317"
           ],
           [
             "1980",
-            "338.8"
+            "339"
           ],
           [
             "2000",
-            "369.7"
+            "370"
           ],
           [
             "2020",
-            "414.2"
+            "414"
           ]
         ]
       }
@@ -328,13 +322,13 @@
     {
       "id": "fy2-8-L3-05",
       "level": 3,
-      "text": "Esimerkkikaupungin sähköntuotanto on vuodessa taulukon mukainen. Päästöt lasketaan oppitunnin elinkaaren päästökertoimilla. Kaupunki suunnittelee korvaavansa kivihiilisähkön kokonaan tuulisähköllä niin, että tuotettu energia pysyy samana.\n\na) Laske nykyiset vuotuiset kokonaispäästöt tonneina.\n\nb) Kuinka monta prosenttia kokonaispäästöt pienenevät suunnitelmassa? Anna vastaus prosentteina.\n\nc) Perustele, miksi ilmakehän hiilidioksidipitoisuus voi silti jatkaa kasvuaan useita vuosia päästöjen vähenemisen jälkeen, ja mainitse yksi asia, jota päästökerroin ei kerro tuulisähkön lisäämisestä.",
+      "text": "Esimerkkikaupungin sähköntuotanto on vuodessa taulukon mukainen. Päästökertoimet ovat oppitunnin taulukosta: kivihiili $820\\,\\text{g/kWh}$, maakaasu $490\\,\\text{g/kWh}$, biomassa $230\\,\\text{g/kWh}$ ja tuulivoima $12\\,\\text{g/kWh}$. Kaupunki suunnittelee korvaavansa kivihiilisähkön kokonaan: tuulivoimalla tuotetaan $30\\,\\text{GWh}$ ja loput $10\\,\\text{GWh}$ maakaasulla, koska tuuli ei aina riitä. Tuotettu energia pysyy samana. Luonnon nielut (meret ja kasvillisuus) sitovat vain osan hiilidioksidipäästöistä.\n\na) Laske nykyiset vuotuiset kokonaispäästöt tonneina.\n\nb) Kuinka monta prosenttia kokonaispäästöt pienenevät suunnitelmassa? Anna vastaus prosentteina.\n\nc) Kuinka monta prosenttiyksikköä pienempi vähennys on kuin jos koko $40\\,\\text{GWh}$ tuotettaisiin tuulivoimalla?\n\nd) Perustele, miksi ilmakehän hiilidioksidipitoisuus voi silti jatkaa kasvuaan useita vuosia päästöjen vähenemisen jälkeen, ja mainitse yksi asia, jota päästökerroin ei kerro tuulisähkön lisäämisestä.",
       "kind": [
         "data",
         "model",
         "reasoning"
       ],
-      "answer": 62,
+      "answer": 53,
       "unit": "%",
       "tolerance": 0.03,
       "data": {

@@ -44,30 +44,30 @@
     {
       "id": "fy2-6-L1-06",
       "level": 1,
-      "text": "Mikä seuraavista energialähteistä on uusiutumaton?",
+      "text": "Mikä seuraavista energialähteistä on uusiutuva?",
       "kind": [
         "concept"
       ],
-      "answer": "Kivihiili",
+      "answer": "Tuuli",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Tuuli",
-          "feedback": "Tuuli on uusiutuva: Aurinko lämmittää ilmakehää jatkuvasti, ja tuulen energiaa voi käyttää loppumatta. Tuuli on silti sääriippuvainen, joten uusiutuva ei tarkoita aina saatavilla olevaa."
+          "text": "Uraani",
+          "feedback": "Uraani ei ole uusiutuva: uraanimalmia on rajallinen määrä, eikä sitä synny lisää ihmisen mittakaavassa. Uraanilla tuotettu ydinvoima ei silti päästä hiilidioksidia käytön aikana."
         },
         {
           "text": "Kivihiili",
-          "feedback": "Oikein: kivihiili on syntynyt miljoonien vuosien aikana, eikä sitä synny lisää samaa tahtia kuin sitä poltetaan. Se on uusiutumaton fossiilinen polttoaine, ja sen polttaminen vapauttaa hiilidioksidia.",
+          "feedback": "Kivihiili ei ole uusiutuva: se on syntynyt miljoonien vuosien aikana, eikä sitä synny lisää samaa tahtia kuin sitä poltetaan. Sen polttaminen vapauttaa hiilidioksidia."
+        },
+        {
+          "text": "Tuuli",
+          "feedback": "Oikein: Aurinko lämmittää ilmakehää jatkuvasti, joten tuulen energiaa voi käyttää loppumatta. Tuuli on silti sääriippuvainen, joten uusiutuva ei tarkoita aina saatavilla olevaa.",
           "correct": true
         },
         {
-          "text": "Virtaava vesi",
-          "feedback": "Virtaava vesi on uusiutuva: veden kiertokulku jatkuu, koska Aurinko haihduttaa vettä ja sade täyttää joet uudelleen. Vesivoimaa käytetään vuodesta toiseen."
-        },
-        {
-          "text": "Auringon säteily",
-          "feedback": "Auringon säteily on uusiutuva energialähde: Aurinko säteilee jatkuvasti, eikä säteilyn käyttö vähennä sitä, mitä Maahan saapuu."
+          "text": "Maakaasu",
+          "feedback": "Maakaasu ei ole uusiutuva: se on fossiilinen polttoaine, joka on syntynyt miljoonien vuosien kuluessa. Sen polttaminen vapauttaa hiilidioksidia."
         }
       ]
     },
@@ -78,21 +78,21 @@
       "kind": [
         "concept"
       ],
-      "answer": "Voimalaitos, jonka tehoa voi nostaa ja laskea nopeasti kulutuksen mukaan, kuten vesivoimala.",
+      "answer": "Voimalaitos, jonka tehoa voi muuttaa nopeasti, kuten vesivoimala.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Voimalaitos, joka tuottaa aina samalla teholla koko vuoden, kuten suuri ydinvoimala.",
-          "feedback": "Tasaisesti tuottava voimala on perusvoimaa. Sen tehoa ei yleensä muuteta kulutuksen mukaan, joten se ei ole säätövoimaa."
-        },
-        {
-          "text": "Voimalaitos, jonka tehoa voi nostaa ja laskea nopeasti kulutuksen mukaan, kuten vesivoimala.",
+          "text": "Voimalaitos, jonka tehoa voi muuttaa nopeasti, kuten vesivoimala.",
           "feedback": "Oikein: säätövoima on tuotantoa, jonka tehoa voidaan muuttaa tarpeen mukaan. Vesivoimalaitoksen tehoa voi lisätä tai vähentää nopeasti virtausta säätämällä, ja siksi se sopii tuulivoiman vaihtelun tasapainottamiseen.",
           "correct": true
         },
         {
-          "text": "Voimalaitos, jonka teho vaihtelee sään mukaan, kuten tuulivoimala tai aurinkopuisto.",
+          "text": "Voimalaitos, joka tuottaa tasaisesti koko vuoden, kuten ydinvoimala.",
+          "feedback": "Tasaisesti tuottava voimala on perusvoimaa. Sen tehoa ei yleensä muuteta kulutuksen mukaan, joten se ei ole säätövoimaa."
+        },
+        {
+          "text": "Voimalaitos, jonka teho vaihtelee sään mukaan, kuten tuulivoimala.",
           "feedback": "Sääriippuvaisen voimalan teho vaihtelee, mutta sitä ei voi päättää: tuuli ja aurinko eivät tottele kulutusta. Säätövoimalla teho muutetaan tarkoituksella, ja siksi sääriippuvainen tuotanto tarvitsee säätövoimaa rinnalleen."
         }
       ]
@@ -104,7 +104,7 @@
       "kind": [
         "reasoning"
       ],
-      "answer": 2750,
+      "answer": 2800,
       "unit": "h",
       "tolerance": 0.02
     }
@@ -149,10 +149,10 @@
         "data",
         "reasoning"
       ],
-      "answer": 22.8,
+      "answer": 23,
       "unit": "prosenttiyksikköä",
       "tolerance": 0.02,
-      "text": "Taulukossa on esimerkkilukuina (esimerkkiaineisto, ei oikean maan tilasto) maan sähköntuotanto lähteittäin kahtena vuonna, joiden välillä on kymmenen vuotta. Laske tuulivoiman osuus kokonaistuotannosta kummallekin vuodelle ja osuuden muutos prosenttiyksikköinä. Vastaa muutoksella. Minkä tuotantotavan energia väheni eniten, ja mitä tämä kertoo tuotantorakenteen muutoksesta?",
+      "text": "Taulukossa on esimerkkilukuina (esimerkkiaineisto, ei oikean maan tilasto) maan sähköntuotanto lähteittäin kahtena vuonna, joiden välillä on kymmenen vuotta. Laske tuulivoiman osuus kokonaistuotannosta kummallekin vuodelle ja osuuden muutos. Anna vastaus muutoksena prosenttiyksikköinä. Minkä tuotantotavan energia väheni eniten, ja mitä tämä kertoo tuotantorakenteen muutoksesta?",
       "data": {
         "caption": "Esimerkkimaan sähköntuotanto lähteittäin",
         "columns": [
@@ -194,7 +194,7 @@
       "answer": 33,
       "unit": "%",
       "tolerance": 0.02,
-      "text": "Taulukossa on esimerkkilukuina (esimerkkiaineisto) kolmen tuulipuiston nimellisteho ja vuoden aikana tuotettu energia. Oppilas sanoo: \"Puisto B tuottaa eniten sähköä, joten se hyödyntää nimellistehonsa parhaiten.\"\n\na) Laske jokaiselle puistolle, kuinka suuri osa nimellistehosta on keskimäärin käytössä, kun vuodessa on $8760\\,\\text{h}$.\n\nb) Onko oppilas oikeassa? Mikä oppilaan päättelyssä on virhe? Vastaa laatikkoon parhaan puiston keskiteho prosentteina nimellistehosta.",
+      "text": "Taulukossa on esimerkkilukuina (esimerkkiaineisto) kolmen tuulipuiston nimellisteho ja vuoden aikana tuotettu energia. Oppilas sanoo: ”Puisto B tuottaa eniten sähköä, joten se hyödyntää nimellistehonsa parhaiten.”\n\na) Laske jokaiselle puistolle, kuinka suuri osa nimellistehosta on keskimäärin käytössä, kun vuodessa on $8760\\,\\text{h}$.\n\nb) Onko oppilas oikeassa? Mikä oppilaan päättelyssä on virhe? Vastaa laatikkoon parhaan puiston keskiteho prosentteina nimellistehosta.",
       "data": {
         "caption": "Kolmen tuulipuiston nimellisteho ja vuosituotanto",
         "columns": [
@@ -231,7 +231,7 @@
       "answer": 1.6,
       "unit": "milj. t",
       "tolerance": 0.02,
-      "text": "Taulukossa on esimerkkilukuina (esimerkkiaineisto) neljän tuotantotavan elinkaaripäästöt eli koko elinkaaren aikana syntyvä hiilidioksidimäärä tuotettua sähkön kilowattituntia kohti sekä voimalan käyttöikä. Esimerkkikaupunki käyttää sähköä $2{,}0\\,\\text{TWh}$ vuodessa.\n\na) Kuinka monta miljoonaa tonnia hiilidioksidia vuodessa säästyisi, jos kaupungin sähkö tuotettaisiin kivihiilen sijasta tuulivoimalla? Käytä päästökertoimia ja muunna $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nb) Mikä tuotantotapa olisi päästöjen ja käyttöiän perusteella paras valinta? Mitä taulukko ei kerro, vaikka valinta pitäisi tehdä?",
+      "text": "Taulukossa on esimerkkilukuina (esimerkkiaineisto) neljän tuotantotavan elinkaaripäästöt eli koko elinkaaren aikana syntyvä hiilidioksidimäärä tuotettua sähkön kilowattituntia kohti sekä voimalan käyttöikä. Esimerkkikaupunki käyttää sähköä $2{,}0\\,\\text{TWh}$ vuodessa.\n\na) Kuinka monta miljoonaa tonnia hiilidioksidia vuodessa säästyisi elinkaaren päästöistä vuoden sähköntuotannolle kuuluvana osuutena, jos kaupungin sähkö tuotettaisiin kivihiilen sijasta tuulivoimalla? Käytä päästökertoimia ja muunna $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nb) Mikä tuotantotapa olisi päästöjen ja käyttöiän perusteella paras valinta? Mitä taulukko ei kerro, vaikka valinta pitäisi tehdä?",
       "data": {
         "caption": "Tuotantotapojen elinkaaripäästöt ja käyttöikä",
         "columns": [
@@ -355,10 +355,10 @@
         "model",
         "reasoning"
       ],
-      "answer": 16.6,
+      "answer": 17,
       "unit": "€/MWh",
       "tolerance": 0.03,
-      "text": "Kunta vertailee kahta tapaa tuottaa sähköä. Taulukossa on esimerkkilukuina (esimerkkiaineisto, ei oikeiden hankkeiden tietoja) tuulipuiston ja ydinvoimalan tiedot. Oletetaan, että voimala tuottaa koko käyttöikänsä vuosittain yhtä paljon energiaa kuin ensimmäisenä vuonna, ja että kustannus on vain rakennuskustannus. Vuodessa on $8760\\,\\text{h}$.\n\na) Laske kummankin voimalan vuosienergia megawattitunteina.\n\nb) Laske rakennuskustannus tuotettua megawattituntia kohti koko käyttöiän ajalta. Vastaa laatikkoon tuulipuiston arvo euroina megawattituntia kohti.\n\nc) Laske kummankin voimalan hiilidioksidipäästöt vuodessa tonneina, kun $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nd) Vertaa tuotantotapoja päästöjen, kustannuksen ja säädettävyyden perusteella ja anna perusteltu suositus.",
+      "text": "Kunta vertailee kahta tapaa tuottaa sähköä. Taulukossa on esimerkkilukuina (esimerkkiaineisto, ei oikeiden hankkeiden tietoja) tuulipuiston ja ydinvoimalan tiedot. Oletetaan, että voimala tuottaa koko käyttöikänsä vuosittain yhtä paljon energiaa kuin ensimmäisenä vuonna, ja että kustannus on vain rakennuskustannus. Vuodessa on $8760\\,\\text{h}$.\n\na) Laske kummankin voimalan vuosienergia megawattitunteina.\n\nb) Laske rakennuskustannus tuotettua megawattituntia kohti koko käyttöiän ajalta. Vastaa laatikkoon tuulipuiston arvo euroina megawattituntia kohti.\n\nc) Laske kummankin voimalan elinkaaren päästöistä vuoden tuotannolle kuuluva hiilidioksidimäärä tonneina, kun $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nd) Vertaa tuotantotapoja päästöjen, kustannuksen ja säädettävyyden perusteella ja anna perusteltu suositus.",
       "data": {
         "caption": "Tuulipuiston ja ydinvoimalan vertailu",
         "columns": [
@@ -389,7 +389,7 @@
           ],
           [
             "Elinkaaripäästöt $m/E\\,(\\text{g/kWh})$",
-            "11",
+            "12",
             "12"
           ],
           [

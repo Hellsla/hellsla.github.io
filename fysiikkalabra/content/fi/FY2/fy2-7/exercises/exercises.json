@@ -57,13 +57,13 @@
      "feedback": "Jännite ei lisää energiaa. Muuntaja muuttaa jännitettä, mutta energiaa se ei tuota, ja häviöt pienennetään siksi, että niitä on muuten paljon."
     },
     {
+     "text": "Korkealla jännitteellä energia ei muutu matkalla lämmöksi lainkaan, joten häviötä ei synny.",
+     "feedback": "Häviö pienenee mutta ei häviä kokonaan: sähköverkossa häviää silti noin $4\\,\\%$ lähtevästä energiasta, koska virta lämmittää johtimia aina jonkin verran."
+    },
+    {
      "text": "Samaan tehoon riittää pienempi virta, joten johtimet lämpenevät vähemmän ja häviö pienenee.",
      "feedback": "Oikein: kun jännite on korkea, sama teho siirtyy pienemmällä virralla. Pienempi virta lämmittää johtimia vähemmän, joten siirrossa muuttuu vähemmän sähköenergiaa lämmöksi.",
      "correct": true
-    },
-    {
-     "text": "Korkealla jännitteellä energia ei muutu matkalla lämmöksi lainkaan, joten häviötä ei synny.",
-     "feedback": "Häviö pienenee mutta ei häviä kokonaan: sähköverkossa häviää silti noin $4\\,\\%$ lähtevästä energiasta, koska virta lämmittää johtimia aina jonkin verran."
     },
     {
      "text": "Korkea jännite saa sähkön kulkemaan johdossa nopeammin, joten lämpöä ehtii syntyä vähemmän.",
@@ -129,7 +129,7 @@
     "data",
     "reasoning"
    ],
-   "answer": 9.6,
+   "answer": 9.62,
    "unit": "%",
    "tolerance": 0.02,
    "data": {
@@ -203,31 +203,31 @@
   {
    "id": "fy2-7-L2-07",
    "level": 2,
-   "text": "Oppilas kirjoittaa: \"Sähkö kulkee johtoa pitkin valon nopeudella, joten sähkön siirrossa ei synny häviöitä.\" Mikä seuraavista korjaa väitteen oikein?",
+   "text": "Oppilas kirjoittaa: ”Sähkö kulkee johtoa pitkin valon nopeudella, joten sähkön siirrossa ei synny häviöitä.” Mikä seuraavista korjaa väitteen oikein?",
    "kind": [
     "error",
     "concept"
    ],
-   "answer": "Nopeus ei kerro häviöistä: virta lämmittää johdinta, ja osa sähköenergiasta muuttuu lämmöksi.",
+   "answer": "Sähkö kulkee nopeasti, mutta virta lämmittää johdinta ja osa energiasta muuttuu lämmöksi.",
    "unit": "",
    "tolerance": 0.02,
    "choices": [
     {
-     "text": "Väite on oikein, koska nopeasti siirtyvä energia ei ehdi muuttua miksikään muuksi.",
+     "text": "Väite on oikein, koska nopeasti siirtyvä energia ei ehdi muuttua matkalla miksikään muuksi.",
      "feedback": "Häviön syy ei ole siirtymisen kesto. Kun virta kulkee johtimessa, johdin lämpenee ja osa sähköenergiasta muuttuu lämmöksi, vaikka siirtyminen on nopeaa."
     },
     {
-     "text": "Nopeus ei kerro häviöistä: virta lämmittää johdinta, ja osa sähköenergiasta muuttuu lämmöksi.",
-     "feedback": "Oikein: häviö syntyy, kun virta lämmittää johtimia, ja tämä lämpö ei tule käyttäjälle. Siksi perille tulee vähemmän energiaa kuin lähtee.",
-     "correct": true
-    },
-    {
-     "text": "Sähkö kulkee johdossa hitaasti, joten matkalla ehtii syntyä häviöitä.",
+     "text": "Sähkö kulkee johdossa hitaasti, joten matkalla ehtii hajota suuri osa sähköenergiasta.",
      "feedback": "Häviö ei riipu siitä, kuinka nopeasti sähköenergia siirtyy. Se riippuu siitä, kuinka paljon johdin lämpenee virran kulkiessa."
     },
     {
-     "text": "Häviöitä syntyy, koska osa energiasta katoaa matkalla olemattomiin.",
+     "text": "Osa energiasta katoaa matkalla kokonaan olemattomiin, vaikka sähkö kulkee nopeasti johdossa.",
      "feedback": "Energia ei katoa. Häviöenergia muuttuu lämmöksi ympäristöön, mutta käyttäjä ei saa sitä hyötyyn."
+    },
+    {
+     "text": "Sähkö kulkee nopeasti, mutta virta lämmittää johdinta ja osa energiasta muuttuu lämmöksi.",
+     "feedback": "Oikein: häviö syntyy, kun virta lämmittää johtimia, ja tämä lämpö ei tule käyttäjälle. Siksi perille tulee vähemmän energiaa kuin lähtee.",
+     "correct": true
     }
    ]
   }
@@ -301,12 +301,12 @@
   {
    "id": "fy2-7-L3-05",
    "level": 3,
-   "text": "Taulukossa on esimerkkiaineisto alueen sähköverkon vuorokaudesta: verkkoon syötetty keskiteho ja häviön osuus jakson aikana syötetystä energiasta.\n\na) Laske vuorokauden aikana verkkoon syötetty energia ja siinä häviävä energia. Kuinka suuri osa koko vuorokauden syötetystä energiasta häviää? Anna vastaus prosentteina.\n\nb) Vertaa tulosta Suomen sähköverkon noin $4\\,\\%$:n häviöön (Energiateollisuus, 2024).\n\nc) Millä jaksolla häviävä energia on suurin? Perustele kirjallisesti, miksi häviön osuus kasvaa, kun verkkoa kuormitetaan enemmän.",
+   "text": "Taulukossa on esimerkkiaineisto alueen sähköverkon vuorokaudesta: verkkoon syötetty keskiteho ja häviön osuus jakson aikana syötetystä energiasta.\n\na) Laske vuorokauden aikana verkkoon syötetty energia ja siinä häviävä energia. Kuinka suuri osa koko vuorokauden syötetystä energiasta häviää? Anna vastaus prosentteina.\n\nb) Vertaa tulosta Suomen sähköverkon noin $4\\,\\%$:n häviöön (Energiateollisuus, 2024).\n\nc) Millä jaksolla häviävä energia on suurin? Perustele kirjallisesti, miksi häviön osuus kasvaa, kun verkkoa kuormitetaan enemmän. Vihje: kun virta kaksinkertaistuu, häviöteho kasvaa noin nelinkertaiseksi.",
    "kind": [
     "data",
     "model"
    ],
-   "answer": 4.7,
+   "answer": 4.1,
    "unit": "%",
    "tolerance": 0.02,
    "data": {
@@ -334,13 +334,13 @@
       "12–19",
       "7",
       "50",
-      "4.5"
+      "4.2"
      ],
      [
       "19–24",
       "5",
       "66",
-      "7.0"
+      "5.5"
      ]
     ]
    }

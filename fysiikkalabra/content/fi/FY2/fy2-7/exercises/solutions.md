@@ -151,22 +151,22 @@
 **Periaate:** Koko jakson häviön osuus lasketaan koko jakson lähtevästä energiasta, joten energiat lasketaan ensin yhteen. Kuukausien prosenttien keskiarvoa ei käytetä, koska kuukausien energiat ovat eri suuria.
 **Kaava:** $E_\text{häviö} = E_\text{lähtö} - E_\text{perille}$ ja $p = \dfrac{E_\text{häviö}}{E_\text{lähtö}}$
 **Muunnokset:** Osamäärä muutetaan prosentiksi kertomalla sadalla. Energiat ovat samassa yksikössä, megawattitunneissa.
-**Sijoitus:** Lähtevien energioiden summa on $2650\,\text{MWh}$ ja perille tulleiden $2395\,\text{MWh}$. Siten $E_\text{häviö} = 2650\,\text{MWh} - 2395\,\text{MWh} = 255\,\text{MWh}$ ja $p = \dfrac{255\,\text{MWh}}{2650\,\text{MWh}} = 0{,}0962 = 9{,}6\,\%$
-**Vastaus:** $9{,}6\,\%$, kaksi merkitsevää numeroa kuten kolmen numeron energioiden osamäärässä (esimerkkiaineisto). Kuukausittain häviön osuus on tammikuussa $9{,}1\,\%$, helmikuussa $8{,}9\,\%$, maaliskuussa $9{,}8\,\%$ ja huhtikuussa $11\,\%$, joten se on suurin huhtikuussa. Selitys: lämmön tarve pienenee keväällä, mutta putkistossa kiertävä kuuma vesi luovuttaa lämpöä maahan lähes yhtä paljon kuin talvella, joten häviö on suurempi osuus pienemmästä energiasta.
-**Järkevyys:** Kuukausien osuudet ovat $8{,}9\,\%$ ja $11\,\%$ välillä, joten koko jakson $9{,}6\,\%$ on niiden välissä. Lisäksi $2395\,\text{MWh} + 255\,\text{MWh} = 2650\,\text{MWh}$.
+**Sijoitus:** Lähtevien energioiden summa on $2650\,\text{MWh}$ ja perille tulleiden $2395\,\text{MWh}$. Siten $E_\text{häviö} = 2650\,\text{MWh} - 2395\,\text{MWh} = 255\,\text{MWh}$ ja $p = \dfrac{255\,\text{MWh}}{2650\,\text{MWh}} = 0{,}0962 = 9{,}62\,\%$
+**Vastaus:** $9{,}62\,\%$, kolme merkitsevää numeroa, koska energiat on annettu kolmella numerolla (esimerkkiaineisto). Kuukausittain häviön osuus on tammikuussa $9{,}1\,\%$, helmikuussa $8{,}9\,\%$, maaliskuussa $9{,}8\,\%$ ja huhtikuussa $11\,\%$, joten se on suurin huhtikuussa. Selitys: lämmön tarve pienenee keväällä, mutta häviö pienenee ($75 \to 49\,\text{MWh}$) paljon vähemmän kuin syötetty energia ($820 \to 430\,\text{MWh}$), koska putket ovat kuumia ja maa kylmää myös keväällä, joten häviö on suurempi osuus pienemmästä energiasta.
+**Järkevyys:** Kuukausien osuudet ovat $8{,}9\,\%$ ja $11\,\%$ välillä, joten koko jakson $9{,}62\,\%$ on niiden välissä. Lisäksi $2395\,\text{MWh} + 255\,\text{MWh} = 2650\,\text{MWh}$.
 
 ## fy2-7-L2-06
 **Annettu:** siirretty teho $100\,\text{MW}$; häviöteho jännitteillä $20$, $40$, $80$ ja $160\,\text{kV}$ on $16$, $4{,}0$, $1{,}0$ ja $0{,}25\,\text{MW}$
 **Kysytty:** häviöteho $P_\text{häviö}$ jännitteellä $320\,\text{kV}$ megawatteina ja perustelu
-**Periaate:** Taulukosta etsitään säännönmukaisuus: verrataan häviötehoja peräkkäisillä jännitteillä, jotka ovat aina kaksinkertaisia edelliseen nähden. Kun sama kuvio jatkuu, voidaan arvioida seuraava arvo.
+**Periaate:** Taulukosta etsitään säännönmukaisuus: verrataan häviötehoja peräkkäisillä jännitteillä, jotka ovat aina kaksinkertaisia edelliseen nähden. Oletetaan, että sama voimalinja ja sama siirretty teho $100\,\text{MW}$ pysyvät samoina, jolloin sama kuvio jatkuu ja seuraava arvo voidaan arvioida.
 **Kaava:** Häviöteho pienenee $k$-kertaiseksi jännitteen kaksinkertaistuessa: $k = \dfrac{P_\text{häviö,edellinen}}{P_\text{häviö,seuraava}}$, ja arvio on $P_\text{häviö,320} = \dfrac{P_\text{häviö,160}}{k}$
 **Muunnokset:** Ei tarvita: jännitteet ovat kilovoltteina ja tehot megawatteina. Jännite $320\,\text{kV}$ on kaksinkertainen jännitteeseen $160\,\text{kV}$ verrattuna.
 **Sijoitus:** $k = \dfrac{16\,\text{MW}}{4{,}0\,\text{MW}} = \dfrac{4{,}0\,\text{MW}}{1{,}0\,\text{MW}} = \dfrac{1{,}0\,\text{MW}}{0{,}25\,\text{MW}} = 4{,}0$, joten $P_\text{häviö,320} = \dfrac{0{,}25\,\text{MW}}{4{,}0} = 0{,}0625\,\text{MW}$
-**Vastaus:** noin $0{,}063\,\text{MW}$, kaksi merkitsevää numeroa kuten taulukon arvossa $0{,}25\,\text{MW}$. Kun jännite kaksinkertaistetaan, häviöteho on neljäsosa. Perustelu: suuremmalla jännitteellä sama teho siirtyy pienemmällä virralla, ja pienempi virta lämmittää johtimia vähemmän.
+**Vastaus:** noin $0{,}063\,\text{MW}$, kaksi merkitsevää numeroa kuten taulukon arvossa $0{,}25\,\text{MW}$. Kun jännite kaksinkertaistetaan, häviöteho on neljäsosa. Perustelu: suuremmalla jännitteellä sama teho siirtyy pienemmällä virralla, ja pienempi virta lämmittää johtimia vähemmän. Kun jännite kaksinkertaistuu, virta puolittuu, ja häviö pienenee virtaa nopeammin: puolet pienempi virta antaa neljäsosan häviöstä.
 **Järkevyys:** Jännite kasvaa välillä $20\,\text{kV}$–$320\,\text{kV}$ kuusitoistakertaiseksi, ja häviöteho pienenee $16\,\text{MW} : 0{,}0625\,\text{MW} = 256$-kertaiseksi. Tulos on pienempi kuin $0{,}25\,\text{MW}$ mutta positiivinen, kuten pitääkin, ja se jatkaa taulukon kuviota.
 
 ## fy2-7-L2-07
-**Kysytty:** mikä vastaus korjaa väitteen "sähkö kulkee valon nopeudella, joten häviöitä ei ole".
+**Kysytty:** mikä vastaus korjaa väitteen ”sähkö kulkee valon nopeudella, joten häviöitä ei ole”.
 **Periaate:** Siirtohäviö syntyy, kun virta lämmittää johtimia ja osa sähköenergiasta muuttuu lämmöksi ympäristöön. Häviö ei riipu siitä, kuinka nopeasti energia siirtyy. Energia ei myöskään katoa, vaan muuttuu käyttäjälle hyödyttömään muotoon.
 **Mallivastaus:** Väite on virheellinen, koska nopeus ei kerro häviöistä. Virta lämmittää johdinta, ja tämä lämpö ei tule käyttäjälle asti, joten perille tulee vähemmän energiaa kuin lähtee. Häviö ei ole energian katoamista vaan muuttumista lämmöksi. Sähköverkossa häviää noin $4\,\%$ lähtevästä energiasta, ja siksi korkea jännite, joka pienentää virtaa, vähentää häviötä.
 
@@ -181,11 +181,24 @@
 **Järkevyys:** Verkon häviön osuus säästöstä on $6{,}593\,\text{MWh} - 6{,}0\,\text{MWh} = 0{,}593\,\text{MWh}$, ja $0{,}593\,\text{MWh} : 6{,}593\,\text{MWh} = 0{,}090 = 9{,}0\,\%$, kuten verkon häviö. Talon kokonaishäviöteho $8{,}0\,\text{kW}$ on yli $1{,}2\,\text{kW}$, joten säästö on järkevä osa siitä.
 
 ## fy2-7-L3-05
-**Annettu:** taulukosta jaksojen kestot $7$, $5$, $7$ ja $5\,\text{h}$, syöttötehot $18$, $42$, $50$ ja $66\,\text{MW}$ sekä häviöosuudet $1{,}5\,\%$, $3{,}5\,\%$, $4{,}5\,\%$ ja $7{,}0\,\%$
+**Annettu:** taulukosta jaksojen kestot $7$, $5$, $7$ ja $5\,\text{h}$, syöttötehot $18$, $42$, $50$ ja $66\,\text{MW}$ sekä häviöosuudet $1{,}5\,\%$, $3{,}5\,\%$, $4{,}2\,\%$ ja $5{,}5\,\%$
 **Kysytty:** vuorokauden häviön osuus $p$ syötetystä energiasta prosentteina; vertailu ja perustelu
 **Periaate:** Teho on tasainen kunkin jakson ajan, joten jakson syötetty energia on teho kertaa aika. Häviö on jakson häviöosuus kertaa jakson syötetty energia. Koko vuorokauden osuus saadaan summista, ei jaksojen prosenttien keskiarvosta, koska jaksoilla syötetään eri määrät energiaa.
 **Kaava:** $E_\text{lähtö} = P_\text{lähtö}\, t$, $E_\text{häviö} = p_i\, E_\text{lähtö}$ jaksolle $i$, ja koko vuorokaudelle $p = \dfrac{E_\text{häviö,yht.}}{E_\text{lähtö,yht.}}$
 **Muunnokset:** Häviöosuudet desimaaliluvuiksi, esimerkiksi $1{,}5\,\% = 1{,}5 : 100 = 0{,}015$. Megawatti kertaa tunti on suoraan megawattitunti.
-**Sijoitus:** Jaksojen syötetyt energiat ovat $7\,\text{h} \cdot 18\,\text{MW} = 126\,\text{MWh}$, $5\,\text{h} \cdot 42\,\text{MW} = 210\,\text{MWh}$, $7\,\text{h} \cdot 50\,\text{MW} = 350\,\text{MWh}$ ja $5\,\text{h} \cdot 66\,\text{MW} = 330\,\text{MWh}$, summa $1016\,\text{MWh}$. Häviöt ovat $0{,}015 \cdot 126\,\text{MWh} = 1{,}89\,\text{MWh}$, $0{,}035 \cdot 210\,\text{MWh} = 7{,}35\,\text{MWh}$, $0{,}045 \cdot 350\,\text{MWh} = 15{,}75\,\text{MWh}$ ja $0{,}070 \cdot 330\,\text{MWh} = 23{,}10\,\text{MWh}$, summa $48{,}09\,\text{MWh}$. Siten $p = \dfrac{48{,}09\,\text{MWh}}{1016\,\text{MWh}} = 0{,}0473 = 4{,}7\,\%$
-**Vastaus:** $4{,}7\,\%$, kaksi merkitsevää numeroa kuten häviöosuuksissa (esimerkkiaineisto). Tulos on hieman suurempi kuin Suomen sähköverkon noin $4\,\%$ (Energiateollisuus, 2024), mutta samaa suuruusluokkaa. Häviävä energia on suurin jaksolla klo 19–24, jolloin häviää $23{,}10\,\text{MWh}$ eli noin $48\,\%$ koko vuorokauden häviöstä. Häviön osuus kasvaa kuormituksen kasvaessa, koska suurempi teho vaatii suuremman virran ja suurempi virta lämmittää johtimia enemmän, joten lämmöksi muuttuu suurempi osa energiasta.
-**Järkevyys:** Jaksojen häviöosuuksien tavallinen keskiarvo olisi $4{,}1\,\%$, mikä on liian pieni, koska illalla syötetään paljon energiaa ja osuus on silloin suurin. Tulos $4{,}7\,\%$ on osuuksien $1{,}5\,\%$ ja $7{,}0\,\%$ välissä, ja $0{,}047 \cdot 1016\,\text{MWh} \approx 48\,\text{MWh}$ vastaa summaa $48{,}09\,\text{MWh}$.
+**Sijoitus:** Jaksojen syötetyt energiat (tunnit · megawatit = megawattituntia) ja häviöt (osuus · energia, megawattitunteina) ovat
+```latex
+\begin{aligned}
+E_1 &= 7 \cdot 18 = 126\,\text{MWh} \\
+H_1 &= 0{,}015 \cdot 126 = 1{,}89\,\text{MWh} \\
+E_2 &= 5 \cdot 42 = 210\,\text{MWh} \\
+H_2 &= 0{,}035 \cdot 210 = 7{,}35\,\text{MWh} \\
+E_3 &= 7 \cdot 50 = 350\,\text{MWh} \\
+H_3 &= 0{,}042 \cdot 350 = 14{,}70\,\text{MWh} \\
+E_4 &= 5 \cdot 66 = 330\,\text{MWh} \\
+H_4 &= 0{,}055 \cdot 330 = 18{,}15\,\text{MWh}
+\end{aligned}
+```
+Syötettyjen energioiden summa on $1016\,\text{MWh}$ ja häviöiden summa $42{,}09\,\text{MWh}$. Siten $p = \dfrac{42{,}09\,\text{MWh}}{1016\,\text{MWh}} = 0{,}0414 = 4{,}1\,\%$
+**Vastaus:** $4{,}1\,\%$, kaksi merkitsevää numeroa kuten häviöosuuksissa (esimerkkiaineisto). Tulos on lähellä Suomen sähköverkon noin $4\,\%$:n häviötä (Energiateollisuus, 2024), eli samaa suuruusluokkaa. Häviävä energia on suurin jaksolla klo 19–24, jolloin häviää $18{,}15\,\text{MWh}$ eli noin $43\,\%$ koko vuorokauden häviöstä. Suurempi teho vaatii suuremman virran, ja häviö kasvaa virtaa nopeammin (kaksinkertainen virta antaa noin nelinkertaisen häviön), joten häviö kasvaa nopeammin kuin syötetty teho ja sen osuus kasvaa.
+**Järkevyys:** Jaksojen häviöosuuksien tavallinen keskiarvo olisi $3{,}7\,\%$, mikä on liian pieni, koska illalla syötetään paljon energiaa ja osuus on silloin suurin. Tulos $4{,}1\,\%$ on osuuksien $1{,}5\,\%$ ja $5{,}5\,\%$ välissä, ja $0{,}041 \cdot 1016\,\text{MWh} \approx 42\,\text{MWh}$ vastaa summaa $42{,}09\,\text{MWh}$.
