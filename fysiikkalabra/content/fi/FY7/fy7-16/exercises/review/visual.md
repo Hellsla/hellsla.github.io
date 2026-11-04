@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c2b4647a77581b88
+CONTENT-HASH: 5482f5dd781ef9bd
 
 ## Blocking
 
 ## Polish
-- [Minor] L3-01 Järkevyys — "1172 km : 11 = 107 km on hieman yli … 50–100 km:n vahvistinvälin": the new wording is clear and states the deviation; nothing to change.
+- [Minor] fy7-16-L2-07 — suorat lainausmerkit "..." tehtävätekstissä; luvuissa 13 ja 14 ”...” — yhtenäistä.
+- [Minor] fy7-16-L2-05, L2-06, L3-04, L3-05 taulukot (contact-6 #67, #68; contact-7 #76, #79) — desimaalit pisteellä (79.1, 4.62) — sivustotason käytäntö; renderöi pilkulla.
+- [Minor] fy7-16-L1-06 — lasi-väittelyn vaihtoehdot ovat selvästi eripituisia (oikea on pisin ja viimeinen) — vaihda oikean paikka ja tasaa pituus.
 
 ## Checked
-- Delta (solutions.md, L3-01 and L3-02 Järkevyys). Opened open-exercises-L3-1280-1 and -2: new sentences render in LaTeX with units and the colon division; the Järkevyys block, chains and answer boxes survived, no clipping.
-- L3-02 "tulos on yläraja" is a complete, unambiguous clause.
+- 16-L1-06..08, L2-05..07, L3-04..05 (contact-6 #61–#72, contact-7 #73–#80; open-exercises-L3-1280-3): kaavat, yksiköt, taulukot, vastauslaatikot ja avatut ratkaisut ehjiä; ei leikkautumista. 360 px:n tehtäväkaappauksia ei ole; layout-tarkistus ok. Kaikilla uusilla täydellinen ratkaisu.
+- Hash alussa ja lopussa sama.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5
