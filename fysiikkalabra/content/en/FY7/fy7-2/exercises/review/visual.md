@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 703cdb3ccab74963
+CONTENT-HASH: b165aaff977bb9ac
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] L1-01, L1-04, L1-05 prompts — "Give the answer in the form . . . · 10^-14 N" renders the ellipsis with wide spaces; use \cdots or a single `\ldots`.
-- [Minor] L2 solutions — the long "Substitution" chains with a square root over a fraction (L2-01) are readable but tall at 390 px; acceptable, no change required.
-- [Minor] track-sign figure (exercise 2) — "B into the page" label sits close to the last cross; move it a few pixels left.
+- [Minor] solutions.md L2-01 Sijoitus — the connecting word "and" between the v chain and the r display is not shown (the layout renders the display as its own block); the two blocks read as consecutive steps, so nothing is lost.
 
 ## Checked
-- open-exercises L1-1 and L3-2 at readable size; contact-6 covering L1 and L2; L3 sheets; track-sign figure (fig-20).
-- Maths: units upright with thin space, \cdot, colon ratios, powers of ten, no plain-text quantities and no red KaTeX; solutions follow the fixed Given–Reasonableness order; the English is clear and the exercise instructions say exactly what to give (unit and form).
+- Delta: L2-01 solution Sijoitus, r as an aligned display (fraction row, \quad \cdot v row, = 0,06463 m = 6,463 cm row); rendered at 360 and 390 px from the built page with every solution open, and open-exercises-L2-1280-1 at laptop width.
+- Result: three rows with equals signs in one column, units upright with a thin space, nothing clipped, no horizontal overflow; the v chain above it is unchanged.
+- Only the line breaking of the formula changed; text, numbers and units unchanged (diff read). Deterministic layout checks 360/768/1280 clean per packet.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish (English prose) 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

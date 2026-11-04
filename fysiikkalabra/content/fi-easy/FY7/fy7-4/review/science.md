@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 5b563d37c08fe2f9
+CONTENT-HASH: 951e7c25a7f12573
 
 ## Blocking
 
 ## Polish
-- glossary.json "virtasilmukka" — "Magneettikentässä silmukan vastakkaisiin sivuihin kohdistuu vastakkaissuuntaiset voimat" carries the same unstated condition just fixed in meta.json (false in the speaker's radial field, lesson.md:132). The glossary is shared and outside this lesson's hash, so it does not block here — add "Homogeenisessa" there too when the glossary is next edited.
+- My earlier polish item (glossary "virtasilmukka" needs "Homogeenisessa") is outside this diff and still stands.
 
 ## Checked
-- git diff since the passed body (2bf948f7..HEAD): only meta.json:27 changed; hash identical at start and end.
-- meta.json:27 "virtasilmukka": "Homogeenisessa kentässä ... vastakkaiset voimat" — last round's B finding resolved, now consistent with lesson.md:132 (radial field, all forces along the axis) and lesson.md:86 (pole-gap motor field).
-- meta.json:23 "sähkömoottori": field turns the current loop, electrical → kinetic energy; losses omitted (C).
-- meta.json:31 "kaiutin": alternating current in the coil as the cause, coil and cone driven back and forth, cone makes the sound; matches lesson.md:132.
-- meta.json:35 "magneettinen voima": force of a field on a current-carrying wire; consistent with lesson.md:174 and fy7-2.
-- Key concepts agree with each other and with the Tiivistelmä (lesson.md:314).
-- Spot recompute with own formulas: worked example F = 6,98 N ≈ 7,0 N; sim Δm(6,0 A) = 2,45 g; jumper cables 0,60 N; check-2 0,40 / 0,20 N; virhe 0,15 N; exit ticket 0,30 N — all agree with lesson-answers.py.
+- Delta review against my PASS at 5b563d37c08fe2f9: the only change (commit c85fdffb) is inquiry.json:255, the "Etsi virhe" prompt, whose aligned product row is split so that "\quad \cdot 0,866" stands on its own row. No number, symbol or unit changed.
+- The split rows still read as one product: F = I l B cos 30° = 5,0 A · 0,20 m · 0,30 T · 0,866 ≈ 0,26 N. I recomputed it: 5,0 · 0,20 · 0,30 · 0,866 = 0,2598 N → 0,26 N, the student's intended (wrong-model) result. The correct value with sin 30° is 0,15 N. Both agree with the options and the feedback I passed.
+- The deliberate error (cos in place of sin, angle between wire and field) is unchanged, so the item still has exactly one correct option.
+- Hash fy7-4 at start and end: 951e7c25a7f12573 (unchanged).

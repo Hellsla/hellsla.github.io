@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5b563d37c08fe2f9
+CONTENT-HASH: 951e7c25a7f12573
 
 ## Blocking
 
@@ -12,3 +12,4 @@ CONTENT-HASH: 5b563d37c08fe2f9
 - Ehto tukee oppimista: laatikko ei enää ristiriidassa heti seuraavan kaiutin-käsitteen ja rungon säteittäisen kentän kanssa.
 - Suomi: "Homogeenisessa kentässä sen vastakkaisiin sivuihin kohdistuvat vastakkaiset voimat" kieliopillisesti oikein, verbi monikossa kuten edellisellä kierroksella korjattiin.
 - Lukutaso: lause pysyy lyhyenä, sopii fi-easy-tasolle.
+- Delta (CI layout fix): the Etsi virhe product row now continues on its own line with \quad \cdot 0,866; same numbers, reads in order, error still findable.

@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 926971d75060c106
+CONTENT-HASH: f8563eea6efa006f
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises L3-02 ja Taso 3 -ratkaisut — pitkät sijoitusketjut ovat rivitetty selvästi, mutta murtolausekkeiden sisäiset neliöjuuret ovat pieniä 1280 px:llä (r_{14}-rivi) — harkitse lisärivinvaihtoa.
+- [Minor] solutions.md L2-01 Sijoitus — the connecting word between the v chain and the r display is not shown (the layout renders the display as its own block); the two blocks read as consecutive steps, so nothing is lost.
 
 ## Checked
-- contact-7 (tasot 2 ja 3, avatut ratkaisut), tehtävä- ja ratkaisurivit L1–L3 luettu lähteestä
-- Track-sign-kuva (fig-20-390) tarkistettu: B paperiin, rata kaartuu alas, varauksen merkkiä ei näytetä; kuvaus vastaa kuvaa
-- Ei punaista KaTeX-lähdettä, ei tekstimuotoisia suureita
+- Delta: L2-01 solution Sijoitus, r as an aligned display (fraction row, \quad \cdot v row, = 0,06463 m = 6,463 cm row); rendered at 360 and 390 px from the built page with every solution open, and open-exercises-L2-1280-1 at laptop width.
+- Result: three rows with equals signs in one column, units upright with a thin space, nothing clipped, no horizontal overflow; the v chain above it is unchanged.
+- Only the line breaking of the formula changed; text, numbers and units unchanged (diff read). Deterministic layout checks 360/768/1280 clean per packet.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

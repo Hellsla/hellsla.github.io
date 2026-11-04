@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5b563d37c08fe2f9
+CONTENT-HASH: 951e7c25a7f12573
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Delta: meta.json key_concepts "virtasilmukka", one word added ("Homogeenisessa"); text only, no maths or figures touched.
-- Rebuilt preview (build.py fy7-4) and captured section.kc at 390 and 1280 px (Playwright, scratchpad kc4/); both opened.
-- 390 px: Virtasilmukka explanation wraps to four lines, no clipping; scrollWidth 390 = viewport; 0 KaTeX errors.
-- 1280 px: two-column term/explanation table intact, the entry wraps to four lines in line with Kaiutin; scrollWidth 1280 = viewport.
-- Finnish: "Homogeenisessa kentässä sen vastakkaisiin sivuihin kohdistuvat vastakkaiset voimat." natural and grammatical; term matches the lesson body's usage.
+- Delta: 'Etsi virhe' prompt (sovella stage), the product row split with \quad \cdot 0,866; rendered at 360 and 390 px from the built page, display opened (details open); sovella-390-1 and -2 captures for the surrounding worked example.
+- Result: rows F = IlB cos 30°, = 5,0 A · 0,20 m · 0,30 T, then an indented · 0,866, then ≈ 0,26 N; equals signs aligned in one column, nothing clipped, display scrollWidth = clientWidth, no page overflow.
+- Only the line breaking of the formula changed; text, numbers and units unchanged (diff read). Deterministic layout checks 360/768/1280 clean per packet.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

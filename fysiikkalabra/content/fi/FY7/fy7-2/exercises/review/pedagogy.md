@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 17fbd6419d57bd14
+CONTENT-HASH: 92f23d61f3c65647
 
 ## Blocking
 (none)
@@ -13,3 +13,4 @@ CONTENT-HASH: 17fbd6419d57bd14
 - L1-02: the rounding note matches the answer 6,5 cm (6,463 cm, 2 s.f.); 500 V is a plain number that suggests a loose precision, and the note settles it
 - Both changes are in the solutions only; no task text, answer or level changed, so the levels and answer recomputation of round 1 stand
 - Finnish of the changed lines is correct; units match the prompt
+- Delta (CI layout fix): L2 solution r = m:(qB) · v shown as an aligned display over three rows; recomputed 2,0886e-7 · 3,0945e5 = 0,06463 m, step order unchanged, readable at 360 px.

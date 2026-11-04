@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 703cdb3ccab74963
+CONTENT-HASH: b165aaff977bb9ac
 
 ## Blocking
 
@@ -16,3 +16,4 @@ CONTENT-HASH: 703cdb3ccab74963
 - Solutions follow Given-Find-Principle-Formula-Conversions-Substitution-Answer-Reasonableness with principles explained.
 - Exit ticket tests the selector and the sign and mass dependence of the path; answers correct.
 - L2-04 (magnetic force equals weight) is a useful reasoning link to the "gravity neglected" claim.
+- Delta (CI layout fix): L2 solution r = m:(qB) · v shown as an aligned display over three rows; recomputed 2,0886e-7 · 3,0945e5 = 0,06463 m, step order unchanged, readable at 360 px.

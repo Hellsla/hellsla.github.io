@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e68558154b2428a0
+CONTENT-HASH: 2c65b392b5cd9a14
 
 ## Blocking
 
@@ -18,4 +18,4 @@ CONTENT-HASH: e68558154b2428a0
 - Worked example is staged in seven steps, a loudspeaker coil, distinct from the exercises; solutions give principle and unit conversions.
 - Check-1 commutator distractors are misconception-based; tarkistus-2 mistakes (cosine, perpendicular value) are real.
 - Exit ticket tests F = IlB and the right-hand direction.
-- Figures (swing, motor, speaker, angle, wires) are present beside their text and legible at 390 px; workload fits one lesson.
+- Delta (CI layout fix): the Etsi virhe product row now continues on its own line with \quad \cdot 0,866; same numbers, reads in order, error still findable.

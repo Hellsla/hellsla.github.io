@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 926971d75060c106
+CONTENT-HASH: f8563eea6efa006f
 
 ## Blocking
 (none)
@@ -17,3 +17,4 @@ CONTENT-HASH: 926971d75060c106
 - Solutions follow the Annettu...Järkevyys pattern, with the principle explained, unit conversions and significant-figure reasons.
 - Exit ticket tests selector (v = E : B, no mass or charge) and sign and radius for proton vs electron; the "vauhti ei muutu" core idea is covered in `tarkistus-1`.
 - Contexts are varied and authentic (school CRT, radiocarbon lab, selector, cyclotron).
+- Delta (CI layout fix): L2 solution r = m:(qB) · v shown as an aligned display over three rows; recomputed 2,0886e-7 · 3,0945e5 = 0,06463 m, step order unchanged, readable at 360 px.
