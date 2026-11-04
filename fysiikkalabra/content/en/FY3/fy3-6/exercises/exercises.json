@@ -81,7 +81,7 @@
     {
       "id": "fy3-6-L1-08",
       "level": 1,
-      "text": "An aluminium cooking pan has a mass of $0.60\\,\\text{kg}$.\n\na) Calculate the heat capacity $C$ of the pan.\n\nb) How large a quantity of heat is needed to heat the pan from $18\\,{}^\\circ\\text{C}$ to $78\\,{}^\\circ\\text{C}$? Give the result of part b) in kilojoules in the answer box.",
+      "text": "An aluminium saucepan has a mass of $0.60\\,\\text{kg}$.\n\na) Calculate the heat capacity $C$ of the saucepan.\n\nb) How large a quantity of heat is needed to heat the saucepan from $18\\,{}^\\circ\\text{C}$ to $78\\,{}^\\circ\\text{C}$? Give the result of part b) in kilojoules in the answer box.",
       "answer": 32,
       "unit": "kJ",
       "tolerance": 0.02
@@ -124,7 +124,7 @@
     {
       "id": "fy3-6-L2-05",
       "level": 2,
-      "text": "In a calorimeter, $0.50\\,\\text{kg}$ of an unknown liquid is heated with an electric resistor at a constant power of $100\\,\\text{W}$. The temperature is measured at one-minute intervals, and the results are in the table (example data). Assume that all the energy of the resistor is transferred to the liquid.\n\na) Draw a straight line through the points in the temperature–time graph. It passes approximately through the points $(0\\,\\text{s};\\ 20.0\\,{}^\\circ\\text{C})$ and $(300\\,\\text{s};\\ 34.5\\,{}^\\circ\\text{C})$. Use the slope of the line to calculate the specific heat capacity of the liquid.\n\nb) Which liquid is it? Justify your answer with the $c$ values of the table.\n\nc) Name one way to reduce heat losses in an experiment like this and justify why it improves the result.\n\nGive the result of part a) in the answer box.",
+      "text": "In a calorimeter, $0.50\\,\\text{kg}$ of an unknown liquid is heated with an electric resistor at a constant power of $100\\,\\text{W}$. The temperature is measured at one-minute intervals, and the results are in the table (example data). Assume that all the energy of the resistor is transferred to the liquid.\n\na) In the temperature–time graph, draw a straight line that fits the points. The line passes approximately through the points $(0\\,\\text{s};\\ 20.0\\,{}^\\circ\\text{C})$ and $(300\\,\\text{s};\\ 34.5\\,{}^\\circ\\text{C})$. Use the slope of the line to calculate the specific heat capacity of the liquid.\n\nb) Which liquid is it? Justify your answer with the $c$ values of the table.\n\nc) Name one way to reduce heat losses in an experiment like this and justify why it improves the result.\n\nGive the result of part a) in the answer box.",
       "kind": [
         "data",
         "experiment"
@@ -169,7 +169,7 @@
     {
       "id": "fy3-6-L2-06",
       "level": 2,
-      "text": "Two liquids, A and B, are heated in two identical calorimeters with the same power of the electric resistor. Each contains $0.40\\,\\text{kg}$ of liquid. One liquid is water and the other is oil. The temperatures are measured at half-minute intervals (example data). Assume that all the energy of the resistor is transferred to the liquid.\n\na) Which liquid is water? Justify your answer.\n\nb) Calculate the specific heat capacity of the oil using the table value for water. Compare the rises in temperature of the liquids in the time $120\\,\\text{s}$.\n\nGive the result of part b) in the answer box.",
+      "text": "Two liquids, A and B, are heated in two identical calorimeters with an electric resistor of the same power. Each contains $0.40\\,\\text{kg}$ of liquid. One liquid is water and the other is oil. The temperatures are measured at half-minute intervals (example data). Assume that all the energy of the resistor is transferred to the liquid.\n\na) Which liquid is water? Justify your answer.\n\nb) Calculate the specific heat capacity of the oil using the table value for water. Compare the rises in temperature of the liquids in $120\\,\\text{s}$.\n\nGive the result of part b) in the answer box.",
       "kind": [
         "data",
         "reasoning"
@@ -253,7 +253,7 @@
     {
       "id": "fy3-6-L3-04",
       "level": 3,
-      "text": "In a calorimeter, $0.50\\,\\text{kg}$ of water is heated with an electric resistor at a constant power of $200\\,\\text{W}$. The temperature of the water is measured at one-minute intervals (example data). The room temperature is $20\\,{}^\\circ\\text{C}$. The heat capacity of the vessel itself is ignored.\n\na) Calculate the specific heat capacity of water from the measurement of the first minute, assuming that the heat losses are still negligible, and compare it with the table value.\n\nb) Explain why the graph curves although the power is constant, and justify why the specific heat capacity should be fitted to the beginning of the graph.\n\nc) Use the table value for water and calculate how great the mean power of the heat loss is in the interval $480\\text{–}600\\,\\text{s}$. Give the result of part c) in watts in the answer box.",
+      "text": "In a calorimeter, $0.50\\,\\text{kg}$ of water is heated with an electric resistor at a constant power of $200\\,\\text{W}$. The temperature of the water is measured at one-minute intervals (example data). The room temperature is $20\\,{}^\\circ\\text{C}$. The heat capacity of the vessel itself is ignored.\n\na) Calculate the specific heat capacity of water from the measurement of the first minute, assuming that the heat losses are still negligible, and compare it with the table value.\n\nb) Explain why the graph curves although the power is constant, and justify why the specific heat capacity should be fitted to the beginning of the graph.\n\nc) Use the table value for water and calculate the mean power of the heat loss in the interval $480\\text{–}600\\,\\text{s}$. Give the result of part c) in watts in the answer box.",
       "kind": [
         "data",
         "experiment",
@@ -319,7 +319,7 @@
     {
       "id": "fy3-6-L3-05",
       "level": 3,
-      "text": "An uninsulated mug contains $0.300\\,\\text{kg}$ of hot water. The room temperature is $20.0\\,{}^\\circ\\text{C}$. The temperature of the water is measured at ten-minute intervals (example data). The heat capacity of the mug and evaporation are ignored. According to the proposed model, the thermal power given out by the water is directly proportional to the difference in temperature between the water and the room: $P = k\\,(T_\\text{mean} - T_\\text{room})$, where $T_\\text{mean}$ is the mean of the temperature of the water in the interval under consideration.\n\na) Calculate the quantity of heat given out by the water and the mean thermal power in each ten-minute interval.\n\nb) Calculate the coefficient $k$ for each interval. Give $k$ of the first interval in the answer box.\n\nc) On the basis of the $k$ values, evaluate whether the model fits the measurements, and justify why the cooling of the water slows down.",
+      "text": "An uninsulated mug contains $0.300\\,\\text{kg}$ of hot water. The room temperature is $20.0\\,{}^\\circ\\text{C}$. The temperature of the water is measured at ten-minute intervals (example data). The heat capacity of the mug and evaporation are ignored. According to the proposed model, the thermal power given out by the water is directly proportional to the difference in temperature between the water and the room: $P = k\\,(T_\\text{mean} - T_\\text{room})$, where $T_\\text{mean}$ is the mean temperature of the water in the interval under consideration.\n\na) Calculate the quantity of heat given out by the water and the mean thermal power in each ten-minute interval.\n\nb) Calculate the coefficient $k$ for each interval. Give $k$ of the first interval in the answer box.\n\nc) On the basis of the $k$ values, evaluate whether the model fits the measurements, and justify why the cooling of the water slows down.",
       "kind": [
         "data",
         "model",

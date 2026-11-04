@@ -182,7 +182,7 @@ m &= \dfrac{3000\,\text{W} \cdot 300\,\text{s}}{2\,260\,000\,\tfrac{\text{J}}{\t
 ## fy3-7-L2-07
 **Annettu:** kiehumispisteet taulukosta: $T_\text{k} = 100{,}0\,{}^\circ\text{C}$ paineessa $101{,}3\,\text{kPa}$, $T_\text{k} = 81{,}3\,{}^\circ\text{C}$ paineessa $50{,}0\,\text{kPa}$ ja $T_\text{k} = 90{,}0\,{}^\circ\text{C}$ paineessa $70{,}0\,\text{kPa}$; vuoristossa $p = 60{,}0\,\text{kPa}$
 **Kysytty:** a) kiehumispisteen ero $\Delta T$ kelvineinä paineessa $60{,}0\,\text{kPa}$ normaalipaineeseen verrattuna; b) miksi ruoka kypsyy hitaammin vuoristossa
-**Periaate:** Veden kiehumispiste riippuu paineesta. Pienemmässä paineessa vesi kiehuu alemmassa lämpötilassa. Paine $60{,}0\,\text{kPa}$ on taulukon rivien $50{,}0\,\text{kPa}$ ja $70{,}0\,\text{kPa}$ puolivälissä. Siksi kiehumispiste arvioidaan niiden puolivälistä (lineaarinen interpolointi).
+**Periaate:** Veden kiehumispiste riippuu paineesta. Pienemmässä paineessa vesi kiehuu alemmassa lämpötilassa. Paine $60{,}0\,\text{kPa}$ on taulukon rivien $50{,}0\,\text{kPa}$ ja $70{,}0\,\text{kPa}$ puolivälissä. Siksi kiehumispiste arvioidaan niiden puolivälistä (lineaarinen interpolointi eli arvio suoran viivan mukaan).
 **Kaava:** $T_\text{k,vuori} = \dfrac{T_{50} + T_{70}}{2}$ ja $\Delta T = T_\text{k,normaali} - T_\text{k,vuori}$
 **Muunnokset:** Ei tarvita. Lämpötilaero on sama celsiusasteina ja kelvineinä.
 **Sijoitus:**

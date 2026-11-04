@@ -66,7 +66,7 @@
 ## fy3-6-L1-08
 **Given:** aluminium, $m = 0.60\,\text{kg}$, $T_\text{initial} = 18\,{}^\circ\text{C}$, $T_\text{final} = 78\,{}^\circ\text{C}$; from the table $c = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Find:** a) the heat capacity $C$; b) the quantity of heat $Q$ needed for the heating, in kilojoules
-**Principle:** The heat capacity $C = c m$ tells how much energy is needed to heat the whole pan by one kelvin. The pan warms and its phase does not change, so $Q = C \Delta T$.
+**Principle:** The heat capacity $C = c m$ tells how much energy is needed to heat the whole saucepan by one kelvin. The saucepan warms and its phase does not change, so $Q = C \Delta T$.
 **Formula:** $C = c m$ and $Q = C \Delta T$, where $\Delta T = T_\text{final} - T_\text{initial}$
 **Conversions:** $\Delta T = 78\,{}^\circ\text{C} - 18\,{}^\circ\text{C} = 60\,\text{K}$, the same in kelvins. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $C = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.60\,\text{kg} = 540\,\tfrac{\text{J}}{\text{K}}$ and $Q = 540\,\tfrac{\text{J}}{\text{K}} \cdot 60\,\text{K} = 32\,400\,\text{J} = 32.4\,\text{kJ}$
@@ -126,10 +126,10 @@
 **Reasonableness:** Energy balance: the resistor gives $100\,\text{W} \cdot 300\,\text{s} = 30\,000\,\text{J}$, and the liquid receives $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \cdot 14.5\,\text{K} = 30\,378\,\text{J}$. The numbers differ by about $1\,\%$, which is the size of the scatter of the measurements, so the losses in this interval are small.
 
 ## fy3-6-L2-06
-**Given:** in each $m = 0.40\,\text{kg}$, the same power $P$ and the same time; in the time $120\,\text{s}$ the temperature of liquid A rises from $20.0\,{}^\circ\text{C}$ to $38.1\,{}^\circ\text{C}$ and that of liquid B from $20.0\,{}^\circ\text{C}$ to $29.0\,{}^\circ\text{C}$; from the table $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ for water
+**Given:** in each $m = 0.40\,\text{kg}$, the same power $P$ and the same time; in $120\,\text{s}$ the temperature of liquid A rises from $20.0\,{}^\circ\text{C}$ to $38.1\,{}^\circ\text{C}$ and that of liquid B from $20.0\,{}^\circ\text{C}$ to $29.0\,{}^\circ\text{C}$; from the table $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ for water
 **Find:** a) which liquid is water; b) the specific heat capacity of the oil $c_\text{oil}$
 **Principle:** The same power in the same time gives both liquids the same quantity of heat $Q$, and the masses are the same. Since $Q = c m \Delta T$, the product $c\,\Delta T$ is the same for both, so the liquid with the greater $c$ warms less.
-**Reading the graph:** The temperatures in the table rise steadily: liquid A warms by about $4.5\,\text{K}$ and liquid B by about $2.3\,\text{K}$ in each $30\,\text{s}$ interval. So in the whole time $120\,\text{s}$ the changes are $\Delta T_\text{A} = 38.1\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 18.1\,\text{K}$ and $\Delta T_\text{B} = 29.0\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 9.0\,\text{K}$. Liquid B warms more slowly, so B is water and A is oil.
+**Reading the graph:** The temperatures in the table rise steadily: liquid A warms by about $4.5\,\text{K}$ and liquid B by about $2.3\,\text{K}$ in each $30\,\text{s}$ interval. So in the whole $120\,\text{s}$ the changes are $\Delta T_\text{A} = 38.1\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 18.1\,\text{K}$ and $\Delta T_\text{B} = 29.0\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 9.0\,\text{K}$. Liquid B warms more slowly, so B is water and A is oil.
 **Formula:** $c_\text{oil}\, m\, \Delta T_\text{A} = c_\text{w}\, m\, \Delta T_\text{B}$, so $c_\text{oil} = c_\text{w} \cdot \dfrac{\Delta T_\text{B}}{\Delta T_\text{A}}$
 **Conversions:** The mass $m$ and the quantity of heat $Q$ cancel, so no conversions are needed. The change in temperature is the same in degrees Celsius and in kelvins.
 **Substitution:** $c_\text{oil} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot \dfrac{9.0\,\text{K}}{18.1\,\text{K}} = 2083\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$

@@ -226,7 +226,7 @@
         "caption": "Boiling point of water at different pressures (steam table)",
         "columns": [
           "$p\\,(\\text{kPa})$",
-          "$T_\\text{k}\\,({}^\\circ\\text{C})$"
+          "$T_\\text{b}\\,({}^\\circ\\text{C})$"
         ],
         "rows": [
           [
