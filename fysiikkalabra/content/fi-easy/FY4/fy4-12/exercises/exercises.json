@@ -133,7 +133,7 @@
     {
       "id": "fy4-12-L2-03",
       "level": 2,
-      "text": "Kärry A lähtee paikasta $6{,}0\\,\\text{m}$ ja liikkuu tasaisella nopeudella $3{,}0\\,\\text{m/s}$ positiiviseen suuntaan. Kärry B lähtee samalla hetkellä paikasta $42\\,\\text{m}$ ja liikkuu tasaisella nopeudella $-1{,}0\\,\\text{m/s}$. Hahmottele paperille kummankin $(t,x)$-kuvaaja samaan koordinaatistoon. Perustele kuvaajista, miksi viivat leikkaavat ja mitä leikkauspiste kertoo. Ilmoita sitten, milloin kärryt kohtaavat.",
+      "text": "Kärry A lähtee paikasta $6{,}0\\,\\text{m}$ ja liikkuu tasaisella nopeudella $3{,}0\\,\\text{m/s}$ positiiviseen suuntaan. Kärry B lähtee samalla hetkellä paikasta $42\\,\\text{m}$ ja liikkuu tasaisella nopeudella $-1{,}0\\,\\text{m/s}$.\n\nHahmottele paperille kummankin $(t,x)$-kuvaaja samaan koordinaatistoon. Perustele kuvaajista, miksi viivat leikkaavat ja mitä leikkauspiste kertoo. Ilmoita sitten, milloin kärryt kohtaavat.",
       "answer": 9.0,
       "unit": "s",
       "tolerance": 0.02
