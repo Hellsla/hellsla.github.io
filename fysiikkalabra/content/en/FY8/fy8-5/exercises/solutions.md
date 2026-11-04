@@ -146,7 +146,7 @@
 **Formula:** $P = \dfrac{k}{N}$, where $k$ is the sum of the measurements that land in the region
 **Conversions:** The share is converted to a percentage by multiplying by one hundred: $1 = 100\,\%$.
 **Substitution:** The sum of the measurements of the first two classes is $k = 118 + 171 = 289$, so $P = \dfrac{289}{400} = 0.7225 = 72.25\,\%$. In part c) the sum of the first three classes is calculated similarly, $289 + 79 = 368$, and the share is $\dfrac{368}{400} = 0.920 = 92.0\,\%$.
-**Answer:**
+**Answer:** In the answer box: $72.3\,\%$.
 
 a) The most common class is $0.05$–$0.10\,\text{nm}$.
 
