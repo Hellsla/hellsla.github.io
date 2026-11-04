@@ -117,3 +117,182 @@
 **Substitution:** $\tfrac{1}{2}\,m v^2 = \tfrac{1}{2} \cdot 55.0\,\text{kg} \cdot (7.00\,\text{m/s})^2 = 1347.5\,\text{J}$ and $m g h = 55.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 2.10\,\text{m} \approx 1133.1\,\text{J}$, so $E_\text{other} = 1347.5\,\text{J} - 1133.1\,\text{J} \approx 214\,\text{J}$
 **Answer:** $214\,\text{J}$, three significant figures like the initial data.
 **Reasonableness:** Without friction the skater would rise to the height $\tfrac{v^2}{2g} = \tfrac{49\,\text{m}^2/\text{s}^2}{19.62\,\text{m/s}^2} \approx 2.50\,\text{m}$. She rises $2.10\,\text{m}$, about $16\,\%$ less, and the changed energy $214\,\text{J}$ is about $16\,\%$ of the original $1347.5\,\text{J}$. The result is positive, because friction only decreases the mechanical energy.
+
+## fy4-7-L1-06
+**Find:** how the kinetic energy of the car changes when the speed doubles and the mass stays the same
+**Principle:** Kinetic energy $E_\text{k} = \tfrac{1}{2}\,mv^2$ depends on the square of the speed. When the speed becomes twice as great, the square grows by the factor $2^2 = 4$, and the mass stays the same.
+**Model answer:** The kinetic energy becomes four times as great, because $\tfrac{1}{2}\,m(2v)^2 = 4 \cdot \tfrac{1}{2}\,mv^2$. The statement about doubling is wrong, because kinetic energy is not proportional to the speed but to its square. The statement about becoming eight times as great is wrong, because in the formula the speed is raised to the second power, not the third. The statement that it stays the same is wrong, because kinetic energy depends on the speed as well as the mass.
+
+## fy4-7-L1-07
+**Given:** mass $m = 80\,\text{kg}$, change in potential energy $\Delta E_\text{p} = 9.4\,\text{kJ}$, $g = 9.81\,\text{m/s}^2$
+**Find:** the lifting height $\Delta h$ in $\text{m}$
+**Principle:** The change in potential energy is proportional to the change in height. When the change and the mass are known, the change in height is solved from the formula.
+**Formula:** $\Delta E_\text{p} = m g\,\Delta h$, so $\Delta h = \dfrac{\Delta E_\text{p}}{m g}$
+**Conversions:** $9.4\,\text{kJ} = 9.4 \cdot 1000\,\text{J} = 9400\,\text{J}$
+**Substitution:** $\Delta h = \dfrac{9400\,\text{J}}{80\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{9400\,\text{J}}{784.8\,\text{N}} \approx 11.98\,\text{m}$
+**Answer:** $12\,\text{m}$, two significant figures like the mass and the energy.
+**Reasonableness:** With rounded numbers $80\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 12\,\text{m} = 9600\,\text{J} \approx 9.4\,\text{kJ}$. About $12\,\text{m}$ corresponds to the height of four floors, which suits the distance travelled by a lift.
+
+## fy4-7-L1-08
+**Find:** the signs of the kinetic energy and the potential energy of the bucket when the bucket is below the zero level and moving
+**Principle:** Kinetic energy $E_\text{k} = \tfrac{1}{2}\,mv^2$ contains the square of the speed, so it is never negative and does not depend on the direction of motion. Potential energy $E_\text{p} = m g h$ is calculated from the height above the zero level, and below the zero level $h < 0$.
+**Model answer:** The kinetic energy is positive and the potential energy is negative. The bucket is moving, so $E_\text{k} > 0$, and it is below the zero level, so $E_\text{p} = m g h < 0$. The statement that both are negative is wrong, because downward motion does not make kinetic energy negative. The statement that both are positive is wrong, because below the zero level the potential energy is negative. The statement that the kinetic energy is negative and the potential energy positive is wrong, because it turns the signs the wrong way round: in the formula $h$ is the height from the zero level, not the depth.
+
+## fy4-7-L2-05
+**Given:** mass $m = 0.057\,\text{kg}$, seven measurements $(t, h, v)$ of the table at the moments $0.0\,\text{s}$, $0.1\,\text{s}$, $\ldots$, $0.6\,\text{s}$; the zero level is the floor; $g = 9.81\,\text{m/s}^2$
+**Find:** $E_\text{k}$, $E_\text{p}$ and $E_\text{mech}$ at each moment, how they change with time, and the mean $E_{\text{mech,av}}$ of the mechanical energy in joules
+**Principle:** Kinetic energy is calculated from the speed and potential energy from the height above the floor. Mechanical energy is their sum. Air resistance is ignored, so the mechanical energy should stay the same, and measurement errors cause only a small scatter.
+**Formula:** $E_\text{k} = \tfrac{1}{2}\,mv^2$, $E_\text{p} = m g h$ and $E_\text{mech} = E_\text{k} + E_\text{p}$. The mean is the sum of the mechanical energies divided by the number of measurements, $7$.
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** For example at the moment $t = 0.3\,\text{s}$:
+```latex
+\begin{aligned}
+E_\text{k} &= \tfrac{1}{2} \cdot 0.057\,\text{kg} \cdot (2.91\,\text{m/s})^2 \\
+&= 0.241\,\text{J} \\
+E_\text{p} &= 0.057\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.36\,\text{m} \\
+&= 0.760\,\text{J} \\
+E_\text{mech} &= 0.241\,\text{J} + 0.760\,\text{J} \\
+&= 1.001\,\text{J}
+\end{aligned}
+```
+Similarly for the other moments (in joules):
+```latex
+\begin{array}{c|ccc}
+t\,(\text{s}) & E_\text{k} & E_\text{p} & E_\text{mech} \\ \hline
+0.0 & 0.000 & 1.007 & 1.007 \\
+0.1 & 0.027 & 0.979 & 1.006 \\
+0.2 & 0.113 & 0.895 & 1.008 \\
+0.3 & 0.241 & 0.760 & 1.001 \\
+0.4 & 0.445 & 0.570 & 1.015 \\
+0.5 & 0.679 & 0.324 & 1.003 \\
+0.6 & 0.999 & 0.022 & 1.021
+\end{array}
+```
+Part b): the kinetic energy grows from almost zero to about one joule, the potential energy decreases by the same amount, and their sum, the mechanical energy, stays almost the same. It varies by less than $1.5\,\%$ of the mean, which is of the order of the measurement error.
+Part c): the sum of the mechanical energies is $7.061\,\text{J}$, so $E_{\text{mech,av}} = 7.061\,\text{J} : 7 \approx 1.009\,\text{J}$.
+**Answer:** $1.0\,\text{J}$, two significant figures like the mass $0.057\,\text{kg}$.
+**Reasonableness:** At the start the ball is at rest at a height of $1.80\,\text{m}$, so $E_\text{mech} = m g h = 0.057\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.80\,\text{m} \approx 1.01\,\text{J}$, the same as the mean. At the last moment the ball is almost at the floor, and almost all the energy is kinetic energy.
+
+## fy4-7-L2-06
+**Given:** mass $m = 70\,\text{kg}$, depth $1.5\,\text{m}$ below the zero level, that is, the water surface, speed $v = 4.0\,\text{m/s}$, $g = 9.81\,\text{m/s}^2$
+**Find:** the student’s error and the mechanical energy $E_\text{mech}$ of the diver in joules
+**Principle:** Potential energy is calculated from the height above the zero level. Below the water surface the height is negative, $h = -1.5\,\text{m}$, so the potential energy is negative. The student substituted the depth into the formula as a positive number and got a positive potential energy. Kinetic energy is positive whatever the direction.
+**Formula:** $E_\text{mech} = E_\text{k} + E_\text{p} = \tfrac{1}{2}\,mv^2 + m g h$, where $h = -1.5\,\text{m}$
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** The height is $h = -1.5\,\text{m}$, so
+```latex
+\begin{aligned}
+E_\text{k} &= \tfrac{1}{2} \cdot 70\,\text{kg} \cdot (4.0\,\text{m/s})^2 \\
+&= 560\,\text{J} \\
+E_\text{p} &= 70\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot (-1.5\,\text{m}) \\
+&\approx -1030\,\text{J} \\
+E_\text{mech} &= 560\,\text{J} - 1030\,\text{J} \\
+&= -470\,\text{J}
+\end{aligned}
+```
+**Answer:** $-4.7 \cdot 10^{2}\,\text{J}$, that is, with two significant figures like the mass and the speed. The error: the student used the depth as a positive height, although $h < 0$ below the zero level.
+**Reasonableness:** The diver is below the zero level, so the potential energy is negative, and its absolute value $1030\,\text{J}$ is greater than the kinetic energy $560\,\text{J}$. That is why the sum is also negative. The student’s positive result $1590\,\text{J}$ cannot be right, because below the zero level the potential energy decreases the mechanical energy.
+
+## fy4-7-L2-07
+**Given:** five measurements $(v, E_\text{k})$ of the example data: $(0.40\,\text{m/s};\,0.043\,\text{J})$, $(0.80\,\text{m/s};\,0.17\,\text{J})$, $(1.20\,\text{m/s};\,0.37\,\text{J})$, $(1.60\,\text{m/s};\,0.66\,\text{J})$ and $(2.00\,\text{m/s};\,1.04\,\text{J})$
+**Find:** the mass $m$ of the cart in $\text{kg}$
+**Principle:** Kinetic energy is $E_\text{k} = \tfrac{1}{2}\,mv^2$. When $E_\text{k}$ is plotted as a function of the square of the speed $v^2$, the graph is a line through the origin whose slope is $\tfrac{1}{2}\,m$. The mass is therefore twice the slope.
+**Reading the graph:** First calculate $v^2$: $0.16$, $0.64$, $1.44$, $2.56$ and $4.00\,\text{m}^2/\text{s}^2$. Plot the points $(v^2, E_\text{k})$ and fit to them a line through the origin. A distant point is read from the line: when $v^2 = 4.00\,\text{m}^2/\text{s}^2$, the value of the line is about $E_\text{k} = 1.04\,\text{J}$.
+**Formula:** slope $k = \dfrac{\Delta E_\text{k}}{\Delta (v^2)} = \tfrac{1}{2}\,m$, so $m = 2k$
+**Conversions:** All quantities are in SI units, so no conversions are needed. The unit of the slope is $\text{J} : (\text{m}^2/\text{s}^2) = \text{kg}$.
+**Substitution:** $k = \dfrac{1.04\,\text{J} - 0\,\text{J}}{4.00\,\text{m}^2/\text{s}^2 - 0\,\text{m}^2/\text{s}^2} = 0.26\,\text{kg}$, so $m = 2 \cdot 0.26\,\text{kg} = 0.52\,\text{kg}$
+**Answer:** $0.52\,\text{kg}$, two significant figures like the measured values.
+**Reasonableness:** Check with one point: $\tfrac{1}{2} \cdot 0.52\,\text{kg} \cdot (1.20\,\text{m/s})^2 = 0.37\,\text{J}$, the same as in the table. A mass of $0.52\,\text{kg}$ is normal for a laboratory cart.
+
+## fy4-7-L3-04
+**Given:** mass $m = 0.058\,\text{kg}$, highest points $1.50\,\text{m}$, $1.09\,\text{m}$, $0.80\,\text{m}$, $0.57\,\text{m}$ and $0.42\,\text{m}$ above the floor; at the highest point $v = 0$; $g = 9.81\,\text{m/s}^2$
+**Find:** the mechanical energy at the highest points, the average percentage, the energy $\Delta E$ changed in the first four bounces in joules, and why the results do not depend on the zero level
+**Principle:** At the highest point the speed is zero, so the mechanical energy is only potential energy, $E_\text{mech} = E_\text{p} = m g h$. If mechanical energy were conserved, the ball would always return to the same height. The height decreases, so part of the mechanical energy changes into other energy: in the collision the ball and the floor warm up slightly, the ball vibrates and sound is produced. The amount changed is the decrease in mechanical energy.
+**Formula:** $E_\text{mech} = m g h$. The energy changed is $\Delta E = E_\text{mech,0} - E_\text{mech,4} = m g\,(h_0 - h_4)$. The share in one bounce is obtained from the ratio of the heights, because $E_\text{mech}$ is proportional to the height.
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** Part a): $m g = 0.058\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0.569\,\text{N}$, and $E_n = m g h_n$:
+```latex
+\begin{aligned}
+E_0 &= 0.569\,\text{N} \cdot 1.50\,\text{m} \\
+&= 0.853\,\text{J} \\
+E_1 &= 0.569\,\text{N} \cdot 1.09\,\text{m} \\
+&= 0.620\,\text{J} \\
+E_2 &= 0.569\,\text{N} \cdot 0.80\,\text{m} \\
+&= 0.455\,\text{J} \\
+E_3 &= 0.569\,\text{N} \cdot 0.57\,\text{m} \\
+&= 0.324\,\text{J} \\
+E_4 &= 0.569\,\text{N} \cdot 0.42\,\text{m} \\
+&= 0.239\,\text{J}
+\end{aligned}
+```
+Part b): the ratios of consecutive heights are $\dfrac{1.09}{1.50} = 0.727$, $\dfrac{0.80}{1.09} = 0.734$, $\dfrac{0.57}{0.80} = 0.713$ and $\dfrac{0.42}{0.57} = 0.737$. The sum of the ratios is $2.911$, so the mean is $2.911 : 4 = 0.728$. In each bounce about $73\,\%$ of the mechanical energy is conserved and about $27\,\%$ changes into other energy.
+Part c):
+```latex
+\begin{aligned}
+\Delta E &= 0.853\,\text{J} - 0.239\,\text{J} \\
+&= 0.614\,\text{J}
+\end{aligned}
+```
+Part d): the zero level is $1.00\,\text{m}$ above the floor, so the heights are $h' = h - 1.00\,\text{m}$:
+```latex
+\begin{aligned}
+E_0' &= 0.569\,\text{N} \cdot 0.50\,\text{m} \\
+&= 0.285\,\text{J} \\
+E_4' &= 0.569\,\text{N} \cdot (-0.58\,\text{m}) \\
+&= -0.330\,\text{J} \\
+E_4' - E_0' &= -0.615\,\text{J}
+\end{aligned}
+```
+The change is the same as with the floor as the zero level, because $m g\,(h_4' - h_0') = m g\,(h_4 - h_0)$: the height of the zero level cancels out of the difference. The value of the mechanical energy depends on the zero level, but its change does not.
+**Answer:** $0.61\,\text{J}$, two significant figures like the mass $0.058\,\text{kg}$. The energy has gone into the internal energy of the ball, the floor and the air, and into sound.
+**Reasonableness:** The total change is $1 - \dfrac{0.42}{1.50} = 72\,\%$ of the original energy, and $0.72 \cdot 0.853\,\text{J} = 0.614\,\text{J}$. Four bounces that each conserve $73\,\%$ give $0.73^4 \approx 0.28$, that is, $28\,\%$ remains, which matches the ratio of the table, $0.42 : 1.50 = 0.28$.
+
+## fy4-7-L3-05
+**Given:** mass $m = 48\,\text{kg}$, measuring points $(h, v)$: $(18.0\,\text{m};\,1.5\,\text{m/s})$, $(14.0\,\text{m};\,8.3\,\text{m/s})$, $(10.0\,\text{m};\,11.5\,\text{m/s})$, $(6.0\,\text{m};\,14.0\,\text{m/s})$ and $(2.0\,\text{m};\,15.8\,\text{m/s})$; the zero level is the bottom of the slope; $g = 9.81\,\text{m/s}^2$
+**Find:** the mechanical energy $E_\text{mech}$ at points 1–5, the energy $\Delta E$ changed into other energy between points 1 and 5 in kilojoules, and why the result does not depend on the zero level
+**Principle:** At each point the mechanical energy is the sum of the kinetic energy and the potential energy. Without friction and air resistance it would stay the same, so its decrease tells how much energy has changed into other energy, that is, internal energy, because of friction and air resistance. The height is the vertical distance from the zero level, not the distance along the slope.
+**Formula:** $E_\text{mech} = \tfrac{1}{2}\,mv^2 + m g h$ and $\Delta E = E_\text{mech,1} - E_\text{mech,5}$
+**Conversions:** All quantities are in SI units, so the energies come in joules. Finally $1\,\text{kJ} = 1000\,\text{J}$.
+**Substitution:** Part a), taking point 1 as an example, where $m g = 48\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 470.9\,\text{N}$:
+```latex
+\begin{aligned}
+E_\text{k} &= \tfrac{1}{2} \cdot 48\,\text{kg} \cdot (1.5\,\text{m/s})^2 \\
+&= 54\,\text{J} \\
+E_\text{p} &= 470.9\,\text{N} \cdot 18.0\,\text{m} \\
+&\approx 8476\,\text{J} \\
+E_\text{mech} &\approx 8530\,\text{J}
+\end{aligned}
+```
+All the points (in joules):
+```latex
+\begin{array}{c|ccc}
+\text{Point} & E_\text{k} & E_\text{p} & E_\text{mech} \\ \hline
+1 & 54 & 8476 & 8530 \\
+2 & 1653 & 6592 & 8246 \\
+3 & 3174 & 4709 & 7883 \\
+4 & 4704 & 2825 & 7529 \\
+5 & 5991 & 942 & 6933
+\end{array}
+```
+Part b):
+```latex
+\begin{aligned}
+\Delta E &= 8530\,\text{J} - 6933\,\text{J} \\
+&= 1597\,\text{J} \\
+&\approx 1.6\,\text{kJ}
+\end{aligned}
+```
+Part c): the differences in mechanical energy between consecutive points are $284\,\text{J}$, $363\,\text{J}$, $354\,\text{J}$ and $596\,\text{J}$. The most energy changes between points 4 and 5, where the speed is greatest, and the least between points 1 and 2, where the speed is smallest. This fits air resistance, which grows as the speed grows, and the friction of the snow acts in addition. The energy does not disappear: friction and air resistance warm the sled, the snow and the air, so the mechanical energy changes into their internal energy.
+Part d): the zero level is at the height of point 1, so the height of point 5 is $h' = 2.0\,\text{m} - 18.0\,\text{m} = -16.0\,\text{m}$ and the height of point 1 is $0$:
+```latex
+\begin{aligned}
+E_1' &= 54\,\text{J} + 0\,\text{J} \\
+&= 54\,\text{J} \\
+E_5' &= 5991\,\text{J} - 7534\,\text{J} \\
+&= -1543\,\text{J} \\
+E_1' - E_5' &= 1597\,\text{J}
+\end{aligned}
+```
+The difference is the same, because the choice of the zero level adds the same number to both mechanical energies, and it cancels out of the difference.
+**Answer:** $1.6\,\text{kJ}$, two significant figures like the mass $48\,\text{kg}$.
+**Reasonableness:** If the mechanical energy were conserved, the speed at point 5 would be about $17.8\,\text{m/s}$, and the measured $15.8\,\text{m/s}$ is smaller than that. The energy changed is about $19\,\%$ of the original $8530\,\text{J}$, which is a reasonable share for a sledding hill.

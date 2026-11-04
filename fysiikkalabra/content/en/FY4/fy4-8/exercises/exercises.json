@@ -39,6 +39,75 @@
       "answer": -2.6,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L1-06",
+      "level": 1,
+      "text": "Two children slide down slides from rest. One slide is steep and short, the other gentle and long, but the starting height of both is the same. The children have equal masses, and friction and air resistance are ignored. What can be concluded about the children’s speeds at the bottom of the slide?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The speeds are equal, because the change in potential energy is the same.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The child on the steep slide is faster, because his or her acceleration is greater.",
+          "feedback": "The acceleration is greater on the steep slide, but the distance is shorter. The speed is determined by energy: the weight does the work $mgh$, which depends only on the height difference."
+        },
+        {
+          "text": "The child on the gentle slide is faster, because he or she accelerates for a longer time.",
+          "feedback": "On the gentle slide the time is longer, but the acceleration is smaller. Only the height difference affects the speed, because the mechanical energy is conserved."
+        },
+        {
+          "text": "The speeds are equal, because the change in potential energy is the same.",
+          "correct": true,
+          "feedback": "Correct: the mechanical energy of the child is conserved and the change in potential energy $mgh$ is the same for both, so the kinetic energy and the speed at the bottom are the same."
+        },
+        {
+          "text": "The child on the steep slide is faster, because his or her potential energy changes faster.",
+          "feedback": "On the steep slide the potential energy changes faster with respect to time, but the result is decided by the total change in energy. It is the same for both."
+        }
+      ]
+    },
+    {
+      "id": "fy4-8-L1-07",
+      "level": 1,
+      "text": "A skater of mass $58.0\\,\\text{kg}$ glides on ice at a speed of $7.50\\,\\text{m/s}$. Friction and air resistance slow the motion, and the skater’s speed decreases to $4.50\\,\\text{m/s}$. How much work does the net force on the skater do during the slowing down? Give the work with its sign in kilojoules.",
+      "answer": -1.04,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L1-08",
+      "level": 1,
+      "text": "A student solves the problem: “A box slides down an inclined plank a distance of $5.0\\,\\text{m}$. The height difference between the ends of the plank is $1.5\\,\\text{m}$, and the frictional force opposing the motion is $8.0\\,\\text{N}$. How much work does friction do on the box?”\n\nThe student’s solution: $W = -F_\\mu h = -8.0\\,\\text{N} \\cdot 1.5\\,\\text{m} = -12\\,\\text{J}$.\n\nWhat is wrong in the student’s solution?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The work of friction is calculated with the distance travelled and not with the height difference.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The work of friction is calculated with the distance travelled and not with the height difference.",
+          "correct": true,
+          "feedback": "Correct: the work of friction is the frictional force times the distance travelled along the plank, here $-8.0\\,\\text{N} \\cdot 5.0\\,\\text{m}$. The height difference belongs to the work of the weight."
+        },
+        {
+          "text": "The sign is wrong, because friction increases the mechanical energy of the box.",
+          "feedback": "Friction opposes the motion, so its work is negative and the mechanical energy decreases. The student’s sign is correct."
+        },
+        {
+          "text": "The frictional force must be multiplied by the weight of the box and not by the height difference.",
+          "feedback": "Work is force times distance, not force times weight. The frictional force is already given in the problem."
+        },
+        {
+          "text": "The work of friction is zero, because the normal force cancels the friction.",
+          "feedback": "The normal force is perpendicular to the plank and does not cancel the friction, which is parallel to the plank. Friction does work because the box moves."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +142,141 @@
       "answer": 21.213203,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L2-05",
+      "level": 2,
+      "text": "Students study the energy of a pendulum with a light gate. The bob of the pendulum is released from rest at different heights $h$ measured from the lowest point of the pendulum, and a light gate at the lowest point measures the speed $v$ of the bob. Friction and air resistance are ignored. The table is example data.\n\na) Calculate $v^2$ for each measurement, plot the points in an $(h, v^2)$ coordinate system and fit a straight line through the origin to them. Determine the slope of the line.\n\nb) Derive from the conservation law the relation between the slope and the acceleration of free fall $g$, and calculate $g$.\n\nc) Justify why the line must pass through the origin.\n\nThe answer field takes the result of part b).",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 9.77,
+      "unit": "m/s²",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Speed of the bob at the lowest point of the pendulum (example data)",
+        "columns": [
+          "$h\\,(\\text{m})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.05",
+            "1.00"
+          ],
+          [
+            "0.10",
+            "1.38"
+          ],
+          [
+            "0.15",
+            "1.73"
+          ],
+          [
+            "0.20",
+            "1.96"
+          ],
+          [
+            "0.25",
+            "2.23"
+          ],
+          [
+            "0.30",
+            "2.41"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-8-L2-06",
+      "level": 2,
+      "text": "A mini roller coaster car with its passengers has a mass of $420\\,\\text{kg}$. The height $h$ and speed $v$ of the car were measured at four points of the track, and $s$ is the track distance from point A. The table is example data. The zero level is the ground.\n\na) Calculate the mechanical energy of the car at points A, B, C and D in kilojoules.\n\nb) How much work do the resistive forces do on the car in total between points A and D?\n\nc) Between which points is the average resistive force greatest? Justify by calculating.\n\nThe answer field takes the result of part b) in kilojoules.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": -19.931,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Measurements of the car at different points of the track (example data)",
+        "columns": [
+          "Point",
+          "$s\\,(\\text{m})$",
+          "$h\\,(\\text{m})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "0",
+            "18.0",
+            "1.5"
+          ],
+          [
+            "B",
+            "55",
+            "6.0",
+            "14.6"
+          ],
+          [
+            "C",
+            "120",
+            "12.0",
+            "7.9"
+          ],
+          [
+            "D",
+            "170",
+            "3.0",
+            "14.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-8-L2-07",
+      "level": 2,
+      "text": "Students determine the frictional force by an experiment. A wooden block of mass $0.50\\,\\text{kg}$ is allowed to slide on a horizontal table with different initial speeds $v_0$, and each time the stopping distance $s$ of the block is measured. Air resistance is ignored and the frictional force is assumed to be constant. The table is example data.\n\na) Calculate $v_0^2$, plot the points in a $(v_0^2, s)$ coordinate system and fit a straight line through the origin to them. Determine the slope of the line.\n\nb) Derive from the work–energy principle the relation between the slope and the frictional force $F_\\mu$, and calculate the frictional force.\n\nThe answer field takes the result of part b) in newtons.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 1.144,
+      "unit": "N",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Stopping distance of the block at different initial speeds (example data)",
+        "columns": [
+          "$v_0\\,(\\text{m/s})$",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "0.22"
+          ],
+          [
+            "1.5",
+            "0.47"
+          ],
+          [
+            "2.0",
+            "0.88"
+          ],
+          [
+            "2.5",
+            "1.35"
+          ],
+          [
+            "3.0",
+            "1.98"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +303,93 @@
       "answer": 23.160311,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-8-L3-04",
+      "level": 3,
+      "text": "A snowboarder of mass $70\\,\\text{kg}$ including equipment goes down from the top of a slope, starting from rest. The height difference of the slope is $6.0\\,\\text{m}$ and the length of the slope $45\\,\\text{m}$. From the bottom of the slope the snowboarder glides on horizontal snow until stopping, and measures the distance $s$ travelled before stopping. The table is example data from six runs. Air resistance is ignored, and the frictional force of the snow is assumed to be constant both on the slope and on the horizontal part.\n\na) Calculate the mean stopping distance.\n\nb) Calculate the average frictional force of the snow with the work–energy principle.\n\nc) Calculate the speed of the snowboarder at the bottom of the slope and justify why it is smaller than in the frictionless case.\n\nThe answer field takes the result of part b).",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 54.887,
+      "unit": "N",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Stopping distance on horizontal snow (example data)",
+        "columns": [
+          "Run",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "29.4"
+          ],
+          [
+            "2",
+            "31.2"
+          ],
+          [
+            "3",
+            "28.7"
+          ],
+          [
+            "4",
+            "30.5"
+          ],
+          [
+            "5",
+            "29.9"
+          ],
+          [
+            "6",
+            "30.7"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-8-L3-05",
+      "level": 3,
+      "text": "A tennis ball of mass $0.057\\,\\text{kg}$ is dropped from rest onto a hard floor from a height of $1.20\\,\\text{m}$. The height of the ball at its highest point after each bounce is measured from a video. The table is example data. Air resistance is ignored, so the mechanical energy changes only in the bounces. The zero level is the floor.\n\na) Calculate the mechanical energy of the ball at each highest point and the share that the ball keeps from each bounce.\n\nb) Calculate the mean of the conserved shares in percent.\n\nc) Calculate how much mechanical energy turns into internal energy in the first bounce. Justify with the data whether the mechanical energy of the ball is conserved in the bounces and whether the total energy is conserved.\n\nThe answer field takes the result of part b).",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 63.9,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Height of the ball at the highest point (example data)",
+        "columns": [
+          "Bounces",
+          "$h\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "1.20"
+          ],
+          [
+            "1",
+            "0.77"
+          ],
+          [
+            "2",
+            "0.49"
+          ],
+          [
+            "3",
+            "0.32"
+          ],
+          [
+            "4",
+            "0.20"
+          ]
+        ]
+      }
     }
   ]
 }
