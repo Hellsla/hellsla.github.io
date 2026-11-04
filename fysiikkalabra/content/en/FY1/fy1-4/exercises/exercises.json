@@ -39,6 +39,77 @@
       "answer": 4.8,
       "unit": "g",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-4-L1-06",
+      "level": 1,
+      "text": "An experiment gave six data points that lie roughly on a line but scatter around it because of measurement uncertainty. Which of the following correctly describes how a line is fitted to the points?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The line passes through the middle of the set of points, with points left on both sides of it.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The line passes through the middle of the set of points, with points left on both sides of it.",
+          "feedback": "Correct: the data points have random scatter, so the line is drawn close to all the points, with roughly as many points above it as below it. The line does not have to pass through any single point.",
+          "correct": true
+        },
+        {
+          "text": "The line is drawn through as many points as possible and the remaining points are ignored.",
+          "feedback": "A point may be ignored only if there is a justified reason, for example a gross error that has been identified. Deviating from the line is not enough, and every measurement tells you something about where the line is."
+        },
+        {
+          "text": "The line is drawn through the first and the last point, because they mark the limits of the measured range.",
+          "feedback": "A single point has as much scatter as any other. If the line is tied to two end points, their error is carried over to the whole line, although the other points tell you about the position of the line just as much."
+        },
+        {
+          "text": "The points are joined into a broken line, because every measurement is equally important.",
+          "feedback": "A broken line follows the measurement errors from one point to the next and is not a model. A fitted line describes the law of the phenomenon and smooths out the random scatter, so the points are not joined."
+        }
+      ]
+    },
+    {
+      "id": "fy1-4-L1-07",
+      "level": 1,
+      "text": "The mass $m$ of objects of different sizes made of the same metal was measured in grams as a function of the volume $V$ in cubic centimetres. The line fitted to the data points passes through the origin, and its slope is $7.9$. What does the slope tell you?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The slope is $7.9\\,\\text{g/cm}^3$ and tells you how many grams of mass there are per cubic centimetre.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The slope is $7.9\\,\\text{g/cm}^3$ and tells you how many grams of mass there are per cubic centimetre.",
+          "feedback": "Correct: the unit of the slope is the unit of $y$ divided by the unit of $x$, so in a mass–volume graph it is $\\text{g/cm}^3$. Because the objects are made of the same metal, it is the density of this material.",
+          "correct": true
+        },
+        {
+          "text": "The slope is $7.9\\,\\text{cm}^3/\\text{g}$ and tells you how large a volume one gram fills.",
+          "feedback": "The unit has been turned upside down. The slope is $\\Delta y : \\Delta x$, so the unit of $y$, the mass, goes in the numerator and that of $x$, the volume, in the denominator."
+        },
+        {
+          "text": "The slope is $7.9\\,\\text{g}$ and tells you the mass of the object when the volume is zero.",
+          "feedback": "This has been confused with the constant term $b$, which is where the line crosses the vertical axis. The line passes through the origin, so $b = 0$, and the slope tells you how steeply the mass increases with the volume."
+        },
+        {
+          "text": "The slope is just a number without a unit, because it only tells you how steep the line is.",
+          "feedback": "The slope has a unit if the quantities have units. It is the result of the division $\\Delta y : \\Delta x$, and it gets its physical meaning from the unit, for example density."
+        }
+      ]
+    },
+    {
+      "id": "fy1-4-L1-08",
+      "level": 1,
+      "text": "The length $l$ of a spring was measured as a function of the mass $m$ of the load. The line fitted to the data points passes through the point $(3.0\\,\\text{kg};\\ 7.0\\,\\text{cm})$, and its slope is $1.5\\,\\tfrac{\\text{cm}}{\\text{kg}}$. How long is the spring without a load? Give the answer in centimetres.",
+      "kind": [
+        "model"
+      ],
+      "answer": 2.5,
+      "unit": "cm",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,145 @@
       "answer": 1.8,
       "unit": "times",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy1-4-L2-05",
+      "level": 2,
+      "text": "Different masses were hung from a steel spring and the extension $x$ of the spring was measured as a function of the mass $m$ of the load. Plot the data points, fit a straight line to them and determine its slope. How many millimetres does the spring stretch per additional gram? Give the answer in mm/g.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 0.08,
+      "unit": "mm/g",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Extension of a spring as a function of the load",
+        "columns": [
+          "$m\\,(\\text{g})$",
+          "$x\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "50.0",
+            "4.1"
+          ],
+          [
+            "100.0",
+            "8.3"
+          ],
+          [
+            "150.0",
+            "11.8"
+          ],
+          [
+            "200.0",
+            "16.5"
+          ],
+          [
+            "250.0",
+            "20.2"
+          ],
+          [
+            "300.0",
+            "23.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-4-L2-06",
+      "level": 2,
+      "text": "A trolley moved steadily along a track, and its position $x$ from a mark on the track was measured as a function of time $t$. Plot the data points and fit a straight line to them. What is the constant term $b$ of the line in metres? Explain why the line does not pass through the origin and what the constant term means in this experiment.",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 0.83,
+      "unit": "m",
+      "tolerance": 0.1,
+      "data": {
+        "caption": "Position of a trolley as a function of time",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.82"
+          ],
+          [
+            "1.0",
+            "1.31"
+          ],
+          [
+            "2.0",
+            "1.68"
+          ],
+          [
+            "3.0",
+            "2.22"
+          ],
+          [
+            "4.0",
+            "2.57"
+          ],
+          [
+            "5.0",
+            "3.09"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-4-L2-07",
+      "level": 2,
+      "text": "From each of two uniform metals, A and B, objects of different volumes made of the same material were produced, and the mass of each was weighed. Plot the data points of both materials in the same coordinate system and fit a separate line to each. How many times greater is the slope of the line of B than that of A? What does the slope mean in this graph, and which material is denser?",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 2.9,
+      "unit": "times",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Mass of the objects as a function of volume",
+        "columns": [
+          "$V\\,(\\text{cm}^3)$",
+          "$m_\\text{A}\\,(\\text{g})$",
+          "$m_\\text{B}\\,(\\text{g})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "27.4",
+            "78.6"
+          ],
+          [
+            "20.0",
+            "53.8",
+            "156.8"
+          ],
+          [
+            "30.0",
+            "82.1",
+            "237.1"
+          ],
+          [
+            "40.0",
+            "108.9",
+            "313.5"
+          ],
+          [
+            "50.0",
+            "135.2",
+            "392.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +310,102 @@
       "answer": 16,
       "unit": "times",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-4-L3-04",
+      "level": 3,
+      "text": "The extension $x$ of a spring was measured as a function of the mass $m$ of the load with greater loads than usual. Plot the data points. Over which interval of loads does the linear model hold? Fit a line to that interval and give its slope in mm/g. Justify why the model does not hold over the whole measured range.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 0.08,
+      "unit": "mm/g",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Extension of a spring with large loads",
+        "columns": [
+          "$m\\,(\\text{g})$",
+          "$x\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "100.0",
+            "8.1"
+          ],
+          [
+            "200.0",
+            "16.3"
+          ],
+          [
+            "300.0",
+            "24.2"
+          ],
+          [
+            "400.0",
+            "32.5"
+          ],
+          [
+            "500.0",
+            "40.1"
+          ],
+          [
+            "600.0",
+            "51.8"
+          ],
+          [
+            "700.0",
+            "68.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-4-L3-05",
+      "level": 3,
+      "text": "The distance $s$ travelled by a trolley was measured as a function of time $t$. Plot the data points. The steepest line that still fits among the points passes through the points $(1.0\\,\\text{s};\\ 0.75\\,\\text{m})$ and $(6.0\\,\\text{s};\\ 3.50\\,\\text{m})$, and the gentlest line through the points $(2.0\\,\\text{s};\\ 1.40\\,\\text{m})$ and $(5.0\\,\\text{s};\\ 2.60\\,\\text{m})$. A student estimated the slope as the mean of the slopes of these lines and its uncertainty as their difference: \"The steepest line gives $0.55\\,\\text{m/s}$ and the gentlest $0.40\\,\\text{m/s}$. The mean is $0.475\\,\\text{m/s}$ and the uncertainty is $0.55\\,\\text{m/s} - 0.40\\,\\text{m/s} = 0.15\\,\\text{m/s}$, so the uncertainty is $32\\,\\%$ of the slope.\" Find the student's error and calculate the correct uncertainty as a percentage of the slope. Explain what this estimate tells you and what it does not guarantee.",
+      "kind": [
+        "data",
+        "graph",
+        "error"
+      ],
+      "answer": 16,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Distance of a trolley as a function of time",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "0.75"
+          ],
+          [
+            "2.0",
+            "1.40"
+          ],
+          [
+            "3.0",
+            "1.80"
+          ],
+          [
+            "4.0",
+            "2.30"
+          ],
+          [
+            "5.0",
+            "2.60"
+          ],
+          [
+            "6.0",
+            "3.50"
+          ]
+        ]
+      }
     }
   ]
 }

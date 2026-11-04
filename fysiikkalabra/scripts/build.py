@@ -327,6 +327,31 @@ def core_ids(ex):
     return out
 
 
+NUM_CELL = re.compile(r"[−-]?\d+(?:\.\d+)?")
+
+
+def data_table(d):
+    """An exercise's data ("data": {"caption", "columns", "rows"}, teacher 2026-11-04, aineistotehtävät): a measurement
+    table the student reads, copies into a spreadsheet or fits. A cell that is a plain number is written with a point
+    in the JSON (the same in every language) and shown with the page language's decimal sign; any other cell, the
+    caption and the column heads are text with LaTeX."""
+    cell = lambda c: str(c).replace(".", T("format.decimal")).replace("-", "−") if NUM_CELL.fullmatch(str(c)) else nbsp_units(str(c))
+    cap = f'<caption>{nbsp_units(d["caption"])}</caption>' if d.get("caption") else ""
+    head = "".join(f'<th scope="col">{nbsp_units(h)}</th>' for h in d["columns"])
+    body = "".join("<tr>" + "".join(f"<td>{cell(c)}</td>" for c in r) + "</tr>" for r in d["rows"])
+    return f'<table class="exp-table ex-data">{cap}<thead><tr>{head}</tr></thead><tbody>{body}</tbody></table>'
+
+
+def exercise_choice(e):
+    """A conceptual multiple-choice exercise ("choices", teacher 2026-11-04): the same component as an inquiry choice
+    (inquiry.choice_html, inquiry.js: feedback for the chosen option, one change, then the correct one), in an
+    exercise's place. Its answer and model solution open after "Olen tehnyt ratkaisun", like a written task's."""
+    md = lambda t: nbsp_units(render_md(t))
+    lid = e["id"].rsplit("-L", 1)[0]
+    return inquiry.choice_html({"prompt": e.get("prompt") or T("lesson.choose"), "choices": e["choices"]}, md, lid, e["id"])
+
+
+
 def chapter_no(course, lid):
     """The chapter's number in its module: its place in curriculum.json's slots, the "Luku N" of the module page."""
     ids = [l["id"] for l in curriculum.get(course, {}).get("lessons", [])]
@@ -364,6 +389,7 @@ def exercise_html(e, solution_html, read=None, core=False, num=None):
     model = figcat.figure_html(e["model_figure"], T.lang, read) if e.get("model_figure") else ""   # a drawing task's model diagram, inside the solution
     sol = f'<details class="solution"><summary>{T("lesson.solution")}</summary>{model}<div class="steps">{solution_html}</div></details>' if solution_html else ""
     fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
+    fig = (data_table(e["data"]) if e.get("data") else "") + fig + (exercise_choice(e) if e.get("choices") else "")
     tag = f'<span class="ex-core">{T("lesson.core_exercise")}</span>' if core else ""
     solved = "" if numeric else f'<label class="solved"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>'   # a written task opens its answer after this tick (lesson.js part 8)
     return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{inquiry.task_text(nbsp_units(e["text"]), pid=f"{e['id']}-q")}{fig}{check}{solved}'
