@@ -186,7 +186,7 @@
     {
       "id": "fy5-1-L2-06",
       "level": 2,
-      "text": "The centre of a light metre stick is fixed to an axis, and the stick is horizontal. Weights hang from the stick on the left and right of the axis. The table gives the masses of the weights and their distances from the axis (example data). The mass of the stick itself is ignored. Use the value $g = 9.81\\,\\text{m/s}^2$.\n\na) Calculate the net moment of the weights of the masses about the axis, when an anticlockwise moment is positive.\n\nb) In which direction does the stick start to turn?\n\nThe answer box takes the result of part a).",
+      "text": "The centre of a light metre stick is fixed to an axis, and the stick is horizontal. Weights hang from the stick on the left and right of the axis. The table gives the masses of the weights and their distances from the axis (example data). The mass of the stick itself is ignored. Use the value $g = 9.81\\,\\text{m/s}^2$.\n\na) Calculate the net moment of the weights (the gravitational forces on the hanging masses) about the axis, when an anticlockwise moment is positive.\n\nb) In which direction does the stick start to turn?\n\nThe answer box takes the result of part a).",
       "kind": [
         "data"
       ],

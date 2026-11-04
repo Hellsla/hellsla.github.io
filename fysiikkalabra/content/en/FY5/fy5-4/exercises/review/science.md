@@ -1,12 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 778b291ab487f1ac
+CONTENT-HASH: cfb6c19a09b4fc1c
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- exercises.json L2-05: "The table is smooth" -> "The tabletop is smooth" (the word clashed with the data table beside it).
+- L2-06: "just barely stays" -> "only just stays".
+- L1-07 feedback: "Acceleration tells the change of the velocity" -> "tells how the velocity changes".
+
 ## Polish
-- [Minor] solutions.md L3-02 — "1 Hz = 1 1/s" is copied from the Finnish (formulas must match); could read s^-1 in both.
+(none)
 
 ## Checked
-- exercises.json and solutions.md compared with the Finnish: all 12 numbers, answers (5.0, 1.7534, 6.6667, 7.9057, 900, 1.1048, 4.7374, 6.012, 2.0636, 27.6193, 1.4067, 201.3566), units and tolerances identical; decimal point used in text.
-- "Centripetal acceleration" and "net force" used correctly; no centrifugal force; every solution has given, find, principle, formula, conversions, substitution, answer, reasonableness; force-diagram blocks identical.
+- The 8 new exercises (L1-06..08, L2-05..07, L3-04..05) compared with fi field by field: ids, kinds, answers (9.0, 24.98, 0.5477, 3.672, 257.4, 97.29), units, tolerances, fbd flags, correct flags and data table cells identical.
+- Choices: one correct per concept item, same order and same correct flag as fi; feedback means the same (no centrifugal force, friction inwards, direction change = acceleration).
+- All numbers and LaTeX formulas in solutions.md match fi (decimal point); voimakuvio blocks identical; check_i18n 0 errors.
+- Terms: centripetal acceleration, net force, static friction used correctly; no centrifugal force claimed.

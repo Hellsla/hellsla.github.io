@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8a4c7e67bfedd340
+CONTENT-HASH: 1395544bccbbd6b3
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed)
+
 ## Polish
-- [Minor] some sentences identical to the Finnish by design.
+(none)
 
 ## Checked
-- 12 tasks present. Simplified: tasks L1-02, L1-03, L1-04, L1-05, L2-04, L3-01, L3-02, L3-03 into shorter sentences; "pyörimistaajuus eli kierrosten määrä sekunnissa" explained.
+- Sentences are short and common words are used; terms (ratanopeus, lepokitka, kokonaisvoima) match the lesson and are explained in the solutions.
+- Level, task order and answer-box instructions identical to fi; the fi-easy sentence splits keep the same content.

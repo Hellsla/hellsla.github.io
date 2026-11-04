@@ -130,7 +130,7 @@
 **Formula:** $T = \dfrac{1}{f}$
 **Conversions:** $f = 3000\,\tfrac{1}{\text{min}} = \dfrac{3000}{60\,\text{s}} = 50\,\tfrac{1}{\text{s}}$
 **Substitution:** $T = \dfrac{1}{50\,\tfrac{1}{\text{s}}} = 0.020\,\text{s}$
-**Answer:** $0.020\,\text{s}$, two significant figures. The result is given with two significant figures, as in its rounded form.
+**Answer:** $0.020\,\text{s}$, two significant figures.
 **Reasonableness:** When one revolution takes $0.020\,\text{s}$, the number of revolutions per second is $\dfrac{1\,\text{s}}{0.020\,\text{s}} = 50$, which is the same as the converted rotation frequency. The sound of an engine is a fast buzz, so a revolution takes a fraction of a second.
 
 ## fy5-3-L1-08

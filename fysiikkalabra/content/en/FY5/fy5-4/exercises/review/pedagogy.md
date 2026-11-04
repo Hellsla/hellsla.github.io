@@ -1,12 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 778b291ab487f1ac
+CONTENT-HASH: cfb6c19a09b4fc1c
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- exercises.json L2-05: "The table is smooth" -> "The tabletop is smooth" (the word clashed with the data table beside it).
+- L2-06: "just barely stays" -> "only just stays".
+- L1-07 feedback: "Acceleration tells the change of the velocity" -> "tells how the velocity changes".
+
 ## Polish
-- [Minor] L2-04 the "wire" in the reasonableness note was not introduced in the task (also in the Finnish).
+(none)
 
 ## Checked
-- All 12 tasks and 12 worked solutions present at three levels; fbd flags unchanged; task wording clear and conditions stated (no air resistance, smooth table).
-- English reads naturally; British spelling (tyres, metres, kilonewtons).
+- Level, task order and answer-box instructions (grams, kN, N, km/h) identical to fi; hints of what the box takes are kept.
+- L2-07 error analysis keeps the student's quoted solution intact; parts a) and b) preserved.
+- English is natural and at the right reading level; no Finnish left in en.

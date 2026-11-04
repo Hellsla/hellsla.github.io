@@ -96,7 +96,7 @@
         },
         {
           "text": "There is no acceleration, because the speed of the cyclist stays the same throughout the bend.",
-          "feedback": "Acceleration tells the change of the velocity, and velocity is a vector. When the direction changes, the velocity changes, even if the speed stays the same."
+          "feedback": "Acceleration tells how the velocity changes, and velocity is a vector. When the direction changes, the velocity changes, even if the speed stays the same."
         }
       ]
     },
@@ -150,7 +150,7 @@
     {
       "id": "fy5-4-L2-05",
       "level": 2,
-      "text": "Students study how the tension of a string depends on the speed of circular motion. A small rubber stopper moves in a circle at the end of a string on a smooth horizontal table, and the radius of the circle is kept constant, $0.80\\,\\text{m}$. The force $F$ of the string is measured with a force meter, and the tangential speed $v$ is calculated from the time of one revolution. The data are sample data.\n\nDraw the $(v^2, F)$ graph and fit a straight line through the origin to it. Read the slope from the line and use it to calculate the mass of the stopper. The table is smooth and the string is horizontal, so the tension is the only horizontal force.\n\nThe answer box takes the mass of the stopper in grams.",
+      "text": "Students study how the tension of a string depends on the speed of circular motion. A small rubber stopper moves in a circle at the end of a string on a smooth horizontal table, and the radius of the circle is kept constant, $0.80\\,\\text{m}$. The force $F$ of the string is measured with a force meter, and the tangential speed $v$ is calculated from the time of one revolution. The data are sample data.\n\nDraw the $(v^2, F)$ graph and fit a straight line through the origin to it. Read the slope from the line and use it to calculate the mass of the stopper. The tabletop is smooth and the string is horizontal, so the tension is the only horizontal force.\n\nThe answer box takes the mass of the stopper in grams.",
       "kind": [
         "data",
         "graph"
@@ -191,7 +191,7 @@
     {
       "id": "fy5-4-L2-06",
       "level": 2,
-      "text": "On a wet test track a driver drives a car round a circle and increases the speed until the car starts to slide. In different trials the radius $r$ of the circle varies, and the greatest tangential speed $v$ reached without sliding is measured. The data are sample data.\n\nThe track is horizontal, and air resistance is neglected. For each row, calculate the coefficient of static friction $\\mu_0$ with which the car just barely stays on the track, and determine their mean.\n\nThe answer box takes the mean of the friction coefficient.",
+      "text": "On a wet test track a driver drives a car round a circle and increases the speed until the car starts to slide. In different trials the radius $r$ of the circle varies, and the greatest tangential speed $v$ reached without sliding is measured. The data are sample data.\n\nThe track is horizontal, and air resistance is neglected. For each row, calculate the coefficient of static friction $\\mu_0$ with which the car only just stays on the track, and determine their mean.\n\nThe answer box takes the mean of the friction coefficient.",
       "kind": [
         "data"
       ],

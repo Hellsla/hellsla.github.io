@@ -124,7 +124,7 @@
     {
       "id": "fy5-2-L2-05",
       "level": 2,
-      "text": "Tasa-aineisen lankun pituus on $3{,}00\\,\\text{m}$ ja massa $10{,}0\\,\\text{kg}$. Lankku on vaakasuorassa kahden voima-anturin varassa. Anturit ovat lankun päissä. Lankulla seisova henkilö siirtyy askel kerrallaan kohti oikeaa päätä. Taulukossa on vasemman anturin lukema $N_1$ henkilön paikan $x$ mukaan. Paikka $x$ mitataan lankun vasemmasta päästä. Aineisto on esimerkkiaineistoa.\n\na) Piirrä mittauspisteistä $(x, N_1)$-kuvaaja. Sovita pisteisiin suora ja määritä sen kulmakerroin. Laske kulmakertoimesta henkilön massa.\n\nb) Selitä momenttiehdon avulla, miksi pisteet ovat suoralla.\n\nVastauslaatikkoon tulee a)-kohdan henkilön massa kilogrammoina.",
+      "text": "Tasa-aineisen lankun pituus on $3{,}00\\,\\text{m}$ ja massa $10{,}0\\,\\text{kg}$. Lankku on vaakasuorassa kahden voima-anturin varassa. Anturit ovat lankun päissä. Lankulla seisova henkilö siirtyy askel kerrallaan kohti oikeaa päätä. Taulukossa on vasemman anturin lukema $N_1$ henkilön paikan $x$ mukaan. Paikka $x$ mitataan lankun vasemmasta päästä. Aineisto on esimerkkiaineistoa.\n\na) Piirrä mittauspisteistä $(x, N_1)$-kuvaaja. Sovita pisteisiin suora ja määritä sen kulmakerroin. Laske kulmakertoimesta henkilön massa.\n\nb) Selitä momenttiehdon avulla, miksi pisteet ovat samalla suoralla.\n\nVastauslaatikkoon tulee a)-kohdan henkilön massa kilogrammoina.",
       "kind": [
         "data",
         "graph"
@@ -252,7 +252,7 @@
     {
       "id": "fy5-2-L3-05",
       "level": 3,
-      "text": "Tuolin etu- ja takajalkojen väli on $0{,}40\\,\\text{m}$ ja tuolin massa on $8{,}00\\,\\text{kg}$. Tuolin painopiste on jalkojen puolivälissä. Tuolilla istuu $72{,}0\\,\\text{kg}$:n henkilö. Hän kurkottaa eteenpäin kallistamalla ylävartaloaan. Taulukossa on henkilön painopisteen vaakaetäisyys $x_\\text{h}$ takajaloista. Etäisyys on ylävartalon kallistuskulman $\\theta$ mukaan. Henkilön jalat eivät ylety lattiaan, joten koko hänen painonsa on tuolin varassa. Aineisto on esimerkkiaineistoa. Jalat eivät liu'u, ja tuoli voi kaatua vain etujalkojensa varaan.\n\na) Laske, kuinka kaukana takajaloista henkilön painopiste saa enintään olla, jotta tuoli ei kaadu.\n\nb) Määritä taulukosta lineaarisella interpoloinnilla kallistuskulma, jolla tuoli alkaa kaatua.\n\nc) Selitä sanallisesti, miksi kurkottelu kaataa tuolin. Keksi yksi muutos, joka sallisi pidemmän kurkottelun.\n\nVastauslaatikkoon tulee b)-kohdan kulma asteina.",
+      "text": "Tuolin etu- ja takajalkojen väli on $0{,}40\\,\\text{m}$ ja tuolin massa on $8{,}00\\,\\text{kg}$. Tuolin painopiste on jalkojen puolivälissä. Tuolilla istuu $72{,}0\\,\\text{kg}$:n henkilö. Hän kurkottaa eteenpäin kallistamalla ylävartaloaan. Taulukossa on henkilön painopisteen vaakaetäisyys $x_\\text{h}$ takajaloista. Etäisyys on annettu ylävartalon kallistuskulman $\\theta$ mukaan. Henkilön jalat eivät ylety lattiaan, joten koko hänen painonsa on tuolin varassa. Aineisto on esimerkkiaineistoa. Jalat eivät liu'u, ja tuoli voi kaatua vain etujalkojensa varaan.\n\na) Laske, kuinka kaukana takajaloista henkilön painopiste saa enintään olla, jotta tuoli ei kaadu.\n\nb) Määritä taulukosta lineaarisella interpoloinnilla kallistuskulma, jolla tuoli alkaa kaatua.\n\nc) Selitä sanallisesti, miksi kurkottelu kaataa tuolin. Keksi yksi muutos, joka sallisi pidemmän kurkottelun.\n\nVastauslaatikkoon tulee b)-kohdan kulma asteina.",
       "kind": [
         "data",
         "model",

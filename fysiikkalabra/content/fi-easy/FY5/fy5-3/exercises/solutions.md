@@ -130,7 +130,7 @@
 **Kaava:** $T = \dfrac{1}{f}$
 **Muunnokset:** $f = 3000\,\tfrac{1}{\text{min}} = \dfrac{3000}{60\,\text{s}} = 50\,\tfrac{1}{\text{s}}$
 **Sijoitus:** $T = \dfrac{1}{50\,\tfrac{1}{\text{s}}} = 0{,}020\,\text{s}$
-**Vastaus:** $0{,}020\,\text{s}$. Vastauksessa on kaksi merkitsevää numeroa. Tulos annetaan samassa muodossa kuin pyöristetty vastaus.
+**Vastaus:** $0{,}020\,\text{s}$. Vastauksessa on kaksi merkitsevää numeroa.
 **Järkevyys:** Yksi kierros kestää $0{,}020\,\text{s}$. Silloin sekunnissa mahtuu $\dfrac{1\,\text{s}}{0{,}020\,\text{s}} = 50$ kierrosta. Se on sama kuin muunnettu pyörimistaajuus. Moottorin ääni on nopeaa surinaa, joten yksi kierros kestää vain murto-osan sekunnista.
 
 ## fy5-3-L1-08
