@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 06cb066353b21674
-
-Delta review over the audit's PASS (c049419582c3b6e6): L2-02 (fall time from 54,0 km/h) replaced by a two-planet (t, v) reading task on fy1-6/two-planets.
+CONTENT-HASH: 6f11aaaecc7f8a5d
+Round: 3. Checked the round-2 Blocking fix (commit 094aa590, solutions.md L2-07 Annettu). Everything else is unchanged since round 2, so the round-2 checks still apply.
 
 ## Blocking
 (none)
+
 ## Polish
-(none)
+- exercises.json:243 (L2-07) — "valon katkos on puolivälissä, eli kappaleen keskikohta on portin kohdalla": for an accelerating body these are not the same moment (the centre passes 0,38 ms after the mid-time at gate 1 and 0,03 ms after it at gate 2; this changes g by 0,14 %) — drop the "eli …" clause or write "suunnilleen silloin, kun keskikohta on portin kohdalla".
+- exercises.json:359 (L3-05) — v = 24,5 m/s after 2,5 s means a 31 m drop, and the task does not say air resistance is negligible — add "ilmanvastus jätetään huomiotta" (or use smaller times).
+- exercises.json:359 vs :197 (L3-05 vs L2-06) — both grade a clock offset found from a straight (t, v) line (t₀ = 0,20 s and 0,15 s) — consider grading g or the trend in the ratios in L3-05 instead.
+- exercises.json:44 (L1-06) — carried over from round 1: the same idea as L3-01; one distractor set in air (a feather and a hammer on Earth) would separate them.
+
 ## Checked
-- Figure: A from origin through (5 s; 20 m/s) to (6; 24), B through (5 s; 40 m/s), grid 1 s × 5 m/s, labels A and B; description matches; "ilmattomalla", "levosta" stated in the task.
-- Recomputed g_A = 4,0 m/s², g_B = 8,0 m/s², v_A(5,0 s) = 20 m/s, t_B = 20/8,0 = 2,5 s; answers.py 2,5; tolerance 0,03 (2,43…2,58 s) accepts the calculation and a careful direct read where B crosses 20 m/s; rejects 5,0 s, 10 s (ratio inverted) and 1,25 s.
-- 2 sig. figs justified; reasonableness (half the time at twice g) right.
+- Hash 6f11aaaecc7f8a5d at the start and at the end.
+- Round-2 Blocking (L2-07 Annettu): resolved. solutions.md:167 now says "valokatkoksen puolivälin hetki" for t₁ and t₂. This matches the task text and the Periaate (where L/Δt equals the instantaneous speed). No numbers changed, so g stays as checked in round 2.
+- Round 1 and round 2 checks carried over: all 16 numeric answers were recomputed and are within tolerance, and answers.py agrees.

@@ -1,0 +1,10 @@
+[
+ {
+  "q": "Heilurin pituus nelinkertaistetaan. Kuinka moninkertaiseksi sen jaksonaika muuttuu, kun heilahdukset ovat pieniä?",
+  "a": "$T = 2\\pi\\sqrt{\\tfrac{l}{g}}$, joten jaksonaika on verrannollinen pituuden neliöjuureen. Kerroin on $\\sqrt{4} = 2$: jaksonaika kaksinkertaistuu."
+ },
+ {
+  "q": "Kuinka pitkä on $680\\,\\text{Hz}$:n äänen aallonpituus ilmassa, kun äänen nopeus on $340\\,\\text{m/s}$?",
+  "a": "$\\lambda = \\tfrac{v}{f} = \\tfrac{340\\,\\text{m/s}}{680\\,\\text{Hz}} = 0{,}50\\,\\text{m}$."
+ }
+]
