@@ -107,8 +107,8 @@ for lang in i18n.languages():
     expect(f"{lang}: the heading and one line under it, then the module list",
            bool(intro) and intro.group(1) == T("site.home_h1") and intro.group(2) == T("site.home_sub") and home.find('class="catalogue"') > intro.end())
     hdr = re.search(r'<header class="top">.*?</header>', home, re.S).group(0); ftr = re.search(r'<footer class="bottom">.*?</footer>', home, re.S).group(0)
-    expect(f"{lang}: the header links Moduulit, Näin opiskelet and Lukuvinkit in that order",
-           re.findall(r'<nav [^>]*><a class="nav-modules" href="index.html#moduulit">[^<]*</a><a class="nav-study" href="nain-opiskelet.html">([^<]*)</a><a class="nav-reading" href="lukuvinkit.html">', hdr) == [_h.escape(T("site.study"))], hdr[-400:])
+    expect(f"{lang}: the header links Näin opiskelet and Lukuvinkit in that order, no Moduulit on the front page (teacher 2026-11-04)",
+           'nav-modules' not in hdr and re.findall(r'<nav [^>]*><a class="nav-study" href="nain-opiskelet.html">([^<]*)</a><a class="nav-reading" href="lukuvinkit.html">', hdr) == [_h.escape(T("site.study"))], hdr[-400:])
     expect(f"{lang}: the footer links Lukuvinkit, Sivustosta and Tietosuoja",
            'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr and 'href="tietosuoja.html"' in ftr, ftr)
     priv = (out / "tietosuoja.html").read_text() if (out / "tietosuoja.html").is_file() else ""

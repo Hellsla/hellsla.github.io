@@ -253,7 +253,9 @@ PRIVACY = "tietosuoja.html"   # Tietosuoja (teacher 2026-11-04): no student data
 
 def front_chrome(html):
     """The front page's own header and footer (teacher 2026-11-03): Näin opiskelet beside Moduulit and Lukuvinkit and
-    Sivustosta after them (2026-11-04); its footer ends in Sivustosta like every page's."""
+    Sivustosta after them (2026-11-04); its footer ends in Sivustosta like every page's. No Moduulit link in its header:
+    the front page is the module list (teacher 2026-11-04)."""
+    html = re.sub(r'<a class="nav-modules" [^>]*>[^<]*</a>', "", html, count=1)
     html = html.replace('<a class="nav-reading"', f'<a class="nav-study" href="{STUDY_PAGE}">{esc(T("site.study"))}</a><a class="nav-reading"', 1)
     html = html.replace(f'{esc(T("site.reading_tips"))}</a>', f'{esc(T("site.reading_tips"))}</a><a class="nav-about" href="{ABOUT}">{esc(T("site.about"))}</a>', 1)   # Sivustosta in the header too (teacher 2026-11-04)
     return html
