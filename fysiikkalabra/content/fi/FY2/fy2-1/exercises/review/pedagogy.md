@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 049706003240df2d
+CONTENT-HASH: 59c94115b15b2cf7
+Round: 3
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- exercises.json L1-04 — "hyödyllinen energialaji" is not defined in the lesson, and a) (heating a room) names thermal energy as the useful form, which sits oddly beside "lämpöenergia on vaikea hyödyntää" — fix: "ja energialaji, joksi se muuttuu tarkoitetussa käytössä".
-- exercises.json L2-01..L2-04 — four tasks with the same structure (one subtraction plus a kJ/J conversion); L2-03 is only a conversion — vary one, e.g. ask for the share that became heat.
-- exercises.json L3-02 — a bouncing-ball table like the lesson's data task (differs by the comparison of two bounces); acceptable, but a different context would test transfer better.
-- exercises.json L3-03 — the chain is nearly verbatim check-1; make part a) a different plant (hydro or solar) so it is not a repeat.
-- solutions.md L1-04 — the answer string uses arrows and brackets; fine to read but "unit" and "tolerance" are meaningless for a text task.
+- exercises.json L3-05 text — "vaiheen loppu energia" is two words; write "vaiheen jäljelle jäävä energia" (or "loppuenergia"). Invented data are still not marked "esimerkkiluvut" as in L2-05, L2-07, L3-04: add "Esimerkkiluvuilla:" to the table intro.
+- solutions.md L3-04 c) Vastaus — "lisää energiaa saman verran kuin fossiilinen vähenee" reads as if total energy grows; say "tuottaa saman verran energiaa kuin fossiilinen tuotti". One clause saying 70 PJ is the limit at the data's precision would remove the tension with "vähintään".
+- L3-04 and L3-05 solutions are over the length guide; if trimmed, move the c) reasoning of L3-04 into Periaate/Järkevyys.
 
 ## Checked
-- Levels 5, 4 and 3 match the rubric; none repeats the example; L3-01 and L3-02 need two balances and a comparison.
-- Situation first, question last, everyday contexts (sledge, slide, swing, kettle, e-scooter).
-- L1-03 figure: bars at 700, 0, 500 J on 100 J gridlines read unambiguously; the description gives the same values and not the answer.
-- Solutions follow Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys; conversions and significant figures explained; arithmetic checked for all 12 tasks.
-- Finnish and units correct; the 390 px exercise captures are not clipped.
+- Round-2 Blocking resolved: the reflection remark was removed from the task text and from Periaate; a), b), c), the model and the conservation check 0,14 + 4,86 = 5,00 MJ now agree (heat = all the rest of each stage).
+- Diff since round 2 is that one sentence only; levels (8/7/5), plan, no duplicates and the earlier L1-07, L2-05..07, L3-04 fixes stay as passed in round 2.
+- L3-05 solution is followable: principle, formula, per-stage substitution, sum, share, conservation check, sanity check.
+- Recomputed 4,86 MJ, 86 %, 2,8 %, 39,2 %, 218 GJ.
+- Hash unchanged at start and end.

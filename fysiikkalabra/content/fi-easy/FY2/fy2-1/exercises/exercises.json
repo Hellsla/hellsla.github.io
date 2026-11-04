@@ -19,7 +19,7 @@
     {
       "id": "fy2-1-L1-03",
       "level": 1,
-      "text": "Skeittari lähtee levosta half-pipen reunalta kohdasta A. Hän laskee rinnettä, jossa on kitkaa, kohdan B kautta pohjalle kohtaan C. Kuvan pylväät näyttävät hänen potentiaalienergiansa ja liike-energiansa kussakin kohdassa. Pohja on potentiaalienergian nollataso. Lue energiat kuvasta. Kuinka paljon energiaa kitka on muuttanut lämpöenergiaksi, kun skeittari on edennyt kohdasta A kohtaan C?",
+      "text": "Skeittari lähtee levosta half-pipen reunalta kohdasta A. Hän laskee rinnettä, jossa on kitkaa, kohdan B kautta pohjalle kohtaan C. Kuvan pylväät näyttävät hänen potentiaalienergiansa ja liike-energiansa kussakin kohdassa. Pohja on potentiaalienergian nollataso.\n\nLue energiat kuvasta. Kuinka paljon energiaa kitka on muuttanut lämpöenergiaksi, kun skeittari on edennyt kohdasta A kohtaan C?",
       "figure": "fy2-1/kitka-pylvaat",
       "answer": 200.0,
       "unit": "J",
@@ -39,6 +39,77 @@
       "text": "Pulkka lähtee levosta mäen päältä. Ylhäällä sen potentiaalienergia on $600\\,\\text{J}$. Mäkeä laskiessa kitka muuttaa $90\\,\\text{J}$ energiaa lämpöenergiaksi. Mäen alla potentiaalienergia on nolla. Kuinka suuri on pulkan liike-energia mäen alla?",
       "answer": 510.0,
       "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L1-06",
+      "level": 1,
+      "text": "Ladattu puhelin on pöydällä. Sitä ei käytetä. Mikä energialaji on se energia, joka on varastoituna puhelimen akkuun?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kemiallinen energia",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kemiallinen energia",
+          "feedback": "Oikein. Akkuun energia on varastoitunut kemiallisesti, aineiden välisiin kemiallisiin sidoksiin. Kun puhelinta käytetään, kemiallinen energia muuttuu ensin sähköenergiaksi. Sitten se muuttuu esimerkiksi valoksi ja lämpöenergiaksi.",
+          "correct": true
+        },
+        {
+          "text": "Liike-energia",
+          "feedback": "Liike-energia on liikkuvalla kappaleella. Pöydällä oleva puhelin on levossa. Se ei liiku. Akun energia ei ole liikettä. Energia on sitoutunut akun aineisiin."
+        },
+        {
+          "text": "Säteilyenergia",
+          "feedback": "Säteilyenergia on valon ja muun sähkömagneettisen säteilyn energiaa. Akussa energia ei ole säteilynä. Se on kemiallisina sidoksina. Säteilyä syntyy vasta, kun puhelimen näyttö alkaa valaista."
+        },
+        {
+          "text": "Potentiaalienergia",
+          "feedback": "Potentiaalienergia riippuu kappaleen korkeudesta nollatasoon nähden. Esimerkki on kallion reunalla oleva pallo. Akun energia ei riipu siitä, kuinka korkealla pöytä on. Se riippuu akun aineiden kemiallisista sidoksista."
+        }
+      ]
+    },
+    {
+      "id": "fy2-1-L1-07",
+      "level": 1,
+      "text": "Auto ajaa tasaista tietä ja jarruttaa pysähtymään. Mikä seuraavista kuvaa oikein, mitä auton liike-energialle tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Liike-energia muuttuu jarruissa, renkaissa ja tiessä lämpöenergiaksi, ja energian kokonaismäärä pysyy samana.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Liike-energia muuttuu jarruissa, renkaissa ja tiessä lämpöenergiaksi, ja energian kokonaismäärä pysyy samana.",
+          "feedback": "Oikein. Kun auto jarruttaa, kitka muuttaa liike-energian lämpöenergiaksi. Siksi jarrut, renkaat ja tie lämpenevät hieman. Energia ei katoa. Se muuttaa muotoa.",
+          "correct": true
+        },
+        {
+          "text": "Liike-energia katoaa, koska auto pysähtyy.",
+          "feedback": "Energia ei katoa. Energian säilymislain mukaan energia vain muuttaa muotoa tai siirtyy. Tässä liike-energia muuttuu lämpöenergiaksi."
+        },
+        {
+          "text": "Liike-energia muuttuu jarruissa lämpöenergiaksi, mutta kokonaisenergia pienenee, koska lämpö siirtyy ympäristöön.",
+          "feedback": "Ympäristö kuuluu systeemiin. Siksi ympäristöön siirtyvä lämpö ei häviä mihinkään. Energian säilymislain mukaan kokonaisenergia pysyy samana. Liike-energia on muuttunut lämpöenergiaksi. Se on jarruissa, renkaissa, tiessä ja ilmassa."
+        },
+        {
+          "text": "Liike-energia on edelleen autossa liike-energiana, vaikka auto on pysähtynyt.",
+          "feedback": "Pysähtyneellä autolla ei ole liike-energiaa, koska se ei liiku. Energia ei kuitenkaan ole kadonnut. Se on lämpöenergiana jarruissa, renkaissa ja tiessä."
+        }
+      ]
+    },
+    {
+      "id": "fy2-1-L1-08",
+      "level": 1,
+      "text": "Puhelinta ladataan laturilla pistorasiasta. Laturi tuntuu kädessä lämpimältä. Kuvaa energian muuttuminen ketjuna. Aloita siitä, kun energiaa tulee johtoa pitkin pistorasiasta. Lopeta siihen, kun energia on akussa. Perustele energian säilymislain avulla, miksi laturi lämpenee.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": "Sähköenergia → (laturissa) sähköenergia ja lämpöenergia → akussa kemiallinen energia; osa muuttuu lämpöenergiaksi, joten laturi lämpenee, eikä energia katoa",
+      "unit": "",
       "tolerance": 0.02
     }
   ],
@@ -74,13 +145,99 @@
       "answer": 29000.0,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-05",
+      "level": 2,
+      "text": "Taulukossa on esimerkkilukuja omakotitalon vuoden energiankulutuksesta. Kulutus on jaettu käyttökohteisiin. Laske, kuinka monta prosenttia tilojen lämmitys on koko kulutuksesta. Mikä käyttökohde olisi suurin säästökohde, ja miksi?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 60.0,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Omakotitalon vuoden energiankulutus käyttökohteittain",
+        "columns": [
+          "Käyttökohde",
+          "$E\\,(\\text{GJ})$"
+        ],
+        "rows": [
+          [
+            "Tilojen lämmitys",
+            "36.0"
+          ],
+          [
+            "Lämmin käyttövesi",
+            "10.5"
+          ],
+          [
+            "Sähkölaitteet ja valaistus",
+            "9.0"
+          ],
+          [
+            "Sauna",
+            "4.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-1-L2-06",
+      "level": 2,
+      "text": "Keksijä esittelee vesilaitteen. Hän väittää, että laite toimii ikuisesti ilman ulkopuolista energiaa.\n\nYläaltaasta putoava vesi pyörittää generaattoria. Vesi menettää potentiaalienergiaa $100\\,\\text{J}$ yhdellä kierroksella. Generaattori muuttaa koko tämän energian sähköenergiaksi. Pumppu käyttää siitä $80\\,\\text{J}$ ja nostaa veden takaisin yläaltaaseen. Loput sähköenergiasta menee lamppuun.\n\nKuinka monta joulea energiaa laite luo tyhjästä yhdellä kierroksella, jos väite pitää paikkansa? Selitä, mikä energiaperiaate rikkoutuu.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 20.0,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L2-07",
+      "level": 2,
+      "text": "Taulukossa on esimerkkilukuja kolmesta lampusta. Siinä näkyy, paljonko sähköenergiaa lamppu ottaa yhdessä tunnissa ja paljonko siitä muuttuu valoksi. Vertailun vuoksi lamput ottavat saman sähköenergian. Loppu energia muuttuu lämpöenergiaksi. Kuinka monta kilojoulea enemmän lämpöenergiaa hehkulamppu tuottaa kuin LED-lamppu? Perustele, kumman lampun käyttö on energian kannalta viisaampaa.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 43.0,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Lamppujen sähköenergia ja valoksi muuttuva energia tunnissa",
+        "columns": [
+          "Lamppu",
+          "$E_\\text{sähkö}\\,(\\text{kJ})$",
+          "$E_\\text{valo}\\,(\\text{kJ})$"
+        ],
+        "rows": [
+          [
+            "Hehkulamppu",
+            "216",
+            "11"
+          ],
+          [
+            "Halogeenilamppu",
+            "216",
+            "16"
+          ],
+          [
+            "LED-lamppu",
+            "216",
+            "54"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
     {
       "id": "fy2-1-L3-01",
       "level": 3,
-      "text": "Skeittarin energioita mitataan half-pipessä kolmessa kohdassa. Kohdassa A skeittari on levossa, ja hänen potentiaalienergiansa on $900\\,\\text{J}$. Kohdassa B potentiaalienergia on $400\\,\\text{J}$ ja liike-energia $480\\,\\text{J}$. Kohdassa C potentiaalienergia on nolla ja liike-energia $750\\,\\text{J}$. Kitka muuttaa koko ajan mekaanista energiaa lämpöenergiaksi. Kuinka paljon energiaa muuttuu lämpöenergiaksi kohtien B ja C välillä?",
+      "text": "Skeittarin energioita mitataan half-pipessä kolmessa kohdassa.\n\nKohdassa A skeittari on levossa, ja hänen potentiaalienergiansa on $900\\,\\text{J}$. Kohdassa B potentiaalienergia on $400\\,\\text{J}$ ja liike-energia $480\\,\\text{J}$. Kohdassa C potentiaalienergia on nolla ja liike-energia $750\\,\\text{J}$. Kitka muuttaa koko ajan mekaanista energiaa lämpöenergiaksi.\n\nKuinka paljon energiaa muuttuu lämpöenergiaksi kohtien B ja C välillä?",
       "answer": 130,
       "unit": "J",
       "tolerance": 0.02
@@ -96,10 +253,98 @@
     {
       "id": "fy2-1-L3-03",
       "level": 3,
-      "text": "Ydinvoimalassa reaktorin ydinreaktiot kuumentavat vettä höyryksi. Höyry pyörittää turbiinia, ja turbiini pyörittää generaattoria, joka tuottaa sähköä. Turbiinista tuleva höyry jäähdytetään merivedellä, joka lämpenee. a) Nimeä energialajit ketjun jokaisessa vaiheessa. b) Voimala tuottaa sähköenergiaksi vain noin kolmanneksen reaktorissa vapautuvasta ydinenergiasta. Selitä energian säilymislain avulla, mihin loput energiasta menee ja miksi se ei ole kadonnut.",
+      "text": "Ydinvoimalassa reaktorin ydinreaktiot kuumentavat vettä höyryksi. Höyry pyörittää turbiinia, ja turbiini pyörittää generaattoria, joka tuottaa sähköä. Turbiinista tuleva höyry jäähdytetään merivedellä, joka lämpenee.\n\na) Nimeä energialajit ketjun jokaisessa vaiheessa.\n\nb) Voimala tuottaa sähköenergiaksi vain noin kolmanneksen reaktorissa vapautuvasta ydinenergiasta. Selitä energian säilymislain avulla, mihin loput energiasta menee ja miksi se ei ole kadonnut.",
       "answer": "a) ydinenergia → lämpöenergia → höyryn ja turbiinin liike-energia → sähköenergia; b) noin kaksi kolmasosaa muuttuu lämpöenergiaksi mereen ja ympäristöön, ja kokonaisenergia säilyy",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-1-L3-04",
+      "level": 3,
+      "text": "Taulukossa on kuvitteellisen maan vuoden energian kokonaiskulutus lähteittäin. Luvut ovat pyöristettyjä esimerkkilukuja, eivät oikean maan tilasto. Maassa on $5{,}5 \\cdot 10^{6}$ asukasta. Öljy, kivihiili ja maakaasu ovat fossiilisia polttoaineita.\n\na) Laske fossiilisten polttoaineiden osuus kokonaiskulutuksesta prosentteina.\n\nb) Laske kokonaiskulutus asukasta kohti gigajouleina; $1\\,\\text{PJ} = 10^{15}\\,\\text{J}$ ja $1\\,\\text{GJ} = 10^{9}\\,\\text{J}$.\n\nc) Maa haluaa pudottaa fossiilisten osuuden alle kolmannekseen kokonaiskulutuksesta. Se korvaa osan fossiilisesta energiasta vesi- ja tuulivoimalla. Kokonaiskulutus pysyy samana. Kuinka monta petajoulea fossiilista energiaa on vähintään korvattava? Perustele laskulla ja selitä energian säilymislain avulla, miksi kokonaiskulutus voi pysyä samana.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 39.2,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkkimaan vuoden energian kokonaiskulutus lähteittäin",
+        "columns": [
+          "Energialähde",
+          "$E\\,(\\text{PJ})$"
+        ],
+        "rows": [
+          [
+            "Bioenergia",
+            "380"
+          ],
+          [
+            "Öljy",
+            "290"
+          ],
+          [
+            "Ydinenergia",
+            "230"
+          ],
+          [
+            "Vesi- ja tuulivoima",
+            "120"
+          ],
+          [
+            "Kivihiili",
+            "100"
+          ],
+          [
+            "Maakaasu",
+            "80"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-1-L3-05",
+      "level": 3,
+      "text": "Pöydän LED-lamppu saa sähkönsä aurinkopaneelista ja akusta. Taulukossa on yhden päivän energiat ketjun vaiheissa. Jokaisesta vaiheesta näkyy tuleva energia ja hyödyllinen energia, joka lähtee eteenpäin. Seuraavan vaiheen tuleva energia on edellisen vaiheen hyödyllinen energia. Mallissa oletetaan, että vaiheen loppu energia muuttuu lämpöenergiaksi.\n\na) Laske lämpöenergiaksi muuttuva energia jokaisessa vaiheessa ja koko ketjussa yhteensä.\n\nb) Missä vaiheessa lämpöenergiaa syntyy eniten, ja kuinka monta prosenttia kaikesta lämpöenergiasta se on?\n\nc) Tarkista tulos energian säilymislailla. Selitä, miksi paneeliin tullut säteilyenergia ei ole kulunut loppuun, vaikka lampun valo on vain pieni osa siitä.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 4.86,
+      "unit": "MJ",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Aurinkopaneelista lamppuun: energiat yhden päivän aikana",
+        "columns": [
+          "Vaihe",
+          "$E_\\text{tulo}\\,(\\text{MJ})$",
+          "$E_\\text{ulos}\\,(\\text{MJ})$"
+        ],
+        "rows": [
+          [
+            "Aurinkopaneeli",
+            "5.00",
+            "0.80"
+          ],
+          [
+            "Latausohjain ja akku",
+            "0.80",
+            "0.64"
+          ],
+          [
+            "Akun purku ja johdot",
+            "0.64",
+            "0.56"
+          ],
+          [
+            "LED-lamppu",
+            "0.56",
+            "0.14"
+          ]
+        ]
+      }
     }
   ]
 }

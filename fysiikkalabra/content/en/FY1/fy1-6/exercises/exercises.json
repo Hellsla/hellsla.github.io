@@ -39,6 +39,77 @@
       "answer": 22.26,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-06",
+      "level": 1,
+      "text": "An astronaut drops a hammer and a feather from rest at the same time from the same height on the surface of the Moon. The Moon has no atmosphere. What happens?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The hammer and the feather hit the ground at the same time.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The hammer and the feather hit the ground at the same time.",
+          "feedback": "Correct: when there is no air resistance, all objects have the same acceleration of free fall regardless of mass. The speed of both is $v = g\\,t$, so they fall equally fast.",
+          "correct": true
+        },
+        {
+          "text": "The hammer hits the ground first, because it is heavier.",
+          "feedback": "A heavier object does not fall faster. Everyday experience seems to show otherwise only because air slows a light, wide object the most, and the Moon has no air."
+        },
+        {
+          "text": "The feather hits the ground first, because it is lighter.",
+          "feedback": "Mass does not affect the acceleration of free fall. A light object would fall more slowly only in air, and the Moon has no air to slow it down."
+        },
+        {
+          "text": "Neither falls, because the Moon has no air.",
+          "feedback": "On the surface of the Moon the acceleration of free fall is $1.62\\,\\text{m/s}^2$ regardless of air, so the objects fall. The lack of air only removes air resistance."
+        }
+      ]
+    },
+    {
+      "id": "fy1-6-L1-07",
+      "level": 1,
+      "text": "The $(t, v)$ graph of a freely falling object is a straight line through the origin with a slope of $9.8\\,\\text{m/s}^2$. What does the slope tell us?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The speed increases by $9.8\\,\\text{m/s}$ every second.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The speed increases by $9.8\\,\\text{m/s}$ every second.",
+          "feedback": "Correct: the slope $\\dfrac{\\Delta v}{\\Delta t}$ tells how much the speed changes per unit of time. The unit $\\text{m/s}^2$ means $\\text{m/s}$ per second.",
+          "correct": true
+        },
+        {
+          "text": "The speed of the object is $9.8\\,\\text{m/s}$ all the time.",
+          "feedback": "The speed is not constant but increases: it is given by $v = g\\,t$. The number $9.8\\,\\text{m/s}^2$ is the size of the increase in speed per second, not the speed itself."
+        },
+        {
+          "text": "The object falls $9.8\\,\\text{m}$ farther every second.",
+          "feedback": "The unit of the slope is $\\text{m/s}^2$, not metres. It tells the change in speed, not the distance travelled. The distance grows by more and more each second, because the speed increases."
+        },
+        {
+          "text": "The speed of the object is $9.8\\,\\text{m/s}$ only after one second, and before that it is zero.",
+          "feedback": "The speed increases steadily right from the start of the fall, so it is, for example, $4.9\\,\\text{m/s}$ after half a second. The line starts from the origin."
+        }
+      ]
+    },
+    {
+      "id": "fy1-6-L1-08",
+      "level": 1,
+      "text": "On the surface of the Earth the acceleration of free fall is $9.81\\,\\text{m/s}^2$. So the speed of a freely falling object increases by $9.81\\,\\text{m/s}$ every second. By how many $\\text{km/h}$ does the speed increase every second?",
+      "kind": [
+        "model"
+      ],
+      "answer": 35.316,
+      "unit": "km/h",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,129 @@
       "answer": 9.8,
       "unit": "m/s²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L2-05",
+      "level": 2,
+      "text": "In a light gate measurement the speed $v$ of a small object was measured at different moments $t$ from the start of the fall, when the object was released from rest. Draw the $(t, v)$ graph from the measurement points, fit a straight line to the points and determine its slope. What is the acceleration of free fall $g$ according to the measurement? Compare the result with the table value $9.81\\,\\text{m/s}^2$.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 9.74,
+      "unit": "m/s²",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Speed of a falling object as a function of time",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "0.95"
+          ],
+          [
+            "0.20",
+            "2.03"
+          ],
+          [
+            "0.30",
+            "2.91"
+          ],
+          [
+            "0.40",
+            "3.88"
+          ],
+          [
+            "0.50",
+            "4.94"
+          ],
+          [
+            "0.60",
+            "5.83"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-6-L2-06",
+      "level": 2,
+      "text": "An object was released from rest, but the measurement was started only at the moment $t = 0$, when the object had already fallen for a while. The speed was measured at different moments.\n\nDraw the $(t, v)$ graph from the measurement points and fit a straight line to the points. The line does not pass through the origin. How many seconds before the start of the measurement was the object released? Explain what the intercept of the line with the $v$ axis tells.",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 0.2,
+      "unit": "s",
+      "tolerance": 0.1,
+      "data": {
+        "caption": "Speed of a falling object from the start of the measurement",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1.97"
+          ],
+          [
+            "0.1",
+            "2.93"
+          ],
+          [
+            "0.2",
+            "3.95"
+          ],
+          [
+            "0.3",
+            "4.89"
+          ],
+          [
+            "0.4",
+            "5.90"
+          ],
+          [
+            "0.5",
+            "6.86"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-6-L2-07",
+      "level": 2,
+      "text": "Students measure the acceleration of free fall with two light gates placed one below the other vertically. The speed of an object $5.0\\,\\text{cm}$ long, dropped from rest, is obtained at each gate from the length of the object and the time $\\Delta t_\\text{light}$ for which the light is blocked.\n\nThe moment of the drop is not known accurately, but a clock measures the moments $t$ when the blocking of the light is halfway, that is, when the middle of the object is at the gate.\n\nCalculate the acceleration of free fall from the measurements in the table. Explain why $g$ can be obtained from the speeds at the two gates even though the moment of the drop is not known.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 9.82,
+      "unit": "m/s²",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Measurement with two light gates",
+        "columns": [
+          "Gate",
+          "$\\Delta t_\\text{light}\\,(\\text{ms})$",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "25.0",
+            "0.320"
+          ],
+          [
+            "2",
+            "11.1",
+            "0.575"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +294,98 @@
       "answer": 4.43,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L3-04",
+      "level": 3,
+      "text": "The speeds of two objects, a small ball and a coffee filter paper, were measured from a video at moments $t$ from the start of the fall. The objects were released from rest in air.\n\nDraw the $(t, v)$ graphs of both in the same coordinate system. At what point, and why, does the model $v = g\\,t$ stop being valid for the filter paper but not yet for the ball? By what percentage is the speed of the filter paper smaller than the speed given by the model at the moment $0.40\\,\\text{s}$?",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 62,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Speed of the ball and the filter paper in air",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v_\\text{ball}\\,(\\text{m/s})$",
+          "$v_\\text{paper}\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.05",
+            "0.49",
+            "0.49"
+          ],
+          [
+            "0.10",
+            "0.98",
+            "0.93"
+          ],
+          [
+            "0.15",
+            "1.48",
+            "1.21"
+          ],
+          [
+            "0.20",
+            "1.96",
+            "1.38"
+          ],
+          [
+            "0.30",
+            "2.94",
+            "1.46"
+          ],
+          [
+            "0.40",
+            "3.93",
+            "1.49"
+          ],
+          [
+            "0.60",
+            "5.88",
+            "1.50"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-6-L3-05",
+      "level": 3,
+      "text": "A student dropped an object from rest and measured its speed at three clock readings $t$. The clock had been running already before the drop, but the student did not know for how long.\n\nFor each row the student calculated the quotient $\\dfrac{v}{t}$ and got the values $7.5\\,\\text{m/s}^2$, $8.9\\,\\text{m/s}^2$ and $9.2\\,\\text{m/s}^2$. However, the acceleration of free fall is constant.\n\nExplain why the quotients differ from each other and why they are too small. Calculate $g$ in another way so that the zero point of the clock does not affect the result, and justify the method. How many seconds before the drop had the clock been started?",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 0.15,
+      "unit": "s",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Speed of a falling object at clock readings",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.65",
+            "4.9"
+          ],
+          [
+            "1.65",
+            "14.7"
+          ],
+          [
+            "2.65",
+            "24.5"
+          ]
+        ]
+      }
     }
   ]
 }

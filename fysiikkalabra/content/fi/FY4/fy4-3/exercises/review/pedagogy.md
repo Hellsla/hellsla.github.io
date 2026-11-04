@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1e51956df59067b8
+CONTENT-HASH: c2d3495c28992833
 
 ## Blocking
 
 ## Polish
-- exercises.json L1-01, L1-02, L1-03 — still three tasks where the answer equals the given force; acceptable at level 1, but change one (for example give the weight as a mass in L1-01) if the set is edited.
-- solutions.md L2-04 — the "Voimakuvio" step has the cable force on the roof of the car but no explicit note that the lift moves at constant velocity so it equals the resting case; the "Järkevyys" line covers it, fine.
-- solutions.md L3-02 — the "Järkevyys" says the magnet's weight "siirtyy pöytään"; "välittyy" is the better verb.
+- exercises.json L2-06 — the table runs to 5,0 s but the question asks for the distance in 6,0 s; add "Oleta nopeuden pysyvän samana" or ask for 5,0 s. kind graph but no graph is asked: add "piirrä (t,v)-kuvaaja" or drop graph.
+- solutions.md L2-06 Vastaus a) — "pieni ilmanvastus on hyvin pieni" is a tautology; write "ilmanvastus on niin pieni, ettei nopeus siitä huomattavasti muutu, joten kokonaisvoima on käytännössä nolla".
+- exercises.json L3-05 a) — at t = 3,0 s the speed is 0,69 m/s so "kokonaisvoima nolla" starts fuzzily; add a solution line that readings from 3,0 s differ by less than the 0,02 m/s scatter.
+- exercises.json L3-05 — mostly restates laws I and III with a mean; asking for the force the cart exerts on the student at 2,0 s (4,3 N) would use the data more.
+- exercises.json L1-08 — close to L1-02 and L1-03; the constant-speed twist is the value, no change needed.
 
 ## Checked
-- Round-1 blocker fixed: L1-03 and L1-05 now have a "Voimakuvio:" step (chosen body, forces on it, third-law partner named) before the equation.
-- Round-1 polish fixed: L2-01 gives 13 N with two significant figures; L3-01 asks for the magnitude in kN and the direction in words.
-- Levels 5/4/3 as the rubric; none repeats the plane example; level 3 needs two ideas or an unfamiliar context.
-- Every solution has the seven parts and the principle is explained; the diagram precedes every equation.
-- Finnish: case after number and unit correct.
+- Round 2. Earlier report had no Blocking items; the only changes are two Järkevyys lines.
+- L2-05 Järkevyys: differences between A and B are +0,1; −0,1; 0; +0,1; −0,1 N, so "enintään 0,1 N" and "erot vaihtelevat suunnaltaan" are correct; the new wording (light rope pulls equally at both ends) is sound.
+- L3-04 Järkevyys: friction on the hoof points forward because it resists the hoof slipping backward; correct, and the "tavallisesti vastustaa liukumista" contradiction is gone.
+- Numbers unchanged and match: L2-05 4,8 N, L3-04 450 N and 480 N.
+- Levels fit and plan +3/+3/+2 met; scope stays within Newton I and III; MC distractors are real misconceptions with repairing feedback.
+- Solutions complete (principle, voimakuvio, formula, units, substitution, significant figures, sanity check); captures show no clipping.

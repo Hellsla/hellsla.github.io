@@ -39,6 +39,77 @@
       "answer": 4.8,
       "unit": "g",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-4-L1-06",
+      "level": 1,
+      "text": "Kokeessa saatiin kuusi mittauspistettä, jotka asettuvat likimain suoralle mutta hajoavat sen ympärille mittausepävarmuuden vuoksi. Mikä seuraavista kuvaa oikein, miten pisteisiin sovitetaan suora?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Suora kulkee pisteiden joukon keskeltä ja pisteitä jää sen molemmille puolille.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Suora kulkee pisteiden joukon keskeltä ja pisteitä jää sen molemmille puolille.",
+          "feedback": "Oikein: mittauspisteissä on satunnaista hajontaa, joten suora piirretään niin, että se on lähellä kaikkia pisteitä ja suunnilleen yhtä monta pistettä jää sen ylä- ja alapuolelle. Suoran ei tarvitse kulkea yhdenkään pisteen kautta.",
+          "correct": true
+        },
+        {
+          "text": "Suora piirretään mahdollisimman monen pisteen kautta ja loput pisteet jätetään huomiotta.",
+          "feedback": "Pisteen voi jättää huomiotta vain, jos siihen on perusteltu syy, esimerkiksi todettu karkea virhe. Pelkkä poikkeaminen suorasta ei riitä, ja jokainen mittaus kertoo jotakin suoran paikasta."
+        },
+        {
+          "text": "Suora piirretään ensimmäisen ja viimeisen pisteen kautta, koska ne rajaavat mittausalueen.",
+          "feedback": "Yksittäisessä pisteessä on yhtä paljon hajontaa kuin muissakin. Jos suora sidotaan kahteen päätepisteeseen, niiden virhe siirtyy koko suoraan, vaikka muut pisteet kertovat suoran paikasta yhtä paljon."
+        },
+        {
+          "text": "Pisteet yhdistetään murtoviivaksi, koska jokainen mittaus on yhtä tärkeä.",
+          "feedback": "Murtoviiva seuraa mittausvirheitä pisteestä toiseen eikä ole malli. Sovitettu suora kuvaa ilmiön lakia ja tasoittaa satunnaisen hajonnan, joten pisteitä ei yhdistetä."
+        }
+      ]
+    },
+    {
+      "id": "fy1-4-L1-07",
+      "level": 1,
+      "text": "Saman metallin eri kokoisten kappaleiden massa $m$ grammoina mitattiin tilavuuden $V$ funktiona kuutiosenttimetreinä. Mittauspisteisiin sovitettu suora kulkee origon kautta, ja sen kulmakerroin on $7{,}9$. Mitä kulmakerroin kertoo?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kulmakerroin on $7{,}9\\,\\text{g/cm}^3$ ja kertoo, montako grammaa massaa on yhtä kuutiosenttimetriä kohti.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kulmakerroin on $7{,}9\\,\\text{g/cm}^3$ ja kertoo, montako grammaa massaa on yhtä kuutiosenttimetriä kohti.",
+          "feedback": "Oikein: kulmakertoimen yksikkö on $y$:n yksikkö jaettuna $x$:n yksiköllä, joten massa-tilavuuskuvaajassa se on $\\text{g/cm}^3$. Koska kappaleet ovat samaa metallia, se on tämän aineen tiheys.",
+          "correct": true
+        },
+        {
+          "text": "Kulmakerroin on $7{,}9\\,\\text{cm}^3/\\text{g}$ ja kertoo, kuinka suuren tilavuuden yksi gramma täyttää.",
+          "feedback": "Yksikkö on käännetty väärinpäin. Kulmakerroin on $\\Delta y : \\Delta x$, joten $y$:n eli massan yksikkö tulee osoittajaan ja $x$:n eli tilavuuden nimittäjään."
+        },
+        {
+          "text": "Kulmakerroin on $7{,}9\\,\\text{g}$ ja kertoo kappaleen massan, kun tilavuus on nolla.",
+          "feedback": "Tämä on sekoitettu vakiotermiin $b$, joka on suoran ja pystyakselin leikkauskohta. Suora kulkee origon kautta, joten $b = 0$, ja kulmakerroin kertoo, kuinka jyrkästi massa kasvaa tilavuuden mukana."
+        },
+        {
+          "text": "Kulmakerroin on pelkkä luku ilman yksikköä, koska se kertoo vain suoran jyrkkyyden.",
+          "feedback": "Kulmakertoimella on yksikkö, jos suureilla on yksiköt. Se on jakolaskun $\\Delta y : \\Delta x$ tulos, ja siitä saa juuri fysikaalisen merkityksen, esimerkiksi tiheyden."
+        }
+      ]
+    },
+    {
+      "id": "fy1-4-L1-08",
+      "level": 1,
+      "text": "Jousen pituus $l$ mitattiin kuorman massan $m$ funktiona. Mittauspisteisiin sovitettu suora kulkee pisteen $(3{,}0\\,\\text{kg};\\ 7{,}0\\,\\text{cm})$ kautta, ja sen kulmakerroin on $1{,}5\\,\\tfrac{\\text{cm}}{\\text{kg}}$. Kuinka pitkä jousi on ilman kuormaa? Anna vastaus senttimetreinä.",
+      "kind": [
+        "model"
+      ],
+      "answer": 2.5,
+      "unit": "cm",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,13 +145,152 @@
       "answer": 1.8,
       "unit": "kertaa",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy1-4-L2-05",
+      "level": 2,
+      "text": "Teräsjousesta ripustettiin eri massoja ja mitattiin jousen venymä $x$ kuorman massan $m$ funktiona. Piirrä mittauspisteistä kuvaaja, sovita pisteisiin suora ja määritä sen kulmakerroin. Kuinka monta millimetriä jousi venyy yhtä lisägrammaa kohti? Anna vastaus yksikössä mm/g.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 0.08,
+      "unit": "mm/g",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Jousen venymä kuorman funktiona",
+        "columns": [
+          "$m\\,(\\text{g})$",
+          "$x\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "50.0",
+            "4.1"
+          ],
+          [
+            "100.0",
+            "8.3"
+          ],
+          [
+            "150.0",
+            "11.8"
+          ],
+          [
+            "200.0",
+            "16.5"
+          ],
+          [
+            "250.0",
+            "20.2"
+          ],
+          [
+            "300.0",
+            "23.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-4-L2-06",
+      "level": 2,
+      "text": "Kärry liikkui tasaisesti radalla, ja sen paikka $x$ radan merkistä mitattiin ajan $t$ funktiona. Piirrä mittauspisteistä kuvaaja ja sovita pisteisiin suora. Mikä on suoran vakiotermi $b$ metreinä? Selitä, miksi suora ei kulje origon kautta ja mitä vakiotermi tässä kokeessa tarkoittaa.",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 0.83,
+      "unit": "m",
+      "tolerance": 0.1,
+      "data": {
+        "caption": "Kärryn paikka ajan funktiona",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.82"
+          ],
+          [
+            "1.0",
+            "1.31"
+          ],
+          [
+            "2.0",
+            "1.68"
+          ],
+          [
+            "3.0",
+            "2.22"
+          ],
+          [
+            "4.0",
+            "2.57"
+          ],
+          [
+            "5.0",
+            "3.09"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-4-L2-07",
+      "level": 2,
+      "text": "Kahdesta tasalaatuisesta metallista, A:sta ja B:stä, valmistettiin kummastakin eri tilavuuksisia saman aineen kappaleita, ja jokaisen massa punnittiin.\n\nPiirrä kummankin aineen mittauspisteistä kuvaaja samaan koordinaatistoon ja sovita kumpaankin oma suora. Kuinka monta kertaa suurempi on B:n suoran kulmakerroin kuin A:n? Mitä kulmakerroin tässä kuvaajassa tarkoittaa, ja kumpi aine on tiheämpi?",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 2.9,
+      "unit": "kertaa",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Kappaleiden massa tilavuuden funktiona",
+        "columns": [
+          "$V\\,(\\text{cm}^3)$",
+          "$m_\\text{A}\\,(\\text{g})$",
+          "$m_\\text{B}\\,(\\text{g})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "27.4",
+            "78.6"
+          ],
+          [
+            "20.0",
+            "53.8",
+            "156.8"
+          ],
+          [
+            "30.0",
+            "82.1",
+            "237.1"
+          ],
+          [
+            "40.0",
+            "108.9",
+            "313.5"
+          ],
+          [
+            "50.0",
+            "135.2",
+            "392.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
     {
       "id": "fy1-4-L3-01",
       "level": 3,
-      "text": "Oppilas mittasi kärryn paikkaa $s$ ajan $t$ funktiona, mutta käynnisti sekuntikellon vasta sitten, kun kärry oli jo kulkenut radan alusta. Mittauspisteisiin sovitettu suora on $s = 0{,}85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0{,}40\\,\\text{m}$, missä $s$ mitataan radan alusta. Mikä aika sekuntikellon mukaan vastaa hetkeä, jolloin kärry oli radan alussa ($s = 0$)? Anna vastaus etumerkkeineen sekunteina ja perustele etumerkki.",
+      "text": "Oppilas mittasi kärryn paikkaa $s$ ajan $t$ funktiona, mutta käynnisti sekuntikellon vasta sitten, kun kärry oli jo kulkenut radan alusta.\n\nMittauspisteisiin sovitettu suora on $s = 0{,}85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0{,}40\\,\\text{m}$, missä $s$ mitataan radan alusta.\n\nMikä aika sekuntikellon mukaan vastaa hetkeä, jolloin kärry oli radan alussa ($s = 0$)? Anna vastaus etumerkkeineen sekunteina ja perustele etumerkki.",
       "answer": -0.47,
       "unit": "s",
       "tolerance": 0.02
@@ -96,10 +306,106 @@
     {
       "id": "fy1-4-L3-03",
       "level": 3,
-      "text": "Suoralta $y = 2{,}0\\,x$ luetaan kaksi pistettä, ja kummankin $y$-arvon lukemavirhe on enintään $0{,}1$ yksikköä. Kulmakerroin lasketaan joko pisteistä $x = 4{,}0$ ja $x = 4{,}5$ tai pisteistä $x = 1{,}0$ ja $x = 9{,}0$. Kuinka monta kertaa suurempi on kulmakertoimen suhteellinen epävarmuus lähekkäisistä pisteistä laskettuna? Käytä pahinta tapausta, jossa lukemavirheet summautuvat erotukseen $\\Delta y$. Perustele, miksi kaukana toisistaan olevat pisteet ovat parempi valinta.",
+      "text": "Suoralta $y = 2{,}0\\,x$ luetaan kaksi pistettä, ja kummankin $y$-arvon lukemavirhe on enintään $0{,}1$ yksikköä. Kulmakerroin lasketaan joko pisteistä $x = 4{,}0$ ja $x = 4{,}5$ tai pisteistä $x = 1{,}0$ ja $x = 9{,}0$.\n\nKuinka monta kertaa suurempi on kulmakertoimen suhteellinen epävarmuus lähekkäisistä pisteistä laskettuna? Käytä pahinta tapausta, jossa lukemavirheet summautuvat erotukseen $\\Delta y$. Perustele, miksi kaukana toisistaan olevat pisteet ovat parempi valinta.",
       "answer": 16,
       "unit": "kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-4-L3-04",
+      "level": 3,
+      "text": "Jousesta mitattiin venymä $x$ kuorman massan $m$ funktiona suuremmilla kuormilla kuin tavallisesti. Piirrä mittauspisteistä kuvaaja. Millä kuormien välillä lineaarinen malli pätee? Sovita suora sille välille ja anna sen kulmakerroin yksikössä mm/g. Perustele, miksi malli ei päde koko mitatulla alueella.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 0.08,
+      "unit": "mm/g",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Jousen venymä suurilla kuormilla",
+        "columns": [
+          "$m\\,(\\text{g})$",
+          "$x\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "100.0",
+            "8.1"
+          ],
+          [
+            "200.0",
+            "16.3"
+          ],
+          [
+            "300.0",
+            "24.2"
+          ],
+          [
+            "400.0",
+            "32.5"
+          ],
+          [
+            "500.0",
+            "40.1"
+          ],
+          [
+            "600.0",
+            "51.8"
+          ],
+          [
+            "700.0",
+            "68.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-4-L3-05",
+      "level": 3,
+      "text": "Kärryn matka $s$ mitattiin ajan $t$ funktiona. Piirrä mittauspisteistä kuvaaja. Pisteiden joukkoon mahtuu jyrkin suora, joka kulkee pisteiden $(1{,}0\\,\\text{s};\\ 0{,}75\\,\\text{m})$ ja $(6{,}0\\,\\text{s};\\ 3{,}50\\,\\text{m})$ kautta, ja loivin suora pisteiden $(2{,}0\\,\\text{s};\\ 1{,}40\\,\\text{m})$ ja $(5{,}0\\,\\text{s};\\ 2{,}60\\,\\text{m})$ kautta.\n\nOppilas arvioi kulmakertoimeksi näiden suorien kulmakertoimien keskiarvon ja sen epävarmuudeksi niiden erotuksen: \"Jyrkin suora antaa $0{,}55\\,\\text{m/s}$ ja loivin $0{,}40\\,\\text{m/s}$. Keskiarvo on $0{,}475\\,\\text{m/s}$ ja epävarmuus $0{,}55\\,\\text{m/s} - 0{,}40\\,\\text{m/s} = 0{,}15\\,\\text{m/s}$, joten epävarmuus on $32\\,\\%$ kulmakertoimesta.\"\n\nEtsi oppilaan virhe ja laske oikea epävarmuus prosentteina kulmakertoimesta. Selitä, mitä tämä arvio kertoo ja mitä se ei takaa.",
+      "kind": [
+        "data",
+        "graph",
+        "error"
+      ],
+      "answer": 16,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kärryn matka ajan funktiona",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$s\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "0.75"
+          ],
+          [
+            "2.0",
+            "1.40"
+          ],
+          [
+            "3.0",
+            "1.80"
+          ],
+          [
+            "4.0",
+            "2.30"
+          ],
+          [
+            "5.0",
+            "2.60"
+          ],
+          [
+            "6.0",
+            "3.50"
+          ]
+        ]
+      }
     }
   ]
 }

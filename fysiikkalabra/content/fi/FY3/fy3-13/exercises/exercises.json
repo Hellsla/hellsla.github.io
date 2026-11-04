@@ -39,6 +39,75 @@
       "answer": 0.89,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L1-06",
+      "level": 1,
+      "text": "Mitä tarkoittaa lämpötila $0\\,\\text{K}$ eli absoluuttinen nollapiste?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Alin mahdollinen lämpötila, koska hiukkasten keskimääräinen liike-energia on silloin pienin.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Veden jäätymislämpötila, koska kelvinasteikon nollakohta on valittu jään sulamispisteeseen.",
+          "feedback": "Väärin: veden jäätymispiste on $0\\,{}^\\circ\\text{C} = 273{,}15\\,\\text{K}$. Kelvinasteikko alkaa paljon alempaa, absoluuttisesta nollapisteestä."
+        },
+        {
+          "text": "Lämpötila, jossa kaikki kaasut tiivistyvät nesteiksi, koska hiukkaset vetävät toisiaan puoleensa.",
+          "feedback": "Väärin: kaasut tiivistyvät eri lämpötiloissa, ja absoluuttinen nollapiste on kaikille aineille sama $-273{,}15\\,{}^\\circ\\text{C}$."
+        },
+        {
+          "text": "Alin mahdollinen lämpötila, koska hiukkasten keskimääräinen liike-energia on silloin pienin.",
+          "correct": true,
+          "feedback": "Oikein: alempaa lämpötilaa ei ole, koska hiukkasten keskimääräinen liike-energia on silloin pienimmillään."
+        },
+        {
+          "text": "Lämpötila, jossa hiukkaset pysähtyvät kokonaan, koska niiltä on poistettu kaikki energia.",
+          "feedback": "Väärin: absoluuttisessa nollapisteessä hiukkasten energia on pienin mahdollinen, mutta liike ei pysähdy kokonaan."
+        }
+      ]
+    },
+    {
+      "id": "fy3-13-L1-07",
+      "level": 1,
+      "text": "Nestemäinen typpi kiehuu normaalipaineessa lämpötilassa $-195{,}8\\,{}^\\circ\\text{C}$ (taulukkoarvo). Muunna lämpötila kelvineiksi.",
+      "answer": 77.4,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L1-08",
+      "level": 1,
+      "text": "Kaasun paine mitattiin lämpötila-alueella $20\\ldots 100\\,{}^\\circ\\text{C}$ ja pisteisiin sovitettua suoraa jatkettiin kohtaan $p = 0$. Mitä ekstrapolointi tarkoittaa tässä?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "Suoran jatkamista mitatun alueen ulkopuolelle, koska paine oletetaan siellä samanlaiseksi.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Arvon lukemista kahden mitatun pisteen väliltä, koska paine muuttuu pisteiden välillä tasaisesti.",
+          "feedback": "Väärin: tämä on interpolointia. Ekstrapoloinnissa mennään mitatun alueen ulkopuolelle."
+        },
+        {
+          "text": "Mittauksen toistamista monta kertaa, koska keskiarvo on tarkempi kuin yksittäinen mittaus.",
+          "feedback": "Väärin: toistaminen pienentää keskiarvon satunnaista virhettä, mutta se ei ole suoran jatkamista mittausalueen ulkopuolelle."
+        },
+        {
+          "text": "Suoran vetämistä jokaisen pisteen kautta, koska jokaisen pisteen pitää olla täsmälleen suoralla.",
+          "feedback": "Väärin: mittauspisteet eivät yleensä ole täsmälleen suoralla mittausepävarmuuden vuoksi. Suora kulkee pisteiden joukon keskeltä."
+        },
+        {
+          "text": "Suoran jatkamista mitatun alueen ulkopuolelle, koska paine oletetaan siellä samanlaiseksi.",
+          "correct": true,
+          "feedback": "Oikein: ekstrapoloitu arvo on arvio, joka olettaa mallin pätevän mitatun alueen ulkopuolellakin."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,13 +142,135 @@
       "answer": 18,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "Esimerkkiaineisto: suljetun pullon ilman paine mitattiin viidessä lämpötilassa. Paineen lukeman epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Pisteisiin sovitettu paras suora kulkee pisteiden keskipisteen $(\\theta_{\\text{ka}}, p_{\\text{ka}})$ kautta, ja sen kulmakerroin on tietokoneella laskettuna $0{,}363\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$.\n\na) Laske taulukon keskipiste $(\\theta_{\\text{ka}}, p_{\\text{ka}})$.\n\nb) Laske sovitetun suoran nollapaineen lämpötila $\\theta_0$.\n\nVastauskenttään tulee kohdan b) tulos celsiusasteina.",
+      "answer": -274,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Suljetun pullon ilman paine (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "10",
+            "103.4"
+          ],
+          [
+            "30",
+            "110.1"
+          ],
+          [
+            "50",
+            "118.2"
+          ],
+          [
+            "70",
+            "124.9"
+          ],
+          [
+            "90",
+            "132.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-13-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Esimerkkiaineisto: kaksi ryhmää analysoi samaa suljetun pullon ilman painemittausta. Paineen lukeman epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Ryhmä A sovitti suoran kaikkiin kuuteen pisteeseen ja sai nollapaineen lämpötilaksi $-270\\,{}^\\circ\\text{C}$. Ryhmä B käytti vain kahta alinta lämpötilaa $20\\,{}^\\circ\\text{C}$ ja $35\\,{}^\\circ\\text{C}$ ja piirsi suoran niiden kautta.\n\na) Laske ryhmän B nollapaineen lämpötila $\\theta_0$.\n\nb) Selitä, miksi ryhmän B tulos eroaa ryhmän A tuloksesta.\n\nVastauskenttään tulee kohdan a) tulos celsiusasteina.",
+      "answer": -302,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Suljetun pullon ilman paine (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "107.4"
+          ],
+          [
+            "35",
+            "112.4"
+          ],
+          [
+            "50",
+            "118.0"
+          ],
+          [
+            "65",
+            "124.1"
+          ],
+          [
+            "80",
+            "129.1"
+          ],
+          [
+            "95",
+            "135.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-13-L2-07",
+      "level": 2,
+      "kind": [
+        "error",
+        "data"
+      ],
+      "text": "Esimerkkiaineisto: ryhmä lämmitti pulloon suljettua ilmaa ja mittasi paineen neljässä lämpötilassa. Paineen lukeman epävarmuus on $\\pm 0{,}5\\,\\text{kPa}$. Ryhmä epäilee, että pullon korkki vuotaa. Ryhmä piirsi suoran taulukon ensimmäisen ja viimeisen pisteen kautta ja jatkoi sitä kohtaan $p = 0$.\n\na) Laske ryhmän saama nollapaineen lämpötila $\\theta_0$.\n\nb) Tukeeko taulukko epäilyä? Perustele kulmakertoimien avulla ja selitä, miksi vuoto vääristää tulosta.\n\nVastauskenttään tulee kohdan a) tulos celsiusasteina.",
+      "answer": -370,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Vuotavan pullon ilman paine (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "20",
+            "104.0"
+          ],
+          [
+            "40",
+            "110.6"
+          ],
+          [
+            "60",
+            "116.0"
+          ],
+          [
+            "80",
+            "120.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
     {
       "id": "fy3-13-L3-01",
       "level": 3,
-      "text": "Mittausalue on 20,0–$100{,}0\\,{}^\\circ\\text{C}$. Pisteessä $20{,}0\\,{}^\\circ\\text{C}$ paine on $106{,}0 \\pm 1{,}0\\,\\text{kPa}$ ja pisteessä $100{,}0\\,{}^\\circ\\text{C}$ $137{,}0 \\pm 1{,}0\\,\\text{kPa}$. Jyrkin ääriviiva kulkee pisteiden ($20{,}0\\,{}^\\circ\\text{C}$; $105{,}0\\,\\text{kPa}$) ja ($100{,}0\\,{}^\\circ\\text{C}$; $138{,}0\\,\\text{kPa}$) kautta, loivin pisteiden ($20{,}0\\,{}^\\circ\\text{C}$; $107{,}0\\,\\text{kPa}$) ja ($100{,}0\\,{}^\\circ\\text{C}$; $136{,}0\\,\\text{kPa}$) kautta. Määritä absoluuttisen nollapisteen epävarmuus $\\Delta\\theta_0$ ja päättele, miksi pelkkien päätepisteiden ääriviivat antavat suuremman epävarmuuden kuin seitsemän pisteen aineisto.",
+      "text": "Mittausalue on 20,0–$100{,}0\\,{}^\\circ\\text{C}$. Pisteessä $20{,}0\\,{}^\\circ\\text{C}$ paine on $106{,}0 \\pm 1{,}0\\,\\text{kPa}$ ja pisteessä $100{,}0\\,{}^\\circ\\text{C}$ $137{,}0 \\pm 1{,}0\\,\\text{kPa}$.\n\nJyrkin ääriviiva kulkee pisteiden ($20{,}0\\,{}^\\circ\\text{C}$; $105{,}0\\,\\text{kPa}$) ja ($100{,}0\\,{}^\\circ\\text{C}$; $138{,}0\\,\\text{kPa}$) kautta, loivin pisteiden ($20{,}0\\,{}^\\circ\\text{C}$; $107{,}0\\,\\text{kPa}$) ja ($100{,}0\\,{}^\\circ\\text{C}$; $136{,}0\\,\\text{kPa}$) kautta.\n\nMääritä absoluuttisen nollapisteen epävarmuus $\\Delta\\theta_0$ ja päättele, miksi pelkkien päätepisteiden ääriviivat antavat suuremman epävarmuuden kuin seitsemän pisteen aineisto.",
       "answer": 20.3,
       "unit": "°C",
       "tolerance": 0.03
@@ -87,7 +278,7 @@
     {
       "id": "fy3-13-L3-02",
       "level": 3,
-      "text": "Typpikaasun paine on jäykässä astiassa $100{,}0\\,\\text{kPa}$ lämpötilassa $0\\,{}^\\circ\\text{C}$, ja paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine suoran mukaan olisi lämpötilassa $77{,}0\\,\\text{K}$, jossa typpi kiehuu normaalipaineessa? Näin pienessä paineessa typpikaasu tiivistyy nesteeksi vasta noin $67\\,\\text{K}$:ssä. Perustele, miksi suoraa ei voi jatkaa absoluuttiseen nollapisteeseen asti. Vastaa paineena kilopascaleina.",
+      "text": "Typpikaasun paine on jäykässä astiassa $100{,}0\\,\\text{kPa}$ lämpötilassa $0\\,{}^\\circ\\text{C}$, ja paine on suoraan verrannollinen kelvinlämpötilaan.\n\nMikä paine suoran mukaan olisi lämpötilassa $77{,}0\\,\\text{K}$, jossa typpi kiehuu normaalipaineessa?\n\nNäin pienessä paineessa typpikaasu tiivistyy nesteeksi vasta noin $67\\,\\text{K}$:ssä. Perustele, miksi suoraa ei voi jatkaa absoluuttiseen nollapisteeseen asti. Vastaa paineena kilopascaleina.",
       "answer": 28.2,
       "unit": "kPa",
       "tolerance": 0.02
@@ -99,6 +290,90 @@
       "answer": 1.86,
       "unit": "kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-13-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Esimerkkiaineisto: kaksi ryhmää määritti absoluuttisen nollapisteen suljetun kaasun paineesta. Kumpikin mittasi paineen kahdessa lämpötilassa, ja paineen epävarmuus on kummassakin $\\pm 1{,}0\\,\\text{kPa}$; lämpötilan epävarmuus jätetään huomiotta. Jyrkin ääriviiva kulkee alemman pisteen epävarmuusjanan alapään ja ylemmän pisteen epävarmuusjanan yläpään kautta, loivin päinvastoin.\n\na) Laske kummankin sarjan jyrkimmän ja loivimman ääriviivan nollapaineen lämpötila ja niiden avulla epävarmuus $\\Delta\\theta_0$.\n\nb) Päättele laskujesi perusteella, miten mittausalueen leveys vaikuttaa epävarmuuteen, ja tarkista, sopiiko kummankin sarjan tulos yhteen arvon $-273{,}15\\,{}^\\circ\\text{C}$ kanssa.\n\nVastauskenttään tulee sarjan B epävarmuus $\\Delta\\theta_0$ kohdasta a) celsiusasteina.",
+      "answer": 10.7,
+      "unit": "°C",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kaksi mittaussarjaa samasta kaasusta (esimerkkiaineisto)",
+        "columns": [
+          "Sarja",
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "A",
+            "25",
+            "108.0"
+          ],
+          [
+            "A",
+            "85",
+            "130.0"
+          ],
+          [
+            "B",
+            "25",
+            "108.0"
+          ],
+          [
+            "B",
+            "225",
+            "181.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-13-L3-05",
+      "level": 3,
+      "kind": [
+        "model",
+        "data",
+        "reasoning"
+      ],
+      "text": "Esimerkkiaineisto: suljetun pullon ilman paine mitattiin viidessä lämpötilassa kaasulämpömittarin kalibroimiseksi. Pullo vietiin pakastimeen, ja sen paineeksi luettiin $94{,}0\\,\\text{kPa}$. Paineen lukeman epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Oleta, että paine on lämpötilan lineaarinen funktio myös taulukon alueen ulkopuolella.\n\na) Määritä pakastimen lämpötila $\\theta$ kalibrointisuoralla, jonka kulmakerroin lasketaan taulukon ensimmäisestä ja viimeisestä pisteestä.\n\nb) Laske painelukeman epävarmuudesta $\\pm 1{,}0\\,\\text{kPa}$ johtuva lämpötilan epävarmuus.\n\nc) Perustele, miksi tulos on ekstrapolointia ja miksi se on silti luotettavampi kuin nollapisteen määritys samalla suoralla.\n\nVastauskenttään tulee kohdan a) tulos celsiusasteina.",
+      "answer": -17.5,
+      "unit": "°C",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kalibrointipullon ilman paine (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta\\,({}^\\circ\\text{C})$",
+          "$p\\,(\\text{kPa})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "100.4"
+          ],
+          [
+            "25",
+            "109.7"
+          ],
+          [
+            "50",
+            "118.6"
+          ],
+          [
+            "75",
+            "127.9"
+          ],
+          [
+            "100",
+            "137.0"
+          ]
+        ]
+      }
     }
   ]
 }

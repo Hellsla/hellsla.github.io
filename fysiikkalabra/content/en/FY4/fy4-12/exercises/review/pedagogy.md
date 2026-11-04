@@ -1,11 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0c997f4681a2fe30
+CONTENT-HASH: 7f3729c8c7c04c30
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- L2-05 text: "The data is sample data" -> "The data are sample data".
+- L3-04 text: "how long a distance does the car drive" -> "how far does the car drive"; "From the opposite lane comes a car" -> "A car comes from the opposite lane".
 
 ## Polish
+(none)
 
 ## Checked
-Judged the exercise set as a student would meet it: the three levels, the situation-first and question-last order, the L2-03 sketch-and-justify task and the L3 reasoning tasks are phrased as in the Finnish; solutions open with given and find and end with a reasonableness check.
-The renamed subscripts make the solutions easier to read in English (C cyclist, R runner, S scooter).
-No changes needed on pedagogy grounds.
+- Feedback of every distractor in L1-06 and L1-08 names the right misconception, as in fi; one correct option each.
+- Task wording keeps fi's scaffolding (a/b/c parts, answer-box sentence naming the asked value, error-analysis prompt in L2-06).
+- English is natural and clear for upper-secondary level.

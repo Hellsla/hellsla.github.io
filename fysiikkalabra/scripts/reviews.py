@@ -105,9 +105,10 @@ RULES = {                       # category: (science, pedagogy, visual)
     "figure":         ("full",  "full", "delta"),    # figure geometry or text; a picture file
     "photo":          ("none",  "none", "delta"),    # a licensed photograph beside the text (figure.unit-photo, assets/pics/<course>/photos.json): illustration only, never a task (teacher 2026-11-01 FY14, 2026-11-03 FY1–FY3)
     "illustration":   ("none",  "delta", "delta"),   # an illustration (data-fig="hero" or "scene"): no text, no physics claim (teacher 2026-10-26)
+    "paragraphs":     ("none",  "none", "none"),    # a task text cut into paragraphs (a blank line, "\\n\\n" in the JSON string), its words unchanged: build.exercise_text renders them, check_layout checks them (teacher 2026-11-04)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
 }
-WHY = {"photo": "a licensed illustration photograph added, moved or recaptioned", "typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
+WHY = {"paragraphs": "a task text cut into paragraphs, its words unchanged", "photo": "a licensed illustration photograph added, moved or recaptioned", "typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
        "relocated": "the sim's text moved word for word into its lead and boxes",
        "chapter-ref": "a chapter reference follows that chapter's new title",
@@ -569,6 +570,21 @@ def _typography_pair(old, new):
     return len(a) == len(b) and all(x == y if i % 2 == 0 else _math_view(x) == _math_view(y) for i, (x, y) in enumerate(zip(a, b)))
 
 
+JSON_STR = re.compile(r'\s*(?:"(?:[^"\\]|\\.)*": )?("(?:[^"\\]|\\.)*"),?')   # a JSON line holding one string (a key's value or a list item)
+
+
+def _paragraph_pair(old, new):
+    """True when two JSON lines are the same string but for paragraph breaks: read as single spaces, the new string's
+    breaks give the old one (build.exercise_text renders them). The strings are decoded, so LaTeX \\nu is not a break."""
+    def text(l):
+        m = JSON_STR.fullmatch(l)
+        try: return (l[:m.start(1)], json.loads(m.group(1))) if m else (None, None)
+        except json.JSONDecodeError: return None, None
+    (ko, o), (kn, n) = text(old), text(new)
+    flat = lambda t: re.sub(r"[ \t]*\n[ \t\n]*", " ", t)
+    return o is not None and n is not None and ko == kn and "\n" in n and flat(o) == flat(n)
+
+
 def _chapter_refs_renamed(old, new):
     """True when two lines differ only in the titles of chapter references and every new one is a current title."""
     blank = lambda l: CHAPTER_REF.sub(lambda m: m.group(1) + "*…*", l)
@@ -604,6 +620,9 @@ def classify(path, diff_lines, lid):
             for o in list(rem):
                 n = next((l for l in add if _level_policy_removed(o, l)), None)
                 if n is not None: cats.add("level-policy"); rem.remove(o); add.remove(n)
+            for o in list(rem):                        # a long task text given paragraph breaks, word for word the same
+                n = next((l for l in add if l != o and _paragraph_pair(o, l)), None)
+                if n is not None: cats.add("paragraphs"); rem.remove(o); add.remove(n)
             for o in list(rem):                        # a formula re-set, its meaning unchanged: only the visual reviewer looks
                 n = next((l for l in add if _typography_pair(o, l)), None)
                 if n is not None: cats.add("typography"); rem.remove(o); add.remove(n)

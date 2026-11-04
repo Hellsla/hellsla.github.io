@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 06cb066353b21674
-
-Delta review over the audit's PASS (c049419582c3b6e6): one exercise replaced by a figure task, LaTeX units.
+CONTENT-HASH: 6f11aaaecc7f8a5d
+Round: 3
 
 ## Blocking
-- none
+(none)
+
 ## Polish
-- Level L2 fits (read, derive g_B, solve for t). B at 2,5 s is between gridlines, so the student must compute, not read; fine, the tolerance 3 % (+-0,075 s) is too tight for eye reading but the intended route is calculation.
-- A shortcut exists (B is twice as steep, so half the time).
+- fy1-6-L3-04: the 5 % criterion is only in the solution; add "poikkeama yli 5 %" to the task text (carried over).
+- fy1-6-L3-05: the numeric check covers only t0 = 0,15 s; say which value is entered or list g = 9,8 m/s2 too (carried over).
+- fy1-6-L2-07 solution Järkevyys still states the 0,20 s check twice (2,00 m/s sentence and the 2,0/9,8 display); merge (carried over).
+- fy1-6-L3-01 (existing) overlaps L1-06 on mass independence; acceptable at different levels (carried over).
+
 ## Checked
-- Figure needed: the text gives no speeds or accelerations; A and B only in the figure. 360 px: two lines in blue and orange, labelled A and B (colour not alone), y labels 10-40, x 1-6; crossings (5 s; 20) and (5 s; 40) on gridlines.
-- g_A=20/5=4,0, g_B=40/5=8,0 m/s^2, t_B=20/8,0=2,5 s correct; answers.py (20/5.0)*5.0/(40/5.0) = 2,5; **Kuvaajan lukeminen:** present.
-- Replaced task (stone, km/h conversion) is covered elsewhere in the set (L1-04 style conversions); the set still has conversion practice.
+- Round 3 delta: L2-07 solution Annettu now says t1, t2 are the mid-points of the light breaks, matching the task text ("valon katkos puolivälissä") and the Periaate; g = 2,50/0,255 = 9,8 m/s2 unchanged and consistent.
+- Round-1 Blocking (L3-05 naming the cause) stays resolved; L3-05 answer 0,15 s matches the solution.
+- Counts 8/7/5, levels and plan items unchanged; no duplicates introduced.

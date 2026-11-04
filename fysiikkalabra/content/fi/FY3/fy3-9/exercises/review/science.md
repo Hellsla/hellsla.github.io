@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1a6dafb3bfca4e0e
+CONTENT-HASH: 757be2ef1f647d60
+Round: 3
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- solutions.md:147 (L2-05 Periaate) — A's reason is now given ("tilavuus ja ilman määrä pysyvät samoina"); B could get the mirror reason ("paine pysyy samana, kun V/T on vakio" is there, but not that the air amount is fixed). Optional.
+- L1-07 is still the third plain Boyle compression at level 1 (after L1-01, L1-02). Carried over.
+- docs/exercise-bank/FY3.md:70 — plan line still lists "ruiskumittaus → linearisointi", already covered by L2-03; name L2-07 (absolute zero by extrapolation) instead. Carried over.
 
 ## Checked
-Full recomputation of all 12 answers from the task text (Boyle, isobaric, isochoric, hydrostatic plus Boyle, gauge pressure, pump travel, least-squares slope): 67,3 kPa; 13,7 l; 80 kPa; 2,6 l; 87,3 kPa; 2,0 m3; 90 C; 2,0 J; 890 m3; 5,9 cm3; 202 kPa; 29,9 cm. All agree with the solutions. Commit 79af52c4 only set numbers with units in prose as inline LaTeX (e.g. 160{,}0 kPa, 300{,}0 bar, 2800 m^3, 2{,}0 cm^3) and in solutions.md (40 min:ksi, 250 kPa:sta 202 kPa:iin); every number, answer, hint, figure and non-text field is identical. Conditions (constant T and amount, gauge vs absolute pressure, Boyle at 300 bar, safe ascent wording) unchanged and correct.
+- Round-2 Polish resolved: L2-05 a) now reads "…ja perustele, miksi lämpötilan on oltava kelvineinä." (no double comma, no dangling clause); the data caption says "astiassa A / astiassa B", matching the task text and the solution (Mallivastaus a) uses "Astiassa A/B").
+- L2-05 numbers unchanged: p/T 0,340 kPa/K, V/T 0,050 ml/K, 127 kPa at 100 °C; the Celsius comparison (4,99 to 1,50) supports the "kelvineinä" justification.
+- L3-05 Mallivastaus c): the author's note is deleted; the pressure ratio 399,5 : 101 ≈ 4,0 and volume ratio 4,0 are inverse, as Boyle's law requires. Correct, and the Järkevyys line still follows.
+- No other change since round 2; earlier recomputed answers stand.

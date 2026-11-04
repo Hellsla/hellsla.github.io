@@ -87,6 +87,8 @@ jobs:
       - run: python scripts/reviews.py verify
       - name: a temporary FY4 course through the whole pipeline (nothing is published)
         run: python scripts/test_courses.py
+      - name: the exercise bank's schema (multiple choice, data tables, kinds, minimum counts)
+        run: python scripts/test_exercise_bank.py
       - name: every language has every text, and every translation keeps the Finnish lesson's numbers, formulas and structure
         run: python scripts/check_i18n.py
       - name: a trial English lesson through the language check, the reviews and the build into site/en/ (nothing is published)

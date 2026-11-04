@@ -1,14 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: b8ad0d8a294d0e11
+CONTENT-HASH: 40177a99521db833
 
-Delta review over the audit's PASS (eddc57610d8a36e9): L2-02 (tank line from two given points) replaced by a by-eye fit and extrapolation on fy1-4/scatter-points; LaTeX in L1-03.
+Full review, round 2: I judged the changes in L1-07, L2-05…07, L3-04 and the rewritten L3-05, and recomputed every answer.
 
 ## Blocking
-(none)
+
 ## Polish
-- solutions.md:64 — "eikä minkään kahden pisteen kautta" reads as a rule that a fit may not pass through two points; the guardrail only forbids choosing two points to define it. Write "eikä valittujen kahden pisteen kautta".
+- solutions.md:195 — L3-05 Järkevyys: the end-point speed 0,55 m/s comes from the same two raw points as the steepest line, so it equals k_max by construction. That is no check. — Compare with the best line instead: about 0,51 m/s, which lies inside 0,40–0,55 m/s.
+- solutions.md:189 — L3-05 Periaate states "arvo on välin keskikohta" as a rule, but the best-fit slope is 0,51 m/s, not 0,475. — Write "arvioidaan välin keskikohdaksi".
+- solutions.md:194 — L3-05 rounding reason "kuten pisteiden koordinaateissa" does not fit an uncertainty. — "Epävarmuus ilmoitetaan yhdellä tai kahdella numerolla."
+- solutions.md:183 — L3-04 still says "kuten venymissä", but most extensions have three figures. This is the reason L2-05 already had corrected. — Give the by-eye fit as the reason. Also soften "pätee … kuormattomaan jouseen asti" to "todennäköisesti", because it is an extrapolation.
+- solutions.md L2-07 Periaate — says "m = kV", yet the lines read start at 0,3 g and 0,5 g. — "m = kV + b, jossa b ≈ 0".
+
 ## Checked
-- Figure: the six CART points (1; 0,6) … (6; 2,9) on a 1 s × 0,5 m grid to 9 s and 4,5 m; same data as the lesson's scatter; no line shown; description lists points only.
-- Recomputed at t = 8,0 s: least squares k = 0,480 m/s, b = 0,053 m → 3,89 m; through origin 3,94 m; lesson line 0,5t → 4,0 m; line through first and last point 3,82 m. Tolerance 0,08 → 3,59…4,21 m accepts all, rejects 2,9 m (no extrapolation).
-- Solution's two points read off the fitted line (0; 0,0) and (6,0; 2,9), slope 0,483 → 3,87 ≈ 3,9 m; range 3,6…4,2 m stated; extrapolation flagged as less certain; 2 sig. figs justified.
-- L1-03 LaTeX only: (10 − 4,0)/0,60 = 10 vrk.
+- All 18 answers recomputed with numpy polyfit, separately from answers.py; all agree. L2-05: 0,0797. L2-06: b = 0,829 m. L2-07: 2,707 and 7,835 → 2,89. L3-04: 0,0802 (residuals ≤ 0,24 mm; 3,5 and 12,6 mm at 600 and 700 g). L3-05: 15,8 %; the pupil's 31,6 % → 32 %.
+- L3-05 data: steepest-line residuals −0,35…+0,1 m and shallowest −0,25…+0,5 m, so both are plausible bounds. The lines cross at about 2,7 s, inside the data, and the least-squares slope lies between them. The pupil's error (whole range instead of half) is real, and the interval is called an estimate, not a guarantee.
+- L1-07: "saman metallin" makes the slope a density. Exactly one option is correct, and every feedback is right.
+- L2-07: "tasalaatuisesta / saman aineen" is correct, the two-figure reason is the by-eye fit, and the densities match Al and Fe.
+- L3-04: the range 100–500 g has its extrapolation named, and the cause (beyond the elastic range, possible permanent stretch) is right at FY1 level.
+- Tolerances fit: 5 % and 10 % for by-eye fits, 3 % for the exact L3-05.
+- FY1 scope kept; the notation matches the lesson.
+- The hash was identical at start and end.

@@ -40,6 +40,58 @@
       "answer": 9.33,
       "unit": "kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-06",
+      "level": 1,
+      "text": "Fysiikassa havainnot ja mallit ovat eri asioita. Esimerkiksi havainto on, että pudotettu kivi osuu maahan nopeammin kuin pudotettu höyhen. Mikä seuraavista erottaa fysikaalisen mallin pelkästä havainnosta?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Mallista voi päätellä ennusteen uuteen tilanteeseen, ja ennusteen voi testata mittauksella.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Mallista voi päätellä ennusteen uuteen tilanteeseen, ja ennusteen voi testata mittauksella.",
+          "correct": true,
+          "feedback": "Oikein: havainto kertoo, mitä tapahtui, kun taas malli on yksinkertaistettu kuvaus, josta voi päätellä, mitä tapahtuisi uudessa tilanteessa. Mallia testataan kokeilla ja mittauksilla, ja se pätee vain tietyissä oloissa."
+        },
+        {
+          "text": "Malli on havainto, joka on toistettu niin monta kertaa, että se pätee varmasti kaikissa oloissa.",
+          "feedback": "Toistettu havainto on edelleen havainto. Malli kuvaa ilmiötä ja tuottaa ennusteita, ja sen paikkansapitävyys on rajattu tiettyihin oloihin: esimerkiksi putoamismalli, joka ei huomioi ilmanvastusta, ei kuvaa höyhenen putoamista."
+        },
+        {
+          "text": "Malli on teoria, jota ei voi enää muuttaa sen jälkeen, kun sen on kerran todettu toimivan.",
+          "feedback": "Malli ei ole muuttumaton: se on voimassa vain oloissa, joissa sitä on testattu. Kun uusi mittaus poikkeaa ennusteesta, mallia korjataan tai sen voimassaolo rajataan. Esimerkiksi putoamismalli ilman ilmanvastusta kuvaa kiveä mutta ei höyhentä."
+        },
+        {
+          "text": "Malli on ilmiön täydellinen kuvaus, ja jos mittaus poikkeaa siitä, mittaus on aina virheellinen.",
+          "feedback": "Malli on yksinkertaistus, ei koko totuus. Kun huolellinen mittaus poikkeaa mallin ennusteesta, ratkaisee koe: malli korjataan tai sen voimassaolo rajataan, eikä mittausta hylätä pelkästään siksi, että se ei sovi malliin."
+        }
+      ]
+    },
+    {
+      "id": "fy1-1-L1-07",
+      "level": 1,
+      "text": "Kuun etäisyys Maasta on keskimäärin $3{,}84\\cdot10^{8}\\,\\text{m}$. Valon kulkuaika on matka jaettuna nopeudella, $t = s/c$. Kuinka kauan valolta kuluu matkaan Maasta Kuuhun, kun valon nopeus on $c = 2{,}998\\cdot10^{8}\\,\\text{m/s}$?",
+      "kind": [
+        "model"
+      ],
+      "answer": 1.28,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L1-08",
+      "level": 1,
+      "text": "Hiekanjyvän halkaisijan suuruusluokka on $10^{-3}\\,\\text{m}$ ja viruksen halkaisijan suuruusluokka $10^{-7}\\,\\text{m}$. Kuinka monta kertaa suurempi hiekanjyvä on viruksesta suuruusluokkien perusteella?",
+      "kind": [
+        "model"
+      ],
+      "answer": 10000,
+      "unit": "kertaa",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,147 @@
       "answer": 1.31,
       "unit": "miljoonaa kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L2-05",
+      "level": 2,
+      "text": "Taulukossa on planeettojen keskimääräinen etäisyys $r$ Auringosta tähtitieteellisinä yksikköinä; yksi tähtitieteellinen yksikkö on $1\\,\\text{AU}$ eli Maan etäisyys Auringosta.\n\nAurinkokunnan pienoismalli piirretään käytävälle niin, että Neptunus on $2{,}0\\,\\text{m}$ päässä Auringosta ja kaikki etäisyydet pienenevät samalla kertoimella.\n\nKuinka kaukana Auringosta Jupiter on pienoismallissa? Anna vastaus senttimetreinä. Mikä planeetta on pienoismallissa lähimpänä käytävän kohtaa, joka on $1{,}0\\,\\text{m}$ päässä Auringosta?",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 34.6,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Planeettojen etäisyys Auringosta",
+        "columns": [
+          "Planeetta",
+          "$r\\,(\\text{AU})$"
+        ],
+        "rows": [
+          [
+            "Merkurius",
+            "0.387"
+          ],
+          [
+            "Venus",
+            "0.723"
+          ],
+          [
+            "Maa",
+            "1.00"
+          ],
+          [
+            "Mars",
+            "1.52"
+          ],
+          [
+            "Jupiter",
+            "5.20"
+          ],
+          [
+            "Saturnus",
+            "9.58"
+          ],
+          [
+            "Uranus",
+            "19.2"
+          ],
+          [
+            "Neptunus",
+            "30.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-1-L2-06",
+      "level": 2,
+      "text": "Taulukossa on neljän kohteen halkaisija $d = a\\cdot10^{n}\\,\\text{m}$ kymmenpotenssimuodossa. Määritä kunkin kohteen suuruusluokka ja laske, montako suuruusluokkaa on ihmisen ja Linnunradan välillä. Perustele, miksi Linnunradan suuruusluokka ei ole $10^{20}$, vaikka sen eksponentti on $20$.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 21,
+      "unit": "suuruusluokkaa",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kohteiden halkaisijat $d = a\\cdot10^{n}\\,\\text{m}$",
+        "columns": [
+          "Kohde",
+          "$a$",
+          "$n$"
+        ],
+        "rows": [
+          [
+            "Ihminen",
+            "1.7",
+            "0"
+          ],
+          [
+            "Maa",
+            "1.27",
+            "7"
+          ],
+          [
+            "Aurinko",
+            "1.39",
+            "9"
+          ],
+          [
+            "Linnunrata",
+            "9.46",
+            "20"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-1-L2-07",
+      "level": 2,
+      "text": "Yksi paperiarkki on paljon ohuempi kuin viivaimen asteikkoväli $1\\,\\text{mm}$, joten sen paksuutta ei voi mitata suoraan.\n\nOppilas pinosi samaa kopiopaperia, painoi pinon kevyesti kasaan ja mittasi korkeuden $h$ viivaimella, jolta hän luki tuloksen puolen millimetrin tarkkuudella. Pino, jossa on $N$ arkkia, on $h = dN$ korkea, missä $d$ on yhden arkin paksuus, joten pisteet asettuvat suoralle, joka kulkee origon kautta ja jonka kulmakerroin on $d$.\n\nPiirrä pisteistä kuvaaja ja sovita pisteisiin suora. Lue suoralta pinon korkeus, kun $N = 300$, ja laske yhden arkin paksuus $d$ millimetreinä jakamalla korkeus arkkien määrällä. Selitä, miksi pinon mittaaminen antaa tarkemman tuloksen kuin yhden arkin mittaaminen.",
+      "kind": [
+        "experiment",
+        "data",
+        "graph"
+      ],
+      "answer": 0.102,
+      "unit": "mm",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Paperipinon korkeus arkkien määrän funktiona",
+        "columns": [
+          "$N$ (arkkia)",
+          "$h\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "50",
+            "5.0"
+          ],
+          [
+            "100",
+            "10.5"
+          ],
+          [
+            "150",
+            "15.0"
+          ],
+          [
+            "200",
+            "20.5"
+          ],
+          [
+            "250",
+            "25.5"
+          ],
+          [
+            "300",
+            "30.5"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +292,31 @@
       "text": "Elektronimikroskoopilla otetussa kuvassa virus, jonka halkaisija on $1{,}0\\cdot10^{-7}\\,\\text{m}$, näkyy $5{,}0\\,\\text{cm}$ leveänä. Kuvaa ei muuteta mitenkään. Kuinka leveänä samassa kuvassa näkyisi punasolu, jonka halkaisija on $7{,}5\\cdot10^{-6}\\,\\text{m}$? Anna vastaus senttimetreinä.",
       "answer": 375,
       "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-1-L3-04",
+      "level": 3,
+      "text": "Arvioi, kuinka monta sadepisaraa putoaa jalkapallokentälle yhden sadekuuron aikana.\n\nOletukset: kuuro kasvattaa kentälle kertyvän vesikerroksen paksuutta nopeudella $5{,}0\\,\\text{mm/h}$ ja kestää $10\\,\\text{min}$, kentän ala on $6{,}0\\cdot10^{3}\\,\\text{m}^2$ ja jokainen pisara on pallo, jonka halkaisija on $2{,}0\\,\\text{mm}$. Pallon tilavuus on $V = 4\\pi r^{3}/3$.\n\nKuinka monta pisaraa kentälle putoaa miljardeina? Mikä oletuksista vaikuttaa tulokseen eniten, jos sen arvo on $20\\,\\%$ liian suuri, ja miksi? Perustele laskemalla.",
+      "kind": [
+        "reasoning",
+        "model"
+      ],
+      "answer": 1.19,
+      "unit": "miljardia",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy1-1-L3-05",
+      "level": 3,
+      "text": "Voyager 2 ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $d_0 = 119{,}7\\,\\text{AU}$ Auringosta, ja sen nopeus Aurinkoon nähden on $v = 15{,}341\\,\\text{km/s}$. Tasaisen liikkeen malli on $d = d_0 + vt$.\n\nOppilas laski mallin ennusteen helmikuulle 2026, jolloin heliopaussin ylityksestä on kulunut $t = 7{,}25\\,\\text{a}$. Oppilaan ratkaisu: ”Matka on $s = vt = 15{,}341\\,\\text{km/s}\\cdot7{,}25 = 111{,}2\\,\\text{km}$. Etäisyys on $d = 119{,}7\\,\\text{AU} + 111{,}2\\,\\text{km} \\approx 119{,}7\\,\\text{AU}$. Voyager olisi siis lähes samassa paikassa kuin 2018, joten malli on väärä.”\n\nKäytä arvoja $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$. Mittaus antoi helmikuussa 2026 arvon $143{,}05\\,\\text{AU}$.\n\nEtsi oppilaan virhe ja laske mallin oikea ennuste etäisyydelle $d$ tähtitieteellisinä yksikköinä. Selitä, miksi mittaus tukee mallia mutta ei todista, että Voyager liikkuu samalla nopeudella aina.",
+      "kind": [
+        "error",
+        "model",
+        "reasoning"
+      ],
+      "answer": 143.2,
+      "unit": "AU",
       "tolerance": 0.02
     }
   ]

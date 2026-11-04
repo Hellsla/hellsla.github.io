@@ -1,13 +1,25 @@
 VERDICT: PASS
-CONTENT-HASH: 616b2bb1a2ffd6f2
-
-Round 2: the round-1 Blocking item (L2-03 tolerance too tight for a by-eye fit) is fixed. Delta review of the diff: tolerance 0,05 to 0,08.
+CONTENT-HASH: d6c4bf6ac501e57b
+Round: 4
+Mode: delta
 
 ## Blocking
-- none
+
 ## Polish
-- Level 2 fits (read, slope, extrapolate); the figure is readable at 360 px, but only 0 °C and 100 °C are labelled on x beyond -100/-50; the faint grid makes 102,5 hard to read.
-- The points are not exactly collinear (0,28 vs 0,26 kPa/°C), so the pair used changes the answer by about 2 kPa; now inside the tolerance.
+- solutions.md fy3-3-L2-06 — the hint in c) now leads the student to the 0,17 ratio; good, but "osaa tunnin alun lämpötilaerosta" is clumsy, write "osan tunnin alun lämpötilaerosta".
+- exercises.json fy3-3-L1-07 — still a second plain °C to K conversion beside L1-01 (with a negative value); acceptable.
+- exercises.json fy3-3-L3-04 b) and d) — the sentence defining systematic and random error is placed inside the task text; fine, but would read better as a separate short note under the table.
+
 ## Checked
-- Round-1 Blocking: 0,08 * 47,5 = 3,8, so 43,7-51,3 kPa. A student reading the last point as 100 kPa gets 50 kPa (accepted); 45 kPa (the solution's low end) accepted; both ends of the solution's 45-50 inside.
-- 27,5 / 100 = 0,275 kPa/°C; 75 - 27,5 = 47,5 kPa recomputed; solution unchanged and consistent.
+- Round-1 Polish carried and fixed: the systematic/random definition is now in L2-05 b) and L3-04 c); the circular 146 °C remark is replaced by "418,61 K - 273,15 = 145,46 °C approx 145 °C"; L3-04 a) says the other parts are checked from the solution; L2-06 c) has the hint; L3-05 now defines ylipaine and says the total pressure is proportional to T.
+- Recomputed: 255 K, 1,5 K, 1,741, 40 s, 0,6 K, 145,46 °C, 797 and 696 kPa, 13,6 %; all match.
+- MC correct positions shuffled (L1-06 third, L1-08 second); distractors are real misconceptions.
+- Long solutions are split into aligned blocks, nothing is skipped; no 360 px exercise capture was in the packet.
+- Set 8/7/5; levels fit the plan.
+- Hash unchanged at the end.
+
+## Checked in round 3
+- Delta (HEAD): only the line breaks of aligned model-solution rows changed (long row split into "..." and "&= result"). The step order, reasoning, numbers and wording are unchanged; the shorter rows read more easily on a phone, the "&=" continuation sits under the first "=". No learning-related change.
+
+## Checked in round 4
+- Delta (HEAD~3..HEAD, solutions.md display maths only): Only layout changed: the corrected forehead temperature now sits in its own display formula after the aligned block; the earlier one-row split "\\ &=" is gone, so the line reads as one calculation. Step order, reasoning and numbers unchanged. No learning-related change.

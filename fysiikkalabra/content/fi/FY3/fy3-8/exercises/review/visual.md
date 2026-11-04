@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b9f5870e18aa53bc
+CONTENT-HASH: 56d94f2d09a1fcbc
 
 ## Blocking
-(none)
-
-## Notes
-- Teacher's decision: litre stays a small l ("20,0 l:n", "0,84 l" resemble a bar/1 in captures). Recorded as a decision, not a finding.
 
 ## Polish
-- [Minor] L2-04 graph — fine and honest; the orange data line equals the FY4 acceleration colour, harmless here.
-- [Minor] L1-04/L3-03 solution Muunnokset — "20,0 l" rows in plain-sans litre next to KaTeX numbers read as "20,0 |"; decision above, no action unless the task text lacks "litraa" nearby.
-- [Minor] Järkevyys boxes — "Karkea arvio" chains put the unit on every factor and the result; fine, but a result-only unit would be shorter.
+- [Minor] solutions.md L2-06 Vastaus — kohdat esitetään järjestyksessä b), a), c) — järjestä a), b), c). Carried over.
+- [Minor] solutions.md L2-05 ja L3-04 Vastaus — mallivastaukset ovat pitkiä kappaleita — jaa kohdittain omille riveilleen. Carried over.
+- [Minor] L3-04 taulukko — "-32" tavuviivalla — käytä miinusmerkkiä (−32). Carried over.
+- [Minor] L2-05, L2-06 — vastauslaatikon yksikkö "10⁻⁶ 1/K" tavallista tekstiä — pidä, jos laatikko ei tue matematiikkaa.
 
 ## Checked
-- Delta (numbers with units set as inline LaTeX, "−$27\,°C$:seen" sign now inside maths, "$7{,}2\,\text{mm}$:n"): open-exercises-1280-3 (L1-02 sijoitus/vastaus, L1-03 text "500,0 mm", solution), open-exercises-L3-1280-4 (L3-02 end, L3-03 canister task with "$20{,}0\,\textsf{l}$:n", "$10\,°C$:n", full solution).
-- Case endings after maths read naturally; stacked fraction rows have clean spacing; no clipping or overflow.
+- Round 3 (delta, text-only). L2-06 Vastaus a): the garbled clause is gone and the sentence now reads cleanly in Finnish; no layout change, the answer paragraph is slightly shorter. No new captures taken; round-2 captures of the L2-06 solution (L2-1280-8) still apply.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bf0594d55683fe21
+CONTENT-HASH: d6c59949a7a14871
 
 ## Blocking
 (none)
 
 ## Fixed
-- none needed
+- L2-05, L2-07, L3-04 task texts: only added a plain-language explanation (hyötysuhde, ilmalämpöpumppu, lämpökerroin) and split a long sentence; no number, unit or answer changed.
 
 ## Polish
 - None.
 
 ## Checked
-Translation review of exercises.json and solutions.md against the reviewed Finnish. A script comparing every number, unit, inline formula and answer found no difference (only symbol subscripts translated consistently: W_g / P_e / P_dh / E_el etc. in English). Answers and worked solutions unchanged: e.g. W = 480 kPa·0.0250 m³ = 12.0 kJ, 172 J, 37.2 % efficiencies, 720 kW, heat pump 9.60 MWh from outdoors; the sign convention ΔU = Q - W_gas is kept. answers.py is shared and not a translation file. check_i18n 0 errors.
+- Scripted comparison of exercises.json against the Finnish for all 8 new tasks: ids, kinds, answers, units, tolerances, correct flags, choices, table cells and every number equal.
+- Solutions (243 lines): every number, unit and formula equals the Finnish; same structure.
+- Recomputed: lämpökerroin 3,25, suurin hyötysuhde 31,4 %, Q_ulko 20,9 kWh, kauden lämpökerroin 2,74, Delta U 0,74 kJ.
+- Terms and symbols (W_k, E_s, Q_sisälle, Q_ulko) as in the Finnish. check_i18n fi-easy: 0 errors.

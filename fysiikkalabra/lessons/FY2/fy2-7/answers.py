@@ -22,4 +22,14 @@ a["fy2-7-L2-04"] = P_send * 24                        # E = P t = 50,0 kW · 24 
 a["fy2-7-L3-01"] = round(600 / 0.91 - 600 / 0.94)     # needs 600 MWh; loss 9,0 % vs 6,0 %: 659,3 - 638,3 = 21,0 MWh saved
 a["fy2-7-L3-02"] = 500 * 0.910 - 520 * 0.850          # A: 500 MWh at 91,0 % -> 455,0; B: 520 MWh at 85,0 % -> 442,0; A delivers 13,0 MWh more
 a["fy2-7-L3-03"] = round(150 * 8760 / 1000 / 20)      # loss 150 kW for 8760 h = 1314 MWh; one house 20 MWh/year: 65,7 -> 66 houses
+# Exercise bank additions (L1-06 and L2-07 are multiple choice: no number)
+a["fy2-7-L1-07"] = (250 - 238) / 250 * 100            # sent 250 MWh, delivered 238 MWh: loss 12 MWh = 4,8 %
+a["fy2-7-L1-08"] = 800 - 728                          # power sent 800 kW, delivered 728 kW: loss power 72 kW
+a["fy2-7-L2-05"] = (2650 - 2395) / 2650 * 100         # sent 820+760+640+430 = 2650 MWh, delivered 745+692+577+381 = 2395 MWh: 255/2650 = 9,62 %
+a["fy2-7-L2-06"] = 0.25 / 4                           # loss power quarters when voltage doubles (16, 4,0, 1,0, 0,25 MW): 320 kV -> 0,0625 MW
+E_house = 0.50 * 2.4 * 5000                           # option A: walls 2,4 kW cut 50 % = 1,2 kW for 5000 h = 6000 kWh (B 3600, C 4500)
+a["fy2-7-L3-04"] = E_house / 0.910 / 1000             # plant must send 6,0 MWh : 0,910 = 6,593 MWh less
+E_in = 7 * 18 + 5 * 42 + 7 * 50 + 5 * 66              # energy sent in a day: 126 + 210 + 350 + 330 = 1016 MWh
+E_lo = 0.015 * 7 * 18 + 0.035 * 5 * 42 + 0.042 * 7 * 50 + 0.055 * 5 * 66   # losses 1,89 + 7,35 + 14,70 + 18,15 = 42,09 MWh
+a["fy2-7-L3-05"] = E_lo / E_in * 100                  # 42,09 / 1016 = 4,14 %
 print(json.dumps(a))

@@ -40,6 +40,58 @@
       "answer": 100000,
       "unit": "batteries",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-06",
+      "level": 1,
+      "text": "The energy of four foods is given in different units. Which of them contains the most energy?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "$0.0033\\,\\text{GJ}$",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "$2900\\,\\text{kJ}$",
+          "feedback": "This is $2.9\\,\\text{MJ}$, since $2900\\,\\text{kJ} = 2900 : 1000\\,\\text{MJ}$. It is less than $3.3\\,\\text{MJ}$."
+        },
+        {
+          "text": "$3.1\\,\\text{MJ}$",
+          "feedback": "This is $3.1\\,\\text{MJ}$, but $0.0033\\,\\text{GJ} = 3.3\\,\\text{MJ}$ is still greater. In a comparison, the energies are first converted to the same unit."
+        },
+        {
+          "text": "$3\\,000\\,000\\,\\text{J}$",
+          "feedback": "This has the greatest number, but the joule is a small unit: $3\\,000\\,000\\,\\text{J} = 3.0\\,\\text{MJ}$, which is less than $3.3\\,\\text{MJ}$."
+        },
+        {
+          "text": "$0.0033\\,\\text{GJ}$",
+          "feedback": "Correct: $0.0033\\,\\text{GJ} = 0.0033 \\cdot 1000\\,\\text{MJ} = 3.3\\,\\text{MJ}$, which is greater than $2.9\\,\\text{MJ}$, $3.1\\,\\text{MJ}$ and $3.0\\,\\text{MJ}$.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy2-2-L1-07",
+      "level": 1,
+      "text": "According to the packaging of a bag of nuts, $100\\,\\text{g}$ of nuts contains $2400\\,\\text{kJ}$ of energy. The bag contains $50\\,\\text{g}$ of nuts. How much energy do the nuts in the bag contain? Give the answer in kilojoules.",
+      "kind": [
+        "data"
+      ],
+      "answer": 1200,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L1-08",
+      "level": 1,
+      "text": "The thermal energy produced in a day by a small pellet boiler is $0.35\\,\\text{GJ}$. Give the energy in megajoules.",
+      "kind": [
+        "data"
+      ],
+      "answer": 350,
+      "unit": "MJ",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,95 @@
       "answer": 950,
       "unit": "bars",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L2-05",
+      "level": 2,
+      "text": "Breakfast consists of the foods in the table. Calculate the total energy of the breakfast in megajoules. What length of walk corresponds to that energy, when walking uses $220\\,\\text{kJ}$ of energy per kilometre? Give the answer in kilometres.",
+      "kind": [
+        "data"
+      ],
+      "answer": 7.3,
+      "unit": "km",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Foods of the breakfast and their energy",
+        "columns": [
+          "Food",
+          "$m\\,(\\text{g})$",
+          "$E_{100}\\,(\\text{kJ})$"
+        ],
+        "rows": [
+          [
+            "Porridge",
+            "250",
+            "300"
+          ],
+          [
+            "Banana",
+            "120",
+            "400"
+          ],
+          [
+            "Orange juice",
+            "200",
+            "190"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-2-L2-06",
+      "level": 2,
+      "text": "A student adds up the energy of breakfast, lunch and a snack: breakfast $0.85\\,\\text{MJ}$, lunch $1200\\,\\text{kJ}$ and snack $450\\,\\text{kJ}$. They write: “$0.85 + 1200 + 450 = 1650.85\\,\\text{kJ}$.” Find the error and calculate the correct total energy in megajoules. Explain why the student’s result cannot be correct.",
+      "kind": [
+        "error"
+      ],
+      "answer": 2.5,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-2-L2-07",
+      "level": 2,
+      "text": "In an example data set, a test subject walked distances of different lengths, and the energy $E$ used during the distance $s$ was read from an activity band. Draw a graph of the measurement points and fit a straight line to the points. Determine its slope and use it to calculate what length of walk corresponds in energy to a chocolate bar of $1.5\\,\\text{MJ}$. Give the answer in kilometres. What does the slope tell you?",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 6.0,
+      "unit": "km",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Energy used while walking",
+        "columns": [
+          "$s\\,(\\text{km})$",
+          "$E\\,(\\text{kJ})$"
+        ],
+        "rows": [
+          [
+            "1.0",
+            "262"
+          ],
+          [
+            "2.0",
+            "498"
+          ],
+          [
+            "3.0",
+            "771"
+          ],
+          [
+            "4.0",
+            "1003"
+          ],
+          [
+            "5.0",
+            "1262"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +241,96 @@
       "answer": 12000000.0,
       "unit": "l",
       "tolerance": 0.05
+    },
+    {
+      "id": "fy2-2-L3-04",
+      "level": 3,
+      "text": "The table shows the annual energy of four items, each given in the unit of its own field.\n\nConvert the energies to gigajoules, when $1\\,\\text{MWh} = 3.6\\,\\text{GJ}$, $1\\,\\text{toe} = 42\\,\\text{GJ}$ and $1\\,\\text{PJ} = 1\\,000\\,000\\,\\text{GJ}$. Put the items in order from smallest to greatest. How many times greater is the greatest energy than the smallest? Justify why the numbers of the table ($18$, $12$, $1200$ and $3.2$) give a misleading picture of the sizes of the energies.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 49000,
+      "unit": "times",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Annual energy in different units",
+        "columns": [
+          "Item",
+          "Energy",
+          "Unit"
+        ],
+        "rows": [
+          [
+            "Electricity consumption of a detached house",
+            "18",
+            "$\\text{MWh}$"
+          ],
+          [
+            "Heating oil of a farm",
+            "12",
+            "$\\text{toe}$"
+          ],
+          [
+            "Output of a small hydropower plant",
+            "1200",
+            "$\\text{MWh}$"
+          ],
+          [
+            "District heating of a city",
+            "3.2",
+            "$\\text{PJ}$"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-2-L3-05",
+      "level": 3,
+      "text": "The energy of a person’s food for a day is in the table. The person uses $10.2\\,\\text{MJ}$ a day on basal metabolism and everyday activities, and in addition walks $5.0\\,\\text{km}$ every day, which uses $250\\,\\text{kJ}$ of energy per kilometre.\n\nSurplus or missing energy is stored in the body as fat or used from fat, and one kilogram of fat contains $37\\,\\text{MJ}$ of chemical energy.\n\nHow much fat is used up in $30$ days, if the situation stays the same? Give the answer in kilograms. Using conservation of energy, justify what the fat that is used up turns into.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.89,
+      "unit": "kg",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Energy of a day’s food",
+        "columns": [
+          "Meal",
+          "Number",
+          "Unit"
+        ],
+        "rows": [
+          [
+            "Breakfast",
+            "1.4",
+            "$\\text{MJ}$"
+          ],
+          [
+            "Lunch",
+            "3200",
+            "$\\text{kJ}$"
+          ],
+          [
+            "Snack",
+            "650",
+            "$\\text{kJ}$"
+          ],
+          [
+            "Dinner",
+            "0.0042",
+            "$\\text{GJ}$"
+          ],
+          [
+            "Evening snack",
+            "900",
+            "$\\text{kJ}$"
+          ]
+        ]
+      }
     }
   ]
 }

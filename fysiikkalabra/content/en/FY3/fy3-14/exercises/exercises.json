@@ -19,7 +19,7 @@
     {
       "id": "fy3-14-L1-03",
       "level": 1,
-      "text": "Ice taken from the freezer is added to water in an insulated container. The bars of the graph show three quantities of heat for this mixture: the heat the water can give out as it cools to $0\\,{}^\\circ\\text{C}$, the heat needed to warm the ice to $0\\,{}^\\circ\\text{C}$, and the heat that melting all the ice would need. No heat is transferred to the container or the surroundings. First work out from the graph whether all the ice melts. How many grams of ice melt before thermal equilibrium? Give the answer in grams.",
+      "text": "Ice taken from the freezer is added to water in an insulated container.\n\nThe bars of the graph show three quantities of heat for this mixture: the heat the water can give out as it cools to $0\\,{}^\\circ\\text{C}$, the heat needed to warm the ice to $0\\,{}^\\circ\\text{C}$, and the heat that melting all the ice would need. No heat is transferred to the container or the surroundings.\n\nFirst work out from the graph whether all the ice melts. How many grams of ice melt before thermal equilibrium? Give the answer in grams.",
       "figure": "fy3-14/energy-bars",
       "answer": 60,
       "unit": "g",
@@ -40,6 +40,78 @@
       "answer": 5.0,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L1-06",
+      "level": 1,
+      "text": "A glass contains water and pieces of ice. The glass has been insulated for a long time, so thermal equilibrium has been reached and there is still ice left. What is the temperature of the contents of the glass?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Exactly $0\\,{}^\\circ\\text{C}$, because the heat is used for melting the ice.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Below $0\\,{}^\\circ\\text{C}$, because the cold ice cools the whole contents of the glass.",
+          "feedback": "As long as the glass holds both ice and water, the temperature cannot be lower than the melting temperature of ice. Water cooled by the ice would start to freeze, and freezing releases heat, which keeps the temperature at the melting temperature."
+        },
+        {
+          "text": "About halfway between the initial temperatures, because the temperatures even out on contact.",
+          "feedback": "The temperatures do not even out to an average, because part of the heat is used for melting the ice. The temperature does not change during melting, and in thermal equilibrium ice and water exist together only at the melting temperature of ice."
+        },
+        {
+          "text": "Above $0\\,{}^\\circ\\text{C}$, because the water is warmer than the ice.",
+          "feedback": "If the temperature were above the melting temperature, the ice would still melt and the temperature would fall because of the melting. In thermal equilibrium no heat is transferred, so there could be no ice left."
+        },
+        {
+          "text": "Exactly $0\\,{}^\\circ\\text{C}$, because the heat is used for melting the ice.",
+          "correct": true,
+          "feedback": "Correct: in thermal equilibrium ice and water exist together only at the melting temperature of ice, $0\\,{}^\\circ\\text{C}$. The heat is used for the change of state and does not change the temperature."
+        }
+      ]
+    },
+    {
+      "id": "fy3-14-L1-07",
+      "level": 1,
+      "text": "A glass contains $0.20\\,\\text{kg}$ of water at $25\\,{}^\\circ\\text{C}$. Ice is going to be added to the water. What is the greatest quantity of heat that the water can give out as it cools to $0\\,{}^\\circ\\text{C}$? Give the answer in kilojoules.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 21,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L1-08",
+      "level": 1,
+      "text": "Ice taken from the freezer is added to water in an insulated container. We want to know whether all the ice melts. Which comparison is made first?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "The heat given out by the water is compared with the heat needed to warm and melt the ice, because energy is conserved.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The mass of the water is compared with the mass of the ice, because the larger mass decides which substance wins and whether the ice melts.",
+          "feedback": "Comparing the masses alone is not enough. Melting depends on energy: the temperature of the water, the temperature of the ice and the latent heat of fusion affect how much ice melts."
+        },
+        {
+          "text": "The initial temperature of the water is compared with the initial temperature of the ice, because heat always moves from the warmer to the colder.",
+          "feedback": "Heat does move from the warmer to the colder, but comparing the temperatures does not tell whether the heat is enough to melt all the ice. For that the masses and the latent heat are needed too."
+        },
+        {
+          "text": "The heat given out by the water is compared with the heat needed to warm and melt the ice, because energy is conserved.",
+          "correct": true,
+          "feedback": "Correct: in an insulated container the heat given out by the water is used for warming and melting the ice. If there is enough heat to melt all the ice, the ice melts completely; otherwise some ice is left."
+        },
+        {
+          "text": "The specific heat capacity of the water is compared with the specific heat capacity of the ice, because a larger value melts more ice.",
+          "feedback": "Specific heat capacity tells about warming, not about melting. Melting needs the latent heat of fusion, and what matters is whether the heat given out by the water is enough."
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +146,96 @@
       "answer": 333,
       "unit": "kJ/kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L2-05",
+      "level": 2,
+      "text": "The specific latent heat of fusion of ice is determined by an experiment. Crushed ice at $0\\,{}^\\circ\\text{C}$ is heated in a funnel with a $150\\,\\text{W}$ heater. Melted water runs from the funnel into a measuring cylinder. The mass of the melted water is measured every minute (example data). Assume that all the energy of the heater melts ice.\n\na) Draw a $(t,\\ m)$ graph and draw the straight line that fits the points best. The line passes approximately through the points $(0\\,\\text{s};\\ 0\\,\\text{g})$ and $(300\\,\\text{s};\\ 133\\,\\text{g})$. Use the slope of the line to calculate the specific latent heat of fusion of ice.\n\nb) Compare the result with the table value $334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$ and name one reason for the difference.\n\nEnter the result of part a) in the answer box.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 338,
+      "unit": "kJ/kg",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Mass of melted water during heating (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$m\\,(\\text{g})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0.0"
+          ],
+          [
+            "60",
+            "26.9"
+          ],
+          [
+            "120",
+            "52.8"
+          ],
+          [
+            "180",
+            "81.1"
+          ],
+          [
+            "240",
+            "106.5"
+          ],
+          [
+            "300",
+            "132.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-14-L2-06",
+      "level": 2,
+      "text": "An insulated container holds $0.30\\,\\text{kg}$ of water at $20\\,{}^\\circ\\text{C}$. $0.15\\,\\text{kg}$ of ice at $-15\\,{}^\\circ\\text{C}$ is added to the water. A student works out how much ice melts and writes:\n\n“As the water cools to $0\\,{}^\\circ\\text{C}$ it gives out the heat $Q_\\text{w} = 25\\,140\\,\\text{J}$. Melting all the ice would need the heat $50\\,100\\,\\text{J}$, so not all the ice melts. The mass of the ice that melts is $m = \\dfrac{25\\,140\\,\\text{J}}{334\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}} = 75\\,\\text{g}$.”\n\na) What is the error in the calculation? Also check that the student’s conclusion “not all the ice melts” is correct.\n\nb) Calculate the mass of the melted ice correctly. Enter the result of part b) in grams in the answer box.",
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "answer": 61,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L2-07",
+      "level": 2,
+      "text": "A student measures the specific latent heat of fusion of ice with a calorimeter and gets $300\\,\\tfrac{\\text{kJ}}{\\text{kg}}$, although the table value is $334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$. The student calculated the result assuming that the mass of the ice had been weighed as $0.050\\,\\text{kg}$ and that all the ice that melted had been exactly at $0\\,{}^\\circ\\text{C}$. What explains why the result came out too small?",
+      "kind": [
+        "concept",
+        "experiment",
+        "error"
+      ],
+      "answer": "Melted water was sticking to the surface of the ice, so there was less melting ice than was weighed.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The ice was colder than $0\\,{}^\\circ\\text{C}$, so extra heat was used for warming it.",
+          "feedback": "This would change the result in the wrong direction. If the ice were colder, extra heat would be used for warming it, and the calculated latent heat would come out too large, not too small."
+        },
+        {
+          "text": "Melted water was sticking to the surface of the ice, so there was less melting ice than was weighed.",
+          "correct": true,
+          "feedback": "Correct: the water is weighed together with the ice, but it does not need to melt. The calculation assumes that all $0.050\\,\\text{kg}$ melted, although less heat was used, so the result comes out too small."
+        },
+        {
+          "text": "The final temperature was read too low, so the fall in the temperature of the water looked larger.",
+          "feedback": "This would change the result in the wrong direction. If the final temperature was read too low, the change in the temperature of the water $T_\\text{w} - T$ looked larger than it really was, and the calculated latent heat would come out too large, not too small."
+        },
+        {
+          "text": "The specific heat capacity of water is greater than that of ice, so the water gives out too little heat.",
+          "feedback": "The difference between the specific heat capacities is already included in the calculation and does not cause an error: the water gives out exactly the heat given by $c_\\text{w} m_\\text{w} \\Delta T$. The error comes from the mass or the temperature of the ice differing from what was assumed."
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +262,81 @@
       "answer": -3.5,
       "unit": "°C",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-14-L3-04",
+      "level": 3,
+      "text": "The specific latent heat of fusion of ice is determined with a calorimeter in two measurements (example data). Each calorimeter contains $0.200\\,\\text{kg}$ of water at $30.0\\,{}^\\circ\\text{C}$, and $0.0500\\,\\text{kg}$ of ice is dropped into the water. In measurement 1 the ice has been kept in a bath of melting ice and water. In measurement 2 the ice is taken straight from the freezer. The heat capacity of the calorimeter itself and heat losses are ignored, and all the ice melts.\n\na) Calculate the specific latent heat of fusion from each measurement, assuming that the temperature of the ice was $0\\,{}^\\circ\\text{C}$. Compare the results with the table value $334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$.\n\nb) What is the systematic reason for the difference in the results? Explain why the error is in exactly this direction.\n\nc) Correct the calculation of measurement 2 by taking the warming of the ice into account and calculate the specific latent heat again. Enter the result of part c) in the answer box.",
+      "kind": [
+        "data",
+        "error",
+        "experiment"
+      ],
+      "answer": 335,
+      "unit": "kJ/kg",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Calorimeter measurements (example data)",
+        "columns": [
+          "Measurement",
+          "$T_\\text{i}\\,({}^\\circ\\text{C})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.0",
+            "8.2"
+          ],
+          [
+            "2",
+            "−18.0",
+            "6.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-14-L3-05",
+      "level": 3,
+      "text": "An insulated container holds $0.300\\,\\text{kg}$ of water. $0.100\\,\\text{kg}$ of ice taken from the freezer, whose temperature is not known, is added to the water. The experiment is repeated with different initial temperatures $T_\\text{w}$, and the final temperature $T$ is measured in each experiment (example data). No heat is transferred to the container or the surroundings.\n\na) From which rows of the table can you see that ice was left? Justify your answer.\n\nb) Calculate the initial temperature of the ice from the row $T_\\text{w} = 40\\,{}^\\circ\\text{C}$.\n\nc) Calculate the lowest initial temperature of the water at which all the ice melts, and check whether the rows of the table agree with it. Enter the result of part c) in degrees Celsius in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 29,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Final temperature at different initial temperatures of the water (example data)",
+        "columns": [
+          "$T_\\text{w}\\,({}^\\circ\\text{C})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "10",
+            "0.0"
+          ],
+          [
+            "20",
+            "0.0"
+          ],
+          [
+            "30",
+            "0.6"
+          ],
+          [
+            "40",
+            "8.1"
+          ],
+          [
+            "60",
+            "23.1"
+          ]
+        ]
+      }
     }
   ]
 }

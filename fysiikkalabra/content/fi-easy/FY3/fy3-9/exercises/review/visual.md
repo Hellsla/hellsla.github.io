@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: e2fc4fcf6875633b
+CONTENT-HASH: 15c5b525fcb69a71
+Mode: full
+Round: 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none: no translation text needed changes)
 
 ## Polish
-- [Minor] saunapullo solution Järkevyys — "80-90 °C" is typed with a hyphen and outside the maths — use an en dash, "80–90 °C" (carried).
-- [Minor] paineilmapullo task text — "(1 bar = 100 kPa)" has the equals sign outside the maths between two separate formulas — set it as one formula, 1 bar = 100 kPa, in a single maths span.
-- [Minor] answer blocks — the answer appears twice (answer box and boxed VASTAUS in the solution); merge (shared pattern).
+- None.
 
 ## Checked
-- open-exercises L1-1280-3 (L1-02 end, L1-03 task and boyle-points graph: axes with units, five markers distinct, no curve, ruudukko readable), L2-1280-3 (L2 temperature task with "20 °C:ssa", fraction chains, table-reading task), L3-1280-3 (tyre task: inline "-20 °C:seen", "202 kPa:iin", boxed fraction rows well spaced).
-- Case endings after a colon render correctly in all opened tasks; the new inline-maths prose reads naturally and breaks cleanly.
+- Captures fy3-9-open-exercises-L2-1280-6 (L2-05 with table, en) and L3-1280-4 (fi-easy solution chain) opened; typography, units as inline maths, data table and solution display blocks render correctly in selkosuomi.
+- Number formatting in rendered maths and tables matches the language convention; no Finnish or English left over; no overflow seen.
+- Pure translation text change: no figures altered.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

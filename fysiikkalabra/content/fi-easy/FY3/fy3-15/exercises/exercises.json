@@ -40,6 +40,58 @@
       "answer": 90.0,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-06",
+      "level": 1,
+      "text": "Lauhdevoimalaitos ja yhteistuotantolaitos polttavat saman määrän samaa polttoainetta. Yhteistuotantolaitoksen kokonaishyötysuhde on silti selvästi suurempi. Mikä tämän selittää?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Lauhduttimen lämpö käytetään kaukolämpönä. Siksi suurempi osa energiasta tulee hyötykäyttöön.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Polttoaine vapauttaa yhteistuotannossa enemmän energiaa. Siksi sitä riittää sekä sähköön että lämpöön.",
+          "feedback": "Samasta polttoaineesta vapautuu aina sama energia, koska lämpöarvo on aineen ominaisuus. Ero syntyy siitä, kuinka suuri osa energiasta tulee hyötykäyttöön."
+        },
+        {
+          "text": "Turbiini muuttaa yhteistuotannossa suuremman osan lämmöstä sähköksi. Siksi hukkalämpöä jää vähemmän.",
+          "feedback": "Yhteistuotannossa sähköä saadaan yleensä vähemmän kuin lauhdevoimalaitoksessa, koska osa höyryn energiasta jää lämmöksi. Kokonaishyötysuhde on suurempi, koska myös tämä lämpö käytetään hyödyksi."
+        },
+        {
+          "text": "Kaukolämpöverkko lisää energiaa, kun vesi kiertää putkissa. Siksi ulos saadaan enemmän kuin sisään.",
+          "feedback": "Energiaa ei synny tyhjästä. Sähkö ja lämpö yhteensä eivät voi olla suurempia kuin polttoaineteho, joten $\\eta_\\text{kok} \\leq 100\\,\\%$."
+        },
+        {
+          "text": "Lauhduttimen lämpö käytetään kaukolämpönä. Siksi suurempi osa energiasta tulee hyötykäyttöön.",
+          "correct": true,
+          "feedback": "Oikein: lauhdevoimalaitoksessa lauhduttimen lämpö menee hukkalämpönä mereen. Yhteistuotannossa se lämmittää kaukolämpöverkon vettä. Hyötytehoksi lasketaan $P_\\text{s} + P_\\text{k}$."
+        }
+      ]
+    },
+    {
+      "id": "fy3-15-L1-07",
+      "level": 1,
+      "text": "Ydinvoimalan reaktorin lämpöteho on $1500\\,\\text{MW}$. Laitos tuottaa sähköverkkoon sähköä teholla $510\\,\\text{MW}$. Mikä on laitoksen sähköntuotannon hyötysuhde? Anna vastaus prosentteina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 34.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-08",
+      "level": 1,
+      "text": "Voimalaitoksen polttoaineteho on $500\\,\\text{MW}$. Laitos toimii tasaisella teholla koko vuorokauden. Kuinka paljon polttoaineen energiaa laitokseen tulee vuorokaudessa? Anna vastaus gigawattitunteina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 12.0,
+      "unit": "GWh",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,13 +126,102 @@
       "answer": 7.16,
       "unit": "t/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L2-05",
+      "level": 2,
+      "text": "Yhteistuotantolaitos tuottaa sähköä ja kaukolämpöä. Laitos kirjaa joka vuosi polttoaineeseen sitoutuneen energian sekä tuottamansa sähkön ja kaukolämmön (taulukko, esimerkkiaineisto). Vuosi 2023 oli kylmä.\n\na) Laske kunkin vuoden sähköhyötysuhde $\\eta_\\text{s}$.\n\nb) Laske kunkin vuoden kokonaishyötysuhde $\\eta_\\text{kok}$.\n\nc) Selitä, miksi sähköhyötysuhde pieneni mutta kokonaishyötysuhde kasvoi.\n\nKirjoita b)-kohdassa vuoden 2023 kokonaishyötysuhde vastauslaatikkoon prosentteina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 90.0,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Yhteistuotantolaitoksen vuosienergiat (esimerkkiaineisto)",
+        "columns": [
+          "Vuosi",
+          "$E_\\text{polttoaine}\\,(\\text{GWh})$",
+          "$E_\\text{sähkö}\\,(\\text{GWh})$",
+          "$E_\\text{kaukolämpö}\\,(\\text{GWh})$"
+        ],
+        "rows": [
+          [
+            "2021",
+            "2400",
+            "840",
+            "1190"
+          ],
+          [
+            "2022",
+            "2500",
+            "800",
+            "1410"
+          ],
+          [
+            "2023",
+            "2450",
+            "735",
+            "1470"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-15-L2-06",
+      "level": 2,
+      "text": "Taulukossa on kolmen voimalaitoksen polttoaine- tai reaktoriteho $P_0$ ja sähköteho $P_\\text{s}$ (esimerkkiaineisto). Kaikki laitokset ovat lauhdevoimalaitoksia. Loput energiasta siirtyy hukkalämpönä ympäristöön.\n\na) Laske kunkin laitoksen hyötysuhde.\n\nb) Laske kunkin laitoksen hukkalämmön teho $P_\\text{h}$.\n\nc) Onko heikoimman hyötysuhteen laitoksella myös suurin hukkalämmön teho? Perustele.\n\nKirjoita b)-kohdassa suurimman hukkalämmön teho vastauslaatikkoon megawatteina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1560,
+      "unit": "MW",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kolmen lauhdevoimalaitoksen tehot (esimerkkiaineisto)",
+        "columns": [
+          "Laitos",
+          "$P_0\\,(\\text{MW})$",
+          "$P_\\text{s}\\,(\\text{MW})$"
+        ],
+        "rows": [
+          [
+            "Ydinvoimala",
+            "2400",
+            "840"
+          ],
+          [
+            "Kivihiilivoimala",
+            "1200",
+            "432"
+          ],
+          [
+            "Biovoimala",
+            "350",
+            "112"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-15-L2-07",
+      "level": 2,
+      "text": "Lauhdevoimalaitoksen kattilan hyötysuhde on 0,920, höyrykierron 0,410 ja generaattorin 0,970.\n\nOppilaan ratkaisu: ”Hyötysuhteet lasketaan yhteen, koska kaikki vaiheet vaikuttavat tulokseen: $0{,}920 + 0{,}410 + 0{,}970 = 2{,}30$. Laitoksen hyötysuhde on siis $230\\,\\%$.”\n\na) Selitä, miksi oppilaan ratkaisu on väärä.\n\nb) Laske laitoksen oikea hyötysuhde.\n\nKirjoita b)-kohdan tulos vastauslaatikkoon prosentteina.",
+      "kind": [
+        "error"
+      ],
+      "answer": 36.6,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level3": [
     {
       "id": "fy3-15-L3-01",
       "level": 3,
-      "text": "Yhteistuotantolaitoksen polttoaineteho on $600\\,\\text{MW}$. Kun laitos tuottaa pelkkää sähköä, sähköteho on $240\\,\\text{MW}$. Kun kaikki lauhduttimen lämpö johdetaan kaukolämpöverkkoon, sähköteho on $180\\,\\text{MW}$ ja kaukolämpöteho $348\\,\\text{MW}$. Näiden tilojen välissä sähköteho pienenee lineaarisesti, kun kaukolämpöteho kasvaa. Kaukolämpöverkko tarvitsee nyt lämpöä $200\\,\\text{MW}$. Kuinka suuri on laitoksen sähköteho? Anna vastaus megawatteina. Laske myös laitoksen kokonaishyötysuhde. Perustele, miksi sähkön ja lämmön yhteenlaskettu hyötysuhde ei silti kerro, kumpi tuotantotapa on kannattavampi.",
+      "text": "Yhteistuotantolaitoksen polttoaineteho on $600\\,\\text{MW}$.\n\nKun laitos tuottaa pelkkää sähköä, sähköteho on $240\\,\\text{MW}$. Kun kaikki lauhduttimen lämpö johdetaan kaukolämpöverkkoon, sähköteho on $180\\,\\text{MW}$ ja kaukolämpöteho $348\\,\\text{MW}$. Näiden tilojen välissä sähköteho pienenee lineaarisesti, kun kaukolämpöteho kasvaa.\n\nKaukolämpöverkko tarvitsee nyt lämpöä $200\\,\\text{MW}$. Kuinka suuri on laitoksen sähköteho? Anna vastaus megawatteina.\n\nLaske myös laitoksen kokonaishyötysuhde. Perustele, miksi sähkön ja lämmön yhteenlaskettu hyötysuhde ei silti kerro, kumpi tuotantotapa on kannattavampi.",
       "answer": 206,
       "unit": "MW",
       "tolerance": 0.02
@@ -96,10 +237,64 @@
     {
       "id": "fy3-15-L3-03",
       "level": 3,
-      "text": "Talon lämmittämiseen tarvitaan $100\\,\\text{kWh}$ lämpöä. Sähkö tuotetaan lauhdevoimalaitoksessa, jonka hyötysuhde on 0,400. Voimajohdoissa ja muuntajissa menetetään $5{,}0\\,\\%$. Talon sähkömittariin tulee siis $0{,}950 \\cdot 0{,}400 = 0{,}380$ osa polttoaineen energiasta. Talossa on ilmalämpöpumppu, jonka lämpökerroin on 3,00. Kuinka paljon polttoaineen energiaa pumpun lämmitys vaatii voimalaitoksessa? Anna vastaus kilowattitunteina. Vertaa tulosta suoraan sähkölämmitykseen ja öljykattilaan (hyötysuhde 0,900). Päättele, mikä tavoista säästää polttoainetta eniten.",
+      "text": "Talon lämmittämiseen tarvitaan $100\\,\\text{kWh}$ lämpöä.\n\nSähkö tuotetaan lauhdevoimalaitoksessa, jonka hyötysuhde on 0,400. Voimajohdoissa ja muuntajissa menetetään $5{,}0\\,\\%$. Talon sähkömittariin tulee siis $0{,}950 \\cdot 0{,}400 = 0{,}380$ osa polttoaineen energiasta. Talossa on ilmalämpöpumppu, jonka lämpökerroin on 3,00.\n\nKuinka paljon polttoaineen energiaa pumpun lämmitys vaatii voimalaitoksessa? Anna vastaus kilowattitunteina.\n\nVertaa tulosta suoraan sähkölämmitykseen ja öljykattilaan (hyötysuhde 0,900). Päättele, mikä tavoista säästää polttoainetta eniten.",
       "answer": 87.7,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L3-04",
+      "level": 3,
+      "text": "Kaupunki tarvitsee sähköä $100\\,\\text{MW}$ ja kaukolämpöä $200\\,\\text{MW}$.\n\nVaihtoehto A: Sähkö tuotetaan lauhdevoimalaitoksessa, jonka hyötysuhde on 0,400. Lämpö tuotetaan lämpökattilassa, jonka hyötysuhde on 0,900.\n\nVaihtoehto B: Sähkö ja lämpö tuotetaan yhteistuotantolaitoksessa. Sen sähköhyötysuhde on 0,320. Sen kaukolämpöteho on 0,560-kertainen polttoaineteho. Laitoksen lämpö ei riitä koko kaukolämpötarpeeseen. Puuttuva osa tuotetaan samanlaisessa lämpökattilassa kuin vaihtoehdossa A.\n\nKaikki luvut ovat esimerkkiaineistoa.\n\na) Laske vaihtoehdon A yhteenlaskettu polttoaineteho.\n\nb) Laske vaihtoehdon B yhteenlaskettu polttoaineteho.\n\nc) Kuinka paljon pienempi polttoaineteho on vaihtoehdossa B kuin vaihtoehdossa A? Perustele, mistä säästö syntyy.\n\nKirjoita c)-kohdassa polttoainetehojen erotus vastauslaatikkoon megawatteina.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 132,
+      "unit": "MW",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-15-L3-05",
+      "level": 3,
+      "text": "Ydinvoimalan reaktorin lämpöteho on $2700\\,\\text{MW}$ ja sähköteho $900\\,\\text{MW}$. Lauhdutinta jäähdyttävän meriveden virtaama on koko ajan $38{,}0\\,\\text{t/s}$. Veden lämpötilat lauhduttimeen tullessa ja sieltä lähtiessä on mitattu neljänä kuukautena (taulukko, esimerkkiaineisto). Veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Laske veden lämpötilan nousu $\\Delta T$ kunakin kuukautena ja sen keskiarvo $\\Delta T_\\text{ka}$.\n\nb) Laske lauhduttimeen siirtyvä lämpöteho $P_\\text{L}$ keskiarvolla $\\Delta T_\\text{ka}$.\n\nc) Vertaa tulosta laitoksen hukkalämmön tehoon $P_\\text{h} = P_0 - P_\\text{s}$. Mihin loppu hukkalämmöstä siirtyy?\n\nd) Miksi merivettä lämmittävästä lauhduttimen lämmöstä ei voi enää tuottaa sähköä? Mikä vaikutus lämmöllä on lähiveteen heinäkuussa?\n\nKirjoita b)-kohdan tulos vastauslaatikkoon megawatteina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1716,
+      "unit": "MW",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Lauhdeveden lämpötilat (esimerkkiaineisto)",
+        "columns": [
+          "Kuukausi",
+          "$T_\\text{sisään}\\,({}^\\circ\\text{C})$",
+          "$T_\\text{ulos}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "Tammikuu",
+            "1.2",
+            "12.1"
+          ],
+          [
+            "Huhtikuu",
+            "3.5",
+            "14.2"
+          ],
+          [
+            "Heinäkuu",
+            "17.8",
+            "28.4"
+          ],
+          [
+            "Syyskuu",
+            "12.3",
+            "23.2"
+          ]
+        ]
+      }
     }
   ]
 }

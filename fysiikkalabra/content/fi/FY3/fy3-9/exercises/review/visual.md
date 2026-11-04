@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1a6dafb3bfca4e0e
+CONTENT-HASH: 757be2ef1f647d60
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L1-02, L1-04 — the answer unit "l" (litre) is plain sans and reads as a bar (teacher decision: small l stays) — only implication: "litraa" near the field helps.
-- [Minor] L2-03 — six paired measurements as a run-on semicolon list; a small (V, p) table would read better on a phone.
-- [Minor] L3-02 — answer labelled "Δp₂" for the gauge reading; "p_mittari" would match the question.
-- [Minor] Solutions L3-03 — "300-kertainen", "50 l" and similar mixed plain/maths numbers remain in places; set all as maths if touched again.
+- [Minor] solutions.md L2-05 Mallivastaus a) — yksi pitkä kappale täynnä lukuja — jaa astiat A ja B sekä celsius-vertailu omiksi virkkeiksi (celsius-vertailu on jo omalla rivillään; astiat A ja B voisi vielä erottaa). Carried over.
+- [Minor] solutions.md L2-05 ja L3-04 Järkevyys — pidä lauseke yhdellä rivillä ja käytä jakolaskussa kaksoispistettä. Carried over.
+- [Minor] L2-05, L2-07 — tehtävä pyytää piirtämään, mutta ratkaisu laskee suoraan taulukosta — lisää maininta "voit myös laskea suoraan". Carried over.
 
 ## Checked
-- Delta (numbers with units now inline LaTeX: "$101\,\text{kPa}$:n", "$30{,}0\,\text{ml}$", "$250{,}0\,\text{kPa}$:sta"): open-exercises-1280-1 (L1-01 text, full solution, sijoitus fraction), open-exercises-L3-1280-3 (L3 tyre task: Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys).
-- Case endings after maths natural; unit-in-prose and solution unit typography now match; no clipping, spacing between stacked rows clean.
+- Round 3 (delta, text-only). The round-2 Blocking is fixed: L2-05 a) reads "…ja perustele, miksi lämpötilan on oltava kelvineinä." with no double comma or stray clause; the sentence is clear student-facing Finnish.
+- Data caption now "Ilman paine astiassa A ja tilavuus astiassa B (esimerkkiaineisto)", consistent with the task text; no "pullossa A / ruiskussa B" left in L2-05.
+- L3-05 Mallivastaus c): stray note removed; layout unaffected.
+- No new captures taken (shots/ not regenerated; the change only shortens text). Round-2 captures L2-1280-7, -8, L3-1280-8 still show the tables and cards without overflow.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

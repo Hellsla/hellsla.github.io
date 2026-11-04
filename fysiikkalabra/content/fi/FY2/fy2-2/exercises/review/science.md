@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 108ac8263d630987
+CONTENT-HASH: 5c132ea0d45da19e
+Mode: full
+Round: 3
+
+Round 2 (previous): all three round-1 blocking items are fixed. L1-06 now has the correct option 0,0033 GJ = 3,3 MJ, which has the smallest numeric value, so picking the largest number (3 000 000 J = 3,0 MJ) is wrong. L1-07 now says "noin kahdeksasosa (12 %)". L2-06 is now about breakfast, lunch and a snack, and its check calls 2,5 MJ "noin neljäsosa päivän tarpeesta". The round-1 Polish was also taken up: L3-04 now says "kymmenien tuhansien", L1-08 has a `kind`, and L2-07 says "likimain verrannollinen".
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises/solutions.md fy2-2-L3-03 Järkevyys: "samasta ainemäärästä" — ainemäärä on mooleja; tarkoitus on massa. Fix: "samasta massasta".
-- figure tikapuut-kohteet (alt text / task L1-05): kuvaus sanoo asteikon ulottuvan "10 TJ:iin", mutta kuvan asteikko jatkuu kymmenpotenssiin 10^14 J (100 TJ). Fix: "100 TJ:iin" tai sama muotoilu kuin tehtävässä ("ja yli").
-- exercises.json fy2-2-L1-05: vastaus 100 000 on kuvasta luettu suuruusluokka (todellinen AA 2,5 Ah · 1,5 V = 13,5 kJ ja salama 1–5 GJ antaisivat noin 70 000–400 000); tehtävä sanoo jo "suuruusluokka", joten ok, mutta 2 % toleranssi on ahdas kuvan ulkopuolisille luvuille. Harkitse maininta "käytä kuvasta luettuja arvoja".
+- solutions.md L1-06 Mallivastaus — the last sentence ("ja jouleina ilmoitetulla energialla on suurin lukuarvo mutta pienin yksikkö") is right but hard to read. A shorter version: "Suurin lukuarvo (3 000 000 J) on energialtaan vasta kolmanneksi suurin."
+- solutions.md L2-07 Kuvaajan lukeminen — the fitted line's intercept (8 kJ) is not zero, which the model "likimain verrannollinen" leaves open. One sentence would close it, e.g. "pieni vakio johtuu lukematarkkuudesta".
 
 ## Checked
-- Recomputed all 12 answers in one script: 54000, 2,27, 140, 3, 1e5, 3,0, 1,28, 6,0, 954,5, 6 (5,64 ylös), 3194, 1,16e7; answers.py and exercises.json agree within tolerance, units right.
-- Rounding reasons fit the limiting datum (L1-04 whole MJ, L3 integer, others 2 s.f.).
-- L2-03: absorbed-light assumption stated in the task; E_lämpö = E_sähkö correct.
-- L3-02: 370 TJ (OL3 4300 MW_th · 86400 s = 372 TJ), 140 TJ electricity, rest to sea stated in task; CHP remark is a fair qualitative simplification.
-- L3-03: 370 TJ / 8,2e13 J/kg = 4,5 kg U-235; 32 MJ/l; no scope breach (no W=Fs, no chain efficiency product).
-- L1-05 figure: AA at 10^4 J, lightning 10^9 J, five intervals; teeveden kiehautus 84 kJ ~ 10^5 J right.
-- Data realistic: TNT 4,2 GJ/t, suklaa 22 MJ/kg, bensiini 32 MJ/l, Suomi 790 TJ/vrk, talo 72 GJ/a. Notation matches lesson. Hash start = end.
+- Recomputed in one script (scratchpad recompute_r2.py): L1-06 2,9 / 3,1 / 3,0 / 3,3 MJ, so exactly one option is correct; L1-07 1200 kJ (12 % of 10 MJ); L1-08 350 MJ; L2-05 7,32 km; L2-06 2,5 MJ; L2-07 5,99 km; L3-04 49 383, so 49 000, and 3,2·10⁶ / 70 ≈ 45 700 houses; L3-05 0,892 kg. All match the answer key and solutions.md.
+- Every L1-06 distractor's feedback has the right conversion, and the correct option's feedback lists the other three in MJ correctly.
+- L3-05: the 5 % tolerance covers the rounding of the 1,10 MJ deficit, and the note is right.
+- No new physics was added. The scope holds (no mgh, c·m·ΔT, work or force), and the invented data are marked as examples.
+- The hash was the same at the start and the end.
+- Round 3 (figure change only): the L1-05 figure "tikapuut-kohteet" shows the same content (scale 1 J … 1 TJ, three marked points, labels) and the caption "jokainen väli on 10-kertainen" only moved 5 units lower; it no longer touches the scale labels and stays inside the figure. No text, number, task, answer or solution changed, so the earlier science findings stand. The answer 100 000 (10⁹ J : 10⁴ J) still follows from the figure.

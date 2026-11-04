@@ -40,6 +40,77 @@
       "answer": 3.0,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L1-06",
+      "level": 1,
+      "text": "Laite A muuntaa energiaa tasaisesti teholla $1{,}0\\,\\text{kW}$ ja laite B teholla $2{,}0\\,\\text{kW}$. Mikä seuraavista väitteistä on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Laite B muuntaa energiaa joka sekunti kaksi kertaa niin paljon kuin laite A.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Laite B muuntaa energiaa joka sekunti kaksi kertaa niin paljon kuin laite A.",
+          "feedback": "Oikein. Teho kertoo, paljonko energiaa muuntuu tietyssä ajassa. Kaksinkertainen teho tarkoittaa siis kaksinkertaista energiaa joka sekunti.",
+          "correct": true
+        },
+        {
+          "text": "Laite B kuluttaa aina enemmän energiaa kuin laite A.",
+          "feedback": "Energia on teho kertaa aika. Jos laite A on päällä paljon pidempään kuin B, A voi kuluttaa enemmän energiaa, vaikka sen teho on pienempi."
+        },
+        {
+          "text": "Laite A kuluttaa tunnissa $1{,}0\\,\\text{kW}$ energiaa.",
+          "feedback": "Kilowatti on tehon yksikkö, ei energian. Tunnissa laite A kuluttaa energiaa $1{,}0\\,\\text{kWh}$."
+        },
+        {
+          "text": "Laitteiden teho kertoo, kuinka paljon energiaa ne ovat yhteensä kuluttaneet.",
+          "feedback": "Teho kertoo, kuinka nopeasti energiaa muuntuu. Se ei kerro kokonaisenergiaa. Kulutetun energian saa vasta, kun teho kerrotaan ajalla."
+        }
+      ]
+    },
+    {
+      "id": "fy2-3-L1-07",
+      "level": 1,
+      "text": "Laite muuntaa energiaa tasaisesti. Sen muuntama energia $E$ muodostaa ajan $t$ funktiona suoran, joka lähtee origosta. Mitä suoran jyrkkyys kertoo laitteesta?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Laitteen tehon.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Laitteen tehon.",
+          "feedback": "Oikein. Suoran jyrkkyys on $\\Delta E : \\Delta t$, ja se on määritelmän mukaan teho. Mitä jyrkempi suora, sitä suurempi teho.",
+          "correct": true
+        },
+        {
+          "text": "Laitteen kuluttaman kokonaisenergian.",
+          "feedback": "Kokonaisenergia luetaan kuvaajasta tietyllä hetkellä suoran korkeudesta. Sitä ei lueta jyrkkyydestä. Sama suora antaa eri energian eri hetkellä."
+        },
+        {
+          "text": "Laitteen käyttöajan.",
+          "feedback": "Käyttöaika on vaaka-akselilla. Jyrkkyys on energian muutos jaettuna ajan muutoksella. Se ei ole aika."
+        },
+        {
+          "text": "Laitteen painon.",
+          "feedback": "Kuvaajasta ei voi päätellä laitteen painoa. Jyrkkyys kertoo vain, kuinka nopeasti energiaa muuntuu."
+        }
+      ]
+    },
+    {
+      "id": "fy2-3-L1-08",
+      "level": 1,
+      "text": "Sähkömoottori muuntaa sähköenergiaa $3{,}6\\,\\text{MJ}$ ajassa $2{,}0\\,\\text{min}$. Laske moottorin keskiteho kilowatteina.",
+      "kind": [
+        "model"
+      ],
+      "answer": 30,
+      "unit": "kW",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,110 @@
       "answer": 79,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L2-05",
+      "level": 2,
+      "text": "Taulukossa on kotitalouden laitteiden teho ja keskimääräinen käyttöaika vuorokaudessa. Laske laitteiden vuorokaudessa kuluttama sähköenergia yhteensä kilowattitunteina. Mikä laite kuluttaa eniten energiaa, vaikka sen teho ei ole suurin?",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.96,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Laitteiden teho ja käyttöaika vuorokaudessa",
+        "columns": [
+          "Laite",
+          "$P\\,(\\text{W})$",
+          "$t\\,(\\text{h})$"
+        ],
+        "rows": [
+          [
+            "jääkaappi (kompressori käy)",
+            "100",
+            "8.0"
+          ],
+          [
+            "televisio",
+            "80",
+            "3.5"
+          ],
+          [
+            "kannettava tietokone",
+            "50",
+            "6.0"
+          ],
+          [
+            "vedenkeitin",
+            "2000",
+            "0.20"
+          ],
+          [
+            "hiustenkuivain",
+            "1800",
+            "0.10"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-3-L2-06",
+      "level": 2,
+      "text": "Oppilas ratkaisee tehtävän: ”Uunin teho on $2{,}0\\,\\text{kW}$, ja se on päällä $90\\,\\text{min}$. Energia on $E = P\\,t = 2{,}0\\,\\text{kW} \\cdot 90 = 180\\,\\text{kWh}$.” Tulos on epäuskottava. Etsi virhe ja laske uunin kuluttama energia oikein kilowattitunteina.",
+      "kind": [
+        "error"
+      ],
+      "answer": 3.0,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-3-L2-07",
+      "level": 2,
+      "text": "Kokeessa luettiin sähköenergiamittarin lukema $E$ kilowattitunteina $10\\,\\text{min}$ välein. Vain yksi lämmitin oli päällä. Piirrä mittauspisteistä kuvaaja. Sovita pisteisiin suora ja määritä sen kulmakertoimesta lämmittimen teho. Anna vastaus watteina. Miksi suora kulkee origon kautta, ja mitä sen jyrkkyys kertoo?",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 1800,
+      "unit": "W",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Mittarin lukema ajan funktiona (lukema nollattu alussa)",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$E\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0.00"
+          ],
+          [
+            "10",
+            "0.31"
+          ],
+          [
+            "20",
+            "0.59"
+          ],
+          [
+            "30",
+            "0.91"
+          ],
+          [
+            "40",
+            "1.19"
+          ],
+          [
+            "50",
+            "1.51"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +275,111 @@
       "answer": 100,
       "unit": "km",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy2-3-L3-04",
+      "level": 3,
+      "text": "Taulukossa on esimerkkiaineisto, joka on tehty Fingridin tuntitietojen kaltaiseksi. Siinä on Suomen sähkönkulutuksen ja kotimaisen sähköntuotannon keskiteho kunakin tuntina arkiaamuna. Kun kulutus ylittää tuotannon, erotus katetaan sähkön tuonnilla ja säätövoimalla.\n\nLaske aikavälillä, jolloin kulutus ylittää tuotannon, puuttuva sähköenergia yhteensä gigawattitunteina.\n\nPerustele kirjallisesti, milloin kulutus on suurimmillaan, kuinka suuri säätövoiman teho vähintään tarvitaan ja millainen voimalaitos sopii tehtävään.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 2.8,
+      "unit": "GWh",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Sähkön kulutus ja tuotanto, keskiteho tunnin aikana",
+        "columns": [
+          "Tunti (klo)",
+          "Kulutus $P_\\text{k}\\,(\\text{MW})$",
+          "Tuotanto $P_\\text{t}\\,(\\text{MW})$"
+        ],
+        "rows": [
+          [
+            "05–06",
+            "8400",
+            "8900"
+          ],
+          [
+            "06–07",
+            "9100",
+            "8900"
+          ],
+          [
+            "07–08",
+            "9900",
+            "9300"
+          ],
+          [
+            "08–09",
+            "10400",
+            "9600"
+          ],
+          [
+            "09–10",
+            "10600",
+            "9800"
+          ],
+          [
+            "10–11",
+            "10300",
+            "9900"
+          ],
+          [
+            "11–12",
+            "9800",
+            "9900"
+          ],
+          [
+            "12–13",
+            "9600",
+            "9800"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-3-L3-05",
+      "level": 3,
+      "text": "Vanhan jääkaapin sähkönkulutusta seurattiin mittaamalla, kuinka kauan kompressori käy ja kuinka kauan se on seis. Kompressorin teho käydessään on $100\\,\\text{W}$. Muita kulutuksia ei oteta huomioon.\n\nUuden jääkaapin vuosikulutus on $130\\,\\text{kWh}$. Sähkön hinta on $20\\,\\text{snt/kWh}$ eli $0{,}20\\,\\text{€/kWh}$, ja vuodessa on $8760\\,\\text{h}$.\n\nMääritä taulukon avulla vanhan jääkaapin keskiteho ja vuosikulutus. Laske, kuinka monta euroa vuodessa säästyy, kun vaihdetaan uuteen.\n\nArvioi kirjallisesti, kannattaako ostaa uusi jääkaappi, joka maksaa $600\\,\\text{€}$, pelkän sähkön säästön vuoksi. Mitkä oletukset vaikuttavat tulokseen?",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 43,
+      "unit": "€",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kompressorin käynti- ja seisonta-ajat neljän jakson aikana",
+        "columns": [
+          "Jakso",
+          "Kompressori käy $(\\text{min})$",
+          "Kompressori seis $(\\text{min})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "11.5",
+            "18.0"
+          ],
+          [
+            "2",
+            "12.0",
+            "18.5"
+          ],
+          [
+            "3",
+            "11.5",
+            "17.5"
+          ],
+          [
+            "4",
+            "12.0",
+            "18.0"
+          ]
+        ]
+      }
     }
   ]
 }
