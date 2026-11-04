@@ -40,6 +40,77 @@
       "answer": 35,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L1-06",
+      "level": 1,
+      "text": "Kahden auton nopeuksia kuvaavat $(t,v)$-kuvaajat on piirretty samaan koordinaatistoon. Autot ajavat samaa suoraa tietä samaan suuntaan, ja kuvaajat leikkaavat hetkellä $t = 4{,}0\\,\\text{s}$. Mitä leikkauspiste kertoo?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Autojen nopeudet ovat silloin yhtä suuret, mutta paikat voivat olla eri.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Autojen nopeudet ovat silloin yhtä suuret, mutta paikat voivat olla eri.",
+          "correct": true,
+          "feedback": "Oikein: $(t,v)$-kuvaajan leikkauspisteessä nopeudet ovat yhtä suuret. Paikat luetaan $(t,x)$-kuvaajasta."
+        },
+        {
+          "text": "Autot ovat silloin samassa paikassa, koska kuvaajat kohtaavat toisensa.",
+          "feedback": "Kuvaajat kohtaavat, kun nopeudet ovat yhtä suuret, eivät paikat. Kohtaamisen näkee vain $(t,x)$-kuvaajasta."
+        },
+        {
+          "text": "Autot ovat silloin kulkeneet saman matkan, koska ne ovat ajaneet yhtä kauan.",
+          "feedback": "Matka on nopeuskuvaajan alle jäävä pinta-ala, ja se riippuu koko aikaisemmasta liikkeestä, ei vain hetken nopeudesta."
+        },
+        {
+          "text": "Autojen kiihtyvyydet ovat silloin yhtä suuret, koska viivat ovat samalla korkeudella.",
+          "feedback": "Kiihtyvyys on nopeuskuvaajan kulmakerroin. Viivat voivat leikata, vaikka niiden kulmakertoimet ovat erisuuret."
+        }
+      ]
+    },
+    {
+      "id": "fy4-12-L1-07",
+      "level": 1,
+      "text": "Kärry A lähtee origosta hetkellä $t = 0$ ja liikkuu tasaisella nopeudella $4{,}0\\,\\text{m/s}$. Kärry B lähtee samasta paikasta $3{,}0\\,\\text{s}$ myöhemmin samaan suuntaan tasaisella nopeudella $7{,}0\\,\\text{m/s}$. Milloin kärry B saavuttaa kärryn A? Ilmoita aika A:n lähdöstä laskettuna.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 7.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L1-08",
+      "level": 1,
+      "text": "Kappale A kiihtyy levosta tasaisesti ja kappale B liikkuu samaan suuntaan tasaisella nopeudella. Mikä ehto ratkaisee, milloin A ohittaa B:n?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kappaleiden paikat ovat samalla hetkellä yhtä suuret, joten ne ovat samassa kohdassa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kappaleiden paikat ovat samalla hetkellä yhtä suuret, joten ne ovat samassa kohdassa.",
+          "correct": true,
+          "feedback": "Oikein: kohtaaminen tarkoittaa samaa paikkaa samalla hetkellä, ja siitä saadaan yhtälö paikkafunktioille."
+        },
+        {
+          "text": "Kappaleiden nopeudet ovat yhtä suuret, koska silloin ne kulkevat rinnakkain.",
+          "feedback": "Yhtä suuri nopeus ei tarkoita samaa paikkaa. Silloin etumatka on suurimmillaan tai pienimmillään, ei nolla."
+        },
+        {
+          "text": "Kappaleiden kiihtyvyydet ovat yhtä suuret, koska silloin liike on samanlaista.",
+          "feedback": "Kiihtyvyys kertoo nopeuden muutoksesta, ei kappaleiden paikasta, eikä B:llä ole kiihtyvyyttä lainkaan."
+        },
+        {
+          "text": "Kappaleiden kulkemat matkat ovat yhtä suuret, vaikka lähtöpaikat olisivat eri.",
+          "feedback": "Jos lähtöpaikat ovat eri, yhtä pitkä kuljettu matka ei tarkoita samaa paikkaa. Vertailtavia ovat paikat, ei matkat."
+        }
+      ]
     }
   ],
   "level2": [
@@ -75,6 +146,121 @@
       "answer": 3.75,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L2-05",
+      "level": 2,
+      "text": "Videoanalyysillä mitattiin kahden juoksijan paikat samalla suoralla radalla. Juoksija A juoksee positiiviseen suuntaan ja juoksija B häntä vastaan. Aineisto on esimerkkiaineisto, ja kumpikin juoksee tasaisella nopeudella.\n\nMääritä juoksijoiden nopeudet taulukon ensimmäisestä ja viimeisestä rivistä ja laske niiden avulla, milloin juoksijat kohtaavat.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 7.0,
+      "unit": "s",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Juoksijoiden paikat (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x_\\text{A}\\,(\\text{m})$",
+          "$x_\\text{B}\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "3.0",
+            "45.0"
+          ],
+          [
+            "1.0",
+            "6.6",
+            "42.4"
+          ],
+          [
+            "2.0",
+            "10.1",
+            "40.2"
+          ],
+          [
+            "3.0",
+            "13.4",
+            "37.4"
+          ],
+          [
+            "4.0",
+            "17.1",
+            "35.1"
+          ],
+          [
+            "5.0",
+            "20.4",
+            "32.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-12-L2-06",
+      "level": 2,
+      "text": "Oppilas ratkaisi seuraavan tehtävän. Tehtävä: pyöräilijä ajaa tasaisella nopeudella $4{,}0\\,\\text{m/s}$ ja on hetkellä $t = 0$ paikassa $12\\,\\text{m}$. Samalla hetkellä paikassa $0$ levossa oleva auto lähtee kiihtyen tasaisesti kiihtyvyydellä $2{,}0\\,\\text{m/s}^2$ samaan suuntaan. Milloin auto ohittaa pyöräilijän?\n\nOppilaan ratkaisu: ”Ohitushetkellä nopeudet ovat yhtä suuret, joten $a\\,t = v$ ja $t = 4{,}0 : 2{,}0 = 2{,}0\\,\\text{s}$.”\n\nSelitä, mikä oppilaan ratkaisussa on väärin, ja laske oikea ohitushetki. Vastauslaatikkoon tulee oikea ohitushetki.",
+      "kind": [
+        "error"
+      ],
+      "answer": 6.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L2-07",
+      "level": 2,
+      "text": "Kaksi kärryä lähtee samasta paikasta samaan suuntaan hetkellä $t = 0$. Taulukossa on niiden nopeudet (esimerkkiaineisto, jossa mittausvirhe on jätetty pois). Kärry A liikkuu tasaisesti ja kärry B kiihtyy tasaisesti.\n\nPiirrä $(t,v)$-kuvaajat samaan koordinaatistoon ja päättele kuvaajista, milloin kärryjen välimatka on suurimmillaan. Kuinka suuri välimatka silloin on?",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 36,
+      "unit": "m",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kärryjen nopeudet (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v_\\text{A}\\,(\\text{m/s})$",
+          "$v_\\text{B}\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "12.0",
+            "0.0"
+          ],
+          [
+            "2.0",
+            "12.0",
+            "4.0"
+          ],
+          [
+            "4.0",
+            "12.0",
+            "8.0"
+          ],
+          [
+            "6.0",
+            "12.0",
+            "12.0"
+          ],
+          [
+            "8.0",
+            "12.0",
+            "16.0"
+          ],
+          [
+            "10.0",
+            "12.0",
+            "20.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -101,6 +287,59 @@
       "answer": 10,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L3-04",
+      "level": 3,
+      "text": "Esimerkkitilanne: henkilöauto ja kuorma-auto ajavat samaan suuntaan nopeudella $20\\,\\text{m/s}$. Kuorma-auton pituus on $12\\,\\text{m}$ ja henkilöauton $5{,}0\\,\\text{m}$. Henkilöauton etupää on $10\\,\\text{m}$ kuorma-auton takapään takana.\n\nKuljettaja ohittaa kuorma-auton. Hän kiihdyttää tasaisesti kiihtyvyydellä $1{,}5\\,\\text{m/s}^2$, kunnes henkilöauton takapää on kuorma-auton etupään kohdalla ja hän palaa omalle kaistalleen. Kuorma-auto jatkaa tasaisella nopeudella. Vastakkaiselta kaistalta tulee auto nopeudella $20\\,\\text{m/s}$, ja sen etupää on ohituksen alkaessa matkan $d$ päässä henkilöauton etupäästä.\n\na) Kuinka kauan ohitus kestää ja kuinka pitkän matkan henkilöauto ajaa sinä aikana?\n\nb) Kuinka suuri etäisyyden $d$ on vähintään oltava, jotta autot eivät ole ohituksen päättyessä ehtineet kohdata? Onko $d = 300\\,\\text{m}$ riittävä, ja sopiiko henkilöauton loppunopeus nopeusrajoitukseen $80\\,\\text{km/h}$?\n\nVastauslaatikkoon tulee osan b) pienin etäisyys $d$.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 267,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L3-05",
+      "level": 3,
+      "text": "Esimerkkitilanne: pyöräilijä ajaa tasaisella nopeudella ja ohittaa liikennevalojen pysäytysviivan hetkellä $t = 0$. Videoanalyysillä mitattiin hänen paikkansa $x$ pysäytysviivalta laskettuna (taulukko, esimerkkiaineisto).\n\nPysäytysviivalla seisova auto lähtee liikkeelle $1{,}5\\,\\text{s}$ pyöräilijän ohituksen jälkeen ja kiihtyy tasaisesti kiihtyvyydellä $2{,}0\\,\\text{m/s}^2$ samaan suuntaan. Alueella on nopeusrajoitus $40\\,\\text{km/h}$.\n\na) Määritä pyöräilijän nopeus taulukosta.\n\nb) Missä paikassa auto ohittaa pyöräilijän ja milloin pyöräilijän ohituksesta laskien?\n\nc) Mikä on auton nopeus ohitushetkellä ja noudattaako malli nopeusrajoitusta? Miten rajoitus muuttaisi tulosta?\n\nVastauslaatikkoon tulee osan b) ohituspaikka.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 52,
+      "unit": "m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Pyöräilijän paikka (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "1.0",
+            "6.1"
+          ],
+          [
+            "2.0",
+            "11.9"
+          ],
+          [
+            "3.0",
+            "18.1"
+          ],
+          [
+            "4.0",
+            "23.9"
+          ]
+        ]
+      }
     }
   ]
 }

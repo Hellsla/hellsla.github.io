@@ -40,6 +40,77 @@
       "answer": 35,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L1-06",
+      "level": 1,
+      "text": "The $(t,v)$ graphs describing the velocities of two cars are drawn in the same coordinate system. The cars drive along the same straight road in the same direction, and the graphs intersect at the moment $t = 4.0\\,\\text{s}$. What does the intersection point tell?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The velocities of the cars are then equal, but the positions may differ.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The velocities of the cars are then equal, but the positions may differ.",
+          "correct": true,
+          "feedback": "Correct: at the intersection of $(t,v)$ graphs the velocities are equal. The positions are read from a $(t,x)$ graph."
+        },
+        {
+          "text": "The cars are then at the same place, because the graphs meet each other.",
+          "feedback": "The graphs meet when the velocities are equal, not the positions. A meeting can be seen only from a $(t,x)$ graph."
+        },
+        {
+          "text": "The cars have then travelled the same distance, because they have driven for the same time.",
+          "feedback": "The distance is the area under the velocity graph, and it depends on the whole earlier motion, not only on the velocity at one moment."
+        },
+        {
+          "text": "The accelerations of the cars are then equal, because the lines are at the same height.",
+          "feedback": "Acceleration is the slope of the velocity graph. The lines can intersect even though their slopes are different."
+        }
+      ]
+    },
+    {
+      "id": "fy4-12-L1-07",
+      "level": 1,
+      "text": "Cart A starts from the origin at the moment $t = 0$ and moves at a constant velocity of $4.0\\,\\text{m/s}$. Cart B starts from the same place $3.0\\,\\text{s}$ later in the same direction at a constant velocity of $7.0\\,\\text{m/s}$. When does cart B catch up with cart A? Give the time counted from the start of A.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 7.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L1-08",
+      "level": 1,
+      "text": "Object A accelerates uniformly from rest and object B moves in the same direction at a constant velocity. What condition determines when A passes B?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The positions of the objects are equal at the same moment, so they are at the same point.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The positions of the objects are equal at the same moment, so they are at the same point.",
+          "correct": true,
+          "feedback": "Correct: a meeting means the same place at the same moment, and it gives an equation for the position functions."
+        },
+        {
+          "text": "The velocities of the objects are equal, because then they travel side by side.",
+          "feedback": "Equal velocities do not mean the same place. Then the lead is at its greatest or smallest, not zero."
+        },
+        {
+          "text": "The accelerations of the objects are equal, because then the motion is similar.",
+          "feedback": "Acceleration tells the change of velocity, not the position of the objects, and B has no acceleration at all."
+        },
+        {
+          "text": "The distances travelled by the objects are equal, even if the starting places were different.",
+          "feedback": "If the starting places are different, an equal distance travelled does not mean the same place. What is compared is the positions, not the distances."
+        }
+      ]
     }
   ],
   "level2": [
@@ -75,6 +146,121 @@
       "answer": 3.75,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L2-05",
+      "level": 2,
+      "text": "The positions of two runners on the same straight track were measured by video analysis. Runner A runs in the positive direction and runner B runs toward A. The data are sample data, and both run at a constant velocity.\n\nDetermine the velocities of the runners from the first and the last row of the table and use them to calculate when the runners meet.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 7.0,
+      "unit": "s",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Positions of the runners (sample data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x_\\text{A}\\,(\\text{m})$",
+          "$x_\\text{B}\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "3.0",
+            "45.0"
+          ],
+          [
+            "1.0",
+            "6.6",
+            "42.4"
+          ],
+          [
+            "2.0",
+            "10.1",
+            "40.2"
+          ],
+          [
+            "3.0",
+            "13.4",
+            "37.4"
+          ],
+          [
+            "4.0",
+            "17.1",
+            "35.1"
+          ],
+          [
+            "5.0",
+            "20.4",
+            "32.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-12-L2-06",
+      "level": 2,
+      "text": "A student solved the following problem. Problem: a cyclist rides at a constant velocity of $4.0\\,\\text{m/s}$ and at the moment $t = 0$ is at the place $12\\,\\text{m}$. At the same moment a car at rest at the place $0$ starts accelerating uniformly with an acceleration of $2.0\\,\\text{m/s}^2$ in the same direction. When does the car pass the cyclist?\n\nThe student's solution: “At the moment of passing the velocities are equal, so $a\\,t = v$ and $t = 4.0 : 2.0 = 2.0\\,\\text{s}$.”\n\nExplain what is wrong in the student's solution and calculate the correct moment of passing. The answer box takes the correct moment of passing.",
+      "kind": [
+        "error"
+      ],
+      "answer": 6.0,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L2-07",
+      "level": 2,
+      "text": "Two carts start from the same place in the same direction at the moment $t = 0$. The table gives their velocities (sample data in which the measurement error has been left out). Cart A moves uniformly and cart B accelerates uniformly.\n\nDraw the $(t,v)$ graphs in the same coordinate system and deduce from the graphs when the distance between the carts is at its greatest. How large is the distance then?",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 36,
+      "unit": "m",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Velocities of the carts (sample data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v_\\text{A}\\,(\\text{m/s})$",
+          "$v_\\text{B}\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "12.0",
+            "0.0"
+          ],
+          [
+            "2.0",
+            "12.0",
+            "4.0"
+          ],
+          [
+            "4.0",
+            "12.0",
+            "8.0"
+          ],
+          [
+            "6.0",
+            "12.0",
+            "12.0"
+          ],
+          [
+            "8.0",
+            "12.0",
+            "16.0"
+          ],
+          [
+            "10.0",
+            "12.0",
+            "20.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -101,6 +287,59 @@
       "answer": 10,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L3-04",
+      "level": 3,
+      "text": "Sample situation: a car and a truck drive in the same direction at a velocity of $20\\,\\text{m/s}$. The length of the truck is $12\\,\\text{m}$ and that of the car $5.0\\,\\text{m}$. The front of the car is $10\\,\\text{m}$ behind the rear of the truck.\n\nThe driver passes the truck. The car accelerates uniformly with an acceleration of $1.5\\,\\text{m/s}^2$ until the rear of the car is level with the front of the truck, and then it returns to its own lane. The truck continues at a constant velocity. A car comes from the opposite lane at a velocity of $20\\,\\text{m/s}$, and when the passing begins its front is at a distance $d$ from the front of the car.\n\na) How long does the passing take and how far does the car drive during it?\n\nb) How large must the distance $d$ be at least so that the cars have not had time to meet by the end of the passing? Is $d = 300\\,\\text{m}$ sufficient, and does the final velocity of the car fit the speed limit $80\\,\\text{km/h}$?\n\nThe answer box takes the smallest distance $d$ of part b).",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 267,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-12-L3-05",
+      "level": 3,
+      "text": "Sample situation: a cyclist rides at a constant velocity and passes the stop line of a traffic light at the moment $t = 0$. The position $x$ of the cyclist, measured from the stop line, was measured by video analysis (table, sample data).\n\nA car standing at the stop line starts moving $1.5\\,\\text{s}$ after the cyclist has passed and accelerates uniformly with an acceleration of $2.0\\,\\text{m/s}^2$ in the same direction. The area has a speed limit of $40\\,\\text{km/h}$.\n\na) Determine the velocity of the cyclist from the table.\n\nb) At what place does the car pass the cyclist, and when, counted from the moment the cyclist passed?\n\nc) What is the velocity of the car at the moment of passing, and does the model obey the speed limit? How would the limit change the result?\n\nThe answer box takes the place of passing in part b).",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 52,
+      "unit": "m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Position of the cyclist (sample data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "1.0",
+            "6.1"
+          ],
+          [
+            "2.0",
+            "11.9"
+          ],
+          [
+            "3.0",
+            "18.1"
+          ],
+          [
+            "4.0",
+            "23.9"
+          ]
+        ]
+      }
     }
   ]
 }

@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 0d586f271feb04c1
+CONTENT-HASH: 4b38dc6f7110fbf5
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
+## Fixed
+- solutions.md L1-03 Reasonableness: 'a good $10 m' (literal of 'reilut') changed to 'a little over $10 m'.
+
 ## Polish
-- [Minor] L1-05 Reasonableness (`open-exercises-1280-6`) — a display chain breaks the sentence "The final velocity … is an ordinary speed" in two — put the conversion inline or finish the sentence before the chain.
-- [Minor] L3-03 task text and solution (`open-exercises-L3-1280-3`) — the coefficient units in `\tfrac{\text{m}}{\text{s}^2}` render very small in running text — acceptable, but `\text{m/s}^2` would read better.
-- [Minor] Reasonableness step, all levels — the English page shows it as plain text, while the Finnish pages put it in a highlighted callout — if the template allows, give the English label the same callout.
-- [Minor] Answer fields — the units "m/s²" next to the field are plain text — only the aria-label may stay plain, but the field is a UI element, so this is left to the teacher.
+(none)
 
 ## Checked
-- `open-exercises-1280-1` to `-6` (level 1), `open-exercises-L2-1280-1` to `-5`, `open-exercises-L3-1280-1` to `-4`, including the figures `ex-tv` and `ex-tangent` (axes, units, grid, tangent points readable) and every opened solution.
-- English wording, case and units in every task; no Finnish words in the tasks or solutions.
+- Opened the captures of L1-06..08 (1280-6..8), L2-05..07 and L3-04..05: tables, LaTeX, figure ex-tv and display blocks render as in fi, no clipped text or Finnish/English mixing.
+- Units in table headers and answer fields match fi.
 
 ## Scores
-illustrations 5 · typography 4 · English language 5 · accessibility 4
+illustrations 5 · typography 5 · language 5 · accessibility 4

@@ -27,4 +27,21 @@ a["fy4-2-L3-01"] = (8.00 + math.sqrt(8.00 ** 2 + 4 * 0.5 * g * 6.00)) / (2 * 0.5
 a["fy4-2-L3-02"] = 0.5 * 15.0 * 20.0 + 15.0 * 60.0 + 0.5 * 15.0 * 15.0   # 1162,5 m -> 1,16 km
 # fitted y = −4,86 t² + 3,10 t + 1,20 (up positive): v = 3,10 − 2 · 4,86 t, t = 0,500 s
 a["fy4-2-L3-03"] = 3.10 - 2 * 4.86 * 0.50             # −1,76 m/s (moving down)
+# Level 1 additions: multiple choice and graph area
+a["fy4-2-L1-06"] = "Länteen, koska nopeus pienenee ja kiihtyvyys osoittaa nopeuden muutoksen suuntaan."   # braking eastward: a points west
+a["fy4-2-L1-07"] = (2.0 + 7.0) / 2 * 5.0              # trapezoid under the (t,v) line: mean speed 4,5 m/s · 5,0 s = 22,5 m
+a["fy4-2-L1-08"] = "Kiven nopeus kasvaa koko ajan, joten matkaa ei saa laskea loppunopeudella vaan keskinopeudella."   # s = ½ v t, not v t
+# Level 2 additions: data and reasoning
+import numpy as np                                    # least-squares fits for the example data
+t5 = np.array([0, .5, 1, 1.5, 2, 2.5, 3.0]); v5 = np.array([0.21, 0.66, 1.02, 1.50, 1.86, 2.35, 2.71])
+a["fy4-2-L2-05"] = round(float(np.polyfit(t5, v5, 1)[0]), 2)   # slope of the (t,v) fit = 0,84 m/s²
+t6 = np.array([0, .4, .8, 1.2, 1.6, 2.0]); x6 = np.array([0, .10, .37, .80, 1.46, 2.32])
+a["fy4-2-L2-06"] = round(float(2 * np.polyfit(t6 ** 2, x6, 1)[0]), 2)   # x = ½ a t²: slope of (t²,x) is a/2 -> a = 1,15 m/s²
+a["fy4-2-L2-07"] = "Videoanalyysilla, koska nopeus saadaan monelta hetkeltä ja nähdään, onko $(t,v)$-kuvaaja suora."   # many points show linearity
+# Level 3 additions
+vv = [k / 3.6 for k in (0, 36, 62, 83, 100)]          # km/h -> m/s
+a["fy4-2-L3-04"] = round(sum((vv[i] + vv[i + 1]) / 2 * 2.0 for i in range(4)), 1)   # trapezoids, 2,0 s each: 128,3 m
+t7 = np.array([0, .5, 1, 1.5, 2, 2.5, 3, 3.5, 4]); v7 = np.array([2.41, 2.02, 1.62, 1.19, .82, .38, -.01, -.41, -.83])
+k7, b7 = np.polyfit(t7, v7, 1)                         # a = -0,81 m/s², v₀ = 2,42 m/s
+a["fy4-2-L3-05"] = round(float(b7 ** 2 / (2 * -k7)), 2)   # turning point v = 0: s = v₀² / (2|a|) = 3,61 m
 print(json.dumps(a))

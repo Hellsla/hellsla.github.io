@@ -40,6 +40,78 @@
       "answer": 180,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L1-06",
+      "level": 1,
+      "text": "Auto ajaa itään ja jarruttaa tasaisesti pysähtyäkseen. Mihin suuntaan auton kiihtyvyys osoittaa jarrutuksen aikana?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Länteen, koska nopeus pienenee ja kiihtyvyys osoittaa nopeuden muutoksen suuntaan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Länteen, koska nopeus pienenee ja kiihtyvyys osoittaa nopeuden muutoksen suuntaan.",
+          "feedback": "Oikein: nopeuden muutos $\\Delta v$ on jarrutuksessa vastakkainen kuin nopeus, ja kiihtyvyys osoittaa muutoksen suuntaan. Itään suunnatun nopeuden pienentyessä kiihtyvyys osoittaa siis länteen.",
+          "correct": true
+        },
+        {
+          "text": "Itään, koska auto liikkuu itään ja kiihtyvyys osoittaa aina liikkeen suuntaan.",
+          "feedback": "Kiihtyvyys ei osoita liikkeen vaan nopeuden muutoksen suuntaan. Jos kiihtyvyys osoittaisi itään, auton nopeus itään kasvaisi eikä auto hidastuisi."
+        },
+        {
+          "text": "Ei mihinkään, koska auto hidastuu eikä nopeus kasva, joten kiihtyvyys on nolla.",
+          "feedback": "Kiihtyvyys on nolla vain, kun nopeus ei muutu. Nopeuden pieneneminen on yhtä lailla nopeuden muutosta kuin sen kasvaminen, joten kiihtyvyys ei ole nolla."
+        },
+        {
+          "text": "Ylöspäin, koska pysähtyvään autoon vaikuttaa painon vastavoima, joka osoittaa ylöspäin.",
+          "feedback": "Jarrutus on vaakasuora liike, ja nopeus muuttuu vaakasuunnassa. Kiihtyvyys osoittaa nopeuden muutoksen suuntaan, joten pystysuunta ei tule kysymykseen."
+        }
+      ]
+    },
+    {
+      "id": "fy4-2-L1-07",
+      "level": 1,
+      "text": "Kuvaaja esittää potkulaudan nopeuden ajan funktiona hetkestä $0$ hetkeen $5{,}0\\,\\text{s}$. Potkulauta liikkuu koko ajan samaan suuntaan. Kuinka pitkän matkan potkulauta kulkee tänä aikana?",
+      "kind": [
+        "graph"
+      ],
+      "answer": 22.5,
+      "unit": "m",
+      "tolerance": 0.02,
+      "figure": "fy4-2/ex-tv"
+    },
+    {
+      "id": "fy4-2-L1-08",
+      "level": 1,
+      "text": "Oppilas ratkaisee tehtävän: kivi pudotetaan levosta kaivoon ja se putoaa pohjaan $2{,}0\\,\\text{s}$:ssa. Kuinka syvä kaivo on?\n\nOppilaan ratkaisu: nopeus hetkellä $2{,}0\\,\\text{s}$ on $v = g\\,t = 9{,}81\\,\\text{m/s}^2 \\cdot 2{,}0\\,\\text{s} \\approx 19{,}6\\,\\text{m/s}$. Syvyys on $s = v\\,t = 19{,}6\\,\\text{m/s} \\cdot 2{,}0\\,\\text{s} \\approx 39\\,\\text{m}$.\n\nMikä oppilaan ratkaisussa on virheellistä?",
+      "kind": [
+        "error"
+      ],
+      "answer": "Kiven nopeus kasvaa koko ajan, joten matkaa ei saa laskea loppunopeudella vaan keskinopeudella.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kiven nopeus kasvaa koko ajan, joten matkaa ei saa laskea loppunopeudella vaan keskinopeudella.",
+          "feedback": "Oikein: loppunopeus $19{,}6\\,\\text{m/s}$ on vasta putoamisen lopussa. Alussa nopeus on nolla, joten keskinopeus on $9{,}8\\,\\text{m/s}$ ja syvyys $\\tfrac{1}{2}\\,g\\,t^2 \\approx 20\\,\\text{m}$.",
+          "correct": true
+        },
+        {
+          "text": "Kiven kiihtyvyys ei ole vakio, joten nopeuden laskemiseen ei saa käyttää kaavaa $v = g\\,t$.",
+          "feedback": "Kun ilmanvastus on pieni, putoavan kiven kiihtyvyys on vakio $g$. Nopeuden laskenta oli siis oikein, vika on matkan laskennassa."
+        },
+        {
+          "text": "Putoamisaika pitää jakaa nopeudella, koska matka saadaan kaavalla $s = t : v$.",
+          "feedback": "Aika jaettuna nopeudella ei ole matka, vaan sen yksikkö olisi $\\text{s}^2/\\text{m}$. Tasaisessa liikkeessä matka on nopeuden ja ajan tulo."
+        },
+        {
+          "text": "Putoamiskiihtyvyys pitää kertoa kiven massalla, koska raskas kivi putoaa nopeammin kuin kevyt.",
+          "feedback": "Kun ilmanvastus on pieni, kaikki kappaleet putoavat samalla kiihtyvyydellä $g$, joten massa ei kuulu tehtävän laskuun."
+        }
+      ]
     }
   ],
   "level2": [
@@ -75,6 +147,131 @@
       "answer": 1.6095769830491427,
       "unit": "m/s²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L2-05",
+      "level": 2,
+      "text": "Kaltevalla tasolla alas vierivän kärryn nopeus mitattiin videoanalyysillä ajan funktiona. Aineisto on esimerkkiaineisto.\n\nPiirrä mittauspisteistä $(t,v)$-kuvaaja ja sovita pisteisiin suora. Määritä sen kulmakertoimesta kärryn kiihtyvyys. Anna vastaus yksikössä $\\text{m/s}^2$.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 0.84,
+      "unit": "m/s²",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Kärryn nopeus, esimerkkiaineisto",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.21"
+          ],
+          [
+            "0.5",
+            "0.66"
+          ],
+          [
+            "1.0",
+            "1.02"
+          ],
+          [
+            "1.5",
+            "1.50"
+          ],
+          [
+            "2.0",
+            "1.86"
+          ],
+          [
+            "2.5",
+            "2.35"
+          ],
+          [
+            "3.0",
+            "2.71"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-2-L2-06",
+      "level": 2,
+      "text": "Kärry lähtee levosta kaltevalla radalla, ja sen paikka $x$ lähtöpisteestä mitattiin ajan funktiona. Aineisto on esimerkkiaineisto.\n\nPaikka ei kasva suoraan ajan mukana, joten $(t,x)$-kuvaajaan ei voi sovittaa suoraa. Laske jokaiselle hetkelle $t^2$, piirrä $(t^2,x)$-kuvaaja ja sovita pisteisiin suora. Määritä kärryn kiihtyvyys suoran kulmakertoimesta. Anna vastaus yksikössä $\\text{m/s}^2$.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 1.15,
+      "unit": "m/s²",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Kärryn paikka, esimerkkiaineisto",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "0.4",
+            "0.10"
+          ],
+          [
+            "0.8",
+            "0.37"
+          ],
+          [
+            "1.2",
+            "0.80"
+          ],
+          [
+            "1.6",
+            "1.46"
+          ],
+          [
+            "2.0",
+            "2.32"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-2-L2-07",
+      "level": 2,
+      "text": "Kärry vierii kaltevalla radalla. Oppilas haluaa tutkia, onko kärryn kiihtyvyys koko matkan ajan vakio. Hänellä on kaksi mittaustapaa. Valoportit mittaavat ajan kahden portin välillä millisekunnin tarkkuudella. Videoanalyysi antaa kärryn paikan jokaisesta kuvasta, esimerkiksi kolmenkymmenen kerran sekunnissa.\n\nMillä mittaustavalla kysymykseen saadaan parempi vastaus?",
+      "kind": [
+        "experiment",
+        "reasoning"
+      ],
+      "answer": "Videoanalyysilla, koska nopeus saadaan monelta hetkeltä ja nähdään, onko $(t,v)$-kuvaaja suora.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Videoanalyysilla, koska nopeus saadaan monelta hetkeltä ja nähdään, onko $(t,v)$-kuvaaja suora.",
+          "feedback": "Oikein: vakiokiihtyvyydessä $(t,v)$-kuvaaja on suora. Monta mittauspistettä näyttää, pysyykö kulmakerroin samana koko matkan ajan, kun kaksi porttia antaisi vain yhden keskiarvon.",
+          "correct": true
+        },
+        {
+          "text": "Valoporteilla, koska ajanmittaus on tarkempi ja siksi kiihtyvyys voidaan päätellä yhdestä mittauksesta.",
+          "feedback": "Tarkka aika ei riitä: kahden portin välinen mittaus antaa vain yhden keskimääräisen arvon. Siitä ei voi nähdä, muuttuuko kiihtyvyys matkan aikana."
+        },
+        {
+          "text": "Valoporteilla, koska portit mittaavat nopeuden suoraan ja nopeudesta kiihtyvyys on aina vakio.",
+          "feedback": "Kiihtyvyys ei ole aina vakio, ja juuri se on tutkittava asia. Vakioisuutta ei voi olettaa, vaan se pitää päätellä mittauksista."
+        },
+        {
+          "text": "Kumpikaan ei kelpaa, koska kärryn kiihtyvyys voidaan määrittää vain laskemalla kaltevuuskulmasta.",
+          "feedback": "Kiihtyvyys voidaan määrittää suoraan mittauksista, esimerkiksi nopeuden muutoksesta ajassa. Laskeminen kulmasta ei kerro, mitä kärry todella tekee."
+        }
+      ]
     }
   ],
   "level3": [
@@ -97,10 +294,110 @@
     {
       "id": "fy4-2-L3-03",
       "level": 3,
-      "text": "Pallo heitetään suoraan ylöspäin, ja videoanalyysilla mitataan sen korkeus $y$ ajan funktiona. Mittauspisteisiin sovitettu toisen asteen polynomi on $y = -4{,}86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 + 3{,}10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1{,}20\\,\\text{m}$, kun suunta ylöspäin on positiivinen. Mikä on pallon nopeus hetkellä $t = 0{,}500\\,\\text{s}$? Anna vastaus etumerkkeineen.",
+      "text": "Pallo heitetään suoraan ylöspäin, ja videoanalyysillä mitataan sen korkeus $y$ ajan funktiona. Mittauspisteisiin sovitettu toisen asteen polynomi on $y = -4{,}86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 + 3{,}10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1{,}20\\,\\text{m}$, kun suunta ylöspäin on positiivinen. Mikä on pallon nopeus hetkellä $t = 0{,}500\\,\\text{s}$? Anna vastaus etumerkkeineen.",
       "answer": -1.7600000000000002,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-2-L3-04",
+      "level": 3,
+      "text": "Auton kiihdytystä tutkittiin suoralla tiellä. Auto lähti levosta, ja nopeus luettiin mittarista kahden sekunnin välein. Aineisto on esimerkkiaineisto.\n\na) Laske auton kiihtyvyys jokaisella kahden sekunnin aikavälillä. Päättele ja perustele, onko kiihtyvyys vakio.\n\nb) Laske auton ensimmäisten $8{,}0\\,\\text{s}$:n aikana kulkema matka lukemalla se $(t,v)$-kuvaajan alta. Oleta, että nopeus muuttuu tasaisesti jokaisella kahden sekunnin välillä. Anna matka vastauslaatikkoon metreinä ja arvioi, onko tulos hieman liian pieni vai liian suuri.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 128.3,
+      "unit": "m",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Auton nopeus, esimerkkiaineisto",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{km/h})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0"
+          ],
+          [
+            "2.0",
+            "36"
+          ],
+          [
+            "4.0",
+            "62"
+          ],
+          [
+            "6.0",
+            "83"
+          ],
+          [
+            "8.0",
+            "100"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-2-L3-05",
+      "level": 3,
+      "text": "Kärry työnnetään ylös kaltevaa ratatasoa, ja liikeanturi mittaa sen nopeuden $v$ ajan funktiona. Ylös radalla on positiivinen suunta, ja kitka on pieni. Aineisto on esimerkkiaineisto.\n\na) Piirrä $(t,v)$-kuvaaja ja sovita pisteisiin suora. Määritä kärryn kiihtyvyys ja alkunopeus ja perustele, että kiihtyvyys on vakio.\n\nb) Kuinka kauas lähtöpisteestä kärry ehtii ylöspäin ennen kääntymistä? Anna etäisyys vastauslaatikkoon metreinä.\n\nc) Kuvaile sanoin, millaisia ovat $(t,a)$- ja $(t,x)$-kuvaajat hetkestä $0$ hetkeen $5{,}0\\,\\text{s}$.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 3.61,
+      "unit": "m",
+      "tolerance": 0.06,
+      "data": {
+        "caption": "Kärryn nopeus radalla, esimerkkiaineisto",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "2.41"
+          ],
+          [
+            "0.5",
+            "2.02"
+          ],
+          [
+            "1.0",
+            "1.62"
+          ],
+          [
+            "1.5",
+            "1.19"
+          ],
+          [
+            "2.0",
+            "0.82"
+          ],
+          [
+            "2.5",
+            "0.38"
+          ],
+          [
+            "3.0",
+            "-0.01"
+          ],
+          [
+            "3.5",
+            "-0.41"
+          ],
+          [
+            "4.0",
+            "-0.83"
+          ]
+        ]
+      }
     }
   ]
 }

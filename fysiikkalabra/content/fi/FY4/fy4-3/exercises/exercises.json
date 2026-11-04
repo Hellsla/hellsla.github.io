@@ -39,6 +39,77 @@
       "answer": 6.4,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L1-06",
+      "level": 1,
+      "text": "Jääkiekko liukuu suoraan tasaisella nopeudella hyvin liukkaalla jäällä. Kitka ja ilmanvastus voidaan jättää huomiotta. Mikä väite kiekkoon vaikuttavista voimista on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kokonaisvoima on nolla, koska kiekon nopeus ja suunta pysyvät samoina",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Eteenpäin vaikuttaa voima, koska liike jatkuu vain voiman vaikutuksesta",
+          "feedback": "Voimaa tarvitaan liikkeen muuttamiseen, ei sen ylläpitämiseen. Jos kiekkoon ei vaikuta mikään vastus, se jatkaa samaa nopeutta ilman eteenpäin työntävää voimaa."
+        },
+        {
+          "text": "Eteenpäin vaikuttava voima pienenee koko ajan, koska lyönnin antama voima kuluu",
+          "feedback": "Lyönnin voima vaikuttaa kiekkoon vain sen ajan, kun maila koskee kiekkoon. Irrotuksen jälkeen kiekkoon ei vaikuta mikään eteenpäin työntävä voima, joka voisi kulua loppuun."
+        },
+        {
+          "text": "Kokonaisvoima on nolla, koska kiekon nopeus ja suunta pysyvät samoina",
+          "feedback": "Oikein: Newtonin ensimmäisen lain mukaan nopeus pysyy samana silloin ja vain silloin, kun kokonaisvoima on nolla. Paino ja jään tukivoima kumoavat toisensa.",
+          "correct": true
+        },
+        {
+          "text": "Kokonaisvoima osoittaa liikkeen suuntaan, koska kiekko liikkuu sinne",
+          "feedback": "Kokonaisvoima osoittaa nopeuden muutoksen suuntaan, ei nopeuden suuntaan. Jos kokonaisvoima osoittaisi liikkeen suuntaan, kiekko kiihtyisi eikä nopeus pysyisi samana."
+        }
+      ]
+    },
+    {
+      "id": "fy4-3-L1-07",
+      "level": 1,
+      "text": "Kirja lepää vaakasuoralla pöydällä. Pöytä tukee kirjaa ylöspäin suuntautuvalla voimalla. Mikä voima on tämän tukivoiman vastavoima Newtonin kolmannen lain mukaan?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kirjan voima pöytään, koska tukivoima on kirjan ja pöydän välinen vuorovaikutus",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kirjan paino, koska se on tukivoiman kanssa yhtä suuri ja vastakkaissuuntainen",
+          "feedback": "Paino ja tukivoima vaikuttavat samaan kappaleeseen eli kirjaan, joten ne eivät ole vuorovaikutuksen voimapari. Ne ovat yhtä suuret, koska kirja on levossa (ensimmäinen laki)."
+        },
+        {
+          "text": "Maan vetovoima kirjaan, koska se vaikuttaa kirjaan suoraan alaspäin",
+          "feedback": "Maan vetovoima kirjaan on kirjan paino, ja se kuuluu Maan ja kirjan väliseen vuorovaikutukseen. Tukivoiman aiheuttaja on pöytä, joten sen vastavoima kuuluu pöydän ja kirjan vuorovaikutukseen."
+        },
+        {
+          "text": "Pöydän paino lattiaan, koska pöytä tukee kirjaa ja lattia pöytää",
+          "feedback": "Pöydän paino vaikuttaa pöytään ja lattia tukee sitä, mutta tämä on toinen vuorovaikutus. Tukivoiman vastavoima on voima, jonka tukivoiman aiheuttaja saa osakseen kirjalta."
+        },
+        {
+          "text": "Kirjan voima pöytään, koska tukivoima on kirjan ja pöydän välinen vuorovaikutus",
+          "feedback": "Oikein: vastavoima on yhtä suuri ja vastakkaissuuntainen, ja se vaikuttaa toiseen osapuoleen eli pöytään. Kirja painaa pöytää alaspäin, ja pöytä työntää kirjaa ylöspäin.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy4-3-L1-08",
+      "level": 1,
+      "text": "Lapsi vetää kelkkaa köydellä vaakasuoraan ja kelkka liikkuu suoraan tasaisella nopeudella. Lapsi vetää köyttä $38\\,\\text{N}$:n voimalla. Köyden paino jätetään huomiotta. Kuinka suurella voimalla köysi vetää lasta?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 38,
+      "unit": "N",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +144,128 @@
       "answer": 8.9,
       "unit": "kN",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L2-05",
+      "level": 2,
+      "text": "Oppilas vetää köyttä, jonka toinen pää on kiinni seinässä. Voima-anturi A on oppilaan päässä ja voima-anturi B seinän päässä. Köysi on koko mittauksen ajan paikallaan, ja sen paino jätetään huomiotta. Taulukossa on esimerkkiaineisto antureiden lukemista.\n\nMillä voimalla seinä vetää köyttä sillä hetkellä, kun anturi A näyttää suurimman lukemansa? Perustele vastauksesi Newtonin laeilla. Vastauslaatikkoon tulee voiman suuruus.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 4.8,
+      "unit": "N",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Köyden päiden voima-anturien lukemat (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$F_\\text{A}\\,(\\text{N})$",
+          "$F_\\text{B}\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.9",
+            "1.0"
+          ],
+          [
+            "0.5",
+            "2.6",
+            "2.5"
+          ],
+          [
+            "1.0",
+            "4.8",
+            "4.8"
+          ],
+          [
+            "1.5",
+            "3.4",
+            "3.5"
+          ],
+          [
+            "2.0",
+            "1.2",
+            "1.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-3-L2-06",
+      "level": 2,
+      "text": "Ilmatyynyradalla kärry liukuu lähes kitkatta suoraan. Kärryyn ei kohdistu muuta vaakasuuntaista voimaa kuin hyvin pieni ilmanvastus. Liikeanturi mittasi kärryn nopeuden. Taulukossa on esimerkkiaineisto mittauksesta.\n\na) Perustele Newtonin ensimmäisellä lailla, miksi kärryyn ei tarvitse vaikuttaa eteenpäin työntävää voimaa.\n\nb) Laske nopeuden keskiarvo mittauksen ajalta ja sen avulla kärryn kulkema matka ajassa $6{,}0\\,\\text{s}$.\n\nVastauslaatikkoon tulee kohdan b) matka.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 3.0,
+      "unit": "m",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kärryn nopeus ilmatyynyradalla (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.51"
+          ],
+          [
+            "1.0",
+            "0.50"
+          ],
+          [
+            "2.0",
+            "0.49"
+          ],
+          [
+            "3.0",
+            "0.50"
+          ],
+          [
+            "4.0",
+            "0.51"
+          ],
+          [
+            "5.0",
+            "0.49"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-3-L2-07",
+      "level": 2,
+      "text": "Oppilas perustelee: \"Kun nyrkki osuu seinään, seinä työntää nyrkkiä takaisin yhtä suurella voimalla. Voimat ovat vastakkaiset ja yhtä suuret, joten ne kumoavat toisensa eikä nyrkin liike muutu.\"\n\nMikä virhe oppilaan päättelyssä on?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Voimat vaikuttavat eri kappaleisiin, joten seinän voima hidastaa nyrkkiä",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Voimat vaikuttavat eri kappaleisiin, joten seinän voima hidastaa nyrkkiä",
+          "feedback": "Oikein: nyrkin liikkeen kannalta ratkaisevat vain nyrkkiin vaikuttavat voimat, ja niihin kuuluu seinän voima. Nyrkin voima seinään vaikuttaa seinään eikä kumoa sitä.",
+          "correct": true
+        },
+        {
+          "text": "Seinän voima on pienempi, koska seinä ei liiku nyrkin osuessa",
+          "feedback": "Kolmas laki pätee liikkeestä riippumatta: voimat ovat aina yhtä suuret, vaikka toinen kappale pysyisi paikallaan. Virhe on siinä, mihin kappaleisiin voimat vaikuttavat."
+        },
+        {
+          "text": "Seinän voima syntyy vasta, kun nyrkki on jo pysähtynyt kokonaan",
+          "feedback": "Voima ja vastavoima syntyvät yhtä aikaa ja ovat yhtä suuret joka hetki. Seinän voima vaikuttaa nyrkkiin jo osuman aikana ja saa sen hidastumaan."
+        },
+        {
+          "text": "Nyrkin liikkeen ylläpitää sen oma voima, joka ei kumoudu seinän voimaan",
+          "feedback": "Liikkeen ylläpitämiseen ei tarvita voimaa. Nyrkin voima kohdistuu seinään, ei nyrkkiin, joten se ei voi pitää nyrkkiä liikkeessä tai kumota seinän voimaa."
+        }
+      ]
     }
   ],
   "level3": [
@@ -99,6 +292,76 @@
       "answer": 1.9,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L3-04",
+      "level": 3,
+      "text": "Hevonen vetää kärryä vaakasuoralla tiellä suoraan eteenpäin tasaisella nopeudella. Kärryyn vaikuttaa tien vierimisvastus $410\\,\\text{N}$ ja ilmanvastus $40\\,\\text{N}$. Hevoseen vaikuttaa ilmanvastus $30\\,\\text{N}$. Köyden massa jätetään huomiotta. Arvot ovat esimerkkiaineistoa.\n\na) Laske köyden voima kärryyn.\n\nb) Laske voima, jolla tie työntää hevosen kavioita eteenpäin. Hevosen jalat eivät liu'u tiellä.\n\nc) Oppilas sanoo: \"Hevonen vetää kärryä ja kärry vetää hevosta yhtä lujaa taaksepäin, joten ne kumoavat toisensa eikä mikään voi liikkua.\" Selitä, miksi päättely on väärä ja mikä saa hevosen ja kärryn liikkeelle.\n\nVastauslaatikkoon tulee kohdan b) voima.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 480,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-3-L3-05",
+      "level": 3,
+      "text": "Oppilas vetää kärryä vaakasuoralla pöydällä köydellä. Köyden päässä kädessä on voima-anturi, ja liikeanturi mittaa kärryn nopeuden. Köysi on koko ajan vaakasuorassa, ja sen massa jätetään huomiotta. Taulukossa on esimerkkiaineisto mittauksesta.\n\na) Päättele taulukosta, milloin kärryyn vaikuttavien voimien summa on nolla. Perustele ensimmäisellä lailla.\n\nb) Määritä pöydän kitkavoima kärryyn. Nopeuden ollessa vakio kärryn liikettä vastustavat voimat ovat yhtä suuria kuin köyden voima.\n\nc) Selitä, miksi anturin lukema on alussa suurempi kuin kitka, ja millä voimalla kärry vetää tällöin köyttä.\n\nVastauslaatikkoon tulee kohdan b) kitkavoima.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 3.4,
+      "unit": "N",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Kärryn nopeus ja köyden voima (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00",
+            "5.1"
+          ],
+          [
+            "1.0",
+            "0.31",
+            "4.6"
+          ],
+          [
+            "2.0",
+            "0.55",
+            "4.3"
+          ],
+          [
+            "3.0",
+            "0.69",
+            "3.6"
+          ],
+          [
+            "4.0",
+            "0.70",
+            "3.4"
+          ],
+          [
+            "5.0",
+            "0.71",
+            "3.5"
+          ],
+          [
+            "6.0",
+            "0.70",
+            "3.3"
+          ]
+        ]
+      }
     }
   ]
 }

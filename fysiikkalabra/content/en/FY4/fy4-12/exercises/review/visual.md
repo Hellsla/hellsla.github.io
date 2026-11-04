@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 0c997f4681a2fe30
+CONTENT-HASH: 7f3729c8c7c04c30
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- L2-05 text: "The data is sample data" -> "The data are sample data".
+- L3-04 text: "how long a distance does the car drive" -> "how far does the car drive"; "From the opposite lane comes a car" -> "A car comes from the opposite lane".
 
 ## Polish
-- [Minor] L3-01 solution (open-exercises-L3-1280-2) — "5.0 + 3.0 = 8.0 s" lacks units on the addends; write "5.0 s + 3.0 s".
-- [Minor] L1-04 graph (open-exercises-1280-5, contact #56) — gridlines every 10 m but time ticks every 2 s with 10 and 12 close together; fine, optional to add a minor grid at 5 s.
-- [Minor] Solution cards are long at 390 px (several screens each); acceptable because they are collapsed by default.
+(none)
 
 ## Checked
-- contact-5, contact-6 (every level with solutions open); open-exercises-1280-3 (L1-02/03 and solution layout), open-exercises-L3-1280-2 (L3-01/02).
-- Task graph (L1-04) and the two exercise figures checked for axis units, LaTeX labels, series colours; no Finnish words or overflow found on the English exercise pages; answer fields, Check buttons and hints legible; maths aligned, SI units upright with thin space.
-
-## Scores
-illustrations 4 · typography 5 · Finnish (English language quality) 5 · accessibility 4
+- Screenshots of the new tasks (e.g. open-exercises-L2-1280-7 / L3-1280-6) opened: maths aligned, SI units upright, nothing clipped or overflowing.
+- Data table captions and column headers match fi; decimals in tables use a point as in fi.

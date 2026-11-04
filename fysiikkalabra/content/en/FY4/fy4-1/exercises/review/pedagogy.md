@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 1af4e3cb9607f4ac
+CONTENT-HASH: cb1fc4f937523b50
 
 ## Blocking
 
+## Fixed
+- No text change needed.
+
 ## Polish
-- The Finnish needs no changes.
+- None.
 
 ## Checked
-Read exercises.json and solutions.md in full. Same three levels and the same order; same solution structure (Given, Find, Principle, [Reading the graph], Formula, Conversions, Substitution, Answer, Reasonableness) as the other en chapters. Smoothed three English sentences in the exercise texts ('covers 120 m in 15 s', 'How far does it travel', 'rides east along a straight road'). Names Aino and Eeva are kept. Distance versus displacement and speed versus velocity are kept apart as in the Finnish.
+Read all 8 new exercises and solutions in en against the Finnish: same task structure, same hints toward the method, same distractors and feedback (plain English, clear wording.). point Terms (displacement, distance, velocity, speed, slope, scale error, systematic error) are used consistently; no Finnish left; names Aino and Eeva kept.
