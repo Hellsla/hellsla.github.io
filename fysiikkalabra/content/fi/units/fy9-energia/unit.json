@@ -1,0 +1,14 @@
+{
+ "id": "fy9-energia",
+ "course": "FY9",
+ "chapter": 2,
+ "order": 1,
+ "title": "Energia, teho ja hyötysuhde",
+ "description": "Kerrataan FY2-moduulin energian säilyminen, teho, kilowattitunti, hyötysuhde, lämpöarvo ja energiantuotanto sekä voimalaitoksen energiaketju ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}

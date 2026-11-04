@@ -2232,6 +2232,7 @@
     "also": "Also accepted",
     "practise_more": "Practise more:",
     "practise_link": "{{competency}}, chapter {{chapter}}",
+    "skills": "Skills from the chapters:",
     "course_lead": "At the end of the module you can try whether you can apply what you have learned independently, in the style of the matriculation examination. The model answers and marking guides open after your own solution.",
     "course_count": "{{tasks}} · {{points}}",
     "kind_own": "own work",
@@ -2737,5 +2738,24 @@
       "h": "per hour",
       "min": "per minute"
     }
+  },
+  "mixer": {
+    "title": "Exam task mixer",
+    "description": "Every exam-style task of the site in one place: filter by module, competency or task type, or pick three at random.",
+    "lead": "Here are all the exam-style tasks of the site, from the modules' Apply independently sections and the lessons of the review course. Each task shows which chapters' skills it uses.",
+    "howto": "Choose a module, a competency or a task type, or pick three tasks at random as for an exam. Solve a task yourself first, then open the model answer and the scoring on its page.",
+    "filter_label": "Filter the tasks",
+    "search": "Search for a task",
+    "module": "Module",
+    "competency": "Competency",
+    "kind": "Task type",
+    "kind_calc": "calculation",
+    "kind_graph": "graph and data",
+    "kind_word": "explanation or plan",
+    "random": "Pick three tasks",
+    "count": "Showing {shown}/{total} tasks",
+    "none": "No task matches your choices. Choose Show all.",
+    "course_heading": "Exam task mixer",
+    "course_lead": "All exam-style tasks of the review lessons and the modules on one page, to filter or pick at random."
   }
 }
