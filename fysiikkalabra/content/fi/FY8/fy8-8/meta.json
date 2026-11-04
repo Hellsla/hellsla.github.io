@@ -1,0 +1,22 @@
+{
+  "id": "fy8-8",
+  "course": "FY8",
+  "title": "Atomiydin ja radioaktiivinen hajoaminen",
+  "goals": [
+    "LOPS FY8: atomiytimen rakenne ja muutokset, radioaktiivinen hajoaminen",
+    "Täsmennys: ytimen kvantittuneet energiatilat tunnistetaan gammahajoamisen spektrin kautta analogisesti atomin energiatasojen kanssa; alfa-, beeta- ja gammahajoaminen ja hajoamisyhtälöt"
+  ],
+  "prerequisites": [
+    "fy8-7"
+  ],
+  "glossary": [
+    "nukleoni",
+    "isotooppi",
+    "alfahajoaminen",
+    "beetahajoaminen",
+    "gammasäteily"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,6 +1,7 @@
 /* Lesson page behaviour. Everything runs in the browser and nothing is sent anywhere; only the student's own
    solutions in the solution editor are kept on this device (part 6, padstore.js).
-   1. Answer check: compares the typed number with data-answer within the relative data-tol.
+   1. Answer check: compares the typed number with data-answer (±2 %, one unit in the last digit data-step, or the
+      wider data-tol; 2–5 % away is "Lähellä") and tells other parts of the attempt (event fl:attempt).
    2. Progress bar: the stage navigation marks the stage on screen and the stages whose answers are all given.
    3. Worked example in stages: reveals the solution one stage at a time.
    4. Print: opens every collapsed block and every hidden stage while printing.
@@ -10,6 +11,8 @@
       "Kopioi ratkaisu" copies the solution for L'Math or Abitti. The editor is loaded on the first click only.
    7. Enlarge a figure (teacher 2026-11-03): a click on a figure or a photo, or its "Suurenna kuva" button, shows it
       larger in a dialog, never over the image's own pixels nor about 90 % of the window (sim-embed.js enlarges a simulation).
+   8. Try first (teacher 2026-11-03): Vastaus, Näytä ratkaisu and a model answer open only after the student's own
+      attempt (one Tarkista, or the tick "Olen tehnyt ratkaisun"); ?ratkaisut=1 opens them all for the teacher.
    Its messages come from the page's #fl-strings block (lang/<lang>.json "js", written in by build.py). */
 (() => {
   const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent); } catch (e) { return {}; } })();
@@ -18,26 +21,40 @@
     const t = s.trim().replace(/\s+/g, '').replace(/−/g, '-').replace(',', '.').replace(/[^\d.eE+-]/g, '');
     return t === '' ? NaN : Number(t);
   };
+  // A real attempt (teacher 2026-11-03, "opiskelija yrittää ensin itse"): Tarkista with a number, Vastaa with a choice,
+  // or the tick "Olen tehnyt ratkaisun". It opens what part 8 keeps locked; other scripts may listen too (the progress bar).
+  // detail: id (the task: exercise li, activity or Sovella task), kind check | choice | done, state ok | close | no | done.
+  const taskId = (el) => (el.closest('#exercises li[id], section.practice-task[id], .activity[id]') || {}).id || '';
+  const attempt = (el, kind, state) => el.dispatchEvent(new CustomEvent('fl:attempt', { bubbles: true, detail: { id: taskId(el), kind, state } }));
+  window.flAttempt = attempt;
+  // Accepted (teacher 2026-11-03): within 2 % of the model answer or one unit in its shown last significant digit
+  // (data-step), whichever is larger, or the task's own wider tolerance; 2–5 % away is "Lähellä", not a rejection.
   document.querySelectorAll('form.check').forEach((form) => {
     const input = form.querySelector('input'), out = form.querySelector('output');
-    const ans = Number(form.dataset.answer), tol = Number(form.dataset.tol);
+    const ans = Number(form.dataset.answer), tol = Number(form.dataset.tol), step = Number(form.dataset.step) || 0;
     let tries = 0;
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const v = parse(input.value);
-      if (Number.isNaN(v)) { out.textContent = msg('check_number'); out.dataset.state = 'hint'; return; }
+      if (!Number.isFinite(v)) { out.textContent = msg('check_number'); out.dataset.state = 'hint'; return; }
       tries += 1;
-      const limit = ans === 0 ? tol : tol * Math.abs(ans);
+      const a = Math.abs(ans);
+      const accept = ans === 0 ? Math.max(tol, step) : Math.max(0.02 * a, tol * a, step);
+      const near = ans === 0 ? 2.5 * accept : Math.max(0.05 * a, 1.25 * accept);
       const diff = Math.abs(v - ans);
-      if (diff <= limit) {
-        out.textContent = msg('correct'); out.dataset.state = 'ok'; form.classList.add('is-ok'); input.setAttribute('aria-invalid', 'false');
+      let state;
+      if (diff <= accept * (1 + 1e-9)) {
+        out.textContent = msg('correct'); state = 'ok'; form.classList.add('is-ok'); input.setAttribute('aria-invalid', 'false');
+      } else if (diff <= near * (1 + 1e-9)) {
+        out.textContent = msg('check_near'); state = 'close'; input.setAttribute('aria-invalid', 'false');
       } else {
         input.setAttribute('aria-invalid', 'true');
-        if (diff <= 3 * limit) out.textContent = msg('check_close');
-        else if (Math.abs(v) > 0 && (Math.abs(v / ans) > 900 || Math.abs(ans / v) > 900)) out.textContent = msg('check_magnitude');
+        if (Math.abs(v) > 0 && ans !== 0 && (Math.abs(v / ans) > 900 || Math.abs(ans / v) > 900)) out.textContent = msg('check_magnitude');
         else out.textContent = tries >= 2 ? msg('check_give_up') : msg('check_retry');
-        out.dataset.state = 'no';
+        state = 'no';
       }
+      out.dataset.state = state;
+      attempt(form, 'check', state);
     });
   });
 
@@ -201,8 +218,8 @@
   // (padstore.js, IndexedDB, loaded with the editor): saved a moment after each change, restored when the editor
   // opens, with export/import of a backup file and deletion. Nothing is sent anywhere.
   const PAD_TASKS = [   // [the task, its part the editor goes in, what it goes before]
-    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > form.check, :scope > details.answer')],   // write first, then check (teacher 2026-11-01)
-    ['section.practice-task[id]', (t) => t.querySelector(':scope > .task-card'), (box) => box.querySelector(':scope > details.reveal')],
+    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > form.check, :scope > label.solved, :scope > details.answer')],   // write first, then check (teacher 2026-11-01)
+    ['section.practice-task[id]', (t) => t.querySelector(':scope > .task-card'), (box) => box.querySelector(':scope > label.solved, :scope > details.reveal')],
   ];
   const HERE = document.currentScript ? document.currentScript.src : location.href;
   const VENDOR = new URL('vendor/digabi/', HERE).href;
@@ -440,6 +457,57 @@
     const el = e.target.closest && e.target.closest('svg.zoomable, img.zoomable');
     if (!el || !zoomable(el) || e.defaultPrevented || (window.getSelection && String(window.getSelection()).length)) return;
     openZoom(el, el.parentElement.querySelector(':scope > .zoom-btn'));
+  });
+
+  // 8. Try first (teacher 2026-11-03, "opiskelija yrittää ensin itse, ja ratkaisu avautuu vasta sen jälkeen"). A numeric
+  // task's Vastaus and Näytä ratkaisu open after one Tarkista with a number (part 1); a written task's answer, an
+  // exercise drawn on paper and a Sovella itsenäisesti task's model answer and rubric after the tick "Olen tehnyt
+  // ratkaisun" (label.solved; an inquiry explanation's own tick is in inquiry.js). A locked control stays in view,
+  // dimmed, with the reason beside it, so the student knows the solution is there. Nothing is kept: a reload locks
+  // again. ?ratkaisut=1 (the teacher) opens every lock on the page.
+  const OPEN_ALL = (() => { try { return new URLSearchParams(location.search).get('ratkaisut') === '1'; } catch (e) { return false; } })();
+  window.flSolutionsOpen = OPEN_ALL;
+  if (OPEN_ALL) {
+    const main = document.querySelector('main');
+    if (main) { const p = document.createElement('p'); p.className = 'teacher-note'; p.setAttribute('role', 'note'); p.textContent = msg('teacher_mode'); main.prepend(p); }
+  }
+  // a locked box's summary does not open it (a click, Enter or Space all arrive as a click); a script may still open it
+  document.addEventListener('click', (e) => {
+    const sum = e.target.closest && e.target.closest('summary');
+    if (sum && sum.parentElement.dataset.locked && sum.parentElement.firstElementChild === sum) e.preventDefault();
+  }, true);
+  const lockBoxes = (boxes, why) => {
+    if (OPEN_ALL || !boxes.length) return () => {};
+    const notes = [], buttons = [];
+    const note = () => { const n = document.createElement('span'); n.className = 'lock-note'; n.textContent = msg(why); notes.push(n); return n; };
+    const head = boxes[0].parentElement.querySelector(':scope > .ex-head');
+    boxes.forEach((d) => {
+      d.open = false; d.dataset.locked = '1';
+      const sum = d.querySelector(':scope > summary'); sum.setAttribute('aria-disabled', 'true');
+      const b = head && d.id ? head.querySelector(`button.ex-toggle[aria-controls="${CSS.escape(d.id)}"]`) : null;
+      if (b) { b.disabled = true; b.setAttribute('aria-disabled', 'true'); buttons.push(b); }
+      else sum.append(note());
+    });
+    if (buttons.length) { const n = note(); n.id = boxes[0].parentElement.id + '-lock'; head.append(n); buttons.forEach((b) => b.setAttribute('aria-describedby', n.id)); }
+    let open = false;
+    return () => {
+      if (open) return; open = true;
+      boxes.forEach((d) => { delete d.dataset.locked; d.querySelector(':scope > summary').removeAttribute('aria-disabled'); });
+      buttons.forEach((b) => { b.disabled = false; b.removeAttribute('aria-disabled'); b.removeAttribute('aria-describedby'); });
+      notes.forEach((n) => n.remove());
+    };
+  };
+  const boxesIn = (el) => [...el.querySelectorAll(':scope > details.answer, :scope > details.solution, :scope > details.reveal')];
+  document.querySelectorAll('form.check').forEach((form) => {
+    const box = form.closest('#exercises li[id]') || form.closest('.numeric');
+    if (!box) return;
+    const unlock = lockBoxes(boxesIn(box), 'locked_try');
+    form.addEventListener('fl:attempt', unlock);
+  });
+  document.querySelectorAll('label.solved').forEach((label) => {
+    const tick = label.querySelector('input'), unlock = lockBoxes(boxesIn(label.parentElement), 'locked_done');
+    if (OPEN_ALL) tick.checked = true;
+    tick.addEventListener('change', () => { if (tick.checked) { unlock(); attempt(label, 'done', 'done'); } });
   });
 
   let opened = [];

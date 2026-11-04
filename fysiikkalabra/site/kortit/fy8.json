@@ -429,7 +429,7 @@
   {
    "id": "fy8-tunneloituminen",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-7",
    "aihe": "fy8-kvanttimekaaninen-atomimalli",
    "kasite": "Tunneloituminen",
    "maaritelma": "Hiukkanen voi kvanttimekaniikan mukaan löytyä esteen toiselta puolelta ilman klassisesti riittävää energiaa."
@@ -445,7 +445,7 @@
   {
    "id": "fy8-puolijohde",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-6",
    "aihe": "fy8-kvantti-ilmioiden-sovellukset",
    "kasite": "Puolijohde",
    "maaritelma": "Aine, jonka sähkönjohtavuutta voidaan hallita esimerkiksi seostamalla tai lämpötilaa muuttamalla."
@@ -461,7 +461,7 @@
   {
    "id": "fy8-diodi",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-6",
    "aihe": "fy8-kvantti-ilmioiden-sovellukset",
    "kasite": "Diodi",
    "maaritelma": "Puolijohdekomponentti, joka johtaa sähkövirtaa pääasiassa yhteen suuntaan."
@@ -509,7 +509,7 @@
   {
    "id": "fy8-stimuloitu-emissio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-7",
    "aihe": "fy8-kvantti-ilmioiden-sovellukset",
    "kasite": "Stimuloitu emissio",
    "maaritelma": "Fotoni saa virittyneen atomin emittoimaan toisen samanenergisen fotonin."
@@ -517,7 +517,7 @@
   {
    "id": "fy8-laser",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-7",
    "aihe": "fy8-kvantti-ilmioiden-sovellukset",
    "kasite": "Laser",
    "maaritelma": "Tuottaa voimakkaasti suunnattua, lähes yksiväristä ja koherenttia sähkömagneettista säteilyä."
@@ -525,7 +525,7 @@
   {
    "id": "fy8-koherentti-valo",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-7",
    "aihe": "fy8-kvantti-ilmioiden-sovellukset",
    "kasite": "Koherentti valo",
    "maaritelma": "Aallot värähtelevät keskenään vakiossa vaihe-erossa."
@@ -599,7 +599,7 @@
   {
    "id": "fy8-nukleoni",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-atomiydin",
    "kasite": "Nukleoni",
    "maaritelma": "Yhteisnimitys atomiytimen protoneille ja neutroneille."
@@ -607,7 +607,7 @@
   {
    "id": "fy8-protoni",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-atomiydin",
    "kasite": "Protoni",
    "maaritelma": "Positiivisesti varautunut nukleoni, jonka lukumäärä määrää alkuaineen."
@@ -615,7 +615,7 @@
   {
    "id": "fy8-neutroni",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-atomiydin",
    "kasite": "Neutroni",
    "maaritelma": "Sähköisesti neutraali nukleoni, jonka lukumäärä voi vaihdella saman alkuaineen ytimissä."
@@ -623,7 +623,7 @@
   {
    "id": "fy8-jarjestysluku",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-atomiydin",
    "kasite": "Järjestysluku",
    "maaritelma": "Protonien lukumäärä atomiytimessä."
@@ -631,7 +631,7 @@
   {
    "id": "fy8-massaluku",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-atomiydin",
    "kasite": "Massaluku",
    "maaritelma": "Protonien ja neutronien yhteenlaskettu lukumäärä ytimessä."
@@ -639,7 +639,7 @@
   {
    "id": "fy8-isotooppi",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-atomiydin",
    "kasite": "Isotooppi",
    "maaritelma": "Saman alkuaineen ydin, jossa neutronien määrä poikkeaa toisesta saman alkuaineen ytimestä."
@@ -749,7 +749,7 @@
   {
    "id": "fy8-radioaktiivisuus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-radioaktiivisuus",
    "kasite": "Radioaktiivisuus",
    "maaritelma": "Epästabiili atomiydin muuttuu itsestään toiseksi ytimeksi ja lähettää samalla säteilyä."
@@ -757,7 +757,7 @@
   {
    "id": "fy8-emoydin",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-radioaktiivisuus",
    "kasite": "Emoydin",
    "maaritelma": "Radioaktiivisen hajoamisen alkuperäinen epästabiili ydin."
@@ -765,7 +765,7 @@
   {
    "id": "fy8-tytarydin",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-radioaktiivisuus",
    "kasite": "Tytärydin",
    "maaritelma": "Radioaktiivisessa hajoamisessa syntyvä uusi atomiydin."
@@ -773,7 +773,7 @@
   {
    "id": "fy8-alfahajoaminen",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-radioaktiivisuus",
    "kasite": "Alfahajoaminen",
    "maaritelma": "Ydin lähettää kaksi protonia ja kaksi neutronia sisältävän heliumytimen."
@@ -805,7 +805,7 @@
   {
    "id": "fy8-gammahajoaminen",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-radioaktiivisuus",
    "kasite": "Gammahajoaminen",
    "maaritelma": "Viritystilassa oleva ydin siirtyy alemmalle energiatasolle lähettämällä suurienergisen fotonin."
@@ -845,7 +845,7 @@
   {
    "id": "fy8-aktiivisuus",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-9",
    "aihe": "fy8-hajoamislaki",
    "kasite": "Aktiivisuus",
    "maaritelma": "Kertoo radioaktiivisten hajoamisten määrän sekunnissa."
@@ -853,7 +853,7 @@
   {
    "id": "fy8-becquerel",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-9",
    "aihe": "fy8-hajoamislaki",
    "kasite": "Becquerel",
    "maaritelma": "Aktiivisuuden yksikkö, jossa yksi becquerel tarkoittaa yhtä hajoamista sekunnissa."
@@ -861,7 +861,7 @@
   {
    "id": "fy8-hajoamisvakio",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-9",
    "aihe": "fy8-hajoamislaki",
    "kasite": "Hajoamisvakio",
    "maaritelma": "Kuvaa yksittäisen radioaktiivisen ytimen hajoamisen todennäköisyyttä aikayksikössä."
@@ -869,7 +869,7 @@
   {
    "id": "fy8-puoliintumisaika",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-9",
    "aihe": "fy8-hajoamislaki",
    "kasite": "Puoliintumisaika",
    "maaritelma": "Aika, jossa radioaktiivisten ydinten lukumäärä ja näytteen aktiivisuus pienenevät puoleen."
@@ -877,7 +877,7 @@
   {
    "id": "fy8-hajoamislaki",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-9",
    "aihe": "fy8-hajoamislaki",
    "kasite": "Hajoamislaki",
    "maaritelma": "Hajoamattomien ydinten lukumäärä pienenee eksponentiaalisesti.",
@@ -1015,7 +1015,7 @@
   {
    "id": "fy8-taustasateily",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-9",
    "aihe": "fy8-sateilyturvallisuus",
    "kasite": "Taustasäteily",
    "maaritelma": "Ympäristössä jatkuvasti esiintyvää ionisoivaa säteilyä luonnollisista ja keinotekoisista lähteistä."
