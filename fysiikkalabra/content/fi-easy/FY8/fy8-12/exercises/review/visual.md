@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 5a8b8e986aaa6340
+CONTENT-HASH: 6702b9fe339ccec9
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions L3-03 Kysytty — mentions an unasked question (carried).
-- [Minor] L3-03 Muunnokset — stray "." on its own line after "1 eV = 1,602 · 10^-19 J" (carried).
+(none)
 
 ## Checked
-- Own Playwright captures at 360 px, ?ratkaisut=1, details opened: every changed formula in fi (L1-05 Sijoitus) plus the en and fi-easy counterparts (contact sheets sheet-fi/en/fi-easy.png in scratchpad shots-fx/).
-- Result: h · \dfrac{c}{X} wraps after 'h ·' into a 2–4 row block, fraction bar intact, units upright with thin spaces, decimal comma; document scrollWidth = 360 = viewport, no clipped KaTeX.
-- LaTeX valid, no red KaTeX; hash at start and end the same.
+- Screenshots fy8-12-open-exercises-*.png (L1, L2, L3) of the new tasks: tables, captions, KaTeX and answer boxes render without clipping or red errors.
+- Numbers and units in text, tables and LaTeX use the decimal comma; units upright with thin spaces.
+- Table captions and column headings translated; units in headers kept as in fi.
+- check_i18n fi-easy: 0 errors; no stray Finnish text.
 
 ## Scores
 illustrations n/a · typography 5 · Finnish 5 · accessibility 4

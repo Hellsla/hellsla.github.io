@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 834a33482c603c4f
+CONTENT-HASH: cf9ab3e66ab0f8e4
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed: the text already matched fi in every number and was plain, short-sentenced selkosuomi)
 
 ## Polish
+(none)
 
 ## Checked
-- Delta round 2: the diff since the passed version is empty (hash unchanged); a fresh scripted comparison again finds every number of exercises.json and solutions.md equal to the Finnish source.
-- All numbers in exercises.json and solutions.md match the Finnish source exactly (scripted comparison).
-- Recomputed independently: L1-01 4,783 MeV, L1-02 178,4 MeV, L1-03 348,7, L1-04 3,269 MeV, L1-05 939,57 MeV.
-- L2-01 Δm = Pt/c² = 1,509 kg; L2-02 3,374·10^14 J/kg; L2-03 x = 2, 184,7 MeV; L2-04 4,106 %.
-- L3-01 4,526 kg/vrk; L3-02 26,73 MeV, 8,944·10^37 1/s (oletus kaiken energian säteilemisestä annettu); L3-03 2,402·10^5 a.
-- answers.py computes the right physics; values agree with exercises.json within tolerance.
-- Split sentences keep the reasoning: ΣZ conserved → electrons cancel, mass number gives x, Pu-239 note in L3-01, all assumptions still stated in the task text.
-- Symbolic solving first, conversions u → MeV → J → kg correct, rounding tied to the limiting datum.
-- Reasonableness checks are real estimates and cross-checks (82 GJ/g, 2^10 ≈ 1000, 1,041^40 ≈ 4,99).
-- Exercise brief (Kaava, Esimerkki, Yleinen virhekäsitys, Tiivistelmä) is consistent with the set: nothing outside it is needed.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, data cells and all numbers in texts, choices, feedback and solutions.md are identical (solutions.md number sequence 967 = 967).
+- Physics statements unchanged: moderator vs control rods vs coolant, Coulomb repulsion, binding energy per nucleon, decay-law extrapolation, Pu-239 half-life.
+- L2-05 k = 1.01248, N50 = 1860; L2-06 34.6 TWh; L3-04 250 a; L3-05 540 kg: values equal fi.
+- check_i18n.py fi-easy: 0 errors.

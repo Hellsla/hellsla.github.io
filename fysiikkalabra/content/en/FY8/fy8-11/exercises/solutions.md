@@ -136,7 +136,7 @@
 **Conversions:** $1\,\text{MeV} = 10^{6}\,\text{eV}$, so $200\,\text{MeV} = 200 \cdot 10^{6}\,\text{eV}$.
 **Substitution:** $Q = 200 \cdot 10^{6} \cdot 1\,\text{eV} = 200 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.204 \cdot 10^{-11}\,\text{J}$
 **Answer:** $3.20 \cdot 10^{-11}\,\text{J}$, that is, $3.20$ in the unit $10^{-11}\,\text{J}$, three significant figures like the conversion factor.
-**Reasonableness:** A gram of uranium-235 contains $2.56 \cdot 10^{21}$ nuclei, so if it underwent fission completely it would release $2.56 \cdot 10^{21} \cdot 3.2 \cdot 10^{-11}\,\text{J} \approx 8.2 \cdot 10^{10}\,\text{J}$. This is the number $82\,\text{GJ}$, so the energy of one fission is of the right order of magnitude.
+**Reasonableness:** A gram of uranium-235 contains $2.56 \cdot 10^{21}$ nuclei, so if it underwent fission completely it would release $2.56 \cdot 10^{21} \cdot 3.2 \cdot 10^{-11}\,\text{J} \approx 8.2 \cdot 10^{10}\,\text{J}$. This equals the figure $82\,\text{GJ}$ given in the chapter, so the energy of one fission is of the right order of magnitude.
 
 ## fy8-11-L2-05
 **Given:** numbers of neutrons $N_0 = 1000$ and $N_5 = 1064$ in generations $0$ and $5$, multiplication factor $k$ constant, generation asked $g = 50$
