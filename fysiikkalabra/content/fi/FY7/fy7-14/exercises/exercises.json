@@ -52,17 +52,17 @@
    "tolerance": 0.02,
    "choices": [
     {
-     "text": "Vain yläpinnassa, koska valo heijastuu siinä suuremman taitekertoimen ainetta vasten.",
-     "correct": true,
-     "feedback": "Oikein: ilmasta kalvoon (1,00 → 1,33) valo heijastuu suuremman taitekertoimen ainetta vasten, ja silloin aalto kääntyy. Siksi yläpinnan heijastus saa puolen aallonpituuden siirtymän."
+     "text": "Kummassakin pinnassa, koska kalvon molemmin puolin on täsmälleen samaa ainetta eli ilmaa.",
+     "feedback": "Aine kalvon molemmin puolin on sama, mutta kääntyminen riippuu rajapinnan taitekertoimista. Vain pinta, jossa taitekerroin kasvaa, kääntää aallon, ja pintoja on kaksi eri laatua."
     },
     {
      "text": "Vain alapinnassa, koska valo heijastuu siinä pienemmän taitekertoimen ainetta vasten.",
      "feedback": "Päinvastoin: kalvosta ilmaan (1,33 → 1,00) valo heijastuu pienemmän taitekertoimen ainetta vasten, ja silloin aalto ei käänny. Alapinnan heijastus säilyttää vaiheensa."
     },
     {
-     "text": "Kummassakin pinnassa, koska kalvon molemmin puolin on sama aine, ilma.",
-     "feedback": "Aine kalvon molemmin puolin on sama, mutta kääntyminen riippuu rajapinnan taitekertoimista. Vain pinta, jossa taitekerroin kasvaa, kääntää aallon, ja pintoja on kaksi eri laatua."
+     "text": "Vain yläpinnassa, koska valo heijastuu siinä suuremman taitekertoimen ainetta vasten.",
+     "correct": true,
+     "feedback": "Oikein: ilmasta kalvoon (1,00 → 1,33) valo heijastuu suuremman taitekertoimen ainetta vasten, ja silloin aalto kääntyy. Siksi yläpinnan heijastus saa puolen aallonpituuden siirtymän."
     },
     {
      "text": "Kummassakaan pinnassa, koska kohtisuoraan tuleva valo heijastuu suoraan takaisin.",
@@ -183,7 +183,7 @@
   {
    "id": "fy7-14-L2-07",
    "level": 2,
-   "text": "Taulukossa on esimerkkiaineisto: kameran linssin $\\text{MgF}_2$-pinnoitteen ($n = 1{,}38$) pinnasta heijastuvan valon osuus $R$ kohtisuorassa tulossa eri aallonpituuksilla. Pinnoite on mitoitettu heikentämään heijastusta mahdollisimman paljon yhdellä aallonpituudella ohuimman mahdollisen kerroksen ($k = 0$) mukaan.\n\na) Piirrä kuvaaja, jossa heijastuva osuus $R$ on aallonpituuden $\\lambda$ funktio, ja päättele taulukosta, mille aallonpituudelle pinnoite on mitoitettu. Kuinka paksu pinnoite on?\n\nb) Selitä kuvaajan muodon perusteella, miksi pinnoitettu linssi näyttää purppuraiselta.\n\nVastauslaatikkoon tulee a-kohdan pinnoitteen paksuus.",
+   "text": "Taulukossa on esimerkkiaineisto: kameran linssin lasin ($n = 1{,}52$) pinnalla on $\\text{MgF}_2$-pinnoite ($n = 1{,}38$), ja taulukossa on linssistä kohtisuorassa tulossa heijastuvan valon osuus $R$ eri aallonpituuksilla.\n\nPinnoite on ohuin mahdollinen ($k = 0$), ja se on mitoitettu heikentämään heijastusta mahdollisimman paljon yhdellä aallonpituudella.\n\na) Piirrä kuvaaja, jossa heijastuva osuus $R$ on aallonpituuden $\\lambda$ funktio, ja päättele taulukosta, mille aallonpituudelle pinnoite on mitoitettu. Kuinka paksu pinnoite on?\n\nb) Selitä kuvaajan muodon perusteella, miksi pinnoitettu linssi näyttää purppuraiselta.\n\nVastauslaatikkoon tulee a-kohdan pinnoitteen paksuus.",
    "kind": [
     "data",
     "graph",
@@ -201,35 +201,35 @@
     "rows": [
      [
       "420",
-      "2.9"
+      "1.84"
      ],
      [
       "460",
-      "2.0"
+      "1.48"
      ],
      [
       "500",
-      "1.4"
+      "1.31"
      ],
      [
       "540",
-      "1.1"
+      "1.26"
      ],
      [
       "580",
-      "1.3"
+      "1.30"
      ],
      [
       "620",
-      "1.7"
+      "1.39"
      ],
      [
       "660",
-      "2.4"
+      "1.50"
      ],
      [
       "700",
-      "3.2"
+      "1.64"
      ]
     ]
    }
@@ -263,7 +263,7 @@
   {
    "id": "fy7-14-L3-04",
    "level": 3,
-   "text": "Veden pinnalle on päässyt öljyä, ja se muodostaa ohuen kalvon. Taitekertoimet ovat ilmalla $1{,}00$, öljyllä $1{,}47$ ja vedellä $1{,}33$. Valkoinen valo tulee kohtisuoraan kalvoon. Eräässä kohdassa kalvon paksuus on $450\\,\\text{nm}$.\n\na) Päättele, kumpi pinnoista kääntää heijastuvan aallon, ja laske, mitkä näkyvän valon ($400$–$700\\,\\text{nm}$) aallonpituudet heijastuvat tässä kohdassa voimakkaimmin. Mikä väri kohta on?\n\nb) Kalvo ohenee, kun öljy leviää. Kuinka paksuksi kalvo on ohentunut, kun a-kohdassa voimakkaimmin heijastunut aallonpituus on ensimmäistä kertaa kokonaan kumoutunut?\n\nc) Selitä, miksi kalvo näyttää lähes mustalta kohdassa, jossa sen paksuus on paljon pienempi kuin näkyvän valon aallonpituus.\n\nVastauslaatikkoon tulee b-kohdan paksuus.",
+   "text": "Veden pinnalle on päässyt öljyä, ja se muodostaa ohuen kalvon. Taitekertoimet ovat ilmalla $1{,}00$, öljyllä $1{,}47$ ja vedellä $1{,}33$. Valkoinen valo tulee kohtisuoraan kalvoon. Eräässä kohdassa kalvon paksuus on $450\\,\\text{nm}$.\n\na) Päättele, kumpi pinnoista kääntää heijastuvan aallon, ja laske, mitkä näkyvän valon ($400$–$700\\,\\text{nm}$) aallonpituudet heijastuvat tässä kohdassa voimakkaimmin. Mikä väri kohta on?\n\nb) Kalvo ohenee, kun öljy leviää. Kuinka paksuksi kalvo on ohentunut, kun a-kohdassa voimakkaimmin heijastunut aallonpituus heijastuu ensimmäistä kertaa heikoimmin (heikentävä interferenssi, $2nd = k\\lambda$)?\n\nc) Selitä, miksi kalvo näyttää tummalta ja lähes värittömältä kohdassa, jossa sen paksuus on paljon pienempi kuin näkyvän valon aallonpituus.\n\nVastauslaatikkoon tulee b-kohdan paksuus.",
    "kind": [
     "model",
     "reasoning"
@@ -275,7 +275,7 @@
   {
    "id": "fy7-14-L3-05",
    "level": 3,
-   "text": "Kaksi samanlaista lasilevyä ($n = 1{,}52$) on asetettu päällekkäin niin, että ne koskettavat toisiaan toisesta reunastaan. Toisen reunan väliin on laitettu ohut folio, ja levyjen väliin jää ilmakiila ($n = 1{,}00$). Kiilaa valaistaan ylhäältä kohtisuoraan natriumlampun valolla, jonka aallonpituus on $589\\,\\text{nm}$. Ylhäältä katsottuna näkyy tasavälisiä tummia raitoja. Tarkastellaan vain ilmakerroksen kahdesta pinnasta heijastuvaa valoa.\n\nTaulukossa on tummien raitojen etäisyys $x$ koskettumisviivasta (esimerkkiaineisto). Raita $k = 0$ on koskettumisviiva. Folio on etäisyydellä $L = 80\\,\\text{mm}$ koskettumisviivasta.\n\na) Päättele, kumpi ilmakerroksen pinnoista kääntää heijastuvan aallon, ja perustele, miksi koskettumisviiva on tumma.\n\nb) Piirrä kuvaaja, jossa raidan etäisyys $x$ on numeron $k$ funktio, ja sovita pisteisiin suora. Määritä raitojen väli $\\Delta x$. Kuinka paljon ilmakerroksen paksuus kasvaa raidasta seuraavaan?\n\nc) Kuinka paksu folio on? Anna vastaus mikrometreinä.\n\nVastauslaatikkoon tulee c-kohdan paksuus.",
+   "text": "Kaksi samanlaista lasilevyä ($n = 1{,}52$) on asetettu päällekkäin niin, että ne koskettavat toisiaan toisesta reunastaan. Toisen reunan väliin on laitettu ohut folio, ja levyjen väliin jää ilmakiila ($n = 1{,}00$).\n\nKiilaa valaistaan ylhäältä kohtisuoraan natriumlampun valolla, jonka aallonpituus on $589\\,\\text{nm}$. Ylhäältä katsottuna näkyy tasavälisiä tummia raitoja. Tarkastellaan vain ilmakerroksen kahdesta pinnasta heijastuvaa valoa.\n\nTaulukossa on tummien raitojen etäisyys $x$ koskettumisviivasta (esimerkkiaineisto). Raita $k = 0$ on koskettumisviiva. Folio on etäisyydellä $L = 80\\,\\text{mm}$ koskettumisviivasta.\n\na) Päättele, kumpi ilmakerroksen pinnoista kääntää heijastuvan aallon, ja perustele, miksi koskettumisviiva on tumma.\n\nb) Piirrä kuvaaja, jossa raidan etäisyys $x$ on kertaluvun (raidan järjestysluvun) $k$ funktio, ja sovita pisteisiin suora. Määritä raitojen väli $\\Delta x$. Kuinka paljon ilmakerroksen paksuus kasvaa raidasta seuraavaan?\n\nc) Kuinka paksu folio on? Anna vastaus mikrometreinä.\n\nVastauslaatikkoon tulee c-kohdan paksuus.",
    "kind": [
     "data",
     "graph",
