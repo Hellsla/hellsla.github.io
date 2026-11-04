@@ -1,16 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 3234dc70c5ccf41b
+VERDICT: PASS
+CONTENT-HASH: d01b35fa24c40ba7
+Round: 2
 
 ## Blocking
-- **A (7 assessment correctness, 6 consistency): fy8-2-L3-04, part b) and the solution's Sijoitus.** The five lines (3,90; 2,80; 2,40; 1,50; 1,30 eV) fit two level schemes, not one. The solution's is 1,10/2,40/3,90 eV; its mirror 1,50/2,80/3,90 eV (missing line E3 − E2 = 1,10 eV) fits equally well. Both give the same sixth line, 1127 nm, so the answer box is right. But part b) asks the student to "päättele viritystilojen energiat", and the solution presents its diagram as the only deduction ("Pari 2,40 + 1,50 on E2 ja E3 − E2 … joten se on puuttuva viiva E1"). A student who draws the equally valid mirror diagram is marked wrong. **Fix (either):** (1) add one datum that breaks the symmetry to the task text, for example "Kylmä kaasu absorboi viivat 318 nm ja 517 nm" or "viiva D (827 nm) päättyy viritystilalle 2,40 eV"; or (2) keep the data and state in the solution (and in part b) that two mirror-image diagrams fit, show both, and add that the sixth line is 1,10 eV in either case.
 
 ## Polish
-- L1-06 correct option and Periaate: "kylmän kaasun" → "viileämmän kaasun". Dark lines need the gas to be cooler than the source behind it, not cold.
-- L2-06 a): the Ca line 393,4 nm is from ionised calcium (Ca II). Optionally add "(kalsiumioni)".
+- solutions.md:181 (L3-05 Kaava) — the new part d) uses $E_\text{fl} = E_\text{abs} - Q$ and $\lambda_\text{fl} = \tfrac{hc}{E_\text{fl}}$, but Kaava lists only $Q$ and $p$. — Add "ja kohdassa d) $\lambda_\text{fl} = \dfrac{hc}{E_\text{abs} - Q}$" to Kaava, so the unknown is solved symbolically before Sijoitus.
+- answers.py (L3-05) — part d) (477 nm) is not checked anywhere, because the answer box is b). — Optionally add a comment line `# d) hc/(hc/400 nm - 0,50 eV) = 476,9 nm -> 477 nm`.
 
 ## Checked
-- Recomputed every new answer in one script with my own formulas: L2-05 2,2698 eV (Hg lines within 0,2 nm) ✓; L2-06 hc/λ = 2,551 eV → −0,849 eV = n = 4 ✓, and lines A, B, C, D, F, G identified with E (527,1 nm) left unidentified ✓; L2-07 least-squares λ = 12,01 x + 299,6 → 496,6 nm, residuals ≤ 0,76 nm ✓; L3-04 brute-force search of all level triples, both schemes give 1,10 eV → 1127 nm ✓; L3-05 heat shares A 18,9 %, B 22,1 %, C 15,1 % → B 22,1 % ✓, and the energies agree with the solution ✓.
-- MC L1-06 and L1-08: exactly one correct option, and each distractor is wrong with correct feedback ✓.
-- The data are labelled esimerkkiaineisto, scope is FY8, and every new task has a complete solution. The levels fit and the tasks follow the plan in docs/exercise-bank/FY8.md.
-- Spot-checked the render at 1280 px (L3-04 table and solution): clean.
-- Content hash 3234dc70c5ccf41b is the same at the start and the end.
+- Round-1 blocker fixed: exercises.json L3-04 now says "Kuudes viiva syntyy alimmalta viritystilalta perustilaan". A brute-force search of all level triples (±0,02 eV) now gives only $E_1 ≈ 1{,}10$, $E_2 ≈ 2{,}40$, $E_3 ≈ 3{,}90\,\text{eV}$. In the mirror scheme (1,50/2,80/3,90) the line $E_1 \to 0$ = 1,50 eV would have been measured, as the new Järkevyys says. Unique, and the answer 1127 nm → 1130 nm is right.
+- L3-04 Sijoitus now covers a), b) and c), and assigns every line A–E to its transition correctly.
+- Round-1 polish applied: L1-06 says "viileämmän kaasun" in the answer, option, Periaate and Mallivastaus; L2-06 says "kalsium (kalsiumioni)".
+- L1-06 and L1-08 reordered: exactly one correct option in each, the answer string matches it, and every distractor is wrong with correct feedback.
+- L3-05 d) recomputed: hc/400 nm = 3,100 eV, minus 0,50 eV = 2,600 eV, giving 476,9 nm → 477 nm ✓.
+- L2-07 slope 12,01 nm/mm and max residual 0,76 nm (stated as 0,8 nm) ✓. L2-05 2,2698 eV ✓, L2-06 −0,8486 eV ✓, L3-05 B 22,1 % (A 18,9 %, C 15,1 %) ✓.
+- The Vastaus lines of L2-05, L2-06, L2-07 and L3-04 now answer every part; L1-07 now asks for the cause it requires.
+- Levels 8/7/5, no duplicates, the plan in docs/exercise-bank/FY8.md is followed, and the data are labelled esimerkkiaineisto.
+- The L3 captures at 1280 px were taken after the fix commit.
+- Hash d01b35fa24c40ba7 is the same at the start and the end.

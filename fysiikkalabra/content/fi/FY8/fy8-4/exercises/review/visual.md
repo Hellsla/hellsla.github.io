@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: b16791ea77c9736e
+CONTENT-HASH: e9be860c13569231
+ROUND: 2
 
 ## Blocking
 (none)
 
+Round 1 had no Blocking items; the round-1 changes (L2-07 laser data now $633\,\text{nm}$ and $2{,}0\,\text{mW}$ with answer $6{,}4 \cdot 10^{15}\,\tfrac{1}{\text{s}}$, L3-04 part e), L3-05 sketch sentence, straight quotes replaced) were checked and are correct.
+
 ## Polish
-- [Minor] exercises.json fy8-4-L1-08 and fy8-4-L2-07 — the student's quotation is set with straight ASCII quotation marks ("…") (open-exercises-1280-8, L2-1280-9) while FY8 uses ”…” elsewhere — use ”…” at both ends.
-- [Minor] exercises.json and solutions.md fy8-4-L3-05 — the subscript in $m_e$ and $p_e$ is an italic variable; it names the electron, so set it upright ($m_\text{e}$, $p_\text{e}$) as other labels in the course (open-exercises-L3-1280-7, -8).
-- [Minor] solutions.md fy8-4-L3-05 Järkevyys — "tason 2 tehtävän 1 mukaisesti" does not match the numbering the page shows — write "tehtävän 4-9 mukaisesti". The task also asks to draw the momentum triangle, but the solution only describes it: add one sentence on the sketch (sides $p$, $p'$ with angle $\theta$ between them, third side $p_\text{e}$); the table rows for $60\,{}^\circ$ and $90\,{}^\circ$ are unused, say so or use them.
-- [Minor] exercises.json fy8-4-L2-05 data table — the headers $N = 50$, $N = 500$, $N = 5000$ sit off from their right-aligned numbers (open-exercises-L2-1280-5/6) — align headers with the values (template matter).
+- [Minor] exercises.json and solutions.md fy8-4-L3-05 (4-20) — $\overline{p}_e$ is still an italic subscript in the task text and in Periaate (three places, open-exercises-L3-1280-8), while $m_\text{e}$ and $p_\text{e}$ were fixed — write $\overline{p}_\text{e}$.
+- [Minor] solutions.md fy8-4-L2-05 (4-5) Vastaus — the answer chip at the top of the card shows "11" (taken from "noin $11$ kertaa") while the stored answer is $11{,}4$ (tolerance 4 %, both accepted; open-exercises-L2-1280-6) — start the line with "b) $11{,}4$ kertaa" and keep the two-figure remark after it, so card and box agree.
+- [Minor] exercises.json fy8-4-L2-05 data table — headers $N = 50$, $N = 500$, $N = 5000$ sit off from their right-aligned numbers (carried over; template matter).
 
 ## Checked
-- Opened open-exercises-1280-6, -7, -8 (L1-06, L1-07, L1-08), open-exercises-L2-1280-5 to -10 (L2-05, L2-06, L2-07), open-exercises-L3-1280-5 to -9 (L3-04, L3-05).
-- Tables, LaTeX quantities with upright units, decimal commas, answer boxes with their units ($10^{16}\,\text{1/s}$, $10^{-23}\,\text{kg}\cdot\text{m/s}$) and solution cards render intact; no clipping or overflow at 1280 px. Answers match solutions (11,4; 4,85 pm; 1,64 · 10^16 1/s; 16 s with 15,6 s stated; 1,57 · 10^-23 kg·m/s; 3,06 eV). Equation chains are broken at sensible places.
-- No exercise figures exist; graph and vector-triangle tasks are paper tasks. Exercise captures exist only at 1280 px; the 360 px layout check is ok. No duplicate of an existing task; levels fit docs/exercise-bank/FY8.md.
+- Hash run at start and end: e9be860c13569231. Opened open-exercises-1280-7 (L1-07 fotoni 405 nm), open-exercises-L2-1280-6 (L2-05), -9 (L2-06 end and L2-07 student's laser, new quotation and data), open-exercises-L3-1280-6 (L3-04 with c)-e)) and -8 (L3-05 with the sketch sentence).
+- Diff against aba63e09c read for all changed tasks: $6{,}37 \cdot 10^{15}\,\tfrac{1}{\text{s}}$, 15,6 s, 75 km, 4,85 pm, 1,57 · 10^-23 kg·m/s match their solutions; the unit $10^{15}\,\tfrac{1}{\text{s}}$ in the answer box agrees with the text.
+- KaTeX, upright units, decimal commas, solution cards intact, chains broken at sensible places; no clipping at 1280 px. Exercise captures exist only at 1280 px; the 360 px layout check is ok. No exercise figures.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

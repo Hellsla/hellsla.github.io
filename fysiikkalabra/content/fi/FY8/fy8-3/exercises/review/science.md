@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1381e6fc2a8531a8
+CONTENT-HASH: 858f921815ead802
+Round: 2
 
 ## Blocking
 
 ## Polish
-- solutions.md:189 (L3-05 Sijoitus/Järkevyys) — the table has no 4→1 line (97,3 nm), though atoms at n = 4 emit it; a careful pupil will ask why. — Add one sentence: "Suora siirtymä 4 → 1 lähettää lähteen aallonpituuden 97,3 nm, joka suodatettiin pois, joten sitä ei ole taulukossa."
-- solutions.md:147 (L2-05 Kuvaajan lukeminen) — the slope is read from the line's two axis intercepts (1/n² = 0 and 0,250), both outside the measured range 0,028–0,111; correct for a straight line, but the guardrail asks that extrapolation be named. — Read two points of the fitted line inside the data range, or say the intercepts are extrapolated and why that is allowed (the model is linear).
-- solutions.md:169 (L2-07) — part b) is the same computation as L1-08 (E₃ − E₁ = 12,1 eV), and the pupil's claim "radalla n = 3 elektroni on 9 kertaa kauempana" (Bohr r ∝ n²) is neither confirmed nor corrected, while the lesson does not teach radii. — Say in a) that the radius claim may hold in Bohr's model but the photon energy is the level difference; optionally use 5 → 1 (13,06 eV, new).
-- exercises.json:242 (L3-04 a) — "Perustele, miksi päätetaso ei voi olla n = 1, n = 2 eikä n ≥ 4" names the answer m = 3 before the pupil reasons; at level 3 "Päättele, mille tasolle siirtymät päättyvät, ja perustele, miksi muut tasot eivät käy" keeps the task.
-- exercises.json L2-06 — "jotakin tasoparin erotusta": write "perustilasta ylemmän tason erotusta" to match the solution (answer stays 3).
+- exercises.json:82 (L1-08) — the new transition 2 → 4 (2,55 eV, 486 nm) is the same line as L1-03 (486 nm → 2,55 eV). The physics is right and the Järkevyys even uses it as a cross-check, but the two level-1 tasks give the same number. — Optionally use 3 → 5 (0,967 eV), or keep it and name the link to L1-03.
+- exercises.json L1-08 `kind: ["data"]` — the task has no data table, so "data" does not fit the task. — Use `["calc"]` or the kind the schema uses for a one-formula calculation, or drop it.
+- solutions.md:187 (L3-04, first bullet) — "(ylätaso kokonaisluku)" reads as if the condition held. — Write "(ylätason $n_\text{y}$ olisi oltava kokonaisluku)".
 
 ## Checked
-- One script recomputed all 20 answers with my own formulas; all agree with exercises.json and answers.py within tolerance (L2-05 slope −3289 THz → 13,60 eV; L3-04 365,3 THz; L3-05 97,25 nm).
-- L1-06: one correct option; distractor feedback numbers right.
-- L2-05 data within ±0,5 nm of the model (656,5; 486,3; 434,2; 410,2 nm).
-- L2-06: photon energies 4,13 / 3,00 / 2,48 / 5,99 / 5,00 eV; three match 3,0 / 5,0 / 6,0 eV.
-- L3-04: only m = 3 gives integers (4,00; 5,00; 6,00); m = 1 and 2 values in the solution right.
-- L3-05: five lines identified correctly; n = 5 lines (95,0; 434; 1282; 4052 nm) absent; cascade sum 12,75 eV.
-- Notation, constants, conversions as in the brief; levels 8/7/5; render at 1280 px clean.
-- Hash identical at start and end.
+- Round 1 had no blockers. All five round-1 polish items are applied: L3-05 names the filtered 4 → 1 line (97,3 nm); L2-05 reads its slope from (0,0300; 723,3 THz) and (0,1100; 460,2 THz) inside the data range and calls the intercept an extrapolation; L2-07 now uses 5 → 1 and says the r ∝ n² claim may hold in Bohr's model; the L3-04 a) text no longer gives away m = 3; L2-06 says "perustilasta ylemmän tason erotusta".
+- Recomputed with my own formulas: L1-08 E₄ − E₂ = 2,55 eV ✓. L2-07 E₅ − E₁ = 13,056 eV → 13,1 eV, and 95,0 nm ✓; the pupil's 25 · 13,6 = 340 eV is wrong for the stated reasons. L2-05 least-squares slope −3288,8 THz → 13,60 eV, and the line passes through 723,3 and 460,2 THz at the stated points ✓. L3-04 365,3 THz ✓. L3-05 97,25 nm ✓.
+- L1-06 reordered: one correct option (4 → 1, 12,75 eV, 97,3 nm). Each distractor is wrong and its feedback numbers are right (5 → 4 gives 0,306 eV ≈ 4052 nm; 3 → 2 gives 1,89 eV and 656 nm; 2 → 1 gives 10,2 eV).
+- L2-07 and L1-08 no longer duplicate each other (both were 12,1 eV in round 1).
+- The L3-04 solution's new bullet list renders cleanly at 1280 px (capture taken after the fix commit).
+- Levels 8/7/5, notation and constants as in the brief.
+- Hash 858f921815ead802 is the same at the start and the end.
