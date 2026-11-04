@@ -1,8 +1,7 @@
-VERDICT: FAIL
-CONTENT-HASH: bc698d30f1bc8ada
+VERDICT: PASS
+CONTENT-HASH: 28f6844eead6cf50
 
 ## Blocking
-- solutions.md:180 (fy4-15-L2-07, "Mallivastaus virheestä") — the unit check is wrong: (kg/m^3)(m^2)(m/s) = kg/s, not "kg/(m·s)". The conclusion (not a watt) is right but the stated result is false physics — fix to "kg/m^3 · m^2 · m/s = kg/s, ei W = kg·m^2/s^3; puuttuu v^2 eli m^2/s^2".
 
 ## Polish
 - fy4-15-L3-04 c) solution explains the 13 m/s case with "lapoja käännetään"; add that this is how the real power curve flattens (one sentence), and consider splitting the long "Mallivastaus kohtiin a ja c" into a) and c) lines for phone reading.
