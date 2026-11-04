@@ -330,7 +330,7 @@ W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2
 ```
 Tässä $W$ on energia ($\text{J}$), $Q$ on varaus ($\text{C}$), $U$ on jännite ($\text{V}$) ja $C$ on kapasitanssi ($\text{F}$). Jälkimmäinen muoto saadaan sijoittamalla $Q = CU$. Energiaa merkitään $W$:llä, koska $E$ tarkoittaa tässä luvussa sähkökentän voimakkuutta. Myös luvussa *Akut ja latauspiiri* energia oli $W$, koska $E$ oli siellä lähdejännite.
 
-Lähde siirtää koko varauksen $Q$ täyden jännitteensä $U$ yli, joten se antaa energian $QU$. Kondensaattoriin varastoituu siitä vain puolet. Toinen puoli muuttuu latauksen aikana johtimien ja vastusten sisäenergiaksi. Sisäenergia siirtyy lämpönä ympäristöön.
+Ajatellaan, että aluksi varaamaton kondensaattori ladataan vakiojännitelähteestä tavallisessa latauspiirissä, jossa on resistanssia. Lähde siirtää koko varauksen $Q$ täyden jännitteensä $U$ yli, joten se antaa energian $QU$. Kondensaattoriin varastoituu siitä vain puolet. Toinen puoli muuttuu latauksen aikana johtimien ja vastusten sisäenergiaksi. Sisäenergia siirtyy lämpönä ympäristöön. Puolet ei ole yleinen laki kaikille lataustavoille. Se on tämän mallin tulos.
 
 ### Eriste, kun lähde on kytkettynä tai irrotettuna
 Kun levyjen väliin työnnetään eristelevy, joka täyttää välin, kapasitanssi kasvaa $\varepsilon_\text{r}$-kertaiseksi. Muut suureet muuttuvat sen mukaan, pysyykö kondensaattori kytkettynä lähteeseen.
@@ -390,7 +390,7 @@ Kameran salamalaitteen kondensaattorin kapasitanssi on $150\,\mu\text{F}$, ja se
 **Järkevyys.** Varaus on $Q = CU = 0{,}045\,\text{C}$, ja $\tfrac{1}{2} \cdot 0{,}045\,\text{C} \cdot 300\,\text{V} = 6{,}75\,\text{J}$. Tulos on sama. Oletetaan, että paristot antavat lataukseen noin $2\,\text{W}$. Silloin lataus kestää vähintään $6{,}75\,\text{J} : 2\,\text{W} \approx 3{,}4\,\text{s}$. Se on yli kolmetuhatta kertaa kauemmin kuin välähdys. Tämä vastaa alun kysymykseen.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että ladattuun kondensaattoriin on varastoitunut sähkövarausta. Kondensaattori on kuitenkin koko ajan sähköisesti neutraali. Latauksessa lähde vain siirtää varausta levystä toiseen. Kondensaattoriin varastoituu energiaa. Energia on erilleen siirrettyjen varausten sähkökentässä.
+Moni ajattelee, että ladattu kondensaattori on kokonaisuutena sähköisesti varattu. Ladatun kondensaattorin levyillä on kuitenkin yhtä suuret vastakkaismerkkiset varaukset $+Q$ ja $-Q$. Latauksessa lähde vain siirtää varausta levystä toiseen. Siksi kondensaattorin kokonaisvaraus on nolla. Kondensaattoriin on kuitenkin varastoitunut energiaa. Energia on levyjen välisessä sähkökentässä.
 
 Toinen virhe on ajatella, että virta kulkee kondensaattorin läpi. Levyjen välissä on eriste, eikä varaus kulje sen läpi. Virta kulkee johtimissa vain latauksen ja purkautumisen aikana. Silloin varaus siirtyy levyille tai niiltä pois. Kolmas virhe on ajatella, että kapasitanssi kasvaa jännitteen kasvaessa. Suurempi jännite tuo suuremman varauksen. Niiden suhde $C$ riippuu kuitenkin vain kondensaattorin rakenteesta.
 

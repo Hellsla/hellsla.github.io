@@ -449,7 +449,7 @@ l &= \frac{R A}{\rho} \\
 **Järkevyys.** Yksi metri tätä lankaa on $5{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m} \cdot 1{,}0\,\text{m} : (0{,}20 \cdot 10^{-6}\,\text{m}^2) = 2{,}5\,\Omega$, joten $12\,\Omega$ vaatii vajaat viisi metriä: $12\,\Omega : 2{,}5\,\Omega = 4{,}8$. Yksiköt menevät oikein: $\Omega \cdot \text{m}^2 : (\Omega\cdot\text{m}) = \text{m}$. Valmis vastus päästäisi jännitteellä $6{,}0\,\text{V}$ läpi virran $6{,}0\,\text{V} : 12\,\Omega = 0{,}50\,\text{A}$.
 
 ## Yleinen virhekäsitys
-Moni päättelee kaavasta $R = U : I$, että resistanssi kasvaa, kun jännite kasvaa. Vastuksen resistanssi ei kuitenkaan riipu jännitteestä: kun jännite kaksinkertaistuu, myös virta kaksinkertaistuu, ja suhde pysyy samana. Resistanssi riippuu johtimen aineesta, pituudesta, paksuudesta ja lämpötilasta. Hehkulampun resistanssi kasvaa jännitteen mukana vain siksi, että suurempi virta kuumentaa lankaa.
+Moni päättelee kaavasta $R = U : I$, että resistanssi kasvaa, kun jännite kasvaa. Ohmisen vastuksen resistanssi pysyy kuitenkin likimain vakiona, kun lämpötila ja muut olosuhteet pysyvät samoina. Tällöin virta on suoraan verrannollinen jännitteeseen: kun jännite kaksinkertaistuu, myös virta kaksinkertaistuu, ja suhde pysyy samana. Resistanssi riippuu johtimen aineesta, pituudesta, paksuudesta ja lämpötilasta. Hehkulampun resistanssi kasvaa jännitteen mukana vain siksi, että suurempi virta kuumentaa lankaa.
 
 Toinen virhekäsitys on, että virta kuluu vastuksessa. Vastuksen jälkeen virta on yhtä suuri kuin ennen sitä, koska varausta ei katoa matkalla. Vastuksessa muuttuu sähköenergiaa sisäenergiaksi, ei virtaa.
 

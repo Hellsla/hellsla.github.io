@@ -146,8 +146,8 @@ Sama muuttuva magneettivuo kulkee kummankin käämin jokaisen kierroksen läpi. 
 
 Ideaalisessa muuntajassa ensiöjännitteen ja toisiojännitteen suhde on sama kuin käämien kierrosten lukumäärien suhde. Tätä suhdetta sanotaan **muuntosuhteeksi**. Jos toisiokäämissä on enemmän kierroksia kuin ensiökäämissä, muuntaja nostaa jännitettä. Jos toisiokäämissä on vähemmän kierroksia, muuntaja laskee jännitettä.
 
-### Muuntaja toimii vain vaihtovirralla
-Oletetaan, että ensiökäämi kytketään akkuun. Silloin käämissä kulkee tasavirta, ja rautasydämen magneettikenttä on vakio. Vakiosuuruinen magneettivuo ei indusoi jännitettä. Toisiokäämin jännite on siis nolla. Jännitepulssi syntyy vain hetkellä, jolloin virta kytketään tai katkaistaan, koska silloin vuo muuttuu.
+### Muuntaja tarvitsee muuttuvan magneettivuon
+Toisiokäämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu. Oletetaan, että ensiökäämi kytketään akkuun. Silloin käämissä kulkee vakiosuuruinen tasavirta, ja rautasydämen magneettikenttä on vakio. Vakiosuuruinen magneettivuo ei indusoi jännitettä. Toisiokäämin jännite on siis nolla. Jännitepulssi syntyy vain hetkellä, jolloin virta kytketään tai katkaistaan, koska silloin vuo muuttuu.
 
 Tämän vuoksi sähköverkossa käytetään vaihtovirtaa. Luvussa *Generaattori ja vaihtovirta* generaattori tuottaa vaihtojännitettä. Muuntajilla jännite voidaan muuttaa aina sopivan suuruiseksi.
 

@@ -134,7 +134,7 @@
 ## Ydinajatus
 
 ### Aalto on etenevä häiriö
-Kun narun päätä heilautetaan ylös, käsi vetää mukanaan narun lähintä kohtaa. Jännittynyt naru vetää puolestaan seuraavaa kohtaa ja se taas seuraavaa, joten jokainen kohta lähtee liikkeelle hieman myöhemmin kuin edellinen. Näin poikkeama tasapainoasemasta eli häiriö etenee narussa kättä kauemmas. **Aaltoliike** on häiriön etenemistä väliaineessa. Väliaineen hiukkaset värähtelevät vain tasapainoasemansa ympärillä eivätkä kulje aallon mukana. Kaasussa molekyylit liikkuvat lisäksi satunnaisesti lämpöliikkeen vuoksi, mutta aalto ei kuljeta niitä mukanaan. Aalto kuljettaa siis energiaa lähteestä kauemmas, mutta ei ainetta. Siksi narun toisessa päässä oleva kello voi kilahtaa, vaikka mikään narun kohta ei kulje kädestä kelloon asti.
+Kun narun päätä heilautetaan ylös, käsi vetää mukanaan narun lähintä kohtaa. Jännittynyt naru vetää puolestaan seuraavaa kohtaa ja se taas seuraavaa, joten jokainen kohta lähtee liikkeelle hieman myöhemmin kuin edellinen. Näin poikkeama tasapainoasemasta eli häiriö etenee narussa kättä kauemmas. **Mekaaninen aaltoliike** on häiriön etenemistä väliaineessa. Väliaineen hiukkaset värähtelevät vain tasapainoasemansa ympärillä eivätkä kulje aallon mukana. Kaasussa molekyylit liikkuvat lisäksi satunnaisesti lämpöliikkeen vuoksi, mutta aalto ei kuljeta niitä mukanaan. Aalto kuljettaa siis energiaa lähteestä kauemmas, mutta ei ainetta. Siksi narun toisessa päässä oleva kello voi kilahtaa, vaikka mikään narun kohta ei kulje kädestä kelloon asti.
 
 Mekaaninen aalto tarvitsee väliaineen, kuten narun, jousen, veden tai ilman. Yksi heilautus synnyttää **pulssin**, yksittäisen kummun, joka etenee narussa. Kun kättä heilutetaan tasaisesti ylös ja alas, syntyy jaksollinen aalto, jossa harjat ja pohjat toistuvat. Siinä narun jokainen kohta värähtelee samalla taajuudella $f$ kuin käsi. Jaksonaika $T$, taajuus $f$ ja amplitudi $A$ tarkoittavat samaa kuin luvussa *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi*. Kun aalto saapuu narun päähän, se heijastuu takaisin; heijastumista tarkastellaan luvussa *Aalto kohtaa esteen tai raon*.
 
@@ -411,7 +411,7 @@ Moni ajattelee, että aalto etenee sitä nopeammin, mitä tiheämmin kättä hei
 Toinen yleinen virhe on lukea aallonpituus yhden kohdan $(t, y)$-kuvaajasta. Siinä huippujen väli on jaksonaika $T$ sekunteina, ei aallonpituus. Kolmas virhe on ajatella, että aalto kuljettaa narun ainetta mukanaan: narun kohdat vain värähtelevät paikallaan, ja eteenpäin siirtyy energia.
 
 ## Tiivistelmä
-- Aaltoliike on häiriön etenemistä väliaineessa. Väliaineen hiukkaset värähtelevät tasapainoasemansa ympärillä, ja aalto kuljettaa energiaa mutta ei ainetta.
+- Mekaaninen aaltoliike on häiriön etenemistä väliaineessa. Väliaineen hiukkaset värähtelevät tasapainoasemansa ympärillä, ja aalto kuljettaa energiaa mutta ei ainetta.
 - Poikittaisessa aallossa hiukkaset värähtelevät kohtisuoraan etenemissuuntaa vastaan (naru), pitkittäisessä aallossa etenemissuunnan suuntaisesti (kierrejousi, ääni ilmassa).
 - Yksi heilautus tekee pulssin, tasainen heilutus jaksollisen aallon. Aallonpituus $\lambda$ on kahden peräkkäisen harjan väli.
 - Aaltoliikkeen perusyhtälö on $v = \tfrac{\lambda}{T} = f\lambda$. Nopeus riippuu väliaineesta, taajuus lähteestä.

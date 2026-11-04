@@ -330,7 +330,7 @@ W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2
 ```
 where $W$ is the energy ($\text{J}$), $Q$ the charge ($\text{C}$), $U$ the voltage ($\text{V}$) and $C$ the capacitance ($\text{F}$). The latter form is obtained by substituting $Q = CU$. Energy is denoted by $W$, because in this chapter $E$ means the strength of the electric field. In the chapter *Batteries and the charging circuit* too the energy was $W$, because there $E$ was the source voltage.
 
-The source moves the whole charge $Q$ across its full voltage $U$, so it delivers the energy $QU$. Only half of it is stored in the capacitor. The other half becomes internal energy of the wires and resistors during charging, and it is transferred to the surroundings as heat.
+When an initially uncharged capacitor is charged from a constant-voltage source in an ordinary charging circuit with resistance, the source moves the whole charge $Q$ across its full voltage $U$, so it delivers the energy $QU$. Only half of it is stored in the capacitor. The other half becomes internal energy of the wires and resistors during charging, and it is transferred to the surroundings as heat. The half is not a general law for every way of charging: it is the result of this model.
 
 ### A dielectric when the source is connected or disconnected
 When a dielectric plate that fills the space is pushed between the plates, the capacitance becomes $\varepsilon_\text{r}$ times as large. The other quantities change depending on whether the capacitor stays connected to the source.
@@ -390,7 +390,7 @@ The capacitance of the capacitor of a camera flash unit is $150\,\mu\text{F}$, a
 **Reasonableness.** The charge is $Q = CU = 0.045\,\text{C}$, and $\tfrac{1}{2} \cdot 0.045\,\text{C} \cdot 300\,\text{V} = 6.75\,\text{J}$, the same result. If the batteries give about $2\,\text{W}$ for charging, the charging takes at least $6.75\,\text{J} : 2\,\text{W} \approx 3.4\,\text{s}$, over three thousand times longer than the flash. This answers the opening question.
 
 ## Common misconception
-Many people think that electric charge is stored in a charged capacitor. But the capacitor as a whole is electrically neutral all the time: in charging, the source only moves charge from one plate to the other. What is stored in the capacitor is energy, which is in the electric field of the separated charges.
+Many people think that a charged capacitor as a whole carries an electric charge, as if it were filled with charge. But the plates of a charged capacitor carry equal and opposite charges $+Q$ and $-Q$, because in charging the source only moves charge from one plate to the other. The total charge of the capacitor is zero, but energy is stored in the electric field between the plates.
 
 Another mistake is to think that current passes through the capacitor. Between the plates there is an insulator, and charge does not pass through it. Current passes in the wires only during charging and discharging, when charge moves to or from the plates. A third mistake is to think that the capacitance grows as the voltage grows. A greater voltage brings a greater charge, but their ratio $C$ depends only on the structure of the capacitor.
 
