@@ -39,6 +39,52 @@
       "answer": 1.0005,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-06",
+      "level": 1,
+      "text": "People say that the voltage of a household socket is $230\\,\\text{V}$. Which statement about this voltage is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The number $230\\,\\text{V}$ is the rms value, because it produces the same power as a direct voltage.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The number $230\\,\\text{V}$ is the peak value, because the meter shows the greatest instantaneous voltage.",
+          "feedback": "Meters do not show the peak value but the rms value, and the $230\\,\\text{V}$ of the socket is an rms value. The peak value of the voltage is about $325\\,\\text{V}$, that is, larger than the stated number."
+        },
+        {
+          "text": "The number $230\\,\\text{V}$ is the average value, because the positive and negative voltages are equal in size.",
+          "feedback": "The average of a sinusoidal voltage over one period is zero, because the positive and negative values cancel each other. The number $230\\,\\text{V}$ is based on power, not on the average: it is the rms value."
+        },
+        {
+          "text": "The number $230\\,\\text{V}$ is the rms value, because it produces the same power as a direct voltage.",
+          "feedback": "Correct: the rms value is defined through power. It is the direct voltage that would produce the same average power in a resistor, and the peak value of a sinusoidal voltage is $\\sqrt{2}$ times the rms value, about $325\\,\\text{V}$.",
+          "correct": true
+        },
+        {
+          "text": "The number $230\\,\\text{V}$ is the rms value, because the peak value is smaller than the rms value.",
+          "feedback": "The number $230\\,\\text{V}$ is indeed the rms value, but the reasoning is wrong: the peak value of a sinusoidal voltage is larger than the rms value, about $230\\,\\text{V} \\cdot \\sqrt{2} \\approx 325\\,\\text{V}$. The rms value is defined through power."
+        }
+      ]
+    },
+    {
+      "id": "fy7-7-L1-07",
+      "level": 1,
+      "text": "The coil of a generator rotates at $3000$ revolutions per minute. How long is the period of the alternating voltage produced, in milliseconds?",
+      "answer": 20.0,
+      "unit": "ms",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-08",
+      "level": 1,
+      "text": "The peak value of a sinusoidal alternating voltage was measured with an oscilloscope as $17.0\\,\\text{V}$. What voltage does a multimeter show when it measures the same voltage?",
+      "answer": 12.020815,
+      "unit": "V",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +120,122 @@
       "answer": 26.969351,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L2-05",
+      "level": 2,
+      "text": "An oscilloscope measured the voltage $e$ of a small generator as a function of time $t$, and the measurements are in the table (sample data). The voltage is sinusoidal, and the data points cover more than one period.\n\na) Deduce the period and frequency of the voltage from the table.\n\nb) Read the peak value of the voltage from the table.\n\nc) Calculate the rms value of the voltage.\n\nThe result of part c is entered in the answer field.",
+      "kind": [
+        "data"
+      ],
+      "answer": 5.939697,
+      "unit": "V",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Voltage of a generator (sample data)",
+        "columns": [
+          "$t\\,(\\text{ms})$",
+          "$e\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0.1"
+          ],
+          [
+            "2",
+            "4.3"
+          ],
+          [
+            "4",
+            "7.2"
+          ],
+          [
+            "6",
+            "8.4"
+          ],
+          [
+            "8",
+            "7.3"
+          ],
+          [
+            "10",
+            "4.1"
+          ],
+          [
+            "12",
+            "−0.1"
+          ],
+          [
+            "14",
+            "−4.2"
+          ],
+          [
+            "16",
+            "−7.3"
+          ],
+          [
+            "18",
+            "−8.4"
+          ],
+          [
+            "20",
+            "−7.2"
+          ],
+          [
+            "22",
+            "−4.3"
+          ],
+          [
+            "24",
+            "0.0"
+          ],
+          [
+            "26",
+            "4.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-7-L2-06",
+      "level": 2,
+      "text": "A group investigated by experiment how the voltage of a generator depends on the rotation frequency. The coil and the magnet stayed the same, and the rotation frequency was doubled. The peak values of the voltage measured with an oscilloscope are in the table (sample data).\n\na) Use the formula $e_0 = NBA \\cdot 2\\pi f$ to predict the peak value at the rotation frequency $10.0\\,\\text{Hz}$ on the basis of the first measurement.\n\nb) By how many percent does the measured peak value differ from the prediction? Calculate the deviation from the prediction and give its absolute value.\n\nc) State how the frequency of the voltage changes, and assess whether the measurement fits the prediction when the uncertainty of reading each peak value is $\\pm 0.1\\,\\text{V}$.\n\nThe result of part b is entered in the answer field.",
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "answer": 2.439024,
+      "unit": "%",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Peak value at different rotation frequencies (sample data)",
+        "columns": [
+          "$f\\,(\\text{Hz})$",
+          "$e_0\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "5.0",
+            "4.1"
+          ],
+          [
+            "10.0",
+            "8.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-7-L2-07",
+      "level": 2,
+      "text": "A student solved a problem as follows: “The power of an incandescent bulb is $60\\,\\text{W}$, and it is connected to the mains voltage $230\\,\\text{V}$. The voltage is a peak value, so the rms value is $230\\,\\text{V} : \\sqrt{2} = 163\\,\\text{V}$. The current is $I = P : U = 60\\,\\text{W} : 163\\,\\text{V} = 0.37\\,\\text{A}$.”\n\na) Find the error in the student’s solution and explain why it is an error.\n\nb) Calculate the rms value of the current of the bulb correctly.\n\nThe result of part b is entered in the answer field.",
+      "kind": [
+        "error"
+      ],
+      "answer": 0.26087,
+      "unit": "A",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +262,63 @@
       "answer": 414.0,
       "unit": "V",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L3-04",
+      "level": 3,
+      "text": "A bottle dynamo is a small generator pressed against the side of a bicycle tyre; its coil has $240$ turns and an area of $6.0\\,\\text{cm}^2$. The peak value $e_0$ of the voltage of the dynamo was measured with an oscilloscope at different rotation frequencies $f$ (sample data, table).\n\na) Fit a straight line $e_0 = kf + c$ to the data points with the linear fit of a calculator or by eye, and determine its slope $k$.\n\nb) Use the slope to calculate the magnetic flux density $B$, and explain why, according to the formula $e_0 = NBA \\cdot 2\\pi f$, the line should pass through the origin even though the measured line does not.\n\nc) Predict the peak value at the frequency $22\\,\\text{Hz}$ and assess whether the constant term $c$ matters in the prediction.\n\nThe magnetic flux density of part b is entered in the answer field.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 0.340415,
+      "unit": "T",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Peak voltage of a bottle dynamo (sample data)",
+        "columns": [
+          "$f\\,(\\text{Hz})$",
+          "$e_0\\,(\\text{V})$"
+        ],
+        "rows": [
+          [
+            "5.0",
+            "1.4"
+          ],
+          [
+            "10.0",
+            "2.9"
+          ],
+          [
+            "15.0",
+            "4.7"
+          ],
+          [
+            "20.0",
+            "6.0"
+          ],
+          [
+            "25.0",
+            "7.6"
+          ],
+          [
+            "30.0",
+            "9.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy7-7-L3-05",
+      "level": 3,
+      "text": "The coil of a teaching-laboratory generator has $120$ turns and an area of $0.0050\\,\\text{m}^2$. The coil rotates in a uniform magnetic field of $0.20\\,\\text{T}$, and the generator is connected to a resistor of $8.0\\,\\Omega$.\n\nThe resistance of the generator itself is so small that it can be neglected. The rotation frequency is first $25\\,\\text{Hz}$ and then $40\\,\\text{Hz}$ (sample situation).\n\na) Calculate the peak value and the rms value of the voltage at both rotation frequencies.\n\nb) Calculate the average power of the resistor at both rotation frequencies, and the greatest value of the instantaneous power $p(t)$ at the rotation frequency $40\\,\\text{Hz}$.\n\nc) Explain why the power grows to more than double although the rotation frequency grows only $1.6$-fold.\n\nThe average power of the resistor at the rotation frequency $40\\,\\text{Hz}$ is entered in the answer field.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 56.848921,
+      "unit": "W",
+      "tolerance": 0.03
     }
   ]
 }
