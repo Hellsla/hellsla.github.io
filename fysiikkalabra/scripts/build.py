@@ -238,9 +238,11 @@ ABOUT = "tietoa.html"
 
 
 def front_chrome(html):
-    """The front page's own header and footer (teacher 2026-11-03): Näin opiskelet beside Moduulit and Lukuvinkit, and
-    in the footer Tietoa sivustosta in place of the portfolio link, which is on that page now."""
+    """The front page's own header and footer (teacher 2026-11-03): Näin opiskelet beside Moduulit and Lukuvinkit and
+    Sivustosta after them (2026-11-04), and in the footer Sivustosta in place of the portfolio link, which is on that
+    page now."""
     html = html.replace('<a class="nav-reading"', f'<a class="nav-study" href="{reading_tips.PAGE}#{STUDY_ID}">{esc(T("site.study"))}</a><a class="nav-reading"', 1)
+    html = html.replace(f'{esc(T("site.reading_tips"))}</a>', f'{esc(T("site.reading_tips"))}</a><a class="nav-about" href="{ABOUT}">{esc(T("site.about"))}</a>', 1)   # Sivustosta in the header too (teacher 2026-11-04)
     return re.sub(r'(<footer class="bottom">.*?)<a href="[^"]*">[^<]*</a></footer>', lambda m: m.group(1) + f'<a href="{ABOUT}">{esc(T("site.about"))}</a></footer>', html, count=1, flags=re.S)
 
 
@@ -867,9 +869,11 @@ def build_language(lang):
     rt = reading_tips.load(lang) if reading_tips.SOURCE.is_file() else None
     if rt: (out / reading_tips.PAGE).write_text(page(rt["title"], study_guide() + reading_tips.body(T, lang), f'<a href="index.html">{T("site.name")}</a> › {esc(rt["title"])}',
                                               reading_tips.PAGE, rt["description"], main_class="reading reading-tips"))
-    # Tietoa sivustosta (teacher 2026-11-03): a page to fill later; the link back to the portfolio moved here from the front page
-    (out / ABOUT).write_text(page(T("site.about"), f'<h1>{T("site.about")}</h1><p class="lead">{T("site.about_lead")}</p>'
-                                  f'<p><a href="{HOME}">{T("site.back_to_portfolio")}</a></p>',
+    # Sivustosta (teacher 2026-11-04): the teacher's own text, content/<lang>/tietoa.md (the Finnish where a language has
+    # none); the link back to the portfolio moved here from the front page (2026-11-03)
+    about_md = next((f for f in (ROOT / "content" / lang / "tietoa.md", ROOT / "content" / i18n.SOURCE / "tietoa.md") if f.is_file()), None)
+    about_body = render_md(about_md.read_text()) if about_md else f'<h1>{T("site.about")}</h1><p class="lead">{T("site.about_lead")}</p>'
+    (out / ABOUT).write_text(page(T("site.about"), f'<article class="about">{about_body}<p class="about-back"><a href="{HOME}">{T("site.back_to_portfolio")}</a></p></article>',
                                   f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead")))
     if SITE.name == "site.tmp":                  # a lesson leaves the live site only with a warning (an annotation on CI)
         live = LIVE / out.relative_to(SITE)
