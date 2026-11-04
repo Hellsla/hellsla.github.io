@@ -25,7 +25,7 @@ ROOT = courses.ROOT
 TEXT_KEYS = {"text", "pending", "detail", "q", "a", "title", "question", "prompt", "feedback", "model", "hint", "hints", "howto", "calc", "label",
              "goals", "prerequisites_note", "glossary", "lead", "summary", "name", "mistakes", "explain", "options", "speaker",
              "claim", "why", "predictions", "rubric", "note", "words",
-             "solution", "contribution", "learn", "prior", "criteria", "pair", "intro", "source_note", "answer", "practice"}
+             "solution", "contribution", "learn", "prior", "criteria", "pair", "intro", "source_note", "answer", "practice", "caption", "columns"}
 WORD_UNIT = re.compile(r"kpl|milj|vrk|kertaa|kierros|toistoa|tuhatta|suuruusluokkaa|ihmistä|annosta|ilma|viivaa|vahvistin")   # a unit that is Finnish words
 
 
@@ -33,6 +33,7 @@ def is_text(key, value, parent=None):
     """Is this string a text a translation translates? An experiment's column names ({"names": {var: name}}) and a
     unit written in words (kpl, milj. km) are; numbers, ids, symbol units and settings are not."""
     if not isinstance(value, str): return False
+    if key == "rows": return not re.fullmatch(r"[−-]?\d+(?:\.\d+)?", value)   # an exercise's data table: numbers stay, words are translated
     if parent in ("names", "values"): return True   # values: {param: {value: words}}, a select's option in words
     if key in ("unit", "units") or parent == "units": return bool(WORD_UNIT.search(value))
     return key in TEXT_KEYS

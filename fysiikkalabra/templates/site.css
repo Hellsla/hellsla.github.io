@@ -147,11 +147,11 @@ main.home+footer.bottom{margin-top:1.75rem}
 .mod-list>li{margin:0;border-bottom:1px solid var(--line)}
 .mod-group{font:700 .75rem/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin:0 0 .35rem}
 .mod-group~.mod-group{margin-top:1rem}
-/* the school's logo (teacher 2026-11-04: emblem and name, its courses level with the national modules). Under 700 px it
+/* the school's logo (teacher 2026-11-04: the name and the emblem on one row in black, its courses level with the national modules). Under 700 px it
    heads the school's list; from 700 px it stands in the intro over the right column and the list's heading is visually
    hidden: under the heading and lead in two columns, beside them (in the right column) once they fit in the left one */
-.mod-school img{display:block;height:56px;width:auto}
-.intro-school{display:none;height:56px;width:auto}
+.mod-school img{display:block;height:32px;width:auto;max-width:100%}
+.intro-school{display:none;height:32px;width:auto;max-width:100%}
 @media (min-width:700px){
   .home-intro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(1.25rem,3vw,2.5rem)}
   .home-intro>h1,.home-intro>.lead{grid-column:1/-1}
