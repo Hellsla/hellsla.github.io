@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 55ab378ed21c9bb5
-Round: 2
+CONTENT-HASH: 8bce250bfd157ad0
+Round: 3
 Mode: delta
 
 ## Blocking
@@ -18,3 +18,6 @@ Mode: delta
 
 ## Checked in round 2
 - Delta (HEAD): only the line breaks of aligned model-solution rows changed (long row split into "..." and "&= result"). The step order, reasoning, numbers and wording are unchanged; the shorter rows read more easily on a phone, the "&=" continuation sits under the first "=". No learning-related change.
+
+## Checked in round 3
+- Delta (HEAD~3..HEAD, solutions.md display maths only): Only line breaks of the aligned trapezoid rows changed; step order, reasoning, numbers and wording are the same. A product broken before "\cdot" and a sum broken before "+" read naturally and are easier to follow on a phone. No learning-related change.

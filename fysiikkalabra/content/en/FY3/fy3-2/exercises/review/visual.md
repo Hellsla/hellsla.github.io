@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 55ab378ed21c9bb5
-Round: 2
+CONTENT-HASH: 8bce250bfd157ad0
+Round: 3
 Mode: delta
 
 ## Blocking
@@ -20,3 +20,6 @@ Mode: delta
 
 ## Scores
 illustrations 4 · typography 5 · language 5 · accessibility 4
+
+## Checked in round 3
+- Delta (HEAD~3..HEAD, solutions.md display maths only): Split rows read well in source: each continuation is indented with \quad under the row's left side, the decimal separator and unit spacing are unchanged. check_layout.py fy3-2 --width 360 on freshly built preview: OK (fi, en, fi-easy), no formula overflow, only the existing wide-table scroll warning.

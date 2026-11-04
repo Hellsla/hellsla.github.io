@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4d8f1c677f9ebb2a
-Round: 2
+CONTENT-HASH: 951cc75ea0f5bc43
+Round: 3
 Mode: delta
 
 ## Blocking
@@ -22,3 +22,6 @@ Mode: delta
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 (no Finnish left) · accessibility 4
+
+## Checked in round 3
+- Delta (HEAD~3..HEAD, solutions.md display maths only): The corrected forehead temperature is now a single display formula, which fits a 360 px line better than the old split row; the aligned block above ends cleanly (the trailing space after the last row is harmless). check_layout.py fy3-3 --width 360 on freshly built preview: OK (fi, en, fi-easy), no formula overflow, only the existing wide-table scroll warning.
