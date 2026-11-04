@@ -1,14 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: 06cb066353b21674
-
-Delta review over the audit's PASS (c049419582c3b6e6): one exercise replaced by a figure task, LaTeX units.
+VERDICT: FAIL
+CONTENT-HASH: 5de57c6f45f43e68
 
 ## Blocking
-- none
+- exercises.json fy1-6-L3-05 — level off by one and a near-duplicate of L2-06. The text already names the cause ("käynnisti kellon vahingossa hieman ennen pudotusta"), so the task is one subtraction, g = Δv/Δt = 9,8 m/s², the skill of L1-07 and L2-04; the same idea (a shifted time zero, slope unaffected) is what L2-06 tests with a table. Fix: withhold the cause and the hint; give the two readings (and perhaps a third, 2,65 s; 24,5 m/s), ask why 8,9 and also 7,5 m/s² (4,9/0,65) disagree, let the student discover that v/t varies while Δv/Δt is constant, then find the clock offset (0,15 s) and the true fall time at each reading. That is data interpretation and multi-step reasoning.
+
 ## Polish
-- Level L2 fits (read, derive g_B, solve for t). B at 2,5 s is between gridlines, so the student must compute, not read; fine, the tolerance 3 % (+-0,075 s) is too tight for eye reading but the intended route is calculation.
-- A shortcut exists (B is twice as steep, so half the time).
+- fy1-6-L1-08: kind is "concept" but the task is a unit conversion (m/s to km/h); retag "model" or drop the tag. The answer 35,316 is shown as "35 km/h" in the solution; say so in the unit hint or answer.
+- fy1-6-L2-07: tagged "experiment" but nothing is designed; it is a two-point calculation. Either add a question ("miksi portit eivät ole pudotuspisteessä") or change the tag. Note also that v1 = 2,00 m/s at t1 = 0,320 s is inconsistent with a start at t = 0 (0,20 s fall), which is the point of the task; say so in one line of the solution.
+- fy1-6-L3-04: the solution calls 1,5 m/s a limit speed ("vakionopeus") without the lesson having taught terminal velocity; one sentence of reason (air resistance grows with speed) suffices, and the threshold "jo noin 0,10 s" is a judgement; give the criterion (deviation over 5 %).
+- fy1-6-L3-01 (existing) tests the same concept as the new L1-06 (mass independence); acceptable, they differ in level.
+- Distractor feedback in L1-06/L1-07 is good; the correct option is first in the file, check the shuffle on the page.
+
 ## Checked
-- Figure needed: the text gives no speeds or accelerations; A and B only in the figure. 360 px: two lines in blue and orange, labelled A and B (colour not alone), y labels 10-40, x 1-6; crossings (5 s; 20) and (5 s; 40) on gridlines.
-- g_A=20/5=4,0, g_B=40/5=8,0 m/s^2, t_B=20/8,0=2,5 s correct; answers.py (20/5.0)*5.0/(40/5.0) = 2,5; **Kuvaajan lukeminen:** present.
-- Replaced task (stone, km/h conversion) is covered elsewhere in the set (L1-04 style conversions); the set still has conversion practice.
+- Counts 8/7/5; plan items covered: hammer-feather MC, g as slope, fit tables, offset interpretation, paper vs ball, systematic error.
+- L2-05: least squares gives 9,74 m/s²; tolerance 5 % covers hand fits; comparison to 9,81 given.
+- L2-06: slope 9,80, intercept 1,97 m/s, t0 = 0,20 s; tolerance 0,1 is wide but fair.
+- L2-07: 5,0 cm / 25,0 ms = 2,00 m/s, 4,50 m/s; g = 9,8 m/s².
+- L3-04: 62,0 % is correct; genuine data, two series, model-boundary reasoning: YO-like.
+- Finnish reads correctly.
