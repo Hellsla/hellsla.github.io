@@ -270,7 +270,7 @@
   {
    "id": "fy1-7-L3-04",
    "level": 3,
-   "text": "Oppilas määrittää lyijyisen kappaleen tiheyden vedensiirtomenetelmällä. Kappaleen massa on $113\\,\\text{g}$. Mittalasin lukema ennen upotusta on $50{,}0\\,\\text{ml}$ ja upotuksen jälkeen $62{,}0\\,\\text{ml}$. Jälkeenpäin oppilas huomaa, että kappaleen pintaan oli jäänyt ilmakupla, jonka tilavuus on $2{,}0\\,\\text{ml}$. Mikä on kappaleen todellinen tiheys yksikössä $\\text{g/cm}^3$? Laske myös oppilaan alun perin saama tiheys ja sen prosenttivirhe, päättele taulukon perusteella, mitä metallia kumpikin tiheys antaisi ymmärtää kappaleen olevan, ja kerro, miten kupla olisi voitu poistaa tai havaita.",
+   "text": "Oppilas määrittää metallikappaleen tiheyden vedensiirtomenetelmällä. Kappaleen massa on $113\\,\\text{g}$. Mittalasin lukema ennen upotusta on $50{,}0\\,\\text{ml}$ ja upotuksen jälkeen $62{,}0\\,\\text{ml}$. Jälkeenpäin oppilas huomaa, että kappaleen pintaan oli jäänyt ilmakupla, jonka tilavuus on $2{,}0\\,\\text{ml}$. Mikä on kappaleen todellinen tiheys yksikössä $\\text{g/cm}^3$? Laske myös oppilaan alun perin saama tiheys ja sen prosenttivirhe, päättele taulukon perusteella, mitä metallia kumpikin tiheys antaisi ymmärtää kappaleen olevan, ja kerro, miten kupla olisi voitu poistaa tai havaita.",
    "kind": [
     "data",
     "error",

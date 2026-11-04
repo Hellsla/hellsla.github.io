@@ -164,7 +164,7 @@
 **Järkevyys:** Kulmakerroin $9{,}8\,\text{m/s}^2$ on putoamiskiihtyvyys, joten malli on oikea ja vain ajan nollakohta on siirtynyt. Kappale oli pudonnut $0{,}20\,\text{s}$, ja nopeus $9{,}8 \cdot 0{,}20 \approx 2{,}0\,\text{m/s}$ vastaa taulukon ensimmäistä riviä.
 
 ## fy1-6-L2-07
-**Annettu:** kappaleen pituus $L = 5{,}0\,\text{cm}$; portti 1: $\Delta t_\text{valo,1} = 25{,}0\,\text{ms}$ ja saapumishetki $t_1 = 0{,}320\,\text{s}$; portti 2: $\Delta t_\text{valo,2} = 11{,}1\,\text{ms}$ ja saapumishetki $t_2 = 0{,}575\,\text{s}$
+**Annettu:** kappaleen pituus $L = 5{,}0\,\text{cm}$; portti 1: $\Delta t_\text{valo,1} = 25{,}0\,\text{ms}$ ja valokatkoksen puolivälin hetki $t_1 = 0{,}320\,\text{s}$; portti 2: $\Delta t_\text{valo,2} = 11{,}1\,\text{ms}$ ja valokatkoksen puolivälin hetki $t_2 = 0{,}575\,\text{s}$
 **Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$
 **Periaate:** Kappaleen nopeus portissa on kappaleen pituus jaettuna ajalla, jonka valo on katkennut: $v = \dfrac{L}{\Delta t_\text{valo}}$. Tämä on keskinopeus katkoksen aikana, ja tasaisesti kiihtyvällä liikkeellä se on yhtä suuri kuin nopeus katkoksen puolivälissä, joten kello merkitsee hetken, jolloin katkos on puolivälissä. Nopeus kasvaa tasaisesti, joten kiihtyvyys on nopeuden muutos jaettuna ajan muutoksella: $g = \dfrac{\Delta v}{\Delta t}$. Pudotushetkeä ei tarvita, koska vain aikaero $t_2 - t_1$ ja nopeuksien erotus vaikuttavat tulokseen. Jos pudotushetken kellon lukema on väärä, se siirtää molempia aikoja yhtä paljon ja kumoutuu erotuksessa.
 **Kaava:** $v = \dfrac{L}{\Delta t_\text{valo}}$ ja $g = \dfrac{v_2 - v_1}{t_2 - t_1}$
