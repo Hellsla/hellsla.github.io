@@ -1,19 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 8c815f5e5ca1bdf1
+VERDICT: PASS
+CONTENT-HASH: 3154ca5d6bf1cdf0
 
 ## Blocking
-- exercises/solutions.md fy8-15-L3-01 Järkevyys — "Kvarkki ei voi olla d, koska ddd on kevyempi hiukkanen Δ⁻" is false and misleading: ddd = Δ⁻ exists with charge −e, so d is a permitted answer; the task gives no mass or strangeness to decide. A student following it learns a wrong rule — fix: say that charge −1/3 e fits d, s or b, and that the task cannot tell which (Ω⁻ is in fact sss, 1672 MeV/c², stated as a fact).
-- exercises.json fy8-15-L3-01 — a level-3 task is only q/3, the same step as L1-01 reversed and the inquiry's "u-kvarkin varaus" task; it does not demand reasoning in a new situation — fix: ask which quark types are possible, or combine with an antiquark or baryon-number check.
+(none)
 
 ## Polish
-- L1-01, L1-02, L1-03 are three near-identical one-step sums (charge or B from quarks); replace L1-03 with a particle-table lookup of q, B, L.
-- Level 2 has no task applying the core skill "is this reaction allowed?" (q, B, L); it appears only in L3-03 and the exit ticket. Add one L2 item (e.g. a reaction with a lepton-number slip).
-- L2-04 solution uses "p" for the percentage, clashing with the proton p of the lesson; use "x".
-- L3-02 (sci-fi antimatter) is a plain E = mc² substitution; add the question of what "all mass" demands (photons need momentum conservation) or compare with a known energy.
-- L1-04 repeats the lesson text almost verbatim; accept as recall, or ask for the minimum photon energy per pair.
+- exercises.json fy8-15-L3-01 — uusi tehtävä toimii tasolla 3: kolme reaktiota, joista yksi kaatuu baryolukuun, toinen energiaan ja kolmas on oikea; $Q = 63{,}09\,\text{MeV}$ on tarkistettu ($1672{,}45 - 1115{,}683 - 493{,}677$). Tehtävässä on kuitenkin paljon tekstiä (viisi hiukkasta massoineen); ratkaisu on pitkä rivi. Fix: laita hiukkasten massat ja kvarkkikoostumukset taulukkoon, jos tehtäväkorttiin sopii.
+- exercises.json fy8-15-L3-01 — ratkaisun järkevyysosan Δ⁻-vertailu ($1232\,\tfrac{\text{MeV}}{c^2}$) tuo luvun, jota ei ole tehtävässä eikä luvussa; se on hyvä lisäys, mutta sano "kirjallisuusarvo".
+- exercises.json fy8-15-L3-03 — tehtävä on kevyt tasolle 3 (yksi yhtälö ja kolme vähennyslaskua) ja toistaa luvun $\bar{\nu}_e + p \to n + e^+$ -reaktion. Fix: vaihda reaktio tai pyydä lisäksi perustelemaan, onko $X$ hiukkanen vai antihiukkanen.
+- exercises.json fy8-15-L3-02 — vain yksi päättelyaskel ($E = mc^2$, mukana molemmat massat); tehtävä on oivalluksellinen mutta kevyt. Taso 3:n painopiste on nyt L3-01:ssä.
+- fy8-15-L1-04 ratkaisu — Periaate perustelee fotonien yhtä suuren energian liikemäärällä; hyvä, mutta lauseessa "Levossa olevien hiukkasten liikemäärä on nolla" kannattaa lisätä "yhteinen".
 
 ## Checked
-- Read exercises.json (12 tasks) and solutions.md in full; the exercise packet file did not exist, so the main packet's exercise section was used.
-- Recomputed: 2; −1; −1; 511; 6; 18; 37,841; 1,213 pm; 1,230 %; −1/3; 1,8·10^14 J; L = −1, all correct.
-- Solutions follow the principle → formula → substitution → result → sense order; mistakes are consistent.
-- Captures: open-exercises-1280-1, L2-1280-3, L3-1280-1, L3-1280-2.
+- Kaikki 12 tehtävää ja ratkaisut: tasot 5/4/3; ratkaisuissa Annettu–Järkevyys kokonaan, periaate selitetty, ei ohitettuja välivaiheita.
+- L3-01 erikseen: varaukset ja baryoniluvut lasketaan kvarkeista ($K^- = s\bar{u}$: $-e$), jokainen kolmesta reaktiosta käsitellään ratkaisussa, vain (3) on mahdollinen. Vastaus ja toleranssi kohdallaan.
+- Taso 1 ja 2 eivät toista esimerkin neutronin hajoamista; L2-02 ($\Lambda^0 \to p + \pi^-$) on uusi hajoaminen samalla kaavalla.
+- Kieli: sijamuodot ($1672{,}45\,\tfrac{\text{MeV}}{c^2}$) ja termit kunnossa.
+- Hash alussa ja lopussa sama.
