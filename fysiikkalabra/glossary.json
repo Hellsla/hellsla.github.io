@@ -1936,9 +1936,10 @@
   },
   {
     "term": "sähköenergia",
-    "definition": "Sähkölaitteissa ja sähköverkossa siirtyvä ja muuttuva energia. Sähköenergia muutetaan voimalaitoksella muista energialajeista ja käytössä takaisin esimerkiksi lämmöksi, valoksi tai liikkeeksi; sen yksikkö on joule (J), arjessa kilowattitunti (kWh).",
+    "definition": "Sähkölaitteissa ja sähköverkossa siirtyvä ja muuttuva energia. Sähköenergia muutetaan voimalaitoksella muista energialajeista ja käytössä esimerkiksi valoksi, liike-energiaksi tai laitteen sisäenergiaksi, joka siirtyy lämpönä ympäristöön; sen yksikkö on joule (J), arjessa kilowattitunti (kWh).",
     "lessons": [
-      "fy2-7"
+      "fy2-7",
+      "fy6-6"
     ],
     "see_also": [
       "sähköverkko",
@@ -3665,6 +3666,127 @@
     ],
     "see_also": [
       "johde"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähköteho",
+    "definition": "Kuinka paljon sähköenergiaa komponentissa muuttuu muuksi energiaksi aikayksikössä, P = UI, missä U on komponentin jännite ja I sen läpi kulkeva virta. Yksikkö on watti, 1 W = 1 J/s = 1 V · 1 A.",
+    "lessons": [
+      "fy6-6"
+    ],
+    "see_also": [
+      "Joulen laki",
+      "sähköenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Joulen laki",
+    "definition": "Vastuksessa sisäenergiaksi muuttuva teho on P = RI² = U²/R, missä R on resistanssi, I virta ja U vastuksen jännite. Energia siirtyy vastuksesta lämpönä ympäristöön.",
+    "lessons": [
+      "fy6-6"
+    ],
+    "see_also": [
+      "sähköteho",
+      "resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lähdejännite",
+    "definition": "Jännitelähteen, kuten pariston, napojen välinen jännite silloin, kun siitä ei oteta virtaa. Lähdejännite $E$ kertoo, kuinka paljon energiaa lähde antaa varausyksikköä kohti. Yksikkö on voltti ($1\\,\\text{V} = 1\\,\\text{J/C}$).",
+    "lessons": [
+      "fy6-8"
+    ],
+    "see_also": [
+      "napajännite",
+      "sisäinen resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "napajännite",
+    "definition": "Jännitelähteen napojen välinen jännite $U$, kun lähteestä otetaan virta $I$: $U = E - R_\\text{s} I$, missä $E$ on lähdejännite ja $R_\\text{s}$ sisäinen resistanssi. Napajännite on sitä pienempi, mitä suurempi virta on.",
+    "lessons": [
+      "fy6-8"
+    ],
+    "see_also": [
+      "lähdejännite",
+      "sisäinen resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sisäinen resistanssi",
+    "definition": "Jännitelähteen oma resistanssi $R_\\text{s}$, esimerkiksi pariston elektrolyytin ja elektrodien resistanssi. Mallissa se on ideaalisen lähteen kanssa sarjassa oleva vastus, jonka jännite $R_\\text{s} I$ pienentää napajännitettä.",
+    "lessons": [
+      "fy6-8"
+    ],
+    "see_also": [
+      "lähdejännite",
+      "napajännite",
+      "oikosulku"
+    ],
+    "locked": false
+  },
+  {
+    "term": "oikosulku",
+    "definition": "Kytkentä, jossa jännitelähteen navat tai virtapiirin kaksi kohtaa yhdistetään johtimella, jonka resistanssi on lähes nolla. Pariston oikosulkuvirta on $I_\\text{k} = E : R_\\text{s}$, ja suuri virta voi kuumentaa johtimen ja pariston vaarallisesti.",
+    "lessons": [
+      "fy6-8"
+    ],
+    "see_also": [
+      "sisäinen resistanssi",
+      "lähdejännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "akku",
+    "definition": "Ladattava sähkökemiallinen jännitelähde: purkautuessaan se muuttaa kemiallista energiaa sähköenergiaksi, ja ladattaessa laturi ajaa virran sen läpi toiseen suuntaan, jolloin sähköenergiaa muuttuu takaisin kemialliseksi energiaksi. Akku ei varastoi sähkövarausta, vaan on sähköisesti neutraali.",
+    "lessons": [
+      "fy6-9"
+    ],
+    "see_also": [
+      "paristo",
+      "akun kapasiteetti",
+      "latauspiiri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "paristo",
+    "definition": "Kertakäyttöinen sähkökemiallinen jännitelähde, joka muuttaa kemiallista energiaa sähköenergiaksi. Kun sen aineet ovat reagoineet, reaktiota ei voi turvallisesti kääntää, joten paristoa ei ladata.",
+    "lessons": [
+      "fy6-9"
+    ],
+    "see_also": [
+      "akku"
+    ],
+    "locked": false
+  },
+  {
+    "term": "latauspiiri",
+    "definition": "Virtapiiri, jossa laturi ajaa virran akun läpi plusnavalta miinusnavalle. Jännitelain mukaan latausvirta on $I = (U_\\text{lat} - E) : (R + R_\\text{s})$, joten akku latautuu vain, kun laturin jännite on suurempi kuin akun lähdejännite.",
+    "lessons": [
+      "fy6-9"
+    ],
+    "see_also": [
+      "akku",
+      "lähdejännite",
+      "sisäinen resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "akun kapasiteetti",
+    "definition": "Varaus, jonka täyteen ladattu akku pystyy siirtämään piirin läpi purkautuessaan tyhjäksi, $Q = It$. Yksikkönä käytetään ampeerituntia, $1\\,\\text{Ah} = 3600\\,\\text{C}$. Akun energia on nimellisjännite kertaa kapasiteetti, ja se ilmoitetaan wattitunteina.",
+    "lessons": [
+      "fy6-9"
+    ],
+    "see_also": [
+      "akku"
     ],
     "locked": false
   },

@@ -1,0 +1,20 @@
+{
+  "id": "fy6-6",
+  "course": "FY6",
+  "title": "Electric power and the heating of a resistor",
+  "goals": [
+    "LOPS FY6: electric power and Joule's law",
+    "Clarification: how power is shared among the components of a circuit"
+  ],
+  "prerequisites": [
+    "fy6-3"
+  ],
+  "glossary": [
+    "electric power",
+    "Joule's law",
+    "electrical energy"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
