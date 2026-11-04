@@ -117,3 +117,70 @@
 **Sijoitus:** $z = \dfrac{676{,}2\,\text{nm} - 656{,}3\,\text{nm}}{656{,}3\,\text{nm}} = \dfrac{19{,}9\,\text{nm}}{656{,}3\,\text{nm}} = 0{,}030322$, $v = 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}030322 = 9090{,}5\,\text{km/s}$ ja $d = \dfrac{9090{,}5\,\text{km/s}}{70\,\tfrac{\text{km/s}}{\text{Mpc}}} = 129{,}9\,\text{Mpc}$
 **Vastaus:** $1{,}3 \cdot 10^{2}\,\text{Mpc}$, kaksi merkitsevää numeroa kuten Hubblen vakiossa $70\,\tfrac{\text{km/s}}{\text{Mpc}}$.
 **Järkevyys:** Siirtymät $13{,}2\,\text{nm}$, $14{,}8\,\text{nm}$ ja $19{,}9\,\text{nm}$ eivät ole yhtä suuria, mutta kukin on $3{,}0\,\%$ omasta aallonpituudestaan, kuten punasiirtymässä pitää. Arvio: $0{,}03 \cdot 300\,000\,\text{km/s} = 9000\,\text{km/s}$ ja $9000 : 70 \approx 130$.
+
+## fy8-16-L1-06
+**Kysytty:** mikä aiheuttaa kaukaisten galaksien spektriviivojen siirtymän pidempiin aallonpituuksiin eli punasiirtymän.
+**Periaate:** Maailmankaikkeuden avaruus laajenee, ja laajeneminen venyttää avaruudessa kulkevaa valoa. Valon aallonpituus kasvaa samassa suhteessa kuin avaruus venyy matkan aikana, joten punasiirtymä $z = \tfrac{\Delta\lambda}{\lambda_0}$ on sama osuus jokaisen viivan omasta aallonpituudesta.
+**Mallivastaus:** Punasiirtymän syy on avaruuden laajeneminen: kun avaruus venyy valon matkan aikana, myös valon aallonpituus venyy, ja kaikki spektriviivat siirtyvät pidemmille aallonpituuksille. Galaksin väri tai tähtien lämpötila ei selitä sitä, koska siirtymä koskee yhtä suurena osuutena jokaista viivaa. Pöly ja kaasu poistavat valoa vain tietyiltä aallonpituuksilta, mutta eivät siirrä viivojen paikkaa. Galaksin pyöriminen ei selitä siirtymää, koska siirtymä ei ole sama nanometrimäärä kaikille viivoille vaan kasvaa aallonpituuden ja etäisyyden mukana.
+
+## fy8-16-L1-07
+**Annettu:** galaksin etäisyys $d = 185\,\text{Mpc}$ ja etääntymisnopeus $v = 12\,800\,\text{km/s}$
+**Kysytty:** Hubblen vakio $H_0$ yksikössä $\tfrac{\text{km/s}}{\text{Mpc}}$
+**Periaate:** Hubblen ja Lemaîtren lain mukaan nopeus on suoraan verrannollinen etäisyyteen, ja verrannollisuuskerroin on Hubblen vakio. Se saadaan jakamalla nopeus etäisyydellä. Galaksin oma liike jätetään huomiotta.
+**Kaava:** $v = H_0\,d$, joten $H_0 = \dfrac{v}{d}$
+**Muunnokset:** Ei tarvita: nopeus on kilometreinä sekunnissa ja etäisyys megaparsekeina, joten tulos tulee suoraan oikeassa yksikössä.
+**Sijoitus:** $H_0 = \dfrac{12\,800\,\text{km/s}}{185\,\text{Mpc}} = 69{,}19\,\tfrac{\text{km/s}}{\text{Mpc}}$
+**Vastaus:** $69{,}2\,\tfrac{\text{km/s}}{\text{Mpc}}$, kolme merkitsevää numeroa kuten annetuissa arvoissa $185\,\text{Mpc}$ ja $12\,800\,\text{km/s}$.
+**Järkevyys:** Tarkistus kertomalla: $69{,}2\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 185\,\text{Mpc} = 12\,800\,\text{km/s}$. Arvo on lähellä Hubblen vakion tunnettua arvoa $70\,\tfrac{\text{km/s}}{\text{Mpc}}$, ja yhden galaksin mittauksessa pieni ero johtuu mittausepävarmuudesta ja galaksin omasta liikkeestä.
+
+## fy8-16-L1-08
+**Kysytty:** mistä kosmisen taustasäteilyn lähes tasainen säteily joka suunnasta on peräisin.
+**Periaate:** Noin $380\,000$ vuotta alkuräjähdyksen jälkeen atomit syntyivät ja maailmankaikkeus muuttui läpinäkyväksi, jolloin säteily pääsi kulkemaan vapaasti. Se tulee joka suunnasta, koska kuuma ja tiheä maailmankaikkeus oli kaikkialla samanlainen. Laajeneminen on sittemmin venyttänyt sen aallonpituudet noin $1100$-kertaisiksi, joten nyt säteily on mikroaaltoja, joiden lämpötila on $2{,}725\,\text{K}$.
+**Mallivastaus:** Taustasäteily on säteilyä, joka vapautui atomien syntyessä, ja avaruuden laajeneminen on venyttänyt sen mikroaalloiksi. Se ei ole tähtien ja galaksien valoa, koska ne ovat vain tietyissä suunnissa ja syntyivät vasta taustasäteilyn vapautumisen jälkeen. Se ei myöskään ole pimeän aineen säteilyä, koska pimeä aine ei säteile. Supernovat eivät selitä sitä, koska ne ovat yksittäisiä tapahtumia eivätkä tuota lähes täsmälleen samanlaista säteilyä joka suunnasta.
+
+## fy8-16-L2-05
+**Annettu:** yhdeksän galaksin etäisyydet $d$ ja nopeudet $v$ taulukossa (esimerkkiaineisto)
+**Kysytty:** a) Hubblen vakio $H_0$ yksikössä $\tfrac{\text{km/s}}{\text{Mpc}}$; b) suorasta suhteellisesti eniten poikkeava piste ja poikkeaman syy
+**Periaate:** Hubblen ja Lemaîtren lain $v = H_0\,d$ mukaan pisteiden $(d, v)$ pitäisi olla origon kautta kulkevalla suoralla, jonka kulmakerroin on $H_0$. Mittauspisteet eivät ole täsmälleen suoralla, koska mittauksissa on epävarmuutta ja galakseilla on myös omaa liikettä.
+**Kuvaajan lukeminen:** Piirretään vaaka-akselille $d$ (0–$250\,\text{Mpc}$) ja pystyakselille $v$ (0–$17\,000\,\text{km/s}$) ja merkitään yhdeksän pistettä. Sovitettu origon kautta kulkeva suora kulkee esimerkiksi pisteen $(200\,\text{Mpc}, 13\,700\,\text{km/s})$ kautta, ja sen kulmakerroin on $\dfrac{13\,700\,\text{km/s}}{200\,\text{Mpc}} = 68{,}5\,\tfrac{\text{km/s}}{\text{Mpc}}$. Silmällä sovitettu suora antaa $66$–$71\,\tfrac{\text{km/s}}{\text{Mpc}}$.
+**Kaava:** $H_0 = \dfrac{\Delta v}{\Delta d}$ suoran kulmakertoimena. Laskennallinen pienimmän neliösumman sovitus origon kautta: $H_0 = \dfrac{\sum d\,v}{\sum d^{2}}$
+**Muunnokset:** Ei tarvita: etäisyys on megaparsekeina ja nopeus kilometreinä sekunnissa, joten kulmakerroin saadaan suoraan yksikössä $\tfrac{\text{km/s}}{\text{Mpc}}$.
+**Sijoitus:** Summat ovat $\sum d\,v = 11\,439\,330\,\tfrac{\text{km}}{\text{s}}\,\text{Mpc}$ ja $\sum d^{2} = 167\,127\,\text{Mpc}^{2}$, joten $H_0 = \dfrac{11\,439\,330}{167\,127}\,\tfrac{\text{km/s}}{\text{Mpc}} = 68{,}45\,\tfrac{\text{km/s}}{\text{Mpc}}$.
+b) Suora antaa etäisyydellä $28\,\text{Mpc}$ nopeuden $68{,}45 \cdot 28\,\text{km/s} = 1917\,\text{km/s}$, mutta mitattu on $2260\,\text{km/s}$. Poikkeama on $343\,\text{km/s}$ eli $18\,\%$. Muiden pisteiden poikkeama on enintään $3\,\%$ suoran arvosta.
+**Vastaus:** $68\,\tfrac{\text{km/s}}{\text{Mpc}}$ (tarkemmin $68{,}4$), kaksi merkitsevää numeroa. b) Eniten poikkeaa lähin galaksi $28\,\text{Mpc}$:n päässä. Poikkeama johtuu galaksin omasta liikkeestä, tyypillisesti muutamia satoja kilometrejä sekunnissa: lähellä laajenemisnopeus on pieni, joten sama oma liike on siellä suuri osa nopeudesta, kaukana pieni.
+**Järkevyys:** Jokaisen pisteen suhde $\tfrac{v}{d}$ on $66$–$81\,\tfrac{\text{km/s}}{\text{Mpc}}$ ja kahdeksalla yhdeksästä $66$–$70\,\tfrac{\text{km/s}}{\text{Mpc}}$, joten tulos $68\,\tfrac{\text{km/s}}{\text{Mpc}}$ on niiden välissä. Se on lähellä Hubblen vakion tunnettua arvoa $67$–$70\,\tfrac{\text{km/s}}{\text{Mpc}}$.
+
+## fy8-16-L2-06
+**Annettu:** $\lambda_0 = 486{,}1\,\text{nm}$, $\lambda = 505{,}5\,\text{nm}$, $H_0 = 70\,\tfrac{\text{km/s}}{\text{Mpc}}$, $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$; oppilaan tulos $d = 8{,}4 \cdot 10^{5}\,\text{Mpc}$
+**Kysytty:** a) oppilaan virhe; b) galaksin etäisyys $d$ megaparsekeina
+**Periaate:** Oppilaan punasiirtymä $z$ ja nopeus $v = c\,z$ ovat oikein, koska $z$ on pieni. Virhe on viimeisessä vaiheessa: Hubblen ja Lemaîtren laki on $v = H_0\,d$, joten etäisyys saadaan jakamalla nopeus Hubblen vakiolla, ei kertomalla. Kertolasku antaa yksikön $\tfrac{\text{km}^2}{\text{s}^2\,\text{Mpc}}$, joka ei ole etäisyyden yksikkö.
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $v = c\,z$ ja $v = H_0\,d$, joten $d = \dfrac{v}{H_0}$
+**Muunnokset:** Ei tarvita: nanometrit supistuvat punasiirtymästä, ja kilometrit sekunnissa supistuvat, kun nopeus jaetaan Hubblen vakiolla.
+**Sijoitus:** $z = \dfrac{505{,}5\,\text{nm} - 486{,}1\,\text{nm}}{486{,}1\,\text{nm}} = \dfrac{19{,}4\,\text{nm}}{486{,}1\,\text{nm}} = 0{,}03991$, $v = 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}03991 = 11\,965\,\text{km/s}$ ja $d = \dfrac{11\,965\,\text{km/s}}{70\,\tfrac{\text{km/s}}{\text{Mpc}}} = 170{,}9\,\text{Mpc}$
+**Vastaus:** $171\,\text{Mpc}$, kolme merkitsevää numeroa kuten aallonpituuksissa. Oppilaan virhe oli kertoa nopeus Hubblen vakiolla jakamisen sijasta.
+**Järkevyys:** Tarkistus kertomalla: $70\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 171\,\text{Mpc} \approx 11\,970\,\text{km/s}$, sama kuin nopeus. Oppilaan tulos $8{,}4 \cdot 10^{5}\,\text{Mpc}$ on noin $5000$ kertaa liian suuri: nopeus $12\,000\,\text{km/s}$ on vain $4\,\%$ valon nopeudesta, joten galaksin pitää olla satojen eikä satojentuhansien megaparsekien päässä.
+
+## fy8-16-L2-07
+**Kysytty:** mikä oppilaan päättelyssä on virheellistä ja mikä korjaus on oikea.
+**Periaate:** Alkuräjähdys ei ollut räjähdys avaruuden tietyssä kohdassa, vaan avaruus itse alkoi laajeta kaikkialla. Laajenemisessa kaikki galaksien väliset etäisyydet kasvavat samassa suhteessa, joten jokaisesta galaksista katsoen muut galaksit loittonevat samalla tavalla: nopeus on verrannollinen etäisyyteen, $v = H_0\,d$. Siksi laajenemisella ei ole keskipistettä eikä reunaa.
+**Mallivastaus:** Oppilaan havainto on oikein, mutta johtopäätös on väärä: se, että galaksit loittonevat meistä joka suunnassa, ei tee Linnunradasta keskipistettä. Avaruus laajenee kaikkialla, joten jokaisesta galaksista katsoen muut loittonevat samalla tavalla eikä keskipistettä ole. Jos räjähdyksellä olisi paikka, loittoneminen näyttäisi eri galakseista erilaiselta, mutta havainnot eivät tue sitä. Hubblen ja Lemaîtren lain mukaan kaukaiset galaksit loittonevat nopeammin, eivät hitaammin, joten väite hitaammasta loittonemisesta kaukana on virheellinen. Väite väsyvästä valosta on myös väärä, koska galaksien väliset etäisyydet todella kasvavat avaruuden laajetessa.
+
+## fy8-16-L3-04
+**Annettu:** esimerkkiaineisto: ratanopeudet $v_\text{hav}$ ja mallin nopeudet $v_\text{näk}$ seitsemällä etäisyydellä $r = 2$–$30\,\text{kpc}$ taulukossa; $r = 10\,\text{kpc}$: $v_\text{hav} = 207\,\text{km/s}$, $v_\text{näk} = 185\,\text{km/s}$; $r = 30\,\text{kpc}$: $v_\text{hav} = 213\,\text{km/s}$, $v_\text{näk} = 113\,\text{km/s}$
+**Kysytty:** a) nopeuksien suhteelliset muutokset välillä $10$–$30\,\text{kpc}$; b) suhde $\tfrac{v_\text{hav}}{v_\text{näk}}$ etäisyydellä $30\,\text{kpc}$; c) tulkinta massasta ja pimeästä aineesta
+**Periaate:** Jos kaikki galaksin aine näkyisi tähtinä, kaasuna ja pölynä, ratanopeuden pitäisi laskea reunoille mentäessä, koska ulommas tuleva massa ei enää kasva mutta etäisyys kasvaa. Tämä on sarake $v_\text{näk}$. Jos havaittu nopeus pysyy suurena, galaksissa on näkyvän aineen lisäksi muuta ainetta, joka vaikuttaa tähtiin painovoimallaan.
+**Kaava:** Suhteellinen muutos on $\dfrac{v_{30} - v_{10}}{v_{10}} \cdot 100\,\%$, ja nopeuksien suhde on $q = \dfrac{v_\text{hav}}{v_\text{näk}}$
+**Muunnokset:** Ei tarvita: kaikki nopeudet ovat kilometreinä sekunnissa, joten yksikkö supistuu suhteesta.
+**Sijoitus:** a) Havaittu: $\dfrac{213 - 207}{207} \cdot 100\,\% = +2{,}9\,\%$. Malli: $\dfrac{113 - 185}{185} \cdot 100\,\% = -38{,}9\,\%$. b) $\dfrac{v_\text{hav}}{v_\text{näk}} = \dfrac{213\,\text{km/s}}{113\,\text{km/s}} = 1{,}885$
+**Vastaus:** $1{,}88$, kolme merkitsevää numeroa kuten taulukon nopeuksissa. a) Havaittu nopeus kasvaa $2{,}9\,\%$, mallin nopeus laskee $38{,}9\,\%$. c) Reunalla tähdet kiertävät lähes kaksi kertaa niin nopeasti kuin näkyvä aine yksin sallisi, joten galaksissa on paljon ainetta, joka ei näy. Se on pimeää ainetta: se ei säteile eikä absorboi valoa, mutta vaikuttaa tähtiin painovoimallaan.
+**Järkevyys:** Ero ei ole satunnainen: suhde kasvaa tasaisesti ulospäin, $\tfrac{214}{160} = 1{,}34$ kohdassa $15\,\text{kpc}$, $\tfrac{211}{138} = 1{,}53$ kohdassa $20\,\text{kpc}$, $\tfrac{217}{124} = 1{,}75$ kohdassa $25\,\text{kpc}$ ja $1{,}88$ kohdassa $30\,\text{kpc}$. Muutaman kilometrin mittausvirhe ei tuota lähes kaksinkertaista eroa neljässä peräkkäisessä pisteessä. Keskustan lähellä, kohdissa $2\,\text{kpc}$ ja $5\,\text{kpc}$, suhde on $\tfrac{95}{98} = 0{,}97$ ja $\tfrac{168}{172} = 0{,}98$ eli noin $1$, joten malli toimii siellä, missä näkyvä aine hallitsee.
+
+## fy8-16-L3-05
+**Annettu:** Lyman-alfa-viiva laboratoriossa $\lambda_0 = 121{,}6\,\text{nm}$ ja kvasaarin spektrissä $\lambda = 486{,}4\,\text{nm}$; nykyinen taustasäteilyn lämpötila $T_\text{nyt} = 2{,}725\,\text{K}$; lämpötila on kääntäen verrannollinen avaruuden venymiseen
+**Kysytty:** a) punasiirtymä $z$; b) miksi $v = c\,z$ ei päde; c) taustasäteilyn lämpötila $T$ silloin, kun valo lähti matkaan, kelvineinä
+**Periaate:** Valon aallonpituus on venynyt samassa suhteessa kuin avaruus, joten venymiskerroin on $k = \tfrac{\lambda}{\lambda_0} = 1 + z$. Kaava $v = c\,z$ on likiarvo vain pienellä punasiirtymällä, noin $z < 0{,}1$. Taustasäteilyn lämpötila oli silloin $k$ kertaa nykyinen. Sääntö täsmää: $2{,}725\,\text{K} \cdot 1100 \approx 3000\,\text{K}$.
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $k = 1 + z$ ja $T = k\,T_\text{nyt}$
+**Muunnokset:** Ei tarvita: aallonpituudet ovat nanometreinä, ja yksikkö supistuu.
+**Sijoitus:** a) $z = \dfrac{486{,}4\,\text{nm} - 121{,}6\,\text{nm}}{121{,}6\,\text{nm}} = \dfrac{364{,}8\,\text{nm}}{121{,}6\,\text{nm}} = 3{,}000$. b) $v = c\,z = 3{,}000\,c = 8{,}99 \cdot 10^{5}\,\text{km/s}$. c) $k = 1 + 3{,}000 = 4{,}000$ ja $T = 4{,}000 \cdot 2{,}725\,\text{K} = 10{,}9\,\text{K}$
+**Vastaus:** $10{,}9\,\text{K}$, kolme merkitsevää numeroa kuten punasiirtymässä $z = 3{,}00$. a) $z = 3{,}00$. b) Kolminkertainen valon nopeus on mahdoton, koska mikään ei liiku valoa nopeammin avaruudessa. Kaava $v = c\,z$ pätee vain pienellä punasiirtymällä $z < 0{,}1$, ja nyt $z = 3{,}00$ on paljon suurempi.
+**Järkevyys:** Lämpötila $10{,}9\,\text{K}$ on suurempi kuin nykyinen $2{,}725\,\text{K}$ mutta paljon pienempi kuin $3000\,\text{K}$ taustasäteilyn vapautuessa, kuten pitää, koska kvasaarin valo lähti paljon myöhemmin kuin taustasäteily. Tyypillinen aallonpituus oli silloin $1{,}06\,\text{mm} : 4 = 0{,}265\,\text{mm}$, ja tulo $T \cdot \lambda$ on sama kuin nyt: $10{,}9\,\text{K} \cdot 0{,}265\,\text{mm} = 2{,}89\,\text{K mm}$ ja $2{,}725\,\text{K} \cdot 1{,}06\,\text{mm} = 2{,}89\,\text{K mm}$.

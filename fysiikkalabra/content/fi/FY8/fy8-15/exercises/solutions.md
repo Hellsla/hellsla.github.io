@@ -48,6 +48,26 @@
 **Vastaus:** $6$. Tulos on tarkka kokonaisluku.
 **Järkevyys:** Ytimessä on $4 \cdot 3 = 12$ kvarkkia, joista $d$-kvarkkeja on $2 \cdot 1 + 2 \cdot 2 = 6$, ja $6 + 6 = 12$. Varaus on $6 \cdot \tfrac{2}{3}e - 6 \cdot \tfrac{1}{3}e = +2e$, kuten kahden protonin ytimellä pitää.
 
+## fy8-15-L1-06
+**Kysytty:** minkä perusvuorovaikutuksen välittäjähiukkanen fotoni on.
+**Periaate:** Jokaisella perusvuorovaikutuksella on omat välittäjähiukkasensa: fotoni välittää sähkömagneettisen, gluoni vahvan ja $W$- ja $Z$-bosonit heikon vuorovaikutuksen. Gravitaation välittäjä, gravitoni, on hypoteettinen.
+**Mallivastaus:** Fotoni välittää sähkömagneettisen vuorovaikutuksen, joka vaikuttaa sähköisesti varattujen hiukkasten välillä. Vahva vuorovaikutus sitoo kvarkit yhteen, mutta sen välittäjä on gluoni. Heikko vuorovaikutus muuttaa neutronin protoniksi $W^-$-bosonin välityksellä. Gravitaatio ei kuulu standardimalliin, eikä sen välittäjä ole fotoni.
+
+## fy8-15-L1-07
+**Kysytty:** mitä positronin ominaisuuksista pätee, kun se on elektronin antihiukkanen.
+**Periaate:** Antihiukkasella on sama massa kuin hiukkasella, mutta varaus ja leptoniluku ovat vastakkaiset. Siksi elektronin ja positronin ero näkyy vain näissä luvuissa, ei massassa.
+**Mallivastaus:** Positronin massa on sama kuin elektronin, mutta sen varaus on $+e$ ja leptoniluku $-1$, kun elektronilla ne ovat $-e$ ja $+1$. Positroni ei ole kevyempi, koska antihiukkasen massa on aina sama kuin hiukkasen. Sen varaus ei ole sama kuin elektronilla eikä nolla: yhden hiukkasen varaus ei kumoudu, vaan varaukset kumoavat toisensa vasta elektronin ja positronin yhteisessä systeemissä.
+
+## fy8-15-L1-08
+**Annettu:** $\pi^+ = u\,\bar{d}$; $q_u = +\tfrac{2}{3}e$, $q_d = -\tfrac{1}{3}e$
+**Kysytty:** pionin varaus $q$ alkeisvarauksen $e$ monikertana
+**Periaate:** Mesonin varaus on kvarkin ja antikvarkin varausten summa. Antikvarkin varaus on vastakkainen kuin vastaavan kvarkin, joten $\bar{d}$:n varaus on $+\tfrac{1}{3}e$.
+**Kaava:** $q = q_u + q_{\bar{d}}$, josta $q = q_u - q_d$
+**Muunnokset:** Ei tarvita, koska varaukset ilmoitetaan alkeisvarauksen $e$ monikertoina.
+**Sijoitus:** $q = \tfrac{2}{3}e - \left(-\tfrac{1}{3}e\right) = \tfrac{2}{3}e + \tfrac{1}{3}e = +1\,e$
+**Vastaus:** $+1\,e$. Tulos on tarkka, koska kvarkkien varaukset ovat tarkkoja murtolukuja.
+**Järkevyys:** Pionin merkintä $\pi^+$ kertoo varauksen $+e$, ja se täsmää. Pioni on mesoni, joten kvarkin ja antikvarkin varausten murto-osat täydentävät toisensa kokonaisluvuksi, kuten jokaisella hadronilla.
+
 ## fy8-15-L2-01
 **Annettu:** ydin ${}^{12}_{6}\text{C}$: järjestysluku $Z = 6$, massaluku $A = 12$; protoni $uud$, neutroni $udd$
 **Kysytty:** $d$-kvarkkien määrä $N_d$
@@ -88,6 +108,31 @@
 **Vastaus:** $1{,}23\,\%$, kolme merkitsevää numeroa kuten kvarkkien massoissa.
 **Järkevyys:** Kvarkkien massat ovat muutamia $\tfrac{\text{MeV}}{c^2}$, neutronin lähes $1000\,\tfrac{\text{MeV}}{c^2}$, joten osuus on noin prosentin luokkaa. Loput noin $99\,\%$ neutronin massasta on kvarkkeja sitovan vahvan vuorovaikutuksen energiaa.
 
+## fy8-15-L2-05
+**Annettu:** taulukosta seitsemän yhdistelmää: (1) $u\,u\,d$, (2) $u\,d$, (3) $d\,\bar{s}$, (4) $u\,u\,\bar{d}$, (5) $\bar{u}\,\bar{u}\,\bar{d}$, (6) $s\,s\,s$, (7) $u\,\bar{s}$; $q_u = +\tfrac{2}{3}e$, $q_d = q_s = -\tfrac{1}{3}e$
+**Kysytty:** niiden yhdistelmien lukumäärä $N$, jotka voivat olla hadroneja
+**Periaate:** Hadronin varaus ja baryoniluku ovat kokonaislukuja. Varaus on osien varausten summa, ja baryoniluku lasketaan kvarkkien ja antikvarkkien määristä. Yhdistelmä, jonka toinen luku on murtoluku, ei ole hadroni.
+**Kaava:** $q = \sum q_i$ ja $B = \dfrac{n_\text{q} - n_{\bar{\text{q}}}}{3}$; hadroni, kun sekä $q$ että $B$ ovat kokonaislukuja
+**Muunnokset:** Ei tarvita, koska varaukset ovat alkeisvarauksen $e$ monikertoja ja määrät lukumääriä.
+**Sijoitus:** (1) $q = \tfrac{2}{3} + \tfrac{2}{3} - \tfrac{1}{3} = 1$, $B = \tfrac{3-0}{3} = 1$: kyllä. (2) $q = \tfrac{1}{3}$, $B = \tfrac{2}{3}$: ei. (3) $q = -\tfrac{1}{3} + \tfrac{1}{3} = 0$, $B = 0$: kyllä. (4) $q = \tfrac{4}{3} + \tfrac{1}{3} = \tfrac{5}{3}$, $B = \tfrac{1}{3}$: ei. (5) $q = -\tfrac{4}{3} + \tfrac{1}{3} = -1$, $B = -1$: kyllä. (6) $q = -1$, $B = 1$: kyllä. (7) $q = \tfrac{2}{3} + \tfrac{1}{3} = 1$, $B = 0$: kyllä. Kyllä-rivejä on $N = 5$.
+**Vastaus:** $5$ yhdistelmää (rivit 1, 3, 5, 6 ja 7). Tulos on tarkka kokonaisluku.
+**Järkevyys:** Kyllä-rivit ovat hiukkasia, jotka tunnetaan: protoni (1), kaoni $K^0$ (3), antiprotoni (5), omega-baryoni (6) ja kaoni $K^+$ (7). Ei-rivit ovat kahden kvarkin yhdistelmä ja kvarkkien ja antikvarkin sekoitus, joissa varaus on murtoluku, ja $5 + 2 = 7$ riviä.
+
+## fy8-15-L2-06
+**Annettu:** taulukosta seitsemän reaktiota; $\nu$: $L = +1$, $\bar{\nu}$: $L = -1$; muiden hiukkasten luvut luvun taulukosta
+**Kysytty:** niiden reaktioiden lukumäärä $N$, joissa jokin säilymislaki rikkoutuu
+**Periaate:** Varaus, baryoniluku ja leptoniluku säilyvät kaikissa havaituissa reaktioissa. Reaktio on kielletty, jos jokin luvuista on alussa eri kuin lopussa. Luvut lasketaan reaktion kummallakin puolella erikseen.
+**Kaava:** $q_\text{alku} = q_\text{loppu}$, $B_\text{alku} = B_\text{loppu}$ ja $L_\text{alku} = L_\text{loppu}$
+**Muunnokset:** Ei tarvita, koska luvut ovat yksiköttömiä.
+**Sijoitus:** (1) $L$: $0 = 0 + 1 - 1$, sallittu. (2) kaikki luvut $0$ molemmin puolin, sallittu. (3) $L$: $0 \ne 0 + 1$, kielletty. (4) $q$: $+1 - 1 = 0$, $B$: $1 = 1$ ja $L$: $0 + 1 = 0 + 1$, sallittu. (5) $q$: $+1 + 0 = 1 \ne 2$, kielletty. (6) $q$: $-1 = -1$ ja $L$: $0 = 1 - 1$, sallittu. (7) $B$: $1 + 1 = 2 \ne 0$, kielletty. Kiellettyjä on $N = 3$.
+**Vastaus:** $3$ reaktiota (3, 5 ja 7). Tulos on tarkka kokonaisluku.
+**Järkevyys:** Jokainen kielletty reaktio rikkoo eri lakia: reaktio 3 leptolukua, reaktio 5 varausta ja reaktio 7 baryolukua. Sallittuja on $7 - 3 = 4$. Reaktio 1 on neutronin beetahajoaminen ja reaktio 2 protonin ja antiprotonin annihilaatio, jotka tunnetaan.
+
+## fy8-15-L2-07
+**Kysytty:** mikä opiskelijan väitteessä ”vapaa neutroni on hajoamaton, koska se on perushiukkanen” on virheellistä.
+**Periaate:** Perushiukkasella ei ole osia, mutta neutroni koostuu kolmesta kvarkista $u\,d\,d$. Hiukkanen voi hajota, jos varaus, baryoniluku ja leptoniluku säilyvät ja syntyvien hiukkasten massa on pienempi.
+**Mallivastaus:** Virhe on lähtöoletus: neutroni ei ole perushiukkanen vaan koostuu kvarkeista, ja heikossa vuorovaikutuksessa sen $d$-kvarkki voi muuttua $u$-kvarkiksi. Neutroni hajoaa reaktiolla $n \to p + e^- + \bar{\nu}_e$, ja siinä vapautuu energiaa $(939{,}565 - 938{,}272 - 0{,}511)\,\text{MeV} = 0{,}782\,\text{MeV}$. Väite on väärä myös yleisesti, koska kaikki perushiukkaset eivät hajoa. Elektroni on perushiukkanen, jonka ei ole nähty hajoavan, ja energian säilyminen ei estä neutronin hajoamista. Neutronilla on antihiukkanen, antineutroni, mutta se ei vaikuta hajoamiseen.
+
 ## fy8-15-L3-01
 **Annettu:** $\Omega^- = s\,s\,s$, $m_\Omega = 1672{,}45\,\tfrac{\text{MeV}}{c^2}$; $\Lambda^0 = u\,d\,s$, $m_\Lambda = 1115{,}683\,\tfrac{\text{MeV}}{c^2}$; $\Sigma^0 = u\,d\,s$, $m_\Sigma = 1192{,}642\,\tfrac{\text{MeV}}{c^2}$; $K^- = s\,\bar{u}$, $m_K = 493{,}677\,\tfrac{\text{MeV}}{c^2}$; $\pi^0$ varaukseton mesoni, $m_\pi = 134{,}977\,\tfrac{\text{MeV}}{c^2}$
 **Kysytty:** mahdollinen reaktio ja siinä vapautuva energia $Q$ megaelektronivoltteina
@@ -117,3 +162,23 @@
 **Sijoitus:** $L_X = -1 + 0 - 0 = -1$; samoin $q_X = 0 + 1 - 0 = +1$ ja $B_X = 0 + 1 - 1 = 0$
 **Vastaus:** $L_X = -1$. Tulos on tarkka kokonaisluku. Hiukkanen, jonka $q = +1$, $B = 0$ ja $L = -1$, on antilepton eli positroni $e^+$: $\bar{\nu}_e + p \to n + e^+$.
 **Järkevyys:** Reaktio on beeta plus -hajoamisen kaltainen: protoni muuttuu neutroniksi ja syntyy positroni. Cowanin ja Reinesin koe havaitsi juuri positronin annihilaatiosta syntyneet $511\,\text{keV}$:n fotonit ja neutronin sieppauksen.
+
+## fy8-15-L3-04
+**Annettu:** taulukosta fotonien energiat $0{,}662$, $1{,}173$, $1{,}333$, $1{,}461$ ja $2{,}615\,\text{MeV}$; lepoenergia $m_e c^2 = 0{,}511\,\text{MeV}$ sekä elektronille että positronille
+**Kysytty:** a) fotonit, jotka voivat synnyttää parin; b) elektronin liike-energia $E_k$ megaelektronivoltteina suurienergisimmästä fotonista; c) annihilaatiofotonien energia ja sen riippumattomuus
+**Periaate:** Parinmuodostuksessa fotonin energiasta syntyvät hiukkasten lepoenergiat, joten fotonin energian on oltava vähintään $2\,m_e c^2$. Ylimenevä energia on hiukkasten liike-energiaa, ja energia säilyy. Ytimen liike-energia jätetään huomiotta, joten liike-energia jakautuu tasan elektronin ja positronin kesken.
+**Kaava:** kynnys $E_\text{min} = 2\,m_e c^2$; energian säilyminen $E_\gamma = 2\,m_e c^2 + 2\,E_k$, josta $E_k = \dfrac{E_\gamma - 2\,m_e c^2}{2}$
+**Muunnokset:** Ei tarvita: kaikki energiat ovat jo megaelektronivoltteina.
+**Sijoitus:** a) $E_\text{min} = 2 \cdot 0{,}511\,\text{MeV} = 1{,}022\,\text{MeV}$. Fotonit $1{,}173$, $1{,}333$, $1{,}461$ ja $2{,}615\,\text{MeV}$ ylittävät kynnyksen, mutta $0{,}662\,\text{MeV}$ ei. b) $E_k = \dfrac{2{,}615\,\text{MeV} - 1{,}022\,\text{MeV}}{2} = \dfrac{1{,}593\,\text{MeV}}{2} = 0{,}7965\,\text{MeV}$. c) Annihilaatiossa levossa olevat positroni ja elektroni muuttuvat kahdeksi fotoniksi, joilla on yhtä suuri energia, joten $E_\gamma = m_e c^2 = 0{,}511\,\text{MeV}$.
+**Vastaus:** $0{,}80\,\text{MeV}$ (tarkemmin $0{,}7965\,\text{MeV}$), kaksi merkitsevää numeroa pyöristettäessä. Parin voivat synnyttää neljä fotonia: $1{,}173$, $1{,}333$, $1{,}461$ ja $2{,}615\,\text{MeV}$. Annihilaatiofotoneilla on energia $0{,}511\,\text{MeV}$, ja se ei riipu alkuperäisestä fotonista, koska levossa olevien hiukkasten koko energia on niiden lepoenergia: liike-energia on jo kulunut hidastumiseen.
+**Järkevyys:** Liike-energia ja lepoenergiat yhdessä: $2 \cdot 0{,}7965 + 1{,}022 = 2{,}615$, joten energia täsmää fotoniin. Liike-energia on noin $61\,\%$ fotonin energiasta, koska $1{,}593 : 2{,}615 = 0{,}609$, ja se kasvaa fotonin energian kasvaessa. Kynnyksen alla oleva fotoni ($0{,}662\,\text{MeV} < 1{,}022\,\text{MeV}$) ei riitä lepoenergioihin.
+
+## fy8-15-L3-05
+**Annettu:** taulukosta $\pi^-$: $d\,\bar{u}$, $p$: $u\,u\,d$, $\Lambda^0$: $u\,d\,s$, $K^0$: $d\,\bar{s}$, $m_{K} = 497{,}611\,\tfrac{\text{MeV}}{c^2}$, $m_\pi = 139{,}570\,\tfrac{\text{MeV}}{c^2}$ ($\pi^+$ ja $\pi^-$ yhtä massaiset)
+**Kysytty:** a) säilymislakien ja kvarkkien tarkistus; b) hajoamisessa $K^0 \to \pi^+ + \pi^-$ vapautuva energia $Q$ megaelektronivoltteina; c) selitys kuvan jäljille
+**Periaate:** Reaktio on mahdollinen, kun varaus ja baryoniluku säilyvät ja jokaisen kvarkkilajin nettomäärä on sama alussa ja lopussa (antikvarkki vähentää nettomäärää yhdellä). Hajoamisessa vapautuva energia on massojen erotus kerrottuna $c^2$:lla, koska massat ovat yksikössä $\tfrac{\text{MeV}}{c^2}$.
+**Kaava:** $Q = (m_K - m_{\pi^+} - m_{\pi^-})\,c^2$, josta $Q = (m_K - 2\,m_\pi)\,c^2$
+**Muunnokset:** Ei tarvita: $c^2$ supistuu, ja energia saadaan megaelektronivoltteina.
+**Sijoitus:** a) Varaus: $-1 + 1 = 0$ ja $0 + 0 = 0$. Baryoniluku: $0 + 1 = 1$ ja $1 + 0 = 1$. Kvarkit alussa: $u$: $-1 + 2 = 1$, $d$: $1 + 1 = 2$, $s$: $0$. Lopussa: $u$: $1 + 0 = 1$, $d$: $1 + 1 = 2$, $s$: $1 - 1 = 0$. Kaikki täsmäävät. b) $Q = (497{,}611 - 2 \cdot 139{,}570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = (497{,}611 - 279{,}140)\,\text{MeV} = 218{,}471\,\text{MeV}$. c) Varauksettomat hiukkaset $\Lambda^0$ ja $K^0$ eivät ionisoi kammion nestettä, joten ne eivät jätä jälkeä. Ne jättävät jäljen vasta hajotessaan varatuiksi hiukkasiksi V:n kärjessä. Varaus säilyy, joten hajoamisessa syntyvien hiukkasten varaukset ovat vastakkaiset ($+1$ ja $-1$), ja magneettikenttä taivuttaa ne vastakkaisiin suuntiin.
+**Vastaus:** $218{,}5\,\text{MeV}$ (tarkemmin $218{,}471\,\text{MeV}$), neljä merkitsevää numeroa kuten kaonin massa. Reaktio $\pi^- + p \to \Lambda^0 + K^0$ säilyttää kaiken tarkistetun, ja jäljettömyys ja haarojen vastakkainen kaareutuminen selittyvät varauksella.
+**Järkevyys:** Pyöristettynä $498 - 280 = 218$, lähellä tulosta. Energia on positiivinen, joten hajoaminen on mahdollinen, ja se on noin $44\,\%$ kaonin lepoenergiasta, koska $218{,}5 : 497{,}6 = 0{,}439$. Tulos on suurempi kuin lambdan hajoamisen $37{,}8\,\text{MeV}$, koska pionit ovat kevyitä verrattuna kaoniin.

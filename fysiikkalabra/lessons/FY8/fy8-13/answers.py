@@ -26,4 +26,15 @@ HB = 80 * 0.5 ** (18 / 6.0) * 0.5                      # B: 1,0 m, 18 mm lead, 3
 a["fy8-13-L3-01"] = HA - HB                            # H_A - H_B = +5,0 µSv: B gives the smaller dose
 a["fy8-13-L3-02"] = 4.0 * 400 / 94 + 1.9               # 400 Bq/m³: radon 17,02 + others 1,9 = 18,92 mSv -> 19 mSv
 a["fy8-13-L3-03"] = 0.12 * 20 * 0.10 + 1 * 0.50        # lungs alpha 0,10 mGy -> 0,24 mSv; whole body gamma 0,50 mGy -> 0,50: 0,74 mSv
+# Exercise-bank additions (L1-06 is a multiple-choice task: no number)
+a["fy8-13-L1-07"] = 0.04 * 2.0 + 0.12 * 1.0            # liver 0,04 · 2,0 + stomach 0,12 · 1,0 = 0,080 + 0,12 = 0,20 mSv
+a["fy8-13-L1-08"] = 0.10 / 5.9 * 100                   # chest X-ray 0,10 mSv of 5,9 mSv: 1,69 % -> 1,7 %
+a["fy8-13-L2-05"] = 4.0 / (4.0 + 0.7 + 0.6 + 0.3 + 0.3) * 100   # sum 5,9 mSv; radon share 4,0 / 5,9 = 67,8 % -> 68 %
+k = [r * r * h for r, h in [(0.50, 410), (1.00, 98.0), (1.50, 44.0), (2.00, 26.0)]]   # H r^2: 102,5; 98,0; 99,0; 104,0
+a["fy8-13-L2-06"] = sum(k) / len(k) / 3.0 ** 2         # k_ka = 100,875 (sum 403,5 / 4); H(3,0 m) = 11,2 µSv/h
+a["fy8-13-L2-07"] = 20 * 0.63e-3 / 1.8 * 1e3           # liver 0,63 mJ in 1,8 kg: D = 0,35 mGy; alpha w_R = 20: 7,0 mSv
+cm = (380 + 260 + 140 + 300) / 4                       # sum 1080 / 4 = 270 Bq/m³ (annual mean); dose now 4,0 · 270/94 · 0,80 = 9,19 mSv
+a["fy8-13-L3-04"] = 2.0 / (4.0 * 0.80) * 94            # target 2,0 mSv: c = 2,0 / (4,0 · 0,80) · 94 = 58,75 Bq/m³ -> 59
+Hd5 = 240 * (1.0 / 2.0) ** 2 * 0.5 ** (10 / 4.0)       # 240 µSv/h at 1,0 m, 2,0 m, 10 cm concrete d½ 4,0 cm: 10,61 µSv/h
+a["fy8-13-L3-05"] = 25 / Hd5                           # t = 25 µSv : 10,61 µSv/h = 2,357 h -> 2,4 h
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
