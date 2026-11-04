@@ -21,7 +21,7 @@
     {
       "id": "fy4-13-L1-03",
       "level": 1,
-      "text": "Kärry, jonka massa on $1{,}0\\,\\text{kg}$, on kitkattomalla pöydällä. Siihen sidottu kevyt ja venymätön lanka kulkee pöydän reunalla olevan kevyen ja kitkattoman väkipyörän yli, ja langan päässä roikkuu punnus, jonka massa on $0{,}40\\,\\text{kg}$. Ilmanvastus jätetään huomiotta. Piirrä kummankin kappaleen voimakuvio. Kuinka suuri on langan jännitysvoima, kun kappaleet liikkuvat?",
+      "text": "Kärry, jonka massa on $1{,}0\\,\\text{kg}$, on kitkattomalla pöydällä. Siihen sidottu kevyt ja venymätön lanka kulkee pöydän reunalla olevan kevyen ja kitkattoman väkipyörän yli, ja langan päässä roikkuu punnus, jonka massa on $0{,}40\\,\\text{kg}$. Ilmanvastus jätetään huomiotta.\n\nPiirrä kummankin kappaleen voimakuvio. Kuinka suuri on langan jännitysvoima, kun kappaleet liikkuvat?",
       "answer": 2.8,
       "unit": "N",
       "tolerance": 0.02,
@@ -119,7 +119,7 @@
     {
       "id": "fy4-13-L2-01",
       "level": 2,
-      "text": "Nosturin köysi nostaa laatikkoa, jonka massa on $50\\,\\text{kg}$. Sen alapuolella roikkuu toisen köyden päässä toinen laatikko, jonka massa on $30\\,\\text{kg}$. Laatikot kiihtyvät ylöspäin kiihtyvyydellä $1{,}2\\,\\text{m/s}^2$. Köydet ovat kevyet ja venymättömät, ja ilmanvastus jätetään huomiotta. Piirrä kummankin laatikon voimakuvio vihkoon ennen kuin avaat ratkaisun. Kuinka suuri on nosturin köyden jännitysvoima?",
+      "text": "Nosturin köysi nostaa laatikkoa, jonka massa on $50\\,\\text{kg}$. Sen alapuolella roikkuu toisen köyden päässä toinen laatikko, jonka massa on $30\\,\\text{kg}$. Laatikot kiihtyvät ylöspäin kiihtyvyydellä $1{,}2\\,\\text{m/s}^2$.\n\nKöydet ovat kevyet ja venymättömät, ja ilmanvastus jätetään huomiotta.\n\nPiirrä kummankin laatikon voimakuvio vihkoon ennen kuin avaat ratkaisun. Kuinka suuri on nosturin köyden jännitysvoima?",
       "answer": 880,
       "unit": "N",
       "tolerance": 0.02,
@@ -254,7 +254,7 @@
     {
       "id": "fy4-13-L3-01",
       "level": 3,
-      "text": "Hissin kori, jonka massa on $800\\,\\text{kg}$, roikkuu kevyen ja venymättömän köyden päässä. Köysi kulkee kevyen ja kitkattoman pyörän yli, ja sen toisessa päässä on vastapaino, jonka massa on $1200\\,\\text{kg}$. Vastapaino laskee ja kori nousee. Kitka ja ilmanvastus jätetään huomiotta. Piirrä korin ja vastapainon voimakuviot. Kuinka suuri voima köydestä kohdistuu pyörän akseliin, kun pyörä on kevyt ja akseli pitää sen paikallaan?",
+      "text": "Hissin kori, jonka massa on $800\\,\\text{kg}$, roikkuu kevyen ja venymättömän köyden päässä. Köysi kulkee kevyen ja kitkattoman pyörän yli, ja sen toisessa päässä on vastapaino, jonka massa on $1200\\,\\text{kg}$.\n\nVastapaino laskee ja kori nousee. Kitka ja ilmanvastus jätetään huomiotta.\n\nPiirrä korin ja vastapainon voimakuviot. Kuinka suuri voima köydestä kohdistuu pyörän akseliin, kun pyörä on kevyt ja akseli pitää sen paikallaan?",
       "answer": 19000,
       "unit": "N",
       "tolerance": 0.02,
@@ -263,7 +263,7 @@
     {
       "id": "fy4-13-L3-02",
       "level": 3,
-      "text": "Kärry, jonka massa on $1{,}0\\,\\text{kg}$, on kitkattomalla pöydällä ja sidottu kevyellä ja venymättömällä langalla kevyen ja kitkattoman väkipyörän yli riippuvaan punnukseen. Lanka katkeaa, jos sen jännitysvoima ylittää $3{,}0\\,\\text{N}$. Kuinka suuri on suurin punnuksen massa, jolla lanka vielä kestää, kun kappaleet liikkuvat? Piirrä ensin kummankin kappaleen voimakuvio. Vastaa kilogrammoina.",
+      "text": "Kärry, jonka massa on $1{,}0\\,\\text{kg}$, on kitkattomalla pöydällä ja sidottu kevyellä ja venymättömällä langalla kevyen ja kitkattoman väkipyörän yli riippuvaan punnukseen.\n\nLanka katkeaa, jos sen jännitysvoima ylittää $3{,}0\\,\\text{N}$.\n\nKuinka suuri on suurin punnuksen massa, jolla lanka vielä kestää, kun kappaleet liikkuvat? Piirrä ensin kummankin kappaleen voimakuvio. Vastaa kilogrammoina.",
       "answer": 0.44,
       "unit": "kg",
       "tolerance": 0.02,

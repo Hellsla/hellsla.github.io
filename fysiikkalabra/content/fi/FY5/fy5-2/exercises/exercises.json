@@ -88,7 +88,7 @@
   {
    "id": "fy5-2-L3-02",
    "level": 3,
-   "text": "Liikkeen kyltti roikkuu vaakasuoran, tasa-aineisen tangon päässä. Tangon pituus on $1{,}20\\,\\text{m}$ ja massa $4{,}00\\,\\text{kg}$, ja sen toinen pää on kiinnitetty saranalla seinään. Kyltti, jonka massa on $8{,}00\\,\\text{kg}$, riippuu tangon uloimmasta päästä. Tangon uloimmasta päästä lähtee vaijeri seinään saranan yläpuolelle niin, että vaijerin ja tangon välinen kulma on $30{,}0^\\circ$. Kuinka suuri on vaijerin jännitysvoima?",
+   "text": "Liikkeen kyltti roikkuu vaakasuoran, tasa-aineisen tangon päässä. Tangon pituus on $1{,}20\\,\\text{m}$ ja massa $4{,}00\\,\\text{kg}$, ja sen toinen pää on kiinnitetty saranalla seinään.\n\nKyltti, jonka massa on $8{,}00\\,\\text{kg}$, riippuu tangon uloimmasta päästä. Tangon uloimmasta päästä lähtee vaijeri seinään saranan yläpuolelle niin, että vaijerin ja tangon välinen kulma on $30{,}0^\\circ$.\n\nKuinka suuri on vaijerin jännitysvoima?",
    "answer": 196,
    "unit": "N",
    "tolerance": 0.02,

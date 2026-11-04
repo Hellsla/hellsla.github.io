@@ -69,7 +69,7 @@
     {
       "id": "fy5-16-L2-04",
       "level": 2,
-      "text": "Hands are clapped once in an empty classroom. A sound level app on a phone shows that after the clap the level falls from $92\\,\\text{dB}$ to $62\\,\\text{dB}$ in $0.45\\,\\text{s}$. Assume the level falls steadily. The reverberation time is the time in which the level falls by $60\\,\\text{dB}$, but it can be deduced even if the level cannot be followed through the whole drop of $60\\,\\text{dB}$. What is the reverberation time of the classroom?",
+      "text": "Hands are clapped once in an empty classroom. A sound level app on a phone shows that after the clap the level falls from $92\\,\\text{dB}$ to $62\\,\\text{dB}$ in $0.45\\,\\text{s}$. Assume the level falls steadily.\n\nThe reverberation time is the time in which the level falls by $60\\,\\text{dB}$, but it can be deduced even if the level cannot be followed through the whole drop of $60\\,\\text{dB}$.\n\nWhat is the reverberation time of the classroom?",
       "answer": 0.9,
       "unit": "s",
       "tolerance": 0.02

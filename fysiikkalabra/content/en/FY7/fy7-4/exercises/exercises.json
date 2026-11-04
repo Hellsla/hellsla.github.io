@@ -27,7 +27,7 @@
     {
       "id": "fy7-4-L1-04",
       "level": 1,
-      "text": "A $100\\,\\text{m}$ section of power line between two pylons is horizontal and runs north–south as shown by a compass. A current of $200\\,\\text{A}$ flows in the wire. The magnetic flux density of the Earth's magnetic field in southern Finland is about $53\\,\\mu\\text{T}$, and the field points towards magnetic north and downwards at an angle of $74^\\circ$ to the horizontal (WMM2025 model, NOAA/BGS). The angle between the wire and the field is therefore $74^\\circ$. How large is the force that the Earth's magnetic field exerts on the section of wire?",
+      "text": "A $100\\,\\text{m}$ section of power line between two pylons is horizontal and runs north–south as shown by a compass. A current of $200\\,\\text{A}$ flows in the wire.\n\nThe magnetic flux density of the Earth's magnetic field in southern Finland is about $53\\,\\mu\\text{T}$, and the field points towards magnetic north and downwards at an angle of $74^\\circ$ to the horizontal (WMM2025 model, NOAA/BGS). The angle between the wire and the field is therefore $74^\\circ$.\n\nHow large is the force that the Earth's magnetic field exerts on the section of wire?",
       "answer": 1.0,
       "unit": "N",
       "tolerance": 0.02
@@ -70,7 +70,7 @@
     {
       "id": "fy7-4-L2-04",
       "level": 2,
-      "text": "Two horizontal metal rails are $8.0\\,\\text{cm}$ apart, and a metal rod of mass $20\\,\\text{g}$ lies across them. In the region of the rails there is a vertical magnetic field with a magnetic flux density of $0.30\\,\\text{T}$. A current of $15\\,\\text{A}$ flows along one rail to the rod, through the rod and back along the other rail. How large is the acceleration of the rod when friction is neglected?",
+      "text": "Two horizontal metal rails are $8.0\\,\\text{cm}$ apart, and a metal rod of mass $20\\,\\text{g}$ lies across them. In the region of the rails there is a vertical magnetic field with a magnetic flux density of $0.30\\,\\text{T}$.\n\nA current of $15\\,\\text{A}$ flows along one rail to the rod, through the rod and back along the other rail.\n\nHow large is the acceleration of the rod when friction is neglected?",
       "answer": 18,
       "unit": "m/s²",
       "tolerance": 0.02
@@ -80,7 +80,7 @@
     {
       "id": "fy7-4-L3-01",
       "level": 3,
-      "text": "A horizontal copper rod of mass $12\\,\\text{g}$ and length $20\\,\\text{cm}$ hangs from two light conducting wires. The rod is entirely in a uniform horizontal magnetic field with a magnetic flux density of $0.25\\,\\text{T}$, and perpendicular to the field. A current is led to the rod through the wires. How large must the current be for the wires to go slack, that is, for the magnetic force to support the whole weight of the rod?",
+      "text": "A horizontal copper rod of mass $12\\,\\text{g}$ and length $20\\,\\text{cm}$ hangs from two light conducting wires. The rod is entirely in a uniform horizontal magnetic field with a magnetic flux density of $0.25\\,\\text{T}$, and perpendicular to the field.\n\nA current is led to the rod through the wires.\n\nHow large must the current be for the wires to go slack, that is, for the magnetic force to support the whole weight of the rod?",
       "answer": 2.4,
       "unit": "A",
       "tolerance": 0.03
@@ -88,7 +88,7 @@
     {
       "id": "fy7-4-L3-02",
       "level": 3,
-      "text": "Two parallel busbars at a substation are $0.30\\,\\text{m}$ apart. In a short circuit a current of $20\\,\\text{kA}$ flows momentarily in them in opposite directions. How large is the force on a $1.0\\,\\text{m}$ length of a busbar, and do the busbars attract or repel each other? Give the force as positive if the busbars attract each other and as negative if they repel each other.",
+      "text": "Two parallel busbars at a substation are $0.30\\,\\text{m}$ apart. In a short circuit a current of $20\\,\\text{kA}$ flows momentarily in them in opposite directions.\n\nHow large is the force on a $1.0\\,\\text{m}$ length of a busbar, and do the busbars attract or repel each other?\n\nGive the force as positive if the busbars attract each other and as negative if they repel each other.",
       "answer": -270,
       "unit": "N",
       "tolerance": 0.02
@@ -96,7 +96,7 @@
     {
       "id": "fy7-4-L3-03",
       "level": 3,
-      "text": "A thin aluminium wire of length $1.0\\,\\text{m}$ and mass $2.7\\,\\text{g}$ is horizontal and runs east–west by the compass. The magnetic flux density of the Earth's magnetic field in southern Finland is about $53\\,\\mu\\text{T}$, and the field points towards magnetic north and downwards at an angle of $74^\\circ$ to the horizontal (WMM2025 model, NOAA/BGS). How large a current would have to flow in the wire for the Earth's magnetic field to support the weight of the wire? Give the answer in kiloamperes.",
+      "text": "A thin aluminium wire of length $1.0\\,\\text{m}$ and mass $2.7\\,\\text{g}$ is horizontal and runs east–west by the compass.\n\nThe magnetic flux density of the Earth's magnetic field in southern Finland is about $53\\,\\mu\\text{T}$, and the field points towards magnetic north and downwards at an angle of $74^\\circ$ to the horizontal (WMM2025 model, NOAA/BGS).\n\nHow large a current would have to flow in the wire for the Earth's magnetic field to support the weight of the wire? Give the answer in kiloamperes.",
       "answer": 1.8,
       "unit": "kA",
       "tolerance": 0.02

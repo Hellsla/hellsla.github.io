@@ -21,7 +21,7 @@
     {
       "id": "fy4-13-L1-03",
       "level": 1,
-      "text": "A cart of mass $1.0\\,\\text{kg}$ is on a frictionless table. A light, inextensible string tied to it passes over a light, frictionless pulley at the edge of the table, and a mass of $0.40\\,\\text{kg}$ hangs from the end of the string. Air resistance is neglected. Draw the free-body diagram of each body. What is the tension in the string when the bodies are moving?",
+      "text": "A cart of mass $1.0\\,\\text{kg}$ is on a frictionless table. A light, inextensible string tied to it passes over a light, frictionless pulley at the edge of the table, and a mass of $0.40\\,\\text{kg}$ hangs from the end of the string. Air resistance is neglected.\n\nDraw the free-body diagram of each body. What is the tension in the string when the bodies are moving?",
       "answer": 2.8,
       "unit": "N",
       "tolerance": 0.02,
@@ -119,7 +119,7 @@
     {
       "id": "fy4-13-L2-01",
       "level": 2,
-      "text": "A crane's rope lifts a crate of mass $50\\,\\text{kg}$. Below it, a second crate of mass $30\\,\\text{kg}$ hangs from another rope. The crates accelerate upward with an acceleration of $1.2\\,\\text{m/s}^2$. The ropes are light and inextensible, and air resistance is neglected. Draw the free-body diagram of each crate in your notebook before you open the solution. What is the tension in the crane's rope?",
+      "text": "A crane's rope lifts a crate of mass $50\\,\\text{kg}$. Below it, a second crate of mass $30\\,\\text{kg}$ hangs from another rope. The crates accelerate upward with an acceleration of $1.2\\,\\text{m/s}^2$.\n\nThe ropes are light and inextensible, and air resistance is neglected.\n\nDraw the free-body diagram of each crate in your notebook before you open the solution. What is the tension in the crane's rope?",
       "answer": 880,
       "unit": "N",
       "tolerance": 0.02,
@@ -254,7 +254,7 @@
     {
       "id": "fy4-13-L3-01",
       "level": 3,
-      "text": "An elevator cabin of mass $800\\,\\text{kg}$ hangs from the end of a light, inextensible rope. The rope passes over a light, frictionless wheel, and at its other end is a counterweight of mass $1200\\,\\text{kg}$. The counterweight descends and the cabin rises. Friction and air resistance are neglected. Draw the free-body diagrams of the cabin and the counterweight. What is the force that the rope exerts on the axle of the wheel, when the wheel is light and the axle holds it in place?",
+      "text": "An elevator cabin of mass $800\\,\\text{kg}$ hangs from the end of a light, inextensible rope. The rope passes over a light, frictionless wheel, and at its other end is a counterweight of mass $1200\\,\\text{kg}$.\n\nThe counterweight descends and the cabin rises. Friction and air resistance are neglected.\n\nDraw the free-body diagrams of the cabin and the counterweight. What is the force that the rope exerts on the axle of the wheel, when the wheel is light and the axle holds it in place?",
       "answer": 19000,
       "unit": "N",
       "tolerance": 0.02,
@@ -263,7 +263,7 @@
     {
       "id": "fy4-13-L3-02",
       "level": 3,
-      "text": "A cart of mass $1.0\\,\\text{kg}$ is on a frictionless table and is tied by a light, inextensible string over a light, frictionless pulley to a hanging mass. The string breaks if its tension exceeds $3.0\\,\\text{N}$. What is the greatest mass of the hanging mass for which the string still holds while the bodies are moving? First draw the free-body diagram of each body. Answer in kilograms.",
+      "text": "A cart of mass $1.0\\,\\text{kg}$ is on a frictionless table and is tied by a light, inextensible string over a light, frictionless pulley to a hanging mass.\n\nThe string breaks if its tension exceeds $3.0\\,\\text{N}$.\n\nWhat is the greatest mass of the hanging mass for which the string still holds while the bodies are moving? First draw the free-body diagram of each body. Answer in kilograms.",
       "answer": 0.44,
       "unit": "kg",
       "tolerance": 0.02,

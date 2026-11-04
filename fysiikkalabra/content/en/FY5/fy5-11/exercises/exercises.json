@@ -79,7 +79,7 @@
     {
       "id": "fy5-11-L3-01",
       "level": 3,
-      "text": "Music is heard from a neighbour's open window, whose width is $0.80\\,\\text{m}$. When you walk behind the corner of the house, where you can no longer see the window, the low sound of the bass drum ($100\\,\\text{Hz}$) is still clearly heard, but the high sound of the cymbal ($5000\\,\\text{Hz}$) becomes much weaker. Explain the phenomenon with diffraction and compare the wavelength of each sound with the width of the window. The speed of sound is $343\\,\\text{m/s}$.",
+      "text": "Music is heard from a neighbour's open window, whose width is $0.80\\,\\text{m}$.\n\nWhen you walk behind the corner of the house, where you can no longer see the window, the low sound of the bass drum ($100\\,\\text{Hz}$) is still clearly heard, but the high sound of the cymbal ($5000\\,\\text{Hz}$) becomes much weaker.\n\nExplain the phenomenon with diffraction and compare the wavelength of each sound with the width of the window. The speed of sound is $343\\,\\text{m/s}$.",
       "answer": "The wavelength of the bass $\\lambda = 3.4\\,\\text{m}$ is longer than the window ($b/\\lambda \\approx 0.23$), so it bends strongly; the cymbal's $\\lambda \\approx 6.9\\,\\text{cm}$ is much shorter than the window ($b/\\lambda \\approx 12$), so it travels almost straight.",
       "unit": "",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy5-11-L3-03",
       "level": 3,
-      "text": "A rope is $6.0\\,\\text{m}$ long, and its far end is tied to a post. You send an upward pulse along the rope and after that hold the other end of the rope firmly in place. The speed of the pulse is $4.0\\,\\text{m/s}$. The pulse is reflected from the post, returns to your hand, is reflected from it and travels again towards the post. How long after the pulse is sent does it arrive at the post for the second time? Give the answer in seconds.",
+      "text": "A rope is $6.0\\,\\text{m}$ long, and its far end is tied to a post.\n\nYou send an upward pulse along the rope and after that hold the other end of the rope firmly in place. The speed of the pulse is $4.0\\,\\text{m/s}$. The pulse is reflected from the post, returns to your hand, is reflected from it and travels again towards the post.\n\nHow long after the pulse is sent does it arrive at the post for the second time? Give the answer in seconds.",
       "answer": 4.5,
       "unit": "s",
       "tolerance": 0.02

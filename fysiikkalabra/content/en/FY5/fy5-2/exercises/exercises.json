@@ -88,7 +88,7 @@
     {
       "id": "fy5-2-L3-02",
       "level": 3,
-      "text": "A shop sign hangs from the end of a horizontal uniform rod. The rod has length $1.20\\,\\text{m}$ and mass $4.00\\,\\text{kg}$, and its other end is attached to a wall with a hinge. The sign, of mass $8.00\\,\\text{kg}$, hangs from the outer end of the rod. A cable runs from the outer end of the rod to the wall above the hinge so that the angle between the cable and the rod is $30.0^\\circ$. How large is the tension force of the cable?",
+      "text": "A shop sign hangs from the end of a horizontal uniform rod. The rod has length $1.20\\,\\text{m}$ and mass $4.00\\,\\text{kg}$, and its other end is attached to a wall with a hinge.\n\nThe sign, of mass $8.00\\,\\text{kg}$, hangs from the outer end of the rod. A cable runs from the outer end of the rod to the wall above the hinge so that the angle between the cable and the rod is $30.0^\\circ$.\n\nHow large is the tension force of the cable?",
       "answer": 196,
       "unit": "N",
       "tolerance": 0.02,

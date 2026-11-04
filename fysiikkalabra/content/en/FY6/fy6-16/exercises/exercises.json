@@ -96,7 +96,7 @@
     {
       "id": "fy6-16-L3-03",
       "level": 3,
-      "text": "During the night, $40\\,\\text{kWh}$ has to be stored in the battery of a car. Charging starts at $22.00$, and the car has to be ready at $7.00$. The efficiency of charging is $90\\,\\%$. A three-phase charging station draws an equal current from each phase conductor, and the phase voltage is $230\\,\\text{V}$. What is the smallest charging current needed in one phase conductor when the current is kept constant all night?",
+      "text": "During the night, $40\\,\\text{kWh}$ has to be stored in the battery of a car. Charging starts at $22.00$, and the car has to be ready at $7.00$. The efficiency of charging is $90\\,\\%$.\n\nA three-phase charging station draws an equal current from each phase conductor, and the phase voltage is $230\\,\\text{V}$.\n\nWhat is the smallest charging current needed in one phase conductor when the current is kept constant all night?",
       "answer": 7.156915,
       "unit": "A",
       "tolerance": 0.02

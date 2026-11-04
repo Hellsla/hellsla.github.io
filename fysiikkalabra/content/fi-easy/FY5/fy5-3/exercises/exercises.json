@@ -79,7 +79,7 @@
     {
       "id": "fy5-3-L3-01",
       "level": 3,
-      "text": "Kaksi juoksijaa juoksee rinnakkain radan kaarteessa, joka on puoliympyrä. Sisemmän juoksijan rata on ympyränkaari, jonka säde on $36{,}5\\,\\text{m}$. Hänen vauhtinsa on $7{,}0\\,\\text{m/s}$. Ulomman juoksijan kaaren säde on $40{,}2\\,\\text{m}$. Kaaret ovat samankeskiset. Kuinka suuri vauhti ulommalla juoksijalla on oltava, jotta juoksijat pysyvät rinnakkain koko kaarteen ajan?",
+      "text": "Kaksi juoksijaa juoksee rinnakkain radan kaarteessa, joka on puoliympyrä.\n\nSisemmän juoksijan rata on ympyränkaari, jonka säde on $36{,}5\\,\\text{m}$. Hänen vauhtinsa on $7{,}0\\,\\text{m/s}$. Ulomman juoksijan kaaren säde on $40{,}2\\,\\text{m}$. Kaaret ovat samankeskiset.\n\nKuinka suuri vauhti ulommalla juoksijalla on oltava, jotta juoksijat pysyvät rinnakkain koko kaarteen ajan?",
       "answer": 7.7,
       "unit": "m/s",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy5-3-L3-03",
       "level": 3,
-      "text": "Polkupyörän eturattaan säde on $10{,}0\\,\\text{cm}$ ja takarattaan säde $4{,}0\\,\\text{cm}$. Ketju liikkuu kummankin rattaan kehällä samalla ratanopeudella. Takaratas ja takapyörä pyörivät yhdessä. Takapyörän säde on $0{,}34\\,\\text{m}$. Pyöräilijä polkee niin, että eturatas pyörii pyörimistaajuudella $1{,}0\\,\\tfrac{1}{\\text{s}}$. Kuinka suuri on pyörän vauhti, kun rengas ei luista maata vasten? Anna vastaus yksikössä km/h.",
+      "text": "Polkupyörän eturattaan säde on $10{,}0\\,\\text{cm}$ ja takarattaan säde $4{,}0\\,\\text{cm}$. Ketju liikkuu kummankin rattaan kehällä samalla ratanopeudella. Takaratas ja takapyörä pyörivät yhdessä. Takapyörän säde on $0{,}34\\,\\text{m}$.\n\nPyöräilijä polkee niin, että eturatas pyörii pyörimistaajuudella $1{,}0\\,\\tfrac{1}{\\text{s}}$.\n\nKuinka suuri on pyörän vauhti, kun rengas ei luista maata vasten? Anna vastaus yksikössä km/h.",
       "answer": 19,
       "unit": "km/h",
       "tolerance": 0.02

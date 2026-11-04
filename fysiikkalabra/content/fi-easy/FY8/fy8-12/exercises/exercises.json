@@ -79,7 +79,7 @@
     {
       "id": "fy8-12-L3-01",
       "level": 3,
-      "text": "Amerikium-241:n alfahiukkanen, jonka liike-energia on $5{,}49\\,\\text{MeV}$, pysähtyy ilmassa $4{,}1\\,\\text{cm}$:n matkalla. Beetahiukkanen, jonka liike-energia on $1{,}0\\,\\text{MeV}$, kulkee ilmassa mutkittelevaa rataa noin $3{,}6\\,\\text{m}$, ennen kuin se pysähtyy. Molemmat luovuttavat koko energiansa ionisoimalla, ja ilmassa yksi ionipari vie keskimäärin $34\\,\\text{eV}$. Kuinka monta kertaa enemmän ioniparia senttimetrillä alfahiukkanen muodostaa kuin beetahiukkanen? Oleta, että ionipareja syntyy tasaisesti koko radalla.",
+      "text": "Amerikium-241:n alfahiukkanen, jonka liike-energia on $5{,}49\\,\\text{MeV}$, pysähtyy ilmassa $4{,}1\\,\\text{cm}$:n matkalla. Beetahiukkanen, jonka liike-energia on $1{,}0\\,\\text{MeV}$, kulkee ilmassa mutkittelevaa rataa noin $3{,}6\\,\\text{m}$, ennen kuin se pysähtyy.\n\nMolemmat luovuttavat koko energiansa ionisoimalla, ja ilmassa yksi ionipari vie keskimäärin $34\\,\\text{eV}$.\n\nKuinka monta kertaa enemmän ioniparia senttimetrillä alfahiukkanen muodostaa kuin beetahiukkanen? Oleta, että ionipareja syntyy tasaisesti koko radalla.",
       "answer": 482,
       "unit": "",
       "tolerance": 0.02
