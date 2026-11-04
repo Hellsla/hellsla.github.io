@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1c59e4e4a38d1723
+CONTENT-HASH: 12f7e2cfc1c54b61
 
 ## Blocking
 
 ## Polish
-- inquiry.json:`tarkistus-3` prompt — one task asks four things, and the first sentence is unclear ("vaikka röntgenkuvatun potilaan vieressä voi olla heti kuvauksen jälkeen") — split into two parts, or write: "Selitä, miksi hoitaja pysyttelee tänä aikana etäällä potilaasta, vaikka röntgenkuvatun potilaan vieressä voi olla heti kuvauksen jälkeen." -> "Selitä, miksi hoitaja pysyttelee etäällä PET-potilaasta, mutta voi olla heti röntgenkuvauksen jälkeen potilaan vieressä."
-- Workload: x-ray, CT, tracers, PET, radiotherapy, industry and safety, plus the sim, three predictions, an interpret task, the example and three checks, exceeds one hour for a 17-year-old. The industry section (savuilmaisin, radiohiili, paksuusmittari) is not assessed anywhere in the core path; mark the `rontgen` interpret task or `siirto` optional, or trim the industry text.
-- exit-ticket.json — both questions concern x-ray contrast and justification/optimisation; PET localisation, the lesson's opening question, is not tested. Replace one question with "Miksi yksi koinsidenssi ei riitä paikantamaan lähdettä?"
-- inquiry.json:`virhe`, `ennuste-3` — the correct option is each time the longest and the only one with a complete causal clause; vary lengths so it cannot be picked by form.
-- Phone, koe-1 (tutki-390-2, lab-1280-1) — the readings table is wider than its card, so the `kasvaimen kautta (%)` column is off-screen when recording; shorten the headers ("etäisyys (cm)", "kasvaimen kautta (%)") or wrap them.
+- inquiry.json:`tarkistus-3` prompt — "pysyttelee … etäällä potilaasta, vaikka röntgenkuvatun potilaan vieressä voi olla" uses a concessive connective for a contrast, and the task still asks four things — write "Selitä, miksi hoitaja pysyttelee etäällä PET-potilaasta, mutta voi olla heti röntgenkuvauksen jälkeen potilaan vieressä." and split off the shield question.
+- Worked example, step "Kaava ratkaistuna" — the jump from $\frac{I_0 (1/2)^{n_A}}{I_0 (1/2)^{n_B}}$ to $2^{n_B-n_A}$ is unshown; add one line "$(1/2)^{a} : (1/2)^{b} = 2^{b-a}$". The new form is a clear improvement on round 1: stages 1/7–7/7 follow, and the Järkevyys check ($2^2=4$) is good.
+- Workload: x-ray, CT, tracers, PET, radiotherapy, industry, safety plus sim, three predictions, example and checks exceeds one hour; mark `siirto` or the industry section optional.
+- Exit ticket now tests PET localisation (good), but both answers are model text only; the PET answer is consistent with the time-of-flight paragraph. Fine.
+- koe-1 readings table at 390 px (exp-koe-1-390-2): only two columns are visible, the `kasvaimen kautta (%)` column is cut off with no scroll cue.
 
 ## Checked
-- Course goals, slot and prerequisite; full lesson text, inquiry sequence, exit ticket (packet).
-- Captures: top-390, fig-1, fig-4, fig-6, fig-8, fig-10, fig-12, stage-ennusta-390-1, stage-tutki-390-1/-2, stage-tarkista-390-1, lab-1280-1.
-- PET sim run in Playwright at 1280 px: N = 16, 76, 226 gave 20,4 / 14,9 / 1,0 cm, matching the stated model values; the tumour is not drawn, so the experiments can refute predictions 1 and 2.
-- Predictions: feedback is gated and repairs the misconception; ennuste-3 reveals only after the theory.
-- Hash at start and end: 1c59e4e4a38d1723.
+- Packet read in full (lesson, inquiry.json, exit ticket, sim spec).
+- Captures: example-390-1 and -2, sim-390, exp-koe-1-390-2, fig-4, fig-6, stage-sovella-390-3.
+- "Tens of coincidences": consistent across ennuste-2 feedback, johtopäätös model and criteria (mallin arvot 10/20/50/200); time-of-flight text does not give away prediction 1 (gives "ei yhteen pisteeseen").
+- Hash at start and end: 12f7e2cfc1c54b61.

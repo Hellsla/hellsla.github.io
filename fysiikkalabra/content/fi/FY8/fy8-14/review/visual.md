@@ -1,22 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 1c59e4e4a38d1723
+VERDICT: PASS
+CONTENT-HASH: 12f7e2cfc1c54b61
 
 ## Blocking
-- [Major] lesson.md Esimerkki, stage "Kaava ratkaistuna" (example-390-1) — the ratio $\frac{I_A}{I_B}$ with nested powers $\left(\tfrac12\right)^{d/d_{1/2}^{\text{kudos}}}$ is scaled down to fit and its sub- and superscripts are about 7 px at 390 px — the core worked example cannot be read on a phone — break it: write the ratio with $T_A = \left(\tfrac12\right)^{d_A/d_{1/2}^{\text{kudos}}}$ as separate lines, or give the quotients as a product of the factors on two lines. Same pattern in the Kaava section.
 
 ## Polish
-- [Minor] lesson.md taulukko "Efektiivinen annos" — "$5$–$10\,\text{mSv}$" has the unit only on the second number and the figures are not aligned in the column — "$5\text{–}10\,\text{mSv}$", right-align the column.
-- [Minor] fig-4 (rontgen) — the label $e^-$ touches the tube outline, and the photon lines pass through the bones although the description says they stop there; the shadow needs fewer lines under the bones — move the label up and end the lines at the bone.
-- [Minor] fig-8 (sadehoito) — the semi-transparent orange beams on the pink body are low in contrast at 390 px, and the beam colour matches the dose label "0,40 Gy" — darken the beam edges or make the body fill paler.
-- [Minor] koe-1 readings table — clipped at the card edge on both phone and 1280 px — shorten the column headers.
-- [Minor] Finnish: "Röntgen- ja gammafotoni ovat samaa sähkömagneettista säteilyä: nimi kertoo, syntyikö…" reads well; "TT-tutkimuksen annos on kuitenkin monikymmenkertainen" — the table shows 250–500 times for the chest; write "satakertainen tai suurempi".
+- [Minor] Worked example, "Kaava ratkaistuna" and "Sijoitus" (example-390-1, -2) — the round-1 Major is resolved: exponents are now $n_\text{B}-n_\text{A}$ and numbers, no nested $d_{1/2}^\text{kudos}$. Residual: the subscripts A and B inside the exponent render about 8–9 px at 390 px; define $\Delta n = n_\text{B}-n_\text{A}$ before the ratio so the exponent is $2^{\Delta n}$.
+- [Minor] Worked example, step 3 — the first displayed $n_\text{B}$ line sits in a narrow box with small $d_{1/2}^\text{kudos}$ superscripts; legible, acceptable.
+- [Minor] koe-1 readings table (exp-koe-1-390-2) — the third column is not visible at 390 px; add a scroll cue or abbreviate headers.
+- [Minor] inquiry.json `tarkistus-3` prompt — "vaikka" is the wrong connective for the contrast; use "mutta".
+- [Minor] fig-8 — labels 2,0 Gy and 0,40 Gy are placed at the callout lines, clear; no change (noted for consistency check only).
 
 ## Checked
-- contact-1; top-390; fig-1 (hero), fig-4, fig-6, fig-8, fig-10, fig-12 (graph: axes, units, markers and labels fine).
-- example-390-1; sim-390 via tutki-390-1/-2; lab-1280-1; theory-1280-1; tarkista-390-1.
-- PET sim at 1280 px run with data (N = 228): ring, lines and image legible.
-- Not opened: open-*-1280 states of the experiments beyond lab-1280-1.
-- Hash at start and end: 1c59e4e4a38d1723.
+- example-390-1, example-390-2 (all 7 stages), sim-390, exp-koe-1-390-2, top-390.
+- fig-1 (hero), fig-4 (röntgen), fig-6 (PET), fig-8 (sädehoito), fig-10 (mittari), fig-12 (kontrasti) at 390 px: legible, colours consistent, labels in LaTeX.
+- stage-sovella-390-3.
+- Text read for PET claim, time-of-flight and characteristic X-ray wording: fluent, glossary terms consistent.
+- Hash at start and end: 12f7e2cfc1c54b61.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

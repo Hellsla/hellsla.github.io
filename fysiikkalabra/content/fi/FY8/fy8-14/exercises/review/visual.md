@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 67fac107b7b678a0
+CONTENT-HASH: 264082239c93f4c3
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md:fy8-14-L3-02 Kaava (L3-2 capture) — the double-nested exponents $d/d_{1/2}^{\text{luu}}$ shrink to about 7 px in the ratio, also at 1280 px — write $2^{x_B - x_A}$ with $x = d/d_{1/2}$ defined first.
-- [Minor] solutions.md:fy8-14-L2-03 Sijoitus — "$\dfrac{8{,}0\,\text{mSv}}{5{,}1\,\text{mSv} : 365\,\text{d}}$" puts a colon division inside a fraction denominator — write $t = \dfrac{8{,}0\,\text{mSv}}{5{,}1\,\text{mSv}} \cdot 365\,\text{d}$.
-- [Minor] solutions.md:fy8-14-L3-01 Kaava — the line "yhden keilan kasvainannos $\tfrac{2{,}0\,\text{Gy}}{5}$, joten $D = 30 \cdot 1{,}3 \cdot \tfrac{D_\text{kerta}}{5}$, missä $D_\text{kerta} = 2{,}0\,\text{Gy}$" defines a symbol after using it — "$D_\text{kerta} = 2{,}0\,\text{Gy}$" first.
-- [Minor] exercises.json:L2-04 — the answer unit "µSv" uses a micro sign while the text uses $\mu\text{Sv}$ — use the same form.
-- [Minor] solutions.md:fy8-14-L1-02, L1-05 Vastaus — "kahden tai kolmen merkitsevän numeron tarkkuudella" is vague — pick one.
+- [Minor] solutions.md:fy8-14-L3-02 Kaava and Sijoitus (open-exercises-L3-1280-2, -3) — round-1 point stands: nested $d/d_{1/2}^\text{luu}$ exponents render about 6–7 px, and the substitution exponent $1{,}0\,\text{cm}/0{,}27\,\text{cm}-\dots$ is tiny; define $x = d/d_{1/2}$ first and write $2^{x_\text{B}-x_\text{A}}$.
+- [Minor] exercises.json:fy8-14-L3-02 — "noin $30\,\text{kV}$, ja … noin $20\,\text{keV}$. Oletetaan tässä … $30\,\text{keV}$" reads contradictory; one sentence: "oletetaan fotonien energiaksi $30\,\text{keV}$".
+- [Minor] solutions.md L1-04, L2-02, L3-03 Kaava — the new logarithm sentence is a long run-in line with inline fractions (open-exercises-L3-1280-3); break the $\ln$ step onto its own display line.
+- [Minor] solutions.md L1-02, L1-05 — vague "kahden tai kolmen merkitsevän numeron" still present.
 
 ## Checked
-- Captures: stage-exercises-390, open-exercises-1280-1, open-exercises-L2-1280-3, open-exercises-L3-1280-1 and -2.
-- The answer boxes, units, hint buttons and solution blocks are legible; calculation chains break at sensible lines (L2-02 capture).
-- No figures in the set.
-- Hash at start and end: 67fac107b7b678a0.
+- stage-exercises-390, open-exercises-L3-1280-2 and -3 (L3-02, L3-03 and the new L3-03 Kaava text); changed L1-03 text read in the diff.
+- Hash at start and end: 264082239c93f4c3.
 
 ## Scores
 illustrations n/a · typography 4 · Finnish 4 · accessibility 4
