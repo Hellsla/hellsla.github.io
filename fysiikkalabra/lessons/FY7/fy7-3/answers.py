@@ -25,10 +25,11 @@ a["fy7-3-L2-04"] = (wire(10, 0.05) + wire(10, 0.05)) * 1e6   # two wires 10 cm a
 pts = [(0.0, 0.05), (0.5, 1.31), (1.0, 2.60), (1.5, 3.80), (2.0, 5.12), (2.5, 6.31), (3.0, 7.60)]   # data of L2-05 (I in A, B in mT)
 mI = sum(p[0] for p in pts) / len(pts); mB = sum(p[1] for p in pts) / len(pts)
 slope = sum((i - mI) * (b - mB) for i, b in pts) / sum((i - mI) ** 2 for i, b in pts)   # least squares 2,512 mT/A
-a["fy7-3-L2-05"] = slope * 1e-3 * 0.30 / 600 * 1e6    # mu0 = A l / N = 1,257e-6 Vs/(Am) -> 1,26 in uVs/(Am)
+a["fy7-3-L2-05"] = slope * 1e-3 * 0.300 / 600 * 1e6    # mu0 = A l / N = 1,257e-6 Vs/(Am) -> 1,26 in uVs/(Am)
 Br = [r * b for r, b in [(1.0, 161), (2.0, 79), (4.0, 41)]]   # data of L2-06: B r in uT cm = 161, 158, 164 (constant -> B ~ 1/r)
 I_w = (sum(Br) / 3) * 1e-6 * 1e-2 / (mu0 / (2 * math.pi))     # I = 2 pi (B r) / mu0 = 8,05 A
 a["fy7-3-L2-06"] = wire(I_w, 3.0 * 0.01) * 1e6        # 3,0 cm: 53,7 uT -> 54 uT
+# L2-06 d): B at 0,50 cm = 161 uT cm / 0,50 cm = 322 uT -> 320 uT (not the answer box)
 # (fy7-3-L2-07 is multiple choice: no number)
 # Level 3: reasoning, two ideas, an unfamiliar context
 B_w = 14e-6 * math.tan(math.radians(30))              # compass turns 30°: the wire's field is perpendicular to B_h, tan 30° = B_w / B_h -> 8,083e-6 T

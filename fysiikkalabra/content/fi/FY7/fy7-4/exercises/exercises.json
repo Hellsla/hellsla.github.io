@@ -47,15 +47,10 @@
       "kind": [
         "concept"
       ],
-      "answer": "Ylöspäin, koska voima on kohtisuorassa virtaa ja kenttää vastaan, ja oikean käden säännöllä se osoittaa tässä ylös.",
+      "answer": "Ylöspäin, koska voima on kohtisuorassa sekä virtaa että kenttää vastaan ja oikean käden säännöllä se osoittaa ylös.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
-        {
-          "text": "Ylöspäin, koska voima on kohtisuorassa virtaa ja kenttää vastaan, ja oikean käden säännöllä se osoittaa tässä ylös.",
-          "correct": true,
-          "feedback": "Oikein: voima on aina kohtisuorassa sekä virran että kentän suuntaa vastaan. Kun peukalo osoittaa virran suuntaan itään ja sormet kentän suuntaan pohjoiseen, kämmen osoittaa ylös. Jos virta tai kenttä kääntyisi, voima kääntyisi alaspäin."
-        },
         {
           "text": "Pohjoiseen, koska magneettikenttä vetää virtajohdinta kenttäviivojen suuntaan kohti magneetin napaa, jossa kenttä on voimakkain.",
           "feedback": "Voima ei ole kentän suuntainen. Se on kohtisuorassa kenttää vastaan: kentän suuntaan oleva komponentti ei synnytä voimaa lainkaan, ja virtajohdin ei kulje kohti napaa kuin rautakappale."
@@ -63,6 +58,11 @@
         {
           "text": "Itään, koska voima kulkee virran suuntaan ja työntää johtimessa liikkuvia varauksia eteenpäin, kuten tuuli purjevenettä.",
           "feedback": "Voima ei ole virran suuntainen. Magneettinen voima on kohtisuorassa varauksen liikesuuntaan eli virtaan nähden, joten se ei kiihdytä eikä jarruta varauksia kulkusuunnassa."
+        },
+        {
+          "text": "Ylöspäin, koska voima on kohtisuorassa sekä virtaa että kenttää vastaan ja oikean käden säännöllä se osoittaa ylös.",
+          "correct": true,
+          "feedback": "Oikein: voima on aina kohtisuorassa sekä virran että kentän suuntaa vastaan. Kun peukalo osoittaa virran suuntaan itään ja sormet kentän suuntaan pohjoiseen, kämmen osoittaa ylös. Jos virta tai kenttä kääntyisi, voima kääntyisi alaspäin."
         },
         {
           "text": "Alaspäin, koska magneettikenttä vetää virtajohdinta puoleensa samalla tavalla kuin Maa vetää kappaletta, ja virta on vaakasuora.",
@@ -130,7 +130,7 @@
     {
       "id": "fy7-4-L2-05",
       "level": 2,
-      "text": "Opiskelijat mittasivat virtavaa'alla magneetin napojen välisen magneettivuon tiheyden. Vaa'an johdinsilmukan vaakasuoran osan pituus $l$ vaihdettiin vaihtamalla silmukkaa. Osa oli joka kerralla kokonaan kentässä ja kohtisuorassa sitä vastaan, ja virta oli $2{,}0\\,\\text{A}$. Vaa'an lukeman muutos $\\Delta m$ mitattiin virran kytkemisen jälkeen (esimerkkiaineisto).\n\na) Laske magneettivuon tiheys $B$ jokaisesta mittauksesta, kun voima on $F = \\Delta m \\cdot g$.\n\nb) Laske tulosten keskiarvo $B_{\\text{ka}}$ ja arvioi hajonta puolena suurimman ja pienimmän tuloksen erotuksesta.\n\nKirjoita vastauslaatikkoon keskiarvo b)-kohdasta.",
+      "text": "Opiskelijat mittasivat virtavaa'alla magneetin napojen välisen magneettivuon tiheyden. Vaa'an johdinsilmukan vaakasuoran osan pituus $l$ vaihdettiin vaihtamalla silmukkaa. Osa oli joka kerralla kokonaan kentässä ja kohtisuorassa sitä vastaan, ja virta oli $2{,}0\\,\\text{A}$. Vaa'an lukeman muutos $\\Delta m$ mitattiin virran kytkemisen jälkeen (keksitty esimerkkiaineisto).\n\na) Laske magneettivuon tiheys $B$ jokaisesta mittauksesta, kun voima on $F = \\Delta m \\cdot g$.\n\nb) Laske tulosten keskiarvo $B_{\\text{ka}}$ ja arvioi hajonta puolena suurimman ja pienimmän tuloksen erotuksesta.\n\nKirjoita vastauslaatikkoon keskiarvo b)-kohdasta.",
       "kind": [
         "data",
         "experiment"
@@ -139,7 +139,7 @@
       "unit": "T",
       "tolerance": 0.03,
       "data": {
-        "caption": "Virtavaa'an lukeman muutos johtimen pituuden funktiona, $I = 2{,}0\\,\\text{A}$ (esimerkkiaineisto)",
+        "caption": "Virtavaa'an lukeman muutos johtimen pituuden funktiona",
         "columns": [
           "$l\\,(\\text{cm})$",
           "$\\Delta m\\,(\\text{g})$"
@@ -171,7 +171,7 @@
     {
       "id": "fy7-4-L2-06",
       "level": 2,
-      "text": "Opiskelija mittasi virtavaa'alla magneetin napojen välisen magneettivuon tiheyden. Vaa'an virtajohtimen vaakasuora osa on $6{,}0\\,\\text{cm}$ pitkä, mutta magneetin napojen väli on vain $2{,}5\\,\\text{cm}$ leveä, joten vain $2{,}5\\,\\text{cm}$ johtimesta on kentässä ja kohtisuorassa sitä vastaan. Kun johtimessa kulki $3{,}0\\,\\text{A}$:n virta, vaa'an lukema muuttui $0{,}31\\,\\text{g}$. Opiskelija laski: \"Voima on $F = \\Delta m \\cdot g = 3{,}04 \\cdot 10^{-3}\\,\\text{N}$ ja $B = \\dfrac{F}{I l}$, kun $l = 6{,}0\\,\\text{cm}$. Siis $B = 0{,}017\\,\\text{T}$.\" (esimerkkiaineisto)\n\na) Etsi opiskelijan laskun virhe.\n\nb) Laske magneettivuon tiheys oikein.\n\nKirjoita vastauslaatikkoon b)-kohdan tulos.",
+      "text": "Opiskelija mittasi virtavaa'alla magneetin napojen välisen magneettivuon tiheyden. Vaa'an virtajohtimen vaakasuora osa on $6{,}0\\,\\text{cm}$ pitkä, mutta magneetin napojen väli on vain $2{,}5\\,\\text{cm}$ leveä, joten vain $2{,}5\\,\\text{cm}$ johtimesta on kentässä ja kohtisuorassa sitä vastaan. Kun johtimessa kulki $3{,}0\\,\\text{A}$:n virta, vaa'an lukema muuttui $0{,}31\\,\\text{g}$. Opiskelija laski: ”Voima on $F = \\Delta m \\cdot g = 3{,}04 \\cdot 10^{-3}\\,\\text{N}$ ja $B = \\dfrac{F}{I l}$, kun $l = 6{,}0\\,\\text{cm}$. Siis $B = 0{,}017\\,\\text{T}$.” (esimerkkiaineisto)\n\na) Etsi opiskelijan laskun virhe.\n\nb) Laske magneettivuon tiheys oikein.\n\nKirjoita vastauslaatikkoon b)-kohdan tulos.",
       "kind": [
         "error"
       ],
@@ -191,7 +191,7 @@
       "unit": "m",
       "tolerance": 0.05,
       "data": {
-        "caption": "Kaiuttimen puhekelaan kohdistuva voima virran funktiona (esimerkkiaineisto)",
+        "caption": "Kaiuttimen puhekelaan kohdistuva voima virran funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$F\\,(\\text{N})$"
@@ -259,7 +259,7 @@
       "unit": "T",
       "tolerance": 0.05,
       "data": {
-        "caption": "Tangon kiihtyvyys virran funktiona (esimerkkiaineisto)",
+        "caption": "Tangon kiihtyvyys virran funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$a\\,(\\text{m/s}^2)$"

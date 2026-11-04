@@ -25,7 +25,7 @@ a["fy7-1-L3-03"] = 53 * math.cos(rad(74)) / (55 * math.cos(rad(82.5)))   # B_h H
 # Exercise-bank additions
 # L1-06 (words): a magnet attracts iron, not aluminium or copper: only ferromagnetic matter has domains that line up
 # L1-07 (words): the compass needle's N end points to geographic north: Earth's magnetic S pole is there (unlike poles attract)
-a["fy7-1-L1-08"] = 52 * math.sin(rad(76))                # Oulu B = 52 µT, I = 76°: B_v = B sin I = 50,5 µT
+a["fy7-1-L1-08"] = 53 * math.sin(rad(76))                # Oulu B = 53 µT, I = 76°: B_v = B sin I = 51,4 µT
 # L2-05: B_m = B_h tan θ at r = 12 cm (θ = 46°, B_h = 14 µT): 14,5 µT; B_m r³ is roughly constant, not B_m r
 B_h = 14
 a["fy7-1-L2-05"] = B_h * math.tan(rad(46))

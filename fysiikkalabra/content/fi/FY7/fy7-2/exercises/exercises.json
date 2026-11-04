@@ -47,25 +47,25 @@
       "kind": [
         "concept"
       ],
-      "answer": "Liike-energia pysyy samana, koska magneettinen voima on kohtisuorassa nopeutta vastaan eikä siksi tee työtä.",
+      "answer": "Liike-energia pysyy samana, koska magneettinen voima on kohtisuorassa nopeutta vastaan eikä tee työtä.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Liike-energia pysyy samana, koska magneettinen voima on kohtisuorassa nopeutta vastaan eikä siksi tee työtä.",
+          "text": "Liike-energia kasvaa, koska magneettinen voima vetää protonia kentän suuntaan ja tekee siten työtä.",
+          "feedback": "Tämä on yleinen virhekäsitys. Magneettinen voima ei vedä hiukkasta kentän suuntaan kuten magneetti rautanaulaa, vaan se on kohtisuorassa sekä kenttää että nopeutta vastaan. Vauhtia kasvattaa vain sähkökenttä."
+        },
+        {
+          "text": "Liike-energia pienenee, koska magneettinen voima osoittaa nopeudelle vastakkaiseen suuntaan ja jarruttaa.",
+          "feedback": "Jarruttava voima olisi nopeuden suuntainen, mutta magneettinen voima on aina kohtisuorassa nopeutta vastaan. Silloin se ei voi hidastaa hiukkasta, vaan kaartaa sen rataa ympyräksi."
+        },
+        {
+          "text": "Liike-energia pysyy samana, koska magneettinen voima on kohtisuorassa nopeutta vastaan eikä tee työtä.",
           "feedback": "Oikein: voima, joka on koko ajan kohtisuorassa liikesuuntaa vastaan, ei tee työtä. Magneettinen voima kääntää vain nopeuden suuntaa ja toimii ympyräradan keskeisvoimana, joten vauhti ja liike-energia eivät muutu.",
           "correct": true
         },
         {
-          "text": "Liike-energia kasvaa, koska magneettinen voima vetää protonia kentän suuntaan ja kiihdyttää sitä kentässä.",
-          "feedback": "Tämä on yleinen virhekäsitys. Magneettinen voima ei vedä hiukkasta kentän suuntaan kuten magneetti rautanaulaa, vaan se on kohtisuorassa sekä kenttää että nopeutta vastaan. Vauhtia kasvattaa vain sähkökenttä."
-        },
-        {
-          "text": "Liike-energia pienenee, koska magneettinen voima jarruttaa protonia nopeudelle vastakkaiseen suuntaan kentässä.",
-          "feedback": "Jarruttava voima olisi nopeuden suuntainen, mutta magneettinen voima on aina kohtisuorassa nopeutta vastaan. Silloin se ei voi hidastaa hiukkasta, vaan kaartaa sen rataa ympyräksi."
-        },
-        {
-          "text": "Liike-energia kasvaa vain voimakkaassa kentässä, koska suuri magneettivuon tiheys tekee voimasta riittävän suuren.",
+          "text": "Liike-energia kasvaa, jos kenttä on riittävän voimakas, koska suuri voima tekee silloin työtä.",
           "feedback": "Voiman suuruus ei ratkaise, vaan sen suunta. Vaikka kenttä olisi kuinka voimakas, kohtisuora voima ei tee työtä. Voimakas kenttä taivuttaa radan vain pienemmäksi ympyräksi, $r = mv : (qB)$."
         }
       ]
@@ -81,7 +81,7 @@
     {
       "id": "fy7-2-L1-08",
       "level": 1,
-      "text": "Elektroni, jonka massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja varaus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$, lentää vauhdilla $3{,}0 \\cdot 10^{6}\\,\\text{m/s}$ kohtisuoraan homogeenista magneettikenttää vastaan. Magneettivuon tiheys on $0{,}020\\,\\text{T}$. Kuinka kauan elektronilta kuluu yhteen täyteen kierrokseen? Anna vastaus nanosekunteina.",
+      "text": "Elektroni, jonka massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja varaus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$, lentää vauhdilla $5{,}0 \\cdot 10^{6}\\,\\text{m/s}$ kohtisuoraan homogeenista magneettikenttää vastaan. Magneettivuon tiheys on $0{,}020\\,\\text{T}$. Kuinka kauan elektronilta kuluu yhteen täyteen kierrokseen? Anna vastaus nanosekunteina.",
       "answer": 1.8,
       "unit": "ns",
       "tolerance": 0.02
@@ -123,7 +123,7 @@
     {
       "id": "fy7-2-L2-05",
       "level": 2,
-      "text": "Sumukammiossa on homogeeninen magneettikenttä, jonka magneettivuon tiheys on $0{,}050\\,\\text{T}$ ja joka osoittaa paperiin sisään. Kolme hiukkasta tulee kammioon vasemmalta oikealle samalla vauhdilla $2{,}0 \\cdot 10^{5}\\,\\text{m/s}$, ja jokaisen varauksen suuruus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Taulukossa on ratojen kaartumissuunta paperin tasossa ja ympyräradan säde (esimerkkiaineisto). Protonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$.\n\na) Päättele, onko kunkin hiukkasen varaus positiivinen vai negatiivinen.\n\nb) Laske radan 1 hiukkasen suhde $m : q$ ja vertaa sitä protonin arvoon. Mikä hiukkanen se voi olla?\n\nc) Radan 3 säde on noin kaksinkertainen radan 1 säteeseen verrattuna. Kuinka monta kertaa suurempi on radan 3 hiukkasen suhde $m : q$?\n\nAnna vastauskenttään kohdan b) suhde $m : q$ muodossa $\\ldots \\cdot 10^{-8}\\,\\text{kg/C}$.",
+      "text": "Tyhjiökammiossa on homogeeninen magneettikenttä, jonka magneettivuon tiheys on $0{,}050\\,\\text{T}$ ja joka osoittaa paperiin sisään. Kolme ionia tulee kammioon vasemmalta oikealle samalla vauhdilla $2{,}0 \\cdot 10^{5}\\,\\text{m/s}$, ja jokaisen varauksen suuruus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Paikkaherkkä ilmaisin kirjaa ratojen kaartumissuunnan paperin tasossa ja ympyräradan säteen; tulokset ovat taulukossa (esimerkkiaineisto). Protonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$.\n\na) Päättele, onko kunkin ionin varaus positiivinen vai negatiivinen.\n\nb) Laske radan 1 ionin suhde $m : q$ ja vertaa sitä protonin arvoon. Mikä ioni se voi olla?\n\nc) Kuinka monta kertaa suurempi on radan 3 ionin suhde $m : q$ kuin radan 1 ionin? Lue säteet taulukosta.\n\nAnna vastauskenttään kohdan b) suhde $m : q$ muodossa $\\ldots \\cdot 10^{-8}\\,\\text{kg/C}$.",
       "kind": [
         "data",
         "reasoning"
@@ -132,7 +132,7 @@
       "unit": "10⁻⁸ kg/C",
       "tolerance": 0.05,
       "data": {
-        "caption": "Hiukkasradat sumukammiossa",
+        "caption": "Ionien radat tyhjiökammiossa",
         "columns": [
           "Rata",
           "Kaartuu",
@@ -197,31 +197,31 @@
     {
       "id": "fy7-2-L2-07",
       "level": 2,
-      "text": "Oppilas väittää: \"Magneettikentässä ympyrärataa kiertävä hiukkanen kiertää kierroksen nopeammin, kun sen vauhti kasvaa, koska kehä kuljetaan nopeammin.\" Mikä on oppilaan päättelyn virhe?",
+      "text": "Oppilas väittää: ”Magneettikentässä ympyrärataa kiertävä hiukkanen kiertää kierroksen nopeammin, kun sen vauhti kasvaa, koska kehä kuljetaan nopeammin.” Mikä on oppilaan päättelyn virhe?",
       "kind": [
         "error",
         "concept"
       ],
-      "answer": "Säde ei pysy samana vaan kasvaa vauhdin mukana, joten kehä pitenee samassa suhteessa kuin vauhti ja kierrosaika säilyy.",
+      "answer": "Säde kasvaa samassa suhteessa kuin vauhti, joten kehä pitenee yhtä paljon ja kierrosaika pysyy samana.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Säde ei pysy samana vaan kasvaa vauhdin mukana, joten kehä pitenee samassa suhteessa kuin vauhti ja kierrosaika säilyy.",
-          "feedback": "Oikein: $r = mv : (qB)$, joten kaksinkertainen vauhti antaa kaksinkertaisen säteen ja kaksinkertaisen kehän. Kaksinkertainen matka kuljetaan kaksinkertaisella vauhdilla yhtä nopeasti, ja kierrosaika $T = 2\\pi m : (qB)$ ei riipu vauhdista.",
-          "correct": true
-        },
-        {
-          "text": "Magneettinen voima kiihdyttää hiukkasta jatkuvasti, joten vauhti kasvaa kentässä itsestään ja kierrosaika lyhenee kierros kierrokselta.",
+          "text": "Magneettinen voima kiihdyttää hiukkasta jatkuvasti, joten vauhti kasvaa itsestään ja kierrosaika lyhenee.",
           "feedback": "Magneettinen voima on kohtisuorassa nopeutta vastaan, joten se ei tee työtä eikä kiihdytä hiukkasta. Vauhti pysyy kentässä vakiona, ja kierrosaika ei lyhene, koska rata kasvaa vauhdin mukana."
         },
         {
-          "text": "Säde pienenee vauhdin kasvaessa, koska suurempi vauhti kasvattaa magneettista voimaa ja kaartaa rataa tiukemmin.",
+          "text": "Säde pienenee vauhdin kasvaessa, koska suurempi voima kaartaa rataa tiukemmin ja kehä lyhenee.",
           "feedback": "Voima $qvB$ kasvaa kyllä vauhdin mukana, mutta ympyräliike vaatisi keskeisvoimalta $mv^2 : r$, joka kasvaa vauhdin neliönä. Siksi nopeampi hiukkanen kaartuu loivemmin: säde $r = mv : (qB)$ kasvaa vauhdin mukana."
         },
         {
-          "text": "Säde kasvaa vauhdin mukana nopeammin kuin vauhti, joten kehä pitenee enemmän ja kierrokseen kuluu aikaa aiempaa enemmän.",
+          "text": "Säde kasvaa vauhtia nopeammin, joten kehä pitenee enemmän ja kierrokseen kuluu enemmän aikaa.",
           "feedback": "Säde on suoraan verrannollinen vauhtiin, $r \\propto v$, ei sitä jyrkempi. Kaksinkertainen vauhti antaa täsmälleen kaksinkertaisen säteen ja kehän, joten matkan pidentyminen kumoaa vauhdin kasvun täsmälleen."
+        },
+        {
+          "text": "Säde kasvaa samassa suhteessa kuin vauhti, joten kehä pitenee yhtä paljon ja kierrosaika pysyy samana.",
+          "feedback": "Oikein: $r = mv : (qB)$, joten kaksinkertainen vauhti antaa kaksinkertaisen säteen ja kaksinkertaisen kehän. Kaksinkertainen matka kuljetaan kaksinkertaisella vauhdilla yhtä nopeasti, ja kierrosaika $T = 2\\pi m : (qB)$ ei riipu vauhdista.",
+          "correct": true
         }
       ]
     }
@@ -254,7 +254,7 @@
     {
       "id": "fy7-2-L3-04",
       "level": 3,
-      "text": "Massaspektrometrissä yksittäin positiivisesti varattuja ioneja ($q = e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$) kiihdytetään levosta jännitteellä $U$. Sen jälkeen ne kulkevat kohtisuoraan homogeenista magneettikenttää vastaan, jonka magneettivuon tiheys on $0{,}200\\,\\text{T}$, puoliympyrän. Ionilähteessä on yhtä alkuainetta, joka on litium-7, natrium-23 tai kalium-39. Ionien ratasäde $r$ mitattiin eri kiihdytysjännitteillä (esimerkkiaineisto). Atomimassayksikkö on $1\\,\\text{u} = 1{,}661 \\cdot 10^{-27}\\,\\text{kg}$.\n\na) Johda yhtälö, joka kertoo, miten säteen neliö $r^2$ riippuu jännitteestä $U$.\n\nb) Piirrä mittauspisteistä kuvaaja, jossa vaaka-akselilla on $U$ ja pystyakselilla $r^2$, ja sovita pisteisiin suora. Määritä sen kulmakertoimesta ionin massa atomimassayksikköinä.\n\nc) Päättele, mikä ioni on kyseessä, ja perustele, miksi suoran pitää kulkea origon kautta.\n\nAnna vastauskenttään kohdan b) ionin massa yksikössä u.",
+      "text": "Massaspektrometrissä yksittäin positiivisesti varattuja ioneja ($q = e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$) kiihdytetään levosta jännitteellä $U$. Sen jälkeen ne kulkevat kohtisuoraan homogeenista magneettikenttää vastaan, jonka magneettivuon tiheys on $0{,}200\\,\\text{T}$, puoliympyrän. Ionilähteessä on yhtä alkuainetta, joka on litium-7, natrium-23 tai kalium-39. Ionien ratasäde $r$ mitattiin eri kiihdytysjännitteillä (esimerkkiaineisto). Atomimassayksikkö on $1\\,\\text{u} = 1{,}661 \\cdot 10^{-27}\\,\\text{kg}$.\n\na) Johda yhtälö, joka kertoo, miten säteen neliö $r^2$ riippuu jännitteestä $U$.\n\nb) Piirrä mittauspisteistä kuvaaja, jossa vaaka-akselilla on $U$ ja pystyakselilla $r^2$, ja sovita pisteisiin suora (käsin sovitettu suora riittää). Määritä sen kulmakertoimesta ionin massa atomimassayksikköinä.\n\nc) Päättele, mikä ioni on kyseessä, ja perustele, miksi suoran pitää kulkea origon kautta.\n\nAnna vastauskenttään kohdan b) ionin massa yksikössä u.",
       "kind": [
         "data",
         "graph",
@@ -296,11 +296,11 @@
     {
       "id": "fy7-2-L3-05",
       "level": 3,
-      "text": "Esimerkkisyklotronissa protonit kiertävät homogeenisessa magneettikentässä, jonka magneettivuon tiheys on $1{,}50\\,\\text{T}$. Protonit lähtevät keskeltä käytännössä levosta, ja jokaisella D-elektrodien välisen raon ylityksellä niitä kiihdyttää jännite $60\\,\\text{kV}$. Proton ylittää raon kahdesti kierroksella. Ulosvetohetkellä protonit kiertävät ympyrärataa, jonka säde on $0{,}20\\,\\text{m}$. Protonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$, varaus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$ ja valon nopeus $3{,}00 \\cdot 10^{8}\\,\\text{m/s}$.\n\na) Laske protonin vauhti ja liike-energia ulosvetohetkellä.\n\nb) Montako kertaa proton on ylittänyt raon ja montako kierrosta se on kiertänyt? Kuinka kauan kiihdytys kestää?\n\nc) Perustele, miksi kierrosaika on sama kierroksesta toiseen, ja arvioi, onko klassinen käsittely tässä perusteltua.\n\nAnna vastauskenttään kohdan b) kiihdytysaika mikrosekunteina.",
+      "text": "Esimerkkisyklotronissa protonit kiertävät homogeenisessa magneettikentässä, jonka magneettivuon tiheys on $1{,}00\\,\\text{T}$. Protonit lähtevät keskeltä käytännössä levosta, ja jokaisella D-elektrodien välisen raon ylityksellä niitä kiihdyttää jännite $60\\,\\text{kV}$. Protoni ylittää raon kahdesti kierroksella. Ulosvetohetkellä protonit kiertävät ympyrärataa, jonka säde on $0{,}20\\,\\text{m}$. Protonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$, varaus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$ ja valon nopeus $3{,}00 \\cdot 10^{8}\\,\\text{m/s}$.\n\na) Laske protonin vauhti ja liike-energia ulosvetohetkellä.\n\nb) Montako kertaa protoni on ylittänyt raon ja montako kierrosta se on kiertänyt? Kuinka kauan kiihdytys kestää?\n\nc) Laske vauhdin suhde valon nopeuteen ja arvioi, onko klassinen käsittely tässä perusteltua.\n\nAnna vastauskenttään kohdan b) kiihdytysaika mikrosekunteina.",
       "kind": [
         "model"
       ],
-      "answer": 1.6,
+      "answer": 1.05,
       "unit": "µs",
       "tolerance": 0.03
     }
