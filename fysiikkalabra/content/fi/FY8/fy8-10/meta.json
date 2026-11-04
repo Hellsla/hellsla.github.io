@@ -1,0 +1,21 @@
+{
+  "id": "fy8-10",
+  "course": "FY8",
+  "title": "Massavaje ja ytimen sidosenergia",
+  "goals": [
+    "LOPS FY8: ydinreaktiot, massan ja energian ekvivalenssi, ytimen sidosenergia",
+    "Täsmennys: massan ja energian ekvivalenssia tarkastellaan ydinreaktion yhteydessä ja sidosenergiaan liittyen; reaktioenergia massoista"
+  ],
+  "prerequisites": [
+    "fy8-9"
+  ],
+  "glossary": [
+    "massavaje",
+    "sidosenergia",
+    "ydinreaktio",
+    "atomimassayksikkö"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

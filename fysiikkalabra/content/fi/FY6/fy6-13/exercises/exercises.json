@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-13-L1-01",
+      "level": 1,
+      "text": "Kondensaattori kytketään $12\\,\\text{V}$:n jännitteeseen, ja sen levyille siirtyy varaus $4{,}8\\,\\mu\\text{C}$. Mikä on kondensaattorin kapasitanssi? Vastaa mikrofaradeina.",
+      "answer": 0.4,
+      "unit": "µF",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-02",
+      "level": 1,
+      "text": "Elektrolyyttikondensaattorin kapasitanssi on $470\\,\\mu\\text{F}$, ja se ladataan $9{,}0\\,\\text{V}$:n paristolla. Kuinka suuri on kondensaattorin varaus latauksen jälkeen? Vastaa millicoulombeina.",
+      "answer": 4.23,
+      "unit": "mC",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-03",
+      "level": 1,
+      "text": "Kaiutinvahvistimen virtalähteessä on kondensaattori, jonka kapasitanssi on $2200\\,\\mu\\text{F}$ ja jännite $16\\,\\text{V}$. Kuinka paljon energiaa kondensaattoriin on varastoitunut? Vastaa jouleina.",
+      "answer": 0.2816,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-04",
+      "level": 1,
+      "text": "Levykondensaattorin levyjen pinta-ala on $0{,}025\\,\\text{m}^2$, ja levyjen välissä on ilmaa $1{,}0\\,\\text{mm}$:n paksuudelta. Mikä on kondensaattorin kapasitanssi? Vastaa pikofaradeina.",
+      "answer": 221.35,
+      "unit": "pF",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L1-05",
+      "level": 1,
+      "text": "Kuvaajassa on kondensaattorin jännite sen varauksen funktiona latauksen aikana. Kuinka paljon energiaa kondensaattoriin on varastoitunut, kun sen jännite on $12\\,\\text{V}$? Lue tarvittavat arvot kuvaajasta. Vastaa mikrojouleina.",
+      "figure": "fy6-13/ex-qu",
+      "answer": 360,
+      "unit": "µJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-13-L2-01",
+      "level": 2,
+      "text": "Kondensaattorin levyjen välissä on $0{,}020\\,\\text{mm}$:n paksuinen paperikerros, jonka läpilyöntilujuus on $16\\,\\text{MV/m}$. Kuinka suuri jännite kondensaattoriin voidaan enintään kytkeä ilman läpilyöntiä?",
+      "answer": 320,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-02",
+      "level": 2,
+      "text": "Levykondensaattorin levyjen pinta-ala on $100\\,\\text{cm}^2$, ja niiden välissä on $0{,}10\\,\\text{mm}$:n paksuinen eristekerros. Kondensaattorin kapasitanssiksi mitataan $3{,}3\\,\\text{nF}$. Mikä on eristeen suhteellinen permittiivisyys?",
+      "answer": 3.727129,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-03",
+      "level": 2,
+      "text": "Sydäniskurin kondensaattoriin varastoidaan ennen iskua energiaa $200\\,\\text{J}$, kun sen jännite on $2{,}0\\,\\text{kV}$. Mikä on kondensaattorin kapasitanssi? Vastaa mikrofaradeina.",
+      "answer": 100,
+      "unit": "µF",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-04",
+      "level": 2,
+      "text": "Superkondensaattorin kapasitanssi on $10\\,\\text{F}$, ja se on ladattu suurimpaan sallittuun jännitteeseensä $2{,}7\\,\\text{V}$. Sillä käytetään LED-valaisinta, jonka teho on $0{,}50\\,\\text{W}$. Oleta, että teho pysyy vakiona ja kondensaattorin koko energia saadaan käyttöön. Kuinka kauan valaisin palaa? Vastaa sekunteina.",
+      "answer": 72.9,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-13-L3-01",
+      "level": 3,
+      "text": "Ilmaeristeinen levykondensaattori, jonka kapasitanssi on $120\\,\\text{pF}$, ladataan $500\\,\\text{V}$:n jännitteeseen, ja lähde irrotetaan. Sen jälkeen levyt vedetään kaksi kertaa niin kauas toisistaan. Kuinka paljon kondensaattorin energia kasvaa? Vastaa mikrojouleina.",
+      "answer": 15,
+      "unit": "µJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L3-02",
+      "level": 3,
+      "text": "Ilmaeristeinen kondensaattori, jonka kapasitanssi on $220\\,\\text{pF}$, on kytketty $1{,}5\\,\\text{kV}$:n jännitelähteeseen. Levyjen väli täytetään lasilevyllä, jonka suhteellinen permittiivisyys on $5{,}6$, ja lähde pysyy koko ajan kytkettynä. Kuinka suuri varaus lähteestä siirtyy kondensaattoriin lisää? Vastaa mikrocoulombeina.",
+      "answer": 1.518,
+      "unit": "µC",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L3-03",
+      "level": 3,
+      "text": "Suunnittelet levykondensaattoria, jonka kapasitanssi on $1{,}0\\,\\text{nF}$ ja joka kestää $6{,}0\\,\\text{kV}$:n jännitteen. Eristeenä on polystyreeni, jonka suhteellinen permittiivisyys on $2{,}6$ ja läpilyöntilujuus $24\\,\\text{MV/m}$. Varmuuden vuoksi kenttä saa olla enintään puolet läpilyöntilujuudesta. Kuinka suuri levyjen pinta-alan on oltava? Vastaa neliösenttimetreinä.",
+      "answer": 217.198659,
+      "unit": "cm²",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "contribution": "Massan ja energian ekvivalenssi ytimissä: atomimassayksikkö ja sen energiavastine $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$, massavaje ja sidosenergia $E_\\text{B} = \\Delta m\\,c^2$ atomimassoista (AME2020), sidosenergia nukleonia kohti ja sen kuvaaja, jonka opiskelija rakentaa itse, sekä ydinreaktion reaktioenergia $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$.",
+  "learn": [
+    "laskemaan ytimen massavajeen ja sidosenergian atomimassoista.",
+    "selittämään, minkä muotoinen sidosenergiakäyrä on ja miksi fuusio ja fissio vapauttavat energiaa.",
+    "laskemaan ydinreaktion reaktioenergian lähtöaineiden ja syntyvien hiukkasten massoista."
+  ],
+  "prior": [
+    "Ydin koostuu protoneista ja neutroneista. Hajoamisyhtälössä massaluku ja varausluku säilyvät eli pysyvät samoina (luku *Atomiydin ja radioaktiivinen hajoaminen*)",
+    "Energian voi ilmoittaa elektronivoltteina: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$ (luku *Valosähköinen ilmiö ja fotoni*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Helium-4-atomissa on kaksi protonia, kaksi neutronia ja kaksi elektronia. Samat hiukkaset ovat kahdessa vetyatomissa ja kahdessa neutronissa. Niiden yhteinen massa on $4{,}032980\\,\\text{u}$. Helium-4-atomin massa on kuitenkin vain $4{,}002603\\,\\text{u}$. Ero on alle prosentin. Massat tunnetaan kuitenkin miljoonasosan tarkkuudella, joten ero on todellinen.",
+      "question": "Mihin helium-4:n puuttuva massa on mennyt, kun protonit ja neutronit liittyvät yhteen ytimeksi?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Kertaa: alfahajoaminen",
+      "prompt": "Polonium-210 ${}^{210}_{84}\\text{Po}$ hajoaa alfahajoamisella. Mikä tytärydin eli hajoamisessa syntyvä ydin syntyy?",
+      "choices": [
+        {
+          "text": "${}^{206}_{82}\\text{Pb}$ eli lyijy-206",
+          "correct": true,
+          "feedback": "Oikein. Alfahiukkanen ${}^{4}_{2}\\text{He}$ vie mukanaan kaksi protonia ja kaksi neutronia. Siksi massaluku pienenee neljällä ja järjestysluku kahdella (luku *Atomiydin ja radioaktiivinen hajoaminen*). Tässä luvussa lasketaan, paljonko energiaa tässä hajoamisessa vapautuu."
+        },
+        {
+          "text": "${}^{206}_{84}\\text{Po}$ eli polonium-206",
+          "feedback": "Massaluku pieneni oikein neljällä. Alfahiukkasessa on kuitenkin myös kaksi protonia, joten järjestysluku pienenee kahdella: $84 - 2 = 82$ on lyijy (luku *Atomiydin ja radioaktiivinen hajoaminen*)."
+        },
+        {
+          "text": "${}^{210}_{82}\\text{Pb}$ eli lyijy-210",
+          "feedback": "Järjestysluku pieneni oikein kahdella. Alfahiukkasessa on kuitenkin neljä nukleonia, joten massaluku pienenee neljällä: $210 - 4 = 206$ (luku *Atomiydin ja radioaktiivinen hajoaminen*)."
+        },
+        {
+          "text": "${}^{210}_{85}\\text{At}$ eli astatiini-210",
+          "feedback": "Tämä olisi beeta miinus -hajoaminen. Siinä neutroni muuttuu protoniksi ja järjestysluku kasvaa yhdellä. Alfahajoamisessa ytimestä lähtee ${}^{4}_{2}\\text{He}$, joten $A$ pienenee neljällä ja $Z$ kahdella (luku *Atomiydin ja radioaktiivinen hajoaminen*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: kevyistä raskaisiin",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "Sidosenergia nukleonia kohti $\\tfrac{E_\\text{B}}{A}$ kertoo, kuinka lujasti nukleonit ovat keskimäärin sitoutuneet ytimeen. Miten se muuttuu, kun siirrytään kevyimmistä ytimistä raskaimpiin, deuteriumista uraaniin?",
+      "choices": [
+        {
+          "text": "Se kasvaa ensin jyrkästi ja on suurin keskiraskailla ytimillä. Sen jälkeen se pienenee loivasti kohti raskaimpia ytimiä.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Deuteriumilla arvo on $1{,}112\\,\\text{MeV}$, happi-16:lla $7{,}976\\,\\text{MeV}$, rauta-56:lla $8{,}790\\,\\text{MeV}$ ja nikkeli-62:lla $8{,}795\\,\\text{MeV}$. Lyijy-208:lla arvo on kuitenkin $7{,}868\\,\\text{MeV}$ ja uraani-238:lla $7{,}570\\,\\text{MeV}$. Raskaissa ytimissä protonien sähköinen hylkiminen heikentää sidosta."
+        },
+        {
+          "text": "Se kasvaa koko ajan, koska suuremmassa ytimessä jokaista nukleonia vetää puoleensa useampi naapuri.",
+          "feedback": "Mallin arvot kumoavat tämän: uraani-238:lla $\\tfrac{E_\\text{B}}{A} = 7{,}570\\,\\text{MeV}$ on pienempi kuin rauta-56:lla $8{,}790\\,\\text{MeV}$. Vahva vuorovaikutus vetää vain lähinaapureita. Suuressa ytimessä naapureita ei siis tule lisää, mutta jokaista protonia hylkivät kaikki muut protonit."
+        },
+        {
+          "text": "Se on kaikilla ytimillä suunnilleen sama, koska kaikki nukleonit sitoo yhteen sama vahva vuorovaikutus.",
+          "feedback": "Mallin arvot kumoavat tämän: deuteriumilla arvo on $1{,}112\\,\\text{MeV}$ ja rauta-56:lla $8{,}790\\,\\text{MeV}$, eli lähes kahdeksan kertaa suurempi. Pienessä ytimessä nukleonilla on vähän naapureita, joihin se sitoutuu."
+        },
+        {
+          "text": "Se pienenee koko ajan, koska protonien sähköinen hylkiminen kasvaa ytimen kasvaessa.",
+          "feedback": "Mallin arvot kumoavat tämän: arvo kasvaa deuteriumin $1{,}112\\,\\text{MeV}$:stä rauta-56:n $8{,}790\\,\\text{MeV}$:iin. Hylkiminen alkaa hallita vasta raskailla ytimillä. Niissä arvo pienenee uraani-238:n arvoon $7{,}570\\,\\text{MeV}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: helium vai litium",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "Litium-7-ytimessä on seitsemän nukleonia ja helium-4-ytimessä neljä. Kummassa ytimessä sidosenergia nukleonia kohti $\\tfrac{E_\\text{B}}{A}$ on suurempi?",
+      "choices": [
+        {
+          "text": "Helium-4:ssä, vaikka siinä on vähemmän nukleoneja.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: helium-4:llä $\\tfrac{E_\\text{B}}{A} = 7{,}074\\,\\text{MeV}$ ja litium-7:llä vain $5{,}607\\,\\text{MeV}$. Helium-4 on poikkeuksellisen tiiviisti sidottu ydin. Siksi raskaista ytimistä lähtee alfahajoamisessa juuri helium-4-ydin."
+        },
+        {
+          "text": "Litium-7:ssä, koska siinä on enemmän nukleoneja ja jokaisella nukleonilla on enemmän naapureita.",
+          "feedback": "Mallin arvot kumoavat tämän: litium-7:llä $\\tfrac{E_\\text{B}}{A} = 5{,}607\\,\\text{MeV}$ ja helium-4:llä $7{,}074\\,\\text{MeV}$. Kevyillä ytimillä arvo ei kasva tasaisesti. Helium-4 on poikkeuksellisen tiivis, ja kuvaajassa se on piikki naapureidensa yläpuolella."
+        },
+        {
+          "text": "Yhtä suuri, koska kummassakin ytimessä on vain muutama nukleoni.",
+          "feedback": "Mallin arvot kumoavat tämän: helium-4:llä arvo on $7{,}074\\,\\text{MeV}$ ja litium-7:llä $5{,}607\\,\\text{MeV}$. Ero on noin $1{,}5\\,\\text{MeV}$ nukleonia kohti. Kevyiden ytimien arvot vaihtelevat paljon ytimestä toiseen."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse ydin. Vaaka vertaa erillisten nukleonien massaa atomin massaan. Kuvaaja näyttää jokaisen tutkimasi ytimen sidosenergian nukleonia kohti.",
+      "howto": "Valitse *Ydin* -valikosta ydinlaji. Vasemmassa vaakakupissa ovat ytimen $Z$ vetyatomia ja $N$ neutronia erillään (punainen on protoni, harmaa on neutroni). Oikeassa kupissa on sama atomi, jonka nukleonit ovat sitoutuneet tiiviiksi ytimeksi. Kuppien alla näkyvät niiden massat, ja yläreunassa näkyy massavaje $\\Delta m$. Vaaka kallistuu raskaamman puolelle eli erillisten nukleonien puolelle. Kallistus on liioiteltu, jotta sen näkee. Kuvaajaan jää piste jokaisesta tutkimastasi ytimestä, ja nykyinen ydin on rengastettu. Painike *Näytä kaikki ytimet* piirtää myös taulukon muut ytimet vaaleina renkaina. Painike *Tyhjennä kuvaaja* poistaa tutkitut pisteet.",
+      "model": "Atomien massat ovat atomimassataulukon AME2020 arvoja (IAEA:n Atomic Mass Data Center) kuuden desimaalin tarkkuudella. Massavaje lasketaan vetyatomien ${}^{1}\\text{H}$ massoista eikä protonien massoista, jotta elektronien massat kumoutuvat. Elektronien omaa, hyvin pientä sidosenergiaa atomissa ei oteta huomioon. Taulukossa on $32$ ydinlajia, yksi tai kaksi kustakin alkuaineesta. Lukemat ovat näistä massoista laskettuja mallin arvoja. Ne eivät ole omia mittauksia.",
+      "calc": "Erillisten nukleonien massa on $Z\\,m_\\text{H} + N\\,m_\\text{n}$, missä $m_\\text{H} = 1{,}007825\\,\\text{u}$ ja $m_\\text{n} = 1{,}008665\\,\\text{u}$. Massavaje on $\\Delta m = Z\\,m_\\text{H} + N\\,m_\\text{n} - m_\\text{atomi}$. Sidosenergia saadaan sijoittamalla $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$ yhtälöön $E_\\text{B} = \\Delta m\\,c^2$. Kuvaajan pystyakselilla on $\\tfrac{E_\\text{B}}{A}$ ja vaaka-akselilla massaluku $A$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: kevyet ytimet",
+      "intro": "Testaa ennuste 2. Valitse ytimet tässä järjestyksessä: vety-2 (deuterium), helium-4, litium-7, hiili-12 ja happi-16. Kirjaa jokaisesta ytimestä massavaje $\\Delta m$, sidosenergia $E_\\text{B}$ ja sidosenergia nukleonia kohti $\\tfrac{E_\\text{B}}{A}$. Kirjaa ne ainakin kolmesta ensimmäisestä ytimestä.",
+      "initial": {
+        "ydin": "H2"
+      },
+      "locked": [],
+      "vary": "ydin",
+      "min": 3,
+      "names": {
+        "ydin": "ydin"
+      },
+      "values": {
+        "ydin": {
+          "H2": "vety-2",
+          "He4": "helium-4",
+          "Li7": "litium-7",
+          "C12": "hiili-12",
+          "O16": "happi-16",
+          "Fe56": "rauta-56",
+          "Ni62": "nikkeli-62",
+          "Ag107": "hopea-107",
+          "Pb208": "lyijy-208",
+          "U238": "uraani-238"
+        }
+      },
+      "measure": [
+        {
+          "key": "dm",
+          "label": "Δm (u)"
+        },
+        {
+          "key": "EB",
+          "label": "E_B (MeV)"
+        },
+        {
+          "key": "EBA",
+          "label": "E_B/A (MeV)"
+        }
+      ]
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: keskiraskaat ja raskaat ytimet",
+      "intro": "Testaa ennuste 1. Kirjaa samat suureet ytimistä rauta-56, nikkeli-62, hopea-107, lyijy-208 ja uraani-238. Kirjaa ne ainakin kolmesta ytimestä. Paina lopuksi painiketta *Näytä kaikki ytimet* ja katso koko kuvaajaa.",
+      "initial": {
+        "ydin": "Fe56"
+      },
+      "locked": [],
+      "vary": "ydin",
+      "min": 3,
+      "names": {
+        "ydin": "ydin"
+      },
+      "values": {
+        "ydin": {
+          "H2": "vety-2",
+          "He4": "helium-4",
+          "Li7": "litium-7",
+          "C12": "hiili-12",
+          "O16": "happi-16",
+          "Fe56": "rauta-56",
+          "Ni62": "nikkeli-62",
+          "Ag107": "hopea-107",
+          "Pb208": "lyijy-208",
+          "U238": "uraani-238"
+        }
+      },
+      "measure": [
+        {
+          "key": "dm",
+          "label": "Δm (u)"
+        },
+        {
+          "key": "EB",
+          "label": "E_B (MeV)"
+        },
+        {
+          "key": "EBA",
+          "label": "E_B/A (MeV)"
+        }
+      ]
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: sidosenergiakäyrä",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella vastaus näihin kysymyksiin. Miten sidosenergia nukleonia kohti muuttuu, kun massaluku kasvaa? Minkä ytimien kohdalla se on suurin? Mikä kevyt ydin poikkeaa naapureistaan? Kumpi on tiiviimmin sidottu, rauta-56 vai uraani-238, vaikka uraanin koko sidosenergia on paljon suurempi?",
+      "model": "Mallin arvoina sidosenergia nukleonia kohti kasvaa jyrkästi kevyillä ytimillä: vety-2 $1{,}112\\,\\text{MeV}$, litium-7 $5{,}607\\,\\text{MeV}$, hiili-12 $7{,}680\\,\\text{MeV}$ ja happi-16 $7{,}976\\,\\text{MeV}$. Helium-4 poikkeaa muista: sen arvo $7{,}074\\,\\text{MeV}$ on suurempi kuin raskaamman litium-7:n. Suurin arvo on keskiraskailla ytimillä, nikkeli-62:lla $8{,}795\\,\\text{MeV}$ ja rauta-56:lla $8{,}790\\,\\text{MeV}$. Siitä arvo pienenee loivasti: hopea-107 $8{,}554\\,\\text{MeV}$, lyijy-208 $7{,}868\\,\\text{MeV}$ ja uraani-238 $7{,}570\\,\\text{MeV}$. Uraani-238:n koko sidosenergia $1801{,}7\\,\\text{MeV}$ on suurempi kuin raudan $492{,}3\\,\\text{MeV}$, koska nukleoneja on enemmän. Nukleonia kohti rauta on kuitenkin tiiviimmin sidottu. Kevyissä ytimissä nukleonilla on vähän naapureita, joihin vahva vuorovaikutus sen sitoo. Raskaissa ytimissä protonien sähköinen hylkiminen heikentää sidosta, koska se ulottuu koko ytimen yli.",
+      "criteria": [
+        "Kuvaan mallin arvoilla, että $\\tfrac{E_\\text{B}}{A}$ kasvaa ensin jyrkästi, on suurin raudan ja nikkelin kohdalla ja pienenee sitten loivasti.",
+        "Nimeän helium-4:n poikkeukseksi: sen arvo on suurempi kuin litium-7:n.",
+        "Erotan koko sidosenergian ja sidosenergian nukleonia kohti toisistaan: uraanilla edellinen on suurempi, raudalla jälkimmäinen.",
+        "Kutsun simulaation lukuja mallin arvoiksi enkä omiksi mittauksiksi."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin. Palaa sitten alun kysymykseen. Mihin helium-4-atomista puuttuva massa $0{,}030377\\,\\text{u}$ on mennyt? Miksi helium-4 on kevyempi kuin sen osat?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija laskee hiili-12-ytimen sidosenergian. Hän saa massavajeeksi oikein $\\Delta m = 0{,}098940\\,\\text{u}$ ja kirjoittaa\n\n$$\\begin{aligned} &E_\\text{B} = \\Delta m\\,c^2 \\\\ &= 0{,}098940 \\cdot 931{,}5\\,\\text{MeV} \\\\ &\\quad \\cdot (2{,}998 \\cdot 10^{8}\\,\\text{m/s})^2 \\\\ &\\approx 8{,}3 \\cdot 10^{18}\\,\\text{MeV} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Luku $c^2$ on kerrottu kahdesti, koska se sisältyy jo muuntolukuun $931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$.",
+          "correct": true,
+          "feedback": "Oikein. Kun yksikön $\\text{u}$ paikalle sijoitetaan $931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$, $c^2$ supistuu pois: $0{,}098940 \\cdot 931{,}5\\,\\tfrac{\\text{MeV}}{c^2} \\cdot c^2 = 92{,}16\\,\\text{MeV}$. Myös yksikkö paljastaa virheen: opiskelijan tuloksen yksikkö olisi $\\text{MeV} \\cdot \\tfrac{\\text{m}^2}{\\text{s}^2}$, ja se ei ole energian yksikkö."
+        },
+        {
+          "text": "Massavaje olisi pitänyt muuttaa ensin kilogrammoiksi ennen kertomista.",
+          "feedback": "Kilogrammoilla ja jouleilla voi laskea, mutta tässä se ei ole pakollista. Muuntoluvulla $931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$ energia saadaan suoraan megaelektronivoltteina. Virhe on se, että $c^2$ on otettu mukaan kahdesti."
+        },
+        {
+          "text": "Hiili-12-atomin massa on tasan $12\\,\\text{u}$, joten massavajeen pitäisi olla nolla.",
+          "feedback": "Hiili-12-atomin massa on määritelmän mukaan tasan $12\\,\\text{u}$. Kuusi vetyatomia ja kuusi neutronia painavat kuitenkin yhteensä $12{,}098940\\,\\text{u}$. Massavaje $0{,}098940\\,\\text{u}$ on siis oikein. Virhe on siinä, että $c^2$ on otettu mukaan kahdesti."
+        },
+        {
+          "text": "Sidosenergia olisi pitänyt jakaa nukleonien määrällä $12$.",
+          "feedback": "Jakamalla saataisiin sidosenergia nukleonia kohti, ja se on eri suure. Kysytty oli koko sidosenergia $E_\\text{B}$. Virhe on se, että $c^2$ on otettu mukaan kahdesti, vaikka se sisältyy jo muuntolukuun $931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Siirrä: alfahajoamisen energia",
+      "prompt": "Vanhemmissa savuilmaisimissa ja avaruusluotainten lämmönlähteissä on käytetty alfasäteilijöitä. Polonium-210 ${}^{210}_{84}\\text{Po}$ hajoaa alfahajoamisella lyijy-206:ksi. Atomimassat ovat $m({}^{210}\\text{Po}) = 209{,}982874\\,\\text{u}$, $m({}^{206}\\text{Pb}) = 205{,}974465\\,\\text{u}$ ja $m({}^{4}\\text{He}) = 4{,}002603\\,\\text{u}$ (AME2020). Kuinka suuri energia yhdessä hajoamisessa vapautuu? Vastaa megaelektronivoltteina.",
+      "answer": 5.408,
+      "unit": "MeV",
+      "tolerance": 0.02,
+      "hints": [
+        "Kirjoita hajoamisyhtälö. Mitkä hiukkaset ovat alussa ja mitkä lopussa?",
+        "Reaktioenergia on $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$. Lopussa on sekä lyijy-206 että alfahiukkanen eli helium-4.",
+        "Massojen erotus on $0{,}005806\\,\\text{u}$. Sijoita $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 3734,
+          "feedback": "Unohdit alfahiukkasen massan. Lopussa on lyijy-206:n lisäksi helium-4, joten $m_\\text{loppu} = 205{,}974465\\,\\text{u} + 4{,}002603\\,\\text{u}$."
+        },
+        {
+          "value": -5.408,
+          "feedback": "Etumerkki on väärin: vähensit alkumassan loppumassasta. Reaktioenergia on $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$. Itsestään tapahtuvassa hajoamisessa se on positiivinen."
+        },
+        {
+          "value": 0.005806,
+          "feedback": "Tämä on massojen erotus atomimassayksikköinä. Muunna se energiaksi sijoittamalla $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$."
+        }
+      ],
+      "solution": "**Annettu:** $m({}^{210}\\text{Po}) = 209{,}982874\\,\\text{u}$, $m({}^{206}\\text{Pb}) = 205{,}974465\\,\\text{u}$, $m({}^{4}\\text{He}) = 4{,}002603\\,\\text{u}$ (AME2020), $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$\n\n**Kysytty:** hajoamisessa vapautuva energia eli reaktioenergia $Q$ megaelektronivoltteina\n\n**Periaate:** Alfahajoamisessa ${}^{210}_{84}\\text{Po} \\to {}^{206}_{82}\\text{Pb} + {}^{4}_{2}\\text{He}$ massaluku ja varausluku säilyvät. Syntyvien atomien massa on kuitenkin pienempi kuin poloniumatomin massa. Massan vähenemistä vastaava energia vapautuu, lähinnä alfahiukkasen liike-energiaksi. Atomimassat käyvät laskuun, koska elektroneja on kummallakin puolella yhtä monta: $84$. Lyijyatomissa niitä on $82$ ja heliumatomissa $2$.\n\n**Kaava:** $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$, missä $m_\\text{alku} = m({}^{210}\\text{Po})$ ja $m_\\text{loppu} = m({}^{206}\\text{Pb}) + m({}^{4}\\text{He})$\n\n**Muunnokset:** Massaa ei muunneta kilogrammoiksi. Yksikön $\\text{u}$ paikalle sijoitetaan $931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$, jolloin $c^2$ supistuu pois.\n\n**Sijoitus:** $m_\\text{alku} - m_\\text{loppu} = 209{,}982874\\,\\text{u} - 205{,}974465\\,\\text{u} - 4{,}002603\\,\\text{u} = 0{,}005806\\,\\text{u}$, joten $Q = 0{,}005806\\,\\text{u} \\cdot c^2 = 0{,}005806 \\cdot 931{,}5\\,\\text{MeV} = 5{,}4083\\,\\text{MeV}$\n\n**Vastaus:** $5{,}408\\,\\text{MeV}$. Vastauksessa on neljä merkitsevää numeroa, koska massojen erotuksessa $0{,}005806\\,\\text{u}$ on neljä.\n\n**Järkevyys:** $Q > 0$, kuten itsestään tapahtuvassa hajoamisessa pitää. Liikemäärän säilymisen vuoksi kevyt alfahiukkanen saa energiasta noin osuuden $\\tfrac{206}{210}$ eli noin $5{,}30\\,\\text{MeV}$. Mitattu alfahiukkasten energia $5{,}30\\,\\text{MeV}$ täsmää. Tulos on samaa suuruusluokkaa kuin uraani-238:n alfahajoamisen $4{,}27\\,\\text{MeV}$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä yhtälöä. Tason 2 tehtävissä muunnetaan yksiköitä tai yhdistetään kaksi yhtälöä. Taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Deuteriumytimen ${}^{2}_{1}\\text{H}$ sidosenergia on $2{,}224\\,\\text{MeV}$. Mitä tämä tarkoittaa?",
+      "choices": [
+        {
+          "text": "Ytimen hajottamiseen protoniksi ja neutroniksi tarvitaan energiaa $2{,}224\\,\\text{MeV}$.",
+          "correct": true,
+          "feedback": "Oikein. Sidosenergia on energia, joka tarvitaan ytimen hajottamiseen erillisiksi nukleoneiksi. Saman verran energiaa vapautui, kun protoni ja neutroni sitoutuivat deuteriumiksi. Siksi ydin on osiaan kevyempi."
+        },
+        {
+          "text": "Ydin vapauttaa energiaa $2{,}224\\,\\text{MeV}$, kun se hajoaa protoniksi ja neutroniksi.",
+          "feedback": "Suunta on väärin päin. Erillinen protoni ja neutroni ovat raskaampia kuin deuteriumydin. Niiden erottamiseen täytyy siksi *tuoda* energiaa $2{,}224\\,\\text{MeV}$. Energiaa vapautuu silloin, kun ydin muodostuu."
+        },
+        {
+          "text": "Ytimen protonin ja neutronin liike-energioiden summa on $2{,}224\\,\\text{MeV}$.",
+          "feedback": "Sidosenergia ei ole nukleonien liike-energiaa. Se on massavajetta vastaava energia $\\Delta m\\,c^2$, joka tarvitaan ytimen hajottamiseen erillisiksi nukleoneiksi."
+        },
+        {
+          "text": "Ytimen massa on suurempi kuin sen osien massa, ja massojen ero vastaa energiaa $2{,}224\\,\\text{MeV}$.",
+          "feedback": "Asia on päinvastoin: ydin on *kevyempi* kuin sen erilliset nukleonit. Massavaje $\\Delta m = \\tfrac{2{,}224\\,\\text{MeV}}{c^2}$ on se, mikä ytimestä puuttuu osien massaan verrattuna."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Lue sidosenergiakäyrää",
+      "figure": "fy8-10/kayra-points",
+      "prompt": "Kuvaajassa on ytimien sidosenergia nukleonia kohti massaluvun funktiona. Missä seuraavista muutoksista energiaa vapautuu, kun nukleonien määrä säilyy?",
+      "choices": [
+        {
+          "text": "Ydin, jonka massaluku on noin $240$, halkeaa kahdeksi ytimeksi, joiden massaluku on noin $120$.",
+          "correct": true,
+          "feedback": "Oikein. Kuvaajasta näkee, että $\\tfrac{E_\\text{B}}{A}$ on noin $7{,}6\\,\\text{MeV}$, kun $A \\approx 240$, ja noin $8{,}5\\,\\text{MeV}$, kun $A \\approx 120$. Syntyvät ytimet ovat tiiviimmin sidottuja, joten sidosenergiaa vapautuu noin $240 \\cdot 0{,}9\\,\\text{MeV} \\approx 200\\,\\text{MeV}$. Tämä on fissio."
+        },
+        {
+          "text": "Ydin, jonka massaluku on noin $60$, halkeaa kahdeksi ytimeksi, joiden massaluku on noin $30$.",
+          "feedback": "Kuvaajan huippu on juuri massaluvun $60$ kohdalla. Massaluvun $30$ ytimet ovat löyhemmin sidottuja, noin $8{,}5\\,\\text{MeV}$ nukleonia kohti. Tämä halkeaminen vaatisi siis energiaa eikä vapauttaisi sitä."
+        },
+        {
+          "text": "Kaksi ydintä, joiden massaluku on noin $120$, yhtyy ytimeksi, jonka massaluku on noin $240$.",
+          "feedback": "Tämä on fission vastakohta: $\\tfrac{E_\\text{B}}{A}$ pienenee noin $8{,}5\\,\\text{MeV}$:stä noin $7{,}6\\,\\text{MeV}$:iin, joten yhtyminen vaatisi energiaa. Raskaiden ytimien yhtyminen ei vapauta energiaa."
+        },
+        {
+          "text": "Kaksi ydintä, joiden massaluku on noin $60$, yhtyy ytimeksi, jonka massaluku on noin $120$.",
+          "feedback": "Massaluvun $60$ ytimet ovat kuvaajan huipulla, noin $8{,}8\\,\\text{MeV}$ nukleonia kohti. Massaluvun $120$ ydin on löyhemmin sidottu. Yhtyminen vaatisi siis energiaa. Fuusio vapauttaa energiaa vain kevyillä ytimillä, jotka ovat huipun vasemmalla puolella."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä ja vertaa",
+      "optional": true,
+      "prompt": "Kun hiili palaa, $\\text{C} + \\text{O}_2 \\to \\text{CO}_2$, jokaista $44{,}0\\,\\text{g}$:aa lähtöaineita kohti vapautuu energiaa $393{,}5\\,\\text{kJ}$. Muuttuuko massa palamisessa? Kemiassa sanotaan, että massa säilyy. Ydinreaktioissa energia taas lasketaan massan muutoksesta. Miksi näin on?",
+      "model": "Massa muuttuu, koska massan ja energian ekvivalenssi koskee kaikkia energian muutoksia. Palamistuotteiden massa on pienempi määrällä $\\Delta m = \\tfrac{E}{c^2} = \\tfrac{393{,}5 \\cdot 10^{3}\\,\\text{J}}{(2{,}998 \\cdot 10^{8}\\,\\text{m/s})^2} \\approx 4{,}4 \\cdot 10^{-12}\\,\\text{kg}$. Se on noin $10^{-10}$ eli kymmenesmiljardisosa lähtöaineiden massasta. Niin pientä muutosta ei voi punnita, joten kemiassa massa säilyy käytännössä. Ydinreaktioissa suhteellinen massan muutos on satojatuhansia tai miljoonia kertoja suurempi. Uraani-238:n alfahajoamisessa se on noin $2 \\cdot 10^{-5}$ ja uraani-235:n fissiossa noin $10^{-3}$ lähtöaineiden massasta. Siksi ydinreaktion energia lasketaan massojen erotuksesta.",
+      "criteria": [
+        "Totean, että massa pienenee myös palamisessa määrällä $\\tfrac{E}{c^2}$, ja arvioin muutoksen suuruusluokan.",
+        "Vertaan suhteellisia massan muutoksia: kemiallisessa reaktiossa noin $10^{-10}$, ydinreaktiossa noin $10^{-5}$–$10^{-3}$, eli satojatuhansia tai miljoonia kertoja enemmän.",
+        "Selitän, että kemiassa massan muutos on liian pieni mitattavaksi, joten massan säilymistä voi käyttää."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

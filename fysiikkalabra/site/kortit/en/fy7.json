@@ -1,0 +1,194 @@
+{
+ "moduuli": "FY7",
+ "nimi": "Electromagnetism and light",
+ "aiheet": [
+  {
+   "id": "fy7-magnetismi",
+   "nimi": "Magnetism"
+  },
+  {
+   "id": "fy7-induktio",
+   "nimi": "Electromagnetic induction"
+  },
+  {
+   "id": "fy7-valo",
+   "nimi": "Light as an electromagnetic wave"
+  }
+ ],
+ "kortit": [
+  {
+   "id": "fy7-magneettikentta",
+   "moduuli": "FY7",
+   "luku": "fy7-1",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Magnetic field",
+   "maaritelma": "A region in which a force acts on a magnetic material or a moving charge."
+  },
+  {
+   "id": "fy7-magneettivuon-tiheys",
+   "moduuli": "FY7",
+   "luku": "fy7-1",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Magnetic flux density",
+   "maaritelma": "The quantity $B$ that describes the strength of a magnetic field; its unit is the tesla."
+  },
+  {
+   "id": "fy7-lorentzin-voima",
+   "moduuli": "FY7",
+   "luku": null,
+   "aihe": "fy7-magnetismi",
+   "kasite": "Lorentz force",
+   "maaritelma": "The force that a magnetic field exerts on a moving charge.",
+   "kaava": "F = qvB\\sin\\alpha",
+   "kaava_puhe": "F equals q times v times B times sine alpha"
+  },
+  {
+   "id": "fy7-virtajohtimen-voima",
+   "moduuli": "FY7",
+   "luku": "fy7-4",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Force on a current-carrying wire",
+   "maaritelma": "The force on a wire carrying a current in a magnetic field.",
+   "kaava": "F = IlB\\sin\\alpha",
+   "kaava_puhe": "F equals I times l times B times sine alpha"
+  },
+  {
+   "id": "fy7-magneettivuo",
+   "moduuli": "FY7",
+   "luku": "fy7-5",
+   "aihe": "fy7-magnetismi",
+   "kasite": "Magnetic flux",
+   "maaritelma": "The amount of magnetic field passing through a surface, when the field is perpendicular to the surface.",
+   "kaava": "\\Phi = BA",
+   "kaava_puhe": "phi equals B times A"
+  },
+  {
+   "id": "fy7-solenoidi",
+   "moduuli": "FY7",
+   "luku": null,
+   "aihe": "fy7-magnetismi",
+   "kasite": "Solenoid",
+   "maaritelma": "A coil inside which a uniform magnetic field forms when a current flows."
+  },
+  {
+   "id": "fy7-faradayn-induktiolaki",
+   "moduuli": "FY7",
+   "luku": "fy7-5",
+   "aihe": "fy7-induktio",
+   "kasite": "Faraday's law of induction",
+   "maaritelma": "A changing magnetic flux induces a voltage.",
+   "kaava": "e = -N \\cdot \\dfrac{\\Delta\\Phi}{\\Delta t}",
+   "kaava_puhe": "e equals minus N times delta phi divided by delta t"
+  },
+  {
+   "id": "fy7-lenzin-laki",
+   "moduuli": "FY7",
+   "luku": "fy7-6",
+   "aihe": "fy7-induktio",
+   "kasite": "Lenz's law",
+   "maaritelma": "An induced current opposes the change that caused it."
+  },
+  {
+   "id": "fy7-generaattori",
+   "moduuli": "FY7",
+   "luku": "fy7-7",
+   "aihe": "fy7-induktio",
+   "kasite": "Generator",
+   "maaritelma": "A device that turns kinetic energy into electrical energy by induction."
+  },
+  {
+   "id": "fy7-muuntaja",
+   "moduuli": "FY7",
+   "luku": "fy7-8",
+   "aihe": "fy7-induktio",
+   "kasite": "Transformer",
+   "maaritelma": "A device that changes the size of an alternating voltage in the ratio of the numbers of turns in its coils."
+  },
+  {
+   "id": "fy7-vaihtovirta",
+   "moduuli": "FY7",
+   "luku": "fy7-7",
+   "aihe": "fy7-induktio",
+   "kasite": "Alternating current",
+   "maaritelma": "A current whose direction and size change periodically."
+  },
+  {
+   "id": "fy7-tehollisarvo",
+   "moduuli": "FY7",
+   "luku": "fy7-7",
+   "aihe": "fy7-induktio",
+   "kasite": "RMS value",
+   "maaritelma": "The value of an alternating current that has the same heating effect as an equal direct current."
+  },
+  {
+   "id": "fy7-sahkomagneettinen-aalto",
+   "moduuli": "FY7",
+   "luku": "fy7-9",
+   "aihe": "fy7-valo",
+   "kasite": "Electromagnetic wave",
+   "maaritelma": "A travelling oscillation of electric and magnetic fields that needs no medium."
+  },
+  {
+   "id": "fy7-valon-nopeus",
+   "moduuli": "FY7",
+   "luku": "fy7-9",
+   "aihe": "fy7-valo",
+   "kasite": "Speed of light",
+   "maaritelma": "The speed of electromagnetic radiation in a vacuum.",
+   "kaava": "c \\approx 3.00 \\cdot 10^{8}\\,\\text{m/s}",
+   "kaava_puhe": "c is approximately 3.00 times 10 to the power 8 metres per second"
+  },
+  {
+   "id": "fy7-taitekerroin",
+   "moduuli": "FY7",
+   "luku": "fy7-10",
+   "aihe": "fy7-valo",
+   "kasite": "Refractive index",
+   "maaritelma": "The ratio of the speed of light in a vacuum to its speed in a material.",
+   "kaava": "n = \\dfrac{c}{v}",
+   "kaava_puhe": "n equals c divided by v"
+  },
+  {
+   "id": "fy7-snellin-laki",
+   "moduuli": "FY7",
+   "luku": "fy7-10",
+   "aihe": "fy7-valo",
+   "kasite": "Snell's law",
+   "maaritelma": "The law of refraction: the angles of incidence and refraction depend on the refractive indices of the materials.",
+   "kaava": "n_1\\sin\\alpha_1 = n_2\\sin\\alpha_2",
+   "kaava_puhe": "n one times sine alpha one equals n two times sine alpha two"
+  },
+  {
+   "id": "fy7-kokonaisheijastus",
+   "moduuli": "FY7",
+   "luku": "fy7-12",
+   "aihe": "fy7-valo",
+   "kasite": "Total internal reflection",
+   "maaritelma": "Light is reflected entirely back into the denser material when the critical angle is exceeded."
+  },
+  {
+   "id": "fy7-hila",
+   "moduuli": "FY7",
+   "luku": "fy7-13",
+   "aihe": "fy7-valo",
+   "kasite": "Diffraction grating",
+   "maaritelma": "An optical component whose slits diffract light and split it into a spectrum."
+  },
+  {
+   "id": "fy7-polarisaatio",
+   "moduuli": "FY7",
+   "luku": "fy7-15",
+   "aihe": "fy7-valo",
+   "kasite": "Polarisation",
+   "maaritelma": "Restriction of the direction of the light’s oscillation to one plane."
+  },
+  {
+   "id": "fy7-linssin-polttovali",
+   "moduuli": "FY7",
+   "luku": null,
+   "aihe": "fy7-valo",
+   "kasite": "Focal length of a lens",
+   "maaritelma": "The distance at which rays parallel to the optical axis are brought to a point."
+  }
+ ]
+}

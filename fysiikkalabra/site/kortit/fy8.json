@@ -781,17 +781,17 @@
   {
    "id": "fy8-beeta-hajoaminen",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-radioaktiivisuus",
-   "kasite": "Beeta⁻-hajoaminen",
+   "kasite": "$\\beta^-$-hajoaminen",
    "maaritelma": "Ytimen neutroni muuttuu protoniksi ja samalla syntyy elektroni sekä antineutriino."
   },
   {
    "id": "fy8-beeta-hajoaminen-2",
    "moduuli": "FY8",
-   "luku": null,
+   "luku": "fy8-8",
    "aihe": "fy8-radioaktiivisuus",
-   "kasite": "Beeta⁺-hajoaminen",
+   "kasite": "$\\beta^+$-hajoaminen",
    "maaritelma": "Ytimen protoni muuttuu neutroniksi ja samalla syntyy positroni sekä neutriino."
   },
   {

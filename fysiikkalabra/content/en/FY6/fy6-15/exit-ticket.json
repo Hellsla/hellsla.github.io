@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A blown $10\\,\\text{A}$ fuse is replaced with a $16\\,\\text{A}$ fuse. Why is that dangerous even though the electricity works?",
+    "a": "The circuit cable is dimensioned for a current of $10\\,\\text{A}$. A larger fuse lets through a current of up to $16\\,\\text{A}$, and then the thermal power of the conductors, $P = RI^2$, is $(16 : 10)^2 \\approx 2.6$ times as large. The cable and the connections can overheat, the insulation can be damaged and a fire can start."
+  },
+  {
+    "q": "May a layperson install a new socket in a wall in Finland? Name two electrical jobs that a layperson may do themselves.",
+    "a": "No: electrical installation work belongs to electrical professionals. A layperson may, for example, replace a fuse and a lamp, reset a tripped circuit breaker or residual current device (RCD) and repair an extension cord. An up-to-date list is on the website of Tukes."
+  }
+]

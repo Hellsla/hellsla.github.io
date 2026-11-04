@@ -1,0 +1,28 @@
+{
+  "id": "fy6-14",
+  "course": "FY6",
+  "title": "Puolijohteet, diodi, LED ja aurinkokenno",
+  "goals": [
+    "LOPS FY6: puolijohteet, diodi ja LED komponentteina virtapiirissä",
+    "Täsmennys: puolijohteita käsitellään lähinnä teknisinä virtapiirin komponentteina; puolijohdemateriaalien ominaisuudet eivät kuulu keskeisiin sisältöihin",
+    "Temaattinen tarkastelu: aurinkokenno tasajännitelähteenä"
+  ],
+  "prerequisites": [
+    "fy6-3"
+  ],
+  "glossary": [
+    "puolijohde",
+    "diodi",
+    "LED",
+    "päästösuunta",
+    "estosuunta",
+    "kynnysjännite",
+    "etuvastus",
+    "aurinkokenno",
+    "tyhjäkäyntijännite",
+    "maksimitehopiste"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

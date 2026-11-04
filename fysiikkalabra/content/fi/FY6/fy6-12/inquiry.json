@@ -1,0 +1,383 @@
+{
+  "version": 1,
+  "contribution": "Homogeenisen kentän työ, sähköinen potentiaalienergia ja potentiaali kentän kohdan ominaisuutena; piirien potentiaali yhdistyy kentän potentiaaliin, ja elektronivoltti sekä levosta kiihdytetyn hiukkasen liike-energia |q|U tekevät potentiaalierosta laskutyökalun.",
+  "learn": [
+    "laskemaan sähkökentän tekemän työn ja varauksen potentiaalienergian potentiaalien avulla.",
+    "selittämään, miksi positiivinen ja negatiivinen varaus liikkuvat kentässä eri suuntiin ja miten potentiaalienergia silloin muuttuu.",
+    "laskemaan potentiaalieron läpi kiihdytetyn hiukkasen liike-energian elektronivoltteina ja nopeuden."
+  ],
+  "prior": [
+    "Homogeenisessa kentässä voima $F = qE$ on sama kaikkialla levyjen välissä, ja $E = U : d$ (luku *Homogeeninen sähkökenttä*)",
+    "Potentiaali on kohdan jännite nollakohtaan nähden, ja jännite on potentiaaliero (luku *Kirchhoffin lait ja potentiaali virtapiirissä*)",
+    "Potentiaalienergia ja liike-energia $E_\\text{k} = \\tfrac{1}{2}mv^2$; ilman kitkaa mekaaninen energia säilyy (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Talvi-iltana Lapin taivaalla väreilee vihreä revontuliverho. Valo syntyy noin $100$–$300\\,\\text{km}$:n korkeudella, kun avaruudesta tulevat elektronit törmäävät ilman atomeihin. Ennen törmäystä elektronit ovat kulkeneet tuhansien kilometrien korkeudella muutaman kilovoltin potentiaalieron läpi, ja niiden nopeus on kasvanut kymmeniin tuhansiin kilometreihin sekunnissa.",
+      "question": "Miten pelkkä potentiaaliero voi antaa elektronille liike-energiaa, ja mikä ratkaisee, kuinka paljon energiaa se saa?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: homogeeninen kenttä",
+      "optional": true,
+      "prompt": "Kahden yhdensuuntaisen levyn välissä on homogeeninen sähkökenttä. Protoni on ensin lähellä positiivista levyä ja sitten levyjen puolivälissä. Mitä sen kokemalle sähköiselle voimalle tapahtuu?",
+      "choices": [
+        {
+          "text": "Voima on yhtä suuri ja samansuuntainen kummassakin kohdassa.",
+          "correct": true,
+          "feedback": "Oikein. Homogeenisessa kentässä kentänvoimakkuus on joka kohdassa sama, joten voima $F = qE$ on sama kaikkialla levyjen välissä (luku *Homogeeninen sähkökenttä*). Siksi kenttä tekee työtä samaan tapaan kuin paino maan pinnan lähellä."
+        },
+        {
+          "text": "Voima on suurempi lähellä positiivista levyä, koska protoni on lähempänä sitä hylkivää varausta.",
+          "feedback": "Levyjen välissä kenttä on homogeeninen: levyjen kaikki varaukset yhdessä tuottavat saman kentänvoimakkuuden joka kohtaan. Voima $F = qE$ on siis sama lähellä levyä ja keskellä (luku *Homogeeninen sähkökenttä*)."
+        },
+        {
+          "text": "Voima on puolivälissä nolla, koska levyjen vaikutukset kumoavat siellä toisensa.",
+          "feedback": "Levyt eivät kumoa toistensa vaikutusta: positiivinen levy hylkii protonia ja negatiivinen vetää sitä, joten molemmat vaikutukset osoittavat samaan suuntaan. Kenttä ja voima ovat samat kaikkialla levyjen välissä (luku *Homogeeninen sähkökenttä*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: pidempi kiihdytysmatka",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "Protoni lähtee levosta positiiviselta levyltä ja kulkee negatiiviselle levylle. Levyjen välinen jännite pidetään samana, $500\\,\\text{V}$, mutta levyjen väli kaksinkertaistetaan. Miten käy protonin liike-energialle sen saapuessa negatiiviselle levylle?",
+      "choices": [
+        {
+          "text": "Liike-energia kaksinkertaistuu, koska protoni kiihtyy kaksi kertaa pidemmän matkan.",
+          "feedback": "Mallin arvot kumoavat tämän: liike-energia on $500\\,\\text{eV}$ kaikilla levyjen väleillä. Kun jännite pysyy samana, suurempi väli tekee kentästä heikomman, $E = U : d$. Voima puolittuu ja matka kaksinkertaistuu, joten työ $qEd = qU$ pysyy samana."
+        },
+        {
+          "text": "Liike-energia puolittuu, koska kenttä heikkenee puoleen.",
+          "feedback": "Kenttä heikkenee puoleen, mutta mallin arvot näyttävät, että liike-energia on silti $500\\,\\text{eV}$. Heikompi voima vaikuttaa kaksi kertaa pidemmän matkan, joten työ $qEd$ on sama. Ratkaisevaa on potentiaaliero $U$, ei pelkkä kenttä."
+        },
+        {
+          "text": "Liike-energia pysyy samana, koska energia riippuu vain potentiaalierosta.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: liike-energia on $500\\,\\text{eV}$ levyjen välistä riippumatta, vaikka kenttä ja kiihdytysaika muuttuvat. Kenttä tekee työn $qEd = qU$, joka riippuu vain varauksesta ja potentiaalierosta."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: elektroni ja protoni",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "Levyjen välinen jännite on $500\\,\\text{V}$. Protoni lähtee levosta positiiviselta levyltä ja elektroni levosta negatiiviselta levyltä, ja kumpikin kulkee toiselle levylle. Miten niiden liike-energiat vertautuvat perillä?",
+      "choices": [
+        {
+          "text": "Protonin liike-energia on suurempi, koska sen massa on paljon suurempi.",
+          "feedback": "Mallin arvot kumoavat tämän: kumpikin saa $500\\,\\text{eV}$. Liike-energia tulee kentän työstä $qU$, ja kummankin varauksen suuruus on $e$. Massa ratkaisee vain sen, millä nopeudella sama energia saavutetaan: protoni liikkuu perillä noin $310\\,\\text{km/s}$, elektroni noin $13\\,000\\,\\text{km/s}$."
+        },
+        {
+          "text": "Elektronin liike-energia on suurempi, koska kevyt hiukkanen kiihtyy enemmän.",
+          "feedback": "Elektroni kiihtyy paljon nopeammin, mutta mallin arvojen mukaan liike-energia on molemmilla $500\\,\\text{eV}$. Suurempi kiihtyvyys antaa suuremman nopeuden, mutta energia on kentän työ $qU$, joka on sama, koska varausten suuruudet ovat samat."
+        },
+        {
+          "text": "Liike-energiat ovat yhtä suuret, koska varausten suuruudet ovat samat ja potentiaaliero on sama.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: kumpikin saa $500\\,\\text{eV}$, vaikka elektroni kulkee kohti suurempaa ja protoni kohti pienempää potentiaalia. Nopeudet eroavat paljon: elektroni on perillä noin $43$ kertaa nopeampi, koska sen massa on paljon pienempi."
+        },
+        {
+          "text": "Elektroni ei saa liike-energiaa, koska negatiivinen varaus liikkuisi vain kohti pienempää potentiaalia.",
+          "feedback": "Mallissa elektroni lähtee liikkeelle kohti positiivista levyä ja saa $500\\,\\text{eV}$. Negatiiviseen varaukseen vaikuttava voima osoittaa kenttää vastaan, joten elektroni liikkuu kohti suurempaa potentiaalia; silloin sen potentiaalienergia $-eV$ pienenee."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse hiukkanen, jännite ja levyjen väli ja päästä hiukkanen irti. Seuraa voimaa, nopeutta ja energiapylväitä, kun hiukkanen kulkee levystä toiseen.",
+      "howto": "*Päästä irti* vapauttaa hiukkasen levosta: protoni ja alfahiukkanen lähtevät positiiviselta levyltä, elektroni negatiiviselta. *Alkuun* palauttaa hiukkasen lähtölevylle, ja liukusäätimen tai hiukkasen vaihto tekee saman. Harmaat katkoviivat ovat tasapotentiaalipintoja potentiaaleineen; vihreät nuolet ovat sähkökentän $\\overline{E}$ kenttäviivoja; negatiivinen levy on nollakohta. Punainen nuoli on hiukkaseen vaikuttava voima ja sininen sen nopeus. Harmaat pisteet näyttävät hiukkasen paikan yhtä pitkin aikavälein: kasvava väli kertoo kiihtyvästä liikkeestä. Pylväät näyttävät potentiaalienergian $E_\\text{p}$ ja liike-energian $E_\\text{k}$ elektronivoltteina. Elektronin liike näytetään $40$ kertaa hitaampana kuin protonin ja alfahiukkasen; vertaa todellisia aikoja lukemista. *Nopeus* muuttaa vain esityksen tahtia.",
+      "model": "Levyjen välissä kenttä on homogeeninen ja levyjen ulkopuolella nolla. Hiukkanen lähtee levosta, ja siihen vaikuttaa vain sähköinen voima: painovoima jätetään pois, koska se on mallin kentissä vähintään miljardeja kertoja pienempi. Levyt ovat tyhjiössä, eikä hiukkanen säteile energiaa. Nopeudet jäävät alle $7\\,\\%$ valon nopeudesta, joten liike-energia on $\\tfrac{1}{2}mv^2$. Luvut ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Kentänvoimakkuus on $E = U : d$ ja voima $F = |q|E$, joten kiihtyvyys on vakio $a = F : m$. Ohjelma laskee liikkeen lyhyin aika-askelin vakiokiihtyvyyden kaavoilla, kunnes hiukkanen osuu toiseen levyyn, ja laskee liike-energian nopeudesta:\n\n$$E_\\text{k} = \\frac{1}{2}mv^2$$\n\nPotentiaali on $V = Ex$, kun $x$ on etäisyys negatiivisesta levystä, ja potentiaalienergia $E_\\text{p} = qV$, missä elektronille $q = -e$. Energiat muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Ohjelma ei käytä kaavaa $E_\\text{k} = |q|U$; se seuraa voimasta ja matkasta."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: muuta levyjen väliä",
+      "intro": "Testaa ennuste 1. Hiukkanen on protoni ja jännite $500\\,\\text{V}$; muuta vain levyjen väliä. Päästä protoni irti ja kirjaa lukemat, kun se on perillä, ainakin kahdella välillä, esimerkiksi $2{,}5\\,\\text{cm}$, $5{,}0\\,\\text{cm}$ ja $10{,}0\\,\\text{cm}$. Mitkä lukemat muuttuvat ja mikä ei?",
+      "initial": {
+        "U": 500,
+        "d": 5,
+        "hiukkanen": "p"
+      },
+      "locked": [
+        "U",
+        "hiukkanen"
+      ],
+      "vary": "d",
+      "names": {
+        "U": "jännite U",
+        "d": "levyjen väli d",
+        "hiukkanen": "hiukkanen"
+      },
+      "units": {
+        "U": "V",
+        "d": "cm"
+      },
+      "values": {
+        "hiukkanen": {
+          "p": "protoni",
+          "e": "elektroni",
+          "a": "alfahiukkanen"
+        }
+      },
+      "measure": [
+        {
+          "key": "E",
+          "label": "E (V/m)"
+        },
+        {
+          "key": "tns",
+          "label": "t (ns)"
+        },
+        {
+          "key": "EkeV",
+          "label": "E_k (eV)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: vaihda hiukkasta",
+      "intro": "Testaa ennuste 2. Jännite on $500\\,\\text{V}$ ja levyjen väli $5{,}0\\,\\text{cm}$; vaihda vain hiukkasta. Päästä hiukkanen irti ja kirjaa lukemat, kun se on perillä, ainakin protonille ja elektronille, mieluiten myös alfahiukkaselle, jonka varaus on $+2e$. Kumpi lukema ratkaisee energian, varaus vai massa?",
+      "initial": {
+        "U": 500,
+        "d": 5,
+        "hiukkanen": "p"
+      },
+      "locked": [
+        "U",
+        "d"
+      ],
+      "vary": "hiukkanen",
+      "names": {
+        "U": "jännite U",
+        "d": "levyjen väli d",
+        "hiukkanen": "hiukkanen"
+      },
+      "units": {
+        "U": "V",
+        "d": "cm"
+      },
+      "values": {
+        "hiukkanen": {
+          "p": "protoni",
+          "e": "elektroni",
+          "a": "alfahiukkanen"
+        }
+      },
+      "measure": [
+        {
+          "key": "EkeV",
+          "label": "E_k (eV)"
+        },
+        {
+          "key": "EpeV",
+          "label": "E_p (eV)"
+        },
+        {
+          "key": "vkms",
+          "label": "v (km/s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä ratkaisee energian?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten levyjen väli vaikuttaa kenttään, kiihdytysaikaan ja liike-energiaan, kun jännite pysyy samana? Miten protonin, elektronin ja alfahiukkasen liike-energiat ja nopeudet eroavat, ja mistä erot johtuvat?",
+      "model": "Kun levyjen väli kasvaa jännitteen pysyessä $500\\,\\text{V}$:ssa, kenttä heikkenee, esimerkiksi $20\\,000\\,\\text{V/m}$:stä $5000\\,\\text{V/m}$:iin, ja kiihdytys kestää kauemmin, mutta protonin liike-energia on perillä aina $500\\,\\text{eV}$. Heikompi voima vaikuttaa pidemmän matkan, joten työ $qEd = qU$ pysyy samana. Protoni ja elektroni saavat saman $500\\,\\text{eV}$, koska varausten suuruus on sama, mutta elektroni on perillä noin $13\\,000\\,\\text{km/s}$:n ja protoni noin $310\\,\\text{km/s}$:n nopeudella, koska elektronin massa on paljon pienempi. Alfahiukkanen saa $1000\\,\\text{eV}$, koska sen varaus on kaksinkertainen. Energian ratkaisevat varaus ja potentiaaliero, nopeuden lisäksi massa. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Vastaus kertoo, että liike-energia pysyy samana, kun vain levyjen väli muuttuu, ja perustelee sen taulukon luvuilla.",
+        "Vastaus kertoo, että suurempi väli heikentää kenttää ja pidentää kiihdytysaikaa.",
+        "Vastaus kertoo, että protoni ja elektroni saavat saman energian mutta elektronin nopeus on paljon suurempi pienemmän massan vuoksi.",
+        "Vastaus kertoo, että kaksinkertainen varaus antaa kaksinkertaisen energian."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja potentiaalin käsitteeseen. Palaa sitten alun kysymykseen: mistä revontulielektroni saa liike-energiansa, ja miksi sen nopeus kasvaa niin suureksi?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Elektroni lähtee levosta negatiiviselta levyltä ja kulkee positiiviselle levylle. Levyjen välinen jännite on $300\\,\\text{V}$. Opiskelija laskee elektronin potentiaalienergian muutoksen näin:\n\n$$\\begin{aligned} \\Delta E_\\text{p} &= e\\Delta V \\\\ &= 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 300\\,\\text{V} \\\\ &= 4{,}8 \\cdot 10^{-17}\\,\\text{J} \\end{aligned}$$\n\nHän päättelee, että elektronin potentiaalienergia kasvaa. Missä on virhe?",
+      "choices": [
+        {
+          "text": "Elektronin varaus on $-e$, joten $\\Delta E_\\text{p} = -e \\cdot 300\\,\\text{V} = -4{,}8 \\cdot 10^{-17}\\,\\text{J}$: potentiaalienergia pienenee.",
+          "correct": true,
+          "feedback": "Oikein. Elektroni siirtyy suurempaan potentiaaliin, mutta sen varaus on negatiivinen, joten potentiaalienergia pienenee. Juuri siksi elektroni lähtee itsestään liikkeelle kohti positiivista levyä ja saa liike-energian $4{,}8 \\cdot 10^{-17}\\,\\text{J} = 300\\,\\text{eV}$."
+        },
+        {
+          "text": "Jännite pitää jakaa levyjen välillä, koska potentiaalienergia riippuu kentänvoimakkuudesta.",
+          "feedback": "Potentiaalienergian muutos on $q\\Delta V$, eikä se riipu levyjen välistä. Levyjen väli tarvittaisiin kentänvoimakkuuteen $E = U : d$, mutta sitä ei tässä kysytä. Virhe on varauksen etumerkissä."
+        },
+        {
+          "text": "Lasku on oikein: elektroni siirtyy suurempaan potentiaaliin, joten sen potentiaalienergia kasvaa.",
+          "feedback": "Suurempi potentiaali kasvattaa vain positiivisen varauksen potentiaalienergiaa. Elektronin potentiaalienergia on $-eV$, joten se pienenee, kun potentiaali kasvaa. Jos potentiaalienergia kasvaisi, elektroni ei lähtisi itsestään liikkeelle levosta."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Satelliitin ionimoottori kiihdyttää ksenonioneja ja työntää satelliittia sen reaktiovoimalla. Jokaisen ionin varaus on $+e$ ja massa $2{,}18 \\cdot 10^{-25}\\,\\text{kg}$. Ionit lähtevät lähes levosta ja kiihdytetään $1{,}2\\,\\text{kV}$:n potentiaalieron läpi. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri on ionien nopeus? Vastaa kilometreinä sekunnissa.",
+      "answer": 42.0,
+      "unit": "km/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Mihin energia muuttuu, kun kenttä tekee työtä ioniin? Kuinka suuri on kentän tekemä työ?",
+        "Ionin liike-energia on $\\tfrac{1}{2}mv^2 = eU$. Muunna $1{,}2\\,\\text{kV} = 1200\\,\\text{V}$.",
+        "$v = \\sqrt{\\dfrac{2eU}{m}} = \\sqrt{\\dfrac{2 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1200\\,\\text{V}}{2{,}18 \\cdot 10^{-25}\\,\\text{kg}}}$; muunna lopuksi $1\\,\\text{km/s} = 1000\\,\\text{m/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.33,
+          "feedback": "Käytit jännitteenä $1{,}2\\,\\text{V}$. Jännite on $1{,}2\\,\\text{kV} = 1{,}2 \\cdot 1000\\,\\text{V} = 1200\\,\\text{V}$, joten nopeus on $\\sqrt{1000} \\approx 32$ kertaa suurempi."
+        },
+        {
+          "value": 29.7,
+          "feedback": "Unohdit kertoimen $2$. Liike-energia on $\\tfrac{1}{2}mv^2$, joten $v^2 = 2eU : m$ eikä $eU : m$."
+        },
+        {
+          "value": 41996,
+          "feedback": "Nopeus on oikein metreinä sekunnissa. Tehtävässä kysytään kilometreinä sekunnissa: jaa luvulla $1000$."
+        }
+      ],
+      "solution": "**Annettu:** ionin varaus $q = e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$, massa $m = 2{,}18 \\cdot 10^{-25}\\,\\text{kg}$, potentiaaliero $U = 1{,}2\\,\\text{kV}$, alkunopeus lähes nolla\n\n**Kysytty:** ionien nopeus $v$ kilometreinä sekunnissa\n\n**Periaate:** Kiihdytyksessä vain sähköinen voima tekee ioniin työtä, joten ionin potentiaalienergia pienenee määrän $eU$ ja liike-energia kasvaa saman verran. Ioni lähtee lähes levosta, joten koko liike-energia tulee kentän työstä.\n\n**Kaava:** $\\tfrac{1}{2}mv^2 = eU$, josta $v = \\sqrt{\\dfrac{2eU}{m}}$\n\n**Muunnokset:** $U = 1{,}2\\,\\text{kV} = 1{,}2 \\cdot 1000\\,\\text{V} = 1200\\,\\text{V}$ ja lopuksi $1\\,\\text{km/s} = 1000\\,\\text{m/s}$.\n\n**Sijoitus:** $v = \\sqrt{\\dfrac{2 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1200\\,\\text{V}}{2{,}18 \\cdot 10^{-25}\\,\\text{kg}}} = 4{,}20 \\cdot 10^{4}\\,\\text{m/s} = 42{,}0\\,\\text{km/s}$\n\n**Vastaus:** $42\\,\\text{km/s}$, kaksi merkitsevää numeroa kuten jännitteessä $1{,}2\\,\\text{kV}$.\n\n**Järkevyys:** Pyöristetyillä luvuilla $v \\approx \\sqrt{2 \\cdot 2 \\cdot 10^{-16}\\,\\text{J} : 2 \\cdot 10^{-25}\\,\\text{kg}} \\approx 4{,}5 \\cdot 10^{4}\\,\\text{m/s}$. Ksenonioni on noin $240\\,000$ kertaa elektronia raskaampi, joten se on paljon hitaampi kuin esimerkin revontulielektroni, vaikka energiat ovat samaa suuruusluokkaa, mutta silti noin kymmenen kertaa nopeampi kuin raketin palokaasut."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, tason 2 tehtävissä yhdistetään potentiaali, kenttä ja energia, ja taso 3 vaatii energiaperiaatteen soveltamista uusissa tilanteissa."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Elektroni on levossa kahden yhdensuuntaisen levyn välissä, ja se päästetään irti. Mihin suuntaan elektroni lähtee liikkeelle, ja miten sen potentiaalienergia muuttuu?",
+      "choices": [
+        {
+          "text": "Kohti positiivista levyä eli suurempaa potentiaalia, ja sen potentiaalienergia pienenee.",
+          "correct": true,
+          "feedback": "Oikein. Negatiiviseen varaukseen vaikuttava voima osoittaa kenttää vastaan eli kohti positiivista levyä. Elektronin potentiaalienergia $-eV$ pienenee, kun potentiaali kasvaa, ja liike-energia kasvaa saman verran."
+        },
+        {
+          "text": "Kohti negatiivista levyä eli pienempää potentiaalia, ja sen potentiaalienergia pienenee.",
+          "feedback": "Kohti pienempää potentiaalia lähtee positiivinen varaus. Negatiivinen levy hylkii elektronia ja positiivinen vetää sitä, joten elektroni lähtee kohti suurempaa potentiaalia, jossa sen potentiaalienergia $-eV$ on pienempi."
+        },
+        {
+          "text": "Kohti positiivista levyä eli suurempaa potentiaalia, ja sen potentiaalienergia kasvaa.",
+          "feedback": "Suunta on oikea, mutta potentiaalienergia pienenee. Levosta liikkeelle lähtevän hiukkasen liike-energia kasvaa, joten sen potentiaalienergian on pienennyttävä saman verran. Elektronille $E_\\text{p} = -eV$ on sitä pienempi, mitä suurempi potentiaali on."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Energia kentässä",
+      "prompt": "Homogeenisen sähkökentän voimakkuus on $1{,}5 \\cdot 10^{4}\\,\\text{V/m}$. Protoni lähtee levosta ja kulkee kentän suuntaan $2{,}0\\,\\text{cm}$. Siihen vaikuttaa vain sähköinen voima. Kuinka suuri on protonin liike-energia matkan lopussa? Vastaa elektronivoltteina.",
+      "answer": 300,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "hints": [
+        "Kuinka paljon potentiaali muuttuu $2{,}0\\,\\text{cm}$:n matkalla kentän suuntaan?",
+        "Homogeenisessa kentässä potentiaaliero on $U = Es$. Muunna $2{,}0\\,\\text{cm} = 0{,}020\\,\\text{m}$.",
+        "$U = 1{,}5 \\cdot 10^{4}\\,\\text{V/m} \\cdot 0{,}020\\,\\text{m}$, ja protoni saa jokaista volttia kohti yhden elektronivoltin."
+      ],
+      "mistakes": [
+        {
+          "value": 30000,
+          "feedback": "Käytit matkana $2{,}0\\,\\text{m}$. Matka on $2{,}0\\,\\text{cm} = 0{,}020\\,\\text{m}$, joten potentiaaliero on $300\\,\\text{V}$."
+        },
+        {
+          "value": 4.806e-17,
+          "feedback": "Tulos on jouleina. Elektronivoltteina energia on $4{,}8 \\cdot 10^{-17}\\,\\text{J} : 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 300\\,\\text{eV}$: protoni saa yhden elektronivoltin jokaista volttia kohti."
+        }
+      ],
+      "solution": "**Annettu:** kentänvoimakkuus $E = 1{,}5 \\cdot 10^{4}\\,\\text{V/m}$, matka kentän suuntaan $s = 2{,}0\\,\\text{cm}$, protonin varaus $e$, alkunopeus nolla\n\n**Kysytty:** liike-energia $E_\\text{k}$ elektronivoltteina\n\n**Periaate:** Vain sähköinen voima tekee työtä, joten protonin liike-energia kasvaa yhtä paljon kuin sen potentiaalienergia pienenee. Homogeenisessa kentässä potentiaali pienenee kentän suuntaan tasaisesti, joten potentiaaliero on kentänvoimakkuus kertaa matka.\n\n**Kaava:** $U = Es$ ja $E_\\text{k} = eU$, joten $E_\\text{k} = eEs$\n\n**Muunnokset:** $s = 2{,}0\\,\\text{cm} = 2{,}0 \\cdot 0{,}01\\,\\text{m} = 0{,}020\\,\\text{m}$\n\n**Sijoitus:** $U = 1{,}5 \\cdot 10^{4}\\,\\text{V/m} \\cdot 0{,}020\\,\\text{m} = 300\\,\\text{V}$ ja $E_\\text{k} = e \\cdot 300\\,\\text{V} = 300\\,\\text{eV}$\n\n**Vastaus:** $3{,}0 \\cdot 10^{2}\\,\\text{eV}$ eli $300\\,\\text{eV}$, kaksi merkitsevää numeroa kuten kentänvoimakkuudessa ja matkassa.\n\n**Järkevyys:** Jouleina energia on $300 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} \\approx 4{,}8 \\cdot 10^{-17}\\,\\text{J}$, mikä on sama kuin voima kertaa matka: $1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1{,}5 \\cdot 10^{4}\\,\\text{V/m} \\cdot 0{,}020\\,\\text{m}$. Energia on positiivinen, koska positiivinen varaus kiihtyy kentän suuntaan."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä potentiaali",
+      "optional": true,
+      "prompt": "Selitä, mikä ero on potentiaalilla ja potentiaalienergialla. Miksi kohdan potentiaali ei riipu siitä, mikä varaus kohtaan tuodaan, vaikka potentiaalienergia riippuu?",
+      "model": "Potentiaalienergia on varauksen energiaa, joka riippuu sen paikasta kentässä: kenttä tekee työtä, kun varaus siirtyy, ja työ on potentiaalienergian väheneminen. Kaksinkertaiseen varaukseen vaikuttaa kaksinkertainen voima, joten samassa kohdassa sen potentiaalienergia on kaksinkertainen, ja negatiivisen varauksen potentiaalienergialla on vastakkainen etumerkki. Kun potentiaalienergia jaetaan varauksella, saadaan suure, joka on sama kaikille varauksille: kohdan potentiaali $V = E_\\text{p} : q$. Se on kentän ominaisuus, ja sen yksikkö on $1\\,\\text{J/C} = 1\\,\\text{V}$. Esimerkiksi $150\\,\\text{V}$:n kohdassa protonin potentiaalienergia on $+150\\,\\text{eV}$ ja elektronin $-150\\,\\text{eV}$.",
+      "criteria": [
+        "Vastaus kertoo, että potentiaalienergia on varauksen energiaa ja riippuu varauksen suuruudesta ja etumerkistä.",
+        "Vastaus kertoo, että potentiaali on potentiaalienergia varausyksikköä kohti ja siksi kentän kohdan ominaisuus.",
+        "Vastaus perustelee riippumattomuuden sillä, että voima ja potentiaalienergia ovat verrannollisia varaukseen.",
+        "Vastaus antaa esimerkin, jossa samassa kohdassa eri varauksilla on eri potentiaalienergia."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

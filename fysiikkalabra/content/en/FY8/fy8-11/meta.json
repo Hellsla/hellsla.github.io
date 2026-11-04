@@ -1,0 +1,21 @@
+{
+  "id": "fy8-11",
+  "course": "FY8",
+  "title": "Fission, fusion and nuclear power",
+  "goals": [
+    "LOPS FY8: nuclear power, fission and fusion",
+    "Cross-curricular: the public debate on nuclear power from the point of view of physics; Finland's nuclear power plants and final disposal"
+  ],
+  "prerequisites": [
+    "fy8-10"
+  ],
+  "glossary": [
+    "fissio",
+    "fuusio",
+    "ketjureaktio",
+    "ydinreaktori"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

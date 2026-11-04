@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The binding energy of the bismuth-209 nucleus is $1640\\,\\text{MeV}$ and that of the calcium-40 nucleus $342\\,\\text{MeV}$. Which nucleus is more tightly bound?",
+    "a": "Calcium-40. The strength of binding is described by the binding energy per nucleon: for bismuth $1640\\,\\text{MeV} : 209 \\approx 7.85\\,\\text{MeV}$ and for calcium $342\\,\\text{MeV} : 40 \\approx 8.55\\,\\text{MeV}$. The whole binding energy of bismuth is greater only because it has more nucleons."
+  },
+  {
+    "q": "Why is the mass of a hydrogen atom used in calculating the mass defect, and not the mass of a proton, when the mass of the nucleus is taken to be the mass of the atom?",
+    "a": "The mass of an atom includes its $Z$ electrons. When $Z$ hydrogen atoms are used as the separate particles, they also contain $Z$ electrons, so the masses of the electrons cancel in the difference and what is left is the mass defect of the nucleus."
+  }
+]

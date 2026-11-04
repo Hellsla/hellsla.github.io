@@ -1,0 +1,569 @@
+{
+  "intro": "Neljä tehtävää kokoaa moduulin asiat yhteen: pariston mittauksen, virtapiirin, sähkökentän ja kondensaattorin. Jokaisessa tehtävässä päätät itse, mitkä mallit sopivat tilanteeseen. Perustelet myös valintasi.",
+  "tasks": [
+    {
+      "id": "fy6-s1",
+      "title": "Taskulampun paristo",
+      "source": "example",
+      "source_note": "Mittaustulokset on keksitty tätä tehtävää varten. Ne ovat kuitenkin samaa kokoluokkaa kuin uuden litteän taskulamppupariston mittauksessa.",
+      "text": "Oppilas tutkii uutta litteää taskulamppuparistoa. Pariston kyljessä lukee $4{,}5\\,\\text{V}$. Hän kytkee paristoon säädettävän vastuksen ja ampeerimittarin. Jännitemittarin hän kytkee suoraan pariston napoihin (kuva). Hän säätää vastuksella virran ja lukee jännitemittarista napajännitteen $U$. Napajännite on jännite pariston napojen välillä. Mittarit näyttävät virran $0{,}01\\,\\text{A}$:n tarkkuudella ja jännitteen $0{,}01\\,\\text{V}$:n tarkkuudella. Oppilas mittasi virran kasvavassa järjestyksessä. Piiri oli kytkettynä jokaisen lukeman ajan noin minuutin. Paristo lämpeni mittausten aikana vähän. Jännite näytti laskevan hitaasti myös silloin, kun virtaa ei muutettu. Sarjan jälkeen oppilas mittasi jännitteen vielä kerran virralla $0{,}10\\,\\text{A}$. Lukema oli $4{,}45\\,\\text{V}$ eli $0{,}03\\,\\text{V}$ pienempi kuin sarjan alussa.\n\nMittaustulokset (virta $I$, napajännite $U$):\n\n- $I = 0{,}10\\,\\text{A}$, $U = 4{,}48\\,\\text{V}$\n- $I = 0{,}20\\,\\text{A}$, $U = 4{,}37\\,\\text{V}$\n- $I = 0{,}30\\,\\text{A}$, $U = 4{,}22\\,\\text{V}$\n- $I = 0{,}40\\,\\text{A}$, $U = 4{,}13\\,\\text{V}$\n- $I = 0{,}50\\,\\text{A}$, $U = 3{,}99\\,\\text{V}$\n- $I = 0{,}60\\,\\text{A}$, $U = 3{,}89\\,\\text{V}$",
+      "figure": "fy6-sovella/fy6-s1-circuit",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Oppilas haluaa selvittää, millainen jännitelähde paristo on. Mallinna paristoa. Tee mittausaineistosta kuvaaja, jonka pisteisiin mallin mukaan sopii suora.",
+          "criteria": [
+            {
+              "text": "Mallintaa pariston ideaaliseksi jännitelähteeksi ja sen kanssa sarjassa olevaksi sisäiseksi resistanssiksi. Silloin napajännite on $U = E - R_\\text{s} I$. Valitsee kuvaajan suureiksi $I$ ja $U$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$I\\ (\\text{A})$ vaaka-akselilla ja $U\\ (\\text{V})$ pystyakselilla. Pystyakselin ei tarvitse alkaa nollasta, jos asteikko on merkitty."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Suora kulkee pisteiden lomitse, ja sitä on jatkettu pystyakselille asti."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä kuvaajasta pariston lähdejännite $E$ ja sisäinen resistanssi $R_\\text{s}$.",
+          "answer": [
+            {
+              "name": "E",
+              "value": 4.6,
+              "unit": "V",
+              "tolerance": 0.03
+            },
+            {
+              "name": "Rs",
+              "value": 1.2,
+              "unit": "Ω",
+              "tolerance": 0.09
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kulmakerroin $\\dfrac{\\Delta U}{\\Delta I} \\approx -1{,}2\\,\\text{V/A}$ on luettu piirretyn suoran kahdesta pisteestä, jotka ovat kaukana toisistaan. Pisteet ovat esimerkiksi $(0{,}10\\,\\text{A};\\ 4{,}48\\,\\text{V})$ ja $(0{,}60\\,\\text{A};\\ 3{,}88\\,\\text{V})$. Kulmakerrointa ei ole luettu vierekkäisistä mittauspisteistä."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$U = E - R_\\text{s} I$. Suora leikkaa pystyakselin kohdassa $E$ ($I = 0$). Sisäinen resistanssi $R_\\text{s}$ on kulmakertoimen vastaluku."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R_\\text{s} = \\dfrac{0{,}60\\,\\text{V}}{0{,}50\\,\\text{A}}$ ja $E = 4{,}48\\,\\text{V} + R_\\text{s} \\cdot 0{,}10\\,\\text{A}$ tai leikkauskohta luettuna suoralta."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$E \\approx 4{,}6\\,\\text{V}$ ja $R_\\text{s} \\approx 1{,}2\\,\\Omega$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Paristoon kytketään $8{,}0\\,\\Omega$:n vastus. Kuinka suuri teho siirtyy vastukseen? Kuinka suuri osa pariston koko sähkötehosta siirtyy lämpönä pariston sisäiseen resistanssiin?",
+          "answer": [
+            {
+              "name": "P",
+              "value": 2.0,
+              "unit": "W",
+              "tolerance": 0.03
+            },
+            {
+              "name": "osuus",
+              "value": 13,
+              "unit": "%",
+              "tolerance": 0.05
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I = \\dfrac{E}{R + R_\\text{s}}$. Vastuksen teho on $P = R I^2$ ja pariston sisällä $P_\\text{s} = R_\\text{s} I^2$. Osuus on $\\dfrac{P_\\text{s}}{P + P_\\text{s}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$I = 0{,}50\\,\\text{A}$, $P = 2{,}0\\,\\text{W}$ ja $P_\\text{s} = 0{,}30\\,\\text{W}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 2{,}0\\,\\text{W}$ ja osuus on noin $13\\,\\%$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Arvioi, miten pariston purkautuminen ja lämpeneminen vaikuttavat b-kohdan tulokseen. Arvioi myös, kuinka suuri epävarmuus pisteiden hajonnasta tulee arvoon $R_\\text{s}$. Pisteet poikkeavat sovitetusta suorasta enintään $0{,}02\\,\\text{V}$. Ehdota mittaukseen parannus.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Pariston purkautuminen laskee jännitettä sarjan aikana. Myöhemmin mitatut jännitteet (suuremmat virrat) ovat siksi liian pieniä. Suora on liian jyrkkä, ja $R_\\text{s}$ tulee liian suureksi (systemaattinen virhe). Virtaa kasvatettiin vain yhteen suuntaan, joten ajan vaikutus sekoittuu kulmakertoimeen. Lämpeneminen muuttaa myös $R_\\text{s}$:ää mittauksen aikana (yleensä pienentää sitä). Sen vaikutuksen suunta on siksi epävarma."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Ääriviivojen kulmakertoimet poikkeavat toisistaan $\\dfrac{2 \\cdot 0{,}02\\,\\text{V}}{0{,}50\\,\\text{A}} = 0{,}08\\,\\Omega$. Pelkän hajonnan perusteella $R_\\text{s} = (1{,}20 \\pm 0{,}08)\\,\\Omega$."
+            },
+            {
+              "text": "Ehdottaa parannuksen, joka vähentää purkautumisen vaikutusta. Virrat voi mitata satunnaisessa järjestyksessä. Piirin voi kytkeä päälle vain lukeman ajaksi. Sarjan voi myös toistaa käänteisessä järjestyksessä ja verrata tuloksia.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Arvioi ajautuman vaikutuksen. Jännite laski sarjan aikana noin $0{,}03\\,\\text{V}$, joten kulmakerroin on enintään noin $\\dfrac{0{,}03\\,\\text{V}}{0{,}50\\,\\text{A}} = 0{,}06\\,\\Omega$ liian suuri. Tämä on samaa suuruusluokkaa kuin hajonta $0{,}08\\,\\Omega$. Siksi $R_\\text{s}$ on noin $1{,}1\\ldots1{,}2\\,\\Omega$, ja arvo $1{,}2\\,\\Omega$ on pikemmin yläraja."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy6-8",
+        "math": "fy6-8",
+        "graph": "fy6-8",
+        "experiment": "fy6-2",
+        "communication": "fy6-8"
+      }
+    },
+    {
+      "id": "fy6-s2",
+      "title": "Mökin pihavalot",
+      "source": "example",
+      "source_note": "Kaapelin resistanssi ja lamppujen tiedot on keksitty. Ne ovat kuitenkin samaa kokoluokkaa kuin 12 voltin mökkisähköjärjestelmässä.",
+      "text": "Mökin pihavalot saavat sähkönsä $12{,}0\\,\\text{V}$:n akustosta. Akustolta lamppuihin menee pitkä kaapeli. Kaapelin molempien johtimien yhteinen resistanssi on $0{,}80\\,\\Omega$. Piirissä on akuston jälkeen sulake. Kaapelin päässä on kaksi lamppua rinnan kytkettyinä (kuva). Lamppu A on merkitty $12\\,\\text{V},\\ 24\\,\\text{W}$ ja lamppu B $12\\,\\text{V},\\ 12\\,\\text{W}$. Merkintä kertoo lampun tehon silloin, kun lamppuun kytketään nimellisjännite. Oleta, että lamppujen resistanssit ovat vakioita. Akuston sisäinen resistanssi on niin pieni, että sen voi jättää huomiotta.\n\nMuita tietoja:\n\n- sulakkeen nimellisvirta on $3{,}15\\,\\text{A}$\n- kaapeli kestää pitkään enintään $4{,}0\\,\\text{A}$:n virran",
+      "figure": "fy6-sovella/fy6-s2-circuit",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri virta kulkee akustosta, kun molemmat lamput palavat?",
+          "answer": {
+            "value": 2.5,
+            "unit": "A",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Hahmottaa piirin: kaapeli on sarjassa rinnan kytkettyjen lamppujen kanssa. Laskee lamppujen resistanssit nimellisarvoista, esimerkiksi $R = \\dfrac{U^2}{P}$: $R_\\text{A} = 6{,}0\\,\\Omega$ ja $R_\\text{B} = 12\\,\\Omega$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dfrac{1}{R_\\text{r}} = \\dfrac{1}{R_\\text{A}} + \\dfrac{1}{R_\\text{B}}$, $R = R_\\text{k} + R_\\text{r}$ ja $I = \\dfrac{E}{R}$. Ratkaisee kaavat ennen lukuarvoja."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R_\\text{r} = 4{,}0\\,\\Omega$ ja $R = 4{,}8\\,\\Omega$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$I = 2{,}5\\,\\text{A}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri teho lamppuun A todellisuudessa siirtyy? Vertaa tulosta lampun nimellistehoon.",
+          "answer": {
+            "value": 16.7,
+            "unit": "W",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Silmukkasääntö $E - R_\\text{k} I - U_\\text{L} = 0$ antaa lamppujen jännitteen $U_\\text{L} = E - R_\\text{k} I$. Lampun teho on $P = \\dfrac{U_\\text{L}^2}{R_\\text{A}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$U_\\text{L} = 12{,}0\\,\\text{V} - 0{,}80\\,\\Omega \\cdot 2{,}5\\,\\text{A} = 10{,}0\\,\\text{V}$ ja $P_\\text{A} = \\dfrac{(10{,}0\\,\\text{V})^2}{6{,}0\\,\\Omega} = 16{,}7\\,\\text{W}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "$17\\,\\text{W}$ on vähemmän kuin nimellinen $24\\,\\text{W}$, koska kaapelin jännitehäviö jättää lampulle alle $12\\,\\text{V}$. Tarkistus: akuston teho $30\\,\\text{W}$ on $16{,}7\\,\\text{W} + 8{,}3\\,\\text{W} + 5{,}0\\,\\text{W}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Lamppu B palaa loppuun, eikä se enää johda virtaa. Miten lampun A kirkkaus, akuston virta ja kaapelin lämpeneminen muuttuvat? Perustele vastauksesi. Tarkista perustelusi laskemalla lampun A teho.",
+          "criteria": [
+            {
+              "text": "Päättelee, että kokonaisresistanssi kasvaa, kun toinen rinnakkainen haara poistuu. Siksi akuston virta pienenee: $I = \\dfrac{12{,}0\\,\\text{V}}{6{,}8\\,\\Omega} \\approx 1{,}8\\,\\text{A}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee, että pienempi virta pienentää jännitehäviötä kaapelissa ($R_\\text{k} I$ pienenee). Silloin lampulle A jää suurempi jännite, ja se palaa kirkkaammin. Perustelee myös, että kaapeliin siirtyvä teho $R_\\text{k} I^2$ pienenee noin $5{,}0\\,\\text{W}$:sta $2{,}5\\,\\text{W}$:iin, joten kaapeli lämpenee vähemmän.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Laskee lampun A tehon: $U_\\text{A} \\approx 10{,}6\\,\\text{V}$ ja $P_\\text{A} \\approx 18{,}7\\,\\text{W}$. Aiemmin teho oli $16{,}7\\,\\text{W}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Toteaa, että rinnan kytketyt lamput eivät ole täysin toisistaan riippumattomia, kun kaapelilla on resistanssi. Jos kaapelin resistanssi olisi nolla, lampun A kirkkaus ei muuttuisi."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Omistaja lisää piiriin rinnan kolmannen lampun C. Se on merkitty $12\\,\\text{V},\\ 36\\,\\text{W}$. Kuinka suuri virta akustosta kulkee nyt? Mitä sulakkeelle tapahtuu? Miksi sulakkeen nimellisvirta on valittu kaapelin mukaan? Laske myös lamppujen jännite.",
+          "answer": {
+            "value": 4.3,
+            "unit": "A",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Kolme rinnakkaista lamppua: $\\dfrac{1}{R_\\text{r}} = \\dfrac{1}{R_\\text{A}} + \\dfrac{1}{R_\\text{B}} + \\dfrac{1}{R_\\text{C}}$ ja $I = \\dfrac{E}{R_\\text{k} + R_\\text{r}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R_\\text{C} = \\dfrac{(12\\,\\text{V})^2}{36\\,\\text{W}} = 4{,}0\\,\\Omega$, $R_\\text{r} = 2{,}0\\,\\Omega$ ja $I = \\dfrac{12{,}0\\,\\text{V}}{2{,}8\\,\\Omega} = 4{,}3\\,\\text{A}$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Virta $4{,}3\\,\\text{A}$ on suurempi kuin sulakkeen $3{,}15\\,\\text{A}$ ja kaapelin sallittu $4{,}0\\,\\text{A}$. Sulake todennäköisesti palaa, jos ylivirta jatkuu, ja katkaisee piirin. Sulakkeen toiminta-aika on tässä yksinkertaistettu, koska pieni ylivirta voi kestää hetken. Sulake valitaan suojaamaan piirin heikointa osaa eli kaapelia. Siksi sen nimellisvirta on pienempi kuin kaapelin sallittu virta."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Lamppujen jännite on $R_\\text{r} I = 2{,}0\\,\\Omega \\cdot 4{,}3\\,\\text{A} \\approx 8{,}6\\,\\text{V}$. Lamput palavat siksi himmeämmin kuin $10{,}0\\,\\text{V}$:n jännitteellä."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy6-4",
+        "math": "fy6-5",
+        "concept": "fy6-6",
+        "communication": "fy6-5"
+      }
+    },
+    {
+      "id": "fy6-s3",
+      "title": "Ruiskumaalaus",
+      "source": "example",
+      "source_note": "Suuruusluokat ovat samanlaisia kuin teollisessa sähköstaattisessa ruiskumaalauksessa. Tehtävän arvot on kuitenkin pyöristetty ja yksinkertaistettu.",
+      "text": "Autonosa maalataan sähköstaattisella ruiskulla. Suutinlevyn potentiaali on $+60\\,\\text{kV}$. Maadoitettu työkappale on $20\\,\\text{cm}$:n päässä. Suuttimesta lähtevät maalipisarat saavat positiivisen varauksen, ja ne liikkuvat työkappaletta kohti. Oletetaan, että suutinlevyn ja työkappaleen välinen sähkökenttä on homogeeninen eli sama joka kohdassa (kuva).\n\nYksi maalipisara:\n\n- massa $4{,}0 \\cdot 10^{-10}\\,\\text{kg}$\n- varaus $q = +6{,}0 \\cdot 10^{-13}\\,\\text{C}$\n- lähtee suutinlevyltä levosta\n\nMuita tietoja: ilman läpilyöntilujuus on noin $3\\,\\text{MV/m}$, putoamiskiihtyvyys on $9{,}81\\,\\text{m/s}^2$ ja Coulombin lain vakio on $k = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2}$. Läpilyöntilujuus on suurin sähkökentän voimakkuus, jonka ilma kestää ilman kipinää.",
+      "figure": "fy6-sovella/fy6-s3-field",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri sähkövoima pisaraan vaikuttaa? Onko perusteltua jättää pisaran paino huomiotta? Syntyykö kenttään kipinöintiä?",
+          "answer": {
+            "value": 1.8e-07,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Homogeenisessa kentässä $E = \\dfrac{U}{d}$, ja pisaraan vaikuttaa voima $F = qE$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E = \\dfrac{60\\,000\\,\\text{V}}{0{,}20\\,\\text{m}} = 3{,}0 \\cdot 10^{5}\\,\\text{V/m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 1{,}8 \\cdot 10^{-7}\\,\\text{N}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Paino $mg \\approx 3{,}9 \\cdot 10^{-9}\\,\\text{N}$ on vain noin $2\\,\\%$ sähkövoimasta, joten sen voi jättää huomiotta. Kenttä on noin kymmenesosa ilman läpilyöntilujuudesta, joten kipinöintiä ei synny."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suurella nopeudella pisara osuu työkappaleeseen, kun ilmanvastusta ei oteta huomioon?",
+          "answer": {
+            "value": 13.4,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Valitsee energiaperiaatteen. Sähkökentän tekemä työ $qU$ kasvattaa pisaran liike-energiaa, kun paino ja ilmanvastus jätetään pois. Kentän voimakkuutta tai kiihtyvyyttä ei tarvita.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$q U = \\dfrac{1}{2} m v^2$, josta $v = \\sqrt{\\dfrac{2 q U}{m}}$. Tässä $U$ on suutinlevyn ja työkappaleen potentiaaliero."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$qU = 6{,}0 \\cdot 10^{-13}\\,\\text{C} \\cdot 6{,}0 \\cdot 10^{4}\\,\\text{V} = 3{,}6 \\cdot 10^{-8}\\,\\text{J}$ ja $v = \\sqrt{\\dfrac{2 \\cdot 3{,}6 \\cdot 10^{-8}\\,\\text{J}}{4{,}0 \\cdot 10^{-10}\\,\\text{kg}}}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 13\\,\\text{m/s}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Mittauksessa pisaroiden osumanopeudeksi saadaan noin $5{,}0\\,\\text{m/s}$. Selitä, miksi se on paljon pienempi kuin b-kohdan tulos. Päättele, minne sähkökentän tekemä työ jää.",
+          "criteria": [
+            {
+              "text": "Tunnistaa, että b-kohdan malli jätti ilmanvastuksen pois. Ilma vastustaa pisaran liikettä. Kun nopeus kasvaa, ilmanvastus kasvaa, kunnes se on likimain yhtä suuri kuin sähkövoima.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Laskee todellisen liike-energian $\\dfrac{1}{2} m v^2 = 5{,}0 \\cdot 10^{-9}\\,\\text{J}$ ja vertaa sitä kentän tekemään työhön $3{,}6 \\cdot 10^{-8}\\,\\text{J}$. Liike-energia on vain noin $14\\,\\%$ työstä.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Päättelee, että loput noin $3{,}1 \\cdot 10^{-8}\\,\\text{J}$ siirtyy ilmaan. Ilman sisäenergia kasvaa, ja energia siirtyy edelleen lämpönä ympäristöön. Energia ei häviä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Päättelee, että b-kohdan tulos on suurin mahdollinen nopeus (yläraja), kun ilmanvastusta ei ole. Päättelee myös, että energia ei häviä vaan siirtyy ilmaan."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kaksi vierekkäistä pisaraa on $1{,}0\\,\\text{mm}$:n päässä toisistaan. Kummankin varaus on $+6{,}0 \\cdot 10^{-13}\\,\\text{C}$. Kuinka suuri voima pisaroiden välillä on? Mitä tulos kertoo pisarapilven käyttäytymisestä?",
+          "answer": {
+            "value": 3.2e-09,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Coulombin laki pistemäisille varauksille: $F = k\\dfrac{q_1 q_2}{r^2}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Muunnos $1{,}0\\,\\text{mm} = 1{,}0 \\cdot 10^{-3}\\,\\text{m}$. Sitten $F = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\cdot \\dfrac{(6{,}0 \\cdot 10^{-13}\\,\\text{C})^2}{(1{,}0 \\cdot 10^{-3}\\,\\text{m})^2}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 3{,}2 \\cdot 10^{-9}\\,\\text{N}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Samanmerkkiset varaukset hylkivät toisiaan, joten pisarapilvi levenee sivusuunnassa. Voima on noin $2\\,\\%$ kentän voimasta, mutta lähes yhtä suuri kuin pisaran paino ($0{,}8$-kertainen). Pisarat kulkevat siis silti työkappaletta kohti, mutta leviävät."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy6-12",
+        "math": "fy6-11",
+        "concept": "fy6-11",
+        "communication": "fy6-10"
+      }
+    },
+    {
+      "id": "fy6-s4",
+      "title": "Kameran salama",
+      "source": "example",
+      "source_note": "Kondensaattorin arvot ovat samaa kokoluokkaa kuin kameran salamalaitteessa. Ne on kuitenkin valittu tätä tehtävää varten.",
+      "text": "Kameran salamalaitteessa pieni paristo lataa kondensaattorin jännitteeseen $300\\,\\text{V}$. Latauksessa käytetään piiriä, joka nostaa jännitettä. Kondensaattorin kapasitanssi on $330\\,\\mu\\text{F}$. Kun salama välähtää, kondensaattori purkautuu salamaputken kautta noin $1{,}0\\,\\text{ms}$:ssa. Sen jännite laskee arvoon $220\\,\\text{V}$. Salamaan siirtynyt energia lähtee laitteesta valona ja lämpönä.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri energia on varastoituneena kondensaattoriin ennen salamaa?",
+          "answer": {
+            "value": 14.85,
+            "unit": "J",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Kondensaattorin energia on $E = \\dfrac{1}{2} C U^2$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Muunnos $330\\,\\mu\\text{F} = 330 \\cdot 10^{-6}\\,\\text{F}$. Sitten $E = \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (300\\,\\text{V})^2$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$E \\approx 15\\,\\text{J}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri energia siirtyi salamaan? Kuinka suuri osa varastoidusta energiasta tämä on? Miksi osuus on suurempi kuin jännitteen pieneneminen?",
+          "answer": {
+            "value": 6.86,
+            "unit": "J",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Päättelee, että salamaan siirtynyt energia on kondensaattorin energian muutos. Energiat lasketaan erikseen ennen salamaa ja sen jälkeen. Pelkkä jännitteen muutos $\\Delta U$ ei riitä.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Delta E = \\dfrac{1}{2} C U_1^2 - \\dfrac{1}{2} C U_2^2$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_2 = \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 = 7{,}99\\,\\text{J}$ ja $\\Delta E = 14{,}85\\,\\text{J} - 7{,}99\\,\\text{J} = 6{,}9\\,\\text{J}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Osuus on noin $46\\,\\%$, vaikka jännite pieneni vain noin $27\\,\\%$. Syy on se, että energia riippuu jännitteen neliöstä: $1 - \\left(\\dfrac{220}{300}\\right)^2 \\approx 0{,}46$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri oli kondensaattorista salaman aikana kulkenut keskimääräinen virta?",
+          "answer": {
+            "value": 26.4,
+            "unit": "A",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I = \\dfrac{\\Delta Q}{\\Delta t}$, missä siirtynyt varaus on $\\Delta Q = C\\,\\Delta U$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta Q = 330 \\cdot 10^{-6}\\,\\text{F} \\cdot 80\\,\\text{V} = 0{,}0264\\,\\text{C}$ ja $\\Delta t = 1{,}0 \\cdot 10^{-3}\\,\\text{s}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "$I \\approx 26\\,\\text{A}$ ja keskiteho $\\dfrac{6{,}9\\,\\text{J}}{1{,}0\\,\\text{ms}} \\approx 6{,}9\\,\\text{kW}$. Pieni paristo ei voisi antaa näin suurta virtaa ja tehoa näin lyhyessä pulssissa. Siksi energia varastoidaan ensin kondensaattoriin."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Korjaaja irrottaa salamalaitteesta pariston ja avaa laitteen heti sen jälkeen. Arvioi, onko kondensaattorissa vaaraa. Kuvaile, miten kondensaattori puretaan turvallisesti. Arvioi vaaraa myös laskemalla virta, kun ihmisen kehon resistanssi on noin $1{,}0\\,\\text{k}\\Omega$.",
+          "criteria": [
+            {
+              "text": "Tietää, että kondensaattori säilyttää varauksensa ja energiansa, kun paristo irrotetaan. Se on edelleen $300\\,\\text{V}$:ssa ja siinä on noin $15\\,\\text{J}$, vaikka laitetta syöttää pieni paristo.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Laskee virran kehon läpi: $I = \\dfrac{U}{R} = \\dfrac{300\\,\\text{V}}{1{,}0 \\cdot 10^{3}\\,\\Omega} = 0{,}30\\,\\text{A}$. Tämä on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Kuvaa turvallisen purkamisen. Napojen väliin kytketään eristetyillä työkaluilla sopiva vastus, esimerkiksi $10\\,\\text{k}\\Omega$. Silloin energia siirtyy vastuksen sisäenergiaksi ja edelleen lämpönä ympäristöön. Alkuvirta on $\\dfrac{300\\,\\text{V}}{10\\,\\text{k}\\Omega} = 30\\,\\text{mA}$. Napoja ei oikosulkuteta, ja jännite varmistetaan mittarilla. Vastuksen on kestettävä alussa noin $\\dfrac{(300\\,\\text{V})^2}{10\\,\\text{k}\\Omega} = 9\\,\\text{W}$, joten sen tehonkesto on valittava sen mukaan. Kuvaus on tarkoitettu ymmärtämiseen: älä yritä purkaa itse.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Päättelee, että laitetta ei saa avata heti. Vaara johtuu varastoituneesta energiasta ja jännitteestä eikä pariston koosta. Kehon resistanssi vaihtelee (esimerkiksi kostea iho), joten arvio on suuruusluokka."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy6-13",
+        "math": "fy6-13",
+        "concept": "fy6-15",
+        "communication": "fy6-15"
+      }
+    }
+  ]
+}

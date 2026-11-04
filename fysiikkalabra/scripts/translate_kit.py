@@ -152,7 +152,6 @@ def apply(unit, lang, work):
         errs = practice.check(code, lang)
     else:
         if figpy.is_file(): subprocess.run([sys.executable, str(ROOT / "scripts/figures.py"), unit, "--lang", lang])
-        import check_i18n
         errs = []; check_i18n.check_lesson(courses.find_lesson(unit), tr, lang, errs)
         import inquiry
         if (tr / "inquiry.json").is_file():                # the build's own checks of the page, in the language

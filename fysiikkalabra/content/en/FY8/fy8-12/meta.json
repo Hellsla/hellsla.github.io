@@ -1,0 +1,22 @@
+{
+  "id": "fy8-12",
+  "course": "FY8",
+  "title": "Ionising radiation and the body",
+  "goals": [
+    "LOPS FY8: types of ionising radiation and their biological effects, and applications in medicine and technology",
+    "Clarification: biological effects are examined through physical effects (ionisation and energy transfer); penetrating power and detection of the types of radiation"
+  ],
+  "prerequisites": [
+    "fy8-11"
+  ],
+  "glossary": [
+    "ionisoiva säteily",
+    "ionisaatio",
+    "läpäisykyky",
+    "puoliintumispaksuus",
+    "Geiger-Müller-putki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-12-L1-01",
+      "level": 1,
+      "text": "Koboltti-60 lähettää gammasäteilyä, jonka keskimääräiselle energialle $1{,}25\\,\\text{MeV}$ lyijyn puoliintumispaksuus on $10{,}4\\,\\text{mm}$. Kuinka monta prosenttia gammasäteilystä läpäisee $25{,}0\\,\\text{mm}$:n paksuisen lyijylevyn? Oleta, että säde on kapea.",
+      "answer": 18.9,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-02",
+      "level": 1,
+      "text": "Savuilmaisimen amerikium-241-lähteen alfahiukkasen liike-energia on $5{,}49\\,\\text{MeV}$. Ilmassa yhden ioniparin muodostaminen vie keskimäärin $34\\,\\text{eV}$. Kuinka monta ioniparia alfahiukkanen muodostaa ilmassa, ennen kuin se pysähtyy? Anna vastaus yksikössä $10^{5}$.",
+      "answer": 1.6,
+      "unit": "· 10⁵",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-03",
+      "level": 1,
+      "text": "Gammalähteen ja GM-putken väliin lisätään levyjä. Levyjä on yhteensä $18\\,\\text{mm}$. Silloin nettopulssimäärä on pienentynyt kahdeksasosaan siitä, mitä se oli ilman levyjä. Nettopulssimäärä on pulssimäärä, josta taustasäteily on jo vähennetty. Mikä on levyjen aineen puoliintumispaksuus tälle gammasäteilylle? Anna vastaus millimetreinä.",
+      "answer": 6.0,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-04",
+      "level": 1,
+      "text": "Ydinvoimalan käytetty polttoaine säilytetään aluksi vesialtaassa. Veden puoliintumispaksuus erään gammasäteilyn osalta on $8{,}1\\,\\text{cm}$. Kuinka monta prosenttia tästä gammasäteilystä läpäisee $30\\,\\text{cm}$:n vesikerroksen? Oleta, että säde on kapea.",
+      "answer": 7.7,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-05",
+      "level": 1,
+      "text": "Vesimolekyylin ionisoimiseen tarvitaan vähintään $12{,}6\\,\\text{eV}$. Mikä on pisin aallonpituus, jolla yksittäinen fotoni pystyy ionisoimaan vesimolekyylin? Anna vastaus nanometreinä.",
+      "answer": 98.4,
+      "unit": "nm",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-12-L2-01",
+      "level": 2,
+      "text": "GM-mittari laskee säteilylähteen lähellä $1260$ pulssia $3{,}00$ minuutissa. Kun lähde viedään pois, mittari laskee samassa ajassa $72$ pulssia taustasäteilyä. Kuinka monta pulssia sekunnissa lähteen säteily aiheuttaa? Anna vastaus yksikössä $\\tfrac{1}{\\text{s}}$.",
+      "answer": 6.6,
+      "unit": "1/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L2-02",
+      "level": 2,
+      "text": "Cesium-137-lähteen gammasäteily kulkee ensin $10\\,\\text{mm}$:n lyijylevyn ja sitten $20\\,\\text{cm}$:n betoniseinän läpi. Lyijyn puoliintumispaksuus on $5{,}5\\,\\text{mm}$ ja betonin $3{,}9\\,\\text{cm}$. Kuinka monta prosenttia gammasäteilystä läpäisee molemmat esteet? Oleta, että säde on kapea.",
+      "answer": 0.81,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L2-03",
+      "level": 2,
+      "text": "Opiskelija mittaa gammalähteen säteilyä GM-mittarilla $10\\,\\text{s}$:n jaksoissa. Ilman estettä mittari laskee $480$ pulssia. Kun lyijykerros on $12\\,\\text{mm}$ paksu, mittari laskee sen takana $105$ pulssia. Ilman lähdettä mittari laskee samassa ajassa $5$ pulssia taustasäteilyä. Mikä on mittausten perusteella lyijyn puoliintumispaksuus tälle gammasäteilylle? Anna vastaus millimetreinä.",
+      "answer": 5.34,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L2-04",
+      "level": 2,
+      "text": "Säteilylähteen ympärille suunnitellaan suojaa. Lyijyn puoliintumispaksuus lähteen gammasäteilylle on $5{,}5\\,\\text{mm}$ ja betonin $39\\,\\text{mm}$. Kuinka paksu betoniseinä vaimentaa säteilyä yhtä paljon kuin $10\\,\\text{mm}$ lyijyä? Anna vastaus millimetreinä.",
+      "answer": 70.9,
+      "unit": "mm",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-12-L3-01",
+      "level": 3,
+      "text": "Amerikium-241:n alfahiukkanen, jonka liike-energia on $5{,}49\\,\\text{MeV}$, pysähtyy ilmassa $4{,}1\\,\\text{cm}$:n matkalla. Beetahiukkanen, jonka liike-energia on $1{,}0\\,\\text{MeV}$, kulkee ilmassa mutkittelevaa rataa noin $3{,}6\\,\\text{m}$, ennen kuin se pysähtyy. Molemmat luovuttavat koko energiansa ionisoimalla, ja ilmassa yksi ionipari vie keskimäärin $34\\,\\text{eV}$. Kuinka monta kertaa enemmän ioniparia senttimetrillä alfahiukkanen muodostaa kuin beetahiukkanen? Oleta, että ionipareja syntyy tasaisesti koko radalla.",
+      "answer": 482,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L3-02",
+      "level": 3,
+      "text": "Laboratoriossa GM-mittari näyttää gammalähteen lähellä $2400$ pulssia minuutissa. Kun lähteen eteen asetetaan $11{,}0\\,\\text{mm}$ lyijyä, lukema on $630$ pulssia minuutissa. Taustasäteily on $30$ pulssia minuutissa. Kuinka paksu lyijysuoja tarvitaan, jotta lähteen säteilyn aiheuttama pulssitaajuus putoaa samaksi kuin taustasäteilyn, $30$ pulssia minuutissa? Anna vastaus millimetreinä.",
+      "answer": 35,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L3-03",
+      "level": 3,
+      "text": "WLAN-verkko ja mikroaaltouuni käyttävät sähkömagneettista säteilyä, jonka taajuus on $2{,}45\\,\\text{GHz}$. Vesimolekyylin ionisaatioenergia on $12{,}6\\,\\text{eV}$. Kuinka monta kertaa suurempi on ionisaatioenergia kuin yhden tämän säteilyn fotonin energia? Anna vastaus yksikössä $10^{6}$.",
+      "answer": 1.24,
+      "unit": "· 10⁶",
+      "tolerance": 0.02
+    }
+  ]
+}
