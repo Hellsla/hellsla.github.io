@@ -219,6 +219,16 @@ a 0
 **Find:** the magnitude of the net force $\Sigma F$ in $\text{N}$
 **Principle:** The net force is the vector sum of the forces. The forces lie on the same line, so the sum is calculated from the horizontal components, with $x$ pointing in the direction of the pushing. In the vertical direction the net force is zero.
 **Free-body diagram:** The cabinet as a rectangle, $x$ in the direction of the pushing and $y$ up. Two pushing forces $\overline{F}_1$ and $\overline{F}_2$ forward, the friction force $\overline{F}_\mu$ backward, and the weight $\overline{G}$ down and the normal force $\overline{N}$ up with equal lengths. The friction force is longer than either pushing force but shorter than their sum.
+```voimakuvio
+pinta 0
+G 600
+N 600
+F_1 120 0 työntö
+F_2 85 0 työntö
+F_mu 150 vasen
+a oikea
+akselit 0
+```
 **Formula:** $\Sigma F_x = F_1 + F_2 - F_\mu$
 **Conversions:** All forces are in newtons, so no conversions are needed.
 **Substitution:** $\Sigma F_x = 120\,\text{N} + 85\,\text{N} - 150\,\text{N} = 55\,\text{N}$
@@ -235,6 +245,14 @@ a 0
 **Find:** the mean $\alpha_\text{avg}$ of the angle $\alpha$ in $^\circ$
 **Principle:** The ring is at rest, so according to Newton's second law the sum of the forces acting on it is zero in both the horizontal and the vertical direction. Rope B is oblique, so its force is divided into components.
 **Free-body diagram:** The ring as a rectangle, $x$ to the right and $y$ up. The tension $\overline{F}_\text{A}$ of rope A to the left and the tension $\overline{F}_\text{C}$ of rope C down. The force $\overline{F}_\text{B}$ of rope B starts obliquely up and to the right at an angle $\alpha$, and its components $F_\text{B}\cos\alpha$ and $F_\text{B}\sin\alpha$ are drawn with dashed lines. The components are as long as $F_\text{A}$ and $F_\text{C}$. The weight of the ring is not drawn, because it is ignored in the task.
+```voimakuvio
+F_A 3,0 vasen
+F_C 2,5 alas
+F_B 3,9 39,8
+a 0
+akselit 0
+komponentit F_B
+```
 **Reading the graph:** The forces $F_\text{A}$ and $F_\text{C}$ of each measurement are read from the table. The reading of sensor B is also taken for comparison.
 **Formula:** $x$: $F_\text{B}\cos\alpha - F_\text{A} = 0$ and $y$: $F_\text{B}\sin\alpha - F_\text{C} = 0$, so $\alpha = \arctan\dfrac{F_\text{C}}{F_\text{A}}$
 **Conversions:** The forces are in newtons and the angle is calculated in degrees, so no conversions are needed; the calculator is in DEG mode.
@@ -274,6 +292,14 @@ a vasen
 **Find:** the magnitude of the sum of the forces $\overline{F}_1$ and $\overline{F}_2$, $\Sigma F$, in $\text{N}$ when $\varphi = 60\,{}^\circ$
 **Principle:** a) The ring is at rest, so according to Newton's second law the sum of the forces $\overline{F}_1$, $\overline{F}_2$ and $\overline{F}_3$ is zero. Therefore the force of sensor 3 is equal in magnitude and opposite in direction to the sum of the forces $\overline{F}_1$ and $\overline{F}_2$, and its reading tells the magnitude of the sum. b) The sum of oblique forces is calculated by components.
 **Free-body diagram:** The ring as a rectangle, $x$ in the direction of the force $\overline{F}_1$. The force $\overline{F}_1$ starts straight in the direction of the $x$ axis and the force $\overline{F}_2$ at an angle of $60\,{}^\circ$ upward. The force $\overline{F}_3$ starts in the direction opposite to their sum. The components $F_{2x}$ and $F_{2y}$ are drawn with dashed lines.
+```voimakuvio
+F_1 6,0 0
+F_2 8,0 60
+F_3 12,2 214,7
+a 0
+akselit 0
+komponentit F_2
+```
 **Reading the graph:** The row $\varphi = 60\,{}^\circ$ is read from the table: $F_3 = 12.3\,\text{N}$.
 **Formula:** $\Sigma F_x = F_1 + F_2\cos\varphi$ and $\Sigma F_y = F_2\sin\varphi$, so $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$
 **Conversions:** The forces are in newtons and the angle in degrees, so no conversions are needed.
