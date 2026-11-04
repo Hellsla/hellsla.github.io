@@ -40,6 +40,74 @@
       "answer": 1.2,
       "unit": "kg",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy2-8-L1-06",
+      "level": 1,
+      "text": "Mikä seuraavista kuvaa parhaiten luonnollista kasvihuoneilmiötä?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kasvihuonekaasut päästävät Auringon säteilyn suurelta osin läpi mutta hidastavat maanpinnan lämpösäteilyn pääsyä avaruuteen.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Ilmakehän kaasut heijastavat suurimman osan Auringon säteilystä takaisin avaruuteen.",
+          "feedback": "Näin ei ole. Suuri osa Auringon säteilystä kulkee ilmakehän läpi maanpinnalle ja lämmittää sen. Kasvihuonekaasut vaikuttavat vasta maanpinnan lähettämään lämpösäteilyyn."
+        },
+        {
+          "text": "Kasvihuonekaasut päästävät Auringon säteilyn suurelta osin läpi mutta hidastavat maanpinnan lämpösäteilyn pääsyä avaruuteen.",
+          "feedback": "Oikein: maanpinta lämpenee Auringon säteilystä ja lähettää lämpösäteilyä, jonka kasvihuonekaasut hidastavat. Siksi keskilämpötila on noin $+15\\,{}^\\circ\\text{C}$ eikä noin $-18\\,{}^\\circ\\text{C}$.",
+          "correct": true
+        },
+        {
+          "text": "Ilmakehä tuottaa itse lämpöenergiaa ja lämmittää sillä maanpintaa.",
+          "feedback": "Ilmakehä ei ole energianlähde. Maanpinnan lämpenemisen energia tulee Auringosta, ja ilmakehä vain hidastaa energian poistumista."
+        },
+        {
+          "text": "Ilmakehässä on aukko, jonka kautta Auringon säteily pääsee tavallista enemmän maanpinnalle.",
+          "feedback": "Aukko ei kuvaa kasvihuoneilmiötä. Ilmiö perustuu siihen, että kaasut hidastavat maanpinnan lämpösäteilyn poistumista, ei siihen, että Auringon säteilyä pääsisi läpi tavallista enemmän."
+        }
+      ]
+    },
+    {
+      "id": "fy2-8-L1-07",
+      "level": 1,
+      "text": "Mikä seuraavista väitteistä koskee ilmastoa eikä säätä?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Esimerkkiväite: Rovaniemellä tammikuun keskilämpötila on kolmenkymmenen vuoden keskiarvona noin $-10\\,{}^\\circ\\text{C}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Tiistaina Oulussa oli aamulla pakkasta ja iltapäivällä tuli räntää.",
+          "feedback": "Tämä kuvaa yhden päivän tilannetta tietyssä paikassa, joten se on säätä. Sää vaihtelee tunnista ja päivästä toiseen."
+        },
+        {
+          "text": "Tämän viikon sää oli Suomessa tavallista lämpimämpi kuin viime viikolla.",
+          "feedback": "Viikkojen vertailu kuvaa lyhyttä ajanjaksoa, joten se on säätä. Ilmastosta puhutaan vasta, kun tarkastellaan pitkää ajanjaksoa."
+        },
+        {
+          "text": "Esimerkkiväite: Rovaniemellä tammikuun keskilämpötila on kolmenkymmenen vuoden keskiarvona noin $-10\\,{}^\\circ\\text{C}$.",
+          "feedback": "Oikein: ilmasto on sään pitkän ajan keskiarvo ja vaihtelu tietyllä alueella, tyypillisesti vähintään kolmenkymmenen vuoden ajalta.",
+          "correct": true
+        },
+        {
+          "text": "Viime yönä Kuopiossa satoi lunta kymmenen senttimetriä.",
+          "feedback": "Tämä on yksittäinen tapahtuma tietyssä paikassa ja ajassa, joten se on säätä."
+        }
+      ]
+    },
+    {
+      "id": "fy2-8-L1-08",
+      "level": 1,
+      "text": "Esimerkkikoulu käyttää sähköä $40\\,000\\,\\text{kWh}$ vuodessa. Sähkö tuotetaan ydinvoimalla, jonka elinkaaren päästökerroin on $12\\,\\text{g/kWh}$. Kuinka paljon hiilidioksidiekvivalenttia koulun sähkönkäytöstä syntyy vuodessa? Anna vastaus kilogrammoina.",
+      "answer": 480,
+      "unit": "kg",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,123 @@
       "answer": 250,
       "unit": "g/kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L2-05",
+      "level": 2,
+      "text": "Taulukossa on ilmakehän hiilidioksidipitoisuus $c$ eri vuosina (esimerkkiaineisto, pyöristetty Mauna Loan mittausaseman vuosikeskiarvoista). Oletetaan, että pitoisuus kasvaa vuosien $2000$ ja $2020$ välillä tasaisesti, eli mallina on suora. Kuinka monta ppm pitoisuus kasvaa tämän mallin mukaan keskimäärin vuodessa? Anna vastaus yksikössä ppm/a.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 2.2,
+      "unit": "ppm/a",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Ilmakehän hiilidioksidipitoisuus (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{a})$",
+          "$c\\,(\\text{ppm})$"
+        ],
+        "rows": [
+          [
+            "2000",
+            "369.7"
+          ],
+          [
+            "2005",
+            "379.8"
+          ],
+          [
+            "2010",
+            "389.9"
+          ],
+          [
+            "2015",
+            "400.8"
+          ],
+          [
+            "2020",
+            "414.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-8-L2-06",
+      "level": 2,
+      "text": "Taulukossa on esimerkkimaan kasvihuonekaasupäästöt sektoreittain vuosina $2010$ ja $2020$ miljoonina tonneina hiilidioksidiekvivalenttia (esimerkkiaineisto, ei tilasto).\n\na) Laske kokonaispäästöt kumpanakin vuonna.\n\nb) Kuinka monta prosenttia kokonaispäästöt pienenivät vuodesta $2010$ vuoteen $2020$? Anna vastaus prosentteina.",
+      "kind": [
+        "data"
+      ],
+      "answer": 26,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Päästöt sektoreittain (esimerkkiaineisto)",
+        "columns": [
+          "Sektori",
+          "$m_{2010}\\,(\\text{Mt})$",
+          "$m_{2020}\\,(\\text{Mt})$"
+        ],
+        "rows": [
+          [
+            "Energiantuotanto",
+            "30",
+            "18"
+          ],
+          [
+            "Liikenne",
+            "12",
+            "10"
+          ],
+          [
+            "Teollisuus",
+            "10",
+            "9"
+          ],
+          [
+            "Maatalous",
+            "6",
+            "6"
+          ],
+          [
+            "Jätteet",
+            "3",
+            "2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-8-L2-07",
+      "level": 2,
+      "text": "Opiskelija laski kivihiilellä tuotetun sähkön päästön: $m = 820\\,\\text{g/kWh} \\cdot 2{,}0\\,\\text{kWh} = 1640$, ja hän vastasi, että päästö on $1640\\,\\text{kg}$. Mikä virhe laskussa on?",
+      "kind": [
+        "error"
+      ],
+      "answer": "Tulos $1640$ on grammoina, joten vastaus on $1640 \\cdot 0{,}001\\,\\text{kg} = 1{,}64\\,\\text{kg}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Päästökerroin pitäisi jakaa energialla eikä kertoa sillä.",
+          "feedback": "Päästö saadaan kertomalla päästökerroin energialla, $m = e \\cdot E$. Kertolasku oli oikein: yksikkö $\\text{g/kWh} \\cdot \\text{kWh}$ antaa grammat."
+        },
+        {
+          "text": "Energia pitäisi ensin muuttaa megajouleiksi, ja vasta sitten kertoa päästökertoimella.",
+          "feedback": "Muunnosta ei tarvita, koska päästökertoimen yksikkö on $\\text{g/kWh}$ ja energia on jo kilowattitunteina. Kilowattitunnit supistuvat suoraan."
+        },
+        {
+          "text": "Tulos $1640$ on grammoina, joten vastaus on $1640 \\cdot 0{,}001\\,\\text{kg} = 1{,}64\\,\\text{kg}$.",
+          "feedback": "Oikein: kilowattitunnit supistuvat ja jäljelle jäävät grammat. Opiskelija unohti yksikkömuunnoksen, ja vastaus oli tuhatkertainen.",
+          "correct": true
+        },
+        {
+          "text": "Kerroin $820\\,\\text{g/kWh}$ koskee vain yhtä kilowattituntia, joten kahden kilowattitunnin päästö on silti $820\\,\\text{g}$.",
+          "feedback": "Päästö on suoraan verrannollinen energiaan: kaksinkertainen energia tuottaa kaksinkertaisen päästön, $2{,}0 \\cdot 820\\,\\text{g} = 1640\\,\\text{g}$."
+        }
+      ]
     }
   ],
   "level3": [
@@ -100,6 +285,83 @@
       "answer": 4.1,
       "unit": "kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-8-L3-04",
+      "level": 3,
+      "text": "Taulukossa on ilmakehän hiilidioksidipitoisuus $c$ eri vuosina (esimerkkiaineisto, pyöristetty Mauna Loan mittausaseman vuosikeskiarvoista).\n\na) Laske pitoisuuden keskimääräinen kasvunopeus kullakin kahdenkymmenen vuoden jaksolla.\n\nb) Ennusta pitoisuus vuonna $2040$ suoralla, joka jatkaa viimeisen jakson ($2000$–$2020$) kasvunopeudella pisteestä $2020$. Anna ennuste yksikössä ppm.\n\nc) Vertaa ennustetta ennusteeseen, joka saataisiin koko aineiston kasvunopeudella ($1960$–$2020$), ja perustele, kumpi ennuste on uskottavampi ja kuinka pitkälle suoraan mallina voi luottaa.",
+      "kind": [
+        "data",
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "answer": 459,
+      "unit": "ppm",
+      "tolerance": 0.01,
+      "data": {
+        "caption": "Ilmakehän hiilidioksidipitoisuus (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{a})$",
+          "$c\\,(\\text{ppm})$"
+        ],
+        "rows": [
+          [
+            "1960",
+            "316.9"
+          ],
+          [
+            "1980",
+            "338.8"
+          ],
+          [
+            "2000",
+            "369.7"
+          ],
+          [
+            "2020",
+            "414.2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-8-L3-05",
+      "level": 3,
+      "text": "Esimerkkikaupungin sähköntuotanto on vuodessa taulukon mukainen. Päästöt lasketaan oppitunnin elinkaaren päästökertoimilla. Kaupunki suunnittelee korvaavansa kivihiilisähkön kokonaan tuulisähköllä niin, että tuotettu energia pysyy samana.\n\na) Laske nykyiset vuotuiset kokonaispäästöt tonneina.\n\nb) Kuinka monta prosenttia kokonaispäästöt pienenevät suunnitelmassa? Anna vastaus prosentteina.\n\nc) Perustele, miksi ilmakehän hiilidioksidipitoisuus voi silti jatkaa kasvuaan useita vuosia päästöjen vähenemisen jälkeen, ja mainitse yksi asia, jota päästökerroin ei kerro tuulisähkön lisäämisestä.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 62,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Esimerkkikaupungin sähköntuotanto (esimerkkiaineisto)",
+        "columns": [
+          "Tuotantotapa",
+          "$E\\,(\\text{GWh})$"
+        ],
+        "rows": [
+          [
+            "Kivihiili",
+            "40"
+          ],
+          [
+            "Maakaasu",
+            "30"
+          ],
+          [
+            "Biomassa",
+            "20"
+          ],
+          [
+            "Tuulivoima",
+            "10"
+          ]
+        ]
+      }
     }
   ]
 }

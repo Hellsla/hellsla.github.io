@@ -118,3 +118,72 @@
 **Sijoitus:** $m_\text{bussi} = 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l} : 25 = 79\,920\,\text{g} : 25 = 3196{,}8\,\text{g}$, $m_\text{auto} = 69\,\text{g/MJ} \cdot 6{,}0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, ja $13\,248\,\text{g} : 3196{,}8\,\text{g} = 4{,}14$
 **Vastaus:** $4{,}1$ kertaa, kaksi merkitsevää numeroa kuten kulutuksissa $6{,}0\,\textsf{l}$ ja $30\,\textsf{l}$.
 **Järkevyys:** Bussi kuluttaa viisi kertaa enemmän polttoainetta kuin auto, mutta sen kuorma jakautuu $25$ matkustajalle, joten matkustajaa kohti päästö on pienempi. Pyöristetyillä luvuilla $13\,000 : 3200 \approx 4$.
+
+## fy2-8-L1-06
+**Kysytty:** mikä väite kuvaa luonnollista kasvihuoneilmiötä.
+**Periaate:** Auringon säteily kulkee suurelta osin ilmakehän läpi ja lämmittää maanpinnan. Lämmin maanpinta lähettää lämpösäteilyä, ja kasvihuonekaasut hidastavat sen pääsyä avaruuteen. Ilmakehä ei tuota energiaa itse eikä heijasta suurinta osaa Auringon säteilystä pois.
+**Mallivastaus:** Oikea vaihtoehto on se, jonka mukaan kasvihuonekaasut päästävät Auringon säteilyn suurelta osin läpi mutta hidastavat maanpinnan lämpösäteilyn pääsyä avaruuteen. Ilmiö nostaa maapallon keskilämpötilan arvosta noin $-18\,{}^\circ\text{C}$ arvoon noin $+15\,{}^\circ\text{C}$, joten se on elämälle välttämätön. Ongelma on ilmiön voimistuminen, kun ilmakehään lisätään hiilidioksidia ja metaania.
+
+## fy2-8-L1-07
+**Kysytty:** mikä väite koskee ilmastoa eikä säätä.
+**Periaate:** Sää on ilmakehän tila tietyssä paikassa ja tiettynä hetkenä tai lyhyenä ajanjaksona. Ilmasto on sään pitkän ajan keskiarvo ja vaihtelu alueella, tyypillisesti vähintään kolmenkymmenen vuoden ajalta.
+**Mallivastaus:** Ilmastoa kuvaa väite tammikuun keskilämpötilasta kolmenkymmenen vuoden keskiarvona. Muut väitteet kertovat yksittäisestä päivästä, yöstä tai viikosta, joten ne ovat säätä. Yksi kylmä päivä tai lämmin viikko ei todista ilmastosta mitään, koska sää vaihtelee paljon ilmaston keskiarvon ympärillä.
+
+## fy2-8-L1-08
+**Annettu:** energia $E = 40\,000\,\text{kWh}$; ydinvoiman päästökerroin $e = 12\,\text{g/kWh}$
+**Kysytty:** päästö $m$ kilogrammoina
+**Periaate:** Päästö on suoraan verrannollinen tuotettuun energiaan, ja päästökerroin kertoo päästön yhtä kilowattituntia kohti. Päästö saadaan siis kertomalla energia päästökertoimella.
+**Kaava:** $m = e \cdot E$
+**Muunnokset:** Kilowattitunnit supistuvat, joten tulos tulee grammoina. Grammat muutetaan kilogrammoiksi: $1\,\text{g} = 0{,}001\,\text{kg}$.
+**Sijoitus:** $m = 12\,\text{g/kWh} \cdot 40\,000\,\text{kWh} = 480\,000\,\text{g} = 480\,000 \cdot 0{,}001\,\text{kg} = 480\,\text{kg}$
+**Vastaus:** $480\,\text{kg}$, kaksi merkitsevää numeroa kuten päästökertoimessa $12\,\text{g/kWh}$.
+**Järkevyys:** Pyöristetyillä luvuilla $10\,\text{g/kWh} \cdot 40\,000\,\text{kWh} = 400\,000\,\text{g} = 400\,\text{kg}$, lähellä tulosta. Sama sähkö kivihiilellä antaisi $820\,\text{g/kWh} \cdot 40\,000\,\text{kWh} = 32\,800\,000\,\text{g} = 32\,800\,\text{kg}$, noin $68$ kertaa enemmän ($820 : 12 \approx 68$).
+
+## fy2-8-L2-05
+**Annettu:** pitoisuus vuonna $2000$ on $c_1 = 369{,}7\,\text{ppm}$ ja vuonna $2020$ $c_2 = 414{,}2\,\text{ppm}$; malli on suora jaksolla $2000$–$2020$
+**Kysytty:** pitoisuuden keskimääräinen kasvunopeus $k$ yksikössä $\text{ppm/a}$
+**Periaate:** Jos pitoisuus kasvaa tasaisesti, kasvunopeus on suoran kulmakerroin, eli pitoisuuden muutos jaettuna ajan muutoksella. Taulukon välivuodet ($2005$, $2010$, $2015$) eivät muuta tulosta, jos pisteet ovat lähes samalla suoralla.
+**Kuvaajan lukeminen:** Piirretty pistejoukko $(t, c)$ nousee lähes suoraan; kulmakertoimeen käytetään ääripisteitä $(2000;\ 369{,}7)$ ja $(2020;\ 414{,}2)$, jotka ovat kaukana toisistaan.
+**Kaava:** $k = \dfrac{\Delta c}{\Delta t} = \dfrac{c_2 - c_1}{t_2 - t_1}$
+**Muunnokset:** Ei tarvita: pitoisuus on ppm-yksikössä ja aika vuosina.
+**Sijoitus:** $\Delta c = 414{,}2\,\text{ppm} - 369{,}7\,\text{ppm} = 44{,}5\,\text{ppm}$ ja $\Delta t = 2020\,\text{a} - 2000\,\text{a} = 20\,\text{a}$, joten $k = 44{,}5\,\text{ppm} : 20\,\text{a} = 2{,}225\,\text{ppm/a}$
+**Vastaus:** $k \approx 2{,}2\,\text{ppm/a}$, kaksi merkitsevää numeroa.
+**Järkevyys:** Välillä $2000$–$2005$ kasvu on $10{,}1\,\text{ppm}$ eli noin $2{,}0\,\text{ppm/a}$ ja välillä $2015$–$2020$ $13{,}4\,\text{ppm}$ eli noin $2{,}7\,\text{ppm/a}$, joten keskiarvo $2{,}2\,\text{ppm/a}$ on näiden välissä. Tarkistus: $20\,\text{a} \cdot 2{,}2\,\text{ppm/a} = 44\,\text{ppm}$, lähellä muutosta $44{,}5\,\text{ppm}$.
+
+## fy2-8-L2-06
+**Annettu:** päästöt $\text{Mt}$ vuonna $2010$: $30$, $12$, $10$, $6$ ja $3$; vuonna $2020$: $18$, $10$, $9$, $6$ ja $2$
+**Kysytty:** a) kokonaispäästöt $m_{2010}$ ja $m_{2020}$; b) kokonaispäästöjen pieneneminen prosentteina
+**Periaate:** Kokonaispäästö on sektorien päästöjen summa. Suhteellinen muutos on muutos jaettuna alkuperäisellä arvolla, ja se ilmoitetaan prosentteina kertomalla sadalla.
+**Kaava:** $m = m_1 + m_2 + \dots$ ja pieneneminen prosentteina on $\dfrac{m_{2010} - m_{2020}}{m_{2010}} \cdot 100\,\%$
+**Muunnokset:** Ei tarvita: kaikki päästöt ovat yksikössä $\text{Mt}$.
+**Sijoitus:** a) Vuoden $2010$ summa on $30 + 12 + 10 + 6 + 3 = 61$, joten $m_{2010} = 61\,\text{Mt}$. Vuoden $2020$ summa on $18 + 10 + 9 + 6 + 2 = 45$, joten $m_{2020} = 45\,\text{Mt}$. b) Muutos on $61\,\text{Mt} - 45\,\text{Mt} = 16\,\text{Mt}$, ja $\dfrac{16}{61} \cdot 100\,\% = 26{,}2\,\%$.
+**Vastaus:** a) $61\,\text{Mt}$ ja $45\,\text{Mt}$. b) Kokonaispäästöt pienenivät noin $26\,\%$, kaksi merkitsevää numeroa.
+**Järkevyys:** Neljännes luvusta $61$ on noin $15$, ja muutos $16$ on vähän sen yli, joten noin $26\,\%$ on uskottava. Suurin osa pienenemisestä tuli energiantuotannosta ($12\,\text{Mt}$ eli $75\,\%$ muutoksesta $16\,\text{Mt}$), kun maatalouden päästö ei muuttunut lainkaan.
+
+## fy2-8-L2-07
+**Kysytty:** mikä virhe opiskelijan laskussa on.
+**Periaate:** Päästö on päästökerroin kertaa energia, $m = e \cdot E$. Kun kerroin on yksikössä $\text{g/kWh}$ ja energia kilowattitunteina, kilowattitunnit supistuvat ja tulos on grammoina. Tulos muutetaan kilogrammoiksi kertomalla luvulla $0{,}001$.
+**Mallivastaus:** Kertolasku $820 \cdot 2{,}0 = 1640$ on oikein, mutta tulos on grammoina. Opiskelija kirjoitti yksiköksi kilogramman unohtaen muunnoksen, joten vastaus on tuhatkertainen. Oikea päästö on $1640\,\text{g} = 1640 \cdot 0{,}001\,\text{kg} = 1{,}64\,\text{kg}$ eli noin $1{,}6\,\text{kg}$. Tulos on järkevä myös arviolla: kaksi kilowattituntia kivihiilellä tuottaa alle kaksi kilogrammaa, ei puolitoista tonnia.
+
+## fy2-8-L3-04
+**Annettu:** pitoisuudet $c_{1960} = 316{,}9\,\text{ppm}$, $c_{1980} = 338{,}8\,\text{ppm}$, $c_{2000} = 369{,}7\,\text{ppm}$ ja $c_{2020} = 414{,}2\,\text{ppm}$
+**Kysytty:** a) kasvunopeus kullakin $20$ vuoden jaksolla; b) ennuste vuodelle $2040$ viimeisen jakson kasvunopeudella; c) vertailu koko aineiston kasvunopeudella ja perustelu
+**Periaate:** Kasvunopeus on pitoisuuden muutos jaettuna ajan muutoksella, eli suoran kulmakerroin. Suora ennuste jatkaa kasvunopeutta pisteestä $2020$. Jos kasvunopeus muuttuu jaksosta toiseen, yksi suora ei kuvaa koko aineistoa, ja ennusteen uskottavuus riippuu siitä, kuinka hyvin kasvunopeus pysyy samana.
+**Kuvaajan lukeminen:** Pisteet $(t, c)$ eivät ole samalla suoralla, vaan käyrä jyrkkenee: jokainen jakso nousee enemmän kuin edellinen.
+**Kaava:** $k = \dfrac{\Delta c}{\Delta t}$ ja ennuste $c(2040) = c_{2020} + k \cdot \Delta t$
+**Muunnokset:** Ei tarvita: pitoisuus on ppm-yksikössä ja aika vuosina.
+**Sijoitus:** a) $k_{1960-1980} = (338{,}8 - 316{,}9)\,\text{ppm} : 20\,\text{a} = 21{,}9\,\text{ppm} : 20\,\text{a} \approx 1{,}1\,\text{ppm/a}$, $k_{1980-2000} = (369{,}7 - 338{,}8)\,\text{ppm} : 20\,\text{a} = 30{,}9\,\text{ppm} : 20\,\text{a} \approx 1{,}5\,\text{ppm/a}$ ja $k_{2000-2020} = (414{,}2 - 369{,}7)\,\text{ppm} : 20\,\text{a} = 44{,}5\,\text{ppm} : 20\,\text{a} = 2{,}225\,\text{ppm/a}$. b) Ennuste on $c(2040) = 414{,}2\,\text{ppm} + 2{,}225\,\text{ppm/a} \cdot 20\,\text{a} = 414{,}2\,\text{ppm} + 44{,}5\,\text{ppm} = 458{,}7\,\text{ppm}$. c) Koko aineiston kasvunopeus on $k = (414{,}2 - 316{,}9)\,\text{ppm} : 60\,\text{a} = 97{,}3\,\text{ppm} : 60\,\text{a} \approx 1{,}62\,\text{ppm/a}$, ja ennuste on $414{,}2\,\text{ppm} + 1{,}62\,\text{ppm/a} \cdot 20\,\text{a} \approx 414{,}2\,\text{ppm} + 32{,}4\,\text{ppm} = 446{,}6\,\text{ppm}$.
+**Vastaus:** b) Ennuste vuodelle $2040$ on noin $459\,\text{ppm}$, kolme merkitsevää numeroa. c) Koko aineiston suora antaisi noin $447\,\text{ppm}$, eli $12\,\text{ppm}$ vähemmän.
+**Järkevyys:** Viimeisen jakson muutos $44{,}5\,\text{ppm}$ on ollut jo ensimmäisen jakson muutosta $21{,}9\,\text{ppm}$ kaksi kertaa suurempi ($44{,}5 : 21{,}9 \approx 2{,}0$). Ennuste $459\,\text{ppm}$ on suurempi kuin nykyinen $414{,}2\,\text{ppm}$, kuten kasvavan pitoisuuden pitääkin.
+**Johtopäätös:** Kasvunopeus on kasvanut joka jaksolla ($1{,}1$, $1{,}5$ ja $2{,}2\,\text{ppm/a}$), eli kasvu kiihtyy. Siksi koko aineiston keskimääräinen kasvunopeus aliarvioi nykyistä kasvua, ja viimeisen jakson suora on uskottavampi ennuste. Silti sekin voi aliarvioida, jos kasvu jatkaa kiihtymistä, ja yliarvioida, jos päästöt alkavat vähentyä. Suora on malli, jonka voi uskoa vain lähellä aineiston loppua, eli lähivuosikymmenen ajan. Pitkälle ennustettaessa pitää tietää, mitä päästöille tapahtuu, ei vain jatkaa viivaa.
+
+## fy2-8-L3-05
+**Annettu:** tuotanto $E_\text{hiili} = 40\,\text{GWh}$, $E_\text{kaasu} = 30\,\text{GWh}$, $E_\text{bio} = 20\,\text{GWh}$ ja $E_\text{tuuli} = 10\,\text{GWh}$ vuodessa; päästökertoimet $820$, $490$, $230$ ja $12\,\text{g/kWh}$ (oppitunnin taulukko); kivihiilisähkö korvataan tuulisähköllä, energia pysyy samana
+**Kysytty:** a) nykyinen kokonaispäästö tonneina; b) päästön pieneneminen prosentteina; c) perustelu, miksi pitoisuus voi kasvaa vielä päästöjen vähennyttyä, ja yksi asia, jota päästökerroin ei kerro
+**Periaate:** Jokaisen tuotantotavan päästö on päästökerroin kertaa energia, $m = e \cdot E$, ja kokonaispäästö on näiden summa. Suunnitelmassa kivihiilen $40\,\text{GWh}$ tuotetaan tuulivoimalla, joten sen päästökerroin vaihtuu arvoon $12\,\text{g/kWh}$. Pieneneminen suhteutetaan nykyiseen päästöön.
+**Kaava:** $m = e \cdot E$, $m_\text{yht} = m_1 + m_2 + \dots$ ja pieneneminen prosentteina on $\dfrac{m_\text{nyt} - m_\text{uusi}}{m_\text{nyt}} \cdot 100\,\%$
+**Muunnokset:** $1\,\text{GWh} = 10^6\,\text{kWh}$, joten $40\,\text{GWh} = 40 \cdot 10^6\,\text{kWh}$. Grammat muutetaan tonneiksi: $1\,\text{g} = 10^{-6}\,\text{t}$.
+**Sijoitus:** a) Kivihiili: $820\,\text{g/kWh} \cdot 40 \cdot 10^6\,\text{kWh} = 32{,}8 \cdot 10^9\,\text{g} = 32\,800\,\text{t}$. Maakaasu: $490 \cdot 30 \cdot 10^6\,\text{g} = 14\,700\,\text{t}$. Biomassa: $230 \cdot 20 \cdot 10^6\,\text{g} = 4600\,\text{t}$. Tuulivoima: $12 \cdot 10 \cdot 10^6\,\text{g} = 120\,\text{t}$. Summa on $32\,800\,\text{t} + 14\,700\,\text{t} + 4600\,\text{t} + 120\,\text{t} = 52\,220\,\text{t}$. b) Kivihiilen tilalle tuleva tuulisähkö: $12 \cdot 40 \cdot 10^6\,\text{g} = 480\,\text{t}$. Uusi summa on $480\,\text{t} + 14\,700\,\text{t} + 4600\,\text{t} + 120\,\text{t} = 19\,900\,\text{t}$. Pieneneminen on $52\,220\,\text{t} - 19\,900\,\text{t} = 32\,320\,\text{t}$, ja $\dfrac{32\,320}{52\,220} \cdot 100\,\% = 61{,}9\,\%$.
+**Vastaus:** a) noin $52\,000\,\text{t}$ vuodessa. b) Päästöt pienenevät noin $62\,\%$, kaksi merkitsevää numeroa.
+**Järkevyys:** Kivihiilen osuus nykyisestä päästöstä on $32\,800 : 52\,220 = 0{,}63$, ja kun se korvataan lähes päästöttömällä sähköllä, päästö pienenee juuri tämän osuuden verran, vähän vähemmän ($62\,\%$), koska tuulisähköllä on pieni päästö $480\,\text{t}$. Kivihiili tuottaa $40\,\%$ energiasta mutta $63\,\%$ päästöstä.
+**Johtopäätös:** c) Hiilidioksidi pysyy ilmakehässä kymmeniä ja satoja vuosia, koska luonnon nielut (meret ja kasvillisuus) sitovat vain osan päästöistä. Pitoisuus kasvaa niin kauan kuin päästöt ovat suurempia kuin nielujen sitoma määrä. Päästöjen pieneneminen hidastaa kasvua mutta ei käännä pitoisuutta laskuun heti, ja ilmaston lämpeneminen jatkuu viiveellä. Päästökerroin ei kerro esimerkiksi sitä, että tuulisähkö riippuu säästä: tarvitaan säätövoimaa tai varastointia, kun ei tuule. Myös maankäyttö, maisemavaikutukset ja sähkön saatavuus punnitaan erikseen.

@@ -40,6 +40,52 @@
    "answer": 60,
    "unit": "kWh",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy2-7-L1-06",
+   "level": 1,
+   "text": "Miksi sähköenergia siirretään kantaverkossa korkealla jännitteellä?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Samaan tehoon riittää pienempi virta, joten johtimet lämpenevät vähemmän ja häviö pienenee.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Korkea jännite lisää voimalaitoksen tuottamaa energiaa, joten häviöillä ei ole väliä.",
+     "feedback": "Jännite ei lisää energiaa. Muuntaja muuttaa jännitettä, mutta energiaa se ei tuota, ja häviöt pienennetään siksi, että niitä on muuten paljon."
+    },
+    {
+     "text": "Samaan tehoon riittää pienempi virta, joten johtimet lämpenevät vähemmän ja häviö pienenee.",
+     "feedback": "Oikein: kun jännite on korkea, sama teho siirtyy pienemmällä virralla. Pienempi virta lämmittää johtimia vähemmän, joten siirrossa muuttuu vähemmän sähköenergiaa lämmöksi.",
+     "correct": true
+    },
+    {
+     "text": "Korkealla jännitteellä energia ei muutu matkalla lämmöksi lainkaan, joten häviötä ei synny.",
+     "feedback": "Häviö pienenee mutta ei häviä kokonaan: sähköverkossa häviää silti noin $4\\,\\%$ lähtevästä energiasta, koska virta lämmittää johtimia aina jonkin verran."
+    },
+    {
+     "text": "Korkea jännite saa sähkön kulkemaan johdossa nopeammin, joten lämpöä ehtii syntyä vähemmän.",
+     "feedback": "Häviön syy on johtimen lämpeneminen virran kulkiessa, ei kulkuaika. Korkea jännite auttaa siksi, että virta on pienempi."
+    }
+   ]
+  },
+  {
+   "id": "fy2-7-L1-07",
+   "level": 1,
+   "text": "Alueen sähköverkkoon lähtee vuorokaudessa $250\\,\\text{MWh}$ sähköenergiaa, ja käyttäjille asti tulee $238\\,\\text{MWh}$. Kuinka suuri osa lähtevästä energiasta häviää? Anna vastaus prosentteina.",
+   "answer": 4.8,
+   "unit": "%",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy2-7-L1-08",
+   "level": 1,
+   "text": "Kaukolämpöputkeen lähtee lämpölaitokselta teho $800\\,\\text{kW}$, ja kiinteistölle asti tulee teho $728\\,\\text{kW}$. Kuinka suuri teho häviää putkessa? Anna vastaus kilowatteina.",
+   "answer": 72,
+   "unit": "kW",
+   "tolerance": 0.02
   }
  ],
  "level2": [
@@ -74,6 +120,116 @@
    "answer": 1200,
    "unit": "kWh",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy2-7-L2-05",
+   "level": 2,
+   "text": "Taulukossa on esimerkkiaineisto kaupunginosan kaukolämpöverkosta: lämpölaitoksen verkkoon syöttämä ja asiakkaille asti tullut lämpöenergia neljänä kuukautena.\n\na) Laske häviön osuus verkkoon syötetystä energiasta koko jaksolla. Anna vastaus prosentteina.\n\nb) Laske häviön osuus kuukausittain ja kerro, missä kuussa se on suurin. Esitä mahdollinen selitys.",
+   "kind": [
+    "data",
+    "reasoning"
+   ],
+   "answer": 9.6,
+   "unit": "%",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Kaukolämpöverkkoon syötetty ja perille tullut lämpöenergia (esimerkkiaineisto)",
+    "columns": [
+     "Kuukausi",
+     "$E_\\text{lähtö}\\,(\\text{MWh})$",
+     "$E_\\text{perille}\\,(\\text{MWh})$"
+    ],
+    "rows": [
+     [
+      "tammikuu",
+      "820",
+      "745"
+     ],
+     [
+      "helmikuu",
+      "760",
+      "692"
+     ],
+     [
+      "maaliskuu",
+      "640",
+      "577"
+     ],
+     [
+      "huhtikuu",
+      "430",
+      "381"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy2-7-L2-06",
+   "level": 2,
+   "text": "Taulukossa on esimerkkiaineisto: samalla voimalinjalla siirretään sähkötehoa $100\\,\\text{MW}$, ja häviöteho mitataan eri jännitteillä.\n\na) Päättele taulukosta, miten häviöteho muuttuu, kun jännite kaksinkertaistetaan, ja arvioi häviöteho jännitteellä $320\\,\\text{kV}$. Anna vastaus megawatteina.\n\nb) Perustele lyhyesti kirjallisesti, miksi suurjännite vähentää häviötä.",
+   "kind": [
+    "data",
+    "reasoning"
+   ],
+   "answer": 0.0625,
+   "unit": "MW",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Voimalinjan häviöteho eri jännitteillä, siirretty teho $100\\,\\text{MW}$ (esimerkkiaineisto)",
+    "columns": [
+     "$U\\,(\\text{kV})$",
+     "$P_\\text{häviö}\\,(\\text{MW})$"
+    ],
+    "rows": [
+     [
+      "20",
+      "16"
+     ],
+     [
+      "40",
+      "4.0"
+     ],
+     [
+      "80",
+      "1.0"
+     ],
+     [
+      "160",
+      "0.25"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy2-7-L2-07",
+   "level": 2,
+   "text": "Oppilas kirjoittaa: \"Sähkö kulkee johtoa pitkin valon nopeudella, joten sähkön siirrossa ei synny häviöitä.\" Mikä seuraavista korjaa väitteen oikein?",
+   "kind": [
+    "error",
+    "concept"
+   ],
+   "answer": "Nopeus ei kerro häviöistä: virta lämmittää johdinta, ja osa sähköenergiasta muuttuu lämmöksi.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Väite on oikein, koska nopeasti siirtyvä energia ei ehdi muuttua miksikään muuksi.",
+     "feedback": "Häviön syy ei ole siirtymisen kesto. Kun virta kulkee johtimessa, johdin lämpenee ja osa sähköenergiasta muuttuu lämmöksi, vaikka siirtyminen on nopeaa."
+    },
+    {
+     "text": "Nopeus ei kerro häviöistä: virta lämmittää johdinta, ja osa sähköenergiasta muuttuu lämmöksi.",
+     "feedback": "Oikein: häviö syntyy, kun virta lämmittää johtimia, ja tämä lämpö ei tule käyttäjälle. Siksi perille tulee vähemmän energiaa kuin lähtee.",
+     "correct": true
+    },
+    {
+     "text": "Sähkö kulkee johdossa hitaasti, joten matkalla ehtii syntyä häviöitä.",
+     "feedback": "Häviö ei riipu siitä, kuinka nopeasti sähköenergia siirtyy. Se riippuu siitä, kuinka paljon johdin lämpenee virran kulkiessa."
+    },
+    {
+     "text": "Häviöitä syntyy, koska osa energiasta katoaa matkalla olemattomiin.",
+     "feedback": "Energia ei katoa. Häviöenergia muuttuu lämmöksi ympäristöön, mutta käyttäjä ei saa sitä hyötyyn."
+    }
+   ]
   }
  ],
  "level3": [
@@ -100,6 +256,94 @@
    "answer": 66,
    "unit": "kpl",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy2-7-L3-04",
+   "level": 3,
+   "text": "Taulukossa on esimerkkiaineisto omakotitalon lämpöhäviöiden keskitehosta lämmityskauden aikana rakenneosittain. Talon lämpö tulee kaukolämpöverkosta, jonka häviö on $9{,}0\\,\\%$ lähtevästä energiasta. Lämmityskausi on $5000\\,\\text{h}$. Harkitaan kolmea parannusta: A) ulkoseinien eristys pienentää seinien häviötehoa $50\\,\\%$, B) ikkunoiden uusiminen pienentää ikkunoiden häviötehoa $40\\,\\%$ ja C) yläpohjan lisäeristys pienentää yläpohjan häviötehoa $60\\,\\%$.\n\na) Laske kunkin parannuksen talossa säästämä lämpöenergia lämmityskaudessa ja valitse eniten säästävä parannus.\n\nb) Kuinka paljon vähemmän energiaa lämpölaitoksen on syötettävä verkkoon lämmityskaudessa, kun talo toteuttaa tämän parannuksen? Anna vastaus megawattitunteina.\n\nc) Perustele kirjallisesti valintasi ja se, miksi lämpölaitoksen säästö on suurempi kuin talon säästö.",
+   "kind": [
+    "data",
+    "reasoning"
+   ],
+   "answer": 6.6,
+   "unit": "MWh",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Talon lämpöhäviöiden keskiteho lämmityskaudella (esimerkkiaineisto)",
+    "columns": [
+     "Rakenneosa",
+     "$P_\\text{häviö}\\,(\\text{kW})$"
+    ],
+    "rows": [
+     [
+      "ulkoseinät",
+      "2.4"
+     ],
+     [
+      "yläpohja",
+      "1.5"
+     ],
+     [
+      "ikkunat",
+      "1.8"
+     ],
+     [
+      "alapohja",
+      "0.9"
+     ],
+     [
+      "ilmanvaihto",
+      "1.4"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy2-7-L3-05",
+   "level": 3,
+   "text": "Taulukossa on esimerkkiaineisto alueen sähköverkon vuorokaudesta: verkkoon syötetty keskiteho ja häviön osuus jakson aikana syötetystä energiasta.\n\na) Laske vuorokauden aikana verkkoon syötetty energia ja siinä häviävä energia. Kuinka suuri osa koko vuorokauden syötetystä energiasta häviää? Anna vastaus prosentteina.\n\nb) Vertaa tulosta Suomen sähköverkon noin $4\\,\\%$:n häviöön (Energiateollisuus, 2024).\n\nc) Millä jaksolla häviävä energia on suurin? Perustele kirjallisesti, miksi häviön osuus kasvaa, kun verkkoa kuormitetaan enemmän.",
+   "kind": [
+    "data",
+    "model"
+   ],
+   "answer": 4.7,
+   "unit": "%",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Sähköverkon syöttöteho ja häviön osuus vuorokauden jaksoilla (esimerkkiaineisto)",
+    "columns": [
+     "Jakso (klo)",
+     "$t\\,(\\text{h})$",
+     "$P_\\text{lähtö}\\,(\\text{MW})$",
+     "$p\\,(\\%)$"
+    ],
+    "rows": [
+     [
+      "00–07",
+      "7",
+      "18",
+      "1.5"
+     ],
+     [
+      "07–12",
+      "5",
+      "42",
+      "3.5"
+     ],
+     [
+      "12–19",
+      "7",
+      "50",
+      "4.5"
+     ],
+     [
+      "19–24",
+      "5",
+      "66",
+      "7.0"
+     ]
+    ]
+   }
   }
  ]
 }
