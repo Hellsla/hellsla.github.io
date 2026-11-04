@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b57c3875fe94cbd2
-Mode: delta (en lesson wording change in inquiry.json)
-Round 2
+CONTENT-HASH: dd5ef8e8ac0b3ebe
+Mode: delta (merge of the ev-battery-cells.webp photo and the shortened en experiment titles)
 
 ## Blocking
 (none)
 
 ## Polish
-- (Minor) Fixed: slider label 'Resistance of charger and wires R = ...' fits 360 px on one line (sim-390); same wording in the experiment names.
-- (Minor) Figure 13 label 'stored in the battery' is clearly within its box.
+- (Minor) The photo is sourced before the "Charge alone does not tell the energy" heading but renders beside/under that heading's first paragraph; it sits next to the paragraph about energy per cell, so it reads correctly.
 
 ## Checked
-- Recaptured en shots; contact sheets, sim at 390 px, experiments 1 to 3, figures 5, 7, 9, 11, 13, hero: no overflow, maths renders, no Finnish left.
-- Re-review: fy6-9-sim-390.png and fy6-9-sim-1280.png show the charger voltage on the circuit canvas as U_ch (earlier blocking U_lat finding resolved by the lang keys sims.fy6-9.ulat_lab / ulat_eq); sliders, readouts and canvas all read U_ch, nothing overflows or clips at either width.
+- Fresh en captures (84 + contact sheets); contact-4 and 1280 theory tiles 1-3: photo floats right at 1280 beside the "Charge alone" paragraph, caption and credit (RudolfSimon, CC BY-SA 3.0) readable, no overlap with figures 7 or 9.
+- Own captures at 360 and 390 px (page scrollWidth equals viewport): photo stacks full column width (about 317 px, 224 px high) under the capacity graph, caption below; the inline formula "3.7 V · 60 Ah ≈ 220 Wh" stays on one line at 360 px. First capture showed a blank gap only because the image is lazy-loaded; after load it is complete (1600 px natural width).
+- Experiment titles (koe-1, koe-2, conclusion): scrollWidth equals clientWidth at 360, 390 and 1280 px, no clipping; exp captures at 390 px (#38-#43) wrap the titles on two lines inside the card.
+- Maths in caption and surrounding text renders with KaTeX, no red source; alt text describes the photo.
 
 ## Scores
 illustrations 4 · typography 4 · English 4 · accessibility 4
-- Re-review after the concept-review commit: howto wording (electrical energy transformed into internal energy), efficiency paragraph (often below 100 %, charging always, R and R_s), L3-03 sisäenergiaksi, matching the Finnish; no numbers changed; $ counts equal.
-- Delta re-review: slider label for R is shorter ('charger and wire resistance'), the intended 360 px overflow fix; wording only, no numbers or symbols changed; layout of the sim panel is not harmed by the shorter text (it is shorter than the earlier label that already fit at 390 px).
