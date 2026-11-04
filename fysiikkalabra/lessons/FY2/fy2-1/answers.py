@@ -18,12 +18,12 @@ a["fy2-1-L2-03"] = 0.36 * 1000                       # swing: all of E_p = 0,36 
 a["fy2-1-L2-04"] = (360 - 331) * 1000                # kettle: 360 kJ − 331 kJ = 29 kJ = 29 000 J
 a["fy2-1-L2-05"] = 100 * 36.0 / (36.0 + 10.5 + 9.0 + 4.5)   # home: total 60,0 GJ, heating share 60 %
 a["fy2-1-L2-06"] = 100 - 80                          # perpetual-motion claim: 100 J from the generator − 80 J to the pump = 20 J created
-a["fy2-1-L2-07"] = (720 - 36) - (720 - 180)          # filament 684 kJ thermal, LED 540 kJ -> 144 kJ more
+a["fy2-1-L2-07"] = (216 - 11) - (216 - 54)            # filament 205 kJ thermal, LED 162 kJ -> 43 kJ more
 # Level 3: reasoning or an unfamiliar context
 a["fy2-1-L3-01"] = (900 - 0 - 750) - (900 - 400 - 480)   # thermal at C 150 J, at B 20 J -> 130 J between B and C
 a["fy2-1-L3-02"] = (5.00 - 4.00) - (4.00 - 3.20)     # thermal in bounce 1: 1,00 J, in bounce 2: 0,80 J -> 0,20 J more in the first
-a["fy2-1-L3-04"] = 100 * (290 + 100 + 80) / (380 + 290 + 230 + 120 + 100 + 80)   # fossil 470 PJ of 1200 PJ -> 39 %
-# (per resident: 1200 PJ = 1,2e9 GJ over 5,5e6 people = 218 GJ, shown in the solution)
+a["fy2-1-L3-04"] = 100 * (290 + 100 + 80) / (380 + 290 + 230 + 120 + 100 + 80)   # fossil 470 PJ of 1200 PJ -> 39,2 %
+# (per resident: 1200 PJ = 1,2e9 GJ over 5,5e6 people = 218 GJ; c) replace > 470 - 1200/3 = 70 PJ, shown in the solution)
 a["fy2-1-L3-05"] = (5.00 - 0.80) + (0.80 - 0.64) + (0.64 - 0.56) + (0.56 - 0.14)   # thermal per step 4,20+0,16+0,08+0,42 = 4,86 MJ
 # fy2-1-L3-03 is answered in words (forms in a nuclear plant, where the other two thirds go): no number
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

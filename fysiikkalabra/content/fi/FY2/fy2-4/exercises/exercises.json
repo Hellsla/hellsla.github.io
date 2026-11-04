@@ -129,16 +129,16 @@
     {
       "id": "fy2-4-L2-05",
       "level": 2,
-      "text": "Eri lamppujen sähköteho $P_\\text{o}$ ja niiden antama valoteho $P_\\text{a}$ mitattiin. Laske jokaisen lampun hyötysuhde. Kuinka moninkertainen ledilampun hyötysuhde on halogeenilampun hyötysuhteeseen verrattuna?",
+      "text": "Esimerkkimittauksessa mitattiin eri lamppujen sähköteho $P_\\text{o}$ ja niiden antama valoteho $P_\\text{a}$. Laske jokaisen lampun hyötysuhde. Kuinka moninkertainen ledilampun hyötysuhde on halogeenilampun hyötysuhteeseen verrattuna?",
       "kind": [
         "data",
         "reasoning"
       ],
-      "answer": 3.0,
+      "answer": 4.3,
       "unit": "kertaa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Lamppujen sähköteho ja valoteho",
+        "caption": "Esimerkkimittaus: lamppujen sähköteho ja valoteho",
         "columns": [
           "Lamppu",
           "$P_\\text{o}\\,(\\text{W})$",
@@ -152,8 +152,8 @@
           ],
           [
             "Halogeenilamppu",
-            "42",
-            "4.2"
+            "40",
+            "2.8"
           ],
           [
             "Loistelamppu",
@@ -171,7 +171,7 @@
     {
       "id": "fy2-4-L2-06",
       "level": 2,
-      "text": "Sähkömoottorin käyntiä seurattiin $40\\,\\text{s}$ ajan. Sähkömittari näytti moottoriin otetun sähköenergian $E_\\text{o}$ ja anturi moottorin antaman liike-energian $E_\\text{a}$, kun moottori käy tasaisesti. Määritä moottorin hyötysuhde prosentteina.",
+      "text": "Esimerkkimittauksessa sähkömoottorin käyntiä seurattiin $40\\,\\text{s}$ ajan. Sähkömittari näytti moottoriin otetun sähköenergian $E_\\text{o}$ ja anturi moottorin antaman liike-energian $E_\\text{a}$, kun moottori käy tasaisesti. Laske hyötysuhde jokaiselta nollasta poikkeavalta riviltä ja määritä niiden perusteella moottorin hyötysuhde prosentteina.",
       "kind": [
         "data",
         "experiment"
@@ -180,7 +180,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Moottorin ottama ja antama energia",
+        "caption": "Esimerkkimittaus: moottorin ottama ja antama energia",
         "columns": [
           "$t\\,(\\text{s})$",
           "$E_\\text{o}\\,(\\text{kJ})$",
@@ -276,7 +276,7 @@
     {
       "id": "fy2-4-L3-04",
       "level": 3,
-      "text": "Sähköauto ottaa akusta energiaa $17\\,\\text{kWh}$ sadan kilometrin matkalla, ja sen moottorin ja voimansiirron yhteenlaskettu hyötysuhde on $90\\,\\%$. Bensiiniauto kuluttaa sadalla kilometrillä bensiiniä $6{,}0\\,\\textsf{l}$, ja bensiinin energiasisältö on $32\\,\\text{MJ/l}$. Bensiinimoottorin hyötysuhde on $25\\,\\%$. Muuta bensiiniauton tankista ottama energia kilowattitunneiksi ja laske, kuinka moninkertainen se on sähköauton akusta ottamaan energiaan verrattuna. Laske myös kummankin auton hyötyenergia sadalla kilometrillä ja perustele niiden avulla, miksi autojen ottamat energiat eroavat niin paljon. Tarkastelu koskee vain autojen omaa energiankäyttöä: sähkön ja bensiinin tuotantoa ei oteta huomioon.",
+      "text": "Sähköauto ottaa akusta energiaa $17\\,\\text{kWh}$ sadan kilometrin matkalla, ja sen moottorin ja voimansiirron yhteenlaskettu hyötysuhde on $90\\,\\%$. Bensiiniauto kuluttaa sadalla kilometrillä bensiiniä $6{,}0\\,\\textsf{l}$, ja bensiinin energiasisältö on $32\\,\\text{MJ/l}$. Bensiinimoottorin hyötysuhde on $25\\,\\%$.\n\nMuuta bensiiniauton tankista ottama energia kilowattitunneiksi ja laske, kuinka moninkertainen se on sähköauton akusta ottamaan energiaan verrattuna. Laske myös kummankin auton hyötyenergia sadalla kilometrillä ja perustele niiden avulla, miksi autojen ottamat energiat eroavat niin paljon. Tarkastelu koskee vain autojen omaa energiankäyttöä: sähkön ja bensiinin tuotantoa ei oteta huomioon.",
       "kind": [
         "model",
         "reasoning"
@@ -288,17 +288,17 @@
     {
       "id": "fy2-4-L3-05",
       "level": 3,
-      "text": "Oppilas mittasi ledilampun energian muuttumista. Sähkömittari näytti lampun ottaman sähköenergian $E_\\text{o}$, ja lämpömittaus antoi lampusta ympäristöön siirtyneen lämpöenergian $E_\\text{h}$. Oppilas päätteli: \"Viimeisellä rivillä $\\eta = \\dfrac{E_\\text{h}}{E_\\text{o}} = \\dfrac{1510\\,\\text{J}}{2160\\,\\text{J}} = 0{,}70 = 70\\,\\%$, joten lampun hyötysuhde on $70\\,\\%$.\" Etsi oppilaan virhe ja laske lampun oikea hyötysuhde prosentteina. Perustele tulos energian säilymisellä ja vertaa sitä ledilampun tyypilliseen hyötysuhteeseen.",
+      "text": "Esimerkkimittauksessa oppilas seurasi ledilampun energian muuttumista. Sähkömittari näytti lampun ottaman sähköenergian $E_\\text{o}$, ja lämpömittaus antoi lampusta ympäristöön siirtyneen lämpöenergian $E_\\text{h}$. Lamppu käy tasaisella teholla. Oppilas päätteli: ”Viimeisellä rivillä $\\eta = \\dfrac{E_\\text{h}}{E_\\text{o}} = \\dfrac{1510\\,\\text{J}}{2160\\,\\text{J}} = 0{,}70 = 70\\,\\%$, joten lampun hyötysuhde on $70\\,\\%$.”\n\nEtsi oppilaan virhe ja laske lampun oikea hyötysuhde prosentteina. Lamppu palaa kotona $3{,}0\\,\\text{h}$ vuorokaudessa koko vuoden ($365$ vuorokautta). Määritä taulukon avulla lampun ottama teho ja laske, kuinka suuri sähköenergia muuttuu vuodessa lämmöksi. Anna vastaus kilowattitunteina. Laske myös lämmöksi muuttuvan sähkön hinta, kun sähkön hinta on $0{,}20\\,\\text{€/kWh}$. Perustele, miksi oppilaan $70\\,\\%$ on silti hyödyllinen luku tähän laskuun.",
       "kind": [
         "data",
-        "experiment",
+        "model",
         "error"
       ],
-      "answer": 30.09,
-      "unit": "%",
+      "answer": 6.9,
+      "unit": "kWh",
       "tolerance": 0.03,
       "data": {
-        "caption": "Ledilampun ottama sähköenergia ja lämmöksi muuttunut energia",
+        "caption": "Esimerkkimittaus: ledilampun ottama sähköenergia ja lämmöksi muuttunut energia",
         "columns": [
           "$t\\,(\\text{s})$",
           "$E_\\text{o}\\,(\\text{J})$",

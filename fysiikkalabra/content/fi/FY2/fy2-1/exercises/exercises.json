@@ -92,8 +92,8 @@
           "feedback": "Energia ei katoa. Energian säilymislain mukaan se muuttaa vain muotoa tai siirtyy, ja tässä liike-energia muuttuu lämpöenergiaksi."
         },
         {
-          "text": "Liike-energia kuluu loppuun, mutta kokonaisenergia pysyy silti samana.",
-          "feedback": "Tämä on yleinen virhekäsitys. Jos energia kuluisi loppuun, kokonaisenergia pienenisi. Kuluminen tarkoittaa fysiikassa sitä, että energia muuttuu muotoon, jota on vaikea käyttää hyödyksi, yleensä lämpöenergiaksi."
+          "text": "Liike-energia muuttuu jarruissa lämpöenergiaksi, mutta kokonaisenergia pienenee, koska lämpö siirtyy ympäristöön.",
+          "feedback": "Ympäristö kuuluu systeemiin, joten ympäristöön siirtyvä lämpö ei häviä mihinkään. Energian säilymislain mukaan kokonaisenergia pysyy samana: liike-energia on muuttunut lämpöenergiaksi, joka on jarruissa, renkaissa, tiessä ja ilmassa."
         },
         {
           "text": "Liike-energia on edelleen autossa liike-energiana, vaikka auto on pysähtynyt.",
@@ -149,7 +149,7 @@
     {
       "id": "fy2-1-L2-05",
       "level": 2,
-      "text": "Taulukossa on omakotitalon vuoden energiankulutus käyttökohteittain. Laske, kuinka monta prosenttia tilojen lämmitys on koko kulutuksesta. Mikä käyttökohde olisi suurin säästökohde, ja miksi?",
+      "text": "Taulukossa on esimerkkilukuina omakotitalon vuoden energiankulutus käyttökohteittain. Laske, kuinka monta prosenttia tilojen lämmitys on koko kulutuksesta. Mikä käyttökohde olisi suurin säästökohde, ja miksi?",
       "kind": [
         "data",
         "reasoning"
@@ -198,12 +198,12 @@
     {
       "id": "fy2-1-L2-07",
       "level": 2,
-      "text": "Taulukossa on kolmen lampun yhdessä tunnissa ottama sähköenergia ja sen muuttuminen valoksi. Loppu energia muuttuu lämpöenergiaksi. Kuinka monta kilojoulea enemmän lämpöenergiaa hehkulamppu tuottaa kuin LED-lamppu? Perustele, kumman lampun käyttö on energian kannalta viisaampaa.",
+      "text": "Taulukossa on esimerkkilukuina kolmen lampun yhdessä tunnissa ottama sähköenergia ja sen muuttuminen valoksi; vertailun vuoksi lamput ottavat saman sähköenergian. Loppu energia muuttuu lämpöenergiaksi. Kuinka monta kilojoulea enemmän lämpöenergiaa hehkulamppu tuottaa kuin LED-lamppu? Perustele, kumman lampun käyttö on energian kannalta viisaampaa.",
       "kind": [
         "data",
         "reasoning"
       ],
-      "answer": 144.0,
+      "answer": 43.0,
       "unit": "kJ",
       "tolerance": 0.02,
       "data": {
@@ -216,18 +216,18 @@
         "rows": [
           [
             "Hehkulamppu",
-            "720",
-            "36"
+            "216",
+            "11"
           ],
           [
             "Halogeenilamppu",
-            "720",
-            "90"
+            "216",
+            "16"
           ],
           [
             "LED-lamppu",
-            "720",
-            "180"
+            "216",
+            "54"
           ]
         ]
       }
@@ -261,12 +261,12 @@
     {
       "id": "fy2-1-L3-04",
       "level": 3,
-      "text": "Taulukossa on kuvitteellisen maan vuoden energian kokonaiskulutus lähteittäin (pyöristettyjä esimerkkilukuja, ei oikean maan tilasto). Maassa on $5{,}5 \\cdot 10^{6}$ asukasta. Öljy, kivihiili ja maakaasu ovat fossiilisia polttoaineita. a) Laske fossiilisten polttoaineiden osuus kokonaiskulutuksesta prosentteina. b) Laske kokonaiskulutus asukasta kohti gigajouleina; $1\\,\\text{PJ} = 10^{15}\\,\\text{J}$ ja $1\\,\\text{GJ} = 10^{9}\\,\\text{J}$. c) Selitä energian säilymislain avulla, mitä \"energiaa kulutetaan\" tarkoittaa ja mihin kulutettu energia lopulta päätyy.",
+      "text": "Taulukossa on kuvitteellisen maan vuoden energian kokonaiskulutus lähteittäin (pyöristettyjä esimerkkilukuja, ei oikean maan tilasto). Maassa on $5{,}5 \\cdot 10^{6}$ asukasta. Öljy, kivihiili ja maakaasu ovat fossiilisia polttoaineita.\n\na) Laske fossiilisten polttoaineiden osuus kokonaiskulutuksesta prosentteina.\n\nb) Laske kokonaiskulutus asukasta kohti gigajouleina; $1\\,\\text{PJ} = 10^{15}\\,\\text{J}$ ja $1\\,\\text{GJ} = 10^{9}\\,\\text{J}$.\n\nc) Maa haluaa pudottaa fossiilisten osuuden alle kolmannekseen kokonaiskulutuksesta korvaamalla osan fossiilisesta energiasta vesi- ja tuulivoimalla. Kokonaiskulutus pysyy samana. Kuinka monta petajoulea fossiilista energiaa on vähintään korvattava? Perustele laskulla ja selitä energian säilymislain avulla, miksi kokonaiskulutus voi pysyä samana.",
       "kind": [
         "data",
         "reasoning"
       ],
-      "answer": 39.0,
+      "answer": 39.2,
       "unit": "%",
       "tolerance": 0.02,
       "data": {
@@ -306,7 +306,7 @@
     {
       "id": "fy2-1-L3-05",
       "level": 3,
-      "text": "Pöydän LED-lamppu saa sähkönsä aurinkopaneelista ja akusta. Taulukossa on yhden päivän energiat ketjun vaiheissa: kunkin vaiheen tulo ja hyödyllinen energia, joka siitä lähtee eteenpäin. Seuraavan vaiheen tulo on edellisen vaiheen hyödyllinen energia, ja loppu energia muuttuu vaiheessa lämpöenergiaksi. a) Laske lämpöenergiaksi muuttuva energia jokaisessa vaiheessa ja koko ketjussa yhteensä. b) Missä vaiheessa lämpöenergiaa syntyy eniten, ja kuinka monta prosenttia kaikesta lämpöenergiasta se on? c) Tarkista tulos energian säilymislailla ja selitä, miksi paneeliin tullut säteilyenergia ei ole kulunut loppuun, vaikka lampun valo on vain pieni osa siitä.",
+      "text": "Pöydän LED-lamppu saa sähkönsä aurinkopaneelista ja akusta. Taulukossa on yhden päivän energiat ketjun vaiheissa: kunkin vaiheen tulo ja hyödyllinen energia, joka siitä lähtee eteenpäin. Seuraavan vaiheen tulo on edellisen vaiheen hyödyllinen energia. Mallissa loppu energia muuttuu vaiheessa lämpöenergiaksi tai heijastuu (paneelissa osa valosta heijastuu).\n\na) Laske lämpöenergiaksi muuttuva energia jokaisessa vaiheessa ja koko ketjussa yhteensä.\n\nb) Missä vaiheessa lämpöenergiaa syntyy eniten, ja kuinka monta prosenttia kaikesta lämpöenergiasta se on?\n\nc) Tarkista tulos energian säilymislailla ja selitä, miksi paneeliin tullut säteilyenergia ei ole kulunut loppuun, vaikka lampun valo on vain pieni osa siitä.",
       "kind": [
         "data",
         "model",

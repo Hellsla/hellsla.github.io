@@ -48,25 +48,25 @@
       "kind": [
         "concept"
       ],
-      "answer": "$3\\,200\\,000\\,\\text{J}$",
+      "answer": "$0{,}0033\\,\\text{GJ}$",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
           "text": "$2900\\,\\text{kJ}$",
-          "feedback": "Tämä on $2{,}9\\,\\text{MJ}$, kun $2900\\,\\text{kJ} = 2900 : 1000\\,\\text{MJ}$. Se on pienempi kuin $3{,}2\\,\\text{MJ}$. Suurin luku ei tee suurinta energiaa, jos yksiköt ovat erilaisia."
+          "feedback": "Tämä on $2{,}9\\,\\text{MJ}$, kun $2900\\,\\text{kJ} = 2900 : 1000\\,\\text{MJ}$. Se on pienempi kuin $3{,}3\\,\\text{MJ}$."
         },
         {
           "text": "$3{,}1\\,\\text{MJ}$",
-          "feedback": "Tämä on $3{,}1\\,\\text{MJ}$, mutta $3\\,200\\,000\\,\\text{J} = 3{,}2\\,\\text{MJ}$ on vielä suurempi. Vertailussa energiat muunnetaan ensin samaan yksikköön."
+          "feedback": "Tämä on $3{,}1\\,\\text{MJ}$, mutta $0{,}0033\\,\\text{GJ} = 3{,}3\\,\\text{MJ}$ on vielä suurempi. Vertailussa energiat muunnetaan ensin samaan yksikköön."
         },
         {
-          "text": "$0{,}0028\\,\\text{GJ}$",
-          "feedback": "Tämä on vain $2{,}8\\,\\text{MJ}$, koska $1\\,\\text{GJ} = 1000\\,\\text{MJ}$. Pieni lukuarvo johtuu siitä, että gigajoule on suuri yksikkö."
+          "text": "$3\\,000\\,000\\,\\text{J}$",
+          "feedback": "Tällä on suurin lukuarvo, mutta joule on pieni yksikkö: $3\\,000\\,000\\,\\text{J} = 3{,}0\\,\\text{MJ}$, mikä on pienempi kuin $3{,}3\\,\\text{MJ}$."
         },
         {
-          "text": "$3\\,200\\,000\\,\\text{J}$",
-          "feedback": "Oikein: $3\\,200\\,000\\,\\text{J} = 3200\\,\\text{kJ} = 3{,}2\\,\\text{MJ}$, mikä on suurempi kuin $2{,}9\\,\\text{MJ}$, $3{,}1\\,\\text{MJ}$ ja $2{,}8\\,\\text{MJ}$.",
+          "text": "$0{,}0033\\,\\text{GJ}$",
+          "feedback": "Oikein: $0{,}0033\\,\\text{GJ} = 0{,}0033 \\cdot 1000\\,\\text{MJ} = 3{,}3\\,\\text{MJ}$, mikä on suurempi kuin $2{,}9\\,\\text{MJ}$, $3{,}1\\,\\text{MJ}$ ja $3{,}0\\,\\text{MJ}$.",
           "correct": true
         }
       ]
@@ -86,6 +86,9 @@
       "id": "fy2-2-L1-08",
       "level": 1,
       "text": "Pienen pellettikattilan vuorokaudessa tuottama lämpöenergia on $0{,}35\\,\\text{GJ}$. Ilmoita energia megajouleina.",
+      "kind": [
+        "data"
+      ],
       "answer": 350,
       "unit": "MJ",
       "tolerance": 0.02
@@ -163,7 +166,7 @@
     {
       "id": "fy2-2-L2-06",
       "level": 2,
-      "text": "Oppilas laskee päivän ruoan energian yhteen: aamupala $0{,}85\\,\\text{MJ}$, lounas $1200\\,\\text{kJ}$ ja välipala $450\\,\\text{kJ}$. Hän kirjoittaa: \"$0{,}85 + 1200 + 450 = 1650{,}85\\,\\text{kJ}$.\" Etsi virhe ja laske oikea yhteenlaskettu energia megajouleina. Selitä, miksi oppilaan tulos ei voi olla oikein.",
+      "text": "Oppilas laskee aamupalan, lounaan ja välipalan energian yhteen: aamupala $0{,}85\\,\\text{MJ}$, lounas $1200\\,\\text{kJ}$ ja välipala $450\\,\\text{kJ}$. Hän kirjoittaa: \"$0{,}85 + 1200 + 450 = 1650{,}85\\,\\text{kJ}$.\" Etsi virhe ja laske oikea yhteenlaskettu energia megajouleina. Selitä, miksi oppilaan tulos ei voi olla oikein.",
       "kind": [
         "error"
       ],
@@ -174,7 +177,7 @@
     {
       "id": "fy2-2-L2-07",
       "level": 2,
-      "text": "Koehenkilö käveli eri pituisia matkoja, ja aktiivisuusrannekkeesta luettiin matkan $s$ aikana kulunut energia $E$. Piirrä mittauspisteistä kuvaaja ja sovita pisteisiin suora. Määritä sen kulmakerroin ja laske sen avulla, kuinka pitkän kävelymatkan energia vastaa $1{,}5\\,\\text{MJ}$:n suklaalevyä. Anna vastaus kilometreinä. Mitä kulmakerroin kertoo?",
+      "text": "Esimerkkiaineistossa koehenkilö käveli eri pituisia matkoja, ja aktiivisuusrannekkeesta luettiin matkan $s$ aikana kulunut energia $E$. Piirrä mittauspisteistä kuvaaja ja sovita pisteisiin suora. Määritä sen kulmakerroin ja laske sen avulla, kuinka pitkän kävelymatkan energia vastaa $1{,}5\\,\\text{MJ}$:n suklaalevyä. Anna vastaus kilometreinä. Mitä kulmakerroin kertoo?",
       "kind": [
         "data",
         "graph",

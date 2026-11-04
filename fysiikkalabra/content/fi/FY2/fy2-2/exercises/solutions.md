@@ -122,17 +122,17 @@
 ## fy2-2-L1-06
 **Kysytty:** mikä neljästä eri yksiköissä ilmoitetusta energiasta on suurin.
 **Periaate:** Energioita voi verrata vain samassa yksikössä, koska etuliite on kerroin. Suuri lukuarvo ei kerro suurta energiaa, jos yksikkö on pieni, eikä pieni lukuarvo pientä energiaa, jos yksikkö on suuri. Kaikki energiat muunnetaan siis ensin megajouleiksi.
-**Mallivastaus:** Muunnetaan: $2900\,\text{kJ} = 2{,}9\,\text{MJ}$, $3{,}1\,\text{MJ}$, $0{,}0028\,\text{GJ} = 2{,}8\,\text{MJ}$ ja $3\,200\,000\,\text{J} = 3{,}2\,\text{MJ}$. Suurin on $3\,200\,000\,\text{J}$. Sillä on lukuarvoista toiseksi suurin mutta yksiköistä pienin, ja gigajoulena ilmoitettu energia on lukuarvoltaan pienin mutta yksiköltään suurin.
+**Mallivastaus:** Muunnetaan: $2900\,\text{kJ} = 2{,}9\,\text{MJ}$, $3{,}1\,\text{MJ}$, $3\,000\,000\,\text{J} = 3{,}0\,\text{MJ}$ ja $0{,}0033\,\text{GJ} = 3{,}3\,\text{MJ}$. Suurin on $0{,}0033\,\text{GJ}$. Sillä on pienin lukuarvo mutta suurin yksikkö, ja jouleina ilmoitetulla energialla on suurin lukuarvo mutta pienin yksikkö.
 
 ## fy2-2-L1-07
 **Annettu:** energia sadassa grammassa $E_{100} = 2400\,\text{kJ}$ ja pussin pähkinöiden massa $m = 50\,\text{g}$
 **Kysytty:** pussin pähkinöiden energia $E$ kilojouleina
 **Periaate:** Energia on suoraan verrannollinen massaan. Pussissa on puolet sadasta grammasta, joten siinä on puolet sadan gramman energiasta.
-**Kaava:** $E = \dfrac{m}{m_{100}} \cdot E_{100}$, missä $m_{100} = 100\,\text{g}$
+**Kaava:** $E = \dfrac{m}{m_{100}} \cdot E_{100}$, missä $m_{100}$ on sadan gramman massa
 **Muunnokset:** Ei tarvita: energia on annettu kilojouleina kuten kysytty.
 **Sijoitus:** $E = \dfrac{50\,\text{g}}{100\,\text{g}} \cdot 2400\,\text{kJ} = 0{,}50 \cdot 2400\,\text{kJ} = 1200\,\text{kJ}$
 **Vastaus:** $1200\,\text{kJ}$ eli $1{,}2\,\text{MJ}$, kaksi merkitsevää numeroa kuten tiedoissa $50\,\text{g}$ ja $2400\,\text{kJ}$.
-**Järkevyys:** Pussissa on vähemmän pähkinöitä kuin sadassa grammassa, joten energia on pienempi kuin $2400\,\text{kJ}$. Tulos on noin neljäsosa päivän ruoan $10\,\text{MJ}$:sta, mikä sopii pähkinöiden suureen energiatiheyteen.
+**Järkevyys:** Pussissa on vähemmän pähkinöitä kuin sadassa grammassa, joten energia on pienempi kuin $2400\,\text{kJ}$. Tulos on noin kahdeksasosa ($12\,\%$) päivän ruoan $10\,\text{MJ}$:sta, mikä sopii pähkinöiden suureen energiatiheyteen.
 
 ## fy2-2-L1-08
 **Annettu:** energia $E = 0{,}35\,\text{GJ}$
@@ -162,13 +162,13 @@
 **Muunnokset:** Muunnetaan kilojoulet megajouleiksi: $1200\,\text{kJ} = 1200 : 1000\,\text{MJ} = 1{,}2\,\text{MJ}$ ja $450\,\text{kJ} = 0{,}45\,\text{MJ}$.
 **Sijoitus:** $E = 0{,}85\,\text{MJ} + 1{,}2\,\text{MJ} + 0{,}45\,\text{MJ} = 2{,}5\,\text{MJ}$
 **Vastaus:** Oikea energia on $2{,}5\,\text{MJ}$. Oppilaan $1650{,}85\,\text{kJ}$ on vain $1{,}65\,\text{MJ}$, joten se on liian pieni: aamupalan $0{,}85\,\text{MJ}$ on oppilaan laskussa muuttunut $0{,}85\,\text{kJ}$:ksi eli tuhannesosaksi todellisesta ($850\,\text{kJ}$).
-**Järkevyys:** Oikea summa on suurempi kuin kumpikaan kahdesta suurimmasta osasta, ja sen kilojoulemuoto on $2500\,\text{kJ}$, mikä on yli oppilaan tuloksen. Tulos sopii siihen, että päivän ruoan energia on kymmenisen megajoulea.
+**Järkevyys:** Oikea summa on suurempi kuin kumpikaan kahdesta suurimmasta osasta, ja sen kilojoulemuoto on $2500\,\text{kJ}$, mikä on yli oppilaan tuloksen. Tulos on noin neljäsosa päivän tarpeesta $10\,\text{MJ}$, mikä sopii kolmelle kevyelle aterialle.
 
 ## fy2-2-L2-07
 **Annettu:** taulukon mittauspisteet $(s;\ E)$: $(1{,}0\,\text{km};\ 262\,\text{kJ})$, $(2{,}0\,\text{km};\ 498\,\text{kJ})$, $(3{,}0\,\text{km};\ 771\,\text{kJ})$, $(4{,}0\,\text{km};\ 1003\,\text{kJ})$ ja $(5{,}0\,\text{km};\ 1262\,\text{kJ})$; suklaalevyn energia $E_\text{suklaa} = 1{,}5\,\text{MJ}$
 **Kysytty:** sovitetun suoran kulmakerroin $k$ yksikössä kJ/km ja kävelymatka $s$ kilometreinä
-**Periaate:** Kulunut energia kasvaa tasaisesti matkan mukana, joten pisteisiin sopii lineaarinen malli $E = ks$. Kulmakerroin kertoo, kuinka paljon energiaa kuluu yhtä kilometriä kohti. Kun kulmakerroin tunnetaan, matka saadaan jakamalla energia kulmakertoimella.
-**Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{km};\ 8\,\text{kJ})$ ja $(5{,}0\,\text{km};\ 1260\,\text{kJ})$ kautta. Ne luetaan suoralta ja valitaan kaukana toisistaan.
+**Periaate:** Kulunut energia kasvaa tasaisesti matkan mukana, joten pisteisiin sopii malli, jossa $E$ on likimain verrannollinen matkaan $s$. Kulmakerroin kertoo, kuinka paljon energiaa kuluu yhtä kilometriä kohti. Kun kulmakerroin tunnetaan, matka saadaan jakamalla energia kulmakertoimella.
+**Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Piirretään pisteisiin suora paperille tai kuvaajaohjelmalla. Sovitettu suora kulkee likimain pisteiden $(0\,\text{km};\ 8\,\text{kJ})$ ja $(5{,}0\,\text{km};\ 1260\,\text{kJ})$ kautta. Nämä kaksi pistettä on otettu piirretyltä suoralta, ja ne valitaan kaukana toisistaan.
 **Kaava:** $k = \dfrac{\Delta E}{\Delta s} = \dfrac{E_2 - E_1}{s_2 - s_1}$ ja $s = E : k$
 **Muunnokset:** Suklaalevyn energia kilojouleina: $1{,}5\,\text{MJ} = 1{,}5 \cdot 1000\,\text{kJ} = 1500\,\text{kJ}$.
 **Sijoitus:** $k = \dfrac{1260\,\text{kJ} - 8\,\text{kJ}}{5{,}0\,\text{km} - 0\,\text{km}} = 250\,\dfrac{\text{kJ}}{\text{km}}$, ja $s = 1500\,\text{kJ} : 250\,\text{kJ/km} = 6{,}0\,\text{km}$.
@@ -183,14 +183,14 @@
 **Muunnokset:** Käytetään annettuja yhteyksiä: $1\,\text{MWh} = 3{,}6\,\text{GJ}$, $1\,\text{toe} = 42\,\text{GJ}$ ja $1\,\text{PJ} = 1\,000\,000\,\text{GJ}$.
 **Sijoitus:** Omakotitalo: $18 \cdot 3{,}6\,\text{GJ} = 65\,\text{GJ}$. Maatilan öljy: $12 \cdot 42\,\text{GJ} = 504\,\text{GJ}$. Vesivoimala: $1200 \cdot 3{,}6\,\text{GJ} = 4320\,\text{GJ}$. Kaukolämpö: $3{,}2 \cdot 1\,000\,000\,\text{GJ} = 3\,200\,000\,\text{GJ}$. Järjestys pienimmästä suurimpaan: omakotitalo, maatila, vesivoimala, kaukolämpö. Suhde on $N = 3\,200\,000\,\text{GJ} : 65\,\text{GJ} = 49\,000$.
 **Vastaus:** Suurin energia on noin $49\,000$ kertaa pienin (kaksi merkitsevää numeroa kuten tiedoissa). Taulukon luvut antavat harhaanjohtavan kuvan, koska yksiköt ovat eri kokoisia: $\text{PJ}$ on miljoona gigajoulea, $\text{toe}$ $42\,\text{GJ}$ ja $\text{MWh}$ vain $3{,}6\,\text{GJ}$. Siksi kaukolämmön pienin lukuarvo $3{,}2$ on energialtaan suurin ja vesivoimalan lukuarvo $1200$ ei tee siitä suurinta.
-**Järkevyys:** Arvio: $3\,000\,000 : 60 = 50\,000$, joten kymmenientuhansien suhde on oikea suuruusluokka. Kaupungin kaukolämpö on tuhansien talojen vuoden lämmitys, ja kaikkia energioita ei tarvitse vertailla lukuarvoista, vaan yksiköt on muunnettava.
+**Järkevyys:** Arvio: $3\,000\,000 : 60 = 50\,000$, joten suhde noin $50\,000$ on oikea suuruusluokka. Kaupungin kaukolämpö on kymmenien tuhansien talojen vuoden lämmitys (noin $3\,200\,000\,\text{GJ} : 70\,\text{GJ} \approx 45\,000$ taloa), ja kaikkia energioita ei tarvitse vertailla lukuarvoista, vaan yksiköt on muunnettava.
 
 ## fy2-2-L3-05
 **Annettu:** ruoan energiat $1{,}4\,\text{MJ}$, $3200\,\text{kJ}$, $650\,\text{kJ}$, $0{,}0042\,\text{GJ}$ ja $900\,\text{kJ}$; kulutus $E_\text{perus} = 10{,}2\,\text{MJ}$ päivässä; kävely $s = 5{,}0\,\text{km}$ päivässä, $250\,\text{kJ/km}$; rasvan energia $37\,\text{MJ/kg}$; aika $30$ vuorokautta
 **Kysytty:** kuluvan rasvan massa $m$ kilogrammoina
 **Periaate:** Energia säilyy. Jos ruoasta saatu energia on pienempi kuin kulutus, puuttuva energia otetaan kehon rasvavarastosta, jonka kemiallinen energia muuttuu liikkeeksi ja lämpöenergiaksi. Päivän vaje kerrotaan vuorokausien määrällä ja jaetaan rasvan energialla kiloa kohti.
-**Kaava:** $E_\text{kulutus} = E_\text{perus} + s \cdot E_\text{km}$, $\Delta E = E_\text{kulutus} - E_\text{ruoka}$ ja $m = 30 \cdot \Delta E : 37\,\text{MJ/kg}$
+**Kaava:** $E_\text{kulutus} = E_\text{perus} + s \cdot E_\text{km}$, $\Delta E = E_\text{kulutus} - E_\text{ruoka}$ ja $m = \dfrac{30 \cdot \Delta E}{37\,\text{MJ/kg}}$
 **Muunnokset:** Kaikki megajouleiksi: $3200\,\text{kJ} = 3{,}2\,\text{MJ}$, $650\,\text{kJ} = 0{,}65\,\text{MJ}$, $0{,}0042\,\text{GJ} = 4{,}2\,\text{MJ}$, $900\,\text{kJ} = 0{,}90\,\text{MJ}$ ja kävely $1250\,\text{kJ} = 1{,}25\,\text{MJ}$.
 **Sijoitus:** Ateriat yhteensä ovat $1{,}4 + 3{,}2 + 0{,}65 + 4{,}2 + 0{,}90 = 10{,}35$, joten $E_\text{ruoka} = 10{,}35\,\text{MJ}$. Kulutus on $E_\text{kulutus} = 10{,}2\,\text{MJ} + 1{,}25\,\text{MJ} = 11{,}45\,\text{MJ}$. Vaje on $\Delta E = 11{,}45\,\text{MJ} - 10{,}35\,\text{MJ} = 1{,}10\,\text{MJ}$ päivässä. Kolmenkymmenen vuorokauden vaje on $30 \cdot 1{,}10\,\text{MJ} = 33\,\text{MJ}$, ja $m = 33\,\text{MJ} : 37\,\text{MJ/kg} = 0{,}89\,\text{kg}$.
 **Vastaus:** Rasvaa kuluu noin $0{,}89\,\text{kg}$ kuukaudessa. Rasvan kemiallinen energia ei katoa: se muuttuu lihasten liikkeeksi ja suurimmaksi osaksi lämpöenergiaksi, joka siirtyy lämpönä ympäristöön. Kaksi merkitsevää numeroa kuten tiedoissa.
-**Järkevyys:** Vaje on vain noin $10\,\%$ päivän energiasta, joten vähän alle kilon laihtuminen kuukaudessa on uskottava. Arvio: $30 \cdot 1 : 37 \approx 0{,}8$.
+**Järkevyys:** Vaje on vain noin $10\,\%$ päivän energiasta, joten vähän alle kilon laihtuminen kuukaudessa on uskottava. Arvio: $30 \cdot 1 : 37 \approx 0{,}8$. Viiden prosentin toleranssi kattaa vajeen $1{,}10\,\text{MJ}$ pyöristyksen.
