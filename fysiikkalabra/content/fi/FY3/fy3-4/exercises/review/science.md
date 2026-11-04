@@ -1,22 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 931d64b231b7ad76
-Round: 2
+CONTENT-HASH: 42492e47d1fafc99
+Round: 3
 
-Round 2: I reviewed the round-1 fixes (`git diff HEAD~1`) in the 20-task set. Round 1 had no Blocking items, so this round checks that the Polish fixes and the rewordings are correct.
+Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touches only the fy3-4 L3-05 Järkevyys line; the rest is covered by the round-2 PASS.
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md:205 (L3-05 Järkevyys): "$122{,}6 \cdot 3 = 367{,}9$" is wrong by 0,1, because $122{,}6 \cdot 3 = 367{,}8$. The 367,9 comes from $122{,}625 \cdot 3 = 367{,}875$. Fix: write "$122{,}625 \cdot 3 \approx 367{,}9$" (and the same for ·5 and ·7), or compare the rounded values with "≈".
-- exercises.json:74 (L1-07): carried over from round 1. This is the third plain ρgh task at level 1, after L1-02 and L1-05. It is acceptable but adds little.
+- exercises.json:74 (L1-07): carried over. Third plain ρgh task at level 1 after L1-02 and L1-05; acceptable.
 
 ## Checked
-- Round-1 Polish was resolved. L3-04 Järkevyys now says correctly that the deviation covers the top 15 m and is 0,03 % in the middle layer, and that the total is 0,060 % (118/196 200). Of the 118 Pa deficit, 75 % comes from the surface layer.
-- Round-1 Polish was resolved. The "Kuvaajan lukeminen" headings over tables are now "Taulukon lukeminen" (L2-05, L2-06, L3-04, L3-05), and the `graph` tag was removed from L2-05.
-- Round-1 Polish was resolved. L3-05 now gives the reason for three significant figures as 15,0/20,0 m plus a strip of exactly one metre. The task text says "yhden metrin levyistä kaistaa", so this is consistent.
-- L1-06 and L1-08 rewordings: each still has exactly one correct option, the answer string matches the correct choice, and the feedback is unchanged and right.
-- I recomputed all eight new answers with my own formulas in one script, and they agree with answers.py and are within tolerance: L1-07 394,4 → 390 kPa; L2-05 p0 99,73 kPa (least squares 9,777 kPa/m, 99,75 kPa), ρ = 997 kg/m³; L2-06 2,943 kPa; L2-07 1,422 kPa; L3-04 0,1177 kPa, 1,2 cm vs 5,1 cm; L3-05 parts 122,6/367,9/613,1/858,4 kN, sum 1962 kN = whole strip, ratio 7,0.
-- Scope is still p = F/A and p = p0 + ρgh. There are no duplicates, the levels are 8/7/5, and the set follows the plan.
-- The L3 screenshot at 1280 px (part 8, after the fix commit) renders the changed L3-05 Vastaus cleanly.
+- The round-2 Polish on L3-05 Järkevyys is resolved. "122,6 · 3 ≈ 367,9", "· 5 ≈ 613,1", "· 7 ≈ 858,4" now use ≈. Recomputed: 122,625 kN · 3 = 367,875, · 5 = 613,125, · 7 = 858,375, which round to 367,9 / 613,1 / 858,4, and 122,6 · 3 = 367,8 is within rounding of 367,9, so ≈ is correct.
+- The change is consistent with Vastaus (F4 = 858 kN, F4 : F1 = 7,0), part c) (sum 1962 kN = 98,1 kPa · 20,0 m²) and the answer 858,4 kN in the task. No numbers changed.
 - The hash was the same at the start and at the end.

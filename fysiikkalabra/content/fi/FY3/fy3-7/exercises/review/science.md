@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cd198f4f9413a502
+CONTENT-HASH: 6adc73b630c26584
+Round: 3
 
-Round 2. This round checks the fixes for the round-1 Blocking item and the Polish (`git diff HEAD~1`) on the 20-task set. Mode: full.
+Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touches only fy3-7 L2-05 (tolerance and Vastaus line); the rest is covered by the round-2 PASS.
 
 ## Blocking
+- none
 
 ## Polish
-- exercises.json:156 / solutions.md:161 (L2-05) — the tolerance is now 0,08, so the answer box accepts 312 kJ/kg (−6,6 %), which the solution itself calls "liian pieni". The reason given for ±8 % ("aika luetaan noin sekunnin tarkkuudella") supports only about 1–2 %. The new hint already exposes the hidden step. — Set the tolerance back to 0,04 (or 0,05) and write ±4 %.
-- solutions.md:168 (L2-06 Mallivastaus a)) — "vesi pysyy koko ajan 100 °C:ssa" holds only at normal pressure (B, minor; Periaate is now fixed). — Write "pysyy koko ajan kiehumispisteessä".
+- none
 
 ## Checked
-- Round-1 Blocking item (L3-05 Järkevyys) is resolved: it now says "höyry luovuttaa tiivistyessään paljon energiaa (r on suuri)". This gives the right direction and matches Mallivastaus.
-- L1-06: the feedback now says "keskinäisten vuorovaikutusten muuttamiseen" (guardrail wording). The correct option was moved to the end, and exactly one option is still correct and equals `answer`.
-- L1-07: the shortened options still have exactly one correct option ("Haihtuva hiki ottaa energiaa iholta"), and the feedback is unchanged and right.
-- L2-06 Periaate: now "kiehumispisteessä, normaalipaineessa noin 100 °C:ssa".
-- L2-07 now asks for 60,0 kPa, which is not a table row, with linear interpolation between 50,0 kPa (81,3 °C) and 70,0 kPa (90,0 °C). That gives 85,65 °C and Δ = 14,35 K, so 14,4 K. Steam tables give T_k(60 kPa) ≈ 86,0 °C and Δ ≈ 14,0 K, which is within the ±4 % tolerance. The interpolation step brings the task up to level 2, and b) correctly says ≈ 85,7 °C and ≈ 14 K.
-- L2-05: the hint "rivit 20 s ja 150 s ovat jo tasanteen sisällä" matches the data (melting 17,5 → 156,7 s). s = 600 · 139 / 0,250 = 333,6 kJ/kg.
-- L3-04: the tolerance of 0,08 now accepts the table-row plateau estimate of 18,7 kJ (−6,6 %). P = 11,98 W, Q = 19,9 kJ, s ≈ 199 kJ/kg.
-- I recomputed the changed and new answers in one script with my own formulas (L2-05, L2-06, L2-07, L3-04, L3-05). They match answers.py and exercises.json. All 20 answers.py values agree with exercises.json within tolerance.
-- The deterministic layout checks at 360, 768 and 1280 px pass.
+- Arithmetic: s = 600 W · 139 s / 0,250 kg = 333 600 J/kg, so 334 kJ/kg. 334 · 0,95 = 317,3 kJ/kg, so the accepted range is 317,3..350,7 kJ/kg. The naive table-row reading 600 · 130 / 0,250 = 312 kJ/kg is 6,6 % low and is now rejected, as the Vastaus says ("liian pieni").
+- Careful readings still pass: Δt = 137..141 s gives 328,8..338,4 kJ/kg, and even Δt = 133 s gives 319,2. Only Δt below about 132,2 s fails.
+- Tolerance 0,05 in exercises.json, "±5 %" in the Vastaus line, and the answer 334 kJ/kg agree with the task text (hint to estimate start and end from the slopes) and with the solution (18 s, 157 s, 139 s). The lesson-level answers.py is not used by the exercise set; the exercise answer is in exercises.json.
+- Physics unchanged: slopes 1,14 K/s and 0,575 K/s agree with P/(cm).
+- The hash was the same at the start and at the end.
