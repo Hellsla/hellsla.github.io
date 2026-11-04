@@ -43,6 +43,78 @@
       "unit": "°",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L1-06",
+      "level": 1,
+      "text": "A person stands on a bathroom scale in a lift that is moving upwards and slowing down to stop at the top floor. The scale measures the normal force. How does the reading of the scale compare with the reading when the lift is at rest?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The reading is smaller, because the acceleration points down and the normal force is smaller than the weight",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The reading is larger, because the lift is moving up and so the normal force is larger than the weight",
+          "feedback": "The reading does not depend on the direction of motion but on the acceleration. The lift is slowing down, so the acceleration does not point up, and the normal force is not larger than the weight."
+        },
+        {
+          "text": "The reading is the same, because the mass and the weight of the person do not change when the lift moves",
+          "feedback": "The weight does not change, but the scale measures the normal force. When the acceleration is not zero, the normal force and the weight are not equal, so the reading changes."
+        },
+        {
+          "text": "The reading is smaller, because the acceleration points down and the normal force is smaller than the weight",
+          "correct": true,
+          "feedback": "Correct: when a lift moving up slows down, it accelerates downwards, so the net force points down and the normal force is smaller than the weight: $N = m(g - a)$."
+        },
+        {
+          "text": "The reading is zero, because the lift is slowing down and the person is then weightless",
+          "feedback": "The reading would be zero only if the acceleration were downwards and equal to $g$. The deceleration of an ordinary lift is much smaller, so the normal force is only slightly smaller than the weight."
+        }
+      ]
+    },
+    {
+      "id": "fy4-16-L1-07",
+      "level": 1,
+      "text": "A skydiver descends under a parachute at a steady speed. The air resistance is equal to the weight, and the air resistance does negative work. Which statement about his mechanical energy is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The mechanical energy decreases, because the height decreases and the kinetic energy stays the same",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The mechanical energy is conserved, because the speed does not change and the kinetic energy stays the same",
+          "feedback": "Mechanical energy is the sum of kinetic energy and potential energy. The kinetic energy stays the same, but the potential energy decreases as the height decreases."
+        },
+        {
+          "text": "The mechanical energy decreases, because the height decreases and the kinetic energy stays the same",
+          "correct": true,
+          "feedback": "Correct: the potential energy decreases, the kinetic energy does not change, and the negative work of the air resistance turns mechanical energy into internal energy."
+        },
+        {
+          "text": "The mechanical energy is conserved, because the weight and the air resistance are equal and cancel each other",
+          "feedback": "The sum of the forces is zero, so the kinetic energy does not change. The mechanical energy still decreases, because the air resistance does negative work along the way, even though its magnitude equals the weight."
+        },
+        {
+          "text": "The mechanical energy increases, because the weight does positive work all the time",
+          "feedback": "The work of the weight decreases the potential energy, and the kinetic energy does not increase. The air resistance does an equally large negative work, so the mechanical energy does not increase."
+        }
+      ]
+    },
+    {
+      "id": "fy4-16-L1-08",
+      "level": 1,
+      "text": "A student calculates the kinetic friction force on a sled on a straight slope. The mass of the sled with the child is $20.0\\,\\text{kg}$, the angle of inclination of the slope is $30.0\\,{}^\\circ$ and the coefficient of kinetic friction is $0.200$. The sled slides down the slope.\n\nThe student's solution: “The normal force is equal to the weight, $N = mg$, so the friction force is $F_\\mu = \\mu mg = 0.200 \\cdot 20.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 39.2\\,\\text{N}$.”\n\nDraw the free-body diagram of the sled and find the error in the student's solution. How large is the kinetic friction force really? The answer box takes the correct kinetic friction force.",
+      "kind": [
+        "error"
+      ],
+      "answer": 33.98284,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations"
     }
   ],
   "level2": [
@@ -80,6 +152,144 @@
       "unit": "kW",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L2-05",
+      "level": 2,
+      "text": "A lift starts upwards from the ground floor. A person whose mass is $62.0\\,\\text{kg}$ stands in the lift. The upward speed of the lift was measured from a video, and the table is example data.\n\nDetermine the acceleration of the lift after the start using the first and the last row of the table. How large is the normal force of the floor on the person during this time?",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 633.02,
+      "unit": "N",
+      "tolerance": 0.02,
+      "fbd": "equations",
+      "data": {
+        "caption": "Upward speed of the lift after the start (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "0.5",
+            "0.21"
+          ],
+          [
+            "1.0",
+            "0.41"
+          ],
+          [
+            "1.5",
+            "0.62"
+          ],
+          [
+            "2.0",
+            "0.79"
+          ],
+          [
+            "2.5",
+            "1.02"
+          ],
+          [
+            "3.0",
+            "1.20"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-16-L2-06",
+      "level": 2,
+      "text": "A sled slides on horizontal snow without being pushed. The position $x$ of the sled was measured from a video at one-second intervals from the moment it passes a marked point. The table is example data, and air resistance is ignored.\n\nIn uniformly decelerating motion the average speed over a time interval is equal to the speed in the middle of the interval. Calculate the average speed of the sled during the first and the last second, deduce the deceleration of the sled from them and calculate the coefficient of kinetic friction between the sled and the snow.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 0.08053,
+      "unit": "",
+      "tolerance": 0.05,
+      "fbd": "equations",
+      "data": {
+        "caption": "Position of the sled on horizontal snow (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.00"
+          ],
+          [
+            "1.0",
+            "3.62"
+          ],
+          [
+            "2.0",
+            "6.38"
+          ],
+          [
+            "3.0",
+            "8.43"
+          ],
+          [
+            "4.0",
+            "9.57"
+          ],
+          [
+            "5.0",
+            "10.03"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-16-L2-07",
+      "level": 2,
+      "text": "A student determines the coefficient of kinetic friction between a wooden box and a board. She sets the board at an incline, gives the box a push and adjusts the incline until the pushed box keeps sliding at a steady speed. Then she measures the angle of inclination of the board. She repeats the measurement five times. The table is example data.\n\na) Calculate the mean of the angles $\\alpha_{\\text{mean}}$ and use it to calculate the coefficient of kinetic friction.\n\nb) Estimate the range of the coefficient of kinetic friction by calculating the coefficient from the smallest and the largest angle. How large is the variation of the coefficient around the mean?\n\nThe answer box takes the result of part a).",
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "answer": 0.321065,
+      "unit": "",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Angle of inclination at which the box slides steadily (example data)",
+        "columns": [
+          "Measurement",
+          "$\\alpha\\,({}^\\circ)$"
+        ],
+        "rows": [
+          [
+            "1",
+            "17.5"
+          ],
+          [
+            "2",
+            "18.0"
+          ],
+          [
+            "3",
+            "18.5"
+          ],
+          [
+            "4",
+            "17.0"
+          ],
+          [
+            "5",
+            "18.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -110,6 +320,93 @@
       "unit": "kN",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy4-16-L3-04",
+      "level": 3,
+      "text": "A municipality is planning a sledding hill. The sled goes down a straight slope and continues onto a horizontal field, at the end of which there is a fence $25.0\\,\\text{m}$ from the foot of the slope. The data of the hill are in the table, which is example data.\n\nFor safety, the sled must stop at least $5.0\\,\\text{m}$ before the fence when it starts from rest at the top of the slope. Air resistance and the increase in friction at the bend at the foot of the slope are ignored, and the coefficient of friction is constant on each part.\n\na) Draw the free-body diagram of the sled on the slope and on the flat.\n\nb) How long can the slope be at most?\n\nc) How large is the speed of the sled at the foot of the slope at this length, and why does the result not depend on the mass of the child?\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "model",
+        "data"
+      ],
+      "answer": 16.33061,
+      "unit": "m",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Parts of the sledding hill (example data)",
+        "columns": [
+          "Part",
+          "$\\alpha\\,({}^\\circ)$",
+          "$\\mu$"
+        ],
+        "rows": [
+          [
+            "Slope",
+            "14.0",
+            "0.060"
+          ],
+          [
+            "Flat",
+            "0.0",
+            "0.150"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy4-16-L3-05",
+      "level": 3,
+      "text": "The mass of a skydiver with equipment is $78.0\\,\\text{kg}$. The table gives his downward speed after the parachute opens. The data is example data, and the skydiver moves downwards all the time.\n\na) Calculate the distance fallen between $0$ and $3.0\\,\\text{s}$ by summing the average speed of each time interval times the interval. Use as the average speed the mean of the speeds at the endpoints of the interval.\n\nb) How large is the air resistance on average over this distance? Use the work–energy principle and assume that the air resistance has its average value over the whole distance.\n\nc) Is the air resistance between $3.0$ and $4.0\\,\\text{s}$ larger than, smaller than or equal to the weight? Justify with the table.\n\nThe answer box takes the result of part b).",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 2.205,
+      "unit": "kN",
+      "tolerance": 0.03,
+      "fbd": "equations",
+      "data": {
+        "caption": "Speed of the skydiver after the parachute opens (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$v\\,(\\text{m/s})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "46.0"
+          ],
+          [
+            "0.5",
+            "29.8"
+          ],
+          [
+            "1.0",
+            "20.1"
+          ],
+          [
+            "1.5",
+            "14.4"
+          ],
+          [
+            "2.0",
+            "11.0"
+          ],
+          [
+            "2.5",
+            "9.0"
+          ],
+          [
+            "3.0",
+            "7.9"
+          ],
+          [
+            "4.0",
+            "6.8"
+          ]
+        ]
+      }
     }
   ]
 }
