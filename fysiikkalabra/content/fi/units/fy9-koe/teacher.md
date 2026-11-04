@@ -12,7 +12,6 @@
 ## Kertaustestin käyttö
 - Testi on diagnostinen, ei arvosteltava. Pyydä opiskelijoita kirjaamaan vihkoon tai omaan muistiinpanoon jokaisen väärin menneen tehtävän luku; palaute nimeää sen.
 - Kokoa seuraavan tunnin alussa käsiäänestyksellä tai nimettömällä lapulla, mitkä moduulit tuottivat eniten vaikeuksia, ja painota niitä kurssin kertaustunneilla.
-- FY7:n luvut eivät ole vielä sivustolla, joten FY7:n tehtävien palaute nimeää vain moduulin. Ohjaa oppikirjaan tai omaan materiaaliin.
 - Sivu ei tallenna vastauksia mihinkään; tulokset näkee vain opiskelija itse.
 
 ## Parityö
