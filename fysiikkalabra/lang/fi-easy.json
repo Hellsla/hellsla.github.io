@@ -66,6 +66,7 @@
     "unavailable_note": "Sivua <strong>{{title}}</strong> ei vielä ole tällä kielellä. Alla näet moduulin oppitunnit. Näet myös, mitkä niistä voit jo avata.",
     "home_title": "Lukion fysiikkaa tutkimalla.",
     "upcoming": "Tulossa",
+    "planned_courses": "Tulevat kurssit",
     "lessons_all": {
       "one": "{{n}} oppitunti",
       "other": "{{n}} oppituntia"

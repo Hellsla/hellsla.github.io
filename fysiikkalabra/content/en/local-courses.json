@@ -1,5 +1,12 @@
 {
   "_note": "English texts of local-courses.json (scripts/local_courses.py): a course is published in English when it has an entry here.",
+  "_planned": [
+    {"icon": "LUMATUTOR", "title": "LUMA tutor", "text": "Act as a science tutor: plan science events and take part in them."},
+    {"icon": "AHJO1", "title": "Ahjo 1", "text": "Basics of 3D modelling, 3D printing, electronics and robotics."},
+    {"icon": "AHJO2", "title": "Ahjo 2", "text": "Design, build and test your own prototype."},
+    {"icon": "KILPAROBO", "title": "Competitive robotics", "text": "Design, build and program robots and take part in robotics competitions."},
+    {"icon": "MYYTIT", "title": "Myth Busters", "text": "Find out by experiment whether familiar claims hold true."}
+  ],
   "FY14": {
     "subtitle": "From the Birth of Modern Physics to ITER.",
     "school": "Kiviruukki upper secondary school",
