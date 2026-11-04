@@ -1,21 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 0fcb8d2cc4f7c3c6
+VERDICT: PASS
+CONTENT-HASH: 3bdcdbebb2c499c3
+Round: 2
 
 ## Blocking
-- exercises.json fy6-9-L2-06 — the lead before the parts is one paragraph of about 47 words (situation, data and the student's calculation together), over the 45-word rule — add "\n\n" after "...pysyvät tässä mallissa vakioina." and put "Oppilas laskee: ..." (the claim) in its own paragraph. Parts a), b) and the answer-field line stay as they are.
+(none)
 
 ## Polish
-- fy6-9-L1-08 repeats the structure of L1-04 (t = Q : I) and differs only by the mAh conversion; consider a different context or ask for the time to reach a given share of the capacity.
-- solutions.md fy6-9-L2-06 — the answer to a) (loss goes to resistances) sits only in Periaate; the Vastaus line states b) only. Add one sentence for a) to Vastaus.
-- Plan docs/exercise-bank/FY6.md: the constant-current/constant-voltage graph task and the "higher charger voltage fills it faster" error task were replaced by L2-07 and L2-06; update the plan or add them later.
-- Outside the Finnish set: the English translation of the untouched L2-01 (preview/en/fy6-9, state "open") overflows by 8 px at 360 px (inline "0.40\,\Omega"). This is the failing "layout 360 px" check; none of the new tasks is the cause.
+- solutions.md fy6-9-L2-06 Vastaus — "kaksi merkitsevää numeroa kuten jännite-erotuksessa $4{,}2\,\text{V} - 3{,}7\,\text{V} = 0{,}5\,\text{V}$" is wrong: 0,5 V has one significant figure. Justify the two figures by the current and time ($2{,}0\,\text{A}$, $1{,}5\,\text{h}$) as before, or drop the clause.
+- fy6-9-L1-08 repeats the structure of L1-04 (t = Q : I) and differs only by the mAh conversion; consider a different context or the time to reach a given share of the capacity (carried over from round 1).
+- Plan docs/exercise-bank/FY6.md (fy6-9) is not updated: the constant-current/constant-voltage graph task and the "higher charger voltage fills it faster" error task were replaced by L2-07 and L2-06; update the plan or add them later (carried over).
+- Outside the Finnish set: the English translation of the untouched L2-01 (preview/en/fy6-9) overflows by 8 px at 360 px (inline "0.40\,\Omega"); this is the failing "layout 360 px" check, not caused by the new tasks (carried over).
 
 ## Checked
-- All eight new tasks recomputed: L2-05 9,3225 Wh, L2-06 1,5 Wh, L2-07 0,40 Ω (fit gives 2,5 A/V), L3-04 77,45 % and R_s 0,10 Ω, L3-05 7,125 h and 6,0 h. Each answer matches its solution.
-- Levels fit: L1-06..08 one step or concept, L2-05..07 data/error/experiment, L3-04..05 multi-part modelling and data interpretation in YO style.
-- Concept tasks L1-06 and L1-07 have misconception-based distractors, each with its own feedback.
-- Solutions follow the house stages; the physics in L3-04 c) (cut-off voltage reached sooner at high current, R_s I² loss) is explained.
-- No duplicate of the worked example. Total 20 tasks (8/7/5).
-- Only L2-06 has a lead over about 45 words; the other leads are 14–38 words and already have breaks where there are several paragraphs.
-- Finnish and number+unit case forms (for example "$450\,\text{V}$:n") are fine in the new texts.
-- Exercise captures at 1280 px are the only ones in the packet; the content hash is unchanged at the start and end.
+- Round 1 Blocking resolved: L2-06 lead now three paragraphs (situation and data / the student's calculation / parts a) and b)); every lead is under 45 words.
+- L2-06 a) answer now also stated in Vastaus; L2-06 recomputed 1,5 Wh, matches the answer field.
+- L3-04 premise made explicit (cell charged full from the same empty state before both discharges): η = 8,52 : 11,0 = 77,45 %, answer field 77,45 matches, R_s 0,10 Ω, E = 3,75 V at both currents.
+- L1-06 and L1-07: correct option moved to positions 3 and 4; answer string equals the correct choice; shortened distractors keep a real misconception and their own feedback.
+- L2-05 9,3225 Wh, L2-07 0,40 Ω and L3-05 7,125 h / 6,0 h recomputed, unchanged and correct.
+- Levels fit (L1 concept/one step, L2 data/error/experiment, L3 YO-style multi-part). 20 tasks (8/7/5), no duplicate of the worked example.
+- Hash unchanged at the start and end.

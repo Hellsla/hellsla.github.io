@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 0fcb8d2cc4f7c3c6
+CONTENT-HASH: 3bdcdbebb2c499c3
+
+Round 2. Round 1 had no Blocking items; nothing blocking arises from the changes.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] 9-14 (L2-06) text — the student's quotation is set in straight marks "…" — other new tasks (11-14) use Finnish ”…” — use ”…” at both ends.
-- [Minor] 9-15 (L2-07) graph task — the solution reads the points (13,0 V; 1,5 A) and (14,6 V; 5,5 A) from a fitted line the student cannot see; the existing L1-05 has a figure — add a small (U_lat, I) plot with the fit line (data markers, dashed read-off lines) beside the "Kuvaajan lukeminen" step.
-- [Minor] 9-19 (L3-04) Kaava — "Q = It, W = U_ka Q," ends in a comma and the η and R_s formulas follow in a box; reads as unfinished — set all four formulas in one box or one per row.
-- [Minor] 9-20 (L3-05) Vastaus — "kaksi merkitsevää numeroa kuten jännitteissä", but the voltages have four (12,00 V); the two figures come from 0,40 Ω and 50 Ah — write "kuten resistanssissa 0,40 Ω".
-- [Minor] preview/en/fy6-9 at 360 px (deterministic FAIL) — inline `0{.}4\,\Omega` cannot wrap, 8 px overflow; it is the English page, not this Finnish set (fi passes), so not blocking here, but fix before EN is published.
+- [Minor] 9-15 (L2-07) graph task — the read-off points come from a fitted line the student cannot see (carried over); add a small (U_lat, I) plot with the fit line and dashed read-off lines.
+- [Minor] 9-19 (L3-04) Vastaus — "kaksi merkitsevää numeroa" is stated, yet the chip and the solution give 77 % and "77,45 %" side by side; give only "77 %" in the answer line and keep 77,45 % in the Muunnokset.
+- [Minor] 9-19 Sijoitus — step c) (R_s) lies after the η chain without a lead-in sentence; fine, but a "c)" label spacing like a) and b) would help (labels render as bare "c)" lines).
+- [Minor] preview/en/fy6-9 at 360 px (carried over) — inline `0{.}4\,\Omega` overflows by 8 px in the English page only; fix before EN is published.
 
 ## Checked
-- Opened open-exercises-1280 parts 6–8 (9-6, 9-7, 9-8), L2 parts 6–9 (9-13 end, 9-14, 9-15), L3 parts 5–8 (9-19, 9-20): MC cards, feedback, data tables, solutions, chains, nothing clipped. No 360 px exercise capture exists; check_layout.py run for fy6-9: fi OK, en FAIL (above).
-- Chip answers of all 8 new tasks compared with exercises.json: match.
+- Round-1 Polish resolved: 9-14 quotation now uses ”…”; 9-19 Kaava split into boxed rows; 9-20 Vastaus now "kuten resistanssissa 0,40 Ω".
+- Opened open-exercises-L3-1280-5 and -6 (9-19 Sijoitus, Vastaus, Järkevyys; 9-20 task text, data table): chains, boxes, table intact, no clipping. Chips of all 8 new tasks in preview/fy6-9.html compared with exercises.json: consistent (77 % chip for 77,45).
+- Diff since round 1: answer 77,45 and the changed MC order/wording (9-6, 9-7) checked in the source and in the chips. No 360 px exercise capture exists.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

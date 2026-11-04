@@ -160,7 +160,7 @@
 **Järkevyys:** Opiskelijan voima $0{,}48\,\text{mN}$ on nelinkertainen oikeaan nähden, koska hän jakoi jännitteen nelinkertaa lyhyemmällä matkalla ($6{,}0\,\text{cm} : 1{,}5\,\text{cm} = 4$). Oikea voima on sama kaikkialla levyjen välissä, myös pallon ollessa levyn vieressä.
 
 ## fy6-11-L2-07
-**Annettu:** esimerkkiaineisto: levyjen etäisyys $d = 2{,}0\,\text{cm}$, jännite $U = 600\,\text{V}$, testivaraus $q = 2{,}0\,\text{nC}$, voimat $F = 60{,}2$; $59{,}8$; $59{,}5$; $59{,}0$; $52{,}1$ ja $33{,}0\,\mu\text{N}$ etäisyyksillä $x = 0$; $2{,}0$; $4{,}0$; $6{,}0$; $8{,}0$ ja $10{,}0\,\text{cm}$ keskikohdasta
+**Annettu:** esimerkkiaineisto: levyjen etäisyys $d = 2{,}0\,\text{cm}$, jännite $U = 600\,\text{V}$, testivaraus $q = 2{,}0\,\text{nC}$, voimat $F = 60{,}2$; $59{,}8$; $59{,}5$; $59{,}0$; $58{,}0$ ja $33{,}0\,\mu\text{N}$ etäisyyksillä $x = 0$; $2{,}0$; $4{,}0$; $6{,}0$; $8{,}0$ ja $10{,}0\,\text{cm}$ keskikohdasta
 **Kysytty:** a) $E$ jokaisessa pisteessä, b) homogeeniset pisteet (poikkeama alle $3\,\%$), c) niiden $E$:n keskiarvo ja vertaus arvoon $U : d$
 **Periaate:** Testivarauksen kokema voima on $F = qE$, joten $E = F : q$ kertoo kentän kussakin pisteessä. Kenttä on homogeeninen alueella, jossa $E$ on vakio. Levyjen reunoilla ja ulkopuolella kenttä heikkenee, joten homogeenisuus täytyy tarkistaa mittaamalla eri kohdissa.
 **Kaava:** $E = \dfrac{F}{q}$, poikkeama $= \dfrac{E_0 - E}{E_0}$ ja vertailuarvo $E = \dfrac{U}{d}$

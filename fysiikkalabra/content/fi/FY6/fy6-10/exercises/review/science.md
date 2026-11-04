@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 8ea29c696463591e
+CONTENT-HASH: 6cb1e7ee5db97fdc
+Round 2: full review of the exercise set after the round-1 fixes (commit e6301a0ac); round 1 had no Blocking items.
 
 ## Blocking
 
 ## Polish
-- exercises.json:50,55 (L1-06) — "Villan varaus on positiivinen ja yhtä suuri kuin sauvan varaus": +Q and −Q are not equal; write "itseisarvoltaan yhtä suuri".
-- exercises.json:291 (L3-05 c) — "langat ovat edelleen yhtä suuressa kulmassa" can be read as "still 10°", which is false (the angle grows); write "langat ovat edelleen keskenään yhtä suuressa kulmassa pystysuoraan nähden (vaikka kulma kasvaa)".
-- solutions.md:145 (L2-05) — the slope 5,50·10⁻⁶ N·m² is the least-squares value, not read from two points of the drawn line (guardrail "Fits"), and the reason for forcing the line through the origin (1 : r² → 0 when r → ∞, so F → 0) is not given; add both. solutions.md:150: the F r² values differ by 7,1 %, not "alle 7 %" — "noin 7 %".
-- solutions.md:156 (L2-06) — headed "Kuvaajan lukeminen" and "voimakäyrät", but the task gives a table and asks for ratios; no graph is drawn. Rename to the table, or ask for the two curves; kind "graph" likewise.
-- docs/exercise-bank/FY6.md (fy6-10) — plan items not delivered: L1 calc "etäisyys, jolla voima on annettu" (L1-08 is Q = It instead), L2 experiment on humid days (L2-07 error task instead), L3 qualitative comb and paper (L3-05 pendulum instead). Update the plan or note the swap. Round-2 Polish still open: solutions.md:108 "Tarkista selityksesi" inside the answer.
+- solutions.md:145 (L2-05) — "Kulmakerrointa ei lueta kahdesta piirretyn suoran pisteestä" implies that reading the slope from two points on the drawn line would be wrong, but that is the guardrail's method. Write "Graafisesti kulmakerroin luetaan kahdesta sovitetun suoran pisteestä; pienimmän neliösumman sovitus origon kautta antaa ...".
+- exercises.json:290 (L3-05 c) — "kummankin langan kulma ... on edelleen yhtä suuri, vaikka kulma muuttuu" reads as self-contradictory. Write "langat ovat edelleen keskenään yhtä suuressa kulmassa pystysuoraan nähden, vaikka kulma kasvaa".
+- solutions.md:108 (L3-02) — "Tarkista selityksesi" inside the answer (open since earlier rounds).
+- docs/exercise-bank/FY6.md (fy6-10) — plan items not delivered (L1 distance calc → L1-08 Q = It; L2 humid-day experiment → L2-07 error task; L3 comb and paper → L3-05 pendulum). Update the plan.
 
 ## Checked
-- All 20 answers recomputed in one script with my own formulas (k = 8,988·10⁹), and answers.py re-run: every pair agrees (< 0,05 %).
-- L1-06, L1-07: exactly one correct option, distractor feedback right.
-- L2-05: F r² = 5,44–5,82·10⁻⁶ N·m², origin fit 24,7 nC (per-row mean 25,0 nC, within 5 %); data consistent with Coulomb's law at 25 nC.
-- L2-06: ratios 3,41/3,69/3,30/3,50/3,55, mean 3,49 → 69,8 nC ; F_A matches 20 nC theory, F_B 70 nC within 3 %.
-- L2-07: the student's k q₁q₂ : r = 0,0288 mN, i.e. 0,029 as stated; correct 0,959 mN, factor 1 : 0,030 = 33.
-- L3-04: region analysis right (between: both forces +x; x < 0: q₁ always dominates); x = 33,85 cm.
-- L3-05: F = mg tan θ = 1,384 mN, r = 2L sin θ = 0,104 m, q = 40,9 nC; part c (third law → equal angles) correct.
-- Levels fit; no duplicate of an existing task (L3-04 outside unlike charges vs L3-03 between like ones); notation as in the brief; point-charge assumption stated where needed.
+- Hash 6cb1e7ee5db97fdc at start and end. Diff since 048b5f229 read in full.
+- Round-1 Polish fixed: L1-06 "itseisarvoltaan yhtä suuri" in the answer, options and feedback; L2-05 now gives the origin reason (r → ∞ ⇒ F → 0) and states the least-squares fit s = Σxy : Σx²; "noin 7 %"; L2-06 header "Taulukon lukeminen" and kind "graph" removed; L3-05 c solution says the angle grows.
+- L1-06, L1-07 after reordering: exactly one correct option, `answer` equals it, distractor feedback right.
+- answers.py re-run: all 18 numeric answers agree with exercises.json (L2-05 24,7 nC, L2-06 69,8 nC, L3-05 40,9 nC unchanged).
+- Levels, scope (point charges, Coulomb's law) and notation unchanged; no duplicates.
