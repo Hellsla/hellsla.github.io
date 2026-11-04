@@ -239,7 +239,7 @@ a 0
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{S} = F_\text{A} = 4{,}8\,\text{N}$
 **Vastaus:** $4{,}8\,\text{N}$, kaksi merkitsevää numeroa kuten taulukon lukemissa.
-**Järkevyys:** Anturien lukemat ovat kaikilla viidellä hetkellä alle $0{,}1\,\text{N}$:n päässä toisistaan, kun lukemat vaihtelevat välillä $0{,}9\,\text{N}$–$4{,}8\,\text{N}$. Jos köysi kiihtyisi, lukemien pitäisi erota selvästi.
+**Järkevyys:** Anturien lukemat eroavat kaikilla viidellä hetkellä enintään $0{,}1\,\text{N}$, kun lukemat vaihtelevat välillä $0{,}9\,\text{N}$–$4{,}8\,\text{N}$. Erot vaihtelevat suunnaltaan, joten ne ovat satunnaista mittausvaihtelua: kevyen köyden molemmat päät vetävät yhtä suurella voimalla joka hetki.
 
 ## fy4-3-L2-06
 **Annettu:** taulukosta nopeudet $0{,}51$; $0{,}50$; $0{,}49$; $0{,}50$; $0{,}51$ ja $0{,}49\,\text{m/s}$, aika $\Delta t = 6{,}0\,\text{s}$
@@ -268,7 +268,7 @@ $s = 0{,}500\,\text{m/s}\cdot 6{,}0\,\text{s} = 3{,}0\,\text{m}$.
 **Sijoitus:** $T = 410\,\text{N} + 40\,\text{N} = 450\,\text{N}$ ja
 $F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
 **Vastaus:** a) $450\,\text{N}$ ja b) $480\,\text{N}$ eteenpäin, kaksi merkitsevää numeroa kuten annetuissa voimissa. c) Hevosen voima kärryyn ja kärryn voima hevoseen ovat yhtä suuret ja vastakkaissuuntaiset, mutta ne vaikuttavat eri kappaleisiin, joten ne eivät kumoa toisiaan. Kärryn liikkeen ratkaisevat vain kärryyn vaikuttavat voimat, ja hevosen liikkeen vain hevoseen vaikuttavat. Hevonen pääsee liikkeelle, koska tie työntää sen kavioita eteenpäin voimalla, joka on suurempi kuin kärryn voima hevoseen.
-**Järkevyys:** Tien voima $480\,\text{N}$ on yhtä suuri kuin kaikkien vastusten summa $410\,\text{N} + 40\,\text{N} + 30\,\text{N} = 480\,\text{N}$, joten koko järjestelmä liikkuu tasaisella nopeudella. Kitka tien ja kavioiden välillä vie eteenpäin, vaikka se tavallisesti vastustaa liukumista.
+**Järkevyys:** Tien voima $480\,\text{N}$ on yhtä suuri kuin kaikkien vastusten summa $410\,\text{N} + 40\,\text{N} + 30\,\text{N} = 480\,\text{N}$, joten koko järjestelmä liikkuu tasaisella nopeudella. Kitka tien ja kavioiden välillä osoittaa eteenpäin, koska se vastustaa kavion liukumista taaksepäin.
 
 ## fy4-3-L3-05
 **Annettu:** taulukosta nopeus ja köyden voima; hetkillä $t = 4{,}0\,\text{s}$, $5{,}0\,\text{s}$ ja $6{,}0\,\text{s}$ nopeudet $0{,}70$; $0{,}71$ ja $0{,}70\,\text{m/s}$ sekä voimat $3{,}4$; $3{,}5$ ja $3{,}3\,\text{N}$; alussa $F = 5{,}1\,\text{N}$ ja $v = 0$ (esimerkkiaineisto)
