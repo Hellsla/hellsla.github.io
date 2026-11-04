@@ -207,3 +207,102 @@ a alas
 **Sijoitus:** $a = \dfrac{15{,}0\,\text{m/s} - 2{,}0\,\text{m/s}}{2{,}0\,\text{s} - 0\,\text{s}} = 6{,}5\,\text{m/s}^2$ ja $F_\text{v} = 0{,}150\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 6{,}5\,\text{m/s}^2) = 0{,}150\,\text{kg}\cdot 3{,}31\,\text{m/s}^2 = 0{,}4965\,\text{N}$
 **Vastaus:** $0{,}50\,\text{N}$ ylöspäin, kaksi merkitsevää numeroa, koska kuvaajasta luettu kiihtyvyys $6{,}5\,\text{m/s}^2$ on kahden numeron tarkkuudella.
 **Järkevyys:** Pallon paino on $0{,}150\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}5\,\text{N}$. Kiihtyvyys on noin kaksi kolmasosaa putoamiskiihtyvyydestä, joten ilmanvastus kumoaa noin kolmasosan painosta, noin $0{,}5\,\text{N}$. Myöhemmin käyrä loivenee, ilmanvastus kasvaa ja lähestyy painoa.
+
+## fy4-14-L1-06
+**Kysytty:** mikä väite kuvaa oikein putoavaa kappaletta, joka on saavuttanut rajanopeuden.
+**Periaate:** Rajanopeudella kappaleen nopeus ei muutu, joten kiihtyvyys on nolla. Newtonin toisen lain mukaan kokonaisvoima on silloin nolla, vaikka kappale liikkuu. Kappaleeseen vaikuttavat edelleen paino alas ja ilmanvastus ylös.
+**Mallivastaus:** Oikea väite on, että ilmanvastus ja paino ovat yhtä suuret ja kokonaisvoima on nolla. Jos ilmanvastus olisi painoa suurempi, kokonaisvoima osoittaisi ylös ja kappale hidastuisi. Jos paino olisi suurempi, kokonaisvoima osoittaisi alas ja nopeus kasvaisi. Väite, ettei voimia olisi lainkaan, on väärin, sillä nopeus pysyy vakiona vain siksi, että kaksi voimaa kumoaa toisensa. Liikkeen suunta ei kerro voimien suuruuksia.
+
+## fy4-14-L1-07
+**Kysytty:** kumpi samankokoisista ja samanmuotoisista palloista, hiekalla täytetty vai tyhjä, saavuttaa suuremman rajanopeuden.
+**Periaate:** Rajanopeudella ilmanvastus on yhtä suuri kuin paino. Samankokoisiin ja samanmuotoisiin palloihin vaikuttaa samalla nopeudella suunnilleen sama ilmanvastus, ja ilmanvastus kasvaa nopeuden kasvaessa.
+**Mallivastaus:** Hiekkapallo saavuttaa suuremman rajanopeuden. Sen paino on suurempi, joten ilmanvastuksen täytyy kasvaa suuremmaksi ennen kuin se kumoaa painon. Ilmanvastus kasvaa vasta nopeuden kasvaessa, joten raskaamman pallon on kiihdyttävä suurempaan nopeuteen. Tyhjä pallo tasaantuu pienemmällä nopeudella, koska sen paino on pienempi. Väite, että kaikki kappaleet putoavat samalla tavalla, pätee vain ilman ilmanvastusta. Ilmassa painon ero näkyy rajanopeudessa.
+
+## fy4-14-L1-08
+**Annettu:** $m = 60{,}0\,\text{kg}$, ilmanvastus $F_\text{v} = 1500\,\text{N}$, hyppääjä liikkuu alas; oppilaan tulos $2089\,\text{N}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** kokonaisvoiman suuruus $\Sigma F$ yksikössä $\text{N}$ ja oppilaan virhe
+**Periaate:** Kokonaisvoima on kappaleeseen vaikuttavien voimien summa, ja sen suunta on kiihtyvyyden suunta, ei liikkeen suunta. Ilmanvastus osoittaa nopeutta vastaan eli ylös, vaikka hyppääjä liikkuu alas. Oppilas lisäsi ilmanvastuksen painoon, ikään kuin se osoittaisi alas liikkeen mukana.
+**Voimakuvio:** Hyppääjä suorakulmiona, positiivinen suunta alas. Paino $\overline{G}$ keskipisteestä alas ja ilmanvastus $\overline{F}_\text{v}$ alhaalta ylös alapintaan asti, painoa pidempänä. Nopeus alas merkitään erikseen kuvion viereen.
+```voimakuvio
+G 588,6
+F_v 1500 ylös työntö @ala
+a ylös
+v alas
+```
+**Kaava:** $\Sigma F = mg - F_\text{v}$, ja kokonaisvoiman suuruus on $|\Sigma F|$
+**Muunnokset:** Massa on kilogrammoina ja voima newtoneina, joten muunnoksia ei tarvita.
+**Sijoitus:** $\Sigma F = 60{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 - 1500\,\text{N} = 588{,}6\,\text{N} - 1500\,\text{N} = -911{,}4\,\text{N}$
+**Vastaus:** $911\,\text{N}$ ylöspäin (miinusmerkki kertoo suunnan, kun positiivinen suunta on alas), kolme merkitsevää numeroa kuten massassa $60{,}0\,\text{kg}$.
+**Järkevyys:** Ilmanvastus $1500\,\text{N}$ on noin $2{,}5$-kertainen paino $588{,}6\,\text{N}$, joten ylöspäin jää noin $1{,}5$ painon verran eli noin $900\,\text{N}$. Hyppääjä hidastuu mutta liikkuu yhä alas.
+
+## fy4-14-L2-05
+**Annettu:** $m = 20{,}0\,\text{g}$; taulukosta $v_1 = 3{,}35\,\text{m/s}$ hetkellä $t_1 = 0{,}40\,\text{s}$ ja $v_2 = 5{,}15\,\text{m/s}$ hetkellä $t_2 = 0{,}80\,\text{s}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** ilmanvastus $F_\text{v}$ hetkellä $t = 0{,}60\,\text{s}$ yksikössä $\text{N}$
+**Periaate:** Kiihtyvyys on $(t,v)$-kuvaajan kulmakerroin. Hetkeä $0{,}60\,\text{s}$ ympäröivien pisteiden välinen kulmakerroin antaa kiihtyvyyden tälle hetkelle. Palloon vaikuttavat vain paino ja ilmanvastus, joten Newtonin toinen laki antaa ilmanvastuksen.
+**Kuvaajan lukeminen:** Pisteet $(0{,}40\,\text{s};\, 3{,}35\,\text{m/s})$ ja $(0{,}80\,\text{s};\, 5{,}15\,\text{m/s})$ ovat symmetrisesti hetken $0{,}60\,\text{s}$ molemmin puolin, ja niiden kautta piirretyn suoran kulmakerroin on kiihtyvyys. Pisteet ovat kaukana toisistaan, joten yksittäisen mittauksen virhe vaikuttaa vähän.
+**Voimakuvio:** Pallo suorakulmiona, positiivinen suunta alas. Paino $\overline{G}$ keskipisteestä alas ja ilmanvastus $\overline{F}_\text{v}$ alhaalta ylös alapintaan asti, painoa lyhyempänä.
+```voimakuvio
+G 0,1962
+F_v 0,1062 ylös työntö @ala
+a alas
+```
+**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
+**Muunnokset:** $m = 20{,}0\,\text{g} = 20{,}0 \cdot 10^{-3}\,\text{kg} = 0{,}0200\,\text{kg}$
+**Sijoitus:** $a = \dfrac{5{,}15\,\text{m/s} - 3{,}35\,\text{m/s}}{0{,}80\,\text{s} - 0{,}40\,\text{s}} = 4{,}50\,\text{m/s}^2$ ja $F_\text{v} = 0{,}0200\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 4{,}50\,\text{m/s}^2) = 0{,}0200\,\text{kg}\cdot 5{,}31\,\text{m/s}^2 = 0{,}1062\,\text{N}$
+**Vastaus:** $0{,}106\,\text{N}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $20{,}0\,\text{g}$ ja nopeuksissa.
+**Järkevyys:** Pallon paino on $0{,}0200\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}196\,\text{N}$, ja ilmanvastus $0{,}106\,\text{N}$ on noin puolet siitä. Kiihtyvyys $4{,}50\,\text{m/s}^2$ on noin puolet putoamiskiihtyvyydestä, kuten pitää. Taulukon lopussa nopeus on lähes vakio, $5{,}8\,\text{m/s}$, jolloin ilmanvastus on lähellä painoa $0{,}196\,\text{N}$.
+
+## fy4-14-L2-06
+**Annettu:** taulukosta kartio 4: $m_4 = 4{,}8\,\text{g}$ ja $v_4 = 1{,}49\,\text{m/s}$; kartio 1: $m_1 = 1{,}2\,\text{g}$ ja $v_1 = 0{,}72\,\text{m/s}$; kartiot ovat rajanopeudella; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** a) ilmanvastus $F_\text{v}$ kartioon 4 rajanopeudella yksikössä $\text{N}$; b) kuinka monta kertaa suurempi se on kuin kartioon 1 vaikuttava
+**Periaate:** Kun kartio ei enää kiihdy, sen kokonaisvoima on nolla. Rajanopeudella ilmanvastus on siis yhtä suuri kuin paino. Nopeutta ei tarvita ilmanvastuksen laskemiseen, vaan massa riittää.
+**Voimakuvio:** Kartio suorakulmiona, positiivinen suunta alas. Paino $\overline{G}$ keskipisteestä alas ja ilmanvastus $\overline{F}_\text{v}$ alhaalta ylös alapintaan asti, yhtä pitkinä.
+```voimakuvio
+G 0,04709
+F_v 0,04709 ylös työntö @ala
+a 0
+```
+**Kaava:** $mg - F_\text{v} = 0$, joten $F_\text{v} = mg$
+**Muunnokset:** $m_4 = 4{,}8\,\text{g} = 4{,}8 \cdot 10^{-3}\,\text{kg}$
+**Sijoitus:** a) $F_\text{v} = 4{,}8 \cdot 10^{-3}\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}047088\,\text{N}$. b) Ilmanvastuksien suhde on sama kuin massojen suhde: $4{,}8\,\text{g} : 1{,}2\,\text{g} = 4{,}0$. Nopeuksien suhde on $1{,}49\,\text{m/s} : 0{,}72\,\text{m/s} = 2{,}1$.
+**Vastaus:** a) $0{,}047\,\text{N}$ ylöspäin, kaksi merkitsevää numeroa kuten massassa $4{,}8\,\text{g}$. b) Ilmanvastus on $4{,}0$ kertaa suurempi, mutta nopeus vain noin $2{,}1$ kertaa suurempi. Ilmanvastus kasvaa siis nopeammin kuin nopeus: nopeuden kaksinkertaistuessa ilmanvastus kasvaa noin nelinkertaiseksi.
+**Järkevyys:** Kartion paino on noin $5\,\text{g}$, ja $1\,\text{g}$:n paino on noin $0{,}01\,\text{N}$, joten paino on noin $0{,}05\,\text{N}$, ja ilmanvastus rajanopeudella on yhtä suuri. Raskaammalla kartiolla rajanopeus on suurempi, kuten aineisto näyttää: nopeudet kasvavat $0{,}72\,\text{m/s}$:sta $1{,}49\,\text{m/s}$:iin.
+
+## fy4-14-L2-07
+**Kysytty:** mikä väite hyppääjään vaikuttavasta kokonaisvoimasta on oikea taulukon aineiston perusteella.
+**Periaate:** Newtonin toisen lain mukaan kokonaisvoima osoittaa kiihtyvyyden suuntaan, ei liikkeen suuntaan. Kiihtyvyys on nopeuden muutos jaettuna ajalla, joten se luetaan taulukosta nopeuden muutoksesta.
+**Mallivastaus:** Taulukossa nopeus alaspäin pienenee ensimmäisen sekunnin aikana arvosta $52{,}0\,\text{m/s}$ arvoon $24{,}5\,\text{m/s}$, eli noin $27{,}5\,\text{m/s}$ sekunnissa. Hyppääjä liikkuu alas mutta hidastuu, joten kiihtyvyys ja kokonaisvoima osoittavat ylös. Ilmanvastus on silloin painoa suurempi. Lopussa nopeus on lähes vakio, $7{,}3\,\text{m/s}$ ja $7{,}2\,\text{m/s}$, joten kiihtyvyys ja kokonaisvoima ovat lähes nolla ja ilmanvastus on painon suuruinen. Väite, että kokonaisvoima osoittaa alas, koska liike on alas, sekoittaa voiman ja nopeuden suunnan. Väite, että kokonaisvoima olisi nolla koko ajan, on ristiriidassa muuttuvan nopeuden kanssa.
+
+## fy4-14-L3-04
+**Annettu:** $m = 82{,}0\,\text{kg}$; taulukosta $v_1 = 33{,}0\,\text{m/s}$ hetkellä $t_1 = 0{,}5\,\text{s}$ ja $v_2 = 15{,}5\,\text{m/s}$ hetkellä $t_2 = 1{,}5\,\text{s}$; lopussa $v \approx 5{,}6\,\text{m/s}$; $g = 9{,}81\,\text{m/s}^2$; positiivinen suunta alas
+**Kysytty:** a) ilmanvastus $F_\text{v}$ hetkellä $t = 1{,}0\,\text{s}$ yksikössä $\text{N}$; b) ilmanvastus painon monikertana ja kokonaisvoiman suunta; c) ilmanvastus lopussa
+**Periaate:** Kiihtyvyys on nopeuden muutos jaettuna ajalla, ja hetkeä $1{,}0\,\text{s}$ ympäröivät pisteet antavat sen kyseiselle hetkelle. Hyppääjään vaikuttavat vain paino ja ilmanvastus, joten Newtonin toinen laki antaa ilmanvastuksen. Kiihtyvyyden suunta määrää kokonaisvoiman suunnan.
+**Kuvaajan lukeminen:** Luetaan taulukosta pisteet $(0{,}5\,\text{s};\, 33{,}0\,\text{m/s})$ ja $(1{,}5\,\text{s};\, 15{,}5\,\text{m/s})$, jotka ovat hetken $1{,}0\,\text{s}$ molemmin puolin. Nopeus pienenee, joten kulmakerroin eli kiihtyvyys on negatiivinen. Lopun nopeudet $5{,}7\,\text{m/s}$ ja $5{,}6\,\text{m/s}$ ovat lähes samat, joten kiihtyvyys on siellä lähes nolla.
+**Voimakuvio:** Hyppääjä suorakulmiona, positiivinen suunta alas. Paino $\overline{G}$ keskipisteestä alas ja ilmanvastus $\overline{F}_\text{v}$ alhaalta ylös alapintaan asti, painoa selvästi pidempänä. Nopeus alas merkitään erikseen kuvion viereen.
+```voimakuvio
+G 804,4
+F_v 2239 ylös työntö @ala
+a ylös
+v alas
+```
+**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$. Lopussa $a = 0$, joten $F_\text{v} = mg$.
+**Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$, ajat sekunteina ja massa kilogrammoina, joten muunnoksia ei tarvita.
+**Sijoitus:** a) $a = \dfrac{15{,}5\,\text{m/s} - 33{,}0\,\text{m/s}}{1{,}5\,\text{s} - 0{,}5\,\text{s}} = -17{,}5\,\text{m/s}^2$ ja $F_\text{v} = 82{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 17{,}5\,\text{m/s}^2) = 82{,}0\,\text{kg}\cdot 27{,}31\,\text{m/s}^2 = 2239{,}42\,\text{N}$. b) $mg = 82{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 804{,}42\,\text{N}$, joten $F_\text{v} : mg = 2239{,}42\,\text{N} : 804{,}42\,\text{N} = 2{,}78$. c) $F_\text{v} = mg = 804{,}42\,\text{N}$.
+**Vastaus:** a) $2240\,\text{N}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $82{,}0\,\text{kg}$. b) Ilmanvastus on noin $2{,}8$-kertainen paino. Kokonaisvoima $\Sigma F = mg - F_\text{v} = -1435\,\text{N}$ osoittaa ylös, koska kiihtyvyys on ylös. Hyppääjä ei nouse, koska kokonaisvoima pienentää vain alaspäin suuntautuvaa nopeutta: nopeus on kaikissa taulukon kohdissa positiivinen alas. c) Ilmanvastus on noin $804\,\text{N}$, painon suuruinen. Nopeus pysyy vakiona, koska paino ja ilmanvastus kumoavat toisensa ja kokonaisvoima on nolla.
+**Järkevyys:** Ilmanvastus on kolmisen kertaa paino, joten kokonaisvoima on noin kaksi painoa ylöspäin ja kiihtyvyys noin $2g \approx 20\,\text{m/s}^2$. Laskettu $17{,}5\,\text{m/s}^2$ on tätä lähellä. Kun nopeus pienenee, ilmanvastus pienenee, kiihtyvyys lähestyy nollaa ja nopeus tasaantuu, kuten taulukon loppu näyttää.
+
+## fy4-14-L3-05
+**Annettu:** $m = 0{,}0140\,\text{g}$, pudotuskorkeus $h = 1{,}50\,\text{km}$, nopeus Maan lähellä vakio $v = 8{,}0\,\text{m/s}$; pisara lähtee levosta ja liikkuu pystysuoraan; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** a) ilmanvastus $F_\text{v}$ Maan lähellä; b) pisaran nopeus $v$ alhaalla yksikössä $\text{m/s}$, jos ilmanvastusta ei olisi; c) perustelu, miksi sadepisarat eivät ole vaarallisia
+**Periaate:** Kun nopeus on vakio, kiihtyvyys on nolla ja ilmanvastus on yhtä suuri kuin paino. Jos ilmanvastusta ei olisi, pisaraan vaikuttaisi vain paino ja kiihtyvyys olisi koko matkan $g$, joten tasaisesti kiihtyvän liikkeen kaava $v^2 = 2gh$ antaa loppunopeuden levosta lähdettäessä.
+**Voimakuvio:** Pisara pienenä suorakulmiona, positiivinen suunta alas. Maan lähellä paino $\overline{G}$ keskipisteestä alas ja ilmanvastus $\overline{F}_\text{v}$ alhaalta ylös alapintaan asti, yhtä pitkinä.
+```voimakuvio
+G 1,373
+F_v 1,373 ylös työntö @ala
+a 0
+```
+**Kaava:** a) $mg - F_\text{v} = 0$, joten $F_\text{v} = mg$. b) $v^2 = 2gh$, joten $v = \sqrt{2gh}$.
+**Muunnokset:** $m = 0{,}0140\,\text{g} = 1{,}40 \cdot 10^{-5}\,\text{kg}$ ja $h = 1{,}50\,\text{km} = 1500\,\text{m}$
+**Sijoitus:** a) $F_\text{v} = 1{,}40 \cdot 10^{-5}\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 1{,}373 \cdot 10^{-4}\,\text{N}$. b) $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 1500\,\text{m}} = \sqrt{29430\,\text{m}^2/\text{s}^2} = 171{,}55\,\text{m/s}$
+**Vastaus:** a) $1{,}37 \cdot 10^{-4}\,\text{N}$ ylöspäin. b) $172\,\text{m/s}$, kolme merkitsevää numeroa kuten korkeudessa $1{,}50\,\text{km}$. c) Ilman ilmanvastusta nopeus olisi noin $620\,\text{km/h}$, yli $20$-kertainen todelliseen $8{,}0\,\text{m/s}$ nähden, ja pisara olisi vaarallinen. Pisaran pudotessa ilmanvastus kasvaa nopeuden kasvaessa, kunnes se on painon suuruinen. Silloin kokonaisvoima on nolla ja nopeus pysyy vakiona. Pisaran paino on vain noin $1{,}4 \cdot 10^{-4}\,\text{N}$, joten pieni ilmanvastus riittää kumoamaan sen jo pienellä nopeudella.
+**Järkevyys:** Kiihtyvyydellä $g$ pisara saavuttaisi nopeuden $8{,}0\,\text{m/s}$ ajassa $8{,}0\,\text{m/s} : 9{,}81\,\text{m/s}^2 = 0{,}82\,\text{s}$ eli muutamassa metrissä, vaikka matkaa on $1500\,\text{m}$. Todellisuudessa ilmanvastus rajoittaa nopeuden jo heti alussa, joten pisara kulkee lähes koko matkan vakionopeudella ja kokee putoamisen vain noin $190\,\text{s}$ ajan. Tulos $171{,}55\,\text{m/s}$ on suuruusluokaltaan oikea, sillä $\sqrt{2 \cdot 10 \cdot 1500} \approx 170$.

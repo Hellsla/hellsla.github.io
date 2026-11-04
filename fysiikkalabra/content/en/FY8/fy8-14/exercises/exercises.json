@@ -219,7 +219,7 @@
     {
       "id": "fy8-14-L3-01",
       "level": 3,
-      "text": "A tumour receives $30$ radiotherapy sessions of $2.0\\,\\text{Gy}$ each. In each session the radiation is given from five different directions, and each beam gives the same share of the dose to the tumour. At the point where a beam enters, before the tumour, healthy tissue receives $1.3$ times the dose from the beam compared with what the same beam gives to the tumour. How large a total dose does healthy tissue at the entry point of one beam receive during the whole treatment? Assume that the other beams do not pass through this point. Give the answer in grays.",
+      "text": "A tumour receives $30$ radiotherapy sessions of $2.0\\,\\text{Gy}$ each. In each session the radiation is given from five different directions, and each beam gives the same share of the dose to the tumour.\n\nAt the point where a beam enters, before the tumour, healthy tissue receives $1.3$ times the dose from the beam compared with what the same beam gives to the tumour.\n\nHow large a total dose does healthy tissue at the entry point of one beam receive during the whole treatment? Assume that the other beams do not pass through this point. Give the answer in grays.",
       "answer": 16,
       "unit": "Gy",
       "tolerance": 0.03
@@ -227,7 +227,7 @@
     {
       "id": "fy8-14-L3-02",
       "level": 3,
-      "text": "In mammography the voltage of the X-ray tube is about $30\\,\\text{kV}$, and the average energy of the photons is about $20\\,\\text{keV}$. Here assume that the energy of the photons is $30\\,\\text{keV}$. At this energy the half-value thickness of soft tissue is $1.8\\,\\text{cm}$ and that of bone or a calcification is $0.27\\,\\text{cm}$. Two beams of equal length pass through tissue: one through soft tissue alone, and in the other a $1.0\\,\\text{cm}$ stretch of soft tissue has been replaced by a calcified tissue of the same thickness that attenuates like bone. How many times greater is the intensity reaching the detector at the beam that passed through soft tissue alone?",
+      "text": "In mammography the voltage of the X-ray tube is about $30\\,\\text{kV}$, and the average energy of the photons is about $20\\,\\text{keV}$. Here assume that the energy of the photons is $30\\,\\text{keV}$. At this energy the half-value thickness of soft tissue is $1.8\\,\\text{cm}$ and that of bone or a calcification is $0.27\\,\\text{cm}$.\n\nTwo beams of equal length pass through tissue: one through soft tissue alone, and in the other a $1.0\\,\\text{cm}$ stretch of soft tissue has been replaced by a calcified tissue of the same thickness that attenuates like bone.\n\nHow many times greater is the intensity reaching the detector at the beam that passed through soft tissue alone?",
       "answer": 8.9,
       "unit": "",
       "tolerance": 0.02

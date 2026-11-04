@@ -191,6 +191,10 @@ LED on tehty kahdesta erilaisesta puolijohteesta. Toisen, n-alueen, johtavuusvy�
   <foreignObject x="453.5" y="125.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#db3d00">$hf$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/red-led.webp" alt="Lähikuva LEDin kirkkaasta muovikuvusta tummansinistä taustaa vasten; keskellä hehkuu pieni punainen puolijohdesiru metallisen pidikkeen päällä, ja siruun tulee ohut johdinlanka."><figcaption>Punaisen LEDin puolijohdesiru. Kun virta kulkee sirun läpi, elektronit putoavat aukkoihin, ja jokaisesta tällaisesta tapahtumasta syntyy fotoni. Fotonin energia määrää valon värin.</figcaption></figure>
+
+<figure class="unit-photo"><img src="pics/fy8/green-led.webp" alt="Lähikuva LEDin kirkkaasta muovikuvusta tummansinistä taustaa vasten; keskellä hehkuu vihreä puolijohdesiru metallisen pidikkeen päällä."><figcaption>Vihreä LED, jonka siru on indiumgalliumnitridiä (InGaN). Vihreän valon fotonilla on enemmän energiaa kuin punaisen, joten vihreän LEDin kynnysjännite on suurempi kuin punaisen.</figcaption></figure>
+
 ### Kynnysjännite
 Kun elektroni kulkee jännitteen $U$ yli, sähkökenttä tekee siihen työn $eU$, missä $e$ on alkeisvaraus. Juuri näin määriteltiin elektronivoltti luvussa *Valosähköinen ilmiö ja fotoni*. Jotta elektroni voisi synnyttää fotonin, jonka energia on $E_\text{g}$, sen on saatava jännitelähteeltä vähintään likimain tämä energia. Siksi LED ei pienellä jännitteellä juuri johda virtaa eikä säteile. Virta alkaa kasvaa jyrkästi, kun jännite saavuttaa LEDin **kynnysjännitteen** $U_\text{k}$, jolle $eU_\text{k} \approx E_\text{g} \approx hf$. Sinisen valon fotoni tarvitsee enemmän energiaa kuin punaisen, joten sinisen LEDin kynnysjännite on suurempi.
 
@@ -240,6 +244,8 @@ Valonlähteitä voi vertailla mittaamalla niiden spektrin spektrometrillä, kute
   <foreignObject x="302.5" y="102.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#db3d00">$\text{LED}$</div></foreignObject>
   <foreignObject x="399.5" y="77" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#db0000">$\text{laserdiodi}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy8/rgb-led.webp" alt="Läpinäkyvä LED mustaa taustaa vasten, neljä jalkaa oikealla alhaalla; kuvun sisällä pidikkeellä näkyy pieniä punaisia, vihreitä ja sinisiä heijastuksia."><figcaption>RGB-LEDin kuvussa on kolme sirua: punainen, vihreä ja sininen. Jokaisella sirulla on oma kynnysjännitteensä, koska fotonien energiat ovat erisuuret. Kun sirujen virtoja säädetään, LED voi tuottaa monia värejä.</figcaption></figure>
 
 ## Kaava: Kynnysjännite ja fotonin energia
 

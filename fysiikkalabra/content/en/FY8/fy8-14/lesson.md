@@ -190,6 +190,8 @@ In computed tomography (CT), an X-ray tube and detectors rotate around the patie
 
 Source: typical orders of magnitude from the publications of STUK (the Radiation and Nuclear Safety Authority) on radiation exposure in health care and ICRP Publication 128 (2015); the dose of an individual examination depends on the equipment and the patient. For comparison, a person in Finland receives on average about $5.1\,\text{mSv}$ a year from natural radiation (chapter *Radiation dose and radiation safety in Finland*).
 
+<figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="A hospital scanning room: a pale green ring-shaped device with a patient table covered by a white sheet pointing towards its opening."><figcaption>A PET-CT scanner in Bron, France. Inside the ring are the detector ring for PET imaging and the X-ray tube and detectors for computed tomography. The patient slides through the ring on the table.</figcaption></figure>
+
 ### Radionuclide imaging: a tracer shows how an organ works
 
 A **tracer** is a radioactive nuclide attached to a compound that the body handles like its own substances, so it accumulates in the organ being examined. A detector outside the body detects the radiation of the tracer. The image therefore shows not only structure, like an X-ray image, but where the body is active: in a bone scan, for example, the tracer accumulates where bone is renewing itself rapidly, such as in fractures and metastases.
@@ -349,6 +351,8 @@ A household **smoke detector** contains about $37\,\text{kBq}$ of americium-241,
   <foreignObject x="500" y="45.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{control}$</div></foreignObject>
   <foreignObject x="121.5" y="301.5" width="357" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{thicker paper: less gets through}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy8/linear-accelerator.webp" alt="A pale blue treatment room: a large white radiotherapy machine with its treatment head above the couch."><figcaption>A radiotherapy linear accelerator. It accelerates electrons and uses them to produce high-energy X-rays. The treatment head rotates around the patient, so the radiation reaches the tumour from many directions while healthy tissue receives a smaller dose.</figcaption></figure>
 
 ### Safety of patients and staff
 

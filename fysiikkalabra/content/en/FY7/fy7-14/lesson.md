@@ -196,6 +196,8 @@ In the chapter *Interference and diffraction of light* we saw that light is a wa
   <foreignObject x="447" y="285.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{air},\ n = 1.00$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/soap-bubble-reflection.webp" alt="A soap bubble in the air against a green background; an upside-down reflection of trees and sky shows on its surface, with violet and blue colours at the edges."><figcaption>A soap bubble reflects its surroundings like a convex mirror. Colours appear at its edges because light is reflected from both the outer and the inner surface of the film, and the reflected waves interfere.</figcaption></figure>
+
 ### Path difference in the film
 Wave 2, reflected from the lower surface, travels through the film and back, so it travels an extra distance $2d$, where $d$ is the thickness of the film. In the film light travels at the speed $c : n$, but its frequency does not change. The wavelength in the film is therefore $n$ times shorter than in air: for example, in a soap film ($n = 1.33$) a wavelength of $550\,\text{nm}$ shortens to $413.5\,\text{nm}$, because $550\,\text{nm} : 1.33 = 413.5\,\text{nm}$. The extra distance $2d$ therefore holds as many wavelengths as the distance $2nd$ does in air. The path difference between waves 1 and 2 is $2nd$ when the wavelength is measured in air.
 
@@ -380,6 +382,8 @@ A soap bubble is not equally thick everywhere. Gravity drains the soapy water do
   <foreignObject x="512" y="145.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$d\ (\text{nm})$</div></foreignObject>
   <foreignObject x="40" y="19.5" width="199" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{soap film},\ n = 1.33$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/soap-bubble-colours.webp" alt="A close-up of a soap film: orange, blue and violet swirls against a dark background."><figcaption>Interference colours in a soap film. The thickness of the film varies from place to place, and at each point the colour that is reinforced is the one for which the path difference of the two reflections is right.</figcaption></figure>
 
 ## Formula: Thin-film interference
 When light arrives at normal incidence on a film, the path difference between the waves reflected from the two surfaces of the film is

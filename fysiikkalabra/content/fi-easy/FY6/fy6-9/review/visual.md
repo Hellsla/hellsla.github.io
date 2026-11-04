@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: be69f72bfd449b19
+CONTENT-HASH: fb18baf26040b846
 
 ## Blocking
 (none)
 
 ## Polish
-- (Minor) The sim canvas shows U_lat and the readout U_lat too, so fi-easy is consistent.
+- [Minor] fy6-9 ev-battery-cells: the cell labels read '60Ah Dummy Bolt', so these are demonstration cells. Caption says 'Sähköauton akun kennoja'; consider 'Sähköauton akun kennojen mallikappaleita' (for science: check the source text).
 
 ## Checked
-- Current captures (stamp matches): contact sheet 1, sim 390, figures, experiments: no overflow, maths renders, labels fit.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
-- Re-review after the concept-review commit: howto wording (electrical energy transformed into internal energy), efficiency paragraph (often below 100 %, charging always, R and R_s), L3-03 sisäenergiaksi, matching the Finnish; no numbers changed; $ counts equal.
+batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-9.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photo ev-battery-cells: alt matches; calculation $3{,}7\,\text{V}\cdot 60\,\text{Ah}\approx 220\,\text{Wh}$ correct and in LaTeX.

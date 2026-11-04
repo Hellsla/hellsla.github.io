@@ -354,6 +354,8 @@ When a second polariser is placed in the path of polarised light, it is called a
   <foreignObject x="414" y="265.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\theta = 90^\circ$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/polarized-protractor.webp" alt="A close-up of a transparent plastic protractor against a black background; the scale numbers 160, 170 and 180 can be read, and there are rainbow-coloured bands in the plastic."><figcaption>A plastic protractor between two polarisers. Stresses in the plastic rotate the polarisation of different colours by different amounts, so different colours get through the second polariser at different points.</figcaption></figure>
+
 ### Reflected light is partially polarised
 When unpolarised light is reflected from the surface of an insulator, such as water, glass or wet asphalt, the oscillation parallel to the surface is reflected more strongly than the others. The reflected light is therefore **partially polarised** parallel to the surface. The glare reflected from a horizontal surface is thus polarised mostly in the horizontal direction. The degree of polarisation depends on the angle of incidence: at one particular angle, Brewster's angle, the reflected light is completely polarised. Light reflected from a metal surface is not polarised in the same way.
 

@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9723b18e7fd692b5
+CONTENT-HASH: fdb17bb66ff69144
+Mode: full
+Round: 1
 
 ## Blocking
+
+## Fixed
+None needed: plain-Finnish edits (short sentences, 'Siksi', 'Siis') are already in place and change no meaning or number.
 
 ## Polish
 
 ## Checked
-Compared exercises.json and solutions.md (easy Finnish) with the Finnish: same structure, hints, feedback, model answers and criteria; nothing added or dropped.
-Short sentences and common words, plainer than the Finnish yet complete, not identical to it; chapter names, not ids.
-Built preview page checked for leftover Finnish and layout.
-No change needed.
+Feedback of every distractor in L1-06, L1-07, L2-07 keeps the Finnish misconception targeted (force needed for motion, force wears out, net force along velocity; weight vs reaction force; wall force smaller; own force keeps motion going). Tasks with parts a-c keep the same scaffolding and the answer-box sentence names the part. Level and difficulty unchanged from fi. Language: selkosuomi: short sentences, common words, terms (kokonaisvoima, vastavoima) explained.

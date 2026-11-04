@@ -249,7 +249,7 @@
     {
       "id": "fy8-16-L3-01",
       "level": 3,
-      "text": "Kun ytimiä alkoi syntyä muutama minuutti alkuräjähdyksen jälkeen, protoneja oli noin seitsemän kertaa niin paljon kuin neutroneja. Lähes kaikki neutronit sitoutuivat helium-4-ytimiin, joissa on kaksi protonia ja kaksi neutronia, ja loput protonit jäivät vetyytimiksi. Oletetaan, että protonin ja neutronin massat ovat yhtä suuret. Kuinka suuri osa ytimien kokonaismassasta oli heliumia? Anna vastaus prosentteina.",
+      "text": "Kun ytimiä alkoi syntyä muutama minuutti alkuräjähdyksen jälkeen, protoneja oli noin seitsemän kertaa niin paljon kuin neutroneja. Lähes kaikki neutronit sitoutuivat helium-4-ytimiin, joissa on kaksi protonia ja kaksi neutronia, ja loput protonit jäivät vetyytimiksi.\n\nOletetaan, että protonin ja neutronin massat ovat yhtä suuret. Kuinka suuri osa ytimien kokonaismassasta oli heliumia? Anna vastaus prosentteina.",
       "answer": 25,
       "unit": "%",
       "tolerance": 0.02

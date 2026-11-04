@@ -11,6 +11,7 @@
 <meta property="og:url" content="{{url}}">
 <meta name="theme-color" content="#f7f3ec">
 <link rel="stylesheet" href="vendor/katex/katex.min.css">
+<link rel="icon" href="brand/ruukkilabra-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="brand/ruukkilabra-symboli.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="brand/ruukkilabra-180.png">
 <link rel="stylesheet" href="site.css">
@@ -27,7 +28,7 @@
 <main class="reading lesson">
 {{main}}
 </main>
-<footer class="bottom"><span>{{t:site.footer}}</span><a href="lukuvinkit.html">{{t:site.reading_tips}}</a><a href="{{course}}.html">{{back_to_course}}</a><a href="tietoa.html">{{t:site.about}}</a><a href="tietosuoja.html">{{t:site.privacy}}</a></footer>
+<footer class="bottom"><span>{{t:site.footer}}</span><a href="{{course}}.html">{{back_to_course}}</a><a href="tietosuoja.html">{{t:site.privacy}}</a><span class="copyright">{{t:site.copyright}}</span></footer>
 </div>
 <script src="vendor/katex/katex.min.js"></script>
 <script>/* inline maths (NOTES §1; visual audit 2026-10-31): never broken after a multiplication dot ("1,7 ·" / "10⁻¹⁵ m": KaTeX allows a break after every operator, so the box after a dot is merged into the one before; and a short formula is not broken after "=" either ("Q =" / "cmΔT"): pieces are merged while the merged box stays at most 14 characters, so a long calculation still wraps at 360 px), and never parted from the punctuation around it (a formula without a break point is wrapped with a comma, full stop, colon or bracket next to it in one nowrap span; a longer one gets word joiners) */

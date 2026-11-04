@@ -261,7 +261,7 @@
     {
       "id": "fy8-7-L3-01",
       "level": 3,
-      "text": "The rod of a ruby laser has $1.0 \\cdot 10^{19}$ chromium ions, and the laser transition ends in the ground state. The wavelength of the green light of the pump lamp is $550\\,\\text{nm}$, and each absorbed pump photon lifts one ion to the upper laser level. Estimate how much energy of the pump light the ions must absorb at least for a population inversion to appear. Assume that the ions do not have time to decay during the pumping. Give the answer in joules ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$).",
+      "text": "The rod of a ruby laser has $1.0 \\cdot 10^{19}$ chromium ions, and the laser transition ends in the ground state. The wavelength of the green light of the pump lamp is $550\\,\\text{nm}$, and each absorbed pump photon lifts one ion to the upper laser level.\n\nEstimate how much energy of the pump light the ions must absorb at least for a population inversion to appear. Assume that the ions do not have time to decay during the pumping. Give the answer in joules ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$).",
       "answer": 1.8,
       "unit": "J",
       "tolerance": 0.02

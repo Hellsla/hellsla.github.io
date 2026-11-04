@@ -107,7 +107,7 @@
     {
       "id": "fy8-13-L2-03",
       "level": 2,
-      "text": "According to STUK, the average radon concentration of Finnish dwellings is $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$, and it causes an effective dose of about $4.0\\,\\text{mSv}$ per year on average. How large an annual dose from radon does a resident receive whose home has the reference level for dwellings, $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$? Assume that the dose is directly proportional to the concentration and that the resident spends as much time at home as the average person. Give the answer in millisieverts.",
+      "text": "According to STUK, the average radon concentration of Finnish dwellings is $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$, and it causes an effective dose of about $4.0\\,\\text{mSv}$ per year on average.\n\nHow large an annual dose from radon does a resident receive whose home has the reference level for dwellings, $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$? Assume that the dose is directly proportional to the concentration and that the resident spends as much time at home as the average person. Give the answer in millisieverts.",
       "answer": 13,
       "unit": "mSv",
       "tolerance": 0.02
@@ -205,7 +205,7 @@
     {
       "id": "fy8-13-L3-01",
       "level": 3,
-      "text": "The dose rate of a gamma source is $80\\,\\mu\\text{Sv/h}$ at a distance of $1.0\\,\\text{m}$ without a shield. The job lasts $30\\,\\text{min}$ and can be done in two ways: A) $2.0\\,\\text{m}$ from the source without a shield or B) $1.0\\,\\text{m}$ from the source behind an $18\\,\\text{mm}$ lead shield. The half-value thickness of lead is $6.0\\,\\text{mm}$. Calculate the dose with method A minus the dose with method B. Give the answer in microsieverts with its sign: a positive difference means that method B gives the smaller dose.",
+      "text": "The dose rate of a gamma source is $80\\,\\mu\\text{Sv/h}$ at a distance of $1.0\\,\\text{m}$ without a shield.\n\nThe job lasts $30\\,\\text{min}$ and can be done in two ways: A) $2.0\\,\\text{m}$ from the source without a shield or B) $1.0\\,\\text{m}$ from the source behind an $18\\,\\text{mm}$ lead shield. The half-value thickness of lead is $6.0\\,\\text{mm}$.\n\nCalculate the dose with method A minus the dose with method B. Give the answer in microsieverts with its sign: a positive difference means that method B gives the smaller dose.",
       "answer": 5.0,
       "unit": "µSv",
       "tolerance": 0.02
@@ -213,7 +213,7 @@
     {
       "id": "fy8-13-L3-02",
       "level": 3,
-      "text": "The radon concentration of a detached house is measured to be $400\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$. The average concentration of Finnish dwellings, $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$, gives about $4.0\\,\\text{mSv}$ per year on average, and the other radiation sources give about $1.9\\,\\text{mSv}$ per year in total on average. Estimate the annual effective dose of the resident of the house from all sources. Assume that the radon dose is directly proportional to the concentration and that the other sources give the resident the average dose. Give the answer in millisieverts.",
+      "text": "The radon concentration of a detached house is measured to be $400\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$. The average concentration of Finnish dwellings, $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$, gives about $4.0\\,\\text{mSv}$ per year on average, and the other radiation sources give about $1.9\\,\\text{mSv}$ per year in total on average.\n\nEstimate the annual effective dose of the resident of the house from all sources. Assume that the radon dose is directly proportional to the concentration and that the other sources give the resident the average dose. Give the answer in millisieverts.",
       "answer": 19,
       "unit": "mSv",
       "tolerance": 0.02
@@ -221,7 +221,7 @@
     {
       "id": "fy8-13-L3-03",
       "level": 3,
-      "text": "The absorbed dose of a miner's lungs from the alpha radiation of the decay products of radon is $0.10\\,\\text{mGy}$ per year. In addition, their whole body receives a uniform absorbed dose of $0.50\\,\\text{mGy}$ from the gamma radiation of the rock. The weighting factor of alpha radiation is $20$, that of gamma radiation $1$ and the tissue weighting factor of the lungs $0.12$. How large is the worker's effective dose from these two sources together? Give the answer in millisieverts.",
+      "text": "The absorbed dose of a miner's lungs from the alpha radiation of the decay products of radon is $0.10\\,\\text{mGy}$ per year. In addition, their whole body receives a uniform absorbed dose of $0.50\\,\\text{mGy}$ from the gamma radiation of the rock. The weighting factor of alpha radiation is $20$, that of gamma radiation $1$ and the tissue weighting factor of the lungs $0.12$.\n\nHow large is the worker's effective dose from these two sources together? Give the answer in millisieverts.",
       "answer": 0.74,
       "unit": "mSv",
       "tolerance": 0.02

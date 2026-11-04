@@ -190,10 +190,14 @@ Kvanttipisteen väri voidaan siis valita sen koolla, vaikka aine on sama. Kadmiu
   <foreignObject x="455" y="303.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$hf = 2{,}00\,\text{eV}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/helium-neon-laser.webp" alt="Musta laite, jossa lukee He-Ne LASER. Sen päässä loistaa punainen valo."><figcaption>Helium-neonlaser. Sähköpurkaus antaa kaasun atomeille energiaa. Putken päissä on peilit, jotka vahvistavat valoa. Laser tekee kapean punaisen säteen, jonka aallonpituus on $633\,\text{nm}$.</figcaption></figure>
+
 ### Kvanttirakenteiden sovelluksia
 Kvanttipistenäytössä sininen taustavalo osuu kvanttipisteisiin. Pisteet absorboivat sen ja lähettävät puhdasta vihreää tai punaista valoa. Sama tapahtuu fluoresenssissa luvussa *Spektrit paljastavat atomin energiatasot*. Useimmat laserdiodit ovat kvanttikaivolasereita. Niissä kaivon paksuus valitsee aallonpituuden. Aurinkokennoihin tutkitaan kvanttipistekerroksia. Pisteiden koon avulla kerros voidaan säätää absorboimaan haluttu osa Auringon spektristä.
 
 Kvanttitietokoneen perusyksikkö on **kubitti**. Kubitti on kvanttijärjestelmä, jolla on kaksi tilaa. Se voi olla myös näiden tilojen yhdistelmässä eli superpositiossa. Kubitteja tehdään esimerkiksi elektroneista, jotka on suljettu puolijohteen kvanttipisteisiin, ja suprajohtavista piireistä. Tällainen piiri käyttäytyy kuin keinotekoinen atomi, jolla on omat kvantittuneet energiatasonsa. Suomessa suprajohtavia kvanttitietokoneita rakentavat VTT ja IQM. Kubitin tilat ovat herkkiä. Siksi piirit jäähdytetään lähelle absoluuttista nollapistettä ja suojataan ympäristön häiriöiltä.
+
+<figure class="unit-photo"><img src="pics/fy8/rgb-laser-pointer.webp" alt="Kolme lasersädettä pimeässä: punainen, vihreä ja sininen."><figcaption>Punainen, vihreä ja sininen lasersäde. Ilmassa on pieniä hiukkasia, jotka sirottavat valoa. Siksi säteet näkyvät. Sinisen valon fotonissa on eniten energiaa ja punaisen valon fotonissa vähiten.</figcaption></figure>
 
 ## Kaava: Laserin fotonit
 Kaikki laserin fotonit syntyvät samassa siirtymässä. Siksi jokaisen fotonin energia ja aallonpituus ovat

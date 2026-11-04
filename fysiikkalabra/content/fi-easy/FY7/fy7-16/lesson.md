@@ -220,6 +220,8 @@ Lasi ei johda sähköä, joten siihen ei synny virtoja. Lasi lämpenee vain siks
   <line x1="500" y1="158" x2="412" y2="178" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/induction-hob.webp" alt="Musta keittotaso, jossa on neljä keittoaluetta. Takana on kattila."><figcaption>Induktioliesi. Lasin alla on käämi, jossa kulkee vaihtovirta. Sen magneettikenttä tekee kattilan pohjaan pyörrevirtoja. Kattila lämpenee itse. Taso lämpenee vain kattilan takia.</figcaption></figure>
+
 ### Miksi kattilan on oltava terästä tai valurautaa
 Induktioliesi lämmittää tehokkaasti vain kattilaa, jonka pohja on ferromagneettista ainetta, kuten terästä tai valurautaa. Ferromagneettinen pohja vahvistaa kelan kenttää ja kokoaa vuon itseensä (luku *Magneetit, magneettinen dipoli ja magneettikenttä*).
 

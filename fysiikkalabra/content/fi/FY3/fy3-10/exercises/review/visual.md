@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1a32ace4702a77ad
+CONTENT-HASH: 00b576af999c02d9
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] exercises.json L3-02 — "$1{,}20\,\text{m}$ × $1{,}00\,\text{m}$" still uses × between maths values (NOTES §1: \cdot, or "…m ja …m").
-- [Minor] L2-02 Järkevyys (L2-1280-2) — "10 l:aan" detaches the case ending from the litre (small l is a teacher decision); "1800/10 ≈ 180" slash where the house rule says a colon; "hiilidioksidi (44 g/mol)" gap after bracket.
-- [Minor] L2-04 graph — lines run solid from 100 K though data start at 200 K; dash the part beyond the data.
-- [Minor] L1-04 Järkevyys, L3-01 — plain-text "24 l", "1 bar = 100 kPa" beside maths; set as maths.
+- [Minor] L3-04 ja L3-05 taulukot — 1280 px kuvassa sarakeotsikot ($\theta$, $p$) näkyvät eri kohdassa kuin arvot (otsikko "p (bar)" osuu θ-arvojen päälle) — sivuston yhteinen taulukkotyyli (otsikot KaTeX-renderöinnin jälkeen), mutta kolmisarakkeisessa taulukossa hämmentää; ei tämän tehtävän vika.
+- [Minor] L3-05 taulukko — negatiiviset arvot "-17,5", "-50,0" tavuviivalla — käytä miinusmerkkiä.
+- [Minor] solutions.md L3-04 Vastaus — a), b), c) ja vertailu paine-eroon samassa pitkässä kappaleessa — jaa omiksi riveikseen.
+- [Minor] solutions.md L1-07, L3-05 Järkevyys — jakoviiva tekstissä ("264,15/294,15" jne.) — kaksoispiste kirjoitetussa jakolaskussa.
+- [Minor] L1-07 — litra "l" tekstinä ja \textsf{l} — projektin litrakäytäntö, ei muutosta.
 
 ## Checked
-- Delta (numbers with units set as inline LaTeX in task texts and solutions): open-exercises-L2-1280-2 (L1-04 end, L2-02 text/Annettu), open-exercises-L3-1280-4 (L3-02 Järkevyys, L3-03 compressor task and Kaava).
-- Maths inside prose ("$0{,}250\,\text{m}^3$", "$101\,\text{kPa}$:n", "$37\,°C$:n") reads naturally; fraction chains and stacked rows aligned, no clipping, no overflow.
+- Round 2. Round 1 Blocking (L1-08 unit "mol" outside the formula) resolved: now `\,\text{mol}` inside the maths; no plain-text quantities found in the new task texts.
+- L3-04 (new helium-cylinder task) checked as a new task: data table, answer box (g), full solution Annettu–Järkevyys, numbers recomputed (12,29; 9,000; 5,318 mol; 27,9 g; 33,7 and 21,7 balloons) match the answer 28 g.
+- open-exercises-1280-8 (L1-08), L2-1280-9 (L2-06), L3-1280-5, -6, -7, -9 (L3-04, L3-05). No 360 px exercise captures exist.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

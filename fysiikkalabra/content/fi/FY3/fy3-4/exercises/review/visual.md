@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 54b0a1df7915e8ab
+CONTENT-HASH: 42492e47d1fafc99
+Round: 3
+
+Round 3 checks the last commit (`git show HEAD -- content/fi/FY3`), which touches only the fy3-4 L3-05 Järkevyys line; the rest is covered by the round-2 PASS.
 
 ## Blocking
-(none) Round 1 Major is resolved: in L1-1, L2-1, L3-1 and their solution cards every value with unit ("720 N", "0,30 m²", "1,5 cm²", "85 kg", "6,0 kPa") is now KaTeX; a source scan of exercises.json and solutions.md finds no plain-text value with unit.
+- none
 
 ## Polish
-- [Minor] L3-1 Kaava — the two-line A = G/p_max = mg/p_max block is tight, the p_max subscript nearly touches the next line — add vertical spacing or a single line.
-- [Minor] two-liquids graph (round 1) — sound; unchanged.
-- [Minor] Solutions — "Vastaus" rows consistent; unchanged.
+- [Minor] Data tables (L2-05, L2-06, L2-07, L3-05): header and number alignment (site-wide table style, not task content; carried over).
+- [Minor] L3-05 Sijoitus c): the chain 122,6 + 367,9 + 613,1 + 858,4 = 1962 kN has no units on the terms; add kN (carried over).
+- [Minor] Answer-field wording "Vastauskenttään" (fy3-4) vs "Vastauslaatikkoon" in fy3-5..7; pick one site-wide (carried over).
 
 ## Checked
-- Round 2: open-exercises-1280-1 (L1-1), L2-1280-1, L3-1280-1 with solution cards; round-1 captures of the two-liquids figure unchanged by this edit.
+- Diff HEAD read: the Järkevyys line now has three ≈ signs in valid LaTeX (`\approx`), the same notation as elsewhere; no notation or line-length problem. Plain-text quantities: none.
+- No new capture was taken; the change is one symbol in a formula line.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

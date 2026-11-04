@@ -39,6 +39,75 @@
    "answer": -2.6,
    "unit": "kJ",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-8-L1-06",
+   "level": 1,
+   "text": "Kaksi lasta laskee levosta liukumäkeä alas. Toisen liukumäki on jyrkkä ja lyhyt, toisen loiva ja pitkä, mutta molempien lähtökorkeus on sama. Lasten massat ovat yhtä suuret, ja kitka ja ilmanvastus jätetään huomiotta. Mitä lasten nopeuksista liukumäen alapäässä voi päätellä?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Nopeudet ovat yhtä suuret, koska potentiaalienergian muutos on sama.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Jyrkän mäen lapsi on nopeampi, koska hänen kiihtyvyytensä on suurempi.",
+     "feedback": "Kiihtyvyys on jyrkässä mäessä suurempi, mutta matka on lyhyempi. Nopeus määräytyy energiasta: paino tekee työn $mgh$, joka riippuu vain korkeuserosta."
+    },
+    {
+     "text": "Loivan mäen lapsi on nopeampi, koska hän kiihtyy pidemmän aikaa.",
+     "feedback": "Loivassa mäessä aika on pidempi, mutta kiihtyvyys pienempi. Nopeuteen vaikuttaa vain korkeusero, koska mekaaninen energia säilyy."
+    },
+    {
+     "text": "Nopeudet ovat yhtä suuret, koska potentiaalienergian muutos on sama.",
+     "correct": true,
+     "feedback": "Oikein: lapsen mekaaninen energia säilyy ja potentiaalienergian muutos $mgh$ on sama molemmilla, joten liike-energia ja nopeus ovat alapäässä samat."
+    },
+    {
+     "text": "Jyrkän mäen lapsi on nopeampi, koska hänen potentiaalienergiansa muuttuu nopeammin.",
+     "feedback": "Potentiaalienergia muuttuu jyrkässä mäessä nopeammin ajan suhteen, mutta lopputuloksen ratkaisee energian kokonaismuutos. Se on molemmilla sama."
+    }
+   ]
+  },
+  {
+   "id": "fy4-8-L1-07",
+   "level": 1,
+   "text": "Luistelija, jonka massa on $58{,}0\\,\\text{kg}$, liukuu jäällä nopeudella $7{,}50\\,\\text{m/s}$. Kitka ja ilmanvastus hidastavat liikettä, ja luistelijan nopeus pienenee arvoon $4{,}50\\,\\text{m/s}$. Kuinka suuren työn luistelijaan vaikuttava kokonaisvoima tekee hidastumisen aikana? Ilmoita työ etumerkkeineen kilojouleina.",
+   "answer": -1.04,
+   "unit": "kJ",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy4-8-L1-08",
+   "level": 1,
+   "text": "Oppilas ratkaisee tehtävän: \"Laatikko liukuu kaltevaa lankkua alas $5{,}0\\,\\text{m}$:n matkan. Lankun päiden korkeusero on $1{,}5\\,\\text{m}$, ja liikettä vastustava kitkavoima on $8{,}0\\,\\text{N}$. Kuinka suuren työn kitka tekee laatikkoon?\"\n\nOppilaan ratkaisu: $W = -F_\\mu h = -8{,}0\\,\\text{N} \\cdot 1{,}5\\,\\text{m} = -12\\,\\text{J}$.\n\nMikä oppilaan ratkaisussa on virheellistä?",
+   "kind": [
+    "error",
+    "concept"
+   ],
+   "answer": "Kitkan työ lasketaan kuljetulla matkalla eikä korkeuserolla.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Kitkan työ lasketaan kuljetulla matkalla eikä korkeuserolla.",
+     "correct": true,
+     "feedback": "Oikein: kitkan työ on kitkavoima kertaa kuljettu matka pitkin lankkua, tässä $-8{,}0\\,\\text{N} \\cdot 5{,}0\\,\\text{m}$. Korkeusero kuuluu painon työhön."
+    },
+    {
+     "text": "Etumerkki on väärä, koska kitka kasvattaa laatikon mekaanista energiaa.",
+     "feedback": "Kitka vastustaa liikettä, joten sen työ on negatiivinen ja mekaaninen energia pienenee. Oppilaan etumerkki on oikein."
+    },
+    {
+     "text": "Kitkavoima pitää kertoa laatikon painolla eikä korkeuserolla.",
+     "feedback": "Työ on voima kertaa matka, ei voima kertaa paino. Kitkavoima on tehtävässä valmiiksi annettu."
+    },
+    {
+     "text": "Kitkan työ on nolla, koska tukivoima kumoaa kitkan.",
+     "feedback": "Tukivoima on kohtisuorassa lankkua vastaan eikä kumoa kitkaa, joka on lankun suuntainen. Kitka tekee työtä, koska laatikko liikkuu."
+    }
+   ]
   }
  ],
  "level2": [
@@ -73,13 +142,148 @@
    "answer": 21.213203,
    "unit": "m/s",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-8-L2-05",
+   "level": 2,
+   "text": "Oppilaat tutkivat heilurin energiaa valoportilla. Heilurin kuula päästetään levosta eri korkeuksilta $h$ mitattuna heilurin alimmasta kohdasta, ja alimmassa kohdassa oleva valoportti mittaa kuulan nopeuden $v$. Kitka ja ilmanvastus jätetään huomiotta. Taulukko on esimerkkiaineisto.\n\na) Laske jokaisesta mittauksesta $v^2$, piirrä pisteet $(h, v^2)$-koordinaatistoon ja sovita niihin origon kautta kulkeva suora. Määritä suoran kulmakerroin.\n\nb) Johda säilymislaista kulmakertoimen ja putoamiskiihtyvyyden $g$ yhteys ja laske $g$.\n\nc) Perustele, miksi suoran pitää kulkea origon kautta.\n\nVastauskenttään tulee kohdan b) tulos.",
+   "kind": [
+    "data",
+    "graph",
+    "experiment"
+   ],
+   "answer": 9.77,
+   "unit": "m/s²",
+   "tolerance": 0.04,
+   "data": {
+    "caption": "Kuulan nopeus heilurin alimmassa kohdassa (esimerkkiaineisto)",
+    "columns": [
+     "$h\\,(\\text{m})$",
+     "$v\\,(\\text{m/s})$"
+    ],
+    "rows": [
+     [
+      "0.05",
+      "1.00"
+     ],
+     [
+      "0.10",
+      "1.38"
+     ],
+     [
+      "0.15",
+      "1.73"
+     ],
+     [
+      "0.20",
+      "1.96"
+     ],
+     [
+      "0.25",
+      "2.23"
+     ],
+     [
+      "0.30",
+      "2.41"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-8-L2-06",
+   "level": 2,
+   "text": "Pienoisvuoristoradan vaunun massa matkustajineen on $420\\,\\text{kg}$. Vaunun korkeus $h$ ja nopeus $v$ mitattiin neljässä radan kohdassa, ja $s$ on ratamatka kohdasta A. Taulukko on esimerkkiaineisto. Nollataso on maanpinta.\n\na) Laske vaunun mekaaninen energia kohdissa A, B, C ja D kilojouleina.\n\nb) Kuinka suuren työn vastusvoimat tekevät vaunuun kohtien A ja D välillä yhteensä?\n\nc) Millä kohtien välillä keskimääräinen vastusvoima on suurin? Perustele laskemalla.\n\nVastauskenttään tulee kohdan b) tulos kilojouleina.",
+   "kind": [
+    "data",
+    "reasoning"
+   ],
+   "answer": -19.931,
+   "unit": "kJ",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Vaunun mittaukset radan eri kohdissa (esimerkkiaineisto)",
+    "columns": [
+     "Kohta",
+     "$s\\,(\\text{m})$",
+     "$h\\,(\\text{m})$",
+     "$v\\,(\\text{m/s})$"
+    ],
+    "rows": [
+     [
+      "A",
+      "0",
+      "18.0",
+      "1.5"
+     ],
+     [
+      "B",
+      "55",
+      "6.0",
+      "14.6"
+     ],
+     [
+      "C",
+      "120",
+      "12.0",
+      "7.9"
+     ],
+     [
+      "D",
+      "170",
+      "3.0",
+      "14.2"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-8-L2-07",
+   "level": 2,
+   "text": "Oppilaat määrittävät kitkavoiman kokeella. Puupalikka, jonka massa on $0{,}50\\,\\text{kg}$, annetaan liukua vaakasuoralla pöydällä eri alkunopeuksilla $v_0$, ja jokaisella kerralla mitataan palikan pysähtymismatka $s$. Ilmanvastus jätetään huomiotta ja kitkavoiman oletetaan olevan vakio. Taulukko on esimerkkiaineisto.\n\na) Laske $v_0^2$, piirrä pisteet $(v_0^2, s)$-koordinaatistoon ja sovita niihin origon kautta kulkeva suora. Määritä suoran kulmakerroin.\n\nb) Johda energiaperiaatteesta kulmakertoimen ja kitkavoiman $F_\\mu$ yhteys ja laske kitkavoima.\n\nVastauskenttään tulee kohdan b) tulos newtoneina.",
+   "kind": [
+    "data",
+    "graph",
+    "experiment"
+   ],
+   "answer": 1.144,
+   "unit": "N",
+   "tolerance": 0.05,
+   "data": {
+    "caption": "Palikan pysähtymismatka eri alkunopeuksilla (esimerkkiaineisto)",
+    "columns": [
+     "$v_0\\,(\\text{m/s})$",
+     "$s\\,(\\text{m})$"
+    ],
+    "rows": [
+     [
+      "1.0",
+      "0.22"
+     ],
+     [
+      "1.5",
+      "0.47"
+     ],
+     [
+      "2.0",
+      "0.88"
+     ],
+     [
+      "2.5",
+      "1.35"
+     ],
+     [
+      "3.0",
+      "1.98"
+     ]
+    ]
+   }
   }
  ],
  "level3": [
   {
    "id": "fy4-8-L3-01",
    "level": 3,
-   "text": "Pyöräilijä rullaa polkematta ja jarruttamatta mäen alas. Pyöräilijän ja pyörän yhteinen massa on $80\\,\\text{kg}$. Mäen päällä nopeus on $4{,}0\\,\\text{m/s}$ ja mäen alla $13{,}0\\,\\text{m/s}$. Mäen korkeus on $12{,}0\\,\\text{m}$, ja tietä on mäessä $150\\,\\text{m}$. Kuinka suuri on pyöräilijää jarruttava keskimääräinen vastusvoima, kun ilmanvastus ja vierimisvastus lasketaan yhteen?",
+   "text": "Pyöräilijä rullaa polkematta ja jarruttamatta mäen alas. Pyöräilijän ja pyörän yhteinen massa on $80\\,\\text{kg}$.\n\nMäen päällä nopeus on $4{,}0\\,\\text{m/s}$ ja mäen alla $13{,}0\\,\\text{m/s}$. Mäen korkeus on $12{,}0\\,\\text{m}$, ja tietä on mäessä $150\\,\\text{m}$.\n\nKuinka suuri on pyöräilijää jarruttava keskimääräinen vastusvoima, kun ilmanvastus ja vierimisvastus lasketaan yhteen?",
    "answer": 21.984,
    "unit": "N",
    "tolerance": 0.02
@@ -99,6 +303,93 @@
    "answer": 23.160311,
    "unit": "m/s",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-8-L3-04",
+   "level": 3,
+   "text": "Lumilautailija, jonka massa varusteineen on $70\\,\\text{kg}$, laskee levosta rinteen yläpäästä. Rinteen korkeusero on $6{,}0\\,\\text{m}$ ja rinteen pituus $45\\,\\text{m}$. Rinteen alapäästä hän liukuu vaakasuoralla lumella pysähtymiseen asti ja mittaa pysähtymiseen kuluneen matkan $s$. Taulukko on esimerkkiaineisto kuudesta laskusta. Ilmanvastus jätetään huomiotta, ja lumen kitkavoima oletetaan vakioksi sekä rinteessä että vaakasuoralla.\n\na) Laske pysähtymismatkan keskiarvo.\n\nb) Laske lumen keskimääräinen kitkavoima energiaperiaatteella.\n\nc) Laske lautailijan nopeus rinteen alapäässä ja perustele, miksi se on pienempi kuin kitkattomassa tapauksessa.\n\nVastauskenttään tulee kohdan b) tulos.",
+   "kind": [
+    "data",
+    "model"
+   ],
+   "answer": 54.887,
+   "unit": "N",
+   "tolerance": 0.03,
+   "data": {
+    "caption": "Pysähtymismatka vaakasuoralla lumella (esimerkkiaineisto)",
+    "columns": [
+     "Lasku",
+     "$s\\,(\\text{m})$"
+    ],
+    "rows": [
+     [
+      "1",
+      "29.4"
+     ],
+     [
+      "2",
+      "31.2"
+     ],
+     [
+      "3",
+      "28.7"
+     ],
+     [
+      "4",
+      "30.5"
+     ],
+     [
+      "5",
+      "29.9"
+     ],
+     [
+      "6",
+      "30.7"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy4-8-L3-05",
+   "level": 3,
+   "text": "Tennispallo, jonka massa on $0{,}057\\,\\text{kg}$, pudotetaan levosta kovalle lattialle $1{,}20\\,\\text{m}$:n korkeudelta. Pallon korkeus mitataan videolta jokaisen kimmahduksen jälkeen ylimmässä kohdassa. Taulukko on esimerkkiaineisto. Ilmanvastus jätetään huomiotta, joten mekaaninen energia muuttuu vain kimmahduksissa. Nollataso on lattia.\n\na) Laske pallon mekaaninen energia jokaisessa ylimmässä kohdassa sekä se osuus, jonka pallo säilyttää kustakin kimmahduksesta.\n\nb) Laske säilyneiden osuuksien keskiarvo prosentteina.\n\nc) Laske, kuinka paljon mekaanista energiaa muuttuu sisäenergiaksi ensimmäisessä kimmahduksessa. Perustele aineiston avulla, säilyykö pallon mekaaninen energia kimmahduksissa ja säilyykö kokonaisenergia.\n\nVastauskenttään tulee kohdan b) tulos.",
+   "kind": [
+    "data",
+    "reasoning",
+    "model"
+   ],
+   "answer": 63.9,
+   "unit": "%",
+   "tolerance": 0.03,
+   "data": {
+    "caption": "Pallon korkeus ylimmässä kohdassa (esimerkkiaineisto)",
+    "columns": [
+     "Kimmahduksia",
+     "$h\\,(\\text{m})$"
+    ],
+    "rows": [
+     [
+      "0",
+      "1.20"
+     ],
+     [
+      "1",
+      "0.77"
+     ],
+     [
+      "2",
+      "0.49"
+     ],
+     [
+      "3",
+      "0.32"
+     ],
+     [
+      "4",
+      "0.20"
+     ]
+    ]
+   }
   }
  ]
 }

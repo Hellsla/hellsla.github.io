@@ -245,7 +245,7 @@
     {
       "id": "fy2-2-L3-04",
       "level": 3,
-      "text": "The table shows the annual energy of four items, each given in the unit of its own field. Convert the energies to gigajoules, when $1\\,\\text{MWh} = 3.6\\,\\text{GJ}$, $1\\,\\text{toe} = 42\\,\\text{GJ}$ and $1\\,\\text{PJ} = 1\\,000\\,000\\,\\text{GJ}$. Put the items in order from smallest to greatest. How many times greater is the greatest energy than the smallest? Justify why the numbers of the table ($18$, $12$, $1200$ and $3.2$) give a misleading picture of the sizes of the energies.",
+      "text": "The table shows the annual energy of four items, each given in the unit of its own field.\n\nConvert the energies to gigajoules, when $1\\,\\text{MWh} = 3.6\\,\\text{GJ}$, $1\\,\\text{toe} = 42\\,\\text{GJ}$ and $1\\,\\text{PJ} = 1\\,000\\,000\\,\\text{GJ}$. Put the items in order from smallest to greatest. How many times greater is the greatest energy than the smallest? Justify why the numbers of the table ($18$, $12$, $1200$ and $3.2$) give a misleading picture of the sizes of the energies.",
       "kind": [
         "data",
         "reasoning"
@@ -287,7 +287,7 @@
     {
       "id": "fy2-2-L3-05",
       "level": 3,
-      "text": "The energy of a person’s food for a day is in the table. The person uses $10.2\\,\\text{MJ}$ a day on basal metabolism and everyday activities, and in addition walks $5.0\\,\\text{km}$ every day, which uses $250\\,\\text{kJ}$ of energy per kilometre. Surplus or missing energy is stored in the body as fat or used from fat, and one kilogram of fat contains $37\\,\\text{MJ}$ of chemical energy. How much fat is used up in $30$ days, if the situation stays the same? Give the answer in kilograms. Using conservation of energy, justify what the fat that is used up turns into.",
+      "text": "The energy of a person’s food for a day is in the table. The person uses $10.2\\,\\text{MJ}$ a day on basal metabolism and everyday activities, and in addition walks $5.0\\,\\text{km}$ every day, which uses $250\\,\\text{kJ}$ of energy per kilometre.\n\nSurplus or missing energy is stored in the body as fat or used from fat, and one kilogram of fat contains $37\\,\\text{MJ}$ of chemical energy.\n\nHow much fat is used up in $30$ days, if the situation stays the same? Give the answer in kilograms. Using conservation of energy, justify what the fat that is used up turns into.",
       "kind": [
         "data",
         "model",

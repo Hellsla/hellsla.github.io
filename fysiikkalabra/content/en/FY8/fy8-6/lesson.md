@@ -191,6 +191,10 @@ An LED is made of two different semiconductors. In the conduction band of one, t
   <foreignObject x="453.5" y="125.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#db3d00">$hf$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/red-led.webp" alt="A close-up of an LED&#x27;s clear plastic dome against a dark blue background; in the middle a small red semiconductor chip glows on a metal holder, with a thin bond wire leading to it."><figcaption>The semiconductor chip of a red LED. When a current flows through the chip, electrons drop into holes, and each such event produces a photon. The energy of the photon determines the colour of the light.</figcaption></figure>
+
+<figure class="unit-photo"><img src="pics/fy8/green-led.webp" alt="A close-up of an LED&#x27;s clear plastic dome against a dark blue background; in the middle a green semiconductor chip glows on a metal holder."><figcaption>A green LED whose chip is made of indium gallium nitride (InGaN). A photon of green light has more energy than one of red light, so the threshold voltage of a green LED is higher than that of a red one.</figcaption></figure>
+
 ### Threshold voltage
 When an electron passes across a voltage $U$, the electric field does work $eU$ on it, where $e$ is the elementary charge. This is exactly how the electronvolt was defined in the chapter *The photoelectric effect and the photon*. For an electron to be able to create a photon whose energy is $E_\text{g}$, it must receive at least approximately this energy from the voltage source. This is why an LED hardly conducts a current or emits light at a small voltage. The current starts to grow steeply when the voltage reaches the **threshold voltage** $U_\text{k}$ of the LED, for which $eU_\text{k} \approx E_\text{g} \approx hf$. The photon of blue light needs more energy than that of red light, so the threshold voltage of a blue LED is greater.
 
@@ -240,6 +244,8 @@ Light sources can be compared by measuring their spectra with a spectrometer, as
   <foreignObject x="302.5" y="102.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#db3d00">$\text{LED}$</div></foreignObject>
   <foreignObject x="399.5" y="77" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#db0000">$\text{laser diode}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy8/rgb-led.webp" alt="A transparent LED against a black background, with four legs at the lower right; inside the dome small red, green and blue glints show on the holder."><figcaption>The dome of an RGB LED holds three chips: red, green and blue. Each chip has its own threshold voltage, because the photon energies differ. By adjusting the currents through the chips, the LED can produce many colours.</figcaption></figure>
 
 ## Formula: Threshold voltage and photon energy
 

@@ -122,6 +122,8 @@ Tulokulmaa, jolla taitekulma on $90^\circ$, sanotaan **rajakulmaksi** $\alpha_\t
   <foreignObject x="435" y="291.5" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{vesi},\ n = 1{,}33$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/tir-wine-glass.webp" alt="Käsi pitää viinilasia jalasta mustaa taustaa vasten; vihreä lasersäde tulee alhaalta ja kulkee mutkitellen lasin jalassa ja pohjassa."><figcaption>Vihreä lasersäde viinilasin jalassa. Säde osuu lasin pintaan rajakulmaa suuremmassa kulmassa, joten se kokonaisheijastuu takaisin lasiin eikä pääse ilmaan.</figcaption></figure>
+
 ### Vain suuremmasta taitekertoimesta pienempään
 Kokonaisheijastuminen voi tapahtua vain, kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen. Kun valo tulee ilmasta veteen tai lasiin, se taittuu normaalia kohti, ja taittunut säde on olemassa jokaisella tulokulmalla. Silloin osa valosta pääsee aina toiseen aineeseen, vaikka heijastuva osuus kasvaa suurilla tulokulmilla. Kokonaisheijastumisessa valoa ei katoa: sileästä rajapinnasta heijastunut säde vie mukanaan koko tulevan säteen tehon, kun aine ei absorboi valoa. Siksi kokonaisheijastuminen on parempi peili kuin metallipinta, joka absorboi osan valosta.
 
@@ -151,6 +153,8 @@ Kokonaisheijastuminen voi tapahtua vain, kun valo tulee suuremman taitekertoimen
   <circle cx="506" cy="270" r="4" fill="#e64980"/>
   <foreignObject x="330" y="255.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$n_1 > n_2$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/optical-fibres.webp" alt="Kiepille kierretty läpikuultava valokaapeli mustalla pohjalla; kaapelin kummassakin päässä on liitin, josta loistaa punaista valoa."><figcaption>Muovisen valokaapelin toiseen päähän johdettu punainen valo tulee ulos toisesta päästä. Kokonaisheijastumisen ansiosta valo seuraa kuitua kiepin ympäri.</figcaption></figure>
 
 ### Miksi kuidussa on kuori
 Paljas lasisauva pitää valon sisällään ilmassakin, ja vieläpä jyrkemmin tulevan valon, koska lasin ja ilman taitekertoimien ero on suuri ja rajakulma siksi pieni. Lasin pintaan tarttuva vesi, rasva tai toinen kuitu kuitenkin muuttaa rajapintaa, ja kosketuskohdasta valoa vuotaa ulos. Kuori pitää heijastavan rajapinnan puhtaana kuidun sisällä, ja muovinen suojapäällyste suojaa lasia naarmuilta. Kun ytimen ja kuoren taitekertoimien ero on pieni, kuidussa pysyvät vain lähes akselin suuntaiset säteet. Niiden kulkumatkat ovat lähes yhtä pitkät, joten lyhyet valopulssit venyvät matkalla vain vähän.

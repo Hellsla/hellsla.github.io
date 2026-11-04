@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a35e96dac885a3f2
+CONTENT-HASH: 96faa7aa76e5dca2
+Mode: full
+Round: 2
 
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- exercises/solutions.md — same subscript letters (v, j, s) → w, i, melt, consistent with the lesson and the simulation.
-- exercises/exercises.json L3-01 — clumsy 'to be added to the water, so much that the ice melts' → 'The amount of ice is chosen so that the ice melts exactly completely'.
 
 ## Polish
-- None.
+- None (carried over from round 1: none).
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): All 12 exercise texts, answers and units, and all 12 solutions (steps, significant figures, reasonableness) against the Finnish.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked the exercise texts now with LaTeX numbers and units, the new figure task L1-03 (energy bars, answer 60 g) with its solution and figure labels, and the changed Reasonableness lines.
+- Round 2 (delta): only solutions.md L3-04 Substitution changed (commits bf75c929d, 6018cf733): long inline fractions became display `aligned` rows, bracket computed first.
+- solutions.md:185-199 recomputed: 0.200·21.8 − 0.0500·8.2 = 3.95; 0.200·23.8 − 0.0500·6.2 = 4.45; 4190·3.95/0.0500 = 331 010 → 331 000 J/kg = 331 kJ/kg; 4190·4.45/0.0500 = 372 910 → 372 900 J/kg = 373 kJ/kg.
+- c): 2100·0.0500·18.0 J = 1890 J; (18 645.5 J − 1890 J)/0.0500 kg = 335 110 → 335 100 J/kg. Identical to the previous chain and to fi; Answer (331/373/335 kJ/kg) and answers.py untouched.
+- Decimal points, thin-space thousands and subscripts (w, i) match the rest of the en set; same structure as fi line for line.
+- Hash unchanged at start and end.

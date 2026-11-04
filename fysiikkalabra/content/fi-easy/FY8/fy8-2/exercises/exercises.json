@@ -291,7 +291,7 @@
     {
       "id": "fy8-2-L3-01",
       "level": 3,
-      "text": "Vedyn näkyvät spektriviivat syntyvät, kun atomi siirtyy ylemmältä tasolta tasolle $n = 2$, jonka energia on $-3{,}40\\,\\text{eV}$. Mitä ylempi lähtötaso on, sitä lyhyempi on viivan aallonpituus. Viivat eivät kuitenkaan koskaan ylitä tiettyä rajaa. Hyvin ylhäällä olevien tasojen energia on lähes nolla. Mikä on tämän sarjan lyhin mahdollinen aallonpituus? Anna vastaus nanometreinä.",
+      "text": "Vedyn näkyvät spektriviivat syntyvät, kun atomi siirtyy ylemmältä tasolta tasolle $n = 2$, jonka energia on $-3{,}40\\,\\text{eV}$. Mitä ylempi lähtötaso on, sitä lyhyempi on viivan aallonpituus. Viivat eivät kuitenkaan koskaan ylitä tiettyä rajaa. Hyvin ylhäällä olevien tasojen energia on lähes nolla.\n\nMikä on tämän sarjan lyhin mahdollinen aallonpituus? Anna vastaus nanometreinä.",
       "answer": 365,
       "unit": "nm",
       "tolerance": 0.02

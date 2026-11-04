@@ -176,6 +176,8 @@ Sähköauton akku on suuri litiumioniakku (luku *Akut ja latauspiiri*). Tässä 
 
 Latausaika riippuu kahdesta asiasta. Ensimmäinen on se, kuinka paljon energiaa akkuun pitää siirtää. Toinen on se, kuinka suurella teholla energia siirretään. Latauksessa osa verkosta otetusta energiasta ei päädy akkuun. Se muuttuu auton laturin, johtojen ja akun sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Kotilatauksen hyötysuhde on tyypillisesti noin $80\text{–}95\,\%$. Hyötysuhde kertoo, kuinka suuri osa verkosta otetusta energiasta päätyy akkuun. Se jää aina alle $100\,\%$. Verkosta on siksi otettava enemmän energiaa kuin akkuun varastoituu.
 
+<figure class="unit-photo"><img src="pics/fy6/ev-charging-socket.webp" alt="Valkoisen auton keulassa on auki oleva luukku. Sen alla on kaksi latausliitäntää."><figcaption>Sähköauton latausliitännät. Isommalla liitännällä ladataan nopeasti tasavirralla. Pienemmällä ladataan vaihtovirralla. Silloin auton oma laturi muuttaa vaihtovirran tasavirraksi akkua varten.</figcaption></figure>
+
 ### Yksi vaihe vai kolme
 Suomalaiseen omakotitaloon tulee yleensä **kolmivaihesähkö**. Siinä on kolme vaihejohdinta $\text{L}_1$, $\text{L}_2$ ja $\text{L}_3$ sekä nollajohdin $\text{N}$. Vaihejohdin on johto, jossa on jännite. Jokaisen vaihejohtimen ja nollajohtimen välillä on jännite $230\,\text{V}$. Tavallinen pistorasia ja vedenkeitin käyttävät yhtä vaihetta. Kiuas ja latausasema käyttävät yleensä kaikkia kolmea vaihetta. Kun laite ottaa jokaisesta vaihejohtimesta saman virran $I$, jokainen vaihe siirtää tehon $UI$. Kokonaisteho on silloin kolminkertainen. Vaihejohtimien välinen jännite on $400\,\text{V}$, mutta sitä ei tässä tarvita.
 
@@ -260,6 +262,8 @@ Sähköverkosta tuleva kaapeli kulkee mittarin kautta **sähkökeskukseen**. Kes
   <circle cx="528" cy="342" r="9" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <path d="M554,348 q22,6 20,22 q-2,12 -22,10" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy6/ev-charging-station.webp" alt="Keltainen latausasema pysäköintihallissa. Sen ympärillä on keltaiset kaiteet."><figcaption>Sähköauton latausasema pysäköintihallissa Jyväskylässä. Asemalla on oma ryhmä, oma sulake ja oma vikavirtasuoja. Kaiteet suojaavat asemaa, jos auto törmää.</figcaption></figure>
 
 ### Miksi latausasemalla on oma ryhmä ja vikavirtasuoja
 Auton lataus on kodin pisin suuri kuorma. Virta voi kulkea tuntikausia lähes ryhmän sulakkeen suuruisena. Jos samassa ryhmässä olisi muitakin pistorasioita, johto ja pistorasia olisivat tuntikausia lähes nimellisvirralla. Nimellisvirta on suurin virta, jolle johto on tehty. Pistorasian kosketuskohdat lämpenisivät, ja muut kuormat voisivat katkaista latauksen. Siksi sähköasennusstandardi vaatii, että jokaisella latauspisteellä on **oma ryhmä**. Ryhmä on mitoitettu latauspisteen virralle.

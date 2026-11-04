@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 8ec51b6f1fa0235f
+CONTENT-HASH: 030248d9a1c7200f
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md L2-01 Järkevyys — "$8{,}0 + 17{,}2\,\text{m/s}$": the given speed is $8{,}00\,\text{m/s}$, and the unit attaches only to the second term. — Fix: "$(8{,}00 + 17{,}2)\,\text{m/s}$".
-- [Minor] solutions.md L1-02 and L3-02 Kaava — "$2 \cdot g$" appears where every other solution writes "$2g$". — Fix: "$h = \dfrac{v^2}{2g}$" and "$\dfrac{v_1^2}{2g}$".
-- [Minor] solutions.md L1-02 Järkevyys — "$\sqrt{2 \cdot 9{,}81 \cdot 1{,}835}\,\text{m/s}$" drops the units inside the root, unlike the house style in the Sijoitus lines. — Fix: write the units inside, or say the check is done "lukuarvoilla".
-- [Minor] L3-01 Kaava and Sijoitus (`open-exercises-L3-1280-1/2`) — the $\tfrac{m}{2}$ inside the display fraction is tiny, and $F_\text{vast}$ sits higher than the fraction's "=" row. — Fix: "$F_\text{vast} = \dfrac{\tfrac12 m(v_1^2 - v_2^2) + mgh}{s}$", or "$\dfrac{m(v_1^2 - v_2^2) + 2mgh}{2s}$".
+- [Minor] solutions.md fy4-8-L3-05, Vastaus b) (capture L3-1280-7) — the colon division "2,556 : 4 = 0,639" breaks after the colon at the line end, and the three letters a) b) c) run together in one paragraph — put the b) chain on its own display row or add a line break before c).
+- [Minor] solutions.md fy4-8-L3-04 and fy4-8-L2-07 (captures L3-1280-4, L2-1280-9) — inline \dfrac fractions in running Kaava text ($s_\text{ka} = \dfrac{\text{summa}}{6}$, $F = \dfrac{mgh}{L+s_\text{ka}}$) stretch the line spacing; use \tfrac inline or a separate display line. The word "summa" inside the fraction is not a symbol; write $s_\text{ka} = \text{summa} : 6$.
+- [Minor] exercises.json fy4-8-L1-08 (task 11-8, capture 1280-8) — the student's quotation uses straight quotes; use Finnish ”…”.
+- [Minor] Task wording: "Vastauskenttään tulee kohdan b) tulos" in fy4-8 versus "Vastauslaatikkoon" in fy4-7 and fy4-14 — one term across FY4 is preferable (the chapter itself is consistent).
+- [Minor] fy4-8-L3-04/05 and L2-06 solutions are 316-362 words (lint warning); acceptable at level 3.
 
 ## Checked
-- contact-5 and contact-6 (all 12 tasks with every solution open, levels 1–3).
-- `open-exercises-L3-1280-1`, `open-exercises-L3-1280-2` at full size: long chains split into aligned rows, the Vastaus box, Järkevyys, the "Kirjoita ratkaisu" button.
-- Level 1 and 2 solution cards (#50–#60): unit conversion with a colon, $\dfrac{}{}$ chains, signs on the work answers, the kJ answers.
-- Plain-quantity scan of exercises.json and solutions.md: none found. The task texts put the situation first and the question last, and they read in natural Finnish.
+- Level 1 new tasks 11-6, 11-7, 11-8 (1280-5..8): MC rows with feedback, model answer, answer box, solution cards; no clipping.
+- Level 2 new tasks 11-13, 11-14, 11-15 (L2-1280-5..10): data tables, aligned chains, answer boxes and units.
+- Level 3 new tasks 11-19, 11-20 (L3-1280-3..8): multi-part texts, tables, Sijoitus rows, long Vastaus readable.
+- No 390/360 px capture of the exercise cards exists (only stage-exercises-390); layout 360/768/1280 checks ok in the packet; lint now 0 errors, warnings only.
 
 ## Scores
-illustrations n/a (no figures) · typography 4 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

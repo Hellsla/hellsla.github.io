@@ -79,7 +79,7 @@
     {
       "id": "fy5-14-L3-01",
       "level": 3,
-      "text": "A listener stands right next to a straight road and measures with a phone app the frequency of the siren of a passing ambulance: $476\\,\\text{Hz}$ as the car approaches and $404\\,\\text{Hz}$ as it moves away. The speed of the ambulance is constant, but the siren's own frequency is not known. How fast is the ambulance moving? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
+      "text": "A listener stands right next to a straight road and measures with a phone app the frequency of the siren of a passing ambulance: $476\\,\\text{Hz}$ as the car approaches and $404\\,\\text{Hz}$ as it moves away. The speed of the ambulance is constant, but the siren's own frequency is not known.\n\nHow fast is the ambulance moving? The air is calm, and the speed of sound is $340\\,\\text{m/s}$.",
       "answer": 28,
       "unit": "m/s",
       "tolerance": 0.02

@@ -220,7 +220,7 @@
     {
       "id": "fy8-3-L3-01",
       "level": 3,
-      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. In a discharge tube, electrons with a kinetic energy of $12.5\\,\\text{eV}$ collide with hydrogen atoms in the ground state. In a collision an atom can take from the electron only the share of energy that corresponds to the difference of some pair of its levels. How many different wavelengths can the excited atoms emit when they return to the ground state, counting also the transitions that pass through intermediate levels? Count the different pairs of levels between which a transition is possible: each pair of levels gives one wavelength.",
+      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. In a discharge tube, electrons with a kinetic energy of $12.5\\,\\text{eV}$ collide with hydrogen atoms in the ground state. In a collision an atom can take from the electron only the share of energy that corresponds to the difference of some pair of its levels.\n\nHow many different wavelengths can the excited atoms emit when they return to the ground state, counting also the transitions that pass through intermediate levels? Count the different pairs of levels between which a transition is possible: each pair of levels gives one wavelength.",
       "answer": 3,
       "unit": "",
       "tolerance": 0.02

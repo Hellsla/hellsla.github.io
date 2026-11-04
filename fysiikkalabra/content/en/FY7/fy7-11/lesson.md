@@ -81,6 +81,8 @@ In the chapter *Reflection and refraction of light* the refractive index $n$ tol
 
 Refractive indices of water at $20\,{}^\circ\text{C}$: M. Daimon and A. Masumura, *Applied Optics* 46, 2007. Refractive indices of N-BK7 crown glass: SCHOTT AG, optical glass catalogue, 2017.
 
+<figure class="unit-photo"><img src="pics/fy7/prism-dispersion.webp" alt="A vertical band of light on a grey wall, its colours changing from left to right from red through yellow and green to blue."><figcaption>White light that has passed through a prism, falling on a wall. The prism refracts violet and blue light more than red, so the colours spread out into a spectrum.</figcaption></figure>
+
 ### Why violet is slowed down more
 The electric field of light makes the electrons of the material oscillate at the frequency of the light. The oscillating electrons emit light themselves, which combines with the incoming light, and the combined wave travels more slowly than light in vacuum. The response of the electrons depends on frequency. In water and glass it strengthens as the frequency increases towards the ultraviolet, which the material absorbs strongly. So high-frequency violet light is slowed down more than low-frequency red, and its refractive index is greater.
 
@@ -179,6 +181,8 @@ When the sun is behind you, the sun's rays pass your head towards the **antisola
   <foreignObject x="75.5" y="145.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\text{violet}$</div></foreignObject>
   <foreignObject x="61" y="311.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{antisolar point}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/rainbow-glen-coe.webp" alt="A green mountain valley with a stream; a rainbow appears over the valley beneath a cloudy sky."><figcaption>A rainbow in Glen Coe, Scotland. The Sun shines from behind the viewer, and the light is refracted and reflected in water drops, which split it into colours.</figcaption></figure>
 
 A rainbow is therefore seen only when the sun shines from behind you and there are droplets ahead. On level ground only the part of the arc above the horizon is visible. If the sun is at a height $h$ above the horizon, the antisolar point is the same distance below the horizon, and the top of the red arc is at a height $42^\circ - h$. When the sun is higher than $42^\circ$, the whole arc is below the horizon and cannot be seen from the ground. That is why rainbows are seen in midsummer in the morning and evening, when the sun is low.
 

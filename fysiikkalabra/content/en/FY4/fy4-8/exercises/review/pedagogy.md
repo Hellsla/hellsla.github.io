@@ -1,9 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 59be4301cdc0b94a
+CONTENT-HASH: 78c11966c9034b08
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+(none needed)
 
 ## Polish
+(none)
 
 ## Checked
-Read all 12 exercises and solutions: situations first, question last, each solution complete with its significance-figure reason and reasonableness check, as in the Finnish. Nothing added or dropped, no Finnish left. The exercise section renders without overflow at 360, 768 and 1280 px.
+- Natural English; no Finnish left (grep for ä/ö: none).
+- Situation first, question last; parts a)-c) and the "answer field takes the result of part b)" note kept; nothing added or dropped versus fi.
+- Feedback of every distractor in L1-06 and L1-08 stays instructive and matches the fi diagnosis; solutions keep Given/Find/Principle/Formula/Substitution/Answer/Reasonableness with the significance-figure reason.

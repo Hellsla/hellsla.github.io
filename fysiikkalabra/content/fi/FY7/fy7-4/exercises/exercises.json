@@ -27,7 +27,7 @@
     {
       "id": "fy7-4-L1-04",
       "level": 1,
-      "text": "Voimalinjan kahden pylvään välinen $100\\,\\text{m}$:n johdinosa on vaakasuora ja kulkee kompassin osoittamaan pohjois–eteläsuuntaan. Johtimessa kulkee $200\\,\\text{A}$:n virta. Maan magneettikentän magneettivuon tiheys on Etelä-Suomessa noin $53\\,\\mu\\text{T}$, ja kenttä osoittaa magneettiseen pohjoiseen ja alaspäin $74^\\circ$:n kulmassa vaakatasoon nähden (WMM2025-malli, NOAA/BGS). Johtimen ja kentän välinen kulma on siis $74^\\circ$. Kuinka suuri voima Maan magneettikenttä kohdistaa johdinosaan?",
+      "text": "Voimalinjan kahden pylvään välinen $100\\,\\text{m}$:n johdinosa on vaakasuora ja kulkee kompassin osoittamaan pohjois–eteläsuuntaan. Johtimessa kulkee $200\\,\\text{A}$:n virta.\n\nMaan magneettikentän magneettivuon tiheys on Etelä-Suomessa noin $53\\,\\mu\\text{T}$, ja kenttä osoittaa magneettiseen pohjoiseen ja alaspäin $74^\\circ$:n kulmassa vaakatasoon nähden (WMM2025-malli, NOAA/BGS). Johtimen ja kentän välinen kulma on siis $74^\\circ$.\n\nKuinka suuri voima Maan magneettikenttä kohdistaa johdinosaan?",
       "answer": 1.0,
       "unit": "N",
       "tolerance": 0.02
@@ -70,7 +70,7 @@
     {
       "id": "fy7-4-L2-04",
       "level": 2,
-      "text": "Kaksi vaakasuoraa metallikiskoa on $8{,}0\\,\\text{cm}$:n etäisyydellä toisistaan, ja niiden päällä on poikittain $20\\,\\text{g}$:n metallitanko. Kiskojen alueella on pystysuora magneettikenttä, jonka magneettivuon tiheys on $0{,}30\\,\\text{T}$. Virta $15\\,\\text{A}$ kulkee toista kiskoa pitkin tankoon, tangon läpi ja toista kiskoa pitkin takaisin. Kuinka suuri on tangon kiihtyvyys, kun kitka jätetään huomiotta?",
+      "text": "Kaksi vaakasuoraa metallikiskoa on $8{,}0\\,\\text{cm}$:n etäisyydellä toisistaan, ja niiden päällä on poikittain $20\\,\\text{g}$:n metallitanko. Kiskojen alueella on pystysuora magneettikenttä, jonka magneettivuon tiheys on $0{,}30\\,\\text{T}$.\n\nVirta $15\\,\\text{A}$ kulkee toista kiskoa pitkin tankoon, tangon läpi ja toista kiskoa pitkin takaisin.\n\nKuinka suuri on tangon kiihtyvyys, kun kitka jätetään huomiotta?",
       "answer": 18,
       "unit": "m/s²",
       "tolerance": 0.02
@@ -80,7 +80,7 @@
     {
       "id": "fy7-4-L3-01",
       "level": 3,
-      "text": "Vaakasuora kuparitanko, jonka massa on $12\\,\\text{g}$ ja pituus $20\\,\\text{cm}$, riippuu kahden kevyen johtavan langan varassa. Tanko on kokonaan homogeenisessa vaakasuorassa magneettikentässä, jonka magneettivuon tiheys on $0{,}25\\,\\text{T}$, ja kohtisuorassa kenttää vastaan. Langoista johdetaan tankoon virta. Kuinka suuri virran on oltava, jotta langat jäävät löysiksi eli magneettinen voima kannattelee koko tangon painon?",
+      "text": "Vaakasuora kuparitanko, jonka massa on $12\\,\\text{g}$ ja pituus $20\\,\\text{cm}$, riippuu kahden kevyen johtavan langan varassa. Tanko on kokonaan homogeenisessa vaakasuorassa magneettikentässä, jonka magneettivuon tiheys on $0{,}25\\,\\text{T}$, ja kohtisuorassa kenttää vastaan.\n\nLangoista johdetaan tankoon virta.\n\nKuinka suuri virran on oltava, jotta langat jäävät löysiksi eli magneettinen voima kannattelee koko tangon painon?",
       "answer": 2.4,
       "unit": "A",
       "tolerance": 0.03
@@ -88,7 +88,7 @@
     {
       "id": "fy7-4-L3-02",
       "level": 3,
-      "text": "Sähköaseman kaksi rinnakkaista virtakiskoa ovat $0{,}30\\,\\text{m}$:n etäisyydellä toisistaan. Oikosulussa niissä kulkee hetkellisesti $20\\,\\text{kA}$:n virta vastakkaisiin suuntiin. Kuinka suuri voima kohdistuu kiskon $1{,}0\\,\\text{m}$:n pituiseen osaan, ja vetävätkö kiskot toisiaan puoleensa vai hylkivätkö ne toisiaan? Ilmoita voima positiivisena, jos kiskot vetävät toisiaan puoleensa, ja negatiivisena, jos ne hylkivät toisiaan.",
+      "text": "Sähköaseman kaksi rinnakkaista virtakiskoa ovat $0{,}30\\,\\text{m}$:n etäisyydellä toisistaan. Oikosulussa niissä kulkee hetkellisesti $20\\,\\text{kA}$:n virta vastakkaisiin suuntiin.\n\nKuinka suuri voima kohdistuu kiskon $1{,}0\\,\\text{m}$:n pituiseen osaan, ja vetävätkö kiskot toisiaan puoleensa vai hylkivätkö ne toisiaan?\n\nIlmoita voima positiivisena, jos kiskot vetävät toisiaan puoleensa, ja negatiivisena, jos ne hylkivät toisiaan.",
       "answer": -270,
       "unit": "N",
       "tolerance": 0.02
@@ -96,7 +96,7 @@
     {
       "id": "fy7-4-L3-03",
       "level": 3,
-      "text": "Ohut alumiinilanka, jonka pituus on $1{,}0\\,\\text{m}$ ja massa $2{,}7\\,\\text{g}$, on vaakasuorassa kompassin mukaan itä–länsisuunnassa. Maan magneettikentän magneettivuon tiheys on Etelä-Suomessa noin $53\\,\\mu\\text{T}$, ja kenttä osoittaa magneettiseen pohjoiseen ja alaspäin $74^\\circ$:n kulmassa vaakatasoon nähden (WMM2025-malli, NOAA/BGS). Kuinka suuri virta langassa pitäisi kulkea, jotta Maan magneettikenttä kannattelisi langan painon? Anna vastaus kiloampeereina.",
+      "text": "Ohut alumiinilanka, jonka pituus on $1{,}0\\,\\text{m}$ ja massa $2{,}7\\,\\text{g}$, on vaakasuorassa kompassin mukaan itä–länsisuunnassa.\n\nMaan magneettikentän magneettivuon tiheys on Etelä-Suomessa noin $53\\,\\mu\\text{T}$, ja kenttä osoittaa magneettiseen pohjoiseen ja alaspäin $74^\\circ$:n kulmassa vaakatasoon nähden (WMM2025-malli, NOAA/BGS).\n\nKuinka suuri virta langassa pitäisi kulkea, jotta Maan magneettikenttä kannattelisi langan painon? Anna vastaus kiloampeereina.",
       "answer": 1.8,
       "unit": "kA",
       "tolerance": 0.02

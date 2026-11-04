@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 89c6eca643d2df88
+CONTENT-HASH: 1798aebb6bdbcc91
 
 ## Blocking
 (none)
@@ -8,5 +8,4 @@ CONTENT-HASH: 89c6eca643d2df88
 (none)
 
 ## Checked
-- Contact sheets, figures at 390 px, sim at 390 and 1280 px and opened states reviewed: no overflow, maths renders, labels fit.
-- All figure and sim labels are in the page language (Finnish labels).
+batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-10.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photos balloon-hair and balloons-repel: both alts match the images (red balloon above hair; two yellow balloons in front of a green chalkboard); captions correct.

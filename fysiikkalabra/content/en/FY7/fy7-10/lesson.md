@@ -154,6 +154,8 @@ When you look at a coin at the bottom of a swimming pool, the rays from the coin
   <foreignObject x="502" y="281.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{water}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/pencil-in-water.webp" alt="A blue pencil leaning in a glass of water against a grey wall; at the water surface the pencil seems to break and shift sideways."><figcaption>A pencil in a glass of water looks broken. Light from the part of the pencil under water is refracted as it passes from the water through the glass into the air, so we see the pencil in a different place from where it is.</figcaption></figure>
+
 ## Formula: Law of reflection and law of refraction
 The law of reflection: the angle of reflection is equal to the angle of incidence,
 ```latex

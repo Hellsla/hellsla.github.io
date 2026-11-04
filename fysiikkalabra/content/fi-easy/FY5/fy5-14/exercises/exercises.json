@@ -79,7 +79,7 @@
     {
       "id": "fy5-14-L3-01",
       "level": 3,
-      "text": "Kuulija seisoo aivan suoran tien vieressä. Hän mittaa puhelimen sovelluksella ohi ajavan ambulanssin sireenin taajuuden: auton lähestyessä $476\\,\\text{Hz}$ ja sen loitotessa $404\\,\\text{Hz}$. Ambulanssin nopeus on vakio, mutta sireenin omaa taajuutta ei tiedetä. Kuinka suuri on ambulanssin nopeus? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
+      "text": "Kuulija seisoo aivan suoran tien vieressä. Hän mittaa puhelimen sovelluksella ohi ajavan ambulanssin sireenin taajuuden: auton lähestyessä $476\\,\\text{Hz}$ ja sen loitotessa $404\\,\\text{Hz}$. Ambulanssin nopeus on vakio, mutta sireenin omaa taajuutta ei tiedetä.\n\nKuinka suuri on ambulanssin nopeus? Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$.",
       "answer": 28,
       "unit": "m/s",
       "tolerance": 0.02

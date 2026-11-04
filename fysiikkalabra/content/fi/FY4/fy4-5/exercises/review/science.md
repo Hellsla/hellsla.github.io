@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 548a782b3164dea2
+CONTENT-HASH: e6361e81ae93222a
 
 ## Blocking
 
 ## Polish
-- exercises.json:111 (L3-03) — the key is still 0.061, while the solution concludes 0,06 N. It is within tolerance; 0.06 would match.
-- solutions.md:69 (L1-05) — the step "Voimakuvio" shows only T and its components. Rename it, for example to "Kuvio: köyden voima ja komponentit", so it is not taught as a complete force diagram.
-- solutions.md `pinta` diagrams — the surface is hatched inside the voimakuvio, but the lesson says surfaces are not drawn. This comes from the tool, not from this set.
-- solutions.md:78 (L1-05) — the significant-figure reason "eikä 250 N ole sitä tarkempi" is still shaky (carried over).
+- exercises.json L2-07: the ring now lies on a horizontal table. Static friction from the table could take part of the balance, so F₃ would not be exactly the sum. Fix: add "kitka renkaan ja pöydän välillä on pieni", or name it as a cause in c).
+- solutions.md:239, 278 "Kuvaajan lukeminen": the values come from a table, so "Taulukon lukeminen" would fit better.
+- Plan: level 1 asks for an MC with "fbd: select" and level 3 for a "draw" task. The new tasks use identify/equations. This is for pedagogy to judge.
 
 ## Checked
-- Round-1 fix: L3-03 now gives "0,061 N ≈ 0,06 N" and justifies it by decimals in a difference. Correct.
-- One script recomputed all twelve answers: 14,715 / 15 / 4,905 / 637,65 / 191,5 / 51,96 / 660,6 / 0,598 / 1,0 / 581,7 / 1,9 / 0,06076. All agree with answers.py and exercises.json.
-- Models: the wall's static friction is mg; a lift slowing on the way up has a pointing down, so N < G; the curling stone has no forward force; the ceiling's N points down; the L2-04 pulls add as vectors.
-- I rendered all 11 voimakuvio blocks. They use one linear scale, except L1-03 and L3-02, whose separate horizontal scale the rule allows and whose text alternatives say so. Every sum is visible (F = N, F_μ = G; F_noste = G + N), and no force is under 15 %.
-- Directions are right: the wall's N points away from the wall; the L2-03 push ends on the body; v and a are drawn off the body; there are no third-law pairs; components are dashed.
-- The figures ruutu, malli-pulkka and malli-hissi agree with their tasks.
-- Each solution goes diagram, axes, symbolic answer, numbers, then a real reasonableness check. Everything is within FY4's scope.
-- "FAIL sims" does not reproduce. The hash was the same at start and end.
+- Round 2: the blocking item is fixed. The L2-05 text now says "renkaan massa ja paino jätetään huomiotta", and solutions.md:238 refers to it.
+- Round-2 polish items fixed: L2-07 states the plane (horizontal table, weight balanced by the support force), L3-04 d) now gives 1,9·10² N, and the L1-08 "N = 0" feedback uses the friction argument.
+- I recomputed all answers in one script: 55 N, 40,1°, 2,5 m/s², 12,17 N, 83,9 N, 14,38 m. All match answers.py and the solutions.
+- L2-05 data: √(F_A² + F_C²) gives 3,91 / 5,89 / 7,87 N, against the readings 3,9 / 5,9 / 7,9 N.
+- L2-07 data: the computed sums 13,5 / 12,2 / 10,0 N are close to the table's 13,4 / 12,3 / 10,1 N.
+- L3-04: a fit gives a = 0,803 m/s², so F_μ = 83,8 N, and N = 185 N.
+- L3-05: a = 1,20 / 0 / −1,19 m/s², h = 14,4 m, and the diagram is right.
+- MC L1-06 and L1-08: one correct option each, and every distractor is really wrong.
+- The hash was the same at the start and at the end.

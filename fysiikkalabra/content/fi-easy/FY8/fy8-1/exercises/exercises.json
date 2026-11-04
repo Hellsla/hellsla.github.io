@@ -257,7 +257,7 @@
     {
       "id": "fy8-1-L3-02",
       "level": 3,
-      "text": "Natriumpinnan irrotustyö on $2{,}28\\,\\text{eV}$. Pintaa valaistaan hyvin himmeällä sinisellä valolla, jonka intensiteetti on $1{,}0 \\cdot 10^{-6}\\,\\text{W/m}^2$. Kokeessa elektroneja alkaa irrota heti. Tutki, mitä aaltomalli ennustaisi. Oleta, että yksi elektroni kerää kaiken energian, joka osuu sen kohdalle pinta-alalle $1{,}0 \\cdot 10^{-20}\\,\\text{m}^2$. Tämä on suunnilleen yhden atomin poikkipinta-ala. Oleta myös, ettei energiaa häviä minnekään. Käytä arvoa $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka kauan elektronin pitäisi kerätä energiaa, ennen kuin se on saanut irrotustyön verran? Anna vastaus vuorokausina.",
+      "text": "Natriumpinnan irrotustyö on $2{,}28\\,\\text{eV}$. Pintaa valaistaan hyvin himmeällä sinisellä valolla, jonka intensiteetti on $1{,}0 \\cdot 10^{-6}\\,\\text{W/m}^2$. Kokeessa elektroneja alkaa irrota heti.\n\nTutki, mitä aaltomalli ennustaisi. Oleta, että yksi elektroni kerää kaiken energian, joka osuu sen kohdalle pinta-alalle $1{,}0 \\cdot 10^{-20}\\,\\text{m}^2$. Tämä on suunnilleen yhden atomin poikkipinta-ala. Oleta myös, ettei energiaa häviä minnekään. Käytä arvoa $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\nKuinka kauan elektronin pitäisi kerätä energiaa, ennen kuin se on saanut irrotustyön verran? Anna vastaus vuorokausina.",
       "answer": 420,
       "unit": "vrk",
       "tolerance": 0.02

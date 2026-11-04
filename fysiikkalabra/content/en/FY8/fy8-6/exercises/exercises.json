@@ -293,7 +293,7 @@
     {
       "id": "fy8-6-L3-02",
       "level": 3,
-      "text": "A student estimates the uncertainty of the Planck constant by drawing, for the points $(f, U_\\text{k})$, the steepest and the gentlest line that still pass through the uncertainty bars of the points. The slope of the steepest line is $4.25 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$ and that of the gentlest $3.95 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. How great is the uncertainty $\\Delta h$ of the Planck constant, when it is estimated as half the difference of the values given by these lines? Give the answer in the unit $\\text{J}\\,\\text{s}$.",
+      "text": "A student estimates the uncertainty of the Planck constant by drawing, for the points $(f, U_\\text{k})$, the steepest and the gentlest line that still pass through the uncertainty bars of the points.\n\nThe slope of the steepest line is $4.25 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$ and that of the gentlest $3.95 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\nHow great is the uncertainty $\\Delta h$ of the Planck constant, when it is estimated as half the difference of the values given by these lines? Give the answer in the unit $\\text{J}\\,\\text{s}$.",
       "answer": 2.4e-35,
       "unit": "J s",
       "tolerance": 0.03

@@ -293,7 +293,7 @@
     {
       "id": "fy8-6-L3-02",
       "level": 3,
-      "text": "Opiskelija arvioi Planckin vakion epävarmuutta piirtämällä pisteisiin $(f, U_\\text{k})$ jyrkimmän ja loivimman suoran, jotka vielä kulkevat pisteiden epävarmuusjanojen kautta. Jyrkimmän suoran kulmakerroin on $4{,}25 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$ ja loivimman $3{,}95 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri on Planckin vakion epävarmuus $\\Delta h$, kun se arvioidaan puoleksi näiden suorien antamien arvojen erotuksesta? Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
+      "text": "Opiskelija arvioi Planckin vakion epävarmuutta piirtämällä pisteisiin $(f, U_\\text{k})$ jyrkimmän ja loivimman suoran, jotka vielä kulkevat pisteiden epävarmuusjanojen kautta.\n\nJyrkimmän suoran kulmakerroin on $4{,}25 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$ ja loivimman $3{,}95 \\cdot 10^{-15}\\,\\text{V}\\,\\text{s}$. Alkeisvaraus on $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nKuinka suuri on Planckin vakion epävarmuus $\\Delta h$, kun se arvioidaan puoleksi näiden suorien antamien arvojen erotuksesta? Anna vastaus yksikössä $\\text{J}\\,\\text{s}$.",
       "answer": 2.4e-35,
       "unit": "J s",
       "tolerance": 0.03

@@ -190,6 +190,8 @@ Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ymp
 
 Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta koskevista julkaisuista ja ICRP:n julkaisusta 128 (2015); yksittäisen tutkimuksen annos riippuu laitteesta ja potilaasta. Vertailun vuoksi suomalainen saa luonnon säteilystä keskimäärin noin $5{,}1\,\text{mSv}$ vuodessa (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
 
+<figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="Sairaalan kuvaushuone: vaaleanvihreä rengasmainen laite, jonka aukkoa kohti osoittaa valkoisella liinalla peitetty potilaspöytä."><figcaption>PET-TT-laite Bronissa Ranskassa. Renkaan sisällä on PET-kuvauksen ilmaisinrengas ja tietokonetomografian röntgenputki ilmaisimineen. Potilas liukuu pöydän mukana renkaan läpi.</figcaption></figure>
+
 ### Isotooppikuvaus: merkkiaine näyttää elimen toiminnan
 
 **Merkkiaine** on radioaktiivinen nuklidi, joka on liitetty yhdisteeseen, jota elimistö käsittelee kuten omaa ainettaan, joten se kertyy tutkittavaan elimeen. Kehon ulkopuolinen ilmaisin havaitsee merkkiaineen säteilyn. Kuva ei siksi näytä vain rakennetta, kuten röntgenkuva, vaan sen, missä elimistö toimii: esimerkiksi luuston isotooppikuvauksessa merkkiaine kertyy kohtiin, joissa luu uusiutuu vilkkaasti, kuten murtumiin ja etäpesäkkeisiin.
@@ -349,6 +351,8 @@ Lääkintätarvikkeet, kuten ruiskut ja leikkauskäsineet, **steriloidaan** valm
 </svg>
 
 Kodin **savuilmaisimessa** on noin $37\,\text{kBq}$ amerikium-241:tä, jonka alfasäteily ionisoi ilmaa pienessä kammiossa, jolloin kammion läpi kulkee heikko sähkövirta. Savuhiukkaset sitovat ioneja, virta pienenee ja hälytin soi. Amerikium-241:n puoliintumisaika on $432\,\text{a}$, joten kymmenessä vuodessa aktiivisuus pienenee vain noin $2\,\%$. **Radiohiiliajoitus** perustuu siihen, että ilmakehässä syntyy jatkuvasti hiili-14:ää ja elävä eliö pitää sen osuuden hiilestään samana. Kuoleman jälkeen hiili-14 hajoaa puoliintumisajalla $5700\,\text{a}$, joten jäljellä olevasta osuudesta voi laskea iän noin $50\,000$ vuoteen asti.
+
+<figure class="unit-photo"><img src="pics/fy8/linear-accelerator.webp" alt="Vaaleansininen hoitohuone: suuri valkoinen sädehoitolaite, jonka sädepää on hoitopöydän yläpuolella."><figcaption>Sädehoidon lineaarikiihdytin. Laite kiihdyttää elektroneja ja tuottaa niistä suurienergistä röntgensäteilyä. Sädepää kiertää potilaan ympäri, joten säteily osuu kasvaimeen monesta suunnasta ja terve kudos saa pienemmän annoksen.</figcaption></figure>
 
 ### Potilaan ja henkilökunnan turvallisuus
 

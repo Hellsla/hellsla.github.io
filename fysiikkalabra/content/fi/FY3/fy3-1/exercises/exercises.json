@@ -40,6 +40,74 @@
       "answer": 62,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L1-06",
+      "level": 1,
+      "text": "Astronautti matkustaa Maasta Kuuhun. Mikä väite hänen massastaan ja painostaan on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Massa pysyy samana, mutta paino pienenee, koska Kuun vuorovaikutus on heikompi.",
+      "choices": [
+        {
+          "text": "Sekä massa että paino pienenevät, koska Kuussa astronautissa on vähemmän ainetta.",
+          "feedback": "Aineen määrä ei muutu Kuuhun mentäessä, joten massa on sama. Vain paino riippuu paikasta."
+        },
+        {
+          "text": "Massa pienenee, mutta paino pysyy samana, koska astronautin koko ei muutu.",
+          "feedback": "Asia on päinvastoin: massa on kaikkialla sama, mutta paino muuttuu, koska se riippuu paikan $g$:stä."
+        },
+        {
+          "text": "Massa pysyy samana, mutta paino pienenee, koska Kuun vuorovaikutus on heikompi.",
+          "correct": true,
+          "feedback": "Oikein: massa kertoo aineen määrän, eikä se muutu matkalla. Paino $G = m g$ pienenee, koska Kuun $g$ on pienempi kuin Maan."
+        },
+        {
+          "text": "Sekä massa että paino pysyvät samoina, koska astronautti ei menetä mitään matkalla.",
+          "feedback": "Massa pysyy samana, mutta paino ei: se on voima, joka riippuu taivaankappaleen $g$:stä, ja Kuussa $g$ on pienempi."
+        }
+      ]
+    },
+    {
+      "id": "fy3-1-L1-07",
+      "level": 1,
+      "text": "Kirja riippuu voimamittarissa Maan pinnalla. Minkä kahden kappaleen välisen vuorovaikutuksen voimakkuutta kirjan paino $G$ kuvaa?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Maan ja kirjan, koska Maa vetää kirjaa puoleensa.",
+      "choices": [
+        {
+          "text": "Kirjan ja voimamittarin, koska mittarin jousi venyy.",
+          "feedback": "Jousen venymä on vain keino mitata voimaa. Paino kuvaa sitä, kuinka voimakkaasti Maa ja kirja vuorovaikuttavat."
+        },
+        {
+          "text": "Maan ja voimamittarin, koska mittari on Maan pinnalla.",
+          "feedback": "Painoa ei määrää mittari vaan ripustettu kappale: paino kuvaa Maan ja kirjan välistä vuorovaikutusta."
+        },
+        {
+          "text": "Kirjan ja ilman, koska ilma ympäröi kirjaa joka puolelta.",
+          "feedback": "Ilma ei aiheuta painoa. Paino kuvaa vetovoimaa, ja se olisi olemassa ilmattomassakin tilassa."
+        },
+        {
+          "text": "Maan ja kirjan, koska Maa vetää kirjaa puoleensa.",
+          "correct": true,
+          "feedback": "Oikein: paino on Maan ja kirjan välisen vuorovaikutuksen voimakkuuden mitta."
+        }
+      ]
+    },
+    {
+      "id": "fy3-1-L1-08",
+      "level": 1,
+      "text": "Marsissa liikkuvan tutkimusauton massa on $0{,}18\\,\\text{t}$. Mikä on sen paino Marsissa, missä $g = 3{,}71\\,\\text{m/s}^2$?",
+      "answer": 670,
+      "unit": "N",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +142,91 @@
       "answer": 5.9,
       "unit": "N",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "Oppilas ripustaa voimamittariin Maassa eri massaisia punnuksia ja lukee mittarista painon $G$. Mittaustulokset ovat taulukossa (esimerkkiaineisto). Piirrä pisteet $(m, G)$-koordinaatistoon, sovita niihin origon kautta kulkeva suora ja määritä putoamiskiihtyvyys $g$ suoran kulmakertoimesta.",
+      "answer": 9.8,
+      "unit": "m/s²",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Punnusten massa ja voimamittarin lukema Maassa (esimerkkiaineisto)",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$G\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "0.99"
+          ],
+          [
+            "0.20",
+            "1.95"
+          ],
+          [
+            "0.30",
+            "2.96"
+          ],
+          [
+            "0.40",
+            "3.92"
+          ],
+          [
+            "0.50",
+            "4.89"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-1-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Sama kivinäyte punnitaan samalla voimamittarilla kolmella taivaankappaleella. Näytteen massaa ei tiedetä. Tulokset ovat taulukossa (esimerkkiaineisto). Maan putoamiskiihtyvyys on $g_\\text{Maa} = 9{,}81\\,\\text{m/s}^2$.\n\nLaske Marsin putoamiskiihtyvyys $g_\\text{Mars}$ taulukon painoista.",
+      "answer": 3.7,
+      "unit": "m/s²",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Saman näytteen paino kolmella taivaankappaleella (esimerkkiaineisto)",
+        "columns": [
+          "Taivaankappale",
+          "$G\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "Maa",
+            "7.4"
+          ],
+          [
+            "Kuu",
+            "1.2"
+          ],
+          [
+            "Mars",
+            "2.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-1-L2-07",
+      "level": 2,
+      "kind": [
+        "error"
+      ],
+      "text": "Oppilas ripustaa kappaleen voimamittariin Maassa, ja mittarin lukema on $4{,}9\\,\\text{N}$. Hän kirjoittaa muistiin: ”Kappaleen massa on $4{,}9\\,\\text{kg}$, koska voimamittari näyttää massan.”\n\na) Selitä, mikä oppilaan päättelyssä on virheellistä.\n\nb) Laske kappaleen oikea massa. Kirjoita vastauslaatikkoon kohdan b) tulos.",
+      "answer": 0.5,
+      "unit": "kg",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +253,89 @@
       "answer": 69,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Oppilas kalibroi jousen Maassa ripustamalla siihen punnuksia ja mittaamalla jousen venymän $x$ (taulukko, esimerkkiaineisto). Sen jälkeen sama jousi viedään tuntemattomalle taivaankappaleelle, jossa $0{,}50\\,\\text{kg}$:n punnus venyttää jousta $1{,}9\\,\\text{cm}$. Jousen venymä on suoraan verrannollinen voimaan.\n\na) Määritä taulukosta venymä massayksikköä kohti $x/m$ Maassa ja laske sen avulla taivaankappaleen putoamiskiihtyvyys $g$. Maassa $g = 9{,}81\\,\\text{m/s}^2$.\n\nb) Päättele, mikä oppitunnin taulukon taivaankappale ($g$: Kuu $1{,}62$, Mars $3{,}71$, Maa $9{,}81$, Jupiter $24{,}8\\,\\text{m/s}^2$) on kyseessä, ja perustele.\n\nKirjoita vastauslaatikkoon kohdan a) $g$ yksikössä $\\text{m/s}^2$. Kohdan b) perustelun tarkistat mallivastauksesta.",
+      "answer": 3.6,
+      "unit": "m/s²",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Jousen venymä Maassa punnuksen massan funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$x\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "1.1"
+          ],
+          [
+            "0.20",
+            "2.1"
+          ],
+          [
+            "0.30",
+            "3.2"
+          ],
+          [
+            "0.40",
+            "4.1"
+          ],
+          [
+            "0.50",
+            "5.2"
+          ],
+          [
+            "0.60",
+            "6.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-1-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "Laskeutumisyksikön jalat on testattu Maassa: ne kestävät enintään $6{,}00\\,\\text{kN}$:n kokonaisvoiman. Yksikkö lasketaan Marsiin ($g = 3{,}71\\,\\text{m/s}^2$). Yksikön osien massat ovat taulukossa (esimerkkiaineisto).\n\na) Laske osien yhteismassa ja yksikön paino Maassa ja Marsissa. Voisiko yksikkö seistä jaloillaan Maassa?\n\nb) Laske, kuinka suuri lisäkuorma ($\\text{kg}$) Marsiin voidaan vielä lisätä, kun jalat kestävät saman voiman kuin testissä. Perustele, miksi Marsiin voi viedä suuremman kokonaismassan kuin Maahan.\n\nKirjoita vastauslaatikkoon kohdan b) lisäkuorman massa. Kohdan a) tulokset ja perustelun tarkistat mallivastauksesta.",
+      "answer": 682,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Laskeutumisyksikön osien massat (esimerkkiaineisto)",
+        "columns": [
+          "Osa",
+          "$m\\,(\\text{kg})$"
+        ],
+        "rows": [
+          [
+            "Runko",
+            "520"
+          ],
+          [
+            "Mönkijä",
+            "180"
+          ],
+          [
+            "Mittalaitteet",
+            "95"
+          ],
+          [
+            "Polttoaine",
+            "140"
+          ]
+        ]
+      }
     }
   ]
 }

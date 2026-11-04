@@ -550,6 +550,8 @@ The question at the beginning can now be answered. One gram of uranium-235 conta
 
 ## Nuclear power in Finland {Ydinvoima Suomessa}
 
+<figure class="unit-photo"><img src="pics/fy8/loviisa-plant.webp" alt="A power plant on the seashore against a blue sky: two round reactor buildings, a tall chimney and power lines; reeds and pines in the foreground."><figcaption>The Loviisa nuclear power plant on the shore of the Gulf of Finland. The round buildings house two pressurised water reactors. Energy released in fission heats water, and the resulting steam drives the turbines.</figcaption></figure>
+
 ### The power plants
 Finland has two nuclear power plants and five reactors. In 2024, nuclear power produced about $39\,\%$ of Finland's electricity (Statistics Finland: Production of electricity and heat 2024).
 
@@ -605,6 +607,8 @@ Posiva is building Onkalo at Olkiluoto, the world's first repository for spent n
   <foreignObject x="440" y="285.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{fuel}$</div></foreignObject>
   <line x1="382" y1="290" x2="436" y2="300" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy8/onkalo-repository.webp" alt="A lit rock tunnel: rough grey rock walls, a wet gravel floor and lamps far down the curving tunnel."><figcaption>A tunnel in Onkalo, in the bedrock at Olkiluoto, Finland. Spent fuel is placed in copper canisters at a depth of about $430\,\text{m}$, where the rock isolates it from the environment for a long time.</figcaption></figure>
 
 ### Safety and residual heat
 A light-water reactor cannot explode like a nuclear weapon, because its fuel contains only a few percent uranium-235, whereas nuclear weapons use uranium enriched to about $90\,\%$. In addition, when the water boils or heats up, it slows neutrons less well, and the chain reaction weakens by itself. However, shutting down a reactor does not stop the production of heat: the decay of the fission products produces **residual heat**, about $6\,\%$ of the earlier thermal power immediately after shutdown and about $1$–$2\,\%$ after an hour. This is why a reactor has to be cooled for a long time after shutdown. In the Fukushima accident in 2011, a tsunami cut off the cooling, and the residual heat melted fuel in three reactors.

@@ -87,7 +87,7 @@
     {
       "id": "fy6-15-L3-02",
       "level": 3,
-      "text": "A person touches the frame of a faulty device whose voltage relative to the ground is $230\\,\\text{V}$. The resistance of the body from hand to feet is $1.5\\,\\text{k}\\Omega$, but they wear undamaged, dry rubber-soled shoes, and the resistance of the shoes and the dry floor together is $100\\,\\text{k}\\Omega$. They do not touch anything else earthed at the same time. How large a current flows through the body? Answer in milliamperes.",
+      "text": "A person touches the frame of a faulty device whose voltage relative to the ground is $230\\,\\text{V}$. The resistance of the body from hand to feet is $1.5\\,\\text{k}\\Omega$, but they wear undamaged, dry rubber-soled shoes, and the resistance of the shoes and the dry floor together is $100\\,\\text{k}\\Omega$. They do not touch anything else earthed at the same time.\n\nHow large a current flows through the body? Answer in milliamperes.",
       "answer": 2.26601,
       "unit": "mA",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy6-15-L3-03",
       "level": 3,
-      "text": "The graph shows the potential of the ground around a conductor that has fallen to the ground, in a calculated model. A person stands with their feet $1.0\\,\\text{m}$ apart directly away from the point of contact: the nearer foot is at a distance of $2.0\\,\\text{m}$ and the farther at $3.0\\,\\text{m}$. The resistance of the current path from one foot to the other, shoes included, is $4.0\\,\\text{k}\\Omega$. Read the needed values from the graph. How large a current flows from one foot to the other? Answer in milliamperes.",
+      "text": "The graph shows the potential of the ground around a conductor that has fallen to the ground, in a calculated model. A person stands with their feet $1.0\\,\\text{m}$ apart directly away from the point of contact: the nearer foot is at a distance of $2.0\\,\\text{m}$ and the farther at $3.0\\,\\text{m}$. The resistance of the current path from one foot to the other, shoes included, is $4.0\\,\\text{k}\\Omega$.\n\nRead the needed values from the graph. How large a current flows from one foot to the other? Answer in milliamperes.",
       "figure": "fy6-15/ex-askel",
       "answer": 50.0,
       "unit": "mA",

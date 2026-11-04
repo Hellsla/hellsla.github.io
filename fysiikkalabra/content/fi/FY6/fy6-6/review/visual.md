@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3f900a2100837e05
+CONTENT-HASH: 6f026bb8de9505e1
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none)
+- [Minor] fy6-6 alt/kuvateksti — kuvassa näkyy leipä ja oranssi hehku, yksittäisiä vastuslankoja ei erota — alt: "hehkuvat oranssit vastuslangat" -> "leivän ympärillä ja alla hehkuu oranssina paahtimen vastuslangoista tuleva valo".
 
 ## Checked
-- batch delta review: opened fy6-6-fig-row-1280 (first theory figure beside its paragraph, layout intact); the changed Joulen laki sentence and Tiivistelmä line read naturally, the inquiry solution and model sentences ("siitä siirtyy energiaa lämpönä ympäristöön huonosti", "jo, kun se on hieman lämmennyt") are fluent Finnish with units and symbols in LaTeX; no figure or formula changed.
+batch delta review: photo file(s) opened and compared with alt text; rendered fy6-6 at 1280 px (float right, 320 px wide, no clipping, beside its paragraph) and 390 px (full-width block, no horizontal overflow); caption physics, Finnish and LaTeX units read; changed typography checked in the capture.

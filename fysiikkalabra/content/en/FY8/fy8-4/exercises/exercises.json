@@ -266,7 +266,7 @@
     {
       "id": "fy8-4-L3-01",
       "level": 3,
-      "text": "In laser cooling, laser light of wavelength $589\\,\\text{nm}$ is directed against a sodium atom. The atom absorbs one photon at a time, and each photon reduces the momentum of the atom by the momentum of the photon. The mass of the sodium atom is $3.82 \\cdot 10^{-26}\\,\\text{kg}$, and its initial speed is $3.00 \\cdot 10^{2}\\,\\text{m/s}$. How many photons must the atom absorb to stop? Assume that all the photons come straight against it, and ignore the effect of the photons re-emitted by the atom, because they leave in random directions. Give the answer in units of $10^{4}$.",
+      "text": "In laser cooling, laser light of wavelength $589\\,\\text{nm}$ is directed against a sodium atom. The atom absorbs one photon at a time, and each photon reduces the momentum of the atom by the momentum of the photon.\n\nThe mass of the sodium atom is $3.82 \\cdot 10^{-26}\\,\\text{kg}$, and its initial speed is $3.00 \\cdot 10^{2}\\,\\text{m/s}$.\n\nHow many photons must the atom absorb to stop? Assume that all the photons come straight against it, and ignore the effect of the photons re-emitted by the atom, because they leave in random directions. Give the answer in units of $10^{4}$.",
       "answer": 1.02,
       "unit": "10⁴",
       "tolerance": 0.02

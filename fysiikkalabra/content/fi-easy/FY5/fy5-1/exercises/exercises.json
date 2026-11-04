@@ -80,7 +80,7 @@
     {
       "id": "fy5-1-L3-01",
       "level": 3,
-      "text": "Pyöräilijän jalka painaa poljinta suoraan alaspäin $500\\,\\text{N}$:n voimalla. Polkimen etäisyys kammen akselista on $0{,}175\\,\\text{m}$. Kampi osoittaa eteenpäin ja on $45^\\circ$ vaakatason alapuolella. Missä kammen asennossa sama voima antaisi suurimman momentin? Missä asennossa momentti olisi nolla? Kuinka suuri on jalan voiman momentti kammen akselin suhteen, kun kampi on tässä $45^\\circ$:n asennossa?",
+      "text": "Pyöräilijän jalka painaa poljinta suoraan alaspäin $500\\,\\text{N}$:n voimalla. Polkimen etäisyys kammen akselista on $0{,}175\\,\\text{m}$. Kampi osoittaa eteenpäin ja on $45^\\circ$ vaakatason alapuolella.\n\nMissä kammen asennossa sama voima antaisi suurimman momentin? Missä asennossa momentti olisi nolla? Kuinka suuri on jalan voiman momentti kammen akselin suhteen, kun kampi on tässä $45^\\circ$:n asennossa?",
       "answer": 61.9,
       "unit": "Nm",
       "tolerance": 0.02

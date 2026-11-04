@@ -240,7 +240,7 @@
     {
       "id": "fy1-4-L2-07",
       "level": 2,
-      "text": "Kahdesta tasalaatuisesta metallista, A:sta ja B:stä, valmistettiin kummastakin eri tilavuuksisia saman aineen kappaleita, ja jokaisen massa punnittiin. Piirrä kummankin aineen mittauspisteistä kuvaaja samaan koordinaatistoon ja sovita kumpaankin oma suora. Kuinka monta kertaa suurempi on B:n suoran kulmakerroin kuin A:n? Mitä kulmakerroin tässä kuvaajassa tarkoittaa, ja kumpi aine on tiheämpi?",
+      "text": "Kahdesta tasalaatuisesta metallista, A:sta ja B:stä, valmistettiin kummastakin eri tilavuuksisia saman aineen kappaleita, ja jokaisen massa punnittiin.\n\nPiirrä kummankin aineen mittauspisteistä kuvaaja samaan koordinaatistoon ja sovita kumpaankin oma suora. Kuinka monta kertaa suurempi on B:n suoran kulmakerroin kuin A:n? Mitä kulmakerroin tässä kuvaajassa tarkoittaa, ja kumpi aine on tiheämpi?",
       "kind": [
         "data",
         "graph",
@@ -290,7 +290,7 @@
     {
       "id": "fy1-4-L3-01",
       "level": 3,
-      "text": "Oppilas mittasi kärryn paikkaa $s$ ajan $t$ funktiona, mutta käynnisti sekuntikellon vasta sitten, kun kärry oli jo kulkenut radan alusta. Mittauspisteisiin sovitettu suora on $s = 0{,}85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0{,}40\\,\\text{m}$, missä $s$ mitataan radan alusta. Mikä aika sekuntikellon mukaan vastaa hetkeä, jolloin kärry oli radan alussa ($s = 0$)? Anna vastaus etumerkkeineen sekunteina ja perustele etumerkki.",
+      "text": "Oppilas mittasi kärryn paikkaa $s$ ajan $t$ funktiona, mutta käynnisti sekuntikellon vasta sitten, kun kärry oli jo kulkenut radan alusta.\n\nMittauspisteisiin sovitettu suora on $s = 0{,}85\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 0{,}40\\,\\text{m}$, missä $s$ mitataan radan alusta.\n\nMikä aika sekuntikellon mukaan vastaa hetkeä, jolloin kärry oli radan alussa ($s = 0$)? Anna vastaus etumerkkeineen sekunteina ja perustele etumerkki.",
       "answer": -0.47,
       "unit": "s",
       "tolerance": 0.02
@@ -306,7 +306,7 @@
     {
       "id": "fy1-4-L3-03",
       "level": 3,
-      "text": "Suoralta $y = 2{,}0\\,x$ luetaan kaksi pistettä, ja kummankin $y$-arvon lukemavirhe on enintään $0{,}1$ yksikköä. Kulmakerroin lasketaan joko pisteistä $x = 4{,}0$ ja $x = 4{,}5$ tai pisteistä $x = 1{,}0$ ja $x = 9{,}0$. Kuinka monta kertaa suurempi on kulmakertoimen suhteellinen epävarmuus lähekkäisistä pisteistä laskettuna? Käytä pahinta tapausta, jossa lukemavirheet summautuvat erotukseen $\\Delta y$. Perustele, miksi kaukana toisistaan olevat pisteet ovat parempi valinta.",
+      "text": "Suoralta $y = 2{,}0\\,x$ luetaan kaksi pistettä, ja kummankin $y$-arvon lukemavirhe on enintään $0{,}1$ yksikköä. Kulmakerroin lasketaan joko pisteistä $x = 4{,}0$ ja $x = 4{,}5$ tai pisteistä $x = 1{,}0$ ja $x = 9{,}0$.\n\nKuinka monta kertaa suurempi on kulmakertoimen suhteellinen epävarmuus lähekkäisistä pisteistä laskettuna? Käytä pahinta tapausta, jossa lukemavirheet summautuvat erotukseen $\\Delta y$. Perustele, miksi kaukana toisistaan olevat pisteet ovat parempi valinta.",
       "answer": 16,
       "unit": "kertaa",
       "tolerance": 0.02
@@ -364,7 +364,7 @@
     {
       "id": "fy1-4-L3-05",
       "level": 3,
-      "text": "Kärryn matka $s$ mitattiin ajan $t$ funktiona. Piirrä mittauspisteistä kuvaaja. Pisteiden joukkoon mahtuu jyrkin suora, joka kulkee pisteiden $(1{,}0\\,\\text{s};\\ 0{,}75\\,\\text{m})$ ja $(6{,}0\\,\\text{s};\\ 3{,}50\\,\\text{m})$ kautta, ja loivin suora pisteiden $(2{,}0\\,\\text{s};\\ 1{,}40\\,\\text{m})$ ja $(5{,}0\\,\\text{s};\\ 2{,}60\\,\\text{m})$ kautta. Oppilas arvioi kulmakertoimeksi näiden suorien kulmakertoimien keskiarvon ja sen epävarmuudeksi niiden erotuksen: \"Jyrkin suora antaa $0{,}55\\,\\text{m/s}$ ja loivin $0{,}40\\,\\text{m/s}$. Keskiarvo on $0{,}475\\,\\text{m/s}$ ja epävarmuus $0{,}55\\,\\text{m/s} - 0{,}40\\,\\text{m/s} = 0{,}15\\,\\text{m/s}$, joten epävarmuus on $32\\,\\%$ kulmakertoimesta.\" Etsi oppilaan virhe ja laske oikea epävarmuus prosentteina kulmakertoimesta. Selitä, mitä tämä arvio kertoo ja mitä se ei takaa.",
+      "text": "Kärryn matka $s$ mitattiin ajan $t$ funktiona. Piirrä mittauspisteistä kuvaaja. Pisteiden joukkoon mahtuu jyrkin suora, joka kulkee pisteiden $(1{,}0\\,\\text{s};\\ 0{,}75\\,\\text{m})$ ja $(6{,}0\\,\\text{s};\\ 3{,}50\\,\\text{m})$ kautta, ja loivin suora pisteiden $(2{,}0\\,\\text{s};\\ 1{,}40\\,\\text{m})$ ja $(5{,}0\\,\\text{s};\\ 2{,}60\\,\\text{m})$ kautta.\n\nOppilas arvioi kulmakertoimeksi näiden suorien kulmakertoimien keskiarvon ja sen epävarmuudeksi niiden erotuksen: \"Jyrkin suora antaa $0{,}55\\,\\text{m/s}$ ja loivin $0{,}40\\,\\text{m/s}$. Keskiarvo on $0{,}475\\,\\text{m/s}$ ja epävarmuus $0{,}55\\,\\text{m/s} - 0{,}40\\,\\text{m/s} = 0{,}15\\,\\text{m/s}$, joten epävarmuus on $32\\,\\%$ kulmakertoimesta.\"\n\nEtsi oppilaan virhe ja laske oikea epävarmuus prosentteina kulmakertoimesta. Selitä, mitä tämä arvio kertoo ja mitä se ei takaa.",
       "kind": [
         "data",
         "graph",

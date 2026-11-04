@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4cfa8a8208c7ac15
+CONTENT-HASH: 2a315176056af704
 
-Delta review over the audit's PASS (497163bfee90ee02): L1-03 (c m ΔT of 0,30 kg water) replaced by a figure task (fy3-14/energy-bars: 25 kJ water, 5 kJ warming the ice, 60 kJ melting all; how much ice melts).
+Round 3 (delta): L3-04 Sijoitus split into display `aligned` rows for 360 px (commits bf75c929d, 6018cf733); the rest of the set unchanged since the round-2 PASS.
 
 ## Blocking
-- none
+
 ## Polish
-- none
+- exercises.json L2-07, fourth option feedback — "Virhe syntyy siitä, että jään massa tai lämpötila poikkeaa oletetusta": in this task only the mass explains a too-small s (colder ice makes it too large, as the first option's feedback says). Write "jään massa poikkeaa oletetusta".
+- exercises.json L1-06 / solutions.md L1-06 — "Täsmälleen 0 °C" holds at normal pressure; the lesson's Tiivistelmä says "normaalipaineessa". Optional to add (level-1 simplification, C).
+- docs/exercise-bank/FY3.md fy3-14 Taso 2 — the planned "lämpötila-aikakuvaaja, jossa kaikki jää ei sula (figure)" has no task; L2-06 (error analysis, table-free) covers "kaikki jää ei sula". Update the plan line or note the substitution.
+
 ## Checked
-- Figure code: bars end at 25, 5 and 60 kJ on a 5 kJ grid (labels every 10 kJ); screenshot matches; the description does not give the melted mass.
-- Case: 5 ≤ 25 < 5 + 60 kJ -> ice left, final 0 °C, wording matches the guardrail boundary cases; water does not freeze (25 ≥ 5).
-- m_s = (25 − 5) kJ / 334 kJ/kg = 0,05988 kg = 59,9 g -> 60 g; answers.py = 59,88; energy balance 5 + 20 = 25 kJ right.
-- Tolerance 0,02 -> 58,8–61,2 g; rejects 25/334 = 74,9 g (forgetting to warm the ice) and "all melts" 180 g.
-- Consistency: all ice 60/334 = 0,180 kg; its warming 5 kJ means ΔT ≈ 13 K with c = 2100 J/(kg·K), plausible ("pakastimesta", no temperature given).
-- Isolated vessel stated; 2 s.f. from the read 20 kJ right.
+- solutions.md:186-200 L3-04 recomputed: 0,200·21,8 − 0,0500·8,2 = 3,95; 0,200·23,8 − 0,0500·6,2 = 4,45; 4190·3,95/0,0500 = 331 010 → 331 000 J/kg = 331 kJ/kg; 4190·4,45/0,0500 = 372 910 → 372 900 J/kg = 373 kJ/kg.
+- c): 2100·0,0500·18,0 J = 1890 J; (18 645,5 J − 1890 J)/0,0500 kg = 335 110 → 335 100 J/kg. Every value identical to the previous single-line chain; Vastaus (331/373/335 kJ/kg) and answers.py untouched.
+- The bracket is still m_v(T_v − T) − m_j T with c_v factored out, consistent with the Kaava line; units J and kg on the display rows as before.
+- Hash unchanged at start and end.

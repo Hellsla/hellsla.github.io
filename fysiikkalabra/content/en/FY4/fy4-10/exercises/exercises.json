@@ -79,7 +79,7 @@
     {
       "id": "fy4-10-L3-01",
       "level": 3,
-      "text": "The velocity of a bullet is measured with a ballistic pendulum: a $2.0\\,\\text{kg}$ block of wood hangs at rest from a long string, and a $10\\,\\text{g}$ bullet is fired horizontally into the block at $400\\,\\text{m/s}$ and stays in it. The bullet stops in the block so quickly that the block does not have time to move during it. After that the block and the bullet swing up together. Air resistance is neglected. How high does the block rise from its lowest point? Answer in centimetres.",
+      "text": "The velocity of a bullet is measured with a ballistic pendulum: a $2.0\\,\\text{kg}$ block of wood hangs at rest from a long string, and a $10\\,\\text{g}$ bullet is fired horizontally into the block at $400\\,\\text{m/s}$ and stays in it.\n\nThe bullet stops in the block so quickly that the block does not have time to move during it. After that the block and the bullet swing up together. Air resistance is neglected.\n\nHow high does the block rise from its lowest point? Answer in centimetres.",
       "answer": 20.185005,
       "unit": "cm",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy4-10-L3-02",
       "level": 3,
-      "text": "A firework rocket of mass $0.90\\,\\text{kg}$ rises straight up at $12\\,\\text{m/s}$ when it explodes into two pieces. The $0.30\\,\\text{kg}$ piece continues straight up at $40\\,\\text{m/s}$, and the other piece moves vertically. The impulse of the weight and of air resistance is neglected for the short time of the explosion. What is the velocity of the other piece immediately after the explosion? Give the velocity with its sign when upwards is the positive direction.",
+      "text": "A firework rocket of mass $0.90\\,\\text{kg}$ rises straight up at $12\\,\\text{m/s}$ when it explodes into two pieces. The $0.30\\,\\text{kg}$ piece continues straight up at $40\\,\\text{m/s}$, and the other piece moves vertically.\n\nThe impulse of the weight and of air resistance is neglected for the short time of the explosion.\n\nWhat is the velocity of the other piece immediately after the explosion? Give the velocity with its sign when upwards is the positive direction.",
       "answer": -2.0,
       "unit": "m/s",
       "tolerance": 0.02

@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1b72d20a59f51860
+CONTENT-HASH: c2d3495c28992833
+Round: 2
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L1-04 diagram (svg 4, 252x230, split scale, caption present): the short $\overline{F}_\text{r}$ now keeps a visible shaft beside $\overline{F}_\text{i}$ (improved); the two still share a line and the $\overline{F}_\text{r}$ label sits on the ground hatching — move the label.
-- [Minor] Diagram 11 ($\overline{F}_\text{n}$, $\overline{F}_\text{v}$, $\overline{G}$, $\overline{v}$; 116x363 at 390) and diagram 13 (95x382) are tall and narrow: no clipping, and the white space is clean, but they are the largest figures in the card — acceptable, only noting it.
-- [Minor] Diagram 9 ($\overline{G}_\text{m}$ beside $\overline{G}_\text{k}$) is still close; both weights read.
-- [Minor] Carried over: figure $F_\text{A}$/$F_\text{B}$ upright, prose italic; Sijoitus boxes set smaller than the maths around them.
+- [Minor] L3-05 table / solution — v at 3,0 s is $0{,}69\,\text{m/s}$, practically equal to $0{,}70\,\text{m/s}$ at 4,0 s, so "vakio vasta 4,0 s:stä" is not readable from the table; for science: make the 3,0 s row clearly still accelerating or say it is within noise.
+- [Minor] L2-06 Vastaus a) — "pieni ilmanvastus on hyvin pieni" is tautological — "ilmanvastus on niin pieni, että se voidaan jättää huomiotta".
+- [Minor] L2-07 and L3-04 task quotes use straight "…" — Finnish ”…” as fy4-12 L2-06 does.
+- [Minor] L1-08 / L3-04 "Voimakuvio" is described in words only and F_KL / F_LK / T are not defined in the task — name the symbols in Annettu.
 
 ## Checked
-- Re-checked after the split-scale change: diagram 4 re-rendered at 390 and 1280 and opened enlarged.
-- Hash 1b72d20a59f51860 at start and end; text unchanged.
-- Rendered every force diagram of the exercises from preview/fy4-3.html at 390 and 1280 (the packet has only 1280 captures) and opened them enlarged, including redrawn 6 and 9-12 (support N and v, T with G_k and G_m, F_n/F_v/G with v, F_m with N, G_v with F_o).
-- v (blue) is now clear of the force shafts, a orange; labels readable, nothing overlaps or is clipped; the heights are 170-382 px, none dominating the page; the widths are the same at both viewports.
+- Round 1 had no Blocking items; the round 2 diff is two wording fixes in solutions.md. Resolved: L2-05 Järkevyys now says "enintään $0{,}1\,\text{N}$" (matches Kuvaajan lukeminen, earlier Polish closed) and explains the random scatter; L3-04 (hevonen) Järkevyys now says friction points forward because it resists the hoof sliding backward, which reads correctly and consistently with the Vastaus.
+- Captures open-exercises-L2-1280-3 (4-10/4-11 solutions) and surrounding layout opened: fine; captures predate the wording fixes, deterministic layout checks ok.
+- Earlier round: L1-06..08, L2-05..07, L3-04..05 captures at 1280 px.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

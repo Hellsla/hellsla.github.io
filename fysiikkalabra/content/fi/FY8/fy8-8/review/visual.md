@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 37344eea11544f32
+CONTENT-HASH: d5c6e5105c20f0c2
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fig chart (fig-9) — "liian vähän: β⁺" still lacks the noun of "liikaa neutroneja: β⁻" — "liian vähän neutroneja: β⁺".
-- [Minor] fig decays / levels — round-1 notes (viritystila * size, γ labels without keV) not part of this delta; still Minor.
-- [Minor] Tutki spectrum note pill border and Tarkista selected-wrong-option green fill — round-1 notes, unchanged.
+- [Minor] Valokuvien järjestys (beeta, alfa) on päinvastainen kuin tekstin (alfa, beeta, gamma); vaihda järjestys, niin kuvat seuraavat tekstiä.
+- [Minor] Beetakuvan alt: jäljet lähtevät 'vasemmasta yläkulmasta'; tarkemmin 'ylhäällä vasemmalla olevasta ohuesta putkesta'.
 
 ## Checked
-- Diff is empty (hash identical to the passed version). Re-opened fig-9-390 (chart, α arrow and labels intact); layout checks clean in the packet. Remaining captures as in the passed round.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: rendered preview/fy8-8.html at 1280 px and opened the 2 added photo(s) with caption; image files read where alt text needed verification; floats right of the text (x 744-1064 px), no clipping or horizontal overflow at 1280 or 390 px; alt text matches image, captions physically correct and tied to the chapter, LaTeX for numbers with units.
