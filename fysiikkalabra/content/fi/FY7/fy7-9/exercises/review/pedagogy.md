@@ -1,18 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: e2630ff9d12af4aa
+VERDICT: PASS
+CONTENT-HASH: 38886e25506452a2
 ## Blocking
-- exercises/solutions.md:65 (fy7-9-L2-02) — "kolme ruutua (3 · 0,2 µm) luvun 1 oikealla puolella, eli 1,2 µm" is wrong: in the figure the peak is one gridline (0,2 µm) right of 1, three squares would be 1,6 µm. A student following the steps gets a different value than the answer — fix: "yksi ruutu (0,2 µm) luvun 1 oikealla puolella, eli 1,2 µm" (and say the gridline spacing is 0,2 µm).
 
 ## Polish
-- exercises.json:fy7-9-L1-03 — the skin's 307 K and 9,4 µm appear in the lesson text, so the task is a lookup, not a calculation; use another body (e.g. 350 K kaffe or 3000 K lamp filament).
-- exercises.json:fy7-9-L3-03 — Moon laser ranging needs only s = ct : 2 (one formula, no spectrum), level 2 in demand; it is a good context but L3 should combine ideas, e.g. add the question of how many wavelengths of 532 nm light fit in the path.
-- exercises.json:fy7-9-L3-01 — the text asks to deduce the spectral region, but only the millimetre value is graded; either ask for the region in the answer unit text or note it is for the student's own check.
-- solutions.md:fy7-9-L2-03 — direction of the shift is only in the answer line; mention in the Periaate that the peak moves to shorter wavelengths.
+- exercises.json:fy7-9-L1-03 — the skin's 307 K and 9,4 µm appear in the lesson text, so the task is close to a lookup; use another body (e.g. a 3000 K filament).
+- exercises.json:fy7-9-L3-03 — Moon ranging is one formula (s = ct : 2), level 2 in demand; fine as context, but L3 could combine ideas (e.g. wavelengths of 532 nm light in the path).
+- exercises.json:fy7-9-L3-01 — the text asks to deduce the spectral region, but only the millimetre value is graded; the solution covers the region, so mark it as self-check.
 
 ## Checked
-- Counts 5/4/3 match the course rubric; level 1 single formula, level 2 celsius conversion, graph reading or two steps, level 3 context and reasoning.
-- No task repeats the Aurinko example; the Fixsen 2009 data is named with source and year.
-- Figure task L2-02 has the peak on a gridline, no peak or temperature marked; value 2415 K matches the plotted peak (about 1,06 MW/(m²·µm)).
-- Situation first, question last; everyday contexts (radio, microwave oven, pizza oven, laser pointer, thermal camera).
-- All solutions otherwise follow the seven steps with principle explained; unit conversions explicit; answers agree with exercises.json.
-- Finnish: case endings and units correct; captures at 1280 px show no clipping.
+- Round-1 blocking L2-02 fixed: peak one gridline (0,2 µm) right of 1, gives 1,2 µm and 2415 K, consistent with the answer.
+- L3-02 false premise removed; the 8,0 µm end correctly gives 89 °C and the 14 µm check gives -66 °C.
+- L2-03 Periaate now states the shift direction.
+- Counts 5/4/3 match the rubric; levels rise (single formula, conversion or two steps, context and reasoning).
+- All solutions follow the seven steps with principle explained; answers agree with exercises.json.
+- No task repeats the Aurinko example; Fixsen 2009 named with source and year.
+- Finnish and units correct.

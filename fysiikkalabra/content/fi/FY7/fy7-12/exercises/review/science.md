@@ -1,18 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: eff1b77a71f529fc
+VERDICT: PASS
+CONTENT-HASH: cc1d7dd0d3487a39
 
 ## Blocking
-- exercises/exercises.json:56 (fy7-12-L2-02) — A: in binoculars the right-angle (Porro) prism reflects light totally at its two short faces (the legs), each at 45°. Light enters and leaves through the long face (the hypotenuse). "Valo tulee prisman sisällä pitkälle sivutahkolle … kokonaisheijastua siitä" puts the reflection on the wrong face for a binocular prism. The answer 1,414 is unaffected — fix: "osuu prisman lyhyelle sivutahkolle (kateettitahkolle) 45°:n tulokulmassa", or drop "Kiikarissa" and say "suunnanvaihtoprisma".
-- exercises/solutions.md:109 (fy7-12-L3-02, Järkevyys) — B: "Siksi tietoliikennekuiduissa ydin tehdään hyvin ohueksi" gives a cause the task's ray model does not support. In the ray model, Δt = (n1 L : c)(n1 : n2 − 1) does not depend on the core's diameter. A thin core helps only through the wave picture (one mode), which is not in FY7. The lesson itself names the small index difference as the remedy — fix: "Siksi tietoliikennekuiduissa ytimen ja kuoren taitekertoimien ero tehdään hyvin pieneksi."
 
 ## Polish
-- solutions.md L2-02 Vastaus — "kolme merkitsevää numeroa kuten ilman taitekerroin 1,00": the 45° comes from the prism's geometry and is exact, so this is fine. You could say so in one clause.
+- solutions.md L2-02 Vastaus — "kolme merkitsevää numeroa kuten ilman taitekerroin 1,00": the 45° angle is exact from the prism's geometry, which could be said in one clause (optional).
 
 ## Checked
-- One script recomputed all 12 answers with my own formulas, and all agree with answers.py and exercises.json: 48,75°, 24,41°, 61,04°, 2,041·10⁵ km/s, 0,50 ms, 1,456, 1,414, 2,007·10⁵ km/s, 1,217 ms, 2,053 m, 67,58 ns, 77,61°.
-- Every critical-angle task has n1 > n2 with light going from the denser medium. L3-03 first checks α_r = 62,46° > 60° before applying refraction.
-- L3-01 geometry r = h tan α_r is right (Snell's window). L3-02 zigzag path L : sin α_r is right.
-- Rounding: L3-02 is given to 2 sig figs because n1 − n2 = 0,020 limits it, which is right. The other answers have 3 sig figs from the data. The relative tolerance of 0,02 accepts the rounded answers.
-- Conversions (km→m, s→ms/ns, m/s→km/s) are right. Every solution has 7 steps and solves symbolically first.
-- Notation (α_r, n1, n2, v = c : n, t = n s : c) is the same as in the brief. All tasks are within FY7 and the lesson.
-- Data are realistic: water 1,33, diamond 2,42, aquarium glass 1,52, fibre 1,46–1,48, PMMA-like plastic 1,49.
+- Round-1 fixes: L2-02 now has light entering through the hypotenuse and reflecting totally at a leg (kateettitahko) at 45°, which is right for a Porro prism. L3-02 Järkevyys now names the small difference in refractive index as the remedy, which the ray model supports.
+- One script recomputed all 12 answers with my own formulas. They agree with answers.py and exercises.json: 48,75°, 24,41°, 61,04°, 2,041·10⁵ km/s, 0,50 ms, 1,456, 1,414, 2,007·10⁵ km/s, 1,217 ms, 2,053 m, 67,58 ns, 77,61°.
+- Every critical-angle task has n1 > n2, with light leaving the denser medium. L3-03 first checks α_r = 62,46° > 60° and only then applies refraction.
+- L3-01 uses r = h tan α_r (Snell's window). L3-02 uses the zigzag path L : sin α_r. Both are right.
+- Rounding: L3-02 gives 2 sig figs because n1 − n2 = 0,020 limits it. The other answers give 3, which fits the data. The 0,02 tolerance accepts the rounded answers.
+- The unit conversions are right. Every solution has 7 steps and solves symbolically first.
+- The notation matches the brief, and the data are realistic.

@@ -1,22 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6dd11c845cfa9c6d
+CONTENT-HASH: 7e97e3c17fba5c23
 
 ## Blocking
 
 ## Polish
-- inquiry.json (mittaus, text) — "Lasissa valo kulkee keskipisteestä suoraan kohti kaarevaa pintaa" kuvaa akryylista puolisylinteriä; lasi on toinen aine kuin akryyli, jonka taitekerrointa mitataan — "Akryylissä valo kulkee ..." (sama ongelma tehtävässä L2-04 on oikein: siellä kappale on lasia).
-- lesson.md (Näennäinen syvyys) / hook — koukku puhuu pillin "siirtymisestä sivuun", selitys vain "nousemisesta ylemmäs"; yhdistä yhdellä lauseella: sivusta katsottaessa ylemmäs nostettu osa näkyy myös sivuun siirtyneenä.
-- lesson.md (Osittainen heijastuminen) — "Heijastunut ja läpi mennyt osa ovat yhteensä yhtä suuret kuin tuleva valo" — "yhteensä yhtä suuri kuin tuleva valo"; "loivemmassa kulmassa" on epäselvä: "kun valo tulee pintaa hipoen (suurella tulokulmalla)".
-- inquiry.json (ennuste-1) — ennuste kysyy vain suunnan; yksi osakysymys (ennuste-2) kantaa varsinaisen oivalluksen, mikä riittää, mutta ennuste 1 on helppo; hyväksyttävä.
-- Taittumislain "sinien suhde = nopeuksien suhde" esitetään kuvan varassa ilman johtoa; riittää lukiotasolle, mutta yksi lause siitä, miksi rintaman sivu $\lambda_1 : \lambda_2 = v_1 : v_2$ johtaa siniin, vahvistaisi.
+- lesson.md (Näennäinen syvyys) — pillin sivuun siirtymistä ei vieläkään selitetä (vain "ylemmäs"); yksi lause riittäisi: vinosti katsottaessa ylemmäs nostettu osa näkyy myös sivuun siirtyneenä.
+- Taittumislain sinien suhde = nopeuksien suhde esitetään kuvan varassa ilman johtoa; yksi lause aaltorintaman sivuista vahvistaisi (edellisestä kierroksesta, ei estä).
 
 ## Checked
-- Polku: kertaus (valinn.), 2 ennustetta ennen simulaatiota, 2 koetta (min 3, lukitut parametrit), johtopäätös, mittaus kulmakertoimesta, teoria, 7-vaiheinen esimerkki; alun kysymys vastataan ennusteen jälkeen.
-- Ennusteet voi kumota simulaatiolla (ilma→vesi lukittu), virhevaihtoehtojen palaute korjaa käsitykset (pinnan kulma, verrannollisuus).
-- Harhakäsitys ja Etsi virhe osuvat samaan virheeseen (kulma pinnasta); hyvä.
-- Työmäärä: ydinpolku noin tunti, loput valinnaisia.
-- Kuvat (hero, interface 390 px) tunnistettavia, selkeitä, väri ei yksin merkitse; kuvateksti kertoo datan.
-- Mittaus: autenttinen tulkinta, lähde ja ohjelma nimetty, vihjeet kolmiportaiset.
-- Tarkista: käsitekysymyksen houkuttimet perustuvat virhekäsityksiin; selitystehtävän kriteerit havaittavia.
-- Poistumislippu testaa ydinideat (heijastus, n = c : v).
-- Suomi: termit sanaston mukaiset; ei esteitä.
+- Edelliset Polish-kohdat korjattu: "Akryylissä valo kulkee..." (mittaus) on nyt oikein, koska kappale on akryylia.
+- Koukku "katso lasia vinosti ylhäältä" vastaa selitystä (kun lasia katsotaan vinosti ylhäältä vedenpinnan läpi); johdonmukainen koukun ja Näennäisen syvyyden välillä.
+- "samalla tulokulmalla" täsmentää taitekertoimien eron vaikutuksen; harhakäsitys (ero vaikuttaa kulmasta riippumatta) poistuu.
+- Osittainen heijastuminen: "suurempi tulokulma eli pintaa hipoen" on selvä ja yhdenmukainen kuvan kanssa.
+- "näkyvälle valolle läpinäkyvissä aineissa n > 1" oikea rajaus lukiotasolle, ei sekoita.
+- Oppimispolku, ennusteet ennen simulaatiota, kokeet ja työmäärä ennallaan hyväksytyt; muutos ei kosketa niitä.
