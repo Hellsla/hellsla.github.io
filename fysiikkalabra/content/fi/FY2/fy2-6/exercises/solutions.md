@@ -57,7 +57,7 @@
 ## fy2-6-L1-07
 **Kysytty:** mitä säätövoimalla tarkoitetaan
 **Periaate:** Sähköverkossa tuotannon on oltava joka hetki yhtä suuri kuin kulutuksen. Säätövoima on tuotantoa, jonka tehoa voi nostaa ja laskea tarpeen mukaan. Perusvoima tuottaa tasaisesti, ja sääriippuvaisen tuotannon teho vaihtelee ilman, että sitä voi päättää.
-**Mallivastaus:** Oikea vastaus on ensimmäinen: voimalaitos, jonka tehoa voi muuttaa nopeasti kulutuksen mukaan, kuten vesivoimala. Toinen vaihtoehto kuvaa perusvoimaa, joka tuottaa tasaisesti. Kolmas kuvaa sääriippuvaista tuotantoa, jonka teho vaihtelee mutta jota ei voi säätää tarpeen mukaan. Siksi tuulivoiman rinnalle tarvitaan säätövoimaa.
+**Mallivastaus:** Säätövoimaa on voimalaitos, jonka tehoa voi muuttaa nopeasti kulutuksen mukaan, kuten vesivoimala. Tasaisesti koko vuoden tuottava ydinvoimala on perusvoimaa, ei säätövoimaa. Tuulivoimalan teho vaihtelee sään mukaan, mutta sitä ei voi säätää tarpeen mukaan, joten se on sääriippuvaista tuotantoa. Siksi tuulivoiman rinnalle tarvitaan säätövoimaa.
 
 ## fy2-6-L1-08
 **Annettu:** nimellisteho $P_\text{nim} = 4{,}0\,\text{MW}$, vuosienergia $E = 11\,\text{GWh}$
