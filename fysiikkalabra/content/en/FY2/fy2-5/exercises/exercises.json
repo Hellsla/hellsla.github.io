@@ -40,6 +40,58 @@
       "answer": 0.96,
       "unit": "MJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-06",
+      "level": 1,
+      "text": "The heat of combustion of petrol is $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. What does this mean?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "When one kilogram of petrol burns, an energy of $43\\,\\text{MJ}$ is released.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Petrol burns with a hotter flame than other fuels, and the number $43\\,\\text{MJ}$ tells the temperature of the flame.",
+          "feedback": "The heat of combustion is not a temperature. It tells the amount of energy released per unit of mass, not how hot the fuel burns."
+        },
+        {
+          "text": "To obtain one megajoule of energy, $43\\,\\text{kg}$ of petrol always has to be burned, regardless of the amount.",
+          "feedback": "The interpretation is the wrong way round: one kilogram releases $43\\,\\text{MJ}$, not $43\\,\\text{kg}$ one megajoule."
+        },
+        {
+          "text": "Every kilogram of petrol burned creates $43\\,\\text{MJ}$ of new energy that did not exist before burning.",
+          "feedback": "Energy is not created from nothing. The chemical energy of petrol is transformed into heat and light when it burns."
+        },
+        {
+          "text": "When one kilogram of petrol burns, an energy of $43\\,\\text{MJ}$ is released.",
+          "correct": true,
+          "feedback": "Correct: the heat of combustion is the energy released per unit of mass, so $1.0\\,\\text{kg}$ of petrol releases $43\\,\\text{MJ}$ and $E = Hm$."
+        }
+      ]
+    },
+    {
+      "id": "fy2-5-L1-07",
+      "level": 1,
+      "text": "In a pellet burner, an energy of $255\\,\\text{MJ}$ is to be released from wood pellets. The heat of combustion of the pellets is $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. How many kilograms of pellets must be burned? Give the answer in kilograms.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 15,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-08",
+      "level": 1,
+      "text": "When three kilograms of natural gas burn, an energy of $144\\,\\text{MJ}$ is released. How much is this in kilowatt-hours? Use the relation $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$. Give the answer in kilowatt-hours.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 40,
+      "unit": "kWh",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,124 @@
       "answer": 4.5,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L2-05",
+      "level": 2,
+      "text": "The table gives example data on the effective heat of combustion of firewood at different moisture contents. Heating a sauna requires an energy of $200\\,\\text{MJ}$ released from firewood. Using the heats of combustion in the table, calculate the mass of wood needed when the moisture content is $20\\,\\%$ and when it is $40\\,\\%$. How many kilograms more moist ($40\\,\\%$) wood is needed than air-dried ($20\\,\\%$) wood? Give the answer in kilograms.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 5.6,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Example data: effective heat of combustion of firewood by moisture content",
+        "columns": [
+          "Moisture content $(\\%)$",
+          "$H\\,(\\text{MJ/kg})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "19.0"
+          ],
+          [
+            "10",
+            "16.9"
+          ],
+          [
+            "20",
+            "14.7"
+          ],
+          [
+            "30",
+            "12.6"
+          ],
+          [
+            "40",
+            "10.4"
+          ],
+          [
+            "50",
+            "8.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-5-L2-06",
+      "level": 2,
+      "text": "A student solved a problem: “A power plant burns $3.0\\,\\text{t}$ of coal with a heat of combustion of $26\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. The energy is $E = Hm = 26 \\cdot 3.0\\,\\text{MJ} = 78\\,\\text{MJ}$.” Where is the student’s mistake?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "The mass was not converted to kilograms: $3.0\\,\\text{t} = 3000\\,\\text{kg}$, so the correct result is $78\\,000\\,\\text{MJ}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The heat of combustion should have been divided by the mass, so the correct result is $26 : 3.0 = 8.7\\,\\text{MJ}$.",
+          "feedback": "The formula is $E = Hm$, a product and not a quotient. Dividing does not give the energy: a larger mass gives more energy, not less."
+        },
+        {
+          "text": "The result should have been given in kilowatt-hours, so the correct result is $78\\,\\text{kWh}$.",
+          "feedback": "Changing the unit does not fix the number: $78\\,\\text{MJ}$ would be $21.7\\,\\text{kWh}$, not $78\\,\\text{kWh}$. The mistake is in the unit of the mass, not in the unit of the answer."
+        },
+        {
+          "text": "The mass was not converted to kilograms: $3.0\\,\\text{t} = 3000\\,\\text{kg}$, so the correct result is $78\\,000\\,\\text{MJ}$.",
+          "correct": true,
+          "feedback": "Correct: the heat of combustion is energy per kilogram, so the mass must be substituted in kilograms. $E = 26\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 3000\\,\\text{kg} = 78\\,000\\,\\text{MJ}$."
+        },
+        {
+          "text": "The heat of combustion of coal is wrong, because the correct value would be $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, so the result is $129\\,\\text{MJ}$.",
+          "feedback": "The heat of combustion of coal is about $26\\,\\tfrac{\\text{MJ}}{\\text{kg}}$; the value $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ is that of petrol. The heat of combustion given in the problem is correct; the mistake is in the unit of the mass."
+        }
+      ]
+    },
+    {
+      "id": "fy2-5-L2-07",
+      "level": 2,
+      "text": "In an example measurement, a pellet burner and its pellets stood on a scale, and the burner burned steadily the whole time. The reading $m$ of the scale was recorded every $10\\,\\text{min}$. Draw a graph of the mass as a function of time and determine from its slope how many kilograms of pellets burn per minute. The heat of combustion of the pellets is $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. What is the power released in the burning? Give the answer in kilowatts.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 18,
+      "unit": "kW",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Example measurement: mass of the pellet burner and the pellets",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$m\\,(\\text{kg})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "12.00"
+          ],
+          [
+            "10",
+            "11.34"
+          ],
+          [
+            "20",
+            "10.71"
+          ],
+          [
+            "30",
+            "10.04"
+          ],
+          [
+            "40",
+            "9.40"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +270,114 @@
       "answer": 35,
       "unit": "MW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L3-04",
+      "level": 3,
+      "text": "The table gives example data on the useful energy needed each month to heat a detached house. The house can be heated either with a pellet boiler (heat of combustion of pellets $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, efficiency $85\\,\\%$) or with light heating oil (heat of combustion $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, efficiency $90\\,\\%$).\n\na) Calculate the heating energy of the year in kilowatt-hours and in megajoules.\n\nb) Calculate the mass of pellets burned in the pellet boiler in a year.\n\nc) Calculate the mass of oil used in a year and compare it with the mass of pellets. Explain why the ratio of the masses is not the same as the ratio of the heats of combustion.\n\nd) Because of poor adjustment, the efficiency of the pellet boiler drops to $70\\,\\%$. How many kilograms more pellets are then used in a year, and why?\n\nEnter the result of part b) in kilograms in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 3300,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Example data: useful energy needed to heat the house each month",
+        "columns": [
+          "Month",
+          "$E\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "January",
+            "2100"
+          ],
+          [
+            "February",
+            "1900"
+          ],
+          [
+            "March",
+            "1600"
+          ],
+          [
+            "April",
+            "1100"
+          ],
+          [
+            "May",
+            "600"
+          ],
+          [
+            "June",
+            "250"
+          ],
+          [
+            "July",
+            "200"
+          ],
+          [
+            "August",
+            "250"
+          ],
+          [
+            "September",
+            "600"
+          ],
+          [
+            "October",
+            "1100"
+          ],
+          [
+            "November",
+            "1600"
+          ],
+          [
+            "December",
+            "2000"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-5-L3-05",
+      "level": 3,
+      "text": "A housing company needs $36\\,000\\,\\text{MJ}$ of useful energy per year for heating (example data). The table gives three boiler options. The fuel is assumed to burn completely and the efficiency of the boiler to stay constant.\n\na) For each option, calculate the mass of fuel needed in a year.\n\nb) How many kilograms more firewood than pellets are used in a year? Use the unrounded masses from part a).\n\nc) As the pellet boiler ages, its efficiency drops to $75\\,\\%$. Calculate the consumption of pellets then and explain how the efficiency affects the amount of fuel needed.\n\nd) Justify why the mass of oil used is clearly smaller than the mass of wood, even though the efficiencies of the boilers are of the same order of magnitude.\n\nEnter the result of part b) in kilograms in the answer box.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 940,
+      "unit": "kg",
+      "tolerance": 0.01,
+      "data": {
+        "caption": "Example data: three boiler options",
+        "columns": [
+          "Boiler",
+          "$H\\,(\\text{MJ/kg})$",
+          "$\\eta\\,(\\%)$"
+        ],
+        "rows": [
+          [
+            "Wood boiler (air-dried wood)",
+            "15",
+            "70"
+          ],
+          [
+            "Pellet boiler",
+            "17",
+            "85"
+          ],
+          [
+            "Oil boiler",
+            "43",
+            "90"
+          ]
+        ]
+      }
     }
   ]
 }
