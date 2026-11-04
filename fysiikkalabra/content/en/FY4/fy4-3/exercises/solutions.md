@@ -261,7 +261,7 @@ $s = 0.500\,\text{m/s}\cdot 6.0\,\text{s} = 3.0\,\text{m}$.
 **Given:** rolling resistance on the cart $F_\text{r} = 410\,\text{N}$, air resistance on the cart $F_\text{k} = 40\,\text{N}$, air resistance on the horse $F_\text{h} = 30\,\text{N}$, the velocity is constant and straight forwards, example data
 **Find:** a) the force of the rope on the cart $T$; b) the force of the road on the hooves of the horse $F_\text{t}$ in $\text{N}$; c) why the forces do not cancel each other
 **Principle:** Both the cart and the horse move at constant velocity, so the net force on each is zero (first law). The cart gives the force of the rope. By the third law the cart pulls the horse backwards with a force $T$ as large as the rope pulls the cart forwards, and this is used in the equilibrium of the horse. The force of the road on the hooves is an external force that carries the pair forwards.
-**Force diagram:** For the cart draw: the force of the rope $\overline{T}$ forwards, the rolling resistance and the air resistance backwards. For the horse: the force of the road $\overline{F}_\text{road}$ forwards, the force of the rope $\overline{T}$ and the air resistance backwards. The forces on the horse and on the cart are in different diagrams.
+**Force diagram:** For the cart draw: the force of the rope $\overline{T}$ forwards, the rolling resistance and the air resistance backwards. For the horse: the force of the road $\overline{F}_\text{t}$ forwards, the force of the rope $\overline{T}$ and the air resistance backwards. The forces on the horse and on the cart are in different diagrams.
 ```voimakuvio
 pinta 0
 T 450 oikea

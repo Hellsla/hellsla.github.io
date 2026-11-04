@@ -1,15 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 976d1bb4784c43af
-Round: 3
+VERDICT: FAIL
+CONTENT-HASH: d621ebf2af8ee180
+Round: 4
 
 ## Blocking
+- solutions.md line 264 (fy4-3-L3-04 Force diagram) — still names the road force $\overline{F}_\text{road}$, while Given/Find, the diagram label and the Formula/Substitution lines all use $F_\text{t}$; the student meets two symbols for one force inside one solution — change `\overline{F}_\text{road}` to `\overline{F}_\text{t}` in that sentence (the only remaining "road}" in the en exercise set).
 
 ## Polish
-- L3-04 diagram — in the cart figure F_r and F_k both run left from the same face; F_k is a short stub beside the long F_r, so the pair reads as one arrow with a side label at a glance. Acceptable: the text names both.
+- In the cart figure F_k is a short stub beside the long F_r; the text names both, acceptable.
 
 ## Checked
-- Opened the new L3-04 captures (L3-1280-5/6, en): two separate one-body diagrams, each with its forces labelled; the cart's T points forwards, the horse's T backwards and F_t forwards, matching the Voimakuvio text.
-- Labels match the text: en symbols F_r, F_k/F_dc, F_h/F_dh, F_t/F_road agree with Annettu and Kaava.
-- The model solution draws the diagram before the equations; numbers (450 N, 480 N) unchanged.
-- L1-08: Periaate now ends with the body choice only; no promise of a drawing.
+- Opened en L3-1280-6: two one-body diagrams, T forwards on the cart, backwards on the horse, F_t forwards; labels F_r, F_k, F_h, T, F_t match Given, Find, Formula and Substitution.
+- Given defines F_k and F_h; numbers 450 N and 480 N unchanged; diagram precedes the equations.
 - Hash unchanged at the end.
