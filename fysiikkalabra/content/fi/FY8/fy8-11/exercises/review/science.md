@@ -1,21 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 82dfe66a8cba123a
+VERDICT: PASS
+CONTENT-HASH: 8f45e577d831e5c3
+Round: 2
 
 ## Blocking
-- solutions.md:174 (L3-04 Vastaus, c) — A: "Koko aktiivisuus pienenee tuhannesosaan vasta noin 240 000 vuodessa" has no basis. The 240 000 a (L3-03) is the time for Pu-239's *own* activity to fall to 1/1000, not the total activity of the fuel. — Write "Plutonium-239:n oma aktiivisuus pienenee tuhannesosaan vasta noin 240 000 vuodessa (tehtävä L3-03)".
-- exercises.json:294 (L3-04 text) — B: the data start at removal from the reactor, with one 30 a half-life "koko ajan". Short-lived nuclides (Cs-134, Ce-144, Ru-106, Pu-241) dominate the first years, so a single Cs-137/Sr-90 exponential holds only from about 10 a after discharge. In b), "250 a before interim storage" is also a false picture. — Add "Aika t lasketaan noin 10 vuotta poiston jälkeen, kun lyhytikäiset fissiotuotteet ovat jo hajonneet", and phrase b) as "kunnes fissiotuotteiden aktiivisuus on 10 TBq/t" with no storage condition. The numbers and the answer are unchanged.
-- solutions.md:184 (L3-05 Vastaus) — A: "kolme merkitsevää numeroa kuten hyötysuhteessa 0,33": 0,33 has two significant figures, and so does 92 %. — Give 540 kg (two significant figures, limited by η and 92 %). In a), give 1500 MW and 1000 MW (or say why three are kept). The stored 543 can stay within tolerance, or be changed to 540.
 
 ## Polish
-- solutions.md:135 (L1-08) — "Q = n e, … e = 1,602·10⁻¹⁹ J" uses e (the elementary charge) for one electronvolt. Write Q = 200·10⁶ · 1 eV = 200·10⁶ · 1,602·10⁻¹⁹ J.
-- solutions.md:172 (L3-04) — "koska aktiivisuuden mittaus on epätarkka": use the guardrail sentence ("…eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi"). In b), say that the extrapolation runs from 50 a to 250 a.
-- exercises.json:294 (L3-04) — 3000 TBq/t is about 10× low for 10 a old fuel (~10⁴ TBq/t); scaling ×10 would be more realistic.
-- exercises.json:191 (L2-06) — reactor powers are correct (see Checked). The source could be made more specific: "TVO:n ja Fortumin verkkosivut / STUK, tilanne 2024".
+- exercises.json:296 fy8-11-L3-04 b): "Kuinka monta vuotta kuluu" no longer names its start, and t = 0 is now about 10 a after discharge. A student who counts from discharge gets about 260 a, which is 4 % off and outside the 2 % tolerance. Fix: "Millä ajanhetkellä t aktiivisuus on laskenut arvoon 100 TBq/t …", or "Kuinka monta vuotta ajanhetkestä t = 0 kuluu …".
+- solutions.md:184 fy8-11-L3-05 Vastaus a): "1000 MW (samat kaksi merkitsevää numeroa)". Written as 1000, it shows neither its two figures nor the 1536 − 507 = 1029 MW behind it. Write 1,0·10³ MW, or "1030 MW ≈ 1,0·10³ MW".
+- exercises.json:296 fy8-11-L3-04: "määräävät pääasiassa cesium-137 ja strontium-90" (with their daughters Ba-137m and Y-90). Pu-241 (14 a) also contributes at 10 a. Since this is example data the wording is acceptable; optionally add "ja niiden tytärnuklidit".
 
 ## Checked
-- Hash 82dfe66a8cba123a at the start and at the end.
-- All 17 numeric answers recomputed in one script with my own formulas (new tasks: 3,204; 1859,6; 34,64 TWh; 249,7 a; 543,0 kg). All are within 0,6 % of exercises.json and answers.py.
-- Reactor powers: OL1 890, OL2 890, OL3 1600, LO1 507, LO2 507 MW (net) match Pohjolan Voima/TVO and Fortum (Loviisa EIA summary: 507 MW net and 1500 MW thermal per unit; uprates in 2018), so they are valid for 2024. η = 0,338 makes the 0,33 in L3-05 realistic.
-- L2-05: the consecutive ratios are 1,009–1,016, as the solution says. A least-squares k = 1,01238 gives N₅₀ = 1849, which is within the 3 % tolerance. "Supercritical" is correct.
-- L3-04: fit λ = 0,02285 1/a, T½ = 30,3 a, A₀ = 3006, verified.
-- MC L1-06, L1-07, L2-07: exactly one correct option in each, and the feedback is right. L3-05 c): 1,86·10⁶ t of coal, correct.
+- Hash 8f45e577d831e5c3 at the start and at the end.
+- Round 1 Blocking (L3-04 c), "koko aktiivisuus 240 000 a"): resolved. The text now says "Plutonium-239:n oma aktiivisuus … (tehtävä L3-03)", and 24 100 a · log₂1000 = 240 200 a.
+- Round 1 Blocking (L3-04 model B): resolved. t now starts about 10 a after discharge, the interim-storage condition is gone, and b) asks for the fission-product activity 100 TBq/t.
+- Round 1 Blocking (L3-05 significant figures): resolved. The answer is 540 kg with two figures from η = 0,33 and 92 %, and a) gives 1500 MW. answers.py gives 543,0, inside the 2 % tolerance.
+- L3-04 new data (×10): my own least-squares fit gives λ = 0,02285 1/a, T½ = 30,3 a and A₀ = 30 060 TBq/t. The two-point estimate gives 30,6 a. b) is 249,7 a, and the check 30 000 : 2⁸ ≈ 117 is right.
+- The magnitude of 30 000 TBq/t at 10 a is now realistic (about 10⁴ TBq/t).
+- L1-08: Q = 200·10⁶ · 1 eV = 3,204·10⁻¹¹ J, and the e/eV mix-up is fixed. The L2-06 source is made specific. L3-04 now uses the guardrail sentence on measurement uncertainty.
+- L1-06, L1-07 reordered: exactly one correct option each, and `answer` matches.
+- Recomputed: L2-06 4394 MW, 34,64 TWh; L3-05 1536 / 1029 MW, 543 kg, 1,86·10⁶ t coal, ratio 3,4·10⁶. All match.

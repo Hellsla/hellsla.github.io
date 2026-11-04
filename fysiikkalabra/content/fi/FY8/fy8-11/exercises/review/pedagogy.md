@@ -1,21 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 82dfe66a8cba123a
+VERDICT: PASS
+CONTENT-HASH: 8f45e577d831e5c3
+Round: 2
 
 ## Blocking
-- exercises.json fy8-11-L3-05, text — lead is 49 words in one paragraph (over ~45). Add blank lines (\n\n) at three points: (1) after "...nettosähköteho on $507\,\text{MW}$ (Fortum, 2024)."; (2) after "...jossa kussakin vapautuu $200\,\text{MeV}$." (the paragraph with the assumptions: hyötysuhde 0,33, 92 % käyttöaika, kaikki lämpöteho fissioista); (3) the constants "Uraani-235:n atomimassa on ..., $1\,\text{u} = ...$ ja $1\,\text{eV} = ...$" as their own paragraph. Parts a)–c) stay as they are.
-- Other new tasks: all leads are under 45 words (L2-07 38, L2-05 19, L3-04 21).
+- None. Round 1 Blocking (L3-05 lead 49 words in one paragraph) is resolved: the text is now four paragraphs (source line, assumptions about 34 words, constants, parts a-c).
 
 ## Polish
-- fy8-11-L3-05 builds on the existing L3-01/L2-01 (OL3 thermal power to uranium mass); the efficiency, capacity factor and coal comparison make it different enough, but state in the solution that it extends L3-01.
-- fy8-11-L3-04 b): moving fuel to interim storage at 10 TBq/t is not how it works in practice (fuel stays in the pool for years). The label "esimerkkiarvo" covers it; consider a neutral target such as "lähes vaaraton taso".
-- fy8-11-L3-04 is labelled "graph" and asks for a drawn ln A plot; the answer box checks only b), so the fit step is unmarked. Fine, but mention in the solution that two far-apart points give the same result.
-- fy8-11-L2-06 is mostly arithmetic (sum, ×0,9, ×8760 h); the context (real Finnish figures with source and year) carries it.
-- fy8-11-L2-05 says the reactor is "ylikriittinen" at k = 1,012; add that real reactors hold k = 1 with control rods (already in the solution; fine).
+- fy8-11-L3-04 c): "noin 240 000 vuodessa" is Pu-239's own decay time (task L3-03) and the solution says so; fine. In the task text c) say "jos plutonium-239 on määräävä nuklidi" for clarity (carried over).
+- fy8-11-L3-04: the answer box checks only b), so the fit in a) is unmarked; the solution now notes that two far-apart points give the same line. Fine.
+- fy8-11-L3-05: the "jatkaa tehtävää L3-01" note appears in the solution only; that is enough.
+- fy8-11-L2-06 is mostly arithmetic; carried by the Finnish source data.
+- fy8-11-L2-05: add one line that real reactors hold k = 1 with control rods (already in the solution; fine).
 
 ## Checked
-- Recomputed: L1-08 3,2·10^-11 J; L2-05 k = 1,0125 and N50 = 1860; L2-06 4394 MW and 34,6 TWh; L3-04 T = 30,3 a and 250 a; L3-05 1536 MW, 1029 MW, 543 kg, 1,86·10^6 t.
-- L2-07 error analysis and the MC distractors (L1-06, L1-07) are real misconceptions with repairing feedback.
-- L3-04 c) reasoning (Pu-239, 250 a gives only ~1 % decay) is correct.
-- Every new solution has principle, conversions, substitution and sanity check.
-- Levels fit the plan; no exact duplicate. Finnish is correct.
-- Screenshots: only 1280 px captures in the packet; not opened.
+- L3-04 changes: the table now starts at 30 000 TBq/t (ln A 10,309 ... 9,175), the text defines t from about 10 years after removal and names Cs-137 and Sr-90 (T about 30 a, consistent with the fitted 30,3 a); the target is 100 TBq/t, so t = 43,77 a x ln(30060/100) = 249,7 a, answer 250 a with tolerance 0,05. Render checked in the 1280 px capture (L3 part 6): no overflow.
+- L3-05: 1536 MW thermal, 1029 MW to cooling water, 1,391e27 fissions, 542,9 kg; the answer 540 kg (2 s.f., tolerance 0,02) matches the solution; coal 1,9 Mt.
+- L1-06, L1-07 MC: exactly one correct option, answers match, distractors are real misconceptions.
+- L1-08 solution now written with 1 eV = 1,602e-19 J; 3,20e-11 J unchanged.
+- 8/7/5 = 20 tasks; levels fit the plan; no duplicates; every new solution complete.
+- Screenshots: only 1280 px captures; layout checks passed; opened only L3 part 6.

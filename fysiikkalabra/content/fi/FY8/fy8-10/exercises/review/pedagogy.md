@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: b4b0be010b9da758
+CONTENT-HASH: 16344269b7035d57
+Round: 2
 
 ## Blocking
-- None. Lead-length rule: no new task lead is over ~45 words in one paragraph (longest L3-05: 43 words, already in 2 paragraphs).
+- None. Round 1 had no Blocking items; the changes since (L1-06 and L1-08 option order and wording, L2-05 "voit käyttää taulukkolaskentaa", L2-07 stem and distractors, L3-04 b), L3-05 solution) were checked and are correct.
 
 ## Polish
-- fy8-10-L2-05 asks for Δm, E_B and E_B/A for eight nuclides (24 values) plus ordering; heavy for level 2. Consider five nuclides or add "voit käyttää taulukkolaskentaa".
-- fy8-10-L1-08 and L2-07 both test the E_B/A peak at iron/nickel in MC form; the second is the deeper one, but vary L1-08 (e.g. read a value off the graph) if a replacement is wanted.
-- fy8-10-L1-06 option 2 feedback: "Tämä on yleinen virhekäsitys, joka on käännetty väärinpäin" is awkward; use "Tämä on väärinpäin: ytimen hajottaminen vaatii energiaa eikä vapauta sitä."
-- fy8-10-L1-07 is the same skill as the existing L1-04/L1-05 (mass to MeV); acceptable as the electron-rest-energy link.
-- fy8-10-L3-04 b): "vertaa tulosta a-kohtaan" gets a better question if it asks which of the two methods is more accurate and why (the solution already explains rounding).
+- fy8-10-L3-05 solution: "osuus ytimen vedystä on suurempi" is awkward. Say: "todellisuudessa fuusioituu vain ytimen vety, joten osuus siitä on suurempi kuin 3,5 %".
+- fy8-10-L1-08 and L2-07 both test the E_B/A peak in MC form; L2-07 is now the deeper one (energy released only if E_B/A rises, with the Fe-56 + He-4 -> Ni-60 counterexample, about 6,3 MeV, checked against E_B/A values). Acceptable.
+- fy8-10-L1-07 is the same skill as L1-04/L1-05 (mass to MeV); acceptable as the electron-rest-energy link.
+- fy8-10-L2-05 is still heavy (24 values); the spreadsheet hint helps.
 
 ## Checked
-- Recomputed: L1-07 0,511 MeV; L2-05 all eight Δm/E_B/(E_B/A) and the order (Ni-62 8,795 MeV); L2-06 31,99 MeV and the electron-mass explanation; L3-04 Q = 173,29 MeV (both ways), 7,11·10^10 J; L3-05 3,51·10^18 kg, 0,712 %, 4,93·10^20 kg, 3,5 %.
-- L2-06 error analysis diagnoses the real error (proton mass with atomic mass).
-- L3-05 d) justifies the constant-power assumption quantitatively.
-- Every new solution has principle, conversions, substitution and a sanity check.
-- MC distractors (L1-06, L1-08, L2-07) are misconceptions with repairing feedback.
-- Levels fit the plan; no duplicate of existing tasks.
-- Screenshots: only 1280 px captures in the packet; not opened.
+- L2-07: one correct option (index 3), distractors (electric repulsion, equal protons/neutrons, chemical stability) are real misconceptions with feedback that repairs them; the neutron-count feedback (26 p, 30 n) is correct.
+- L3-04 b): "kumpi menetelmä on tarkempi" is answered in the solution (masses to six decimals vs rounded E_B/A, error bound about 0,2 MeV = 0,0005 x 468).
+- L1-06 and L1-08 have exactly one correct option; answers match.
+- Earlier recomputed values (L1-07 0,511 MeV; L2-05; L2-06 31,99 MeV; L3-04 173,29 MeV, 7,11e10 J; L3-05) unchanged.
+- 8/7/5 = 20 tasks; levels fit the plan; no duplicates; every new solution complete.
+- Screenshots: only 1280 px captures; layout checks passed; not opened.

@@ -1,22 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 796546d7348c683e
+VERDICT: PASS
+CONTENT-HASH: 9d4ef2778f138504
+Round: 2
 
 ## Blocking
-- exercises.json fy8-9-L2-05 (text, part b) and solutions.md fy8-9-L2-05 — The hint "320 s:n kohdalla nettopulssimäärä on pudonnut suunnilleen neljäsosaan" leads a student to T = 320/2 = 160 s, but the accepted answer is 149 s ±6 % (140–158 s), so the student who follows the hint is marked wrong. The solution also says 283/64 = 4,42 is "lähes kaksi puoliintumisaikaa", but 4,42 > 4, so it is slightly MORE than two (2,14). Fix: write the hint as "hieman alle neljäsosaan (64 on noin 23 % luvusta 283)", and in the solution "hieman yli kaksi puoliintumisaikaa"; alternatively drop the hint or raise the tolerance to 0,08.
+- None. Round 1 Blocking (L2-05 hint 320 s "neljäsosaan" vs answer 149 s) is resolved: the hint now says "hieman alle neljäsosaan ... noin 23 % alkuarvosta" and the solution says "hieman yli kaksi puoliintumisaikaa (2^2 = 4)"; 64/283 = 22,6 %, ratio 4,42, T = 149,2 s, consistent with the 6 % tolerance.
 
 ## Polish
-- fy8-9-L1-07 is the same type as the existing L1-02 (percent remaining, integer half-lives); consider making the data different in kind (e.g. a graph reading) or accept it as practice.
-- fy8-9-L2-05 is marked kind "graph", but no graph is asked for (the plan says to plot on a log scale). Add a short c) "piirrä logaritmiasteikolla" or drop "graph".
-- fy8-9-L2-07 (background mean, net rate, √N) is closer to level 1 in demand; fine as the experiment task, but keep it as the first L2 data task.
-- fy8-9-L3-04 c): "noin 240 000 vuodessa" assumes Pu-239 alone dominates the activity; say "jos plutonium-239 on määräävä nuklidi".
-- fy8-9-L3-05: the lesson does not teach effective half-life; the task text explains λ_eff = λ_fys + λ_bio itself, which is good. Keep.
+- fy8-9-L3-04 c): "noin 240 000 vuodessa" assumes Pu-239 dominates the activity; say "jos plutonium-239 on määräävä nuklidi" (carried over, still applies).
+- fy8-9-L1-07 is the same type as the existing L1-02 (percent remaining, integer half-lives); acceptable as practice, or change the data type.
+- fy8-9-L2-07 is closer to level 1 in demand (background, net rate, sqrt N); fine as the experiment task.
+- fy8-9-L2-05 solution answer line "tarkkuus noin ±8 %" is a good addition; no change needed.
+- fy8-9-L3-05 c): the question now asks "kumpi prosessi pienentää aktiivisuutta nopeammin" and the solution answers it via lambda_bio > lambda_fys; good.
 
 ## Checked
-- All new answers recomputed: L1-06 (1/4), L1-07 3,125 %, L1-08 17,5 a, L2-06 60 s, L2-07 33,2 1/s, L3-04 2,68 d (200 MBq, 80 %), L3-05 4,96 d, 50,1 %.
-- L2-06 error analysis: student's 70 s explained correctly (background does not decay).
-- L3-04 and L3-05 solutions are complete (principle, conversion, substitution, sanity check).
-- MC distractors are real misconceptions with repairing feedback (L1-06).
-- Lead-length rule: no new lead over ~45 words in one paragraph (L3-05 has 70 words, already in 2 paragraphs).
-- Levels fit the plan in docs/exercise-bank/FY8.md; no duplicate of existing tasks beyond L1-07/L1-02 similarity.
-- Finnish and cases after number+unit are fine.
-- Screenshots: only 1280 px captures in the packet; I did not open them.
+- Changed tasks: L1-06 (correct option moved to position 3, exactly one correct, answer matches), L1-07 (notation "144 a : 28,8 a"), L2-05, L2-06 (solution now separates a) check from the b) explanation; answer 60 s unchanged), L3-05 (c) wording and solution). All recomputed and correct (L3-05: 4,96 d, 50,1 %, 16,4 %, lambda_bio 0,140, lambda_fys 0,0864).
+- Set has 8/7/5 = 20 tasks; levels fit docs/exercise-bank/FY8.md; no duplicate of existing tasks.
+- Every new solution has principle, conversions, substitution and sanity check.
+- Screenshots: only 1280 px captures in the packet; layout checks passed; not opened.

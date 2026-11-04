@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 796546d7348c683e
+CONTENT-HASH: 9d4ef2778f138504
+Round: 2
 
 ## Blocking
 
 ## Polish
-- exercises.json:124 fy8-9-L2-05 — `kind` says "graph" and the plan asks to plot on a log scale and read T½, but the task only subtracts and gives the 320 s quarter shortcut; no graph is drawn or read. The plan's `pa-points` graph task is also missing. Add "piirrä nettopulssimäärät logaritmiasteikolla" to b) or drop "graph" from `kind`.
-- solutions.md:116 fy8-9-L2-05 — "kolme merkitsevää numeroa kuten pulssimäärissä": a two-point estimate where net 64 has a scatter of about ±8 (√N) gives T½ to about ±8 %; justify 149 s as a rounded estimate, or give ≈150 s (the full log fit gives 150 s).
-- solutions.md:186 fy8-9-L3-05 c) — the task asks which process "vähentää kehon säteilyaltistusta enemmän". Decays inside the body are what give the dose, so physical decay does not reduce exposure the way excretion does. Suggest "kumpi prosessi pienentää kehon jodi-131-aktiivisuutta nopeammin" and base the answer on λ_bio = 0,140 1/d > λ_fys = 0,086 1/d. The 50,1 % vs 16,4 % comparison shows only the combined effect.
-- lessons/FY8/fy8-9/answers.py:13, 23, 33 — stale comments: 16,28 % (is 16,29), "0,6943 -> 0,694" (is 0,6953 → 0,695), 6,96 % (is 6,97). The values themselves are right.
-- solutions.md fy8-9-L3-02 — still justifies three figures "kuten ajassa 10,0 min"; the limiting datum is the net count rate 200 (two figures). Carried over from the earlier round.
+- solutions.md:125 fy8-9-L2-05 Vastaus: "tarkkuus noin ±8 %, koska nettomäärän 64 hajonta on noin √64 = 8" mixes two quantities. 8 counts is 12,5 % of 64, and its effect on T½ is 12,5 % : ln 4,42 ≈ 8 %. Fix: "nettomäärän 64 hajonta √64 = 8 (12,5 %) antaa puoliintumisajalle noin ±8 % epävarmuuden".
+- fy8-9-L2-05 / plan: `kind` "graph" is dropped (round 1 Polish resolved that way). The plan's log-scale plot and the `fy8-9/pa-points` graph-reading task are still not in the set (carried over). Add a c) "piirrä nettopulssimäärät logaritmiasteikolla ja lue T½", or record the deviation in docs/exercise-bank/FY8.md.
+- solutions.md:167 fy8-9-L3-02: "kolme merkitsevää numeroa kuten ajassa 10,0 min". The limiting datum is the net count rate 200, which has two figures (carried over from earlier rounds).
 
 ## Checked
-- All 19 numeric answers recomputed independently in one script: all match answers.py/exercises.json within tolerance.
-- L2-05 log fit 150 s; L2-06 net data fit 60 s, gross reaches 100 at 70,2 s (student's 70 s right); L2-07 80/10 = 8,0, 33,2 1/s, 5,4 %.
-- L3-04 data = 800·2^(−t/6 h) + 200·2^(−t/64,8 h) within 1 %; late pairs give 2,60–2,68 d (in tolerance); b), c) consistent.
-- L3-05 T_eff 3,065 d, T_bio 4,96 d, λ-sum check right, assumption stated.
-- L1-06 one correct option, feedback right; L1-07, L1-08 level 1, no duplicates; notation as in the lesson.
+- Hash 9d4ef2778f138504 at the start and at the end.
+- Round 1 Polish: L2-05 hint now reads "hieman alle neljäsosaan … noin 23 %" (64/283 = 22,6 %), and the solution says "hieman yli kaksi puoliintumisaikaa". This is consistent: T½ = 149,2 s, inside the 6 % tolerance, and the log fit gives 150 s.
+- L3-05 c) now asks "pienentää … aktiivisuutta nopeammin" and answers with λ_bio = 0,140 > λ_fys = 0,0864 1/d. This is correct, and it removes the misleading exposure claim.
+- answers.py comments are now right: 16,29 %, 0,6953 → 0,695 mg and 6,97 %.
+- L1-06: the reordered options still have exactly one correct, and `answer` matches it. L1-07 uses the colon form.
+- L2-06: the solution split (a) check, then "Selitys kohtaan b)") is correct physics. Background does not decay, so the gross count reaches 100 at about 70 s.
+- All new numeric answers match my own recomputation (L2-05 149,2 s; L3-05 T_eff 3,065 d, T_bio 4,96 d, 50,1 % / 16,4 %).
+- Set 8/7/5 = 20 tasks, and the levels fit the plan. Apart from the L1-07/L1-02 similarity (acceptable), no new task duplicates an existing one.
