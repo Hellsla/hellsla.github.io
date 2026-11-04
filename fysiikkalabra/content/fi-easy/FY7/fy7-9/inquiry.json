@@ -7,7 +7,7 @@
     "päättelemään kappaleen lämpötilan sen säteilyn spektristä ja hehkun väristä."
   ],
   "prior": [
-    "Aalto etenee yhden jaksonajan aikana yhden aallonpituuden verran, ja $v = f\\lambda$ (luku *Mekaaninen aaltoliike*)",
+    "Aalto etenee yhden jaksonajan aikana yhden aallonpituuden verran, ja $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*)",
     "Muuttuva magneettivuo indusoi jännitteen (luku *Sähkömagneettinen induktio*)",
     "Kaikki kappaleet lähettävät lämpösäteilyä, ja kuumempi kappale säteilee enemmän (luku *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*)"
   ],
@@ -29,15 +29,15 @@
         {
           "text": "Se puolittuu.",
           "correct": true,
-          "feedback": "Oikein. Aalto etenee yhden jaksonajan aikana yhden aallonpituuden verran, joten $v = f\\lambda$ (luku *Mekaaninen aaltoliike*). Nopeus $v$ pysyy samana ja taajuus $f$ kaksinkertaistuu. Silloin aallonpituus $\\lambda$ puolittuu. Sama pätee valoon, jonka nopeus on $c$."
+          "feedback": "Oikein. Aalto etenee yhden jaksonajan aikana yhden aallonpituuden verran, joten $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*). Nopeus $v$ pysyy samana ja taajuus $f$ kaksinkertaistuu. Silloin aallonpituus $\\lambda$ puolittuu. Sama pätee valoon, jonka nopeus on $c$."
         },
         {
           "text": "Se kaksinkertaistuu.",
-          "feedback": "Kun taajuus kasvaa, jaksonaika lyhenee. Silloin aalto ehtii edetä lyhyemmän matkan yhden jakson aikana. Koska $v = f\\lambda$ ja $v$ pysyy samana, kaksinkertainen taajuus puolittaa aallonpituuden (luku *Mekaaninen aaltoliike*)."
+          "feedback": "Kun taajuus kasvaa, jaksonaika lyhenee. Silloin aalto ehtii edetä lyhyemmän matkan yhden jakson aikana. Koska $v = f\\lambda$ ja $v$ pysyy samana, kaksinkertainen taajuus puolittaa aallonpituuden (luku *Aaltojen synty ja eteneminen*)."
         },
         {
           "text": "Se pysyy samana.",
-          "feedback": "Aallonpituus, taajuus ja nopeus liittyvät toisiinsa: $v = f\\lambda$ (luku *Mekaaninen aaltoliike*). Nopeus $v$ pysyy samana ja taajuus $f$ kaksinkertaistuu. Silloin aallonpituuden $\\lambda$ täytyy puolittua."
+          "feedback": "Aallonpituus, taajuus ja nopeus liittyvät toisiinsa: $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*). Nopeus $v$ pysyy samana ja taajuus $f$ kaksinkertaistuu. Silloin aallonpituuden $\\lambda$ täytyy puolittua."
         }
       ],
       "optional": true

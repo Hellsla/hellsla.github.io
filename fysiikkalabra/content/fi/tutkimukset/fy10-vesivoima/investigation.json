@@ -66,15 +66,13 @@
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Sähköteho $P = UI$",
-      "missing": "FY6: Sähköteho ja Joulen laki",
+      "target": "fy6-6",
       "why": "Generaattorin kuormalle antama teho lasketaan jännitteestä ja sähkövirrasta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "experiment",
       "level": "essential",
-      "text": "Jännitteen ja sähkövirran mittaaminen yleismittarilla",
-      "missing": "FY6: Mittaukset virtapiirissä",
+      "target": "fy6-2",
       "why": "Virtamittari kytketään sarjaan kuorman kanssa ja jännitemittari sen rinnalle; lyhyt ohje on tällä sivulla."
     },
     {

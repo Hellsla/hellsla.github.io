@@ -445,7 +445,7 @@ The $(U, I)$ graph of a cell is not a falling straight line like that of a batte
 ## Formula: Series resistor and power of a solar cell
 
 ### Sizing the series resistor
-When the source, the series resistor and the LED are in series, the same current $I$ flows through all of them. By Kirchhoff's voltage law the voltage of the source is shared between the resistor and the LED, $U = U_R + U_\text{D}$ (chapter *Kirchhoff's laws and potential in an electric circuit*). The resistor obeys Ohm's law, $U_R = RI$, so the resistance of the series resistor is
+When the source, the series resistor and the LED are in series, the same current $I$ flows through all of them. By Kirchhoff's voltage law the voltage of the source is shared between the resistor and the LED, $U = U_R + U_\text{D}$ (chapter *Kirchhoff's laws and potential in a circuit*). The resistor obeys Ohm's law, $U_R = RI$, so the resistance of the series resistor is
 ```latex
 R = \frac{U - U_\text{D}}{I}
 ```

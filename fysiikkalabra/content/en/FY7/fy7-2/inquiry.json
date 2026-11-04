@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "contribution": "A charged particle in electric and magnetic fields: the magnetic force $F = qvB$ turns the motion without changing the speed, the path is a circle $r = mv : (qB)$, and the velocity selector, the mass spectrometer and the particle accelerator combine acceleration by an electric field with bending by a magnetic field.",
+  "contribution": "A charged particle in electric and magnetic fields: the magnetic force $F = |q|vB$ turns the motion without changing the speed, the path is a circle $r = mv : (|q|B)$, and the velocity selector, the mass spectrometer and the particle accelerator combine acceleration by an electric field with bending by a magnetic field.",
   "learn": [
     "explain why the magnetic force turns the path of a charged particle but does not change its speed.",
     "determine the direction of the magnetic force and calculate its magnitude and the radius of the circular path.",
     "calculate the speed of a particle in a velocity selector and its mass in a mass spectrometer."
   ],
   "prior": [
-    "A charged particle in an electric field is acted on by a force $F = qE$, and on travelling across a voltage $U$ it gains energy $W = qU$ (chapter *Uniform electric field, potential and potential energy*)",
+    "A charged particle in an electric field is acted on by a force of magnitude $F = |q|E$ (chapter *Uniform electric field*), and on travelling across an accelerating voltage $U$ it gains energy $W = |q|U$ (chapter *Potential energy and potential in an electric field*)",
     "The strength of a magnetic field is the magnetic flux density $B$, whose unit is the tesla (chapter *Magnets, the magnetic dipole and the magnetic field*)",
-    "In uniform circular motion the net force points towards the centre of the path and has magnitude $\\tfrac{mv^2}{r}$ (chapter *Uniform circular motion and normal acceleration*)"
+    "In uniform circular motion the net force points towards the centre of the path and has magnitude $\\tfrac{mv^2}{r}$ (chapter *Centripetal acceleration and the equation of motion in a circle*)"
   ],
   "activities": [
     {
@@ -30,7 +30,7 @@
         {
           "text": "$8.8 \\cdot 10^{5}\\,\\text{m/s}$, because the speed is proportional to the square root of the voltage.",
           "correct": true,
-          "feedback": "Correct. The field does work $W = qU$ on the proton, and the work becomes kinetic energy $\\tfrac{1}{2}mv^2$ (chapter *Uniform electric field, potential and potential energy*). Four times the voltage gives four times the kinetic energy, and that corresponds to twice the speed, because $v = \\sqrt{2qU : m}$."
+          "feedback": "Correct. The field does work $W = qU$ on the proton, and the work becomes kinetic energy $\\tfrac{1}{2}mv^2$ (chapter *Potential energy and potential in an electric field*). Four times the voltage gives four times the kinetic energy, and that corresponds to twice the speed, because $v = \\sqrt{2qU : m}$."
         },
         {
           "text": "$1.8 \\cdot 10^{6}\\,\\text{m/s}$, because the speed is directly proportional to the voltage.",

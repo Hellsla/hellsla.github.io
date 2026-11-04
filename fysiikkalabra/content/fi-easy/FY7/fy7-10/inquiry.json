@@ -8,7 +8,7 @@
   ],
   "prior": [
     "Valo on sähkömagneettista aaltoliikettä. Tyhjiössä sen nopeus on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$ (luku *Sähkömagneettinen säteily ja mustan kappaleen spektri*)",
-    "Aalto heijastuu niin, että heijastuskulma on yhtä suuri kuin tulokulma. Kulmat mitataan normaalista (luku *Aaltojen heijastuminen ja diffraktio*)"
+    "Aalto heijastuu niin, että heijastuskulma on yhtä suuri kuin tulokulma. Kulmat mitataan normaalista (luku *Aalto kohtaa esteen tai raon*)"
   ],
   "activities": [
     {
@@ -28,15 +28,15 @@
         {
           "text": "Normaalin toiselle puolelle, $30^\\circ$:n kulmaan normaalista.",
           "correct": true,
-          "feedback": "Oikein. Heijastuskulma on yhtä suuri kuin tulokulma, kun molemmat mitataan normaalista (luku *Aaltojen heijastuminen ja diffraktio*). Tässä luvussa sama laki pätee valoon."
+          "feedback": "Oikein. Heijastuskulma on yhtä suuri kuin tulokulma, kun molemmat mitataan normaalista (luku *Aalto kohtaa esteen tai raon*). Tässä luvussa sama laki pätee valoon."
         },
         {
           "text": "Normaalin toiselle puolelle, $60^\\circ$:n kulmaan normaalista.",
-          "feedback": "Kulma $60^\\circ$ on tulevan aallon ja seinän pinnan välinen kulma. Heijastuslaki koskee normaalista mitattuja kulmia. Heijastuskulma on siis $30^\\circ$ (luku *Aaltojen heijastuminen ja diffraktio*)."
+          "feedback": "Kulma $60^\\circ$ on tulevan aallon ja seinän pinnan välinen kulma. Heijastuslaki koskee normaalista mitattuja kulmia. Heijastuskulma on siis $30^\\circ$ (luku *Aalto kohtaa esteen tai raon*)."
         },
         {
           "text": "Takaisin samaa reittiä, koska seinä pysäyttää aallon.",
-          "feedback": "Aalto palaa samaa reittiä vain, kun se tulee kohtisuoraan seinään. Vinosti tuleva aalto heijastuu normaalin toiselle puolelle yhtä suureen kulmaan (luku *Aaltojen heijastuminen ja diffraktio*)."
+          "feedback": "Aalto palaa samaa reittiä vain, kun se tulee kohtisuoraan seinään. Vinosti tuleva aalto heijastuu normaalin toiselle puolelle yhtä suureen kulmaan (luku *Aalto kohtaa esteen tai raon*)."
         }
       ],
       "optional": true

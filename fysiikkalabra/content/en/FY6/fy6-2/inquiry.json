@@ -7,8 +7,8 @@
     "explain how the meter and a wrong connection affect the electric circuit."
   ],
   "prior": [
-    "Electric current is a flow of charge through the cross-section of a conductor, and its unit is the ampere (chapter *Electric circuit, current and voltage*)",
-    "Voltage is a quantity between two points, and its unit is the volt (chapter *Electric circuit, current and voltage*)",
+    "Electric current is a flow of charge through the cross-section of a conductor, and its unit is the ampere (chapter *Circuit, electric current and voltage*)",
+    "Voltage is a quantity between two points, and its unit is the volt (chapter *Circuit, electric current and voltage*)",
     "A measurement result always has an uncertainty, and the resolution is the smallest step that the measuring instrument can show (chapter *Measuring and the reliability of a measurement*)"
   ],
   "activities": [
@@ -30,7 +30,7 @@
         {
           "text": "Current is a flow of charge through the cross-section of a conductor, and voltage is a quantity between two points.",
           "correct": true,
-          "feedback": "Correct (chapter *Electric circuit, current and voltage*). That is why current is measured at a point through which the charge passes, and voltage between two points. This difference decides how the meters are connected."
+          "feedback": "Correct (chapter *Circuit, electric current and voltage*). That is why current is measured at a point through which the charge passes, and voltage between two points. This difference decides how the meters are connected."
         },
         {
           "text": "Current and voltage are two names for the same thing: both tell how much electricity there is in a wire.",

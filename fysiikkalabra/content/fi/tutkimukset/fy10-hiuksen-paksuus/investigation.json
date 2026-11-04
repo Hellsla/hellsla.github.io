@@ -42,15 +42,13 @@
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Valon diffraktio",
-      "missing": "FY7: Valon interferenssi ja diffraktio",
+      "target": "fy7-13",
       "why": "Työssä tarvittava diffraktion malli selitetään lyhyesti tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "text": "Aaltojen diffraktio ja interferenssi",
-      "missing": "FY5: Diffraktio ja interferenssi",
+      "target": "fy5-12",
       "why": "Sama ilmiö mekaanisilla aalloilla auttaa ymmärtämään, miksi aallot voivat vahvistaa tai heikentää toisiaan."
     },
     {

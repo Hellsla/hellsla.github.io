@@ -41,29 +41,25 @@
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Resistanssi ja Ohmin laki",
-      "missing": "FY6: Resistanssi ja Ohmin laki",
+      "target": "fy6-3",
       "why": "Vastuksen läpi kulkevan virran ja jännitteen yhteys; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Kondensaattori ja kapasitanssi",
-      "missing": "FY6: Kondensaattori ja kondensaattorin energia",
+      "target": "fy6-13",
       "why": "Kapasitanssin määritelmä; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Kondensaattorin varaaminen ja purkaminen",
-      "missing": "FY6: Kondensaattorin varaaminen ja purkaminen",
+      "target": "fy6-13",
       "why": "Tutkittava ilmiö; työssä tarvittavat perusteet ovat tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "experiment",
       "level": "essential",
-      "text": "Kytkennän tekeminen ja jännitteen mittaaminen",
-      "missing": "FY6: Mittaukset virtapiirissä",
+      "target": "fy6-2",
       "why": "Kytkentäkaavion piirtäminen ja jännitemittarin kytkeminen; tarvittavat ohjeet ovat tällä sivulla."
     },
     {

@@ -41,7 +41,7 @@
         },
         {
           "text": "Kohtisuoraan kenttäviivoja vastaan, koska magneettinen voima on aina kohtisuorassa kenttää vastaan.",
-          "feedback": "Kohtisuoruus koskee liikkuvaan varaukseen kohdistuvaa voimaa (luku *Varattu hiukkanen sähkö- ja magneettikentässä*). Kompassin neula on magneettinen dipoli, ja se kääntyy kentän suuntaiseksi."
+          "feedback": "Kohtisuoruus koskee liikkuvaan varaukseen kohdistuvaa voimaa (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*). Kompassin neula on magneettinen dipoli, ja se kääntyy kentän suuntaiseksi."
         }
       ]
     },

@@ -57,7 +57,7 @@
 ## Key idea
 
 ### Electric charge and elementary charge
-The atoms of matter contain positively charged protons and negatively charged electrons (chapter *Electric circuit, current and voltage*). **Electric charge** is a property of particles that makes them act on each other through the electric interaction: charges of the same sign repel each other and charges of opposite signs attract each other. The symbol of charge is $Q$ or $q$, and its unit is the coulomb $\text{C}$. The charge of a proton is $+e$ and that of an electron $-e$, where $e$ is the **elementary charge**, the smallest charge that occurs free. A neutron has no charge.
+The atoms of matter contain positively charged protons and negatively charged electrons (chapter *Circuit, electric current and voltage*). **Electric charge** is a property of particles that makes them act on each other through the electric interaction: charges of the same sign repel each other and charges of opposite signs attract each other. The symbol of charge is $Q$ or $q$, and its unit is the coulomb $\text{C}$. The charge of a proton is $+e$ and that of an electron $-e$, where $e$ is the **elementary charge**, the smallest charge that occurs free. A neutron has no charge.
 
 An ordinary object has as many protons as electrons, so its total charge is zero: the object is electrically neutral. An object is charged when it has more or fewer electrons than protons. Charge is always made of whole elementary charges:
 ```latex
@@ -323,7 +323,7 @@ In an insulator the electrons cannot move from one object to another, but the ch
 </svg>
 
 ### Electric current is moving charge
-When charge moves from one place to another, an electric current flows. In a conductor the current is the charge that passes through the cross-section in a unit of time, $I = Q : t$ (chapter *Electric circuit, current and voltage*). The same holds for a spark and for lightning. When you touch a door handle on a dry winter day, a charge, typically under a microcoulomb, is discharged from your body in a spark. The discharge lasts only about a microsecond, so the current is for a moment of the order of an ampere, although the charge that moves is small.
+When charge moves from one place to another, an electric current flows. In a conductor the current is the charge that passes through the cross-section in a unit of time, $I = Q : t$ (chapter *Circuit, electric current and voltage*). The same holds for a spark and for lightning. When you touch a door handle on a dry winter day, a charge, typically under a microcoulomb, is discharged from your body in a spark. The discharge lasts only about a microsecond, so the current is for a moment of the order of an ampere, although the charge that moves is small.
 
 ### There is an electric field around a charge
 A charged object acts on another charged object without touching it. This is described with an electric field: a charge changes the space around it so that an electric force acts on another charge there. The field is illustrated with field lines. The direction of a field line is the direction in which the force on a small positive test charge points; the force on a negative charge points against the field line.

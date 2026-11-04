@@ -181,7 +181,7 @@ where $E_\text{u}$ is the energy of the upper and $E_\text{l}$ the energy of the
 
 The energies of atoms are often given in electronvolts. Before substituting into an equation that has $h$ and $c$, the electronvolts are converted to joules: the value ${1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}}$ is substituted in place of the electronvolt.
 
-The energy states of the hydrogen atom have been measured from its spectrum. In the chapter *The energy levels of the hydrogen atom and the Bohr model* we see where these values come from.
+The energy states of the hydrogen atom have been measured from its spectrum. In the chapter *Energy levels of the hydrogen atom and the Bohr model* we see where these values come from.
 
 | $n$ | $E_n$ (eV) |
 | --- | --- |

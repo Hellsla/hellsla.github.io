@@ -21,7 +21,7 @@
 ## fy5-11-L1-03
 **Given:** frequency $f = 8.0\,\text{Hz}$, speed of the wave $v = 0.24\,\text{m/s}$
 **Find:** the wavelength $\lambda$ in centimetres
-**Principle:** In the time of one period a wave travels a distance of one wavelength, so the speed, frequency and wavelength are related by the basic equation of wave motion (chapter *Mechanical wave motion*).
+**Principle:** In the time of one period a wave travels a distance of one wavelength, so the speed, frequency and wavelength are related by the basic equation of wave motion (chapter *How waves form and travel*).
 **Formula:** $v = f\lambda$, so $\lambda = \dfrac{v}{f}$
 **Conversions:** The result comes out in metres, and finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $\lambda = \dfrac{0.24\,\text{m/s}}{8.0\,\text{Hz}} = 0.030\,\text{m} = 0.030 \cdot 100\,\text{cm} = 3.0\,\text{cm}$
@@ -76,7 +76,7 @@
 ## fy5-11-L2-04
 **Given:** width of the doorway $b = 0.90\,\text{m}$, speed of sound $v = 343\,\text{m/s}$
 **Find:** the frequency $f$ at which the wavelength is $\lambda = b$
-**Principle:** The speed, frequency and wavelength of sound are related by the equation $v = f\lambda$ (chapter *Mechanical wave motion*). Set the wavelength equal to the width of the opening and solve for the frequency.
+**Principle:** The speed, frequency and wavelength of sound are related by the equation $v = f\lambda$ (chapter *How waves form and travel*). Set the wavelength equal to the width of the opening and solve for the frequency.
 **Formula:** $v = f\lambda$ and $\lambda = b$, so $f = \dfrac{v}{b}$
 **Conversions:** Not needed: the speed is in m/s and the width in metres, so the result is in hertz.
 **Substitution:** $f = \dfrac{343\,\text{m/s}}{0.90\,\text{m}} = 381.1\,\text{Hz}$
@@ -85,7 +85,7 @@
 
 ## fy5-11-L3-01
 **Find:** why a low sound is heard behind the corner but a high one is not, explained with diffraction and wavelengths
-**Principle:** Diffraction is strong when the width of the opening is of the order of the wavelength or smaller, and weak when the opening is many wavelengths wide. The wavelength is obtained from the equation $\lambda = \tfrac{v}{f}$ (chapter *Mechanical wave motion*).
+**Principle:** Diffraction is strong when the width of the opening is of the order of the wavelength or smaller, and weak when the opening is many wavelengths wide. The wavelength is obtained from the equation $\lambda = \tfrac{v}{f}$ (chapter *How waves form and travel*).
 **Model answer:** The wavelength of the bass is $\lambda = \tfrac{343\,\text{m/s}}{100\,\text{Hz}} = 3.43\,\text{m}$, so the window is only about a quarter of a wavelength ($b/\lambda = \tfrac{0.80\,\text{m}}{3.43\,\text{m}} \approx 0.23$). The window then acts like a single source of wavelets, and the sound spreads from the window in every direction, also behind the corner. The wavelength of the cymbal is $\lambda = \tfrac{343\,\text{m/s}}{5000\,\text{Hz}} \approx 6.9\,\text{cm}$, so the window is about $12$ wavelengths wide. From it the sound continues as an almost straight beam, and bends only a little behind the corner. That is why mostly bass is heard behind the corner.
 
 ## fy5-11-L3-02

@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "contribution": "Varattu hiukkanen sähkö- ja magneettikentässä: magneettinen voima $F = qvB$ kääntää liikettä muuttamatta vauhtia, rata on ympyrä $r = mv : (qB)$, ja nopeusvalitsin, massaspektrometri ja hiukkaskiihdytin yhdistävät sähkökentän kiihdytyksen ja magneettikentän taivutuksen.",
+  "contribution": "Varattu hiukkanen sähkö- ja magneettikentässä: magneettinen voima $F = |q|vB$ kääntää liikettä muuttamatta vauhtia, rata on ympyrä $r = mv : (|q|B)$, ja nopeusvalitsin, massaspektrometri ja hiukkaskiihdytin yhdistävät sähkökentän kiihdytyksen ja magneettikentän taivutuksen.",
   "learn": [
     "selittämään, miksi magneettinen voima kääntää varatun hiukkasen rataa mutta ei muuta sen vauhtia.",
     "määrittämään magneettisen voiman suunnan ja laskemaan sen suuruuden sekä ympyräradan säteen.",
     "laskemaan hiukkasen vauhdin nopeusvalitsimessa ja massan massaspektrometrissä."
   ],
   "prior": [
-    "Sähkökentässä varattuun hiukkaseen vaikuttaa voima $F = qE$, ja jännitteen $U$ yli kulkiessaan hiukkanen saa energiaa $W = qU$ (luku *Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia*)",
+    "Sähkökentässä varattuun hiukkaseen vaikuttaa voima, jonka suuruus on $F = |q|E$ (luku *Homogeeninen sähkökenttä*), ja kiihdyttävän jännitteen $U$ yli kulkiessaan hiukkanen saa energiaa $W = |q|U$ (luku *Potentiaalienergia ja potentiaali sähkökentässä*)",
     "Magneettikentän voimakkuus on magneettivuon tiheys $B$, jonka yksikkö on tesla (luku *Magneetit, magneettinen dipoli ja magneettikenttä*)",
-    "Tasaisessa ympyräliikkeessä kokonaisvoima osoittaa kohti radan keskipistettä ja on suuruudeltaan $\\tfrac{mv^2}{r}$ (luku *Tasainen ympyräliike ja normaalikiihtyvyys*)"
+    "Tasaisessa ympyräliikkeessä kokonaisvoima osoittaa kohti radan keskipistettä ja on suuruudeltaan $\\tfrac{mv^2}{r}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)"
   ],
   "activities": [
     {
@@ -30,7 +30,7 @@
         {
           "text": "$8{,}8 \\cdot 10^{5}\\,\\text{m/s}$, koska vauhti on verrannollinen jännitteen neliöjuureen.",
           "correct": true,
-          "feedback": "Oikein. Kenttä tekee protoniin työn $W = qU$, joka muuttuu liike-energiaksi $\\tfrac{1}{2}mv^2$ (luku *Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia*). Nelinkertainen jännite antaa nelinkertaisen liike-energian, ja se vastaa kaksinkertaista vauhtia, koska $v = \\sqrt{2qU : m}$."
+          "feedback": "Oikein. Kenttä tekee protoniin työn $W = qU$, joka muuttuu liike-energiaksi $\\tfrac{1}{2}mv^2$ (luku *Potentiaalienergia ja potentiaali sähkökentässä*). Nelinkertainen jännite antaa nelinkertaisen liike-energian, ja se vastaa kaksinkertaista vauhtia, koska $v = \\sqrt{2qU : m}$."
         },
         {
           "text": "$1{,}8 \\cdot 10^{6}\\,\\text{m/s}$, koska vauhti on suoraan verrannollinen jännitteeseen.",

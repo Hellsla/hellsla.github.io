@@ -198,7 +198,7 @@ Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.
 
 ## Teoriaa lyhyesti
 
-Sähköopin kurssin FY6 luvut eivät ole vielä tällä sivustolla, joten tässä on se, mitä tarvitset.
+Kondensaattoria käsitellään tarkemmin moduulin FY6 luvussa [[apua:fy6-13|Kondensaattori ja sen energia]]. Tässä on se, mitä tätä tutkimusta varten tarvitset.
 
 **Kondensaattori** koostuu kahdesta johteesta, joiden välissä on eriste. Kun kondensaattori varataan, toiseen johteeseen kertyy varaus $+Q$ ja toiseen $-Q$, ja johteiden välille syntyy jännite $u$. Varaus on suoraan verrannollinen jännitteeseen:
 

@@ -7,7 +7,7 @@
     "determine the density of a substance from measurement results and identify the substance using a table."
   ],
   "prior": [
-    "In direct proportionality the measurement points lie, within the measurement uncertainty, on a straight line through the origin, and its slope is the ratio $y : x$ (chapter *Graphs and fitting a straight line*)",
+    "In direct proportionality the measurement points lie, within the measurement uncertainty, on a straight line through the origin, and its slope is the ratio $y : x$ (chapter *Graphing and fitting a straight line*)",
     "Measurement results always contain error, and a result is given with a suitable number of significant figures (chapter *Measuring and the reliability of a measurement*)",
     "Quantities are calculated in SI units, and units are converted using powers of ten (chapter *Quantities, units and the SI system*)"
   ],
@@ -30,11 +30,11 @@
         {
           "text": "The quantity $y$ is directly proportional to the quantity $x$: the ratio $y : x$ is constant, and it is the slope of the line.",
           "correct": true,
-          "feedback": "Correct. A line through the origin has the form $y = kx$, so the ratio $y : x = k$ stays the same and doubling $x$ doubles $y$ (chapter *Graphs and fitting a straight line*). Today $y$ is mass, $x$ is volume and $k$ is density."
+          "feedback": "Correct. A line through the origin has the form $y = kx$, so the ratio $y : x = k$ stays the same and doubling $x$ doubles $y$ (chapter *Graphing and fitting a straight line*). Today $y$ is mass, $x$ is volume and $k$ is density."
         },
         {
           "text": "The quantities $x$ and $y$ are equal.",
-          "feedback": "The slope can be any number, not only 1. At the points of the line $y = kx$, $y$ is $k$ times $x$ (chapter *Graphs and fitting a straight line*)."
+          "feedback": "The slope can be any number, not only 1. At the points of the line $y = kx$, $y$ is $k$ times $x$ (chapter *Graphing and fitting a straight line*)."
         },
         {
           "text": "The quantity $y$ always increases by the same amount when $x$ increases, but $y$ may be non-zero at the start.",

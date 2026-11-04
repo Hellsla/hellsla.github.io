@@ -7,7 +7,7 @@
     "laskemaan fotonin liikemäärän ja valon fotonien lukumäärän sekunnissa."
   ],
   "prior": [
-    "Kaksi aaltoa vahvistaa tai heikentää toisiaan sen mukaan, kuinka suuri niiden matkaero on (luku *Aaltojen interferenssi*)",
+    "Kaksi aaltoa vahvistaa tai heikentää toisiaan sen mukaan, kuinka suuri niiden matkaero on (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*)",
     "Fotonin energia on $E = hf = \\tfrac{hc}{\\lambda}$, ja yksi fotoni voi irrottaa metallista enintään yhden elektronin (luku *Valosähköinen ilmiö ja fotoni*)",
     "Kun atomi siirtyy alemmalle energiatasolle, se lähettää fotonin, jonka energia on tasojen erotus (luku *Vetyatomin energiatasot ja Bohrin malli*)"
   ],

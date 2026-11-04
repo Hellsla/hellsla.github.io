@@ -41,22 +41,19 @@
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Aaltoliikkeen perussuureet ja aaltoyhtälö $v = f\\lambda$",
-      "missing": "FY5: Mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+      "target": "fy5-10",
       "why": "Etenemisnopeus lasketaan taajuudesta ja aallonpituudesta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Seisova aalto, solmu- ja kupukohdat",
-      "missing": "FY5: Seisovat aallot",
+      "target": "fy5-13",
       "why": "Vierekkäisten kupukohtien väli on puolet aallonpituudesta; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "text": "Mikroaallot sähkömagneettisena säteilynä",
-      "missing": "FY7: Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
+      "target": "fy7-9",
       "why": "Mikroaallot ja valo ovat samaa ilmiötä, joten mikroaaltojen etenemisnopeus on valonnopeus."
     },
     {

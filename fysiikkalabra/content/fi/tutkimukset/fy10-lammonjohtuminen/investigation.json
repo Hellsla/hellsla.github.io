@@ -53,8 +53,7 @@
     {
       "kind": "physics",
       "level": "helpful",
-      "text": "Lämpösäteily ja pinnan emissiivisyys",
-      "missing": "FY7: Sähkömagneettinen säteily, spektri ja mustan kappaleen säteily",
+      "target": "fy7-9",
       "why": "Lämpökamera päättelee lämpötilan pinnan lähettämästä säteilystä; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {

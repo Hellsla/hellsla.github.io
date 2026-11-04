@@ -209,7 +209,7 @@ Saman tehon voi siirtää suurella jännitteellä ja pienellä virralla. Kun jä
 <figure class="unit-photo"><img src="pics/fy7/transformer-750kv.webp" alt="Iso vaalea muuntaja nurmella. Taustalla on sähköaseman rakenteita ja johtoja."><figcaption>Muuntaja, jonka suurempi jännite on $750\,\text{kV}$. Johdoissa häviää tehoa $P = RI^2$. Kun jännite on suuri, johdoissa kulkee pieni virta. Silloin johdoissa häviää vähän tehoa.</figcaption></figure>
 
 ### Jännite lasketaan vaiheittain
-Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin. Asuinalueen muuntamo laskee sen kotien $230\,\text{V}$:iin. Suurjännitettä ei tuoda koteihin. Sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku *Sähköturvallisuus*).
+Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin. Asuinalueen muuntamo laskee sen kotien $230\,\text{V}$:iin. Suurjännitettä ei tuoda koteihin. Sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku *Sähköturvallisuus kotona ja työssä*).
 
 Puhelimen laturi laskee jännitteen vielä noin $5\,\text{V}$:iin. Nykyaikainen laturi muuttaa verkkojännitteen ensin hyvin suuritaajuiseksi. Silloin muuntaja voi olla pieni. Lopuksi laturi tasasuuntaa jännitteen. Laturin muuntajan käämit eivät kosketa toisiaan. Puhelin ei siis ole johtavassa yhteydessä sähköverkkoon.
 

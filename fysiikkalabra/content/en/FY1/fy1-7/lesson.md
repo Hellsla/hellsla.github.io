@@ -152,7 +152,7 @@ The difference comes from how tightly the matter is packed inside the volume. Th
 
 When you measure pieces of different sizes made of the same substance, you notice a regularity: twice the volume gives twice the mass, and half the volume gives half the mass. So mass is **directly proportional** to volume, which means the ratio $m : V$ stays the same. That constant ratio is the density of the substance.
 
-If the measurement results are plotted in a coordinate system with volume on the horizontal axis and mass on the vertical axis, the points lie, within the measurement uncertainty, on a straight line through the origin (chapter *Graphs and fitting a straight line*). The slope of the line is the density.
+If the measurement results are plotted in a coordinate system with volume on the horizontal axis and mass on the vertical axis, the points lie, within the measurement uncertainty, on a straight line through the origin (chapter *Graphing and fitting a straight line*). The slope of the line is the density.
 
 ### Density tells you what the substance is
 

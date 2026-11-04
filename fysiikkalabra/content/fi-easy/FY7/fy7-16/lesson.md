@@ -239,7 +239,7 @@ Kokonaisheijastuminen ei hukkaa valoa, mutta lasi itse vaimentaa sitä. Osa valo
 ### Vaimennus rajoittaa yhteyden pituutta
 Yleisen tietoliikennekuidun vaimennus on valmistajan mukaan enintään $0{,}18\,\text{dB/km}$ aallonpituudella $1550\,\text{nm}$ ja $0{,}32\,\text{dB/km}$ aallonpituudella $1310\,\text{nm}$ (Corning, SMF-28 Ultra -kuidun tuotetiedote, 2016). Vaimennus kertoo, kuinka paljon valon teho pienenee.
 
-Desibeli on tuttu luvusta *Äänen voimakkuus* (FY5). Jokainen $10\,\text{dB}$ tarkoittaa, että teho pienenee kymmenesosaan. Noin $3\,\text{dB}$ puolittaa tehon. Aallonpituudella $1550\,\text{nm}$ teho siis puolittuu noin $17\,\text{km}$:n matkalla. Matkan $100\,\text{km}$ jälkeen tehosta on jäljellä alle $2\,\%$.
+Desibeli on tuttu luvusta *Intensiteetti ja desibeliasteikko* (FY5). Jokainen $10\,\text{dB}$ tarkoittaa, että teho pienenee kymmenesosaan. Noin $3\,\text{dB}$ puolittaa tehon. Aallonpituudella $1550\,\text{nm}$ teho siis puolittuu noin $17\,\text{km}$:n matkalla. Matkan $100\,\text{km}$ jälkeen tehosta on jäljellä alle $2\,\%$.
 
 Vastaanotin tunnistaa pulssit vielä hyvin heikostakin valosta. Pitkillä yhteyksillä valo on silti vahvistettava optisella vahvistimella noin $50$–$100\,\text{km}$:n välein.
 

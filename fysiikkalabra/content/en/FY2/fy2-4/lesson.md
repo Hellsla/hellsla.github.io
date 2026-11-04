@@ -108,7 +108,7 @@ Efficiency $\eta$ (eta) is the ratio of the useful energy to the energy taken by
 ```
 where $\eta$ is the efficiency (a ratio, often given as a percentage), $E_\text{a}$ the useful energy given by the device (J), $E_\text{o}$ the energy taken by the device (J), $P_\text{a}$ the useful power (W) and $P_\text{o}$ the power taken by the device (W). A ratio is converted to a percentage by multiplying it by $100\,\%$, for example $0.30 \cdot 100\,\% = 30\,\%$. The multiplication does not change the number, because $1\,\% = 0.01$ and so $100\,\% = 100 \cdot 0.01 = 1$.
 
-The ratio of the powers is the same as the ratio of the energies, because at constant power energy is power multiplied by time (chapter *Power P = ΔE/Δt*). While the device runs for a time $t$, the energies are $E_\text{a} = P_\text{a} \cdot t$ and $E_\text{o} = P_\text{o} \cdot t$, and the time cancels:
+The ratio of the powers is the same as the ratio of the energies, because at constant power energy is power multiplied by time (chapter *Power: $P = \Delta E/\Delta t$*). While the device runs for a time $t$, the energies are $E_\text{a} = P_\text{a} \cdot t$ and $E_\text{o} = P_\text{o} \cdot t$, and the time cancels:
 ```latex
 \begin{aligned}
 \eta &= \frac{E_\text{a}}{E_\text{o}} \\

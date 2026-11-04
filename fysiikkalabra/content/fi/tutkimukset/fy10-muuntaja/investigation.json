@@ -55,43 +55,37 @@
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Sähköteho $P = UI$",
-      "missing": "FY6: Sähköteho ja Joulen laki",
+      "target": "fy6-6",
       "why": "Ensiö- ja toisiopuolen tehot lasketaan jännitteistä ja sähkövirroista; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
       "kind": "experiment",
       "level": "essential",
-      "text": "Virtamittarin ja jännitemittarin kytkeminen",
-      "missing": "FY6: Mittaukset virtapiirissä",
+      "target": "fy6-2",
       "why": "Kummassakin piirissä tarvitaan sekä virta- että jännitemittari; kytkentä on selitetty ja piirretty tällä sivulla."
     },
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Sähkömagneettinen induktio",
-      "missing": "FY7: Sähkömagneettinen induktio",
+      "target": "fy7-5",
       "why": "Muuntajan toiminta perustuu induktioon; tarvittava periaate on selitetty lyhyesti tällä sivulla."
     },
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Muuntaja",
-      "missing": "FY7: Muuntaja ja sähköenergian siirto",
+      "target": "fy7-8",
       "why": "Muuntajan rakenne ja ideaalisen muuntajan malli, johon mittauksia verrataan; lyhyt selitys on tällä sivulla."
     },
     {
       "kind": "physics",
       "level": "helpful",
-      "text": "Vaihtojännite ja tehollinen arvo",
-      "missing": "FY7: Generaattori ja vaihtovirran synty",
+      "target": "fy7-7",
       "why": "Mittarit näyttävät vaihtojännitteen ja -virran tehollisia arvoja; käsite on selitetty lyhyesti tällä sivulla."
     },
     {
       "kind": "experiment",
       "level": "helpful",
-      "text": "Sähköturvallisuus",
-      "missing": "FY6: Sähköturvallisuus",
+      "target": "fy6-15",
       "why": "Työssä kytketään itse kaksi virtapiiriä; tämän työn turvallisuusohjeet ovat tällä sivulla."
     },
     {

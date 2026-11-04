@@ -7,8 +7,8 @@
     "use Huygens' principle to explain the reflection and the diffraction of a wave at a slit and behind an obstacle."
   ],
   "prior": [
-    "The wavelength $\\lambda$ is the distance between two successive wave crests (chapter *Mechanical wave motion*)",
-    "The speed, frequency and wavelength of a wave are related: $v = f\\lambda$ (chapter *Mechanical wave motion*)"
+    "The wavelength $\\lambda$ is the distance between two successive wave crests (chapter *How waves form and travel*)",
+    "The speed, frequency and wavelength of a wave are related: $v = f\\lambda$ (chapter *How waves form and travel*)"
   ],
   "activities": [
     {
@@ -28,11 +28,11 @@
         {
           "text": "The wavelength is halved.",
           "correct": true,
-          "feedback": "Correct. When $v = f\\lambda$ and the speed stays the same, $\\lambda = \\tfrac{v}{f}$ is halved when $f$ doubles: from $2.0\\,\\text{cm}$ to $1.0\\,\\text{cm}$ (chapter *Mechanical wave motion*). You need the wavelength today, when the size of a wave is compared with the width of a slit."
+          "feedback": "Correct. When $v = f\\lambda$ and the speed stays the same, $\\lambda = \\tfrac{v}{f}$ is halved when $f$ doubles: from $2.0\\,\\text{cm}$ to $1.0\\,\\text{cm}$ (chapter *How waves form and travel*). You need the wavelength today, when the size of a wave is compared with the width of a slit."
         },
         {
           "text": "The wavelength doubles.",
-          "feedback": "The frequency tells how many crests leave per second. When crests leave twice as often at the same speed, they are closer to each other: $\\lambda = \\tfrac{v}{f}$ decreases from $2.0\\,\\text{cm}$ to $1.0\\,\\text{cm}$ (chapter *Mechanical wave motion*)."
+          "feedback": "The frequency tells how many crests leave per second. When crests leave twice as often at the same speed, they are closer to each other: $\\lambda = \\tfrac{v}{f}$ decreases from $2.0\\,\\text{cm}$ to $1.0\\,\\text{cm}$ (chapter *How waves form and travel*)."
         },
         {
           "text": "The wavelength stays the same, because the speed of the wave does not change.",
@@ -442,7 +442,7 @@
           "feedback": "You calculated the wavelength as $\\tfrac{f}{v}$. From the equation $v = f\\lambda$ you get $\\lambda = \\tfrac{v}{f}$."
         }
       ],
-      "solution": "**Given:** $f = 6.0\\,\\text{Hz}$, $v = 0.18\\,\\text{m/s}$, width of the slit $b = 4.5\\,\\text{cm}$\n\n**Find:** the ratio $b/\\lambda$, that is, the width of the slit in wavelengths, without a unit\n\n**Principle:** The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$ (chapter *Mechanical wave motion*). Once the wavelength is known, the width of the slit is compared with it, because the strength of diffraction depends on the ratio $b/\\lambda$.\n\n**Formula:** $v = f\\lambda$, so $\\lambda = \\dfrac{v}{f}$ and $\\dfrac{b}{\\lambda} = \\dfrac{b f}{v}$\n\n**Conversions:** $b = 4.5\\,\\text{cm} = 0.045\\,\\text{m}$, so that the units cancel.\n\n**Substitution:** $\\lambda = \\dfrac{0.18\\,\\text{m/s}}{6.0\\,\\text{Hz}} = 0.030\\,\\text{m}$ and $\\dfrac{b}{\\lambda} = \\dfrac{0.045\\,\\text{m}}{0.030\\,\\text{m}} = 1.5$\n\n**Answer:** $1.5$, two significant figures like the frequency $6.0\\,\\text{Hz}$ and the width of the slit $4.5\\,\\text{cm}$.\n\n**Reasonableness:** A wavelength of $3.0\\,\\text{cm}$ is typical for a ripple tank, and the slit is only one and a half wavelengths wide. So the wave clearly spreads behind the slit: in the model of the simulation the spreading angle is then about $24^\\circ$."
+      "solution": "**Given:** $f = 6.0\\,\\text{Hz}$, $v = 0.18\\,\\text{m/s}$, width of the slit $b = 4.5\\,\\text{cm}$\n\n**Find:** the ratio $b/\\lambda$, that is, the width of the slit in wavelengths, without a unit\n\n**Principle:** The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$ (chapter *How waves form and travel*). Once the wavelength is known, the width of the slit is compared with it, because the strength of diffraction depends on the ratio $b/\\lambda$.\n\n**Formula:** $v = f\\lambda$, so $\\lambda = \\dfrac{v}{f}$ and $\\dfrac{b}{\\lambda} = \\dfrac{b f}{v}$\n\n**Conversions:** $b = 4.5\\,\\text{cm} = 0.045\\,\\text{m}$, so that the units cancel.\n\n**Substitution:** $\\lambda = \\dfrac{0.18\\,\\text{m/s}}{6.0\\,\\text{Hz}} = 0.030\\,\\text{m}$ and $\\dfrac{b}{\\lambda} = \\dfrac{0.045\\,\\text{m}}{0.030\\,\\text{m}} = 1.5$\n\n**Answer:** $1.5$, two significant figures like the frequency $6.0\\,\\text{Hz}$ and the width of the slit $4.5\\,\\text{cm}$.\n\n**Reasonableness:** A wavelength of $3.0\\,\\text{cm}$ is typical for a ripple tank, and the slit is only one and a half wavelengths wide. So the wave clearly spreads behind the slit: in the model of the simulation the spreading angle is then about $24^\\circ$."
     },
     {
       "id": "tarkistus-3",

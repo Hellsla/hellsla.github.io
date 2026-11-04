@@ -171,7 +171,7 @@ Potential changes only in the source and in the resistors. In the source it rise
 </svg>
 
 ### A round trip in a loop: Kirchhoff's voltage law
-A **loop** is a closed path in a circuit that returns to its starting point. When a loop is traversed, the potential returns to the same value from which it started. Therefore **the sum of the rises and drops of potential in a loop is zero**. This is Kirchhoff's voltage law. In a circuit of one loop the voltage of the source is equal to the sum of the voltages of the resistors. In terms of energy, voltage tells how much energy per unit of charge changes from one form to another (chapter *Electric circuit, current and voltage*): a charge gains energy in the source and gives up the same amount in the resistors.
+A **loop** is a closed path in a circuit that returns to its starting point. When a loop is traversed, the potential returns to the same value from which it started. Therefore **the sum of the rises and drops of potential in a loop is zero**. This is Kirchhoff's voltage law. In a circuit of one loop the voltage of the source is equal to the sum of the voltages of the resistors. In terms of energy, voltage tells how much energy per unit of charge changes from one form to another (chapter *Circuit, electric current and voltage*): a charge gains energy in the source and gives up the same amount in the resistors.
 
 The circuit of the figure has two loops, one through the resistor $R_2$ and the other through the resistor $R_3$. In each of them the $9.0\,\text{V}$ of the source divides into the voltage $3.0\,\text{V}$ of the resistor $R_1$ and the voltage $6.0\,\text{V}$ of the branch. This is why the voltage across parallel branches is the same.
 
