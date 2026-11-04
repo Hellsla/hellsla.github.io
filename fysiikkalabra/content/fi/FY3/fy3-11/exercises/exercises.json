@@ -40,6 +40,77 @@
       "answer": 21.7,
       "unit": "%",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L1-06",
+      "level": 1,
+      "text": "Kaasu laajenee sylinterissä vakiopaineessa, ja $(V, p)$-koordinaatistossa laajeneminen näkyy vaakasuorana janana. Mikä seuraavista kertoo oikein, miten kaasun tekemä työ nähdään koordinaatistosta?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Työ on janan alle jäävän suorakulmion pinta-ala, koska sen korkeus on paine ja leveys tilavuuden muutos.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Työ on janan alle jäävän suorakulmion pinta-ala, koska sen korkeus on paine ja leveys tilavuuden muutos.",
+          "feedback": "Oikein: $W_\\text{k} = p\\,\\Delta V$ on korkeuden $p$ ja leveyden $\\Delta V$ tulo, joten työ on suorakulmion pinta-ala. Yksikkö $\\text{Pa}\\cdot\\text{m}^3$ on joule.",
+          "correct": true
+        },
+        {
+          "text": "Työ on janan korkeus, koska suurempi paine tekee aina suuremman työn riippumatta tilavuuden muutoksesta.",
+          "feedback": "Pelkkä korkeus on paine, ei työ. Jos tilavuus ei muutu, mäntä ei liiku eikä työtä tehdä, vaikka paine olisi suuri."
+        },
+        {
+          "text": "Työ on janan pituus, koska työ riippuu vain tilavuuden muutoksesta eikä paineella ole merkitystä.",
+          "feedback": "Pituus on tilavuuden muutos $\\Delta V$, ei työ. Sama tilavuuden muutos tekee sitä suuremman työn, mitä suurempi paine on."
+        },
+        {
+          "text": "Työ on nolla, koska paine ei muutu laajenemisen aikana, eikä muuttumaton suure tee työtä.",
+          "feedback": "Työtä tekee voima, kun mäntä liikkuu. Vakiopaineessa voima on vakio, mutta mäntä siirtyy, joten työ on paine kertaa tilavuuden muutos eikä nolla."
+        }
+      ]
+    },
+    {
+      "id": "fy3-11-L1-07",
+      "level": 1,
+      "text": "Lämpöpumppu luovuttaa sisälle enemmän lämpöä kuin se käyttää sähköenergiaa. Miksi tämä ei ole ristiriidassa energian säilymisen kanssa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Osa sisälle luovutetusta lämmöstä on otettu ulkoilmasta, joten sisälle menevä energia on ulkoilman lämmön ja sähkön summa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Osa sisälle luovutetusta lämmöstä on otettu ulkoilmasta, joten sisälle menevä energia on ulkoilman lämmön ja sähkön summa.",
+          "feedback": "Oikein: $Q_\\text{sisälle} = Q_\\text{ulko} + E_\\text{s}$. Pumppu siirtää lämpöä kylmästä lämpimään sähkön avulla, eikä energiaa synny tyhjästä.",
+          "correct": true
+        },
+        {
+          "text": "Pumppu muuttaa sähköenergian monikertaiseksi lämmöksi, koska lämpökerroin kertoo, kuinka paljon uutta energiaa se tuottaa.",
+          "feedback": "Lämpökerroin kertoo vain, kuinka monta kertaa suuremman lämmön pumppu luovuttaa sisälle sähköön verrattuna. Energiaa ei synny, vaan lisälämpö tulee ulkoa."
+        },
+        {
+          "text": "Lämpöpumpun hyötysuhde on yli $100\\,\\%$, koska se on tehokkaampi kone kuin mikään lämpövoimakone.",
+          "feedback": "Hyötysuhde ei voi ylittää $100\\,\\%$:a. Lämpökerroin on eri suure, ja se voi olla yli 1, koska osa lämmöstä siirtyy ulkoa."
+        },
+        {
+          "text": "Sähköenergia ja lämpö ovat eri asioita, joten niiden suuruuksia ei voi verrata keskenään energian säilymisen kannalta.",
+          "feedback": "Sekä sähköenergia että lämpö ovat energiaa ja mitataan jouleina tai kilowattitunteina, joten ne voi verrata. Säilyminen koskee niiden summaa."
+        }
+      ]
+    },
+    {
+      "id": "fy3-11-L1-08",
+      "level": 1,
+      "text": "Ilma-vesilämpöpumppu käyttää sähkötehoa $1{,}20\\,\\text{kW}$ ja luovuttaa lämmityspiiriin lämpötehon $3{,}90\\,\\text{kW}$. Mikä on pumpun lämpökerroin?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 3.25,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +145,120 @@
       "answer": 720,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L2-05",
+      "level": 2,
+      "text": "Esimerkkiaineisto: dieselgeneraattorin koeajossa mitattiin neljällä eri kuormalla moottorin mekaaninen teho $P$ ja polttoaineen kulutus $q_m$ kilogrammaa tunnissa. Dieselpolttoaineen lämpöarvo on $43\\,\\text{MJ/kg}$. Millä kuormalla moottorin hyötysuhde on suurin? Anna vastaukseksi tämä suurin hyötysuhde prosentteina.",
+      "kind": [
+        "data"
+      ],
+      "answer": 31.4,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Dieselmoottorin teho ja polttoaineen kulutus (esimerkkiaineisto)",
+        "columns": [
+          "$P\\,(\\text{kW})$",
+          "$q_m\\,(\\text{kg/h})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "7.9"
+          ],
+          [
+            "40.0",
+            "11.6"
+          ],
+          [
+            "60.0",
+            "16.0"
+          ],
+          [
+            "80.0",
+            "22.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-11-L2-06",
+      "level": 2,
+      "text": "Oppilas väittää: \"Kun lämpövoimakoneen kitka ja muut häviöt saadaan poistettua, kone voi muuttaa kaiken saamansa lämmön työksi, koska energia säilyy.\" Mikä väitteessä on virheellistä?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Kone voi toistaa työnsä vain jäähdyttämällä kaasun, joten osa lämmöstä on aina luovutettava kylmempään ympäristöön.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kone voi toistaa työnsä vain jäähdyttämällä kaasun, joten osa lämmöstä on aina luovutettava kylmempään ympäristöön.",
+          "feedback": "Oikein: kun mäntä palautetaan, kaasu on jäähdytettävä, ja jäähdytyksessä lämpöä siirtyy kylmempään. Siksi $Q_2 > 0$ ja hyötysuhde $\\eta = W/Q_1$ jää alle $100\\,\\%$:n.",
+          "correct": true
+        },
+        {
+          "text": "Energia ei säily lämpövoimakoneessa, joten osa lämmöstä katoaa tyhjiin eikä sitä voi hyödyntää työnä.",
+          "feedback": "Energia säilyy aina: $W = Q_1 - Q_2$. Lämpö ei katoa, vaan osa siitä siirtyy kylmempään ympäristöön."
+        },
+        {
+          "text": "Väite on oikein, jos kone on riittävän suuri, koska suuressa koneessa kitkan osuus jää mitättömäksi.",
+          "feedback": "Koneen koko ei poista rajaa. Vaikka kitka olisi nolla, lämpöä on luovutettava kylmempään, joten hyötysuhde jää alle $100\\,\\%$:n."
+        },
+        {
+          "text": "Väite on oikein, jos polttoaineen lämpöarvo on riittävän suuri, koska silloin lämpöä on aina yli tarpeen.",
+          "feedback": "Polttoaineen lämpöarvo kertoo, paljonko lämpöä vapautuu, ei sitä, kuinka suuri osa muuttuu työksi. Kierroksen jäähdytys luovuttaa lämpöä aina."
+        }
+      ]
+    },
+    {
+      "id": "fy3-11-L2-07",
+      "level": 2,
+      "text": "Esimerkkiaineisto: koulun ilmalämpöpumpun toimintaa seurattiin neljän vuorokauden ajan. Jokaisesta vuorokaudesta mitattiin pumpun käyttämä sähköenergia $E_\\text{s}$ ja sisälle luovutettu lämpö $Q_\\text{sisälle}$. Kuinka paljon lämpöä pumppu otti ulkoilmasta kaikkiaan näiden neljän vuorokauden aikana? Anna vastaus kilowattitunteina.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 20.9,
+      "unit": "kWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Lämpöpumpun mittaukset (esimerkkiaineisto)",
+        "columns": [
+          "Vuorokausi",
+          "$T_\\text{ulko}\\,({}^\\circ\\text{C})$",
+          "$E_\\text{s}\\,(\\text{kWh})$",
+          "$Q_\\text{sisälle}\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "2.0",
+            "2.1",
+            "6.4"
+          ],
+          [
+            "2",
+            "-3.0",
+            "3.0",
+            "8.1"
+          ],
+          [
+            "3",
+            "-9.0",
+            "4.2",
+            "10.0"
+          ],
+          [
+            "4",
+            "-5.0",
+            "3.6",
+            "9.3"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +285,100 @@
       "answer": 12.0,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L3-04",
+      "level": 3,
+      "text": "Esimerkkiaineisto: omakotitalon lämmitystä suunnitellaan lämpöpumpulla. Taulukossa on talon kuukausittainen lämmöntarve $Q$ talvikaudella sekä pumpun lämpökerroin $\\varepsilon$ kunkin kuukauden keskimääräisessä ulkolämpötilassa. Lämmöntarve katetaan kokonaan pumpulla.\n\na) Laske sähköenergia $E_\\text{s}$, jonka pumppu käyttää kunkin kuukauden aikana, ja kaikkien kuukausien yhteenlaskettu sähköenergia.\n\nb) Laske kauden keskimääräinen lämpökerroin $\\varepsilon_\\text{kausi}$, joka kertoo koko kauden luovutetun lämmön suhteen koko kauden sähköenergiaan.\n\nc) Selitä, miksi kauden lämpökerrointa ei saa laskea kuukausien lämpökertoimien tavallisena keskiarvona, ja laske, kuinka paljon sähköä pumppu säästää verrattuna suoraan sähkölämmitykseen, jossa kaikki lämpö tulee sähköstä.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 2.74,
+      "unit": "",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Talon lämmöntarve ja lämpöpumpun lämpökerroin (esimerkkiaineisto)",
+        "columns": [
+          "Kuukausi",
+          "$T_\\text{ulko}\\,({}^\\circ\\text{C})$",
+          "$Q\\,(\\text{MWh})$",
+          "$\\varepsilon$"
+        ],
+        "rows": [
+          [
+            "marraskuu",
+            "1.0",
+            "1.8",
+            "3.4"
+          ],
+          [
+            "joulukuu",
+            "-4.0",
+            "2.6",
+            "2.9"
+          ],
+          [
+            "tammikuu",
+            "-12.0",
+            "4.0",
+            "2.4"
+          ],
+          [
+            "helmikuu",
+            "-7.0",
+            "3.1",
+            "2.6"
+          ],
+          [
+            "maaliskuu",
+            "-1.0",
+            "2.2",
+            "3.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-11-L3-05",
+      "level": 3,
+      "text": "Esimerkkiaineisto: pystysuorassa sylinterissä on ilmaa, jonka sulkee kevyesti liikkuva mäntä. Sylinterin poikkipinta-ala on $A = 200\\,\\text{cm}^2$, ja ilman paine pysyy mittausten mukaan vakiona $p = 125\\,\\text{kPa}$. Ilmaa lämmitetään sähkövastuksella, jonka teho on $500\\,\\text{W}$. Oletetaan, että kaikki vastuksen luovuttama energia siirtyy ilmaan lämpönä. Taulukossa on männän korkeus $h$ sylinterin pohjasta mitattuna lämmityksen aikana.\n\na) Laske ilmaan neljässä sekunnissa siirtynyt lämpö $Q$ ja ilman tekemä työ $W_\\text{k}$ käyttämällä taulukon alku- ja loppuarvoa.\n\nb) Laske ilman sisäenergian muutos $\\Delta U$.\n\nc) Laske, kuinka suuri osa lämmöstä muuttui työksi, ja perustele, miksi tällainen yksittäinen laajeneminen ei vielä ole lämpövoimakone.\n\nKirjoita vastauslaatikkoon kohdan b) tulos kilojouleina.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 1.7,
+      "unit": "kJ",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Männän korkeus lämmityksen aikana (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$h\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "10.0"
+          ],
+          [
+            "1.0",
+            "13.1"
+          ],
+          [
+            "2.0",
+            "16.0"
+          ],
+          [
+            "3.0",
+            "19.2"
+          ],
+          [
+            "4.0",
+            "22.0"
+          ]
+        ]
+      }
     }
   ]
 }

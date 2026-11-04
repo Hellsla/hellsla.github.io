@@ -40,6 +40,96 @@
       "answer": 239,
       "unit": "W/m²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L1-06",
+      "level": 1,
+      "text": "Istut tuulettomana iltana nuotion edessä, ja kasvosi tuntuvat lämpimiltä, vaikka nuotion ja kasvojesi välissä oleva ilma on viileää. Miten lämpöä siirtyy pääasiassa nuotiolta kasvoihisi?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Lämpösäteilynä, koska nuotion kuuma pinta lähettää säteilyä, joka kulkee ilman läpi ihoon.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Konvektiolla, koska nuotion lämmittämä ilma virtaa vaakasuoraan kasvojen suuntaan.",
+          "feedback": "Lämmin ilma nousee nuotion päältä ylöspäin eikä virtaa vaakasuoraan kasvoille. Lisäksi ilma kasvojen edessä on viileää, joten lämpöä ei kulje sen mukana."
+        },
+        {
+          "text": "Lämpösäteilynä, koska nuotion kuuma pinta lähettää säteilyä, joka kulkee ilman läpi ihoon.",
+          "correct": true,
+          "feedback": "Oikein: kaikki kappaleet lähettävät lämpösäteilyä, ja kuuma nuotio säteilee voimakkaasti. Säteily kulkee viileän ilman läpi lämmittämättä sitä paljon ja imeytyy ihoon, joka lämpenee."
+        },
+        {
+          "text": "Johtumalla, koska ilman hiukkaset välittävät energiaa nuotiolta kasvoille asti toisiinsa törmäten.",
+          "feedback": "Ilma on huono lämmönjohde, ja viileä ilma nuotion ja kasvojen välissä osoittaa, ettei energia kulje sen kautta. Johtuminen vaatisi, että väliaine lämpenisi matkalla."
+        },
+        {
+          "text": "Johtumalla, koska nuotion kuumat hiilet koskettavat kasvojen ihoa ja luovuttavat energiaa suoraan.",
+          "feedback": "Kasvot ovat etäällä nuotiosta eivätkä kosketa hiiliä. Johtumiseen tarvitaan kappaleiden kosketus, joten se ei selitä lämmön tunnetta etäältä."
+        }
+      ]
+    },
+    {
+      "id": "fy3-12-L1-07",
+      "level": 1,
+      "text": "Mikä väite kasvihuoneilmiöstä on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan siitä takaisin alas, joten maanpinta on lämpimämpi.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Ilmiö johtuu otsonikerroksen ohenemisesta, joka päästää maanpinnalle enemmän lämmittävää ultraviolettisäteilyä.",
+          "feedback": "Tämä sekoittaa kasvihuoneilmiön ja otsonikadon. Otsonikato päästää läpi enemmän ultraviolettisäteilyä, mutta se ei juuri lämmitä maapalloa. Kasvihuoneilmiö syntyy lämpösäteilyn imeytymisestä."
+        },
+        {
+          "text": "Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan siitä takaisin alas, joten maanpinta on lämpimämpi.",
+          "correct": true,
+          "feedback": "Oikein: kasvihuonekaasut, kuten vesihöyry ja hiilidioksidi, imevät maanpinnan lämpösäteilyä ja lähettävät osan takaisin alas. Siksi maanpinnan keskilämpötila on noin $+15\\,{}^\\circ\\text{C}$ eikä noin $-18\\,{}^\\circ\\text{C}$."
+        },
+        {
+          "text": "Kasvihuonekaasut estävät Auringon säteilyä pääsemästä ilmakehään, joten ne lämmittävät ilmaa ylhäältä käsin.",
+          "feedback": "Auringon säteily pääsee suureksi osaksi ilmakehän läpi maanpinnalle. Kasvihuonekaasut vaikuttavat siihen, miten maanpinnan lähettämä lämpösäteily poistuu, eivät siihen, pääseekö Auringon säteily sisään."
+        },
+        {
+          "text": "Ilmiö syntyy vasta ihmisen päästöistä, ja ilman niitä maanpinnan keskilämpötila olisi sama kuin nyt.",
+          "feedback": "Luonnollinen kasvihuoneilmiö on olemassa ilman ihmistäkin ja pitää maapallon elinkelpoisena. Ihmisen päästöt voimistavat sitä, ja siksi maapallo lämpenee."
+        }
+      ]
+    },
+    {
+      "id": "fy3-12-L1-08",
+      "level": 1,
+      "text": "Talon sisällä on $21\\,{}^\\circ\\text{C}$ ja ulkona pakkasyönä $-15\\,{}^\\circ\\text{C}$. Mikä väite lämmön siirtymisestä seinän läpi on oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Lämpöä siirtyy nettomääräisesti sisältä ulos, koska lämpötilaero siirtää energiaa lämpimämmästä kylmempään.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Kylmyys siirtyy seinän läpi ulkoa sisälle, ja siksi seinän sisäpinta tuntuu kylmältä.",
+          "feedback": "Kylmyys ei ole mikään, mikä siirtyisi. Sisäpinta tuntuu kylmältä, koska lämpöä siirtyy ihosta ja huoneesta seinää kohti. Siirtyvä asia on aina energia, ja se kulkee lämpimästä kylmään."
+        },
+        {
+          "text": "Lämpöä siirtyy seinän läpi yhtä paljon kumpaankin suuntaan, joten sisälämpötila pysyy ilman lämmitystäkin samana.",
+          "feedback": "Lämpötilaero saa energiaa siirtymään nettomääräisesti sisältä ulos. Jos lämmitystä ei ole, sisälämpötila laskee, kunnes ero on poistunut."
+        },
+        {
+          "text": "Lämpöä siirtyy nettomääräisesti sisältä ulos, koska lämpötilaero siirtää energiaa lämpimämmästä kylmempään.",
+          "correct": true,
+          "feedback": "Oikein: energiaa siirtyy nettomääräisesti lämpimästä sisältä kylmään ulos. Lämpösäteilyä lähtee kyllä myös kylmästä ulkoa sisälle, mutta lämpimämmästä lähtee enemmän."
+        },
+        {
+          "text": "Lämpöä siirtyy sisältä ulos vain, jos seinässä on aukko, koska umpinaisen seinän läpi ei johdu lämpöä.",
+          "feedback": "Lämpö johtuu umpinaisenkin seinän läpi, ja rakennuksen lämpöhäviön suuri osa kulkee juuri seinien, katon ja ikkunoiden läpi. Eristys vain pienentää tätä tehoa."
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +164,106 @@
       "answer": 3.4,
       "unit": "W/m²",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L2-05",
+      "level": 2,
+      "text": "Kaksi samanlaista kuppia täytetään $0{,}25\\,\\text{kg}$:lla kuumaa vettä, jonka lämpötila on $80{,}0\\,{}^\\circ\\text{C}$. Kuppi A on avoin, ja kupissa B on kansi. Kupit ovat samassa huoneessa, ja lämpötilat mitataan viiden minuutin välein (esimerkkiaineisto). Kupin oma lämpökapasiteetti jätetään huomiotta, ja veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Laske, kuinka suuri keskimääräinen lämpöteho kannen ansiosta jää karkaamatta ensimmäisten $10\\,\\text{min}$ aikana.\n\nb) Mikä lämmönsiirtymistapa on avoimessa kupissa merkittävä ja kansi estää sen? Miksi kupin B vesi silti jäähtyy?\n\nAnna a)-kohdan tulos vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 7.0,
+      "unit": "W",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Veden lämpötila jäähtyessä (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$T_\\text{A}\\,({}^\\circ\\text{C})$",
+          "$T_\\text{B}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "80.0",
+            "80.0"
+          ],
+          [
+            "5",
+            "73.9",
+            "76.6"
+          ],
+          [
+            "10",
+            "69.0",
+            "73.0"
+          ],
+          [
+            "15",
+            "64.8",
+            "70.1"
+          ],
+          [
+            "20",
+            "61.2",
+            "67.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-12-L2-06",
+      "level": 2,
+      "text": "Oppilas laskee, kuinka suuri lämpöteho johtuu ikkunan läpi. Ikkunan pinta-ala on $1{,}6\\,\\text{m}^2$ ja U-arvo $1{,}0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Sisällä on $21\\,{}^\\circ\\text{C}$ ja ulkona $-15\\,{}^\\circ\\text{C}$. Oppilaan ratkaisu on: \"Lämpötilaero on $21\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 6\\,\\text{K}$, joten $P = UA\\Delta T = 1{,}0 \\cdot 1{,}6 \\cdot 6\\,\\text{W} = 9{,}6\\,\\text{W}$.\"\n\na) Missä oppilaan ratkaisun virhe on, ja miten huomaisit jo pyöristetyillä luvuilla, että tulos on liian pieni?\n\nb) Laske ikkunan läpi johtuva lämpöteho oikein.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
+      "kind": [
+        "error"
+      ],
+      "answer": 57.6,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L2-07",
+      "level": 2,
+      "text": "Oppilaat tutkivat seinäpaneelin eristyskykyä. Paneelin pinta-ala on $0{,}50\\,\\text{m}^2$. Paneelin sisäpuolta lämmitetään sähkövastuksella, joka pitää lämpötilat vakioina, ja mitataan paneelin läpi johtuva teho $P$ eri lämpötilaeroilla $\\Delta T$ (esimerkkiaineisto).\n\na) Piirrä pisteet $(\\Delta T, P)$-koordinaatistoon ja sovita niihin origon kautta kulkeva suora. Perustele, miksi suoran kuuluu kulkea origon kautta. Suora kulkee likimain pisteen $(50{,}0\\,\\text{K};\\ 8{,}75\\,\\text{W})$ kautta. Määritä suoran kulmakertoimesta paneelin U-arvo.\n\nb) Mitä pisteiden asettuminen suoralle kertoo tehon ja lämpötilaeron välisestä riippuvuudesta? Miksi lämpötilojen oli pysyttävä vakioina mittauksen ajan?\n\nAnna a)-kohdan U-arvo vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "experiment",
+        "graph"
+      ],
+      "answer": 0.35,
+      "unit": "W/(m²·K)",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Paneelin läpi johtuva teho eri lämpötilaeroilla (esimerkkiaineisto)",
+        "columns": [
+          "$\\Delta T\\,(\\text{K})$",
+          "$P\\,(\\text{W})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "1.8"
+          ],
+          [
+            "20.0",
+            "3.4"
+          ],
+          [
+            "30.0",
+            "5.4"
+          ],
+          [
+            "40.0",
+            "6.9"
+          ],
+          [
+            "50.0",
+            "8.8"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +290,90 @@
       "answer": 984,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-12-L3-04",
+      "level": 3,
+      "text": "Jäämeren jääpeite on pienentynyt. Taulukossa on jään pinta-ala syyskuun minimissä (esimerkkiaineisto). Arvioidaan mallilla, mitä jään vähenemisestä seuraa. Jään tilalle tullut avoin meri saa saman auringonsäteilyn kuin jää sai, keskimäärin $90\\,\\text{W/m}^2$. Albedo kertoo, kuinka suuri osuus tulevasta säteilystä heijastuu: jään albedo on $0{,}60$ ja avoimen meren $0{,}06$. Maapallon pinta-ala on $5{,}1 \\cdot 10^{14}\\,\\text{m}^2$.\n\na) Lue taulukosta jään pinta-alan pieneneminen vuodesta 1980 vuoteen 2020 ja muuta se neliömetreiksi.\n\nb) Kuinka paljon suurempaa tehoa alue nyt imee? Laske sitten tämä lisäys keskimäärin koko maapallon pinta-alaa kohti ja vertaa sitä energiaepätasapainoon $1{,}0\\,\\text{W/m}^2$.\n\nc) Selitä, miksi jään väheneminen on positiivinen palautekytkentä ja mikä mallin yksinkertaistus tekee arviosta karkean.\n\nAnna b)-kohdan koko maapallon pinta-alaa kohti laskettu teho vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.34,
+      "unit": "W/m²",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Jäämeren jään pinta-ala syyskuun minimissä (esimerkkiaineisto)",
+        "columns": [
+          "Vuosi",
+          "$A\\,(10^{6}\\,\\text{km}^2)$"
+        ],
+        "rows": [
+          [
+            "1980",
+            "7.5"
+          ],
+          [
+            "1990",
+            "6.1"
+          ],
+          [
+            "2000",
+            "6.4"
+          ],
+          [
+            "2010",
+            "4.9"
+          ],
+          [
+            "2020",
+            "3.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-12-L3-05",
+      "level": 3,
+      "text": "Maapallon lämpötilaa arvioidaan yksinkertaisella mallilla. Maanpinta imee Auringosta tehon $239\\,\\text{W/m}^2$ ja säteilee lämpösäteilyä ylöspäin tehon $S$ neliömetriä kohti. Ilmakehä imee osuuden $0{,}80$ tästä säteilystä, ja loput $20\\,\\%$ pääsee suoraan avaruuteen. Ilmakehä säteilee imemänsä energian puoliksi ylös avaruuteen ja puoliksi alas maanpinnalle. Mallissa ilmakehä ei imenä Auringon säteilyä, ja sekä ilmakehän yläraja että maanpinta ovat energiatasapainossa. Taulukossa on maanpinnan säteilemä lämpöteho neliömetriä kohti sen lämpötilan mukaan (esimerkkiaineisto).\n\na) Kirjoita energiataseet ilmakehän ylärajalle ja maanpinnalle ja laske maanpinnan säteilemä teho $S$.\n\nb) Päättele taulukosta maanpinnan lämpötila interpoloimalla ja anna se celsiusasteina.\n\nc) Mikä lämpötila maanpinnalla olisi ilman ilmakehää, kun se säteilisi vain imemänsä tehon $239\\,\\text{W/m}^2$? Mitä ero kertoo kasvihuoneilmiöstä, ja miksi malli on silti karkea?\n\nAnna b)-kohdan lämpötila celsiusasteina vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 16.3,
+      "unit": "°C",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Maanpinnan lämpösäteilyn teho lämpötilan mukaan (esimerkkiaineisto)",
+        "columns": [
+          "$T\\,(\\text{K})$",
+          "$P\\,(\\text{W/m}^2)$"
+        ],
+        "rows": [
+          [
+            "255",
+            "240"
+          ],
+          [
+            "273",
+            "315"
+          ],
+          [
+            "288",
+            "390"
+          ],
+          [
+            "303",
+            "478"
+          ],
+          [
+            "318",
+            "580"
+          ]
+        ]
+      }
     }
   ]
 }
