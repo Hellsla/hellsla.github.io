@@ -98,21 +98,21 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
         css = ROOT / "assets" / "units" / code.lower() / "units.css"
         if css.is_file(): out += f'<link rel="stylesheet" href="units/{code.lower()}/units.css">'
         out += (f'<h2 id="chapters">{T("units.chapters")}</h2><p class="section-lead">{T("units.chapters_lead")}</p>'
-                + (f'<p class="section-lead local-overview">{esc(c["overview"])}</p>' if c.get("overview") else "") + '<div class="unit-cards">')
+                + (f'<p class="section-lead local-overview">{esc(c["overview"])}</p>' if c.get("overview") else ""))
+        items = ""
         for i, ch in enumerate(c["chapters"], 1):
-            items = ""
             for j, u in enumerate(ch["units"], 1):
+                lab = cardgrid.label(f'{i} · {esc(ch["title"])}', esc(ch["question"]), lang_attr) if j == 1 else ""
                 num = T("site.chapter_n", n=f"{i}.{j}"); title = f'<span{lang_attr}>{esc(u["title"])}</span>' if lang_attr else esc(u["title"])
                 star = (f'<span class="tag">★ {T("units.optional_mark")}</span>') if u.get("optional") else ""
                 if u["id"] in hrefs:
                     src = units.folder(u["id"], c.get("language") or T.lang) / "unit.md"
                     text = src.read_text() if src.is_file() else ""
                     why = cardgrid.md_question(text)
-                    items += cardgrid.card(num, title, hrefs[u["id"]], f'<span{lang_attr}>{why}</span>' if lang_attr and why else why, cardgrid.hero(text), star)
+                    items += cardgrid.card(num, title, hrefs[u["id"]], f'<span{lang_attr}>{why}</span>' if lang_attr and why else why, cardgrid.hero(text), star, lab=lab)
                 else:
-                    items += cardgrid.card(num, title, None, tags=star + f'<span class="tag">{T("site.lesson_coming")}</span>')
-            out += cardgrid.group(items, f'{i} · {esc(ch["title"])}', esc(ch["question"]), lang_attr)
-        out += "</div>"
+                    items += cardgrid.card(num, title, None, tags=star + f'<span class="tag">{T("site.lesson_coming")}</span>', lab=lab)
+        out += cardgrid.grid(items, ' id="unit-cards"')
     if c.get("mixer"):                   # the YO-sekoitin: every exam-style task of the site (scripts/mixer.py)
         out += (f'<h2 id="sekoitin">{T("mixer.course_heading")}</h2><p class="section-lead">{T("mixer.course_lead")}</p>'
                 f'<ul class="lessons practice-link"><li class="live"><a href="yo-sekoitin.html">{T("mixer.title")}</a></li></ul>')

@@ -6,6 +6,7 @@
   const list = document.getElementById('bank-list');
   if (!form || !list) return;
   const items = [...list.querySelectorAll('.bank-item')];
+  const labels = [...list.querySelectorAll('[data-topic-label]')];
   const count = document.getElementById('bank-count');
   const none = document.getElementById('bank-none');
   const norm = (s) => s.toLowerCase().normalize('NFC').trim();
@@ -22,11 +23,10 @@
         && (!picked || picked.has(li));
       li.hidden = !ok; shown += ok;
     }
-    // a bank in sections (FY10's topics, scripts/cardgrid.py): a section with nothing left hides with its heading
-    for (const ol of list.querySelectorAll('ol.ch-cards')) {
-      const empty = !ol.querySelector('.bank-item:not([hidden])');
-      ol.hidden = empty;
-      for (let el = ol.previousElementSibling; el && !el.matches('ol'); el = el.previousElementSibling) el.hidden = empty;
+    // a bank in topic sections (FY10, scripts/cardgrid.py): each topic's label goes on its first card still shown
+    for (const lab of labels) {
+      const first = items.find((li) => !li.hidden && li.dataset.topic === lab.dataset.topicLabel);
+      if (first) first.prepend(lab); else lab.remove();
     }
     none.hidden = shown > 0;
     count.textContent = count.dataset.template.replace('{shown}', shown).replace('{total}', items.length);

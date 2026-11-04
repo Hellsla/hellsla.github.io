@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-7-L1-01",
+      "level": 1,
+      "text": "Koulun generaattorimallin käämissä on $300$ kierrosta, ja sen pinta-ala on $0{,}0030\\,\\text{m}^2$. Käämi pyörii homogeenisessa magneettikentässä $0{,}15\\,\\text{T}$ pyörimistaajuudella $10\\,\\text{Hz}$. Kuinka suuri on käämiin syntyvän jännitteen huippuarvo?",
+      "answer": 8.4823,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-02",
+      "level": 1,
+      "text": "Matkustajalentokoneen sähköverkossa on vaihtojännite, jonka tehollinen arvo on $115\\,\\text{V}$ ja taajuus $400\\,\\text{Hz}$. Kuinka suuri on jännitteen huippuarvo?",
+      "answer": 162.63456,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-03",
+      "level": 1,
+      "text": "Vedenkeittimen vastuksessa kulkevan sinimuotoisen vaihtovirran huippuarvo on $8{,}5\\,\\text{A}$. Kuinka suuri on virran tehollinen arvo?",
+      "answer": 6.010408,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-04",
+      "level": 1,
+      "text": "Vesivoimalan generaattorin akseli tekee $1500$ kierrosta minuutissa. Kuinka suuri on akselin pyörimistaajuus hertseinä?",
+      "answer": 25.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-05",
+      "level": 1,
+      "text": "Sähkölämmitin on kytketty verkkojännitteeseen, jonka tehollinen arvo on $230\\,\\text{V}$, ja sen virran tehollinen arvo on $4{,}35\\,\\text{A}$. Kuinka suuri on lämmittimen keskimääräinen teho? Anna vastaus kilowatteina.",
+      "answer": 1.0005,
+      "unit": "kW",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-7-L2-01",
+      "level": 2,
+      "text": "Generaattorin suorakulmaisessa käämissä on $150$ kierrosta, ja käämin sivujen pituudet ovat $6{,}0\\,\\text{cm}$ ja $8{,}0\\,\\text{cm}$. Käämi pyörii homogeenisessa magneettikentässä $0{,}25\\,\\text{T}$ ja tekee $1200$ kierrosta minuutissa. Kuinka suuri on käämiin syntyvän jännitteen huippuarvo?",
+      "answer": 22.619467,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L2-02",
+      "level": 2,
+      "text": "Kuvaajassa on pienen generaattorin jännite ajan funktiona. Generaattorin käämissä on $200$ kierrosta, sen pinta-ala on $30\\,\\text{cm}^2$, ja se pyörii homogeenisessa magneettikentässä. Lue kuvaajasta jännitteen huippuarvo ja jaksonaika. Kuinka suuri on magneettivuon tiheys?",
+      "figure": "fy7-7/trace",
+      "answer": 0.127324,
+      "unit": "T",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-7-L2-03",
+      "level": 2,
+      "text": "Retkeilijä lataa akkua käsin pyöritettävällä generaattorilla, jonka jännitteen tehollisen arvon pitää olla $12\\,\\text{V}$. Generaattorin käämissä on $200$ kierrosta, sen pinta-ala on $0{,}0050\\,\\text{m}^2$, ja magneettikenttä on $0{,}30\\,\\text{T}$. Millä pyörimistaajuudella käämin on pyörittävä?",
+      "answer": 9.003163,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L2-04",
+      "level": 2,
+      "text": "Suomen tuulivoimalat tuottivat vuonna 2024 sähköä $19{,}8\\,\\text{TWh}$, ja vuoden lopussa niiden yhteenlaskettu nimellisteho oli $8358\\,\\text{MW}$ (Suomen Uusiutuvat ry, tuulivoimatilastot 2024). Vuodessa 2024 oli $366$ vuorokautta. Kuinka monta prosenttia tuulivoimaloiden keskimääräinen teho oli vuoden lopun nimellistehosta?",
+      "answer": 26.969351,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-7-L3-01",
+      "level": 3,
+      "text": "Generaattorin käämi pyörii tasaisesti, ja sen jännitteen huippuarvo on $20{,}0\\,\\text{V}$. Hetkellä $t = 0$ käämin taso on kohtisuorassa kenttää vastaan. Kuinka suuri on käämin jännite, kun käämi on kääntynyt tästä asennosta $30^\\circ$?",
+      "answer": 10.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L3-02",
+      "level": 3,
+      "text": "Generaattori, jonka jännitteen huippuarvo on $40\\,\\text{V}$, on kytketty $40\\,\\Omega$:n vastukseen. Generaattorin oma resistanssi on niin pieni, että sen voi jättää huomiotta. Kuinka suuri on vastuksen keskimääräinen teho?",
+      "answer": 20.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L3-03",
+      "level": 3,
+      "text": "Suoravetoisessa tuulivoimalassa kestomagneettigeneraattori pyörii samaa tahtia kuin roottori. Generaattorin jännitteen tehollinen arvo on $690\\,\\text{V}$, kun roottori pyörii $15$ kierrosta minuutissa. Tuuli heikkenee, ja roottori pyörii enää $9{,}0$ kierrosta minuutissa. Generaattorin magneetit ja käämit ovat samat, eikä taajuusmuuttajaa oteta huomioon. Kuinka suuri on generaattorin jännitteen tehollinen arvo nyt?",
+      "answer": 414.0,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy7-16-L1-01",
+      "level": 1,
+      "text": "The attenuation coefficient of a telecommunications fibre is $0.18\\,\\text{dB/km}$. What is the attenuation of a fibre $50\\,\\text{km}$ long, in decibels?",
+      "answer": 9.0,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-02",
+      "level": 1,
+      "text": "The power of light is $2.0\\,\\text{mW}$ at the start of a fibre and $0.50\\,\\text{mW}$ at the end. What is the attenuation of the fibre in decibels?",
+      "answer": 6.0206,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-03",
+      "level": 1,
+      "text": "Assume that the eddy currents in the base of a pan on an induction hob can be described as one current loop with a resistance of $0.010\\,\\Omega$, in which flows an alternating current with an effective value of $400\\,\\text{A}$. At what power do the eddy currents change electrical energy into internal energy of the base? Give the answer in kilowatts.",
+      "answer": 1.6,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-04",
+      "level": 1,
+      "text": "The magnetic field of a wireless charger is uniform at the receiver coil of a phone and perpendicular to the plane of the coil, and the peak value of the magnetic flux density is $0.50\\,\\text{mT}$. The area of one turn of the coil is $12\\,\\text{cm}^2$. What is the peak value of the flux through one turn? Give the answer in microwebers.",
+      "answer": 0.6,
+      "unit": "µWb",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L1-05",
+      "level": 1,
+      "text": "Assume that a wireless charger takes a power of $10.0\\,\\text{W}$ from the wall socket and a power of $7.2\\,\\text{W}$ is transferred to the battery of the phone. What is the efficiency of the charging? Give the answer as a percentage.",
+      "answer": 72.0,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-16-L2-01",
+      "level": 2,
+      "text": "The receiver coil of a phone has $10$ turns. The frequency of the charger is $140\\,\\text{kHz}$, and the magnetic flux through one turn varies sinusoidally with a peak value of $0.40\\,\\mu\\text{Wb}$. What is the peak value of the voltage induced in the coil?",
+      "answer": 3.5186,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L2-02",
+      "level": 2,
+      "text": "The transmitter of a fibre link feeds a power of $1.0\\,\\text{mW}$ into the fibre, and the receiver detects the pulses when the power is at least $1.0\\,\\mu\\text{W}$. The attenuation coefficient of the fibre is $0.20\\,\\text{dB/km}$. What is the greatest possible length of the link without an amplifier? Ignore the attenuation of the splices.",
+      "answer": 150.0,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L2-03",
+      "level": 2,
+      "text": "The cooking zone of an induction hob takes a power of $2.0\\,\\text{kW}$ from the mains. Assume that $85\\,\\%$ of the power is transferred to the water in the pan. The pan contains $1.5\\,\\text{kg}$ of water at a temperature of $15\\,{}^\\circ\\text{C}$. How long does it take to heat the water to the boiling point, $100\\,{}^\\circ\\text{C}$? The specific heat capacity of water is $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Give the answer in minutes.",
+      "answer": 5.2375,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L2-04",
+      "level": 2,
+      "text": "In a measurement (Ravenscraft, OneZero, 2020) charging a phone from empty to full took $14.26\\,\\text{Wh}$ of energy from the wall socket with a cable charger and $21.01\\,\\text{Wh}$ with a charging pad. Assume that the phone is charged from empty to full once a day for a year ($365$ days). How much more energy does the charging pad use in a year than the cable charger? Give the answer in kilowatt-hours.",
+      "answer": 2.4638,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-16-L3-01",
+      "level": 3,
+      "text": "The submarine cable C-Lion1 is $1172\\,\\text{km}$ long (Cinia, 2016). Assume that the attenuation coefficient of its fibres is $0.18\\,\\text{dB/km}$ and that the attenuation of one section of fibre may be at most $20\\,\\text{dB}$ before an optical amplifier restores the power of the light. The sections are of equal length, and the amplifiers are between the sections; the transmitter and the receiver are at the ends of the cable. What is the smallest number of amplifiers the cable must have?",
+      "answer": 10,
+      "unit": "amplifiers",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L3-02",
+      "level": 3,
+      "text": "The coil of an induction hob at a frequency of $25\\,\\text{kHz}$ produces in the base of a pan a sinusoidally varying magnetic field whose magnetic flux density has a peak value of $4.0\\,\\text{mT}$. Assume that the field is uniform and perpendicular to the base, that the eddy currents in the base can be described as one loop with a radius of $8.0\\,\\text{cm}$ and a resistance of $0.050\\,\\Omega$, and that the magnetic field of the eddy current itself is ignored. At what mean power does the base heat up? Give the answer in kilowatts.",
+      "answer": 1.596,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-16-L3-03",
+      "level": 3,
+      "text": "The transmitter of a fibre link feeds a power of $1.0\\,\\text{mW}$ into the fibre, and the receiver needs a power of at least $10\\,\\mu\\text{W}$. The attenuation coefficient of the fibre is $0.20\\,\\text{dB/km}$, and the link has four splices, each of which attenuates by $0.50\\,\\text{dB}$. The refractive index of the glass of the fibre is $1.47$. How long does it take a light pulse to travel from end to end of the longest possible link, when the pulse travels along the axis of the fibre? The speed of light in a vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give the answer in milliseconds.",
+      "answer": 0.441,
+      "unit": "ms",
+      "tolerance": 0.02
+    }
+  ]
+}

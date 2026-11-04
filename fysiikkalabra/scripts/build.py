@@ -429,23 +429,24 @@ def chapter_card(html):
 
 def chapter_cards(code, mod, slots, built_ids, legacy_ids, cards):
     """The module page's chapters as cards, under the module's themes (curriculum.json "themes": [{title, first}],
-    titles translated in content/<lang>/courses.json "themes"); a chapter still coming is a plain row without a link."""
+    titles translated in content/<lang>/courses.json "themes"); a chapter still coming is a plain row without a link.
+    One continuous grid (teacher 2026-11-04): a theme's name is a label above its first card, so the next theme's cards
+    go on in the same row and a short theme leaves no hole beside it (scripts/cardgrid.py)."""
     themes = {th["first"]: th["title"] for th in mod.get("themes", [])}
     if themes and slots[0]["id"] not in themes: sys.exit(f"{code}: the first theme must start at the first chapter {slots[0]['id']}")
     bad = set(themes) - {l["id"] for l in slots}
     if bad: sys.exit(f"{code}: themes start at unknown chapters {sorted(bad)} (curriculum.json)")
-    out = ""; group = ""; heading = ""
+    items = ""
     for i, l in enumerate(slots, 1):
-        if l["id"] in themes:
-            out += cardgrid.group(group, heading); group = ""; heading = esc(themes[l["id"]])
+        lab = cardgrid.label(esc(themes[l["id"]])) if l["id"] in themes else ""
         num = T("site.chapter_n", n=i); title = esc(l["title"])
         if l["id"] in built_ids:
             svg, why = cards.get(l["id"], ("", ""))
             tags = f'<span class="tag">{T("site.lesson_prototype")}</span>' if l["id"] in legacy_ids else ""
-            group += cardgrid.card(num, title, f'{l["id"]}.html', why, svg, tags)
+            items += cardgrid.card(num, title, f'{l["id"]}.html', why, svg, tags, lab=lab)
         else:
-            group += cardgrid.card(num, title, None, tags=f'<span class="tag">{T("site.lesson_coming")}</span>')
-    return out + cardgrid.group(group, heading)
+            items += cardgrid.card(num, title, None, tags=f'<span class="tag">{T("site.lesson_coming")}</span>', lab=lab)
+    return cardgrid.grid(items)
 
 
 def chapter_titles(code, built=None):

@@ -1,0 +1,44 @@
+{
+  "id": "fy7-10",
+  "course": "FY7",
+  "title": "Valon heijastuminen ja taittuminen",
+  "goals": [
+    "LOPS FY7: valon heijastuminen, taittuminen",
+    "LOPS FY7: ymmärtää valon sähkömagneettisena ilmiönä",
+    "Kokeellisesti: valon heijastumisen ja taittumisen tutkiminen rajapinnassa"
+  ],
+  "prerequisites": [
+    "fy7-9"
+  ],
+  "glossary": [
+    "heijastuslaki",
+    "taittuminen",
+    "taitekerroin",
+    "Snellin laki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "heijastuminen",
+      "explain": "Osa rajapintaan osuvasta valosta palaa takaisin samaan aineeseen. Sileästä pinnasta, kuten peilistä, näkyy heijastunut kuva."
+    },
+    {
+      "term": "heijastuslaki",
+      "explain": "Heijastuskulma on yhtä suuri kuin tulokulma, $\\beta = \\alpha_1$. Kulmat mitataan rajapinnan normaalista eli suorasta, joka on kohtisuorassa rajapintaa vastaan."
+    },
+    {
+      "term": "taittuminen",
+      "explain": "Valon suunnan muutos, kun valo menee vinosti rajapinnan läpi aineesta toiseen. Se johtuu siitä, että valon nopeus muuttuu."
+    },
+    {
+      "term": "taitekerroin",
+      "explain": "Luku $n = c : v$, joka kertoo, kuinka monta kertaa hitaammin valo etenee aineessa kuin tyhjiössä. Esimerkiksi veden taitekerroin on $1{,}33$."
+    },
+    {
+      "term": "Snellin laki",
+      "explain": "Taittumislaki $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, jossa kulmat mitataan normaalista. Optisesti tiheämpään aineeseen valo taittuu kohti normaalia."
+    }
+  ]
+}

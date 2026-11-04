@@ -1,0 +1,379 @@
+{
+  "version": 1,
+  "contribution": "Induktiovirran suunta Lenzin lain mukaan ja sen perustelu energian säilymisellä; pyörrevirrat metallikappaleissa, putoavan magneetin jarrutus putkessa ja energian muuttuminen putken sisäenergiaksi, sekä sovelluksina induktiojarru, induktioliesi, metallinilmaisin ja muuntajan levyrakenteinen sydän.",
+  "learn": [
+    "päättelemään Lenzin lain avulla induktiovirran suunnan ja sen, hylkiikö vai vetääkö johdin magneettia.",
+    "selittämään energian säilymisellä, miksi induktiovirta vastustaa muutosta, ja laskemaan, kuinka paljon energiaa pyörrevirrat muuttavat sisäenergiaksi.",
+    "selittämään, miten pyörrevirtajarru, induktioliesi ja metallinilmaisin toimivat ja miksi muuntajan sydän kootaan levyistä."
+  ],
+  "prior": [
+    "Kun suljetun johdinsilmukan läpi kulkeva magneettivuo muuttuu, silmukkaan syntyy induktiojännite $e = -N \\Delta\\Phi : \\Delta t$ ja induktiovirta (luku *Sähkömagneettinen induktio*)",
+    "Virtajohdin tai virtasilmukka on itse magneetti, jolla on N- ja S-napa (luku *Virtajohtimen ja käämin magneettikenttä*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kun voimakas neodyymimagneetti pudotetaan metrin pituiseen pystysuoraan kupariputkeen, se ei tule ulos heti. Kuluu monta sekuntia, ja kun putkeen kurkistaa ylhäältä, magneetin näkee leijuvan alaspäin hitaasti ja tasaisesti. Magneetti ei kuitenkaan tartu putken seinään, ja samankokoinen teräsmutteri putoaa saman putken läpi silmänräpäyksessä.",
+      "question": "Mikä jarruttaa magneettia, vaikka mikään ei kosketa sitä, ja mihin sen putoamisen energia katoaa?"
+    },
+    {
+      "id": "kertaus-induktio",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: milloin induktiojännite syntyy?",
+      "prompt": "Käämin päät on kytketty jännitemittariin. Sauvamagneetti työnnetään käämin sisään ja jätetään sitten paikalleen käämin sisälle. Mitä mittari näyttää, kun magneetti on levossa käämin sisällä?",
+      "choices": [
+        {
+          "text": "Nollaa, koska käämin läpi kulkeva magneettivuo ei muutu, kun magneetti on levossa.",
+          "correct": true,
+          "feedback": "Oikein. Induktiojännite $e = -N \\Delta\\Phi : \\Delta t$ syntyy vain, kun vuo muuttuu (luku *Sähkömagneettinen induktio*). Tänään selvitetään, mihin suuntaan induktiovirta kulkee, kun vuo muuttuu, ja mitä siitä seuraa."
+        },
+        {
+          "text": "Suurinta jännitettä, koska magneettivuo käämin läpi on nyt suurimmillaan.",
+          "feedback": "Vuo on suuri, mutta jännite ei riipu vuon suuruudesta vaan sen muutosnopeudesta $\\Delta\\Phi : \\Delta t$. Kun magneetti on levossa, vuo ei muutu, ja jännite on nolla (luku *Sähkömagneettinen induktio*)."
+        },
+        {
+          "text": "Tasaista jännitettä, joka pysyy niin kauan kuin magneetti on käämissä.",
+          "feedback": "Pysyvä magneetti ei synnytä käämiin pysyvää jännitettä. Jännite syntyy vain vuon muuttuessa: kun magneetti työnnetään sisään tai vedetään ulos. Levossa oleva magneetti ei muuta vuota, joten jännite on nolla (luku *Sähkömagneettinen induktio*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-putket",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: muovi-, alumiini- ja kupariputki",
+      "prompt": "Sama neodyymimagneetti pudotetaan levosta kolmeen samankokoiseen metrin pituiseen pystysuoraan putkeen: muovi-, alumiini- ja kupariputkeen. Kupari johtaa sähköä paremmin kuin alumiini, eikä kumpikaan ole ferromagneettinen aine. Miten putoamisajat eroavat toisistaan?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Putoamisaika on kaikissa putkissa sama, koska magneetti ei vedä kuparia eikä alumiinia puoleensa.",
+          "feedback": "Mallin arvot kumoavat tämän: muoviputkessa putoamisaika on $0{,}45\\,\\text{s}$, alumiiniputkessa $4{,}24\\,\\text{s}$ ja kupariputkessa $6{,}68\\,\\text{s}$. Magneetti ei vedä metallia puoleensa, mutta liikkuva magneetti muuttaa putken seinän läpi kulkevaa vuota, ja seinään syntyvät pyörrevirrat jarruttavat sitä."
+        },
+        {
+          "text": "Metalliputkissa magneetti putoaa hitaammin kuin muoviputkessa ja kupariputkessa hitaimmin.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: muoviputkessa $0{,}45\\,\\text{s}$, alumiiniputkessa $4{,}24\\,\\text{s}$ ja kupariputkessa $6{,}68\\,\\text{s}$. Metalliputkien seinään syntyy pyörrevirtoja, jotka jarruttavat magneettia, ja paremmin johtavassa kuparissa virrat ja jarrutus ovat suurempia."
+        },
+        {
+          "text": "Metalliputkissa magneetti putoaa hitaammin kuin muoviputkessa, ja alumiiniputkessa hitaimmin, koska alumiini on kevyempää.",
+          "feedback": "Mallin arvot kumoavat tämän: alumiiniputkessa putoamisaika on $4{,}24\\,\\text{s}$, kupariputkessa pidempi $6{,}68\\,\\text{s}$. Putken massa ei jarruta magneettia, vaan seinään syntyvät pyörrevirrat. Kupari johtaa paremmin, joten siinä virrat ja jarrutus ovat suurempia."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-rako",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kupariputki, jossa on rako",
+      "prompt": "Kupariputken seinään sahataan putken koko pituudelta kapea pitkittäinen rako. Putken massa ja materiaali pysyvät lähes samoina. Miten magneetin putoamisaika muuttuu ehjään kupariputkeen verrattuna?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Se ei juuri muutu, koska putkessa on yhä lähes yhtä paljon kuparia.",
+          "feedback": "Mallin arvot kumoavat tämän: ehjässä kupariputkessa putoamisaika on $6{,}68\\,\\text{s}$, rakoputkessa vain $0{,}82\\,\\text{s}$. Pyörrevirrat kiertävät putken ympäri, ja rako katkaisee niiden radan. Ratkaisevaa ei ole kuparin määrä vaan se, voiko virta kiertää suljetun silmukan."
+        },
+        {
+          "text": "Se lyhenee paljon, koska rako katkaisee putken ympäri kiertävät virrat.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: putoamisaika lyhenee $6{,}68\\,\\text{s}$:sta $0{,}82\\,\\text{s}$:iin, mutta se on yhä noin kaksinkertainen muoviputken $0{,}45\\,\\text{s}$:iin verrattuna, koska pienemmät pyörrevirrat kiertävät yhä seinässä raon ympäri. Pyörrevirta tarvitsee suljetun silmukan. Samasta syystä muuntajan rautasydän kootaan eristetyistä levyistä."
+        },
+        {
+          "text": "Se pitenee, koska raon reunoihin syntyy lisää virtoja, jotka jarruttavat magneettia.",
+          "feedback": "Mallin arvot kumoavat tämän: putoamisaika lyhenee $6{,}68\\,\\text{s}$:sta $0{,}82\\,\\text{s}$:iin. Raon reunoilla kiertää vain pieniä virtoja; putken ympäri kiertävä suuri pyörrevirta katkeaa, koska virta ei pääse raon yli."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Pudota kappale metrin pituiseen pystysuoraan putkeen. Vaihda putken materiaalia ja kappaletta, ja vertaa putoamisaikoja, kuvaajaa ja energiapylväitä.",
+      "howto": "Valitse putki ja kappale ja paina *Pudota*. Vasemmalla näet putken pituussuunnassa leikattuna. Kun magneetti putoaa metalliputkessa, sen ala- ja yläpuolella näkyvät violetit pyörrevirtarenkaat, joiden paksuus kuvaa jarruttavan voiman suuruutta. Punaiset nuolet ovat paino $\\overline{G}$ ja jarruttava voima $\\overline{F}_\\text{j}$ samassa mittakaavassa. Kuvaajassa on pudonnut matka $y$ ajan $t$ funktiona; kunkin putken viimeisin magneetin pudotus jää näkyviin. Energiapylväät näyttävät potentiaalienergian vähenemisen $\\Delta E_\\text{p}$, liike-energian $E_\\text{k}$ ja putken sisäenergiaksi muuttuneen energian $Q$. Kirjaa mittaus vasta, kun lukemissa lukee, että kappale on pudonnut putken läpi.",
+      "model": "Magneetin massa on $20\\,\\text{g}$ ja putken pituus $1{,}00\\,\\text{m}$; magneetti lähtee levosta putken yläpäästä, ja aika mitataan, kunnes se on pudonnut putken pituuden verran. Kuvan magneetti ei ole mittakaavassa. Ilmanvastusta ja kitkaa seinää vasten ei ole, eikä putken päiden vaikutusta oteta huomioon. Metalliputkessa jarruttava voima on mallissa verrannollinen vauhtiin, $F_\\text{j} = k v$. Kerroin $k$ on valittu niin, että kupariputkessa magneetin tasainen loppuvauhti on $0{,}15\\,\\text{m/s}$, mikä on samaa suuruusluokkaa kuin koulun pudotuskokeissa. Alumiinin sähkönjohtavuus on noin $63\\,\\%$ kuparin johtavuudesta, joten alumiiniputken $k$ on $0{,}63$-kertainen. Rakoputkessa mallin $k$ on arviona kymmenesosa ehjän kupariputken arvosta. Muoviputki ja magnetoimaton teräskappale eivät jarrutu. Luvut ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Magneettiin vaikuttavat paino $G = mg$ alaspäin ja jarruttava voima $F_\\text{j} = k v$ ylöspäin. Vauhdin kasvaessa jarruttava voima kasvaa, kunnes se on yhtä suuri kuin paino. Silloin magneetti putoaa tasaisella loppuvauhdilla\n\n$$v_\\text{t} = \\frac{mg}{k}$$\n\nEnergiat lasketaan pudonneesta matkasta $y$ ja vauhdista $v$: $\\Delta E_\\text{p} = m g y$, $E_\\text{k} = \\tfrac{1}{2} m v^2$ ja putken sisäenergiaksi muuttunut energia $Q = \\Delta E_\\text{p} - E_\\text{k}$. Muoviputkessa kappale putoaa vapaasti: $y = \\tfrac{1}{2} g t^2$ ja $v = g t$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: putken materiaali",
+      "intro": "Testaa ennuste 1. Kappale on neodyymimagneetti; muuta vain putken materiaalia. Pudota magneetti muovi-, alumiini- ja kupariputkeen ja kirjaa jokaisesta putoamisaika, vauhti lopussa ja putken sisäenergiaksi muuttunut energia.",
+      "initial": {
+        "putki": "muovi",
+        "kappale": "magneetti"
+      },
+      "locked": [
+        "kappale"
+      ],
+      "vary": "putki",
+      "names": {
+        "putki": "putki",
+        "kappale": "kappale"
+      },
+      "units": {
+        "putki": "",
+        "kappale": ""
+      },
+      "values": {
+        "putki": {
+          "muovi": "muoviputki",
+          "alumiini": "alumiiniputki",
+          "kupari": "kupariputki",
+          "rako": "kupariputki, jossa rako"
+        },
+        "kappale": {
+          "magneetti": "neodyymimagneetti",
+          "teras": "magnetoimaton teräskappale"
+        }
+      },
+      "measure": [
+        {
+          "key": "aika",
+          "label": "t (s)"
+        },
+        {
+          "key": "vLoppu",
+          "label": "v (m/s)"
+        },
+        {
+          "key": "lampo",
+          "label": "Q (mJ)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: rako kupariputkessa",
+      "intro": "Testaa ennuste 2. Kappale on edelleen neodyymimagneetti. Pudota se ehjään kupariputkeen ja kupariputkeen, jossa on pitkittäinen rako, ja kirjaa putoamisajat ja sisäenergiaksi muuttunut energia.",
+      "initial": {
+        "putki": "kupari",
+        "kappale": "magneetti"
+      },
+      "locked": [
+        "kappale"
+      ],
+      "vary": "putki",
+      "names": {
+        "putki": "putki",
+        "kappale": "kappale"
+      },
+      "units": {
+        "putki": "",
+        "kappale": ""
+      },
+      "values": {
+        "putki": {
+          "muovi": "muoviputki",
+          "alumiini": "alumiiniputki",
+          "kupari": "kupariputki",
+          "rako": "kupariputki, jossa rako"
+        },
+        "kappale": {
+          "magneetti": "neodyymimagneetti",
+          "teras": "magnetoimaton teräskappale"
+        }
+      },
+      "measure": [
+        {
+          "key": "aika",
+          "label": "t (s)"
+        },
+        {
+          "key": "lampo",
+          "label": "Q (mJ)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä jarruttaa ja minne energia menee?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten putken materiaali ja rako vaikuttavat putoamisaikaan? Vertaa kupariputken sisäenergiaa $Q$ potentiaalienergian vähenemiseen $mgh = 196{,}2\\,\\text{mJ}$ ja selitä, mihin magneetin energia menee ja miksi magneetti putoaa kupariputkessa tasaisella vauhdilla.",
+      "model": "Muoviputkessa magneetti putoaa vapaasti $0{,}45\\,\\text{s}$:ssa ja on lopussa vauhdissa $4{,}43\\,\\text{m/s}$, eikä sisäenergiaa synny. Alumiiniputkessa putoaminen kestää $4{,}24\\,\\text{s}$ ja kupariputkessa $6{,}68\\,\\text{s}$; loppuvauhdit ovat vain $0{,}24\\,\\text{m/s}$ ja $0{,}15\\,\\text{m/s}$. Metalliseinään syntyvät pyörrevirrat jarruttavat magneettia, ja paremmin johtavassa kuparissa jarrutus on suurempi. Rakoputkessa aika lyhenee $0{,}82\\,\\text{s}$:iin, koska rako katkaisee putken ympäri kiertävät virrat. Jarrutus ei silti katoa: rakoputkessakin $Q = 173{,}9\\,\\text{mJ}$, koska pienemmät pyörrevirrat kiertävät yhä seinässä. Kupariputkessa $Q = 196{,}0\\,\\text{mJ}$ eli lähes koko $196{,}2\\,\\text{mJ}$:n potentiaalienergian väheneminen on muuttunut pyörrevirtojen kautta putken sisäenergiaksi. Jarruttava voima kasvaa vauhdin mukana, kunnes se on yhtä suuri kuin paino; sen jälkeen kokonaisvoima on nolla ja vauhti pysyy samana. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Kerroin, että metalliputkissa putoaminen kestää kauemmin kuin muoviputkessa ja kupariputkessa kauimmin, ja annoin taulukosta putoamisajat.",
+        "Selitin, että jarrutus johtuu putken seinään syntyvistä pyörrevirroista eikä siitä, että magneetti vetäisi metallia puoleensa.",
+        "Kerroin, että rako lyhentää putoamisaikaa, koska virta ei pääse kiertämään putken ympäri.",
+        "Vertasin kupariputken sisäenergiaa $Q$ potentiaalienergian vähenemiseen ja totesin, että lähes kaikki energia muuttuu putken sisäenergiaksi.",
+        "Selitin tasaisen vauhdin sillä, että jarruttava voima kasvaa vauhdin mukana painon suuruiseksi."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja Lenzin lakiin. Palaa sitten alun kysymykseen: mikä jarruttaa magneettia kupariputkessa, ja miksi teräsmutteri putoaa saman putken läpi jarruttamatta?",
+      "predictions": [
+        "ennuste-putket",
+        "ennuste-rako"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Kevyt alumiinirengas riippuu langan varassa. Sauvamagneetin N-napa on aluksi aivan renkaan vieressä, ja magneetti vedetään nopeasti poispäin renkaasta. Opiskelija päättelee: \"Lenzin lain mukaan induktiovirran kenttä on aina magneetin kenttää vastaan. Siksi renkaan magneetin puoleinen sivu on N-napa, ja rengas hylkii magneettia ja heilahtaa poispäin siitä.\" Missä on virhe?",
+      "choices": [
+        {
+          "text": "Induktiovirta vastustaa vuon muutosta eikä kenttää. Vuo pienenee, joten renkaan magneetin puoleinen sivu on S-napa ja rengas heilahtaa magneetin perään.",
+          "correct": true,
+          "feedback": "Oikein. Kun magneetti loittonee, renkaan läpi kulkeva vuo pienenee. Induktiovirran kenttä yrittää pitää vuon ennallaan, joten se osoittaa renkaan keskellä samaan suuntaan kuin magneetin kenttä. Renkaan magneetin puoleinen sivu on S-napa, ja se vetää magneetin N-napaa puoleensa: rengas vastustaa magneetin poistumista."
+        },
+        {
+          "text": "Alumiini ei ole ferromagneettinen aine, joten renkaaseen ei synny induktiovirtaa, eikä rengas liiku lainkaan, kun magneetti vedetään pois.",
+          "feedback": "Induktiovirta ei vaadi ferromagneettista ainetta, vaan sähköä johtavan suljetun silmukan, jonka läpi kulkeva vuo muuttuu. Alumiini johtaa hyvin, joten renkaaseen syntyy virta. Opiskelijan virhe on siinä, että induktiovirta vastustaa vuon muutosta eikä kenttää."
+        },
+        {
+          "text": "Päättely on oikein, mutta rengas heilahtaa poispäin magneetista vain silloin, kun magneetti liikkuu S-napa edellä eikä N-napa edellä.",
+          "feedback": "Renkaan liikkeen suunta ei riipu siitä, kumpi napa on renkaan puolella, vaan siitä, lähestyykö vai loittoneeko magneetti. Lähestyvää magneettia rengas hylkii ja loittonevaa vetää. Tässä magneetti loittonee, joten rengas heilahtaa sen perään."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen: vuoristoradan jarru",
+      "prompt": "Vuoristoradan loppusuoralla vaunun alle kiinnitetyt kuparilevyt kulkevat voimakkaiden kestomagneettien välistä. Pyörrevirrat hidastavat $2{,}4\\,\\text{t}$:n vaunun vauhdista $25\\,\\text{m/s}$ vauhtiin $10\\,\\text{m/s}$ vaakasuoralla $30\\,\\text{m}$:n matkalla. Muut vastukset jätetään huomiotta. Kuinka suuri on jarruttava voima keskimäärin? Vastaa kilonewtoneina.",
+      "answer": 21,
+      "unit": "kN",
+      "tolerance": 0.02,
+      "hints": [
+        "Mihin vaunun menettämä liike-energia menee? Mikä voima tekee työtä jarrutusmatkalla?",
+        "Jarruttavan voiman työ on yhtä suuri kuin liike-energian väheneminen: $F s = \\tfrac{1}{2} m v_1^2 - \\tfrac{1}{2} m v_2^2$.",
+        "Ratkaise voima: $F = \\dfrac{m (v_1^2 - v_2^2)}{2 s}$, missä $m = 2{,}4 \\cdot 1000\\,\\text{kg}$, $v_1 = 25\\,\\text{m/s}$, $v_2 = 10\\,\\text{m/s}$ ja $s = 30\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 25,
+          "feedback": "Laskit liike-energian ikään kuin vaunu pysähtyisi kokonaan. Vaunu hidastuu vauhtiin $10\\,\\text{m/s}$, joten jarrut muuttavat sisäenergiaksi vain liike-energioiden erotuksen."
+        },
+        {
+          "value": 9,
+          "feedback": "Neliöit vauhtien erotuksen. Liike-energia on verrannollinen vauhdin neliöön, joten erotus on $\\tfrac{1}{2} m (v_1^2 - v_2^2)$, ei $\\tfrac{1}{2} m (v_1 - v_2)^2$."
+        },
+        {
+          "value": 42,
+          "feedback": "Liike-energian kaavasta puuttuu kerroin $\\tfrac{1}{2}$: $E_\\text{k} = \\tfrac{1}{2} m v^2$."
+        }
+      ],
+      "solution": "**Annettu:** vaunun massa $m = 2{,}4\\,\\text{t}$, alkuvauhti $v_1 = 25\\,\\text{m/s}$, loppuvauhti $v_2 = 10\\,\\text{m/s}$, jarrutusmatka $s = 30\\,\\text{m}$\n\n**Kysytty:** jarruttavan voiman keskimääräinen suuruus $F$ kilonewtoneina\n\n**Periaate:** Rata on vaakasuora ja muut vastukset jätetään huomiotta, joten vain pyörrevirtojen jarruttava voima tekee työtä. Energia säilyy: voiman työ $F s$ on yhtä suuri kuin liike-energian väheneminen, ja pyörrevirrat muuttavat tämän energian kuparilevyjen sisäenergiaksi.\n\n**Kaava:** $F s = \\tfrac{1}{2} m v_1^2 - \\tfrac{1}{2} m v_2^2$, josta $F = \\dfrac{m (v_1^2 - v_2^2)}{2 s}$\n\n**Muunnokset:** $m = 2{,}4\\,\\text{t} = 2{,}4 \\cdot 1000\\,\\text{kg} = 2400\\,\\text{kg}$. Lopuksi $1\\,\\text{kN} = 1000\\,\\text{N}$.\n\n**Sijoitus:** $v_1^2 - v_2^2 = (25\\,\\text{m/s})^2 - (10\\,\\text{m/s})^2 = 525\\,\\text{m}^2/\\text{s}^2$, joten $F = \\dfrac{2400\\,\\text{kg} \\cdot 525\\,\\text{m}^2/\\text{s}^2}{2 \\cdot 30\\,\\text{m}} = 21\\,000\\,\\text{N} = 21\\,\\text{kN}$\n\n**Vastaus:** $21\\,\\text{kN}$, kaksi merkitsevää numeroa kuten massassa $2{,}4\\,\\text{t}$ ja vauhdeissa.\n\n**Järkevyys:** Hidastuvuus on $21\\,000\\,\\text{N} : 2400\\,\\text{kg} \\approx 8{,}8\\,\\text{m/s}^2$ eli vähän alle $g$:n, mikä on voimakas mutta ihmiselle siedettävä jarrutus. Liike-energiasta $630\\,\\text{kJ}$ muuttuu levyjen sisäenergiaksi, joten levyt lämpenevät jokaisella jarrutuksella."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä päätellään induktiovirran suunta tai käytetään yhtä energian tai tehon kaavaa, tason 2 tehtävissä yhdistetään kaksi vaihetta, ja taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite: rengas ja magneetti",
+      "prompt": "Kevyt alumiinirengas riippuu langan varassa. Sauvamagneetin S-napa työnnetään nopeasti kohti rengasta. Mitä rengas tekee magneetin liikkuessa?",
+      "choices": [
+        {
+          "text": "Se heilahtaa poispäin magneetista, koska sen magneetin puoleiseen sivuun syntyy S-napa.",
+          "correct": true,
+          "feedback": "Oikein. Vuo renkaan läpi kasvaa, ja induktiovirta vastustaa kasvua: renkaan magneetin puoleinen sivu on samanniminen napa kuin lähestyvä napa, tässä S-napa. Samannimiset navat hylkivät, joten rengas heilahtaa poispäin. Tulos ei riipu siitä, kumpi napa lähestyy."
+        },
+        {
+          "text": "Se heilahtaa kohti magneettia, koska magneetti vetää metalleja puoleensa.",
+          "feedback": "Alumiini ei ole ferromagneettinen aine, eikä magneetti vedä sitä puoleensa. Liikkuva magneetti synnyttää renkaaseen induktiovirran, jonka kenttä vastustaa vuon kasvua, joten rengas hylkii lähestyvää magneettia."
+        },
+        {
+          "text": "Se ei liiku, koska S-napa ei vaikuta renkaaseen samalla tavalla kuin N-napa.",
+          "feedback": "Kumpi tahansa napa muuttaa renkaan läpi kulkevaa vuota. Kun S-napa lähestyy, renkaan magneetin puoleiseen sivuun syntyy S-napa, ja rengas hylkii magneettia samalla tavalla kuin lähestyvää N-napaa."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske: lämmitysteho",
+      "prompt": "$18\\,\\text{g}$:n magneetti putoaa pystysuorassa alumiiniputkessa tasaisella vauhdilla $0{,}24\\,\\text{m/s}$. Kuinka suurella teholla putken sisäenergia kasvaa? Vastaa milliwatteina.",
+      "answer": 42,
+      "unit": "mW",
+      "tolerance": 0.02,
+      "hints": [
+        "Vauhti on tasainen. Kuinka suuri jarruttava voima silloin on?",
+        "Tasaisella vauhdilla jarruttava voima on yhtä suuri kuin paino, $F = m g$, ja teho on $P = F v$.",
+        "$P = 0{,}018\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 0{,}24\\,\\text{m/s}$"
+      ],
+      "mistakes": [
+        {
+          "value": 4.32,
+          "feedback": "Kerroit massan ja vauhdin, mutta jarruttava voima on paino $m g$. Muista kertoa myös putoamiskiihtyvyydellä $g = 9{,}81\\,\\text{m/s}^2$."
+        },
+        {
+          "value": 0.518,
+          "feedback": "Laskit magneetin liike-energian $\\tfrac{1}{2} m v^2$. Tasaisella vauhdilla liike-energia ei muutu; sisäenergiaksi muuttuu potentiaalienergiaa teholla $P = F v = m g v$."
+        }
+      ],
+      "solution": "**Annettu:** magneetin massa $m = 18\\,\\text{g}$, tasainen vauhti $v = 0{,}24\\,\\text{m/s}$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** teho $P$, jolla putken sisäenergia kasvaa, milliwatteina\n\n**Periaate:** Vauhti on tasainen, joten kokonaisvoima on nolla ja pyörrevirtojen jarruttava voima on yhtä suuri kuin paino, $F = m g$. Liike-energia ei muutu, joten potentiaalienergia muuttuu kokonaan putken sisäenergiaksi teholla, jolla jarruttava voima tekee työtä: $P = F v$.\n\n**Kaava:** $F = m g$ ja $P = F v$, joten $P = m g v$\n\n**Muunnokset:** $m = 18\\,\\text{g} = 18 \\cdot 0{,}001\\,\\text{kg} = 0{,}018\\,\\text{kg}$. Lopuksi $1\\,\\text{W} = 1000\\,\\text{mW}$.\n\n**Sijoitus:** $P = 0{,}018\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 0{,}24\\,\\text{m/s} = 0{,}042379\\,\\text{W} = 42{,}379\\,\\text{mW}$\n\n**Vastaus:** $42\\,\\text{mW}$, kaksi merkitsevää numeroa kuten massassa $18\\,\\text{g}$ ja vauhdissa $0{,}24\\,\\text{m/s}$.\n\n**Järkevyys:** Arvio pyöreillä luvuilla: paino on noin $0{,}2\\,\\text{N}$, ja $0{,}2\\,\\text{N} \\cdot 0{,}2\\,\\text{m/s} = 0{,}04\\,\\text{W}$. Teho on hyvin pieni, joten putki ei tunnu lämpenevän."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: miksi induktiovirta vastustaa?",
+      "prompt": "Kuvittele maailma, jossa induktiovirta kulkisi Lenzin lain vastaisesti eli auttaisi muutosta. Selitä energian säilymisen avulla, mitä tapahtuisi, kun magneetti pudotetaan kupariputkeen, ja miksi Lenzin lain täytyy pitää paikkansa.",
+      "model": "Jos induktiovirta auttaisi muutosta, putoavan magneetin alapuolinen pyörrevirta vetäisi magneettia alaspäin ja yläpuolinen työntäisi sitä. Magneetti kiihtyisi nopeammin kuin vapaasti pudotessa, jolloin vuo muuttuisi yhä nopeammin, pyörrevirrat kasvaisivat ja magneettia kiihdyttävä voima kasvaisi. Magneetin liike-energia ja putken sisäenergia kasvaisivat yhtä aikaa enemmän kuin potentiaalienergiaa vähenee: energiaa syntyisi tyhjästä, ja putkesta saisi ikiliikkujan. Energian säilyminen estää tämän. Siksi induktiovirran on vastustettava muutosta: pyörrevirrat jarruttavat magneettia, ja potentiaalienergiasta osa muuttuu putken sisäenergiaksi, mutta energian kokonaismäärä pysyy samana.",
+      "criteria": [
+        "Kerron, että muutosta auttava virta kiihdyttäisi magneettia ja että kiihtyminen kasvattaisi virtaa edelleen.",
+        "Selitän, että silloin liike-energia ja sisäenergia kasvaisivat enemmän kuin potentiaalienergia vähenee eli energiaa syntyisi tyhjästä.",
+        "Totean, että energian säilyminen vaatii induktiovirran vastustavan muutosta, jolloin magneettia liikuttava työ muuttuu sähköenergiaksi ja sisäenergiaksi."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

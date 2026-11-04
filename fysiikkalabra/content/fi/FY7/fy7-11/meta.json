@@ -1,0 +1,23 @@
+{
+  "id": "fy7-11",
+  "course": "FY7",
+  "title": "Dispersio: prisma ja sateenkaari",
+  "goals": [
+    "LOPS FY7: valon heijastuminen, taittuminen ja kokonaisheijastuminen",
+    "Täsmennys: taitekerroin riippuu aallonpituudesta, prisma ja sateenkaaren synty"
+  ],
+  "prerequisites": [
+    "fy7-10"
+  ],
+  "glossary": [
+    "dispersio",
+    "taitekerroin",
+    "poikkeamakulma",
+    "sateenkaari",
+    "vastapiste",
+    "spektri"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

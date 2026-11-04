@@ -1,0 +1,20 @@
+{
+  "id": "fy7-14",
+  "course": "FY7",
+  "title": "Ohuen kalvon interferenssi",
+  "goals": [
+    "LOPS FY7: valon interferenssi ja diffraktio",
+    "Täsmennys: saippuakalvon värit ja heijastuksenestopinnoite kvalitatiivisesti ja yksinkertaisin laskuin"
+  ],
+  "prerequisites": [
+    "fy7-13"
+  ],
+  "glossary": [
+    "interferenssi",
+    "ohut kalvo",
+    "heijastuksenestopinnoite"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

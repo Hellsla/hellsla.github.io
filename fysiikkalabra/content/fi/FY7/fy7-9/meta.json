@@ -1,0 +1,23 @@
+{
+  "id": "fy7-9",
+  "course": "FY7",
+  "title": "Sähkömagneettinen säteily ja mustan kappaleen spektri",
+  "goals": [
+    "LOPS FY7: sähkömagneettinen säteily ja sen spektri sekä mustan kappaleen säteilyn spektri",
+    "LOPS FY7: tunnistaa sähkömagneettisen säteilyn lähteitä ja vaikutuksia",
+    "Täsmennys: lähteinä kiihtyvässä liikkeessä oleva varattu hiukkanen ja kuuma kappale; mustan kappaleen säteilyn spektri riippuu vain pintalämpötilasta"
+  ],
+  "prerequisites": [
+    "fy7-7"
+  ],
+  "glossary": [
+    "sähkömagneettinen säteily",
+    "spektri",
+    "aallonpituus",
+    "mustan kappaleen säteily",
+    "Wienin siirtymälaki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

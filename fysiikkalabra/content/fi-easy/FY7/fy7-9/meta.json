@@ -1,0 +1,45 @@
+{
+  "id": "fy7-9",
+  "course": "FY7",
+  "title": "Sähkömagneettinen säteily ja mustan kappaleen spektri",
+  "goals": [
+    "LOPS FY7: sähkömagneettinen säteily ja sen spektri sekä mustan kappaleen säteilyn spektri",
+    "LOPS FY7: tunnistaa sähkömagneettisen säteilyn lähteitä ja vaikutuksia",
+    "Täsmennys: lähteinä kiihtyvässä liikkeessä oleva varattu hiukkanen ja kuuma kappale; mustan kappaleen säteilyn spektri riippuu vain pintalämpötilasta"
+  ],
+  "prerequisites": [
+    "fy7-7"
+  ],
+  "glossary": [
+    "sähkömagneettinen säteily",
+    "spektri",
+    "aallonpituus",
+    "mustan kappaleen säteily",
+    "Wienin siirtymälaki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "sähkömagneettinen säteily",
+      "explain": "Aaltoliike, jossa muuttuvat sähkö- ja magneettikenttä synnyttävät toisensa. Se etenee myös tyhjiössä, ja sitä syntyy, kun varattu hiukkanen on kiihtyvässä liikkeessä."
+    },
+    {
+      "term": "aallonpituus",
+      "explain": "Matka, jonka aalto etenee yhden jaksonajan aikana. Tyhjiössä $c = f\\lambda$, joten suurempi taajuus tarkoittaa lyhyempää aallonpituutta."
+    },
+    {
+      "term": "spektri",
+      "explain": "Spektri kertoo, mitä aallonpituuksia säteilyssä on ja kuinka voimakkaasti. Sähkömagneettisessa spektrissä säteilyn lajit on järjestetty aallonpituuden mukaan radioaalloista gammasäteilyyn."
+    },
+    {
+      "term": "mustan kappaleen säteily",
+      "explain": "Säteily, jota lähettää ihannekappale, joka imee kaiken siihen osuvan säteilyn. Sen spektri on jatkuva ja riippuu vain pintalämpötilasta, ei aineesta."
+    },
+    {
+      "term": "Wienin siirtymälaki",
+      "explain": "Mustan kappaleen spektrin huipun aallonpituus on kääntäen verrannollinen absoluuttiseen lämpötilaan: $\\lambda_\\text{max} T = b$. Lämpötila sijoitetaan kelvineinä."
+    }
+  ]
+}

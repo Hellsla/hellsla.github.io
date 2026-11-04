@@ -1,0 +1,22 @@
+{
+  "id": "fy7-10",
+  "course": "FY7",
+  "title": "Valon heijastuminen ja taittuminen",
+  "goals": [
+    "LOPS FY7: valon heijastuminen, taittuminen",
+    "LOPS FY7: ymmärtää valon sähkömagneettisena ilmiönä",
+    "Kokeellisesti: valon heijastumisen ja taittumisen tutkiminen rajapinnassa"
+  ],
+  "prerequisites": [
+    "fy7-9"
+  ],
+  "glossary": [
+    "heijastuslaki",
+    "taittuminen",
+    "taitekerroin",
+    "Snellin laki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

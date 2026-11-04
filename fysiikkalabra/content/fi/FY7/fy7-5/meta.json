@@ -1,0 +1,23 @@
+{
+  "id": "fy7-5",
+  "course": "FY7",
+  "title": "Sähkömagneettinen induktio",
+  "goals": [
+    "LOPS FY7: sähkömagneettinen induktio",
+    "LOPS FY7: ymmärtää induktioilmiön keskeisen merkityksen sähkömagnetismissa",
+    "Täsmennys: itseinduktio ei kuulu keskeisiin sisältöihin",
+    "Täsmennys: magneettivuo, induktiolaki ja liikkuvan johtimen jännite e = vBl"
+  ],
+  "prerequisites": [
+    "fy7-3"
+  ],
+  "glossary": [
+    "induktio",
+    "magneettivuo",
+    "induktiojännite",
+    "induktiolaki"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The side of a square wire loop is $0.20\\,\\text{m}$, and the loop is perpendicular to a uniform magnetic field of $0.50\\,\\text{T}$. How large is the magnetic flux through the loop?",
+    "a": "$\\Phi = BA = 0.50\\,\\text{T} \\cdot (0.20\\,\\text{m})^2 = 0.020\\,\\text{Wb} = 20\\,\\text{mWb}$."
+  },
+  {
+    "q": "The magnetic flux through a coil grows, is at its greatest at the moment $t_1$ and then begins to decrease. How large is the induced voltage in the coil at the moment $t_1$?",
+    "a": "Zero. At the greatest value the flux graph $(t, \\Phi)$ is horizontal for a moment, so the rate of change of flux $\\Delta\\Phi : \\Delta t$ and the voltage $e = -N \\cdot \\Delta\\Phi : \\Delta t$ are zero. A large flux does not mean a large voltage."
+  }
+]

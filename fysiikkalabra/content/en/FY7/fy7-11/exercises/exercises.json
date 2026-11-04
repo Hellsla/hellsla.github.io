@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-11-L1-01",
+      "level": 1,
+      "text": "Red light arrives from air at the surface of a calm lake at an angle of incidence of $50.0^\\circ$. The refractive index of water for red light is $1.332$. What is the angle of refraction in the water?",
+      "answer": 35.1072,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-02",
+      "level": 1,
+      "text": "The refractive index of crown glass for violet light is $1.530$. At what speed does violet light travel in the glass? The speed of light in vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give your answer in kilometres per second.",
+      "answer": 196078.4314,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-03",
+      "level": 1,
+      "text": "A student aims the beam of a green laser from air at the surface of a piece of glass at an angle of incidence of $45.0^\\circ$ and measures an angle of refraction of $27.8^\\circ$. What is the refractive index of the glass for green light?",
+      "answer": 1.5161,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-04",
+      "level": 1,
+      "text": "The apex angle of a prism is $60.0^\\circ$. A yellow ray enters the prism at an angle of incidence of $45.0^\\circ$ and leaves the second surface at an angle of refraction of $52.0^\\circ$. What is the angle of deviation of the ray?",
+      "answer": 37.0,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L1-05",
+      "level": 1,
+      "text": "A ray of light enters a water droplet at an angle of incidence of $55.0^\\circ$ and is refracted in the droplet to an angle of $38.0^\\circ$. The ray is reflected once from the back surface of the droplet and refracted out. At what angle from the direction of the antisolar point is this light seen?",
+      "answer": 42.0,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-11-L2-01",
+      "level": 2,
+      "text": "A short flash of white light is sent through a crown-glass optical fibre $5.00\\,\\text{km}$ long. The refractive index of the glass is $1.5143$ for red light and $1.5302$ for violet. How much later does violet light arrive at the other end of the fibre than red? Assume that each colour travels in the fibre at speed $v = c : n$ and along the fibre. Give your answer in nanoseconds.",
+      "answer": 265.0,
+      "unit": "ns",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L2-02",
+      "level": 2,
+      "text": "The apex angle of a glass prism is $60.0^\\circ$, and the refractive index of the glass for yellow light is $1.52$. A yellow ray arrives from air at the first surface of the prism at an angle of incidence of $40.0^\\circ$. At what angle of incidence does the ray hit the second surface of the prism from inside the glass?",
+      "answer": 34.983,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L2-03",
+      "level": 2,
+      "text": "The graph shows the refractive index $n$ of a flint glass as a function of the vacuum wavelength $\\lambda$ of light. At what speed does blue light of wavelength $450\\,\\text{nm}$ travel in this glass? The speed of light in vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Read the refractive index from the graph and give your answer in kilometres per second.",
+      "answer": 183071.9473,
+      "unit": "km/s",
+      "tolerance": 0.02,
+      "figure": "fy7-11/flint-points"
+    },
+    {
+      "id": "fy7-11-L2-04",
+      "level": 2,
+      "text": "On a summer evening the sun shines from a height of $25.0^\\circ$, and it is raining ahead. The rays at the violet edge of the rainbow enter the droplets at an angle of incidence of $58.8^\\circ$, and the refractive index of water for violet light is $1.343$. The light is reflected once from the back surface of the droplet. How high above the horizon does the top of the violet arc appear to an observer standing on level ground?",
+      "answer": 15.6459,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-11-L3-01",
+      "level": 3,
+      "text": "The apex angle of a crown-glass prism is $50.0^\\circ$. A narrow beam of white light enters the prism from air at an angle of incidence of $45.0^\\circ$. The refractive index of the glass is $1.5143$ for red light and $1.5302$ for violet. What is the angle between the red and violet rays leaving the prism? Calculate the angles of the intermediate steps to the nearest hundredth of a degree.",
+      "answer": 0.9659,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L3-02",
+      "level": 3,
+      "text": "Red light enters near the edge of a water droplet at an angle of incidence of $80.0^\\circ$. The refractive index of water for red light is $1.332$. The light is reflected once from the back surface of the droplet and refracted out. At what angle from the direction of the antisolar point is this light seen? Is it seen inside or outside the red edge of the rainbow?",
+      "answer": 30.7027,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-11-L3-03",
+      "level": 3,
+      "text": "The rays that form the red edge of a rainbow enter the droplet at an angle of incidence of $59.5^\\circ$ when the refractive index of water is $1.3315$. The rays of the violet edge enter at an angle of incidence of $58.8^\\circ$ when the refractive index is $1.3431$. Each is reflected once from the back surface of the droplet. How wide is the rainbow in degrees, that is, what is the difference between the angles of the red and violet edges as seen from the antisolar point? Calculate the intermediate steps to the nearest thousandth of a degree.",
+      "answer": 1.6647,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ]
+}

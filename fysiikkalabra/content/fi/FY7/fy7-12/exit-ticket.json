@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Lasin taitekerroin on $1{,}60$. Kuinka suuri on lasin ja ilman rajapinnan rajakulma?",
+    "a": "$\\sin\\alpha_\\text{r} = 1{,}00 : 1{,}60 = 0{,}625$, joten $\\alpha_\\text{r} = 38{,}7^\\circ$. Valo kokonaisheijastuu, kun se tulee lasista ilmaan tätä suuremmalla tulokulmalla."
+  },
+  {
+    "q": "Miksi hiottu timantti säihkyy enemmän kuin samanmuotoinen lasikivi?",
+    "a": "Timantin taitekerroin $2{,}42$ on suuri, joten sen rajakulma ilmaa vasten on vain $24{,}4^\\circ$. Kiven sisällä valo osuu alaviistopintoihin useimmiten rajakulmaa suuremmalla tulokulmalla, kokonaisheijastuu ja palaa ylöspäin katsojaa kohti. Lasin rajakulma $41{,}8^\\circ$ on suurempi, joten osa valosta vuotaa ulos kiven alapuolelta."
+  }
+]

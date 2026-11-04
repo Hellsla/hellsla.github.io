@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A grating has $250$ lines per millimetre. What is the grating spacing?",
+    "a": "$d = 1\\,\\text{mm} : 250 = 1 \\cdot 10^{-3}\\,\\text{m} : 250 = 4.0 \\cdot 10^{-6}\\,\\text{m} = 4.0\\,\\mu\\text{m}$."
+  },
+  {
+    "q": "Why do two ordinary lamps not produce on a wall a pattern of bright and dark fringes, although a laser and a double slit do?",
+    "a": "The light of two lamps is not coherent: the countless atoms of the lamps emit light independently of each other, so the phase difference of the lights varies randomly and very rapidly. The places of constructive and destructive interference keep swapping, and the eye sees an even illumination. In a double slit both slits get their light from the same wavefront, so their phase difference stays the same."
+  }
+]

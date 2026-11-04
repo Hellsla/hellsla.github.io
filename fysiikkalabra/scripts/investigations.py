@@ -158,21 +158,23 @@ def bank(T, items, lang=i18n.SOURCE):
             + opt("mode", T("investigation.filter_mode"), [(m, T("investigation.mode_" + m)) for m in MODES])
             + f'<button type="reset" class="bank-reset">{T("investigation.filter_reset")}</button>'
             f'<p class="bank-count" id="bank-count" aria-live="polite" data-template="{esc(T("investigation.filter_count"))}"></p></form>')
-    groups = {t: "" for t in TOPICS}     # cards under their topics (teacher 2026-11-04, scripts/cardgrid.py), each topic in the course's order
-    for i, d in items:
+    order = {t: n for n, t in enumerate(TOPICS)}    # cards under their topics (teacher 2026-11-04, scripts/cardgrid.py), each topic
+    rows = ""; seen = set()                         # in the course's order; the filter moves a topic's label to its first card shown
+    for i, d in sorted(items, key=lambda x: order[x[1]["topic"]]):
         fl, el = levels(d, "physics"), levels(d, "experiment")
         words = " ".join([d["title"], d["question"]] + d.get("equipment", [])).lower()
         num = (f'<span class="bank-level" title="{T("investigation.level_physics")}">{span(fl)}</span> '
                f'<span class="bank-level" title="{T("investigation.level_experiment")}">{span(el)}</span>')
         meta = (f'<span class="bank-meta"><span class="bank-modes">{", ".join(T("investigation.mode_short_" + m) for m in d["modes"])}</span>'
                 f'<span class="bank-mods">{T("investigation.builds_on")} {", ".join(d.get("modules", []))}</span></span>')
+        lab = "" if d["topic"] in seen else cardgrid.label(T("investigation.topic_" + d["topic"]), attrs=f' data-topic-label="{d["topic"]}"')
+        seen.add(d["topic"])
         src = folder(i, lang) / "investigation.md"
-        groups[d["topic"]] += cardgrid.card(num, esc(d["title"]), f"{i}.html", esc(d["question"]), cardgrid.hero(src.read_text() if src.is_file() else ""), meta,
-                                            " bank-item", f' data-topic="{d["topic"]}" data-f="{" ".join(fl)}" data-e="{" ".join(el)}" '
-                                            f'data-mode="{" ".join(d["modes"])}" data-words="{esc(words)}"')
+        rows += cardgrid.card(num, esc(d["title"]), f"{i}.html", esc(d["question"]), cardgrid.hero(src.read_text() if src.is_file() else ""), meta,
+                              " bank-item", f' data-topic="{d["topic"]}" data-f="{" ".join(fl)}" data-e="{" ".join(el)}" '
+                              f'data-mode="{" ".join(d["modes"])}" data-words="{esc(words)}"', lab)
     return (form + f'<p class="bank-none" id="bank-none" hidden>{T("investigation.filter_none")}</p>'
-            f'<div class="local-inv bank-list bank-groups" id="bank-list">'
-            + "".join(cardgrid.group(g, T("investigation.topic_" + t)) for t, g in groups.items()) + "</div>")
+            f'<ol class="lessons ch-cards local-inv bank-list" id="bank-list">{rows}</ol>')
 
 
 def render(iid, lang, T, md, chapters, published):
