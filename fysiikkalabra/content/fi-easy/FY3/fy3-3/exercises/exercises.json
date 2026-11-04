@@ -39,6 +39,74 @@
       "answer": -270,
       "unit": "°C",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L1-06",
+      "level": 1,
+      "text": "Kaasu on tiiviissä sylinterissä, jonka mäntä liikkuu. Kaasu valitaan termodynaamiseksi systeemiksi. Kaasua voi lämmittää ja puristaa. Ainetta ei pääse sylinteristä ulos eikä sinne tule lisää. Mikä seuraavista kuvaa tätä systeemiä oikein?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Suljettu, koska ainetta ei siirry systeemin rajan yli; energiaa voi silti siirtyä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Avoin, koska mäntä liikkuu; tilavuus voi muuttua, joten aine pääsee rajan yli.",
+          "feedback": "Männän liike muuttaa systeemin tilavuutta, mutta aine ei silti pääse ulos eikä sisään. Avoimen systeemin tunnistaa siitä, että aine siirtyy rajan yli. Tilavuuden muutos ei ratkaise."
+        },
+        {
+          "text": "Avoin, koska lämmitys siirtää energiaa rajan yli; suljetussa systeemissä energia ei siirry.",
+          "feedback": "Suljettu systeemi voi vaihtaa energiaa ympäristönsä kanssa. Vain se ratkaisee, siirtyykö ainetta rajan yli."
+        },
+        {
+          "text": "Suljettu, koska ainetta ei siirry systeemin rajan yli; energiaa voi silti siirtyä.",
+          "feedback": "Oikein: systeemi on suljettu, kun ainetta ei pääse sen rajan yli. Rajan yli voi silti siirtyä energiaa. Kun mäntää liikutetaan, myös tilavuus voi muuttua.",
+          "correct": true
+        },
+        {
+          "text": "Suljettu, koska lämpötila pysyy samana; lämpötilan muuttuessa systeemi olisi avoin.",
+          "feedback": "Lämpötila voi muuttua suljetussakin systeemissä, esimerkiksi kun kaasua lämmitetään. Systeemin tyyppi riippuu siitä, siirtyykö ainetta rajan yli. Lämpötila ei vaikuta siihen."
+        }
+      ]
+    },
+    {
+      "id": "fy3-3-L1-07",
+      "level": 1,
+      "text": "Pakastimen lämpötila on $-18\\,{}^\\circ\\text{C}$. Mikä lämpötila on kelvineinä?",
+      "answer": 255,
+      "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L1-08",
+      "level": 1,
+      "text": "Suljetussa ja jäykässä astiassa on kaasua. Astiaa lämmitetään. Mikä seuraavista kaasun suureista pysyy samana?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Tilavuus, koska jäykän astian seinät eivät siirry lämmitettäessä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Paine, koska astiasta ei pääse kaasua ulos lämmitettäessä.",
+          "feedback": "Kun lämpötila nousee, hiukkaset liikkuvat nopeammin. Ne törmäävät seinään useammin ja kovemmin, joten paine kasvaa. Suljettu astia pitää vain hiukkasten määrän samana."
+        },
+        {
+          "text": "Tilavuus, koska jäykän astian seinät eivät siirry lämmitettäessä.",
+          "feedback": "Oikein: jäykän astian tilavuus pysyy samana. Siksi kaasun tilavuus ei muutu, vaikka lämpötila ja paine muuttuvat.",
+          "correct": true
+        },
+        {
+          "text": "Hiukkasten keskimääräinen liike-energia, koska hiukkasmäärä ei muutu.",
+          "feedback": "Harvassa kaasussa keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan. Siksi se kasvaa lämpötilan mukana. Hiukkasmäärä ei vaikuta siihen."
+        },
+        {
+          "text": "Lämpötila, koska astian seinät estävät kaasun lämpenemisen.",
+          "feedback": "Seinät eivät estä lämpenemistä. Lämmitys nostaa kaasun lämpötilaa, ja juuri lämpötilan nousu muuttaa muita suureita."
+        }
+      ]
     }
   ],
   "level2": [
@@ -53,7 +121,7 @@
     {
       "id": "fy3-3-L2-02",
       "level": 2,
-      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on 90,0 kPa lämpötilassa $0\\,{}^\\circ\\text{C}$. Lämpötilassa $100\\,{}^\\circ\\text{C}$ paine on 123 kPa. Oleta, että paine riippuu lämpötilasta lineaarisesti. Mikä on paine lämpötilassa $35\\,{}^\\circ\\text{C}$?",
+      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on $90{,}0\\,\\text{kPa}$ lämpötilassa $0\\,{}^\\circ\\text{C}$. Lämpötilassa $100\\,{}^\\circ\\text{C}$ paine on $123\\,\\text{kPa}$. Oleta, että paine riippuu lämpötilasta lineaarisesti. Mikä on paine lämpötilassa $35\\,{}^\\circ\\text{C}$?",
       "answer": 102,
       "unit": "kPa",
       "tolerance": 0.02
@@ -74,13 +142,144 @@
       "answer": 4.0,
       "unit": "kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L2-05",
+      "level": 2,
+      "text": "Lämpömittaria A verrataan kalibroinnissa tarkkaan vertailulämpömittariin. Molemmat pidetään samassa vesihauteessa eri lämpötiloissa. Taulukko on esimerkkiaineistoa.\n\na) Laske mittarin A lukeman keskimääräinen ero vertailulukemaan, $\\theta_\\text{A} - \\theta_\\text{vert}$, kelvineinä.\n\nb) Onko ero systemaattinen vai satunnainen? Perustele taulukon avulla. Systemaattinen virhe poikkeaa joka mittauksessa samaan suuntaan. Satunnainen virhe vaihtelee suuntaan ja toiseen.\n\nc) Mittari A näyttää kylpyveden lämpötilaksi $38{,}6\\,{}^\\circ\\text{C}$. Mikä on lämpötila korjattuna?\n\nSyötä vastauslaatikkoon kohdan a) tulos.",
+      "kind": [
+        "data",
+        "error"
+      ],
+      "answer": 1.5,
+      "unit": "K",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Lämpömittarin A kalibrointi (esimerkkiaineisto)",
+        "columns": [
+          "$\\theta_\\text{vert}\\,({}^\\circ\\text{C})$",
+          "$\\theta_\\text{A}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "1.4"
+          ],
+          [
+            "20.0",
+            "21.7"
+          ],
+          [
+            "40.0",
+            "41.3"
+          ],
+          [
+            "60.0",
+            "61.6"
+          ],
+          [
+            "80.0",
+            "81.5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-3-L2-06",
+      "level": 2,
+      "text": "Kuumaa vettä kaadettiin termospulloon. Veden lämpötila mitattiin tunnin välein. Huoneen lämpötila oli koko ajan $20{,}0\\,{}^\\circ\\text{C}$. Taulukko on esimerkkiaineistoa.\n\na) Laske veden lämpötilan lasku ensimmäisen tunnin aikana ja viimeisen tunnin aikana.\n\nb) Kuinka monta kertaa suurempi lasku oli ensimmäisellä tunnilla kuin viimeisellä?\n\nc) Selitä taulukon avulla, miksi lämpötilan lasku hidastuu, kun vesi lähestyy huoneen lämpötilaa. Vihje: laske kunkin tunnin lasku jaettuna tunnin alun lämpötilaerolla huoneeseen.\n\nSyötä vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.7,
+      "unit": "kertaa",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Veden lämpötila termospullossa (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$\\theta\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "80.0"
+          ],
+          [
+            "1",
+            "69.9"
+          ],
+          [
+            "2",
+            "61.3"
+          ],
+          [
+            "3",
+            "54.4"
+          ],
+          [
+            "4",
+            "48.6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-3-L2-07",
+      "level": 2,
+      "text": "Opiskelija siirtää huoneenlämpöisen nestelämpömittarin kuumaan veteen. Veden lämpötila pidetään vakiona. Opiskelija lukee mittarin lukeman $10\\,\\text{s}$ välein. Lukema vakiintuu arvoon $60{,}2\\,{}^\\circ\\text{C}$. Taulukko on esimerkkiaineistoa.\n\na) Valitse taulukon ajoista aikaisin, jolla lukema poikkeaa vakiintuneesta lukemasta alle $0{,}5\\,\\text{K}$. Kuinka monta sekuntia mittaria pitää vähintään pitää vedessä ennen lukemista?\n\nb) Selitä, miksi liian aikaisin luettu lukema on liian pieni ja mitä mittari silloin mittaa.\n\nSyötä vastauslaatikkoon kohdan a) tulos.",
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "answer": 40,
+      "unit": "s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Mittarin lukema vedessä (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$\\theta\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "21.0"
+          ],
+          [
+            "10",
+            "48.2"
+          ],
+          [
+            "20",
+            "56.6"
+          ],
+          [
+            "30",
+            "59.3"
+          ],
+          [
+            "40",
+            "59.9"
+          ],
+          [
+            "50",
+            "60.2"
+          ],
+          [
+            "60",
+            "60.2"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
     {
       "id": "fy3-3-L3-01",
       "level": 3,
-      "text": "Pyörän renkaassa ilman kokonaispaine on 300 kPa lämpötilassa $15\\,{}^\\circ\\text{C}$. (Kokonaispaine ei ole ylipaine.) Rengas ei vuoda, ja sen tilavuus pysyy samana. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine renkaassa on lämpötilassa $35\\,{}^\\circ\\text{C}$?",
+      "text": "Pyörän renkaassa ilman kokonaispaine on $300\\,\\text{kPa}$ lämpötilassa $15\\,{}^\\circ\\text{C}$. (Kokonaispaine ei ole ylipaine.) Rengas ei vuoda, ja sen tilavuus pysyy samana. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä paine renkaassa on lämpötilassa $35\\,{}^\\circ\\text{C}$?",
       "answer": 321,
       "unit": "kPa",
       "tolerance": 0.02
@@ -88,7 +287,7 @@
     {
       "id": "fy3-3-L3-02",
       "level": 3,
-      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on 150 kPa lämpötilassa $27{,}0\\,{}^\\circ\\text{C}$. Astiaa lämmitetään, kunnes paine on 200 kPa. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä on loppulämpötila celsiusasteina?",
+      "text": "Astia on suljettu ja jäykkä. Astiassa kaasun paine on $150\\,\\text{kPa}$ lämpötilassa $27{,}0\\,{}^\\circ\\text{C}$. Astiaa lämmitetään, kunnes paine on $200\\,\\text{kPa}$. Paine on suoraan verrannollinen kelvinlämpötilaan. Mikä on loppulämpötila celsiusasteina?",
       "answer": 127,
       "unit": "°C",
       "tolerance": 0.02
@@ -98,6 +297,72 @@
       "level": 3,
       "text": "Kaasun lämpötila on $20{,}0\\,{}^\\circ\\text{C}$. Kaasu jäähdytetään. Jäähdytys jatkuu, kunnes kaasun hiukkasten keskimääräinen liike-energia on puolet alkuperäisestä. Keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan. Mikä on lopullinen lämpötila celsiusasteina?",
       "answer": -127,
+      "unit": "°C",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-3-L3-04",
+      "level": 3,
+      "text": "Henkilön kehon lämpötilaa mitattiin viisi kertaa kolmella menetelmällä lyhyessä ajassa. Suuhun asetettava digitaalinen lämpömittari on tässä viitemenetelmä. Taulukko on esimerkkiaineistoa.\n\na) Laske kunkin menetelmän lukemien keskiarvo. Kirjoita summa ennen jakamista. Muut kohdat tarkistat ratkaisusta.\n\nb) Laske otsamittarin keskiarvon ero viitemenetelmän keskiarvoon, $\\theta_\\text{suu} - \\theta_\\text{otsa}$, kelvineinä.\n\nc) Arvioi kunkin menetelmän hajontaa lukemien vaihteluvälin puolikkaalla. Onko otsamittarin ero systemaattista vai satunnaista virhettä? Perustele. Systemaattinen virhe poikkeaa joka mittauksessa samaan suuntaan. Satunnainen virhe vaihtelee suuntaan ja toiseen.\n\nd) Henkilön lämpötila on suuhun mitattuna $37{,}6\\,{}^\\circ\\text{C}$. Kuumeen raja on $37{,}5\\,{}^\\circ\\text{C}$. Oleta, että otsamittarin ero on aina sama. Mitä otsamittari näyttäisi keskimäärin? Havaittaisiinko kuume?\n\nSyötä vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "error",
+        "reasoning"
+      ],
+      "answer": 0.6,
+      "unit": "K",
+      "tolerance": 0.1,
+      "data": {
+        "caption": "Kehon lämpötila kolmella menetelmällä (esimerkkiaineisto)",
+        "columns": [
+          "Mittaus",
+          "$\\theta_\\text{korva}\\,({}^\\circ\\text{C})$",
+          "$\\theta_\\text{otsa}\\,({}^\\circ\\text{C})$",
+          "$\\theta_\\text{suu}\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "36.9",
+            "36.2",
+            "37.0"
+          ],
+          [
+            "2",
+            "37.1",
+            "36.7",
+            "37.0"
+          ],
+          [
+            "3",
+            "36.8",
+            "36.0",
+            "37.1"
+          ],
+          [
+            "4",
+            "37.0",
+            "36.5",
+            "36.9"
+          ],
+          [
+            "5",
+            "37.2",
+            "36.6",
+            "37.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-3-L3-05",
+      "level": 3,
+      "text": "Teräksinen, jäykkä ja tiivis ilmasäiliö täytetään lämpötilassa $20{,}0\\,{}^\\circ\\text{C}$ niin, että säiliön ylipaine on $600\\,\\text{kPa}$. Ilmanpaine on $101\\,\\text{kPa}$. Ylipaine tarkoittaa kokonaispaineen ja ilmanpaineen erotusta. Säiliön varoventtiili avautuu, kun ylipaine on $900\\,\\text{kPa}$. Oleta, että ilmaa ei vuoda. Oleta myös, että kokonaispaine on suoraan verrannollinen kelvinlämpötilaan. Tiedot ovat esimerkkiaineistoa.\n\na) Säiliö jätetään kuumaan autoon, jossa sen lämpötila nousee arvoon $60{,}0\\,{}^\\circ\\text{C}$. Laske säiliön kokonaispaine ja ylipaine.\n\nb) Missä lämpötilassa varoventtiili avautuisi?\n\nc) Kuinka monta prosenttia ilman hiukkasten keskimääräinen liike-energia kasvaa lämpötilasta $20{,}0\\,{}^\\circ\\text{C}$ lämpötilaan $60{,}0\\,{}^\\circ\\text{C}$? Vertaa kokonaispaineen ja ylipaineen suhteellista kasvua. Perustele, kumpi on verrannollinen kelvinlämpötilaan.\n\nSyötä vastauslaatikkoon kohdan b) tulos celsiusasteina.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 145,
       "unit": "°C",
       "tolerance": 0.02
     }

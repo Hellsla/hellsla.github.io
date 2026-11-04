@@ -1,16 +1,25 @@
 VERDICT: PASS
-CONTENT-HASH: d1ba268bbb90b188
+CONTENT-HASH: 8bce250bfd157ad0
+Round: 3
+Mode: delta
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md L1-04, L2-04, L3-01 — ranges are written with \ldots ("0 . . . 6 m") in the solutions but with an en dash in the task text — use "0–6 m" throughout.
-- [Minor] solutions L1-03 reasonableness — units set as stacked fractions (9.81 m over s^2) are cramped; write 9.81 m/s^2 as in the rest.
-- [Minor] exercises.json — numbers with units in prose ("80 N", "25 metres", "12 seconds") are plain text beside maths — set as maths.
+- none
 
 ## Checked
-- contact-4; open-exercises-1280-4 (the pull-steps graph, L1-04) and L3-1280-1 at full size; L1-01 to L1-03 and L2 in contact-4.
-- The graph has labelled axes with units, a 1 m / 5 N grid, and an English aria-label with the force levels; it does not give the answer away. Solutions: sections, chains and answer boxes read well.
+- Opened captures fy3-2-open-exercises-1280-7 (L1-06/07 solutions), fy3-2-open-exercises-L2-1280-6 and fy3-2-open-exercises-L3-1280-5 of en: text, inline maths, display blocks and data tables render without overflow or clipping.
+- Data tables (L2-05, L2-06, L3-04, L3-05) have captions and headers in English; unit symbols in math.
+- Decimal point rendered in en.
+- Answer boxes show the right units (J, W, cm, kW, m/s); no Finnish remnants in the English captures.
+
+## Checked in round 2
+- Delta (HEAD): split rows read well in source: each continuation "\\ &= result" aligns under the first "=" of its aligned block, the Finnish decimal comma / English point and unit spacing are unchanged. check_layout.py 360 px --site is OK for fy3-2 (the site still serves the previous version of the formulas, so this does not yet prove the new rows). No 360 px solution captures exist in review/shots (only 390 and 1280 shots), so the 360 px result is judged from the source: rows are now at most about one line of text at 360 px.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish (English text) 4 · accessibility 4
+illustrations 4 · typography 5 · language 5 · accessibility 4
+
+## Checked in round 3
+- Delta (HEAD~3..HEAD, solutions.md display maths only): Split rows read well in source: each continuation is indented with \quad under the row's left side, the decimal separator and unit spacing are unchanged. check_layout.py fy3-2 --width 360 on freshly built preview: OK (fi, en, fi-easy), no formula overflow, only the existing wide-table scroll warning.

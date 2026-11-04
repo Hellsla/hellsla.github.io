@@ -240,6 +240,7 @@
     "self_assess": "Arvioi oma vastauksesi",
     "self_assess_lead": "Rastita kohdat, jotka omassa vastauksessasi jo on.",
     "criteria_done": "Mitä vastauksestani puuttuu?",
+    "exit_lead": "Vastaa ensin itse ja avaa vastaus vasta sitten.",
     "check_practice": "Ehdotus: yksi vastaus ei vielä kerro koko osaamistasi, mutta kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja tee <a href=\"#exercises\">ydintehtävät</a>.",
     "further_practice": "Kertaa asia <a href=\"#selita\">teoriatiivistelmästä</a> ja harjoittele <a href=\"#exercises\">tehtävillä</a>.",
     "nothing_locked": "ei mitään",

@@ -1,0 +1,14 @@
+{
+ "id": "fy9-moderni",
+ "course": "FY9",
+ "chapter": 6,
+ "order": 1,
+ "title": "Kvantti-ilmiöt, ydin ja säteily",
+ "description": "Kerrataan FY8-moduulin valosähköinen ilmiö ja fotoni, spektrit ja energiatasot, vetyatomi, aalto-hiukkasdualismi ja orbitaalit, LED ja laser, atomiydin ja radioaktiivinen hajoaminen, hajoamislaki, massavaje ja sidosenergia, fissio ja fuusio, ionisoiva säteily, säteilyannos ja säteilyturvallisuus, säteilyn käyttö, standardimalli sekä maailmankaikkeuden kehitys ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}

@@ -1,14 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 41be8c1da51836d5
+CONTENT-HASH: 01bbd76bd23df998
+Mode: full
+Round: 1
 
 ## Blocking
 (none)
 
 ## Fixed
-- Chapter title cited as *Power P = ΔE/Δt* in lesson.md, inquiry.json and solutions.md; the course title is *Power: P = ΔE/Δt*, colon restored.
+- exercises.json L2-07 — "corrects the claim correctly" tautological; now "corrects the claim".
+- solutions.md L2-06 Principle — "same power line and same transmitted power ... stay the same" repeated "same"; reworded.
 
 ## Polish
 - (none)
 
 ## Checked
-- All ten-plus tasks: text numbers, answers, units and tolerances equal the Finnish; solutions.md numbers identical (348 numeric tokens match); recomputed 480, 32.4, 96.0, 120, 60, 150, 1500, 10.96, 1200, 21, 13.0, 65.7. English answer unit 'houses' for L3-03. Figure fy2-7/sankey referenced, 9 % / 91 % as in the figure.
+- New tasks L1-06..08, L2-05..07, L3-04..05: ids, answers (4.8, 72, 9.62, 0.0625, 6.6, 4.1), units, tolerances, correct flags, choices and feedback, data table cells equal the Finnish; decimal point in JSON and LaTeX.
+- solutions.md: all numeric tokens equal fi per section (recomputed 4.8 %, 72 kW, 9.62 %, 0.0625 MW, 6.593 MWh, 42.09/1016 = 4.1 %).
+- Physics terms (transmission loss, loss power, efficiency, example data set) correct; Finnish Energy 2024 matches Energiateollisuus.
+- check_i18n en: 0 errors.

@@ -1,0 +1,14 @@
+{
+ "id": "fy9-sahkokentta",
+ "course": "FY9",
+ "chapter": 5,
+ "order": 2,
+ "title": "Sähkökenttä ja kondensaattori",
+ "description": "Kerrataan FY6-moduulin sähkövaraus ja Coulombin laki, homogeeninen sähkökenttä, sähköinen potentiaalienergia ja potentiaali, kondensaattori ja sen energia, diodi, LED ja aurinkokenno sekä sähköturvallisuus ja kodin sähköjärjestelmä ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}

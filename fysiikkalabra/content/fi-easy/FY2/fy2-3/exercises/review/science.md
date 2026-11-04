@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 659f54eaa9fbae03
+CONTENT-HASH: c2b8f07b38a25845
 
 ## Blocking
 (none)
+
+## Fixed
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Full translation review of all 12 exercises and solutions against the Finnish: numbers, units, answers, tolerances and the graph-ab figure reference identical; solution calculations identical (60 kJ in 40 s gives 1500 W; 1 440 000 J in 1200 s; 78,84 kWh; 15,18 EUR; 342,5 W; 102,2 km); decimal comma; physics unchanged.
+- New tasks L1-06..08, L2-05..07, L3-04..05 compared with the Finnish: ids, answers (30 kW, 1,96 kWh, 3,0 kWh, 1800 W, 2,8 GWh, 43 €), units, tolerances, correct flags, choices, data table cells and every number identical.
+- Solutions: all numbers, conversions and substitutions identical to fi; formulas unchanged (check_i18n fi-easy: 0 errors).

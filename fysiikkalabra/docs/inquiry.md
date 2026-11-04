@@ -35,7 +35,7 @@ activities, so stages repeat, combine or are omitted by what the lesson needs):
 | `tutki` | Tutki | `sim`, `experiment` (guided, controlled variables), `interpret` (table, figure, measurements) |
 | `selita` | Teoriatiivistelmä | `theory` (Ydinajatus, Kaava), `reflect` |
 | `sovella` | Sovella | `theory` (Esimerkki), error-spotting `choice`, `numeric` transfer task |
-| `tarkista` | Tarkista osaamisesi | three checks: a conceptual `choice`, a `numeric` or representational task, an `explain`; then `exit` (Exit ticket) |
+| `tarkista` | Tarkista osaamisesi | the `exit` (Exit ticket) first, wherever it stands in the file, then three checks: a conceptual `choice`, a `numeric` or representational task, an `explain` |
 
 The `exercises` activity is rendered last, in its own section "Tehtävät" after the exit ticket, whatever its `stage`
 (human decision 2026-10-26). The stage ids are the keys in the file; the headings are what the student sees.
@@ -59,7 +59,7 @@ reveals stay closed) until it is opened. Text fields are markdown with `$…$` L
 | `theory` | `sections: ["Ydinajatus", "Kaava", …]` | those `## ` sections of `lesson.md` by their key (`## Kaava: Lämpömäärä` is the section "Kaava", shown as "Lämpömäärä"; each placed once; sections placed nowhere are appended to Teoriatiivistelmä) |
 | `sim` | optional `text` (a lead of at most 30 words), `howto`, `model`, `calc` | the free-exploration simulation (at most one; needed before any `experiment`) with closed boxes Käyttöohje, Mallin oletukset and Laskennan selitys under its readout; a longer `text` without them goes behind one box "Käyttöohje ja mallin oletukset" |
 | `exercises` | optional `text` | the three exercise levels (at most one) |
-| `exit` | optional `text` | the exit ticket (at most one) |
+| `exit` | (`text` ignored) | the exit ticket (at most one): rendered first in Tarkista osaamisesi with the shared lead `inquiry.exit_lead`, no nav link of its own (teacher 2026-11-04) |
 
 Force diagrams (teacher 2026-10-29, docs/force-diagrams.md):
 - `"fbd": "identify" | "select" | "error" | "draw" | "equations"` on any task names the force-diagram skill it practises; `coverage.py` compares the tags with the lesson's plan in curriculum.json.

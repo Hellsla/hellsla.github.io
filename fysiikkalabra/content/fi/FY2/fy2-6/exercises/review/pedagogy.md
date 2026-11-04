@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 78183435714f0ad9
+CONTENT-HASH: b71da49ea5d729c4
+Round: 3
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json L1-04 — now a figure read plus a sum plus a share (three steps), which is level-2 demand on a level-1 slot and still not E = P t; keep the figure task but move it to level 2 and put a direct E = P t task (e.g. solar roof in kW and h) at level 1, as the earlier report suggested.
-- exercises.json L1-04 — the figure labels the bar "aurinko" while the task says "aurinkosähkö"; use "aurinkosähkön (aurinko-pylvään)" or relabel the figure so the match is immediate.
-- solutions.md L1-04 — "kolme merkitsevää numeroa kuten energioissa 21,1": 0,9 TWh has one figure, so the sum is good to the tenth; write "yhden desimaalin tarkkuudella kuten pylväiden luvut, tulos pyöristettynä kolmeen merkitsevään numeroon".
+- exercises.json fy2-6-L1-06 (carried over) — "Tuuli" is the only non-material option among uranium, coal and gas, so odd-one-out solves it without the concept. Fix: replace "Maakaasu" or "Uraani" by "Aurinkosähkö", or ask "Mikä on fossiilinen polttoaine" with one renewable and one nuclear distractor.
+- fy2-6-L1-08 vs L2-02 — both ask for the hours at full power for the same energy (t = E : P); L1-08 is easier only by units. Vary L2-02 if the set is edited again.
+- fy2-6-L2-05 and L3-05 — data are invented; both say "esimerkkiaineisto", keep that. The L3-05 solution's example caveat on the nuclear-versus-wind cost verdict should stay.
+- docs/exercise-bank/FY2.md — the plan promised real Finnish production data with source and year in L2; note that L2-05 is an example.
 
 ## Checked
-- L1-04 delta: figure fy2-6/fi-bars carries both values (20,2 and 0,9) at its bars, the total 79,9 is given in the text, and its description gives the same data to a reader who cannot see it without giving the 26,4 % share away.
-- Answer 26,4 matches solution (21,1 : 79,9 = 0,2641) and answers.py within tolerance 0,02.
-- Solution adds "Kuvaajan lukeminen" and explains why wind and solar are summed (weather-dependent), so a student who could not solve it can follow; reasonableness (about a quarter) is sound.
-- Situation first, question last as its own sentence; Finnish and units correct; counts 5/4/3 unchanged.
+- Round 2 fix, L1-07: model answer now names the options by content (hydro as regulating power, nuclear as base power, wind as weather-dependent) and matches the shuffled choices; closed.
+- Round 2 fix, L3-05 table: last row shortened to "Sääriippuvainen" / "Tasainen"; no long cell left, fits 360 px; the content still distinguishes the options.
+- L1-07 options are equal in length with real misconceptions (base power, weather dependence) and each has its own feedback.
+- Numbers verified earlier: L2-05 22,8 pp, L2-06 32/29/33 %, L2-07 1,6 milj. t, L3-04 489,6 GWh, 32 %, 6,7 GW, L3-05 16,6 and 10,6 €/MWh; L1-08 2750 h within tolerance.
+- Level 2 data/graph tasks and level 3 YO-style tasks fit; the set is coherent at 8/7/5 with no duplicate old task and complete solutions.

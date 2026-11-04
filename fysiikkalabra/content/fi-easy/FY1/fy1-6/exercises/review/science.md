@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: f65fdea3cf3a11ad
+CONTENT-HASH: 0565d8e3dabbf1c2
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
-(none left)
+(none)
+
+## Fixed
+(none needed: the text already matched fi)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- All 12 tasks against the Finnish: answers, units, tolerances and figure id identical; every numeric token of solutions.md matches the Finnish (327 tokens), decimal commas as {,} in maths.
-- Same physics and conditions (ilmanvastus jätetään huomiotta, tyhjiö, ei ilmakehää); L2-02 reading values 20 and 40 m/s at 5,0 s and answer 2,5 s unchanged.
-- Terms as in the lesson (putoamiskiihtyvyys, vapaa pudotus); values with units set as maths.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choice order, data table cells and every number in texts, choices and feedback are identical (decimal comma in fi, point in en where applicable). solutions.md carries 642 numeric tokens in both, same multiset as fi.
+- Physics conditions kept: no air resistance, Moon without atmosphere, light-gate model, intercept as start offset, quotient v/t too small because of the clock offset.
+- check_i18n.py fi-easy: 0 errors.

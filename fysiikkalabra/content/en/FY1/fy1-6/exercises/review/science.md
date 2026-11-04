@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c54aedd0f3d6fde3
+CONTENT-HASH: 532c2315508a91a1
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
-(none left)
+(none)
+
+## Fixed
+(none needed: the text already matched fi)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- All 12 tasks recomputed against the Finnish: answers (29.43, 7.848, 6.48, 9.8, 22.26, 1.2232, 2.5, 26.715, 9.8, 1.0, 8.108, 4.43), units and tolerances identical to the Finnish exercises.json.
-- solutions.md: every numeric token matches the Finnish (script comparison, 327 tokens); each solution has Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness; significant figures and the L3-03 difference rule as in the Finnish.
-- Conditions stated in the task text (air resistance ignored, vacuum, no atmosphere), as in the Finnish.
-- Planet graph task (L2-02): reading A 20 m/s and B 40 m/s at 5.0 s, answer 2.5 s.
-- English terms consistent with the lesson (acceleration of free fall, free fall); no Finnish words left.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choice order, data table cells and every number in texts, choices and feedback are identical (decimal comma in fi, point in en where applicable). solutions.md carries 642 numeric tokens in both, same multiset as fi.
+- Physics conditions kept: no air resistance, Moon without atmosphere, light-gate model, intercept as start offset, quotient v/t too small because of the clock offset.
+- check_i18n.py en: 0 errors.

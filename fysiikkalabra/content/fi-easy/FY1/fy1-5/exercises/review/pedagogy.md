@@ -1,8 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 70a9e87c7ef7e18f
+CONTENT-HASH: ee1439f1aa6344d8
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
+
 ## Blocking
+(none)
+
+## Fixed
+(none needed: text already matched fi in every number and was natural)
 
 ## Polish
+(none)
 
 ## Checked
-Translation review: levels, figure task and solution structure as in the Finnish; plain Finnish, short sentences, clear instructions.
+- Text is natural and keeps the fi meaning: L1-06 distractor feedback names the right misconception (intercept, total distance, s:t only through origin); L2-06 error analysis separates position and distance; L3-04/05 reasoning questions kept.
+- Level, kind tags and task order identical to fi. Wording suits the target reader (selkosuomi: short sentences, terms explained, one idea per sentence).
