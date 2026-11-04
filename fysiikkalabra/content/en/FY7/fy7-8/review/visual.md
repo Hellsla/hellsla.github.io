@@ -1,19 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 5da4632bb8b3a2c1
+CONTENT-HASH: c69f4d6583752ca9
 
 ## Blocking
-(none) Round-1 blockers verified fixed: the sim legend now reads $P_\text{arriving}$ (sim-390, lab-1280), and the grid figure (fig-7, theory-1280-2) labels the house-side unit "transformer" with nothing under the roof; no Finnish visible in the sim, figures or tables.
 
 ## Polish
-- [Minor] figures.json grid description — still says "a local substation, which lowers it to 230 V" while the figure now labels it "transformer"; align the wording (the text also says "local substation").
-- [Minor] inquiry.json ennuste-dc "pending" — refers to the part "Core idea", but the page heading is "Key idea" — use "Key idea".
-- [Minor] inquiry.json kertaus-induktio feedback — "Today the transformer is based on this." is a literal rendering — "The transformer in this chapter is based on this."
-- [Minor] koe-1 table header "transmission voltage" lacks a symbol/unit while the other columns have one — "$U$ (kV)".
-- [Minor] sim "Assumptions of the model and explanation" and "Assumptions of the model" are two adjacent disclosures with near-identical titles (sim-390).
+- [Minor] fy7-8 caption: "A transformer whose higher voltage is $750\,\text{kV}$" reads clumsily; e.g. "A transformer of a $750\,\text{kV}$ substation".
 
 ## Checked
-- contact-5, contact-6; sim-390; lab-1280; fig-7 (grid) 390; theory-1280-1 and -2 (transformer figure, grid figure, formulas, loss-graph start); exercise captures via contact-5/6.
-- Transformer figure labels, maths chains, units and decimal point are fine; the Finnish source title "Yhteisillä linjoilla" in a citation is a reference, not a label.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 (English) · accessibility 4
+batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-8.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.

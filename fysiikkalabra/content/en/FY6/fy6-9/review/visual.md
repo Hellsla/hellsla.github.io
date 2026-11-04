@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1d62021e1bd5520a
+CONTENT-HASH: d322b6ac5efee837
 
 ## Blocking
 (none)
 
 ## Polish
-- (Minor) Fixed: slider label 'Resistance of charger and wires R = ...' fits 360 px on one line (sim-390); same wording in the experiment names.
-- (Minor) Figure 13 label 'stored in the battery' is clearly within its box.
+- [Minor] for science: 'dozens of such cells' - the pack of the source photo (BMW i3) has 96 cells; acceptable, 'nearly a hundred' would be exact.
 
 ## Checked
-- Recaptured en shots; contact sheets, sim at 390 px, experiments 1 to 3, figures 5, 7, 9, 11, 13, hero: no overflow, maths renders, no Finnish left.
-- Re-review: fy6-9-sim-390.png and fy6-9-sim-1280.png show the charger voltage on the circuit canvas as U_ch (earlier blocking U_lat finding resolved by the lang keys sims.fy6-9.ulat_lab / ulat_eq); sliders, readouts and canvas all read U_ch, nothing overflows or clips at either width.
-
-## Scores
-illustrations 4 · typography 4 · English 4 · accessibility 4
-- Re-review after the concept-review commit: howto wording (electrical energy transformed into internal energy), efficiency paragraph (often below 100 %, charging always, R and R_s), L3-03 sisäenergiaksi, matching the Finnish; no numbers changed; $ counts equal.
+- batch delta review: opened the source image(s) and 1280/390 px renders of the photo(s): ev-battery-cells.webp (60Ah and SB Limotive visible; caption arithmetic 3.7 V times 60 Ah = 222 Wh, rounded to 220 Wh, correct; floats beside 'Charge alone does not tell the energy'). Alt matches the visible content, captions physically correct and tied to the chapter, units in LaTeX, photo floats right at 1280 (no clipping, scrollWidth = viewport) and stacks above the caption at 390.

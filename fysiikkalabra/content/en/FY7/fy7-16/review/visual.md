@@ -1,18 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d60bbb553ac5682a
+CONTENT-HASH: bd69ea2391121e43
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] simulation readout (sim-390, koe-1) — "Share of the value at 3 mm 100.0 %" runs the reference distance into the value, so it reads "3 mm 100 %" — add a colon: "Share of the value at 3 mm: 100.0 %".
-- [Minor] simulation canvas (sim-390/sim-1280) — the "phone" and "receiver coil" labels sit tight against the phone bar and field lines at phone width; legible, but cramped.
-- [Minor] charger figure (fig-5-390) — the left panel's "phone" label chip covers field lines; acceptable, no action needed beyond awareness.
+- [Minor] fy7-16 alt text — the fourth hob zone is hidden under the pan; "four cooking zones" is still right but "three visible zones and a pan on the fourth" is more exact.
 
 ## Checked
-- 390 px: top, hero (fig-2), fig-5 charger, fig-7 hob, fig-9 graph, sim-390, example-390-1/2, exp-koe-1, exp-koe-2-1.
-- 1280 px: intro, theory-1, sim, open-ennusta-1, open-tarkista-1, open-exit; stage-sovella-390-1.
-- check_layout.py --width 340: OK in all three builds. No Finnish words visible in en (figure labels, sim, tables, inquiry).
-
-## Scores
-illustrations 4 · typography 5 · Finnish (English prose) 4 · accessibility 4
+batch delta review: opened each new photo in assets/pics/fy7 and compared alt text and caption with it; rendered preview/en/fy7-16.html at 1280 px (figure floats right, 320 px wide, no overflow) and 390 px (full-width, below text, credit line present); captions physically correct and tied to the chapter, numbers with units in LaTeX.

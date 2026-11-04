@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b7cca4eb5d885eb4
+CONTENT-HASH: 00d6db9333584cbc
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] key_concepts muuntosuhde — the thin gap before 'U_1 : U_2' in 'suhde $U_1 : U_2$' is slightly tight at 390 px; cosmetic.
+- none
 
 ## Checked
-- Delta (round 2): the new "Luvun tärkeät käsitteet" box (key_concepts in meta.json), rendered at 390 px (own capture of section.kc, no horizontal overflow: scrollWidth 390), plus top-390 (opening, layout survived). Rewritten round-1 entries checked for exactness, plain Finnish and consistency with the lesson/glossary terms in the packet. Other content unchanged and not re-audited.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: opened transformer-750kv (assets/pics/fy7) and compared with alt and caption (alt matches what is visible, caption physically correct, plain Finnish, units in LaTeX where present); rendered preview/fi-easy/fy7-8.html with playwright: figure.unit-photo floats right at 1280 px (x 744–1064, credit line shown, no clipping), stacks full width at 390 px, no horizontal overflow.

@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2679ef2e03591a8b
+CONTENT-HASH: 861db34c11d55f21
 
 ## Blocking
+- (none)
 
 ## Polish
-- [Minor] fy6-16-theory-1280-2 — kuvan "kiuas"-teksti istuu palkin sisällä, mutta "3 · 25 A" -kaavan jälkeen rivi alkaa pilkulla (", ja silloinkin vain"): rivinvaihto ennen pilkkua. Ei muuttunut tässä deltassa.
+- (ei huomautettavaa)
 
 ## Checked
-- fy6-16-intro-1280: kolmas oppimistavoite ("selittämään Joulen lain avulla, miksi latausasemalla on oma ryhmä ja vikavirtasuoja ja miksi jatkojohto ja löystynyt liitos kuumenevat") täydentää otsikon, mahtuu laatikkoon.
-- fy6-16-theory-1280-2: kappale "Johdon ja liitoksen lämpeneminen" ("Kelalta siirtyy energiaa lämpönä ympäristöön huonosti, joten kela kuumenee") luettu; kaavat ja yksiköt ehjiä.
-- Changes are wording only (heat transfer, learning goal); no figure, number or symbol changed, and the figure row and example captures were not affected.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: photo file(s) opened and compared with alt text; rendered fy6-16 at 1280 px (float right, 320 px wide, no clipping, beside its paragraph) and 390 px (full-width block, no horizontal overflow); caption physics, Finnish and LaTeX units read; changed typography checked in the capture.

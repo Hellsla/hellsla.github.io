@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8acaabcc8496dd72
+CONTENT-HASH: e4d21010753a8a18
 
 ## Blocking
 (none)
@@ -8,6 +8,4 @@ CONTENT-HASH: 8acaabcc8496dd72
 (none)
 
 ## Checked
-- Captures (contact sheets, sim at 390 and 1280 px, figures, experiment panels): all Finnish, no English left in figures, sim canvas or experiment panels; no overflow; labels fit.
-- Maths renders at 390 px.
-- Interface string 'Exit ticket' (lang exit_ticket / optional_exit) is shared with the passed fi chapter and not changed here.
+batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-14.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photo solar-panels-jyvaskyla: alt matches (roof, blue sky, dark-blue panels); caption fine.

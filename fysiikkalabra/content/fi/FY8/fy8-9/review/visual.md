@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4720559b0d9eefa0
+CONTENT-HASH: e6cd16095e19a98b
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] inquiry.json Tutki "Johtopäätös: sattuma ja laki" model answer — the fixed `$10^{15}$` is shown only after "Näytä mallivastaus", which no capture opens; judged from source (valid KaTeX, check_latex ok). Add a capture of the opened model answer when convenient.
-- [Minor] round-1 notes untouched and still Minor: slash division in the Esimerkki, straight quotes "vuorossa", small fig-5 caption.
+- [Minor] Geiger-kuvan alt sanoo 'kierrejohdolla', mutta johto ei ole kierrejohto; riittää 'johdolla'.
 
 ## Checked
-- Delta (one model-answer exponent `10^15` -> `10^{15}`): lab-1280-2 and stage-tutki-390-3 (the task card around it, layout intact); the model answer itself is not in any capture.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: rendered preview/fy8-9.html at 1280 px and opened the 2 added photo(s) with caption; image files read where alt text needed verification; floats right of the text (x 744-1064 px), no clipping or horizontal overflow at 1280 or 390 px; alt text matches image, captions physically correct and tied to the chapter, LaTeX for numbers with units.

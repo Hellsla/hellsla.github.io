@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c542c1823b37cf93
+CONTENT-HASH: 1a17331b7eea4533
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fig-5 bar chart at 390 px: "alussa / lopussa" labels sit close together under the bars; legible, no overlap.
+- [Minor] fy6-12 lightning-dallas: alt and caption say the lightning strikes a mast; the image shows a bolt beside a power pole, not clearly hitting it. Fix: 'Salama kulkee pilvestä alas lähelle sähköpylvästä.'
+- [Minor] fy6-12 lightning-strikes: alt 'monta salamaa'; the image shows one branched flash. Fix: 'Kaukana on haarautunut salama.'
+- [Minor] for science: plasma-lamp caption 'Revontulet syntyvät samalla tavalla' is a simplification (aurora: particles from space hit the air); consider 'Revontulissa valo syntyy samantapaisesti.'
 
 ## Checked
-- Rebuilt and re-captured (fi-easy): contact sheets 1 and 3, the sim at 390 and 1280 px, the experiment cards and the opened tables.
-- Figures, sim labels and tables all in Finnish; decimal comma in figures (1,0 cm; 2,0 cm); the legend gloss 'tasapotentiaalipinta (sama potentiaali)' fits.
-- Maths renders (display formulas, aligned example, fractions, roots); no overflow at 390 px; the sim stays readable at 1280 px.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-12.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photos lightning-dallas, lightning-strikes, plasma-lamp: alts mostly match.

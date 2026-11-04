@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c245c1fc5b1be4ba
+CONTENT-HASH: 159351b1b850546d
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] key_concepts magneettivuo/induktiojännite — the box is a simplification of the glossary (no Φ=BA, no 'liikkuva johdin'); acceptable for fi-easy, no change needed.
+- none
 
 ## Checked
-- Delta (round 2): the new "Luvun tärkeät käsitteet" box (key_concepts in meta.json), rendered at 390 px (own capture of section.kc, no horizontal overflow: scrollWidth 390), plus top-390 (opening, layout survived). Rewritten round-1 entries checked for exactness, plain Finnish and consistency with the lesson/glossary terms in the packet. Other content unchanged and not re-audited.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: opened shake-flashlight (assets/pics/fy7) and compared with alt and caption (alt matches what is visible, caption physically correct, plain Finnish, units in LaTeX where present); rendered preview/fi-easy/fy7-5.html with playwright: figure.unit-photo floats right at 1280 px (x 744–1064, credit line shown, no clipping), stacks full width at 390 px, no horizontal overflow.
