@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 76d62114ae966053
+CONTENT-HASH: b4146d32dcda0014
 
 ## Blocking
 (none)
@@ -8,8 +8,8 @@ CONTENT-HASH: 76d62114ae966053
 (none)
 
 ## Checked
-- Hash 76d62114ae966053 at start and end. Round 1 Blocking (empty `.eq-chain` boxes in opened solutions) is resolved: with the local lesson.js fix the calculation rows render in every capture opened, with the equals signs aligned.
-- Opened open-exercises-L2-1280-8 (L2-07 solution, Sijoitus chain renders). Changed text re-read: L1-08 water vs air ratio 4,4, L2-05 phone-recording delay wording (consistent with solution t0), L2-06 rule c), L3-04 c) steep-slope argument; no new defects.
+- Hash b4146d32dcda0014 at start and end (delta, text-only). Opened open-exercises-L2-1280-5 (L2-05: new task text with phone tone and t0, caption "Sovelluksen mittaama kaiun viive", table, Annettu, Periaate, Kaava chain all render). Re-read L1-08 Järkevyys (4,4 times) and L3-04 c) wording; consistent with the answers.
+- Calculation chains render in the new captures (template fix applied).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
