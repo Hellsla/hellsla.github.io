@@ -122,7 +122,7 @@
 ## fy1-3-L1-06
 **Kysytty:** mikä tilanteista on systemaattinen virhe.
 **Periaate:** Systemaattinen virhe on joka mittauksessa suunnaltaan ja suuruudeltaan lähes sama, esimerkiksi mittarin väärä nollakohta. Satunnaisvirhe vaihtelee sattumanvaraisesti kumpaan suuntaan tahansa, ja karkea virhe on yksittäinen erehdys, joka näkyy muista poikkeavana tuloksena.
-**Mallivastaus:** Systemaattinen virhe on lämpömittarin väärä nollakohta: jäävedessä mittari näyttää joka kerralla noin $1{,}5\,^\circ\text{C}$ liikaa, joten kaikki lukemat siirtyvät samaan suuntaan. Toistaminen ja keskiarvo eivät poista sitä, mutta vertailu tunnettuun arvoon (jäävesi on $0\,^\circ\text{C}$) paljastaa sen, ja lukemat korjataan vähentämällä virhe. Kellon vaihteleva pysäytyshetki ja vaihteleva katselusuunta ovat satunnaisvirheitä, joita keskiarvo pienentää. Väärin kirjattu luku $34{,}2\,\text{s}$ on karkea virhe, joka tarkistetaan ja korjataan.
+**Mallivastaus:** Systemaattinen virhe on lämpömittarin väärä nollakohta: jäävedessä mittari näyttää joka kerralla noin $1{,}5\,{}^\circ\text{C}$ liikaa, joten kaikki lukemat siirtyvät samaan suuntaan. Toistaminen ja keskiarvo eivät poista sitä, mutta vertailu tunnettuun arvoon (jäävesi on $0\,{}^\circ\text{C}$) paljastaa sen, ja lukemat korjataan vähentämällä virhe. Kellon vaihteleva pysäytyshetki ja vaihteleva katselusuunta ovat satunnaisvirheitä, joita keskiarvo pienentää. Väärin kirjattu luku $34{,}2\,\text{s}$ on karkea virhe, joka tarkistetaan ja korjataan.
 
 ## fy1-3-L1-07
 **Annettu:** $x_1 = 5{,}41\,\text{cm}$, $x_2 = 5{,}47\,\text{cm}$, $x_3 = 5{,}39\,\text{cm}$, $x_4 = 5{,}44\,\text{cm}$, $x_5 = 5{,}43\,\text{cm}$; $n = 5$
@@ -130,19 +130,19 @@
 **Periaate:** Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$. Virhe-arvio pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1), ja keskiarvo pyöristetään samaan desimaaliin, koska numerot virhe-arvion desimaalin jälkeen ovat jo epävarmoja.
 **Kaava:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{n}$ ja $\Delta x = \dfrac{x_\text{max} - x_\text{min}}{2}$
 **Muunnokset:** Kaikki pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
-**Sijoitus:** $\bar{x} = \dfrac{5{,}41\,\text{cm} + 5{,}47\,\text{cm} + 5{,}39\,\text{cm} + 5{,}44\,\text{cm} + 5{,}43\,\text{cm}}{5} = \dfrac{27{,}14\,\text{cm}}{5} = 5{,}428\,\text{cm}$ ja $\Delta x = \dfrac{5{,}47\,\text{cm} - 5{,}39\,\text{cm}}{2} = 0{,}04\,\text{cm}$
+**Sijoitus:** Tulosten summa on $5{,}41\,\text{cm} + 5{,}47\,\text{cm} + 5{,}39\,\text{cm} + 5{,}44\,\text{cm} + 5{,}43\,\text{cm} = 27{,}14\,\text{cm}$, joten $\bar{x} = \dfrac{27{,}14\,\text{cm}}{5} = 5{,}428\,\text{cm}$ ja $\Delta x = \dfrac{5{,}47\,\text{cm} - 5{,}39\,\text{cm}}{2} = 0{,}04\,\text{cm}$
 **Vastaus:** $5{,}43\,\text{cm}$, sillä virhe-arvio $0{,}04\,\text{cm}$ on yhden numeron luku sadasosien kohdalla (ensimmäinen numero ei ole 1). Tulos on $5{,}43\,\text{cm} \pm 0{,}04\,\text{cm}$.
 **Järkevyys:** Väli $5{,}43\,\text{cm} \pm 0{,}04\,\text{cm}$ eli $5{,}39\,\text{cm}$–$5{,}47\,\text{cm}$ kattaa kaikki viisi tulosta. Tulos $5{,}4283\,\text{cm}$ olisi väärin, koska se antaisi ymmärtää tietävän leveyden kymmenestuhannesosien tarkkuudella, vaikka virhe-arvio on sadasosia.
 
 ## fy1-3-L1-08
-**Annettu:** pienin asteikkoväli $d = 0{,}2\,^\circ\text{C}$
+**Annettu:** pienin asteikkoväli $d = 0{,}2\,{}^\circ\text{C}$
 **Kysytty:** lukeman epävarmuuden arvio $\Delta T$ yksikössä $^\circ\text{C}$
 **Periaate:** Kun arvo luetaan asteikolta, lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida puoleksi pienimmästä asteikkovälistä. Se on arvio lukemisesta; mittauksen kokonaisepävarmuuteen voivat vaikuttaa myös mittari ja menetelmä.
 **Kaava:** $\Delta T = \dfrac{d}{2}$
 **Muunnokset:** Ei tarvita: asteikkoväli on jo asteina Celsius.
-**Sijoitus:** $\Delta T = \dfrac{0{,}2\,^\circ\text{C}}{2} = 0{,}1\,^\circ\text{C}$
-**Vastaus:** $0{,}1\,^\circ\text{C}$, yksi merkitsevä numero kuten asteikkovälissä $0{,}2\,^\circ\text{C}$.
-**Järkevyys:** Arvio on pienempi kuin asteikkoväli, kuten pitääkin: lukema voidaan sijoittaa viivojen väliin noin puolen välin tarkkuudella. Lukema $21{,}6\,^\circ\text{C}$ ilmoitettaisiin siis muodossa $21{,}6\,^\circ\text{C} \pm 0{,}1\,^\circ\text{C}$.
+**Sijoitus:** $\Delta T = \dfrac{0{,}2\,{}^\circ\text{C}}{2} = 0{,}1\,{}^\circ\text{C}$
+**Vastaus:** $0{,}1\,{}^\circ\text{C}$, yksi merkitsevä numero kuten asteikkovälissä $0{,}2\,{}^\circ\text{C}$.
+**Järkevyys:** Arvio on pienempi kuin asteikkoväli, kuten pitääkin: lukema voidaan sijoittaa viivojen väliin noin puolen välin tarkkuudella. Lukema $21{,}6\,{}^\circ\text{C}$ ilmoitettaisiin siis muodossa $21{,}6\,{}^\circ\text{C} \pm 0{,}1\,{}^\circ\text{C}$.
 
 ## fy1-3-L2-05
 **Annettu:** taulukon kahdeksan aikaa $t_{10}$ (10 kierrosta): $18{,}12\,\text{s}$, $18{,}31\,\text{s}$, $18{,}05\,\text{s}$, $18{,}27\,\text{s}$, $18{,}19\,\text{s}$, $18{,}35\,\text{s}$, $18{,}10\,\text{s}$ ja $18{,}22\,\text{s}$; $n = 8$
@@ -181,7 +181,7 @@
 **Periaate:** Selvästi poikkeava tulos tarkistetaan, mutta sitä ei poisteta pelkästään siksi, että se poikkeaa. Se saa jäädä pois vain, jos karkean virheen syy löytyy ja poisjättö perustellaan ja kirjataan. Tässä syy tunnetaan: kello pysäytettiin myöhässä.
 **Kaava:** $\bar{t} = \dfrac{t_1 + \dots + t_n}{n}$, missä $n = 7$ jäljelle jäävää tulosta
 **Muunnokset:** Ei tarvita: kaikki ajat ovat sekunteina.
-**Sijoitus:** $\bar{t} = \dfrac{2{,}41\,\text{s} + 2{,}38\,\text{s} + 2{,}44\,\text{s} + 2{,}40\,\text{s} + 2{,}43\,\text{s} + 2{,}39\,\text{s} + 2{,}42\,\text{s}}{7} = \dfrac{16{,}87\,\text{s}}{7} = 2{,}41\,\text{s}$
+**Sijoitus:** Tulosten summa on $2{,}41\,\text{s} + 2{,}38\,\text{s} + 2{,}44\,\text{s} + 2{,}40\,\text{s} + 2{,}43\,\text{s} + 2{,}39\,\text{s} + 2{,}42\,\text{s} = 16{,}87\,\text{s}$, joten $\bar{t} = \dfrac{16{,}87\,\text{s}}{7} = 2{,}41\,\text{s}$
 **Vastaus:** Tuloksen saa jättää pois, koska syy tunnetaan ja se on kirjattu; keskiarvo on $2{,}41\,\text{s}$, kolme merkitsevää numeroa kuten mittauksissa. Jäljelle jäävien tulosten vaihteluvälin puolikas on $\dfrac{2{,}44\,\text{s} - 2{,}38\,\text{s}}{2} = 0{,}03\,\text{s}$. Jos syytä ei olisi löytynyt, tulosta ei saisi poistaa vain siksi, että se poikkeaa: mittaus toistettaisiin ja asia kirjattaisiin.
 **Järkevyys:** Poikkeavan tuloksen kanssa keskiarvo olisi $\dfrac{19{,}84\,\text{s}}{8} = 2{,}48\,\text{s}$, eli yksi virhe siirtäisi sitä $0{,}07\,\text{s}$ eli enemmän kuin kaksi kertaa vaihteluvälin puolikkaan. Poikkeama $2{,}97\,\text{s} - 2{,}41\,\text{s} = 0{,}56\,\text{s}$ on selvästi suurempi kuin muiden tulosten hajonta $0{,}03\,\text{s}$, joten se on karkea virhe eikä satunnaisvirhettä.
 

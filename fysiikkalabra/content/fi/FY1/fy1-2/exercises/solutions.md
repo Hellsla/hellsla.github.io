@@ -121,11 +121,11 @@
 
 ## fy1-2-L2-06
 **Annettu:** taulukosta viiden omenan massat $152{,}4$, $147{,}9$, $160{,}8$, $155{,}3$ ja $158{,}1$; sarakkeen otsikossa yksikkö $\text{kg}$
-**Kysytty:** virhe taulukossa ja omenan keskimassa $\overline{m}$ kilogrammoina
+**Kysytty:** virhe taulukossa ja omenan keskimassa $m_{\text{ka}}$ kilogrammoina
 **Periaate:** Mittaustulosta arvioidaan aina järkevyydellä. Omena ei painaisi $150\,\text{kg}$, joten otsikon yksikkö on väärin: lukuarvot on mitattu grammoina. Keskiarvo on massojen summa jaettuna lukumäärällä, ja yksikkö korjataan sijoittamalla.
-**Kaava:** $\overline{m} = \dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$
+**Kaava:** $m_{\text{ka}} = \dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$
 **Muunnokset:** Oikea otsikko on $m\,(\text{g})$. Gramman paikalle kirjoitetaan sen arvo kilogrammoina, $1\,\text{g} = 10^{-3}\,\text{kg}$.
-**Sijoitus:** $\overline{m} = \dfrac{152{,}4 + 147{,}9 + 160{,}8 + 155{,}3 + 158{,}1}{5}\,\text{g} = \dfrac{774{,}5}{5}\,\text{g} = 154{,}9\,\text{g} = 154{,}9\cdot10^{-3}\,\text{kg} = 0{,}1549\,\text{kg}$
+**Sijoitus:** Massojen summa on $152{,}4\,\text{g} + 147{,}9\,\text{g} + 160{,}8\,\text{g} + 155{,}3\,\text{g} + 158{,}1\,\text{g} = 774{,}5\,\text{g}$, joten $m_{\text{ka}} = \dfrac{774{,}5\,\text{g}}{5} = 154{,}9\,\text{g} = 154{,}9\cdot10^{-3}\,\text{kg} = 0{,}1549\,\text{kg}$
 **Vastaus:** $0{,}1549\,\text{kg}$, neljä merkitsevää numeroa kuten punnituksissa, jotka on annettu kymmenesosagrammaan. Omenoiden lukumäärä on tarkka luku.
 **Järkevyys:** Omena painaa noin $150\,\text{g}$ eli noin $0{,}15\,\text{kg}$, ja arvot ovat lähellä toisiaan. Keskiarvo $154{,}9\,\text{g}$ on lukujen $147{,}9$ ja $160{,}8$ välissä, kuten keskiarvon pitää.
 

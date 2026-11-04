@@ -48,12 +48,12 @@
       "kind": [
         "concept"
       ],
-      "answer": "Lämpömittarin nollakohta on väärin, joten se näyttää jäävedessä joka kerralla noin $1{,}5\\,^\\circ\\text{C}$.",
+      "answer": "Lämpömittarin nollakohta on väärin, joten se näyttää jäävedessä joka kerralla noin $1{,}5\\,{}^\\circ\\text{C}$.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Lämpömittarin nollakohta on väärin, joten se näyttää jäävedessä joka kerralla noin $1{,}5\\,^\\circ\\text{C}$.",
+          "text": "Lämpömittarin nollakohta on väärin, joten se näyttää jäävedessä joka kerralla noin $1{,}5\\,{}^\\circ\\text{C}$.",
           "feedback": "Oikein: virhe on joka mittauksessa suunnaltaan ja suuruudeltaan sama, joten kaikki lukemat siirtyvät samaan suuntaan. Toistaminen ja keskiarvo eivät pienennä sitä; se huomataan vertaamalla tunnettuun arvoon, ja se korjataan.",
           "correct": true
         },
@@ -85,7 +85,7 @@
     {
       "id": "fy1-3-L1-08",
       "level": 1,
-      "text": "Nestelämpömittarin pienin asteikkoväli on $0{,}2\\,^\\circ\\text{C}$. Lukeman epävarmuudeksi $\\Delta T$ arvioidaan puoli asteikkoväliä. Kuinka suuri on arvio?",
+      "text": "Nestelämpömittarin pienin asteikkoväli on $0{,}2\\,{}^\\circ\\text{C}$. Lukeman epävarmuudeksi $\\Delta T$ arvioidaan puoli asteikkoväliä. Kuinka suuri on arvio?",
       "kind": [
         "model"
       ],
