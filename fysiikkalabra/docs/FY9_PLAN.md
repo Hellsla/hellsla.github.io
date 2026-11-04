@@ -55,7 +55,9 @@ Sovella tasks and can be filtered by module, competency and task type. English a
 review, as in the other courses. Units support one language per course today, so the translations need units.py to
 allow several languages for a course.
 
-## Open questions for the teacher
-- The course code and name (FY9 "Fysiikan ylioppilaskertaus" is a default).
-- Whether the mock exam is a shortened 75-minute lesson or a full-length separate session.
-- Whether about 320 tasks is enough.
+## Teacher's decisions (2026-11-04)
+- Course code FY9, name "Fysiikan ylioppilaskertaus". About 320 tasks is enough.
+- The mock exam (lesson 16) is full length: 6 h, Osa I compulsory (1 task, 20 p), Osa II 4 of 7 (15 p each), Osa III
+  2 of 3 (20 p each, data tasks), 120 p, 11 tasks of which 7 are answered. This structure is stated in fy9-koe.
+- From stage 2 on, long tasks use the exam's point values: 15 p for calc, word, experiment and cross-module tasks
+  (Osa II type) and 20 p for the data → graph → fit → interpret task (Osa III type).
