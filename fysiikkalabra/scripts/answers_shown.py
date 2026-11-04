@@ -44,6 +44,17 @@ def shown(block, label, answer, tolerance=0.02):
     return None
 
 
+def step(tex, answer):
+    """One unit in the last significant digit of the shown answer (teacher 2026-11-03: the check accepts ±2 % or ±1 in
+    the last digit, whichever is larger), in the unit of `answer`; None when no number of `tex` is that answer.
+    A whole number's trailing zeros count as significant, so 7000 gives 1, never 1000."""
+    for v, mant, half, mhalf in numbers(tex or ""):
+        if answer and abs(v - answer) <= 0.05 * abs(answer): return round(2 * half, 12)
+        if answer and abs(mant - answer) <= 0.05 * abs(answer): return round(2 * mhalf, 12)
+        if not answer and abs(v) <= 2 * half: return round(2 * half, 12)
+    return None
+
+
 def fallback(x):
     """An exact value rounded to three significant figures (no float artefacts), with a plain point."""
     if x == 0: return "0"

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The half-life of a sample is $2.0\\,\\text{h}$. What fraction of its nuclei is undecayed after $6.0\\,\\text{h}$?",
+    "a": "Three half-lives pass, and each halves the number of remaining nuclei: $\\left(\\tfrac{1}{2}\\right)^{3} = \\tfrac{1}{8}$, that is, $12.5\\,\\%$ of the nuclei."
+  },
+  {
+    "q": "Why does the function $y = A\\,e^{-Ct} + B$ fitted to pulse data have the constant term $B$?",
+    "a": "A radiation meter always counts background radiation too, and it does not decrease as the sample decays. The constant term $B$ describes this background. Without it the fit would try to explain the pulses of the background as slow decay, and the half-life would become too long."
+  }
+]

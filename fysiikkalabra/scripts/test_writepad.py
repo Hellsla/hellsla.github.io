@@ -95,7 +95,19 @@ with sync_playwright() as pw:
                 && (!li.querySelector('.ex-core') || h.contains(li.querySelector('.ex-core'))) && d.every(x => !x.open && x.querySelector('summary').offsetHeight === 0); })""")
         expect(f"{page}: Vastaus and Näytä ratkaisu are buttons in the exercise's top row beside its tag (teacher 2026-11-01)", head)
         tg = pg.locator("#exercises li[id] .ex-toggle").first
-        tg.scroll_into_view_if_needed(); tg.click()
+        tg.scroll_into_view_if_needed()
+        li0 = pg.locator("#exercises li[id]:has(.ex-toggle)").first
+        expect(f"{page}: Vastaus and Näytä ratkaisu stay in view, locked with the reason, until the student tries (teacher 2026-11-03)",
+               tg.is_visible() and tg.is_disabled() and tg.get_attribute("aria-disabled") == "true" and li0.locator(".ex-head .lock-note").inner_text().strip() == T("js.locked_try" if li0.locator("form.check").count() else "js.locked_done"))
+        if li0.locator(":scope > form.check").count(): li0.locator(":scope > form.check input").fill("1"); li0.locator(":scope > form.check button").click()
+        else: li0.locator(":scope > label.solved input").check()
+        expect(f"{page}: one try opens them", not tg.is_disabled() and li0.locator(".lock-note").count() == 0)
+        tp = ctx.new_page(); tp.goto(BASE + page + "?ratkaisut=1"); tp.wait_for_load_state("load")
+        expect(f"{page}: ?ratkaisut=1 opens every lock for the teacher", tp.locator("#exercises [data-locked], .hints [data-locked], .ex-toggle:disabled").count() == 0 and tp.locator(".teacher-note").count() == 1)
+        tp.close(); pg.bring_to_front()   # the teacher's page took the focus; the toggle event of a background tab may wait
+        tg.click()
+        try: pg.wait_for_function("(b) => b.getAttribute('aria-expanded') === 'true'", arg=tg.element_handle(), timeout=3000)
+        except Exception: pass
         expect(f"{page}: the Vastaus button opens the answer in its place", pg.evaluate("(id) => document.getElementById(id).open", tg.get_attribute("aria-controls")) and tg.get_attribute("aria-expanded") == "true")
         tg.click()
         expect(f"{page}: nothing of the editor loads before the first click", not any("/vendor/digabi/" in u for u in reqs),
@@ -158,6 +170,15 @@ with sync_playwright() as pw:
             return b && b.textContent && r && (b.compareDocumentPosition(r) & 4); })""")
         expect(f"{page}: one '{T('js.pad_write')}' per task ({n}), in its card before the model answer", n > 0 and ok and pg.locator(".pad-open").count() == n)
         card = pg.locator("section.practice-task[id] > .task-card").first
+        rv = card.locator(":scope > details.reveal")
+        rv.locator(":scope > summary").scroll_into_view_if_needed(); rv.locator(":scope > summary").click()
+        expect(f"{page}: the model answer and rubric stay locked, in view, until the tick (teacher 2026-11-03)", rv.is_visible() and not rv.evaluate("(d) => d.open")
+               and T("js.locked_done") in rv.locator(":scope > summary").inner_text())
+        card.locator(":scope > label.solved input").check(); rv.locator(":scope > summary").click()
+        expect(f"{page}: the tick alone opens them", rv.evaluate("(d) => d.open")); rv.evaluate("(d) => { d.open = false; }")
+        tp = ctx.new_page(); tp.goto(BASE + page + "?ratkaisut=1"); tp.wait_for_load_state("load")
+        expect(f"{page}: ?ratkaisut=1 opens every lock for the teacher", tp.locator("[data-locked]").count() == 0 and tp.locator(".teacher-note").count() == 1)
+        tp.close(); pg.bring_to_front()
         card.locator(".pad-open").scroll_into_view_if_needed(); card.locator(".pad-open").click()
         card.locator(".rich-text-editor").wait_for(timeout=20000)
         pg.keyboard.type("a) "); pg.keyboard.press("Control+e"); pg.keyboard.type("P=UI"); pg.keyboard.press("Escape"); pg.wait_for_timeout(300)

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-7-L1-01",
+      "level": 1,
+      "text": "Helium–neonlaserin punaisen valon aallonpituus on $633\\,\\text{nm}$. Laske yhden laserfotonin energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 1.96,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-02",
+      "level": 1,
+      "text": "Valokuituyhteyksissä käytetään laserdiodeja, joiden valon aallonpituus on $1550\\,\\text{nm}$. Laske yhden fotonin energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 0.8,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-03",
+      "level": 1,
+      "text": "Rubiinilaserin lasersiirtymän tasojen energiaero on $1{,}79\\,\\text{eV}$. Laske laservalon aallonpituus nanometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 693,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-04",
+      "level": 1,
+      "text": "Pulssilaserin yhden valopulssin energia on $3{,}0\\,\\text{mJ}$, ja valon aallonpituus on $1064\\,\\text{nm}$. Kuinka monta fotonia pulssissa on ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$)?",
+      "answer": 1.6e+16,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L1-05",
+      "level": 1,
+      "text": "Laser lähettää $4{,}0 \\cdot 10^{15}$ fotonia sekunnissa, ja jokaisen fotonin energia on $2{,}33\\,\\text{eV}$. Laske laserin teho milliwatteina ($1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 1.5,
+      "unit": "mW",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-7-L2-01",
+      "level": 2,
+      "text": "Neodyymilaseria pumpataan laserdiodilla, jonka valon aallonpituus on $808\\,\\text{nm}$, ja laser lähettää valoa aallonpituudella $1064\\,\\text{nm}$. Jokainen pumppausfotoni tuottaa enintään yhden laserfotonin. Kuinka monta prosenttia pumppausfotonin energiasta voi enintään päätyä laserfotonin energiaksi?",
+      "answer": 75.9,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L2-02",
+      "level": 2,
+      "text": "Punaisen laserosoittimen aallonpituus on $650\\,\\text{nm}$ ja violetin $405\\,\\text{nm}$. Molempien teho on $5{,}0\\,\\text{mW}$. Kuinka monta kertaa enemmän fotoneja punainen laserosoitin lähettää sekunnissa kuin violetti?",
+      "answer": 1.6,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L2-03",
+      "level": 2,
+      "text": "Kvanttipiste, jonka halkaisija on $6{,}0\\,\\text{nm}$, lähettää valoa aallonpituudella $620\\,\\text{nm}$. Samasta aineesta tehdyn pienemmän kvanttipisteen fotonien energia on $0{,}35\\,\\text{eV}$ suurempi. Laske pienemmän pisteen valon aallonpituus nanometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 528,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L2-04",
+      "level": 2,
+      "text": "Pulssilaserin yhdessä pulssissa on $2{,}7 \\cdot 10^{17}$ fotonia, joiden aallonpituus on $1064\\,\\text{nm}$. Pulssin kesto on $10\\,\\text{ns}$. Laske pulssin keskimääräinen teho megawatteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).",
+      "answer": 5.0,
+      "unit": "MW",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-7-L3-01",
+      "level": 3,
+      "text": "Rubiinilaserin sauvassa on $1{,}0 \\cdot 10^{19}$ kromi-ionia, ja lasersiirtymä päättyy perustilaan. Pumppauslampun vihreän valon aallonpituus on $550\\,\\text{nm}$, ja jokainen absorboitunut pumppausfotoni nostaa yhden ionin ylemmälle lasertasolle. Arvioi, kuinka paljon pumppausvalon energiaa ionien on vähintään absorboitava, jotta populaatioinversio syntyy. Oleta, että ionit eivät ehdi purkautua pumppauksen aikana. Anna vastaus jouleina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).",
+      "answer": 1.8,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L3-02",
+      "level": 3,
+      "text": "Vihreässä laserosoittimessa infrapunalaserdiodin valo ($808\\,\\text{nm}$, teho $1{,}0\\,\\text{W}$) pumppaa kidettä, joka lähettää laservaloa aallonpituudella $1064\\,\\text{nm}$. Toinen kide yhdistää aina kaksi $1064\\,\\text{nm}$:n fotonia yhdeksi $532\\,\\text{nm}$:n fotoniksi. Kuinka monta vihreää fotonia laserosoitin voi enintään lähettää sekunnissa, kun jokainen pumppausfotoni tuottaa enintään yhden $1064\\,\\text{nm}$:n fotonin ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$)?",
+      "answer": 2.03e+18,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-7-L3-03",
+      "level": 3,
+      "text": "Suprajohtavan kubitin kahden tilan energiaero vastaa fotonia, jonka taajuus on $5{,}0\\,\\text{GHz}$. Kuinka monta kertaa suurempi on punaisen valon ($650\\,\\text{nm}$) fotonin energia kuin kubitin tilojen energiaero ($c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$)?",
+      "answer": 92200.0,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}

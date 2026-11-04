@@ -1,0 +1,45 @@
+{
+  "id": "fy8-7",
+  "course": "FY8",
+  "title": "Laser ja kvanttirakenteet",
+  "goals": [
+    "LOPS FY8: kvantittumiseen perustuva teknologia: laser ja kvanttirakenteet",
+    "Täsmennys: laserin toiminta (stimuloitu emissio, populaatioinversio); kvanttirakenteet nanomittakaavan rakenteina sovellusten, kuten aurinkokennojen ja kvanttitietokoneiden, kautta; tunneloituminen valinnaisena"
+  ],
+  "prerequisites": [
+    "fy8-6"
+  ],
+  "glossary": [
+    "laser",
+    "stimuloitu emissio",
+    "populaatioinversio",
+    "kvanttipiste",
+    "kvanttirakenne",
+    "tunneloituminen"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "stimuloitu emissio",
+      "explain": "Saapuva fotoni saa viritetyn atomin lähettämään toisen, täysin samanlaisen fotonin. Fotoneilla on sama energia, suunta ja vaihe."
+    },
+    {
+      "term": "populaatioinversio",
+      "explain": "Tila, jossa ylemmällä energiatasolla on enemmän atomeja kuin alemmalla. Vain silloin valo vahvistuu aineessa."
+    },
+    {
+      "term": "laser",
+      "explain": "Laite, joka vahvistaa valoa stimuloidulla emissiolla. Sen valo on yksiväristä, suuntautunutta ja koherenttia eli aallot ovat samassa tahdissa."
+    },
+    {
+      "term": "kvanttipiste",
+      "explain": "Muutaman nanometrin kokoinen kide, johon elektronit on suljettu. Pisteen koko määrää energiaraon ja siten valon värin."
+    },
+    {
+      "term": "tunneloituminen",
+      "explain": "Elektroni voi löytyä ohuen esteen takaa, vaikka sen energia ei riitä esteen yli."
+    }
+  ]
+}
