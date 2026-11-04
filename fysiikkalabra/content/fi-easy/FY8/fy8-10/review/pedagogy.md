@@ -1,17 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 810dd35a0e74e412
+VERDICT: PASS
+CONTENT-HASH: 9510c201cb318bc5
 
 ## Blocking
-- meta.json key_concepts[3] (atomimassayksikkö) — explain contains a number ("hiili-12-atomin"); the fi-easy rule allows no numbers — write "Määritelmän mukaan yksi yksikkö on kahdestoistaosa yleisimmän hiiliatomin massasta." (concepts 4, words ≤25 and no `$` are otherwise fine).
 
 ## Polish
-- lesson.md Massavaje: "Laskussa käytetään vetyatomeja erillisten protonien sijaan, jotta elektronien massat kumoutuvat eli niitä ei tarvita laskea erikseen: molemmilla puolilla on kaksi elektronia." is 28 words; split after "kumoutuvat".
-- lesson.md Reaktioenergia: the beeta miinus sentence ("Beeta miinus -hajoamisessa syntyvän elektronin massaa ei lisätä erikseen, koska tytäratomin atomimassaan sisältyy jo yksi elektroni enemmän") is heavy for selkeä suomi and the lesson does not need it; cut or split.
-- exercises L3-01 solution uses "E = −Q"; say in words "energia on Q:n vastaluku".
-- inquiry: koe-1 starts while the graph still shows the helium-4 point; add "paina ensin Tyhjennä kuvaaja".
+- inquiry.json koe-1: the sim still shows the helium-4 point when the experiment opens (lab-1280); add "Paina ensin Tyhjennä kuvaaja."
+- lesson.md Massavaje: the sentence "Laskussa käytetään vetyatomeja ... molemmilla puolilla on kaksi elektronia" is 28 words; split after "kumoutuvat".
+- lesson.md Reaktioenergia: the beeta miinus sentence is heavy for selkeä suomi; split or shorten.
+- exercises L3-01 solution: explain "E = −Q" in words ("energia on Q:n vastaluku").
 
 ## Checked
-- Hash 810dd35a0e74e412 at start and end (own hash).
-- Selkeä suomi: short sentences, terms explained once (nukleoni, ekvivalentti, tytärydin), glossary terms used; case forms after units correct (7,570 MeV:stä).
-- Structure matches the Finnish design; option feedback repairs misconceptions.
-- Captures opened: contact-1, fig-4, fig-10, lab-1280-1, open-tarkista-1280-1.
+- The earlier Blocking (number in key_concepts[3]) is fixed: "Se on sovittu tietyn hiiliatomin massan avulla." has no digits or $, 12 words.
+- Path: hook, prediction, sim experiments, theory, staged 7-step example, error item, transfer, exercises (5/4/3), checks, exit ticket; one lesson's workload.
+- Feedback repairs each misconception; exit ticket tests per-nucleon binding and the hydrogen-atom trick.
+- Captures opened: contact-1, sim-390, example-390-1, lab-1280-1, open-exit-1280, open-exercises-1280-3, open-exercises-L2-1280-1. Hash unchanged at end.
