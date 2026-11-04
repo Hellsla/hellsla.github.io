@@ -1,21 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 9069a8122f6961ad
+VERDICT: PASS
+CONTENT-HASH: 4d9d5477327a2bc7
+
+Round: 2
 
 ## Blocking
-- solutions.md rivi 177 (fy8-6-L2-07, Vastaus) — "puolet intensiteetistä tulee fotoneista, joiden energia on välillä $1{,}91\,\text{eV}$–$2{,}03\,\text{eV}$" on väärin: taulukon intensiteettien summasta (4,22) väliin 610–650 nm osuu 3,64 eli noin 86 %. Korjaus: "kohdissa 610 nm ja 650 nm intensiteetti on puolet maksimista, ja näiden välillä olevat fotonit (energiat $1{,}91\,\text{eV}$–$2{,}03\,\text{eV}$) muodostavat spektrin pääosan".
+(none)
 
 ## Polish
-- exercises.json L1-08 — vastausyksikkö "$10^{16}\,\tfrac{1}{\text{s}}$" on kömpelö; pyydä "Anna vastaus muodossa $x \cdot 10^{16}\,\tfrac{1}{\text{s}}$" tai pyydä virta ampeereina ja elektronit kappaleina.
-- solutions.md L2-06 Järkevyys — Eeron $h$ poikkeaa silti $-4{,}5\,\%$; lisää yksi lause, että suoran jatkeen ero on juuri luvun mainitsema noin $0{,}1\,\text{V}$, jotta oppilas ei pidä Eeron lukutapaa virheellisenä.
-- exercises.json L3-04 — neljä kohtaa ja kaksi eri h-määritystä on raskas; harkitse kohdan c) toisen virkkeen (yhden LEDin $h$ ennen/jälkeen korjauksen) siirtoa kohtaan d).
-- exercises.json L2-05 — kohdassa b) "sovita ... suora" ei kerro, mitkä pisteet; kohta a) on tarkoituksella tämä, mutta lisää vihje "(noin kuusi pistettä)" tarvittaessa.
+- exercises.json fy8-6-L2-05 b) — "sovita ... suora" ei kerro pisteitä; kohta a) pyytää päättelemään ne, mikä on tarkoituksellista. Vihje "(noin viisi pistettä)" olisi mahdollinen mutta ei välttämätön.
+- exercises.json fy8-6-L3-04 — neljä kohtaa ja kaksi eri h-määritystä on edelleen raskas; ratkaisu on nyt jaettu kappaleisiin, mikä auttaa.
 
 ## Checked
-- Määrät 8/7/5, tasot ja kinds sopivat suunnitelmaan (P1): L1 käsite + 2 laskua, L2 IU-aineisto, lukutapavirhe, spektri, L3 nollapistevirhe ja kalibrointi.
-- L2-05: sovitus 1,9–2,3 V antaa k = 61,5 mA/V, $U_\text{k}$ = 1,857 V; vertailu 1,908 V oikein.
-- L2-06: h = 5,86, 6,33, 6,87 ·10⁻³⁴ Js; Sallan poikkeama 3,65 % oikein.
-- L2-07: ΔE = 0,125 eV, leveys 40 nm oikein (vain edellä mainittu lause väärin).
-- L3-04: k = 4,208·10⁻¹⁵ Vs, h = 6,74·10⁻³⁴ Js (1,7 %), leikkauskohdat −0,062/−0,112 V oikein.
-- L3-05: f = 6,169·10¹⁴ Hz, 486 nm, 504 nm, ±9,5 nm oikein.
-- Johdannot: L1-07 (3 kappaletta), L2-05..L3-05 jaettu 2–3 kappaleeseen; kohdat omina kappaleinaan.
-- Ratkaisuissa kaikki vaiheet; L3-05 1280 px -kaappaus ilman leikkautumista.
+- Round 1:n Blocking (L2-07 vastaus väitti puolet intensiteetistä välillä 1,91–2,03 eV) on korjattu: puolimaksimikohdat ovat nyt 620 ja 640 nm, ja ratkaisu sanoo, että fotonit välillä 1,94–2,00 eV muodostavat spektrin pääosan (taulukosta noin 87 %).
+- L2-07: λp = 630 nm, leveys 20 nm, ΔE = 2,0000 − 1,9375 = 0,0625 eV; answer 0.0625 vastaa ratkaisua; taulukko on symmetrinen ja täsmää.
+- L2-05: pisteiden keskipiste (2,10 V; 14,92 mA) ja k = 61,5 mA/V antavat Uk = 1,857 V; vastaus 1,86 V täsmää; Järkevyys-kohdan viittaus korjattu.
+- L2-06: h = 5,86 / 6,33 / 6,87 · 10^-34 Js, Sallan poikkeama 3,65 %; Eeron lukutapaa ei enää esitetä virheellisenä (round 1 Polish toteutettu).
+- L1-08: vastausmuoto "x · 10^16 1/s", answer 6,24 täsmää; L1-06 vaihtoehdot sekoitettu ja vastaus lyhennetty.
+- L3-04: ratkaisu jaettu kappaleisiin, luvut ennallaan (k = 4,208 · 10^-15 Vs, h = 6,74 · 10^-34 Js).
+- Määrät 8/7/5, tasot ja kinds sopivat suunnitelmaan; ei kaksoiskappaleita.

@@ -1,19 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 9069a8122f6961ad
+VERDICT: PASS
+CONTENT-HASH: 4d9d5477327a2bc7
+Round: 2
 
 ## Blocking
-- [Major] solutions.md fy8-6-L2-05 Järkevyys, last sentence — "Tulos on pienempi kuin jännite, jolla virta on jo $0{,}6\,\text{mA}$ ($1{,}80\,\text{V}$), joten jatke ei osu kaarevaan alkuosaan" is false: $1{,}86\,\text{V} > 1{,}80\,\text{V}$ — a wrong comparison in a model solution teaches the wrong check — rewrite, e.g. "Tulos $1{,}86\,\text{V}$ on suurempi kuin jännite $1{,}80\,\text{V}$, jolla virta on vasta $0{,}6\,\text{mA}$: suoran jatke leikkaa jänniteakselin kaarevan alkuosan jälkeen." (or delete the sentence).
+(none) Round 1 Blocking resolved: L2-05 Järkevyys now reads "Tulos 1,86 V on suurempi kuin jännite 1,80 V, jolla virta on vasta 0,6 mA …" (correct), and the solution uses the centre point (2,10 V; 14,92 mA), which gives 1,857 V.
 
 ## Polish
-- [Minor] solutions.md L2-07 Vastaus — "puolet intensiteetistä tulee fotoneista, joiden energia on välillä …" is not what the half-maximum width means (half of the peak height, not half of the photons) — for science: say "intensiteetti on vähintään puolet maksimista välillä …".
-- [Minor] solutions.md L3-04 Vastaus — one 140-word paragraph mixes the answer, the zero-point argument and the single-LED comparison — split into answer / what changed / why the slope.
-- [Minor] solutions.md L2-06 — the b) explanation sits in Järkevyys, not in Vastaus; one sentence "Ainon lukema on liian pieni, Sallan liian suuri, koska …" in Vastaus would match the task wording.
+- [Minor] solutions.md L3-04 Vastaus — now split into answer / slope reasoning / single-LED paragraphs; good (round 1 Polish resolved). The first sentence of the slope paragraph could name "kohta b)" for symmetry with L2-06.
+- [Minor] solutions.md L2-07 Vastaus — "ja nämä fotonit muodostavat spektrin pääosan" is not shown by the data (only the half-maximum range is); for science: drop it or say "ja huipun energia 1,97 eV on tällä välillä".
+- [Minor] solutions.md L2-06 — b) is now in Vastaus; Järkevyys also repeats the 0,1 V argument, slightly long but clear.
 
 ## Checked
-- Opened at 1280 px: open-exercises-1280-9 (L1-08 end), open-exercises-L2-1280-7 (L2-05 solution), -9 (L2-06 solution), -11 (L2-07 solution), open-exercises-L3-1280-6 (L3-04 solution).
-- Read all new tasks and solutions in source (L1-06..08, L2-05..07, L3-04..05). Recomputed: 539 nm, 6,24·10^16 1/s, 1,857 V, 3,65 %, 0,125 eV, 6,74·10^-34 J s, 486 nm; all match answers.
-- Tables render with decimal comma, KaTeX chains aligned, units upright, case endings correct, answer box units fine.
-- No 360 px capture of the exercises exists; the 360 px layout check is clean per packet.
+- Round 1 Polish carried: L2-07 half-maximum wording fixed ("vähintään puolet maksimista"), L3-04 split, L2-06 b) in Vastaus.
+- Opened at 1280 px: open-exercises-L2-1280-10 (L2-06 end, L2-07 task and data table, comma in decimals), -11 (L2-07 solution), open-exercises-L3-1280-6 (L3-04 solution).
+- Recomputed changed tasks: L2-07 new table gives FWHM 620–640 nm, ΔE = 2,0000 − 1,9375 = 0,0625 eV (answer 0,0625, tolerance 0,03 fine), L2-05 1,857 V, L3-04 6,74·10^-34 J s (1,7 %), 6,497 and 6,329 values; all match answers.
+- MC reorder in L1 (LED photon option) and answer wording "x · 10^16" for 6,24 checked in source.
+- No 360 px exercise capture exists; layout check at 360 px is clean per packet.
 
 ## Scores
 illustrations n/a (5) · typography 4 · Finnish 4 · accessibility 4
