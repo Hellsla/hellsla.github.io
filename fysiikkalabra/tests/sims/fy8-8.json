@@ -1,0 +1,272 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.k===0 && S.Z===92 && S.N===146 && S.A===238 && S.mode===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: U-238, Z 92, N 146, decays by alpha (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='0' && R[0].max==='14' && R[0].step==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: chain step k 0–14"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===1 && L[0]==='0.5,1,2' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one select: speed hidas/normaali/nopea"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const b=document.querySelector('#sim-root .controls button'); return b && b===document.querySelector('#sim-root .controls').firstElementChild ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the main button comes first in the controls"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).join(',')==='k' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares k"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?980:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x980 (stacked, larger labels) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /uraani/.test(t) && /alfahajoaminen/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout names the nuclide and its decay mode"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=0; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===0 && S.Z===92 && S.A===238 && S.N===146 && S.mode===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 0: Z 92, A 238, N 146, mode 1 (NNDC; lesson-answers koe-N-0)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=1; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===1 && S.Z===90 && S.A===234 && S.N===144 && S.mode===2 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 1: Z 90, A 234, N 144, mode 2 (NNDC; lesson-answers koe-N-1)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": -2004,
+  "tol": 0,
+  "note": "step 1: change from the parent dZ -2, dA -4 (alpha)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=2; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===2 && S.Z===91 && S.A===234 && S.N===143 && S.mode===2 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 2: Z 91, A 234, N 143, mode 2 (NNDC; lesson-answers koe-N-2)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": 1000,
+  "tol": 0,
+  "note": "step 2: change from the parent dZ 1, dA 0 (beta-minus)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=3; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===3 && S.Z===92 && S.A===234 && S.N===142 && S.mode===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 3: Z 92, A 234, N 142, mode 1 (NNDC; lesson-answers koe-N-3)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": 1000,
+  "tol": 0,
+  "note": "step 3: change from the parent dZ 1, dA 0 (beta-minus)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=4; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===4 && S.Z===90 && S.A===230 && S.N===140 && S.mode===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 4: Z 90, A 230, N 140, mode 1 (NNDC; lesson-answers koe-N-4)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": -2004,
+  "tol": 0,
+  "note": "step 4: change from the parent dZ -2, dA -4 (alpha)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=5; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===5 && S.Z===88 && S.A===226 && S.N===138 && S.mode===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 5: Z 88, A 226, N 138, mode 1 (NNDC; lesson-answers koe-N-5)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": -2004,
+  "tol": 0,
+  "note": "step 5: change from the parent dZ -2, dA -4 (alpha)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=6; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===6 && S.Z===86 && S.A===222 && S.N===136 && S.mode===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 6: Z 86, A 222, N 136, mode 1 (NNDC; lesson-answers koe-N-6)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": -2004,
+  "tol": 0,
+  "note": "step 6: change from the parent dZ -2, dA -4 (alpha)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=7; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===7 && S.Z===84 && S.A===218 && S.N===134 && S.mode===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 7: Z 84, A 218, N 134, mode 1 (NNDC; lesson-answers koe-N-7)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": -2004,
+  "tol": 0,
+  "note": "step 7: change from the parent dZ -2, dA -4 (alpha)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=8; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===8 && S.Z===82 && S.A===214 && S.N===132 && S.mode===2 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 8: Z 82, A 214, N 132, mode 2 (NNDC; lesson-answers koe-N-8)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": -2004,
+  "tol": 0,
+  "note": "step 8: change from the parent dZ -2, dA -4 (alpha)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=9; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===9 && S.Z===83 && S.A===214 && S.N===131 && S.mode===2 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 9: Z 83, A 214, N 131, mode 2 (NNDC; lesson-answers koe-N-9)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": 1000,
+  "tol": 0,
+  "note": "step 9: change from the parent dZ 1, dA 0 (beta-minus)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=10; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===10 && S.Z===84 && S.A===214 && S.N===130 && S.mode===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 10: Z 84, A 214, N 130, mode 1 (NNDC; lesson-answers koe-N-10)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": 1000,
+  "tol": 0,
+  "note": "step 10: change from the parent dZ 1, dA 0 (beta-minus)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=11; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===11 && S.Z===82 && S.A===210 && S.N===128 && S.mode===2 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 11: Z 82, A 210, N 128, mode 2 (NNDC; lesson-answers koe-N-11)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": -2004,
+  "tol": 0,
+  "note": "step 11: change from the parent dZ -2, dA -4 (alpha)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=12; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===12 && S.Z===83 && S.A===210 && S.N===127 && S.mode===2 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 12: Z 83, A 210, N 127, mode 2 (NNDC; lesson-answers koe-N-12)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": 1000,
+  "tol": 0,
+  "note": "step 12: change from the parent dZ 1, dA 0 (beta-minus)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=13; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===13 && S.Z===84 && S.A===210 && S.N===126 && S.mode===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 13: Z 84, A 210, N 126, mode 1 (NNDC; lesson-answers koe-N-13)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": 1000,
+  "tol": 0,
+  "note": "step 13: change from the parent dZ 1, dA 0 (beta-minus)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=14; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const S=window.simState; return S.k===14 && S.Z===82 && S.A===206 && S.N===124 && S.mode===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "step 14: Z 82, A 206, N 124, mode 0 (NNDC; lesson-answers koe-N-14)"
+ },
+ {
+  "expr": "window.simState.dZ*1000+window.simState.dA",
+  "expected": -2004,
+  "tol": 0,
+  "note": "step 14: change from the parent dZ -2, dA -4 (alpha)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=3; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const b=document.querySelector('#sim-root .controls button'); b.click(); const S=window.simAdapter.get(); return S.k===4 && S.anim>=0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Hajoa moves one step on (U-234 -> Th-230) and starts the animation"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /Edellinen/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "after a decay the readout shows the previous decay's equation"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=14; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { const b=document.querySelector('#sim-root .controls button'); return b.disabled && window.simState.mode===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Pb-206 is stable: the main button is disabled"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=document.querySelector('#sim-root input[type=range]'); R.value=5; R.dispatchEvent(new Event('input',{bubbles:true})); R.dispatchEvent(new Event('change',{bubbles:true})); const S=document.querySelector('#sim-root select'); S.value='2'; S.dispatchEvent(new Event('change',{bubbles:true}));",
+  "expr": "(() => { document.querySelector('#sim-root .controls button').click(); const S=window.simAdapter.get(); return document.querySelector('#sim-root select').value==='2' && S.Z===86 && S.A===222 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the speed select changes only the pace: Ra-226 -> Rn-222 as at normal speed"
+ }
+]

@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 20abf7078202ba75
+CONTENT-HASH: 08eb0b0931781a80
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] for science: the caption says the photon hits the dome's inner surface and frees an electron; the photo shows the whole tube, so the photocathode is not visible (fine as stated).
+(none)
 
 ## Checked
-batch delta review: rendered the new figure.unit-photo at 390 px and 1280 px from the built page (own captures, plus fig-row-1280 to confirm the existing figures survived); photo loads, no horizontal overflow, caption and credit line legible, alt text matches the image, LaTeX in captions renders ($6{,}3\,\text{V}$, $656\,\text{nm}$, $n = 3$) with units upright; no clipping.
+- lesson fi: theory-1280-2: hc derivation now four aligned rows (=, ≈, = in one column), no overflow, units upright; surrounding text intact. Split resolves the 390 px width.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

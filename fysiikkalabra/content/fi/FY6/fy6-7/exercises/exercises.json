@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-7-L1-01",
+      "level": 1,
+      "text": "Kannettavan tietokoneen teho on $45\\,\\text{W}$. Tietokonetta käytetään $4{,}0\\,\\text{h}$. Kuinka paljon sähköenergiaa se käyttää? Vastaa kilowattitunteina.",
+      "answer": 0.18,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-02",
+      "level": 1,
+      "text": "Vedenkeitin käyttää yhdellä keittokerralla $0{,}15\\,\\text{kWh}$ sähköenergiaa. Kuinka suuri energia on megajouleina?",
+      "answer": 0.54,
+      "unit": "MJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-03",
+      "level": 1,
+      "text": "Silitysraudan nimellisteho on $1200\\,\\text{W}$, ja se kytketään $230\\,\\text{V}$:n pistorasiaan. Kuinka suuren virran silitysrauta ottaa?",
+      "answer": 5.217391,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-04",
+      "level": 1,
+      "text": "Kodin sähköenergian kulutus oli kuukaudessa $350\\,\\text{kWh}$. Energia ja siirto maksavat yhteensä $15{,}0\\,\\text{snt/kWh}$. Kuinka paljon kulutettu energia maksaa? Perusmaksuja ei oteta huomioon.",
+      "answer": 52.5,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L1-05",
+      "level": 1,
+      "text": "Eteisen LED-lampun teho on $6{,}0\\,\\text{W}$, ja se palaa joka päivä $5{,}0\\,\\text{h}$. Kuinka paljon sähköenergiaa lamppu käyttää vuodessa ($365$ vuorokautta)? Vastaa kilowattitunteina.",
+      "answer": 10.95,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-7-L2-01",
+      "level": 2,
+      "text": "Kuvaajassa on pesukoneen teho yhden pesuohjelman aikana. Kuinka paljon sähköenergiaa pesukone käyttää ohjelman aikana? Lue tarvittavat arvot kuvaajasta ja vastaa kilowattitunteina.",
+      "figure": "fy6-7/washer",
+      "answer": 0.8,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L2-02",
+      "level": 2,
+      "text": "Vedenkeitin on kytketty $230\\,\\text{V}$:n verkkoon, ja sen läpi kulkee virta $8{,}7\\,\\text{A}$. Vesi kiehuu $4{,}0\\,\\text{min}$:ssa. Kuinka paljon sähköenergiaa keitin käyttää? Vastaa kilojouleina.",
+      "answer": 480.24,
+      "unit": "kJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L2-03",
+      "level": 2,
+      "text": "Olohuoneen televisio, digiboksi ja pelikonsoli ovat valmiustilassa koko vuoden, ja niiden yhteinen teho valmiustilassa on $4{,}5\\,\\text{W}$. Sähkö maksaa siirtoineen $17\\,\\text{snt/kWh}$. Kuinka paljon valmiustila maksaa vuodessa ($365$ vuorokautta)? Vastaa euroina.",
+      "answer": 6.7014,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L2-04",
+      "level": 2,
+      "text": "Työpöydän $60\\,\\text{W}$:n hehkulamppu vaihdetaan yhtä kirkkaaseen LED-lamppuun, jonka teho on $8{,}0\\,\\text{W}$. Lamppu palaa $4{,}0\\,\\text{h}$ vuorokaudessa. Kuinka paljon sähköenergiaa vaihto säästää vuodessa ($365$ vuorokautta)? Vastaa kilowattitunteina.",
+      "answer": 75.92,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-7-L3-01",
+      "level": 3,
+      "text": "Vedenkeitin, jonka teho on $2200\\,\\text{W}$, on päällä $3{,}0\\,\\text{min}$. Kuinka kauan $15\\,\\text{W}$:n lamppu voisi palaa samalla energialla? Vastaa tunteina.",
+      "answer": 7.333333,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L3-02",
+      "level": 3,
+      "text": "Kuukauden sähkölaskun summa on $64{,}20\\,\\text{€}$. Siihen sisältyvät energian ja siirron perusmaksut, yhteensä $8{,}50\\,\\text{€}$. Energia ja siirto maksavat yhteensä $15{,}0\\,\\text{snt/kWh}$. Kuinka paljon sähköenergiaa kotona käytettiin kuukauden aikana?",
+      "answer": 371.333333,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-7-L3-03",
+      "level": 3,
+      "text": "Lämminvesivaraajan lämmitysvastuksen resistanssi on $26{,}5\\,\\Omega$, ja se on kytketty $230\\,\\text{V}$:n jännitteeseen. Varaaja lämmittää vettä yöllä $2{,}50\\,\\text{h}$. Oletetaan, että vastuksen resistanssi pysyy vakiona. Kuinka paljon sähköenergiaa varaaja käyttää yön aikana? Vastaa kilowattitunteina.",
+      "answer": 4.990566,
+      "unit": "kWh",
+      "tolerance": 0.02
+    }
+  ]
+}

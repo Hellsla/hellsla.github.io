@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-8-L1-01",
+      "level": 1,
+      "text": "The nucleus of uranium-235, the fuel of a nuclear power plant, is ${}^{235}_{92}\\text{U}$. How many neutrons are there in the nucleus?",
+      "answer": 143,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-02",
+      "level": 1,
+      "text": "Radon-222 ${}^{222}_{86}\\text{Rn}$ in indoor air decays by alpha decay. What is the mass number of the daughter nucleus that is formed?",
+      "answer": 218,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-03",
+      "level": 1,
+      "text": "Carbon-14 ${}^{14}_{6}\\text{C}$ decays by beta minus decay. What is the atomic number of the daughter nucleus that is formed?",
+      "answer": 7,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-04",
+      "level": 1,
+      "text": "The americium-241 of a smoke detector emits gamma photons with an energy of $59.54\\,\\text{keV}$ (NNDC NuDat 3). Calculate the wavelength of the photon in picometres ($1\\,\\text{pm} = 10^{-12}\\,\\text{m}$) ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 20.8,
+      "unit": "pm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L1-05",
+      "level": 1,
+      "text": "Fluorine-18 ${}^{18}_{9}\\text{F}$, used in PET imaging, decays by beta plus decay. How many neutrons are there in the daughter nucleus?",
+      "answer": 10,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-8-L2-01",
+      "level": 2,
+      "text": "Two excited states of the nickel-60 nucleus are $2505.8\\,\\text{keV}$ and $1332.5\\,\\text{keV}$ above the ground state. The nucleus moves from the upper level to the lower one and emits a gamma photon. Calculate the wavelength of the photon in picometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 1.06,
+      "unit": "pm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L2-02",
+      "level": 2,
+      "text": "Bismuth-214 ${}^{214}_{83}\\text{Bi}$ of the uranium series decays by beta minus decay, and the nucleus that is formed immediately decays by alpha decay. What is the atomic number of the nucleus formed after these two decays?",
+      "answer": 82,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L2-03",
+      "level": 2,
+      "text": "The energy of the gamma photon created in the decay of caesium-137 is $661.7\\,\\text{keV}$. The wavelength of green light is $550\\,\\text{nm}$. How many times greater is the energy of the gamma photon than the energy of a photon of green light ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$)?",
+      "answer": 293000,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L2-04",
+      "level": 2,
+      "text": "Thorium-232 ${}^{232}_{90}\\text{Th}$ decays by alpha decay, and the nucleus that is formed decays twice in a row by beta minus decay. How many neutrons are there in the nucleus formed after these three decays?",
+      "answer": 138,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-8-L3-01",
+      "level": 3,
+      "text": "Thorium-232 ${}^{232}_{90}\\text{Th}$ decays in nature as a series that ends in stable lead-208, ${}^{208}_{82}\\text{Pb}$. The series has only alpha and beta minus decays. How many beta minus decays are there in the series?",
+      "answer": 4,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L3-02",
+      "level": 3,
+      "text": "The energy levels of an imaginary nucleus are $0$ (ground state), $0.40\\,\\text{MeV}$ and $1.00\\,\\text{MeV}$. The nucleus is at first on the top level, and it can return to the ground state directly or through the intermediate level. What is the shortest wavelength that can appear in the gamma spectrum of the nucleus? Give the answer in picometres ($1\\,\\text{MeV} = 10^{6}\\,\\text{eV}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 1.24,
+      "unit": "pm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-8-L3-03",
+      "level": 3,
+      "text": "An unknown nucleus X decays first by beta minus decay and the nucleus that is formed then by alpha decay. The end result is radon-222 ${}^{222}_{86}\\text{Rn}$. What is the atomic number of the nucleus X?",
+      "answer": 87,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}

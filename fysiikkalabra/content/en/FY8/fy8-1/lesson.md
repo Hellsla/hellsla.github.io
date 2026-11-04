@@ -181,7 +181,8 @@ where $\lambda$ is the wavelength of the radiation in a vacuum ($\text{m}$). The
 \begin{aligned}
 hc &= 1.986 \cdot 10^{-25}\,\text{J}\,\text{m} \\
 &= \tfrac{1.986 \cdot 10^{-25}}{1.602 \cdot 10^{-19}}\,\text{eV}\,\text{m} \\
-&\approx 1.240 \cdot 10^{-6}\,\text{eV}\,\text{m} = 1240\,\text{eV}\,\text{nm}
+&\approx 1.240 \cdot 10^{-6}\,\text{eV}\,\text{m} \\
+&= 1240\,\text{eV}\,\text{nm}
 \end{aligned}
 ```
 With it you get a quick estimate: the energy of a $500\,\text{nm}$ photon is about $1240\,\text{eV}\,\text{nm} : 500\,\text{nm} \approx 2.5\,\text{eV}$.

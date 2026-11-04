@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2ee6b1b7fd7ddc1c
+CONTENT-HASH: c7f17da67b461a87
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-batch delta review: opened the 390 px theory captures (stage-selita, whole sequence) and the 1280 theory captures around each new unit-photo; photo is sharp, caption and its $...$ maths render, credit line present, alt text informative, no clipping or horizontal overflow, surrounding figures and formulas intact.
+- lesson en: theory-1280-2: hc derivation now four aligned rows (=, ≈, = in one column), no overflow, units upright; surrounding text intact. Split resolves the 390 px width.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

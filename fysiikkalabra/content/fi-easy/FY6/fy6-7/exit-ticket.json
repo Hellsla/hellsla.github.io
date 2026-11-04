@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kuinka monta megajoulea on $2{,}0\\,\\text{kWh}$?",
+    "a": "$1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3{,}6\\,\\text{MJ}$. Siksi energia on $2{,}0 \\cdot 3{,}6\\,\\text{MJ} = 7{,}2\\,\\text{MJ}$."
+  },
+  {
+    "q": "Lamppu palaa yhteensä $100\\,\\text{h}$. Lampun teho on $10\\,\\text{W}$. Kuinka paljon sähköenergiaa lamppu käyttää kilowattitunteina?",
+    "a": "$E = Pt = 0{,}010\\,\\text{kW} \\cdot 100\\,\\text{h} = 1{,}0\\,\\text{kWh}$."
+  }
+]

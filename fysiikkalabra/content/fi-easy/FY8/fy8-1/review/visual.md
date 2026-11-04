@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dbab2e585577a336
+CONTENT-HASH: 0f6af944a640a38a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-1-theory-1280-2: the museum-vitrine photo has reflections and a label strip, so the dome reads weakly as a photomultiplier tube. The caption carries the meaning. For science: the caption says the photon hits the dome's inner surface; the science reviewer may check that wording.
+(none)
 
 ## Checked
-batch delta review: opened fy8-1-theory-1280 captures holding the new unit-photo (floats right, 20 rem wide, no clipping or overflow, figure beside it intact, credit line present, alt text and caption natural Finnish, any quantity in the caption set as LaTeX with its unit) plus the surrounding figures and formulas.
+- lesson fi-easy: theory-1280-2: hc derivation now four aligned rows (=, ≈, = in one column), no overflow, units upright; surrounding text intact. Split resolves the 390 px width.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -1,0 +1,22 @@
+{
+  "id": "fy6-8",
+  "course": "FY6",
+  "title": "Electromotive force and internal resistance",
+  "goals": [
+    "LOPS FY6: accumulators and the charging circuit of an accumulator",
+    "Experimental: determining the internal resistance of a battery",
+    "Clarification: terminal voltage, short-circuit current, batteries in series and in parallel"
+  ],
+  "prerequisites": [
+    "fy6-5"
+  ],
+  "glossary": [
+    "lähdejännite",
+    "napajännite",
+    "sisäinen resistanssi",
+    "oikosulku"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

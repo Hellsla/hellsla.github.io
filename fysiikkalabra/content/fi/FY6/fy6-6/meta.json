@@ -1,0 +1,20 @@
+{
+  "id": "fy6-6",
+  "course": "FY6",
+  "title": "Sähköteho ja vastuksen lämpeneminen",
+  "goals": [
+    "LOPS FY6: sähköteho ja Joulen laki",
+    "Täsmennys: tehon jakautuminen virtapiirin komponenteille"
+  ],
+  "prerequisites": [
+    "fy6-3"
+  ],
+  "glossary": [
+    "sähköteho",
+    "Joulen laki",
+    "sähköenergia"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

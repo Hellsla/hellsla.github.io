@@ -181,7 +181,8 @@ missä $\lambda$ on säteilyn aallonpituus tyhjiössä ($\text{m}$). Mitä lyhye
 \begin{aligned}
 hc &= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m} \\
 &= \tfrac{1{,}986 \cdot 10^{-25}}{1{,}602 \cdot 10^{-19}}\,\text{eV}\,\text{m} \\
-&\approx 1{,}240 \cdot 10^{-6}\,\text{eV}\,\text{m} = 1240\,\text{eV}\,\text{nm}
+&\approx 1{,}240 \cdot 10^{-6}\,\text{eV}\,\text{m} \\
+&= 1240\,\text{eV}\,\text{nm}
 \end{aligned}
 ```
 Sen avulla saa nopean arvion: $500\,\text{nm}$:n fotonin energia on noin $1240\,\text{eV}\,\text{nm} : 500\,\text{nm} \approx 2{,}5\,\text{eV}$.
