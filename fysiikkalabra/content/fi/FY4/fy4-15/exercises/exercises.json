@@ -214,7 +214,7 @@
     {
       "id": "fy4-15-L2-07",
       "level": 2,
-      "text": "Oppilas laski tuulivoimalan sähkötehon ja sai oudon pienen tuloksen. Hänen ratkaisunsa on tässä.\n\n\"Roottorin halkaisija on $60\\,\\text{m}$, tuulen nopeus $7{,}0\\,\\text{m/s}$, ilman tiheys $1{,}25\\,\\text{kg/m}^3$ ja hyötysuhde $0{,}40$. Pinta-ala on $A = \\pi r^2 = 2827\\,\\text{m}^2$ ja teho $P = \\tfrac{1}{2}\\eta\\rho A v = 0{,}5 \\cdot 0{,}40 \\cdot 1{,}25 \\cdot 2827 \\cdot 7{,}0 = 4948\\,\\text{W} \\approx 4{,}9\\,\\text{kW}$.\"\n\nSelitä, mikä oppilaan kaavassa on virhe, ja laske voimalan oikea sähköteho. Vastauskenttään tulee oikea teho kilowatteina.",
+      "text": "Oppilas laski tuulivoimalan sähkötehon ja sai oudon pienen tuloksen. Hänen ratkaisunsa on tässä.\n\n”Roottorin halkaisija on $60\\,\\text{m}$, tuulen nopeus $7{,}0\\,\\text{m/s}$, ilman tiheys $1{,}25\\,\\text{kg/m}^3$ ja hyötysuhde $0{,}40$. Pinta-ala on $A = \\pi r^2 = 2827\\,\\text{m}^2$ ja teho $P = \\tfrac{1}{2}\\eta\\rho A v = 0{,}5 \\cdot 0{,}40 \\cdot 1{,}25 \\cdot 2827 \\cdot 7{,}0 = 4948\\,\\text{W} \\approx 4{,}9\\,\\text{kW}$.”\n\nSelitä, mikä oppilaan kaavassa on virhe, ja laske voimalan oikea sähköteho. Vastauskenttään tulee oikea teho kilowatteina.",
       "kind": [
         "error"
       ],
@@ -297,7 +297,7 @@
     {
       "id": "fy4-15-L3-05",
       "level": 3,
-      "text": "Tuulivoimapuiston sähköntuotanto ylittää yöllä kulutuksen. Taulukko on esimerkkiaineisto puiston ylijäämätehosta kuuden peräkkäisen tunnin ajalta; teho on kunkin tunnin keskiarvo.\n\nYlijäämäsähkö käytetään pumppaamaan vettä alaaltaasta yläaltaaseen, joka on $85{,}0\\,\\text{m}$ korkeammalla. Pumppujen hyötysuhde on $0{,}800$ eli $80{,}0\\,\\%$ sähköenergiasta muuttuu veden potentiaalienergiaksi. Oletetaan, että koko vesimäärä nostetaan korkeuseron $85{,}0\\,\\text{m}$ verran. Yläaltaan tilavuus on $1{,}20\\cdot 10^{6}\\,\\text{m}^3$.\n\na) Kuinka suuri tilavuus vettä saadaan pumpattua yläaltaaseen kuuden tunnin aikana?\n\nb) Mahtuuko vesi yläaltaaseen?\n\nc) Kuinka monta tuntia varastoitu potentiaalienergia riittäisi $40{,}0\\,\\text{MW}$:n kulutukselle, kun turbiinin ja generaattorin häviöt jätetään tässä huomiotta? Perustele, miksi pumppuvoimala sopii hyvin tuulivoiman rinnalle.\n\nVastauskenttään tulee kohdan a) tulos.",
+      "text": "Tuulivoimapuiston sähköntuotanto ylittää yöllä kulutuksen. Taulukko on esimerkkiaineisto puiston ylijäämätehosta kuuden peräkkäisen tunnin ajalta; teho on kunkin tunnin keskiarvo.\n\nYlijäämäsähkö käytetään pumppaamaan vettä ala-altaasta yläaltaaseen, joka on $85{,}0\\,\\text{m}$ korkeammalla. Pumppujen hyötysuhde on $0{,}800$ eli $80{,}0\\,\\%$ sähköenergiasta muuttuu veden potentiaalienergiaksi. Oletetaan, että koko vesimäärä nostetaan korkeuseron $85{,}0\\,\\text{m}$ verran. Yläaltaan tilavuus on $1{,}20\\cdot 10^{6}\\,\\text{m}^3$.\n\na) Kuinka suuri tilavuus vettä saadaan pumpattua yläaltaaseen kuuden tunnin aikana?\n\nb) Mahtuuko vesi yläaltaaseen?\n\nc) Kuinka monta tuntia varastoitu potentiaalienergia riittäisi $40{,}0\\,\\text{MW}$:n kulutukselle, kun turbiinin ja generaattorin häviöt jätetään tässä huomiotta? Perustele, miksi pumppuvoimala sopii hyvin tuulivoiman rinnalle.\n\nVastauskenttään tulee kohdan a) tulos.",
       "kind": [
         "data",
         "model",

@@ -177,7 +177,7 @@ $$\begin{aligned}E &= 26{,}12\,\text{MW} \cdot 720\,\text{h} \\ &= 18\,804\,\tex
 **Sijoitus:** Oikea teho on
 $$\begin{aligned}P &= 0{,}5 \cdot 0{,}40 \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m}^3} \\ &\quad \cdot 2827\,\text{m}^2 \cdot \left(7{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3 \\ &= 242\,452\,\text{W}\end{aligned}$$
 **Vastaus:** $240\,\text{kW}$ eli $2{,}4 \cdot 10^{2}\,\text{kW}$, kaksi merkitsevää numeroa kuten tuulen nopeudessa $7{,}0\,\text{m/s}$ ja hyötysuhteessa $0{,}40$.
-**Mallivastaus virheestä:** Oppilaan kaavassa tuulen nopeus on ensimmäisessä potenssissa, vaikka sen pitää olla kolmannessa potenssissa. Virheen huomaa yksiköistä: $\tfrac{\text{kg}}{\text{m}^3} \cdot \text{m}^2 \cdot \tfrac{\text{m}}{\text{s}}$ on $\tfrac{\text{kg}}{\text{m} \cdot \text{s}}$, ei watti. Oikea teho on $7{,}0^2 = 49$ kertaa oppilaan tulos.
+**Mallivastaus virheestä:** Oppilaan kaavassa tuulen nopeus on ensimmäisessä potenssissa, vaikka sen pitää olla kolmannessa potenssissa. Virheen huomaa yksiköistä: $\tfrac{\text{kg}}{\text{m}^3} \cdot \text{m}^2 \cdot \tfrac{\text{m}}{\text{s}}$ on $\tfrac{\text{kg}}{\text{s}}$, ei watti $\tfrac{\text{kg} \cdot \text{m}^2}{\text{s}^3}$: tulosta puuttuu tekijä $v^2$ eli yksikkö $\tfrac{\text{m}^2}{\text{s}^2}$. Oikea teho on $7{,}0^2 = 49$ kertaa oppilaan tulos.
 **Järkevyys:** Oppilaan tulos $4948\,\text{W}$ kerrottuna luvulla $49$ on $242\,452\,\text{W}$, sama kuin oikea tulos. Tuulen teho on $240 : 0{,}40 = 600\,\text{kW}$, ja sähköksi muuttuu sen $40\,\%$, kuten pitääkin.
 
 ## fy4-15-L3-04
