@@ -1,16 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: d7a934506223dde6
+VERDICT: PASS
+CONTENT-HASH: 13c7836cee33b3d3
+
+Full review of the English lesson.
 
 ## Blocking
-- [Major] fig-7 (earthing), right panel, $I_\text{fault}$ label (x=526 to 518) — the nudge moved the label's left edge onto the violet current arrow (arrow shaft at x=522, label starts at 518). In the 390 px capture, cropped and enlarged, the arrow shaft runs through the letter I, so the label reads as a slash plus the subscript, not as the symbol. The previous PASS rested on the label being clear of the arrow, which is no longer true — a label that cannot be read as its symbol defeats the figure's point (the fault current flows along the earth wire) — fix: set the foreignObject x to at least 530 (the old 526 was clear; to gain room use a smaller width, not a leftward shift), or put the label left of the arrow; then regenerate the captures.
+(none)
 
 ## Polish
-- [Minor] fig-7 left panel — the violet arrow I still crosses the leg and arm (unchanged, optional).
+- [Minor] fig 7 (earthing), left panel — the violet current arrow $I$ runs over the leg and arm; draw it beside the body.
+- [Minor] fig 7 and fig 11 — the residual current is labelled $I_\text{E}$ ("E" for earth), which the text never introduces; add "(the residual current $I_\text{E}$)" in the RCD paragraph or the figure description.
 
 ## Checked
-- fig-7 at 390 px, opened whole and cropped at 6x (all three languages compared): defect above, same in all three languages.
-- fig-11 at 390 px opened; the nudge touches only fig-7, rest of the layout intact.
-- fig-11 (RCD) at 390: $I_\Delta$ label and $I_\text{L} - I_\text{N} = I_\Delta$ clear and upright, nothing clipped; fig-9 ("extra-low voltage") and fig-15 ("danger of fibrillation") labels fit without clipping.
+- fig-3, 5, 7, 9, 11, 13, 15 at 390: all labels translated, legible, nothing clipped; $I_\text{E}$ clear of the arrow shaft in both figures; decimal points in the table and prose.
+- Source read in full: natural technical English, one voice ("you" only in the safety advice), glossary terms consistent (fuse, circuit cable, residual current device, protection class); units, decimals and thin spaces are LaTeX.
+- Layout seen in the contact sheets only for the inquiry stages and exercises.
 
 ## Scores
-illustrations 3 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish (English) 5 · accessibility 4

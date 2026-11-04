@@ -1,16 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 887a6cc4500f24cc
+VERDICT: PASS
+CONTENT-HASH: 5cea23de751f01c3
+
+Full review of the Selkeä suomi lesson.
 
 ## Blocking
-- [Major] fig-7 (maadoitus), right panel, $I_\text{vika}$ label (x=526 to 518) — the nudge moved the label's left edge onto the violet current arrow (arrow shaft at x=522, label starts at 518). In the 390 px capture, cropped and enlarged, the arrow shaft runs through the letter I, so the label reads as a slash plus the subscript, not as the symbol. The previous PASS rested on the label being clear of the arrow, which is no longer true — a label that cannot be read as its symbol defeats the figure's point (the fault current flows along the earth wire) — fix: set the foreignObject x to at least 530 (the old 526 was clear; to gain room use a smaller width, not a leftward shift), or put the label left of the arrow; then regenerate the captures.
+(none)
 
 ## Polish
-- [Minor] fig-7 left panel — the violet arrow I still crosses the leg and arm (unchanged, optional).
+- [Minor] fig 7 (maadoitus), left panel — the violet current arrow $I$ runs over the leg and arm (same as fi).
+- [Minor] Tiivistelmä — "Ihmistä se suojaa vain yhdessä suojamaadoituksen kanssa" appears in the summary of the misconception but the Tiivistelmä list does not mention the RCD's role in plain words beyond one line; acceptable for S2 readers.
 
 ## Checked
-- fig-7 at 390 px, opened whole and cropped at 6x (all three languages compared): defect above, same in all three languages.
-- fig-11 at 390 px opened; the nudge touches only fig-7, rest of the layout intact.
-- fig-11 (vikavirtasuoja) at 390 and fig-9 and fig-15: unchanged, layout intact.
+- fig-7, 11, 15 at 390 and theory-1280-3: $I_\text{v}$ clear of the arrow; the scale and table agree; the figure sits beside the right paragraph.
+- Source read in full: short sentences, each hard term explained where it first appears (nimellisvirta, oikosulku, eriste, vikavirta, maasulku, potentiaali, maallikko, kammiovärinä); physics unchanged from fi; no fragmented or childish phrasing; all quantities LaTeX.
 
 ## Scores
-illustrations 3 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

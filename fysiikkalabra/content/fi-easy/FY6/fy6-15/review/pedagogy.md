@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 887a6cc4500f24cc
+CONTENT-HASH: 5cea23de751f01c3
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md maadoitus figure — the label $I_\text{vika}$ is small at 390 px; if the layout allows, enlarge it slightly.
+- Same structural point as fi: ennuste-1/-2 are settled by the theory text.
 
-## Checked (delta: I_vika label moved 8 units left, nothing else)
-- The label stays beside its arrow in the figure, same as in the Finnish version; no pedagogic effect.
-- Text, key concepts and figure description are unchanged, so the plain-Finnish review (short sentences, terms explained at first use, nothing dropped) stands.
-- No new term or wording enters the lesson, so fi-easy stays plain Finnish.
+## Checked
+- Earthing figure: the fault-current label is now I_v, the same symbol as in the RCD figure, placed clear of the arrow; the alt text says I v in both figures, so a reader who cannot see the figure gets the same symbol. No pedagogic change; one symbol per quantity across the two figures is an improvement.
+- Spot-checked fi-easy: short sentences, each new term defined at first use (nimellisvirta, eriste, oikosulku, vikavirta); content and numbers equal the fi version, safety caveats (never judge by colour, shoes are no protection, no larger fuse) retained.
+- Alt text and equation label match the Finnish figure (I v).
