@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 4115ac08db1894f7
+CONTENT-HASH: e3892115020441e6
 Mode: full (translation review against the reviewed Finnish set)
-Round 1
+Round: 2. Re-review: the only change since the PASS is the boxed value moved to the start of the first answer-step line (answers_shown).
 
 ## Blocking
 (none)
@@ -10,7 +10,7 @@ Round 1
 (none needed: the text already matched fi in every number and was correct)
 
 ## Polish
-(none)
+- solutions.md:186 (fy6-8-L3-04 b) — "For the answer box:" now repeats the label already on line 185. Optional: start b) with "About $35\,\%$ …".
 
 ## Checked
 - All 20 tasks incl. the 8 new ones (L1-06..08, L2-05..07, L3-04..05) compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choice order, data table cells and every number and $...$ identical.
@@ -18,3 +18,4 @@ Round 1
 - Physics wording correct: terminal voltage equals E only at I = 0; short circuit I_k = E : R_s with terminal voltage zero; voltmeter draws negligible current; wire resistance R_j adds to the slope (L3-05, answer 7.6 A); extrapolation caveat kept.
 - Distractor feedback names the right error and matches the fi reasoning (L1-06, L1-07, L2-07).
 - check_i18n.py en: 0 errors.
+- L3-04 answer step now starts "In the answer box: $35\,\%$." It equals the key 35 % (tol 0.05), the Substitution share 0.355, b) and the fi set; same unit, LaTeX; the line reads well.

@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f8c4b9b2d678fe6e
-ROUND: 2
-
+CONTENT-HASH: b5d23bcdac8390ad
+ROUND: 3
 ## Blocking
 (none) Round 1 had none; the changed tasks introduce none.
 
@@ -13,6 +12,7 @@ ROUND: 2
 ## Checked
 - Round 1 Polish: "A A" collisions replaced by "paristo A / B" (fixed), L2-07 and L3-05 quotations now ”…” and the question in its own paragraph (fixed), L3-04 and L3-05 Sijoitus split into blocks (fixed, L3-1280-7, -9), L2-06 table rows changed to 0,30 / 0,50 / 0,70 A (recomputed: A 1,45 / 1,35 / 1,25 V, B 1,42 / 1,38 / 1,34 V, crossing 0,39 A between the rows; L2-1280-7).
 - 1280 px captures open-exercises-L2-1280-7, -9 (L2-06, L2-07), L3-1280-7, -9 (L3-04, L3-05) read at full size; exercises.json diff (MC options reordered, L3-05 now "paristoryhmä" of four AA cells, E 6,11 V and R_s 0,80 Ω plausible) and solutions.md read. No 390/360 px capture of exercise cards exists; packet layout checks are clean.
+- Delta (boxed value at the start of the Vastaus/Answer line): the added value is correct (matches solution and exercises.json within tolerance, unit and decimal sign right, LaTeX number+unit) and the line is short and reads well; no layout change beyond one short sentence.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
