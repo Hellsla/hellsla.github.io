@@ -1,3 +1,6 @@
 date	reviewer	from	to	base	categories
 2026-10-31	science	d3de65f34d0ce0ea	46ed37a9fa71c898	79c4326f064c	force-diagram-copy
 2026-10-31	pedagogy	d3de65f34d0ce0ea	46ed37a9fa71c898	79c4326f064c	force-diagram-copy
+2026-11-04	visual	46ed37a9fa71c898	0786e2c74ac893cd	232f76a6dd99	paragraphs
+2026-11-04	science	d3de65f34d0ce0ea	0786e2c74ac893cd	79c4326f064c	force-diagram-copy,paragraphs
+2026-11-04	pedagogy	d3de65f34d0ce0ea	0786e2c74ac893cd	79c4326f064c	force-diagram-copy,paragraphs

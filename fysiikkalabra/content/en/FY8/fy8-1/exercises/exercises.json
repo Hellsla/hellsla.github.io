@@ -87,7 +87,7 @@
     {
       "id": "fy8-1-L3-02",
       "level": 3,
-      "text": "A sodium surface with a work function of $2.28\\,\\text{eV}$ is illuminated with very dim blue light of intensity $1.0 \\cdot 10^{-6}\\,\\text{W/m}^2$. In the experiment electrons start to be released immediately. Investigate what the wave model would predict: assume that one electron collects all the energy that hits an area of $1.0 \\cdot 10^{-20}\\,\\text{m}^2$ at its location (roughly the cross-sectional area of one atom) and that no energy is lost anywhere. $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. How long would the electron have to collect energy before it has received an amount equal to the work function? Give the answer in days.",
+      "text": "A sodium surface with a work function of $2.28\\,\\text{eV}$ is illuminated with very dim blue light of intensity $1.0 \\cdot 10^{-6}\\,\\text{W/m}^2$. In the experiment electrons start to be released immediately.\n\nInvestigate what the wave model would predict: assume that one electron collects all the energy that hits an area of $1.0 \\cdot 10^{-20}\\,\\text{m}^2$ at its location (roughly the cross-sectional area of one atom) and that no energy is lost anywhere. $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\nHow long would the electron have to collect energy before it has received an amount equal to the work function? Give the answer in days.",
       "answer": 420,
       "unit": "days",
       "tolerance": 0.02

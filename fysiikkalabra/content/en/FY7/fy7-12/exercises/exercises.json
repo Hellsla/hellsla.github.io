@@ -87,7 +87,7 @@
     {
       "id": "fy7-12-L3-02",
       "level": 3,
-      "text": "The refractive index of the core of an optical fibre is $1.480$ and that of the cladding $1.460$. A short light pulse is sent into the fibre. Some of the light travels along the axis of the fibre, and some travels in a zigzag so that it meets the boundary between the core and the cladding exactly at the critical angle. How much later does the zigzagging light arrive at the end of a straight fibre $1.00\\,\\text{km}$ long than the light along the axis? The speed of light in a vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give the answer in nanoseconds.",
+      "text": "The refractive index of the core of an optical fibre is $1.480$ and that of the cladding $1.460$.\n\nA short light pulse is sent into the fibre. Some of the light travels along the axis of the fibre, and some travels in a zigzag so that it meets the boundary between the core and the cladding exactly at the critical angle.\n\nHow much later does the zigzagging light arrive at the end of a straight fibre $1.00\\,\\text{km}$ long than the light along the axis? The speed of light in a vacuum is $3.00 \\cdot 10^8\\,\\text{m/s}$. Give the answer in nanoseconds.",
       "answer": 67.5799,
       "unit": "ns",
       "tolerance": 0.02

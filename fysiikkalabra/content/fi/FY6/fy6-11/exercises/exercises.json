@@ -80,7 +80,7 @@
     {
       "id": "fy6-11-L3-01",
       "level": 3,
-      "text": "Negatiivinen öljypisara leijuu paikallaan kahden vaakasuoran levyn välissä, kun levyjen välinen jännite on $450\\,\\text{V}$ ja positiivinen levy on ylempänä. Pisaran varaus on kolme alkeisvarausta. Pisara saa yhden ylimääräisen elektronin lisää, jolloin sen varaus on neljä alkeisvarausta, mutta sen massa ei muutu. Kuinka suuri jännite tarvitaan, jotta pisara leijuu taas paikallaan?",
+      "text": "Negatiivinen öljypisara leijuu paikallaan kahden vaakasuoran levyn välissä, kun levyjen välinen jännite on $450\\,\\text{V}$ ja positiivinen levy on ylempänä. Pisaran varaus on kolme alkeisvarausta.\n\nPisara saa yhden ylimääräisen elektronin lisää, jolloin sen varaus on neljä alkeisvarausta, mutta sen massa ei muutu.\n\nKuinka suuri jännite tarvitaan, jotta pisara leijuu taas paikallaan?",
       "answer": 337.5,
       "unit": "V",
       "tolerance": 0.02
@@ -88,7 +88,7 @@
     {
       "id": "fy6-11-L3-02",
       "level": 3,
-      "text": "Elektroni lähtee levosta negatiivisen levyn luota ja kiihtyy homogeenisessa kentässä positiiviselle levylle. Levyt ovat tyhjiössä. Levyjen välinen jännite on $50\\,\\text{V}$, ja levyjen etäisyys on $1{,}0\\,\\text{cm}$. Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja varauksen suuruus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Kuinka suuri on elektronin nopeus, kun se saapuu positiiviselle levylle? Vastaa kilometreinä sekunnissa.",
+      "text": "Elektroni lähtee levosta negatiivisen levyn luota ja kiihtyy homogeenisessa kentässä positiiviselle levylle. Levyt ovat tyhjiössä.\n\nLevyjen välinen jännite on $50\\,\\text{V}$, ja levyjen etäisyys on $1{,}0\\,\\text{cm}$. Elektronin massa on $9{,}109 \\cdot 10^{-31}\\,\\text{kg}$ ja varauksen suuruus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nKuinka suuri on elektronin nopeus, kun se saapuu positiiviselle levylle? Vastaa kilometreinä sekunnissa.",
       "answer": 4193.685952,
       "unit": "km/s",
       "tolerance": 0.02

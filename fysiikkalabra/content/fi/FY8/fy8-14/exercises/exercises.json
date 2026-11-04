@@ -79,7 +79,7 @@
     {
       "id": "fy8-14-L3-01",
       "level": 3,
-      "text": "Kasvain saa sädehoidossa $30$ hoitokertaa, kullakin kerralla $2{,}0\\,\\text{Gy}$. Kullakin kerralla säteily annetaan viidestä eri suunnasta, ja jokainen keila antaa kasvaimeen yhtä suuren osan annoksesta. Keilan tulokohdassa, ennen kasvainta, terve kudos saa keilasta $1{,}3$-kertaisen annoksen siihen verrattuna, mitä sama keila antaa kasvaimeen. Kuinka suuren kokonaisannoksen terve kudos yhden keilan tulokohdassa saa koko hoidon aikana? Oletetaan, että muut keilat eivät kulje tämän kohdan kautta. Anna vastaus grayna.",
+      "text": "Kasvain saa sädehoidossa $30$ hoitokertaa, kullakin kerralla $2{,}0\\,\\text{Gy}$. Kullakin kerralla säteily annetaan viidestä eri suunnasta, ja jokainen keila antaa kasvaimeen yhtä suuren osan annoksesta.\n\nKeilan tulokohdassa, ennen kasvainta, terve kudos saa keilasta $1{,}3$-kertaisen annoksen siihen verrattuna, mitä sama keila antaa kasvaimeen.\n\nKuinka suuren kokonaisannoksen terve kudos yhden keilan tulokohdassa saa koko hoidon aikana? Oletetaan, että muut keilat eivät kulje tämän kohdan kautta. Anna vastaus grayna.",
       "answer": 16,
       "unit": "Gy",
       "tolerance": 0.03
@@ -87,7 +87,7 @@
     {
       "id": "fy8-14-L3-02",
       "level": 3,
-      "text": "Mammografiassa röntgenputken jännite on noin $30\\,\\text{kV}$, ja fotonien keskimääräinen energia on noin $20\\,\\text{keV}$. Oletetaan tässä fotonien energiaksi $30\\,\\text{keV}$. Tällä energialla pehmytkudoksen puoliintumispaksuus on $1{,}8\\,\\text{cm}$ ja luun tai kalkkeuman $0{,}27\\,\\text{cm}$. Kaksi yhtä pitkää sädettä kulkee kudoksen läpi: toinen pelkän pehmytkudoksen läpi, toisen matkalla $1{,}0\\,\\text{cm}$ pehmytkudosta on korvautunut samanpaksuisella kalkkeutuneella kudoksella, joka vaimentaa kuin luu. Kuinka monta kertaa suurempi intensiteetti osuu ilmaisimeen pelkän pehmytkudoksen läpi kulkeneen säteen kohdalla?",
+      "text": "Mammografiassa röntgenputken jännite on noin $30\\,\\text{kV}$, ja fotonien keskimääräinen energia on noin $20\\,\\text{keV}$. Oletetaan tässä fotonien energiaksi $30\\,\\text{keV}$. Tällä energialla pehmytkudoksen puoliintumispaksuus on $1{,}8\\,\\text{cm}$ ja luun tai kalkkeuman $0{,}27\\,\\text{cm}$.\n\nKaksi yhtä pitkää sädettä kulkee kudoksen läpi: toinen pelkän pehmytkudoksen läpi, toisen matkalla $1{,}0\\,\\text{cm}$ pehmytkudosta on korvautunut samanpaksuisella kalkkeutuneella kudoksella, joka vaimentaa kuin luu.\n\nKuinka monta kertaa suurempi intensiteetti osuu ilmaisimeen pelkän pehmytkudoksen läpi kulkeneen säteen kohdalla?",
       "answer": 8.9,
       "unit": "",
       "tolerance": 0.02

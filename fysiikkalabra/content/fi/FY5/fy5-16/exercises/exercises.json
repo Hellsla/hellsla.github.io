@@ -69,7 +69,7 @@
     {
       "id": "fy5-16-L2-04",
       "level": 2,
-      "text": "Tyhjässä luokassa taputetaan kerran käsiä. Puhelimen äänitasosovellus näyttää, että taso laskee taputuksen jälkeen $92\\,\\text{dB}$:stä $62\\,\\text{dB}$:iin ajassa $0{,}45\\,\\text{s}$. Oleta, että taso laskee tasaisesti. Jälkikaiunta-aika on aika, jossa taso laskee $60\\,\\text{dB}$, mutta sen voi päätellä, vaikka tasoa ei ehditä mitata $60\\,\\text{dB}$:n pudotukseen asti. Mikä on luokan jälkikaiunta-aika?",
+      "text": "Tyhjässä luokassa taputetaan kerran käsiä. Puhelimen äänitasosovellus näyttää, että taso laskee taputuksen jälkeen $92\\,\\text{dB}$:stä $62\\,\\text{dB}$:iin ajassa $0{,}45\\,\\text{s}$. Oleta, että taso laskee tasaisesti.\n\nJälkikaiunta-aika on aika, jossa taso laskee $60\\,\\text{dB}$, mutta sen voi päätellä, vaikka tasoa ei ehditä mitata $60\\,\\text{dB}$:n pudotukseen asti.\n\nMikä on luokan jälkikaiunta-aika?",
       "answer": 0.9,
       "unit": "s",
       "tolerance": 0.02

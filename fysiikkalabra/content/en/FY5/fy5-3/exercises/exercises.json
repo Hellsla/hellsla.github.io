@@ -79,7 +79,7 @@
     {
       "id": "fy5-3-L3-01",
       "level": 3,
-      "text": "Two runners run side by side in a bend of a track that is a semicircle. The path of the inner runner is a circular arc of radius $36.5\\,\\text{m}$, and the speed of the inner runner is $7.0\\,\\text{m/s}$. The arc of the outer runner has the radius $40.2\\,\\text{m}$, and the arcs are concentric. How great must the speed of the outer runner be for the runners to stay side by side throughout the bend?",
+      "text": "Two runners run side by side in a bend of a track that is a semicircle.\n\nThe path of the inner runner is a circular arc of radius $36.5\\,\\text{m}$, and the speed of the inner runner is $7.0\\,\\text{m/s}$. The arc of the outer runner has the radius $40.2\\,\\text{m}$, and the arcs are concentric.\n\nHow great must the speed of the outer runner be for the runners to stay side by side throughout the bend?",
       "answer": 7.7,
       "unit": "m/s",
       "tolerance": 0.02
@@ -95,7 +95,7 @@
     {
       "id": "fy5-3-L3-03",
       "level": 3,
-      "text": "The radius of the front sprocket of a bicycle is $10.0\\,\\text{cm}$ and the radius of the rear sprocket $4.0\\,\\text{cm}$. The chain moves at the same speed on the rim of both sprockets. The rear sprocket and the rear wheel turn together, and the radius of the rear wheel is $0.34\\,\\text{m}$. The cyclist pedals so that the front sprocket rotates at the rotation frequency $1.0\\,\\tfrac{1}{\\text{s}}$. What is the speed of the bicycle when the tyre does not slip against the ground? Give the answer in km/h.",
+      "text": "The radius of the front sprocket of a bicycle is $10.0\\,\\text{cm}$ and the radius of the rear sprocket $4.0\\,\\text{cm}$. The chain moves at the same speed on the rim of both sprockets. The rear sprocket and the rear wheel turn together, and the radius of the rear wheel is $0.34\\,\\text{m}$.\n\nThe cyclist pedals so that the front sprocket rotates at the rotation frequency $1.0\\,\\tfrac{1}{\\text{s}}$.\n\nWhat is the speed of the bicycle when the tyre does not slip against the ground? Give the answer in km/h.",
       "answer": 19,
       "unit": "km/h",
       "tolerance": 0.02

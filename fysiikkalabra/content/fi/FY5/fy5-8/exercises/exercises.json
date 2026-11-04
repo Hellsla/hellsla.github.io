@@ -89,7 +89,7 @@
     {
       "id": "fy5-8-L3-02",
       "level": 3,
-      "text": "Hyppivässä lelussa on pystysuora jousi, jonka jousivakio on $200\\,\\text{N/m}$. Lelu painetaan pöytää vasten niin, että jousi puristuu $3{,}0\\,\\text{cm}$, ja imukuppi pitää sen paikallaan. Kun imukuppi irtoaa, jousi ponnauttaa $50\\,\\text{g}$:n lelun suoraan ylös. Oletetaan, että koko jousen potentiaalienergia muuttuu lelun painovoiman potentiaalienergiaksi; ilmanvastus ja jousen massa jätetään huomiotta. Kuinka korkealle lelu nousee lähtökohdastaan?",
+      "text": "Hyppivässä lelussa on pystysuora jousi, jonka jousivakio on $200\\,\\text{N/m}$. Lelu painetaan pöytää vasten niin, että jousi puristuu $3{,}0\\,\\text{cm}$, ja imukuppi pitää sen paikallaan.\n\nKun imukuppi irtoaa, jousi ponnauttaa $50\\,\\text{g}$:n lelun suoraan ylös. Oletetaan, että koko jousen potentiaalienergia muuttuu lelun painovoiman potentiaalienergiaksi; ilmanvastus ja jousen massa jätetään huomiotta.\n\nKuinka korkealle lelu nousee lähtökohdastaan?",
       "answer": 0.18349,
       "unit": "m",
       "tolerance": 0.03
@@ -97,7 +97,7 @@
     {
       "id": "fy5-8-L3-03",
       "level": 3,
-      "text": "Kärry, jonka massa on $0{,}50\\,\\text{kg}$, on vaakasuoralla kitkattomalla radalla kahden jousen välissä. Vasemman jousen toinen pää on kiinni vasemmassa seinässä ja oikean jousen oikeassa seinässä, ja tasapainoasemassa kumpikin jousi on lepopituudessaan. Vasemman jousen jousivakio on $30\\,\\text{N/m}$ ja oikean $50\\,\\text{N/m}$. Kärry siirretään $4{,}0\\,\\text{cm}$ oikealle ja päästetään irti. Kuinka suuri on kärryyn vaikuttava kokonaisvoima heti irti päästämisen jälkeen?",
+      "text": "Kärry, jonka massa on $0{,}50\\,\\text{kg}$, on vaakasuoralla kitkattomalla radalla kahden jousen välissä.\n\nVasemman jousen toinen pää on kiinni vasemmassa seinässä ja oikean jousen oikeassa seinässä, ja tasapainoasemassa kumpikin jousi on lepopituudessaan. Vasemman jousen jousivakio on $30\\,\\text{N/m}$ ja oikean $50\\,\\text{N/m}$.\n\nKärry siirretään $4{,}0\\,\\text{cm}$ oikealle ja päästetään irti. Kuinka suuri on kärryyn vaikuttava kokonaisvoima heti irti päästämisen jälkeen?",
       "fbd": "equations",
       "answer": 3.2,
       "unit": "N",

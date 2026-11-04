@@ -75,7 +75,7 @@
     {
       "id": "fy4-6-L2-04",
       "level": 2,
-      "text": "A moving box of mass $10\\,\\text{kg}$ is placed at rest on a plank that is at an angle of $35^\\circ$ to the horizontal. The coefficient of static friction between the box and the plank is $0.60$. Calculate the greatest possible value of static friction and compare it with the component of the weight along the slope. By how many newtons does the component exceed the greatest static friction? (If the number were negative, the box would stay in place.)",
+      "text": "A moving box of mass $10\\,\\text{kg}$ is placed at rest on a plank that is at an angle of $35^\\circ$ to the horizontal. The coefficient of static friction between the box and the plank is $0.60$.\n\nCalculate the greatest possible value of static friction and compare it with the component of the weight along the slope. By how many newtons does the component exceed the greatest static friction? (If the number were negative, the box would stay in place.)",
       "answer": 8.1,
       "unit": "N",
       "tolerance": 0.04,

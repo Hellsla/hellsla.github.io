@@ -79,7 +79,7 @@
     {
       "id": "fy8-4-L3-01",
       "level": 3,
-      "text": "Laserjäähdytyksessä natriumatomia vastaan suunnataan laservaloa, jonka aallonpituus on $589\\,\\text{nm}$. Atomi imee fotonin kerrallaan, ja jokainen fotoni pienentää atomin liikemäärää fotonin liikemäärän verran. Natriumatomin massa on $3{,}82 \\cdot 10^{-26}\\,\\text{kg}$, ja sen nopeus on aluksi $3{,}00 \\cdot 10^{2}\\,\\text{m/s}$. Kuinka monta fotonia atomin on imettävä, jotta se pysähtyy? Oleta, että kaikki fotonit tulevat suoraan vastaan, ja jätä atomin uudelleen lähettämien fotonien vaikutus huomiotta, koska ne lähtevät satunnaisiin suuntiin. Anna vastaus yksikössä $10^{4}$.",
+      "text": "Laserjäähdytyksessä natriumatomia vastaan suunnataan laservaloa, jonka aallonpituus on $589\\,\\text{nm}$. Atomi imee fotonin kerrallaan, ja jokainen fotoni pienentää atomin liikemäärää fotonin liikemäärän verran.\n\nNatriumatomin massa on $3{,}82 \\cdot 10^{-26}\\,\\text{kg}$, ja sen nopeus on aluksi $3{,}00 \\cdot 10^{2}\\,\\text{m/s}$.\n\nKuinka monta fotonia atomin on imettävä, jotta se pysähtyy? Oleta, että kaikki fotonit tulevat suoraan vastaan, ja jätä atomin uudelleen lähettämien fotonien vaikutus huomiotta, koska ne lähtevät satunnaisiin suuntiin. Anna vastaus yksikössä $10^{4}$.",
       "answer": 1.02,
       "unit": "10⁴",
       "tolerance": 0.02

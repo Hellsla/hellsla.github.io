@@ -96,7 +96,7 @@
     {
       "id": "fy7-7-L3-03",
       "level": 3,
-      "text": "Suoravetoisessa tuulivoimalassa kestomagneettigeneraattori pyörii samaa tahtia kuin roottori. Generaattorin jännitteen tehollinen arvo on $690\\,\\text{V}$, kun roottori pyörii $15$ kierrosta minuutissa. Tuuli heikkenee, ja roottori pyörii enää $9{,}0$ kierrosta minuutissa. Generaattorin magneetit ja käämit ovat samat, eikä taajuusmuuttajaa oteta huomioon. Kuinka suuri on generaattorin jännitteen tehollinen arvo nyt?",
+      "text": "Suoravetoisessa tuulivoimalassa kestomagneettigeneraattori pyörii samaa tahtia kuin roottori. Generaattorin jännitteen tehollinen arvo on $690\\,\\text{V}$, kun roottori pyörii $15$ kierrosta minuutissa.\n\nTuuli heikkenee, ja roottori pyörii enää $9{,}0$ kierrosta minuutissa. Generaattorin magneetit ja käämit ovat samat, eikä taajuusmuuttajaa oteta huomioon.\n\nKuinka suuri on generaattorin jännitteen tehollinen arvo nyt?",
       "answer": 414.0,
       "unit": "V",
       "tolerance": 0.02

@@ -79,7 +79,7 @@
     {
       "id": "fy7-2-L3-01",
       "level": 3,
-      "text": "Radiohiililaboratorion massaspektrometrissä hiili-12- ja hiili-14-ionit, joilla on sama varaus, kiihdytetään levosta samalla jännitteellä ja ohjataan samaan magneettikenttään. Ionit kulkevat puoliympyrän ja osuvat ilmaisimeen, joka on raon vieressä. Hiili-12-ionien radan säde on $25{,}0\\,\\text{cm}$. Käytä massoina $12{,}0\\,\\text{u}$ ja $14{,}0\\,\\text{u}$. Kuinka kaukana toisistaan ovat hiili-12- ja hiili-14-ionien osumakohdat ilmaisimella? Anna vastaus senttimetreinä.",
+      "text": "Radiohiililaboratorion massaspektrometrissä hiili-12- ja hiili-14-ionit, joilla on sama varaus, kiihdytetään levosta samalla jännitteellä ja ohjataan samaan magneettikenttään. Ionit kulkevat puoliympyrän ja osuvat ilmaisimeen, joka on raon vieressä.\n\nHiili-12-ionien radan säde on $25{,}0\\,\\text{cm}$. Käytä massoina $12{,}0\\,\\text{u}$ ja $14{,}0\\,\\text{u}$.\n\nKuinka kaukana toisistaan ovat hiili-12- ja hiili-14-ionien osumakohdat ilmaisimella? Anna vastaus senttimetreinä.",
       "answer": 4.0,
       "unit": "cm",
       "tolerance": 0.02
@@ -87,7 +87,7 @@
     {
       "id": "fy7-2-L3-02",
       "level": 3,
-      "text": "Syklotronissa protonit kiertävät magneettikentässä yhä suurempaa rataa, koska niitä kiihdytetään kahden D-kirjaimen muotoisen elektrodin välissä jokaisella puolikierroksella. Kiihdytysjännitteen on vaihdettava suuntaa samassa tahdissa kuin protonit kiertävät. Protonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$ ja varaus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Osoita, että protonin kierrosaika ei riipu sen vauhdista, ja laske protonien kiertotaajuus, kun magneettivuon tiheys on $1{,}50\\,\\text{T}$. Anna vastaus megahertseinä.",
+      "text": "Syklotronissa protonit kiertävät magneettikentässä yhä suurempaa rataa, koska niitä kiihdytetään kahden D-kirjaimen muotoisen elektrodin välissä jokaisella puolikierroksella. Kiihdytysjännitteen on vaihdettava suuntaa samassa tahdissa kuin protonit kiertävät.\n\nProtonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$ ja varaus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\nOsoita, että protonin kierrosaika ei riipu sen vauhdista, ja laske protonien kiertotaajuus, kun magneettivuon tiheys on $1{,}50\\,\\text{T}$. Anna vastaus megahertseinä.",
       "answer": 22.9,
       "unit": "MHz",
       "tolerance": 0.02

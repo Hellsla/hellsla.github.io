@@ -79,7 +79,7 @@
     {
       "id": "fy6-2-L3-01",
       "level": 3,
-      "text": "Yleismittarin käyttöohjeessa kerrotaan, että alueella $200\\,\\text{mA}$ mittarin yli jää jännite $1{,}0\\,\\text{mV}$ jokaista mittarin läpi kulkevaa milliampeeria kohti. Mittari on sarjassa lampun ja vastuksen kanssa piirissä, jonka paristojen jännite on $4{,}5\\,\\text{V}$. Mittari näyttää $97{,}8\\,\\text{mA}$. Kuinka monta prosenttia pariston jännitteestä jää virtamittarin yli? Oletetaan, että paristo on ihanteellinen.",
+      "text": "Yleismittarin käyttöohjeessa kerrotaan, että alueella $200\\,\\text{mA}$ mittarin yli jää jännite $1{,}0\\,\\text{mV}$ jokaista mittarin läpi kulkevaa milliampeeria kohti.\n\nMittari on sarjassa lampun ja vastuksen kanssa piirissä, jonka paristojen jännite on $4{,}5\\,\\text{V}$. Mittari näyttää $97{,}8\\,\\text{mA}$.\n\nKuinka monta prosenttia pariston jännitteestä jää virtamittarin yli? Oletetaan, että paristo on ihanteellinen.",
       "answer": 2.17,
       "unit": "%",
       "tolerance": 0.03
@@ -87,7 +87,7 @@
     {
       "id": "fy6-2-L3-02",
       "level": 3,
-      "text": "Kaksi opiskelijaa mittaa saman virtalähteen jännitteen alueella $20\\,\\text{V}$ (resoluutio $0{,}01\\,\\text{V}$). Mittari A näyttää $5{,}02\\,\\text{V}$, ja sen virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Halvempi mittari B näyttää $5{,}14\\,\\text{V}$, ja sen virheraja on $\\pm(1{,}5\\,\\% + 3\\ \\text{numeroa})$. Lukemat eroavat $0{,}12\\,\\text{V}$. Kuinka suuri on mittarien virherajojen summa? Voiko lukemien eron perusteella sanoa, että toinen mittari on viallinen? Anna summa voltteina.",
+      "text": "Kaksi opiskelijaa mittaa saman virtalähteen jännitteen alueella $20\\,\\text{V}$ (resoluutio $0{,}01\\,\\text{V}$).\n\nMittari A näyttää $5{,}02\\,\\text{V}$, ja sen virheraja on $\\pm(0{,}5\\,\\% + 2\\ \\text{numeroa})$. Halvempi mittari B näyttää $5{,}14\\,\\text{V}$, ja sen virheraja on $\\pm(1{,}5\\,\\% + 3\\ \\text{numeroa})$. Lukemat eroavat $0{,}12\\,\\text{V}$.\n\nKuinka suuri on mittarien virherajojen summa? Voiko lukemien eron perusteella sanoa, että toinen mittari on viallinen? Anna summa voltteina.",
       "answer": 0.1522,
       "unit": "V",
       "tolerance": 0.03
@@ -95,7 +95,7 @@
     {
       "id": "fy6-2-L3-03",
       "level": 3,
-      "text": "Opiskelija haluaa mitata lampun läpi kulkevan virran. Hän kääntää yleismittarin valitsimen virta-alueelle $200\\,\\text{mA}$. Sitten hän painaa mittajohdot lampun kumpaankin napaan, samalla tavalla kuin jännitettä mitattaessa. Piirissä on vain paristo ja lamppu. Lamppu sammuu hetkeksi ja syttyy sitten uudelleen. Mittarin näyttö jää nollaan. Selitä, mitä piirissä tapahtui ja miksi lamppu sammui vain hetkeksi. Kerro myös, miten virta olisi pitänyt mitata.",
+      "text": "Opiskelija haluaa mitata lampun läpi kulkevan virran. Hän kääntää yleismittarin valitsimen virta-alueelle $200\\,\\text{mA}$. Sitten hän painaa mittajohdot lampun kumpaankin napaan, samalla tavalla kuin jännitettä mitattaessa. Piirissä on vain paristo ja lamppu.\n\nLamppu sammuu hetkeksi ja syttyy sitten uudelleen. Mittarin näyttö jää nollaan.\n\nSelitä, mitä piirissä tapahtui ja miksi lamppu sammui vain hetkeksi. Kerro myös, miten virta olisi pitänyt mitata.",
       "answer": "Virtamittari kytkettiin lampun rinnalle. Sen resistanssi on hyvin pieni, joten virta kulki lampun ohi mittarin kautta ja kasvoi suureksi. Lamppu sammui, kunnes mittarin sulake paloi. Palanut sulake katkaisi virran mittarin kautta, joten mittari jäi pois piiristä. Lamppu syttyi uudelleen, ja näyttö jäi nollaan. Virtamittari kytketään sarjaan: piiri avataan ja mittari asetetaan aukkoon.",
       "unit": "",
       "tolerance": 0.02
