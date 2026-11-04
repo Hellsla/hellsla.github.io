@@ -180,11 +180,12 @@ def app_page_body(T, lang, names, chapters):
     for c in modules(dl):
         m = module(c, dl)
         if m.get("kesken"): continue
-        static += f'<section class="kc-static-module"><h2>{c} · {esc(m["nimi"])}</h2>'
+        # each module a closed box (teacher 2026-11-04, UI fix 5): the list without JavaScript stays short on a phone
+        static += f'<details class="kc-static-module"><summary><h2>{c} · {esc(m["nimi"])}</h2></summary>'
         for a in m["aiheet"]:
             cs = [k for k in m["kortit"] if k["aihe"] == a["id"]]
             if cs: static += f'<h3>{esc(a["nimi"])}</h3><dl class="kc-dl">{"".join(static_card(k) for k in cs)}</dl>'
-        static += "</section>"
+        static += "</details>"
     return (f'<header class="kc-app-head"><h1>{T("cards.app_title")}</h1><p class="lead">{T("cards.app_lead")}</p></header>'
             f'<div class="kc-app" data-files=\'{esc(json.dumps(files))}\' hidden></div>'
             f'<div class="kc-static">{static}</div>'

@@ -348,6 +348,7 @@
     "ra_voice": "Voice",
     "ra_female": "Female",
     "ra_male": "Male",
+    "ra_better": "Better voice (downloads 145 MB once)",
     "ra_loading": "Loading the voice: {{p}} %. This happens only the first time.",
     "ra_fallback": "The voice could not be loaded, so the browser reads with the device's own voice.",
     "stage_done": "done",
