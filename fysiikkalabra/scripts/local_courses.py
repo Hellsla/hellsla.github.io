@@ -18,8 +18,8 @@ A course's fields (all texts in the language of the file):
   language                               optional: the language its units are written in (FY14: "en"); the course page
                                          of every language says so and links to the units in that language's folder
   chapters                               optional: [{title, question, units: [{id, title}]}], the course's chapters and
-                                         their units (scripts/units.py) in teaching order; a unit not yet published is
-                                         named as coming; a unit with "optional": true is marked ★ (optional extra material)
+                                         their units (scripts/units.py) in teaching order, shown as chapter cards (scripts/cardgrid.py);
+                                         a unit not yet published is named as coming; a unit with "optional": true is marked ★ (optional extra material)
   sessions                               optional: about how many lessons the course is taught in; the front page
                                          says "about N lessons" instead of counting the units (FY14: 16)
   overview                               optional: one paragraph after the chapters' lead (FY14: sessions, ★, Fotoni)
@@ -91,23 +91,28 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
            + (f'<p class="local-authors">{T("units.authors")}: {esc(", ".join(c["authors"][:-1]) + " " + T("units.and") + " " + c["authors"][-1] if len(c["authors"]) > 1 else c["authors"][0])}</p>' if c.get("authors") else "")
            + (f'<p class="notice local-language" role="note">{T("units.language_note_" + c["language"])}</p>' if c.get("language") and c["language"] != T.lang else "")
            + f'<p class="local-desc">{esc(c["description"])}</p>')
-    if c.get("chapters"):                # the course's chapters and their units (scripts/units.py), published ones as links
-        hrefs = {u: href for u, _, href in course_units}
+    if c.get("chapters"):                # the course's chapters and their units (scripts/units.py) as cards (scripts/cardgrid.py,
+        import cardgrid, units           # teacher 2026-11-04): a section per chapter with its question, a card per unit with
+        hrefs = {u: href for u, _, href in course_units}   # its opening illustration and question; a unit still coming is dashed
         lang_attr = f' lang="{c["language"]}"' if c.get("language") and c["language"] != T.lang else ""
         css = ROOT / "assets" / "units" / code.lower() / "units.css"
         if css.is_file(): out += f'<link rel="stylesheet" href="units/{code.lower()}/units.css">'
         out += (f'<h2 id="chapters">{T("units.chapters")}</h2><p class="section-lead">{T("units.chapters_lead")}</p>'
-                + (f'<p class="section-lead local-overview">{esc(c["overview"])}</p>' if c.get("overview") else "") + '<ol class="unit-chapters">')
+                + (f'<p class="section-lead local-overview">{esc(c["overview"])}</p>' if c.get("overview") else "") + '<div class="unit-cards">')
         for i, ch in enumerate(c["chapters"], 1):
             items = ""
             for j, u in enumerate(ch["units"], 1):
-                num = f'<span class="l-num">{i}.{j}</span>'
-                star = f' <span aria-hidden="true">★</span><span class="visually-hidden"> ({T("units.optional_mark")})</span>' if u.get("optional") else ""
-                if u["id"] in hrefs: items += f'<li class="live">{num}<a href="{hrefs[u["id"]]}"{lang_attr}>{esc(u["title"])}</a>{star}</li>'
-                else: items += f'<li class="soon">{num}<span{lang_attr}>{esc(u["title"])}</span>{star} <span class="tag">{T("site.lesson_coming")}</span></li>'
-            out += (f'<li class="unit-chapter"><h3><span class="l-num">{i}</span><span{lang_attr}>{esc(ch["title"])}</span></h3>'
-                    f'<p class="local-why"{lang_attr}>{esc(ch["question"])}</p><ol class="lessons">{items}</ol></li>')
-        out += "</ol>"
+                num = T("site.chapter_n", n=f"{i}.{j}"); title = f'<span{lang_attr}>{esc(u["title"])}</span>' if lang_attr else esc(u["title"])
+                star = (f'<span class="tag">★ {T("units.optional_mark")}</span>') if u.get("optional") else ""
+                if u["id"] in hrefs:
+                    src = units.folder(u["id"], c.get("language") or T.lang) / "unit.md"
+                    text = src.read_text() if src.is_file() else ""
+                    why = cardgrid.md_question(text)
+                    items += cardgrid.card(num, title, hrefs[u["id"]], f'<span{lang_attr}>{why}</span>' if lang_attr and why else why, cardgrid.hero(text), star)
+                else:
+                    items += cardgrid.card(num, title, None, tags=star + f'<span class="tag">{T("site.lesson_coming")}</span>')
+            out += cardgrid.group(items, f'{i} · {esc(ch["title"])}', esc(ch["question"]), lang_attr)
+        out += "</div>"
     if c.get("mixer"):                   # the YO-sekoitin: every exam-style task of the site (scripts/mixer.py)
         out += (f'<h2 id="sekoitin">{T("mixer.course_heading")}</h2><p class="section-lead">{T("mixer.course_lead")}</p>'
                 f'<ul class="lessons practice-link"><li class="live"><a href="yo-sekoitin.html">{T("mixer.title")}</a></li></ul>')
@@ -116,7 +121,7 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
         order = {i: n for n, i in enumerate(c.get("pathway", []))}
         investigations = sorted(investigations, key=lambda x: (order.get(x[0], len(order)), x[1]["title"]))
         out += (f'<h2 id="tutkimukset">{T("investigation.course_heading")}</h2><p class="section-lead">{T.count("investigation.course_lead_n", len(investigations))} '
-                f'{T("investigation.bank_note")}</p>' + inv.bank(T, investigations))
+                f'{T("investigation.bank_note")}</p>' + inv.bank(T, investigations, T.lang))
     out += guides_html                   # the TVT-ohjeet the investigations link to (scripts/guides.py), right after them
     if c.get("goals"):
         out += (f'<h2 id="tavoitteet">{T("site.local_goals")}</h2><p class="section-lead">{T("site.local_goals_note")}</p>'

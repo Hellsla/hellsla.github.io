@@ -206,8 +206,13 @@ ol.lessons .tag{font-size:.8125rem;font-weight:600;color:var(--ink-2);border:1px
    Sovella itsenäisesti, Käsitetakomo and the goals sit side by side under the cards when there is room. */
 main.reading.module-page{max-width:68rem}
 main.module-page>.lead,main.module-page>.mod-status{max-width:var(--measure)}
+main.local-course>p,main.local-course>ul,main.local-course>ol,main.local-course>dl,main.local-course>details{max-width:var(--measure)}   /* a school's own course: its prose at reading width, the cards wide */
 h3.ch-theme{font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:1.6rem 0 .6rem}
 h3.ch-theme:first-of-type{margin-top:.6rem}
+h3.ch-theme+p.ch-theme-q{margin:-.3rem 0 .7rem;font-size:var(--fs-ui);line-height:1.5;color:var(--ink-2);max-width:46rem}   /* a local course chapter's question */
+.bank-groups [hidden]{display:none!important}
+.ch-card .l-num .bank-level{text-transform:none;letter-spacing:0;font-size:.8125rem;padding:0 .45rem}
+.ch-card .bank-meta{margin:0}
 ol.lessons.ch-cards{display:grid;grid-template-columns:1fr;gap:.75rem;border-top:0;margin:0 0 1rem}
 ol.lessons li.ch-card{position:relative;display:grid;grid-template-columns:7.5rem minmax(0,1fr);grid-template-areas:"img num" "img title" "why why" "tags tags";
   align-items:start;gap:.15rem .9rem;padding:.75rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);box-shadow:0 1px 2px rgba(20,23,30,.04)}

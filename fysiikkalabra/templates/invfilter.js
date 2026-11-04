@@ -22,6 +22,12 @@
         && (!picked || picked.has(li));
       li.hidden = !ok; shown += ok;
     }
+    // a bank in sections (FY10's topics, scripts/cardgrid.py): a section with nothing left hides with its heading
+    for (const ol of list.querySelectorAll('ol.ch-cards')) {
+      const empty = !ol.querySelector('.bank-item:not([hidden])');
+      ol.hidden = empty;
+      for (let el = ol.previousElementSibling; el && !el.matches('ol'); el = el.previousElementSibling) el.hidden = empty;
+    }
     none.hidden = shown > 0;
     count.textContent = count.dataset.template.replace('{shown}', shown).replace('{total}', items.length);
   }
