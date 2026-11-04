@@ -1,0 +1,202 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.U===500 && S.dcm===5 && S.particle==='p' && !S.arrived && !S.running && S.t===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: U = 500 V, d = 5,0 cm, proton at rest at the + plate (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.E",
+  "expected": 10000,
+  "tol": 0.001,
+  "note": "on load: E = U : d = 500 V : 0,050 m = 10 000 V/m (lesson-answers koe1-d5.0-E)"
+ },
+ {
+  "expr": "window.simState.F * 1e15",
+  "expected": 1.602,
+  "tol": 0.01,
+  "note": "on load: F = eE = 1,602e-15 N"
+ },
+ {
+  "expr": "window.simState.EpeV",
+  "expected": 500,
+  "tol": 0.01,
+  "note": "on load: proton at the + plate, E_p = eU = 500 eV"
+ },
+ {
+  "expr": "window.simState.EkeV",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "on load: at rest, E_k = 0"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); const ok=(r,a,b,s)=>r.min===a&&r.max===b&&r.step===s; return R.length===2 && ok(R[0],'100','1000','50') && ok(R[1],'2','10','0.5') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two sliders: U 100-1000 V by 50 V, d 2-10 cm by 0,5 cm"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===2 && L[0]==='p,e,a' && L[1]==='0.25,1,4' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two selects: particle (proton, electron, alpha) and speed (hidas, normaali, nopea)"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const b=document.querySelector('#sim-root .controls').firstElementChild; return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') && b.tagName==='BUTTON' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls (main button first), readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='U,d,hiukkanen' && P.U.unit==='V' && P.d.unit==='cm' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares U (V), d (cm) and hiukkanen"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?970:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 on a wide screen, 600x970 (energy bars under the plates) under 500 px"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return /Kenttä/.test(t) && /Aika/.test(t) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the field, time, speed and energies"
+ },
+ {
+  "setup": "(async () => { document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],500); I(R[1],5); I(S[0],'p'); I(S[1],'4'); await new Promise((r)=>setTimeout(r,150)); document.querySelector('#sim-root button').click(); await new Promise((r)=>{const t0=Date.now(); const f=()=>{ if (window.simState.arrived || Date.now()-t0>9000) r(); else setTimeout(f,100); }; f();}); })()",
+  "expr": "window.simState.arrived ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 1/2: proton, U = 500 V, d = 5,0 cm reaches the - plate"
+ },
+ {
+  "expr": "window.simState.EkeV",
+  "expected": 500,
+  "tol": 0.01,
+  "note": "proton at the - plate: E_k = eU = 500 eV (koe1-d5.0-EkeV)"
+ },
+ {
+  "expr": "window.simState.EpeV",
+  "expected": 0,
+  "tol": 0.01,
+  "note": "proton at the - plate (0 V): E_p = 0"
+ },
+ {
+  "expr": "window.simState.tns",
+  "expected": 323.159,
+  "tol": 0.01,
+  "note": "crossing time 323 ns (koe1-d5.0-tns)"
+ },
+ {
+  "expr": "window.simState.vkms",
+  "expected": 309.445,
+  "tol": 0.01,
+  "note": "proton speed 309 km/s (koe2-p-vkms)"
+ },
+ {
+  "setup": "(async () => { document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],500); I(R[1],2.5); I(S[0],'p'); I(S[1],'4'); await new Promise((r)=>setTimeout(r,150)); document.querySelector('#sim-root button').click(); await new Promise((r)=>{const t0=Date.now(); const f=()=>{ if (window.simState.arrived || Date.now()-t0>9000) r(); else setTimeout(f,100); }; f();}); })()",
+  "expr": "window.simState.EkeV",
+  "expected": 500,
+  "tol": 0.01,
+  "note": "koe 1: d = 2,5 cm, the same 500 eV"
+ },
+ {
+  "expr": "window.simState.E",
+  "expected": 20000,
+  "tol": 0.001,
+  "note": "koe 1: d = 2,5 cm, E = 20 000 V/m"
+ },
+ {
+  "expr": "window.simState.tns",
+  "expected": 161.58,
+  "tol": 0.01,
+  "note": "koe 1: d = 2,5 cm, t = 162 ns"
+ },
+ {
+  "setup": "(async () => { document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],500); I(R[1],10); I(S[0],'p'); I(S[1],'4'); await new Promise((r)=>setTimeout(r,150)); document.querySelector('#sim-root button').click(); await new Promise((r)=>{const t0=Date.now(); const f=()=>{ if (window.simState.arrived || Date.now()-t0>9000) r(); else setTimeout(f,100); }; f();}); })()",
+  "expr": "window.simState.EkeV",
+  "expected": 500,
+  "tol": 0.01,
+  "note": "koe 1: d = 10 cm, the same 500 eV"
+ },
+ {
+  "expr": "window.simState.tns",
+  "expected": 646.319,
+  "tol": 0.01,
+  "note": "koe 1: d = 10 cm, t = 646 ns"
+ },
+ {
+  "setup": "(async () => { document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],500); I(R[1],5); I(S[0],'e'); I(S[1],'4'); await new Promise((r)=>setTimeout(r,150)); document.querySelector('#sim-root button').click(); await new Promise((r)=>{const t0=Date.now(); const f=()=>{ if (window.simState.arrived || Date.now()-t0>9000) r(); else setTimeout(f,100); }; f();}); })()",
+  "expr": "window.simState.EkeV",
+  "expected": 500,
+  "tol": 0.01,
+  "note": "koe 2: electron, E_k = 500 eV at the + plate"
+ },
+ {
+  "expr": "window.simState.EpeV",
+  "expected": -500,
+  "tol": 0.01,
+  "note": "koe 2: electron at the + plate (500 V): E_p = -eU = -500 eV"
+ },
+ {
+  "expr": "window.simState.sumeV",
+  "expected": 0,
+  "tol": 0.01,
+  "note": "koe 2: electron, E_k + E_p = 0 as at the start"
+ },
+ {
+  "expr": "window.simState.vkms",
+  "expected": 13261.6,
+  "tol": 0.01,
+  "note": "koe 2: electron 13 262 km/s (koe2-e-vkms)"
+ },
+ {
+  "expr": "window.simState.tns",
+  "expected": 7.54057,
+  "tol": 0.01,
+  "note": "koe 2: electron t = 7,54 ns"
+ },
+ {
+  "setup": "(async () => { document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],500); I(R[1],5); I(S[0],'a'); I(S[1],'4'); await new Promise((r)=>setTimeout(r,150)); document.querySelector('#sim-root button').click(); await new Promise((r)=>{const t0=Date.now(); const f=()=>{ if (window.simState.arrived || Date.now()-t0>9000) r(); else setTimeout(f,100); }; f();}); })()",
+  "expr": "window.simState.EkeV",
+  "expected": 1000,
+  "tol": 0.01,
+  "note": "koe 2: alpha particle q = 2e, E_k = 1000 eV"
+ },
+ {
+  "expr": "window.simState.vkms",
+  "expected": 219.583,
+  "tol": 0.01,
+  "note": "koe 2: alpha 220 km/s (koe2-a-vkms)"
+ },
+ {
+  "setup": "(async () => { document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1000); I(R[1],5); I(S[0],'p'); I(S[1],'4'); await new Promise((r)=>setTimeout(r,150)); document.querySelector('#sim-root button').click(); await new Promise((r)=>{const t0=Date.now(); const f=()=>{ if (window.simState.arrived || Date.now()-t0>9000) r(); else setTimeout(f,100); }; f();}); })()",
+  "expr": "window.simState.EkeV",
+  "expected": 1000,
+  "tol": 0.01,
+  "note": "U = 1000 V: proton E_k = 1000 eV"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; R[0].value=700; R[0].dispatchEvent(new Event('input',{bubbles:true}));",
+  "expr": "(window.simState.arrived || window.simState.t !== 0) ? 0 : 1",
+  "expected": 1,
+  "tol": 0,
+  "note": "changing a control puts the particle back at its plate"
+ },
+ {
+  "setup": "(async () => { document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],500); I(R[1],5); I(S[0],'p'); I(S[1],'4'); await new Promise((r)=>setTimeout(r,150)); document.querySelector('#sim-root button').click(); await new Promise((r)=>{const t0=Date.now(); const f=()=>{ if (window.simState.arrived || Date.now()-t0>9000) r(); else setTimeout(f,100); }; f();}); document.querySelectorAll('#sim-root button')[1].click(); await new Promise((r)=>setTimeout(r,100)); })()",
+  "expr": "(window.simState.arrived || window.simState.t !== 0) ? 0 : 1",
+  "expected": 1,
+  "tol": 0,
+  "note": "Alkuun puts the particle back at rest"
+ }
+]

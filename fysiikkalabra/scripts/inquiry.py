@@ -249,7 +249,7 @@ def esc(s): return _h.escape(str(s), quote=True)
 GREEK = {"Σ": r"\Sigma ", "Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha ", "μ": r"\mu ", "λ": r"\lambda ", "ν": r"\nu ", "φ": r"\varphi ", "ω": r"\omega "}
 SUBS = dict(zip("₀₁₂₃₄₅₆₇₈₉", "0123456789"))
 SYMBOL = re.compile(r"[A-Za-zΔρθηγαμΣλνφω](?:[A-Za-zΔρθηγαμΣλνφω₀-₉/]|_[A-Za-z0-9μ]+)*")
-UNIT = re.compile(r"[µμ]?[A-Za-z/%]+[²³]?|°")   # µT and ° too (FY7, 2026-11-03)
+UNIT = re.compile(r"[µμ]?[A-Za-zΩ/%]+[²³]?|°")   # µT and ° too (FY7, 2026-11-03); Ω, kΩ (FY6)
 
 
 def unit_tex(u):
@@ -257,7 +257,8 @@ def unit_tex(u):
     if u == "%": return "\\%"
     if u == "°": return "^\\circ"
     if u[0] in "µμ": return "\\mu" + unit_tex(u[1:])   # µT -> \mu\text{T}
-    return "\\text{" + u.rstrip("²³") + "}" + ({"²": "^2", "³": "^3"}.get(u[-1], ""))
+    t = ("\\text{" + u.rstrip("²³") + "}").replace("Ω", "}\\Omega\\text{").replace("\\text{}", "")   # Ω, kΩ: \\Omega in maths
+    return t + ({"²": "^2", "³": "^3"}.get(u[-1], ""))
 
 
 def is_symbol(tok):

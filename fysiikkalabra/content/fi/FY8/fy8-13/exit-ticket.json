@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Mitä eroa on absorboituneella annoksella grayna ja efektiivisellä annoksella sievertteinä?",
+    "a": "Absorboitunut annos kertoo, kuinka paljon säteilyenergiaa kudos absorboi kilogrammaa kohti. Efektiivinen annos painottaa sitä säteilylajin ja säteilytettyjen kudosten herkkyyden mukaan, joten se kuvaa koko kehon pitkän aikavälin syöpäriskiä."
+  },
+  {
+    "q": "Nimeä kolme tapaa suojautua gammasäteilyä lähettävältä lähteeltä ja kerro, miten kukin pienentää annosta.",
+    "a": "Aika: annos on suoraan verrannollinen oleskeluaikaan, joten puolet lyhyempi aika antaa puolet pienemmän annoksen. Etäisyys: annosnopeus pienenee etäisyyden neliön mukaan, joten kaksinkertainen etäisyys antaa neljäsosan. Suoja: jokainen puoliintumispaksuuden verran lyijyä tai betonia puolittaa annosnopeuden."
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "What is the difference between the absorbed dose in grays and the effective dose in sieverts?",
+    "a": "The absorbed dose tells how much radiation energy the tissue absorbs per kilogram. The effective dose weights it by the type of radiation and the sensitivity of the irradiated tissues, so it describes the long-term cancer risk to the whole body."
+  },
+  {
+    "q": "Name three ways to protect yourself from a source emitting gamma radiation and say how each reduces the dose.",
+    "a": "Time: the dose is directly proportional to the time spent, so half the time gives half the dose. Distance: the dose rate decreases with the square of the distance, so double the distance gives a quarter. Shielding: every half-value thickness of lead or concrete halves the dose rate."
+  }
+]

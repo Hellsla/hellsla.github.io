@@ -1,0 +1,46 @@
+{
+  "id": "fy8-13",
+  "course": "FY8",
+  "title": "Säteilyannos ja säteilyturvallisuus Suomessa",
+  "goals": [
+    "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+    "Temaattinen tarkastelu: säteilyturvallisuus",
+    "Täsmennys: annos ja efektiivinen annos, taustasäteily ja radon Suomessa, suojautuminen etäisyydellä, ajalla ja suojalla"
+  ],
+  "prerequisites": [
+    "fy8-12"
+  ],
+  "glossary": [
+    "absorboitunut annos",
+    "efektiivinen annos",
+    "taustasäteily",
+    "radon",
+    "annosnopeus",
+    "puoliintumispaksuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "absorboitunut annos",
+      "explain": "Säteilyenergia, jonka kudos imee itseensä, jaettuna kudoksen massalla. Yksikkö on gray."
+    },
+    {
+      "term": "efektiivinen annos",
+      "explain": "Annos, jossa on otettu huomioon säteilylaji ja kudosten herkkyys. Se kuvaa koko kehon syöpäriskiä. Yksikkö on sievert."
+    },
+    {
+      "term": "radon",
+      "explain": "Maaperästä ja kalliosta nouseva radioaktiivinen kaasu. Se kertyy sisäilmaan, ja sen hajoamistuotteet vahingoittavat keuhkoja."
+    },
+    {
+      "term": "annosnopeus",
+      "explain": "Annos aikayksikköä kohti. Säteilymittari näyttää sen usein yksikössä mikrosieverttiä tunnissa."
+    },
+    {
+      "term": "puoliintumispaksuus",
+      "explain": "Aineen paksuus, joka puolittaa säteilyn annosnopeuden. Jokainen tällainen kerros puolittaa sen uudestaan."
+    }
+  ]
+}

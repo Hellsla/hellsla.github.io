@@ -133,14 +133,24 @@ for lang in i18n.languages():
             hrefs = re.findall(r'href="([^"]+)"', prep.group(1)) if prep else []
             expect(f"{lang} {code}: chapters to prepare with link only published pages ({len(hrefs)})", all((out / h).is_file() for h in hrefs), hrefs)
             expect(f"{lang} {code}: not a national module row", code not in codes)
-            inv = re.search(r'<ol class="lessons local-inv">(.*?)</ol>', pg, re.S)
+            inv = re.search(r'<ol class="lessons ch-cards local-inv bank-list" id="bank-list">(.*?)</ol>', pg, re.S)   # the bank's cards by topic
             ihrefs = re.findall(r'href="([^"]+)"', inv.group(1)) if inv else []
             expect(f"{lang} {code}: listed investigations are published pages that name this course ({len(ihrefs)})",
                    all((out / h).is_file() and code in investigations.load(h[:-5], lang)["courses"] for h in ihrefs), ihrefs)
             if ihrefs:                   # the bank (teacher 2026-10-31): every item carries its filter data, the form starts hidden
-                items = re.findall(r'<li class="live bank-item" data-topic="(\w+)" data-f="([F123 ]+)" data-e="([E123 ]+)" data-mode="([OI ]+)"', inv.group(1))
+                items = re.findall(r'<li class="live ch-card bank-item" data-topic="(\w+)" data-f="([F123 ]+)" data-e="([E123 ]+)" data-mode="([OI ]+)"', inv.group(1))
                 expect(f"{lang} {code}: every investigation in the bank has topic, F, E and modes ({len(items)})", len(items) == len(ihrefs), len(items))
                 expect(f"{lang} {code}: the filter form starts hidden (all shown without scripts)", '<form class="bank-filter" id="bank-filter" hidden' in pg)
+                cards = re.findall(r'<li class="live ch-card bank-item"[^>]*>(.*?)</li>', inv.group(1), re.S)
+                expect(f"{lang} {code}: every investigation is a card with its opening illustration and its question (teacher 2026-11-04)",
+                       len(cards) == len(ihrefs) and all('class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in cards))
+            if local[code].get("chapters"):  # units as cards under the course's chapters (teacher 2026-11-04, scripts/cardgrid.py)
+                uc = re.search(r'<ol class="lessons ch-cards" id="unit-cards">(.*?)</ol>', pg, re.S)
+                live = re.findall(r'<li class="live ch-card">(.*?)</li>', uc.group(1), re.S) if uc else []
+                expect(f"{lang} {code}: one section per chapter with its question", uc and uc.group(1).count('class="ch-theme"') == len(local[code]["chapters"]) == uc.group(1).count('class="ch-theme-q"'))
+                expect(f"{lang} {code}: every published unit is a card with one link, its opening illustration and its question ({len(live)})",
+                       all(len(re.findall(r"<a ", c)) == 1 and 'class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in live)
+                       and all((out / h).resolve().is_file() for c in live for h in re.findall(r'href="([^"]+)"', c)))
             ghrefs = re.findall(r'href="(tvt-[\w-]+\.html)"', pg)
             expect(f"{lang} {code}: listed TVT-ohjeet are published pages ({len(ghrefs)})", all((out / h).is_file() for h in ghrefs), ghrefs)
     else: expect(f"{lang}: no local-course section without a course in this language", not sec)

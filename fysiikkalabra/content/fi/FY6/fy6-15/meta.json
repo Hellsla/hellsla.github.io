@@ -1,0 +1,23 @@
+{
+  "id": "fy6-15",
+  "course": "FY6",
+  "title": "Sähköturvallisuus kotona ja työssä",
+  "goals": [
+    "LOPS FY6: sähköturvallisuus: sulake, suojausluokitus ja läpilyöntilujuus",
+    "LOPS FY6: tuntee sähkölaitteisiin ja sähköenergian siirtoon liittyviä turvallisuusnäkökohtia",
+    "Laaja-alainen: hyvinvointiosaaminen"
+  ],
+  "prerequisites": [
+    "fy6-6"
+  ],
+  "glossary": [
+    "sulake",
+    "vikavirtasuoja",
+    "suojausluokitus",
+    "läpilyöntilujuus",
+    "maadoitus"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

@@ -206,8 +206,14 @@ ol.lessons .tag{font-size:.8125rem;font-weight:600;color:var(--ink-2);border:1px
    Sovella itsenäisesti, Käsitetakomo and the goals sit side by side under the cards when there is room. */
 main.reading.module-page{max-width:68rem}
 main.module-page>.lead,main.module-page>.mod-status{max-width:var(--measure)}
+main.local-course>p,main.local-course>ul,main.local-course>ol:not(.ch-cards),main.local-course>dl,main.local-course>details{max-width:var(--measure)}   /* a school's own course: its prose at reading width, the cards wide */
 h3.ch-theme{font:600 var(--fs-small)/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-deep);margin:1.4rem 0 .6rem}
 ol.lessons.ch-cards>li:first-child>h3.ch-theme{margin-top:.6rem}
+/* a local course chapter's label (scripts/cardgrid.py): its heading and question above its first card */
+ol.lessons li.ch-card>.ch-label{margin:1.4rem 0 .6rem}ol.lessons.ch-cards>li:first-child>.ch-label{margin-top:.6rem}
+.ch-label>h3.ch-theme{margin:0}.ch-label>p.ch-theme-q{margin:.2rem 0 0;font-size:var(--fs-small);line-height:1.45;color:var(--ink-2)}
+.ch-card .l-num .bank-level{text-transform:none;letter-spacing:0;font-size:.8125rem;padding:0 .45rem}
+.ch-card .bank-meta{margin:0}
 /* One continuous grid (teacher 2026-11-04): each li holds the theme label (only the theme's first chapter has one) and the
    card (.ch-box). From 40rem each li spans two subgrid rows, label and card, so a row's label strip is as tall as its
    tallest label and zero in a row without one; the next theme's cards continue beside a short theme without a hole. */
@@ -233,6 +239,8 @@ ol.lessons li.ch-card.live .ch-box:hover>a{text-decoration:underline}
   ol.lessons li.ch-card{display:grid;grid-row:span 2;grid-template-rows:subgrid}
   ol.lessons li.ch-card>h3.ch-theme{grid-row:1;align-self:end;margin:1rem 0 .6rem}
   ol.lessons.ch-cards>li:first-child>h3.ch-theme{margin-top:.6rem}
+  ol.lessons li.ch-card>.ch-label{grid-row:1;align-self:end;margin:1rem 0 .6rem}
+  ol.lessons.ch-cards>li:first-child>.ch-label{margin-top:.6rem}
   ol.lessons li.ch-card>.ch-box{grid-row:2;margin-bottom:1rem}
   ol.lessons li.ch-card.live>.ch-box{grid-template-columns:minmax(0,1fr);grid-template-areas:"img" "num" "title" "why" "tags";grid-template-rows:auto auto auto 1fr auto;padding:0 0 .9rem;overflow:hidden}
   ol.lessons li.ch-card.live>.ch-box>*:not(.ch-img){margin-inline:1rem}

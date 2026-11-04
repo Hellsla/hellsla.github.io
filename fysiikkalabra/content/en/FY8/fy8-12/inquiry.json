@@ -1,0 +1,434 @@
+{
+  "version": 1,
+  "contribution": "Ionising radiation through physics: ionisation and energy transfer, the ionisation density and penetrating power of alpha, beta and gamma radiation, the attenuation of gamma radiation $I = I_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$, detection with a GM tube and background radiation, and the biological effects through ionisation.",
+  "learn": [
+    "compare the penetrating power of alpha, beta and gamma radiation and explain it with ionisation.",
+    "calculate the attenuation of gamma radiation with the half-value thickness.",
+    "explain how a GM tube detects radiation and how ionisation damages cells."
+  ],
+  "prior": [
+    "The energy of a photon is $E = hf$, and the electronvolt is $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$ (chapter *The photoelectric effect and the photon*)",
+    "A radioactive nucleus emits alpha, beta or gamma radiation (chapter *The atomic nucleus and radioactive decay*)",
+    "Every half-life halves the number of undecayed nuclei, $N = N_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$ (chapter *The decay law and half-life*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The indoor air in Finland contains radon, which decays by emitting alpha radiation. Alpha radiation is already stopped by a sheet of paper, and an X-ray nurse protects herself from radiation with an apron containing lead. Yet it is precisely the radon in the air we breathe that is the most significant source of radiation to which people in Finland are exposed. Radiation cannot be seen, heard or felt, but a Geiger–Müller counter clicks for every particle it detects.",
+      "question": "Why is alpha radiation, which is stopped so easily, harmful inside the body, and why do we protect ourselves from gamma radiation precisely with lead?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Review: types of radiation",
+      "prompt": "An americium-241 nucleus decays by alpha decay. What is the alpha particle that leaves the nucleus?",
+      "choices": [
+        {
+          "text": "A helium nucleus with two protons and two neutrons.",
+          "correct": true,
+          "feedback": "Correct. The charge of an alpha particle is $+2e$, and it is about $7300$ times heavier than an electron (chapter *The atomic nucleus and radioactive decay*). Today you will find out why precisely the charge and the mass make it ionise densely."
+        },
+        {
+          "text": "An electron leaving the nucleus, formed when a neutron changes into a proton.",
+          "feedback": "This is a beta minus particle. An alpha particle is a helium nucleus with two protons and two neutrons (chapter *The atomic nucleus and radioactive decay*)."
+        },
+        {
+          "text": "A high-energy photon leaving an excited nucleus.",
+          "feedback": "This is a gamma photon. An alpha particle is a charged particle: a helium nucleus with two protons and two neutrons (chapter *The atomic nucleus and radioactive decay*)."
+        },
+        {
+          "text": "A free neutron released from the nucleus in the decay.",
+          "feedback": "Free neutrons are released, for example, in fission (chapter *Fission, fusion and nuclear power*). An alpha particle is a helium nucleus with two protons and two neutrons."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: what passes through aluminium?",
+      "prompt": "A $5\\,\\text{mm}$ aluminium plate is placed in front of an alpha, a beta and a gamma source in turn. Without the plate the GM counter counts about the same number of pulses from each source. The pulses of which radiation does the counter still count clearly above the background radiation when the plate is in place?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Only gamma radiation, because a photon ionises so rarely that most of them pass through the plate.",
+          "correct": true,
+          "feedback": "The values of the model support this: behind the aluminium the gamma source gave $535$ pulses in $10\\,\\text{s}$, but the beta and alpha sources only $4$ and $9$, which is the level of background radiation within random variation. The paper did not stop beta radiation ($550$ pulses), but $5\\,\\text{mm}$ of aluminium did."
+        },
+        {
+          "text": "Beta and gamma radiation, because both pass through paper.",
+          "feedback": "The values of the model refute this: behind the aluminium the beta source gave only $4$ pulses in $10\\,\\text{s}$, as much as the background. A beta particle is charged, so it ionises along its whole path and loses its energy in a few millimetres of aluminium. It passed through the paper almost unhindered ($550$ pulses)."
+        },
+        {
+          "text": "All three, because a metal plate does not stop radiation but only weakens it.",
+          "feedback": "The values of the model refute this: the alpha source gave no more pulses than the background even behind a sheet of paper. Alpha and beta particles have a range: when they have given up their energy to ionisations, they stop. Only gamma radiation is attenuated one fraction at a time."
+        },
+        {
+          "text": "None, because metal stops all radiation.",
+          "feedback": "The values of the model refute this: behind the aluminium the gamma source gave $535$ pulses in $10\\,\\text{s}$, almost as many as without the plate. A gamma photon is neutral and interacts rarely, so thin aluminium attenuates only a small part of it."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: two lead plates",
+      "prompt": "A layer of lead whose thickness is the half-value thickness of lead lets half of the radiation of a gamma source through. A second similar layer is placed behind the first. What fraction of the gamma radiation passes through both plates?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "About a quarter, because the second plate lets through half of what got through the first.",
+          "correct": true,
+          "feedback": "The values of the model support this: the net pulse count was $586$ without lead, $328$, that is about a half, at $5\\,\\text{mm}$ and $171$, that is about $0.29$ times the original, at $10\\,\\text{mm}$. Since $5\\,\\text{mm}$ is slightly less than the half-value thickness of lead, two layers let through slightly over a quarter. Every layer attenuates the same fraction of the radiation that arrives at it, so the halves multiply: $\\tfrac{1}{2} \\cdot \\tfrac{1}{2} = \\tfrac{1}{4}$."
+        },
+        {
+          "text": "None, because each plate stops half of the radiation.",
+          "feedback": "The values of the model refute this: even behind $20\\,\\text{mm}$ of lead there were still $57$ pulses in $10\\,\\text{s}$. The second plate stops half of what *got through the first*, not half of the original radiation. This is why gamma radiation never stops completely."
+        },
+        {
+          "text": "Still about a half, because the first plate already stopped the weakest photons.",
+          "feedback": "The values of the model refute this: when there was twice as much lead, the pulse count decreased further ($328 \\to 171$ net pulses). Gamma photons of the same energy are alike: each has the same probability of interacting in every layer, so the second plate also attenuates a half."
+        },
+        {
+          "text": "About two thirds, because the first plate stops most of it already and the second only a little.",
+          "feedback": "Two plates cannot let through more than one. The values of the model do not support this: behind $10\\,\\text{mm}$ of lead there came about $0.29$ times the original net count, which is close to a quarter when the random variation of the pulses is taken into account. Each plate multiplies the amount that gets through by a half: $\\tfrac{1}{2} \\cdot \\tfrac{1}{2} = \\tfrac{1}{4}$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose a source and a barrier, add plates and use the GM tube to measure how many pulses are produced in $10\\,\\text{s}$. Watch which particles stop in the plates.",
+      "howto": "*Measure* starts a $10\\,\\text{s}$ measurement; the counter shows the pulse count $N$ and the elapsed time $t$, and the finished result stays in the readings. *Source* selects an alpha, beta or gamma source or no source, in which case the counter counts only background radiation. *Barrier* selects the material of the plates, and the slider *Plates* their number $n$ from $0$ to $20$: a sheet of paper is $0.1\\,\\text{mm}$, an aluminium or lead plate $1\\,\\text{mm}$. When $n = 0$, there is no barrier. In the picture a violet dot is an alpha particle, a blue one a beta particle and an orange wave a gamma photon; particles that stop in the plates disappear in them. Every particle hitting the tube produces an electron avalanche near the wire, which shows as a flash, and the counter increases by one. The grey waves from above are background radiation. If you change the source or the barrier, the measurement is reset. *Speed* changes only the pace of the passing of time.",
+      "model": "The source is $3\\,\\text{cm}$ from the window of the tube. The model does not take into account the loss of energy of the alpha particle in the air and in the window of the tube, although in reality alpha particles should be measured from closer. The sources are chosen so that without a barrier the counter counts on average $600$ pulses in $10\\,\\text{s}$ from each; background radiation gives on average $4$ pulses. Each source emits only one type of radiation: real americium-241 emits also weak gamma radiation in addition to alpha radiation. An alpha particle stops already in one sheet of paper. The maximum energy of the beta particles is $2.28\\,\\text{MeV}$, as in a strontium-90 source, and their range is $1.1\\,\\tfrac{\\text{g}}{\\text{cm}^2}$, about $4\\,\\text{mm}$ of aluminium; bremsstrahlung is not in the model. The gamma radiation is the $662\\,\\text{keV}$ radiation of caesium-137 as a narrow beam. A real GM tube detects only a small fraction of gamma photons, but in the model every particle or photon hitting the tube is registered, and the tube has no dead time. The readings are values of the model, not measurements.",
+      "calc": "The fraction $T$ that passes through the barrier is calculated by the type of radiation. For alpha, $T = 0$ behind any barrier. For beta, $T = e^{-6.6 x}$, where $x$ is the product of the density and the thickness of the barrier in the unit $\\tfrac{\\text{g}}{\\text{cm}^2}$, and $T = 0$ when $x \\ge 1.1\\,\\tfrac{\\text{g}}{\\text{cm}^2}$. For gamma, $T = \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$, where $d_{1/2}$ is $100\\,\\text{mm}$ for paper, $34\\,\\text{mm}$ for aluminium and $5.5\\,\\text{mm}$ for lead. The measuring time is divided into $6000$ short periods. In each period a pulse comes from the source with the probability $0.1 \\cdot T$ and from the background with the probability $\\tfrac{4}{6000}$, so the pulse count varies randomly around the mean $600 \\cdot T + 4$. The first measurement with the same settings always gives the same result, and a repeated measurement a different one."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: a sheet of paper in front of the source",
+      "intro": "In front of the source there is one sheet of paper, thickness $0.1\\,\\text{mm}$. Change only the source: measure for $10\\,\\text{s}$ with each option and record the pulse count. Measure at least the alpha, beta and gamma sources, and the background alone if you wish.",
+      "initial": {
+        "lahde": "alfa",
+        "aine": "paperi",
+        "n": 1
+      },
+      "locked": [
+        "aine",
+        "n"
+      ],
+      "vary": "lahde",
+      "min": 3,
+      "names": {
+        "lahde": "source",
+        "aine": "barrier",
+        "n": "plates n"
+      },
+      "values": {
+        "lahde": {
+          "tausta": "no source",
+          "alfa": "alpha source",
+          "beeta": "beta source",
+          "gamma": "gamma source"
+        },
+        "aine": {
+          "paperi": "paper",
+          "alumiini": "aluminium",
+          "lyijy": "lead"
+        }
+      },
+      "measure": [
+        {
+          "key": "pulssit",
+          "label": "pulse count N"
+        }
+      ]
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: an aluminium plate in front of the source",
+      "intro": "Test prediction 1. In front of the source there is now $5\\,\\text{mm}$ of aluminium. Change only the source, measure for $10\\,\\text{s}$ with each and record the pulse count of at least the alpha, beta and gamma sources. Compare with experiment 1 and with the background, about $4$ pulses in $10\\,\\text{s}$.",
+      "initial": {
+        "lahde": "alfa",
+        "aine": "alumiini",
+        "n": 5
+      },
+      "locked": [
+        "aine",
+        "n"
+      ],
+      "vary": "lahde",
+      "min": 3,
+      "names": {
+        "lahde": "source",
+        "aine": "barrier",
+        "n": "plates n"
+      },
+      "values": {
+        "lahde": {
+          "tausta": "no source",
+          "alfa": "alpha source",
+          "beeta": "beta source",
+          "gamma": "gamma source"
+        },
+        "aine": {
+          "paperi": "paper",
+          "alumiini": "aluminium",
+          "lyijy": "lead"
+        }
+      },
+      "measure": [
+        {
+          "key": "pulssit",
+          "label": "pulse count N"
+        }
+      ]
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: gamma radiation through lead",
+      "intro": "Test prediction 2. The source is a gamma source and the barrier is lead. Change only the number of plates: measure and record the pulse count at least with the thicknesses $0$, $5$ and $10\\,\\text{mm}$, and if you wish also $15$ and $20\\,\\text{mm}$. Finally subtract the background, about $4$ pulses, from each reading.",
+      "initial": {
+        "lahde": "gamma",
+        "aine": "lyijy",
+        "n": 0
+      },
+      "locked": [
+        "lahde",
+        "aine"
+      ],
+      "vary": "n",
+      "min": 3,
+      "units": {
+        "n": "mm"
+      },
+      "names": {
+        "lahde": "source",
+        "aine": "barrier",
+        "n": "thickness of lead d"
+      },
+      "values": {
+        "lahde": {
+          "tausta": "no source",
+          "alfa": "alpha source",
+          "beeta": "beta source",
+          "gamma": "gamma source"
+        },
+        "aine": {
+          "paperi": "paper",
+          "alumiini": "aluminium",
+          "lyijy": "lead"
+        }
+      },
+      "measure": [
+        {
+          "key": "pulssit",
+          "label": "pulse count N"
+        }
+      ]
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: penetrating power",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Based on your tables, write: Which barrier stopped which radiation? What happened to the pulse count of gamma radiation after each added $5\\,\\text{mm}$ layer of lead? Why did gamma radiation not stop completely?",
+      "model": "As values of the model, behind the sheet of paper the alpha source gave $5$ pulses in $10\\,\\text{s}$, as many as the background alone, but the beta source $550$ and the gamma source $577$. So the paper stopped alpha radiation. Behind $5\\,\\text{mm}$ of aluminium the beta source gave only $4$ pulses, the level of the background, but the gamma source $535$. The charged alpha and beta particles ionise along their whole path, give up their energy and stop, alpha already in paper. Behind lead the pulse count of the gamma source was $590$, $332$, $175$, $89$ and $57$ at the thicknesses $0$, $5$, $10$, $15$ and $20\\,\\text{mm}$. Every $5\\,\\text{mm}$ layer reduced the net pulse count remaining after the background to roughly a half, so the half-value thickness of lead is slightly over $5\\,\\text{mm}$. A gamma photon interacts rarely and with the same probability in every layer, so every layer attenuates the same fraction and the radiation does not stop completely. The pulse counts vary randomly, so a single reading can deviate from the law.",
+      "criteria": [
+        "I tell with the values of the model that paper stopped alpha radiation and $5\\,\\text{mm}$ of aluminium beta radiation, when the pulse count dropped to the background level.",
+        "I state from the lead measurements that every $5\\,\\text{mm}$ layer reduced the net pulse count to about a half.",
+        "I explain that a gamma photon interacts rarely and every layer attenuates the same fraction, so the radiation does not stop completely.",
+        "I call the numbers of the simulation values of the model, not measurements."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments. Then return to the question at the start: why is alpha radiation, which is stopped by paper, dangerous in the lungs, and why does protection from gamma radiation need centimetres of lead and a thin plate is not enough?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the mistake",
+      "optional": true,
+      "prompt": "A student is designing a shield for a caesium-137 source. The half-value thickness of lead is $5.5\\,\\text{mm}$. She writes: \"The first $5.5\\,\\text{mm}$ stops half of the radiation and the second $5.5\\,\\text{mm}$ the other half. So $11\\,\\text{mm}$ of lead stops all gamma radiation.\" Where is the mistake?",
+      "choices": [
+        {
+          "text": "The second layer stops half of the radiation that got through the first, so $11\\,\\text{mm}$ lets a quarter through.",
+          "correct": true,
+          "feedback": "Correct. Every half-value thickness halves the radiation arriving at it: $I = I_0 \\left(\\tfrac{1}{2}\\right)^{11\\,\\text{mm} / 5.5\\,\\text{mm}} = \\tfrac{1}{4} I_0$. Gamma radiation has no range, so no thickness stops it completely; a shield is dimensioned so that the fraction getting through is small enough."
+        },
+        {
+          "text": "The half-value thickness means the thickness that stops all the radiation, so already $5.5\\,\\text{mm}$ is enough.",
+          "feedback": "The half-value thickness is the thickness that lets *half* of the radiation through. The mistake is in the second layer: it attenuates half of what got through the first, so behind $11\\,\\text{mm}$ a quarter remains."
+        },
+        {
+          "text": "Lead does not attenuate gamma radiation at all, because a gamma photon is electrically neutral.",
+          "feedback": "A neutral photon can still interact with the electrons of lead and remove them; this is why lead attenuates it effectively. The mistake is in the effect of the second layer: $11\\,\\text{mm}$ lets a quarter through."
+        },
+        {
+          "text": "The calculation should have used centimetres instead of millimetres.",
+          "feedback": "The unit does not matter as long as the thickness and the half-value thickness are in the same unit: $11\\,\\text{mm} : 5.5\\,\\text{mm} = 1.1\\,\\text{cm} : 0.55\\,\\text{cm} = 2$. The mistake is in the reasoning: the second layer halves only what got through the first."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply: a lead apron in X-ray imaging",
+      "prompt": "The maximum photon energy of the X-radiation used in dental X-rays is about $60\\,\\text{keV}$. For this radiation the half-value thickness of lead is $0.12\\,\\text{mm}$. The protective apron of the patient has a lead-equivalent layer with a thickness of $0.50\\,\\text{mm}$. What percentage of the X-radiation hitting the apron passes through it? Assume a narrow beam.",
+      "answer": 5.6,
+      "unit": "%",
+      "tolerance": 0.02,
+      "hints": [
+        "X-radiation is photon radiation like gamma radiation, so it is attenuated according to the equation $I = I_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$.",
+        "First calculate how many half-value thicknesses the apron contains: $d : d_{1/2}$.",
+        "The apron contains $0.50\\,\\text{mm} : 0.12\\,\\text{mm} \\approx 4.17$ half-value thicknesses. Calculate $\\left(\\tfrac{1}{2}\\right)^{4.17}$ and convert it into a percentage."
+      ],
+      "mistakes": [
+        {
+          "value": 84.7,
+          "feedback": "You wrote the exponent upside down: $\\tfrac{d_{1/2}}{d}$. The exponent is the thickness of the barrier divided by the half-value thickness, $\\tfrac{d}{d_{1/2}} = \\tfrac{0.50\\,\\text{mm}}{0.12\\,\\text{mm}} \\approx 4.17$: a thicker barrier attenuates more."
+        },
+        {
+          "value": 94.4,
+          "feedback": "This is the fraction that is *stopped* by the apron. The question asked for the fraction that passes through: $\\left(\\tfrac{1}{2}\\right)^{4.17} \\cdot 100\\,\\%$."
+        },
+        {
+          "value": 12.0,
+          "feedback": "You divided $100\\,\\%$ by two multiplied by the number of layers. Every half-value thickness multiplies the fraction passing through by $\\tfrac{1}{2}$, so the fraction is $\\left(\\tfrac{1}{2}\\right)^{4.17}$ and not $\\tfrac{1}{2 \\cdot 4.17}$."
+        }
+      ],
+      "solution": "**Given:** half-value thickness of lead for this radiation $d_{1/2} = 0.12\\,\\text{mm}$, thickness of the lead layer of the apron $d = 0.50\\,\\text{mm}$, narrow beam\n\n**Asked:** the fraction of radiation passing through, $\\tfrac{I}{I_0}$, as a percentage\n\n**Principle:** X-radiation is photon radiation like gamma radiation: every photon has the same probability of interacting in every thin layer of lead, so every half-value thickness halves the intensity. Low-energy X-radiation is attenuated in lead much more effectively than the gamma radiation of caesium-137, which is why a thin layer is enough.\n\n**Formula:** $I = I_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$, from which $\\dfrac{I}{I_0} = \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$\n\n**Conversions:** Not needed: both thicknesses are in millimetres. Finally the fraction is converted into a percentage: $1 = 100\\,\\%$.\n\n**Substitution:** $\\dfrac{I}{I_0} = \\left(\\tfrac{1}{2}\\right)^{0.50\\,\\text{mm} / 0.12\\,\\text{mm}} = \\left(\\tfrac{1}{2}\\right)^{4.1667} = 0.055681 = 5.5681\\,\\%$\n\n**Answer:** $5.6\\,\\%$, two significant figures like the thicknesses $0.50\\,\\text{mm}$ and $0.12\\,\\text{mm}$.\n\n**Reasonableness:** Four half-value thicknesses would let through $\\left(\\tfrac{1}{2}\\right)^{4} = 6.25\\,\\%$ and five $3.1\\,\\%$. The apron contains slightly over four half-value thicknesses, so the result is a little under $6.25\\,\\%$, as it should be."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. In the tasks of level 1 one equation is used, in the tasks of level 2 two steps are combined or units are converted, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The decay products of radon stay on the surface of the bronchi when breathed in and emit alpha radiation. Why is alpha radiation more dangerous in the lungs than gamma radiation of the same energy, even though a sheet of paper stops it?",
+      "choices": [
+        {
+          "text": "An alpha particle gives up all its energy within a few cells, so the ionisations and the DNA damage are densely packed.",
+          "correct": true,
+          "feedback": "Correct. Dense ionisation can break both strands of the DNA close together, and a cell repairs such damage poorly. A gamma photon spreads the same energy as sparse ionisations over a long distance, partly even outside the body."
+        },
+        {
+          "text": "Alpha radiation makes the lung tissue radioactive, and the tissue starts to radiate itself.",
+          "feedback": "Alpha radiation ionises atoms but does not make the nuclei of the tissue radioactive. The harm is caused by the alpha particle giving up all its energy within a few cells: the ionisations and the DNA damage are densely packed."
+        },
+        {
+          "text": "In tissue the penetrating power of an alpha particle increases, so it has time to travel through the whole lung.",
+          "feedback": "Tissue is much denser than air, so an alpha particle stops in it after about $0.04\\,\\text{mm}$. The danger comes precisely from the short distance: all the energy is concentrated in a few cells."
+        },
+        {
+          "text": "An alpha particle always has much more energy than a gamma photon, so it makes more ionisations.",
+          "feedback": "In the question the energies are equal, and the energy of a gamma photon can even be greater than that of an alpha particle. What matters is how *densely* the ionisations occur: an alpha particle gives up its energy within a few cells."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Read the half-value thickness from a graph",
+      "figure": "fy8-12/tuntematon",
+      "prompt": "Plates of an unknown material have been added between a gamma source and a GM tube. The graph shows the net pulse rate, from which the background radiation has been subtracted, as a function of the total thickness $d$ of the plates. Read from the graph the half-value thickness of the material for this radiation. Answer in millimetres.",
+      "answer": 12,
+      "unit": "mm",
+      "tolerance": 0.06,
+      "hints": [
+        "What is the pulse rate when there are no plates? And half of that?",
+        "Find the point where the curve is at half of its initial value and read the thickness from the horizontal axis.",
+        "The initial value is $800$ pulses per minute, so find the point where the curve is at $400$ pulses."
+      ],
+      "mistakes": [
+        {
+          "value": 24,
+          "feedback": "You read the thickness at which the pulse rate is a quarter of the initial value, $200$ pulses per minute. That is two half-value thicknesses. The half-value thickness is the thickness at which the pulse rate is half of the initial value."
+        },
+        {
+          "value": 400,
+          "feedback": "This is half of the initial value in pulses per minute. What is asked is the thickness at which the pulse rate decreases to this value: read it from the horizontal axis."
+        }
+      ],
+      "solution": "**Given:** the net pulse rate of the graph as a function of the thickness $d$ of the plates, grid spacing $2\\,\\text{mm}$ and $50$ pulses per minute\n\n**Asked:** the half-value thickness $d_{1/2}$ in millimetres\n\n**Principle:** The net pulse rate is proportional to the intensity of the gamma radiation hitting the GM tube, and every half-value thickness halves it. So the half-value thickness is the thickness at which the pulse rate has dropped to half of the initial value.\n\n**Reading the graph:** When $d = 0$, the curve starts from $800$ pulses per minute. Half of that is $400$ pulses per minute. The horizontal line at $400$ meets the curve at $d = 12\\,\\text{mm}$. Check: at $200$ pulses the curve is at the thickness $24\\,\\text{mm}$.\n\n**Formula:** $I = I_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$; when $I = \\tfrac{1}{2} I_0$, the exponent is $\\tfrac{d}{d_{1/2}} = 1$, so $d_{1/2} = d$\n\n**Conversions:** Not needed: the thickness is read directly in millimetres.\n\n**Substitution:** $\\tfrac{1}{2} I_0 = \\tfrac{1}{2} \\cdot 800\\,\\tfrac{1}{\\text{min}} = 400\\,\\tfrac{1}{\\text{min}}$, which is reached at the thickness $d = 12\\,\\text{mm}$, so $d_{1/2} = 12\\,\\text{mm}$\n\n**Answer:** $12\\,\\text{mm}$, two significant figures, because the thickness can be read from the graph with an accuracy of about half a millimetre.\n\n**Reasonableness:** At two half-value thicknesses, that is $24\\,\\text{mm}$, the pulse rate should be $200$ and at four, that is $48\\,\\text{mm}$, $50$ pulses per minute; the graph agrees with both. The value is the same as the half-value thickness of iron for the gamma radiation of caesium-137."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: what does a GM counter tell?",
+      "optional": true,
+      "prompt": "A GM counter clicks near an unknown radiation source. Why can the type of radiation, alpha, beta or gamma, not be deduced from the pulse count alone? How can the type of radiation be found out with the same counter?",
+      "model": "In a GM tube every ionising particle hitting the gas removes at least one electron. Near the wire the strong electric field accelerates the electrons so that an electron avalanche forms, and the avalanche is always the same size regardless of which particle started it and how much energy it had. So every event shows up as a similar pulse, and the counter only counts events. The type of radiation can be found out with barriers: if the pulse count drops to the background level behind a sheet of paper, the radiation is alpha radiation. If it passes through paper but stops in a few millimetres of aluminium, it is beta radiation. If it passes through aluminium and is attenuated gradually in lead, it is gamma radiation. The background radiation must be subtracted from every reading.",
+      "criteria": [
+        "I explain that every ionising event triggers a similar electron avalanche, so the pulse tells neither the type nor the energy of the radiation.",
+        "I say that the type of radiation is deduced with barriers: paper stops alpha, a few millimetres of aluminium beta, and gamma is attenuated in lead.",
+        "I mention that the background radiation must be subtracted from the readings."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. First answer yourself and only then open the answer."
+    }
+  ]
+}

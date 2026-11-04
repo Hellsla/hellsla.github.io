@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-12-L1-01",
+      "level": 1,
+      "text": "Cobalt-60 emits gamma radiation, for whose mean energy $1.25\\,\\text{MeV}$ the half-value thickness of lead is $10.4\\,\\text{mm}$. What percentage of the gamma radiation passes through a lead plate with a thickness of $25.0\\,\\text{mm}$? Assume a narrow beam.",
+      "answer": 18.9,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-02",
+      "level": 1,
+      "text": "The kinetic energy of the alpha particle from the americium-241 source of a smoke detector is $5.49\\,\\text{MeV}$. In air, forming one ion pair takes on average $34\\,\\text{eV}$. How many ion pairs does the alpha particle form in air before it stops? Give the answer in the unit $10^{5}$.",
+      "answer": 1.6,
+      "unit": "· 10⁵",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-03",
+      "level": 1,
+      "text": "Plates are added between a gamma source and a GM tube. When the plates have a total thickness of $18\\,\\text{mm}$, the net pulse count, that is the pulse count remaining after the background radiation, has decreased to an eighth of what it was without plates. What is the half-value thickness of the material of the plates for this gamma radiation? Give the answer in millimetres.",
+      "answer": 6.0,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-04",
+      "level": 1,
+      "text": "The spent fuel of a nuclear power plant is first stored in a water pool. The half-value thickness of water for a certain gamma radiation is $8.1\\,\\text{cm}$. What percentage of this gamma radiation passes through a $30\\,\\text{cm}$ layer of water? Assume a narrow beam.",
+      "answer": 7.7,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L1-05",
+      "level": 1,
+      "text": "At least $12.6\\,\\text{eV}$ is needed to ionise a water molecule. What is the longest wavelength at which a single photon can ionise a water molecule? Give the answer in nanometres.",
+      "answer": 98.4,
+      "unit": "nm",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-12-L2-01",
+      "level": 2,
+      "text": "A GM counter counts $1260$ pulses in $3.00$ minutes near a radiation source. When the source is taken away, the counter counts $72$ pulses of background radiation in the same time. How many pulses per second does the radiation of the source cause? Give the answer in the unit $\\tfrac{1}{\\text{s}}$.",
+      "answer": 6.6,
+      "unit": "1/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L2-02",
+      "level": 2,
+      "text": "The gamma radiation of a caesium-137 source passes first through a $10\\,\\text{mm}$ lead plate and then through a $20\\,\\text{cm}$ concrete wall. The half-value thickness of lead is $5.5\\,\\text{mm}$ and that of concrete $3.9\\,\\text{cm}$. What percentage of the gamma radiation passes through both? Assume a narrow beam.",
+      "answer": 0.81,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L2-03",
+      "level": 2,
+      "text": "A student measures the radiation of a gamma source with a GM counter in periods of $10\\,\\text{s}$. Without a barrier the counter counts $480$ pulses and behind a $12\\,\\text{mm}$ layer of lead $105$ pulses. Without the source the counter counts $5$ pulses of background radiation in the same time. Based on the measurements, what is the half-value thickness of lead for this gamma radiation? Give the answer in millimetres.",
+      "answer": 5.34,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L2-04",
+      "level": 2,
+      "text": "A shield is designed around a radiation source. The half-value thickness for the gamma radiation of the source is $5.5\\,\\text{mm}$ for lead and $39\\,\\text{mm}$ for concrete. How thick a concrete wall attenuates the radiation as much as $10\\,\\text{mm}$ of lead? Give the answer in millimetres.",
+      "answer": 70.9,
+      "unit": "mm",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-12-L3-01",
+      "level": 3,
+      "text": "An alpha particle of americium-241 with a kinetic energy of $5.49\\,\\text{MeV}$ stops in air after a distance of $4.1\\,\\text{cm}$. A beta particle with a kinetic energy of $1.0\\,\\text{MeV}$ travels in a winding path in air for about $3.6\\,\\text{m}$ before it stops. Both give up all their energy by ionising, and in air one ion pair takes on average $34\\,\\text{eV}$. How many times more ion pairs per centimetre does the alpha particle form than the beta particle? Assume that ion pairs are formed evenly along the whole track.",
+      "answer": 482,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L3-02",
+      "level": 3,
+      "text": "In a laboratory a GM counter shows $2400$ pulses per minute near a gamma source. When $11.0\\,\\text{mm}$ of lead is placed in front of the source, the reading is $630$ pulses per minute. The background radiation is $30$ pulses per minute. How thick a lead shield is needed for the pulse rate caused by the radiation of the source to drop to the same as the background radiation, $30$ pulses per minute? Give the answer in millimetres.",
+      "answer": 35,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-12-L3-03",
+      "level": 3,
+      "text": "A WLAN network and a microwave oven use electromagnetic radiation with a frequency of $2.45\\,\\text{GHz}$. The ionisation energy of a water molecule is $12.6\\,\\text{eV}$. How many times greater is the ionisation energy than the energy of one photon of this radiation? Give the answer in the unit $10^{6}$.",
+      "answer": 1.24,
+      "unit": "· 10⁶",
+      "tolerance": 0.02
+    }
+  ]
+}

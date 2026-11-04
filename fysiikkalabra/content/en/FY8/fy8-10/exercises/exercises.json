@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-10-L1-01",
+      "level": 1,
+      "text": "The mass of a carbon-12 atom is exactly $12.000000\\,\\text{u}$. The mass of a hydrogen atom is $m_\\text{H} = 1.007825\\,\\text{u}$ and that of a neutron $m_\\text{n} = 1.008665\\,\\text{u}$. What is the mass defect of the carbon-12 nucleus ${}^{12}_{6}\\text{C}$? Give the answer in atomic mass units.",
+      "answer": 0.09894,
+      "unit": "u",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-02",
+      "level": 1,
+      "text": "The mass defect of the oxygen-16 nucleus is $0.137005\\,\\text{u}$. What is the binding energy of the nucleus? Use $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. Give the answer in megaelectronvolts.",
+      "answer": 127.6,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-03",
+      "level": 1,
+      "text": "The binding energy of the uranium-238 nucleus ${}^{238}_{92}\\text{U}$ is $1801.7\\,\\text{MeV}$. What is its binding energy per nucleon? Give the answer in megaelectronvolts.",
+      "answer": 7.57,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-04",
+      "level": 1,
+      "text": "What energy corresponds to a mass of $1.00\\,\\text{g}$? The speed of light is $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$. Give the answer in the unit $10^{13}\\,\\text{J}$.",
+      "answer": 8.99,
+      "unit": "10¹³ J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L1-05",
+      "level": 1,
+      "text": "The binding energy of the deuterium nucleus ${}^{2}_{1}\\text{H}$ is $2.224\\,\\text{MeV}$. What is its mass defect? Use $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. Give the answer in the unit $10^{-3}\\,\\text{u}$.",
+      "answer": 2.388,
+      "unit": "10⁻³ u",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-10-L2-01",
+      "level": 2,
+      "text": "The mass of an iron-56 atom ${}^{56}_{26}\\text{Fe}$ is $55.934936\\,\\text{u}$. The mass of a hydrogen atom is $m_\\text{H} = 1.007825\\,\\text{u}$ and that of a neutron $m_\\text{n} = 1.008665\\,\\text{u}$. What is the binding energy per nucleon of the iron-56 nucleus? Use $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. Give the answer in megaelectronvolts.",
+      "answer": 8.79,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L2-02",
+      "level": 2,
+      "text": "Radium-226 decays by alpha decay: ${}^{226}_{88}\\text{Ra} \\to {}^{222}_{86}\\text{Rn} + {}^{4}_{2}\\text{He}$. The atomic masses are $m({}^{226}\\text{Ra}) = 226.025410\\,\\text{u}$, $m({}^{222}\\text{Rn}) = 222.017578\\,\\text{u}$ and $m({}^{4}\\text{He}) = 4.002603\\,\\text{u}$. How much energy is released in the decay? Use $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. Give the answer in megaelectronvolts.",
+      "answer": 4.871,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L2-03",
+      "level": 2,
+      "text": "The mass defect of the oxygen-16 nucleus is $0.137005\\,\\text{u}$. Calculate the binding energy of the nucleus in joules by first converting the mass defect to kilograms. Use $1\\,\\text{u} = 1.66054 \\cdot 10^{-27}\\,\\text{kg}$ and $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$. Give the answer in the unit $10^{-11}\\,\\text{J}$.",
+      "answer": 2.045,
+      "unit": "10⁻¹¹ J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L2-04",
+      "level": 2,
+      "text": "The Sun radiates a power of $3.83 \\cdot 10^{26}\\,\\text{W}$ into space. The energy of the radiation comes from nuclear reactions in the core of the Sun, so the mass of the Sun decreases. By how much does the mass of the Sun decrease in one day because of the radiation? The speed of light is $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$. Give the answer in the unit $10^{14}\\,\\text{kg}$.",
+      "answer": 3.68,
+      "unit": "10¹⁴ kg",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-10-L3-01",
+      "level": 3,
+      "text": "One neutron is to be removed from a helium-4 nucleus, leaving a helium-3 nucleus: ${}^{4}_{2}\\text{He} \\to {}^{3}_{2}\\text{He} + \\text{n}$. The atomic masses are $m({}^{4}\\text{He}) = 4.002603\\,\\text{u}$ and $m({}^{3}\\text{He}) = 3.016029\\,\\text{u}$, and the mass of the neutron is $m_\\text{n} = 1.008665\\,\\text{u}$. How much energy does removing the neutron require? Use $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. Give the answer in megaelectronvolts.",
+      "answer": 20.58,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L3-02",
+      "level": 3,
+      "text": "Two deuterium nuclei join to form a helium-4 nucleus: ${}^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\to {}^{4}_{2}\\text{He}$. The binding energy per nucleon is $1.112\\,\\text{MeV}$ for deuterium and $7.074\\,\\text{MeV}$ for helium-4. How much energy is released in the reaction? Calculate it from the binding energies without atomic masses. Give the answer in megaelectronvolts.",
+      "answer": 23.85,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L3-03",
+      "level": 3,
+      "text": "A pot contains $1.00\\,\\text{kg}$ of water that cools from a temperature of $80.0\\,{}^\\circ\\text{C}$ to a temperature of $20.0\\,{}^\\circ\\text{C}$. The specific heat capacity of water is $4.19\\,\\tfrac{\\text{kJ}}{\\text{kg} \\cdot \\text{K}}$ and the speed of light $2.998 \\cdot 10^{8}\\,\\text{m/s}$. By how much does the mass of the water decrease as it cools? Give the answer in the unit $10^{-12}\\,\\text{kg}$.",
+      "answer": 2.8,
+      "unit": "10⁻¹² kg",
+      "tolerance": 0.02
+    }
+  ]
+}

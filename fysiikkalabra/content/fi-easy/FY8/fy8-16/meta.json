@@ -1,0 +1,44 @@
+{
+  "id": "fy8-16",
+  "course": "FY8",
+  "title": "Maailmankaikkeuden kehitys",
+  "goals": [
+    "LOPS FY8: maailmankaikkeuden kehitys",
+    "Täsmennys: pääpiirteittäin kehityskulku alkuräjähdyksestä nykyhetkeen sekä pimeän aineen ja energian merkitys"
+  ],
+  "prerequisites": [
+    "fy8-15"
+  ],
+  "glossary": [
+    "punasiirtymä",
+    "alkuräjähdys",
+    "kosminen taustasäteily",
+    "pimeä aine",
+    "pimeä energia"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "punasiirtymä",
+      "explain": "Spektriviivojen siirtyminen pidemmille aallonpituuksille. Galaksi loittonee, ja sen valon aallonpituus venyy."
+    },
+    {
+      "term": "alkuräjähdys",
+      "explain": "Maailmankaikkeuden laajenemisen alku kuumasta ja tiheästä tilasta. Se tapahtui kaikkialla, ei yhdessä pisteessä."
+    },
+    {
+      "term": "kosminen taustasäteily",
+      "explain": "Alkuaikojen valo, joka vapautui atomien syntyessä. Laajeneminen on venyttänyt sen mikroaalloiksi, ja sitä tulee joka suunnasta."
+    },
+    {
+      "term": "pimeä aine",
+      "explain": "Näkymätön aine, joka ei säteile eikä absorboi valoa. Sen painovoima näkyy galaksien liikkeissä."
+    },
+    {
+      "term": "pimeä energia",
+      "explain": "Tuntematon syy sille, että maailmankaikkeuden laajeneminen kiihtyy. Sen luonnetta ei tiedetä."
+    }
+  ]
+}

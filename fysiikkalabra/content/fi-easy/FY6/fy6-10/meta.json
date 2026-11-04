@@ -1,0 +1,45 @@
+{
+  "id": "fy6-10",
+  "course": "FY6",
+  "title": "Sähkövaraus ja Coulombin laki",
+  "goals": [
+    "LOPS FY6: Coulombin laki ja homogeeninen sähkökenttä",
+    "Täsmennys: varaus, alkeisvaraus, varauksen säilyminen, kappaleiden varautuminen; sähkövirta varauksen siirtymisenä (I = Q : t)",
+    "Täsmennys: pistevarauksen sähkökenttä voidaan käsitellä kvalitatiivisesti"
+  ],
+  "prerequisites": [
+    "fy6-1"
+  ],
+  "glossary": [
+    "sähkövaraus",
+    "alkeisvaraus",
+    "Coulombin laki",
+    "pistevaraus",
+    "influenssi"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "sähkövaraus",
+      "explain": "Hiukkasten ominaisuus, jonka vuoksi ne vaikuttavat toisiinsa. Samanmerkkiset varaukset hylkivät toisiaan ja erimerkkiset vetävät toisiaan puoleensa."
+    },
+    {
+      "term": "alkeisvaraus",
+      "explain": "Pienin varaus, joka voi olla vapaana. Protonilla on tämän suuruinen positiivinen varaus ja elektronilla yhtä suuri negatiivinen varaus."
+    },
+    {
+      "term": "Coulombin laki",
+      "explain": "Laki kertoo kahden pistevarauksen välisen voiman suuruuden. Voima kasvaa varausten tulon mukana ja pienenee nopeasti etäisyyden kasvaessa."
+    },
+    {
+      "term": "pistevaraus",
+      "explain": "Varattu kappale, joka on niin pieni etäisyyteen verrattuna, että sitä voi käsitellä yhtenä pisteenä."
+    },
+    {
+      "term": "influenssi",
+      "explain": "Varattu kappale siirtää johteen vapaita varauksia koskematta siihen. Johteen kokonaisvaraus ei muutu, mutta kappale vetää johdetta puoleensa."
+    }
+  ]
+}
