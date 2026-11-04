@@ -1,0 +1,499 @@
+{
+  "version": 1,
+  "contribution": "Gravitaatiolaki ja tasaisen ympyräliikkeen liikeyhtälö yhdistetään: gravitaatiovoima on satelliitin ainoa voima ja siis ympyräliikkeen kokonaisvoima, josta saadaan ratanopeus $v = \\sqrt{\\gamma M / r}$, kiertoaika ja keskuskappaleen massa; lisäksi painottomuus selitetään vapaana putoamisena ja arvioidaan, milloin ympyrämalli pätee.",
+  "learn": [
+    "selittämään, miksi satelliitti pysyy ympyräradalla ja miksi astronautti on painoton.",
+    "laskemaan satelliitin ratanopeuden ja kiertoajan liikeyhtälöstä $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$.",
+    "arvioimaan, milloin tasaisen ympyräliikkeen malli kuvaa radan hyvin."
+  ],
+  "prior": [
+    "Tasaisessa ympyräliikkeessä kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti keskipistettä, ja ratanopeus on $v = \\tfrac{2\\pi r}{T}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)",
+    "Kahden kappaleen välinen gravitaatiovoima on $F = \\gamma \\tfrac{Mm}{r^2}$, ja putoamiskiihtyvyys etäisyydellä $r$ on $g = \\tfrac{\\gamma M}{r^2}$ (luku *Kappaleiden välinen gravitaatiovoima*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Kansainvälinen avaruusasema ISS kiertää Maata noin $420\\,\\text{km}$:n korkeudella, ja sen voi nähdä kirkkaana liikkuvana pisteenä Suomenkin taivaalla. Asema on massaltaan noin $420\\,000\\,\\text{kg}$, mutta se ei putoa, vaikka mikään ei kannattele sitä. Aseman sisällä astronautit, työkalut ja vesipisarat leijuvat ilmassa.",
+      "question": "Mikä pitää ISS:n radallaan, ja miksi astronautit leijuvat sen sisällä?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "optional": true,
+      "type": "choice",
+      "title": "Kertaa: kokonaisvoima ympyräliikkeessä",
+      "prompt": "Kappale kiertää vaakasuoraa ympyrärataa tasaisella vauhdilla. Mihin suuntaan siihen vaikuttava kokonaisvoima osoittaa?",
+      "choices": [
+        {
+          "text": "Kohti radan keskipistettä.",
+          "correct": true,
+          "feedback": "Oikein. Tasaisessa ympyräliikkeessä nopeuden suunta muuttuu koko ajan, joten kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti keskipistettä, ja kokonaisvoima $\\Sigma F = \\tfrac{mv^2}{r}$ osoittaa samaan suuntaan (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
+        },
+        {
+          "text": "Liikkeen suuntaan eli radan tangentin suuntaan.",
+          "feedback": "Tangentin suuntainen voima muuttaisi vauhtia. Tasaisessa ympyräliikkeessä vauhti pysyy samana ja vain nopeuden suunta muuttuu, joten kokonaisvoima on kohtisuorassa nopeuteen nähden ja osoittaa kohti keskipistettä (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
+        },
+        {
+          "text": "Poispäin keskipisteestä, koska kappale pyrkii ulospäin.",
+          "feedback": "Kappale ei pyri ulospäin vaan suoraan eteenpäin, radan tangentin suuntaan. Jotta se kääntyy, siihen täytyy vaikuttaa voima kohti keskipistettä (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
+        },
+        {
+          "text": "Kokonaisvoima on nolla, koska vauhti ei muutu.",
+          "feedback": "Vauhti ei muutu, mutta nopeuden suunta muuttuu, joten kappaleella on kiihtyvyys. Ilman kokonaisvoimaa kappale liikkuisi suoraan (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: liian pieni nopeus",
+      "prompt": "Satelliitti lähtee vaakasuoraan $400\\,\\text{km}$:n korkeudelta. Sen nopeus on kuitenkin hieman pienempi kuin nopeus, jolla se kiertäisi ympyrärataa. Mitä satelliitille tapahtuu, kun ilmanvastusta ei oteta huomioon?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Se putoaa suoraan alas kohti Maan keskipistettä, koska vaakasuora nopeus ei riitä.",
+          "feedback": "Mallin arvot kumoavat tämän: nopeudella $7{,}60\\,\\text{km/s}$ satelliitti ei putoa suoraan alas, vaan rata kaartuu ja alin korkeus on noin $155\\,\\text{km}$, minkä jälkeen satelliitti palaa $400\\,\\text{km}$:n korkeudelle. Vaakasuora nopeus ei katoa, vaikka gravitaatio vetää satelliittia alaspäin."
+        },
+        {
+          "text": "Se kiertää pienempää ympyrää vähän alempana, koska nopeus riittää vain lyhyemmälle radalle.",
+          "feedback": "Mallin arvot kumoavat tämän: nopeudella $7{,}60\\,\\text{km/s}$ alin korkeus on noin $155\\,\\text{km}$ ja ylin $400\\,\\text{km}$. Rata ei ole ympyrä, koska etäisyys Maan keskipisteestä muuttuu kierroksen aikana: satelliitti laskeutuu ja palaa takaisin lähtökorkeudelle."
+        },
+        {
+          "text": "Rata kaartuu jyrkemmin kuin ympyrä: satelliitti laskeutuu alemmas ja palaa lähtökorkeudelle tai osuu Maahan.",
+          "correct": true,
+          "feedback": "Oikein. Mallissa nopeudella $7{,}60\\,\\text{km/s}$ alin korkeus on noin $155\\,\\text{km}$ ja satelliitti palaa $400\\,\\text{km}$:n korkeudelle, ja nopeudella $7{,}00\\,\\text{km/s}$ se törmää Maahan. Ympyrärata syntyy vain yhdellä nopeudella."
+        },
+        {
+          "text": "Se jää leijumaan paikalleen, koska painovoima on niin korkealla hyvin pieni.",
+          "feedback": "Mallin arvot kumoavat tämän: $400\\,\\text{km}$:n korkeudella gravitaatiovoiman antama kiihtyvyys on noin $8{,}7\\,\\text{m/s}^2$, lähes yhtä suuri kuin maanpinnalla. Satelliitti ei pysy paikallaan, vaan rata kaartuu alaspäin; nopeudella $7{,}00\\,\\text{km/s}$ se törmää Maahan."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kevyt ja raskas satelliitti",
+      "prompt": "Kuutiosatelliitin massa on $1\\,\\text{kg}$ ja ISS:n noin $420\\,000\\,\\text{kg}$. Kummankin halutaan kiertävän ympyrärataa $400\\,\\text{km}$:n korkeudella. Kumman täytyy liikkua nopeammin?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "ISS:n, koska siihen vaikuttaa paljon suurempi gravitaatiovoima.",
+          "feedback": "Mallin arvot kumoavat tämän: nopeudella $7{,}67\\,\\text{km/s}$ kumpikin kiertää samaa rataa samassa ajassa, noin $92{,}4\\,\\text{min}$:ssa. ISS:ään vaikuttaa todella suurempi voima, $3{,}65\\,\\text{MN}$ eikä $8{,}69\\,\\text{N}$, mutta sen massakin on yhtä monta kertaa suurempi, joten kiihtyvyys on sama."
+        },
+        {
+          "text": "Kuutiosatelliitin, koska kevyt kappale pysyy radalla vain suurella nopeudella.",
+          "feedback": "Mallin arvot kumoavat tämän: $1\\,\\text{kg}$:n satelliitti kiertää nopeudella $7{,}67\\,\\text{km/s}$ täsmälleen saman radan kuin $420\\,000\\,\\text{kg}$:n asema. Pieneen massaan vaikuttaa pieni gravitaatiovoima, ja sen kääntämiseen tarvitaan yhtä pieni voima."
+        },
+        {
+          "text": "Kummankin nopeus on sama, koska massa ei vaikuta ympyräradan nopeuteen.",
+          "correct": true,
+          "feedback": "Oikein. Mallissa kaikki massat kiertävät nopeudella $7{,}67\\,\\text{km/s}$ saman radan noin $92{,}4\\,\\text{min}$:ssa. Gravitaatiovoima kasvaa massan mukana, mutta niin kasvaa myös voima, joka tarvitaan kääntämään raskaampaa kappaletta."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 3: miksi astronautti leijuu?",
+      "layout": "models",
+      "prompt": "ISS:ssä astronautti leijuu ilmassa, ja jos hän seisoisi vaa'alla, se näyttäisi nollaa. Mikä selitys on fysikaalisesti oikea?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-paino",
+        "pending": "Palaute avautuu, kun olet lukenut kohdan Painottomuus."
+      },
+      "choices": [
+        {
+          "text": "Noin $400\\,\\text{km}$:n korkeudella ei ole enää painovoimaa, joten mikään ei vedä astronauttia.",
+          "feedback": "ISS:n korkeudella gravitaatiovoiman antama kiihtyvyys on noin $8{,}6\\,\\text{m/s}^2$, noin $88\\,\\%$ maanpinnan arvosta. Ilman gravitaatiota asema ei kiertäisi Maata vaan lentäisi suoraan pois."
+        },
+        {
+          "text": "Painovoima on siellä niin heikko, ettei astronautti tunne sitä lainkaan.",
+          "feedback": "Painovoima ei ole heikko: $70\\,\\text{kg}$:n astronauttiin vaikuttaa ISS:llä noin $605\\,\\text{N}$:n paino, kun maanpinnalla se on $687\\,\\text{N}$. Leijuminen johtuu siitä, että astronautti ja asema putoavat yhdessä."
+        },
+        {
+          "text": "Astronautti ja asema putoavat vapaasti samalla kiihtyvyydellä, joten lattia ei paina häntä.",
+          "correct": true,
+          "feedback": "Oikein. Kumpaankin vaikuttaa vain gravitaatio, ja kumpikin saa saman kiihtyvyyden. Koska ne putoavat samalla tavalla, tukivoima on nolla: tätä vapaata putoamista kutsutaan painottomuudeksi."
+        },
+        {
+          "text": "Keskipakoisvoima kumoaa painovoiman, joten astronauttiin ei vaikuta kokonaisvoimaa.",
+          "feedback": "Jos jokin voima kumoaisi gravitaation, kokonaisvoima olisi nolla ja asema jatkaisi suoraan eteenpäin. Asema kuitenkin kiertää Maata, joten siihen vaikuttaa kokonaisvoima kohti Maan keskipistettä: se on gravitaatiovoima."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Laukaise satelliitti vaakasuoraan ja seuraa, millaisen radan Maan gravitaatio sille piirtää.",
+      "howto": "Valitse lähtökorkeus ja satelliitin massa ja säädä lähtönopeutta $v$. *Laukaise* lähettää satelliitin radan ylimmästä kohdasta vaakasuoraan oikealle. Musta viiva on satelliitin rata ja katkoviiva ympyrä, jonka säde on lähtöhetken etäisyys. Oikealla (puhelimessa alla) oleva kuvaaja näyttää satelliitin korkeuden $h$ maanpinnasta sen mukaan, kuinka monta astetta satelliitti on kiertänyt Maan ympäri; katkoviiva on lähtökorkeus. Kun rata on ympyrä, kuvaaja on vaakasuora viiva. Ensimmäisen kierroksen jälkeen lukemissa näkyvät radan alin ja ylin korkeus sekä kiertoaika $T$. Kun muutat jotakin arvoa, satelliitti palaa lähtöpaikalle. *Nopeus* muuttaa vain animaation tahtia: kierros kestää ruudulla muutaman sekunnin, ja aika $t$ on simuloitua aikaa.",
+      "model": "Satelliittiin vaikuttaa vain Maan gravitaatiovoima $F = \\gamma \\tfrac{Mm}{r^2}$ kohti Maan keskipistettä, missä $M = 5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja Maan säde $R = 6371\\,\\text{km}$. Ilmanvastusta, Kuun ja Auringon gravitaatiota ja Maan liikettä ei ole mallissa, joten esimerkiksi $155\\,\\text{km}$:n korkeudelle laskeutuva rata ei todellisuudessa säilyisi. Maa pysyy paikallaan, koska satelliitti on paljon kevyempi. Kuun etäisyydellä satelliitti on koekappale: oikean Kuun oma massa liikuttaisi myös Maata. Kaikki lukemat ovat mallin arvoja.",
+      "calc": "Rataa ei piirretä valmiina, vaan liike lasketaan pienin aika-askelin. Jokaisella askeleella lasketaan kiihtyvyys $\\tfrac{F}{m} = \\tfrac{\\gamma M}{r^2}$ kohti Maan keskipistettä, ja paikka ja nopeus päivitetään sen avulla (nopeus-Verlet-menetelmä, askel $\\tfrac{1}{1500}$ paikallisen ympyräradan kiertoajasta). Kiertoaika $T$ on aika, jossa satelliitti kiertää täyden kierroksen Maan ympäri. Punaisen voimanuolen pituus on lähtöhetkellä sama kaikilla massoilla ja pienenee kuten $\\tfrac{1}{r^2}$; voiman suuruus näkyy lukemissa. Sinisen nopeusnuolen pituus on verrannollinen vauhtiin."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: millä nopeudella rata on ympyrä?",
+      "intro": "Testaa ennuste 1. Lähtökorkeus on $400\\,\\text{km}$ ja massa pysyy vakiona; muuta vain lähtönopeutta. Laukaise satelliitti ensin nopeudella $7{,}00\\,\\text{km/s}$, sitten esimerkiksi nopeuksilla $7{,}60$, $8{,}00$ ja $7{,}70\\,\\text{km/s}$. Kirjaa jokaisen laukaisun jälkeen radan alin ja ylin korkeus. Etsi nopeus, jolla ne ovat lähes yhtä suuret.",
+      "initial": {
+        "h": "400",
+        "m": "1000",
+        "v": 7
+      },
+      "locked": [
+        "h",
+        "m"
+      ],
+      "vary": "v",
+      "names": {
+        "v": "lähtönopeus $v$",
+        "h": "lähtökorkeus $h$",
+        "m": "satelliitin massa $m$"
+      },
+      "values": {
+        "v": {"7": "$7{,}00\\,\\text{km/s}$"},
+        "h": {"400": "$400\\,\\text{km}$"},
+        "m": {"1000": "$1000\\,\\text{kg}$"}
+      },
+      "units": {
+        "v": "km/s",
+        "h": "km",
+        "m": "kg"
+      },
+      "measure": [
+        {
+          "key": "hmin",
+          "label": "alin korkeus (km)"
+        },
+        {
+          "key": "hmax",
+          "label": "ylin korkeus (km)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "Millä lähtönopeudella satelliitti kiertää $400\\,\\text{km}$:n korkeudella ympyrärataa? Vastaa kilometreinä sekunnissa kahden desimaalin tarkkuudella.",
+        "answer": 7.67,
+        "unit": "km/s",
+        "tolerance": 0.001,
+        "hints": [
+          "Kun nopeus on liian pieni, alin korkeus jää alle $400\\,\\text{km}$:n; kun se on liian suuri, ylin korkeus nousee yli $400\\,\\text{km}$:n. Kumpaan suuntaan nopeutta pitää muuttaa?",
+          "Puolita väliä: jos $7{,}60\\,\\text{km/s}$ on liian pieni ja $7{,}70\\,\\text{km/s}$ liian suuri, kokeile $7{,}65\\,\\text{km/s}$ ja jatka siitä.",
+          "Ympyrärata syntyy, kun gravitaatiovoima on juuri ympyräliikkeen vaatima voima: $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$. Voit tarkistaa tuloksen laskemalla $v = \\sqrt{\\tfrac{\\gamma M}{r}}$, kun $r = 6771\\,\\text{km}$."
+        ],
+        "mistakes": [
+          {
+            "value": 7.6,
+            "feedback": "Nopeudella $7{,}60\\,\\text{km/s}$ alin korkeus on noin $155\\,\\text{km}$, joten rata ei ole ympyrä. Kasvata nopeutta pienin askelin, kunnes alin ja ylin korkeus ovat lähes samat."
+          },
+          {
+            "value": 30.8,
+            "feedback": "Sijoitit laskussa korkeuden $h = 400\\,\\text{km}$ etäisyyden $r$ paikalle. Radan säde mitataan Maan keskipisteestä: $r = 6371\\,\\text{km} + 400\\,\\text{km} = 6771\\,\\text{km}$."
+          }
+        ],
+        "solution": "**Annettu:** lähtökorkeus $h = 400\\,\\text{km}$; simulaatiossa $M = 5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja $R = 6371\\,\\text{km}$; $\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$\n\n**Kysytty:** ympyräradan lähtönopeus $v$ yksikössä km/s\n\n**Periaate:** Simulaatiossa ympyrärata löytyy nopeudella, jolla radan alin ja ylin korkeus ovat yhtä suuret. Tulos voidaan tarkistaa laskemalla: satelliittiin vaikuttaa vain gravitaatio, joten se on ympyräliikkeen kokonaisvoima, $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$.\n\n**Kaava:** $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$, josta massa $m$ supistuu ja $v = \\sqrt{\\dfrac{\\gamma M}{r}}$, missä $r = R + h$\n\n**Muunnokset:** $r = 6371\\,\\text{km} + 400\\,\\text{km} = 6771\\,\\text{km} = 6{,}771 \\cdot 10^{6}\\,\\text{m}$\n\n**Sijoitus:** $\\gamma M = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot 5{,}97 \\cdot 10^{24}\\,\\text{kg} = 3{,}984 \\cdot 10^{14}\\,\\text{m}^3/\\text{s}^2$, joten $v = \\sqrt{\\dfrac{3{,}984 \\cdot 10^{14}\\,\\text{m}^3/\\text{s}^2}{6{,}771 \\cdot 10^{6}\\,\\text{m}}} = 7671\\,\\text{m/s} = 7{,}671\\,\\text{km/s}$\n\n**Vastaus:** $7{,}67\\,\\text{km/s}$, kahdella desimaalilla, koska simulaation nopeussäätimen askel on $0{,}01\\,\\text{km/s}$.\n\n**Järkevyys:** Simulaatiossa nopeudella $7{,}67\\,\\text{km/s}$ alin korkeus on noin $396\\,\\text{km}$ ja ylin $400\\,\\text{km}$, ja nopeudella $7{,}68\\,\\text{km/s}$ ylin korkeus nousee noin $432\\,\\text{km}$:iin, joten ympyräradan nopeus on näiden välissä. Tulos on hieman suurempi kuin esimerkin ISS:n $7{,}66\\,\\text{km/s}$, koska rata on $20\\,\\text{km}$ alempana."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: vaikuttaako satelliitin massa?",
+      "intro": "Testaa ennuste 2. Lähtökorkeus on $400\\,\\text{km}$ ja lähtönopeus $7{,}67\\,\\text{km/s}$; muuta vain satelliitin massaa. Laukaise jokainen satelliitti ja kirjaa ensimmäisen kierroksen jälkeen alin ja ylin korkeus, kiertoaika ja gravitaatiovoima.",
+      "initial": {
+        "h": "400",
+        "v": 7.67,
+        "m": "1"
+      },
+      "locked": [
+        "h",
+        "v"
+      ],
+      "vary": "m",
+      "names": {
+        "v": "lähtönopeus $v$",
+        "h": "lähtökorkeus $h$",
+        "m": "satelliitin massa $m$"
+      },
+      "values": {
+        "h": {"400": "$400\\,\\text{km}$"},
+        "m": {"1": "$1\\,\\text{kg}$"}
+      },
+      "units": {
+        "v": "km/s",
+        "h": "km",
+        "m": "kg"
+      },
+      "measure": [
+        {
+          "key": "hmin",
+          "label": "alin korkeus (km)"
+        },
+        {
+          "key": "hmax",
+          "label": "ylin korkeus (km)"
+        },
+        {
+          "key": "T",
+          "label": "T (min)"
+        },
+        {
+          "key": "F",
+          "label": "F (N)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "data",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Todellisia ratoja",
+      "text": "Taulukossa on neljän lähes ympyrärataa kiertävän Maan satelliitin radan säde $r$ (etäisyys Maan keskipisteestä) ja kiertoaika $T$.\n\n| Satelliitti | $r$ (km) | $T$ |\n| --- | --- | --- |\n| ISS | $6790$ | $92{,}9\\,\\text{min}$ |\n| GPS-satelliitti | $26\\,560$ | $11\\,\\text{h}\\;58\\,\\text{min}$ |\n| geostationaarinen satelliitti | $42\\,164$ | $23\\,\\text{h}\\;56\\,\\text{min}$ |\n| Kuu | $384\\,400$ | $27{,}32\\,\\text{d}$ |",
+      "source": "statistics",
+      "source_note": "NASA: International Space Station Facts and Figures ja Moon Fact Sheet (2024); GPS.gov: Space Segment (2024); geostationaarisen radan kiertoaika on Maan pyörähdysaika eli tähtivuorokausi.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske GPS-satelliitin ratanopeus taulukon arvoista. Vastaa kilometreinä sekunnissa.",
+        "answer": 3.87,
+        "unit": "km/s",
+        "tolerance": 0.02,
+        "hints": [
+          "Satelliitti kulkee yhden kierroksen aikana ympyrän kehän pituuden. Mikä on kehän pituus?",
+          "$v = \\tfrac{2\\pi r}{T}$. Muunna kiertoaika ensin sekunneiksi.",
+          "$T = 11 \\cdot 3600\\,\\text{s} + 58 \\cdot 60\\,\\text{s} = 43\\,080\\,\\text{s}$ ja $r = 2{,}656 \\cdot 10^{7}\\,\\text{m}$."
+        ],
+        "mistakes": [
+          {
+            "value": 232,
+            "feedback": "Käytit kiertoaikana minuutteja. Muunna $11\\,\\text{h}\\;58\\,\\text{min}$ sekunneiksi: $43\\,080\\,\\text{s}$."
+          },
+          {
+            "value": 2.95,
+            "feedback": "Käytit radan säteenä satelliitin korkeutta maanpinnasta. Taulukon $r$ on jo etäisyys Maan keskipisteestä, joten käytä sitä sellaisenaan: $r = 26\\,560\\,\\text{km}$."
+          }
+        ],
+        "solution": "**Annettu:** GPS-satelliitin radan säde $r = 26\\,560\\,\\text{km}$ ja kiertoaika $T = 11\\,\\text{h}\\;58\\,\\text{min}$ taulukosta\n\n**Kysytty:** ratanopeus $v$ yksikössä km/s\n\n**Periaate:** Rata on lähes ympyrä, ja satelliitti kulkee tasaisella vauhdilla yhden kierroksen aikana ympyrän kehän $2\\pi r$ kiertoajassa $T$.\n\n**Kaava:** $v = \\dfrac{2\\pi r}{T}$\n\n**Muunnokset:** $r = 26\\,560\\,\\text{km} = 2{,}656 \\cdot 10^{7}\\,\\text{m}$ ja $T = 11 \\cdot 3600\\,\\text{s} + 58 \\cdot 60\\,\\text{s} = 43\\,080\\,\\text{s}$\n\n**Sijoitus:** $v = \\dfrac{2\\pi \\cdot 2{,}656 \\cdot 10^{7}\\,\\text{m}}{43\\,080\\,\\text{s}} = 3873{,}8\\,\\text{m/s} = 3{,}8738\\,\\text{km/s}$\n\n**Vastaus:** $3{,}87\\,\\text{km/s}$, kolme merkitsevää numeroa kuten kiertoajassa $11\\,\\text{h}\\;58\\,\\text{min}$.\n\n**Järkevyys:** GPS-satelliitti on noin neljä kertaa kauempana Maan keskipisteestä kuin ISS ($26\\,560\\,\\text{km} : 6790\\,\\text{km} \\approx 3{,}9$), ja sen nopeus on noin puolet ISS:n nopeudesta $7{,}65\\,\\text{km/s}$. Ympyräradan malli $v = \\sqrt{\\tfrac{\\gamma M}{r}}$ antaa samalle säteelle $3{,}873\\,\\text{km/s}$, lähes saman arvon."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mikä ratkaisee ympyräradan?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: mitä radalle tapahtui, kun lähtönopeus oli liian pieni tai liian suuri, ja millä nopeudella rata oli ympyrä? Vaikuttiko satelliitin massa rataan, vaikka gravitaatiovoima muuttui? Mikä voima pitää satelliitin ympyräradalla?",
+      "model": "Kun lähtönopeus oli $7{,}00\\,\\text{km/s}$, satelliitti törmäsi Maahan, ja nopeudella $7{,}60\\,\\text{km/s}$ se laskeutui noin $155\\,\\text{km}$:n korkeudelle ja palasi lähtökorkeudelle. Nopeudella $8{,}00\\,\\text{km/s}$ se nousi noin $1700\\,\\text{km}$:n korkeudelle. Ympyrärata syntyi noin nopeudella $7{,}67\\,\\text{km/s}$, jolloin alin ja ylin korkeus olivat lähes samat. Kokeessa 2 kaikki massat kiersivät saman radan noin $92{,}4\\,\\text{min}$:ssa, vaikka gravitaatiovoima kasvoi massan mukana ($8{,}69\\,\\text{N}$, $8{,}69\\,\\text{kN}$, $3{,}65\\,\\text{MN}$). Satelliittia pitää radallaan Maan gravitaatiovoima, joka on ainoa ja siis kokonaisvoima: ympyräradalla se on juuri ympyräliikkeen vaatima voima $\\tfrac{mv^2}{r}$. Koska molemmat ovat verrannollisia massaan, massa ei vaikuta ratanopeuteen. Arvot ovat mallin arvoja.",
+      "criteria": [
+        "Vastaus kertoo, että liian pienellä nopeudella satelliitti laskeutui tai törmäsi Maahan ja liian suurella nousi kauemmas.",
+        "Vastauksessa on omista lukemista ympyräradan nopeus, noin $7{,}7\\,\\text{km/s}$ $400\\,\\text{km}$:n korkeudella.",
+        "Vastaus kertoo, että massa ei muuttanut rataa eikä kiertoaikaa, vaikka voima muuttui.",
+        "Vastaus nimeää gravitaatiovoiman ainoaksi voimaksi, joka toimii ympyräliikkeen kokonaisvoimana kohti Maan keskipistettä."
+      ]
+    },
+    {
+      "id": "teoria-1",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "teoria-paino",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Painottomuus"
+      ]
+    },
+    {
+      "id": "teoria-malli",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Milloin ympyrämalli pätee"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja teoriaan. Palaa sitten alun kysymykseen: mikä pitää ISS:n radallaan, ja miksi astronautit leijuvat sen sisällä?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2",
+        "ennuste-3"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija laskee ISS:n ratanopeuden, kun asema kiertää $420\\,\\text{km}$:n korkeudella. Hän kirjoittaa\n\n$$\\begin{aligned} v &= \\sqrt{\\frac{\\gamma M}{h}} \\\\ &= \\sqrt{\\frac{3{,}984 \\cdot 10^{14}}{420\\,000}}\\,\\text{m/s} \\\\ &\\approx 30{,}8\\,\\text{km/s} \\end{aligned}$$\n\nmissä hän on laskenut $\\gamma M = 6{,}674 \\cdot 10^{-11} \\cdot 5{,}97 \\cdot 10^{24}\\,\\text{m}^3/\\text{s}^2 = 3{,}984 \\cdot 10^{14}\\,\\text{m}^3/\\text{s}^2$.\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Kaavaan on sijoitettu korkeus $h$, vaikka radan säde mitataan Maan keskipisteestä: $r = R + h = 6791\\,\\text{km}$.",
+          "correct": true,
+          "feedback": "Oikein. Gravitaatiovoima riippuu etäisyydestä Maan keskipisteeseen, ei maanpintaan. Oikealla säteellä $r = 6{,}791 \\cdot 10^{6}\\,\\text{m}$ nopeus on $7{,}66\\,\\text{km/s}$. Tulos $30{,}8\\,\\text{km/s}$ on lähes nelinkertainen oikeaan nopeuteen verrattuna."
+        },
+        {
+          "text": "Kaavaan olisi pitänyt sijoittaa myös aseman massa.",
+          "feedback": "Aseman massa supistuu pois yhtälöstä $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$, joten sitä ei tarvita. Virhe on etäisyydessä: kaavaan on sijoitettu korkeus $420\\,\\text{km}$ etäisyyden $r = R + h$ asemesta."
+        },
+        {
+          "text": "Laskussa olisi pitänyt käyttää putoamiskiihtyvyyttä $g = 9{,}81\\,\\text{m/s}^2$ gravitaatiovakion sijasta.",
+          "feedback": "Arvo $9{,}81\\,\\text{m/s}^2$ pätee vain maanpinnalla; ISS:n korkeudella kiihtyvyys on noin $8{,}6\\,\\text{m/s}^2$. Gravitaatiovakion käyttö on oikein. Virhe on etäisyydessä: kaavaan kuuluu $r = R + h$ eikä korkeus $h$."
+        },
+        {
+          "text": "Neliöjuurta ei tarvita, koska oikea kaava on $v = \\tfrac{\\gamma M}{r^2}$.",
+          "feedback": "Lauseke $\\tfrac{\\gamma M}{r^2}$ on kiihtyvyys eikä nopeus; sen yksikkö on $\\text{m/s}^2$. Ratanopeus saadaan yhtälöstä $v^2 = \\tfrac{\\gamma M}{r}$, joten neliöjuuri kuuluu kaavaan. Virhe on se, että kaavaan on sijoitettu korkeus $h$ eikä etäisyyttä $r = R + h$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Hubble-avaruusteleskooppi kiertää Maata lähes ympyrärataa, ja NASAn mukaan sen kiertoaika on noin $95{,}4\\,\\text{min}$. Kuinka korkealla maanpinnasta Hubble kiertää? Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$. Vastaa kilometreinä.",
+      "answer": 544,
+      "unit": "km",
+      "tolerance": 0.02,
+      "hints": [
+        "Tunnet nyt kiertoajan etkä nopeutta. Millä kahdella yhtälöllä nopeus, säde ja kiertoaika liittyvät toisiinsa ympyräradalla?",
+        "Sijoita $v = \\tfrac{2\\pi r}{T}$ yhtälöön $v^2 = \\tfrac{\\gamma M}{r}$ ja ratkaise $r^3 = \\tfrac{\\gamma M T^2}{4\\pi^2}$.",
+        "$T = 95{,}4 \\cdot 60\\,\\text{s} = 5724\\,\\text{s}$, joten $r = \\sqrt[3]{\\tfrac{\\gamma M T^2}{4\\pi^2}} \\approx 6{,}92 \\cdot 10^{6}\\,\\text{m}$. Muista lopuksi vähentää Maan säde."
+      ],
+      "mistakes": [
+        {
+          "value": 6915,
+          "feedback": "Sait radan säteen eli etäisyyden Maan keskipisteestä. Korkeus maanpinnasta on $h = r - R$: vähennä vielä Maan säde $6371\\,\\text{km}$."
+        }
+      ],
+      "solution": "**Annettu:** kiertoaika $T = 95{,}4\\,\\text{min}$, Maan massa $M = 5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $R = 6371\\,\\text{km}$, $\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$\n\n**Kysytty:** korkeus maanpinnasta $h$ kilometreinä\n\n**Periaate:** Teleskooppiin vaikuttaa vain Maan gravitaatiovoima, joten se on ympyräliikkeen kokonaisvoima: $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$. Lisäksi tasaisessa ympyräliikkeessä $v = \\tfrac{2\\pi r}{T}$. Kun nopeus sijoitetaan, jäljelle jää yhtälö säteelle $r$.\n\n**Kaava:** $\\dfrac{\\gamma M}{r} = v^2 = \\dfrac{4\\pi^2 r^2}{T^2}$, josta $r^3 = \\dfrac{\\gamma M T^2}{4\\pi^2}$, $r = \\sqrt[3]{\\dfrac{\\gamma M T^2}{4\\pi^2}}$ ja $h = r - R$\n\n**Muunnokset:** $T = 95{,}4 \\cdot 60\\,\\text{s} = 5724\\,\\text{s}$ ja $R = 6371\\,\\text{km} = 6{,}371 \\cdot 10^{6}\\,\\text{m}$\n\n**Sijoitus:** $\\gamma M = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot 5{,}97 \\cdot 10^{24}\\,\\text{kg} = 3{,}984 \\cdot 10^{14}\\,\\text{m}^3/\\text{s}^2$, $\\gamma M T^2 = 3{,}984 \\cdot 10^{14}\\,\\tfrac{\\text{m}^3}{\\text{s}^2} \\cdot (5724\\,\\text{s})^2 = 1{,}3054 \\cdot 10^{22}\\,\\text{m}^3$ ja $r = \\sqrt[3]{\\dfrac{1{,}3054 \\cdot 10^{22}\\,\\text{m}^3}{4\\pi^2}} = \\sqrt[3]{3{,}307 \\cdot 10^{20}\\,\\text{m}^3} = 6{,}915 \\cdot 10^{6}\\,\\text{m}$, joten $h = 6{,}915 \\cdot 10^{6}\\,\\text{m} - 6{,}371 \\cdot 10^{6}\\,\\text{m} = 0{,}544 \\cdot 10^{6}\\,\\text{m} = 544\\,\\text{km}$\n\n**Vastaus:** noin $544\\,\\text{km}$, kolme merkitsevää numeroa kuten kiertoajassa $95{,}4\\,\\text{min}$.\n\n**Järkevyys:** Hubblen kiertoaika on hieman pidempi kuin ISS:n $92{,}9\\,\\text{min}$, joten sen täytyy kiertää hieman ylempänä kuin ISS ($420\\,\\text{km}$), kuten tulos kertoo. Tarkistus: säteellä $6915\\,\\text{km}$ ratanopeus on $v = \\tfrac{2\\pi r}{T} \\approx 7{,}59\\,\\text{km/s}$, ja $\\sqrt{\\tfrac{\\gamma M}{r}}$ antaa saman arvon."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa, tason 2 tehtävissä tarvitaan kaksi vaihetta tai kaavan ratkaiseminen toiselle suureelle, ja taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Ratanopeus ja etäisyys",
+      "prompt": "Satelliitti A kiertää Maata ympyrärataa, jonka säde on $r$. Satelliitti B kiertää ympyrärataa, jonka säde on $4r$. Miten B:n ratanopeus vertautuu A:n ratanopeuteen?",
+      "choices": [
+        {
+          "text": "B:n ratanopeus on puolet A:n ratanopeudesta.",
+          "correct": true,
+          "feedback": "Oikein. $v = \\sqrt{\\tfrac{\\gamma M}{r}}$, joten kun säde kasvaa nelinkertaiseksi, nopeus muuttuu tekijällä $\\tfrac{1}{\\sqrt{4}} = \\tfrac{1}{2}$."
+        },
+        {
+          "text": "B:n ratanopeus on neljäsosa A:n ratanopeudesta.",
+          "feedback": "Neljäsosa tulisi, jos nopeus olisi kääntäen verrannollinen säteeseen. Ratanopeus on kuitenkin $v = \\sqrt{\\tfrac{\\gamma M}{r}}$, joten säteen nelinkertaistuminen pienentää nopeutta tekijällä $\\tfrac{1}{\\sqrt{4}} = \\tfrac{1}{2}$."
+        },
+        {
+          "text": "B:n ratanopeus on kaksinkertainen, koska sen rata on pidempi.",
+          "feedback": "Pidempi rata ei vaadi suurempaa nopeutta. Kaukana gravitaatio on heikompi, ja heikompi voima jaksaa kääntää vain hitaammin liikkuvaa kappaletta ympyräradalle: $v = \\sqrt{\\tfrac{\\gamma M}{r}}$ pienenee säteen kasvaessa."
+        },
+        {
+          "text": "Ratanopeudet ovat yhtä suuret, koska molemmat kiertävät samaa Maata.",
+          "feedback": "Maan massa on sama, mutta ratanopeus riippuu myös säteestä: $v = \\sqrt{\\tfrac{\\gamma M}{r}}$. Nelinkertaisella säteellä nopeus on puolet."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Marsin massa sen kuun radasta",
+      "prompt": "Marsin kuu Phobos kiertää Marsia lähes ympyrärataa, jonka säde on $9376\\,\\text{km}$, ja sen kiertoaika on $7\\,\\text{h}\\;39\\,\\text{min}$. Laske Marsin massa kilogrammoina. Kirjoita kymmenen potenssi e-merkinnällä: esimerkiksi $5{,}00 \\cdot 10^{23}$ kirjoitetaan 5,00e23.",
+      "answer": 6.43e+23,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Phobokseen vaikuttaa vain Marsin gravitaatio. Mikä yhtälö kertoo, että gravitaatiovoima on ympyräliikkeen kokonaisvoima?",
+        "$\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$ ja $v = \\tfrac{2\\pi r}{T}$, joten $M = \\tfrac{4\\pi^2 r^3}{\\gamma T^2}$.",
+        "$T = 7 \\cdot 3600\\,\\text{s} + 39 \\cdot 60\\,\\text{s} = 27\\,540\\,\\text{s}$ ja $r = 9{,}376 \\cdot 10^{6}\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 6.89e+23,
+          "feedback": "Kirjoitit kiertoajan muodossa $7{,}39\\,\\text{h}$. Aika $7\\,\\text{h}\\;39\\,\\text{min}$ on $7 \\cdot 3600\\,\\text{s} + 39 \\cdot 60\\,\\text{s} = 27\\,540\\,\\text{s}$."
+        }
+      ],
+      "solution": "**Annettu:** Phoboksen radan säde $r = 9376\\,\\text{km}$ ja kiertoaika $T = 7\\,\\text{h}\\;39\\,\\text{min}$, $\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$\n\n**Kysytty:** Marsin massa $M$\n\n**Periaate:** Phobokseen vaikuttaa vain Marsin gravitaatiovoima, joten se on ympyräliikkeen kokonaisvoima: $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$. Phobos on paljon Marsia kevyempi, joten Mars pysyy käytännössä paikallaan. Nopeus saadaan kiertoajasta: $v = \\tfrac{2\\pi r}{T}$.\n\n**Kaava:** $\\gamma \\dfrac{M}{r} = v^2 = \\dfrac{4\\pi^2 r^2}{T^2}$, josta $M = \\dfrac{4\\pi^2 r^3}{\\gamma T^2}$\n\n**Muunnokset:** $r = 9376\\,\\text{km} = 9{,}376 \\cdot 10^{6}\\,\\text{m}$ ja $T = 7 \\cdot 3600\\,\\text{s} + 39 \\cdot 60\\,\\text{s} = 27\\,540\\,\\text{s}$\n\n**Sijoitus:** $4\\pi^2 r^3 = 4\\pi^2 \\cdot (9{,}376 \\cdot 10^{6}\\,\\text{m})^3 = 3{,}2540 \\cdot 10^{22}\\,\\text{m}^3$ ja $\\gamma T^2 = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot (27\\,540\\,\\text{s})^2 = 5{,}0619 \\cdot 10^{-2}\\,\\tfrac{\\text{m}^3}{\\text{kg}}$, joten $M = \\dfrac{3{,}2540 \\cdot 10^{22}\\,\\text{m}^3}{5{,}0619 \\cdot 10^{-2}\\,\\text{m}^3/\\text{kg}} = 6{,}428 \\cdot 10^{23}\\,\\text{kg}$\n\n**Vastaus:** $6{,}43 \\cdot 10^{23}\\,\\text{kg}$, kolme merkitsevää numeroa kuten kiertoajassa $7\\,\\text{h}\\;39\\,\\text{min}$.\n\n**Järkevyys:** NASAn mukaan Marsin massa on $6{,}42 \\cdot 10^{23}\\,\\text{kg}$, noin kymmenesosa Maan massasta $5{,}97 \\cdot 10^{24}\\,\\text{kg}$. Mars on Maata pienempi planeetta, joten tulos on oikeaa suuruusluokkaa. Yksiköt: $\\tfrac{\\text{m}^3}{\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot \\text{s}^2} = \\tfrac{\\text{m}\\cdot\\text{kg}^2}{\\text{N}\\cdot\\text{s}^2} = \\text{kg}$, koska $1\\,\\text{N} = 1\\,\\tfrac{\\text{kg}\\cdot\\text{m}}{\\text{s}^2}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Piirrä ja selitä",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy5-6/malli",
+      "prompt": "Piirrä paperille voimakuvio satelliitista, joka kiertää Maata ympyrärataa, kun satelliitti on radan ylimmässä kohdassa. Merkitse satelliitin viereen myös sen nopeus ja kiihtyvyys. Selitä sitten voimakuvion avulla, miksi satelliitti ei putoa Maahan, vaikka gravitaatio vetää sitä koko ajan.",
+      "model": "Satelliittiin vaikuttaa vain yksi voima, Maan gravitaatiovoima $\\overline{F}$, joka lähtee satelliitin keskipisteestä kohti Maan keskipistettä, tässä kohdassa suoraan alas. Muita voimia ei ole: ei ilmanvastusta, ei liikkeen suuntaista voimaa eikä keskipakoisvoimaa. Nopeus $\\overline{v}$ on radan tangentin suuntainen ja kiihtyvyys $\\overline{a}_\\text{n}$ osoittaa kokonaisvoiman suuntaan kohti Maan keskipistettä. Satelliitti putoaa koko ajan kohti Maata, mutta samalla se liikkuu niin nopeasti sivuttain, että rata kaartuu samaa tahtia kuin Maan pinta: etäisyys keskipisteestä ei muutu. Gravitaatiovoima on ympyräliikkeen kokonaisvoima, $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "satelliitti piirretään yksinään suorakulmiona"
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "ainoa voima on gravitaatiovoima $\\overline{F}$; ei keskipakoisvoimaa eikä liikkeen suuntaista voimaa"
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "gravitaatiovoima osoittaa kohti Maan keskipistettä, nopeus radan tangentin suuntaan"
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "nopeus ja kiihtyvyys ovat ohuina nuolina kappaleen vieressä, eivät voimina"
+        },
+        "Selitys kertoo, että gravitaatio kääntää nopeuden suuntaa mutta sivuttainen nopeus pitää satelliitin samalla etäisyydellä Maan keskipisteestä."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

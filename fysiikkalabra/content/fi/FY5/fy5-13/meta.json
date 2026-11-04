@@ -1,0 +1,24 @@
+{
+  "id": "fy5-13",
+  "course": "FY5",
+  "title": "Seisova aalto: solmut, kuvut ja ominaistaajuudet",
+  "goals": [
+    "LOPS FY5: seisovat aallot",
+    "Temaattinen tarkastelu: soittimet; kielen ja ilmapatsaan ominaistaajuudet"
+  ],
+  "prerequisites": [
+    "fy5-12"
+  ],
+  "glossary": [
+    "seisova aalto",
+    "solmu",
+    "kupu",
+    "ominaistaajuus",
+    "perustaajuus",
+    "resonanssi",
+    "yläsävel"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-14-L1-01",
+      "level": 1,
+      "text": "The voltage of a red LED is $2.0\\,\\text{V}$, and a current of $15\\,\\text{mA}$ flows through it. What is the power of the LED? Give the answer in milliwatts.",
+      "answer": 30.0,
+      "unit": "mW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L1-02",
+      "level": 1,
+      "text": "A white LED is connected to a $5.0\\,\\text{V}$ USB power supply through a series resistor. The voltage of the LED is $3.1\\,\\text{V}$, and the desired current is $20\\,\\text{mA}$. What series resistor is needed? Give the answer in ohms.",
+      "answer": 95.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L1-03",
+      "level": 1,
+      "text": "A silicon diode is connected in the forward direction to a $9.0\\,\\text{V}$ battery through a $1.0\\,\\text{k}\\Omega$ resistor. The voltage of the diode is $0.70\\,\\text{V}$. What current flows in the circuit? Give the answer in milliamperes.",
+      "answer": 8.3,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L1-04",
+      "level": 1,
+      "text": "The solar panel of a cabin charges a battery. The voltage of the panel is $17.5\\,\\text{V}$, and the current it gives is $5.40\\,\\text{A}$. What is the power of the panel?",
+      "answer": 94.5,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L1-05",
+      "level": 1,
+      "text": "The graph shows the characteristic curve of a green LED. Read from the graph the voltage of the LED when its current is $10\\,\\text{mA}$, and calculate the power of the LED at this current. Give the answer in milliwatts.",
+      "figure": "fy6-14/ex-led",
+      "answer": 22.0,
+      "unit": "mW",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-14-L2-01",
+      "level": 2,
+      "text": "A student connects a red LED and a $470\\,\\Omega$ series resistor in series to a $9.0\\,\\text{V}$ battery, but the LED is accidentally in the reverse direction. Assume that no current flows through the LED in the reverse direction. What is the voltage across the LED? Give the answer in volts.",
+      "answer": 9.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L2-02",
+      "level": 2,
+      "text": "Two red LEDs and a series resistor are connected in series to a $9.0\\,\\text{V}$ battery. The voltage of each LED is $2.0\\,\\text{V}$, and the desired current is $20\\,\\text{mA}$. What series resistor is needed? Give the answer in ohms.",
+      "answer": 250.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L2-03",
+      "level": 2,
+      "text": "The area of a solar panel on the roof of a detached house is $1.6\\,\\text{m}^2$. When the light intensity is $800\\,\\text{W/m}^2$, the panel gives an electric power of $260\\,\\text{W}$. What is the efficiency of the panel? Give the answer as a percentage.",
+      "answer": 20.3125,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L2-04",
+      "level": 2,
+      "text": "The solar cell of a garden lamp charges the battery of the lamp during the day. The average power of the cell is $0.35\\,\\text{W}$, and it charges the battery for $6.0\\,\\text{h}$. How much electrical energy does the cell produce during this time? Give the answer in kilojoules.",
+      "answer": 7.56,
+      "unit": "kJ",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-14-L3-01",
+      "level": 3,
+      "text": "A flashlight has a red LED with a voltage of $2.0\\,\\text{V}$ and a $120\\,\\Omega$ series resistor. The voltage of new batteries is $4.5\\,\\text{V}$, and in use it falls to $3.6\\,\\text{V}$. Assume that the voltage of the LED stays the same. By what percentage does the current of the LED decrease when the voltage of the batteries falls like this? Give the answer as a percentage.",
+      "answer": 36.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L3-02",
+      "level": 3,
+      "text": "The voltage and the current of a solar panel were measured with different load resistances in the same lighting. The measured pairs $(U;\\ I)$ were: $(0\\,\\text{V};\\ 3.30\\,\\text{A})$, $(10.0\\,\\text{V};\\ 3.25\\,\\text{A})$, $(14.0\\,\\text{V};\\ 3.18\\,\\text{A})$, $(16.0\\,\\text{V};\\ 3.05\\,\\text{A})$, $(17.0\\,\\text{V};\\ 2.90\\,\\text{A})$, $(18.0\\,\\text{V};\\ 2.55\\,\\text{A})$, $(19.0\\,\\text{V};\\ 1.90\\,\\text{A})$, $(20.0\\,\\text{V};\\ 0.95\\,\\text{A})$, $(21.0\\,\\text{V};\\ 0\\,\\text{A})$.\n\nWith which load resistance does the panel give the greatest power of the measurements? Give the answer in ohms.",
+      "answer": 5.862069,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-14-L3-03",
+      "level": 3,
+      "text": "An LED strip has many identical groups in parallel, and each group has three white LEDs in series and a series resistor. The strip is connected to a voltage of $12\\,\\text{V}$. The voltage of each LED is $3.0\\,\\text{V}$, and the current of each group is $20\\,\\text{mA}$. What percentage of the electric power of the strip becomes internal energy of the series resistors?",
+      "answer": 25.0,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ]
+}

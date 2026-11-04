@@ -1,0 +1,23 @@
+{
+  "id": "fy5-10",
+  "course": "FY5",
+  "title": "Aaltojen synty ja eteneminen",
+  "goals": [
+    "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+    "Taidot: aaltoilmiöiden mallintaminen",
+    "Täsmennys: poikittainen ja pitkittäinen aalto, aaltoliikkeen perusyhtälö v = fλ; valo käsitellään vasta moduulissa FY7"
+  ],
+  "prerequisites": [
+    "fy5-7"
+  ],
+  "glossary": [
+    "aaltoliike",
+    "aallonpituus",
+    "aallon nopeus",
+    "poikittainen aalto",
+    "pitkittäinen aalto"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

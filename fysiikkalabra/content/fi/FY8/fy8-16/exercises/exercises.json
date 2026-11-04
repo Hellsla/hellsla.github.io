@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-16-L1-01",
+      "level": 1,
+      "text": "Vedyn sinivihreän $\\text{H}\\beta$-viivan aallonpituus laboratoriossa on $486{,}1\\,\\text{nm}$. Erään galaksin spektrissä sama viiva näkyy aallonpituudella $492{,}4\\,\\text{nm}$. Kuinka suuri on galaksin punasiirtymä $z$?",
+      "answer": 0.01296,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L1-02",
+      "level": 1,
+      "text": "Galaksin punasiirtymä on $z = 0{,}0250$. Kuinka suurella nopeudella galaksi etääntyy meistä? Valon nopeus on $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$. Anna vastaus kilometreinä sekunnissa.",
+      "answer": 7495,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L1-03",
+      "level": 1,
+      "text": "Galaksi on etäisyydellä $120\\,\\text{Mpc}$. Kuinka suurella nopeudella se etääntyy meistä Hubblen ja Lemaîtren lain mukaan, kun Hubblen vakio on $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$? Anna vastaus kilometreinä sekunnissa.",
+      "answer": 8400,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L1-04",
+      "level": 1,
+      "text": "Galaksi etääntyy meistä nopeudella $5250\\,\\text{km/s}$. Kuinka kaukana galaksi on, kun Hubblen vakio on $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$? Anna vastaus megaparsekeina.",
+      "answer": 75,
+      "unit": "Mpc",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L1-05",
+      "level": 1,
+      "text": "Kosmisen taustasäteilyn tyypillinen aallonpituus on $1{,}06\\,\\text{mm}$. Kuinka suuri on tämän aallonpituuden fotonin energia? Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Anna vastaus yksikössä $10^{-3}\\,\\text{eV}$.",
+      "answer": 1.17,
+      "unit": "10⁻³ eV",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-16-L2-01",
+      "level": 2,
+      "text": "Vedyn $\\text{H}\\alpha$-viivan aallonpituus laboratoriossa on $656{,}3\\,\\text{nm}$. Galaksin spektrissä viiva näkyy aallonpituudella $671{,}0\\,\\text{nm}$. Kuinka kaukana galaksi on, kun Hubblen vakio on $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ ja valon nopeus $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$? Anna vastaus megaparsekeina.",
+      "answer": 95.9,
+      "unit": "Mpc",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L2-02",
+      "level": 2,
+      "text": "Planck-satelliitin taustasäteilymittauksista saatu Hubblen vakion arvo on $H_0 = 67{,}4\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$. Arvioi maailmankaikkeuden ikä olettaen, että laajenemisnopeus on pysynyt samana. Käytä $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$. Anna vastaus yksikössä $10^{9}\\,\\text{a}$ eli miljardeina vuosina.",
+      "answer": 14.51,
+      "unit": "10⁹ a",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L2-03",
+      "level": 2,
+      "text": "Kosmisen taustasäteilyn tyypillinen aallonpituus on nyt $1{,}06\\,\\text{mm}$. Säteilyn vapautumisen jälkeen maailmankaikkeuden laajeneminen on venyttänyt kaikki sen aallonpituudet noin $1100$-kertaisiksi. Kuinka suuri oli tyypillisen fotonin energia säteilyn vapautuessa? Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Anna vastaus elektronivoltteina.",
+      "answer": 1.287,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L2-04",
+      "level": 2,
+      "text": "Galaksi A on etäisyydellä $42{,}0\\,\\text{Mpc}$, ja se etääntyy meistä nopeudella $2950\\,\\text{km/s}$. Galaksi B etääntyy nopeudella $11\\,300\\,\\text{km/s}$. Kuinka kaukana galaksi B on, kun molemmat noudattavat Hubblen ja Lemaîtren lakia ja galaksien oma liike jätetään huomiotta? Anna vastaus megaparsekeina.",
+      "answer": 160.9,
+      "unit": "Mpc",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-16-L3-01",
+      "level": 3,
+      "text": "Kun ytimiä alkoi syntyä muutama minuutti alkuräjähdyksen jälkeen, protoneja oli noin seitsemän kertaa niin paljon kuin neutroneja. Lähes kaikki neutronit sitoutuivat helium-4-ytimiin, joissa on kaksi protonia ja kaksi neutronia, ja loput protonit jäivät vetyytimiksi. Oletetaan, että protonin ja neutronin massat ovat yhtä suuret. Kuinka suuri osa ytimien kokonaismassasta oli heliumia? Anna vastaus prosentteina.",
+      "answer": 25,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L3-02",
+      "level": 3,
+      "text": "Punaisen jättiläistähden kuumassa ytimessä kolme helium-4-ydintä voi yhtyä hiili-12-ytimeksi: $3\\,{}^{4}_{2}\\text{He} \\to {}^{12}_{6}\\text{C}$. Atomimassat ovat $m({}^{4}\\text{He}) = 4{,}002603\\,\\text{u}$ ja $m({}^{12}\\text{C}) = 12{,}000000\\,\\text{u}$. Kuinka suuri energia yhdessä reaktiossa vapautuu? Käytä $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Anna vastaus megaelektronivoltteina.",
+      "answer": 7.274,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L3-03",
+      "level": 3,
+      "text": "Galaksin spektrissä näkyy vedyn kolme absorptioviivaa aallonpituuksilla $447{,}2\\,\\text{nm}$, $500{,}9\\,\\text{nm}$ ja $676{,}2\\,\\text{nm}$. Laboratoriossa vedyn viivojen aallonpituudet ovat $434{,}0\\,\\text{nm}$, $486{,}1\\,\\text{nm}$ ja $656{,}3\\,\\text{nm}$. Päättele, mikä galaksin viiva vastaa mitäkin laboratorion viivaa, ja laske galaksin etäisyys. Hubblen vakio on $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ ja valon nopeus $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$. Anna vastaus megaparsekeina.",
+      "answer": 129.9,
+      "unit": "Mpc",
+      "tolerance": 0.02
+    }
+  ]
+}

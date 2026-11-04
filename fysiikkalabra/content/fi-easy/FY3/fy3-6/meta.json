@@ -1,7 +1,7 @@
 {
   "id": "fy3-6",
   "course": "FY3",
-  "title": "Aineen lämpeneminen ja jäähtyminen: Q = cmΔT",
+  "title": "Aineen lämpeneminen ja jäähtyminen: $Q = cm\\Delta T$",
   "goals": [
     "LOPS FY3: aineen lämpeneminen ja jäähtyminen",
     "Kokeellisesti: kalorimetrinen mittaus",
@@ -17,6 +17,24 @@
     "lämpötasapaino",
     "tasapainolämpötila",
     "lämpömäärä"
+  ],
+  "key_concepts": [
+    {
+      "term": "ominaislämpökapasiteetti",
+      "explain": "Kertoo, kuinka paljon energiaa tarvitaan, kun kilogramman lämpötilaa nostetaan yhdellä kelvinillä. Se riippuu aineesta."
+    },
+    {
+      "term": "lämpökapasiteetti",
+      "explain": "Kertoo, kuinka paljon energiaa tarvitaan, kun koko kappaleen lämpötilaa nostetaan yhdellä kelvinillä."
+    },
+    {
+      "term": "kalorimetri",
+      "explain": "Eristetty astia, jossa lämpömääriä mitataan lämpötilan muutoksista."
+    },
+    {
+      "term": "lämpötasapaino",
+      "explain": "Tila, jossa kappaleiden lämpötilat ovat samat, joten lämpöä ei enää siirry niiden välillä."
+    }
   ],
   "sim": true,
   "image": false

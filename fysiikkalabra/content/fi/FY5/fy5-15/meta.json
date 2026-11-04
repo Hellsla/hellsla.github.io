@@ -1,0 +1,22 @@
+{
+  "id": "fy5-15",
+  "course": "FY5",
+  "title": "Intensiteetti ja desibeliasteikko",
+  "goals": [
+    "LOPS FY5: äänen intensiteettitaso",
+    "Täsmennys: intensiteetti, intensiteettitaso desibeleinä ja kuulokynnys",
+    "Taidot: logaritmiyhtälön käyttö"
+  ],
+  "prerequisites": [
+    "fy5-14"
+  ],
+  "glossary": [
+    "intensiteetti",
+    "intensiteettitaso",
+    "desibeli",
+    "kuulokynnys"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

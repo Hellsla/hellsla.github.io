@@ -1,0 +1,36 @@
+{
+  "id": "fy5-1",
+  "course": "FY5",
+  "title": "Momentti: voiman kiertävä vaikutus",
+  "goals": [
+    "LOPS FY5: momentti ja kappaleen kiertyminen"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "momentti",
+    "vääntövaikutus",
+    "voiman varsi",
+    "kiertoakseli"
+  ],
+  "key_concepts": [
+    {
+      "term": "vääntövaikutus",
+      "explain": "Voiman kyky kiertää kappaletta akselin ympäri. Se riippuu voiman suuruudesta, suunnasta ja siitä, mihin kohtaan voima vaikuttaa."
+    },
+    {
+      "term": "kiertoakseli",
+      "explain": "Suora, jonka ympäri kappale kiertyy, esimerkiksi oven saranoiden kautta kulkeva suora."
+    },
+    {
+      "term": "voiman varsi",
+      "explain": "Kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Mitä pidempi varsi, sitä helpommin voima kiertää kappaletta."
+    },
+    {
+      "term": "momentti",
+      "explain": "Voiman vääntövaikutuksen suuruus: voima kertaa voiman varsi. Yksikkö on newtonmetri."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

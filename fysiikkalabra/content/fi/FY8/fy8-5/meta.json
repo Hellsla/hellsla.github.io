@@ -1,0 +1,20 @@
+{
+  "id": "fy8-5",
+  "course": "FY8",
+  "title": "Aaltomekaaninen atomimalli ja orbitaalit",
+  "goals": [
+    "LOPS FY8: atomin rakenne, atomin elektronien kvanttitilat ja aaltomekaanisen atomimallin periaate",
+    "Täsmennys: elektronin tilat seisovien aaltojen kautta ja todennäköisyystulkinta; orbitaali alueena, jossa todennäköisyys ylittää kynnysarvon; yhteys kemian orbitaaleihin"
+  ],
+  "prerequisites": [
+    "fy8-4"
+  ],
+  "glossary": [
+    "aaltomekaaninen atomimalli",
+    "orbitaali",
+    "todennäköisyystulkinta"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

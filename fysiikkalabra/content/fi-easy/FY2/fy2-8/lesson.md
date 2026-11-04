@@ -183,10 +183,12 @@ Ongelma on se, että ilmiö voimistuu. Ihminen lisää ilmakehään hiilidioksid
 
 FY3-kurssilla kasvihuoneilmiötä käsitellään myös laskuilla. Se tehdään luvussa *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*. Tässä luvussa riittää ymmärtää kaksi asiaa: mitä kaasut tekevät säteilylle ja mistä lisäkaasut tulevat.
 
-### Polttoaineet yhdistävät energian ja ilmaston
-Fossiilinen polttoaine on esimerkiksi kivihiili, öljy tai maakaasu. Se on muinaisten eliöiden kemiallista energiaa. Kivihiili on syntynyt enimmäkseen kasveista. Öljy ja maakaasu ovat syntyneet meren planktonista. Kun tällainen hiiltä sisältävä polttoaine palaa täydellisesti, sen hiili yhtyy hapen kanssa: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. Kemiallinen energia vapautuu lämpönä (luku *Polttoaineet ja lämpöarvo E = Hm*). Hiilidioksidi poistuu savukaasujen mukana ilmakehään. Mitä enemmän energiaa otetaan polttamalla hiilipitoisia polttoaineita, sitä enemmän hiilidioksidia vapautuu. Kaikissa polttoaineissa ei ole hiiltä. Esimerkiksi vedyn palaessa syntyy vain vettä.
+<figure class="unit-photo wide"><img src="pics/fy2/gistemp-2025-anomaly-map.webp" alt="Maailmankartta, jossa on paljon punaista. Tummin punainen on pohjoisessa. Kartan alla on väriasteikko."><figcaption>Vuoden 2025 keskilämpötilaa verrataan vuosien 1951–1980 keskiarvoon. Punainen tarkoittaa lämpimämpää ja sininen kylmempää. Harmaa väri tarkoittaa, että alueelta ei ole mittauksia. Kartta on tehty NASAn mittausaineistosta. Se ei ole valokuva.</figcaption></figure>
 
-Fossiilisen polttoaineen hiili on ollut maan alla miljoonia vuosia. Siksi sen polttaminen lisää ilmakehän hiilidioksidia. Biomassan, esimerkiksi puun, hiili on sitoutunut kasveihin vasta vuosikymmenten aikana. Biomassan poltto ei silti ole päästötöntä. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu sitoo sen takaisin. Siihen menee vuosikymmeniä. Lisäksi viljely, korjuu ja kuljetus aiheuttavat omia päästöjä.
+### Polttoaineet yhdistävät energian ja ilmaston
+Fossiilinen polttoaine on esimerkiksi kivihiili, öljy tai maakaasu. Se on muinaisten eliöiden kemiallista energiaa. Kivihiili on syntynyt enimmäkseen kasveista. Öljy ja maakaasu ovat syntyneet meren planktonista. Kun tällainen hiiltä sisältävä polttoaine palaa täydellisesti, sen hiili yhtyy hapen kanssa: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. Kemiallinen energia vapautuu lämpönä (luku *Polttoaineet ja lämpöarvo $E = Hm$*). Hiilidioksidi poistuu savukaasujen mukana ilmakehään. Mitä enemmän energiaa otetaan polttamalla hiilipitoisia polttoaineita, sitä enemmän hiilidioksidia vapautuu. Kaikissa polttoaineissa ei ole hiiltä. Esimerkiksi vedyn palaessa syntyy vain vettä.
+
+Fossiilisen polttoaineen hiili on ollut maan alla miljoonia vuosia. Siksi sen polttaminen lisää ilmakehän hiilidioksidia. Biomassan, esimerkiksi puun, hiili on sitoutunut eli varastoitunut kasveihin vasta vuosikymmenten aikana. Biomassan poltto ei silti ole päästötöntä. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu sitoo sen takaisin. Siihen menee vuosikymmeniä. Lisäksi viljely, korjuu ja kuljetus aiheuttavat omia päästöjä.
 
 <figure class="unit-photo"><img src="pics/fy2/europe-at-night.webp" alt="Eurooppa yöllä ylhäältä katsottuna. Tummalla maalla on paljon oransseja valoja."><figcaption>Luoteis-Eurooppa yöllä avaruusasemalta kuvattuna vuonna 2011. Kaupunkien valot näkyvät avaruuteen asti.</figcaption></figure>
 
@@ -196,7 +198,7 @@ Päästöjä syntyy muustakin kuin polttamisesta. Voimala on rakennettava teräk
 Vertailua varten metaani ja muut kasvihuonekaasut muutetaan hiilidioksidiekvivalenteiksi ($\text{CO}_2$-ekv.). Se tarkoittaa sellaista hiilidioksidin määrää, jolla on sama lämmittävä vaikutus.
 
 ### Päästöt eivät ole ainoa peruste
-Ilmastovaikutuksen lisäksi tuotantotapoja punnitaan maankäytön, kuljetusten, jätteen ja turvallisuuden kannalta:
+Ilmastovaikutuksen lisäksi tuotantotapoja punnitaan eli verrataan toisiinsa maankäytön, kuljetusten, jätteen ja turvallisuuden kannalta:
 
 - **Kivihiili ja maakaasu:** suurimmat päästöt. Polttoaineet kaivetaan ja kuljetetaan laivoilla, junilla tai putkissa. Savukaasuissa on myös muita epäpuhtauksia.
 - **Biomassa:** vie metsä- ja peltoalaa. Biomassa vie paljon tilaa, ja sen energiasisältö massaa kohti on pieni. Siksi sitä ei kannata kuljettaa kauas.

@@ -29,7 +29,7 @@ KEEP = sys.argv[sys.argv.index("--keep") + 1] if "--keep" in sys.argv else None
 T = pathlib.Path(KEEP) if KEEP else pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-fy4-"))
 if KEEP: shutil.rmtree(T, ignore_errors=True); T.mkdir(parents=True)
 for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
-for d in ("scripts", "templates", "content/_gold", "lang"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
+for d in ("scripts", "templates", "content/_gold", "lang", "kortit"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__"))
 shutil.copytree(SRC / "assets", T / "assets", ignore=shutil.ignore_patterns("fy4"))   # FY4 starts from scratch here, whatever the real project has
 c0 = json.loads((T / "curriculum.json").read_text()); c0["FY4"].pop("initialized", None)
 (T / "curriculum.json").write_text(json.dumps(c0, ensure_ascii=False, indent=2) + "\n")
@@ -67,8 +67,11 @@ c2 = json.loads((T / "curriculum.json").read_text()); del c2["FY4"]["tavoitteet"
 code, out = run("new_course.py", "FY4", "--check")
 expect("a course without its LOPS goals is reported missing, nothing invented", code == 1 and "'tavoitteet' is missing" in out, out)
 (T / "curriculum.json").write_text(json.dumps(cur, ensure_ascii=False, indent=2) + "\n")
-code, out = run("courses.py", "init-lesson", "fy5-1")
+c3 = json.loads(json.dumps(cur)); c3["FY8"].pop("initialized", None)   # an uninitialized course in the copy, whatever the real project has initialized
+(T / "curriculum.json").write_text(json.dumps(c3, ensure_ascii=False, indent=2) + "\n")
+code, out = run("courses.py", "init-lesson", "fy8-1")
 expect("a lesson of an uninitialized course is refused", code != 0 and "not initialized" in out, out)
+(T / "curriculum.json").write_text(json.dumps(cur, ensure_ascii=False, indent=2) + "\n")
 code, out = run("courses.py", "init-lesson", "fy4-99")
 expect("a lesson without a slot is refused", code != 0 and "not a lesson slot" in out, out)
 
@@ -89,8 +92,11 @@ def maths_quantities(text):
         n = re.match(r"[\d ,]*\d", m.group(0)).group(0)
         text = text[:m.start()] + "$" + n.replace(" ", "").replace(",", "{,}") + "$" + text[m.start() + len(n):]
     return text
+def no_photos(text):
+    """fy3-2's illustration photo (2026-11-03) lives in FY3's picture folder; the FY4 fixture keeps only its own picture."""
+    return re.sub(r'<figure class="unit-photo[^\n]*</figure>\n\n', "", text)
 for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
-    text_file(L, n).parent.mkdir(exist_ok=True); text_file(L, n).write_text(maths_quantities(text_file(src, n).read_text().replace("fy3-2", "fy4-1")))
+    text_file(L, n).parent.mkdir(exist_ok=True); text_file(L, n).write_text(maths_quantities(no_photos(text_file(src, n).read_text()).replace("fy3-2", "fy4-1")))
 for n in ("answers.py", "sim-spec.md", "figures.py"): (C / n).write_text((src_code / n).read_text().replace("fy3-2", "fy4-1"))   # figures.py: an exercise shows one of its figures by id
 meta.update(sim=True, glossary=json.loads((src / "meta.json").read_text())["glossary"]); (L / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2))
 S = T / "assets/sims/fy4/fy4-1"; S.mkdir(parents=True)
@@ -152,7 +158,7 @@ site = T / "site"
 expect("site build publishes fy4-1 with its assets", code == 0 and (site / "fy4-1.html").is_file() and all((site / p).is_file() for p in ("sims/fy4/fy4-1/sim.js", "sims/fy4/fy4-1/sim.css", "pics/fy4/kalteva-taso.svg")), out)
 expect("FY4.html links fy4-1 and lists the other FY4 slots as coming; FY3.html does not list it",
        'href="fy4-1.html"' in (site / "FY4.html").read_text() and "tulossa" in (site / "FY4.html").read_text() and "fy4-1" not in (site / "FY3.html").read_text())
-nolang = lambda f: re.sub(r'<details class="lang-menu">.*?</details>|<nav class="chapter-nav".*?</nav>|<p class="concept-link">.*?</p>', "", f.read_text(), flags=re.S)   # the real site has its translations, neighbouring chapters and Käsitetakomo (../kasitetakomo-data.js, not in the copy) to link to
+nolang = lambda f: re.sub(r'<details class="lang-menu">.*?</details>|<nav class="chapter-nav".*?</nav>', "", f.read_text(), flags=re.S)   # the real site has its translations and neighbouring chapters to link to
 expect("fy3-2 is built exactly as the real site has it", nolang(site / "fy3-2.html") == nolang(SRC / "site/fy3-2.html") and (site / "fy3-2-sim.js").read_bytes() == (SRC / "site/fy3-2-sim.js").read_bytes())
 code, out = run("check_choices.py", "--all", "--site")
 expect("answer positions are checked per course on the site", code == 0 and "FY4:" in out and "FY3:" in out, out)

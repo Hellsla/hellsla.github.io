@@ -1,0 +1,23 @@
+{
+  "id": "fy5-9",
+  "course": "FY5",
+  "title": "The mass–spring oscillator and the pendulum",
+  "goals": [
+    "LOPS FY5: harmonic force and oscillatory motion",
+    "Experimental work: determining the period of a pendulum",
+    "Thematic study: the pendulum",
+    "Clarification: the factors that the period depends on, T = 2π√(m/k) and, for a simple pendulum with small swings, T = 2π√(l/g); conservation of energy in oscillation, E = ½kA²; damping as an option"
+  ],
+  "prerequisites": [
+    "fy5-8"
+  ],
+  "glossary": [
+    "harmoninen värähtely",
+    "heiluri",
+    "värähtelyn energia",
+    "vaimeneminen"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

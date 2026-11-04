@@ -17,6 +17,28 @@
     "voima ja vastavoima",
     "inertia"
   ],
+  "key_concepts": [
+    {
+      "term": "vuorovaikutus",
+      "explain": "Kaksi kappaletta vaikuttaa toisiinsa, esimerkiksi vetää tai työntää toisiaan."
+    },
+    {
+      "term": "voima",
+      "explain": "Kertoo, kuinka voimakas vuorovaikutus on. Voima on vektorisuure, eli sillä on suuruus ja suunta."
+    },
+    {
+      "term": "jatkavuuden laki",
+      "explain": "Jos voimat kumoavat toisensa, kappale pysyy levossa tai liikkuu suoraan samalla nopeudella."
+    },
+    {
+      "term": "voima ja vastavoima",
+      "explain": "Kun kappale vaikuttaa toiseen voimalla, toinen vaikuttaa siihen yhtä suurella vastakkaisella voimalla. Voimat vaikuttavat eri kappaleisiin."
+    },
+    {
+      "term": "inertia",
+      "explain": "Kappaleen ominaisuus, jonka takia sen nopeutta tai liikkeen suuntaa on vaikea muuttaa. Mitä suurempi massa, sitä suurempi inertia."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

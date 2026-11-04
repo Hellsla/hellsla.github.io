@@ -1,0 +1,22 @@
+{
+  "id": "fy5-11",
+  "course": "FY5",
+  "title": "A wave meets an obstacle or a gap",
+  "goals": [
+    "LOPS FY5: generation, propagation and reflection of mechanical waves",
+    "LOPS FY5: diffraction and interference of mechanical waves",
+    "Clarification: angle of incidence and angle of reflection, the law of reflection, Huygens' principle; diffraction, e.g. the bending of water surface waves by an obstacle or a slit"
+  ],
+  "prerequisites": [
+    "fy5-10"
+  ],
+  "glossary": [
+    "heijastuminen",
+    "heijastuslaki",
+    "Huygensin periaate",
+    "diffraktio"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

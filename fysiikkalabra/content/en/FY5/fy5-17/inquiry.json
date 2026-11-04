@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "contribution": "Applied chapter: the basic ideas of wave motion (reflection from a boundary, $v = f\\lambda$, longitudinal and transverse waves) are applied to ultrasound imaging, echo sounding, earthquake waves and tsunamis: depth from the travel time of an echo, reading an A-scan, choosing the frequency, the need for gel, the distance of an earthquake from the S–P time difference and the liquid outer core.",
+  "learn": [
+    "calculate the depth of a boundary from the travel time of an echo and read the echo curve of an ultrasound machine.",
+    "explain how the frequency of ultrasound affects the sharpness of the image and the imaging depth.",
+    "determine the distance of an earthquake from the difference in arrival times of the P wave and the S wave."
+  ],
+  "prior": [
+    "The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$, and a wave can be transverse or longitudinal (chapter *How waves form and travel*)",
+    "A wave is partly reflected from the boundary of two substances, and an obstacle bends a wave more the greater the wavelength is compared with the obstacle (chapter *A wave meets an obstacle or a gap*)",
+    "Sound is a longitudinal wave, and a person hears frequencies from about $20\\,\\text{Hz}$ to $20\\,\\text{kHz}$ (chapter *Sound as a wave: pitch, timbre and the Doppler effect*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "In the examination room a patient lies on their back. A nurse spreads cold, translucent gel on the skin of the abdomen and presses a probe the size of a palm on top of it. A grey fan appears on the screen, showing the edges of organs. The probe sends out neither light nor X-rays. It sends sound that the ear cannot hear, and listens for echoes.",
+      "question": "How can the depth of a structure in the body be worked out from echoes alone, and what is the gel needed for?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: wavelength",
+      "prompt": "A bat sends out a call with a frequency of $40\\,\\text{kHz}$. Sound travels in air at a speed of $343\\,\\text{m/s}$. What is the wavelength of the call?",
+      "choices": [
+        {
+          "text": "about $8.6\\,\\text{mm}$",
+          "correct": true,
+          "feedback": "Correct. From the equation $v = f\\lambda$ we get $\\lambda = \\tfrac{v}{f} = \\tfrac{343\\,\\text{m/s}}{40\\,000\\,\\text{Hz}} \\approx 0.0086\\,\\text{m}$ (chapter *How waves form and travel*). The wavelength is of the same order of magnitude as the size of an insect, and this explains why bats use ultrasound."
+        },
+        {
+          "text": "about $1.4 \\cdot 10^{7}\\,\\text{m}$",
+          "feedback": "You multiplied the speed by the frequency. In the equation $v = f\\lambda$ the wavelength is the speed divided by the frequency, $\\lambda = \\tfrac{v}{f}$. A high frequency means a short wavelength, not a long one (chapter *How waves form and travel*)."
+        },
+        {
+          "text": "about $117\\,\\text{m}$",
+          "feedback": "You divided the frequency by the speed, and the unit of the result is then $1/\\text{m}$, not metres. The wavelength is $\\lambda = \\tfrac{v}{f}$: the speed divided by the frequency (chapter *How waves form and travel*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: how deep?",
+      "prompt": "An ultrasound machine sends a pulse from the skin into the body at the moment $t = 0$. The echo reflected from a boundary returns to the probe after $65\\,\\mu\\text{s}$. Sound travels in tissue at a speed of $1540\\,\\text{m/s}$. How deep below the surface of the skin is the boundary?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when you have studied the echo curve and the Theory summary is visible."
+      },
+      "choices": [
+        {
+          "text": "about $10\\,\\text{cm}$",
+          "feedback": "The product $v t = 1540\\,\\text{m/s} \\cdot 65\\,\\mu\\text{s} \\approx 0.10\\,\\text{m}$ is the whole distance the pulse travelled. But the pulse travelled to the boundary and back, so the boundary is half of this, at a depth of about $5.0\\,\\text{cm}$: $d = \\tfrac{vt}{2}$."
+        },
+        {
+          "text": "about $5.0\\,\\text{cm}$",
+          "correct": true,
+          "feedback": "Correct. The pulse travels to the boundary and back, so during the travel time of the echo it covers twice the depth: $d = \\tfrac{vt}{2} = \\tfrac{1540\\,\\text{m/s} \\cdot 65 \\cdot 10^{-6}\\,\\text{s}}{2} \\approx 0.050\\,\\text{m}$. In the echo curve every peak was converted to a depth in the same way."
+        },
+        {
+          "text": "about $2.5\\,\\text{cm}$",
+          "feedback": "You divided the distance by four. The pulse travels to the boundary and back, that is, the distance twice, so the product $v t \\approx 10\\,\\text{cm}$ is divided by two only: $d \\approx 5.0\\,\\text{cm}$."
+        },
+        {
+          "text": "The depth cannot be worked out unless the frequency of the ultrasound is also known.",
+          "feedback": "The frequency affects the wavelength and the sharpness of the image, but not the speed of the pulse. When the speed and the travel time are known, the depth is obtained from the equation $d = \\tfrac{vt}{2} \\approx 5.0\\,\\text{cm}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: why gel?",
+      "layout": "models",
+      "prompt": "Three students explain why gel is spread between the probe and the skin. Which explanation do you think is correct?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when you have studied the table of boundaries and the Theory summary is visible."
+      },
+      "choices": [
+        {
+          "text": "The gel is a lubricant: the probe moves over the skin without friction, and the image stays sharp when the probe is moved.",
+          "feedback": "The gel does reduce friction, but that does not explain why no image is formed at all without gel, even if the probe is held still. According to the table, about $99.9\\,\\%$ of the pulse is reflected from the boundary of air and skin: a layer of air reflects almost everything back already at the skin."
+        },
+        {
+          "text": "Almost the whole pulse would be reflected back from the boundary of air and skin. The gel displaces the air, and the pulse gets into the body.",
+          "correct": true,
+          "feedback": "Correct. According to the table, about $99.9\\,\\%$ is reflected from the boundary of air and skin and only about $0.2\\,\\%$ from the boundary of gel and skin. Air and tissue are very different substances as far as the propagation of sound is concerned, gel and tissue almost alike."
+        },
+        {
+          "text": "The gel conducts electricity from the probe to the skin, and the electricity travels in the tissue along with the ultrasound.",
+          "feedback": "Ultrasound is a mechanical wave, not an electric current: the probe vibrates and makes the medium vibrate. The gel is needed because about $99.9\\,\\%$ of the pulse would be reflected back from the boundary of air and skin."
+        }
+      ]
+    },
+    {
+      "id": "rajapinnat",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Investigate: how much is reflected?",
+      "source": "model",
+      "text": "The table shows what fraction of the energy of an ultrasound pulse is reflected from different boundaries when it arrives perpendicularly. The percentages have been calculated from the typical acoustic properties of the substances, and they are approximate. The table also gives the speed of sound in the substances.\n\n| Boundary | Reflected about |\n| --- | --- |\n| gel – skin | $0.2\\,\\%$ |\n| fat – muscle | $1\\,\\%$ |\n| soft tissue – bone | $40\\,\\%$ |\n| air – skin | $99.9\\,\\%$ |\n\n| Substance | Speed of sound |\n| --- | --- |\n| air | $343\\,\\text{m/s}$ |\n| fat | $1450\\,\\text{m/s}$ |\n| soft tissue, average | $1540\\,\\text{m/s}$ |\n| muscle | $1580\\,\\text{m/s}$ |\n| bone | about $3500\\,\\text{m/s}$ |",
+      "question": {
+        "type": "choice",
+        "prompt": "In an ultrasound image the surface of a bone often appears as a bright line with a black shadow below it, from which no echoes return. Which piece of information in the table explains this best?",
+        "choices": [
+          {
+            "text": "About $40\\,\\%$ is reflected from the boundary of bone and soft tissue, so the echo is strong and only a little sound gets behind the bone.",
+            "correct": true,
+            "feedback": "Correct. A strong reflection makes the surface of the bone bright, and when bone also strongly attenuates the sound that gets through, no echoes return from deeper: a shadow is left in the image. Only about one per cent is reflected from the boundaries of soft tissues, so the pulse continues through them."
+          },
+          {
+            "text": "Sound travels in bone more than twice as fast as in tissue, so the echoes returning from behind the bone arrive too early and remain unseen.",
+            "feedback": "Faster propagation would only shorten the travel time, and the machine would draw the echoes at a slightly wrong depth; it does not remove the echoes. The shadow forms because about $40\\,\\%$ is reflected from the surface of the bone and the bone strongly attenuates the rest."
+          },
+          {
+            "text": "As little is reflected from the surface of bone as from the boundary of fat and muscle, but the bone is so deep that the echo weakens on the way.",
+            "feedback": "According to the table, about $40\\,\\%$ is reflected from the surface of bone and only about $1\\,\\%$ from the boundary of fat and muscle. The surface of the bone shows up bright precisely because of the strong reflection."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ascan",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Investigate: reading the echo curve",
+      "source": "example",
+      "figure": "fy5-17/a-scan",
+      "text": "The graph shows an A-scan, that is, an echo curve, of a thigh. The probe is on the skin, and the pulse is sent at the moment $t = 0$. All the echoes are in the same direction under the skin. Echo A comes from the boundary of fat and muscle, echo B from a membrane between two muscles and echo C from the surface of the femur. The machine assumes that sound travels in tissue at a speed of $1540\\,\\text{m/s}$.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Read the times of echoes B and C from the graph. How thick is the layer of tissue between boundaries B and C? Answer in centimetres.",
+        "answer": 3.08,
+        "unit": "cm",
+        "tolerance": 0.03,
+        "hints": [
+          "What distance does the time difference of echoes B and C correspond to? The pulse travels through the layer twice.",
+          "The time difference of the echoes is $\\Delta t = 90\\,\\mu\\text{s} - 50\\,\\mu\\text{s} = 40\\,\\mu\\text{s}$, and the thickness of the layer is $\\tfrac{v \\Delta t}{2}$.",
+          "$\\tfrac{1540\\,\\text{m/s} \\cdot 40 \\cdot 10^{-6}\\,\\text{s}}{2} = 0.0308\\,\\text{m}$"
+        ],
+        "mistakes": [
+          {
+            "value": 6.16,
+            "feedback": "This is the distance the pulse travels in the time difference $40\\,\\mu\\text{s}$. The pulse travels through the layer down and back up, so the thickness of the layer is half of this."
+          },
+          {
+            "value": 6.93,
+            "feedback": "This is the depth of boundary C from the surface of the skin. The thickness of the layer is obtained from the time difference of echoes B and C, not from the time of C alone."
+          }
+        ],
+        "solution": "**Given:** speed of sound in tissue $v = 1540\\,\\text{m/s}$; from the graph the time of echo B and the time of echo C\n\n**Find:** the thickness $\\Delta d$ of the layer between boundaries B and C in centimetres\n\n**Principle:** During the travel time of an echo the pulse goes to the boundary and back, so the depth is $d = \\tfrac{vt}{2}$. The time difference of the echoes is the time the pulse needs to travel down through the layer and back, when the speed is the same all the way.\n\n**Reading the graph:** The peak of echo B is on the grid line $50\\,\\mu\\text{s}$ and the peak of echo C on the grid line $90\\,\\mu\\text{s}$. The time difference is $\\Delta t = 90\\,\\mu\\text{s} - 50\\,\\mu\\text{s} = 40\\,\\mu\\text{s}$.\n\n**Formula:** $d_\\text{C} - d_\\text{B} = \\dfrac{v t_\\text{C}}{2} - \\dfrac{v t_\\text{B}}{2}$, so $\\Delta d = \\dfrac{v \\Delta t}{2}$\n\n**Conversions:** $40\\,\\mu\\text{s} = 40 \\cdot 10^{-6}\\,\\text{s}$; finally $1\\,\\text{m} = 100\\,\\text{cm}$.\n\n**Substitution:** $\\Delta d = \\dfrac{1540\\,\\text{m/s} \\cdot 40 \\cdot 10^{-6}\\,\\text{s}}{2} = 0.0308\\,\\text{m} = 3.08\\,\\text{cm}$\n\n**Answer:** $3.1\\,\\text{cm}$, two significant figures, because the time difference $40\\,\\mu\\text{s}$ read from the graph is known to about a microsecond.\n\n**Reasonableness:** The boundaries are at depths $d_\\text{B} = 3.85\\,\\text{cm}$ and $d_\\text{C} = 6.93\\,\\text{cm}$, and their difference is the same $3.08\\,\\text{cm}$. A layer of muscle a few centimetres thick on top of the femur is plausible in an adult."
+      }
+    },
+    {
+      "id": "seismi",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Investigate: three seismograph stations",
+      "source": "model",
+      "figure": "fy5-17/seismogrammit",
+      "text": "An earthquake sends out two waves that travel through the interior of the Earth: the P wave and the S wave. The graph shows the seismograms of three stations from the same earthquake. The stations are at different distances from the earthquake, and the time is counted from the moment of the earthquake. The values have been calculated from a model in which the waves travel straight and at constant speeds.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Read the difference $\\Delta t$ in the arrival times of the P wave and the S wave at each station. How does it depend on the distance of the station? How many kilometres of distance correspond to one second of time difference? Answer in the unit km/s.",
+        "answer": 8.4,
+        "unit": "km/s",
+        "tolerance": 0.03,
+        "hints": [
+          "From each row read the start times of P and S and calculate their difference. Compare the differences with the distances.",
+          "The time differences are $10\\,\\text{s}$, $20\\,\\text{s}$ and $30\\,\\text{s}$. When the distance doubles, the time difference also doubles.",
+          "$\\tfrac{84\\,\\text{km}}{10\\,\\text{s}}$"
+        ],
+        "mistakes": [
+          {
+            "value": 6.0,
+            "feedback": "You divided the distance by the arrival time of the P wave and got the speed of the P wave. The question is about the difference in arrival times: divide the distance by the time difference of the S wave and the P wave."
+          },
+          {
+            "value": 3.5,
+            "feedback": "You divided the distance by the arrival time of the S wave and got the speed of the S wave. The question is about the difference in arrival times: divide the distance by the time difference of the S wave and the P wave."
+          }
+        ],
+        "solution": "**Given:** the distances of the stations $84\\,\\text{km}$, $168\\,\\text{km}$ and $252\\,\\text{km}$; from the graph the arrival times of the P wave and the S wave\n\n**Find:** the distance per second of time difference, $\\tfrac{d}{\\Delta t}$, in the unit km/s\n\n**Principle:** Both waves travel the same distance at a constant speed, so the travel time of each is directly proportional to the distance. Then the difference of the travel times is also directly proportional to the distance, and the ratio $\\tfrac{d}{\\Delta t}$ is the same at all stations.\n\n**Reading the graph:** At the top station P starts at $14\\,\\text{s}$ and S at $24\\,\\text{s}$, so $\\Delta t = 10\\,\\text{s}$. At the middle one $28\\,\\text{s}$ and $48\\,\\text{s}$, $\\Delta t = 20\\,\\text{s}$. At the bottom one $42\\,\\text{s}$ and $72\\,\\text{s}$, $\\Delta t = 30\\,\\text{s}$. The time difference grows in the same proportion as the distance.\n\n**Formula:** $d = k\\,\\Delta t$, from which $k = \\dfrac{d}{\\Delta t}$\n\n**Conversions:** The distances are in kilometres and the times in seconds, so no conversions are needed.\n\n**Substitution:** $k = \\dfrac{84\\,\\text{km}}{10\\,\\text{s}} = \\dfrac{168\\,\\text{km}}{20\\,\\text{s}} = \\dfrac{252\\,\\text{km}}{30\\,\\text{s}} = 8.4\\,\\text{km/s}$\n\n**Answer:** $8.4\\,\\text{km/s}$, two significant figures, because the arrival times are read from the graph to about a second.\n\n**Reasonableness:** The number is not the speed of either wave: it is greater than the speed of the P wave $\\tfrac{84\\,\\text{km}}{14\\,\\text{s}} = 6.0\\,\\text{km/s}$, because the time difference is smaller than either travel time. All three stations give the same ratio, so the time difference is directly proportional to the distance."
+      }
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the echo curve, the table of boundaries and the Theory summary. Then return to the opening question: how does the machine work out the depth from an echo, and what would happen without gel?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "An earthquake on the sea floor creates a tsunami $2000\\,\\text{km}$ from the coast. The depth of the ocean along the path of the wave is on average $4.0\\,\\text{km}$. How many hours do the people on the coast have to evacuate when the alarm is given immediately after the earthquake? Assume that the tsunami travels the whole distance at the speed $v = \\sqrt{gh}$. Answer in hours.",
+      "answer": 2.8,
+      "unit": "h",
+      "tolerance": 0.03,
+      "hints": [
+        "What determines the speed of a tsunami? First calculate the speed and then the time in which the distance is covered.",
+        "Convert the depth to metres: $h = 4000\\,\\text{m}$. The speed is $v = \\sqrt{gh}$ and the time $t = \\tfrac{s}{v}$.",
+        "$v = \\sqrt{9.81\\,\\text{m/s}^2 \\cdot 4000\\,\\text{m}} \\approx 198\\,\\text{m/s}$; $t = \\tfrac{2\\,000\\,000\\,\\text{m}}{198\\,\\text{m/s}}$, and divide the seconds by $3600$."
+      ],
+      "mistakes": [
+        {
+          "value": 88.7,
+          "feedback": "You substituted the depth in kilometres into the equation $v = \\sqrt{gh}$. Because $g$ is in the unit $\\text{m/s}^2$, the depth must be in metres: $h = 4000\\,\\text{m}$."
+        },
+        {
+          "value": 168,
+          "feedback": "This is the time in minutes. Divide the seconds by $3600$ to get hours."
+        },
+        {
+          "value": 10096,
+          "feedback": "This is the time in seconds. The question asks for hours: $1\\,\\text{h} = 3600\\,\\text{s}$."
+        }
+      ],
+      "solution": "**Given:** distance $s = 2000\\,\\text{km}$, depth $h = 4.0\\,\\text{km}$, $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the travel time $t$ of the tsunami in hours\n\n**Principle:** The wavelength of a tsunami is much greater than the depth of the ocean, so it travels as a shallow-water wave at the speed $v = \\sqrt{gh}$. When the depth is assumed to be the same all the way, the speed is constant and the travel time is the distance divided by the speed.\n\n**Formula:** $v = \\sqrt{gh}$ and $s = vt$, so $t = \\dfrac{s}{\\sqrt{gh}}$\n\n**Conversions:** $h = 4.0\\,\\text{km} = 4.0 \\cdot 1000\\,\\text{m} = 4000\\,\\text{m}$, $s = 2000 \\cdot 1000\\,\\text{m} = 2.0 \\cdot 10^{6}\\,\\text{m}$ and finally $1\\,\\text{h} = 3600\\,\\text{s}$.\n\n**Substitution:** $t = \\dfrac{2.0 \\cdot 10^{6}\\,\\text{m}}{\\sqrt{9.81\\,\\text{m/s}^2 \\cdot 4000\\,\\text{m}}} = \\dfrac{2.0 \\cdot 10^{6}\\,\\text{m}}{198.1\\,\\text{m/s}} = 10\\,096\\,\\text{s} = 2.80\\,\\text{h}$\n\n**Answer:** $2.8\\,\\text{h}$, two significant figures like the depth $4.0\\,\\text{km}$.\n\n**Reasonableness:** The speed $198\\,\\text{m/s}$ is about $710\\,\\text{km/h}$, of the order of a jet aircraft, and covering $2000\\,\\text{km}$ at this speed takes just under three hours: $\\tfrac{2000\\,\\text{km}}{710\\,\\text{km/h}} \\approx 2.8\\,\\text{h}$. In reality the wave slows down in the shallow water near the coast, so the warning time is slightly longer."
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A seismograph station measures the difference in the arrival times of the P wave and the S wave to be $20\\,\\text{s}$, when $v_\\text{P} = 6.0\\,\\text{km/s}$ and $v_\\text{S} = 3.5\\,\\text{km/s}$. A student reasons: “The S wave falls behind the P wave by $2.5\\,\\text{km}$ every second, so $d = (v_\\text{P} - v_\\text{S})\\,\\Delta t = 2.5\\,\\text{km/s} \\cdot 20\\,\\text{s} = 50\\,\\text{km}$.” Where is the error?",
+      "choices": [
+        {
+          "text": "The time difference is the difference of the travel times $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$, so the correct result is $d = 168\\,\\text{km}$.",
+          "correct": true,
+          "feedback": "Correct. The student's product $(v_\\text{P} - v_\\text{S})\\,\\Delta t$ is the distance between the waves $20\\,\\text{s}$ after the earthquake, not the distance of the station. The time difference builds up over the whole distance, and the travel times are the distance divided by the speed. Solving the equation $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$ for $d$ gives $d = 8.4\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 20\\,\\text{s} = 168\\,\\text{km}$. Check: the P wave covers it in $28\\,\\text{s}$ and the S wave in $48\\,\\text{s}$."
+        },
+        {
+          "text": "The speeds should have been converted to metres per second before substituting them into the equation.",
+          "feedback": "The units are consistent: km/s times s gives kilometres. A conversion would not change the result. The error is in the equation itself: the time difference is the difference of the travel times $\\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$."
+        },
+        {
+          "text": "Instead of the difference of the speeds, their mean should have been used, $d = \\tfrac{v_\\text{P} + v_\\text{S}}{2}\\,\\Delta t$.",
+          "feedback": "The mean would give $95\\,\\text{km}$, and that does not match the measurement either: the P wave would cover it in $16\\,\\text{s}$ and the S wave in $27\\,\\text{s}$, and the difference would be only $11\\,\\text{s}$. The time difference is the difference of the travel times, $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$."
+        }
+      ]
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 exercises use one formula, level 2 exercises read a graph or are solved in two steps, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. The core of the Earth",
+      "prompt": "Seismograph stations that are at an angular distance of more than about $103^\\circ$ from an earthquake detect the P waves of the earthquake but not directly arriving S waves. What explains this?",
+      "choices": [
+        {
+          "text": "The outer core of the Earth is liquid, and a transverse S wave does not travel in a liquid.",
+          "correct": true,
+          "feedback": "Correct. A transverse wave needs a medium that resists a change of shape. A liquid does not resist it, so the S wave stops at the surface of the outer core, but the longitudinal P wave continues through it."
+        },
+        {
+          "text": "The S wave is so slow that it is completely damped before it reaches the other side of the Earth.",
+          "feedback": "Slowness only lengthens the travel time; the S wave is clearly detected at stations less than $103^\\circ$ away. The limit is sharp because the outer core is liquid and a liquid does not transmit a transverse wave."
+        },
+        {
+          "text": "The S wave is a surface wave that travels only along the crust and does not dive into the Earth.",
+          "feedback": "The S wave travels through the interior of the Earth like the P wave. Surface waves are a wave type of their own. The shadow zone of S waves forms because the liquid outer core does not transmit a transverse wave."
+        },
+        {
+          "text": "The solid iron of the core reflects the S waves back, but the P waves get through.",
+          "feedback": "The outer core is not solid but liquid, and that is precisely why the S wave does not travel through it. In a solid a transverse wave would travel."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. The length of an eye",
+      "prompt": "Before cataract surgery the length of the eye is measured with an A-scan. The echo from the retina returns $31.0\\,\\mu\\text{s}$ later than the echo from the surface of the cornea. Sound travels in the eye at an average speed of $1550\\,\\text{m/s}$. How long is the eye from the cornea to the retina? Answer in centimetres.",
+      "answer": 2.4,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "hints": [
+        "The pulse travels through the eye to the retina and back.",
+        "$d = \\tfrac{v \\Delta t}{2}$, when $\\Delta t = 31.0 \\cdot 10^{-6}\\,\\text{s}$.",
+        "$\\tfrac{1550\\,\\text{m/s} \\cdot 31.0 \\cdot 10^{-6}\\,\\text{s}}{2}$"
+      ],
+      "mistakes": [
+        {
+          "value": 4.81,
+          "feedback": "This is the whole distance the pulse travels. The pulse travels through the eye twice, so the length of the eye is half of this."
+        }
+      ],
+      "solution": "**Given:** time difference of the echoes $\\Delta t = 31.0\\,\\mu\\text{s}$, speed of sound in the eye $v = 1550\\,\\text{m/s}$\n\n**Find:** the length of the eye $d$ in centimetres\n\n**Principle:** In the time difference of the echoes the pulse travels from the cornea to the retina and back, so it covers the length of the eye twice. The speed is assumed to be the same all the way.\n\n**Formula:** $2d = v \\Delta t$, so $d = \\dfrac{v \\Delta t}{2}$\n\n**Conversions:** $31.0\\,\\mu\\text{s} = 31.0 \\cdot 10^{-6}\\,\\text{s}$; finally $1\\,\\text{m} = 100\\,\\text{cm}$.\n\n**Substitution:** $d = \\dfrac{1550\\,\\text{m/s} \\cdot 31.0 \\cdot 10^{-6}\\,\\text{s}}{2} = 0.024\\,025\\,\\text{m} = 2.40\\,\\text{cm}$\n\n**Answer:** $2.40\\,\\text{cm}$, three significant figures like the time difference $31.0\\,\\mu\\text{s}$.\n\n**Reasonableness:** The eyeball of an adult is about $2.4\\,\\text{cm}$ in diameter, so the result is plausible. Had the return trip been forgotten, the eye would have been almost $5\\,\\text{cm}$ long, which is clearly too much."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain the choice of frequency",
+      "prompt": "The heart is usually imaged with a probe of about $3\\,\\text{MHz}$, but a tendon of the wrist with a probe of about $12\\,\\text{MHz}$. Explain why the frequencies are chosen like this. Use the concepts wavelength and attenuation.",
+      "model": "The wavelength is $\\lambda = \\tfrac{v}{f}$, so the wavelength of $12\\,\\text{MHz}$ ultrasound in tissue is about $0.13\\,\\text{mm}$ and that of $3\\,\\text{MHz}$ about $0.5\\,\\text{mm}$. The smallest details that can be distinguished are a few wavelengths in size, so a higher frequency gives a sharper image. However, attenuation grows approximately in direct proportion to the frequency, so a $12\\,\\text{MHz}$ pulse weakens quickly and its echo does not return from deeper than a few centimetres. A tendon is right under the skin, so a small depth is enough for imaging it and a high frequency can be used. The heart extends to a depth of over $10\\,\\text{cm}$, so a low frequency is used that reaches that far, and sharpness has to be compromised.",
+      "criteria": [
+        "The answer says that a higher frequency means a shorter wavelength ($\\lambda = \\tfrac{v}{f}$) and therefore a sharper image.",
+        "The answer says that attenuation grows as the frequency grows, so high-frequency ultrasound does not reach deep.",
+        "The answer links the choices to the depth of the targets: the tendon is near the surface, the heart deep.",
+        "The answer states that the choice is a compromise between sharpness and imaging depth."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and only then open the answer."
+    }
+  ]
+}

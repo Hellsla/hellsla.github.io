@@ -1,0 +1,21 @@
+{
+  "id": "fy5-2",
+  "course": "FY5",
+  "title": "Kappaleen tasapaino: voimat ja momentit",
+  "goals": [
+    "LOPS FY5: tasapaino kiertymisen suhteen yksinkertaisissa tilanteissa",
+    "Täsmennys: voimien komponentteihin jako voi olla tarpeen, kun pääpaino on fysiikan ymmärtämisessä eikä matematiikassa"
+  ],
+  "prerequisites": [
+    "fy5-1"
+  ],
+  "glossary": [
+    "tasapaino",
+    "momenttiehto",
+    "painopiste",
+    "tukivoima"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

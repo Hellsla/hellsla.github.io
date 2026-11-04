@@ -1,19 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d4fbd1f5e3bb1dee
+CONTENT-HASH: 46894824552c9f59
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] stage Tutki at 390 — simulation labels "Simulaation lukemat" and table headers are fine, but the readout line "Hypyn lopussa v = … m/s, suurin F_v = … N" wraps awkwardly at the symbol; keep "F_v = … N" together.
-- [Minor] "Exit ticket" heading is English in the shared template (same in the passed Finnish version) — rename "Lopputesti" when the template is next touched.
-- [Minor] fig 5 (varjo) first panel — short F_v and G arrows side by side are the smallest in the chapter; lengthen slightly.
-- [Minor] car solution diagram — F_r label touches the F_v arrow shaft; move it down.
+- none
 
 ## Checked
-- contact-1, -2, -3, -5, -6 (opening, sim at 390, figures 1-10, worked example, stages, exercises with open solutions).
-- Figures: force arrows have visible shafts and labels (G, F_v, a, v, ΣF) sit by their own arrows; Finnish labels "alussa / kiihtyy / rajanopeus / varjo aukeaa / uusi rajanopeus" fit without overflow.
-- Rendered page searched for English words: none. Short sentences, one idea each, glossary terms väliaineen vastus, ilmanvastus, rajanopeus consistent; quantities in LaTeX with decimal comma; Newtonin ensimmäinen laki explained plainly.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-14.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

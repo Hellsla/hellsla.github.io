@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy5-13-L1-01",
+      "level": 1,
+      "text": "The vibrating part of the lowest string of a double bass is $1.05\\,\\text{m}$ long, and a wave travels in the string at the speed $86.1\\,\\text{m/s}$. The string is fixed at both ends. What is the fundamental frequency of the string?",
+      "answer": 41.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L1-02",
+      "level": 1,
+      "text": "In a school project a pipe open at both ends is made from a plastic tube whose length is $0.330\\,\\text{m}$. What is the fundamental frequency of the air column of the tube? Use $340\\,\\text{m/s}$ as the speed of sound in air.",
+      "answer": 515.151515,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L1-03",
+      "level": 1,
+      "text": "The largest pipe of a church organ is closed at its upper end and its length is $2.60\\,\\text{m}$. What is the fundamental frequency of the pipe? Use $340\\,\\text{m/s}$ as the speed of sound in air.",
+      "answer": 32.692308,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L1-04",
+      "level": 1,
+      "text": "In a PE lesson a long rope fixed to a wall is shaken so that a standing wave forms in it. The distance between two adjacent nodes is measured to be $0.35\\,\\text{m}$. What is the wavelength of the waves travelling in the rope?",
+      "answer": 0.7,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L1-05",
+      "level": 1,
+      "text": "The fundamental frequency of the G string of a cello is $98.0\\,\\text{Hz}$. What is the fourth natural frequency of the string, that is, the frequency at which four antinodes fit on the string?",
+      "answer": 392.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-13-L2-01",
+      "level": 2,
+      "text": "The vibrating part of a guitar string is $0.650\\,\\text{m}$ long. When the guitarist tightens the string with the tuning peg, the speed of the wave in the string increases from $141.0\\,\\text{m/s}$ to $148.0\\,\\text{m/s}$. By how many hertz does the fundamental frequency of the string rise?",
+      "answer": 5.384615,
+      "unit": "Hz",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-13-L2-02",
+      "level": 2,
+      "text": "The speed of sound is measured with a resonance tube. The lower part of a vertical tube contains water, and a tuning fork with the frequency $440\\,\\text{Hz}$ sounds above the upper end of the tube. When the water level is lowered, the sound is amplified for the first time when the air column from the water surface to the mouth of the tube is $19.3\\,\\text{cm}$ long. The water surface acts as the closed end of the tube. What is the speed of sound in air according to the measurement?",
+      "answer": 339.68,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L2-03",
+      "level": 2,
+      "text": "The third natural frequency of a tube open at both ends is $1530\\,\\text{Hz}$. How long is the tube? Use $340\\,\\text{m/s}$ as the speed of sound in air. Give the answer in centimetres.",
+      "answer": 33.333333,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L2-04",
+      "level": 2,
+      "text": "In the figure a vibrator vibrates at the frequency $100\\,\\text{Hz}$, and the rope between the vibrator and the pulley vibrates as a standing wave. The positions of the vibrator and the pulley are nodes. What is the speed of the wave in the rope? Read the necessary data from the figure.",
+      "figure": "fy5-13/kuvio-tehtava",
+      "answer": 60.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-13-L3-01",
+      "level": 3,
+      "text": "The fundamental frequency of an organ pipe open at both ends is $262\\,\\text{Hz}$. The organ builder closes the upper end of the pipe with a plug. What is the new fundamental frequency of the pipe? The length of the pipe and the temperature of the air do not change.",
+      "answer": 131.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L3-02",
+      "level": 3,
+      "text": "A string fixed at both ends is driven by a vibrator whose frequency can be adjusted. When the frequency is raised, the string resonates strongly at the frequency $330\\,\\text{Hz}$ and the next time at $440\\,\\text{Hz}$, but at no frequency between them. What is the fundamental frequency of the string?",
+      "answer": 110,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L3-03",
+      "level": 3,
+      "text": "A loudspeaker whose frequency is varied sounds near the mouth of a tube closed at one end. The tube resonates at the frequencies $510\\,\\text{Hz}$ and $850\\,\\text{Hz}$, but at no frequency between them. How long is the tube? Use $340\\,\\text{m/s}$ as the speed of sound in air.",
+      "answer": 0.5,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "fy7-1",
+  "course": "FY7",
+  "title": "Magneetit, magneettinen dipoli ja magneettikenttä",
+  "goals": [
+    "LOPS FY7: ferromagnetismi ja magneettinen dipoli",
+    "LOPS FY7: magneettinen vuorovaikutus ja magneettikenttä",
+    "Täsmennys: para- ja diamagneettiset aineet eivät kuulu keskeisiin sisältöihin",
+    "Täsmennys: Maan magneettikenttä ja kompassi"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "magneetti",
+    "magneettinen dipoli",
+    "ferromagnetismi",
+    "alkeisalue",
+    "magneettikenttä",
+    "kenttäviiva",
+    "magneettivuon tiheys"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-11-L1-01",
+      "level": 1,
+      "text": "Fuusioreaktorissa tritiumia voidaan tuottaa litiumista reaktiolla ${}^{6}_{3}\\text{Li} + {}^{1}_{0}\\text{n} \\rightarrow {}^{4}_{2}\\text{He} + {}^{3}_{1}\\text{H}$. Atomimassat ovat: litium-6 $6{,}0151229\\,\\text{u}$, neutroni $1{,}0086649\\,\\text{u}$, helium-4 $4{,}0026033\\,\\text{u}$ ja tritium $3{,}0160493\\,\\text{u}$. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
+      "answer": 4.78,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L1-02",
+      "level": 1,
+      "text": "Erään uraani-235:n fissioreaktion tuotteiden yhteenlaskettu massa on $0{,}1915\\,\\text{u}$ pienempi kuin lähtöaineiden. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
+      "answer": 178,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L1-03",
+      "level": 1,
+      "text": "Ketjureaktion sukupolvessa $0$ on $1000$ neutronia, ja kasvukerroin on $k = 0{,}90$. Kuinka monta neutronia ketjussa on keskimäärin sukupolvessa $10$?",
+      "answer": 349,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L1-04",
+      "level": 1,
+      "text": "Kahden deuteriumytimen fuusiossa syntyy helium-3-ydin ja neutroni: ${}^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\rightarrow {}^{3}_{2}\\text{He} + {}^{1}_{0}\\text{n}$. Atomimassat ovat: deuterium $2{,}0141018\\,\\text{u}$, helium-3 $3{,}0160293\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
+      "answer": 3.27,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L1-05",
+      "level": 1,
+      "text": "Neutronin massa on $1{,}0086649\\,\\text{u}$. Kuinka suurta energiaa neutronin massa vastaa? Anna vastaus megaelektronivoltteina.",
+      "answer": 939.6,
+      "unit": "MeV",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-11-L2-01",
+      "level": 2,
+      "text": "Olkiluoto 3:n reaktorin lämpöteho on $4300\\,\\text{MW}$. Kuinka paljon reaktorin polttoaineen massa pienenee vuodessa ($365\\,\\text{d}$) sen vuoksi, että reaktori vapauttaa energiaa? Oleta, että reaktori toimii koko vuoden täydellä teholla. Anna vastaus kilogrammoina.",
+      "answer": 1.51,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L2-02",
+      "level": 2,
+      "text": "Deuteriumin ja tritiumin fuusiossa ${}^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\rightarrow {}^{4}_{2}\\text{He} + {}^{1}_{0}\\text{n}$ atomimassat ovat: deuterium $2{,}0141018\\,\\text{u}$, tritium $3{,}0160493\\,\\text{u}$, helium-4 $4{,}0026033\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Kuinka paljon energiaa vapautuu, kun kilogramma deuterium–tritium-seosta fuusioituu? Käytä $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$. Anna vastaus yksikössä $10^{14}\\,\\tfrac{\\text{J}}{\\text{kg}}$.",
+      "answer": 3.37,
+      "unit": "10¹⁴ J/kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L2-03",
+      "level": 2,
+      "text": "Uraani-235 voi jakautua myös reaktiossa ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\rightarrow {}^{140}_{54}\\text{Xe} + {}^{94}_{38}\\text{Sr} + x\\,{}^{1}_{0}\\text{n}$. Atomimassat ovat: uraani-235 $235{,}0439282\\,\\text{u}$, ksenon-140 $139{,}9216458\\,\\text{u}$, strontium-94 $93{,}9153556\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Päättele ensin neutronien määrä $x$. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
+      "answer": 185,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L2-04",
+      "level": 2,
+      "text": "Koejärjestelyssä ketjun neutronimäärä kasvaa $40$ sukupolvessa $1000$:sta $5000$:een. Kasvukerroin $k$ pysyy koko ajan samana. Kuinka monta prosenttia neutronien määrä kasvaa sukupolvesta seuraavaan?",
+      "answer": 4.11,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-11-L3-01",
+      "level": 3,
+      "text": "Olkiluoto 3:n reaktorin lämpöteho on $4300\\,\\text{MW}$. Kussakin uraani-235:n fissiossa vapautuu keskimäärin $200\\,\\text{MeV}$. Uraani-235:n atomimassa on $235{,}0439282\\,\\text{u}$, ja $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$. Oleta, että kaikki lämpöteho syntyy uraani-235:n fissioista. Kuinka monta kilogrammaa uraani-235:tä fissioituu reaktorissa vuorokaudessa?",
+      "answer": 4.5,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L3-02",
+      "level": 3,
+      "text": "Auringon säteilyteho on $3{,}83 \\cdot 10^{26}\\,\\text{W}$. Energia syntyy Auringon ytimessä fuusiossa, jonka kokonaisreaktiossa neljästä vetyytimestä syntyy yksi helium-4-ydin. Kokonaisreaktiossa vapautuva energia saadaan neljän vetyatomin ja yhden heliumatomin massojen erotuksesta. Vetyatomin massa on $1{,}0078250\\,\\text{u}$ ja helium-4-atomin $4{,}0026033\\,\\text{u}$. Kuinka monta heliumydintä Auringossa syntyy sekunnissa? Oleta, että kaikki vapautuva energia päätyy säteilytehoksi. Anna vastaus yksikössä $10^{37}\\,\\tfrac{1}{\\text{s}}$.",
+      "answer": 8.94,
+      "unit": "10³⁷ 1/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L3-03",
+      "level": 3,
+      "text": "Käytetyssä ydinpolttoaineessa on plutonium-239:ää, jonka puoliintumisaika on $24\\,100\\,\\text{a}$. Kuinka kauan kestää, että sen aktiivisuus pienenee tuhannesosaan alkuperäisestä? Anna vastaus yksikössä $10^{5}\\,\\text{a}$.",
+      "answer": 2.4,
+      "unit": "10⁵ a",
+      "tolerance": 0.02
+    }
+  ]
+}

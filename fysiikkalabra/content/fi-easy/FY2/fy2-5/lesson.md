@@ -1,4 +1,4 @@
-# Polttoaineet ja lämpöarvo E = Hm
+# Polttoaineet ja lämpöarvo $E = Hm$
 
 > **Miksi** kilogrammasta bensiiniä ja kilogrammasta ilmakuivaa polttopuuta vapautuu palaessa eri määrä energiaa? Molemmat ovat kuitenkin vain palavaa ainetta.
 
@@ -111,7 +111,7 @@
 </svg>
 
 ## Ydinajatus
-Tässä luvussa polttoaine tarkoittaa kemiallista polttoainetta. Se on aine, jonka kemiallinen energia vapautetaan polttamalla. Myös ydinvoimalan uraania sanotaan polttoaineeksi. Ydinpolttoaine ei kuitenkaan pala. Sen energia on ydinenergiaa (luku *Energialajit ja energian säilyminen*). Kemiallinen energia on energiaa, joka on varastoituna aineen atomien ja molekyylien väliseen rakenteeseen. Kun polttoaine palaa, rakenne muuttuu. Silloin energiaa vapautuu lämpönä ja valona. Energiaa ei synny tyhjästä. Kemiallinen energia muuntuu toiseen muotoon. Sama pätee ruokaan: elimistö "polttaa" ravinnon hitaasti ja vapauttaa siitä energiaa.
+Tässä luvussa polttoaine tarkoittaa kemiallista polttoainetta. Se on aine, jonka kemiallinen energia vapautetaan polttamalla. Myös ydinvoimalan uraania sanotaan polttoaineeksi. Ydinpolttoaine ei kuitenkaan pala. Sen energia on ydinenergiaa (luku *Energialajit ja energian säilyminen*). Kemiallinen energia on energiaa, joka on varastoitunut aineen rakenteeseen eli siihen, miten atomit ovat liittyneet toisiinsa molekyyleiksi. Kun polttoaine palaa, rakenne muuttuu. Silloin energiaa vapautuu lämpönä ja valona. Energiaa ei synny tyhjästä. Kemiallinen energia muuntuu toiseen muotoon. Sama pätee ruokaan: elimistö "polttaa" ravinnon hitaasti ja vapauttaa siitä energiaa.
 
 <svg data-fig="energia" viewBox="0 0 600 330" role="img" aria-label="Periaatekuva, ei mittakaavassa: kasa polttopuuta sisältää kemiallista energiaa. Kun puu palaa, siitä tulee liekki. Liekissä kemiallinen energia vapautuu lämpönä ja valona. Vapautuva energia saadaan kertomalla polttoaineen massa lämpöarvolla." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy25-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy25-heatv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -136,6 +136,8 @@ Tässä luvussa polttoaine tarkoittaa kemiallista polttoainetta. Se on aine, jon
 </svg>
 
 Eri polttoaineet sisältävät eri määrän kemiallista energiaa samaa massaa kohti. Suure, joka kertoo tämän, on lämpöarvo $H$. Lämpöarvo on energia, joka vapautuu, kun palaa yksi kilogramma polttoainetta. Sen yksikkö on esimerkiksi $\text{MJ/kg}$. Bensiinin lämpöarvo on noin $43\,\text{MJ/kg}$. Yhdestä kilogrammasta vapautuu siis noin $43\,\text{MJ}$ (noin $43 \cdot 10^{6}\,\text{J}$). Ilmakuivan polttopuun (kosteus $20\text{–}25\,\%$) lämpöarvo on vain noin $15\,\text{MJ/kg}$. Saman energian saamiseksi puuta tarvitaan siis lähes kolminkertainen massa.
+
+<figure class="unit-photo"><img src="pics/fy2/fireplace-wood-burning.webp" alt="Takassa palaa puita kirkkain liekein."><figcaption>Kun puu palaa, sen kemiallinen energia vapautuu lämpönä ja valona.</figcaption></figure>
 
 Lämpöarvo on energia massayksikköä kohti. Siksi vapautuva energia on suoraan verrannollinen palaneen polttoaineen massaan: kaksi kertaa enemmän polttoainetta vapauttaa kaksi kertaa enemmän energiaa. Tästä saadaan laki, jolla vapautuva energia lasketaan.
 

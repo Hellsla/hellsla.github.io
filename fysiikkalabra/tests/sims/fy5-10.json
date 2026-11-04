@@ -1,0 +1,178 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.aalto==='poik' && S.lahde==='jatkuva' && S.jannitys==='suuri' && S.f===1 && S.running===false && S.t===0 && S.dyMax===0 && S.dxMax===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: transverse continuous wave, high tension, f = 1,00 Hz, at rest at t = 0, no displacement recorded (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.v",
+  "expected": 2.0,
+  "tol": 0.01,
+  "note": "on load: high tension gives v = 2,0 m/s"
+ },
+ {
+  "expr": "window.simState.lambda",
+  "expected": 2.0,
+  "tol": 0.01,
+  "note": "on load: λ = v/f = 2,0 m/s / 1,00 Hz = 2,00 m (lesson-answers koe2-lambda-f1)"
+ },
+ {
+  "expr": "window.simState.T",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "on load: T = 1/f = 1,00 s"
+ },
+ {
+  "expr": "window.simState.A",
+  "expected": 5.0,
+  "tol": 0,
+  "note": "amplitude 5,0 cm"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='0.5' && R[0].max==='2.5' && R[0].step==='0.25' && R[0].value==='1' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: frequency 0,50–2,50 Hz in steps of 0,25, default 1,00 Hz"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===4 && L[0]==='poik,pitk' && L[1]==='jatkuva,pulssi' && L[2]==='suuri,pieni' && L[3]==='0.25,1,2' && document.querySelectorAll('#sim-root input[type=checkbox]').length===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "four selects: wave type, source, tension and speed hidas/normaali/nopea"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b.length===2 && b[0]==='Käynnistä' && b[1]==='Alusta' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "main button Käynnistä first, then Alusta; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='aalto,f,jannitys,lahde' && P.f.unit==='Hz' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares aalto, lahde, jannitys and f (Hz)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); const w=document.getElementById('sim-root').clientWidth; return c.width===600 && c.height===(w<500?660:400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 on a wide screen, 600x660 with larger labels when #sim-root is under 500 px"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],0.5);",
+  "expr": "window.simState.lambda",
+  "expected": 4.0,
+  "tol": 0.01,
+  "note": "koe 2: f = 0,50 Hz gives λ = 4,00 m"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2);",
+  "expr": "window.simState.lambda",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "koe 2 / ennuste 2: f = 2,00 Hz gives λ = 1,00 m"
+ },
+ {
+  "expr": "window.simState.v",
+  "expected": 2.0,
+  "tol": 0.01,
+  "note": "koe 2 / ennuste 2: the speed stays 2,0 m/s when only f changes"
+ },
+ {
+  "expr": "window.simState.f * window.simState.lambda",
+  "expected": 2.0,
+  "tol": 0.01,
+  "note": "f·λ = v on every row of koe 2"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(L[2],'pieni');",
+  "expr": "window.simState.v",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "koe 3: low tension gives v = 1,0 m/s"
+ },
+ {
+  "expr": "window.simState.lambda",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "koe 3: at f = 1,00 Hz and low tension λ = 1,00 m"
+ },
+ {
+  "expr": "window.simState.f",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "koe 3: the frequency stays 1,00 Hz when only the tension changes"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'poik'); I(L[1],'jatkuva'); I(L[2],'suuri'); I(R[0],1); I(L[3],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.t > 3.0 || Date.now() - t0 > 9000) r(S.running && document.querySelector('#sim-root button').textContent==='Pysäytä' ? 1 : 0); else setTimeout(f, 50); }; f(); })",
+  "expected": 1,
+  "tol": 0,
+  "note": "Käynnistä runs the wave; while it runs the main button reads Pysäytä"
+ },
+ {
+  "expr": "window.simState.dyMax",
+  "expected": 5.0,
+  "tol": 0.01,
+  "note": "koe 1 / ennuste 1: after 3 s the transverse wave has moved P up and down by its amplitude 5,0 cm (lesson-answers koe1-dmax)"
+ },
+ {
+  "expr": "window.simState.dxMax",
+  "expected": 0,
+  "tol": 0,
+  "note": "koe 1 / ennuste 1: in the transverse wave P never moves along the rope"
+ },
+ {
+  "expr": "(() => { const S=window.simState; return S.xFront > 6.0 && Math.abs(S.xFront - S.v*S.t) < 1e-9 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "koe 1: meanwhile the front has gone x = v t, more than 6,0 m"
+ },
+ {
+  "expr": "(() => { const S=window.simState; const tau=S.t-1.0/S.v; const y=tau<0?0:S.A*Math.sin(2*Math.PI*S.f*tau); return Math.abs(S.yP - y) < 1e-9 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "P at x = 1,00 m repeats the source's motion after the delay x/v"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'pitk'); I(L[3],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.t > 3.0 || Date.now() - t0 > 9000) r(S.dxMax); else setTimeout(f, 50); }; f(); })",
+  "expected": 5.0,
+  "tol": 0.01,
+  "note": "koe 1: in the longitudinal wave P moves to and fro along the spring by 5,0 cm"
+ },
+ {
+  "expr": "window.simState.dyMax",
+  "expected": 0,
+  "tol": 0,
+  "note": "koe 1: in the longitudinal wave P never moves across the spring"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'poik');",
+  "expr": "(() => { const S=window.simState; return S.t===0 && S.running===false && S.dyMax===0 && S.dxMax===0 && document.querySelector('#sim-root button').textContent==='Käynnistä' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "changing a control starts the wave again from rest"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'poik'); I(L[1],'pulssi'); I(L[2],'suuri'); I(R[0],1); I(L[3],'2'); document.querySelector('#sim-root button').click();",
+  "expr": "new Promise((r) => { const t0 = Date.now(); const f = () => { const S = window.simState; if (S.t > 1.5 || Date.now() - t0 > 9000) r(S.dyMax > 4.9 && Math.abs(S.yP) < 1e-9 ? 1 : 0); else setTimeout(f, 50); }; f(); })",
+  "expected": 1,
+  "tol": 0,
+  "note": "one pulse: its crest (5,0 cm) has passed P by t = 1,5 s (it lasts T/2 = 0,50 s and reaches P at 0,50 s), and P is back at rest"
+ },
+ {
+  "setup": "document.querySelectorAll('#sim-root button')[1].click();",
+  "expr": "(() => { const S=window.simState; return S.t===0 && S.running===false && S.dyMax===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "Alusta returns the medium to rest at t = 0"
+ }
+]

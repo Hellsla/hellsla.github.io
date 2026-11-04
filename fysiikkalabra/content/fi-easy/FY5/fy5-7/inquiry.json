@@ -1,0 +1,475 @@
+{
+  "version": 1,
+  "contribution": "Luvussa määritellään jaksollinen liike ja värähtelyliike. Värähtelyä kuvataan amplitudilla, jaksonajalla ja taajuudella. Opiskelija lukee ne $(t, x)$-kuvaajasta ja kirjoittaa mallin $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$. Hän sovittaa sinifunktion simuloituun mittaukseen käsin ja Graphical Analysis Prolla.",
+  "learn": [
+    "lukemaan värähtelyn amplitudin, jaksonajan ja taajuuden $(t, x)$-kuvaajasta.",
+    "laskemaan poikkeaman sinimallilla $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$.",
+    "sovittamaan sinifunktion mittauspisteisiin ja kertomaan, mitä sovituksen tulos tarkoittaa."
+  ],
+  "prior": [
+    "Kierrosaika $T$ on yhden kierroksen kesto. Pyörimistaajuus $f = \\tfrac{1}{T}$ on kierrosten määrä aikayksikössä (luku *Ympyrärata: jaksonaika ja ratanopeus*)",
+    "$(t, x)$-kuvaaja näyttää kappaleen paikan ajan funktiona (luku *Paikka, nopeus ja tasainen liike kuvaajina*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Punnus riippuu jousesta laboratorion telineessä. Kun punnusta vedetään vähän alaspäin ja se päästetään irti, se alkaa pomppia ylös ja alas. Lattialla punnuksen alla on liiketunnistin. Se mittaa punnuksen paikan kaksikymmentä kertaa sekunnissa. Ruudulle piirtyy aaltoileva käyrä, joka näyttää toistavan itseään.",
+      "question": "Millä luvuilla tällaisen liikkeen voi kuvata, ja miten ne saadaan käyrästä?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: kierrosaika ja pyörimistaajuus",
+      "prompt": "Karuselli tekee yhden kierroksen $4{,}0\\,\\text{s}$:ssa. Mikä on sen pyörimistaajuus?",
+      "choices": [
+        {
+          "text": "$0{,}25\\,\\tfrac{1}{\\text{s}}$, koska sekunnissa ehtii neljäsosa kierroksesta.",
+          "correct": true,
+          "feedback": "Oikein. Pyörimistaajuus on kierrosajan käänteisluku, $f = \\tfrac{1}{T} = \\tfrac{1}{4{,}0\\,\\text{s}} = 0{,}25\\,\\tfrac{1}{\\text{s}}$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Samat suureet kuvaavat tänään edestakaista liikettä."
+        },
+        {
+          "text": "$4{,}0\\,\\tfrac{1}{\\text{s}}$, koska yksi kierros kestää neljä sekuntia.",
+          "feedback": "Neljä sekuntia on yhden kierroksen kesto eli kierrosaika. Pyörimistaajuus kertoo kierrosten määrän sekunnissa. Neljässä sekunnissa tulee yksi kierros, joten sekunnissa tulee $\\tfrac{1}{4{,}0}$ kierrosta eli $0{,}25\\,\\tfrac{1}{\\text{s}}$."
+        },
+        {
+          "text": "$0{,}25\\,\\text{s}$, koska taajuus on aika jaettuna kierroksilla.",
+          "feedback": "Luku $0{,}25$ on oikea, mutta yksikkö ei ole. Pyörimistaajuus on kierrosten määrä aikayksikössä, joten sen yksikkö on $\\tfrac{1}{\\text{s}}$. Yksikkö ei ole sekunti."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: mallin amplitudi",
+      "prompt": "Simuloidussa mittauksessa punnuksen ylimmän ja alimman aseman välinen etäisyys on noin $12\\,\\text{cm}$. Tasapainoasema on niiden puolivälissä. Mittauspisteisiin sovitetaan käyrä $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$, jonka jaksonaika on jo oikea. Millä luvun $A$ arvolla käyrä kulkee pisteiden kautta?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "$A = 6{,}0\\,\\text{cm}$, tasapainoasemasta ääriasemaan.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Kun $A = 6{,}0\\,\\text{cm}$, sovitusvirhe on vain $d = 0{,}13\\,\\text{cm}$. Arvolla $12\\,\\text{cm}$ se on $3{,}70\\,\\text{cm}$ ja arvolla $3{,}0\\,\\text{cm}$ se on $1{,}85\\,\\text{cm}$. Sinifunktio saa arvot $-1$:stä $1$:een, joten $A \\sin(\\ldots)$ vaihtelee $-A$:sta $A$:han. Luku $A$ on siis suurin poikkeama tasapainoasemasta."
+        },
+        {
+          "text": "$A = 12\\,\\text{cm}$, ääriasemasta toiseen.",
+          "feedback": "Mallin arvot kumoavat tämän. Arvolla $A = 12\\,\\text{cm}$ sovitusvirhe on $d = 3{,}70\\,\\text{cm}$, ja käyrä käy pisteiden yli ja ali kaksinkertaisena. Sinin arvot ovat $-1$:n ja $1$:n välillä, joten käyrä $A \\sin(\\ldots)$ ulottuu $A$:n verran kumpaankin suuntaan, yhteensä $2A$. Ääriasemien väli $12\\,\\text{cm}$ on siis $2A$. Arvo $A = 6{,}0\\,\\text{cm}$ antaa pienimmän sovitusvirheen $0{,}13\\,\\text{cm}$."
+        },
+        {
+          "text": "$A = 3{,}0\\,\\text{cm}$, puolet tasapainoaseman ja ääriaseman välistä.",
+          "feedback": "Mallin arvot kumoavat tämän. Arvolla $A = 3{,}0\\,\\text{cm}$ käyrä jää pisteiden huippujen alle, ja sovitusvirhe on $d = 1{,}85\\,\\text{cm}$. Sinin suurin arvo on $1$, joten käyrän huippu on korkeudella $A$. Huippujen pitää osua noin $6\\,\\text{cm}$:iin, joten $A = 6{,}0\\,\\text{cm}$. Se antaa sovitusvirheen $0{,}13\\,\\text{cm}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: mallin jaksonaika",
+      "prompt": "Mallikäyrän $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$ jaksonaika $T$ muutetaan arvosta $0{,}80\\,\\text{s}$ arvoon $1{,}60\\,\\text{s}$. Amplitudi pysyy samana. Miten käyrä muuttuu kuvaajan aikavälillä $0$–$5\\,\\text{s}$?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Huiput harvenevat: täysiä värähdyksiä mahtuu väliin puolet vähemmän.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Arvolla $T = 0{,}80\\,\\text{s}$ väliin mahtuu $N = 6$ täyttä värähdystä, ja taajuus on $1{,}25\\,\\text{Hz}$. Arvolla $T = 1{,}60\\,\\text{s}$ mahtuu vain $N = 3$, ja taajuus on $0{,}625\\,\\text{Hz}$. Yksi värähdys kestää kaksi kertaa kauemmin, joten käyrä venyy vaakasuunnassa. Taajuus $f = \\tfrac{1}{T}$ puolittuu."
+        },
+        {
+          "text": "Huiput tihenevät: täysiä värähdyksiä mahtuu väliin kaksi kertaa enemmän.",
+          "feedback": "Mallin arvot kumoavat tämän. Värähdyksiä on $N = 6$ arvolla $T = 0{,}80\\,\\text{s}$, mutta vain $N = 3$ arvolla $T = 1{,}60\\,\\text{s}$. Suurempi jaksonaika tarkoittaa, että yksi värähdys kestää kauemmin. Samaan aikaan mahtuu siis vähemmän värähdyksiä. Huiput tihenisivät, jos taajuus olisi suurempi eli jaksonaika pienempi."
+        },
+        {
+          "text": "Huiput nousevat kaksi kertaa korkeammalle, ja värähdyksiä on yhtä monta.",
+          "feedback": "Mallin arvot kumoavat tämän. Huippujen korkeus pysyy koko ajan samana, koska amplitudi ei muuttunut. Värähdyksiä on kuitenkin $N = 3$ eikä $N = 6$. Jaksonaika muuttaa käyrää vaakasuunnassa eli ajan suunnassa. Amplitudi muuttaa sitä pystysuunnassa."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Sovita sinikäyrä simuloituun mittaukseen. Säädä mallin amplitudia ja jaksonaikaa, kunnes sininen käyrä kulkee mustien pisteiden keskeltä.",
+      "howto": "Valitse *Aineisto* ja säädä mallin amplitudia $A$ ja jaksonaikaa $T$. Sininen käyrä on mallisi $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$. Mustat pisteet ovat simuloitu mittaus. Lukema *Sovitusvirhe* $d$ kertoo, kuinka kaukana pisteet ovat käyrästä keskimäärin. Mitä pienempi $d$ on, sitä paremmin malli sopii. *Käynnistä* toistaa mittauksen $5\\,\\text{s}$:n ajan. Punnus liikkuu kuten mittauksessa. Sininen kolmio sen vieressä näyttää mallin poikkeaman. Katkoviiva kulkee kuvaajassa samaa hetkeä. Jos malli sopii, kolmio pysyy punnuksen kohdalla koko ajan. Lukemat $N$ ja $f$ koskevat mallia. *Nopeus* muuttaa vain toiston tahtia.",
+      "model": "Punnus värähtelee pystysuunnassa jousen varassa. Ylöspäin on positiivinen suunta. Värähtely ei vaimene, ja ajanotto alkaa, kun punnus ohittaa tasapainoaseman ylöspäin. Jokainen aineisto on simuloitu mittaus. Pisteet on laskettu sinimallista, ja niihin on lisätty pieni satunnaiselta näyttävä virhe, enintään $0{,}25\\,\\text{cm}$, kuten oikeassa mittauksessa. Siksi pisteet eivät osu täsmälleen millekään sinikäyrälle, eikä sovitusvirhe ole koskaan nolla. Kaikki luvut ovat mallin ja simulaation arvoja, eivät mitattuja.",
+      "calc": "Mittauspisteitä on $51$, kymmenesosasekunnin välein hetkestä $0$ hetkeen $5{,}0\\,\\text{s}$. Mallin poikkeama hetkellä $t$ on $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$, ja taajuus on $f = \\tfrac{1}{T}$. Sovitusvirhe $d$ on pisteiden ja mallikäyrän pystysuorien etäisyyksien keskiarvo. Jokaisesta pisteestä lasketaan $|x_i - A \\sin\\left(\\tfrac{2\\pi t_i}{T}\\right)|$. Tulokset lasketaan yhteen ja jaetaan pisteiden määrällä. $N$ on mallin täysien värähdysten määrä välillä $0$–$5{,}0\\,\\text{s}$ eli luvun $\\tfrac{5{,}0\\,\\text{s}}{T}$ kokonaisosa. Lukema *simuloitu mittaus* on lähimmän mittauspisteen arvo."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: amplitudin sovitus",
+      "intro": "Testaa ennuste 1. Mallin jaksonaika on aineiston oikea $1{,}60\\,\\text{s}$, ja se pysyy vakiona. Muuta vain mallin amplitudia. Kirjaa sovitusvirhe $d$ ainakin arvoilla $3{,}0\\,\\text{cm}$, $6{,}0\\,\\text{cm}$ ja $12\\,\\text{cm}$. Millä amplitudilla käyrän huiput osuvat pisteiden huippuihin?",
+      "initial": {
+        "aineisto": "1",
+        "A": 2,
+        "T": 1.6
+      },
+      "locked": [
+        "aineisto",
+        "T"
+      ],
+      "vary": "A",
+      "names": {
+        "aineisto": "aineisto",
+        "A": "mallin amplitudi A",
+        "T": "mallin jaksonaika T"
+      },
+      "units": {
+        "A": "cm",
+        "T": "s"
+      },
+      "values": {
+        "aineisto": {
+          "1": "aineisto 1"
+        }
+      },
+      "measure": [
+        {
+          "key": "d",
+          "label": "d (cm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: jaksonajan sovitus",
+      "intro": "Testaa ennuste 2. Mallin amplitudi on $6{,}0\\,\\text{cm}$, ja se pysyy vakiona. Muuta vain mallin jaksonaikaa ja kirjaa ainakin arvot $0{,}80\\,\\text{s}$ ja $1{,}60\\,\\text{s}$. Katso, miten huippujen määrä muuttuu. Katso myös, millä jaksonajalla sovitusvirhe on pienin.",
+      "initial": {
+        "aineisto": "1",
+        "A": 6,
+        "T": 0.8
+      },
+      "locked": [
+        "aineisto",
+        "A"
+      ],
+      "vary": "T",
+      "names": {
+        "aineisto": "aineisto",
+        "A": "mallin amplitudi A",
+        "T": "mallin jaksonaika T"
+      },
+      "units": {
+        "A": "cm",
+        "T": "s"
+      },
+      "values": {
+        "aineisto": {
+          "1": "aineisto 1"
+        }
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "f",
+          "label": "f (Hz)"
+        },
+        {
+          "key": "d",
+          "label": "d (cm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: sovita itse",
+      "intro": "Aineiston 3 amplitudia ja jaksonaikaa ei kerrota. Lue ensin kuvaajasta karkeat arvot. Amplitudi luetaan pisteiden huippujen tasolta. Jaksonaika luetaan kahden täyden värähdyksen kestosta. Aseta arvot malliin ja hienosäädä sitten kumpaakin, kunnes sovitusvirhe on pienin. Kirjaa jokainen yritys.",
+      "initial": {
+        "aineisto": "3",
+        "A": 2,
+        "T": 1
+      },
+      "locked": [
+        "aineisto"
+      ],
+      "vary": "T",
+      "names": {
+        "aineisto": "aineisto",
+        "A": "mallin amplitudi A",
+        "T": "mallin jaksonaika T"
+      },
+      "units": {
+        "A": "cm",
+        "T": "s"
+      },
+      "values": {
+        "aineisto": {
+          "3": "aineisto 3"
+        }
+      },
+      "measure": [
+        {
+          "key": "A",
+          "label": "A (cm)"
+        },
+        {
+          "key": "f",
+          "label": "f (Hz)"
+        },
+        {
+          "key": "d",
+          "label": "d (cm)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "Mikä on aineiston 3 jaksonaika parhaan sovituksesi mukaan? Vastaa sekunteina.",
+        "answer": 2.2,
+        "unit": "s",
+        "tolerance": 0.03,
+        "hints": [
+          "Paras sovitus on se rivi, jolla sovitusvirhe $d$ on pienin. Jos se on yli $1\\,\\text{cm}$, käyrä ei vielä kulje pisteiden keskeltä.",
+          "Lue kuvaajasta, missä kohdassa pisteet ohittavat tasapainoaseman ylöspäin toisen kerran. Siihen asti on kulunut yhden täyden värähdyksen aika.",
+          "Pisteet nousevat tasapainoaseman läpi hetkellä $0$ ja seuraavan kerran hieman yli hetken $2\\,\\text{s}$. Kokeile malliin arvoja sen läheltä ja katso, missä $d$ on pienin."
+        ],
+        "mistakes": [
+          {
+            "value": 1.1,
+            "feedback": "Tämä on puolet jaksonajasta. Peräkkäiset tasapainoaseman ohitukset ovat vain puolen jakson päässä toisistaan. Täysi jakso on kahden ylöspäin tapahtuvan ohituksen välillä. Se on myös kahden peräkkäisen huipun välillä."
+          },
+          {
+            "value": 0.455,
+            "feedback": "Tämä on taajuus $f = \\tfrac{1}{T}$ hertseinä. Kysytty on jaksonaika eli yhden värähdyksen kesto sekunteina."
+          }
+        ],
+        "solution": "**Annettu:** aineiston 3 simuloidut mittauspisteet ja omat sovitusyritykset taulukossa, malli $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$\n\n**Kysytty:** aineiston jaksonaika $T$ sekunteina\n\n**Periaate:** Malli sopii aineistoon sitä paremmin, mitä pienempi sovitusvirhe $d$ on. Paras sovitus on se mallin jaksonaika, jolla $d$ on pienin. Amplitudi on silloin myös säädetty sopivaksi.\n\n**Kuvaajan lukeminen:** Pisteet ohittavat tasapainoaseman ylöspäin hetkellä $0$ ja seuraavan kerran noin hetkellä $2{,}2\\,\\text{s}$. Huiput ovat noin $8{,}5\\,\\text{cm}$:n kohdalla. Aseta malliin $A = 8{,}5\\,\\text{cm}$ ja säädä jaksonaikaa. Silloin $d$ pienenee jyrkästi arvon $2{,}20\\,\\text{s}$ kohdalla.\n\n**Kaava:** Laskukaavaa ei ole. Jaksonaika luetaan suoraan parhaan sovituksen riviltä, $T = T_\\text{paras}$.\n\n**Muunnokset:** Ei tarvita. Säädin näyttää jaksonajan sekunteina.\n\n**Sijoitus:** Paras rivi on $A = 8{,}5\\,\\text{cm}$, $T = 2{,}20\\,\\text{s}$, $f = 0{,}455\\,\\text{Hz}$ ja $d = 0{,}13\\,\\text{cm}$. Siis $T = 2{,}20\\,\\text{s}$.\n\n**Vastaus:** $2{,}2\\,\\text{s}$, kahden merkitsevän numeron tarkkuudella. Säätimen askel $0{,}05\\,\\text{s}$ ja pisteiden hajonta rajaavat tarkkuuden.\n\n**Järkevyys:** Välille $0$–$5\\,\\text{s}$ mahtuu $\\tfrac{5{,}0\\,\\text{s}}{2{,}2\\,\\text{s}} \\approx 2{,}3$ värähdystä. Se on kaksi täyttä huippua ja vähän päälle, kuten kuvaajassa. Sovitusvirhe $d = 0{,}13\\,\\text{cm}$ on samaa suuruusluokkaa kuin pisteiden virhe, joka on enintään $0{,}25\\,\\text{cm}$. Parempaa sovitusta ei voi odottaa. Luvut ovat simulaation arvoja."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mitä A ja T tekevät käyrälle",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: miten amplitudi ja miten jaksonaika muuttavat mallikäyrää? Mistä kohdasta kuvaajaa amplitudi luetaan? Miten löysit aineiston 3 amplitudin ja jaksonajan? Miksi sovitusvirhe ei mennyt nollaan?",
+      "model": "Amplitudi muuttaa käyrää pystysuunnassa. Aineistossa 1 arvolla $A = 6{,}0\\,\\text{cm}$ sovitusvirhe oli $0{,}13\\,\\text{cm}$. Arvolla $12\\,\\text{cm}$ se oli $3{,}70\\,\\text{cm}$ ja arvolla $3{,}0\\,\\text{cm}$ se oli $1{,}85\\,\\text{cm}$. Amplitudi luetaan siis tasapainoaseman tasolta huipun tasolle, ei huipusta pohjaan. Jaksonaika muuttaa käyrää vaakasuunnassa. Arvolla $T = 0{,}80\\,\\text{s}$ väliin $0$–$5\\,\\text{s}$ mahtui $6$ täyttä värähdystä, ja taajuus oli $1{,}25\\,\\text{Hz}$. Arvolla $1{,}60\\,\\text{s}$ mahtui vain $3$, ja taajuus oli $0{,}625\\,\\text{Hz}$. Aineistossa 3 luin ensin karkeat arvot kuvaajasta ja hienosäädin, kunnes $d$ oli pienin. Sain $A = 8{,}5\\,\\text{cm}$ ja $T = 2{,}20\\,\\text{s}$, kun $d = 0{,}13\\,\\text{cm}$. Sovitusvirhe ei mene nollaan, koska simuloiduissa pisteissä on pieni virhe kuten oikeissa mittauksissa. Luvut ovat simulaation arvoja.",
+      "criteria": [
+        "Kerroin, että amplitudi muuttaa käyrää pystysuunnassa ja että paras amplitudi on tasapainoasemasta huippuun, ja perustelin sen sovitusvirheellä $d$.",
+        "Kerroin, että suurempi jaksonaika harventaa huippuja ja pienentää taajuutta, ja käytin taulukon lukuja $N$ tai $f$.",
+        "Kuvasin, miten löysin aineiston 3 amplitudin ja jaksonajan, ja annoin ne yksikköineen.",
+        "Selitin, miksi sovitusvirhe ei mene nollaan, ja mainitsin, että luvut ovat simulaation arvoja."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi taulukoihisi ja kaavaan $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$. Palaa sitten alun kysymykseen: millä luvuilla jousen varassa pomppivan punnuksen liike kuvataan? Miten luvut luetaan liiketunnistimen piirtämästä käyrästä?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Opiskelija tutkii jousen varassa värähtelevän punnuksen $(t, x)$-kuvaajaa. Käyrä lähtee nollasta ylöspäin. Se leikkaa tasapainoaseman tason $x = 0$ hetkillä $0$, $0{,}45\\,\\text{s}$, $0{,}90\\,\\text{s}$ ja $1{,}35\\,\\text{s}$. Opiskelija kirjoittaa:\n\n$$\\begin{aligned} T &= 0{,}45\\,\\text{s} \\\\ f &= \\frac{1}{T} = \\frac{1}{0{,}45\\,\\text{s}} \\approx 2{,}2\\,\\text{Hz} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Peräkkäiset ohitukset ovat puolen jakson päässä toisistaan, joten $T = 0{,}90\\,\\text{s}$ ja $f \\approx 1{,}1\\,\\text{Hz}$.",
+          "correct": true,
+          "feedback": "Oikein. Hetkellä $0$ punnus ohittaa tasapainoaseman ylöspäin ja hetkellä $0{,}45\\,\\text{s}$ alaspäin. Samaan suuntaan se ohittaa tasapainoaseman seuraavan kerran vasta hetkellä $0{,}90\\,\\text{s}$. Siis $T = 0{,}90\\,\\text{s}$ ja $f = \\tfrac{1}{0{,}90\\,\\text{s}} = 1{,}1\\,\\text{Hz}$."
+        },
+        {
+          "text": "Taajuus lasketaan kertomalla eikä jakamalla, joten $f = 0{,}45\\,\\text{s} \\cdot 1 = 0{,}45\\,\\text{Hz}$.",
+          "feedback": "Taajuus on jaksonajan käänteisluku, $f = \\tfrac{1}{T}$, kuten opiskelija kirjoitti. Virhe on jaksonajassa. Hetkien $0$ ja $0{,}45\\,\\text{s}$ välillä punnus on liikkunut vasta puolet värähdyksestä."
+        },
+        {
+          "text": "Jaksonaika on kolmen välin pituus, $1{,}35\\,\\text{s}$, koska käyrä leikkaa tason neljästi.",
+          "feedback": "Hetkien $0$ ja $1{,}35\\,\\text{s}$ välillä on puolitoista värähdystä, ei yksi. Yksi täysi värähdys kestää kaksi väliä eli $0{,}90\\,\\text{s}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä.",
+          "feedback": "Hetkellä $0{,}45\\,\\text{s}$ punnus ohittaa tasapainoaseman alaspäin. Se liikkuu siis eri suuntaan kuin hetkellä $0$. Täysi jakso päättyy vasta hetkellä $0{,}90\\,\\text{s}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "vaihe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Lisätieto: vaihe",
+      "prompt": "Heilurin punnus vedetään sivuun ja päästetään irti. Liiketunnistimen ajanotto alkaa päästöhetkellä. Graphical Analysis Pron sinisovitus $y = A \\sin(Bt + C) + D$ antaa vakion $C$ arvoksi noin $1{,}57$ eli $\\tfrac{\\pi}{2}$. Mitä se kertoo?",
+      "choices": [
+        {
+          "text": "Punnus oli hetkellä $t = 0$ ääriasemassa, neljäsosavärähdyksen päässä tasapainoasemasta.",
+          "correct": true,
+          "feedback": "Oikein. Koko värähdys vastaa sinin argumentissa lukua $2\\pi$, joten $\\tfrac{\\pi}{2}$ on neljäsosa värähdyksestä. Hetkellä $t = 0$ on $y - D = A \\sin\\tfrac{\\pi}{2} = A$. Punnus oli siis ääriasemassa, kuten päästöhetkellä pitääkin. Vaihe ei muuta amplitudia eikä jaksonaikaa."
+        },
+        {
+          "text": "Värähtelyn amplitudi on $1{,}57$ eli sama luku kuin sovituksen vakio $C$.",
+          "feedback": "Amplitudi on sovituksen vakio $A$. Vakio $C$ on sinin argumentissa, joten se on yksikötön luku. Se kertoo, missä kohdassa värähdystä punnus oli ajanoton alkaessa."
+        },
+        {
+          "text": "Värähtelyn jaksonaika on $1{,}57\\,\\text{s}$, koska vakio $C$ lisätään aikaan.",
+          "feedback": "Jaksonaika saadaan vakiosta $B$: $T = \\tfrac{2\\pi}{B}$. Vakio $C$ siirtää käyrää ajan suunnassa, mutta se ei muuta yhden värähdyksen kestoa."
+        },
+        {
+          "text": "Punnus ohitti tasapainoaseman positiiviseen suuntaan juuri hetkellä $t = 0$.",
+          "feedback": "Silloin vakio $C$ olisi nolla, koska $\\sin 0 = 0$. Arvo $\\tfrac{\\pi}{2}$ antaa hetkellä $t = 0$ suurimman poikkeaman. Punnus oli siis ääriasemassa."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Kevyen kävelysillan kansi värähtelee pystysuunnassa, kun sillalla juostaan tahdissa. Värähtelyn amplitudi on $4{,}0\\,\\text{cm}$ ja taajuus $0{,}50\\,\\text{Hz}$. Värähtely oletetaan sinimuotoiseksi ja vaimenemattomaksi. Kuinka kaukana tasapainoasemasta kansi on $0{,}40\\,\\text{s}$ sen jälkeen, kun se ohitti tasapainoaseman ylöspäin? Vastaa senttimetreinä.",
+      "answer": 3.8,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "hints": [
+        "Ajanotto alkaa tasapainoaseman ohituksesta ylöspäin, joten voit käyttää sinimallia. Kumpi muoto sopii, kun tiedät taajuuden?",
+        "$x = A \\sin(2\\pi f t)$. Laske ensin argumentti $2\\pi f t$ ja tarkista, että laskin on radiaanitilassa.",
+        "$2\\pi \\cdot 0{,}50\\,\\text{Hz} \\cdot 0{,}40\\,\\text{s} = 1{,}257$, joten $x = 4{,}0\\,\\text{cm} \\cdot \\sin 1{,}257$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.0877,
+          "feedback": "Laskin on astetilassa. Argumentti $2\\pi f t = 1{,}257$ on radiaaneja, joten vaihda laskin radiaanitilaan: $\\sin 1{,}257 = 0{,}951$."
+        },
+        {
+          "value": -3.8,
+          "feedback": "Käytit taajuutta $0{,}50$ jaksonaikana. Jaksonaika on $T = \\tfrac{1}{f} = 2{,}0\\,\\text{s}$. Sijoita se kaavaan $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$ tai käytä suoraan kaavaa $x = A \\sin(2\\pi f t)$."
+        },
+        {
+          "value": 8.0,
+          "feedback": "Tämä on ääriasemien välinen etäisyys $2A$. Kysytty on kannen poikkeama tasapainoasemasta hetkellä $0{,}40\\,\\text{s}$. Se on enintään amplitudin $4{,}0\\,\\text{cm}$ suuruinen."
+        }
+      ],
+      "solution": "**Annettu:** amplitudi $A = 4{,}0\\,\\text{cm}$, taajuus $f = 0{,}50\\,\\text{Hz}$, aika tasapainoaseman ohituksesta $t = 0{,}40\\,\\text{s}$\n\n**Kysytty:** kannen poikkeama $x$ tasapainoasemasta senttimetreinä\n\n**Periaate:** Kansi värähtelee sinimuotoisesti. Aika lasketaan hetkestä, jolloin kansi ohitti tasapainoaseman positiiviseen suuntaan eli ylöspäin. Silloin poikkeamaa kuvaa sinimalli. Jaksonajan paikalla voi käyttää taajuutta, koska $\\tfrac{1}{T} = f$.\n\n**Kaava:**\n\n$$x = A \\sin(2\\pi f t)$$\n\n**Muunnokset:** Ei tarvita. Yksikkö $\\text{Hz} \\cdot \\text{s} = \\tfrac{1}{\\text{s}} \\cdot \\text{s}$ on yksikötön, joten argumentti on radiaaneja. Poikkeama $x$ saadaan senttimetreinä kuten $A$.\n\n**Sijoitus:** $x = 4{,}0\\,\\text{cm} \\cdot \\sin(2\\pi \\cdot 0{,}50\\,\\text{Hz} \\cdot 0{,}40\\,\\text{s}) = 4{,}0\\,\\text{cm} \\cdot \\sin 1{,}257 = 4{,}0\\,\\text{cm} \\cdot 0{,}9511 = 3{,}804\\,\\text{cm}$\n\n**Vastaus:** $3{,}8\\,\\text{cm}$ tasapainoaseman yläpuolella, kaksi merkitsevää numeroa kuten amplitudissa $4{,}0\\,\\text{cm}$ ja taajuudessa $0{,}50\\,\\text{Hz}$.\n\n**Järkevyys:** Jaksonaika on $T = \\tfrac{1}{f} = 2{,}0\\,\\text{s}$, joten kansi on ylimmässä asemassa hetkellä $\\tfrac{T}{4} = 0{,}50\\,\\text{s}$. Hetki $0{,}40\\,\\text{s}$ on vähän ennen sitä, joten kansi on jo lähellä ylintä asemaa. Poikkeama $3{,}8\\,\\text{cm}$ on vähän alle amplitudin $4{,}0\\,\\text{cm}$, kuten pitääkin."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä luetaan tai lasketaan yksi suure. Tason 2 tehtävissä tarvitaan kaksi vaihetta tai yksikön muunnos. Taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Keinun istuin heilahtaa ääriasennosta toiseen. Ääriasentojen vaakasuora etäisyys toisistaan on $1{,}6\\,\\text{m}$. Liike ääriasennosta toiseen ja takaisin kestää $3{,}0\\,\\text{s}$. Poikkeama mitataan vaakasuunnassa. Mikä väite on oikein?",
+      "choices": [
+        {
+          "text": "Amplitudi on $0{,}80\\,\\text{m}$ ja jaksonaika $3{,}0\\,\\text{s}$.",
+          "correct": true,
+          "feedback": "Oikein. Amplitudi on suurin poikkeama tasapainoasemasta. Tasapainoasema on ääriasentojen puolivälissä, joten $A = \\tfrac{1{,}6\\,\\text{m}}{2} = 0{,}80\\,\\text{m}$. Liike ääriasennosta toiseen ja takaisin on yksi täysi värähdys, joten $T = 3{,}0\\,\\text{s}$."
+        },
+        {
+          "text": "Amplitudi on $1{,}6\\,\\text{m}$ ja jaksonaika $3{,}0\\,\\text{s}$.",
+          "feedback": "Jaksonaika on oikein, mutta $1{,}6\\,\\text{m}$ on ääriasentojen välinen etäisyys eli $2A$. Amplitudi mitataan tasapainoasemasta ääriasentoon, joten $A = 0{,}80\\,\\text{m}$."
+        },
+        {
+          "text": "Amplitudi on $0{,}80\\,\\text{m}$ ja jaksonaika $1{,}5\\,\\text{s}$.",
+          "feedback": "Amplitudi on oikein, mutta liike ääriasennosta toiseen on vain puolet värähdyksestä. Keinu on samassa paikassa ja liikkuu samaan suuntaan vasta palattuaan takaisin. Siksi $T = 3{,}0\\,\\text{s}$."
+        },
+        {
+          "text": "Amplitudi on $1{,}6\\,\\text{m}$ ja jaksonaika $1{,}5\\,\\text{s}$.",
+          "feedback": "Kumpikin luku on kaksinkertainen tai puolikas oikeasta. Amplitudi on puolet ääriasentojen välistä, $0{,}80\\,\\text{m}$. Täysi värähdys on meno ja paluu, $3{,}0\\,\\text{s}$."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Taajuus kuvaajasta",
+      "figure": "fy5-7/tarkistus-kuvaaja",
+      "prompt": "Kuvaaja esittää heilurin punnuksen vaakasuoraa poikkeamaa ajan funktiona sinimallin mukaan. Mikä on heilurin taajuus? Vastaa hertseinä.",
+      "answer": 0.56,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "hints": [
+        "Etsi kuvaajasta kohdat, joissa käyrä ohittaa tasapainoaseman ylöspäin. Montako täyttä värähdystä kuvaajassa on?",
+        "Lue usean täyden värähdyksen kesto ja jaa se värähdysten määrällä: $T = \\tfrac{t_n}{n}$. Sen jälkeen laske $f = \\tfrac{1}{T}$.",
+        "Käyrä nousee tasapainoaseman läpi hetkinä $0$, $1{,}8\\,\\text{s}$, $3{,}6\\,\\text{s}$ ja $5{,}4\\,\\text{s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.8,
+          "feedback": "Tämä on jaksonaika sekunteina. Taajuus on sen käänteisluku, $f = \\tfrac{1}{T}$."
+        },
+        {
+          "value": 1.11,
+          "feedback": "Luit jaksonajaksi kahden peräkkäisen tasapainoaseman ohituksen välin $0{,}9\\,\\text{s}$. Niiden välillä heiluri liikkuu vastakkaisiin suuntiin, joten väli on puolet jaksonajasta."
+        },
+        {
+          "value": 0.185,
+          "feedback": "Laskit koko kuvaajan keston käänteisluvun $\\tfrac{1}{5{,}4\\,\\text{s}}$. Kuvaajassa on kolme täyttä värähdystä, joten yhden värähdyksen kesto on $\\tfrac{5{,}4\\,\\text{s}}{3}$."
+        }
+      ],
+      "solution": "**Annettu:** kuvaajasta heilurin poikkeama $x$ ajan funktiona välillä $0$–$5{,}4\\,\\text{s}$\n\n**Kysytty:** heilurin taajuus $f$ hertseinä\n\n**Periaate:** Jaksonaika on yhden täyden värähdyksen kesto. Se luetaan tarkimmin usean värähdyksen kestosta, ja aika jaetaan värähdysten määrällä. Taajuus on jaksonajan käänteisluku.\n\n**Kuvaajan lukeminen:** Käyrä lähtee nollasta ylöspäin. Se ohittaa tasapainoaseman ylöspäin seuraavan kerran hetkinä $1{,}8\\,\\text{s}$, $3{,}6\\,\\text{s}$ ja $5{,}4\\,\\text{s}$. Kuvaajassa on siis $n = 3$ täyttä värähdystä ajassa $t_n = 5{,}4\\,\\text{s}$. Välissä olevat ohitukset hetkinä $0{,}9\\,\\text{s}$, $2{,}7\\,\\text{s}$ ja $4{,}5\\,\\text{s}$ tapahtuvat alaspäin.\n\n**Kaava:** $T = \\dfrac{t_n}{n}$ ja $f = \\dfrac{1}{T}$, josta\n\n$$f = \\frac{n}{t_n}$$\n\n**Muunnokset:** Ei tarvita. Aika on sekunteina, joten taajuus saadaan yksikössä $\\tfrac{1}{\\text{s}} = \\text{Hz}$.\n\n**Sijoitus:** $f = \\dfrac{3}{5{,}4\\,\\text{s}} = 0{,}5556\\,\\text{Hz}$\n\n**Vastaus:** $0{,}56\\,\\text{Hz}$, kaksi merkitsevää numeroa kuten kuvaajasta luettu aika $5{,}4\\,\\text{s}$.\n\n**Järkevyys:** Yksi värähdys kestää $1{,}8\\,\\text{s}$, joten sekunnissa ehtii vähän yli puoli värähdystä. Se sopii tulokseen $0{,}56\\,\\text{Hz}$. Noin $0{,}8\\,\\text{m}$:n mittainen heiluri heilahtaa tällä tahdilla, joten tulos on uskottava."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Tulkitse sovitus",
+      "prompt": "Liiketunnistin mittaa etäisyyden jousen varassa värähtelevään punnukseen. Oletetaan, että Graphical Analysis Pron sinisovitus $y = A \\sin(Bt + C) + D$ antaa arvot $A = 0{,}052\\,\\text{m}$, $B = 7{,}85\\,\\tfrac{1}{\\text{s}}$, $C = 0{,}01$ ja $D = 0{,}430\\,\\text{m}$. Mitä kukin luku kertoo punnuksen liikkeestä? Mikä on värähtelyn jaksonaika ja taajuus?",
+      "criteria": [
+        "Sanon, että $A = 0{,}052\\,\\text{m}$ on amplitudi eli suurin poikkeama tasapainoasemasta, ja $D = 0{,}430\\,\\text{m}$ tasapainoaseman etäisyys tunnistimesta.",
+        "Lasken jaksonajan $T = \\tfrac{2\\pi}{B} = 0{,}800\\,\\text{s}$ ja taajuuden $f = \\tfrac{1}{T} = 1{,}25\\,\\text{Hz}$ yksiköineen.",
+        "Selitän, että $C \\approx 0$ tarkoittaa, että ajanotto alkoi, kun punnus ohitti tasapainoaseman positiiviseen suuntaan."
+      ],
+      "model": "Amplitudi $A = 0{,}052\\,\\text{m} = 5{,}2\\,\\text{cm}$ on punnuksen suurin poikkeama tasapainoasemasta. Vakio $D = 0{,}430\\,\\text{m}$ on etäisyys tunnistimesta tasapainoasemaan. Punnus liikkuu siis etäisyyksien $0{,}378\\,\\text{m}$ ja $0{,}482\\,\\text{m}$ välillä. Vakiosta $B = \\tfrac{2\\pi}{T}$ saadaan jaksonaika $T = \\tfrac{2\\pi}{7{,}85\\,\\tfrac{1}{\\text{s}}} = 0{,}800\\,\\text{s}$ ja taajuus $f = \\tfrac{1}{T} = 1{,}25\\,\\text{Hz}$. Vakio $C \\approx 0$ kertoo vaiheen. Hetkellä $t = 0$ punnus oli tasapainoasemassa ja liikkui positiiviseen suuntaan eli poispäin tunnistimesta, koska etäisyys alkoi kasvaa.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

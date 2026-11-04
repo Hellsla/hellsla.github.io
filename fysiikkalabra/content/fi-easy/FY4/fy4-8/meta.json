@@ -16,6 +16,24 @@
     "työ",
     "ei-konservatiivinen voima"
   ],
+  "key_concepts": [
+    {
+      "term": "mekaanisen energian säilyminen",
+      "explain": "Kun vain paino tekee työtä, liike-energian ja potentiaalienergian summa pysyy samana."
+    },
+    {
+      "term": "energiaperiaate",
+      "explain": "Mekaaninen energia muuttuu yhtä paljon kuin muut voimat, esimerkiksi kitka, tekevät työtä."
+    },
+    {
+      "term": "työ",
+      "explain": "Energian siirtämistä voiman avulla. Liikettä vastustava voima tekee negatiivista työtä."
+    },
+    {
+      "term": "ei-konservatiivinen voima",
+      "explain": "Voima, jonka työ riippuu kuljetusta reitistä, esimerkiksi kitka tai ilmanvastus."
+    }
+  ],
   "sim": true,
   "solutions": "all",
   "image": false

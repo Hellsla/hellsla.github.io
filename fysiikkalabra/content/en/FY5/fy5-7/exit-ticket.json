@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The displacement of a weight is $x = 3.0\\,\\text{cm} \\cdot \\sin\\left(\\dfrac{2\\pi t}{0.50\\,\\text{s}}\\right)$. What are the amplitude, the period and the frequency of the oscillation?",
+    "a": "The model $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$ is compared with the expression: the amplitude is $A = 3.0\\,\\text{cm}$ and the period $T = 0.50\\,\\text{s}$. The frequency is $f = \\dfrac{1}{T} = \\dfrac{1}{0.50\\,\\text{s}} = 2.0\\,\\text{Hz}$."
+  },
+  {
+    "q": "The motion of a child standing at the edge of a uniformly rotating carousel is periodic. Why is it not oscillation?",
+    "a": "The motion is periodic because it repeats in the same way on every revolution. In an oscillation an object moves back and forth on both sides of the equilibrium position, but the child on the carousel goes round a circle in the same direction and does not move back and forth around any position."
+  }
+]

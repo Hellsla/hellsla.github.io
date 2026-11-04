@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy5-10-L1-01",
+      "level": 1,
+      "text": "The end of a long coil spring is shaken sideways, and a transverse wave with a frequency of $4.0\\,\\text{Hz}$ and a wavelength of $0.75\\,\\text{m}$ travels in the spring. What is the speed of the wave?",
+      "answer": 3.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L1-02",
+      "level": 1,
+      "text": "A loudspeaker plays a note whose frequency is $440\\,\\text{Hz}$. The sound travels in the air of the room at a speed of $343\\,\\text{m/s}$. How long is the wavelength of the sound?",
+      "answer": 0.78,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L1-03",
+      "level": 1,
+      "text": "In a taut rope a wave travels at a speed of $6.0\\,\\text{m/s}$, and the distance between the crests of the wave is $1.5\\,\\text{m}$. At what frequency is the end of the rope shaken?",
+      "answer": 4.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L1-04",
+      "level": 1,
+      "text": "The wave machine of an indoor wave pool makes waves whose period is $2.5\\,\\text{s}$ and wavelength $4.0\\,\\text{m}$. At what speed do the waves travel?",
+      "answer": 1.6,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L1-05",
+      "level": 1,
+      "text": "In a rope a wave travels at a speed of $4.8\\,\\text{m/s}$, and its wavelength is $1.2\\,\\text{m}$. What is the period of the wave?",
+      "answer": 0.25,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-10-L2-01",
+      "level": 2,
+      "text": "The graph shows the displacement of one point of a taut rope as a function of time when the end of the rope is shaken steadily. From a snapshot of the rope it has been measured that the distance between successive crests is $1.0\\,\\text{m}$. Read the necessary value from the graph. What is the speed of the wave?",
+      "figure": "fy5-10/yt-kuvaaja",
+      "answer": 2.5,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L2-02",
+      "level": 2,
+      "text": "A student shakes the end of a long skipping rope steadily and counts that the hand makes $18$ full swings in $12.0$ seconds. The distance between the crests of the rope is $1.40\\,\\text{m}$. What is the speed of the wave in the rope?",
+      "answer": 2.1,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L2-03",
+      "level": 2,
+      "text": "The sound of a loudspeaker at the edge of a pool travels in air at a speed of $343\\,\\text{m/s}$, and its wavelength in air is $0.750\\,\\text{m}$. The sound continues into water, where it travels at a speed of $1480\\,\\text{m/s}$. How long is the wavelength of the sound in water?",
+      "answer": 3.236152,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L2-04",
+      "level": 2,
+      "text": "The longitudinal wave of an earthquake travels in the bedrock. A seismometer measures the frequency of the wave as $0.50\\,\\text{Hz}$, and the wavelength is $12\\,\\text{km}$. What is the speed of the wave in metres per second?",
+      "answer": 6000,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-10-L3-01",
+      "level": 3,
+      "text": "Two photographs are taken of a rope at an interval of $0.15\\,\\text{s}$. In the first picture a crest is at $x = 0.60\\,\\text{m}$ and in the second at $x = 1.05\\,\\text{m}$, and between the pictures the crest has not had time to travel one wavelength. In both pictures the distance between successive crests is $1.20\\,\\text{m}$. At what frequency is the end of the rope shaken? Also justify why the displacement of the crest is not a displacement of the matter of the rope.",
+      "answer": 2.5,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L3-02",
+      "level": 3,
+      "text": "One end of a long railway rail is struck with a hammer. A listener at the other end of the rail hears two bangs: first the sound that came along the rail and $0.50\\,\\text{s}$ later the sound that came through the air. Sound travels in steel at a speed of $5100\\,\\text{m/s}$ and in air at $340\\,\\text{m/s}$. How long is the rail? Justify why the same blow of the hammer produces two sounds that arrive at different times.",
+      "answer": 182.142857,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-10-L3-03",
+      "level": 3,
+      "text": "A wave goes round a stadium stand: every spectator stands up $0.050\\,\\text{s}$ later than the one sitting next to them and then sits down again. The distance between adjacent seats is $0.55\\,\\text{m}$, and the length of the row going round the stand is $440\\,\\text{m}$. How long does it take for the wave to go once round the stand? Justify why the wave travels although no spectator changes places.",
+      "answer": 40,
+      "unit": "s",
+      "tolerance": 0.02
+    }
+  ]
+}

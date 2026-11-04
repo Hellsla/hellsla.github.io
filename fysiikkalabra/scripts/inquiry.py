@@ -12,7 +12,7 @@ decisions 2026-10-26, CLAUDE.md "Lesson page") is in render() and templates/site
 import hashlib, html as _h, json, pathlib, random, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from i18n import t as T
-import mathlayout
+import answers_shown, mathlayout
 import courses, objectives
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -246,21 +246,24 @@ def validate(folder, inquiry, lesson_md):
 def esc(s): return _h.escape(str(s), quote=True)
 
 
-GREEK = {"Σ": r"\Sigma ", "Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha ", "μ": r"\mu ", "λ": r"\lambda ", "ν": r"\nu "}
+GREEK = {"Σ": r"\Sigma ", "Δ": r"\Delta ", "ρ": r"\rho ", "θ": r"\theta ", "η": r"\eta ", "γ": r"\gamma ", "α": r"\alpha ", "μ": r"\mu ", "λ": r"\lambda ", "ν": r"\nu ", "φ": r"\varphi ", "ω": r"\omega "}
 SUBS = dict(zip("₀₁₂₃₄₅₆₇₈₉", "0123456789"))
-SYMBOL = re.compile(r"[A-Za-zΔρθηγαμΣλν](?:[A-Za-zΔρθηγαμΣλν₀-₉/]|_[A-Za-z0-9μ]+)*")
-UNIT = re.compile(r"[A-Za-z/%]+[²³]?")
+SYMBOL = re.compile(r"[A-Za-zΔρθηγαμΣλνφω](?:[A-Za-zΔρθηγαμΣλνφω₀-₉/]|_[A-Za-z0-9μ]+)*")
+UNIT = re.compile(r"[µμ]?[A-Za-zΩ/%]+[²³]?|°")   # µT and ° too (FY7, 2026-11-03); Ω, kΩ (FY6)
 
 
 def unit_tex(u):
     """m/s² -> \\text{m/s}^2, % -> \\%: a unit as maths (teacher 2026-10-28, "kaikki LaTeXilla")."""
     if u == "%": return "\\%"
-    return "\\text{" + u.rstrip("²³") + "}" + ({"²": "^2", "³": "^3"}.get(u[-1], ""))
+    if u == "°": return "^\\circ"
+    if u[0] in "µμ": return "\\mu" + unit_tex(u[1:])   # µT -> \mu\text{T}
+    t = ("\\text{" + u.rstrip("²³") + "}").replace("Ω", "}\\Omega\\text{").replace("\\text{}", "")   # Ω, kΩ: \\Omega in maths
+    return t + ({"²": "^2", "³": "^3"}.get(u[-1], ""))
 
 
 def is_symbol(tok):
     """A quantity symbol or a short formula of symbols (m, ΔL/L₀, p_ref, ρgh, pV), not a Finnish word."""
-    return bool(SYMBOL.fullmatch(tok)) and (len(tok) <= 2 or bool(re.search(r"[Δρθηγαμλν₀-₉_/Σ]", tok)))
+    return bool(SYMBOL.fullmatch(tok)) and (len(tok) <= 2 or bool(re.search(r"[Δρθηγαμλνφω₀-₉_/Σ]", tok)))
 
 
 def sym_tex(tok):
@@ -281,6 +284,29 @@ def tex_name(s):
     for i in sorted({0, last}):
         if is_symbol(toks[i]): toks[i] = "$" + sym_tex(toks[i]) + "$"
     return esc(" ".join(toks))
+
+
+_PLAIN_SYM = {"Sigma": "Σ", "Delta": "Δ", "alpha": "α", "beta": "β", "theta": "θ", "lambda": "λ", "mu": "μ", "rho": "ρ",
+              "eta": "η", "omega": "ω", "Omega": "Ω", "varphi": "φ", "phi": "φ", "pi": "π", "tau": "τ", "circ": "°", "cdot": "·"}
+_SUP = str.maketrans("0123456789-+", "⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺")
+
+
+def plain_label(s):
+    r"""A table heading without LaTeX, for the exported table (teacher 2026-11-03): "$\Sigma F_x$ (N)" -> "ΣFx (N)",
+    "$a_x$ (m/s$^2$)" -> "ax (m/s²)", "$f\;(10^{14}\,\text{Hz})$" -> "f (10¹⁴ Hz)". A spreadsheet shows it as written."""
+    def math(t):   # inside $…$ a space is no space; \, \; \  are
+        t = re.sub(r"\\([A-Za-z]+)", lambda m: "\\" + m.group(1) if m.group(1) in ("text", "mathrm", "operatorname", "overline", "mathbf")
+                   else _PLAIN_SYM.get(m.group(1), "\x00" if m.group(1) in ("quad", "qquad") else m.group(1)), t)
+        t = re.sub(r"\\[,;:! ]", "\x00", t)
+        t = re.sub(r"\\(text|mathrm)\{([^{}]*)\}", lambda m: "\\" + m.group(1) + "{" + m.group(2).replace(" ", "\x00") + "}", t)   # words keep their spaces
+        t = t.replace(" ", "")
+        for _ in range(3): t = re.sub(r"\\(?:text|mathrm|operatorname|overline|mathbf)\{([^{}]*)\}", r"\1", t)
+        t = re.sub(r"\^\{([^{}]*)\}|\^(.)", lambda m: (m.group(1) if m.group(1) is not None else m.group(2)).translate(_SUP), t)
+        t = re.sub(r"_\{([^{}]*)\}|_(.)", lambda m: m.group(1) if m.group(1) is not None else m.group(2), t)
+        return t.replace("{,}", ",").replace("{", "").replace("}", "").replace("\x00", " ")
+    parts = str(s).split("$")
+    t = "".join(math(x) if i % 2 else re.sub(r"_\{([^{}]*)\}|_(?=\w)", lambda m: m.group(1) or "", x) for i, x in enumerate(parts))
+    return re.sub(r"\s+", " ", t).replace("( ", "(").strip()
 
 
 def inline(md, text):
@@ -353,8 +379,10 @@ def numeric_html(a, md, aid):
     unit = esc(a.get("unit", "")); mistakes = esc(json.dumps(a.get("mistakes", []), ensure_ascii=False))
     sol = (f'<details class="solution"><summary>{T("inquiry.show_solution")}</summary><div class="steps">'
            f'{mathlayout.steps_html(md(mathlayout.solution_md(a["solution"], T("lesson.solution_display_steps"))), T("lesson.solution_answer_step"))}</div></details>' if a.get("solution") else "")
+    shown = answers_shown.shown(a.get("solution") or "", T("lesson.solution_answer_step"), a["answer"], a.get("tolerance", 0.02))
+    st = answers_shown.step(shown, a["answer"]) if shown else None    # ±1 in the shown answer's last digit (lesson.js part 1)
     return (f'<div class="numeric">{task_text(inline(md, a["prompt"]), pid=f"{aid}-q")}{fig_of(a)}'
-            f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}" data-mistakes=\'{mistakes}\' novalidate>'
+            f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}"' + (f' data-step="{st:g}"' if st else "") + f' data-mistakes=\'{mistakes}\' novalidate>'
             f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{esc(answer_label(a.get("unit", "")))}" aria-describedby="{esc(aid)}-q" placeholder="?">'
             + (f'<span class="unit">{unit}</span>' if unit else "") + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>'
             f'{hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])])}{sol}</div>')
@@ -382,7 +410,8 @@ def explain_html(a, md, aid):
     copy = f'<button type="button" class="copy-notes">{T("inquiry.copy_notes")}</button>' if after else ""
     own = (f'<label class="drew"><input type="checkbox"> <span>{T("inquiry.drew_on_paper")}</span></label>'
            f'<textarea rows="2" aria-label="{T("inquiry.draw_notes")}" placeholder="{esc(T("inquiry.draw_notes"))}"></textarea>' if draw else
-           f'<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>')
+           f'<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>'
+           f'<label class="drew"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>')   # the model opens after the tick (teacher 2026-11-03)
     model_fig = fig_of({"figure": a["model_figure"]}) if a.get("model_figure") else ""
     return (f'<div class="explain{" draw" if draw else ""}"{attrs}>{task_text(inline(md, a["prompt"]))}{fig_of(a)}{own}{pair}'
             f'<div class="choice-actions"><button type="button" class="show-model">{T("inquiry.show_model_drawing" if draw else "inquiry.show_model")}</button>{copy}</div>'
@@ -411,21 +440,22 @@ def experiment_html(a, md, lid):
     bare = lambda k: tex_name(re.sub(r"\s+\([^()]*\)$", "", names.get(k, k)))   # "wavelength λ (nm)" -> "wavelength λ" beside a value that has its unit
     def fmt(k, v):   # name, value and unit on one line; a number and its unit are maths (teacher 2026-10-28, "kaikki LaTeXilla")
         tn = bare
-        if str(v) in words.get(k, {}): return f'<span class="nobr">{tn(k)}: {esc(words[k][str(v)])}</span>'
+        if str(v) in words.get(k, {}): return f'<span>{tn(k)}: {esc(words[k][str(v)])}</span>'   # words may wrap at 360 px ("direction of the current: downwards at the front", FY7 2026-11-04)
         if isinstance(v, str) and str(sim_words.get(v, v)) != v: v = sim_words[v]   # a sim value named in the page's language (lang sims.<id>.values), the Finnish page unchanged
         u = units.get(k, "")
         if isinstance(v, str) and re.fullmatch(r"-?\d+(?:\.\d+)?", v) and (not u or UNIT.fullmatch(u)):   # a select's number ("0.5"):
-            return f'<span class="nobr">{tn(k)} = ${esc(v.replace(".", "{" + T("format.decimal") + "}"))}' + (("\\," + unit_tex(u)) if u else "") + "$</span>"   # maths as written (FY4 audit 2026-11-01)
+            return f'<span class="nobr">{tn(k)} = ${esc(v.replace(".", "{" + T("format.decimal") + "}"))}' + ((("" if u == "°" else "\\,") + unit_tex(u)) if u else "") + "$</span>"   # maths as written (FY4 audit 2026-11-01)
         if isinstance(v, (int, float)) and (not u or UNIT.fullmatch(u)):
             num = fi(v).replace(T("format.decimal"), "{" + T("format.decimal") + "}")
             if isinstance(v, int) and abs(v) >= 10000: num = f"{v:,}".replace(",", "\\,")   # 20\,000
-            unit = ("\\," + unit_tex(u)) if u else ""
+            unit = (("" if u == "°" else "\\,") + unit_tex(u)) if u else ""
             return f'<span class="nobr">{tn(k)} = ${esc(num)}{unit}$</span>'
         return f'<span class="nobr">{tn(k)} = {esc(fi(v))}' + (f" {esc(u)}" if u else "") + "</span>"
     init = ", ".join(fmt(k, v) for k, v in a["initial"].items())
     locked = ", ".join(tn(k) for k in a["locked"]) or T("inquiry.nothing_locked")
-    cols = "".join(f"<th>{tex_name(m['label'] if isinstance(m, dict) else m)}</th>" for m in a["measure"])
-    plain = [names.get(a["vary"], a["vary"]) + (f" ({units[a['vary']]})" if units.get(a["vary"]) else "")] + [m["label"] if isinstance(m, dict) else m for m in a["measure"]]
+    labels = [m["label"] if isinstance(m, dict) else m for m in a["measure"]]
+    vary_plain = plain_label(names.get(a["vary"], a["vary"]) + (f" ({units[a['vary']]})" if units.get(a["vary"]) else ""))
+    cols = "".join(f'<th data-plain="{esc(plain_label(l))}">{tex_name(l)}</th>' for l in labels)   # data-plain: the heading in the exported table
     measure = json.dumps([m["key"] if isinstance(m, dict) else m for m in a["measure"]])
     q = f'<div class="exp-question" data-min="{a.get("min", 2)}">{question_html(a["question"], md, lid, a["id"])}</div>' if a.get("question") else ""
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
@@ -433,8 +463,10 @@ def experiment_html(a, md, lid):
             f'<div class="intro">{md(a["intro"])}</div>'
             f'<p class="exp-setup"><strong>{T("inquiry.setup")}</strong> {init}. <strong>{T("inquiry.locked")}</strong> {locked}. <strong>{T("inquiry.varied")}</strong> {tn(a["vary"])}.</p>'
             f'<div class="exp-controls"><button type="button" class="exp-start">{T("inquiry.exp_start")}</button><button type="button" class="exp-record">{T("inquiry.exp_record")}</button>'
-            f'<button type="button" class="exp-reset">{T("inquiry.exp_reset")}</button></div>'
-            f'<table class="exp-table" data-cols=\'{esc(json.dumps(plain, ensure_ascii=False))}\'><caption>{T("inquiry.exp_table")}</caption><thead><tr><th>{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
+            f'<button type="button" class="exp-reset">{T("inquiry.exp_reset")}</button>'
+            f'<button type="button" class="exp-copy" disabled>{T("inquiry.exp_copy")}</button>'
+            f'<span class="exp-export-status" role="status" aria-live="polite"></span></div>'   # the table's export (teacher 2026-11-03, templates/inquiry.js part 3)
+            f'<table class="exp-table"><caption>{T("inquiry.exp_table")}</caption><thead><tr><th data-plain="{esc(vary_plain)}">{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
             f'<p class="exp-status" role="status" aria-live="polite"></p>{q}</div>')
 
 
@@ -495,6 +527,25 @@ def intro_html(intro, inquiry, n_opt, md):
     return f'<div class="intro"><div class="intro-head">{head}</div>{row}' + (f'<div class="intro-more">{more}</div>' if more else "") + '</div>'
 
 
+KEY_CONCEPTS = (3, 5)    # how many "Luvun tärkeät käsitteet" a Selkeä suomi lesson shows (teacher 2026-11-03)
+
+
+def key_concepts_html(lid, items, md):
+    """"Luvun tärkeät käsitteet" (teacher 2026-11-03, NOTES.md §12): the S2 vocabulary activity of a Selkeä suomi
+    lesson, between the opening and the first stage. meta.json "key_concepts" lists 3–5 {"term", "explain"}: the
+    Finnish physics term in bold and a short plain-Finnish explanation. The student writes the meanings in a notebook
+    in any language (teacher 2026-11-03: no note fields on the page). Voluntary and never assessed; no language is
+    asked or translated. Only a language whose lessons carry the list shows it (check_i18n.py: fi-easy only)."""
+    if not items: return ""
+    rows = []
+    for k in items:
+        term = k["term"][:1].upper() + k["term"][1:]   # a symbol in the term is LaTeX: "$(t,x)$-kuvaaja"
+        rows.append(f'<dt class="kc-term">{inline(md, term)}</dt><dd class="kc-explain">{inline(md, k["explain"])}</dd>')
+    return (f'<section class="kc" id="kasitteet" aria-labelledby="kc-{lid}-h"><h2 class="intro-h kc-h" id="kc-{lid}-h">{T("lesson.kc_title")} '
+            f'<span class="opt-tag">{T("lesson.kc_optional")}</span></h2><p class="kc-lead">{T("lesson.kc_lead")}</p>'
+            f'<dl class="kc-list">{"".join(rows)}</dl></section>')
+
+
 SENT = re.compile(r"(?<=[.!])\s+(?=[A-ZÅÄÖ])")
 
 
@@ -535,7 +586,7 @@ def task_text(html, cls="task", pid=None):
 
 def toc_link(sid, n, title):
     """A stage in the navigation: its number (as on the stage heading) and its name. The chip bar shows the short name
-    (NAV); the side column on a wide screen shows the rest of the title too ("Tarkista osaamisesi", .toc-rest)."""
+    (NAV); a wide window shows the rest of the title too ("Tarkista osaamisesi", .toc-rest)."""
     short = nav().get(sid, title)
     rest = title[len(short):] if title.startswith(short) else ""
     return (f'<a href="#{sid}"><span class="toc-no" aria-hidden="true">{n}</span><span class="toc-label">{short}'
@@ -563,11 +614,12 @@ def render(folder, inquiry, parts, md):
         by_stage[a["stage"]].append(a)
     placed = {s for a in acts if a["type"] == "theory" for s in a["sections"]}
     leftover = [s for s in parts["sections"] if s not in placed]
-    if leftover and not any(a["type"] == "theory" for a in by_stage["selita"]):
+    required = [a for a in by_stage["selita"] if a["type"] == "theory" and not a.get("optional")]
+    if leftover and not required:
         by_stage["selita"].append({"id": "theory-rest", "type": "theory", "stage": "selita", "sections": leftover})
-    elif leftover:                                     # append to the last theory activity in Teoriatiivistelmä
-        last = [a for a in by_stage["selita"] if a["type"] == "theory"][-1]; last["sections"] = list(last["sections"]) + leftover
-    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md)]
+    elif leftover:                                     # append to the last required theory activity in Teoriatiivistelmä,
+        last = required[-1]; last["sections"] = list(last["sections"]) + leftover   # never into a closed optional box
+    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md) + parts.get("concepts", "")]
 
     def act(a):
         t, aid = a["type"], a["id"]
@@ -629,8 +681,10 @@ def render(folder, inquiry, parts, md):
         body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{inner}</section>')
         toc.append(toc_link(sid, n, title))
         if any(a["type"] == "exit" for a in items): toc.append(f'<a href="#exit" class="toc-sub"><span class="toc-label">{exit_title()}</span></a>')
+    if parts.get("cards"):                             # "Kertaa luvun käsitteet" after the exit ticket (scripts/concept_cards.py)
+        body.append(parts["cards"]); toc.append(parts.get("cards_nav", ""))
     if parts.get("exercises"):                         # the exercises close the page, after the exit ticket
-        text = md(ex_act["text"]) if ex_act and ex_act.get("text") else ""
+        text = ""                                      # the exercises' own lead text is not shown (teacher 2026-11-04: "turhia")
         aid = ex_act["id"] if ex_act else "harjoitukset"
         body.append(f'<section class="stage stage-practice" id="exercises" data-stage="exercises"><h2>{exercises_title()}</h2>'
                     f'<div class="activity act-exercises" id="{esc(aid)}" data-type="exercises">{text}{parts["exercises"]}</div></section>')

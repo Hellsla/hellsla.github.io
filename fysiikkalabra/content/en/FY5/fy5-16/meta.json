@@ -1,0 +1,24 @@
+{
+  "id": "fy5-16",
+  "course": "FY5",
+  "title": "Noise, acoustics and sound reproduction",
+  "goals": [
+    "LOPS FY5: sound as wave motion, sound intensity level, properties and propagation of sound",
+    "Thematic study: harmful effects of noise and protecting hearing",
+    "Thematic study: acoustics and sound reproduction",
+    "Specification: harms of noise and ways to reduce it, reflection and reverberation in rooms, the principle of the loudspeaker and the microphone",
+    "Transversal competence: well-being"
+  ],
+  "prerequisites": [
+    "fy5-15"
+  ],
+  "glossary": [
+    "melu",
+    "jälkikaiunta",
+    "kaiutin",
+    "mikrofoni"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

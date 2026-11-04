@@ -1,0 +1,14 @@
+[
+  {
+    "q": "What is the unit of moment, and from which two quantities is the moment obtained?",
+    "a": "The unit of moment is the newton metre $\\text{Nm}$. The moment is the product of the magnitude of the force and the lever arm, $M = Fr$, so it is affected both by the force and by how far from the axis the line of action of the force passes."
+  },
+  {
+    "q": "Which rotates a body about an axis more effectively: a force of $100\\,\\text{N}$ with a lever arm of $0.20\\,\\text{m}$, or a force of $50\\,\\text{N}$ with a lever arm of $0.50\\,\\text{m}$?",
+    "a": "The latter. The moments are $100\\,\\text{N}\\cdot 0.20\\,\\text{m} = 20\\,\\text{Nm}$ and $50\\,\\text{N}\\cdot 0.50\\,\\text{m} = 25\\,\\text{Nm}$. The smaller force rotates more effectively, because its lever arm is longer."
+  },
+  {
+    "q": "The left end of a spanner is around a nut, and the right end of the handle is pressed straight down. Does the force rotate the spanner clockwise or anticlockwise, and what is the sign of the moment by the convention of this chapter?",
+    "a": "The right end of the handle moves down, so the spanner rotates clockwise. A clockwise moment is negative."
+  }
+]

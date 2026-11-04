@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kuinka suuri on kahden $1{,}0\\,\\text{kg}$:n kappaleen välinen gravitaatiovoima, kun niiden keskipisteet ovat $1{,}0\\,\\text{m}$:n päässä toisistaan?",
+    "a": "$F = \\gamma \\tfrac{m_1 m_2}{r^2} = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot \\tfrac{1{,}0\\,\\text{kg} \\cdot 1{,}0\\,\\text{kg}}{(1{,}0\\,\\text{m})^2} \\approx 6{,}7 \\cdot 10^{-11}\\,\\text{N}$. Gravitaatiovakion lukuarvo on juuri tämän voiman suuruus newtoneina, ja voima on niin pieni, ettei sitä huomaa arjessa."
+  },
+  {
+    "q": "Miksi raskas ja kevyt kivi putoavat tyhjiössä samalla kiihtyvyydellä, vaikka raskaampaan vaikuttaa suurempi gravitaatiovoima?",
+    "a": "Gravitaatiovoima $F = \\gamma \\tfrac{Mm}{R^2}$ on suoraan verrannollinen kiven massaan $m$, mutta myös kiven hitaus kasvaa massan mukana. Kiihtyvyys $a = \\tfrac{F}{m} = \\gamma \\tfrac{M}{R^2} = g$ ei siksi riipu kiven massasta."
+  }
+]

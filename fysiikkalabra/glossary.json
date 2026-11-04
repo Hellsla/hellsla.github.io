@@ -53,7 +53,8 @@
     "definition": "Sähköntuotanto, jossa tuuli pyörittää roottoria ja generaattoria. Teho riippuu säästä, joten tuulivoima on sääriippuvaista ja sen keskiteho on selvästi pienempi kuin nimellisteho.",
     "lessons": [
       "fy2-6",
-      "fy4-15"
+      "fy4-15",
+      "fy7-7"
     ],
     "see_also": [
       "energiantuotanto",
@@ -1063,7 +1064,8 @@
     "definition": "Kappaleen paino G on voima, joka kertoo Maan (tai muun taivaankappaleen) ja kappaleen välisen vuorovaikutuksen voimakkuuden. Paino lasketaan kaavalla G = mg ja mitataan newtoneina.",
     "lessons": [
       "fy3-1",
-      "fy4-6"
+      "fy4-6",
+      "fy5-5"
     ],
     "see_also": [
       "massa",
@@ -1100,7 +1102,8 @@
     "definition": "Kappaleen asemaan sidottu energia. Painovoiman potentiaalienergia on E_p = m g h, missä h on korkeus valitusta nollatasosta.",
     "lessons": [
       "fy4-7",
-      "fy4-15"
+      "fy4-15",
+      "fy6-12"
     ],
     "see_also": [
       "energia",
@@ -1114,7 +1117,8 @@
     "lessons": [
       "fy3-1",
       "fy1-6",
-      "fy4-2"
+      "fy4-2",
+      "fy5-5"
     ],
     "see_also": [
       "paino",
@@ -1726,7 +1730,8 @@
     "term": "kvarkki",
     "definition": "Alkeishiukkanen, josta protonit ja neutronit koostuvat, kumpikin kolmesta. Kvarkille ei ole mitattu kokoa: kokeiden mukaan se on pienempi kuin noin 10⁻¹⁸ m.",
     "lessons": [
-      "fy1-1"
+      "fy1-1",
+      "fy8-15"
     ],
     "see_also": [
       "protoni",
@@ -1859,7 +1864,8 @@
     "term": "perusvuorovaikutus",
     "definition": "Yksi neljästä vuorovaikutuksesta, joihin kaikki tunnetut vuorovaikutukset palautuvat: gravitaatio, sähkömagneettinen, vahva ja heikko vuorovaikutus.",
     "lessons": [
-      "fy1-1"
+      "fy1-1",
+      "fy8-15"
     ],
     "see_also": [
       "gravitaatio",
@@ -1873,7 +1879,8 @@
     "term": "gravitaatio",
     "definition": "Perusvuorovaikutus kaikkien massallisten kappaleiden välillä, aina vetävä. Pitää planeetat radoillaan ja kokoaa tähtiä ja galakseja; hallitsee suurissa mittakaavoissa.",
     "lessons": [
-      "fy1-1"
+      "fy1-1",
+      "fy5-5"
     ],
     "see_also": [
       "perusvuorovaikutus",
@@ -1920,9 +1927,10 @@
   },
   {
     "term": "beetahajoaminen",
-    "definition": "Radioaktiivinen hajoaminen, jossa ytimen neutroni muuttuu protoniksi ja ytimestä lähtee elektroni ja antineutriino. Sen aiheuttaa heikko vuorovaikutus.",
+    "definition": "Radioaktiivinen hajoaminen, jossa ytimen neutroni muuttuu protoniksi ($\\beta^-$: ytimestä lähtee elektroni ja antineutriino) tai protoni neutroniksi ($\\beta^+$: ytimestä lähtee positroni ja neutriino). Sen aiheuttaa heikko vuorovaikutus.",
     "lessons": [
-      "fy1-1"
+      "fy1-1",
+      "fy8-8"
     ],
     "see_also": [
       "heikko vuorovaikutus",
@@ -1932,9 +1940,10 @@
   },
   {
     "term": "sähköenergia",
-    "definition": "Sähkölaitteissa ja sähköverkossa siirtyvä ja muuttuva energia. Sähköenergia muutetaan voimalaitoksella muista energialajeista ja käytössä takaisin esimerkiksi lämmöksi, valoksi tai liikkeeksi; sen yksikkö on joule (J), arjessa kilowattitunti (kWh).",
+    "definition": "Sähkölaitteissa ja sähköverkossa siirtyvä ja muuttuva energia. Sähköenergia muutetaan voimalaitoksella muista energialajeista ja käytössä esimerkiksi valoksi, liike-energiaksi tai laitteen sisäenergiaksi, joka siirtyy lämpönä ympäristöön; sen yksikkö on joule (J), arjessa kilowattitunti (kWh).",
     "lessons": [
-      "fy2-7"
+      "fy2-7",
+      "fy6-6"
     ],
     "see_also": [
       "sähköverkko",
@@ -1946,7 +1955,8 @@
     "term": "sähköverkko",
     "definition": "Voimalinjojen, muuntajien ja sähköasemien muodostama verkko, joka siirtää sähköenergian voimalaitoksilta käyttäjille. Pitkät matkat siirretään kantaverkossa korkealla jännitteellä, ja jakeluverkko vie sähkön kuluttajille.",
     "lessons": [
-      "fy2-7"
+      "fy2-7",
+      "fy7-8"
     ],
     "see_also": [
       "siirtohäviö",
@@ -1958,7 +1968,8 @@
     "term": "siirtohäviö",
     "definition": "Energia, joka muuttuu energian siirrossa lämmöksi ympäristöön eikä tule käyttäjälle asti: E_häviö = E_lähtö − E_perille. Siirron hyötysuhde on perille tulevan energian osuus lähtevästä energiasta, η = E_perille : E_lähtö.",
     "lessons": [
-      "fy2-7"
+      "fy2-7",
+      "fy7-8"
     ],
     "see_also": [
       "hyötysuhde",
@@ -2480,6 +2491,3240 @@
     ],
     "see_also": [
       "turvavyö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasapaino",
+    "definition": "Kappale on tasapainossa, kun se pysyy levossa: siihen vaikuttavien voimien summa on nolla (tasapaino etenemisen suhteen) ja voimien momenttien summa minkä tahansa pisteen suhteen on nolla (tasapaino pyörimisen suhteen).",
+    "lessons": [
+      "fy5-2"
+    ],
+    "see_also": [
+      "momenttiehto",
+      "painopiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "momenttiehto",
+    "definition": "Tasapainoehto pyörimisen suhteen: levossa olevaan kappaleeseen vaikuttavien voimien momenttien summa on nolla, $\\Sigma M = 0$, mitä tahansa pistettä kohti laskettuna. Momenttipiste kannattaa valita tuntemattoman voiman vaikutuspisteeseen, jolloin sen momentti on nolla.",
+    "lessons": [
+      "fy5-2"
+    ],
+    "see_also": [
+      "tasapaino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "painopiste",
+    "definition": "Piste, jossa kappaleen paino voidaan ajatella vaikuttavan, kun lasketaan painon momenttia. Tasa-aineisen ja symmetrisen kappaleen painopiste on sen keskipisteessä. Tuettu kappale pysyy pystyssä, kun painopisteen kautta kulkeva pystysuora kulkee tukipinnan kautta.",
+    "lessons": [
+      "fy5-2"
+    ],
+    "see_also": [
+      "tasapaino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "momentti",
+    "definition": "Voiman vääntövaikutuksen suuruus kiertoakselin suhteen: voiman suuruuden ja voiman varren tulo, $M = Fr$. Yksikkö on newtonmetri ($\\text{Nm}$). Vastapäivään kiertävä momentti on positiivinen ja myötäpäivään kiertävä negatiivinen.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "vääntövaikutus",
+      "voiman varsi",
+      "kiertoakseli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vääntövaikutus",
+    "definition": "Voiman kyky kiertää kappaletta kiertoakselin ympäri. Se riippuu voiman suuruudesta, suunnasta ja vaikutuskohdasta, ja sen suuruutta mitataan momentilla.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "momentti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "voiman varsi",
+    "definition": "Kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Jos vaikutussuora kulkee akselin kautta, varsi on nolla eikä voima kierrä kappaletta.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "momentti",
+      "kiertoakseli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kiertoakseli",
+    "definition": "Suora, jonka ympäri kappale kiertyy, esimerkiksi oven saranoiden kautta kulkeva suora tai mutterin pultti. Momentit lasketaan aina jonkin kiertoakselin suhteen.",
+    "lessons": [
+      "fy5-1"
+    ],
+    "see_also": [
+      "momentti",
+      "voiman varsi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ympyräliike",
+    "definition": "Liike, jonka rata on ympyrä: kappale pysyy koko ajan samalla etäisyydellä, radan säteen päässä, keskipisteestä. Tasaisessa ympyräliikkeessä vauhti pysyy samana, mutta nopeuden suunta muuttuu koko ajan.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "ratanopeus",
+      "kierrosaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ratanopeus",
+    "definition": "Nopeuden suuruus ympyräradalla: kuljettu matka jaettuna ajalla. Tasaisessa ympyräliikkeessä v = 2πr/T, missä r on radan säde ja T kierrosaika. Nopeus on radan tangentin suuntainen.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "ympyräliike",
+      "kierrosaika",
+      "pyörimistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kierrosaika",
+    "definition": "Aika, jossa ympyräliikkeessä oleva kappale kiertää radan kerran. Tunnus T, yksikkö sekunti.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "pyörimistaajuus",
+      "ratanopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pyörimistaajuus",
+    "definition": "Kierrosten määrä aikayksikössä, kierrosajan käänteisluku f = 1/T. Yksikkö 1/s; käytännössä myös kierroksina minuutissa.",
+    "lessons": [
+      "fy5-3"
+    ],
+    "see_also": [
+      "kierrosaika",
+      "ratanopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "normaalikiihtyvyys",
+    "definition": "Tasaisessa ympyräliikkeessä olevan kappaleen kiihtyvyys $\\overline{a}_\\text{n}$, joka osoittaa kohti radan keskipistettä ja on kohtisuorassa nopeutta vastaan. Sen suuruus on $a_\\text{n} = \\tfrac{v^2}{r}$. Se muuttaa nopeuden suuntaa mutta ei vauhtia.",
+    "lessons": [
+      "fy5-4"
+    ],
+    "see_also": [
+      "keskeiskiihtyvyys",
+      "keskeisvoima",
+      "ympyräliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "keskeiskiihtyvyys",
+    "definition": "Toinen nimi normaalikiihtyvyydelle: tasaisessa ympyräliikkeessä kohti radan keskipistettä osoittava kiihtyvyys, suuruudeltaan $\\tfrac{v^2}{r}$.",
+    "lessons": [
+      "fy5-4"
+    ],
+    "see_also": [
+      "normaalikiihtyvyys",
+      "keskeisvoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "keskeisvoima",
+    "definition": "Ympyräliikkeessä olevaan kappaleeseen vaikuttavien voimien summa, joka osoittaa kohti radan keskipistettä; tasaisessa ympyräliikkeessä sen suuruus on $m\\tfrac{v^2}{r}$. Se ei ole oma voiman lajinsa, vaan todellisten voimien, kuten kitkan, jännitysvoiman tai painon, summa. Ulospäin osoittavaa keskipakoisvoimaa ei ole.",
+    "lessons": [
+      "fy5-4"
+    ],
+    "see_also": [
+      "normaalikiihtyvyys",
+      "keskeiskiihtyvyys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jaksollinen liike",
+    "definition": "Liike, joka toistuu samanlaisena yhtä pitkin väliajoin, esimerkiksi tasainen ympyräliike tai heilurin heilahtelu.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "värähtelyliike",
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "värähtelyliike",
+    "definition": "Jaksollinen liike, jossa kappale liikkuu edestakaisin tasapainoasemansa molemmin puolin, kuten jousen varassa värähtelevä punnus tai heiluri.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "jaksollinen liike",
+      "tasapainoasema",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasapainoasema",
+    "definition": "Värähtelijän asema, jossa se pysyisi levossa; poikkeama mitataan siitä, ja siinä poikkeama on nolla.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "värähtelyliike",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jaksonaika",
+    "definition": "Yhden täyden värähdyksen tai kierroksen kesto: aika, jonka kuluttua kappale on taas samassa paikassa ja liikkuu samaan suuntaan. Tunnus T, yksikkö sekunti (s).",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "taajuus",
+      "kierrosaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "taajuus",
+    "definition": "Täysien värähdysten määrä aikayksikössä, jaksonajan käänteisluku f = 1/T. Yksikkö hertsi, 1 Hz = 1 1/s.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "jaksonaika",
+      "pyörimistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "amplitudi",
+    "definition": "Värähtelijän suurin poikkeama tasapainoasemasta. Ääriasemien välinen etäisyys on kaksi kertaa amplitudi. Tunnus A.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "tasapainoasema",
+      "värähtelyliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaihe",
+    "definition": "Kohta, jossa värähdystä värähtelijä on tietyllä hetkellä. Sovitusmallissa A sin(Bt + C) + D vakio C kertoo vaiheen hetkellä t = 0; C on nolla, kun ajanotto alkaa tasapainoaseman ohituksesta positiiviseen suuntaan.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sinifunktion sovitus",
+    "definition": "Sinikäyrän x = A sin(2πt/T) valitseminen niin, että se kulkee mittauspisteiden joukon keskeltä; sovituksesta saadaan värähtelyn amplitudi ja jaksonaika.",
+    "lessons": [
+      "fy5-7"
+    ],
+    "see_also": [
+      "amplitudi",
+      "jaksonaika",
+      "suoran sovitus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kiertorata",
+    "definition": "Rata, jota pitkin kappale kiertää toista kappaletta gravitaation varassa, esimerkiksi satelliitin rata Maan ympäri tai Maan rata Auringon ympäri. Monet kiertoradat ovat lähes ympyröitä.",
+    "lessons": [
+      "fy5-6"
+    ],
+    "see_also": [
+      "satelliitti",
+      "gravitaatio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "satelliitti",
+    "definition": "Kappale, joka kiertää toista, paljon massiivisempaa kappaletta gravitaation varassa. Kuu on Maan luonnollinen satelliitti; ihmisen rakentamia satelliitteja ovat esimerkiksi sää- ja GPS-satelliitit ja avaruusasema ISS.",
+    "lessons": [
+      "fy5-6"
+    ],
+    "see_also": [
+      "kiertorata"
+    ],
+    "locked": false
+  },
+  {
+    "term": "painottomuus",
+    "definition": "Tila, jossa kappaleeseen vaikuttaa vain gravitaatio ja se putoaa vapaasti, joten tukivoima on nolla. Paino eli gravitaatiovoima vaikuttaa painottomuudessakin; esimerkiksi avaruusaseman astronautit ovat painottomia, koska he ja asema putoavat samalla kiihtyvyydellä.",
+    "lessons": [
+      "fy5-6"
+    ],
+    "see_also": [
+      "vapaa pudotus",
+      "gravitaatio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gravitaatiolaki",
+    "definition": "Newtonin gravitaatiolaki: kaksi kappaletta vetävät toisiaan voimalla $F = \\gamma \\tfrac{m_1 m_2}{r^2}$, joka on suoraan verrannollinen kumpaankin massaan ja kääntäen verrannollinen keskipisteiden välisen etäisyyden neliöön. Voimat ovat yhtä suuret ja vastakkaissuuntaiset.",
+    "lessons": [
+      "fy5-5"
+    ],
+    "see_also": [
+      "gravitaatio",
+      "gravitaatiovakio",
+      "gravitaatiokenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gravitaatiovakio",
+    "definition": "Gravitaatiolain verrannollisuuskerroin $\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$ (englanniksi G). Se on kahden $1\\,\\text{kg}$:n kappaleen välisen voiman suuruus newtoneina, kun niiden etäisyys on $1\\,\\text{m}$.",
+    "lessons": [
+      "fy5-5"
+    ],
+    "see_also": [
+      "gravitaatiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gravitaatiokenttä",
+    "definition": "Kappaleen ympärillä oleva kenttä, jossa jokaiseen kappaleeseen vaikuttaa gravitaatiovoima $\\overline{F} = m\\overline{g}$. Kentän voimakkuus $g = \\gamma \\tfrac{M}{r^2}$ osoittaa kohti kentän synnyttävän kappaleen keskipistettä, ja se on vapaasti putoavan kappaleen kiihtyvyys; yksikkö $\\text{m/s}^2$.",
+    "lessons": [
+      "fy5-5"
+    ],
+    "see_also": [
+      "gravitaatiolaki",
+      "putoamiskiihtyvyys",
+      "paino"
+    ],
+    "locked": false
+  },
+  {
+    "term": "harmoninen värähtely",
+    "definition": "Värähtely, jonka aiheuttaa harmoninen voima F = −kx: palauttava voima on suoraan verrannollinen poikkeamaan tasapainoasemasta ja osoittaa kohti sitä. Paikka ajan funktiona on siniaallon muotoinen käyrä, ja jaksonaika ei riipu amplitudista. Jousen ja kappaleen jaksonaika on T = 2π√(m/k).",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "harmoninen voima",
+      "jaksonaika",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heiluri",
+    "definition": "Kiinnityskohdan alapuolella riippuva kappale, joka heilahtelee painovoiman vaikutuksesta tasapainoasemansa molemmin puolin. Matemaattisessa heilurissa pistemäinen kappale riippuu massattoman langan varassa; pienillä heilahduksilla sen jaksonaika on T = 2π√(l/g), eikä se riipu kappaleen massasta.",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "harmoninen värähtely",
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "värähtelyn energia",
+    "definition": "Värähtelijän mekaaninen energia, liike-energian ja potentiaalienergian summa. Ilman kitkaa ja ilmanvastusta se säilyy; jousen ja kappaleen värähtelyssä se on E = ½kA², missä A on amplitudi. Ääriasennoissa energia on potentiaalienergiaa, tasapainoasemassa liike-energiaa.",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "jousen potentiaalienergia",
+      "harmoninen värähtely"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaimeneminen",
+    "definition": "Värähtelyn amplitudin pieneneminen, kun kitka tai ilmanvastus muuttaa värähtelijän mekaanista energiaa sisäenergiaksi. Pienessä vaimenemisessa jaksonaika pysyy lähes samana.",
+    "lessons": [
+      "fy5-9"
+    ],
+    "see_also": [
+      "värähtelyn energia",
+      "amplitudi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "harmoninen voima",
+    "definition": "Voima, jonka suuruus on suoraan verrannollinen kappaleen poikkeamaan tasapainoasemasta ja joka osoittaa aina kohti tasapainoasemaa: $F = -kx$. Miinusmerkki kertoo, että voima on poikkeamaa vastakkaissuuntainen. Esimerkiksi jousen voima on harmoninen, kun jousta ei venytetä liikaa.",
+    "lessons": [
+      "fy5-8"
+    ],
+    "see_also": [
+      "jousivakio",
+      "tasapainoasema",
+      "harmoninen värähtely"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jousivakio",
+    "definition": "Jousen jäykkyyttä kuvaava vakio $k$ lausekkeissa $F = -kx$ ja $F_\\text{v} = kx$: voima venymän metriä kohti, yksikkö $\\text{N/m}$. Se määritetään mittaamalla jousta venyttävän voiman ja venymän $(x, F_\\text{v})$-kuvaajan kulmakertoimena.",
+    "lessons": [
+      "fy5-8"
+    ],
+    "see_also": [
+      "harmoninen voima",
+      "jousen potentiaalienergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jousen potentiaalienergia",
+    "definition": "Venytettyyn tai puristettuun jouseen varastoitunut energia $E_\\text{p} = \\tfrac{1}{2}kx^2$, missä $k$ on jousivakio ja $x$ venymä tai puristuma lepopituudesta. Se on venyttävän voiman tekemä työ eli $(x, F_\\text{v})$-kuvaajan alle jäävän kolmion pinta-ala.",
+    "lessons": [
+      "fy5-8"
+    ],
+    "see_also": [
+      "jousivakio",
+      "potentiaalienergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "superpositio",
+    "definition": "Aaltojen yhteisvaikutus: kun kaksi tai useampi aalto on samassa kohdassa samaan aikaan, väliaineen poikkeama on aaltojen poikkeamien summa, $y = y_1 + y_2$. Aallot jatkavat kohtaamisen jälkeen muuttumattomina.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "interferenssi",
+    "definition": "Kahden tai useamman aallon yhteisvaikutus samassa kohdassa superpositioperiaatteen mukaan. Kahden samassa vaiheessa värähtelevän saman taajuuden lähteen aallot muodostavat pysyvän kuvion, jossa vahvistavan ja heikentävän interferenssin kohdat vuorottelevat.",
+    "lessons": [
+      "fy5-12",
+      "fy7-14",
+      "fy7-13"
+    ],
+    "see_also": [
+      "superpositio",
+      "vahvistava interferenssi",
+      "heikentävä interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vahvistava interferenssi",
+    "definition": "Interferenssi, jossa aallot saapuvat samassa vaiheessa, harja harjan kanssa, ja summa-aallon amplitudi on aaltojen amplitudien summa. Kahden samassa vaiheessa olevan lähteen aalloilla se tapahtuu, kun matkaero on aallonpituuden monikerta, $\\Delta s = n\\lambda$.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "heikentävä interferenssi",
+      "matkaero"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heikentävä interferenssi",
+    "definition": "Interferenssi, jossa aallot saapuvat vastakkaisessa vaiheessa, harja pohjan kanssa, ja summa-aallon amplitudi on amplitudien erotus, yhtä suurilla amplitudeilla nolla. Kahden samassa vaiheessa olevan lähteen aalloilla se tapahtuu, kun $\\Delta s = (n + \\tfrac{1}{2})\\lambda$.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "vahvistava interferenssi",
+      "solmuviiva"
+    ],
+    "locked": false
+  },
+  {
+    "term": "matkaero",
+    "definition": "Kahden aallon lähteistä samaan pisteeseen kulkemien matkojen erotus $\\Delta s = |s_1 - s_2|$. Matkaeron ja aallonpituuden suhde ratkaisee, vahvistavatko vai heikentävätkö aallot toisiaan.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "solmuviiva",
+    "definition": "Kahden samassa vaiheessa olevan aaltolähteen interferenssikuviossa viiva, jonka jokaisessa pisteessä interferenssi on heikentävä eli $\\Delta s = (n + \\tfrac{1}{2})\\lambda$. Yhtä suurten amplitudien aalloilla väliaine pysyy solmuviivalla lähes levossa.",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "heikentävä interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Fourier-muunnos",
+    "definition": "Menetelmä, joka jakaa signaalin siniaaltoihin ja kertoo, mitkä taajuudet signaalissa on ja kuinka suurilla amplitudeilla. Tulos esitetään spektrinä; laskimet ja ohjelmat käyttävät nopeaa Fourier-muunnosta (FFT).",
+    "lessons": [
+      "fy5-12"
+    ],
+    "see_also": [
+      "superpositio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aaltoliike",
+    "definition": "Häiriön eli poikkeaman tasapainoasemasta eteneminen väliaineessa. Väliaineen hiukkaset värähtelevät tasapainoasemansa ympärillä, ja aalto kuljettaa energiaa mutta ei ainetta.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "poikittainen aalto",
+      "pitkittäinen aalto",
+      "aallon nopeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aallonpituus",
+    "definition": "Kahden peräkkäisen aallonharjan tai tihentymän välinen etäisyys eli lyhin etäisyys kahden samalla tavalla liikkuvan väliaineen kohdan välillä. Tunnus λ, yksikkö metri. Yhden jaksonajan aikana aalto etenee yhden aallonpituuden.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "aallon nopeus",
+      "jaksonaika"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aallon nopeus",
+    "definition": "Nopeus, jolla aalto etenee väliaineessa. Se riippuu väliaineesta, ja aaltoliikkeen perusyhtälön mukaan v = fλ, missä f on taajuus ja λ aallonpituus.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "aallonpituus",
+      "taajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "poikittainen aalto",
+    "definition": "Aalto, jossa väliaineen hiukkaset värähtelevät kohtisuoraan aallon etenemissuuntaa vastaan, kuten aalto narussa.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "pitkittäinen aalto",
+      "aaltoliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pitkittäinen aalto",
+    "definition": "Aalto, jossa väliaineen hiukkaset värähtelevät aallon etenemissuunnan suuntaisesti, jolloin väliaineeseen syntyy eteneviä tihentymiä ja harvennuksia. Esimerkiksi ääni ilmassa on pitkittäinen aalto.",
+    "lessons": [
+      "fy5-10"
+    ],
+    "see_also": [
+      "poikittainen aalto",
+      "aaltoliike"
+    ],
+    "locked": false
+  },
+  {
+    "term": "seisova aalto",
+    "definition": "Aaltoliike, joka syntyy, kun kaksi samanlaista aaltoa etenee vastakkaisiin suuntiin, esimerkiksi aalto ja sen heijastus, ja ne summautuvat. Solmukohdat pysyvät paikallaan ja kuvut värähtelevät suurimmalla amplitudilla; aaltohuippu ei etene.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "solmu",
+      "kupu",
+      "ominaistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "solmu",
+    "definition": "Seisovan aallon kohta, jossa poikkeama on joka hetki nolla. Vierekkäisten solmujen etäisyys on puoli aallonpituutta.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "kupu",
+      "seisova aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kupu",
+    "definition": "Seisovan aallon kohta kahden solmun puolivälissä, jossa värähtelyn amplitudi on suurin. Solmusta viereiseen kupuun on neljännes aallonpituutta.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "solmu",
+      "seisova aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ominaistaajuus",
+    "definition": "Taajuus, jolla kappaleeseen, kuten kieleen tai putken ilmapatsaaseen, voi syntyä seisova aalto. Kahdesta päästä kiinnitetyn kielen ominaistaajuudet ovat f_n = n·v/(2L).",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "resonanssi",
+      "yläsävel"
+    ],
+    "locked": false
+  },
+  {
+    "term": "perustaajuus",
+    "definition": "Kappaleen alin ominaistaajuus. Soittimen sävelkorkeus määräytyy perustaajuudesta.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "ominaistaajuus",
+      "yläsävel"
+    ],
+    "locked": false
+  },
+  {
+    "term": "resonanssi",
+    "definition": "Ilmiö, jossa värähtelijää herätetään sen ominaistaajuudella, jolloin jokainen jakso vahvistaa liikettä ja värähtelyn amplitudi kasvaa suureksi.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "ominaistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "yläsävel",
+    "definition": "Perustaajuutta suurempi ominaistaajuus. Kielen yläsävelet ovat perustaajuuden monikertoja, suljetun putken vain sen parittomia kertoja.",
+    "lessons": [
+      "fy5-13"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "ominaistaajuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heijastuminen",
+    "definition": "Aallon palaaminen takaisin, kun se kohtaa väliaineen rajan tai esteen, kuten seinän tai köyden pään. Köyden kiinteästä päästä pulssi heijastuu kääntyneenä, vapaasta päästä kääntymättä.",
+    "lessons": [
+      "fy5-11"
+    ],
+    "see_also": [
+      "heijastuslaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heijastuslaki",
+    "definition": "Heijastuskulma on yhtä suuri kuin tulokulma, β = α, kun molemmat mitataan pinnan normaalista. Tuleva säde, heijastunut säde ja normaali ovat samassa tasossa.",
+    "lessons": [
+      "fy5-11",
+      "fy7-10"
+    ],
+    "see_also": [
+      "heijastuminen",
+      "Huygensin periaate"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Huygensin periaate",
+    "definition": "Aaltorintaman jokainen piste toimii uuden alkeisaallon lähteenä, ja hetken kuluttua uusi aaltorintama sivuaa kaikkia alkeisaaltoja. Periaate selittää aallon heijastumisen ja diffraktion.",
+    "lessons": [
+      "fy5-11"
+    ],
+    "see_also": [
+      "diffraktio",
+      "heijastuslaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "diffraktio",
+    "definition": "Aallon taipuminen raon tai esteen taakse, alueelle, jonne suoraan etenevä aalto ei osuisi. Diffraktio on voimakasta, kun raon tai esteen leveys on aallonpituuden suuruusluokkaa tai pienempi.",
+    "lessons": [
+      "fy5-11",
+      "fy7-13"
+    ],
+    "see_also": [
+      "Huygensin periaate"
+    ],
+    "locked": false
+  },
+  {
+    "term": "intensiteetti",
+    "definition": "Pinnan läpi kulkeva aallon teho jaettuna pinnan pinta-alalla, I = P/A, kun pinta on kohtisuorassa aallon etenemissuuntaan. Yksikkö W/m². Pistemäisen lähteen intensiteetti pienenee etäisyyden neliön mukaan.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "intensiteettitaso",
+      "kuulokynnys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "intensiteettitaso",
+    "definition": "Äänen voimakkuuden logaritminen mitta L = 10 dB · lg(I/I₀), joka vertaa intensiteettiä I kuulokynnykseen I₀. Kymmenkertainen intensiteetti lisää tasoa 10 dB ja kaksinkertainen noin 3 dB.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "desibeli",
+      "intensiteetti",
+      "kuulokynnys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "desibeli",
+    "definition": "Intensiteettitason yksikkö dB. Kuulokynnyksen taso on 0 dB ja kipukynnyksen noin 120 dB. Usean riippumattoman äänilähteen desibelejä ei lasketa yhteen, vaan yhteistaso lasketaan intensiteettien summasta.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "intensiteettitaso"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kuulokynnys",
+    "definition": "Heikoimman äänen intensiteetti, jonka normaalikuuloinen ihminen erottaa noin 1000 Hz:n taajuudella, I₀ = 1,0 · 10⁻¹² W/m². Se on intensiteettitason vertailuarvo, jota vastaa taso 0 dB. Kuulokynnys ei tarkoita hiljaisuutta.",
+    "lessons": [
+      "fy5-15"
+    ],
+    "see_also": [
+      "intensiteettitaso",
+      "desibeli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ultraääni",
+    "definition": "Ääni, jonka taajuus on yli 20 kHz eli liian suuri ihmisen kuultavaksi. Lääketieteellisessä kuvauksessa käytetään taajuuksia noin 2–15 MHz: kudosten rajapinnoilta heijastuneiden kaikujen kulkuajasta saadaan rajapintojen syvyys.",
+    "lessons": [
+      "fy5-17",
+      "fy5-14"
+    ],
+    "see_also": [
+      "pitkittäinen aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "maanjäristysaalto",
+    "definition": "Maanjäristyksessä syntyvä mekaaninen aalto. Maan sisäosien läpi etenevät pitkittäinen P-aalto, joka on nopein, ja poikittainen S-aalto, joka ei etene nesteessä; pintaa pitkin etenevät hitaammat pinta-aallot.",
+    "lessons": [
+      "fy5-17"
+    ],
+    "see_also": [
+      "pitkittäinen aalto",
+      "poikittainen aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "melu",
+    "definition": "Ääni, jota ei haluta kuulla tai joka on haitallista. Kuulolle haitallisuus riippuu äänen tasosta ja altistuksen kestosta: jokainen $3\\,\\text{dB}$:n nousu puolittaa ajan, jossa sama annos kertyy.",
+    "lessons": [
+      "fy5-16"
+    ],
+    "see_also": [
+      "jälkikaiunta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jälkikaiunta",
+    "definition": "Tilassa heijastuvan äänen hiipuminen sen jälkeen, kun äänilähde on vaiennut. Jälkikaiunta-aika on aika, jossa äänitaso laskee $60\\,\\text{dB}$; ääntä vaimentavat pinnat lyhentävät sitä.",
+    "lessons": [
+      "fy5-16"
+    ],
+    "see_also": [
+      "heijastuminen",
+      "melu"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kaiutin",
+    "definition": "Laite, joka muuttaa sähköisen signaalin ääneksi: vaihtovirta kulkee magneetin navan ympärillä olevassa kelassa, ja kelaan kiinnitetty kartio värähtelee ja synnyttää ääniaallon. Suurin osa sähköenergiasta muuttuu sisäenergiaksi.",
+    "lessons": [
+      "fy5-16",
+      "fy7-4"
+    ],
+    "see_also": [
+      "mikrofoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mikrofoni",
+    "definition": "Laite, joka muuttaa äänen sähköiseksi signaaliksi: äänen paineenvaihtelut liikuttavat kalvoa, ja kalvon liike muutetaan jännitteeksi, joka vaihtelee samassa tahdissa kuin ääni.",
+    "lessons": [
+      "fy5-16"
+    ],
+    "see_also": [
+      "kaiutin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ääni",
+    "definition": "Väliaineessa etenevä mekaaninen aalto, kaasussa ja nesteessä pitkittäinen paineaalto, jossa tihentymät ja harvennukset etenevät. Ääni tarvitsee väliaineen; tyhjiössä se ei etene.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "pitkittäinen aalto",
+      "äänen nopeus",
+      "äänenkorkeus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "äänen nopeus",
+    "definition": "Nopeus, jolla ääni etenee väliaineessa. Se riippuu väliaineesta ja kaasussa lämpötilasta: ilmassa noin 340 m/s (noin 15 °C), vedessä noin 1480 m/s. Määritetään mittaamalla äänen kulkuaika tunnetulla matkalla.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "ääni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "äänenkorkeus",
+    "definition": "Äänen kuultu korkeus, joka määräytyy taajuudesta, soittimen äänessä perustaajuudesta: suurempi taajuus, korkeampi ääni. Taajuuden kaksinkertaistuminen nostaa ääntä oktaavin.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "sointiväri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sointiväri",
+    "definition": "Äänen laatu, joka erottaa kaksi samankorkuista ääntä toisistaan. Se riippuu siitä, kuinka voimakkaita yläsävelet ovat perustaajuuteen verrattuna, ja näkyy äänen FFT-spektrissä.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "yläsävel",
+      "harmoninen sarja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "harmoninen sarja",
+    "definition": "Taajuudet f_n = n·f_1 (n = 1, 2, 3, …) eli perustaajuus ja sen kokonaislukukerrat. Kielen ja molemmista päistä avoimen putken ominaistaajuudet muodostavat harmonisen sarjan.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "perustaajuus",
+      "yläsävel",
+      "sointiväri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "infraääni",
+    "definition": "Ääni, jonka taajuus on alle noin 20 Hz eli alle ihmisen kuuloalueen. Sitä syntyy esimerkiksi maanjäristyksissä ja ukkosessa.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "ultraääni",
+      "ääni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "huojunta",
+    "definition": "Kahden lähes samantaajuisen äänen summan voimakkuuden jaksollinen vaihtelu. Huojuntataajuus on f_h = |f_1 − f_2|.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Doppler-ilmiö",
+    "definition": "Kuullun taajuuden muutos, kun äänilähde tai kuulija liikkuu väliaineen suhteen: lähestyminen nostaa ja loittoneminen laskee taajuutta. Liikkuvalle lähteelle f = f_0·v/(v ∓ v_s), liikkuvalle kuulijalle f = f_0·(v ± v_h)/v.",
+    "lessons": [
+      "fy5-14"
+    ],
+    "see_also": [
+      "ääni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkömoottori",
+    "definition": "Laite, joka muuttaa sähköenergiaa liike-energiaksi. Tasavirtamoottorissa magneettikenttä kohdistaa voimat virtasilmukan sivuihin, voimat kääntävät silmukkaa akselin ympäri, ja kommutaattori kääntää virran suunnan joka puolikierroksella, jotta pyöriminen jatkuu samaan suuntaan.",
+    "lessons": [
+      "fy7-4"
+    ],
+    "see_also": [
+      "virtasilmukka",
+      "kaiutin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "virtasilmukka",
+    "definition": "Suljettu johdinsilmukka, jossa kulkee sähkövirta. Magneettikentässä silmukan vastakkaisiin sivuihin kohdistuu vastakkaissuuntaiset voimat, jotka pyrkivät kääntämään silmukkaa.",
+    "lessons": [
+      "fy7-4"
+    ],
+    "see_also": [
+      "sähkömoottori"
+    ],
+    "locked": false
+  },
+  {
+    "term": "virtajohdin",
+    "definition": "Johdin, jossa kulkee sähkövirta. Virtajohtimen ympärille syntyy magneettikenttä, jonka kenttäviivat ovat suoran johtimen ympärillä samankeskisiä ympyröitä; kentän suunta saadaan oikean käden säännöllä.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "oikean käden sääntö",
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "käämi",
+    "definition": "Kierteelle kelattu eristetty johdin. Pitkän käämin sisällä magneettikenttä on lähes homogeeninen ja käämin akselin suuntainen, $B = \\mu_0 \\tfrac{N I}{l}$, ja ulkopuolella kenttä on samanlainen kuin sauvamagneetin.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "virtajohdin",
+      "sähkömagneetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "oikean käden sääntö",
+    "definition": "Sääntö magneettikentän suunnalle. Suora johdin: kun oikean käden peukalo osoittaa virran suuntaan, koukistetut sormet kiertävät kenttäviivojen suuntaan. Käämi: kun sormet kiertävät kierroksia pitkin virran suuntaan, peukalo osoittaa käämin sisällä kentän suuntaan eli käämin pohjoisnapaa kohti.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "virtajohdin",
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkömagneetti",
+    "definition": "Käämi, jonka sisällä on rautasydän. Rauta magnetoituu käämin kentässä, joten kenttä on moninkertainen ilman sydäntä olevaan käämiin verrattuna, ja se häviää lähes kokonaan, kun virta katkaistaan.",
+    "lessons": [
+      "fy7-3"
+    ],
+    "see_also": [
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneetti",
+    "definition": "Kappale, joka vetää puoleensa rautaa ja kääntyy vapaasti ripustettuna pohjois–eteläsuuntaan. Magneetilla on aina kaksi napaa, pohjoisnapa N ja etelänapa S; samannimiset navat hylkivät ja erinimiset vetävät toisiaan.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneettinen dipoli",
+      "magneettikenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettinen dipoli",
+    "definition": "Kahden vastakkaisen magneettinavan, pohjoisnavan ja etelänavan, muodostama kokonaisuus. Jokainen magneetti on dipoli: katkaistusta magneetista tulee kaksi dipolia, eikä yksittäistä magneettinapaa ole havaittu.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ferromagnetismi",
+    "definition": "Raudan, nikkelin, koboltin ja monien niiden seosten ominaisuus: atomien magneettiset dipolit järjestyvät samansuuntaisiksi alkeisalueiksi, joten aine magnetoituu voimakkaasti magneetin kentässä ja magneetti vetää sitä.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "alkeisalue",
+      "magneetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alkeisalue",
+    "definition": "Ferromagneettisen aineen pieni alue, jossa kaikkien atomien magneettiset dipolit osoittavat samaan suuntaan. Magnetoimattomassa aineessa alkeisalueiden suunnat vaihtelevat; ulkoinen kenttä järjestää ne, jolloin aine magnetoituu.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "ferromagnetismi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettikenttä",
+    "definition": "Magneetin tai sähkövirran ympärillä oleva tila, jossa toinen magneetti tai rautakappale kokee voiman. Kentän suunta on se, johon kompassin neulan pohjoispää osoittaa, ja sitä kuvaa magneettivuon tiheys.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "kenttäviiva",
+      "magneettivuon tiheys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kenttäviiva",
+    "definition": "Viiva, jonka suunta kussakin pisteessä on kentän suunta. Magneetin ulkopuolella magneettikentän kenttäviivat kulkevat pohjoisnavasta etelänapaan ja muodostavat suljettuja silmukoita; viivojen tiheys kertoo kentän voimakkuuden.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneettikenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettivuon tiheys",
+    "definition": "Magneettikentän voimakkuutta ja suuntaa kuvaava vektorisuure $\\overline{B}$. Yksikkö on tesla $\\text{T}$. Maan magneettikenttä on Suomessa noin $52\\,\\mu\\text{T}$.",
+    "lessons": [
+      "fy7-1"
+    ],
+    "see_also": [
+      "magneettikenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettinen voima",
+    "definition": "Voima, jolla magneettikenttä vaikuttaa liikkuvaan varattuun hiukkaseen tai virtajohtimeen. Hiukkaseen vaikuttavan voiman suuruus on F = qvB sin α, ja se on kohtisuorassa sekä nopeutta että kenttää vastaan, joten se kääntää liikettä muuttamatta vauhtia.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "magneettikenttä",
+      "ympyrärata"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ympyrärata",
+    "definition": "Ympyrän muotoinen rata. Kohtisuorassa homogeenista magneettikenttää vastaan liikkuva varattu hiukkanen kiertää ympyrärataa, jonka säde on r = mv/(qB), koska magneettinen voima toimii keskeisvoimana.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "magneettinen voima",
+      "keskeisvoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "nopeusvalitsin",
+    "definition": "Laite, jossa sähkökenttä ja sitä vastaan kohtisuora magneettikenttä vaikuttavat varattuun hiukkaseen vastakkaisiin suuntiin. Suoraan sen läpi kulkevat vain hiukkaset, joiden vauhti on v = E/B, riippumatta niiden massasta ja varauksesta.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "massaspektrometri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "massaspektrometri",
+    "definition": "Laite, joka erottaa ionit niiden massan mukaan. Tunnetulla vauhdilla liikkuvat ionit kaartuvat magneettikentässä ympyräradalle, jonka säde on samalla varauksella verrannollinen massaan, ja osuvat ilmaisimeen eri kohtiin. Sillä erotetaan esimerkiksi isotoopit.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "nopeusvalitsin",
+      "ympyrärata"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hiukkaskiihdytin",
+    "definition": "Laite, joka kiihdyttää varattuja hiukkasia suuriin energioihin. Sähkökentät kasvattavat hiukkasten energiaa, ja magneetit taivuttavat ja kohdistavat hiukkassuihkua. Esimerkiksi CERNin LHC on 26,7 km:n rengas.",
+    "lessons": [
+      "fy7-2"
+    ],
+    "see_also": [
+      "magneettinen voima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "muuntaja",
+    "definition": "Laite, joka muuttaa vaihtojännitteen suuremmaksi tai pienemmäksi. Rautasydämen ympärillä on ensiö- ja toisiokäämi: ensiökäämin vaihtovirta synnyttää sydämeen muuttuvan magneettivuon, joka indusoi toisiokäämiin vaihtojännitteen. Ideaalisessa muuntajassa U₁ : U₂ = N₁ : N₂ = I₂ : I₁, ja teho säilyy. Tasavirralla muuntaja ei toimi.",
+    "lessons": [
+      "fy7-8"
+    ],
+    "see_also": [
+      "muuntosuhde",
+      "käämi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "muuntosuhde",
+    "definition": "Muuntajan ensiö- ja toisiokäämin kierrosten lukumäärien suhde N₁ : N₂. Ideaalisessa muuntajassa se on myös jännitteiden suhde U₁ : U₂ ja virtojen käänteinen suhde I₂ : I₁.",
+    "lessons": [
+      "fy7-8"
+    ],
+    "see_also": [
+      "muuntaja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suurjännite",
+    "definition": "Yli 1 kV:n vaihtojännite. Sähköenergiaa siirretään pitkiä matkoja suurjännitteellä, koska sama teho kulkee silloin pienellä virralla ja siirtohäviöt ovat pienet; Suomen kantaverkon jännitteet ovat 400, 220 ja 110 kV.",
+    "lessons": [
+      "fy7-8"
+    ],
+    "see_also": [
+      "siirtohäviö",
+      "sähköverkko"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktio",
+    "definition": "Sähkömagneettinen induktio: ilmiö, jossa johdinsilmukkaan tai käämiin syntyy jännite, kun sen läpi kulkeva magneettivuo muuttuu. Jos vuo ei muutu, jännitettä ei synny.",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "magneettivuo",
+      "induktiojännite",
+      "induktiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "magneettivuo",
+    "definition": "Suure $\\Phi$, joka kuvaa, kuinka paljon magneettikenttää kulkee pinnan läpi. Kun homogeeninen kenttä on kohtisuorassa pintaa vastaan, $\\Phi = BA$. Yksikkö on weber, $1\\,\\text{Wb} = 1\\,\\text{T}\\cdot\\text{m}^2$.",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "magneettivuon tiheys",
+      "induktiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktiojännite",
+    "definition": "Jännite, joka syntyy käämiin tai johdinsilmukkaan sen läpi kulkevan magneettivuon muuttuessa, tai magneettikentässä liikkuvan johtimen päiden välille, $e = vBl$. Suljetussa piirissä se synnyttää induktiovirran.",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "induktio",
+      "induktiolaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktiolaki",
+    "definition": "Faradayn induktiolaki: käämiin syntyvä induktiojännite on $e = -N\\tfrac{\\Delta\\Phi}{\\Delta t}$, missä $N$ on kierrosten lukumäärä ja $\\Delta\\Phi : \\Delta t$ magneettivuon muutosnopeus. Miinusmerkki kertoo, että jännite vastustaa muutosta, joka sen synnyttää (Lenzin laki).",
+    "lessons": [
+      "fy7-5"
+    ],
+    "see_also": [
+      "induktio",
+      "magneettivuo"
+    ],
+    "locked": false
+  },
+  {
+    "term": "generaattori",
+    "definition": "Laite, joka muuttaa pyörimisliikkeen sähköenergiaksi sähkömagneettisen induktion avulla: käämi pyörii magneettikentässä tai magneetti käämin sisällä, jolloin käämin läpi kulkeva magneettivuo muuttuu ja käämiin syntyy jännite.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "vaihtojännite",
+      "tuulivoima"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaihtovirta",
+    "definition": "Sähkövirta, jonka suunta vaihtuu jaksollisesti. Sähköverkossa virta on sinimuotoinen ja sen taajuus on $50\\,\\text{Hz}$, joten suunta vaihtuu sata kertaa sekunnissa.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "vaihtojännite",
+      "tehollinen arvo"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaihtojännite",
+    "definition": "Jännite, jonka suunta vaihtuu jaksollisesti. Magneettikentässä tasaisesti pyörivän käämin jännite on sinimuotoinen, $e = e_0 \\sin(2\\pi f t)$.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "vaihtovirta",
+      "generaattori",
+      "huippuarvo"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tehollinen arvo",
+    "definition": "Vaihtojännitteen tai -virran arvo, joka vastaa tasajännitettä tai tasavirtaa, joka tuottaisi vastukseen saman keskimääräisen tehon. Sinimuotoisella jännitteellä $U = U_0 : \\sqrt{2}$; verkkojännitteen $230\\,\\text{V}$ on tehollinen arvo.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "huippuarvo",
+      "vaihtojännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "huippuarvo",
+    "definition": "Jaksollisesti vaihtelevan jännitteen tai virran suurin arvo, esimerkiksi $U_0$ tai $e_0$. Verkkojännitteen huippuarvo on noin $325\\,\\text{V}$.",
+    "lessons": [
+      "fy7-7"
+    ],
+    "see_also": [
+      "tehollinen arvo",
+      "vaihtojännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Lenzin laki",
+    "definition": "Induktiovirran suunta on aina sellainen, että sen oma magneettikenttä vastustaa sitä magneettivuon muutosta, joka induktiovirran synnyttää. Laki seuraa energian säilymisestä, ja se on induktiolain $e = -N \\Delta\\Phi : \\Delta t$ miinusmerkki.",
+    "lessons": [
+      "fy7-6"
+    ],
+    "see_also": [
+      "induktio",
+      "pyörrevirta",
+      "energian säilyminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pyörrevirta",
+    "definition": "Induktiovirta, joka kiertää suljettuina silmukoina umpinaisessa sähköä johtavassa kappaleessa, kun kappaleen läpi kulkeva magneettivuo muuttuu. Pyörrevirrat vastustavat Lenzin lain mukaan muutosta ja muuttavat sähköenergiaa kappaleen sisäenergiaksi.",
+    "lessons": [
+      "fy7-6"
+    ],
+    "see_also": [
+      "Lenzin laki",
+      "induktiojarru",
+      "sisäenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktiojarru",
+    "definition": "Jarru, jossa sähköä johtava levy tai kisko liikkuu magneettikentässä ja siihen syntyvät pyörrevirrat jarruttavat liikettä. Jarru ei kulu, ja sen voima kasvaa vauhdin mukana; liike-energia muuttuu johteen sisäenergiaksi. Kutsutaan myös pyörrevirtajarruksi.",
+    "lessons": [
+      "fy7-6"
+    ],
+    "see_also": [
+      "pyörrevirta",
+      "Lenzin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "taittuminen",
+    "definition": "Valon tai muun aallon suunnan muuttuminen, kun se siirtyy rajapinnan läpi aineesta toiseen, jossa sen nopeus on eri. Optisesti tiheämpään aineeseen siirtyvä valo taittuu kohti normaalia, harvempaan normaalista poispäin.",
+    "lessons": [
+      "fy7-10"
+    ],
+    "see_also": [
+      "taitekerroin",
+      "Snellin laki",
+      "heijastuslaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "taitekerroin",
+    "definition": "Aineen taitekerroin n = c : v kertoo, kuinka monta kertaa hitaammin valo etenee aineessa kuin tyhjiössä. Taitekerroin on yksikötön, ja aineessa se on suurempi kuin 1; esimerkiksi veden taitekerroin on 1,33.",
+    "lessons": [
+      "fy7-10",
+      "fy7-11"
+    ],
+    "see_also": [
+      "taittuminen",
+      "Snellin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Snellin laki",
+    "definition": "Taittumislaki n₁ sin α₁ = n₂ sin α₂, missä α₁ on tulokulma ja α₂ taitekulma rajapinnan normaalista mitattuina ja n₁ ja n₂ aineiden taitekertoimet.",
+    "lessons": [
+      "fy7-10"
+    ],
+    "see_also": [
+      "taittuminen",
+      "taitekerroin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kokonaisheijastuminen",
+    "definition": "Ilmiö, jossa valo heijastuu rajapinnasta kokonaan takaisin eikä taitu toiseen aineeseen. Se tapahtuu, kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen ja tulokulma on suurempi kuin rajakulma.",
+    "lessons": [
+      "fy7-12"
+    ],
+    "see_also": [
+      "rajakulma",
+      "valokuitu"
+    ],
+    "locked": false
+  },
+  {
+    "term": "rajakulma",
+    "definition": "Tulokulma, jolla taitekulma on 90°, kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen: sin α_r = n₂ : n₁. Rajakulmaa suuremmilla tulokulmilla valo kokonaisheijastuu.",
+    "lessons": [
+      "fy7-12"
+    ],
+    "see_also": [
+      "kokonaisheijastuminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "valokuitu",
+    "definition": "Ohut lasi- tai muovikuitu, jonka ytimen taitekerroin on hieman suurempi kuin ympäröivän kuoren. Valo etenee ytimessä kokonaisheijastuen, joten kuitu johtaa valoa myös mutkan ympäri. Käytetään tiedonsiirrossa ja tähystimissä.",
+    "lessons": [
+      "fy7-12"
+    ],
+    "see_also": [
+      "kokonaisheijastuminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkömagneettinen säteily",
+    "definition": "Toisiaan synnyttävien sähkö- ja magneettikentän muutosten eteneminen aaltona, joka ei tarvitse väliainetta. Kentät ovat kohtisuorassa toisiaan ja etenemissuuntaa vastaan, ja tyhjiössä aalto etenee valon nopeudella c = 3,00 · 10⁸ m/s. Syntyy, kun varattu hiukkanen on kiihtyvässä liikkeessä. Esimerkiksi radioaallot, valo ja röntgensäteily.",
+    "lessons": [
+      "fy7-9"
+    ],
+    "see_also": [
+      "spektri",
+      "aallonpituus",
+      "lämpösäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "spektri",
+    "definition": "Säteilyn jakautuminen aallonpituuksien tai taajuuksien mukaan. Sähkömagneettinen spektri on kaikkien sähkömagneettisen säteilyn lajien kokonaisuus radioaalloista gammasäteilyyn aallonpituuden mukaan järjestettynä; kappaleen säteilyn spektri kertoo, kuinka voimakkaasti se säteilee kullakin aallonpituudella.",
+    "lessons": [
+      "fy7-9",
+      "fy7-11"
+    ],
+    "see_also": [
+      "sähkömagneettinen säteily",
+      "mustan kappaleen säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mustan kappaleen säteily",
+    "definition": "Mustan kappaleen eli kaiken siihen osuvan säteilyn imevän ihannekappaleen lähettämä sähkömagneettinen säteily. Sen spektri on jatkuva ja riippuu vain kappaleen pintalämpötilasta, ei aineesta. Aurinko, hehkuva hiillos ja ihmisen iho infrapuna-alueella säteilevät likimain kuin musta kappale.",
+    "lessons": [
+      "fy7-9"
+    ],
+    "see_also": [
+      "Wienin siirtymälaki",
+      "lämpösäteily",
+      "spektri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Wienin siirtymälaki",
+    "definition": "Mustan kappaleen säteilyn spektrin huipun aallonpituus on kääntäen verrannollinen kappaleen absoluuttiseen lämpötilaan: λ_max · T = b, missä b = 2,898 · 10⁻³ m·K. Kuumemman kappaleen huippu on lyhyemmällä aallonpituudella.",
+    "lessons": [
+      "fy7-9"
+    ],
+    "see_also": [
+      "mustan kappaleen säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "dispersio",
+    "definition": "Taitekertoimen riippuvuus valon aallonpituudesta. Vedessä ja lasissa violetin valon taitekerroin on suurempi kuin punaisen, joten prisma ja sadepisarat hajottavat valkoisen valon väreiksi.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "taitekerroin",
+      "spektri",
+      "sateenkaari"
+    ],
+    "locked": false
+  },
+  {
+    "term": "poikkeamakulma",
+    "definition": "Kulma, jonka verran valonsäde kääntyy alkuperäisestä suunnastaan kulkiessaan prisman läpi: $\\delta = \\alpha_1 + \\alpha_4 - A$.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "dispersio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sateenkaari",
+    "definition": "Kaari, joka syntyy, kun auringonvalo taittuu vesipisaroihin, heijastuu niiden takapinnasta ja taittuu ulos. Punainen näkyy noin $42^\\circ$:n ja violetti noin $40{,}6^\\circ$:n kulmassa vastapisteestä.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "dispersio",
+      "vastapiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vastapiste",
+    "definition": "Taivaan piste suoraan auringon vastakkaisella puolella, katsojan pään varjon suunnassa. Sateenkaari on ympyrä vastapisteen ympärillä.",
+    "lessons": [
+      "fy7-11"
+    ],
+    "see_also": [
+      "sateenkaari"
+    ],
+    "locked": false
+  },
+  {
+    "term": "polarisaatio",
+    "definition": "Poikittaisen aallon värähtelysuunnan järjestäytyminen. Valo on lineaarisesti polarisoitunutta, kun sen sähkökenttä värähtelee vain yhdessä etenemissuuntaa vastaan kohtisuorassa suunnassa. Auringon ja hehkulampun valo on polarisoimatonta: värähtelysuunta vaihtelee satunnaisesti. Pitkittäistä aaltoa, kuten ääntä, ei voi polarisoida.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaattori",
+      "poikittainen aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "polarisaattori",
+    "definition": "Kalvo tai suodatin, joka päästää läpi sähkökentän läpäisysuuntaisen komponentin ja absorboi siihen nähden kohtisuoran komponentin. Ihanteellinen polarisaattori päästää läpi puolet polarisoimattoman valon intensiteetistä, ja läpi tullut valo on polarisoitunutta läpäisysuuntaan. Toista polarisaattoria, jolla tutkitaan valon polarisaatiota, sanotaan analysaattoriksi.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaatio",
+      "Malusin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Malusin laki",
+    "definition": "Polarisoituneen valon intensiteetti polarisaattorin jälkeen on I = I₀ cos² θ, missä I₀ on tulevan polarisoituneen valon intensiteetti ja θ valon polarisaatiosuunnan ja polarisaattorin läpäisysuunnan välinen kulma.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaattori",
+      "intensiteetti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Brewsterin laki",
+    "definition": "Kun valo heijastuu eristeen, kuten veden tai lasin, pinnasta Brewsterin kulmassa α_B, jolle tan α_B = n₂ : n₁, heijastunut valo on täysin polarisoitunutta pinnan suuntaisesti. Silloin heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaatio",
+      "taitekerroin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "polaroidut aurinkolasit",
+    "definition": "Aurinkolasit, joiden linsseissä on polarisaattorikalvo, jonka läpäisysuunta on pystysuora. Ne himmentävät erityisesti vaakasuorista pinnoista, kuten vedestä ja märästä tiestä, heijastuvaa häikäisyä, koska heijastunut valo on osittain polarisoitunutta vaakasuunnassa.",
+    "lessons": [
+      "fy7-15"
+    ],
+    "see_also": [
+      "polarisaattori",
+      "Brewsterin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ohut kalvo",
+    "definition": "Läpinäkyvä kerros, jonka paksuus on samaa suuruusluokkaa kuin valon aallonpituus, noin $100$–$1000\\,\\text{nm}$, esimerkiksi saippuakuplan seinämä tai öljykalvo veden pinnalla. Kalvon kahdesta pinnasta heijastuneet aallot interferoivat; kohtisuorassa tulossa niiden matkaero on $2nd$.",
+    "lessons": [
+      "fy7-14"
+    ],
+    "see_also": [
+      "interferenssi",
+      "heijastuksenestopinnoite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "heijastuksenestopinnoite",
+    "definition": "Lasin tai linssin pinnalle tehty ohut läpinäkyvä kalvo, jonka kahdesta pinnasta heijastuneet aallot heikentävät toisiaan, joten pinnasta heijastuu vähemmän valoa ja sen läpi pääsee enemmän. Ohuimman pinnoitteen paksuus on neljäsosa aallonpituudesta pinnoitteessa, $d = \\lambda : (4n)$.",
+    "lessons": [
+      "fy7-14"
+    ],
+    "see_also": [
+      "ohut kalvo",
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "langaton lataus",
+    "definition": "Akun lataaminen ilman johtoa: laturin lähetinkäämin vaihtovirta synnyttää vaihtuvan magneettikentän, jonka vuo indusoi laitteen vastaanotinkäämiin jännitteen. Toimii kuin muuntaja ilman rautasydäntä, joten siirto heikkenee jyrkästi käämien välin kasvaessa.",
+    "lessons": [
+      "fy7-16"
+    ],
+    "see_also": [
+      "induktio",
+      "muuntaja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "induktioliesi",
+    "definition": "Liesi, jonka lasilevyn alla olevan kelan vaihtovirta synnyttää vaihtuvan magneettikentän. Kenttä indusoi kattilan pohjaan pyörrevirtoja, jotka muuttavat sähköenergiaa pohjan sisäenergiaksi. Lämmittää tehokkaasti ferromagneettista, kuten teräksistä, pohjaa; sähköä johtamaton lasi ei lämpene itsestään.",
+    "lessons": [
+      "fy7-16"
+    ],
+    "see_also": [
+      "pyörrevirta",
+      "ferromagnetismi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vaimennus",
+    "definition": "Signaalin tehon pieneneminen siirtotiellä, esimerkiksi valokuidussa, ilmoitettuna desibeleinä: $A = 10\\,\\text{dB} \\cdot \\lg (P_0 : P)$. Jokainen $10\\,\\text{dB}$ pienentää tehon kymmenesosaan. Kuidun vaimennuskerroin ilmoitetaan yksikössä $\\text{dB/km}$.",
+    "lessons": [
+      "fy7-16"
+    ],
+    "see_also": [
+      "desibeli",
+      "valokuitu"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hila",
+    "definition": "Levy tai kalvo, jossa on suuri määrä tasavälisiä kapeita rakoja tai viivoja. Kun valo tulee kohtisuoraan hilaan, kirkkaat maksimit syntyvät suuntiin, joille d sin θ = kλ, missä d on hilavakio, θ maksimin suunta keskimaksimin suunnasta ja k kokonaisluku. Heijastava tasavälinen pinta, kuten CD-levy, on heijastushila.",
+    "lessons": [
+      "fy7-13"
+    ],
+    "see_also": [
+      "hilavakio",
+      "interferenssi",
+      "diffraktio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hilavakio",
+    "definition": "Hilan vierekkäisten rakojen tai viivojen etäisyys d. Jos hilassa on N viivaa millimetrillä, hilavakio on d = 1 mm : N; esimerkiksi 300 viivaa millimetrillä antaa d = 3,33 µm.",
+    "lessons": [
+      "fy7-13"
+    ],
+    "see_also": [
+      "hila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kaksoisrako",
+    "definition": "Kaksi kapeaa, lähekkäistä rakoa, joihin tulee saman lähteen valoa. Raoista lähtevät aallot ovat koherentteja ja interferoivat, joten varjostimelle syntyy tasavälisiä kirkkaita ja tummia juovia. Thomas Young osoitti kaksoisraolla 1800-luvun alussa, että valo on aaltoliikettä.",
+    "lessons": [
+      "fy7-13"
+    ],
+    "see_also": [
+      "interferenssi",
+      "hila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "resistanssi",
+    "definition": "Suure, joka kertoo, kuinka voimakkaasti komponentti vastustaa sähkövirtaa: komponentin jännitteen ja sen läpi kulkevan virran suhde $R = U : I$. Yksikkö on ohmi, $1\\,\\Omega = 1\\,\\text{V/A}$.",
+    "lessons": [
+      "fy6-3"
+    ],
+    "see_also": [
+      "Ohmin laki",
+      "resistiivisyys",
+      "vastus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Ohmin laki",
+    "definition": "Metallijohtimen läpi kulkeva virta on suoraan verrannollinen sen jännitteeseen, kun johtimen lämpötila pysyy samana: $U = RI$, missä resistanssi $R$ on vakio. Laki ei päde esimerkiksi hehkulampulle eikä diodille.",
+    "lessons": [
+      "fy6-3"
+    ],
+    "see_also": [
+      "resistanssi",
+      "ominaiskäyrä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vastus",
+    "definition": "Virtapiirin komponentti, joka on valmistettu tietyn suuruiseksi resistanssiksi. Piirrosmerkki on suorakulmio. Komponentin ominaisuutta kuvaava suure on resistanssi.",
+    "lessons": [
+      "fy6-3"
+    ],
+    "see_also": [
+      "resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "resistiivisyys",
+    "definition": "Johdinaineelle ominainen suure $\\rho$, joka kertoo, kuinka huonosti aine johtaa sähköä. Tasapaksun johtimen resistanssi on $R = \\rho l : A$, missä $l$ on pituus ja $A$ poikkipinta-ala. Yksikkö on $\\Omega\\cdot\\text{m}$; metalleilla resistiivisyys kasvaa lämpötilan noustessa.",
+    "lessons": [
+      "fy6-3"
+    ],
+    "see_also": [
+      "resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ominaiskäyrä",
+    "definition": "Kuvaaja, joka näyttää komponentin jännitteen ja virran riippuvuuden. Ohmin lakia noudattavan vastuksen ominaiskäyrä on origon kautta kulkeva suora, hehkulampun ominaiskäyrä on kaareva.",
+    "lessons": [
+      "fy6-3"
+    ],
+    "see_also": [
+      "Ohmin laki",
+      "resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sarjaankytkentä",
+    "definition": "Kytkentä, jossa komponentit ovat peräkkäin samassa silmukassa, joten varauksilla on vain yksi kulkureitti. Sama virta kulkee jokaisen komponentin läpi, ja jännitteet summautuvat.",
+    "lessons": [
+      "fy6-4"
+    ],
+    "see_also": [
+      "rinnankytkentä",
+      "kokonaisresistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "rinnankytkentä",
+    "definition": "Kytkentä, jossa komponentit ovat eri haaroissa samojen kahden haarautumispisteen välissä. Jokaisen haaran yli on sama jännite, ja haaravirrat summautuvat.",
+    "lessons": [
+      "fy6-4"
+    ],
+    "see_also": [
+      "sarjaankytkentä",
+      "kokonaisresistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kokonaisresistanssi",
+    "definition": "Sen yhden vastuksen resistanssi, joka voisi korvata vastusten kytkennän niin, että paristosta lähtevä virta pysyisi samana. Sarjaankytkennässä se on resistanssien summa, rinnankytkennässä pienempi kuin pienin haarojen resistansseista.",
+    "lessons": [
+      "fy6-4"
+    ],
+    "see_also": [
+      "sarjaankytkentä",
+      "rinnankytkentä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Kirchhoffin virtalaki",
+    "definition": "Haarautumispisteeseen tulevien sähkövirtojen summa on yhtä suuri kuin siitä lähtevien virtojen summa. Laki seuraa varauksen säilymisestä: varausta ei synny, häviä eikä kerry haarautumispisteeseen.",
+    "lessons": [
+      "fy6-5"
+    ],
+    "see_also": [
+      "haarautumispiste",
+      "Kirchhoffin jännitelaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Kirchhoffin jännitelaki",
+    "definition": "Kun virtapiirin silmukka kierretään, potentiaalin muutosten summa on nolla. Siksi lähteen jännite on yhtä suuri kuin silmukan vastusten jännitteiden summa.",
+    "lessons": [
+      "fy6-5"
+    ],
+    "see_also": [
+      "silmukka",
+      "potentiaali",
+      "Kirchhoffin virtalaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "silmukka",
+    "definition": "Virtapiirin suljettu reitti, joka kulkee komponentista toiseen ja palaa lähtökohtaansa.",
+    "lessons": [
+      "fy6-5"
+    ],
+    "see_also": [
+      "Kirchhoffin jännitelaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "haarautumispiste",
+    "definition": "Virtapiirin kohta, jossa johdin jakautuu kahdeksi tai useammaksi haaraksi tai jossa haarat yhtyvät.",
+    "lessons": [
+      "fy6-5"
+    ],
+    "see_also": [
+      "Kirchhoffin virtalaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "potentiaali",
+    "definition": "Sähkökentän tai virtapiirin kohdan jännite valittuun nollakohtaan nähden eli varauksen potentiaalienergia varausyksikköä kohti, yksikkö voltti (V = J/C). Kahden kohdan välinen jännite on niiden potentiaalien erotus, eikä se riipu nollakohdan valinnasta.",
+    "lessons": [
+      "fy6-5",
+      "fy6-12"
+    ],
+    "see_also": [
+      "Kirchhoffin jännitelaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jännitemittari",
+    "definition": "Mittari, joka mittaa kahden pisteen välisen jännitteen. Se kytketään rinnalle eli mitattavan komponentin napojen väliin, ja sen oma resistanssi on hyvin suuri, jotta sen kautta ei juuri kulje virtaa.",
+    "lessons": [
+      "fy6-2"
+    ],
+    "see_also": [
+      "virtamittari",
+      "yleismittari"
+    ],
+    "locked": false
+  },
+  {
+    "term": "virtamittari",
+    "definition": "Mittari, joka mittaa sen läpi kulkevan sähkövirran. Se kytketään sarjaan: piiri avataan ja mittari asetetaan aukkoon. Sen oma resistanssi on hyvin pieni, jotta se ei juuri pienennä mitattavaa virtaa.",
+    "lessons": [
+      "fy6-2"
+    ],
+    "see_also": [
+      "jännitemittari",
+      "yleismittari"
+    ],
+    "locked": false
+  },
+  {
+    "term": "yleismittari",
+    "definition": "Mittalaite, joka mittaa valitsimen asennosta riippuen esimerkiksi jännitettä, virtaa ja resistanssia. Valitsimella valitaan suure ja mittausalue; musta mittajohto kuuluu liittimeen COM.",
+    "lessons": [
+      "fy6-2"
+    ],
+    "see_also": [
+      "jännitemittari",
+      "virtamittari",
+      "mittausalue"
+    ],
+    "locked": false
+  },
+  {
+    "term": "mittausalue",
+    "definition": "Suurin arvo, jonka mittari valitsimen tietyllä asennolla näyttää, esimerkiksi 20 V. Suuremmalla arvolla digitaalinen mittari näyttää OL. Pienemmällä alueella resoluutio on pienempi, joten mitataan pienimmällä alueella, jolle lukema mahtuu.",
+    "lessons": [
+      "fy6-2"
+    ],
+    "see_also": [
+      "yleismittari",
+      "mittausepävarmuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkövirta",
+    "definition": "Varauksen liike johtimessa. Sähkövirran suuruus on poikkileikkauksen läpi aikayksikössä kulkeva varaus, $I = \\tfrac{Q}{t}$, ja sen yksikkö on ampeeri ($1\\,\\text{A} = 1\\,\\text{C/s}$). Sovittu virran suunta on ulkoisessa piirissä plusnavasta miinusnapaan.",
+    "lessons": [
+      "fy6-1"
+    ],
+    "see_also": [
+      "jännite",
+      "virtapiiri",
+      "johde"
+    ],
+    "locked": false
+  },
+  {
+    "term": "jännite",
+    "definition": "Siirtynyt energia varausyksikköä kohti, kun varaus kulkee kahden kohdan välillä: $U = \\tfrac{E}{Q}$. Yksikkö on voltti ($1\\,\\text{V} = 1\\,\\text{J/C}$).",
+    "lessons": [
+      "fy6-1"
+    ],
+    "see_also": [
+      "sähkövirta",
+      "virtapiiri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "virtapiiri",
+    "definition": "Suljettu reitti, jossa varaus kiertää jännitelähteestä johtimia ja komponentteja pitkin takaisin jännitelähteeseen. Virta kulkee vain suljetussa piirissä, ja yhdessä silmukassa sama virta kulkee jokaisen komponentin läpi.",
+    "lessons": [
+      "fy6-1"
+    ],
+    "see_also": [
+      "sähkövirta",
+      "kytkentäkaavio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kytkentäkaavio",
+    "definition": "Virtapiirin piirros, jossa komponentit esitetään sovituilla piirrosmerkeillä (esimerkiksi paristo, lamppu, vastus, kytkin, mittarit) ja johtimet suorina viivoina. Kaavio näyttää, mitkä komponentit on kytketty toisiinsa.",
+    "lessons": [
+      "fy6-1"
+    ],
+    "see_also": [
+      "virtapiiri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "johde",
+    "definition": "Aine, jossa varaukset pääsevät liikkumaan. Metalleissa liikkuvat vapaat elektronit, joten esimerkiksi kupari ja alumiini johtavat hyvin sähköä.",
+    "lessons": [
+      "fy6-1"
+    ],
+    "see_also": [
+      "eriste",
+      "sähkövirta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "eriste",
+    "definition": "Aine, jossa varaukset eivät pääse liikkumaan, esimerkiksi muovi, kumi, lasi ja kuiva puu. Sähköjohdon kuori on eristettä.",
+    "lessons": [
+      "fy6-1",
+      "fy6-13"
+    ],
+    "see_also": [
+      "johde"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähköteho",
+    "definition": "Kuinka paljon sähköenergiaa komponentissa muuttuu muuksi energiaksi aikayksikössä, P = UI, missä U on komponentin jännite ja I sen läpi kulkeva virta. Yksikkö on watti, 1 W = 1 J/s = 1 V · 1 A.",
+    "lessons": [
+      "fy6-6"
+    ],
+    "see_also": [
+      "Joulen laki",
+      "sähköenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Joulen laki",
+    "definition": "Vastuksessa sisäenergiaksi muuttuva teho on P = RI² = U²/R, missä R on resistanssi, I virta ja U vastuksen jännite. Energia siirtyy vastuksesta lämpönä ympäristöön.",
+    "lessons": [
+      "fy6-6"
+    ],
+    "see_also": [
+      "sähköteho",
+      "resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "lähdejännite",
+    "definition": "Jännitelähteen, kuten pariston, napojen välinen jännite silloin, kun siitä ei oteta virtaa. Lähdejännite $E$ kertoo, kuinka paljon energiaa lähde antaa varausyksikköä kohti. Yksikkö on voltti ($1\\,\\text{V} = 1\\,\\text{J/C}$).",
+    "lessons": [
+      "fy6-8"
+    ],
+    "see_also": [
+      "napajännite",
+      "sisäinen resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "napajännite",
+    "definition": "Jännitelähteen napojen välinen jännite $U$, kun lähteestä otetaan virta $I$: $U = E - R_\\text{s} I$, missä $E$ on lähdejännite ja $R_\\text{s}$ sisäinen resistanssi. Napajännite on sitä pienempi, mitä suurempi virta on.",
+    "lessons": [
+      "fy6-8"
+    ],
+    "see_also": [
+      "lähdejännite",
+      "sisäinen resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sisäinen resistanssi",
+    "definition": "Jännitelähteen oma resistanssi $R_\\text{s}$, esimerkiksi pariston elektrolyytin ja elektrodien resistanssi. Mallissa se on ideaalisen lähteen kanssa sarjassa oleva vastus, jonka jännite $R_\\text{s} I$ pienentää napajännitettä.",
+    "lessons": [
+      "fy6-8"
+    ],
+    "see_also": [
+      "lähdejännite",
+      "napajännite",
+      "oikosulku"
+    ],
+    "locked": false
+  },
+  {
+    "term": "oikosulku",
+    "definition": "Kytkentä, jossa jännitelähteen navat tai virtapiirin kaksi kohtaa yhdistetään johtimella, jonka resistanssi on lähes nolla. Pariston oikosulkuvirta on $I_\\text{k} = E : R_\\text{s}$, ja suuri virta voi kuumentaa johtimen ja pariston vaarallisesti.",
+    "lessons": [
+      "fy6-8"
+    ],
+    "see_also": [
+      "sisäinen resistanssi",
+      "lähdejännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "akku",
+    "definition": "Ladattava sähkökemiallinen jännitelähde: purkautuessaan se muuttaa kemiallista energiaa sähköenergiaksi, ja ladattaessa laturi ajaa virran sen läpi toiseen suuntaan, jolloin sähköenergiaa muuttuu takaisin kemialliseksi energiaksi. Akku ei varastoi sähkövarausta, vaan on sähköisesti neutraali.",
+    "lessons": [
+      "fy6-9"
+    ],
+    "see_also": [
+      "paristo",
+      "akun kapasiteetti",
+      "latauspiiri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "paristo",
+    "definition": "Kertakäyttöinen sähkökemiallinen jännitelähde, joka muuttaa kemiallista energiaa sähköenergiaksi. Kun sen aineet ovat reagoineet, reaktiota ei voi turvallisesti kääntää, joten paristoa ei ladata.",
+    "lessons": [
+      "fy6-9"
+    ],
+    "see_also": [
+      "akku"
+    ],
+    "locked": false
+  },
+  {
+    "term": "latauspiiri",
+    "definition": "Virtapiiri, jossa laturi ajaa virran akun läpi plusnavalta miinusnavalle. Jännitelain mukaan latausvirta on $I = (U_\\text{lat} - E) : (R + R_\\text{s})$, joten akku latautuu vain, kun laturin jännite on suurempi kuin akun lähdejännite.",
+    "lessons": [
+      "fy6-9"
+    ],
+    "see_also": [
+      "akku",
+      "lähdejännite",
+      "sisäinen resistanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "akun kapasiteetti",
+    "definition": "Varaus, jonka täyteen ladattu akku pystyy siirtämään piirin läpi purkautuessaan tyhjäksi, $Q = It$. Yksikkönä käytetään ampeerituntia, $1\\,\\text{Ah} = 3600\\,\\text{C}$. Akun energia on nimellisjännite kertaa kapasiteetti, ja se ilmoitetaan wattitunteina.",
+    "lessons": [
+      "fy6-9"
+    ],
+    "see_also": [
+      "akku"
+    ],
+    "locked": false
+  },
+  {
+    "term": "potentiaaliero",
+    "definition": "Kahden kohdan potentiaalien erotus eli niiden välinen jännite, yksikkö voltti (V). Kun varaus q siirtyy kohdasta A kohtaan B, sähkökenttä tekee työn q(V_A − V_B).",
+    "lessons": [
+      "fy6-12"
+    ],
+    "see_also": [
+      "potentiaali",
+      "jännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "elektronivoltti",
+    "definition": "Energian yksikkö $\\text{eV}$: energia, jonka elektroni saa kiihtyessään $1\\,\\text{V}$:n jännitteen läpi. $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+    "lessons": [
+      "fy6-12",
+      "fy8-1"
+    ],
+    "see_also": [
+      "potentiaaliero",
+      "irrotustyö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasapotentiaalipinta",
+    "definition": "Pinta, jonka kaikissa kohdissa sähkökentän potentiaali on sama. Kenttäviivat ovat sitä vastaan kohtisuorassa, eikä kenttä tee työtä varaukseen, joka siirtyy pintaa pitkin.",
+    "lessons": [
+      "fy6-12"
+    ],
+    "see_also": [
+      "potentiaali"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkövaraus",
+    "definition": "Hiukkasten ja kappaleiden ominaisuus, jonka vuoksi ne vaikuttavat toisiinsa sähköisellä vuorovaikutuksella. Varausta on kahta lajia: samanmerkkiset varaukset hylkivät ja erimerkkiset vetävät toisiaan puoleensa. Yksikkö on coulombi $\\text{C}$. Eristetyn systeemin kokonaisvaraus säilyy.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "alkeisvaraus",
+      "Coulombin laki",
+      "sähkövirta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alkeisvaraus",
+    "definition": "Pienin vapaana esiintyvä varaus, $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Protonin varaus on $+e$ ja elektronin $-e$, ja kappaleen varaus on aina alkeisvarauksen monikerta, $Q = ne$.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "sähkövaraus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Coulombin laki",
+    "definition": "Kahden pistevarauksen välisen sähköisen voiman suuruus $F = k\\,\\tfrac{\\lvert q_1 q_2 \\rvert}{r^2}$, missä $k = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$. Voimat ovat varausten välisellä suoralla, yhtä suuret ja vastakkaissuuntaiset; samanmerkkiset varaukset hylkivät ja erimerkkiset vetävät toisiaan.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "sähkövaraus",
+      "pistevaraus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pistevaraus",
+    "definition": "Varattu kappale, jonka koko on pieni verrattuna tarkasteltaviin etäisyyksiin. Sen kenttäviivat ovat säteittäisiä: positiivisesta varauksesta ulospäin ja negatiiviseen sisäänpäin.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "Coulombin laki",
+      "sähkövaraus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "influenssi",
+    "definition": "Varauksen siirtyminen johteessa, kun varattu kappale tuodaan sen lähelle koskematta siihen: johteen lähipuolelle tulee vastakkaismerkkinen ja kaukaiselle puolelle samanmerkkinen varaus. Johteen kokonaisvaraus ei muutu, ja varattu kappale vetää johdetta puoleensa.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "sähkövaraus",
+      "johde"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kondensaattori",
+    "definition": "Virtapiirin komponentti, jossa on kaksi johdekappaletta, esimerkiksi metallilevyä, ja niiden välissä eriste. Ladattaessa levyjen varaukset ovat $+Q$ ja $-Q$, ja energia varastoituu levyjen väliseen sähkökenttään.",
+    "lessons": [
+      "fy6-13"
+    ],
+    "see_also": [
+      "kapasitanssi",
+      "eriste",
+      "kondensaattorin energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kapasitanssi",
+    "definition": "Kondensaattorin varauksen ja jännitteen suhde $C = \\tfrac{Q}{U}$, yksikkö faradi ($1\\,\\text{F} = 1\\,\\tfrac{\\text{C}}{\\text{V}}$). Se riippuu vain kondensaattorin rakenteesta; levykondensaattorille $C = \\tfrac{\\varepsilon_0 \\varepsilon_\\text{r} A}{d}$.",
+    "lessons": [
+      "fy6-13"
+    ],
+    "see_also": [
+      "kondensaattori"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kondensaattorin energia",
+    "definition": "Ladatun kondensaattorin sähkökenttään varastoitunut energia $W = \\tfrac{1}{2} Q U = \\tfrac{1}{2} C U^2$. Se on kondensaattorin $(Q, U)$-kuvaajan alle jäävän kolmion pinta-ala.",
+    "lessons": [
+      "fy6-13"
+    ],
+    "see_also": [
+      "kondensaattori",
+      "kapasitanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "läpilyöntilujuus",
+    "definition": "Suurin sähkökentän voimakkuus $E_\\text{max}$, jonka eriste kestää alkamatta johtaa. Kun kenttä ylittää sen, eristeen läpi purkautuu kipinä. Ilmalle se on noin $3\\,\\text{MV/m}$.",
+    "lessons": [
+      "fy6-13",
+      "fy6-15"
+    ],
+    "see_also": [
+      "eriste",
+      "kondensaattori"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkökenttä",
+    "definition": "Varauksen ympärilleen aiheuttama tilan ominaisuus: jokaiseen kentässä olevaan varaukseen kohdistuu sähköinen voima. Kenttä on olemassa, vaikka kohdassa ei olisi varausta, johon se vaikuttaisi.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökentän voimakkuus",
+      "kenttäviiva",
+      "homogeeninen sähkökenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkökentän voimakkuus",
+    "definition": "Pieneen testivaraukseen kohdistuva sähköinen voima jaettuna varauksella, E = F : q. Vektorisuure, jonka suunta on positiiviseen varaukseen kohdistuvan voiman suunta; yksikkö N/C = V/m. Symboli E on sama kuin lähdejännitteellä, mutta suureet ovat eri.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökenttä",
+      "testivaraus",
+      "homogeeninen sähkökenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "homogeeninen sähkökenttä",
+    "definition": "Sähkökenttä, jonka voimakkuus ja suunta ovat samat kaikkialla, esimerkiksi kahden laajan yhdensuuntaisen, vastakkaismerkkisesti varatun levyn välissä kaukana levyjen päistä. Sen voimakkuus on E = U : d.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökenttä",
+      "sähkökentän voimakkuus",
+      "kenttäviiva"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kenttäviiva",
+    "definition": "Sähkökenttää kuvaava viiva, jonka suunta kussakin kohdassa on kentän suunta. Kenttäviivat lähtevät positiivisista ja päättyvät negatiivisiin varauksiin, eivät leikkaa toisiaan, ja niiden tiheys kertoo kentän voimakkuuden. Kenttäviiva ei ole varauksen rata.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökenttä",
+      "homogeeninen sähkökenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "testivaraus",
+    "definition": "Pieni positiivinen varaus, jolla sähkökenttää tutkitaan. Se on niin pieni, ettei se muuta kenttää aiheuttavien varausten paikkoja.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökentän voimakkuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "emissiospektri",
+    "definition": "Spektri, jonka kuuma ohut kaasu lähettää: tummalla pohjalla erillisiä kirkkaita viivoja niillä aallonpituuksilla, joilla kaasun atomit lähettävät fotoneja siirtyessään ylemmästä energiatilasta alempaan.",
+    "lessons": [
+      "fy8-2"
+    ],
+    "see_also": [
+      "absorptiospektri",
+      "viivaspektri",
+      "energiatila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "absorptiospektri",
+    "definition": "Jatkuva spektri, jossa on tummia viivoja, kun valo on kulkenut kaasun läpi. Viivat ovat niillä aallonpituuksilla, joiden fotonien energia on täsmälleen kaasun atomien kahden energiatilan erotus; jokainen niistä on samalla aallonpituudella kuin jokin saman kaasun emissiospektrin viiva.",
+    "lessons": [
+      "fy8-2"
+    ],
+    "see_also": [
+      "emissiospektri",
+      "viivaspektri",
+      "energiatila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "viivaspektri",
+    "definition": "Spektri, joka koostuu erillisistä viivoista eikä yhtenäisestä värikaistasta. Kaasun atomien viivaspektri johtuu siitä, että atomin energiatilat ovat kvantittuneet; jokaisella alkuaineella on omat viivansa.",
+    "lessons": [
+      "fy8-2"
+    ],
+    "see_also": [
+      "emissiospektri",
+      "absorptiospektri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "energiatila",
+    "definition": "Atomin, molekyylin tai sen elektroniverhon sallittu tila, jolla on tietty energia. Alin energiatila on perustila ja ylemmät viritystiloja. Siirtymässä tilasta toiseen atomi lähettää tai absorboi fotonin, jonka energia on tilojen energioiden erotus.",
+    "lessons": [
+      "fy8-2"
+    ],
+    "see_also": [
+      "emissiospektri",
+      "absorptiospektri",
+      "fluoresenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "fluoresenssi",
+    "definition": "Ilmiö, jossa aine absorboi lyhytaaltoista valoa, esimerkiksi ultraviolettia, ja lähettää heti pidempiaaltoista valoa. Osa absorboidun fotonin energiasta muuttuu lämmöksi, joten lähetetyn fotonin energia on pienempi.",
+    "lessons": [
+      "fy8-2"
+    ],
+    "see_also": [
+      "energiatila",
+      "emissiospektri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "fotoni",
+    "definition": "Sähkömagneettisen säteilyn kvantti eli pienin energia-annos, jonka säteily voi luovuttaa tai vastaanottaa. Fotonin energia on $E = hf$, missä $f$ on säteilyn taajuus.",
+    "lessons": [
+      "fy8-1"
+    ],
+    "see_also": [
+      "kvantti",
+      "Planckin vakio",
+      "valosähköinen ilmiö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kvantti",
+    "definition": "Pienin jakamaton määrä, jonka suure voi saada tai jolla se voi muuttua. Kun energia on kvantittunut, sitä siirtyy vain kokonaisina kvantteina; valon energiakvantti on fotoni.",
+    "lessons": [
+      "fy8-1"
+    ],
+    "see_also": [
+      "fotoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "valosähköinen ilmiö",
+    "definition": "Ilmiö, jossa sähkömagneettinen säteily irrottaa elektroneja aineen, tavallisesti metallin, pinnasta. Elektroneja irtoaa vain, jos fotonin energia $hf$ on vähintään metallin irrotustyön $W$ suuruinen; valon intensiteetti määrää irtoavien elektronien määrän.",
+    "lessons": [
+      "fy8-1"
+    ],
+    "see_also": [
+      "fotoni",
+      "irrotustyö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "irrotustyö",
+    "definition": "Pienin energia $W$, joka tarvitaan elektronin irrottamiseen metallin pinnasta. Se on metallille ominainen, esimerkiksi natriumilla noin $2{,}3\\,\\text{eV}$ ja sinkillä noin $4{,}3\\,\\text{eV}$.",
+    "lessons": [
+      "fy8-1"
+    ],
+    "see_also": [
+      "valosähköinen ilmiö",
+      "elektronivoltti"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Planckin vakio",
+    "definition": "Luonnonvakio $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, joka yhdistää fotonin energian ja säteilyn taajuuden: $E = hf$.",
+    "lessons": [
+      "fy8-1"
+    ],
+    "see_also": [
+      "fotoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "perustila",
+    "definition": "Atomin alin energiatila. Vetyatomin perustila on $n = 1$, ja sen energia on $-13{,}6\\,\\text{eV}$. Ilman ulkoista energiaa atomi palaa aina perustilaan.",
+    "lessons": [
+      "fy8-3"
+    ],
+    "see_also": [
+      "viritystila",
+      "ionisaatioenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "viritystila",
+    "definition": "Atomin energiatila, jonka energia on suurempi kuin perustilan. Viritystilaan atomi pääsee absorboimalla fotonin tai törmäyksessä, ja siitä se palaa alemmalle tasolle lähettäen fotonin, jonka energia on tasojen erotus.",
+    "lessons": [
+      "fy8-3"
+    ],
+    "see_also": [
+      "perustila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ionisaatioenergia",
+    "definition": "Energia, joka tarvitaan elektronin irrottamiseen atomista. Vedyn ionisaatioenergia perustilasta on $13{,}6\\,\\text{eV}$; viritystilasta $n$ se on $\\tfrac{13{,}6\\,\\text{eV}}{n^2}$.",
+    "lessons": [
+      "fy8-3"
+    ],
+    "see_also": [
+      "perustila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Bohrin malli",
+    "definition": "Niels Bohrin vuonna 1913 esittämä vetyatomin malli: elektroni kiertää ydintä vain sallituilla ympyräradoilla säteilemättä ja lähettää tai absorboi fotonin siirtyessään radalta toiselle. Malli antaa vedyn energiatasot oikein, mutta se ei toimi monen elektronin atomeille, ja aaltomekaaninen malli on korvannut sen radat.",
+    "lessons": [
+      "fy8-3"
+    ],
+    "see_also": [
+      "perustila",
+      "viritystila"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aalto-hiukkasdualismi",
+    "definition": "Fotonilla, elektronilla ja muilla kvanttiolioilla on sekä aalto- että hiukkasominaisuuksia. Kulkiessaan kvanttiolio käyttäytyy aallon tavoin, ja aalto kertoo havaitsemisen todennäköisyyden; havaittaessa se rekisteröidään yhdessä kohdassa kuin hiukkanen. Koejärjestely ratkaisee, kumpi ominaisuus näkyy.",
+    "lessons": [
+      "fy8-4"
+    ],
+    "see_also": [
+      "kaksoisrakokoe",
+      "fotoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Comptonin ilmiö",
+    "definition": "Röntgen- tai gammafotoni siroaa lähes vapaasta elektronista ja luovuttaa sille osan energiastaan ja liikemäärästään, joten sironneen fotonin aallonpituus on pidempi kuin tulevan. Ilmiö osoittaa, että fotonilla on liikemäärä $p = \\tfrac{h}{\\lambda}$.",
+    "lessons": [
+      "fy8-4"
+    ],
+    "see_also": [
+      "fotoni",
+      "aalto-hiukkasdualismi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kaksoisrakokoe",
+    "definition": "Koe, jossa valo tai hiukkassuihku kulkee kahden kapean, lähekkäisen raon läpi varjostimelle. Varjostimelle syntyy interferenssin raitakuvio. Kun kvantit lähetetään yksi kerrallaan, kuvio kertyy yksittäisistä osumista.",
+    "lessons": [
+      "fy8-4"
+    ],
+    "see_also": [
+      "aalto-hiukkasdualismi",
+      "interferenssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aaltomekaaninen atomimalli",
+    "definition": "Atomimalli, jossa elektronin tilaa kuvaa ytimen ympärille levittäytyvä seisova aalto eikä rata. Sallittuja ovat vain tietyt aallon muodot, joten elektronin energia on kvantittunut, ja aalto kertoo, kuinka todennäköisesti elektroni havaitaan kussakin kohdassa.",
+    "lessons": [
+      "fy8-5"
+    ],
+    "see_also": [
+      "orbitaali",
+      "todennäköisyystulkinta",
+      "seisova aalto"
+    ],
+    "locked": false
+  },
+  {
+    "term": "orbitaali",
+    "definition": "Atomin elektronin seisovan aallon kuvaama tila, esimerkiksi 1s tai 2p. Kuvissa orbitaali piirretään alueena, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä, tavallisesti 90 %:n todennäköisyydellä. Orbitaalilla voi olla enintään kaksi elektronia.",
+    "lessons": [
+      "fy8-5"
+    ],
+    "see_also": [
+      "aaltomekaaninen atomimalli",
+      "todennäköisyystulkinta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "todennäköisyystulkinta",
+    "definition": "Aaltomallin tulkinta, jonka mukaan aalto ei kerro hiukkasen paikkaa vaan sen, kuinka todennäköisesti hiukkanen havaitaan kussakin kohdassa. Yksittäinen mittaus antaa yhden satunnaisen tuloksen, ja jakauma näkyy vasta monesta mittauksesta.",
+    "lessons": [
+      "fy8-5"
+    ],
+    "see_also": [
+      "aaltomekaaninen atomimalli",
+      "orbitaali"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ilmanvastus",
+    "definition": "Väliaineen vastus ilmassa: voima, jolla ilma vastustaa siinä liikkuvan kappaleen liikettä. Se kasvaa, kun nopeus kasvaa. Merkintä $\\overline{F}_\\text{v}$.",
+    "lessons": [
+      "fy4-14"
+    ],
+    "see_also": [
+      "väliaineen vastus",
+      "rajanopeus"
+    ]
+  },
+  {
+    "term": "pinta-ala",
+    "definition": "Pinnan koko. Pinta-alan SI-yksikkö on neliömetri, m². Paine on voima pinta-alaa kohti, joten sama voima pienelle pinta-alalle antaa suuren paineen.",
+    "lessons": [
+      "fy3-4"
+    ],
+    "see_also": [
+      "paine"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sulake",
+    "definition": "Virtapiirin suojalaite, joka katkaisee virran, kun virta on liian suuri pitkään tai kun syntyy oikosulku. Sulake suojaa johtoja ylikuumenemiselta eikä huomaa ihmisen kautta kulkevaa virtaa; ihmistä se suojaa vain yhdessä suojamaadoituksen kanssa; kodin ryhmäjohdoissa se on tavallisesti $10\\,\\text{A}$ tai $16\\,\\text{A}$. Sulakkeena toimii sulava lanka (tulppasulake) tai johdonsuojakatkaisija.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "vikavirtasuoja",
+      "sähköteho"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vikavirtasuoja",
+    "definition": "Suojalaite, joka vertaa laitteeseen menevää ja sieltä palaavaa virtaa. Jos niiden ero eli vikavirta ylittää laukaisuvirran, tavallisesti $30\\,\\text{mA}$, suoja katkaisee virran sekunnin murto-osassa. Se pienentää sähköiskun vaaraa, kun virta kulkee ihmisen kautta maahan.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "sulake",
+      "maadoitus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suojausluokitus",
+    "definition": "Sähkölaitteiden jako suojausluokkiin sen mukaan, miten laite suojaa käyttäjää sähköiskulta. Luokan I laitteen metallirunko on suojamaadoitettu, luokan II laitteessa on kaksinkertainen tai vahvistettu eristys, ja luokan III laite toimii pienellä suojajännitteellä.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "maadoitus",
+      "eriste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "maadoitus",
+    "definition": "Laitteen johtavan rungon tai muun osan yhdistäminen maahan suojamaadoitusjohtimella, joka on uusissa asennuksissa keltavihreä. Jos vaihejohdin koskettaa vian takia runkoa, vikavirta kulkee maadoitusjohdinta pitkin ja sulake tai vikavirtasuoja katkaisee virran.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "suojausluokitus",
+      "vikavirtasuoja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pääsulake",
+    "definition": "Sähkökeskuksen sulake, joka on talon jokaisessa vaihejohtimessa ennen ryhmiä, esimerkiksi $3 \\cdot 25\\,\\text{A}$. Se rajoittaa koko talon virtaa: saman vaihejohtimen kautta kulkevat kaikkien laitteiden virrat lasketaan yhteen, eikä summa saa pitkään ylittää pääsulakkeen kokoa.",
+    "lessons": [
+      "fy6-16"
+    ],
+    "see_also": [
+      "sulake",
+      "kolmivaihesähkö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kolmivaihesähkö",
+    "definition": "Sähköliittymä, jossa on kolme vaihejohdinta ja nollajohdin. Kunkin vaihejohtimen ja nollajohtimen välinen jännite on Suomessa $230\\,\\text{V}$. Kun laite ottaa jokaisesta vaihejohtimesta saman virran $I$, sen teho on $P = 3UI$.",
+    "lessons": [
+      "fy6-16"
+    ],
+    "see_also": [
+      "pääsulake",
+      "sähköteho"
+    ],
+    "locked": false
+  },
+  {
+    "term": "puolijohde",
+    "definition": "Aine, kuten pii, joka johtaa sähköä huonommin kuin metallit mutta paremmin kuin eristeet. Sen johtavuutta voidaan muuttaa lisäämällä siihen pieniä määriä muita aineita, ja siitä valmistetaan diodit, LEDit, aurinkokennot ja transistorit.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "diodi",
+      "aurinkokenno"
+    ],
+    "locked": false
+  },
+  {
+    "term": "diodi",
+    "definition": "Puolijohdekomponentti, joka päästää sähkövirran läpi vain yhteen suuntaan. Piirrosmerkin kolmio osoittaa suuntaan, johon virta pääsee; kolmion puoleinen napa on anodi ja poikkiviivan puoleinen katodi.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "päästösuunta",
+      "estosuunta",
+      "kynnysjännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "LED",
+    "definition": "Hohtodiodi eli diodi, joka lähettää valoa, kun virta kulkee sen läpi päästösuuntaan. Valon väri riippuu puolijohdemateriaalista; LEDin kanssa kytketään sarjaan etuvastus, joka rajoittaa virran.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "diodi",
+      "etuvastus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "päästösuunta",
+    "definition": "Diodin kytkentä, jossa sen anodi on lähteen plusnavan puolella. Kun diodin jännite ylittää kynnysjännitteen, virta kulkee diodin läpi.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "estosuunta",
+      "kynnysjännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "estosuunta",
+    "definition": "Diodin kytkentä, jossa sen katodi on lähteen plusnavan puolella. Virtaa ei käytännössä kulje, ja koko lähteen jännite on diodin yli.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "päästösuunta",
+      "diodi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kynnysjännite",
+    "definition": "Diodin tai LEDin jännite päästösuunnassa, jonka jälkeen virta alkaa kasvaa jyrkästi ja LED alkaa säteillä. Piidiodilla se on noin $0{,}6$–$0{,}7\\,\\text{V}$ ja LEDeillä värin mukaan noin $1{,}8$–$3{,}3\\,\\text{V}$. LEDin kynnysjännitteellä elektronin jännitelähteeltä saama energia on likimain yhden fotonin energia, $eU \\approx hf$. Se määritetään jatkamalla virta-jännitekuvaajan suora osa jänniteakselille, jolla virta on nolla.",
+    "lessons": [
+      "fy6-14",
+      "fy8-6"
+    ],
+    "see_also": [
+      "diodi",
+      "ominaiskäyrä",
+      "valodiodi",
+      "Planckin vakio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "etuvastus",
+    "definition": "LEDin tai diodin kanssa sarjaan kytketty vastus, joka rajoittaa virran. Sen resistanssi on $R = \\tfrac{U - U_\\text{D}}{I}$, missä $U$ on lähteen ja $U_\\text{D}$ LEDin jännite ja $I$ virta.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "LED",
+      "Ohmin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aurinkokenno",
+    "definition": "Puolijohdekomponentti, joka tuottaa valossa tasavirtaa ja toimii tasajännitelähteenä. Sen oikosulkuvirta on suoraan verrannollinen valon voimakkuuteen, ja aurinkopaneelissa on monta kennoa sarjassa.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "tyhjäkäyntijännite",
+      "maksimitehopiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tyhjäkäyntijännite",
+    "definition": "Jännitelähteen, kuten aurinkokennon, napojen välinen jännite, kun siitä ei oteta virtaa. Aurinkokennolla se muuttuu valon voimakkuuden mukana vain vähän.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "aurinkokenno",
+      "lähdejännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "maksimitehopiste",
+    "definition": "Aurinkokennon $(U, I)$-käyrän piste, jossa sen antama teho $P = UI$ on suurin. Se on käyrän polvessa oikosulun ja tyhjäkäynnin välissä, joissa kummassakin teho on nolla.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "aurinkokenno",
+      "tyhjäkäyntijännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "nukleoni",
+    "definition": "Atomiytimen rakenneosa eli protoni tai neutroni. Ytimen nukleonien määrä on sen massaluku $A$.",
+    "lessons": [
+      "fy8-8"
+    ],
+    "see_also": [
+      "atomiydin",
+      "isotooppi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "isotooppi",
+    "definition": "Saman alkuaineen ydinlaji, jonka ytimessä on yhtä monta protonia mutta eri määrä neutroneja kuin muissa saman alkuaineen isotoopeissa, esimerkiksi hiili-12 ja hiili-14.",
+    "lessons": [
+      "fy8-8"
+    ],
+    "see_also": [
+      "nukleoni",
+      "atomiydin"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alfahajoaminen",
+    "definition": "Radioaktiivinen hajoaminen, jossa ytimestä lähtee alfahiukkanen eli heliumydin ${}^{4}_{2}\\text{He}$. Ytimen järjestysluku pienenee kahdella ja massaluku neljällä.",
+    "lessons": [
+      "fy8-8"
+    ],
+    "see_also": [
+      "beetahajoaminen",
+      "gammasäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "gammasäteily",
+    "definition": "Sähkömagneettinen säteily, jonka fotonin viritystilassa oleva atomiydin lähettää siirtyessään alemmalle energiatasolle. Fotonin energia on ytimen tasojen erotus, tyypillisesti kiloelektronivoltteja tai megaelektronivoltteja; ytimen protoni- ja neutroniluku eivät muutu.",
+    "lessons": [
+      "fy8-8"
+    ],
+    "see_also": [
+      "alfahajoaminen",
+      "beetahajoaminen"
+    ],
+    "locked": false
+  },
+  {
+    "term": "laser",
+    "definition": "Valonlähde, jossa valo vahvistuu stimuloidun emission avulla. Pumppaus tuottaa laseraineeseen populaatioinversion, ja peilien välissä edestakaisin kulkeva valo monistuu. Laservalo on yksiväristä, suuntautunutta ja koherenttia. Nimi tulee sanoista light amplification by stimulated emission of radiation.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [
+      "stimuloitu emissio",
+      "populaatioinversio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "stimuloitu emissio",
+    "definition": "Tapahtuma, jossa viritettyyn atomiin osuva fotoni, jonka energia on tasojen erotus $E_2 - E_1$, saa atomin putoamaan alemmalle tasolle. Saapuva fotoni ei absorboidu, ja atomista lähtee toinen fotoni, jolla on sama energia, suunta ja vaihe.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [
+      "laser",
+      "populaatioinversio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "populaatioinversio",
+    "definition": "Tila, jossa ylemmällä energiatasolla on enemmän atomeja kuin alemmalla, $N_2 > N_1$. Vain silloin valo vahvistuu aineessa stimuloidun emission avulla. Inversio tehdään pumppaamalla aineeseen, jossa on ainakin kolme energiatasoa.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [
+      "laser",
+      "stimuloitu emissio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kvanttirakenne",
+    "definition": "Puolijohteen nanometrien kokoinen rakenne, jossa elektronit on suljettu niin pieneen tilaan, että niiden sallitut energiat riippuvat rakenteen koosta. Esimerkkejä ovat ohut kerros eli kvanttikaivo ja kvanttipiste.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [
+      "kvanttipiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kvanttipiste",
+    "definition": "Muutaman nanometrin kokoinen puolijohdekide, jossa elektronien energiat ovat kvantittuneet koon mukaan. Mitä pienempi piste, sitä suurempi energiarako ja sitä lyhyempi lähetetyn valon aallonpituus.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [
+      "kvanttirakenne"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tunneloituminen",
+    "definition": "Kvanttifysiikan ilmiö, jossa hiukkanen, esimerkiksi elektroni, voi löytyä ohuen esteen takaa, vaikka sen energia ei riitä esteen ylittämiseen. Todennäköisyys pienenee jyrkästi esteen paksuuntuessa, joten ilmiö on merkittävä vain nanometrien luokan esteillä.",
+    "lessons": [
+      "fy8-7"
+    ],
+    "see_also": [],
+    "locked": false
+  },
+  {
+    "term": "valodiodi",
+    "definition": "Puolijohteesta tehty diodi eli LED, joka säteilee valoa, kun sähkövirta kulkee sen läpi päästösuuntaan. Elektroni putoaa johtavuusvyöstä valenssivyön aukkoon ja synnyttää yhden fotonin, jonka energia on likimain puolijohteen energia-aukon suuruinen; siksi LEDin väri riippuu sen materiaalista. LEDin spektri on kapea, tyypillisesti 20–40 nm leveä kaista.",
+    "lessons": [
+      "fy8-6"
+    ],
+    "see_also": [
+      "kynnysjännite",
+      "laserdiodi",
+      "energia-aukko",
+      "fotoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "laserdiodi",
+    "definition": "LEDin kaltainen puolijohdediodi, jossa valo vahvistuu, joten se säteilee kapean säteen ja hyvin kapean spektriviivan, leveydeltään noin 1 nm. Laserdiodin säteeseen ei saa katsoa.",
+    "lessons": [
+      "fy8-6"
+    ],
+    "see_also": [
+      "valodiodi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "energia-aukko",
+    "definition": "Puolijohteen valenssivyön ja johtavuusvyön välinen energiaväli, jolla elektronilla ei voi olla tilaa. Kun elektroni putoaa johtavuusvyöstä valenssivyön aukkoon, vapautuva energia on likimain energia-aukon suuruinen.",
+    "lessons": [
+      "fy8-6"
+    ],
+    "see_also": [
+      "valodiodi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hajoamislaki",
+    "definition": "Laki, jonka mukaan radioaktiivisen näytteen hajoamattomien ytimien määrä pienenee eksponentiaalisesti: $N = N_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}} = N_0 e^{-\\lambda t}$. Se kuvaa suuren ydinjoukon käyttäytymistä; yksittäisen ytimen hajoamishetki on satunnainen.",
+    "lessons": [
+      "fy8-9"
+    ],
+    "see_also": [
+      "puoliintumisaika",
+      "hajoamisvakio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "puoliintumisaika",
+    "definition": "Aika $T_{1/2}$, jonka kuluessa puolet radioaktiivisen näytteen hajoamattomista ytimistä hajoaa. Se on isotoopin ominaisuus eikä riipu näytteen koosta.",
+    "lessons": [
+      "fy8-9"
+    ],
+    "see_also": [
+      "hajoamislaki",
+      "hajoamisvakio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aktiivisuus",
+    "definition": "Radioaktiivisessa näytteessä tapahtuvien hajoamisten määrä aikayksikössä, $A = \\lambda N$. Yksikkö on becquerel: $1\\,\\text{Bq}$ on yksi hajoaminen sekunnissa.",
+    "lessons": [
+      "fy8-9"
+    ],
+    "see_also": [
+      "hajoamisvakio",
+      "hajoamislaki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "hajoamisvakio",
+    "definition": "Radioaktiivisen ytimen hajoamistodennäköisyys aikayksikköä kohti, $\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$; yksikkö $\\tfrac{1}{\\text{s}}$. Se on saman isotoopin kaikille ytimille sama eikä riipu ytimen iästä.",
+    "lessons": [
+      "fy8-9"
+    ],
+    "see_also": [
+      "puoliintumisaika",
+      "aktiivisuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "atomimassayksikkö",
+    "definition": "Atomien ja ytimien massan yksikkö $\\text{u}$: tasan $\\tfrac{1}{12}$ hiili-12-atomin massasta, $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$. Energiana $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$.",
+    "lessons": [
+      "fy8-10"
+    ],
+    "see_also": [
+      "massavaje",
+      "nukleoni"
+    ],
+    "locked": false
+  },
+  {
+    "term": "massavaje",
+    "definition": "Ero ytimen erillisten nukleonien massojen summan ja ytimen massan välillä. Atomimassoista $\\Delta m = Z\\,m_\\text{H} + N\\,m_\\text{n} - m_\\text{atomi}$. Massavajetta vastaa ytimen sidosenergia $E_\\text{B} = \\Delta m\\,c^2$.",
+    "lessons": [
+      "fy8-10"
+    ],
+    "see_also": [
+      "sidosenergia",
+      "atomimassayksikkö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sidosenergia",
+    "definition": "Energia $E_\\text{B} = \\Delta m\\,c^2$, joka tarvitaan ytimen hajottamiseen erillisiksi protoneiksi ja neutroneiksi; sama energia vapautuu, kun ydin muodostuu. Sidosenergia nukleonia kohti $\\tfrac{E_\\text{B}}{A}$ on suurin, noin $8{,}8\\,\\text{MeV}$, raudan ja nikkelin ytimillä.",
+    "lessons": [
+      "fy8-10"
+    ],
+    "see_also": [
+      "massavaje",
+      "ydinreaktio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ydinreaktio",
+    "definition": "Tapahtuma, jossa atomiytimet muuttuvat: ydin hajoaa tai siihen osuu toinen ydin tai hiukkanen. Massaluku ja varausluku säilyvät, mutta massa muuttuu; reaktioenergia on $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$.",
+    "lessons": [
+      "fy8-10"
+    ],
+    "see_also": [
+      "sidosenergia",
+      "massavaje"
+    ],
+    "locked": false
+  },
+  {
+    "term": "absorboitunut annos",
+    "definition": "Aineen tai kudoksen absorboima ionisoivan säteilyn energia jaettuna sen massalla, $D = \\tfrac{E}{m}$. Yksikkö on gray: $1\\,\\text{Gy} = 1\\,\\tfrac{\\text{J}}{\\text{kg}}$.",
+    "lessons": [
+      "fy8-13"
+    ],
+    "see_also": [
+      "efektiivinen annos",
+      "ionisoiva säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "efektiivinen annos",
+    "definition": "Säteilyannos, jossa absorboitunut annos on painotettu säteilylajin ja säteilytettyjen kudosten herkkyyden mukaan. Se kuvaa pienten annosten pitkän aikavälin syöpäriskiä koko keholle. Yksikkö on sievert $\\text{Sv}$.",
+    "lessons": [
+      "fy8-13"
+    ],
+    "see_also": [
+      "absorboitunut annos",
+      "taustasäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "taustasäteily",
+    "definition": "Luonnon säteilylähteistä ympäristössä jatkuvasti tuleva säteily: maaperän, kallion ja rakennusmateriaalien radioaktiiviset aineet, avaruudesta tuleva säteily ja ilman radon. Säteilymittari laskee sitä aina myös mitattavan lähteen lisäksi.",
+    "lessons": [
+      "fy8-13"
+    ],
+    "see_also": [
+      "radon",
+      "efektiivinen annos"
+    ],
+    "locked": false
+  },
+  {
+    "term": "radon",
+    "definition": "Radioaktiivinen jalokaasu, jonka isotooppi radon-222 syntyy maaperän uraanin hajoamissarjassa. Sen hajoamistuotteet lähettävät alfasäteilyä keuhkoihin, ja sisäilman radon on suomalaisten suurin säteilyannoksen lähde.",
+    "lessons": [
+      "fy8-13"
+    ],
+    "see_also": [
+      "taustasäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "annosnopeus",
+    "definition": "Säteilyannos aikayksikössä, esimerkiksi mikrosievertiä tunnissa ($\\mu\\text{Sv/h}$). Vakioannosnopeudella ajassa $t$ kertyy annos $H = \\dot{H} t$.",
+    "lessons": [
+      "fy8-13"
+    ],
+    "see_also": [
+      "efektiivinen annos",
+      "puoliintumispaksuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "fissio",
+    "definition": "Ydinreaktio, jossa raskas ydin, kuten uraani-235, jakautuu kahdeksi keskiraskaaksi ytimeksi ja vapauttaa yleensä kaksi tai kolme neutronia. Tuotteiden sidosenergia nukleonia kohti on suurempi, joten massa pienenee ja energiaa vapautuu, uraani-235:llä keskimäärin noin $200\\,\\text{MeV}$ fissiota kohti.",
+    "lessons": [
+      "fy8-11"
+    ],
+    "see_also": [
+      "ketjureaktio",
+      "fuusio",
+      "sidosenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "fuusio",
+    "definition": "Ydinreaktio, jossa kaksi kevyttä ydintä yhtyy raskaammaksi ytimeksi, esimerkiksi deuterium ja tritium heliumiksi. Tuotteen sidosenergia nukleonia kohti on suurempi, joten energiaa vapautuu. Fuusio vaatii hyvin korkean lämpötilan, koska ytimet hylkivät toisiaan.",
+    "lessons": [
+      "fy8-11"
+    ],
+    "see_also": [
+      "fissio",
+      "sidosenergia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ketjureaktio",
+    "definition": "Reaktio, jossa fissiossa vapautuvat neutronit aiheuttavat uusia fissioita. Ketjun etenemistä kuvaa kasvukerroin $k$, se kuinka monta seuraavan sukupolven neutronia yksi neutroni keskimäärin tuottaa: kun $k < 1$, ketju sammuu, kun $k = 1$, se pysyy tasaisena, ja kun $k > 1$, se kasvaa.",
+    "lessons": [
+      "fy8-11"
+    ],
+    "see_also": [
+      "fissio",
+      "ydinreaktori"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ydinreaktori",
+    "definition": "Laite, jossa fission ketjureaktio pidetään hallitusti tasaisena eli kasvukerroin arvossa $k = 1$. Hidastin hidastaa neutroneja, säätösauvat absorboivat niitä, ja jäähdyte kuljettaa vapautuvan lämmön pois.",
+    "lessons": [
+      "fy8-11"
+    ],
+    "see_also": [
+      "ketjureaktio",
+      "fissio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ionisoiva säteily",
+    "definition": "Säteily, jonka yksittäinen hiukkanen tai fotoni pystyy irrottamaan elektronin atomista tai molekyylistä. Esimerkiksi alfa-, beeta-, gamma-, röntgen- ja neutronisäteily ovat ionisoivia; näkyvä valo ei ole.",
+    "lessons": [
+      "fy8-12"
+    ],
+    "see_also": [
+      "ionisaatio",
+      "läpäisykyky"
+    ],
+    "locked": false
+  },
+  {
+    "term": "ionisaatio",
+    "definition": "Tapahtuma, jossa atomista tai molekyylistä irtoaa elektroni, jolloin syntyy ionipari: positiivinen ioni ja vapaa elektroni. Ilmassa ionipari vie keskimäärin noin $34\\,\\text{eV}$ säteilyn energiaa.",
+    "lessons": [
+      "fy8-12"
+    ],
+    "see_also": [
+      "ionisoiva säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "läpäisykyky",
+    "definition": "Säteilyn kyky läpäistä ainetta. Alfasäteily pysähtyy paperiarkkiin, beetasäteily muutamaan millimetriin alumiinia, ja gammasäteily vaimenee vähitellen esimerkiksi lyijyssä.",
+    "lessons": [
+      "fy8-12"
+    ],
+    "see_also": [
+      "ionisoiva säteily",
+      "puoliintumispaksuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "puoliintumispaksuus",
+    "definition": "Ainekerroksen paksuus $d_{1/2}$, joka päästää läpi puolet gamma- tai röntgensäteilystä: $I = I_0 \\left(\\tfrac{1}{2}\\right)^{d/d_{1/2}}$. Se riippuu aineesta ja säteilyn energiasta.",
+    "lessons": [
+      "fy8-12",
+      "fy8-13"
+    ],
+    "see_also": [
+      "läpäisykyky"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Geiger-Müller-putki",
+    "definition": "Säteilyn ilmaisin: kaasulla täytetty metalliputki, jonka keskilangan ja seinän välillä on jännite. Ionisoiva hiukkanen synnyttää kaasuun elektronivyöryn, joka näkyy pulssina; putki laskee tapahtumia mutta ei erota säteilylajeja.",
+    "lessons": [
+      "fy8-12"
+    ],
+    "see_also": [
+      "ionisoiva säteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "standardimalli",
+    "definition": "Hiukkasfysiikan teoria, joka kuvaa aineen perushiukkaset (kuusi kvarkkia ja kuusi leptonia), niiden välittäjähiukkaset ja Higgsin bosonin sekä vahvan, sähkömagneettisen ja heikon vuorovaikutuksen. Gravitaatio ei kuulu standardimalliin.",
+    "lessons": [
+      "fy8-15"
+    ],
+    "see_also": [
+      "kvarkki",
+      "leptoni",
+      "välittäjähiukkanen",
+      "perusvuorovaikutus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "leptoni",
+    "definition": "Perushiukkanen, johon vahva vuorovaikutus ei vaikuta: elektroni, myoni ja tau, joiden varaus on $-e$, sekä niiden kolme sähköisesti neutraalia neutriinoa. Leptonin leptoniluku on $+1$ ja antileptonin $-1$.",
+    "lessons": [
+      "fy8-15"
+    ],
+    "see_also": [
+      "standardimalli",
+      "kvarkki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "välittäjähiukkanen",
+    "definition": "Hiukkanen, jonka välityksellä perusvuorovaikutus vaikuttaa hiukkasten välillä: fotoni välittää sähkömagneettisen, gluoni vahvan ja $W$- ja $Z$-bosonit heikon vuorovaikutuksen. Gravitaation välittäjä gravitoni on hypoteettinen.",
+    "lessons": [
+      "fy8-15"
+    ],
+    "see_also": [
+      "perusvuorovaikutus",
+      "fotoni",
+      "standardimalli"
+    ],
+    "locked": false
+  },
+  {
+    "term": "punasiirtymä",
+    "definition": "Spektriviivojen siirtymä pidempiin aallonpituuksiin: $z = \\tfrac{\\Delta\\lambda}{\\lambda_0}$, missä $\\lambda_0$ on viivan aallonpituus laboratoriossa. Kaukaisten galaksien punasiirtymä syntyy, kun avaruuden laajeneminen venyttää valon aallonpituutta; pienellä punasiirtymällä etääntymisnopeus on $v = cz$.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "alkuräjähdys",
+      "absorptiospektri"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alkuräjähdys",
+    "definition": "Maailmankaikkeuden laajenemisen alku noin 13,8 miljardia vuotta sitten hyvin kuumasta ja tiheästä tilasta. Se ei ollut räjähdys tyhjään avaruuteen jostakin pisteestä, vaan avaruus itse alkoi laajeta kaikkialla.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "punasiirtymä",
+      "kosminen taustasäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kosminen taustasäteily",
+    "definition": "Joka suunnasta lähes tasaisesti tuleva mikroaaltosäteily, joka vapautui noin 380 000 vuotta alkuräjähdyksen jälkeen, kun atomit syntyivät ja maailmankaikkeus muuttui läpinäkyväksi. Laajeneminen on venyttänyt sen aallonpituudet noin 1100-kertaisiksi; sen lämpötila on nyt $2{,}725\\,\\text{K}$.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "alkuräjähdys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pimeä aine",
+    "definition": "Näkymätön aine, joka ei säteile eikä absorboi valoa mutta vaikuttaa painovoimallaan: se selittää esimerkiksi, miksi galaksien laitamien tähdet kiertävät niin nopeasti. Sitä on noin viisi kertaa niin paljon kuin tavallista ainetta, eikä tiedetä, mistä se koostuu.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "pimeä energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pimeä energia",
+    "definition": "Tuntematon tekijä, joka kiihdyttää maailmankaikkeuden laajenemista. Kiihtyminen havaittiin kaukaisten supernovien mittauksista vuonna 1998; pimeää energiaa on noin $69\\,\\%$ maailmankaikkeuden energiasisällöstä.",
+    "lessons": [
+      "fy8-16"
+    ],
+    "see_also": [
+      "pimeä aine",
+      "alkuräjähdys"
+    ],
+    "locked": false
+  },
+  {
+    "term": "röntgensäteily",
+    "definition": "Suurienerginen fotonisäteily, joka syntyy, kun nopeat elektronit jarruttavat aineessa (jarrutussäteily) tai kun ne irrottavat elektronin atomin sisimmältä kuorelta ja ulomman kuoren elektroni siirtyy sen paikalle (karakteristinen röntgensäteily), esimerkiksi röntgenputken anodissa. Se on ionisoivaa ja vaimenee aineessa kuten gammasäteily; kuvauksessa fotonien energia on tyypillisesti kymmeniä kiloelektronivoltteja.",
+    "lessons": [
+      "fy8-14"
+    ],
+    "see_also": [
+      "puoliintumispaksuus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "merkkiaine",
+    "definition": "Radioaktiivinen nuklidi, joka on liitetty elimistön käyttämään yhdisteeseen, jotta se kertyy tutkittavaan elimeen. Kehon ulkopuolinen ilmaisin havaitsee sen säteilyn, joten kuva näyttää elimen toiminnan.",
+    "lessons": [
+      "fy8-14"
+    ],
+    "see_also": [
+      "röntgensäteily"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sädehoito",
+    "definition": "Syövän hoito ionisoivalla säteilyllä, jonka suuri annos tappaa kasvaimen solut. Säteily annetaan yleensä monesta suunnasta ja moneen kertaan jaettuna, jotta terve kudos saa mahdollisimman pienen annoksen.",
+    "lessons": [
+      "fy8-14"
+    ],
+    "see_also": [
+      "absorboitunut annos"
     ],
     "locked": false
   }

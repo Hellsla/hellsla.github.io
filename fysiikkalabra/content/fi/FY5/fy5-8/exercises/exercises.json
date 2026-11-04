@@ -1,0 +1,107 @@
+{
+  "level1": [
+    {
+      "id": "fy5-8-L1-01",
+      "level": 1,
+      "text": "Kuntosalin laitteen kahva on kiinni palautusjousessa, jonka jousivakio on $250\\,\\text{N/m}$. Kuntoilija vetää kahvaa niin, että jousi venyy $0{,}12\\,\\text{m}$, ja pitää kahvaa paikallaan. Kuinka suuri on jousen voima kahvaan?",
+      "answer": 30.0,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L1-02",
+      "level": 1,
+      "text": "Trampoliinin reunan jousi venyy $0{,}050\\,\\text{m}$, kun sitä venyttää $450\\,\\text{N}$:n voima. Kuinka suuri on jousen jousivakio?",
+      "answer": 9000.0,
+      "unit": "N/m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L1-03",
+      "level": 1,
+      "text": "Kuntoilija venyttää käsijousta, jonka jousivakio on $180\\,\\text{N/m}$, niin että jousi venyy $0{,}15\\,\\text{m}$. Kuinka paljon jousen potentiaalienergiaa jouseen varastoituu?",
+      "answer": 2.025,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L1-04",
+      "level": 1,
+      "text": "Kuvaajassa on jousta venyttävä voima $F_\\text{v}$ jousen venymän $x$ funktiona. Lue kuvaajasta kaksi suoran pistettä. Kuinka suuri on jousen jousivakio?",
+      "figure": "fy5-8/ex-suora",
+      "answer": 60.0,
+      "unit": "N/m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L1-05",
+      "level": 1,
+      "text": "Kalastajan jousivaa'an jousen jousivakio on $40\\,\\text{N/m}$. Kuinka paljon jousi venyy, kun sitä venyttää $6{,}0\\,\\text{N}$:n voima? Anna vastaus metreinä.",
+      "answer": 0.15,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-8-L2-01",
+      "level": 2,
+      "text": "Jousta venytetään $8{,}0\\,\\text{cm}$, ja voimamittari näyttää silloin $6{,}0\\,\\text{N}$. Kuinka paljon jousen potentiaalienergiaa jouseen on varastoitunut?",
+      "answer": 0.24,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L2-02",
+      "level": 2,
+      "text": "Lelupyssyn jousi puristetaan $6{,}0\\,\\text{cm}$, jolloin siihen varastoituu jousen potentiaalienergiaa $0{,}90\\,\\text{J}$. Kuinka suuri on jousen jousivakio?",
+      "answer": 500.0,
+      "unit": "N/m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L2-03",
+      "level": 2,
+      "text": "Jousi, jonka jousivakio on $150\\,\\text{N/m}$, on venytetty $3{,}0\\,\\text{cm}$. Venymä kasvatetaan $9{,}0\\,\\text{cm}$:iin. Kuinka paljon jousen potentiaalienergia kasvaa?",
+      "answer": 0.54,
+      "unit": "J",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-8-L2-04",
+      "level": 2,
+      "text": "Kahden jousen A ja B jousta venyttävät voimat on esitetty venymän funktiona samassa kuvaajassa. Määritä ensin jousen A jousivakio kuvaajasta. Jousta A venytetään $0{,}080\\,\\text{m}$. Kuinka paljon jousen potentiaalienergiaa siihen varastoituu?",
+      "figure": "fy5-8/ex-kaksi",
+      "answer": 0.192,
+      "unit": "J",
+      "tolerance": 0.03
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-8-L3-01",
+      "level": 3,
+      "text": "Henkilöauto lepää neljän samanlaisen jousen varassa. Kun autoon nousee matkustajia, joiden yhteismassa on $300\\,\\text{kg}$, jouset puristuvat lisää $3{,}0\\,\\text{cm}$. Renkaiden joustoa ei huomioida. Oletetaan, että lisäkuorma jakautuu tasan neljälle jouselle. Kuinka suuri on yhden jousen jousivakio? Anna vastaus yksikössä $\\text{kN/m}$.",
+      "answer": 24.525,
+      "unit": "kN/m",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L3-02",
+      "level": 3,
+      "text": "Hyppivässä lelussa on pystysuora jousi, jonka jousivakio on $200\\,\\text{N/m}$. Lelu painetaan pöytää vasten niin, että jousi puristuu $3{,}0\\,\\text{cm}$, ja imukuppi pitää sen paikallaan. Kun imukuppi irtoaa, jousi ponnauttaa $50\\,\\text{g}$:n lelun suoraan ylös. Oletetaan, että koko jousen potentiaalienergia muuttuu lelun painovoiman potentiaalienergiaksi; ilmanvastus ja jousen massa jätetään huomiotta. Kuinka korkealle lelu nousee lähtökohdastaan?",
+      "answer": 0.18349,
+      "unit": "m",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-8-L3-03",
+      "level": 3,
+      "text": "Kärry, jonka massa on $0{,}50\\,\\text{kg}$, on vaakasuoralla kitkattomalla radalla kahden jousen välissä. Vasemman jousen toinen pää on kiinni vasemmassa seinässä ja oikean jousen oikeassa seinässä, ja tasapainoasemassa kumpikin jousi on lepopituudessaan. Vasemman jousen jousivakio on $30\\,\\text{N/m}$ ja oikean $50\\,\\text{N/m}$. Kärry siirretään $4{,}0\\,\\text{cm}$ oikealle ja päästetään irti. Kuinka suuri on kärryyn vaikuttava kokonaisvoima heti irti päästämisen jälkeen?",
+      "fbd": "equations",
+      "answer": 3.2,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ]
+}

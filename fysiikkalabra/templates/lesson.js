@@ -1,13 +1,18 @@
 /* Lesson page behaviour. Everything runs in the browser and nothing is sent anywhere; only the student's own
    solutions in the solution editor are kept on this device (part 6, padstore.js).
-   1. Answer check: compares the typed number with data-answer within the relative data-tol.
-   2. Section nav: marks the section currently on screen.
+   1. Answer check: compares the typed number with data-answer (±2 %, one unit in the last digit data-step, or the
+      wider data-tol; 2–5 % away is "Lähellä") and tells other parts of the attempt (event fl:attempt).
+   2. Progress bar: the stage navigation marks the stage on screen and the stages whose answers are all given.
    3. Worked example in stages: reveals the solution one stage at a time.
    4. Print: opens every collapsed block and every hidden stage while printing.
    5. A link to something inside a closed box (the Ennusta box, a hint) opens the box, so the target shows.
    5b. Exercise head: Vastaus and Näytä ratkaisu as buttons beside the Ydintehtävä tag (the boxes open in place).
    6. Solution editor: "Kirjoita ratkaisu" under every exercise opens Abitti's own editor (Digabi rich-text-editor) and
       "Kopioi ratkaisu" copies the solution for L'Math or Abitti. The editor is loaded on the first click only.
+   7. Enlarge a figure (teacher 2026-11-03): a click on a figure or a photo, or its "Suurenna kuva" button, shows it
+      larger in a dialog, never over the image's own pixels nor about 90 % of the window (sim-embed.js enlarges a simulation).
+   8. Try first (teacher 2026-11-03): Vastaus, Näytä ratkaisu and a model answer open only after the student's own
+      attempt (one Tarkista, or the tick "Olen tehnyt ratkaisun"); ?ratkaisut=1 opens them all for the teacher.
    Its messages come from the page's #fl-strings block (lang/<lang>.json "js", written in by build.py). */
 (() => {
   const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent); } catch (e) { return {}; } })();
@@ -16,53 +21,146 @@
     const t = s.trim().replace(/\s+/g, '').replace(/−/g, '-').replace(',', '.').replace(/[^\d.eE+-]/g, '');
     return t === '' ? NaN : Number(t);
   };
+  // A real attempt (teacher 2026-11-03, "opiskelija yrittää ensin itse"): Tarkista with a number, Vastaa with a choice,
+  // or the tick "Olen tehnyt ratkaisun". It opens what part 8 keeps locked; other scripts may listen too (the progress bar).
+  // detail: id (the task: exercise li, activity or Sovella task), kind check | choice | done, state ok | close | no | done.
+  const taskId = (el) => (el.closest('#exercises li[id], section.practice-task[id], .activity[id]') || {}).id || '';
+  const attempt = (el, kind, state) => el.dispatchEvent(new CustomEvent('fl:attempt', { bubbles: true, detail: { id: taskId(el), kind, state } }));
+  window.flAttempt = attempt;
+  // Accepted (teacher 2026-11-03): within 2 % of the model answer or one unit in its shown last significant digit
+  // (data-step), whichever is larger, or the task's own wider tolerance; 2–5 % away is "Lähellä", not a rejection.
   document.querySelectorAll('form.check').forEach((form) => {
     const input = form.querySelector('input'), out = form.querySelector('output');
-    const ans = Number(form.dataset.answer), tol = Number(form.dataset.tol);
+    const ans = Number(form.dataset.answer), tol = Number(form.dataset.tol), step = Number(form.dataset.step) || 0;
     let tries = 0;
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const v = parse(input.value);
-      if (Number.isNaN(v)) { out.textContent = msg('check_number'); out.dataset.state = 'hint'; return; }
+      if (!Number.isFinite(v)) { out.textContent = msg('check_number'); out.dataset.state = 'hint'; return; }
       tries += 1;
-      const limit = ans === 0 ? tol : tol * Math.abs(ans);
+      const a = Math.abs(ans);
+      const accept = ans === 0 ? Math.max(tol, step) : Math.max(0.02 * a, tol * a, step);
+      const near = ans === 0 ? 2.5 * accept : Math.max(0.05 * a, 1.25 * accept);
       const diff = Math.abs(v - ans);
-      if (diff <= limit) {
-        out.textContent = msg('correct'); out.dataset.state = 'ok'; form.classList.add('is-ok'); input.setAttribute('aria-invalid', 'false');
+      let state;
+      if (diff <= accept * (1 + 1e-9)) {
+        out.textContent = msg('correct'); state = 'ok'; form.classList.add('is-ok'); input.setAttribute('aria-invalid', 'false');
+      } else if (diff <= near * (1 + 1e-9)) {
+        out.textContent = msg('check_near'); state = 'close'; input.setAttribute('aria-invalid', 'false');
       } else {
         input.setAttribute('aria-invalid', 'true');
-        if (diff <= 3 * limit) out.textContent = msg('check_close');
-        else if (Math.abs(v) > 0 && (Math.abs(v / ans) > 900 || Math.abs(ans / v) > 900)) out.textContent = msg('check_magnitude');
+        if (Math.abs(v) > 0 && ans !== 0 && (Math.abs(v / ans) > 900 || Math.abs(ans / v) > 900)) out.textContent = msg('check_magnitude');
         else out.textContent = tries >= 2 ? msg('check_give_up') : msg('check_retry');
-        out.dataset.state = 'no';
+        state = 'no';
       }
+      out.dataset.state = state;
+      attempt(form, 'check', state);
     });
   });
 
+  /* 2. The progress bar (teacher 2026-11-03): the stage navigation sticks under the top edge at every width.
+     - The stage on screen is marked (aria-current), seen with an IntersectionObserver on a line at 35 % of the window;
+       a tap pins its target until the reader scrolls on, so a short last section can still be marked. While the page
+       is read aloud (readaloud.js, event fl:reading) the stage being read is marked instead.
+     - A stage is marked done once every required answer in it is given: each choice committed with Vastaa, each number
+       checked with Tarkista, each written explanation compared with the model answer. Optional tasks (details.opt) and
+       the exercises that are not core tasks do not count. A stage with no required answer (Pohdinta,
+       Teoriatiivistelmä) is done once the reader has scrolled to its end. The done stages are kept on this device in localStorage
+       (key ruukkilabra:<page>), every access wrapped, and the page works without it.
+     - On a narrow window the bar scrolls sideways inside itself and keeps the current stage in view.
+     Without JavaScript the bar is a plain list of links. */
   const toc = document.querySelector('nav.toc');
   if (toc) {
-    const links = [...toc.querySelectorAll('a')];
-    const targets = links.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-    let pinned = null;
-    const mark = (id) => links.forEach((a) => {
-      const on = a.getAttribute('href') === '#' + id;
-      a.toggleAttribute('aria-current', on);
-      if (on && toc.scrollWidth > toc.clientWidth) a.scrollIntoView({ inline: 'nearest', block: 'nearest' });
-    });
-    // the active section is the last one whose top has passed 35 % of the viewport; a tap pins its target
-    // until the reader scrolls on, so a short last section can still be marked
-    const update = () => {
-      if (pinned) { mark(pinned); return; }
-      const line = window.innerHeight * 0.35;
-      let current = targets[0];
-      targets.forEach((t) => { if (t.getBoundingClientRect().top <= line) current = t; });
-      if (current) mark(current.id);
+    const links = [...toc.querySelectorAll('a[href^="#"]')];
+    const pairs = links.map((a) => [a, document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)))]).filter((p) => p[1]);
+    const targets = pairs.map((p) => p[1]);
+    let pinned = null, reading = null, current = null;
+    const keepInView = (a) => {
+      if (toc.scrollWidth <= toc.clientWidth + 1 || getComputedStyle(toc).flexDirection === 'column') return;
+      const tools = toc.querySelector('.toc-tools'), right = toc.clientWidth - (tools ? tools.offsetWidth : 0);
+      const l = a.offsetLeft - toc.scrollLeft, r = l + a.offsetWidth;
+      if (l < 8) toc.scrollTo({ left: Math.max(0, a.offsetLeft - 16) });
+      else if (r > right - 8) toc.scrollTo({ left: a.offsetLeft + a.offsetWidth - right + 16 });
     };
+    const mark = (id) => {
+      if (!id || id === current) return;
+      current = id;
+      links.forEach((a) => {
+        const on = a.getAttribute('href') === '#' + id;
+        if (on) { a.setAttribute('aria-current', 'step'); keepInView(a); } else a.removeAttribute('aria-current');
+      });
+    };
+    const inView = new Set();
+    const update = () => {
+      if (reading) return mark(reading);
+      if (pinned) return mark(pinned);
+      let last = null;
+      if (inView.size) targets.forEach((t) => { if (inView.has(t)) last = t; });    // a sub-section (Exit ticket) wins over its stage
+      else {
+        const line = window.innerHeight * 0.35;
+        targets.forEach((t) => { if (t.getBoundingClientRect().top <= line) last = t; });
+        if (!last) last = targets[0];
+      }
+      if (last) mark(last.id);
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((es) => { es.forEach((e) => { if (e.isIntersecting) inView.add(e.target); else inView.delete(e.target); }); update(); },
+        { rootMargin: '-35% 0px -64% 0px' });
+      targets.forEach((t) => io.observe(t));
+    }
+    let ticking = false;     // the gaps between sections and old browsers: the last section whose top passed the line
+    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; if (!inView.size) update(); }); } }, { passive: true });
+    const reView = () => { const a = links.find((x) => x.hasAttribute('aria-current')); if (a) keepInView(a); };
+    window.addEventListener('resize', reView);
+    // the Kuuntele tools (readaloud.js) appear in the bar only once a voice is found, after the stage may be marked
+    if ('MutationObserver' in window) new MutationObserver(reView).observe(toc, { childList: true, subtree: true, attributes: true, attributeFilter: ['hidden'] });
     links.forEach((a) => a.addEventListener('click', () => { pinned = a.getAttribute('href').slice(1); mark(pinned); setTimeout(() => { pinned = null; }, 900); }));
-    let ticking = false;
-    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; update(); }); } }, { passive: true });
-    window.addEventListener('resize', update);
+    document.addEventListener('fl:reading', (e) => { reading = (e.detail && e.detail.id) || null; if (reading) mark(reading); else update(); });
+    window.flStageOf = (el) => { let id = null; pairs.forEach(([, t]) => { if (t.contains(el)) id = t.id; }); return id; };
     update();
+
+    // done stages
+    const page = (location.pathname.match(/(?:^|\/)((?:en|fi-easy|fr|sv)\/)?([^/]+?)(?:\.html)?$/) || []).slice(1).join('').replace(/\/$/, '') || 'index';
+    const KEY = 'ruukkilabra:' + page;
+    let saved = { done: [], answered: [] };
+    try { const v = JSON.parse(localStorage.getItem(KEY)); if (v && Array.isArray(v.done)) saved = { done: v.done, answered: Array.isArray(v.answered) ? v.answered : [] }; } catch (e) { /* no storage */ }
+    const save = () => { try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) { /* private mode, blocked storage */ } };
+    const REQUIRED = 'fieldset.choice, form.check, .explain .show-model';
+    const required = (sec) => [...sec.querySelectorAll(REQUIRED)].filter((u) => !u.closest('details.opt, #exercises li:not(.core), [hidden]:not(.show-model)'));
+    const answered = (u) => (u.dataset.flTried ? true : u.matches('fieldset') ? !!u.dataset.committed
+      : u.matches('form') ? /^(ok|no|close)$/.test((u.querySelector('output') || {}).dataset?.state || '') : u.hidden);
+    const unitKey = (u) => { const host = u.closest('[id]'); const all = [...host.querySelectorAll(REQUIRED)]; return host.id + ':' + all.indexOf(u); };
+    const stages = pairs.filter(([, t]) => t.matches('section.stage')).map(([a, t]) => ({ a, t, units: required(t) }));
+    const DONE = msg('stage_done');
+    const show = (s) => {
+      if (s.a.classList.contains('is-done')) return;
+      s.a.classList.add('is-done');
+      const sr = document.createElement('span'); sr.className = 'visually-hidden'; sr.textContent = ' (' + DONE + ')'; s.a.append(sr);
+    };
+    const inside = (r) => r.height > 0 && r.bottom >= 0 && r.bottom <= window.innerHeight;   // its end is on screen
+    const check = (scrolled) => {
+      let changed = false;
+      stages.forEach((s) => {
+        s.units.forEach((u) => { const k = unitKey(u); if (answered(u) && !saved.answered.includes(k)) { saved.answered.push(k); changed = true; } });
+        const done = s.units.length ? s.units.every((u) => saved.answered.includes(unitKey(u)))
+          : scrolled === true && inside(s.t.getBoundingClientRect());
+        if (done && !saved.done.includes(s.t.id)) { saved.done.push(s.t.id); changed = true; }
+        if (saved.done.includes(s.t.id)) show(s);
+      });
+      if (changed) save();
+    };
+    if (stages.length) {
+      const later = () => setTimeout(check, 0);       // after the page's own handlers (inquiry.js) have run
+      document.addEventListener('click', later); document.addEventListener('submit', later);
+      document.addEventListener('fl:attempt', (e) => {   // a real attempt reported by the page's scripts ({id, kind, state})
+        const el = e.detail && e.detail.id ? document.getElementById(e.detail.id) : null;
+        if (el) (el.matches(REQUIRED) ? [el] : [...el.querySelectorAll(REQUIRED)]).forEach((u) => { u.dataset.flTried = '1'; });
+        later();
+      });
+      let read = 0;
+      window.addEventListener('scroll', () => { if (!read) read = setTimeout(() => { read = 0; check(true); }, 250); }, { passive: true });
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', later); else later();
+    }
   }
 
   // Worked example in stages: stage 1 is shown, "Näytä seuraava vaihe" reveals one more, "Näytä kaikki" the rest.
@@ -98,6 +196,7 @@
     const boxes = [...li.querySelectorAll(':scope > details.answer, :scope > details.solution')];
     if (!boxes.length || !li.querySelector(':scope > .task')) return;
     const head = document.createElement('div'); head.className = 'ex-head';
+    const num = li.querySelector(':scope > .ex-num'); if (num) head.append(num);   // the running number "6-3" first (build.py number_label)
     const tag = li.querySelector(':scope > .ex-core'); if (tag) head.append(tag);
     boxes.forEach((d, i) => {
       d.id = d.id || `${li.id}-${d.classList.contains('answer') ? 'answer' : 'solution'}`;
@@ -120,8 +219,8 @@
   // (padstore.js, IndexedDB, loaded with the editor): saved a moment after each change, restored when the editor
   // opens, with export/import of a backup file and deletion. Nothing is sent anywhere.
   const PAD_TASKS = [   // [the task, its part the editor goes in, what it goes before]
-    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > form.check, :scope > details.answer')],   // write first, then check (teacher 2026-11-01)
-    ['section.practice-task[id]', (t) => t.querySelector(':scope > .task-card'), (box) => box.querySelector(':scope > details.reveal')],
+    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > form.check, :scope > label.solved, :scope > details.answer')],   // write first, then check (teacher 2026-11-01)
+    ['section.practice-task[id]', (t) => t.querySelector(':scope > .task-card'), (box) => box.querySelector(':scope > label.solved, :scope > details.reveal')],
   ];
   const HERE = document.currentScript ? document.currentScript.src : location.href;
   const VENDOR = new URL('vendor/digabi/', HERE).href;
@@ -283,6 +382,134 @@
       }, () => { made = false; status.textContent = msg('pad_failed'); status.dataset.state = 'no'; });
     });
   }));
+
+  // 7. Enlarge a figure (teacher 2026-11-03, "kuvat aukeaa klikkaamalla isoksi, ei kuitenkaan liian isoksi"). Every
+  // figure (svg role="img") and every photo or screenshot (figure > img) in the page opens larger in a modal dialog:
+  // as large as fits in about 92 % of the window, but a photo never over its own pixels and a drawing never over
+  // 1,6 times its drawn size (at most 1200 px). On a phone, where the window is no wider than the figure already is,
+  // it opens 1,6 times larger in a box that scrolls. A button (shown on hover and keyboard focus) gives the same to
+  // the keyboard; Esc, the close button or a click closes it, and the focus returns to where it was. Figures inside
+  // controls, the simulation and the interactive course components are left as they are.
+  const ZOOM_SKIP = '#sim, .fx, button, a, label, summary, [contenteditable], .pad, .zoom-dlg, [data-nozoom]';
+  const zoomable = (el) => el && el.matches('main svg[role="img"], main figure > img') && !el.parentElement.closest(ZOOM_SKIP + ', svg');
+  const ZOOM_ICON = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  let zdlg = null, zstage = null, zcap = null, zfrom = null;
+  const zoomDialog = () => {
+    if (zdlg) return zdlg;
+    zdlg = document.createElement('dialog'); zdlg.className = 'zoom-dlg'; zdlg.setAttribute('aria-label', msg('zoom_dialog'));
+    zdlg.innerHTML = '<button type="button" class="zoom-close"><span aria-hidden="true">×</span> </button><div class="zoom-stage"></div><div class="zoom-cap"></div>';
+    const close = zdlg.querySelector('.zoom-close'); close.append(msg('zoom_close'));
+    zstage = zdlg.querySelector('.zoom-stage'); zcap = zdlg.querySelector('.zoom-cap');
+    close.addEventListener('click', () => zdlg.close());
+    zdlg.addEventListener('click', (e) => { if (!zcap.contains(e.target) && !close.contains(e.target)) zdlg.close(); });   // a click on the picture or around it closes
+    zdlg.addEventListener('close', () => {
+      zstage.textContent = ''; zcap.textContent = ''; document.documentElement.classList.remove('zoom-open');
+      if (zfrom && zfrom.isConnected) zfrom.focus({ preventScroll: true }); zfrom = null;
+    });
+    document.body.appendChild(zdlg);
+    return zdlg;
+  };
+  const openZoom = (el, from) => {
+    const d = zoomDialog(), r = el.getBoundingClientRect();
+    let node, w0, h0, cap;
+    if (el.tagName === 'IMG') {
+      node = new Image(); node.src = el.currentSrc || el.src; node.alt = el.alt; node.decoding = 'async';
+      w0 = el.naturalWidth || r.width; h0 = el.naturalHeight || r.height; cap = w0;
+    } else {
+      node = el.cloneNode(true);
+      [node, ...node.querySelectorAll('[id]')].forEach((n) => n.removeAttribute('id'));   // its markers and gradients still resolve to the figure on the page
+      const vb = el.viewBox && el.viewBox.baseVal;
+      w0 = vb && vb.width ? vb.width : r.width; h0 = vb && vb.height ? vb.height : r.height;
+      cap = Math.min(1200, Math.max(720, r.width * 1.6));
+      node.removeAttribute('width'); node.removeAttribute('height'); node.classList.remove('zoomable');
+    }
+    const fig = el.closest('figure'), fc = fig && fig.querySelector(':scope > figcaption');
+    if (fc) zcap.innerHTML = fc.innerHTML;
+    zstage.textContent = ''; zstage.appendChild(node);
+    document.documentElement.classList.add('zoom-open');
+    zfrom = from || document.activeElement;
+    d.showModal();
+    const ar = h0 / w0 || 0.6;
+    const roomW = Math.min(window.innerWidth * 0.92, 1200), roomH = window.innerHeight * 0.92 - zcap.offsetHeight - d.querySelector('.zoom-close').offsetHeight - 24;
+    let w = Math.min(roomW, roomH / ar, cap);
+    if (w < r.width * 1.1) w = Math.min(cap, Math.max(w, r.width * 1.6));   // a phone: larger than the window, the box scrolls
+    node.style.width = Math.round(w) + 'px'; node.style.height = Math.round(w * ar) + 'px'; node.style.maxWidth = 'none';
+    zstage.classList.toggle('zoom-pan', w > roomW + 1 || w * ar > roomH + 1);
+    zstage.scrollLeft = 0; zstage.scrollTop = 0;
+    d.querySelector('.zoom-close').focus({ preventScroll: true });
+  };
+  const wire = (el) => {
+    if (el.classList.contains('zoomable')) return;
+    el.classList.add('zoomable');
+    const host = el.parentElement; host.classList.add('zoom-host');
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'zoom-btn';
+    b.setAttribute('aria-label', msg('zoom_open')); b.title = msg('zoom_open'); b.innerHTML = ZOOM_ICON;
+    b.addEventListener('click', (e) => { e.stopPropagation(); openZoom(el, b); });
+    el.after(b);
+  };
+  document.querySelectorAll('main svg[role="img"], main figure > img').forEach((el) => {
+    if (!zoomable(el)) return;
+    if (el.tagName !== 'IMG') { wire(el); return; }
+    // a photo only when it has more pixels than the page shows (a screenshot at its own size would not grow)
+    const check = () => { const w = el.getBoundingClientRect().width; if (el.naturalWidth > (w || el.width || 0) * 1.15) wire(el); };
+    if (el.complete && el.naturalWidth) check(); else el.addEventListener('load', check, { once: true });
+  });
+  document.addEventListener('click', (e) => {
+    const el = e.target.closest && e.target.closest('svg.zoomable, img.zoomable');
+    if (!el || !zoomable(el) || e.defaultPrevented || (window.getSelection && String(window.getSelection()).length)) return;
+    openZoom(el, el.parentElement.querySelector(':scope > .zoom-btn'));
+  });
+
+  // 8. Try first (teacher 2026-11-03, "opiskelija yrittää ensin itse, ja ratkaisu avautuu vasta sen jälkeen"). A numeric
+  // task's Vastaus and Näytä ratkaisu open after one Tarkista with a number (part 1); a written task's answer, an
+  // exercise drawn on paper and a Sovella itsenäisesti task's model answer and rubric after the tick "Olen tehnyt
+  // ratkaisun" (label.solved; an inquiry explanation's own tick is in inquiry.js). A locked control stays in view,
+  // dimmed, with the reason beside it, so the student knows the solution is there. Nothing is kept: a reload locks
+  // again. ?ratkaisut=1 (the teacher) opens every lock on the page.
+  const OPEN_ALL = (() => { try { return new URLSearchParams(location.search).get('ratkaisut') === '1'; } catch (e) { return false; } })();
+  window.flSolutionsOpen = OPEN_ALL;
+  if (OPEN_ALL) {
+    const main = document.querySelector('main');
+    if (main) { const p = document.createElement('p'); p.className = 'teacher-note'; p.setAttribute('role', 'note'); p.textContent = msg('teacher_mode'); main.prepend(p); }
+  }
+  // a locked box's summary does not open it (a click, Enter or Space all arrive as a click); a script may still open it
+  document.addEventListener('click', (e) => {
+    const sum = e.target.closest && e.target.closest('summary');
+    if (sum && sum.parentElement.dataset.locked && sum.parentElement.firstElementChild === sum) e.preventDefault();
+  }, true);
+  const lockBoxes = (boxes, why) => {
+    if (OPEN_ALL || !boxes.length) return () => {};
+    const notes = [], buttons = [];
+    const note = () => { const n = document.createElement('span'); n.className = 'lock-note'; n.textContent = msg(why); notes.push(n); return n; };
+    const head = boxes[0].parentElement.querySelector(':scope > .ex-head');
+    boxes.forEach((d) => {
+      d.open = false; d.dataset.locked = '1';
+      const sum = d.querySelector(':scope > summary'); sum.setAttribute('aria-disabled', 'true');
+      const b = head && d.id ? head.querySelector(`button.ex-toggle[aria-controls="${CSS.escape(d.id)}"]`) : null;
+      if (b) { b.disabled = true; b.setAttribute('aria-disabled', 'true'); buttons.push(b); }
+      else sum.append(note());
+    });
+    if (buttons.length) { const n = note(); n.id = boxes[0].parentElement.id + '-lock'; head.append(n); buttons.forEach((b) => b.setAttribute('aria-describedby', n.id)); }
+    let open = false;
+    return () => {
+      if (open) return; open = true;
+      boxes.forEach((d) => { delete d.dataset.locked; d.querySelector(':scope > summary').removeAttribute('aria-disabled'); });
+      buttons.forEach((b) => { b.disabled = false; b.removeAttribute('aria-disabled'); b.removeAttribute('aria-describedby'); });
+      notes.forEach((n) => n.remove());
+    };
+  };
+  const boxesIn = (el) => [...el.querySelectorAll(':scope > details.answer, :scope > details.solution, :scope > details.reveal')];
+  document.querySelectorAll('form.check').forEach((form) => {
+    const box = form.closest('#exercises li[id]') || form.closest('.numeric');
+    if (!box) return;
+    const unlock = lockBoxes(boxesIn(box), 'locked_try');
+    form.addEventListener('fl:attempt', unlock);
+  });
+  document.querySelectorAll('label.solved').forEach((label) => {
+    const tick = label.querySelector('input'), unlock = lockBoxes(boxesIn(label.parentElement), 'locked_done');
+    if (OPEN_ALL) tick.checked = true;
+    tick.addEventListener('change', () => { if (tick.checked) { unlock(); attempt(label, 'done', 'done'); } });
+  });
 
   let opened = [];
   window.addEventListener('beforeprint', () => {

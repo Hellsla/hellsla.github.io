@@ -1,0 +1,41 @@
+{
+  "id": "fy6-2",
+  "course": "FY6",
+  "title": "Mittaukset virtapiirissä",
+  "goals": [
+    "LOPS FY6: jännite ja sähkövirta tasavirtapiireissä",
+    "LOPS FY6: osaa tutkia kokeellisesti sähköön liittyviä ilmiöitä ja tehdä sähköopin perusmittauksia",
+    "Kokeellisesti: mittauksia komponenttien toiminnasta virtapiirissä",
+    "Tarkennus: virta- ja jännitemittarin kytkentä, yleismittari, mittausalue ja mittarin vaikutus piiriin"
+  ],
+  "prerequisites": [
+    "fy6-1"
+  ],
+  "glossary": [
+    "jännitemittari",
+    "virtamittari",
+    "yleismittari",
+    "mittausalue"
+  ],
+  "key_concepts": [
+    {
+      "term": "virtamittari",
+      "explain": "Mittari, joka mittaa sen läpi kulkevan sähkövirran. Se kytketään piiriin sarjaan."
+    },
+    {
+      "term": "jännitemittari",
+      "explain": "Mittari, joka mittaa jännitteen kahden pisteen välillä. Se kytketään mitattavan osan rinnalle."
+    },
+    {
+      "term": "yleismittari",
+      "explain": "Mittari, jolla voi mitata esimerkiksi virtaa, jännitettä ja resistanssia. Suure valitaan valitsimella."
+    },
+    {
+      "term": "mittausalue",
+      "explain": "Suurin arvo, jonka mittari näyttää valitulla asennolla."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

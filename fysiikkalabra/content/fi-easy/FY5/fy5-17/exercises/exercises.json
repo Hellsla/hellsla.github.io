@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy5-17-L1-01",
+      "level": 1,
+      "text": "Raskauden seurannassa ultraäänilaite lähettää pulssin vatsan iholta. Sikiön pään pinnalta heijastunut kaiku palaa anturiin $91{,}0\\,\\mu\\text{s}$:n kuluttua. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Kuinka syvällä ihon pinnasta sikiön pää on? Anna vastaus senttimetreinä.",
+      "answer": 7.01,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L1-02",
+      "level": 1,
+      "text": "Kaulan valtimoita kuvataan anturilla, jonka taajuus on $7{,}50\\,\\text{MHz}$. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Mikä on ultraäänen aallonpituus kudoksessa? Anna vastaus millimetreinä.",
+      "answer": 0.205,
+      "unit": "mm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L1-03",
+      "level": 1,
+      "text": "Veneen kaikuluotain lähettää äänipulssin suoraan alaspäin järveen. Kaiku pohjasta palaa $32{,}0\\,\\text{ms}$:n kuluttua. Ääni etenee järvivedessä nopeudella $1480\\,\\text{m/s}$. Kuinka syvä järvi on tässä kohdassa? Anna vastaus metreinä.",
+      "answer": 23.7,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L1-04",
+      "level": 1,
+      "text": "Lepakko huomaa yöperhosen: kaiku palaa $15\\,\\text{ms}$ äännähdyksen jälkeen. Ääni etenee ilmassa nopeudella $343\\,\\text{m/s}$. Kuinka kaukana yöperhonen on? Oletetaan, että lepakko ja perhonen pysyvät tänä aikana paikallaan. Anna vastaus metreinä.",
+      "answer": 2.6,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L1-05",
+      "level": 1,
+      "text": "Tsunami tulee mannerjalustalle eli matalalle merialueelle rannikon edustalla, jossa meri on $50\\,\\text{m}$ syvä. Aallonpituus on paljon suurempi kuin syvyys. Kuinka suuri on tsunamin nopeus? Anna vastaus metreinä sekunnissa.",
+      "answer": 22,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-17-L2-01",
+      "level": 2,
+      "text": "Kuvaajassa on seismografiaseman seismogrammi maanjäristyksestä. Aika on laskettu tallennuksen alusta, ei järistyksen hetkestä. P-aallon nopeus on $7{,}0\\,\\text{km/s}$ ja S-aallon $4{,}0\\,\\text{km/s}$. Kuinka kaukana asemasta järistys tapahtui? Anna vastaus kilometreinä.",
+      "answer": 168,
+      "unit": "km",
+      "tolerance": 0.02,
+      "figure": "fy5-17/seismogrammi-ex"
+    },
+    {
+      "id": "fy5-17-L2-02",
+      "level": 2,
+      "text": "Kilpirauhasen kuvassa halutaan erottaa toisistaan rakenteet, joiden väli on $0{,}300\\,\\text{mm}$. Oletetaan, että kaksi rajapintaa erottuu toisistaan, kun niiden väli on vähintään kaksi aallonpituutta. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Mikä on pienin taajuus, jolla tämä onnistuu? Anna vastaus megahertseinä.",
+      "answer": 10.3,
+      "unit": "MHz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L2-03",
+      "level": 2,
+      "text": "Ultraäänilaite lähettää uuden pulssin vasta, kun edellisen pulssin kaiku syvimmästä kuvattavasta kohdasta on palannut. Vatsaa kuvataan $20\\,\\text{cm}$:n syvyyteen asti, ja ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Kuinka monta pulssia sekunnissa laite voi enintään lähettää? Anna vastaus kilohertseinä (kilohertsi tarkoittaa tuhatta pulssia sekunnissa).",
+      "answer": 3.9,
+      "unit": "kHz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L2-04",
+      "level": 2,
+      "text": "Seismografiasema havaitsee, että S-aalto saapuu $14{,}0\\,\\text{s}$ P-aallon jälkeen. P-aallon nopeus on $6{,}0\\,\\text{km/s}$ ja S-aallon $3{,}5\\,\\text{km/s}$. Kuinka monta sekuntia ennen P-aallon saapumista järistys tapahtui? Anna vastaus sekunteina.",
+      "answer": 20,
+      "unit": "s",
+      "tolerance": 0.03
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-17-L3-01",
+      "level": 3,
+      "text": "Lepakko lentää suoraan kohti ladon seinää nopeudella $10\\,\\text{m/s}$ ja päästää äännähdyksen. Se kuulee kaiun seinästä $40\\,\\text{ms}$ myöhemmin. Ääni etenee ilmassa nopeudella $343\\,\\text{m/s}$. Kuinka kaukana seinästä lepakko oli, kun se päästi äännähdyksen? Anna vastaus metreinä.",
+      "answer": 7.06,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L3-02",
+      "level": 3,
+      "text": "Ihon alla on $4{,}0\\,\\text{cm}$ paksu rasvakerros, jossa ääni etenee nopeudella $1450\\,\\text{m/s}$. Sen alla on lihas, jossa ääni etenee nopeudella $1580\\,\\text{m/s}$. Lihaskerroksen alapinnalta palaa kaiku $80{,}0\\,\\mu\\text{s}$ pulssin lähettämisen jälkeen. Kuinka syvällä ihon pinnasta rajapinta oikeasti on? Anna vastaus senttimetreinä.",
+      "answer": 5.96,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L3-03",
+      "level": 3,
+      "text": "Valtamerellä, jonka syvyys on $4000\\,\\text{m}$, tsunamin aallonpituus on $200\\,\\text{km}$. Tsunami etenee rannikolle, jossa veden syvyys on $10\\,\\text{m}$. Aallon jaksonaika pysyy samana koko matkan. Mikä on tsunamin aallonpituus rannikon matalassa vedessä? Anna vastaus kilometreinä.",
+      "answer": 10,
+      "unit": "km",
+      "tolerance": 0.02
+    }
+  ]
+}

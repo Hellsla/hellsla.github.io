@@ -4,8 +4,8 @@ The site is called **Ruukkilabra**, subtitle *Lukion fysiikka* / *Upper secondar
 folder, the URL and the scripts keep the old working name fysiikkalabra. Logos: `assets/shared/brand/`.
 
 A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, p5.js simulations and exercises,
-written and reviewed with Claude Code agents, served by GitHub Pages from the committed `site/` folder at
-`https://hellsla.github.io/fysiikkalabra/site/`. House rules for agents: `CLAUDE.md`; writing rules: `NOTES.md`.
+written and reviewed with Claude Code agents, published from the committed `site/` folder at
+`https://ruukkilab.fi/` (see "Publishing at ruukkilab.fi" below). House rules for agents: `CLAUDE.md`; writing rules: `NOTES.md`.
 
 ## Quick start
 ```bash
@@ -78,9 +78,40 @@ can alter (teacher 2026-11-01): `python scripts/ci_scope.py origin/main` prints 
 (scripts, templates, shared site files, configuration, interface texts, the visual baseline, the workflow) changed. Its
 docstring is the mapping. Main, the weekly run and a manual run (`workflow_dispatch`) test everything.
 
+## Publishing at ruukkilab.fi
+Teacher 2026-11-04: the source stays in this repository, and the public repository `Hellsla/ruukkilabra` holds only
+the published copy, served by its GitHub Pages (branch `main`, folder `/`, custom domain `ruukkilab.fi`).
+`.github/workflows/ruukkilabra-deploy.yml` runs when `fysiikkalabra-ci` has passed on a main commit (a merged pull
+request, the weekly run or a manual run; never a pull request's own run). It takes that commit's committed `site/`,
+puts it at the root of the publishing repository, adds the read-aloud models of `Hellsla/ruukkilabra-models`
+(`supertonic3-v1/`, `ort/`) under `models/`, and pushes. If main already has a newer `site/`, it leaves the publishing
+to that commit's own run. A manual run (Actions → ruukkilabra-deploy → Run workflow) publishes the newest main
+commit whose CI passed.
+
+`python scripts/deploy_site.py OUT [--models DIR]` assembles the copy: `site/` contents, `CNAME`, `.nojekyll`,
+`robots.txt` and `sitemap.xml` for `https://ruukkilab.fi/`. It fails (and nothing is pushed) when a published text
+file names `hellsla.github.io` or `github.com/Hellsla` (Ruukkilabra must never lead to the teacher's other sites),
+when a page's canonical address is not on ruukkilab.fi, or when a relative link, image or script points outside the
+site or to a missing file. CI runs the same check on every pull request. `BASE_URL` in `build.py` and
+`print_book.py` (canonical, og:url, QR codes of the printed book) is `https://ruukkilab.fi/`.
+
+Push access: the repository secret `RUUKKILABRA_DEPLOY_KEY` is the private half of an SSH deploy key with write access
+to `Hellsla/ruukkilabra` only. `Hellsla/ruukkilabra-models` must be public (it is checked out without a token).
+The other sites of this repository (its root GitHub Pages) are not affected; the old copy at
+`/fysiikkalabra/site/` keeps being served from this repository too, with its canonical addresses on ruukkilab.fi.
+
 ## Libraries
 p5.js 1.9.4 and KaTeX 0.16.11 are vendored in `templates/vendor/` and copied to `site/vendor/` on build; fonts
 are self-hosted. Pages and headless tests work without a CDN.
+
+## Printed A5 book
+`python scripts/print_book.py FY1 [--lang fi|en|fi-easy]` prints a whole course as one A5 book from the committed
+`site/` pages (teacher 2026-11-03): cover, contents, the theory and worked examples of every chapter as the site shows
+them, and a QR code per chapter to its web page for the simulation, tasks and model solutions. Tasks, predictions,
+the investigation and model solutions are left out by print CSS only; the content is not edited. It writes
+`print/<C>-<lang>-A5.pdf` and `print/<C>-<lang>-A4-tulostus.pdf` (git-ignored): two A5 pages per A4 sheet in
+cut-and-stack order. Print the A4 file double-sided, flipped on the short edge, at 100 %; cut the stack in half, put
+the left half on top of the right half and bind the left edge. Needs `pip install playwright segno pypdf reportlab`.
 
 ## Curriculum
 `curriculum.json` covers FY1–FY8 with module goals, central contents and a proposed lesson-slot list per
@@ -169,6 +200,9 @@ pictures, templates and scripts are shared by every language.
   language menu; with two or more, each page has a language control linking to the same page in the other languages;
   when that language has not published the page, the link goes to its module page, whose note `#unavailable-<id>`
   says so (teacher 2026-10-29; `scripts/test_home.py`).
+- **Selkeä suomi** (`fi-easy`, an S2 language: `check_i18n.S2_LANGS`) follows NOTES.md §12: the same physics in
+  clearer Finnish, and `key_concepts` in each lesson's `meta.json` (`translate_kit.py` hands them to the translator as
+  `key_concepts.json`), rendered as *Luvun tärkeät käsitteet* (term and plain explanation; the student writes notes in a notebook).
 - Finnish only, for now: the agents' briefs, the lint's text rules (`lint_lesson.py`, `check_solutions.py`) and the
   reference lesson `content/_gold/`.
 
@@ -203,6 +237,10 @@ lessons/<COURSE>/sovella/answers.py            every number of the solutions; fi
 ```
 A part that asks for several quantities (two waxes' coefficients) gives `"answer"` as a list of such objects, each
 with a `name`; answers.py computes each as `<task>-<part>-<name>`, so every asked value is checked, not only the first.
+Any task may also name `"skills": ["fy1-4", "fy4-5"]`, the chapters whose skills it uses, shown as "Taidot luvuista"
+with chapter-name links. A course unit (scripts/units.py) can carry its own task set in this format in
+`content/<lang>/units/<id>/sovella/` (key `units/<id>`, task ids `<id>-s<n>`; FY9, docs/FY9_PLAN.md): it is reviewed
+with the unit and shown at the end of the unit page.
 A task of `"kind": "own"` (with one part of kind `own`) is a rubric for the student's own work, such as the FY1
 investigation report, and has no solution. `python scripts/practice.py check` (CI) checks ids, points against
 criteria, competency tags and shared keys (`competencies.json`), their texts in every language, chapter links,

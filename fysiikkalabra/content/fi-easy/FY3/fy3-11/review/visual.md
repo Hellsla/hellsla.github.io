@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f2b6f9c335faa267
+CONTENT-HASH: 215745c92316249f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] lesson Hyötysuhde and Tiivistelmä — "85-$90\,\%$" has the first number as plain text — write both numbers in maths.
-- [Minor] example Tulos at 390 px — inline "η₂ =" breaks after = — optional.
-- [Minor] lesson heat-engine paragraph and Tulos — a few sentences heavy for fi-easy — shorten if revisited.
+- none
 
 ## Checked
-- Delta: contact-4 (lab, theory, exercises), sim-390, lab-1280-1 (sim label now from translation key).
-- Bar label "ΔU + W_k" renders in LaTeX identical to before; Q and ΔU labels, axes, readout (decimal comma allowed) and legend line intact; layout of the simulation unchanged at 390 and 1280.
-- Fraction-row spacing and inline unit numbers in the lesson text checked on contact-4 (#41-#44).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-11.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

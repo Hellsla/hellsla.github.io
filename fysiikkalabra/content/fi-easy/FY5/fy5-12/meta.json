@@ -1,0 +1,47 @@
+{
+  "id": "fy5-12",
+  "course": "FY5",
+  "title": "Aaltojen yhteisvaikutus: superpositio ja interferenssi",
+  "goals": [
+    "LOPS FY5: mekaanisten aaltojen diffraktio ja interferenssi",
+    "Täsmennys: superpositioperiaate sekä vahvistava ja heikentävä interferenssi, kun kaksi aaltolähdettä on samassa vaiheessa ja niillä on sama taajuus. Fourier-muunnoksen hyöty on valinnainen aihe.",
+    "Taidot: matkaeron laskeminen ja sen päättely, onko interferenssi vahvistava vai heikentävä"
+  ],
+  "prerequisites": [
+    "fy5-11"
+  ],
+  "glossary": [
+    "superpositio",
+    "interferenssi",
+    "vahvistava interferenssi",
+    "heikentävä interferenssi",
+    "matkaero",
+    "solmuviiva",
+    "Fourier-muunnos"
+  ],
+  "key_concepts": [
+    {
+      "term": "superpositio",
+      "explain": "Kun aallot kohtaavat, niiden poikkeamat lasketaan yhteen. Aallot jatkavat sen jälkeen matkaansa ennallaan."
+    },
+    {
+      "term": "interferenssi",
+      "explain": "Kahden tai useamman aallon yhteisvaikutus, kun ne kohtaavat."
+    },
+    {
+      "term": "vahvistava interferenssi",
+      "explain": "Aallot kohtaavat samassa vaiheessa, joten yhteinen aalto on suurempi."
+    },
+    {
+      "term": "heikentävä interferenssi",
+      "explain": "Aallot kohtaavat vastakkaisessa vaiheessa, joten ne heikentävät toisiaan."
+    },
+    {
+      "term": "matkaero",
+      "explain": "Kuinka paljon pidemmän matkan toinen aalto kulkee kuin toinen samaan pisteeseen."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

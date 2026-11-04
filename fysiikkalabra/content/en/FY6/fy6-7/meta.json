@@ -1,0 +1,21 @@
+{
+  "id": "fy6-7",
+  "course": "FY6",
+  "title": "Electrical energy at home",
+  "goals": [
+    "LOPS FY6: electric power and Joule's law",
+    "Thematic study: simple electrical devices",
+    "Specification: power and energy consumption of devices in kilowatt-hours, the electricity bill and ways to save"
+  ],
+  "prerequisites": [
+    "fy6-6"
+  ],
+  "glossary": [
+    "sähköteho",
+    "kilowattitunti",
+    "sähköenergia"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

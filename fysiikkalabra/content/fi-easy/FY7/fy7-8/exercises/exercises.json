@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-8-L1-01",
+      "level": 1,
+      "text": "Ovikellon muuntajan ensiökäämissä on $1200$ kierrosta ja toisiokäämissä $60$ kierrosta. Ensiökäämi kytketään verkkojännitteeseen $230\\,\\text{V}$. Kuinka suuri on toisiojännite? Muuntaja oletetaan ideaaliseksi.",
+      "answer": 11.5,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-02",
+      "level": 1,
+      "text": "Puutarhavalaisimen ideaalinen muuntaja laskee verkkojännitteen $230\\,\\text{V}$ jännitteeksi $8{,}0\\,\\text{V}$. Toisiokäämissä on $40$ kierrosta. Kuinka monta kierrosta ensiökäämissä on?",
+      "answer": 1150.0,
+      "unit": "kierrosta",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-03",
+      "level": 1,
+      "text": "Asuinalueen muuntamo laskee jakeluverkon jännitteen $20\\,\\text{kV}$ jännitteeksi $400\\,\\text{V}$. Pienjänniteverkkoon lähtevä virta on $250\\,\\text{A}$. Kuinka suuri virta kulkee muuntajan ensiökäämissä? Muuntaja oletetaan ideaaliseksi.",
+      "answer": 5.0,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-04",
+      "level": 1,
+      "text": "Jakelujohdon johtimien yhteinen resistanssi on $2{,}5\\,\\Omega$. Johdossa kulkee $120\\,\\text{A}$:n virta. Kuinka suuri teho johdossa muuttuu lämmöksi? Anna vastaus kilowatteina.",
+      "answer": 36.0,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L1-05",
+      "level": 1,
+      "text": "Kantaverkon $400\\,\\text{kV}$:n johdossa kulkee $800\\,\\text{A}$:n virta. Kuinka suurta tehoa johto siirtää? Anna vastaus megawatteina.",
+      "answer": 320.0,
+      "unit": "MW",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-8-L2-01",
+      "level": 2,
+      "text": "Vesivoimala siirtää tehon $50\\,\\text{MW}$ jännitteellä $110\\,\\text{kV}$ sähköasemalle. Johtimien yhteinen resistanssi on $4{,}0\\,\\Omega$. Kuinka suuri teho johdossa muuttuu lämmöksi? Anna vastaus kilowatteina.",
+      "answer": 826.4463,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-02",
+      "level": 2,
+      "text": "Puhelin latautuu jännitteellä $5{,}0\\,\\text{V}$ ja virralla $2{,}0\\,\\text{A}$. Oletetaan, että laturissa on ideaalinen muuntaja, joka laskee verkkojännitteen $230\\,\\text{V}$ suoraan latausjännitteeksi. Kuinka suuri virta kulkee muuntajan ensiökäämissä? Anna vastaus milliampeereina.",
+      "answer": 43.4783,
+      "unit": "mA",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-03",
+      "level": 2,
+      "text": "Voimalaitos siirtää tehon $100\\,\\text{MW}$ jännitteellä $220\\,\\text{kV}$ johtoa pitkin. Johtimien yhteinen resistanssi on $4{,}8\\,\\Omega$. Kuinka monta prosenttia siirrettävästä tehosta muuttuu johdossa lämmöksi?",
+      "answer": 0.9917,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L2-04",
+      "level": 2,
+      "text": "Opiskelijat rakensivat siirtojohdon pienoismallin vastuslangasta. He mittasivat, kuinka suuri teho langassa muuttuu lämmöksi eri virroilla. Kuvaajassa on häviöteho $P_\\text{h}$ virran $I$ funktiona. Siinä on myös mittauspisteisiin sovitettu käyrä. Määritä langan resistanssi. Lue tarvittavat arvot kuvaajan käyrältä.",
+      "figure": "fy7-8/loss-current",
+      "answer": 0.8,
+      "unit": "Ω",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-8-L3-01",
+      "level": 3,
+      "text": "Voimalaitoksen generaattori tuottaa tehon $150\\,\\text{MW}$ jännitteellä $20\\,\\text{kV}$. Ideaalinen muuntaja nostaa jännitteen $400\\,\\text{kV}$:iin. Sähkö siirretään johtoa pitkin, jonka johtimien yhteinen resistanssi on $8{,}0\\,\\Omega$. Kuinka monta prosenttia tehosta muuttuu johdossa lämmöksi?",
+      "answer": 0.75,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L3-02",
+      "level": 3,
+      "text": "Suunnitteilla on $400\\,\\text{kV}$:n voimajohto, jonka on siirrettävä tehoa $400\\,\\text{MW}$. Johdon häviöteho saa olla enintään $1{,}0\\,\\%$ siirrettävästä tehosta. Kuinka suuri johtimien yhteinen resistanssi saa enintään olla?",
+      "answer": 4.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-8-L3-03",
+      "level": 3,
+      "text": "Vanha $220\\,\\text{kV}$:n voimajohto muutetaan $400\\,\\text{kV}$:n johdoksi. Johtimet ja niiden resistanssi pysyvät samoina. Kuinka moninkertainen teho samaa johtoa voidaan siirtää, kun häviöteho on edelleen yhtä suuri osuus siirrettävästä tehosta kuin ennen?",
+      "answer": 3.3058,
+      "unit": "kertaa",
+      "tolerance": 0.02
+    }
+  ]
+}

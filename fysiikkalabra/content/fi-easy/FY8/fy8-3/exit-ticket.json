@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kuinka paljon energiaa perustilassa oleva vetyatomi tarvitsee, jotta sen elektroni siirtyy tasolle $n = 3$ ($E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$)?",
+    "a": "$E_3 - E_1 = -\\tfrac{13{,}6\\,\\text{eV}}{9} + 13{,}6\\,\\text{eV} = 12{,}1\\,\\text{eV}$. Fotonin on tuotava täsmälleen tämä energia, jotta se absorboituu eli atomi ottaa sen vastaan."
+  },
+  {
+    "q": "Miksi vedyn spektrin näkyvän valon viivat syntyvät juuri siirtymistä, jotka päättyvät tasolle $n = 2$?",
+    "a": "Tasolle $n = 2$ päättyvien siirtymien energiat ovat enintään $3{,}40\\,\\text{eV}$. Neljän pienimmän siirtymän ($1{,}89$–$3{,}02\\,\\text{eV}$) fotonit ovat näkyvää valoa. Perustilaan päättyvien siirtymien energiat ovat yli $10\\,\\text{eV}$ (ultravioletti). Tasolle $n = 3$ päättyvien siirtymien energiat ovat alle $1{,}51\\,\\text{eV}$ (infrapuna)."
+  }
+]

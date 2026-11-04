@@ -1,0 +1,23 @@
+{
+  "id": "fy8-7",
+  "course": "FY8",
+  "title": "Laser ja kvanttirakenteet",
+  "goals": [
+    "LOPS FY8: kvantittumiseen perustuva teknologia: laser ja kvanttirakenteet",
+    "Täsmennys: laserin toiminta (stimuloitu emissio, populaatioinversio); kvanttirakenteet nanomittakaavan rakenteina sovellusten, kuten aurinkokennojen ja kvanttitietokoneiden, kautta; tunneloituminen valinnaisena"
+  ],
+  "prerequisites": [
+    "fy8-6"
+  ],
+  "glossary": [
+    "laser",
+    "stimuloitu emissio",
+    "populaatioinversio",
+    "kvanttipiste",
+    "kvanttirakenne",
+    "tunneloituminen"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

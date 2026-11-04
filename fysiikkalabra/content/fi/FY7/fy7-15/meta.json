@@ -1,0 +1,22 @@
+{
+  "id": "fy7-15",
+  "course": "FY7",
+  "title": "Valon polarisaatio",
+  "goals": [
+    "LOPS FY7: valon polarisaatio kvalitatiivisesti",
+    "Täsmennys: polarisaatio polarisaattorissa ja eristeestä heijastuessa, Brewsterin laki"
+  ],
+  "prerequisites": [
+    "fy7-10"
+  ],
+  "glossary": [
+    "polarisaatio",
+    "polarisaattori",
+    "Malusin laki",
+    "Brewsterin laki",
+    "polaroidut aurinkolasit"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,2 +1,6 @@
 date	reviewer	from	to	base	categories
 2026-10-29	science	5c171679681518c5	55360117b4eac7e9	aff0bfefdeb1	objective-form
+2026-11-03	science	5c171679681518c5	a50fa5d58309e0c6	aff0bfefdeb1	objective-form,typography
+2026-11-03	pedagogy	55360117b4eac7e9	a50fa5d58309e0c6	c2afe4b8103b	typography
+2026-11-03	science	5c171679681518c5	55e1e325c9ba0af6	aff0bfefdeb1	objective-form,photo,typography
+2026-11-03	pedagogy	55360117b4eac7e9	55e1e325c9ba0af6	c2afe4b8103b	photo,typography

@@ -1,0 +1,163 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.x===0 && S.jousi==='B' && S.F===0 && S.Ep===0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: x = 0, spring B, no force, no energy (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===1 && R[0].min==='-0.2' && R[0].max==='0.2' && R[0].step==='0.01' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one slider: x from -0,20 to 0,20 m in steps of 0,01 m"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===1 && L[0]==='A,B,C' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one select: springs A, B, C (no animation, so no speed select)"
+ },
+ {
+  "expr": "(() => { const b=[...document.querySelectorAll('#sim-root button')].map(x=>x.textContent); const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return b.length===1 && b[0]==='Tyhjennä kuvaaja' && k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the clear button; DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='jousi,x' && P.x.unit==='m' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares x (m) and jousi"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return document.getElementById('sim-root').clientWidth < 500 || (c.width===600 && c.height===400) ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas is 600x400 in the wide layout"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'B'); I(R[0],0.1);",
+  "expr": "window.simState.F",
+  "expected": -5.0,
+  "tol": 0.01,
+  "note": "B, stretched 0,10 m: F = -k x = -5,0 N (towards equilibrium, left)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'B'); I(R[0],0.1);",
+  "expr": "window.simState.Fk",
+  "expected": 5.0,
+  "tol": 0.01,
+  "note": "the hand's force on the cart is opposite: +5,0 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'B'); I(R[0],0.1);",
+  "expr": "window.simState.Fv",
+  "expected": 5.0,
+  "tol": 0.01,
+  "note": "stretching force F_v = k x = 5,0 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'B'); I(R[0],0.1);",
+  "expr": "window.simState.Ep",
+  "expected": 0.25,
+  "tol": 0.01,
+  "note": "E_p = 1/2 k x² = 0,25 J"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'B'); I(R[0],0.05);",
+  "expr": "window.simState.F",
+  "expected": -2.5,
+  "tol": 0.01,
+  "note": "half the displacement, half the force: -2,5 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'B'); I(R[0],0.05);",
+  "expr": "window.simState.Ep",
+  "expected": 0.0625,
+  "tol": 0.01,
+  "note": "0,05 m: E_p = 0,0625 J"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'B'); I(R[0],0.2);",
+  "expr": "window.simState.Ep",
+  "expected": 1.0,
+  "tol": 0.01,
+  "note": "0,20 m: 1,0 J, four times the energy at 0,10 m"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'B'); I(R[0],0.2);",
+  "expr": "window.simState.F",
+  "expected": -10.0,
+  "tol": 0.01,
+  "note": "0,20 m: -10 N, twice the force at 0,10 m"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'B'); I(R[0],-0.1);",
+  "expr": "window.simState.F",
+  "expected": 5.0,
+  "tol": 0.01,
+  "note": "compressed, x = -0,10 m: F = +5,0 N, again towards equilibrium (right)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'B'); I(R[0],-0.05);",
+  "expr": "window.simState.Fv",
+  "expected": -2.5,
+  "tol": 0.01,
+  "note": "compressed 0,05 m: F_v = k x = -2,5 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'B'); I(R[0],-0.1);",
+  "expr": "window.simState.Ep",
+  "expected": 0.25,
+  "tol": 0.01,
+  "note": "compressed 0,10 m: the same E_p as stretched, 0,25 J"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'A'); I(R[0],0.1);",
+  "expr": "window.simState.Fv",
+  "expected": 2.0,
+  "tol": 0.01,
+  "note": "spring A (20 N/m) at 0,10 m: 2,0 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'C'); I(R[0],0.1);",
+  "expr": "window.simState.Fv",
+  "expected": 8.0,
+  "tol": 0.01,
+  "note": "spring C (80 N/m) at 0,10 m: 8,0 N"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'C'); I(R[0],-0.2);",
+  "expr": "window.simState.F",
+  "expected": 16.0,
+  "tol": 0.01,
+  "note": "spring C compressed 0,20 m: +16 N, the largest force"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'A'); document.querySelector('#sim-root button').click(); I(R[0],0.05); I(R[0],0.1); I(R[0],0.15);",
+  "expr": "window.simState.pisteet",
+  "expected": 4,
+  "tol": 0,
+  "note": "after clearing, the current position and three set positions are points"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(L[0],'A'); document.querySelector('#sim-root button').click();",
+  "expr": "window.simState.pisteet",
+  "expected": 1,
+  "tol": 0,
+  "note": "clearing keeps only the current point"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; window.simAdapter.reset();",
+  "expr": "(() => { const S=window.simState; return S.x===0 && S.jousi==='B' && S.pisteet===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter reset: x = 0, spring B, only the current point"
+ }
+]

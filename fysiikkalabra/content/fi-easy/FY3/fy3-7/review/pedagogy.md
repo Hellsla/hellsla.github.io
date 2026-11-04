@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e386345ac96c4481
+CONTENT-HASH: 1c64bac6f797fd34
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-delta review: the only change is sim.js line 165, the time-axis label "t (s)" moved 3 units lower (ts(36) to ts(39)). In the 390 px simulation capture the label now sits clearly below the last tick label and no longer touches it; the axis stays inside the canvas, nothing is clipped, and text, controls, readout and tasks are unchanged.
+batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.

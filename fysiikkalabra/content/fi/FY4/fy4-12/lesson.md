@@ -507,6 +507,8 @@ Miksi auton täytyy saavuttaa kaksinkertainen nopeus? Syy näkyy $(t,v)$-kuvaaja
 
 Jos pyöräilijä on lähtiessä matkan $x_{0\text{B}}$ edellä, yhtälö on $\tfrac12 a t^2 = x_{0\text{B}} + v\,t$. Se ratkaistaan toisen asteen yhtälön ratkaisukaavalla, ja kohtaamishetki on positiivinen juuri. Negatiivinen juuri kuvaisi hetkeä ennen lähtöä, eikä se kuulu tilanteeseen; kaksi positiivista juurta olisi kaksi kohtaamista. Jos positiivista juurta ei ole, kappaleet eivät kohtaa.
 
+<figure class="unit-photo"><img src="pics/fy4/helsinki-trams.webp" alt="Kaksi valkoista raitiovaunua rinnakkain kadulla, taustalla vanhoja kivitaloja."><figcaption>Kaksi raitiovaunua Helsingissä heinäkuussa 2026.</figcaption></figure>
+
 ## Esimerkki
 Pyöräilijä polkee suoraa tietä tasaisella nopeudella $6{,}0\,\text{m/s}$. Hetkellä $t = 0$ hän on $16\,\text{m}$ liikennevalojen pysäytysviivan edellä. Samalla hetkellä viivalla seisova auto lähtee liikkeelle ja kiihtyy tasaisesti kiihtyvyydellä $2{,}0\,\text{m/s}^2$ samaan suuntaan. Milloin auto ohittaa pyöräilijän ja kuinka kaukana pysäytysviivasta ohitus tapahtuu?
 

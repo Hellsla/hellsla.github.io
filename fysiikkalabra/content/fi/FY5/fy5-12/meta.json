@@ -1,0 +1,25 @@
+{
+  "id": "fy5-12",
+  "course": "FY5",
+  "title": "Aaltojen yhteisvaikutus: superpositio ja interferenssi",
+  "goals": [
+    "LOPS FY5: mekaanisten aaltojen diffraktio ja interferenssi",
+    "Täsmennys: superpositioperiaate, vahvistava ja heikentävä interferenssi kahden samassa vaiheessa olevan saman taajuisen aaltolähteen avulla; Fourier-muunnoksen hyödyllisyys valinnaisena",
+    "Taidot: matkaeron laskeminen ja interferenssin laadun päätteleminen"
+  ],
+  "prerequisites": [
+    "fy5-11"
+  ],
+  "glossary": [
+    "superpositio",
+    "interferenssi",
+    "vahvistava interferenssi",
+    "heikentävä interferenssi",
+    "matkaero",
+    "solmuviiva",
+    "Fourier-muunnos"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

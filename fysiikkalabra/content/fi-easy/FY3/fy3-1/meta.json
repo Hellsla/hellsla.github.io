@@ -1,7 +1,7 @@
 {
   "id": "fy3-1",
   "course": "FY3",
-  "title": "Voima vuorovaikutuksen mittana ja paino G = mg",
+  "title": "Voima vuorovaikutuksen mittana ja paino $G = mg$",
   "goals": [
     "LOPS FY3: voima vuorovaikutuksen voimakkuuden mittana",
     "Täsmennys: kerrataan, miten voimaa mitataan voimamittarilla, ja todetaan massan ja painon yhteys G = mg. Voimaa ei käsitellä liiketilan muutoksen aiheuttajana."
@@ -15,6 +15,28 @@
     "massa",
     "newton",
     "putoamiskiihtyvyys"
+  ],
+  "key_concepts": [
+    {
+      "term": "vuorovaikutus",
+      "explain": "Kaksi kappaletta vaikuttaa toisiinsa, esimerkiksi vetää tai työntää toisiaan. Vuorovaikutus on aina molempiin suuntiin."
+    },
+    {
+      "term": "voima",
+      "explain": "Kertoo, kuinka voimakas vuorovaikutus on. Voiman yksikkö on newton."
+    },
+    {
+      "term": "massa",
+      "explain": "Kertoo, kuinka paljon ainetta kappaleessa on. Massa on sama kaikkialla. Yksikkö on kilogramma."
+    },
+    {
+      "term": "paino",
+      "explain": "Voima, jolla Maa tai muu taivaankappale vetää kappaletta. Paino riippuu paikasta, massa ei."
+    },
+    {
+      "term": "putoamiskiihtyvyys",
+      "explain": "Kertoo, kuinka suuri paino on yhtä kilogrammaa kohti. Se on eri suuri eri taivaankappaleilla."
+    }
   ],
   "sim": true,
   "image": false

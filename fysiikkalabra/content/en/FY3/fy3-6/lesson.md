@@ -1,4 +1,4 @@
-# Heating and cooling of matter: Q = cmΔT
+# Heating and cooling of matter: $Q = cm\Delta T$
 
 > **Why** does the sand on a beach burn your feet already in the late morning, when the water is still cool, even though the Sun has shone on both for the same time?
 
@@ -74,6 +74,8 @@
 
 ## Key idea
 When heat is transferred to an object and its phase does not change, its internal energy increases and its temperature rises. Experiments show that the quantity of heat needed is directly proportional both to the change in temperature and to the mass of the object: a temperature rise twice as large needs twice the heat, and twice the amount of water needs twice the heat. In addition, the heat depends on the substance. Heating one kilogram of water by one degree takes about $4.2\,\text{kJ}$, but heating one kilogram of iron takes only about $0.45\,\text{kJ}$. The coefficient that is characteristic of a substance is the specific heat capacity $c$, whose unit is J/(kg·K). It tells how much energy is needed to heat one kilogram by one kelvin, and the same amount is released when the substance cools by one kelvin.
+
+<figure class="unit-photo"><img src="pics/fy3/steaming-kettle.webp" alt="Hot water is poured from a kettle into a glass jug against a dark background, and the water is steaming."><figcaption>Hot water is poured from a kettle. The visible mist is condensed water droplets.</figcaption></figure>
 
 An important reason is that the specific heat capacity of water is exceptionally large: water warms slowly in the Sun and cools slowly in the evening, whereas sand, whose $c$ is about one fifth of that of water, gets many times hotter with the same energy. In addition, the Sun heats only a thin surface layer of the sand, whereas in water the warming reaches deeper. Because of their large specific heat capacity, lakes even out the temperatures of the coast, and water is a good heat-transfer medium in heating pipes.
 

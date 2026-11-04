@@ -1,0 +1,37 @@
+{
+  "id": "fy5-3",
+  "course": "FY5",
+  "title": "Ympyrärata: jaksonaika ja ratanopeus",
+  "goals": [
+    "LOPS FY5: tasainen ympyräliike",
+    "Täsmennys: nopeuden suunta muuttuu ympyräliikkeessä. Ratanopeus on v = 2πr/T. Lisäksi opitaan kierrosaika ja pyörimistaajuus. Kulmasuureita ei tarvitse käsitellä ympyräliikkeen yhteydessä. Pyörimisliike ei kuulu keskeisiin sisältöihin."
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "ympyräliike",
+    "ratanopeus",
+    "kierrosaika",
+    "pyörimistaajuus"
+  ],
+  "key_concepts": [
+    {
+      "term": "ympyräliike",
+      "explain": "Liike, jonka rata on ympyrä. Kappale pysyy koko ajan yhtä kaukana keskipisteestä."
+    },
+    {
+      "term": "ratanopeus",
+      "explain": "Nopeuden suuruus ympyräradalla: kuljettu matka jaettuna ajalla. Nopeus osoittaa radan suuntaan."
+    },
+    {
+      "term": "kierrosaika",
+      "explain": "Aika, jossa kappale kiertää radan kerran."
+    },
+    {
+      "term": "pyörimistaajuus",
+      "explain": "Kertoo, montako kierrosta kappale tekee sekunnissa. Se on kierrosajan käänteisluku."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

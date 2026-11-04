@@ -1,4 +1,4 @@
-# Ideal gas law pV = nRT
+# Ideal gas law $pV = nRT$
 
 > **Why** is a helium balloon much lighter than an air balloon of the same size? Does it contain less gas?
 
@@ -398,6 +398,8 @@ When you solve the equation of state for pressure, you see that the pressure dou
 In the simulation you can investigate this at the particle level: change the number of particles, the temperature and the volume, and compare the pressure measured at the walls with the prediction of the equation of state, which you calculate yourself. Collisions between the particles do not change the pressure on average, so they have been left out of the simulation. In the simulation the pressure is shown relative to a reference state ($p/p_\text{ref}$), not in pascals. The reference state is $N = 100$ particles, $T = 300\,\text{K}$ and the full volume ($V = 100\,\%$); in it $p/p_\text{ref} = 1$, and the value 2 means twice the reference pressure. The number of particles $N$ represents the amount of gas.
 
 <!-- sim -->
+
+<figure class="unit-photo"><img src="pics/fy3/hot-air-balloon-burner.webp" alt="A bright yellow flame points up into the red envelope of a hot air balloon. The basket's attachment chains and cables are in the foreground."><figcaption>The burner of a hot air balloon heats the air inside the balloon. The mouth of the balloon is open at the bottom, so the pressure of the air inside stays almost equal to the pressure outside.</figcaption></figure>
 
 When the amount of gas does not change, $nR$ is constant, and the equation of state gives the combined gas law $p_1V_1/T_1 = p_2V_2/T_2$ (subscripts 1 and 2 are the initial and final state). From it you get every gas law of the chapter *Changes of state of a gas and Boyle's law* when one quantity is kept constant.
 

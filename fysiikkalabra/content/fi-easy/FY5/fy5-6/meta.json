@@ -1,0 +1,35 @@
+{
+  "id": "fy5-6",
+  "course": "FY5",
+  "title": "Satelliitit ja planeetat ympyräradalla",
+  "goals": [
+    "LOPS FY5: gravitaatiolaki ja planetaarinen liike",
+    "LOPS FY5: osaa mallintaa planetaarista liikettä ympyräliikkeenä",
+    "Täsmennys: planeettojen, kuiden ja satelliittien liike ympyräratamallina, painottomuus, milloin tasaisen ympyräliikkeen malli pätee; Keplerin lait ja gravitaatiokentän potentiaalienergia eivät kuulu keskeisiin sisältöihin"
+  ],
+  "prerequisites": [
+    "fy5-5"
+  ],
+  "glossary": [
+    "kiertorata",
+    "satelliitti",
+    "painottomuus"
+  ],
+  "key_concepts": [
+    {
+      "term": "kiertorata",
+      "explain": "Rata, jota pitkin kappale kiertää toista kappaletta gravitaation varassa, esimerkiksi Kuun rata Maan ympäri."
+    },
+    {
+      "term": "satelliitti",
+      "explain": "Kappale, joka kiertää paljon raskaampaa kappaletta. Kuu on Maan satelliitti, samoin GPS-satelliitit."
+    },
+    {
+      "term": "painottomuus",
+      "explain": "Kappale putoaa vapaasti, joten tukivoima on nolla. Gravitaatio vaikuttaa silti koko ajan."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

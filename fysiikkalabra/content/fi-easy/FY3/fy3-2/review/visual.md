@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d3fdd7056197af5b
+CONTENT-HASH: 68a65d8c7117b539
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] lesson.md prose — numbers with units in running text ("5,0 N", "2,0 cm", "1,62/9,81") are plain text while the same sentence elsewhere uses inline maths — house rule NOTES §1 asks for maths — wrap in $...$.
-- [Minor] lesson.md Joulen koe paragraph — "Tämä tulo on sama kuin voiman ja matkan tulo." sentence chain is a bit mechanical ("Tämä ... Tämä ...") — vary wording.
-- [Minor] carry-lift, lift-work figures — force arrow orange while the simulation draws force red; project-level convention, name only.
+- [Minor] lesson.md, Joulen koe paragraph — three sentences in a row lean on "tämä tulo / Tämä tulo / Tämä koetulos" — "…kasvoi samassa suhteessa kuin tämä tulo, joka on sama kuin voiman ja matkan tulo. Koetulos perustelee työn määritelmän $W = Fs$ (kaava alla)."
 
 ## Checked
-- contact-1, contact-2, contact-3; sim-1280; fig-2, fig-3, fig-4, fig-5 (390); example-390-1.
-- Open states and exit ticket via contact sheets.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-2.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

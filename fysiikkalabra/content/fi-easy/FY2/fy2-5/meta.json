@@ -1,7 +1,7 @@
 {
   "id": "fy2-5",
   "course": "FY2",
-  "title": "Polttoaineet ja lämpöarvo E = Hm",
+  "title": "Polttoaineet ja lämpöarvo $E = Hm$",
   "goals": [
     "Temaattinen tarkastelu: kemiallinen energia energialähteenä",
     "Täsmennys: energiantuotannossa vapautunut energia lasketaan polttoaineiden lämpöarvojen H avulla lailla E = Hm"
@@ -13,6 +13,20 @@
     "lämpöarvo",
     "polttoaine",
     "kemiallinen energia"
+  ],
+  "key_concepts": [
+    {
+      "term": "polttoaine",
+      "explain": "Aine, jonka energia vapautetaan polttamalla, esimerkiksi bensiini tai puu."
+    },
+    {
+      "term": "kemiallinen energia",
+      "explain": "Aineen rakenteeseen varastoitunut energia. Se vapautuu esimerkiksi palamisessa lämpönä ja valona."
+    },
+    {
+      "term": "lämpöarvo",
+      "explain": "Kertoo, kuinka paljon energiaa vapautuu, kun kilogramma polttoainetta palaa."
+    }
   ],
   "sim": false,
   "solutions": "all",

@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-11-L1-01",
+      "level": 1,
+      "text": "In a fusion reactor, tritium can be produced from lithium in the reaction ${}^{6}_{3}\\text{Li} + {}^{1}_{0}\\text{n} \\rightarrow {}^{4}_{2}\\text{He} + {}^{3}_{1}\\text{H}$. The atomic masses are: lithium-6 $6.0151229\\,\\text{u}$, neutron $1.0086649\\,\\text{u}$, helium-4 $4.0026033\\,\\text{u}$ and tritium $3.0160493\\,\\text{u}$. How much energy is released in the reaction? Give the answer in megaelectronvolts.",
+      "answer": 4.78,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L1-02",
+      "level": 1,
+      "text": "The total mass of the products of a fission reaction of uranium-235 is $0.1915\\,\\text{u}$ smaller than that of the starting materials. How much energy is released in the reaction? Give the answer in megaelectronvolts.",
+      "answer": 178,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L1-03",
+      "level": 1,
+      "text": "In generation $0$ of a chain reaction there are $1000$ neutrons, and the multiplication factor is $k = 0.90$. How many neutrons does the chain have on average in generation $10$?",
+      "answer": 349,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L1-04",
+      "level": 1,
+      "text": "In the fusion of two deuterium nuclei, a helium-3 nucleus and a neutron are formed: ${}^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\rightarrow {}^{3}_{2}\\text{He} + {}^{1}_{0}\\text{n}$. The atomic masses are: deuterium $2.0141018\\,\\text{u}$, helium-3 $3.0160293\\,\\text{u}$ and neutron $1.0086649\\,\\text{u}$. How much energy is released in the reaction? Give the answer in megaelectronvolts.",
+      "answer": 3.27,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L1-05",
+      "level": 1,
+      "text": "The mass of a neutron is $1.0086649\\,\\text{u}$. What energy does the mass of the neutron correspond to? Give the answer in megaelectronvolts.",
+      "answer": 939.6,
+      "unit": "MeV",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-11-L2-01",
+      "level": 2,
+      "text": "The thermal power of the reactor of Olkiluoto 3 is $4300\\,\\text{MW}$. By how much does the mass of the reactor's fuel decrease in a year ($365\\,\\text{d}$) because the reactor releases energy? Assume that the reactor operates at full power for the whole year. Give the answer in kilograms.",
+      "answer": 1.51,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L2-02",
+      "level": 2,
+      "text": "In the fusion of deuterium and tritium, ${}^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\rightarrow {}^{4}_{2}\\text{He} + {}^{1}_{0}\\text{n}$, the atomic masses are: deuterium $2.0141018\\,\\text{u}$, tritium $3.0160493\\,\\text{u}$, helium-4 $4.0026033\\,\\text{u}$ and neutron $1.0086649\\,\\text{u}$. How much energy is released when one kilogram of a deuterium–tritium mixture fuses? Use $1\\,\\text{u} = 1.66054 \\cdot 10^{-27}\\,\\text{kg}$. Give the answer in the unit $10^{14}\\,\\tfrac{\\text{J}}{\\text{kg}}$.",
+      "answer": 3.37,
+      "unit": "10¹⁴ J/kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L2-03",
+      "level": 2,
+      "text": "Uranium-235 can also split in the reaction ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\rightarrow {}^{140}_{54}\\text{Xe} + {}^{94}_{38}\\text{Sr} + x\\,{}^{1}_{0}\\text{n}$. The atomic masses are: uranium-235 $235.0439282\\,\\text{u}$, xenon-140 $139.9216458\\,\\text{u}$, strontium-94 $93.9153556\\,\\text{u}$ and neutron $1.0086649\\,\\text{u}$. First deduce the number of neutrons $x$. How much energy is released in the reaction? Give the answer in megaelectronvolts.",
+      "answer": 185,
+      "unit": "MeV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L2-04",
+      "level": 2,
+      "text": "In an experimental setup, the number of neutrons in a chain grows from $1000$ to $5000$ in $40$ generations. The multiplication factor $k$ stays the same all the time. By how many percent does the number of neutrons grow from one generation to the next?",
+      "answer": 4.11,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-11-L3-01",
+      "level": 3,
+      "text": "The thermal power of the reactor of Olkiluoto 3 is $4300\\,\\text{MW}$. Each fission of uranium-235 releases $200\\,\\text{MeV}$ on average. The atomic mass of uranium-235 is $235.0439282\\,\\text{u}$, and $1\\,\\text{u} = 1.66054 \\cdot 10^{-27}\\,\\text{kg}$. Assume that all the thermal power comes from the fissions of uranium-235. How many kilograms of uranium-235 undergo fission in the reactor in a day?",
+      "answer": 4.5,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L3-02",
+      "level": 3,
+      "text": "The radiated power of the Sun is $3.83 \\cdot 10^{26}\\,\\text{W}$. The energy is produced in the core of the Sun by fusion, in which one helium-4 nucleus is formed from four hydrogen nuclei in the net reaction. The energy released in the net reaction is obtained from the difference between the masses of four hydrogen atoms and one helium atom. The mass of a hydrogen atom is $1.0078250\\,\\text{u}$ and that of a helium-4 atom $4.0026033\\,\\text{u}$. How many helium nuclei are formed in the Sun per second? Assume that all the energy released ends up as radiated power. Give the answer in the unit $10^{37}\\,\\tfrac{1}{\\text{s}}$.",
+      "answer": 8.94,
+      "unit": "10³⁷ 1/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-11-L3-03",
+      "level": 3,
+      "text": "Spent nuclear fuel contains plutonium-239, whose half-life is $24\\,100\\,\\text{a}$. How long does it take for its activity to decrease to a thousandth of the original? Give the answer in the unit $10^{5}\\,\\text{a}$.",
+      "answer": 2.4,
+      "unit": "10⁵ a",
+      "tolerance": 0.02
+    }
+  ]
+}

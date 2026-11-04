@@ -1,0 +1,509 @@
+{
+  "version": 1,
+  "contribution": "The law of gravitation and the equation of motion of uniform circular motion are combined: the gravitational force is the only force on a satellite and therefore the net force of the circular motion, which gives the orbital speed $v = \\sqrt{\\gamma M / r}$, the orbital period and the mass of the central body; in addition weightlessness is explained as free fall and you estimate when the circular model holds.",
+  "learn": [
+    "explain why a satellite stays in a circular orbit and why an astronaut is weightless.",
+    "calculate the orbital speed and orbital period of a satellite from the equation $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$.",
+    "estimate when the model of uniform circular motion describes an orbit well."
+  ],
+  "prior": [
+    "In uniform circular motion a body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre, and the speed is $v = \\tfrac{2\\pi r}{T}$ (chapter *Centripetal acceleration and the equation of motion in a circle*)",
+    "The gravitational force between two bodies is $F = \\gamma \\tfrac{Mm}{r^2}$, and the acceleration of free fall at distance $r$ is $g = \\tfrac{\\gamma M}{r^2}$ (chapter *The gravitational force between bodies*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The International Space Station ISS orbits the Earth at an altitude of about $420\\,\\text{km}$, and you can see it as a bright moving point in the Finnish sky too. The station has a mass of about $420\\,000\\,\\text{kg}$, yet it does not fall, although nothing holds it up. Inside the station, astronauts, tools and drops of water float in the air.",
+      "question": "What keeps the ISS in its orbit, and why do the astronauts float inside it?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "optional": true,
+      "type": "choice",
+      "title": "Review: net force in circular motion",
+      "prompt": "A body goes round a horizontal circular path at a constant speed. In which direction does the net force on it point?",
+      "choices": [
+        {
+          "text": "Towards the centre of the path.",
+          "correct": true,
+          "feedback": "Correct. In uniform circular motion the direction of the velocity changes all the time, so the body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre, and the net force $\\Sigma F = \\tfrac{mv^2}{r}$ points in the same direction (chapter *Centripetal acceleration and the equation of motion in a circle*)."
+        },
+        {
+          "text": "In the direction of motion, that is along the tangent of the path.",
+          "feedback": "A force along the tangent would change the speed. In uniform circular motion the speed stays the same and only the direction of the velocity changes, so the net force is perpendicular to the velocity and points towards the centre (chapter *Centripetal acceleration and the equation of motion in a circle*)."
+        },
+        {
+          "text": "Away from the centre, because the body tends to move outwards.",
+          "feedback": "The body does not tend to move outwards but straight ahead, along the tangent of the path. To make it turn, a force towards the centre must act on it (chapter *Centripetal acceleration and the equation of motion in a circle*)."
+        },
+        {
+          "text": "The net force is zero, because the speed does not change.",
+          "feedback": "The speed does not change, but the direction of the velocity does, so the body accelerates. Without a net force the body would move in a straight line (chapter *Centripetal acceleration and the equation of motion in a circle*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: speed too low",
+      "prompt": "A satellite is launched horizontally from an altitude of $400\\,\\text{km}$. Its speed is, however, slightly lower than the speed at which it would orbit in a circle. What happens to the satellite when air resistance is ignored?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "It falls straight down towards the centre of the Earth, because the horizontal speed is not enough.",
+          "feedback": "The values of the model refute this: at the speed $7.60\\,\\text{km/s}$ the satellite does not fall straight down; its path curves and the lowest altitude is about $155\\,\\text{km}$, after which the satellite returns to the altitude of $400\\,\\text{km}$. The horizontal speed does not vanish just because gravity pulls the satellite downwards."
+        },
+        {
+          "text": "It goes round a smaller circle a little lower, because the speed is enough only for a shorter path.",
+          "feedback": "The values of the model refute this: at the speed $7.60\\,\\text{km/s}$ the lowest altitude is about $155\\,\\text{km}$ and the highest $400\\,\\text{km}$. The path is not a circle, because the distance from the centre of the Earth changes during the revolution: the satellite descends and returns to the starting altitude."
+        },
+        {
+          "text": "The path curves more sharply than a circle: the satellite descends lower and returns to the starting altitude or hits the Earth.",
+          "correct": true,
+          "feedback": "Correct. In the model, at the speed $7.60\\,\\text{km/s}$ the lowest altitude is about $155\\,\\text{km}$ and the satellite returns to the altitude of $400\\,\\text{km}$, and at the speed $7.00\\,\\text{km/s}$ it hits the Earth. A circular orbit is obtained at only one speed."
+        },
+        {
+          "text": "It stays hovering in place, because gravity is very small so high up.",
+          "feedback": "The values of the model refute this: at an altitude of $400\\,\\text{km}$ the acceleration due to the gravitational force is about $8.7\\,\\text{m/s}^2$, almost as large as at the surface of the Earth. The satellite does not stay in place; its path curves downwards, and at the speed $7.00\\,\\text{km/s}$ it hits the Earth."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a light and a heavy satellite",
+      "prompt": "A CubeSat has a mass of $1\\,\\text{kg}$ and the ISS about $420\\,000\\,\\text{kg}$. Both are to orbit in a circle at an altitude of $400\\,\\text{km}$. Which one has to move faster?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The ISS, because a much greater gravitational force acts on it.",
+          "feedback": "The values of the model refute this: at the speed $7.67\\,\\text{km/s}$ both follow the same orbit in the same time, about $92.4\\,\\text{min}$. A greater force does act on the ISS, $3.65\\,\\text{MN}$ instead of $8.69\\,\\text{N}$, but its mass is greater by the same factor, so the acceleration is the same."
+        },
+        {
+          "text": "The CubeSat, because a light body stays in orbit only at a high speed.",
+          "feedback": "The values of the model refute this: a satellite of $1\\,\\text{kg}$ at the speed $7.67\\,\\text{km/s}$ follows exactly the same orbit as a station of $420\\,000\\,\\text{kg}$. A small gravitational force acts on a small mass, and an equally small force is needed to turn it."
+        },
+        {
+          "text": "Both have the same speed, because mass does not affect the speed in a circular orbit.",
+          "correct": true,
+          "feedback": "Correct. In the model all masses follow the same orbit at the speed $7.67\\,\\text{km/s}$ in about $92.4\\,\\text{min}$. The gravitational force grows with the mass, but so does the force needed to turn a heavier body."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: why does the astronaut float?",
+      "layout": "models",
+      "prompt": "On the ISS an astronaut floats in the air, and if they stood on a scale, it would show zero. Which explanation is physically correct?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-paino",
+        "pending": "Feedback opens when you have read the section Weightlessness."
+      },
+      "choices": [
+        {
+          "text": "At an altitude of about $400\\,\\text{km}$ there is no gravity any more, so nothing pulls the astronaut.",
+          "feedback": "At the altitude of the ISS the acceleration due to the gravitational force is about $8.6\\,\\text{m/s}^2$, about $88\\,\\%$ of the value at the surface of the Earth. Without gravity the station would not orbit the Earth but fly straight away."
+        },
+        {
+          "text": "Gravity is so weak there that the astronaut does not feel it at all.",
+          "feedback": "Gravity is not weak: on an astronaut of $70\\,\\text{kg}$ a weight of about $605\\,\\text{N}$ acts on the ISS, compared with $687\\,\\text{N}$ at the surface of the Earth. The floating is due to the astronaut and the station falling together."
+        },
+        {
+          "text": "The astronaut and the station fall freely with the same acceleration, so the floor does not press on them.",
+          "correct": true,
+          "feedback": "Correct. Only gravity acts on each of them, and each gets the same acceleration. Because they fall in the same way, the support force is zero: this free fall is called weightlessness."
+        },
+        {
+          "text": "Centrifugal force cancels gravity, so there is no net force on the astronaut.",
+          "feedback": "If some force cancelled gravity, the net force would be zero and the station would continue straight ahead. The station does, however, orbit the Earth, so a net force acts on it towards the centre of the Earth: it is the gravitational force."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Launch a satellite horizontally and watch what kind of orbit the gravity of the Earth draws for it.",
+      "howto": "Choose the launch altitude and the mass of the satellite and adjust the launch speed $v$. *Launch* sends the satellite from the highest point of its orbit horizontally to the right. The black line is the orbit of the satellite and the dashed line is a circle whose radius is the distance at the moment of launch. The graph on the right (below, on a phone) shows the altitude $h$ of the satellite above the surface as a function of how many degrees the satellite has gone round the Earth; the dashed line is the launch altitude. When the orbit is a circle, the graph is a horizontal line. After the first revolution the readings show the lowest and highest altitude of the orbit and the orbital period $T$. When you change any value, the satellite returns to its starting point. *Speed* changes only the pace of the animation: a revolution takes a few seconds on the screen, and the time $t$ is simulated time.",
+      "model": "Only the gravitational force of the Earth $F = \\gamma \\tfrac{Mm}{r^2}$ acts on the satellite, towards the centre of the Earth, where $M = 5.97 \\cdot 10^{24}\\,\\text{kg}$ and the radius of the Earth is $R = 6371\\,\\text{km}$. Air resistance, the gravity of the Moon and the Sun and the motion of the Earth are not in the model, so, for example, an orbit that descends to an altitude of $155\\,\\text{km}$ would not last in reality. The Earth stays in place, because the satellite is much lighter. At the distance of the Moon the satellite is a test body: the real Moon's own mass would move the Earth too. All readings are values of the model.",
+      "calc": "The orbit is not drawn ready-made; the motion is calculated in small time steps. At each step the acceleration $\\tfrac{F}{m} = \\tfrac{\\gamma M}{r^2}$ towards the centre of the Earth is calculated, and the position and velocity are updated with it (the velocity Verlet method, step $\\tfrac{1}{1500}$ of the orbital period of the local circular orbit). The orbital period $T$ is the time in which the satellite goes once round the Earth. The length of the red force arrow is the same for all masses at the moment of launch and decreases like $\\tfrac{1}{r^2}$; the magnitude of the force is shown in the readings. The length of the blue velocity arrow is proportional to the speed."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: at what speed is the orbit a circle?",
+      "intro": "Test prediction 1. The launch altitude is $400\\,\\text{km}$ and the mass stays constant; change only the launch speed. First launch the satellite at the speed $7.00\\,\\text{km/s}$, then, for example, at the speeds $7.60$, $8.00$ and $7.70\\,\\text{km/s}$. After each launch, record the lowest and highest altitude of the orbit. Find the speed at which they are almost equal.",
+      "initial": {
+        "h": "400",
+        "m": "1000",
+        "v": 7
+      },
+      "locked": [
+        "h",
+        "m"
+      ],
+      "vary": "v",
+      "names": {
+        "v": "launch speed $v$",
+        "h": "launch altitude $h$",
+        "m": "mass of the satellite $m$"
+      },
+      "values": {
+        "v": {
+          "7": "$7.00\\,\\text{km/s}$"
+        },
+        "h": {
+          "400": "$400\\,\\text{km}$"
+        },
+        "m": {
+          "1000": "$1000\\,\\text{kg}$"
+        }
+      },
+      "units": {
+        "v": "km/s",
+        "h": "km",
+        "m": "kg"
+      },
+      "measure": [
+        {
+          "key": "hmin",
+          "label": "lowest altitude (km)"
+        },
+        {
+          "key": "hmax",
+          "label": "highest altitude (km)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "At what launch speed does the satellite orbit in a circle at an altitude of $400\\,\\text{km}$? Answer in kilometres per second to two decimal places.",
+        "answer": 7.67,
+        "unit": "km/s",
+        "tolerance": 0.001,
+        "hints": [
+          "When the speed is too low, the lowest altitude stays below $400\\,\\text{km}$; when it is too high, the highest altitude rises above $400\\,\\text{km}$. In which direction must the speed be changed?",
+          "Halve the interval: if $7.60\\,\\text{km/s}$ is too low and $7.70\\,\\text{km/s}$ too high, try $7.65\\,\\text{km/s}$ and continue from there.",
+          "A circular orbit is obtained when the gravitational force is exactly the force required by the circular motion: $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$. You can check the result by calculating $v = \\sqrt{\\tfrac{\\gamma M}{r}}$ with $r = 6771\\,\\text{km}$."
+        ],
+        "mistakes": [
+          {
+            "value": 7.6,
+            "feedback": "At the speed $7.60\\,\\text{km/s}$ the lowest altitude is about $155\\,\\text{km}$, so the orbit is not a circle. Increase the speed in small steps until the lowest and highest altitudes are almost the same."
+          },
+          {
+            "value": 30.8,
+            "feedback": "In the calculation you put the altitude $h = 400\\,\\text{km}$ in place of the distance $r$. The orbital radius is measured from the centre of the Earth: $r = 6371\\,\\text{km} + 400\\,\\text{km} = 6771\\,\\text{km}$."
+          }
+        ],
+        "solution": "**Given:** launch altitude $h = 400\\,\\text{km}$; in the simulation $M = 5.97 \\cdot 10^{24}\\,\\text{kg}$ and $R = 6371\\,\\text{km}$; $\\gamma = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$\n\n**Find:** the launch speed $v$ of the circular orbit in km/s\n\n**Principle:** In the simulation the circular orbit is found at the speed at which the lowest and highest altitudes of the orbit are equal. The result can be checked by calculation: only gravity acts on the satellite, so it is the net force of the circular motion, $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$.\n\n**Formula:** $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$, from which the mass $m$ cancels and $v = \\sqrt{\\dfrac{\\gamma M}{r}}$, where $r = R + h$\n\n**Conversions:** $r = 6371\\,\\text{km} + 400\\,\\text{km} = 6771\\,\\text{km} = 6.771 \\cdot 10^{6}\\,\\text{m}$\n\n**Substitution:** $\\gamma M = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot 5.97 \\cdot 10^{24}\\,\\text{kg} = 3.984 \\cdot 10^{14}\\,\\text{m}^3/\\text{s}^2$, so $v = \\sqrt{\\dfrac{3.984 \\cdot 10^{14}\\,\\text{m}^3/\\text{s}^2}{6.771 \\cdot 10^{6}\\,\\text{m}}} = 7671\\,\\text{m/s} = 7.671\\,\\text{km/s}$\n\n**Answer:** $7.67\\,\\text{km/s}$, to two decimal places, because the step of the speed slider of the simulation is $0.01\\,\\text{km/s}$.\n\n**Reasonableness:** In the simulation at the speed $7.67\\,\\text{km/s}$ the lowest altitude is about $396\\,\\text{km}$ and the highest $400\\,\\text{km}$, and at the speed $7.68\\,\\text{km/s}$ the highest altitude rises to about $432\\,\\text{km}$, so the speed of the circular orbit lies between these. The result is slightly greater than the $7.66\\,\\text{km/s}$ of the ISS in the example, because the orbit is $20\\,\\text{km}$ lower."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: does the mass of the satellite matter?",
+      "intro": "Test prediction 2. The launch altitude is $400\\,\\text{km}$ and the launch speed $7.67\\,\\text{km/s}$; change only the mass of the satellite. Launch each satellite and, after the first revolution, record the lowest and highest altitude, the orbital period and the gravitational force.",
+      "initial": {
+        "h": "400",
+        "v": 7.67,
+        "m": "1"
+      },
+      "locked": [
+        "h",
+        "v"
+      ],
+      "vary": "m",
+      "names": {
+        "v": "launch speed $v$",
+        "h": "launch altitude $h$",
+        "m": "mass of the satellite $m$"
+      },
+      "values": {
+        "h": {
+          "400": "$400\\,\\text{km}$"
+        },
+        "m": {
+          "1": "$1\\,\\text{kg}$"
+        }
+      },
+      "units": {
+        "v": "km/s",
+        "h": "km",
+        "m": "kg"
+      },
+      "measure": [
+        {
+          "key": "hmin",
+          "label": "lowest altitude (km)"
+        },
+        {
+          "key": "hmax",
+          "label": "highest altitude (km)"
+        },
+        {
+          "key": "T",
+          "label": "T (min)"
+        },
+        {
+          "key": "F",
+          "label": "F (N)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "data",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Real orbits",
+      "text": "The table gives the orbital radius $r$ (distance from the centre of the Earth) and the orbital period $T$ of four satellites of the Earth in nearly circular orbits.\n\n| Satellite | $r$ (km) | $T$ |\n| --- | --- | --- |\n| ISS | $6790$ | $92.9\\,\\text{min}$ |\n| GPS satellite | $26\\,560$ | $11\\,\\text{h}\\;58\\,\\text{min}$ |\n| geostationary satellite | $42\\,164$ | $23\\,\\text{h}\\;56\\,\\text{min}$ |\n| Moon | $384\\,400$ | $27.32\\,\\text{d}$ |",
+      "source": "statistics",
+      "source_note": "NASA: International Space Station Facts and Figures and Moon Fact Sheet (2024); GPS.gov: Space Segment (2024); the orbital period of a geostationary orbit is the rotation period of the Earth, that is, the sidereal day.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Calculate the orbital speed of the GPS satellite from the values in the table. Answer in kilometres per second.",
+        "answer": 3.87,
+        "unit": "km/s",
+        "tolerance": 0.02,
+        "hints": [
+          "In one revolution the satellite travels the circumference of the circle. What is the circumference?",
+          "$v = \\tfrac{2\\pi r}{T}$. Convert the orbital period into seconds first.",
+          "$T = 11 \\cdot 3600\\,\\text{s} + 58 \\cdot 60\\,\\text{s} = 43\\,080\\,\\text{s}$ and $r = 2.656 \\cdot 10^{7}\\,\\text{m}$."
+        ],
+        "mistakes": [
+          {
+            "value": 232,
+            "feedback": "You used minutes as the orbital period. Convert $11\\,\\text{h}\\;58\\,\\text{min}$ into seconds: $43\\,080\\,\\text{s}$."
+          },
+          {
+            "value": 2.95,
+            "feedback": "You used the altitude of the satellite above the surface as the orbital radius. The $r$ in the table is already the distance from the centre of the Earth, so use it as it is: $r = 26\\,560\\,\\text{km}$."
+          }
+        ],
+        "solution": "**Given:** orbital radius of the GPS satellite $r = 26\\,560\\,\\text{km}$ and orbital period $T = 11\\,\\text{h}\\;58\\,\\text{min}$ from the table\n\n**Find:** the orbital speed $v$ in km/s\n\n**Principle:** The orbit is nearly a circle, and the satellite moves at a constant speed, covering the circumference $2\\pi r$ of the circle in one revolution, in the orbital period $T$.\n\n**Formula:** $v = \\dfrac{2\\pi r}{T}$\n\n**Conversions:** $r = 26\\,560\\,\\text{km} = 2.656 \\cdot 10^{7}\\,\\text{m}$ and $T = 11 \\cdot 3600\\,\\text{s} + 58 \\cdot 60\\,\\text{s} = 43\\,080\\,\\text{s}$\n\n**Substitution:** $v = \\dfrac{2\\pi \\cdot 2.656 \\cdot 10^{7}\\,\\text{m}}{43\\,080\\,\\text{s}} = 3873.8\\,\\text{m/s} = 3.8738\\,\\text{km/s}$\n\n**Answer:** $3.87\\,\\text{km/s}$, three significant figures as in the orbital period $11\\,\\text{h}\\;58\\,\\text{min}$.\n\n**Reasonableness:** The GPS satellite is about four times farther from the centre of the Earth than the ISS ($26\\,560\\,\\text{km} : 6790\\,\\text{km} \\approx 3.9$), and its speed is about half of the speed of the ISS, $7.65\\,\\text{km/s}$. The circular-orbit model $v = \\sqrt{\\tfrac{\\gamma M}{r}}$ gives $3.873\\,\\text{km/s}$ for the same radius, almost the same value."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what decides a circular orbit?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "On the basis of your tables, write: what happened to the orbit when the launch speed was too low or too high, and at what speed was the orbit a circle? Did the mass of the satellite affect the orbit, although the gravitational force changed? What force keeps the satellite in a circular orbit?",
+      "model": "When the launch speed was $7.00\\,\\text{km/s}$, the satellite hit the Earth, and at the speed $7.60\\,\\text{km/s}$ it descended to an altitude of about $155\\,\\text{km}$ and returned to the launch altitude. At the speed $8.00\\,\\text{km/s}$ it rose to an altitude of about $1700\\,\\text{km}$. The circular orbit was obtained at about the speed $7.67\\,\\text{km/s}$, when the lowest and highest altitudes were almost equal. In experiment 2 all masses followed the same orbit in about $92.4\\,\\text{min}$, although the gravitational force grew with the mass ($8.69\\,\\text{N}$, $8.69\\,\\text{kN}$, $3.65\\,\\text{MN}$). The satellite is kept in its orbit by the gravitational force of the Earth, which is the only force and therefore the net force: in a circular orbit it is exactly the force $\\tfrac{mv^2}{r}$ required by the circular motion. Because both are proportional to the mass, the mass does not affect the orbital speed. The values are values of the model.",
+      "criteria": [
+        "The answer says that at too low a speed the satellite descended or hit the Earth, and at too high a speed it rose farther away.",
+        "The answer gives the speed of the circular orbit from your own readings, about $7.7\\,\\text{km/s}$ at an altitude of $400\\,\\text{km}$.",
+        "The answer says that the mass did not change the orbit or the orbital period, although the force changed.",
+        "The answer names the gravitational force as the only force, acting as the net force of the circular motion towards the centre of the Earth."
+      ]
+    },
+    {
+      "id": "teoria-1",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "teoria-paino",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Painottomuus"
+      ]
+    },
+    {
+      "id": "teoria-malli",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Milloin ympyrämalli pätee"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the theory. Then return to the opening question: what keeps the ISS in its orbit, and why do the astronauts float inside it?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2",
+        "ennuste-3"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates the orbital speed of the ISS when the station orbits at an altitude of $420\\,\\text{km}$. They write\n\n$$\\begin{aligned} v &= \\sqrt{\\frac{\\gamma M}{h}} \\\\ &= \\sqrt{\\frac{3.984 \\cdot 10^{14}}{420\\,000}}\\,\\text{m/s} \\\\ &\\approx 30.8\\,\\text{km/s} \\end{aligned}$$\n\nwhere they have calculated $\\gamma M = 6.674 \\cdot 10^{-11} \\cdot 5.97 \\cdot 10^{24}\\,\\text{m}^3/\\text{s}^2 = 3.984 \\cdot 10^{14}\\,\\text{m}^3/\\text{s}^2$.\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The altitude $h$ has been put in the formula, although the orbital radius is measured from the centre of the Earth: $r = R + h = 6791\\,\\text{km}$.",
+          "correct": true,
+          "feedback": "Correct. The gravitational force depends on the distance from the centre of the Earth, not from the surface. With the correct radius $r = 6.791 \\cdot 10^{6}\\,\\text{m}$ the speed is $7.66\\,\\text{km/s}$. The result $30.8\\,\\text{km/s}$ is almost four times the correct speed."
+        },
+        {
+          "text": "The mass of the station should also have been put in the formula.",
+          "feedback": "The mass of the station cancels from the equation $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$, so it is not needed. The error is in the distance: the altitude $420\\,\\text{km}$ has been put in the formula instead of the distance $r = R + h$."
+        },
+        {
+          "text": "The calculation should have used the acceleration of free fall $g = 9.81\\,\\text{m/s}^2$ instead of the gravitational constant.",
+          "feedback": "The value $9.81\\,\\text{m/s}^2$ holds only at the surface of the Earth; at the altitude of the ISS the acceleration is about $8.6\\,\\text{m/s}^2$. Using the gravitational constant is correct. The error is in the distance: the formula needs $r = R + h$, not the altitude $h$."
+        },
+        {
+          "text": "The square root is not needed, because the correct formula is $v = \\tfrac{\\gamma M}{r^2}$.",
+          "feedback": "The expression $\\tfrac{\\gamma M}{r^2}$ is an acceleration, not a speed; its unit is $\\text{m/s}^2$. The orbital speed is obtained from the equation $v^2 = \\tfrac{\\gamma M}{r}$, so the square root belongs in the formula. The error is that the altitude $h$ has been put in the formula and not the distance $r = R + h$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The Hubble Space Telescope orbits the Earth in a nearly circular orbit, and according to NASA its orbital period is about $95.4\\,\\text{min}$. At what altitude above the surface does Hubble orbit? The mass of the Earth is $5.97 \\cdot 10^{24}\\,\\text{kg}$ and its radius $6371\\,\\text{km}$. Answer in kilometres.",
+      "answer": 544,
+      "unit": "km",
+      "tolerance": 0.02,
+      "hints": [
+        "You now know the orbital period, not the speed. Which two equations connect the speed, the radius and the orbital period in a circular orbit?",
+        "Put $v = \\tfrac{2\\pi r}{T}$ into the equation $v^2 = \\tfrac{\\gamma M}{r}$ and solve $r^3 = \\tfrac{\\gamma M T^2}{4\\pi^2}$.",
+        "$T = 95.4 \\cdot 60\\,\\text{s} = 5724\\,\\text{s}$, so $r = \\sqrt[3]{\\tfrac{\\gamma M T^2}{4\\pi^2}} \\approx 6.92 \\cdot 10^{6}\\,\\text{m}$. Finally remember to subtract the radius of the Earth."
+      ],
+      "mistakes": [
+        {
+          "value": 6915,
+          "feedback": "You got the orbital radius, that is, the distance from the centre of the Earth. The altitude above the surface is $h = r - R$: subtract the radius of the Earth, $6371\\,\\text{km}$."
+        }
+      ],
+      "solution": "**Given:** orbital period $T = 95.4\\,\\text{min}$, mass of the Earth $M = 5.97 \\cdot 10^{24}\\,\\text{kg}$ and radius $R = 6371\\,\\text{km}$, $\\gamma = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$\n\n**Find:** the altitude above the surface $h$ in kilometres\n\n**Principle:** Only the gravitational force of the Earth acts on the telescope, so it is the net force of the circular motion: $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$. In addition, in uniform circular motion $v = \\tfrac{2\\pi r}{T}$. When the speed is substituted, an equation for the radius $r$ remains.\n\n**Formula:** $\\dfrac{\\gamma M}{r} = v^2 = \\dfrac{4\\pi^2 r^2}{T^2}$, from which $r^3 = \\dfrac{\\gamma M T^2}{4\\pi^2}$, $r = \\sqrt[3]{\\dfrac{\\gamma M T^2}{4\\pi^2}}$ and $h = r - R$\n\n**Conversions:** $T = 95.4 \\cdot 60\\,\\text{s} = 5724\\,\\text{s}$ and $R = 6371\\,\\text{km} = 6.371 \\cdot 10^{6}\\,\\text{m}$\n\n**Substitution:** $\\gamma M = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot 5.97 \\cdot 10^{24}\\,\\text{kg} = 3.984 \\cdot 10^{14}\\,\\text{m}^3/\\text{s}^2$, $\\gamma M T^2 = 3.984 \\cdot 10^{14}\\,\\tfrac{\\text{m}^3}{\\text{s}^2} \\cdot (5724\\,\\text{s})^2 = 1.3054 \\cdot 10^{22}\\,\\text{m}^3$ and $r = \\sqrt[3]{\\dfrac{1.3054 \\cdot 10^{22}\\,\\text{m}^3}{4\\pi^2}} = \\sqrt[3]{3.307 \\cdot 10^{20}\\,\\text{m}^3} = 6.915 \\cdot 10^{6}\\,\\text{m}$, so $h = 6.915 \\cdot 10^{6}\\,\\text{m} - 6.371 \\cdot 10^{6}\\,\\text{m} = 0.544 \\cdot 10^{6}\\,\\text{m} = 544\\,\\text{km}$\n\n**Answer:** about $544\\,\\text{km}$, three significant figures as in the orbital period $95.4\\,\\text{min}$.\n\n**Reasonableness:** The orbital period of Hubble is slightly longer than the $92.9\\,\\text{min}$ of the ISS, so it must orbit slightly higher than the ISS ($420\\,\\text{km}$), as the result says. Check: at the radius $6915\\,\\text{km}$ the orbital speed is $v = \\tfrac{2\\pi r}{T} \\approx 7.59\\,\\text{km/s}$, and $\\sqrt{\\tfrac{\\gamma M}{r}}$ gives the same value."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks use a single formula, level 2 tasks need two steps or solving a formula for another quantity, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Orbital speed and distance",
+      "prompt": "Satellite A orbits the Earth in a circular orbit of radius $r$. Satellite B orbits in a circular orbit of radius $4r$. How does the orbital speed of B compare with the orbital speed of A?",
+      "choices": [
+        {
+          "text": "The orbital speed of B is half of the orbital speed of A.",
+          "correct": true,
+          "feedback": "Correct. $v = \\sqrt{\\tfrac{\\gamma M}{r}}$, so when the radius becomes four times as large, the speed changes by the factor $\\tfrac{1}{\\sqrt{4}} = \\tfrac{1}{2}$."
+        },
+        {
+          "text": "The orbital speed of B is a quarter of the orbital speed of A.",
+          "feedback": "A quarter would be the result if the speed were inversely proportional to the radius. The orbital speed is, however, $v = \\sqrt{\\tfrac{\\gamma M}{r}}$, so quadrupling the radius reduces the speed by the factor $\\tfrac{1}{\\sqrt{4}} = \\tfrac{1}{2}$."
+        },
+        {
+          "text": "The orbital speed of B is double, because its orbit is longer.",
+          "feedback": "A longer orbit does not require a higher speed. Far away gravity is weaker, and a weaker force can turn only a more slowly moving body into a circular orbit: $v = \\sqrt{\\tfrac{\\gamma M}{r}}$ decreases as the radius increases."
+        },
+        {
+          "text": "The orbital speeds are equal, because both orbit the same Earth.",
+          "feedback": "The mass of the Earth is the same, but the orbital speed also depends on the radius: $v = \\sqrt{\\tfrac{\\gamma M}{r}}$. At four times the radius the speed is half."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. The mass of Mars from the orbit of its moon",
+      "prompt": "The moon of Mars, Phobos, orbits Mars in a nearly circular orbit of radius $9376\\,\\text{km}$, and its orbital period is $7\\,\\text{h}\\;39\\,\\text{min}$. Calculate the mass of Mars in kilograms. Write the power of ten with the e notation: for example, $5.00 \\cdot 10^{23}$ is written 5.00e23.",
+      "answer": 6.43e+23,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Only the gravity of Mars acts on Phobos. Which equation says that the gravitational force is the net force of the circular motion?",
+        "$\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$ and $v = \\tfrac{2\\pi r}{T}$, so $M = \\tfrac{4\\pi^2 r^3}{\\gamma T^2}$.",
+        "$T = 7 \\cdot 3600\\,\\text{s} + 39 \\cdot 60\\,\\text{s} = 27\\,540\\,\\text{s}$ and $r = 9.376 \\cdot 10^{6}\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 6.89e+23,
+          "feedback": "You wrote the orbital period as $7.39\\,\\text{h}$. The time $7\\,\\text{h}\\;39\\,\\text{min}$ is $7 \\cdot 3600\\,\\text{s} + 39 \\cdot 60\\,\\text{s} = 27\\,540\\,\\text{s}$."
+        }
+      ],
+      "solution": "**Given:** orbital radius of Phobos $r = 9376\\,\\text{km}$ and orbital period $T = 7\\,\\text{h}\\;39\\,\\text{min}$, $\\gamma = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$\n\n**Find:** the mass of Mars $M$\n\n**Principle:** Only the gravitational force of Mars acts on Phobos, so it is the net force of the circular motion: $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$. Phobos is much lighter than Mars, so Mars stays practically in place. The speed is obtained from the orbital period: $v = \\tfrac{2\\pi r}{T}$.\n\n**Formula:** $\\gamma \\dfrac{M}{r} = v^2 = \\dfrac{4\\pi^2 r^2}{T^2}$, from which $M = \\dfrac{4\\pi^2 r^3}{\\gamma T^2}$\n\n**Conversions:** $r = 9376\\,\\text{km} = 9.376 \\cdot 10^{6}\\,\\text{m}$ and $T = 7 \\cdot 3600\\,\\text{s} + 39 \\cdot 60\\,\\text{s} = 27\\,540\\,\\text{s}$\n\n**Substitution:** $4\\pi^2 r^3 = 4\\pi^2 \\cdot (9.376 \\cdot 10^{6}\\,\\text{m})^3 = 3.2540 \\cdot 10^{22}\\,\\text{m}^3$ and $\\gamma T^2 = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot (27\\,540\\,\\text{s})^2 = 5.0619 \\cdot 10^{-2}\\,\\tfrac{\\text{m}^3}{\\text{kg}}$, so $M = \\dfrac{3.2540 \\cdot 10^{22}\\,\\text{m}^3}{5.0619 \\cdot 10^{-2}\\,\\text{m}^3/\\text{kg}} = 6.428 \\cdot 10^{23}\\,\\text{kg}$\n\n**Answer:** $6.43 \\cdot 10^{23}\\,\\text{kg}$, three significant figures as in the orbital period $7\\,\\text{h}\\;39\\,\\text{min}$.\n\n**Reasonableness:** According to NASA the mass of Mars is $6.42 \\cdot 10^{23}\\,\\text{kg}$, about a tenth of the mass of the Earth, $5.97 \\cdot 10^{24}\\,\\text{kg}$. Mars is a smaller planet than the Earth, so the result is of the right order of magnitude. Units: $\\tfrac{\\text{m}^3}{\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot \\text{s}^2} = \\tfrac{\\text{m}\\cdot\\text{kg}^2}{\\text{N}\\cdot\\text{s}^2} = \\text{kg}$, because $1\\,\\text{N} = 1\\,\\tfrac{\\text{kg}\\cdot\\text{m}}{\\text{s}^2}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Draw and explain",
+      "fbd": "draw",
+      "draw": true,
+      "model_figure": "fy5-6/malli",
+      "prompt": "On paper, draw a free-body diagram of a satellite orbiting the Earth in a circular orbit when the satellite is at the highest point of its orbit. Mark beside the satellite also its velocity and acceleration. Then use the diagram to explain why the satellite does not fall to the Earth, although gravity pulls it all the time.",
+      "model": "Only one force acts on the satellite, the gravitational force of the Earth $\\overline{F}$, which starts from the centre of the satellite towards the centre of the Earth, here straight down. There are no other forces: no air resistance, no force along the direction of motion and no centrifugal force. The velocity $\\overline{v}$ is along the tangent of the orbit and the acceleration $\\overline{a}_\\text{n}$ points in the direction of the net force, towards the centre of the Earth. The satellite falls towards the Earth all the time, but at the same time it moves sideways so fast that the orbit curves at the same rate as the surface of the Earth: the distance from the centre does not change. The gravitational force is the net force of the circular motion, $\\gamma \\tfrac{Mm}{r^2} = \\tfrac{mv^2}{r}$.",
+      "criteria": [
+        {
+          "key": "fbd_object",
+          "detail": "the satellite is drawn alone as a rectangle"
+        },
+        {
+          "key": "fbd_forces",
+          "detail": "the only force is the gravitational force $\\overline{F}$; no centrifugal force and no force along the direction of motion"
+        },
+        {
+          "key": "fbd_directions",
+          "detail": "the gravitational force points towards the centre of the Earth, the velocity along the tangent of the orbit"
+        },
+        {
+          "key": "fbd_representation",
+          "detail": "the velocity and acceleration are thin arrows beside the body, not forces"
+        },
+        "The explanation says that gravity turns the direction of the velocity but the sideways speed keeps the satellite at the same distance from the centre of the Earth."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and open the answer only afterwards."
+    }
+  ]
+}

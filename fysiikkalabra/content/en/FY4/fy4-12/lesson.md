@@ -507,6 +507,8 @@ Why must the car reach twice the velocity? The reason can be seen in the $(t,v)$
 
 If the cyclist is a distance $x_{0\text{B}}$ ahead at the start, the equation is $\tfrac12 a t^2 = x_{0\text{B}} + v\,t$. It is solved with the quadratic formula, and the time of the meeting is the positive root. A negative root would describe a moment before the start and does not belong to the situation; two positive roots would mean two meetings. If there is no positive root, the bodies do not meet.
 
+<figure class="unit-photo"><img src="pics/fy4/helsinki-trams.webp" alt="Two white trams side by side on a street, with old stone buildings behind them."><figcaption>Two trams in Helsinki in July 2026.</figcaption></figure>
+
 ## Worked example
 A cyclist rides along a straight road at a constant velocity of $6.0\,\text{m/s}$. At the moment $t = 0$ she is $16\,\text{m}$ ahead of the stop line at a traffic light. At the same moment a car standing at the line starts moving and accelerates uniformly at $2.0\,\text{m/s}^2$ in the same direction. When does the car overtake the cyclist, and how far from the stop line does the overtaking happen?
 

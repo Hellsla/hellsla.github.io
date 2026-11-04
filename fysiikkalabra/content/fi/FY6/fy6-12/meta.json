@@ -1,0 +1,22 @@
+{
+  "id": "fy6-12",
+  "course": "FY6",
+  "title": "Potentiaalienergia ja potentiaali sähkökentässä",
+  "goals": [
+    "LOPS FY6: potentiaalienergia ja potentiaali homogeenisessa sähkökentässä",
+    "LOPS FY6: osaa käyttää kentän ja potentiaalin käsitteitä sähkökentän kuvaamisessa"
+  ],
+  "prerequisites": [
+    "fy6-11"
+  ],
+  "glossary": [
+    "potentiaali",
+    "potentiaaliero",
+    "potentiaalienergia",
+    "elektronivoltti",
+    "tasapotentiaalipinta"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

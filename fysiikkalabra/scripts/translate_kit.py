@@ -11,6 +11,11 @@ Usage: python scripts/translate_kit.py extract <unit> <lang> <workdir>
                  the Finnish texts with each figure of figures.py cut to its empty placeholder
                  `<svg data-fig="name"></svg>` (apply draws it again in the language). Translate the text around them.
   figures.json   {"Finnish text figures.py draws": ""}: fill in the translations.
+  key_concepts.json
+                 an S2 language only (check_i18n.S2_LANGS, Selkeä suomi): {"candidates": the Finnish lesson's glossary
+                 terms, "key_concepts": [{"term", "explain"}]}: choose the 3–5 concepts the chapter needs most and
+                 explain each in one short plain sentence (NOTES.md §12, "Luvun tärkeät käsitteet"); apply writes the
+                 list into the translation's meta.json.
 
 apply copies the Finnish JSON files with the translated strings in place, writes the Markdown and figures.json into
 content/<lang>/, draws the figures in the language (figures.py --lang, practice.figures) and prints the unit's
@@ -111,6 +116,10 @@ def extract(unit, lang, work):
             (out / name).write_text(stub((b if b.exists() else a).read_text(), figs))
     (out / "strings.json").write_text(json.dumps(strings, ensure_ascii=False, indent=1) + "\n")
     (out / "source.json").write_text(json.dumps(source, ensure_ascii=False, indent=1) + "\n")
+    if lang in check_i18n.S2_LANGS and not unit.endswith("-sovella"):   # "Luvun tärkeät käsitteet" (NOTES.md §12)
+        fi_meta = json.loads(files[0][1].read_text()); tr_meta = json.loads(files[0][2].read_text()) if files[0][2].exists() else {}
+        (out / "key_concepts.json").write_text(json.dumps({"candidates": fi_meta.get("glossary", []), "key_concepts": tr_meta.get("key_concepts", [])},
+                                                          ensure_ascii=False, indent=1) + "\n")
     have = json.loads((tr / "figures.json").read_text()) if (tr / "figures.json").is_file() else {}
     ft = figure_texts(figs, lang)
     if ft: (out / "figures.json").write_text(json.dumps({t: have.get(t, "") for t in ft}, ensure_ascii=False, indent=1) + "\n")
@@ -128,6 +137,8 @@ def apply(unit, lang, work):
             for path, s in walk(data, keys):
                 k = pathkey(name, path)
                 if k in strings: put(new, path, strings[k])
+            kc = src / "key_concepts.json"
+            if name == "meta.json" and lang in check_i18n.S2_LANGS and kc.is_file(): new["key_concepts"] = json.loads(kc.read_text())["key_concepts"]
             b.write_text(json.dumps(new, ensure_ascii=False, indent=2) + "\n")
         else:
             b.write_text((src / name).read_text())
@@ -141,7 +152,6 @@ def apply(unit, lang, work):
         errs = practice.check(code, lang)
     else:
         if figpy.is_file(): subprocess.run([sys.executable, str(ROOT / "scripts/figures.py"), unit, "--lang", lang])
-        import check_i18n
         errs = []; check_i18n.check_lesson(courses.find_lesson(unit), tr, lang, errs)
         import inquiry
         if (tr / "inquiry.json").is_file():                # the build's own checks of the page, in the language

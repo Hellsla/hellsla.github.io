@@ -1,0 +1,338 @@
+{
+  "version": 1,
+  "contribution": "Applied chapter: the ideas of the module (battery energy, electric power $P = UI$, Joule's law, efficiency, fuse and residual current device) are combined in charging an electric car at home: charging time and losses, single-phase and three-phase charging, the main fuse and simultaneous loads, the cost of charging, and the heating of a cable and a joint.",
+  "learn": [
+    "calculate the charging time, the energy from the grid and the cost of charging from the battery energy, current and efficiency.",
+    "compare single-phase and three-phase charging and explain when simultaneous loads exceed the current of the main fuses.",
+    "explain with Joule's law why a charger has its own circuit and why extension cords and loose joints heat up."
+  ],
+  "prior": [
+    "The energy of a battery is the nominal voltage times the capacity, $W = UQ$, and the efficiency of charging is below $100\\,\\%$ (chapter *Batteries and the charging circuit*)",
+    "The current of a device on the mains is $I = P : U$, and energy is power times time in kilowatt-hours (chapter *Electrical energy at home*)",
+    "A fuse protects a cable from overheating and a residual current device protects a person from leakage current (chapter *Electrical safety at home and at work*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A family comes home on a winter evening. The car is plugged into the charging station on the wall of the house, the sauna is warming up with a $9\\,\\text{kW}$ heater and water is boiling in the kitchen. The neighbour charges his own car with an extension cord from a socket in the garage. By morning both cars should be full.",
+      "question": "Is the electricity of the home enough for everything at the same time, how long does charging take, and why is the extension cord not a good solution?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the energy of a battery",
+      "optional": true,
+      "prompt": "The nominal voltage of the battery of an electric car is $400\\,\\text{V}$ and its capacity is $150\\,\\text{Ah}$. How much energy fits in the battery?",
+      "choices": [
+        {
+          "text": "About $60\\,\\text{kWh}$, because energy is voltage times charge.",
+          "correct": true,
+          "feedback": "Correct. $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,000\\,\\text{Wh} = 60\\,\\text{kWh}$ (chapter *Batteries and the charging circuit*). Today we calculate how long it takes to charge a battery like this at home and what that demands of the electrical system of the home."
+        },
+        {
+          "text": "About $150\\,\\text{kWh}$, because the capacity tells the energy of the battery.",
+          "feedback": "Capacity is charge, not energy: an ampere-hour is current times time. Energy is obtained by multiplying the charge by the voltage: $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,\\text{kWh}$ (chapter *Batteries and the charging circuit*)."
+        },
+        {
+          "text": "About $2.7\\,\\text{kWh}$, because energy is voltage divided by charge.",
+          "feedback": "Voltage tells the energy per unit of charge, so energy is obtained by multiplying, not dividing: $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,\\text{kWh}$ (chapter *Batteries and the charging circuit*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: one phase or three?",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when you have calculated the charging times from the table and the Theory summary is visible."
+      },
+      "prompt": "Two charging stations each draw a current of $16\\,\\text{A}$ from every phase conductor they use. One uses one phase, the other three. The phase voltage is $230\\,\\text{V}$. How fast does the three-phase station charge the same battery compared with the single-phase one?",
+      "choices": [
+        {
+          "text": "Equally fast, because the current of both stations is $16\\,\\text{A}$.",
+          "feedback": "The three-phase station draws a current of $16\\,\\text{A}$ from each of the three phase conductors, and each phase transfers a power of $230\\,\\text{V} \\cdot 16\\,\\text{A} \\approx 3.7\\,\\text{kW}$. The power is thus $P = 3UI \\approx 11\\,\\text{kW}$, three times as much, and the charging time in the table is one third."
+        },
+        {
+          "text": "About three times as fast, because each phase transfers an equal power.",
+          "correct": true,
+          "feedback": "The calculations in the table support this: the single-phase station charges with a power of $230\\,\\text{V} \\cdot 16\\,\\text{A} \\approx 3.7\\,\\text{kW}$ and the three-phase station with $3 \\cdot 230\\,\\text{V} \\cdot 16\\,\\text{A} \\approx 11\\,\\text{kW}$. The same $40\\,\\text{kWh}$ takes about $12\\,\\text{h}$ or about $4\\,\\text{h}$."
+        },
+        {
+          "text": "Slower, because the current divides between three conductors and each carries less current.",
+          "feedback": "The current does not divide: each of the three phase conductors carries $16\\,\\text{A}$. Each phase transfers a power of $UI$, so the total power is $3UI \\approx 11\\,\\text{kW}$, three times the power of the single-phase station."
+        },
+        {
+          "text": "About $1.7$ times as fast, because the three-phase voltage is $400\\,\\text{V}$ and not $230\\,\\text{V}$.",
+          "feedback": "The voltage between the phase conductors is $400\\,\\text{V}$, but the station draws current from each phase at a voltage of $230\\,\\text{V}$ relative to the neutral conductor. Each of the three phases transfers a power of $230\\,\\text{V} \\cdot 16\\,\\text{A}$, so the power is three times as great, about $11\\,\\text{kW}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: heater, kettle and car",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when you have calculated the currents of the phases from the table and the Theory summary is visible."
+      },
+      "prompt": "The main fuses of a detached house are $3 \\cdot 25\\,\\text{A}$. At the same time the following are on: a three-phase $9.0\\,\\text{kW}$ sauna heater, a $2.0\\,\\text{kW}$ kettle on one phase and a three-phase $11\\,\\text{kW}$ charging station. What happens to the main fuses?",
+      "choices": [
+        {
+          "text": "Nothing, because each device is connected to its own circuit with its own fuse.",
+          "feedback": "The circuit fuses each protect the cable of their own circuit, but the currents of all the circuits pass through the same main fuses. According to the table, phase $\\text{L}_1$ carries $13.0\\,\\text{A} + 16\\,\\text{A} + 8.7\\,\\text{A} \\approx 37.7\\,\\text{A}$, which is well over $25\\,\\text{A}$."
+        },
+        {
+          "text": "The current exceeds $25\\,\\text{A}$ in every phase, so without load management a main fuse may blow.",
+          "correct": true,
+          "feedback": "The calculations in the table support this: the heater draws $13.0\\,\\text{A}$ from each phase and the station $16\\,\\text{A}$, so phases $\\text{L}_2$ and $\\text{L}_3$ carry $29.0\\,\\text{A}$ and phase $\\text{L}_1$ with the kettle $37.7\\,\\text{A}$. Load management reduces the charging current so that this does not happen."
+        },
+        {
+          "text": "Only the current of phase $\\text{L}_1$ is exceeded, because the kettle is on that phase only.",
+          "feedback": "The kettle increases the current of phase $\\text{L}_1$ the most, but the heater and the station together already draw $13.0\\,\\text{A} + 16\\,\\text{A} = 29.0\\,\\text{A}$ from every phase, which is over $25\\,\\text{A}$ in all three phases."
+        },
+        {
+          "text": "Nothing, because the total power of $22\\,\\text{kW}$ divides between three phases and each gets less than $25\\,\\text{A}$.",
+          "feedback": "Divided between three phases, $22\\,\\text{kW}$ is about $7.3\\,\\text{kW}$ per phase, and $7300\\,\\text{W} : 230\\,\\text{V} \\approx 32\\,\\text{A}$. The main fuses $3 \\cdot 25\\,\\text{A}$ allow only about $3 \\cdot 230\\,\\text{V} \\cdot 25\\,\\text{A} \\approx 17\\,\\text{kW}$ in total."
+        }
+      ]
+    },
+    {
+      "id": "tavat",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Three ways to charge",
+      "source": "example",
+      "source_note": "Invented example data: typical charging currents and estimated efficiencies, not a measurement of a particular car.",
+      "text": "A battery has to be charged with $40\\,\\text{kWh}$. The table shows three ways to charge at home. The phase voltage is $230\\,\\text{V}$ in all of them. At low power the efficiency of charging is usually poorer, because the own consumption of the charger of the car and the control electronics is spread over a longer time.\n\n| method | phases | $I$ | $\\eta$ |\n| --- | --- | --- | --- |\n| socket | $1$ | $8.0\\,\\text{A}$ | $85\\,\\%$ |\n| station, one phase | $1$ | $16\\,\\text{A}$ | $90\\,\\%$ |\n| station, three phases | $3$ | $16\\,\\text{A}$ | $90\\,\\%$ |\n\nCalculate the charging power $P$ and the charging time $t$ for each method. Does the charging fit in one night, for example ten hours?",
+      "question": {
+        "type": "numeric",
+        "prompt": "How long does charging take from an ordinary socket? Answer in hours.",
+        "answer": 25.575448,
+        "unit": "h",
+        "tolerance": 0.02,
+        "hints": [
+          "What is the charging power when the voltage is $230\\,\\text{V}$ and the current $8.0\\,\\text{A}$?",
+          "Only the fraction $\\eta$ of the energy taken from the grid goes into the battery, so the power transferred to the battery is $\\eta P$.",
+          "$t = \\dfrac{40\\,\\text{kWh}}{0.85 \\cdot 1.84\\,\\text{kW}}$."
+        ],
+        "mistakes": [
+          {
+            "value": 21.73913,
+            "feedback": "You forgot the losses. Only $85\\,\\%$ of the energy taken from the grid goes into the battery, so charging takes longer: $t = 40\\,\\text{kWh} : (0.85 \\cdot 1.84\\,\\text{kW}) \\approx 26\\,\\text{h}$."
+          },
+          {
+            "value": 18.478261,
+            "feedback": "You multiplied by the efficiency, which made charging shorter. Losses make charging longer, so the energy is divided by the power transferred to the battery, $\\eta P$: $t \\approx 26\\,\\text{h}$."
+          }
+        ],
+        "solution": "**Given:** into the battery $W_\\text{battery} = 40\\,\\text{kWh}$, voltage $U = 230\\,\\text{V}$, current $I = 8.0\\,\\text{A}$, one phase, efficiency $\\eta = 85\\,\\%$\n\n**Find:** charging time $t$ in hours\n\n**Principle:** A socket uses one phase, so the power is $P = UI$. The power is constant, so the energy taken from the grid is $Pt$, and the fraction $\\eta$ of it is stored in the battery.\n\n**Formula:** $\\eta U I t = W_\\text{battery}$, so $t = \\dfrac{W_\\text{battery}}{\\eta U I}$\n\n**Conversions:** $UI = 230\\,\\text{V} \\cdot 8.0\\,\\text{A} = 1840\\,\\text{W} = 1.84\\,\\text{kW}$ and $\\eta = 0.85$\n\n**Substitution:** $t = \\dfrac{40\\,\\text{kWh}}{0.85 \\cdot 1.84\\,\\text{kW}} = \\dfrac{40\\,\\text{kWh}}{1.564\\,\\text{kW}} = 25.6\\,\\text{h}$\n\n**Answer:** $26\\,\\text{h}$, two significant figures like the current $8.0\\,\\text{A}$ and the efficiency $85\\,\\%$.\n\n**Reasonableness:** About $1.6\\,\\text{kW}$ goes into the battery, and $40\\,\\text{kWh} : 1.6\\,\\text{kW} = 25\\,\\text{h}$. Charging takes more than a day and does not fit in one night. With a single-phase station the same takes about $12\\,\\text{h}$ and with a three-phase station about $4\\,\\text{h}$."
+      }
+    },
+    {
+      "id": "kuormat",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "The evening loads phase by phase",
+      "source": "example",
+      "source_note": "Invented example data: typical powers of household devices, not a measurement.",
+      "text": "The main fuses of a detached house are $3 \\cdot 25\\,\\text{A}$. The table shows three devices that are on at the same time in the evening, and the phase conductors they are connected to. Three-phase devices draw an equal current from each phase. The phase voltage is $230\\,\\text{V}$.\n\n| device | $P$ | phases |\n| --- | --- | --- |\n| sauna heater | $9.0\\,\\text{kW}$ | $\\text{L}_1$, $\\text{L}_2$, $\\text{L}_3$ |\n| kettle | $2.0\\,\\text{kW}$ | $\\text{L}_1$ |\n| charging station | $11\\,\\text{kW}$ | $\\text{L}_1$, $\\text{L}_2$, $\\text{L}_3$ |\n\nFirst calculate the current of each device in one phase conductor. Then add up the currents of each phase and compare them with the size of the main fuse. How large a current could the charging station draw while the heater is on?",
+      "question": {
+        "type": "numeric",
+        "prompt": "How large is the current in phase conductor $\\text{L}_1$ when all three devices are on?",
+        "answer": 37.73913,
+        "unit": "A",
+        "tolerance": 0.02,
+        "hints": [
+          "A three-phase device draws a current $I = P : (3U)$ from each phase, a single-phase device a current $I = P : U$.",
+          "The heater draws $9000\\,\\text{W} : 690\\,\\text{V} \\approx 13.0\\,\\text{A}$, the charging station $11\\,000\\,\\text{W} : 690\\,\\text{V} \\approx 16\\,\\text{A}$ and the kettle $2000\\,\\text{W} : 230\\,\\text{V} \\approx 8.7\\,\\text{A}$.",
+          "The currents of all three devices pass through phase $\\text{L}_1$: $I_1 = 13.0\\,\\text{A} + 16\\,\\text{A} + 8.7\\,\\text{A}$."
+        ],
+        "mistakes": [
+          {
+            "value": 29.043478,
+            "feedback": "This is the current of phases $\\text{L}_2$ and $\\text{L}_3$. The kettle is connected to phase $\\text{L}_1$, so its $8.7\\,\\text{A}$ is added: $I_1 \\approx 37.7\\,\\text{A}$."
+          },
+          {
+            "value": 95.826087,
+            "feedback": "You calculated the power of all the devices through a single $230\\,\\text{V}$ phase. Three-phase devices share their power between three phase conductors, so their current in one phase is $P : (3U)$."
+          }
+        ],
+        "solution": "**Given:** heater $P_\\text{heater} = 9.0\\,\\text{kW}$ and charging station $P_\\text{charger} = 11\\,\\text{kW}$ on three phases, kettle $P_\\text{kettle} = 2.0\\,\\text{kW}$ on phase $\\text{L}_1$, $U = 230\\,\\text{V}$\n\n**Find:** current $I_1$ of phase conductor $\\text{L}_1$ in amperes\n\n**Principle:** A three-phase device draws the same current from each phase, so its power is $P = 3UI$; the power of a single-phase device is $P = UI$. All the devices get their current through the same phase conductor, so the currents are added (chapter *Kirchhoff's laws and potential in a circuit*).\n\n**Formula:** $I_1 = \\dfrac{P_\\text{heater}}{3U} + \\dfrac{P_\\text{charger}}{3U} + \\dfrac{P_\\text{kettle}}{U}$\n\n**Conversions:** $P_\\text{heater} = 9000\\,\\text{W}$, $P_\\text{charger} = 11\\,000\\,\\text{W}$ and $P_\\text{kettle} = 2000\\,\\text{W}$; $3U = 690\\,\\text{V}$\n\n**Substitution:** $I_1 = \\dfrac{9000\\,\\text{W}}{690\\,\\text{V}} + \\dfrac{11\\,000\\,\\text{W}}{690\\,\\text{V}} + \\dfrac{2000\\,\\text{W}}{230\\,\\text{V}} = 13.04\\,\\text{A} + 15.94\\,\\text{A} + 8.70\\,\\text{A} = 37.7\\,\\text{A}$\n\n**Answer:** $38\\,\\text{A}$, two significant figures like the powers $9.0\\,\\text{kW}$ and $11\\,\\text{kW}$.\n\n**Reasonableness:** The heater and the station together draw $20\\,\\text{kW}$ from three phases, about $6.7\\,\\text{kW}$ per phase or about $29\\,\\text{A}$, and the kettle adds about $9\\,\\text{A}$. The current is about one and a half times the $25\\,\\text{A}$ of the main fuse, so without load management the fuse could blow."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what does home charging require?",
+      "prompt": "Write on the basis of your calculations: how should the car be charged at home so that charging fits in the night? What happens to the main fuses if the car charges at full power while the sauna is warming up, and how is the problem solved?",
+      "model": "From a socket with a current of $8\\,\\text{A}$ the power is only about $1.8\\,\\text{kW}$, and $40\\,\\text{kWh}$ takes about $26\\,\\text{h}$ with the losses, so it does not fit in the night. A single-phase $16\\,\\text{A}$ station charges with a power of about $3.7\\,\\text{kW}$ in about $12\\,\\text{h}$, a three-phase one with three times the power in about $4\\,\\text{h}$. When the heater ($13.0\\,\\text{A}$ per phase) and the station ($16\\,\\text{A}$ per phase) are on at the same time, every phase carries $29.0\\,\\text{A}$ and the phase of the kettle $37.7\\,\\text{A}$, over the $25\\,\\text{A}$ of the main fuse. If this continues for long, a main fuse may blow. Load management reduces the charging current to about $12\\,\\text{A}$ for the time of the sauna or interrupts charging for a moment. The numbers are calculated values of invented example data.",
+      "criteria": [
+        "The answer compares the charging times and uses them to justify why charging from a socket does not fit in the night.",
+        "The answer explains that a three-phase station charges with three times the power, because each phase transfers a power of $UI$.",
+        "The answer calculates or estimates the currents of the same phase together and compares the sum with the size of the main fuse.",
+        "The answer names reducing the charging current or timing the charging, such as load management, as the solution."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the powers and currents you calculated. Then return to the question at the start: why is the neighbour's extension cord not a good solution, even though it works?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student calculates how much energy is taken from the grid when $38.4\\,\\text{kWh}$ has to be stored in the battery and the efficiency of charging is $90\\,\\%$:\n\n$$\\begin{aligned} W_\\text{grid} &= \\eta W_\\text{battery} \\\\ &= 0.90 \\cdot 38.4\\,\\text{kWh} \\\\ &\\approx 34.6\\,\\text{kWh} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "You have to divide by the efficiency: $38.4\\,\\text{kWh} : 0.90 \\approx 42.7\\,\\text{kWh}$.",
+          "correct": true,
+          "feedback": "Correct. The efficiency is $\\eta = W_\\text{battery} : W_\\text{grid}$, so $W_\\text{grid} = W_\\text{battery} : \\eta$. The error could have been noticed from the result being smaller than the energy going into the battery, although because of the losses more has to be taken from the grid."
+        },
+        {
+          "text": "The efficiency has to be converted first: $90\\,\\%$ is $90$, not $0.90$.",
+          "feedback": "A percent means a hundredth, so $90\\,\\% = 0.90$ is correct. Multiplying by $90$ would give over $3000\\,\\text{kWh}$, which is impossible. The error is that the energy was multiplied by the efficiency: the correct way is $W_\\text{grid} = 38.4\\,\\text{kWh} : 0.90 \\approx 42.7\\,\\text{kWh}$."
+        },
+        {
+          "text": "There is no error in the calculation, because losses reduce the energy.",
+          "feedback": "Losses reduce the energy that ends up in the battery, not the energy taken from the grid. What is taken from the grid is the energy going into the battery plus the losses, so $W_\\text{grid} = W_\\text{battery} : \\eta \\approx 42.7\\,\\text{kWh}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A single-phase charging station is connected to the consumer unit with a $25\\,\\text{m}$ long cable whose copper conductors have a cross-sectional area of $2.5\\,\\text{mm}^2$. The charging current is $16\\,\\text{A}$. The current flows to the station along the phase conductor and returns along the neutral conductor. The resistivity of copper is $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. How much power is dissipated in the cable? Answer in watts.",
+      "answer": 87.04,
+      "unit": "W",
+      "tolerance": 0.02,
+      "hints": [
+        "The copper conductors of the cable are a resistor. How long is the stretch of copper that the current travels when it goes to the station and back?",
+        "$R = \\rho \\dfrac{2l}{A}$, where $A = 2.5 \\cdot 10^{-6}\\,\\text{m}^2$.",
+        "$R = 0.34\\,\\Omega$, and by Joule's law $P = RI^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 43.52,
+          "feedback": "You calculated only one conductor. The current returns along the neutral conductor, so there is $2 \\cdot 25\\,\\text{m} = 50\\,\\text{m}$ of copper and the power is twice as great, about $87\\,\\text{W}$."
+        },
+        {
+          "value": 5.44,
+          "feedback": "You multiplied the resistance by the current, which gives the voltage $RI$ in volts. By Joule's law the power is $P = RI^2 = 0.34\\,\\Omega \\cdot (16\\,\\text{A})^2 \\approx 87\\,\\text{W}$."
+        }
+      ],
+      "solution": "**Given:** length of cable $l = 25\\,\\text{m}$, cross-sectional area $A = 2.5\\,\\text{mm}^2$, current $I = 16\\,\\text{A}$, resistivity of copper $\\rho = 1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$\n\n**Find:** heating power $P_\\text{cable}$ dissipated in the cable in watts\n\n**Principle:** The copper conductors of the cable are a resistor through which the charging current flows. The current flows in both an outgoing and a return conductor, so the length of copper is $2l$. By Joule's law the power dissipated in a resistor is $RI^2$, and it turns into internal energy of the cable, which is transferred to the surroundings as heat.\n\n**Formula:** $P_\\text{cable} = RI^2$ and $R = \\rho \\dfrac{2l}{A}$, so $P_\\text{cable} = \\rho \\dfrac{2l}{A} I^2$\n\n**Conversions:** $A = 2.5\\,\\text{mm}^2 = 2.5 \\cdot (10^{-3}\\,\\text{m})^2 = 2.5 \\cdot 10^{-6}\\,\\text{m}^2$\n\n**Substitution:** $R = 1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m} \\cdot \\dfrac{2 \\cdot 25\\,\\text{m}}{2.5 \\cdot 10^{-6}\\,\\text{m}^2} = 0.34\\,\\Omega$ and $P_\\text{cable} = 0.34\\,\\Omega \\cdot (16\\,\\text{A})^2 = 0.34\\,\\Omega \\cdot 256\\,\\text{A}^2 = 87.0\\,\\text{W}$\n\n**Answer:** $87\\,\\text{W}$, two significant figures like the resistivity $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$ and the cross-sectional area $2.5\\,\\text{mm}^2$.\n\n**Reasonableness:** The power is $87\\,\\text{W} : 3680\\,\\text{W} \\approx 2.4\\,\\%$ of the power of the charging station, and it is spread over the $25\\,\\text{m}$ stretch, about $3.5\\,\\text{W}$ per metre, so a fixed cable warms up only a little. With half the current the power would be a quarter, about $22\\,\\text{W}$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks calculate the energy of a battery, a charging power, a current, a cost or an efficiency with one formula, level 2 tasks combine two steps or read a graph, and level 3 requires reasoning about losses, Joule's law and the current of overnight charging."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Own circuit and residual current device",
+      "prompt": "Why does the charging station of an electric car have its own circuit and its own residual current device (RCD)?",
+      "choices": [
+        {
+          "text": "Charging is a large load lasting hours, so the cable is sized for it, and outdoors the danger of leakage current is greater than usual.",
+          "correct": true,
+          "feedback": "Correct. An own circuit makes sure that the cable and the fuse are sized for exactly the charging current and that there are no other loads on the same cable. The residual current device cuts the current if part of it leaks to the ground, for example through a wet cable and a person."
+        },
+        {
+          "text": "An own circuit speeds up charging, because the current does not share the same cable with other sockets.",
+          "feedback": "A circuit does not in itself raise the charging current: the charging power is determined by the settings of the station and the number of phases. An own circuit is a safety solution: the cable and the fuse are sized for a long, large load, and no other loads are added to the same cable."
+        },
+        {
+          "text": "The residual current device prevents the main fuse from blowing when the heater and the car are on at the same time.",
+          "feedback": "A residual current device does not react to the size of the load but to leakage current: it compares the current going out with the current returning and trips if the difference is over $30\\,\\text{mA}$. An overload of the main fuse is prevented by load management, which reduces the charging current."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Charging time",
+      "prompt": "A single-phase charging station draws a current of $16\\,\\text{A}$ at a voltage of $230\\,\\text{V}$. $30\\,\\text{kWh}$ has to be stored in the battery, and the efficiency of charging is $90\\,\\%$. How long does charging take when the power stays constant? Answer in hours.",
+      "answer": 9.057971,
+      "unit": "h",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the power of a single-phase station?",
+        "The power transferred to the battery is $\\eta P = 0.90 \\cdot 3.68\\,\\text{kW}$.",
+        "$t = \\dfrac{30\\,\\text{kWh}}{0.90 \\cdot 3.68\\,\\text{kW}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 8.152174,
+          "feedback": "You forgot the losses. Only $90\\,\\%$ of the energy taken from the grid goes into the battery, so charging takes longer, about $9.1\\,\\text{h}$."
+        },
+        {
+          "value": 3.019324,
+          "feedback": "You calculated the power of a three-phase station, $3UI$. This station uses one phase, so its power is $P = UI = 3.68\\,\\text{kW}$."
+        }
+      ],
+      "solution": "**Given:** one phase, $U = 230\\,\\text{V}$, $I = 16\\,\\text{A}$, into the battery $W_\\text{battery} = 30\\,\\text{kWh}$, $\\eta = 90\\,\\%$\n\n**Find:** charging time $t$ in hours\n\n**Principle:** The power of a single-phase station is voltage times current. The power is constant, so the energy taken from the grid is $Pt$, and the fraction $\\eta$ of it is stored in the battery.\n\n**Formula:** $\\eta U I t = W_\\text{battery}$, so $t = \\dfrac{W_\\text{battery}}{\\eta U I}$\n\n**Conversions:** $UI = 230\\,\\text{V} \\cdot 16\\,\\text{A} = 3680\\,\\text{W} = 3.68\\,\\text{kW}$ and $\\eta = 0.90$\n\n**Substitution:** $t = \\dfrac{30\\,\\text{kWh}}{0.90 \\cdot 3.68\\,\\text{kW}} = \\dfrac{30\\,\\text{kWh}}{3.312\\,\\text{kW}} = 9.06\\,\\text{h}$\n\n**Answer:** $9.1\\,\\text{h}$, two significant figures like the efficiency $90\\,\\%$ and the energy $30\\,\\text{kWh}$.\n\n**Reasonableness:** About $3.3\\,\\text{kW}$ goes into the battery, and $30\\,\\text{kWh} : 3.3\\,\\text{kW} \\approx 9\\,\\text{h}$. Charging just fits in one night; with a three-phase station it would take a third of that, about $3\\,\\text{h}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain the danger of the extension cord",
+      "optional": true,
+      "prompt": "A neighbour charges his car all night with a current of $10\\,\\text{A}$ through an extension cord on a reel, from an old socket. Use Joule's law to explain which parts get hot and why, and how the charging should be arranged safely.",
+      "model": "By Joule's law a power $RI^2$ is dissipated in the cable and the joint, and it turns into their internal energy, which is transferred to the surroundings as heat. The resistance of a $25\\,\\text{m}$ extension cord on a reel is about $0.57\\,\\Omega$, so with a current of $10\\,\\text{A}$ about $57\\,\\text{W}$ is dissipated in it. From the reel little energy is transferred as heat to the surroundings, so the cable gets hot and the insulation ages. The contact resistance of a loose joint in an old socket can be, for example, $0.10\\,\\Omega$, so $10\\,\\text{W}$ is concentrated in a small spot all night. The heating power grows with the square of the current. The safest thing is to install a charging station with its own circuit and a residual current device; if a socket has to be used, the charging current is kept low and an extension cord is not used.",
+      "criteria": [
+        "The answer uses Joule's law $P = RI^2$ and says that the power turns into internal energy, which is transferred to the surroundings as heat.",
+        "The answer explains why a coiled cable gets hot: little energy is transferred from the reel as heat to the surroundings.",
+        "The answer explains why a loose joint is dangerous: the power is concentrated in a small spot for a long time.",
+        "The answer suggests a safe solution, such as a charging station with its own circuit and a residual current device."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and open the answer only afterwards."
+    }
+  ]
+}

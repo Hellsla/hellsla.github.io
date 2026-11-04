@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fc565b6b8ffdb20d
+CONTENT-HASH: 685fd2f3a944bb18
 
 ## Blocking
-(none)
+
 
 ## Polish
-(none)
+
 
 ## Checked
-batch delta review: preview/en/fy2-5.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved Garzweiler excavator photo captured with its surroundings. New spot after the "Koska lämpöarvo…" paragraph; at 1280 it floats beside E = Hm and its explanation and ends well above the fuel table. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (lignite with a low heating value beside the heating-value law).
+- batch delta review: opened fy2-5-1280-0, fy2-5-1280-1, fy2-5-360-0, fy2-5-360-1; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text. Other photo(s) on the page are untouched and only seen for layout.

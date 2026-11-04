@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-16-L1-01",
+      "level": 1,
+      "text": "The energy of the battery of an electric car when fully charged is $64\\,\\text{kWh}$. How much energy has to be stored in the battery when it is charged from a charge level of $15\\,\\%$ to $80\\,\\%$? Answer in kilowatt-hours.",
+      "answer": 41.6,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-02",
+      "level": 1,
+      "text": "An electric car is charged at a cottage from an ordinary socket with a charging cable that limits the current to $10\\,\\text{A}$. The voltage is $230\\,\\text{V}$. How large is the charging power? Answer in kilowatts.",
+      "answer": 2.3,
+      "unit": "kW",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-03",
+      "level": 1,
+      "text": "The power of a three-phase charging station is $11\\,\\text{kW}$, and it draws an equal current from each of the three phase conductors. The phase voltage is $230\\,\\text{V}$. How large a current flows in one phase conductor?",
+      "answer": 15.942029,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-04",
+      "level": 1,
+      "text": "Charging an electric car took $45\\,\\text{kWh}$ of energy from the grid. The electricity costs $14\\,\\text{c/kWh}$ including transmission. How much did the charging cost? Answer in euros.",
+      "answer": 6.3,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L1-05",
+      "level": 1,
+      "text": "According to the meter of the charging station, charging took $50\\,\\text{kWh}$ from the grid, and according to the car $44\\,\\text{kWh}$ was stored in the battery. What was the efficiency of charging? Answer as a percentage.",
+      "answer": 88.0,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-16-L2-01",
+      "level": 2,
+      "text": "The graph shows the power the charging station drew from the grid during one charge. At two hours the sauna heater was switched on in the house, and load management reduced the charging current. How much energy did the charging station take from the grid during the whole charge? Read the necessary values from the graph and answer in kilowatt-hours.",
+      "figure": "fy6-16/lataus-ex",
+      "answer": 27.5,
+      "unit": "kWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L2-02",
+      "level": 2,
+      "text": "A single-phase charging station draws a current of $16\\,\\text{A}$ at a voltage of $230\\,\\text{V}$. The energy of the battery of the car is $60\\,\\text{kWh}$, and it is charged from a charge level of $20\\,\\%$ to $80\\,\\%$. The efficiency of charging is $90\\,\\%$, and the power stays constant the whole time. How long does charging take? Answer in hours.",
+      "answer": 10.869565,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L2-03",
+      "level": 2,
+      "text": "The main fuses of a detached house are $3 \\cdot 25\\,\\text{A}$. A $9.0\\,\\text{kW}$ sauna heater is on in the sauna, drawing an equal current from each of the three phase conductors. The phase voltage is $230\\,\\text{V}$, and no other devices are assumed to be on. How large a current may a three-phase charging station draw from each phase so that the current of the main fuses is not exceeded?",
+      "answer": 11.956522,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L2-04",
+      "level": 2,
+      "text": "A single-phase charging station is connected to the consumer unit with a $30\\,\\text{m}$ long cable whose copper conductors have a cross-sectional area of $2.5\\,\\text{mm}^2$. The charging current of $16\\,\\text{A}$ flows to the station along the phase conductor and returns along the neutral conductor. The resistivity of copper is $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. How large a voltage is lost in the cable?",
+      "answer": 6.528,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-16-L3-01",
+      "level": 3,
+      "text": "A family stores a total of $3000\\,\\text{kWh}$ a year in the battery of its car. With a charging cable from an ordinary socket the efficiency of charging is $82\\,\\%$, with a charging station $92\\,\\%$. The electricity costs $15\\,\\text{c/kWh}$ including transmission. How much does the family save in a year if it always charges with the charging station? Answer in euros.",
+      "answer": 59.650053,
+      "unit": "€",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L3-02",
+      "level": 3,
+      "text": "The charging current of a car is increased from $10\\,\\text{A}$ to $16\\,\\text{A}$ in the same cable. Assume that the resistance of the cable stays the same. By how many percent does the heating power dissipated in the cable increase?",
+      "answer": 156.0,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-16-L3-03",
+      "level": 3,
+      "text": "During the night, $40\\,\\text{kWh}$ has to be stored in the battery of a car. Charging starts at $22.00$, and the car has to be ready at $7.00$. The efficiency of charging is $90\\,\\%$. A three-phase charging station draws an equal current from each phase conductor, and the phase voltage is $230\\,\\text{V}$. What is the smallest charging current needed in one phase conductor when the current is kept constant all night?",
+      "answer": 7.156915,
+      "unit": "A",
+      "tolerance": 0.02
+    }
+  ]
+}

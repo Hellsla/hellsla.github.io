@@ -42,7 +42,7 @@
 ## fy2-7-L1-05
 **Given:** loss power $P_\text{loss} = 2.5\,\text{kW}$ and time $t = 24\,\text{h}$
 **Find:** the energy lost $E_\text{loss}$ in kilowatt-hours
-**Principle:** At a steady power, energy is power times time, because power tells the rate at which energy is transferred (chapter *Power: P = ΔE/Δt*).
+**Principle:** At a steady power, energy is power times time, because power tells the rate at which energy is transferred (chapter *Power: $P = \Delta E/\Delta t$*).
 **Formula:** $P = \dfrac{E}{t}$, so $E_\text{loss} = P_\text{loss} \cdot t$
 **Conversions:** Not needed: a kilowatt times an hour is directly a kilowatt-hour.
 **Substitution:** $E_\text{loss} = 2.5\,\text{kW} \cdot 24\,\text{h} = 60\,\text{kWh}$
@@ -72,7 +72,7 @@
 ## fy2-7-L2-03
 **Given:** energy fed into the network $E_\text{sent} = 2.40\,\text{TWh}$, loss $4.0\,\%$ of the sent energy, time $t = 8760\,\text{h}$
 **Find:** the average power of the losses $P_\text{loss}$ in megawatts
-**Principle:** The energy lost is the loss percentage of the sent energy. The average power is this energy divided by the time, because power tells the rate at which energy is transferred (chapter *Power: P = ΔE/Δt*).
+**Principle:** The energy lost is the loss percentage of the sent energy. The average power is this energy divided by the time, because power tells the rate at which energy is transferred (chapter *Power: $P = \Delta E/\Delta t$*).
 **Formula:** $E_\text{loss} = p\, E_\text{sent}$, where $p$ is the loss fraction, and $P_\text{loss} = \dfrac{E_\text{loss}}{t}$
 **Conversions:** $p = 4.0 : 100 = 0.040$ and $1\,\text{TWh} = 1\,000\,000\,\text{MWh}$, so $2.40\,\text{TWh} = 2.40 \cdot 1\,000\,000\,\text{MWh} = 2\,400\,000\,\text{MWh}$.
 **Substitution:** $E_\text{loss} = 0.040 \cdot 2\,400\,000\,\text{MWh} = 96\,000\,\text{MWh}$, and $P_\text{loss} = \dfrac{96\,000\,\text{MWh}}{8760\,\text{h}} = 10.96\,\text{MW}$

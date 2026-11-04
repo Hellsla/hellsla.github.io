@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "contribution": "The chapter applies decibels to health and engineering: noise exposure dose (a rise of $3\\,\\text{dB}$ halves the permitted time, the action values for noise at work in Finnish Government Decree 85/2006), noise control at the source, along the path and at the ear, room acoustics and reverberation, active noise cancelling as destructive interference, and the energy conversion in a loudspeaker and a microphone.",
+  "learn": [
+    "estimate the harms of noise and calculate the permitted exposure time from a noise level.",
+    "compare ways of controlling noise at the source, along the path and at the ear.",
+    "explain reverberation, active noise cancelling, and the working principle of a loudspeaker and a microphone."
+  ],
+  "prior": [
+    "The sound intensity level $L$ is given in decibels, and it always rises by the same amount when the intensity is multiplied by the same factor (chapter *Loudness of sound*)",
+    "A wave is reflected from an obstacle according to the law of reflection and bends behind the edge of an obstacle (chapter *A wave meets an obstacle or a gap*)",
+    "Waves that meet add together, and they can strengthen or weaken each other (chapter *When waves combine: superposition and interference*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Saturday's festival gig was great. In the front row, in front of the speaker towers, the bass could be felt in the chest, but the ears did not hurt. On the way home a friend's speech sounded muffled, and at night there was ringing in the ears. By morning the ringing was almost gone. The friend's father says that he wears hearing protectors all day in the noisy hall at his workplace, even though the hall is nowhere near as loud as the gig.",
+      "question": "What decides how much noise the ear can take, and how can hearing be protected?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: two sources",
+      "prompt": "The left speaker tower of a concert stage produces a level of $90\\,\\text{dB}$ at the audience. The right tower, which is identical, produces an equal level at the same place. What is the level when both towers are playing?",
+      "choices": [
+        {
+          "text": "$180\\,\\text{dB}$, because the levels of the two towers are added.",
+          "feedback": "Decibels do not add directly; the intensities add (chapter *Loudness of sound*). Two towers double the intensity, and that raises the level by only about $3\\,\\text{dB}$. A level of $180\\,\\text{dB}$ would correspond to an intensity about a billion times greater."
+        },
+        {
+          "text": "$93\\,\\text{dB}$, because the intensity doubles.",
+          "correct": true,
+          "feedback": "Correct. Two equally strong sources double the intensity, and $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3\\,\\text{dB}$ (chapter *Loudness of sound*). This is needed when estimating how much noise reaches the ear."
+        },
+        {
+          "text": "$90\\,\\text{dB}$, because the level of each tower is the same.",
+          "feedback": "The second tower brings more energy to the listener, so the intensity increases. The level rises, although only by about $3\\,\\text{dB}$, because the intensity doubles (chapter *Loudness of sound*)."
+        },
+        {
+          "text": "$96\\,\\text{dB}$, because two towers raise the level by $6\\,\\text{dB}$.",
+          "feedback": "A rise of $6\\,\\text{dB}$ corresponds to four times the intensity, that is, four identical towers. Two towers double the intensity, which raises the level by about $3\\,\\text{dB}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: level and time",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-1",
+        "pending": "The feedback opens when the first part of the Theory summary is visible. Before that, compare your prediction with the table in the Investigate stage."
+      },
+      "prompt": "The upper action value for noise at work corresponds to eight hours of exposure to a noise level of $85\\,\\text{dB}$. Roughly how long may one stay in a noise level of $94\\,\\text{dB}$ for the ear to receive the same dose of sound energy?",
+      "choices": [
+        {
+          "text": "About $7\\,\\text{h}$, because $94\\,\\text{dB}$ is only about $10\\,\\%$ more than $85\\,\\text{dB}$.",
+          "feedback": "The decibel number does not grow in the same proportion as the intensity: every $3\\,\\text{dB}$ doubles the intensity. A difference of $9\\,\\text{dB}$ is three doublings, that is, eight times the intensity, so the same dose is reached in $8\\,\\text{h} : 8 = 1\\,\\text{h}$."
+        },
+        {
+          "text": "About $4\\,\\text{h}$, because a higher level shortens the time a little.",
+          "feedback": "The time shortens much more. A time of $4\\,\\text{h}$ corresponds to a level of $88\\,\\text{dB}$, where the intensity is doubled. At $94\\,\\text{dB}$ the intensity is eight times as great, so the same dose is reached in $1\\,\\text{h}$."
+        },
+        {
+          "text": "About $1\\,\\text{h}$, because the intensity is many times greater.",
+          "correct": true,
+          "feedback": "Correct. $94\\,\\text{dB} - 85\\,\\text{dB} = 9\\,\\text{dB}$ is three steps of $3\\,\\text{dB}$, so the intensity is $2^3 = 8$ times as great. The same energy builds up in an eighth of the time: $8\\,\\text{h} : 8 = 1\\,\\text{h}$."
+        },
+        {
+          "text": "Not a moment, because noise above $85\\,\\text{dB}$ damages hearing immediately.",
+          "feedback": "Hearing damage does not appear the moment a limit is crossed; what matters is the accumulated dose: level and time together. At $94\\,\\text{dB}$ the same dose as $8\\,\\text{h}$ at $85\\,\\text{dB}$ builds up in an hour. Only a very strong impulsive sound, such as a gunshot from close by, can damage the ear immediately."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: how can sound silence sound?",
+      "layout": "models",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-3",
+        "pending": "The feedback opens when the Active noise cancelling part of the Theory summary is visible."
+      },
+      "prompt": "Noise-cancelling headphones silence the hum of an aircraft engine even though they have no thick cups. The headphones have a microphone and a small loudspeaker. Which explanation is physically correct?",
+      "choices": [
+        {
+          "text": "The headphones play a sound of their own, more pleasant, that covers the hum of the engine.",
+          "feedback": "A masking sound does not reduce the energy reaching the ear but adds to it: the hum is still there, it just stands out less. Noise-cancelling headphones produce a sound that is in the opposite phase to the noise, so that the pressure variations cancel each other."
+        },
+        {
+          "text": "The headphones produce a wave that is in the opposite phase to the noise, and the waves cancel each other.",
+          "correct": true,
+          "feedback": "Correct. When the overpressure of the noise and the underpressure of the anti-noise arrive at the same place at the same time, they add up to almost zero: destructive interference (chapter *When waves combine: superposition and interference*). This works best for a low and steady sound, such as the hum of an engine."
+        },
+        {
+          "text": "The headphones dampen the noise like ordinary headphones: the cups and pads keep the sound out of the ear, and the electronics only adjust it.",
+          "feedback": "The cups and pads mainly dampen high sounds, and a low hum cannot be dealt with without thick cups. The microphone listens to the noise, and the electronics produce a sound in the opposite phase to it, which cancels the hum by interference."
+        },
+        {
+          "text": "The loudspeaker of the headphones vibrates in step with the noise, and the ear is protected from the strengthened sound.",
+          "feedback": "A sound vibrating in the same phase would strengthen the noise (constructive interference), and more energy would reach the ear. The ear is not protected from a loud sound. The anti-noise must be in the opposite phase so that the pressure variations cancel."
+        }
+      ]
+    },
+    {
+      "id": "taulukko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Investigate 1: the same dose at different levels",
+      "source": "model",
+      "text": "The table shows noise levels $L$ and the daily times that bring the same sound energy to the ear as $8\\,\\text{h}$ at a level of $85\\,\\text{dB}$. The last column shows how many times greater the intensity is than at a level of $85\\,\\text{dB}$.\n\n| $L$ (dB) | time | relative intensity |\n|---|---|---|\n| $85$ | $8\\,\\text{h}$ | $1$ |\n| $88$ | $4\\,\\text{h}$ | $2$ |\n| $91$ | $2\\,\\text{h}$ | $4$ |\n| $94$ | $1\\,\\text{h}$ | $8$ |\n| $97$ | $30\\,\\text{min}$ | $16$ |\n\nLook at how the time changes when the level rises by $3\\,\\text{dB}$, and what happens to the product of the intensity and the time.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Continue the rule of the table: how many minutes may one stay at a level of $103\\,\\text{dB}$? Answer in minutes.",
+        "answer": 7.5,
+        "unit": "min",
+        "tolerance": 0.02,
+        "hints": [
+          "How many steps of $3\\,\\text{dB}$ are there from a level of $97\\,\\text{dB}$ to a level of $103\\,\\text{dB}$?",
+          "Each step halves the time: $30\\,\\text{min} \\to 15\\,\\text{min} \\to \\ldots$",
+          "A level of $103\\,\\text{dB}$ is six steps above $85\\,\\text{dB}$: $480\\,\\text{min} : 2^6$."
+        ],
+        "mistakes": [
+          {
+            "value": 15,
+            "feedback": "This is the time for a level of $100\\,\\text{dB}$. A level of $103\\,\\text{dB}$ is one more step of $3\\,\\text{dB}$ higher, so the time is halved once more."
+          },
+          {
+            "value": 3.75,
+            "feedback": "You halved the time once too many. From $97\\,\\text{dB}$ to $103\\,\\text{dB}$ there are two steps, so the time is halved twice: $30\\,\\text{min}$, then $15\\,\\text{min}$ and finally $7.5\\,\\text{min}$."
+          }
+        ],
+        "solution": "**Given:** the rule of the table: $t_0 = 8\\,\\text{h}$ at a level of $L_0 = 85\\,\\text{dB}$, and every rise of $3\\,\\text{dB}$ halves the time; level $L = 103\\,\\text{dB}$.\n\n**Find:** the permitted time $t_\\text{perm}$ in minutes.\n\n**Principle:** In the table the intensity doubles and the time halves with every step of $3\\,\\text{dB}$, so the product of intensity and time, that is, the energy reaching the ear, stays the same. The same rule continues for higher levels.\n\n**Formula:** $t_\\text{perm} = \\dfrac{t_0}{2^{\\,n}}$, where $n = \\dfrac{L - L_0}{3\\,\\text{dB}}$\n\n**Conversions:** The answer is asked in minutes: $t_0 = 8\\,\\text{h} = 8 \\cdot 60\\,\\text{min} = 480\\,\\text{min}$.\n\n**Substitution:** $n = \\dfrac{103\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 6$ and $t_\\text{perm} = \\dfrac{480\\,\\text{min}}{2^6} = \\dfrac{480\\,\\text{min}}{64} = 7.5\\,\\text{min}$\n\n**Answer:** $7.5\\,\\text{min}$. The rule is a rule of thumb, so two significant figures are enough.\n\n**Reasonableness:** From the last row of the table ($97\\,\\text{dB}$, $30\\,\\text{min}$) two halvings lead to the result: $30\\,\\text{min}$, then $15\\,\\text{min}$ and finally $7.5\\,\\text{min}$. The intensity is $64$ times as great, and $64 \\cdot 7.5\\,\\text{min} = 480\\,\\text{min} = 8\\,\\text{h}$, so the dose is the same."
+      }
+    },
+    {
+      "id": "mittaus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Investigate 2: a level measured with a phone",
+      "source": "example",
+      "text": "Invented sample data: students measured, with a sound level app on a phone, the level of a small loudspeaker playing steady noise at different distances in two places: on an empty sports field and in an empty classroom whose walls, ceiling and floor are hard. The settings of the loudspeaker were the same in both places.\n\n| distance | field | classroom |\n|---|---|---|\n| $1\\,\\text{m}$ | $82\\,\\text{dB}$ | $82\\,\\text{dB}$ |\n| $2\\,\\text{m}$ | $76\\,\\text{dB}$ | $78\\,\\text{dB}$ |\n| $4\\,\\text{m}$ | $70\\,\\text{dB}$ | $76\\,\\text{dB}$ |\n| $8\\,\\text{m}$ | $64\\,\\text{dB}$ | $75\\,\\text{dB}$ |\n\nThe reading of an uncalibrated phone app can differ from the true level by several decibels, but readings from the same phone with the same settings can be compared with each other.",
+      "question": {
+        "type": "choice",
+        "prompt": "On the field the level drops by $6\\,\\text{dB}$ every time the distance doubles, as expected for a point source. Why does the level in the classroom drop only $7\\,\\text{dB}$ from $1\\,\\text{m}$ to $8\\,\\text{m}$?",
+        "choices": [
+          {
+            "text": "Hard surfaces reflect sound, and farther away the reflected sound is most of the sound heard.",
+            "correct": true,
+            "feedback": "Correct. Close to the loudspeaker the direct sound dominates, so the readings are the same. Farther away the direct sound weakens as on the field, but the sound reflected from the walls, ceiling and floor fills the room almost evenly."
+          },
+          {
+            "text": "Sound travels faster indoors than outdoors, so it does not have time to weaken as much on the way.",
+            "feedback": "The speed of sound depends on the temperature of the air, not on whether the sound is indoors. Weakening with distance is not caused by time either, but by the energy spreading over an ever larger area."
+          },
+          {
+            "text": "The warm, still air of the classroom absorbs sound clearly less than the outdoor air of the field.",
+            "feedback": "The absorption of the air itself is very small over a few metres, both outdoors and indoors. On the field too, the drop of $6\\,\\text{dB}$ per doubling is caused by the spreading of the energy, not by the air."
+          },
+          {
+            "text": "The phone app measures wrongly indoors, so the values for the classroom cannot be trusted at all.",
+            "feedback": "At a distance of $1\\,\\text{m}$ the same phone showed the same reading of $82\\,\\text{dB}$ in both places, so the readings can be compared. The difference farther away is a real phenomenon, caused by reflections."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what do the tables show?",
+      "prompt": "Write, on the basis of the tables: how does the permitted time change when the noise level rises by $3\\,\\text{dB}$, and why? What does the measurement in the classroom tell us about why a room with hard surfaces is noisy?",
+      "model": "When the level rises by $3\\,\\text{dB}$, the intensity doubles and the time halves, so the product of intensity and time, that is, the energy reaching the ear, stays the same. That is why the same dose builds up in an hour already at $94\\,\\text{dB}$. In the classroom the level dropped only $7\\,\\text{dB}$ over a distance of $8\\,\\text{m}$, whereas on the field it dropped $18\\,\\text{dB}$. Hard surfaces reflect sound, and the reflected sound fills the room, so it is not quiet even far from the source. The numbers are values calculated with the rule of thumb and invented sample data, not real measurements.",
+      "criteria": [
+        "I say that a rise of $3\\,\\text{dB}$ doubles the intensity and halves the time.",
+        "I justify it with the dose: the product of intensity and time stays the same.",
+        "I compare the drop in level on the field and in the classroom with numbers.",
+        "I explain the small drop in the classroom with reflected sound."
+      ]
+    },
+    {
+      "id": "teoria-1",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "teoria-2",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Melun torjunta",
+        "Tilan akustiikka"
+      ]
+    },
+    {
+      "id": "teoria-3",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Vastamelu"
+      ]
+    },
+    {
+      "id": "teoria-4",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Kaiutin ja mikrofoni"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the table and the Theory summary. Then return to the opening question: why can a gig of a few hours in the front row strain hearing more than a working day in a noisy hall with protectors on? What means could be used at a gig to protect hearing?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The level of a loudspeaker is $96\\,\\text{dB}$ at a distance of $2.0\\,\\text{m}$. A student calculates the level at $4.0\\,\\text{m}$ like this: “When the distance doubles, the intensity falls to a quarter, so the level is $96\\,\\text{dB} : 4 = 24\\,\\text{dB}$.” Where is the error?",
+      "choices": [
+        {
+          "text": "A quarter of the intensity does not mean a quarter of the level: the level falls by $6\\,\\text{dB}$, so the correct result is $90\\,\\text{dB}$.",
+          "correct": true,
+          "feedback": "Correct. When the intensity is multiplied by some factor, the level changes by a constant amount: $10\\,\\text{dB} \\cdot \\lg \\tfrac14 \\approx -6\\,\\text{dB}$. A result of $24\\,\\text{dB}$ would be quieter than a whisper, although the loudspeaker is only $4.0\\,\\text{m}$ away."
+        },
+        {
+          "text": "The intensity falls to a half, not to a quarter, so the correct level is $96\\,\\text{dB} : 2 = 48\\,\\text{dB}$.",
+          "feedback": "The intensity of a point source is inversely proportional to the square of the distance, so it really does fall to a quarter. The error is that the decibel number was divided. Correct: $96\\,\\text{dB} - 6\\,\\text{dB} = 90\\,\\text{dB}$."
+        },
+        {
+          "text": "The error is only in rounding, because the exact result is about $25\\,\\text{dB}$, not $24\\,\\text{dB}$.",
+          "feedback": "The difference is not in rounding. Decibels are not divided: a quarter of the intensity corresponds to a fall in level of $6\\,\\text{dB}$, so the level is $90\\,\\text{dB}$."
+        },
+        {
+          "text": "There is no error in the calculation outdoors, but indoors the level falls clearly less.",
+          "feedback": "In a reverberant room the level does fall less, but the calculation is wrong already in an open space: a level of $96\\,\\text{dB}$ does not become $24\\,\\text{dB}$ but $90\\,\\text{dB}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A summer worker helps while another person saws boards with a circular saw outdoors. The noise level of the saw is $100\\,\\text{dB}$ at a distance of $1.0\\,\\text{m}$, and the helper stands $4.0\\,\\text{m}$ from the saw. Assume the saw is a point source in an open space. For how many hours a day may the helper be in this noise without hearing protectors, when the reference is the upper action value? Answer in hours.",
+      "answer": 4.0,
+      "unit": "h",
+      "tolerance": 0.02,
+      "hints": [
+        "First calculate the level at the helper's position. How many times does the distance double when $1.0\\,\\text{m}$ becomes $4.0\\,\\text{m}$?",
+        "Every doubling lowers the level by $6\\,\\text{dB}$: $L = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB}$. Then use the formula $t_\\text{perm} = t_0 / 2^{\\,n}$.",
+        "At the helper's position $L = 88\\,\\text{dB}$, so $n = 1$ and $t_\\text{perm} = 8\\,\\text{h} : 2$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.25,
+          "feedback": "This is the permitted time next to the saw at a level of $100\\,\\text{dB}$. The helper is farther away, so first calculate the level at the helper's position: the distance doubles twice."
+        },
+        {
+          "value": 1.0,
+          "feedback": "You lowered the level by only $6\\,\\text{dB}$. The distance doubles twice, first to $2.0\\,\\text{m}$ and then to $4.0\\,\\text{m}$, so the level falls by $12\\,\\text{dB}$ to $88\\,\\text{dB}$."
+        },
+        {
+          "value": 16,
+          "feedback": "You lowered the level by $18\\,\\text{dB}$, that is, by three doublings. When the distance grows from $1.0\\,\\text{m}$ to $4.0\\,\\text{m}$, it doubles only twice, so the level is $88\\,\\text{dB}$."
+        }
+      ],
+      "solution": "**Given:** $L_1 = 100\\,\\text{dB}$ at a distance of $r_1 = 1.0\\,\\text{m}$, the helper's distance $r_2 = 4.0\\,\\text{m}$; reference $L_0 = 85\\,\\text{dB}$ and $t_0 = 8\\,\\text{h}$; point source in an open space.\n\n**Find:** the helper's permitted daily time $t_\\text{perm}$ in hours.\n\n**Principle:** In an open space the intensity of a point source falls to a quarter every time the distance doubles, so the level falls by $6\\,\\text{dB}$ (chapter *Loudness of sound*). From the helper's level the permitted time follows from the dose rule, in which every $3\\,\\text{dB}$ halves the time.\n\n**Formula:** $L_2 = L_1 - k \\cdot 6\\,\\text{dB}$, where $2^{\\,k} = \\dfrac{r_2}{r_1}$, and $t_\\text{perm} = \\dfrac{t_0}{2^{\\,n}}$, where $n = \\dfrac{L_2 - L_0}{3\\,\\text{dB}}$\n\n**Conversions:** Not needed: the distances are in metres, so their ratio has no unit, and the time comes out directly in hours.\n\n**Substitution:** $2^{\\,k} = 4.0\\,\\text{m} : 1.0\\,\\text{m} = 4$, so $k = 2$ and $L_2 = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB} = 88\\,\\text{dB}$. Then $n = \\dfrac{88\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 1$ and $t_\\text{perm} = \\dfrac{8\\,\\text{h}}{2^1} = 4.0\\,\\text{h}$\n\n**Answer:** $4.0\\,\\text{h}$, two significant figures as in the distances $1.0\\,\\text{m}$ and $4.0\\,\\text{m}$.\n\n**Reasonableness:** Next to the saw, at a level of $100\\,\\text{dB}$, the time would be only $15\\,\\text{min}$. At the helper's position the intensity is $16$ times smaller, so the time is $16 \\cdot 15\\,\\text{min} = 240\\,\\text{min} = 4\\,\\text{h}$. A working day is longer than that, however, so even the helper should wear protectors."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. Level 1 tasks use one rule, level 2 tasks combine two steps, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Reverberation",
+      "prompt": "A school canteen has concrete walls, a tiled floor and large windows, and the buzz of speech is deafening. Which measure shortens the reverberation time most effectively?",
+      "choices": [
+        {
+          "text": "Installing sound-absorbing panels on the ceiling and walls.",
+          "correct": true,
+          "feedback": "Correct. A porous panel changes the energy of the sound that hits it into internal energy, so there are fewer reflections and the sound dies away faster. At the same time the level of the whole room falls, because the reflected sound does not build up."
+        },
+        {
+          "text": "Painting the walls with smooth, glossy paint.",
+          "feedback": "A smooth, glossy surface reflects sound at least as well as before. Reverberation becomes shorter only when the surfaces absorb sound, that is, change its energy into internal energy."
+        },
+        {
+          "text": "Closing the windows and sealing their joints.",
+          "feedback": "A tight window keeps outdoor noise from coming in, but it does not reduce the reflection of sound made inside. Glass is a hard surface that reflects sound."
+        },
+        {
+          "text": "Increasing the volume of the public address loudspeakers.",
+          "feedback": "A louder announcement increases the reflected sound and muddles speech even more. The reverberation time does not depend on the strength of the source but on the absorption of the surfaces and the size of the room."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Earplugs at a concert",
+      "prompt": "In the front row of a concert the noise level is $106\\,\\text{dB}$. A listener wears earplugs whose attenuation is $15\\,\\text{dB}$. For how many hours can the listener stay in the front row before the ear receives the daily dose that corresponds to the upper action value? Answer in hours.",
+      "answer": 2.0,
+      "unit": "h",
+      "tolerance": 0.02,
+      "hints": [
+        "What level reaches the ear through the plugs?",
+        "At the ear $L = 106\\,\\text{dB} - 15\\,\\text{dB}$. How many steps of $3\\,\\text{dB}$ is that above $85\\,\\text{dB}$?",
+        "$L = 91\\,\\text{dB}$, so $n = 2$ and $t_\\text{perm} = 8\\,\\text{h} : 2^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.0625,
+          "feedback": "This is the time without plugs at a level of $106\\,\\text{dB}$, about $4\\,\\text{min}$. First subtract the attenuation of the plugs: $91\\,\\text{dB}$ reaches the ear."
+        },
+        {
+          "value": 4.0,
+          "feedback": "A time of $4\\,\\text{h}$ corresponds to a level of $88\\,\\text{dB}$. Through the plugs $106\\,\\text{dB} - 15\\,\\text{dB} = 91\\,\\text{dB}$ reaches the ear, which is two steps above the action value."
+        }
+      ],
+      "solution": "**Given:** noise level $L_\\text{noise} = 106\\,\\text{dB}$, attenuation of the plugs $\\Delta L = 15\\,\\text{dB}$; reference $L_0 = 85\\,\\text{dB}$ and $t_0 = 8\\,\\text{h}$.\n\n**Find:** the permitted time $t_\\text{perm}$ in hours.\n\n**Principle:** The plugs reduce the level reaching the ear by their attenuation. The dose depends on the level at the ear, and every $3\\,\\text{dB}$ above the level that corresponds to the upper action value halves the permitted time.\n\n**Formula:** $L = L_\\text{noise} - \\Delta L$ and $t_\\text{perm} = \\dfrac{t_0}{2^{\\,n}}$, where $n = \\dfrac{L - L_0}{3\\,\\text{dB}}$\n\n**Conversions:** Not needed: the levels are in decibels and the time comes out directly in hours.\n\n**Substitution:** $L = 106\\,\\text{dB} - 15\\,\\text{dB} = 91\\,\\text{dB}$, $n = \\dfrac{91\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 2$ and $t_\\text{perm} = \\dfrac{8\\,\\text{h}}{2^2} = 2.0\\,\\text{h}$\n\n**Answer:** $2.0\\,\\text{h}$; the levels are whole decibels and the rule is an estimate, so two significant figures are enough.\n\n**Reasonableness:** Without plugs the time would be $8\\,\\text{h} : 2^7 \\approx 0.063\\,\\text{h}$, that is, about $4\\,\\text{min}$. An attenuation of $15\\,\\text{dB}$ is five steps, so the time grows to $2^5 = 32$ times as long: $32 \\cdot 3.75\\,\\text{min} = 120\\,\\text{min} = 2\\,\\text{h}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Loudspeaker and microphone",
+      "prompt": "Explain how a loudspeaker changes the electrical signal of an amplifier into sound and how a microphone works the other way round. Say which forms of energy appear in each and where most of the electrical energy given to a loudspeaker ends up.",
+      "model": "In a loudspeaker the alternating current of the amplifier flows in a coil that is around the pole of a permanent magnet and attached to a cone. The magnet exerts on the coil a force whose direction changes with the current, so the cone vibrates at the frequency of the current and compresses and rarefies the air: sound is produced. Energy changes from electrical energy into kinetic energy and sound, but most of it, often about $99\\,\\%$, changes into internal energy of the coil. In a microphone the pressure variations of the sound move a diaphragm, and in a dynamic microphone the coil attached to the diaphragm moves around the pole of the magnet, so an alternating voltage that follows the sound is produced in the coil. Energy changes from sound into kinetic energy and into an electrical signal.",
+      "criteria": [
+        "I say that in a loudspeaker an alternating current flows in a coil around the pole of a magnet and a force that changes direction acts on the coil.",
+        "I say that the cone vibrates at the frequency of the current and compresses and rarefies the air.",
+        "I say that in a microphone the sound moves a diaphragm and the motion is changed into an electrical signal.",
+        "I name the directions of the energy conversions and say that most of the electrical energy of a loudspeaker changes into internal energy."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer yourself first and open the answer only afterwards."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Polonium-210 ${}^{210}_{84}\\text{Po}$ hajoaa alfahajoamisella. Kirjoita hajoamisyhtälö.",
+    "a": "${}^{210}_{84}\\text{Po} \\to {}^{206}_{82}\\text{Pb} + {}^{4}_{2}\\text{He}$. Massaluku säilyy ($210 = 206 + 4$) ja varausluku säilyy ($84 = 82 + 2$). Järjestysluku $82$ on lyijy."
+  },
+  {
+    "q": "Kuinka monta protonia ja kuinka monta neutronia on hiili-14-ytimessä ${}^{14}_{6}\\text{C}$? Mikä tekee siitä hiilen isotoopin?",
+    "a": "Protoneja on $Z = 6$ ja neutroneja $N = A - Z = 14 - 6 = 8$. Se on hiiltä, koska protoneja on kuusi kuten kaikissa hiiliytimissä. Isotoopit eroavat vain neutronien määrältä."
+  }
+]

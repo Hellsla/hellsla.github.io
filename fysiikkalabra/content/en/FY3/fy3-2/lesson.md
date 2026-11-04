@@ -179,6 +179,8 @@ Work is a way of transferring energy. James Prescott Joule showed this in the 18
 
 When you do work on an object, energy is transferred: the energy of a lifted object increases, a spring stretches and stores energy, and work done against friction warms the surfaces. Energy does not disappear; it changes form. Power tells you how fast work is done. Walking and running up the stairs you do the same work, but when running the power is greater. The $6\,\text{kW}$ power of a sauna heater means that every second it turns 6000 joules of electrical energy into internal energy, which is transferred as heat to the stones and the air.
 
+<figure class="unit-photo"><img src="pics/fy3/crane-lifting-load.webp" alt="A grey concrete bucket hangs from a crane hook under the roof of a building under construction, and two workers guide it."><figcaption>A crane lifts a concrete bucket on a building site. As the load rises, the lifting force does work and the load's potential energy increases.</figcaption></figure>
+
 ## Formula: Work and power
 When a constant force is in the direction of motion, the work done by the force is the product of force and distance:
 ```latex
@@ -222,7 +224,7 @@ If the force changes during the motion, the work is the area between the force c
   <foreignObject x="347.5" y="291.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{varying force}$</div></foreignObject>
 </svg>
 
-When you lift an object upwards at a steady speed, the lifting force is equal to the weight of the object $G = mg$ (chapter *Force as a measure of interaction and weight G = mg*). The work of lifting to a height $h$ is therefore:
+When you lift an object upwards at a steady speed, the lifting force is equal to the weight of the object $G = mg$ (chapter *Force as a measure of interaction and weight $G = mg$*). The work of lifting to a height $h$ is therefore:
 ```latex
 W = G h = m g h
 ```

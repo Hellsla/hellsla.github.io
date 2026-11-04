@@ -1,0 +1,19 @@
+{
+  "id": "fy5-3",
+  "course": "FY5",
+  "title": "Ympyrärata: jaksonaika ja ratanopeus",
+  "goals": [
+    "LOPS FY5: tasainen ympyräliike",
+    "Täsmennys: nopeuden suunta muuttuu ympyräliikkeessä; ratanopeus v = 2πr/T, kierrosaika ja pyörimistaajuus; kulmasuureita ei tarvitse käsitellä ympyräliikkeen yhteydessä; pyörimisliike ei kuulu keskeisiin sisältöihin"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "ympyräliike",
+    "ratanopeus",
+    "kierrosaika",
+    "pyörimistaajuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

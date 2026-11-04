@@ -1,0 +1,478 @@
+{
+  "version": 1,
+  "contribution": "Periodic motion and vibration are extended to wave motion: a vibration propagates in a medium and carries energy but not matter, a wave is transverse or longitudinal, and the fundamental equation $v = f\\lambda$ separates the speed determined by the medium from the frequency determined by the source; a snapshot and a graph of one point are distinguished from each other.",
+  "learn": [
+    "explain how wave motion arises and what a wave carries with it.",
+    "recognise a transverse and a longitudinal wave and tell a snapshot of a wave from a graph of one point.",
+    "calculate the speed, frequency or wavelength of a wave with the fundamental equation of wave motion."
+  ],
+  "prior": [
+    "The period $T$ is the time of one full vibration, and the frequency $f = \\tfrac{1}{T}$ tells the number of vibrations per second (chapter *Describing oscillation: period, frequency and amplitude*)",
+    "The amplitude $A$ is the greatest displacement from the equilibrium position (chapter *Describing oscillation: period, frequency and amplitude*)",
+    "A body in simple harmonic motion moves back and forth on both sides of its equilibrium position (chapter *The mass–spring oscillator and the pendulum*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "A rope ten metres long has been stretched across a yard, with one end tied to a post. A small bell hangs on the post at the height of the rope. When the free end of the rope is flicked once quickly up and down, a hump appears in the rope and travels towards the post. After a moment the bell rings, although nobody touched it.",
+      "question": "What travelled along the rope from the hand to the post and made the bell ring?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Revision: period and frequency",
+      "prompt": "A weight hanging from a spring makes $12$ full vibrations in $6.0\\,\\text{s}$. What is the frequency of the vibration?",
+      "choices": [
+        {
+          "text": "$2.0\\,\\text{Hz}$",
+          "correct": true,
+          "feedback": "Correct. The frequency is the number of vibrations per second: $f = \\tfrac{12}{6.0\\,\\text{s}} = 2.0\\,\\text{Hz}$, and the period is $T = \\tfrac{1}{f} = 0.50\\,\\text{s}$ (chapter *Describing oscillation: period, frequency and amplitude*). Today the same frequency passes from the vibrating body to the wave."
+        },
+        {
+          "text": "$0.50\\,\\text{Hz}$",
+          "feedback": "This is the time divided by the number of vibrations, $\\tfrac{6.0\\,\\text{s}}{12} = 0.50\\,\\text{s}$, that is, the period $T$ and not the frequency. The frequency is its reciprocal: $f = \\tfrac{1}{T} = 2.0\\,\\text{Hz}$."
+        },
+        {
+          "text": "$72\\,\\text{Hz}$",
+          "feedback": "The number of vibrations and the time are not multiplied together. The frequency tells how many vibrations occur in one second, so the number is divided by the time: $\\tfrac{12}{6.0\\,\\text{s}} = 2.0\\,\\text{Hz}$."
+        },
+        {
+          "text": "$12\\,\\text{Hz}$",
+          "feedback": "$12$ is the number of vibrations in six seconds, not in one second. In one second there is a sixth of that number of vibrations, $2.0$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: how does a point of the rope move?",
+      "prompt": "One point $P$ of the rope has been marked with a coloured tape. The end of the rope is shaken steadily up and down, and the wave travels horizontally along the rope towards the post. How does the point $P$ move when the wave has reached it?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "It travels with the wave towards the post at the same speed as the wave.",
+          "feedback": "The values of the model refute this. When the wave has travelled $6.0\\,\\text{m}$ in $3.0$ seconds, the greatest displacement of the point $P$ is only $5.0\\,\\text{cm}$ vertically and $0\\,\\text{cm}$ along the rope. What travels with the wave is the disturbance, not the matter of the rope."
+        },
+        {
+          "text": "It moves up and down but stays at the same place along the rope.",
+          "correct": true,
+          "feedback": "The values of the model support this: in a transverse wave the greatest displacement of the point $P$ is $5.0\\,\\text{cm}$ vertically, that is, the amplitude of the wave, and along the rope it does not move at all, although the wave travels $2.0\\,\\text{m}$ every second."
+        },
+        {
+          "text": "It moves up and down and at the same time gradually shifts towards the post.",
+          "feedback": "The values of the model refute this: the greatest displacement of the point $P$ along the rope stays at zero even if the experiment lasted a long time. $P$ vibrates around its equilibrium position, and only the phase of the vibration and the energy move forward."
+        },
+        {
+          "text": "It moves back and forth along the rope, because the wave travels along the rope.",
+          "feedback": "This does not happen in a rope: according to the model $P$ moves $5.0\\,\\text{cm}$ vertically but not at all along the rope. The motion you described belongs to a longitudinal wave, which you saw in the experiment with the spring: there $P$ moves $5.0\\,\\text{cm}$ along the spring."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: more rapid shaking",
+      "prompt": "The rope is first shaken at a frequency of $1.0\\,\\text{Hz}$. Then the same rope is shaken twice as rapidly, at a frequency of $2.0\\,\\text{Hz}$, and the tension of the rope does not change. What happens to the wave?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The wave travels twice as fast, and the wavelength stays the same.",
+          "feedback": "The values of the model refute this: the speed is $2.0\\,\\text{m/s}$ at both frequencies. The frequency tells how often crests are formed, not how fast they travel. The wavelength shortened from $2.0\\,\\text{m}$ to $1.0\\,\\text{m}$."
+        },
+        {
+          "text": "The wave travels equally fast, and the wavelength is halved.",
+          "correct": true,
+          "feedback": "The values of the model support this: the speed stays at $2.0\\,\\text{m/s}$, and the wavelength shortens from $2.0\\,\\text{m}$ to $1.0\\,\\text{m}$. When crests are formed twice as often and travel equally fast, they are half as far from each other."
+        },
+        {
+          "text": "The wavelength stays the same, and the wave travels half as fast.",
+          "feedback": "The values of the model refute this: the speed stays at $2.0\\,\\text{m/s}$ and is not halved, and the wavelength shortens to $1.0\\,\\text{m}$ and does not stay the same. In the same rope the speed of the wave does not depend on how rapidly the hand is shaken."
+        },
+        {
+          "text": "The wave travels equally fast, and the wavelength doubles.",
+          "feedback": "The speed indeed stays the same, $2.0\\,\\text{m/s}$, but the wavelength shortens from $2.0\\,\\text{m}$ to $1.0\\,\\text{m}$. The period is halved, so during one period the crest manages to travel only half of the former distance before the next crest is formed."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Press *Start* and watch how the wave is formed at the left end of the rope. At the same time follow the marked point $P$ and its graph.",
+      "howto": "Press *Start*: the handle at the left end starts to move, and the wave travels to the right. The upper picture is a snapshot of the wave, that is, the whole rope or spring at one moment; the readings of the ruler are in metres. The lower graph shows the displacement $y$ of the marked point $P$ as a function of time over the last $4\\,\\text{s}$. In the *Wave* menu choose a transverse wave in a rope or a longitudinal wave in a coil spring, in the *Source* menu a continuous wave or a single pulse, and in the *Tension* menu a high or a low tension. The slider changes the frequency $f$ of the source. When you change a value, the wave starts again from the beginning; *Reset* does the same. In a continuous wave the distance between two crests (or compressions) is marked with $\\lambda$. *Speed* changes only the pace of the animation, not the speed $v$ of the wave.",
+      "model": "Every point of the rope or spring repeats the movement of the source with a delay that is the distance of the point from the source divided by the speed of the wave; ahead of the front the medium is at rest. The speed of the wave depends only on the tension: at a high tension $v = 2.0\\,\\text{m/s}$, at a low one $1.0\\,\\text{m/s}$. The amplitude is $5.0\\,\\text{cm}$. In the picture of the rope the displacement is drawn enlarged, in the picture of the spring to the scale of the ruler; in a longitudinal wave the displacement $y$ is parallel to the spring, and the shaded area shows the compressions, where the coils are closer together than usual. The point $P$ is at $x = 1.00\\,\\text{m}$. The medium continues to the right of the picture so far that no reflected wave returns into the picture, and the wave is not damped. The numbers are values of a model, not measurements.",
+      "calc": "The displacement of the point $x$ at the moment $t$ is the displacement of the source at the moment $t - \\tfrac{x}{v}$:\n\n$$y = A \\sin\\left(2\\pi f \\left(t - \\frac{x}{v}\\right)\\right)$$\n\nwhen $t - \\tfrac{x}{v} \\ge 0$, otherwise $y = 0$. In a pulse the source moves for only half a period $\\tfrac{T}{2}$, so the pulse is a single crest whose length is $\\tfrac{\\lambda}{2}$. In the readings $T = \\tfrac{1}{f}$, $\\lambda = \\tfrac{v}{f}$ and the distance travelled by the wave is $x = vt$. The greatest displacement of the point $P$ transversely and longitudinally is the greatest $|y|$ that has occurred since the start."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: does the point $P$ travel with the wave?",
+      "intro": "Test prediction 1. The frequency and the tension stay constant. Press *Start* and let the wave travel for at least three seconds, so that it has passed the point $P$ and reached the right edge of the picture. Record the measurement. Then change the kind of wave to longitudinal, start again and record again.",
+      "initial": {
+        "aalto": "poik",
+        "lahde": "jatkuva",
+        "jannitys": "suuri",
+        "f": 1
+      },
+      "locked": [
+        "lahde",
+        "jannitys",
+        "f"
+      ],
+      "vary": "aalto",
+      "names": {
+        "aalto": "wave",
+        "lahde": "source",
+        "jannitys": "tension",
+        "f": "frequency f"
+      },
+      "units": {
+        "f": "Hz"
+      },
+      "values": {
+        "aalto": {
+          "poik": "transverse",
+          "pitk": "longitudinal"
+        },
+        "lahde": {
+          "jatkuva": "continuous wave"
+        },
+        "jannitys": {
+          "suuri": "high tension"
+        }
+      },
+      "measure": [
+        {
+          "key": "xFront",
+          "label": "travelled (m)"
+        },
+        {
+          "key": "dyMax",
+          "label": "transverse (cm)"
+        },
+        {
+          "key": "dxMax",
+          "label": "longitudinal (cm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: only the frequency changes",
+      "intro": "Test prediction 2. The rope and its tension stay the same; change only the frequency of the source. Start the wave, wait until at least two crests are visible in the rope, and record the measurement at least at the frequencies $1.0\\,\\text{Hz}$ and $2.0\\,\\text{Hz}$, and if you like also at $0.5\\,\\text{Hz}$ (then $\\lambda = 4.0\\,\\text{m}$ and two crests fit in the picture only at times, so the reading of the wavelength is enough). Check the wavelength also with the ruler.",
+      "initial": {
+        "aalto": "poik",
+        "lahde": "jatkuva",
+        "jannitys": "suuri",
+        "f": 1
+      },
+      "locked": [
+        "aalto",
+        "lahde",
+        "jannitys"
+      ],
+      "vary": "f",
+      "names": {
+        "aalto": "wave",
+        "lahde": "source",
+        "jannitys": "tension",
+        "f": "frequency f"
+      },
+      "units": {
+        "f": "Hz"
+      },
+      "values": {
+        "aalto": {
+          "poik": "transverse"
+        },
+        "lahde": {
+          "jatkuva": "continuous wave"
+        },
+        "jannitys": {
+          "suuri": "high tension"
+        }
+      },
+      "measure": [
+        {
+          "key": "lambda",
+          "label": "λ (m)"
+        },
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: only the medium changes",
+      "intro": "Now the frequency stays at $1.0\\,\\text{Hz}$, and you change the tension of the rope. Record the measurement at a high and at a low tension. What changes and what stays the same?",
+      "initial": {
+        "aalto": "poik",
+        "lahde": "jatkuva",
+        "jannitys": "suuri",
+        "f": 1
+      },
+      "locked": [
+        "aalto",
+        "lahde",
+        "f"
+      ],
+      "vary": "jannitys",
+      "names": {
+        "aalto": "wave",
+        "lahde": "source",
+        "jannitys": "tension",
+        "f": "frequency f"
+      },
+      "units": {
+        "f": "Hz"
+      },
+      "values": {
+        "aalto": {
+          "poik": "transverse"
+        },
+        "lahde": {
+          "jatkuva": "continuous wave"
+        },
+        "jannitys": {
+          "suuri": "high",
+          "pieni": "low"
+        }
+      },
+      "measure": [
+        {
+          "key": "f",
+          "label": "f (Hz)"
+        },
+        {
+          "key": "v",
+          "label": "v (m/s)"
+        },
+        {
+          "key": "lambda",
+          "label": "λ (m)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what travels in a wave and what determines its speed?",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Write on the basis of your tables: How far did the wave travel in experiment 1, and how much and in which direction did the point $P$ move in the transverse and in the longitudinal wave? Calculate the product $f\\lambda$ for each row of experiment 2 and compare it with the speed $v$. What changed the speed of the wave in experiment 3, and what happened to the wavelength then?",
+      "model": "In experiment 1 the wave travelled about $6\\,\\text{m}$ in three seconds, but the greatest displacement of the point $P$ was only $5.0\\,\\text{cm}$, the amplitude of the wave. In the transverse wave $P$ moved up and down perpendicular to the rope, in the longitudinal wave back and forth along the spring, but in neither did it travel with the wave. So a wave carries energy, not matter. In experiment 2 the wavelength was $2.0\\,\\text{m}$ at the frequency $1.0\\,\\text{Hz}$ and $1.0\\,\\text{m}$ at $2.0\\,\\text{Hz}$; the product $f\\lambda$ was $2.0\\,\\text{m/s}$ in every row, the same as the speed $v$. In experiment 3 the lower tension reduced the speed to $1.0\\,\\text{m/s}$, and the wavelength shortened to $1.0\\,\\text{m}$ while the frequency stayed the same. The medium determines the speed, the source the frequency, and $v = f\\lambda$. The numbers are values of a model.",
+      "criteria": [
+        "The answer compares the distance travelled by the wave with the greatest displacement of the point $P$ and concludes that the matter of the rope does not travel with the wave.",
+        "The answer says that $P$ moved perpendicular to the rope in the transverse wave and parallel to the direction of travel in the longitudinal wave.",
+        "The answer calculates the product $f\\lambda$ and states that it is equal to $v$ in every row.",
+        "The answer says that the speed was changed by the tension, that is, the medium, not by the frequency."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the values of the model in the experiments. Then return to the question at the beginning: what travelled along the rope from the hand to the post, and why could the bell ring although no point of the rope moved to it?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The end of a rope is shaken steadily. A sensor measures the displacement of one point of the rope, and a student gets from it a graph whose horizontal axis shows the time $t$ in seconds. The distance between successive peaks of the graph is $0.50$. The student concludes: “The wavelength is $0.50\\,\\text{m}$. Since the frequency is $2.0\\,\\text{Hz}$, the speed is $v = f\\lambda = 2.0\\,\\text{Hz} \\cdot 0.50\\,\\text{m} = 1.0\\,\\text{m/s}$.” Where is the error?",
+      "choices": [
+        {
+          "text": "The distance between peaks here is the period $0.50\\,\\text{s}$, so the wavelength cannot be obtained from the graph.",
+          "correct": true,
+          "feedback": "Correct. On the horizontal axis of the $(t, y)$ graph of one point there is time, so the distance between peaks is the period $T = 0.50\\,\\text{s}$. It gives the same frequency $f = \\tfrac{1}{T} = 2.0\\,\\text{Hz}$, but the wavelength must be read from a snapshot of the rope or measured on the rope."
+        },
+        {
+          "text": "The fundamental equation is the wrong way round, since the speed is obtained by dividing: $v = \\tfrac{\\lambda}{f}$.",
+          "feedback": "The equation $v = f\\lambda$ is correct: during one period the wave travels one wavelength, so $v = \\tfrac{\\lambda}{T} = f\\lambda$. The units show the same: $\\text{Hz} \\cdot \\text{m} = \\text{m/s}$. The error is in reading the graph."
+        },
+        {
+          "text": "The frequency must be read from the graph, and from the distance between peaks the frequency is $0.50\\,\\text{Hz}$.",
+          "feedback": "The $0.50$ read from the graph is in seconds, that is, the period, and the frequency is its reciprocal: $f = \\tfrac{1}{0.50\\,\\text{s}} = 2.0\\,\\text{Hz}$, as the student wrote. The error is that the same number was also interpreted as the wavelength."
+        },
+        {
+          "text": "There is no error in the calculation, because the distance between two peaks is the wavelength in all graphs.",
+          "feedback": "The distance between peaks is the wavelength only in a snapshot, that is, the $(x, y)$ graph, whose horizontal axis shows position. On the horizontal axis of this graph there is time, so the distance between peaks is the period."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A long coil spring has been stretched on a table. Its end is pushed back and forth along the spring steadily $2.5$ times a second, and compressions form in the spring with $0.60\\,\\text{m}$ between their centres. How long does it take for one compression to travel to the other end of the spring, $6.0\\,\\text{m}$ away? Answer in seconds.",
+      "answer": 4.0,
+      "unit": "s",
+      "tolerance": 0.02,
+      "hints": [
+        "Which number is the frequency and which the wavelength? Which quantity is needed to get a time from a distance?",
+        "The speed of the wave follows from the fundamental equation $v = f\\lambda$, and the compression travels at a steady speed, so $t = \\tfrac{s}{v}$.",
+        "$v = 2.5\\,\\text{Hz} \\cdot 0.60\\,\\text{m} = 1.5\\,\\text{m/s}$, so $t = \\tfrac{6.0\\,\\text{m}}{1.5\\,\\text{m/s}}$."
+      ],
+      "mistakes": [
+        {
+          "value": 25,
+          "feedback": "You calculated the speed by dividing the wavelength by the frequency, $\\tfrac{0.60\\,\\text{m}}{2.5\\,\\text{Hz}} = 0.24\\,\\text{m/s}$. During one period of $0.40\\,\\text{s}$ the compression travels one wavelength, $0.60\\,\\text{m}$, so $v = f\\lambda = 1.5\\,\\text{m/s}$."
+        },
+        {
+          "value": 9,
+          "feedback": "You multiplied the distance by the speed. The time is obtained by dividing the distance by the speed: $t = \\tfrac{s}{v} = \\tfrac{6.0\\,\\text{m}}{1.5\\,\\text{m/s}}$. The unit also reveals the error: $\\text{m} \\cdot \\tfrac{\\text{m}}{\\text{s}}$ is not a second."
+        }
+      ],
+      "solution": "**Given:** frequency $f = 2.5\\,\\text{Hz}$ (pushes per second), distance between compressions, that is, the wavelength $\\lambda = 0.60\\,\\text{m}$, distance $s = 6.0\\,\\text{m}$\n\n**Find:** the time $t$ in which a compression travels the distance $s$, in seconds\n\n**Principle:** Compressions are parts of a longitudinal wave, and they travel at the speed of the wave. The distance between two successive compressions is the wavelength, and the frequency is that of the source, that is, the pushes of the hand, so the speed follows from the fundamental equation. In the same spring the speed is constant, so the time is the distance divided by the speed.\n\n**Formula:** $v = f\\lambda$ and $s = vt$, so\n\n$$t = \\frac{s}{v} = \\frac{s}{f\\lambda}$$\n\n**Conversions:** Not needed: $1\\,\\text{Hz} = 1\\,\\text{s}^{-1}$, so $f\\lambda$ is in m/s and the distance is in metres.\n\n**Substitution:** $t = \\dfrac{6.0\\,\\text{m}}{2.5\\,\\text{s}^{-1} \\cdot 0.60\\,\\text{m}} = \\dfrac{6.0\\,\\text{m}}{1.5\\,\\text{m/s}} = 4.0\\,\\text{s}$\n\n**Answer:** $4.0\\,\\text{s}$, two significant figures like the initial values $2.5$, $0.60\\,\\text{m}$ and $6.0\\,\\text{m}$.\n\n**Reasonableness:** The spring has room for $6.0\\,\\text{m} : 0.60\\,\\text{m} = 10$ wavelengths, and the wave travels one wavelength during each period $T = \\tfrac{1}{2.5\\,\\text{Hz}} = 0.40\\,\\text{s}$: $10 \\cdot 0.40\\,\\text{s} = 4.0\\,\\text{s}$. The speed $1.5\\,\\text{m/s}$ is a walking pace, which suits a slack table spring.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. The problems of level 1 use the fundamental equation directly, level 2 needs two steps, a unit conversion or a graph, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. What stays the same?",
+      "prompt": "A heavy rope has been knotted to the end of a light rope. A wave travelling in the light rope arrives at the knot and continues into the heavy rope, where waves travel more slowly. Which quantity stays the same when the wave passes from one rope to the other?",
+      "choices": [
+        {
+          "text": "The frequency, because the knot shakes the heavy rope in step with the incoming wave.",
+          "correct": true,
+          "feedback": "Correct. The knot is the source of the heavy rope: it vibrates with the frequency of the wave of the light rope, and the heavy rope vibrates in step with it. The speed decreases, so the wavelength shortens: for example, at the frequency $2.0\\,\\text{Hz}$ and with the speeds $3.0\\,\\text{m/s}$ and $1.5\\,\\text{m/s}$ the wavelength shortens from $1.5\\,\\text{m}$ to $0.75\\,\\text{m}$."
+        },
+        {
+          "text": "The speed of the wave, because the same wave continues its journey into the other rope.",
+          "feedback": "The speed of a wave depends on the medium, and the problem says that waves travel more slowly in the heavy rope. What stays the same is the frequency, which is determined by the vibration of the knot."
+        },
+        {
+          "text": "The wavelength, because the crests pass the knot as they are.",
+          "feedback": "The crests do not keep their spacing: in the heavy rope they travel more slowly, so during one period a crest manages to travel a shorter distance. The frequency stays the same, so $\\lambda = \\tfrac{v}{f}$ becomes smaller."
+        },
+        {
+          "text": "Nothing, because a completely new wave is formed in the heavy rope.",
+          "feedback": "The wave of the heavy rope is new in the sense that its speed and wavelength are different, but it is shaken by the knot, which vibrates with the frequency of the incoming wave. So the frequency is conserved."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Read a snapshot",
+      "figure": "fy5-10/valokuva",
+      "prompt": "The figure shows a snapshot of a rope at one moment. The end of the rope is shaken at a frequency of $1.8\\,\\text{Hz}$. What is the speed of the wave? Answer in metres per second.",
+      "answer": 2.7,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "On the horizontal axis of the snapshot there is position. Which distance in the figure is the wavelength?",
+        "The wavelength is the distance between two successive crests. The crests are at the grid lines.",
+        "The crests are at $0.5\\,\\text{m}$ and $2.0\\,\\text{m}$, so $\\lambda = 1.5\\,\\text{m}$ and $v = f\\lambda = 1.8\\,\\text{Hz} \\cdot 1.5\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.35,
+          "feedback": "You used the distance between a crest and a trough, $0.75\\,\\text{m}$, as the wavelength. The wavelength is the distance between two successive crests, $2.0\\,\\text{m} - 0.5\\,\\text{m} = 1.5\\,\\text{m}$."
+        },
+        {
+          "value": 0.833,
+          "feedback": "You divided the wavelength by the frequency. During one period the wave travels one wavelength, so $v = \\tfrac{\\lambda}{T} = f\\lambda$: the wavelength is multiplied by the frequency."
+        },
+        {
+          "value": 5.4,
+          "feedback": "You read the distance between the outermost crests, $3.5\\,\\text{m} - 0.5\\,\\text{m} = 3.0\\,\\text{m}$. There is another crest between them, so that distance is two wavelengths; the wavelength is $1.5\\,\\text{m}$."
+        }
+      ],
+      "solution": "**Given:** a snapshot of the rope (figure), frequency $f = 1.8\\,\\text{Hz}$\n\n**Find:** the speed of the wave $v$ in metres per second\n\n**Principle:** A snapshot shows the whole rope at one moment, so the distance between two successive crests is the wavelength. During one period the wave travels one wavelength, so the fundamental equation of wave motion gives the speed.\n\n**Reading the graph:** The crests, at a height of $4\\,\\text{cm}$, are at the grid lines at $x = 0.5\\,\\text{m}$, $2.0\\,\\text{m}$ and $3.5\\,\\text{m}$. The distance between successive crests is $2.0\\,\\text{m} - 0.5\\,\\text{m} = 1.5\\,\\text{m}$, and the same distance repeats between the following crests.\n\n**Formula:** $v = f\\lambda$\n\n**Conversions:** Not needed: $1\\,\\text{Hz} \\cdot 1\\,\\text{m} = 1\\,\\text{m/s}$. The centimetres of the vertical axis are not needed, because the amplitude does not affect the speed.\n\n**Substitution:** $v = 1.8\\,\\text{s}^{-1} \\cdot 1.5\\,\\text{m} = 2.7\\,\\text{m/s}$\n\n**Answer:** $2.7\\,\\text{m/s}$, two significant figures like the frequency $1.8\\,\\text{Hz}$ and the wavelength $1.5\\,\\text{m}$ read from the figure.\n\n**Reasonableness:** The period is $T = \\tfrac{1}{1.8\\,\\text{Hz}} \\approx 0.56\\,\\text{s}$, and $\\tfrac{1.5\\,\\text{m}}{0.56\\,\\text{s}} \\approx 2.7\\,\\text{m/s}$ gives the same. A few metres per second is a typical speed in a taut rope."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "3. Sound as a wave",
+      "prompt": "A loudspeaker plays a steady sound, and the sound travels in air from the loudspeaker towards the listener. How does an air molecule between the loudspeaker and the listener move because of the sound?",
+      "choices": [
+        {
+          "text": "It vibrates back and forth parallel to the direction of travel of the sound.",
+          "correct": true,
+          "feedback": "Correct. Sound in air is a longitudinal wave: the cone of the loudspeaker pushes and pulls the air, and the molecules vibrate in the direction of travel, so travelling compressions and rarefactions form. The molecule does not travel from the loudspeaker to the listener."
+        },
+        {
+          "text": "It vibrates up and down perpendicular to the direction of travel of the sound.",
+          "feedback": "This is the description of a transverse wave, as in a rope. The cone of the loudspeaker moves towards the listener and back, so the air vibrates in the same direction in which the sound travels: sound in air is a longitudinal wave."
+        },
+        {
+          "text": "It travels from the loudspeaker to the listener's ear at a speed of about $343\\,\\text{m/s}$.",
+          "feedback": "About $343\\,\\text{m/s}$ is the speed of propagation of the sound, the disturbance, in air, not the journey of a molecule. Sound does not carry air to the listener: it adds a small back-and-forth vibration to the random thermal motion of the molecules, and it is energy that moves forward."
+        },
+        {
+          "text": "It stays completely in place, because sound is pure energy.",
+          "feedback": "A mechanical wave needs a medium that vibrates. The molecules of air move back and forth in the direction of travel of the sound; they just do not travel with the wave."
+        }
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and open the answer only then."
+    }
+  ]
+}

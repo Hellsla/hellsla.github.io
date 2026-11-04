@@ -1,0 +1,433 @@
+{
+  "version": 1,
+  "contribution": "The chapter begins electromagnetism: the poles of a magnet and the magnetic dipole, ferromagnetism explained by magnetic domains, the magnetic field and field lines found with a compass, the Earth's magnetic field, and magnetic flux density $\\overline{B}$ with the tesla as its unit and the vector sum of fields. In the simulation the student finds that the needle follows the field lines and that the field of a magnet weakens quickly as the distance grows.",
+  "learn": [
+    "explain, using the poles of a magnet, magnetic domains and the magnetic field, why a magnet attracts iron and turns a compass.",
+    "draw and interpret the field lines of a bar magnet and of the Earth's magnetic field.",
+    "calculate the sum of perpendicular magnetic fields and the angle through which a compass needle turns."
+  ],
+  "prior": [
+    "Perpendicular vectors are added with the Pythagorean theorem and the direction is found from the tangent (chapter *Force diagrams and the combined effect of forces*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "An orienteer lays a compass on the map, and the needle obediently turns to point north. When she puts a torch with a small magnet in it beside the compass, the needle swings to a completely different direction. When the torch is taken away, the needle returns to north.",
+      "question": "What turns the compass needle, and why does the magnet win that contest when it is brought close?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Revise: the sum of vectors",
+      "optional": true,
+      "prompt": "A boat is acted on by a force of $30\\,\\text{N}$ towards the east and a force of $40\\,\\text{N}$ towards the north. What is the sum of the forces?",
+      "choices": [
+        {
+          "text": "$50\\,\\text{N}$, because perpendicular forces are the legs of a right-angled triangle.",
+          "correct": true,
+          "feedback": "Correct. Perpendicular vectors form the legs of a right-angled triangle, and the sum is the hypotenuse: $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$. Magnetic fields are added together in this chapter in the same way."
+        },
+        {
+          "text": "$70\\,\\text{N}$, because the magnitudes of the forces are added.",
+          "feedback": "Only vectors in the same direction can be added as plain numbers. Perpendicular vectors are the legs of a right-angled triangle, so the sum is $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$."
+        },
+        {
+          "text": "$10\\,\\text{N}$, because the smaller force is subtracted from the greater.",
+          "feedback": "A difference would come from vectors in opposite directions. Perpendicular vectors are added with the Pythagorean theorem: $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$."
+        }
+      ]
+    },
+    {
+      "id": "pred-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: distance",
+      "justify": true,
+      "reveal": {
+        "after": "exp-1",
+        "min": 2
+      },
+      "prompt": "A compass is on the axis of a bar magnet $10\\,\\text{cm}$ from the middle of the magnet, and the field of the magnet there is $30\\,\\mu\\text{T}$. The compass is moved along the same line to a distance of $20\\,\\text{cm}$. How strong is the field of the magnet there?",
+      "choices": [
+        {
+          "text": "About $15\\,\\mu\\text{T}$, that is half.",
+          "feedback": "The field does not weaken in direct proportion to the distance. In the model values it drops from $30.0\\,\\mu\\text{T}$ to $2.9\\,\\mu\\text{T}$, about a tenth, when the distance doubles."
+        },
+        {
+          "text": "About $3\\,\\mu\\text{T}$, that is less than a quarter.",
+          "correct": true,
+          "feedback": "Correct. In the model values the field is $30.0\\,\\mu\\text{T}$ at $10\\,\\text{cm}$ and only $2.9\\,\\mu\\text{T}$ at $20\\,\\text{cm}$, about a tenth. The field of a magnet weakens with distance much faster than in direct proportion or with the square, because farther away the effects of the two poles almost cancel each other."
+        },
+        {
+          "text": "About $7.5\\,\\mu\\text{T}$, that is a quarter.",
+          "feedback": "A quarter would be the field of a single pole, which weakens with the square of the distance. A magnet, however, has two opposite poles, and farther away their effects almost cancel. In the model values the field drops to $2.9\\,\\mu\\text{T}$, about a tenth."
+        },
+        {
+          "text": "Still $30\\,\\mu\\text{T}$, because the magnet is the same.",
+          "feedback": "The magnet is the same, but its field weakens as the distance grows. In the model values it drops from $30.0\\,\\mu\\text{T}$ to $2.9\\,\\mu\\text{T}$, which can also be seen from the needle: farther away it turns less and less away from north."
+        }
+      ]
+    },
+    {
+      "id": "pred-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: at the side of the magnet",
+      "justify": true,
+      "reveal": {
+        "after": "exp-2",
+        "min": 2
+      },
+      "prompt": "The north pole $\\text{N}$ of a bar magnet points east. A compass is placed north of the magnet, level with the middle of the magnet. Assume that there is no Earth's field. Which way does the north end of the compass needle point?",
+      "choices": [
+        {
+          "text": "West, along the magnet towards its south pole.",
+          "correct": true,
+          "feedback": "Correct. In the model values the needle points exactly west at the middle of the magnet, $\\theta = -90^\\circ$. The field lines curve from the north pole round the magnet to the south pole, so at the side of the magnet they run parallel to the magnet from the north-pole end to the south-pole end."
+        },
+        {
+          "text": "South, straight towards the middle of the magnet.",
+          "feedback": "There is no pole at the middle of the magnet to attract the needle. In the model values the needle points west, that is parallel to the magnet: the field lines curve past the side from the north pole to the south pole."
+        },
+        {
+          "text": "North, straight away from the magnet.",
+          "feedback": "The field points away from a pole only near the north pole. At the side the field lines run parallel to the magnet, and in the model values the needle points west, towards the south pole."
+        },
+        {
+          "text": "East, towards the north pole of the magnet.",
+          "feedback": "The north end of the needle is itself a north pole, and like poles repel each other. In the model values the needle points west, away from the north pole of the magnet."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "In the simulation a bar magnet lies on a table seen from above, north upwards. Move the compass around the magnet and watch where the needle turns.",
+      "howto": "The position of the compass is given as the distance $r$ from the middle of the magnet and the direction $\\varphi$, measured anticlockwise from east: $\\varphi = 0^\\circ$ is on the axis of the magnet on the east side and $\\varphi = 90^\\circ$ is north of the magnet. You can also drag the compass with the mouse or a finger. *Magnet* turns the magnet so that its north pole is in the east or in the west. *Earth's field* adds or removes the horizontal component of the Earth's field, which points north. The checkboxes show the field lines of the magnet itself and a compass grid whose small needles show the direction of the total field at every point. *Shake the needle* gives the needle a nudge, and *Speed* changes only the pace of the motion of the needle. In the readings $B_\\text{m}$ is the field of the magnet, $B_\\text{h}$ the horizontal component of the Earth's field, $B$ the total field and $\\theta$ the direction of the needle from north: positive towards the east, negative towards the west.",
+      "model": "The values are model values calculated by the simulation. The magnet is modelled as two poles $4\\,\\text{cm}$ from the middle of the magnet. The strength of the field is chosen so that on the axis of the magnet $10\\,\\text{cm}$ from the middle $B_\\text{m} = 30.0\\,\\mu\\text{T}$. The horizontal component of the Earth's field is the value for southern Finland, $14\\,\\mu\\text{T}$, and its vertical component does not turn a horizontal needle. The field of the compass itself does not change the field of the magnet. The needle turns with damping to point along the total field; the reading $\\theta$ is the direction in which the needle settles.",
+      "calc": "The field of each pole weakens with the square of the distance, and the field $\\overline{B}_\\text{m}$ of the magnet is the vector sum of the fields of the poles. The total field is $\\overline{B} = \\overline{B}_\\text{m} + \\overline{B}_\\text{h}$. The direction of the needle from north is the angle $\\theta$ for which $\\tan\\theta$ is the ratio of the east component to the north component of the total field."
+    },
+    {
+      "id": "exp-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the field weakens as the distance grows",
+      "intro": "The initial state places the compass on the axis of the magnet on the east side ($\\varphi = 0^\\circ$), the north pole of the magnet towards the east and the Earth's field on. Change the distance $r$ and record the direction $\\theta$ of the needle and the field $B_\\text{m}$ of the magnet. Record at least the distances $10\\,\\text{cm}$, $12\\,\\text{cm}$, $14\\,\\text{cm}$ and $20\\,\\text{cm}$.",
+      "initial": {
+        "phi": 0,
+        "magneetti": "ita",
+        "maa": "1",
+        "r": 10
+      },
+      "names": {
+        "r": "distance r",
+        "phi": "direction φ",
+        "magneetti": "magnet",
+        "maa": "Earth's field"
+      },
+      "units": {
+        "r": "cm",
+        "phi": "°"
+      },
+      "values": {
+        "magneetti": {
+          "ita": "north pole towards the east"
+        },
+        "maa": {
+          "1": "on"
+        }
+      },
+      "locked": [
+        "phi",
+        "magneetti",
+        "maa"
+      ],
+      "vary": "r",
+      "measure": [
+        {
+          "key": "theta",
+          "label": "θ (°)"
+        },
+        {
+          "key": "Bm",
+          "label": "field of the magnet B_m (µT)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "numeric",
+        "prompt": "From your table, calculate how many times greater the field $B_\\text{m}$ of the magnet is at a distance of $10\\,\\text{cm}$ than at a distance of $20\\,\\text{cm}$.",
+        "answer": 10.4,
+        "unit": "",
+        "tolerance": 0.04,
+        "hints": [
+          "Find the rows $r = 10\\,\\text{cm}$ and $r = 20\\,\\text{cm}$ in the table.",
+          "The question \"how many times greater\" is answered by dividing: the greater field is divided by the smaller.",
+          "$30.0\\,\\mu\\text{T} : 2.9\\,\\mu\\text{T}$"
+        ],
+        "mistakes": [
+          {
+            "value": 2,
+            "feedback": "The distance doubled, but the field did not halve. Divide the field $B_\\text{m}$ in the row $10\\,\\text{cm}$ by the value in the same column in the row $20\\,\\text{cm}$."
+          },
+          {
+            "value": 4,
+            "feedback": "Four would be a weakening with the square of the distance. Calculate the ratio from the values of $B_\\text{m}$ in the table: the field of the magnet weakens even faster."
+          }
+        ],
+        "solution": "**Given:** from the table the model values $B_\\text{m} = 30.0\\,\\mu\\text{T}$ when $r = 10\\,\\text{cm}$ and $B_\\text{m} = 2.9\\,\\mu\\text{T}$ when $r = 20\\,\\text{cm}$\n\n**Find:** ratio of the fields $B_\\text{m}(10\\,\\text{cm}) : B_\\text{m}(20\\,\\text{cm})$, a plain number\n\n**Principle:** The question \"how many times greater\" is answered by dividing the greater value by the smaller. Both fields were measured on the same line on the axis of the magnet, so they are in the same direction and their magnitudes can be compared directly.\n\n**Formula:** $k = \\dfrac{B_1}{B_2}$, where $B_1$ is the field at $10\\,\\text{cm}$ and $B_2$ the field at $20\\,\\text{cm}$\n\n**Conversions:** Not needed: both fields are in microtesla, and the unit cancels.\n\n**Substitution:** $k = \\dfrac{30.0\\,\\mu\\text{T}}{2.9\\,\\mu\\text{T}} = 10.3$\n\n**Answer:** about $10$, to two significant figures like the reading $2.9\\,\\mu\\text{T}$; with more accurate model values the ratio is $10.4$.\n\n**Reasonableness:** If the field weakened with the square of the distance, the ratio would be $2^2 = 4$, and in direct proportion $2$. The $10$ obtained is close to $2^3 = 8$ but a little greater, because at $10\\,\\text{cm}$ the nearer pole of the magnet still acts clearly more strongly than the farther one. The needle tells the same: the angle decreased from $65^\\circ$ to about $12^\\circ$."
+      }
+    },
+    {
+      "id": "exp-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: the direction of the field around the magnet",
+      "intro": "The initial state removes the Earth's field, so the needle shows the direction of the field of the magnet alone. The compass is $14\\,\\text{cm}$ from the middle of the magnet. Move the compass round the magnet by changing the direction $\\varphi$ and record the direction of the needle. Record at least the directions $0^\\circ$, $45^\\circ$, $90^\\circ$, $135^\\circ$ and $180^\\circ$. It is worth keeping the field lines visible.",
+      "initial": {
+        "r": 14,
+        "magneetti": "ita",
+        "maa": "0",
+        "phi": 0
+      },
+      "names": {
+        "r": "distance r",
+        "phi": "direction φ",
+        "magneetti": "magnet",
+        "maa": "Earth's field"
+      },
+      "units": {
+        "r": "cm",
+        "phi": "°"
+      },
+      "values": {
+        "magneetti": {
+          "ita": "north pole towards the east"
+        },
+        "maa": {
+          "0": "off"
+        }
+      },
+      "locked": [
+        "r",
+        "magneetti",
+        "maa"
+      ],
+      "vary": "phi",
+      "measure": [
+        {
+          "key": "theta",
+          "label": "θ (°)"
+        },
+        {
+          "key": "Bm",
+          "label": "field of the magnet B_m (µT)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "How do the directions of the needle fit the field lines of the magnet?",
+        "choices": [
+          {
+            "text": "The needle follows the field lines: its north end points along the line.",
+            "correct": true,
+            "feedback": "Correct. On the axis on the east side the needle points east, that is away from the north pole, $\\theta = 90^\\circ$, and on the west side also east, that is towards the south pole. At the side it points west, $\\theta = -90^\\circ$. So the needle follows the field lines, which run outside the magnet from the north pole to the south pole."
+          },
+          {
+            "text": "At every point the needle points straight towards the middle of the magnet.",
+            "feedback": "Then the needle would point south on the north side of the magnet, but in the model values it points west there, $\\theta = -90^\\circ$. The needle is parallel to the field line, and the field lines do not point towards the middle of the magnet."
+          },
+          {
+            "text": "At every point the needle points towards the nearer pole of the magnet.",
+            "feedback": "On the east side of the axis the nearer pole is the north pole, but in the model values the needle points east there, away from it, $\\theta = 90^\\circ$. The north end of the needle repels the north pole and follows the field line towards the south pole."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion",
+      "after": [
+        "exp-1",
+        "exp-2"
+      ],
+      "prompt": "Using your measurements, explain where a compass needle turns near a magnet and why the effect of the magnet on the needle weakens when the compass is taken farther away. Use the words field line, magnetic field and Earth's field.",
+      "criteria": [
+        "The answer says that the needle turns to point along the total field, that is along the field line, and that its north end points in the direction of the field.",
+        "The answer uses the results of experiment 2: outside the magnet the field points away from the north pole and towards the south pole, also at the side of the magnet parallel to the magnet.",
+        "The answer uses the results of experiment 1: the field of the magnet weakens from $10\\,\\text{cm}$ to $20\\,\\text{cm}$ to about a tenth, so farther away the Earth's field determines the direction of the needle."
+      ],
+      "model": "A compass needle is a small magnet that turns to point along the total field: its north end points in the direction of the field, that is along the field line. In experiment 2 the Earth's field had been removed. On the axis east of the magnet the needle pointed east, away from the north pole, and on the west side also east, towards the south pole. At the side of the magnet the needle pointed west, that is parallel to the magnet towards the south pole. So the needle followed the field lines, which run outside the magnet from the north pole to the south pole. In experiment 1 the field of the magnet in the model values was $30.0\\,\\mu\\text{T}$ at $10\\,\\text{cm}$, $9.1\\,\\mu\\text{T}$ at $14\\,\\text{cm}$ and only $2.9\\,\\mu\\text{T}$ at $20\\,\\text{cm}$. The needle turned $65^\\circ$, $33^\\circ$ and $12^\\circ$ from north. Close to the magnet its field is much greater than the horizontal component $14\\,\\mu\\text{T}$ of the Earth's field and determines the direction; farther away the Earth's field wins and the needle turns back towards north."
+    },
+    {
+      "id": "theory",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "reflect",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the results of the simulation. What did you learn about the direction of the field lines and about how quickly the field of a magnet weakens? Return also to the orienteer at the beginning: why does the magnet in the torch turn the needle only when it is close?",
+      "predictions": [
+        "pred-1",
+        "pred-2"
+      ]
+    },
+    {
+      "id": "example",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "At the compass the horizontal component of the Earth's field is $14\\,\\mu\\text{T}$ towards the north and the field of a magnet is $18\\,\\mu\\text{T}$ towards the east. A student calculated the total field like this: $B = 14\\,\\mu\\text{T} + 18\\,\\mu\\text{T} = 32\\,\\mu\\text{T}$. What is wrong with the calculation?",
+      "choices": [
+        {
+          "text": "Perpendicular fields are added as vectors: $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$.",
+          "correct": true,
+          "feedback": "Correct. The fields are vectors and perpendicular to each other, so they form the legs of a right-angled triangle. The total field is the hypotenuse $22.8\\,\\mu\\text{T}$, and it is smaller than the sum of the numerical values of the fields."
+        },
+        {
+          "text": "The fields must be subtracted: $B = 18\\,\\mu\\text{T} - 14\\,\\mu\\text{T} = 4\\,\\mu\\text{T}$.",
+          "feedback": "A difference would come only from fields in opposite directions. The fields pointing north and east are perpendicular, so $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+        },
+        {
+          "text": "A compass feels only the stronger field, so $B = 18\\,\\mu\\text{T}$.",
+          "feedback": "The needle turns to point along the sum of both fields: it does not point straight east but about $52^\\circ$ from north towards east. The total field is $\\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+        },
+        {
+          "text": "There is no error in the calculation, because both fields are in microtesla.",
+          "feedback": "The same unit is not enough: only fields in the same direction can be added as plain numbers. For perpendicular fields $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "On a table there is a compass and two magnets. The field of magnet A at the compass is $20\\,\\mu\\text{T}$ towards the east and the field of magnet B is $12\\,\\mu\\text{T}$ towards the north. The horizontal component of the Earth's field is $14\\,\\mu\\text{T}$ towards the north. Through how many degrees does the compass needle turn from north towards east?",
+      "answer": 37.6,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "Which of the fields are in the same direction? They can be added as plain numbers.",
+        "The fields pointing north add up to $12\\,\\mu\\text{T} + 14\\,\\mu\\text{T} = 26\\,\\mu\\text{T}$. The field pointing east is $20\\,\\mu\\text{T}$.",
+        "$\\tan\\theta = \\dfrac{20\\,\\mu\\text{T}}{26\\,\\mu\\text{T}}$, when $\\theta$ is measured from north."
+      ],
+      "mistakes": [
+        {
+          "value": 55.0,
+          "feedback": "You left out the field of magnet B. It points in the same direction as the Earth's field, so the north component is $12\\,\\mu\\text{T} + 14\\,\\mu\\text{T} = 26\\,\\mu\\text{T}$."
+        },
+        {
+          "value": 59.0,
+          "feedback": "You left out the Earth's field. The needle turns to point along the sum of all the fields, so the north component is $12\\,\\mu\\text{T} + 14\\,\\mu\\text{T} = 26\\,\\mu\\text{T}$."
+        },
+        {
+          "value": 52.4,
+          "feedback": "The angle from north is the ratio of the east component to the north component: $\\tan\\theta = 20 : 26$. You calculated the inverse ratio, which gives the angle from east."
+        }
+      ],
+      "solution": "**Given:** field of magnet A $B_\\text{A} = 20\\,\\mu\\text{T}$ towards the east, field of magnet B $B_\\text{B} = 12\\,\\mu\\text{T}$ towards the north, horizontal component of the Earth's field $B_\\text{h} = 14\\,\\mu\\text{T}$ towards the north\n\n**Find:** angle of deflection $\\theta$ of the needle from north towards east in degrees\n\n**Principle:** The needle turns to point along the total field, and the total field is the vector sum of the fields. The field of magnet B and the Earth's field point in the same direction, so they are added as plain numbers. The field pointing east is perpendicular to them, so the angle is found from the tangent.\n\n**Formula:** $B_\\text{north} = B_\\text{B} + B_\\text{h}$ and $\\tan\\theta = \\dfrac{B_\\text{A}}{B_\\text{north}}$, so $\\theta = \\tan^{-1}\\dfrac{B_\\text{A}}{B_\\text{B} + B_\\text{h}}$\n\n**Conversions:** Not needed: all fields are in microtesla, and the unit cancels in the ratio.\n\n**Substitution:** $\\theta = \\tan^{-1}\\dfrac{20\\,\\mu\\text{T}}{12\\,\\mu\\text{T} + 14\\,\\mu\\text{T}} = \\tan^{-1} 0.769 = 37.6^\\circ$\n\n**Answer:** $38^\\circ$ from north towards east, to two significant figures like the fields.\n\n**Reasonableness:** The north component $26\\,\\mu\\text{T}$ is greater than the east component $20\\,\\mu\\text{T}$, so the needle must turn less than $45^\\circ$, as it does. Without magnet B the angle would be $55^\\circ$: magnet B pulls the needle back towards north."
+    },
+    {
+      "id": "tehtavat",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise further at three levels. In the calculation tasks, draw the fields as vectors before you calculate."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "In Finland the north end of a compass needle points towards geographic north. What magnetic pole does the Earth have near the geographic North Pole?",
+      "choices": [
+        {
+          "text": "A north pole, because the compass points towards the north pole.",
+          "feedback": "Like poles repel each other, so a north pole would push the north end of the needle away. The needle is attracted by an unlike pole, that is a magnetic south pole."
+        },
+        {
+          "text": "A south pole, because it attracts the north pole of the needle.",
+          "correct": true,
+          "feedback": "Correct. The north end of the needle is the north pole of a magnet, and it is attracted by an unlike pole. So near the geographic North Pole there is the Earth's magnetic south pole."
+        },
+        {
+          "text": "Neither, because the rotation of the Earth turns the needle to the north.",
+          "feedback": "Rotation does not turn a magnet. The needle is turned by the Earth's magnetic field, which resembles the field of a bar magnet, and near the geographic North Pole there is its south pole."
+        },
+        {
+          "text": "Both poles, because the Earth is a magnetic dipole.",
+          "feedback": "In a dipole the poles are at different ends. The Earth's magnetic south pole is near the geographic North Pole and the magnetic north pole near the geographic South Pole."
+        }
+      ]
+    },
+    {
+      "id": "check-2",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "2. Field line picture",
+      "figure": "fy7-1/two-magnets",
+      "prompt": "The picture shows the field lines of two bar magnets placed on the same line. The poles of the magnets are not marked. What can be concluded from the picture about the poles facing each other?",
+      "choices": [
+        {
+          "text": "Like poles, but their kind cannot be told from the picture.",
+          "correct": true,
+          "feedback": "Correct. The lines do not run from one magnet to the other but curve away, and a point where the field is zero is left at the middle of the gap. Like poles repel each other. There are no direction arrows, so the poles can be two north poles or two south poles."
+        },
+        {
+          "text": "Unlike poles, because the lines start from both poles.",
+          "feedback": "Between unlike poles the lines would run straight from one pole to the other. In the picture they curve away from each other and an empty point is left at the middle of the gap, so the poles are like poles."
+        },
+        {
+          "text": "Both are north poles, because the lines start from the poles.",
+          "feedback": "The poles are like poles, but the lines have no direction arrows. Without a direction it cannot be concluded from the picture whether the lines start from the poles or end at them, so the poles can also be two south poles."
+        },
+        {
+          "text": "Nothing can be concluded from the picture, because the poles are not marked.",
+          "feedback": "The shape of the lines tells a lot: they do not run from one magnet to the other, and an empty point is left at the middle of the gap. So the poles are like poles, although their kind cannot be told without direction arrows."
+        }
+      ]
+    },
+    {
+      "id": "check-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain",
+      "prompt": "Using magnetic domains, explain why a magnet attracts an unmagnetised iron nail but not an aluminium nail.",
+      "criteria": [
+        "The answer says that iron has magnetic domains in which the magnetic dipoles of the atoms point in the same direction, and that in unmagnetised iron the directions of the domains vary.",
+        "The answer says that the field of the magnet aligns the domains along the field, so the nail becomes magnetised and the end nearest the magnet gets the opposite pole.",
+        "The answer says that aluminium is not ferromagnetic, so it has no magnetic domains and does not become noticeably magnetised."
+      ],
+      "model": "Iron is a ferromagnetic material. Its atoms are small magnetic dipoles that line up in the same direction in magnetic domains. In an unmagnetised nail the directions of the domains vary, so their effects cancel. When a magnet is brought close, its field turns the domains and makes those that point along the field grow. The nail becomes magnetised: if the north pole of the magnet is near, the nearer end of the nail becomes a south pole. Unlike poles attract each other, so the magnet attracts the nail. Aluminium is not ferromagnetic. It has no magnetic domains, and it does not become magnetised enough for the attraction to be noticed."
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, three quick questions. Answer first by yourself and open the answer only then."
+    }
+  ]
+}

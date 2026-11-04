@@ -1,0 +1,10 @@
+[
+  {
+    "q": "What does a wave carry away from the source, and what does it not carry?",
+    "a": "A wave carries energy but not matter. The particles of the medium vibrate around their equilibrium positions, and only the disturbance, that is, the phase of the vibration, moves forward."
+  },
+  {
+    "q": "The same rope is shaken three times as rapidly as before, and the tension of the rope does not change. How does the wavelength change?",
+    "a": "The wavelength is a third of the former. The speed $v = f\\lambda$ depends on the rope and does not change, so when $f$ triples, $\\lambda = \\tfrac{v}{f}$ decreases to a third."
+  }
+]

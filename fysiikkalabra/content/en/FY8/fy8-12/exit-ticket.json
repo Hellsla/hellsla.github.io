@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The photon energy of green light is about $2.5\\,\\text{eV}$ and the maximum photon energy of dental X-rays about $60\\,\\text{keV}$. Which can ionise a water molecule, whose ionisation energy is $12.6\\,\\text{eV}$, and why does brighter green light not change this?",
+    "a": "Only the X-ray photon, because its energy exceeds the ionisation energy many times over. The energy of a single green photon, $2.5\\,\\text{eV}$, is too small, and brighter light only means more photons of the same kind: a single photon still cannot remove an electron."
+  },
+  {
+    "q": "Medical supplies are sterilised with gamma radiation. Do they become radioactive?",
+    "a": "No. Gamma radiation ionises atoms and kills microbes by breaking their molecules, but it does not change nuclei. Radioactivity can arise mainly from neutron radiation. Only the radioactive material itself is dangerous, if it gets onto the skin or into the body."
+  }
+]

@@ -1,7 +1,7 @@
 # Fysiikkalabra QA for every course: build every lesson (drafts included), run the headless simulation and inquiry
 # tests, check answer positions, carried reviews and the committed site. No AI task repeats these checks.
-# This repository serves GitHub Pages from its root branch, so there is no Pages deploy job here;
-# publishing is a separate decision (see fysiikkalabra/README.md).
+# This repository serves GitHub Pages from its root branch (the teacher's other sites). Ruukkilabra itself is published at
+# https://ruukkilab.fi/ by .github/workflows/ruukkilabra-deploy.yml after this workflow has passed on main (teacher 2026-11-04).
 # On a pull request the three browser steps (simulations, inquiry tests, layout at eight widths) test only the pages the
 # change can alter (scripts/ci_scope.py; teacher 2026-11-01); a change to anything shared runs them in full. Every other
 # check, and the whole run on main, weekly and on a manual run, is full. A newer push to a pull request cancels its older run.
@@ -9,9 +9,9 @@ name: fysiikkalabra-ci
 on:
   push:
     branches: [main]   # a pull request's branch is tested by its pull_request run (the required check qa)
-    paths: ["fysiikkalabra/**", "kasitetakomo.html", "kasitetakomo-data.js", ".github/workflows/fysiikkalabra-ci.yml"]
-  pull_request:   # the Käsitetakomo files too: the site links to their topic ids (scripts/concept_cards.py)
-    paths: ["fysiikkalabra/**", "kasitetakomo.html", "kasitetakomo-data.js", ".github/workflows/fysiikkalabra-ci.yml"]
+    paths: ["fysiikkalabra/**", ".github/workflows/fysiikkalabra-ci.yml"]
+  pull_request:
+    paths: ["fysiikkalabra/**", ".github/workflows/fysiikkalabra-ci.yml"]
   schedule: [{ cron: "0 19 * * 0" }]   # Sunday 21:00 Helsinki (winter time): weekly QA run
   workflow_dispatch: {}                 # a full run by hand (Actions -> fysiikkalabra-ci -> Run workflow)
 permissions: { contents: read }
@@ -78,6 +78,10 @@ jobs:
         run: python scripts/test_home.py
       - name: the solution editor under every exercise (Abitti's Digabi editor, loaded on the first click; copy for L'Math; teacher 2026-11-01)
         run: python scripts/test_writepad.py
+      - name: read aloud on every lesson page (browser voice, formulas as words, the sentence and word highlighted; teacher 2026-11-03)
+        run: python scripts/test_readaloud.py
+      - name: the progress bar of a lesson (sticky stage bar, stage on screen, done stages in localStorage, no JavaScript; teacher 2026-11-03)
+        run: python scripts/test_progress.py
       - run: python scripts/test_reviews.py
       - run: python scripts/test_inquiry.py
       - run: python scripts/reviews.py verify
@@ -100,6 +104,7 @@ jobs:
         run: |
           fail=0
           for f in content/fi/*/*/inquiry.json; do
+            case "$f" in content/fi/units/*) continue;; esac   # course units (FY12) are checked by units.py check, as FY14's are
             id=$(basename "$(dirname "$f")")
             if [ "$PAGES" != full ]; then case " $PAGES " in *" $id "*) ;; *) continue;; esac; fi
             if python scripts/test_inquiry.py "$id" > "/tmp/inquiry-$id.txt" 2>&1; then tail -1 "/tmp/inquiry-$id.txt" | sed "s/^/$id: /"
@@ -112,6 +117,8 @@ jobs:
         run: |
           python scripts/build.py
           if [ -n "$(git status --porcelain site/)" ]; then echo "site/ is not a fresh render of the reviewed sources (run build.py and commit):"; git status --short site/; exit 1; fi
+      - name: the copy published at https://ruukkilab.fi/ (site/ at the root) names none of the teacher's other sites and has no broken relative link (scripts/deploy_site.py, teacher 2026-11-04)
+        run: python scripts/deploy_site.py /tmp/ruukkilab
       - name: "every published page at eight widths (640 = 1280 px at 200 % zoom), closed, with hints and solutions open and with everything open; no overflow, overlap, empty column beside an opened card or a figure, cards out of order, over-long lines, small text or controls, or headings under the sticky navigation (NOTES.md §8)"
         if: steps.scope.outputs.pages != ''
         env: { PAGES: "${{ steps.scope.outputs.pages }}" }

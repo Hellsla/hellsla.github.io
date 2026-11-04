@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-3-L1-01",
+      "level": 1,
+      "text": "Leikkikentän karusellin reunalla seisova lapsi kiertää ympyrärataa, jonka säde on $2{,}5\\,\\text{m}$. Karuselli tekee yhden kierroksen $6{,}0\\,\\text{s}$:ssa. Kuinka suuri on lapsen ratanopeus?",
+      "answer": 2.6,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-02",
+      "level": 1,
+      "text": "Pöytätuulettimen siiven kärki on $0{,}20\\,\\text{m}$:n päässä akselista, ja siivet pyörivät pyörimistaajuudella $15\\,\\tfrac{1}{\\text{s}}$. Kuinka suuri on siiven kärjen ratanopeus?",
+      "answer": 19,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-03",
+      "level": 1,
+      "text": "Vanhan tuulimyllyn siivet tekevät tasaisessa tuulessa yhden kierroksen $4{,}0\\,\\text{s}$:ssa. Mikä on siipien pyörimistaajuus?",
+      "answer": 0.25,
+      "unit": "1/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-04",
+      "level": 1,
+      "text": "Jääkiekkoilija pyörittää kiekkoa narun päässä jäällä ympyrärataa, jonka säde on $1{,}5\\,\\text{m}$, ja kiekon ratanopeus on $3{,}0\\,\\text{m/s}$. Naru katkeaa. Kuinka kaukana radan keskipisteestä kiekko on $2{,}0\\,\\text{s}$ katkeamisen jälkeen? Jää on kitkaton, ja kiekko ei osu mihinkään.",
+      "answer": 6.2,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L1-05",
+      "level": 1,
+      "text": "Kansainvälinen avaruusasema kiertää Maata lähes ympyrärataa, jonka säde on $6{,}78 \\cdot 10^{6}\\,\\text{m}$. Yksi kierros kestää $5{,}55 \\cdot 10^{3}\\,\\text{s}$. Kuinka suuri on avaruusaseman ratanopeus? Anna vastaus yksikössä m/s.",
+      "answer": 7680,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-3-L2-01",
+      "level": 2,
+      "text": "Levysoittimella soitetaan singlelevyä, joka pyörii $45$ kierrosta minuutissa. Levyn reuna on $8{,}5\\,\\text{cm}$:n päässä levyn keskipisteestä. Kuinka suuri on levyn reunan ratanopeus?",
+      "answer": 0.4,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L2-02",
+      "level": 2,
+      "text": "Maailmanpyörän halkaisija on $40\\,\\text{m}$. Pyörän reunalla oleva gondoli kulkee ympyrärataa tasaisella vauhdilla $0{,}35\\,\\text{m/s}$. Kuinka kauan yksi kierros kestää? Anna vastaus minuutteina.",
+      "answer": 6.0,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L2-03",
+      "level": 2,
+      "text": "Laboratoriosentrifugissa koeputken pohja on $9{,}5\\,\\text{cm}$:n päässä pyörimisakselista ja liikkuu ratanopeudella $45\\,\\text{m/s}$. Kuinka monta kierrosta minuutissa sentrifugi pyörii? Anna vastaus yksikössä 1/min.",
+      "answer": 4500,
+      "unit": "1/min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L2-04",
+      "level": 2,
+      "text": "Tuulivoimalan lavan kärki on $52\\,\\text{m}$:n päässä akselista ja liikkuu ratanopeudella $65\\,\\text{m/s}$. Kuinka suuri on ratanopeus samassa lavassa kohdassa, joka on $20\\,\\text{m}$:n päässä akselista?",
+      "answer": 25,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-3-L3-01",
+      "level": 3,
+      "text": "Kaksi juoksijaa juoksee rinnakkain radan kaarteessa, joka on puoliympyrä. Sisemmän juoksijan rata on ympyränkaari, jonka säde on $36{,}5\\,\\text{m}$, ja hänen vauhtinsa on $7{,}0\\,\\text{m/s}$. Ulomman juoksijan kaaren säde on $40{,}2\\,\\text{m}$, ja kaaret ovat samankeskiset. Kuinka suuri vauhti ulommalla juoksijalla on oltava, jotta juoksijat pysyvät rinnakkain koko kaarteen ajan?",
+      "answer": 7.7,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L3-02",
+      "level": 3,
+      "text": "Auto ajaa liikenneympyrässä tasaisella vauhdilla $36\\,\\text{km/h}$. Kuinka suuri on auton nopeuden muutoksen suuruus $|\\Delta\\overline{v}|$ sinä aikana, kun auto kiertää neljänneksen ympyrästä? Anna vastaus yksikössä m/s.",
+      "answer": 14,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-3-L3-03",
+      "level": 3,
+      "text": "Polkupyörän eturattaan säde on $10{,}0\\,\\text{cm}$ ja takarattaan säde $4{,}0\\,\\text{cm}$. Ketju liikkuu kummankin rattaan kehällä samalla ratanopeudella. Takaratas ja takapyörä pyörivät yhdessä, ja takapyörän säde on $0{,}34\\,\\text{m}$. Pyöräilijä polkee niin, että eturatas pyörii pyörimistaajuudella $1{,}0\\,\\tfrac{1}{\\text{s}}$. Kuinka suuri on pyörän vauhti, kun rengas ei luista maata vasten? Anna vastaus yksikössä km/h.",
+      "answer": 19,
+      "unit": "km/h",
+      "tolerance": 0.02
+    }
+  ]
+}

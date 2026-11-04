@@ -85,7 +85,7 @@ Energia ei katoa. Kaikki laitteeseen otettu energia ei kuitenkaan muutu siihen m
 Energian kulkua laitteen läpi voi havainnollistaa energiavirtakuviolla eli Sankey-kuviolla. Kuviossa nuolen paksuus on verrannollinen energiaan. Tuleva nuoli jakautuu ohueen hyötynuoleen ja paksuun häviönuoleen. Lamppu ottaa sähköenergiaa $100\,\text{J}$. Siitä vain $5\,\text{J}$ muuttuu valoksi, ja loput $95\,\text{J}$ on lämpöä. Lähtevien nuolten paksuudet ovat yhteensä yhtä suuret kuin tulevan nuolen paksuus, koska energia säilyy.
 
 ### Häviö määräytyy laitteen tarkoituksesta
-Vedenkeittimessä lämpö on hyötyä, kun se lämmittää veden. Lämpö on häviötä, kun se karkaa keittimen kyljistä huoneeseen. Hehkulampun lämpö lasketaan häviöksi. Näin on silloinkin, kun lamppu lämmittää huonetta talvella, koska lampun hyödyksi on määritelty valo. Hyöty riippuu siis laitteen tarkoituksesta. Hyötysuhteen arvo riippuu siitä, mikä määritellään hyödyksi ja mitä laitteeseen luetaan kuuluvaksi.
+Vedenkeittimessä lämpö on hyötyä, kun se lämmittää veden. Lämpö on häviötä, kun se karkaa keittimen kyljistä huoneeseen. Hehkulampun lämpö lasketaan häviöksi. Näin on silloinkin, kun lamppu lämmittää huonetta talvella, koska lampun hyödyksi on määritelty valo. Se, mikä on hyötyä, riippuu siis laitteen tarkoituksesta eli siitä, mihin laitetta käytetään. Hyötysuhteen arvoon vaikuttaa, mikä määritellään hyödyksi ja mitkä osat lasketaan kuuluviksi laitteeseen.
 
 ### Hyötysuhde kertoo hyödyn osuuden
 Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Hyötysuhde on enintään $100\,\%$, koska energia säilyy. Hyötyä ei voi saada enemmän kuin energiaa otetaan. Todellisissa laitteissa hyötysuhde jää usein alle $100\,\%$. Syy on, että osa otetusta energiasta ei päädy määriteltyyn hyödylliseen käyttötarkoitukseen. Se muuttuu esimerkiksi kitkassa tai johtimissa lämmöksi, ja lämpö leviää ympäristöön. Jos laitteen hyöty on muuta kuin lämpöä, hyötysuhde vaihtelee paljon. Sähkömoottori pääsee noin $90\,\%$:iin, mutta lamppu ja polttomoottori jäävät selvästi alle $100\,\%$:n. Sähkölämmittimessä hyöty on itse lämpö. Käytännössä kaikki sähköenergia muuttuu huonetta lämmittäväksi lämmöksi, joten hyötysuhde on lähes $100\,\%$. Ihanteellisen, häviöttömän laitteen hyötysuhde olisi $100\,\%$. Laitteiden hyötysuhteet vaihtelevat paljon:
@@ -108,7 +108,7 @@ Hyötysuhde $\eta$ (eeta) on hyötyenergian ja laitteeseen otetun energian suhde
 ```
 Tässä $\eta$ on hyötysuhde (suhdeluku, usein prosentteina), $E_\text{a}$ laitteen antama hyötyenergia (J), $E_\text{o}$ laitteeseen otettu energia (J), $P_\text{a}$ hyötyteho (W) ja $P_\text{o}$ laitteeseen otettu teho (W). Suhdeluvun muutat prosenteiksi kertomalla sen luvulla $100\,\%$. Esimerkki: $0{,}30 \cdot 100\,\% = 30\,\%$. Kertominen ei muuta lukua, koska $1\,\% = 0{,}01$ ja siis $100\,\% = 100 \cdot 0{,}01 = 1$.
 
-Tehojen suhde on sama kuin energioiden suhde. Tasaisella teholla energia on nimittäin teho kerrottuna ajalla (luku *Teho P = ΔE/Δt*). Laite käy ajan $t$. Silloin energiat ovat $E_\text{a} = P_\text{a} \cdot t$ ja $E_\text{o} = P_\text{o} \cdot t$, ja aika supistuu:
+Tehojen suhde on sama kuin energioiden suhde. Tasaisella teholla energia on nimittäin teho kerrottuna ajalla (luku *Teho: $P = \Delta E/\Delta t$*). Laite käy ajan $t$. Silloin energiat ovat $E_\text{a} = P_\text{a} \cdot t$ ja $E_\text{o} = P_\text{o} \cdot t$, ja aika supistuu:
 ```latex
 \begin{aligned}
 \eta &= \frac{E_\text{a}}{E_\text{o}} \\

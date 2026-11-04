@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 53dc75d498a8067a
+CONTENT-HASH: beea801f93a32cad
 
 ## Blocking
 
 ## Polish
 
+
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (iceberg; caption factual); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+Round 2 delta: scratchpad kc/r2-fy1-7-390.png and kc/r2-fy1-7-1280.png (section cut from rebuilt preview/fi-easy/fy1-7.html; sheets r2sheet390.png, r2sheet1280.png). Changed text read in the diff f83714cd..b8a6e1bb and seen in the capture: fluent, plain, physics unchanged. Stacked at 390 px, two columns at 1280 px, no overflow, no KaTeX errors, nothing clipped.

@@ -1,4 +1,4 @@
-# Voima vuorovaikutuksen mittana ja paino G = mg
+# Voima vuorovaikutuksen mittana ja paino $G = mg$
 
 > **Miksi** astronautti painaa Kuussa vain kuudesosan siitä, mitä hän painaa Maassa, vaikka hänestä ei ole kadonnut mitään?
 
@@ -112,7 +112,7 @@
 </svg>
 
 ## Ydinajatus
-Kun kaksi kappaletta vaikuttaa toisiinsa, ne ovat vuorovaikutuksessa. Esimerkiksi Maa vetää omenaa puoleensa. Voima kertoo, kuinka voimakas vuorovaikutus on. Mitä suurempi voima on, sitä voimakkaampi vuorovaikutus on. Voiman yksikkö on newton (N). Noin $1\,\text{N}$ on sadan gramman omenan paino Maassa. Tässä vaiheessa kiinnostaa vain voiman suuruus. Kuvissa nuoli näyttää, mihin suuntaan voima osoittaa.
+Kun kaksi kappaletta vaikuttaa toisiinsa eli vetää tai työntää toisiaan, ne ovat vuorovaikutuksessa. Esimerkiksi Maa vetää omenaa puoleensa. Voima kertoo, kuinka voimakas vuorovaikutus on. Mitä suurempi voima on, sitä voimakkaampi vuorovaikutus on. Voiman yksikkö on newton (N). Noin $1\,\text{N}$ on sadan gramman omenan paino Maassa. Tässä vaiheessa kiinnostaa vain voiman suuruus. Kuvissa nuoli näyttää, mihin suuntaan voima osoittaa.
 
 Voiman voi mitata voimamittarilla. Siinä on jousi. Jousi venyy sitä enemmän, mitä suurempi voima siihen vaikuttaa.
 

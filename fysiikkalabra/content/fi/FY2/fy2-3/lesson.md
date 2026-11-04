@@ -1,4 +1,4 @@
-# Teho: P = ΔE/Δt
+# Teho: $P = \Delta E/\Delta t$
 
 > **Miksi** sähkölaskua ei voi päätellä pelkästä laitteen tehosta?
 
@@ -124,6 +124,8 @@ Sitä, kuinka nopeasti energiaa muuntuu tai siirtyy, kutsutaan **tehoksi**. Teho
 </svg>
 
 Teho ei kerro, kuinka paljon energiaa laite yhteensä käyttää. Sen kertoo vasta teho yhdessä ajan kanssa: pieni teho pitkään voi muuntaa saman energian kuin suuri teho lyhyen hetken. Siksi sähkölasku riippuu sekä laitteen tehosta että käyttöajasta.
+
+<figure class="unit-photo"><img src="pics/fy2/offshore-wind-sunset.webp" alt="Neljä tuulivoimalaa meressä horisontissa oranssia auringonlaskun taivasta vasten."><figcaption>Merituulivoimaloita auringonlaskun aikaan. Voimalan teho kertoo, kuinka nopeasti se tuottaa sähköenergiaa. Vuorokaudessa tuotettu energia riippuu myös siitä, kuinka kauan ja kuinka kovaa tuulee.</figcaption></figure>
 
 ## Kaava: Teho
 Teho on muuntuneen tai siirtyneen energian ja siihen kuluneen ajan osamäärä:

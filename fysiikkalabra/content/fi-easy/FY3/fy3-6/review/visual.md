@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a487caa4b89e2d12
+CONTENT-HASH: 1de168d36addbcc0
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] sim-390 — the Upota button sits on the same row as the first slider label; a little cramped. 
-- [Minor] fig-2 water-sand — the red ΔT bracket on the water thermometer is very short at 390 px; fine but hard to see.
+- none
 
 ## Checked
-- contact-1/2; fig-1..fig-5 at 390 px (palette, labels, c-bars scale, calorimeter before/after), example-390, sim-390, theory captures, open-ennusta/tarkista; lesson text read in full for fi-easy language.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-6.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

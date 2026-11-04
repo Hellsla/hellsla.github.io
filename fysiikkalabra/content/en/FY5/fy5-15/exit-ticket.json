@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A sound level meter reads $80\\,\\text{dB}$. What is the intensity of the sound?",
+    "a": "$I = I_0 \\cdot 10^{\\,L/(10\\,\\text{dB})} = 1.0 \\cdot 10^{-12}\\,\\text{W/m}^2 \\cdot 10^{8} = 1.0 \\cdot 10^{-4}\\,\\text{W/m}^2$."
+  },
+  {
+    "q": "Three identical machines are running in a workshop, each producing $80\\,\\text{dB}$ alone at the meter. What is the combined level?",
+    "a": "The intensities add up: $I = 3 \\cdot 1.0 \\cdot 10^{-4}\\,\\text{W/m}^2$, so $L = 80\\,\\text{dB} + 10\\,\\text{dB} \\cdot \\lg 3 \\approx 84.8\\,\\text{dB}$, not $240\\,\\text{dB}$."
+  }
+]

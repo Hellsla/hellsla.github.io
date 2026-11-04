@@ -1,0 +1,46 @@
+{
+  "id": "fy6-13",
+  "course": "FY6",
+  "title": "Kondensaattori ja sen energia",
+  "goals": [
+    "LOPS FY6: kondensaattori ja kondensaattorin energia",
+    "Täsmennys: levykondensaattorin rakenne; eristeaineen vaikutus kapasitanssiin varauksen, jännitteen ja energian kautta; kondensaattorien kytkennät eivät kuulu keskeisiin sisältöihin",
+    "Täsmennys: varaus- ja purkautumiskäyrä vain kvalitatiivisesti",
+    "LOPS FY6: sähköturvallisuus: läpilyöntilujuus"
+  ],
+  "prerequisites": [
+    "fy6-12"
+  ],
+  "glossary": [
+    "kondensaattori",
+    "kapasitanssi",
+    "eriste",
+    "kondensaattorin energia",
+    "läpilyöntilujuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "kondensaattori",
+      "explain": "Kaksi johdelevyä, joiden välissä on eriste. Kun se ladataan, levyille tulee yhtä suuret mutta vastakkaismerkkiset varaukset."
+    },
+    {
+      "term": "kapasitanssi",
+      "explain": "Kertoo, kuinka paljon varausta kondensaattoriin tulee jännitettä kohti. Se riippuu levyjen koosta, etäisyydestä ja eristeestä."
+    },
+    {
+      "term": "eriste",
+      "explain": "Aine, joka ei johda sähköä. Se heikentää levyjen välistä kenttää ja kasvattaa siten kapasitanssia."
+    },
+    {
+      "term": "kondensaattorin energia",
+      "explain": "Ladattuun kondensaattoriin varastoitunut energia. Se on levyjen välisessä sähkökentässä, ja kondensaattori luovuttaa sen purkautuessaan."
+    },
+    {
+      "term": "läpilyöntilujuus",
+      "explain": "Suurin sähkökenttä, jonka eriste kestää. Jos kenttä on sitä suurempi, eriste alkaa johtaa ja syntyy kipinä."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy8-3-L1-01",
+      "level": 1,
+      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. What is the energy of the hydrogen atom when the electron is on level $n = 4$? Give the answer with its sign in electron volts.",
+      "answer": -0.85,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-02",
+      "level": 1,
+      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. The electron of a hydrogen atom moves from level $n = 4$ to the ground state $n = 1$. What is the energy of the photon produced, in electron volts?",
+      "answer": 12.8,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-03",
+      "level": 1,
+      "text": "The hydrogen spectrum has a cyan line with a wavelength of $486\\,\\text{nm}$. What is the energy of a photon of this light? Give the answer in electron volts ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 2.55,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-04",
+      "level": 1,
+      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. A hydrogen atom is in the excited state $n = 3$. How much energy is needed to free the electron from the atom from this state? Give the answer in electron volts.",
+      "answer": 1.51,
+      "unit": "eV",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L1-05",
+      "level": 1,
+      "text": "The energy of a photon produced in a transition of a hydrogen atom is $1.89\\,\\text{eV}$. What is the frequency of the photon? Give the answer in terahertz ($1\\,\\text{THz} = 10^{12}\\,\\text{Hz}$; $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 457,
+      "unit": "THz",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-3-L2-01",
+      "level": 2,
+      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. The electron of a hydrogen atom moves from level $n = 5$ to level $n = 2$. Calculate the wavelength of the light produced in nanometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 434,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L2-02",
+      "level": 2,
+      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. The violet spectral line of hydrogen, with a wavelength of $410\\,\\text{nm}$, is produced in a transition that ends on level $n = 2$. From which level does the transition start? Give the number $n$ of the level as the answer.",
+      "answer": 6,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L2-03",
+      "level": 2,
+      "text": "The figure shows the energy-level diagram of an imaginary atom. The electron of the atom moves from level $E_3$ to level $E_2$. Calculate the wavelength of the photon produced in nanometres. Read the energies of the levels from the figure ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "figure": "fy8-3/levels-task",
+      "answer": 620,
+      "unit": "nm",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-3-L2-04",
+      "level": 2,
+      "text": "An ultraviolet photon with a wavelength of $80.0\\,\\text{nm}$ hits a hydrogen atom in the ground state. The photon ionises the atom; the ionisation energy of hydrogen from the ground state is $13.6\\,\\text{eV}$. What is the kinetic energy of the freed electron in electron volts ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$)?",
+      "answer": 1.9,
+      "unit": "eV",
+      "tolerance": 0.03
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-3-L3-01",
+      "level": 3,
+      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. In a discharge tube, electrons with a kinetic energy of $12.5\\,\\text{eV}$ collide with hydrogen atoms in the ground state. In a collision an atom can take from the electron only the share of energy that corresponds to the difference of some pair of its levels. How many different wavelengths can the excited atoms emit when they return to the ground state, counting also the transitions that pass through intermediate levels? Count the different pairs of levels between which a transition is possible: each pair of levels gives one wavelength.",
+      "answer": 3,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L3-02",
+      "level": 3,
+      "text": "The helium ion $\\text{He}^+$ has only one electron, like the hydrogen atom, but the nucleus has two protons. The energy levels of the ion are $E_n = -\\tfrac{54.4\\,\\text{eV}}{n^2}$. A line is observed in the spectrum of a star that is produced in the transition of the ion from level $n = 4$ to level $n = 3$. Calculate the wavelength of the line in nanometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "answer": 469,
+      "unit": "nm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-3-L3-03",
+      "level": 3,
+      "text": "The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$. In hot hydrogen gas one atom returns from level $n = 2$ to the ground state and emits a photon. The photon hits another hydrogen atom that is in the excited state $n = 2$. Is the energy of the photon enough to ionise this atom? If it is, what is the kinetic energy of the freed electron in electron volts?",
+      "answer": 6.8,
+      "unit": "eV",
+      "tolerance": 0.02
+    }
+  ]
+}

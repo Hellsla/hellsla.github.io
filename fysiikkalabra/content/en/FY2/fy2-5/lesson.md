@@ -1,4 +1,4 @@
-# Fuels and heat of combustion E = Hm
+# Fuels and heat of combustion $E = Hm$
 
 > **Why** do a kilogram of petrol and a kilogram of air-dried firewood release different amounts of energy when they burn, even though both are just burning matter?
 
@@ -136,6 +136,8 @@ In this chapter a fuel means a chemical fuel: a substance whose chemical energy 
 </svg>
 
 Different fuels contain different amounts of chemical energy for their mass. The quantity that tells you this is the heat of combustion $H$. It is the energy released when one kilogram of fuel burns, and its unit is, for example, $\text{MJ/kg}$. The heat of combustion of petrol is about $43\,\text{MJ/kg}$, so about $43\,\text{MJ}$ is released from one kilogram (about $43 \cdot 10^{6}\,\text{J}$). The heat of combustion of air-dried firewood (moisture $20\text{–}25\,\%$) is only about $15\,\text{MJ/kg}$, so to get the same energy you need almost three times the mass of wood.
+
+<figure class="unit-photo"><img src="pics/fy2/fireplace-wood-burning.webp" alt="Logs burning with bright flames in a fireplace, with glowing embers below them."><figcaption>When wood burns, its chemical energy is released as heat and light.</figcaption></figure>
 
 Because the heat of combustion is energy per unit of mass, the energy released is directly proportional to the mass of fuel burnt: twice as much fuel releases twice as much energy. This gives the law used to calculate the energy released.
 

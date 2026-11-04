@@ -1,0 +1,22 @@
+{
+  "id": "fy5-11",
+  "course": "FY5",
+  "title": "Aalto kohtaa esteen tai raon",
+  "goals": [
+    "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+    "LOPS FY5: mekaanisten aaltojen diffraktio ja interferenssi",
+    "Täsmennys: tulo- ja heijastuskulma, heijastuslaki, Huygensin periaate; diffraktio esim. veden pinta-aaltojen taipuminen esteen tai raon vaikutuksesta"
+  ],
+  "prerequisites": [
+    "fy5-10"
+  ],
+  "glossary": [
+    "heijastuminen",
+    "heijastuslaki",
+    "Huygensin periaate",
+    "diffraktio"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

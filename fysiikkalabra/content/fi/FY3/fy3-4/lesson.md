@@ -77,6 +77,8 @@ Kaasun paine syntyy mikromallin mukaan hiukkasten törmäyksistä astian seinäm
 
 Paine ei ole voima vaan voiman ja alan suhde, ja levossa olevassa nesteessä paine vaikuttaa joka suuntaan yhtä suurena. Jos paine sivulle olisi pienempi kuin alaspäin, vesi valuisi sivuun eikä pysyisi levossa. Jos pullon kylkeen tekee reikiä usealle korkeudelle, alimmasta reiästä vesi suihkuaa voimakkaimmin, koska paine kasvaa syvyyden mukana. Paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan: padon pystysuoraan seinään voima osoittaa vaakasuoraan, sukeltajan kehoon joka puolelta. Siksi voima voidaan tässä laskea pelkkänä suuruutena, suunta tulee pinnasta.
 
+<figure class="unit-photo"><img src="pics/fy3/scuba-diver.webp" alt="Sukeltaja tummansinisessä vedessä, ja hänen yläpuolellaan nousee ilmakuplia kohti valoisaa pintaa."><figcaption>Sukeltaja syvällä veden alla. Uloshengitysilman kuplat nousevat kohti pintaa.</figcaption></figure>
+
 ### Ilmanpaine ja ylipaine
 Veden pinnalla vaikuttaa jo ilmakehän paine eli ilmanpaine, joka on merenpinnan tasolla noin $101\,\text{kPa}$. Se on ilmapatsaan paino pinta-alaa kohti. Ilmanpaine vaikuttaa myös veden pintaan ja välittyy veden kautta syvyyteen. Veden alla kokonaispaine on siis ilmanpaineen ja hydrostaattisen paineen summa. Kymmenen metrin syvyydessä hydrostaattinen paine on jo suunnilleen yhden ilmanpaineen suuruinen.
 

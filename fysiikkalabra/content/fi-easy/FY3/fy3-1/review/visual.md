@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 7f3ac10420c87fb0
+CONTENT-HASH: 3d8245c9e3ae735d
 
 ## Blocking
 
 ## Polish
-- [Minor] Caption is four sentences; "putoavat yhdessä Maan ympäri" is a hard idea for selkosuomi - consider dropping the last sentence or saying "kiertävät Maata".
+
 
 ## Checked
-batch delta review: Playwright captures of the built page at 360 and 1280 px (ISS cupola); photo sits after a paragraph, 320 px wide, caption and credit under it, no horizontal overflow, float beside text at 1280, full-width flow at 360; alt text matches the image; caption plain Finnish and factual.
+batch delta review: scratchpad kc/fy3-1-390.png and kc/fy3-1-1280.png (the new section cut from the built page, preview/fi-easy/fy3-1.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).

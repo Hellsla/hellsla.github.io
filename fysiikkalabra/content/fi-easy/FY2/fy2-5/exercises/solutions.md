@@ -112,7 +112,7 @@
 ## fy2-5-L3-03
 **Annettu:** turve $m = 36\,\text{t}$ tunnissa, $H = 10\,\tfrac{\text{MJ}}{\text{kg}}$, sähköntuotannon hyötysuhde $\eta = 35\,\% = 0{,}35$, aika $t = 1\,\text{h}$
 **Kysytty:** sähköteho $P$ megawatteina
-**Periaate:** Turve vapauttaa tunnissa energian $E_\text{sisään} = Hm$. Hyötysuhteen mukaan vain osa $\eta$ siitä tulee sähköksi (luku *Hyötysuhde*). Teho on energia aikayksikköä kohti. Siksi teho = energia : aika (luku *Teho P = ΔE/Δt*).
+**Periaate:** Turve vapauttaa tunnissa energian $E_\text{sisään} = Hm$. Hyötysuhteen mukaan vain osa $\eta$ siitä tulee sähköksi (luku *Hyötysuhde*). Teho on energia aikayksikköä kohti. Siksi teho = energia : aika (luku *Teho: $P = \Delta E/\Delta t$*).
 **Kaava:** $E_\text{sisään} = Hm$, $E_\text{hyöty} = \eta\, E_\text{sisään}$ ja $P = \dfrac{E_\text{hyöty}}{t}$, yhdessä $P = \dfrac{\eta H m}{t}$
 **Muunnokset:** $36\,\text{t} = 36 \cdot 1000\,\text{kg} = 36\,000\,\text{kg}$ ja $1\,\text{h} = 3600\,\text{s}$. Koska $1\,\text{MJ/s} = 1\,\text{MW}$, tehon yksikkö tulee suoraan megawatteina.
 **Sijoitus:** $E_\text{sisään} = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 36\,000\,\text{kg} = 360\,000\,\text{MJ}$, $E_\text{hyöty} = 0{,}35 \cdot 360\,000\,\text{MJ} = 126\,000\,\text{MJ}$ ja $P = 126\,000\,\text{MJ} : 3600\,\text{s} = 35\,\text{MJ/s} = 35\,\text{MW}$

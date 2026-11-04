@@ -7,7 +7,7 @@
     "ratkaisemaan arjen lämpöilmiöihin liittyviä monivaiheisia tehtäviä."
   ],
   "prior": [
-    "Lämpömäärä lämmittäessä on $Q = cm\\Delta T$ (luku Aineen lämpeneminen ja jäähtyminen: Q = cmΔT)",
+    "Lämpömäärä lämmittäessä on $Q = cm\\Delta T$ (luku Aineen lämpeneminen ja jäähtyminen: $Q = cm\\Delta T$)",
     "Sulaminen ja höyrystyminen vaativat energiaa (jäätyminen ja tiivistyminen vapauttavat sitä), mutta lämpötila ei muutu, $Q = sm$ ja $Q = rm$ (luku Olomuodon muutokset)",
     "Rakennusosan läpi johtuva teho on $P = UA\\Delta T$ (luku Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos)"
   ],

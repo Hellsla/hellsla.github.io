@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Why are neutrons slowed down with water in a light-water reactor?",
+    "a": "The neutrons produced in fission are fast, but uranium-235 splits much more probably when a slow neutron hits it. Water slows neutrons as they collide with hydrogen nuclei, so the chain reaction can continue even though the fuel contains only a few percent uranium-235."
+  },
+  {
+    "q": "Why must the deuterium–tritium fuel in a fusion power plant be heated to a temperature of about $1.5 \\cdot 10^{8}\\,\\text{K}$?",
+    "a": "The nuclei are positively charged and repel each other. Only nuclei colliding at a very high speed get so close to each other that the strong interaction joins them. A high speed means a very high temperature."
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Mikä on johde ja mikä eriste? Anna kummastakin yksi esimerkki sähköjohdosta.",
+    "a": "Johteessa varaukset pääsevät liikkumaan, esimerkiksi johdon kuparissa vapaat elektronit. Eristeessä varaukset eivät pääse liikkumaan; johdon muovikuori on eristettä."
+  },
+  {
+    "q": "Mitä tarkoittaa, että pariston jännite on $1{,}5\\,\\text{V}$? Kuinka paljon energiaa paristo siirtää, kun sen läpi kulkee varaus $4{,}0\\,\\text{C}$?",
+    "a": "Jokainen paristosta piiriin kulkeva coulombi saa $1{,}5\\,\\text{J}$ energiaa, koska $1\\,\\text{V} = 1\\,\\text{J/C}$. Varaukselle $4{,}0\\,\\text{C}$ energia on $E = UQ = 1{,}5\\,\\text{V}\\cdot 4{,}0\\,\\text{C} = 6{,}0\\,\\text{J}$."
+  },
+  {
+    "q": "Mihin suuntaan elektronit liikkuvat lampun ulkopuolisessa johdossa, ja mihin suuntaan sovittu virran suunta osoittaa?",
+    "a": "Elektronit liikkuvat ulkoisessa piirissä pariston miinusnavasta plusnapaan. Sovittu virran suunta on päinvastainen, plusnavasta miinusnapaan."
+  }
+]

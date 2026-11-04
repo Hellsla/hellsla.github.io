@@ -1,0 +1,23 @@
+{
+  "id": "fy6-3",
+  "course": "FY6",
+  "title": "Resistanssi ja Ohmin laki",
+  "goals": [
+    "LOPS FY6: resistanssi ja Ohmin laki",
+    "LOPS FY6: osaa tutkia kokeellisesti sähköön liittyviä ilmiöitä ja tehdä sähköopin perusmittauksia",
+    "Täsmennys: komponentin ominaiskäyrä, resistiivisyys"
+  ],
+  "prerequisites": [
+    "fy6-2"
+  ],
+  "glossary": [
+    "resistanssi",
+    "Ohmin laki",
+    "vastus",
+    "resistiivisyys",
+    "ominaiskäyrä"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

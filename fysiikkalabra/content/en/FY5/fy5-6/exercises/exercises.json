@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-6-L1-01",
+      "level": 1,
+      "text": "The weather satellite NOAA-20 orbits the Earth in a nearly circular orbit of radius $7196\\,\\text{km}$. The mass of the Earth is $5.97 \\cdot 10^{24}\\,\\text{kg}$. Calculate the orbital speed of the satellite. Give the answer in kilometres per second.",
+      "answer": 7.44,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-02",
+      "level": 1,
+      "text": "A GPS satellite orbits the Earth in a circular orbit of radius $26\\,560\\,\\text{km}$ at the speed $3.87\\,\\text{km/s}$. How long is the orbital period of the satellite? Give the answer in hours.",
+      "answer": 12.0,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-03",
+      "level": 1,
+      "text": "A geostationary communications satellite orbits the Earth in a circular orbit of radius $42\\,164\\,\\text{km}$. The mass of the Earth is $5.97 \\cdot 10^{24}\\,\\text{kg}$. Calculate the centripetal acceleration of the satellite.",
+      "answer": 0.224,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-04",
+      "level": 1,
+      "text": "The Moon orbits the Earth in a nearly circular orbit of radius $384\\,400\\,\\text{km}$, and its orbital period is $27.3\\,\\text{d}$. Calculate the orbital speed of the Moon. Give the answer in kilometres per second.",
+      "answer": 1.02,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L1-05",
+      "level": 1,
+      "text": "A probe orbiting the Moon follows a circular orbit of radius $1847\\,\\text{km}$. The mass of the Moon is $7.35 \\cdot 10^{22}\\,\\text{kg}$. Calculate the orbital speed of the probe. Give the answer in kilometres per second.",
+      "answer": 1.63,
+      "unit": "km/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-6-L2-01",
+      "level": 2,
+      "text": "A satellite orbits the Earth in a circular orbit at the speed $5.00\\,\\text{km/s}$. The mass of the Earth is $5.97 \\cdot 10^{24}\\,\\text{kg}$ and its radius $6371\\,\\text{km}$. At what altitude above the surface does the satellite orbit? Give the answer in kilometres.",
+      "answer": 9570,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L2-02",
+      "level": 2,
+      "text": "A probe orbiting Mars follows a circular orbit at an altitude of $400\\,\\text{km}$ above the surface of Mars. The mass of Mars is $6.42 \\cdot 10^{23}\\,\\text{kg}$ and its radius $3390\\,\\text{km}$. Calculate the orbital speed of the probe. Give the answer in kilometres per second.",
+      "answer": 3.36,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L2-03",
+      "level": 2,
+      "text": "At the surface of the Moon the acceleration of free fall is $1.62\\,\\text{m/s}^2$ and the radius of the Moon is $1737\\,\\text{km}$. What speed is needed for a probe to orbit the Moon in a circular orbit just above its surface? The Moon has no atmosphere. Give the answer in kilometres per second.",
+      "answer": 1.68,
+      "unit": "km/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L2-04",
+      "level": 2,
+      "text": "An astronaut of mass $75\\,\\text{kg}$ works on a space station at an altitude of $410\\,\\text{km}$. The mass of the Earth is $5.97 \\cdot 10^{24}\\,\\text{kg}$ and its radius $6371\\,\\text{km}$. How large is the gravitational force acting on the astronaut, although the astronaut is weightless?",
+      "answer": 650,
+      "unit": "N",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-6-L3-01",
+      "level": 3,
+      "text": "Mars rotates once about its axis in $24\\,\\text{h}\\;37\\,\\text{min}$. A communications satellite orbiting Mars is to stay all the time above the same point of the surface, like a geostationary satellite above the Earth. The mass of Mars is $6.42 \\cdot 10^{23}\\,\\text{kg}$ and its radius $3390\\,\\text{km}$. At what altitude above the surface of Mars must the satellite orbit? Give the answer in kilometres.",
+      "answer": 17000,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L3-02",
+      "level": 3,
+      "text": "Thin air brakes a space station, and its nearly circular orbit descends over weeks from an altitude of $400\\,\\text{km}$ to an altitude of $398\\,\\text{km}$. The mass of the Earth is $5.97 \\cdot 10^{24}\\,\\text{kg}$ and its radius $6371\\,\\text{km}$. Does the orbital speed of the station increase or decrease, and by how much? Give the change in the orbital speed in metres per second (an increase as positive). Do not round intermediate results before the subtraction.",
+      "answer": 1.13,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L3-03",
+      "level": 3,
+      "text": "The Earth rotates once about its axis in a day. How short would the rotation period of the Earth have to be for a person standing at the equator to be weightless? The mass of the Earth is $5.97 \\cdot 10^{24}\\,\\text{kg}$ and its radius $6371\\,\\text{km}$, and the shape of the Earth is assumed to be a sphere. Give the answer in minutes.",
+      "answer": 84.4,
+      "unit": "min",
+      "tolerance": 0.02
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy6-8-L1-01",
+      "level": 1,
+      "text": "Pariston lähdejännite on $1{,}58\\,\\text{V}$ ja sisäinen resistanssi $0{,}25\\,\\Omega$. Paristosta otetaan virta $0{,}80\\,\\text{A}$. Kuinka suuri on pariston napajännite?",
+      "answer": 1.38,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L1-02",
+      "level": 1,
+      "text": "Ladattavan nikkelimetallihydridikennon lähdejännite on $1{,}30\\,\\text{V}$ ja sisäinen resistanssi $0{,}040\\,\\Omega$. Kuinka suuri virta kulkisi, jos kennon navat yhdistettäisiin oikosulkuun paksulla johtimella, jonka resistanssi jätetään huomiotta?",
+      "answer": 32.5,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L1-03",
+      "level": 1,
+      "text": "Kauko-ohjaimessa on neljä paristoa sarjassa. Kunkin pariston lähdejännite on $1{,}55\\,\\text{V}$. Kuinka suuri on paristoryhmän lähdejännite?",
+      "answer": 6.2,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L1-04",
+      "level": 1,
+      "text": "Kolme samanlaista paristoa on kytketty rinnan. Kunkin pariston sisäinen resistanssi on $0{,}45\\,\\Omega$. Kuinka suuri on paristoryhmän sisäinen resistanssi?",
+      "answer": 0.15,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L1-05",
+      "level": 1,
+      "text": "Kuvaajassa on pariston napajännite virran funktiona neljällä kuorman arvolla (mallista lasketut pisteet) ja niiden kautta piirretty suora, jota on jatkettu akseleille. Kuinka suuri on pariston oikosulkuvirta? Lue arvo kuvaajasta.",
+      "figure": "fy6-8/ex-graph",
+      "answer": 3.0,
+      "unit": "A",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy6-8-L2-01",
+      "level": 2,
+      "text": "Paristoon kytketään vuorotellen kaksi eri kuormitusvastusta. Ensimmäisellä vastuksella virta on $0{,}20\\,\\text{A}$ ja napajännite $4{,}30\\,\\text{V}$, toisella virta on $0{,}80\\,\\text{A}$ ja napajännite $3{,}70\\,\\text{V}$. Kuinka suuri on pariston sisäinen resistanssi?",
+      "answer": 1.0,
+      "unit": "Ω",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L2-02",
+      "level": 2,
+      "text": "Jännitelähteen lähdejännite on $6{,}0\\,\\text{V}$ ja sisäinen resistanssi $0{,}50\\,\\Omega$. Siihen kytketään vastus, jonka resistanssi on $5{,}5\\,\\Omega$. Kuinka suuri on lähteen napajännite?",
+      "answer": 5.5,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L2-03",
+      "level": 2,
+      "text": "Taskulampun lamppu, jonka resistanssi on $3{,}0\\,\\Omega$, kytketään paristoon, jonka lähdejännite on $4{,}5\\,\\text{V}$ ja sisäinen resistanssi $1{,}5\\,\\Omega$. Lampun resistanssi oletetaan vakioksi. Kuinka suuri on lampun teho?",
+      "answer": 3.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L2-04",
+      "level": 2,
+      "text": "Kaksi paristoa on kytketty sarjaan, ja niiden kuormana on vastus $2{,}4\\,\\Omega$. Kummankin pariston lähdejännite on $1{,}5\\,\\text{V}$ ja sisäinen resistanssi $0{,}30\\,\\Omega$. Kuinka suuri virta kulkee vastuksen läpi?",
+      "answer": 1.0,
+      "unit": "A",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy6-8-L3-01",
+      "level": 3,
+      "text": "Retkivalaisimessa on kaksi samanlaista paristoa rinnan, jotta valaisin toimisi pidempään. Kummankin pariston lähdejännite on $1{,}5\\,\\text{V}$ ja sisäinen resistanssi $0{,}40\\,\\Omega$. Valaisimen lampun resistanssi on $0{,}80\\,\\Omega$, ja sen oletetaan pysyvän vakiona. Kuinka suuri virta kulkee kunkin pariston läpi?",
+      "answer": 0.75,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L3-02",
+      "level": 3,
+      "text": "Taskulamppuun asetetaan kolme paristoa sarjaan, mutta yksi niistä asetetaan vahingossa väärin päin. Kunkin pariston lähdejännite on $1{,}5\\,\\text{V}$ ja sisäinen resistanssi $0{,}25\\,\\Omega$. Lampun resistanssi on $4{,}0\\,\\Omega$, ja sen oletetaan pysyvän vakiona. Kuinka suuri virta kulkee lampun läpi?",
+      "answer": 0.315789,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-8-L3-03",
+      "level": 3,
+      "text": "Paristoon kytketään ensin vastus $2{,}0\\,\\Omega$, jolloin pariston napajännite on $1{,}20\\,\\text{V}$, ja sitten vastus $6{,}0\\,\\Omega$, jolloin napajännite on $1{,}44\\,\\text{V}$. Pariston lähdejännite ja sisäinen resistanssi oletetaan samoiksi kummassakin mittauksessa. Kuinka suuri on pariston lähdejännite?",
+      "answer": 1.6,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ]
+}

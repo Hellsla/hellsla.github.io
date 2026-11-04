@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The wavelength of a violet laser diode is $405\\,\\text{nm}$. Estimate its threshold voltage.",
+    "a": "At the threshold voltage $eU_\\text{k} \\approx \\tfrac{hc}{\\lambda}$, so $U_\\text{k} \\approx \\tfrac{hc}{e\\lambda}$. First we calculate $hc = 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ and $e\\lambda = 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 405 \\cdot 10^{-9}\\,\\text{m} = 6.488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m}$, so $U_\\text{k} \\approx 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m} : 6.488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m} = 3.06\\,\\text{V}$. Each electron must receive from the voltage source approximately the energy of one photon, $3.06\\,\\text{eV}$; the measured threshold voltage is usually slightly smaller than this."
+  },
+  {
+    "q": "The wavelength of the light source is needed in measuring the Planck constant. Why is the wavelength of a laser diode known more accurately than that of an LED?",
+    "a": "The spectrum of a laser diode is a very narrow line, about $1\\,\\text{nm}$ wide, so its wavelength is almost unambiguous. The spectrum of an LED is a band $20$–$40\\,\\text{nm}$ wide, so the wavelength of the peak given as its wavelength is less accurate, and the uncertainty is transferred to the frequency $f = \\tfrac{c}{\\lambda}$."
+  }
+]

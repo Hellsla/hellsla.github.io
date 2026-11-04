@@ -1,0 +1,39 @@
+{
+  "id": "fy5-2",
+  "course": "FY5",
+  "title": "Kappaleen tasapaino: voimat ja momentit",
+  "goals": [
+    "LOPS FY5: tasapaino kiertymisen suhteen yksinkertaisissa tilanteissa",
+    "Tarkennus: voimat voi joutua jakamaan komponentteihin, kun tärkeintä on ymmärtää fysiikkaa eikä matematiikkaa"
+  ],
+  "prerequisites": [
+    "fy5-1"
+  ],
+  "glossary": [
+    "tasapaino",
+    "momenttiehto",
+    "painopiste",
+    "tukivoima"
+  ],
+  "key_concepts": [
+    {
+      "term": "tasapaino",
+      "explain": "Kappale pysyy levossa. Voimien summa on nolla, eikä kappale ala kiertyä."
+    },
+    {
+      "term": "momenttiehto",
+      "explain": "Levossa olevaan kappaleeseen vaikuttavien voimien momenttien summa on nolla, mitä tahansa pistettä kohti laskettuna."
+    },
+    {
+      "term": "painopiste",
+      "explain": "Piste, jossa kappaleen paino voidaan ajatella vaikuttavan. Tasa-aineisen ja symmetrisen kappaleen painopiste on sen keskellä."
+    },
+    {
+      "term": "tukivoima",
+      "explain": "Voima, jolla alusta tai tuki työntää kappaletta."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

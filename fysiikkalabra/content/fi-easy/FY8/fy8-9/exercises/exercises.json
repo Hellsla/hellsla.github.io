@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-9-L1-01",
+      "level": 1,
+      "text": "Isotooppikuvausta varten valmistetun teknetium-$99\\text{m}$-valmisteen aktiivisuus on $740\\,\\text{MBq}$. Teknetium-$99\\text{m}$:n puoliintumisaika on $6{,}01\\,\\text{h}$. Kuinka suuri valmisteen aktiivisuus on $18{,}0\\,\\text{h}$ myöhemmin? Anna vastaus megabecquereleinä.",
+      "answer": 92.8,
+      "unit": "MBq",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-02",
+      "level": 1,
+      "text": "Radonia sisältävä ilmanäyte suljetaan tiiviiseen astiaan. Radon-222:n puoliintumisaika on $3{,}82\\,\\text{d}$. Kuinka monta prosenttia radonytimistä on hajoamatta $10{,}0\\,\\text{d}$:n kuluttua? Oleta, että astiaan ei synny uutta radonia.",
+      "answer": 16.3,
+      "unit": "%",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-03",
+      "level": 1,
+      "text": "Cesium-137:n puoliintumisaika on $30{,}1\\,\\text{a}$. Mikä on sen hajoamisvakio? Anna vastaus yksikössä $\\tfrac{1}{\\text{a}}$.",
+      "answer": 0.023,
+      "unit": "1/a",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-04",
+      "level": 1,
+      "text": "Koboltti-60-säteilylähteessä on $3{,}20 \\cdot 10^{12}$ hajoamatonta ydintä. Koboltti-60:n hajoamisvakio on $4{,}17 \\cdot 10^{-9}\\,\\tfrac{1}{\\text{s}}$. Mikä on lähteen aktiivisuus? Anna vastaus kilobecquereleinä.",
+      "answer": 13.3,
+      "unit": "kBq",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L1-05",
+      "level": 1,
+      "text": "Näytteen aktiivisuus pienenee $48{,}0\\,\\text{h}$:ssa arvosta $800\\,\\text{kBq}$ arvoon $200\\,\\text{kBq}$. Mikä on näytteen isotoopin puoliintumisaika? Anna vastaus tunteina.",
+      "answer": 24.0,
+      "unit": "h",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-9-L2-01",
+      "level": 2,
+      "text": "Jodi-131:n puoliintumisaika on $8{,}02\\,\\text{d}$. Mikä on sen hajoamisvakio yksikössä $\\tfrac{1}{\\text{s}}$? Anna vastaus yksikössä $10^{-6}\\,\\tfrac{1}{\\text{s}}$.",
+      "answer": 1.0,
+      "unit": "10⁻⁶ 1/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L2-02",
+      "level": 2,
+      "text": "Vanhan savuilmaisimen säteilylähteessä on amerikium-241:tä, ja lähteen aktiivisuus on $37\\,\\text{kBq}$. Amerikium-241:n puoliintumisaika on $433\\,\\text{a}$. Kuinka monta amerikiumydintä lähteessä on? Käytä arvoa $1\\,\\text{a} = 365{,}25\\,\\text{d}$. Anna vastaus yksikössä $10^{14}$.",
+      "answer": 7.3,
+      "unit": "· 10¹⁴",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L2-03",
+      "level": 2,
+      "text": "PET-kuvauksessa käytetään fluori-18-valmistetta, jonka aktiivisuus on $2{,}00\\,\\text{GBq}$. Valmiste kuljetetaan tuotantolaitokselta sairaalaan. Matka kestää $2\\,\\text{h}\\ 30\\,\\text{min}$. Fluori-18:n puoliintumisaika on $110\\,\\text{min}$. Mikä on valmisteen aktiivisuus sen saapuessa? Anna vastaus megabecquereleinä.",
+      "answer": 777,
+      "unit": "MBq",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L2-04",
+      "level": 2,
+      "text": "Teollisuuden säteilylähteessä on alussa $5{,}00\\,\\text{mg}$ koboltti-60:tä. Koboltti-60:n puoliintumisaika on $5{,}27\\,\\text{a}$. Kuinka paljon koboltti-60:tä lähteessä on $15{,}0\\,\\text{a}$:n kuluttua? Anna vastaus milligrammoina.",
+      "answer": 0.695,
+      "unit": "mg",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-9-L3-01",
+      "level": 3,
+      "text": "Elävässä kasvissa hiili-14:n osuus hiilestä pysyy vakiona, koska kasvi ottaa ilmasta jatkuvasti uutta hiiltä. Kun kasvi kuolee, hiili-14 hajoaa, eikä uutta tule tilalle. Arkeologisesta puunpalasta mitattu hiili-14:n aktiivisuus grammaa hiiltä kohti on $38{,}0\\,\\%$ elävän puun vastaavasta aktiivisuudesta. Hiili-14:n puoliintumisaika on $5700\\,\\text{a}$. Kuinka kauan sitten puu kuoli? Anna vastaus vuosina.",
+      "answer": 7960,
+      "unit": "a",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L3-02",
+      "level": 3,
+      "text": "Säteilymittari näyttää radioaktiivisen näytteen lähellä alussa $820$ pulssia minuutissa. Kun $10{,}0\\,\\text{min}$ on kulunut, mittari näyttää $230$ pulssia minuutissa. Kun näyte viedään pois, mittari näyttää taustasäteilyä $30$ pulssia minuutissa. Mikä on näytteen isotoopin puoliintumisaika? Anna vastaus minuutteina.",
+      "answer": 5.05,
+      "unit": "min",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-9-L3-03",
+      "level": 3,
+      "text": "Ydinvoimalaonnettomuuden laskeumanäytteessä jodi-131:n ja cesium-137:n aktiivisuudet ovat aluksi yhtä suuret. Jodi-131:n puoliintumisaika on $8{,}02\\,\\text{d}$ ja cesium-137:n $30{,}1\\,\\text{a}$. Kuinka monta prosenttia näytteen kokonaisaktiivisuudesta on jodi-131:n hajoamisia $30{,}0\\,\\text{d}$:n kuluttua? Käytä arvoa $1\\,\\text{a} = 365{,}25\\,\\text{d}$ ja oleta, ettei tytärytimien hajoamisia lasketa.",
+      "answer": 6.97,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ]
+}

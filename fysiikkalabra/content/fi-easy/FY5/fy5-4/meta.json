@@ -1,0 +1,34 @@
+{
+  "id": "fy5-4",
+  "course": "FY5",
+  "title": "Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö",
+  "goals": [
+    "LOPS FY5: tasainen ympyräliike ja normaalikiihtyvyys",
+    "Täsmennys: normaalikiihtyvyyden suunta ja suuruus a_n = v²/r; Newtonin 2. laki tasaisessa ympyräliikkeessä (voimakuvio, kokonaisvoima keskipistettä kohti)"
+  ],
+  "prerequisites": [
+    "fy5-3"
+  ],
+  "glossary": [
+    "normaalikiihtyvyys",
+    "keskeisvoima",
+    "keskeiskiihtyvyys"
+  ],
+  "key_concepts": [
+    {
+      "term": "normaalikiihtyvyys",
+      "explain": "Tasaisen ympyräliikkeen kiihtyvyys. Se osoittaa kohti radan keskipistettä ja muuttaa nopeuden suuntaa, ei vauhtia."
+    },
+    {
+      "term": "keskeisvoima",
+      "explain": "Voimien summa, joka osoittaa kohti ympyräradan keskipistettä. Se ei ole uusi voima, vaan todellisten voimien summa."
+    },
+    {
+      "term": "ympyräliike",
+      "explain": "Liike, jonka rata on ympyrä. Tasaisessa ympyräliikkeessä vauhti pysyy samana, mutta suunta muuttuu koko ajan."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

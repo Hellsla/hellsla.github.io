@@ -1,7 +1,7 @@
 {
   "id": "fy1-7",
   "course": "FY1",
-  "title": "Tiheys: m = ρV",
+  "title": "Tiheys: $m = \\rho V$",
   "goals": [
     "Temaattinen tarkastelu: tiheysmittaukset",
     "Taidot: suoraan verrannollisuus, esim. m = ρV; suureen ratkaiseminen lineaarisesta mallista"
@@ -13,6 +13,20 @@
     "tiheys",
     "massa",
     "tilavuus"
+  ],
+  "key_concepts": [
+    {
+      "term": "tiheys",
+      "explain": "Kertoo, kuinka paljon massaa on tilavuusyksikköä kohti. Se on aineen ominaisuus eikä riipu kappaleen koosta."
+    },
+    {
+      "term": "massa",
+      "explain": "Kertoo, kuinka paljon ainetta kappaleessa on."
+    },
+    {
+      "term": "tilavuus",
+      "explain": "Kertoo, kuinka suuren tilan kappale vie."
+    }
   ],
   "sim": false,
   "solutions": "all",

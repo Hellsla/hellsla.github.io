@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b9db13cbb03ada41
+CONTENT-HASH: 7faa91be1e7e6ab4
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review: preview/fi-easy/fy2-5.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved Garzweiler excavator photo captured with its surroundings. New spot after the "Koska lämpöarvo…" paragraph; at 1280 it floats beside E = Hm and its explanation and ends well above the fuel table. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (lignite with a low heating value beside the heating-value law).
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy2-5.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

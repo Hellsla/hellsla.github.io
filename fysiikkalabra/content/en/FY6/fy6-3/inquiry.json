@@ -1,0 +1,487 @@
+{
+  "version": 1,
+  "contribution": "Resistance is defined as the ratio of the measured voltage to the current, $R = U : I$; by measuring we tell apart a resistor that obeys Ohm's law (a straight characteristic curve) from a filament lamp (a curved curve, as the wire heats up), and the resistance of a wire, $R = \\rho l : A$, is linked to the resistivity of the material and the dimensions of the conductor.",
+  "learn": [
+    "determine the resistance of a component from its voltage and current.",
+    "interpret a characteristic curve and explain when Ohm's law holds.",
+    "calculate the resistance of a conductor from its resistivity, length and cross-sectional area."
+  ],
+  "prior": [
+    "Current is measured with an ammeter connected in series with the component, and voltage with a voltmeter connected in parallel with it (chapter *Measurements in an electric circuit*)",
+    "The direction of an electric current is agreed to be from the positive terminal to the negative terminal, and in a metal the current is the motion of free electrons (chapter *Electric circuit, current and voltage*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "When the toaster is on, the same electric current flows in the copper conductors of the extension cord and in the heating wire of the toaster. The extension cord stays cool in the hand, but the thin wire of the toaster glows orange. The conductors of the extension cord are thick copper, the wire of the toaster is thin nichrome.",
+      "question": "What property of a component decides how large a current a given voltage produces in it, and what does this property depend on?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: connecting the meters",
+      "prompt": "You want to measure the voltage across a lamp and the current through the lamp at the same time. How are the meters connected?",
+      "choices": [
+        {
+          "text": "The ammeter in series with the lamp and the voltmeter in parallel with the lamp.",
+          "correct": true,
+          "feedback": "Correct. The same current must flow through the ammeter as through the lamp, so it is in the same branch of the circuit as the lamp. A voltmeter measures the voltage between two points, so it is connected across the terminals of the lamp (chapter *Measurements in an electric circuit*)."
+        },
+        {
+          "text": "Both meters in series with the lamp, so that the current flows through all of them.",
+          "feedback": "The resistance of a voltmeter is very large, so in series it almost cuts off the current and the lamp goes out. A voltmeter is connected in parallel with the component whose voltage is measured (chapter *Measurements in an electric circuit*)."
+        },
+        {
+          "text": "The ammeter in parallel with the lamp and the voltmeter in series with the lamp.",
+          "feedback": "The meters have swapped places. The resistance of an ammeter is very small, so in parallel almost all the current would flow through the meter and bypass the lamp. An ammeter goes in series, a voltmeter in parallel."
+        },
+        {
+          "text": "Both meters in parallel with the lamp, because they measure the lamp.",
+          "feedback": "An ammeter connected in parallel would bypass the lamp, because its resistance is very small. To measure a current, the current must flow through the meter, so the ammeter is connected in series."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: current of a filament lamp",
+      "prompt": "The voltage across a filament lamp is raised from $1.5\\,\\text{V}$ to $3.0\\,\\text{V}$, that is, doubled. How does the current through the lamp change?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The current doubles, because current is directly proportional to voltage.",
+          "feedback": "The model's values refute this: the current grows from $0.182\\,\\text{A}$ to only $0.250\\,\\text{A}$, about 1.4 times. Direct proportionality holds only if the resistance stays the same. The wire of the lamp heats up as the voltage rises, and the resistance of a hot wire is greater: $U : I$ grows from $8.3\\,\\Omega$ to $12.0\\,\\Omega$."
+        },
+        {
+          "text": "The current increases, but by less than a factor of two.",
+          "correct": true,
+          "feedback": "The model's values support this: the current grows from $0.182\\,\\text{A}$ to $0.250\\,\\text{A}$, about 1.4 times. The ratio $U : I$ grows from $8.3\\,\\Omega$ to $12.0\\,\\Omega$, because the wire heats up and the resistance of a hot metal is greater."
+        },
+        {
+          "text": "The current increases by more than a factor of two, because a lamp only starts to conduct properly when it is hot.",
+          "feedback": "The model's values show the opposite: the current grows only about 1.4 times, from $0.182\\,\\text{A}$ to $0.250\\,\\text{A}$. A hot metal conducts electricity worse than a cold one, because the ions vibrate more strongly and the electrons collide with them more often."
+        },
+        {
+          "text": "The current stays the same, because the lamp uses up the current anyway.",
+          "feedback": "Current is not used up in the lamp: after the lamp the current is as large as before it. A larger voltage produces a larger current, in the model $0.250\\,\\text{A}$ instead of $0.182\\,\\text{A}$. In the lamp electrical energy is changed into light and heat, not current."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: length of the wire",
+      "prompt": "The length of a constantan wire is doubled. The thickness of the wire stays the same, and the same voltage is connected across its ends. How does the resistance of the wire change?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The resistance stays the same, because the wire is of the same material.",
+          "feedback": "The model's values refute this: the resistance of a $1.00\\,\\text{m}$ wire is $2.50\\,\\Omega$ and that of a $2.00\\,\\text{m}$ wire $5.00\\,\\Omega$. The material determines the resistivity, but the resistance also depends on the dimensions of the wire: in a long wire the electrons collide with the ions over a longer distance."
+        },
+        {
+          "text": "The resistance doubles.",
+          "correct": true,
+          "feedback": "The model's values support this: in the $1.00\\,\\text{m}$ wire the current is $0.600\\,\\text{A}$ and $U : I = 2.50\\,\\Omega$, in the $2.00\\,\\text{m}$ wire $0.300\\,\\text{A}$ and $5.00\\,\\Omega$. A wire twice as long is like two short wires one after the other."
+        },
+        {
+          "text": "The resistance is halved, because a longer wire has more electrons to carry the current.",
+          "feedback": "The model's values show the opposite: the resistance grows from $2.50\\,\\Omega$ to $5.00\\,\\Omega$, and the current is halved. The number of electrons increases along the wire, but they travel one after the other, not side by side. More parallel routes appear only when the cross-sectional area of the wire grows."
+        },
+        {
+          "text": "The resistance becomes four times as large, because both the distance and the collisions double.",
+          "feedback": "The model's values refute this: the resistances are $2.50\\,\\Omega$ and $5.00\\,\\Omega$, so it doubles. The number of collisions grows in the same proportion as the distance; they are not two separate factors."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose a component, adjust the voltage and read the meters. Mark the readings on the graph and see what kind of characteristic curve the component gets.",
+      "howto": "Choose the *Component*: resistor, filament lamp or constantan wire. Adjust the voltage $U$ of the voltage source. The voltmeter shows the voltage across the component and the ammeter the current through it. *Mark point* adds the readings to the $(I, U)$ graph; the graph shows the points of the chosen component, and *Clear graph* removes them. The length and cross-sectional area of the wire affect only the constantan wire, and the wire is drawn to scale. The purple dots show the agreed direction of the current from the positive terminal to the negative terminal; they move faster the larger the current is. *Speed* changes only their pace.",
+      "model": "The meters are ideal: the resistance of the ammeter is zero and no current flows through the voltmeter, so the meters do not change the circuit. The temperature of the resistor and the constantan wire stays the same, so their resistance does not change with the voltage; the resistivity of constantan changes very little with temperature. The model of the filament lamp imitates the behaviour of an ordinary $3\\,\\text{V}$ lamp: the wire heats up as the voltage rises, and its resistance grows from the cold-lamp value $1.0\\,\\Omega$ to $12.0\\,\\Omega$. The readings are values of the model, not measurements.",
+      "calc": "The meters show the voltage $U$ and the current $I = U : R$. The resistance of the resistor is $R = 10\\,\\Omega$. The resistance of the wire is $R = \\rho l : A$, where the resistivity of constantan is $\\rho = 5.0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m}$ and $A$ is converted to square metres, $1\\,\\text{mm}^2 = 10^{-6}\\,\\text{m}^2$. The resistance of the lamp depends on the voltage:\n\n$$R = R_\\text{c} + (R_\\text{r} - R_\\text{c}) \\left(\\frac{U}{U_\\text{r}}\\right)^{0.6}$$\n\nwhere the cold resistance is $R_\\text{c} = 1.0\\,\\Omega$, the rated resistance $R_\\text{r} = 12.0\\,\\Omega$ and the rated voltage $U_\\text{r} = 3.0\\,\\text{V}$. The formula is a model that imitates the behaviour of a real lamp, not a law of physics. The faint curve is calculated from the same formulas at voltages 0–$3.0\\,\\text{V}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: characteristic curve of a resistor",
+      "intro": "The component is a resistor. Change only the voltage and record the current at at least three voltages, for example $0.5\\,\\text{V}$, $1.5\\,\\text{V}$ and $3.0\\,\\text{V}$. Mark the same readings on the graph with the *Mark point* button. Calculate $U : I$ for each row.",
+      "initial": {
+        "comp": "vastus",
+        "U": 0.5
+      },
+      "locked": [
+        "comp"
+      ],
+      "vary": "U",
+      "names": {
+        "comp": "component",
+        "U": "voltage",
+        "L": "length of wire",
+        "A": "wire area"
+      },
+      "units": {
+        "U": "V",
+        "L": "m",
+        "A": "mm²"
+      },
+      "values": {
+        "comp": {
+          "vastus": "resistor",
+          "lamppu": "filament lamp",
+          "lanka": "constantan wire"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "Calculate the resistance of the resistor $R = U : I$ from one row of your table. Answer in ohms.",
+        "answer": 10,
+        "unit": "Ω",
+        "tolerance": 0.02,
+        "hints": [
+          "Choose a row where the voltage and the current are not zero, for example $U = 1.5\\,\\text{V}$.",
+          "Resistance is the voltage divided by the current, not the current divided by the voltage.",
+          "$R = 1.50\\,\\text{V} : 0.150\\,\\text{A}$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.1,
+            "feedback": "You divided the current by the voltage. The resistance is $R = U : I$: the voltage is divided by the current, and the unit is $\\text{V/A} = \\Omega$."
+          }
+        ],
+        "solution": "**Given:** from the table, for example, $U = 1.50\\,\\text{V}$ and $I = 0.150\\,\\text{A}$ (values of the model)\n\n**Find:** the resistance $R$ of the resistor in ohms\n\n**Principle:** Resistance is the ratio of the voltage across a component to the current through it. The ammeter is in series with the resistor and the voltmeter in parallel, so the readings refer to the resistor itself.\n\n**Formula:** $R = \\dfrac{U}{I}$\n\n**Conversions:** Not needed: the voltage is in volts and the current in amperes, and $1\\,\\text{V/A} = 1\\,\\Omega$.\n\n**Substitution:** $R = \\dfrac{1.50\\,\\text{V}}{0.150\\,\\text{A}} = 10.0\\,\\Omega$\n\n**Answer:** $10.0\\,\\Omega$, three significant figures like the meter readings.\n\n**Reasonableness:** Every row gives the same result: $0.5\\,\\text{V} : 0.050\\,\\text{A} = 10\\,\\Omega$ and $3.0\\,\\text{V} : 0.300\\,\\text{A} = 10\\,\\Omega$. A constant ratio means that the current is directly proportional to the voltage, as Ohm's law says."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: characteristic curve of a filament lamp",
+      "intro": "Test prediction 1. The component is now a filament lamp. Change only the voltage and record the current at at least the voltages $1.5\\,\\text{V}$ and $3.0\\,\\text{V}$, and at smaller ones too if you wish. Mark the readings on the graph and compare the curve with the straight line of the resistor. Calculate $U : I$ for every row.",
+      "initial": {
+        "comp": "lamppu",
+        "U": 1.5
+      },
+      "locked": [
+        "comp"
+      ],
+      "vary": "U",
+      "names": {
+        "comp": "component",
+        "U": "voltage",
+        "L": "length of wire",
+        "A": "wire area"
+      },
+      "units": {
+        "U": "V",
+        "L": "m",
+        "A": "mm²"
+      },
+      "values": {
+        "comp": {
+          "vastus": "resistor",
+          "lamppu": "filament lamp",
+          "lanka": "constantan wire"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 3: length of the wire",
+      "intro": "Test prediction 2. The component is the constantan wire, the voltage is $1.5\\,\\text{V}$ and the cross-sectional area $0.20\\,\\text{mm}^2$. Change only the length of the wire and record the current at at least the lengths $1.00\\,\\text{m}$ and $2.00\\,\\text{m}$. Calculate the resistance $U : I$ for every row.",
+      "initial": {
+        "comp": "lanka",
+        "U": 1.5,
+        "L": 0.5,
+        "A": 0.2
+      },
+      "locked": [
+        "comp",
+        "U",
+        "A"
+      ],
+      "vary": "L",
+      "names": {
+        "comp": "component",
+        "U": "voltage",
+        "L": "length of wire",
+        "A": "wire area"
+      },
+      "units": {
+        "U": "V",
+        "L": "m",
+        "A": "mm²"
+      },
+      "values": {
+        "comp": {
+          "vastus": "resistor",
+          "lamppu": "filament lamp",
+          "lanka": "constantan wire"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-4",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 4: thickness of the wire",
+      "intro": "The length of the wire is now $1.00\\,\\text{m}$ and the voltage $1.5\\,\\text{V}$. Change only the cross-sectional area and record the current at at least the values $0.10\\,\\text{mm}^2$, $0.20\\,\\text{mm}^2$ and $0.40\\,\\text{mm}^2$. How does the resistance $U : I$ change when the cross-sectional area doubles?",
+      "initial": {
+        "comp": "lanka",
+        "U": 1.5,
+        "L": 1,
+        "A": 0.1
+      },
+      "locked": [
+        "comp",
+        "U",
+        "L"
+      ],
+      "vary": "A",
+      "names": {
+        "comp": "component",
+        "U": "voltage",
+        "L": "length of wire",
+        "A": "wire area"
+      },
+      "units": {
+        "U": "V",
+        "L": "m",
+        "A": "mm²"
+      },
+      "values": {
+        "comp": {
+          "vastus": "resistor",
+          "lamppu": "filament lamp",
+          "lanka": "constantan wire"
+        }
+      },
+      "measure": [
+        {
+          "key": "I",
+          "label": "I (A)"
+        }
+      ],
+      "min": 2,
+      "optional": true
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: when does $U : I$ stay constant?",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3"
+      ],
+      "prompt": "Based on your tables, write: for which component did the ratio $U : I$ stay the same regardless of the voltage, and for which did it change? Why did the ratio change for the lamp? How did the resistance of the wire depend on its length?",
+      "model": "For the resistor $U : I$ was $10\\,\\Omega$ at every voltage, for example $1.50\\,\\text{V} : 0.150\\,\\text{A} = 10.0\\,\\Omega$. So the current is directly proportional to the voltage, and the resistor obeys Ohm's law; its characteristic curve is a straight line through the origin. For the lamp the ratio grew with the voltage: $8.3\\,\\Omega$ at $1.5\\,\\text{V}$ and $12.0\\,\\Omega$ at $3.0\\,\\text{V}$, and the characteristic curve bends. The greater the voltage, the hotter the wire gets, and the resistance of a hot metal is greater. The resistance of the constantan wire doubled when the length doubled: $2.50\\,\\Omega$ at $1.00\\,\\text{m}$ and $5.00\\,\\Omega$ at $2.00\\,\\text{m}$. The values are values of the model: in the model the meters are ideal and the temperature of the resistor and the wire stays the same.",
+      "criteria": [
+        "I calculated the ratio $U : I$ and found it constant for the resistor.",
+        "I found that the ratio for the lamp grows with the voltage and explained it by the heating of the wire.",
+        "I found that the resistance of the wire doubles when the length doubles and backed it up with numbers.",
+        "I said that the numbers are values of a model and not measurements."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the model values of the experiments. Then return to the opening question: why is the wire of a toaster made of thin nichrome and the conductors of an extension cord of thick copper? Use the words resistance and resistivity.",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A student wants to determine the resistance of a filament lamp at a voltage of $3.0\\,\\text{V}$, when the current is $0.25\\,\\text{A}$. She draws a tangent to the $(I, U)$ graph of the lamp at the point $(0.25\\,\\text{A};\\ 3.0\\,\\text{V})$, reads its slope and writes: the resistance of the lamp is $27\\,\\Omega$. Where is the error?",
+      "choices": [
+        {
+          "text": "Resistance is the ratio $U : I$, that is, the slope of the line drawn from the origin, not of the tangent: $12\\,\\Omega$.",
+          "correct": true,
+          "feedback": "Correct: $3.0\\,\\text{V} : 0.25\\,\\text{A} = 12\\,\\Omega$. Resistance is defined as the ratio of voltage to current at the same operating point. The tangent tells how much the voltage changes when the current changes a little, and on a curved line that is something else. Only on a straight characteristic curve do the tangent and the line drawn from the origin coincide."
+        },
+        {
+          "text": "The tangent is the right method, but the slope should have been calculated as the current divided by the voltage.",
+          "feedback": "The slope of the tangent is not the resistance of the lamp whichever way round it is calculated. Also, the unit of the slope of an $(I, U)$ graph is $\\text{V/A} = \\Omega$, so the voltage is divided by the current. The resistance is $U : I = 12\\,\\Omega$."
+        },
+        {
+          "text": "The resistance of a filament lamp cannot be calculated, because it does not obey Ohm's law.",
+          "feedback": "The resistance $R = U : I$ is defined at every operating point, also for a component that does not obey Ohm's law. The resistance of the lamp just changes with the voltage: at a voltage of $3.0\\,\\text{V}$ it is $12\\,\\Omega$."
+        },
+        {
+          "text": "There is no error in the calculation; the resistance of the lamp is greater than $12\\,\\Omega$, because the wire is hot.",
+          "feedback": "The heat of the wire is already included in the measured current $0.25\\,\\text{A}$: it is precisely because the wire is hot that the current is this small. The resistance at this point is $3.0\\,\\text{V} : 0.25\\,\\text{A} = 12\\,\\Omega$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "A wall socket is $18\\,\\text{m}$ from the fuse box. The current flows from the fuse box to the socket along one copper conductor and returns along another, so the total length of conductor along the path of the current is $36\\,\\text{m}$. The cross-sectional area of the conductor is $1.5\\,\\text{mm}^2$ and the resistivity of copper $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$. What is the resistance of this $36\\,\\text{m}$ of conductor? Answer in ohms.",
+      "answer": 0.408,
+      "unit": "Ω",
+      "tolerance": 0.02,
+      "hints": [
+        "Which formula gives the resistance of a conductor from its material and dimensions? Which length is substituted into the formula?",
+        "$R = \\rho l : A$, where $l = 36\\,\\text{m}$. The cross-sectional area must be converted to square metres.",
+        "$1.5\\,\\text{mm}^2 = 1.5 \\cdot (10^{-3}\\,\\text{m})^2 = 1.5 \\cdot 10^{-6}\\,\\text{m}^2$, so $R = \\dfrac{1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m} \\cdot 36\\,\\text{m}}{1.5 \\cdot 10^{-6}\\,\\text{m}^2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.204,
+          "feedback": "You calculated only one conductor. The current flows from the fuse box to the socket and back, so the length of conductor is $2 \\cdot 18\\,\\text{m} = 36\\,\\text{m}$."
+        },
+        {
+          "value": 0.000408,
+          "feedback": "You converted square millimetres with the factor $10^{-3}$. A square millimetre is a millimetre times a millimetre: $1\\,\\text{mm}^2 = (10^{-3}\\,\\text{m})^2 = 10^{-6}\\,\\text{m}^2$."
+        }
+      ],
+      "solution": "**Given:** copper $\\rho = 1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$; length of conductor $l = 2 \\cdot 18\\,\\text{m} = 36\\,\\text{m}$; cross-sectional area $A = 1.5\\,\\text{mm}^2$\n\n**Find:** the resistance $R$ of the conductor path in ohms\n\n**Principle:** The conductor is uniform copper, so its resistance is proportional to its length and inversely proportional to its cross-sectional area. The current flows through the outgoing and the return conductor one after the other, so the length is taken as the total of both.\n\n**Formula:** $R = \\rho \\dfrac{l}{A}$\n\n**Conversions:** $A = 1.5\\,\\text{mm}^2 = 1.5 \\cdot (10^{-3}\\,\\text{m})^2 = 1.5 \\cdot 10^{-6}\\,\\text{m}^2$\n\n**Substitution:** $R = \\dfrac{1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m} \\cdot 36\\,\\text{m}}{1.5 \\cdot 10^{-6}\\,\\text{m}^2} = 0.408\\,\\Omega$\n\n**Answer:** $0.41\\,\\Omega$, two significant figures like the resistivity and the cross-sectional area.\n\n**Reasonableness:** One metre of this conductor has about $0.011\\,\\Omega$, so $36\\,\\text{m}$ is just under half an ohm. The resistance is small, as expected of a conductor: with a current of $10\\,\\text{A}$ the conductors lose a voltage of only $10\\,\\text{A} \\cdot 0.408\\,\\Omega \\approx 4\\,\\text{V}$ of the mains $230\\,\\text{V}$.",
+      "optional": true
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks use one formula, level 2 tasks convert units, rearrange a formula or read a graph, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "The voltage across a resistor is doubled, and the temperature of the resistor stays the same. What happens to the resistance of the resistor?",
+      "choices": [
+        {
+          "text": "The resistance doubles, because $R = U : I$ and the voltage doubles.",
+          "feedback": "The formula $R = U : I$ does not mean that resistance depends on voltage. When the voltage doubles, the current doubles too, and the ratio stays the same. Resistance depends on the material, the dimensions and the temperature."
+        },
+        {
+          "text": "The resistance stays the same, and the current doubles.",
+          "correct": true,
+          "feedback": "Correct. At a constant temperature a resistor obeys Ohm's law: the current is directly proportional to the voltage, so the ratio $U : I$ does not change. For example, in a $10\\,\\Omega$ resistor $1.5\\,\\text{V}$ gives $0.15\\,\\text{A}$ and $3.0\\,\\text{V}$ gives $0.30\\,\\text{A}$."
+        },
+        {
+          "text": "The resistance is halved, because a larger voltage pushes the current through more easily.",
+          "feedback": "A larger voltage produces a larger current, but it does not change the properties of the resistor. The ratio $U : I$ stays the same when the temperature does not change."
+        },
+        {
+          "text": "The resistance stays the same, but the current also stays the same.",
+          "feedback": "If the resistance stays the same, a doubled voltage produces a doubled current, because $I = U : R$. So the current does not stay the same."
+        }
+      ],
+      "practice": "Practise with the level 1 tasks, where you calculate resistance, voltage or current."
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Characteristic curve from measurement points",
+      "figure": "fy6-3/resistor-points",
+      "prompt": "The graph shows the measurement points of a resistor, when the voltage was changed and the current measured. Fit a line through the origin to the points and determine the resistance of the resistor from the slope of the line. Answer in ohms.",
+      "answer": 22,
+      "unit": "Ω",
+      "tolerance": 0.05,
+      "hints": [
+        "Why does the line pass through the origin? What quantity is the slope of an $(I, U)$ graph?",
+        "Read the slope from two points of the fitted line, not from two neighbouring measurement points. The origin is one point.",
+        "The fitted line passes through the voltage $2.2\\,\\text{V}$ at the current $0.100\\,\\text{A}$: $R = 2.2\\,\\text{V} : 0.100\\,\\text{A}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.045,
+          "feedback": "You calculated the current divided by the voltage. The slope of an $(I, U)$ graph is the change on the vertical axis divided by the change on the horizontal axis, that is $\\Delta U : \\Delta I$, and its unit is $\\text{V/A} = \\Omega$."
+        }
+      ],
+      "solution": "**Given:** five measurement points on an $(I, U)$ graph; current $0.020$–$0.100\\,\\text{A}$, voltage $0.47$–$2.21\\,\\text{V}$\n\n**Find:** the resistance $R$ of the resistor in ohms\n\n**Principle:** The resistor obeys Ohm's law, so $U = RI$: the characteristic curve is a straight line whose slope is $R$. The line passes through the origin, because with no voltage no current flows. In real data sets the measurement points are usually not exactly on the same line because of measurement uncertainty, so the line is fitted to all the points.\n\n**Reading the graph:** The line drawn through the origin passes among the points, some of the points lie above it and some below. We read a point of the line far from the origin: at the current $0.100\\,\\text{A}$ the voltage of the line is $2.2\\,\\text{V}$. The other point is the origin $(0;\\ 0)$.\n\n**Formula:** $R = \\dfrac{\\Delta U}{\\Delta I}$\n\n**Conversions:** Not needed: the voltage is in volts and the current in amperes.\n\n**Substitution:** $R = \\dfrac{2.2\\,\\text{V} - 0\\,\\text{V}}{0.100\\,\\text{A} - 0\\,\\text{A}} = 22\\,\\Omega$\n\n**Answer:** $22\\,\\Omega$, two significant figures, because the voltage is read from the fitted line to about $0.05\\,\\text{V}$.\n\n**Reasonableness:** Single points give almost the same value: $0.86\\,\\text{V} : 0.040\\,\\text{A} \\approx 22\\,\\Omega$ and $1.74\\,\\text{V} : 0.080\\,\\text{A} \\approx 22\\,\\Omega$. The value is of the order of magnitude of an ordinary resistor."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain and transfer",
+      "prompt": "A long extension cord uses thicker copper conductors than a short one, even if the appliances are the same. Explain why, using the concepts resistance and resistivity.",
+      "criteria": [
+        "I state that the resistance of a conductor is $R = \\rho l : A$ and grows with length.",
+        "I state that a larger cross-sectional area reduces the resistance and cancels the effect of length.",
+        "I give a reason why the resistance of a conductor must be small: the conductor must not heat up or take voltage away from the appliance.",
+        "I mention that the resistivity of copper is small, so it is a good conductor material."
+      ],
+      "model": "The resistance of a conductor is $R = \\rho l : A$. In a long extension cord there is more conductor, so the resistance of a conductor of the same thickness would be greater: a conductor twice as long, twice the resistance. The resistance of a conductor must be small so that the conductor does not heat up dangerously and so that the voltage is left for the appliance and not for the cord. When the cross-sectional area is increased in the same proportion as the length, the resistance stays unchanged. Conductors are made of copper, because its resistivity $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$ is one of the smallest among metals.",
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer first yourself and open the answer only then."
+    }
+  ]
+}

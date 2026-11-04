@@ -1,0 +1,34 @@
+{
+  "id": "fy5-5",
+  "course": "FY5",
+  "title": "Kappaleiden välinen gravitaatiovoima",
+  "goals": [
+    "LOPS FY5: gravitaatiolaki ja planeettojen liike",
+    "Täsmennys: kaikki kappaleet vetävät toisiaan puoleensa. Gravitaatiovoima on F = γm₁m₂/r². Lisäksi opitaan painovoima ja gravitaatiokentän voimakkuus sekä se, miten gravitaatio synnyttää maailmankaikkeuden rakenteita."
+  ],
+  "prerequisites": [
+    "fy5-4"
+  ],
+  "glossary": [
+    "gravitaatiolaki",
+    "gravitaatiovakio",
+    "gravitaatiokenttä"
+  ],
+  "key_concepts": [
+    {
+      "term": "gravitaatiolaki",
+      "explain": "Kaksi kappaletta vetää toisiaan. Voima kasvaa, kun massat kasvavat, ja pienenee nopeasti, kun etäisyys kasvaa."
+    },
+    {
+      "term": "gravitaatiovakio",
+      "explain": "Gravitaatiolain kerroin. Se on sama kaikkialla maailmankaikkeudessa ja hyvin pieni luku."
+    },
+    {
+      "term": "gravitaatiokenttä",
+      "explain": "Kappaleen ympärillä oleva alue, jossa jokaiseen kappaleeseen vaikuttaa gravitaatiovoima."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

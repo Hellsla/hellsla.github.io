@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 1154302d46e52d67
+CONTENT-HASH: 624d199053201553
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fig-4 (pressure-depth graph) — the y axis has no 0 tick, the "0" belongs to the x axis only; add a 0 label or note the axis starts at 0.
-- [Minor] sim-1280 — the label "Tiheys ρ = 1000 kg/m³ (vesi)" wraps to two lines and sits higher than the Syvyys label; align the sliders.
-- [Minor] inquiry.json exp-2 intro — "bensiini 720, vesi 1000 ja Kuolleenmeren vesi 1240 kg/m³" mixes plain numbers and maths; make all three inline maths.
-- [Minor] example Sijoitus — the chain is very tall (12 rows); fine on a phone, but one \cdot per row is more than needed.
+- [Minor] lesson.md, Kaava paragraph (untouched text) — plain unit symbols "(Pa)", "(kg/m³)", "(m)" and the equals sign outside maths in "$g$ = $9{,}81\,\text{m/s}^2$" and "$\rho$ = $1000\,\text{kg/m}^3$" — write ($\text{Pa}$), ($\text{kg/m}^3$), ($\text{m}$) and one formula $g = 9{,}81\,\text{m/s}^2$, $\rho = 1000\,\text{kg/m}^3$.
+- [Minor] lesson.md, ilmanpaine paragraph — "vaikuttaa myös veden pintaan, ja vesi siirtää sen myös syvemmälle": double "myös" in the edited sentence — "…ja vesi siirtää sen syvemmälle."
+- [Minor] lesson.md, padon muuri paragraph (untouched text) — "30 metrin syvyydessä" is a plain quantity — "$30\,\text{m}$:n syvyydessä".
 
 ## Checked
-- contact-1, fig-1..5-390, sim-390, sim-1280, theory-1280-1, example-390-2, lab-1280.
-- Figures: pressure-area (same F, A2=3A1, labelled), water-column (G, h, A), pressure-depth graph (line, p0 dashed, rho g h bracket), dam and diver illustrations. Consistent palette, legible, no clipping.
-- Fi-easy text: short plain sentences, terms consistent.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-4.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).

@@ -1,0 +1,28 @@
+{
+  "id": "fy6-14",
+  "course": "FY6",
+  "title": "Semiconductors, the diode, the LED and the solar cell",
+  "goals": [
+    "LOPS FY6: semiconductors, the diode and the LED as components in an electric circuit",
+    "Clarification: semiconductors are treated mainly as technical components of an electric circuit; the properties of semiconductor materials are not part of the central contents",
+    "Thematic study: the solar cell as a direct-voltage source"
+  ],
+  "prerequisites": [
+    "fy6-3"
+  ],
+  "glossary": [
+    "puolijohde",
+    "diodi",
+    "LED",
+    "päästösuunta",
+    "estosuunta",
+    "kynnysjännite",
+    "etuvastus",
+    "aurinkokenno",
+    "tyhjäkäyntijännite",
+    "maksimitehopiste"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

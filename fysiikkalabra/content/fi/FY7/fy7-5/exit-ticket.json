@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Neliön muotoisen johdinsilmukan sivu on $0{,}20\\,\\text{m}$, ja silmukka on kohtisuorassa homogeenista magneettikenttää $0{,}50\\,\\text{T}$ vastaan. Kuinka suuri magneettivuo silmukan läpi kulkee?",
+    "a": "$\\Phi = BA = 0{,}50\\,\\text{T} \\cdot (0{,}20\\,\\text{m})^2 = 0{,}020\\,\\text{Wb} = 20\\,\\text{mWb}$."
+  },
+  {
+    "q": "Käämin läpi kulkeva magneettivuo kasvaa, on hetkellä $t_1$ suurimmillaan ja alkaa sitten pienentyä. Kuinka suuri induktiojännite käämissä on hetkellä $t_1$?",
+    "a": "Nolla. Suurimman arvon kohdalla vuon kuvaaja $(t, \\Phi)$ on hetken vaakasuora, joten vuon muutosnopeus $\\Delta\\Phi : \\Delta t$ ja jännite $e = -N \\cdot \\Delta\\Phi : \\Delta t$ ovat nolla. Suuri vuo ei tarkoita suurta jännitettä."
+  }
+]

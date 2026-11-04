@@ -23,11 +23,13 @@ A course's fields (all texts in the language of the file):
   language                               optional: the language its units are written in (FY14: "en"); the course page
                                          of every language says so and links to the units in that language's folder
   chapters                               optional: [{title, question, units: [{id, title}]}], the course's chapters and
-                                         their units (scripts/units.py) in teaching order; a unit not yet published is
-                                         named as coming; a unit with "optional": true is marked ★ (optional extra material)
+                                         their units (scripts/units.py) in teaching order, shown as chapter cards (scripts/cardgrid.py);
+                                         a unit not yet published is named as coming; a unit with "optional": true is marked ★ (optional extra material)
   sessions                               optional: about how many lessons the course is taught in; the front page
                                          says "about N lessons" instead of counting the units (FY14: 16)
   overview                               optional: one paragraph after the chapters' lead (FY14: sessions, ★, Fotoni)
+  mixer                                  optional: true links the YO-sekoitin page (scripts/mixer.py) from the course
+                                         page and has build.py build it in every language that publishes the course
   pathway                                investigation ids in the course's order; the course page lists its published
                                          investigations in this order, any others after them by title
   python scripts/local_courses.py        validate the registry (also run by build.py and test_home.py)
@@ -43,12 +45,19 @@ TEXT_FIELDS = ("title", "subtitle", "school", "description")
 esc = lambda s: _h.escape(str(s), quote=True)
 
 
+def order(code):
+    """Sort key of a course code: its letters, then its number as a number (FY9 < FY10 < FY14)."""
+    m = re.fullmatch(r"([A-Za-z]*)(\d*)", code)
+    return (m.group(1), int(m.group(2) or 0)) if m else (code, 0)
+
+
 def load(lang=i18n.SOURCE):
     """{code: course} published in lang: the Finnish registry with that language's texts over it. A test copy of the
     project without the registry has no local courses."""
     src = ROOT / REGISTRY
     if not src.is_file(): return {}
-    base = {k: v for k, v in json.loads(src.read_text()).items() if not k.startswith("_")}
+    # In course-number order (teacher 2026-11-04 "kurssit numeroiden mukaisessa järjestyksessä"): FY9 before FY10, FY14
+    base = dict(sorted(((k, v) for k, v in json.loads(src.read_text()).items() if not k.startswith("_")), key=lambda kv: order(kv[0])))
     if lang == i18n.SOURCE: return base
     tr = ROOT / "content" / lang / REGISTRY
     tr = {k: v for k, v in json.loads(tr.read_text()).items() if not k.startswith("_")} if tr.is_file() else {}
@@ -88,27 +97,6 @@ def validate(curriculum):
     return errs
 
 
-def home_row(code, c, T, investigations=0, n_units=0):
-    """The front page row: the same anatomy as a national module's row, one link stretched over it. What the course
-    already publishes (its investigations in this language) comes first; the plan's status is said apart from it
-    (teacher 2026-10-31: published investigations are not "planned", the course plan may still be)."""
-    avail = (T.count("site.local_investigations", investigations) if investigations
-             else T("units.home_sessions", n=c["sessions"]) if n_units and c.get("sessions")   # the lessons taught, not the units written
-             else T.count("units.home_count", n_units) if n_units
-             else T("site.local_status_" + c["status"]))
-    status = f'<span class="mod-coming">{T("site.local_status_home_" + c["status"])}</span>' if (investigations or n_units) and c["status"] != "ready" else ""
-    if c.get("language") and c["language"] != T.lang:
-        status += f'<span class="mod-coming">{T("units.taught_in_" + c["language"])}</span>'
-    import module_icons
-    return (f'<li class="mod-row local-row">{module_icons.img(code)}<span class="mod-code">{code}</span>'
-            f'<div class="mod-main"><h3 class="mod-title"><a class="mod-link" href="{code}.html">'
-            f'<span class="visually-hidden">{code} </span>{esc(c["title"])}</a></h3>'
-            f'<p class="mod-q">{esc(c["subtitle"])}</p></div>'
-            f'<p class="mod-meta"><span class="mod-avail">{avail}</span>{status}'
-            f'<span class="mod-credits">{esc(c["school"])}</span></p>'
-            f'<span class="mod-go" aria-hidden="true">{T("site.open_course")}</span></li>')
-
-
 BANK_PAGE = "tutkimukset.html"           # the investigation bank of a course with a path (teacher 2026-11-03)
 TVT_PAGE = "tvt.html"                    # the TVT index, shared by every course (scripts/guides.py index_body)
 
@@ -125,7 +113,7 @@ def bank_section(c, T, investigations, heading=True):
     items = sorted(investigations, key=lambda x: (order.get(x[0], len(order)), x[1]["title"]))
     head = (f'<h2 id="tutkimukset">{T("investigation.course_heading")}</h2>' if heading else "")
     return (head + f'<p class="section-lead">{T.count("investigation.course_lead_n", len(items))} '
-            f'{T("investigation.bank_note")}</p>' + inv.bank(T, items))
+            f'{T("investigation.bank_note")}</p>' + inv.bank(T, items, T.lang))
 
 
 def bank_page(code, c, T, investigations):
@@ -146,23 +134,31 @@ def page_body(code, c, T, chapters, published, investigations=(), guide_pages=()
            + (f'<p class="local-authors">{T("units.authors")}: {esc(", ".join(c["authors"][:-1]) + " " + T("units.and") + " " + c["authors"][-1] if len(c["authors"]) > 1 else c["authors"][0])}</p>' if c.get("authors") else "")
            + (f'<p class="notice local-language" role="note">{T("units.language_note_" + c["language"])}</p>' if c.get("language") and c["language"] != T.lang else "")
            + f'<p class="local-desc">{esc(c["description"])}</p>')
-    if c.get("chapters"):                # the course's chapters and their units (scripts/units.py), published ones as links
-        hrefs = {u: href for u, _, href in course_units}
+    if c.get("chapters"):                # the course's chapters and their units (scripts/units.py) as cards (scripts/cardgrid.py,
+        import cardgrid, units           # teacher 2026-11-04): a section per chapter with its question, a card per unit with
+        hrefs = {u: href for u, _, href in course_units}   # its opening illustration and question; a unit still coming is dashed
         lang_attr = f' lang="{c["language"]}"' if c.get("language") and c["language"] != T.lang else ""
         css = ROOT / "assets" / "units" / code.lower() / "units.css"
         if css.is_file(): out += f'<link rel="stylesheet" href="units/{code.lower()}/units.css">'
         out += (f'<h2 id="chapters">{T("units.chapters")}</h2><p class="section-lead">{T("units.chapters_lead")}</p>'
-                + (f'<p class="section-lead local-overview">{esc(c["overview"])}</p>' if c.get("overview") else "") + '<ol class="unit-chapters">')
+                + (f'<p class="section-lead local-overview">{esc(c["overview"])}</p>' if c.get("overview") else ""))
+        items = ""
         for i, ch in enumerate(c["chapters"], 1):
-            items = ""
             for j, u in enumerate(ch["units"], 1):
-                num = f'<span class="l-num">{i}.{j}</span>'
-                star = f' <span aria-hidden="true">★</span><span class="visually-hidden"> ({T("units.optional_mark")})</span>' if u.get("optional") else ""
-                if u["id"] in hrefs: items += f'<li class="live">{num}<a href="{hrefs[u["id"]]}"{lang_attr}>{esc(u["title"])}</a>{star}</li>'
-                else: items += f'<li class="soon">{num}<span{lang_attr}>{esc(u["title"])}</span>{star} <span class="tag">{T("site.lesson_coming")}</span></li>'
-            out += (f'<li class="unit-chapter"><h3><span class="l-num">{i}</span><span{lang_attr}>{esc(ch["title"])}</span></h3>'
-                    f'<p class="local-why"{lang_attr}>{esc(ch["question"])}</p><ol class="lessons">{items}</ol></li>')
-        out += "</ol>"
+                lab = cardgrid.label(f'{i} · {esc(ch["title"])}', esc(ch["question"]), lang_attr) if j == 1 else ""
+                num = T("site.chapter_n", n=f"{i}.{j}"); title = f'<span{lang_attr}>{esc(u["title"])}</span>' if lang_attr else esc(u["title"])
+                star = (f'<span class="tag">★ {T("units.optional_mark")}</span>') if u.get("optional") else ""
+                if u["id"] in hrefs:
+                    src = units.folder(u["id"], c.get("language") or T.lang) / "unit.md"
+                    text = src.read_text() if src.is_file() else ""
+                    why = cardgrid.md_question(text)
+                    items += cardgrid.card(num, title, hrefs[u["id"]], f'<span{lang_attr}>{why}</span>' if lang_attr and why else why, cardgrid.hero(text), star, lab=lab)
+                else:
+                    items += cardgrid.card(num, title, None, tags=star + f'<span class="tag">{T("site.lesson_coming")}</span>', lab=lab)
+        out += cardgrid.grid(items, ' id="unit-cards"')
+    if c.get("mixer"):                   # the YO-sekoitin: every exam-style task of the site (scripts/mixer.py)
+        out += (f'<h2 id="sekoitin">{T("mixer.course_heading")}</h2><p class="section-lead">{T("mixer.course_lead")}</p>'
+                f'<ul class="lessons practice-link"><li class="live"><a href="yo-sekoitin.html">{T("mixer.title")}</a></li></ul>')
     hx = "h2"
     if c.get("path"):                    # FY10 (teacher 2026-11-03): start here, then the bank and the TVT index, background last
         import guides

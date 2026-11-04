@@ -1,0 +1,24 @@
+{
+  "id": "fy5-7",
+  "course": "FY5",
+  "title": "Describing oscillation: period, frequency and amplitude",
+  "goals": [
+    "LOPS FY5: periodic motion, period, frequency and amplitude",
+    "LOPS FY5: can describe periodic motion with physical and mathematical concepts",
+    "Skills: fitting a sine function"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "jaksollinen liike",
+    "värähtelyliike",
+    "tasapainoasema",
+    "jaksonaika",
+    "taajuus",
+    "amplitudi",
+    "vaihe",
+    "sinifunktion sovitus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

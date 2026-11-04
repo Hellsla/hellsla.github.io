@@ -1,4 +1,4 @@
-# Aineen lämpeneminen ja jäähtyminen: Q = cmΔT
+# Aineen lämpeneminen ja jäähtyminen: $Q = cm\Delta T$
 
 > **Miksi** uimarannan hiekka polttaa jalkapohjia jo aamupäivällä, kun vesi on vielä viileää? Aurinko on kuitenkin paistanut molempiin yhtä kauan.
 
@@ -74,6 +74,8 @@
 
 ## Ydinajatus
 Kun kappaleeseen siirtyy lämpöä eikä sen olomuoto muutu, sen sisäenergia kasvaa ja lämpötila nousee. Kokeissa on havaittu, että tarvittava lämpömäärä on suoraan verrannollinen kahteen asiaan: lämpötilan muutokseen ja kappaleen massaan. Kaksi kertaa suurempi lämpötilan nousu vaatii kaksinkertaisen lämpömäärän. Kaksinkertainen vesimäärä vaatii myös kaksinkertaisen lämpömäärän. Lisäksi lämpömäärä riippuu aineesta. Kilogramman veden lämmittäminen yhdellä asteella vaatii noin $4{,}2\,\text{kJ}$. Kilogramman raudan lämmittäminen vaatii vain noin $0{,}45\,\text{kJ}$. Aineelle ominainen kerroin on ominaislämpökapasiteetti $c$. Sen yksikkö on J/(kg·K). Se kertoo, kuinka paljon energiaa tarvitaan yhden kilogramman lämmittämiseen yhdellä kelvinillä. Sama määrä energiaa vapautuu, kun aine jäähtyy yhden kelvinin.
+
+<figure class="unit-photo"><img src="pics/fy3/steaming-kettle.webp" alt="Vedenkeittimestä kaadetaan kuumaa vettä lasikannuun."><figcaption>Kuumaa vettä kaadetaan keittimestä. Näkyvä huuru on pieniä vesipisaroita.</figcaption></figure>
 
 Tärkeä syy on tämä: veden ominaislämpökapasiteetti on poikkeuksellisen suuri. Vesi lämpenee auringossa hitaasti ja jäähtyy illalla hitaasti. Hiekan $c$ on noin viidesosa veden arvosta. Siksi hiekka kuumenee samalla energialla moninkertaisesti enemmän. Lisäksi aurinko lämmittää hiekasta vain ohuen pintakerroksen. Vedessä lämpeneminen ulottuu syvemmälle. Veden suuri ominaislämpökapasiteetti tasaa rannikon lämpötiloja järvien lähellä. Siksi vesi on myös hyvä lämmönsiirtoaine lämmitysputkissa.
 

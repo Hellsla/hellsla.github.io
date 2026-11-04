@@ -1,0 +1,21 @@
+{
+  "id": "fy8-14",
+  "course": "FY8",
+  "title": "Säteily lääketieteessä ja teknologiassa",
+  "goals": [
+    "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+    "Temaattinen tarkastelu: säteilyn käyttö lääketieteessä, diagnostiikka ja hoito; potilaan ja henkilökunnan turvallisuus",
+    "Laaja-alainen: hyvinvointiosaaminen"
+  ],
+  "prerequisites": [
+    "fy8-13"
+  ],
+  "glossary": [
+    "röntgensäteily",
+    "merkkiaine",
+    "sädehoito"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

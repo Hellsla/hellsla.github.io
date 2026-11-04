@@ -146,7 +146,7 @@ Arkikielessä työ on mitä tahansa ponnistelua. Fysiikassa sana tarkoittaa tark
   <foreignObject x="415" y="291.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = F\,s$</div></foreignObject>
 </svg>
 
-Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvulla. Hän antoi putoavan painon pyörittää siipipyörää vedessä. Paino teki työn. Vesi lämpeni mitattavan verran, vaikka sitä ei lämmitetty. Työ kasvatti veden sisäenergiaa. Kokeissa veden lämpeneminen oli verrannollinen painon ja pudotusmatkan tuloon. Tämä tulo on sama kuin voiman ja matkan tulo. Tämä koetulos perustelee työn määritelmän $W = Fs$ (kaava alla). Sama lämpeneminen saadaan myös lämmittämällä. Työ ja lämpö ovat siis kaksi tapaa siirtää energiaa. Molemmat mitataan samalla yksiköllä, joulella.
+Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvulla. Hän antoi putoavan painon pyörittää siipipyörää vedessä. Paino teki työn. Vesi lämpeni mitattavan verran, vaikka sitä ei lämmitetty. Työ kasvatti veden sisäenergiaa. Kokeissa veden lämpeneminen oli verrannollinen painon ja pudotusmatkan tuloon eli kasvoi samassa suhteessa kuin tämä tulo. Tämä tulo on sama kuin voiman ja matkan tulo. Tämä koetulos perustelee työn määritelmän $W = Fs$ (kaava alla). Sama lämpeneminen saadaan myös lämmittämällä. Työ ja lämpö ovat siis kaksi tapaa siirtää energiaa. Molemmat mitataan samalla yksiköllä, joulella.
 
 <svg data-fig="joule" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva Joulen kokeesta. Putoava paino vetää narua. Naru kulkee väkipyörän yli ja pyörittää siipipyörää. Siipipyörä on vesiastiassa. Painon voima tekee työn pudotusmatkalla h. Siipipyörä lämmittää vettä: työ muuttuu lämmöksi." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy32-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
@@ -178,6 +178,8 @@ Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvul
 </svg>
 
 Kun teet kappaleeseen työtä, energiaa siirtyy. Nostetun kappaleen energia kasvaa. Jousi venyy ja tallentaa energiaa. Kitkaa vastaan tehty työ lämmittää pintoja. Energia ei katoa, vaan vaihtaa muotoa. Teho kertoo, kuinka nopeasti työ tehdään. Voit kävellä portaat ylös tai juosta ne. Teet saman työn, mutta juostessa teho on suurempi. Kiukaan teho on $6\,\text{kW}$. Se tarkoittaa, että kiuas muuttaa joka sekunti 6000 joulea sähköenergiaa sisäenergiaksi. Tämä energia siirtyy lämpönä kiviin ja ilmaan.
+
+<figure class="unit-photo"><img src="pics/fy3/crane-lifting-load.webp" alt="Nosturi nostaa harmaata betoniastiaa. Kaksi työntekijää ohjaa sitä."><figcaption>Nosturi nostaa betoniastiaa työmaalla. Kun kuorma nousee, nostovoima tekee työtä. Kuorman potentiaalienergia kasvaa.</figcaption></figure>
 
 ## Kaava: Työ ja teho
 Kun vakiovoima on liikkeen suuntainen, voiman tekemä työ on voiman ja matkan tulo:

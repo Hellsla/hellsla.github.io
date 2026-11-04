@@ -1,4 +1,4 @@
-# Voima vuorovaikutuksen mittana ja paino G = mg
+# Voima vuorovaikutuksen mittana ja paino $G = mg$
 
 > **Miksi** astronautti painaa Kuussa vain kuudesosan siitä, mitä hän painaa Maassa, vaikka hänestä ei ole kadonnut mitään?
 

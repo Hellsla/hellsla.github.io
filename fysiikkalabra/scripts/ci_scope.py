@@ -22,9 +22,13 @@ A changed file maps to pages, or to nothing, or forces "full". Conservative: any
   site/tvt.html, content/<lang>/tvt/index.json                 the TVT index are not in the browser steps;
                                                                test_home.py checks them on every run)
   content/<lang>/lukuvinkit.json, site/<lang>/lukuvinkit.html  nothing (the reading list; test_home.py checks it)
-  concept-cards.json                                           nothing of its own: the chapters whose Käsitetakomo link
-                                                               changes are named by their site/ diff (../kasitetakomo*
-                                                               lies outside this folder and is not in the diff)
+  content/<lang>/tietoa.md, site/<lang>/tietoa.html          nothing (Sivustosta, the about page; test_home.py checks it)
+  content/<lang>/tietosuoja.md, site/<lang>/tietosuoja.html  nothing (Tietosuoja, the privacy page; test_home.py checks it)
+  site/<lang>/nain-opiskelet.html                              nothing (the study guide; test_home.py checks it)
+  site/<lang>/yo-sekoitin.html                                 nothing (the task mixer, scripts/mixer.py; test_home.py checks it)
+  kortit/**, site/kortit/**, site/<lang>/kasitteet.html        nothing of its own: the concept cards (concept_cards.py) are
+                                                               rendered into the chapters, module and Sovella pages, and
+                                                               their site/ diff names them; test_home.py checks the cards
   content/<lang>/courses.json                                  nothing of its own: a module or lesson title is
                                                                rendered into the pages, and their site/ diff names them
   docs/*.md and docs/<dir>/**, *.md outside content/, tests/models/**, news/ newsletter/ tips/   nothing
@@ -41,7 +45,7 @@ from courses import ROOT
 
 LANG = r"[a-z]{2,3}(?:-[a-z]+)?"
 NOTHING = re.compile(rf"(?:docs/(?!visual-baseline\.tsv$).+|(?!content/)[^/]+\.md|(?!content/).+/README\.md|tests/models/.+|(?:news|newsletter|tips)/.+"
-                     rf"|site/(?:sims|pics)/.+|concept-cards\.json|content/{LANG}/(?:courses|lukuvinkit)\.json|site/(?:{LANG}/)?(?:index|FY\d+|lukuvinkit|tutkimukset|tvt)\.html|content/{LANG}/tvt/index\.json)")
+                     rf"|site/(?:sims|pics|kortit)/.+|kortit/.+|content/{LANG}/(?:courses|lukuvinkit)\.json|content/{LANG}/(?:tietoa|tietosuoja)\.md|site/(?:{LANG}/)?(?:index|FY\d+|lukuvinkit|nain-opiskelet|tietoa|tietosuoja|kasitteet|yo-sekoitin|tutkimukset|tvt)\.html|content/{LANG}/tvt/index\.json)")
 
 
 def git(*a):

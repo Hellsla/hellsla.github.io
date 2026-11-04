@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "contribution": "Valon heijastuslaki $\\beta = \\alpha_1$ ja taittumislaki $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, kun taitekerroin on $n = c : v$. Lisäksi luvussa selitetään, miksi valo taittuu aaltorintamien avulla, kuinka osa valosta heijastuu ja miksi vedessä oleva esine näyttää olevan lähempänä pintaa. Simulaatiolla opiskelija huomaa, että sinien suhde pysyy samana mutta kulmien suhde ei. LOPS-kokeessa akryylin taitekerroin määritetään sinien kuvaajan kulmakertoimesta.",
+  "learn": [
+    "selittämään, miksi valo heijastuu ja taittuu kahden aineen rajapinnassa.",
+    "laskemaan heijastuskulmia, taitekulmia, taitekertoimia ja valon nopeuden aineessa.",
+    "määrittämään aineen taitekertoimen mitatuista kulmista kuvaajan kulmakertoimen avulla."
+  ],
+  "prior": [
+    "Valo on sähkömagneettista aaltoliikettä. Tyhjiössä sen nopeus on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$ (luku *Sähkömagneettinen säteily ja mustan kappaleen spektri*)",
+    "Aalto heijastuu niin, että heijastuskulma on yhtä suuri kuin tulokulma. Kulmat mitataan normaalista (luku *Aaltojen heijastuminen ja diffraktio*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Laita pilli vesilasiin ja katso lasia vinosti ylhäältä. Pilli näyttää katkeavan vedenpinnan kohdalla. Sen vedessä oleva osa näyttää siirtyneen sivuun. Uima-altaan pohja näyttää olevan lähempänä kuin se on. Tyyni järvi peilaa rannan puut. Silmälasit, kameran objektiivi ja valokuitu toimivat sen mukaan, mitä valolle tapahtuu kahden aineen rajalla.",
+      "question": "Mitä valolle tapahtuu, kun se osuu vedenpintaan, ja miksi pilli näyttää katkeavan?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: heijastuslaki",
+      "prompt": "Aalto osuu tasaiseen seinään. Aallon etenemissuunnan ja seinän normaalin välinen kulma on $30^\\circ$. Mihin suuntaan heijastunut aalto etenee?",
+      "choices": [
+        {
+          "text": "Normaalin toiselle puolelle, $30^\\circ$:n kulmaan normaalista.",
+          "correct": true,
+          "feedback": "Oikein. Heijastuskulma on yhtä suuri kuin tulokulma, kun molemmat mitataan normaalista (luku *Aaltojen heijastuminen ja diffraktio*). Tässä luvussa sama laki pätee valoon."
+        },
+        {
+          "text": "Normaalin toiselle puolelle, $60^\\circ$:n kulmaan normaalista.",
+          "feedback": "Kulma $60^\\circ$ on tulevan aallon ja seinän pinnan välinen kulma. Heijastuslaki koskee normaalista mitattuja kulmia. Heijastuskulma on siis $30^\\circ$ (luku *Aaltojen heijastuminen ja diffraktio*)."
+        },
+        {
+          "text": "Takaisin samaa reittiä, koska seinä pysäyttää aallon.",
+          "feedback": "Aalto palaa samaa reittiä vain, kun se tulee kohtisuoraan seinään. Vinosti tuleva aalto heijastuu normaalin toiselle puolelle yhtä suureen kulmaan (luku *Aaltojen heijastuminen ja diffraktio*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: säde veteen",
+      "prompt": "Laserin säde tulee ilmasta vedenpintaan. Tulokulma normaalista mitattuna on $40^\\circ$. Miten säde jatkaa vedessä?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Se taittuu kohti normaalia. Taitekulma on pienempi kuin $40^\\circ$.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: tulokulmalla $40^\\circ$ taitekulma on $28{,}9^\\circ$. Valo hidastuu vedessä, ja hidastuessaan se kääntyy lähemmäs normaalia. Vain kohtisuoraan tuleva säde, $\\alpha_1 = 0^\\circ$, ei muuta suuntaansa."
+        },
+        {
+          "text": "Se jatkaa suoraan, koska vesi on läpinäkyvää ja valo menee sen läpi.",
+          "feedback": "Mallin arvot kumoavat tämän: tulokulmalla $40^\\circ$ taitekulma on $28{,}9^\\circ$. Läpinäkyvyys tarkoittaa, että valo pääsee aineen läpi. Rajapinnassa valon nopeus kuitenkin muuttuu, ja vinosti tuleva säde muuttaa suuntaansa."
+        },
+        {
+          "text": "Se taittuu normaalista poispäin. Taitekulma on suurempi kuin $40^\\circ$.",
+          "feedback": "Mallin arvot kumoavat tämän: taitekulma on $28{,}9^\\circ$. Valo taittuu normaalista poispäin, kun se siirtyy optisesti harvempaan aineeseen, esimerkiksi vedestä ilmaan. Ilmasta veteen valo hidastuu ja taittuu kohti normaalia."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: kaksinkertainen tulokulma",
+      "prompt": "Säde tulee edelleen ilmasta veteen. Tulokulma kaksinkertaistetaan $30^\\circ$:sta $60^\\circ$:een. Miten taitekulma muuttuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Se kaksinkertaistuu, koska taitekulma on verrannollinen tulokulmaan.",
+          "feedback": "Mallin arvot kumoavat tämän: taitekulma kasvaa $22{,}1^\\circ$:sta $40{,}6^\\circ$:een, ei $44{,}2^\\circ$:een. Taittumislaki koskee kulmien sinejä. Suhde $\\sin\\alpha_1 : \\sin\\alpha_2$ pysyy samana, mutta kulmien suhde ei."
+        },
+        {
+          "text": "Se kasvaa, mutta vähemmän kuin kaksinkertaiseksi.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: taitekulma kasvaa $22{,}1^\\circ$:sta $40{,}6^\\circ$:een eli noin $1{,}84$-kertaiseksi. Vakio on kulmien sinien suhde, $\\sin\\alpha_1 : \\sin\\alpha_2 = 1{,}33$. Sini kasvaa suurilla kulmilla yhä hitaammin."
+        },
+        {
+          "text": "Se pysyy samana, koska aineet ja niiden taitekertoimet ovat samat.",
+          "feedback": "Mallin arvot kumoavat tämän: taitekulma kasvaa $22{,}1^\\circ$:sta $40{,}6^\\circ$:een. Taitekertoimet määräävät, kuinka paljon säde taittuu. Taitekulma riippuu kuitenkin myös tulokulmasta."
+        },
+        {
+          "text": "Se kasvaa yli kaksinkertaiseksi, koska säde taittuu jyrkemmin.",
+          "feedback": "Mallin arvot kumoavat tämän: taitekulma kasvaa $22{,}1^\\circ$:sta vain $40{,}6^\\circ$:een. Kun tulokulma kasvaa, taitekulma kasvaa yhä hitaammin. Suurimmillaankin se on vedessä vain $48{,}8^\\circ$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Laserin säde osuu kahden aineen rajapintaan astelevyn keskellä. Valitse aineet ja tulokulma. Seuraa heijastunutta ja taittunutta sädettä.",
+      "howto": "Valitse yläpuolen ja alapuolen aine ja säädä tulokulmaa $\\alpha_1$. Laser on yläpuolen aineessa, ja säde osuu rajapintaan astelevyn keskipisteessä. Katkoviiva on rajapinnan normaali. Kaikki kulmat mitataan siitä: $\\alpha_1$ on tulokulma, $\\beta$ heijastuskulma ja $\\alpha_2$ taitekulma. Astelevyn kehällä on viiva $10^\\circ$:n välein ja pidempi viiva $30^\\circ$:n välein. Mitä kirkkaampi ja paksumpi säde on, sitä suurempi osa valosta kulkee sitä pitkin. Lukemista näet kulmat, niiden sinit ja heijastuvan osuuden $R$.",
+      "model": "Malli käyttää keltaisen valon (aallonpituus $589\\,\\text{nm}$) taitekertoimia: ilma $1{,}00$, vesi $1{,}33$, akryyli $1{,}49$, lasi $1{,}52$ ja timantti $2{,}42$. Rajapinta on tasainen ja sileä. Aineet ovat tasalaatuisia ja läpinäkyviä, joten ne eivät absorboi valoa. Heijastuva osuus lasketaan polarisoimattomalle valolle, ja loput valosta jatkaa taittuneena. Jos taittumislaista tulisi $\\sin\\alpha_2 > 1$, taittunutta sädettä ei ole, ja kaikki valo heijastuu (luku *Kokonaisheijastuminen ja valokuitu*). Lukemat ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Heijastuskulma on heijastuslain mukaan $\\beta = \\alpha_1$. Taitekulma saadaan taittumislaista $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$:\n\n$$\\sin\\alpha_2 = \\frac{n_1 \\sin\\alpha_1}{n_2}$$\n\nHeijastuva osuus $R$ lasketaan Fresnelin yhtälöistä. Ne eivät kuulu lukion oppimäärään. Esimerkiksi ilmasta veteen kohtisuoraan tulevasta valosta heijastuu noin $2\\,\\%$. Taittunut säde kuljettaa osuuden $100\\,\\% - R$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: ilmasta veteen eri tulokulmilla",
+      "intro": "Testaa ennusteet 1 ja 2. Yläpuolella on ilma ja alapuolella vesi. Muuta vain tulokulmaa. Kirjaa ainakin tulokulmat $0^\\circ$, $30^\\circ$ ja $60^\\circ$. Voit kirjata myös $20^\\circ$, $40^\\circ$ ja $80^\\circ$. Vertaa heijastuskulmaa tulokulmaan ja taitekulmaa tulokulmaan.",
+      "initial": {
+        "m1": "ilma",
+        "m2": "vesi",
+        "alpha": 0
+      },
+      "locked": [
+        "m1",
+        "m2"
+      ],
+      "vary": "alpha",
+      "names": {
+        "alpha": "tulokulma α₁",
+        "m1": "yläpuolen aine",
+        "m2": "alapuolen aine"
+      },
+      "units": {
+        "alpha": "°",
+        "m1": "",
+        "m2": ""
+      },
+      "values": {
+        "m1": {
+          "ilma": "ilma",
+          "vesi": "vesi",
+          "akryyli": "akryyli",
+          "lasi": "lasi",
+          "timantti": "timantti"
+        },
+        "m2": {
+          "ilma": "ilma",
+          "vesi": "vesi",
+          "akryyli": "akryyli",
+          "lasi": "lasi",
+          "timantti": "timantti"
+        }
+      },
+      "measure": [
+        {
+          "key": "beta",
+          "label": "$\\beta$ (°)"
+        },
+        {
+          "key": "alpha2",
+          "label": "$\\alpha_2$ (°)"
+        },
+        {
+          "key": "sin1",
+          "label": "$\\sin\\alpha_1$"
+        },
+        {
+          "key": "sin2",
+          "label": "$\\sin\\alpha_2$"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: eri aineet",
+      "intro": "Yläpuolella on ilma ja tulokulma on $50^\\circ$. Muuta vain alapuolen ainetta. Kirjaa taitekulma, kun alapuolella on vesi, akryyli, lasi ja timantti. Vertaa taitekulmia aineiden taitekertoimiin.",
+      "initial": {
+        "m1": "ilma",
+        "m2": "vesi",
+        "alpha": 50
+      },
+      "locked": [
+        "m1",
+        "alpha"
+      ],
+      "vary": "m2",
+      "names": {
+        "alpha": "tulokulma α₁",
+        "m1": "yläpuolen aine",
+        "m2": "alapuolen aine"
+      },
+      "units": {
+        "alpha": "°",
+        "m1": "",
+        "m2": ""
+      },
+      "values": {
+        "m1": {
+          "ilma": "ilma",
+          "vesi": "vesi",
+          "akryyli": "akryyli",
+          "lasi": "lasi",
+          "timantti": "timantti"
+        },
+        "m2": {
+          "ilma": "ilma",
+          "vesi": "vesi",
+          "akryyli": "akryyli",
+          "lasi": "lasi",
+          "timantti": "timantti"
+        }
+      },
+      "measure": [
+        {
+          "key": "n2",
+          "label": "$n_2$"
+        },
+        {
+          "key": "alpha2",
+          "label": "$\\alpha_2$ (°)"
+        },
+        {
+          "key": "sin2",
+          "label": "$\\sin\\alpha_2$"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: heijastus ja taittuminen",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Mikä yhteys on heijastuskulmalla ja tulokulmalla? Laske kokeen 1 jokaiselta riviltä (paitsi $0^\\circ$) suhde $\\sin\\alpha_1 : \\sin\\alpha_2$ ja vertaa sitä kulmien suhteeseen $\\alpha_1 : \\alpha_2$. Kumpi pysyy samana? Miten kokeen 2 taitekulma riippuu alapuolen aineen taitekertoimesta?",
+      "model": "Heijastuskulma on joka rivillä sama kuin tulokulma, $\\beta = \\alpha_1$. Kohtisuoraan tuleva säde ($0^\\circ$) jatkaa veteen suoraan. Muuten säde taittuu kohti normaalia: $30^\\circ \\to 22{,}1^\\circ$ ja $60^\\circ \\to 40{,}6^\\circ$. Kulmien suhde muuttuu ($1{,}36$ ja $1{,}48$). Sinien suhde on kuitenkin joka rivillä $\\sin\\alpha_1 : \\sin\\alpha_2 = 1{,}33$, sama kuin veden taitekerroin. Kokeessa 2 taitekulma pienenee, kun taitekerroin kasvaa: vedessä $35{,}2^\\circ$, akryylissä $30{,}9^\\circ$, lasissa $30{,}3^\\circ$ ja timantissa $18{,}5^\\circ$. Joka rivillä $n_2 \\sin\\alpha_2 = \\sin 50^\\circ = 0{,}766$. Tämä säännönmukaisuus on taittumislaki $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$. Arvot ovat mallin laskemia.",
+      "criteria": [
+        "Totesin, että heijastuskulma on aina yhtä suuri kuin tulokulma.",
+        "Totesin, että ilmasta veteen säde taittuu kohti normaalia ja kohtisuoraan tuleva säde ei taitu.",
+        "Laskin, että sinien suhde pysyy noin $1{,}33$:na mutta kulmien suhde muuttuu.",
+        "Totesin kokeesta 2, että suurempi taitekerroin taittaa sädettä enemmän. Yhdistin havainnot taittumislakiin."
+      ]
+    },
+    {
+      "id": "mittaus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Mittaus: akryylin taitekerroin",
+      "source": "example",
+      "figure": "fy7-10/fit",
+      "text": "Ryhmä teki koulun laboratoriossa kokeen. Laserin säde ohjattiin ilmasta akryylisen puolisylinterin tasaisen pinnan keskipisteeseen astelevyn päällä. Akryylissä valo kulkee keskipisteestä suoraan kohti kaarevaa pintaa, joten se ei taitu kaarevassa pinnassa. Siksi taitekulman voi lukea astelevyltä. Ryhmä luki kulmat asteen tarkkuudella.\n\n| $\\alpha_1$ (°) | $\\alpha_2$ (°) |\n| --- | --- |\n| $10$ | $7$ |\n| $20$ | $13$ |\n| $30$ | $20$ |\n| $40$ | $26$ |\n| $50$ | $31$ |\n| $60$ | $36$ |\n| $70$ | $39$ |\n\nRyhmä laski kulmien sinit ja piirsi Vernier Graphical Analysis -ohjelmalla kuvaajan. Pystyakselilla on $\\sin\\alpha_1$ ja vaaka-akselilla $\\sin\\alpha_2$. Ohjelma sovitti pisteisiin suoran $\\sin\\alpha_1 = A \\sin\\alpha_2 + B$. Ohjelma ilmoitti kulmakertoimen $A = 1{,}489$, sen epävarmuuden $\\Delta A = 0{,}016$ ja vakiotermin $B = -0{,}004$. Oikeissa mittaussarjoissa mittauspisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksissa on epävarmuutta.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Määritä mittauksesta akryylin taitekerroin. Ilman taitekerroin on $1{,}00$.",
+        "answer": 1.4895,
+        "unit": "",
+        "tolerance": 0.02,
+        "hints": [
+          "Kirjoita taittumislaki niin, että $\\sin\\alpha_1$ on yhtälön vasemmalla puolella. Mikä kulmakerroin silloin on?",
+          "Taittumislaista saadaan $\\sin\\alpha_1 = \\tfrac{n_2}{n_1} \\sin\\alpha_2$, joten kulmakerroin on $A = n_2 : n_1$.",
+          "$n_2 = A \\cdot n_1 = 1{,}489 \\cdot 1{,}00$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.671,
+            "feedback": "Laskit kulmakertoimen käänteisluvun. Pystyakselilla on $\\sin\\alpha_1$ (ilma) ja vaaka-akselilla $\\sin\\alpha_2$ (akryyli). Siksi $A = n_2 : n_1$ ja $n_2 = A n_1$. Taitekertoimen on oltava suurempi kuin $1$."
+          },
+          {
+            "value": 1.79,
+            "feedback": "Laskit kulmien suhteen $70^\\circ : 39^\\circ$. Taittumislaki koskee kulmien sinejä. Taitekerroin saadaan sinien kuvaajan kulmakertoimesta, ja se ottaa kaikki mittauspisteet huomioon."
+          }
+        ],
+        "solution": "**Annettu:** sovitetun suoran kulmakerroin $A = 1{,}489$, $\\Delta A = 0{,}016$, vakiotermi $B = -0{,}004$, ilman taitekerroin $n_1 = 1{,}00$\n\n**Kysytty:** akryylin taitekerroin $n_2$ (yksikötön)\n\n**Periaate:** Taittumislaista $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ saadaan $\\sin\\alpha_1 = \\tfrac{n_2}{n_1} \\sin\\alpha_2$. Kun $\\sin\\alpha_1$ piirretään $\\sin\\alpha_2$:n funktiona, pisteet ovat suoralla, joka kulkee origon kautta. Suoran kulmakerroin on $n_2 : n_1$. Kulmakerroin luetaan sovitetusta suorasta eikä yksittäisistä pisteistä, koska suora ottaa huomioon kaikki mittaukset. Vakiotermi $B = -0{,}004$ on lähes nolla, kuten mallin mukaan pitää.\n\n**Kuvaajan lukeminen:** Sovitettu suora kulkee likimain origon ja pisteen $(0{,}60;\\ 0{,}89)$ kautta. Kulmakerroin on siis noin $0{,}89 : 0{,}60 \\approx 1{,}48$. Ohjelman tarkka arvo on $A = 1{,}489$.\n\n**Kaava:** $A = \\dfrac{n_2}{n_1}$, josta $n_2 = A n_1$\n\n**Muunnokset:** Niitä ei tarvita. Sinit ja taitekertoimet ovat yksikköttömiä.\n\n**Sijoitus:** $n_2 = 1{,}489 \\cdot 1{,}00 = 1{,}489$\n\n**Vastaus:** $n_2 \\approx 1{,}49$. Vastauksessa on kolme merkitsevää numeroa, koska kulmakertoimen epävarmuus $0{,}016$ on toisen desimaalin suuruinen: $n_2 = 1{,}49 \\pm 0{,}02$.\n\n**Järkevyys:** Tulos on sama kuin akryylin taulukkoarvo $1{,}49$. Yksittäisistä riveistä laskettu sinien suhde vaihtelee. Esimerkiksi $\\sin 10^\\circ : \\sin 7^\\circ = 1{,}42$ ja $\\sin 50^\\circ : \\sin 31^\\circ = 1{,}49$. Asteen lukemavirhe on pienissä kulmissa suhteellisesti suuri. Siksi kulmakerroin, joka ottaa kaikki pisteet huomioon, on luotettavampi."
+      }
+    },
+    {
+      "id": "nopeus",
+      "stage": "tutki",
+      "type": "numeric",
+      "title": "Valon nopeus akryylissä",
+      "prompt": "Edellisen mittauksen mukaan akryylin taitekerroin on $1{,}49$. Kuinka suurella nopeudella valo etenee akryylissä? Anna vastaus muodossa $\\ldots \\cdot 10^{8}\\,\\text{m/s}$. Kirjoita siis vastaukseksi kerroin.",
+      "answer": 2.0134,
+      "unit": "· 10⁸ m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Mitä taitekerroin kertoo valon nopeudesta aineessa?",
+        "$n = c : v$, joten $v = c : n$.",
+        "$v = 3{,}00 \\cdot 10^{8}\\,\\text{m/s} : 1{,}49$."
+      ],
+      "mistakes": [
+        {
+          "value": 4.47,
+          "feedback": "Kerroit nopeuden $c$ taitekertoimella. Aineessa valo etenee hitaammin kuin tyhjiössä. Nopeus on siis $v = c : n$, ja se on pienempi kuin $3{,}00 \\cdot 10^{8}\\,\\text{m/s}$."
+        }
+      ],
+      "solution": "**Annettu:** akryylin taitekerroin $n = 1{,}49$, valon nopeus tyhjiössä $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$\n\n**Kysytty:** valon nopeus akryylissä $v$ muodossa $\\ldots \\cdot 10^{8}\\,\\text{m/s}$\n\n**Periaate:** Taitekerroin kertoo, kuinka monta kertaa hitaammin valo etenee aineessa kuin tyhjiössä. Nopeus aineessa saadaan siis taitekertoimen määritelmästä.\n\n**Kaava:** $n = \\dfrac{c}{v}$, josta $v = \\dfrac{c}{n}$\n\n**Muunnokset:** Niitä ei tarvita. Taitekerroin on yksikötön, joten $v$ saadaan samassa yksikössä kuin $c$.\n\n**Sijoitus:** $v = \\dfrac{3{,}00 \\cdot 10^{8}\\,\\text{m/s}}{1{,}49} = 2{,}013 \\cdot 10^{8}\\,\\text{m/s}$\n\n**Vastaus:** $v \\approx 2{,}01 \\cdot 10^{8}\\,\\text{m/s}$. Vastaukseksi kirjoitetaan $2{,}01$. Vastauksessa on kolme merkitsevää numeroa kuten taitekertoimessa.\n\n**Järkevyys:** Nopeus on noin kaksi kolmasosaa tyhjiön nopeudesta, koska $1 : 1{,}5 \\approx 0{,}67$ ja $0{,}67 \\cdot 3{,}00 \\cdot 10^{8}\\,\\text{m/s} \\approx 2{,}0 \\cdot 10^{8}\\,\\text{m/s}$.",
+      "optional": true
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "prompt": "Vertaa ennusteitasi teoriaan ja kokeiden mallin arvoihin. Palaa sitten alun kysymykseen: miksi vesilasissa oleva pilli näyttää katkeavan vedenpinnan kohdalla?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Laserin säde osuu ilmasta vedenpintaan. Säteen ja vedenpinnan välinen kulma on $30^\\circ$. Opiskelija laskee taitekulman:\n\n$$\\begin{aligned} \\sin\\alpha_2 &= \\frac{1{,}00 \\cdot \\sin 30^\\circ}{1{,}33} \\\\ &= 0{,}376 \\\\ \\alpha_2 &= 22{,}1^\\circ \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Tulokulma mitataan normaalista: $\\alpha_1 = 60^\\circ$, jolloin $\\alpha_2 = 40{,}6^\\circ$.",
+          "correct": true,
+          "feedback": "Oikein. Kulma $30^\\circ$ on säteen ja pinnan välinen kulma. Taittumislaki koskee kuitenkin normaalista mitattuja kulmia. Tulokulma on $90^\\circ - 30^\\circ = 60^\\circ$, joten $\\sin\\alpha_2 = \\sin 60^\\circ : 1{,}33 = 0{,}651$ ja $\\alpha_2 = 40{,}6^\\circ$."
+        },
+        {
+          "text": "Taitekertoimet ovat väärin päin: $\\sin\\alpha_2 = 1{,}33 \\cdot \\sin 30^\\circ$.",
+          "feedback": "Taitekertoimet ovat oikein päin: valo tulee ilmasta, joten $n_1 = 1{,}00$ ja $n_2 = 1{,}33$. Virhe on kulmassa. Kulma $30^\\circ$ on mitattu pinnasta, ja normaalista mitattu tulokulma on $60^\\circ$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä, koska tulokulman voi mitata pinnasta tai normaalista.",
+          "feedback": "Kulman mittaussuunnalla on väliä. Taittumislaki $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ pätee vain normaalista mitatuille kulmille. Tulokulma on $60^\\circ$ ja taitekulma $40{,}6^\\circ$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen: akvaarion seinä",
+      "prompt": "Akvaarion pohjalla on lamppu. Lampusta lähtevä säde osuu akvaarion lasiseinään tulokulmassa $30{,}0^\\circ$. Säde kulkee tasapaksun lasin läpi ja jatkaa huoneilmaan. Veden taitekerroin on $1{,}33$, lasin $1{,}52$ ja ilman $1{,}00$. Kuinka suuren kulman säde muodostaa ilmassa lasin pinnan normaalin kanssa?",
+      "answer": 41.6823,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "Säde taittuu kahdesti: vedestä lasiin ja lasista ilmaan. Lasin pinnat ovat yhdensuuntaiset, joten molemmilla pinnoilla on sama normaali. Mikä yhteys on lasissa kulkevan säteen kahdella kulmalla?",
+        "Lasissa säde kulkee suoraan, joten sen kulma normaaliin on sama kummallakin pinnalla. Silloin $n_\\text{vesi} \\sin\\alpha_1 = n_\\text{lasi} \\sin\\alpha_\\text{lasi} = n_\\text{ilma} \\sin\\alpha_3$.",
+        "Lasin taitekerroin supistuu pois: $\\sin\\alpha_3 = 1{,}33 \\cdot \\sin 30{,}0^\\circ : 1{,}00$."
+      ],
+      "mistakes": [
+        {
+          "value": 25.94,
+          "feedback": "Tämä on säteen kulma lasissa. Säde taittuu vielä toisen kerran, kun se siirtyy lasista ilmaan: $1{,}52 \\cdot \\sin 25{,}9^\\circ = 1{,}00 \\cdot \\sin\\alpha_3$."
+        },
+        {
+          "value": 22.08,
+          "feedback": "Laskit taitekertoimet väärin päin. Säde tulee vedestä ($n = 1{,}33$) ja menee lopulta ilmaan ($n = 1{,}00$). Se taittuu siis normaalista poispäin, ja kulman on kasvettava."
+        },
+        {
+          "value": 39.9,
+          "feedback": "Kerroit kulman taitekertoimella. Taittumislaki koskee kulmien sinejä: $\\sin\\alpha_3 = 1{,}33 \\cdot \\sin 30{,}0^\\circ$."
+        }
+      ],
+      "solution": "**Annettu:** tulokulma vedessä $\\alpha_1 = 30{,}0^\\circ$, veden taitekerroin $n_1 = 1{,}33$, lasin $n_2 = 1{,}52$, ilman $n_3 = 1{,}00$, lasi tasapaksu\n\n**Kysytty:** säteen ja normaalin välinen kulma ilmassa $\\alpha_3$ asteina\n\n**Periaate:** Säde taittuu kahdesti taittumislain mukaan, ensin vedestä lasiin ja sitten lasista ilmaan. Lasin pinnat ovat yhdensuuntaiset, joten niillä on sama normaali. Lasissa kulkeva säde muodostaa siksi saman kulman $\\alpha_2$ kummankin pinnan normaalin kanssa. Tulo $n \\sin\\alpha$ on sama kaikissa kolmessa aineessa, ja lasin taitekerroin supistuu pois.\n\n**Kaava:** $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ ja $n_2 \\sin\\alpha_2 = n_3 \\sin\\alpha_3$, joten $n_1 \\sin\\alpha_1 = n_3 \\sin\\alpha_3$ ja $\\sin\\alpha_3 = \\dfrac{n_1 \\sin\\alpha_1}{n_3}$\n\n**Muunnokset:** Niitä ei tarvita. Taitekertoimet ovat yksikköttömiä, ja kulmat ovat asteina.\n\n**Sijoitus:** $\\sin\\alpha_3 = \\dfrac{1{,}33 \\cdot \\sin 30{,}0^\\circ}{1{,}00} = 1{,}33 \\cdot 0{,}500 = 0{,}665$, joten $\\alpha_3 = 41{,}68^\\circ$\n\n**Vastaus:** $\\alpha_3 \\approx 41{,}7^\\circ$. Vastauksessa on kolme merkitsevää numeroa kuten tulokulmassa $30{,}0^\\circ$ ja taitekertoimissa.\n\n**Järkevyys:** Välivaiheena lasissa $\\sin\\alpha_2 = 0{,}665 : 1{,}52 = 0{,}4375$ ja $\\alpha_2 = 25{,}9^\\circ$. Lasista ilmaan $1{,}52 \\cdot 0{,}4375 = 0{,}665$, sama tulos. Kulma ilmassa on suurempi kuin vedessä, koska ilma on optisesti harvempaa kuin vesi."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 2 tehtävissä yhdistetään kaksi vaihetta tai luetaan kulmat kuvasta. Taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite: miksi valo taittuu",
+      "prompt": "Miksi ilmasta vinosti veteen tuleva valo muuttaa suuntaansa vedenpinnassa?",
+      "choices": [
+        {
+          "text": "Valo hidastuu vedessä, ja aaltorintaman veteen ensin ehtivä osa hidastuu ensin.",
+          "correct": true,
+          "feedback": "Oikein. Rintaman toinen pää etenee jo hitaammin vedessä, ja toinen pää etenee vielä nopeammin ilmassa. Siksi rintama kääntyy. Tämän takia taittumislaissa sinien suhde on sama kuin nopeuksien suhde."
+        },
+        {
+          "text": "Vedenpinta työntää valoa kohti normaalia samalla tavalla kuin peili heijastaa sitä.",
+          "feedback": "Pinta ei työnnä valoa. Suunnan muutos johtuu nopeuden muutoksesta. Aaltorintaman veteen ensin ehtivä osa hidastuu ensin, ja rintama kääntyy. Peili heijastaa valon takaisin samaan aineeseen."
+        },
+        {
+          "text": "Valon taajuus pienenee vedessä, ja pienempitaajuinen valo kulkee eri suuntaan.",
+          "feedback": "Taajuus ei muutu rajapinnassa, koska sen määrää valonlähde. Nopeus ja aallonpituus pienenevät. Nopeuden muutos kääntää vinosti tulevan aaltorintaman."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Laske: öljyn taitekerroin",
+      "prompt": "Laserin säde tulee ilmasta ruokaöljyyn. Tulokulma on $50{,}0^\\circ$ ja taitekulma $31{,}4^\\circ$. Ilman taitekerroin on $1{,}00$. Kuinka suuri on öljyn taitekerroin?",
+      "answer": 1.4703,
+      "unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä laki yhdistää tulokulman, taitekulman ja taitekertoimet?",
+        "$n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, josta $n_2 = n_1 \\sin\\alpha_1 : \\sin\\alpha_2$.",
+        "$n_2 = 1{,}00 \\cdot \\sin 50{,}0^\\circ : \\sin 31{,}4^\\circ$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.68,
+          "feedback": "Laskit suhteen väärin päin. Öljy on optisesti tiheämpää, koska säde taittui kohti normaalia. Sen taitekertoimen on siis oltava suurempi kuin $1$: $n_2 = \\sin\\alpha_1 : \\sin\\alpha_2$."
+        },
+        {
+          "value": 1.592,
+          "feedback": "Laskit kulmien suhteen $50{,}0^\\circ : 31{,}4^\\circ$. Taittumislaki koskee kulmien sinejä: $n_2 = \\sin 50{,}0^\\circ : \\sin 31{,}4^\\circ$."
+        }
+      ],
+      "solution": "**Annettu:** tulokulma $\\alpha_1 = 50{,}0^\\circ$, taitekulma $\\alpha_2 = 31{,}4^\\circ$, ilman taitekerroin $n_1 = 1{,}00$\n\n**Kysytty:** öljyn taitekerroin $n_2$ (yksikötön)\n\n**Periaate:** Säde siirtyy ilmasta öljyyn ja taittuu taittumislain mukaan. Tulokulma, taitekulma ja ilman taitekerroin tunnetaan. Öljyn taitekerroin saadaan siis ratkaistua laista.\n\n**Kaava:** $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, josta $n_2 = \\dfrac{n_1 \\sin\\alpha_1}{\\sin\\alpha_2}$\n\n**Muunnokset:** Niitä ei tarvita. Kulmat ovat asteina, ja taitekertoimet ovat yksikköttömiä.\n\n**Sijoitus:** $n_2 = \\dfrac{1{,}00 \\cdot \\sin 50{,}0^\\circ}{\\sin 31{,}4^\\circ} = \\dfrac{0{,}7660}{0{,}5210} = 1{,}470$\n\n**Vastaus:** $n_2 \\approx 1{,}47$. Vastauksessa on kolme merkitsevää numeroa kuten kulmissa.\n\n**Järkevyys:** Taitekerroin on suurempi kuin $1$, koska säde taittui kohti normaalia. Arvo on veden $1{,}33$ ja lasin $1{,}52$ välissä. Ruokaöljyjen taitekertoimet ovat noin $1{,}47$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: katkeava pilli",
+      "prompt": "Selitä taittumisen avulla, miksi vesilasissa oleva pilli näyttää katkeavan vedenpinnan kohdalla, kun lasia katsotaan sivulta vinosti ylhäältä.",
+      "model": "Pillin vedessä olevasta osasta lähtevät säteet kulkevat vedestä ilmaan. Ilma on optisesti harvempaa, joten säteet taittuvat vedenpinnassa normaalista poispäin. Silmä ja aivot olettavat, että valo on kulkenut suoraan. Ne jatkavat silmään tulevia säteitä taaksepäin suoria viivoja pitkin. Jatkeet kohtaavat kohdassa, joka on ylempänä kuin pillin todellinen kohta. Siksi pillin vedessä oleva osa näyttää nousseen ylemmäs ja siirtyneen sivuun. Vedenpinnan yläpuolella oleva osa näkyy oikealla paikallaan. Pilli näyttää katkeavan juuri vedenpinnan kohdalla, koska siinä valo vaihtaa ainetta.",
+      "criteria": [
+        "Kerron, että pillin vedessä olevasta osasta tuleva valo siirtyy vedestä ilmaan ja taittuu vedenpinnassa.",
+        "Kerron taittumissuunnan oikein: vedestä ilmaan säde taittuu normaalista poispäin.",
+        "Selitän, että silmä tulkitsee valon kulkeneen suoraan. Siksi pillin vedessä oleva osa näyttää ylempänä kuin se on.",
+        "Selitän, miksi katkos on juuri vedenpinnan kohdalla: vain vedessä olevasta osasta tuleva valo taittuu."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse. Avaa vastaus vasta sen jälkeen."
+    }
+  ]
+}

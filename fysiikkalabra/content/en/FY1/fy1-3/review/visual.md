@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0d4e91ee631ea488
+CONTENT-HASH: b9fec22ac29bde55
 
 ## Blocking
-(none)
+
 
 ## Polish
-(none)
+
 
 ## Checked
-batch delta review: built page opened in Chromium at 360, 768 and 1280 px, photo (LIGO Hanford) captured with its surrounding text and caption; image loads (WebP), no horizontal overflow, floats right beside text at 1280 and stands in the column at 360/768, caption short and factual, credit under the caption, credits list at page end, alt text describes the picture; fig-1 captures and the unchanged figures not affected.
+- batch delta review: opened fy1-3-1280-0, fy1-3-1280-1, fy1-3-360-0, fy1-3-360-1; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text. Other photo(s) on the page are untouched and only seen for layout.

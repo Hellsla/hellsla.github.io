@@ -1,0 +1,18 @@
+{
+  "id": "fy5-1",
+  "course": "FY5",
+  "title": "Moment: the turning effect of a force",
+  "goals": [
+    "LOPS FY5: moment and rotation of a body"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "momentti",
+    "vääntövaikutus",
+    "voiman varsi",
+    "kiertoakseli"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

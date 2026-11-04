@@ -1,0 +1,46 @@
+{
+  "id": "fy5-13",
+  "course": "FY5",
+  "title": "Seisova aalto: solmut, kuvut ja ominaistaajuudet",
+  "goals": [
+    "LOPS FY5: seisovat aallot",
+    "Teema: soittimet. Kielen ja ilmapatsaan ominaistaajuudet."
+  ],
+  "prerequisites": [
+    "fy5-12"
+  ],
+  "glossary": [
+    "seisova aalto",
+    "solmu",
+    "kupu",
+    "ominaistaajuus",
+    "perustaajuus",
+    "resonanssi",
+    "yläsävel"
+  ],
+  "key_concepts": [
+    {
+      "term": "seisova aalto",
+      "explain": "Aalto, joka ei näytä etenevän. Se syntyy, kun aalto ja sen heijastus kulkevat vastakkaisiin suuntiin."
+    },
+    {
+      "term": "solmu",
+      "explain": "Seisovan aallon kohta, jossa aine ei liiku lainkaan."
+    },
+    {
+      "term": "kupu",
+      "explain": "Seisovan aallon kohta, jossa aine värähtelee eniten."
+    },
+    {
+      "term": "perustaajuus",
+      "explain": "Pienin taajuus, jolla esimerkiksi kieli tai putki voi värähdellä seisovana aaltona."
+    },
+    {
+      "term": "resonanssi",
+      "explain": "Kappale värähtelee voimakkaasti, kun sitä heilutetaan sen omalla ominaistaajuudella."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

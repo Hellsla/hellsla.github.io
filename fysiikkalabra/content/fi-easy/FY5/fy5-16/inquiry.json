@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "contribution": "Luvussa sovelletaan desibelejä terveyteen ja tekniikkaan. Aiheina ovat melualtistuksen annos ($3\\,\\text{dB}$:n nousu puolittaa sallitun ajan) ja työmelun toiminta-arvot asetuksessa 85/2006. Lisäksi tutkitaan melun torjuntaa lähteessä, kulkutiellä ja korvalla sekä tilan akustiikkaa ja jälkikaiuntaa. Vastamelu on heikentävää interferenssiä. Kaiuttimessa ja mikrofonissa energia muuttuu muodosta toiseen.",
+  "learn": [
+    "arvioimaan melun haittoja ja laskemaan sallitun altistusajan melutasosta.",
+    "vertailemaan melun torjuntakeinoja lähteessä, kulkutiellä ja korvalla.",
+    "selittämään, mitä jälkikaiunta ja vastamelu ovat ja miten kaiutin ja mikrofoni toimivat."
+  ],
+  "prior": [
+    "Äänen intensiteettitaso $L$ ilmoitetaan desibeleinä. Taso kasvaa aina yhtä paljon, kun intensiteetti kerrotaan samalla luvulla (luku *Intensiteetti ja desibeliasteikko*)",
+    "Aalto heijastuu esteestä heijastuslain mukaan. Aalto taipuu myös esteen reunan taakse (luku *Aalto kohtaa esteen tai raon*)",
+    "Kohtaavat aallot summautuvat. Ne voivat vahvistaa tai heikentää toisiaan (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Lauantain festivaalikeikka oli mahtava. Eturivissä kaiutintornien edessä basso tuntui rinnassa asti, mutta korviin ei sattunut. Kotimatkalla kaverin puhe kuulosti vaimealta. Yöllä korvissa soi. Aamulla soiminen oli melkein poissa. Kaverin isä käyttää töissä kuulonsuojaimia koko päivän meluisassa hallissa. Halli ei ole läheskään yhtä äänekäs kuin keikka.",
+      "question": "Mikä ratkaisee, kuinka paljon melua korva kestää? Miten kuuloa voi suojata?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: kaksi lähdettä",
+      "prompt": "Konserttilavan vasemmasta kaiutintornista tulee yleisön kohdalle taso $90\\,\\text{dB}$. Oikea torni on samanlainen. Se tuottaa samaan kohtaan yhtä suuren tason. Mikä on taso, kun molemmat tornit soivat?",
+      "choices": [
+        {
+          "text": "$180\\,\\text{dB}$, koska kahden tornin tasot lasketaan yhteen.",
+          "feedback": "Desibelit eivät summaudu suoraan. Intensiteetit summautuvat (luku *Intensiteetti ja desibeliasteikko*). Kaksi tornia kaksinkertaistaa intensiteetin. Se nostaa tasoa vain noin $3\\,\\text{dB}$. Taso $180\\,\\text{dB}$ vastaisi noin miljardi kertaa suurempaa intensiteettiä."
+        },
+        {
+          "text": "$93\\,\\text{dB}$, koska intensiteetti kaksinkertaistuu.",
+          "correct": true,
+          "feedback": "Oikein. Kaksi yhtä voimakasta lähdettä kaksinkertaistaa intensiteetin. Silloin taso nousee $10\\,\\text{dB} \\cdot \\lg 2 \\approx 3\\,\\text{dB}$ (luku *Intensiteetti ja desibeliasteikko*). Tätä tarvitaan, kun arvioidaan, kuinka paljon melua korvaan tulee."
+        },
+        {
+          "text": "$90\\,\\text{dB}$, koska kummankin tornin taso on sama.",
+          "feedback": "Toinen torni tuo kuulijalle lisää energiaa, joten intensiteetti kasvaa. Taso nousee vain noin $3\\,\\text{dB}$, koska intensiteetti kaksinkertaistuu (luku *Intensiteetti ja desibeliasteikko*)."
+        },
+        {
+          "text": "$96\\,\\text{dB}$, koska kaksi tornia nostaa tasoa $6\\,\\text{dB}$.",
+          "feedback": "Nousu $6\\,\\text{dB}$ vastaa nelinkertaista intensiteettiä eli neljää samanlaista tornia. Kaksi tornia kaksinkertaistaa intensiteetin. Se nostaa tasoa noin $3\\,\\text{dB}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: taso ja aika",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-1",
+        "pending": "Palaute avautuu, kun Teoriatiivistelmän ensimmäinen osa on näkyvissä. Vertaa sitä ennen ennustettasi Tutki-vaiheen taulukkoon."
+      },
+      "prompt": "Työmelun ylempi toiminta-arvo vastaa kahdeksan tunnin altistusta melutasolle $85\\,\\text{dB}$. Kuinka kauan suunnilleen saa olla melutasossa $94\\,\\text{dB}$, jotta korvaan kertyy sama äänienergian annos?",
+      "choices": [
+        {
+          "text": "Noin $7\\,\\text{h}$, koska $94\\,\\text{dB}$ on vain noin $10\\,\\%$ enemmän kuin $85\\,\\text{dB}$.",
+          "feedback": "Desibeliluku ei kasva samassa suhteessa kuin intensiteetti. Jokainen $3\\,\\text{dB}$ kaksinkertaistaa intensiteetin. Ero $9\\,\\text{dB}$ on kolme kaksinkertaistumista eli kahdeksankertainen intensiteetti. Sama annos täyttyy siis ajassa $8\\,\\text{h} : 8 = 1\\,\\text{h}$."
+        },
+        {
+          "text": "Noin $4\\,\\text{h}$, koska suurempi taso lyhentää aikaa hieman.",
+          "feedback": "Aika lyhenee paljon enemmän. Aika $4\\,\\text{h}$ vastaa tasoa $88\\,\\text{dB}$, jossa intensiteetti on kaksinkertainen. Tasolla $94\\,\\text{dB}$ intensiteetti on kahdeksankertainen. Sama annos täyttyy silloin ajassa $1\\,\\text{h}$."
+        },
+        {
+          "text": "Noin $1\\,\\text{h}$, koska intensiteetti on moninkertainen.",
+          "correct": true,
+          "feedback": "Oikein. Ero $94\\,\\text{dB} - 85\\,\\text{dB} = 9\\,\\text{dB}$ on kolme $3\\,\\text{dB}$:n askelta, joten intensiteetti on $2^3 = 8$-kertainen. Sama energia kertyy kahdeksasosassa ajasta: $8\\,\\text{h} : 8 = 1\\,\\text{h}$."
+        },
+        {
+          "text": "Ei hetkeäkään, koska yli $85\\,\\text{dB}$:n melu vaurioittaa kuuloa heti.",
+          "feedback": "Kuulovaurio ei synny heti, kun raja ylittyy. Ratkaisevaa on kertynyt annos eli taso ja aika yhdessä. Tasolla $94\\,\\text{dB}$ sama annos kuin $8\\,\\text{h}$ tasolla $85\\,\\text{dB}$ kertyy tunnissa. Vain hyvin voimakas iskumainen ääni, esimerkiksi laukaus läheltä, voi vaurioittaa korvaa heti."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: miten ääni voi hiljentää ääntä?",
+      "layout": "models",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-3",
+        "pending": "Palaute avautuu, kun Teoriatiivistelmän osa Vastamelu on näkyvissä."
+      },
+      "prompt": "Vastamelukuulokkeet hiljentävät lentokoneen moottorin huminan, vaikka niissä ei ole paksuja kupuja. Kuulokkeissa on mikrofoni ja pieni kaiutin. Mikä selitys on fysikaalisesti oikea?",
+      "choices": [
+        {
+          "text": "Kuulokkeet soittavat omaa, miellyttävämpää ääntä. Se peittää moottorin huminan alleen.",
+          "feedback": "Peittävä ääni ei vähennä korvaan tulevaa energiaa, vaan lisää sitä. Humina on yhä mukana, mutta se erottuu huonommin. Vastamelukuulokkeet tuottavat äänen, joka on melun kanssa vastakkaisessa vaiheessa. Silloin paineenvaihtelut kumoavat toisensa."
+        },
+        {
+          "text": "Kuulokkeet tuottavat aallon, joka on melun kanssa vastakkaisessa vaiheessa. Aallot kumoavat toisensa.",
+          "correct": true,
+          "feedback": "Oikein. Melun ylipaine ja vastamelun alipaine osuvat samaan kohtaan samaan aikaan. Ne summautuvat lähes nollaksi. Tämä on heikentävää interferenssiä (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*). Tämä onnistuu parhaiten matalalle ja tasaiselle äänelle, kuten moottorin huminalle."
+        },
+        {
+          "text": "Kuulokkeet vaimentavat melun kuten tavalliset kuulokkeet. Kuvut ja pehmusteet estävät äänen pääsyn korvaan, ja elektroniikka vain säätää sitä.",
+          "feedback": "Kuvut ja pehmusteet vaimentavat lähinnä korkeita ääniä. Matalaa huminaa ei saada kuriin ilman paksuja kuvuja. Mikrofoni kuuntelee melua. Elektroniikka tuottaa melulle vastakkaisessa vaiheessa olevan äänen, joka kumoaa huminan interferenssillä."
+        },
+        {
+          "text": "Kuulokkeiden kaiutin värähtelee samassa tahdissa kuin melu. Korva suojautuu voimistuneelta ääneltä.",
+          "feedback": "Samassa vaiheessa värähtelevä ääni vahvistaisi melua (vahvistava interferenssi). Korvaan tulisi enemmän energiaa. Korva ei suojaudu kovalta ääneltä. Vastamelun on oltava vastakkaisessa vaiheessa, jotta paineenvaihtelut kumoutuvat."
+        }
+      ]
+    },
+    {
+      "id": "taulukko",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Tutki 1: sama annos eri tasoilla",
+      "source": "model",
+      "text": "Taulukossa on melutasoja $L$. Niitä vastaavat päivittäiset ajat tuovat korvaan saman äänienergian kuin $8\\,\\text{h}$ tasolla $85\\,\\text{dB}$. Viimeinen sarake kertoo, montako kertaa suurempi intensiteetti on kuin tasolla $85\\,\\text{dB}$.\n\n| $L$ (dB) | aika | intensiteetti |\n|---|---|---|\n| $85$ | $8\\,\\text{h}$ | $1$-kertainen |\n| $88$ | $4\\,\\text{h}$ | $2$-kertainen |\n| $91$ | $2\\,\\text{h}$ | $4$-kertainen |\n| $94$ | $1\\,\\text{h}$ | $8$-kertainen |\n| $97$ | $30\\,\\text{min}$ | $16$-kertainen |\n\nKatso, miten aika muuttuu, kun taso kasvaa $3\\,\\text{dB}$. Katso myös, mitä intensiteetin ja ajan tulolle tapahtuu.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Jatka taulukon sääntöä: kuinka monta minuuttia saa olla tasolla $103\\,\\text{dB}$? Vastaa minuutteina.",
+        "answer": 7.5,
+        "unit": "min",
+        "tolerance": 0.02,
+        "hints": [
+          "Kuinka monta $3\\,\\text{dB}$:n askelta on tasosta $97\\,\\text{dB}$ tasoon $103\\,\\text{dB}$?",
+          "Jokainen askel puolittaa ajan: $30\\,\\text{min} \\to 15\\,\\text{min} \\to \\ldots$",
+          "Taso $103\\,\\text{dB}$ on kuusi askelta tason $85\\,\\text{dB}$ yläpuolella: $480\\,\\text{min} : 2^6$."
+        ],
+        "mistakes": [
+          {
+            "value": 15,
+            "feedback": "Tämä on tason $100\\,\\text{dB}$ aika. Taso $103\\,\\text{dB}$ on vielä yhden $3\\,\\text{dB}$:n askeleen ylempänä. Aika puolittuu siis vielä kerran."
+          },
+          {
+            "value": 3.75,
+            "feedback": "Puolitit ajan kerran liikaa. Tasosta $97\\,\\text{dB}$ tasoon $103\\,\\text{dB}$ on kaksi askelta. Aika puolittuu siis kahdesti: $30\\,\\text{min}$, sitten $15\\,\\text{min}$ ja lopulta $7{,}5\\,\\text{min}$."
+          }
+        ],
+        "solution": "**Annettu:** taulukon sääntö: $t_0 = 8\\,\\text{h}$ tasolla $L_0 = 85\\,\\text{dB}$, ja jokainen $3\\,\\text{dB}$:n nousu puolittaa ajan; taso $L = 103\\,\\text{dB}$.\n\n**Kysytty:** sallittu aika $t_\\text{sall}$ minuutteina.\n\n**Periaate:** Taulukossa intensiteetti kaksinkertaistuu ja aika puolittuu jokaisella $3\\,\\text{dB}$:n askeleella. Intensiteetin ja ajan tulo eli korvaan tuleva energia pysyy siis samana. Sama sääntö jatkuu suuremmille tasoille.\n\n**Kaava:** $t_\\text{sall} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L - L_0}{3\\,\\text{dB}}$\n\n**Muunnokset:** Vastaus pyydetään minuutteina: $t_0 = 8\\,\\text{h} = 8 \\cdot 60\\,\\text{min} = 480\\,\\text{min}$.\n\n**Sijoitus:** $n = \\dfrac{103\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 6$ ja $t_\\text{sall} = \\dfrac{480\\,\\text{min}}{2^6} = \\dfrac{480\\,\\text{min}}{64} = 7{,}5\\,\\text{min}$\n\n**Vastaus:** $7{,}5\\,\\text{min}$. Sääntö on nyrkkisääntö, joten kaksi merkitsevää numeroa riittää.\n\n**Järkevyys:** Taulukon viimeisestä rivistä ($97\\,\\text{dB}$, $30\\,\\text{min}$) päästään kahdella puolituksella: $30\\,\\text{min}$, sitten $15\\,\\text{min}$ ja lopulta $7{,}5\\,\\text{min}$. Intensiteetti on $64$-kertainen, ja $64 \\cdot 7{,}5\\,\\text{min} = 480\\,\\text{min} = 8\\,\\text{h}$. Annos on siis sama."
+      }
+    },
+    {
+      "id": "mittaus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Tutki 2: puhelimella mitattu taso",
+      "source": "example",
+      "text": "Keksitty esimerkkiaineisto: opiskelijat mittasivat puhelimen äänitasosovelluksella pienen kaiuttimen tasoa eri etäisyyksillä. Kaiutin soitti tasaista kohinaa. Mittauspaikkoja oli kaksi: tyhjä urheilukenttä ja tyhjä luokka, jonka seinät, katto ja lattia ovat kovia. Kaiuttimen asetukset olivat kummassakin paikassa samat.\n\n| etäisyys | kenttä | luokka |\n|---|---|---|\n| $1\\,\\text{m}$ | $82\\,\\text{dB}$ | $82\\,\\text{dB}$ |\n| $2\\,\\text{m}$ | $76\\,\\text{dB}$ | $78\\,\\text{dB}$ |\n| $4\\,\\text{m}$ | $70\\,\\text{dB}$ | $76\\,\\text{dB}$ |\n| $8\\,\\text{m}$ | $64\\,\\text{dB}$ | $75\\,\\text{dB}$ |\n\nKalibroimattoman puhelinsovelluksen lukema voi poiketa todellisesta tasosta useita desibelejä. Saman puhelimen lukemia voi silti verrata keskenään, kun asetukset ovat samat.",
+      "question": {
+        "type": "choice",
+        "prompt": "Kentällä taso laskee $6\\,\\text{dB}$ aina, kun etäisyys kaksinkertaistuu. Näin pistemäiseltä lähteeltä odotetaan. Miksi luokassa taso laskee $1\\,\\text{m}$:stä $8\\,\\text{m}$:iin vain $7\\,\\text{dB}$?",
+        "choices": [
+          {
+            "text": "Kovat pinnat heijastavat ääntä. Kauempana heijastunut ääni on suurin osa kuuluvasta äänestä.",
+            "correct": true,
+            "feedback": "Oikein. Lähellä kaiutinta suora ääni on hallitseva, joten lukemat ovat samat. Kauempana suora ääni heikkenee kuten kentällä. Seinistä, katosta ja lattiasta heijastunut ääni täyttää kuitenkin huoneen lähes tasaisesti."
+          },
+          {
+            "text": "Ääni etenee sisällä nopeammin kuin ulkona. Siksi se ei ehdi heiketä yhtä paljon matkalla.",
+            "feedback": "Äänen nopeus riippuu ilman lämpötilasta, ei siitä, onko ääni sisällä. Heikkeneminen etäisyyden mukana ei myöskään johdu ajasta. Se johtuu siitä, että energia leviää yhä suuremmalle alalle."
+          },
+          {
+            "text": "Luokan lämmin ja tyyni ilma vaimentaa ääntä selvästi vähemmän kuin kentän ulkoilma.",
+            "feedback": "Ilman oma vaimennus on muutaman metrin matkalla hyvin pieni sekä ulkona että sisällä. Kentälläkin pudotus $6\\,\\text{dB}$ kaksinkertaistumista kohti johtuu energian leviämisestä, ei ilmasta."
+          },
+          {
+            "text": "Puhelinsovellus mittaa sisätiloissa väärin. Siksi luokan arvoihin ei voi luottaa lainkaan.",
+            "feedback": "Sama puhelin näytti kummassakin paikassa $1\\,\\text{m}$:n etäisyydellä saman lukeman $82\\,\\text{dB}$, joten lukemia voi verrata. Ero kauempana on todellinen ilmiö. Sen aiheuttavat heijastukset."
+          }
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mitä taulukot kertovat?",
+      "prompt": "Kirjoita taulukoiden perusteella: miten sallittu aika muuttuu, kun melutaso nousee $3\\,\\text{dB}$, ja miksi? Mitä luokan mittaus kertoo siitä, miksi kovapintainen tila on meluisa?",
+      "model": "Kun taso nousee $3\\,\\text{dB}$, intensiteetti kaksinkertaistuu ja aika puolittuu. Intensiteetin ja ajan tulo eli korvaan tuleva energia pysyy samana. Siksi jo tasolla $94\\,\\text{dB}$ sama annos kertyy tunnissa. Luokassa taso pieneni $8\\,\\text{m}$:n matkalla vain $7\\,\\text{dB}$, kun kentällä se pieneni $18\\,\\text{dB}$. Kovat pinnat heijastavat ääntä, ja heijastunut ääni täyttää huoneen. Kaukanakaan lähteestä ei siis ole hiljaista. Luvut ovat nyrkkisäännön laskemia arvoja ja keksittyä esimerkkiaineistoa, eivät todellisia mittauksia.",
+      "criteria": [
+        "Sanon, että $3\\,\\text{dB}$:n nousu kaksinkertaistaa intensiteetin ja puolittaa ajan.",
+        "Perustelen sen annoksella: intensiteetin ja ajan tulo pysyy samana.",
+        "Vertaan kentän ja luokan tason pienenemistä lukuina.",
+        "Selitän luokan pienen pudotuksen heijastuneella äänellä."
+      ]
+    },
+    {
+      "id": "teoria-1",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "teoria-2",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Melun torjunta",
+        "Tilan akustiikka"
+      ]
+    },
+    {
+      "id": "teoria-3",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Vastamelu"
+      ]
+    },
+    {
+      "id": "teoria-4",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Kaiutin ja mikrofoni"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi taulukkoon ja Teoriatiivistelmään. Palaa sitten alun kysymykseen: miksi muutaman tunnin keikka eturivissä voi rasittaa kuuloa enemmän kuin työpäivä meluisassa hallissa suojaimet päässä? Mitä keinoja keikalla voisi käyttää kuulon suojaamiseen?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "prompt": "Kaiuttimen taso on $2{,}0\\,\\text{m}$:n päässä $96\\,\\text{dB}$. Opiskelija laskee tason $4{,}0\\,\\text{m}$:n päässä näin: ”Kun etäisyys kaksinkertaistuu, intensiteetti pienenee neljäsosaan, joten taso on $96\\,\\text{dB} : 4 = 24\\,\\text{dB}$.” Missä on virhe?",
+      "choices": [
+        {
+          "text": "Intensiteetin neljäsosa ei tarkoita tason neljäsosaa. Taso pienenee $6\\,\\text{dB}$, joten oikea tulos on $90\\,\\text{dB}$.",
+          "correct": true,
+          "feedback": "Oikein. Kun intensiteetti kerrotaan jollakin luvulla, taso muuttuu vakiomäärän: $10\\,\\text{dB} \\cdot \\lg \\tfrac14 \\approx -6\\,\\text{dB}$. Tulos $24\\,\\text{dB}$ olisi hiljaisempi kuin kuiskaus, vaikka kaiutin on vain $4{,}0\\,\\text{m}$:n päässä."
+        },
+        {
+          "text": "Intensiteetti pienenee puoleen eikä neljäsosaan, joten oikea taso on $96\\,\\text{dB} : 2 = 48\\,\\text{dB}$.",
+          "feedback": "Pistemäisen lähteen intensiteetti on kääntäen verrannollinen etäisyyden neliöön, joten se todella pienenee neljäsosaan. Virhe on siinä, että desibeliluku jaettiin. Oikein: $96\\,\\text{dB} - 6\\,\\text{dB} = 90\\,\\text{dB}$."
+        },
+        {
+          "text": "Virhe on vain pyöristyksessä. Tarkka tulos on noin $25\\,\\text{dB}$ eikä $24\\,\\text{dB}$.",
+          "feedback": "Ero ei ole pyöristyksessä. Desibelejä ei jaeta. Neljäsosa intensiteetistä vastaa tason pienenemistä $6\\,\\text{dB}$, joten taso on $90\\,\\text{dB}$."
+        },
+        {
+          "text": "Laskussa ei ole virhettä ulkona, mutta sisätiloissa taso pienenee selvästi vähemmän.",
+          "feedback": "Kaikuvassa tilassa taso tosiaan pienenee vähemmän. Laskussa on kuitenkin virhe jo avoimessa tilassa: taso $96\\,\\text{dB}$ ei muutu tasoksi $24\\,\\text{dB}$ vaan tasoksi $90\\,\\text{dB}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Kesätyöntekijä avustaa, kun toinen sahaa lautoja sirkkelillä ulkona. Sirkkelin melutaso on $1{,}0\\,\\text{m}$:n etäisyydellä $100\\,\\text{dB}$. Avustaja seisoo $4{,}0\\,\\text{m}$:n päässä sirkkelistä. Oleta sirkkeli pistemäiseksi lähteeksi avoimessa tilassa. Kuinka monta tuntia päivässä avustaja saa olla tässä melussa ilman kuulonsuojaimia? Vertailukohtana on ylempi toiminta-arvo. Vastaa tunteina.",
+      "answer": 4.0,
+      "unit": "h",
+      "tolerance": 0.02,
+      "hints": [
+        "Laske ensin taso avustajan kohdalla. Montako kertaa etäisyys kaksinkertaistuu, kun $1{,}0\\,\\text{m}$ muuttuu $4{,}0\\,\\text{m}$:ksi?",
+        "Jokainen kaksinkertaistuminen laskee tasoa $6\\,\\text{dB}$: $L = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB}$. Käytä sitten kaavaa $t_\\text{sall} = t_0 / 2^{\\,n}$.",
+        "Avustajan kohdalla $L = 88\\,\\text{dB}$, joten $n = 1$ ja $t_\\text{sall} = 8\\,\\text{h} : 2$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.25,
+          "feedback": "Tämä on sallittu aika sirkkelin vieressä tasolla $100\\,\\text{dB}$. Avustaja on kauempana. Laske ensin taso hänen kohdallaan: etäisyys kaksinkertaistuu kahdesti."
+        },
+        {
+          "value": 1.0,
+          "feedback": "Vähensit tasoa vain $6\\,\\text{dB}$. Etäisyys kaksinkertaistuu kahdesti, ensin $2{,}0\\,\\text{m}$:iin ja sitten $4{,}0\\,\\text{m}$:iin. Taso laskee siis $12\\,\\text{dB}$ tasoon $88\\,\\text{dB}$."
+        },
+        {
+          "value": 16,
+          "feedback": "Vähensit tasoa $18\\,\\text{dB}$ eli kolmen kaksinkertaistumisen verran. Kun etäisyys kasvaa $1{,}0\\,\\text{m}$:stä $4{,}0\\,\\text{m}$:iin, se kaksinkertaistuu vain kaksi kertaa. Taso on siis $88\\,\\text{dB}$."
+        }
+      ],
+      "solution": "**Annettu:** $L_1 = 100\\,\\text{dB}$ etäisyydellä $r_1 = 1{,}0\\,\\text{m}$, avustajan etäisyys $r_2 = 4{,}0\\,\\text{m}$; vertailu $L_0 = 85\\,\\text{dB}$ ja $t_0 = 8\\,\\text{h}$; pistemäinen lähde avoimessa tilassa.\n\n**Kysytty:** avustajan sallittu päivittäinen aika $t_\\text{sall}$ tunteina.\n\n**Periaate:** Avoimessa tilassa pistemäisen lähteen intensiteetti pienenee neljäsosaan aina, kun etäisyys kaksinkertaistuu. Taso laskee silloin $6\\,\\text{dB}$ (luku *Intensiteetti ja desibeliasteikko*). Avustajan tasosta saadaan sallittu aika annossäännöllä, jossa jokainen $3\\,\\text{dB}$ puolittaa ajan.\n\n**Kaava:** $L_2 = L_1 - k \\cdot 6\\,\\text{dB}$, missä $2^{\\,k} = \\dfrac{r_2}{r_1}$, ja $t_\\text{sall} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L_2 - L_0}{3\\,\\text{dB}}$\n\n**Muunnokset:** Ei tarvita. Etäisyydet ovat metreinä, joten niiden suhde on yksikötön. Aika saadaan suoraan tunteina.\n\n**Sijoitus:** $2^{\\,k} = 4{,}0\\,\\text{m} : 1{,}0\\,\\text{m} = 4$, joten $k = 2$ ja $L_2 = 100\\,\\text{dB} - 2 \\cdot 6\\,\\text{dB} = 88\\,\\text{dB}$. Sitten $n = \\dfrac{88\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 1$ ja $t_\\text{sall} = \\dfrac{8\\,\\text{h}}{2^1} = 4{,}0\\,\\text{h}$\n\n**Vastaus:** $4{,}0\\,\\text{h}$, kaksi merkitsevää numeroa kuten etäisyyksissä $1{,}0\\,\\text{m}$ ja $4{,}0\\,\\text{m}$.\n\n**Järkevyys:** Sirkkelin vieressä tasolla $100\\,\\text{dB}$ aika olisi vain $15\\,\\text{min}$. Avustajan kohdalla intensiteetti on $16$ kertaa pienempi. Aika on siis $16 \\cdot 15\\,\\text{min} = 240\\,\\text{min} = 4\\,\\text{h}$. Työpäivä on kuitenkin pidempi, joten avustajankin kannattaa käyttää suojaimia."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä sääntöä. Tason 2 tehtävissä yhdistetään kaksi vaihetta. Taso 3 vaatii päättelyä uudessa tilanteessa."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Jälkikaiunta",
+      "prompt": "Koulun ruokalassa on betoniseinät, laattalattia ja suuret ikkunat. Puheensorina on korvia huumaavaa. Mikä toimenpide lyhentää jälkikaiunta-aikaa tehokkaimmin?",
+      "choices": [
+        {
+          "text": "Ääntä vaimentavien levyjen asentaminen kattoon ja seinille.",
+          "correct": true,
+          "feedback": "Oikein. Huokoinen levy muuttaa siihen osuvan äänen energian sisäenergiaksi. Heijastuksia on silloin vähemmän, ja ääni hiipuu nopeammin. Samalla koko tilan taso laskee, koska heijastunut ääni ei kasaudu."
+        },
+        {
+          "text": "Seinien maalaaminen sileällä ja kiiltävällä maalilla.",
+          "feedback": "Sileä ja kiiltävä pinta heijastaa ääntä vähintään yhtä hyvin kuin ennen. Jälkikaiunta lyhenee vain, kun pinnat vaimentavat ääntä eli muuttavat sen energian sisäenergiaksi."
+        },
+        {
+          "text": "Ikkunoiden sulkeminen ja niiden saumojen tiivistäminen.",
+          "feedback": "Tiivis ikkuna estää ulkomelua tulemasta sisään. Se ei kuitenkaan vähennä sisällä syntyvän äänen heijastumista. Lasi on kova pinta, joka heijastaa ääntä."
+        },
+        {
+          "text": "Kuulutuskaiuttimien äänenvoimakkuuden lisääminen.",
+          "feedback": "Kovempi kuulutus lisää heijastuvaa ääntä ja sotkee puhetta entisestään. Jälkikaiunta-aika ei riipu lähteen voimakkuudesta. Se riippuu pintojen vaimennuksesta ja tilan koosta."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Korvatulpat konsertissa",
+      "prompt": "Konsertin eturivissä melutaso on $106\\,\\text{dB}$. Kuulija käyttää korvatulppia, joiden vaimennus on $15\\,\\text{dB}$. Kuinka monta tuntia hän voi olla eturivissä, ennen kuin korvaan kertyy ylempää toiminta-arvoa vastaava päivän annos? Vastaa tunteina.",
+      "answer": 2.0,
+      "unit": "h",
+      "tolerance": 0.02,
+      "hints": [
+        "Mikä taso korvaan pääsee tulppien läpi?",
+        "Korvalla $L = 106\\,\\text{dB} - 15\\,\\text{dB}$. Montako $3\\,\\text{dB}$:n askelta se on tason $85\\,\\text{dB}$ yläpuolella?",
+        "$L = 91\\,\\text{dB}$, joten $n = 2$ ja $t_\\text{sall} = 8\\,\\text{h} : 2^2$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.0625,
+          "feedback": "Tämä on aika ilman tulppia tasolla $106\\,\\text{dB}$, noin $4\\,\\text{min}$. Vähennä ensin tulppien vaimennus: korvaan pääsee $91\\,\\text{dB}$."
+        },
+        {
+          "value": 4.0,
+          "feedback": "Aika $4\\,\\text{h}$ vastaa tasoa $88\\,\\text{dB}$. Tulppien läpi korvaan pääsee $106\\,\\text{dB} - 15\\,\\text{dB} = 91\\,\\text{dB}$. Se on kaksi askelta toiminta-arvon yläpuolella."
+        }
+      ],
+      "solution": "**Annettu:** melutaso $L_\\text{m} = 106\\,\\text{dB}$, tulppien vaimennus $\\Delta L = 15\\,\\text{dB}$; vertailu $L_0 = 85\\,\\text{dB}$ ja $t_0 = 8\\,\\text{h}$.\n\n**Kysytty:** sallittu aika $t_\\text{sall}$ tunteina.\n\n**Periaate:** Tulpat vähentävät korvaan pääsevää tasoa vaimennuksensa verran. Annos riippuu korvalle tulevasta tasosta. Jokainen $3\\,\\text{dB}$ ylempää toiminta-arvoa vastaavan tason yli puolittaa sallitun ajan.\n\n**Kaava:** $L = L_\\text{m} - \\Delta L$ ja $t_\\text{sall} = \\dfrac{t_0}{2^{\\,n}}$, missä $n = \\dfrac{L - L_0}{3\\,\\text{dB}}$\n\n**Muunnokset:** Ei tarvita. Tasot ovat desibeleinä ja aika saadaan tunteina.\n\n**Sijoitus:** $L = 106\\,\\text{dB} - 15\\,\\text{dB} = 91\\,\\text{dB}$, $n = \\dfrac{91\\,\\text{dB} - 85\\,\\text{dB}}{3\\,\\text{dB}} = 2$ ja $t_\\text{sall} = \\dfrac{8\\,\\text{h}}{2^2} = 2{,}0\\,\\text{h}$\n\n**Vastaus:** $2{,}0\\,\\text{h}$. Tasot ovat kokonaisia desibelejä ja sääntö on arvio, joten kaksi merkitsevää numeroa riittää.\n\n**Järkevyys:** Ilman tulppia aika olisi $8\\,\\text{h} : 2^7 \\approx 0{,}063\\,\\text{h}$ eli noin $4\\,\\text{min}$. Vaimennus $15\\,\\text{dB}$ on viisi askelta, joten aika kasvaa $2^5 = 32$-kertaiseksi: $32 \\cdot 3{,}75\\,\\text{min} = 120\\,\\text{min} = 2\\,\\text{h}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Kaiutin ja mikrofoni",
+      "prompt": "Selitä, miten kaiutin muuttaa vahvistimen sähköisen signaalin ääneksi. Selitä myös, miten mikrofoni toimii päinvastoin. Kerro, mitkä energian muodot kummassakin esiintyvät. Kerro lisäksi, mihin suurin osa kaiuttimen saamasta sähköenergiasta päätyy.",
+      "model": "Kaiuttimessa vahvistimen vaihtovirta kulkee kelassa. Kela on kestomagneetin navan ympärillä ja kiinni kartiossa. Magneetti vaikuttaa kelaan voimalla, jonka suunta vaihtuu virran mukana. Kartio värähtelee siksi virran taajuudella ja tiivistää ja harventaa ilmaa. Näin syntyy ääni. Energia muuttuu sähköenergiasta liike-energiaksi ja ääneksi. Suurin osa, usein noin $99\\,\\%$, muuttuu kuitenkin kelan sisäenergiaksi. Mikrofonissa äänen paineenvaihtelut liikuttavat kalvoa. Dynaamisessa mikrofonissa kalvoon kiinnitetty kela liikkuu magneetin navan ympärillä. Kelaan syntyy silloin ääntä seuraava vaihtojännite. Energia muuttuu äänestä liike-energiaksi ja sähköiseksi signaaliksi.",
+      "criteria": [
+        "Kerron, että kaiuttimessa vaihtovirta kulkee magneetin navan ympärillä olevassa kelassa ja kelaan vaikuttaa suuntaa vaihtava voima.",
+        "Kerron, että kartio värähtelee virran taajuudella ja tiivistää ja harventaa ilmaa.",
+        "Kerron, että mikrofonissa ääni liikuttaa kalvoa ja liike muuttuu sähköiseksi signaaliksi.",
+        "Nimeän energian muuttumisen suunnat ja sanon, että suurin osa kaiuttimen sähköenergiasta muuttuu sisäenergiaksi."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi on kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

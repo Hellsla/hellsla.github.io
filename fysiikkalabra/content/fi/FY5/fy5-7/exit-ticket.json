@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Punnuksen poikkeama on $x = 3{,}0\\,\\text{cm} \\cdot \\sin\\left(\\dfrac{2\\pi t}{0{,}50\\,\\text{s}}\\right)$. Mikä on värähtelyn amplitudi, jaksonaika ja taajuus?",
+    "a": "Mallia $x = A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$ verrataan lausekkeeseen: amplitudi on $A = 3{,}0\\,\\text{cm}$ ja jaksonaika $T = 0{,}50\\,\\text{s}$. Taajuus on $f = \\dfrac{1}{T} = \\dfrac{1}{0{,}50\\,\\text{s}} = 2{,}0\\,\\text{Hz}$."
+  },
+  {
+    "q": "Tasaisesti pyörivän karusellin reunalla seisovan lapsen liike on jaksollista. Miksi se ei ole värähtelyliikettä?",
+    "a": "Liike on jaksollista, koska se toistuu samanlaisena jokaisella kierroksella. Värähtelyliikkeessä kappale liikkuu edestakaisin tasapainoaseman molemmin puolin, mutta karusellin lapsi kiertää ympyrää samaan suuntaan eikä liiku edestakaisin minkään aseman ympärillä."
+  }
+]

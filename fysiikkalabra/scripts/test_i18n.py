@@ -21,10 +21,11 @@ REAL = snapshot()
 
 T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-i18n-"))
 for f in ("curriculum.json", "competencies.json", "glossary.json", "CLAUDE.md", "NOTES.md"): shutil.copy(SRC / f, T / f)
-for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
+for d in ("scripts", "templates", "content", "lessons", "lang", "assets", "tests", "kortit"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
 (T / "docs").mkdir(exist_ok=True); shutil.copy(SRC / "docs/visual-baseline.tsv", T / "docs")   # what is published under the visual baseline (2026-10-31)
 for p in [*(T / "lang").glob("*.json"), *(T / "content").iterdir()]:     # Finnish only: the test adds its own "en"
     if p.stem not in ("fi", "_gold"): shutil.rmtree(p) if p.is_dir() else p.unlink()
+shutil.rmtree(T / "content/fi/units", ignore_errors=True)   # local-course units (FY9) need the registry, which this copy leaves out
 ENV = {**os.environ, "FYSIIKKALABRA_ROOT": str(T)}
 
 
@@ -39,7 +40,6 @@ expect("one language: nothing to compare", code == 0 and "fi only" in out, out)
 code, out = run("build.py")
 fi_page = (T / "site" / f"{LESSON}.html").read_text()
 site_page = re.sub(r'<details class="lang-menu">.*?</details>', "", (SRC / "site" / f"{LESSON}.html").read_text())  # the real site has languages
-site_page = re.sub(r'<p class="concept-link">.*?</p>', "", site_page)   # and the Käsitetakomo link: the copy has no ../kasitetakomo-data.js
 expect("one language: the build is the committed site, without language links", code == 0 and fi_page == site_page and 'class="lang"' not in fi_page, out[-400:])
 
 # a second language: lang/en.json and content/en/, nothing else
@@ -75,6 +75,10 @@ md = (en_dir / "lesson.md").read_text(); m = re.search(r"(?<!\$)\$([^$\n]+?)\$(?
 code, out = run("check_i18n.py")
 expect("a translation that changes a formula is an error", code == 1 and "lesson.md: formulas differ" in out, out)
 (en_dir / "lesson.md").write_text(md)
+import check_i18n
+expect("a chapter reference's title is a name, not a formula of the text",
+       check_i18n.formulas("$E = Pt$ (luku *Teho*)") == check_i18n.formulas("$E = Pt$ (chapter *Power: $P = \\Delta E/\\Delta t$*)")
+       == check_i18n.formulas("$E = Pt$ (chapter Power: $P = \\Delta E/\\Delta t$)") == ["E=Pt"])
 
 # reviews: the translation has its own hash and its own reports; the Finnish lesson is untouched
 en_hash = run("reviews.py", "hash", LESSON)[1].strip()
@@ -91,7 +95,7 @@ code, out = run("build.py")
 page = (T / "site/en" / f"{LESSON}.html").read_text() if (T / "site/en" / f"{LESSON}.html").exists() else ""
 expect("a reviewed translation is published at site/en/", code == 0 and page, out[-600:])
 expect("the English page is in English", '<html lang="en"' in page and "Physics Lab" in page and ">Check<" in page, page[:400])
-expect("its assets are the shared ones in site/", 'href="../site.css?v=' in page and 'src="../vendor/katex/katex.min.js"' in page and 'href="../../../index.html"' in page
+expect("its assets are the shared ones in site/", 'href="../site.css?v=' in page and 'src="../vendor/katex/katex.min.js"' in page and 'href="tietoa.html"' in page and '../../../index.html' not in page
        and not re.search(r'(?:src|href)="(?!\.\./|https?:|#|[\w.-]+\.html)', page), re.findall(r'(?:src|href)="[^"]*"', page)[:20])
 expect("its lesson links stay in English", 'href="FY3.html"' in page and 'href="index.html"' in page)
 expect("the numbers in the English page use a decimal point", re.search(r'data-answer="[\d.]+"', page) is not None and "{,}" not in "".join(re.findall(r"<svg\b.*?</svg>", page, re.S)))

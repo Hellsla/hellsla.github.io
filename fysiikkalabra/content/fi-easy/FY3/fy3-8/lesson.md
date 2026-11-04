@@ -95,6 +95,8 @@
 ## Ydinajatus
 Lähes kaikki aineet laajenevat lämmetessään ja kutistuvat jäähtyessään. Ilmiötä sanotaan **lämpölaajenemiseksi**.
 
+<figure class="unit-photo"><img src="pics/fy3/bridge-expansion-joint.webp" alt="Sillan kannella on metallinen sauma. Taustalla on sillan kaide."><figcaption>Kruunuvuorensillan liikuntasauma Helsingissä vuonna 2026. Sauma antaa sillalle tilaa liikkua, esimerkiksi kun lämpötila muuttuu.</figcaption></figure>
+
 ### Miksi aine laajenee?
 Mikromalli (hiukkasmalli) selittää lämpölaajenemisen. Kiinteässä aineessa hiukkaset värähtelevät tasapainoasemiensa ympärillä. Kun lämpötila nousee, värähtely voimistuu.
 
@@ -162,7 +164,7 @@ Kappale laajenee kaikkiin suuntiin samassa suhteessa kuin valokuvaa suurennettae
 ### Eri aineiden lämpölaajeneminen
 Eri aineet laajenevat eri tavalla. Kaksoismetalliliuska, jossa kaksi eri metallia on liitetty toisiinsa, taipuu lämmetessään, koska toinen metalli pitenee enemmän. Sellainen liuska avaa ja sulkee virtapiirin vanhanmallisissa termostaateissa.
 
-Nesteet laajenevat yleensä selvästi enemmän kuin kiinteät aineet, ja kaasut vielä paljon enemmän. Nesteen hiukkaset eivät pysy paikoillaan. Niiden väliset vuorovaikutukset ovat heikompia kuin kiinteässä aineessa, joten lämpötilan nousu loitontaa niitä toisistaan enemmän. Kaasun hiukkaset ovat kaukana toisistaan ja lähes vapaita, joten vakiopaineessa kaasun tilavuus kasvaa paljon enemmän. Kaasun tilavuus riippuu myös paineesta. Siihen palataan luvussa *Kaasujen tilanmuutokset ja Boylen laki*. Nestelämpömittari perustuu nesteen laajenemiseen: kun lämpötila nousee, nestepatsas kohoaa ohuessa putkessa.
+Nesteet laajenevat yleensä selvästi enemmän kuin kiinteät aineet, ja kaasut vielä paljon enemmän. Nesteen hiukkaset eivät pysy paikoillaan. Niiden väliset vuorovaikutukset ovat heikompia kuin kiinteässä aineessa, joten lämpötilan nousu vie niitä kauemmas toisistaan kuin kiinteässä aineessa. Kaasun hiukkaset ovat kaukana toisistaan ja lähes vapaita, joten vakiopaineessa kaasun tilavuus kasvaa paljon enemmän. Kaasun tilavuus riippuu myös paineesta. Siihen palataan luvussa *Kaasujen tilanmuutokset ja Boylen laki*. Nestelämpömittari perustuu nesteen laajenemiseen: kun lämpötila nousee, nestepatsas kohoaa ohuessa putkessa.
 
 Vesi on poikkeus. Lämpötilojen $0\,{}^\circ\text{C}$ ja $4\,{}^\circ\text{C}$ välillä se kutistuu lämmetessään, joten sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa. Tihein, 4-asteinen vesi painuu pohjalle. Kylmempi vesi jää pinnalle ja jäätyy. Siksi järvi jäätyy pinnalta alkaen. Pohjalla on talvellakin noin 4-asteista vettä, jossa kalat selviävät.
 

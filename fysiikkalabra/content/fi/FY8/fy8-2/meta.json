@@ -1,0 +1,24 @@
+{
+  "id": "fy8-2",
+  "course": "FY8",
+  "title": "Spektrit paljastavat atomin energiatasot",
+  "goals": [
+    "LOPS FY8: energian kvantittuminen aineen ja säteilyn vuorovaikutuksessa",
+    "Kokeellisesti: spektrin mittaaminen; spektrin muutoksen tarkastelu fluoresenssi-ilmiössä",
+    "Täsmennys: energiatilat ymmärretään elektroniverhon kvantittuneiksi tiloiksi emissio- ja absorptiospektreistä",
+    "Temaattinen yhteys (valinnainen laatikko): kasvihuonekaasujen absorptio ja ilmastonmuutos"
+  ],
+  "prerequisites": [
+    "fy8-1"
+  ],
+  "glossary": [
+    "emissiospektri",
+    "absorptiospektri",
+    "viivaspektri",
+    "energiatila",
+    "fluoresenssi"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

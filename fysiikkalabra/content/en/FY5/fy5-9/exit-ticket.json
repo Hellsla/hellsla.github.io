@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The spring of a mass–spring system is replaced with a spring whose spring constant is four times as large. The mass stays the same. How does the period change?",
+    "a": "The period halves. In the formula $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ the spring constant is in the denominator under the square root, and $\\sqrt{4} = 2$: a stiffer spring pulls the body with a greater force, so it oscillates faster."
+  },
+  {
+    "q": "Where is the acceleration of a body in simple harmonic motion greatest, and where is the speed greatest?",
+    "a": "The acceleration is greatest at the extreme positions, where the displacement and therefore the harmonic force $F = -kx$ are greatest. The speed is greatest at the equilibrium position, where the force and the acceleration are zero and all the energy is kinetic energy."
+  }
+]

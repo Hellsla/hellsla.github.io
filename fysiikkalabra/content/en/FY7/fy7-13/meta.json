@@ -1,0 +1,23 @@
+{
+  "id": "fy7-13",
+  "course": "FY7",
+  "title": "Interference and diffraction of light",
+  "goals": [
+    "LOPS FY7: interference and diffraction of light",
+    "Experimental: determining the wavelength of a laser with a grating",
+    "Clarification: the interference pattern of sources of the same frequency and in the same phase; interference in thin films"
+  ],
+  "prerequisites": [
+    "fy7-10"
+  ],
+  "glossary": [
+    "interferenssi",
+    "diffraktio",
+    "hila",
+    "hilavakio",
+    "kaksoisrako"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

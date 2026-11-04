@@ -1,0 +1,817 @@
+{
+  "intro": "Viisi tehtävää kokoaa moduulin: varatun hiukkasen liikkeen sähkö- ja magneettikentässä, generaattorin ja induktion, sähköenergian siirron ja virtajohtimien välisen voiman, lämpösäteilyn, valon kulun valokuidussa, ohuen kalvon interferenssin sekä valon interferenssin hilassa. Jokaisessa päätät itse, mitkä mallit tilanteeseen sopivat, ja perustelet valintasi.",
+  "tasks": [
+    {
+      "id": "fy7-s1",
+      "title": "Ioni-istutin",
+      "source": "example",
+      "source_note": "Laitteen mitat ja jännitteet ovat keksittyjä mutta samaa suuruusluokkaa kuin pienessä ioni-istuttimessa. Booriatomien massat: AME2020-atomimassataulukko (Wang ym., 2021); boori-10:n osuus luonnon boorista: IUPAC (2013).",
+      "text": "Mikropiirien valmistuksessa piikiekkoon ammutaan boori-ioneja, jotta piin sähkönjohtavuus muuttuu halutulla tavalla. Ioni-istuttimessa ionilähteestä tulevat positiiviset ionit, joiden varaus on yksi alkeisvaraus, kiihdytetään jännitteellä, ne kulkevat nopeusvalitsimen läpi ja ohjataan analysointimagneetin kautta kiekkoon. Magneetin kentässä ionit kulkevat puoliympyrän, ja kiekkoon pääsevät vain ionit, joiden rata osuu kammion seinän rakoon. Luonnon boorista noin $19{,}9\\,\\%$ on isotooppia boori-10 ja loput boori-11:tä. Kiekkoon halutaan vain boori-11-ioneja.\n\nTiedot:\n\n- boori-11-ionin massa $m_{11} = 1{,}8281 \\cdot 10^{-26}\\,\\text{kg}$ ja boori-10-ionin massa $m_{10} = 1{,}6627 \\cdot 10^{-26}\\,\\text{kg}$\n- ionin varaus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$\n- kiihdytysjännite $U = 30{,}0\\,\\text{kV}$; ionien liike-energia ennen kiihdytystä on mitättömän pieni\n- nopeusvalitsimen levyjen etäisyys $d = 2{,}00\\,\\text{cm}$ ja magneettikenttä $B_\\text{s} = 0{,}200\\,\\text{T}$\n- boori-11-ionien radan säde analysointimagneetissa $r = 40{,}0\\,\\text{cm}$.\n\nKuvassa kummankin magneettikentän suunta on paperiin sisään. Painovoiman vaikutus ioneihin on mitättömän pieni.",
+      "figure": "fy7-sovella/fy7-s1-implanter",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 3,
+          "text": "Valitsimen levyjen välinen jännite säädetään niin, että boori-11-ionit kulkevat valitsimen läpi suoraan. Mitkä voimat vaikuttavat valitsimessa suoraan kulkevaan ioniin, mihin suuntiin ne osoittavat ja miten niiden suuruudet suhtautuvat toisiinsa? Kumpi levy on positiivinen? Perustele. Voit havainnollistaa vastaustasi voimakuviolla.",
+          "criteria": [
+            {
+              "text": "Nimeää ioniin vaikuttavat voimat: magneettinen voima $\\overline{F}_\\text{m}$ ja sähköinen voima $\\overline{F}_\\text{s}$. Paino jätetään pois, koska se on mitättömän pieni.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee suunnat ja suuruudet: magneettinen voima on kohtisuorassa nopeutta ja kenttää vastaan ja osoittaa positiiviseen ioniin ylöspäin, sähköinen voima alaspäin, ja voimat ovat yhtä suuret, koska ioni kulkee suoraan tasaisella nopeudella.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Päättelee, että sähkökenttä osoittaa positiiviseen ioniin vaikuttavan sähköisen voiman suuntaan eli alaspäin, joten ylempi levy on positiivinen.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri on boori-11-ionien nopeus kiihdytyksen jälkeen?",
+          "answer": {
+            "value": 725000.0,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee energiaperiaatteella: sähkökentän ioniin tekemä työ $W = eU$ muuttuu ionin liike-energiaksi.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$eU = \\tfrac{1}{2} m_{11} v^2$, josta $v = \\sqrt{\\dfrac{2eU}{m_{11}}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 7{,}25 \\cdot 10^{5}\\,\\text{m/s}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri jännite valitsimen levyjen välille on kytkettävä?",
+          "answer": {
+            "value": 2900,
+            "unit": "V",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$eE = evB_\\text{s}$ ja homogeenisessa kentässä $E = U_\\text{s} : d$, joten $U_\\text{s} = vB_\\text{s}d$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E = vB_\\text{s} \\approx 1{,}45 \\cdot 10^{5}\\,\\text{V/m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$U_\\text{s} \\approx 2{,}90\\,\\text{kV}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri analysointimagneetin magneettikentän on oltava? Jos valitsimen läpi pääsisi samalla nopeudella myös boori-10-ioneja, kuinka kaukana boori-11-ionien raosta ne osuisivat kammion seinään?",
+          "answer": [
+            {
+              "name": "B",
+              "value": 0.207,
+              "unit": "T",
+              "tolerance": 0.02
+            },
+            {
+              "name": "dx",
+              "value": 7.24,
+              "unit": "cm",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Käyttää magneettista voimaa ympyräliikkeen keskeisvoimana: $evB = \\dfrac{mv^2}{r}$, joten samalla nopeudella radan säde on suoraan verrannollinen massaan.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$B = \\dfrac{m_{11}v}{er}$ ja $r_{10} = \\dfrac{m_{10}}{m_{11}}\\,r$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$B \\approx 0{,}207\\,\\text{T}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Ionit osuvat seinään halkaisijan päähän tulokohdasta, joten osumakohtien etäisyys on $2(r - r_{10}) \\approx 7{,}2\\,\\text{cm}$."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Todellisuudessa ionien liike-energia kiihdytyksen jälkeen vaihtelee jopa $10\\,\\%$, koska ionilähteen olot ja kiihdytysjännite vaihtelevat. Insinööri ehdottaa: ”Analysointimagneetti on turha. Kaikki ionit kiihdytetään samalla jännitteellä, joten boori-10-ionit ovat nopeampia eivätkä pääse valitsimen läpi.” Arvioi ehdotusta.",
+          "criteria": [
+            {
+              "text": "Toteaa, että valitsin päästää suoraan läpi jokaisen ionin, jonka nopeus on $E : B_\\text{s}$, sen massasta ja varauksesta riippumatta: se valitsee nopeuden, ei massaa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Laskee, että boori-10-ioni kulkee valitsimen läpi, jos sen liike-energia on $m_{10} : m_{11} \\approx 0{,}91$ täydestä eli noin $9\\,\\%$ pienempi, mikä on mahdollista, kun energia vaihtelee jopa $10\\,\\%$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Ehdotus ei käy: ilman energian vaihtelua insinööri olisi oikeassa, koska täyden kiihdytyksen saanut boori-10-ioni on nopeampi, mutta energian vaihdellessa valitsimen läpi pääsee myös boori-10-ioneja, ja vasta magneetti erottaa samalla nopeudella kulkevat ionit massan mukaan."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy7-2",
+        "transfer": "fy7-2",
+        "math": "fy7-2",
+        "communication": "fy7-2"
+      }
+    },
+    {
+      "id": "fy7-s2",
+      "title": "Napadynamo",
+      "source": "example",
+      "source_note": "Dynamon tiedot ja jännitteen kuvaaja ovat keksittyjä mutta tyypillisiä: polkupyörän dynamovalo on yleensä $6\\,\\text{V}$ ja $3\\,\\text{W}$, ja napadynamossa on usein $28$ magneettinapaa.",
+      "text": "Polkupyörän etupyörän napaan rakennetussa dynamossa pyörän mukana pyörii kestomagneettirengas, jossa on $28$ magneettinapaa vuorotellen pohjois- ja etelänapoina. Paikallaan pysyvässä käämissä on rautasydän, jonka läpi kulkeva magneettivuo vaihtaa suuntaansa aina, kun seuraava napa ohittaa sen. Siksi jännitteessä on $14$ jaksoa jokaista pyörän kierrosta kohti. Pyörän halkaisija renkaineen on $0{,}70\\,\\text{m}$. Dynamoon voidaan kytkeä valo, jonka nimellisjännite on $6{,}0\\,\\text{V}$ ja teho $3{,}0\\,\\text{W}$.\n\nPyöräilijä mittasi dynamon jännitteen oskilloskoopilla, kun valo oli pois päältä ja hän ajoi tasaisella vauhdilla. Kuvaaja on alla.",
+      "figure": "fy7-sovella/fy7-s2-signal",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä kuvaajasta jännitteen taajuus ja tehollinen arvo.",
+          "answer": [
+            {
+              "name": "f",
+              "value": 33.3,
+              "unit": "Hz",
+              "tolerance": 0.02
+            },
+            {
+              "name": "U",
+              "value": 9.9,
+              "unit": "V",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kolme jaksoa kestää $90\\,\\text{ms}$, joten $T = 30\\,\\text{ms}$; huippuarvo $e_0 = 14\\,\\text{V}$ luetaan huipun kohdalta."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$f = \\dfrac{1}{T}$ ja $U = \\dfrac{e_0}{\\sqrt{2}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$f \\approx 33\\,\\text{Hz}$ ja $U \\approx 9{,}9\\,\\text{V}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suurella vauhdilla pyöräilijä ajoi?",
+          "answer": {
+            "value": 18.8,
+            "unit": "km/h",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että pyörä pyörii $14$ kertaa hitaammin kuin jännite vaihtelee, ja että pyörä etenee yhdellä kierroksella kehänsä pituuden $\\pi D$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = \\pi D \\cdot \\dfrac{f}{14}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 5{,}2\\,\\text{m/s} \\approx 19\\,\\text{km/h}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Valo palaa kunnolla, kun dynamon jännitteen tehollinen arvo on vähintään valon nimellisjännite. Arvioi pienin vauhti, jolla näin on, kun oletetaan, että valo saa saman jännitteen kuin tyhjäkäynnillä mitattiin.",
+          "answer": {
+            "value": 11.4,
+            "unit": "km/h",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että jännitteen huippuarvo on suoraan verrannollinen pyörimistaajuuteen ja siis vauhtiin, koska magneetit ohittavat käämin sitä nopeammin ja vuo muuttuu sitä nopeammin, mitä kovempaa ajetaan.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dfrac{v_\\text{min}}{v} = \\dfrac{U_\\text{valo}}{U}$, josta $v_\\text{min} = v \\cdot \\dfrac{U_\\text{valo}}{U}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{min} \\approx 3{,}2\\,\\text{m/s} \\approx 11\\,\\text{km/h}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Pyöräilijä väittää: ”Kun valo on päällä, polkeminen on raskaampaa, vaikka dynamossa mikään ei hankaa toisiinsa. Kun valo on pois päältä, dynamo ei jarruta pyörää lainkaan.” Arvioi väitteen kumpaakin osaa.",
+          "criteria": [
+            {
+              "text": "Selittää, että väitteen ensimmäinen osa pitää paikkansa: kun valo on päällä, käämissä kulkee induktiovirta, jonka magneettikenttä vastustaa sen synnyttävää muutosta eli jarruttaa pyörivää magneettirengasta.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee energian säilymisellä: valon säteilemä energia on peräisin pyöräilijän työstä, joten jokin voima jarruttaa pyörimistä, vaikka mikään ei hankaa.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että väitteen toinen osa ei pidä tarkasti: valon ollessa pois päältä käämissä ei kulje virtaa, mutta muuttuva magneettikenttä synnyttää pyörrevirtoja dynamon metalliosiin, kuten rautasydämeen ja napaan, joten pieni jarrutus jää.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kun valo on päällä, dynamon hyötysuhde on $60\\,\\%$. Kuinka suuren lisävoiman pyöräilijän on voitettava b-kohdan vauhdilla? Onko sillä merkitystä, kun ilmanvastus ja vierimisvastus ovat tällä vauhdilla yhteensä noin $10\\,\\text{N}$?",
+          "answer": {
+            "value": 0.95,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Yhdistää tehon ja voiman: jarruttavan voiman teho $P = Fv$ on dynamon ottama teho, joka on valon teho jaettuna hyötysuhteella.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$F = \\dfrac{P_\\text{valo}}{\\eta v}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 0{,}95\\,\\text{N}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Lisävoima on noin kymmenesosa ilmanvastuksen ja vierimisvastuksen summasta $10\\,\\text{N}$: ero tuntuu, mutta se on pieni."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy7-7",
+        "math": "fy7-7",
+        "transfer": "fy7-7",
+        "concept": "fy7-6",
+        "communication": "fy7-6"
+      }
+    },
+    {
+      "id": "fy7-s3",
+      "title": "Kaivoksen sähköliittymä",
+      "source": "example",
+      "source_note": "Kaivos, johto ja tehot ovat keksittyjä. Alumiinin resistiivisyys ja tiheys ovat taulukkoarvoja.",
+      "text": "Kaivosyhtiö avaa uuden kaivoksen $25\\,\\text{km}$:n päähän lähimmältä sähköasemalta. Kaivokselle siirretään jatkuvasti noin $6{,}0\\,\\text{MW}$:n teho. Sähköasemalta voidaan rakentaa joko $20\\,\\text{kV}$:n johto suoraan kaivokselle tai $110\\,\\text{kV}$:n johto, jonka päähän kaivokselle rakennetaan muuntaja. Muuntaja laskee jännitteen $20\\,\\text{kV}$:iin kaivoksen omaa verkkoa varten.\n\nKummassakin vaihtoehdossa johdossa on kaksi alumiinijohdinta, joiden poikkipinta-ala on $150\\,\\text{mm}^2$. Alumiinin resistiivisyys on $2{,}82 \\cdot 10^{-8}\\,\\Omega\\,\\text{m}$ ja tiheys $2700\\,\\text{kg/m}^3$.\n\nTodelliset voimajohdot ovat kolmivaiheisia, mutta tässä riittää yksinkertainen malli: sähköasema lähettää tehon $6{,}0\\,\\text{MW}$ johtoon, teho lasketaan kuten tasavirralla, jännitteet ja virrat ovat tehollisia arvoja, ja muuntaja on ideaalinen.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri teho johdossa muuttuu lämmöksi, jos käytetään $20\\,\\text{kV}$:n johtoa? Kuinka monta prosenttia se on siirrettävästä tehosta?",
+          "answer": {
+            "value": 846,
+            "unit": "kW",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Laskee johtimien resistanssin koko virtapiirin pituudesta $2 \\cdot 25\\,\\text{km}$: $R = \\rho\\dfrac{l}{A} \\approx 9{,}4\\,\\Omega$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$I = \\dfrac{P}{U}$ ja $P_\\text{h} = RI^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P_\\text{h} \\approx 850\\,\\text{kW}$ eli noin $14\\,\\%$ siirrettävästä tehosta"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri häviöteho on, jos käytetään $110\\,\\text{kV}$:n johtoa?",
+          "answer": {
+            "value": 28.0,
+            "unit": "kW",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että sama teho kulkee $5{,}5$-kertaisella jännitteellä $5{,}5$ kertaa pienemmällä virralla, joten häviö pienenee $5{,}5^2 \\approx 30$-kertaisesti.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P_\\text{h} = R\\left(\\dfrac{P}{U}\\right)^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P_\\text{h} \\approx 28\\,\\text{kW}$ eli noin $0{,}5\\,\\%$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kaivoksen laitteet toimivat oikein, kun verkon jännite poikkeaa nimellisarvosta $20\\,\\text{kV}$ enintään $10\\,\\%$. Kuinka suuri jännite jää $20\\,\\text{kV}$:n johdon kaivoksen puoleiseen päähän? Kelpaako se?",
+          "answer": {
+            "value": 17.2,
+            "unit": "kV",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että osa siirtojännitteestä jää johtimien resistanssin yli: jännitehäviö on $RI$, ja kaivokselle jää siirtojännitteen ja jännitehäviön erotus.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$U_\\text{k} = U - RI$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "$U_\\text{k} \\approx 17{,}2\\,\\text{kV}$ on noin $14\\,\\%$ nimellisarvoa pienempi, joten se ei kelpaa; $110\\,\\text{kV}$:n johdossa jännitehäviö on vain noin $0{,}5\\,\\text{kV}$ eli $0{,}5\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Kunnanvaltuutettu ehdottaa: ”Rakennetaan halvempi $20\\,\\text{kV}$:n johto ilman muuntajaa ja tehdään johtimista paksumpia, niin häviöt saadaan yhtä pieniksi kuin $110\\,\\text{kV}$:n johdolla.” Arvioi ehdotusta.",
+          "criteria": [
+            {
+              "text": "Laskee, että resistanssin on oltava noin $30$ kertaa pienempi, joten poikkipinta-alan on oltava noin $4500\\,\\text{mm}^2$, mikä vastaa noin $7{,}6\\,\\text{cm}$:n paksuista umpinaista johdinta.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "text": "Arvioi alumiinin määrän: johtimien massa kasvaisi noin $20\\,\\text{t}$:sta noin $610\\,\\text{t}$:iin.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Selittää, miksi jännitteen nostaminen on tehokkaampaa: häviö riippuu virran neliöstä ja virta pienenee samassa suhteessa kuin jännite kasvaa, mutta paksumpi johdin pienentää häviötä vain samassa suhteessa kuin poikkipinta-ala kasvaa.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Ehdotus toimisi periaatteessa, mutta johto olisi valtavan raskas ja kallis. Siksi pitkät siirrot tehdään suurella jännitteellä."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 4,
+          "text": "Johdon kaksi johdinta kulkevat pylväissä rinnakkain $1{,}5\\,\\text{m}$:n etäisyydellä toisistaan. Vetävätkö johtimet toisiaan puoleensa vai hylkivätkö ne toisiaan? Kuinka suuri voima kohdistuu johtimen jokaiseen metriin $20\\,\\text{kV}$:n johdossa normaalikäytössä ja oikosulussa lähellä sähköasemaa, kun virta nousee hetkeksi $8{,}0\\,\\text{kA}$:iin? Onko voimalla merkitystä? Tyhjiön permeabiliteetti on $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$.",
+          "answer": [
+            {
+              "name": "F",
+              "value": 0.012,
+              "unit": "N/m",
+              "tolerance": 0.03
+            },
+            {
+              "name": "Fk",
+              "value": 8.5,
+              "unit": "N/m",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Perustelee, että johtimissa kulkee yhtä suuri virta vastakkaisiin suuntiin, koska virta palaa sähköasemalle toista johdinta pitkin, ja että vastakkaissuuntaiset virrat hylkivät toisiaan.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Toisen johtimen magneettikenttä $B = \\dfrac{\\mu_0 I}{2\\pi r}$ ja voima $F = IlB$, joten $\\dfrac{F}{l} = \\dfrac{\\mu_0 I^2}{2\\pi r}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Normaalikäytössä $\\dfrac{F}{l} \\approx 0{,}012\\,\\text{N/m}$ ja oikosulussa noin $8{,}5\\,\\text{N/m}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Vertaa johtimen painoon, noin $4{,}0\\,\\text{N}$ metriä kohti: normaalikäytössä voima on mitätön, mutta oikosulussa noin kaksinkertainen painoon nähden, joten johtimet heilahtavat erilleen ja voivat lyödä yhteen."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy7-8",
+        "math": "fy7-8",
+        "concept": "fy7-8",
+        "communication": "fy7-8"
+      }
+    },
+    {
+      "id": "fy7-s4",
+      "title": "Valssaamon pyrometri",
+      "source": "model",
+      "source_note": "Spektri on laskettu mustan kappaleen säteilyn mallista. Teräksen, kuidun ja termoparin tiedot ovat keksittyjä esimerkkejä.",
+      "text": "Terästehtaan kuumavalssaamossa hehkuva teräsaihio litistetään levyksi. Aihion lämpötilaa seurataan pyrometrillä, joka mittaa aihiosta tulevan säteilyn spektriä aallonpituuksilla noin $0{,}5$–$2{,}5\\,\\mu\\text{m}$ koskematta aihioon. Valo kulkee valssien lähellä olevan suojaikkunan läpi ja johdetaan valokuidulla suojattuun mittalaitteeseen, koska mittalaite ei kestä kuumuutta.\n\nKuvassa on aihion lähettämän säteilyn spektri laajemmalla aallonpituusalueella, kun aihio oletetaan mustaksi kappaleeksi.\n\nTiedot:\n\n- vakio $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$\n- kuidun ytimen taitekerroin $1{,}44$ ja kuoren $1{,}42$, ilman $1{,}00$\n- suojaikkunan lasin taitekerroin $1{,}50$; ikkunan pinnalla on ohut magnesiumfluoridikalvo, jonka taitekerroin on $1{,}38$.\n\nOletetaan, että taitekertoimet ovat samat kaikilla aallonpituuksilla.",
+      "figure": "fy7-sovella/fy7-s4-spectrum",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä aihion pinnan lämpötila celsiusasteina.",
+          "answer": {
+            "value": 1176,
+            "unit": "°C",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Huippu on ruudukon viivalla: $\\lambda_\\text{max} = 2{,}0\\,\\mu\\text{m}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\lambda_\\text{max} T = b$, josta $T = \\dfrac{b}{\\lambda_\\text{max}}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T \\approx 1450\\,\\text{K}$ eli noin $1180\\,{}^\\circ\\text{C}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 3,
+          "text": "Valssaaja ihmettelee: ”Kuvaajan mukaan aihio säteilee melkein kaiken infrapunana. Miksi se sitten hehkuu oranssinpunaisena?” Selitä.",
+          "criteria": [
+            {
+              "text": "Selittää, että spektri on jatkuva: pieni osa säteilystä on näkyvän valon alueella, vaikka huippu on infrapuna-alueella.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että näkyvällä alueella intensiteetti kasvaa aallonpituuden kasvaessa, joten punaista ja oranssia valoa on paljon enemmän kuin sinistä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Toteaa, että kuuma aihio säteilee niin suurella teholla, että pienikin näkyvä osuus riittää silmälle; huoneenlämpöinen kappale ei hehku, koska sen spektrissä näkyvää valoa ei käytännössä ole.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuidun päähän osuva valo jatkaa kuidussa vain, jos se heijastuu kokonaan ytimen ja kuoren rajapinnasta. Kuinka suuri on tämän rajapinnan rajakulma? Kuinka suuri saa olla valon tulokulma ilmasta kuidun päätypinnalle?",
+          "answer": [
+            {
+              "name": "ar",
+              "value": 80.4,
+              "unit": "°",
+              "tolerance": 0.01
+            },
+            {
+              "name": "th",
+              "value": 13.8,
+              "unit": "°",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Hahmottaa kahden rajapinnan geometrian: päätypinnalla valo taittuu kulmaan $\\beta$, ja koska päätypinta on kohtisuorassa ytimen sivupintaa vastaan, sivupinnan tulokulma on $90^\\circ - \\beta$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$ ja $1{,}00 \\cdot \\sin\\theta = n_1\\sin\\beta$, missä $\\beta = 90^\\circ - \\alpha_\\text{r}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\beta \\approx 9{,}56^\\circ$ ja $\\sin\\theta \\approx 0{,}239$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\alpha_\\text{r} \\approx 80{,}4^\\circ$ ja $\\theta \\approx 13{,}8^\\circ$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Samasta aihiosta mitattiin sen sisään porattuun reikään työnnetyllä termoparilla lämpötila $1210\\,{}^\\circ\\text{C}$. Työnjohtaja epäilee, että pyrometri näyttää väärin. Arvioi, onko a-kohdan tulos ristiriidassa termoparin lukeman kanssa ja mistä ero voi johtua.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Huippu on loiva, joten sen paikan voi lukea noin $\\pm 0{,}05\\,\\mu\\text{m}$:n tarkkuudella; se vastaa lämpötilassa noin $\\pm 36\\,\\text{K}$."
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Pinta jäähtyy säteilemällä sekä valssien ja ilman vaikutuksesta nopeammin kuin aihion sisäosa, jota termopari mittaa, joten pinta voi todella olla viileämpi."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Teräksen ja sen pinnan hilsekerroksen säteilykyky riippuu aallonpituudesta, joten spektrin muoto ja huipun paikka poikkeavat mustan kappaleen spektristä, ja mallin antama lämpötila on vain likimääräinen. Pelkkä mustaa kappaletta pienempi säteily, joka on joka aallonpituudella sama osuus, ei siirtäisi huippua."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Ero, noin $34\\,\\text{K}$, on lukutarkkuuden rajoissa ja selittyy myös pinnan jäähtymisellä, joten pyrometrin ei voi sanoa näyttävän väärin."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "calc",
+          "points": 3,
+          "text": "Suojaikkunan kalvo on suunniteltu niin, että ikkuna heijastaa mahdollisimman vähän spektrin huipun aallonpituudella $2{,}0\\,\\mu\\text{m}$, kun valo tulee kohtisuoraan. Kuinka paksu on ohuin kalvo, joka toimii näin? Asentaja huomaa, että ikkunasta heijastuu päivänvalossa vihertävää valoa, ja epäilee kalvon olevan väärä. Arvioi epäilyä.",
+          "answer": {
+            "value": 362,
+            "unit": "nm",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että kumpikin heijastus, ilmasta kalvoon ja kalvosta lasiin, tapahtuu suuremman taitekertoimen ainetta vasten, joten käännökset kumoavat toisensa ja heijastuneet aallot heikentävät toisiaan, kun $2nd = (k + \\tfrac{1}{2})\\lambda$; ohuimmalla kalvolla $k = 0$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d = \\dfrac{\\lambda}{4n} \\approx 362\\,\\text{nm} \\approx 0{,}36\\,\\mu\\text{m}$"
+            },
+            {
+              "text": "Selittää vihreän heijastuksen: matkaero $2nd = 1000\\,\\text{nm}$ on kaksi kertaa $500\\,\\text{nm}$, joten vihreä valo vahvistuu heijastuksessa ($2nd = k\\lambda$, $k = 2$). Kalvo ei siis ole väärä, vaan se on suunniteltu infrapunalle.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy7-9",
+        "math": "fy7-9",
+        "concept": "fy7-9",
+        "communication": "fy7-9",
+        "transfer": "fy7-12",
+        "experiment": "fy7-9"
+      }
+    },
+    {
+      "id": "fy7-s5",
+      "title": "Vetylampun spektri",
+      "source": "simulated",
+      "source_note": "Aallonpituudet: NIST Atomic Spectra Database (2024), aallonpituudet ilmassa. Kulmat on laskettu valon interferenssin mallista keksitylle hilalle ja pyöristetty goniometrin lukematarkkuuteen $0{,}1^\\circ$, joten niissä on lukematarkkuuden mukaista vaihtelua.",
+      "text": "Opiskelijaryhmä tutki vetylampun valoa hilaspektrometrillä. Valo kulkee kapean raon ja linssin kautta kohtisuoraan hilaan, ja maksimien suunnat mitataan kääntyvällä kiikarilla. Hilan viivatiheys oli merkitty laitteeseen, mutta merkintä oli kulunut lukukelvottomaksi. Ryhmä mittasi vedyn neljän spektriviivan maksimien suunnat $\\theta$ tulevan valon suuntaan nähden. Viivojen aallonpituudet $\\lambda$ ovat taulukkokirjasta.\n\n| viiva | $\\lambda\\ (\\text{nm})$ | kertaluku | $\\theta$ |\n|---|---|---|---|\n| punainen | $656{,}28$ | $1$ | $23{,}2^\\circ$ |\n| sinivihreä | $486{,}13$ | $1$ | $17{,}0^\\circ$ |\n| sininen | $434{,}05$ | $1$ | $15{,}1^\\circ$ |\n| violetti | $410{,}17$ | $1$ | $14{,}2^\\circ$ |\n| punainen | $656{,}28$ | $2$ | $52{,}0^\\circ$ |\n| sinivihreä | $486{,}13$ | $2$ | $35{,}7^\\circ$ |\n\nRyhmä huomasi spektrissä myös keltaisen viivan, joka ei kuulu vedylle. Sen ensimmäisen kertaluvun maksimi oli kulmassa $20{,}7^\\circ$. Goniometrin lukematarkkuus on $0{,}1^\\circ$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "Muodosta mittauksista kuvaaja, jonka kaikkiin kuuteen pisteeseen sopii mallin mukaan sama origon kautta kulkeva suora.",
+          "criteria": [
+            {
+              "text": "Perustelee kuvaajan suureet maksimien ehdosta $d\\sin\\theta = k\\lambda$: kun vaaka-akselilla on $k\\lambda$ ja pystyakselilla $\\sin\\theta$, molempien kertalukujen pisteet ovat samalla suoralla, jonka kulmakerroin on $\\tfrac{1}{d}$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Kulmien sinit ja tulot $k\\lambda$ on laskettu, esimerkiksi toisen kertaluvun punaiselle viivalle $\\sin 52{,}0^\\circ \\approx 0{,}788$ ja $k\\lambda \\approx 1313\\,\\text{nm}$."
+            },
+            {
+              "key": "graph_axes",
+              "points": 1
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "Origon kautta kulkeva suora sopii kaikkiin kuuteen pisteeseen."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä kuvaajasta hilan viivatiheys eli viivojen lukumäärä millimetrillä.",
+          "answer": {
+            "value": 600,
+            "unit": "1/mm",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kulmakerroin $\\approx 6{,}00 \\cdot 10^{-4}\\,\\tfrac{1}{\\text{nm}}$ on luettu suoran pisteestä kaukana origosta, esimerkiksi $(1300\\,\\text{nm};\\ 0{,}780)$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Kulmakerroin on $\\tfrac{1}{d}$, joten $d = \\tfrac{1}{\\text{kulmakerroin}}$, ja viivatiheys on $1\\,\\text{mm} : d$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d \\approx 1{,}67\\,\\mu\\text{m}$, joten millimetrillä on noin $600$ viivaa."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri on keltaisen viivan aallonpituus?",
+          "answer": {
+            "value": 589,
+            "unit": "nm",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\lambda = d\\sin\\theta$, kun $k = 1$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\lambda = 1667\\,\\text{nm} \\cdot \\sin 20{,}7^\\circ$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\lambda \\approx 589\\,\\text{nm}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Taulukkokirjan mukaan heliumin keltainen viiva on aallonpituudella $587{,}56\\,\\text{nm}$ ja natriumin keltaiset viivat aallonpituuksilla $588{,}99\\,\\text{nm}$ ja $589{,}59\\,\\text{nm}$. Ryhmä päättelee, että lampussa on natriumia epäpuhtautena. Arvioi päätelmää. Miten mittausta voisi parantaa, jotta heliumin ja natriumin voisi erottaa?",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Lukematarkkuus $0{,}1^\\circ$ vastaa ensimmäisessä kertaluvussa aallonpituudessa noin $\\pm 3\\,\\text{nm}$:n epävarmuutta."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Tulos sopii natriumiin mutta myös heliumiin, koska niiden ero, noin $1{,}4\\,\\text{nm}$, on epävarmuutta pienempi: päätelmä ei ole perusteltu tällä mittauksella."
+            },
+            {
+              "text": "Ehdottaa perusteltua parannusta: toisessa kertaluvussa $\\sin\\theta = \\dfrac{k\\lambda}{d}$ muuttuu aallonpituuden mukana kaksinkertaisesti ja kulmaero kasvaa noin $0{,}14^\\circ$:een, mutta se on vain hieman lukematarkkuutta suurempi, joten tarvitaan myös tarkempi goniometri tai tiheämpi hila.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Opiskelija huomauttaa: ”Lasiprismassa violetti valo poikkeaa suunnastaan eniten, mutta hilassa punainen. Toinen havainnoista on varmasti väärin.” Arvioi väitettä.",
+          "criteria": [
+            {
+              "text": "Selittää, että hilassa maksimi syntyy suuntaan, jossa vierekkäisistä raoista tulevien aaltojen matkaero on aallonpituuden monikerta; pidempi aallonpituus vaatii suuremman kulman, joten punainen poikkeaa eniten.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että prismassa valo taittuu ja lasin taitekerroin on violetille valolle suurempi kuin punaiselle, joten violetti taittuu eniten.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä: kumpikin havainto on oikein, koska värit erottuvat eri ilmiöiden vuoksi, hilassa interferenssin ja prismassa taittumisen."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy7-13",
+        "math": "fy7-13",
+        "graph": "fy7-13",
+        "experiment": "fy7-13",
+        "concept": "fy7-11",
+        "communication": "fy7-13"
+      }
+    }
+  ]
+}

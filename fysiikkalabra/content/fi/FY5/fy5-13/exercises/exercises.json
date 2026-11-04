@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy5-13-L1-01",
+      "level": 1,
+      "text": "Kontrabasson matalimman kielen värähtelevä osa on $1{,}05\\,\\text{m}$ pitkä, ja aalto etenee kielessä nopeudella $86{,}1\\,\\text{m/s}$. Kieli on kiinni kummastakin päästä. Mikä on kielen perustaajuus?",
+      "answer": 41.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L1-02",
+      "level": 1,
+      "text": "Kouluprojektissa tehdään molemmista päistä avoin pilli muoviputkesta, jonka pituus on $0{,}330\\,\\text{m}$. Mikä on putken ilmapatsaan perustaajuus? Käytä äänen nopeutena ilmassa $340\\,\\text{m/s}$.",
+      "answer": 515.151515,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L1-03",
+      "level": 1,
+      "text": "Kirkkourkujen suurin pilli on yläpäästään suljettu, ja sen pituus on $2{,}60\\,\\text{m}$. Mikä on pillin perustaajuus? Käytä äänen nopeutena ilmassa $340\\,\\text{m/s}$.",
+      "answer": 32.692308,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L1-04",
+      "level": 1,
+      "text": "Liikuntatunnilla seinään kiinnitettyä pitkää narua heilutetaan niin, että siihen syntyy seisova aalto. Kahden vierekkäisen solmun etäisyydeksi mitataan $0{,}35\\,\\text{m}$. Mikä on narussa etenevien aaltojen aallonpituus?",
+      "answer": 0.7,
+      "unit": "m",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L1-05",
+      "level": 1,
+      "text": "Sellon G-kielen perustaajuus on $98{,}0\\,\\text{Hz}$. Mikä on kielen neljäs ominaistaajuus eli taajuus, jolla kieleen mahtuu neljä kupua?",
+      "answer": 392.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-13-L2-01",
+      "level": 2,
+      "text": "Kitaran kielen värähtelevä osa on $0{,}650\\,\\text{m}$ pitkä. Kun kitaristi kiristää kieltä virityskoneistolla, aallon nopeus kielessä kasvaa $141{,}0\\,\\text{m/s}$:sta $148{,}0\\,\\text{m/s}$:iin. Kuinka monta hertsiä kielen perustaajuus nousee?",
+      "answer": 5.384615,
+      "unit": "Hz",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy5-13-L2-02",
+      "level": 2,
+      "text": "Äänen nopeutta mitataan resonanssiputkella. Pystysuoran putken alaosassa on vettä, ja putken yläpään yllä soi äänirauta, jonka taajuus on $440\\,\\text{Hz}$. Kun vedenpintaa lasketaan, ääni voimistuu ensimmäisen kerran, kun ilmapatsas veden pinnasta putken suulle on $19{,}3\\,\\text{cm}$ pitkä. Veden pinta toimii putken suljettuna päänä. Mikä on mittauksen perusteella äänen nopeus ilmassa?",
+      "answer": 339.68,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L2-03",
+      "level": 2,
+      "text": "Molemmista päistä avoimen putken kolmas ominaistaajuus on $1530\\,\\text{Hz}$. Kuinka pitkä putki on? Käytä äänen nopeutena ilmassa $340\\,\\text{m/s}$. Anna vastaus senttimetreinä.",
+      "answer": 33.333333,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L2-04",
+      "level": 2,
+      "text": "Kuvassa täryttäjä värähtelee taajuudella $100\\,\\text{Hz}$, ja täryttäjän ja väkipyörän välinen naru värähtelee seisovana aaltona. Täryttäjän ja väkipyörän kohdat ovat solmuja. Mikä on aallon nopeus narussa? Lue tarvittavat tiedot kuvasta.",
+      "figure": "fy5-13/kuvio-tehtava",
+      "answer": 60.0,
+      "unit": "m/s",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-13-L3-01",
+      "level": 3,
+      "text": "Molemmista päistä avoimen urkupillin perustaajuus on $262\\,\\text{Hz}$. Urkujen rakentaja sulkee pillin yläpään tulpalla. Mikä on pillin uusi perustaajuus? Pillin pituus ja ilman lämpötila eivät muutu.",
+      "answer": 131.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L3-02",
+      "level": 3,
+      "text": "Kahdesta päästä kiinnitettyä kieltä herätetään säädettävän taajuuden täryttäjällä. Taajuutta nostettaessa kieli resonoi voimakkaasti taajuudella $330\\,\\text{Hz}$ ja seuraavan kerran taajuudella $440\\,\\text{Hz}$, mutta ei millään taajuudella niiden välillä. Mikä on kielen perustaajuus?",
+      "answer": 110,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L3-03",
+      "level": 3,
+      "text": "Toisesta päästä suljetun putken suun lähellä soi kaiutin, jonka taajuutta muutetaan. Putki resonoi taajuuksilla $510\\,\\text{Hz}$ ja $850\\,\\text{Hz}$, mutta ei millään taajuudella niiden välillä. Kuinka pitkä putki on? Käytä äänen nopeutena ilmassa $340\\,\\text{m/s}$.",
+      "answer": 0.5,
+      "unit": "m",
+      "tolerance": 0.02
+    }
+  ]
+}

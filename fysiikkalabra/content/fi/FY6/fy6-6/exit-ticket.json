@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Laitteen arvokilvessä lukee $230\\,\\text{V}$, $1150\\,\\text{W}$. Kuinka suuri virta laitteen läpi kulkee, kun se on kytketty verkkoon ja toimii nimellisteholla?",
+    "a": "Teho on $P = UI$, joten virta on $I = P : U = 1150\\,\\text{W} : 230\\,\\text{V} = 5{,}0\\,\\text{A}$."
+  },
+  {
+    "q": "Vastuksen läpi kulkeva virta kasvaa kaksinkertaiseksi, ja vastuksen resistanssi pysyy samana. Kuinka moninkertaiseksi vastuksen teho kasvaa?",
+    "a": "Joulen lain mukaan $P = RI^2$. Kun virta kaksinkertaistuu, teho kasvaa $2^2 = 4$-kertaiseksi."
+  }
+]

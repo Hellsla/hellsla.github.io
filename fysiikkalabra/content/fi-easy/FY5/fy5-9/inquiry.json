@@ -1,0 +1,669 @@
+{
+  "version": 1,
+  "contribution": "Harmoninen voima saa kappaleen harmoniseen värähtelyyn. Jaksonajan riippuvuustekijät tutkitaan simulaatiolla, joka laskee liikkeen askel askeleelta. Tuloksena saadaan kaavat $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ ja pienten heilahdusten $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$. Lisäksi opitaan, että energia $E = \\tfrac{1}{2}kA^2$ säilyy värähtelyssä, ja mitataan heilurin jaksonaika epävarmuuksineen.",
+  "learn": [
+    "tunnistamaan harmonisen värähtelyn ja selittämään, mitkä suureet vaikuttavat jaksonaikaan.",
+    "laskemaan jousen ja kappaleen sekä heilurin jaksonajan ja taajuuden.",
+    "määrittämään heilurin jaksonajan mittauksesta ja arvioimaan mittauksen epävarmuuden."
+  ],
+  "prior": [
+    "Jaksonaika $T$ on yhden jakson kesto. Taajuus on $f = \\tfrac{1}{T}$. Amplitudi on suurin poikkeama tasapainoasemasta (luku *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi*)",
+    "Harmoninen voima $F = -kx$ osoittaa kohti tasapainoasemaa. Jousen potentiaalienergia on $\\tfrac{1}{2}kx^2$ (luku *Jousivoima ja jousen energia*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Leikkipuistossa on kaksi vierekkäistä keinua, joiden ketjut ovat yhtä pitkät. Toisessa keinuu pieni lapsi ja toisessa hänen isänsä. Hiekkalaatikon reunalla on lelu, jossa puinen lintu pomppii jousen varassa ylös ja alas. Lapsi vetää lintua välillä vähän ja välillä paljon. Jokainen näistä värähtelee edestakaisin omassa tahdissaan.",
+      "question": "Mitkä suureet määräävät, kuinka kauan yksi edestakainen värähdys kestää? Mitkä suureet eivät vaikuta siihen lainkaan?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Kertaa: harmoninen voima",
+      "optional": true,
+      "prompt": "Kitkattomalla alustalla oleva kappale on kiinnitetty jouseen, jonka jousivakio on $40\\,\\text{N/m}$. Kappale vedetään $5{,}0\\,\\text{cm}$ oikealle tasapainoasemasta ja pidetään paikallaan. Mihin suuntaan jousen voima osoittaa? Kuinka suuri se on?",
+      "choices": [
+        {
+          "text": "Vasemmalle, kohti tasapainoasemaa, $2{,}0\\,\\text{N}$.",
+          "correct": true,
+          "feedback": "Oikein. Harmoninen voima on $F = -kx$. Sen suuruus on $kx = 40\\,\\text{N/m} \\cdot 0{,}050\\,\\text{m} = 2{,}0\\,\\text{N}$. Miinusmerkki kertoo, että voima osoittaa poikkeamaa vastaan eli kohti tasapainoasemaa (luku *Jousivoima ja jousen energia*). Tänään selvitetään, millaisen liikkeen tämä voima saa aikaan, kun kappale päästetään irti."
+        },
+        {
+          "text": "Oikealle, poikkeaman suuntaan, $2{,}0\\,\\text{N}$.",
+          "feedback": "Suuruus on oikein. Venytetty jousi kuitenkin vetää kappaletta takaisin, eikä se työnnä kappaletta kauemmas. Jousen voima osoittaa aina kohti tasapainoasemaa. Siksi kaavassa $F = -kx$ on miinusmerkki."
+        },
+        {
+          "text": "Vasemmalle, $200\\,\\text{N}$.",
+          "feedback": "Suunta on oikein, mutta poikkeama on sijoitettu senttimetreinä. Jousivakion yksikkö on $\\text{N/m}$, joten poikkeama pitää muuttaa metreiksi: $5{,}0\\,\\text{cm} = 0{,}050\\,\\text{m}$. Silloin voima on $2{,}0\\,\\text{N}$."
+        },
+        {
+          "text": "Voimaa ei ole, koska kappale on levossa.",
+          "feedback": "Kappale on levossa, koska käsi pitää sitä paikallaan. Käden voima ja jousen voima kumoavat toisensa. Venytetty jousi vetää kappaletta koko ajan. Juuri tämä voima panee kappaleen liikkeelle, kun käsi päästää irti."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: suurempi värähdys",
+      "prompt": "Jousen päässä oleva kappale vedetään ensin $5\\,\\text{cm}$:n päähän tasapainoasemasta ja päästetään irti levosta. Sitten se vedetään $10\\,\\text{cm}$:n päähän ja päästetään irti. Alusta on kitkaton. Miten jaksonaika muuttuu, kun amplitudi kaksinkertaistuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Jaksonaika kasvaa, koska kappaleen on kuljettava pidempi matka.",
+          "feedback": "Mallin arvot kumoavat tämän. Jaksonaika on $0{,}993\\,\\text{s}$ sekä $5\\,\\text{cm}$:n että $10\\,\\text{cm}$:n amplitudilla. Matka kyllä kaksinkertaistuu. Myös suurin nopeus kaksinkertaistuu: se kasvaa arvosta $0{,}316\\,\\text{m/s}$ arvoon $0{,}632\\,\\text{m/s}$. Kauempana jousi vetää kaksinkertaisella voimalla."
+        },
+        {
+          "text": "Jaksonaika lyhenee, koska jousen voima on suurempi.",
+          "feedback": "Mallin arvot kumoavat tämän. Jaksonaika pysyy arvossa $0{,}993\\,\\text{s}$. Suurempi voima antaa suuremman nopeuden. Kappaleen pitää kuitenkin kulkea myös kaksinkertainen matka. Nämä kaksi vaikutusta kumoavat toisensa täsmälleen."
+        },
+        {
+          "text": "Jaksonaika pysyy samana.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Jaksonaika on $0{,}993\\,\\text{s}$ kummallakin amplitudilla. Kaksinkertaisella amplitudilla jousi vetää jokaisessa vastaavassa kohdassa kaksinkertaisella voimalla. Suurin nopeus kaksinkertaistuu arvoon $0{,}632\\,\\text{m/s}$. Pidempi matka kuljetaan suuremmalla nopeudella samassa ajassa."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: raskaampi heilurin kuula",
+      "prompt": "Metrin pituisen heilurin $0{,}10\\,\\text{kg}$:n kuula vaihdetaan $1{,}0\\,\\text{kg}$:n kuulaan. Langan pituus ja pieni lähtökulma pysyvät samoina. Ilmanvastus jätetään huomiotta. Miten heilurin jaksonaika muuttuu?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-3",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "Jaksonaika lyhenee, koska raskaampaan kuulaan vaikuttaa suurempi paino, joka vetää kuulan nopeammin alas.",
+          "feedback": "Mallin arvot kumoavat tämän. Jaksonaika on $2{,}010\\,\\text{s}$ kaikilla massoilla. Raskaampaan kuulaan vaikuttaa suurempi voima, mutta sitä on yhtä paljon vaikeampi kiihdyttää. Siksi kiihtyvyys $a = \\tfrac{F}{m}$ on sama, kuten vapaassa pudotuksessa."
+        },
+        {
+          "text": "Jaksonaika kasvaa, koska raskas kuula lähtee hitaasti liikkeelle ja pysähtyy hitaasti.",
+          "feedback": "Mallin arvot kumoavat tämän. Jaksonaika pysyy arvossa $2{,}010\\,\\text{s}$. On totta, että raskas kuula on hitaampi muuttamaan liikettään. Mutta myös palauttava voima kasvaa massan mukana. Palauttava voima on painon radan suuntainen komponentti. Kun molemmat kymmenkertaistuvat, kiihtyvyys ei muutu."
+        },
+        {
+          "text": "Jaksonaika pysyy samana.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Jaksonaika on $2{,}010\\,\\text{s}$ sekä $0{,}10\\,\\text{kg}$:n että $1{,}0\\,\\text{kg}$:n kuulalla. Paino ja hitaus kasvavat samassa suhteessa. Siksi kiihtyvyys ja koko liike pysyvät samoina. Vain energia kymmenkertaistuu."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Valitse värähtelijä, säädä sen suureet ja käynnistä. Seuraa kuvaajasta, kuinka kauan yksi jakso kestää.",
+      "howto": "Valitse *Värähtelijä*: jousi ja kappale tai heiluri. Säädä liukusäätimillä massa ja jousivakio tai pituus. Säädä myös amplitudi tai lähtökulma. Paina sitten *Käynnistä*. Kappale lähtee levosta ääriasennosta. Kuvaaja piirtää paikan $x$ tai kulman $\\alpha$ ajan funktiona. Merkintä $T$ näyttää kahden viimeisimmän saman puolen ääriasennon välin. Kuvaajan yläpuolella näkyvät sekuntikellon aika $t$ ja täysien jaksojen määrä $n$. Kankaan alla oleva palkki näyttää, miten energia jakautuu liike-energiaan $E_\\text{k}$ ja potentiaalienergiaan $E_\\text{p}$. Jousella nuolten pituudet ovat suhteessa kunkin suureen suurimpaan arvoon liikkeen aikana. Heilurilla nuolet on piirretty samassa mittakaavassa kaikilla asetuksilla, joten pienessä heilahduksessa ne ovat lyhyitä. *Nopeus* muuttaa vain animaation tahtia, ei jaksonaikaa. Kun muutat jotakin arvoa, kappale palaa lähtöasentoon.",
+      "model": "Jousen ja kappaleen alusta on kitkaton. Ainoa liikkeen suuntainen voima on jousen harmoninen voima $F = -kx$. Heiluri on matemaattinen heiluri: pistemäinen kappale massattoman langan varassa, ilman ilmanvastusta. Sen liike lasketaan tarkasta yhtälöstä myös suurilla kulmilla. Pienen kulman likiarvoa ei siis ole käytetty. Vaimenemista ei ole, joten energia säilyy. Jaksonaika, taajuus ja energiat ovat mallin laskemia arvoja, eivät mittauksia.",
+      "calc": "Liike lasketaan pienin aika-askelin. Jokaisella askeleella kiihtyvyys saadaan voimasta: $a = -\\tfrac{k}{m}x$ jouselle ja ratakiihtyvyys $a_\\text{t} = -g\\sin\\alpha$ heilurille. Kiihtyvyydestä päivitetään nopeus ja paikka. Jaksonaika $T$ mitataan liikkeestä: se on aika lähtöhetkestä siihen, kun kappale on taas pysähtynyt samaan ääriasentoon. Sitä ei lasketa jaksonajan kaavasta. Taajuus on $f = \\tfrac{1}{T}$. Energia on jouselle $E = \\tfrac{1}{2}kA^2$ ja heilurille $E = mgl(1 - \\cos\\alpha_0)$, kun potentiaalienergian nollataso on heilurin alimmassa kohdassa. Putoamiskiihtyvyys on $g = 9{,}81\\,\\text{m/s}^2$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: vain amplitudi muuttuu",
+      "intro": "Testaa ennuste 1. Kappaleen massa ja jousivakio pysyvät vakioina. Muuta vain amplitudia. Kirjaa jaksonaika, suurin nopeus ja energia ainakin amplitudeilla $0{,}05\\,\\text{m}$ ja $0{,}10\\,\\text{m}$. Halutessasi kokeile myös amplitudia $0{,}20\\,\\text{m}$. Käynnistä välillä ja katso kuvaajasta, kuinka pitkä jakso on.",
+      "initial": {
+        "tila": "jousi",
+        "m": 0.5,
+        "k": 20,
+        "A": 0.05
+      },
+      "locked": [
+        "tila",
+        "m",
+        "k"
+      ],
+      "vary": "A",
+      "names": {
+        "tila": "värähtelijä",
+        "m": "massa $m$",
+        "k": "jousivakio $k$",
+        "A": "amplitudi $A$",
+        "l": "pituus $l$",
+        "alfa": "lähtökulma $\\alpha_0$"
+      },
+      "units": {
+        "m": "kg",
+        "k": "N/m",
+        "A": "m",
+        "l": "m",
+        "alfa": "°"
+      },
+      "values": {
+        "tila": {
+          "jousi": "jousi ja kappale",
+          "heiluri": "heiluri"
+        }
+      },
+      "measure": [
+        {
+          "key": "T",
+          "label": "T (s)"
+        },
+        {
+          "key": "vmax",
+          "label": "v_max (m/s)"
+        },
+        {
+          "key": "E",
+          "label": "E (J)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: vain massa muuttuu",
+      "intro": "Jousivakio ja amplitudi pysyvät vakioina. Muuta vain kappaleen massaa. Kirjaa jaksonaika ainakin massoilla $0{,}50\\,\\text{kg}$ ja $2{,}00\\,\\text{kg}$. Halutessasi kokeile myös massoja $0{,}20\\,\\text{kg}$ ja $0{,}80\\,\\text{kg}$.",
+      "initial": {
+        "tila": "jousi",
+        "m": 0.5,
+        "k": 20,
+        "A": 0.1
+      },
+      "locked": [
+        "tila",
+        "k",
+        "A"
+      ],
+      "vary": "m",
+      "names": {
+        "tila": "värähtelijä",
+        "m": "massa $m$",
+        "k": "jousivakio $k$",
+        "A": "amplitudi $A$",
+        "l": "pituus $l$",
+        "alfa": "lähtökulma $\\alpha_0$"
+      },
+      "units": {
+        "m": "kg",
+        "k": "N/m",
+        "A": "m",
+        "l": "m",
+        "alfa": "°"
+      },
+      "values": {
+        "tila": {
+          "jousi": "jousi ja kappale",
+          "heiluri": "heiluri"
+        }
+      },
+      "measure": [
+        {
+          "key": "T",
+          "label": "T (s)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "choice",
+        "prompt": "Taulukossasi massa nelinkertaistui arvosta $0{,}50\\,\\text{kg}$ arvoon $2{,}00\\,\\text{kg}$. Miten jaksonaika muuttui?",
+        "choices": [
+          {
+            "text": "Jaksonaika kaksinkertaistui.",
+            "correct": true,
+            "feedback": "Oikein: jaksonaika muuttui arvosta $0{,}993\\,\\text{s}$ arvoon $1{,}987\\,\\text{s}$. Jaksonaika on verrannollinen massan neliöjuureen, ja $\\sqrt{4} = 2$."
+          },
+          {
+            "text": "Jaksonaika nelinkertaistui.",
+            "feedback": "Katso taulukkoa uudelleen. Arvo $0{,}993\\,\\text{s}$ muuttui arvoon $1{,}987\\,\\text{s}$, eli jaksonaika vain kaksinkertaistui. Jaksonaika ei ole suoraan verrannollinen massaan vaan massan neliöjuureen."
+          },
+          {
+            "text": "Jaksonaika puolittui.",
+            "feedback": "Suurempi massa kiihtyy samasta jousen voimasta hitaammin. Siksi jaksonaika kasvaa eikä lyhene: se muuttui arvosta $0{,}993\\,\\text{s}$ arvoon $1{,}987\\,\\text{s}$."
+          }
+        ]
+      }
+    },
+    {
+      "id": "koe-3",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 3: heilurin massa muuttuu",
+      "intro": "Testaa ennuste 2. Heilurin pituus on $1{,}00\\,\\text{m}$ ja lähtökulma $10^\\circ$. Muuta vain kuulan massaa. Kirjaa jaksonaika ja energia ainakin massoilla $0{,}10\\,\\text{kg}$ ja $1{,}00\\,\\text{kg}$.",
+      "initial": {
+        "tila": "heiluri",
+        "m": 0.1,
+        "l": 1,
+        "alfa": 10
+      },
+      "locked": [
+        "tila",
+        "l",
+        "alfa"
+      ],
+      "vary": "m",
+      "names": {
+        "tila": "värähtelijä",
+        "m": "massa $m$",
+        "k": "jousivakio $k$",
+        "A": "amplitudi $A$",
+        "l": "pituus $l$",
+        "alfa": "lähtökulma $\\alpha_0$"
+      },
+      "units": {
+        "m": "kg",
+        "k": "N/m",
+        "A": "m",
+        "l": "m",
+        "alfa": "°"
+      },
+      "values": {
+        "tila": {
+          "jousi": "jousi ja kappale",
+          "heiluri": "heiluri"
+        }
+      },
+      "measure": [
+        {
+          "key": "T",
+          "label": "T (s)"
+        },
+        {
+          "key": "E",
+          "label": "E (J)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-4",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 4: heilurin pituus muuttuu",
+      "intro": "Kuulan massa on $0{,}50\\,\\text{kg}$ ja lähtökulma $10^\\circ$. Muuta vain heilurin pituutta. Kirjaa jaksonaika ainakin pituuksilla $0{,}25\\,\\text{m}$ ja $1{,}00\\,\\text{m}$. Kuinka moninkertaiseksi jaksonaika muuttuu, kun pituus nelinkertaistuu?",
+      "initial": {
+        "tila": "heiluri",
+        "m": 0.5,
+        "l": 0.25,
+        "alfa": 10
+      },
+      "locked": [
+        "tila",
+        "m",
+        "alfa"
+      ],
+      "vary": "l",
+      "names": {
+        "tila": "värähtelijä",
+        "m": "massa $m$",
+        "k": "jousivakio $k$",
+        "A": "amplitudi $A$",
+        "l": "pituus $l$",
+        "alfa": "lähtökulma $\\alpha_0$"
+      },
+      "units": {
+        "m": "kg",
+        "k": "N/m",
+        "A": "m",
+        "l": "m",
+        "alfa": "°"
+      },
+      "values": {
+        "tila": {
+          "jousi": "jousi ja kappale",
+          "heiluri": "heiluri"
+        }
+      },
+      "measure": [
+        {
+          "key": "T",
+          "label": "T (s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-5",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Lisätutkimus: suuret heilahdukset",
+      "optional": true,
+      "intro": "Heilurin pituus on $1{,}00\\,\\text{m}$. Muuta vain lähtökulmaa. Kirjaa jaksonaika esimerkiksi kulmilla $5^\\circ$, $20^\\circ$, $40^\\circ$ ja $60^\\circ$. Vertaa niitä pienen kulman arvoon $2\\pi\\sqrt{\\tfrac{l}{g}} = 2{,}006\\,\\text{s}$. Millä kulmalla ero alkaa näkyä?",
+      "initial": {
+        "tila": "heiluri",
+        "m": 0.5,
+        "l": 1,
+        "alfa": 5
+      },
+      "locked": [
+        "tila",
+        "m",
+        "l"
+      ],
+      "vary": "alfa",
+      "names": {
+        "tila": "värähtelijä",
+        "m": "massa $m$",
+        "k": "jousivakio $k$",
+        "A": "amplitudi $A$",
+        "l": "pituus $l$",
+        "alfa": "lähtökulma $\\alpha_0$"
+      },
+      "units": {
+        "m": "kg",
+        "k": "N/m",
+        "A": "m",
+        "l": "m",
+        "alfa": "°"
+      },
+      "values": {
+        "tila": {
+          "jousi": "jousi ja kappale",
+          "heiluri": "heiluri"
+        }
+      },
+      "measure": [
+        {
+          "key": "T",
+          "label": "T (s)"
+        }
+      ],
+      "min": 2,
+      "question": {
+        "type": "explain",
+        "prompt": "Mitä taulukkosi kertoo heilurin jaksonajasta suurilla lähtökulmilla? Miksi jaksonaika kasvaa suurilla kulmilla? Milloin kaavaa $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ voi käyttää?",
+        "model": "Pienillä kulmilla jaksonaika on lähes sama: $5^\\circ$:lla $2{,}007\\,\\text{s}$ ja $10^\\circ$:lla $2{,}010\\,\\text{s}$. Ne ovat alle $0{,}2\\,\\%$ suurempia kuin kaavan arvo $2{,}006\\,\\text{s}$. Suurilla kulmilla jaksonaika kasvaa: $20^\\circ$:lla $2{,}021\\,\\text{s}$, $40^\\circ$:lla $2{,}069\\,\\text{s}$ ja $60^\\circ$:lla $2{,}153\\,\\text{s}$. Viimeinen on noin $7\\,\\%$ suurempi kuin kaavan arvo. Palauttava voima $mg\\sin\\alpha$ jää suurilla kulmilla pienemmäksi kuin harmonisessa mallissa. Siksi heiluri palaa hitaammin. Kaavaa voi käyttää, kun heilahdukset ovat pieniä, noin alle $10^\\circ$. Arvot ovat mallin laskemia.",
+        "criteria": [
+          "Vertasin jaksonaikoja pienillä ja suurilla kulmilla luvuin.",
+          "Selitin eron sillä, että $\\sin\\alpha$ jää pienemmäksi kuin kulma radiaaneina.",
+          "Kerroin, että kaava pätee pienillä heilahduksilla."
+        ]
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: mistä jaksonaika riippuu?",
+      "after": [
+        "koe-1",
+        "koe-2",
+        "koe-3",
+        "koe-4"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: mitkä suureet muuttivat jousen ja kappaleen jaksonaikaa ja mitkä eivät? Entä heilurin jaksonaikaa? Kuinka moninkertaiseksi jaksonaika muuttui, kun massa tai pituus nelinkertaistui? Miksi massa vaikuttaa jousella mutta ei heilurilla?",
+      "model": "Jousen ja kappaleen jaksonaika pysyi arvossa $0{,}993\\,\\text{s}$, kun amplitudi kasvoi arvosta $0{,}05\\,\\text{m}$ arvoon $0{,}10\\,\\text{m}$. Suurin nopeus kaksinkertaistui ja energia nelinkertaistui. Kun massa nelinkertaistui arvosta $0{,}50\\,\\text{kg}$ arvoon $2{,}00\\,\\text{kg}$, jaksonaika kaksinkertaistui arvoon $1{,}99\\,\\text{s}$. Heilurin jaksonaika oli $2{,}01\\,\\text{s}$ kaikilla massoilla. Kun pituus nelinkertaistui arvosta $0{,}25\\,\\text{m}$ arvoon $1{,}00\\,\\text{m}$, jaksonaika kaksinkertaistui arvosta $1{,}00\\,\\text{s}$ arvoon $2{,}01\\,\\text{s}$. Jaksonaika on siis verrannollinen massan tai pituuden neliöjuureen. Jousella massa vaikuttaa, koska jousen voima ei kasva massan mukana. Heilurilla palauttava voima on osa painoa, ja se kasvaa massan mukana. Arvot ovat mallin laskemia, ilman kitkaa ja ilmanvastusta.",
+      "criteria": [
+        "Totesin luvuin, että amplitudi ei muuttanut jousen jaksonaikaa eikä massa heilurin jaksonaikaa.",
+        "Totesin, että nelinkertainen massa (jousi) tai pituus (heiluri) kaksinkertaisti jaksonajan.",
+        "Selitin, miksi massa vaikuttaa jousella mutta ei heilurilla.",
+        "Mainitsin, että arvot ovat mallin arvoja ilman kitkaa ja ilmanvastusta."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja kaavoihin $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ ja $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$. Palaa sitten alun kysymykseen. Heilahtavatko lapsi ja isä samassa tahdissa, jos he keinuvat yhtä pitkillä ketjuilla pienin heilahduksin? Mikä määrää puisen linnun pomppimisen tahdin?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "vaimeneminen",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Vaimeneminen"
+      ],
+      "optional": true,
+      "title": "Vaimeneminen"
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "mittaus",
+      "stage": "sovella",
+      "type": "interpret",
+      "title": "Kokeellisesti: heilurin heilahdusajan määrittäminen",
+      "source": "example",
+      "text": "Opiskelija ripusti punnuksen ohueen lankaan. Heilurin pituus kiinnityskohdasta punnuksen painopisteeseen oli $1{,}000\\,\\text{m}$. Hän vei heilurin sivuun noin $5^\\circ$:n kulmaan. Sitten hän mittasi sekuntikellolla kymmenen täyden jakson ajan viisi kertaa. Kello alkoi ja pysähtyi, kun punnus ohitti tasapainoaseman samaan suuntaan liikkuen. Siinä kohdassa punnus liikkuu nopeimmin, ja ohitushetken näkee tarkimmin.\n\n| Mittaus | $10T$ (s) |\n| --- | --- |\n| 1 | $20{,}12$ |\n| 2 | $19{,}94$ |\n| 3 | $20{,}21$ |\n| 4 | $19{,}88$ |\n| 5 | $20{,}05$ |\n\nKäsin ajanoton epävarmuus on noin $0{,}2\\,\\text{s}$, vaikka kello näyttää sadasosat. Kun mitataan kymmenen jaksoa, sama epävarmuus jakautuu kymmenelle jaksolle.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Laske mittausten keskiarvosta heilurin jaksonaika $T$. Vastaa sekunteina.",
+        "answer": 2.004,
+        "unit": "s",
+        "tolerance": 0.01,
+        "hints": [
+          "Taulukossa on kymmenen jakson aika. Mitä sinun pitää laskea ensin? Millä luvulla jaat sen?",
+          "Laske viiden mittauksen keskiarvo ja jaa se kymmenellä.",
+          "Keskiarvo on $\\tfrac{100{,}20\\,\\text{s}}{5} = 20{,}04\\,\\text{s}$."
+        ],
+        "mistakes": [
+          {
+            "value": 20.04,
+            "feedback": "Tämä on kymmenen jakson aika. Yhden jakson aika saadaan jakamalla se kymmenellä."
+          },
+          {
+            "value": 4.008,
+            "feedback": "Jaoit keskiarvon viidellä, eli mittausten määrällä. Taulukon luku on kymmenen jakson aika, joten se jaetaan kymmenellä."
+          }
+        ],
+        "solution": "**Annettu:** heilurin pituus $l = 1{,}000\\,\\text{m}$, kymmenen jakson ajat $20{,}12\\,\\text{s}$, $19{,}94\\,\\text{s}$, $20{,}21\\,\\text{s}$, $19{,}88\\,\\text{s}$ ja $20{,}05\\,\\text{s}$, käsin ajanoton epävarmuus noin $0{,}2\\,\\text{s}$\n\n**Kysytty:** jaksonaika $T$ yksikössä $\\text{s}$\n\n**Periaate:** Toistettujen mittausten keskiarvo pienentää satunnaisen virheen vaikutusta. Kymmenen jakson aika on kymmenen kertaa jaksonaika. Ajanoton epävarmuus koskee vain alku- ja loppuhetkeä. Siksi kymmenen jakson mittaaminen pienentää jaksonajan epävarmuuden kymmenesosaan.\n\n**Kaava:** $\\overline{t}_{10} = \\dfrac{t_1 + t_2 + t_3 + t_4 + t_5}{5}$ ja $T = \\dfrac{\\overline{t}_{10}}{10}$, $\\Delta T = \\dfrac{\\Delta t}{10}$\n\n**Muunnokset:** Ajat ovat sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\overline{t}_{10} = \\dfrac{100{,}20\\,\\text{s}}{5} = 20{,}04\\,\\text{s}$, $T = \\dfrac{20{,}04\\,\\text{s}}{10} = 2{,}004\\,\\text{s}$ ja $\\Delta T = \\dfrac{0{,}2\\,\\text{s}}{10} = 0{,}02\\,\\text{s}$\n\n**Vastaus:** $T = 2{,}004\\,\\text{s}$ eli epävarmuuksineen $T = (2{,}00 \\pm 0{,}02)\\,\\text{s}$. Epävarmuus on sadasosasekunteja, joten tulos ilmoitetaan sadasosien tarkkuudella.\n\n**Järkevyys:** Pienten heilahdusten kaava antaa metrin heilurille jaksonajan $2{,}006\\,\\text{s}$, ja se on mittauksen epävarmuusvälin sisällä. Mittausten hajonta on samaa suuruusluokkaa kuin arvioitu epävarmuus. Puolet vaihteluvälistä on $\\tfrac{20{,}21\\,\\text{s} - 19{,}88\\,\\text{s}}{2} \\approx 0{,}17\\,\\text{s}$."
+      }
+    },
+    {
+      "id": "epavarmuus",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Miksi kymmenen jaksoa?",
+      "prompt": "Toinen opiskelija mittaa saman heilurin yhden jakson ajan. Hänenkin ajanottonsa epävarmuus on noin $0{,}2\\,\\text{s}$. Kuinka suuri on hänen jaksonaikansa epävarmuus verrattuna kymmenen jakson mittaukseen?",
+      "choices": [
+        {
+          "text": "Noin $0{,}2\\,\\text{s}$ eli kymmenkertainen.",
+          "correct": true,
+          "feedback": "Oikein. Ajanoton epävarmuus syntyy kellon käynnistämisestä ja pysäyttämisestä, ei jaksojen määrästä. Yhden jakson mittauksessa koko $0{,}2\\,\\text{s}$ kohdistuu yhteen jaksoon. Se on noin $10\\,\\%$ kahden sekunnin jaksonajasta. Kymmenen jakson mittauksessa epävarmuus jakautuu kymmenelle jaksolle."
+        },
+        {
+          "text": "Sama $0{,}02\\,\\text{s}$, koska kello ja mittaaja ovat samat.",
+          "feedback": "Sama mittaaja tekee saman noin $0{,}2\\,\\text{s}$:n ajanottovirheen sekä yhden että kymmenen jakson mittauksessa. Kymmenen jakson mittauksessa virhe jaetaan kymmenellä. Yhden jakson mittauksessa sitä ei jaeta, joten yhden jakson epävarmuus on noin $0{,}2\\,\\text{s}$."
+        },
+        {
+          "text": "Noin $0{,}01\\,\\text{s}$, koska kello näyttää sadasosasekunnit.",
+          "feedback": "Kellon tarkkuus on $0{,}01\\,\\text{s}$. Käsin ajanotossa reaktioaika on kuitenkin paljon suurempi epävarmuuden lähde. Epävarmuus voi olla suurempi kuin kellon pienin asteikkoväli: noin $0{,}2\\,\\text{s}$ yhtä mittausta kohti."
+        },
+        {
+          "text": "Noin $2\\,\\text{s}$ eli satakertainen.",
+          "feedback": "Epävarmuus ei kasva, kun mitataan vähemmän jaksoja. Yhden jakson mittauksessa ajanoton epävarmuus, noin $0{,}2\\,\\text{s}$, kohdistuu suoraan jaksonaikaan. Kymmenen jakson mittauksessa se pienenee kymmenesosaan jaksoa kohti."
+        }
+      ]
+    },
+    {
+      "id": "putoamiskiihtyvyys",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Putoamiskiihtyvyys heilurista",
+      "optional": true,
+      "prompt": "Laske putoamiskiihtyvyys $g$ edellisen mittauksen tuloksista. Jaksonaika oli $T = 2{,}004\\,\\text{s}$ ja pituus $l = 1{,}000\\,\\text{m}$. Heilahdukset olivat pieniä. Vastaa yksikössä $\\text{m/s}^2$.",
+      "answer": 9.830244,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "hints": [
+        "Kumpaa jaksonajan kaavaa käytät? Mikä kaavan suure pitää nyt ratkaista?",
+        "Korota $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$ toiseen potenssiin ja ratkaise $g$.",
+        "$g = \\dfrac{4\\pi^2 l}{T^2} = \\dfrac{4\\pi^2 \\cdot 1{,}000\\,\\text{m}}{(2{,}004\\,\\text{s})^2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.0983,
+          "feedback": "Sijoitit jaksonajaksi kymmenen jakson ajan $20{,}04\\,\\text{s}$. Kaavaan kuuluu yhden jakson aika $2{,}004\\,\\text{s}$."
+        },
+        {
+          "value": 19.7,
+          "feedback": "Jaksonaika on kaavan nimittäjässä toisessa potenssissa: $g = \\tfrac{4\\pi^2 l}{T^2}$."
+        }
+      ],
+      "solution": "**Annettu:** heilurin pituus $l = 1{,}000\\,\\text{m}$, jaksonaika $T = (2{,}004 \\pm 0{,}02)\\,\\text{s}$, pienet heilahdukset\n\n**Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\\text{m/s}^2$\n\n**Periaate:** Pienillä heilahduksilla heilurin jaksonaika riippuu vain pituudesta ja putoamiskiihtyvyydestä. Kun pituus ja jaksonaika on mitattu, putoamiskiihtyvyys voidaan ratkaista. Lähtökulma noin $5^\\circ$ on niin pieni, että pienen kulman kaavan virhe on alle $0{,}1\\,\\%$.\n\n**Kaava:** $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$, josta $T^2 = \\dfrac{4\\pi^2 l}{g}$ ja $g = \\dfrac{4\\pi^2 l}{T^2}$\n\n**Muunnokset:** Pituus on metreinä ja aika sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $g = \\dfrac{4\\pi^2 \\cdot 1{,}000\\,\\text{m}}{(2{,}004\\,\\text{s})^2} = \\dfrac{39{,}48\\,\\text{m}}{4{,}016\\,\\text{s}^2} = 9{,}830\\,\\text{m/s}^2$\n\n**Vastaus:** $g \\approx 9{,}8\\,\\text{m/s}^2$. Jaksonajan epävarmuus on noin $1\\,\\%$. Koska $T$ on kaavassa toisessa potenssissa, $g$:n epävarmuus on noin $2\\,\\%$. Arvoilla $T = 2{,}024\\,\\text{s}$ ja $T = 1{,}984\\,\\text{s}$ saadaan $9{,}64\\,\\text{m/s}^2$ ja $10{,}03\\,\\text{m/s}^2$. Tulos ilmoitetaan siksi kahdella merkitsevällä numerolla, $g = (9{,}8 \\pm 0{,}2)\\,\\text{m/s}^2$.\n\n**Järkevyys:** Taulukkoarvo $9{,}81\\,\\text{m/s}^2$ on epävarmuusvälin sisällä. Tarkemman tuloksen saa, kun jaksonaika mitataan usealla pituudella. Putoamiskiihtyvyys määritetään silloin $(l, T^2)$-kuvaajan kulmakertoimesta. Sen tekee tutkimus *Putoamiskiihtyvyyden määrittäminen heilurin avulla*."
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija laskee $0{,}80\\,\\text{m}$:n heilurin jaksonajan näin:\n\n$$\\begin{aligned} T &= 2\\pi\\sqrt{\\frac{g}{l}} \\\\ &= 2\\pi\\sqrt{\\frac{9{,}81}{0{,}80}}\\,\\text{s} \\\\ &\\approx 22\\,\\text{s} \\end{aligned}$$\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Pituus ja putoamiskiihtyvyys ovat vaihtaneet paikkaa kaavassa.",
+          "correct": true,
+          "feedback": "Oikein: $T = 2\\pi\\sqrt{\\tfrac{l}{g}} \\approx 1{,}79\\,\\text{s}$. Virheen olisi voinut huomata yksiköistä: $\\sqrt{\\tfrac{\\text{m/s}^2}{\\text{m}}} = \\tfrac{1}{\\text{s}}$, ja se ei ole ajan yksikkö. Myös kokemus auttaa. Alle metrin heiluri heilahtaa noin kahdessa sekunnissa, ei $22\\,\\text{s}$:ssa."
+        },
+        {
+          "text": "Pituus olisi pitänyt muuttaa senttimetreiksi.",
+          "feedback": "Kaavassa käytetään SI-yksiköitä, joten pituus on oikein metreinä. Virhe on kaavassa itsessään. Sijoita yksiköt, niin näet, ettei tulos ole sekunteja."
+        },
+        {
+          "text": "Kaavasta puuttuu heilurin massa.",
+          "feedback": "Matemaattisen heilurin jaksonaika ei riipu massasta. Paino ja hitaus kasvavat samassa suhteessa, ja massa supistuu pois. Virhe on siinä, että $l$ ja $g$ ovat vaihtaneet paikkaa."
+        },
+        {
+          "text": "Kulma olisi pitänyt ottaa huomioon, koska heiluri heilahtaa.",
+          "feedback": "Pienillä heilahduksilla kulma ei vaikuta jaksonaikaan merkittävästi, ja tehtävän heiluri heilahtaa tavallisesti. Virhe on suurempi: $l$ ja $g$ ovat vaihtaneet paikkaa. Sen näkee yksiköistä."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella uuteen tilanteeseen",
+      "prompt": "Avaruusasemalla vaa'at eivät toimi, koska kaikki on painotonta. Astronautin massa mitataan siksi tuolilla, joka värähtelee jousen varassa. Tuolin oma massa on $10{,}0\\,\\text{kg}$ ja jousen jousivakio $1200\\,\\text{N/m}$. Kun astronautti istuu tuolissa, kymmeneen jaksoon kuluu $16{,}6\\,\\text{s}$. Kuinka suuri on astronautin massa? Vastaa kilogrammoina.",
+      "answer": 73.760196,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "hints": [
+        "Miksi jousen jaksonaika toimii painottomuudessakin, vaikka paino ei toimi? Mikä jaksonajan kaavan suure on tuntematon?",
+        "Laske ensin $T$ kymmenen jakson ajasta. Ratkaise sitten kaavasta $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$ värähtelevä kokonaismassa: $m = \\tfrac{kT^2}{4\\pi^2}$.",
+        "Kokonaismassa on $\\dfrac{1200\\,\\text{N/m} \\cdot (1{,}66\\,\\text{s})^2}{4\\pi^2} \\approx 83{,}8\\,\\text{kg}$. Mitä siitä pitää vielä vähentää?"
+      ],
+      "mistakes": [
+        {
+          "value": 83.8,
+          "feedback": "Tämä on tuolin ja astronautin yhteinen massa. Jousen varassa värähtelee myös tuoli, joten sen massa $10{,}0\\,\\text{kg}$ pitää vähentää."
+        },
+        {
+          "value": 8366,
+          "feedback": "Käytit jaksonaikana kymmenen jakson aikaa $16{,}6\\,\\text{s}$. Yhden jakson aika on $1{,}66\\,\\text{s}$."
+        },
+        {
+          "value": 40.5,
+          "feedback": "Jaksonaika on kaavassa $m = \\tfrac{kT^2}{4\\pi^2}$ toisessa potenssissa."
+        }
+      ],
+      "solution": "**Annettu:** tuolin massa $m_\\text{t} = 10{,}0\\,\\text{kg}$, jousivakio $k = 1200\\,\\text{N/m}$, kymmenen jakson aika $t = 16{,}6\\,\\text{s}$\n\n**Kysytty:** astronautin massa $m_\\text{a}$ yksikössä $\\text{kg}$\n\n**Periaate:** Jousen ja kappaleen jaksonaika riippuu massasta eli hitaudesta, ei painosta. Siksi mittaus toimii painottomassa tilassa. Jousen varassa värähtelevät tuoli ja astronautti yhdessä. Ainoa liikkeen suuntainen voima on jousen harmoninen voima.\n\n**Kaava:** $T = \\dfrac{t}{10}$ ja $T = 2\\pi\\sqrt{\\dfrac{m_\\text{t} + m_\\text{a}}{k}}$, josta $m_\\text{t} + m_\\text{a} = \\dfrac{kT^2}{4\\pi^2}$ ja $m_\\text{a} = \\dfrac{kT^2}{4\\pi^2} - m_\\text{t}$\n\n**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $T = \\dfrac{16{,}6\\,\\text{s}}{10} = 1{,}66\\,\\text{s}$ ja $m_\\text{a} = \\dfrac{1200\\,\\text{N/m} \\cdot (1{,}66\\,\\text{s})^2}{4\\pi^2} - 10{,}0\\,\\text{kg} = 83{,}76\\,\\text{kg} - 10{,}0\\,\\text{kg} = 73{,}76\\,\\text{kg}$\n\n**Vastaus:** $73{,}8\\,\\text{kg}$, kolme merkitsevää numeroa kuten ajassa $16{,}6\\,\\text{s}$.\n\n**Järkevyys:** Aikuisen massa on tyypillisesti $60$–$90\\,\\text{kg}$, joten tulos on uskottava. Tarkistus: kokonaismassalla $83{,}76\\,\\text{kg}$ kaava antaa jaksonajaksi $1{,}66\\,\\text{s}$. Raskaampi astronautti saisi tuolin värähtelemään hitaammin."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä kaavaa. Tason 2 tehtävissä ratkaistaan kaavasta jokin muu suure tai verrataan kahta tilannetta. Taso 3 yhdistää kaksi ideaa."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Jousen varassa värähtelevä kappale ja metrin pituinen heiluri viedään Maasta Kuuhun. Kuussa putoamiskiihtyvyys on noin kuudesosa Maan arvosta. Heilahdukset ovat pieniä. Miten niiden jaksonajat muuttuvat?",
+      "choices": [
+        {
+          "text": "Jousen jaksonaika pysyy samana, heilurin jaksonaika kasvaa.",
+          "correct": true,
+          "feedback": "Oikein. Jousen jaksonaika $2\\pi\\sqrt{\\tfrac{m}{k}}$ riippuu massasta ja jousivakiosta, ja ne ovat Kuussa samat. Heilurin palauttava voima on osa painoa, ja paino on Kuussa pienempi. Siksi jaksonaika $2\\pi\\sqrt{\\tfrac{l}{g}}$ kasvaa noin $\\sqrt{6} \\approx 2{,}4$-kertaiseksi."
+        },
+        {
+          "text": "Molempien jaksonajat kasvavat, koska Kuussa kaikki on kevyempää.",
+          "feedback": "Kappaleen massa ei muutu Kuussa, vain paino muuttuu. Jousen jaksonaika riippuu massasta ja jousivakiosta, joten se pysyy samana. Heilurin jaksonaika kasvaa, koska heilurin palauttava voima on osa painoa."
+        },
+        {
+          "text": "Molempien jaksonajat pysyvät samoina, koska massat eivät muutu.",
+          "feedback": "Jousella tämä pitää paikkansa. Heilurin palauttava voima on kuitenkin painon komponentti. Kuussa paino on pienempi, joten heiluri palaa tasapainoasemaan hitaammin ja sen jaksonaika kasvaa."
+        },
+        {
+          "text": "Heilurin jaksonaika pysyy samana, jousen jaksonaika kasvaa.",
+          "feedback": "Asia on päinvastoin. Heilurin jaksonaika $2\\pi\\sqrt{\\tfrac{l}{g}}$ riippuu putoamiskiihtyvyydestä. Jousen jaksonaika $2\\pi\\sqrt{\\tfrac{m}{k}}$ ei riipu siitä."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Kuvaajasta jousivakioon",
+      "figure": "fy5-9/kuvaaja-k",
+      "prompt": "Kuvaaja näyttää $0{,}25\\,\\text{kg}$:n kappaleen paikan, kun kappale värähtelee kitkattomasti jousen varassa. Määritä kuvaajasta jaksonaika ja laske jousen jousivakio. Vastaa yksikössä $\\text{N/m}$.",
+      "answer": 61.685028,
+      "unit": "N/m",
+      "tolerance": 0.02,
+      "hints": [
+        "Mistä kohdista kuvaajaa jaksonaika luetaan? Etsi kaksi peräkkäistä huippua.",
+        "Huiput ovat hetkillä $0\\,\\text{s}$ ja $0{,}40\\,\\text{s}$. Ratkaise $k$ kaavasta $T = 2\\pi\\sqrt{\\tfrac{m}{k}}$.",
+        "$k = \\dfrac{4\\pi^2 m}{T^2} = \\dfrac{4\\pi^2 \\cdot 0{,}25\\,\\text{kg}}{(0{,}40\\,\\text{s})^2}$."
+      ],
+      "mistakes": [
+        {
+          "value": 246.7,
+          "feedback": "Luit jaksonajaksi $0{,}20\\,\\text{s}$, eli huipun ja pohjan välin. Se on puoli jaksoa. Kokonainen jakso on kahden peräkkäisen huipun väli, $0{,}40\\,\\text{s}$."
+        },
+        {
+          "value": 24.7,
+          "feedback": "Jaksonaika on kaavassa $k = \\tfrac{4\\pi^2 m}{T^2}$ toisessa potenssissa."
+        }
+      ],
+      "solution": "**Annettu:** massa $m = 0{,}25\\,\\text{kg}$, värähtely kitkaton; kuvaajasta jaksonaika $T$\n\n**Kysytty:** jousivakio $k$ yksikössä $\\text{N/m}$\n\n**Periaate:** Liikkeen suunnassa kappaleeseen vaikuttaa vain jousen harmoninen voima, joten jaksonaika on $2\\pi\\sqrt{\\tfrac{m}{k}}$. Kun jaksonaika luetaan kuvaajasta, jousivakio voidaan ratkaista.\n\n**Kuvaajan lukeminen:** Käyrän huiput $x = 3{,}0\\,\\text{cm}$ ovat hetkillä $0\\,\\text{s}$, $0{,}40\\,\\text{s}$ ja $0{,}80\\,\\text{s}$. Kahden peräkkäisen huipun väli on yksi jakso, joten $T = 0{,}40\\,\\text{s}$. Kahden jakson väli jaettuna kahdella, $0{,}80\\,\\text{s} : 2 = 0{,}40\\,\\text{s}$, vahvistaa lukeman. Amplitudia $3{,}0\\,\\text{cm}$ ei tarvita, koska jaksonaika ei riipu siitä.\n\n**Kaava:** $T = 2\\pi\\sqrt{\\dfrac{m}{k}}$, josta $T^2 = \\dfrac{4\\pi^2 m}{k}$ ja $k = \\dfrac{4\\pi^2 m}{T^2}$\n\n**Muunnokset:** Massa on kilogrammoina ja aika sekunteina, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $k = \\dfrac{4\\pi^2 \\cdot 0{,}25\\,\\text{kg}}{(0{,}40\\,\\text{s})^2} = \\dfrac{9{,}870\\,\\text{kg}}{0{,}16\\,\\text{s}^2} = 61{,}69\\,\\text{N/m}$\n\n**Vastaus:** $62\\,\\text{N/m}$, kaksi merkitsevää numeroa kuten massassa $0{,}25\\,\\text{kg}$ ja jaksonajassa $0{,}40\\,\\text{s}$.\n\n**Järkevyys:** Taajuus on $\\tfrac{1}{0{,}40\\,\\text{s}} = 2{,}5\\,\\text{Hz}$, eli kevyt kappale värähtelee nopeasti melko jäykän jousen varassa. Tarkistus: jousivakiolla $62\\,\\text{N/m}$ kaava antaa jaksonajaksi noin $0{,}40\\,\\text{s}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä energian avulla",
+      "optional": true,
+      "prompt": "Jousen päässä oleva kappale värähtelee kitkattomasti. Selitä energian säilymisen avulla kolme asiaa. Missä kohdassa kappaleen nopeus on suurin? Miksi amplitudin kaksinkertaistaminen kaksinkertaistaa suurimman nopeuden? Mitä tämä kertoo jaksonajasta?",
+      "model": "Kitkattomassa värähtelyssä mekaaninen energia säilyy: $\\tfrac{1}{2}mv^2 + \\tfrac{1}{2}kx^2 = \\tfrac{1}{2}kA^2$. Jousen potentiaalienergia on nolla tasapainoasemassa $x = 0$. Siellä kaikki energia on liike-energiaa, ja nopeus on suurin. Ääriasennoissa nopeus on nolla. Suurimmalle nopeudelle saadaan $\\tfrac{1}{2}mv_\\text{max}^2 = \\tfrac{1}{2}kA^2$ eli $v_\\text{max} = A\\sqrt{\\tfrac{k}{m}}$. Se on siis suoraan verrannollinen amplitudiin. Kaksinkertainen amplitudi nelinkertaistaa energian. Liike-energia on verrannollinen nopeuden neliöön, joten nopeus kaksinkertaistuu. Siksi kaksinkertainen matka kuljetaan samassa jaksonajassa.",
+      "criteria": [
+        "Nimeän tasapainoaseman kohdaksi, jossa nopeus on suurin, ja perustelen sen sillä, että jousen potentiaalienergia on siellä nolla.",
+        "Kirjoitan energian säilymisen yhtälön tai sanallisen vastineen.",
+        "Päättelen, että energia nelinkertaistuu mutta nopeus vain kaksinkertaistuu, koska liike-energia on verrannollinen nopeuden neliöön.",
+        "Kytken tuloksen siihen, ettei jaksonaika riipu amplitudista."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

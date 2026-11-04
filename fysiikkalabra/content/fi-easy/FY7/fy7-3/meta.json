@@ -1,0 +1,40 @@
+{
+  "id": "fy7-3",
+  "course": "FY7",
+  "title": "Virtajohtimen ja käämin magneettikenttä",
+  "goals": [
+    "LOPS FY7: virtajohtimen magneettikenttä ja kahden virtajohtimen välinen voima",
+    "Kokeellisesti: magneettivuon tiheyden määritys käämin sisällä",
+    "Täsmennys: suoran johtimen ja käämin magneettikenttä, oikean käden sääntö, sähkömagneetti"
+  ],
+  "prerequisites": [
+    "fy7-1"
+  ],
+  "glossary": [
+    "virtajohdin",
+    "käämi",
+    "oikean käden sääntö",
+    "sähkömagneetti"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "virtajohdin",
+      "explain": "Johdin, jossa kulkee sähkövirta. Sen ympärille syntyy magneettikenttä."
+    },
+    {
+      "term": "käämi",
+      "explain": "Kierukaksi kierretty johdin. Pitkän käämin sisällä, kaukana sen päistä, kenttä on lähes samanlainen joka kohdassa."
+    },
+    {
+      "term": "oikean käden sääntö",
+      "explain": "Muistisääntö, jolla päätellään kentän suunta: peukalo virran suuntaan, sormet kiertävät kentän suuntaan."
+    },
+    {
+      "term": "sähkömagneetti",
+      "explain": "Käämi, jonka sisällä on rautasydän. Se on magneetti vain silloin, kun käämissä kulkee virta."
+    }
+  ]
+}

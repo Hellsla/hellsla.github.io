@@ -1,0 +1,28 @@
+{
+  "id": "fy5-14",
+  "course": "FY5",
+  "title": "Sound as a wave: pitch, timbre and the Doppler effect",
+  "goals": [
+    "LOPS FY5: sound as wave motion, the properties and propagation of sound",
+    "Experimental: determining the speed of sound and analysing the frequencies of sound",
+    "Specification: pitch and the harmonic series that forms the timbre of sound, infrasound and ultrasound, beats and the Doppler effect",
+    "Skills: making an FFT graph"
+  ],
+  "prerequisites": [
+    "fy5-13"
+  ],
+  "glossary": [
+    "ääni",
+    "äänen nopeus",
+    "äänenkorkeus",
+    "sointiväri",
+    "harmoninen sarja",
+    "infraääni",
+    "huojunta",
+    "Doppler-ilmiö",
+    "ultraääni"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

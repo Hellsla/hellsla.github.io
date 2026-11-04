@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The refractive index of a glass is $1.60$. What is the critical angle at the boundary between the glass and air?",
+    "a": "$\\sin\\alpha_\\text{r} = 1.00 : 1.60 = 0.625$, so $\\alpha_\\text{r} = 38.7^\\circ$. Light is totally internally reflected when it goes from the glass into air at an angle of incidence larger than this."
+  },
+  {
+    "q": "Why does a cut diamond sparkle more than a glass stone of the same shape?",
+    "a": "The refractive index of diamond, $2.42$, is large, so its critical angle against air is only $24.4^\\circ$. Inside the stone the light usually meets the slanting lower faces at an angle of incidence larger than the critical angle, is totally internally reflected and returns upwards towards the viewer. The critical angle of glass, $41.8^\\circ$, is larger, so some of the light leaks out below the stone."
+  }
+]

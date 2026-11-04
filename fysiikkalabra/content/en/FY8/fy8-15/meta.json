@@ -1,0 +1,22 @@
+{
+  "id": "fy8-15",
+  "course": "FY8",
+  "title": "The Standard Model: elementary particles and interactions",
+  "goals": [
+    "LOPS FY8: the Standard Model of particle physics",
+    "Specification: the fundamental interactions and fundamental particles; the photon as the mediator particle of the electromagnetic interaction"
+  ],
+  "prerequisites": [
+    "fy8-14"
+  ],
+  "glossary": [
+    "standard model",
+    "quark",
+    "lepton",
+    "mediator particle",
+    "fundamental interaction"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

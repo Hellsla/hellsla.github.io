@@ -1,0 +1,45 @@
+{
+  "id": "fy7-7",
+  "course": "FY7",
+  "title": "Generaattori ja vaihtovirta",
+  "goals": [
+    "LOPS FY7: generaattori, vaihtovirran synty",
+    "Täsmennys: käämi pyörivässä magneettikentässä tai pyörivä käämi magneettikentässä; perustellaan, miksi käämiin syntyy sinimuotoinen induktiojännite",
+    "Temaattinen tarkastelu: tuulivoima"
+  ],
+  "prerequisites": [
+    "fy7-6"
+  ],
+  "glossary": [
+    "generaattori",
+    "vaihtovirta",
+    "vaihtojännite",
+    "tehollinen arvo",
+    "huippuarvo"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "generaattori",
+      "explain": "Laite, jossa käämi pyörii magneettikentässä tai magneetti pyörii käämin lähellä. Se muuttaa liike-energiaa sähköenergiaksi."
+    },
+    {
+      "term": "vaihtojännite",
+      "explain": "Jännite, joka vaihtaa suuntaansa säännöllisesti. Kun käämi pyörii tasaisesti homogeenisessa magneettikentässä, syntyy sinimuotoinen vaihtojännite."
+    },
+    {
+      "term": "vaihtovirta",
+      "explain": "Virta, joka kulkee vuorotellen kumpaankin suuntaan. Suomen sähköverkossa suunta vaihtuu sata kertaa sekunnissa."
+    },
+    {
+      "term": "huippuarvo",
+      "explain": "Suurin arvo, jonka vaihtojännite tai vaihtovirta saa jakson aikana."
+    },
+    {
+      "term": "tehollinen arvo",
+      "explain": "Se tasajännitteen arvo, joka antaisi vastuksessa saman keskimääräisen tehon kuin vaihtojännite. Pistorasian jännite ilmoitetaan tehollisena arvona."
+    }
+  ]
+}

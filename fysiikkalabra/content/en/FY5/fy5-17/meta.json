@@ -1,0 +1,21 @@
+{
+  "id": "fy5-17",
+  "course": "FY5",
+  "title": "Applied chapter: ultrasound imaging and earthquake waves",
+  "goals": [
+    "LOPS FY5: the origin, propagation and reflection of mechanical waves",
+    "Thematic study: ultrasound imaging",
+    "Clarification: an applied chapter, not a review: reflection of ultrasound from tissue boundaries and depth from travel time; earthquake waves and other waves in nature"
+  ],
+  "prerequisites": [
+    "fy5-10",
+    "fy5-14"
+  ],
+  "glossary": [
+    "ultraääni",
+    "maanjäristysaalto"
+  ],
+  "sim": false,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "q": "How much energy does a hydrogen atom in the ground state need for its electron to move to level $n = 3$ ($E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$)?",
+    "a": "$E_3 - E_1 = -\\tfrac{13.6\\,\\text{eV}}{9} + 13.6\\,\\text{eV} = 12.1\\,\\text{eV}$. The photon must bring exactly this energy to be absorbed."
+  },
+  {
+    "q": "Why do the visible-light lines in the hydrogen spectrum come from transitions that end on level $n = 2$?",
+    "a": "The energies of transitions ending on level $n = 2$ are at most $3.40\\,\\text{eV}$, and the photons of the four smallest ($1.89$–$3.02\\,\\text{eV}$) are visible light. The energies of transitions ending in the ground state are over $10\\,\\text{eV}$ (ultraviolet) and those of transitions ending on level $n = 3$ under $1.51\\,\\text{eV}$ (infrared)."
+  }
+]

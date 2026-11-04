@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Jousi A on jäykempi kuin jousi B. Kumman jousen $(x, F_\\text{v})$-kuvaaja on jyrkempi, ja miksi?",
+    "a": "Jousen A. Kuvaajan kulmakerroin on jousivakio $k$. Jäykemmän jousen venyttämiseen samalla matkalla tarvitaan suurempi voima. Siksi sen suora nousee jyrkemmin."
+  },
+  {
+    "q": "Jousi, jonka jousivakio on $200\\,\\text{N/m}$, puristetaan ensin $0{,}10\\,\\text{m}$ ja sitten venytetään $0{,}10\\,\\text{m}$. Kummassa tilanteessa siihen on varastoitunut enemmän jousen potentiaalienergiaa?",
+    "a": "Energia on sama, $E_\\text{p} = \\tfrac{1}{2}\\cdot 200\\,\\tfrac{\\text{N}}{\\text{m}}\\cdot(0{,}10\\,\\text{m})^2 = 1{,}0\\,\\text{J}$ kummassakin. Poikkeama on toisessa potenssissa, joten sen etumerkki ei vaikuta. Voiman suunta sen sijaan on vastakkainen."
+  },
+  {
+    "q": "Käsi venyttää jousta. Mitkä kaksi voimaa muodostavat tässä Newtonin kolmannen lain voimaparin, ja mihin kappaleisiin ne vaikuttavat?",
+    "a": "Käden voima jouseen eli jousta venyttävä voima $\\overline{F}_\\text{v}$ vaikuttaa jouseen. Jousen voima käteen $\\overline{F}$ vaikuttaa käteen. Ne ovat yhtä suuret ja vastakkaissuuntaiset. Ne eivät kumoa toisiaan, koska ne vaikuttavat eri kappaleisiin."
+  }
+]

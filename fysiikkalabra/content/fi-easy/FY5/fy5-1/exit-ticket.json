@@ -1,0 +1,14 @@
+[
+  {
+    "q": "Mikä on momentin yksikkö, ja mistä kahdesta suureesta momentti saadaan?",
+    "a": "Momentin yksikkö on newtonmetri $\\text{Nm}$. Momentti on voiman suuruuden ja voiman varren tulo $M = Fr$. Siihen vaikuttavat siis sekä voima että se, kuinka kaukana akselista voiman vaikutussuora kulkee."
+  },
+  {
+    "q": "Kumpi kiertää kappaletta tehokkaammin akselin suhteen: $100\\,\\text{N}$:n voima, jonka varsi on $0{,}20\\,\\text{m}$, vai $50\\,\\text{N}$:n voima, jonka varsi on $0{,}50\\,\\text{m}$?",
+    "a": "Jälkimmäinen. Momentit ovat $100\\,\\text{N}\\cdot 0{,}20\\,\\text{m} = 20\\,\\text{Nm}$ ja $50\\,\\text{N}\\cdot 0{,}50\\,\\text{m} = 25\\,\\text{Nm}$. Pienempi voima kiertää tehokkaammin, koska sen varsi on pidempi."
+  },
+  {
+    "q": "Avaimen vasen pää on mutterin ympärillä. Varren oikeaa päätä painetaan suoraan alaspäin. Kiertääkö voima avainta myötäpäivään vai vastapäivään? Mikä on momentin etumerkki tämän luvun sopimuksella?",
+    "a": "Varren oikea pää liikkuu alas, joten avain kiertyy myötäpäivään. Myötäpäivään kiertävä momentti on negatiivinen."
+  }
+]

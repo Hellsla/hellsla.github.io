@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy7-3-L1-01",
+      "level": 1,
+      "text": "Pitkässä suorassa johtimessa kulkee virta $12\\,\\text{A}$. Kuinka suuri on magneettivuon tiheys $3{,}0\\,\\text{cm}$:n etäisyydellä johtimesta? Anna vastaus mikrotesloina.",
+      "answer": 80,
+      "unit": "µT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-02",
+      "level": 1,
+      "text": "Käämissä on $500$ kierrosta, ja sen pituus on $25\\,\\text{cm}$. Käämissä kulkee virta $1{,}2\\,\\text{A}$. Kuinka suuri on magneettivuon tiheys käämin keskellä? Käämi on pitkä paksuuteensa verrattuna. Anna vastaus millitesloina.",
+      "answer": 3.0,
+      "unit": "mT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-03",
+      "level": 1,
+      "text": "Voimajohdon yhdessä johtimessa kulkee hetkellisesti virta $800\\,\\text{A}$. Kuinka suuri on tämän johtimen magneettivuon tiheys maanpinnalla $16\\,\\text{m}$ johtimen alapuolella? Oletetaan, että muiden johtimien kentät eivät vaikuta. Anna vastaus mikrotesloina.",
+      "answer": 10,
+      "unit": "µT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-04",
+      "level": 1,
+      "text": "Pöytälampun johdon toisessa johtimessa kulkee virta $2{,}5\\,\\text{A}$. Kuinka suuri on tämän johtimen magneettivuon tiheys $5{,}0\\,\\text{mm}$:n etäisyydellä siitä, kun toisen johtimen vaikutusta ei oteta huomioon? Anna vastaus millitesloina.",
+      "answer": 0.1,
+      "unit": "mT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L1-05",
+      "level": 1,
+      "text": "Fysiikan luokan käämissä on $300$ kierrosta, ja sen pituus on $15\\,\\text{cm}$. Käämissä kulkee virta $0{,}40\\,\\text{A}$. Kuinka suuri on magneettivuon tiheys käämin keskellä? Käämi on pitkä paksuuteensa verrattuna. Anna vastaus millitesloina.",
+      "answer": 1.0,
+      "unit": "mT",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-3-L2-01",
+      "level": 2,
+      "text": "Kokeessa tarvitaan käämi, jonka sisällä magneettivuon tiheys on $20\\,\\text{mT}$. Käämissä on $1200$ kierrosta, ja sen pituus on $0{,}30\\,\\text{m}$. Kuinka suuri virta käämissä on kuljettava? Käämi on pitkä paksuuteensa verrattuna.",
+      "answer": 4.0,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L2-02",
+      "level": 2,
+      "text": "Pitkässä suorassa johtimessa kulkee virta $6{,}0\\,\\text{A}$. Kuinka kaukana johtimesta sen magneettivuon tiheys on yhtä suuri kuin Maan magneettikentän vaakakomponentti $14\\,\\mu\\text{T}$? Anna vastaus senttimetreinä.",
+      "answer": 8.6,
+      "unit": "cm",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L2-03",
+      "level": 2,
+      "text": "Opiskelija kelaa $25\\,\\text{m}$ eristettyä kuparilankaa yhteen kerrokseen pahviputken ympärille. Putken halkaisija on $4{,}0\\,\\text{cm}$, ja valmiin käämin pituus on $0{,}20\\,\\text{m}$. Kuinka suuri on magneettivuon tiheys käämin keskellä, kun siinä kulkee virta $2{,}0\\,\\text{A}$? Langan paksuutta ei oteta huomioon. Anna vastaus millitesloina.",
+      "answer": 2.5,
+      "unit": "mT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L2-04",
+      "level": 2,
+      "text": "Kaksi pitkää yhdensuuntaista johdinta on $10\\,\\text{cm}$:n etäisyydellä toisistaan. Kummassakin kulkee virta $10\\,\\text{A}$, mutta vastakkaisiin suuntiin. Kuinka suuri on magneettivuon tiheys johtimien puolivälissä? Anna vastaus mikrotesloina.",
+      "answer": 80,
+      "unit": "µT",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-3-L3-01",
+      "level": 3,
+      "text": "Kompassi on pöydällä, ja sen neula osoittaa pohjoiseen. Suoraan kompassin yläpuolelle, $5{,}0\\,\\text{cm}$:n korkeudelle, viritetään pohjois–eteläsuuntainen johdin. Kun johtimeen kytketään virta, neula kääntyy $30^\\circ$. Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$, ja johtimen kenttä on kompassin kohdalla vaakasuora ja kohtisuorassa Maan kentän vaakakomponenttia vastaan. Kuinka suuri virta johtimessa kulkee?",
+      "answer": 2.0,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-3-L3-02",
+      "level": 3,
+      "text": "Magneettikuvauslaitteen suprajohtava käämi tuottaa sisälleen magneettikentän $1{,}5\\,\\text{T}$. Käämin pituus on $1{,}6\\,\\text{m}$, sen halkaisija on $1{,}0\\,\\text{m}$, ja siinä kulkee virta $400\\,\\text{A}$. Arvioi, kuinka monta kilometriä suprajohtavaa lankaa käämiin tarvitaan. Oleta käämi pitkäksi ja oleta, että kaikkien kierrosten halkaisija on $1{,}0\\,\\text{m}$.",
+      "answer": 15,
+      "unit": "km",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-3-L3-03",
+      "level": 3,
+      "text": "Kaksi pitkää yhdensuuntaista johdinta on $10\\,\\text{cm}$:n etäisyydellä toisistaan. Johtimissa kulkevat samansuuntaiset virrat $4{,}0\\,\\text{A}$ ja $6{,}0\\,\\text{A}$. Missä kohdassa johtimien välissä niiden yhteinen magneettikenttä on nolla? Anna vastaus etäisyytenä $4{,}0\\,\\text{A}$:n johtimesta senttimetreinä.",
+      "answer": 4.0,
+      "unit": "cm",
+      "tolerance": 0.02
+    }
+  ]
+}

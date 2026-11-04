@@ -1,0 +1,45 @@
+{
+  "id": "fy5-10",
+  "course": "FY5",
+  "title": "Aaltojen synty ja eteneminen",
+  "goals": [
+    "LOPS FY5: mekaanisten aaltojen synty, eteneminen ja heijastuminen",
+    "Taidot: aaltoilmiöiden mallintaminen",
+    "Täsmennys: poikittainen ja pitkittäinen aalto sekä aaltoliikkeen perusyhtälö v = fλ. Valoa käsitellään vasta moduulissa FY7."
+  ],
+  "prerequisites": [
+    "fy5-7"
+  ],
+  "glossary": [
+    "aaltoliike",
+    "aallonpituus",
+    "aallon nopeus",
+    "poikittainen aalto",
+    "pitkittäinen aalto"
+  ],
+  "key_concepts": [
+    {
+      "term": "aaltoliike",
+      "explain": "Häiriö, joka etenee aineessa paikasta toiseen. Aalto siirtää energiaa, mutta aine itse ei kulje aallon mukana."
+    },
+    {
+      "term": "aallonpituus",
+      "explain": "Kahden peräkkäisen aallonharjan välinen etäisyys."
+    },
+    {
+      "term": "aallon nopeus",
+      "explain": "Kertoo, kuinka nopeasti aalto etenee. Se riippuu aineesta, jossa aalto kulkee."
+    },
+    {
+      "term": "poikittainen aalto",
+      "explain": "Aalto, jossa aineen hiukkaset liikkuvat kohtisuoraan aallon etenemissuuntaa vastaan, esimerkiksi aalto narussa."
+    },
+    {
+      "term": "pitkittäinen aalto",
+      "explain": "Aalto, jossa aineen hiukkaset liikkuvat edestakaisin aallon etenemissuunnassa, esimerkiksi ääni ilmassa."
+    }
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

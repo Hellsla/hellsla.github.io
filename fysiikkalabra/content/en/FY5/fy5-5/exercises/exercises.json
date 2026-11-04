@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy5-5-L1-01",
+      "level": 1,
+      "text": "Two students sit next to each other on a bench. Their masses are $70\\,\\text{kg}$ and $55\\,\\text{kg}$, and the distance between their centres of mass is $0.80\\,\\text{m}$. How large is the gravitational force between them? Treat the students as point masses and give the answer in micronewtons ($1\\,\\mu\\text{N} = 10^{-6}\\,\\text{N}$).",
+      "answer": 0.4,
+      "unit": "µN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L1-02",
+      "level": 1,
+      "text": "Two cruise ships lie side by side in a harbour, with masses $5.0 \\cdot 10^{7}\\,\\text{kg}$ and $3.0 \\cdot 10^{7}\\,\\text{kg}$. The distance between the ships' centres of mass is $200\\,\\text{m}$. With what gravitational force do the ships attract each other? Treat the ships as point masses.",
+      "answer": 2.5,
+      "unit": "N",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L1-03",
+      "level": 1,
+      "text": "The mass of the planet Mercury is $3.30 \\cdot 10^{23}\\,\\text{kg}$ and its radius is $2.44 \\cdot 10^{6}\\,\\text{m}$. How large is the gravitational field strength on the surface of Mercury?",
+      "answer": 3.7,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L1-04",
+      "level": 1,
+      "text": "A rover that has landed on Mars has a mass of $1025\\,\\text{kg}$. The mass of Mars is $6.42 \\cdot 10^{23}\\,\\text{kg}$ and its radius is $3.40 \\cdot 10^{6}\\,\\text{m}$. With what gravitational force does Mars attract the rover on its surface? Give the answer in kilonewtons.",
+      "answer": 3.8,
+      "unit": "kN",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L1-05",
+      "level": 1,
+      "text": "The gravitational force between two spacecraft is $36\\,\\mu\\text{N}$. The spacecraft move apart so that the distance between their centres triples. How large is the gravitational force now? Give the answer in micronewtons.",
+      "answer": 4.0,
+      "unit": "µN",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy5-5-L2-01",
+      "level": 2,
+      "text": "In a laboratory the gravitational force between two lead spheres of equal mass is measured. When the distance between the centres of the spheres is $0.40\\,\\text{m}$, the force is $0.60\\,\\mu\\text{N}$. What is the mass of each sphere?",
+      "answer": 38,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L2-02",
+      "level": 2,
+      "text": "On the surface of Venus the gravitational field strength is $8.87\\,\\text{m/s}^2$, and the radius of Venus is $6052\\,\\text{km}$. How many times as large is the mass of Venus as the mass of the Earth, $5.97 \\cdot 10^{24}\\,\\text{kg}$?",
+      "answer": 0.815,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L2-03",
+      "level": 2,
+      "text": "A space probe of mass $1200\\,\\text{kg}$ leaves the Earth for Mars. At what height above the Earth's surface is the gravitational force exerted by the Earth on the probe $1.00\\,\\text{kN}$? The mass of the Earth is $5.97 \\cdot 10^{24}\\,\\text{kg}$ and its radius $6378\\,\\text{km}$. Give the answer in kilometres.",
+      "answer": 15500,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L2-04",
+      "level": 2,
+      "text": "An airliner flies at a height of $11.0\\,\\text{km}$. By what percentage is the Earth's gravitational field strength smaller there than on the Earth's surface? The radius of the Earth is $6378\\,\\text{km}$.",
+      "answer": 0.344,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy5-5-L3-01",
+      "level": 3,
+      "text": "A space probe flies from the Earth straight towards the Moon. At what point are the gravitational forces exerted on the probe by the Earth and the Moon equal? The mass of the Earth is $5.97 \\cdot 10^{24}\\,\\text{kg}$, the mass of the Moon $7.35 \\cdot 10^{22}\\,\\text{kg}$ and the distance between their centres $3.84 \\cdot 10^{5}\\,\\text{km}$. Give the distance of the point from the Earth's centre in kilometres.",
+      "answer": 346000,
+      "unit": "km",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L3-02",
+      "level": 3,
+      "text": "A distant exoplanet has the same mean density as the Earth, but its radius is twice the radius of the Earth. How large is the gravitational field strength on the surface of the planet, when on the Earth's surface it is $9.81\\,\\text{m/s}^2$? Assume both planets to be spherically symmetric.",
+      "answer": 19.6,
+      "unit": "m/s²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-5-L3-03",
+      "level": 3,
+      "text": "Which pulls the Earth harder, the Sun or the Moon, and how many times as hard? The mass of the Sun is $1.99 \\cdot 10^{30}\\,\\text{kg}$ and the distance of its centre from the Earth's centre $1.50 \\cdot 10^{8}\\,\\text{km}$. The mass of the Moon is $7.35 \\cdot 10^{22}\\,\\text{kg}$ and its distance $3.84 \\cdot 10^{5}\\,\\text{km}$. Give the ratio of the force exerted on the Earth by the Sun to the force exerted on it by the Moon.",
+      "answer": 177,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}
