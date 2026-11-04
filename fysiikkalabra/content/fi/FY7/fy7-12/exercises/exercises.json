@@ -56,13 +56,13 @@
           "feedback": "Väärin: kun valo tulee pienemmän taitekertoimen aineesta suurempaan, säde taittuu normaalia kohti, ja taittunut säde on olemassa kaikilla tulokulmilla. Rajakulmaa ei silloin ole, joten kokonaisheijastumista ei tapahdu."
         },
         {
-          "text": "Valo tulee suuremman taitekertoimen aineesta pienempään, ja tulokulma ylittää rajakulman, jolloin taittunutta sädettä ei ole.",
-          "feedback": "Oikein: suuremman taitekertoimen aineesta pienempään tuleva valo taittuu normaalista poispäin. Rajakulmassa taitekulma on $90^\\circ$, ja sitä suuremmilla tulokulmilla taittumislaki ei anna taitekulmaa, joten kaikki valo heijastuu takaisin.",
-          "correct": true
+          "text": "Valo tulee ilmasta mihin tahansa läpinäkyvään aineeseen, ja tulokulma on suuri, jolloin rajapinta toimii kuin peili.",
+          "feedback": "Väärin: kohtisuoraan rajapintaan osuva säde menee läpi suoraan, ja vain pieni osa siitä heijastuu. Kokonaisheijastumiseen tarvitaan tulokulma, joka on suurempi kuin rajakulma, ei pieni tulokulma."
         },
         {
-          "text": "Valo tulee suuremman taitekertoimen aineesta pienempään, ja tulokulma on pieni, jolloin säde osuu rajapintaan lähes kohtisuorasti.",
-          "feedback": "Väärin: kohtisuoraan rajapintaan osuva säde menee läpi suoraan, ja vain pieni osa siitä heijastuu. Kokonaisheijastumiseen tarvitaan tulokulma, joka on suurempi kuin rajakulma, ei pieni tulokulma."
+          "text": "Valo tulee suuremman taitekertoimen aineesta pienempään, ja tulokulma ylittää rajakulman, jolloin taittunutta sädettä ei ole.",
+          "feedback": "Oikein: suuremman taitekertoimen aineesta pienempään tuleva valo taittuu normaalista poispäin. Rajakulmassa taitekulma on $90{}^\\circ$, ja sitä suuremmilla tulokulmilla taittumislaki ei anna taitekulmaa, joten kaikki valo heijastuu takaisin.",
+          "correct": true
         },
         {
           "text": "Valo tulee ilmasta mihin tahansa läpinäkyvään aineeseen, ja tulokulma on suuri, jolloin rajapinta toimii kuin peili.",
@@ -127,7 +127,7 @@
         "data",
         "experiment"
       ],
-      "text": "Opiskelija tutkii läpinäkyvän muovipalan taitekerrointa. Hän valaisee laserilla muovin sisältä ilmaan rajoittuvaa pintaa ja kasvattaa tulokulmaa, kunnes taittunut säde katoaa. Tämä tulokulma on rajakulma $\\alpha_\\text{r}$. Hän mittaa sen viidesti (esimerkkiaineisto).\n\nTaulukkoarvoja: akryylin taitekerroin on $1{,}49$ ja polystyreenin $1{,}59$. Ilman taitekerroin on $1{,}00$.\n\na) Laske rajakulman keskiarvo ja sen avulla muovin taitekerroin $n$. Mittaussarjan summa on $210{,}2^\\circ$.\n\nb) Arvioi mittaussarjan hajonta puolella vaihteluvälistä ja laske sen ääriarvoja vastaavat taitekertoimet. Kumpaa muovia pala todennäköisesti on?\n\nAnna vastauskenttään kohdan a) tulos.",
+      "text": "Opiskelija tutkii läpinäkyvän muovipalan taitekerrointa. Hän valaisee laserilla muovin sisältä ilmaan rajoittuvaa pintaa ja kasvattaa tulokulmaa, kunnes taittunut säde katoaa. Tämä tulokulma on rajakulma $\\alpha_\\text{r}$. Hän mittaa sen viidesti (esimerkkiaineisto).\n\nTaulukkoarvoja: akryylin taitekerroin on $1{,}49$ ja polystyreenin $1{,}59$. Ilman taitekerroin on $1{,}00$.\n\na) Laske rajakulman keskiarvo ja sen avulla muovin taitekerroin $n$.\n\nb) Arvioi mittaussarjan hajonta puolella vaihteluvälistä ja laske sen ääriarvoja vastaavat taitekertoimet. Kumpaa muovia pala todennäköisesti on?\n\nAnna vastauskenttään kohdan a) tulos.",
       "answer": 1.4933,
       "unit": "",
       "tolerance": 0.02,
@@ -168,7 +168,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Valokuidun ytimen taitekerroin on $1{,}48$ ja kuidun pituus $10{,}0\\,\\text{km}$. Kuidun alkuun lähetetään hyvin lyhyt valopulssi, ja kuidun toisessa päässä mitataan perille tulevan valon intensiteetti $I$ ajan $t$ funktiona lähetyshetkestä lukien. Taulukossa intensiteetti on prosentteina suurimmasta arvosta (esimerkkiaineisto). Pulssin leveys on aika taulukon ensimmäisestä rivistä, jossa $I$ on vähintään $50\\,\\%$, viimeiseen sellaiseen riviin.\n\na) Määritä pulssin leveys taulukosta nanosekunteina.\n\nb) Laske akselin suuntaisesti kulkevan valon kulkuaika ja vertaa sitä siihen, milloin pulssi taulukon mukaan alkaa saapua. Selitä, miksi perille tuleva pulssi on lähetettyä leveämpi.\n\nAnna vastauskenttään kohdan a) tulos.",
+      "text": "Valokuidun ytimen taitekerroin on $1{,}48$ ja kuidun pituus $10{,}0\\,\\text{km}$. Kuidun alkuun lähetetään hyvin lyhyt valopulssi, ja kuidun toisessa päässä mitataan perille tulevan valon intensiteetti $I$ ajan $t$ funktiona lähetyshetkestä lukien.\n\nTaulukossa intensiteetti on prosentteina suurimmasta arvosta (esimerkkiaineisto). Pulssin leveys on aika taulukon ensimmäisestä rivistä, jossa $I$ on vähintään $50\\,\\%$, viimeiseen sellaiseen riviin.\n\na) Määritä pulssin leveys taulukosta nanosekunteina.\n\nb) Laske akselin suuntaisesti kulkevan valon kulkuaika ja vertaa sitä siihen, milloin pulssi taulukon mukaan alkaa saapua. Selitä, miksi perille tuleva pulssi on lähetettyä leveämpi.\n\nAnna vastauskenttään kohdan a) tulos.",
       "answer": 800,
       "unit": "ns",
       "tolerance": 0.04,
@@ -181,11 +181,11 @@
         "rows": [
           [
             "49.0",
-            "1"
+            "0"
           ],
           [
             "49.2",
-            "4"
+            "0"
           ],
           [
             "49.4",
@@ -229,7 +229,7 @@
         "error",
         "reasoning"
       ],
-      "text": "Opiskelija ratkaisee tehtävän: \"Valo tulee ilmasta lasiin ($n = 1{,}50$) $70^\\circ$:n tulokulmassa. Mitä tapahtuu?\" Hänen ratkaisunsa: \"Rajakulma on $\\alpha_\\text{r} = \\sin^{-1}(1{,}00 : 1{,}50) = 41{,}8^\\circ$. Tulokulma $70^\\circ$ on suurempi kuin rajakulma, joten valo kokonaisheijastuu eikä mene lasiin.\"\n\na) Selitä, mikä opiskelijan päättelyssä on väärin.\n\nb) Laske, kuinka suuressa kulmassa normaaliin nähden valo jatkaa lasissa.\n\nAnna vastauskenttään kohdan b) tulos.",
+      "text": "Opiskelija ratkaisee tehtävän, jossa valo tulee ilmasta lasiin ($n = 1{,}50$) $70{}^\\circ$:n tulokulmassa ja kysytään, mitä valolle tapahtuu.\n\nHänen ratkaisunsa: ”Rajakulma on $\\alpha_\\text{r} = \\sin^{-1}(1{,}00 : 1{,}50) = 41{,}8{}^\\circ$. Tulokulma $70{}^\\circ$ on suurempi kuin rajakulma, joten valo kokonaisheijastuu eikä mene lasiin.”\n\na) Selitä, mikä opiskelijan päättelyssä on väärin.\n\nb) Laske, kuinka suuressa kulmassa normaaliin nähden valo jatkaa lasissa.\n\nAnna vastauskenttään kohdan b) tulos.",
       "answer": 38.7896,
       "unit": "°",
       "tolerance": 0.02
@@ -268,7 +268,7 @@
         "model",
         "reasoning"
       ],
-      "text": "Valokuidun ydin on lasia, ja sitä ympäröi kuori, jonka taitekerroin on hieman pienempi. Kuitu päättyy tasaiseen päätypintaan ilmassa, jonka taitekerroin on $1{,}00$. Valo pysyy ytimessä vain, jos se kokonaisheijastuu ytimen ja kuoren rajapinnassa. Siksi päätypintaan voi osua valoa vain tulokulmaan $\\theta_\\text{max}$ asti, kun tulokulma mitataan kuidun akseliin nähden. Tämä on kuidun vastaanottokulma. Taulukossa on kolmen kuitutyypin taitekertoimet (esimerkkiaineisto).\n\na) Laske kuidun B vastaanottokulma $\\theta_\\text{max}$. Etsi ensin suurin kulma, jossa ytimessä etenevä säde voi osua ytimen ja kuoren rajapintaan, ja päättele siitä, kuinka suuri kulma säteellä on akseliin nähden. Taita sitten säde päätypinnalla.\n\nb) Laske vastaanottokulma myös kuiduille A ja C.\n\nc) Mitä suurempi ytimen ja kuoren taitekertoimien ero on, sitä enemmän valoa kuitu ottaa vastaan, mutta sitä enemmän pulssi leviää pitkällä matkalla. Perustele tämä laskemalla kolmelle kuidulle luku $\\dfrac{n_1}{n_2} - 1$, joka kertoo siksakkia kulkevan valon suhteellisen viiveen akselin suuntaiseen valoon nähden.\n\nAnna vastauskenttään kohdan a) tulos.",
+      "text": "Valokuidun ydin on lasia, ja sitä ympäröi kuori, jonka taitekerroin on hieman pienempi. Kuitu päättyy tasaiseen päätypintaan ilmassa, jonka taitekerroin on $1{,}00$.\n\nValo pysyy ytimessä vain, jos se kokonaisheijastuu ytimen ja kuoren rajapinnassa. Siksi päätypintaan voi osua valoa vain tulokulmaan $\\theta_\\text{max}$ asti, kun tulokulma mitataan kuidun akseliin nähden. Tämä on kuidun vastaanottokulma.\n\nTaulukossa on kolmen kuitutyypin taitekertoimet (esimerkkiaineisto).\n\na) Laske kuidun B vastaanottokulma $\\theta_\\text{max}$. Etsi ensin suurin kulma, jossa ytimessä etenevä säde voi osua ytimen ja kuoren rajapintaan, ja päättele siitä, kuinka suuri kulma säteellä on akseliin nähden. Taita sitten säde päätypinnalla.\n\nb) Laske vastaanottokulma myös kuiduille A ja C.\n\nc) Mitä suurempi ytimen ja kuoren taitekertoimien ero on, sitä enemmän valoa kuitu ottaa vastaan, mutta sitä enemmän pulssi leviää pitkällä matkalla. Perustele tämä laskemalla kolmelle kuidulle luku $\\dfrac{n_1}{n_2} - 1$, joka kertoo siksakkia kulkevan valon suhteellisen viiveen akselin suuntaiseen valoon nähden.\n\nAnna vastauskenttään kohdan a) tulos.",
       "answer": 17.3673,
       "unit": "°",
       "tolerance": 0.02,
@@ -306,7 +306,7 @@
         "model",
         "reasoning"
       ],
-      "text": "Muovisen valokuidun ytimen halkaisija on $1{,}0\\,\\text{mm}$, ytimen taitekerroin on $1{,}49$ ja kuoren $1{,}40$. Kuitu taivutetaan ympyrän kaareksi, jonka säde on $R$ (mitattuna kuidun keskiviivalle). Valonsäde etenee ennen mutkaa kuidun akselin suuntaisesti. Mutkassa se jatkaa suoraan, kunnes osuu mutkan ulkoreunan rajapintaan. Vaarallisin on säde, joka kulkee ytimen sisäreunan vierestä. Taulukossa on kuidun läpi kulkeva teho prosentteina, kun kuitu on taivutettu eri säteille (esimerkkiaineisto).\n\na) Mikä on säteen tulokulma ulkoreunan rajapintaan, kun se kulkee sisäreunan vierestä? Piirrä tilanteesta kuva ja perustele: kuvan suorakulmaisessa kolmiossa on mutkan keskipiste, säteen reitti ja ulkoreunan säde. Ilmaise tulokulman sini suureilla $R$ ja ytimen säteellä $a$.\n\nb) Laske pienin taivutussäde $R_\\text{min}$, jolla vaarallisinkin säde vielä kokonaisheijastuu.\n\nc) Vertaa tulosta taulukkoon. Selitä, miksi teho ei pienene täsmälleen kohdassa $R_\\text{min}$ jyrkästi nollaan.\n\nAnna vastauskenttään kohdan b) tulos millimetreinä.",
+      "text": "Muovisen valokuidun ytimen halkaisija on $1{,}0\\,\\text{mm}$, ytimen taitekerroin on $1{,}49$ ja kuoren $1{,}40$.\n\nKuitu taivutetaan ympyrän kaareksi, jonka säde on $R$ (mitattuna kuidun keskiviivalle). Valonsäde etenee ennen mutkaa kuidun akselin suuntaisesti. Mutkassa se jatkaa suoraan, kunnes osuu mutkan ulkoreunan rajapintaan. Vaarallisin on säde, joka kulkee ytimen sisäreunan vierestä.\n\nTaulukossa on kuidun läpi kulkeva teho prosentteina, kun kuitu on taivutettu eri säteille (esimerkkiaineisto).\n\na) Mikä on säteen tulokulma ulkoreunan rajapintaan, kun se kulkee sisäreunan vierestä? Piirrä tilanteesta kuva (kuvan tarkistat itse) ja perustele: kuvan suorakulmaisessa kolmiossa on mutkan keskipiste, säteen reitti ja ulkoreunan säde. Ilmaise tulokulman sini suureilla $R$ ja ytimen säteellä $a$.\n\nb) Laske pienin taivutussäde $R_\\text{min}$, jolla vaarallisinkin säde vielä kokonaisheijastuu.\n\nc) Vertaa tulosta taulukkoon. Selitä, miksi teho ei pienene täsmälleen kohdassa $R_\\text{min}$ jyrkästi nollaan.\n\nAnna vastauskenttään vain kohdan b) tulos millimetreinä.",
       "answer": 16.0556,
       "unit": "mm",
       "tolerance": 0.02,

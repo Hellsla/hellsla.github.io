@@ -130,7 +130,7 @@
 **Periaate:** Taajuus pysyy rajapinnassa samana, mutta valon nopeus muuttuu. Aallolle pätee $v = f\lambda$, joten aallonpituus on suoraan verrannollinen nopeuteen. Ilmassa $v_0 = c : 1{,}00 \approx c$ ja lasissa $v = c : n$, joten nopeus ja samalla aallonpituus pienenevät taitekertoimen verran.
 **Kaava:** $\lambda_0 = \dfrac{v_0}{f}$ ja $\lambda = \dfrac{v}{f}$, joten $\dfrac{\lambda}{\lambda_0} = \dfrac{v}{v_0} = \dfrac{1}{n}$ ja $\lambda = \dfrac{\lambda_0}{n}$
 **Muunnokset:** Ei tarvita: aallonpituus lasketaan nanometreinä, koska taitekerroin on yksikötön.
-**Sijoitus:** $\lambda = \dfrac{633\,\text{nm}}{1{,}52} = 416{,}45\,\text{nm}$
+**Sijoitus:** $\lambda = \dfrac{633\,\text{nm}}{1{,}52} = 416{,}4\,\text{nm}$
 **Vastaus:** $\lambda \approx 416\,\text{nm}$, kolme merkitsevää numeroa kuten aallonpituudessa ja taitekertoimessa.
 **Järkevyys:** Aallonpituus on lasissa pienempi kuin ilmassa, kuten hitaamman etenemisen vuoksi pitääkin. Arvio pyöreillä luvuilla: $630\,\text{nm} : 1{,}5 = 420\,\text{nm}$, ja tulos on lähellä tätä.
 
@@ -148,22 +148,22 @@
 **Annettu:** taulukon seitsemän mittausparia $(\alpha_1, \alpha_2)$, lukematarkkuus $\pm 0{,}5^\circ$, ilman taitekerroin $n_1 = 1{,}00$
 **Kysytty:** lasin taitekerroin $n_2$ (yksikötön)
 **Periaate:** Taittumislaki on $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$. Kulmat eivät ole verrannollisia keskenään, mutta niiden sinit ovat: kun $\sin\alpha_1$ piirretään $\sin\alpha_2$:n funktiona, pisteet asettuvat suoralle, jonka kulmakerroin on $n_2 : n_1$. Suora kulkee origon kautta, koska tulokulmalla $0^\circ$ myös taitekulma on $0^\circ$.
-**Kuvaajan lukeminen:** Sinit ovat: $\sin\alpha_1 = 0{,}174;\ 0{,}342;\ 0{,}500;\ 0{,}643;\ 0{,}766;\ 0{,}866;\ 0{,}940$ ja $\sin\alpha_2 = 0{,}113;\ 0{,}233;\ 0{,}326;\ 0{,}431;\ 0{,}508;\ 0{,}588;\ 0{,}623$. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten suora piirretään pisteiden lomaan. Kulmakerroin luetaan kahdesta sovitetun suoran pisteestä, ei kahdesta vierekkäisestä mittauspisteestä: suora kulkee pisteiden $(0;\ 0)$ ja $(0{,}60;\ 0{,}90)$ kautta.
+**Kuvaajan lukeminen:** Sinit ovat: $\sin\alpha_1 = 0{,}174;\ 0{,}342;\ 0{,}500;\ 0{,}643;\ 0{,}766;\ 0{,}866;\ 0{,}940$ ja $\sin\alpha_2 = 0{,}113;\ 0{,}233;\ 0{,}326;\ 0{,}431;\ 0{,}508;\ 0{,}588;\ 0{,}623$. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten suora piirretään pisteiden lomaan. Kuvaaja piirretään itse ja tarkistetaan siitä, että pisteet asettuvat origon kautta kulkevan suoran ympärille. Kulmakerroin luetaan kahdesta sovitetun suoran pisteestä, ei kahdesta vierekkäisestä mittauspisteestä: suora kulkee pisteiden $(0;\ 0)$ ja $(0{,}60;\ 0{,}90)$ kautta.
 **Kaava:** $\sin\alpha_1 = \dfrac{n_2}{n_1} \sin\alpha_2$, joten kulmakerroin on $k = \dfrac{\Delta(\sin\alpha_1)}{\Delta(\sin\alpha_2)} = \dfrac{n_2}{n_1}$ ja $n_2 = k\, n_1$
 **Muunnokset:** Ei tarvita: sinit ja taitekertoimet ovat yksikköttömiä.
 **Sijoitus:** $k = \dfrac{0{,}90 - 0}{0{,}60 - 0} = 1{,}50$, joten $n_2 = 1{,}50 \cdot 1{,}00 = 1{,}50$. Pienimmän neliösumman suora origon kautta antaa kulmakertoimeksi $1{,}498$.
 **Vastaus:** $n_2 \approx 1{,}50$, kolme merkitsevää numeroa; kulmat on luettu $0{,}5^\circ$:n tarkkuudella, joten kolmas numero on jo epävarma.
-**Järkevyys:** Kulmakerroin on suurempi kuin $1$, joten lasi on ilmaa optisesti tiheämpää, ja kaikilla pisteillä taitekulma on tulokulmaa pienempi. Yksittäiset sinien suhteet $\sin\alpha_1 : \sin\alpha_2$ ovat välillä $1{,}47\ldots 1{,}54$, joten $1{,}50$ on niiden keskellä. Arvo on tyypillinen lasille.
+**Järkevyys:** Kulmakerroin on suurempi kuin $1$, joten lasi on ilmaa optisesti tiheämpää, ja kaikilla pisteillä taitekulma on tulokulmaa pienempi. Yksittäiset sinien suhteet $\sin\alpha_1 : \sin\alpha_2$ ovat välillä $1{,}47$–$1{,}54$, joten $1{,}50$ on niiden keskellä. Arvo on tyypillinen lasille.
 
 ## fy7-10-L2-06
-**Annettu:** tulokulma $\alpha_1 = 60{,}0^\circ$, veden taitekerroin $n_2 = 1{,}33$, ilman taitekerroin $n_1 = 1{,}00$; opiskelijan tulos $45{,}1^\circ$
+**Annettu:** tulokulma $\alpha_1 = 50{,}0^\circ$, veden taitekerroin $n_2 = 1{,}33$, ilman taitekerroin $n_1 = 1{,}00$; opiskelijan tulos $37{,}6^\circ$
 **Kysytty:** oikea taitekulma $\alpha_2$ asteina
 **Periaate:** Opiskelijan päättely taittumissuunnasta on oikein: veteen siirryttäessä säde taittuu kohti normaalia. Virhe on se, että hän jakoi kulman taitekertoimella. Taittumislaki koskee kulmien sinejä, ei kulmia, joten taitekulma ei ole tulokulma jaettuna taitekertoimella. Kulma ja sen sini eivät ole verrannollisia: tulokulman kasvaessa taitekulma kasvaa yhä hitaammin.
 **Kaava:** $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$, josta $\sin\alpha_2 = \dfrac{n_1 \sin\alpha_1}{n_2}$
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksikköttömiä, ja kulma on asteina.
-**Sijoitus:** $\sin\alpha_2 = \dfrac{1{,}00 \cdot \sin 60{,}0^\circ}{1{,}33} = \dfrac{0{,}8660}{1{,}33} = 0{,}6511$, joten $\alpha_2 = 40{,}63^\circ$
-**Vastaus:** $\alpha_2 \approx 40{,}6^\circ$, kolme merkitsevää numeroa kuten tulokulmassa ja taitekertoimessa.
-**Järkevyys:** Opiskelijan tulos ei toteuta taittumislakia: $1{,}33 \cdot \sin 45{,}1^\circ = 0{,}942$, mutta $1{,}00 \cdot \sin 60{,}0^\circ = 0{,}866$. Oikealla kulmalla $1{,}33 \cdot \sin 40{,}6^\circ = 0{,}866$, joten sinit täsmäävät.
+**Sijoitus:** $\sin\alpha_2 = \dfrac{1{,}00 \cdot \sin 50{,}0^\circ}{1{,}33} = \dfrac{0{,}7660}{1{,}33} = 0{,}5760$, joten $\alpha_2 = 35{,}17^\circ$
+**Vastaus:** $\alpha_2 \approx 35{,}2^\circ$, kolme merkitsevää numeroa kuten tulokulmassa ja taitekertoimessa.
+**Järkevyys:** Opiskelijan tulos ei toteuta taittumislakia: $1{,}33 \cdot \sin 37{,}6^\circ = 0{,}811$, mutta $1{,}00 \cdot \sin 50{,}0^\circ = 0{,}766$. Oikealla kulmalla $1{,}33 \cdot \sin 35{,}2^\circ = 0{,}766$, joten sinit täsmäävät.
 
 ## fy7-10-L2-07
 **Annettu:** tulokulma $\alpha_1 = 45{,}0^\circ \pm 0{,}5^\circ$, taitekulma $\alpha_2 = 28{,}0^\circ \pm 0{,}5^\circ$, ilman taitekerroin $n_1 = 1{,}00$
@@ -173,13 +173,13 @@
 **Muunnokset:** Ei tarvita: kulmat ovat asteina ja taitekertoimet yksikköttömiä.
 **Sijoitus:** $n = \dfrac{1{,}00 \cdot \sin 45{,}0^\circ}{\sin 28{,}0^\circ} = 1{,}506$; $n_\text{max} = \dfrac{\sin 45{,}5^\circ}{\sin 27{,}5^\circ} = 1{,}545$; $n_\text{min} = \dfrac{\sin 44{,}5^\circ}{\sin 28{,}5^\circ} = 1{,}469$; $\Delta n = \dfrac{1{,}545 - 1{,}469}{2} = 0{,}038$
 **Vastaus:** $\Delta n \approx 0{,}038$, kaksi merkitsevää numeroa; epävarmuus ilmoitetaan yhdellä tai kahdella merkitsevällä numerolla, joten tulos on $n = 1{,}51 \pm 0{,}04$.
-**Järkevyys:** Suhteellinen epävarmuus on $0{,}038 : 1{,}506 = 0{,}025 = 2{,}5\,\%$. Taitekulman $0{,}5^\circ$:n lukema vaikuttaa sinin suhteelliseen arvoon noin $1{,}6\,\%$ ja tulokulman noin $0{,}9\,\%$, yhteensä noin $2{,}5\,\%$, joten epävarmuus on samaa suuruusluokkaa. Taulukon akryylin taitekerroin $1{,}49$ on välillä $1{,}469\ldots 1{,}545$.
+**Järkevyys:** Suhteellinen epävarmuus on $0{,}038 : 1{,}506 = 0{,}025 = 2{,}5\,\%$. Taitekulman $0{,}5^\circ$:n lukema vaikuttaa sinin suhteelliseen arvoon noin $1{,}6\,\%$ ja tulokulman noin $0{,}9\,\%$, yhteensä noin $2{,}5\,\%$, joten epävarmuus on samaa suuruusluokkaa. Taulukon akryylin taitekerroin $1{,}49$ on välillä $1{,}469$–$1{,}545$.
 
 ## fy7-10-L3-04
 **Annettu:** esineen syvyys $d = 60{,}0\,\text{cm}$, katselukulmat $\alpha_2 = 10{,}0^\circ;\ 20{,}0^\circ;\ 30{,}0^\circ;\ 40{,}0^\circ$ ja näennäiset syvyydet $h' = 44{,}9;\ 43{,}8;\ 42{,}0;\ 39{,}6\,\text{cm}$, ilman taitekerroin $n_2 = 1{,}00$
 **Kysytty:** veden taitekerroin $n$ (yksikötön) neljän rivin keskiarvona; lisäksi perustelu näennäiselle syvyydelle
-**Periaate:** Esineestä pinnan pisteeseen kulkeva säde ja silmään tuleva säde kohtaavat pinnan samassa pisteessä. Sen vaakaetäisyys esineen kohdalta on $x = d\tan\alpha_1$ vedessä ja $x = h'\tan\alpha_2$ näennäisen paikan kautta. Kun nämä merkitään yhtä suuriksi, saadaan $\alpha_1$. Sen jälkeen taitekerroin saadaan taittumislaista veden ja ilman rajapinnassa.
-**Kuvaajan lukeminen:** Taulukon rivit luetaan pareina $(\alpha_2,\ h')$. Jokaisesta rivistä lasketaan oma $\alpha_1$ ja oma $n$, ja lopuksi niistä lasketaan keskiarvo, koska mittaukset hajoavat hieman.
+**Periaate:** Esineestä pinnan pisteeseen kulkeva säde ja silmään tuleva säde kohtaavat pinnan samassa pisteessä. Sen vaakaetäisyys esineen kohdalta on $x = d\tan\alpha_1$ vedessä ja $x = h'\tan\alpha_2$ näennäisen paikan kautta. Kun nämä merkitään yhtä suuriksi, saadaan $\alpha_1$. Oletetaan, että esine näyttää olevan suoraan todellisen paikkansa yläpuolella, joten näennäisen paikan kautta piirretty jatke lähtee samasta pystysuorasta kuin esine. Sen jälkeen taitekerroin saadaan taittumislaista veden ja ilman rajapinnassa.
+**Taulukon lukeminen:** Taulukon rivit luetaan pareina $(\alpha_2,\ h')$. Jokaisesta rivistä lasketaan oma $\alpha_1$ ja oma $n$, ja lopuksi niistä lasketaan keskiarvo, koska mittaukset hajoavat hieman.
 **Kaava:** $d\tan\alpha_1 = h'\tan\alpha_2$, josta $\tan\alpha_1 = \dfrac{h'\tan\alpha_2}{d}$; taittumislaista $n \sin\alpha_1 = n_2 \sin\alpha_2$ seuraa $n = \dfrac{n_2 \sin\alpha_2}{\sin\alpha_1}$ ja keskiarvo $n_\text{ka} = \dfrac{n_{10} + n_{20} + n_{30} + n_{40}}{4}$
 **Muunnokset:** Ei tarvita: $h'$ ja $d$ ovat senttimetreinä, joten niiden suhde on yksikötön.
 **Sijoitus:** Rivillä $10{,}0^\circ$: $\tan\alpha_1 = \dfrac{44{,}9 \cdot \tan 10{,}0^\circ}{60{,}0} = 0{,}1320$, $\alpha_1 = 7{,}517^\circ$, $n = \dfrac{\sin 10{,}0^\circ}{\sin 7{,}517^\circ} = 1{,}3274$. Rivillä $20{,}0^\circ$: $\alpha_1 = 14{,}880^\circ$, $n = 1{,}3319$. Rivillä $30{,}0^\circ$: $\alpha_1 = 22{,}006^\circ$, $n = 1{,}3344$. Rivillä $40{,}0^\circ$: $\alpha_1 = 28{,}978^\circ$, $n = 1{,}3268$. Summa on $1{,}3274 + 1{,}3319 + 1{,}3344 + 1{,}3268 = 5{,}3205$, joten $n_\text{ka} = \dfrac{5{,}3205}{4} = 1{,}3301$
@@ -193,5 +193,5 @@
 **Kaava:** $\sin\alpha_2 = \dfrac{n_1 \sin\alpha_1}{n_2}$ ja $\sin\alpha_3 = \dfrac{n_1 \sin\alpha_1}{n_3}$; $x = t_2 \tan\alpha_2 + t_3 \tan\alpha_3$
 **Muunnokset:** Ei tarvita: paksuudet ovat millimetreinä, joten $x$ saadaan millimetreinä.
 **Sijoitus:** a) $\sin\alpha_2 = \dfrac{1{,}00 \cdot \sin 55{,}0^\circ}{1{,}52} = 0{,}5389$, joten $\alpha_2 = 32{,}61^\circ$. b) $\sin\alpha_3 = \dfrac{1{,}00 \cdot \sin 55{,}0^\circ}{1{,}33} = 0{,}6159$, joten $\alpha_3 = 38{,}02^\circ$; ilman lasilevyä tulos olisi sama, koska ilmasta suoraan veteen tulevalle säteelle $1{,}00 \cdot \sin 55{,}0^\circ = 1{,}33 \cdot \sin\alpha_3$. c) $x = 6{,}0\,\text{mm} \cdot \tan 32{,}61^\circ + 20{,}0\,\text{mm} \cdot \tan 38{,}02^\circ = 3{,}839\,\text{mm} + 15{,}636\,\text{mm} = 19{,}47\,\text{mm}$
-**Vastaus:** $x \approx 19{,}5\,\text{mm}$, kolme merkitsevää numeroa kuten tulokulmassa ja taitekertoimissa.
+**Vastaus:** $x \approx 19{,}5\,\text{mm}$, kolme merkitsevää numeroa kuten tulokulmassa ja taitekertoimissa; lasin termi ($3{,}8\,\text{mm}$) on pieni, joten $20{,}0\,\text{mm}$:n vesikerros rajoittaa tuloksen tarkkuutta.
 **Järkevyys:** Jos säde kulkisi koko $26{,}0\,\text{mm}$:n matkan ilman suunnassa $55{,}0^\circ$, vaakasuuntainen matka olisi $26{,}0\,\text{mm} \cdot \tan 55{,}0^\circ = 37{,}1\,\text{mm}$. Tiheämmissä aineissa säde on lähempänä normaalia, joten matka on tätä lyhyempi, ja $19{,}5\,\text{mm} < 37{,}1\,\text{mm}$. Kulmat $32{,}6^\circ < 38{,}0^\circ < 55{,}0^\circ$ ovat järjestyksessä taitekertoimien $1{,}52 > 1{,}33 > 1{,}00$ mukaan.

@@ -34,7 +34,7 @@ th_p = 4 * asin(sin(59.5) / 1.3315) - 2 * 59.5       # red rainbow ray (lesson t
 th_v = 4 * asin(sin(58.8) / 1.3431) - 2 * 58.8       # violet rainbow ray (lesson table n): 40,63°
 a["fy7-11-L3-03"] = th_p - th_v                      # width of the bow 1,665°
 # Exercise-bank additions
-# L1-06 (words): violet refracts more than red because the glass's n is larger for violet (dispersion); the frequency does not change
+# L1-06 (words): the correct option is C: the glass n is larger for violet (dispersion) so violet slows more; the frequency does not change
 a["fy7-11-L1-07"] = 405 / 1.530                      # λ in glass = λ0 / n (f constant, v = c / n) = 264,7 nm
 a["fy7-11-L1-08"] = 42.3 - 30.0                      # red edge 42,3° from the antisolar point, Sun 30,0° high: top at θ − h = 12,3°
 def d_alpha(n_p, n_v):                               # difference of the refraction angles of red and violet at α1 = 60,0°

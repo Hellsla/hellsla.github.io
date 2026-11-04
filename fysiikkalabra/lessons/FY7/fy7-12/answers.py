@@ -23,7 +23,7 @@ a["fy7-12-L2-03"] = c / n_plastic / 1e3                     # v = c / n = c sin 
 a["fy7-12-L2-04"] = 1.46 * 250e3 / c * 1e3                  # t = s / v = n s / c = 1,2167 ms -> 1,22 ms
 alpha_r5 = [41.8, 42.6, 41.5, 42.3, 42.0]                   # data of L2-05 (critical angles of a plastic against air, degrees)
 a["fy7-12-L2-05"] = 1.00 / sin(radians(sum(alpha_r5) / len(alpha_r5)))   # mean 42,04°, n = 1 / sin α_r = 1,493 -> 1,49
-pulse = [(49.0, 1), (49.2, 4), (49.4, 52), (49.6, 91), (49.8, 96), (50.0, 88), (50.2, 63), (50.4, 21), (50.6, 5), (50.8, 2)]   # data of L2-06 (t in µs, I in %)
+pulse = [(49.0, 0), (49.2, 0), (49.4, 52), (49.6, 91), (49.8, 96), (50.0, 88), (50.2, 63), (50.4, 21), (50.6, 5), (50.8, 2)]   # data of L2-06 (t in µs, I in %)
 half = [t for t, i in pulse if i >= 50]                     # rows with I >= 50 %: 49,4 ... 50,2 µs
 a["fy7-12-L2-06"] = (max(half) - min(half)) * 1e3           # pulse width 0,8 µs = 800 ns
 a["fy7-12-L2-07"] = degrees(asin(1.00 * sin(radians(70.0)) / 1.50))   # air -> glass has no critical angle: β = 38,79° -> 38,8°

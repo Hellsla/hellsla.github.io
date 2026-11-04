@@ -47,22 +47,22 @@
       "kind": [
         "concept"
       ],
-      "answer": "Kentät ovat kohtisuorassa toisiaan ja etenemissuuntaa vastaan, ja kumpikin kenttä synnyttää toisen.",
+      "answer": "Kentät ovat kohtisuorassa toisiaan ja etenemissuuntaa vastaan, koska aalto on poikittainen.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "Kentät ovat kohtisuorassa toisiaan ja etenemissuuntaa vastaan, ja kumpikin kenttä synnyttää toisen.",
-          "correct": true,
-          "feedback": "Oikein: muuttuva sähkökenttä synnyttää magneettikentän ja muuttuva magneettikenttä sähkökentän, joten aalto etenee tyhjiössäkin. Kentät värähtelevät kohtisuorassa toisiaan ja etenemissuuntaa vastaan."
-        },
-        {
-          "text": "Kentät värähtelevät etenemissuunnan suuntaisesti, koska aalto on pitkittäinen kuten ääni ilmassa.",
+          "text": "Kentät värähtelevät etenemissuunnan suuntaisesti, koska aalto on pitkittäinen kuten ääni.",
           "feedback": "Sähkömagneettinen aalto on poikittainen: kentät värähtelevät kohtisuorassa etenemissuuntaa vastaan. Ääni on pitkittäistä aaltoliikettä ja tarvitsee väliaineen, valo ei."
         },
         {
-          "text": "Vain sähkökenttä värähtelee, ja magneettikenttä pysyy vakiona, koska magneettikenttää syntyy vain kestomagneeteista.",
+          "text": "Vain sähkökenttä värähtelee, koska magneettikenttää syntyy vain kestomagneeteista.",
           "feedback": "Magneettikenttä värähtelee aallossa sähkökentän kanssa. Muuttuva sähkökenttä synnyttää magneettikentän, joten aallon magneettikenttä ei tarvitse kestomagneettia."
+        },
+        {
+          "text": "Kentät ovat kohtisuorassa toisiaan ja etenemissuuntaa vastaan, koska aalto on poikittainen.",
+          "correct": true,
+          "feedback": "Oikein: muuttuva sähkökenttä synnyttää magneettikentän ja muuttuva magneettikenttä sähkökentän, joten aalto etenee tyhjiössäkin. Kentät värähtelevät kohtisuorassa toisiaan ja etenemissuuntaa vastaan."
         },
         {
           "text": "Kentät ovat samansuuntaiset keskenään, koska ne värähtelevät yhtä aikaa samassa suunnassa.",
@@ -167,7 +167,7 @@
     {
       "id": "fy7-9-L2-07",
       "level": 2,
-      "text": "Oppilaat tutkivat, miten hehkulampun langan säteilyn spektrin huipun aallonpituus riippuu langan lämpötilasta. Langan lämpötila ja spektrin huippu mitattiin neljällä eri jännitteellä (esimerkkiaineisto).\n\na) Laske jokaisen mittauksen tulo $\\lambda_\\text{max} T$ yksikössä $10^{-3}\\,\\text{m} \\cdot \\text{K}$.\n\nb) Laske tulojen keskiarvo $b_{\\text{ka}}$ ja vertaa sitä Wienin siirtymälain vakioon $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Tukevatko mittaukset lakia?\n\nKirjoita vastauslaatikkoon b-kohdan keskiarvo yksikössä $10^{-3}\\,\\text{m} \\cdot \\text{K}$.",
+      "text": "Oppilaat tutkivat, miten hehkulampun langan säteilyn spektrin huipun aallonpituus riippuu langan lämpötilasta. Langan lämpötila ja spektrin huippu mitattiin neljällä eri jännitteellä (esimerkkiaineisto). Lanka oletetaan mustaksi kappaleeksi.\n\na) Laske jokaisen mittauksen tulo $\\lambda_\\text{max} T$ yksikössä $10^{-3}\\,\\text{m} \\cdot \\text{K}$.\n\nb) Laske tulojen keskiarvo $b_{\\text{ka}}$ ja vertaa sitä Wienin siirtymälain vakioon $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Tukevatko mittaukset lakia?\n\nKirjoita vastauslaatikkoon b-kohdan keskiarvo yksikössä $10^{-3}\\,\\text{m} \\cdot \\text{K}$.",
       "kind": [
         "data",
         "experiment"
@@ -253,7 +253,7 @@
           ],
           [
             "B",
-            "500",
+            "480",
             "keltavalkoinen"
           ],
           [
