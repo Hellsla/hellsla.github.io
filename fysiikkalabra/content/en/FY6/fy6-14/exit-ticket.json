@@ -1,0 +1,10 @@
+[
+  {
+    "q": "What does it mean that a diode is connected in the reverse direction, and what is the voltage across the diode then?",
+    "a": "In the reverse direction the cathode of the diode is on the side of the positive terminal of the source, and practically no current flows. Since $I = 0$, the voltage of a resistor in series is $RI = 0$, and the whole voltage of the source is across the diode."
+  },
+  {
+    "q": "The short-circuit current of a solar panel is $5.0\\,\\text{A}$ and the open-circuit voltage $21\\,\\text{V}$. Why can the power of the panel not be $5.0\\,\\text{A} \\cdot 21\\,\\text{V} = 105\\,\\text{W}$?",
+    "a": "The greatest current and the greatest voltage do not occur at the same time: in a short circuit the voltage is zero and at open circuit the current is zero, so the power is zero in both. The greatest power is obtained at the maximum power point, where both the voltage and the current are slightly smaller than their greatest values, so the power stays below $105\\,\\text{W}$."
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "id": "fy6-11",
+  "course": "FY6",
+  "title": "Uniform electric field",
+  "goals": [
+    "LOPS FY6: Coulomb's law and the uniform electric field",
+    "LOPS FY6: can use the concepts of field and potential to describe the electric field"
+  ],
+  "prerequisites": [
+    "fy6-10"
+  ],
+  "glossary": [
+    "electric field",
+    "uniform electric field",
+    "electric field strength",
+    "field line",
+    "test charge"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

@@ -1,0 +1,230 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.U===2 && S.d===4 && S.q===2 && S.x===0 && S.h===2 && S.kentta==='viivat' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: U = 2,0 kV, d = 4,0 cm, q = +2,0 nC, x = 0, h = 2,0 cm, field lines shown (must run before any setup)"
+ },
+ {
+  "expr": "window.simState.F",
+  "expected": 100.0,
+  "tol": 0.01,
+  "note": "on load: F = 2,0 nC · 5,0e4 V/m = 100 µN (lesson-answers sim-F)"
+ },
+ {
+  "expr": "window.simState.E",
+  "expected": 50000.0,
+  "tol": 0.01,
+  "note": "on load: E at the ball equals U : d = 5,0e4 V/m (computed from the plate charges, not set)"
+ },
+ {
+  "expr": "(() => { const R=[...document.querySelectorAll('#sim-root input[type=range]')].map(r=>[r.min,r.max,r.step].join(',')); return R.length===5 && R[0]==='0,3,0.5' && R[1]==='2,6,1' && R[2]==='-3,3,1' && R[3]==='-12,12,1' && R[4]==='0.5,5.5,0.5' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "sliders: U 0–3 kV (0,5), d 2–6 cm (1), q −3…+3 nC (1), x −12…12 cm (1), h 0,5–5,5 cm (0,5)"
+ },
+ {
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root select')].map(s=>[...s.options].map(o=>o.value).join(',')); return L.length===1 && L[0]==='viivat,vektorit,piilossa' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "one select: field lines, field vectors or none"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); return k.indexOf('canvas')<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='U,d,h,kentta,q,x' && P.U.unit==='kV' && P.d.unit==='cm' && P.q.unit==='nC' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares U (kV), d (cm), q (nC), x, h (cm) and kentta"
+ },
+ {
+  "expr": "(() => { const t=document.querySelector('#sim-root .readout').textContent; return t.indexOf('Voima-anturi')>=0 && t.indexOf('V/m')<0 && t.indexOf('N/C')<0 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows the sensor's force only, not the field strength (the student computes E = F : q)"
+ },
+ {
+  "expr": "(() => { const c=document.querySelector('#sim-root canvas'); return c.width>=600 && c.height>=400 ? 1 : 0; })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "canvas 600x400 (a single panel; labels grow on a narrow screen)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],2); I(R[3],0); I(R[4],0.5); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 100.0,
+  "tol": 0.01,
+  "note": "koe 1: h = 0.5 cm: F = 100 µN, the same as in the middle (lesson-answers koe1-h0.5)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],2); I(R[3],0); I(R[4],3.5); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 100.0,
+  "tol": 0.01,
+  "note": "koe 1: h = 3.5 cm: F = 100 µN, the same as in the middle (lesson-answers koe1-h3.5)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],2); I(R[3],0); I(R[4],3.5); I(S[0],'viivat');",
+  "expr": "window.simState.suunta==='dir_alas' && Math.abs(window.simState.Fx)<1e-6 ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "between the plates the force on +q points straight down, along E"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],1); I(R[3],0); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 50.0,
+  "tol": 0.01,
+  "note": "koe 2: q = 1 nC: F = 50 µN (lesson-answers koe2-q1)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],3); I(R[3],0); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 150.0,
+  "tol": 0.01,
+  "note": "koe 2: q = 3 nC: F = 150 µN (lesson-answers koe2-q3)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],-3); I(R[3],0); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 150.0,
+  "tol": 0.01,
+  "note": "koe 2: q = -3 nC: F = 150 µN (lesson-answers koe2-q-3)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],-3); I(R[3],0); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.Fy>0 && window.simState.suunta==='dir_ylos' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "a negative charge is pushed up, against E"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],0); I(R[3],0); I(R[4],2); I(S[0],'viivat');",
+  "expr": "(() => { const S=window.simState; return S.F===0 && S.suunta==='dir_ei' && Math.abs(S.E-50000)<500 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "q = 0: no force, but the field is still there"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],2); I(R[2],2); I(R[3],0); I(R[4],1); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 200.0,
+  "tol": 0.01,
+  "note": "koe 3: d = 2 cm, h = 1,0 cm: F = 200.0 µN, E = U : d (lesson-answers koe3-d2)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],3); I(R[2],2); I(R[3],0); I(R[4],1); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 133.333,
+  "tol": 0.01,
+  "note": "koe 3: d = 3 cm, h = 1,0 cm: F = 133.333 µN, E = U : d (lesson-answers koe3-d3)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],6); I(R[2],2); I(R[3],0); I(R[4],1); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 66.667,
+  "tol": 0.01,
+  "note": "koe 3: d = 6 cm, h = 1,0 cm: F = 66.667 µN, E = U : d (lesson-answers koe3-d6)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],2); I(R[2],2); I(R[3],0); I(R[4],5.5); I(S[0],'viivat');",
+  "expr": "window.simState.h",
+  "expected": 1.5,
+  "tol": 0,
+  "note": "h is kept between the plates: at d = 2 cm at most 1,5 cm"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],3); I(R[1],4); I(R[2],2); I(R[3],0); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 150.0,
+  "tol": 0.01,
+  "note": "U = 3 kV: F = 150.0 µN, proportional to U"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],1); I(R[1],4); I(R[2],2); I(R[3],0); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 50.0,
+  "tol": 0.01,
+  "note": "U = 1 kV: F = 50.0 µN, proportional to U"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],0); I(R[1],4); I(R[2],2); I(R[3],0); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 0,
+  "tol": 0.001,
+  "note": "U = 0: no field, no force"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],2); I(R[3],8); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 98.235,
+  "tol": 0.01,
+  "note": "koe 4: x = 8 cm on the midline: F = 98.235 µN; the field weakens at the end of the plates (x = 10 cm) and outside (lesson-answers koe4-x8)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],2); I(R[3],10); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 75.818,
+  "tol": 0.01,
+  "note": "koe 4: x = 10 cm on the midline: F = 75.818 µN; the field weakens at the end of the plates (x = 10 cm) and outside (lesson-answers koe4-x10)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],2); I(R[3],12); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 35.078,
+  "tol": 0.01,
+  "note": "koe 4: x = 12 cm on the midline: F = 35.078 µN; the field weakens at the end of the plates (x = 10 cm) and outside (lesson-answers koe4-x12)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],2); I(R[3],11); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.F",
+  "expected": 52.637,
+  "tol": 0.01,
+  "note": "koe 4: x = 11 cm on the midline: F = 52.637 µN, outside the end of the plates (lesson-answers koe4-x11)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],2); I(R[3],11); I(R[4],3.5); I(S[0],'viivat');",
+  "expr": "window.simState.suunta==='dir_vino_alas' ? 1 : 0",
+  "expected": 1,
+  "tol": 0,
+  "note": "beyond the end of the plates, off the midline, the field and the force are oblique"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],2); I(R[3],0); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.nlines",
+  "expected": 10,
+  "tol": 0,
+  "note": "field lines: their number is proportional to U : d (10 lines at 5,0e4 V/m)"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],2); I(R[2],2); I(R[3],0); I(R[4],2); I(S[0],'viivat');",
+  "expr": "window.simState.nlines",
+  "expected": 20,
+  "tol": 0,
+  "note": "half the distance, twice the field, twice the lines"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],2); I(R[3],0); I(R[4],2); I(S[0],'vektorit');",
+  "expr": "(() => { const S=window.simState; return S.kentta==='vektorit' && S.nlines===0 && Math.abs(S.F-100)<1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "field vectors instead of lines; the force is unchanged"
+ },
+ {
+  "setup": "document.getElementById('sim-root').scrollIntoView({block:'center'}); const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const S=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],2); I(R[1],4); I(R[2],2); I(R[3],0); I(R[4],2); I(S[0],'piilossa');",
+  "expr": "(() => { const S=window.simState; return S.kentta==='piilossa' && Math.abs(S.F-100)<1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "field hidden: the force is unchanged"
+ }
+]

@@ -1,0 +1,426 @@
+{
+  "version": 1,
+  "contribution": "Electric charge is introduced as a multiple of the elementary charge that is conserved in rubbing, contact and induction; Coulomb's law is investigated with a simulation (the square of the distance, the product of the charges, force and reaction force), the field of a point charge is described qualitatively with field lines, and electric current is linked to the movement of charge.",
+  "learn": [
+    "explain the charging of objects and induction as the transfer and conservation of charge.",
+    "calculate the force between two point charges with Coulomb's law and work out its direction.",
+    "describe the electric field of a point charge with field lines."
+  ],
+  "prior": [
+    "Electric current is moving charge, $I = Q : t$, and the charge of an electron is $-e$ (chapter *Electric circuit, current and voltage*)",
+    "A force and its reaction force are equal in magnitude and opposite in direction (chapter *Interaction and force: Newton's first and third laws*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Rub a balloon on a wool sweater for a moment and hold it against a wall. The balloon stays stuck to the wall without tape and stays there for a long time. In the same way, a plastic comb rubbed on hair lifts small bits of paper from a table. The wall and the paper are not charged, and nothing has been rubbed on them.",
+      "question": "Why does a charged balloon stick to a wall that has no electric charge?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: electric current and charge",
+      "optional": true,
+      "prompt": "A charge of $0.50\\,\\text{C}$ passes through the cross-section of a conductor in $2.0\\,\\text{s}$. How large is the electric current?",
+      "choices": [
+        {
+          "text": "$0.25\\,\\text{A}$",
+          "correct": true,
+          "feedback": "Correct. Electric current is the charge that passes in a unit of time, $I = Q : t = 0.50\\,\\text{C} : 2.0\\,\\text{s} = 0.25\\,\\text{A}$ (chapter *Electric circuit, current and voltage*). Today we look at where charge comes from and how charges act on each other."
+        },
+        {
+          "text": "$1.0\\,\\text{A}$",
+          "feedback": "You multiplied the charge and the time. Current tells how much charge passes in a second, so the charge is divided by the time: $0.50\\,\\text{C} : 2.0\\,\\text{s} = 0.25\\,\\text{A}$."
+        },
+        {
+          "text": "$4.0\\,\\text{A}$",
+          "feedback": "You divided the time by the charge. Current is charge divided by time, $I = Q : t$, and its unit is $\\text{C/s} = \\text{A}$; the inverse quotient would give the unit $\\text{s/C}$."
+        },
+        {
+          "text": "$0.50\\,\\text{A}$",
+          "feedback": "This is the charge that passed, not the current. The charge passed in two seconds, so in one second half of it passes: $0.25\\,\\text{A}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: distance and force",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "Two small metal spheres each have a charge of $+20\\,\\text{nC}$, and the distance between their centres is $3.0\\,\\text{cm}$. The spheres are moved twice as far apart, to $6.0\\,\\text{cm}$. How does the electric force between the spheres change?",
+      "choices": [
+        {
+          "text": "The force halves, because the distance doubles.",
+          "feedback": "The model's readings disprove this: at a distance of $3.0\\,\\text{cm}$ the force is $3.99\\,\\text{mN}$ and at $6.0\\,\\text{cm}$ only $0.999\\,\\text{mN}$, which is about a quarter and not a half. The force is inversely proportional to the square of the distance, so doubling the distance divides the force by four."
+        },
+        {
+          "text": "The force becomes a quarter.",
+          "correct": true,
+          "feedback": "The model's readings support this: the force drops from $3.99\\,\\text{mN}$ to $0.999\\,\\text{mN}$, and at $12\\,\\text{cm}$ it is only $0.250\\,\\text{mN}$, a sixteenth. The force is inversely proportional to the square of the distance."
+        },
+        {
+          "text": "The force stays the same, because the charges of the spheres do not change.",
+          "feedback": "The charges stay the same, but the force also depends on the distance. In the model the force drops from $3.99\\,\\text{mN}$ to $0.999\\,\\text{mN}$ when the distance doubles."
+        },
+        {
+          "text": "The force decreases only a little, because moving a few centimetres is a small change.",
+          "feedback": "Even at short distances the relative change is what matters. When the distance doubles, the force in the model drops from $3.99\\,\\text{mN}$ to $0.999\\,\\text{mN}$, that is, to a quarter."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a larger charge",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "The charge of sphere 1 is $+20\\,\\text{nC}$ and the charge of sphere 2 is at first also $+20\\,\\text{nC}$. The charge of sphere 2 is increased to $+40\\,\\text{nC}$, and the distance stays the same. How do the electric forces on the spheres change?",
+      "choices": [
+        {
+          "text": "Only the force on sphere 2 grows, because its charge grew.",
+          "feedback": "The model's readings disprove this: the force on each sphere grows from $0.999\\,\\text{mN}$ to $2.00\\,\\text{mN}$. The spheres act on each other with a force and a reaction force, which are always equal."
+        },
+        {
+          "text": "Only the force on sphere 1 grows, because a larger charge acts on it more strongly.",
+          "feedback": "A larger charge does increase the force, but it increases both forces by the same amount: in the model each grows from $0.999\\,\\text{mN}$ to $2.00\\,\\text{mN}$. A force and its reaction force are equal."
+        },
+        {
+          "text": "Both forces double and stay equal to each other.",
+          "correct": true,
+          "feedback": "The model's readings support this: the force on each sphere grows from $0.999\\,\\text{mN}$ to $2.00\\,\\text{mN}$. The force is directly proportional to the product of the charges, and a force and its reaction force are always equal, even when the charges are different."
+        },
+        {
+          "text": "Both forces become four times as large, because the formula has a square.",
+          "feedback": "In the formula the square is on the distance, not on the charge. When one charge doubles, the product of the charges and the force double: in the model from $0.999\\,\\text{mN}$ to $2.00\\,\\text{mN}$."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-3",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: why does the balloon stick to the wall?",
+      "layout": "models",
+      "justify": true,
+      "reveal": {
+        "after": "teoria-osa",
+        "pending": "The feedback opens when the Theory summary is visible."
+      },
+      "prompt": "Four students explain why a negatively charged balloon stays stuck to a neutral wall. Whose explanation is correct?",
+      "choices": [
+        {
+          "text": "Aino: The balloon pulls electrons out of the wall, so the wall becomes positive as a whole and attracts the balloon.",
+          "feedback": "A negative balloon repels electrons and does not attract them, and no charge moves from the wall to the balloon. The wall stays neutral as a whole: its molecules become polarised, and the positive ends are closer to the balloon than the negative ones."
+        },
+        {
+          "text": "Bea: The charges in the wall's molecules shift slightly, and the nearer positive ends attract the balloon more than the farther negative ends repel it.",
+          "correct": true,
+          "feedback": "Exactly. The wall is an insulator, so the charges cannot move far, but every molecule becomes polarised. Because the electric force weakens as the distance grows, the pull of the nearby positive ends beats the repulsion of the more distant negative ends."
+        },
+        {
+          "text": "Cem: A charged object attracts all nearby objects in the same way as the Earth attracts all objects.",
+          "feedback": "The electric force is not like gravity, which pulls on all objects: like charges repel each other. The neutral wall is drawn towards the balloon only because the charge of the balloon shifts the charges in the wall's molecules."
+        },
+        {
+          "text": "Daniel: Rubbing makes the surface of the balloon slightly sticky, and the balloon sticks to the wall like a sticker, even if there is no charge.",
+          "feedback": "Rubbing does not make the balloon sticky: the balloon comes off easily when its charge leaks away, for example because of damp air. What holds the balloon to the wall is the electric force that arises when the charge of the balloon polarises the molecules of the wall."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Adjust the charges of the spheres and the distance, and watch how the force arrows and readings change. Mark points on the graph: how does the force depend on the distance?",
+      "howto": "The sliders set the charges of the spheres $q_1$ and $q_2$ between $-40$ and $+40\\,\\text{nC}$ and the distance between the centres of the spheres $r$ between $3.0$ and $12\\,\\text{cm}$. The red arrow $\\overline{F}_{21}$ is the force with which sphere 2 acts on sphere 1, and $\\overline{F}_{12}$ the force with which sphere 1 acts on sphere 2. The arrows are drawn above the spheres, and their length is proportional to the magnitude of the force; a very long arrow is cut short. *Mark a point* adds the present force and distance to the graph, which shows the points marked with the same charges. *Horizontal axis* switches the horizontal axis of the graph to the distance $r$ or to the inverse of the square of the distance, $\\tfrac{1}{r^2}$. *Field lines* shows the field lines of the common electric field of the spheres.",
+      "model": "The spheres are small compared with their distance, so in the model they are point charges in air, and their charges stay in place. In real spheres the charge shifts slightly on the surface when they are close together because of induction, so at very short distances the force differs from the model's value. The model also has no induction: when the charge of one sphere is zero, there is no force, although a real uncharged metal sphere would move towards a charged one. The numbers are values calculated by the model, not measurements.",
+      "calc": "The magnitude of the force is calculated with Coulomb's law\n\n$$F = k\\,\\frac{\\lvert q_1 q_2 \\rvert}{r^2}$$\n\nwhere $k = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$, the charges are converted to coulombs ($1\\,\\text{nC} = 10^{-9}\\,\\text{C}$) and the distance to metres, and the result is shown in millinewtons. The same $F$ acts on both spheres in opposite directions: away from the other sphere for charges of the same sign and towards the other sphere for charges of opposite signs. The field lines are drawn in small steps along the direction of the common field of the two point charges."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: force and distance",
+      "intro": "Test prediction 1. The charges of the spheres, $+20\\,\\text{nC}$, stay constant; change only the distance $r$. Record the force at least at the distances $3.0\\,\\text{cm}$, $6.0\\,\\text{cm}$ and $12\\,\\text{cm}$ and mark the points on the graph. Finally, switch the horizontal axis to the inverse of the square of the distance. How does the force change when the distance doubles?",
+      "initial": {
+        "q1": 20,
+        "q2": 20,
+        "r": 6
+      },
+      "locked": [
+        "q1",
+        "q2"
+      ],
+      "vary": "r",
+      "names": {
+        "q1": "charge q₁",
+        "q2": "charge q₂",
+        "r": "distance r"
+      },
+      "units": {
+        "q1": "nC",
+        "q2": "nC",
+        "r": "cm"
+      },
+      "measure": [
+        {
+          "key": "F",
+          "label": "F (mN)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "How many times larger is the force at a distance of $3.0\\,\\text{cm}$ than at a distance of $12\\,\\text{cm}$? Calculate from the readings in your table.",
+        "answer": 16,
+        "unit": "",
+        "tolerance": 0.02,
+        "hints": [
+          "Find the forces at the distances $3.0\\,\\text{cm}$ and $12\\,\\text{cm}$ in the table.",
+          "Divide the force at the shorter distance by the force at the longer distance.",
+          "With the model's values $3.99\\,\\text{mN} : 0.250\\,\\text{mN}$. The distance is four times as large, so what does the result tell about how the force depends on the distance?"
+        ],
+        "mistakes": [
+          {
+            "value": 4,
+            "feedback": "Four is the ratio of the distances $12\\,\\text{cm} : 3.0\\,\\text{cm}$. The ratio of the forces is larger: read the forces from the table and divide them by each other."
+          },
+          {
+            "value": 0.0625,
+            "feedback": "You divided the smaller force by the larger one. The question asks how many times larger the force is at the shorter distance, so divide $3.99\\,\\text{mN}$ by $0.250\\,\\text{mN}$."
+          }
+        ],
+        "solution": "**Given:** the model's readings when $q_1 = q_2 = +20\\,\\text{nC}$: at a distance $r_1 = 3.0\\,\\text{cm}$ the force is $F_1 = 3.99\\,\\text{mN}$ and at a distance $r_2 = 12\\,\\text{cm}$ the force is $F_2 = 0.250\\,\\text{mN}$\n\n**Find:** the ratio of the forces $F_1 : F_2$\n\n**Principle:** The charges stay the same, so only the distance changes the force. The ratio tells how many times larger the force is at the shorter distance, and it can be compared with the ratio of the distances.\n\n**Formula:** the ratio is $\\dfrac{F_1}{F_2}$\n\n**Conversions:** Not needed: both forces are in millinewtons, and the unit cancels.\n\n**Substitution:** $\\dfrac{F_1}{F_2} = \\dfrac{3.99\\,\\text{mN}}{0.250\\,\\text{mN}} \\approx 16.0$\n\n**Answer:** $16$; the model's readings have three significant figures.\n\n**Reasonableness:** The distance is four times as large, and $4^2 = 16$. So the force is inversely proportional to the square of the distance, as Coulomb's law says. If the force were inversely proportional to the distance alone, the ratio would be only $4$."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: charge, force and reaction force",
+      "intro": "Test prediction 2. The charge of sphere 1, $+20\\,\\text{nC}$, and the distance $6.0\\,\\text{cm}$ stay constant; change only the charge of sphere 2, $q_2$. Record the forces on both spheres at least with the charges $+10\\,\\text{nC}$, $+20\\,\\text{nC}$ and $+40\\,\\text{nC}$, and finally try a negative charge. Which sphere has the larger force on it?",
+      "initial": {
+        "q1": 20,
+        "q2": 20,
+        "r": 6
+      },
+      "locked": [
+        "q1",
+        "r"
+      ],
+      "vary": "q2",
+      "names": {
+        "q1": "charge q₁",
+        "q2": "charge q₂",
+        "r": "distance r"
+      },
+      "units": {
+        "q1": "nC",
+        "q2": "nC",
+        "r": "cm"
+      },
+      "measure": [
+        {
+          "key": "F21",
+          "label": "F₂₁ (mN)"
+        },
+        {
+          "key": "F12",
+          "label": "F₁₂ (mN)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: Coulomb's force",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Based on your tables, write: how does the force depend on the distance between the spheres and on the charge of sphere 2? Which sphere has the larger force on it, and what changed when the sign of the charge was changed?",
+      "model": "When the distance doubled from $3.0\\,\\text{cm}$ to $6.0\\,\\text{cm}$, the force dropped from $3.99\\,\\text{mN}$ to $0.999\\,\\text{mN}$, that is, to a quarter, and at four times the distance, $12\\,\\text{cm}$, it was a sixteenth, $0.250\\,\\text{mN}$. So the force is inversely proportional to the square of the distance: when the horizontal axis is $\\tfrac{1}{r^2}$, the points lie on a straight line through the origin. When the charge of sphere 2 doubled from $+20\\,\\text{nC}$ to $+40\\,\\text{nC}$, the force doubled from $0.999\\,\\text{mN}$ to $2.00\\,\\text{mN}$, so the force is directly proportional to the charge. Both spheres always had an equal force on them, even when the charges were different. When $q_2$ was changed to negative, the magnitude of the force stayed the same, but the spheres began to attract each other. The values are calculated by the model.",
+      "criteria": [
+        "The answer says that doubling the distance gives a quarter of the force, and justifies it with the numbers in the table.",
+        "The answer says that the force doubles when one charge doubles.",
+        "The answer says that the forces on both spheres are equal, even though the charges are different.",
+        "The answer says that the sign of the charge decides whether the spheres repel or attract each other, but not the magnitude of the force."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the model's values from the experiments and with the theory. Then return to the question at the start: why does a charged balloon stay stuck to a neutral wall?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2",
+        "ennuste-3"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The charges of two small spheres are $5.0\\,\\text{nC}$, and the distance between their centres is $2.0\\,\\text{cm}$. A student calculates the force between the spheres like this:\n\n$$\\begin{aligned} &F = k\\,\\frac{q^2}{r^2} \\\\ &= 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2} \\\\ &\\quad \\cdot \\frac{(5.0 \\cdot 10^{-9}\\,\\text{C})^2}{2.0^2} \\\\ &= 5.6 \\cdot 10^{-8}\\,\\text{N} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The distance was substituted in centimetres; the correct result is $F = 5.6 \\cdot 10^{-4}\\,\\text{N}$.",
+          "correct": true,
+          "feedback": "Correct. The unit of the constant $k$ contains $\\text{m}^2$, so the distance must be substituted in metres: $r = 2.0 \\cdot 0.01\\,\\text{m} = 0.020\\,\\text{m}$. Then the denominator is $(0.020\\,\\text{m})^2 = 4.0 \\cdot 10^{-4}\\,\\text{m}^2$ and not $4.0$, and the force is $10\\,000$ times as large, $5.6 \\cdot 10^{-4}\\,\\text{N}$. The error can also be seen from the units: the denominator is missing $\\text{m}^2$."
+        },
+        {
+          "text": "The distance should not be squared; the correct result is $F = 1.1 \\cdot 10^{-7}\\,\\text{N}$.",
+          "feedback": "In Coulomb's law the distance is raised to the second power, $F = k\\,\\tfrac{\\lvert q_1 q_2 \\rvert}{r^2}$, so the square belongs in the calculation. The error is in the unit: centimetres must be converted to metres before substituting."
+        },
+        {
+          "text": "The product of the charges should not be calculated; the correct way is to substitute just $5.0 \\cdot 10^{-9}\\,\\text{C}$.",
+          "feedback": "Coulomb's law contains the product of the charges $q_1 q_2$. When the charges are equal, the product is $(5.0 \\cdot 10^{-9}\\,\\text{C})^2$, as in the calculation. The error is in the unit of the distance."
+        },
+        {
+          "text": "There is no error in the calculation.",
+          "feedback": "There is an error in the calculation: the distance was substituted in centimetres, although the unit of the constant $k$ contains metres. The correct denominator is $(0.020\\,\\text{m})^2$, and the force is $5.6 \\cdot 10^{-4}\\,\\text{N}$."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "$1.0 \\cdot 10^{11}$ electrons are moved onto each of two identical small metal spheres. The distance between the centres of the spheres is $5.0\\,\\text{cm}$. How large is the electric force between the spheres? Give the answer in millinewtons.",
+      "answer": 0.923,
+      "unit": "mN",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the charge of each sphere when $1.0 \\cdot 10^{11}$ electrons have been moved onto it?",
+        "The charge is $Q = ne$. Then substitute the charges and the distance in metres into Coulomb's law.",
+        "The charge of each sphere is $-1.0 \\cdot 10^{11} \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} = -1.602 \\cdot 10^{-8}\\,\\text{C}$, and $r = 0.050\\,\\text{m}$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.0461,
+          "feedback": "You left out the square of the distance. In Coulomb's law the distance is raised to the second power: divide by $(0.050\\,\\text{m})^2$."
+        },
+        {
+          "value": 9.23e-05,
+          "feedback": "You substituted the distance in centimetres. The unit of the constant $k$ contains metres, so $r = 5.0\\,\\text{cm} = 0.050\\,\\text{m}$."
+        }
+      ],
+      "solution": "**Given:** the number of electrons moved onto each sphere $n = 1.0 \\cdot 10^{11}$, the distance $r = 5.0\\,\\text{cm}$; the elementary charge $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$ and the constant of Coulomb's law $k = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$\n\n**Find:** the magnitude of the force between the spheres $F$ in millinewtons\n\n**Principle:** Charge is made of elementary charges, so the charge of each sphere is $Q = ne$, and the spheres are negative. The spheres are small compared with the distance, so they can be treated as point charges, and the magnitude of the force comes from Coulomb's law. Having charges of the same sign, the spheres repel each other.\n\n**Formula:** $Q = ne$ and $F = k\\,\\dfrac{\\lvert q_1 q_2 \\rvert}{r^2}$, so with equal charges $F = \\dfrac{k (ne)^2}{r^2}$\n\n**Conversions:** $r = 5.0\\,\\text{cm} = 5.0 \\cdot 0.01\\,\\text{m} = 0.050\\,\\text{m}$; the answer is converted to millinewtons, $1\\,\\text{N} = 1000\\,\\text{mN}$.\n\n**Substitution:** $ne = 1.0 \\cdot 10^{11} \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} = 1.602 \\cdot 10^{-8}\\,\\text{C}$ and $F = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2} \\cdot \\dfrac{(1.602 \\cdot 10^{-8}\\,\\text{C})^2}{(0.050\\,\\text{m})^2} = 9.227 \\cdot 10^{-4}\\,\\text{N} = 0.9227\\,\\text{mN}$\n\n**Answer:** $0.92\\,\\text{mN}$, two significant figures like the number of electrons and the distance.\n\n**Reasonableness:** The charge of each sphere is about $16\\,\\text{nC}$, a little under the $20\\,\\text{nC}$ of the simulation. In the simulation spheres of $20\\,\\text{nC}$ at a distance of $6.0\\,\\text{cm}$ repel each other with a force of $1.0\\,\\text{mN}$, so a force of under a millinewton is believable with smaller charges and a slightly shorter distance."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise on three levels. The tasks of level 1 use one equation, the tasks of level 2 combine two steps or solve another quantity from the formula, and level 3 requires reasoning about the forces of several charges and about comparisons."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "A plastic comb is pulled through dry hair, and the comb becomes negatively charged. What happens to the hair?",
+      "choices": [
+        {
+          "text": "The hair becomes positively charged with an equal charge.",
+          "correct": true,
+          "feedback": "Correct. In rubbing, electrons move from the hair to the comb. Charge is conserved, so the hair is left with a positive charge equal to the negative charge the comb gained. That is why the hair rises towards the comb."
+        },
+        {
+          "text": "The hair stays neutral, because the charge was created in the comb.",
+          "feedback": "Rubbing does not create charge. The negative charge of the comb is electrons that moved from the hair, so the hair is left with an equal positive charge."
+        },
+        {
+          "text": "The hair becomes negatively charged, because charge spreads in contact.",
+          "feedback": "If both were negative, the total charge would have grown out of nothing. The electrons moved from the hair to the comb, so the hair is missing electrons and is positive."
+        },
+        {
+          "text": "Protons move from the comb to the hair, so the hair becomes positively charged.",
+          "feedback": "In solids the protons stay in the nuclei of the atoms. The hair is positive because electrons moved from it to the comb."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Read the graph",
+      "figure": "fy6-10/check-graph",
+      "prompt": "The graph shows the force $F$ between two identical, equally charged small spheres as a function of the distance $r$ between them. Determine the charge of the spheres from the graph. Give the answer in nanocoulombs.",
+      "answer": 30.0,
+      "unit": "nC",
+      "tolerance": 0.03,
+      "hints": [
+        "Choose a point on the graph whose values you can read accurately from the grid.",
+        "At the point $r = 3.0\\,\\text{cm}$ the force is $9.0\\,\\text{mN}$. When the charges are equal, Coulomb's law is $F = k\\,\\tfrac{q^2}{r^2}$.",
+        "Solve $q = r\\sqrt{\\tfrac{F}{k}}$ and substitute $r = 0.030\\,\\text{m}$ and $F = 9.0 \\cdot 10^{-3}\\,\\text{N}$."
+      ],
+      "mistakes": [
+        {
+          "value": 900,
+          "feedback": "You got the square of the charge, $q^2$. Still take the square root of the result."
+        },
+        {
+          "value": 3000,
+          "feedback": "You substituted the distance in centimetres. The unit of the constant $k$ contains metres, so $r = 3.0\\,\\text{cm} = 0.030\\,\\text{m}$."
+        }
+      ],
+      "solution": "**Given:** the points of the graph; the spheres are identical and equally charged, $q_1 = q_2 = q$; $k = 8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$\n\n**Find:** the charge of the spheres $q$ in nanocoulombs\n\n**Principle:** The spheres are small compared with the distance, so the force between them comes from Coulomb's law. When the charges are equal, the product of the charges is $q^2$, and $r$ and $F$ of one point read from the graph are enough to solve the charge.\n\n**Reading the graph:** The point $r = 3.0\\,\\text{cm}$ is on a vertical grid line, and the force there is on the horizontal line of $9.0\\,\\text{mN}$. The largest force was chosen because its relative reading uncertainty is the smallest.\n\n**Formula:** $F = k\\,\\dfrac{q^2}{r^2}$, so $q = r\\sqrt{\\dfrac{F}{k}}$\n\n**Conversions:** $r = 3.0\\,\\text{cm} = 3.0 \\cdot 0.01\\,\\text{m} = 0.030\\,\\text{m}$ and $F = 9.0\\,\\text{mN} = 9.0 \\cdot 10^{-3}\\,\\text{N}$; finally $1\\,\\text{C} = 10^{9}\\,\\text{nC}$.\n\n**Substitution:** $\\dfrac{F}{k} = \\dfrac{9.0 \\cdot 10^{-3}\\,\\text{N}}{8.988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}} = 1.001 \\cdot 10^{-12}\\,\\tfrac{\\text{C}^2}{\\text{m}^2}$ and $q = 0.030\\,\\text{m} \\cdot \\sqrt{1.001 \\cdot 10^{-12}\\,\\tfrac{\\text{C}^2}{\\text{m}^2}} = 3.00 \\cdot 10^{-8}\\,\\text{C} = 30.0\\,\\text{nC}$\n\n**Answer:** $30\\,\\text{nC}$, two significant figures, because the force $9.0\\,\\text{mN}$ is read from the graph with two significant figures.\n\n**Reasonableness:** Checked with another point, $k\\,\\tfrac{q^2}{r^2}$ gives at a distance of $9.0\\,\\text{cm}$ the force $8.988 \\cdot 10^{9} \\cdot (3.0 \\cdot 10^{-8})^2 : 0.090^2\\,\\text{N} = 1.0\\,\\text{mN}$, as in the graph. At three times the distance the force is a ninth."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain induction",
+      "optional": true,
+      "prompt": "A negatively charged plastic rod is brought near an empty aluminium drink can lying on its side on a table. The can starts to roll towards the rod, although it is uncharged and the rod does not touch it. Explain why.",
+      "model": "Aluminium is a conductor with free electrons. The negative charge of the rod repels them, so electrons move to the side of the can farther from the rod. A positive charge is left on the side facing the rod and an equal negative charge on the far side, so the can is still neutral as a whole. This is called induction. The positive charge is nearer to the rod than the negative one, and the electric force weakens as the distance grows. So the attraction of the rod on the positive side of the can is greater than the repulsion on the negative side, and a net force towards the rod acts on the can.",
+      "criteria": [
+        "The answer says that the free electrons of the can move away from the rod, leaving a positive charge on the side facing the rod.",
+        "The answer says that the can stays neutral as a whole.",
+        "The answer justifies the net force by saying that the charge of opposite sign is nearer and the force weakens as the distance grows."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and open the answer only after that."
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "version": 1,
+  "contribution": "The work done by a uniform field, electric potential energy and potential as a property of a point in the field; the potential of circuits is joined to the potential of the field, and the electronvolt and the kinetic energy |q|U of a particle accelerated from rest make the potential difference a tool for calculation.",
+  "learn": [
+    "calculate the work done by an electric field and the potential energy of a charge using potentials.",
+    "explain why positive and negative charges move in different directions in a field and how the potential energy changes.",
+    "calculate the kinetic energy, in electronvolts, and the speed of a particle accelerated through a potential difference."
+  ],
+  "prior": [
+    "In a uniform field the force $F = qE$ is the same everywhere between the plates, and $E = U : d$ (chapter *Uniform electric field*)",
+    "Potential is the voltage of a point relative to the zero point, and voltage is a potential difference (chapter *Kirchhoff's laws and potential in a circuit*)",
+    "Potential energy and kinetic energy $E_\\text{k} = \\tfrac{1}{2}mv^2$; without friction mechanical energy is conserved (chapter *Kinetic energy, potential energy and mechanical energy*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a winter evening a green curtain of aurora shimmers in the sky over Lapland. The light is produced at a height of about $100$–$300\\,\\text{km}$ when electrons arriving from space collide with atoms of the air. Before the collision the electrons have passed through a potential difference of a few kilovolts at a height of thousands of kilometres, and their speed has grown to tens of thousands of kilometres per second.",
+      "question": "How can a potential difference alone give an electron kinetic energy, and what decides how much energy it gets?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: the uniform field",
+      "optional": true,
+      "prompt": "There is a uniform electric field between two parallel plates. A proton is first close to the positive plate and then halfway between the plates. What happens to the electric force on it?",
+      "choices": [
+        {
+          "text": "The force is equal in size and in the same direction at both places.",
+          "correct": true,
+          "feedback": "Correct. In a uniform field the field strength is the same at every point, so the force $F = qE$ is the same everywhere between the plates (chapter *Uniform electric field*). That is why the field does work in a similar way to the weight near the surface of the Earth."
+        },
+        {
+          "text": "The force is greater near the positive plate, because the proton is closer to the charge that repels it.",
+          "feedback": "Between the plates the field is uniform: all the charges of the plates together produce the same field strength at every point. So the force $F = qE$ is the same near a plate and in the middle (chapter *Uniform electric field*)."
+        },
+        {
+          "text": "The force is zero halfway, because the effects of the plates cancel each other there.",
+          "feedback": "The plates do not cancel each other's effect: the positive plate repels the proton and the negative plate attracts it, so both effects point in the same direction. The field and the force are the same everywhere between the plates (chapter *Uniform electric field*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: a longer acceleration distance",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "prompt": "A proton starts from rest at the positive plate and travels to the negative plate. The voltage between the plates is kept the same, $500\\,\\text{V}$, but the separation of the plates is doubled. What happens to the kinetic energy of the proton when it arrives at the negative plate?",
+      "choices": [
+        {
+          "text": "The kinetic energy doubles, because the proton accelerates over twice the distance.",
+          "feedback": "The values of the model refute this: the kinetic energy is $500\\,\\text{eV}$ at every plate separation. When the voltage stays the same, a larger separation makes the field weaker, $E = U : d$. The force halves and the distance doubles, so the work $qEd = qU$ stays the same."
+        },
+        {
+          "text": "The kinetic energy halves, because the field becomes half as strong.",
+          "feedback": "The field does become half as strong, but the values of the model show that the kinetic energy is still $500\\,\\text{eV}$. The weaker force acts over twice the distance, so the work $qEd$ is the same. What matters is the potential difference $U$, not the field alone."
+        },
+        {
+          "text": "The kinetic energy stays the same, because the energy depends only on the potential difference.",
+          "correct": true,
+          "feedback": "The values of the model support this: the kinetic energy is $500\\,\\text{eV}$ whatever the plate separation, even though the field and the acceleration time change. The field does the work $qEd = qU$, which depends only on the charge and the potential difference."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the electron and the proton",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "prompt": "The voltage between the plates is $500\\,\\text{V}$. A proton starts from rest at the positive plate and an electron from rest at the negative plate, and each travels to the other plate. How do their kinetic energies compare on arrival?",
+      "choices": [
+        {
+          "text": "The kinetic energy of the proton is greater, because its mass is much greater.",
+          "feedback": "The values of the model refute this: each gets $500\\,\\text{eV}$. The kinetic energy comes from the work $qU$ done by the field, and the magnitude of each charge is $e$. The mass decides only the speed at which the same energy is reached: on arrival the proton moves at about $310\\,\\text{km/s}$ and the electron at about $13\\,000\\,\\text{km/s}$."
+        },
+        {
+          "text": "The kinetic energy of the electron is greater, because a light particle accelerates more.",
+          "feedback": "The electron accelerates much faster, but according to the values of the model both have a kinetic energy of $500\\,\\text{eV}$. A greater acceleration gives a greater speed, but the energy is the work $qU$ done by the field, which is the same because the magnitudes of the charges are the same."
+        },
+        {
+          "text": "The kinetic energies are equal, because the magnitudes of the charges are equal and the potential difference is the same.",
+          "correct": true,
+          "feedback": "The values of the model support this: each gets $500\\,\\text{eV}$, although the electron moves toward a higher and the proton toward a lower potential. The speeds differ a lot: on arrival the electron is about $43$ times faster, because its mass is much smaller."
+        },
+        {
+          "text": "The electron gets no kinetic energy, because a negative charge would move only toward a lower potential.",
+          "feedback": "In the model the electron starts moving toward the positive plate and gets $500\\,\\text{eV}$. The force on a negative charge points against the field, so the electron moves toward a higher potential; its potential energy $-eV$ then decreases."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Choose the particle, the voltage and the plate separation, and release the particle. Follow the force, the velocity and the energy bars as the particle travels from one plate to the other.",
+      "howto": "*Release* lets the particle go from rest: the proton and the alpha particle start from the positive plate, the electron from the negative plate. *Reset* returns the particle to its starting plate, and so does changing the slider or the particle. The grey dashed lines are equipotential surfaces with their potentials; the green arrows are field lines of the electric field $\\overline{E}$; the negative plate is the zero point. The red arrow is the force on the particle and the blue arrow its velocity. The grey dots show the position of the particle at equal time intervals: a growing gap means accelerated motion. The bars show the potential energy $E_\\text{p}$ and the kinetic energy $E_\\text{k}$ in electronvolts. The motion of the electron is shown $40$ times slower than that of the proton and the alpha particle; compare the real times from the readings. *Speed* changes only the pace of the display.",
+      "model": "Between the plates the field is uniform, and outside the plates it is zero. The particle starts from rest and only the electric force acts on it: gravity is left out, because in the fields of the model it is at least billions of times smaller. The plates are in a vacuum, and the particle does not radiate energy. The speeds stay below $7\\,\\%$ of the speed of light, so the kinetic energy is $\\tfrac{1}{2}mv^2$. The numbers are values calculated by the model, not measurements.",
+      "calc": "The field strength is $E = U : d$ and the force $F = |q|E$, so the acceleration is constant, $a = F : m$. The program calculates the motion in short time steps with the formulas of constant acceleration until the particle hits the other plate, and calculates the kinetic energy from the speed:\n\n$$E_\\text{k} = \\frac{1}{2}mv^2$$\n\nThe potential is $V = Ex$, where $x$ is the distance from the negative plate, and the potential energy is $E_\\text{p} = qV$, where $q = -e$ for the electron. The energies are converted to electronvolts by dividing by $1.602 \\cdot 10^{-19}\\,\\text{J}$. The program does not use the formula $E_\\text{k} = |q|U$; it follows the force and the distance."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: change the plate separation",
+      "intro": "Test prediction 1. The particle is a proton and the voltage is $500\\,\\text{V}$; change only the plate separation. Release the proton and record the readings when it has arrived, at least at two separations, for example $2.5\\,\\text{cm}$, $5.0\\,\\text{cm}$ and $10.0\\,\\text{cm}$. Which readings change and which does not?",
+      "initial": {
+        "U": 500,
+        "d": 5,
+        "hiukkanen": "p"
+      },
+      "locked": [
+        "U",
+        "hiukkanen"
+      ],
+      "vary": "d",
+      "names": {
+        "U": "voltage U",
+        "d": "plate separation d",
+        "hiukkanen": "particle"
+      },
+      "units": {
+        "U": "V",
+        "d": "cm"
+      },
+      "values": {
+        "hiukkanen": {
+          "p": "proton",
+          "e": "electron",
+          "a": "alpha particle"
+        }
+      },
+      "measure": [
+        {
+          "key": "E",
+          "label": "E (V/m)"
+        },
+        {
+          "key": "tns",
+          "label": "t (ns)"
+        },
+        {
+          "key": "EkeV",
+          "label": "E_k (eV)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: change the particle",
+      "intro": "Test prediction 2. The voltage is $500\\,\\text{V}$ and the plate separation $5.0\\,\\text{cm}$; change only the particle. Release the particle and record the readings when it has arrived, at least for the proton and the electron, preferably also for the alpha particle, whose charge is $+2e$. Which reading decides the energy, the charge or the mass?",
+      "initial": {
+        "U": 500,
+        "d": 5,
+        "hiukkanen": "p"
+      },
+      "locked": [
+        "U",
+        "d"
+      ],
+      "vary": "hiukkanen",
+      "names": {
+        "U": "voltage U",
+        "d": "plate separation d",
+        "hiukkanen": "particle"
+      },
+      "units": {
+        "U": "V",
+        "d": "cm"
+      },
+      "values": {
+        "hiukkanen": {
+          "p": "proton",
+          "e": "electron",
+          "a": "alpha particle"
+        }
+      },
+      "measure": [
+        {
+          "key": "EkeV",
+          "label": "E_k (eV)"
+        },
+        {
+          "key": "EpeV",
+          "label": "E_p (eV)"
+        },
+        {
+          "key": "vkms",
+          "label": "v (km/s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what decides the energy?",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write on the basis of your tables: how does the plate separation affect the field, the acceleration time and the kinetic energy when the voltage stays the same? How do the kinetic energies and speeds of the proton, the electron and the alpha particle differ, and what causes the differences?",
+      "model": "When the plate separation grows while the voltage stays at $500\\,\\text{V}$, the field becomes weaker, for example from $20\\,000\\,\\text{V/m}$ to $5000\\,\\text{V/m}$, and the acceleration takes longer, but the kinetic energy of the proton on arrival is always $500\\,\\text{eV}$. The weaker force acts over a longer distance, so the work $qEd = qU$ stays the same. The proton and the electron get the same $500\\,\\text{eV}$, because the magnitudes of the charges are the same, but on arrival the electron moves at about $13\\,000\\,\\text{km/s}$ and the proton at about $310\\,\\text{km/s}$, because the mass of the electron is much smaller. The alpha particle gets $1000\\,\\text{eV}$, because its charge is twice as great. The energy is decided by the charge and the potential difference; the speed also depends on the mass. The values are calculated by the model.",
+      "criteria": [
+        "The answer states that the kinetic energy stays the same when only the plate separation changes, and justifies it with the numbers of the table.",
+        "The answer states that a larger separation weakens the field and lengthens the acceleration time.",
+        "The answer states that the proton and the electron get the same energy but the speed of the electron is much greater because of its smaller mass.",
+        "The answer states that a double charge gives a double energy."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the concept of potential. Then return to the opening question: where does an aurora electron get its kinetic energy, and why does its speed grow so great?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "An electron starts from rest at the negative plate and travels to the positive plate. The voltage between the plates is $300\\,\\text{V}$. A student calculates the change in the potential energy of the electron like this:\n\n$$\\begin{aligned} \\Delta E_\\text{p} &= e\\Delta V \\\\ &= 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 300\\,\\text{V} \\\\ &= 4.8 \\cdot 10^{-17}\\,\\text{J} \\end{aligned}$$\n\nShe concludes that the potential energy of the electron increases. Where is the error?",
+      "choices": [
+        {
+          "text": "The charge of the electron is $-e$, so $\\Delta E_\\text{p} = -e \\cdot 300\\,\\text{V} = -4.8 \\cdot 10^{-17}\\,\\text{J}$: the potential energy decreases.",
+          "correct": true,
+          "feedback": "Correct. The electron moves to a higher potential, but its charge is negative, so its potential energy decreases. That is exactly why the electron starts moving toward the positive plate by itself and gets the kinetic energy $4.8 \\cdot 10^{-17}\\,\\text{J} = 300\\,\\text{eV}$."
+        },
+        {
+          "text": "The voltage has to be divided by the plate separation, because the potential energy depends on the field strength.",
+          "feedback": "The change in potential energy is $q\\Delta V$, and it does not depend on the plate separation. The separation would be needed for the field strength $E = U : d$, but that is not asked here. The error is in the sign of the charge."
+        },
+        {
+          "text": "The calculation is correct: the electron moves to a higher potential, so its potential energy increases.",
+          "feedback": "A higher potential increases only the potential energy of a positive charge. The potential energy of the electron is $-eV$, so it decreases when the potential increases. If the potential energy increased, the electron would not start moving from rest by itself."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation",
+      "prompt": "The ion thruster of a satellite accelerates xenon ions and pushes the satellite with their reaction force. The charge of each ion is $+e$ and its mass is $2.18 \\cdot 10^{-25}\\,\\text{kg}$. The ions start almost from rest and are accelerated through a potential difference of $1.2\\,\\text{kV}$. The elementary charge is $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$. What is the speed of the ions? Answer in kilometres per second.",
+      "answer": 42.0,
+      "unit": "km/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Into what does the energy change when the field does work on the ion? How great is the work done by the field?",
+        "The kinetic energy of the ion is $\\tfrac{1}{2}mv^2 = eU$. Convert $1.2\\,\\text{kV} = 1200\\,\\text{V}$.",
+        "$v = \\sqrt{\\dfrac{2eU}{m}} = \\sqrt{\\dfrac{2 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1200\\,\\text{V}}{2.18 \\cdot 10^{-25}\\,\\text{kg}}}$; finally convert $1\\,\\text{km/s} = 1000\\,\\text{m/s}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.33,
+          "feedback": "You used $1.2\\,\\text{V}$ as the voltage. The voltage is $1.2\\,\\text{kV} = 1.2 \\cdot 1000\\,\\text{V} = 1200\\,\\text{V}$, so the speed is $\\sqrt{1000} \\approx 32$ times greater."
+        },
+        {
+          "value": 29.7,
+          "feedback": "You forgot the factor $2$. The kinetic energy is $\\tfrac{1}{2}mv^2$, so $v^2 = 2eU : m$ and not $eU : m$."
+        },
+        {
+          "value": 41996,
+          "feedback": "The speed is correct in metres per second. The task asks for kilometres per second: divide by $1000$."
+        }
+      ],
+      "solution": "**Given:** charge of the ion $q = e = 1.602 \\cdot 10^{-19}\\,\\text{C}$, mass $m = 2.18 \\cdot 10^{-25}\\,\\text{kg}$, potential difference $U = 1.2\\,\\text{kV}$, initial speed almost zero\n\n**Find:** the speed $v$ of the ions in kilometres per second\n\n**Principle:** In the acceleration only the electric force does work on the ion, so the potential energy of the ion decreases by $eU$ and the kinetic energy increases by the same amount. The ion starts almost from rest, so the whole kinetic energy comes from the work done by the field.\n\n**Formula:** $\\tfrac{1}{2}mv^2 = eU$, from which $v = \\sqrt{\\dfrac{2eU}{m}}$\n\n**Conversions:** $U = 1.2\\,\\text{kV} = 1.2 \\cdot 1000\\,\\text{V} = 1200\\,\\text{V}$ and finally $1\\,\\text{km/s} = 1000\\,\\text{m/s}$.\n\n**Substitution:** $v = \\sqrt{\\dfrac{2 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1200\\,\\text{V}}{2.18 \\cdot 10^{-25}\\,\\text{kg}}} = 4.20 \\cdot 10^{4}\\,\\text{m/s} = 42.0\\,\\text{km/s}$\n\n**Answer:** $42\\,\\text{km/s}$, two significant figures like the voltage $1.2\\,\\text{kV}$.\n\n**Reasonableness:** With rounded numbers $v \\approx \\sqrt{2 \\cdot 2 \\cdot 10^{-16}\\,\\text{J} : 2 \\cdot 10^{-25}\\,\\text{kg}} \\approx 4.5 \\cdot 10^{4}\\,\\text{m/s}$. A xenon ion is about $240\\,000$ times heavier than an electron, so it is much slower than the aurora electron of the example, although the energies are of the same order of magnitude, but still about ten times faster than the exhaust gases of a rocket."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. The tasks of level 1 use one formula, the tasks of level 2 combine potential, field and energy, and level 3 requires applying the energy principle in new situations."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "An electron is at rest between two parallel plates, and it is released. In which direction does the electron start to move, and how does its potential energy change?",
+      "choices": [
+        {
+          "text": "Toward the positive plate, that is, toward a higher potential, and its potential energy decreases.",
+          "correct": true,
+          "feedback": "Correct. The force on a negative charge points against the field, that is, toward the positive plate. The potential energy $-eV$ of the electron decreases when the potential increases, and the kinetic energy increases by the same amount."
+        },
+        {
+          "text": "Toward the negative plate, that is, toward a lower potential, and its potential energy decreases.",
+          "feedback": "It is a positive charge that starts toward a lower potential. The negative plate repels the electron and the positive plate attracts it, so the electron starts toward a higher potential, where its potential energy $-eV$ is lower."
+        },
+        {
+          "text": "Toward the positive plate, that is, toward a higher potential, and its potential energy increases.",
+          "feedback": "The direction is correct, but the potential energy decreases. The kinetic energy of a particle starting to move from rest increases, so its potential energy must decrease by the same amount. For the electron $E_\\text{p} = -eV$ is the lower the higher the potential."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Energy in a field",
+      "prompt": "The strength of a uniform electric field is $1.5 \\cdot 10^{4}\\,\\text{V/m}$. A proton starts from rest and travels $2.0\\,\\text{cm}$ in the direction of the field. Only the electric force acts on it. What is the kinetic energy of the proton at the end of the distance? Answer in electronvolts.",
+      "answer": 300,
+      "unit": "eV",
+      "tolerance": 0.02,
+      "hints": [
+        "How much does the potential change over a distance of $2.0\\,\\text{cm}$ in the direction of the field?",
+        "In a uniform field the potential difference is $U = Es$. Convert $2.0\\,\\text{cm} = 0.020\\,\\text{m}$.",
+        "$U = 1.5 \\cdot 10^{4}\\,\\text{V/m} \\cdot 0.020\\,\\text{m}$, and the proton gets one electronvolt for every volt."
+      ],
+      "mistakes": [
+        {
+          "value": 30000,
+          "feedback": "You used $2.0\\,\\text{m}$ as the distance. The distance is $2.0\\,\\text{cm} = 0.020\\,\\text{m}$, so the potential difference is $300\\,\\text{V}$."
+        },
+        {
+          "value": 4.806e-17,
+          "feedback": "The result is in joules. In electronvolts the energy is $4.8 \\cdot 10^{-17}\\,\\text{J} : 1.602 \\cdot 10^{-19}\\,\\text{J} = 300\\,\\text{eV}$: the proton gets one electronvolt for every volt."
+        }
+      ],
+      "solution": "**Given:** field strength $E = 1.5 \\cdot 10^{4}\\,\\text{V/m}$, distance in the direction of the field $s = 2.0\\,\\text{cm}$, charge of the proton $e$, initial speed zero\n\n**Find:** the kinetic energy $E_\\text{k}$ in electronvolts\n\n**Principle:** Only the electric force does work, so the kinetic energy of the proton increases by as much as its potential energy decreases. In a uniform field the potential decreases steadily in the direction of the field, so the potential difference is the field strength times the distance.\n\n**Formula:** $U = Es$ and $E_\\text{k} = eU$, so $E_\\text{k} = eEs$\n\n**Conversions:** $s = 2.0\\,\\text{cm} = 2.0 \\cdot 0.01\\,\\text{m} = 0.020\\,\\text{m}$\n\n**Substitution:** $U = 1.5 \\cdot 10^{4}\\,\\text{V/m} \\cdot 0.020\\,\\text{m} = 300\\,\\text{V}$ and $E_\\text{k} = e \\cdot 300\\,\\text{V} = 300\\,\\text{eV}$\n\n**Answer:** $3.0 \\cdot 10^{2}\\,\\text{eV}$ or $300\\,\\text{eV}$, two significant figures like the field strength and the distance.\n\n**Reasonableness:** In joules the energy is $300 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} \\approx 4.8 \\cdot 10^{-17}\\,\\text{J}$, which is the same as force times distance: $1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1.5 \\cdot 10^{4}\\,\\text{V/m} \\cdot 0.020\\,\\text{m}$. The energy is positive, because a positive charge accelerates in the direction of the field."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain potential",
+      "optional": true,
+      "prompt": "Explain the difference between potential and potential energy. Why does the potential of a point not depend on which charge is brought to the point, although the potential energy does?",
+      "model": "Potential energy is the energy of a charge that depends on its position in the field: the field does work when the charge moves, and the work is the decrease of the potential energy. A double charge experiences a double force, so at the same point its potential energy is double, and the potential energy of a negative charge has the opposite sign. When the potential energy is divided by the charge, we get a quantity that is the same for all charges: the potential of the point $V = E_\\text{p} : q$. It is a property of the field, and its unit is $1\\,\\text{J/C} = 1\\,\\text{V}$. For example, at a point of $150\\,\\text{V}$ the potential energy of a proton is $+150\\,\\text{eV}$ and that of an electron $-150\\,\\text{eV}$.",
+      "criteria": [
+        "The answer states that potential energy is the energy of a charge and depends on the magnitude and the sign of the charge.",
+        "The answer states that potential is potential energy per unit charge and therefore a property of a point in the field.",
+        "The answer justifies the independence by the force and the potential energy being proportional to the charge.",
+        "The answer gives an example in which different charges at the same point have different potential energies."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and open the answer only afterwards."
+    }
+  ]
+}

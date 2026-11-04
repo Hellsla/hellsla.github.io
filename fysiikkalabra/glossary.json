@@ -1102,7 +1102,8 @@
     "definition": "Kappaleen asemaan sidottu energia. Painovoiman potentiaalienergia on E_p = m g h, missä h on korkeus valitusta nollatasosta.",
     "lessons": [
       "fy4-7",
-      "fy4-15"
+      "fy4-15",
+      "fy6-12"
     ],
     "see_also": [
       "energia",
@@ -4266,9 +4267,10 @@
   },
   {
     "term": "potentiaali",
-    "definition": "Virtapiirin kohdan jännite valittuun nollakohtaan nähden, yksikkö voltti (V). Kahden kohdan välinen jännite on niiden potentiaalien erotus, eikä se riipu nollakohdan valinnasta.",
+    "definition": "Sähkökentän tai virtapiirin kohdan jännite valittuun nollakohtaan nähden eli varauksen potentiaalienergia varausyksikköä kohti, yksikkö voltti (V = J/C). Kahden kohdan välinen jännite on niiden potentiaalien erotus, eikä se riipu nollakohdan valinnasta.",
     "lessons": [
-      "fy6-5"
+      "fy6-5",
+      "fy6-12"
     ],
     "see_also": [
       "Kirchhoffin jännitelaki"
@@ -4388,7 +4390,8 @@
     "term": "eriste",
     "definition": "Aine, jossa varaukset eivät pääse liikkumaan, esimerkiksi muovi, kumi, lasi ja kuiva puu. Sähköjohdon kuori on eristettä.",
     "lessons": [
-      "fy6-1"
+      "fy6-1",
+      "fy6-13"
     ],
     "see_also": [
       "johde"
@@ -4517,6 +4520,213 @@
     "locked": false
   },
   {
+    "term": "potentiaaliero",
+    "definition": "Kahden kohdan potentiaalien erotus eli niiden välinen jännite, yksikkö voltti (V). Kun varaus q siirtyy kohdasta A kohtaan B, sähkökenttä tekee työn q(V_A − V_B).",
+    "lessons": [
+      "fy6-12"
+    ],
+    "see_also": [
+      "potentiaali",
+      "jännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "elektronivoltti",
+    "definition": "Energian yksikkö $\\text{eV}$: energia, jonka elektroni saa kiihtyessään $1\\,\\text{V}$:n jännitteen läpi. $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+    "lessons": [
+      "fy6-12",
+      "fy8-1"
+    ],
+    "see_also": [
+      "potentiaaliero",
+      "irrotustyö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tasapotentiaalipinta",
+    "definition": "Pinta, jonka kaikissa kohdissa sähkökentän potentiaali on sama. Kenttäviivat ovat sitä vastaan kohtisuorassa, eikä kenttä tee työtä varaukseen, joka siirtyy pintaa pitkin.",
+    "lessons": [
+      "fy6-12"
+    ],
+    "see_also": [
+      "potentiaali"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkövaraus",
+    "definition": "Hiukkasten ja kappaleiden ominaisuus, jonka vuoksi ne vaikuttavat toisiinsa sähköisellä vuorovaikutuksella. Varausta on kahta lajia: samanmerkkiset varaukset hylkivät ja erimerkkiset vetävät toisiaan puoleensa. Yksikkö on coulombi $\\text{C}$. Eristetyn systeemin kokonaisvaraus säilyy.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "alkeisvaraus",
+      "Coulombin laki",
+      "sähkövirta"
+    ],
+    "locked": false
+  },
+  {
+    "term": "alkeisvaraus",
+    "definition": "Pienin vapaana esiintyvä varaus, $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Protonin varaus on $+e$ ja elektronin $-e$, ja kappaleen varaus on aina alkeisvarauksen monikerta, $Q = ne$.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "sähkövaraus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "Coulombin laki",
+    "definition": "Kahden pistevarauksen välisen sähköisen voiman suuruus $F = k\\,\\tfrac{\\lvert q_1 q_2 \\rvert}{r^2}$, missä $k = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N} \\cdot \\text{m}^2}{\\text{C}^2}$. Voimat ovat varausten välisellä suoralla, yhtä suuret ja vastakkaissuuntaiset; samanmerkkiset varaukset hylkivät ja erimerkkiset vetävät toisiaan.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "sähkövaraus",
+      "pistevaraus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pistevaraus",
+    "definition": "Varattu kappale, jonka koko on pieni verrattuna tarkasteltaviin etäisyyksiin. Sen kenttäviivat ovat säteittäisiä: positiivisesta varauksesta ulospäin ja negatiiviseen sisäänpäin.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "Coulombin laki",
+      "sähkövaraus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "influenssi",
+    "definition": "Varauksen siirtyminen johteessa, kun varattu kappale tuodaan sen lähelle koskematta siihen: johteen lähipuolelle tulee vastakkaismerkkinen ja kaukaiselle puolelle samanmerkkinen varaus. Johteen kokonaisvaraus ei muutu, ja varattu kappale vetää johdetta puoleensa.",
+    "lessons": [
+      "fy6-10"
+    ],
+    "see_also": [
+      "sähkövaraus",
+      "johde"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kondensaattori",
+    "definition": "Virtapiirin komponentti, jossa on kaksi johdekappaletta, esimerkiksi metallilevyä, ja niiden välissä eriste. Ladattaessa levyjen varaukset ovat $+Q$ ja $-Q$, ja energia varastoituu levyjen väliseen sähkökenttään.",
+    "lessons": [
+      "fy6-13"
+    ],
+    "see_also": [
+      "kapasitanssi",
+      "eriste",
+      "kondensaattorin energia"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kapasitanssi",
+    "definition": "Kondensaattorin varauksen ja jännitteen suhde $C = \\tfrac{Q}{U}$, yksikkö faradi ($1\\,\\text{F} = 1\\,\\tfrac{\\text{C}}{\\text{V}}$). Se riippuu vain kondensaattorin rakenteesta; levykondensaattorille $C = \\tfrac{\\varepsilon_0 \\varepsilon_\\text{r} A}{d}$.",
+    "lessons": [
+      "fy6-13"
+    ],
+    "see_also": [
+      "kondensaattori"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kondensaattorin energia",
+    "definition": "Ladatun kondensaattorin sähkökenttään varastoitunut energia $W = \\tfrac{1}{2} Q U = \\tfrac{1}{2} C U^2$. Se on kondensaattorin $(Q, U)$-kuvaajan alle jäävän kolmion pinta-ala.",
+    "lessons": [
+      "fy6-13"
+    ],
+    "see_also": [
+      "kondensaattori",
+      "kapasitanssi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "läpilyöntilujuus",
+    "definition": "Suurin sähkökentän voimakkuus $E_\\text{max}$, jonka eriste kestää alkamatta johtaa. Kun kenttä ylittää sen, eristeen läpi purkautuu kipinä. Ilmalle se on noin $3\\,\\text{MV/m}$.",
+    "lessons": [
+      "fy6-13",
+      "fy6-15"
+    ],
+    "see_also": [
+      "eriste",
+      "kondensaattori"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkökenttä",
+    "definition": "Varauksen ympärilleen aiheuttama tilan ominaisuus: jokaiseen kentässä olevaan varaukseen kohdistuu sähköinen voima. Kenttä on olemassa, vaikka kohdassa ei olisi varausta, johon se vaikuttaisi.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökentän voimakkuus",
+      "kenttäviiva",
+      "homogeeninen sähkökenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "sähkökentän voimakkuus",
+    "definition": "Pieneen testivaraukseen kohdistuva sähköinen voima jaettuna varauksella, E = F : q. Vektorisuure, jonka suunta on positiiviseen varaukseen kohdistuvan voiman suunta; yksikkö N/C = V/m. Symboli E on sama kuin lähdejännitteellä, mutta suureet ovat eri.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökenttä",
+      "testivaraus",
+      "homogeeninen sähkökenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "homogeeninen sähkökenttä",
+    "definition": "Sähkökenttä, jonka voimakkuus ja suunta ovat samat kaikkialla, esimerkiksi kahden laajan yhdensuuntaisen, vastakkaismerkkisesti varatun levyn välissä kaukana levyjen päistä. Sen voimakkuus on E = U : d.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökenttä",
+      "sähkökentän voimakkuus",
+      "kenttäviiva"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kenttäviiva",
+    "definition": "Sähkökenttää kuvaava viiva, jonka suunta kussakin kohdassa on kentän suunta. Kenttäviivat lähtevät positiivisista ja päättyvät negatiivisiin varauksiin, eivät leikkaa toisiaan, ja niiden tiheys kertoo kentän voimakkuuden. Kenttäviiva ei ole varauksen rata.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökenttä",
+      "homogeeninen sähkökenttä"
+    ],
+    "locked": false
+  },
+  {
+    "term": "testivaraus",
+    "definition": "Pieni positiivinen varaus, jolla sähkökenttää tutkitaan. Se on niin pieni, ettei se muuta kenttää aiheuttavien varausten paikkoja.",
+    "lessons": [
+      "fy6-11"
+    ],
+    "see_also": [
+      "sähkökentän voimakkuus"
+    ],
+    "locked": false
+  },
+  {
     "term": "emissiospektri",
     "definition": "Spektri, jonka kuuma ohut kaasu lähettää: tummalla pohjalla erillisiä kirkkaita viivoja niillä aallonpituuksilla, joilla kaasun atomit lähettävät fotoneja siirtyessään ylemmästä energiatilasta alempaan.",
     "lessons": [
@@ -4635,17 +4845,6 @@
     ],
     "see_also": [
       "fotoni"
-    ],
-    "locked": false
-  },
-  {
-    "term": "elektronivoltti",
-    "definition": "Energian yksikkö $\\text{eV}$: energia, jonka elektroni saa kiihtyessään $1\\,\\text{V}$:n jännitteen läpi. $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
-    "lessons": [
-      "fy8-1"
-    ],
-    "see_also": [
-      "irrotustyö"
     ],
     "locked": false
   },
@@ -4791,6 +4990,202 @@
     "locked": false
   },
   {
+    "term": "sulake",
+    "definition": "Virtapiirin suojalaite, joka katkaisee virran, kun virta on liian suuri pitkään tai kun syntyy oikosulku. Sulake suojaa johtoja ylikuumenemiselta eikä huomaa ihmisen kautta kulkevaa virtaa; ihmistä se suojaa vain yhdessä suojamaadoituksen kanssa; kodin ryhmäjohdoissa se on tavallisesti $10\\,\\text{A}$ tai $16\\,\\text{A}$. Sulakkeena toimii sulava lanka (tulppasulake) tai johdonsuojakatkaisija.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "vikavirtasuoja",
+      "sähköteho"
+    ],
+    "locked": false
+  },
+  {
+    "term": "vikavirtasuoja",
+    "definition": "Suojalaite, joka vertaa laitteeseen menevää ja sieltä palaavaa virtaa. Jos niiden ero eli vikavirta ylittää laukaisuvirran, tavallisesti $30\\,\\text{mA}$, suoja katkaisee virran sekunnin murto-osassa. Se pienentää sähköiskun vaaraa, kun virta kulkee ihmisen kautta maahan.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "sulake",
+      "maadoitus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "suojausluokitus",
+    "definition": "Sähkölaitteiden jako suojausluokkiin sen mukaan, miten laite suojaa käyttäjää sähköiskulta. Luokan I laitteen metallirunko on suojamaadoitettu, luokan II laitteessa on kaksinkertainen tai vahvistettu eristys, ja luokan III laite toimii pienellä suojajännitteellä.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "maadoitus",
+      "eriste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "maadoitus",
+    "definition": "Laitteen johtavan rungon tai muun osan yhdistäminen maahan suojamaadoitusjohtimella, joka on uusissa asennuksissa keltavihreä. Jos vaihejohdin koskettaa vian takia runkoa, vikavirta kulkee maadoitusjohdinta pitkin ja sulake tai vikavirtasuoja katkaisee virran.",
+    "lessons": [
+      "fy6-15"
+    ],
+    "see_also": [
+      "suojausluokitus",
+      "vikavirtasuoja"
+    ],
+    "locked": false
+  },
+  {
+    "term": "pääsulake",
+    "definition": "Sähkökeskuksen sulake, joka on talon jokaisessa vaihejohtimessa ennen ryhmiä, esimerkiksi $3 \\cdot 25\\,\\text{A}$. Se rajoittaa koko talon virtaa: saman vaihejohtimen kautta kulkevat kaikkien laitteiden virrat lasketaan yhteen, eikä summa saa pitkään ylittää pääsulakkeen kokoa.",
+    "lessons": [
+      "fy6-16"
+    ],
+    "see_also": [
+      "sulake",
+      "kolmivaihesähkö"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kolmivaihesähkö",
+    "definition": "Sähköliittymä, jossa on kolme vaihejohdinta ja nollajohdin. Kunkin vaihejohtimen ja nollajohtimen välinen jännite on Suomessa $230\\,\\text{V}$. Kun laite ottaa jokaisesta vaihejohtimesta saman virran $I$, sen teho on $P = 3UI$.",
+    "lessons": [
+      "fy6-16"
+    ],
+    "see_also": [
+      "pääsulake",
+      "sähköteho"
+    ],
+    "locked": false
+  },
+  {
+    "term": "puolijohde",
+    "definition": "Aine, kuten pii, joka johtaa sähköä huonommin kuin metallit mutta paremmin kuin eristeet. Sen johtavuutta voidaan muuttaa lisäämällä siihen pieniä määriä muita aineita, ja siitä valmistetaan diodit, LEDit, aurinkokennot ja transistorit.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "diodi",
+      "aurinkokenno"
+    ],
+    "locked": false
+  },
+  {
+    "term": "diodi",
+    "definition": "Puolijohdekomponentti, joka päästää sähkövirran läpi vain yhteen suuntaan. Piirrosmerkin kolmio osoittaa suuntaan, johon virta pääsee; kolmion puoleinen napa on anodi ja poikkiviivan puoleinen katodi.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "päästösuunta",
+      "estosuunta",
+      "kynnysjännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "LED",
+    "definition": "Hohtodiodi eli diodi, joka lähettää valoa, kun virta kulkee sen läpi päästösuuntaan. Valon väri riippuu puolijohdemateriaalista; LEDin kanssa kytketään sarjaan etuvastus, joka rajoittaa virran.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "diodi",
+      "etuvastus"
+    ],
+    "locked": false
+  },
+  {
+    "term": "päästösuunta",
+    "definition": "Diodin kytkentä, jossa sen anodi on lähteen plusnavan puolella. Kun diodin jännite ylittää kynnysjännitteen, virta kulkee diodin läpi.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "estosuunta",
+      "kynnysjännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "estosuunta",
+    "definition": "Diodin kytkentä, jossa sen katodi on lähteen plusnavan puolella. Virtaa ei käytännössä kulje, ja koko lähteen jännite on diodin yli.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "päästösuunta",
+      "diodi"
+    ],
+    "locked": false
+  },
+  {
+    "term": "kynnysjännite",
+    "definition": "Diodin tai LEDin jännite päästösuunnassa, jonka jälkeen virta alkaa kasvaa jyrkästi ja LED alkaa säteillä. Piidiodilla se on noin $0{,}6$–$0{,}7\\,\\text{V}$ ja LEDeillä värin mukaan noin $1{,}8$–$3{,}3\\,\\text{V}$. LEDin kynnysjännitteellä elektronin jännitelähteeltä saama energia on likimain yhden fotonin energia, $eU \\approx hf$. Se määritetään jatkamalla virta-jännitekuvaajan suora osa jänniteakselille, jolla virta on nolla.",
+    "lessons": [
+      "fy6-14",
+      "fy8-6"
+    ],
+    "see_also": [
+      "diodi",
+      "ominaiskäyrä",
+      "valodiodi",
+      "Planckin vakio"
+    ],
+    "locked": false
+  },
+  {
+    "term": "etuvastus",
+    "definition": "LEDin tai diodin kanssa sarjaan kytketty vastus, joka rajoittaa virran. Sen resistanssi on $R = \\tfrac{U - U_\\text{D}}{I}$, missä $U$ on lähteen ja $U_\\text{D}$ LEDin jännite ja $I$ virta.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "LED",
+      "Ohmin laki"
+    ],
+    "locked": false
+  },
+  {
+    "term": "aurinkokenno",
+    "definition": "Puolijohdekomponentti, joka tuottaa valossa tasavirtaa ja toimii tasajännitelähteenä. Sen oikosulkuvirta on suoraan verrannollinen valon voimakkuuteen, ja aurinkopaneelissa on monta kennoa sarjassa.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "tyhjäkäyntijännite",
+      "maksimitehopiste"
+    ],
+    "locked": false
+  },
+  {
+    "term": "tyhjäkäyntijännite",
+    "definition": "Jännitelähteen, kuten aurinkokennon, napojen välinen jännite, kun siitä ei oteta virtaa. Aurinkokennolla se muuttuu valon voimakkuuden mukana vain vähän.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "aurinkokenno",
+      "lähdejännite"
+    ],
+    "locked": false
+  },
+  {
+    "term": "maksimitehopiste",
+    "definition": "Aurinkokennon $(U, I)$-käyrän piste, jossa sen antama teho $P = UI$ on suurin. Se on käyrän polvessa oikosulun ja tyhjäkäynnin välissä, joissa kummassakin teho on nolla.",
+    "lessons": [
+      "fy6-14"
+    ],
+    "see_also": [
+      "aurinkokenno",
+      "tyhjäkäyntijännite"
+    ],
+    "locked": false
+  },
+  {
     "term": "nukleoni",
     "definition": "Atomiytimen rakenneosa eli protoni tai neutroni. Ytimen nukleonien määrä on sen massaluku $A$.",
     "lessons": [
@@ -4927,18 +5322,6 @@
     ],
     "see_also": [
       "valodiodi"
-    ],
-    "locked": false
-  },
-  {
-    "term": "kynnysjännite",
-    "definition": "LEDin jännite, jolla se alkaa johtaa virtaa ja säteillä. Kynnysjännitteellä elektronin jännitelähteeltä saama energia on likimain yhden fotonin energia, eU ≈ hf. Se määritetään jatkamalla virta-jännitekuvaajan suora osa jänniteakselille, jolla virta on nolla.",
-    "lessons": [
-      "fy8-6"
-    ],
-    "see_also": [
-      "valodiodi",
-      "Planckin vakio"
     ],
     "locked": false
   },

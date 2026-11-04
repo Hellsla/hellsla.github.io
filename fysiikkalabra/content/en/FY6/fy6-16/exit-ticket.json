@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A three-phase charging station draws a current of $16\\,\\text{A}$ from each phase conductor, and the phase voltage is $230\\,\\text{V}$. How large is the charging power?",
+    "a": "Each phase transfers a power of $UI$, so $P = 3UI = 3 \\cdot 230\\,\\text{V} \\cdot 16\\,\\text{A} = 11\\,040\\,\\text{W} \\approx 11\\,\\text{kW}$."
+  },
+  {
+    "q": "A battery has to be charged with $45\\,\\text{kWh}$, and the efficiency of charging is $90\\,\\%$. How much energy is taken from the grid?",
+    "a": "$W_\\text{grid} = W_\\text{battery} : \\eta = 45\\,\\text{kWh} : 0.90 = 50\\,\\text{kWh}$. More is taken from the grid than is stored in the battery, because part of the energy turns into internal energy of the cables, the charger and the battery."
+  }
+]
