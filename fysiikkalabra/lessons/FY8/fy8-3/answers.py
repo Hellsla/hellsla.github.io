@@ -31,11 +31,14 @@ a["fy8-3-L3-03"] = (En(2) - En(1)) - (0 - En(2))          # 2 -> 1 photon 10,2 e
 # Exercise bank additions (teacher 2026-11-04): L1-06 is multiple choice (no number): 4 -> 1 has the largest gap 12,75 eV, so the shortest wavelength 97,3 nm
 a["fy8-3-L1-07"] = lam_nm(En(2) - En(1))                  # Lyman longest 2 -> 1: dE = 10,2 eV, lambda = 121,57 nm -> 122 nm
 a["fy8-3-L1-08"] = En(4) - En(2)                          # absorption 2 -> 4: -0,85 eV + 3,40 eV = 2,55 eV
-import numpy as np
+def _polyfit1(xs, ys):
+    n = len(xs); mx = sum(xs) / n; my = sum(ys) / n
+    k = sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / sum((x - mx) ** 2 for x in xs)
+    return k, my - k * mx
 lam_b = [656.7, 486.1, 434.5, 410.2]                      # L2-05 table (nm) of the Balmer lines n = 3..6
 x_b = [1 / n ** 2 for n in (3, 4, 5, 6)]
 f_b = [c / (l * 1e-9) for l in lam_b]                     # Hz
-slope = np.polyfit(x_b, f_b, 1)[0]                        # fitted slope -3,289e15 Hz = -E_ion / h
+slope = _polyfit1(list(x_b), list(f_b))[0]                        # fitted slope -3,289e15 Hz = -E_ion / h
 a["fy8-3-L2-05"] = -slope * h / e                         # E_ion = -h k = 13,60 eV
 phot = [300, 413, 500, 207, 248]                          # L2-06 photons (nm); levels of fy8-3/levels-task: E1..E4 = -8, -5, -3, -2 eV
 gaps = [-5.0 + 8.0, -3.0 + 8.0, -2.0 + 8.0]               # absorption from the ground state: 3,0 / 5,0 / 6,0 eV
