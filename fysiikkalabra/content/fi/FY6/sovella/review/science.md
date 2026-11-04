@@ -1,23 +1,26 @@
 VERDICT: FAIL
-CONTENT-HASH: 6f3465d0e19501e5
+CONTENT-HASH: b106a60fd17e0ee3
 
 ## Blocking
-1. **fy6-s1 d, rubric `error_sources` and Periaate (A, causality).** The rubric says discharging *and heating* make the later voltages too low. Heating lowers $R_\text{s}$, which raises $U$ under load, so it works the other way. The reported downward drift comes from discharging. Blame the too-large $R_\text{s}$ on discharging, and say that heating also changes $R_\text{s}$ during the series.
-2. **fy6-s4 task text (B).** A small battery charges the capacitor to 300 V. In fy6-13 a capacitor charges only up to the source voltage. Add "jännitettä nostavan piirin avulla".
-3. **fy6-s2 d, criterion `assumptions` (A, rule 7).** The question does not ask for assumptions, and the task text already gives the constant-resistance assumption. Replace it with something the question asks, such as the lamp voltage of 8.6 V or the cable power of 15 W.
-4. **fy6-s2 b Vastaus (A, rounding reason).** It says "Kolme merkitsevää numeroa vastaa lähtötietojen tarkkuutta", but 0,80 Ω, 24 W and 12 V have two significant figures. Part a and the rubric use 17 W. Give about 17 W with the two-figure reason.
+1. **fy6-s2 c (A, assessment and consistency).** The question still asks how "kaapelin lämpeneminen" changes. Round 2 removed the solution's *Kaapeli* paragraph and the rubric clause $R_\text{k} I^2$ pienenee, so neither the model answer nor any criterion covers an asked item any more. Either restore one sentence to the solution and to criterion 2 (cable power $R_\text{k} I^2$: $5{,}0\,\text{W} \to 2{,}5\,\text{W}$, the cable heats less), or drop the cable from the question.
 
 ## Polish
-- s1 b: it says "ei mittauspisteistä", but (0,10 A; 4,48 V) is a measured point.
-- s4 a and b give inconsistent significant-figure reasons (300 V counted as three figures, 220 V as two).
-- s3 c: the `assumptions` criterion repeats criterion 1, and "miksi malli silti sopi" is not asked.
-- s2 c: criterion 3 also expects the cable power, which the question does not ask for.
-- s4 d: the 10 kΩ discharge resistor takes 9 W at first. Mention that it needs a suitable power rating.
-- s2 d (C): at 1,36 times its rating a real fuse may blow slowly. The wording is acceptable.
+- s2 d: the key `calculation` now appears twice (current, and lamp voltage).
+- s3 c: the `conclusion` criterion repeats "energia ei häviä" from criterion 3.
+- s4 a: the rounding reason ("enintään kaksi tai kolme numeroa") is muddled.
+- s1 d (C): the 0,03 V drift measured at 0,10 A stands in for the drift at higher currents. That is a fair simplification for the level.
 
 ## Checked
-- I recomputed every number independently: the s1 fit (slope −1,194, intercept 4,598, largest residual 0,020 V), s1 c and d, s2 a–d, s3 a–d and s4 a–d. All agree with the solutions and answers.py.
-- The s3 magnitudes are plausible. The droplet radius is about 46 µm and its charge is 15 % of the Rayleigh limit. Drag at 5 m/s is about 2·10⁻⁷ N, roughly equal to qE, so the terminal-speed explanation in c holds.
-- The points add up (15/15/16/14).
-- Scope stays within FY6: the capacitor is treated qualitatively, with no exponential function and no capacitor connections.
-- The data are labelled as made up, the s1 figure is correct, and the hash is unchanged.
+- **Round-1 items 1–4 are fixed.**
+  - s1 d: the drift is attributed to discharging, and heating to a change in $R_\text{s}$ of uncertain direction.
+  - s4: the text now names the voltage-raising circuit.
+  - s2 d: the assumptions point is replaced by the lamp voltage, which the question now asks for.
+  - s2 b: 17 W with the two-figure reason.
+- **s1 drift, recomputed.** The repeat at 0,10 A gives 4,45 V against 4,48 V. Time and current grew together, so a linear drift of at most 0,03 V tilts the slope by at most $0{,}03 : 0{,}50 = 0{,}06\,\Omega$. The corrected slope is about 1,14 Ω and the intercept moves by only 0,006 V. "1,1…1,2 Ω, 1,2 pikemmin yläraja" follows. The $R_\text{s}$ tolerance of 0,09 matches the accepted range 1,1…1,3 Ω.
+- **s2 d:** $R_\text{r} I = 2{,}0 \cdot 4{,}286 = 8{,}57 \approx 8{,}6\,\text{V}$, dimmer than 10,0 V. The fuse wording now states its simplification.
+- **s4:**
+  - Discharge resistor: $300^2 : 10^4 = 9\,\text{W}$, with $\tau = 3{,}3\,\text{s}$.
+  - Stored energy: $E \approx 15\,\text{J}$ (14,85 J). $\Delta E = 6{,}86\,\text{J}$, 46 %.
+  - Safety: the "älä yritä itse" note is appropriate.
+- **s3 figure:** the droplet now starts at the nozzle plate, consistent with "lähtee levossa".
+- All other numbers are unchanged from round 1 and still agree with my independent recomputation and with answers.py. The points still add up, and practice.py check is OK. The hash is the same at the start and at the end.
