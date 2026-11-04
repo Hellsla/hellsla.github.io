@@ -12,7 +12,7 @@ decisions 2026-10-26, CLAUDE.md "Lesson page") is in render() and templates/site
 import hashlib, html as _h, json, pathlib, random, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from i18n import t as T
-import mathlayout
+import answers_shown, mathlayout
 import courses, objectives
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -376,8 +376,10 @@ def numeric_html(a, md, aid):
     unit = esc(a.get("unit", "")); mistakes = esc(json.dumps(a.get("mistakes", []), ensure_ascii=False))
     sol = (f'<details class="solution"><summary>{T("inquiry.show_solution")}</summary><div class="steps">'
            f'{mathlayout.steps_html(md(mathlayout.solution_md(a["solution"], T("lesson.solution_display_steps"))), T("lesson.solution_answer_step"))}</div></details>' if a.get("solution") else "")
+    shown = answers_shown.shown(a.get("solution") or "", T("lesson.solution_answer_step"), a["answer"], a.get("tolerance", 0.02))
+    st = answers_shown.step(shown, a["answer"]) if shown else None    # ±1 in the shown answer's last digit (lesson.js part 1)
     return (f'<div class="numeric">{task_text(inline(md, a["prompt"]), pid=f"{aid}-q")}{fig_of(a)}'
-            f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}" data-mistakes=\'{mistakes}\' novalidate>'
+            f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}"' + (f' data-step="{st:g}"' if st else "") + f' data-mistakes=\'{mistakes}\' novalidate>'
             f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{esc(answer_label(a.get("unit", "")))}" aria-describedby="{esc(aid)}-q" placeholder="?">'
             + (f'<span class="unit">{unit}</span>' if unit else "") + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>'
             f'{hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])])}{sol}</div>')
@@ -405,7 +407,8 @@ def explain_html(a, md, aid):
     copy = f'<button type="button" class="copy-notes">{T("inquiry.copy_notes")}</button>' if after else ""
     own = (f'<label class="drew"><input type="checkbox"> <span>{T("inquiry.drew_on_paper")}</span></label>'
            f'<textarea rows="2" aria-label="{T("inquiry.draw_notes")}" placeholder="{esc(T("inquiry.draw_notes"))}"></textarea>' if draw else
-           f'<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>')
+           f'<textarea rows="4" aria-label="{T("inquiry.own_answer")}"></textarea>'
+           f'<label class="drew"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>')   # the model opens after the tick (teacher 2026-11-03)
     model_fig = fig_of({"figure": a["model_figure"]}) if a.get("model_figure") else ""
     return (f'<div class="explain{" draw" if draw else ""}"{attrs}>{task_text(inline(md, a["prompt"]))}{fig_of(a)}{own}{pair}'
             f'<div class="choice-actions"><button type="button" class="show-model">{T("inquiry.show_model_drawing" if draw else "inquiry.show_model")}</button>{copy}</div>'
