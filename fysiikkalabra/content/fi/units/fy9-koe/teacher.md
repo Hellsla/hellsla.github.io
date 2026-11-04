@@ -24,4 +24,4 @@
 - **Hitaat.** Ennusta-tehtävät yhdessä parin kanssa, kertaustestistä tunnilla monivalinnat neljästä moduulista ja loput kotona, ja yhteinen tarkistuslista seitsemästä vaiheesta esillä koko tunnin.
 
 ## Kokeen tiedot
-Sivun kokeen rakenne (6 h; Osa I pakollinen, 20 p; Osa II, 4 tehtävää seitsemästä, kukin 15 p; Osa III, 2 tehtävää kolmesta, kukin 20 p; yhteensä 120 p) on opettajan vahvistama 4.11.2026. Tarkista rakenne, pisteytys ja sallitut apuvälineet ja ohjelmat ylioppilastutkintolautakunnan sivuilta (määräykset ja kokeen ohjeet) ennen jokaista kurssia, koska ne voivat muuttua. Harjoittele kokeen ohjelmia lautakunnan julkaisemilla harjoituskokeilla.
+Sivun kokeen rakenne ($6\,\text{h}$; Osa I pakollinen, 20 p; Osa II, 4 tehtävää seitsemästä, kukin 15 p; Osa III, 2 tehtävää kolmesta, kukin 20 p; yhteensä 120 p) on opettajan vahvistama 4.11.2026. Tarkista rakenne, pisteytys ja sallitut apuvälineet ja ohjelmat ylioppilastutkintolautakunnan sivuilta (määräykset ja kokeen ohjeet) ennen jokaista kurssia, koska ne voivat muuttua. Harjoittele kokeen ohjelmia lautakunnan julkaisemilla harjoituskokeilla.

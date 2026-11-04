@@ -1,24 +1,32 @@
 VERDICT: PASS
-CONTENT-HASH: 210723c3675594ef
+CONTENT-HASH: 8cf0da264f14bed3
 
-Round 2 (delta review of the developer's Round 1 fixes; round 1 hash 23902d39dc18f729).
+Delta review of (1) the course rename FY12 → FY9 and (2) the exam-structure text the teacher confirmed on 4.11.2026 (unit.md "Sähköinen koe" and "Ajankäyttö ja tehtävien valinta", teacher.md "Kokeen tiedot"), commit 3052d352, plus the small fixes I made during this review (listed below). Previous all-PASS hash: 210723c3675594ef.
+
+Rename: every other file of `content/fi/units/fy9-koe/` and `lessons/units/fy9-koe/` (review/ excluded) at 3052d352 equals its 47782fdd version with `fy12`→`fy9` and `FY12`→`FY9` replaced, and nothing else. No `fy12` remains in the sources or the preview.
+
+Fixes made in this review:
+- unit.md, Osa III: "kehität siitä päätelmiä" → "teet siitä päätelmiä" (natural Finnish).
+- unit.md, Ajankäyttö: "Jos voit valita, valitse tehtävät, joiden …" → "Osissa II ja III valitset tehtävät itse: valitse ne, joiden …" (the conditional contradicted the now-stated structure, where choosing is always part of Osat II and III).
+- unit.md, Ajankäyttö: "Jaa aika tehtävien pisteiden suhteen" → "Jaa aika suunnilleen tehtävien pisteiden mukaan" ("suhteen" was wrong; the budget that follows is not strictly proportional, 3 / 2,3 / 2,75 min per point, so "suunnilleen").
+- teacher.md, Kokeen tiedot: "6 h" → "$6\,\text{h}$".
 
 ## Blocking
 
-None. All three round 1 Blocking findings are fixed:
-1. **Option lengths.** I measured all 19 choice items. Every option is within ±30 % of the correct one; the largest gap is +25 % (testi-15). The correct option is the longest, or tied for longest, in 4 of 19 items (pred-1, pred-4, testi-11, testi-17), which is close to chance (25 %). The length cue is gone.
-2. **Seven steps against the model-answer headings.** unit.md now maps the headings to the steps right after the steps figure ("**Annettu** ja **Kysytty** ovat vaihe 1 … **Järkevyys** vaihe 7"). The Esimerkki maps its own stage names. The teacher plan tells the teacher to go through this mapping.
-3. **Workload.** teacher.md: the 12 choice items are done in class in 20 min (about 1 min each), and the 12 numeric items are done at home. The minutes add up to 75 (7+10+13+12+20+13). Modules are assigned rather than picked by the students.
+None.
 
 ## Polish
 
-1. unit.md, Esimerkki: the stages are still named *Tunnetut ja kysytty*, *Yksikkömuunnokset* and *Tulos*, while the steps figure says *Annettu ja kysytty*, *Muunnokset* and *Vastaus*. The page now has three sets of names, and the example needs its own translation sentence. Fix: rename the Esimerkki stages to the figure's names and delete the line "Esimerkin vaiheet ovat samat kuin…".
-2. inquiry.json pred-1: the correct option (83 characters) is still 12 % longer than the next-longest (74). This is within the limit, but pred-1 is the first item the students see. Shorten it to about "Puutteellinen: ilman yksikköä ei tiedä, onko se m/s vai km/h."
-3. teacher.md, Kotona: 12 numeric items at 3–4 min each is 36–48 min of homework in a single evening. Give a lighter option, for example "vähintään yksi laskutehtävä jokaisesta moduulista".
-4. inquiry.json vastaukset, `practice`: the complete-solution steps are sent to *Aineen lämpeneminen ja jäähtyminen*. Point to this unit's Teoriatiivistelmä instead, or drop that half of the sentence.
+1. sovella/tasks.json: the four example tasks are worth 15, 16, 14 and 16 p. Now that the page says Osa II tasks are 15 p and Osa III tasks 20 p, giving s1 and s3 15 p (Osa II type) and s2 and s4 20 p (data / design, Osa III type), and saying so in the intro, would tie the examples to the exam structure. Within the brief's 12–20 p range, so not Blocking.
+2. inquiry.json Tutki: the practice item is marked "(6 p.)"; fine as a sub-part, but a learner may now compare it with the 15/20 p tasks. Optional: "**Tehtävän kohta (6 p.)**".
+3. (Carried over) earlier Polish items (Esimerkki stage labels) still apply.
 
 ## Checked
 
-- Round 1 Polish items: the Tutki rubric now says "oikea vastaus", gives no point for a substitution without units, and names its items as the steps. Answer B is now a list. check-2 has a precision mistake (0,4). The s1 a) Järkevyys check is now a kettle comparison. The modules are no longer self-picked.
-- The feedback on the rebalanced options still repairs the misconception and names the chapter. The task counts against the plan table are the same as in round 1 (6/1/24/3/4, 61 p).
-- I looked at the captures of Tutki, the mapping paragraph and the Esimerkki at 390 and 1280. The hash is the same at the start and the end.
+- Consistency: no sentence in unit.md, inquiry.json, exit-ticket.json, tasks.json, solutions.md or teacher.md still says the page gives no exam numbers; the only conditional ("Jos voit valita") was fixed. teacher.md's 75-minute plan and the kertaustesti workload are unchanged.
+- The structure text is learner-facing and actionable: what each Osa asks (Osa I mixed short items, Osa II compare/assess/apply, Osa III data), how many to choose, and a time budget that adds up. It keeps the advice to check the current rules from YTL, and teacher.md dates the confirmation (4.11.2026).
+- Course mentions read "FY9"; chapter links are named, never ids, and resolve.
+
+## Shared issues
+
+None.

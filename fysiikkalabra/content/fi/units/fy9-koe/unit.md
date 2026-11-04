@@ -105,12 +105,12 @@ Fysiikan koe tehdään tietokoneella. Vastaus kirjoitetaan tekstinä, kaavat kaa
 
 - **Osa I** on pakollinen: yksi tehtävä, 20 pistettä. Siinä voi olla monivalintoja, väittämiä ja lyhyitä avoimia kysymyksiä eri puolilta fysiikkaa.
 - **Osa II**: valitse 4 tehtävää seitsemästä, kukin 15 pistettä. Tehtävissä vertaillaan, arvioidaan ja sovelletaan fysiikan tietoja.
-- **Osa III**: valitse 2 tehtävää kolmesta, kukin 20 pistettä. Tehtävissä käytetään aineistoja: luet, käsittelet ja muunnat dataa ja kehität siitä päätelmiä.
+- **Osa III**: valitse 2 tehtävää kolmesta, kukin 20 pistettä. Tehtävissä käytetään aineistoja: luet, käsittelet ja muunnat dataa ja teet siitä päätelmiä.
 
 Yhteensä kokeesta saa enintään 120 pistettä. Sallitut apuvälineet ja ohjelmat on kerrottu ylioppilastutkintolautakunnan määräyksissä ja kokeen omissa ohjeissa. Tarkista ne ajantasaisina ennen koetta ja harjoittele kokeen ohjelmilla etukäteen.
 
 ### Ajankäyttö ja tehtävien valinta
-Lue kokeen ohjeet ensin: niissä sanotaan, mihin tehtäviin vastataan ja kuinka moneen. Selaa sitten kaikki tehtävät ja merkitse, mitkä osaat varmasti. Jos voit valita, valitse tehtävät, joiden ilmiön tunnistat ja joiden kaikkiin osiin pystyt vastaamaan. Jaa aika tehtävien pisteiden suhteen. Kuudessa tunnissa on $360\,\text{min}$. Jos varaat lukemiseen, valintaan ja tarkistukseen yhteensä noin $50\,\text{min}$, Osalle I jää noin $60\,\text{min}$, kullekin Osan II tehtävälle noin $35\,\text{min}$ ja kullekin Osan III tehtävälle noin $55\,\text{min}$. Jos jumiudut, kirjoita se, minkä osaat, ja palaa tehtävään myöhemmin.
+Lue kokeen ohjeet ensin: niissä sanotaan, mihin tehtäviin vastataan ja kuinka moneen. Selaa sitten kaikki tehtävät ja merkitse, mitkä osaat varmasti. Osissa II ja III valitset tehtävät itse: valitse ne, joiden ilmiön tunnistat ja joiden kaikkiin osiin pystyt vastaamaan. Jaa aika suunnilleen tehtävien pisteiden mukaan. Kuudessa tunnissa on $360\,\text{min}$. Jos varaat lukemiseen, valintaan ja tarkistukseen yhteensä noin $50\,\text{min}$, Osalle I jää noin $60\,\text{min}$, kullekin Osan II tehtävälle noin $35\,\text{min}$ ja kullekin Osan III tehtävälle noin $55\,\text{min}$. Jos jumiudut, kirjoita se, minkä osaat, ja palaa tehtävään myöhemmin.
 
 ## Täydellinen ratkaisu {Ydinajatus}
 
