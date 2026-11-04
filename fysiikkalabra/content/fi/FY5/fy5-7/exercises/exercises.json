@@ -40,6 +40,78 @@
       "answer": 16,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-06",
+      "level": 1,
+      "text": "Punnuksen A jaksonaika on $0{,}25\\,\\text{s}$ ja punnuksen B taajuus on $3{,}0\\,\\text{Hz}$. Kumpi punnus tekee enemmän värähdyksiä sekunnissa?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Punnus A, koska sen taajuus $4{,}0\\,\\text{Hz}$ on suurempi kuin punnuksen B taajuus $3{,}0\\,\\text{Hz}$.",
+      "choices": [
+        {
+          "text": "Punnus B, koska sen $3{,}0\\,\\text{Hz}$ on suurempi luku kuin $0{,}25\\,\\text{s}$.",
+          "feedback": "Jaksonaikaa ja taajuutta ei voi verrata lukuarvojen perusteella, koska ne ovat eri suureita eri yksiköissä. Jaksonaika pitää ensin muuttaa taajuudeksi $f = \\tfrac{1}{T}$."
+        },
+        {
+          "text": "Punnus B, koska sen jaksonaika $0{,}33\\,\\text{s}$ on pidempi, ja pidempi jakso on nopeampaa värähtelyä.",
+          "feedback": "Pidempi jaksonaika tarkoittaa hitaampaa värähtelyä: yhteen värähdykseen kuluu enemmän aikaa, joten niitä ehditään sekunnissa vähemmän."
+        },
+        {
+          "text": "Punnus A, koska sen taajuus $4{,}0\\,\\text{Hz}$ on suurempi kuin punnuksen B taajuus $3{,}0\\,\\text{Hz}$.",
+          "correct": true,
+          "feedback": "Oikein: taajuus on jaksonajan käänteisluku, joten $f_A = \\tfrac{1}{0{,}25\\,\\text{s}} = 4{,}0\\,\\text{Hz}$. Punnus A tekee neljä värähdystä sekunnissa, punnus B kolme."
+        },
+        {
+          "text": "Ne värähtelevät yhtä nopeasti, koska $0{,}25\\,\\text{s}$ ja $3{,}0\\,\\text{Hz}$ kuvaavat samaa asiaa eri yksiköillä.",
+          "feedback": "Ne kuvaavat samaa ilmiötä, mutta ne ovat eri suureita, ja $0{,}25\\,\\text{s}$ vastaa taajuutta $4{,}0\\,\\text{Hz}$, ei taajuutta $3{,}0\\,\\text{Hz}$."
+        }
+      ]
+    },
+    {
+      "id": "fy5-7-L1-07",
+      "level": 1,
+      "text": "Värähtelijän taajuus on $1{,}6\\,\\text{Hz}$. Kuinka kauan kestää, ennen kuin se on tehnyt $40$ täyttä värähdystä?",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 25,
+      "unit": "s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L1-08",
+      "level": 1,
+      "text": "Oppilas väittää: \"Kun värähtelijän taajuus kaksinkertaistuu, myös jaksonaika kaksinkertaistuu, koska molemmat kertovat värähtelyn nopeudesta.\" Mikä seuraavista korjaa väitteen oikein?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Jaksonaika puolittuu, koska jaksonaika on taajuuden käänteisluku $T = \\tfrac{1}{f}$.",
+      "choices": [
+        {
+          "text": "Jaksonaika kaksinkertaistuu, koska jaksonaika ja taajuus ovat suoraan verrannolliset.",
+          "feedback": "Ne eivät ole suoraan verrannolliset vaan käänteisluvut. Kun värähdyksiä tulee kaksi kertaa enemmän sekunnissa, yhden värähdyksen on kestettävä lyhyemmän aikaa."
+        },
+        {
+          "text": "Jaksonaika puolittuu, koska jaksonaika on taajuuden käänteisluku $T = \\tfrac{1}{f}$.",
+          "correct": true,
+          "feedback": "Oikein: kun $f$ kaksinkertaistuu, $T = \\tfrac{1}{f}$ puolittuu. Oppilas sekoitti suureet: nopeampi värähtely tarkoittaa suurempaa taajuutta mutta lyhyempää jaksonaikaa."
+        },
+        {
+          "text": "Jaksonaika ei muutu, koska jaksonaika on värähtelijän oma kiinteä ominaisuus.",
+          "feedback": "Jaksonaika on yhden värähdyksen kesto, ja se muuttuu, kun taajuus muuttuu. Se ei ole vakio, vaan $T = \\tfrac{1}{f}$."
+        },
+        {
+          "text": "Jaksonaika kasvaa hieman, koska värähdyksiä on enemmän ja ne vievät yhteensä enemmän aikaa.",
+          "feedback": "Jaksonaika on yhden värähdyksen kesto, ei kaikkien yhteenlaskettu. Kun värähdyksiä mahtuu sekuntiin enemmän, jokaisen on oltava lyhyempi."
+        }
+      ]
     }
   ],
   "level2": [
@@ -75,6 +147,133 @@
       "answer": 7.50,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L2-05",
+      "level": 2,
+      "text": "Liiketunnistin mittasi jousen varassa värähtelevän punnuksen paikan, ja kuvaajan peräkkäisten huippujen ajat luettiin taulukkoon (esimerkkiaineisto).\n\nMikä on värähtelyn taajuus? Käytä koko mittaussarjaa.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 1.64,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kuvaajan huippujen ajat (esimerkkiaineisto)",
+        "columns": [
+          "Huippu",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.42"
+          ],
+          [
+            "2",
+            "1.04"
+          ],
+          [
+            "3",
+            "1.63"
+          ],
+          [
+            "4",
+            "2.25"
+          ],
+          [
+            "5",
+            "2.85"
+          ],
+          [
+            "6",
+            "3.47"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-7-L2-06",
+      "level": 2,
+      "text": "Oppilas mittasi heilurin jaksonajan ottamalla käsin ajan $10$ täydelle heilahdukselle viisi kertaa (esimerkkiaineisto).\n\na) Laske heilurin jaksonaika mittausten keskiarvosta.\n\nb) Arvioi jaksonajan hajontaa puolella mittaustulosten vaihteluvälistä ja perustele, miksi $10$ heilahduksen ajanotto antaa tarkemman jaksonajan kuin yhden heilahduksen ajanotto.\n\nKirjoita vastauslaatikkoon kohdan a) tulos.",
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "answer": 1.51,
+      "unit": "s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kymmenen heilahduksen kesto (esimerkkiaineisto)",
+        "columns": [
+          "Mittaus",
+          "$t_{10}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "15.2"
+          ],
+          [
+            "2",
+            "14.8"
+          ],
+          [
+            "3",
+            "15.4"
+          ],
+          [
+            "4",
+            "15.0"
+          ],
+          [
+            "5",
+            "15.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-7-L2-07",
+      "level": 2,
+      "text": "Liiketunnistimen kuvaajasta luettiin hetket, jolloin jousen varassa värähtelevä punnus ohittaa tasapainoaseman (esimerkkiaineisto).\n\nOppilas laski: \"Peräkkäiset ohitukset ovat $0{,}37\\,\\text{s}$ päässä toisistaan, joten jaksonaika on $0{,}37\\,\\text{s}$ ja taajuus $2{,}7\\,\\text{Hz}$.\"\n\nSelitä oppilaan virhe ja laske oikea taajuus. Kirjoita vastauslaatikkoon oikea taajuus.",
+      "kind": [
+        "error",
+        "data"
+      ],
+      "answer": 1.34,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Tasapainoaseman ohitukset (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "Suunta"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "ylös"
+          ],
+          [
+            "0.37",
+            "alas"
+          ],
+          [
+            "0.75",
+            "ylös"
+          ],
+          [
+            "1.12",
+            "alas"
+          ],
+          [
+            "1.49",
+            "ylös"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -101,6 +300,121 @@
       "answer": 1.8,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-7-L3-04",
+      "level": 3,
+      "text": "Sydänsähkökäyrässä jokainen sydämenlyönti näkyy teräväkärkisenä R-piikkinä. Taulukossa on R-piikkien ajat samalta henkilöltä levossa ja heti rasituksen jälkeen, kummassakin kuusi peräkkäistä lyöntiväliä (esimerkkiaineisto). Lyönnit toistuvat likimain tasaisesti, joten niitä voi käsitellä jaksollisena liikkeenä, jonka jaksonaika on lyöntiväli.\n\na) Määritä lyöntiväli levossa ja rasituksen jälkeen kuuden välin kokonaisajasta ja laske pulssi eli lyöntien määrä minuutissa kummassakin tilanteessa.\n\nb) Kuinka monta prosenttia pulssi nousi rasituksessa?\n\nc) Perustele, miksi jaksonaika kannattaa määrittää kuuden välin kokonaisajasta eikä yhdestä lyöntivälistä.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 79,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "R-piikkien ajat (esimerkkiaineisto)",
+        "columns": [
+          "Lyönti",
+          "$t_{\\text{lepo}}\\,(\\text{s})$",
+          "$t_{\\text{rasitus}}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "0.00",
+            "0.00"
+          ],
+          [
+            "1",
+            "0.83",
+            "0.47"
+          ],
+          [
+            "2",
+            "1.64",
+            "0.93"
+          ],
+          [
+            "3",
+            "2.49",
+            "1.38"
+          ],
+          [
+            "4",
+            "3.31",
+            "1.86"
+          ],
+          [
+            "5",
+            "4.12",
+            "2.31"
+          ],
+          [
+            "6",
+            "4.96",
+            "2.77"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-7-L3-05",
+      "level": 3,
+      "text": "Liiketunnistin mittaa etäisyyden $d$ jousen varassa pystysuunnassa värähtelevään punnukseen. Taulukko on esimerkkiaineisto: mittaus alkaa hetkellä $t = 0$, jolloin punnus ohittaa tasapainoaseman ja etäisyys alkaa kasvaa. Oletetaan, että värähtely on sinimuotoista eikä vaimene.\n\na) Lue taulukosta tasapainoaseman etäisyys $D$, amplitudi $A$ ja jaksonaika $T$.\n\nb) Mallinna etäisyys lausekkeella $d = D + A \\sin\\left(\\tfrac{2\\pi t}{T}\\right)$ ja ennusta etäisyys hetkellä $t = 5{,}0\\,\\text{s}$.\n\nc) Mittaus kattaa vain yhden jakson. Perustele, miksi ennusteen luotettavuus riippuu siitä, kuinka tarkasti jaksonaika tunnetaan.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "kind": [
+        "data",
+        "model",
+        "graph"
+      ],
+      "answer": 44.2,
+      "unit": "cm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Etäisyys liiketunnistimeen (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$d\\,(\\text{cm})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "40.1"
+          ],
+          [
+            "0.2",
+            "44.3"
+          ],
+          [
+            "0.4",
+            "46.0"
+          ],
+          [
+            "0.6",
+            "44.1"
+          ],
+          [
+            "0.8",
+            "39.9"
+          ],
+          [
+            "1.0",
+            "35.8"
+          ],
+          [
+            "1.2",
+            "34.0"
+          ],
+          [
+            "1.4",
+            "35.7"
+          ],
+          [
+            "1.6",
+            "40.1"
+          ]
+        ]
+      }
     }
   ]
 }

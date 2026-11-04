@@ -129,3 +129,114 @@ akselit 0
 **Sijoitus:** $|\Sigma F| = \left(30\,\tfrac{\text{N}}{\text{m}} + 50\,\tfrac{\text{N}}{\text{m}}\right)\cdot 0{,}040\,\text{m} = 80\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}040\,\text{m} = 3{,}2\,\text{N}$
 **Vastaus:** $3{,}2\,\text{N}$ vasemmalle kohti tasapainoasemaa, kaksi merkitsevää numeroa kuten poikkeamassa $4{,}0\,\text{cm}$.
 **Järkevyys:** Kumpikin jousi yksinään antaisi $1{,}2\,\text{N}$ ja $2{,}0\,\text{N}$, ja voimat ovat samansuuntaiset, joten summa $3{,}2\,\text{N}$ on suurempi kuin kumpikaan. Kokonaisvoima on harmoninen kuin yhden $80\,\text{N/m}$:n jousen voima; massaa ei tarvittu.
+
+## fy5-8-L1-06
+**Kysytty:** milloin verrannollisuus $F_\text{v} = kx$ kuvaa jousta hyvin.
+**Periaate:** Harmoninen voima on malli, joka pätee, kun jousta ei venytetä liikaa. Silloin $(x, F_\text{v})$-kuvaaja on origon kautta kulkeva suora ja sen kulmakerroin on jousivakio. Liian suurella venymällä jousen aine alkaa venyä eri tavalla tai jää pysyvästi vääntyneeksi, ja kuvaaja taipuu pois suoralta.
+**Mallivastaus:** Lauseke kuvaa jousta hyvin vain, kun jousta ei venytetä liian pitkälle, koska muuten voima ei enää kasva tasaisesti venymän mukana. Jousen asento ei vaikuta asiaan: pystysuoran jousen jousivakio mitataan juuri punnuksen painon avulla. Lauseke pätee yhtä hyvin venytetylle kuin puristetulle jouselle, ja jousivakio on vakio vain jousen toiminta-alueella.
+
+## fy5-8-L1-07
+**Kysytty:** miten jousen potentiaalienergia muuttuu, kun venymä kaksinkertaistetaan.
+**Periaate:** Jousen potentiaalienergia on $(x, F_\text{v})$-kuvaajan kolmion pinta-ala, $E_\text{p} = \tfrac{1}{2}kx^2$. Venymä on kaavassa toisessa potenssissa, joten energia on verrannollinen venymän neliöön.
+**Mallivastaus:** Energia nelinkertaistuu, koska se on verrannollinen venymän toiseen potenssiin: $\tfrac{1}{2}k(2x)^2 = 4\cdot\tfrac{1}{2}kx^2$. Kuvaajassa kolmion kanta ja korkeus molemmat kaksinkertaistuvat, joten sen pinta-ala kasvaa nelinkertaiseksi. Voima kaksinkertaistuu, mutta venytys tehdään myös kaksi kertaa pidemmällä matkalla, ja siksi energia kasvaa enemmän kuin voima. Se ei pysy samana, koska kaava riippuu venymästä, eikä kasva vain neliöjuuren verran, koska venymä on potenssissa kaksi eikä puoli.
+
+## fy5-8-L1-08
+**Annettu:** kuvaajan jousen B suora (katkoviiva), $F_\text{v}$ venymän $x$ funktiona
+**Kysytty:** jousen B jousivakio $k_\text{B}$ yksikössä $\text{N/m}$
+**Periaate:** Venyttävä voima on suoraan verrannollinen venymään, $F_\text{v} = kx$, joten kuvaaja on origon kautta kulkeva suora, ja sen kulmakerroin on jousivakio.
+**Kuvaajan lukeminen:** Jousen B suora on loivempi katkoviiva. Se kulkee origon ja ruudukon pisteen $(0{,}10\,\text{m};\ 2{,}5\,\text{N})$ kautta. Valitaan nämä kaksi kaukana toisistaan olevaa suoran pistettä, jolloin lukemisen epätarkkuus vaikuttaa vähän.
+**Kaava:** $k_\text{B} = \dfrac{\Delta F_\text{v}}{\Delta x}$
+**Muunnokset:** Kuvaajan arvot ovat newtoneina ja metreinä, joten muunnoksia ei tarvita.
+**Sijoitus:** $k_\text{B} = \dfrac{2{,}5\,\text{N} - 0\,\text{N}}{0{,}10\,\text{m} - 0\,\text{m}} = 25\,\text{N/m}$
+**Vastaus:** $25\,\text{N/m}$, kaksi merkitsevää numeroa, joilla kuvaajan ruudukon arvot voi lukea.
+**Järkevyys:** Jousen B suora on loivempi kuin jousen A, joten sen jousivakio on pienempi kuin jousen A jousivakio $60\,\text{N/m}$: $25\,\text{N/m} < 60\,\text{N/m}$. Toinen suoran piste antaa saman: $5{,}0\,\text{cm}$:n venymällä voima on $1{,}25\,\text{N}$ ja $\tfrac{1{,}25\,\text{N}}{0{,}050\,\text{m}} = 25\,\text{N/m}$.
+
+## fy5-8-L2-05
+**Annettu:** punnusten massat $m = 100\,\text{g} \ldots 500\,\text{g}$ ja venymät $x = 4{,}1\,\text{cm} \ldots 22{,}0\,\text{cm}$ taulukosta; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** a) lineaarisen alueen mittauspisteet, b) jousivakio $k$ yksikössä $\text{N/m}$
+**Periaate:** Levossa riippuva punnus vetää jousta voimalla $F_\text{v} = mg$. Kun jousi noudattaa harmonista voimaa, $(x, F_\text{v})$-pisteet ovat origon kautta kulkevalla suoralla ja sen kulmakerroin on jousivakio. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten kulmakerroin luetaan sovitetusta suorasta, ei kahdesta mittauspisteestä.
+**Kuvaajan lukeminen:** Voimat ovat $F_\text{v} = 0{,}98\,\text{N};\ 1{,}96\,\text{N};\ 2{,}94\,\text{N};\ 3{,}92\,\text{N};\ 4{,}91\,\text{N}$. Osamäärä $\tfrac{F_\text{v}}{x}$ on neljässä ensimmäisessä pisteessä noin $24\,\text{N/m}$ ($23{,}9\ldots 24{,}8\,\text{N/m}$), mutta pisteessä $500\,\text{g}$ vain $\tfrac{4{,}91\,\text{N}}{0{,}220\,\text{m}} = 22{,}3\,\text{N/m}$: piste jää suoran alapuolelle, koska jousta on venytetty yli lineaarisen alueen. Piste jätetään pois sovituksesta mutta ei poisteta mittauksesta. Sovitettu suora kulkee pisteiden $(0{,}050\,\text{m};\ 1{,}22\,\text{N})$ ja $(0{,}100\,\text{m};\ 2{,}44\,\text{N})$ kautta.
+**Kaava:** $k = \dfrac{\Delta F_\text{v}}{\Delta x}$
+**Muunnokset:** $F_\text{v} = mg$, esimerkiksi $300\,\text{g} = 0{,}300\,\text{kg}$; venymä $x = 12{,}1\,\text{cm} = 0{,}121\,\text{m}$.
+**Sijoitus:** $k = \dfrac{2{,}44\,\text{N} - 1{,}22\,\text{N}}{0{,}100\,\text{m} - 0{,}050\,\text{m}} = \dfrac{1{,}22\,\text{N}}{0{,}050\,\text{m}} = 24{,}4\,\text{N/m}$
+**Vastaus:** a) pisteet $100\,\text{g}$–$400\,\text{g}$ ovat lineaarisella alueella, piste $500\,\text{g}$ ei. b) $24\,\text{N/m}$, kaksi merkitsevää numeroa, koska venymät on annettu kolmella numerolla mutta hajonta on noin prosentin luokkaa.
+**Järkevyys:** Yksittäinen piste $300\,\text{g}$ antaa $\tfrac{2{,}943\,\text{N}}{0{,}121\,\text{m}} = 24{,}3\,\text{N/m}$, lähellä sovitetun suoran arvoa. Suuruusluokka on tavallinen laboratoriojouselle: $100\,\text{g}$:n punnus venyttää jousta noin $4\,\text{cm}$.
+
+## fy5-8-L2-06
+**Annettu:** lepopituus $L_0 = 12{,}0\,\text{cm}$, jousen pituus kuormitettuna $L = 20{,}0\,\text{cm}$, punnuksen massa $m = 0{,}200\,\text{kg}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** opiskelijan virhe ja oikea jousivakio $k$ yksikössä $\text{N/m}$
+**Periaate:** Lausekkeessa $F_\text{v} = kx$ suure $x$ on jousen venymä lepopituudesta, ei jousen koko pituus. Levossa riippuva punnus vetää jousta voimalla $F_\text{v} = mg$, ja jousi on tällöin pidentynyt lepopituudestaan.
+**Kaava:** $x = L - L_0$ ja $F_\text{v} = mg = kx$, joten $k = \dfrac{mg}{L - L_0}$
+**Muunnokset:** $L - L_0 = 20{,}0\,\text{cm} - 12{,}0\,\text{cm} = 8{,}0\,\text{cm} = 8{,}0 \cdot 0{,}01\,\text{m} = 0{,}080\,\text{m}$
+**Sijoitus:** $k = \dfrac{0{,}200\,\text{kg}\cdot 9{,}81\,\text{m/s}^2}{0{,}080\,\text{m}} = \dfrac{1{,}962\,\text{N}}{0{,}080\,\text{m}} = 24{,}525\,\text{N/m}$
+**Vastaus:** Opiskelija käytti venymänä jousen koko pituutta $0{,}200\,\text{m}$ eikä venymää $0{,}080\,\text{m}$. Oikea jousivakio on $25\,\text{N/m}$, kaksi merkitsevää numeroa kuten venymässä $8{,}0\,\text{cm}$.
+**Järkevyys:** Oikealla jousivakiolla voima venymällä $0{,}080\,\text{m}$ on $24{,}525\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}080\,\text{m} = 1{,}962\,\text{N}$, joka on punnuksen paino. Opiskelijan $9{,}81\,\text{N/m}$ ennustaisi tälle voimalle venymän $0{,}200\,\text{m}$, mutta jousi venyi vain $0{,}080\,\text{m}$, joten opiskelijan arvo on liian pieni.
+
+## fy5-8-L2-07
+**Annettu:** venyttävä voima $F_\text{v} = 12\,\text{N}$ kummallekin, $k_1 = 80\,\text{N/m}$, $k_2 = 240\,\text{N/m}$
+**Kysytty:** a) venymät $x_1$ ja $x_2$, b) energiat $E_1$ ja $E_2$ ja c) energiaero $\Delta E = E_1 - E_2$ yksikössä $\text{J}$
+**Periaate:** Jousta venyttävä voima on $F_\text{v} = kx$, joten venymä on $x = \tfrac{F_\text{v}}{k}$. Jousen potentiaalienergia on $(x, F_\text{v})$-kuvaajan kolmion pinta-ala $E_\text{p} = \tfrac{1}{2}kx^2$. Samalla voimalla pehmeä jousi venyy enemmän, joten sen kolmion kanta on pidempi ja pinta-ala suurempi.
+**Kaava:** $x = \dfrac{F_\text{v}}{k}$, $E_\text{p} = \tfrac{1}{2}kx^2 = \tfrac{1}{2}F_\text{v}x$ ja $\Delta E = E_1 - E_2$
+**Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** Venymät ovat $x_1 = \dfrac{12\,\text{N}}{80\,\text{N/m}} = 0{,}15\,\text{m}$ ja $x_2 = \dfrac{12\,\text{N}}{240\,\text{N/m}} = 0{,}050\,\text{m}$. Energiat ovat $E_1 = \tfrac{1}{2}\cdot 12\,\text{N}\cdot 0{,}15\,\text{m} = 0{,}90\,\text{J}$ ja $E_2 = \tfrac{1}{2}\cdot 12\,\text{N}\cdot 0{,}050\,\text{m} = 0{,}30\,\text{J}$. Ero on $\Delta E = 0{,}90\,\text{J} - 0{,}30\,\text{J} = 0{,}60\,\text{J}$.
+**Vastaus:** Pehmeämmässä jousessa on $0{,}60\,\text{J}$ enemmän energiaa, kaksi merkitsevää numeroa kuten voimassa $12\,\text{N}$. Opiskelija on väärässä: samalla voimalla energia on suurempi pehmeässä jousessa.
+**Järkevyys:** Energia $\tfrac{1}{2}F_\text{v}x$ kasvaa venymän mukana, ja pehmeä jousi venyy kolme kertaa niin pitkälle kuin jäykkä ($0{,}15\,\text{m} : 0{,}050\,\text{m} = 3$), joten energia on kolminkertainen: $0{,}90\,\text{J} : 0{,}30\,\text{J} = 3$. Opiskelijan päättely olisi oikea, jos jousille annettaisiin sama venymä eikä sama voima.
+
+## fy5-8-L3-04
+**Annettu:** venymät $x$ ja voimat $F_\text{v}$ taulukosta, mittauksen alku $(0;\ 0)$, askel $\Delta x = 3{,}0\,\text{cm} = 0{,}030\,\text{m}$
+**Kysytty:** a) onko $\tfrac{F_\text{v}}{x}$ vakio, b) energia $E$ venymällä $12\,\text{cm}$ yksikössä $\text{J}$, c) vertailu kaavaan $\tfrac{1}{2}kx^2$
+**Periaate:** Hooken lain mukaan $\tfrac{F_\text{v}}{x} = k$ olisi vakio. Kuminauhaan varastoitunut energia on venyttävän voiman työ eli $(x, F_\text{v})$-kuvaajan ja $x$-akselin väliin jäävä pinta-ala, ja se voidaan laskea myös silloin, kun kuvaaja ei ole suora. Ala jaetaan puolisuunnikkaisiin.
+**Kuvaajan lukeminen:** Osamäärät $\tfrac{F_\text{v}}{x}$ venymillä $3{,}0$, $6{,}0$, $9{,}0$ ja $12{,}0\,\text{cm}$ ovat $50\,\text{N/m}$, $37\,\text{N/m}$, $31\,\text{N/m}$ ja $33\,\text{N/m}$. Ne eivät ole vakioita: suurin ja pienin eroavat yli $40\,\%$, mikä on paljon enemmän kuin mittausepävarmuus selittäisi. Kuminauha ei noudata Hooken lakia, eikä sillä ole yhtä jousivakiota.
+**Kaava:** $E_i = \Delta x\cdot\dfrac{F_{i} + F_{i+1}}{2}$ ja $E = \sum E_i$
+**Muunnokset:** $\Delta x = 3{,}0\,\text{cm} = 3{,}0 \cdot 0{,}01\,\text{m} = 0{,}030\,\text{m}$
+**Sijoitus:** $E_1 = 0{,}030\,\text{m}\cdot\tfrac{0 + 1{,}5}{2}\,\text{N} = 0{,}0225\,\text{J}$, ja kaikki puolisuunnikkaat ovat
+```latex
+\begin{aligned}
+E_2 &= 0{,}030\,\text{m}\cdot\tfrac{1{,}5 + 2{,}2}{2}\,\text{N} = 0{,}0555\,\text{J} \\
+E_3 &= 0{,}030\,\text{m}\cdot\tfrac{2{,}2 + 2{,}8}{2}\,\text{N} = 0{,}0750\,\text{J} \\
+E_4 &= 0{,}030\,\text{m}\cdot\tfrac{2{,}8 + 4{,}0}{2}\,\text{N} = 0{,}1020\,\text{J}
+\end{aligned}
+```
+Summa on
+```latex
+\begin{aligned}
+E &= (0{,}0225 + 0{,}0555 \\
+&\quad + 0{,}0750 + 0{,}1020)\,\text{J} \\
+&= 0{,}255\,\text{J}
+\end{aligned}
+```
+Kohdassa c) ensimmäisen pisteen jousivakio on $k = 50\,\text{N/m}$, ja kaava antaa
+```latex
+\begin{aligned}
+E_\text{p} &= \tfrac{1}{2}kx^2 \\
+&= \tfrac{1}{2}\cdot 50\,\tfrac{\text{N}}{\text{m}}\cdot(0{,}12\,\text{m})^2 \\
+&= 0{,}36\,\text{J}
+\end{aligned}
+```
+**Vastaus:** $0{,}26\,\text{J}$, kaksi merkitsevää numeroa kuten voimissa $F_\text{v}$. Hooken lain kaava antaisi $0{,}36\,\text{J}$ eli noin $41\,\%$ liian paljon, koska kuminauha on alussa jäykempi kuin myöhemmin.
+**Järkevyys:** Keskimääräinen voima on $\tfrac{0{,}255\,\text{J}}{0{,}12\,\text{m}} = 2{,}1\,\text{N}$, noin puolet loppuvoimasta $4{,}0\,\text{N}$, kuten kuvaajan alle jäävän alan pitääkin olla.
+
+## fy5-8-L3-05
+**Annettu:** vetomatka $x$ ja vetovoima $F_\text{v}$ taulukosta (viimeinen piste $0{,}50\,\text{m}$, $151\,\text{N}$), nuolen massa $m = 25\,\text{g}$, lähtönopeus $v = 47{,}0\,\text{m/s}$
+**Kysytty:** a) jousivakio $k$ ja varastoitunut energia $E_\text{p}$, b) nuolen liike-energia $E_\text{k}$ ja c) hyötysuhde $\eta = \tfrac{E_\text{k}}{E_\text{p}}$ prosentteina
+**Periaate:** Jousipyssy noudattaa mitatulla alueella Hooken lakia, joten sen jousivakio on $(x, F_\text{v})$-kuvaajan sovitetun suoran kulmakerroin ja varastoitunut energia on kolmion pinta-ala $\tfrac{1}{2}kx^2$. Nuoli lähtee levosta, joten sen liike-energia lähdössä on $\tfrac{1}{2}mv^2$. Energian säilyessä sen pitäisi olla yhtä suuri kuin varastoitunut energia; erotus on häviö.
+**Kuvaajan lukeminen:** Pisteet ovat lähellä origon kautta kulkevaa suoraa, joka kulkee pisteen $(0{,}50\,\text{m};\ 151\,\text{N})$ kautta. Osamäärät $\tfrac{F_\text{v}}{x}$ ovat $295$, $307$, $303$ ja $302\,\text{N/m}$, eli ne ovat likimain vakiot ja Hooken laki kelpaa. Kulmakerroin luetaan sovitetun suoran kahdesta pisteestä, joita ovat origo ja piste $(0{,}50\,\text{m};\ 151\,\text{N})$.
+**Kaava:** $k = \dfrac{F_\text{v}}{x}$, $E_\text{p} = \tfrac{1}{2}kx^2$, $E_\text{k} = \tfrac{1}{2}mv^2$ ja $\eta = \dfrac{E_\text{k}}{E_\text{p}}$
+**Muunnokset:** $x = 50\,\text{cm} = 50 \cdot 0{,}01\,\text{m} = 0{,}50\,\text{m}$ ja $m = 25\,\text{g} = 25 \cdot 0{,}001\,\text{kg} = 0{,}025\,\text{kg}$
+**Sijoitus:** $k = \dfrac{151\,\text{N}}{0{,}50\,\text{m}} = 302\,\text{N/m}$, ja energia on
+```latex
+\begin{aligned}
+E_\text{p} &= \tfrac{1}{2}\cdot 302\,\tfrac{\text{N}}{\text{m}}\cdot(0{,}50\,\text{m})^2 \\
+&= 37{,}75\,\text{J}
+\end{aligned}
+```
+Nuolen liike-energia ja hyötysuhde ovat
+```latex
+\begin{aligned}
+E_\text{k} &= \tfrac{1}{2}\cdot 0{,}025\,\text{kg}\cdot(47{,}0\,\text{m/s})^2 \\
+&= 27{,}61\,\text{J} \\
+\eta &= \frac{27{,}61\,\text{J}}{37{,}75\,\text{J}} = 0{,}731
+\end{aligned}
+```
+**Vastaus:** $73\,\%$ varastoituneesta energiasta muuttui nuolen liike-energiaksi, kaksi merkitsevää numeroa kuten nuolen massassa $25\,\text{g}$. Loput noin $27\,\%$ eli noin $10\,\text{J}$ meni todennäköisesti jousen ja jänteen liike-energiaan, värähtelyyn, ääneen ja lämpöön: jousi ja jänne liikkuvat itsekin ja pysähtyvät lopuksi. Vastaus perustuu oletukseen, että jousen massa on pieni ja että kuvaaja on suora koko vetomatkalla.
+**Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten pitääkin, ja yli $70\,\%$:n hyötysuhde on todellisille jousipyssyille tavallinen. Nopeus tarkistetaan toisinpäin: jos kaikki $37{,}75\,\text{J}$ menisi nuolelle, sen nopeus olisi $\sqrt{\tfrac{2\cdot 37{,}75\,\text{J}}{0{,}025\,\text{kg}}} = 55{,}0\,\text{m/s}$, vähän enemmän kuin mitattu $47{,}0\,\text{m/s}$.

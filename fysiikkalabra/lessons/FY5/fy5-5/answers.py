@@ -25,4 +25,15 @@ a["fy5-5-L3-02"] = 9.81 * 2                                  # same density, dou
 F_sun = gamma * 1.99e30 / 1.50e11 ** 2                       # per kg of Earth: Sun 5,90e-3 m/s²
 F_moon = gamma * 7.35e22 / 3.84e8 ** 2                       # Moon 3,33e-5 m/s²
 a["fy5-5-L3-03"] = F_sun / F_moon                            # the Sun pulls 177 times harder
+# Exercise-bank additions: L1-06, L1-07 and L1-08 are multiple choice (no number)
+gs = lambda M, R: gamma * M / R ** 2                         # surface field strength
+a["fy5-5-L2-05"] = gs(1.02e26, 24622e3) / gs(8.68e25, 25362e3)   # Neptune/Uranus surface field: 11,23/9,006 = 1,25
+rm = [(4.0, 1.29), (5.0, 0.80), (6.0, 0.56), (8.0, 0.31)]    # (r in cm, F in nN), M = 1,50 kg, m = 20,0 g
+gam = [F * 1e-9 * (r / 100) ** 2 / (1.50 * 0.0200) for r, F in rm]
+a["fy5-5-L2-06"] = sum(gam) / len(gam) * 1e11                # mean gamma = 6,72e-11 (answer in 1e-11)
+gh = [(0, 9.81), (400, 8.69), (1000, 7.33), (2000, 5.68), (3000, 4.53)]   # (h in km, g)
+a["fy5-5-L2-07"] = sum(g * (6.378e6 + h * 1e3) ** 2 for h, g in gh) / len(gh) / 1e14   # mean of g(R+h)^2 = 3,99e14
+M_earth = 9.81 * 6.371e6 ** 2 / gamma                        # Earth's mass from g and R: 5,966e24 kg
+a["fy5-5-L3-04"] = M_earth / (4 / 3 * math.pi * 6.371e6 ** 3)   # mean density 5508 -> 5510 kg/m3
+a["fy5-5-L3-05"] = 2 * math.pi * math.sqrt(6.378e6 / 9.81) / 60  # T' for zero scale reading: a_n = g, 84,4 min
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
