@@ -2662,6 +2662,12 @@
         "one": "All cards of the chapter →",
         "other": "All {{n}} cards of the chapter →"
       },
+      "row_left": {
+        "one": "{{n}} card left in the pile",
+        "other": "{{n}} cards left in the pile"
+      },
+      "row_done": "You have gone through all the cards.",
+      "row_restart": "Start again",
       "deck_count": {
         "one": "Your review deck has {{n}} card",
         "other": "Your review deck has {{n}} cards"

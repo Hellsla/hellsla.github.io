@@ -2662,6 +2662,12 @@
         "one": "Luvun kaikki kortit →",
         "other": "Luvun kaikki {{n}} korttia →"
       },
+      "row_left": {
+        "one": "Jäljellä on vielä {{n}} kortti",
+        "other": "Jäljellä on vielä {{n}} korttia"
+      },
+      "row_done": "Kävit kaikki kortit läpi.",
+      "row_restart": "Aloita alusta",
       "deck_count": {
         "one": "Kertauspakassasi on {{n}} kortti",
         "other": "Kertauspakassasi on {{n}} korttia"
