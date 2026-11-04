@@ -209,7 +209,7 @@ new p5((p) => {
     }
     lab('$x\\ (\\text{cm})$', IX + G * IC, IY + G * IC + 6 * sk + 2.4 * fh, 'r', INKC);
     lab('$y\\ (\\text{cm})$', IX - 4, IY - 0.55 * fh, 'l', INKC);
-    if (!coin) lab('$\\text{ei kuvaa}$', IX + G * IC / 2, IY + G * IC / 2 + 0.35 * fh, 'c', PAPER);
+    if (!coin) lab(__('ei_kuvaa_kanvas'), IX + G * IC / 2, IY + G * IC / 2 + 0.35 * fh, 'c', PAPER);
     lab('$N = ' + String(N) + '$', IX + G * IC / 2, IY + G * IC + 6 * sk + 3.9 * fh, 'c', HEATC);
   }
   function ramp(v) {                                   // ink -> heat -> light heat -> white

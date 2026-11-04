@@ -1953,6 +1953,28 @@
       "linnunrata": "Milky Way",
       "lab_vety": "hydrogen in the laboratory",
       "lukemat": "Galaxy {{n}}: distance $d = {{d}}\\,\\text{Mpc}$<br>$\\text{H}\\alpha$ line: $\\lambda_0 = 656.3\\,\\text{nm}$, $\\lambda = {{lam}}\\,\\text{nm}$, $\\Delta\\lambda = {{dlam}}\\,\\text{nm}$<br>Redshift $z = {{z}}$, speed $v = {{v}}\\,\\text{km/s}$<br><strong>Line $v = H_0\\,d$: $H_0 = {{H0}}\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$, $\\tfrac{1}{H_0} = {{age}} \\cdot 10^{9}\\,\\text{a}$</strong>"
+    },
+    "fy8-14": {
+      "kaynnista": "Start collecting",
+      "pysayta": "Stop",
+      "lkm": "Coincidences $N = {{n}}$",
+      "kohde": "Patient",
+      "kohde_1": "one tumour",
+      "kohde_2": "two tumours",
+      "kohde_0": "no tumour",
+      "ilmaisu": "Detection",
+      "ilmaisu_1": "coincidence",
+      "ilmaisu_0": "single photons",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "selite": "Orange dot: annihilation photon. Line: the segment between the detectors that were hit at the same time.",
+      "lukemat": "Coincidences $N = {{n}}$<br><strong>Brightest spot of the image $(x, y) = ({{x}}, {{y}})\\,\\text{cm}$</strong><br>Distance from the tumour ${{e}}\\,\\text{cm}$, lines through the tumour ${{o}}\\,\\%$",
+      "lukemat_ei": "Coincidences $N = {{n}}$<br><strong>Brightest spot of the image $(x, y) = ({{x}}, {{y}})\\,\\text{cm}$</strong><br>There is no tumour: the tracer is spread evenly.",
+      "lukemat_0": "Coincidences $N = 0$<br><strong>The image has not started to form yet.</strong>",
+      "lukemat_yks": "Detected photons $N = {{n}}$<br><strong>No image is formed:</strong> of a single photon we know only the detector, not the direction.",
+      "ei_kuvaa_kanvas": "$\\text{no image}$"
     }
   },
   "practice": {
