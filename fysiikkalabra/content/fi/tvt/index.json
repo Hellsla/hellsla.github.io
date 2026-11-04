@@ -1,0 +1,12 @@
+{
+  "_note": "The TVT index page tvt.html (teacher 2026-11-03): the guides in a learning order, measuring → data → graph → fit and interpretation → rates and areas → uncertainty → report. Every guide of this language in exactly one group (guides.py check). Not part of any guide's content hash.",
+  "groups": [
+    {"title": "Mittaaminen", "text": "Mittausdata anturilta, puhelimesta tai videolta Graphical Analysis Prohon.", "guides": ["tvt-mittausohjelma", "tvt-videoanalyysi"]},
+    {"title": "Mittausdatan käsittely", "text": "Taulukko, sarakkeiden nimet ja yksiköt sekä mitatuista suureista lasketut uudet suureet.", "guides": ["tvt-taulukkolaskenta"]},
+    {"title": "Kuvaajan laatiminen", "text": "Akselit, asteikot ja mittauspisteet niin, että suureiden riippuvuus näkyy.", "guides": ["tvt-kuvaaja"]},
+    {"title": "Sovitus ja tulkinta", "text": "Fysiikan mallin mukainen funktio mittauspisteisiin ja sen parametrien fysikaalinen merkitys.", "guides": ["tvt-suoran-sovitus", "tvt-kulmakerroin"]},
+    {"title": "Muutosnopeus ja pinta-ala", "text": "Nopeus ja matka mittausdatasta: kuvaajan kulmakerroin ja kuvaajan alle jäävä pinta-ala.", "guides": ["tvt-nopeus-datasta"]},
+    {"title": "Mittausepävarmuus", "text": "Kuinka tarkka tulos on, ja miten epävarmuus ilmoitetaan.", "guides": ["tvt-epavarmuus"]},
+    {"title": "Raportointi", "text": "Kuvaajat, tulokset ja johtopäätökset työselostukseen.", "guides": ["tvt-tyoselostus"]}
+  ]
+}

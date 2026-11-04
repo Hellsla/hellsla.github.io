@@ -20,6 +20,10 @@ One guide is written once and linked from every investigation that needs the ski
   lessons/tvt/<id>/figures.py          the figures (scripts/figlib.py); example data on a figure is labelled as an
         example, never presented as a measurement
 
+content/<lang>/tvt/index.json is the TVT index page tvt.html (teacher 2026-11-03): groups [{title, text, guides}] in a
+learning order (measuring → data → graph → fit → interpretation → uncertainty → report), every guide in one group.
+The page is shared by every course; a guide's own page links back to it. Not part of any guide's hash.
+
 An investigation names the guides of a tvt prerequisite with "guides": [ids] (investigations.py), and its text
 links one with `[[ohje:<id>|label]]`. build.py publishes site/<id>.html when both reviews PASS for the current hash,
 lists the published guides on the course page of FY10, and on each guide the published investigations that use it.
@@ -101,6 +105,41 @@ def check(gid, lang=i18n.SOURCE):
     return errs
 
 
+def index_groups(lang=i18n.SOURCE):
+    p = ROOT / "content" / lang / DIR / "index.json"
+    return json.loads(p.read_text())["groups"] if p.is_file() else []
+
+
+def check_index(lang=i18n.SOURCE):
+    """Error lines for the TVT index: every guide of this language in exactly one group, no unknown ids."""
+    have = ids(lang)
+    if not have: return []
+    listed = [g for grp in index_groups(lang) for g in grp.get("guides", [])]
+    errs = [f"{DIR}/index.json ({lang}): group {i} needs title, text and guides" for i, grp in enumerate(index_groups(lang), 1)
+            if not (grp.get("title") and grp.get("text") and grp.get("guides"))]
+    errs += [f"{DIR}/index.json ({lang}): {g} is not a guide" for g in listed if g not in have]
+    errs += [f"{DIR}/index.json ({lang}): {g} is in no group" for g in have if g not in listed]
+    errs += [f"{DIR}/index.json ({lang}): {g} is in several groups" for g in sorted(set(listed)) if listed.count(g) > 1]
+    return errs
+
+
+def index_body(T, published, lang=i18n.SOURCE):
+    """The TVT index (tvt.html): the published guides in their groups, numbered in the learning order."""
+    out, n = "", 0
+    for grp in index_groups(lang):
+        items = ""
+        for g in grp["guides"]:
+            if f"{g}.html" not in published: continue
+            n += 1; d = load(g, lang)
+            items += (f'<li class="live"><span class="l-num">{n}</span><a href="{g}.html">{esc(d["title"])}</a>'
+                      f'<span class="local-why">{esc(d["description"])}</span></li>')
+        if items:
+            out += (f'<section class="tvt-group"><h2>{esc(grp["title"])}</h2><p class="section-lead">{esc(grp["text"])}</p>'
+                    f'<ol class="lessons local-inv tvt-list">{items}</ol></section>')
+    return (f'<span class="eyebrow">{T("guides.index_eyebrow")}</span><h1>{T("guides.index_title")}</h1>'
+            f'<p class="lead">{T("guides.index_lead")}</p>' + out)
+
+
 def figures(gid, write=True):
     """Fill every <svg data-fig="name"> of guide.md from figures.py; returns True when it was up to date."""
     src = code_folder(gid) / "figures.py"
@@ -153,20 +192,11 @@ def render(gid, lang, T, md, published, users):
     return body, "".join(f'<a href="#{a}">{esc(t)}</a>' for a, t in toc)
 
 
-def course_section(T, published, lang=i18n.SOURCE):
-    """The list of published guides for a course page (FY10): title and one sentence each."""
-    items = "".join(f'<li class="live"><a href="{g}.html">{esc(load(g, lang)["title"])}</a>'
-                    f'<span class="local-why">{esc(load(g, lang)["description"])}</span></li>'
-                    for g in ids(lang) if f"{g}.html" in published)
-    if not items: return ""
-    return (f'<h2 id="tvt-ohjeet">{T("guides.course_heading")}</h2><p class="section-lead">{T("guides.course_lead")}</p>'
-            f'<ul class="lessons local-inv tvt-list">{items}</ul>')
-
-
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "check"
     if cmd == "check":
         errs = [e for lang in i18n.languages() for gid in ids(lang) for e in check(gid, lang)]
+        errs += [e for lang in i18n.languages() for e in check_index(lang)]
         errs += [f"{DIR}/{gid}: figures differ from figures.py (guides.py figures {gid})" for gid in ids() if not figures(gid, write=False)]
         print("\n".join(errs) or f"{len(ids())} guide(s) ok"); sys.exit(1 if errs else 0)
     if cmd == "hash": print(content_hash(sys.argv[2], sys.argv[sys.argv.index("--lang") + 1] if "--lang" in sys.argv else i18n.SOURCE))

@@ -14,7 +14,7 @@ For every language, from the pages that are actually in site/ (so nothing here h
     content/<lang>/tietoa.md); no page links to the teacher's portfolio (teacher 2026-11-04)
   - every language link resolves, and a link to a page the other language has not published goes to that
     language's module page, to a note that exists there
-  - the course page's investigation bank (teacher 2026-10-31): every investigation with its topic, F/E levels and
+  - the investigation bank (teacher 2026-10-31; its own page tutkimukset.html for a course with a path, 2026-11-03): every investigation with its topic, F/E levels and
     modes, the filter form hidden without scripts, and in a browser a search that hides all and "Näytä kaikki" that
     brings all back; the TVT-ohjeet it lists are published pages
   - Lukiokohtaiset opintojaksot (teacher 2026-10-30, local-courses.json): in the right column after Tulossa, one row
@@ -155,14 +155,29 @@ for lang in i18n.languages():
             hrefs = re.findall(r'href="([^"]+)"', prep.group(1)) if prep else []
             expect(f"{lang} {code}: chapters to prepare with link only published pages ({len(hrefs)})", all((out / h).is_file() for h in hrefs), hrefs)
             expect(f"{lang} {code}: not a national module row", code not in codes)
-            inv = re.search(r'<ol class="lessons ch-cards local-inv bank-list" id="bank-list">(.*?)</ol>', pg, re.S)   # the bank's cards by topic
+            bank_pg = pg
+            if local[code].get("path"):  # FY10 (teacher 2026-11-03): Aloita tästä first, the bank and the TVT index on pages of their own
+                steps = re.findall(r'<li class="path-step">(.*?)</div></li>', pg, re.S)
+                expect(f"{lang} {code}: 'Aloita tästä' shows every step of the path ({len(steps)})", len(steps) == len(local[code]["path"]) and pg.find('id="aloita"') < pg.find('id="taustaa"'))
+                bad = [h for st in steps for h in re.findall(r'href="([^"]+)"', st) if not (out / h).is_file()]
+                expect(f"{lang} {code}: every step links one investigation and its guides, all published pages", not bad and all('class="path-inv"' in st for st in steps), bad)
+                expect(f"{lang} {code}: the bank is not on the course page, which links to it and to the TVT index",
+                       'id="bank-list"' not in pg and f'href="{local_courses.BANK_PAGE}"' in pg and f'href="{local_courses.TVT_PAGE}"' in pg)
+                expect(f"{lang} {code}: the planned themes are not repeated beside the path", 'id="eteneminen"' not in pg)
+                bank_pg = (out / local_courses.BANK_PAGE).read_text() if (out / local_courses.BANK_PAGE).is_file() else ""
+                expect(f"{lang} {code}: the bank page exists", bool(bank_pg))
+            n_inv = sum(1 for i in investigations.ids(lang) if (out / f"{i}.html").is_file() and code in investigations.load(i, lang)["courses"])
+            inv = re.search(r'<ol class="lessons ch-cards local-inv bank-list" id="bank-list">(.*?)</ol>', bank_pg, re.S)   # the bank's cards by topic
             ihrefs = re.findall(r'href="([^"]+)"', inv.group(1)) if inv else []
             expect(f"{lang} {code}: listed investigations are published pages that name this course ({len(ihrefs)})",
                    all((out / h).is_file() and code in investigations.load(h[:-5], lang)["courses"] for h in ihrefs), ihrefs)
+            expect(f"{lang} {code}: the bank lists every published investigation of the course", len(ihrefs) == n_inv, (len(ihrefs), n_inv))
             if ihrefs:                   # the bank (teacher 2026-10-31): every item carries its filter data, the form starts hidden
                 items = re.findall(r'<li class="live ch-card bank-item" data-topic="(\w+)" data-f="([F123 ]+)" data-e="([E123 ]+)" data-mode="([OI ]+)"', inv.group(1))
                 expect(f"{lang} {code}: every investigation in the bank has topic, F, E and modes ({len(items)})", len(items) == len(ihrefs), len(items))
-                expect(f"{lang} {code}: the filter form starts hidden (all shown without scripts)", '<form class="bank-filter" id="bank-filter" hidden' in pg)
+                expect(f"{lang} {code}: the filter form starts hidden (all shown without scripts)", '<form class="bank-filter" id="bank-filter" hidden' in bank_pg)
+                expect(f"{lang} {code}: the bank filters by topic, physics and experiment level only (the mode is chosen on the investigation)",
+                       all(f'id="bank-{k}"' in bank_pg for k in ("q", "topic", "f", "e")) and 'id="bank-mode"' not in bank_pg)
                 cards = re.findall(r'<li class="live ch-card bank-item"[^>]*>(.*?)</li>', inv.group(1), re.S)
                 expect(f"{lang} {code}: every investigation is a card with its opening illustration and its question (teacher 2026-11-04)",
                        len(cards) == len(ihrefs) and all('class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in cards))
@@ -176,6 +191,13 @@ for lang in i18n.languages():
             ghrefs = re.findall(r'href="(tvt-[\w-]+\.html)"', pg)
             expect(f"{lang} {code}: listed TVT-ohjeet are published pages ({len(ghrefs)})", all((out / h).is_file() for h in ghrefs), ghrefs)
     else: expect(f"{lang}: no local-course section without a course in this language", not sec)
+    guides_built = sorted(f.name for f in out.glob("tvt-*.html"))
+    if guides_built:                     # the TVT index (teacher 2026-11-03): every published guide once, in groups; each guide links back
+        idx = (out / local_courses.TVT_PAGE).read_text() if (out / local_courses.TVT_PAGE).is_file() else ""
+        listed = re.findall(r'<li class="live"><span class="l-num">\d+</span><a href="(tvt-[\w-]+\.html)"', idx)
+        expect(f"{lang}: the TVT index lists every published guide once ({len(listed)})", sorted(listed) == guides_built, (listed, guides_built))
+        back = [g for g in guides_built if f'href="{local_courses.TVT_PAGE}"' not in (out / g).read_text()]
+        expect(f"{lang}: every guide links back to the TVT index", not back, back)
     for code in everywhere:
         if code not in local: expect(f"{lang}: front page note for {code}, which this language lacks", f'id="unavailable-{code}"' in home)
     # module icons (teacher 2026-10-31, scripts/module_icons.py): every row of the catalogue, the school-specific courses
@@ -294,18 +316,19 @@ with sync_playwright() as pw:
     for lang in i18n.languages():
         base = SITE if lang == i18n.SOURCE else SITE / lang
         for w, hgt in ((360, 780), (390, 844), (768, 1024), (1440, 900), (1920, 1080)):
+            extra = tuple(n for n in (local_courses.BANK_PAGE, local_courses.TVT_PAGE) if (base / n).is_file())
             mix = ("yo-sekoitin.html",) if any(c.get("mixer") for c in local_courses.load().values()) else ()
-            for name in ("index.html", "FY4.html", "lukuvinkit.html") + tuple(f"{c}.html" for c in local_courses.load(lang)) + mix:
+            for name in ("index.html", "FY4.html", "lukuvinkit.html") + tuple(f"{c}.html" for c in local_courses.load(lang)) + extra + mix:
                 pg = b.new_page(viewport={"width": w, "height": hgt}); pg.goto((base / name).as_uri())
                 pg.evaluate("document.fonts.ready.then(() => true)"); pg.wait_for_timeout(150)
                 found = pg.evaluate(JS)
                 expect(f"{lang}/{name} at {w} px: no sideways scroll, header on one row, titles whole, targets 44 px", not found, found)
-                if name.startswith("FY10") and pg.query_selector("#bank-filter"):      # the bank filters in place, by keyboard too
+                if pg.query_selector("#bank-filter"):      # the bank filters in place, by keyboard too
                     total = pg.evaluate("document.querySelectorAll('.bank-item').length")
                     pg.focus("#bank-q"); pg.keyboard.type("zzzz-ei-ole")
                     hidden = pg.evaluate("[...document.querySelectorAll('.bank-item')].every(li => li.hidden) && !document.getElementById('bank-none').hidden")
                     pg.keyboard.press("Tab"); pg.keyboard.press("ArrowDown")      # topic select by keyboard: the first topic
-                    pg.click(".bank-reset"); pg.wait_for_timeout(30)
+                    pg.click("button[type=reset].bank-reset"); pg.wait_for_timeout(30)
                     back = pg.evaluate("document.querySelectorAll('.bank-item:not([hidden])').length")
                     expect(f"{lang}/{name} at {w} px: the bank filters without reloading and 'show all' brings all {total} back", hidden and back == total, (hidden, back))
                 if name == "yo-sekoitin.html" and w == 390:     # the task mixer: filters in place, a random pick of three, reset

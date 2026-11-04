@@ -112,6 +112,12 @@
     "local_status_building": "Rakenteilla",
     "local_status_note_building": "Opintojakson oppitunteja julkaistaan sitä mukaa kuin ne valmistuvat ja on tarkistettu. Laajuutta ja arviointia ei ole vielä vahvistettu.",
     "local_status_ready": "Valmis",
+    "path_heading": "Aloita tästä",
+    "path_lead": "Kokeellinen tutkimus etenee näissä kahdeksassa vaiheessa. Jokaisessa vaiheessa on taito, jota harjoittelet, suositeltu tutkimus ja ohjeet, joita tarvitset. Etene järjestyksessä tai palaa vaiheeseen, kun tarvitset sitä.",
+    "path_investigation": "Suositeltu tutkimus:",
+    "path_guides": "TVT-ohjeet:",
+    "path_hubs": "Kaikki tutkimukset ja ohjeet",
+    "local_background": "Opintojakson taustaa",
     "home_h1": "Tutki. Oivalla. Sovella.",
     "home_sub": "Ennusta, tutki simulaatiolla tai aineistolla, selitä itse.",
     "study": "Näin opiskelet",
@@ -2569,7 +2575,14 @@
     "mode_short_O": "ohjattu",
     "mode_short_OO": "osittain ohjattu",
     "mode_short_I": "itsenäinen",
-    "builds_on": "Esitiedot:"
+    "builds_on": "Esitiedot:",
+    "bank_title": "Tutkimuspankki",
+    "bank_hub": {
+      "one": "{{n}} tutkimus. Hae nimellä tai välineellä, ja rajaa aihealueen ja vaativuuden mukaan.",
+      "other": "{{n}} tutkimusta. Hae nimellä tai välineellä, ja rajaa aihealueen ja vaativuuden mukaan."
+    },
+    "bank_lead": "Kaikki kokeelliset tutkimukset yhdessä paikassa. Rajaa luetteloa aihealueen, fysiikan vaativuuden ja kokeen vaativuuden mukaan.",
+    "bank_description": "Kokeellisen fysiikan tutkimuspankki: tutkimukset aihealueen ja vaativuustason mukaan."
   },
   "guides": {
     "used_by": "Tarvitset tätä tutkimuksissa:",
@@ -2579,7 +2592,16 @@
     "course_heading": "TVT-ohjeet",
     "course_lead": "Lyhyet ohjeet taitoihin, joita tutkimuksissa tarvitaan. Tutkimussivu kertoo, mitä ohjetta milloinkin tarvitset.",
     "prereq_guides": "ohje:",
-    "notice_draft": "Tämä ohje on luonnos, jota ei ole vielä tarkistettu."
+    "notice_draft": "Tämä ohje on luonnos, jota ei ole vielä tarkistettu.",
+    "index_title": "TVT-taidot",
+    "index_eyebrow": "Kokeellisen fysiikan ohjeet",
+    "index_lead": "Ohjeet mittausaineiston käsittelyyn, kuvaajiin ja graafiseen analyysiin Graphical Analysis Prolla. Ne etenevät mittaamisesta raportointiin. Voit opiskella ne järjestyksessä tai avata ohjeen, kun tutkimus tarvitsee sitä.",
+    "index_hub": {
+      "one": "{{n}} ohje mittaamiseen, kuvaajiin, sovitukseen, epävarmuuteen ja raportointiin.",
+      "other": "{{n}} ohjetta mittaamiseen, kuvaajiin, sovitukseen, epävarmuuteen ja raportointiin."
+    },
+    "index_description": "TVT-taidot: ohjeet mittausaineiston käsittelyyn ja graafiseen analyysiin Graphical Analysis Prolla.",
+    "back_to_index": "Takaisin TVT-taitoihin"
   },
   "fbd": {
     "lead": "Voimakuvio, nuolet mittakaavassa:",

@@ -112,6 +112,12 @@
     "local_status_building": "Tekeillä",
     "local_status_note_building": "Oppitunteja tulee sivulle sitä mukaa kuin ne valmistuvat. Laajuutta ja arviointia ei ole vielä päätetty.",
     "local_status_ready": "Valmis",
+    "path_heading": "Aloita tästä",
+    "path_lead": "Kokeellinen tutkimus etenee kahdeksassa vaiheessa. Jokaisessa vaiheessa opit yhden taidon. Vaiheessa on myös yksi suositeltu tutkimus ja ohjeet, joita tarvitset.",
+    "path_investigation": "Suositeltu tutkimus:",
+    "path_guides": "TVT-ohjeet:",
+    "path_hubs": "Kaikki tutkimukset ja ohjeet",
+    "local_background": "Tietoa opintojaksosta",
     "home_h1": "Tutki. Ymmärrä. Käytä.",
     "home_sub": "Ennusta, tutki simulaatiolla tai aineistolla, selitä itse.",
     "study": "Näin opiskelet",
@@ -2569,7 +2575,14 @@
     "mode_short_O": "ohjattu",
     "mode_short_OO": "osittain ohjattu",
     "mode_short_I": "itsenäinen",
-    "builds_on": "Esitiedot:"
+    "builds_on": "Esitiedot:",
+    "bank_title": "Tutkimuspankki",
+    "bank_hub": {
+      "one": "{{n}} tutkimus. Voit hakea ja rajata tutkimuksia.",
+      "other": "{{n}} tutkimusta. Voit hakea ja rajata tutkimuksia."
+    },
+    "bank_lead": "Kaikki kokeelliset tutkimukset ovat tässä. Voit rajata niitä aiheen ja vaikeuden mukaan.",
+    "bank_description": "Kokeellisen fysiikan tutkimukset aiheen ja vaikeuden mukaan."
   },
   "guides": {
     "used_by": "Tarvitset tätä näissä tutkimuksissa:",
@@ -2579,7 +2592,16 @@
     "course_heading": "TVT-ohjeet",
     "course_lead": "Lyhyitä ohjeita taitoihin, joita tarvitset tutkimuksissa. Tutkimuksen sivulla lukee, mitä ohjetta tarvitset.",
     "prereq_guides": "ohje:",
-    "notice_draft": "Tämä ohje on luonnos. Sitä ei ole vielä tarkistettu."
+    "notice_draft": "Tämä ohje on luonnos. Sitä ei ole vielä tarkistettu.",
+    "index_title": "TVT-taidot",
+    "index_eyebrow": "Ohjeet kokeelliseen fysiikkaan",
+    "index_lead": "Ohjeet mittaustulosten käsittelyyn ja kuvaajiin Graphical Analysis Pro -ohjelmalla. Ohjeet ovat järjestyksessä mittaamisesta raporttiin.",
+    "index_hub": {
+      "one": "{{n}} ohje mittaamiseen, kuvaajiin ja raporttiin.",
+      "other": "{{n}} ohjetta mittaamiseen, kuvaajiin ja raporttiin."
+    },
+    "index_description": "TVT-taidot: ohjeet mittaustuloksiin ja kuvaajiin Graphical Analysis Pro -ohjelmalla.",
+    "back_to_index": "Takaisin TVT-taitoihin"
   },
   "fbd": {
     "lead": "Voimakuvio, nuolten pituudet oikeassa suhteessa:",
