@@ -106,8 +106,15 @@ for lang in i18n.languages():
     hdr = re.search(r'<header class="top">.*?</header>', home, re.S).group(0); ftr = re.search(r'<footer class="bottom">.*?</footer>', home, re.S).group(0)
     expect(f"{lang}: the header links Moduulit, Näin opiskelet and Lukuvinkit in that order",
            re.findall(r'<nav [^>]*><a class="nav-modules" href="index.html#moduulit">[^<]*</a><a class="nav-study" href="nain-opiskelet.html">([^<]*)</a><a class="nav-reading" href="lukuvinkit.html">', hdr) == [_h.escape(T("site.study"))], hdr[-400:])
-    expect(f"{lang}: the footer links Lukuvinkit and Sivustosta",
-           'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr, ftr)
+    expect(f"{lang}: the footer links Lukuvinkit, Sivustosta and Tietosuoja",
+           'href="tietoa.html"' in ftr and 'href="lukuvinkit.html"' in ftr and 'href="tietosuoja.html"' in ftr, ftr)
+    priv = (out / "tietosuoja.html").read_text() if (out / "tietosuoja.html").is_file() else ""
+    psrc = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / "fi" / "tietosuoja.md") if f.is_file()), None)
+    pheads = re.findall(r"^#+ (.+)$", psrc.read_text(), re.M) if psrc else []
+    expect(f"{lang}: Tietosuoja shows content/{lang}/tietosuoja.md with all its headings (teacher 2026-11-04)",
+           '<main class="reading privacy-page">' in priv and bool(pheads) and all(_h.escape(h) in priv for h in pheads), pheads)
+    expect(f"{lang}: no page sets a cookie (Tietosuoja says the site uses none)",
+           not [f.name for f in (ROOT / "templates").glob("*.js") if "document.cookie" in f.read_text(errors="ignore")])
     about = (out / "tietoa.html").read_text() if (out / "tietoa.html").is_file() else ""
     expect(f"{lang}: tietoa.html exists", bool(about))
     expect(f"{lang}: Sivustosta opens with Kiviruukin lukio's logo in the school's colours (teacher 2026-11-04)",
