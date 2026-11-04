@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: c2d3495c28992833
+CONTENT-HASH: 9afe1ad795180985
 
 ## Blocking
 
 ## Polish
-- solutions.md:276, :282 (L3-05) — carried from round 1: "kärry vetää köyttä ja oppilasta" is wrong as written (the cart does not act on the student). — Write "kärry vetää köyttä, ja köysi vetää oppilasta". The Vastaus also lists b) before a); put them in task order.
-- solutions.md:226 (L1-08) — carried: "osoittaa lapsesta kelkkaa kohti eli lasta vastaan" is unclear. — Write "osoittaa lapsesta kelkkaa kohti (köysi vetää lasta taaksepäin)".
-- exercises.json L2-06 b) — carried: the table covers 0–5 s, but the distance is asked "ajassa 6,0 s", an unnamed 1 s extrapolation. — Ask for 5,0 s or state that the motion continues the same way. At solutions.md:253, "kokonaisvoima on nolla" should say "likimain nolla".
-- solutions.md L3-04 c) — carried: also explain why the cart starts (the rope's force on the cart exceeds the cart's resistances); the text gives this only for the horse.
-- docs/exercise-bank/FY4.md — carried: the plan's "väärin piirretty voimapari" and L3 "törmäävät kärryt" items became L2-07 and L3-05. The swap is right for this chapter (no second law); update the plan.
+- solutions.md:265–279 (L3-04) — each diagram has its own scale, and the 40 N and 30 N forces are drawn at the minimum length. So the 450 N pair T is 232 units long on the cart and 197 on the horse, and inside each diagram the 410 N / 450 N forces are about 7 % shorter than to scale (the alt text says that small forces are lengthened). Not an error. A shared scale for both bodies would let the student see that T is equal on both.
+- solutions.md:265–279 (L3-04) — only horizontal forces are drawn. Add one sentence saying that the weight and the road's normal force cancel and are not drawn, as in L1-04.
+- solutions.md:227 (L1-08) — the moved text is correct. "eli lasta vastaan" on yhä epäselvä (siirretty edelliseltä kierrokselta); "(köysi vetää lasta taaksepäin)" olisi selvempi.
+- Carried from the previous round: L3-05 "kärry vetää köyttä ja oppilasta"; L2-06 b) 6,0 s against a 0–5 s table; L3-04 c) does not say why the cart starts.
 
 ## Checked
-- Round 2. Round-1 Blocking solutions.md:242 (L2-05, Järkevyys) is resolved: "eroavat … enintään 0,1 N" matches the table (B − A = +0,1; −0,1; 0; +0,1; −0,1 N), the differences do alternate in sign, and "kevyen köyden molemmat päät vetävät yhtä suurella voimalla joka hetki" is right for a rope whose mass is neglected; the wrong claim about acceleration is gone.
-- Round-1 Blocking solutions.md:271 (L3-04, Järkevyys) is resolved: friction now "osoittaa eteenpäin, koska se vastustaa kavion liukumista taaksepäin", which is the correct mechanism (guardrail J).
-- No number, answer or tolerance changed, so the round-1 recomputation (L1-08 38 N, L2-05 4,8 N, L2-06 3,0 m, L3-04 450 N / 480 N, L3-05 3,40 N) still holds.
-- MC items L1-06, L1-07, L2-07: exactly one correct option each, as in round 1.
-- Scope (first and third law only), notation and plan unchanged since round 1.
+- Round 2. The round-1 Blocking item is fixed (commit 5aeadf755). Both L3-04 diagrams end inside the figure: the arrowheads reach x = 574 in a viewBox at most 582 wide, and every head and label shows (rendered and checked from the SVG coordinates).
+- L3-04 directions: cart T forward, F_r, F_k backward; horse F_t forward (friction from the hoof corner), T and F_h backward. a = 0, and each diagram's arrows close visually (232 = 197 + 35).
+- L3-04 physics: 450 − 410 − 40 = 0 and 480 − 450 − 30 = 0, matching the Kaava step. The third-law pair T is on different bodies.
+- The labels match the text in this language (spec F_r; en figures.json F_k→F_dc, F_h→F_dh, F_t→F_road).
+- L1-08: the rope pulls the child back towards the sled, and the child's force on the rope is not in the child's diagram. Correct.
+- All answers recomputed in round 1 (18 … 480, 3,4) are unchanged.
 - The hash was the same at the start and at the end.
