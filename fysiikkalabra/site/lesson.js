@@ -533,20 +533,23 @@
    than its text column (a long calculation on a 360 px phone) is moved onto its own line and scrolls sideways,
    like display maths, instead of overflowing the page. Re-checked on resize and when a <details> opens. */
 (function () {
-  const SKIP = '.katex-display,.eq-chain,svg,.sim-tex-layer,.fig-tex,#sim-root';
+  const SKIP = '.katex-display,svg,.sim-tex-layer,.fig-tex,#sim-root';
   function fit(root) {
     const ks = [...(root || document).querySelectorAll('.katex')].filter(k => !k.closest(SKIP));
     ks.forEach(k => k.classList.remove('kx-wide'));
     const W = document.documentElement.clientWidth;
     ks.forEach(k => {
       if (!k.offsetParent) return;
-      const box = k.parentElement.closest('p,li,td,th,dd,dt,div,summary,figcaption,blockquote,label');
+      const box = k.parentElement.closest('p,li,td,th,dd,dt,div,summary,figcaption,blockquote,label,.steps,.stage');
       const r = k.getBoundingClientRect();
-      if (r.right > W - 1 || (box && r.width > box.clientWidth + 1)) k.classList.add('kx-wide');
+      const right = Math.min(W, box ? box.getBoundingClientRect().right : W);
+      if (r.right > right + 1 || (box && r.width > box.clientWidth + 1)) k.classList.add('kx-wide');
     });
   }
   let t; const later = () => { clearTimeout(t); t = setTimeout(() => fit(), 150); };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => fit()); else fit();
   window.addEventListener('load', () => fit()); window.addEventListener('resize', later);
-  document.addEventListener('toggle', e => fit(e.target), true);
+  document.addEventListener('toggle', e => { fit(e.target); later(); }, true);   // later: maths auto-rendered on open
+  new MutationObserver(later).observe(document.body, {subtree: true, attributes: true, attributeFilter: ['hidden']});   // a solution unlocked (try-first) or revealed
+  window.flFitMath = fit;
 })();
