@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 561e83f0cd16211d
+CONTENT-HASH: 054aa310650ae7b6
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] fy8-2-theory-1280-1: two photos stack in the right column beside the energy-level paragraphs. The neon-sign photo adds little beside text about energy states; the caption ties it to the spectroscope. Acceptable.
 
 ## Checked
-- batch delta review: the only change is meta.json key_concepts. I captured the "Luvun tärkeät käsitteet" panel from preview/fi-easy/fy8-2.html at 390 and 1280 px and opened it (review/shots has no capture of the panel). It sits between the opening and stage 1: term bold over its explanation at 390 px, two columns at 1280 px. Nothing is clipped, there is no horizontal overflow and no KaTeX error. The terms match the lesson's usage, and the explanations are plain, correct S2 Finnish.
+batch delta review: opened fy8-2-theory-1280 captures holding the new unit-photo (floats right, 20 rem wide, no clipping or overflow, figure beside it intact, credit line present, alt text and caption natural Finnish, any quantity in the caption set as LaTeX with its unit) plus the surrounding figures and formulas.

@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 875a2259874cf175
+CONTENT-HASH: fc7c368b6c117297
 
 ## Blocking
+- none
 
 ## Polish
-
+- [Minor] fy6-2 probes photo — caption is about measuring voltage in parallel, but the photo sits after the wrong-connection figure and beside the error-limit table, a section away from the voltmeter paragraph — optionally move it beside "A voltmeter is connected in parallel".
 
 ## Checked
-- Recaptured at 390 px (--if-stale): the error-bands figure (fig-5) shows the 20 V and 2 V bars to scale with labels ±0.03 V and ±0.010 V, no overflow, labels fit, no Finnish in the en figure; the worked example steps 6/7 and 7/7 render, maths and % signs fine.
+batch delta review: opened the 390 px theory captures (stage-selita, whole sequence) and the 1280 theory captures around each new unit-photo; photo is sharp, caption and its $...$ maths render, credit line present, alt text informative, no clipping or horizontal overflow, surrounding figures and formulas intact.

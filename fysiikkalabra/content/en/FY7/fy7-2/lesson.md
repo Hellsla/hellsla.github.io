@@ -162,6 +162,8 @@ A magnetic field $\overline{B}$ (chapter *Magnets, the magnetic dipole and the m
   <foreignObject x="16" y="9.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}\ \text{into the page}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/aurora-levi.webp" alt="A wide band of green aurora in a starry sky above Levi fell, with a rocky fell slope and a few pine trees below."><figcaption>Northern lights above Levi in Kittilä, Finland. Charged particles from the Sun circle around the field lines of Earth's magnetic field and travel along them to the polar regions. In the upper atmosphere they collide with oxygen and nitrogen atoms, which emit light.</figcaption></figure>
+
 ### The force does not change the speed: the path is a circle
 Because the magnetic force is perpendicular to the velocity at every moment, it does no work. The kinetic energy and the speed of the particle stay the same; only the direction of the motion changes. When the particle moves perpendicular to a uniform field, the force is of constant magnitude and always points towards the same point. The particle is then in uniform circular motion, and the magnetic force acts as its centripetal force (chapter *Uniform circular motion and normal acceleration*).
 
@@ -249,6 +251,8 @@ For example, a proton flying at a speed of $1.0 \cdot 10^{6}\,\text{m/s}$ perpen
   <foreignObject x="354" y="9.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}\ \text{out of the page}$</div></foreignObject>
   <foreignObject x="414" y="321.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{clockwise}$</div></foreignObject>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/electron-beam-circle.webp" alt="A glowing blue-green circular electron beam in a glass bulb in the dark. A measuring scale runs across the bulb, and the electron gun is at the bottom."><figcaption>An electron beam travels in a circle in a glass bulb containing helium at low pressure. The coils produce a nearly uniform magnetic field perpendicular to the beam. The electrons collide with gas atoms, which glow, so the path is visible.</figcaption></figure>
 
 ## Formula: Magnetic force and circular path
 The magnitude of the magnetic force on a charged particle moving in a magnetic field is
@@ -401,6 +405,8 @@ At the same speed and charge the radius of the path is directly proportional to 
 
 ## Particle accelerator {Hiukkaskiihdytin}
 A particle accelerator needs both fields. Because the magnetic force does no work, only an electric field can increase the energy of a particle: each time the particle travels across the voltage $U$ of an accelerating gap, its kinetic energy increases by $qU$. The magnets, in turn, bend and focus the particle beam. In a ring accelerator the same particle passes through the same accelerating gap again and again. As the speed increases, the magnetic field is strengthened so that the radius of the path, $r = mv : (qB)$, stays the same and the particles stay in the ring.
+
+<figure class="unit-photo"><img src="pics/fy7/berkeley-cyclotron.webp" alt="A black-and-white photograph from 1939: two men stand beside the large electromagnet and vacuum chamber of a cyclotron in a hall."><figcaption>The 60-inch cyclotron at Berkeley in 1939. The huge electromagnet bends the particles onto a circular path, and an electric field accelerates them on every turn.</figcaption></figure>
 
 The ring of the LHC accelerator at CERN, the European Organization for Nuclear Research, is $26.7\,\text{km}$ long. Its $1232$ superconducting bending magnets produce a field of up to about $8.3\,\text{T}$, and since 2022 the energy of the protons has been $6.8\,\text{TeV}$, or about $1.1 \cdot 10^{-6}\,\text{J}$ per proton (CERN 2017, *LHC the guide*; CERN 2022). The protons travel at almost the speed of light, so the formula $r = mv : (qB)$ no longer holds for them as it stands, but the principle is the same: the greater the energy, the stronger the field or the larger the ring that is needed.
 

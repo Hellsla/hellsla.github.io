@@ -1316,6 +1316,8 @@ Kun mittaustulokset merkitään pisteiksi, syntyy elektronipilvi, joka on tihein
 
 Pilvi on tihein ytimen kohdalla, mutta yleisin etäisyys ytimestä ei ole nolla. Ohueen pallokuoreen kauempana ytimestä mahtuu enemmän tilavuutta kuin pieneen palloon aivan ytimen ympärillä, joten $1\text{s}$-elektroni havaitaan useimmin noin $0{,}053\,\text{nm}$:n etäisyydellä. Se on sama kuin Bohrin mallin pienimmän radan säde: Bohrin rata on aaltomallissa yleisin etäisyys, ei elektronin kulkema reitti.
 
+<figure class="unit-photo"><img src="pics/fy8/stm-laboratory.webp" alt="Suuri laboratoriolaite, jonka osat on kääritty alumiinifolioon. Ympärillä on putkia, johtoja ja pumppuja."><figcaption>Tunnelointimikroskooppi laboratoriossa Soulissa. Sen terävä kärki liikkuu aivan näytteen pinnan yläpuolella, ja kärjen ja pinnan välisestä pienestä sähkövirrasta saadaan kuva pinnan yksittäisistä atomeista.</figcaption></figure>
+
 ## Kaava: Kuoret, orbitaalit ja energiatasot
 Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta $n$, ja aaltomalli antaa samat energiatasot kuin Bohrin malli:
 ```latex

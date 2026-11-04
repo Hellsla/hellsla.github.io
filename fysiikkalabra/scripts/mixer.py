@@ -30,15 +30,15 @@ def items(lang, T, course_codes, unit_pub):
     published) and the review units' task sets (unit_pub: {unit id: language} of the published units)."""
     fw = practice.framework(); out = []
     for code in course_codes:
-        for t in practice.load(code, lang)["tasks"]:
+        for n, t in enumerate(practice.load(code, lang)["tasks"], 1):   # n: the task's number on its page (practice.number)
             if t.get("kind") == "own": continue
-            out.append(_entry(t, f"{practice.page_name(code)}#{t['id']}", f"{code} · {T('practice.title')}", code, fw))
+            out.append(_entry(t, f"{practice.page_name(code)}#{t['id']}", f"{code} · {T('practice.title')} · {T('practice.task_n', n=practice.number(n))}", code, fw))
     for uid, ul in unit_pub.items():
         if ul != lang or not units.has_tasks(uid, lang): continue
         d = units.load(uid, lang)
-        for t in practice.load(units.task_key(uid), lang)["tasks"]:
+        for n, t in enumerate(practice.load(units.task_key(uid), lang)["tasks"], 1):
             if t.get("kind") == "own": continue
-            out.append(_entry(t, f"{uid}.html#{t['id']}", f"{d['course']} · {d['title']}", None, fw))
+            out.append(_entry(t, f"{uid}.html#{t['id']}", f"{d['course']} · {d['title']} · {T('practice.task_n', n=practice.number(n, units.number(uid)))}", None, fw))
     return out
 
 

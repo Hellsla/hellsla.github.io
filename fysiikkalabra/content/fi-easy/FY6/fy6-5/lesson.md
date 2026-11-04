@@ -178,6 +178,8 @@ Kuvan piirissä on kaksi silmukkaa. Toinen kulkee vastuksen $R_2$ kautta ja toin
 ### Lintu johdolla
 Linnun jalat ovat saman johtimen kahdessa kohdassa. Kohdat ovat vain muutaman senttimetrin päässä toisistaan. Lintu on rinnakkainen haara jalkojen välissä olevalle johtimen pätkälle. Pätkän resistanssi on häviävän pieni. Siksi jalkojen välinen jännite on vain millivoltteja. Ohmin lain mukaan linnun läpi kulkee silloin häviävän pieni virta. Virtalain mukaan lähes koko virta jatkaa johdinta pitkin. Linnun potentiaali maahan nähden on suuri. Vaara syntyisi vasta, jos lintu koskettaisi samalla toista johdinta tai pylvästä, joiden potentiaali on eri. Ihmiselle tilanne ei ole vertailukelpoinen. Suurjännitejohtoa ei saa lähestyä, koska valokaari voi syntyä jo ilman kosketusta.
 
+<figure class="unit-photo"><img src="pics/fy6/swallows-power-line.webp" alt="Kaksi pääskyä istuu johdolla. Taivas on sininen."><figcaption>Haarapääskyt johdolla. Kuvan johto on eristetty kaapeli. Linnut istuvat samalla tavalla myös paljailla johdoilla: molemmat jalat ovat saman johtimen kahdessa lähekkäisessä kohdassa.</figcaption></figure>
+
 ## Kaava: Kirchhoffin lait
 Kirchhoffin virtalaki haarautumispisteelle:
 ```latex

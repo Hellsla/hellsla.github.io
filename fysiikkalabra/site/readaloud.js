@@ -327,10 +327,15 @@
   const LANG_TAG = { fi: 'fi-FI', en: 'en-GB', fr: 'fr-FR', sv: 'sv-SE', de: 'de-DE' };
 
   /* ---------- the neural voice (teacher 2026-11-03: Supertonic 3, "Nainen" and "Mies", the best quality) ----------
-     Supertonic 3 (vendor/supertonic3-v1, OpenRAIL-M) runs in a worker with onnxruntime-web (vendor/ort): WebGPU where the
-     browser has it and it gives sound, otherwise WebAssembly on the CPU. The model (about 145 MB) is fetched on the
-     first Kuuntele and kept in the browser's Cache Storage, so it is downloaded once per device. A sentence is
-     synthesised while the one before it plays. If the model cannot be loaded, the device's own voice reads instead. */
+     Supertonic 3 (OpenRAIL-M) runs in a worker with onnxruntime-web: WebGPU where the browser has it and it gives
+     sound, otherwise WebAssembly on the CPU. Both are kept outside this site's repository (teacher 2026-11-04, UI
+     fix 3) and copied into the published site's models/ folder beside this script (MODEL_BASE, same origin). The model (about
+     145 MB) is kept in the browser's Cache Storage, so it is downloaded once per device. A sentence is synthesised
+     while the one before it plays. If the model cannot be loaded, the device's own voice reads instead.
+     When it is used (teacher 2026-11-04, UI fix 1): on a phone-sized window (max-width 700px), with Save-Data on or
+     without WebGPU the device's own voice is the default, and the neural voice is only a choice in the menu
+     (lang js.ra_better, "Parempi ääni (lataa 145 MB kerran)"); nothing is fetched before it is chosen. Elsewhere it
+     is on by default and fetched on the first Kuuntele. The choice is remembered on this device (fl-ra-neural). */
   function ttsWorker() {
     let ort = null, S = null, idx = null, ttl = null, dp = null, cfg = null, queue = Promise.resolve();
     const post = (m, t) => self.postMessage(m, t || []);
@@ -398,12 +403,14 @@
     }
     const sound = (pcm) => { let m = 0; for (let i = 0; i < pcm.length; i += 7) { const v = Math.abs(pcm[i]); if (!(v === v) || v === Infinity) return false; if (v > m) m = v; } return m > 0.01; };
     async function init(d) {
-      self.importScripts(d.base + 'vendor/ort/ort.webgpu.min.js');
+      self.importScripts(d.base + 'ort/ort.webgpu.min.js');
       ort = self.ort;
-      ort.env.wasm.wasmPaths = d.base + 'vendor/ort/';
+      ort.env.wasm.wasmPaths = d.base + 'ort/';
       ort.env.wasm.numThreads = 1;               // GitHub Pages is not cross-origin isolated: no threads
       ort.env.logLevel = 'error';
       let cache = null; try { cache = await caches.open('fl-tts-supertonic3-v1'); } catch (e) { /* no Cache Storage */ }
+      // copies cached from the site's old vendor/ folder (before 2026-11-04) are dropped: the model now comes from MODEL_BASE
+      if (cache) { try { for (const k of await cache.keys()) if (!k.url.startsWith(d.model)) await cache.delete(k); } catch (e) { /* keep */ } }
       const manifest = JSON.parse(new TextDecoder().decode(await fetchFile(d.model + 'manifest.json', null, () => {})));
       const total = Object.values(manifest.files).reduce((a, b) => a + b, 0); let loaded = 0, last = 0;
       const step = (n) => { loaded += n; const now = Date.now(); if (now - last > 250 || loaded >= total) { last = now; post({ type: 'progress', loaded, total }); } };
@@ -443,7 +450,13 @@
   const VOICE_ID = { female: 0, male: 5 };       // voice.bin holds F1..F5, then M1..M5
   const VOICE_LANG = { fi: { female: 1, male: 8 } };   // teacher 2026-11-03: Finnish F2 and M4; English F1 and M1
   const voiceId = (l2) => { const o = VOICE_LANG[l2]; return o && o[voiceChoice] != null ? o[voiceChoice] : VOICE_ID[voiceChoice]; };
-  const BASE = new URL('.', (SCRIPT && SCRIPT.src) || location.href).href;
+  // models/ beside readaloud.js (the site's root), so pages in en/ and fi-easy/ use the same copy
+  const MODEL_BASE = new URL(typeof window.flTtsModelBase === 'string' ? window.flTtsModelBase : 'models/', (SCRIPT && SCRIPT.src) || location.href).href;
+  const lightDevice = !!((navigator.connection && navigator.connection.saveData)
+    || (window.matchMedia && window.matchMedia('(max-width:700px)').matches) || !navigator.gpu);
+  let wantNeural = canNeural && !lightDevice;
+  try { const v = localStorage.getItem('fl-ra-neural'); if (canNeural && (v === '1' || v === '0')) wantNeural = v === '1'; } catch (e) { /* no storage */ }
+  const neuralOn = () => neural.ok && wantNeural && !neural.failed;
   const neural = {
     ok: canNeural, failed: false, ready: null, ep: null, pool: [], ctx: null, src: null, cache: new Map(), seq: 0, progress: 0, queue: [], keepFrom: 0,
     spawn(primary) {                          // one worker: loads the model (from Cache Storage after the first time)
@@ -461,7 +474,7 @@
           else if (d.type === 'error') rej(new Error(d.message));
         };
         w.worker.onerror = (e) => rej(new Error(e.message || 'worker'));
-        w.worker.postMessage({ type: 'init', base: BASE, model: BASE + 'vendor/supertonic3-v1/', gpu: primary && window.flTtsGpu !== false });
+        w.worker.postMessage({ type: 'init', base: MODEL_BASE, model: MODEL_BASE + 'supertonic3-v1/', gpu: primary && window.flTtsGpu !== false });
       });
       return w;
     },
@@ -523,7 +536,7 @@
     stopAudio() { if (this.src) { const s = this.src; this.src = null; try { s.stop(); } catch (e) { /* already stopped */ } } },
   };
   function loadNote() {
-    if (neural.ep || neural.failed || !cur) return;
+    if (neural.ep || neural.failed || (!cur && !wantNeural)) return;
     showNote(msg('ra_loading').replace('{{p}}', String(Math.round(neural.progress * 100))));
   }
   let voiceChoice = 'female';
@@ -590,7 +603,7 @@
 
   const langOf = (el) => { const host = el.closest('[lang]'); return ((host && host.getAttribute('lang')) || pageLang).toLowerCase(); };
   const neuralSpeed = () => Math.min(2, Math.max(0.7, 1.05 * rate));
-  const useNeural = (lang) => neural.ok && !neural.failed && NEURAL_LANGS.includes(lang.slice(0, 2));
+  const useNeural = (lang) => neuralOn() && NEURAL_LANGS.includes(lang.slice(0, 2));
   // The neural voice reads up to three short sentences of one block at a time (at most 280 characters, as Supertonic's
   // own reader joins text): fewer joins, so the voice changes less often. A fresh start reads one sentence, to begin soon.
   function chunkEnd(blk, k, fresh) {
@@ -640,7 +653,7 @@
     }, (err) => {
       if (my !== token) return;
       if (neural.failed) {                         // the model did not load: the device's own voice reads on
-        ui.voiceRow.hidden = true;
+        ui.voiceRow.hidden = true; ui.better.hidden = true;
         if (!haveVoice()) { stop(); offer(); showNote(msg('ra_no_lang_voice')); return; }
         showNote(msg('ra_fallback')); ui.note.dataset.keep = '1';
         if (playing) speakSentence();
@@ -681,9 +694,11 @@
       }
       if (!cur) cur = nextBlock(null, 1);
       if (!cur) return;
+      // no voice of the page's language on the device and the better voice not chosen: the menu offers it
+      if (!neuralOn() && !voiceFor(LANG_TAG[pageLang.slice(0, 2)] || pageLang)) { cur = null; openMenu(true); showNote(msg('ra_no_lang_voice')); return; }
       si = 0;
     }
-    if (neural.ok && !neural.failed) neural.start();
+    if (neuralOn()) neural.start();
     playing = true; render(); mark(cur.el);
     hush(); speakSentence();
   }
@@ -717,7 +732,7 @@
   ui.bar = document.createElement('div'); ui.bar.className = 'ra-ui ' + (toc ? 'toc-tools' : 'ra-bar'); ui.bar.hidden = true;
   ui.start = document.createElement('button'); ui.start.type = 'button'; ui.start.className = 'ra-start';
   ui.start.innerHTML = svg('speaker') + `<span>${msg('ra_listen')}</span>`;
-  ui.start.setAttribute('aria-pressed', 'false');
+  ui.start.setAttribute('aria-pressed', 'false'); ui.start.setAttribute('aria-label', msg('ra_listen'));
   ui.more = document.createElement('button'); ui.more.type = 'button'; ui.more.className = 'ra-more';
   ui.more.innerHTML = svg('more'); ui.more.setAttribute('aria-label', msg('ra_settings')); ui.more.title = msg('ra_settings');
   ui.more.setAttribute('aria-expanded', 'false'); ui.more.setAttribute('aria-controls', 'ra-menu');
@@ -741,7 +756,22 @@
     return i;
   });
   if (!ui.rates.some((i) => i.checked)) { ui.rates[1].checked = true; rate = 1; }
-  ui.voiceRow = document.createElement('label'); ui.voiceRow.className = 'ra-voice'; ui.voiceRow.hidden = !canNeural;
+  ui.better = document.createElement('label'); ui.better.className = 'ra-better'; ui.better.hidden = !canNeural;
+  ui.betterBox = document.createElement('input'); ui.betterBox.type = 'checkbox'; ui.betterBox.checked = wantNeural;
+  ui.better.append(ui.betterBox, document.createTextNode(' ' + msg('ra_better')));
+  ui.betterBox.addEventListener('change', () => {   // a click: the download (and the AudioContext) may start here
+    wantNeural = ui.betterBox.checked;
+    try { localStorage.setItem('fl-ra-neural', wantNeural ? '1' : '0'); } catch (e) { /* no storage */ }
+    ui.voiceRow.hidden = !neuralOn();
+    if (neuralOn()) {
+      loadNote();
+      neural.start().then(() => { if (!playing) showNote(null); }, () => { ui.voiceRow.hidden = true; ui.better.hidden = true; showNote(msg('ra_fallback')); offer(); });
+    }
+    else if (!neural.failed) showNote(null);
+    offer();
+    if (playing) { hush(); speakSentence(); }
+  });
+  ui.voiceRow = document.createElement('label'); ui.voiceRow.className = 'ra-voice'; ui.voiceRow.hidden = !(canNeural && wantNeural);
   ui.voice = document.createElement('select');
   [['female', 'ra_female'], ['male', 'ra_male']].forEach(([v, k]) => { const o = document.createElement('option'); o.value = v; o.textContent = msg(k); ui.voice.append(o); });
   ui.voice.value = voiceChoice;
@@ -751,7 +781,7 @@
     try { localStorage.setItem('fl-ra-voice', voiceChoice); } catch (e) { /* no storage */ }
     if (playing) { hush(); speakSentence(); }
   });
-  ui.menu.append(speeds, ui.voiceRow);
+  ui.menu.append(speeds, ui.better, ui.voiceRow);
   ui.note = document.createElement('p'); ui.note.className = 'ra-ui ra-note'; ui.note.hidden = true; ui.note.setAttribute('role', 'status');
   function place(box) {                             // under the bar, right edge at the button's
     const r = ui.bar.getBoundingClientRect();
@@ -771,11 +801,13 @@
 
   function render() {
     ui.start.setAttribute('aria-pressed', String(playing));
+    ui.start.setAttribute('aria-label', playing ? msg('ra_pause') : msg('ra_listen')); ui.start.title = ui.start.getAttribute('aria-label');
     ui.start.querySelector('span').textContent = playing ? msg('ra_pause') : msg('ra_listen');
     ui.start.querySelector('svg').outerHTML = svg(playing ? 'pause' : 'speaker');
   }
   // the button only where there is a voice for the page's language: the neural voice, or one of the device's
   function haveVoice() {
+    // the neural voice can be chosen in the menu (on a phone it is not on by default), so it counts while it works
     if (neural.ok && !neural.failed && NEURAL_LANGS.includes(pageLang.slice(0, 2))) return true;
     return !!voiceFor(LANG_TAG[pageLang.slice(0, 2)] || pageLang);
   }
@@ -800,7 +832,7 @@
     const all = candidates(), k = all.indexOf(el);
     const n = nextBlock(k > 0 ? all[k - 1] : null, 1);
     if (!n) return;
-    if (neural.ok && !neural.failed) neural.start();
+    if (neuralOn()) neural.start();
     hush(); cur = n; si = 0; playing = true; render(); mark(cur.el); speakSentence();
   });
   window.addEventListener('pagehide', () => { if (synth) synth.cancel(); neural.stopAudio(); });
@@ -812,6 +844,6 @@
   offer();
   if (synth && synth.addEventListener) synth.addEventListener('voiceschanged', offer);
   window.flSpeech = { tex: texSpeech, unit: unitWords, blocks: () => { const out = []; let b = nextBlock(null, 1); while (b && out.length < 2000) { out.push(b.text.replace(/\s+/g, ' ').trim()); b = nextBlock(b.el, 1); } return out; },
-    state: () => ({ engine: neural.ok && !neural.failed ? 'neural' : 'browser', ep: neural.ep, workers: neural.pool.length, failed: neural.failed, playing, voice: voiceChoice, progress: neural.progress, rate }),
+    state: () => ({ engine: neuralOn() ? 'neural' : 'browser', light: lightDevice, modelBase: MODEL_BASE, ep: neural.ep, workers: neural.pool.length, failed: neural.failed, playing, voice: voiceChoice, progress: neural.progress, rate }),
     elements: () => { const out = []; let b = nextBlock(null, 1); while (b && out.length < 2000) { out.push(b.el); b = nextBlock(b.el, 1); } return out; } };
 })();
