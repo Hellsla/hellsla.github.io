@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: f149bb4994d15e8b
+CONTENT-HASH: 4894c162f41b69e9
+Round: 2
+Mode: delta
 
 ## Blocking
 (none)
@@ -16,3 +18,6 @@ CONTENT-HASH: f149bb4994d15e8b
 - Physics in the choice feedback and solutions is the same as in the Finnish (closed system = no matter crosses the boundary; total pressure, not gauge pressure, is proportional to kelvin temperature).
 - Solutions keep the Finnish structure and formulas step for step.
 - check_i18n.py fi-easy: 0 errors.
+
+## Checked in round 2
+- Delta (HEAD): split aligned rows in solutions.md re-derived against the previous rows. Each "... \\ &= result" is the old row cut at its last "="; all numbers, units, symbols and values identical (mechanical check: old and new rows equal once \\, & and = are removed), and the results still follow from the inputs. No physics or answer changed.

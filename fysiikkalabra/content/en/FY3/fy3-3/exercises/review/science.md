@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 6c0500f6ebd3bb23
+CONTENT-HASH: 4d8f1c677f9ebb2a
+Round: 2
+Mode: delta
 
 ## Blocking
 (none)
@@ -17,3 +19,6 @@ CONTENT-HASH: 6c0500f6ebd3bb23
 - Table headers and symbols translated consistently (theta_ref, theta_forehead, theta_ear, theta_mouth, "Measurement").
 - solutions.md follows the Finnish step for step with identical formulas and substitutions; no Finnish left in en.
 - check_i18n.py en: 0 errors.
+
+## Checked in round 2
+- Delta (HEAD): split aligned rows in solutions.md re-derived against the previous rows. Each "... \\ &= result" is the old row cut at its last "="; all numbers, units, symbols and values identical (mechanical check: old and new rows equal once \\, & and = are removed), and the results still follow from the inputs. No physics or answer changed.

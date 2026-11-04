@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 53ff54324c3cdd71
-Mode: full
-Round: 1
+CONTENT-HASH: 52803a892f6e90e0
+Round: 2
+Mode: delta
 
 ## Blocking
 (none)
@@ -15,3 +15,6 @@ Round: 1
 - L2-07 (error task) still asks to find the error and compute the correct work; the model answer is placed first as in fi.
 - Wording is short sentences, common words; terms explained as in the source; one idea per sentence.
 - Tasks need nothing beyond the lesson; no new content added in translation.
+
+## Checked in round 2
+- Delta (HEAD): only the line breaks of aligned model-solution rows changed (long row split into "..." and "&= result"). The step order, reasoning, numbers and wording are unchanged; the shorter rows read more easily on a phone, the "&=" continuation sits under the first "=". No learning-related change.

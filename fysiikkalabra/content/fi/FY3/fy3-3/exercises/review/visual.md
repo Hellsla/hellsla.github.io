@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 5a7036e668845eab
-ROUND: 2
+CONTENT-HASH: e70e30fd94bb0018
+ROUND: 3
+Mode: delta
 
 ## Blocking
 (none) Earlier Blocking: none. Round-1 Polish resolved: L3-05 Vastaus now says 145 °C (tarkasti 145,46 °C) and the Kaava is split into four display lines; L2-07 Sijoitus is one aligned block of four rows; L1-07 Vastaus has a subject.
@@ -16,6 +17,9 @@ ROUND: 2
 - open-exercises-L3-1280-6: L3-04 end (aligned sums and half-ranges, Vastaus 0,6 K, Järkevyys) and the start of L3-05.
 - open-exercises-L3-1280-7: L3-05 (Annettu, Periaate, split Kaava, Muunnokset); numbers re-computed (796,7 kPa, 418,61 K, 145,46 °C, 13,6 %).
 - No clipping or overflow at 1280; °C written as ^\circ\text{C}.
+
+## Checked in round 3
+- Delta (HEAD): split rows read well in source: each continuation "\\ &= result" aligns under the first "=" of its aligned block, the Finnish decimal comma / English point and unit spacing are unchanged. check_layout.py 360 px --site is OK for fy3-2 (the site still serves the previous version of the formulas, so this does not yet prove the new rows). No 360 px solution captures exist in review/shots (only 390 and 1280 shots), so the 360 px result is judged from the source: rows are now at most about one line of text at 360 px.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: efc5ef56d8cd646f
+CONTENT-HASH: ca2d81baf5a67f35
+Round: 3
+Mode: delta
 
 Round 2. Delta review of the round-1 Polish fixes (HEAD~2..HEAD~1) on the 20-task set; focus on the 8 new tasks.
 
@@ -21,3 +23,6 @@ Round 2. Delta review of the round-1 Polish fixes (HEAD~2..HEAD~1) on the 20-tas
 - L1-06, L1-08: options reordered/reworded only; exactly one correct option, `answer` matches it, distractors still wrong with right feedback; L1-08 note that 500 kg and the height do not affect the comparison is correct.
 - Plan lines 16-17 updated: kinetic energy and the oblique pull left out as FY4, P = Fv lift task named.
 - Hash checked at start and end: unchanged.
+
+## Checked in round 3
+- Delta (HEAD): split aligned rows in solutions.md re-derived against the previous rows. Each "... \\ &= result" is the old row cut at its last "="; all numbers, units, symbols and values identical (mechanical check: old and new rows equal once \\, & and = are removed), and the results still follow from the inputs. No physics or answer changed.

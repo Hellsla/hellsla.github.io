@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 5a7036e668845eab
+CONTENT-HASH: e70e30fd94bb0018
+Round: 3
+Mode: delta
 
 Round 2 (exercise bank): round-1 Blocking item and the fix diff (HEAD~2..HEAD~1) re-checked; new tasks re-read in full.
 
@@ -19,3 +21,6 @@ Round 2 (exercise bank): round-1 Blocking item and the fix diff (HEAD~2..HEAD~1)
 - L2-06 hint (drop divided by the hour's starting temperature difference) matches the solution's reasoning.
 - Aligned Sijoitus blocks: every line recomputed, no change of value.
 - No Newton's laws or other FY4 content; notation T = θ + 273,15 as in the brief.
+
+## Checked in round 3
+- Delta (HEAD): split aligned rows in solutions.md re-derived against the previous rows. Each "... \\ &= result" is the old row cut at its last "="; all numbers, units, symbols and values identical (mechanical check: old and new rows equal once \\, & and = are removed), and the results still follow from the inputs. No physics or answer changed.

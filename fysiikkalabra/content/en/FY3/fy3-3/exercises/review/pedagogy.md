@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 6c0500f6ebd3bb23
+CONTENT-HASH: 4d8f1c677f9ebb2a
+Round: 2
+Mode: delta
 
 ## Blocking
 (none)
@@ -19,3 +21,6 @@ CONTENT-HASH: 6c0500f6ebd3bb23
 - Distractor feedback in L1-06 and L1-08 explains the misconception and does not leak into the other options, as in the Finnish.
 - Terms systematic error, random error, gauge pressure, spread (half the range) are explained in the task text as in the Finnish.
 - Register is plain and natural English for upper secondary level.
+
+## Checked in round 2
+- Delta (HEAD): only the line breaks of aligned model-solution rows changed (long row split into "..." and "&= result"). The step order, reasoning, numbers and wording are unchanged; the shorter rows read more easily on a phone, the "&=" continuation sits under the first "=". No learning-related change.

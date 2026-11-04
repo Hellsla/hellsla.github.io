@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 5a7036e668845eab
-Round: 2
+CONTENT-HASH: e70e30fd94bb0018
+Round: 3
+Mode: delta
 
 ## Blocking
 
@@ -16,3 +17,6 @@ Round: 2
 - Long solutions are split into aligned blocks, nothing is skipped; no 360 px exercise capture was in the packet.
 - Set 8/7/5; levels fit the plan.
 - Hash unchanged at the end.
+
+## Checked in round 3
+- Delta (HEAD): only the line breaks of aligned model-solution rows changed (long row split into "..." and "&= result"). The step order, reasoning, numbers and wording are unchanged; the shorter rows read more easily on a phone, the "&=" continuation sits under the first "=". No learning-related change.

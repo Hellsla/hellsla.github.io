@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: efc5ef56d8cd646f
-Round: 2
+CONTENT-HASH: ca2d81baf5a67f35
+Round: 3
+Mode: delta
 
 ## Blocking
 
@@ -16,3 +17,6 @@ Round: 2
 - Typographic quotes in L2-07 fixed; the long solutions are split into aligned blocks.
 - Set 8/7/5; no duplicate of the worked example; levels fit the plan.
 - Hash unchanged at the end.
+
+## Checked in round 3
+- Delta (HEAD): only the line breaks of aligned model-solution rows changed (long row split into "..." and "&= result"). The step order, reasoning, numbers and wording are unchanged; the shorter rows read more easily on a phone, the "&=" continuation sits under the first "=". No learning-related change.

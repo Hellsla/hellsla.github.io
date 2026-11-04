@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: f149bb4994d15e8b
+CONTENT-HASH: 4894c162f41b69e9
+Round: 2
+Mode: delta
 
 ## Blocking
 (none)
@@ -16,3 +18,6 @@ CONTENT-HASH: f149bb4994d15e8b
 - Words are common; no unexplained jargon beyond the course terms (tilanmuuttuja, suljettu systeemi) that the solutions explain.
 - The hint in L2-06 and the lines naming which part goes in the answer box match the Finnish.
 - Distractor feedback explains the misconception clearly in L1-06 and L1-08.
+
+## Checked in round 2
+- Delta (HEAD): only the line breaks of aligned model-solution rows changed (long row split into "..." and "&= result"). The step order, reasoning, numbers and wording are unchanged; the shorter rows read more easily on a phone, the "&=" continuation sits under the first "=". No learning-related change.
