@@ -1,17 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 4c9468244fe46189
+VERDICT: FAIL
+CONTENT-HASH: dca6b1359dc2ef02
 
 ## Blocking
-(none)
+- [Major] L2-05, L2-06, L3-04, L3-05 text (contact-5 #61-#63; contact-6 #64, #70-#72) — the paragraph break (\n\n) before a), b), c) in the task text is lost in the render (scripts/inquiry.py task_text/split_prompt writes one <p>), so the sub-tasks run together in one 80-130 word block, partly or wholly in bold, and the instruction for the answer box ("Vastaa laatikkoon ...") is buried in the middle of it — a student cannot see the parts or which one the box takes — fix: in task_text split the text at blank lines into separate paragraphs (one <p> or list row per a)–d), the closing "Anna/Vastaa ... laatikkoon" sentence last as the bold ask); no content change needed, re-capture afterwards.
 
 ## Polish
-- [Minor] L1-02 sankey — the figure gives the shares 9 % / 91 % but only as percentages without "häviö"/"perille" words; the solution has to explain which branch is the loss — add the two words to the branches (shared with the lesson figure).
-- [Minor] Solution rows (L1-01, L2-02, L3-01) — display chains are left-aligned in narrow white boxes with the "=" column a few pixels off the first line's operator in the Sijoitus boxes; harmless, but the boxes look ragged next to the full-width Vastaus box.
-- [Minor] L3-02 — the answer "13,0 MWh" asks for the difference only; the task also asks "kumpi verkko", which the answer box cannot check — keep as is, but the question could be split into two sentences with the numeric one last (it already is bold-split).
+- [Minor] L3-05 solution, Sijoitus (open-exercises-L3-1280-7) — eight calculations in one prose paragraph, broken mid-chain at "0,015 ·"; give each period its own row (aligned).
 
 ## Checked
-- 1280: exercises level 1 parts 1–2 (tasks, answer, solution rows, sankey figure in L1-02), level 2 part 3, level 3 part 2 with solutions open; reading of all 12 tasks and solutions in the packet.
-- Maths renders cleanly (fractions, units upright with thin space, colon division, decimal comma); no clipping or overflow; hints and solutions open inside each task card.
+- contact-5, contact-6, contact-7 triaged (L1-06..08, L2-05..07, L3-04..05)
+- open-exercises-L3-1280-7 and -8 at full size (L3-05 table, solution, Vastaus, Järkevyys)
+- MC feedback (L1-06, L2-07), tables, fractions legible; no clipping; no 360 px exercise capture exists
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 3

@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 4f4044aba1139dc3
+CONTENT-HASH: 22726adfb48c9d40
 
 ## Blocking
 
 ## Polish
-- exercises.json L1-03 — "12 000 kg" has an ambiguous number of significant figures, and the solution rounds to 310 000 MJ by the lämpöarvo; fine, but "12 t" would be clear. C-level.
-- exercises.json L3-01 — the prompt asks for both masses, the difference and an explanation, but only the difference (5,2 kg) is the checked answer; say "Anna lopuksi erotus kilogrammoina".
+- content/fi/FY2/fy2-5/exercises/solutions.md:144 (L1-08) — the rounding is justified "kuten massassa 3,0 kg", but the task gives "kolmesta kilogrammasta" in words and the mass is not used in the conversion; lessons/FY2/fy2-5/answers.py:29 also computes from H·3,0 rather than from the given 144 MJ — justify the figures by 144 MJ (1 kWh = 3,6 MJ is exact), and compute `144 / 3.6`.
+- content/fi/FY2/fy2-5/exercises/exercises.json:207 (L2-07) — the "esimerkkimittaus" lies exactly on one line (every step −0,65 kg). The guardrail says real data "eivät yleensä sijaitse täsmälleen samalla suoralla" — add ±0,01–0,02 kg scatter, or say in the solution that the points have been idealised.
+- content/fi/FY2/fy2-5/exercises/solutions.md:191 (L3-05 Järkevyys) — "2120 : 0,90 = 2350 kg" is 2356 ≈ 2360 kg. Correct the number (the check still holds).
+- exercises.json:275/345 (L3-04, L3-05) — the two new level 3 tasks have the same structure (annual useful heat → η and H → fuel mass, then η falls), and their pellet/oil efficiencies are swapped (85/90 % vs 90/85 %). Vary one of them (for example give it the emissions part from the plan), or use the same boiler values in both.
+- docs/exercise-bank/FY2.md:35 — the plan still lists "kynttilän lämpöarvon mittaus vesitölkillä". That needs Q = cmΔT, which is outside FY2 scope (FY3). The set rightly replaced it with the mass-loss task L2-07; update the plan to match.
 
 ## Checked
-- Recomputed all 12 answers in one script: 86, 96, 312 000 (→ 310 000), 4000, 0,96, 480 kJ, 41,86 (→ 42), 578 (→ 580), 4,465 (→ 4,5), 5,21 (→ 5,2), 3,6, 35 MW. All agree with answers.py and exercises.json; every value is inside its tolerance.
-- Figure fy2-5/lampoarvot gives maakaasu 48 at the bar, which is to scale; the alt text matches.
-- Models: E = Hm, m = E : H, η = E_hyöty : E_sisään and P = E : t are correct; the conditions are met and the units are consistent (GJ, t, kJ/100 g, 1 MJ/s = 1 MW).
-- Magnitudes are realistic: 4,5 kg of petrol per 100 km is about 6 l; 100 MW of fuel power and 35 MW electrical for the peat plant; 18 MJ/kg for trail food.
-- Food tasks are marked as example values and call the energy content the body can use, not a heating value (guardrail wording).
-- Solutions are complete and symbolic first; the reasonableness checks are real checks.
-- Scope: no chain efficiencies or FY3 content.
+- Recomputed all eight new answers in one script against answers.py and exercises.json: L1-07 15, L1-08 40, L2-05 5,625, L2-07 18,42, L3-04 3313 (oil 1237, η 0,70: +710), L3-05 1075,6 (oil 985, η 0,75: 2824, +471). Every json answer is inside its tolerance.
+- Every Järkevyys number recomputed: L2-05 (1,41·13,61 = 19,2), L2-07 (1,1 MJ/min → 18 kW), L3-04 (2820 kg, 3320 kg, ratio 2,68), L3-05 (ratio 1,20). All true apart from the one slip above.
+- The L2-05 moisture table matches H = 19,0(1−w) − 2,44w to within 0,03 MJ/kg; consistent with the lesson (dry wood 19 MJ/kg, air-dry wood 15 MJ/kg).
+- FY2 scope: no mgh, no c·m·ΔT, and at most one efficiency per task (L3-04 and L3-05 use E_hyöty = ηHm), so there is no chain product.
+- MC L1-06 and L2-06: exactly one correct option, and every distractor's feedback is right (78 MJ = 21,7 kWh).
+- Food and fuel are kept apart as the guardrail requires. Notation as in the lesson.
+- Magnitudes realistic (18 kW pellet boiler, 13 300 kWh/a house).
