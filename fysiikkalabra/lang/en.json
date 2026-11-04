@@ -1939,6 +1939,20 @@
       "selite": "Orange dot: gamma photon. Flash in the lead: the photon was absorbed.",
       "lukemat": "Distance $r = {{r}}\\,\\text{m}$, lead $d = {{x}}\\,\\text{mm}$, ${{f}}\\,\\%$ gets through<br><strong>Dose rate $\\dot{H} = {{Hd}}\\,\\mu\\text{Sv/h}$</strong><br>Time spent $t = {{t}}\\,\\text{min}$, dose $H = {{H}}\\,\\mu\\text{Sv}$",
       "lahde_kanvas": "$\\text{source}$"
+    },
+    "fy8-16": {
+      "galaksi": "Galaxy",
+      "galaksi_n": "galaxy {{n}}",
+      "suora": "Slope of the line $H_0$",
+      "nopeus": "Speed",
+      "hidas": "slow",
+      "normaali": "normal",
+      "nopea": "fast",
+      "tyhjenna": "Clear the graph",
+      "selite": "The stretching of the light wave on its way is exaggerated. Every galaxy you choose stays in the graph.",
+      "linnunrata": "Milky Way",
+      "lab_vety": "hydrogen in the laboratory",
+      "lukemat": "Galaxy {{n}}: distance $d = {{d}}\\,\\text{Mpc}$<br>$\\text{H}\\alpha$ line: $\\lambda_0 = 656.3\\,\\text{nm}$, $\\lambda = {{lam}}\\,\\text{nm}$, $\\Delta\\lambda = {{dlam}}\\,\\text{nm}$<br>Redshift $z = {{z}}$, speed $v = {{v}}\\,\\text{km/s}$<br><strong>Line $v = H_0\\,d$: $H_0 = {{H0}}\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$, $\\tfrac{1}{H_0} = {{age}} \\cdot 10^{9}\\,\\text{a}$</strong>"
     }
   },
   "practice": {
