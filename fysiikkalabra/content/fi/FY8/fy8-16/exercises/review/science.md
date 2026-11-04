@@ -1,24 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 75bfc1e860c6154b
+VERDICT: PASS
+CONTENT-HASH: eb2ae3787808b0eb
+Round: 2
 
 ## Blocking
-- solutions.md:185, exercises.json:334 (L3-05 b) — **A, wrong cause.** "mahdoton, koska mikään ei liiku valoa nopeammin avaruudessa" mixes up motion through space with the expansion of space. At z = 3 the true recession speed is about 1,5c, and L2-07 teaches that space itself expands. — Task: "Miksi tulosta ei voi pitää galaksin nopeutena?". Answer: "$v = c\,z$ on pienen punasiirtymän likiarvo ($z < 0{,}1$); kun $z = 3{,}00$, se ei päde." Delete the sentence about the speed of light.
 
 ## Polish
-- exercises.json:127 (L2-02) — The plan requires a year for the Planck value. — Add "(Planck Collaboration 2018)".
-- exercises.json:44 (L1-06) — The plan asks for redshift vs. the Doppler effect, but no option names Doppler. — Replace the rotation distractor with "Galaksit liikkuvat avaruudessa poispäin (Doppler-ilmiö)".
-- solutions.md:160 (L2-06) — 171 Mpc with three figures does not match L2-01 and L3-03, which use two figures because H₀ = 70. — Write 1,7 · 10² Mpc.
-- solutions.md:176 (L3-04) — Write "muutaman kilometrin sekunnissa".
-- L2-05 — The plan's `hubble-t` figure is missing. This is for pedagogy and visual to judge.
+- exercises.json:212 (L2-06) — `answer` is 170.9, while solutions.md:160 now answers 1,7 · 10² Mpc. The 2 % tolerance accepts 170, so this is optional alignment.
+- L2-05 — The plan's `hubble-t` figure is still missing. This is for pedagogy and visual to judge.
 
 ## Checked
-- Hash 75bfc1e860c6154b at the start and the end.
-- All 18 numeric answers recomputed independently: all within tolerance.
-- L2-05: H₀ = 11 439 330 / 167 127 = 68,45. The 28 Mpc point is +17,9 % and the others are within 2,9 %.
-- L2-06: the student's error is the multiplication; the result is about 4900 times too large.
-- L3-04: +2,9 % and −38,9 %, ratio 1,885. The model column is nearly Keplerian, so it is realistic. No gravitation calculation is needed.
-- L3-05: z = 3,000, T = 10,9 K.
-- MC L1-06, L1-08 and L2-07 each have exactly one correct option, and the feedback is right.
-- No de Broglie anywhere in the exercise set.
-- The plan's levels are followed, and nothing duplicates an existing task.
-- L3-05 renders at 1280 px.
+- Round 1 Blocking A (L3-05 b, "ei liiku valoa nopeammin avaruudessa"): resolved. The task asks "Miksi tulosta ei voi pitää galaksin nopeutena?", and the answer says that v = cz is a small-z approximation (z < 0,1). The speed-of-light sentence is gone. Järkevyys adds the z vs 1 + z slip (8,2 K), which is right.
+- Round 1 Polish resolved: Planck Collaboration 2018 is cited; L1-06 has a Doppler distractor with correct feedback (distant redshift comes from expansion, and peculiar motion is a small part); L2-06 is 1,7 · 10² Mpc with 2 sf; L3-04 says "muutaman kilometrin sekunnissa".
+- L1-06, L1-08 and L2-07: the options were reordered and reworded. There is still exactly one correct option each, and the feedback is right.
+- L2-05: the tolerance is now 5 %, which matches the stated eye-fit range of 65–72. The least-squares value 68,45 is unchanged.
+- L3-04: dropping "1 kpc = 0,001 Mpc" is fine, because no conversion is needed.
+- Recomputed: L2-06 d = 2,998·10⁵ · 0,03991 / 70 = 170,9 Mpc, about 4900 times smaller than the student's result; L3-05 z = 3,000 and T = 4 · 2,725 = 10,9 K, with T·λ = 2,89 K mm before and after. All the other answers are unchanged and agree with answers.py.
+- The hash eb2ae3787808b0eb was the same at the start and at the end.

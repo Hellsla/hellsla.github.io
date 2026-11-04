@@ -1,19 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 1f82578e25332849
+VERDICT: FAIL
+CONTENT-HASH: b81e54ad228f16ca
+ROUND: 2
 
 ## Blocking
-(none)
+- [Major] fy8-13-L2-05 data table (exercises.json, row "Muu luonnon säteily (maaperä ja rakennusaineet, kosminen säteily, kehon omat radioaktiiviset aineet)") — the 100-character row label makes the table wider than the 664 px exercise column; at 1280 px the label is cut off ("…kehon") and the whole $H_\text{E}$ column with the values 4,0 / 1,1 / 0,8 is pushed out of view, only a scroll shadow hints at it. The data needed to solve the task is not visible without sideways scrolling, and on a phone it is worse (no 360 px capture exists to confirm, but the cell cannot get narrower). New in round 2 (the row replaced three short ones). Fix: shorten the label to "Muu luonnon säteily" and move the explanation into the task text or caption ("muu luonnon säteily = maaperä, rakennusaineet, kosminen säteily ja kehon omat radioaktiiviset aineet"), then rebuild and re-capture.
 
 ## Polish
-- [Minor] solutions fy8-13-L2-06 Sijoitus a) — the chain `k_1 = 410 µSv/h · (0,50 m)^2 = 102,5` drops the unit mid-chain and rows k_2..k_4 have no units at all; the unit comes only in a bracket afterwards — carry `\mu\text{Sv}\cdot\text{m}^2/\text{h}` on each result, or say once "(yksikkö …)" before the rows.
-- [Minor] L2-06 task and Annettu — "410, 98,0, 44,0, 26,0" lists values with decimal commas and comma separators (ambiguous); use semicolons or "ja".
-- [Minor] L2-06 task — the inline law $\dot H_2 = \dot H_1 (r_1/r_2)^2$ breaks after "=" at 1280 px and the \tfrac fraction is tiny; set it as its own display line.
-- [Minor] L2-05 and L1-08 — both are "share of the 5,9 mSv annual dose" with one division; L2-05 sits low for level 2 (sum plus percentage). L3-04 repeats the radon proportion model of L2-03/L3-02 (adds only the seasonal mean).
+- [Minor] L2-05 and L1-08 are both "share of the 5,9 mSv annual dose" with one division (three-term sum plus percentage); L2-05 sits low for level 2. L3-04 still repeats the radon proportion model of L2-03/L3-02.
+- [Minor] L2-06 — the answer chip shows "11 µSv/h" but the Vastaus says "11 (tarkemmin 11,2)" while the Sijoitus carries 11,208; the task asks for the mean method only, so one sentence on rounding is enough.
+- [Minor] L3-04 c) — mallivastaus gives the heating-season result as "noin 310–380"; the 310 is not derived from the table (say "enintään 380" or show the mean of the chosen periods).
 
 ## Checked
-- Exercise captures at 1280 px (every solution open, 664 px column): level 1 parts 6-8 (L1-06..08), level 2 parts 6-10 (L2-05..07), level 3 parts 4-8 (L3-04, L3-05). No 360 px exercise captures exist in the packet; the 360 px layout check is ok in the packet.
-- Read all new task texts, data tables and model solutions in source; recomputed 0,20 mSv, 1,7 %, 68 %, 11,2 µSv/h, 7,0 mSv, 59 Bq/m3, 2,4 h: all match the solutions and answers.
-- No red KaTeX, no clipping, tables render with decimal commas, units upright, every new task has a complete solution (concept tasks: Mallivastaus). Hash at start and end the same.
+- Round 1 had no Blocking items; its Polish is resolved: L2-06 units now on every k row, list with semicolons, the law as a display line, answer text "keskiarvomenetelmällä". L3-04 kind no longer says graph.
+- Captures at 1280 px (every solution open): L2 parts 6-7 (L2-05, L2-06), L3 parts 5-6 (L3-04). No 360 px exercise captures in the packet.
+- Recomputed 5,9 mSv / 68 %, 100,875 / 11,2 µSv/h, 270, 9,19, 58,75 Bq/m3: match answers.py and exercises.json. No red KaTeX elsewhere. Hash at start and end the same.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 3

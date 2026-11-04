@@ -1,18 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 1f82578e25332849
+VERDICT: FAIL
+CONTENT-HASH: b81e54ad228f16ca
+Round: 2
 
 ## Blocking
-(none)
+- solutions.md fy8-13-L3-04 "Mallivastaus kohtaan c)" — "lämmityskauden tulos olisi noin $310$–$380$" does not follow from the table (talvi 380, kevät 260, syksy 300, kesä 140); 310 appears nowhere — replace the sentence with: "Lämmityskauden (talvi, kevät, syksy) keskiarvo on $\tfrac{380+260+300}{3} \approx 313\,\tfrac{\text{Bq}}{\text{m}^3}$ eli yli viitearvon $300\,\tfrac{\text{Bq}}{\text{m}^3}$, joten radonkorjausta suositeltaisiin."
 
 ## Polish
-- exercises.json fy8-13-L3-05 — kind lists "graph", but the task only reads a table (a: "taulukosta"); no graph is drawn or read — either add to a): "Piirrä $\dot{H}$ puolilogaritmiselle (tai $\ln\dot{H}$ paksuuden funktiona) ja määritä ..." or drop "graph" from kind (the solution heading "Kuvaajan lukeminen" then also changes).
-- fy8-13-L3-04 / L2-03 / L3-02 — the same 94 Bq/m³ -> 4,0 mSv proportionality is now used three times; L3-04 adds time fraction, averaging and a target, so it earns its place, but consider a different anchor in L3-04 d) (e.g. the reference level) so the three differ more.
-- fy8-13-L2-06 — the model solution's own Järkevyys gives 11,6 µSv/h (26,0·(2/3)²) which is outside the 3 % tolerance of 11,2; fine because the task prescribes the mean of the four products, but say "(keskiarvomenetelmällä)" near the answer box so a correct alternative route is not marked wrong without explanation.
+- fy8-13-L3-04 d) — the $94\,\text{Bq/m}^3 \to 4{,}0\,\text{mSv}$ proportionality is still the anchor of L2-03, L3-02 and L3-04; consider the reference level $300$ as the anchor in d) so the three differ.
+- fy8-13-L2-05 table — the row label "Muu luonnon säteily (maaperä ja rakennusaineet, kosminen säteily, kehon omat radioaktiiviset aineet)" wraps to 4–5 lines at 360 px; shorten to "Muu luonnon säteily" and move the list to the lead text.
+- fy8-13-L2-05 — with three rows the task is now lighter than the plan's "kuinka suuri osa on vaikutettavissa"; fine at level 2, but add one sentence on b) (e.g. "Radonia voi pienentää radonkorjauksella") only if the plan item matters.
 
 ## Checked
-- All eight new tasks recomputed: L1-07 0,20 mSv, L1-08 1,7 %, L2-05 sum 5,9 and 68 %, L2-06 products 102,5/98,0/99,0/104,0 -> 11,2, L2-07 0,35 mGy -> 7,0 mSv, L3-04 270 -> 9,2 mSv -> 59 Bq/m³, L3-05 d1/2 4,0 cm -> 10,6 µSv/h -> 2,4 h; answers match solutions.
-- Levels: data tasks at level 2 (L2-05, L2-06), error analysis L2-07, concept MC L1-06 (misconception-based distractors with repairing feedback), YO-style modelling at level 3 (L3-04, L3-05 with open d/c parts); matches the plan in docs/exercise-bank/FY8.md.
-- No duplicate of an existing task; the L2-06 inverse-square verification is distinct from L1-04 (calculation) and L2-02.
-- Word counts: no lead paragraph over ~45 words (longest 38, L3-04); texts over 45 words are already split with blank lines; lettered parts untouched.
-- Solutions complete (Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys; model answers for the verbal parts).
-- Captures at 1280 px (L3 part 6 opened): tables and display maths fit, nothing clipped; no 360 px exercise captures listed.
+- Round 1 had no Blocking; Polish applied: L3-05 "graph" dropped and heading "Taulukon lukeminen"; L2-06 now says "keskiarvomenetelmällä" and shows the law as display line; solution units added.
+- L2-05 new table: 4,0 + 1,1 + 0,8 = 5,9 and 68 % correct; natural 4,0 + 1,1 = 5,1 now agrees with fy8-14 (5,1 mSv).
+- L1-06 re-ordered options: correct answer matches stored answer; distractors each hold one misconception with repairing feedback.
+- L2-06: 11,2 µSv/h unchanged, answer and solution agree; L3-04 270, 9,2 mSv, 59 Bq/m³ and L3-05 4,0 cm, 10,6 µSv/h, 2,4 h recomputed.
+- Level fit and no duplicates as in round 1; every new task has a complete solution.
+- No 360 px exercise captures listed; 1280 px captures not re-opened (no layout change except the displayed formula in L2-06).

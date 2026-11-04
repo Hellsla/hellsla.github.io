@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 75bfc1e860c6154b
+CONTENT-HASH: eb2ae3787808b0eb
+ROUND: 2
 
 ## Blocking
-(none)
+(none; round 1 had none)
 
 ## Polish
-- [Minor] L2-05 data table — 11190, 13310, 16350 have no thin-space thousands grouping, while the page writes "12 800" and "17 000" elsewhere; group them (`11\,190`).
-- [Minor] L2-05 Kuvaajan lukeminen — "(0–250 Mpc)" and "(0–17 000 km/s)" break after "0–" at 1280 px; use a non-breaking form. The answer box accepts 68,45 ± 4 % (65,7–71,2), the text says 66–71: a student reading 66 is accepted, 65 is not; say so or widen slightly.
-- [Minor] L3-05 Vastaus b) — for science: "mikään ei liiku valoa nopeammin avaruudessa" is correct locally but invites the objection that distant recession speeds exceed c; add "paikallisesti" or "avaruudessa kulkeva kappale".
-- [Minor] L1-06, L1-08 — the correct option is the longest in both; shorten or lengthen distractors so length does not hint (for pedagogy).
-- [Minor] L1-07 is a third rearrangement of v = H0 d (L1-03, L1-04); consider giving the data as a small two-point set.
+- [Minor] solutions L2-05 Vastaus — "tarkemmin 68,4" while the Sijoitus gives 68,45; write 68,5 or 68,45 consistently.
+- [Minor] L1-07 is still a third rearrangement of v = H0 d (L1-03, L1-04); consider a two-point data set.
+- [Minor] L3-05 solution — the "Yleinen lipsahdus" sentence in Järkevyys is placed before the sanity check; moving it after the T·λ check would read better.
 
 ## Checked
-- Exercise captures at 1280 px (every solution open): level 1 parts 6-9 (L1-06..08), level 2 parts 6-10 (L2-05..07), level 3 parts 5-8 (L3-04, L3-05). No 360 px exercise captures in the packet; its 360 px layout check is ok.
-- Recomputed 69,19, 68,45 (sums 11 439 330 / 167 127), 18 % outlier, 170,9 Mpc, 1,885, 10,9 K: all match.
-- The graph task L2-05 asks the student to draw the graph; no figure is supplied, which is acceptable for a table task, the solution describes the axes. No red KaTeX or overflow. Hash at start and end the same.
+- Round 1 Polish resolved: "0–250 Mpc" no longer breaks, slope range now 65-72 matching the answer tolerance 0,05, L3-05 wording no longer says "mikään ei liiku valoa nopeammin", correct MC options reordered and no longer the longest (L2-07 verified).
+- Captures at 1280 px (every solution open): L2 parts 6, 7 and 9 (L2-05 table and graph description, L2-06 answer 1,7·10^2 Mpc, L2-07 MC). No 360 px exercise captures in the packet.
+- Recomputed 68,45, 170,9 Mpc, 10,9 K: match. No red KaTeX, no overflow. Hash at start and end the same.
 
 ## Scores
 illustrations n/a · typography 4 · Finnish 5 · accessibility 4
