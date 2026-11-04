@@ -19,4 +19,4 @@ CONTENT-HASH: 8d554d92d33342d2
 - The RCD principle, the 30 mA limit and the L–N contact it misses are correct; the figure matches.
 - Classes I–III and their symbols, and the 400 kV, 25 kV, 3 MV/m and 20 kV values are correct.
 - The step-voltage, rescue and 112 advice is correct. The Tukes register and layperson list are correct, as is the exit ticket.
-- The predictions have exactly one correct option each, and their feedback is sound. The fuse and RCD wording of fy6-16 otherwise agrees.
+- The predictions have exactly one correct option each, and their feedback is sound. fy6-16's fuse and RCD wording otherwise agrees.
