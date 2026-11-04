@@ -1,18 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: bb6a74d1fc3c3922
+VERDICT: PASS
+CONTENT-HASH: 2b3698a734643bfa
+Round: 2
 
 ## Blocking
-- [Major] fy2-1-L3-05 solution, Järkevyys (open-exercises-L3-1280-7) — the chain "$5{,}00 > 0{,}80 > 0{,}64 > 0{,}56 > 0{,}14$" inside parentheses is laid out by mathlayout as a stacked display block, so the sentence breaks into "tuli (" / block / "), kuten pitääkin." and reads as broken — clearly poor readability, worst on a phone — fix: drop the chain and the parentheses; write "kunkin vaiheen ulos-energia on pienempi kuin sen tulo-energia, esimerkiksi $0{,}80 < 5{,}00$ ja $0{,}14 < 0{,}56$".
+- none (round-1 Major resolved: L3-05 Järkevyys now reads "esimerkiksi 0,80 < 5,00 ja 0,14 < 0,56" in one running sentence, no stacked block; seen in open-exercises-L3-1280-8)
 
 ## Polish
-- [Minor] L3-04, L3-05 text (L3-1280-4/5) — the parts a), b), c) run on in one paragraph (in L3-05 the whole a)-c) block is bold) — start each part on its own line and keep only the question bold-free or the last sentence bold.
-- [Minor] L3-04 text — straight quotation marks around "energiaa kulutetaan" — use Finnish ”…”.
-- [Minor] L2-06 Vastaus — "kymmenen joulen tarkkuudella" for an answer of 20 J reads oddly — say "kaksi merkitsevää numeroa kuten tiedoissa".
-- [Minor] Exercise captures exist only at 1280 px, so the new tables (L2-05, L2-07, L3-04, L3-05) were not seen at 360/390 px; data-table headers are left-aligned over right-aligned numbers.
+- [Minor] L3-04 and L3-05 text (L3-1280-4, L3-1280-6) — the "\n\n" before a), b), c) does not render: the parts still run together in one paragraph. In L3-05 the model sentence "Mallissa loppu energia ... heijastuu" plus a)-c) is now the bold question, so an assumption is emphasised and the first paragraph is plain. Fix: render the parts as separate lines (or a list) and keep bold only for the final question.
+- [Minor] L3-04 c) Vastaus (L3-1280-6) — "(kaksi merkitsevää numeroa kuten tiedoissa)" inside a long run-on answer; split a), b), c) into lines.
+- [Minor] Kaava of L3-04 (L3-1280-5) — "ehto c):" block "E_fossiilinen − E_korvattu / < E_yht/3" breaks before "<"; set as one line or use "E_fossiilinen − E_korvattu < E_yht : 3".
+- [Minor] Tables (L3-04, L3-05, L2-07) — header "E (PJ)" is left-aligned over right-aligned numbers; no 360/390 px capture of the new exercise tables exists (390 px captures cover only the stage tile).
 
 ## Checked
-- open-exercises-1280-6/7/8 (L1-06 to L1-08, MC feedback, chain answer), L2-1280-5/6/7/8 (L2-05 table and solution, L2-06, L2-07 table and chains), L3-1280-4/5/6/7 (L3-04 table and chains, L3-05 table, solution).
-- Solutions: labelled blocks, units upright with thin space, decimal comma, chains aligned at =, Vastaus boxes; the answers match answers.py.
+- Fresh captures taken for the current hash (stamp 2b3698a734643bfa): L2-1280-7 (L2-06 Järkevyys, L2-07 new text and table), L3-1280-4/5/6/7/8 (L3-04 table, solution with chains; L3-05 table, solution, Vastaus, Järkevyys).
+- Solutions: labelled blocks, units upright with thin space, decimal comma, chains aligned at =, Vastaus boxes clean; answers match the keys (43 kJ, 39,2 %).
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4
