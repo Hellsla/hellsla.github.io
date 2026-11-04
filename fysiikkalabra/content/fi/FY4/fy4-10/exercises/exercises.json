@@ -62,7 +62,7 @@
     {
      "text": "Liikemäärä säilyy, mutta liike-energia pienenee, koska osa siitä muuttuu sisäenergiaksi.",
      "correct": true,
-     "feedback": "Oikein: sisäiset voimat eivät muuta kokonaisliikemäärää, joten se säilyy. Osa liike-energiasta muuttuu muodonmuutokseksi, lämmöksi ja ääneksi."
+     "feedback": "Oikein: sisäiset voimat eivät muuta kokonaisliikemäärää, joten se säilyy. Osa liike-energiasta muuttuu muodonmuutoksissa sisäenergiaksi ja ääneksi."
     },
     {
      "text": "Kokonaisliikemäärä säilyy ja liike-energia kasvaa, koska vaunujen yhteinen massa on suurempi.",

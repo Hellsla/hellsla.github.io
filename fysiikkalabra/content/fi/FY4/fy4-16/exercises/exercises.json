@@ -206,7 +206,7 @@
   {
    "id": "fy4-16-L2-06",
    "level": 2,
-   "text": "Pulkka liukuu vaakasuoralla lumella ilman, että sitä työnnetään. Pulkan paikka $x$ mitattiin videolta sekunnin välein hetkestä, jolloin se ohittaa merkityn pisteen. Taulukko on esimerkkiaineisto, ja ilmanvastus jätetään huomiotta.\n\nTasaisesti hidastuvassa liikkeessa aikavälin keskinopeus on yhtä suuri kuin nopeus välin keskellä. Laske pulkan keskinopeus ensimmäisellä ja viimeisellä sekunnilla, päättele niistä pulkan hidastuvuus ja laske pulkan ja lumen välinen liikekitkakerroin.",
+   "text": "Pulkka liukuu vaakasuoralla lumella ilman, että sitä työnnetään. Pulkan paikka $x$ mitattiin videolta sekunnin välein hetkestä, jolloin se ohittaa merkityn pisteen. Taulukko on esimerkkiaineisto, ja ilmanvastus jätetään huomiotta.\n\nTasaisesti hidastuvassa liikkeessä aikavälin keskinopeus on yhtä suuri kuin nopeus välin keskellä. Laske pulkan keskinopeus ensimmäisellä ja viimeisellä sekunnilla, päättele niistä pulkan hidastuvuus ja laske pulkan ja lumen välinen liikekitkakerroin.",
    "kind": [
     "data",
     "graph"
@@ -252,7 +252,7 @@
   {
    "id": "fy4-16-L2-07",
    "level": 2,
-   "text": "Oppilas määrittää puisen laatikon ja laudan välisen liikekitkakertoimen. Hän nostaa laudan toista päätä hitaasti, kunnes laatikko liukuu tasaisella nopeudella, ja mittaa laudan kaltevuuskulman. Hän toistaa mittauksen viisi kertaa. Taulukko on esimerkkiaineisto.\n\na) Laske kulman keskiarvo $\\alpha_{\\text{ka}}$ ja sen avulla liikekitkakerroin.\n\nb) Arvioi liikekitkakertoimen vaihteluväli laskemalla kerroin kulmien pienimmästä ja suurimmasta arvosta. Mikä on kertoimen virhemarginaali?\n\nVastauslaatikkoon tulee kohdan a) tulos.",
+   "text": "Oppilas määrittää puisen laatikon ja laudan välisen liikekitkakertoimen. Hän asettaa laudan kaltevaksi, tönäisee laatikon liikkeelle ja säätää kaltevuutta, kunnes tönäisty laatikko jatkaa liukumista tasaisella nopeudella. Sitten hän mittaa laudan kaltevuuskulman. Hän toistaa mittauksen viisi kertaa. Taulukko on esimerkkiaineisto.\n\na) Laske kulman keskiarvo $\\alpha_{\\text{ka}}$ ja sen avulla liikekitkakerroin.\n\nb) Arvioi liikekitkakertoimen vaihteluväli laskemalla kerroin kulmien pienimmästä ja suurimmasta arvosta. Kuinka suuri on kertoimen vaihtelu keskiarvon ympärillä?\n\nVastauslaatikkoon tulee kohdan a) tulos.",
    "kind": [
     "experiment",
     "data"

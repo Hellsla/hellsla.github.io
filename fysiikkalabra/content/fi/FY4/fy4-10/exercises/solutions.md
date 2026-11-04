@@ -120,7 +120,7 @@
 
 ## fy4-10-L1-06
 **Kysytty:** mikä väite täysin kimmottomasta törmäyksestä on oikein
-**Periaate:** Kun ulkoisten voimien impulssi on törmäyksen aikana merkityksettömän pieni, vaunujen kokonaisliikemäärä säilyy, koska vaunujen väliset voimat ovat sisäisiä voimia. Kun vaunut jäävät kiinni toisiinsa, törmäys on täysin kimmoton, ja osa liike-energiasta muuttuu muodonmuutokseksi, sisäenergiaksi ja ääneksi.
+**Periaate:** Kun ulkoisten voimien impulssi on törmäyksen aikana merkityksettömän pieni, vaunujen kokonaisliikemäärä säilyy, koska vaunujen väliset voimat ovat sisäisiä voimia. Kun vaunut jäävät kiinni toisiinsa, törmäys on täysin kimmoton, ja osa liike-energiasta muuttuu muodonmuutoksissa sisäenergiaksi ja ääneksi.
 **Mallivastaus:** Oikea väite on, että liikemäärä säilyy mutta liike-energia pienenee, koska osa siitä muuttuu sisäenergiaksi. Väite, että liike-energia säilyy ja liikemäärä pienenee, on päinvastoin kuin oikein: täysin kimmottomassa törmäyksessä liikemäärä säilyy ja liike-energia pienenee. Väite, että molemmat pienenevät, ei päde, koska tarttuminen ei poista liikemäärää, sillä yhteinen nopeus saadaan juuri liikemäärän säilymisestä. Väite, että liike-energia kasvaa, ei päde, koska yhteinen nopeus on pienempi kuin alkunopeus ja liike-energiaa ei synny tyhjästä.
 
 ## fy4-10-L1-07

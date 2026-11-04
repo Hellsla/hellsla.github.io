@@ -142,7 +142,7 @@
 **Muunnokset:** $v = 36\,\text{km/h} = \dfrac{36\,\text{m}}{3{,}6\,\text{s}} = 10\,\text{m/s}$
 **Sijoitus:** $p = 1800\,\text{kg} \cdot 10\,\text{m/s} = 18\,000\,\text{kg}\cdot\text{m/s}$
 **Vastaus:** $1{,}8 \cdot 10^4\,\text{kg}\cdot\text{m/s}$, kaksi merkitsevää numeroa kuten nopeudessa $36\,\text{km/h}$.
-**Järkevyys:** Opiskelijan luku on $3{,}6$-kertainen, koska $1\,\text{m/s} = 3{,}6\,\text{km/h}$ ja hän käytti nopeuden lukuarvona $36$ eikä $10$. Oikea liikemäärä on noin satakertainen kävelevän ihmisen liikemäärään $\approx 100\,\text{kg}\cdot\text{m/s}$ verrattuna, mikä sopii kaupunkinopeudella ajavalle pakettiautolle.
+**Järkevyys:** Opiskelijan luku on $3{,}6$-kertainen, koska $1\,\text{m/s} = 3{,}6\,\text{km/h}$ ja hän käytti nopeuden lukuarvona $36$ eikä $10$. Oikea liikemäärä on noin $180$-kertainen kävelevän ihmisen liikemäärään $\approx 100\,\text{kg}\cdot\text{m/s}$ verrattuna, mikä sopii kaupunkinopeudella ajavalle pakettiautolle.
 
 ## fy4-9-L2-05
 **Annettu:** pallon massa $m = 0{,}43\,\text{kg}$, alkunopeus $v_0 = 0$; viiden potkun nopeudet $v$ ja kosketusajat $\Delta t$ taulukossa (esimerkkiaineisto); painon vaikutus jätetään huomiotta
@@ -168,7 +168,7 @@
 **Annettu:** kärryn massa $m = 0{,}50\,\text{kg}$, tulonopeus $1{,}50\,\text{m/s}$ kohti päätyä; voima $F$ ajan funktiona taulukossa (esimerkkiaineisto); kitka ja ilmanvastus jätetään huomiotta
 **Kysytty:** kärryn nopeuden muutoksen suuruus $|\Delta v|$ yksikössä $\text{m/s}$
 **Periaate:** Päädyn voima on kärryyn vaikuttava vaakasuuntainen kokonaisvoima, koska paino ja radan tukivoima kumoavat toisensa. Voima muuttuu, joten sen impulssi on $(t, F)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala. Impulssiperiaatteen mukaan impulssi on yhtä suuri kuin liikemäärän muutos. Positiivinen suunta on poispäin päädystä eli voiman suunta.
-**Kuvaajan lukeminen:** Pisteet piirretään $(t, F)$-koordinaatistoon ja yhdistetään murtoviivalla, jolloin kuvaajan alle jää kuusi puolisuunnikasta. Jokaisen leveys on $10\,\text{ms}$ ja korkeudet ovat vierekkäisten mittausten arvot. Päätepisteissä $F = 0$, joten puolisuunnikkaiden pinta-alojen summa on $\Delta t$ kertaa sisäpisteiden voimien summa. Sisäpisteiden summa on $144{,}0\,\text{N}$.
+**Kuvaajan lukeminen:** Pisteet piirretään $(t, F)$-koordinaatistoon ja yhdistetään murtoviivalla, jolloin kuvaajan alle jää seitsemän puolisuunnikasta. Jokaisen leveys on $10\,\text{ms}$ ja korkeudet ovat vierekkäisten mittausten arvot. Päätepisteissä $F = 0$, joten puolisuunnikkaiden pinta-alojen summa on $\Delta t$ kertaa sisäpisteiden voimien summa. Sisäpisteiden summa on $144{,}0\,\text{N}$.
 **Kaava:** $I = \Delta t \cdot \Sigma F$ ja $I = m\,\Delta v$, joten $\Delta v = \dfrac{I}{m}$
 **Muunnokset:** $\Delta t = 10\,\text{ms} = 0{,}010\,\text{s}$
 **Sijoitus:** $I = 0{,}010\,\text{s} \cdot 144{,}0\,\text{N} = 1{,}44\,\text{N}\cdot\text{s}$ ja $\Delta v = \dfrac{1{,}44\,\text{N}\cdot\text{s}}{0{,}50\,\text{kg}} = 2{,}88\,\text{m/s}$

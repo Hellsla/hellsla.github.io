@@ -269,7 +269,7 @@ a ylös
 ## fy4-16-L2-06
 **Annettu:** taulukosta paikat $x$ hetkillä $t = 0$, $1{,}0\,\text{s}$, $4{,}0\,\text{s}$ ja $5{,}0\,\text{s}$; vaakasuora pinta, ilmanvastus jätetään huomiotta; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** liikekitkakerroin $\mu$ (yksikötön)
-**Periaate:** Aikavälin keskinopeus on siirtymä jaettuna ajalla. Tasaisesti hidastuvassa liikkeessa se on yhtä suuri kuin nopeus välin keskellä, joten kahden välin keskinopeuksista saadaan hidastuvuus. Vaakasuoralla pinnalla kitka on ainoa vaakasuora voima, joten Newtonin toinen laki antaa kitkakertoimen.
+**Periaate:** Aikavälin keskinopeus on siirtymä jaettuna ajalla. Tasaisesti hidastuvassa liikkeessä se on yhtä suuri kuin nopeus välin keskellä, joten kahden välin keskinopeuksista saadaan hidastuvuus. Vaakasuoralla pinnalla kitka on ainoa vaakasuora voima, joten Newtonin toinen laki antaa kitkakertoimen.
 **Kuvaajan lukeminen:** Ensimmäisellä sekunnilla pulkka kulkee $3{,}62\,\text{m} - 0 = 3{,}62\,\text{m}$, joten keskinopeus on $3{,}62\,\text{m/s}$ ja se on nopeus hetkellä $t = 0{,}5\,\text{s}$. Viimeisellä sekunnilla pulkka kulkee $10{,}03\,\text{m} - 9{,}57\,\text{m} = 0{,}46\,\text{m}$, joten keskinopeus on $0{,}46\,\text{m/s}$ hetkellä $t = 4{,}5\,\text{s}$.
 **Voimakuvio:** Pulkka suorakulmiona. Paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ alapinnasta ylös yhtä pitkänä ja liikekitka $\overline{F}_\mu$ alapinnan takakulmasta taaksepäin. Eteenpäin osoittavaa voimaa ei ole. Pystysuunnassa $N = mg$ ja vaakasuunnassa, kun positiivinen suunta on liikkeen suunta, $-\mu mg = ma$.
 ```voimakuvio
@@ -286,9 +286,9 @@ a vasen
 **Järkevyys:** Muiden välien keskinopeudet ovat $2{,}76\,\text{m/s}$, $2{,}05\,\text{m/s}$ ja $1{,}14\,\text{m/s}$, ja ne pienenevät noin $0{,}8\,\text{m/s}$ sekunnissa, joten hidastuvuus on lähes vakio kuten kitkan aiheuttamassa liikkeessä pitääkin. Kerroin $0{,}08$ on pieni, kuten liukuvalle pulkalle lumella pitääkin, ja se on pienempi kuin $1$.
 
 ## fy4-16-L2-07
-**Annettu:** viisi kulmaa $17{,}5\,{}^\circ$, $18{,}0\,{}^\circ$, $18{,}5\,{}^\circ$, $17{,}0\,{}^\circ$ ja $18{,}0\,{}^\circ$; laatikko liukuu tasaisella nopeudella
-**Kysytty:** a) liikekitkakerroin $\mu$ kulmien keskiarvosta; b) kertoimen vaihteluväli ja virhemarginaali
-**Periaate:** Nopeus on vakio, joten kokonaisvoima on nolla. Painon rinteen suuntainen komponentti kumoaa liikekitkan, ja kitka on $\mu mg\cos\alpha$, joten $\tan\alpha = \mu$. Mittauksissa on satunnaisvaihtelua, joten kulmaksi otetaan keskiarvo, ja vaihtelua kuvaa mittausten ääriarvojen väli.
+**Annettu:** viisi kulmaa $17{,}5\,{}^\circ$, $18{,}0\,{}^\circ$, $18{,}5\,{}^\circ$, $17{,}0\,{}^\circ$ ja $18{,}0\,{}^\circ$; tönäisty laatikko liukuu tasaisella nopeudella
+**Kysytty:** a) liikekitkakerroin $\mu$ kulmien keskiarvosta; b) kertoimen vaihteluväli ja vaihtelu keskiarvon ympärillä
+**Periaate:** Laatikko tönäistään liikkeelle, koska kulma, jossa levossa oleva laatikko lähtee liukumaan, riippuisi lepokitkasta. Kun tönäisty laatikko liukuu tasaisella nopeudella, kokonaisvoima on nolla. Painon rinteen suuntainen komponentti kumoaa liikekitkan, ja kitka on $\mu mg\cos\alpha$, joten $\tan\alpha = \mu$. Mittauksissa on satunnaisvaihtelua, joten kulmaksi otetaan keskiarvo, ja vaihtelua kuvaa mittausten ääriarvojen väli.
 **Voimakuvio:** Laatikko suorakulmiona laudan suuntaisesti, $x$ lautaa alas ja $y$ kohtisuoraan laudasta ulos. Paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan laudasta ulos ja liikekitka $\overline{F}_\mu$ lautaa ylös. Voimat kumoavat toisensa rinteen suunnassa ja sitä vastaan kohtisuorassa.
 ```voimakuvio
 pinta -17,8
@@ -302,7 +302,7 @@ komponentit G
 **Kaava:** $y$: $N = mg\cos\alpha$; $x$: $mg\sin\alpha - \mu N = 0$, joten $\mu = \tan\alpha$. Keskiarvo $\alpha_{\text{ka}} = \dfrac{\text{summa}}{5}$
 **Muunnokset:** Kulma on asteina, ja laskimen asteasetus on päällä. Kitkakerroin on yksikötön.
 **Sijoitus:** a) Kulmien summa on $17{,}5\,{}^\circ + 18{,}0\,{}^\circ + 18{,}5\,{}^\circ + 17{,}0\,{}^\circ + 18{,}0\,{}^\circ = 89{,}0\,{}^\circ$, joten $\alpha_{\text{ka}} = \dfrac{89{,}0\,{}^\circ}{5} = 17{,}8\,{}^\circ$ ja $\mu = \tan 17{,}8\,{}^\circ = 0{,}321$. b) Pienimmästä kulmasta $\tan 17{,}0\,{}^\circ = 0{,}306$ ja suurimmasta $\tan 18{,}5\,{}^\circ = 0{,}335$, joten vaihteluvälin puolikas on $\dfrac{0{,}335 - 0{,}306}{2} \approx 0{,}015$
-**Vastaus:** $\mu = 0{,}321 \pm 0{,}015$, kerroin kolmen merkitsevän numeron tarkkuudella kuten keskiarvokulma $17{,}8\,{}^\circ$. Virhemarginaali on noin $5\,\%$ kertoimesta.
+**Vastaus:** a) $\mu = 0{,}321$, kolmen merkitsevän numeron tarkkuudella kuten keskiarvokulma $17{,}8\,{}^\circ$. b) Kerroin vaihtelee välillä $0{,}306 \ldots 0{,}335$, eli $\mu \approx 0{,}32 \pm 0{,}02$. Vaihtelu on noin $5\,\%$ kertoimesta; se on yksinkertainen arvio mittausten hajonnasta.
 **Järkevyys:** Kerroin $0{,}32$ on pienempi kuin $1$ ja suuruusluokaltaan sellainen kuin arkisilla kuivilla pinnoilla. Kulmien vaihtelu on vain $\pm 0{,}75\,{}^\circ$, mutta se vaikuttaa kertoimeen noin $5\,\%$, joten yksittäinen mittaus ei riitä. Vaihteluväli kuvaa vain satunnaisvaihtelua, ei laudan karheuden tai kosteuden aiheuttamaa järjestelmällistä virhettä.
 
 ## fy4-16-L3-04
