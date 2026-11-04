@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Polonium-210 ${}^{210}_{84}\\text{Po}$ decays by alpha decay. Write the decay equation.",
+    "a": "${}^{210}_{84}\\text{Po} \\to {}^{206}_{82}\\text{Pb} + {}^{4}_{2}\\text{He}$. The mass number is conserved ($210 = 206 + 4$) and the charge number is conserved ($84 = 82 + 2$); the atomic number $82$ is lead."
+  },
+  {
+    "q": "How many protons and how many neutrons are there in a carbon-14 nucleus ${}^{14}_{6}\\text{C}$, and what makes it an isotope of carbon?",
+    "a": "There are $Z = 6$ protons and $N = A - Z = 14 - 6 = 8$ neutrons. It is carbon because it has six protons like all carbon nuclei; isotopes differ only in the number of neutrons."
+  }
+]

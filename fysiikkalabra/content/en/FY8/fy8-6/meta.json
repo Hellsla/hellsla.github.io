@@ -1,0 +1,22 @@
+{
+  "id": "fy8-6",
+  "course": "FY8",
+  "title": "Light from an LED and measuring the Planck constant",
+  "goals": [
+    "LOPS FY8: the photon as a quantum of the electromagnetic radiation field",
+    "Experimentally: measurements with laser diodes; a measurement comparing spectra with a laser diode and other light sources",
+    "Clarification: threshold voltage and wavelength, the energy of a photon and determining the Planck constant from measurement data"
+  ],
+  "prerequisites": [
+    "fy8-5"
+  ],
+  "glossary": [
+    "valodiodi",
+    "laserdiodi",
+    "kynnysjännite",
+    "energia-aukko"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

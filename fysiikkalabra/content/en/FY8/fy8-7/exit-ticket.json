@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Why does the second mirror of a laser let part of the light through, although the light has to pass between the mirrors many times to be amplified?",
+    "a": "The light that gets through is the beam of the laser. A mirror reflects most of the light, for example $99\\,\\%$, so the light passes through the medium many times and is amplified, and the rest comes out as a beam. Light between two fully reflecting mirrors could not be used."
+  },
+  {
+    "q": "Name one application of quantum structures and tell what in it depends on the size of the structure.",
+    "a": "For example a quantum dot display: the size of the dots selects the colour of the light they emit, because the energy gap of a smaller dot is larger. In a quantum well laser the thickness of the well selects the wavelength, and in the quantum dot layers of solar cells the size of the dots selects which part of the spectrum of the Sun the layer absorbs."
+  }
+]
