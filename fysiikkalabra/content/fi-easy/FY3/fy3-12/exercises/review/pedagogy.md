@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 8b30bfaf71a15377
+CONTENT-HASH: 9160312ed1880965
+
+Mode: translation review (fi-easy) against the reviewed Finnish. Round 1.
 
 ## Blocking
 (none)
@@ -11,4 +13,7 @@ CONTENT-HASH: 8b30bfaf71a15377
 - None.
 
 ## Checked
-Same levels, task order, figure task, hints, mistakes and staged solutions as the Finnish; nothing added or dropped. Language: plain short Finnish sentences; no Finnish words in text, units or names.
+- Selkosuomi: short sentences, one idea per sentence; terms (konvektio, interpolointi, positiivinen palautekytkentä, höyrystymislämpö) explained where they appear.
+- Feedback keeps the misconception diagnosis in every wrong choice.
+- Task and solution structure (a/b/c, Kysytty/Periaate/.../Mallivastaus) same as fi.
+- No new content added beyond clarifications.

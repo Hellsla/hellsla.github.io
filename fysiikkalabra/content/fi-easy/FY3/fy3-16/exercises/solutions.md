@@ -140,7 +140,7 @@ Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfr
 **Kysytty:** lämmitysaika $t$ sekunteina
 **Periaate:** Oletuksen mukaan koko sähköenergia $P\,t$ menee veden lämmittämiseen. Vesi ei kiehu eikä höyrysty. Sen olomuoto ei siis muutu, ja riittää $Q = c\,m\,\Delta T$. Energiataseesta saadaan $P\,t = c\,m\,\Delta T$.
 **Kaava:** $P\,t = c\,m\,\Delta T$, josta $t = \dfrac{c\,m\,\Delta T}{P}$
-**Muunnokset:** Lämpötilan muutos on sama kelvineinä: $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$. Teho on $P = 2{,}0\,\text{kW} = 2000\,\text{W}$. Silloin energia on joulejaan ja aika sekunteina.
+**Muunnokset:** Lämpötilan muutos on sama kelvineinä: $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$. Teho on $P = 2{,}0\,\text{kW} = 2000\,\text{W}$. Silloin energia on jouleina ja aika sekunteina.
 **Sijoitus:** $t = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}5\,\text{kg} \cdot 80\,\text{K}}{2000\,\text{W}} = \dfrac{502\,800\,\text{J}}{2000\,\text{W}} = 251{,}4\,\text{s}$
 **Vastaus:** $250\,\text{s}$. Vastaus on annettu kahdella merkitsevällä numerolla, kuten massa $1{,}5\,\text{kg}$ ja teho $2{,}0\,\text{kW}$.
 **Järkevyys:** Arvio: $4000 \cdot 1{,}5 \cdot 80\,\text{J} \approx 480\,\text{kJ}$, ja $480\,\text{kJ} : 2\,\text{kW} = 240\,\text{s}$. Se on noin neljä minuuttia, mikä on tavallisen keittimen kokoluokkaa. Energiataseen tarkistus: $2000\,\text{W} \cdot 251{,}4\,\text{s} \approx 503\,\text{kJ}$ on sama kuin veden saama $503\,\text{kJ}$. Todellinen aika olisi hieman pidempi, koska osa energiasta lämmittää keitintä ja ilmaa.

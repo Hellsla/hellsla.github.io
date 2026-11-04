@@ -149,7 +149,7 @@
     {
       "id": "fy3-11-L2-05",
       "level": 2,
-      "text": "Esimerkkiaineisto: dieselgeneraattorin koeajossa mitattiin neljällä eri kuormalla moottorin mekaaninen teho $P$ ja polttoaineen kulutus $q_m$ kilogrammaa tunnissa. Dieselpolttoaineen lämpöarvo on $43\\,\\text{MJ/kg}$. Millä kuormalla moottorin hyötysuhde on suurin? Anna vastaukseksi tämä suurin hyötysuhde prosentteina.",
+      "text": "Esimerkkiaineisto: dieselgeneraattorin koeajossa mitattiin neljällä eri kuormalla moottorin mekaaninen teho $P$. Mitattiin myös polttoaineen kulutus $q_m$ kilogrammaa tunnissa. Dieselpolttoaineen lämpöarvo on $43\\,\\text{MJ/kg}$. Millä kuormalla moottorin hyötysuhde on suurin? Hyötysuhde kertoo, kuinka suuri osa polttoaineen energiasta muuttuu hyödylliseksi työksi. Anna vastaukseksi tämä suurin hyötysuhde prosentteina.",
       "kind": [
         "data"
       ],
@@ -216,7 +216,7 @@
     {
       "id": "fy3-11-L2-07",
       "level": 2,
-      "text": "Esimerkkiaineisto: koulun ilmalämpöpumpun toimintaa seurattiin neljän vuorokauden ajan. Jokaisesta vuorokaudesta mitattiin pumpun käyttämä sähköenergia $E_\\text{s}$ ja sisälle luovutettu lämpö $Q_\\text{sisälle}$. Kuinka paljon lämpöä pumppu otti ulkoilmasta kaikkiaan näiden neljän vuorokauden aikana? Anna vastaus kilowattitunteina.",
+      "text": "Esimerkkiaineisto: koulun ilmalämpöpumpun toimintaa seurattiin neljän vuorokauden ajan. Ilmalämpöpumppu ottaa lämpöä ulkoilmasta. Jokaisesta vuorokaudesta mitattiin pumpun käyttämä sähköenergia $E_\\text{s}$ ja sisälle luovutettu lämpö $Q_\\text{sisälle}$. Kuinka paljon lämpöä pumppu otti ulkoilmasta kaikkiaan näiden neljän vuorokauden aikana? Anna vastaus kilowattitunteina.",
       "kind": [
         "data"
       ],
@@ -288,7 +288,7 @@
     {
       "id": "fy3-11-L3-04",
       "level": 3,
-      "text": "Esimerkkiaineisto: omakotitalon lämmitystä suunnitellaan lämpöpumpulla. Taulukossa on talon kuukausittainen lämmöntarve $Q$ talvikaudella. Siinä on myös pumpun lämpökerroin $\\varepsilon$ kunkin kuukauden keskimääräisessä ulkolämpötilassa. Lämmöntarve katetaan kokonaan pumpulla.\n\na) Laske sähköenergia $E_\\text{s}$, jonka pumppu käyttää kunkin kuukauden aikana, ja kaikkien kuukausien yhteenlaskettu sähköenergia.\n\nb) Laske kauden keskimääräinen lämpökerroin $\\varepsilon_\\text{kausi}$. Se kertoo koko kauden luovutetun lämmön suhteen koko kauden sähköenergiaan.\n\nc) Selitä, miksi kauden lämpökerrointa ei saa laskea kuukausien lämpökertoimien tavallisena keskiarvona. Laske myös, kuinka paljon sähköä pumppu säästää verrattuna suoraan sähkölämmitykseen, jossa kaikki lämpö tulee sähköstä.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "text": "Esimerkkiaineisto: omakotitalon lämmitystä suunnitellaan lämpöpumpulla. Taulukossa on talon kuukausittainen lämmöntarve $Q$ talvikaudella. Siinä on myös pumpun lämpökerroin $\\varepsilon$ kunkin kuukauden keskimääräisessä ulkolämpötilassa. Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sähköön verrattuna. Lämmöntarve katetaan kokonaan pumpulla.\n\na) Laske sähköenergia $E_\\text{s}$, jonka pumppu käyttää kunkin kuukauden aikana, ja kaikkien kuukausien yhteenlaskettu sähköenergia.\n\nb) Laske kauden keskimääräinen lämpökerroin $\\varepsilon_\\text{kausi}$. Se kertoo koko kauden luovutetun lämmön suhteen koko kauden sähköenergiaan.\n\nc) Selitä, miksi kauden lämpökerrointa ei saa laskea kuukausien lämpökertoimien tavallisena keskiarvona. Laske myös, kuinka paljon sähköä pumppu säästää verrattuna suoraan sähkölämmitykseen, jossa kaikki lämpö tulee sähköstä.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "data",
         "model"
