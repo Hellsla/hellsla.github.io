@@ -191,7 +191,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Sama kivinäyte punnitaan samalla voimamittarilla kolmella taivaankappaleella. Näytteen massaa ei tiedetä. Tulokset ovat taulukossa (esimerkkiaineisto). Maan putoamiskiihtyvyys on $g_\\text{Maa} = 9{,}81\\,\\text{m/s}^2$.\n\nLaske Marsin putoamiskiihtyvyys $g_\\text{Mars}$ taulukon painoista.",
+      "text": "Sama kivinäyte punnitaan samalla voimamittarilla kolmella taivaankappaleella (esimerkiksi planeetalla tai kuulla). Näytteen massaa ei tiedetä. Tulokset ovat taulukossa (esimerkkiaineisto). Maan putoamiskiihtyvyys on $g_\\text{Maa} = 9{,}81\\,\\text{m/s}^2$.\n\nLaske Marsin putoamiskiihtyvyys $g_\\text{Mars}$ taulukon painoista.",
       "answer": 3.7,
       "unit": "m/s²",
       "tolerance": 0.03,
@@ -261,7 +261,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Oppilas kalibroi jousen Maassa. Hän ripustaa jouseen punnuksia ja mittaa jousen venymän $x$ (taulukko, esimerkkiaineisto). Sen jälkeen sama jousi viedään tuntemattomalle taivaankappaleelle. Siellä $0{,}50\\,\\text{kg}$:n punnus venyttää jousta $1{,}9\\,\\text{cm}$. Jousen venymä on suoraan verrannollinen voimaan.\n\na) Määritä taulukosta venymä massayksikköä kohti $x/m$ Maassa. Laske sen avulla taivaankappaleen putoamiskiihtyvyys $g$. Maassa $g = 9{,}81\\,\\text{m/s}^2$.\n\nb) Päättele, mikä oppitunnin taulukon taivaankappale on kyseessä, ja perustele. Taulukon $g$-arvot ovat: Kuu $1{,}62$, Mars $3{,}71$, Maa $9{,}81$ ja Jupiter $24{,}8\\,\\text{m/s}^2$.\n\nKirjoita vastauslaatikkoon kohdan a) $g$ yksikössä $\\text{m/s}^2$. Kohdan b) perustelun voit tarkistaa mallivastauksesta.",
+      "text": "Oppilas kalibroi jousen Maassa eli selvittää, kuinka paljon jousi venyy tunnetulla voimalla. Hän ripustaa jouseen punnuksia ja mittaa jousen venymän $x$ (taulukko, esimerkkiaineisto). Sen jälkeen sama jousi viedään tuntemattomalle taivaankappaleelle. Siellä $0{,}50\\,\\text{kg}$:n punnus venyttää jousta $1{,}9\\,\\text{cm}$. Jousen venymä on suoraan verrannollinen voimaan.\n\na) Määritä taulukosta venymä massayksikköä kohti $x/m$ Maassa. Laske sen avulla taivaankappaleen putoamiskiihtyvyys $g$. Maassa $g = 9{,}81\\,\\text{m/s}^2$.\n\nb) Päättele, mikä oppitunnin taulukon taivaankappale on kyseessä, ja perustele. Taulukon $g$-arvot ovat: Kuu $1{,}62$, Mars $3{,}71$, Maa $9{,}81$ ja Jupiter $24{,}8\\,\\text{m/s}^2$.\n\nKirjoita vastauslaatikkoon kohdan a) $g$ yksikössä $\\text{m/s}^2$. Kohdan b) perustelun voit tarkistaa mallivastauksesta.",
       "answer": 3.6,
       "unit": "m/s²",
       "tolerance": 0.04,

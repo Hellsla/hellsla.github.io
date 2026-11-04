@@ -127,7 +127,7 @@
 ## fy3-1-L1-07
 **Find:** which two objects the weight of the book describes the interaction between.
 **Principle:** A force tells you the strength of the interaction between two objects. The weight is a measure of the strength of the gravitational pull between the Earth and the object, so one party is always the Earth (or another celestial body) and the other is the object being weighed.
-**Model answer:** The weight of the book describes the interaction between the Earth and the book, because the Earth pulls the book towards itself. The force meter is not a party to the interaction but a tool from whose spring extension the force is read. Air does not cause weight either: the gravitational pull acts even in a space with no air.
+**Model answer:** The weight of the book describes the interaction between the Earth and the book, because the Earth pulls the book towards itself. The force meter is not a party to the interaction but a tool from whose spring extension the force is read. Air does not cause weight either: the gravitational pull acts even where there is no air.
 
 ## fy3-1-L1-08
 **Given:** $m = 0.18\,\text{t}$, $g_\text{Mars} = 3.71\,\text{m/s}^2$

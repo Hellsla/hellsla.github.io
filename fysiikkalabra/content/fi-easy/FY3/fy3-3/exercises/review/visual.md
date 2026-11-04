@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 2a7ed8ab1bd6908d
+CONTENT-HASH: f149bb4994d15e8b
 
 ## Blocking
 (none)
 
+## Fixed
+- No change needed.
+
 ## Polish
-- [Minor] exercises L2-02, L3-01, L3-02 — "90,0 kPa", "150 kPa", "300 kPa" in the task text are plain text, while temperatures are maths — make them inline maths like the other values.
-- [Minor] L2-02 solution Sijoitus — the long chain wraps mid-expression ("90,0 kPa + …"); acceptable, but a break before the "+" would read better.
+- none
 
 ## Checked
-- open-exercises-1280-1, open-exercises-L2-1280-3 (graph task, figure fy3-3/extrapolation-points: five points, axes and units, no line drawn, no answer given away), open-exercises-L3-1280-2.
-- Levels 1-3: answer boxes, units, opened solutions all inside cards, no clipping; maths aligned and readable.
+- fy3-3-open-exercises-L2-1280-6 (L2-05): task text, table with theta_vert and theta_A, decimal comma shown as 0,0 and 1,4, unit K and solution start render correctly.
+- No English left in the fi-easy captures opened; Finnish table headers (Mittaus, korva, otsa, suu) match the Finnish version.
+- Line breaks of the shorter sentences read well; no overflow.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
