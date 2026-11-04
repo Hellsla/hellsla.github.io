@@ -33,4 +33,19 @@ a["fy7-11-L3-02"] = 4 * b - 2 * 80.0                 # θ = 30,7° < 42,3°: ins
 th_p = 4 * asin(sin(59.5) / 1.3315) - 2 * 59.5       # red rainbow ray (lesson table n): 42,30°
 th_v = 4 * asin(sin(58.8) / 1.3431) - 2 * 58.8       # violet rainbow ray (lesson table n): 40,63°
 a["fy7-11-L3-03"] = th_p - th_v                      # width of the bow 1,665°
+# Exercise-bank additions
+# L1-06 (words): violet refracts more than red because the glass's n is larger for violet (dispersion); the frequency does not change
+a["fy7-11-L1-07"] = 405 / 1.530                      # λ in glass = λ0 / n (f constant, v = c / n) = 264,7 nm
+a["fy7-11-L1-08"] = 42.3 - 30.0                      # red edge 42,3° from the antisolar point, Sun 30,0° high: top at θ − h = 12,3°
+def d_alpha(n_p, n_v):                               # difference of the refraction angles of red and violet at α1 = 60,0°
+    return asin(sin(60.0) / n_p) - asin(sin(60.0) / n_v)
+a["fy7-11-L2-05"] = d_alpha(1.6150, 1.6498)          # flint glass: 32,43° − 31,66° = 0,765° (crown 0,414°, acrylic 0,461°)
+a["fy7-11-L2-06"] = 4 * asin(sin(59.0) / 1.3315) - 2 * 59.0   # error analysis: red at α = 59,0°: θ = 4β − 2α = 42,29° (violet 40,63°)
+a["fy7-11-L2-07"] = c / 1.516 / 1e3                  # figure n-graph: n(600 nm) read as 1,516; v = c / n = 197 889 km/s (λ = 600 / 1,516 = 396 nm)
+# L3-04: table (α, θ_liquid); β = (θ + 2α) / 4, n = sin α / sin β for each row, mean = 1,400 (data built with n = 1,400, small scatter)
+tab = [(40.0, 29.35), (50.0, 32.67), (55.0, 33.26), (58.0, 33.10), (62.0, 32.41), (66.0, 30.91)]
+ns = [sin(al) / sin((th + 2 * al) / 4) for al, th in tab]
+a["fy7-11-L3-04"] = sum(ns) / len(ns)
+# L3-05: flint prism n_p = 1,6150, n_v = 1,6498, α1 = 50,0°, A = 64,0°: Δδ = δ_v − δ_p = 63,82° − 56,40° = 7,42° (A_max for violet 64,98°)
+a["fy7-11-L3-05"] = delta(1.6498, 64.0, 50.0) - delta(1.6150, 64.0, 50.0)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
