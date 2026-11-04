@@ -1,19 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: b26bfec407966e18
+VERDICT: PASS
+CONTENT-HASH: cd198f4f9413a502
+Round: 2
 
 ## Blocking
-- exercises.json fy3-7-L2-05 (text a) + answer/tolerance 0,04) — part a) itself says the temperature stays constant "hetkien 20 s ja 150 s välillä", the first and last 0,0 rows of the table. A student who takes that plateau as the melting time gets 130 s and s = 600 W x 130 s / 0,250 kg = 312 kJ/kg, 6,6 % under 334 and outside the 4 % tolerance, although the reading follows the task's own wording. The intended 139 s needs extrapolating 2,5 s before and 6,5 s after the table rows, which the task only hints at with "arvioi". Fix: in a) write "noin 20 s ja 150 s välillä" and in b) say "Taulukon rivit 20 s ja 150 s ovat tasanteen sisällä: laske nousujen kulmakertoimista, milloin sulaminen alkaa ja päättyy", or widen the tolerance to 0,08 and state in the solution that 130 s gives about 312 kJ/kg and why it is low.
+- none (the round-1 Blocking on L2-05 is resolved)
 
 ## Polish
-- fy3-7-L3-04: answer 20 kJ with tolerance 0,06 (18,8..21,2). A natural reading start 4 min, end 30 min gives 18,7 kJ and just fails; widen to 0,08 or add a table row at 31 min.
-- fy3-7-L3-05 reuses the setting of the existing L1-04 (espresso steam into milk); the physics is different (mixing, comparison), but a second context (steam burn from a kettle) would add variety.
-- fy3-7-L2-05 solution, Järkevyys: "Tulos on lähellä taulukon arvoa 334" compares the answer to the value the data were built from; better "vastaa jään tunnettua arvoa".
-- fy3-7-L1-07: the model answer is correct; the correct option is the longest, shorten it ("Haihtuva hiki ottaa energiaa iholta, joten iho viilenee.").
-- fy3-7-L2-07 is a table lookup plus a short explanation; level 2 is acceptable but light. Ask in b) for the energy: "kuinka monta kelviniä viileämpää ruoka on", already in the model answer, as a second number.
+- fy3-7-L3-05 reuses the setting of existing L1-04 (espresso steam into milk); the physics differs (mixing, comparison), but a second context would add variety (carried over).
+- fy3-7-L2-05 b): the instruction "arvioi nousujen kulmakertoimista" is now explicit, but the student must still extrapolate 2,5 s before and 6,5 s after table rows; fine at level 2 with the hint, and the 130 s result (312 kJ/kg) is within 8 % and explained in the solution.
 
 ## Checked
-- Counts 8/7/5; every new task has a solution with principle, formula, units, substitution, answer and sanity check.
-- Recomputed: 0,602 kg, 334 kJ/kg (139 s from slope extrapolation: start 17,5 s, end 156,5 s consistent with the table values 1,9 and 13,4), 0,398 kg, 18,7 K, P = 11,98 W, Q = 19,9 kJ and s = 199 kJ/kg (plausible for stearin), 23,5 g and 0,386 kg; all match.
-- L1-06/07 distractors are real misconceptions with repairing feedback; L2-06 error is the plan's "kiehuva vesi lämpenee" and is corrected in a) with the role of power.
-- L3-04 and L3-05 are YO-style (data interpretation, multi-step, comparison) and follow the plan; no duplicates of L3-01..03.
-- Finnish, number+unit cases and layout fine; 1280 px L3 capture renders tables and solutions without clipping.
+- Resolved: L2-05 text a) now says "noin hetkien 20 s ja 150 s välillä"; b) says the rows 20 s and 150 s are already inside the plateau and asks to estimate start and end from the slopes; tolerance widened to 0,08 and the solution states that reading 130 s gives 312 kJ/kg and why it is low. Järkevyys wording fixed ("vastaa jään tunnettua arvoa", "noin kahdeksan kertaa").
+- L3-04 tolerance widened to 0,08 (18,4..21,6), so the natural reading 18,7 kJ passes; solution says ±8 % and is consistent.
+- L2-07 reworked into an interpolation task: 60,0 kPa between table rows 50,0 (81,3) and 70,0 (90,0) gives 85,65 °C and ΔT = 14,35 K, answer 14,4, tolerance 0,04 (accepts the true 14,05 K as well); table rows adjacent and present; solution complete incl. b). Now a real level-2 data task rather than a lookup.
+- L1-07 and the freezing MC: correct option shortened and moved ("Haihtuva hiki ottaa energiaa iholta, joten iho viilenee."), distractors still real misconceptions; answers match options and solution.
+- Solution layout (L3-04 reading split into paragraphs) and units in L3-05 Järkevyys fine; recomputed 0,602 kg, 334 kJ/kg, 0,398 kg, 18,7 K, 11,98 W, 19,9 kJ, 199 kJ/kg, 23,5 g, 0,386 kg all match.
+- Counts 8/7/5; complete solutions; levels fit; plan covered; no duplicates.

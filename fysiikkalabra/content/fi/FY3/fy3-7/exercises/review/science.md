@@ -1,24 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: b26bfec407966e18
+VERDICT: PASS
+CONTENT-HASH: cd198f4f9413a502
+
+Round 2. This round checks the fixes for the round-1 Blocking item and the Polish (`git diff HEAD~1`) on the 20-task set. Mode: full.
 
 ## Blocking
-- solutions.md:238 (L3-05 Järkevyys) — **A**: "koska tiivistyminen sitoo paljon energiaa" gives the wrong direction. Condensation releases energy (guardrail "Freezing and condensation release energy"), and the same line goes on to say "luovuttaa tiivistyessään". In a task about why steam burns, this leaves exactly the wrong picture. — Replace it with "koska höyry luovuttaa tiivistyessään paljon energiaa (r on suuri)".
 
 ## Polish
-- exercises.json:62 (L1-06, feedback of the correct option) — "hiukkasten välisten sidosten muuttamiseen" can be read as bonds breaking. — Use the guardrail wording "hiukkasten keskinäisten vuorovaikutusten muuttamiseen", as in the option text and the solution.
-- solutions.md:167 (L2-06 Periaate) — "pysyy vakiona 100 °C:ssa" holds only at normal pressure, and the lesson stresses that the boiling point depends on pressure (**B**, minor). — Write "pysyy kiehumispisteessä, normaalipaineessa noin 100 °C:ssa".
-- exercises.json:147 (L2-05) — anyone who reads the plateau straight from the rows (20 s → 150 s) gets 312 kJ/kg, −6,6 %, which is rejected. Extrapolating both ends is the hidden step. — Add the hint "arvioi, milloin lämpötila tarkalleen saavuttaa 0 °C ja milloin se alkaa nousta", or widen the tolerance.
-- exercises.json:282 (L3-04) — the plateau taken from the table rows (4 → 30 min) gives 18,7 kJ, just outside ±6 % of 20 kJ. — Widen the tolerance to 0,08, or ask for the extrapolated start and end in the task, as the solution does.
-- exercises.json:215 (L2-07) — part a) is a single subtraction from a table (level 1), and the plan asked for reading a phase diagram (figure). L2-06 b) repeats L2-01 (P t = r m on a hotplate). — Consider a phase-diagram figure, or a pressure that needs interpolation (for example 60 kPa), to bring it up to level 2.
+- exercises.json:156 / solutions.md:161 (L2-05) — the tolerance is now 0,08, so the answer box accepts 312 kJ/kg (−6,6 %), which the solution itself calls "liian pieni". The reason given for ±8 % ("aika luetaan noin sekunnin tarkkuudella") supports only about 1–2 %. The new hint already exposes the hidden step. — Set the tolerance back to 0,04 (or 0,05) and write ±4 %.
+- solutions.md:168 (L2-06 Mallivastaus a)) — "vesi pysyy koko ajan 100 °C:ssa" holds only at normal pressure (B, minor; Periaate is now fixed). — Write "pysyy koko ajan kiehumispisteessä".
 
 ## Checked
-- I recomputed all 18 answers in one script. They agree with answers.py and exercises.json.
-- L2-05: the table matches the model (ice reaches 0 °C at 17,5 s, melting lasts 139,2 s and ends at 156,7 s, then 1,9 °C at 160 s and 13,4 °C at 180 s). s = 334 kJ/kg.
-- L2-07: the boiling points match steam tables (60,1 / 69,1 / 81,3 / 90,0 / 100,0 °C), Δ = 18,7 K, and the explanation in b) is right.
-- L3-04: P = 11,98 W, plateau 3,24 → 30,89 min, Q = 19,9 kJ and s ≈ 199 kJ/kg. This is realistic for stearic acid (melting point ≈ 69 °C, about 200 kJ/kg), and the implied c of the solid, about 1,9 kJ/(kg·K), is plausible. The plateau is explained correctly (released energy = heat lost).
-- L3-05: m_h = 23,5 g, m_v = 0,386 kg (16×), 94 % of the energy from condensation. The burn argument is right.
-- L1-06 and L1-07 MC: exactly one correct option each, with sound distractor feedback. L1-08: 0,602 kg.
-- L2-06: the error is identified correctly (power changes the evaporation rate, not the temperature), and m = 0,40 kg.
-- Q = sm / Q = rm are used only at constant temperature, and Q = cmΔT between phase changes.
-- Notation (s, r, c, P t, Δm) matches the lesson.
-- L3-04 and L3-05 render at 1280 px without overflow.
+- Round-1 Blocking item (L3-05 Järkevyys) is resolved: it now says "höyry luovuttaa tiivistyessään paljon energiaa (r on suuri)". This gives the right direction and matches Mallivastaus.
+- L1-06: the feedback now says "keskinäisten vuorovaikutusten muuttamiseen" (guardrail wording). The correct option was moved to the end, and exactly one option is still correct and equals `answer`.
+- L1-07: the shortened options still have exactly one correct option ("Haihtuva hiki ottaa energiaa iholta"), and the feedback is unchanged and right.
+- L2-06 Periaate: now "kiehumispisteessä, normaalipaineessa noin 100 °C:ssa".
+- L2-07 now asks for 60,0 kPa, which is not a table row, with linear interpolation between 50,0 kPa (81,3 °C) and 70,0 kPa (90,0 °C). That gives 85,65 °C and Δ = 14,35 K, so 14,4 K. Steam tables give T_k(60 kPa) ≈ 86,0 °C and Δ ≈ 14,0 K, which is within the ±4 % tolerance. The interpolation step brings the task up to level 2, and b) correctly says ≈ 85,7 °C and ≈ 14 K.
+- L2-05: the hint "rivit 20 s ja 150 s ovat jo tasanteen sisällä" matches the data (melting 17,5 → 156,7 s). s = 600 · 139 / 0,250 = 333,6 kJ/kg.
+- L3-04: the tolerance of 0,08 now accepts the table-row plateau estimate of 18,7 kJ (−6,6 %). P = 11,98 W, Q = 19,9 kJ, s ≈ 199 kJ/kg.
+- I recomputed the changed and new answers in one script with my own formulas (L2-05, L2-06, L2-07, L3-04, L3-05). They match answers.py and exercises.json. All 20 answers.py values agree with exercises.json within tolerance.
+- The deterministic layout checks at 360, 768 and 1280 px pass.

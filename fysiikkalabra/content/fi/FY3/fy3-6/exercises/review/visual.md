@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 9d41b59b9d2f10be
+CONTENT-HASH: 652c6d5613fc0f41
+ROUND: 2
 
 ## Blocking
-(none)
+(none) No Blocking in round 1. Round 1 Polish applied: 2 % -> 1 % consistent, units on the L2-07 chain factors, sand/water MC reworded (heijastus and tiheys distractors), room temperature added to L3-04.
 
 ## Polish
-- [Minor] L2-06 (7-13) Vastaus — says the result differs from 4190 J/(kg·K) "vain noin 2 %", Järkevyys says "noin 1 %", and 4138 vs 4190 is 1,2 %; use one consistent figure (1 %).
-- [Minor] L2-07 (7-15 error analysis) Muunnokset/Sijoitus — the chain "c_k m_k = 385 · 0,20 = 77 J/K" and "77 · 100 + 2095 · 20 = 49 600" carry no units on the factors; add units as the neighbouring tasks do.
-- [Minor] L3-04 (7-19) Vastaus — a), b) and c) run in one dense paragraph; separate lines would read better at 1280 and 360 px.
-- [Minor] Data tables — headers centred/left against right-aligned numbers (L2-06, L2-07, L3-04, L3-05); site-wide table style.
-- [Minor] "Kuvaajan lukeminen" label on table data (L2-06, L3-04, L3-05).
-- [Minor] Answer-field wording "Vastauslaatikkoon" differs from fy3-4's "Vastauskenttään".
+- [Minor] L3-04 (7-19) Sijoitus — "Q_vesi = 4190 · 0,50 · 6,8 J" has no units on the factors, unlike the rest of the chapter; add them. Vastaus a), b), c) still run in one paragraph (separate lines read better).
+- [Minor] Data tables (L2-06, L2-07, L3-04, L3-05) — header alignment vs numbers (site-wide).
+- [Minor] "Kuvaajan lukeminen" label on table-only tasks (7-14 liquids A/B reads values from a table: "Taulukon lukeminen").
+- [Minor] Answer-field wording "Vastauslaatikkoon" vs "Vastauskenttään" in fy3-4.
 
 ## Checked
-- 1280 px: open-exercises-1280-5..9 (L1-06..08: ice, specific-heat concept MC, copper pot, aluminium kettle C), L2-1280-5..11 (L2-05 mixing, L2-06 calorimeter table, L2-07 A/B liquids, error analysis), L3-1280-4..8 (L3-04 cooling-curve, L3-05 Newton cooling). Recomputed 4286, 81 W, k = 0,587..0,614: match solutions. No red KaTeX, no overflow, nested chains aligned.
-- No plain-text quantity in new text; no 360/390 open-state capture, relied on the layout check.
+- 1280 px: open-exercises-1280-6 (7-6 sand/water MC), L2-1280-7 (7-13 calorimeter solution, Vastaus/Järkevyys 1 %), -8 (7-14 liquids), L3-1280-6, -7 (7-19 Sijoitus, Vastaus, Järkevyys; 7-20 task and table). Captures newer than the fixed content. 4286, 81 W, 14,5 K match solutions. No red KaTeX, no overflow, nested chains aligned.
+- Diff HEAD~1 read. No 360/390 open-state capture; relied on the layout check.
+- No plain-text quantity in the changed text.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 5 · accessibility 4

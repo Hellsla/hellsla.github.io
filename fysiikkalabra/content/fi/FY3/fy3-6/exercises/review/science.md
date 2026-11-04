@@ -1,23 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 9d41b59b9d2f10be
+CONTENT-HASH: 652c6d5613fc0f41
+
+Round 2. Round 1 had no Blocking items. This round checks the Polish fixes (`git diff HEAD~1`) and the whole 20-task set again. Mode: full.
 
 ## Blocking
 
 ## Polish
-- solutions.md:126 (L2-05 Järkevyys) — "neste vastaanottaa 30 378 J" from 30 000 J supplied, "joten häviöt ovat pienet": energy received cannot exceed energy supplied, so the 1 % gap is scatter from the example data or the drawn line. It does not measure losses. — Say "ero on mittaushajonnan suuruinen, joten häviöt ovat tällä välillä pienet". Line 125 b) "poikkeaa vain noin 2 %" should be about 1 % (4138 compared with 4190).
-- exercises.json:254 / solutions.md:190 (L3-04) — the check uses room temperature 20,0 °C, which the task never states (it only follows from the start reading). — Add "Huoneen lämpötila on 20 °C" to the task.
-- solutions.md:203 (L3-05) — "kolme merkitsevää numeroa …, tulos pyöristettynä kahteen" gives no reason for using two. — Say that k varies between intervals by about ±3 %, so the second digit is the last meaningful one. "pienet erot johtuvat pyöristyksestä" would be clearer as "lukemien 0,1 °C:n tarkkuudesta".
-- solutions.md:137 (L2-06) — "Öljyn c jää veden arvoa pienemmäksi, kuten nesteiden vertailussa pitääkin" states no reason. — Use "vedellä on tavallisista nesteistä suurin c" or drop the sentence.
-- exercises.json:217 (L2-07) — the setup (hot metal into water, equilibrium temperature) is the same as L2-04 and the lesson example. The error-analysis part a) is what makes it new. — Optionally change the context (for example a hot iron nail into tea) so it reads as less of a repeat.
+- exercises.json:217 (L2-07) — the setup (hot metal into water, equilibrium temperature) is still the same as L2-04 and the lesson example. Part a), the error analysis, is what makes it new (carried over). — Optionally use another context, for example a hot iron nail dropped into tea.
 
 ## Checked
-- I recomputed all 19 answers in one script (my own formulas from the task text). They agree with answers.py and exercises.json within rounding.
-- L2-05: the end-point line (0 s; 20,0) to (300 s; 34,5) passes the table rows, and a least-squares fit gives c = 4118 J/(kg·K). Both are within the 3 % tolerance of 4100.
-- L2-06: steady increments (A 4,4–4,6 K, B 2,0–2,5 K per 30 s), c_oil = 2083 J/(kg·K). This is realistic for oil.
-- L3-04: the data match Newton-type losses with k ≈ 2 W/K (simulated series 25,6 … 63,6 °C). The loss power is 81 W, and the a)/c) reasoning holds.
-- L3-05: k is 0,599, 0,587, 0,612, 0,582, 0,614 and 0,590 W/K. The data match τ ≈ 35 min, so the conclusion "malli sopii" is right.
-- L1-06 MC: exactly one correct option, and each distractor's feedback is right. L1-07 (78 K) and L1-08 (C = 540 J/K, 32 kJ) are correct.
-- Q = cmΔT is used only where there is no change of state. L3-04 b) states that heating is linear only while losses are small (guardrail).
-- Notation (c, m, ΔT, C = cm, T_loppu/T_alku) matches the lesson. The levels match the plan in docs/exercise-bank/FY3.md (heating curve → c, two curves → which is water, heat-loss reduction, curving curve, cooling model).
-- L3-04 and L3-05 render at 1280 px without overflow (aligned equations fit).
-- The figure and the wording of the existing tasks are unchanged.
+- Round-1 Polish taken up: L2-05 b) now says "noin 1 %" (4138 compared with 4190 is 1,2 %), and Järkevyys now calls the 1 % gap measurement scatter, not losses. L3-04 now states "Huoneen lämpötila on 20 °C", which the check uses. L3-05 now explains the two significant figures (k varies by ±3 % between intervals) and puts the scatter down to the 0,1 °C readings. L2-06 now explains the check (water has the largest c of common liquids).
+- L1-06 has been rewritten. Exactly one option is correct, and its text equals `answer`. The new density distractor is wrong for the reason its feedback gives (the masses are equal, and ΔT = Q/(cm) has no density in it). The reflection distractor is wrong because the task gives both the same heat. The "aine ei vaikuta" distractor is right to point to c. The solution matches the new options.
+- L2-07 solution: the units are now carried through the substitution (77 J/K, 2095 J/K, 49 600 J / 2172 J/K = 22,84 °C), and the numbers are unchanged.
+- L3-04 Järkevyys: "muutaman prosentin liian suuri" matches 4286 compared with 4190 (+2,3 %) and a 6 W loss (3 % of 200 W).
+- I recomputed all 19 numeric answers in one script with my own formulas. All match answers.py and exercises.json within tolerance. The L3-05 k values are 0,599, 0,587, 0,612, 0,582, 0,614 and 0,590 W/K.
+- The physics from round 1 still holds. Q = cmΔT is used only where the state does not change. Notation (c, m, ΔT, C = cm) is the lesson's. The levels match the plan in docs/exercise-bank/FY3.md.
+- The deterministic layout checks at 360, 768 and 1280 px pass.
