@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Why does a black spot appear at the top of a soap bubble just before it bursts?",
+    "a": "At the top the film has thinned to much less than the wavelength of light, so the path difference $2nd$ is almost zero. However, the wave reflected from the upper surface has been inverted and the wave reflected from the lower surface has not, so the waves are in opposite phase and cancel each other at all wavelengths. The film does not reflect light and looks black."
+  },
+  {
+    "q": "Why does window glass not show colours like a soap film, although light is reflected from its two surfaces too?",
+    "a": "Window glass is millimetres thick, that is, thousands of times thicker than the wavelength. Then there are very many wavelengths in the visible range that are strengthened, and between them just as many that are weakened. The colours mix, and the reflected light looks white."
+  }
+]

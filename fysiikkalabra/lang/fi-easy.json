@@ -1662,6 +1662,63 @@
       "selite": "Katkoviiva on rajapinnan normaali. Kulmat mitataan siitä.",
       "lukemat": "<strong>$\\alpha_1 = {{a1}}^\\circ$, $\\beta = {{b}}^\\circ$, $\\alpha_2 = {{a2}}^\\circ$</strong><br>$\\sin\\alpha_1 = {{s1}}$, $\\sin\\alpha_2 = {{s2}}$<br>Heijastuva osuus $R = {{R}}\\,\\%$",
       "lukemat_tir": "<strong>$\\alpha_1 = {{a1}}^\\circ$, $\\beta = {{b}}^\\circ$: ei taittunutta sädettä</strong><br>Arvo $n_1 \\sin\\alpha_1 = {{p}}$ on suurempi kuin $n_2 = {{n2}}$, joten kaikki valo heijastuu.<br>Heijastuva osuus $R = 100\\,\\%$"
+    },
+    "fy7-14": {
+      "tilanne": "Tilanne",
+      "saippua": "saippuakalvo ilmassa",
+      "pinnoite": "magnesiumfluoridipinnoite lasilla",
+      "paksuus": "Kalvon paksuus $d = {{d}}\\,\\text{nm}$",
+      "aallonpituus": "Aallonpituus $\\lambda = {{l}}\\,\\text{nm}$",
+      "selite": "Kalvon paksuus on suurennettu. Laatikossa on heijastuneen valkoisen valon väri.",
+      "lukemat": "<strong>{{tila}}</strong><br>Matkaero $2nd = {{s}}\\,\\text{nm}$ eli $2nd : \\lambda = {{q}}$<br>Aallon kääntäviä heijastuksia: ${{m}}$<br>Heijastuva osuus $R = {{R}}\\,\\%$, kun $\\lambda = {{l}}\\,\\text{nm}$",
+      "tila_vahvistava": "Aallot 1 ja 2 samassa vaiheessa: vahvistava interferenssi",
+      "tila_heikentava": "Aallot 1 ja 2 vastakkaisessa vaiheessa: heikentävä interferenssi",
+      "tila_osittain": "Aallot 1 ja 2 osittain eri vaiheessa",
+      "tila_paljas": "Ei pinnoitetta: paljas lasi",
+      "ilma": "ilma",
+      "lasi": "lasi",
+      "kalvo_s": "saippuakalvo",
+      "kalvo_p": "pinnoite",
+      "vari": "väri"
+    },
+    "fy7-15": {
+      "maara": "Polarisaattoreita",
+      "kaksi": "kaksi",
+      "kolme": "kolme",
+      "p1": "Polarisaattori $\\text{P}_1$: $\\theta_1 = {{t}}^\\circ$",
+      "p2": "Keskimmäinen $\\text{P}_2$: $\\theta_2 = {{t}}^\\circ$",
+      "p2_pois": "$\\text{P}_2$ (pois): $\\theta_2 = {{t}}^\\circ$",
+      "p3": "Analysaattori $\\text{P}_3$: $\\theta_3 = {{t}}^\\circ$",
+      "selite": "Ruskea: sähkökentän värähtelysuunta. Viivoitus: läpäisysuunta. Ei mittakaavassa.",
+      "lamppu": "lamppu",
+      "varjostin": "varjostin",
+      "lukemat2": "<strong>Varjostimelle $I_3 = {{i3}}\\,\\%$ lampun valon intensiteetistä $I_0$</strong><br>$\\text{P}_1$:n jälkeen $I_1 = {{i1}}\\,\\%$<br>Läpäisysuuntien välinen kulma ${{d}}^\\circ$, $\\cos^2 = {{c}}$",
+      "lukemat3": "<strong>Varjostimelle $I_3 = {{i3}}\\,\\%$ lampun valon intensiteetistä $I_0$</strong><br>$\\text{P}_1$:n jälkeen $I_1 = {{i1}}\\,\\%$, $\\text{P}_2$:n jälkeen $I_2 = {{i2}}\\,\\%$"
+    },
+    "fy7-16": {
+      "z": "Käämien etäisyys $z = {{z}}\\,\\text{mm}$",
+      "R1": "Lähetinkäämin säde $R_1 = {{r}}\\,\\text{mm}$",
+      "selite": "Leikkauskuva sivulta mittakaavassa. Vihreät viivat ovat lähetinkäämin magneettikenttää.",
+      "lukemat": "Vuon huippuarvo yhden kierroksen läpi $\\Phi_0 = {{phi}}\\,\\mu\\text{Wb}$<br>Jännitteen huippuarvo $e_0 = {{e}}\\,\\text{V}$<br>Osuus $3\\,\\text{mm}$:n arvosta ${{o}}\\,\\%$",
+      "puhelin": "puhelin",
+      "laturi": "laturi",
+      "vastaanotin": "vastaanotinkäämi",
+      "lahetin": "lähetinkäämi"
+    },
+    "fy7-13": {
+      "N": "Viivatiheys $N = {{n}}$ viivaa millimetrillä",
+      "lambda": "Aallonpituus $\\lambda = {{l}}\\,\\text{nm}$",
+      "L": "Varjostimen etäisyys $L = {{L}}\\,\\text{m}$",
+      "selite": "Kuva on ylhäältä päin ja mittakaavassa. Asteikko näyttää etäisyyden keskimaksimista.",
+      "r_d": "Hilavakio $d = {{d}}\\,\\mu\\text{m}$",
+      "r_1": "Kertaluku $k = 1$: $\\theta_1 = {{t}}^\\circ$, $x_1 = {{x}}\\,\\text{cm}$",
+      "r_2": "Kertaluku $k = 2$: $\\theta_2 = {{t}}^\\circ$, $x_2 = {{x}}\\,\\text{cm}$",
+      "r_2_none": "Kertaluku $k = 2$: maksimia ei synny, koska $2\\lambda > d$",
+      "r_off": " (ohi varjostimen)",
+      "r_count": "Maksimeja syntyy ${{c}}$ (suurin kertaluku ${{km}}$), varjostimelle osuu ${{s}}$",
+      "hila": "hila",
+      "varjostin": "varjostin",
+      "laser": "laser"
     }
   },
   "practice": {

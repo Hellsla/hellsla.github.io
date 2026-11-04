@@ -1662,6 +1662,63 @@
       "kuva_alt": "A darkened room where a narrow beam of white light hits a glass prism, splits into colours and hits a white screen on the right.",
       "lukemat": "<strong>Angles of deviation: red $\\delta_\\text{r} = {{dp}}^\\circ$, violet $\\delta_\\text{v} = {{dv}}^\\circ$</strong><br>Difference $\\Delta\\delta = {{dd}}^\\circ$<br>Refractive indices $n_\\text{r} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)",
       "lukemat_tir": "<strong>Some of the colours cannot leave through the second surface of the prism but are reflected back into the glass.</strong><br>{{k}} of the seven colours get out.<br>Refractive indices $n_\\text{r} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)"
+    },
+    "fy7-15": {
+      "maara": "Polarisers",
+      "kaksi": "two",
+      "kolme": "three",
+      "p1": "Polariser $\\text{P}_1$: $\\theta_1 = {{t}}^\\circ$",
+      "p2": "Middle $\\text{P}_2$: $\\theta_2 = {{t}}^\\circ$",
+      "p2_pois": "$\\text{P}_2$ (off): $\\theta_2 = {{t}}^\\circ$",
+      "p3": "Analyser $\\text{P}_3$: $\\theta_3 = {{t}}^\\circ$",
+      "selite": "Brown: direction of oscillation of the electric field. Hatching: transmission axis. Not to scale.",
+      "lamppu": "lamp",
+      "varjostin": "screen",
+      "lukemat2": "<strong>On the screen $I_3 = {{i3}}\\,\\%$ of the intensity $I_0$ of the lamp</strong><br>After $\\text{P}_1$ $I_1 = {{i1}}\\,\\%$<br>Angle between the transmission axes ${{d}}^\\circ$, $\\cos^2 = {{c}}$",
+      "lukemat3": "<strong>On the screen $I_3 = {{i3}}\\,\\%$ of the intensity $I_0$ of the lamp</strong><br>After $\\text{P}_1$ $I_1 = {{i1}}\\,\\%$, after $\\text{P}_2$ $I_2 = {{i2}}\\,\\%$"
+    },
+    "fy7-14": {
+      "tilanne": "Situation",
+      "saippua": "soap film in air",
+      "pinnoite": "magnesium fluoride coating on glass",
+      "paksuus": "Film thickness $d = {{d}}\\,\\text{nm}$",
+      "aallonpituus": "Wavelength $\\lambda = {{l}}\\,\\text{nm}$",
+      "selite": "The film thickness is exaggerated. The box shows the colour of the reflected white light.",
+      "lukemat": "<strong>{{tila}}</strong><br>Path difference $2nd = {{s}}\\,\\text{nm}$, that is, $2nd : \\lambda = {{q}}$<br>Inverting reflections: ${{m}}$<br>Reflected fraction $R = {{R}}\\,\\%$ when $\\lambda = {{l}}\\,\\text{nm}$",
+      "tila_vahvistava": "Waves 1 and 2 in phase: constructive interference",
+      "tila_heikentava": "Waves 1 and 2 in opposite phase: destructive interference",
+      "tila_osittain": "Waves 1 and 2 partly out of phase",
+      "tila_paljas": "No coating: bare glass",
+      "ilma": "air",
+      "lasi": "glass",
+      "kalvo_s": "soap film",
+      "kalvo_p": "coating",
+      "vari": "colour"
+    },
+    "fy7-13": {
+      "N": "Line density $N = {{n}}$ lines per millimetre",
+      "lambda": "Wavelength $\\lambda = {{l}}\\,\\text{nm}$",
+      "L": "Screen distance $L = {{L}}\\,\\text{m}$",
+      "selite": "Seen from above, to scale. The scale shows the distance from the central maximum.",
+      "r_d": "Grating spacing $d = {{d}}\\,\\mu\\text{m}$",
+      "r_1": "Order $k = 1$: $\\theta_1 = {{t}}^\\circ$, $x_1 = {{x}}\\,\\text{cm}$",
+      "r_2": "Order $k = 2$: $\\theta_2 = {{t}}^\\circ$, $x_2 = {{x}}\\,\\text{cm}$",
+      "r_2_none": "Order $k = 2$: no maximum forms, because $2\\lambda > d$",
+      "r_off": " (off the screen)",
+      "r_count": "Maxima formed: ${{c}}$ (largest order ${{km}}$), on the screen: ${{s}}$",
+      "hila": "grating",
+      "varjostin": "screen",
+      "laser": "laser"
+    },
+    "fy7-16": {
+      "z": "Distance between the coils $z = {{z}}\\,\\text{mm}$",
+      "R1": "Radius of the transmitter coil $R_1 = {{r}}\\,\\text{mm}$",
+      "selite": "Cross-section to scale. The green lines are the magnetic field of the transmitter coil.",
+      "lukemat": "Peak flux through one turn $\\Phi_0 = {{phi}}\\,\\mu\\text{Wb}$<br>Peak voltage $e_0 = {{e}}\\,\\text{V}$<br>Share of the value at $3\\,\\text{mm}$ ${{o}}\\,\\%$",
+      "puhelin": "phone",
+      "laturi": "charger",
+      "vastaanotin": "receiver coil",
+      "lahetin": "transmitter coil"
     }
   },
   "practice": {

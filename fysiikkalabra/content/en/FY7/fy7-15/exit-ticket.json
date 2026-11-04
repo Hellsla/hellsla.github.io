@@ -1,0 +1,10 @@
+[
+  {
+    "q": "The refractive index of glass is $1.50$. At what angle of incidence is the reflection of light arriving from air at the surface of the glass completely polarised?",
+    "a": "From Brewster's law $\\tan\\alpha_\\text{B} = 1.50 : 1.00 = 1.50$, so $\\alpha_\\text{B} = 56.3^\\circ$. At this angle the reflected and the refracted ray are perpendicular to each other."
+  },
+  {
+    "q": "A phone display looks bright through polarised sunglasses, but when the phone is turned by $90^\\circ$, the display turns almost black. Why?",
+    "a": "There is a polarising film on the surface of the display, so the light of the display is polarised. When the direction of polarisation of the display is parallel to the transmission axis of the glasses, the light passes through. When the phone is turned by $90^\\circ$, the directions are crossed, and according to Malus's law $\\cos^2 90^\\circ = 0$ passes through, that is, almost nothing."
+  }
+]

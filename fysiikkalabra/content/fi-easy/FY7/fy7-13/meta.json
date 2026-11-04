@@ -1,0 +1,23 @@
+{
+  "id": "fy7-13",
+  "course": "FY7",
+  "title": "Valon interferenssi ja diffraktio",
+  "goals": [
+    "LOPS FY7: valon interferenssi ja diffraktio (diffraktio tarkoittaa valon leviämistä raon taakse)",
+    "Kokeellisesti: laserin aallonpituuden määrittäminen hilan avulla",
+    "Täsmennys: interferenssikuvio, jonka tekevät saman taajuiset ja samassa vaiheessa olevat lähteet; interferenssi ohuissa kalvoissa"
+  ],
+  "prerequisites": [
+    "fy7-10"
+  ],
+  "glossary": [
+    "interferenssi",
+    "diffraktio",
+    "hila",
+    "hilavakio",
+    "kaksoisrako"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}
