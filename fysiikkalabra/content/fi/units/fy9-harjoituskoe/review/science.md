@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 34569735919c8d54
+CONTENT-HASH: 8fe07a88b6155df4
+
+Delta (goal wording, previous PASS hash 34569735919c8d54): the only change is inquiry.json learn[1], now "valitsemaan omaan osaamiseesi parhaiten sopivat tehtävät." No physics content changed; the goal is factually neutral and still matches the optional Osa II/III choice. objectives.py and units.py check pass. Verdict unchanged.
 
 Round 2 (delta review of round 1 fixes; round 1 hash 1e35148179fc1f8f). Judged against docs/FY9_PLAN.md "Lesson 16: the mock exam".
 

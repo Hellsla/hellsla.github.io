@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 34569735919c8d54
+CONTENT-HASH: 8fe07a88b6155df4
+
+Delta (goal wording, previous PASS hash 34569735919c8d54): inquiry.json learn[1] now reads "valitsemaan omaan osaamiseesi parhaiten sopivat tehtävät." Correct, idiomatic Finnish, same length class and form as the other goals (3rd infinitive + object, full stop). No layout impact. objectives.py and units.py check pass. Verdict unchanged.
 
 Round 2 (delta review of round 1 fixes; round 1 hash 1e35148179fc1f8f).
 
