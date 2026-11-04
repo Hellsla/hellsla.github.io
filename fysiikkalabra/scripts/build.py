@@ -330,6 +330,19 @@ def core_ids(ex):
 NUM_CELL = re.compile(r"[−-]?\d+(?:\.\d+)?")
 
 
+def exercise_text(text, pid):
+    """An exercise's task text. A text in paragraphs (a blank line before each part a), b), c)) keeps them: the
+    situation first (split like any long task, inquiry.task_text), then each paragraph as its own (a part "a) …" as a bold question),
+    the last one carrying pid (the answer field's description). A text without blank lines renders as before."""
+    paras = [p.strip() for p in text.split("\n\n") if p.strip()]
+    if len(paras) < 2: return inquiry.task_text(text, pid=pid)
+    head = inquiry.task_text(paras[0])
+    idattr = f' id="{esc(pid)}"'
+    part = lambda p: "task ask" if re.match(r"[a-h]\)", p) else "task more"   # "a) …" is a question; "Vakiot: …" plain text (never a 2nd bare p.task: test_writepad)
+    parts = [f'<p class="{part(p)}"{idattr if i == len(paras) - 2 else ""}>{p}</p>' for i, p in enumerate(paras[1:])]
+    return head + "".join(parts)
+
+
 def data_table(d):
     """An exercise's data ("data": {"caption", "columns", "rows"}, teacher 2026-11-04, aineistotehtävät): a measurement
     table the student reads, copies into a spreadsheet or fits. A cell that is a plain number is written with a point
@@ -392,7 +405,7 @@ def exercise_html(e, solution_html, read=None, core=False, num=None):
     fig = (data_table(e["data"]) if e.get("data") else "") + fig + (exercise_choice(e) if e.get("choices") else "")
     tag = f'<span class="ex-core">{T("lesson.core_exercise")}</span>' if core else ""
     solved = "" if numeric else f'<label class="solved"><input type="checkbox"> <span>{T("inquiry.did_solution")}</span></label>'   # a written task opens its answer after this tick (lesson.js part 8)
-    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{inquiry.task_text(nbsp_units(e["text"]), pid=f"{e['id']}-q")}{fig}{check}{solved}'
+    return (f'<li id="{e["id"]}"{" class=" + chr(34) + "core" + chr(34) if core else ""}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{exercise_text(nbsp_units(e["text"]), f"{e['id']}-q")}{fig}{check}{solved}'
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 

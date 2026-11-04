@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 4c9468244fe46189
+CONTENT-HASH: 72f39e958439a660
+Round: 2
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L1-02 sankey — the figure gives the shares 9 % / 91 % but only as percentages without "häviö"/"perille" words; the solution has to explain which branch is the loss — add the two words to the branches (shared with the lesson figure).
-- [Minor] Solution rows (L1-01, L2-02, L3-01) — display chains are left-aligned in narrow white boxes with the "=" column a few pixels off the first line's operator in the Sijoitus boxes; harmless, but the boxes look ragged next to the full-width Vastaus box.
-- [Minor] L3-02 — the answer "13,0 MWh" asks for the difference only; the task also asks "kumpi verkko", which the answer box cannot check — keep as is, but the question could be split into two sentences with the numeric one last (it already is bold-split).
+- [Minor] L3-05, Järkevyys (L3-1280-8) — the inline "$0{,}041 \cdot 1016\,\text{MWh} \approx 42\,\text{MWh}$" breaks after the "·" at 1280 px; rewrite as a short separate sentence or let the chain rows handle it.
+- [Minor] all data tables (L2-05, L2-06, L3-04, L3-05) — numeric column headers sit left of their right-aligned numbers — right-align numeric headers.
 
 ## Checked
-- 1280: exercises level 1 parts 1–2 (tasks, answer, solution rows, sankey figure in L1-02), level 2 part 3, level 3 part 2 with solutions open; reading of all 12 tasks and solutions in the packet.
-- Maths renders cleanly (fractions, units upright with thin space, colon division, decimal comma); no clipping or overflow; hints and solutions open inside each task card.
+- Round 1 Blocking (paragraph break lost in L2-05, L2-06, L3-04, L3-05): resolved; a)/b)/c) are own bold paragraphs, the box instruction ("Anna vastaus prosentteina", "megawattitunteina") sits in the part it belongs to.
+- Round 1 Polish (L3-05 Sijoitus eight calculations in prose): resolved, E and H rows are one aligned block.
+- L2-1280-6, -8 (L2-05 table and solution, L2-06 solution, L2-07 text, ”…” quotes now Finnish), L3-1280-4, -5, -7, -8 (L3-04, L3-05).
+- Revealed answers match the boxes (checked in the built page for all new numeric tasks).
+- 1280 px only (no 360 px exercise capture; layout checks clean).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2480aed8f87895fd
+CONTENT-HASH: 612eb028465da8f9
+Mode: full
+Round: 1
 
 ## Blocking
 (none)
 
+## Fixed
+- exercises.json L1-06 — "kantaverkossa" unexplained for easy Finnish; now "kantaverkossa eli valtakunnan sähköverkossa".
+
 ## Polish
-- [Minor] fy2-7-L3-03 — the only task without an "Anna vastaus ..." sentence; the unit field shows "kpl" — add "Anna vastaus kappaleina." for consistency with the other tasks.
-- [Minor] fy2-7-L1-02 — the figure is reused from the lesson and shows the 9 % share directly beside the arrow; clear and sufficient, but the answer line says "32 MWh" while the solution computes 32,4 — fine, only state the rounding in the task ("noin").
-- [Minor] open-exercises-L2 and L3 captures — solution equation blocks have varying widths (box shrinks to content) — optional: a common width.
+- (none)
 
 ## Checked
-- Contact sheet captures #38–#52 were reviewed through the opened captures: open-exercises-1280-1 and -2 (L1-01, L1-02 with the sankey figure), open-exercises-L2-1280-3 (L2-02, L2-03), open-exercises-L3-1280-3 (L3-02, L3-03).
-- Solutions.md and exercises.json read for notation: LaTeX units upright with thin space, decimal comma, colon for division, \cdot, principle to formula to substitution to result to sense check order.
-- The sankey figure was judged against its description: gives every needed value, does not give the answer away.
-- Layers not opened separately: the other L1 and L2 solutions at 1280.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- Screenshots of L2-05 and neighbouring tasks: table caption, a/b parts and solution blocks render cleanly on 1280 px.
+- Decimal comma in LaTeX of solutions, decimal point in table cells as in fi.
+- Column headers $E_\text{lähtö}$, $E_\text{perille}$ consistent with the solutions.

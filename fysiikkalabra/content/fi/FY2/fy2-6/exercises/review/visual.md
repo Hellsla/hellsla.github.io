@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 78183435714f0ad9
+CONTENT-HASH: b71da49ea5d729c4
+Round: 3
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L1-04 (open-exercises-1280-3) — the bar chart sits under the question as the task asks; the values are printed at the bars and the aria-label carries them, so it works, but the 0,9 bar label touches the axis line closely — leave a little more gap (shared fi-bars figure).
-- [Minor] L2-02 solution (open-exercises-L2-1280-2) — Sijoitus ends at 8750 h and the Vastaus box shows 8800 h; correct by rounding, but the answer line "8800 h eli 8,8 · 10^3 h" repeats the same value twice — keep only 8800 h or add the rounding step to Sijoitus.
-- [Minor] L2-01…L3-03 openings — "Esimerkkinä oleva …" starts six tasks and sounds mechanical — vary it ("Tarkastellaan tuulipuistoa, jonka …") in some.
-- [Minor] L3-03 (open-exercises-L3-1280-4) — the task asks for a number and a reflection but has only a numeric field — say in the text that the pohdinta is answered in the notebook or in the Järkevyys, or add a free-text field.
+- [Minor] all data tables — numeric column headers sit left of their right-aligned numbers — right-align numeric headers.
+- [Minor] L3-05 data table (open-exercises-L3-1280-7) — the table now fits the task column with no sideways scroll, but "Tasainen" in the last column ends within a few px of the card edge; if it overflows at 360 px, let the first column wrap or shorten its labels.
+- [Minor] L2-05 and L2-07, "Vastaus" disclosure — the revealed answer is the bare number "23" and "1,6" without the unit the box shows; write the unit in the solution's Vastaus line inside the maths (e.g. "$23\,\text{prosenttiyksikköä}$").
 
 ## Checked
-- open-exercises-1280-2, -3, -4 (L1-02…L1-04 with figure, solutions open)
-- open-exercises-L2-1280-2 (L2-01 end, L2-02 complete)
-- open-exercises-L3-1280-4 (L3-03 solution end)
-- contact sheet 3 (exercises overview); every task, solution and unit/rounding line read in the text.
-- Layout: answer fields, unit labels, Vastaus chips, Annettu-Järkevyys blocks all inside the card at 1280 px; chains broken into aligned rows; fractions in L1-04 render cleanly.
+- Round 2 Blocking (L3-05 table overflow): resolved. Last row is now "Sääriippuvainen" / "Tasainen"; all columns (Tuulipuisto, Ydinvoimala) are visible at 1280 px without scrolling, and the Vastaus chip, Annettu and Sijoitus render cleanly (open-exercises-L3-1280-7).
+- L1-07 model answer now names the options by content (hydropower, nuclear as base power, wind as weather-dependent); text is correct and consistent with the glossary.
+- Earlier captures still stand: L2-05..07, L3-04 (no changes since round 2).
+- 1280 px only (no 360 px exercise capture; layout checks clean).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

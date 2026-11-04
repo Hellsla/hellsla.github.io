@@ -40,6 +40,58 @@
       "answer": 0.96,
       "unit": "MJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-06",
+      "level": 1,
+      "text": "Bensiinin lämpöarvo on $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Mitä tämä tarkoittaa?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Yhdestä kilogrammasta bensiiniä vapautuu palaessa energiaa $43\\,\\text{MJ}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Bensiini palaa kuumemmassa liekissä kuin muut polttoaineet, ja luku $43\\,\\text{MJ}$ kertoo liekin lämpötilan.",
+          "feedback": "Lämpöarvo ei ole lämpötila. Se kertoo vapautuvan energian määrän massayksikköä kohti, ei sitä, kuinka kuumana polttoaine palaa."
+        },
+        {
+          "text": "Yhden megajoulen energian saamiseksi bensiiniä pitää polttaa aina $43\\,\\text{kg}$ riippumatta määrästä.",
+          "feedback": "Tulkinta on väärin päin: yhdestä kilogrammasta vapautuu $43\\,\\text{MJ}$, ei $43\\,\\text{kg}$:sta yksi megajoule."
+        },
+        {
+          "text": "Jokaisesta poltetusta kilogrammasta bensiiniä syntyy uutta energiaa $43\\,\\text{MJ}$, jota ei ennen palamista ollut.",
+          "feedback": "Energiaa ei synny tyhjästä. Bensiinin kemiallinen energia muuntuu palaessa lämmöksi ja valoksi."
+        },
+        {
+          "text": "Yhdestä kilogrammasta bensiiniä vapautuu palaessa energiaa $43\\,\\text{MJ}$.",
+          "correct": true,
+          "feedback": "Oikein: lämpöarvo on vapautuva energia massayksikköä kohti, joten $1{,}0\\,\\text{kg}$ bensiiniä vapauttaa $43\\,\\text{MJ}$ ja $E = Hm$."
+        }
+      ]
+    },
+    {
+      "id": "fy2-5-L1-07",
+      "level": 1,
+      "text": "Pelletinpolttimessa halutaan saada puupelleteistä vapautumaan energiaa $255\\,\\text{MJ}$. Pellettien lämpöarvo on $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka monta kilogrammaa pellettejä on poltettava? Anna vastaus kilogrammoina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 15,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-08",
+      "level": 1,
+      "text": "Kolmesta kilogrammasta maakaasua vapautuu palaessa energiaa $144\\,\\text{MJ}$. Kuinka paljon tämä on kilowattitunteina? Käytä yhteyttä $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$. Anna vastaus kilowattitunteina.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 40,
+      "unit": "kWh",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -74,6 +126,124 @@
       "answer": 4.5,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L2-05",
+      "level": 2,
+      "text": "Taulukossa on esimerkkiaineisto polttopuun tehollisesta lämpöarvosta eri kosteuksilla. Saunan lämmitykseen tarvitaan polttopuusta vapautuvaa energiaa $200\\,\\text{MJ}$. Laske taulukon lämpöarvoilla tarvittava puun massa, kun kosteus on $20\\,\\%$ ja kun se on $40\\,\\%$. Kuinka monta kilogrammaa enemmän kosteaa ($40\\,\\%$) puuta tarvitaan kuin ilmakuivaa ($20\\,\\%$) puuta? Anna vastaus kilogrammoina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 5.6,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkkiaineisto: polttopuun tehollinen lämpöarvo kosteuden mukaan",
+        "columns": [
+          "Kosteus $(\\%)$",
+          "$H\\,(\\text{MJ/kg})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "19.0"
+          ],
+          [
+            "10",
+            "16.9"
+          ],
+          [
+            "20",
+            "14.7"
+          ],
+          [
+            "30",
+            "12.6"
+          ],
+          [
+            "40",
+            "10.4"
+          ],
+          [
+            "50",
+            "8.3"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-5-L2-06",
+      "level": 2,
+      "text": "Oppilas laski tehtävän: ”Voimalaitos polttaa $3{,}0\\,\\text{t}$ kivihiiltä, jonka lämpöarvo on $26\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Energia on $E = Hm = 26 \\cdot 3{,}0\\,\\text{MJ} = 78\\,\\text{MJ}$.” Missä oppilaan virhe on?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "answer": "Massaa ei muutettu kilogrammoiksi: $3{,}0\\,\\text{t} = 3000\\,\\text{kg}$, joten oikea tulos on $78\\,000\\,\\text{MJ}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Lämpöarvo olisi pitänyt jakaa massalla, joten oikea tulos on $26 : 3{,}0 = 8{,}7\\,\\text{MJ}$.",
+          "feedback": "Kaava on $E = Hm$, tulo eikä osamäärä. Jakamalla ei saada energiaa: suurempi massa antaa enemmän energiaa, ei vähemmän."
+        },
+        {
+          "text": "Tulos olisi pitänyt antaa kilowattitunteina, joten oikea tulos on $78\\,\\text{kWh}$.",
+          "feedback": "Yksikön vaihtaminen ei korjaa lukua: $78\\,\\text{MJ}$ olisi $21{,}7\\,\\text{kWh}$, ei $78\\,\\text{kWh}$. Virhe on massan yksikössä, ei vastauksen yksikössä."
+        },
+        {
+          "text": "Massaa ei muutettu kilogrammoiksi: $3{,}0\\,\\text{t} = 3000\\,\\text{kg}$, joten oikea tulos on $78\\,000\\,\\text{MJ}$.",
+          "correct": true,
+          "feedback": "Oikein: lämpöarvo on energia kilogrammaa kohti, joten massa pitää sijoittaa kilogrammoina. $E = 26\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 3000\\,\\text{kg} = 78\\,000\\,\\text{MJ}$."
+        },
+        {
+          "text": "Kivihiilen lämpöarvo on väärä, koska oikea arvo olisi $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, joten tulos on $129\\,\\text{MJ}$.",
+          "feedback": "Kivihiilen lämpöarvo on noin $26\\,\\tfrac{\\text{MJ}}{\\text{kg}}$; arvo $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$ on bensiinin. Tehtävässä annettu lämpöarvo on oikein, virhe on massan yksikössä."
+        }
+      ]
+    },
+    {
+      "id": "fy2-5-L2-07",
+      "level": 2,
+      "text": "Esimerkkimittauksessa pellettipoltin ja sen pelletit seisoivat vaa'alla, ja poltin paloi koko ajan tasaisesti. Vaa'an lukema $m$ merkittiin $10\\,\\text{min}$ välein. Piirrä massan kuvaaja ajan funktiona ja määritä sen kulmakertoimesta, kuinka monta kilogrammaa pellettejä palaa minuutissa. Pellettien lämpöarvo on $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$. Kuinka suuri teho palamisessa vapautuu? Anna vastaus kilowatteina.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 18,
+      "unit": "kW",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Esimerkkimittaus: pellettipolttimen ja pellettien massa",
+        "columns": [
+          "$t\\,(\\text{min})$",
+          "$m\\,(\\text{kg})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "12.00"
+          ],
+          [
+            "10",
+            "11.34"
+          ],
+          [
+            "20",
+            "10.71"
+          ],
+          [
+            "30",
+            "10.04"
+          ],
+          [
+            "40",
+            "9.40"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -100,6 +270,114 @@
       "answer": 35,
       "unit": "MW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L3-04",
+      "level": 3,
+      "text": "Taulukossa on esimerkkiaineisto omakotitalon lämmitykseen kuukausittain tarvittavasta hyötyenergiasta. Talo voidaan lämmittää joko pellettikattilalla (pellettien lämpöarvo $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, hyötysuhde $85\\,\\%$) tai kevyellä polttoöljyllä (lämpöarvo $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, hyötysuhde $90\\,\\%$).\n\na) Laske vuoden lämmitysenergia kilowattitunteina ja megajouleina.\n\nb) Laske pellettikattilassa vuodessa poltettavien pellettien massa.\n\nc) Laske vuodessa kuluva öljyn massa ja vertaa sitä pellettien massaan. Selitä, miksi massojen suhde ei ole sama kuin lämpöarvojen suhde.\n\nd) Pellettikattilan hyötysuhde laskee huonon säädön takia arvoon $70\\,\\%$. Kuinka monta kilogrammaa pellettejä kuluu silloin vuodessa enemmän, ja miksi?\n\nAnna vastauslaatikkoon kohdan b) tulos kilogrammoina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 3300,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkkiaineisto: talon lämmitykseen tarvittava hyötyenergia kuukausittain",
+        "columns": [
+          "Kuukausi",
+          "$E\\,(\\text{kWh})$"
+        ],
+        "rows": [
+          [
+            "Tammikuu",
+            "2100"
+          ],
+          [
+            "Helmikuu",
+            "1900"
+          ],
+          [
+            "Maaliskuu",
+            "1600"
+          ],
+          [
+            "Huhtikuu",
+            "1100"
+          ],
+          [
+            "Toukokuu",
+            "600"
+          ],
+          [
+            "Kesäkuu",
+            "250"
+          ],
+          [
+            "Heinäkuu",
+            "200"
+          ],
+          [
+            "Elokuu",
+            "250"
+          ],
+          [
+            "Syyskuu",
+            "600"
+          ],
+          [
+            "Lokakuu",
+            "1100"
+          ],
+          [
+            "Marraskuu",
+            "1600"
+          ],
+          [
+            "Joulukuu",
+            "2000"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-5-L3-05",
+      "level": 3,
+      "text": "Rivitaloyhtiön lämmitykseen tarvitaan vuodessa hyötyenergiaa $36\\,000\\,\\text{MJ}$ (esimerkkiaineisto). Taulukossa on kolme kattilavaihtoehtoa. Polttoaineen oletetaan palavan täydellisesti ja kattilan hyötysuhteen pysyvän vakiona.\n\na) Laske kullekin vaihtoehdolle vuodessa tarvittava polttoaineen massa.\n\nb) Kuinka monta kilogrammaa enemmän polttopuuta kuin pellettejä kuluu vuodessa? Käytä a)-kohdan pyöristämättömiä massoja.\n\nc) Pellettikattilan hyötysuhde laskee vanhetessaan arvoon $75\\,\\%$. Laske pellettien kulutus silloin ja selitä, miten hyötysuhde vaikuttaa tarvittavaan polttoainemäärään.\n\nd) Perustele, miksi öljyä kuluu massana selvästi vähemmän kuin puuta, vaikka kattiloiden hyötysuhteet ovat samaa suuruusluokkaa.\n\nAnna vastauslaatikkoon kohdan b) tulos kilogrammoina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 940,
+      "unit": "kg",
+      "tolerance": 0.01,
+      "data": {
+        "caption": "Esimerkkiaineisto: kolme kattilavaihtoehtoa",
+        "columns": [
+          "Kattila",
+          "$H\\,(\\text{MJ/kg})$",
+          "$\\eta\\,(\\%)$"
+        ],
+        "rows": [
+          [
+            "Polttopuukattila (ilmakuiva puu)",
+            "15",
+            "70"
+          ],
+          [
+            "Pellettikattila",
+            "17",
+            "85"
+          ],
+          [
+            "Öljykattila",
+            "43",
+            "90"
+          ]
+        ]
+      }
     }
   ]
 }
