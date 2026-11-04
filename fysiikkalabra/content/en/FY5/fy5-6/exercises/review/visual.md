@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 69c40710c9ae97e5
+CONTENT-HASH: fe3dd1f7ae9dd3f4
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+- exercises.json L2-05 table: "Ganymedes" changed to the English "Ganymede" (matches solutions.md).
 
 ## Polish
 (none)
 
 ## Checked
-- Captures opened: open-exercises-1280-1 (level 1 heading, task, input with unit, answer and staged solution) and open-tarkista-1280-2 (KaTeX powers of ten, answer box).
-- No Finnish left; units upright with thin space; decimal point; no figure in the exercise set.
-- check_layout 345 px OK for preview/en/fy5-6.
-
-## Scores
-illustrations 4 · typography 4 · Finnish (English) 5 · accessibility 4
+- Screenshots of the new tasks checked (exercise captures 1280 px): data tables, LaTeX, decimals and solution layout render cleanly; no overflow.
+- Table captions and column headers translated; units and powers of ten in LaTeX as in fi.
+- No Finnish left in en (grep); in fi-easy no English left.
+- Letters, hyphenation and punctuation consistent with neighbouring tasks.

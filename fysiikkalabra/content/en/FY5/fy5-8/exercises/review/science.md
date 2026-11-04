@@ -1,14 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 67bf7bd61f137639
+CONTENT-HASH: fda0effb37e4eadc
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 
 ## Blocking
 (none)
+
+## Fixed
+- exercises.json L1-06 and L1-07: the `answer` field still held the Finnish text of the correct option; replaced with the exact English text of the correct choice (en answer must be the correct option's text).
 
 ## Polish
 (none)
 
 ## Checked
-- exercises.json: all 12 texts translated, ids, answers, units, tolerances and figures identical (check_i18n 0 errors).
-- solutions.md: every exercise has Given, Find, Principle, Formula (symbolic first), Conversions, Substitution, Answer with significant-figure reason, Reasonableness; L1-04, L2-04 read the graph, L3-03 keeps its free-body diagram block.
-- Recomputed: 30 N, 9000 N/m, 2.025 J, 60 N/m, 0.15 m, 0.24 J, 500 N/m, 0.54 J, 0.192 J, 24.5 kN/m, 0.183 m, 3.2 N. All match the stated answers.
-- Terms: spring constant, extension, compression, elastic potential energy, net force; decimal points.
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, figure ids, correct flags, data table cells and every number in texts, choices and feedback are identical (decimal point in en JSON and LaTeX where fi has a comma).
+- solutions.md: 701 numbers in the same order as fi, no differences; formulas and substitutions unchanged.
+- Key answers re-derived from the text: 25 N/m, 24.4 N/m, 24.525 N/m, 0.60 J, 0.255 J, 73 %; all agree.
+- L1-06 and L1-07: one correct choice each, feedback names the right error as in fi.
+- check_i18n.py en: 0 errors.

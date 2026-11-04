@@ -50,7 +50,7 @@
       ],
       "unit": "",
       "tolerance": 0.02,
-      "answer": "Kun jousta ei venytetä liian pitkälle, koska liian suurella venymällä voima ei enää kasva tasaisesti.",
+      "answer": "When the spring is not stretched too far, because at too large an extension the force no longer grows steadily.",
       "choices": [
         {
           "text": "Only if the spring is horizontal, because the weight of a vertical spring itself spoils the proportionality.",
@@ -80,7 +80,7 @@
       ],
       "unit": "",
       "tolerance": 0.02,
-      "answer": "Se nelinkertaistuu, koska energia on verrannollinen venymän toiseen potenssiin.",
+      "answer": "It becomes four times as large, because the energy is proportional to the second power of the extension.",
       "choices": [
         {
           "text": "It doubles, because the stretching force doubles and the energy is proportional to the force.",

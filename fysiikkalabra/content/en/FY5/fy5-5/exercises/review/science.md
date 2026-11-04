@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a87146ca4bab004a
+CONTENT-HASH: 253b105585534b77
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+(none needed: the English text already matched fi in every number and was natural)
 
 ## Polish
 (none)
 
 ## Checked
-- exercises.json: 12 tasks, answers, units and tolerances identical to the Finnish; texts keep every datum and the point-mass assumptions.
-- solutions.md: all 12 seven-part solutions kept, symbolic first; numbers identical apart from the decimal point (0.4015 µN, 2.503 N, 3.699 m/s², 3.799 kN, 4.0 µN, 37.93 kg, 0.8154, 15 488 km, 0.3440 %, 3.456·10⁵ km, 19.62 m/s², 177.4).
-- Subscripts: M_Maa -> M_E (L2-02), m_K -> m_M (L3-01), M_A, r_A, F_A -> M_S, r_S, F_S and K -> M (L3-03); consistent within each solution; γ for the constant.
-- Hash taken at the start and the end (unchanged).
+- All 8 new exercises (L1-06..08, L2-05..07, L3-04..05) and the older ones compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choice counts and order, data table cells; every number in texts, choices, feedback and solutions.md is identical to fi (decimal point in en).
+- No Finnish letters (a-umlaut, o-umlaut) left in en exercises.json or solutions.md.
+- Answers re-checked against fi: L2-05 1.25, L2-06 6.72, L2-07 3.99, L3-04 5510 kg/m3, L3-05 575 N; L1-06..08 correct option unique and equal to fi.
+- check_i18n.py en: 0 errors.

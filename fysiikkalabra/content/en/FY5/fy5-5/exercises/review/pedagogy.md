@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a87146ca4bab004a
+CONTENT-HASH: 253b105585534b77
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+(none needed: the English text already matched fi in every number and was natural)
 
 ## Polish
 (none)
 
 ## Checked
-- Three levels (5, 4, 3), core marks and the situation-then-question order as in the Finnish; every solution has Given, Find, Principle, Formula, Conversions, Substitution, Answer with its significant-figure reason, Reasonableness.
-- Clear English task wording ("Treat the students as point masses", "Give the answer in kilometres").
-- Captures opened: contact-5 (open level 1 and 2 solutions at 1280).
+- Level structure, task order, question wording (a/b/c parts, which part goes in the answer box) and hints/feedback match fi; the English keeps the pedagogical intent of every distractor feedback (e.g. L1-07 names the ignored factor, L1-08 explains centre vs surface).
+- Part c explanation tasks (L2-05c, L3-04c, L3-05c) ask for the same reasoning as in fi.
+- Register suits upper-secondary students; natural English, no calques.

@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: a87146ca4bab004a
+CONTENT-HASH: 253b105585534b77
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
@@ -8,8 +10,8 @@ CONTENT-HASH: a87146ca4bab004a
 (none)
 
 ## Checked
-- Captures opened: contact-5 (open-exercises-1280, open-exercises-L2-1280); KaTeX renders, M_E and the fractions read clearly, answers set apart, no overflow.
-- Decimal point, \cdot, upright units with thin spaces; no Finnish left.
+- Captures opened: en fy5-5-open-exercises-L2-1280-8 and -L3-1280-3; KaTeX renders, tables and answer boxes intact, no overflow, units upright.
+- Data tables (L2-05..07, L3-04) show the same cells as fi; decimal point in en.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish (English) 5 · accessibility 4

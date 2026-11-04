@@ -1,13 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 4d2a784dd52636cc
+CONTENT-HASH: 195a5843a6dcc8e0
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 
 ## Blocking
 (none)
 
+## Fixed
+(none needed: the fi-easy answers equal the correct choices and the text is plain selkosuomi)
+
 ## Polish
-- Neljä tehtävätekstiä (L1-02, L1-03, L2-01, L2-03) on jätetty yleiskielisiksi; ne ovat jo lyhyitä ja selkeitä.
+(none)
 
 ## Checked
-- Tasot 5–4–3 kuten suomeksi; tilanne ensin, kysymys viimeisenä.
-- Korjattu: pitkät Järkevyys-perustelut pilkottu lyhyiksi virkkeiksi, ja kuvaajatehtävien "kaksi merkitsevää numeroa, joilla arvot voi lukea" sanottu selvemmin (Vastaus annetaan kahdella merkitsevällä numerolla, koska …).
-- Kaapaukset contact-6 (taso 3 avattuna).
+- Distractor feedback in L1-06/L1-07 keeps the Finnish diagnosis (vertical spring, always valid, compression only; double force, no change, square root).
+- Task statements keep the same sub-parts a), b), c) and the same asked quantity in the answer box as fi.
+- Error-finding tasks L2-06 and L2-07 keep the student claim in quotes with the same wording of the mistake (whole length used as extension; stiffer spring "stores more").
+- Plain Finnish: short sentences, terms explained (harmoninen voima, jousivakio, hystereesi in brackets), no English left.
+- Solutions keep the Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness structure.

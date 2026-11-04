@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: e70a67d376126bfe
+CONTENT-HASH: 85c71ef6d47abaf5
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+- exercises.json L2-07: "Kaksi satelliittia vie ympyräradalle" was ungrammatical; now "viedään ympyräradalle".
 
 ## Polish
 (none)
 
 ## Checked
-- Captures opened: open-exercises-1280-5 (tasks 4–5, answer box, staged solution).
-- Decimal comma, KaTeX powers of ten and units, solution blocks fit; no figure in the set; check_layout 345 px OK.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+- Screenshots of the new tasks checked (exercise captures 1280 px): data tables, LaTeX, decimals and solution layout render cleanly; no overflow.
+- Table captions and column headers translated; units and powers of ten in LaTeX as in fi.
+- No Finnish left in en (grep); in fi-easy no English left.
+- Letters, hyphenation and punctuation consistent with neighbouring tasks.

@@ -207,7 +207,7 @@
     {
       "id": "fy5-6-L2-07",
       "level": 2,
-      "text": "Kaksi satelliittia vie ympyräradalle $800\\,\\text{km}$:n korkeudelle Maan pinnasta. Niiden massat ovat $500\\,\\text{kg}$ ja $2000\\,\\text{kg}$. Oppilas päättelee: ”Raskaampaan satelliittiin vaikuttaa nelinkertainen gravitaatiovoima, joten se kiertää nopeammin.”\n\nMaan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$.\n\na) Laske kumpaankin satelliittiin vaikuttava gravitaatiovoima.\n\nb) Laske raskaamman satelliitin ratanopeus.\n\nc) Selitä, missä oppilaan päättelyssä on virhe.\n\nVastauskenttään tulee kohdan b) tulos kilometreinä sekunnissa.",
+      "text": "Kaksi satelliittia viedään ympyräradalle $800\\,\\text{km}$:n korkeudelle Maan pinnasta. Niiden massat ovat $500\\,\\text{kg}$ ja $2000\\,\\text{kg}$. Oppilas päättelee: ”Raskaampaan satelliittiin vaikuttaa nelinkertainen gravitaatiovoima, joten se kiertää nopeammin.”\n\nMaan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$.\n\na) Laske kumpaankin satelliittiin vaikuttava gravitaatiovoima.\n\nb) Laske raskaamman satelliitin ratanopeus.\n\nc) Selitä, missä oppilaan päättelyssä on virhe.\n\nVastauskenttään tulee kohdan b) tulos kilometreinä sekunnissa.",
       "kind": [
         "error",
         "reasoning"

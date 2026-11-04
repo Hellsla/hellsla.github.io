@@ -1,13 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: e70a67d376126bfe
+CONTENT-HASH: 85c71ef6d47abaf5
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+- exercises.json L2-07: "Kaksi satelliittia vie ympyräradalle" was ungrammatical; now "viedään ympyräradalle".
 
 ## Polish
 (none)
 
 ## Checked
-- exercises.json: task texts as in the Finnish (already plain), answers, units and tolerances identical.
-- solutions.md: every solution has the same steps and numbers as the Finnish; only sentences split (diff read line by line); results 7,44 km/s, 12,0 h, 0,224 m/s², 1,02 km/s, 1,63 km/s, 9570 km, 3,36 km/s, 1,68 km/s, 650 N, 1,70·10⁴ km, +1,13 m/s, 84,4 min unchanged and recomputed.
-- Hash at the start and end e70a67d376126bfe.
+- All 20 tasks (8 new: L1-06..08, L2-05..07, L3-04..05) compared with content/fi by script: ids, levels, kinds, answers, units, tolerances, correct flags, choices, data cells and every number in texts and feedback are identical (decimal point in en JSON; comma in fi-easy LaTeX as in fi).
+- solutions.md: all numbers match fi section by section (only older L2-03 lists two numbers in a different order, values equal); formulas unchanged.
+- Re-derived: Io 17.3 km/s, Earth 29.79 km/s, Jupiter 1.90e27 kg, satellite B 7.25 km/s, 7.45 km/s for both satellites (3874 N, 15496 N), star 1.59e30 kg with d correct T 15.7 d, 12.9 h.
+- Language: plain Finnish (selkosuomi): short sentences, terms as in fi.
+- check_i18n.py fi-easy: 0 errors.
