@@ -93,7 +93,7 @@
         },
         {
           "text": "A power plant whose power varies with the weather, such as a wind turbine.",
-          "feedback": "The power of a weather-dependent plant varies, but it cannot be decided: wind and sun do not obey consumption. With regulating power the power is changed on purpose, which is why weather-dependent production needs regulating power alongside it."
+          "feedback": "The power of a weather-dependent plant varies, but it cannot be chosen: wind and sun do not obey consumption. With regulating power the power is changed on purpose, which is why weather-dependent production needs regulating power alongside it."
         }
       ]
     },
@@ -231,7 +231,7 @@
       "answer": 1.6,
       "unit": "million t",
       "tolerance": 0.02,
-      "text": "The table gives, as example figures (an example data set), the life-cycle emissions of four production methods, that is, the amount of carbon dioxide produced over the whole life cycle per kilowatt-hour of electricity produced, and the lifetime of the plant. An example city uses $2.0\\,\\text{TWh}$ of electricity per year.\n\na) How many million tonnes of carbon dioxide per year would be saved, as the part of the life-cycle emissions that belongs to the year's electricity production, if the city's electricity were produced with wind power instead of coal? Use the emission factors and convert $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nb) Which production method would be the best choice on the basis of emissions and lifetime? What does the table not tell, even though the choice would have to be made?",
+      "text": "The table gives, as example figures (an example data set), the life-cycle emissions of four production methods, that is, the amount of carbon dioxide produced over the whole life cycle per kilowatt-hour of electricity produced, and the lifetime of the plant. An example city uses $2.0\\,\\text{TWh}$ of electricity per year.\n\na) Take the part of the life-cycle emissions that belongs to one year's electricity production. How many million tonnes of carbon dioxide per year would be saved if the city's electricity were produced with wind power instead of coal? Use the emission factors and convert $1\\,\\text{t} = 10^{6}\\,\\text{g}$.\n\nb) Which production method would be the best choice on the basis of emissions and lifetime? What does the table not tell, even though the choice would have to be made?",
       "data": {
         "caption": "Life-cycle emissions and lifetime of production methods",
         "columns": [
