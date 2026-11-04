@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c37db221e87fd6f8
+CONTENT-HASH: 3e3f4a33c6a16ade
 
-Pedagogy review, round 2, of the English translation of fy9-moderni.
+Pedagogy review, round 3, of the English translation of fy9-moderni.
 
-Round 1 had no Blocking pedagogy finding; its Polish 1 (subscripts y/a vs the FY8 chapters' u/l) is fixed in
-unit.md and in the concept map, so a student moving between this unit and the linked FY8 chapters now sees the same
-notation. Structure, feedback, hints, rubrics (observable criteria, points unchanged, 95 in all) and teacher.md are
-as judged in round 1.
+The round-2 cross-reference to the visual Blocking finding is resolved: the concept map that teacher.md walks
+through "one branch at a time" now has English branch headings ("the photon and the atom", "the nucleus",
+"radiation and people"), matching the unit's section structure. Structure, feedback, hints, rubrics (95 points in
+all) and teacher.md are unchanged since round 2.
 
 ## Blocking
-None in the pedagogy scope. (The Finnish branch headings of the concept map, which the teacher plan walks through
-"one branch at a time", remain a Blocking finding of the visual & editorial review.)
+None.
 
 ## Polish
 None.

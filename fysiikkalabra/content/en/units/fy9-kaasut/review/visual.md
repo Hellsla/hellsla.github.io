@@ -1,23 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: d049914a3ec3f36c
+VERDICT: PASS
+CONTENT-HASH: 97b2ac678f09a7f6
 
-Visual and editorial review (round 2) of the en translation of fy9-kaasut. I built preview/en/fy9-kaasut.html with `python3 scripts/build.py fy9-kaasut` and checked it in Playwright at 390 and 1280 px.
+Visual and editorial review (round 3) of the en translation of fy9-kaasut. I built preview/en/fy9-kaasut.html with `python3 scripts/build.py fy9-kaasut` and checked it in Playwright at 390 and 1280 px with every details element open. I captured and looked at all 10 figures at both widths.
 
 ## Blocking
-1. [Critical, not fixed since round 1] In the concept map `kartta`, the branch headings are still Finnish (**neste**, **kaasu**, **lämpövoimakone**). The capture /tmp/claude-0/tk/fy9-kaasut/kartta-390.png shows them. Everything else in the figure is English: "pressure", "at depth", "ideal gas law", "work done by gas", $W_\text{g}$. The figure's description (Liquid / Gas / Heat engine) does not match what is drawn.
-   - Cause: figures.py line 120 uses `\textbf{head}`, and figlib translates only `\text{}`, `\mathrm{}` and `\textsf{}`.
-   - This cannot be fixed in content/en. If unit.md is edited by hand, check_i18n fails with "figures differ from figures.py" (I tried this and reverted it).
-   - Fix (shared issue, lessons/units/fy9-kaasut/figures.py): `r"\textbf{\text{" + head + "}}"`. Then add `"neste": "liquid"`, `"kaasu": "gas"` and `"lämpövoimakone": "heat engine"` to the en figures.json, and redraw. The box is 328 px wide, so "heat engine" fits.
+None.
 
 ## Polish
-2. [Minor] $P_\text{l}$ (s2 c): a Finnish-derived subscript. It is defined in the text, so it is optional: $P_\text{h}$.
+None open.
 
-## Round-1 findings
-- 2 ($W_\text{k}$ and $\eta_\text{kok}$): fixed in every en file and in the figure.
-- Polish items "work done by gas", s1, s2 c and exit ticket 1.a: all fixed. The longer label "work done by gas" fits its row at 390 px without overlapping the formula.
+## Round-2 findings
+1. Concept map `kartta` with Finnish branch headings: fixed. It now shows **liquid**, **gas** and **heat engine**. "heat engine" fits its box at 390 px, and the rows ("work done by gas", "ideal gas law", and so on) do not overlap the formulas.
+2. $P_\text{l}$ (s2 c): fixed. It is now $P_\text{h}$, defined in words in the Formula line.
 
 ## Checked
-- scrollWidth equals the viewport at 390 and 1280. There are 0 KaTeX errors.
-- check_i18n: en 0 errors.
-- Decimal points are unchanged from round 1.
-- In the page text, the only Finnish words are the three headings above.
+- Figures: the hero illustration, the p–T graph (A, B), the concept map, the tyre bar chart, heat-engine energy flows (hot source T1, engine, colder environment T2), the p–V graph, the syringe V–θ graph, the extrapolation graph ("extreme lines: −265 and −294 °C"), and both force diagrams ("pad"). All labels are English, they use decimal points, and they are readable at 390 px.
+- scrollWidth equals the viewport at 390 and 1280 px. There are 0 KaTeX errors.
+- check_i18n: en 0 errors. units.py check and practice.py check: fy9-kaasut OK.

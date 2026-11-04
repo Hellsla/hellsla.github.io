@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d049914a3ec3f36c
+CONTENT-HASH: 97b2ac678f09a7f6
 
-Science review (round 2) of the en translation of fy9-kaasut. Source: content/fi/units/fy9-kaasut/.
+Science review (round 3) of the en translation of fy9-kaasut. Source: content/fi/units/fy9-kaasut/.
 
 ## Blocking
 None.
 
 ## Polish
-1. The concept map `kartta` still draws its three branch headings in Finnish (neste, kaasu, lämpövoimakone). This does not change any physics, but it is Blocking for pedagogy and visual. See visual.md 1.
-2. $P_\text{l}$ (recovered heat power, s2 c) uses a Finnish-derived subscript. It is defined in the text, so this is optional: $P_\text{h}$ would read better.
+None open.
 
-## Round-1 findings
-- Polish 1 ($W_\text{k}$ and $\eta_\text{kok}$): fixed. $W_\text{g}$ is now used in unit.md, inquiry.json and solutions.md, and `"k": "g"` in figures.json redraws the concept-map formula. $\eta_\text{tot}$ is used in solutions.md and tasks.json. Both now match fy3-11 and fy3-15. No `W_\text{k}` or `eta_\text{kok}` is left.
-- Polish 2 (exit-ticket 1.a): fixed. The new wording "The heat delivered indoors is the electrical energy plus the heat moved from outside" is correct.
+## Round-2 findings
+1. Concept-map headings in Finnish: fixed. figlib.translate() now also handles \textbf{}, and the en concept map draws **liquid**, **gas** and **heat engine** from figures.json.
+2. $P_\text{l}$ (s2 c): fixed in this round. Renamed to $P_\text{h}$ in solutions.md (Formula and Substitution lines). The Formula line now defines both symbols in words: "$P_2 = P_0 - P_\text{s}$ (heat power given away), $P_\text{h} = 0.75\,P_2$ (recovered heat power)". No new formula was added, and the numbers are unchanged (232.9 kW, η_tot = 0.840, about 84 %).
 
 ## Checked
-- `check_i18n.py`: en 0 errors, fi-easy 0 errors. No answer, unit, tolerance, correct option, formula or figure differs from the source.
-- I read the round-2 diff in full: symbol renames, the s1 text ("lifted $1.20\,\text{m}$ slowly at a constant speed"), s2 c ("it does not increase the electricity obtained"), the exit-ticket sentence, and the "work done by gas" label. Every edit keeps the physics and the numbers of the source.
-- The `"k": "g"` mapping in figures.json affects only a stand-alone `\text{k}`. It does not touch kPa, kJ or kW.
-- All numbers from round 1 (tyre, mol amounts, hatch, pump, balloon, ΔU = 750 J, s1–s6) are unchanged.
+- check_i18n: en 0 errors, fi-easy 0 errors. units.py check and practice.py check: fy9-kaasut OK (6 tasks, 95 points) in fi, en and fi-easy.
+- The redrawn figures keep every number and formula of the source: tyre bars 331 / 286 kPa, Δp = 230 / 185, p0; heat engine Q1 = 1000 J, W = 350 J, Q2 = 650 J; syringe graph k ≈ 0.135 ml/°C, (0; 37.7), (80; 48.5); θ0 ≈ −279 °C, extreme lines −265 and −294 °C; T = θ + 273.15 K.
+- Decimal points everywhere. No regression in answers, tolerances or formulas.

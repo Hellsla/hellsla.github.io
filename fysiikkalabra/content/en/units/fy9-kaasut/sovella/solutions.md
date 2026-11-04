@@ -65,9 +65,9 @@
 **Given:** $P_0 = 485.1\,\text{kW}$, $P_\text{s} = 174.6\,\text{kW}$, $75\,\%$ of the heat recovered
 **Find:** why not all of the fuel power is obtained as electricity, and the total efficiency $\eta_\text{tot}$
 **Principle:** The engine is a heat engine. It can turn heat into work only if it gives part of the heat to a colder environment: with the exhaust gases and the cooling water (chapter *Work done by a gas and the heat engine*). Energy is conserved, so the heat power given away is the difference between the fuel power and the electrical power. In the total efficiency the electricity and the recovered heat are counted as useful.
-**Formula:** $P_2 = P_0 - P_\text{s}$, $P_\text{l} = 0.75\,P_2$ and $\eta_\text{tot} = \dfrac{P_\text{s} + P_\text{l}}{P_0}$
+**Formula:** $P_2 = P_0 - P_\text{s}$ (heat power given away), $P_\text{h} = 0.75\,P_2$ (recovered heat power) and $\eta_\text{tot} = \dfrac{P_\text{s} + P_\text{h}}{P_0}$
 **Conversions:** Not needed: the powers are in kilowatts, and $75\,\% = 0.75$.
-**Substitution:** $P_2 = 485.1\,\text{kW} - 174.6\,\text{kW} = 310.5\,\text{kW}$, $P_\text{l} = 0.75 \cdot 310.5\,\text{kW} = 232.9\,\text{kW}$ and $\eta_\text{tot} = \dfrac{174.6\,\text{kW} + 232.9\,\text{kW}}{485.1\,\text{kW}} = 0.840$
+**Substitution:** $P_2 = 485.1\,\text{kW} - 174.6\,\text{kW} = 310.5\,\text{kW}$, $P_\text{h} = 0.75 \cdot 310.5\,\text{kW} = 232.9\,\text{kW}$ and $\eta_\text{tot} = \dfrac{174.6\,\text{kW} + 232.9\,\text{kW}}{485.1\,\text{kW}} = 0.840$
 **Answer:** $\eta_\text{tot} \approx 84\,\%$, two significant figures like the efficiencies $36\,\%$ and $75\,\%$. Even a frictionless engine must give heat to a colder place, so the share of electricity stays well below $100\,\%$. The total efficiency is high because the heat given away is used for heating; it does not increase the electricity obtained.
 **Reasonableness:** What goes to waste is $485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \approx 78\,\text{kW}$, that is, $16\,\%$, the same as $25\,\%$ of the heat power. The result is of the same order of magnitude as the $85$–$90\,\%$ of combined heat and power plants.
 
