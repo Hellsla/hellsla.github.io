@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8cec3736a94d62df
+CONTENT-HASH: a11a1c2fc6509c1e
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json koe-1 intro / simulaatio howto — rajakulma $\alpha_\text{r}$ esiintyy lukemassa, taulukossa ja kokeessa ennen kuin teoria määrittelee sen; lisää koe-1:n alkuun: "Rajakulma $\alpha_\text{r}$ on tulokulma, jolla taitekulma olisi $90^\circ$." (kerrattu, ei korjattu).
-- inquiry.json ennuste-kulma — vain oikealla vaihtoehdolla on raja; lisää väärä vaihtoehto, jossa raja on väärään suuntaan ("vuotaa, kun laser on lähes akselin suuntainen").
-- simulaation liukusäädin "Tulokulma kuidun päätypintaan θ" vs. tehtävien "laserin kulma θ"; nimeä "Laserin kulma θ (tulokulma päätypintaan)".
-- lesson.md Timantin säihke — "alaviistopinnat" on outo yhdyssana; kirjoita "alapuolen vinot pinnat".
-- inquiry.json koe-1 intro — "Kirjaa ainakin kulmat 0°, 10°, 14° ja 15°" nimeää rajan paikan; kirjoita "0°, 10° ja 20°".
+- Optional only: Kokonaisheijastuminen-selitys on täysi ja ehdot (n1>n2, tulokulma > rajakulma) mukana; rajakulmassa "Se on olemassa vain, kun n1 > n2" on hyvä. Ei muutoksia.
 
 ## Checked
-- Round-2 fixes: graph labels "vesi" below-left of its dot, "lasi" above-right, "timantti" clear at 390 px.
-- Same learning path as the passed Finnish; sentences short; terms explained at first use; no English in the capture.
-- Predictions before evidence, experiments refute both predictions, feedback repairs the misconception; one-lesson workload.
-- Worked example staged; exit ticket tests the core idea.
-- Hash 8cec3736a94d62df at start and end.
+- Delta review: only the new "Luvun tärkeät käsitteet" box (meta.json key_concepts) judged; unchanged lesson content, which passed earlier, not re-audited.
+- Box renders at 390 px (own capture of section.kc from preview/fi-easy/fy7-12.html): no horizontal scroll, math (λ, n, sin, °) readable, terms bold, one item per block.
+- Voluntary lead text present; no note fields or assessment.
+- Every explanation is 1-2 plain sentences, 25 words or fewer; terms match the lesson and glossary.
+- Physics conditions present (absoluuttinen lämpötila, normaali, tyhjiö, n1 > n2 for rajakulma and kokonaisheijastus, optisesti tiheämpi).
+- No misconception introduced; box does not give away inquiry or exit-ticket answers beyond the lesson's own text.
+- Note: the stock shots/top-390 capture does not show the box (it sits below the hero); I captured it separately.

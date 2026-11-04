@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 66e7f19edf0f7d0b
+CONTENT-HASH: 256a124a3b047c31
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] inquiry.json simulaatio howto: "Lukemista näet kulmat…" -> "Lukemissa näet kulmat…" (carried over; not re-verified this round).
-- [Minor] Worked example "Sijoitus" (example-390-1): aligned lines are centred rather than aligned at "="; readable, no overflow at 340 px.
+- [Minor] Luvun tärkeät käsitteet box — on a phone the box sits below the first screen (top-390 and intro-1280 do not show it), so it is easy to miss — no action; owner's placement decision.
 
 ## Checked
-- Hash at start and end: 66e7f19edf0f7d0b (fi-easy; fresh captures made with screenshot.py --lang fi-easy).
-- theory-1280-1: the three-angle list now renders as a real bulleted list after "Kulmia on kolme:" (previous Major resolved); interface figure (fig-7) beside it: labels, angles, ray colour fine, no clipping.
-- theory-1280-3: window-reflection paragraph reads correctly, no duplicated clause; apparent-depth figure legible.
-- example-390-1, sim-1280.
-- check_layout.py fy7-10 --width 340 --lang fi-easy: no overflow reported.
-- Not opened individually this round: remaining figures, exercise levels, exit ticket (unchanged since the previous round).
+- Delta (only meta.json key_concepts changed). The review script's captures do not include the box, so I took element captures of #kasitteet at 390 and 1280 px from the built preview page: fy7-10-kc-390.png and fy7-10-kc-1280.png (in the scratchpad kcshots folder).
+- Box layout: heading, "Vapaaehtoinen" tag, lead, term in bold, explanation; no clipping, scrollWidth 390 at 390 px (no horizontal overflow); 1280 px two-column grid reads well.
+- KaTeX in the box renders correctly (inline maths, units, indices, case endings after maths set with colon).
+- Terms and wording read as plain Finnish, consistent with the lesson's vocabulary; sentences short.
+- Surrounding page (top-390, intro-1280) from this build unchanged.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

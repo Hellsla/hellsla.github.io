@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 55477a465de9a3d6
+CONTENT-HASH: f2fded5d7d8d5960
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json ennuste-kaari, oikea vaihtoehto (avoinna kierrokselta 1) — "kääntyneenä noin $42^\circ$" on harhaanjohtava (säde kääntyy noin $138^\circ$) — "ja lähtee noin $42^\circ$:n kulmassa vastapisteen suunnasta".
-- lesson.md "Taitekerroin riippuu aallonpituudesta" — lause "Aallonpituus kertoo valon värin" poistettiin, joten yhteys aallonpituudesta väriin näkyy nyt vain taulukossa (väri | λ). Sopii, mutta puoli virkettä ("punainen on pitkä aallonpituus, violetti lyhyt") auttaisi.
+- Optional only: Sateenkaari-kohta: "Pääkaaressa" on lesson.md:197-200:n termi, mutta boxissa sitä ei ole selitetty; "Pääkaari on kirkkain, yksi heijastus pisarassa" -lyhennys auttaisi, mutta ei ole välttämätön. Dispersio-lause "Vedessä ja lasissa" on oikein (näkyvän valon alue).
 
 ## Checked
-- Diff arvioitu asiayhteydessä: "noin" nopeuksien $198\,000$ ja $196\,000\,\text{km/s}$ edessä on oikein (pyöristetyt arvot); seuraava kappale selittää, että väri riippuu taajuudesta eikä muutu rajapinnassa.
-- Virhekäsitys-osio ("punainen taittuu eniten, koska aallonpituus on pisin") täsmää tekstiin.
-- Muu oppitunti ennallaan kierrokselta 1; polku, työmäärä ja tarkistukset kunnossa.
+- Delta review: only the new "Luvun tärkeät käsitteet" box (meta.json key_concepts) judged; unchanged lesson content, which passed earlier, not re-audited.
+- Box renders at 390 px (own capture of section.kc from preview/fi-easy/fy7-11.html): no horizontal scroll, math (λ, n, sin, °) readable, terms bold, one item per block.
+- Voluntary lead text present; no note fields or assessment.
+- Every explanation is 1-2 plain sentences, 25 words or fewer; terms match the lesson and glossary.
+- Physics conditions present (absoluuttinen lämpötila, normaali, tyhjiö, n1 > n2 for rajakulma and kokonaisheijastus, optisesti tiheämpi).
+- No misconception introduced; box does not give away inquiry or exit-ticket answers beyond the lesson's own text.
+- Note: the stock shots/top-390 capture does not show the box (it sits below the hero); I captured it separately.

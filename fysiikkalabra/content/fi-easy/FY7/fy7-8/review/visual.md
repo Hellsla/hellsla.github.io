@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e28b3518d8fce919
+CONTENT-HASH: b7cca4eb5d885eb4
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] lesson.md Yleinen virhekäsitys — "Siirtojännite on johtimien ja maan tai johtimien keskinäinen jännite" is slightly heavy for easy Finnish; consider "Siirtojännite on johtimen ja maan välinen jännite."
-- [Minor] sim readout (sim-390, lab-1280) — subscript "perille" in $P_\text{perille}$ is small at 390 px; decimal comma accepted by owner decision.
+- [Minor] key_concepts muuntosuhde — the thin gap before 'U_1 : U_2' in 'suhde $U_1 : U_2$' is slightly tight at 390 px; cosmetic.
 
 ## Checked
-- Contact sheets 1-2; transformer (fig-5), grid (fig-7), loss graph (fig-9: axes, units, three marked points, parameters stated), scene (fig-11) at 390 px; hero via sheet.
-- sim-390, lab-1280, example-390 via sheet, theory-1280-1, open-ennusta-1280-1, open-tarkista-1280-1, open-exit-1280.
-- Source text read in full: easy-Finnish short sentences, glossary (ensiökäämi, toisiokäämi, muuntosuhde, suurjännite) consistent, notation LaTeX, colons for division.
+- Delta (round 2): the new "Luvun tärkeät käsitteet" box (key_concepts in meta.json), rendered at 390 px (own capture of section.kc, no horizontal overflow: scrollWidth 390), plus top-390 (opening, layout survived). Rewritten round-1 entries checked for exactness, plain Finnish and consistency with the lesson/glossary terms in the packet. Other content unchanged and not re-audited.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

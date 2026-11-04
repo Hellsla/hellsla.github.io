@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 865115e70b0483fe
+CONTENT-HASH: a7f0b1259d20213e
 
 ## Blocking
+None.
 
 ## Polish
-(round-1 polish items not re-judged here.)
+- The box lead says "Voit kirjoittaa niiden merkitykset sinulle vahvimmalla kielelläsi", but the rendered box (390 px) has no note field or other place to write; the CSS comment promises one. Shared template/string, not a lesson matter; consider "Voit kirjoittaa ... vihkoosi" or adding the field.
 
 ## Checked
-- Delta 1, hook: "Kaikki verkon voimalaitokset tuottavat jännitettä samalla taajuudella" replaces "pyörivät samassa tahdissa"; clearer and correct (grid frequency, not rotor speed, since the rotor turns once per 5 s). The hook question is unaffected.
-- Delta 2, Ydinajatus: "Kun käämi pyörii tasaisesti, vuo vaihtelee siis koko ajan arvojen $BA$ ja $-BA$ välillä" is grammatical, drops the odd "tasaisesti ... vaihtelee" clash, and states the premise (uniform rotation) before the conclusion.
-- Neither change touches numbers, ids, correct flags or figures; predictions, koe-1, example and exit ticket stand as passed.
-- Hash unchanged at end of review.
+Round 2, delta: only the "Luvun tärkeät käsitteet" box (meta.json key_concepts), rendered and read at 390 px (no horizontal overflow, terms and explanations legible, math renders). Round-1 fixes verified for this chapter's entries: conditions now present and consistent with the lesson text (homogeeninen kenttä, tasainen pyöriminen, umpinainen kappale, ideaalinen muuntaja, sama johto, sama teho where relevant). Plain Finnish, short sentences, terms match glossary and lesson; box sits before stage 1 and is marked optional so it does not add to the hour's workload. Unchanged lesson content not re-audited.

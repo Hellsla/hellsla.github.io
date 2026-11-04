@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: da8b5996f6fae213
+CONTENT-HASH: 256a124a3b047c31
 
 ## Blocking
 
 ## Polish
-- lesson.md:150 — "järven pinta peilaa iltaisin rannan puut": "iltaisin" can read as the cause; the cause is the grazing view far across the lake ("kun pintaa katsoo loivasti kauas"). Carried from earlier rounds, C if left.
+- meta.json:29 (key_concepts, heijastuslaki) — the glossary and lesson.md:344 also say the incident ray, reflected ray and normal lie in one plane; the box omits it. C at this level; add if the word limit allows.
+- lesson.md:150 (carried) — "iltaisin" can read as the cause of the lake reflection; the cause is the grazing view.
 
 ## Checked
-- Delta: lesson.md:152 duplicated clause removed; the paragraph now reads once "Huoneesta lasiin osuva valo heijastuu osittain takaisin." No numbers or symbols changed.
-- Mechanism still right: the room's reflection is visible because little light comes from outside, while a few per cent of the room light reflects from the glass (consistent with the ~4 % per surface at near-normal incidence stated at line 148).
-- Energy split statement keeps its condition (no absorption).
-- No other occurrence of the sentence in the lesson files; the rest is as approved in round 2 (recomputations there unchanged).
-- check_layout.py fy7-10 --width 340: fi, en and fi-easy OK, no formula overflow.
-- Hash da8b5996f6fae213 at start and end.
+- Re-review of the new "Luvun tärkeät käsitteet" box; rest unchanged since the PASS (hash 256a124a3b047c31 at start and end).
+- Heijastuminen: "osa" of the light returns into the same material — true (total internal reflection is the next chapter); smooth surface gives an image.
+- Heijastuslaki: $\beta = \alpha_1$, angles from the normal, normal defined — same symbols as lesson.md:190–192.
+- Taittuminen: condition "vinosti" stated and cause = change of light speed — matches glossary.
+- Taitekerroin: $n = c : v$, water 1,33 — same as glossary.
+- Snellin laki: $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$ with angles from the normal; "optisesti tiheämpään kohti normaalia" correct.
+- check_i18n.py fi-easy: 0 errors. Box at 390 px: no overflow, formulas render.

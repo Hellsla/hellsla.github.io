@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e28b3518d8fce919
+CONTENT-HASH: b7cca4eb5d885eb4
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- meta.json:30 — The box says "Ihanteellisessa muuntajassa", but the lesson (lesson.md:147, 155, 215, 302, 349) and the glossary say "Ideaalisessa". The physics is the same. Optional fix for consistent wording: "Ideaalisessa muuntajassa".
+- meta.json:34 — siirtohäviö is defined as "Teho" here but as "Energia" in the glossary (E_häviö). The box's own statement about current squared concerns power. Optional fix: "Energia, joka muuttuu … Samassa johdossa häviöteho kasvaa virran neliön mukana."
+- meta.json:38 — "Hyvin suuri jännite": the glossary gives a limit of over 1 kV. Optional.
 
 ## Checked
-- Every number in lesson.md, inquiry.json, exit-ticket.json and figures.json is the same as in the Finnish version. The correct flags, reveal, initial, locked and vary values and the measure keys are identical.
-- Transformer: shared changing flux, the same voltage per turn, U₁:U₂ = N₁:N₂ = I₂:I₁ for an ideal transformer, and DC gives no output except a pulse when switched on or off. All correct.
-- Loss model: P_h = RI² with I = P/U, and why U²/R does not apply (the line drop is RI). Correct.
-- Recomputed: loss graph and koe-1 (R = 6,0 Ω: 24 / 6,0 / 1,5 MW; 0,75 %); worked example N₁ = 1980, I₁ = 81,8 A, 9,0 MW; transfer task 720 kW and the mistake values; tarkistus-2 0,261 A and 95,83; Etsi virhe 2,7·10¹⁰ W and RI = 3,0 kV; exit ticket 11,5 V and 1/9.
-- Predictions and check-1: exactly one option is correct, and the feedback of each option is right.
-- The koe-1 setup isolates U, with P and l locked.
+- Round-2 delta: meta.json key_concepts. The rest of the lesson is as passed.
+- muuntosuhde: the round-1 A and B are fixed. It now reads "N₁ : N₂", matching lesson.md:219 and the glossary. The equality with U₁ : U₂ is now limited to the ideal transformer, which is correct.
+- siirtohäviö: the round-1 condition "Samassa johdossa" is now stated, so P = RI² with fixed R applies. Correct.
+- muuntaja, suurjännite: unchanged and correct. For the same transmitted power the current and the RI² losses are smaller.
+- Rendering at 390 px (own capture of #kasitteet): the box is 358 px wide, KaTeX N₁ : N₂ and U₁ : U₂ render inline, scrollWidth is 390, and nothing overflows.
+- The hash was identical at the start and at the end.

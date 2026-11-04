@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d9e27d166227cc10
+CONTENT-HASH: 053680a79e7e951f
 
 ## Blocking
 
 ## Polish
-- lesson.md "Kaksi heijastusta" — "kerros, joka on yhtä ohut kuin valon aallonpituus" is inexact; better "jonka paksuus on samaa suuruusluokkaa kuin valon aallonpituus".
-- inquiry.json siirto prompt — "Kalvo on ohuin mahdollinen kalvo, joka ei ole lähes nollapaksuinen." is clumsy for easy Finnish; better "Kalvo on ohuin kalvo, jonka paksuus ei ole lähes nolla."
-- lesson.md Miksi kalvo on värikäs — "kalvo näyttää purppuralta" and later "kiiltää purppuraisena" vary; pick one.
+- key_concepts "matkaero" — "matkaero on 2nd" is the optical path difference; the lesson does the same ("kun aallonpituus mitataan ilmassa"), so consistent. Optional: say "optinen matkaero" only if the lesson does.
+- key_concepts "heijastuksenestopinnoite" — λ is not said to be the wavelength in air; add "ilmassa" as in "matkaero".
 
 ## Checked
-- Same learning path, predictions, experiments, example and checks as the passed Finnish version; sentences short, terms (ohut kalvo, heijastuksenestopinnoite, interferenssi) as in the glossary.
-- Decimal comma and units follow the Finnish form in text; case after number+unit correct ($550\,\text{nm}$:n valoa, $100\,\text{nm}$:n kerroksella).
-- Feedback repairs each misconception; no answer disclosed before the student commits.
-- Experiments: names, values and table headers Finnish and consistent (koe-3 capture at 390 px: nothing clipped).
-- Worked example stages and numbers match the en version.
-- Exit ticket tests the core idea.
+Box at 390 px: fits, readable, formulas render. Conditions complete: soap film in air, normal incidence, only the upper reflection inverts, thin-film black, coating index between air and glass. Matches lesson text. Hash unchanged at end.

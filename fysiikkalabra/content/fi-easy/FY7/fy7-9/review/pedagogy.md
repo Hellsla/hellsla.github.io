@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a6523e3a3a557875
+CONTENT-HASH: 1773d993ddec2ba6
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json (simulaatio) — sim box carries four closed boxes (Käyttöohje, Mallin oletukset, Laskennan selitys plus the model/explanation box); the 390 px sim capture lists the first and third as near-duplicates. Likely shared template; check against the Finnish version.
-- lesson.md "Säteilyn vaikutukset" — one paragraph holds heating, ionisation and X-ray imaging; splitting it would ease phone reading.
+- Optional only: Aallonpituus-selitys ("Matka, jonka aalto etenee yhden jaksonajan aikana") sopii oppituntiin, mutta box ei sano, että c = fλ pätee aallolle tyhjiössä; se sanotaan jo ("Tyhjiössä"), joten ei muutosta. Wienin lain lause on yhden rivin tiivistys; "kääntäen verrannollinen" on S2-sana, jonka lause "suurempi lämpötila, lyhyempi aallonpituus" avaisi (valinnainen lisäys, rajana 25 sanaa).
 
 ## Checked
-- Same path as the passed Finnish version: recap, two predictions that experiments can refute, sim, two experiments (min 3 and 2), conclusion, theory, reflect; the opening question stays open until the student commits.
-- Wrong-option feedback repairs the misconception (colour change, cold bodies do radiate, no red glow at 300 K); correct options name the evidence from the model values.
-- Easy Finnish reads well: short sentences, glossary terms (sähkömagneettinen säteily, spektri, aallonpituus, mustan kappaleen säteily, Wienin siirtymälaki) as in the glossary; case after number+unit correct (3000 K:sta, 800 K:ssa, 2430 °C:n).
-- Worked example staged one step per stage with Järkevyys; Etsi virhe targets the Celsius mistake.
-- Tarkista: concept check with misconception distractors, calculation with mistake values, explain with observable criteria.
-- Figures (wave, antenna, spectrum, curves) legible at 390 px; curves figure described with peak values, not the answer.
-- Sim at 390 px: controls, readout and "Huippu ... infrapuna-alueella" understandable; decimal comma accepted by owner.
-- Exit ticket tests order of wavelengths and the 1/T scaling.
-- Workload one lesson (optional recap, reflect, error item, third check).
+- Delta review: only the new "Luvun tärkeät käsitteet" box (meta.json key_concepts) judged; unchanged lesson content, which passed earlier, not re-audited.
+- Box renders at 390 px (own capture of section.kc from preview/fi-easy/fy7-9.html): no horizontal scroll, math (λ, n, sin, °) readable, terms bold, one item per block.
+- Voluntary lead text present; no note fields or assessment.
+- Every explanation is 1-2 plain sentences, 25 words or fewer; terms match the lesson and glossary.
+- Physics conditions present (absoluuttinen lämpötila, normaali, tyhjiö, n1 > n2 for rajakulma and kokonaisheijastus, optisesti tiheämpi).
+- No misconception introduced; box does not give away inquiry or exit-ticket answers beyond the lesson's own text.
+- Note: the stock shots/top-390 capture does not show the box (it sits below the hero); I captured it separately.

@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a6523e3a3a557875
+CONTENT-HASH: 1773d993ddec2ba6
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json Koe 1 / Koe 2 — "Aallonpituusalue on lyhyet aallonpituudet" is awkward — "Aallonpituusalueeksi on valittu lyhyet aallonpituudet".
-- [Minor] Simulation canvas — "infrapuna" and the readout use decimal comma, as the owner allows; no action.
+- [Minor] Luvun tärkeät käsitteet box — on a phone the box sits below the first screen (top-390 and intro-1280 do not show it), so it is easy to miss — no action; owner's placement decision.
 
 ## Checked
-- contact-1; top-390, intro-1280, lab-1280-1, theory-1280-2 (table and spectrum figure)
-- figures fig-9 (spectrum) and fig-11 (curves) at 390; fig-5 and fig-7 and hero on contact-1
-- check_layout.py fy7-9 --width 340: OK
-- Read the whole fi-easy lesson, inquiry and exit-ticket text: short sentences, glossary terms consistent, case endings after maths correct ("$800\,\text{K}$:n"), figure labels Finnish (radioaallot, mikroaallot, röntgen, näkyvä valo, antenni).
+- Delta (only meta.json key_concepts changed). The review script's captures do not include the box, so I took element captures of #kasitteet at 390 and 1280 px from the built preview page: fy7-9-kc-390.png and fy7-9-kc-1280.png (in the scratchpad kcshots folder).
+- Box layout: heading, "Vapaaehtoinen" tag, lead, term in bold, explanation; no clipping, scrollWidth 390 at 390 px (no horizontal overflow); 1280 px two-column grid reads well.
+- KaTeX in the box renders correctly (inline maths, units, indices, case endings after maths set with colon).
+- Terms and wording read as plain Finnish, consistent with the lesson's vocabulary; sentences short.
+- Surrounding page (top-390, intro-1280) from this build unchanged.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

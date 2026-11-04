@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 55477a465de9a3d6
+CONTENT-HASH: f2fded5d7d8d5960
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Experiment tables (exp-koe-1/2, 390 and 1280) — headers hyphenate ("tulokul-ma", "ero" column cut at 1280 in the card and needs sideways scroll); shared layout rule.
-- [Minor] Key idea citation line — "lämpötilassa $20\,{}^\circ\text{C}$: M. Daimon ja A. Masumura" — the colon before a citation is odd; use "(M. Daimon…)" or a full stop.
+- [Minor] Luvun tärkeät käsitteet box — on a phone the box sits below the first screen (top-390 and intro-1280 do not show it), so it is easy to miss — no action; owner's placement decision.
 
 ## Checked
-- Contact sheets 1 and 3; figures fig-5, 7, 9, 11, 13, 15 at 390 (Finnish labels: punainen, violetti, vastapiste, auringonvalo, heijastuu, kirkas kaari; decimal comma on axes and angles); top-390, sim-390 with its Finnish readout and plain legend; example and Apply stages via contact sheet 3; open-tarkista-1280-1.
-- Note: the lesson hash changed from ba18536e6231f7bf to 55477a465de9a3d6 during the review (one sentence in Key idea, "noin" added before the glass speeds); captures were retaken and the current text re-read.
-- Text read in full: short sentences, glossary terms (dispersio, taitekerroin, poikkeamakulma, vastapiste, spektri, sivukaari) consistent, one voice, numbers with case endings (`$42^\circ$:n`) correct, decimal comma throughout.
+- Delta (only meta.json key_concepts changed). The review script's captures do not include the box, so I took element captures of #kasitteet at 390 and 1280 px from the built preview page: fy7-11-kc-390.png and fy7-11-kc-1280.png (in the scratchpad kcshots folder).
+- Box layout: heading, "Vapaaehtoinen" tag, lead, term in bold, explanation; no clipping, scrollWidth 390 at 390 px (no horizontal overflow); 1280 px two-column grid reads well.
+- KaTeX in the box renders correctly (inline maths, units, indices, case endings after maths set with colon).
+- Terms and wording read as plain Finnish, consistent with the lesson's vocabulary; sentences short.
+- Surrounding page (top-390, intro-1280) from this build unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

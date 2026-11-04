@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2ec8cb5f6cf6e091
+CONTENT-HASH: 4cf9afbd4be15c5e
 
 ## Blocking
-(none)
 
 ## Polish
-- inquiry.json:371 (siirto title) — "kuvaaja järven rannalla" reads as "graph by the lake" in a physics lesson ("kuvaaja" = graph) — "Sovella uuteen tilanteeseen: valokuvaaja järven rannalla" (and "Luontokuvaaja" in the prompt is fine).
-- exit-ticket.json:3 (Q1) — lasin Brewsterin kulma 56,3 astetta on jo kappaleessa "Brewsterin laki", joten kysymys testaa hakua; käytä esim. akryylia 1,49.
-- inquiry.json:325 (pohdi, optional) — the opening glare question is closed only in optional items; consider making it required. Same as fi.
+- key_concepts "Brewsterin laki" — n1 and n2 are not defined and "Brewsterin kulmassa" is circular. Better: "Kun valo tulee eristeen pinnalle kulmassa $\alpha_\text{B}$, heijastunut valo on täysin polarisoitunutta pinnan suuntaan. Tällöin $\tan\alpha_\text{B} = n_2 : n_1$, missä $n_1$ on aine, josta valo tulee." Length limit of 25 words may need trimming.
+- "polarisaattori" — "puolet intensiteetistä" holds for an ideal polarizer and unpolarised light: stated, good.
 
 ## Checked
-- Same path and activity set as the passed Finnish version and the en one; predictions refutable, feedback repairs each misconception; sims show a decimal comma (owner decision).
-- Finnish is fi-easy level: short sentences, new terms glossed in place (absorboi eli imee, komponentti, intensiteetti = teho pinta-alaa kohti, eriste).
-- Names, values and measure labels are Finnish, as intended; case after number+unit correct (15 astetta:n välein, 45 astetta:n kulmaan, 1,60 m:n korkeudella).
-- Worked example staged; "mittaus" fit figure readable at 390 px; tolerance and mistakes fit.
-- Glossary terms used consistently (polarisaattori, analysaattori, läpäisysuunta, Brewsterin kulma).
-- Hash unchanged at end.
+Box at 390 px fits, readable. Malus (ideal polarizer, θ defined), polaroid glasses (vertical transmission axis, glare horizontal) correct and consistent with lesson. Hash unchanged at end.

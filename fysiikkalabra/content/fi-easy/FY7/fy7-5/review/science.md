@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f57e6d152f7efa45
+CONTENT-HASH: c245c1fc5b1be4ba
 
 ## Blocking
 
 ## Polish
-- lesson.md:199 — "napadynamossa magneetti pyörii käämien keskellä": in a real hub dynamo the magnet ring turns round a fixed central coil. The Finnish source says the same, and the induction point is unaffected — optionally "magneetti pyörii käämin ympärillä", in fi too.
+- meta.json:34 — The induktiojännite entry says "käämin päiden välille", which leaves out the moving rod (e = vBl in the lesson and the glossary). This is a fair simplification for the box. Optional fix: "käämin tai liikkuvan johtimen päiden välille".
 
 ## Checked
-- Translation against the Finnish lesson: every number, correct option, numeric answer, mistake value and experiment initial/locked set is identical (compared by script).
-- Φ = BA with its condition (homogeneous field perpendicular to the plane); the weber; e = −N ΔΦ/Δt with ΔΦ per turn, turns in series, the minus sign only giving the direction (Lenz deferred to fy7-6).
-- e = vBl derivation: F_m = evB along the rod, charge separation, eE = evB, U = El; the condition (v, rod and B mutually perpendicular) is stated. Rod figure: for v to the right and B into the page, the force on electrons points down, the lower end is negative and E points down. All correct.
-- Kaava graph: N = 10, B = 0,20 T, l = v·1 s: Φmax 2,0 mWb, entry 0,5–1,5 s, exit 2,5–3,5 s, e = −20/+20 mV. Correct signs and timing.
-- Worked example 0,20 V (one turn 0,80 mV), symbolic first, sig-fig reason sound.
-- inquiry: the predictions (0 mV inside; voltage doubles with v, entry time halves) and all feedback numbers; koe-1/koe-2 isolate v and N, and simState e_tulo/t_tulo/e_sisalla at the default run give −20,0 mV, 1,00 s and 0 mV; e·Δt = −20 mV·s = −N ΔΦ.
-- virhe (0,72 V; 72 V; 0,36 V), siirto 4,8 V with mistakes 0,008 / 0,0048 / 4800, tarkistus-2 0,50 V with mistakes 50 / 1,0: all recomputed.
-- Exit ticket: 20 mWb; e = 0 at a flux maximum.
-- sim.js: overlap model, e = ∓NBlv while entering and leaving, readouts taken at mid-entry and mid-inside, no current/braking (stated in the model box).
-- Scope: no self-induction; Lenz only named.
+- Round-2 delta: meta.json key_concepts. The rest of the lesson is as passed.
+- magneettivuo: the round-1 B is fixed. It now says "riippuu kentästä, silmukan pinta-alasta ja silmukan asennosta kenttään nähden". This agrees with the lesson's flux figure and the glossary (Φ = BA only when a homogeneous field is perpendicular to the surface), and it does not claim Φ = BA in general.
+- induktio, induktiolaki: still correct. The law is stated qualitatively, consistent with e = −N ΔΦ/Δt, and claims no false proportionality.
+- induktiojännite: drives current only in a closed circuit. Correct.
+- Rendering at 390 px (own Playwright capture of #kasitteet): the box is 358 px wide with a 16 px gutter, scrollWidth is 390, and nothing overflows. Screenshot captures are current (stamp reused).
+- The hash was identical at the start and at the end.

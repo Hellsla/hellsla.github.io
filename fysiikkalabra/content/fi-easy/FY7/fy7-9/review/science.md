@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a6523e3a3a557875
+CONTENT-HASH: 1773d993ddec2ba6
 
 ## Blocking
 
 ## Polish
-- inquiry.json:90 (ennuste-huone, "Kivi ei säteile lainkaan" option) — "Kivi säteilee vain infrapunaa." says "only infrared", stronger than the lesson's "lähes pelkästään infrapunaa" and the correct option's "pääosin"; write "Kivi säteilee pääosin infrapunaa."
+- meta.json:42 (key_concepts, Wienin siirtymälaki) — the box writes $\lambda_\text{max} T = b$ without saying what $b$ is; add "$b$ on vakio $2{,}898 \cdot 10^{-3}\,\text{m·K}$" as in the glossary and the Kaava section (word limit allows it).
+- inquiry.json:90 (carried) — "Kivi säteilee vain infrapunaa." → "pääosin infrapunaa", as the lesson says.
 
 ## Checked
-- Every number in lesson.md, inquiry.json, exit ticket, exercises and solutions identical to the passed fi version (number-by-number diff); JSON structure, correct flags, numeric answers, mistakes, initial/locked/vary identical.
-- Recomputed: Wien examples 9,66/9,44/3,62 µm, 502 nm ↔ 5773 K, 900 °C → 2,47 µm, siirto 1072,08 nm with its mistakes, lava 1380 K → 1106,85 °C with its mistakes, curve peaks 483/580/724 nm at ≈100/40/13.
-- Shortened sentences keep every condition: black body only, absolute temperature, Wien likimain for real bodies, accelerated charge as source, model values in feedback and conclusion.
-- Each prediction/check has exactly one correct option; distractor feedback physics unchanged.
-- Sim strings for fi-easy (lang/fi-easy.json) same physics as fi; sim canvas is Finnish here, so the en "infrapuna" label issue does not apply.
-- Exit ticket answers correct.
+- Re-review of the new "Luvun tärkeät käsitteet" box; rest of the lesson unchanged since the PASS (hash 1773d993ddec2ba6 at start and end).
+- Sähkömagneettinen säteily: mutually generating changing fields, propagates in vacuum, source an accelerated charge — matches glossary and Ydinajatus.
+- Aallonpituus: distance travelled in one period; $c = f\lambda$ stated for vacuum, so "higher f → shorter λ" carries its condition.
+- Spektri: distribution by wavelength and the EM spectrum ordered radio → gamma, same as glossary.
+- Musta kappale: ideal absorber of all incident radiation, continuous spectrum depending only on temperature, not material — same as glossary.
+- Wien: inverse proportionality to absolute temperature, kelvins stated; limited to the black body.
+- check_i18n.py fi-easy: 0 errors. Box at 390 px (own Playwright capture): no overflow (scrollWidth 390), formulas render, terms in glossary form.

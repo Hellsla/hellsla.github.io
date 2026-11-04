@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 865115e70b0483fe
+CONTENT-HASH: a7f0b1259d20213e
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] lesson.md, Kaava / "Tässä $b$ on käämin leveys" and Tulos — intermediate values $6{,}786\,\text{V}$ and $4{,}798\,\text{V}$ carry four significant figures before rounding to two; acceptable as guard digits (unchanged from the passed report).
-- [Minor] derive figure (fig-10-390) — label $I$ beside the lower cross is not explained in the text or description (unchanged, same as fi).
+- [Minor] key_concepts generaattori — 'muuttaa liike-energiaa sähköenergiaksi' is exact; none needed otherwise.
 
 ## Checked
-- Delta (two wording changes): stage-herata-390 (hook now "tuottavat jännitettä samalla taajuudella": reads fluently, $50\,\text{Hz}$ upright, nothing clipped) and theory-1280-1 (flux paragraph "Kun käämi pyörii tasaisesti, vuo vaihtelee siis koko ajan arvojen $BA$ ja $-BA$ välillä": maths renders correctly, generator figure beside it intact, layout survived).
-- Rest of the page unchanged since the PASS; no figure, formula or number touched by the diff.
+- Delta (round 2): the new "Luvun tärkeät käsitteet" box (key_concepts in meta.json), rendered at 390 px (own capture of section.kc, no horizontal overflow: scrollWidth 390), plus top-390 (opening, layout survived). Rewritten round-1 entries checked for exactness, plain Finnish and consistency with the lesson/glossary terms in the packet. Other content unchanged and not re-audited.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

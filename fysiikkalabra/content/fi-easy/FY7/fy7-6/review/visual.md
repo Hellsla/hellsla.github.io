@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 33e8d13e3f616991
+CONTENT-HASH: 27cf17a23b3e6185
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fig-9 (core, 390 and 1280) — the label "B paperiin" nearly touches the tops of the laminations on the right; leave a little more space.
-- [Minor] fig-5 (ring) — the pole letters "N" and "S" on the ring sit above the green B_ind arrow with little space; the signs of the currents, B_ind and F all check out against Lenz's law. Optional: a small gap.
-- [Minor] Lesson text, Kaava section — "Loput muuttuu pyörrevirtojen kautta putken sisäenergiaksi" is colloquial; "Loppu energia muuttuu…" or "Loput muuttuvat…" reads more like a textbook.
-- [Minor] fig-11 (energy) — the white "0,2 mJ" tag floats over the bar area of the copper tube; its dashed leader is clear, but it covers part of the grid line. Optional.
+- [Minor] key_concepts induktiojarru — 'ilman kosketusta' does not name the magnetic field; fine for a vocabulary box.
 
 ## Checked
-- contact sheets via figures: fig-2, 5, 7, 9, 11, 13 (390); theory-1280-1 to 5; sim-390, sim-1280
-- lab-1280-1, exp-koe-1-390-1, exp-koe-2-390-2, example-390-2
-- open-ennusta-1280-1; open-tarkista-1280-1/2/3; open-exit-1280
-- Figure physics presentation: ring currents (cross/dot), B_ind and force arrows, tube forces F_j and G in different colours, v blue, B_ind green, F red
+- Delta (round 2): the new "Luvun tärkeät käsitteet" box (key_concepts in meta.json), rendered at 390 px (own capture of section.kc, no horizontal overflow: scrollWidth 390), plus top-390 (opening, layout survived). Rewritten round-1 entries checked for exactness, plain Finnish and consistency with the lesson/glossary terms in the packet. Other content unchanged and not re-audited.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

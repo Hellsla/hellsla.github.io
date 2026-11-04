@@ -27,7 +27,7 @@
     },
     {
       "term": "magneettivuo",
-      "explain": "Suure, joka kertoo, kuinka paljon magneettikenttää kulkee silmukan läpi. Se riippuu kentästä ja silmukan pinta-alasta."
+      "explain": "Suure, joka kertoo, kuinka paljon magneettikenttää kulkee silmukan läpi. Se riippuu kentästä, silmukan pinta-alasta ja silmukan asennosta kenttään nähden."
     },
     {
       "term": "induktiojännite",

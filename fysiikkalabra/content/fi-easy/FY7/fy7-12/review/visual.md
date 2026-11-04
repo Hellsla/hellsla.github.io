@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8cec3736a94d62df
+CONTENT-HASH: a11a1c2fc6509c1e
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] "Exit ticket" heading on the page — English template heading (carried across Finnish pages).
-- [Minor] fig-5/7/9/11 at 390 px — figure text about 9–10 px; enlarge when next edited.
-- [Minor] Exercise level list at 390 px — "4 tehtävää" wraps below the level 2 title.
+- [Minor] Luvun tärkeät käsitteet box — on a phone the box sits below the first screen (top-390 and intro-1280 do not show it), so it is easy to miss — no action; owner's placement decision.
 
 ## Checked
-- contact-1..3, top-390, theory-1280-2 and -3, sim in contact-1, example and inquiry stages in contacts.
-- fig-5 water, fig-7 fibre, fig-9 diamond (enlarged): Finnish labels (ydin, kuori, suojapäällyste, kokonaisheijastuminen) consistent with text and simple vocabulary.
-- fig-11 graph (enlarged): vesi below-left, lasi above-right, timantti above dot; decimal comma on ticks.
-- Prose: short sentences, glossary terms consistent (rajakulma, kokonaisheijastuminen, valokuitu, ydin/kuori), units as LaTeX with Finnish case endings ("15 km:n").
-- Formula block and worked example: aligned rows, no overflow in captures.
+- Delta (only meta.json key_concepts changed). The review script's captures do not include the box, so I took element captures of #kasitteet at 390 and 1280 px from the built preview page: fy7-12-kc-390.png and fy7-12-kc-1280.png (in the scratchpad kcshots folder).
+- Box layout: heading, "Vapaaehtoinen" tag, lead, term in bold, explanation; no clipping, scrollWidth 390 at 390 px (no horizontal overflow); 1280 px two-column grid reads well.
+- KaTeX in the box renders correctly (inline maths, units, indices, case endings after maths set with colon).
+- Terms and wording read as plain Finnish, consistent with the lesson's vocabulary; sentences short.
+- Surrounding page (top-390, intro-1280) from this build unchanged.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

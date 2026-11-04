@@ -27,11 +27,11 @@
     },
     {
       "term": "muuntosuhde",
-      "explain": "Toisio- ja ensiökäämin kierroslukujen suhde. Se kertoo, kuinka monikertaiseksi muuntaja muuttaa jännitteen."
+      "explain": "Ensiö- ja toisiokäämin kierroslukujen suhde $N_1 : N_2$. Ihanteellisessa muuntajassa se on sama kuin jännitteiden suhde $U_1 : U_2$."
     },
     {
       "term": "siirtohäviö",
-      "explain": "Teho, joka muuttuu johdoissa sisäenergiaksi, kun sähköä siirretään. Se kasvaa virran neliön mukana."
+      "explain": "Teho, joka muuttuu johdoissa sisäenergiaksi, kun sähköä siirretään. Samassa johdossa se kasvaa virran neliön mukana."
     },
     {
       "term": "suurjännite",

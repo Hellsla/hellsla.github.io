@@ -23,11 +23,11 @@
   "key_concepts": [
     {
       "term": "generaattori",
-      "explain": "Laite, jossa käämi pyörii magneettikentässä. Se muuttaa liike-energiaa sähköenergiaksi."
+      "explain": "Laite, jossa käämi pyörii magneettikentässä tai magneetti pyörii käämin lähellä. Se muuttaa liike-energiaa sähköenergiaksi."
     },
     {
       "term": "vaihtojännite",
-      "explain": "Jännite, joka vaihtaa suuntaansa säännöllisesti. Tasaisesti pyörivä generaattori tuottaa sinimuotoisen vaihtojännitteen."
+      "explain": "Jännite, joka vaihtaa suuntaansa säännöllisesti. Kun käämi pyörii tasaisesti homogeenisessa magneettikentässä, syntyy sinimuotoinen vaihtojännite."
     },
     {
       "term": "vaihtovirta",

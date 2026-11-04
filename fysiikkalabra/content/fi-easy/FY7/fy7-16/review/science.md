@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d8c5f62dda0ab6fa
+CONTENT-HASH: fe84213bdf68234e
 
 ## Blocking
 
 ## Polish
-- content/fi-easy/FY7/fy7-16/lesson.md:57 — the paragraph split leaves "Siksi laturin ja puhelimen väli on vain muutamia millimetrejä" right after the sentences about how the figure is drawn, so "Siksi" no longer points at the steep fall of flux (line 55) — move that sentence to the end of the previous paragraph.
-- content/fi-easy/FY7/fy7-16/inquiry.json:63 — "kun etäisyys tulee käämin säteen suuruiseksi": the model's half-value is at 8.8 mm, under half the 20 mm radius — "jo käämin sädettä pienemmillä etäisyyksillä" fits the numbers (same in fi).
+- meta.json key_concepts "vaimennus" — A = aL uses a without defining it (the vaimennuskerroin, dB/km). lesson.md:252 defines it. Optionally add "a on vaimennuskerroin".
 
 ## Checked
-- Every number in lesson.md, inquiry.json, exit-ticket.json and the figures is the same as in the passed fi version (scripted diff); figure geometry identical to fi.
-- inquiry.json differs from fi only in 14 fields, all sentence splits; no change of physics, correct options or numbers.
-- Added explanations correct: pyörrevirta, tasasuuntaus, oikosuljettu kierros, huippuarvo, vaimennuskerroin.
-- Coupling model recomputed independently (Neumann integral): 4.404 / 1.957 / 0.869 / 0.445 V, share 19.74 %, half-value 8.8 mm, R1 optimum at 20 mm 35.4 mm, at 3 mm 20.7 mm, field lines 6 and 1.
-- Ravenscraft 47.3 % and mistakes; fibre halving 16.7 km, 1.58 % / 100 km, 4.9 µs/km; worked example 0.0502 mW; check-2 25.1 %; siirto 0.775 mT and its mistakes; exit ticket 20 dB.
-- Exactly one correct option per choice item; distractor feedback physics right.
-- Sim capture (1280 px): Finnish labels, decimal comma, readouts match the recomputation.
+- Re-review limited to the new key_concepts box. The rest passed earlier and is unchanged.
+- langaton lataus: AC gives a changing flux, which induces a voltage in the receiver coil, and flux and voltage fall steeply with distance. Consistent with the Tiivistelmä at lesson.md:370.
+- induktioliesi: eddy currents heat the steel or cast-iron base and not the glass. Consistent with :156 and :365 (the glass only warms from the pan).
+- pyörrevirta: a changing flux drives a current inside the metal, and the resistance turns electrical energy into internal energy. Right.
+- vaimennus: A = 10 dB · lg(P₀ : P), and A = aL with its condition (the fibre is uniform along its whole length) stated, as at :252.
+- desibeli: 10 dB gives a tenth of the power, and 3 dB gives 10^-0,3 = 0,501, about half. Right.
+- check_i18n.py fi-easy: 0 errors. Box at 390 px: formulas render and there is no horizontal scroll.
+- The hash was the same at the start and at the end.
