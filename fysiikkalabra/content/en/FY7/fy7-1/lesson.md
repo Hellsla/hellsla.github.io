@@ -278,6 +278,8 @@ The field is visualised with **field lines**. The direction of a field line at e
   <circle cx="300" cy="300" r="2.2" fill="#1f2933"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/horseshoe-magnet-filings.webp" alt="A horseshoe magnet with iron filings clinging in dense arcs and tufts at and around its poles."><figcaption>Iron filings around a horseshoe magnet. Each grain becomes magnetised and lines up with the field, so the filings trace out the field lines. Most filings gather at the poles, where the field is strongest.</figcaption></figure>
+
 ### The Earth's magnetic field
 The Earth has a magnetic field that resembles the field of a bar magnet. It arises from the motions of molten iron in the Earth's outer core and the electric currents associated with them. The north end of a compass needle turns towards geographic north. Because unlike poles attract each other, the Earth's magnetic **south pole** $\text{S}$ is near the geographic North Pole, and the magnetic north pole $\text{N}$ is near the geographic South Pole.
 
@@ -312,6 +314,8 @@ The magnetic poles are not exactly at the geographic poles, and they wander slow
   <path d="M353,82.5 L361,76 L364.5,79 L360.5,88 Z" fill="#d0e6fb" stroke="#1f2933" stroke-width="1.2" stroke-linejoin="round"/>
   <circle cx="357" cy="85" r="2.2" fill="#1f2933"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/aurora-saana.webp" alt="Green northern lights in a starry sky above Saana fell in Kilpisjärvi."><figcaption>Northern lights above Saana fell in Kilpisjärvi, Finland. Earth's magnetic field guides charged particles from the Sun towards the polar regions, which is why auroras are often seen in Lapland.</figcaption></figure>
 
 ## Formula: Combining magnetic fields
 The strength and direction of a magnetic field are described by the vector quantity **magnetic flux density** $\overline{B}$. Its direction is the direction of the field, and its magnitude $B$ tells how strong the field is. The unit of magnetic flux density is the **tesla** $\text{T}$. The definition of the tesla is based on the magnetic force on a moving charge, and it is introduced in the chapter *A charged particle in electric and magnetic fields*. The tesla is a large unit, so everyday fields are often given in millitesla, $1\,\text{mT} = 10^{-3}\,\text{T}$, or in microtesla, $1\,\mu\text{T} = 10^{-6}\,\text{T}$.

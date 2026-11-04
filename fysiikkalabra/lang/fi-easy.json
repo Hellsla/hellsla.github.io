@@ -113,7 +113,7 @@
     "local_status_note_building": "Oppitunteja tulee sivulle sitä mukaa kuin ne valmistuvat. Laajuutta ja arviointia ei ole vielä päätetty.",
     "local_status_ready": "Valmis",
     "home_h1": "Tutki. Ymmärrä. Käytä.",
-    "home_sub": "Lukion fysiikka, LOPS 2019. Ennusta, tutki simulaatiolla tai aineistolla, selitä itse.",
+    "home_sub": "Ennusta, tutki simulaatiolla tai aineistolla, selitä itse.",
     "study": "Näin opiskelet",
     "about": "Sivustosta",
     "about_lead": "Mistä Ruukkilabra sai alkunsa, miksi siinä on kolme kielimuotoa, miten tekoälyä käytetään ja kuka sen tekee.",
@@ -148,6 +148,7 @@
     "chapter_up": "Moduulin sivulle",
     "chapter_course": "Kaikki moduulin {{course}} luvut",
     "choose": "Valitse vaihtoehto.",
+    "exercise_word": "Tehtävä",
     "exercise_path": "Kaikkia tehtäviä ei tarvitse tehdä. Aloita <strong>ydintehtävistä</strong>. Ne harjoittavat luvun pääasioita. Tasojen 1 ja 2 muut tehtävät ovat lisäharjoitusta. Tason 3 tehtävät ovat haastavaa soveltamista.",
     "core_exercise": "Ydintehtävä",
     "level_kind_1": "perusharjoitus",
@@ -348,6 +349,7 @@
     "ra_voice": "Ääni",
     "ra_female": "Nainen",
     "ra_male": "Mies",
+    "ra_better": "Parempi ääni (lataa 145 MB kerran)",
     "ra_loading": "Puheääni latautuu: {{p}} %. Lataus tehdään vain ensimmäisellä kerralla.",
     "ra_fallback": "Puheääni ei latautunut. Siksi selain lukee laitteen omalla äänellä.",
     "stage_done": "tehty",
@@ -2446,6 +2448,7 @@
     "lead": "Näissä tehtävissä kukaan ei kerro, mitä kaavaa käytetään. Päätä itse, mitkä ilmiöt ja mallit kuuluvat tilanteeseen. Ratkaise tehtävä paperille. Perustele ratkaisusi niin kuin ylioppilaskokeessa.",
     "howto": "Ratkaise tehtävä ensin itse paperille tai tietokoneelle. Saat käyttää laskinta, taulukkokirjaa ja kuvaajaohjelmaa. Kirjoita näkyviin perustelut, kaavat, sijoitukset ja vastaukset yksiköineen.",
     "points": "{{n}} p",
+    "task_n": "tehtävä {{n}}",
     "task_points": {
       "one": "{{n}} piste",
       "other": "{{n}} pistettä"
@@ -2661,6 +2664,12 @@
         "one": "Luvun kaikki kortit →",
         "other": "Luvun kaikki {{n}} korttia →"
       },
+      "row_left": {
+        "one": "Jäljellä on vielä {{n}} kortti",
+        "other": "Jäljellä on vielä {{n}} korttia"
+      },
+      "row_done": "Kävit kaikki kortit läpi.",
+      "row_restart": "Aloita alusta",
       "deck_count": {
         "one": "Kertauspakassasi on {{n}} kortti",
         "other": "Kertauspakassasi on {{n}} korttia"

@@ -1,0 +1,14 @@
+{
+ "id": "fy9-lampo",
+ "course": "FY9",
+ "chapter": 2,
+ "order": 2,
+ "title": "Lämpö ja olomuodon muutokset",
+ "description": "Kerrataan FY3-moduulin lämpötila, sisäenergia, lämpömäärä, olomuodon muutokset, lämpötasapaino jään ja veden seoksessa, lämpölaajeneminen sekä lämmön siirtyminen ja energiatase ja ratkaistaan niistä ylioppilaskokeen tyylisiä tehtäviä.",
+ "kind": "review",
+ "minutes": 75,
+ "subjects": [
+  "physics"
+ ],
+ "sources": []
+}

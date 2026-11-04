@@ -178,6 +178,8 @@ The circuit of the figure has two loops, one through the resistor $R_2$ and the 
 ### A bird on a wire
 The bird's feet are at two points of the same wire, only a few centimetres apart. The bird is a branch parallel to the piece of wire between its feet, whose resistance is negligible. Therefore the voltage between the feet is only millivolts, and by Ohm's law a negligible current flows through the bird. By the current law almost all the current thus continues along the wire. The potential of the bird relative to the ground is high, but danger would arise only if it touched another wire or a pylon at the same time, since their potential is different. For a person the situation is not comparable: a high-voltage line must not be approached, because an electric arc can form even without contact.
 
+<figure class="unit-photo"><img src="pics/fy6/swallows-power-line.webp" alt="Two barn swallows sit on an overhead line against a blue sky."><figcaption>Barn swallows on an overhead line. The line in the photo is an insulated cable, but birds sit on bare lines in the same way: both feet are at two nearby points of the same conductor.</figcaption></figure>
+
 ## Formula: Kirchhoff's laws
 Kirchhoff's current law for a junction:
 ```latex

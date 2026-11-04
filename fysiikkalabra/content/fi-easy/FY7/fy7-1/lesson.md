@@ -288,6 +288,8 @@ Missä viivat ovat tiheässä, siellä kenttä on voimakas. Kenttäviivat eivät
   <circle cx="300" cy="300" r="2.2" fill="#1f2933"/>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/horseshoe-magnet-filings.webp" alt="Hevosenkenkämagneetti. Sen navoissa ja ympärillä on paljon rautaviilaa kaarina ja tupsuina."><figcaption>Rautaviilaa hevosenkenkämagneetin ympärillä. Jokainen pieni rautahippu kääntyy kentän suuntaan. Siksi viila näyttää, miten kenttäviivat kulkevat. Navoissa viilaa on eniten, koska kenttä on siellä voimakkain.</figcaption></figure>
+
 ### Maan magneettikenttä
 Maapallolla on magneettikenttä, joka muistuttaa sauvamagneetin kenttää. Se syntyy Maan ulkoytimen sulan raudan liikkeistä ja niihin liittyvistä sähkövirroista. Kompassin neulan pohjoispää kääntyy kohti maantieteellistä pohjoista.
 
@@ -324,6 +326,8 @@ Magneettiset navat eivät ole tarkalleen maantieteellisten napojen kohdalla, ja 
   <path d="M353,82.5 L361,76 L364.5,79 L360.5,88 Z" fill="#d0e6fb" stroke="#1f2933" stroke-width="1.2" stroke-linejoin="round"/>
   <circle cx="357" cy="85" r="2.2" fill="#1f2933"/>
 </svg>
+
+<figure class="unit-photo"><img src="pics/fy7/aurora-saana.webp" alt="Vihreät revontulet tähtitaivaalla Saana-tunturin yllä Kilpisjärvellä."><figcaption>Revontulet Saana-tunturin yllä Kilpisjärvellä. Auringosta tulee varattuja hiukkasia. Maan magneettikenttä ohjaa ne napa-alueille. Siksi Lapissa näkyy usein revontulia.</figcaption></figure>
 
 ## Kaava: Magneettikenttien yhteisvaikutus
 Magneettikentän voimakkuutta ja suuntaa kuvaa vektorisuure **magneettivuon tiheys** $\overline{B}$. Vektorilla on suunta ja suuruus. Vektorin suunta on kentän suunta. Sen suuruus $B$ kertoo, kuinka voimakas kenttä on.

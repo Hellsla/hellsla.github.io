@@ -204,6 +204,8 @@ Väärin kytketty mittari muuttaa piiriä paljon. Jos virtamittari kytketään l
   <foreignObject x="402.5" y="313.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sarjaan}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy6/multimeter-breadboard.webp" alt="Punainen ja musta mittapää koskettavat kytkentälevyä, jossa on vastus ja punainen LED."><figcaption>Yleismittarin mittapäät kytkentälevyllä. Kun mittapäät asetetaan piirin kahteen kohtaan, mittari kytkeytyy rinnan näiden kohtien välisen osan kanssa ja mittaa sen jännitettä.</figcaption></figure>
+
 ## Kaava: Yleismittarin virheraja
 
 ### Valmistajan ilmoittama virheraja

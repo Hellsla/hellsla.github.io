@@ -105,6 +105,8 @@ The lowest level $n = 1$ is the **ground state**, with an energy of $-13.6\,\tex
   <foreignObject x="392" y="223.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Balmer (visible)}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy8/hydrogen-discharge-tube.webp" alt="A long glass tube on a black background. The narrow middle part glows pink and the ends bluish."><figcaption>A gas discharge tube containing hydrogen. The electric current excites hydrogen atoms, and when they move to lower energy levels, they emit the light of the hydrogen spectral lines.</figcaption></figure>
+
 ### A photon is created or disappears in a transition
 When an electron moves from a higher level to a lower one, the energy of the atom decreases and the difference leaves as a single photon. Energy is conserved, so the energy of the photon is the difference between the levels. Since there are only certain levels, there are also only certain differences: hydrogen emits only certain wavelengths, and its spectrum is a line spectrum.
 
@@ -179,6 +181,8 @@ In 1913 the Danish physicist Niels Bohr proposed a model in which the electron c
 </svg>
 
 The model was a great step forward. The hydrogen energy levels obtained from it are the same as those measured from the spectral lines, and it explained the size of the hydrogen atom and its ionisation energy. The model has its limits, however. It works only for atoms and ions with a single electron, and it does not tell why some spectral lines are brighter than others. In reality the electron does not have an orbit either: in the chapter *The wave-mechanical model of the atom and orbitals* the position of the electron is described with probabilities. The energy levels remain in the new model, but the orbits are dropped.
+
+<figure class="unit-photo"><img src="pics/fy8/orion-nebula.webp" alt="A nebula in space: reddish, violet and brown clouds with bright stars in the middle."><figcaption>The Orion Nebula imaged by the Hubble Space Telescope. Part of its glow is the red $656\,\text{nm}$ light of hydrogen, emitted when the electron moves from level $n = 3$ to level $n = 2$.</figcaption></figure>
 
 ## Formula: Energy levels of the hydrogen atom and the photon of a transition
 The energy levels of the hydrogen atom are

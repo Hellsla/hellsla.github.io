@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 302f6334f20a1e27
+CONTENT-HASH: 046f1b65485abd37
 
 ## Blocking
+- none
 
 ## Polish
-- [Fixed] inquiry.json exp-1/exp-2 `names`/`values` were still Finnish (paristoja, lamppuja, kytkin, suljettu) and showed in the experiment's Initial state line and readings table; now batteries, lamps, switch, closed; recaptured.
+- [Minor] fy6-1 photo — sits beside the voltage/current tables, a little apart from its Voltage paragraph on a wide screen — none needed (build placement).
 
 ## Checked
-- Contact sheets 1-6, sim at 390 and 1280 px, lab, figures: no overflow, labels fit, maths renders.
-- No Finnish left in figures, sim or headings after the fix below.
-- Experiment boxes (lab-1280, contact-3 #34-36) rechecked after the fix: English.
-- Re-review after the concept fix (internal energy of the filament, transferred as heat): lesson.md, kertaus option and feedbacks, pred-1 feedback, johtopaatos criterion and model match the Finnish in meaning and numbers; no physics changed. Captures current; ennusta opened state rechecked at 1280 px, no overflow.
+batch delta review: opened the 390 px theory captures (stage-selita, whole sequence) and the 1280 theory captures around each new unit-photo; photo is sharp, caption and its $...$ maths render, credit line present, alt text informative, no clipping or horizontal overflow, surrounding figures and formulas intact.
