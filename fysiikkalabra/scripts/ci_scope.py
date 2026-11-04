@@ -27,6 +27,8 @@ A changed file maps to pages, or to nothing, or forces "full". Conservative: any
   kortit/**, site/kortit/**, site/<lang>/kasitteet.html        nothing of its own: the concept cards (concept_cards.py) are
                                                                rendered into the chapters, module and Sovella pages, and
                                                                their site/ diff names them; test_home.py checks the cards
+  kasitekartat/**                                              nothing of its own: the concept maps (conceptmaps.py) are
+                                                               rendered into the module pages (not in the browser steps)
   content/<lang>/courses.json                                  nothing of its own: a module or lesson title is
                                                                rendered into the pages, and their site/ diff names them
   docs/*.md and docs/<dir>/**, *.md outside content/, tests/models/**, news/ newsletter/ tips/   nothing
@@ -43,7 +45,7 @@ from courses import ROOT
 
 LANG = r"[a-z]{2,3}(?:-[a-z]+)?"
 NOTHING = re.compile(rf"(?:docs/(?!visual-baseline\.tsv$).+|(?!content/)[^/]+\.md|(?!content/).+/README\.md|tests/models/.+|(?:news|newsletter|tips)/.+"
-                     rf"|site/(?:sims|pics|kortit)/.+|kortit/.+|content/{LANG}/(?:courses|lukuvinkit)\.json|content/{LANG}/tietoa\.md|site/(?:{LANG}/)?(?:index|FY\d+|lukuvinkit|nain-opiskelet|tietoa|kasitteet|yo-sekoitin)\.html)")
+                     rf"|site/(?:sims|pics|kortit)/.+|kortit/.+|kasitekartat/.+|content/{LANG}/(?:courses|lukuvinkit)\.json|content/{LANG}/tietoa\.md|site/(?:{LANG}/)?(?:index|FY\d+|lukuvinkit|nain-opiskelet|tietoa|kasitteet|yo-sekoitin)\.html)")
 
 
 def git(*a):

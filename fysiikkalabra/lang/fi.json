@@ -2996,5 +2996,13 @@
     "none": "Yksikään tehtävä ei vastaa valintoja. Valitse Näytä kaikki.",
     "course_heading": "YO-sekoitin",
     "course_lead": "Kertaustuntien ja moduulien kaikki ylioppilaskokeen tyyliset tehtävät yhdellä sivulla, suodatettavina ja arvottavina."
+  },
+  "cmap": {
+    "title": "Käsitekartta",
+    "focus": "Kartan kysymys:",
+    "region": "Moduulin käsitekartta",
+    "caption": "Lue kartta ylhäältä alas: kaksi käsitettä ja niiden välinen sana muodostavat väitteen, esimerkiksi ”mittaustulos sisältää aina mittausvirheen”. Katkoviiva yhdistää eri haaroja. Käsitteen laatikko vie luvun alkuun.",
+    "scroll": "Vieritä karttaa sivusuunnassa tai avaa kartta sanoina alta.",
+    "words": "Kartta sanoina"
   }
 }

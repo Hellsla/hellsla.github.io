@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units
+import answers_shown, cardgrid, concept_cards, conceptmaps, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -780,7 +780,9 @@ def build_language(lang):
         body = (notes + f'<div class="mod-head">{module_icons.img(code, 56, "mod-head-icon")}<div><span class="eyebrow">{code} · {credits}</span><h1>{esc(mod["title"])}</h1></div></div>'
                 f'<p class="lead">{esc(T("site.module_question." + code))}</p>'
                 f'<p class="mod-status">{main_label}{(" · " + extra_label) if extra_label else ""}</p>'
-                + f'<h2>{T("site.course_lessons")}</h2>{items}<div class="mod-more">'
+                + f'<h2>{T("site.course_lessons")}</h2>{items}'
+                + conceptmaps.section(code, T, lang, lambda ch: f"{ch}.html" if ch in built_ids else None)   # Käsitekartta (teacher 2026-11-04)
+                + '<div class="mod-more">'
                 + (f'<section><h2>{T("practice.title")}</h2><p>{T("practice.course_lead")}</p><ul class="lessons practice-link"><li class="live">'
                    f'<a href="{practice.page_name(code)}">{T("practice.title")}</a> <span class="count">{practice_built[code]}</span></li></ul></section>' if code in practice_built else "")
                 + concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids))   # Kertauspakkasi: the student's deck of the module (teacher 2026-11-03)

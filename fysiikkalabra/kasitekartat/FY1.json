@@ -1,0 +1,474 @@
+{
+ "module": "FY1",
+ "width": 1200,
+ "height": 910,
+ "focus": {
+  "fi": "Miten fysiikka tuottaa luotettavaa tietoa luonnosta?",
+  "en": "How does physics produce reliable knowledge about nature?",
+  "fi-easy": "Miten fysiikka saa luotettavaa tietoa luonnosta?"
+ },
+ "nodes": [
+  {
+   "id": "fysiikka",
+   "x": 600,
+   "y": 46,
+   "kind": "root",
+   "label": {
+    "fi": "fysiikka",
+    "en": "physics"
+   },
+   "chapter": "fy1-1"
+  },
+  {
+   "id": "ilmiot",
+   "x": 1100,
+   "y": 170,
+   "label": {
+    "fi": "luonnonilmiöt",
+    "en": "natural\nphenomena"
+   },
+   "chapter": "fy1-1"
+  },
+  {
+   "id": "tutkimus",
+   "x": 620,
+   "y": 170,
+   "label": {
+    "fi": "kokeellinen tutkimus",
+    "en": "experimental\nresearch"
+   },
+   "chapter": "fy1-8"
+  },
+  {
+   "id": "malli",
+   "x": 210,
+   "y": 170,
+   "label": {
+    "fi": "malli",
+    "en": "model"
+   },
+   "chapter": "fy1-4"
+  },
+  {
+   "id": "suuruusluokka",
+   "x": 1110,
+   "y": 340,
+   "label": {
+    "fi": "suuruusluokka",
+    "en": "order of\nmagnitude"
+   },
+   "chapter": "fy1-2"
+  },
+  {
+   "id": "kymmenpotenssi",
+   "x": 1105,
+   "y": 460,
+   "label": {
+    "fi": "kymmenpotenssi",
+    "en": "power of ten"
+   },
+   "chapter": "fy1-2"
+  },
+  {
+   "id": "ex-koko",
+   "x": 1105,
+   "y": 590,
+   "kind": "example",
+   "label": {
+    "fi": "atomi $10^{-10}\\,\\text{m}$\ngalaksi $10^{21}\\,\\text{m}$",
+    "en": "atom $10^{-10}\\,\\text{m}$\ngalaxy $10^{21}\\,\\text{m}$"
+   },
+   "chapter": "fy1-1"
+  },
+  {
+   "id": "kysymys",
+   "x": 482,
+   "y": 290,
+   "label": {
+    "fi": "tutkimuskysymys",
+    "en": "research\nquestion"
+   },
+   "chapter": "fy1-8"
+  },
+  {
+   "id": "mittaaminen",
+   "x": 650,
+   "y": 335,
+   "label": {
+    "fi": "mittaaminen",
+    "en": "measurement"
+   },
+   "chapter": "fy1-3"
+  },
+  {
+   "id": "johtopaatos",
+   "x": 935,
+   "y": 300,
+   "label": {
+    "fi": "johtopäätös",
+    "en": "conclusion"
+   },
+   "chapter": "fy1-8"
+  },
+  {
+   "id": "suure",
+   "x": 740,
+   "y": 440,
+   "label": {
+    "fi": "suure",
+    "en": "physical quantity"
+   },
+   "chapter": "fy1-2"
+  },
+  {
+   "id": "tulos",
+   "x": 485,
+   "y": 440,
+   "label": {
+    "fi": "mittaustulos",
+    "en": "measurement\nresult"
+   },
+   "chapter": "fy1-3"
+  },
+  {
+   "id": "lukuarvo",
+   "x": 655,
+   "y": 560,
+   "label": {
+    "fi": "lukuarvo",
+    "en": "numerical\nvalue"
+   },
+   "chapter": "fy1-2"
+  },
+  {
+   "id": "yksikko",
+   "x": 845,
+   "y": 560,
+   "label": {
+    "fi": "yksikkö",
+    "en": "unit"
+   },
+   "chapter": "fy1-2"
+  },
+  {
+   "id": "si",
+   "x": 830,
+   "y": 665,
+   "label": {
+    "fi": "SI-järjestelmä",
+    "en": "SI system"
+   },
+   "chapter": "fy1-2"
+  },
+  {
+   "id": "ex-si",
+   "x": 800,
+   "y": 770,
+   "kind": "example",
+   "label": {
+    "fi": "perusyksiköt $\\text{m},\\ \\text{kg},\\ \\text{s}$\njohdannaisyksiköt $\\text{m/s},\\ \\text{kg/m}^3$",
+    "en": "base units $\\text{m},\\ \\text{kg},\\ \\text{s}$\nderived units $\\text{m/s},\\ \\text{kg/m}^3$"
+   },
+   "chapter": "fy1-2"
+  },
+  {
+   "id": "virhe",
+   "x": 468,
+   "y": 570,
+   "label": {
+    "fi": "mittausvirhe $\\Delta x$",
+    "en": "measurement error $\\Delta x$"
+   },
+   "chapter": "fy1-3"
+  },
+  {
+   "id": "ex-virhe",
+   "x": 410,
+   "y": 830,
+   "kind": "example",
+   "label": {
+    "fi": "satunnainen, systemaattinen\nja karkea virhe",
+    "en": "random, systematic\nand gross error"
+   },
+   "chapter": "fy1-3"
+  },
+  {
+   "id": "luotettavuus",
+   "x": 985,
+   "y": 865,
+   "label": {
+    "fi": "luotettavuus",
+    "en": "reliability"
+   },
+   "chapter": "fy1-8"
+  },
+  {
+   "id": "kuvaaja",
+   "x": 287,
+   "y": 300,
+   "label": {
+    "fi": "graafinen malli",
+    "en": "graphical model"
+   },
+   "chapter": "fy1-4"
+  },
+  {
+   "id": "lineaarinen",
+   "x": 275,
+   "y": 450,
+   "label": {
+    "fi": "lineaarinen malli",
+    "en": "linear model"
+   },
+   "chapter": "fy1-4"
+  },
+  {
+   "id": "kulmakerroin",
+   "x": 275,
+   "y": 580,
+   "label": {
+    "fi": "kulmakerroin",
+    "en": "slope"
+   },
+   "chapter": "fy1-4"
+  },
+  {
+   "id": "ex-kulma",
+   "x": 275,
+   "y": 705,
+   "kind": "example",
+   "label": {
+    "fi": "$x = x_0 + \\textcolor{#1971c2}{v}t$\n$\\textcolor{#1971c2}{v} = \\textcolor{#e8590c}{g}t$, $m = \\rho V$",
+    "en": "$x = x_0 + \\textcolor{#1971c2}{v}t$\n$\\textcolor{#1971c2}{v} = \\textcolor{#e8590c}{g}t$, $m = \\rho V$"
+   },
+   "chapter": "fy1-5"
+  },
+  {
+   "id": "patevyys",
+   "x": 97,
+   "y": 300,
+   "label": {
+    "fi": "pätevyysalue",
+    "en": "range of\nvalidity"
+   },
+   "chapter": "fy1-1"
+  }
+ ],
+ "links": [
+  {
+   "from": "fysiikka",
+   "to": "ilmiot",
+   "label": {
+    "fi": "tutkii",
+    "en": "studies"
+   }
+  },
+  {
+   "from": "fysiikka",
+   "to": "tutkimus",
+   "label": {
+    "fi": "hankkii tietoa",
+    "en": "gains knowledge by"
+   }
+  },
+  {
+   "from": "fysiikka",
+   "to": "malli",
+   "label": {
+    "fi": "selittää ilmiöitä",
+    "en": "explains phenomena with"
+   }
+  },
+  {
+   "from": "ilmiot",
+   "to": "suuruusluokka",
+   "label": {
+    "fi": "ulottuvat moneen",
+    "en": "span many"
+   }
+  },
+  {
+   "from": "suuruusluokka",
+   "to": "kymmenpotenssi",
+   "label": {
+    "fi": "ilmaistaan",
+    "en": "is expressed as a"
+   }
+  },
+  {
+   "from": "kymmenpotenssi",
+   "to": "ex-koko",
+   "label": {
+    "fi": "esim.",
+    "en": "e.g."
+   }
+  },
+  {
+   "from": "tutkimus",
+   "to": "kysymys",
+   "label": {
+    "fi": "alkaa",
+    "en": "starts from a"
+   }
+  },
+  {
+   "from": "tutkimus",
+   "to": "mittaaminen",
+   "label": {
+    "fi": "perustuu",
+    "en": "is based on"
+   }
+  },
+  {
+   "from": "tutkimus",
+   "to": "johtopaatos",
+   "label": {
+    "fi": "päättyy",
+    "en": "ends in a"
+   }
+  },
+  {
+   "from": "mittaaminen",
+   "to": "suure",
+   "label": {
+    "fi": "määrittää",
+    "en": "determines a"
+   }
+  },
+  {
+   "from": "mittaaminen",
+   "to": "tulos",
+   "label": {
+    "fi": "antaa",
+    "en": "gives a"
+   }
+  },
+  {
+   "from": "suure",
+   "to": "lukuarvo",
+   "label": {
+    "fi": "arvossa on",
+    "en": "has a"
+   },
+   "at": 0.62
+  },
+  {
+   "from": "suure",
+   "to": "yksikko",
+   "label": {
+    "fi": "arvossa on",
+    "en": "has a"
+   },
+   "at": 0.62
+  },
+  {
+   "from": "yksikko",
+   "to": "si",
+   "label": {
+    "fi": "kuuluu",
+    "en": "belongs to the"
+   }
+  },
+  {
+   "from": "si",
+   "to": "ex-si",
+   "label": {
+    "fi": "esim.",
+    "en": "e.g."
+   }
+  },
+  {
+   "from": "tulos",
+   "to": "virhe",
+   "label": {
+    "fi": "sisältää aina",
+    "en": "always contains"
+   }
+  },
+  {
+   "from": "virhe",
+   "to": "ex-virhe",
+   "label": {
+    "fi": "lajit",
+    "en": "kinds"
+   },
+   "at": 0.4
+  },
+  {
+   "from": "virhe",
+   "to": "luotettavuus",
+   "label": {
+    "fi": "heikentää",
+    "en": "weakens"
+   },
+   "cross": false,
+   "via": [
+    [
+     600,
+     865
+    ]
+   ],
+   "at": 0.62
+  },
+  {
+   "from": "johtopaatos",
+   "to": "luotettavuus",
+   "label": {
+    "fi": "arvioidaan",
+    "en": "is judged for"
+   },
+   "cross": false
+  },
+  {
+   "from": "tulos",
+   "to": "kuvaaja",
+   "label": {
+    "fi": "esitetään",
+    "en": "is shown in a"
+   },
+   "cross": true,
+   "at": 0.3
+  },
+  {
+   "from": "malli",
+   "to": "kuvaaja",
+   "label": {
+    "fi": "voi olla",
+    "en": "can be a"
+   }
+  },
+  {
+   "from": "kuvaaja",
+   "to": "lineaarinen",
+   "label": {
+    "fi": "suora:",
+    "en": "straight line:"
+   },
+   "at": 0.55
+  },
+  {
+   "from": "lineaarinen",
+   "to": "kulmakerroin",
+   "label": {
+    "fi": "on",
+    "en": "has a"
+   }
+  },
+  {
+   "from": "kulmakerroin",
+   "to": "ex-kulma",
+   "label": {
+    "fi": "kertoo $\\textcolor{#1971c2}{v}$, $\\textcolor{#e8590c}{g}$, $\\rho$",
+    "en": "gives $\\textcolor{#1971c2}{v}$, $\\textcolor{#e8590c}{g}$, $\\rho$"
+   }
+  },
+  {
+   "from": "malli",
+   "to": "patevyys",
+   "label": {
+    "fi": "on",
+    "en": "has a"
+   }
+  }
+ ]
+}

@@ -2996,5 +2996,13 @@
     "none": "No task matches your choices. Choose Show all.",
     "course_heading": "Exam task mixer",
     "course_lead": "All exam-style tasks of the review lessons and the modules on one page, to filter or pick at random."
+  },
+  "cmap": {
+    "title": "Concept map",
+    "focus": "Focus question:",
+    "region": "Concept map of the module",
+    "caption": "Read the map from top to bottom: two concepts and the words between them make a statement, for example “a measurement result always contains a measurement error”. A dashed line joins different branches. A concept’s box takes you to its chapter.",
+    "scroll": "Scroll the map sideways, or open the map in words below.",
+    "words": "The map in words"
   }
 }
