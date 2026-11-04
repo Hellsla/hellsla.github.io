@@ -96,7 +96,7 @@
 ## Key idea
 
 ### Power: how fast electrical energy is transformed
-Power tells how much energy is transformed from one form to another per second (chapter *Power*). In a circuit it can be found from the voltage and the current. Voltage tells how much energy one coulomb of charge gives up as it passes through a component: $12\,\text{V}$ means $12\,\text{J}$ per coulomb (chapter *Circuit, electric current and voltage*). Current tells how many coulombs pass through the component per second. Multiplying the two gives the electrical energy transformed in the component per second, the **electric power** $P = UI$.
+Power tells how much energy is transformed from one form to another per second (chapter *Power: $P = \Delta E/\Delta t$*). In a circuit it can be found from the voltage and the current. Voltage tells how much energy one coulomb of charge gives up as it passes through a component: $12\,\text{V}$ means $12\,\text{J}$ per coulomb (chapter *Circuit, electric current and voltage*). Current tells how many coulombs pass through the component per second. Multiplying the two gives the electrical energy transformed in the component per second, the **electric power** $P = UI$.
 
 In the resistor in the figure, $0.50\,\text{C}$ passes through every second, and each coulomb gives up $12\,\text{J}$ in it. So $6.0\,\text{J}$ of electrical energy is transformed per second, and the power of the resistor is $6.0\,\text{W}$. The unit of power is the watt: $1\,\text{W} = 1\,\text{J/s} = 1\,\text{V} \cdot 1\,\text{A}$.
 

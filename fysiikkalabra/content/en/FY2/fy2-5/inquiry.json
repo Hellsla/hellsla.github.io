@@ -10,7 +10,7 @@
     "Energy is neither created nor destroyed but transformed from one form to another (chapter *Forms of energy and conservation of energy*)",
     "The unit of energy is the joule, and $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$ (chapter *Energy transformations and the joule*)",
     "Efficiency tells you what share of the energy taken in is useful (chapter *Efficiency*)",
-    "Power is energy per unit of time (chapter *Power: $P = \\Delta E/\\Delta t$*)"
+    "Power is energy per unit of time (chapter *Power P = ΔE/Δt*)"
   ],
   "activities": [
     {
@@ -321,7 +321,7 @@
         },
         {
           "text": "How fast the fuel burns and releases its energy.",
-          "feedback": "The burning rate is related to power (chapter *Power: $P = \\Delta E/\\Delta t$*), not to the heat of combustion. The heat of combustion tells you how much energy is released, not how fast."
+          "feedback": "The burning rate is related to power (chapter *Power P = ΔE/Δt*), not to the heat of combustion. The heat of combustion tells you how much energy is released, not how fast."
         }
       ]
     },
