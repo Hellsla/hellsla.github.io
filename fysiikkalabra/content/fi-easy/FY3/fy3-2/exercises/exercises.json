@@ -40,6 +40,74 @@
       "answer": 60,
       "unit": "W",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-06",
+      "level": 1,
+      "text": "Oppilas kantaa repun vaakasuoraan käytävää pitkin tasaisella vauhdilla. Reppua kannatteleva voima osoittaa ylöspäin. Miksi tämä voima ei tee työtä?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Voima osoittaa ylös, mutta liike on sivulle, joten voima ei ole liikkeen suuntainen.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Reppu liikkuu tasaisella vauhdilla, joten mikään voima ei tee sille työtä.",
+          "feedback": "Tasainen vauhti ei estä voimaa tekemästä työtä. Esimerkiksi pulkkaa tasaisella nopeudella vetävä voima tekee työn $W = F s$, kun voima on liikkeen suuntainen. Tässä syy on voiman ja liikkeen suunta, ei tasainen vauhti."
+        },
+        {
+          "text": "Kantava voima on yhtä suuri kuin paino, joten se ei tee työtä.",
+          "feedback": "Voiman suuruus ei ratkaise, tekeekö voima työtä. Hitaassa nostossa nostovoima on yhtä suuri kuin paino, ja se tekee silti työn $W = G h$. Kantamisessa työtä ei tehdä, koska liike on kohtisuorassa voimaan nähden."
+        },
+        {
+          "text": "Voima osoittaa ylös, mutta liike on sivulle, joten voima ei ole liikkeen suuntainen.",
+          "correct": true,
+          "feedback": "Oikein: työ $W = F s$ vaatii, että voima on liikkeen suuntainen. Kantava voima osoittaa ylös, ja reppu liikkuu vaakasuoraan. Voima ei siirrä energiaa reppuun eikä tee työtä."
+        },
+        {
+          "text": "Työtä tehdään vain nostettaessa, joten vaakasuora liike ei vaadi työtä.",
+          "feedback": "Vaakasuora liikekin voi vaatia työtä. Kun mopoa työnnetään, liikkeen suuntainen työntövoima tekee työn $W = F s$. Tärkeää on voiman suunta liikkeeseen nähden. Ei ole väliä, onko liike ylös vai sivulle."
+        }
+      ]
+    },
+    {
+      "id": "fy3-2-L1-07",
+      "level": 1,
+      "text": "Moottori pyörittää kuljetinhihnaa. Se vetää hihnaa tasaisella vauhdilla liikkeen suuntaisella $1{,}2\\,\\text{kN}$:n voimalla. Moottorin teho on $1{,}8\\,\\text{kW}$. Millä nopeudella hihna kulkee?",
+      "answer": 1.5,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-08",
+      "level": 1,
+      "text": "Kaksi nosturia nostaa kumpikin $500\\,\\text{kg}$:n kuorman samaan korkeuteen tasaisella nopeudella. Nosturi A nostaa kuorman $20\\,\\text{s}$:ssa ja nosturi B $40\\,\\text{s}$:ssa. Mikä väite on oikea?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Nosturin A teho on suurempi, koska työ on sama mutta tehty lyhyemmässä ajassa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Nosturin B teho on suurempi, koska se tekee suuremman työn pidemmässä ajassa.",
+          "feedback": "Työ ei ole suurempi. Kuorma ja nostokorkeus ovat samat, joten nostotyö $W = m g h$ on sama. Kun työ on sama, pidempi aika tarkoittaa pienempää tehoa $P = \\dfrac{W}{t}$."
+        },
+        {
+          "text": "Nosturien teho on sama, koska ne nostavat saman kuorman samaan korkeuteen.",
+          "feedback": "Työ on sama, mutta teho kertoo, kuinka nopeasti työ tehdään: $P = \\dfrac{W}{t}$. Kun aika on eri, myös teho on eri."
+        },
+        {
+          "text": "Nosturin A työ on suurempi, koska se nostaa saman kuorman nopeammin.",
+          "feedback": "Nostotyö $W = m g h$ riippuu vain kuormasta ja korkeudesta. Nostoon kuluva aika ei vaikuta siihen. Nopeampi nosto ei lisää työtä. Sama työ tehdään vain suuremmalla teholla."
+        },
+        {
+          "text": "Nosturin A teho on suurempi, koska työ on sama mutta tehty lyhyemmässä ajassa.",
+          "correct": true,
+          "feedback": "Oikein: kuorma ja korkeus ovat samat, joten nostotyö $W = m g h$ on kummallakin sama. Teho $P = \\dfrac{W}{t}$ on suurempi sillä nosturilla, jonka aika $t$ on lyhyempi. Se on nosturi A."
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +142,90 @@
       "answer": 100,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L2-05",
+      "level": 2,
+      "text": "Kärryä vedetään kiskolla liikkeen suuntaisella voimalla. Voima-anturi mittaa voiman suuruuden. Tulokset ovat taulukossa (esimerkkiaineisto).\n\nLaske voiman tekemä työ matkalla $0\\text{–}4{,}0\\,\\text{m}$. Jaa matka neljään osaan, joista jokainen on yksi metri. Käytä jokaisella osalla voiman keskiarvoa osan alku- ja loppupisteessä.",
+      "kind": [
+        "data"
+      ],
+      "answer": 55,
+      "unit": "J",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kärryä vetävä voima matkan funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$s\\,(\\text{m})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "18.0"
+          ],
+          [
+            "1.0",
+            "17.2"
+          ],
+          [
+            "2.0",
+            "15.1"
+          ],
+          [
+            "3.0",
+            "11.0"
+          ],
+          [
+            "4.0",
+            "6.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-2-L2-06",
+      "level": 2,
+      "text": "Oppilas mittaa portaissa tekemäänsä työtä ja tehoa. Hänen massansa on $62\\,\\text{kg}$. Portaissa on 18 askelmaa, ja jokaisen korkeus on $0{,}17\\,\\text{m}$. Oppilas nousee portaat kolme kertaa mahdollisimman tasaisella vauhdilla. Ajanotto antaa taulukon nousuajat (esimerkkiaineisto).\n\nOletetaan, että työtä vaatii vain oppilaan painon nostaminen portaiden korkeudelle. Laske oppilaan keskimääräinen teho nousun aikana. Käytä nousuaikojen keskiarvoa.",
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "answer": 230,
+      "unit": "W",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Portaiden nousuajat (esimerkkiaineisto)",
+        "columns": [
+          "Nousu",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "8.1"
+          ],
+          [
+            "2",
+            "7.8"
+          ],
+          [
+            "3",
+            "8.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-2-L2-07",
+      "level": 2,
+      "text": "Tehtävässä nostetaan $40\\,\\text{kg}$:n laatikko hitaasti $1{,}5\\,\\text{m}$:n korkeuteen. Kysytään nostovoiman tekemä työ. Oppilas ratkaisi: ”$W = F s = 40 \\cdot 1{,}5\\,\\text{J} = 60\\,\\text{J}$.”\n\nOppilaan tulos on väärä. Etsi virhe ja laske oikea työ jouleina.",
+      "kind": [
+        "error"
+      ],
+      "answer": 590,
+      "unit": "J",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +252,89 @@
       "answer": 45,
       "unit": "min",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L3-04",
+      "level": 3,
+      "text": "Jousen venytyskokeessa jousta venytetään hitaasti. Voima-anturi mittaa jousen suuntaisen venyttävän voiman $F$ eri venymillä $s$ (esimerkkiaineisto). Venymä on mitattu jousen vapaasta pituudesta.\n\na) Perustele taulukon arvoista, miten voima riippuu venymästä. Selitä, miksi venyttämiseen tehty työ on $(s,F)$-kuvaajassa kolmion pinta-ala.\n\nb) Laske työ, kun jousi venytetään $10{,}0\\,\\text{cm}$:n venymään.\n\nc) Kuinka korkealle tällä työllä voitaisiin nostaa hitaasti $0{,}20\\,\\text{kg}$:n kappale? Perustele laskun malli. Anna c)-kohdan tulos senttimetreinä vastauslaatikkoon.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 25,
+      "unit": "cm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Jousen venyttävä voima venymän funktiona (esimerkkiaineisto)",
+        "columns": [
+          "$s\\,(\\text{cm})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "1.9"
+          ],
+          [
+            "4.0",
+            "4.2"
+          ],
+          [
+            "6.0",
+            "5.8"
+          ],
+          [
+            "8.0",
+            "8.1"
+          ],
+          [
+            "10.0",
+            "10.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-2-L3-05",
+      "level": 3,
+      "text": "Rakennusnosturin moottori nostaa $450\\,\\text{kg}$:n kuormaa lattialta ylös. Kuorman korkeus lattiasta mitataan eri hetkinä nostoliikkeen alusta lukien (esimerkkiaineisto).\n\na) Perustele taulukosta, että kuorma nousee likimain tasaisella nopeudella. Määritä nopeus sovitetun suoran avulla. Suoran saa vetää origon kautta, koska aika ja korkeus lasketaan nostoliikkeen alusta.\n\nb) Perustele, miksi nostovoima on yhtä suuri kuin kuorman paino, kun kuorma nousee tasaisella nopeudella (kuten kaavan $W = m g h$ johdossa).\n\nc) Laske moottorin kuormalle antama teho kilowatteina. Tämä tulos vastauslaatikkoon.\n\nd) Laske kuorman nostotyö $m g h$ taulukon viimeiselle pisteelle ($8{,}0\\,\\text{s}$; $6{,}5\\,\\text{m}$). Vertaa sitä työhön, jonka saat tehon ja ajan $8{,}0\\,\\text{s}$ tulona.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 3.6,
+      "unit": "kW",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Nostettavan kuorman korkeus (esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$h\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "2.0",
+            "1.6"
+          ],
+          [
+            "4.0",
+            "3.3"
+          ],
+          [
+            "6.0",
+            "4.9"
+          ],
+          [
+            "8.0",
+            "6.5"
+          ]
+        ]
+      }
     }
   ]
 }

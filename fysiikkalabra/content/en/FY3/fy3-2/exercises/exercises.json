@@ -40,6 +40,74 @@
       "answer": 60,
       "unit": "W",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-06",
+      "level": 1,
+      "text": "A student carries a backpack along a horizontal corridor at a steady speed. The force supporting the weight of the backpack points upwards. Why does this force do no work?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The force points up, but the motion is sideways, so the force is not in the direction of motion.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The backpack moves at a steady speed, so no force does work on it.",
+          "feedback": "A steady speed does not stop a force from doing work: for example, the force pulling a sled at a constant velocity in the direction of motion does the work $W = F s$. Here the reason is the directions of the force and the motion, not the steadiness of the speed."
+        },
+        {
+          "text": "The supporting force is equal to the weight, so it does no work.",
+          "feedback": "The magnitude of a force does not decide whether it does work. In a slow lift the lifting force is equal to the weight and still does the work $W = G h$. In carrying, the work is missing because the motion is perpendicular to the force."
+        },
+        {
+          "text": "The force points up, but the motion is sideways, so the force is not in the direction of motion.",
+          "correct": true,
+          "feedback": "Correct: the work $W = F s$ requires the force to be in the direction of motion. The supporting force points up and the backpack moves horizontally, so the force does not transfer energy to the backpack and does no work."
+        },
+        {
+          "text": "Work is done only when lifting, so horizontal motion requires no work.",
+          "feedback": "Horizontal motion can also require work: when a moped is pushed, the pushing force in the direction of motion does the work $W = F s$. What matters is the direction of the force relative to the motion, not whether the motion is up or sideways."
+        }
+      ]
+    },
+    {
+      "id": "fy3-2-L1-07",
+      "level": 1,
+      "text": "A motor driving a conveyor belt pulls the belt at a steady speed with a $1.2\\,\\text{kN}$ force in the direction of motion. The power of the motor is $1.8\\,\\text{kW}$. At what speed does the belt move?",
+      "answer": 1.5,
+      "unit": "m/s",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L1-08",
+      "level": 1,
+      "text": "Two cranes each lift a $500\\,\\text{kg}$ load to the same height at a constant velocity. Crane A does the lift in $20\\,\\text{s}$ and crane B in $40\\,\\text{s}$. Which statement is correct?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The power of crane A is greater, because the work is the same but it is done in a shorter time.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The power of crane B is greater, because it does more work in a longer time.",
+          "feedback": "The work is not greater: the load and the lifting height are the same, so the lifting work $W = m g h$ is the same. With the same work, a longer time means a smaller power $P = \\dfrac{W}{t}$."
+        },
+        {
+          "text": "The cranes have the same power, because they lift the same load to the same height.",
+          "feedback": "The work is the same, but power tells how fast the work is done: $P = \\dfrac{W}{t}$. When the times differ, the powers differ too."
+        },
+        {
+          "text": "The work of crane A is greater, because it lifts the same load faster.",
+          "feedback": "The lifting work $W = m g h$ depends only on the load and the height, not on the time the lift takes. A faster lift does not increase the work, but does the same work with a greater power."
+        },
+        {
+          "text": "The power of crane A is greater, because the work is the same but it is done in a shorter time.",
+          "correct": true,
+          "feedback": "Correct: the load and the height are the same, so the lifting work $W = m g h$ is the same for both. The power $P = \\dfrac{W}{t}$ is greater for the crane whose time $t$ is shorter, that is, crane A."
+        }
+      ]
     }
   ],
   "level2": [
@@ -74,6 +142,90 @@
       "answer": 100,
       "unit": "J",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L2-05",
+      "level": 2,
+      "text": "A cart is pulled along a rail by a force in the direction of motion, and the magnitude of the force is measured with a force sensor. The results are in the table (example data set).\n\nCalculate the work done by the force over the distance $0\\text{–}4.0\\,\\text{m}$ by dividing the distance into four parts of one metre and using, for each part, the average of the force at the start and at the end of the part.",
+      "kind": [
+        "data"
+      ],
+      "answer": 55,
+      "unit": "J",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Force pulling a cart as a function of distance (example data set)",
+        "columns": [
+          "$s\\,(\\text{m})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "18.0"
+          ],
+          [
+            "1.0",
+            "17.2"
+          ],
+          [
+            "2.0",
+            "15.1"
+          ],
+          [
+            "3.0",
+            "11.0"
+          ],
+          [
+            "4.0",
+            "6.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-2-L2-06",
+      "level": 2,
+      "text": "A student measures the work and power in a staircase. The student's mass is $62\\,\\text{kg}$. The staircase has 18 steps, each with a height of $0.17\\,\\text{m}$. The student climbs the stairs three times at as steady a pace as possible, and timing gives the climbing times in the table (example data set).\n\nAssume that only lifting the student's weight to the height of the staircase requires work. Calculate the student's average power during the climb using the average of the climbing times.",
+      "kind": [
+        "experiment",
+        "data"
+      ],
+      "answer": 230,
+      "unit": "W",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Stair climbing times (example data set)",
+        "columns": [
+          "Climb",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "8.1"
+          ],
+          [
+            "2",
+            "7.8"
+          ],
+          [
+            "3",
+            "8.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-2-L2-07",
+      "level": 2,
+      "text": "In a problem a $40\\,\\text{kg}$ box is lifted slowly to a height of $1.5\\,\\text{m}$ and the work done by the lifting force is asked. A student solved: “$W = F s = 40 \\cdot 1.5\\,\\text{J} = 60\\,\\text{J}$.”\n\nThe student's result is wrong. Find the error and calculate the correct work in joules.",
+      "kind": [
+        "error"
+      ],
+      "answer": 590,
+      "unit": "J",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -100,6 +252,89 @@
       "answer": 45,
       "unit": "min",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-2-L3-04",
+      "level": 3,
+      "text": "In a spring stretching experiment the spring is stretched slowly, and a force sensor measures the stretching force $F$ along the spring at different extensions $s$ (example data set). The extension is measured from the free length of the spring.\n\na) Use the values in the table to justify how the force depends on the extension, and explain why the work done in stretching is the area of a triangle in the $(s,F)$ graph.\n\nb) Calculate the work when the spring is stretched to an extension of $10.0\\,\\text{cm}$.\n\nc) To what height could this work slowly lift an object of $0.20\\,\\text{kg}$? Justify the model of the calculation and give the result of part c) in centimetres in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 25,
+      "unit": "cm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Stretching force of a spring as a function of extension (example data set)",
+        "columns": [
+          "$s\\,(\\text{cm})$",
+          "$F\\,(\\text{N})$"
+        ],
+        "rows": [
+          [
+            "2.0",
+            "1.9"
+          ],
+          [
+            "4.0",
+            "4.2"
+          ],
+          [
+            "6.0",
+            "5.8"
+          ],
+          [
+            "8.0",
+            "8.1"
+          ],
+          [
+            "10.0",
+            "10.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy3-2-L3-05",
+      "level": 3,
+      "text": "The motor of a construction crane lifts a $450\\,\\text{kg}$ load from the floor upwards. The height of the load above the floor is measured at different moments, counting from the start of the lifting motion (example data set).\n\na) Justify from the table that the load rises at approximately constant velocity, and determine the velocity using a fitted line. The line may be drawn through the origin, because time and height are counted from the start of the lifting motion.\n\nb) Justify why the lifting force is equal to the weight of the load when the load rises at constant velocity (as in the derivation of the formula $W = m g h$).\n\nc) Calculate the power the motor gives to the load in kilowatts. This result goes in the answer box.\n\nd) Calculate the lifting work $m g h$ for the last point of the table ($8.0\\,\\text{s}$; $6.5\\,\\text{m}$) and compare it with the work obtained as the product of the power and the time $8.0\\,\\text{s}$.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 3.6,
+      "unit": "kW",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Height of the lifted load (example data set)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$h\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "0.0"
+          ],
+          [
+            "2.0",
+            "1.6"
+          ],
+          [
+            "4.0",
+            "3.3"
+          ],
+          [
+            "6.0",
+            "4.9"
+          ],
+          [
+            "8.0",
+            "6.5"
+          ]
+        ]
+      }
     }
   ]
 }
