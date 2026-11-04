@@ -164,7 +164,7 @@
       "Rearranged formula"
     ],
     "solution_answer_step": "Answer",
-    "check_howto": "Type your answer and press Check. An answer is accepted when it differs from the model answer by at most $2\\,\\%$ or by one unit in the last significant figure, whichever is larger. If your answer is $2$–$5\\,\\%$ away, the feedback is Close: then check the rounding and the significant figures. The answer and the solution open once you have checked an answer of your own. The hints open in order. The answer is checked in your browser and nothing is saved.",
+    "check_howto": "Type your answer and press Check. An answer is accepted when it differs from the model answer by at most $2\\,\\%$ or by one unit in the last significant figure, whichever is larger. If your answer is $2$–$5\\,\\%$ away, the feedback is Close: then check the rounding and the significant figures. The answer and the solution open once you have checked an answer of your own. The answer is checked in your browser and nothing is saved.",
     "exercises_pending": "The exercises for this lesson are still being checked. They will appear here when the check is done.",
     "notice_legacy": "Prototype version: this lesson was published before the current review process and is waiting to be renewed. The content may still change.",
     "notice_draft": "Draft: this lesson has not been reviewed yet.",
@@ -261,7 +261,6 @@
     "locked_try": "Opens once you have tried",
     "locked_done": "Opens once you tick I have done my solution",
     "locked_drawn": "Opens once you tick I have drawn the free-body diagram on paper",
-    "locked_hint": "Opens once you have opened hint {{n}}",
     "choice_one_more": "You can change your answer once more.",
     "choice_reveal": "Not quite. The correct answer is marked below with its reasoning.",
     "choice_correct_mark": "Correct answer",

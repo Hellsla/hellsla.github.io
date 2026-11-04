@@ -164,7 +164,7 @@
       "Kaava ratkaistuna"
     ],
     "solution_answer_step": "Vastaus",
-    "check_howto": "Kirjoita vastaus ja paina Tarkista. Vastaus hyväksytään, kun se poikkeaa mallivastauksesta enintään $2\\,\\%$ tai yhden yksikön viimeisessä merkitsevässä numerossa (kumpi on suurempi). Jos vastauksesi on $2$–$5\\,\\%$:n päässä, palaute on Lähellä: tarkista silloin pyöristys ja merkitsevät numerot. Vastaus ja ratkaisu avautuvat, kun olet tarkistanut oman vastauksesi kerran. Vihjeet avautuvat järjestyksessä. Vastaus tarkistetaan selaimessa, mitään ei tallenneta.",
+    "check_howto": "Kirjoita vastaus ja paina Tarkista. Vastaus hyväksytään, kun se poikkeaa mallivastauksesta enintään $2\\,\\%$ tai yhden yksikön viimeisessä merkitsevässä numerossa (kumpi on suurempi). Jos vastauksesi on $2$–$5\\,\\%$:n päässä, palaute on Lähellä: tarkista silloin pyöristys ja merkitsevät numerot. Vastaus ja ratkaisu avautuvat, kun olet tarkistanut oman vastauksesi kerran. Vastaus tarkistetaan selaimessa, mitään ei tallenneta.",
     "exercises_pending": "Tämän oppitunnin tehtävät ovat vielä tarkastettavina. Ne tulevat tähän, kun tarkastus on valmis.",
     "notice_legacy": "Prototyyppiversio: tämä oppitunti on julkaistu ennen nykyistä tarkistuskäytäntöä ja odottaa uudistusta. Sisältö voi vielä muuttua.",
     "notice_draft": "Luonnos: tätä oppituntia ei ole vielä tarkistettu.",
@@ -261,7 +261,6 @@
     "locked_try": "Avautuu, kun olet yrittänyt kerran",
     "locked_done": "Avautuu, kun olet rastittanut kohdan Olen tehnyt ratkaisun",
     "locked_drawn": "Avautuu, kun olet rastittanut kohdan Olen piirtänyt voimakuvion paperille",
-    "locked_hint": "Avautuu, kun olet avannut vihjeen {{n}}",
     "choice_one_more": "Voit vaihtaa vastaustasi vielä kerran.",
     "choice_reveal": "Ei aivan. Oikea vastaus on merkitty alle perusteluineen.",
     "choice_correct_mark": "Oikea vastaus",

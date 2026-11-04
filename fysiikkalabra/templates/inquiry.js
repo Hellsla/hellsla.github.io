@@ -11,7 +11,7 @@
       parameters, record the varied parameter and the measured quantities into a table, reset. The table is kept in
       localStorage (ruukkilabra:<page>:koe<n>) until Nollaa, and exported: Kopioi taulukko (TSV) and Lataa CSV, both
       with a decimal comma and the headings' data-plain text (teacher 2026-11-03).
-   4. Numeric tasks: common-mistake feedback (data-mistakes) on top of lesson.js; hints in view, opened in order.
+   4. Numeric tasks: common-mistake feedback (data-mistakes) on top of lesson.js; every hint in view and open.
    5. Explanations: model answer and self-assessment criteria once the student has ticked "Olen tehnyt ratkaisun", then
       the unticked criteria as the reasoning to add and where to practise it; a
       conclusion (data-after) also waits for the measurements of its experiments and copies tables and text for notes.
@@ -295,7 +295,7 @@
     });
   });
 
-  // 4. numeric tasks: common-mistake feedback and progressive hints
+  // 4. numeric tasks: common-mistake feedback
   document.querySelectorAll('.act-numeric form.check, .exp-question form.check, .interpret form.check').forEach((form) => {
     let mistakes = [];
     try { mistakes = JSON.parse(form.dataset.mistakes || '[]'); } catch (e) { mistakes = []; }
@@ -308,19 +308,7 @@
       if (m) { out.textContent = m.feedback; out.dataset.state = 'no'; if (m.feedback.includes('$')) typeset(out); }
     });
   });
-  // hints open in order (teacher 2026-11-03): every hint is in view from the start, a later one locked (dimmed, with
-  // the reason) until the one before it has been opened; lesson.js keeps a locked summary from opening its box
-  document.querySelectorAll('.hints').forEach((h) => {
-    const items = [...h.querySelectorAll('details.hint')];
-    const unlock = (d) => { delete d.dataset.locked; const s = d.querySelector(':scope > summary'); s.removeAttribute('aria-disabled'); s.querySelector('.lock-note')?.remove(); };
-    items.forEach((d, i) => {
-      if (i && !window.flSolutionsOpen) {
-        d.dataset.locked = '1'; const sum = d.querySelector(':scope > summary'); sum.setAttribute('aria-disabled', 'true');
-        const n = document.createElement('span'); n.className = 'lock-note'; n.textContent = msg('locked_hint', { n: i }); sum.append(n);
-      }
-      d.addEventListener('toggle', () => { if (d.open && items[i + 1]) unlock(items[i + 1]); });
-    });
-  });
+  // hints (teacher 2026-11-04): every hint is in view and opens freely, no lock between them
 
   // 5. explanations
   const expMin = (eid) => Number(document.querySelector(`#${CSS.escape(eid)} .experiment`)?.dataset.min || 2);
