@@ -1,17 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: f8d0042f1a38cd06
+VERDICT: PASS
+CONTENT-HASH: 976d1bb4784c43af
+Round: 3
 
 ## Blocking
-- [Critical] fy4-3-L3-04 two-body ```voimakuvio (capture fy4-3-open-exercises-L3-1280-5/6) — the figure is a 600-wide viewBox, but the 480 N : 30 N ratio makes fbdspec scale the arrows to up to 300 px, so each long arrow leaves its half: the horse's T runs left across the cart and ends inside it (reads as T pointing backwards on the cart), the cart's own T and the horse's F_t are clipped at the right edge without head or label, F_v has no visible label, and the arrows overlap the other body — an unreadable, physically misleading diagram — draw one block per body (cart: T 450 oikea, F_v 410 vasen, F_k 40 vasen; horse: F_t 480 oikea kitka, T 450 vasen, F_h 30 vasen), each on its own scale, and re-capture.
-- [Major] en solutions.md L3-04 diagram labels — the labels do not match the en text: the text names F_r (rolling resistance), F_dc (air on cart) and F_dh (air on horse) and F_road; figures.json maps F_v to F_d (right for the car diagrams, wrong here: rolling resistance is labelled as air resistance) and leaves F_k and F_h unmapped, so F_k and F_h appear in the figure but nowhere in the text (F_road is mapped correctly) — notation must match the text — in the en spec use F_r, F_dc, F_dh (unmapped symbols render as given).
 
 ## Polish
-- [Minor] L1-08 Periaate — the sentence "Valitaan kappaleeksi lapsi, joka piirretään suorakulmiona" promises a drawing with no figure; reword as the choice of body only.
+- [Minor] L3-04 horse figure — the F_h label sits just over the hatching beside the contact surface; legible, optional nudge.
+- [Minor] No 360 px capture of the exercise bodies exists; phone view rests on the layout checks.
 
 ## Checked
-- Opened fy4-3-open-exercises-L3-1280-4/5 (fi), en L3-1280-5/6, fi-easy L3-1280-6: the new L3-04 figure (upscaled crop) is broken as described in all three; L3-04 is the only changed figure in this set.
-- Arrow colours are the house red, labels in KaTeX, ground hatch fine; the defect is geometry only. No 360 px exercise capture exists, so the phone view is judged only through the layout checks (not through the capture); the fix must be re-captured.
-- L1-08 text moves read cleanly; no overflow in neighbouring solutions.
+- Opened the regenerated L3-04 captures at 1280 px (en): both figures fit their frame, every arrowhead is visible, arrows in house red, labels KaTeX with overlines, no overlap between bodies and arrows.
+- en labels match the text (F_r, F_k/F_dc, F_h/F_dh, T, F_t/F_road); no leftover Finnish symbol in en.
+- L1-08 wording change: no layout effect.
 
 ## Scores
-illustrations 2 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

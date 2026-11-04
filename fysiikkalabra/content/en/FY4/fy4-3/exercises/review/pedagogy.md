@@ -1,15 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: f8d0042f1a38cd06
+VERDICT: PASS
+CONTENT-HASH: 976d1bb4784c43af
+Round: 3
 
 ## Blocking
-- solutions.md fy4-3-L3-04, the new ```voimakuvio two-body spec — the model diagram is drawn wrongly. The two bodies are 480 N against 30 N, so fbdspec.py scales the arrows up (small force at least 44 px, up to 300 px) and the long arrows run out of their half of the figure: the horse's T (pointing left) is drawn across the cart and ends inside it, so the cart looks to have T pointing backwards (the text says forwards), the cart's forward T and the horse's F_t are cut off or unlabelled, and the label of F_v (rolling resistance) is not visible. A student who compares text and picture would learn a wrong diagram, the exact error the chapter teaches against. Fix: write two separate ```voimakuvio blocks, one per body (cart: pinta 0 / T 450 oikea / F_v 410 vasen / F_k 40 vasen / a 0; horse: pinta 0 / F_t 480 oikea kitka / T 450 vasen / F_h 30 vasen / a 0), each on its own scale, with a sentence before each saying which body it is; check the captures after the rebuild.
-- en solutions.md L3-04 spec — the labels do not match the en text: the text names the symbols F_r (rolling resistance), F_dc (air on cart), F_dh (air on horse), but figures.json maps F_v to F_d (right for the car diagrams, wrong here: the cart's rolling resistance is labelled as air resistance) and leaves F_k and F_h unmapped, so the student sees F_k/F_h that appear nowhere in the text. Fix: write the en spec with F_r, F_dc, F_dh (not in the mapping, rendered as given); F_t to F_road is correct.
 
 ## Polish
-- solutions.md L1-08 Periaate — "Valitaan kappaleeksi lapsi, joka piirretään suorakulmiona" now announces a drawing that never comes (no Voimakuvio step); say instead "Lapsen kuvioon kuuluisi vain köyden voima…" or keep it as a thought step. Wording only, not blocking.
+- L3-04 diagram — in the cart figure F_r and F_k both run left from the same face; F_k is a short stub beside the long F_r, so the pair reads as one arrow with a side label at a glance. Acceptable: the text names both.
 
 ## Checked
-- L1-08: the sentence moved into Periaate unchanged in meaning; no equation of motion is written, so no Voimakuvio step is needed; numbers and answer untouched.
-- Opened the L3-04 capture at 1280 px (fi, en, fi-easy): same defect in all three; the capture of L1-08 is text only.
-- Solution order in L3-04 stays principle, diagram text, diagram, formula; forces and numbers unchanged (450 N, 480 N).
-- Hash unchanged at the end of the review.
+- Opened the new L3-04 captures (L3-1280-5/6, en): two separate one-body diagrams, each with its forces labelled; the cart's T points forwards, the horse's T backwards and F_t forwards, matching the Voimakuvio text.
+- Labels match the text: en symbols F_r, F_k/F_dc, F_h/F_dh, F_t/F_road agree with Annettu and Kaava.
+- The model solution draws the diagram before the equations; numbers (450 N, 480 N) unchanged.
+- L1-08: Periaate now ends with the body choice only; no promise of a drawing.
+- Hash unchanged at the end.

@@ -1,18 +1,19 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 9afe1ad795180985
 
 ## Blocking
-- solutions.md:265–279 (L3-04, both `voimakuvio` blocks; renderer scripts/fbdspec.py `draw`) — A. The forward arrows are cut off: in the cart diagram $\overline{T}$ (450 N) and in the horse diagram $\overline{F}_\text{t}$ (480 N) run from x = 342 to a head at x = 642, but the figure's viewBox is 0–600, so both arrows end in a bare line at the right edge with no head (checked with `fbdspec.py show` and the SVG coordinates). The two forces that drive the paradox show no direction, so the diagram cannot be checked against "eteenpäin" in the text. — Fix the crop in `draw` so that every arrow head and label lies inside the viewBox (or lower the scale for a one-body figure whose horizontal forces are this long), then re-render and confirm all six heads are visible.
 
 ## Polish
-- solutions.md:265–279 (L3-04) — the diagrams show only horizontal forces; the first one says `pinta 0` but draws no surface, and the horse stands on a road with no normal force. The slot says "ei vielä täydellisiä voimakuvioita", so this is not an error, but write in the Voimakuvio step "pystysuorat voimat (paino ja tien tukivoima) kumoavat toisensa eikä niitä piirretä", as L1-04 does.
-- solutions.md:227 (L1-08) — the moved sentence reads correctly and its physics is right (the rope pulls the child back towards the sled; the child's force on the rope is not in the child's diagram). "eli lasta vastaan" is still unclear (carried); "(köysi vetää lasta taaksepäin)" is clearer.
-- Carried from the previous round: L3-05 "kärry vetää köyttä ja oppilasta" (solutions.md:290, 296); L2-06 b) asks for 6,0 s against a 0–5 s table; L3-04 c) does not say why the cart starts.
+- solutions.md:265–279 (L3-04) — each diagram has its own scale, and the 40 N and 30 N forces are drawn at the minimum length. So the 450 N pair T is 232 units long on the cart and 197 on the horse, and inside each diagram the 410 N / 450 N forces are about 7 % shorter than to scale (the alt text says that small forces are lengthened). Not an error. A shared scale for both bodies would let the student see that T is equal on both.
+- solutions.md:265–279 (L3-04) — only horizontal forces are drawn. Add one sentence saying that the weight and the road's normal force cancel and are not drawn, as in L1-04.
+- solutions.md:227 (L1-08) — the moved text is correct. "eli lasta vastaan" on yhä epäselvä (siirretty edelliseltä kierrokselta); "(köysi vetää lasta taaksepäin)" olisi selvempi.
+- Carried from the previous round: L3-05 "kärry vetää köyttä ja oppilasta"; L2-06 b) 6,0 s against a 0–5 s table; L3-04 c) does not say why the cart starts.
 
 ## Checked
-- Full review: I recomputed every numeric answer in one script (18, 850, 90, 240, 6,4, 13, 65, 830, 8,9, 0,27, 0,60, 1,9, 38, 4,8, 3,0, 480, 3,4). All agree with answers.py and exercises.json.
-- L3-04 diagram physics: cart T 450 forward against F_r 410 + F_k 40; horse F_t 480 forward (friction at the hooves, from the bottom corner) against T 450 + F_h 30. Each sum is zero, matching a = 0 and the Kaava step. The third-law pair T is on two different diagrams.
-- The developer's working-tree edit (uncommitted, in this hash) fixes the symbols. The rolling resistance is now F_r, which no longer renders as "ilmanvastus" in the alt text and matches the F_r of L1-04. The two bodies are now separate diagrams, so neither one's arrows run into the other's box.
-- MC L1-06, L1-07, L2-07: exactly one correct option each.
-- The other 13 drawn diagrams match their texts and sum to zero along a.
-- The hash at the end is 9afe1ad795180985. It changed during the review because of the edit above, and this report judges that version.
+- Round 2. The round-1 Blocking item is fixed (commit 5aeadf755). Both L3-04 diagrams end inside the figure: the arrowheads reach x = 574 in a viewBox at most 582 wide, and every head and label shows (rendered and checked from the SVG coordinates).
+- L3-04 directions: cart T forward, F_r, F_k backward; horse F_t forward (friction from the hoof corner), T and F_h backward. a = 0, and each diagram's arrows close visually (232 = 197 + 35).
+- L3-04 physics: 450 − 410 − 40 = 0 and 480 − 450 − 30 = 0, matching the Kaava step. The third-law pair T is on different bodies.
+- The labels match the text in this language (spec F_r; en figures.json F_k→F_dc, F_h→F_dh, F_t→F_road).
+- L1-08: the rope pulls the child back towards the sled, and the child's force on the rope is not in the child's diagram. Correct.
+- All answers recomputed in round 1 (18 … 480, 3,4) are unchanged.
+- The hash was the same at the start and at the end.
