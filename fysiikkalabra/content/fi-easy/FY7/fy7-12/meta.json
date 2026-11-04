@@ -1,0 +1,20 @@
+{
+  "id": "fy7-12",
+  "course": "FY7",
+  "title": "Kokonaisheijastuminen ja valokuitu",
+  "goals": [
+    "LOPS FY7: kokonaisheijastuminen",
+    "Temaattinen tarkastelu: optinen tiedonsiirto"
+  ],
+  "prerequisites": [
+    "fy7-10"
+  ],
+  "glossary": [
+    "kokonaisheijastuminen",
+    "rajakulma",
+    "valokuitu"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

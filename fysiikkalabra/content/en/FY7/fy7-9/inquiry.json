@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "contribution": "Light and other electromagnetic radiation as electric and magnetic fields that create each other ($c = f\\lambda$), the sources of radiation (an accelerating charge, a hot body), the spectrum from radio waves to gamma rays, and black-body radiation and Wien's displacement law. With the simulation the student discovers from the values of the model that $\\lambda_\\text{max} T$ is constant and that a body at room temperature radiates infrared.",
+  "learn": [
+    "explain what electromagnetic radiation is, how it is produced and how the regions of the spectrum differ from one another.",
+    "calculate wavelength, frequency and the peak of a black-body spectrum with $c = f\\lambda$ and $\\lambda_\\text{max} T = b$.",
+    "deduce the temperature of a body from the spectrum of its radiation and the colour of its glow."
+  ],
+  "prior": [
+    "A wave travels one wavelength during one period, and $v = f\\lambda$ (chapter *Mechanical waves*)",
+    "A changing magnetic flux induces a voltage (chapter *Electromagnetic induction*)",
+    "All bodies emit thermal radiation, and a hotter body radiates more (chapter *Heat transfer, energy balance and climate change*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "An iron bar heated in a blacksmith's forge does not glow at all at first, even though it is already burning hot. Then it begins to glow dark red, and as it gets hotter it turns orange, yellow and almost white. A bar at room temperature does not glow, but a thermal camera can see it, and you, even in pitch darkness.",
+      "question": "Why does the colour of the glow change with temperature, and what does a thermal camera see that the eye cannot?"
+    },
+    {
+      "id": "kertaus-aalto",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: frequency and wavelength of a wave",
+      "prompt": "The frequency of a wave doubles and the speed of the wave stays the same. How does the wavelength change?",
+      "choices": [
+        {
+          "text": "It is halved.",
+          "correct": true,
+          "feedback": "Correct. A wave travels one wavelength during one period, so $v = f\\lambda$ (chapter *Mechanical waves*). When $v$ stays the same and $f$ doubles, $\\lambda$ is halved. The same holds for light, whose speed is $c$."
+        },
+        {
+          "text": "It doubles.",
+          "feedback": "When the frequency rises, the period gets shorter, and the wave has time to travel a shorter distance during one period. Since $v = f\\lambda$ and $v$ stays the same, a doubled frequency halves the wavelength (chapter *Mechanical waves*)."
+        },
+        {
+          "text": "It stays the same.",
+          "feedback": "Wavelength, frequency and speed are related: $v = f\\lambda$ (chapter *Mechanical waves*). If $v$ stays the same and $f$ doubles, $\\lambda$ must be halved."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-huippu",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: a hotter body",
+      "prompt": "The absolute temperature of a body is raised from $3000\\,\\text{K}$ to $6000\\,\\text{K}$. What happens to the peak of the spectrum of its radiation, that is, the wavelength of the strongest radiation?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "The wavelength of the peak is halved.",
+          "correct": true,
+          "feedback": "The values of the model support this: at $3000\\,\\text{K}$ the peak is at $966\\,\\text{nm}$ and at $6000\\,\\text{K}$ at $483\\,\\text{nm}$. When the absolute temperature doubles, the wavelength of the peak is halved, so $\\lambda_\\text{max} T$ stays the same."
+        },
+        {
+          "text": "The wavelength of the peak doubles.",
+          "feedback": "The values of the model refute this: the peak shifts from $966\\,\\text{nm}$ to $483\\,\\text{nm}$, that is, to shorter wavelengths. That is why a hotter body glows yellow and white instead of red: its radiation contains more short-wavelength light."
+        },
+        {
+          "text": "The peak stays in the same place, the curve just rises higher.",
+          "feedback": "The curve rises, but the values of the model also show the peak shifting from $966\\,\\text{nm}$ to $483\\,\\text{nm}$. If the peak did not shift, the colour of the glow would not change with temperature."
+        },
+        {
+          "text": "The wavelength of the peak decreases to a quarter.",
+          "feedback": "The values of the model refute this: the peak shifts from $966\\,\\text{nm}$ to $483\\,\\text{nm}$, that is, to a half, not a quarter. The wavelength of the peak is inversely proportional to the absolute temperature."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-huone",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a body at room temperature",
+      "prompt": "A stone at room temperature, $300\\,\\text{K}$, is in a dark room. What can be said about the radiation it emits?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "The stone does not radiate at all, because it is not hot.",
+          "feedback": "According to the model, a body at $300\\,\\text{K}$ has a spectrum whose peak is at $9659\\,\\text{nm}$, that is, at about $9.7\\,\\mu\\text{m}$. Every body radiates, because its particles are in thermal motion; the stone just radiates infrared."
+        },
+        {
+          "text": "The stone radiates mainly infrared, which the eye cannot see.",
+          "correct": true,
+          "feedback": "The values of the model support this: at $300\\,\\text{K}$ the peak is at $9659\\,\\text{nm}$, that is, at about $9.7\\,\\mu\\text{m}$, and the share of visible light is negligibly small. A thermal camera sees this radiation."
+        },
+        {
+          "text": "The stone radiates weak red light, which is visible in the dark.",
+          "feedback": "According to the model, less than $0.01\\,\\%$ of the radiation of a body at $300\\,\\text{K}$ is visible light, and the peak is at $9.7\\,\\mu\\text{m}$. A red glow becomes visible only at a temperature of about $800\\,\\text{K}$."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "The picture shows a body being heated and the spectrum of the radiation it emits. Change the temperature and watch how the curve, its peak and the colour of the glow change.",
+      "howto": "Adjust the surface temperature $T$ of the body. The graph shows the radiated power as a function of wavelength, and the orange dot and the dashed line show the wavelength of the peak $\\lambda_\\text{max}$. The colour band is visible light. Choose the *Wavelength range*: short wavelengths show the interval $0$–$3000\\,\\text{nm}$, long wavelengths the interval $0$–$30\\,\\mu\\text{m}$. If the peak is outside the range, an arrow at the right edge shows its direction. The scale of the vertical axis changes with the curve, so also follow the numbers on the scale. In the Readings row you see the wavelength of the peak, the share of visible light and the colour of the glow.",
+      "model": "The body is a black body: it absorbs all radiation that falls on it, and its spectrum depends only on the surface temperature. Radiation coming from the surroundings and reflected radiation are not included. The colour of the glow is calculated from the spectrum with a model of colour vision of the eye, and the name of the colour is approximate: in the dark the glow is visible from about $800\\,\\text{K}$ upwards. The readings are values calculated by the model, not measurements.",
+      "calc": "The curve is the spectrum of black-body radiation calculated from Planck's radiation law. The quantity $M_\\lambda$ on the vertical axis is the power radiated per unit area and wavelength interval. The simulation finds the highest point of the curve and reports its wavelength $\\lambda_\\text{max}$. The share of visible light is the power radiated between the wavelengths $380\\,\\text{nm}$ and $750\\,\\text{nm}$ divided by the total radiated power. The Celsius temperature is $t = T - 273.15\\,\\text{K}$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: position of the peak and temperature",
+      "intro": "Test prediction 1. The wavelength range is short wavelengths; change only the temperature. Record at least the temperatures $3000\\,\\text{K}$, $4500\\,\\text{K}$ and $6000\\,\\text{K}$, and others if you like. Calculate the product $\\lambda_\\text{max} T$ for each row.",
+      "initial": {
+        "T": 3000,
+        "alue": "lyhyt"
+      },
+      "locked": [
+        "alue"
+      ],
+      "vary": "T",
+      "names": {
+        "T": "surface temperature",
+        "alue": "wavelength range"
+      },
+      "units": {
+        "T": "K"
+      },
+      "values": {
+        "alue": {
+          "lyhyt": "short wavelengths",
+          "pitka": "long wavelengths"
+        }
+      },
+      "measure": [
+        {
+          "key": "lmax",
+          "label": "λ_max (nm)"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: cold bodies",
+      "intro": "Test prediction 2. The wavelength range is now long wavelengths. Record room temperature $300\\,\\text{K}$ and at least one temperature between $600$ and $900\\,\\text{K}$. In the Readings row also look at the share of visible light and the colour of the glow.",
+      "initial": {
+        "T": 300,
+        "alue": "pitka"
+      },
+      "locked": [
+        "alue"
+      ],
+      "vary": "T",
+      "names": {
+        "T": "surface temperature",
+        "alue": "wavelength range"
+      },
+      "units": {
+        "T": "K"
+      },
+      "values": {
+        "alue": {
+          "lyhyt": "short wavelengths",
+          "pitka": "long wavelengths"
+        }
+      },
+      "measure": [
+        {
+          "key": "lmax",
+          "label": "λ_max (nm)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: the peak and the temperature",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write, based on your tables: how does the wavelength of the peak of the spectrum change when the temperature doubles? What do you notice about the result $\\lambda_\\text{max} T$? In which wavelength region is the peak of a body at room temperature, and why does the body not glow?",
+      "model": "When the temperature doubles from $3000\\,\\text{K}$ to $6000\\,\\text{K}$, the peak shifts from $966\\,\\text{nm}$ to $483\\,\\text{nm}$, that is, it is halved. The product $\\lambda_\\text{max} T$ is the same in every row, about $2.90 \\cdot 10^{6}\\,\\text{nm} \\cdot \\text{K} = 2.90 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$, so the wavelength of the peak is inversely proportional to the absolute temperature. The peak of a body at room temperature ($300\\,\\text{K}$) is at $9659\\,\\text{nm}$, that is, at about $9.7\\,\\mu\\text{m}$, in the infrared region, and there is less than $0.01\\,\\%$ visible light. That is why the body does not glow, even though it radiates. The values are calculated by the model.",
+      "criteria": [
+        "I stated that the wavelength of the peak is halved when the absolute temperature doubles.",
+        "I calculated the product $\\lambda_\\text{max} T$ and noted that it is the same in every row, about $2.9 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$.",
+        "I noted that the peak of a body at room temperature is in the infrared region, at about $10\\,\\mu\\text{m}$.",
+        "I explained that the body does not glow because almost none of its radiation is visible light."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the theory and the values of the model. Then return to the opening question: why does heated iron glow first red and then yellow, and what does a thermal camera see?",
+      "predictions": [
+        "ennuste-huippu",
+        "ennuste-huone"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The temperature of the glowing element of a hob is $900\\,{}^\\circ\\text{C}$. A student calculates the wavelength of the peak of its radiation\n\n$$\\begin{aligned} \\lambda_\\text{max} &= \\frac{b}{T} \\\\ &= \\frac{2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{900\\,\\text{K}} \\\\ &= 3.22\\,\\mu\\text{m} \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The temperature is in degrees Celsius: in kelvins it is $1173\\,\\text{K}$, which gives a peak at $2.47\\,\\mu\\text{m}$.",
+          "correct": true,
+          "feedback": "Correct. In Wien's displacement law $T$ is the absolute temperature: $T = (900 + 273.15)\\,\\text{K} = 1173\\,\\text{K}$, and $\\lambda_\\text{max} = 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : 1173\\,\\text{K} = 2.47\\,\\mu\\text{m}$. With degrees Celsius the result would be the more wrong the colder the body is."
+        },
+        {
+          "text": "The formula is the wrong way round: the correct one is $\\lambda_\\text{max} = b T$, which gives a peak at $2.61\\,\\text{m}$.",
+          "feedback": "The formula $\\lambda_\\text{max} = b : T$ is correct, because the peak of a hotter body is at a shorter wavelength. The unit of the product $b T$ would be $\\text{m} \\cdot \\text{K}^2$ and not a metre, so it cannot be a wavelength. The error is in the temperature: it is in degrees Celsius, and in kelvins $T = 1173\\,\\text{K}$."
+        },
+        {
+          "text": "There is no error, because a temperature difference is the same in degrees Celsius and in kelvins.",
+          "feedback": "A temperature difference is the same on both scales, but Wien's displacement law contains the temperature itself, not a difference. The law requires the absolute temperature $T = 1173\\,\\text{K}$, which gives $\\lambda_\\text{max} = 2.47\\,\\mu\\text{m}$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: the incandescent lamp",
+      "prompt": "The tungsten filament of an old-fashioned incandescent lamp is at a temperature of about $2430\\,{}^\\circ\\text{C}$. Assume that the filament radiates like a black body. At what wavelength is the peak of its spectrum? Give the answer in nanometres.",
+      "answer": 1072.08,
+      "unit": "nm",
+      "tolerance": 0.02,
+      "hints": [
+        "Which law gives the position of the peak of the spectrum when the temperature is known, and in what unit must the temperature be?",
+        "Wien's displacement law $\\lambda_\\text{max} = b : T$, where $T$ is in kelvins.",
+        "$T = (2430 + 273.15)\\,\\text{K} = 2703.15\\,\\text{K}$, so $\\lambda_\\text{max} = 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : 2703.15\\,\\text{K}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1192.59,
+          "feedback": "You substituted the temperature in degrees Celsius. Wien's displacement law requires the absolute temperature: $T = (2430 + 273.15)\\,\\text{K} = 2703\\,\\text{K}$."
+        },
+        {
+          "value": 1.07208,
+          "feedback": "The result is correct in micrometres. Convert to nanometres: $1\\,\\mu\\text{m} = 1000\\,\\text{nm}$."
+        }
+      ],
+      "solution": "**Given:** temperature of the filament $t = 2430\\,{}^\\circ\\text{C}$, constant of Wien's displacement law $b = 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$; the filament is assumed to be a black body\n\n**Find:** wavelength of the peak of the spectrum $\\lambda_\\text{max}$ in nanometres\n\n**Principle:** A hot tungsten filament radiates approximately like a black body, whose spectrum peak depends only on the temperature. Wien's displacement law $\\lambda_\\text{max} T = b$ gives the peak when the temperature is absolute, that is, in kelvins.\n\n**Formula:** $\\lambda_\\text{max} T = b$, so $\\lambda_\\text{max} = \\dfrac{b}{T}$\n\n**Conversions:** $T = (2430 + 273.15)\\,\\text{K} = 2703.15\\,\\text{K}$. Finally $1\\,\\text{m} = 10^{9}\\,\\text{nm}$.\n\n**Substitution:** $\\lambda_\\text{max} = \\dfrac{2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{2703.15\\,\\text{K}} = 1.072 \\cdot 10^{-6}\\,\\text{m} = 1072\\,\\text{nm}$\n\n**Answer:** $1.07 \\cdot 10^{3}\\,\\text{nm}$, three significant figures like the temperature $2430\\,{}^\\circ\\text{C}$.\n\n**Reasonableness:** The peak is at a longer wavelength than the $750\\,\\text{nm}$ limit of red light, that is, in the infrared region, so most of the radiation of the lamp is infrared. That is why an incandescent lamp gets warm and produces light with poor efficiency. The result lies between the $502\\,\\text{nm}$ peak of the Sun and the $9.7\\,\\mu\\text{m}$ peak of a body at room temperature, as the temperature also implies."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks use one formula, level 2 tasks also need a unit conversion or two steps, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: a source of radiation",
+      "prompt": "In which of the following situations does an electron emit electromagnetic radiation?",
+      "choices": [
+        {
+          "text": "The electron oscillates back and forth in the antenna of a transmitter.",
+          "correct": true,
+          "feedback": "Correct. An oscillating electron is in accelerated motion all the time, and an accelerating charge emits electromagnetic radiation. The frequency of the radiation is the same as the frequency of the oscillation."
+        },
+        {
+          "text": "The electron moves in a vacuum in a straight line at constant velocity.",
+          "feedback": "The fields of an electron moving in a straight line at constant velocity travel with it, and it does not radiate. Radiation is produced only when the speed or the direction of motion of the charge changes, that is, when the charge is in accelerated motion."
+        },
+        {
+          "text": "The electron is at rest on the surface of a charged metal sphere.",
+          "feedback": "The electric field of a charge at rest does not change, so no radiation is produced. Electromagnetic radiation requires a charge in accelerated motion, such as an electron oscillating in an antenna."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: the temperature of lava",
+      "prompt": "The peak of the spectrum of the radiation from glowing lava flowing from a volcano is at the wavelength $2.1\\,\\mu\\text{m}$. Assume that the lava radiates like a black body. How hot is the lava? Give the answer in degrees Celsius.",
+      "answer": 1106.85,
+      "unit": "°C",
+      "tolerance": 0.02,
+      "hints": [
+        "Which law connects the peak of the spectrum and the temperature, and in what unit does it give the temperature?",
+        "From Wien's displacement law $T = b : \\lambda_\\text{max}$ in kelvins, and degrees Celsius are obtained by subtracting $273.15\\,\\text{K}$ from it.",
+        "$T = 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : (2.1 \\cdot 10^{-6}\\,\\text{m}) = 1380\\,\\text{K}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1380.0,
+          "feedback": "This is the temperature in kelvins. Degrees Celsius are obtained by subtracting $273.15\\,\\text{K}$ from it."
+        },
+        {
+          "value": 1653.15,
+          "feedback": "You added $273.15\\,\\text{K}$, but when going from kelvins to degrees Celsius it is subtracted: $t = (1380 - 273.15)\\,{}^\\circ\\text{C}$."
+        }
+      ],
+      "solution": "**Given:** wavelength of the peak of the spectrum of the lava $\\lambda_\\text{max} = 2.1\\,\\mu\\text{m}$, constant of Wien's displacement law $b = 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$; the lava is assumed to be a black body\n\n**Find:** surface temperature of the lava $t$ in degrees Celsius\n\n**Principle:** Glowing lava radiates approximately like a black body, so the position of the peak of its spectrum depends only on the surface temperature. Wien's displacement law gives the absolute temperature, which is finally converted to degrees Celsius.\n\n**Formula:** $\\lambda_\\text{max} T = b$, so $T = \\dfrac{b}{\\lambda_\\text{max}}$, and $t = T - 273.15\\,\\text{K}$ in degrees Celsius\n\n**Conversions:** $\\lambda_\\text{max} = 2.1\\,\\mu\\text{m} = 2.1 \\cdot 10^{-6}\\,\\text{m}$. Finally $273.15\\,\\text{K}$ is subtracted from the kelvins to get degrees Celsius.\n\n**Substitution:** $T = \\dfrac{2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{2.1 \\cdot 10^{-6}\\,\\text{m}} = 1380\\,\\text{K}$, so $t = (1380 - 273.15)\\,{}^\\circ\\text{C} = 1106.85\\,{}^\\circ\\text{C}$\n\n**Answer:** $1.1 \\cdot 10^{3}\\,{}^\\circ\\text{C}$, two significant figures like the wavelength $2.1\\,\\mu\\text{m}$.\n\n**Reasonableness:** The peak is in the infrared region, but the eye sees the short-wavelength edge of the spectrum, and the lava glows orange. The temperature is of the same order of magnitude as that of molten rock, about a thousand degrees Celsius, and much lower than the $5772\\,\\text{K}$ of the surface of the Sun, as it should be."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: the Sun and a person",
+      "prompt": "Explain why the peak of the spectrum of the radiation from the Sun is in the region of visible light but the peak of the radiation from the human body is in the infrared region. Also explain why a thermal camera sees a person in the dark even though the eye does not.",
+      "model": "Both the Sun and human skin radiate approximately like a black body, whose spectrum depends only on the surface temperature. According to Wien's displacement law $\\lambda_\\text{max} T = b$, the wavelength of the peak is inversely proportional to the absolute temperature. The surface of the Sun is at about $5800\\,\\text{K}$, so the peak is at about $500\\,\\text{nm}$, in the region of visible light. The skin is at about $307\\,\\text{K}$, about $19$ times colder, so the peak is at a wavelength about $19$ times longer, at about $9.4\\,\\mu\\text{m}$ in the infrared region. So a person radiates by themselves, even in the dark, but almost all the radiation is infrared, which the eye does not detect. A thermal camera measures infrared radiation at wavelengths of about $8$–$14\\,\\mu\\text{m}$, so it sees a person without light.",
+      "criteria": [
+        "I state that the position of the peak of the spectrum depends only on the surface temperature and that the peak of a hotter body is at a shorter wavelength.",
+        "I use Wien's displacement law or compare the temperatures in kelvins: about $5800\\,\\text{K}$ and $307\\,\\text{K}$.",
+        "I explain that a person radiates by themselves and that the radiation is almost entirely infrared, which the eye does not see.",
+        "I state that a thermal camera detects infrared radiation and therefore sees a person without light."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and only then open the answer."
+    }
+  ]
+}

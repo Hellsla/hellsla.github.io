@@ -1607,6 +1607,60 @@
       "kuvaaja": "$\\text{Distance fallen as a function of time}$",
       "energia": "$\\text{Energy}$",
       "lukemat": "<strong>Time $t = {{t}}\\,\\text{s}$</strong>, speed $v = {{v}}\\,\\text{m/s}$<br>$\\Delta E_\\text{p} = {{Ep}}\\,\\text{mJ}$, $E_\\text{k} = {{Ek}}\\,\\text{mJ}$, $Q = {{Q}}\\,\\text{mJ}$<br>{{tila}}"
+    },
+    "fy7-10": {
+      "ylempi": "Material above",
+      "alempi": "Material below",
+      "ilma": "air",
+      "vesi": "water",
+      "akryyli": "acrylic",
+      "lasi": "glass",
+      "timantti": "diamond",
+      "tulokulma": "Angle of incidence $\\alpha_1 = {{a}}^\\circ$",
+      "selite": "The dashed line is the normal of the boundary; the angles are measured from it.",
+      "lukemat": "<strong>$\\alpha_1 = {{a1}}^\\circ$, $\\beta = {{b}}^\\circ$, $\\alpha_2 = {{a2}}^\\circ$</strong><br>$\\sin\\alpha_1 = {{s1}}$, $\\sin\\alpha_2 = {{s2}}$<br>Reflected share $R = {{R}}\\,\\%$",
+      "lukemat_tir": "<strong>$\\alpha_1 = {{a1}}^\\circ$, $\\beta = {{b}}^\\circ$: no refracted ray</strong><br>$n_1 \\sin\\alpha_1 = {{p}}$ is greater than $n_2 = {{n2}}$, so all the light is reflected.<br>Reflected share $R = 100\\,\\%$"
+    },
+    "fy7-12": {
+      "kulma": "Angle of incidence on the end face $\\theta = {{t}}^\\circ$",
+      "n2": "Refractive index of the surrounding substance $n_2 = {{n}}$",
+      "selite": "The core is glass. The dashed lines are normals to the surfaces. The picture is not to scale.",
+      "lukemat_pysyy": "<strong>The light stays in the core: $\\alpha > \\alpha_\\text{r}$</strong><br>Angle of incidence at the wall $\\alpha = {{a}}^\\circ$, critical angle $\\alpha_\\text{r} = {{ar}}^\\circ$<br>Angle of refraction at the end face $\\theta_1 = {{t1}}^\\circ$",
+      "lukemat_vuoto": "<strong>Light leaks out: $\\alpha < \\alpha_\\text{r}$</strong><br>Angle of incidence at the wall $\\alpha = {{a}}^\\circ$, critical angle $\\alpha_\\text{r} = {{ar}}^\\circ$<br>Angle of refraction at the end face $\\theta_1 = {{t1}}^\\circ$",
+      "ydin": "core",
+      "aine": "surrounding substance"
+    },
+    "fy7-9": {
+      "lampotila": "Surface temperature $T = {{T}}\\,\\text{K}$",
+      "alue": "Wavelength range",
+      "alue_lyhyt": "short wavelengths",
+      "alue_pitka": "long wavelengths",
+      "selite": "The colour band is visible light, the dashed line shows the wavelength of the peak of the spectrum.",
+      "lukemat": "<strong>Peak $\\lambda_\\text{max} = {{l}}\\,\\text{nm}$</strong>, {{a}}<br>$T = {{T}}\\,\\text{K}$ i.e. $t = {{t}}\\,{}^\\circ\\text{C}$<br>Share of visible light in the radiated power: {{o}}<br>Colour of the glow: {{v}}",
+      "huippu_uv": "in the ultraviolet region",
+      "huippu_nakyva": "in the region of visible light",
+      "huippu_ir": "in the infrared region",
+      "alle": "under $0{,}01\\,\\%$",
+      "v0": "no visible glow",
+      "v1": "dark red",
+      "v2": "red",
+      "v3": "orange",
+      "v4": "yellow",
+      "v5": "yellowish white",
+      "v6": "white",
+      "v7": "bluish white"
+    },
+    "fy7-11": {
+      "huippu": "Apex angle $A = {{A}}^\\circ$",
+      "tulo": "Angle of incidence $\\alpha_1 = {{a}}^\\circ$",
+      "aine": "Material",
+      "kruunu": "crown glass",
+      "flint": "flint glass",
+      "vesi": "water (hollow prism)",
+      "selite": "The dashed lines are the normals of the surfaces and the extension of the incident ray.",
+      "kuva_alt": "A darkened room where a narrow beam of white light hits a glass prism, splits into colours and hits a white screen on the right.",
+      "lukemat": "<strong>Angles of deviation: red $\\delta_\\text{p} = {{dp}}^\\circ$, violet $\\delta_\\text{v} = {{dv}}^\\circ$</strong><br>Difference $\\Delta\\delta = {{dd}}^\\circ$<br>Refractive indices $n_\\text{p} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)",
+      "lukemat_tir": "<strong>Some of the colours cannot leave through the second surface of the prism but are reflected back into the glass.</strong><br>{{k}} of the seven colours get out.<br>Refractive indices $n_\\text{p} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)"
     }
   },
   "practice": {

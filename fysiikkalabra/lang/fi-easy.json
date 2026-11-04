@@ -1607,6 +1607,60 @@
       "nopea": "nopea",
       "selite": "Vihreä: kenttä ja vuo $\\Phi$. Violetti: jännite $e$ ja sen suunta. Sininen: sivujen nopeus.",
       "lukemat": "<strong>Huippujännite $e_0 = {{e0}}\\,\\text{V}$</strong>, tehollinen arvo $U = {{U}}\\,\\text{V}$, jaksonaika $T = {{T}}\\,\\text{s}$<br>Nyt: $\\theta = {{th}}^\\circ$, $\\Phi = {{phi}}\\,\\text{mWb}$, $e = {{e}}\\,\\text{V}$"
+    },
+    "fy7-9": {
+      "lampotila": "Pintalämpötila $T = {{T}}\\,\\text{K}$",
+      "alue": "Aallonpituusalue",
+      "alue_lyhyt": "lyhyet aallonpituudet",
+      "alue_pitka": "pitkät aallonpituudet",
+      "selite": "Värikaista on näkyvä valo. Katkoviiva näyttää spektrin huipun aallonpituuden.",
+      "lukemat": "<strong>Huippu $\\lambda_\\text{max} = {{l}}\\,\\text{nm}$</strong>, {{a}}<br>$T = {{T}}\\,\\text{K}$ eli $t = {{t}}\\,{}^\\circ\\text{C}$<br>Näkyvän valon osuus säteilytehosta: {{o}}<br>Hehkun väri: {{v}}",
+      "huippu_uv": "ultraviolettialueella",
+      "huippu_nakyva": "näkyvän valon alueella",
+      "huippu_ir": "infrapuna-alueella",
+      "alle": "alle $0{,}01\\,\\%$",
+      "v0": "ei näkyvää hehkua",
+      "v1": "tummanpunainen",
+      "v2": "punainen",
+      "v3": "oranssi",
+      "v4": "keltainen",
+      "v5": "kellertävän valkoinen",
+      "v6": "valkoinen",
+      "v7": "sinertävän valkoinen"
+    },
+    "fy7-11": {
+      "huippu": "Huippukulma $A = {{A}}^\\circ$",
+      "tulo": "Tulokulma $\\alpha_1 = {{a}}^\\circ$",
+      "aine": "Aine",
+      "kruunu": "kruunulasi",
+      "flint": "flinttilasi",
+      "vesi": "vesi (ontto prisma)",
+      "selite": "Katkoviivat ovat pintojen normaalit ja tulevan säteen jatke.",
+      "kuva_alt": "Pimennetty huone. Kapea valkoisen valon kimppu osuu lasiprismaan ja hajoaa väreiksi. Värit osuvat oikealla olevaan valkoiseen varjostimeen.",
+      "lukemat": "<strong>Poikkeamakulmat: punainen $\\delta_\\text{p} = {{dp}}^\\circ$, violetti $\\delta_\\text{v} = {{dv}}^\\circ$</strong><br>Ero $\\Delta\\delta = {{dd}}^\\circ$<br>Taitekertoimet $n_\\text{p} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)",
+      "lukemat_tir": "<strong>Osa väreistä ei pääse ulos prisman toisesta pinnasta. Ne heijastuvat takaisin lasiin.</strong><br>Ulos pääsee {{k}} väriä seitsemästä.<br>Taitekertoimet $n_\\text{p} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)"
+    },
+    "fy7-12": {
+      "kulma": "Tulokulma kuidun päätypintaan $\\theta = {{t}}^\\circ$",
+      "n2": "Ympäröivän aineen taitekerroin $n_2 = {{n}}$",
+      "selite": "Ydin on lasia. Katkoviivat ovat pintojen normaaleja. Kuva ei ole mittakaavassa.",
+      "lukemat_pysyy": "<strong>Valo pysyy ytimessä: $\\alpha > \\alpha_\\text{r}$</strong><br>Tulokulma seinään $\\alpha = {{a}}^\\circ$, rajakulma $\\alpha_\\text{r} = {{ar}}^\\circ$<br>Taitekulma päätypinnassa $\\theta_1 = {{t1}}^\\circ$",
+      "lukemat_vuoto": "<strong>Valoa vuotaa ulos: $\\alpha < \\alpha_\\text{r}$</strong><br>Tulokulma seinään $\\alpha = {{a}}^\\circ$, rajakulma $\\alpha_\\text{r} = {{ar}}^\\circ$<br>Taitekulma päätypinnassa $\\theta_1 = {{t1}}^\\circ$",
+      "ydin": "ydin",
+      "aine": "ympäröivä aine"
+    },
+    "fy7-10": {
+      "ylempi": "Yläpuolen aine",
+      "alempi": "Alapuolen aine",
+      "ilma": "ilma",
+      "vesi": "vesi",
+      "akryyli": "akryyli",
+      "lasi": "lasi",
+      "timantti": "timantti",
+      "tulokulma": "Tulokulma $\\alpha_1 = {{a}}^\\circ$",
+      "selite": "Katkoviiva on rajapinnan normaali. Kulmat mitataan siitä.",
+      "lukemat": "<strong>$\\alpha_1 = {{a1}}^\\circ$, $\\beta = {{b}}^\\circ$, $\\alpha_2 = {{a2}}^\\circ$</strong><br>$\\sin\\alpha_1 = {{s1}}$, $\\sin\\alpha_2 = {{s2}}$<br>Heijastuva osuus $R = {{R}}\\,\\%$",
+      "lukemat_tir": "<strong>$\\alpha_1 = {{a1}}^\\circ$, $\\beta = {{b}}^\\circ$: ei taittunutta sädettä</strong><br>Arvo $n_1 \\sin\\alpha_1 = {{p}}$ on suurempi kuin $n_2 = {{n2}}$, joten kaikki valo heijastuu.<br>Heijastuva osuus $R = 100\\,\\%$"
     }
   },
   "practice": {
