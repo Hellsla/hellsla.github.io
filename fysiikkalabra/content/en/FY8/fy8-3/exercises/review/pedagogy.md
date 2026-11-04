@@ -1,22 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6e95f62f7996146a
-Mode: full
-Round: 1
+CONTENT-HASH: 2fd787570d831d56
+Mode: delta
 
 ## Blocking
 (none)
 
-## Fixed
-- exercises.json L3-04 — "the initial levels are different levels" -> "each line has a different initial level"; "limiting wavelength" -> "threshold wavelength".
-- exercises.json L3-05 — "level of excitation" -> "excitation level" (also in solutions.md).
-- solutions.md L2-06 Answer — "$3$ photons" was split by the answer box into "3" + "Photons. ..."; now "$3$. The atom absorbs three photons: ...".
-- solutions.md L3-04 — "limiting wavelength" -> "threshold wavelength".
-
 ## Polish
-- None.
+- None new. (Same optional items as the Finnish report on L1-07, L1-08, L3-04 apply to the shared task design.)
 
 ## Checked
-- Tone and register of the new tasks and solutions suit the level (English); terms follow the Finnish (ionisation energy, excitation, threshold, series).
-- L1-06 distractors and feedback keep the same misconception targets as the Finnish; the wrong-choice feedback does not give away the correct answer's number only.
-- L2-07 error-analysis wording keeps both errors (orbit size vs. level difference; sign and size of E_n).
-- L3-04 and L3-05 task parts a), b), c) and the box instruction map one to one to the Finnish.
+- Delta (41862d574): answers.py now fits with hand-written _polyfit1; L2-05 gives slope -3,289e15 Hz, E_ion 13,6025 eV (same as the numpy value, answer 13,6 eV, tolerance 0,03). No numpy import remains in the path.
+- check_solutions.py fy8-3 ok; answers_shown.py: all 4374 shown answers agree. All 19 numeric json answers within their 2 % tolerance of the code values (L1-07 121,57, L1-08 2,55, L2-06 3, L2-07 13,056, L3-04 365,3, L3-05 97,25).
+- Nothing else in the set changed since the PASS; counts 8/7/5 unchanged.
