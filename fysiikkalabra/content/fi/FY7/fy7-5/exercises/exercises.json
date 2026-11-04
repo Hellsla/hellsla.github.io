@@ -1,0 +1,105 @@
+{
+ "level1": [
+  {
+   "id": "fy7-5-L1-01",
+   "level": 1,
+   "text": "Neliön muotoinen johdinsilmukka, jonka sivu on $0{,}12\\,\\text{m}$, on kohtisuorassa homogeenista magneettikenttää vastaan. Kentän magneettivuon tiheys on $0{,}35\\,\\text{T}$. Kuinka suuri magneettivuo silmukan läpi kulkee? Anna vastaus millivebereinä.",
+   "answer": 5.0,
+   "unit": "mWb",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L1-02",
+   "level": 1,
+   "text": "Käämissä on $400$ kierrosta. Kun magneetti työnnetään käämiin, yhden kierroksen läpi kulkeva magneettivuo kasvaa tasaisesti $1{,}5\\,\\text{mWb}$ ajassa $0{,}20\\,\\text{s}$. Kuinka suuri induktiojännite käämiin syntyy?",
+   "answer": 3.0,
+   "unit": "V",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L1-03",
+   "level": 1,
+   "text": "Metallitanko, jonka pituus on $0{,}25\\,\\text{m}$, liikkuu vauhdilla $2{,}0\\,\\text{m/s}$ homogeenisessa magneettikentässä $0{,}40\\,\\text{T}$. Tanko, sen nopeus ja kenttä ovat keskenään kohtisuorassa. Kuinka suuri induktiojännite tangon päiden välille syntyy?",
+   "answer": 0.2,
+   "unit": "V",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L1-04",
+   "level": 1,
+   "text": "Käämissä on $150$ kierrosta. Kun magneetti vedetään käämistä pois, käämin päiden välille syntyy keskimäärin $0{,}45\\,\\text{V}$:n induktiojännite $0{,}12\\,\\text{s}$:n ajan. Kuinka paljon yhden kierroksen läpi kulkeva magneettivuo muuttui? Anna vastaus millivebereinä.",
+   "answer": 0.36,
+   "unit": "mWb",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L1-05",
+   "level": 1,
+   "text": "Kahden kiskon päällä liukuvan metallitangon päiden välillä mitataan $12\\,\\text{mV}$:n induktiojännite. Kiskojen välinen etäisyys on $0{,}30\\,\\text{m}$, ja kiskojen tasoa vastaan kohtisuoran kentän magneettivuon tiheys on $0{,}080\\,\\text{T}$. Tanko liikkuu kohtisuoraan itseään vastaan. Kuinka suuri on tangon vauhti?",
+   "answer": 0.5,
+   "unit": "m/s",
+   "tolerance": 0.02
+  }
+ ],
+ "level2": [
+  {
+   "id": "fy7-5-L2-01",
+   "level": 2,
+   "text": "Joustava johdinsilmukka on kohtisuorassa homogeenista magneettikenttää $0{,}80\\,\\text{T}$ vastaan. Silmukkaa puristetaan kasaan niin, että sen pinta-ala pienenee tasaisesti arvosta $200\\,\\text{cm}^2$ arvoon $50\\,\\text{cm}^2$ ajassa $0{,}25\\,\\text{s}$. Kuinka suuri induktiojännite silmukkaan syntyy? Anna vastaus millivoltteina.",
+   "answer": 48,
+   "unit": "mV",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L2-02",
+   "level": 2,
+   "text": "Käämissä on $50$ kierrosta. Kuvaajassa on yhden kierroksen läpi kulkeva magneettivuo $\\Phi$ ajan $t$ funktiona. Kuinka suuri on käämin induktiojännitteen suurin itseisarvo aikavälillä $0$–$0{,}70\\,\\text{s}$? Lue tarvittavat arvot kuvaajasta.",
+   "figure": "fy7-5/flux-task",
+   "answer": 2.0,
+   "unit": "V",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L2-03",
+   "level": 2,
+   "text": "Kaksi vaakasuoraa metallikiskoa on $0{,}40\\,\\text{m}$:n etäisyydellä toisistaan, ja niiden päät on yhdistetty $2{,}0\\,\\Omega$:n vastuksella. Kiskojen päällä liukuu poikittainen metallitanko vauhdilla $3{,}0\\,\\text{m/s}$. Pystysuoran magneettikentän magneettivuon tiheys on $0{,}50\\,\\text{T}$. Kiskojen ja tangon resistanssi on hyvin pieni. Kuinka suuri virta vastuksen läpi kulkee?",
+   "answer": 0.3,
+   "unit": "A",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L2-04",
+   "level": 2,
+   "text": "Neliön muotoinen käämi, jonka sivu on $5{,}0\\,\\text{cm}$ ja jossa on $20$ kierrosta, vedetään tasaisella vauhdilla $0{,}25\\,\\text{m/s}$ homogeenisen magneettikentän alueelle. Kenttä $0{,}30\\,\\text{T}$ on kohtisuorassa käämin tasoa vastaan, ja käämin etusivu on kentän reunan suuntainen. Kuinka suuri induktiojännite käämiin syntyy sinä aikana, kun käämi on tulossa kenttään? Anna vastaus millivoltteina.",
+   "answer": 75,
+   "unit": "mV",
+   "tolerance": 0.02
+  }
+ ],
+ "level3": [
+  {
+   "id": "fy7-5-L3-01",
+   "level": 3,
+   "text": "Juna kulkee vauhdilla $200\\,\\text{km/h}$ vaakasuoralla radalla. Suomen rautateiden raideleveys on $1524\\,\\text{mm}$ (Väylävirasto), ja pyöräparin metalliakseli ulottuu kiskosta kiskoon. Maan magneettikentän pystykomponentti on Etelä-Suomessa noin $50\\,\\mu\\text{T}$ (WMM2025-malli, NOAA/BGS). Kuinka suuri induktiojännite syntyy akselin päiden välille kiskojen kohdalla? Anna vastaus millivoltteina.",
+   "answer": 4.2,
+   "unit": "mV",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L3-02",
+   "level": 3,
+   "text": "Maan magneettikenttää mitataan kääntökelalla. Kelassa on $100$ kierrosta, ja sen pinta-ala on $0{,}020\\,\\text{m}^2$. Kela on aluksi asennossa, jossa sen taso on kohtisuorassa Maan magneettikenttää vastaan. Kela käännetään puoli kierrosta ajassa $0{,}10\\,\\text{s}$, ja kelaan syntyy tänä aikana keskimäärin $2{,}0\\,\\text{mV}$:n induktiojännite. Kuinka suuri on Maan magneettikentän magneettivuon tiheys? Anna vastaus mikrotesloina.",
+   "answer": 50,
+   "unit": "µT",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy7-5-L3-03",
+   "level": 3,
+   "text": "Sauvamagneetti pudotetaan pystysuoran $300$ kierroksen käämin läpi, ja käämin jännite mitataan datalogerilla. Kun magneetti tulee käämiin, mittauksessa näkyy jännitepulssi, joka on likimain kolmion muotoinen: jännite kasvaa nollasta huippuarvoon $0{,}90\\,\\text{V}$ ja laskee takaisin nollaan, ja pulssi kestää kaikkiaan $40\\,\\text{ms}$. Ennen pudotusta magneetti on kaukana käämistä. Kuinka suuri magneettivuo kulkee keskimäärin yhden kierroksen läpi silloin, kun pulssi on päättynyt ja magneetti on käämin keskellä? Anna vastaus millivebereinä.",
+   "answer": 0.06,
+   "unit": "mWb",
+   "tolerance": 0.02
+  }
+ ]
+}

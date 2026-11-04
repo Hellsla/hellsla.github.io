@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Lasin taitekerroin on $1{,}50$. Millä tulokulmalla ilmasta lasin pintaan tulevan valon heijastus on täysin polarisoitunutta?",
+    "a": "Brewsterin laista $\\tan\\alpha_\\text{B} = 1{,}50 : 1{,}00 = 1{,}50$, joten $\\alpha_\\text{B} = 56{,}3^\\circ$. Tässä kulmassa heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan."
+  },
+  {
+    "q": "Puhelimen näyttö näkyy kirkkaana polaroitujen aurinkolasien läpi, mutta kun puhelinta kääntää $90^\\circ$, näyttö muuttuu lähes mustaksi. Miksi?",
+    "a": "Näytön pinnassa on polarisaattorikalvo, joten näytön valo on polarisoitunutta. Kun näytön polarisaatiosuunta on lasien läpäisysuunnan suuntainen, valo pääsee läpi. Kun puhelinta käännetään $90^\\circ$, suunnat ovat ristissä, ja Malusin lain mukaan läpi pääsee $\\cos^2 90^\\circ = 0$ eli lähes ei mitään."
+  }
+]

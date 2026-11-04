@@ -1,0 +1,105 @@
+{
+  "level1": [
+    {
+      "id": "fy7-7-L1-01",
+      "level": 1,
+      "text": "The coil of a school generator model has $300$ turns, and its area is $0.0030\\,\\text{m}^2$. The coil rotates in a uniform magnetic field of $0.15\\,\\text{T}$ at a rotation frequency of $10\\,\\text{Hz}$. How large is the peak value of the voltage induced in the coil?",
+      "answer": 8.4823,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-02",
+      "level": 1,
+      "text": "The electrical system of a passenger aircraft has an alternating voltage with an rms value of $115\\,\\text{V}$ and a frequency of $400\\,\\text{Hz}$. How large is the peak value of the voltage?",
+      "answer": 162.63456,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-03",
+      "level": 1,
+      "text": "The sinusoidal alternating current in the element of a kettle has a peak value of $8.5\\,\\text{A}$. How large is the rms value of the current?",
+      "answer": 6.010408,
+      "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-04",
+      "level": 1,
+      "text": "The shaft of a hydropower plant's generator makes $1500$ revolutions per minute. How large is the rotation frequency of the shaft in hertz?",
+      "answer": 25.0,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L1-05",
+      "level": 1,
+      "text": "An electric heater is connected to a mains voltage with an rms value of $230\\,\\text{V}$, and the rms value of its current is $4.35\\,\\text{A}$. How large is the average power of the heater? Give the answer in kilowatts.",
+      "answer": 1.0005,
+      "unit": "kW",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-7-L2-01",
+      "level": 2,
+      "text": "The rectangular coil of a generator has $150$ turns, and the lengths of its sides are $6.0\\,\\text{cm}$ and $8.0\\,\\text{cm}$. The coil rotates in a uniform magnetic field of $0.25\\,\\text{T}$ and makes $1200$ revolutions per minute. How large is the peak value of the voltage induced in the coil?",
+      "answer": 22.619467,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L2-02",
+      "level": 2,
+      "text": "The graph shows the voltage of a small generator as a function of time. The coil of the generator has $200$ turns, its area is $30\\,\\text{cm}^2$, and it rotates in a uniform magnetic field. Read the peak value and the period of the voltage from the graph. How large is the magnetic flux density?",
+      "figure": "fy7-7/trace",
+      "answer": 0.127324,
+      "unit": "T",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-7-L2-03",
+      "level": 2,
+      "text": "A hiker charges a battery with a hand-cranked generator whose voltage must have an rms value of $12\\,\\text{V}$. The coil of the generator has $200$ turns, its area is $0.0050\\,\\text{m}^2$, and the magnetic field is $0.30\\,\\text{T}$. At what rotation frequency must the coil be turned?",
+      "answer": 9.003163,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L2-04",
+      "level": 2,
+      "text": "In 2024 Finland's wind turbines produced $19.8\\,\\text{TWh}$ of electricity, and at the end of the year their combined rated power was $8358\\,\\text{MW}$ (Suomen Uusiutuvat ry, wind power statistics 2024). The year 2024 had $366$ days. What percentage of the rated power at the end of the year was the average power of the wind turbines?",
+      "answer": 26.969351,
+      "unit": "%",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-7-L3-01",
+      "level": 3,
+      "text": "The coil of a generator rotates steadily, and the peak value of its voltage is $20.0\\,\\text{V}$. At the moment $t = 0$ the plane of the coil is perpendicular to the field. How large is the voltage of the coil when the coil has turned $30^\\circ$ from this position?",
+      "answer": 10.0,
+      "unit": "V",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L3-02",
+      "level": 3,
+      "text": "A generator whose voltage has a peak value of $40\\,\\text{V}$ is connected to a $40\\,\\Omega$ resistor. The resistance of the generator itself is so small that it can be ignored. How large is the average power of the resistor?",
+      "answer": 20.0,
+      "unit": "W",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L3-03",
+      "level": 3,
+      "text": "In a direct-drive wind turbine a permanent-magnet generator rotates at the same rate as the rotor. The rms value of the generator's voltage is $690\\,\\text{V}$ when the rotor turns at $15$ revolutions per minute. The wind weakens, and the rotor now turns at only $9.0$ revolutions per minute. The magnets and coils of the generator are the same, and the frequency converter is not taken into account. How large is the rms value of the generator's voltage now?",
+      "answer": 414.0,
+      "unit": "V",
+      "tolerance": 0.02
+    }
+  ]
+}

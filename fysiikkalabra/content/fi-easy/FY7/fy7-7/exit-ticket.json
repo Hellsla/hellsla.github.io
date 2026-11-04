@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Pistorasian jännite on $230\\,\\text{V}$. Kuinka suuri on jännitteen huippuarvo?",
+    "a": "$230\\,\\text{V}$ on tehollinen arvo, joten huippuarvo on $U_0 = U \\cdot \\sqrt{2} = 230\\,\\text{V} \\cdot \\sqrt{2} \\approx 325\\,\\text{V}$."
+  },
+  {
+    "q": "Miksi voimalaitoksen generaattorissa pyörii magneetti eikä käämi, josta sähkö otetaan?",
+    "a": "Paikallaan olevan käämin läpi kulkeva vuo muuttuu pyörivän magneetin vuoksi samalla tavalla kuin pyörivässä käämissä. Siksi syntyy sama vaihtojännite. Suuri virta saadaan paikallaan olevista käämeistä suoraan johtimiin ilman liukurenkaita ja harjoja."
+  }
+]

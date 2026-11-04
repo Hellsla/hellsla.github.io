@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy8-13-L1-01",
+      "level": 1,
+      "text": "The whole body of a person, with mass $65.0\\,\\text{kg}$, absorbs energy $0.130\\,\\text{J}$ from gamma radiation. How large is the absorbed dose? Give the answer in milligrays.",
+      "answer": 2.0,
+      "unit": "mGy",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-02",
+      "level": 1,
+      "text": "The absorbed dose of the lungs from the alpha radiation of the decay products of radon is $0.30\\,\\text{mGy}$. The weighting factor of alpha radiation is $20$. How large is the equivalent dose of the lungs? Give the answer in millisieverts.",
+      "answer": 6.0,
+      "unit": "mSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-03",
+      "level": 1,
+      "text": "On a typical long-haul flight the dose rate of radiation from space in the cabin at cruising altitude is about $3\\,\\mu\\text{Sv/h}$. How large a dose does a passenger receive on a $5.0\\,\\text{h}$ flight? Give the answer in microsieverts.",
+      "answer": 15,
+      "unit": "µSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-04",
+      "level": 1,
+      "text": "The dose rate of a gamma source is $120\\,\\mu\\text{Sv/h}$ at a distance of $1.0\\,\\text{m}$. How large is the dose rate at a distance of $4.0\\,\\text{m}$? Assume that the source is a point source and the air does not attenuate the radiation.",
+      "answer": 7.5,
+      "unit": "µSv/h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L1-05",
+      "level": 1,
+      "text": "The dose rate of gamma radiation without a shield is $64\\,\\mu\\text{Sv/h}$. $18\\,\\text{mm}$ of lead is placed in front of the source, and its half-value thickness for this radiation is $6.0\\,\\text{mm}$. How large is the dose rate behind the shield?",
+      "answer": 8.0,
+      "unit": "µSv/h",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy8-13-L2-01",
+      "level": 2,
+      "text": "In a radioiodine examination of the thyroid, which uses iodine-131 that emits beta radiation, the patient's thyroid, with mass $20\\,\\text{g}$, absorbs energy $0.60\\,\\text{mJ}$ from beta radiation. The weighting factor of beta radiation is $1$ and the tissue weighting factor of the thyroid $0.04$. The other tissues receive no dose. How large is the patient's effective dose? Give the answer in millisieverts.",
+      "answer": 1.2,
+      "unit": "mSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-02",
+      "level": 2,
+      "text": "The dose rate of a gamma source is $150\\,\\mu\\text{Sv/h}$ at a distance of $1.0\\,\\text{m}$. A maintenance technician works $2.5\\,\\text{m}$ from the source. How long can they work before the dose is $100\\,\\mu\\text{Sv}$? Give the answer in hours.",
+      "answer": 4.2,
+      "unit": "h",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-03",
+      "level": 2,
+      "text": "According to STUK, the average radon concentration of Finnish dwellings is $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$, and it causes an effective dose of about $4.0\\,\\text{mSv}$ per year on average. How large an annual dose from radon does a resident receive whose home has the reference level for dwellings, $300\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$? Assume that the dose is directly proportional to the concentration and that the resident spends as much time at home as the average person. Give the answer in millisieverts.",
+      "answer": 13,
+      "unit": "mSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-04",
+      "level": 2,
+      "text": "The dose rate of gamma radiation at a workplace is $96\\,\\mu\\text{Sv/h}$, and it is to be reduced with a lead shield to $3.0\\,\\mu\\text{Sv/h}$. The half-value thickness of lead for this radiation is $6.0\\,\\text{mm}$. How thick a lead shield is needed? Give the answer in millimetres.",
+      "answer": 30,
+      "unit": "mm",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy8-13-L3-01",
+      "level": 3,
+      "text": "The dose rate of a gamma source is $80\\,\\mu\\text{Sv/h}$ at a distance of $1.0\\,\\text{m}$ without a shield. The job lasts $30\\,\\text{min}$ and can be done in two ways: A) $2.0\\,\\text{m}$ from the source without a shield or B) $1.0\\,\\text{m}$ from the source behind an $18\\,\\text{mm}$ lead shield. The half-value thickness of lead is $6.0\\,\\text{mm}$. Calculate the dose with method A minus the dose with method B. Give the answer in microsieverts with its sign: a positive difference means that method B gives the smaller dose.",
+      "answer": 5.0,
+      "unit": "µSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L3-02",
+      "level": 3,
+      "text": "The radon concentration of a detached house is measured to be $400\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$. The average concentration of Finnish dwellings, $94\\,\\tfrac{\\text{Bq}}{\\text{m}^3}$, gives about $4.0\\,\\text{mSv}$ per year on average, and the other radiation sources give about $1.9\\,\\text{mSv}$ per year in total on average. Estimate the annual effective dose of the resident of the house from all sources. Assume that the radon dose is directly proportional to the concentration and that the other sources give the resident the average dose. Give the answer in millisieverts.",
+      "answer": 19,
+      "unit": "mSv",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L3-03",
+      "level": 3,
+      "text": "The absorbed dose of a miner's lungs from the alpha radiation of the decay products of radon is $0.10\\,\\text{mGy}$ per year. In addition, their whole body receives a uniform absorbed dose of $0.50\\,\\text{mGy}$ from the gamma radiation of the rock. The weighting factor of alpha radiation is $20$, that of gamma radiation $1$ and the tissue weighting factor of the lungs $0.12$. How large is the worker's effective dose from these two sources together? Give the answer in millisieverts.",
+      "answer": 0.74,
+      "unit": "mSv",
+      "tolerance": 0.02
+    }
+  ]
+}

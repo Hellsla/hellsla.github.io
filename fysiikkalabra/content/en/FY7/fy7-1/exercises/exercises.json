@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy7-1-L1-01",
+      "level": 1,
+      "text": "A magnetic resonance imaging scanner in a hospital has a magnetic flux density of $3.0\\,\\text{T}$. The magnetic flux density of the Earth's magnetic field is about $50\\,\\mu\\text{T}$. How many times greater is the field of the scanner than the Earth's field?",
+      "answer": 60000,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L1-02",
+      "level": 1,
+      "text": "In Kuopio the magnetic flux density of the Earth's magnetic field is about $53\\,\\mu\\text{T}$, and the field points $75^\\circ$ below the horizontal. What is the horizontal component of the field in microtesla?",
+      "answer": 13.7,
+      "unit": "µT",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy7-1-L1-03",
+      "level": 1,
+      "text": "At a compass the horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north and the field of a magnet on the table is $48\\,\\mu\\text{T}$ towards the east. What is the horizontal total field in microtesla?",
+      "answer": 50.0,
+      "unit": "µT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L1-04",
+      "level": 1,
+      "text": "A bar magnet is cut in two in the middle. What poles does each piece have? Do the pieces attract or repel each other when the cut faces are brought back together?",
+      "answer": "Each piece has a north pole and a south pole. The cut faces have unlike poles, so the pieces attract each other.",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L1-05",
+      "level": 1,
+      "text": "A compass is placed on a table on the axis of a bar magnet in front of the north pole $\\text{N}$ of the magnet. The Earth's field is ignored. Which way does the north end of the compass needle point, and why?",
+      "answer": "Away from the magnet: the field of the magnet points away from the north pole, and the north pole of the needle repels the north pole of the magnet.",
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-1-L2-01",
+      "level": 2,
+      "text": "The field of a magnet at a compass is $25\\,\\mu\\text{T}$ towards the east, and the horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north. Through how many degrees does the compass needle turn from north towards east?",
+      "answer": 60.8,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L2-02",
+      "level": 2,
+      "text": "The magnetometer application of a smartphone shows the components of the Earth's magnetic field $B_x = 12\\,\\mu\\text{T}$, $B_y = -5.0\\,\\mu\\text{T}$ and $B_z = -48\\,\\mu\\text{T}$. The components are perpendicular to each other. What is the magnetic flux density of the Earth's magnetic field in microtesla?",
+      "answer": 49.7,
+      "unit": "µT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L2-03",
+      "level": 2,
+      "text": "In Rovaniemi the vertical component of the Earth's magnetic field is about $52\\,\\mu\\text{T}$, and the field points $77^\\circ$ below the horizontal. What is the magnetic flux density of the field in microtesla?",
+      "answer": 53.4,
+      "unit": "µT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L2-04",
+      "level": 2,
+      "text": "A compass is on the axis of a magnet, and the field of the magnet is perpendicular to the horizontal component of the Earth's field. When the compass is $10\\,\\text{cm}$ from the magnet, the needle turns $60^\\circ$ from north. When it is $20\\,\\text{cm}$ away, the needle turns $10^\\circ$. How many times greater is the field of the magnet at $10\\,\\text{cm}$ than at $20\\,\\text{cm}$?",
+      "answer": 9.82,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-1-L3-01",
+      "level": 3,
+      "text": "A bar magnet lies on a table in the north–south direction with its north pole $\\text{N}$ towards the north. A compass is placed east of the magnet at the level of the middle of the magnet, where the field of the magnet is $25\\,\\mu\\text{T}$. The horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north. Calculate the north component of the horizontal total field in microtesla, with north as the positive direction and south as the negative. Which way does the north end of the compass needle point?",
+      "answer": -11,
+      "unit": "µT",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L3-02",
+      "level": 3,
+      "text": "A steel paper clip is drawn several times in the same direction along a pole of a magnet, after which it picks up small pins. When the clip is heated in a flame hot enough and allowed to cool, it no longer picks up pins. Explain both observations using magnetic domains.",
+      "answer": "The field of a magnet aligns the magnetic domains of the steel, and in hard steel they stay aligned, so the clip is a magnet. Heating to a high enough temperature mixes up the alignment of the domains, so the clip is no longer a magnet.",
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-1-L3-03",
+      "level": 3,
+      "text": "According to the model of the Earth's magnetic field (World Magnetic Model 2025) the field in Helsinki is about $53\\,\\mu\\text{T}$ and points about $74^\\circ$ below the horizontal. In Longyearbyen in Svalbard the field is about $55\\,\\mu\\text{T}$ and points about $82.5^\\circ$ below the horizontal. How many times greater is the horizontal component of the field in Helsinki than in Longyearbyen? Why does a compass work worse in Longyearbyen, although the whole field is greater there?",
+      "answer": 2.03,
+      "unit": "",
+      "tolerance": 0.02
+    }
+  ]
+}

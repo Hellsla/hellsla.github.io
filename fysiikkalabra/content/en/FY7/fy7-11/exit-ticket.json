@@ -1,0 +1,10 @@
+[
+  {
+    "q": "White light passes at a slant through a flat window pane of uniform thickness. Why does the window not visibly split the light into colours, even though glass has dispersion?",
+    "a": "Inside the glass the colours travel in slightly different directions, but the surfaces of a pane of uniform thickness are parallel. At the second surface each colour is refracted back to a direction parallel to the original ray, so the colours continue in the same direction, only slightly shifted sideways. The slanted surfaces of a prism, by contrast, increase the difference in direction."
+  },
+  {
+    "q": "The sun shines from a height of $50^\\circ$, and it is raining ahead. Can an observer standing on level ground see a rainbow?",
+    "a": "No. The antisolar point is $50^\\circ$ below the horizon, so the top of the red arc would be at a height of $42^\\circ - 50^\\circ = -8^\\circ$, that is, below the horizon. A rainbow is seen from the ground only when the sun is lower than $42^\\circ$."
+  }
+]

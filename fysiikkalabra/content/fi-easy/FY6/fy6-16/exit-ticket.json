@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kolmivaiheinen latausasema ottaa jokaisesta vaihejohtimesta virran $16\\,\\text{A}$. Vaihejännite on $230\\,\\text{V}$. Kuinka suuri on latausteho?",
+    "a": "Jokainen vaihe siirtää tehon $UI$, joten $P = 3UI = 3 \\cdot 230\\,\\text{V} \\cdot 16\\,\\text{A} = 11\\,040\\,\\text{W} \\approx 11\\,\\text{kW}$."
+  },
+  {
+    "q": "Akkuun pitää varastoida $45\\,\\text{kWh}$, ja latauksen hyötysuhde on $90\\,\\%$. Kuinka paljon energiaa verkosta otetaan?",
+    "a": "$W_\\text{verkko} = W_\\text{akku} : \\eta = 45\\,\\text{kWh} : 0{,}90 = 50\\,\\text{kWh}$. Verkosta otetaan enemmän kuin akkuun varastoituu. Osa energiasta muuttuu johtojen, laturin ja akun sisäenergiaksi."
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "id": "fy6-11",
+  "course": "FY6",
+  "title": "Homogeeninen sähkökenttä",
+  "goals": [
+    "LOPS FY6: Coulombin laki ja homogeeninen sähkökenttä",
+    "LOPS FY6: osaa käyttää kentän ja potentiaalin käsitteitä sähkökentän kuvaamisessa"
+  ],
+  "prerequisites": [
+    "fy6-10"
+  ],
+  "glossary": [
+    "sähkökenttä",
+    "homogeeninen sähkökenttä",
+    "sähkökentän voimakkuus",
+    "kenttäviiva",
+    "testivaraus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "sähkökenttä",
+      "explain": "Alue varauksen ympärillä, jossa toiseen varaukseen kohdistuu sähköinen voima. Kenttä on olemassa, vaikka siellä ei olisi toista varausta."
+    },
+    {
+      "term": "sähkökentän voimakkuus",
+      "explain": "Kertoo, kuinka suuri voima kohdistuu yhteen coulombiin. Se saadaan jakamalla voima varauksella. Se ei riipu testivarauksesta."
+    },
+    {
+      "term": "homogeeninen sähkökenttä",
+      "explain": "Kenttä, jonka voimakkuus ja suunta ovat samat joka kohdassa. Tällainen kenttä on kahden yhdensuuntaisen levyn välissä."
+    },
+    {
+      "term": "kenttäviiva",
+      "explain": "Viiva, jonka suunta näyttää kentän suunnan. Tiheässä olevat viivat kertovat voimakkaasta kentästä. Viiva ei ole varauksen rata."
+    },
+    {
+      "term": "testivaraus",
+      "explain": "Pieni positiivinen varaus, jolla kenttää tutkitaan. Se on niin pieni, ettei se muuta kenttää aiheuttavien varausten paikkoja."
+    }
+  ]
+}

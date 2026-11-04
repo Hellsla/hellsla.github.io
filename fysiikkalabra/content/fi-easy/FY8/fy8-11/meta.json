@@ -1,0 +1,39 @@
+{
+  "id": "fy8-11",
+  "course": "FY8",
+  "title": "Fissio, fuusio ja ydinvoima",
+  "goals": [
+    "LOPS FY8: ydinvoima, fissio ja fuusio",
+    "Laaja-alainen: yhteiskunnallinen keskustelu ydinvoimasta fysiikan näkökulmasta; Suomen ydinvoimalat ja loppusijoitus"
+  ],
+  "prerequisites": [
+    "fy8-10"
+  ],
+  "glossary": [
+    "fissio",
+    "fuusio",
+    "ketjureaktio",
+    "ydinreaktori"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "fissio",
+      "explain": "Raskas atomiydin jakautuu kahdeksi keskiraskaaksi ytimeksi. Samalla vapautuu energiaa ja uusia neutroneja."
+    },
+    {
+      "term": "fuusio",
+      "explain": "Kaksi kevyttä atomiydintä yhtyy yhdeksi raskaammaksi ytimeksi. Samalla vapautuu energiaa."
+    },
+    {
+      "term": "ketjureaktio",
+      "explain": "Fissiossa vapautuneet neutronit aiheuttavat uusia fissioita. Reaktio ylläpitää itse itseään sukupolvi sukupolvelta."
+    },
+    {
+      "term": "ydinreaktori",
+      "explain": "Laite, jossa ketjureaktio pidetään hallitusti tasaisena. Hidastin ja säätösauvat säätävät neutronien määrää."
+    }
+  ]
+}

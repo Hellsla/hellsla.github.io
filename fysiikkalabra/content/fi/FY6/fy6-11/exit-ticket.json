@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kahden yhdensuuntaisen levyn välinen jännite on $9{,}0\\,\\text{kV}$, ja levyjen etäisyys on $3{,}0\\,\\text{cm}$. Kuinka suuri on sähkökentän voimakkuus levyjen välissä?",
+    "a": "Levyjen välinen kenttä on homogeeninen, joten $E = U : d = 9000\\,\\text{V} : 0{,}030\\,\\text{m} = 3{,}0 \\cdot 10^{5}\\,\\text{V/m}$. Sama arvo pätee kaikkialla levyjen välissä, kun levyjen päistä ollaan kaukana."
+  },
+  {
+    "q": "Miksi kaksi kenttäviivaa ei voi leikata toisiaan?",
+    "a": "Kenttäviivan suunta on kussakin kohdassa sähkökentän suunta. Jos kaksi viivaa leikkaisi, leikkauskohdassa kentällä olisi kaksi eri suuntaa, ja siihen tuotuun varaukseen kohdistuisi kaksi eri suuntaista voimaa yhtä aikaa. Kentällä on kuitenkin jokaisessa kohdassa vain yksi suunta."
+  }
+]

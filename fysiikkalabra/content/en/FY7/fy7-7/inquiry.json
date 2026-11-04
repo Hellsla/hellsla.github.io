@@ -1,0 +1,374 @@
+{
+  "version": 1,
+  "contribution": "The law of induction applied to a rotating coil: flux $\\Phi = BA\\cos(2\\pi f t)$, the reason for a sinusoidal voltage from the rate of change of flux, the peak value $e_0 = NBA \\cdot 2\\pi f$ derived from the voltage of a moving conductor, slip rings, the rms values $U = U_0 : \\sqrt{2}$ and $I = I_0 : \\sqrt{2}$, mains voltage $230\\,\\text{V}$ / $50\\,\\text{Hz}$, and a wind turbine with Finland's 2024 statistics.",
+  "learn": [
+    "explain why a sinusoidal alternating voltage arises in a coil that rotates at a steady rate.",
+    "calculate the peak value of a generator's voltage, $e_0 = NBA \\cdot 2\\pi f$, and the period.",
+    "calculate the rms values of an alternating voltage and current and use them to find the average power."
+  ],
+  "prior": [
+    "An induced voltage $e = -N\\,\\Delta\\Phi : \\Delta t$ arises in a coil only when the magnetic flux through it, $\\Phi = BA$, changes (chapter *Electromagnetic induction*)",
+    "A voltage $e = vBl$ arises in a conductor moving in a field (chapter *Electromagnetic induction*)",
+    "An induced current opposes the change that produces it (chapter *Lenz's law and eddy currents*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On the coast of Ostrobothnia the rotor of a wind turbine turns steadily, about once every five seconds. Hundreds of kilometres away, at home, the voltage of the wall socket reverses its direction a hundred times a second, and all the power plants of the grid are synchronised to the same frequency, $50\\,\\text{Hz}$. A wind turbine, a hydropower plant and a nuclear power plant produce electricity on the same principle: something rotates in a magnetic field.",
+      "question": "How does steady rotation produce a voltage that reverses its direction?"
+    },
+    {
+      "id": "kertaus-vuo",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Recall: when does a voltage arise?",
+      "prompt": "A coil is at rest in front of a strong magnet, and a large magnetic flux passes through it without changing. How large is the induced voltage in the coil?",
+      "choices": [
+        {
+          "text": "None at all, because a voltage arises only while the flux changes: $e = -N\\,\\Delta\\Phi : \\Delta t$.",
+          "correct": true,
+          "feedback": "Correct. The induced voltage depends on the rate of change of the flux, not on the size of the flux (chapter *Electromagnetic induction*). Today the change in flux is produced by rotating the coil."
+        },
+        {
+          "text": "A large one, because the flux is large and the voltage is proportional to the flux.",
+          "feedback": "By the law of induction $e = -N\\,\\Delta\\Phi : \\Delta t$ the voltage depends on how fast the flux changes. A flux that does not change, however large, produces no voltage (chapter *Electromagnetic induction*)."
+        },
+        {
+          "text": "It depends only on the number of turns $N$, not on the flux.",
+          "feedback": "The number of turns tells how many turns the voltage is produced in, but if the flux does not change, the voltage of each turn is zero: $e = -N\\,\\Delta\\Phi : \\Delta t = 0$ (chapter *Electromagnetic induction*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-asento",
+      "stage": "ennusta",
+      "type": "choice",
+      "justify": true,
+      "title": "Prediction 1: in which position is the voltage greatest?",
+      "prompt": "A coil rotates steadily in a uniform magnetic field. In which position of the coil is the voltage induced in it greatest?",
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "When the plane of the coil is perpendicular to the field and the flux is greatest.",
+          "feedback": "The graphs of the model refute this: when the flux is greatest, $\\Phi = BA$, the voltage is $e = 0$. The flux is then at its turning point and hardly changes for a moment, and the voltage depends on the rate of change of the flux, not on the size of the flux."
+        },
+        {
+          "text": "When the plane of the coil is parallel to the field and the flux is zero.",
+          "correct": true,
+          "feedback": "The graphs of the model support this: when $\\Phi = 0$, the voltage is at its peak value $e_0$, for example $2.51\\,\\text{V}$ when $f = 2.0\\,\\text{Hz}$. The sides of the coil then move perpendicular to the field lines, and the flux changes fastest."
+        },
+        {
+          "text": "The voltage is equally large in every position, because the coil rotates steadily.",
+          "feedback": "The graphs of the model refute this: the voltage varies sinusoidally between $-e_0$ and $e_0$ and passes through zero twice in each revolution. The rotation is steady, but the flux changes at a different rate in different positions."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-taajuus",
+      "stage": "ennusta",
+      "type": "choice",
+      "justify": true,
+      "title": "Prediction 2: rotating twice as fast",
+      "prompt": "A coil is rotated first at a rotation frequency of $1.0\\,\\text{Hz}$ and then at $2.0\\,\\text{Hz}$. The coil and the magnet are the same. What happens to the peak value $e_0$ of the voltage?",
+      "reveal": {
+        "after": "koe-1",
+        "min": 2
+      },
+      "choices": [
+        {
+          "text": "It stays the same; only the frequency of the voltage doubles.",
+          "feedback": "The values of the model refute this: at $1.0\\,\\text{Hz}$ the peak value is $1.26\\,\\text{V}$ and at $2.0\\,\\text{Hz}$ it is $2.51\\,\\text{V}$. The same change in flux takes place in half the time, so the rate of change and the voltage double."
+        },
+        {
+          "text": "It doubles, and the frequency of the voltage also doubles.",
+          "correct": true,
+          "feedback": "The values of the model support this: the peak value rises from $1.26\\,\\text{V}$ to $2.51\\,\\text{V}$, and the period shortens from $1.0\\,\\text{s}$ to $0.50\\,\\text{s}$. The flux changes by the same amount in half the time, so $\\Delta\\Phi : \\Delta t$ doubles."
+        },
+        {
+          "text": "It quadruples, because both the change in flux and its speed double.",
+          "feedback": "The values of the model refute this: the peak value rises from $1.26\\,\\text{V}$ to $2.51\\,\\text{V}$, so it only doubles. The change in flux in one revolution is the same, from $BA$ to $-BA$; only the time in which it happens is halved."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "The coil rotates in the magnetic field, and the graphs of the flux $\\Phi$ and the voltage $e$ are drawn at the same time. Pause the picture when you want to look more closely at the position of the coil.",
+      "howto": "The coil is seen along its axis: the copper line is the plane of the coil, and the circles at its ends are the sides of the coil. A cross (into the paper) and a dot (out of the paper) show the direction in which the induced voltage would drive a current in a side if a load were connected to the coil. The blue arrows are the velocities of the sides. Choose the number of turns $N$ and adjust the magnetic flux density $B$ and the rotation frequency $f$. The graphs are drawn in sweeps of $2.0\\,\\text{s}$, and they start again from the beginning whenever you change a control. *Pause* freezes the picture; the *Now* values in the readout row are the values at the moment it was paused. The animation speed changes only the pace of the display, not the rotation frequency.",
+      "model": "The field is uniform, and the coil is rectangular, with area $A = 4.0\\,\\text{cm} \\cdot 5.0\\,\\text{cm} = 20\\,\\text{cm}^2$. The coil rotates steadily. No load is connected to the coil, so no current flows in it and no force is needed to turn it; the crosses and dots show only the direction of the induced voltage. The readings are values calculated by the model, not measurements.",
+      "calc": "The angle $\\theta$ is the angle between the normal of the plane of the coil and the field, and at the moment $t = 0$ it is zero. The flux through one turn is $\\Phi = BA\\cos\\theta$, where $\\theta = 2\\pi f t$. The voltage is calculated from the flux with the law of induction\\n\\n$$e = -N\\,\\frac{\\Delta\\Phi}{\\Delta t}$$\\n\\nover a very short time interval $\\Delta t$. The peak voltage $e_0$ is the greatest value of the voltage during one revolution, the rms value is $U = e_0 : \\sqrt{2}$ and the period is $T = 1 : f$. The simulation does not use the formula for the peak value; the formula is found from its results."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: only the rotation frequency changes",
+      "intro": "Test the predictions. The coil has $500$ turns and the field is $0.20\\,\\text{T}$; change only the rotation frequency. Record the peak voltage and the period at least at the frequencies $1.0\\,\\text{Hz}$, $2.0\\,\\text{Hz}$ and $4.0\\,\\text{Hz}$. Pause the picture once, when the graph of the voltage is at its peak, and look at the position of the coil and the value of the flux.",
+      "initial": {
+        "N": "500",
+        "B": 0.2,
+        "f": 1
+      },
+      "locked": [
+        "N",
+        "B"
+      ],
+      "vary": "f",
+      "names": {
+        "N": "number of turns",
+        "B": "magnetic field",
+        "f": "rotation frequency"
+      },
+      "units": {
+        "N": "",
+        "B": "T",
+        "f": "Hz"
+      },
+      "values": {
+        "N": {
+          "250": "$250$ turns",
+          "500": "$500$ turns",
+          "1000": "$1000$ turns"
+        }
+      },
+      "measure": [
+        {
+          "key": "e0",
+          "label": "e₀ (V)"
+        },
+        {
+          "key": "T",
+          "label": "T (s)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "optional": true,
+      "title": "Experiment 2: only the magnetic field changes",
+      "intro": "The coil has $500$ turns and the rotation frequency is $2.0\\,\\text{Hz}$; change only the magnetic flux density. Record the peak voltage at least at the fields $0.10\\,\\text{T}$, $0.20\\,\\text{T}$ and $0.30\\,\\text{T}$. Finally, work out from the formula what would happen to the peak voltage if the number of turns were doubled.",
+      "initial": {
+        "N": "500",
+        "B": 0.1,
+        "f": 2
+      },
+      "locked": [
+        "N",
+        "f"
+      ],
+      "vary": "B",
+      "names": {
+        "N": "number of turns",
+        "B": "magnetic field",
+        "f": "rotation frequency"
+      },
+      "units": {
+        "N": "",
+        "B": "T",
+        "f": "Hz"
+      },
+      "values": {
+        "N": {
+          "250": "$250$ turns",
+          "500": "$500$ turns",
+          "1000": "$1000$ turns"
+        }
+      },
+      "measure": [
+        {
+          "key": "e0",
+          "label": "e₀ (V)"
+        }
+      ],
+      "min": 2
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: what does the peak voltage depend on?",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "Write, on the basis of your table: how do the peak voltage and the period depend on the rotation frequency? In which position was the coil when the voltage was at its peak, and how large was the flux then? Finally, calculate $e_0 : f$ from the values of experiment 1 and compare it with the number $NBA \\cdot 2\\pi$, when $A = 0.0020\\,\\text{m}^2$.",
+      "model": "At $1.0\\,\\text{Hz}$ the peak voltage is $1.26\\,\\text{V}$, at $2.0\\,\\text{Hz}$ it is $2.51\\,\\text{V}$ and at $4.0\\,\\text{Hz}$ it is $5.03\\,\\text{V}$, so the peak voltage is directly proportional to the rotation frequency. The period is $1.0\\,\\text{s}$, $0.50\\,\\text{s}$ and $0.25\\,\\text{s}$, that is $T = 1 : f$. When the voltage was at its peak, the plane of the coil was parallel to the field and the flux was zero. The ratio is $e_0 : f = 1.26\\,\\text{V} : 1.0\\,\\text{Hz} \\approx 1.26\\,\\text{V} \\cdot \\text{s}$, and $NBA \\cdot 2\\pi = 500 \\cdot 0.20\\,\\text{T} \\cdot 0.0020\\,\\text{m}^2 \\cdot 2\\pi \\approx 1.26\\,\\text{V} \\cdot \\text{s}$, so $e_0 = NBA \\cdot 2\\pi f$. The values are calculated by the model.",
+      "criteria": [
+        "I state that the peak voltage doubles when the rotation frequency doubles, that is, $e_0$ is directly proportional to the frequency $f$.",
+        "I state that the period is the reciprocal of the rotation frequency, $T = 1 : f$.",
+        "I state that the voltage was at its peak when the plane of the coil was parallel to the field and the flux was zero.",
+        "I calculated the ratio $e_0 : f$ and found it equal to $NBA \\cdot 2\\pi \\approx 1.26\\,\\text{V} \\cdot \\text{s}$."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "optional": true,
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the graphs of the simulation and with the formula $e_0 = NBA \\cdot 2\\pi f$. Then return to the opening question: how does steady rotation produce a voltage that reverses its direction? What does the frequency $50\\,\\text{Hz}$ of the wall-socket voltage tell you about the generators of the grid?",
+      "predictions": [
+        "ennuste-asento",
+        "ennuste-taajuus"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "optional": true,
+      "title": "Find the error",
+      "prompt": "A student writes: \"The voltage of the wall socket is $230\\,\\text{V}$. The rms value of a sinusoidal voltage is the peak value divided by $\\sqrt{2}$, so the rms voltage of the wall socket is $230\\,\\text{V} : \\sqrt{2} \\approx 163\\,\\text{V}$.\" Where is the error?",
+      "choices": [
+        {
+          "text": "The stated $230\\,\\text{V}$ is already the rms value, so the peak value is $230\\,\\text{V} \\cdot \\sqrt{2} \\approx 325\\,\\text{V}$.",
+          "correct": true,
+          "feedback": "Correct. Mains voltages and meter readings are given as rms values, because with them the power is calculated as with direct current, $P = UI$. The voltage therefore swings between $-325\\,\\text{V}$ and $325\\,\\text{V}$."
+        },
+        {
+          "text": "The rms value is obtained by multiplying the peak value by $\\sqrt{2}$, so the correct value is $325\\,\\text{V}$.",
+          "feedback": "The rms value is smaller than the peak value: $U = U_0 : \\sqrt{2}$. The student's formula is correct, but it was applied to a number that is already an rms value. The peak value is $230\\,\\text{V} \\cdot \\sqrt{2} \\approx 325\\,\\text{V}$."
+        },
+        {
+          "text": "An alternating voltage has no rms value, because its average is zero.",
+          "feedback": "The average of the voltage over a period is zero, but the average of the power is not: the power is positive for both directions of the current. The rms value is exactly the direct voltage that would give the same average power. The $230\\,\\text{V}$ of the wall socket is an rms value."
+        }
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: a cottage wind turbine",
+      "prompt": "In a small cottage wind turbine the rotor turns a permanent magnet directly, and a stationary coil surrounds it. In a simplified model the coil has $120$ turns, its area is $0.015\\,\\text{m}^2$, and the field of the magnet at the coil is $0.40\\,\\text{T}$. The rotor turns at $300$ revolutions per minute. How large is the rms value of the alternating voltage induced in the coil? Answer in volts.",
+      "answer": 15.994379,
+      "unit": "V",
+      "tolerance": 0.02,
+      "hints": [
+        "What is the rotation frequency in hertz when the rotor turns at $300$ revolutions per minute?",
+        "The peak value is $e_0 = NBA \\cdot 2\\pi f$, and the rms value is obtained by dividing the peak value by $\\sqrt{2}$.",
+        "$f = 300 : 60\\,\\text{s} = 5.0\\,\\text{Hz}$, so $e_0 = 120 \\cdot 0.40\\,\\text{T} \\cdot 0.015\\,\\text{m}^2 \\cdot 2\\pi \\cdot 5.0\\,\\tfrac{1}{\\text{s}} \\approx 22.6\\,\\text{V}$."
+      ],
+      "mistakes": [
+        {
+          "value": 22.619467,
+          "feedback": "This is the peak value $e_0$ of the voltage. The rms value is smaller: $U = e_0 : \\sqrt{2}$."
+        },
+        {
+          "value": 959.662715,
+          "feedback": "You used the number $300$ as the rotation frequency in hertz. $300$ revolutions per minute is $300 : 60\\,\\text{s} = 5.0$ revolutions per second, that is $5.0\\,\\text{Hz}$."
+        },
+        {
+          "value": 31.988757,
+          "feedback": "You multiplied the peak value by $\\sqrt{2}$. The rms value is smaller than the peak value, $U = e_0 : \\sqrt{2}$."
+        },
+        {
+          "value": 2.545584,
+          "feedback": "The formula is missing $2\\pi$. The rotation frequency $f$ is in revolutions per second, and the coil turns through the angle $2\\pi$ in each revolution, so $e_0 = NBA \\cdot 2\\pi f$."
+        }
+      ],
+      "solution": "**Given:** number of turns $N = 120$, area of the coil $A = 0.015\\,\\text{m}^2$, magnetic flux density $B = 0.40\\,\\text{T}$, rotation rate $300$ revolutions per minute\n\n**Asked:** the rms value $U$ of the voltage in volts\n\n**Principle:** The coil stays in place and the magnet rotates, but the flux through the coil changes in the same way as in a rotating coil in a uniform field. A sinusoidal alternating voltage therefore arises, with peak value $e_0 = NBA \\cdot 2\\pi f$, and its rms value is $U = e_0 : \\sqrt{2}$.\n\n**Formula:** $e_0 = NBA \\cdot 2\\pi f$ and $U = \\dfrac{e_0}{\\sqrt{2}} = \\dfrac{NBA \\cdot 2\\pi f}{\\sqrt{2}}$\n\n**Conversions:** rotation frequency $f = \\dfrac{300}{1\\,\\text{min}} = \\dfrac{300}{60\\,\\text{s}} = 5.0\\,\\text{Hz}$\n\n**Substitution:** $e_0 = 120 \\cdot 0.40\\,\\text{T} \\cdot 0.015\\,\\text{m}^2 \\cdot 2\\pi \\cdot 5.0\\,\\tfrac{1}{\\text{s}} = 22.62\\,\\text{V}$ and $U = 22.62\\,\\text{V} : \\sqrt{2} = 15.99\\,\\text{V}$\n\n**Answer:** $16\\,\\text{V}$, two significant figures like the magnetic flux density $0.40\\,\\text{T}$ and the area $0.015\\,\\text{m}^2$.\n\n**Reasonableness:** With round numbers $e_0 \\approx 120 \\cdot 0.4\\,\\text{T} \\cdot 0.015\\,\\text{m}^2 \\cdot 6 \\cdot 5\\,\\tfrac{1}{\\text{s}} \\approx 22\\,\\text{V}$, and the rms value is about $0.7$ times this. A voltage of a few tens of volts suits a small wind turbine that charges batteries."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 tasks use one formula, such as $e_0 = NBA \\cdot 2\\pi f$ or $U = U_0 : \\sqrt{2}$, level 2 tasks combine two steps or read a graph, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: rms value",
+      "prompt": "What does the rms value of an alternating voltage mean?",
+      "choices": [
+        {
+          "text": "The direct voltage that would deliver the same average power to a resistor.",
+          "correct": true,
+          "feedback": "Correct. The power in a resistor varies, and its average is half of the peak value. This is why the rms value is $U = U_0 : \\sqrt{2}$, and the average power is $P = UI$ as with direct current."
+        },
+        {
+          "text": "The average of the voltage over one whole period.",
+          "feedback": "The average of a sinusoidal voltage over a period is zero, because the positive and negative half-periods cancel each other. The rms value is defined through power: it is the direct voltage that would deliver the same average power to a resistor."
+        },
+        {
+          "text": "The greatest instantaneous voltage that the generator gives during a period.",
+          "feedback": "The greatest voltage is the peak value $U_0$. The rms value is smaller, $U = U_0 : \\sqrt{2}$: it is the direct voltage that would deliver the same average power to a resistor."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: the current of a kettle",
+      "prompt": "The power of an electric kettle is $2.00\\,\\text{kW}$ when it is connected to a mains voltage of $230\\,\\text{V}$. How large is the peak value of the current in the kettle? Answer in amperes.",
+      "answer": 12.297509,
+      "unit": "A",
+      "tolerance": 0.02,
+      "hints": [
+        "Is $230\\,\\text{V}$ an rms value or a peak value? And is the power of the kettle an average power?",
+        "With rms values $P = UI$, and the peak value is $I_0 = \\sqrt{2} \\cdot I$.",
+        "$I = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8.70\\,\\text{A}$."
+      ],
+      "mistakes": [
+        {
+          "value": 8.695652,
+          "feedback": "This is the rms value of the current. The peak value is $\\sqrt{2}$ times as large: $I_0 = \\sqrt{2} \\cdot I$."
+        },
+        {
+          "value": 6.148755,
+          "feedback": "You divided the rms value by $\\sqrt{2}$. The peak value is larger than the rms value: $I_0 = \\sqrt{2} \\cdot I$."
+        }
+      ],
+      "solution": "**Given:** power of the kettle $P = 2.00\\,\\text{kW}$, rms value of the mains voltage $U = 230\\,\\text{V}$\n\n**Asked:** the peak value $I_0$ of the current in amperes\n\n**Principle:** The mains voltage $230\\,\\text{V}$ is an rms value, and the power of the kettle is an average power. With rms values the average power is $P = UI$, which gives the rms value of the current. The peak value of a sinusoidal current is $\\sqrt{2}$ times its rms value.\n\n**Formula:** $P = UI$, so $I = \\dfrac{P}{U}$, and $I_0 = \\sqrt{2} \\cdot I = \\dfrac{\\sqrt{2} \\cdot P}{U}$\n\n**Conversions:** $P = 2.00\\,\\text{kW} = 2.00 \\cdot 1000\\,\\text{W} = 2000\\,\\text{W}$\n\n**Substitution:** $I = 2000\\,\\text{W} : 230\\,\\text{V} = 8.696\\,\\text{A}$ and $I_0 = \\sqrt{2} \\cdot 8.696\\,\\text{A} = 12.30\\,\\text{A}$\n\n**Answer:** $12.3\\,\\text{A}$, three significant figures like the power $2.00\\,\\text{kW}$ and the voltage $230\\,\\text{V}$.\n\n**Reasonableness:** The rms value of the current, $8.7\\,\\text{A}$, is below the ordinary $10\\,\\text{A}$ fuse of a household, as it should be. The peak value is larger than the rms value, about $1.4$ times as large."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "optional": true,
+      "title": "3. Explain: why is the voltage sinusoidal?",
+      "prompt": "Explain why a sinusoidal alternating voltage arises in a coil that rotates steadily. Say in which position of the coil the voltage is zero and in which it is greatest, and why the sign of the voltage changes.",
+      "model": "When the coil rotates, the flux through it varies like a cosine: $\\Phi = BA\\cos(2\\pi f t)$. By the law of induction the voltage is proportional to the rate of change of the flux, that is, to the steepness of the $\\Phi(t)$ graph. When the plane of the coil is perpendicular to the field, the flux is at its greatest but hardly changes for a moment, because the sides move along the field lines: the voltage is zero. When the plane of the coil is parallel to the field, the flux is zero, but the sides move perpendicular to the field lines and the flux changes fastest: the voltage is greatest. The steepness of a cosine curve varies like a sine, so the voltage is $e = e_0 \\sin(2\\pi f t)$. Every half revolution the direction of the change in flux reverses (the flux starts to increase instead of decrease), so the sign of the voltage and the direction of the current change.",
+      "criteria": [
+        "I state that the flux through the coil varies periodically between $BA$ and $-BA$ as it rotates.",
+        "I link the voltage to the rate of change of the flux and not to the size of the flux.",
+        "I name the positions correctly: the voltage is zero when the plane of the coil is perpendicular to the field, and greatest when the plane is parallel to the field.",
+        "I explain the change of sign by the direction of the change in flux reversing every half revolution."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first on your own and only then open the answer."
+    }
+  ]
+}

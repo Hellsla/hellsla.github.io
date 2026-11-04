@@ -1,0 +1,24 @@
+{
+  "id": "fy8-13",
+  "course": "FY8",
+  "title": "Säteilyannos ja säteilyturvallisuus Suomessa",
+  "goals": [
+    "LOPS FY8: ionisoivan säteilyn lajit ja biologiset vaikutukset sekä soveltaminen lääketieteessä ja teknologiassa",
+    "Temaattinen tarkastelu: säteilyturvallisuus",
+    "Täsmennys: annos ja efektiivinen annos, taustasäteily ja radon Suomessa, suojautuminen etäisyydellä, ajalla ja suojalla"
+  ],
+  "prerequisites": [
+    "fy8-12"
+  ],
+  "glossary": [
+    "absorboitunut annos",
+    "efektiivinen annos",
+    "taustasäteily",
+    "radon",
+    "annosnopeus",
+    "puoliintumispaksuus"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

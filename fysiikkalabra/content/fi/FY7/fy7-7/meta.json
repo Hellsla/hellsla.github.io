@@ -1,0 +1,23 @@
+{
+  "id": "fy7-7",
+  "course": "FY7",
+  "title": "Generaattori ja vaihtovirta",
+  "goals": [
+    "LOPS FY7: generaattori, vaihtovirran synty",
+    "Täsmennys: käämi pyörivässä magneettikentässä tai pyörivä käämi magneettikentässä; perustellaan, miksi käämiin syntyy sinimuotoinen induktiojännite",
+    "Temaattinen tarkastelu: tuulivoima"
+  ],
+  "prerequisites": [
+    "fy7-6"
+  ],
+  "glossary": [
+    "generaattori",
+    "vaihtovirta",
+    "vaihtojännite",
+    "tehollinen arvo",
+    "huippuarvo"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

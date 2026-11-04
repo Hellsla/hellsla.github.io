@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Kirjoita, mitä neutronin beeta miinus -hajoamisessa tapahtuu kvarkkitasolla, ja nimeä välittäjähiukkanen.",
+    "a": "Yksi neutronin $d$-kvarkki muuttuu $u$-kvarkiksi: $d \\to u + W^-$, ja $W^-$-bosoni muuttuu elektroniksi ja antineutriinoksi, $W^- \\to e^- + \\bar{\\nu}_e$. Neutroni $udd$ muuttuu protoniksi $uud$. Välittäjä $W^-$ kuuluu heikkoon vuorovaikutukseen."
+  },
+  {
+    "q": "Onko reaktio $p + n \\to p + p + e^-$ mahdollinen? Perustele säilymislaeilla.",
+    "a": "Ei ole. Varaus säilyy ($1 + 0 = 1 + 1 - 1$) ja baryoniluku säilyy ($1 + 1 = 1 + 1 + 0$), mutta leptoniluku ei: alussa $L = 0$, lopussa elektronin $L = 1$."
+  }
+]

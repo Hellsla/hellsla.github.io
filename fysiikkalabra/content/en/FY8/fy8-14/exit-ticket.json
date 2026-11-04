@@ -1,0 +1,10 @@
+[
+  {
+    "q": "Why is a single coincidence not enough to locate the accumulation of tracer in a PET scan?",
+    "a": "A single coincidence only tells that the annihilation happened somewhere on the line segment between two detectors, because the photons leave in opposite directions. There is tracer in the whole body, so segments come from everywhere, and the accumulation stands out only when many segments intersect at the same place. The difference in arrival times narrows the source to a stretch of only a few centimetres on the segment, so the image is still formed from many segments."
+  },
+  {
+    "q": "What do the principles of justification and optimisation mean in the medical use of radiation?",
+    "a": "Justification: the benefit from an examination or treatment must be greater than the harm from the radiation, so it is done only when the result affects the care. Optimisation: the dose is kept as low as is practically possible while the image still answers the question. Too small a dose can force the scan to be repeated."
+  }
+]

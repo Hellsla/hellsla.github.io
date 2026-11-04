@@ -1,0 +1,104 @@
+{
+  "level1": [
+    {
+      "id": "fy7-15-L1-01",
+      "level": 1,
+      "text": "Sunlight is unpolarised. Its intensity is $640\\,\\text{W/m}^2$ when it arrives at an ideal polariser. What is the intensity of the light after the polariser?",
+      "answer": 320.0,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-02",
+      "level": 1,
+      "text": "The intensity of polarised light is $200\\,\\text{W/m}^2$. The light arrives at an ideal analyser whose transmission axis is at an angle of $30.0^\\circ$ to the direction of polarisation of the light. What is the intensity of the light after the analyser?",
+      "answer": 150.0,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-03",
+      "level": 1,
+      "text": "The intensity of polarised light is $80.0\\,\\text{W/m}^2$. The transmission axis of an ideal polariser is at an angle of $70.0^\\circ$ to the direction of polarisation of the light. What is the intensity of the light after the polariser?",
+      "answer": 9.3582,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-04",
+      "level": 1,
+      "text": "Sunlight is reflected from the surface of an acrylic sheet. The refractive index of acrylic is $1.49$ and that of air $1.00$. At what angle of incidence is the reflected light completely polarised?",
+      "answer": 56.1328,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L1-05",
+      "level": 1,
+      "text": "The refractive index of diamond is $2.42$. At what angle of incidence is light arriving from air at the surface of a diamond reflected completely polarised? The refractive index of air is $1.00$.",
+      "answer": 67.5485,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ],
+  "level2": [
+    {
+      "id": "fy7-15-L2-01",
+      "level": 2,
+      "text": "The intensity of unpolarised light is $900\\,\\text{W/m}^2$. The light passes through two ideal polarisers, and the angle between the transmission axes of the polarisers is $40.0^\\circ$. What is the intensity of the light after the second polariser?",
+      "answer": 264.0708,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L2-02",
+      "level": 2,
+      "text": "Polarised light arrives at an ideal analyser. What is the angle between the direction of polarisation of the light and the transmission axis of the analyser when $25.0\\,\\%$ of the intensity of the light arriving at it passes through the analyser?",
+      "answer": 60.0,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L2-03",
+      "level": 2,
+      "text": "Light arriving from air at the surface of a transparent plastic sheet is reflected completely polarised when the angle of incidence is $57.5^\\circ$. What is the refractive index of the plastic? The refractive index of air is $1.00$.",
+      "answer": 1.5697,
+      "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L2-04",
+      "level": 2,
+      "text": "Light arrives from air at the surface of a glass sheet at Brewster's angle. The refractive index of glass is $1.50$ and that of air $1.00$. At what angle to the normal of the surface does the refracted ray travel in the glass?",
+      "answer": 33.6901,
+      "unit": "°",
+      "tolerance": 0.02
+    }
+  ],
+  "level3": [
+    {
+      "id": "fy7-15-L3-01",
+      "level": 3,
+      "text": "Two ideal polarisers are crossed, so no light passes through them. A third polariser is placed between them, with its transmission axis at an angle of $30.0^\\circ$ to the transmission axis of the first polariser. Unpolarised light with intensity $800\\,\\text{W/m}^2$ arrives at the first polariser. What is the intensity of the light that passes through the last polariser?",
+      "answer": 75.0,
+      "unit": "W/m²",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L3-02",
+      "level": 3,
+      "text": "A diver looks up from the bottom of a pool. Light from a lamp on the bottom of the pool meets the water surface from below, and part of it is reflected back into the water. The refractive index of water is $1.33$ and that of air $1.00$. At what angle of incidence is the light reflected back into the water completely polarised?",
+      "answer": 36.9388,
+      "unit": "°",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-15-L3-03",
+      "level": 3,
+      "text": "A student measures the polarised light of a phone display with a light sensor with a polarising film in front of it. When the transmission axis of the film is aligned with the polarisation of the display, the sensor shows $420\\,\\text{lx}$. When the film has been turned $90.0^\\circ$ from that position, the sensor shows $16\\,\\text{lx}$. This reading is background light of the room, which adds the same amount to every reading. Assume that the background light does not depend on the position of the film, that the film is ideal and that the reading of the sensor is proportional to the intensity of the light. What does the sensor show when the film has been turned $60.0^\\circ$ from the position of the largest reading?",
+      "answer": 117.0,
+      "unit": "lx",
+      "tolerance": 0.02
+    }
+  ]
+}

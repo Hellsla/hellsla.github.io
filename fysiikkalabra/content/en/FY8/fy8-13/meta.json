@@ -1,0 +1,24 @@
+{
+  "id": "fy8-13",
+  "course": "FY8",
+  "title": "Radiation dose and radiation safety in Finland",
+  "goals": [
+    "LOPS FY8: types and biological effects of ionising radiation, and applications in medicine and technology",
+    "Thematic study: radiation safety",
+    "Specification: dose and effective dose, background radiation and radon in Finland, protection by distance, time and shielding"
+  ],
+  "prerequisites": [
+    "fy8-12"
+  ],
+  "glossary": [
+    "absorbed dose",
+    "effective dose",
+    "background radiation",
+    "radon",
+    "dose rate",
+    "half-value thickness"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

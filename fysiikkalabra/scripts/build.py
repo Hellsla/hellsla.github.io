@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import answers_shown, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units
+import answers_shown, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -437,48 +437,34 @@ def link_languages():
             f.write_text(re.sub(r"<!--fl-languages:([\w.-]+)-->", control, f.read_text()))
 
 
-HERO = re.compile(r'<svg\b[^>]*data-fig="hero".*?</svg>', re.S)
-
-
 def chapter_card(html):
     """What a chapter's card on its module page shows (teacher 2026-11-03, "Ruukkikortit"): the chapter's own opening
-    illustration and its Miksi question, taken from the built page, so nothing is written twice. The picture is
-    decorative on the card (the title and the question say what it shows), so its role and description go."""
-    m = HERO.search(html)
-    svg = ""
-    if m:
-        svg = re.sub(r'\s(?:role|aria-label|aria-labelledby|class|style)="[^"]*"', "", m.group(0).split(">", 1)[0], flags=0) + ">" + m.group(0).split(">", 1)[1]
-        svg = svg.replace("<svg", '<svg aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice"', 1)
-        svg = re.sub(r"<title\b.*?</title>|<desc\b.*?</desc>", "", svg, flags=re.S)
+    illustration and its Miksi question, taken from the built page, so nothing is written twice (scripts/cardgrid.py)."""
     q = re.search(r'<div class="intro-head">.*?<blockquote>\s*<p>(.*?)</p>', html, re.S)
     why = re.sub(r"</?strong>", "", q.group(1)).strip() if q else ""
-    return svg, why
+    return cardgrid.hero(html), why
 
 
 def chapter_cards(code, mod, slots, built_ids, legacy_ids, cards):
     """The module page's chapters as cards, under the module's themes (curriculum.json "themes": [{title, first}],
-    titles translated in content/<lang>/courses.json "themes"); a chapter still coming is a plain row without a link."""
+    titles translated in content/<lang>/courses.json "themes"); a chapter still coming is a plain row without a link.
+    One continuous grid (teacher 2026-11-04): a theme's name is a label above its first card, so the next theme's cards
+    go on in the same row and a short theme leaves no hole beside it (scripts/cardgrid.py)."""
     themes = {th["first"]: th["title"] for th in mod.get("themes", [])}
     if themes and slots[0]["id"] not in themes: sys.exit(f"{code}: the first theme must start at the first chapter {slots[0]['id']}")
     bad = set(themes) - {l["id"] for l in slots}
     if bad: sys.exit(f"{code}: themes start at unknown chapters {sorted(bad)} (curriculum.json)")
     items = ""
     for i, l in enumerate(slots, 1):
-        # One continuous grid (teacher 2026-11-04): a theme's name is a label above its first card, so the next theme's
-        # cards go on in the same row and a short theme leaves no hole beside it.
-        theme = f'<h3 class="ch-theme">{esc(themes[l["id"]])}</h3>' if l["id"] in themes else ""
-        num = f'<span class="l-num">{T("site.chapter_n", n=i)}</span>'
-        title = esc(l["title"])
+        lab = cardgrid.label(esc(themes[l["id"]])) if l["id"] in themes else ""
+        num = T("site.chapter_n", n=i); title = esc(l["title"])
         if l["id"] in built_ids:
             svg, why = cards.get(l["id"], ("", ""))
             tags = f'<span class="tag">{T("site.lesson_prototype")}</span>' if l["id"] in legacy_ids else ""
-            items += (f'<li class="live ch-card">{theme}<div class="ch-box">{num}<a href="{l["id"]}.html">{title}</a>'
-                      + (f'<p class="ch-why">{why}</p>' if why else "") + (f'<p class="ch-tags">{tags}</p>' if tags else "")
-                      + (f'<div class="ch-img">{svg}</div>' if svg else "") + "</div></li>")
+            items += cardgrid.card(num, title, f'{l["id"]}.html', why, svg, tags, lab=lab)
         else:
-            items += (f'<li class="soon ch-card">{theme}<div class="ch-box">{num}<span class="ch-title">{title}</span>'
-                      f'<p class="ch-tags"><span class="tag">{T("site.lesson_coming")}</span></p></div></li>')
-    return f'<ol class="lessons ch-cards">{items}</ol>'
+            items += cardgrid.card(num, title, None, tags=f'<span class="tag">{T("site.lesson_coming")}</span>', lab=lab)
+    return cardgrid.grid(items)
 
 
 def chapter_titles(code, built=None):
@@ -867,7 +853,7 @@ def build_language(lang):
                                                                                                   [(i, d) for i, d in inv_built.items() if code in d["courses"]],
                                                                                                   guides.course_section(T, published, lang) if code == "FY10" else "", cu)
                                                 + '<script src="invfilter.js"></script>',
-                                                f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", c["description"]))
+                                                f'<a href="index.html">{T("site.name")}</a> › {code}', f"{code}.html", c["description"], main_class="reading module-page local-course"))
     mixer_built = []                             # the YO-sekoitin (scripts/mixer.py): every language, when a local course asks for it
     mcode = next((code for code, c in local_courses.load().items() if c.get("mixer")), None)
     if mcode:

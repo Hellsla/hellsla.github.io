@@ -1,0 +1,23 @@
+{
+  "id": "fy6-10",
+  "course": "FY6",
+  "title": "Electric charge and Coulomb's law",
+  "goals": [
+    "LOPS FY6: Coulomb's law and the uniform electric field",
+    "Clarification: charge, elementary charge, conservation of charge, charging of objects; electric current as the movement of charge (I = Q : t)",
+    "Clarification: the electric field of a point charge can be treated qualitatively"
+  ],
+  "prerequisites": [
+    "fy6-1"
+  ],
+  "glossary": [
+    "sähkövaraus",
+    "alkeisvaraus",
+    "Coulombin laki",
+    "pistevaraus",
+    "influenssi"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

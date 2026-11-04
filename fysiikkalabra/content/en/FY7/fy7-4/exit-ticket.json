@@ -1,0 +1,10 @@
+[
+  {
+    "q": "A current of $2.0\\,\\text{A}$ flows in a wire, and $0.30\\,\\text{m}$ of the wire is perpendicular to a magnetic field of $0.50\\,\\text{T}$. How large is the force on the wire?",
+    "a": "$F = I l B = 2.0\\,\\text{A} \\cdot 0.30\\,\\text{m} \\cdot 0.50\\,\\text{T} = 0.30\\,\\text{N}$."
+  },
+  {
+    "q": "In a horizontal wire the current flows east, and the magnetic field points horizontally north. In which direction does the force on the wire point?",
+    "a": "Upwards. When the thumb of the right hand points east (the current) and the other fingers north (the field), the palm points upwards. The force is perpendicular to both the current and the field."
+  }
+]

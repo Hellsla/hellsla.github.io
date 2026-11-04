@@ -1,0 +1,50 @@
+{
+  "id": "fy6-14",
+  "course": "FY6",
+  "title": "Puolijohteet, diodi, LED ja aurinkokenno",
+  "goals": [
+    "LOPS FY6: puolijohteet, diodi ja LED komponentteina virtapiirissä",
+    "Täsmennys: puolijohteita käsitellään lähinnä teknisinä virtapiirin komponentteina; puolijohdemateriaalien ominaisuudet eivät kuulu keskeisiin sisältöihin",
+    "Temaattinen tarkastelu: aurinkokenno tasajännitelähteenä"
+  ],
+  "prerequisites": [
+    "fy6-3"
+  ],
+  "glossary": [
+    "puolijohde",
+    "diodi",
+    "LED",
+    "päästösuunta",
+    "estosuunta",
+    "kynnysjännite",
+    "etuvastus",
+    "aurinkokenno",
+    "tyhjäkäyntijännite",
+    "maksimitehopiste"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false,
+  "key_concepts": [
+    {
+      "term": "puolijohde",
+      "explain": "Aine, joka johtaa sähköä huonommin kuin metalli mutta paremmin kuin eriste. Siitä tehdään diodit, LEDit ja aurinkokennot."
+    },
+    {
+      "term": "diodi",
+      "explain": "Komponentti, joka päästää virran läpi vain yhteen suuntaan. Sen piirrosmerkki on kolmio ja poikkiviiva."
+    },
+    {
+      "term": "kynnysjännite",
+      "explain": "Jännite, jonka jälkeen diodin virta alkaa kasvaa. Sen alapuolella virtaa ei juuri kulje."
+    },
+    {
+      "term": "etuvastus",
+      "explain": "LEDin kanssa sarjaan kytketty vastus. Se ottaa osan lähteen jännitteestä ja rajoittaa LEDin virtaa."
+    },
+    {
+      "term": "maksimitehopiste",
+      "explain": "Aurinkokennon kuvaajan polvi, jossa kennon sähköteho on suurin. Oikosulussa ja tyhjäkäynnissä teho on nolla."
+    }
+  ]
+}

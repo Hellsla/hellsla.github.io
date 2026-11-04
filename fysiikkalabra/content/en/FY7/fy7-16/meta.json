@@ -1,0 +1,26 @@
+{
+  "id": "fy7-16",
+  "course": "FY7",
+  "title": "Applied chapter: wireless charging, the induction hob and the fibre link",
+  "goals": [
+    "LOPS FY7: electromagnetic induction, Lenz's law and eddy currents",
+    "LOPS FY7: reflection, refraction and total internal reflection of light",
+    "Clarification: an applied lesson, not a revision: the ideas of the module are combined in a new, everyday situation (wireless charging, the induction hob, the fibre link)"
+  ],
+  "prerequisites": [
+    "fy7-6",
+    "fy7-12"
+  ],
+  "glossary": [
+    "langaton lataus",
+    "induktioliesi",
+    "vaimennus",
+    "pyörrevirta",
+    "kokonaisheijastuminen",
+    "valokuitu",
+    "desibeli"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

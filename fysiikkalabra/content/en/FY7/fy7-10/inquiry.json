@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "contribution": "The law of reflection of light $\\beta = \\alpha_1$ and the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ with the refractive index $n = c : v$, the cause of refraction from wavefronts, partial reflection and apparent depth. With the simulation the student notices that the ratio of the sines stays constant but the ratio of the angles does not; as the LOPS experiment the refractive index of acrylic is determined from the slope of the graph of the sines.",
+  "learn": [
+    "explain the reflection and refraction of light at the boundary of two materials and the cause of refraction.",
+    "calculate angles of reflection and refraction, refractive indices and the speed of light in a material.",
+    "determine the refractive index of a material from measured angles as the slope of a graph."
+  ],
+  "prior": [
+    "Light is electromagnetic wave motion, and in a vacuum its speed is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$ (chapter *Electromagnetic radiation and the black-body spectrum*)",
+    "A wave is reflected so that the angle of reflection is equal to the angle of incidence, when the angles are measured from the normal (chapter *Reflection and diffraction of waves*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Put a straw in a glass of water and look at the glass obliquely from above: the straw seems to break at the surface of the water, and the part of it in the water seems to be shifted sideways. The bottom of a swimming pool seems to be closer than it is, and a still lake mirrors the trees on the shore. Spectacles, camera lenses and optical fibres are all based on what happens to light at the boundary of two materials.",
+      "question": "What happens to light when it meets the surface of water, and why does a straw seem to break?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Review: the law of reflection",
+      "prompt": "A wave hits a flat wall so that the angle between its direction of travel and the normal of the wall is $30^\\circ$. In which direction does the reflected wave travel?",
+      "choices": [
+        {
+          "text": "On the other side of the normal, at an angle of $30^\\circ$ from the normal.",
+          "correct": true,
+          "feedback": "Correct. The angle of reflection is equal to the angle of incidence when both are measured from the normal (chapter *Reflection and diffraction of waves*). Today the same law holds for light."
+        },
+        {
+          "text": "On the other side of the normal, at an angle of $60^\\circ$ from the normal.",
+          "feedback": "The angle $60^\\circ$ is the angle between the incident wave and the surface of the wall. The law of reflection concerns angles measured from the normal: the angle of reflection is $30^\\circ$ (chapter *Reflection and diffraction of waves*)."
+        },
+        {
+          "text": "Back along the same path, because the wall stops the wave.",
+          "feedback": "A wave returns along the same path only when it arrives perpendicular to the wall. A wave arriving obliquely is reflected to the other side of the normal at an equal angle (chapter *Reflection and diffraction of waves*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: a ray into water",
+      "prompt": "A laser beam arrives from the air at the surface of water so that the angle of incidence measured from the normal is $40^\\circ$. How does the ray continue in the water?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "It is refracted towards the normal: the angle of refraction is smaller than $40^\\circ$.",
+          "correct": true,
+          "feedback": "The values of the model support this: at an angle of incidence of $40^\\circ$ the angle of refraction is $28.9^\\circ$. Light slows down in water, and when it slows down it turns closer to the normal. Only a ray arriving perpendicularly, $\\alpha_1 = 0^\\circ$, does not change its direction."
+        },
+        {
+          "text": "It continues straight, because water is transparent and light passes through it.",
+          "feedback": "The values of the model disprove this: at an angle of incidence of $40^\\circ$ the angle of refraction is $28.9^\\circ$. Transparency means that light can pass through the material, but at the boundary the speed of light changes, and a ray arriving obliquely changes its direction."
+        },
+        {
+          "text": "It is refracted away from the normal: the angle of refraction is greater than $40^\\circ$.",
+          "feedback": "The values of the model disprove this: the angle of refraction is $28.9^\\circ$. Light is refracted away from the normal when it passes into an optically less dense material, for example from water into air. From air into water light slows down and is refracted towards the normal."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: double the angle of incidence",
+      "prompt": "The ray still arrives from the air into the water. The angle of incidence is doubled from $30^\\circ$ to $60^\\circ$. How does the angle of refraction change?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "It doubles, because the angle of refraction is proportional to the angle of incidence.",
+          "feedback": "The values of the model disprove this: the angle of refraction increases from $22.1^\\circ$ to $40.6^\\circ$, not to $44.2^\\circ$. The law of refraction concerns the sines of the angles: $\\sin\\alpha_1 : \\sin\\alpha_2$ stays the same, but the ratio of the angles does not."
+        },
+        {
+          "text": "It increases, but by less than a factor of two.",
+          "correct": true,
+          "feedback": "The values of the model support this: the angle of refraction increases from $22.1^\\circ$ to $40.6^\\circ$, that is, by a factor of about $1.84$. The constant is the ratio of the sines of the angles, $\\sin\\alpha_1 : \\sin\\alpha_2 = 1.33$, and the sine increases more and more slowly at large angles."
+        },
+        {
+          "text": "It stays the same, because the materials and their refractive indices are the same.",
+          "feedback": "The values of the model disprove this: the angle of refraction increases from $22.1^\\circ$ to $40.6^\\circ$. The refractive indices determine how much the ray is refracted, but the angle of refraction also depends on the angle of incidence."
+        },
+        {
+          "text": "It increases by more than a factor of two, because the ray is refracted more steeply.",
+          "feedback": "The values of the model disprove this: the angle of refraction increases from $22.1^\\circ$ to only $40.6^\\circ$. When the angle of incidence increases, the angle of refraction increases more and more slowly, and at most it is only $48.8^\\circ$ in water."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "A laser beam hits the boundary of two materials at the centre of a protractor disc. Choose the materials and the angle of incidence, and follow the reflected and the refracted ray.",
+      "howto": "Choose the material above and the material below the boundary and adjust the angle of incidence $\\alpha_1$. The laser is in the upper material, and the ray hits the boundary at the centre of the protractor disc. The dashed line is the normal of the boundary, and all angles are measured from it: $\\alpha_1$ is the angle of incidence, $\\beta$ the angle of reflection and $\\alpha_2$ the angle of refraction. On the rim of the disc there is a mark every $10^\\circ$ and a longer mark every $30^\\circ$. The brighter and thicker the ray, the greater the share of the light that travels along it. In the readout you see the angles, their sines and the reflected share $R$.",
+      "model": "The model uses the refractive indices of yellow light (wavelength $589\\,\\text{nm}$): air $1.00$, water $1.33$, acrylic $1.49$, glass $1.52$ and diamond $2.42$. The boundary is flat and smooth, and the materials are uniform and transparent, so they do not absorb light. The reflected share is calculated for unpolarised light, and the rest of the light continues as the refracted ray. If the law of refraction gave $\\sin\\alpha_2 > 1$, there would be no refracted ray, and all the light is reflected (chapter *Total internal reflection and the optical fibre*). The readings are values calculated by the model, not measurements.",
+      "calc": "The angle of reflection is $\\beta = \\alpha_1$ according to the law of reflection. The angle of refraction is found from the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$:\n\n$$\\sin\\alpha_2 = \\frac{n_1 \\sin\\alpha_1}{n_2}$$\n\nThe reflected share $R$ is calculated from Fresnel's equations, which are not part of the upper secondary syllabus; for example, about $2\\,\\%$ of light arriving perpendicular from air to water is reflected. The refracted ray carries the share $100\\,\\% - R$."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: from air to water at different angles of incidence",
+      "intro": "Test predictions 1 and 2. Above is air and below is water; change only the angle of incidence. Record at least the angles of incidence $0^\\circ$, $30^\\circ$ and $60^\\circ$, and if you like also $20^\\circ$, $40^\\circ$ and $80^\\circ$. Compare the angle of reflection with the angle of incidence and the angle of refraction with the angle of incidence.",
+      "initial": {
+        "m1": "ilma",
+        "m2": "vesi",
+        "alpha": 0
+      },
+      "locked": [
+        "m1",
+        "m2"
+      ],
+      "vary": "alpha",
+      "names": {
+        "alpha": "angle of incidence α₁",
+        "m1": "material above",
+        "m2": "material below"
+      },
+      "units": {
+        "alpha": "°",
+        "m1": "",
+        "m2": ""
+      },
+      "values": {
+        "m1": {
+          "ilma": "air",
+          "vesi": "water",
+          "akryyli": "acrylic",
+          "lasi": "glass",
+          "timantti": "diamond"
+        },
+        "m2": {
+          "ilma": "air",
+          "vesi": "water",
+          "akryyli": "acrylic",
+          "lasi": "glass",
+          "timantti": "diamond"
+        }
+      },
+      "measure": [
+        {
+          "key": "beta",
+          "label": "$\\beta$ (°)"
+        },
+        {
+          "key": "alpha2",
+          "label": "$\\alpha_2$ (°)"
+        },
+        {
+          "key": "sin1",
+          "label": "$\\sin\\alpha_1$"
+        },
+        {
+          "key": "sin2",
+          "label": "$\\sin\\alpha_2$"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: different materials",
+      "intro": "Above is air and the angle of incidence is $50^\\circ$; change only the material below. Record the angle of refraction when below there is water, acrylic, glass and diamond, and compare the angles of refraction with the refractive indices of the materials.",
+      "initial": {
+        "m1": "ilma",
+        "m2": "vesi",
+        "alpha": 50
+      },
+      "locked": [
+        "m1",
+        "alpha"
+      ],
+      "vary": "m2",
+      "names": {
+        "alpha": "angle of incidence α₁",
+        "m1": "material above",
+        "m2": "material below"
+      },
+      "units": {
+        "alpha": "°",
+        "m1": "",
+        "m2": ""
+      },
+      "values": {
+        "m1": {
+          "ilma": "air",
+          "vesi": "water",
+          "akryyli": "acrylic",
+          "lasi": "glass",
+          "timantti": "diamond"
+        },
+        "m2": {
+          "ilma": "air",
+          "vesi": "water",
+          "akryyli": "acrylic",
+          "lasi": "glass",
+          "timantti": "diamond"
+        }
+      },
+      "measure": [
+        {
+          "key": "n2",
+          "label": "$n_2$"
+        },
+        {
+          "key": "alpha2",
+          "label": "$\\alpha_2$ (°)"
+        },
+        {
+          "key": "sin2",
+          "label": "$\\sin\\alpha_2$"
+        }
+      ],
+      "min": 3
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: reflection and refraction",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "What is the connection between the angle of reflection and the angle of incidence? For every row of experiment 1 (except $0^\\circ$), calculate $\\sin\\alpha_1 : \\sin\\alpha_2$ and compare it with the ratio of the angles $\\alpha_1 : \\alpha_2$. Which of them stays the same? How does the angle of refraction in experiment 2 depend on the refractive index of the material below?",
+      "model": "On every row the angle of reflection is the same as the angle of incidence, $\\beta = \\alpha_1$. A ray arriving perpendicularly ($0^\\circ$) continues straight into the water. Otherwise the ray is refracted towards the normal: $30^\\circ \\to 22.1^\\circ$ and $60^\\circ \\to 40.6^\\circ$. The ratio of the angles changes ($1.36$ and $1.48$), but on every row the ratio of the sines is $\\sin\\alpha_1 : \\sin\\alpha_2 = 1.33$, the same as the refractive index of water. In experiment 2 the angle of refraction decreases as the refractive index increases: $35.2^\\circ$ in water, $30.9^\\circ$ in acrylic, $30.3^\\circ$ in glass and $18.5^\\circ$ in diamond. On every row $n_2 \\sin\\alpha_2 = \\sin 50^\\circ = 0.766$. The regularity is the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$. The values are calculated by the model.",
+      "criteria": [
+        "I noted that the angle of reflection is always equal to the angle of incidence.",
+        "I noted that from air into water the ray is refracted towards the normal and a ray arriving perpendicularly is not refracted.",
+        "I calculated that the ratio of the sines stays at about $1.33$ but the ratio of the angles changes.",
+        "I noted from experiment 2 that a greater refractive index refracts the ray more, and I connected the observations to the law of refraction."
+      ]
+    },
+    {
+      "id": "mittaus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Measurement: the refractive index of acrylic",
+      "source": "example",
+      "figure": "fy7-10/fit",
+      "text": "A group did an experiment in the school laboratory in which the beam of a laser was directed from the air to the centre of the flat face of a semicircular acrylic block on a protractor disc. In the acrylic the light travels from the centre straight towards the curved surface, so it is not refracted at the curved surface, and the angle of refraction can be read from the protractor disc. The group read the angles to the nearest degree.\n\n| $\\alpha_1$ (°) | $\\alpha_2$ (°) |\n| --- | --- |\n| $10$ | $7$ |\n| $20$ | $13$ |\n| $30$ | $20$ |\n| $40$ | $26$ |\n| $50$ | $31$ |\n| $60$ | $36$ |\n| $70$ | $39$ |\n\nThe group calculated the sines of the angles and drew a graph with Vernier Graphical Analysis, with $\\sin\\alpha_1$ on the vertical axis and $\\sin\\alpha_2$ on the horizontal axis. The program fitted the line $\\sin\\alpha_1 = A \\sin\\alpha_2 + B$ to the points and gave the slope $A = 1.489$, its uncertainty $\\Delta A = 0.016$ and the constant term $B = -0.004$. In real series of measurements the data points do not usually lie exactly on one line because of measurement uncertainty.",
+      "question": {
+        "type": "numeric",
+        "prompt": "Determine the refractive index of acrylic from the measurement. The refractive index of air is $1.00$.",
+        "answer": 1.4895,
+        "unit": "",
+        "tolerance": 0.02,
+        "hints": [
+          "Write the law of refraction so that $\\sin\\alpha_1$ is on the left-hand side of the equation. What is the slope then?",
+          "From the law of refraction $\\sin\\alpha_1 = \\tfrac{n_2}{n_1} \\sin\\alpha_2$, so the slope is $A = n_2 : n_1$.",
+          "$n_2 = A \\cdot n_1 = 1.489 \\cdot 1.00$."
+        ],
+        "mistakes": [
+          {
+            "value": 0.671,
+            "feedback": "You calculated the reciprocal of the slope. On the vertical axis is $\\sin\\alpha_1$ (air) and on the horizontal axis $\\sin\\alpha_2$ (acrylic), so $A = n_2 : n_1$ and $n_2 = A n_1$. The refractive index must be greater than $1$."
+          },
+          {
+            "value": 1.79,
+            "feedback": "You calculated the ratio of the angles $70^\\circ : 39^\\circ$. The law of refraction concerns the sines of the angles, and the refractive index is found from the slope of the graph of the sines, which takes all the data points into account."
+          }
+        ],
+        "solution": "**Given:** slope of the fitted line $A = 1.489$, $\\Delta A = 0.016$, constant term $B = -0.004$, refractive index of air $n_1 = 1.00$\n\n**Find:** the refractive index of acrylic $n_2$ (no unit)\n\n**Principle:** From the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ we get $\\sin\\alpha_1 = \\tfrac{n_2}{n_1} \\sin\\alpha_2$. When $\\sin\\alpha_1$ is plotted as a function of $\\sin\\alpha_2$, the points lie on a line through the origin whose slope is $n_2 : n_1$. The slope is read from the fitted line and not from individual points, because the line takes all the measurements into account. The constant term $B = -0.004$ is almost zero, as the model says it should be.\n\n**Reading the graph:** The fitted line passes approximately through the origin and the point $(0.60;\\ 0.89)$, so the slope is about $0.89 : 0.60 \\approx 1.48$; the exact value from the program is $A = 1.489$.\n\n**Formula:** $A = \\dfrac{n_2}{n_1}$, so $n_2 = A n_1$\n\n**Conversions:** Not needed: the sines and the refractive indices have no unit.\n\n**Substitution:** $n_2 = 1.489 \\cdot 1.00 = 1.489$\n\n**Answer:** $n_2 \\approx 1.49$, three significant figures, because the uncertainty of the slope, $0.016$, is of the size of the second decimal: $n_2 = 1.49 \\pm 0.02$.\n\n**Reasonableness:** The result is the same as the table value for acrylic, $1.49$. The ratio of the sines calculated from individual rows varies, for example $\\sin 10^\\circ : \\sin 7^\\circ = 1.42$ and $\\sin 50^\\circ : \\sin 31^\\circ = 1.49$, because a reading error of a degree is relatively large at small angles. The slope, which takes all the points into account, is therefore more reliable."
+      }
+    },
+    {
+      "id": "nopeus",
+      "stage": "tutki",
+      "type": "numeric",
+      "title": "The speed of light in acrylic",
+      "prompt": "According to the previous measurement the refractive index of acrylic is $1.49$. At what speed does light travel in acrylic? Give the answer in the form $\\ldots \\cdot 10^{8}\\,\\text{m/s}$, that is, write the coefficient as the answer.",
+      "answer": 2.0134,
+      "unit": "· 10⁸ m/s",
+      "tolerance": 0.02,
+      "hints": [
+        "What does the refractive index tell you about the speed of light in a material?",
+        "$n = c : v$, so $v = c : n$.",
+        "$v = 3.00 \\cdot 10^{8}\\,\\text{m/s} : 1.49$."
+      ],
+      "mistakes": [
+        {
+          "value": 4.47,
+          "feedback": "You multiplied the speed $c$ by the refractive index. In a material light travels more slowly than in a vacuum, so the speed is $v = c : n$, smaller than $3.00 \\cdot 10^{8}\\,\\text{m/s}$."
+        }
+      ],
+      "solution": "**Given:** refractive index of acrylic $n = 1.49$, speed of light in a vacuum $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$\n\n**Find:** the speed of light in acrylic $v$ in the form $\\ldots \\cdot 10^{8}\\,\\text{m/s}$\n\n**Principle:** The refractive index tells how many times more slowly light travels in a material than in a vacuum, so the speed in the material follows from the definition of the refractive index.\n\n**Formula:** $n = \\dfrac{c}{v}$, so $v = \\dfrac{c}{n}$\n\n**Conversions:** Not needed: the refractive index has no unit, so $v$ comes out in the same unit as $c$.\n\n**Substitution:** $v = \\dfrac{3.00 \\cdot 10^{8}\\,\\text{m/s}}{1.49} = 2.013 \\cdot 10^{8}\\,\\text{m/s}$\n\n**Answer:** $v \\approx 2.01 \\cdot 10^{8}\\,\\text{m/s}$, so the answer is $2.01$; three significant figures like the refractive index.\n\n**Reasonableness:** The speed is about two thirds of the speed in a vacuum, because $1 : 1.5 \\approx 0.67$, and $0.67 \\cdot 3.00 \\cdot 10^{8}\\,\\text{m/s} \\approx 2.0 \\cdot 10^{8}\\,\\text{m/s}$.",
+      "optional": true
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the theory and with the values of the model in the experiments. Then return to the question at the beginning: why does a straw in a glass of water seem to break at the surface of the water?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "A laser beam arrives from the air at the surface of water so that the angle between the ray and the surface of the water is $30^\\circ$. A student calculates the angle of refraction:\n\n$$\\begin{aligned} \\sin\\alpha_2 &= \\frac{1.00 \\cdot \\sin 30^\\circ}{1.33} \\\\ &= 0.376 \\\\ \\alpha_2 &= 22.1^\\circ \\end{aligned}$$\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The angle of incidence is measured from the normal: $\\alpha_1 = 60^\\circ$, so $\\alpha_2 = 40.6^\\circ$.",
+          "correct": true,
+          "feedback": "Correct. $30^\\circ$ is the angle between the ray and the surface, but the law of refraction concerns angles measured from the normal. The angle of incidence is $90^\\circ - 30^\\circ = 60^\\circ$, so $\\sin\\alpha_2 = \\sin 60^\\circ : 1.33 = 0.651$ and $\\alpha_2 = 40.6^\\circ$."
+        },
+        {
+          "text": "The refractive indices are the wrong way round: $\\sin\\alpha_2 = 1.33 \\cdot \\sin 30^\\circ$.",
+          "feedback": "The refractive indices are the right way round: the light comes from air, so $n_1 = 1.00$ and $n_2 = 1.33$. The error is in the angle: $30^\\circ$ was measured from the surface, and the angle of incidence measured from the normal is $60^\\circ$."
+        },
+        {
+          "text": "There is no error, because the angle of incidence can be measured from the surface or from the normal.",
+          "feedback": "The direction in which the angle is measured matters. The law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ holds only for angles measured from the normal. The angle of incidence is $60^\\circ$, and the angle of refraction $40.6^\\circ$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: the wall of an aquarium",
+      "prompt": "A ray from a lamp at the bottom of an aquarium hits the glass wall of the aquarium at an angle of incidence of $30.0^\\circ$, passes through the glass of uniform thickness and continues into the air of the room. The refractive index of water is $1.33$, that of glass $1.52$ and that of air $1.00$. What angle does the ray make with the normal of the glass surface in the air?",
+      "answer": 41.6823,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "The ray is refracted twice: from water into glass and from glass into air. The surfaces of the glass are parallel, so both surfaces have the same normal. What is the connection between the two angles of the ray in the glass?",
+        "In the glass the ray travels straight, so its angle to the normal is the same at both surfaces. Then $n_\\text{water} \\sin\\alpha_1 = n_\\text{glass} \\sin\\alpha_\\text{glass} = n_\\text{air} \\sin\\alpha_3$.",
+        "The refractive index of the glass cancels out: $\\sin\\alpha_3 = 1.33 \\cdot \\sin 30.0^\\circ : 1.00$."
+      ],
+      "mistakes": [
+        {
+          "value": 25.94,
+          "feedback": "This is the angle of the ray in the glass. The ray is refracted a second time when it passes from glass into air: $1.52 \\cdot \\sin 25.9^\\circ = 1.00 \\cdot \\sin\\alpha_3$."
+        },
+        {
+          "value": 22.08,
+          "feedback": "You used the refractive indices the wrong way round. The ray comes from water ($n = 1.33$) and finally goes into air ($n = 1.00$), so it is refracted away from the normal and the angle must increase."
+        },
+        {
+          "value": 39.9,
+          "feedback": "You multiplied the angle by the refractive index. The law of refraction concerns the sines of the angles: $\\sin\\alpha_3 = 1.33 \\cdot \\sin 30.0^\\circ$."
+        }
+      ],
+      "solution": "**Given:** angle of incidence in water $\\alpha_1 = 30.0^\\circ$, refractive index of water $n_1 = 1.33$, of glass $n_2 = 1.52$, of air $n_3 = 1.00$, glass of uniform thickness\n\n**Find:** the angle between the ray and the normal in air, $\\alpha_3$, in degrees\n\n**Principle:** The ray is refracted twice according to the law of refraction, from water into glass and from glass into air. The surfaces of the glass are parallel, so they have the same normal, and the ray in the glass makes the same angle $\\alpha_2$ with the normal of both surfaces. Therefore $n \\sin\\alpha$ is the same in all three materials, and the refractive index of the glass cancels out.\n\n**Formula:** $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ and $n_2 \\sin\\alpha_2 = n_3 \\sin\\alpha_3$, so $n_1 \\sin\\alpha_1 = n_3 \\sin\\alpha_3$ and $\\sin\\alpha_3 = \\dfrac{n_1 \\sin\\alpha_1}{n_3}$\n\n**Conversions:** Not needed: the refractive indices have no unit, and the angles are in degrees.\n\n**Substitution:** $\\sin\\alpha_3 = \\dfrac{1.33 \\cdot \\sin 30.0^\\circ}{1.00} = 1.33 \\cdot 0.500 = 0.665$, so $\\alpha_3 = 41.68^\\circ$\n\n**Answer:** $\\alpha_3 \\approx 41.7^\\circ$, three significant figures like the angle of incidence $30.0^\\circ$ and the refractive indices.\n\n**Reasonableness:** As an intermediate step, in the glass $\\sin\\alpha_2 = 0.665 : 1.52 = 0.4375$ and $\\alpha_2 = 25.9^\\circ$, and from glass into air $1.52 \\cdot 0.4375 = 0.665$, the same result. The angle in air is greater than in water, because air is optically less dense than water."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. In level 1 tasks one formula is used, in level 2 tasks two steps are combined or the angles are read from a figure, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: why light is refracted",
+      "prompt": "Why does light arriving obliquely from air into water change its direction at the surface of the water?",
+      "choices": [
+        {
+          "text": "Light slows down in water, and the part of the wavefront that reaches the water first slows down first.",
+          "correct": true,
+          "feedback": "Correct. When one end of the front already travels more slowly in the water and the other still faster in the air, the front turns. This is why in the law of refraction the ratio of the sines is the same as the ratio of the speeds."
+        },
+        {
+          "text": "The surface of the water pushes the light towards the normal in the same way that a mirror reflects it.",
+          "feedback": "The surface does not push the light. The change of direction is caused by the change of speed: the part of the wavefront that reaches the water first slows down first, and the front turns. A mirror reflects light back into the same material."
+        },
+        {
+          "text": "The frequency of light decreases in water, and light of a lower frequency travels in a different direction.",
+          "feedback": "The frequency does not change at the boundary, because it is set by the source of the light. The speed and the wavelength decrease, and the change of speed turns a wavefront arriving obliquely."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: the refractive index of oil",
+      "prompt": "A laser beam arrives from the air into cooking oil. The angle of incidence is $50.0^\\circ$ and the angle of refraction $31.4^\\circ$. The refractive index of air is $1.00$. What is the refractive index of the oil?",
+      "answer": 1.4703,
+      "unit": "",
+      "tolerance": 0.02,
+      "hints": [
+        "Which law connects the angle of incidence, the angle of refraction and the refractive indices?",
+        "$n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, so $n_2 = n_1 \\sin\\alpha_1 : \\sin\\alpha_2$.",
+        "$n_2 = 1.00 \\cdot \\sin 50.0^\\circ : \\sin 31.4^\\circ$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.68,
+          "feedback": "You calculated the ratio the wrong way round. The oil is optically denser, because the ray was refracted towards the normal, so its refractive index must be greater than $1$: $n_2 = \\sin\\alpha_1 : \\sin\\alpha_2$."
+        },
+        {
+          "value": 1.592,
+          "feedback": "You calculated the ratio of the angles $50.0^\\circ : 31.4^\\circ$. The law of refraction concerns the sines of the angles: $n_2 = \\sin 50.0^\\circ : \\sin 31.4^\\circ$."
+        }
+      ],
+      "solution": "**Given:** angle of incidence $\\alpha_1 = 50.0^\\circ$, angle of refraction $\\alpha_2 = 31.4^\\circ$, refractive index of air $n_1 = 1.00$\n\n**Find:** the refractive index of the oil $n_2$ (no unit)\n\n**Principle:** The ray passes from air into oil and is refracted according to the law of refraction. When the angle of incidence, the angle of refraction and the refractive index of air are known, the refractive index of the oil can be solved from the law.\n\n**Formula:** $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, so $n_2 = \\dfrac{n_1 \\sin\\alpha_1}{\\sin\\alpha_2}$\n\n**Conversions:** Not needed: the angles are in degrees, and the refractive indices have no unit.\n\n**Substitution:** $n_2 = \\dfrac{1.00 \\cdot \\sin 50.0^\\circ}{\\sin 31.4^\\circ} = \\dfrac{0.7660}{0.5210} = 1.470$\n\n**Answer:** $n_2 \\approx 1.47$, three significant figures like the angles.\n\n**Reasonableness:** The refractive index is greater than $1$, because the ray was refracted towards the normal. The value is between $1.33$ for water and $1.52$ for glass, and the refractive indices of cooking oils are about $1.47$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: the broken straw",
+      "prompt": "Use refraction to explain why a straw in a glass of water seems to break at the surface of the water when the glass is looked at from the side, obliquely from above.",
+      "model": "The rays from the part of the straw that is in the water travel from water into air. Air is optically less dense, so the rays are refracted away from the normal at the surface of the water. The eye and the brain assume that the light has travelled in a straight line, so they extend the rays that reach the eye backwards along straight lines. The extensions meet at a point that is higher than the real point of the straw. Therefore the part of the straw that is in the water seems to be raised and shifted, while the part above the surface of the water is seen in its right place. The straw seems to break exactly at the surface of the water, because that is where the light changes material.",
+      "criteria": [
+        "I say that the light from the part of the straw that is in the water passes from water into air and is refracted at the surface of the water.",
+        "I give the direction of refraction correctly: from water into air the ray is refracted away from the normal.",
+        "I explain that the eye interprets the light as having travelled straight, so the part of the straw in the water seems to be higher than it is.",
+        "I explain why the break is exactly at the surface of the water: only light from the part in the water is refracted."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally two quick questions. Answer first yourself and open the answer only then."
+    }
+  ]
+}

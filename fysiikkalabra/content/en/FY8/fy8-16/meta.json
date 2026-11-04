@@ -1,0 +1,22 @@
+{
+  "id": "fy8-16",
+  "course": "FY8",
+  "title": "The evolution of the universe",
+  "goals": [
+    "LOPS FY8: the evolution of the universe",
+    "Specification: the main features of the course of development from the Big Bang to the present, and the significance of dark matter and dark energy"
+  ],
+  "prerequisites": [
+    "fy8-15"
+  ],
+  "glossary": [
+    "redshift",
+    "Big Bang",
+    "cosmic background radiation",
+    "dark matter",
+    "dark energy"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

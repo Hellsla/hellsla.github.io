@@ -1,0 +1,400 @@
+{
+  "version": 1,
+  "contribution": "Fissio, ketjureaktio ja fuusio sidosenergian avulla: reaktioenergia $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$ atomimassoista, kasvukerroin $k$ ja $N_g = N_0 k^g$, ydinreaktorin hidastin ja säätösauvat sekä Suomen ydinvoimalat, loppusijoitus Onkaloon ja ydinvoimakeskustelu fysiikan näkökulmasta.",
+  "learn": [
+    "selittämään sidosenergian avulla, miksi sekä fissio että fuusio vapauttavat energiaa.",
+    "laskemaan ydinreaktion energian atomimassoista.",
+    "selittämään, miten ketjureaktio pidetään reaktorissa hallittuna, ja arvioimaan ydinvoimaa koskevia väitteitä fysiikan avulla."
+  ],
+  "prior": [
+    "Ytimen massavaje vastaa sen sidosenergiaa, ja $1\\,\\text{u}$ vastaa energiaa $931{,}5\\,\\text{MeV}$ (luku *Massavaje ja ytimen sidosenergia*)",
+    "Radioaktiivisen aineen aktiivisuus pienenee hajoamislain mukaan puoliintumisajan välein puoleen (luku *Hajoamislaki ja puoliintumisaika*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "Olkiluodon kolmas yksikkö tuottaa yksinään sähkötehoa $1600\\,\\text{MW}$, ja sen reaktorin sydämessä on noin $130$ tonnia uraania. Hiilivoimala polttaisi saman sähkön tuottamiseen noin $14\\,000$ tonnia hiiltä joka päivä. Ydinvoimalan energia tulee atomiytimistä, jotka jakautuvat kahtia. Jokainen jakautuminen vapauttaa neutroneja, jotka voivat jakaa uusia ytimiä.",
+      "question": "Mistä ytimen jakautumisessa vapautuva energia on peräisin, ja miten reaktori estää neutronien ketjua karkaamasta käsistä?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Kertaa: massavaje",
+      "prompt": "Helium-4-ytimen massa on pienempi kuin sen kahden protonin ja kahden neutronin massojen summa. Mitä tämä massavaje kertoo?",
+      "choices": [
+        {
+          "text": "Ytimen kokoaminen vapautti energiaa, joten sen hajottaminen osiin vaatii saman verran energiaa.",
+          "correct": true,
+          "feedback": "Oikein. Massavajetta vastaava energia $E = \\Delta m\\,c^2$ on ytimen sidosenergia (luku *Massavaje ja ytimen sidosenergia*). Tänään selviää, miksi energiaa vapautuu sekä raskaan ytimen jakautuessa että kevyiden yhtyessä."
+        },
+        {
+          "text": "Osa nukleoneista on muuttunut energiaksi, joten ytimessä on vähemmän nukleoneja kuin luullaan.",
+          "feedback": "Heliumytimessä on neljä nukleonia, eikä yksikään ole hävinnyt. Massa on pienempi, koska nukleonit ovat sitoutuneet toisiinsa, ja sidosenergiaa vastaava massa on poistunut ytimestä sitä muodostettaessa (luku *Massavaje ja ytimen sidosenergia*)."
+        },
+        {
+          "text": "Mittauksissa on virhe, koska massa säilyy aina kaikissa reaktioissa.",
+          "feedback": "Massaero on mitattu hyvin tarkasti, eikä se ole virhe. Ydinreaktioissa säilyy kokonaisenergia, ja massa on osa sitä: $E = mc^2$. Sitoutuneiden nukleonien massa on pienempi kuin vapaiden (luku *Massavaje ja ytimen sidosenergia*)."
+        },
+        {
+          "text": "Ytimen elektronit ovat karanneet, ja niiden massa puuttuu ytimestä.",
+          "feedback": "Ytimessä ei ole elektroneja, vaan protoneja ja neutroneja. Massavaje syntyy nukleonien sitoutumisesta: sidosenergiaa vastaava massa $\\tfrac{E_\\text{B}}{c^2}$ puuttuu ytimestä (luku *Massavaje ja ytimen sidosenergia*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 1: tasainen teho",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "Uraani-235:n fissio tuottaa keskimäärin $2{,}5$ uutta neutronia. Reaktori tuottaa tasaista tehoa, kun fissioita tapahtuu joka hetki yhtä paljon. Kuinka moni yhden fission neutroneista saa silloin keskimäärin aikaan uuden fission?",
+      "choices": [
+        {
+          "text": "Keskimäärin tasan yksi; muut karkaavat tai absorboituvat.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä. Kun säätösauvat olivat $25\\,\\%$ sisällä, kasvukerroin oli $k = 1{,}00$ ja sukupolvessa $20$ neutroneja oli $934$, lähellä alun $1000$:ta. Sauvat ulos vedettyinä ($k = 1{,}20$) määrä kasvoi $39\\,387$:ään ja $50\\,\\%$ sisällä ($k = 0{,}80$) putosi $7$:ään."
+        },
+        {
+          "text": "Kaikki $2{,}5$, koska jokaisen neutronin pitää jakaa uusi ydin.",
+          "feedback": "Mallin arvot kumoavat tämän: jos neutronia kohti syntyy yli yksi uusi neutroni, ketju kasvaa. Kun sauvat olivat ulkona ($k = 1{,}20$), neutroneja oli sukupolvessa $20$ jo $39\\,387$. Tasainen teho vaatii, että joka sukupolvessa fissioita on yhtä monta, eli $k = 1$."
+        },
+        {
+          "text": "Noin puolet eli $1{,}25$, jotta ketju pysyy hallinnassa.",
+          "feedback": "Mallin arvot kumoavat tämän: kun yksi neutroni tuottaa keskimäärin yli yhden uuden, määrä kasvaa joka sukupolvessa. Tasaisella teholla jokainen fissio aiheuttaa keskimäärin tasan yhden uuden fission; sauvojen ollessa $25\\,\\%$ sisällä ($k = 1{,}00$) neutroneja oli sukupolvessa $20$ yhä noin $1000$ ($934$)."
+        },
+        {
+          "text": "Ei yksikään, koska reaktori syöttää neutroneja ulkoisesta lähteestä.",
+          "feedback": "Mallin arvot kumoavat tämän: kun neutronit eivät aiheuta uusia fissioita riittävästi ($k = 0{,}80$), ketju sammuu, ja sukupolvessa $20$ neutroneja oli enää $7$. Reaktorin ketjureaktio ylläpitää itse itseään, kun jokainen fissio aiheuttaa keskimäärin yhden uuden."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Ennuste 2: pieni ylitys",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "Ketjussa on alussa $1000$ neutronia, ja kasvukerroin on $k = 1{,}04$: neutroneja on jokaisessa sukupolvessa $4\\,\\%$ enemmän kuin edellisessä. Kuinka monta neutronia ketjussa suunnilleen on $30$ sukupolven kuluttua?",
+      "choices": [
+        {
+          "text": "Noin $3000$, koska kasvu kertautuu sukupolvesta toiseen.",
+          "correct": true,
+          "feedback": "Mallin arvot tukevat tätä: sarjassa 1 neutroneja oli $1437$ sukupolvessa $10$, $1987$ sukupolvessa $20$ ja $3264$ sukupolvessa $30$. Mallin ennuste on $1000 \\cdot 1{,}04^{30} \\approx 3243$. Kun lisäys on aina $4\\,\\%$ senhetkisestä määrästä, kasvu kiihtyy."
+        },
+        {
+          "text": "Noin $1040$, koska $4\\,\\%$ on pieni ylitys.",
+          "feedback": "Mallin arvot kumoavat tämän: sukupolvessa $30$ neutroneja oli $3264$. Neljän prosentin kasvu toistuu jokaisessa sukupolvessa, joten määrä kerrotaan $30$ kertaa luvulla $1{,}04$: $1{,}04^{30} \\approx 3{,}2$."
+        },
+        {
+          "text": "Noin $2200$, koska joka sukupolvessa tulee $40$ neutronia lisää.",
+          "feedback": "Mallin arvot kumoavat tämän: sukupolvessa $30$ neutroneja oli $3264$, ei $2200$. Lisäys on $4\\,\\%$ *senhetkisestä* määrästä, joten se kasvaa ketjun kasvaessa: ensin $40$, sukupolven $20$ jälkeen jo noin $80$ neutronia sukupolvessa."
+        },
+        {
+          "text": "Yli miljoona, koska ketju kasvaa räjähdysmäisesti heti, kun $k > 1$.",
+          "feedback": "Mallin arvot kumoavat tämän: sukupolvessa $30$ neutroneja oli $3264$. Kasvu on eksponentiaalista, mutta kun $k$ on vain hieman yli $1$, se on alussa hidasta. Miljoonaan päästäisiin vasta noin $176$ sukupolven kuluttua."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "Reaktorin sydämessä on alussa $1000$ neutronia. Säädä säätösauvojen syvyyttä ja seuraa, miten neutronien määrä muuttuu sukupolvesta toiseen.",
+      "howto": "*Käynnistä* ajaa ketjua sukupolvi kerrallaan, ja *Pysäytä* pysäyttää sen; sukupolven voi valita myös liukusäätimellä *Sukupolvi* $0$–$30$. *Säätösauvat sisällä* $s$ säätää sauvojen syvyyttä $0$–$100\\,\\%$. *Arvonta* valitsee yhden kolmesta satunnaisesta sarjasta: sama sarja antaa aina saman tuloksen. Vasemmalla (kapealla näytöllä ylhäällä) harmaat pisteet ovat sukupolven neutroneja, enintään $160$ kerrallaan. Ajon aikana neutroni joko aiheuttaa fission (oranssi välähdys), katoaa säätösauvaan tai karkaa. Kuvaajassa oranssit pisteet ovat neutronien määrä $N$ kussakin sukupolvessa ja vaalea katkoviiva mallin ennuste $N_0 k^g$. *Nopeus* muuttaa vain ajon tahtia.",
+      "model": "Malli kuvaa ketjureaktiota sukupolvina, ei neutronien todellisia ratoja eikä aikaa: todellisessa reaktorissa sukupolvi kestää noin kymmenestuhannesosasekunnin. Jokainen neutroni aiheuttaa fission samalla todennäköisyydellä riippumatta muista neutroneista, ja fissio tuottaa $2$ tai $3$ uutta neutronia, keskimäärin $2{,}5$. Säätösauvat pienentävät fission todennäköisyyttä. Mallissa ei ole viivästyneitä neutroneja, lämpötilan vaikutusta eikä polttoaineen kulumista. Lukemat ovat mallin arvoja eivätkä mittauksia.",
+      "calc": "Neutroni aiheuttaa fission todennäköisyydellä $P_\\text{f} = (1{,}2 - 0{,}008\\,s) : 2{,}5$, kun $s$ on sauvojen syvyys prosentteina. Muuten se katoaa: säätösauvaan todennäköisyydellä $0{,}0032\\,s$, muuten karkaamalla tai absorboitumalla muualle. Fissio tuottaa $2$ tai $3$ neutronia yhtä todennäköisesti, joten kasvukerroin on $k = 2{,}5\\,P_\\text{f} = 1{,}2 - 0{,}008\\,s$. Seuraavan sukupolven neutronit ovat fissioissa syntyneet neutronit. Lukema $N_g : N_{g-1}$ on sarjan toteutunut kasvu edelliseen sukupolveen, ja $N_0 k^g$ mallin keskimääräinen ennuste."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 1: säätösauvat ja kasvukerroin",
+      "intro": "Testaa ennuste 1. Valitse sukupolvi $g = 20$ ja arvonnaksi sarja 1. Muuta vain säätösauvojen syvyyttä: kirjaa kasvukerroin $k$ ja neutronien määrä $N$ ainakin, kun sauvat ovat sisällä $0\\,\\%$, $25\\,\\%$ ja $50\\,\\%$.",
+      "initial": {
+        "s": 0,
+        "g": 20,
+        "sarja": "1"
+      },
+      "locked": [
+        "g",
+        "sarja"
+      ],
+      "vary": "s",
+      "min": 3,
+      "units": {
+        "s": "%"
+      },
+      "names": {
+        "s": "säätösauvat sisällä s",
+        "g": "sukupolvi g",
+        "sarja": "arvonta"
+      },
+      "values": {
+        "sarja": {
+          "1": "sarja 1",
+          "2": "sarja 2",
+          "3": "sarja 3"
+        }
+      },
+      "measure": [
+        {
+          "key": "k",
+          "label": "k"
+        },
+        {
+          "key": "N",
+          "label": "N"
+        }
+      ]
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Koe 2: kasvu sukupolvi sukupolvelta",
+      "intro": "Testaa ennuste 2. Säätösauvat ovat sisällä $20\\,\\%$, jolloin $k = 1{,}04$, ja arvonta on sarja 1. Muuta vain sukupolvea: kirjaa neutronien määrä $N$ ainakin sukupolvissa $0$, $10$, $20$ ja $30$.",
+      "initial": {
+        "s": 20,
+        "g": 0,
+        "sarja": "1"
+      },
+      "locked": [
+        "s",
+        "sarja"
+      ],
+      "vary": "g",
+      "min": 3,
+      "units": {
+        "s": "%"
+      },
+      "names": {
+        "s": "säätösauvat sisällä s",
+        "g": "sukupolvi g",
+        "sarja": "arvonta"
+      },
+      "values": {
+        "sarja": {
+          "1": "sarja 1",
+          "2": "sarja 2",
+          "3": "sarja 3"
+        }
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "model",
+          "label": "N₀kᵍ"
+        }
+      ]
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Johtopäätös: hallittu ketjureaktio",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Kirjoita taulukoidesi perusteella: Millä kasvukertoimen arvolla neutronien määrä pysyi suunnilleen vakiona, ja mitä tapahtui pienemmillä ja suuremmilla arvoilla? Miten neutronien määrä kasvoi, kun $k = 1{,}04$? Miksi reaktorin kasvukerroin on pidettävä hyvin tarkasti arvossa $1$?",
+      "model": "Kokeessa 1 sukupolvessa $20$ neutroneja oli mallin arvoina $39\\,387$, kun sauvat olivat ulkona ($k = 1{,}20$), $934$, kun ne olivat $25\\,\\%$ sisällä ($k = 1{,}00$), ja vain $7$, kun ne olivat $50\\,\\%$ sisällä ($k = 0{,}80$). Kun jokainen neutroni tuottaa keskimäärin tasan yhden uuden fission neutronin, ketju pysyy tasaisena; satunnaisuuden vuoksi määrä vaihtelee hieman. Kokeessa 2, kun $k = 1{,}04$, neutroneja oli $1000$, $1437$, $1987$ ja $3264$ sukupolvissa $0$, $10$, $20$ ja $30$: määrä kerrottiin joka sukupolvessa luvulla $1{,}04$, joten kasvu kiihtyi. Koska sukupolvi kestää todellisessa reaktorissa vain noin kymmenestuhannesosasekunnin, pienikin ylitys kasvattaisi tehoa nopeasti. Siksi kasvukerroin pidetään säätösauvoilla tarkasti arvossa $1$, ja viivästyneet neutronit antavat säädölle aikaa.",
+      "criteria": [
+        "Kerron mallin arvoilla, että määrä pysyi vakiona, kun $k = 1$, sammui, kun $k < 1$, ja kasvoi, kun $k > 1$.",
+        "Kuvaan kokeen 2 arvoilla, että kasvu kertautui sukupolvesta toiseen eikä ollut tasaista.",
+        "Perustelen, että lyhyen sukupolven vuoksi pienikin ylitys kasvattaisi tehoa nopeasti.",
+        "Kutsun simulaation lukuja mallin arvoiksi enkä mittauksiksi."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Ydinvoima Suomessa"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Palaa ennusteisiisi",
+      "optional": true,
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin. Palaa sitten alun kysymykseen: mistä uraaniytimen jakautumisessa vapautuva energia on peräisin, ja miksi gramma uraania vastaa tonneja hiiltä?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Etsi virhe",
+      "optional": true,
+      "prompt": "Opiskelija laskee esimerkin reaktion ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\rightarrow {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}$ energian. Hän kirjoittaa\n\n$$\\begin{aligned} &\\Delta m = 235{,}0439282\\,\\text{u} \\\\ &\\quad - 140{,}9144033\\,\\text{u} \\\\ &\\quad - 91{,}9261731\\,\\text{u} \\\\ &\\quad - 3 \\cdot 1{,}0086649\\,\\text{u} \\\\ &= -0{,}8226429\\,\\text{u} \\end{aligned}$$\n\nja saa tulokseksi $Q = -0{,}8226429 \\cdot 931{,}5\\,\\text{MeV} \\approx -766\\,\\text{MeV}$. Hän päättelee, että fissio sitoo energiaa.\n\nMissä on virhe?",
+      "choices": [
+        {
+          "text": "Lähtöaineiden massasta puuttuu ytimeen osuva neutroni.",
+          "correct": true,
+          "feedback": "Oikein. Lähtöaineita ovat uraaniydin *ja* neutroni, joten $m_\\text{alku} = 235{,}0439282\\,\\text{u} + 1{,}0086649\\,\\text{u} = 236{,}0525931\\,\\text{u}$. Silloin $\\Delta m = 0{,}1860220\\,\\text{u}$ ja $Q \\approx 173\\,\\text{MeV}$. Negatiivinen tulos oli merkki virheestä: uraanin fissio vapauttaa energiaa, ja massaero on vain noin $0{,}08\\,\\%$ lähtöaineiden massasta."
+        },
+        {
+          "text": "Atomimassoja ei saa käyttää, koska niissä ovat mukana myös elektronit.",
+          "feedback": "Atomimassat käyvät, koska järjestyslukujen summa säilyy: $92 = 56 + 36$, joten molemmilla puolilla on yhtä monta elektronia ja niiden massat kumoutuvat. Virhe on se, että lähtöaineista puuttuu ytimeen osuva neutroni."
+        },
+        {
+          "text": "Tuotteiden neutroneja on kaksi eikä kolme.",
+          "feedback": "Neutroneja on kolme: massaluku säilyy, $1 + 235 = 141 + 92 + 3$. Virhe on lähtöaineissa: ytimeen osuvan neutronin massa $1{,}0086649\\,\\text{u}$ on unohtunut."
+        },
+        {
+          "text": "Massaero olisi pitänyt kertoa luvulla $c^2$ eikä luvulla $931{,}5\\,\\text{MeV}$.",
+          "feedback": "Kertominen tekijällä $931{,}5\\,\\tfrac{\\text{MeV}}{c^2} \\cdot c^2$ on juuri massaeron muuntamista energiaksi, kun massa on atomimassayksikköinä. Virhe on massaerossa: lähtöaineista puuttuu ytimeen osuva neutroni."
+        }
+      ]
+    },
+    {
+      "id": "keskustelu",
+      "stage": "sovella",
+      "type": "explain",
+      "title": "Ydinvoimakeskustelu fysiikan silmin",
+      "prompt": "Arvioi kolmea keskustelussa kuultua väitettä fysiikan näkökulmasta. Kerro, mikä niissä pitää paikkansa ja mikä ei, ja perustele luvun tiedoilla.\n\n1. ”Ydinvoimala voi räjähtää kuin atomipommi.”\n2. ”Ydinsähkö on päästötöntä, joten sillä ei ole haittoja.”\n3. ”Käytetty polttoaine on vaarallista vain muutaman vuosikymmenen, koska sen aktiivisuus pienenee nopeasti.”",
+      "model": "1. Ei pidä paikkaansa. Kevytvesireaktorin polttoaineessa uraani-235:tä on noin $3$–$5\\,\\%$, kun taas ydinaseissa käytetään noin $90\\,\\%$:iin rikastettua uraania. Lisäksi kun vesi kuumenee tai kiehuu, se hidastaa neutroneja huonommin ja ketjureaktio heikkenee. Vakavan onnettomuuden vaara on jälkilämmön aiheuttama polttoaineen sulaminen ja radioaktiivisten aineiden vapautuminen, kuten Fukushimassa 2011.\n\n2. Osittain totta. Elinkaaren kasvihuonepäästöt ovat noin $12\\,\\tfrac{\\text{g}}{\\text{kWh}}$ hiilidioksidiekvivalenttia, samaa luokkaa kuin tuulivoimalla. Haittoja silti on: pitkäikäinen käytetty polttoaine, pieni mutta laajavaikutteinen onnettomuusriski, uraanin louhinnan ympäristövaikutukset sekä kallis ja hidas rakentaminen.\n\n3. Ei pidä paikkaansa. Cesium-137:n ja strontium-90:n puoliintumisaika on noin $30\\,\\text{a}$, joten niiden aktiivisuus pienenee tuhannesosaan noin $300$ vuodessa. Plutonium-239:n puoliintumisaika on kuitenkin $24\\,100\\,\\text{a}$, joten polttoaine on eristettävä satojatuhansia vuosia, ja siksi se loppusijoitetaan kuparikapseleissa syvälle kallioon Onkaloon.",
+      "criteria": [
+        "Perustelen rikastusasteella tai hidastimen toiminnalla, miksi reaktori ei voi räjähtää ydinaseen tavoin.",
+        "Erotan pienet elinkaaripäästöt muista haitoista ja nimeän vähintään kaksi niistä.",
+        "Perustelen puoliintumisajoilla, että osa aineista on vaarallisia satojatuhansia vuosia.",
+        "Erotan fysiikan tiedon arvovalinnoista enkä esitä mielipidettä tosiasiana."
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Sovella: ITERin fuusioteho",
+      "prompt": "ITER-koereaktorin tavoitteena on tuottaa deuteriumin ja tritiumin fuusiossa tehoa $500\\,\\text{MW}$. Jokaisessa fuusiossa ${}^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\rightarrow {}^{4}_{2}\\text{He} + {}^{1}_{0}\\text{n}$ vapautuu energiaa $17{,}6\\,\\text{MeV}$. Kuinka monta fuusioreaktiota plasmassa on tapahduttava sekunnissa? Anna vastaus yksikössä $10^{20}\\,\\tfrac{1}{\\text{s}}$.",
+      "answer": 1.77,
+      "unit": "10²⁰ 1/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Teho kertoo, kuinka monta joulea energiaa vapautuu sekunnissa. Kuinka monta joulea vapautuu yhdessä reaktiossa?",
+        "Muunna reaktioenergia jouleiksi sijoittamalla $1\\,\\text{MeV} = 10^{6} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "Yhdessä reaktiossa vapautuu $2{,}82 \\cdot 10^{-12}\\,\\text{J}$. Jaa teho $500 \\cdot 10^{6}\\,\\text{W}$ tällä."
+      ],
+      "mistakes": [
+        {
+          "value": 1773351,
+          "feedback": "Muunsit megaelektronivoltit jouleiksi kuin ne olisivat elektronivoltteja. Etuliite mega tarkoittaa miljoonaa: $17{,}6\\,\\text{MeV} = 17{,}6 \\cdot 10^{6} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}$."
+        },
+        {
+          "value": 0.156,
+          "feedback": "Käytit fission energiaa $200\\,\\text{MeV}$. Tehtävän reaktio on deuteriumin ja tritiumin fuusio, jossa vapautuu $17{,}6\\,\\text{MeV}$."
+        }
+      ],
+      "solution": "**Annettu:** fuusioteho $P = 500\\,\\text{MW}$, yhden reaktion energia $Q = 17{,}6\\,\\text{MeV}$\n\n**Kysytty:** reaktioiden määrä sekunnissa $\\tfrac{N}{t}$ yksikössä $10^{20}\\,\\tfrac{1}{\\text{s}}$\n\n**Periaate:** Teho on vapautuva energia aikayksikössä. Jokainen reaktio vapauttaa saman energian $Q$, joten ajassa $t$ vapautuu energia $E = NQ$ ja teho on $P = \\tfrac{NQ}{t}$.\n\n**Kaava:** $P = \\dfrac{NQ}{t}$, josta $\\dfrac{N}{t} = \\dfrac{P}{Q}$\n\n**Muunnokset:** $P = 500\\,\\text{MW} = 500 \\cdot 10^{6}\\,\\text{W}$ ja $Q = 17{,}6\\,\\text{MeV} = 17{,}6 \\cdot 10^{6} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 2{,}8195 \\cdot 10^{-12}\\,\\text{J}$\n\n**Sijoitus:** $\\dfrac{N}{t} = \\dfrac{500 \\cdot 10^{6}\\,\\tfrac{\\text{J}}{\\text{s}}}{2{,}8195 \\cdot 10^{-12}\\,\\text{J}} = 1{,}7734 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}}$\n\n**Vastaus:** $1{,}77 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}}$, kolme merkitsevää numeroa kuten reaktioenergiassa $17{,}6\\,\\text{MeV}$.\n\n**Järkevyys:** Pyöreillä luvuilla $5 \\cdot 10^{8}\\,\\text{W} : (3 \\cdot 10^{-12}\\,\\text{J}) \\approx 1{,}7 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}}$. Määrä on valtava, mutta polttoainetta kuluu vähän: $1{,}77 \\cdot 10^{20}$ deuterium- ja tritiumparin massa on vain noin $1{,}5\\,\\text{mg}$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Harjoittele kolmella tasolla. Tason 1 tehtävissä käytetään yhtä yhtälöä, tason 2 tehtävissä muunnetaan yksiköitä tai yhdistetään kaksi yhtälöä, ja taso 3 vaatii päättelyä."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Käsite",
+      "prompt": "Miksi energiaa vapautuu sekä silloin, kun uraaniydin jakautuu, että silloin, kun vetyytimet yhtyvät heliumiksi?",
+      "choices": [
+        {
+          "text": "Kummassakin tuotteiden nukleonit ovat tiukemmin sidottuja kuin lähtöaineiden.",
+          "correct": true,
+          "feedback": "Oikein. Sidosenergia nukleonia kohti on suurimmillaan keskiraskailla ytimillä. Raskaan ytimen jakautuessa ja kevyiden yhtyessä siirrytään kuvaajalla ylöspäin, joten massa pienenee ja energiaa vapautuu."
+        },
+        {
+          "text": "Kummassakin osa nukleoneista muuttuu energiaksi.",
+          "feedback": "Nukleonien määrä säilyy molemmissa reaktioissa. Energia vapautuu, koska tuotteiden nukleonit ovat tiukemmin sidottuja ja niiden kokonaismassa siksi pienempi."
+        },
+        {
+          "text": "Raskaissa ytimissä on vähemmän sidosenergiaa kuin kevyissä.",
+          "feedback": "Raskaan ytimen kokonaissidosenergia on suurempi kuin kevyen, mutta sidosenergia *nukleonia kohti* on suurimmillaan keskiraskailla ytimillä. Siksi sekä jakautuminen että yhtyminen voivat vapauttaa energiaa."
+        },
+        {
+          "text": "Kummassakin ytimien positiiviset varaukset vapauttavat sähköistä energiaa.",
+          "feedback": "Fuusiossa ytimien hylkimisen voittaminen päinvastoin vaatii energiaa. Molemmissa reaktioissa energia vapautuu, koska tuotteiden sidosenergia nukleonia kohti on suurempi kuin lähtöaineiden."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Arvioi fissioenergia kuvaajasta",
+      "figure": "fy8-11/sidosenergia-luku",
+      "prompt": "Kuvaajassa on ytimen sidosenergia nukleonia kohti massaluvun funktiona. Ydin, jossa on $236$ nukleonia, jakautuu kahdeksi ytimeksi, joissa kummassakin on $118$ nukleonia. Arvioi kuvaajan avulla, kuinka paljon energiaa jakautumisessa vapautuu. Vastaa megaelektronivoltteina.",
+      "answer": 210,
+      "unit": "MeV",
+      "tolerance": 0.15,
+      "hints": [
+        "Lue kuvaajasta sidosenergia nukleonia kohti, kun $A = 236$ ja kun $A = 118$.",
+        "Kuinka paljon sidosenergia nukleonia kohti kasvaa jakautumisessa? Nukleonien määrä säilyy.",
+        "Sidosenergia nousee noin arvosta $7{,}6\\,\\text{MeV}$ arvoon $8{,}5\\,\\text{MeV}$ nukleonia kohti. Kerro kasvu nukleonien määrällä $236$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.9,
+          "feedback": "Tämä on sidosenergian kasvu yhtä nukleonia kohti. Kaikki $236$ nukleonia sitoutuvat tiukemmin, joten kerro kasvu nukleonien määrällä."
+        },
+        {
+          "value": 106,
+          "feedback": "Kerroit vain toisen tuotteen $118$ nukleonilla. Molempien tuotteiden nukleonit sitoutuvat tiukemmin, joten kerro kaikkien $236$ nukleonin määrällä."
+        }
+      ],
+      "solution": "**Annettu:** kuvaaja sidosenergiasta nukleonia kohti $\\tfrac{E_\\text{B}}{A}$ massaluvun $A$ funktiona, ruudukon väli $0{,}1\\,\\text{MeV}$; lähtöydin $A = 236$, tuotteet $A = 118$ ja $A = 118$\n\n**Kysytty:** vapautuva energia $Q$ megaelektronivoltteina\n\n**Periaate:** Nukleonien määrä säilyy, ja vapautuva energia on tuotteiden ja lähtöytimen sidosenergioiden erotus. Kun kaikilla tuotteilla on sama sidosenergia nukleonia kohti, erotus on nukleonien määrä kertaa sidosenergian kasvu nukleonia kohti.\n\n**Kuvaajan lukeminen:** Kohdassa $A = 236$ käyrä on noin arvossa $7{,}6\\,\\text{MeV}$ ja kohdassa $A = 118$ noin arvossa $8{,}5\\,\\text{MeV}$. Lukemat ovat noin $0{,}05\\,\\text{MeV}$:n tarkkuudella.\n\n**Kaava:** $Q = E_\\text{B,loppu} - E_\\text{B,alku} = A\\left(\\tfrac{E_\\text{B}}{A}\\right)_\\text{loppu} - A\\left(\\tfrac{E_\\text{B}}{A}\\right)_\\text{alku}$, josta $Q = A\\left[\\left(\\tfrac{E_\\text{B}}{A}\\right)_\\text{loppu} - \\left(\\tfrac{E_\\text{B}}{A}\\right)_\\text{alku}\\right]$\n\n**Muunnokset:** Ei tarvita: sidosenergiat luetaan megaelektronivoltteina.\n\n**Sijoitus:** $Q = 236 \\cdot (8{,}5\\,\\text{MeV} - 7{,}6\\,\\text{MeV}) = 236 \\cdot 0{,}9\\,\\text{MeV} = 212{,}4\\,\\text{MeV}$\n\n**Vastaus:** noin $210\\,\\text{MeV}$, kaksi merkitsevää numeroa, koska kuvaajasta luettu ero $0{,}9\\,\\text{MeV}$ on epävarma noin $0{,}1\\,\\text{MeV}$:n verran.\n\n**Järkevyys:** Arvio on samaa suuruusluokkaa kuin atomimassoista lasketut fissioenergiat, esimerkiksi $173\\,\\text{MeV}$ ja $185\\,\\text{MeV}$, ja keskimääräinen fissioenergia noin $200\\,\\text{MeV}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Selitä: jälkilämpö",
+      "optional": true,
+      "prompt": "Reaktori pysäytetään laskemalla säätösauvat kokonaan sisään, jolloin ketjureaktio sammuu. Miksi reaktorin sydäntä on silti jäähdytettävä vielä pitkään? Miksi jäähdytyksen tarve pienenee ajan myötä?",
+      "model": "Kun säätösauvat absorboivat neutronit, kasvukerroin on alle $1$ ja fissiot loppuvat. Polttoaineessa on kuitenkin suuri määrä radioaktiivisia fissiotuotteita, jotka hajoavat edelleen ja tuottavat jälkilämpöä: heti sammutuksen jälkeen noin $6\\,\\%$ aiemmasta lämpötehosta, mikä on suuressa reaktorissa satoja megawatteja. Ilman jäähdytystä tämä lämpö voi sulattaa polttoaineen, kuten Fukushimassa vuonna 2011. Jälkilämpö pienenee, koska lyhytikäiset fissiotuotteet hajoavat nopeasti: hajoamislain mukaan aktiivisuus pienenee, ja jäljelle jäävät pitkäikäiset aineet hajoavat hitaasti ja tuottavat vähemmän tehoa.",
+      "criteria": [
+        "Kerron, että fissiot loppuvat mutta fissiotuotteiden radioaktiivinen hajoaminen jatkuu.",
+        "Selitän, että hajoamisessa vapautuva energia lämmittää polttoainetta, joten jäähdytys on välttämätön.",
+        "Perustelen hajoamislailla, miksi jälkilämpö pienenee ajan myötä."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Lopuksi kaksi nopeaa kysymystä. Vastaa ensin itse ja avaa vastaus vasta sitten."
+    }
+  ]
+}

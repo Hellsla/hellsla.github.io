@@ -1,0 +1,24 @@
+{
+  "id": "fy7-1",
+  "course": "FY7",
+  "title": "Magnets, the magnetic dipole and the magnetic field",
+  "goals": [
+    "LOPS FY7: ferromagnetism and the magnetic dipole",
+    "LOPS FY7: magnetic interaction and the magnetic field",
+    "Clarification: paramagnetic and diamagnetic materials are not part of the central contents",
+    "Clarification: the Earth's magnetic field and the compass"
+  ],
+  "prerequisites": [],
+  "glossary": [
+    "magneetti",
+    "magneettinen dipoli",
+    "ferromagnetismi",
+    "alkeisalue",
+    "magneettikenttä",
+    "kenttäviiva",
+    "magneettivuon tiheys"
+  ],
+  "sim": true,
+  "solutions": "all",
+  "image": false
+}

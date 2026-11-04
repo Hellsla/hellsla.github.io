@@ -1,0 +1,144 @@
+[
+ {
+  "expr": "(() => { const S=window.simState; return S.z===3 && S.R1===20 && S.R2===20 && S.N1===10 && S.N2===10 && S.f===140000 && S.I0===1 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "on load: z = 3 mm, R1 = 20 mm, R2 = 20 mm, 10 + 10 turns, 140 kHz, 1,0 A (must run before any setup)"
+ },
+ {
+  "expr": "(() => { const R=document.querySelectorAll('#sim-root input[type=range]'); return R.length===2 && R[0].min==='3' && R[0].max==='40' && R[0].step==='1' && R[1].min==='10' && R[1].max==='40' && R[1].step==='5' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "two sliders: z 3–40 mm by 1, R1 10–40 mm by 5"
+ },
+ {
+  "expr": "(() => { const k=[...document.getElementById('sim-root').children].map(e=>e.tagName==='CANVAS'?'canvas':e.className); const c=k.findIndex(x=>x==='canvas'||/sim-canvas/.test(x)); return c>=0 && c<k.indexOf('controls') && k.indexOf('controls')<k.indexOf('readout') ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "DOM order canvas, controls, readout"
+ },
+ {
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
+ },
+ {
+  "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='R1,z' && P.z.unit==='mm' && P.R1.unit==='mm' ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "adapter declares z and R1 (mm)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],3); I(R[1],20);",
+  "expr": "window.simState.phi0",
+  "expected": 0.500621,
+  "tol": 0.0005,
+  "note": "z = 3 mm, R1 = 20 mm: Φ0 = 0,5006 µWb (thin-coil flux, 10 turns, 1,0 A)"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],3); I(R[1],20);",
+  "expr": "window.simState.e0",
+  "expected": 4.403697,
+  "tol": 0.002,
+  "note": "R1 = 20 mm, z = 3 mm: e0 = N2 · 2πf · Φ0 = 4.404 V"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],20);",
+  "expr": "window.simState.e0",
+  "expected": 1.957407,
+  "tol": 0.002,
+  "note": "R1 = 20 mm, z = 10 mm: e0 = N2 · 2πf · Φ0 = 1.957 V"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],20); I(R[1],20);",
+  "expr": "window.simState.e0",
+  "expected": 0.869228,
+  "tol": 0.002,
+  "note": "R1 = 20 mm, z = 20 mm: e0 = N2 · 2πf · Φ0 = 0.869 V"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],30); I(R[1],20);",
+  "expr": "window.simState.e0",
+  "expected": 0.444678,
+  "tol": 0.002,
+  "note": "R1 = 20 mm, z = 30 mm: e0 = N2 · 2πf · Φ0 = 0.445 V"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],40); I(R[1],20);",
+  "expr": "window.simState.e0",
+  "expected": 0.249573,
+  "tol": 0.002,
+  "note": "R1 = 20 mm, z = 40 mm: e0 = N2 · 2πf · Φ0 = 0.250 V"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],20); I(R[1],20);",
+  "expr": "window.simState.osuus",
+  "expected": 19.738604,
+  "tol": 0.01,
+  "note": "z = 20 mm: e0 is 19,74 % of the 3 mm value"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],10); I(R[1],20);",
+  "expr": "window.simState.osuus",
+  "expected": 44.449186,
+  "tol": 0.01,
+  "note": "z = 10 mm: 44,45 % of the 3 mm value"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],20); I(R[1],10);",
+  "expr": "window.simState.e0",
+  "expected": 0.284683,
+  "tol": 0.002,
+  "note": "z = 20 mm, R1 = 10 mm: e0 = 0.285 V"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],20); I(R[1],30);",
+  "expr": "window.simState.e0",
+  "expected": 1.210835,
+  "tol": 0.002,
+  "note": "z = 20 mm, R1 = 30 mm: e0 = 1.211 V"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],20); I(R[1],40);",
+  "expr": "window.simState.e0",
+  "expected": 1.229274,
+  "tol": 0.002,
+  "note": "z = 20 mm, R1 = 40 mm: e0 = 1.229 V"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],3); I(R[1],40);",
+  "expr": "window.simState.e0",
+  "expected": 1.905505,
+  "tol": 0.002,
+  "note": "z = 3 mm, R1 = 40 mm: a big transmitter couples worse at close range, 1,906 V"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],3); I(R[1],20);",
+  "expr": "window.simState.lines",
+  "expected": 6,
+  "tol": 0,
+  "note": "z = 3 mm: six field lines thread the receiver"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],20); I(R[1],20);",
+  "expr": "window.simState.lines",
+  "expected": 1,
+  "tol": 0,
+  "note": "z = 20 mm: one field line threads the receiver"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],20); I(R[1],20);",
+  "expr": "(() => { const h=document.querySelector('#sim-root .readout').textContent + document.querySelector('#sim-root .readout').innerHTML; return /0\\{?,\\}?869/.test(h) && /19\\{?,\\}?7/.test(h) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "the readout shows e0 = 0,869 V and 19,7 %"
+ },
+ {
+  "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],20); I(R[1],20);",
+  "expr": "(() => { const h=document.querySelector('#sim-root .controls').textContent + document.querySelector('#sim-root .controls').innerHTML; return /z = 20/.test(h) && /R_1 = 20/.test(h) ? 1 : 0 })()",
+  "expected": 1,
+  "tol": 0,
+  "note": "slider labels show z = 20 mm and R1 = 20 mm"
+ }
+]

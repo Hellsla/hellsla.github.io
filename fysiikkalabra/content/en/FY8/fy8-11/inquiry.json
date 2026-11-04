@@ -1,0 +1,400 @@
+{
+  "version": 1,
+  "contribution": "Fission, chain reaction and fusion through binding energy: the reaction energy $Q = (m_\\text{initial} - m_\\text{final})\\,c^2$ from atomic masses, the multiplication factor $k$ and $N_g = N_0 k^g$, the moderator and control rods of a nuclear reactor, and Finland's nuclear power plants, final disposal in Onkalo and the nuclear power debate from the point of view of physics.",
+  "learn": [
+    "explain, using binding energy, why both fission and fusion release energy.",
+    "calculate the energy of a nuclear reaction from atomic masses.",
+    "explain how the chain reaction is kept under control in a reactor, and evaluate claims about nuclear power using physics."
+  ],
+  "prior": [
+    "The mass defect of a nucleus corresponds to its binding energy, and $1\\,\\text{u}$ corresponds to an energy of $931.5\\,\\text{MeV}$ (chapter *Mass defect and nuclear binding energy*)",
+    "The activity of a radioactive substance decreases to half in every half-life according to the decay law (chapter *The decay law and half-life*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "The third unit of Olkiluoto alone produces an electric power of $1600\\,\\text{MW}$, and its reactor core contains about $130$ tonnes of uranium. A coal power plant would have to burn about $14\\,000$ tonnes of coal every day to produce the same electricity. The energy of a nuclear power plant comes from atomic nuclei that split in two. Every splitting releases neutrons, which can split new nuclei.",
+      "question": "Where does the energy released when a nucleus splits come from, and how does a reactor keep the chain of neutrons from running out of control?"
+    },
+    {
+      "id": "kertaus",
+      "stage": "herata",
+      "type": "choice",
+      "optional": true,
+      "title": "Review: mass defect",
+      "prompt": "The mass of a helium-4 nucleus is smaller than the sum of the masses of its two protons and two neutrons. What does this mass defect tell?",
+      "choices": [
+        {
+          "text": "Assembling the nucleus released energy, so taking it apart requires the same amount of energy.",
+          "correct": true,
+          "feedback": "Correct. The energy $E = \\Delta m\\,c^2$ corresponding to the mass defect is the binding energy of the nucleus (chapter *Mass defect and nuclear binding energy*). Today you will find out why energy is released both when a heavy nucleus splits and when light nuclei join."
+        },
+        {
+          "text": "Some of the nucleons have turned into energy, so the nucleus has fewer nucleons than expected.",
+          "feedback": "A helium nucleus has four nucleons, and none has disappeared. The mass is smaller because the nucleons are bound to each other, and the mass corresponding to the binding energy left the nucleus when it was formed (chapter *Mass defect and nuclear binding energy*)."
+        },
+        {
+          "text": "There is an error in the measurements, because mass is always conserved in all reactions.",
+          "feedback": "The mass difference has been measured very accurately, and it is not an error. In nuclear reactions the total energy is conserved, and mass is a part of it: $E = mc^2$. The mass of bound nucleons is smaller than that of free ones (chapter *Mass defect and nuclear binding energy*)."
+        },
+        {
+          "text": "The electrons of the nucleus have escaped, and their mass is missing from the nucleus.",
+          "feedback": "There are no electrons in a nucleus, only protons and neutrons. The mass defect arises from the binding of the nucleons: the mass $\\tfrac{E_\\text{B}}{c^2}$ corresponding to the binding energy is missing from the nucleus (chapter *Mass defect and nuclear binding energy*)."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-1",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: steady power",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "prompt": "The fission of uranium-235 produces on average $2.5$ new neutrons. A reactor produces steady power when the same number of fissions occurs at every moment. How many of the neutrons of one fission then cause a new fission on average?",
+      "choices": [
+        {
+          "text": "Exactly one on average; the others escape or are absorbed.",
+          "correct": true,
+          "feedback": "The model's values support this. When the control rods were $25\\,\\%$ in, the multiplication factor was $k = 1.00$ and in generation $20$ there were $934$ neutrons, close to the initial $1000$. With the rods pulled out ($k = 1.20$) the number grew to $39\\,387$, and with the rods $50\\,\\%$ in ($k = 0.80$) it fell to $7$."
+        },
+        {
+          "text": "All $2.5$, because every neutron has to split a new nucleus.",
+          "feedback": "The model's values refute this: if more than one new neutron is produced per neutron, the chain grows. With the rods out ($k = 1.20$) there were already $39\\,387$ neutrons in generation $20$. Steady power requires the same number of fissions in every generation, that is, $k = 1$."
+        },
+        {
+          "text": "About half, that is $1.25$, to keep the chain under control.",
+          "feedback": "The model's values refute this: when one neutron produces more than one new neutron on average, the number grows in every generation. At steady power every fission causes exactly one new fission on average; with the rods $25\\,\\%$ in ($k = 1.00$) there were still about $1000$ neutrons ($934$) in generation $20$."
+        },
+        {
+          "text": "None, because the reactor feeds in neutrons from an external source.",
+          "feedback": "The model's values refute this: when the neutrons do not cause enough new fissions ($k = 0.80$), the chain dies out, and in generation $20$ only $7$ neutrons were left. The chain reaction of a reactor sustains itself when every fission causes on average one new fission."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-2",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: a small excess",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "prompt": "A chain starts with $1000$ neutrons, and the multiplication factor is $k = 1.04$: every generation has $4\\,\\%$ more neutrons than the previous one. About how many neutrons does the chain have after $30$ generations?",
+      "choices": [
+        {
+          "text": "About $3000$, because the growth compounds from generation to generation.",
+          "correct": true,
+          "feedback": "The model's values support this: in series 1 there were $1437$ neutrons in generation $10$, $1987$ in generation $20$ and $3264$ in generation $30$. The model's prediction is $1000 \\cdot 1.04^{30} \\approx 3243$. When the increase is always $4\\,\\%$ of the current number, the growth accelerates."
+        },
+        {
+          "text": "About $1040$, because $4\\,\\%$ is a small excess.",
+          "feedback": "The model's values refute this: in generation $30$ there were $3264$ neutrons. The four percent growth repeats in every generation, so the number is multiplied $30$ times by $1.04$: $1.04^{30} \\approx 3.2$."
+        },
+        {
+          "text": "About $2200$, because $40$ more neutrons are added in every generation.",
+          "feedback": "The model's values refute this: in generation $30$ there were $3264$ neutrons, not $2200$. The increase is $4\\,\\%$ of the *current* number, so it grows as the chain grows: first $40$, after generation $20$ already about $80$ neutrons per generation."
+        },
+        {
+          "text": "Over a million, because the chain explodes as soon as $k > 1$.",
+          "feedback": "The model's values refute this: in generation $30$ there were $3264$ neutrons. The growth is exponential, but when $k$ is only slightly above $1$, it is slow at first. A million would be reached only after about $176$ generations."
+        }
+      ]
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "At the start the reactor core has $1000$ neutrons. Adjust the depth of the control rods and follow how the number of neutrons changes from generation to generation.",
+      "howto": "*Start* runs the chain one generation at a time, and *Stop* stops it; the generation can also be chosen with the slider *Generation* $0$–$30$. *Control rods in* $s$ sets the depth of the rods, $0$–$100\\,\\%$. *Draw* chooses one of three random series: the same series always gives the same result. On the left (at the top on a narrow screen) the grey dots are the neutrons of the generation, at most $160$ at a time. During a run a neutron either causes a fission (orange flash), disappears into a control rod or escapes. In the graph the orange dots are the number of neutrons $N$ in each generation and the pale dashed line is the model's prediction $N_0 k^g$. *Speed* changes only the pace of the run.",
+      "model": "The model describes the chain reaction in generations, not the real paths of the neutrons or time: in a real reactor a generation lasts about a ten-thousandth of a second. Each neutron causes a fission with the same probability regardless of the other neutrons, and a fission produces $2$ or $3$ new neutrons, $2.5$ on average. The control rods reduce the probability of fission. The model has no delayed neutrons, no effect of temperature and no burn-up of the fuel. The readouts are values of the model, not measurements.",
+      "calc": "A neutron causes a fission with the probability $P_\\text{f} = (1.2 - 0.008\\,s) : 2.5$, where $s$ is the depth of the rods as a percentage. Otherwise it disappears: into a control rod with the probability $0.0032\\,s$, and otherwise by escaping or being absorbed elsewhere. A fission produces $2$ or $3$ neutrons with equal probability, so the multiplication factor is $k = 2.5\\,P_\\text{f} = 1.2 - 0.008\\,s$. The neutrons of the next generation are the neutrons produced in the fissions. The readout $N_g : N_{g-1}$ is the realised growth of the series from the previous generation, and $N_0 k^g$ is the model's average prediction."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: control rods and the multiplication factor",
+      "intro": "Test prediction 1. Choose generation $g = 20$ and series 1 as the draw. Change only the depth of the control rods: record the multiplication factor $k$ and the number of neutrons $N$ at least when the rods are in $0\\,\\%$, $25\\,\\%$ and $50\\,\\%$.",
+      "initial": {
+        "s": 0,
+        "g": 20,
+        "sarja": "1"
+      },
+      "locked": [
+        "g",
+        "sarja"
+      ],
+      "vary": "s",
+      "min": 3,
+      "units": {
+        "s": "%"
+      },
+      "names": {
+        "s": "control rods in s",
+        "g": "generation g",
+        "sarja": "draw"
+      },
+      "values": {
+        "sarja": {
+          "1": "series 1",
+          "2": "series 2",
+          "3": "series 3"
+        }
+      },
+      "measure": [
+        {
+          "key": "k",
+          "label": "k"
+        },
+        {
+          "key": "N",
+          "label": "N"
+        }
+      ]
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: growth generation by generation",
+      "intro": "Test prediction 2. The control rods are in $20\\,\\%$, so $k = 1.04$, and the draw is series 1. Change only the generation: record the number of neutrons $N$ at least in generations $0$, $10$, $20$ and $30$.",
+      "initial": {
+        "s": 20,
+        "g": 0,
+        "sarja": "1"
+      },
+      "locked": [
+        "s",
+        "sarja"
+      ],
+      "vary": "g",
+      "min": 3,
+      "units": {
+        "s": "%"
+      },
+      "names": {
+        "s": "control rods in s",
+        "g": "generation g",
+        "sarja": "draw"
+      },
+      "values": {
+        "sarja": {
+          "1": "series 1",
+          "2": "series 2",
+          "3": "series 3"
+        }
+      },
+      "measure": [
+        {
+          "key": "N",
+          "label": "N"
+        },
+        {
+          "key": "model",
+          "label": "N₀kᵍ"
+        }
+      ]
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: a controlled chain reaction",
+      "after": [
+        "koe-1",
+        "koe-2"
+      ],
+      "prompt": "Write on the basis of your tables: At what value of the multiplication factor did the number of neutrons stay roughly constant, and what happened at smaller and larger values? How did the number of neutrons grow when $k = 1.04$? Why must the multiplication factor of a reactor be kept very precisely at $1$?",
+      "model": "In experiment 1, the model's values for the number of neutrons in generation $20$ were $39\\,387$ with the rods out ($k = 1.20$), $934$ with the rods $25\\,\\%$ in ($k = 1.00$) and only $7$ with the rods $50\\,\\%$ in ($k = 0.80$). When every neutron produces on average exactly one new fission neutron, the chain stays steady; because of randomness the number varies slightly. In experiment 2, with $k = 1.04$, there were $1000$, $1437$, $1987$ and $3264$ neutrons in generations $0$, $10$, $20$ and $30$: the number was multiplied by $1.04$ in every generation, so the growth accelerated. Because a generation in a real reactor lasts only about a ten-thousandth of a second, even a small excess would increase the power quickly. This is why the multiplication factor is kept precisely at $1$ with the control rods, and the delayed neutrons give the control time to act.",
+      "criteria": [
+        "I say, using the model's values, that the number stayed constant when $k = 1$, died out when $k < 1$ and grew when $k > 1$.",
+        "I describe, using the values of experiment 2, that the growth compounded from generation to generation and was not uniform.",
+        "I justify that, because a generation is short, even a small excess would increase the power quickly.",
+        "I call the numbers of the simulation the model's values, not measurements."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava",
+        "Ydinvoima Suomessa"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "optional": true,
+      "prompt": "Compare your predictions with the model's values in the experiments. Then return to the opening question: where does the energy released when a uranium nucleus splits come from, and why does one gram of uranium correspond to tonnes of coal?",
+      "predictions": [
+        "ennuste-1",
+        "ennuste-2"
+      ]
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "optional": true,
+      "prompt": "A student calculates the energy of the reaction of the example, ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\rightarrow {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}$. The student writes\n\n$$\\begin{aligned} &\\Delta m = 235.0439282\\,\\text{u} \\\\ &\\quad - 140.9144033\\,\\text{u} \\\\ &\\quad - 91.9261731\\,\\text{u} \\\\ &\\quad - 3 \\cdot 1.0086649\\,\\text{u} \\\\ &= -0.8226429\\,\\text{u} \\end{aligned}$$\n\nand gets the result $Q = -0.8226429 \\cdot 931.5\\,\\text{MeV} \\approx -766\\,\\text{MeV}$. The student concludes that fission binds energy.\n\nWhere is the error?",
+      "choices": [
+        {
+          "text": "The mass of the starting materials lacks the neutron that hits the nucleus.",
+          "correct": true,
+          "feedback": "Correct. The starting materials are the uranium nucleus *and* the neutron, so $m_\\text{initial} = 235.0439282\\,\\text{u} + 1.0086649\\,\\text{u} = 236.0525931\\,\\text{u}$. Then $\\Delta m = 0.1860220\\,\\text{u}$ and $Q \\approx 173\\,\\text{MeV}$. The negative result was a sign of an error: the fission of uranium releases energy, and the mass difference is only about $0.08\\,\\%$ of the mass of the starting materials."
+        },
+        {
+          "text": "Atomic masses must not be used, because they include the electrons too.",
+          "feedback": "Atomic masses are fine, because the sum of the atomic numbers is conserved: $92 = 56 + 36$, so both sides have the same number of electrons and their masses cancel. The error is that the neutron that hits the nucleus is missing from the starting materials."
+        },
+        {
+          "text": "There are two neutrons among the products, not three.",
+          "feedback": "There are three neutrons: the mass number is conserved, $1 + 235 = 141 + 92 + 3$. The error is in the starting materials: the mass $1.0086649\\,\\text{u}$ of the neutron that hits the nucleus has been forgotten."
+        },
+        {
+          "text": "The mass difference should have been multiplied by $c^2$, not by $931.5\\,\\text{MeV}$.",
+          "feedback": "Multiplying by $931.5\\,\\tfrac{\\text{MeV}}{c^2} \\cdot c^2$ is exactly the conversion of the mass difference into energy when the mass is in atomic mass units. The error is in the mass difference: the neutron that hits the nucleus is missing from the starting materials."
+        }
+      ]
+    },
+    {
+      "id": "keskustelu",
+      "stage": "sovella",
+      "type": "explain",
+      "title": "The nuclear power debate through the eyes of physics",
+      "prompt": "Evaluate three claims heard in the debate from the point of view of physics. Say what is correct in them and what is not, and justify your answer with the facts of this chapter.\n\n1. “A nuclear power plant can explode like an atomic bomb.”\n2. “Nuclear electricity is emission-free, so it has no drawbacks.”\n3. “Spent fuel is dangerous for only a few decades, because its activity decreases quickly.”",
+      "model": "1. This is not correct. The fuel of a light-water reactor contains about $3$–$5\\,\\%$ uranium-235, whereas nuclear weapons use uranium enriched to about $90\\,\\%$. In addition, when the water heats up or boils, it slows neutrons less well and the chain reaction weakens. The danger in a serious accident is the melting of the fuel caused by residual heat and the release of radioactive substances, as at Fukushima in 2011.\n\n2. This is partly true. The life-cycle greenhouse gas emissions are about $12\\,\\tfrac{\\text{g}}{\\text{kWh}}$ of carbon dioxide equivalent, of the same order as for wind power. There are still drawbacks: long-lived spent fuel, a small but far-reaching accident risk, the environmental effects of uranium mining, and expensive and slow construction.\n\n3. This is not correct. The half-life of caesium-137 and strontium-90 is about $30\\,\\text{a}$, so their activity decreases to a thousandth in about $300$ years. The half-life of plutonium-239, however, is $24\\,100\\,\\text{a}$, so the fuel has to be isolated for hundreds of thousands of years, and this is why it is finally disposed of in copper canisters deep in the bedrock in Onkalo.",
+      "criteria": [
+        "I justify with the enrichment level or the action of the moderator why a reactor cannot explode like a nuclear weapon.",
+        "I separate the low life-cycle emissions from the other drawbacks and name at least two of them.",
+        "I justify with half-lives that some of the substances are dangerous for hundreds of thousands of years.",
+        "I separate the facts of physics from value judgements and do not present an opinion as a fact."
+      ]
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply: the fusion power of ITER",
+      "prompt": "The goal of the ITER experimental reactor is to produce a power of $500\\,\\text{MW}$ in the fusion of deuterium and tritium. Each fusion ${}^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\rightarrow {}^{4}_{2}\\text{He} + {}^{1}_{0}\\text{n}$ releases an energy of $17.6\\,\\text{MeV}$. How many fusion reactions must take place in the plasma per second? Give the answer in the unit $10^{20}\\,\\tfrac{1}{\\text{s}}$.",
+      "answer": 1.77,
+      "unit": "10²⁰ 1/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Power tells how many joules of energy are released per second. How many joules are released in one reaction?",
+        "Convert the reaction energy to joules by substituting $1\\,\\text{MeV} = 10^{6} \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "One reaction releases $2.82 \\cdot 10^{-12}\\,\\text{J}$. Divide the power $500 \\cdot 10^{6}\\,\\text{W}$ by this."
+      ],
+      "mistakes": [
+        {
+          "value": 1773351,
+          "feedback": "You converted megaelectronvolts to joules as if they were electronvolts. The prefix mega means a million: $17.6\\,\\text{MeV} = 17.6 \\cdot 10^{6} \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}$."
+        },
+        {
+          "value": 0.156,
+          "feedback": "You used the energy of fission, $200\\,\\text{MeV}$. The reaction in the problem is the fusion of deuterium and tritium, which releases $17.6\\,\\text{MeV}$."
+        }
+      ],
+      "solution": "**Given:** fusion power $P = 500\\,\\text{MW}$, energy of one reaction $Q = 17.6\\,\\text{MeV}$\n\n**Asked:** the number of reactions per second $\\tfrac{N}{t}$ in the unit $10^{20}\\,\\tfrac{1}{\\text{s}}$\n\n**Principle:** Power is the energy released per unit time. Each reaction releases the same energy $Q$, so in time $t$ the energy released is $E = NQ$ and the power is $P = \\tfrac{NQ}{t}$.\n\n**Formula:** $P = \\dfrac{NQ}{t}$, from which $\\dfrac{N}{t} = \\dfrac{P}{Q}$\n\n**Conversions:** $P = 500\\,\\text{MW} = 500 \\cdot 10^{6}\\,\\text{W}$ and $Q = 17.6\\,\\text{MeV} = 17.6 \\cdot 10^{6} \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 2.8195 \\cdot 10^{-12}\\,\\text{J}$\n\n**Substitution:** $\\dfrac{N}{t} = \\dfrac{500 \\cdot 10^{6}\\,\\tfrac{\\text{J}}{\\text{s}}}{2.8195 \\cdot 10^{-12}\\,\\text{J}} = 1.7734 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}}$\n\n**Answer:** $1.77 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}}$, three significant figures as in the reaction energy $17.6\\,\\text{MeV}$.\n\n**Reasonableness:** With rounded numbers $5 \\cdot 10^{8}\\,\\text{W} : (3 \\cdot 10^{-12}\\,\\text{J}) \\approx 1.7 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}}$. The number is enormous, but little fuel is used: the mass of $1.77 \\cdot 10^{20}$ deuterium–tritium pairs is only about $1.5\\,\\text{mg}$."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. Level 1 problems use one equation, level 2 problems convert units or combine two equations, and level 3 requires reasoning."
+    },
+    {
+      "id": "tarkistus-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept",
+      "prompt": "Why is energy released both when a uranium nucleus splits and when hydrogen nuclei join to form helium?",
+      "choices": [
+        {
+          "text": "In both, the nucleons of the products are bound more tightly than those of the starting materials.",
+          "correct": true,
+          "feedback": "Correct. The binding energy per nucleon is greatest for medium-heavy nuclei. When a heavy nucleus splits and when light nuclei join, the graph is climbed upwards, so the mass decreases and energy is released."
+        },
+        {
+          "text": "In both, some of the nucleons turn into energy.",
+          "feedback": "The number of nucleons is conserved in both reactions. Energy is released because the nucleons of the products are bound more tightly and their total mass is therefore smaller."
+        },
+        {
+          "text": "Heavy nuclei have less binding energy than light ones.",
+          "feedback": "The total binding energy of a heavy nucleus is greater than that of a light one, but the binding energy *per nucleon* is greatest for medium-heavy nuclei. This is why both splitting and joining can release energy."
+        },
+        {
+          "text": "In both, the positive charges of the nuclei release electric energy.",
+          "feedback": "In fusion, overcoming the repulsion of the nuclei on the contrary requires energy. In both reactions energy is released because the binding energy per nucleon of the products is greater than that of the starting materials."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Estimate the fission energy from the graph",
+      "figure": "fy8-11/sidosenergia-luku",
+      "prompt": "The graph shows the binding energy per nucleon of a nucleus as a function of the mass number. A nucleus with $236$ nucleons splits into two nuclei with $118$ nucleons each. Use the graph to estimate how much energy is released in the splitting. Answer in megaelectronvolts.",
+      "answer": 210,
+      "unit": "MeV",
+      "tolerance": 0.15,
+      "hints": [
+        "Read from the graph the binding energy per nucleon when $A = 236$ and when $A = 118$.",
+        "By how much does the binding energy per nucleon increase in the splitting? The number of nucleons is conserved.",
+        "The binding energy rises from about $7.6\\,\\text{MeV}$ to $8.5\\,\\text{MeV}$ per nucleon. Multiply the increase by the number of nucleons, $236$."
+      ],
+      "mistakes": [
+        {
+          "value": 0.9,
+          "feedback": "This is the increase in binding energy per nucleon. All $236$ nucleons become bound more tightly, so multiply the increase by the number of nucleons."
+        },
+        {
+          "value": 106,
+          "feedback": "You multiplied by the $118$ nucleons of only one product. The nucleons of both products become bound more tightly, so multiply by the number of all the nucleons, $236$."
+        }
+      ],
+      "solution": "**Given:** a graph of the binding energy per nucleon $\\tfrac{E_\\text{B}}{A}$ as a function of the mass number $A$, grid spacing $0.1\\,\\text{MeV}$; starting nucleus $A = 236$, products $A = 118$ and $A = 118$\n\n**Asked:** the energy released $Q$ in megaelectronvolts\n\n**Principle:** The number of nucleons is conserved, and the energy released is the difference between the binding energies of the products and of the starting nucleus. When all the products have the same binding energy per nucleon, the difference is the number of nucleons times the increase in binding energy per nucleon.\n\n**Reading the graph:** At $A = 236$ the curve is at about $7.6\\,\\text{MeV}$ and at $A = 118$ at about $8.5\\,\\text{MeV}$. The readings are accurate to about $0.05\\,\\text{MeV}$.\n\n**Formula:** $Q = E_\\text{B,final} - E_\\text{B,initial} = A\\left(\\tfrac{E_\\text{B}}{A}\\right)_\\text{final} - A\\left(\\tfrac{E_\\text{B}}{A}\\right)_\\text{initial}$, from which $Q = A\\left[\\left(\\tfrac{E_\\text{B}}{A}\\right)_\\text{final} - \\left(\\tfrac{E_\\text{B}}{A}\\right)_\\text{initial}\\right]$\n\n**Conversions:** None needed: the binding energies are read in megaelectronvolts.\n\n**Substitution:** $Q = 236 \\cdot (8.5\\,\\text{MeV} - 7.6\\,\\text{MeV}) = 236 \\cdot 0.9\\,\\text{MeV} = 212.4\\,\\text{MeV}$\n\n**Answer:** about $210\\,\\text{MeV}$, two significant figures, because the difference $0.9\\,\\text{MeV}$ read from the graph is uncertain by about $0.1\\,\\text{MeV}$.\n\n**Reasonableness:** The estimate is of the same order of magnitude as the fission energies calculated from atomic masses, for example $173\\,\\text{MeV}$ and $185\\,\\text{MeV}$, and the average fission energy of about $200\\,\\text{MeV}$."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: residual heat",
+      "optional": true,
+      "prompt": "A reactor is shut down by lowering the control rods fully in, which stops the chain reaction. Why does the reactor core still have to be cooled for a long time? Why does the need for cooling decrease with time?",
+      "model": "When the control rods absorb the neutrons, the multiplication factor is below $1$ and the fissions stop. However, the fuel contains a large number of radioactive fission products, which keep decaying and produce residual heat: immediately after shutdown about $6\\,\\%$ of the earlier thermal power, which in a large reactor is hundreds of megawatts. Without cooling, this heat can melt the fuel, as at Fukushima in 2011. The residual heat decreases because the short-lived fission products decay quickly: according to the decay law, the activity decreases, and the long-lived substances that remain decay slowly and produce less power.",
+      "criteria": [
+        "I say that the fissions stop but the radioactive decay of the fission products continues.",
+        "I explain that the energy released in the decay heats the fuel, so cooling is necessary.",
+        "I justify with the decay law why the residual heat decreases with time."
+      ]
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first by yourself and open the answer only afterwards."
+    }
+  ]
+}

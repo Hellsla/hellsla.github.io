@@ -1,0 +1,473 @@
+{
+  "version": 1,
+  "contribution": "Light is a transverse wave, so it can be polarised: a polariser halves unpolarised light, and Malus's law $I = I_0 \\cos^2\\theta$ applies to polarised light; light reflected from an insulator is partially polarised, and at Brewster's angle $\\tan\\alpha_\\text{B} = n_2 : n_1$ completely so. With the simulation the student observes the halving and the $\\cos^2$ dependence and, optionally, the surprise of three polarisers; a sample measurement on a phone display gives a straight line as a function of $\\cos^2\\theta$. Applications are polarised sunglasses, liquid crystal displays and 3D glasses.",
+  "learn": [
+    "explain what polarisation is and why it shows that light is a transverse wave.",
+    "calculate the intensity of light passing through polarisers using Malus's law.",
+    "calculate Brewster's angle and explain why polarised glasses reduce glare."
+  ],
+  "prior": [
+    "Light is an electromagnetic wave whose electric field oscillates perpendicular to the direction of travel (chapter *Electromagnetic radiation and the black-body spectrum*)",
+    "Light is refracted at a boundary according to the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, and the angles are measured from the normal (chapter *Reflection and refraction of light*)"
+  ],
+  "activities": [
+    {
+      "id": "hook",
+      "stage": "herata",
+      "type": "hook",
+      "text": "On a sunny day the surface of a lake sparkles so brightly that it is hard to look into the water. An angler puts on polarised sunglasses, and the sparkle almost disappears: the stones and fish in the shallow water come into view. A friend's ordinary sunglasses are just as dark, but the sparkle can still be seen through them. If the angler tilts their head to the side, the sparkle returns.",
+      "question": "What do polarised glasses do to light differently from ordinary dark glass?"
+    },
+    {
+      "id": "kertaus-aalto",
+      "stage": "herata",
+      "type": "choice",
+      "title": "Recap: light as a wave",
+      "prompt": "Light is an electromagnetic wave. In which direction does the electric field of light oscillate relative to the direction of travel of the wave?",
+      "choices": [
+        {
+          "text": "Perpendicular to the direction of travel.",
+          "correct": true,
+          "feedback": "Correct. The electric field and the magnetic field oscillate perpendicular to each other and to the direction of travel, so light is a transverse wave (chapter *Electromagnetic radiation and the black-body spectrum*). Today we find out what the direction of the oscillation means."
+        },
+        {
+          "text": "Along the direction of travel, like the compressions of a sound wave.",
+          "feedback": "Sound is a longitudinal wave, but light is not. The electric field of light oscillates perpendicular to the direction of travel, so light is a transverse wave (chapter *Electromagnetic radiation and the black-body spectrum*)."
+        },
+        {
+          "text": "In all directions, including the direction of travel.",
+          "feedback": "There is no oscillation along the direction of travel in light. The electric field always oscillates perpendicular to the direction of travel, although its direction within that plane can vary (chapter *Electromagnetic radiation and the black-body spectrum*)."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "ennuste-yksi",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 1: one film",
+      "prompt": "The light of a lamp is unpolarised. It passes through one polarising film. What share of the intensity of the light passes through the film, and does it depend on the position the film is turned to?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "About half, whatever position the film is turned to.",
+          "correct": true,
+          "feedback": "The values of the model support this: after the first film the intensity is $I_1 = 50.0\\,\\%$ on every row. In unpolarised light all directions of oscillation are equally common, so on average half falls on the transmission axis of the film. You can try in the simulation that turning $\\text{P}_1$ does not change the reading $I_1$."
+        },
+        {
+          "text": "Almost all of it, because the film is transparent plastic.",
+          "feedback": "The values of the model refute this: after the first film the intensity is only $I_1 = 50.0\\,\\%$. The film absorbs the oscillation perpendicular to the transmission axis, and in unpolarised light half of the intensity falls on that direction."
+        },
+        {
+          "text": "Half when the transmission axis of the film is vertical, but less in other positions.",
+          "feedback": "The amount is right, but the position makes no difference. In unpolarised light no direction is special, so in every position $50.0\\,\\%$ passes through. Try turning $\\text{P}_1$ in the simulation: $I_1$ does not change."
+        },
+        {
+          "text": "Hardly any, because the light of a lamp has no light that oscillates in one direction.",
+          "feedback": "The values of the model refute this: after the first film the intensity is $I_1 = 50.0\\,\\%$. Every oscillation has a component along the transmission axis of the film, and that component passes through, so on average half of the light passes through."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kierto",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 2: the second film",
+      "prompt": "After the first film a second film, an analyser, is placed in the path of the light, with its transmission axis at first the same as that of the first. The analyser is turned gradually through $90^\\circ$. How does the intensity of the light passing through the analyser change?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-1",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "It decreases steadily with the angle, and at $90^\\circ$ no light passes through.",
+          "feedback": "The values of the model refute this: if it decreased steadily, at $30^\\circ$ two thirds would remain, that is $33.3\\,\\%$ of the light of the lamp, but the model gives $37.5\\,\\%$. The intensity first decreases slowly and only then quickly: at $60^\\circ$ $12.5\\,\\%$ remains."
+        },
+        {
+          "text": "It decreases slowly at first and then faster, and at $90^\\circ$ no light passes through.",
+          "correct": true,
+          "feedback": "The values of the model support this: of the light of the lamp $50.0\\,\\%$ passes through at $0^\\circ$, $46.7\\,\\%$ at $15^\\circ$, $37.5\\,\\%$ at $30^\\circ$, $12.5\\,\\%$ at $60^\\circ$ and $0\\,\\%$ at $90^\\circ$. No light passes through crossed films."
+        },
+        {
+          "text": "It does not change, because the light that passed through the first film also passes through the second.",
+          "feedback": "The values of the model refute this: at $60^\\circ$ only $12.5\\,\\%$ passes through, and at $90^\\circ$ nothing. After the first film the light is polarised, so the position of the second film matters."
+        },
+        {
+          "text": "It drops to a half as soon as the film is turned, and then stays the same.",
+          "feedback": "The values of the model refute this: the intensity changes continuously with the angle, from $37.5\\,\\%$ at $30^\\circ$ to zero at $90^\\circ$. The halving happens only in the first film, where unpolarised light arrives."
+        }
+      ]
+    },
+    {
+      "id": "ennuste-kolme",
+      "stage": "ennusta",
+      "type": "choice",
+      "title": "Prediction 3: a third film in between",
+      "prompt": "Two films are crossed, so no light passes through them. A third film is pushed between them, with its transmission axis at an angle of $45^\\circ$ to both. What is seen on the screen?",
+      "justify": true,
+      "reveal": {
+        "after": "koe-2",
+        "min": 3
+      },
+      "choices": [
+        {
+          "text": "Still dark, because an extra film can only absorb more light.",
+          "feedback": "The values of the model refute this: when the middle film is at $45^\\circ$, $12.5\\,\\%$ of the light of the lamp passes through. After the middle film the light is polarised at an angle of $45^\\circ$, so it has a component along the transmission axis of the last film."
+        },
+        {
+          "text": "A little light: about an eighth of the light of the lamp passes through.",
+          "correct": true,
+          "feedback": "The values of the model support this: $50.0\\,\\% \\cdot \\cos^2 45^\\circ \\cdot \\cos^2 45^\\circ = 12.5\\,\\%$. When the middle film is parallel to one of the outer ones, the screen is dark again."
+        },
+        {
+          "text": "As much light as after the first film, because $45^\\circ$ is halfway between the films.",
+          "feedback": "The values of the model refute this: $12.5\\,\\%$ of the light of the lamp passes through, whereas after the first film there is $50.0\\,\\%$. Each film whose transmission axis is at an angle of $45^\\circ$ to the polarisation of the incoming light lets through only half of what it receives."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "simulaatio",
+      "stage": "tutki",
+      "type": "sim",
+      "text": "The light of a lamp passes through two or three polarisers to a screen. Turn the films and follow how the direction of oscillation of the electric field and the intensity of the transmitted light change.",
+      "howto": "Choose whether there are two or three polarisers, and set the transmission axis of each with a slider. The angles $\\theta_1$, $\\theta_2$ and $\\theta_3$ are measured from the vertical. In the picture the polarisers are seen obliquely from the side: the hatching of the film and the dark line show the transmission axis. The brown wave is the electric field of the light, and its width shows the amplitude of the electric field. At the bottom, circles show the direction of oscillation seen along the ray after each stage, and below them is the intensity as a percentage of the intensity $I_0$ of the light of the lamp. The middle one, $\\text{P}_2$, has an effect only when there are three polarisers.",
+      "model": "The light of the lamp is unpolarised. The polarisers are ideal: they let through all oscillation along the transmission axis and absorb all oscillation perpendicular to it. A real film lets through slightly less. The picture is not to scale, and the wavelength of the light has been drawn much larger than in reality. The brightness of the light spot on the screen is only an illustration. The readings are values calculated by the model, not measurements.",
+      "calc": "The first polariser lets through half of the intensity of the unpolarised light:\n\n$$I_1 = \\tfrac{1}{2} I_0$$\n\nEach following polariser obeys Malus's law $I = I_\\text{prev} \\cos^2\\theta$, where $I_\\text{prev}$ is the intensity of the previous stage and $\\theta$ is the angle between the transmission axes of the previous and the present polariser. With three polarisers $I_2 = I_1 \\cos^2(\\theta_2 - \\theta_1)$ and $I_3 = I_2 \\cos^2(\\theta_3 - \\theta_2)$; with two, $I_3 = I_1 \\cos^2(\\theta_3 - \\theta_1)$. The amplitude of the electric field is drawn proportional to the square root of the intensity, because the intensity is proportional to the square of the amplitude."
+    },
+    {
+      "id": "koe-1",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 1: the angle of the analyser",
+      "intro": "Test predictions 1 and 2. There are two polarisers, and the transmission axis of the first is vertical, $\\theta_1 = 0^\\circ$; change only the angle $\\theta_3$ of the analyser. Record at least the angles $0^\\circ$, $30^\\circ$, $60^\\circ$ and $90^\\circ$, and if you like also $15^\\circ$, $45^\\circ$ and $75^\\circ$. On every row compare the reading $I_3$ with the reading $I_1$.",
+      "initial": {
+        "n": 2,
+        "theta1": 0,
+        "theta2": 45,
+        "theta3": 0
+      },
+      "locked": [
+        "n",
+        "theta1"
+      ],
+      "vary": "theta3",
+      "names": {
+        "n": "polarisers",
+        "theta1": "polariser angle θ_1",
+        "theta2": "middle angle θ_2",
+        "theta3": "analyser angle θ_3"
+      },
+      "units": {
+        "n": "",
+        "theta1": "°",
+        "theta2": "°",
+        "theta3": "°"
+      },
+      "values": {
+        "n": {
+          "2": "two",
+          "3": "three"
+        }
+      },
+      "measure": [
+        {
+          "key": "i1",
+          "label": "I_1 (%)"
+        },
+        {
+          "key": "i3",
+          "label": "I_3 (%)"
+        }
+      ],
+      "min": 3,
+      "question": {
+        "type": "numeric",
+        "prompt": "What percentage of the intensity $I_0$ of the light of the lamp passes through the analyser when $\\theta_3 = 30^\\circ$? Calculate the result with Malus's law and compare it with the reading of the simulation.",
+        "answer": 37.5,
+        "unit": "%",
+        "tolerance": 0.02,
+        "hints": [
+          "What share of the light of the lamp arrives at the analyser, and is it polarised?",
+          "Polarised light with $I_1 = 50.0\\,\\%$ arrives at the analyser, and Malus's law $I_3 = I_1 \\cos^2\\theta$ applies to it.",
+          "$I_3 = 50.0\\,\\% \\cdot \\cos^2 30^\\circ$, and $\\cos 30^\\circ \\approx 0.866$."
+        ],
+        "mistakes": [
+          {
+            "value": 75.0,
+            "feedback": "You forgot that the first polariser lets through only half of the unpolarised light of the lamp. $I_1 = 50.0\\,\\%$ arrives at the analyser."
+          },
+          {
+            "value": 43.3,
+            "feedback": "You used the cosine of the angle. The intensity is proportional to the square of the amplitude of the electric field, so Malus's law has $\\cos^2\\theta$."
+          },
+          {
+            "value": 33.3,
+            "feedback": "You assumed that the intensity decreases steadily with the angle. According to Malus's law the share $\\cos^2\\theta$ of the light arriving at the analyser passes through."
+          }
+        ],
+        "solution": "**Given:** intensity of the unpolarised light $I_0$ ($100\\,\\%$), transmission axis of the polariser $\\text{P}_1$ at $\\theta_1 = 0^\\circ$, transmission axis of the analyser $\\text{P}_3$ at $\\theta_3 = 30^\\circ$; reading of the simulation $I_1 = 50.0\\,\\%$\n\n**Find:** intensity $I_3$ of the light passing through the analyser as a percentage of the intensity $I_0$\n\n**Principle:** The first polariser lets through half of the unpolarised light, and after it the light is polarised in the vertical direction. Polarised light therefore arrives at the analyser at an angle $\\theta = \\theta_3 - \\theta_1 = 30^\\circ$ to its transmission axis, so Malus's law applies.\n\n**Formula:** $I_1 = \\tfrac{1}{2} I_0$ and $I_3 = I_1 \\cos^2\\theta$, so $I_3 = \\tfrac{1}{2} I_0 \\cos^2\\theta$\n\n**Conversions:** Not needed: the intensities are percentages of the intensity $I_0$, and the angle is in degrees.\n\n**Substitution:** $I_3 = 50.0\\,\\% \\cdot \\cos^2 30^\\circ = 50.0\\,\\% \\cdot 0.750 = 37.5\\,\\%$\n\n**Answer:** $37.5\\,\\%$, three significant figures like the reading of the simulation $50.0\\,\\%$.\n\n**Reasonableness:** The angle $30^\\circ$ is smaller than $45^\\circ$, so the analyser lets through more than half of the light it receives: $37.5\\,\\%$ is more than $25\\,\\%$ and less than $50\\,\\%$. The same number appears in the reading of the simulation when $\\theta_3 = 30^\\circ$."
+      }
+    },
+    {
+      "id": "koe-2",
+      "stage": "tutki",
+      "type": "experiment",
+      "title": "Experiment 2: a third film in between",
+      "intro": "Test prediction 3. There are three polarisers. The outer ones are crossed, $\\theta_1 = 0^\\circ$ and $\\theta_3 = 90^\\circ$; change only the angle $\\theta_2$ of the middle one. Record at least the angles $0^\\circ$, $30^\\circ$, $45^\\circ$, $60^\\circ$ and $90^\\circ$.",
+      "initial": {
+        "n": 3,
+        "theta1": 0,
+        "theta2": 0,
+        "theta3": 90
+      },
+      "locked": [
+        "n",
+        "theta1",
+        "theta3"
+      ],
+      "vary": "theta2",
+      "names": {
+        "n": "polarisers",
+        "theta1": "polariser angle θ_1",
+        "theta2": "middle angle θ_2",
+        "theta3": "analyser angle θ_3"
+      },
+      "units": {
+        "n": "",
+        "theta1": "°",
+        "theta2": "°",
+        "theta3": "°"
+      },
+      "values": {
+        "n": {
+          "2": "two",
+          "3": "three"
+        }
+      },
+      "measure": [
+        {
+          "key": "i2",
+          "label": "I_2 (%)"
+        },
+        {
+          "key": "i3",
+          "label": "I_3 (%)"
+        }
+      ],
+      "min": 3,
+      "optional": true
+    },
+    {
+      "id": "mittaus",
+      "stage": "tutki",
+      "type": "interpret",
+      "title": "Measurement: a phone display and a polariser",
+      "source": "example",
+      "figure": "fy7-15/fit",
+      "text": "A group investigated Malus's law with a phone display whose light is polarised. The display was white on a table, with a polarising film on a protractor on top of it and a Vernier light sensor on top of the film. The group turned the film in steps of $15^\\circ$ and recorded the reading of the sensor, that is, the illuminance $E$. The angle $\\theta$ is measured from the position at which the reading was largest.\n\n| $\\theta$ (°) | $E$ (lx) |\n| --- | --- |\n| $0$ | $374$ |\n| $15$ | $354$ |\n| $30$ | $283$ |\n| $45$ | $197$ |\n| $60$ | $102$ |\n| $75$ | $40$ |\n| $90$ | $15$ |\n\nThe group plotted a graph with $E$ on the vertical axis and $\\cos^2\\theta$ on the horizontal axis using the Vernier Graphical Analysis program. The program fitted the line $E = A \\cos^2\\theta + B$ to the points and gave the uncertainty of the gradient $A$ as $\\Delta A = 2.4\\,\\text{lx}$ and the constant term as $B = 14.6\\,\\text{lx}$. In real sets of measurements the data points do not usually lie exactly on one line because of measurement uncertainty.",
+      "question": {
+        "type": "numeric",
+        "prompt": "What reading would the polarised light of the display give on its own, without the background light of the room, when the transmission axis of the film is aligned with the polarisation of the display? Answer in lux.",
+        "answer": 360.7,
+        "unit": "lx",
+        "tolerance": 0.02,
+        "hints": [
+          "Which part of the reading depends on the angle of the film, and which part is the same at all angles?",
+          "The reading is $E = E_\\text{p} \\cos^2\\theta + E_\\text{b}$, where $E_\\text{b}$ is the share of the background light. Which parameter of the line is $E_\\text{p}$?",
+          "The gradient is the change in the reading when $\\cos^2\\theta$ increases from zero to one."
+        ],
+        "mistakes": [
+          {
+            "value": 374,
+            "feedback": "This is the reading at the angle $0^\\circ$, and it includes the background light of the room. The share of the light of the display is the gradient of the fitted line, so the constant term must be subtracted from the reading."
+          },
+          {
+            "value": 14.6,
+            "feedback": "This is the constant term of the line, that is, the reading when $\\cos^2\\theta = 0$. It is background light of the room, which does not come from the display. The share of the light of the display is the gradient."
+          }
+        ],
+        "solution": "**Given:** the line $E = A \\cos^2\\theta + B$ fitted by the program in the graph, uncertainty of the gradient $\\Delta A = 2.4\\,\\text{lx}$ and constant term $B = 14.6\\,\\text{lx}$; data points in the graph\n\n**Find:** the illuminance $E_\\text{p}$ that the polarised light of the display gives on its own when the film is aligned with the polarisation of the display, in lux\n\n**Principle:** According to Malus's law the share $\\cos^2\\theta$ of the polarised light of the display passes through the film, so the reading it gives is $E_\\text{p} \\cos^2\\theta$. The background light $E_\\text{b}$ of the room is not polarised light from the display, and it adds the same amount to every reading. The reading is therefore $E = E_\\text{p} \\cos^2\\theta + E_\\text{b}$, which as a function of $\\cos^2\\theta$ is a line with gradient $E_\\text{p}$ and constant term $E_\\text{b}$. The gradient is read from the fitted line, because the line takes all the measurements into account.\n\n**Reading the graph:** The fitted line passes approximately through the points $(0;\\ 15\\,\\text{lx})$ and $(1.0;\\ 375\\,\\text{lx})$, so the gradient is about $(375\\,\\text{lx} - 15\\,\\text{lx}) : 1.0 = 360\\,\\text{lx}$. The exact value calculated by the program is $A = 360.7\\,\\text{lx}$.\n\n**Formula:** $E = E_\\text{p} \\cos^2\\theta + E_\\text{b}$ and $E = A \\cos^2\\theta + B$, so $E_\\text{p} = A$\n\n**Conversions:** Not needed: $\\cos^2\\theta$ has no unit, so the unit of the gradient is the same as that of the reading, $\\text{lx}$.\n\n**Substitution:** $E_\\text{p} = A = 360.7\\,\\text{lx}$\n\n**Answer:** $E_\\text{p} \\approx 361\\,\\text{lx}$, three significant figures, because the uncertainty of the gradient, $2.4\\,\\text{lx}$, is of the order of units: $E_\\text{p} = (361 \\pm 2)\\,\\text{lx}$.\n\n**Reasonableness:** The points lie well on a line, so the light obeys Malus's law. The reading at the angle $0^\\circ$ is $374\\,\\text{lx}$, and subtracting the background light of about $15\\,\\text{lx}$ gives about $360\\,\\text{lx}$, as with the gradient. When the film is crossed with the polarisation of the display, the reading $15\\,\\text{lx}$ is almost the same as the constant term, so it is background light."
+      }
+    },
+    {
+      "id": "johtopaatos",
+      "stage": "tutki",
+      "type": "explain",
+      "title": "Conclusion: the angle between the films and the intensity",
+      "after": [
+        "koe-1"
+      ],
+      "prompt": "Write on the basis of your table: what share of the light of the lamp passes through the first film? How does the intensity passing through the analyser depend on the angle between the films? Does it decrease steadily with the angle?",
+      "model": "The first film always let through $I_1 = 50.0\\,\\%$ of the light of the lamp, because the light of the lamp is unpolarised. Through the analyser passed $50.0\\,\\%$ at $0^\\circ$, $37.5\\,\\%$ at $30^\\circ$, $12.5\\,\\%$ at $60^\\circ$ and $0\\,\\%$ at $90^\\circ$. The intensity did not decrease steadily: over the first $30^\\circ$ it fell by only a quarter, but over the last $30^\\circ$ all the rest vanished. The ratio $I_3 : I_1$ was on every row the same as the reading $\\cos^2\\theta$: $0.750$ at $30^\\circ$ and $0.250$ at $60^\\circ$. So $I_3 = I_1 \\cos^2\\theta$. The values are calculated by the model.",
+      "criteria": [
+        "I said that the first film lets through half of the unpolarised light.",
+        "I said that no light passes through crossed films.",
+        "I used the values in the table to state that the intensity decreases slowly at first and then faster.",
+        "I connected the ratio $I_3 : I_1$ with the reading $\\cos^2\\theta$."
+      ]
+    },
+    {
+      "id": "teoria-osa",
+      "stage": "selita",
+      "type": "theory",
+      "sections": [
+        "Ydinajatus",
+        "Kaava"
+      ]
+    },
+    {
+      "id": "pohdi",
+      "stage": "selita",
+      "type": "reflect",
+      "title": "Return to your predictions",
+      "prompt": "Compare your predictions with the theory and with the values of the model in the experiment. Then return to the opening question: why do polarised glasses put out the sparkle of the lake but ordinary dark glasses do not, and why does the sparkle return when the angler tilts their head?",
+      "predictions": [
+        "ennuste-yksi",
+        "ennuste-kierto"
+      ],
+      "optional": true
+    },
+    {
+      "id": "esimerkki",
+      "stage": "sovella",
+      "type": "theory",
+      "sections": [
+        "Esimerkki"
+      ]
+    },
+    {
+      "id": "virhe",
+      "stage": "sovella",
+      "type": "choice",
+      "title": "Find the error",
+      "prompt": "The intensity of the unpolarised light of a lamp is $200\\,\\text{W/m}^2$. The light passes through two polarisers, and the angle between their transmission axes is $60^\\circ$. A student writes: \"According to Malus's law $I = I_0 \\cos^2 60^\\circ = 200\\,\\text{W/m}^2 \\cdot 0.25 = 50\\,\\text{W/m}^2$.\" Where is the error?",
+      "choices": [
+        {
+          "text": "The first polariser halves unpolarised light, so the correct result is $25\\,\\text{W/m}^2$.",
+          "correct": true,
+          "feedback": "Correct. Malus's law applies to polarised light. After the first polariser $I_1 = 100\\,\\text{W/m}^2$, and after the second $I_2 = 100\\,\\text{W/m}^2 \\cdot \\cos^2 60^\\circ = 25\\,\\text{W/m}^2$."
+        },
+        {
+          "text": "The law should use the cosine and not its square, so the correct result is $100\\,\\text{W/m}^2$.",
+          "feedback": "Malus's law has $\\cos^2\\theta$ because the intensity is proportional to the square of the amplitude of the electric field, and the component $E_0 \\cos\\theta$ of the amplitude passes through. The error is that the halving of unpolarised light in the first film was forgotten: the correct result is $25\\,\\text{W/m}^2$."
+        },
+        {
+          "text": "The angle must be measured from the horizontal, so the calculation should use $\\cos^2 30^\\circ$.",
+          "feedback": "The angle $\\theta$ is the angle between the two transmission axes, and its value does not depend on the direction from which each is measured. The error is forgetting the halving: after the first film $I_1 = 100\\,\\text{W/m}^2$, and the result is $25\\,\\text{W/m}^2$."
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "siirto",
+      "stage": "sovella",
+      "type": "numeric",
+      "title": "Apply to a new situation: a photographer by a lake",
+      "prompt": "A nature photographer wants to photograph the stones on the bottom of a lake, but light from the sky reflected from the water surface gets in the way. The photographer has a polarising filter, which removes the reflection best when the reflected light is completely polarised. The camera is at a height of $1.60\\,\\text{m}$ above the calm water surface. The refractive index of water is $1.33$ and that of air $1.00$. How far from the camera in the horizontal direction is the point on the water surface from which the reflected light reaches the camera completely polarised? Answer in metres.",
+      "answer": 2.128,
+      "unit": "m",
+      "tolerance": 0.02,
+      "hints": [
+        "At what angle of incidence is the reflected light completely polarised?",
+        "For Brewster's angle $\\tan\\alpha_\\text{B} = n_2 : n_1$. Draw a picture: the ray from the camera to the water surface makes the angle $\\alpha_\\text{B}$ with the vertical normal.",
+        "In a right-angled triangle $\\tan\\alpha_\\text{B} = d : h$, so $d = h \\tan\\alpha_\\text{B}$."
+      ],
+      "mistakes": [
+        {
+          "value": 1.203,
+          "feedback": "You used the ratio $n_1 : n_2$. In Brewster's law $\\tan\\alpha_\\text{B} = n_2 : n_1$, where $n_2$ is the refractive index of the substance into which the light is refracted, that is, water. The angle of incidence is therefore larger than $45^\\circ$, and the point must be farther away than the height of the camera."
+        },
+        {
+          "value": 1.279,
+          "feedback": "You used the sine function. The height of the camera and the horizontal distance are the legs of a right-angled triangle, so $d = h \\tan\\alpha_\\text{B}$."
+        }
+      ],
+      "solution": "**Given:** height of the camera above the water surface $h = 1.60\\,\\text{m}$, refractive index of water $n_2 = 1.33$, refractive index of air $n_1 = 1.00$, calm water surface\n\n**Find:** the horizontal distance $d$ from the camera to the point on the water surface from which the reflected light reaches the camera at Brewster's angle, in metres\n\n**Principle:** A polarising filter removes the reflection best when the reflected light is completely polarised, that is, when the light is reflected at Brewster's angle $\\tan\\alpha_\\text{B} = n_2 : n_1$. The reflected ray arriving at the camera makes the angle $\\alpha_\\text{B}$ with the vertical normal. The ray, the vertical segment $h$ below the camera and the segment $d$ on the water surface form a right-angled triangle in which $\\tan\\alpha_\\text{B} = d : h$.\n\n**Formula:** $\\tan\\alpha_\\text{B} = \\dfrac{n_2}{n_1}$ and $\\tan\\alpha_\\text{B} = \\dfrac{d}{h}$, so $d = h \\tan\\alpha_\\text{B} = \\dfrac{h n_2}{n_1}$\n\n**Conversions:** Not needed: the height is in metres, and the refractive indices have no units.\n\n**Substitution:** $d = \\dfrac{1.60\\,\\text{m} \\cdot 1.33}{1.00} = 2.128\\,\\text{m}$\n\n**Answer:** $2.13\\,\\text{m}$, three significant figures like the height $1.60\\,\\text{m}$ and the refractive index $1.33$.\n\n**Reasonableness:** Brewster's angle is $\\tan^{-1} 1.33 = 53.1^\\circ$, that is, larger than $45^\\circ$, so the point must be farther away than the height of the camera $1.60\\,\\text{m}$, as in the result. The camera looks at the water surface at an angle of $90^\\circ - 53.1^\\circ = 36.9^\\circ$ below the horizontal, which is a natural angle for photographing."
+    },
+    {
+      "id": "harjoitukset",
+      "stage": "sovella",
+      "type": "exercises",
+      "text": "Practise at three levels. In level 1 tasks one formula is applied, in level 2 tasks two steps are combined or a formula is solved for another quantity, and level 3 requires reasoning in a new situation."
+    },
+    {
+      "id": "check-1",
+      "stage": "tarkista",
+      "type": "choice",
+      "title": "1. Concept: what polarisation tells us",
+      "prompt": "Light can be polarised, but sound cannot. What does this difference tell us about waves?",
+      "choices": [
+        {
+          "text": "Light is a transverse wave, sound a longitudinal wave.",
+          "correct": true,
+          "feedback": "Correct. In a transverse wave the oscillation can take place in different directions perpendicular to the direction of travel, and a polariser selects one of them. In a longitudinal wave the oscillation is always along the direction of travel, so there is nothing to choose from."
+        },
+        {
+          "text": "The wavelength of light is much shorter than that of sound.",
+          "feedback": "The wavelengths differ, but that does not decide the matter. Long transverse waves, such as radio waves or a wave on a rope, can also be polarised. What matters is that light is a transverse wave and sound a longitudinal wave."
+        },
+        {
+          "text": "Light travels in a vacuum, sound only in a medium.",
+          "feedback": "The difference is true, but it does not explain polarisation: a wave on a rope needs a medium, and it can still be polarised with a slit. That a wave can be polarised tells us that the oscillation is perpendicular to the direction of travel, that is, the wave is transverse."
+        }
+      ]
+    },
+    {
+      "id": "tarkistus-2",
+      "stage": "tarkista",
+      "type": "numeric",
+      "title": "2. Calculate: laser light through a polariser",
+      "prompt": "The beam of a laser pointer is polarised, and its power is $5.00\\,\\text{mW}$. The beam passes through a polariser whose transmission axis is at an angle of $50.0^\\circ$ to the direction of polarisation of the beam. What is the power of the beam after the polariser? Answer in milliwatts.",
+      "answer": 2.0659,
+      "unit": "mW",
+      "tolerance": 0.02,
+      "hints": [
+        "Is laser light unpolarised or polarised? Is it halved?",
+        "Malus's law applies directly to polarised light: $P = P_0 \\cos^2\\theta$.",
+        "$\\cos 50.0^\\circ \\approx 0.643$, so $\\cos^2 50.0^\\circ \\approx 0.413$."
+      ],
+      "mistakes": [
+        {
+          "value": 3.214,
+          "feedback": "You used the cosine of the angle. The power is proportional to the square of the amplitude of the electric field, so Malus's law has $\\cos^2\\theta$."
+        },
+        {
+          "value": 1.033,
+          "feedback": "You halved the power, although laser light is already polarised. The halving applies only to unpolarised light in the first polariser."
+        },
+        {
+          "value": 2.934,
+          "feedback": "You used the angle $40^\\circ$. In Malus's law $\\theta$ is the angle between the direction of polarisation and the transmission axis, here $50.0^\\circ$."
+        }
+      ],
+      "solution": "**Given:** power of the polarised laser beam $P_0 = 5.00\\,\\text{mW}$, angle between the direction of polarisation of the beam and the transmission axis of the polariser $\\theta = 50.0^\\circ$\n\n**Find:** power $P$ of the beam passing through the polariser, in milliwatts\n\n**Principle:** Laser light is already polarised, so it is not halved but Malus's law applies directly. The cross-sectional area of the beam does not change in the polariser, so the power changes in the same proportion as the intensity.\n\n**Formula:** $I = I_0 \\cos^2\\theta$, so for powers $P = P_0 \\cos^2\\theta$\n\n**Conversions:** Not needed: the power stays in milliwatts, and the angle is in degrees.\n\n**Substitution:** $P = 5.00\\,\\text{mW} \\cdot \\cos^2 50.0^\\circ = 5.00\\,\\text{mW} \\cdot 0.4132 = 2.066\\,\\text{mW}$\n\n**Answer:** $2.07\\,\\text{mW}$, three significant figures like the power $5.00\\,\\text{mW}$ and the angle $50.0^\\circ$.\n\n**Reasonableness:** The angle $50^\\circ$ is slightly more than $45^\\circ$, so slightly less than half of the power should pass through, that is, slightly less than $2.5\\,\\text{mW}$, as in the result."
+    },
+    {
+      "id": "tarkistus-3",
+      "stage": "tarkista",
+      "type": "explain",
+      "title": "3. Explain: polarised sunglasses",
+      "prompt": "Explain why polarised sunglasses reduce the glare reflected from the surface of a lake much more than ordinary sunglasses that are just as dark. Also explain why the glare returns when the wearer tilts their head by $90^\\circ$.",
+      "model": "When unpolarised sunlight is reflected from the surface of water, the oscillation parallel to the surface is reflected most strongly, so the glare is partially polarised in the horizontal direction. The transmission axis of the polarising film of polarised glasses is vertical, so the film absorbs the horizontal oscillation of the glare, and the glare is dimmed a great deal. The other light is mostly unpolarised and is dimmed only to about a half. An ordinary dark lens dims all light in the same proportion, so the glare stays just as bright compared with the rest of the view. When the head is tilted by $90^\\circ$, the transmission axis of the film turns horizontal, and the horizontal oscillation of the glare passes through.",
+      "criteria": [
+        "I say that light reflected from the surface of water is partially polarised in the horizontal direction.",
+        "I say that the transmission axis of polarised glasses is vertical, so they absorb the horizontal oscillation.",
+        "I distinguish a polariser from dark glass: dark glass dims all light in the same proportion.",
+        "I explain that tilting the head turns the transmission axis horizontal."
+      ],
+      "optional": true
+    },
+    {
+      "id": "lahtolippu",
+      "stage": "tarkista",
+      "type": "exit",
+      "text": "Finally, two quick questions. Answer first yourself and open the answer only afterwards."
+    }
+  ]
+}
