@@ -124,7 +124,7 @@
     {
       "id": "fy6-16-L2-05",
       "level": 2,
-      "text": "Taulukossa on omakotitalon sähköteho tunneittain illalla ennen latausasemaa (esimerkkiaineisto).\n\nTalon pääsulakkeet ovat $3 \\cdot 25\\,\\text{A}$. Talon kuormat jakautuvat tasan kolmelle vaiheelle. Perhe suunnittelee kolmivaiheista latausasemaa. Asema ottaa jokaisesta vaihejohtimesta yhtä suuren virran. Vaihejännite on $230\\,\\text{V}$. Oletetaan, että talon teho pysyy kunkin tunnin ajan taulukon arvossa.\n\na) Mikä on talon huipputeho ja mihin aikaan se on?\n\nb) Kuinka suuri latausteho asemalla saa olla huipputehon aikana, jotta pääsulakkeiden virta ei ylity?\n\nc) Perustele taulukon avulla, milloin asema voi käyttää $11\\,\\text{kW}$:n tehoa ilman kuormanhallintaa.\n\nVastauskenttään tulee kohdan b) tulos kilowatteina.",
+      "text": "Taulukossa on omakotitalon sähköteho tunneittain illalla ennen latausasemaa (esimerkkiaineisto).\n\nTalon pääsulakkeet ovat $3 \\cdot 25\\,\\text{A}$. Talon kuormat jakautuvat tasan kolmelle vaiheelle. Perhe suunnittelee kolmivaiheista latausasemaa. Asema ottaa jokaisesta vaihejohtimesta yhtä suuren virran. Vaihejännite on $230\\,\\text{V}$. Oletetaan, että talon teho pysyy kunkin tunnin ajan taulukon arvossa.\n\na) Mikä on talon huipputeho ja mihin aikaan se on?\n\nb) Kuinka suuri latausteho asemalla saa olla huipputehon aikana, jotta pääsulakkeiden virta ei ylity?\n\nc) Perustele taulukon avulla, milloin asema voi käyttää $11\\,\\text{kW}$:n tehoa ilman kuormanhallintaa (eli ilman laitetta, joka rajoittaa latausvirtaa automaattisesti).\n\nVastauskenttään tulee kohdan b) tulos kilowatteina.",
       "kind": [
         "data",
         "reasoning"

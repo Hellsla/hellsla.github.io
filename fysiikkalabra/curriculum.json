@@ -1502,6 +1502,7 @@
     "op": 2,
     "planned_lessons": 16,
     "type": "valtakunnallinen valinnainen",
+    "exercise_total": 20,
     "tavoitteet": [
       "osaa tutkia kokeellisesti sähköön liittyviä ilmiöitä ja tehdä sähköopin perusmittauksia",
       "osaa käyttää kentän ja potentiaalin käsitteitä sähkökentän kuvaamisessa",

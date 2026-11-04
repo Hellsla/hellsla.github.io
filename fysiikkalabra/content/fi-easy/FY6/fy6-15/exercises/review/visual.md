@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: b6131b393ad33d64
+CONTENT-HASH: eda68d9188c67dc3
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- exercises.json L2-05 b): "Moninkertainenko" (awkward, abstract) changed to "Kuinka monta kertaa suurempi ..." (plain words, same meaning, no numbers touched).
 
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- fy6-15-open-exercises-1280-5: tehtävä 5, Järkevyys-kohta ("siitä siirtyy huonosti lämpöä ympäristöön. Silloin johto voi kuumeta vaarallisesti") luettu: lyhyet lauseet, selkeä, laatikko ehjä, kaavat ja yksiköt oikein.
-- The rest of the exercise captures (open-exercises levels 1 and 2) show the layout unchanged; no overflow at 1280 px.
-- Not in this delta: the earthing figure (in lesson.md) is judged in the lesson packet.
+- Captures opened: fi-easy exercise level 2 and 3 at 1280 px and the 390 px stage; data tables, solution boxes and answer units render, nothing clipped.
+- Plain Finnish: short sentences, terms explained (läpilyöntilujuus, vikavirta, suojausluokka).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · language 5 · accessibility 4

@@ -127,7 +127,7 @@
 ## fy6-14-L1-07
 **Kysytty:** miksi LEDin kanssa sarjaan tarvitaan etuvastus
 **Periaate:** LEDin jännite pysyy päästösuunnassa lähes samana, vaikka virta muuttuu paljon: ominaiskäyrä nousee jyrkästi. Jos LED kytketään suoraan pariston napoihin, ylimääräiselle jännitteelle ei ole paikkaa muualla. Silloin virta kasvaa niin suureksi, että LED palaa loppuun. Sarjaan kytketty vastus ottaa Kirchhoffin jännitelain mukaan osan jännitteestä ($U = U_R + U_\text{D}$). Ohmin lain mukaan sen jännite määrää virran: $I = U_R : R$.
-**Mallivastaus:** Etuvastus tarvitaan, koska LEDin virta kasvaa jyrkästi, kun LEDin jännite kasvaa vähänkin. Vastus ottaa pariston ylimääräisen jännitteen itselleen ja pitää virran sopivana. Väärät vaihtoehdot ovat virheellisiä: vastus ei lisää virtaa, ei muuta jännitteen lajia eikä estä virtaa väärään suuntaan.
+**Mallivastaus:** Etuvastus tarvitaan, koska LEDin virta kasvaa jyrkästi, kun LEDin jännite kasvaa vähänkin. Vastus ottaa pariston ylimääräisen jännitteen itselleen ja pitää virran sopivana. Muut vaihtoehdot ovat vääriä: vastus ei lisää virtaa, ei muuta jännitteen lajia eikä estä virtaa väärään suuntaan.
 
 ## fy6-14-L1-08
 **Annettu:** pinta-ala $A = 12\,\text{cm}^2$, valon voimakkuus $G = 1000\,\text{W/m}^2$, jännite $U = 2{,}0\,\text{V}$, virta $I = 100\,\text{mA}$

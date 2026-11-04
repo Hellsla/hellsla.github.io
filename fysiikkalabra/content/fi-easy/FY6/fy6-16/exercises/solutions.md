@@ -184,7 +184,7 @@ b) Oikea latausaika on $5{,}3\,\text{h}$.
 **Vastaus:** Vastauslaatikkoon $23\,\text{kWh}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehoissa. a) Verkosta otettu energia on $23\,\text{kWh}$.
 
 b) Keskiteho on $7{,}6\,\text{kW}$.
-**Järkevyys:** Jos teho olisi pysynyt koko ajan $3{,}0\,\text{h}$ arvossa $11\,\text{kW}$, energiaa olisi otettu $33\,\text{kWh}$. Tulos on pienempi, koska teho laskee latauksen loppua kohti. Keskiteho $7{,}6\,\text{kW}$ on huipputehon $11\,\text{kW}$ ja loppuarvon $1{,}4\,\text{kW}$ välissä.
+**Järkevyys:** Jos teho olisi pysynyt koko ajan arvossa $11\,\text{kW}$, energiaa olisi otettu $3{,}0\,\text{h}$ aikana $33\,\text{kWh}$. Tulos on pienempi, koska teho laskee latauksen loppua kohti. Keskiteho $7{,}6\,\text{kW}$ on huipputehon $11\,\text{kW}$ ja loppuarvon $1{,}4\,\text{kW}$ välissä.
 
 ## fy6-16-L3-04
 **Annettu:** kuukausimatkat taulukosta, sähköauto $16{,}0\,\text{kWh}$ akusta sadalla kilometrillä, $\eta = 90{,}0\,\%$, $a_\text{koti} = 15\,\text{snt/kWh}$, $a_\text{julk} = 0{,}45\,\text{€/kWh}$, bensiiniauto $6{,}50\,\textsf{l}$ sadalla kilometrillä, bensiinin hinta $b = 1{,}85\,\text{€/}\textsf{l}$

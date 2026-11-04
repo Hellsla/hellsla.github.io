@@ -127,7 +127,7 @@
 ## fy6-14-L1-07
 **Find:** why a series resistor is needed in series with an LED
 **Principle:** The voltage of an LED stays almost the same in the forward direction even when the current changes a lot: the characteristic curve rises steeply. If the LED is connected directly to the terminals of the battery, the extra voltage has nowhere else to go, and the current grows so large that the LED burns out. A resistor connected in series takes part of the voltage by Kirchhoff's voltage law ($U = U_R + U_\text{D}$), and by Ohm's law its voltage determines the current: $I = U_R : R$.
-**Model answer:** The series resistor is needed because the current of the LED grows steeply even when the voltage of the LED grows only a little. The resistor takes the extra voltage of the battery for itself and keeps the current suitable. The wrong options are incorrect: the resistor does not increase the current, does not change the type of the voltage, and does not prevent current from flowing in the wrong direction.
+**Model answer:** The series resistor is needed because the current of the LED grows steeply even when the voltage of the LED grows only a little. The resistor takes the extra voltage of the battery for itself and keeps the current suitable. The other options are wrong: the resistor does not increase the current, does not change the type of the voltage, and does not prevent current from flowing in the wrong direction.
 
 ## fy6-14-L1-08
 **Given:** area $A = 12\,\text{cm}^2$, light intensity $G = 1000\,\text{W/m}^2$, voltage $U = 2.0\,\text{V}$, current $I = 100\,\text{mA}$

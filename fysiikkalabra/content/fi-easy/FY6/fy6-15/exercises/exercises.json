@@ -145,7 +145,7 @@
     {
       "id": "fy6-15-L2-05",
       "level": 2,
-      "text": "Taulukossa on neljän tilanteen virtatien resistanssi $R$. Ihminen koskettaa jännitteistä osaa, ja kosketusjännite on $230\\,\\text{V}$ (esimerkkiaineisto).\n\nVirran vaikutukset (IEC 60479-1:n tyyppiset suuntaa antavat arvot): tuntokynnys $0{,}5\\,\\text{mA}$, irrottamiskynnys $10\\,\\text{mA}$, hengitys vaikeutuu $30\\,\\text{mA}$ ja kammiovärinän vaara yli $50\\,\\text{mA}$.\n\na) Laske kehon läpi kulkeva virta jokaisessa tilanteessa. Kerro, mikä virran vaikutus on kyseessä.\n\nb) Moninkertainenko virta on kylpyammeessa kuin kuivalla iholla ja kumikengillä?\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "text": "Taulukossa on neljän tilanteen virtatien resistanssi $R$. Ihminen koskettaa jännitteistä osaa, ja kosketusjännite on $230\\,\\text{V}$ (esimerkkiaineisto).\n\nVirran vaikutukset (IEC 60479-1:n tyyppiset suuntaa antavat arvot): tuntokynnys $0{,}5\\,\\text{mA}$, irrottamiskynnys $10\\,\\text{mA}$, hengitys vaikeutuu $30\\,\\text{mA}$ ja kammiovärinän vaara yli $50\\,\\text{mA}$.\n\na) Laske kehon läpi kulkeva virta jokaisessa tilanteessa. Kerro, mikä virran vaikutus on kyseessä.\n\nb) Kuinka monta kertaa suurempi virta on kylpyammeessa kuin kuivalla iholla ja kumikengillä?\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "data",
         "reasoning"

@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 4abeecff3b7699af
+CONTENT-HASH: 52fc2f236602dd83
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+- solutions.md L1-07 Mallivastaus: "Väärät vaihtoehdot ovat virheellisiä" -> "Muut vaihtoehdot ovat vääriä" (simpler, as in L1-06).
 
 ## Polish
 (none)
 
 ## Checked
-- Exercises and solutions compared with the Finnish set: every number, unit, answer and tolerance identical, all 12 solutions complete (7 steps).
-- Level counts 5/4/3 as in the Finnish set.
-- Plain Finnish, step order and justifications kept.
+- Level structure, task kinds and part labels a), b), c) match fi; the "result of part b" answer-box note is kept.
+- Choice feedback does not leak the answer in the wrong options and explains the misconception, as in fi.
+- Model solutions keep all steps (Given/Find/Principle/Formula/Conversions/Substitution/Answer/Reasonableness) and the significant-figure reasoning.
+- Language is plain Finnish: short sentences, terms explained (kuormitusvastus, vaihtosuuntaaja, omavaraisuusaste, päästösuunta, estosuunta); no new terms added beyond fi.
