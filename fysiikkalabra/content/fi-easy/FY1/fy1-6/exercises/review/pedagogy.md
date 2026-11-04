@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: f65fdea3cf3a11ad
+CONTENT-HASH: 0565d8e3dabbf1c2
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
-(none left)
+(none)
+
+## Fixed
+(none needed)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Plain Finnish: tasks split into short sentences (e.g. L1-03, L1-04, L2-04, L3-01, L3-03) without changing what is asked; the solutions stay in the same eight-step order.
-- Same teaching sequence and level structure as the Finnish; no new terms introduced.
-- Hints in the Principle lines use direct address (Voit laskea, Ratkaise ensin) and are clear.
+- Register is clear plain Finnish (selkosuomi): short sentences, common words, terms explained.
+- Distractor feedback in L1-06 and L1-07 names the same misconception as fi (heavier falls faster, no air means no fall, slope read as speed or distance); the correct-answer feedback explains why.
+- Task wording keeps the same steps and questions as fi (draw, fit, determine, explain); no hint added or removed; solutions.md prose follows the fi structure (Given, Find, Principle, Formula, Reasonableness).

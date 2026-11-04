@@ -32,7 +32,7 @@ import answers_shown, cardgrid, concept_cards, courses, fbdspec, figcat, guides,
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
-BASE_URL = "https://hellsla.github.io/fysiikkalabra/site/"
+BASE_URL = "https://ruukkilab.fi/"
 URL = BASE_URL                                 # where the language being built is published: site/, site/<lang>/
 UP = ""                                        # from a page to site/: "" for Finnish, "../" for site/<lang>/
 COURSES = {}                                   # content/<lang>/courses.json of the language being built
@@ -239,6 +239,7 @@ def home_row(code, title, question, coming=False):
 
 
 ABOUT = "tietoa.html"
+PRIVACY = "tietosuoja.html"   # Tietosuoja (teacher 2026-11-04): no student data, no cookies, what the browser keeps and why
 
 
 def front_chrome(html):
@@ -904,11 +905,18 @@ def build_language(lang):
     school = next(iter(local.values()))["school"] if local else ""
     home = (local_notes +
         f'<section class="home-intro" aria-labelledby="h-intro"><h1 id="h-intro">{T("site.home_h1")}</h1>'
-        f'<p class="lead">{T("site.home_sub")}</p></section>'
+        f'<p class="lead">{T("site.home_sub")}</p>'
+        # from 700 px the school's logo stands here, over the right column, so that both lists start level (teacher
+        # 2026-11-04); the list's own heading (the same logo) is then visually hidden, site.css .intro-school
+        + (f'<img class="intro-school" src="brand/kiviruukin-lukio-oikea-yonsininen.svg" alt="" width="98" height="56">' if local_rows else "")
+        + '</section>'
         f'<section class="catalogue" id="moduulit" aria-labelledby="h-modules"><h2 id="h-modules" class="visually-hidden">{T("site.modules")}</h2>'
         f'<div class="mod-cols"><ul class="mod-list">{catalogue}</ul><div class="mod-side">'
         + (f'<h3 class="mod-group">{T("site.upcoming")}</h3><ul class="mod-list up-list">{upcoming}</ul>' if upcoming else "")
-        + (f'<h3 class="mod-group">{esc(school)}</h3><ul class="mod-list local-list">{local_rows}</ul>' if local_rows else "")
+        # the school's own courses under the school's logo (teacher 2026-11-04: its emblem and name, the list level with the
+        # national modules: from 700 px the logo sits above the column, out of the flow, site.css .mod-school)
+        + (f'<h3 class="mod-group mod-school"><img src="brand/kiviruukin-lukio-oikea-yonsininen.svg" alt="{esc(school)}" width="98" height="56"></h3>'
+           f'<ul class="mod-list local-list">{local_rows}</ul>' if local_rows else "")
         + '</div></div></section>')
     (out / "index.html").write_text(front_chrome(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",
                                          full_title=f'{T("site.name")} — {T("site.subtitle")}')))
@@ -930,11 +938,16 @@ def build_language(lang):
     about_body = render_md(about_md.read_text()) if about_md else f'<h1>{T("site.about")}</h1><p class="lead">{T("site.about_lead")}</p>'
     # in Kiviruukin lukio's colours under the school's logo (teacher 2026-11-04, after his school pages; site.css .about-page)
     h1 = re.match(r"\s*(<h1>.*?</h1>)", about_body, re.S)
-    hero = ('<header class="about-hero"><img class="about-logo" src="brand/kiviruukin-lukio-valkoinen.svg" alt="Kiviruukin lukio" width="216" height="105">'
+    hero = ('<header class="about-hero"><img class="about-logo" src="brand/kiviruukin-lukio-oikea-valkoinen.svg" alt="Kiviruukin lukio" width="175" height="100">'
             + (h1.group(1) if h1 else "") + '</header>')
     about_body = hero + (about_body[h1.end():] if h1 else about_body)
     (out / ABOUT).write_text(page(T("site.about"), f'<article class="about">{about_body}</article>',
                                   f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead"), main_class="reading about-page"))
+    # Tietosuoja (teacher 2026-11-04): content/<lang>/tietosuoja.md (the Finnish where a language has none), linked from every footer
+    priv_md = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / i18n.SOURCE / "tietosuoja.md") if f.is_file()), None)
+    if priv_md:
+        (out / PRIVACY).write_text(page(T("site.privacy"), f'<article class="privacy">{render_md(priv_md.read_text())}</article>',
+                                        f'<a href="index.html">{T("site.name")}</a> › {T("site.privacy")}', PRIVACY, T("site.privacy_lead"), main_class="reading privacy-page"))
     if SITE.name == "site.tmp":                  # a lesson leaves the live site only with a warning (an annotation on CI)
         live = LIVE / out.relative_to(SITE)
         for old_page in sorted(live.glob("*.html")):
@@ -944,7 +957,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + mixer_built
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [STUDY_PAGE] + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + mixer_built
                     + [f"{u}.html" for u, ul in unit_pub.items() if ul == lang and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):
