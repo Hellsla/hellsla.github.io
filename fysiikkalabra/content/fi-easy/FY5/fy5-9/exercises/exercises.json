@@ -39,6 +39,96 @@
       "answer": 0.12,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L1-06",
+      "level": 1,
+      "text": "Matemaattisen heilurin pituus ja pienet heilahdukset pidetään samoina. Heilurin kuula vaihdetaan samankokoiseen, kaksi kertaa raskaampaan kuulaan. Ilmanvastus jätetään huomiotta. Mitä heilurin jaksonaikaan tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Jaksonaika pysyy samana, koska paino ja hitaus kasvavat yhtä paljon.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Jaksonaika lyhenee, koska suurempi paino kiihdyttää raskaampaa kuulaa nopeammin.",
+          "feedback": "Raskaampaan kuulaan vaikuttaa kyllä suurempi paino. Myös kuulan massa on suurempi. Voiman ja massan suhde eli kiihtyvyys pysyy samana. Jaksonaika ei siis lyhene."
+        },
+        {
+          "text": "Jaksonaika pysyy samana, koska paino ja hitaus kasvavat yhtä paljon.",
+          "feedback": "Oikein: kaksi kertaa raskaampaan kuulaan vaikuttaa kaksi kertaa suurempi palauttava voima. Kuulaa on kuitenkin myös kaksi kertaa vaikeampi kiihdyttää. Kiihtyvyys ja jaksonaika $T = 2\\pi\\sqrt{l/g}$ eivät riipu massasta.",
+          "correct": true
+        },
+        {
+          "text": "Jaksonaika pitenee, koska raskaampaa kuulaa on vaikeampi saada liikkeelle.",
+          "feedback": "Raskaampaa kuulaa on vaikeampi kiihdyttää, mutta siihen vaikuttaa myös suurempi paino. Nämä kumoavat toisensa. Jaksonaika ei siis pitene."
+        },
+        {
+          "text": "Jaksonaika lyhenee, koska raskas kuula kulkee tasapainoaseman ohi suuremmalla nopeudella.",
+          "feedback": "Suurin nopeus riippuu vain lähtökorkeudesta, ei massasta. Raskas kuula ei siis kulje nopeammin. Sen jaksonaika ei muutu."
+        }
+      ]
+    },
+    {
+      "id": "fy5-9-L1-07",
+      "level": 1,
+      "text": "Jousen varassa värähtelevän kappaleen massa pidetään samana. Jousi vaihdetaan toiseen, jonka jousivakio on kaksinkertainen. Mitä jaksonaikaan tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Jaksonaika lyhenee, koska jäykempi jousi kiihdyttää kappaletta enemmän.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Jaksonaika puolittuu, koska se on kääntäen verrannollinen jousivakioon.",
+          "feedback": "Jaksonaika ei ole kääntäen verrannollinen jousivakioon vaan sen neliöjuureen: $T = 2\\pi\\sqrt{m/k}$. Kaksinkertainen jousivakio ei siis puolita jaksonaikaa."
+        },
+        {
+          "text": "Jaksonaika pysyy samana, koska kappaleen massa ei muutu.",
+          "feedback": "Jaksonaika riippuu sekä massasta että jousivakiosta. Jäykempi jousi vetää samaa kappaletta suuremmalla voimalla. Jaksonaika muuttuu siis, vaikka massa pysyy samana."
+        },
+        {
+          "text": "Jaksonaika pitenee, koska jäykempi jousi vastustaa liikettä enemmän.",
+          "feedback": "Jäykempi jousi ei hidasta liikettä. Se kiihdyttää kappaletta suuremmalla voimalla samalla poikkeamalla. Värähdys on silloin nopeampi ja jaksonaika lyhyempi."
+        },
+        {
+          "text": "Jaksonaika lyhenee, koska jäykempi jousi kiihdyttää kappaletta enemmän.",
+          "feedback": "Oikein: $T = 2\\pi\\sqrt{m/k}$. Kun $k$ kaksinkertaistuu, jaksonaika pienenee kertoimella $\\sqrt{2}$. Se lyhenee mutta ei puolitu.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy5-9-L1-08",
+      "level": 1,
+      "text": "Jousen varassa kitkattomasti värähtelevä kappale päästetään irti ensin $2{,}0\\,\\text{cm}$:n ja sitten $4{,}0\\,\\text{cm}$:n päästä tasapainoasemasta. Miten jaksonaika muuttuu, kun amplitudi kaksinkertaistuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Jaksonaika pysyy samana, koska suurempi nopeus korvaa pidemmän matkan.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Jaksonaika kaksinkertaistuu, koska kappale kulkee kaksi kertaa pidemmän matkan.",
+          "feedback": "Pidempi matka kuljetaan myös suuremmalla nopeudella, koska jousen voima on suurempi. Nämä kumoavat toisensa. Jaksonaika ei siis kaksinkertaistu."
+        },
+        {
+          "text": "Jaksonaika nelinkertaistuu, koska värähtelyn energia kasvaa nelinkertaiseksi.",
+          "feedback": "Energia $E = \\tfrac{1}{2}kA^2$ kasvaa kyllä nelinkertaiseksi. Jaksonaikaa se ei kuitenkaan muuta: kaava $T = 2\\pi\\sqrt{m/k}$ ei sisällä amplitudia."
+        },
+        {
+          "text": "Jaksonaika pysyy samana, koska suurempi nopeus korvaa pidemmän matkan.",
+          "feedback": "Oikein: suuremmalla amplitudilla jousen voima on suurempi. Kappale kiihtyy enemmän ja kulkee pidemmän matkan samassa ajassa. Jaksonaika ei riipu amplitudista.",
+          "correct": true
+        },
+        {
+          "text": "Jaksonaika pitenee, koska kappale ehtii kulkea pidemmän matkan hitaammin.",
+          "feedback": "Pidempi matka ei kuluta enempää aikaa. Jousen voima on suurempi kauempana tasapainoasemasta, ja kappale kulkee nopeammin. Jaksonaika ei pitene vaan pysyy samana."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +163,127 @@
       "answer": 3.252202,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L2-05",
+      "level": 2,
+      "text": "Opiskelija mittasi matemaattisen heilurin jaksonaikaa $T$ eri pituuksilla $l$. Heilahdukset olivat pieniä (esimerkkiaineisto). Ilmanvastus jätetään huomiotta.\n\nLaske jaksonaikojen neliöt $T^2$ ja piirrä $(l, T^2)$-kuvaaja. Sovita pisteisiin suora origon kautta, koska nollapituisen heilurin jaksonaika on nolla. Määritä suoran kulmakertoimesta putoamiskiihtyvyys $g$.\n\nVastaa laatikkoon putoamiskiihtyvyys.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 9.771886,
+      "unit": "m/s²",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Heilurin jaksonaika pituuden funktiona",
+        "columns": [
+          "$l\\,(\\text{m})$",
+          "$T\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "0.90"
+          ],
+          [
+            "0.40",
+            "1.27"
+          ],
+          [
+            "0.60",
+            "1.55"
+          ],
+          [
+            "0.80",
+            "1.80"
+          ],
+          [
+            "1.00",
+            "2.01"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-9-L2-06",
+      "level": 2,
+      "text": "Opiskelija ripustaa jousesta eri massaisia punnuksia. Hän mittaa jokaisen värähtelyn kymmenen jakson ajan $t_{10}$ (esimerkkiaineisto). Jousen oma massa on pieni punnuksiin verrattuna, ja se jätetään huomiotta. Mikään ei myöskään vaimenna värähtelyä.\n\nLaske jaksonaika $T$ ja sen neliö $T^2$ jokaiselle massalle ja piirrä $(m, T^2)$-kuvaaja. Sovita pisteisiin suora origon kautta. Määritä suoran kulmakertoimesta jousen jousivakio $k$.\n\nVastaa laatikkoon jousivakio.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 20.14205,
+      "unit": "N/m",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Kymmenen jakson aika punnuksen massan funktiona",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$t_{10}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "0.100",
+            "4.5"
+          ],
+          [
+            "0.200",
+            "6.2"
+          ],
+          [
+            "0.300",
+            "7.7"
+          ],
+          [
+            "0.400",
+            "8.9"
+          ],
+          [
+            "0.500",
+            "9.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-9-L2-07",
+      "level": 2,
+      "text": "Opiskelija mittaa $1{,}000\\,\\text{m}$ pitkän heilurin jaksonaikaa eri lähtökulmista $\\alpha_0$ (esimerkkiaineisto). Hän ottaa käsin ajan kymmenelle jaksolle, $t_{10}$. Ajanoton epävarmuus on noin $0{,}2\\,\\text{s}$. Ilmanvastus jätetään huomiotta.\n\nKaava $T = 2\\pi\\sqrt{l/g}$ pätee pienillä heilahduksilla.\n\na) Kuinka monta prosenttia mitattu jaksonaika on kaavan antamaa jaksonaikaa suurempi, kun lähtökulma on $60\\,{}^\\circ$?\n\nb) Millä lähtökulmilla ero kaavaan on selvästi suurempi kuin ajanoton epävarmuus? Perustele kymmenen jakson ajoilla.\n\nVastaa laatikkoon kohdan a) tulos prosentteina.",
+      "kind": [
+        "data",
+        "experiment",
+        "error"
+      ],
+      "answer": 7.174902,
+      "unit": "%",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Kymmenen jakson aika eri lähtökulmilla",
+        "columns": [
+          "$\\alpha_0\\,({}^\\circ)$",
+          "$t_{10}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "20.1"
+          ],
+          [
+            "20.0",
+            "20.2"
+          ],
+          [
+            "40.0",
+            "20.7"
+          ],
+          [
+            "60.0",
+            "21.5"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +310,64 @@
       "answer": 21.722188,
       "unit": "s",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy5-9-L3-04",
+      "level": 3,
+      "text": "Opiskelija tutkii pystysuorassa jousessa värähtelevää punnusta eri massoilla (esimerkkiaineisto). Taulukossa on punnuksen massa $m$ ja jaksonaika $T$. Värähtely on pientä ja vaimenematonta.\n\nJousen oma massa värähtelee punnuksen mukana. Siksi mittausten mukaan $T^2 = \\dfrac{4\\pi^2}{k}(m + m_0)$. Tässä $m_0$ on lisämassa, joka kuvaa jousen vaikutusta.\n\na) Laske $T^2$, piirrä $(m, T^2)$-kuvaaja ja sovita pisteisiin suora. Määritä suoran kulmakertoimesta jousen jousivakio $k$.\n\nb) Määritä lisämassa $m_0$ suoran ja $T^2$-akselin leikkauspisteestä. Kuinka monta prosenttia liian pieneksi jousivakio tulisi, jos se laskettaisiin pelkästään kevyimmän punnuksen mittauksesta kaavalla $T = 2\\pi\\sqrt{m/k}$?\n\nVastaa laatikkoon kohdan a) jousivakio.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 25.145489,
+      "unit": "N/m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Jaksonaika punnuksen massan funktiona",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$T\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "0.050",
+            "0.334"
+          ],
+          [
+            "0.100",
+            "0.433"
+          ],
+          [
+            "0.150",
+            "0.521"
+          ],
+          [
+            "0.200",
+            "0.587"
+          ],
+          [
+            "0.250",
+            "0.656"
+          ],
+          [
+            "0.300",
+            "0.708"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-9-L3-05",
+      "level": 3,
+      "text": "Matemaattisen heilurin pituus on $1{,}20\\,\\text{m}$. Kuula nostetaan niin, että lanka on $10{,}0\\,{}^\\circ$ kulmassa pystysuoraan nähden. Kuula päästetään irti levosta. Kuula käsitellään pistemäisenä. Langan massa ja ilmanvastus jätetään huomiotta.\n\na) Kuinka kauan kuulalla kestää kulkea ääriasennosta alimpaan kohtaan?\n\nb) Laske kuulan suurin nopeus energian säilymisen avulla. Kuinka korkealla alimman kohdan yläpuolella kuula on ääriasennossa?\n\nc) Laske sama nopeus mallilla, jossa heiluri on harmoninen värähtelijä. Sen amplitudi on kaarenpituus $A = l\\alpha_0$, ja jousivakiota vastaa $\\tfrac{mg}{l}$. Kuinka monta prosenttia tulokset eroavat ja miksi?\n\nVastaa laatikkoon kohdan b) suurin nopeus.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.598069,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ]
 }

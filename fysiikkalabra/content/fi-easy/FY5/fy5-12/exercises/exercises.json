@@ -39,6 +39,77 @@
       "answer": 3.0,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L1-06",
+      "level": 1,
+      "text": "Jännitetyssä narussa kulkee kaksi samanlaista pulssia toisiaan kohti. Toinen on narun yläpuolella ja toinen alapuolella. Pulssit kohtaavat, menevät hetkeksi päällekkäin ja ovat sitten taas erillään.\n\nMikä seuraavista kuvaa pulssien tilannetta kohtaamisen jälkeen oikein?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Pulssit jatkavat muuttumattomina toistensa läpi, koska poikkeamat vain summautuvat kohtaamishetkellä.",
+      "choices": [
+        {
+          "text": "Pulssit kimpoavat toisistaan takaisin, koska ne kohtaavat vastakkaisin suunnin ja törmäävät kuin kappaleet.",
+          "feedback": "Aallot eivät törmää kuin kappaleet. Kohtaamisen aikana poikkeamat lasketaan yhteen. Sen jälkeen kumpikin pulssi etenee samaan suuntaan kuin ennen."
+        },
+        {
+          "text": "Pulssit jatkavat muuttumattomina toistensa läpi, koska poikkeamat vain summautuvat kohtaamishetkellä.",
+          "feedback": "Oikein: superpositioperiaatteen mukaan poikkeamat lasketaan yhteen vain siellä ja silloin, kun pulssit ovat samassa kohdassa. Kohtaamisen jälkeen kumpikin pulssi on ennallaan.",
+          "correct": true
+        },
+        {
+          "text": "Pulssit katoavat kokonaan, koska ylös ja alas suuntautuvat poikkeamat kumoavat toisensa lopullisesti.",
+          "feedback": "Kumoutuminen kestää vain hetken. Kun pulssit ovat päällekkäin, naru on hetken suora. Sen jälkeen pulssit tulevat taas näkyviin ja jatkavat matkaa."
+        },
+        {
+          "text": "Pulssit yhtyvät yhdeksi isommaksi pulssiksi, koska naru voi kuljettaa vain yhtä pulssia kerrallaan.",
+          "feedback": "Naru voi kuljettaa kahta pulssia yhtä aikaa. Poikkeamat lasketaan yhteen, mutta pulssit eivät sulaudu pysyvästi yhdeksi."
+        }
+      ]
+    },
+    {
+      "id": "fy5-12-L1-07",
+      "level": 1,
+      "text": "Kaksi samassa vaiheessa olevaa kaiutinta soittaa samaa siniääntä. Kuulija seisoo kaiuttimien keskinormaalilla eli yhtä kaukana molemmista kaiuttimista.\n\nMiksi hän kuulee siellä voimakkaan äänen millä tahansa taajuudella?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Matkaero on nolla, joten aallot saapuvat aina harja harjan kanssa.",
+      "choices": [
+        {
+          "text": "Matkaero on aina täsmälleen yksi aallonpituus, joten aallot saapuvat samassa vaiheessa.",
+          "feedback": "Keskinormaalilla kummankin kaiuttimen etäisyys on sama. Matkaero on siis nolla eikä yksi aallonpituus."
+        },
+        {
+          "text": "Äänet eivät kohtaa keskinormaalilla, joten kumpikin kuuluu erikseen täydellä voimallaan.",
+          "feedback": "Äänet kohtaavat kaikkialla, missä molemmat aallot ovat, ja niiden poikkeamat lasketaan yhteen. Voimakas ääni syntyy tästä summautumisesta."
+        },
+        {
+          "text": "Matkaero on nolla, joten aallot saapuvat aina harja harjan kanssa.",
+          "feedback": "Oikein: yhtä pitkän matkan kulkeneet aallot ovat kuulijalla samassa vaiheessa taajuudesta riippumatta, ja ne vahvistavat toisiaan.",
+          "correct": true
+        },
+        {
+          "text": "Ääni kulkee keskellä nopeammin, joten molempien kaiuttimien äänet ehtivät perille ensin.",
+          "feedback": "Äänen nopeus on kaikkialla ilmassa sama. Voimakas ääni johtuu siitä, että matkaero on nolla, ei äänen nopeudesta."
+        }
+      ]
+    },
+    {
+      "id": "fy5-12-L1-08",
+      "level": 1,
+      "text": "Kaksi samassa vaiheessa olevaa kaiutinta soittaa samaa siniääntä. Tietyssä kuuntelupisteessä toisen kaiuttimen etäisyys on $5{,}30\\,\\text{m}$ ja toisen $4{,}45\\,\\text{m}$. Äänen nopeus on $340\\,\\text{m/s}$.\n\nMikä on pienin taajuus, jolla ääni on kuuntelupisteessä heikko? Anna vastaus hertseinä.",
+      "kind": [
+        "reasoning"
+      ],
+      "answer": 200,
+      "unit": "Hz",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +144,138 @@
       "answer": 1.5,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L2-05",
+      "level": 2,
+      "text": "Kaksi samassa vaiheessa olevaa kaiutinta A ja B on $2{,}00\\,\\text{m}$:n päässä toisistaan. Ne soittavat samaa siniääntä. Äänen nopeus on $340\\,\\text{m/s}$.\n\nMikrofonia siirrettiin kaiuttimien välistä janaa pitkin välillä $x = 0{,}30\\,\\text{m}$ … $1{,}70\\,\\text{m}$. Tässä $x$ on etäisyys kaiuttimesta A. Mikrofonin etäisyys kaiuttimesta B on $2{,}00\\,\\text{m} - x$. Taulukossa ovat kaikki tällä välillä havaitut heikoimman äänen kohdat peräkkäin (esimerkkiaineisto).\n\nMääritä äänen taajuus kaikkien kuuden kohdan avulla. Anna vastaus hertseinä.",
+      "kind": [
+        "data"
+      ],
+      "answer": 680,
+      "unit": "Hz",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Heikoimman äänen kohdat kaiuttimien välisellä janalla",
+        "columns": [
+          "Heikoimman äänen kohta",
+          "$x\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1.",
+            "0.38"
+          ],
+          [
+            "2.",
+            "0.62"
+          ],
+          [
+            "3.",
+            "0.88"
+          ],
+          [
+            "4.",
+            "1.13"
+          ],
+          [
+            "5.",
+            "1.37"
+          ],
+          [
+            "6.",
+            "1.63"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-12-L2-06",
+      "level": 2,
+      "text": "Opiskelija kirjoittaa: ”Kun kahden kaiuttimen äänet heikentävät toisiaan solmuviivalla, ääniaaltojen energia häviää.”\n\nMikä seuraavista oikaisee väitteen oikein?",
+      "kind": [
+        "error",
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Energia jakautuu uudelleen, koska solmuviivoille siirtyy vähemmän ja muualle enemmän.",
+      "choices": [
+        {
+          "text": "Väite on oikein, koska kaiuttimien kokonaisenergia pienenee, kun toinen aalto kumoaa toisen.",
+          "feedback": "Kaiuttimet tuottavat energiaa aivan yhtä paljon kuin ennenkin. Interferenssi vaikuttaa vain siihen, mihin energia kulkeutuu."
+        },
+        {
+          "text": "Energia muuttuu solmuviivoilla lämmöksi, koska aallot hankaavat toisiaan kohdatessaan.",
+          "feedback": "Aallot kulkevat toistensa läpi eivätkä hankaa toisiaan. Solmuviivoilla ei synny tavallista enempää lämpöä."
+        },
+        {
+          "text": "Energia jakautuu uudelleen, koska solmuviivoille siirtyy vähemmän ja muualle enemmän.",
+          "feedback": "Oikein: energian kokonaismäärä säilyy. Interferenssikuvio jakaa energian tilaan eri tavalla. Solmuviivoille sitä tulee vähän ja vahvistavan interferenssin kohtiin vastaavasti enemmän.",
+          "correct": true
+        },
+        {
+          "text": "Energia siirtyy solmuviivoilla toiseen kaiuttimeen, koska se vahvistaa tämän omaa ääntä.",
+          "feedback": "Kaiuttimet eivät ota energiaa vastaan toisiltaan. Interferenssi ei siirrä energiaa takaisin lähteille."
+        }
+      ]
+    },
+    {
+      "id": "fy5-12-L2-07",
+      "level": 2,
+      "text": "Aaltoaltaan kaksi lähdettä värähtelee samassa vaiheessa samalla taajuudella, ja niiden aallot ovat yhtä suuret. Pienellä anturilla mitataan veden värähtelyn amplitudi pisteissä, joiden matkaero lähteistä on eri suuri (esimerkkiaineisto).\n\na) Mikä on aallonpituus?\n\nb) Kuinka suuri on yhden lähteen aallon amplitudi yksinään?\n\nAnna b)-kohdan tulos millimetreinä.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 4.0,
+      "unit": "mm",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Veden värähtelyn amplitudi matkaeron mukaan",
+        "columns": [
+          "$\\Delta s\\,(\\text{cm})$",
+          "$A\\,(\\text{mm})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "7.9"
+          ],
+          [
+            "0.5",
+            "5.8"
+          ],
+          [
+            "1.0",
+            "0.3"
+          ],
+          [
+            "1.5",
+            "5.6"
+          ],
+          [
+            "2.0",
+            "8.1"
+          ],
+          [
+            "2.5",
+            "5.9"
+          ],
+          [
+            "3.0",
+            "0.2"
+          ],
+          [
+            "3.5",
+            "5.7"
+          ],
+          [
+            "4.0",
+            "7.8"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +302,47 @@
       "answer": 8.0,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L3-04",
+      "level": 3,
+      "text": "Konehuoneen kaiutin M toistaa jatkuvaa siniääntä, jonka taajuus on $170\\,\\text{Hz}$. Äänen nopeus on $340\\,\\text{m/s}$, ja kuulija on $3{,}00\\,\\text{m}$:n päässä kaiuttimesta M (esimerkkitilanne).\n\nMelua yritetään vaimentaa lisäämällä kaiutin N. Se saa saman signaalin ja soi samassa vaiheessa kuin M. Kaiutin N sijoitetaan kuulijasta kauemmas kuin M. Sen paikka valitaan niin, että kuulijan kohdalla on hiljaista mahdollisimman pienellä etäisyydellä. Oleta, että kummankin kaiuttimen aallot ovat kuulijalla yhtä suuret eikä ääni heijastu mistään.\n\na) Kuinka kaukana kuulijasta kaiutin N on?\n\nb) Taajuutta nostetaan arvosta $170\\,\\text{Hz}$. Mikä on pienin taajuus, jolla kuulijan kohdalla on hiljaisen sijaan voimakas ääni?\n\nc) Perustele, miksi tällainen järjestely ei sovellu melun vaimentamiseen ja miksi vastamelukuulokkeet toimivat toisin.\n\nAnna b)-kohdan tulos hertseinä.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 340,
+      "unit": "Hz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L3-05",
+      "level": 3,
+      "text": "Salissa kaksi samassa vaiheessa olevaa kaiutinta soittaa samaa siniääntä. Kaiuttimet ovat $1{,}00\\,\\text{m}$:n päässä toisistaan, ja äänen nopeus on $340\\,\\text{m/s}$.\n\nKuulija kävelee suoraa viivaa. Viiva on kaiuttimien välisen suoran suuntainen ja $4{,}00\\,\\text{m}$:n päässä siitä. Mitattu kohta $y$ lasketaan kaiuttimien keskinormaalin ja viivan leikkauspisteestä, joten kaiuttimet ovat kohdissa $y = \\pm 0{,}50\\,\\text{m}$. Taulukossa on kaksi ensimmäistä hiljaista kohtaa, kun $y$ kasvaa nollasta (esimerkkiaineisto). Niiden välissä ei ole muita hiljaisia kohtia.\n\nOleta, ettei ääni heijastu mistään.\n\na) Laske äänen taajuus ensimmäisen hiljaisen kohdan avulla.\n\nb) Perustele, miksi ensimmäinen hiljainen kohta vastaa lukua $n = 0$ ja toinen lukua $n = 1$, ja tarkista tulos toisen hiljaisen kohdan avulla.\n\nAnna a)-kohdan tulos hertseinä.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 850,
+      "unit": "Hz",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Hiljaiset kohdat kävelyviivalla",
+        "columns": [
+          "Hiljainen kohta",
+          "$y\\,(\\text{m})$"
+        ],
+        "rows": [
+          [
+            "1.",
+            "0.82"
+          ],
+          [
+            "2.",
+            "3.01"
+          ]
+        ]
+      }
     }
   ]
 }
