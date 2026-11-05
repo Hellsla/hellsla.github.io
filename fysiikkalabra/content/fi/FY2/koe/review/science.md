@@ -1,16 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 2241ae0d390f82f3
+VERDICT: PASS
+CONTENT-HASH: d0f3be8f9671a1e0
 
 ## Blocking
-1. **B, fy2-k2 b: unstated assumption the rubric grades.** "latausasema, jonka teho on 11 kW" does not say whether 11 kW is drawn from the grid or delivered to the battery. The solution, criterion 2 (1 p) and Yleisiä virheitä assume grid side (3,9 h); the other reading gives 38,4/11 = 3,5 h and loses points. Fix: "Latausasema ottaa verkosta tehon 11 kW."
-2. **A, fy2-k3 c statement: "jopa hieman enemmän hiilidioksidia".** Per MJ of fuel, wood emits about 112 g CO₂ and light fuel oil about 74 g (IPCC 2006 default factors, also used by Tilastokeskus): about 1,5 times, not "hieman". Fix: "noin puolitoista kertaa enemmän" with the source, as the FY2 scope note asks for real data.
-3. **A, fy2-k5 c Järkevyys: "Kahdenkymmenen megawatin jatkuva lämpöteho".** The recovered heat is 0,70 · 20 MW = 14 MW. Fix: write 14 MW.
+None. Round-1 items fixed:
+1. fy2-k2: the charging station now "ottaa sähköverkosta tehon 11 kW". t = 42,7 kWh / 11 kW = 3,88 h, and the rubric criterion is now justified.
+2. fy2-k3 c: "noin puolitoista kertaa" with the IPCC default factors 112 and 74 g/MJ (ratio 1,51). The model answer and the 2-point assumptions criterion state that the claim needs regrowth, and that CO₂ rises in the short term.
+3. fy2-k5 c: Järkevyys now says 0,70 · 20 MW = 14 MW.
 
 ## Polish
-- fy2-k1 e: 3,3 is 400 J/120 J, not efficiency "väärin päin" (that would be 1,4).
-- fy2-k4 b: the `answer` is 5325 kWh but the question asks for a share (35,5 %). Criterion 3 says "eivät kata lainkaan", but December and January give 15 and 40 kWh; use "juuri lainkaan" as the solution does.
-- fy2-k5 a Vastaus: "kaksi merkitsevää numeroa … (noin 180 GWh)" contradicts the stated 175 GWh and the rubric.
-- fy2-k6: the 9000 MW, 4400 MW, 30 % and 90 % are presented as facts with no source or year (scope note).
+- fy2-k5 a: the answer gives "noin 180 GWh", but the units_precision detail says "noin 175 GWh". Make them agree (20 MW may be read as exact for a mean load).
 
 ## Checked
-Hash at start and end 2241ae0d390f82f3. Own script recomputed every number: k1 c, d, e, g, i. k2 38,4; 42,7 kWh; 3,88 h (52,7 min); 5,12 €; 4,3 kWh. k3 4484 kg, 1686 kg. k4 5325 kWh, 35,5 %, 0,608 kW, 10,1 %. k5 175,2 GWh, 8176 homes. k6 sums 13 700/12 300/11 600 MW, net −3500/+500/+1900 MW, 40,9 % and 7,8 %, 69,6 GWh, 4640 homes, 23,7 and 34,7 TWh. k7 2,16 MJ, 4,8 bananas, 2,67 h, 1,8 MJ. Every choice item: exactly one correct option, every distractor wrong; j's −18 °C is right. Scope: no Q = cmΔT, no E_k/E_p, no W = Fs, no product of chain efficiencies (k7's 80 % is one given value); greenhouse effect only qualitative. Rubric sums: 20 + 4 × 15 + 2 × 20, maximum 70; each criterion matches its solution except Blocking 1.
+Delta from round 1. Hash d0f3be8f9671a1e0 at start and end.
+- Osa 1 reordering: b (index 0), h (vesivoima, index 3) and j (index 0) each still have exactly one correct option. The other indices are unchanged and still right. The e feedback now correctly says 3,3 = 400 J / 120 J.
+- fy2-k4 b now has two answers, 5325 kWh and 35,5 % (5325 / 15 000). The criteria (2 + 1) match. The solution's "vain murto-osan" fits December and January (15 and 40 kWh).
+- fy2-k4 d now asks whether solar alone could replace fossil electricity. The model answer is correct: zero emissions in use, it cuts fossil generation in summer, but winter production is near zero, so other generation, flexible capacity or storage is needed. The criteria (1 + 1 + 1 + 1) ask only for what the task and the table give. It stays in FY2 scope (qualitative, no radiative balance).
+- fy2-k6 capacities are now labelled rounded estimates for 2025.
+- Recomputed: k2 38,4 / 42,7 kWh, 52,7 min, 5,12 €; k4 0,608 kW, 10,1 %; k5 175,2 GWh, 8176 homes, 14 MW. `answers.py` agrees.
+- Rubric sums: every part's criteria equal its points. Total 20 + 4 × 15 + 2 × 20 = 120 offered, maximum 70.
+- Scope: still no Q = cmΔT, E_k/E_p, W = Fs or chain-efficiency product.
