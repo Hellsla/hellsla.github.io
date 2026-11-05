@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ed984c15280d5149
+CONTENT-HASH: 4392cc6a514de0b2
 Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 1
+Round 2
 
 ## Blocking
 (none)
-
-## Fixed
-- exercises.json L1-06 feedback (two choices): "a falling model" changed to "a free-fall model" (fi: putoamismalli), the standard physics term.
 
 ## Polish
 (none)
 
 ## Checked
-- All 20 tasks (new: L1-06..08, L2-05..07, L3-04..05) compared field by field with the Finnish: ids, levels, kinds, answers (numbers and the L1-06 answer string), tolerances, correct flags, choice order, figure and data cells (every number, decimal point in JSON) are identical; only the unit strings are translated (orders of magnitude, times, thousand, million people, million times, billion).
-- solutions.md: all 21 sections in the same order; every formula and number equals the Finnish (decimal comma to point); only subscripts are translated (e.g. d_sand, r_model,J, V_drop, d_S/d_E for Aurinko/Maa), consistently within each task.
-- Physics wording kept: order of magnitude rule (a under about 3), model vs observation, uniform-motion model d = d0 + vt, unit error in the student's Voyager solution, ruler reading uncertainty and fit through the origin.
-- No Finnish words or letters left in exercises.json or solutions.md.
-- check_i18n en: 0 errors.
+- New L1-09 (eclipse angular size) compared with fi: id, level, kind, answer string, tolerance 0.02, choice order, correct flag and every number (3.84e8, 3.47e6, 1.39e9, 1.5e8/9/11/13, 400, 39 000, 4x, 100x, 1000x) are identical.
+- Recomputed: 1.39e9/3.47e6 = 400.6; 400.6 * 3.84e8 = 1.54e11 m; 1.5e9 is 3.9x and 1.5e13 is 39 100x the Moon distance; apparent-size factors (about 100 larger, 1000 larger, 100 smaller) hold; 1.5e11 / 3.0e8 = 500 s = 8 min.
+- The similar-triangles model (equal apparent size means equal distance ratio and diameter ratio) is stated as in fi; the distractor feedback is correct and the kilometre/metre hint is right.
+- solutions.md L1-09: all five parts in the Finnish order with the same formulas and numbers; decimal comma changed to point where English.
+- Language: no Finnish left in en; check_i18n shows nothing for fy1-1; build fy1-1 succeeds.
+- Earlier-reviewed tasks unchanged from the previous round.

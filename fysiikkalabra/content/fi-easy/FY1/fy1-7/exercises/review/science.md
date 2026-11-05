@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 41693b18077a3ffd
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: e49c387515a0461e
+Mode: delta (new task L2-08, translation against reviewed fi)
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-(none needed: the plain Finnish (selkosuomi) text already matched fi in every number)
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Script comparison of exercises.json against content/fi: same ids, levels, kinds, answers, units, tolerances, correct flags, choice counts, data table cells; every number in all strings identical (decimal comma/point normalised) for all 20 exercises, incl. the 8 new (L1-06..08, L2-05..07, L3-04..05).
-- Re-derived: L1-08 56.5 g, L2-05 2.7 g/cm3, L2-06 920 kg/m3 (m0 about 85 g), L2-07 8.9 g/cm3, L3-04 11.3 g/cm3 (9.42, -16.7 %), L3-05 39.9 cm3; all agree with fi.
-- solutions.md prose for the new tasks read through: same steps, numbers and conclusions as fi (copper vs plastic, lead vs copper, Cu/Al by volume and mass).
-- Choice feedback in L1-06/L1-07 names the same misconception per distractor as fi.
-- check_i18n.py fi-easy: 0 errors.
+- L2-08 ids, kinds, order (B, D, A, C), answer string, unit, tolerance identical to fi; values and units in the text identical (decimal point/comma only).
+- Recomputed: A 2.7, B 0.90, C 9.0, D 1.2 g/cm3; conversions 0.36 kg = 360 g, 0.40 dm3 = 400 cm3, 4.5 kg = 4500 g, 100 ml = 100 cm3; order correct.
+- Solution: same steps and remarks as fi (B floats, mass order differs, two significant figures).
+- check_i18n.py: nothing for fy1-7; build.py fy1-7 succeeds.

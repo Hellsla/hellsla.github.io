@@ -422,7 +422,7 @@ def order_html(a, md, lid, aid):
     for j, c in enumerate(choice_order(items, lid, aid)):
         sid = f"{aid}-o{j}"
         rows += (f'<li data-rank="{c["rank"]}"><label for="{esc(sid)}" class="ord-text">{inline(md, c["text"])}{fig_of(c)}</label>'
-                 f'<select id="{esc(sid)}" aria-label="{esc(T("inquiry.order_place"))}"><option value="">–</option>{opts}</select>'
+                 f'<select id="{esc(sid)}" aria-label="{esc(T("inquiry.order_place"))}"><option value="">{esc(T("inquiry.order_pick"))}</option>{opts}</select>'
                  f'<span class="ord-right" hidden></span></li>')
     return (f'<fieldset class="order" data-id="{esc(aid)}"><legend>{legend_html(inline(md, a["prompt"]))}</legend><ul class="order-list">{rows}</ul>'
             f'<div class="choice-actions"><button type="button" class="commit">{T("inquiry.commit")}</button></div><output aria-live="polite"></output></fieldset>')

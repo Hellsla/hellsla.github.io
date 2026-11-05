@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cfbc0f23d4b0fd14
+CONTENT-HASH: ec2ad2139960c54b
 Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 1
+Round 2
 
 ## Blocking
 (none)
-
-## Fixed
-- (nothing needed)
 
 ## Polish
 (none)
 
 ## Checked
-- All 20 tasks (new: L1-06..08, L2-05..07, L3-04..05) compared field by field with the Finnish: ids, levels, kinds, answers (including the L1-06 answer string), units, tolerances, correct flags, choice order and all data cells are identical.
-- solutions.md: 21 sections in the same order; every formula, number and symbol is character for character the same as the Finnish (decimal comma kept in the maths).
-- Content stays correct in simplified wording: order of magnitude defined as "lähin kymmenpotenssi" (L1-08), "pätee eli on voimassa" for the validity of a model (L1-06), the same model/observation, uniform-motion and unit-error arguments as in the Finnish.
-- check_i18n fi-easy: 0 errors.
+- New L1-09 (eclipse angular size) compared with fi: id, level, kind, answer string, tolerance 0.02, choice order, correct flag and every number (3.84e8, 3.47e6, 1.39e9, 1.5e8/9/11/13, 400, 39 000, 4x, 100x, 1000x) are identical.
+- Recomputed: 1.39e9/3.47e6 = 400.6; 400.6 * 3.84e8 = 1.54e11 m; 1.5e9 is 3.9x and 1.5e13 is 39 100x the Moon distance; apparent-size factors (about 100 larger, 1000 larger, 100 smaller) hold; 1.5e11 / 3.0e8 = 500 s = 8 min.
+- The similar-triangles model (equal apparent size means equal distance ratio and diameter ratio) is stated as in fi; the distractor feedback is correct and the kilometre/metre hint is right.
+- solutions.md L1-09: all five parts in the Finnish order with the same formulas and numbers; decimal comma changed to point where English.
+- Language: no Finnish left in en; check_i18n shows nothing for fy1-1; build fy1-1 succeeds.
+- Earlier-reviewed tasks unchanged from the previous round.

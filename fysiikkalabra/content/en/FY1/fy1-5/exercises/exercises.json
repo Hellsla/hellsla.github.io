@@ -221,7 +221,7 @@
         {
           "text": "Graph B",
           "figure": "fy1-5/pick-vt",
-          "feedback": "This is a $(t, v)$ graph: the vertical axis shows the velocity $v$, not the position $s$. In it, standing still is $v = 0$ and steady walking is a horizontal line, but in a position graph a horizontal line means staying in place. You cannot see from this graph where the walker is, nor that she is at $6.0\\,\\text{m}$ at the start."
+          "feedback": "This is a $(t, v)$ graph: the vertical axis shows the speed $v$, not the position $s$. In it, standing still is $v = 0$ and steady walking is a horizontal line, but in a position graph a horizontal line means staying in place. You cannot see from this graph where the walker is, nor that she is at $6.0\\,\\text{m}$ at the start."
         },
         {
           "text": "Graph C",

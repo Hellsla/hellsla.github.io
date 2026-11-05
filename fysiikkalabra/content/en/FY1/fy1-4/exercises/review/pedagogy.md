@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d125c3f6de81de21
-Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 1
+CONTENT-HASH: 1abe105dbc762c64
+Mode: delta (translation review of the new task fy1-4-L2-08 against the reviewed Finnish set, teacher procedure 2026-10-28)
+Round 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- exercises.json fy1-4-L2-07: unit "kertaa" (Finnish left over) -> "times", as in the other English ratio tasks (display unit only; answer and tolerance unchanged).
-- solutions.md fy1-4-L2-07 Reasonableness: "B weighs roughly three times as much as A" (mass context) -> "B has roughly three times the mass of A".
-- solutions.md fy1-4-L3-04: "Of the measured points" -> "Among the measured points" (two places).
+(none needed)
 
 ## Polish
 (none)
 
 ## Checked
-- Teaching sequence, levels (L1 8, L2 7, L3 5), task kinds and the figure task L2-02 match the reviewed Finnish set; every new task has its solution with the same section labels as the existing English solutions (Given/Find/Principle/Reading the graph/Formula/Conversions/Substitution/Answer/Reasonableness; concept tasks Find/Principle/Model answer).
-- Instructions are clear and natural English; data tasks name what to plot and fit; the reasoning prompts (L2-06, L2-07, L3-04, L3-05) ask for the same justification as in Finnish; MC distractors keep their misconception and repairing feedback.
-- No Finnish left; check_i18n.py en: 0 errors.
+- L2-08 is a YO-skill error-finding task (docs/exercise-types.md): the situation first, the calculation in four numbered lines, the question last as its own sentence ("On which line is the error?"); level 2 fits.
+- English is natural: "Line 1..4", "The calculation may contain an error", "far from each other", "difference of the x-values"; decimal point used throughout; no Finnish left.
+- The wrong-line choices each carry feedback that names why the line is right (reading from the fitted line, final minus initial, line 4 inheriting the wrong dt) and the "no error" option is repaired with k = 1.5 l/min.
+- The solution can be followed by a student who missed the error: principle, which line is wrong and why, how 12.0 arises, the correct k and a unit check; same section labels as the other English solutions.

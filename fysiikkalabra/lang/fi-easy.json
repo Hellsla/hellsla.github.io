@@ -282,7 +282,8 @@
     "exp_csv": "Lataa CSV",
     "tf_true": "Tosi",
     "tf_false": "Epätosi",
-    "order_place": "Paikka järjestyksessä"
+    "order_place": "Paikka järjestyksessä",
+    "order_pick": "Paikka"
   },
   "js": {
     "split_open": "Avaa tehtävät teorian viereen",

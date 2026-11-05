@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ee1439f1aa6344d8
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: b092bb5587c87c57
+Mode: full (translation review against the reviewed Finnish set; new task fy1-5-L2-08)
+Round 2
 
 ## Blocking
 (none)
-
-## Fixed
-(none needed: text already matched fi in every number and was natural)
 
 ## Polish
 (none)
 
 ## Checked
-- Text is natural and keeps the fi meaning: L1-06 distractor feedback names the right misconception (intercept, total distance, s:t only through origin); L2-06 error analysis separates position and distance; L3-04/05 reasoning questions kept.
-- Level, kind tags and task order identical to fi. Wording suits the target reader (selkosuomi: short sentences, terms explained, one idea per sentence).
+- L2-08 keeps the YO-type graph choice (Kuvaajan valinta): same four figure options, each distractor with its own misconception (rising line, (t, v) instead of (t, s), distance instead of position) and feedback that repairs it without naming the right letter in the wrong options.
+- Language: selkosuomi, short sentences, one idea per sentence; same physics as fi.
+- Level 2, kind tags graph and concept, and task order identical to fi; the solution has Find, Principle, Model answer and Reading the graph like the other tasks.
+- Figure descriptions give a reader who cannot see the graph the same data as the picture and do not reveal the answer.

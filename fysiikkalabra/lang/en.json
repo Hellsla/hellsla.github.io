@@ -282,7 +282,8 @@
     "exp_csv": "Download CSV",
     "tf_true": "True",
     "tf_false": "False",
-    "order_place": "Place in the order"
+    "order_place": "Place in the order",
+    "order_pick": "Place"
   },
   "js": {
     "split_open": "Open the exercises beside the theory",

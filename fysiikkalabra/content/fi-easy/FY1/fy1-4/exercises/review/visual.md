@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 798dbae32cd6fe06
+CONTENT-HASH: aa44f962e1cff333
+Mode: delta, Round 1 (new task fy1-4-L2-08, solutions.md)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-05 task — the student's quotation uses straight quotation marks; Finnish typographic marks would be tidier (same in the Finnish set).
-- [Minor] L2-06 Sijoitus — 0,448 m/s · 0,0 s keeps the stacked unit m/s small; acceptable (same in the Finnish set).
+- [Minor] fy1-4-L2-08 — the litre \textsf{l} (project convention) reads as a bar or the digit 1 in "12,0 l" and "17,0 l"; convention is fixed, so only the implication.
+- [Minor] solutions.md fy1-4-L2-08 Mallivastaus — about 120 words in one paragraph with three inline fractions; split before "Rivin 4 kaava…" and before "Tarkistus:".
 
 ## Checked
-- Mode: delta, Round 1 (fi-easy set against the PASSed Finnish layout; wording and the new exercises). Text edits made in this review (L2-07 task, L3-04 solution sentences) are plain prose, no formula or layout change.
-- Opened open-exercises-1280-8 (L1-08, solution), open-exercises-L2-1280-8 (L2-06 solution; L2-07 start), open-exercises-L3-1280-6 (L3-04 solution; L3-05 start): formulas, fractions, units, answer boxes readable, nothing clipped at 1280 px. Other captures not opened; 390 px captures of the exercise stage show nothing clipped. Captures predate the two prose edits.
-- Finnish: units after a number take the case ending as in the Finnish ("0,83 m:n päässä"); glossary terms consistent.
+- Captures opened: fy1-4-open-exercises-L2-1280-10 (4-15 end, 4-16 task rows 1–4) and -11 (options, wrong-answer feedback, solution).
+- Rows 1–4 are separate paragraphs, the Rivi 4 fraction and its option fit at 1280, feedback opens inside the card. Language is plain and consistent with the earlier tasks.
+- Not checked from captures: the exercises are captured only at 1280 px, so the new task at 390 px was not seen; the other edited tasks (situation/question paragraph splits) were judged from the diff only unless named above.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

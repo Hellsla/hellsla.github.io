@@ -1,24 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d125c3f6de81de21
-Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 1
+CONTENT-HASH: 1abe105dbc762c64
+Mode: delta, Round 1 (new task fy1-4-L2-08, solutions.md)
 
 ## Blocking
 (none)
 
-## Fixed
-- exercises.json fy1-4-L2-07: unit "kertaa" (Finnish left over) -> "times", as in the other English ratio tasks (display unit only; answer and tolerance unchanged).
-- solutions.md fy1-4-L2-07 Reasonableness: "B weighs roughly three times as much as A" (mass context) -> "B has roughly three times the mass of A".
-- solutions.md fy1-4-L3-04: "Of the measured points" -> "Among the measured points" (two places).
-
 ## Polish
-- [Minor] solutions L2-06 Answer — the boxed value is followed by a sentence starting "Two significant figures, like ..."; fine as the house pattern, optionally lead with the value.
-- [Minor] solutions L2-06 Reading the graph — the points (0.0 s; 0.83 m) and (5.0 s; 3.07 m) are named twice in neighbouring sentences; could be merged.
-- [Minor] captures predate the final text-only edits (stamp hash 567712a7d36b8048); the edits change no layout.
+- [Minor] fy1-4-L2-08 — the litre \textsf{l} (project convention) reads as a bar or the digit 1 in "12.0 l" and "17.0 l" at this size; convention is fixed, so only the implication: keep the thin space before it (it is there).
+- [Minor] solutions.md fy1-4-L2-08 Model answer — about 150 words in one paragraph with three inline fractions; split at "The formula and the division on line 4…" and at "Check:".
+- [Minor] The task has no Given block in the solution while its neighbours do; harmless, the lines are in the task.
 
 ## Checked
-- review/shots: open-exercises-1280-6 (L1-06 MC with feedback and model answer), open-exercises-L2-1280-8 (L2-06 solution); units, decimal point, KaTeX units with thin spaces and fractions render correctly; no clipping.
-- Remaining new exercises checked from source: LaTeX units and decimal points consistent, no plain-text numbers with units.
+- Captures opened: fy1-4-open-exercises-L2-1280-8, -9 (neighbouring 4-14 and 4-15, unchanged layout), -10 and -11 (L2-08: Lines 1–4 as separate rows with display-size fraction in line 4 and in the option, wrong-answer feedback, solution).
+- Line 4 and its option row fit at 1280 without clipping.
+- Not checked from captures: the exercises are captured only at 1280 px, so the new task at 390 px was not seen; the other edited tasks (situation/question paragraph splits) were judged from the diff only unless named above.
 
 ## Scores
-illustrations 4 · typography 4 · English 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 (English: 4) · accessibility 4

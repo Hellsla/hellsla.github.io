@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ed984c15280d5149
-Mode: full (translation review against the reviewed Finnish set, teacher procedure 2026-10-28)
-Round 1
+CONTENT-HASH: 4392cc6a514de0b2
+Mode: delta, Round 1 (new task fy1-1-L1-09, solutions.md)
 
 ## Blocking
 (none)
 
-## Fixed
-- (nothing needed)
-
 ## Polish
-(none)
+- [Minor] solutions.md fy1-1-L2-05 Given (untouched text) — subscripts r_Jupiter, r_Neptune, r_model,N render as italic maths letters, not upright words — set the words in \text{}.
+- [Minor] L1-09 task text — "as many times the distance of the Moon as its diameter is times the diameter of the Moon" is clumsy — e.g. "its distance is the same multiple of the Moon's distance as its diameter is of the Moon's diameter".
 
 ## Checked
-- Screenshots of the open exercises (level 2 part 5, tables of L2-05) at 1280 px: the table caption, column headers (Planet, r (AU)) and English planet names render cleanly, no overflow; the answer field shows the unit "cm" and the solution blocks lay out like the Finnish.
-- Data tables in L2-05, L2-06 and L2-07 have the same rows, columns and numeric cells as the Finnish; the English captions are short and fit.
-- Unit strings next to the answer fields are short ("orders of magnitude", "thousand", "billion", "million times") and do not wrap badly.
-- Math is identical to the Finnish apart from translated subscripts; the decimal point is used throughout the English text, the tables and the solutions.
+- Captures opened: fy1-1-open-exercises-1280-9 and -10 (L1-09: task, four options, wrong-answer feedback, Given/Find/Principle/Model answer/Reasonableness blocks), L2-1280-5 (L2-05 split paragraphs and table), L3-1280-6 (L3-05 split paragraphs, solution).
+- All quantities are LaTeX with unit, decimal point, \cdot, fractions render cleanly, nothing clipped at 1280.
+- Not checked from captures: the exercises are captured only at 1280 px, so the new task at 390 px was not seen; the other edited tasks (situation/question paragraph splits) were judged from the diff only unless named above.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 (English: 4) · accessibility 4

@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5a9d2e56890d8159
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: b9de02e0cb00073f
+Mode: delta, Round 1 (new task fy1-3-L2-08, solutions.md, answers.py)
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed: the English text already matched fi in every number and was natural)
-
 ## Polish
-(none)
+- [Minor] solutions.md fy1-3-L2-08 Model answer — one block of about 190 words with four ideas and two inline fractions that open the line spacing — split into: the difference, the conclusion, the two wrong claims, the precision.
+- [Minor] same — straight quotes "..." around the rejected claims — use curly quotes consistently.
 
 ## Checked
-- The screenshot files listed in packet-visual.md are not present in review/shots/ in this checkout, so no image was viewed. The check was made on the JSON: table captions, column headers (symbols and units) and cell values of L2-05, L2-06 and L3-04 equal fi apart from the translated caption; no table is wider than the fi one (same columns and rows).
-- Texts are of similar length to the fi originals; no overlong unbroken strings; math uses the language's decimal point; no stray Finnish or untranslated markup.
-- Figure reference of L1-03 (fy1-3/pendulum-dots) is unchanged from fi.
+- Captures opened: fy1-3-open-exercises-L2-1280-9 (3-15 split paragraphs and solution), -10 (3-16 task, data table, options, correct feedback), -11 (3-16 solution blocks).
+- The table (caption, symbols with upright subscripts, unit headers) fits and sits between question and options; options are whole clickable rows; feedback opens inside the card.
+- Not checked from captures: the exercises are captured only at 1280 px, so the new task at 390 px was not seen; the other edited tasks (situation/question paragraph splits) were judged from the diff only unless named above.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 (English: 4) · accessibility 4
