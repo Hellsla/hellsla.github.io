@@ -1,26 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b1e8c35e57ad6a01
+CONTENT-HASH: a34f3aab0e6c03cc
+
+Scope (teacher's ruling "katselmoi vain muuttuneet osat"): `git diff e7fb0232a -- content/*/FY6/sovella` plus what the changed sentence touches. The fi content change is one sentence, the fy6-s4 d **Periaate** in solutions.md. en and fi-easy did not exist at e7fb0232a, so for them the diff since their last PASS (24b2a3b87) applies. It is the same one sentence. The packet's full mode was narrowed to that scope.
 
 ## Blocking
-None. The round-2 item (fy6-s2 c, cable heating) is fixed: the solution's *Kaapeli* paragraph gives $0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 = 2{,}49 \approx 2{,}5\,\text{W}$, against $5{,}0\,\text{W}$ before, and criterion 2 now grades it. Solution, rubric and question agree. The reason given (power depends on $I^2$) is correct.
+None.
 
 ## Polish
-- s2 d: the key `calculation` now appears twice (current, and lamp voltage).
-- s3 c: the `conclusion` criterion repeats "energia ei häviä" from criterion 3.
-- s4 a: the rounding reason ("enintään kaksi tai kolme numeroa") is muddled.
-- s1 d (C): the 0,03 V drift measured at 0,10 A stands in for the drift at higher currents. That is a fair simplification for the level.
+- s4 d rubric criterion 1 still says "säilyttää varauksensa ja energiansa". That is correct under the lesson's definition (fy6-13: "Kondensaattorin varauksella $Q$ tarkoitetaan toisen levyn varauksen suuruutta"), so it needs no change.
 
 ## Checked
-- **Round-1 items 1–4 are fixed.**
-  - s1 d: the drift is attributed to discharging, and heating to a change in $R_\text{s}$ of uncertain direction.
-  - s4: the text now names the voltage-raising circuit.
-  - s2 d: the assumptions point is replaced by the lamp voltage, which the question now asks for.
-  - s2 b: 17 W with the two-figure reason.
-- **s1 drift, recomputed.** The repeat at 0,10 A gives 4,45 V against 4,48 V. Time and current grew together, so a linear drift of at most 0,03 V tilts the slope by at most $0{,}03 : 0{,}50 = 0{,}06\,\Omega$. The corrected slope is about 1,14 Ω and the intercept moves by only 0,006 V. "1,1…1,2 Ω, 1,2 pikemmin yläraja" follows. The $R_\text{s}$ tolerance of 0,09 matches the accepted range 1,1…1,3 Ω.
-- **s2 d:** $R_\text{r} I = 2{,}0 \cdot 4{,}286 = 8{,}57 \approx 8{,}6\,\text{V}$, dimmer than 10,0 V. The fuse wording now states its simplification.
-- **s4:**
-  - Discharge resistor: $300^2 : 10^4 = 9\,\text{W}$, with $\tau = 3{,}3\,\text{s}$.
-  - Stored energy: $E \approx 15\,\text{J}$ (14,85 J). $\Delta E = 6{,}86\,\text{J}$, 46 %.
-  - Safety: the "älä yritä itse" note is appropriate.
-- **s3 figure:** the droplet now starts at the nozzle plate, consistent with "lähtee levossa".
-- Round 3 changed only s2 c (verified with git show HEAD). All other numbers are unchanged from round 1 and still agree with my independent recomputation and with answers.py. The points still add up, and practice.py check is OK. The hash is the same at the start and at the end.
+- **New Periaate:** "levyillä on varaukset $+Q$ ja $-Q$, ja energia on varastoitunut levyjen väliseen sähkökenttään". This is physically correct. It removes the old implication that the capacitor holds a net charge, or holds its energy "on the plates". It matches fy6-13 lines 51, 250 and 393 (total charge zero, energy in the field).
+- **Symbol $Q$:** consistent with s4 c ("Kondensaattorin varaus on $Q = CU$") and with the teacher's note $Q = CU = 0{,}099\,\text{C}$.
+- **Rest of d:** "Jännite ei katoa" and the Mallivastaus (300 V, ≈15 J, 0,30 A, a 10 kΩ discharge resistor with 9 W) are unchanged and still agree with the Periaate.
+- **Checks:** practice.py check is OK (4 tasks, 60 points). The hash is the same at the start and at the end.

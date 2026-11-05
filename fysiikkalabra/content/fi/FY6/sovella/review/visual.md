@@ -1,13 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: b1e8c35e57ad6a01
+CONTENT-HASH: a34f3aab0e6c03cc
+
+Scope (teacher's ruling "katselmoi vain muuttuneet osat"): `git diff e7fb0232a -- content/*/FY6/sovella` plus what the changed sentence touches. The fi content change is one sentence, the fy6-s4 d **Periaate** in solutions.md. en and fi-easy did not exist at e7fb0232a, so for them the diff since their last PASS (24b2a3b87) applies. It is the same one sentence. The packet's full mode was narrowed to that scope.
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] fy6-s2 c Mallivastaus, Kaapeli paragraph at 390 px — the inline chain wraps after "0,80 Ω ·" in the middle of the product, as the Kirkkaus line does; readable, same pattern as before.
+None in scope.
 
 ## Checked
-Round 3, s2 c area only: page-390-17 (Mallivastaus with the new *Kaapeli.* paragraph), page-390-21 (criterion 2 extended, "5,0 W:sta 2,5 W:iin", case endings correct, inside its card), page-1280-13. The formula $R_\text{k} I^2 = 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \approx 2{,}5\,\text{W}$ is set in one line of maths with the thin-space units and decimal commas, the italic lead-ins (Virta, Kirkkaus, Kaapeli, Johtopäätös) are consistent, no overflow or red source. Rest of the page not re-opened (unchanged since round 2).
+- **Fresh captures:** ran `python3 scripts/screenshot.py FY6-sovella --if-stale`, which wrote 135 captures. The stamp is a34f3aab0e6c03cc.
+- **review/shots/FY6-sovella-page-390-37.png:** s4 d PERIAATE renders the new sentence. The KaTeX $+Q$ and $-Q$ are inline, with no overflow and normal line breaks at 390 px.
+- **review/shots/FY6-sovella-page-390-40.png, -42.png, stage-fy6-s4-390-9.png:** the s4 rubric next to it is unchanged.
+- **Typography:** the Finnish is natural, and the plural "varaukset" with the math symbols reads correctly.
+- **Hash:** the same at the start and at the end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5 (the changed text only)
