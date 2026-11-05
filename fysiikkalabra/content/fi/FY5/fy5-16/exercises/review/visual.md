@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 31a86204a28d249f
+CONTENT-HASH: d62b2b53d0757222
 
 ## Blocking
 (none)
+Round-4 Major resolved: the answer pill of fy5-16-L2-07 now reads "1,9 min" (capture #65), and shown() returns 1{,}9\,\text{min} on the block.
 
 ## Polish
-(none; the Vastaus lines of L1-01, L2-01, L3-01 now end with a full stop and L3-02's k = 2 sits in the Muunnokset sentence, solutions.md:8, :101)
+(none)
 
 ## Checked
-- Delta round 2: solutions.md lines 8, 63, 101 read in source; earlier exercise captures (L1-01, L1-04/05, L2-02/03, L3-01, L3-02/03) unchanged apart from these lines.
+- L2-07: 109 - 85 = 24 dB = 8 steps; student 8 h : 8 = 1,0 h = 60 min; correct 480 min / 256 = 1,875 min, about 1,9 min; 60 / 1,875 = 32 matches the Järkevyys; answer 1,9 min within tolerance.
+- New Vastaus wording "luvulla $256$" and the two short check formulas (8 h to 1 h in three halvings, 60 min to 1,875 min in five more, eight in all) are correct and read fluently; the long chain is gone and nothing wraps awkwardly.
+- Captures opened: contact-6 (#65 task, answer pill and Annettu to Periaate; #66 solution rows, Vastaus and Järkevyys): inside the cards, no overflow, units upright, decimal comma correct.
+- No value repeated from the lesson or other tasks; rest of the set unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

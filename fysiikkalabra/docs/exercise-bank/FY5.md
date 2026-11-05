@@ -97,7 +97,7 @@ P1. +3/+3/+2.
 ### fy5-16 Melu, akustiikka ja äänentoisto
 P2. +3/+3/+2. Luvussa jo 2 aineistoa ja 2 sanallista.
 - Taso 1: monivalinnat jälkikaiunta ja vaimennusmateriaali; yksinkertainen vaimennuslasku dB:nä.
-- Taso 2 (aineisto): luokan jälkikaiunta-aika ennen ja jälkeen vaimennuslevyjen → vaikutus; meluesteen mittaukset → vaimennus taajuuden mukaan. Virheanalyysi: dB-arvot laskettu yhteen.
+- Taso 2 (aineisto): luokan jälkikaiunta-aika ennen ja jälkeen vaimennuslevyjen → vaikutus; meluesteen mittaukset → vaimennus taajuuden mukaan. Virheanalyysi: sallittu altistusaika jaettu luvulla n eikä luvulla 2ⁿ.
 - Taso 3: perustelu meluntorjunnan keinoista aineiston avulla; mallinna kuulosuojaimen vaikutus altistusaikaan.
 
 ### fy5-17 Soveltava luku: ultraäänikuvaus ja maanjäristysaallot

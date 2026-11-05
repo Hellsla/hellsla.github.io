@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8e90029af226e8bd
+CONTENT-HASH: 4c32264d89c055c7
+Mode: full (translation review against the reviewed Finnish set)
+Round 2
 
 ## Blocking
 (none)
+
+## Fixed
+(none needed beyond the science report)
 
 ## Polish
 (none)
 
 ## Checked
-- Levels 5/4/3 as in Finnish; texts situation first, question last; L1-05 and L3-03 written answers keep their model answers.
-- Each solution keeps Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness.
-- English natural and British (metres, practise, kilometres); "piano tuner … he", "guitarist … she" as in a textbook.
-- Captures open-exercises-1280, -L2-1280, -L3-1280 and stage-exercises-390: solutions open inside their cards, readable.
+- Same structure and order as fi: hint-free tasks, misconception feedback per choice (L1-07 distance vs speed), error task L2-07 asks for the error and the value, L3 tasks keep three-part and justification questions.
+- Wording natural English for upper secondary level; no hints or answers added or removed compared with fi.

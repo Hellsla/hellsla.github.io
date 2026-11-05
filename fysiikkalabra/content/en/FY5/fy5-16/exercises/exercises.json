@@ -39,6 +39,74 @@
       "answer": "a) path, b) source, c) ear, d) path",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L1-06",
+      "level": 1,
+      "text": "In a school classroom speech sounds muddled because the reverberation time is too long. Which measure would shorten the reverberation time of the classroom?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "Porous panels that absorb part of the sound hitting them are fitted in the ceiling.",
+      "choices": [
+        {
+          "text": "Glossy tiles are fitted on the walls, reflecting the sound evenly back into the room.",
+          "feedback": "Wrong: hard and smooth surfaces reflect sound almost completely, so the sound circulates in the room longer and the reverberation time gets longer."
+        },
+        {
+          "text": "The person speaking is asked to talk more quietly, so the sound has time to die away faster.",
+          "feedback": "Wrong: the reverberation time is the time in which the level falls by $60\\,\\text{dB}$, and it does not depend on the initial level of the sound. It is determined by the surfaces of the room."
+        },
+        {
+          "text": "Porous panels that absorb part of the sound hitting them are fitted in the ceiling.",
+          "correct": true,
+          "feedback": "Correct: soft and porous surfaces dampen the reflected sound, so the level falls faster and the reverberation time gets shorter."
+        },
+        {
+          "text": "Large glass surfaces are added to the room, letting the sound out without reflecting it back.",
+          "feedback": "Wrong: glass is a hard surface that reflects sound almost as well as concrete. Sound is dampened by porous, soft materials."
+        }
+      ]
+    },
+    {
+      "id": "fy5-16-L1-07",
+      "level": 1,
+      "text": "Next to the outer wall of a residential building the traffic noise level is $68\\,\\text{dB}$. Inside, with the windows closed, the level is $41\\,\\text{dB}$. By how many decibels do the wall and the windows together attenuate the noise?",
+      "answer": 27,
+      "unit": "dB",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L1-08",
+      "level": 1,
+      "text": "How does a loudspeaker produce sound from an electrical signal?",
+      "kind": [
+        "concept"
+      ],
+      "unit": "",
+      "tolerance": 0.02,
+      "answer": "The alternating current in the coil and the magnet make the cone vibrate, and the cone pushes the air.",
+      "choices": [
+        {
+          "text": "The current of the signal heats the air behind the cone, and the expansion of the air is heard as sound.",
+          "feedback": "Wrong: in a loudspeaker the sound comes from the movement of the cone, not from the heating of the air. Heat is produced only as wasted energy."
+        },
+        {
+          "text": "A magnet rotates steadily inside the coil, and the frequency of the rotation is the frequency of the sound.",
+          "feedback": "Wrong: a loudspeaker has no rotating magnet. The magnet stays in place and the frequency of the sound is determined by the variation of the current in the coil."
+        },
+        {
+          "text": "The pressure variations of the sound move a diaphragm, and the movement of the diaphragm induces an alternating voltage in the coil.",
+          "feedback": "Wrong: this describes a microphone, in which sound moves a diaphragm and the movement is converted into a voltage. In a loudspeaker the direction is the opposite."
+        },
+        {
+          "text": "The alternating current in the coil and the magnet make the cone vibrate, and the cone pushes the air.",
+          "correct": true,
+          "feedback": "Correct: an alternating current in a magnetic field makes the coil and the cone attached to it vibrate, and the cone produces a sound wave in the air."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +141,106 @@
       "answer": 0.9,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L2-05",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "Acoustic panels were installed in the ceiling of a classroom. The sound level after a clap was measured with a phone before the panels and after the panels, at the same moments. Assume that the level falls steadily in both measurements.\n\nThe reverberation time is the time in which the level falls by $60\\,\\text{dB}$. Determine the reverberation time of each measurement from the first and the last row of the table.\n\nBy what percentage did the panels shorten the reverberation time?",
+      "answer": 60.3,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Sound level after a clap (example data)",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$L_\\text{before}\\,(\\text{dB})$",
+          "$L_\\text{after}\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "90.3",
+            "90.2"
+          ],
+          [
+            "0.10",
+            "86.2",
+            "80.3"
+          ],
+          [
+            "0.20",
+            "82.1",
+            "69.8"
+          ],
+          [
+            "0.30",
+            "78.3",
+            "60.4"
+          ],
+          [
+            "0.40",
+            "74.4",
+            "50.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-16-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "A noise barrier is being planned beside a road. The level of a point source of sound was measured at the same place without the barrier and behind the barrier at different frequencies (example data).\n\na) By how many decibels more does the barrier attenuate sound of frequency $4000\\,\\text{Hz}$ than sound of frequency $500\\,\\text{Hz}$?\n\nb) Explain using wavelength why a low sound is attenuated less behind the barrier. The speed of sound in air is $343\\,\\text{m/s}$ and the barrier is $3.0\\,\\text{m}$ high.\n\nWrite the result of part a) in the answer box.",
+      "answer": 11.8,
+      "unit": "dB",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Level without the barrier and behind the barrier (example data)",
+        "columns": [
+          "$f\\,(\\text{Hz})$",
+          "$L_\\text{without}\\,(\\text{dB})$",
+          "$L_\\text{barrier}\\,(\\text{dB})$"
+        ],
+        "rows": [
+          [
+            "125",
+            "70.2",
+            "62.1"
+          ],
+          [
+            "500",
+            "68.4",
+            "55.0"
+          ],
+          [
+            "2000",
+            "65.1",
+            "42.9"
+          ],
+          [
+            "4000",
+            "60.3",
+            "35.1"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-16-L2-07",
+      "level": 2,
+      "kind": [
+        "error",
+        "reasoning"
+      ],
+      "text": "At a workstation in a machine shop the noise level is $109\\,\\text{dB}$. A student calculates the permitted daily exposure time from the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$) like this: “The level exceeds the action value by $24\\,\\text{dB}$, and every additional $3\\,\\text{dB}$ divides the time: $24\\,\\text{dB} : 3\\,\\text{dB} = 8$, so the permitted time is $8\\,\\text{h} : 8 = 1.0\\,\\text{h}$.”\n\na) Explain what is wrong in the student's reasoning.\n\nb) Calculate the correct permitted exposure time in minutes.\n\nWrite the result of part b) in the answer box.",
+      "answer": 1.9,
+      "unit": "min",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +267,56 @@
       "answer": "The wavelength of the hum is about $3.4\\,\\text{m}$ and its period $10\\,\\text{ms}$, so the anti-noise stays in the opposite phase at the ear; the wavelength of speech is only about $11$–$34\\,\\text{cm}$, and even a small difference in timing or position spoils the cancellation.",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "The noise exposure of a worker in a carpenter's workshop has been measured at the worker's ear in three stages of work (example data). The worker does not wear hearing protectors. At other times the level is so low that it is not counted.\n\na) Calculate the day's dose as a percentage of the dose corresponding to the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$).\n\nb) By how many decibels must hearing protectors attenuate at least so that the dose does not exceed the reference dose? Assume that the attenuation is the same in all stages.\n\nc) The employer considers enclosing the saw, which would lower the level of sawing by $10\\,\\text{dB}$. Is that enough alone? Justify by calculation and propose one other measure in addition.\n\nWrite the result of part b) in the answer box.",
+      "answer": 5.3,
+      "unit": "dB",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Noise level and duration by stage of work (example data)",
+        "columns": [
+          "Stage of work",
+          "$L\\,(\\text{dB})$",
+          "$t\\,(\\text{h})$"
+        ],
+        "rows": [
+          [
+            "Sawing",
+            "97",
+            "1.0"
+          ],
+          [
+            "Planing",
+            "91",
+            "2.0"
+          ],
+          [
+            "Assembly",
+            "85",
+            "3.0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-16-L3-05",
+      "level": 3,
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "text": "At an outdoor festival one loudspeaker stack produces a level of $112\\,\\text{dB}$ at a distance of $2.0\\,\\text{m}$. Treat the stack as a point source in an open space without reflections: the level falls by $6\\,\\text{dB}$ every time the distance doubles. A listener stands still at a distance of $8.0\\,\\text{m}$.\n\nThe listener has foam earplugs that do not fit tightly: their attenuation is in practice only $8\\,\\text{dB}$ at all levels.\n\na) What is the noise level at the listener's position without earplugs?\n\nb) For how many hours may the listener stay there with the earplugs, when the reference is the upper action value ($8\\,\\text{h}$ at a level of $85\\,\\text{dB}$)?\n\nc) The concert lasts $3.0\\,\\text{h}$. What percentage of the reference dose is the dose, and is it enough for the listener to move to a distance of $16\\,\\text{m}$ and keep the earplugs in there? Justify by calculation.\n\nWrite the result of part b) in the answer box.",
+      "answer": 1.6,
+      "unit": "h",
+      "tolerance": 0.03
     }
   ]
 }

@@ -39,6 +39,74 @@
       "answer": "a) infraääni; b) kuultava ääni; c) ultraääni; d) ultraääni",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L1-06",
+      "level": 1,
+      "text": "Kaksi äänirautaa soi vuorotellen ilmassa. Toinen ääni kuulostaa selvästi korkeammalta kuin toinen, mutta kumpikin kuulostaa yhtä voimakkaalta. Mikä seuraavista on korkeammasta äänestä pakostakin totta?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Sen taajuus on suurempi, joten paine vaihtelee useammin sekunnissa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Sen amplitudi on suurempi, joten ilman paine vaihtelee voimakkaammin.",
+          "feedback": "Amplitudi määrää äänen voimakkuuden, ei korkeutta. Tehtävässä äänet kuulostavat yhtä voimakkailta, joten amplitudit voivat olla samat, vaikka korkeus on eri."
+        },
+        {
+          "text": "Sen aallonpituus on pidempi, koska korkea ääni etenee ilmassa nopeammin.",
+          "feedback": "Äänen nopeus ilmassa ei riipu taajuudesta. Kun nopeus on sama, korkeampi taajuus tarkoittaa lyhyempää aallonpituutta $\\lambda = \\tfrac{v}{f}$, ei pidempää."
+        },
+        {
+          "text": "Sen taajuus on suurempi, joten paine vaihtelee useammin sekunnissa.",
+          "feedback": "Oikein: äänenkorkeuden määrää taajuus. Korkeampi ääni tarkoittaa enemmän värähdyksiä sekunnissa eli suurempaa taajuutta $f$.",
+          "correct": true
+        },
+        {
+          "text": "Sen jaksonaika on pidempi, joten yksi värähdys kestää kauemmin.",
+          "feedback": "Jaksonaika ja taajuus ovat toistensa käänteislukuja, $T = \\tfrac{1}{f}$. Korkeamman äänen jaksonaika on lyhyempi, ei pidempi."
+        }
+      ]
+    },
+    {
+      "id": "fy5-14-L1-07",
+      "level": 1,
+      "text": "Ambulanssi ajaa tasaisella nopeudella suoraan kohti paikallaan seisovaa kuulijaa ja sireeni soi koko ajan samalla omalla taajuudellaan. Ilma on tyyntä. Mitä kuulija kuulee sireenin äänenkorkeudelle ambulanssin lähestyessä?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Vakio ja korkeampi kuin sireenin oma, koska aaltorintamat tihenevät edessä.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Yhä korkeampi mitä lähempänä auto on, koska matka kuulijaan lyhenee koko ajan.",
+          "feedback": "Tämä on yleinen virhekäsitys. Kuultu taajuus riippuu auton nopeudesta, ei etäisyydestä. Kun nopeus on vakio, myös kuultu taajuus on vakio. Lähestyessä kasvaa äänen voimakkuus, ei korkeus."
+        },
+        {
+          "text": "Täsmälleen sireenin oma taajuus, koska auton liike muuttaa vain äänen voimakkuutta.",
+          "feedback": "Sireeni värähtelee koko ajan taajuudella $f_0$, mutta kuulija havaitsee aaltorintamat tiheämmin, koska lähde liikkuu niiden perässä. Liike muuttaa siis myös kuultua taajuutta, ei vain voimakkuutta."
+        },
+        {
+          "text": "Sireenin omaa matalampi, koska auton liike hidastaa äänen etenemistä ilmassa.",
+          "feedback": "Äänen nopeus ilmassa ei riipu lähteen liikkeestä. Lähestyvän lähteen edessä aallonpituus lyhenee, joten kuultu taajuus on suurempi, ei pienempi."
+        },
+        {
+          "text": "Vakio ja korkeampi kuin sireenin oma, koska aaltorintamat tihenevät edessä.",
+          "feedback": "Oikein: lähde kulkee omien aaltorintamiensa perässä, joten rintamat ovat sen edessä tiheässä ja aallonpituus on lyhyempi. Kuultu taajuus $f = \\tfrac{v}{\\lambda}$ on siksi suurempi kuin $f_0$ ja pysyy samana, kunnes auto ohittaa kuulijan.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy5-14-L1-08",
+      "level": 1,
+      "text": "Kaksi äänirautaa, joiden taajuudet ovat $392\\,\\text{Hz}$ ja $398\\,\\text{Hz}$, soi yhtä aikaa. Kuinka pitkä aika kuluu kahden peräkkäisen voimakkaan hetken välillä eli huojunnan jaksonaika? Anna vastaus sekunteina.",
+      "answer": 0.167,
+      "unit": "s",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -54,7 +122,7 @@
       "id": "fy5-14-L2-02",
       "level": 2,
       "text": "Kaiutin lähettää ilmassa ääntä, jonka aallonpituus on $0{,}850\\,\\text{m}$. Ääni siirtyy järven pinnasta veteen. Mikä on äänen aallonpituus vedessä? Äänen nopeus ilmassa on $340\\,\\text{m/s}$ ja vedessä $1480\\,\\text{m/s}$.",
-      "answer": 3.70,
+      "answer": 3.7,
       "unit": "m",
       "tolerance": 0.02
     },
@@ -73,6 +141,100 @@
       "answer": 23,
       "unit": "m/s",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy5-14-L2-05",
+      "level": 2,
+      "text": "Tien vieressä seisova opiskelija nauhoittaa suoraan häntä kohti ajavan auton torven ääntä. Kun auto seisoo, torven taajuus on $392\\,\\text{Hz}$. Auton lähestyessä taajuus mitataan neljä kertaa (esimerkkiaineisto).\n\nAuto ajaa tasaisella nopeudella. Ilma on tyyntä, ja äänen nopeus on $340\\,\\text{m/s}$. Kuinka suuri on auton nopeus mittausten keskiarvon mukaan?",
+      "kind": [
+        "data"
+      ],
+      "answer": 30.4,
+      "unit": "m/s",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Esimerkkiaineisto: torven taajuus auton lähestyessä",
+        "columns": [
+          "Mittaus",
+          "$f\\,(\\text{Hz})$"
+        ],
+        "rows": [
+          [
+            "1",
+            "431"
+          ],
+          [
+            "2",
+            "429"
+          ],
+          [
+            "3",
+            "432"
+          ],
+          [
+            "4",
+            "430"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-14-L2-06",
+      "level": 2,
+      "text": "Huilu ja viulu soittavat saman sävelen. Mikrofonilla nauhoitettujen äänten FFT-spektreistä luettiin piikkien taajuudet ja suhteelliset korkeudet (esimerkkiaineisto).\n\na) Mikä on soitetun sävelen perustaajuus?\n\nb) Kumpi soittimista kuulostaa kirkkaammalta ja miksi? Anna vastauslaatikkoon kohdan a) tulos hertseinä.",
+      "kind": [
+        "data",
+        "concept"
+      ],
+      "answer": 262,
+      "unit": "Hz",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkkiaineisto: spektrien piikit, suhteellinen korkeus",
+        "columns": [
+          "$f\\,(\\text{Hz})$",
+          "Huilu",
+          "Viulu"
+        ],
+        "rows": [
+          [
+            "262",
+            "1.00",
+            "0.70"
+          ],
+          [
+            "524",
+            "0.35",
+            "1.00"
+          ],
+          [
+            "785",
+            "0.08",
+            "0.80"
+          ],
+          [
+            "1047",
+            "0.02",
+            "0.55"
+          ],
+          [
+            "1309",
+            "0.01",
+            "0.30"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-14-L2-07",
+      "level": 2,
+      "text": "Opiskelija ratkaisee tehtävän: auto ajaa nopeudella $30{,}0\\,\\text{m/s}$ suoraan kohti paikallaan olevaa kuulijaa ja soittaa torvea, jonka taajuus on $500\\,\\text{Hz}$. Äänen nopeus on $340\\,\\text{m/s}$.\n\nOpiskelija käyttää kaavaa $f = f_0 \\cdot \\tfrac{v + v_\\text{s}}{v}$ ja saa kuulluksi taajuudeksi $544\\,\\text{Hz}$.\n\nMikä virhe opiskelijan ratkaisussa on? Laske oikea kuultu taajuus.",
+      "kind": [
+        "error"
+      ],
+      "answer": 548,
+      "unit": "Hz",
+      "tolerance": 0.002
     }
   ],
   "level3": [
@@ -99,6 +261,103 @@
       "answer": "Perustaajuus $147\\,\\text{Hz}$; parilliset monikerrat ($294\\,\\text{Hz}$, $588\\,\\text{Hz}$, $882\\,\\text{Hz}$) puuttuvat, joten ilmapatsas värähtelee kuin toisesta päästä suljettu putki.",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-14-L3-04",
+      "level": 3,
+      "text": "Sydänlääkäri mittaa ultraäänilaitteella veren virtausnopeutta (esimerkkiaineisto). Anturi lähettää ultraääntä, jonka taajuus on $f_0 = 4{,}00\\,\\text{MHz}$, kohti verta, joka virtaa suoraan kohti anturia. Veren punasolut heijastavat ääntä takaisin anturiin. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$.\n\nAnturi mittaa heijastuneen äänen taajuuden muutoksen $\\Delta f = f - f_0$ sydämen sykkeen eri hetkinä.\n\nMikä on veren suurin mitattu virtausnopeus? Käsittele punasolua ensin liikkuvana kuulijana, joka vastaanottaa anturin äänen, ja sitten liikkuvana lähteenä, joka lähettää saman taajuuden takaisin. Perustele lyhyesti, miksi mitattu muutos on lähes kaksinkertainen yhteen Doppler-siirtymään verrattuna.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 0.475,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkkiaineisto: taajuuden muutos sykkeen aikana",
+        "columns": [
+          "$t\\,(\\text{s})$",
+          "$\\Delta f\\,(\\text{kHz})$"
+        ],
+        "rows": [
+          [
+            "0.00",
+            "0.31"
+          ],
+          [
+            "0.10",
+            "1.26"
+          ],
+          [
+            "0.20",
+            "2.47"
+          ],
+          [
+            "0.30",
+            "1.64"
+          ],
+          [
+            "0.40",
+            "0.58"
+          ],
+          [
+            "0.50",
+            "0.29"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-14-L3-05",
+      "level": 3,
+      "text": "Kitaransoittaja näpäyttää $0{,}650\\,\\text{m}$ pitkää kieltä kahdella tavalla: kielen keskikohdasta ja aivan sillan läheltä. Äänet nauhoitetaan, ja FFT-spektreistä luetaan piikkien taajuudet ja suhteelliset amplitudit (esimerkkiaineisto). Kummassakin spektrissä perustaajuuden amplitudi on merkitty arvoksi $1{,}00$.\n\na) Mikä on kielen perustaajuus? Mitkä harmoniset puuttuvat lähes kokonaan, kun kieltä näpätään keskeltä?\n\nb) Laske aallon nopeus kielessä. Anna vastauslaatikkoon tämän kohdan tulos.\n\nc) Selitä, miksi osa harmonisista puuttuu keskeltä näpäytettäessä, ja kerro, kummalla tavalla soitettu ääni kuulostaa kirkkaammalta ja miksi.",
+      "kind": [
+        "data",
+        "model"
+      ],
+      "answer": 255,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkkiaineisto: spektrien piikit, suhteellinen amplitudi",
+        "columns": [
+          "$f\\,(\\text{Hz})$",
+          "Keskeltä",
+          "Sillan lähellä"
+        ],
+        "rows": [
+          [
+            "196",
+            "1.00",
+            "1.00"
+          ],
+          [
+            "392",
+            "0.02",
+            "0.47"
+          ],
+          [
+            "588",
+            "0.11",
+            "0.30"
+          ],
+          [
+            "784",
+            "0.01",
+            "0.19"
+          ],
+          [
+            "980",
+            "0.04",
+            "0.13"
+          ],
+          [
+            "1176",
+            "0.01",
+            "0.09"
+          ]
+        ]
+      }
     }
   ]
 }
