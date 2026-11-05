@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2c9132f4f56b6b32
+CONTENT-HASH: b07176193a006b48
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] L1-04 solution, Järkevyys (`open-exercises-1280-4`) — the inline formula "$r + s = 7{,}5\,\text{m}$" wraps after the plus sign — rephrase so the formula starts a line, e.g. "etäisyys olisi summa $7{,}5\,\text{m}$".
-- [Minor] prompts of L1-05, L2-03, L3-02, L3-03 still write the answer unit plain ("Anna vastaus yksikössä m/s") — optional, as in round 1.
+- fy5-3-L3-05 solution, Vastaus and Järkevyys: inline fractions (r_1/r_2 = 25/58, 458 · 25/58 = 197, unit 1/min stacked) make tall lines in running text; use \tfrac or a display line.
 
 ## Checked
-- Delta: changed L1-04 (hockey puck after the string breaks) task and full solution card in `open-exercises-1280-4`: situation then bold question, answer box with unit m, aligned square-root chain, case ending $1{,}5\,\text{m}$:n, significant figures, Järkevyys. The L1-02 and L3-01/L3-03 text edits are wording only, same layout; not reopened.
-- No clipping, no red KaTeX.
+- Unchanged since round 1 (same hash): new tasks L1-06..08, L2-05..07, L3-04..05 checked at 1280 px and 390 px stage; tables, solutions and answer boxes fine; answers recomputed and matching.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

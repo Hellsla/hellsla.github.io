@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 37db2f4776a48d36
+CONTENT-HASH: c2fbdb04e79fbaad
 
 ## Blocking
-(none) Round 3: L1-01 now has `"unit": "N"` and says both distances are horizontal ("vaakasuunnassa"), so the lever arms are unambiguous; the answer 960 N is unchanged and correct.
+(none)
 
 ## Polish
-1. fy5-2-L3-01 — unchanged: the same geometry as koe-2 and ennuste-2 (20 kg plank, supports 0,50 m and 3,00 m), only the load mass differs, so level 3 repeats the investigation. Change the supports or ask for the largest load mass at a given position. (The solution's Järkevyys check was reworded but the task is the same.)
-2. fy5-2-L2-01 and L2-02 use the same method (moment point at the far support) with the same plank; replace one with a different situation (a leaning ladder or a door), if a level-2 item with a tangential wall force is wanted.
-3. The `hylly` figure was not opened (no capture in the packet); its description (symbols d, h, α only) fits the solution, and the L2-03 task text still says "pystysuoraan nähden", which agrees with it.
+- fy5-2-L1-06 options: the correct option ("voimien momentit kiertävät sitä samaan suuntaan") now names momentit, which the distractor "yhtä suuret voimat tuottavat yhtä suuret vastakkaiset momentit" mirrors well; the first distractor's feedback still says "voimat eivät ole samalla suoralla", fine.
+- fy5-2-L3-04: part a) asks the student to draw the diagram, but the solution now gives only the worded force list in Periaate; acceptable (all forces, points of action and directions are named), a drawn figure remains optional.
 
 ## Checked
-- Round-1 blocking fixed: the L2-03 solution now defines α from the figure, builds the right triangle with legs d/2 and h/2, and explains why the vertical is the hypotenuse and why tan α = d/h. A student who could not solve the task can follow it. 12,5° recomputed.
-- L1-01 (sorkkarauta): the principle, signs and sanity check (12 × 80 N = 960 N) are right and the task is authentic; only the unit is wrong (Blocking 1).
-- L3-02 now says the wire is attached above the hinge and has a figure; the component step is explained in the solution and in the lesson; T = 196 N recomputed.
-- L3-01 the solution's check is rephrased so that the weighted-mean position gives 3,00 m: correct. L1-03 now says "vaakasuunnassa" for the handles: the arm is unambiguous.
-- All other answers and tolerances unchanged and correct (58,9; 0,60; 98,1; 560; 450; 1,21; 0,75; 207).
-- Finnish: case after number+unit is correct in the new task text ($0{,}050\,\text{m}$:n päässä, $80\,\text{N}$:n voimalla).
+- Delta only: L1-06 MC rewrites (shorter, answer no longer disclosed by the distractors' wording); typographic quotes in L2-06; L3-05 adds "henkilön jalat eivät ylety lattiaan" (removes an ambiguity) with matching Periaate.
+- Round 3: L3-04 Voimakuvio step and box diagram removed; the Periaate keeps the full worded force analysis (G_t, G_h at s, N, f, N_s with directions), Kaava/Sijoitus/Vastaus/Järkevyys unchanged and still correct (s = 4,575 m -> 4,6 m).
+- L2-07 Vastaus no longer claims "no growth" (reworded to "ei selvää suuntaa"); Järkevyys rewritten without a nested fraction: 6010 / 210,2 = 28,6 cm correct.
+- L3-05 alternative-chair check: 38,0 / 72,0 = 0,528 m correct. Answers unchanged (53°, 62 kg, 210 N, 110 g, 4,6 m).
