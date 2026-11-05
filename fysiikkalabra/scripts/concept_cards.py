@@ -17,9 +17,9 @@ without dollars and `kaava_puhe` how it reads aloud (screen readers, aria-label)
 
 Where the cards appear (one component, templates/kortit.js; never before the Teoriatiivistelmä):
   - a lesson: in Teoriatiivistelmä every bold term that names a card (mark_terms) opens a popover, and after the
-    Tiivistelmä list a row of chips "Tämän luvun käsitteet (n)"; after the exit ticket the section "Kertaa luvun
-    käsitteet" with the chapter's cards (lesson_section; without JavaScript a definition list) and its stage in the
-    step navigation ("Käsitteet");
+    Tiivistelmä list a row of chips "Tämän luvun käsitteet (n)"; as the last part of Harjoittele "Kertaa luvun
+    käsitteet" with the chapter's cards (lesson_section; without JavaScript a definition list), no stage of its own
+    in the step navigation (teacher 2026-11-05);
   - a module page: "Kertauspakkasi" (module_section), the cards a student marked "Kertaa myöhemmin";
   - Sovella itsenäisesti: "Varmista käsitteet ennen tehtäviä" (practice_section), only the deck's cards, shown only
     when the deck has some;
@@ -137,15 +137,16 @@ def chips(code, lid, T, lang):
 
 
 def lesson_section(code, lid, T, lang, titles):
-    """The section after the exit ticket, or "" when the chapter has no cards in this language."""
+    """The last part of the Harjoittele stage (teacher 2026-11-05: the cards are practice, no stage of their own in the
+    navigation; inquiry.render puts it there), or "" when the chapter has no cards in this language."""
     cards = chapter_cards(code, lid, lang)
     if not cards: return ""
-    return (f'<section class="stage stage-concepts kc-section" id="kertaa-kasitteet" data-stage="kertaa-kasitteet" data-moduuli="{code}" data-luku="{lid}">'
-            f'<h2>{T("cards.lesson_title")}</h2><p class="kc-intro">{T("cards.lesson_lead")}</p>'
+    return (f'<div class="activity act-concepts kc-section" id="kertaa-kasitteet" data-moduuli="{code}" data-luku="{lid}">'
+            f'<h3>{T("cards.lesson_title")}</h3><p class="kc-intro">{T("cards.lesson_lead")}</p>'
             f'<dl class="kc-dl">{"".join(static_card(c) for c in cards)}</dl>'
             f'<p class="kc-more"><a href="{app_href(code)}">{T("cards.module_all")}</a></p>'
             + data_block(T, lang, cards_of(code, lang), {"luku": lid, "moduuli": code, "chapters": titles}, APP)
-            + '<script src="kortit.js"></script></section>')
+            + '<script src="kortit.js"></script></div>')
 
 
 def lesson_nav(T):

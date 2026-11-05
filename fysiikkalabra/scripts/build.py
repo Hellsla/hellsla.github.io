@@ -728,7 +728,7 @@ def build_language(lang):
             (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
         name = f"{meta['id']}.html"
         titles = chapter_titles(meta["course"])
-        kc_section = concept_cards.lesson_section(meta["course"], meta["id"], T, lang, titles)   # "Kertaa luvun käsitteet" after the exit ticket (teacher 2026-11-03)
+        kc_section = concept_cards.lesson_section(meta["course"], meta["id"], T, lang, titles)   # "Kertaa luvun käsitteet": the end of Harjoittele (teacher 2026-11-05)
         if inq is None:                                   # classic layout: theory (with the sim inside), exit ticket, exercises
             sim = sim.replace("<!--sim-info-->", "")
             if sim and "<!-- sim -->" in lesson_html: lesson_html = lesson_html.replace("<!-- sim -->", sim, 1)
@@ -754,8 +754,7 @@ def build_language(lang):
                 sections["Tiivistelmä"] = tv.replace("</ul>", "</ul>" + kc, 1) if "</ul>" in tv else tv + kc
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": ex_html,
                      "concepts": inquiry.key_concepts_html(meta["id"], meta.get("key_concepts"), lambda t: nbsp_units(render_md(t))),   # Selkeä suomi only (NOTES.md §12)
-                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>', "cards": kc_section,
-                     "cards_nav": concept_cards.lesson_nav(T) if kc_section else ""}
+                     "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>', "cards": kc_section}
             body, toc = inquiry.render(folder, inq, parts, lambda t: nbsp_units(render_md(t)))
             if kc_section:   # bold terms of Teoriatiivistelmä that name a card open it (never before that stage)
                 body = re.sub(r'<section class="stage" id="selita".*?</section>', lambda m: concept_cards.mark_terms(m.group(0), meta["course"], lang), body, count=1, flags=re.S)

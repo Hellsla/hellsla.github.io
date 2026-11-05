@@ -559,15 +559,17 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
   .split-toggle{display:inline-flex;align-items:center;gap:.4rem;min-height:40px;padding:0 1rem;margin:.6rem 0 0;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep);background:var(--surface);border:1px solid var(--accent-deep);border-radius:999px;cursor:pointer}
   .split-toggle::before{content:"";width:18px;height:14px;border:2px solid currentColor;border-radius:3px;background:linear-gradient(90deg,transparent 45%,currentColor 45%,currentColor 55%,transparent 55%)}
   .split-toggle:hover{background:var(--accent-soft)}
-  html.tasks-split{--split-w:clamp(30rem,46vw,50rem)}
-  html.tasks-split .page{width:auto;max-width:none;margin:0 calc(var(--split-w) + 2rem) 0 2rem}
+  /* the lesson's reading column and the panel side by side, centred together: on a wide screen the spare width goes
+     to the outer margins, never to an empty band between the theory and the tasks (teacher 2026-11-05) */
+  html.tasks-split{--split-w:clamp(30rem,46vw,46rem);--split-side:max(0px,(100vw - var(--measure) - 6rem - var(--split-w)) / 2)}
+  html.tasks-split .page{width:auto;max-width:none;margin:0 calc(var(--split-w) + var(--split-side) + 2rem) 0 calc(var(--split-side) + 2rem)}
   html.tasks-split main.lesson{max-width:none}
-  html.tasks-split #exercises{position:fixed;top:0;right:0;bottom:0;z-index:30;width:var(--split-w);box-sizing:border-box;margin:0;padding:0 1.5rem 3rem;overflow-y:auto;overscroll-behavior:contain;
-    container:content / inline-size;background:var(--bg);border-left:1px solid var(--line);box-shadow:-10px 0 28px -18px rgba(20,23,30,.35)}
+  html.tasks-split #exercises{position:fixed;top:0;right:var(--split-side);bottom:0;z-index:30;width:var(--split-w);box-sizing:border-box;margin:0;padding:0 1.5rem 3rem;overflow-y:auto;overscroll-behavior:contain;
+    container:content / inline-size;background:var(--bg);border-left:1px solid var(--line);border-right:1px solid var(--line);box-shadow:0 0 28px -14px rgba(20,23,30,.35)}
   html.tasks-split #exercises>.split-head{position:sticky;top:0;z-index:3;margin:0 -1.5rem 1rem;padding:0 1.5rem .7rem;border-top:0;border-bottom:1px solid var(--line);background:var(--bg)}
   html.tasks-split #exercises>.split-head>h2{padding-top:.8rem}
   html.tasks-split #exercises .act-exercises{margin-top:0}
-  html.tasks-split #exercises .pad .rich-text-editor-toolbar-root>div{left:auto!important;right:0!important;width:var(--split-w)!important;max-width:var(--split-w)}   /* Abitti's toolbar over the panel, not over the theory */
+  html.tasks-split #exercises .pad .rich-text-editor-toolbar-root>div{left:auto!important;right:var(--split-side)!important;width:var(--split-w)!important;max-width:var(--split-w)}   /* Abitti's toolbar over the panel, not over the theory */
   html.tasks-split #exercises .pad .rich-text-editor-toolbar-root button{white-space:nowrap}
   html.tasks-split #exercises:has(.rich-text-editor-toolbar-root>div)>.split-head{top:36px}   /* while the toolbar shows, the panel's heading sits under it */
 }

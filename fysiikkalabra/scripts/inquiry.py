@@ -695,6 +695,7 @@ def render(folder, inquiry, parts, md):
         return "".join(act(a) for a in items)
 
     toc, n = [], 0
+    cards_at = next((s for s in ("sovella", "tarkista", "selita") if by_stage[s]), None) if parts.get("cards") else None
     for sid, title in stages():
         items = by_stage[sid]
         if not items: continue
@@ -704,6 +705,7 @@ def render(folder, inquiry, parts, md):
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
                      f'<div class="lab-main">{flow(items[si + 1:])}</div></div>')
         else: inner = flow(items)
+        if sid == cards_at: inner += parts["cards"]       # the chapter's concept cards close Harjoittele (teacher 2026-11-05)
         if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
             k = sum(1 for a in items if a["type"] == "choice")
             inner = (f'<details class="fold" data-fold="{sid}"><summary><span class="fold-title">{T("inquiry.fold_title")}</span> '
@@ -712,8 +714,6 @@ def render(folder, inquiry, parts, md):
         lead = f'<p class="stage-lead">{T(f"inquiry.lead_{sid}")}</p>' if T.has(f"inquiry.lead_{sid}") else ""   # what the stage is for (teacher 2026-11-05)
         body.append(f'<section class="stage" id="{sid}" data-stage="{sid}"><h2><span class="stage-no" aria-hidden="true">{n}</span>{title}</h2>{lead}{inner}</section>')
         toc.append(toc_link(sid, n, title))
-    if parts.get("cards"):                             # "Kertaa luvun käsitteet" after the exit ticket (scripts/concept_cards.py)
-        body.append(parts["cards"]); toc.append(parts.get("cards_nav", ""))
     if parts.get("exercises"):                         # the exercises close the page, after the exit ticket
         text = ""                                      # the exercises' own lead text is not shown (teacher 2026-11-04: "turhia")
         aid = ex_act["id"] if ex_act else "harjoitukset"
