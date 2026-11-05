@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3fb0a5efd2862cdf
+CONTENT-HASH: df914065e3c42db8
+
 ## Blocking
+(none)
 
 ## Polish
+- "Mechanical wave motion" is the bold definition while the next paragraph says "mechanical wave"/"wave"; acceptable, consistent enough.
 
 ## Checked
-batch delta review: the diff is a renamed lesson title and updated chapter cross-references; every reference matches the new titles, no stale old title remains in the lesson, inquiry or exercises, and the sentences read correctly. No figures, numbers or symbols changed.
+batch delta review (en): term matches the paragraph below and the summary; definition holds for the rope example.

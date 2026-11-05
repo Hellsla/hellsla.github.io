@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f69d16848ac459f5
+CONTENT-HASH: 5120e9b665464081
 
 ## Blocking
 
+None.
+
 ## Polish
 
+None.
+
 ## Checked
-batch delta review: three diagrams rendered and recomputed. Lift start: G = 588.6 N, N = 650 N drawn from below up to the bottom face and longer, a up (a = 1.02 m/s^2). Parachutist: G = F_v = 765.2 N (78.0*9.81), F_v from the top, v down separately, a = 0. Lift slowing: G = 539.6 N, N = 55.0*(9.81-1.20) = 473.6 N shorter, a down; reading 48.3 kg.
+
+batch delta review: "Tämän luvun tehtävät ratkeavat kahdella työkalulla" now limits the two-tool claim to this chapter, and the added sentence names the module's third tool correctly (impulse principle and momentum conservation for collisions and short impacts), with a reference to the existing chapter *Liikemäärän säilyminen ja yksiulotteiset törmäykset*. The rest of the paragraph (FBD first; equation of motion for force/acceleration at an instant; energy principle for speed at a position or energy change over a distance) is unchanged and right. The removed level sentence in inquiry.json carried no physics. No number, option or feedback changed.

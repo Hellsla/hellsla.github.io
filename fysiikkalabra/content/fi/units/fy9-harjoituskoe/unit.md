@@ -303,7 +303,7 @@
 ## Kokeen ohjeet {Ohjeet}
 
 ### Rakenne
-Harjoituskoe on rakennettu kuten fysiikan ylioppilaskoe. Aikaa on kuusi tuntia. Kokeessa on $11$ tehtävää kolmessa osassa, ja vastaat seitsemään:
+Harjoituskoe noudattaa fysiikan ylioppilaskokeen yleistä rakennetta. Aikaa on kuusi tuntia. Kokeessa on $11$ tehtävää kolmessa osassa, ja vastaat seitsemään:
 
 | Osa | Mihin vastaat | Pisteet |
 |---|---|---|
@@ -319,6 +319,8 @@ Osan I kymmenen kohtaa ovat kukin $2$ p, yhteensä $20$ p:
 - kohdat 1–4, monivalinnat: $4 \cdot 2$ p $= 8$ p;
 - kohdat 5–7, väite ja perustelu: $3 \cdot 2$ p $= 6$ p;
 - kohdat 8–10, lyhyet laskut: $3 \cdot 2$ p $= 6$ p.
+
+Jako kymmeneen kahden pisteen kohtaan on tämän harjoituskokeen ratkaisu. Varsinaisen ylioppilaskokeen Osassa I kohtien määrä, pisteytys ja kysymysmuodot voivat olla toisenlaiset.
 
 ### Osat II ja III
 Osan II ja III tehtävät ovat sivun lopussa kohdassa Tehtävät, ja niiden otsikossa lukee, kumpaan osaan tehtävä kuuluu. Osan II tehtävät ovat $15$ p ja Osan III aineistotehtävät $20$ p. Kunkin tehtävän kohtien pisteet on merkitty kohtaan. Kirjoita jokaiseen laskuun täydellinen ratkaisu: annetut ja kysytyt suureet, periaate, kaava ratkaistuna, sijoitus yksiköineen, vastaus oikealla tarkkuudella ja järkevyystarkastelu.

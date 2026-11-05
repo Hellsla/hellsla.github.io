@@ -212,7 +212,7 @@
 </svg>
 
 ## Ydinajatus
-Fysiikka on kokeellinen tiede: väite pätee vasta, kun sitä on testattu mittauksilla, jotka kuka tahansa voi toistaa. **Tutkimus** on järjestelmällinen tapa vastata kysymykseen mittaamalla. Se alkaa kysymyksestä ja päättyy johtopäätökseen, jonka mittaustulokset perustelevat. Hyvä tutkimus ei ole sellainen, jossa oletus osoittautuu oikeaksi, vaan sellainen, jossa mittaus voisi näyttää oletuksen vääräksi.
+Fysiikka on kokeellinen tiede. Fysikaalisia väitteitä arvioidaan havaintojen ja mittausten avulla. Hyvän tutkimuksen menetelmät kuvataan niin tarkasti, että muut voivat koetella tuloksia ja mahdollisuuksien mukaan toistaa mittaukset. **Tutkimus** on järjestelmällinen tapa vastata kysymykseen mittaamalla. Se alkaa kysymyksestä ja päättyy johtopäätökseen, jonka mittaustulokset perustelevat. Hyvä tutkimus ei ole sellainen, jossa oletus osoittautuu oikeaksi, vaan sellainen, jossa mittaus voisi näyttää oletuksen vääräksi.
 
 <figure class="unit-photo"><img src="pics/fy1/ligo-scientists-laser-room.webp" alt="Kaksi suojapukuista tutkijaa seisoo valkoisessa puhdastilassa laserlaitteiston äärellä ja katsoo sitä mietteliäänä."><figcaption>Tutkijat tarkastelevat LIGO-gravitaatioaaltoilmaisimen laserlaitteistoa puhdastilassa Hanfordissa Yhdysvalloissa vuonna 2019.</figcaption></figure>
 

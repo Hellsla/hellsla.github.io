@@ -332,7 +332,7 @@ Magneettiset navat eivät ole tarkalleen maantieteellisten napojen kohdalla, ja 
 ## Kaava: Magneettikenttien yhteisvaikutus
 Magneettikentän voimakkuutta ja suuntaa kuvaa vektorisuure **magneettivuon tiheys** $\overline{B}$. Vektorilla on suunta ja suuruus. Vektorin suunta on kentän suunta. Sen suuruus $B$ kertoo, kuinka voimakas kenttä on.
 
-Magneettivuon tiheyden yksikkö on **tesla** $\text{T}$. Teslan määritelmä perustuu siihen, millaisen voiman magneettikenttä antaa liikkuvalle varaukselle. Sen opit luvussa *Varattu hiukkanen sähkö- ja magneettikentässä*. Tesla on suuri yksikkö. Siksi arkisia kenttiä ilmoitetaan usein millitesloina, $1\,\text{mT} = 10^{-3}\,\text{T}$, tai mikrotesloina, $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
+Magneettivuon tiheyden yksikkö on **tesla** $\text{T}$. Teslan määritelmä perustuu siihen, millaisen voiman magneettikenttä antaa liikkuvalle varaukselle. Sen opit luvussa *Varatun hiukkasen liike sähkö- ja magneettikentässä*. Tesla on suuri yksikkö. Siksi arkisia kenttiä ilmoitetaan usein millitesloina, $1\,\text{mT} = 10^{-3}\,\text{T}$, tai mikrotesloina, $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
 
 | Kohde | $B$ |
 | --- | --- |

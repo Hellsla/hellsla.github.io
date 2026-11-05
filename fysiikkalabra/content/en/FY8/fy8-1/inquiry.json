@@ -7,7 +7,7 @@
     "calculate the maximum kinetic energy of the released electrons and the threshold wavelength with the photoelectric equation."
   ],
   "prior": [
-    "The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$ (chapter *Mechanical waves*)",
+    "The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$ (chapter *How waves form and travel*)",
     "The kinetic energy of a moving object is $E_\\text{k} = \\tfrac{1}{2} m v^2$ (chapter *Kinetic energy, potential energy and mechanical energy*)",
     "Energy is conserved when it changes from one form to another (chapter *Forms of energy and conservation of energy*)"
   ],
@@ -30,7 +30,7 @@
         {
           "text": "Violet, because a shorter wavelength means a greater frequency.",
           "correct": true,
-          "feedback": "Correct. The basic equation of wave motion $c = f\\lambda$ gives $f = \\tfrac{c}{\\lambda}$ (chapter *Mechanical waves*), so a shorter wavelength gives a greater frequency. The frequency of violet light is about $7.5 \\cdot 10^{14}\\,\\text{Hz}$ and that of red light about $4.6 \\cdot 10^{14}\\,\\text{Hz}$."
+          "feedback": "Correct. The basic equation of wave motion $c = f\\lambda$ gives $f = \\tfrac{c}{\\lambda}$ (chapter *How waves form and travel*), so a shorter wavelength gives a greater frequency. The frequency of violet light is about $7.5 \\cdot 10^{14}\\,\\text{Hz}$ and that of red light about $4.6 \\cdot 10^{14}\\,\\text{Hz}$."
         },
         {
           "text": "Red, because a longer wave oscillates more often.",

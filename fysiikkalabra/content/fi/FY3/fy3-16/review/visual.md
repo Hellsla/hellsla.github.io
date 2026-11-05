@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bda9e4884c7e6825
+CONTENT-HASH: ecedd7bc074658dc
 
 ## Blocking
-(none) Round 1 Major is resolved: "Tehtävä etenee näin:" now renders as a numbered list of five separate items at 1280 (theory-1280-3) and 390 px (stage-selita-390-4), step 4 readable as a checklist item.
+(none)
 
 ## Polish
-- [Minor] lesson.md Esimerkki task — "0,80 m²" still plain beside maths values — $0{,}80\,\text{m}^2$.
-- [Minor] Esimerkki "Tunnetut" — $UA$ with `\text{m}^2\text{K}` (no dot) vs W/(m²·K) elsewhere; the task has a stray `\text{}\cdot` — use `\cdot\text{K}` consistently.
-- [Minor] Tutki table (stage-tutki-390-2) — narrow table leaves empty space on the right; fine, optional full width.
-- [Minor] fig 3 and fig 5 at 390 px — labels about 8–9 px; legible but small.
-- [Minor] Exit ticket heading is English in the Finnish page — "Loppukysymykset" if allowed.
+- [Minor] whole page (pre-existing, outside this delta) — other inline formulas still break at 390 px, e.g. `P = UA\Delta T = 0{,}90\,\text{W/K} \cdot 28\,\text{K} = 25\,\text{W}`; templates/lesson.html glues only pieces of at most 14 characters, so a longer formula can break (teacher's rule: never) — brace each as one group `${...}$`, as done in fy7-2 L1-02, or show it as a display row.
+- [Minor] lesson.md U-value paragraph (untouched words of the edited line) — units in parentheses are plain text: (W/(m²·K)), (m²), (K) — write $\text{W/(m}^2\cdot\text{K)}$, $\text{m}^2$, $\text{K}$.
 
 ## Checked
-- Round 2: theory-1280-3, stage-selita-390-4, example-390-1, stage-tutki-390-2; other round-1 captures (figures 1–5, ennusta, tarkista) unchanged and nothing else broke in what I opened.
+- delta review of 2c31ff041: cooler-bag model sentence ($0\,{}^\circ\text{C}$ as a model assumption); diff read. `screenshot.py fy3-16 --if-stale` (fresh captures).
+- Own 390 px element captures of each changed block opened (scratchpad caps/fi-fy3-16-*-390.png): text wraps cleanly, KaTeX renders, no clipping, no horizontal scroll. Measured every inline .katex (getClientRects().length) at 360, 390 and 1280 px, all boxes open and all feedback shown, after `build.py fy3-16`: no formula in a changed passage breaks onto two lines.
+- Earlier: batch delta review: cooler-bag paragraph and exercise with $0{,}80\,\text{m}^2$ now in LaTeX; built page and scripts/screenshot.py fy3-16 (captures current), changed passages opened at 390 px (a-390-0, a-390-1): clean wrapping, KaTeX renders, no inline formula wraps, no clipping, no horizontal scroll. Diff read; the rest of the lesson unchanged.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

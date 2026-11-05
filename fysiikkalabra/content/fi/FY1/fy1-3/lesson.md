@@ -279,7 +279,7 @@
 </svg>
 
 ## Ydinajatus
-**Mittaus** on suureen arvon määrittämistä vertaamalla sitä yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos poikkeaa yleensä hieman suureen oikeasta arvosta, koska mittarin lukeminen, mittaustapa ja olosuhteet tuovat siihen poikkeaman. Tuloksen ja oikean arvon erotus $x - x_\text{oikea}$ on **mittausvirhe**. Jokaiseen mittaustulokseen liittyy epävarmuutta, myös taitavan mittaajan tulokseen. Oikeaa arvoa ei yleensä tunneta, joten ei tunneta myöskään mittausvirhettä tai sen suuruutta. Siksi fysiikassa arvioidaan, kuinka suuri virhe voi olla, ja tämä arvio eli mittausepävarmuus ilmoitetaan tuloksen mukana.
+**Mittaus** on suureen arvon määrittämistä vertaamalla sitä yksikköön. Mittaustulos on lukuarvo ja yksikkö, esimerkiksi $2{,}43\,\text{s}$. Tulos poikkeaa yleensä hieman suureen oikeasta arvosta, koska mittarin lukeminen, mittaustapa ja olosuhteet tuovat siihen poikkeaman. Tuloksen ja oikean arvon erotus $x - x_\text{oikea}$ on **mittausvirhe**. Jokaiseen mittaustulokseen liittyy epävarmuutta, myös taitavan mittaajan tulokseen. Oikeaa arvoa ei yleensä tunneta, joten ei tunneta myöskään mittausvirhettä tai sen suuruutta. Siksi tuloksen mukana ilmoitetaan mittausepävarmuus. Se kuvaa mittaustulokseen liittyvää epävarmuutta eli arviota siitä, kuinka suuri mittausvirhe voi olla. Se ei yleensä tarkoita ehdotonta suurinta mahdollista poikkeamaa oikeasta arvosta.
 
 Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja systemaattiseen virheeseen. Ne erottaa toisistaan se, miten ne käyttäytyvät, kun mittaus toistetaan.
 

@@ -1,15 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 94744182f94ef619
+CONTENT-HASH: 141c2ca7c9b3b1f4
+
+Follow-up review of the fix commit 2c31ff041 (delta from 898bd317b4c1c97d, whose full review is kept below). Change: exit-ticket.json:4, answer 1.
 
 ## Blocking
 
+None.
+
 ## Polish
-- inquiry.json:364 (tarkistus-2 solution, Reasonableness) — "The radiation in the graph therefore has a slightly higher energy than that of caesium-137" infers photon energy from a 5 cm vs 4 cm half-value thickness, but concrete density and composition vary — soften to "may have a somewhat higher energy, or the concrete is less dense" or drop the sentence. Carried over.
-- lesson.md:333 bar label "other natural" vs table row lesson.md:308 "other natural radiation" — the short label is unambiguous because the table directly above, the caption (lesson.md:313) and the aria-label name it in full; "other natural sources" would read as a complete noun phrase if it still fits at 360 px. Taste, not an error.
+- inquiry.json transfer (siirto, :309): "three significant figures like $1.80\,\text{mSv/h}$; the ratios … are exact", but $1.0\,\text{m}$, $3.0\,\text{m}$, $15\,\text{min}$, $6.0\,\text{mm}$ carry two figures; give the data three figures or justify differently.
+- Lesson :346: "about $3\,\mu\text{Sv/h}$ on a typical long-haul flight" is at the low end; "a few µSv/h" would be safer (C).
 
 ## Checked
-- Only change since the passed version (hash 80734f621c253d2d → 94744182f94ef619): the label key "muu luonnon säteily" in figures.json is now "other natural", redrawn at lesson.md:333 (foreignObject x 92, width 158, right-aligned to the bar origin as before). No bar, number or axis changed.
-- Figure capture fy8-13-fig-4-390 (post-change): radon 4.0, other natural 1.1, health care 0.8 mSv/year, bars to scale, axis H_E (mSv/year); the label fits the frame at 390 px.
-- Values still agree with the table (4, 1.1, 0.8 mSv, total 5.9), caption (STUK-A263, 0.76 → 0.8) and the aria-label, which keeps "other natural radiation, that is soil, buildings, space and the body's own substances".
-- Rest of the lesson unchanged and as approved in the previous report (all recomputed numbers, ICRP 103 weights, sim model, choice items, exit ticket).
-- Hash unchanged between start and end.
+- Earlier blocking item resolved: "…so it is used to estimate the long-term cancer risk of small doses for an average person, not an individual's exact risk." Right by ICRP 103 usage.
+- Consistency: grep of "cancer risk"/"individual"/"whole body" — Key idea (:300), worked example's "radiation detriment to the whole body" (:622) and misconception (:625) agree with it.
+- Recomputed: $1\,\text{Gy}$ warms water $0.00024\,\text{K}$; natural 86 %, radon 68 %; tissue factors sum to 1; example $1.67\,\text{mGy}$, $33\,\text{mSv}$, $4.0\,\text{mSv}$; predictions $10.0$, $2.50$, $20.0$/$10.0$/$5.00\,\mu\text{Sv/h}$; error item $1.2\,\text{mSv}$; transfer $12.5\,\mu\text{Sv}$ (mistakes 37.5, 25, 50, 750); check 2 $5.0\,\text{cm}$. All agree with lesson-answers.py.
+- Facts: STUK-A263, Rn-222 $3.82\,\text{d}$, Po-218/214, ~300 lung cancers, $94\,\text{Bq/m}^3$, 300/200 Bq/m³, 20/1 mSv, $w_\text{R}$, Cs-137 HVL: correct.
+- Inverse-square and half-value models stated with conditions; sim model box agrees.
+- Every choice has exactly one correct option; experiments lock all but the varied parameter.
+- Hash at start and end: 141c2ca7c9b3b1f4.

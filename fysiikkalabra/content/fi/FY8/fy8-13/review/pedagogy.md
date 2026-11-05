@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e9e47c77f1bab9da
+CONTENT-HASH: e173669c713bd9b1
 
 ## Blocking
+(none)
 
 ## Polish
+- The exit-ticket answer "…syöpäriskiä keskimääräiselle ihmiselle, ei yksilöllistä riskiä" is still one long sentence. Splitting it as fi-easy does reads easier for a 16-year-old.
+- The misconception paragraph says the same effective dose does not guarantee the same individual risk. This is consistent with the radon exercises, which use averages.
 
 ## Checked
-- Delta round 4: the sim canvas label "lähde" now comes from lang key `lahde_kanvas` (`$\text{lähde}$` in fi.json, same value as before; en/fi-easy keys exist). Rendered Finnish unchanged; no lesson wording or content changed (0 changed lines).
-- Rest of the lesson is as approved in the previous report.
-- Re-review after change: fi version unchanged by this edit; no content change; earlier verdict stands.
+Follow-up delta (2c31ff041): the exit-ticket model answer now says that effective dose estimates the long-term risk of small doses for an average person. This matches the lesson's caveat and removes the earlier "koko kehon syöpäriski" claim, and a student can still check their answer against it. Earlier: the dosimeter captions explain CPS and the annual dose.

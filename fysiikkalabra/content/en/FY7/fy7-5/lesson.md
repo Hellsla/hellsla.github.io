@@ -359,7 +359,7 @@ The quotient $\Delta\Phi : \Delta t$ is the slope of the flux graph $(t, \Phi)$.
 </svg>
 
 ### The induced voltage of a moving conductor
-When a straight metal rod moves with velocity $v$ perpendicular to a uniform magnetic field $B$, the conduction electrons of the rod move along with it. The chapter *Charged particle in electric and magnetic fields* showed that a magnetic field exerts a force $F_\text{m} = evB$ on a moving charge. The force points along the rod, so the electrons move to one end of the rod. A deficit of electrons is left at the other end, and an electric field $E$ appears between the ends, pulling the electrons back. The shift stops when the electric force $F_\text{s} = eE$ cancels the magnetic force. Then $eE = evB$, that is, $E = vB$. In a uniform field the voltage is the product of the field and the length (chapter *Uniform electric field, potential and potential energy*), so the induced voltage between the ends of the rod is
+When a straight metal rod moves with velocity $v$ perpendicular to a uniform magnetic field $B$, the conduction electrons of the rod move along with it. The chapter *Charged particle in electric and magnetic fields* showed that a magnetic field exerts a force $F_\text{m} = evB$ on a moving charge. The force points along the rod, so the electrons move to one end of the rod. A deficit of electrons is left at the other end, and an electric field $E$ appears between the ends, pulling the electrons back. The shift stops when the electric force $F_\text{s} = eE$ cancels the magnetic force. Then $eE = evB$, that is, $E = vB$. In a uniform field the voltage is the product of the field and the length (chapter *Uniform electric field*), so the induced voltage between the ends of the rod is
 ```latex
 e = vBl
 ```

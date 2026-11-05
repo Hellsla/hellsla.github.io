@@ -11,7 +11,7 @@
 ## fy5-16-L1-02
 **Given:** level of one fan $L_1 = 70\,\text{dB}$; two identical fans
 **Find:** the combined level $L$ in decibels
-**Principle:** The intensities of two sources add, not the levels. Two equally strong sources double the intensity (chapter *Loudness of sound*).
+**Principle:** The intensities of two sources add, not the levels. Two equally strong sources double the intensity (chapter *Intensity and the decibel scale*).
 **Formula:** $L = L_1 + 10\,\text{dB} \cdot \lg \dfrac{2 I_1}{I_1} = L_1 + 10\,\text{dB} \cdot \lg 2$
 **Conversions:** Not needed.
 **Substitution:** $L = 70\,\text{dB} + 10\,\text{dB} \cdot \lg 2 = 70\,\text{dB} + 3.01\,\text{dB} = 73.01\,\text{dB}$
@@ -21,7 +21,7 @@
 ## fy5-16-L1-03
 **Given:** $L_1 = 88\,\text{dB}$ at a distance $r_1 = 4.0\,\text{m}$, new distance $r_2 = 8.0\,\text{m}$; point source in an open space
 **Find:** the level $L_2$ at the distance $r_2$
-**Principle:** The intensity of a point source is inversely proportional to the square of the distance, so double the distance gives a quarter of the intensity. That lowers the level by $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$ (chapter *Loudness of sound*).
+**Principle:** The intensity of a point source is inversely proportional to the square of the distance, so double the distance gives a quarter of the intensity. That lowers the level by $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$ (chapter *Intensity and the decibel scale*).
 **Formula:** $L_2 = L_1 - 6\,\text{dB}$, when $r_2 = 2 r_1$
 **Conversions:** Not needed: $r_2 : r_1 = 8.0\,\text{m} : 4.0\,\text{m} = 2$.
 **Substitution:** $L_2 = 88\,\text{dB} - 6\,\text{dB} = 82\,\text{dB}$
@@ -66,7 +66,7 @@
 ## fy5-16-L2-03
 **Given:** $L_1 = 78\,\text{dB}$ at a distance $r_1 = 2.0\,\text{m}$, desired level $L_2 = 60\,\text{dB}$; point source in an open space
 **Find:** the distance $r_2$ in metres
-**Principle:** In an open space every doubling of the distance lowers the level by $6\,\text{dB}$, because the intensity falls to a quarter (chapter *Loudness of sound*). We calculate how many doublings are needed.
+**Principle:** In an open space every doubling of the distance lowers the level by $6\,\text{dB}$, because the intensity falls to a quarter (chapter *Intensity and the decibel scale*). We calculate how many doublings are needed.
 **Formula:** $k = \dfrac{L_1 - L_2}{6\,\text{dB}}$ and $r_2 = 2^{\,k} \cdot r_1$
 **Conversions:** Not needed.
 **Substitution:** $k = \dfrac{78\,\text{dB} - 60\,\text{dB}}{6\,\text{dB}} = 3$, $r_2 = 2^3 \cdot 2.0\,\text{m} = 16\,\text{m}$

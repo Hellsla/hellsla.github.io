@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9744c01bdff95024
+CONTENT-HASH: 751af08c90959771
 
 ## Blocking
+(none)
 
 ## Polish
-
+- "Mekaaninen aaltoliike" is bolded as the definition while the next paragraph and later sections say plain "aalto"; acceptable, but the lesson could say once that sähkömagneettinen aalto is treated elsewhere.
 
 ## Checked
-batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.
+batch delta review (fi): term now matches 'Mekaaninen aalto tarvitsee väliaineen' directly below; summary consistent; the definition still holds for the string example.

@@ -318,7 +318,7 @@ The magnetic poles are not exactly at the geographic poles, and they wander slow
 <figure class="unit-photo"><img src="pics/fy7/aurora-saana.webp" alt="Green northern lights in a starry sky above Saana fell in Kilpisjärvi."><figcaption>Northern lights above Saana fell in Kilpisjärvi, Finland. Earth's magnetic field guides charged particles from the Sun towards the polar regions, which is why auroras are often seen in Lapland.</figcaption></figure>
 
 ## Formula: Combining magnetic fields
-The strength and direction of a magnetic field are described by the vector quantity **magnetic flux density** $\overline{B}$. Its direction is the direction of the field, and its magnitude $B$ tells how strong the field is. The unit of magnetic flux density is the **tesla** $\text{T}$. The definition of the tesla is based on the magnetic force on a moving charge, and it is introduced in the chapter *A charged particle in electric and magnetic fields*. The tesla is a large unit, so everyday fields are often given in millitesla, $1\,\text{mT} = 10^{-3}\,\text{T}$, or in microtesla, $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
+The strength and direction of a magnetic field are described by the vector quantity **magnetic flux density** $\overline{B}$. Its direction is the direction of the field, and its magnitude $B$ tells how strong the field is. The unit of magnetic flux density is the **tesla** $\text{T}$. The definition of the tesla is based on the magnetic force on a moving charge, and it is introduced in the chapter *Charged particle in electric and magnetic fields*. The tesla is a large unit, so everyday fields are often given in millitesla, $1\,\text{mT} = 10^{-3}\,\text{T}$, or in microtesla, $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
 
 | Object | $B$ |
 | --- | --- |

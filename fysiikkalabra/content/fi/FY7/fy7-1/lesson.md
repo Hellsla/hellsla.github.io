@@ -318,7 +318,7 @@ Magneettiset navat eivät ole täsmälleen maantieteellisten napojen kohdalla, j
 <figure class="unit-photo"><img src="pics/fy7/aurora-saana.webp" alt="Vihreitä revontulia tähtitaivaalla Saana-tunturin yllä Kilpisjärvellä."><figcaption>Revontulet Saanan yllä Kilpisjärvellä. Maan magneettikenttä ohjaa Auringosta tulevia varattuja hiukkasia napa-alueille, ja siksi revontulia näkyy Lapissa usein.</figcaption></figure>
 
 ## Kaava: Magneettikenttien yhteisvaikutus
-Magneettikentän voimakkuutta ja suuntaa kuvaa vektorisuure **magneettivuon tiheys** $\overline{B}$. Sen suunta on kentän suunta ja sen suuruus $B$ kertoo, kuinka voimakas kenttä on. Magneettivuon tiheyden yksikkö on **tesla** $\text{T}$. Teslan määritelmä perustuu magneettikentän voimaan liikkuvaan varaukseen, ja se esitellään luvussa *Varattu hiukkanen sähkö- ja magneettikentässä*. Tesla on suuri yksikkö, joten arkisia kenttiä ilmoitetaan usein millitesloina, $1\,\text{mT} = 10^{-3}\,\text{T}$, tai mikrotesloina, $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
+Magneettikentän voimakkuutta ja suuntaa kuvaa vektorisuure **magneettivuon tiheys** $\overline{B}$. Sen suunta on kentän suunta ja sen suuruus $B$ kertoo, kuinka voimakas kenttä on. Magneettivuon tiheyden yksikkö on **tesla** $\text{T}$. Teslan määritelmä perustuu magneettikentän voimaan liikkuvaan varaukseen, ja se esitellään luvussa *Varatun hiukkasen liike sähkö- ja magneettikentässä*. Tesla on suuri yksikkö, joten arkisia kenttiä ilmoitetaan usein millitesloina, $1\,\text{mT} = 10^{-3}\,\text{T}$, tai mikrotesloina, $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
 
 | Kohde | $B$ |
 | --- | --- |

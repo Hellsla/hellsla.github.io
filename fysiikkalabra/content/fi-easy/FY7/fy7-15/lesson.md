@@ -132,7 +132,7 @@
 ## Ydinajatus
 
 ### Valo on poikittaista aaltoa
-Luvussa *Sähkömagneettinen säteily ja mustan kappaleen spektri* nähtiin, että valo on sähkömagneettista aaltoa. Sähkökenttä ja magneettikenttä värähtelevät kohtisuorassa toisiaan vastaan. Ne värähtelevät kohtisuorassa myös aallon etenemissuuntaa vastaan. Valo on siis poikittaista aaltoa, kuten aalto narussa (luku *Mekaaninen aaltoliike*). Poikittaisessa aallossa on tärkeää, mihin suuntaan värähtely tapahtuu. Valon **polarisaatiosuunta** on se suunta, jossa sähkökenttä värähtelee.
+Luvussa *Sähkömagneettinen säteily ja mustan kappaleen spektri* nähtiin, että valo on sähkömagneettista aaltoa. Sähkökenttä ja magneettikenttä värähtelevät kohtisuorassa toisiaan vastaan. Ne värähtelevät kohtisuorassa myös aallon etenemissuuntaa vastaan. Valo on siis poikittaista aaltoa, kuten aalto narussa (luku *Aaltojen synty ja eteneminen*). Poikittaisessa aallossa on tärkeää, mihin suuntaan värähtely tapahtuu. Valon **polarisaatiosuunta** on se suunta, jossa sähkökenttä värähtelee.
 
 Ääni on pitkittäistä aaltoa. Siinä väliaine värähtelee etenemissuunnassa, eikä värähtelylle jää muita suuntia. Siksi ääntä ei voi polarisoida. Valon voi polarisoida, ja se osoittaa, että valo on poikittaista aaltoa.
 

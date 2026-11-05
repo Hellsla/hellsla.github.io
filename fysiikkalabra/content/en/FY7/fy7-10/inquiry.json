@@ -8,7 +8,7 @@
   ],
   "prior": [
     "Light is electromagnetic wave motion, and in a vacuum its speed is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$ (chapter *Electromagnetic radiation and the black-body spectrum*)",
-    "A wave is reflected so that the angle of reflection is equal to the angle of incidence, when the angles are measured from the normal (chapter *Reflection and diffraction of waves*)"
+    "A wave is reflected so that the angle of reflection is equal to the angle of incidence, when the angles are measured from the normal (chapter *A wave meets an obstacle or a gap*)"
   ],
   "activities": [
     {
@@ -28,15 +28,15 @@
         {
           "text": "On the other side of the normal, at an angle of $30^\\circ$ from the normal.",
           "correct": true,
-          "feedback": "Correct. The angle of reflection is equal to the angle of incidence when both are measured from the normal (chapter *Reflection and diffraction of waves*). Today the same law holds for light."
+          "feedback": "Correct. The angle of reflection is equal to the angle of incidence when both are measured from the normal (chapter *A wave meets an obstacle or a gap*). Today the same law holds for light."
         },
         {
           "text": "On the other side of the normal, at an angle of $60^\\circ$ from the normal.",
-          "feedback": "The angle $60^\\circ$ is the angle between the incident wave and the surface of the wall. The law of reflection concerns angles measured from the normal: the angle of reflection is $30^\\circ$ (chapter *Reflection and diffraction of waves*)."
+          "feedback": "The angle $60^\\circ$ is the angle between the incident wave and the surface of the wall. The law of reflection concerns angles measured from the normal: the angle of reflection is $30^\\circ$ (chapter *A wave meets an obstacle or a gap*)."
         },
         {
           "text": "Back along the same path, because the wall stops the wave.",
-          "feedback": "A wave returns along the same path only when it arrives perpendicular to the wall. A wave arriving obliquely is reflected to the other side of the normal at an equal angle (chapter *Reflection and diffraction of waves*)."
+          "feedback": "A wave returns along the same path only when it arrives perpendicular to the wall. A wave arriving obliquely is reflected to the other side of the normal at an equal angle (chapter *A wave meets an obstacle or a gap*)."
         }
       ],
       "optional": true
@@ -105,7 +105,7 @@
       "type": "sim",
       "text": "A laser beam hits the boundary of two materials at the centre of a protractor disc. Choose the materials and the angle of incidence, and follow the reflected and the refracted ray.",
       "howto": "Choose the material above and the material below the boundary and adjust the angle of incidence $\\alpha_1$. The laser is in the upper material, and the ray hits the boundary at the centre of the protractor disc. The dashed line is the normal of the boundary, and all angles are measured from it: $\\alpha_1$ is the angle of incidence, $\\beta$ the angle of reflection and $\\alpha_2$ the angle of refraction. On the rim of the disc there is a mark every $10^\\circ$ and a longer mark every $30^\\circ$. The brighter and thicker the ray, the greater the share of the light that travels along it. In the readout you see the angles, their sines and the reflected share $R$.",
-      "model": "The model uses the refractive indices of yellow light (wavelength $589\\,\\text{nm}$): air $1.00$, water $1.33$, acrylic $1.49$, glass $1.52$ and diamond $2.42$. The boundary is flat and smooth, and the materials are uniform and transparent, so they do not absorb light. The reflected share is calculated for unpolarised light, and the rest of the light continues as the refracted ray. If the law of refraction gave $\\sin\\alpha_2 > 1$, there would be no refracted ray, and all the light is reflected (chapter *Total internal reflection and the optical fibre*). The readings are values calculated by the model, not measurements.",
+      "model": "The model uses the refractive indices of yellow light (wavelength $589\\,\\text{nm}$): air $1.00$, water $1.33$, acrylic $1.49$, glass $1.52$ and diamond $2.42$. The boundary is flat and smooth, and the materials are uniform and transparent, so they do not absorb light. The reflected share is calculated for unpolarised light, and the rest of the light continues as the refracted ray. If the law of refraction gave $\\sin\\alpha_2 > 1$, there would be no refracted ray, and all the light is reflected (chapter *Total internal reflection and optical fibre*). The readings are values calculated by the model, not measurements.",
       "calc": "The angle of reflection is $\\beta = \\alpha_1$ according to the law of reflection. The angle of refraction is found from the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$:\n\n$$\\sin\\alpha_2 = \\frac{n_1 \\sin\\alpha_1}{n_2}$$\n\nThe reflected share $R$ is calculated from Fresnel's equations, which are not part of the upper secondary syllabus; for example, about $2\\,\\%$ of light arriving perpendicular from air to water is reflected. The refracted ray carries the share $100\\,\\% - R$."
     },
     {

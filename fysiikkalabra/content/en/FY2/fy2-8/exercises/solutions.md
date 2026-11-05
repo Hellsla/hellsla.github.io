@@ -122,7 +122,7 @@
 ## fy2-8-L1-06
 **Find:** which statement describes the natural greenhouse effect.
 **Principle:** Most of the Sun's radiation passes through the atmosphere and warms the ground. The warm ground emits thermal radiation, and greenhouse gases slow down its escape into space. The atmosphere does not produce energy itself, does not absorb all of the Sun's radiation, and does not reflect most of it away.
-**Model answer:** The correct option is the one according to which greenhouse gases let the Sun's radiation through but slow down the escape of the ground's thermal radiation. The phenomenon raises the mean temperature of the Earth from about $-18\,{}^\circ\text{C}$ to about $+15\,{}^\circ\text{C}$, so it is essential for life. The problem is the strengthening of the phenomenon when carbon dioxide and methane are added to the atmosphere.
+**Model answer:** The correct option is the one according to which greenhouse gases let the Sun's radiation through but slow down the escape of the ground's thermal radiation. The mean surface temperature is about $+15\,{}^\circ\text{C}$, while a simple radiative balance model gives the Earth an effective radiating temperature of about $-18\,{}^\circ\text{C}$. The difference, about $33\,\text{K}$, illustrates why the phenomenon is essential for life. The problem is the strengthening of the phenomenon when carbon dioxide and methane are added to the atmosphere.
 ## fy2-8-L1-07
 **Find:** which statement concerns climate and not weather.
 **Principle:** Weather is the state of the atmosphere in a given place at a given moment or over a short period. Climate is the long-term average and variation of weather in an area, typically over at least thirty years.

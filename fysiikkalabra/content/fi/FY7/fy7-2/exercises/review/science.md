@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0fdbd005b7711e68
+CONTENT-HASH: 8b572d40e2c95165
 Round: 2
 
 Round 2: the round-1 Blocking item is fixed. L2-05 is now an ion beam (≈ 210 eV) in a vacuum chamber with a position-sensitive detector, which is realistic. Tracks 1–3 are H⁺, H⁻ and H₂⁺, all correctly described. The round-1 Polish was taken up: L3-04 says "noin 23 u" with the radii as the limit, L3-05 says "Protoni" and uses 1,00 T (no longer L3-02's numbers), and L2-07 says "yhtä lyhyessä ajassa".
@@ -19,3 +19,10 @@ Round 2: the round-1 Blocking item is fixed. L2-05 is now an ion beam (≈ 210 e
 - L1-06 and L2-07 were reworded and reordered. Each has exactly one correct option, and the new distractors and their feedback are correct.
 - L3-04: the hand-fit wording and the 2-sig-fig reasoning are now consistent with the least-squares value of 22,8 u.
 - There are 8/7/5 tasks, and each numeric solution is solved symbolically first.
+
+## Follow-up (8b572d40e2c95165: four solutions.md edits on top of the hash above)
+- L1-02 Annettu: ${|q| = e = 1,602 \cdot 10^{-19}\,\text{C}}$ is the right elementary charge, given as a magnitude, so the electron's negative sign is no longer hidden. The outer braces only group.
+- L1-02 Kaava: $|q|vB = mv^2/r$, $r = mv/(|q|B)$ is the correct magnitude form, matching the lesson's $|q|$ notation. Recomputed $r = 7,581$ mm → 7,6 mm, unchanged; answers.py and exercises.json untouched.
+- L2-03 and L3-02 chapter references (*Homogeeninen sähkökenttä*, *Ympyrärata: jaksonaika ja ratanopeus*) match the current titles of fy6-11 and fy5-3; the physics is unchanged.
+- Polish (not from this diff): exercises.json L1-02 still gives the electron's charge without a sign; match the solution: "ja varaus $1{,}602…$" → "ja varauksen suuruus $1{,}602…$".
+- Hash at start and end: 8b572d40e2c95165.

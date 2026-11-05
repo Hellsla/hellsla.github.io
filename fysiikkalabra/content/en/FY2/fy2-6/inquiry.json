@@ -7,7 +7,7 @@
     "compare ways of producing energy using orders of magnitude and criteria."
   ],
   "prior": [
-    "Power tells you how quickly energy is transferred, $P = E : t$ (chapter *Power P = ΔE/Δt*)",
+    "Power tells you how quickly energy is transferred, $P = E : t$ (chapter *Power: $P = \\Delta E/\\Delta t$*)",
     "The energy of a fuel is calculated with the heat of combustion, $E = Hm$ (chapter *Fuels and heat of combustion $E = Hm$*)",
     "Efficiency tells you what fraction of the energy is useful (chapter *Efficiency*)"
   ],
@@ -29,11 +29,11 @@
         {
           "text": "$6\\,\\text{kWh}$",
           "correct": true,
-          "feedback": "Correct. Energy is power multiplied by time, $2\\,\\text{kW} \\cdot 3\\,\\text{h} = 6\\,\\text{kWh}$ (chapter *Power P = ΔE/Δt*). Today the same method tells you how much electricity a power plant produces."
+          "feedback": "Correct. Energy is power multiplied by time, $2\\,\\text{kW} \\cdot 3\\,\\text{h} = 6\\,\\text{kWh}$ (chapter *Power: $P = \\Delta E/\\Delta t$*). Today the same method tells you how much electricity a power plant produces."
         },
         {
           "text": "$0.67\\,\\text{kWh}$",
-          "feedback": "Here the power was divided by time. Energy is found by multiplying: $E = P t$, and the unit kWh is the product of a kilowatt and an hour (chapter *Power P = ΔE/Δt*)."
+          "feedback": "Here the power was divided by time. Energy is found by multiplying: $E = P t$, and the unit kWh is the product of a kilowatt and an hour (chapter *Power: $P = \\Delta E/\\Delta t$*)."
         },
         {
           "text": "$6\\,\\text{kW}$",

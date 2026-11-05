@@ -8,7 +8,7 @@
   ],
   "prior": [
     "Current is measured with an ammeter connected in series with the component, and voltage with a voltmeter connected in parallel with it (chapter *Measurements in an electric circuit*)",
-    "The direction of an electric current is agreed to be from the positive terminal to the negative terminal, and in a metal the current is the motion of free electrons (chapter *Electric circuit, current and voltage*)"
+    "The direction of an electric current is agreed to be from the positive terminal to the negative terminal, and in a metal the current is the motion of free electrons (chapter *Circuit, electric current and voltage*)"
   ],
   "activities": [
     {

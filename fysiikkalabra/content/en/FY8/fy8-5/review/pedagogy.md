@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d9f63abcfb924693
+CONTENT-HASH: e43ea85aaa4a9edf
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json `hook` — the caption "speaks of a region where the electron is likely to be detected" still gives the core of the answer before the student commits (unchanged since round 1). — end the caption at "drawn as blue clouds and two-lobed shapes".
-- lesson.md "The allowed states are standing waves" — "the more nodes, the greater the energy" next to 2s and 2p (one node, equal energy) can mislead. — add "(counting all nodes together)".
-- Exercises have no task on standing waves or nodes (a learn goal and a Tarkista item). — add one level 3 reasoning task (also in exercises report).
-- Sim text and inquiry `model` say "see-through projection" while figures.json now says "overlapping dots". — use one phrase.
+- Every figure shows the 90 % region while the heading says state. The sentence "The drawn region is an illustration, not the definition" carries it; keep it.
+- The STM photo has no link to the paragraph before it. One clause tying it to seeing atoms would help.
 
 ## Checked
-- Round 1 blockers fixed: sim canvas title and histogram label go through the translation function; the "kpl" unit in `siirto` is now "hits".
-- Path: Bohr and double-slit prerequisites, then orbital as probability region; the opening question is answered in the reflect item and the conclusion.
-- Both predictions can be refuted by the simulation; experiments lock the right parameters, min 2 rows before reveal.
-- Workload fits one lesson; model values are called model values.
-- Worked example: seven stages, one step each, conversion by substitution, reasonableness.
-- Tarkista distractors are real misconceptions; explain criteria are observable.
-- English reads naturally; glossary terms are used consistently.
-- Hash unchanged at the end.
+Follow-up delta (2c31ff041): the learning goal "interpret an orbital as a quantum state of the electron and its picture as a region…" now matches the lesson's definition and reads clearly. Earlier: the summary, misconception and Tarkista question stay consistent.
+
+## Follow-up (uncommitted edit, hash e43ea85aaa4a9edf)
+- learn[1] is now "interpret an orbital as a quantum state of the electron and its picture as a region of chosen detection probability." It is one line, the same length as goals 1 and 3, and keeps both halves the lesson teaches: the orbital as a state, and the drawn region as a picture at a chosen probability (taught in the sim measurement series, check 1 and the 90 % explain task).
+- "chosen detection probability" is denser than the earlier wording, but the lesson unpacks it before the student is assessed on it (Key idea, Summary). Polish only.
+- No other content changed. Blocking: none.

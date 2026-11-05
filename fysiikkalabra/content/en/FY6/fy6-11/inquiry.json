@@ -8,7 +8,7 @@
   ],
   "prior": [
     "Coulomb's law: the force between two point charges is directly proportional to the product of the charges and inversely proportional to the square of the distance (chapter *Electric charge and Coulomb's law*)",
-    "Voltage tells the energy per unit charge: $1\\,\\text{V} = 1\\,\\text{J/C}$ (chapter *Electric circuit, current and voltage*)",
+    "Voltage tells the energy per unit charge: $1\\,\\text{V} = 1\\,\\text{J/C}$ (chapter *Circuit, electric current and voltage*)",
     "Newton's second law $\\overline{F} = m\\overline{a}$ (chapter *Newton's second law*)"
   ],
   "activities": [

@@ -74,14 +74,14 @@
 ## Key idea
 
 ### An electric field accelerates
-In the chapter *Uniform electric field, potential and potential energy* we saw that a charged particle in an electric field is acted on by an electric force $F_\text{s} = qE$. On a positive particle the force points in the direction of the field $\overline{E}$, on a negative particle in the opposite direction. When the particle travels across a voltage $U$, the field does work $W = qU$ on it, and the work increases the kinetic energy of the particle. For a particle starting from rest we therefore have
+In the chapter *Uniform electric field* we saw that a charged particle in an electric field is acted on by an electric force $\overline{F}_\text{s} = q\overline{E}$, where $q$ is the charge of the particle with its sign. On a positive particle the force points in the direction of the field $\overline{E}$, on a negative particle in the opposite direction. The magnitude of the force depends only on the magnitude of the charge $|q|$, not on its sign. When the particle travels across an accelerating voltage $U$, the field does work $W = |q|U$ on it (chapter *Potential energy and potential in an electric field*), and the work increases the kinetic energy of the particle. For a particle starting from rest we therefore have
 ```latex
 \begin{aligned}
-F_\text{s} &= qE \\
-qU &= \tfrac{1}{2} m v^2
+F_\text{s} &= |q|E \\
+|q|U &= \tfrac{1}{2} m v^2
 \end{aligned}
 ```
-where $q$ is the charge of the particle (C), $E$ the electric field strength (V/m), $U$ the voltage (V), $m$ the mass (kg) and $v$ the speed (m/s). An electric field can set a charged particle in motion and increase its speed.
+where $|q|$ is the magnitude of the charge of the particle (C), $E$ the electric field strength (V/m), $U$ the magnitude of the accelerating voltage (V), $m$ the mass (kg) and $v$ the speed (m/s). For a positive particle, such as a proton, $|q| = q$. An electric field can set a charged particle in motion and increase its speed.
 
 ### A magnetic field turns a moving charge
 A magnetic field $\overline{B}$ (chapter *Magnets, the magnetic dipole and the magnetic field*) has no effect on a charge at rest. A moving charged particle is acted on by a **magnetic force**, which is perpendicular to both the velocity $\overline{v}$ of the particle and the field $\overline{B}$. The direction of the force on a positive charge is given by the **right-hand rule**: hold out your right hand so that the thumb points in the direction of the velocity and the other fingers in the direction of the field; the palm then pushes in the direction of the force. On a negative charge the force acts in the opposite direction. When the particle moves along the field, the force is zero.
@@ -165,7 +165,7 @@ A magnetic field $\overline{B}$ (chapter *Magnets, the magnetic dipole and the m
 <figure class="unit-photo"><img src="pics/fy7/aurora-levi.webp" alt="A wide band of green aurora in a starry sky above Levi fell, with a rocky fell slope and a few pine trees below."><figcaption>Northern lights above Levi in Kittilä, Finland. Charged particles from the Sun circle around the field lines of Earth's magnetic field and travel along them to the polar regions. In the upper atmosphere they collide with oxygen and nitrogen atoms, which emit light.</figcaption></figure>
 
 ### The force does not change the speed: the path is a circle
-Because the magnetic force is perpendicular to the velocity at every moment, it does no work. The kinetic energy and the speed of the particle stay the same; only the direction of the motion changes. When the particle moves perpendicular to a uniform field, the force is of constant magnitude and always points towards the same point. The particle is then in uniform circular motion, and the magnetic force acts as its centripetal force (chapter *Uniform circular motion and normal acceleration*).
+Because the magnetic force is perpendicular to the velocity at every moment, it does no work. The kinetic energy and the speed of the particle stay the same; only the direction of the motion changes. When the particle moves perpendicular to a uniform field, the force is of constant magnitude and always points towards the same point. The particle is then in uniform circular motion, and the magnetic force acts as its centripetal force (chapter *Centripetal acceleration and the equation of motion in a circle*).
 
 For example, a proton flying at a speed of $1.0 \cdot 10^{6}\,\text{m/s}$ perpendicular to a field of $0.20\,\text{T}$ is acted on by a force of $3.2 \cdot 10^{-14}\,\text{N}$, and it goes round a circle of radius about $5.2\,\text{cm}$. The weight of the proton, $1.6 \cdot 10^{-26}\,\text{N}$, is about $10^{12}$ times smaller, so gravity is neglected in the motion of particles.
 
@@ -257,15 +257,15 @@ For example, a proton flying at a speed of $1.0 \cdot 10^{6}\,\text{m/s}$ perpen
 ## Formula: Magnetic force and circular path
 The magnitude of the magnetic force on a charged particle moving in a magnetic field is
 ```latex
-F_\text{m} = q v B \sin\alpha
+F_\text{m} = |q| v B \sin\alpha
 ```
-where $q$ is the magnitude of the charge of the particle (C), $v$ the speed of the particle (m/s), $B$ the magnetic flux density (T) and $\alpha$ the angle between the velocity and the field. When the velocity is perpendicular to the field, $\sin 90^\circ = 1$ and the force is greatest, $F_\text{m} = qvB$. A particle moving along the field is not acted on by any force, because $\sin 0^\circ = 0$. From the definition of the tesla it follows that $1\,\text{C} \cdot 1\,\tfrac{\text{m}}{\text{s}} \cdot 1\,\text{T} = 1\,\text{N}$.
+where $|q|$ is the magnitude of the charge of the particle (C), $v$ the speed of the particle (m/s), $B$ the magnetic flux density (T) and $\alpha$ the angle between the velocity and the field. When the velocity is perpendicular to the field, $\sin 90^\circ = 1$ and the force is greatest, $F_\text{m} = |q|vB$. A particle moving along the field is not acted on by any force, because $\sin 0^\circ = 0$. From the definition of the tesla it follows that $1\,\text{C} \cdot 1\,\tfrac{\text{m}}{\text{s}} \cdot 1\,\text{T} = 1\,\text{N}$.
 
-When the particle moves perpendicular to a uniform magnetic field, the magnetic force is the centripetal force of the circular motion. By Newton's second law $qvB = \tfrac{mv^2}{r}$, and solving gives the radius of the path:
+When the particle moves perpendicular to a uniform magnetic field, the magnetic force is the centripetal force of the circular motion. By Newton's second law $|q|vB = \tfrac{mv^2}{r}$, and solving gives the radius of the path:
 ```latex
 \begin{aligned}
-q v B &= \frac{m v^2}{r} \\
-r &= \frac{m v}{q B}
+|q| v B &= \frac{m v^2}{r} \\
+r &= \frac{m v}{|q| B}
 \end{aligned}
 ```
 where $r$ is the radius of the circular path (m) and $m$ the mass of the particle (kg). The radius is directly proportional to the mass and the speed of the particle and inversely proportional to the charge and the field. A heavy or fast particle curves gently, and a strong field bends the path tightly. The formula holds when the speed is small compared with the speed of light. The graph below shows the radius $r$; at the detector of the simulation the distance of the point of impact from the slit is the diameter $d = 2r$.
@@ -316,10 +316,10 @@ where $r$ is the radius of the circular path (m) and $m$ the mass of the particl
 ## Velocity selector and mass spectrometer {Nopeusvalitsin ja massaspektrometri}
 
 ### Velocity selector
-In a velocity selector the particles pass between two plates, where there is both an electric field and a magnetic field perpendicular to it. The fields are directed so that the electric force $qE$ and the magnetic force $qvB$ point in opposite directions. Only a particle on which the forces are equal passes straight through the selector:
+In a velocity selector the particles pass between two plates, where there is both an electric field and a magnetic field perpendicular to it. The fields are directed so that the electric force $|q|E$ and the magnetic force $|q|vB$ point in opposite directions. Only a particle on which the forces are equal passes straight through the selector:
 ```latex
 \begin{aligned}
-qE &= qvB \\
+|q|E &= |q|vB \\
 v &= \frac{E}{B}
 \end{aligned}
 ```
@@ -328,7 +328,7 @@ where $E$ is the strength of the electric field between the plates (V/m) and $B$
 ### Mass spectrometer
 In a mass spectrometer the ions coming from the velocity selector, whose speed is therefore known, are directed through a slit into a second magnetic field $B_2$. There they travel along a semicircle and strike the detector, which is next to the slit. The distance of the point of impact from the slit is the diameter $2r$ of the path. The mass of the ion is solved from the formula for the radius:
 ```latex
-m = \frac{q B_2 r}{v}
+m = \frac{|q| B_2 r}{v}
 ```
 At the same speed and charge the radius of the path is directly proportional to the mass, so heavier ions land farther away. This separates the isotopes of an element, which differ only in mass: in radiocarbon dating carbon-14 ions are separated from carbon-12 ions and counted separately. A mass spectrometer is also used to identify, for example, doping substances and environmental toxins.
 
@@ -404,18 +404,18 @@ At the same speed and charge the radius of the path is directly proportional to 
 </svg>
 
 ## Particle accelerator {Hiukkaskiihdytin}
-A particle accelerator needs both fields. Because the magnetic force does no work, only an electric field can increase the energy of a particle: each time the particle travels across the voltage $U$ of an accelerating gap, its kinetic energy increases by $qU$. The magnets, in turn, bend and focus the particle beam. In a ring accelerator the same particle passes through the same accelerating gap again and again. As the speed increases, the magnetic field is strengthened so that the radius of the path, $r = mv : (qB)$, stays the same and the particles stay in the ring.
+A particle accelerator needs both fields. Because the magnetic force does no work, only an electric field can increase the energy of a particle: each time the particle travels across the voltage $U$ of an accelerating gap, its kinetic energy increases by $|q|U$. The magnets, in turn, bend and focus the particle beam. In a ring accelerator the same particle passes through the same accelerating gap again and again. As the speed increases, the magnetic field is strengthened so that the radius of the path, $r = mv : (|q|B)$, stays the same and the particles stay in the ring.
 
 <figure class="unit-photo"><img src="pics/fy7/berkeley-cyclotron.webp" alt="A black-and-white photograph from 1939: two men stand beside the large electromagnet and vacuum chamber of a cyclotron in a hall."><figcaption>The 60-inch cyclotron at Berkeley in 1939. The huge electromagnet bends the particles onto a circular path, and an electric field accelerates them on every turn.</figcaption></figure>
 
-The ring of the LHC accelerator at CERN, the European Organization for Nuclear Research, is $26.7\,\text{km}$ long. Its $1232$ superconducting bending magnets produce a field of up to about $8.3\,\text{T}$, and since 2022 the energy of the protons has been $6.8\,\text{TeV}$, or about $1.1 \cdot 10^{-6}\,\text{J}$ per proton (CERN 2017, *LHC the guide*; CERN 2022). The protons travel at almost the speed of light, so the formula $r = mv : (qB)$ no longer holds for them as it stands, but the principle is the same: the greater the energy, the stronger the field or the larger the ring that is needed.
+The ring of the LHC accelerator at CERN, the European Organization for Nuclear Research, is $26.7\,\text{km}$ long. Its $1232$ superconducting bending magnets produce a field of up to about $8.3\,\text{T}$, and since 2022 the energy of the protons has been $6.8\,\text{TeV}$, or about $1.1 \cdot 10^{-6}\,\text{J}$ per proton (CERN 2017, *LHC the guide*; CERN 2022). The protons travel at almost the speed of light, so the formula $r = mv : (|q|B)$ no longer holds for them as it stands, but the principle is the same: the greater the energy, the stronger the field or the larger the ring that is needed.
 
 ## Worked example
 In the velocity selector of a mass spectrometer the electric field strength is $6.00 \cdot 10^{4}\,\text{V/m}$ and the magnetic flux density $0.200\,\text{T}$. Neon ions of charge $q = e = 1.602 \cdot 10^{-19}\,\text{C}$ that have passed straight through the selector enter, through a slit, a magnetic field whose magnetic flux density is $0.500\,\text{T}$. The ions curve through a semicircle and strike the detector $24.9\,\text{cm}$ from the slit. What is the mass of an ion in kilograms and in atomic mass units ($1\,\text{u} = 1.661 \cdot 10^{-27}\,\text{kg}$)?
 
 <!-- vaihe -->
 
-**Given and find.** In the selector $E = 6.00 \cdot 10^{4}\,\text{V/m}$ and $B_1 = 0.200\,\text{T}$, in the bending field $B_2 = 0.500\,\text{T}$, the distance of the point of impact from the slit is $d = 24.9\,\text{cm}$ and the charge of the ion is $q = 1.602 \cdot 10^{-19}\,\text{C}$. We are asked for the mass $m$ of the ion.
+**Given and find.** In the selector $E = 6.00 \cdot 10^{4}\,\text{V/m}$ and $B_1 = 0.200\,\text{T}$, in the bending field $B_2 = 0.500\,\text{T}$, the distance of the point of impact from the slit is $d = 24.9\,\text{cm}$ and the charge of the ion is $q = 1.602 \cdot 10^{-19}\,\text{C}$, which is positive, so $|q| = q$. We are asked for the mass $m$ of the ion.
 
 <!-- vaihe -->
 
@@ -458,7 +458,7 @@ In atomic mass units $m = 3.324 \cdot 10^{-26}\,\text{kg} : (1.661 \cdot 10^{-27
 
 <!-- vaihe -->
 
-**Reasonableness.** According to tables the mass of a neon-20 atom is $19.99\,\text{u}$, so the ions are neon-20; compared with the mass of a proton the ion is about $20$ times heavier, as it should be. Neon also has the isotope neon-22: its ions would land $27.4\,\text{cm}$ from the slit, or about $2.5\,\text{cm}$ farther, because at the same speed the radius grows with the mass. The speed $3.00 \cdot 10^{5}\,\text{m/s}$ is about $0.1\,\%$ of the speed of light, so the formula $r = mv : (qB)$ holds well.
+**Reasonableness.** According to tables the mass of a neon-20 atom is $19.99\,\text{u}$, so the ions are neon-20; compared with the mass of a proton the ion is about $20$ times heavier, as it should be. Neon also has the isotope neon-22: its ions would land $27.4\,\text{cm}$ from the slit, or about $2.5\,\text{cm}$ farther, because at the same speed the radius grows with the mass. The speed $3.00 \cdot 10^{5}\,\text{m/s}$ is about $0.1\,\%$ of the speed of light, so the formula $r = mv : (|q|B)$ holds well.
 
 ## Common misconception
 Many people think that a magnetic field pulls a charged particle in the direction of the field or towards a pole, as a magnet pulls an iron nail, and that the field accelerates the particle. The magnetic force, however, is always perpendicular to both the velocity and the field. That is why it does no work and does not change the speed of the particle: it only turns the direction of the motion. The speed of a particle can be increased only by an electric field, and that is why accelerators contain both electric fields and magnets.
@@ -466,8 +466,8 @@ Many people think that a magnetic field pulls a charged particle in the directio
 Another mistake is to forget the sign of the charge. The right-hand rule gives the direction of the force on a positive charge, and on a negative charge the force acts in the opposite direction. An electron that flies at the same speed into the same field as a proton therefore curves in the opposite direction, and its path is about $1840$ times smaller, because its mass is so much smaller.
 
 ## Summary
-- An electric field accelerates a charged particle: the force is $F_\text{s} = qE$, and on travelling across a voltage $U$ the particle gains kinetic energy $qU$.
-- The magnetic force $F_\text{m} = qvB \sin\alpha$ acts only on a moving charge. It is perpendicular to both the velocity and the field; its direction on a positive charge is given by the right-hand rule, and on a negative charge it is the opposite.
-- The magnetic force does not change the speed. A particle moving perpendicular to a uniform field goes round a circle of radius $r = mv : (qB)$.
+- An electric field accelerates a charged particle: the force is $\overline{F}_\text{s} = q\overline{E}$ and its magnitude $F_\text{s} = |q|E$, where $q$ is the charge with its sign. A particle starting from rest gains kinetic energy $E_\text{k} = |q|U$ on travelling across an accelerating voltage $U$.
+- The magnetic force $F_\text{m} = |q|vB \sin\alpha$ acts only on a moving charge. It is perpendicular to both the velocity and the field; its direction on a positive charge is given by the right-hand rule, and on a negative charge it is the opposite.
+- The magnetic force does not change the speed. A particle moving perpendicular to a uniform field goes round a circle of radius $r = mv : (|q|B)$.
 - Only the speed $v = E : B$ passes straight through a velocity selector. A mass spectrometer separates ions moving at the same speed by their mass, because the radius is proportional to the mass.
 - In a particle accelerator electric fields increase the energy of the particles and magnets steer their path.

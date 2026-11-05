@@ -112,7 +112,7 @@
 ## fy2-5-L3-03
 **Given:** peat $m = 36\,\text{t}$ per hour, $H = 10\,\tfrac{\text{MJ}}{\text{kg}}$, efficiency of electricity production $\eta = 35\,\% = 0.35$, time $t = 1\,\text{h}$
 **Find:** the electric power $P$ in megawatts
-**Principle:** In one hour the peat releases the energy $E_\text{in} = Hm$. By the efficiency, only the share $\eta$ of it becomes electricity (chapter *Efficiency*). Power is energy per unit of time, so power = energy : time (chapter *Power P = ΔE/Δt*).
+**Principle:** In one hour the peat releases the energy $E_\text{in} = Hm$. By the efficiency, only the share $\eta$ of it becomes electricity (chapter *Efficiency*). Power is energy per unit of time, so power = energy : time (chapter *Power: $P = \Delta E/\Delta t$*).
 **Formula:** $E_\text{in} = Hm$, $E_\text{useful} = \eta\, E_\text{in}$ and $P = \dfrac{E_\text{useful}}{t}$, together $P = \dfrac{\eta H m}{t}$
 **Conversions:** $36\,\text{t} = 36 \cdot 1000\,\text{kg} = 36\,000\,\text{kg}$ and $1\,\text{h} = 3600\,\text{s}$. Since $1\,\text{MJ/s} = 1\,\text{MW}$, the unit of power comes out directly in megawatts.
 **Substitution:** $E_\text{in} = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 36\,000\,\text{kg} = 360\,000\,\text{MJ}$, $E_\text{useful} = 0.35 \cdot 360\,000\,\text{MJ} = 126\,000\,\text{MJ}$ and $P = 126\,000\,\text{MJ} : 3600\,\text{s} = 35\,\text{MJ/s} = 35\,\text{MW}$

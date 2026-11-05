@@ -898,7 +898,7 @@
 ## Key idea
 
 ### Wavefront and ray
-A wave is easiest to describe from above. A **wavefront** is a line that joins the points of a wave that are in the same phase, for example one wave crest. The distance between two successive crests is the wavelength $\lambda$ (chapter *Mechanical wave motion*). A **ray** is an arrow that shows the direction of travel of the wave, and it is always perpendicular to the wavefront. A wave with straight fronts is a plane wave, and a point source, such as a stone dropped into water, sends out a circular wave whose rays point away from the source in every direction.
+A wave is easiest to describe from above. A **wavefront** is a line that joins the points of a wave that are in the same phase, for example one wave crest. The distance between two successive crests is the wavelength $\lambda$ (chapter *How waves form and travel*). A **ray** is an arrow that shows the direction of travel of the wave, and it is always perpendicular to the wavefront. A wave with straight fronts is a plane wave, and a point source, such as a stone dropped into water, sends out a circular wave whose rays point away from the source in every direction.
 
 <svg data-fig="rintamat" viewBox="0 0 600 340" role="img" aria-label="Diagram of two waves seen from above. On the left a plane wave: the wavefronts are parallel straight lines spaced by the wavelength lambda, and the rays are arrows perpendicular to them. On the right a circular wave from a point source: the wavefronts are concentric circles, and the rays leave the source in every direction, perpendicular to the fronts." style="max-width:100%;font-size:24px">
   <rect x="12" y="44" width="276" height="236" rx="8" fill="#eef5f9"/>

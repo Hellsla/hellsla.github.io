@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "contribution": "Varattu hiukkanen sähkö- ja magneettikentässä. Magneettinen voima $F = qvB$ kääntää liikkeen suuntaa, mutta ei muuta vauhtia. Rata on ympyrä, jonka säde on $r = mv : (qB)$. Nopeusvalitsin, massaspektrometri ja hiukkaskiihdytin käyttävät kahta asiaa yhdessä: sähkökenttä kiihdyttää hiukkasia ja magneettikenttä taivuttaa niiden rataa.",
+  "contribution": "Varattu hiukkanen sähkö- ja magneettikentässä. Magneettinen voima $F = |q|vB$ kääntää liikkeen suuntaa, mutta ei muuta vauhtia. Rata on ympyrä, jonka säde on $r = mv : (|q|B)$. Nopeusvalitsin, massaspektrometri ja hiukkaskiihdytin käyttävät kahta asiaa yhdessä: sähkökenttä kiihdyttää hiukkasia ja magneettikenttä taivuttaa niiden rataa.",
   "learn": [
     "selittämään, miksi magneettinen voima kääntää varatun hiukkasen rataa mutta ei muuta sen vauhtia.",
     "määrittämään magneettisen voiman suunnan sekä laskemaan sen suuruuden ja ympyräradan säteen.",
     "laskemaan hiukkasen vauhdin nopeusvalitsimessa ja massan massaspektrometrissä."
   ],
   "prior": [
-    "Sähkökentässä varattuun hiukkaseen vaikuttaa voima $F = qE$. Kun hiukkanen kulkee jännitteen $U$ yli, se saa energiaa $W = qU$ (luku *Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia*)",
+    "Sähkökentässä varattuun hiukkaseen vaikuttaa voima, jonka suuruus on $F = |q|E$ (luku *Homogeeninen sähkökenttä*). Kun hiukkanen kulkee kiihdyttävän jännitteen $U$ yli, se saa energiaa $W = |q|U$ (luku *Potentiaalienergia ja potentiaali sähkökentässä*)",
     "Magneettikentän voimakkuutta kuvaa magneettivuon tiheys $B$. Sen yksikkö on tesla (luku *Magneetit, magneettinen dipoli ja magneettikenttä*)",
-    "Tasaisessa ympyräliikkeessä kokonaisvoima osoittaa kohti radan keskipistettä. Sen suuruus on $\\tfrac{mv^2}{r}$ (luku *Tasainen ympyräliike ja normaalikiihtyvyys*)"
+    "Tasaisessa ympyräliikkeessä kokonaisvoima osoittaa kohti radan keskipistettä. Sen suuruus on $\\tfrac{mv^2}{r}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)"
   ],
   "activities": [
     {
@@ -30,7 +30,7 @@
         {
           "text": "$8{,}8 \\cdot 10^{5}\\,\\text{m/s}$, koska vauhti on verrannollinen jännitteen neliöjuureen.",
           "correct": true,
-          "feedback": "Oikein. Kenttä tekee protoniin työn $W = qU$. Työ muuttuu liike-energiaksi $\\tfrac{1}{2}mv^2$ (luku *Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia*). Nelinkertainen jännite antaa nelinkertaisen liike-energian. Se vastaa kaksinkertaista vauhtia, koska $v = \\sqrt{2qU : m}$."
+          "feedback": "Oikein. Kenttä tekee protoniin työn $W = qU$. Työ muuttuu liike-energiaksi $\\tfrac{1}{2}mv^2$ (luku *Potentiaalienergia ja potentiaali sähkökentässä*). Nelinkertainen jännite antaa nelinkertaisen liike-energian. Se vastaa kaksinkertaista vauhtia, koska $v = \\sqrt{2qU : m}$."
         },
         {
           "text": "$1{,}8 \\cdot 10^{6}\\,\\text{m/s}$, koska vauhti on suoraan verrannollinen jännitteeseen.",
@@ -138,7 +138,7 @@
       "text": "Valitse hiukkanen ja kentät ja paina *Laukaise*. Seuraa, miten rata kaartuu, mihin hiukkanen osuu ja mitä sen vauhdille tapahtuu.",
       "howto": "Hiukkanen tulee kammioon vasemman seinän raosta ja liikkuu aluksi oikealle. Valitse hiukkanen, sen vauhti $v$, magneettikentän $B$ suuruus ja suunta sekä levyjen välisen sähkökentän $E$ voimakkuus. Paina sitten *Laukaise*.\n\nSininen nuoli on nopeus. Punaiset nuolet ovat magneettinen voima $\\overline{F}_\\text{m}$ ja sähköinen voima $\\overline{F}_\\text{s}$. Pidempi voimanuoli on aina yhtä pitkä, ja lyhyempi on piirretty samassa suhteessa. Vasen seinä on ilmaisin. Lukema $d$ on osumakohdan etäisyys raosta. Jos hiukkanen tulee ulos oikeasta reunasta, lukemissa näkyy sen poikkeama $y$ raon korkeudesta. Ruudukon ruudun sivu on $5\\,\\text{cm}$. Kun muutat jotakin arvoa, hiukkanen palaa raolle. Kohta *Nopeus* muuttaa vain animaation tahtia.",
       "model": "Kammio on tyhjiö, ja kentät ovat homogeenisia koko kammiossa. Magneettikenttä on kohtisuorassa paperia vastaan. Sähkökenttä osoittaa alalevystä ($+$) ylälevyyn ($-$). Hiukkasten massat ja varaukset ovat todellisia: protoni $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$ ja $+e$, deuteroni $3{,}344 \\cdot 10^{-27}\\,\\text{kg}$ ja $+e$, alfahiukkanen $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$ ja $+2e$ sekä negatiivinen vetyioni $1{,}674 \\cdot 10^{-27}\\,\\text{kg}$ ja $-e$.\n\nPainovoima jätetään pois, koska se on noin $10^{12}$ kertaa pienempi kuin magneettinen voima. Vauhdit ovat alle $1\\,\\%$ valon nopeudesta, joten klassinen mekaniikka riittää. Liike näytetään hidastettuna. Normaalinopeudella yksi sekunti animaatiota vastaa aikaa $1{,}0 \\cdot 10^{-7}\\,\\text{s}$. Lukemat ovat mallin arvoja, eivät mittauksia.",
-      "calc": "Simulaatio laskee radan pienillä aika-askelilla Newtonin toisesta laista. Hiukkaseen vaikuttavat sähköinen voima $q\\overline{E}$ ja magneettinen voima. Magneettisen voiman suuruus on $qvB$, ja sen suunta on kohtisuorassa sekä nopeutta että kenttää vastaan. Positiivisen varauksen voiman suunta saadaan oikean käden säännöllä. Osumakohta $d$, poikkeama $y$ ja vauhti saadaan lasketusta radasta. Niissä ei käytetä säteen kaavaa. Lukemien voimat $F_\\text{m} = qvB$ ja $F_\\text{s} = qE$ on laskettu lähtövauhdilla."
+      "calc": "Simulaatio laskee radan pienillä aika-askelilla Newtonin toisesta laista. Hiukkaseen vaikuttavat sähköinen voima $q\\overline{E}$ ja magneettinen voima. Magneettisen voiman suuruus on $|q|vB$, ja sen suunta on kohtisuorassa sekä nopeutta että kenttää vastaan. Positiivisen varauksen voiman suunta saadaan oikean käden säännöllä. Osumakohta $d$, poikkeama $y$ ja vauhti saadaan lasketusta radasta. Niissä ei käytetä säteen kaavaa. Lukemien voimat $F_\\text{m} = |q|vB$ ja $F_\\text{s} = |q|E$ on laskettu lähtövauhdilla."
     },
     {
       "id": "koe-1",

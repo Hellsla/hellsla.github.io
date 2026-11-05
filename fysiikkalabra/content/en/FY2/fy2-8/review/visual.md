@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b8332c2cd5163b8e
+CONTENT-HASH: abcb7e503f0e1643
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fig.unit-photo.wide (NASA GISTEMP map, fy2-8-theory-1280-2, stage-selita-390-2) — the colour key inside the image (tick labels, "no data", credit) is unreadable at 390 px and small at 1280 px — the caption does explain red/blue and grey, but a reader cannot read the scale values — add a short sentence of the range (e.g. "the key runs from about −4 °C to +4 °C" as LaTeX) or crop the key larger.
-- [Minor] same map, alt text — it does not mention the grey "no data" patches or the 1951–1980 reference that the caption gives — add one clause so a non-seeing reader gets the same information.
-- [Minor] same map — the caption's "Photo:" credit line, though the caption says "not a photograph" — use "Visualisation:" / "Image:" for this one.
-- [Minor] fig-2 greenhouse (fy2-8-fig-2-390) — the labels are small (about 11 px) at 390 px — as other figures on the site, acceptable, but enlarge if the figure is next redrawn.
+- [Minor] whole page (pre-existing, outside this delta) — other inline formulas still break at 390 px, e.g. `10\,\text{g/kWh} \cdot 20\,\text{kWh} = 200\,\text{g}`; templates/lesson.html glues only pieces of at most 14 characters, so a longer formula can break (teacher's rule: never) — brace each as one group `${...}$`, as done in fy7-2 L1-02, or show it as a display row.
 
 ## Checked
-- Hash b8332c2cd5163b8e at start and end (unchanged); all captures current.
-- Opened: fig-1-390 (hero), fig-2-390 (greenhouse), fig-3-390 (emissions bars), top-390, sim-390, example-390-1, stage-selita-390-1 and -2 (map at 390 px: caption now full column width, wraps correctly, grey sentence reads clearly), theory-1280-1/2/3 (map and caption at 1280 px: caption in the 616 px column, not collapsed; second photo beside its text fine), lab-1280-1 (simulation and experiment), open-exercises-1280-1, open-tarkista-1280-1.
-- Not opened: the contact sheets and the remaining exercise, stage and exit captures; the lesson text of those parts was read from the packet only.
+- delta review of 2c31ff041: Ennusta feedback (correct option) and the self-assessment criterion with $-18\,{}^\circ\text{C}$ / $+15\,{}^\circ\text{C}$ / $33\,\text{K}$; diff read. `screenshot.py fy2-8 --lang en --if-stale` (fresh captures).
+- Own 390 px element captures of each changed block opened (scratchpad caps/en-fy2-8-*-390.png): text wraps cleanly, KaTeX renders, no clipping, no horizontal scroll. Measured every inline .katex (getClientRects().length) at 360, 390 and 1280 px, all boxes open and all feedback shown, after `build.py fy2-8`: no formula in a changed passage breaks onto two lines.
+- Earlier: batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish (English text) 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

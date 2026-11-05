@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f9577732fa867a8e
+CONTENT-HASH: bb595c37bb767855
 
 ## Blocking
-(none)
 
 ## Polish
-- none
 
 ## Checked
-- batch delta review, round 2 (diff cc7b2aeb..debc61a4): rajanopeus 'nopeus ei enää muutu', as in fy4-14; no other content changed.
+batch delta review: "Ensin voimakuvio, sitten työkalu" now limits the two tools to this chapter's tasks and names the module's third tool, impulse principle and conservation of momentum for collisions and short impacts, with the correct chapter title (*Liikemäärän säilyminen ja yksiulotteiset törmäykset*); the equation-of-motion / energy-principle criteria are unchanged and correct.

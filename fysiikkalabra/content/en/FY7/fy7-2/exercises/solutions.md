@@ -9,10 +9,10 @@
 **Reasonableness:** The force is very small, but the mass of a proton is only $1.7 \cdot 10^{-27}\,\text{kg}$, so the acceleration is about $10^{13}\,\text{m/s}^2$: the beam clearly curves within a few centimetres. With rounded numbers $1.6 \cdot 10^{-19}\,\text{C} \cdot 3 \cdot 10^{5}\,\text{m/s} \cdot 0.25\,\text{T} \approx 1.2 \cdot 10^{-14}\,\text{N}$, the same result.
 
 ## fy7-2-L1-02
-**Given:** electron, $m = 9.109 \cdot 10^{-31}\,\text{kg}$, $q = 1.602 \cdot 10^{-19}\,\text{C}$, $v = 2.0 \cdot 10^{6}\,\text{m/s}$ perpendicular to the field, $B = 1.5\,\text{mT}$
+**Given:** electron, $m = 9.109 \cdot 10^{-31}\,\text{kg}$, magnitude of the charge ${|q| = e = 1.602 \cdot 10^{-19}\,\text{C}}$, $v = 2.0 \cdot 10^{6}\,\text{m/s}$ perpendicular to the field, $B = 1.5\,\text{mT}$
 **Find:** the radius $r$ of the circular path in millimetres
 **Principle:** The magnetic force is perpendicular to the velocity and of constant magnitude, so the electron is in uniform circular motion and the magnetic force is its centripetal force.
-**Formula:** $qvB = \dfrac{mv^2}{r}$, so $r = \dfrac{mv}{qB}$
+**Formula:** $|q|vB = \dfrac{mv^2}{r}$, so $r = \dfrac{mv}{|q|B}$
 **Conversions:** $B = 1.5\,\text{mT} = 1.5 \cdot 0.001\,\text{T} = 1.5 \cdot 10^{-3}\,\text{T}$; finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** $r = \dfrac{9.109 \cdot 10^{-31}\,\text{kg} \cdot 2.0 \cdot 10^{6}\,\text{m/s}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.5 \cdot 10^{-3}\,\text{T}} = 7.581 \cdot 10^{-3}\,\text{m} = 7.581\,\text{mm}$
 **Answer:** $7.6\,\text{mm}$, two significant figures like the speed and the field.
@@ -97,7 +97,7 @@ $$\begin{aligned} r &= \dfrac{1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-
 ## fy7-2-L2-03
 **Given:** distance between the plates $d = 2.0\,\text{cm}$, voltage between the plates $U = 600\,\text{V}$, magnetic flux density $B = 0.15\,\text{T}$ perpendicular to the electric field
 **Find:** the speed $v$ at which ions pass straight through, in kilometres per second
-**Principle:** The field between the plates is uniform, so its strength is the voltage divided by the distance between the plates (chapter *Uniform electric field, potential and potential energy*). On an ion passing straight through, the electric and magnetic forces are equal and opposite.
+**Principle:** The field between the plates is uniform, so its strength is the voltage divided by the distance between the plates (chapter *Uniform electric field*). On an ion passing straight through, the electric and magnetic forces are equal and opposite.
 **Formula:** $E = \dfrac{U}{d}$ and $qE = qvB$, so $v = \dfrac{E}{B} = \dfrac{U}{dB}$
 **Conversions:** $d = 2.0\,\text{cm} = 2.0 \cdot 0.01\,\text{m} = 0.020\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Substitution:** $E = \dfrac{600\,\text{V}}{0.020\,\text{m}} = 3.0 \cdot 10^{4}\,\text{V/m}$ and $v = \dfrac{3.0 \cdot 10^{4}\,\text{V/m}}{0.15\,\text{T}} = 2.0 \cdot 10^{5}\,\text{m/s} = 200\,\text{km/s}$
@@ -154,7 +154,7 @@ $$\begin{aligned} r &= \dfrac{1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-
 ## fy7-2-L3-02
 **Given:** proton, $m = 1.673 \cdot 10^{-27}\,\text{kg}$, $q = 1.602 \cdot 10^{-19}\,\text{C}$, $B = 1.50\,\text{T}$
 **Find:** a justification that the period of revolution does not depend on the speed, and the frequency of revolution $f$ in megahertz
-**Principle:** The proton goes round a circle because the magnetic force $qvB$ is the centripetal force. In uniform circular motion the period is the length of the path divided by the speed (chapter *Uniform circular motion and normal acceleration*), and the frequency is the reciprocal of the period.
+**Principle:** The proton goes round a circle because the magnetic force $qvB$ is the centripetal force. In uniform circular motion the period is the length of the path divided by the speed (chapter *Moving in a circle: period and speed*), and the frequency is the reciprocal of the period.
 **Formula:** $qvB = \dfrac{mv^2}{r}$ gives $r = \dfrac{mv}{qB}$, and $T = \dfrac{2\pi r}{v} = \dfrac{2\pi m}{qB}$, from which the speed has cancelled; so $f = \dfrac{1}{T} = \dfrac{qB}{2\pi m}$
 **Conversions:** Not needed: the quantities are in SI units, and $\tfrac{\text{C} \cdot \text{T}}{\text{kg}} = \tfrac{1}{\text{s}}$. Finally $1\,\text{MHz} = 10^{6}\,\text{Hz}$.
 **Substitution:** $f = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.50\,\text{T}}{2\pi \cdot 1.673 \cdot 10^{-27}\,\text{kg}} = 2.286 \cdot 10^{7}\,\text{Hz} = 22.86\,\text{MHz}$

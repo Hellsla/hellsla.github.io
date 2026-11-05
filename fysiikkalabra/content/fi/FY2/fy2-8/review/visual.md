@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5ad2972f057fc72e
+CONTENT-HASH: 4b1233005b94d34d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fig GISTEMP map (lesson.md, Ydinajatus; theory-1280-2, stage-selita-390-2) — the colour-bar tick numbers and the "Change in Global Temperature / GISS Surface Temperature Analysis" texts inside the NASA image are English and tiny (unreadable at 390 px, barely at 1280 px); this is the source image's own text, not our label — the caption already names the colours and "no data", so nothing essential is lost; optionally add the scale range (about −4 … +4 °C) as inline maths to the caption.
-- [Minor] fig GISTEMP map alt text — says "tummin punainen on pohjoisilla alueilla" but does not mention the grey "no data" patches or the Antarctic gaps that the caption explains; one clause would give a non-seeing reader the same information.
-- [Minor] sim canvas (sim-390) — the "Aurinko" label sits over the sun's glow and "ilmakehä" over the sky gradient; legible, only slightly cramped at 390 px.
+- [Minor] whole page (pre-existing, outside this delta) — other inline formulas still break at 390 px, e.g. `\text{C} + \text{O}_2 \rightarrow \text{CO}_2`; templates/lesson.html glues only pieces of at most 14 characters, so a longer formula can break (teacher's rule: never) — brace each as one group `${...}$`, as done in fy7-2 L1-02, or show it as a display row.
 
 ## Checked
-- Changed element: figure.unit-photo.wide map at 1280 px (theory-1280-1/-2) and 390 px (stage-selita-390-2): caption now spans the full image width (about 608 px at 1280, full column at 390), no collapsed narrow column; the four caption sentences incl. the reworded "Harmaa väri (selitteessä ”no data”) tarkoittaa, että alueelta ei ole mittauksia" read correctly, followed by the credit line. The map has the same width as the greenhouse figure; no overflow.
-- Figures fig-1, fig-2, fig-3 at 390 px (hero, greenhouse, emissions bar chart): labels LaTeX, legible, nothing clipped; bars to common scale, axis with unit, fossil/other legend.
-- top-390, intro-1280, theory-1280-1..3, stage-selita-390-1/-2, example-390-1/-2, sim-390, lab-1280-1 (sim 1280), open-ennusta-1280-1, open-tarkista-1280-1, open-exercises-1280-1.
-- Not opened individually: remaining exercise level 2/3 captures, stage-tutki/sovella 390 parts (layout checks clean, same templates).
+- delta review of 2c31ff041: Ennusta feedback (correct option) and the self-assessment criterion with $-18\,{}^\circ\text{C}$ / $+15\,{}^\circ\text{C}$ / $33\,\text{K}$; diff read. `screenshot.py fy2-8 --if-stale` (fresh captures).
+- Own 390 px element captures of each changed block opened (scratchpad caps/fi-fy2-8-*-390.png): text wraps cleanly, KaTeX renders, no clipping, no horizontal scroll. Measured every inline .katex (getClientRects().length) at 360, 390 and 1280 px, all boxes open and all feedback shown, after `build.py fy2-8`: no formula in a changed passage breaks onto two lines.
+- Earlier: batch delta review: greenhouse-effect paragraph, misconception box and summary bullet with $-18\,{}^\circ\text{C}$ (radiation-balance wording); built page and scripts/screenshot.py fy2-8 (captures current), changed passages opened at 390 px (e-390-0, e-390-1): clean wrapping, KaTeX renders, no inline formula wraps, no clipping, no horizontal scroll. Diff read; the rest of the lesson unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b8d6bdb7c47a6094
+CONTENT-HASH: bfa242d0bb3d6d72
 Mode: full
 Round: 1
 
@@ -18,3 +18,9 @@ Round: 1
 - Decimal point in en JSON and LaTeX; decimal comma in fi-easy as in fi. No Finnish left in en.
 - Terms natural English: climate vs weather, emission factor, sinks, percentage points.
 - check_i18n.py en: 0 errors for fy2-8 (errors listed are other chapters, fy2-5/fy2-6, being edited by other agents).
+
+## Follow-up (2026-11-04, teacher's edit of L1-06: exercises.json:69, solutions.md:125)
+- exercises.json:69 and solutions.md:125 (L1-06): mean surface temperature about +15 °C; a simple radiative balance model gives an effective radiating temperature of about −18 °C; the difference illustrates why the effect matters. Matches the lesson's Key idea and the fi source; no claim that −18 °C is the surface temperature without greenhouse gases.
+- Recomputed: $+15-(-18)=33$, and a temperature difference is the same in °C and K, so $33\,\text{K}$ is right; −18 °C ≈ 255 K is the textbook effective radiating temperature (σT⁴ = S(1−α)/4 with α ≈ 0,3), +15 °C ≈ 288 K the mean surface temperature.
+- Correct option, distractors and their feedback unchanged; exactly one correct option.
+- Scope: only these two sentences; the rest of this report stands from the earlier round.

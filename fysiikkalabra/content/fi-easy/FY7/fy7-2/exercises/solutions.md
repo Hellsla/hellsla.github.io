@@ -9,10 +9,10 @@
 **Järkevyys:** Voima on hyvin pieni. Protonin massa on kuitenkin vain $1{,}7 \cdot 10^{-27}\,\text{kg}$, joten kiihtyvyys on noin $10^{13}\,\text{m/s}^2$. Suihku kaartuu siis selvästi jo muutaman senttimetrin matkalla. Pyöristetyillä luvuilla $1{,}6 \cdot 10^{-19}\,\text{C} \cdot 3 \cdot 10^{5}\,\text{m/s} \cdot 0{,}25\,\text{T} \approx 1{,}2 \cdot 10^{-14}\,\text{N}$, sama tulos.
 
 ## fy7-2-L1-02
-**Annettu:** elektroni, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $q = 1{,}602 \cdot 10^{-19}\,\text{C}$, $v = 2{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuorassa kenttää vastaan, $B = 1{,}5\,\text{mT}$
+**Annettu:** elektroni, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, varauksen suuruus ${|q| = e = 1{,}602 \cdot 10^{-19}\,\text{C}}$, $v = 2{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuorassa kenttää vastaan, $B = 1{,}5\,\text{mT}$
 **Kysytty:** ympyräradan säde $r$ millimetreinä
 **Periaate:** Magneettinen voima on kohtisuorassa nopeutta vastaan ja koko ajan yhtä suuri. Siksi elektroni on tasaisessa ympyräliikkeessä, ja magneettinen voima on sen keskeisvoima.
-**Kaava:** $qvB = \dfrac{mv^2}{r}$, josta $r = \dfrac{mv}{qB}$
+**Kaava:** $|q|vB = \dfrac{mv^2}{r}$, josta $r = \dfrac{mv}{|q|B}$
 **Muunnokset:** $B = 1{,}5\,\text{mT} = 1{,}5 \cdot 0{,}001\,\text{T} = 1{,}5 \cdot 10^{-3}\,\text{T}$; lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 **Sijoitus:** $r = \dfrac{9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 2{,}0 \cdot 10^{6}\,\text{m/s}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}5 \cdot 10^{-3}\,\text{T}} = 7{,}581 \cdot 10^{-3}\,\text{m} = 7{,}581\,\text{mm}$
 **Vastaus:** $7{,}6\,\text{mm}$, kaksi merkitsevää numeroa kuten vauhdissa ja kentässä.
@@ -97,7 +97,7 @@ $$\begin{aligned} r &= \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 1
 ## fy7-2-L2-03
 **Annettu:** levyjen etäisyys $d = 2{,}0\,\text{cm}$, levyjen välinen jännite $U = 600\,\text{V}$, magneettivuon tiheys $B = 0{,}15\,\text{T}$ kohtisuorassa sähkökenttää vastaan
 **Kysytty:** vauhti $v$, jolla ionit kulkevat suoraan, kilometreinä sekunnissa
-**Periaate:** Levyjen välinen kenttä on homogeeninen. Sen voimakkuus on jännite jaettuna levyjen etäisyydellä (luku *Homogeeninen sähkökenttä, potentiaali ja potentiaalienergia*). Suoraan kulkevaan ioniin sähköinen ja magneettinen voima vaikuttavat yhtä suurina ja vastakkaisina.
+**Periaate:** Levyjen välinen kenttä on homogeeninen. Sen voimakkuus on jännite jaettuna levyjen etäisyydellä (luku *Homogeeninen sähkökenttä*). Suoraan kulkevaan ioniin sähköinen ja magneettinen voima vaikuttavat yhtä suurina ja vastakkaisina.
 **Kaava:** $E = \dfrac{U}{d}$ ja $qE = qvB$, josta $v = \dfrac{E}{B} = \dfrac{U}{dB}$
 **Muunnokset:** $d = 2{,}0\,\text{cm} = 2{,}0 \cdot 0{,}01\,\text{m} = 0{,}020\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $E = \dfrac{600\,\text{V}}{0{,}020\,\text{m}} = 3{,}0 \cdot 10^{4}\,\text{V/m}$ ja $v = \dfrac{3{,}0 \cdot 10^{4}\,\text{V/m}}{0{,}15\,\text{T}} = 2{,}0 \cdot 10^{5}\,\text{m/s} = 200\,\text{km/s}$
@@ -154,7 +154,7 @@ $$\begin{aligned} r &= \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 1
 ## fy7-2-L3-02
 **Annettu:** protoni, $m = 1{,}673 \cdot 10^{-27}\,\text{kg}$, $q = 1{,}602 \cdot 10^{-19}\,\text{C}$, $B = 1{,}50\,\text{T}$
 **Kysytty:** perustelu sille, ettei kierrosaika riipu vauhdista, ja kiertotaajuus $f$ megahertseinä
-**Periaate:** Protoni kiertää ympyrää, koska magneettinen voima $qvB$ on keskeisvoima. Tasaisessa ympyräliikkeessä kierrosaika on radan pituus jaettuna vauhdilla (luku *Tasainen ympyräliike ja normaalikiihtyvyys*). Taajuus on kierrosajan käänteisluku.
+**Periaate:** Protoni kiertää ympyrää, koska magneettinen voima $qvB$ on keskeisvoima. Tasaisessa ympyräliikkeessä kierrosaika on radan pituus jaettuna vauhdilla (luku *Ympyrärata: jaksonaika ja ratanopeus*). Taajuus on kierrosajan käänteisluku.
 **Kaava:** $qvB = \dfrac{mv^2}{r}$ antaa $r = \dfrac{mv}{qB}$, ja $T = \dfrac{2\pi r}{v} = \dfrac{2\pi m}{qB}$, josta vauhti on supistunut pois; siis $f = \dfrac{1}{T} = \dfrac{qB}{2\pi m}$
 **Muunnokset:** Ei tarvita, koska suureet ovat SI-yksiköissä. Lisäksi $\tfrac{\text{C} \cdot \text{T}}{\text{kg}} = \tfrac{1}{\text{s}}$. Lopuksi $1\,\text{MHz} = 10^{6}\,\text{Hz}$.
 **Sijoitus:** $f = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}50\,\text{T}}{2\pi \cdot 1{,}673 \cdot 10^{-27}\,\text{kg}} = 2{,}286 \cdot 10^{7}\,\text{Hz} = 22{,}86\,\text{MHz}$
