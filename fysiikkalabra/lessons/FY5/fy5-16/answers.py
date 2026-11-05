@@ -29,7 +29,7 @@ dT1 = 90.3 - 74.4                                           # level drop before 
 dT2 = 90.2 - 50.1                                           # level drop after the panels in 0,40 s: 40,1 dB
 a["fy5-16-L2-05"] = (1 - dT1 / dT2) * 100                   # T = 60/dL * 0,40 s: 1,51 s and 0,599 s; shortened by 60,3 %
 a["fy5-16-L2-06"] = (60.3 - 35.1) - (68.4 - 55.0)   # attenuation 25,2 dB at 4000 Hz minus 13,4 dB at 500 Hz = 11,8 dB
-a["fy5-16-L2-07"] = t_allowed(100) * 60                 # 100 dB: n = 15 dB / 3 dB = 5, t = 8 h / 2^5 = 0,25 h = 15 min (student: 8 h / 5 = 1,6 h)
+a["fy5-16-L2-07"] = t_allowed(103) * 60                 # 103 dB: n = 18 dB / 3 dB = 6, t = 8 h / 2^6 = 0,125 h = 7,5 min (student: 8 h / 6 = 1,3 h)
 # Level 3: reasoning or an unfamiliar context
 a["fy5-16-L3-01"] = (4.0 / t_allowed(88) + 4.0 / t_allowed(82)) * 100   # 4 h at 88 dB (1/1 of 4 h) + 4 h at 82 dB (allowed 16 h): 100 % + 25 % = 125 %
 L_one = 55 - 6 * math.log2(12 / 3.0)                      # one heat pump 55 dB at 3,0 m, window at 12 m: two doublings, -12 dB -> 43 dB
