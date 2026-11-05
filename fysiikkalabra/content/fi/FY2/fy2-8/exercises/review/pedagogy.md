@@ -1,19 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 6f2205f3d7a0348d
-Round: 1
+VERDICT: PASS
+CONTENT-HASH: 0d804621ffb859e2
+Round: 2
+Mode: full packet, judged on L2-08
 
 ## Blocking
-- exercises.json fy2-8-L2-08 `choices` — the correct option is the longest (134 characters against 112/86/114/96) and the only one that states a number comparison with the uncertainty, so it can be picked by form (length cue was Blocking in fy2-7-L2-07). Fix: shorten it to about 105 characters ("Päästö oli vuonna $2024$ pienempi kuin $2020$, koska ero $100\,\text{kt}$ on paljon suurempi kuin $10\,\text{kt}$.") and give the 86-character option one more clause.
+- none
 
 ## Polish
-- fy2-8-L2-08 text — two questions in one sentence block; end with "Minkä seuraavista päätelmistä aineisto tukee?" as now but move "(esimerkkiaineisto, ei tilasto)" to the table caption only, since it is already there.
-- fy2-8-L2-08 — the stated uncertainty is per year, so the uncertainty of a difference is larger; the 100 kt case is safe, but the solution could say "ero on moninkertainen epävarmuuteen nähden" without exact factor 10.
-- Option 1 feedback: "Tästä parista pienenemistä ei voi osoittaa." is good; keep.
-- Carried over: L1-06 correct option 3 characters longest; L3-05 c) repeats b).
+- fy2-8-L2-08 — option lengths are now 119/116/125/114/122; the correct one (C) is still longest by 3 characters, acceptable. Shorten by one clause if edited again.
+- fy2-8-L2-08 option B ends "ero on epävarmuutta suurempi" and A says "5 kt suurempi kuin 10 kt": both add a false number claim, which is good (they can be refuted from the table), but A's wording "ero 5 kt on suurempi kuin epävarmuus 10 kt" is so plainly false that it may read as a typo; consider "ero on vähintään epävarmuuden suuruinen".
+- Carried over: L1-06 correct option longest by 3; L3-05 c) repeats b).
 
 ## Checked
-- New L2-08 (Mauna Loa-free, emission data with Delta m): 520 - 420 = 100 kt, 520 - 515 = 5 kt, extrapolation to 2034 gives 170 kt; every distractor is a distinct error (ignoring uncertainty, cause overreach, extrapolation, wrong column), each with its own repairing feedback.
-- Delta m builds on FY1 measurement uncertainty (prerequisite); fits level 2 data interpretation.
-- Correct is third; numbers are example data, labelled "esimerkkiaineisto, ei tilasto".
-- Solution has principle, reading the right column, and why each other claim fails.
-- Rest of the set unchanged since the PASS.
+- Round 1 Blocking closed: all five options are written in the same pattern (claim, koska, reason) and sit at 114-125 characters; no option is the only one with numbers.
+- Solution and feedback add the uncertainty intervals 510-530 and 410-430 kt that do not overlap: true, and a clear way to see why 100 kt counts.
+- Distractors still differ in type: ignoring uncertainty, cause overreach, extrapolation (170 kt in 2034 checks: 420 - 10*25), wrong column.
+- The "5 kt" option is checkable by the student from the table (520 - 515).
+- Delta m rests on FY1 measurement uncertainty; level 2 data interpretation fits.
+- Phone captures not opened; rest of the set unchanged.

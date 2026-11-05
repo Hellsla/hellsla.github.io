@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 9bb9fde6012ead07
-Round: 1
+CONTENT-HASH: 410641b2006a3acc
+Round: 2
+Mode: delta
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy2-6-L1-09 level — it needs four steps (osuus x nimellisteho, E = Pt with 8760 h, kW/MW units, division by house use). That is level 2 demand in a level 1 slot. Fix: move it to level 2 (L2 would be 8, L1 8; counts stay above the minimum) or give the keskiteho ready.
-- fy2-6-L1-09 text — "Esimerkkinä olevan tuulivoimalan" is clumsy. Fix: "Esimerkkitilanteessa tuulivoimalan nimellisteho on $3{,}0\,\text{MW}$ ja keskiteho vuoden aikana $33\,\%$ nimellistehosta. Omakotitalon sähkönkulutus on $5000\,\text{kWh}$ vuodessa."
-- fy2-6-L1-09 solution — the last sentence (nimellisteho gives 5000) is a good check; keep. Option feedbacks name the real slips (unit, 3,3 %, month), good.
-- Carried over: L1-06 odd-one-out cue ("Tuuli"); L1-08 vs L2-02 near duplicate; L2-05/L3-05 keep "esimerkkiaineisto".
+- exercises.json fy2-6-L1-09 (carried over) — still four steps (osuus x nimellisteho, E = Pt, kW/MW, division), level 2 demand in a level 1 slot. Fix if edited again: move to level 2 (L1 8, L2 8, counts stay above the minimum).
+- fy2-6-L1-09 options — 2000 and 5000 are only a factor 2,6 apart, so the options are no longer all 10-100 apart; fine because the stem now says "Valitse lähin arvo" and the correct 1750 is clearly nearest 2000.
+- Carried over: L1-06 odd-one-out cue; L1-08 vs L2-02 near duplicate; L2-05/L3-05 keep "esimerkkiaineisto".
 
 ## Checked
-- New L1-09 numbers: 0,33 * 3,0 MW = 0,99 MW, 8,67 GWh, about 1700 houses, magnitude 2000; distractors 2, 200, 20 000 follow from one stated slip each.
-- Magnitude options are a factor 10-100 apart, equal in length (14-20), correct is third; no cue.
-- Keskiteho and nimellisteho are taught in the lesson; question is a separate last sentence.
-- Solution has principle, calculation, rounded estimate, why the other options arise.
-- Rest of the set unchanged since the PASS.
+- Round 1 polish done: "Esimerkkinä olevan" removed, text is now "Tuulivoimalan ... Omakotitalon ..."; question stays a separate last sentence.
+- New distractor 5000: 3,0 MW * 8760 h = 2,63e7 kWh, : 5000 = 5256, about 5300; it is the real nimellisteho-for-keskiteho slip taught in the lesson. Replaces the weaker "20 000, month" distractor.
+- Distractor feedback names the slip and repairs it; solution lists 2, 200 and 5000 with their origins and the 5300 figure.
+- Solution reformatted into short lines, "eli ..." steps, rounded estimate kept; followable and readable on a phone.
+- Checked from the delta and packet text only; phone captures not opened.

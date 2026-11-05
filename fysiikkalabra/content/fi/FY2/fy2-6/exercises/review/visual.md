@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9bb9fde6012ead07
-Round: 1
+CONTENT-HASH: 410641b2006a3acc
+Round: 2
 
 ## Blocking
 
 ## Polish
-- [Minor] fy2-6-L1-09 (6-9) Mallivastaus at 390 px — the calculation lines "$P_\text{ka} = 0{,}33 \cdot 3{,}0\,\text{MW} = 0{,}99\,\text{MW} = 990\,\text{kW}$" and "$E = 990\,\text{kW} \cdot 8760\,\text{h} = 8{,}67 \cdot 10^{6}\,\text{kWh}$" are wider than the column (383 and 340 px against 304) and become their own sideways-scrolling lines (kx-wide), so the end of the chain (990 kW, kWh) is cut off with no cue — write each chain on a "**Sijoitus:**" line so the build sets it as rows, or split it at the second "=".
+- [Minor] fy2-6-L1-09 (6-9) Mallivastaus, "Muut vaihtoehdot" at 390 px — the new chain "$3{,}0\,\text{MW} \cdot 8760\,\text{h} : 5000\,\text{kWh} \approx 5300$" is 319 px in a 304 px column, so it scrolls sideways and the result shows as "≈ 530" (last digit cut, no cue) — put it on its own line after "nimellistehoa:" with the result after "eli", or write "noin $5300$" in the sentence.
 
 ## Checked
-- Rendered live (Playwright, preview/fy2-6.html; no review/shots for this hash): L1-09 at 390 and 1280 px, with a wrong choice committed (feedback box) and Mallivastaus open; the stem reads as three short paragraphs and the question, options are whole rows, the feedback opens inside the card. At 1280 px every chain fits.
-- Rendered L3-03 (6-19) at 390 px closed: the new paragraph break is good.
-- Overflow measurement at 360 and 390 px: no page-level horizontal overflow; only the kx-wide lines above scroll.
-- From the diff only: the Finnish of the four distractor feedbacks (clear, one idea each) and solutions.md wording.
+- Round 2. The round-1 clipping is fixed: the model-answer chains are now split ("$P_\text{ka} = 0{,}33 \cdot 3{,}0\,\text{MW}$, eli ..."), and all three fit the column at 390 px (rendered, measured).
+- Rendered live (Playwright, rebuilt preview/fy2-6.html; no review/shots directory exists for this hash) at 390 and 1280 px, closed and with a wrong choice committed (new "noin 5000 taloa" feedback) and Mallivastaus open. No page overflow at either width; at 1280 px nothing scrolls.
+- The new stem ("Valitse lähin arvo.") and the 5000-taloa feedback read fluently and fit the card.
+- From the diff only: the Finnish of solutions.md wording not visible in the captures.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 5 · accessibility 4
