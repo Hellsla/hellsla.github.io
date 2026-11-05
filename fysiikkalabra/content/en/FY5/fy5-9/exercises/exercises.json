@@ -39,6 +39,96 @@
       "answer": 0.12,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L1-06",
+      "level": 1,
+      "text": "The length and the small swings of a simple pendulum are kept the same, but the bob of the pendulum is replaced with a bob of the same size that is twice as heavy. Air resistance is neglected. What happens to the period of the pendulum?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The period stays the same, because the weight and the inertia increase by the same factor.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The period gets shorter, because the greater weight accelerates the heavier bob faster.",
+          "feedback": "A greater weight does act on the heavier bob, but the mass of the bob is also greater. The ratio of force to mass, the acceleration, stays the same, so the period does not get shorter."
+        },
+        {
+          "text": "The period stays the same, because the weight and the inertia increase by the same factor.",
+          "feedback": "Correct: a restoring force twice as great acts on a bob twice as heavy, but the bob is also twice as hard to accelerate. The acceleration and the period $T = 2\\pi\\sqrt{l/g}$ do not depend on the mass.",
+          "correct": true
+        },
+        {
+          "text": "The period gets longer, because a heavier bob is harder to set in motion.",
+          "feedback": "A heavier bob is harder to accelerate, but a greater weight also acts on it. These cancel each other, so the period does not get longer."
+        },
+        {
+          "text": "The period gets shorter, because the heavy bob passes the equilibrium position at a greater speed.",
+          "feedback": "The greatest speed depends only on the starting height, not on the mass. The heavy bob therefore does not move faster, and its period does not change."
+        }
+      ]
+    },
+    {
+      "id": "fy5-9-L1-07",
+      "level": 1,
+      "text": "The mass of a body oscillating on a spring is kept the same, but the spring is replaced with another one whose spring constant is twice as great. What happens to the period?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The period gets shorter, because a stiffer spring accelerates the body more.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The period halves, because it is inversely proportional to the spring constant.",
+          "feedback": "The period is not inversely proportional to the spring constant but to its square root: $T = 2\\pi\\sqrt{m/k}$. A doubled spring constant therefore does not halve the period."
+        },
+        {
+          "text": "The period stays the same, because the mass of the body does not change.",
+          "feedback": "The period depends on both the mass and the spring constant. A stiffer spring pulls the same body with a greater force, so the period changes even though the mass stays the same."
+        },
+        {
+          "text": "The period gets longer, because a stiffer spring resists the motion more.",
+          "feedback": "A stiffer spring does not slow the motion down but accelerates the body with a greater force at the same displacement. The oscillation is then faster and the period shorter."
+        },
+        {
+          "text": "The period gets shorter, because a stiffer spring accelerates the body more.",
+          "feedback": "Correct: $T = 2\\pi\\sqrt{m/k}$, so when $k$ doubles, the period decreases by the factor $\\sqrt{2}$, that is, it gets shorter but does not halve.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "fy5-9-L1-08",
+      "level": 1,
+      "text": "A body oscillating on a spring without friction is released first $2.0\\,\\text{cm}$ and then $4.0\\,\\text{cm}$ from the equilibrium position. How does the period change when the amplitude doubles?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "The period stays the same, because a greater speed compensates for the longer distance.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The period doubles, because the body travels a distance twice as long.",
+          "feedback": "The longer distance is also travelled at a greater speed, because the force of the spring is greater. These cancel each other, so the period does not double."
+        },
+        {
+          "text": "The period becomes four times as long, because the energy of the oscillation becomes four times as great.",
+          "feedback": "The energy $E = \\tfrac{1}{2}kA^2$ does become four times as great, but it does not change the period: the formula $T = 2\\pi\\sqrt{m/k}$ does not contain the amplitude."
+        },
+        {
+          "text": "The period stays the same, because a greater speed compensates for the longer distance.",
+          "feedback": "Correct: with a greater amplitude the force of the spring is greater, so the body accelerates more and travels a longer distance in the same time. The period does not depend on the amplitude.",
+          "correct": true
+        },
+        {
+          "text": "The period gets longer, because the body has time to travel a longer distance more slowly.",
+          "feedback": "A longer distance does not take more time, because the force of the spring is greater farther from the equilibrium position and the body moves faster. The period does not get longer but stays the same."
+        }
+      ]
     }
   ],
   "level2": [
@@ -73,6 +163,127 @@
       "answer": 3.252202,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-9-L2-05",
+      "level": 2,
+      "text": "A student measured the period $T$ of a simple pendulum at different lengths $l$ with small swings (sample data). Air resistance is neglected.\n\nCalculate the squares of the periods $T^2$ and draw the graph $(l, T^2)$. Fit a line through the origin to the points, because the period of a pendulum of zero length is zero. From the slope of the line determine the acceleration of free fall $g$.\n\nWrite the acceleration of free fall in the box.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment"
+      ],
+      "answer": 9.771886,
+      "unit": "m/s²",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Period of a pendulum as a function of length",
+        "columns": [
+          "$l\\,(\\text{m})$",
+          "$T\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "0.20",
+            "0.90"
+          ],
+          [
+            "0.40",
+            "1.27"
+          ],
+          [
+            "0.60",
+            "1.55"
+          ],
+          [
+            "0.80",
+            "1.80"
+          ],
+          [
+            "1.00",
+            "2.01"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-9-L2-06",
+      "level": 2,
+      "text": "A student hangs weights of different masses from a spring and measures the time of ten cycles $t_{10}$ of each oscillation (sample data). The mass of the spring is small compared with the weights and is neglected, and nothing damps the oscillation.\n\nCalculate the period $T$ and its square $T^2$ for each mass and draw the graph $(m, T^2)$. Fit a line through the origin to the points and determine the spring constant $k$ of the spring from the slope of the line.\n\nWrite the spring constant in the box.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 20.14205,
+      "unit": "N/m",
+      "tolerance": 0.04,
+      "data": {
+        "caption": "Time of ten cycles as a function of the mass of the weight",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$t_{10}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "0.100",
+            "4.5"
+          ],
+          [
+            "0.200",
+            "6.2"
+          ],
+          [
+            "0.300",
+            "7.7"
+          ],
+          [
+            "0.400",
+            "8.9"
+          ],
+          [
+            "0.500",
+            "9.9"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-9-L2-07",
+      "level": 2,
+      "text": "A student measures the period of a pendulum $1.000\\,\\text{m}$ long from different starting angles $\\alpha_0$ (sample data). He times ten cycles by hand, $t_{10}$, and the uncertainty of the timing is about $0.2\\,\\text{s}$. Air resistance is neglected.\n\nThe formula $T = 2\\pi\\sqrt{l/g}$ holds for small swings.\n\na) By how many percent is the measured period greater than the period given by the formula when the starting angle is $60\\,{}^\\circ$?\n\nb) At which starting angles is the difference from the formula clearly greater than the uncertainty of the timing? Justify using the times of ten cycles.\n\nWrite the result of part a) in percent in the box.",
+      "kind": [
+        "data",
+        "experiment",
+        "error"
+      ],
+      "answer": 7.174902,
+      "unit": "%",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Time of ten cycles at different starting angles",
+        "columns": [
+          "$\\alpha_0\\,({}^\\circ)$",
+          "$t_{10}\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "20.1"
+          ],
+          [
+            "20.0",
+            "20.2"
+          ],
+          [
+            "40.0",
+            "20.7"
+          ],
+          [
+            "60.0",
+            "21.5"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -99,6 +310,64 @@
       "answer": 21.722188,
       "unit": "s",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy5-9-L3-04",
+      "level": 3,
+      "text": "A student studies a weight oscillating on a vertical spring with different masses (sample data). The table shows the mass of the weight $m$ and the period $T$. The oscillation is small and undamped.\n\nThe mass of the spring itself oscillates along with the weight, so according to the measurements $T^2 = \\dfrac{4\\pi^2}{k}(m + m_0)$, where $m_0$ is an additional mass describing the effect of the spring.\n\na) Calculate $T^2$, draw the graph $(m, T^2)$ and fit a line to the points. From the slope of the line determine the spring constant $k$.\n\nb) Determine the additional mass $m_0$ from the intersection of the line with the $T^2$ axis. By how many percent too small would the spring constant be if it were calculated from the measurement of the lightest weight alone with the formula $T = 2\\pi\\sqrt{m/k}$?\n\nWrite the spring constant of part a) in the box.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 25.145489,
+      "unit": "N/m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Period as a function of the mass of the weight",
+        "columns": [
+          "$m\\,(\\text{kg})$",
+          "$T\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "0.050",
+            "0.334"
+          ],
+          [
+            "0.100",
+            "0.433"
+          ],
+          [
+            "0.150",
+            "0.521"
+          ],
+          [
+            "0.200",
+            "0.587"
+          ],
+          [
+            "0.250",
+            "0.656"
+          ],
+          [
+            "0.300",
+            "0.708"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-9-L3-05",
+      "level": 3,
+      "text": "The length of a simple pendulum is $1.20\\,\\text{m}$. The bob is raised so that the string makes an angle of $10.0\\,{}^\\circ$ with the vertical, and it is released from rest. The bob is treated as a point, and the mass of the string and air resistance are neglected.\n\na) How long does it take the bob to travel from the extreme position to the lowest point?\n\nb) Calculate the greatest speed of the bob using conservation of energy. How high above the lowest point is the bob at the extreme position?\n\nc) Calculate the same speed with a model in which the pendulum is a harmonic oscillator whose amplitude is the arc length $A = l\\alpha_0$ and whose spring constant corresponds to $\\tfrac{mg}{l}$. By how many percent do the results differ, and why?\n\nWrite the greatest speed of part b) in the box.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 0.598069,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ]
 }

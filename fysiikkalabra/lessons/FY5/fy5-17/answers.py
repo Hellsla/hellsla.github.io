@@ -26,4 +26,18 @@ t_fat = 2 * 0.040 / 1450                              # two layers: 4,0 cm of fa
 d_muscle = 1580 * (80.0e-6 - t_fat) / 2               # the rest of 80,0 µs in muscle at 1580 m/s: 0,01962 m
 a["fy5-17-L3-02"] = (0.040 + d_muscle) * 100          # depth below the skin 5,96 cm (one speed 1540 m/s would give 6,16 cm)
 a["fy5-17-L3-03"] = 200 * math.sqrt(10 / 4000)        # tsunami period constant: λ = vT ∝ √h, 200 km at 4000 m -> 10,0 km at 10 m
+# Added exercises (bank): level 1 (L1-06..08 are multiple choice, no number)
+# Level 2
+a["fy5-17-L2-05"] = 1540 * (109.2 - 58.9) * 1e-6 / 2 * 100   # A-scan peaks 58,9 and 109,2 µs: layer 1540 · 50,3e-6 / 2 = 0,03873 m -> 3,87 cm
+_L = [0.200, 0.300, 0.400, 0.500]; _t = [270e-6, 407e-6, 540e-6, 677e-6]
+a["fy5-17-L2-06"] = sum(2 * l / tt for l, tt in zip(_L, _t)) / 4   # water tank echoes: mean of 2L/t = 1478,6 m/s -> 1480 m/s
+# Level 3
+_k = 6.0 * 3.5 / (6.0 - 3.5)                          # 8,4 km/s: distance per second of Δt
+_dA, _dB, _dC = _k * 10.0, _k * 7.5, _k * 5.9         # stations A(0,0), B(120,0), C(60,90): 84,0, 63,0, 49,56 km
+_x = (_dA**2 - _dB**2 + 120**2) / 240                 # subtract the circles: x = 72,86 km
+_y = math.sqrt(_dA**2 - _x**2)                        # y = ±41,80 km; C: 49,9 km (+) vs 132,4 km (−) -> +
+assert abs(math.hypot(_x - 60, _y - 90) - _dC) < 1 and abs(math.hypot(_x - 60, -_y - 90) - _dC) > 50
+a["fy5-17-L3-04"] = _y                                # 41,8 km -> 42 km
+_seg = [(300e3, 4000), (100e3, 1000), (20e3, 50)]     # tsunami over three stretches: t = Σ s / √(g h)
+a["fy5-17-L3-05"] = sum(s_ / math.sqrt(g * h_) for s_, h_ in _seg) / 60   # 3427 s = 57,1 min -> 57 min
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

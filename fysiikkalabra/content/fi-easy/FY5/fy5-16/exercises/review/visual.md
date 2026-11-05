@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: f6b7dbd2dd4f3b0c
+CONTENT-HASH: 491edae882d308c2
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
@@ -8,8 +10,10 @@ CONTENT-HASH: f6b7dbd2dd4f3b0c
 (none)
 
 ## Checked
-- open-exercises-1280-1 opened at full size; contact sheets for the remaining exercise captures: solutions as aligned LaTeX rows, decimal commas, answers boxed.
-- Finnish natural; the many "siis/siksi" connectives are a plain-language choice, not an error.
+- Captures of fi-easy opened: fy5-16-open-exercises-L2-1280-8 (L2-06/L2-07 with answer pill and solution), fy5-16-open-exercises-L3-1280-4 (L3-04 table and answer).
+- L2-07 answer pill shows 1,9 min; L3-04 pill 5,3 dB; L2-05 pill 60.3 %.
+- Data tables render with translated captions and headers (subscripts ennen/jälkeen, ilman/este); no overflow at 1280.
+- Maths renders without red source; units and decimal comma correct in text and solutions.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5
