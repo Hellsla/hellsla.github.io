@@ -4,6 +4,10 @@
       shows its links to the chapters where it is practised (the task's `links`, written into the page by build.py).
    (The chapter-level "Arvioi osaamistasi", Osaan / Tarvitsen vielä harjoitusta, was removed by the teacher on
    2026-10-28: a written answer is self-assessed against its model answer's criteria in inquiry.js instead.)
+   2. A multiple-choice task of an Esimerkkikoe (.mc, scripts/practice.py render_exam): when its solution is opened the
+      page marks each answer right or wrong and shows the points; no self-assessment after auto-graded choices.
+   3. The exam's total (.exam-total): per section the points of its best `data-choose` tasks (self-assessed rubric
+      points, or the page's multiple-choice points once checked), so the total never exceeds the exam's maximum.
    Selections are kept in this browser only (localStorage, as inquiry.js keeps predictions); nothing is sent. The page
    works without storage and without this script: the criteria and choices are plain radio buttons. */
 (() => {
@@ -40,4 +44,52 @@
     rubric.addEventListener('change', () => update(true));
     update(false);
   });
+  // 2. multiple choice of an exam: scored when the solution is opened
+  const mcScore = (task) => {
+    let got = 0;
+    task.querySelectorAll('.mc').forEach((g) => { const sel = g.querySelector('input:checked'); if (sel && sel.value === g.dataset.correct) got += Number(g.dataset.points); });
+    return got;
+  };
+  document.querySelectorAll('.mc').forEach((g) => {
+    const saved = store.get(g.dataset.id).v;
+    if (saved != null) { const i = g.querySelector(`input[value="${saved}"]`); if (i) i.checked = true; }
+    g.addEventListener('change', () => { const sel = g.querySelector('input:checked'); store.set(g.dataset.id, { v: sel ? sel.value : null }); });
+  });
+  document.querySelectorAll('.mc-score').forEach((line) => {
+    const task = line.closest('.task-card'), details = line.closest('details');
+    const show = () => {
+      if (!details.open) return;
+      task.querySelectorAll('.mc').forEach((g) => {
+        const sel = g.querySelector('input:checked');
+        g.querySelectorAll('.mc-opt').forEach((o) => { o.classList.remove('mc-right', 'mc-wrong'); });
+        g.querySelector(`input[value="${g.dataset.correct}"]`).closest('.mc-opt').classList.add('mc-right');
+        if (sel && sel.value !== g.dataset.correct) sel.closest('.mc-opt').classList.add('mc-wrong');
+      });
+      line.textContent = msg('mc_score', { got: mcScore(task), max: Number(line.dataset.max) });
+      task.dataset.checked = '1';
+      document.dispatchEvent(new Event('fl-exam'));
+    };
+    details.addEventListener('toggle', show);
+    task.addEventListener('change', () => { if (details.open) show(); });
+  });
+
+  // 3. the exam's total under its selection rules
+  const total = document.querySelector('.exam-total');
+  if (total) {
+    const taskPoints = (card) => {
+      if (card.querySelector('.mc-score')) return card.dataset.checked ? mcScore(card) : 0;
+      let got = 0; card.querySelectorAll('.rubric input:checked').forEach((i) => { got += Number(i.value); });
+      return got;
+    };
+    const update = () => {
+      let sum = 0;
+      document.querySelectorAll('.exam-section').forEach((sec) => {
+        const pts = [...sec.querySelectorAll('.exam-task')].map(taskPoints).sort((a, b) => b - a).slice(0, Number(sec.dataset.choose));
+        const s = pts.reduce((a, b) => a + b, 0); sum += s;
+        const line = total.querySelector(`[data-sec="${sec.id}"] span`); if (line) line.textContent = s;
+      });
+      total.querySelector('.exam-total-line').textContent = msg('exam_total', { got: sum, max: Number(total.dataset.max) });
+    };
+    document.addEventListener('change', update); document.addEventListener('fl-exam', update); update();
+  }
 })();

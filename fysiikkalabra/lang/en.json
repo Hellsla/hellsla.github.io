@@ -392,7 +392,9 @@
     "ra_fast": "fast",
     "ra_voice_auto": "best available",
     "ra_bar": "Read aloud",
-    "ra_no_voice": "Your device has no English voice, so the browser reads with another voice. You can add an English voice in your device's language settings."
+    "ra_no_voice": "Your device has no English voice, so the browser reads with another voice. You can add an English voice in your device's language settings.",
+    "mc_score": "Multiple choice: {{got}} / {{max}} p",
+    "exam_total": "Your score: {{got}} / {{max}} p"
   },
   "sims": {
     "fy2-2": {
@@ -2496,7 +2498,8 @@
       "Järkevyys": "Reasonableness",
       "Mallivastaus": "Model answer",
       "Kuvaaja": "Graph",
-      "Kuvaajan lukeminen": "Reading the graph"
+      "Kuvaajan lukeminen": "Reading the graph",
+      "Perustelu": "Justification"
     },
     "tasks_n": {
       "one": "{{n}} task",
@@ -3012,5 +3015,23 @@
     "none": "No task matches your choices. Choose Show all.",
     "course_heading": "Exam task mixer",
     "course_lead": "All exam-style tasks of the review lessons and the modules on one page, to filter or pick at random."
+  },
+  "exam": {
+    "title": "Example exam",
+    "eyebrow": "{{code}} · end of module",
+    "description": "{{code}} {{title}}: an example exam in three parts like a course exam, with selection rules, model answers and marking guides.",
+    "lead": "This is a practice exam like a course exam. Do it as a real exam: calmly, without looking at the model answers until you are done.",
+    "rules": "Structure of the exam",
+    "rule_all": "answer every item, at most {{max}} p.",
+    "rule_choose": "answer {{choose}} of {{n}} tasks. Each task is {{points}} p, the part gives at most {{max}} p.",
+    "max": "The maximum score is {{max}} p. Tasks worth {{offered}} p are offered, but under the selection rules at most {{max}} p count.",
+    "minutes": "Allow about {{minutes}} minutes.",
+    "howto": "Write your solutions on paper or a computer. You may use a calculator, a data booklet and graphing software. Open the model answers only when the whole exam is done.",
+    "correct": "Correct answer: {{option}}",
+    "course_lead": "At the end of the module you can take the example exam like a real course exam. The model answers and marking guides open after the exam.",
+    "course_count": "{{max}} p, three parts",
+    "total_title": "Exam score",
+    "total_note": "The page scores the multiple-choice items when you open their model answer. The other points are your own assessment. In the optional parts the best tasks count under the rules.",
+    "revise": "If a task went badly, go back to the chapters listed under Skills from chapters for that task."
   }
 }

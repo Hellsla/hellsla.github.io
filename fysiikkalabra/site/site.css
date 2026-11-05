@@ -1081,3 +1081,13 @@ body:has(main.about-page){--blob:clamp(26rem,14rem + 48vw,68rem);
 .about-page strong{color:var(--kr-navy)}
 @media (max-width:600px){.about-page .about-hero{gap:.75rem;padding:1rem 1.1rem}.about-page .about-hero h1{gap:.5rem}.about-page .about-hero h1::before{width:16px}.about-page .about-logo{height:48px}}
 .about-page .about-tag{display:inline-block;margin:1.5rem 0 0;padding:.3rem .9rem;border-radius:999px;background:var(--kr-pink);color:var(--kr-navy);font:700 var(--fs-ui) var(--sans);letter-spacing:.01em}
+
+/* Esimerkkikoe (scripts/practice.py render_exam, templates/selfassess.js): rules, multiple choice marked on opening the solution, the exam's total */
+.exam-rules{margin:1rem 0 0;padding:.9rem 1.1rem;border:1px solid var(--line);border-radius:var(--card-radius);background:var(--surface)}
+.exam-rules h2{margin:0 0 .5rem;font-size:1.1rem}.exam-rules ul{margin:0 0 .6rem;padding-left:1.2rem}.exam-max{font-weight:600}
+.exam-rule{font-weight:600;color:var(--ink-2)}
+.exam-task ol.parts>li>ul.choices.mc,.exam-task ol.parts>li>.task-fig{grid-column:1/-1;margin:.6rem 0 .4rem}
+ul.choices.mc label.mc-right{border:2px solid var(--accent);background:var(--accent-soft)}ul.choices.mc label.mc-right>span::after{content:" ✓";font-weight:700}
+ul.choices.mc label.mc-wrong{border:2px solid #b4532a;background:#fbf1ea}ul.choices.mc label.mc-wrong>span::after{content:" ✗";font-weight:700}
+.mc-score,.exam-total-line{font-weight:700}.mc-key{font-weight:500}
+.exam-total{border-top:2px solid var(--line);padding-top:.5rem}.exam-sec-line{margin:.2rem 0}

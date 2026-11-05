@@ -986,6 +986,7 @@ def _baseline_items():
         out += [("investigation", lang, i, "-", investigations.folder(i, lang), lambda i=i, lang=lang: investigations.status(i, lang)) for i in investigations.ids(lang)]
         out += [("guide", lang, g, "-", guides.folder(g, lang), lambda g=g, lang=lang: guides.status(g, lang)) for g in guides.ids(lang)]
         out += [("sovella", lang, c, "-", practice.folder(c, lang), lambda c=c, lang=lang: practice.status(c, lang)) for c in practice.courses_with(lang)]
+        out += [("koe", lang, c, "-", practice.folder(c, lang), lambda c=c, lang=lang: practice.status(c, lang)) for c in practice.exams(lang)]
     return out
 
 
@@ -1040,7 +1041,7 @@ def verify_baseline():
     if not BASELINE.is_file(): return []
     rel = BASELINE.relative_to(ROOT).as_posix(); errs = []
     for r in baseline_rows():
-        if len(r) != len(BASELINE_COLS) or r["kind"] not in ("lesson", "investigation", "guide", "sovella") or not re.fullmatch(r"[0-9a-f]{16}", r.get("hash", "")):
+        if len(r) != len(BASELINE_COLS) or r["kind"] not in ("lesson", "investigation", "guide", "sovella", "koe") or not re.fullmatch(r"[0-9a-f]{16}", r.get("hash", "")):
             errs.append(f"{rel}: malformed row {r}")
     first = (git("log", "--diff-filter=A", "--format=%H", "--", rel) or "").split()
     if not first: return errs                           # not committed yet (the commit that writes it)

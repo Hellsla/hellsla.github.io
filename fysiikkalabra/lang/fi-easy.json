@@ -392,7 +392,9 @@
     "ra_fast": "nopea",
     "ra_voice_auto": "paras ääni",
     "ra_bar": "Ääneenluku",
-    "ra_no_voice": "Laitteessa ei ole suomen kielen ääntä. Siksi selain lukee toisella äänellä. Voit lisätä suomen äänen laitteen kieliasetuksista. Voit myös käyttää Edge-selainta."
+    "ra_no_voice": "Laitteessa ei ole suomen kielen ääntä. Siksi selain lukee toisella äänellä. Voit lisätä suomen äänen laitteen kieliasetuksista. Voit myös käyttää Edge-selainta.",
+    "mc_score": "Monivalinnat: {{got}} / {{max}} p",
+    "exam_total": "Pisteesi: {{got}} / {{max}} p"
   },
   "sims": {
     "fy2-2": {
@@ -2496,7 +2498,8 @@
       "Järkevyys": "Järkevyys",
       "Mallivastaus": "Mallivastaus",
       "Kuvaaja": "Kuvaaja",
-      "Kuvaajan lukeminen": "Kuvaajan lukeminen"
+      "Kuvaajan lukeminen": "Kuvaajan lukeminen",
+      "Perustelu": "Perustelu"
     },
     "tasks_n": {
       "one": "{{n}} tehtävä",
@@ -3012,5 +3015,23 @@
     "none": "Mikään tehtävä ei sovi valintoihin. Valitse Näytä kaikki.",
     "course_heading": "YO-sekoitin",
     "course_lead": "Kaikki ylioppilaskokeen kaltaiset tehtävät samalla sivulla. Voit valita tehtäviä tai arpoa niitä."
+  },
+  "exam": {
+    "title": "Esimerkkikoe",
+    "eyebrow": "{{code}} · moduulin lopuksi",
+    "description": "{{code}} {{title}}: esimerkkikoe, jossa on kolme osaa, valintaohjeet, mallivastaukset ja pisteytysohjeet.",
+    "lead": "Tämä on harjoituskoe. Se on samanlainen kuin kurssikoe. Tee koe rauhassa. Älä katso mallivastauksia kesken kokeen.",
+    "rules": "Kokeen osat",
+    "rule_all": "vastaa kaikkiin kohtiin. Saat enintään {{max}} p.",
+    "rule_choose": "valitse {{n}} tehtävästä {{choose}}. Yksi tehtävä on {{points}} p. Tästä osasta saat enintään {{max}} p.",
+    "max": "Kokeesta saat enintään {{max}} p. Tehtävien pisteet ovat yhteensä {{offered}} p, mutta kaikki tehtävät eivät lasketa.",
+    "minutes": "Varaa aikaa noin {{minutes}} minuuttia.",
+    "howto": "Kirjoita ratkaisut paperille tai tietokoneelle. Saat käyttää laskinta, taulukkokirjaa ja kuvaajaohjelmaa. Avaa mallivastaus vasta, kun koko koe on valmis.",
+    "correct": "Oikea vastaus: {{option}}",
+    "course_lead": "Kurssin lopuksi voit tehdä esimerkkikokeen. Mallivastaukset ja pisteytysohjeet avautuvat kokeen jälkeen.",
+    "course_count": "{{max}} p, kolme osaa",
+    "total_title": "Kokeen pisteet",
+    "total_note": "Sivu laskee monivalintojen pisteet, kun avaat mallivastauksen. Muut pisteet arvioit itse. Valinnaisista osista lasketaan parhaat tehtävät.",
+    "revise": "Jos jokin tehtävä meni huonosti, palaa lukuihin, jotka on mainittu tehtävän kohdassa Taidot luvuista."
   }
 }

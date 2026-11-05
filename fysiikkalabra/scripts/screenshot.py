@@ -51,10 +51,12 @@ def target(pid):
         global SUB
         SUB = "" if ul == courses.SOURCE_LANG else f"{ul}/"
         return "unit", units.folder(pid, ul) / "review", units.content_hash(pid, ul)
-    if SUB and (pid.endswith("-sovella") or pid in investigations.ids() or pid in guides.ids()):
+    if SUB and (pid.endswith("-sovella") or pid.endswith("-koe") or pid in investigations.ids() or pid in guides.ids()):
         sys.exit(f"--lang captures a translated lesson; {pid} is captured in {courses.SOURCE_LANG}")
     if pid.endswith("-sovella"):
         code = pid[:-len("-sovella")]; return "sovella", practice.folder(code) / "review", practice.content_hash(code)
+    if pid.endswith("-koe"):
+        code = pid[:-len("-koe")] + practice.EXAM; return "koe", practice.folder(code) / "review", practice.content_hash(code)
     if pid in investigations.ids(): return "investigation", investigations.folder(pid) / "review", investigations.content_hash(pid)
     if pid in guides.ids(): return "guide", guides.folder(pid) / "review", guides.content_hash(pid)
     f = courses.find_lesson(pid, LANG)
