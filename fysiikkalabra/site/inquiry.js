@@ -6,7 +6,8 @@
       appears only after the linked experiment has recorded data-reveal-min measurements, or, for a prediction
       the simulation cannot test (an explanation), once the linked theory section has been on screen.
    2. Plain choices: feedback for the selected option after "Vastaa" (why it is wrong); one change of answer, then the
-      correct option is shown with its reasoning (teacher 2026-11-03).
+      correct option is shown with its reasoning (teacher 2026-11-03). 2b–2c: true-or-false lists and ordering tasks
+      (teacher 2026-11-05) answered at once, the wrong items marked, one change, then the right answers.
    3. Experiments (.experiment): drive window.simAdapter — set the initial conditions, lock the controlled
       parameters, record the varied parameter and the measured quantities into a table, reset. The table is kept in
       localStorage (ruukkilabra:<page>:koe<n>) until Nollaa, and copied with Kopioi taulukko (TSV)
@@ -146,6 +147,40 @@
     });
     const saved = store.get(id);
     if (saved && radios[saved.choice]) { radios[saved.choice].checked = true; if (justify && saved.why) justify.value = saved.why; if (reveal) commit(saved.choice, true); }
+  });
+
+  // 2b–2c. A list answered at once (teacher 2026-11-05): true-or-false statements (fieldset.tf) and putting items in
+  // order (fieldset.order). "Vastaa" needs every item; the first answer marks the wrong items, they may be changed
+  // once, and then every item shows its right answer and (a statement) its reasoning. Not stored: a page reload starts over.
+  document.querySelectorAll('fieldset.tf, fieldset.order').forEach((fs) => {
+    const tf = fs.classList.contains('tf'), rows = [...fs.querySelectorAll(tf ? '.tf-list > li' : '.order-list > li')];
+    const out = fs.querySelector('output'), btn = fs.querySelector('button.commit');
+    const given = (li) => tf ? li.querySelector('input:checked')?.value : li.querySelector('select').value;
+    const right = (li) => given(li) === (tf ? li.dataset.true : li.dataset.rank);
+    const say = (text, state) => { out.textContent = text; out.dataset.state = state; fs.dataset.state = state === 'hint' ? '' : state; };
+    let tries = 0;
+    const finish = () => { fs.querySelectorAll('input, select').forEach((x) => { x.disabled = true; }); btn.hidden = true; };
+    const reveal = () => rows.forEach((li) => {
+      li.dataset.state = right(li) ? 'ok' : 'no';
+      if (tf) { const fb = li.querySelector('.feedback'); if (fb) { fb.hidden = false;
+          const mark = document.createElement('strong'); mark.className = 'answer-mark';
+          mark.textContent = msg(li.dataset.true === '1' ? 'tf_is_true' : 'tf_is_false') + '. ';
+          (fb.firstElementChild || fb).prepend(mark); } }
+      else { const r = li.querySelector('.ord-right'); r.textContent = msg('order_right_place', { n: li.dataset.rank }); r.hidden = false; }
+    });
+    btn.addEventListener('click', () => {
+      if (rows.some((li) => !given(li))) { say(msg(tf ? 'tf_all_first' : 'order_all_first'), 'hint'); return; }
+      if (!tf && new Set(rows.map(given)).size !== rows.length) { say(msg('order_distinct'), 'hint'); return; }
+      tries += 1;
+      const wrong = rows.filter((li) => !right(li));
+      if (window.flAttempt) window.flAttempt(fs, 'choice', wrong.length ? 'no' : 'ok');
+      bus.dispatchEvent(new CustomEvent('fl:answered', { detail: { id: fs.dataset.id } }));
+      rows.forEach((li) => { delete li.dataset.state; });
+      if (!wrong.length) { say(msg('list_all_right'), 'ok'); reveal(); finish(); return; }
+      if (tries < 2) { wrong.forEach((li) => { li.dataset.state = 'no'; }); say(msg('list_wrong', { n: wrong.length, total: rows.length }), 'no'); return; }
+      say(msg('list_reveal'), 'no'); reveal(); finish();
+    });
+    fs.addEventListener('change', (ev) => { const li = ev.target.closest('li'); if (li && tries < 2) delete li.dataset.state; });
   });
 
   // 7. the Ennusta box: "2 kysymystä", then "vastattu 1/2", then "vastattu 2/2 · palaute 2/2"
