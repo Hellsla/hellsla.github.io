@@ -394,6 +394,40 @@ def choice_html(a, md, lid, aid):
             f'{pending}<output aria-live="polite"></output></fieldset>')
 
 
+def truefalse_html(a, md, aid):
+    """True-or-false statements about one phenomenon (teacher 2026-11-05, like the first task of the YO exam): every
+    statement gets Tosi or Epätosi, then one "Vastaa" for the whole list. The first answer marks the statements that are
+    wrong; they may be changed once, then every statement shows its truth and reasoning (inquiry.js part 2b). The
+    statements stay in the authored order: they often build on each other."""
+    rows = ""
+    for i, s in enumerate(a["statements"]):
+        name = f"{aid}-s{i}"
+        rows += (f'<li data-true="{"1" if s["true"] else "0"}"><p class="tf-text" id="{esc(name)}-t">{inline(md, s["text"])}</p>'
+                 f'<span class="tf-opts" role="radiogroup" aria-labelledby="{esc(name)}-t">'
+                 f'<label><input type="radio" name="{esc(name)}" value="1"> <span>{T("inquiry.tf_true")}</span></label>'
+                 f'<label><input type="radio" name="{esc(name)}" value="0"> <span>{T("inquiry.tf_false")}</span></label></span>'
+                 f'<div class="feedback" hidden>{md(s["feedback"])}</div></li>')
+    return (f'<fieldset class="tf" data-id="{esc(aid)}"><legend>{legend_html(inline(md, a["prompt"]))}</legend><ol class="tf-list">{rows}</ol>'
+            f'<div class="choice-actions"><button type="button" class="commit">{T("inquiry.commit")}</button></div><output aria-live="polite"></output></fieldset>')
+
+
+def order_html(a, md, lid, aid):
+    """Putting situations in order by a quantity (teacher 2026-11-05): the items are written in the correct order and
+    shown shuffled (choice_order); the student gives each a place 1..n from a menu, one "Vastaa" for all. The first
+    answer marks the misplaced items; one change, then each item shows its correct place (inquiry.js part 2c)."""
+    items = [dict(c, rank=i + 1) for i, c in enumerate(a["order"])]
+    n = len(items)
+    opts = "".join(f'<option value="{k}">{k}</option>' for k in range(1, n + 1))
+    rows = ""
+    for j, c in enumerate(choice_order(items, lid, aid)):
+        sid = f"{aid}-o{j}"
+        rows += (f'<li data-rank="{c["rank"]}"><label for="{esc(sid)}" class="ord-text">{inline(md, c["text"])}{fig_of(c)}</label>'
+                 f'<select id="{esc(sid)}" aria-label="{esc(T("inquiry.order_place"))}"><option value="">–</option>{opts}</select>'
+                 f'<span class="ord-right" hidden></span></li>')
+    return (f'<fieldset class="order" data-id="{esc(aid)}"><legend>{legend_html(inline(md, a["prompt"]))}</legend><ul class="order-list">{rows}</ul>'
+            f'<div class="choice-actions"><button type="button" class="commit">{T("inquiry.commit")}</button></div><output aria-live="polite"></output></fieldset>')
+
+
 def answer_label(unit):
     """An answer field's accessible name: "Vastaus yksikössä m/s²" (the question describes it, aria-describedby)."""
     return T("inquiry.answer_in", unit=unit) if unit.strip() else T("inquiry.answer")

@@ -42,7 +42,7 @@ def exercise_skills(e):
     if e.get("fbd"): s.add("voimakuvio")
     if "graph" in kind: s.add("kuvaaja")
     if kind & {"experiment", "data", "model"}: s.add("tutkimus")
-    if kind & {"reasoning", "concept", "error"} or e.get("choices"): s.add("sanallinen")
+    if kind & {"reasoning", "concept", "error"} or e.get("choices") or e.get("statements") or e.get("order"): s.add("sanallinen")
     return s or {"lasku"}
 
 

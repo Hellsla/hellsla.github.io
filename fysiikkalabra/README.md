@@ -175,6 +175,13 @@ Exercise-bank additions (teacher 2026-11-04, CLAUDE.md "Exercise levels"):
   feedback (a wrong one names the misconception); `answer` is the correct option's text and the solution is a
   written one (Kysytty · Periaate · Mallivastaus). The page shows the inquiry choice component (inquiry.js); the
   answer and solution open after "Olen tehnyt ratkaisun".
+- YO-skill forms (teacher 2026-11-05, `docs/exercise-types.md`): an option may be a figure (`"figure": "<id>"`, a graph
+  or a force diagram to choose; the options are then laid out as a grid); `"reasons"` (same form as `choices`, with an
+  optional `"reason_prompt"`) makes a two-stage task, the answer and then its reason; `"statements": [{"text", "true",
+  "feedback"}]` (3–6, at least one true and one false) is a true-or-false list; `"order": [{"text", "figure"?}]` (3–6,
+  written in the correct order, shuffled on the page, the `prompt` names the quantity and the direction) is an ordering
+  task. One form per task; `answer` gives the right answers in words. inquiry.js marks the wrong items once, allows one
+  change, then shows the right answers.
 - `"data"`: a measurement table shown under the task (`build.py data_table`); numbers are strings with a decimal point
   (`"2.50"`, trailing zeros are significant figures), shown with the page language's decimal sign, the same in
   every translation (check_i18n.py); other cells, the caption and the column heads are translated text.

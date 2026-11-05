@@ -629,6 +629,28 @@ fieldset.choice output[data-state=ok]{color:var(--accent-deep);font-weight:600}f
 fieldset.choice output[data-state=ok]::before,form.check output[data-state=ok]::before{content:"✓ ";font-weight:700}
 fieldset.choice output[data-state=no]::before,form.check output[data-state=no]::before{content:"✗ ";font-weight:700}   /* right and wrong by a sign too, never by colour alone */
 .pending{margin:.5rem 0 0;font-size:var(--fs-ui);color:var(--ink-2)}
+/* true-or-false lists and ordering tasks (teacher 2026-11-05, inquiry.js 2b–2c): one row per item, the wrong ones marked by a sign and a border */
+fieldset.tf,fieldset.order{margin:0;padding:0;border:0;min-width:0}
+fieldset.tf legend,fieldset.order legend{padding:0;font-weight:500;float:left;width:100%;margin-bottom:.8rem}fieldset.tf legend+*,fieldset.order legend+*{clear:both}
+.tf-list,.order-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.55rem}
+.tf-list>li,.order-list>li{margin:0;padding:.55rem .8rem;border:1px solid var(--line);border-radius:var(--inner-radius);background:var(--surface)}
+.tf-list>li{counter-increment:tf}.tf-list{counter-reset:tf}.tf-text::before{content:counter(tf) ". ";font-weight:600}
+.tf-text{margin:0 0 .4rem}.tf-opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.tf-opts label{display:inline-flex;gap:.45rem;align-items:center;min-height:44px;padding:0 .8rem;border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.tf-opts input{width:1.15rem;height:1.15rem;margin:0;accent-color:var(--accent)}
+.tf-opts label:has(input:checked){border:2px solid var(--accent);padding:0 calc(.8rem - 1px);background:var(--accent-soft);font-weight:600}
+.tf-opts label:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.order-list>li{display:flex;flex-wrap:wrap;gap:.4rem .8rem;align-items:center}
+.ord-text{flex:1 1 12rem;min-width:0}.order-list select{min-height:44px;min-width:4.5rem;font:inherit;padding:0 .5rem;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.ord-right{flex-basis:100%;font-size:var(--fs-ui);font-weight:600}
+.tf-list>li[data-state=no],.order-list>li[data-state=no]{border:2px solid #b4532a;padding:calc(.55rem - 1px) calc(.8rem - 1px)}
+.tf-list>li[data-state=ok],.order-list>li[data-state=ok]{border:2px solid var(--accent);padding:calc(.55rem - 1px) calc(.8rem - 1px)}
+.tf-list>li[data-state=no]>.tf-text::after,.order-list>li[data-state=no]>.ord-text::after{content:" ✗";color:#8a3b1a;font-weight:700}
+.tf-list>li[data-state=ok]>.tf-text::after,.order-list>li[data-state=ok]>.ord-text::after{content:" ✓";color:var(--accent-deep);font-weight:700}
+.tf-list .feedback{margin-left:0}
+fieldset.tf output,fieldset.order output{display:block;margin-top:.4rem;font-size:var(--fs-ui);min-height:1.3em}
+fieldset.tf output[data-state=ok],fieldset.order output[data-state=ok]{color:var(--accent-deep);font-weight:600}fieldset.tf output[data-state=no],fieldset.order output[data-state=no]{color:#8a3b1a;font-weight:600}fieldset.tf output[data-state=hint],fieldset.order output[data-state=hint]{color:var(--ink-2)}
+fieldset.tf output[data-state=ok]::before,fieldset.order output[data-state=ok]::before{content:"✓ ";font-weight:700}fieldset.tf output[data-state=no]::before,fieldset.order output[data-state=no]::before{content:"✗ ";font-weight:700}
 .sim-moved{margin:.5rem 0;font-size:var(--fs-ui);color:var(--ink-2);font-style:italic}
 .justify{display:block;margin:.6rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
 textarea{display:block;width:100%;box-sizing:border-box;margin-top:.3rem;font:inherit;font-size:var(--fs-inner);padding:.5rem .7rem;border:1px solid #767676;border-radius:10px;background:var(--surface);color:var(--ink)}
