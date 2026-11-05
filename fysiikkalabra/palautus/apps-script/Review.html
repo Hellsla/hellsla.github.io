@@ -43,20 +43,34 @@
   #zoom img { display: block; margin: 0 auto; max-width: none; background: #fff; }
   .tag { display: inline-block; font-size: 13px; padding: 0 8px; border-radius: 999px; background: #f1eee5; }
   details.ans > summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+  details.chapter { background: #fff; border: 1px solid var(--line); border-radius: 10px; margin: 8px 0; }
+  details.chapter > summary { cursor: pointer; padding: 8px 12px; font-weight: 700; }
+  details.chapter > summary .muted { font-weight: 400; }
+  details.chapter table { border-top: 1px solid var(--line); }
+  .wide { overflow-x: auto; }
+  #summary td.n, #summary th.n { text-align: right; white-space: nowrap; }
+  #summary td.n .muted { display: block; font-size: 12px; }
+  #problems td:nth-child(2) { white-space: nowrap; }
 </style>
 </head>
 <body>
 <main>
   <section id="home">
     <div class="bar"><h1 id="title" class="grow">RuukkiLabra · arviointi</h1><button type="button" id="refresh">Päivitä</button></div>
+    <div id="localBar" hidden></div>
     <p class="muted" id="rule"></p>
     <p class="bar"><label><input type="checkbox" id="onlyOpen"> Vain arvioimattomat</label><span class="muted" id="students"></span></p>
     <p id="homeState" class="muted" aria-live="polite">Ladataan…</p>
-    <table id="tasks" hidden><thead><tr><th>Tehtävä</th><th>Taso</th><th>Palautuksia</th><th>Joista tyhjiä</th><th>Arvioitu</th></tr></thead><tbody></tbody></table>
+    <h2>Pisteet luvuittain</h2>
+    <p class="muted">Uusimman hyväksytyn palautuksen pisteet. Pienellä: arvioituja tehtäviä / luvun tehtäviä. Tyhjä = lukua ei ole palautettu.</p>
+    <p id="noSummary" class="muted">Ei vielä hyväksyttyjä palautuksia.</p>
+    <div class="wide"><table id="summary" hidden><thead></thead><tbody></tbody></table></div>
+    <h2>Tehtävät luvuittain</h2>
+    <div id="tasks" hidden></div>
     <h2>Palautusten käsittelytila</h2>
-    <p class="muted">Hyväksytyt palautukset ovat arviointijonossa. Muut rivit eivät ole. Tarkistettavan voi hyväksyä tai hyväksytyn hylätä välilehden "RL Palautukset" sarakkeessa Opettajan päätös (Hyväksy / Hylkää), minkä jälkeen paina Päivitä.</p>
+    <p class="muted">Hyväksytyt palautukset ovat arviointijonossa. Muut rivit eivät ole. Tarkistettavan voi hyväksyä tai hyväksytyn hylätä rivin painikkeilla.</p>
     <p id="noProblems" class="muted" hidden>Ei virheellisiä, kaksoiskappaleita eikä tarkistettavia palautuksia.</p>
-    <table id="problems" hidden><thead><tr><th>Tila</th><th>Sähköposti</th><th>Palautusaika</th><th>Tunniste</th><th>Syy</th><th>Päätös</th></tr></thead><tbody></tbody></table>
+    <table id="problems" hidden><thead><tr><th>Tila</th><th>Luku</th><th>Opiskelija</th><th>Palautusaika</th><th>Tunniste</th><th>Syy</th><th>Päätös</th></tr></thead><tbody></tbody></table>
   </section>
 
   <section id="grade" hidden>
@@ -85,7 +99,7 @@
 (function () {
   'use strict';
   var $ = function (id) { return document.getElementById(id); };
-  var S = { ov: null, task: null, entries: [], idx: 0, ver: 0, nav: false, saving: null, token: 0, cache: {}, onlyOpen: false };
+  var S = { ov: null, task: null, chapter: null, entries: [], idx: 0, ver: 0, nav: false, saving: null, token: 0, cache: {}, onlyOpen: false, open: {} };
   var call = function (name, arg) {
     return new Promise(function (ok, no) {
       var r = google.script.run.withSuccessHandler(ok).withFailureHandler(function (e) { no(e); });
@@ -103,27 +117,68 @@
     $('homeState').textContent = 'Ladataan…';
     return call('rlOverview').then(function (ov) {
       S.ov = ov;
-      $('title').textContent = 'RuukkiLabra · ' + ov.chapter.course + '–' + ov.chapter.id.split('-')[1] + ' · ' + ov.chapter.title;
-      $('rule').textContent = 'Pisteet ovat kokonaislukuja 0–' + ov.maxPoints + '. Tyhjä pistemäärä tarkoittaa arvioimatonta, 0 on annettu pistemäärä. Palautuksia = opiskelijat, joilla on hyväksytty palautus; arvioitu = uusimmalle versiolle annettu pistemäärä.';
+      $('title').textContent = 'RuukkiLabra · ' + ov.course + (ov.group ? ' · ryhmä ' + ov.group : '') + ' · arviointi';
+      $('rule').textContent = 'Pisteet ovat kokonaislukuja 0–' + ov.maxPoints + '. Tyhjä pistemäärä tarkoittaa arvioimatonta, 0 on annettu pistemäärä. Palautuksia = opiskelijat, joilla on luvusta hyväksytty palautus; arvioitu = uusimmalle versiolle annettu pistemäärä.';
       $('students').textContent = 'Hyväksyttyjä palauttajia ' + ov.students + '.';
-      var tb = $('tasks').querySelector('tbody'); tb.textContent = '';
-      ov.tasks.forEach(function (t) {
-        var tr = el('tr', 'task-row'); tr.tabIndex = 0;
-        tr.append(el('td', null, 'Tehtävä ' + t.number), el('td', null, String(t.level)), el('td', null, String(t.submissions)), el('td', null, String(t.empty)), el('td', null, String(t.scored)));
-        tr.addEventListener('click', function () { openTask(t.id); });
-        tr.addEventListener('keydown', function (e) { if (e.key === 'Enter') openTask(t.id); });
-        tb.append(tr);
+      var box = $('tasks'); box.textContent = '';
+      ov.chapters.forEach(function (c) {
+        var scored = 0, all = 0;
+        c.tasks.forEach(function (t) { scored += t.scored; all += t.submissions; });
+        var d = el('details', 'chapter'); d.setAttribute('data-chapter', c.id);
+        d.open = S.open[c.id] !== undefined ? S.open[c.id] : c.submissions > 0;   // palautetut luvut auki
+        d.addEventListener('toggle', function () { S.open[c.id] = d.open; });
+        var sm = el('summary', null, 'Luku ' + c.number + ' · ' + c.title + ' ');
+        sm.append(el('span', 'muted', '· palautuksia ' + c.submissions + (c.submissions ? ' · arvioitu ' + scored + '/' + all : '')));
+        var tb = el('tbody'), table = el('table'), head = el('thead'), hr = el('tr');
+        ['Tehtävä', 'Taso', 'Palautuksia', 'Joista tyhjiä', 'Arvioitu'].forEach(function (h) { hr.append(el('th', null, h)); });
+        head.append(hr); table.append(head, tb);
+        c.tasks.forEach(function (t) {
+          var tr = el('tr', 'task-row'); tr.tabIndex = 0;
+          tr.append(el('td', null, 'Tehtävä ' + t.number), el('td', null, String(t.level)), el('td', null, String(t.submissions)), el('td', null, String(t.empty)), el('td', null, String(t.scored)));
+          tr.addEventListener('click', function () { openTask(t.id); });
+          tr.addEventListener('keydown', function (e) { if (e.key === 'Enter') openTask(t.id); });
+          tb.append(tr);
+        });
+        d.append(sm, table); box.append(d);
       });
-      $('tasks').hidden = false;
-      $('homeState').textContent = ov.students ? '' : 'Ei vielä hyväksyttyjä palautuksia. Valitse taulukon valikosta RuukkiLabra → Tuo palautukset ja paina sitten Päivitä.';
+      box.hidden = false;
+      renderSummary(ov);
+      $('homeState').textContent = ov.students ? '' : (window.RL_LOCAL ? 'Ei vielä hyväksyttyjä palautuksia. Valitse ylhäältä Drivesta ladattu palautuskansion zip-tiedosto.' : 'Ei vielä hyväksyttyjä palautuksia. Valitse taulukon valikosta RuukkiLabra → Tuo palautukset ja paina sitten Päivitä.');
       var pb = $('problems').querySelector('tbody'); pb.textContent = '';
       ov.problems.forEach(function (p) {
         var tr = el('tr');
-        tr.append(el('td', null, p.status), el('td', null, p.email), el('td', null, p.time), el('td', null, p.sub), el('td', null, p.reason), el('td', null, p.decision));
+        var dc = el('td');
+        tr.append(el('td', null, p.status), el('td', null, p.chapter), el('td', null, p.email), el('td', null, p.time), el('td', null, p.sub), el('td', null, p.reason), dc);
+        if (p.status === 'Tarkistettava' || p.status === 'Hyväksytty') {   // opettajan päätös: Hyväksy / Hylkää / peru
+          var want = p.decision ? '' : (p.status === 'Tarkistettava' ? 'Hyväksy' : 'Hylkää');
+          var b = el('button', null, p.decision ? p.decision + ' · peru' : want); b.type = 'button';
+          b.addEventListener('click', function () { b.disabled = true; call('rlSetDecision', { key: p.key, decision: want }).then(loadHome, function (e) { b.disabled = false; $('homeState').textContent = 'Päätöstä ei tallennettu: ' + errText(e); }); });
+          dc.append(b);
+        } else dc.textContent = p.decision;
         pb.append(tr);
       });
       $('problems').hidden = !ov.problems.length; $('noProblems').hidden = !!ov.problems.length;
     }, function (e) { $('homeState').textContent = 'Tietoja ei voitu ladata: ' + errText(e); $('homeState').className = 'err'; });
+  }
+  // Opiskelijan pisteet luvuittain ja yhteensä (vain luvut, joista on palautuksia)
+  function renderSummary(ov) {
+    var chs = ov.chapters.filter(function (c) { return c.submissions > 0; });
+    var head = $('summary').querySelector('thead'), body = $('summary').querySelector('tbody');
+    head.textContent = ''; body.textContent = '';
+    var hr = el('tr'); hr.append(el('th', null, 'Opiskelija'));
+    chs.forEach(function (c) { var th = el('th', 'n', 'L' + c.number); th.title = 'Luku ' + c.number + ' · ' + c.title + ' (enintään ' + c.tasks.length * ov.maxPoints + ' p)'; hr.append(th); });
+    hr.append(el('th', 'n', 'Yhteensä')); head.append(hr);
+    ov.summary.forEach(function (s) {
+      var tr = el('tr'); tr.append(el('td', null, s.email));
+      chs.forEach(function (c) {
+        var x = s.chapters[c.id], td = el('td', 'n');
+        if (x) { td.textContent = String(x.points); td.append(el('span', 'muted', x.scored + '/' + x.tasks)); }
+        tr.append(td);
+      });
+      var tt = el('td', 'n'); tt.append(el('b', null, String(s.total)), el('span', 'muted', s.scored + '/' + s.tasks)); tr.append(tt);
+      body.append(tr);
+    });
+    $('summary').hidden = !ov.summary.length; $('noSummary').hidden = !!ov.summary.length;
   }
   $('refresh').addEventListener('click', loadHome);
   $('onlyOpen').addEventListener('change', function () { S.onlyOpen = $('onlyOpen').checked; });
@@ -132,9 +187,9 @@
   function cur() { var e = S.entries[S.idx]; return e ? { entry: e, version: e.versions[S.ver] } : null; }
   function scoreText(v) { return v === '' || v === null || v === undefined ? '' : String(v); }
   function openTask(id) {
-    S.task = S.ov.tasks.filter(function (t) { return t.id === id; })[0];
+    S.ov.chapters.forEach(function (c) { c.tasks.forEach(function (t) { if (t.id === id) { S.task = t; S.chapter = c; } }); });
     $('home').hidden = true; $('grade').hidden = false;
-    $('gTitle').textContent = S.ov.chapter.course + '–' + S.ov.chapter.id.split('-')[1] + ' · Tehtävä ' + S.task.number;
+    $('gTitle').textContent = S.ov.course + ' · Luku ' + S.chapter.number + ' · Tehtävä ' + S.task.number;
     $('gStatement').innerHTML = S.task.html;   // RuukkiLabran oma, generoitu tehtävänanto (Tehtavat.gs), ei opiskelijan dataa
     $('gModel').innerHTML = S.task.answer;
     $('range').textContent = '(kokonaisluku 0–' + max() + ', tyhjä = arvioimaton)';
@@ -144,7 +199,7 @@
     call('rlQueue', id).then(function (q) {
       S.entries = S.onlyOpen ? q.filter(function (e) { return scoreText(e.versions[e.versions.length - 1].score) === ''; }) : q;
       $('filterNote').textContent = S.onlyOpen ? 'Vain arvioimattomat (' + S.entries.length + ' / ' + q.length + ' palauttajaa)' : '';
-      if (!S.entries.length) { $('gAnswer').textContent = S.onlyOpen ? 'Kaikki tämän tehtävän palautukset on arvioitu.' : 'Tähän tehtävään ei ole hyväksyttyjä palautuksia.'; lockUi(false); $('points').disabled = true; return; }
+      if (!S.entries.length) { $('gAnswer').textContent = S.onlyOpen ? 'Kaikki tämän tehtävän palautukset on arvioitu.' : 'Tästä luvusta ei ole hyväksyttyjä palautuksia.'; lockUi(false); $('points').disabled = true; return; }
       show(0, null);
     }, function (e) { $('gAnswer').textContent = ''; setState('Jonoa ei voitu ladata: ' + errText(e), 'no'); lockUi(false); });
   }
@@ -279,6 +334,7 @@
     var p = parsePoints($('points').value);
     if (S.saving || !p.ok || p.value !== (c.version.score === null ? '' : c.version.score)) { e.preventDefault(); e.returnValue = ''; }
   });
+  window.rlReload = loadHome;   // paikallinen arviointisivu päivittää näkymän tiedostojen lukemisen jälkeen
   loadHome();
 })();
 </script>

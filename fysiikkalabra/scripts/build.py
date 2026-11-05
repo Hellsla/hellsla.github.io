@@ -67,13 +67,20 @@ curriculum = json.loads((ROOT / "curriculum.json").read_text())
 if local_courses.validate(curriculum): sys.exit("\n".join(local_courses.validate(curriculum)))
 
 
-# Submission trial (teacher 2026-11-05): "Lataa kaikki ratkaisut" on these pages only (templates/palautus.js);
-# the teacher's side is palautus/ (Google Forms + a Sheets-bound Apps Script), never part of the site.
-SUBMISSION_PAGES = {("fi", "fy3-1")}
+# Submission trial (teacher 2026-11-05): "Lataa kaikki ratkaisut" on the chapters of these courses in these languages
+# only (templates/palautus.js; first FY3-1, then every FY3 chapter); the teacher's side is palautus/ (a local grading
+# page or a Sheets-bound Apps Script), never part of the site.
+SUBMISSION_COURSES = {("fi", "fy3")}
+SUBMISSION_CHAPTER = re.compile(r"^(fy\d+)-\d+$")
+
+
+def submits(lang, lesson_id):
+    m = SUBMISSION_CHAPTER.match(lesson_id or "")
+    return bool(m) and (lang, m.group(1)) in SUBMISSION_COURSES
 
 
 def submission_script(lang, lesson_id):
-    return f'<script src="palautus.js" data-chapter="{lesson_id}"></script>' if (lang, lesson_id) in SUBMISSION_PAGES else ""
+    return f'<script src="palautus.js" data-chapter="{lesson_id}"></script>' if submits(lang, lesson_id) else ""
 
 
 def render_md(text, **kw):

@@ -482,8 +482,8 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 .pad-save{margin:.3rem 0 0;font-size:var(--fs-ui);min-height:1.3em;color:var(--ink-2)}.pad-save[data-state=ok]{color:var(--accent-deep)}.pad-save[data-state=no]{color:#8a3b1a;font-weight:600}
 .pad-saved{margin:.4rem 0 0}.pad-saved>summary{font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}.pad-saved .pad-tools{margin-top:.3rem}
 /* Submission trial (palautus.js, FY3-1): "Lataa kaikki ratkaisut" at the top of Tehtävät */
-.palautus{margin:0 0 1.2rem}.palautus .palautus-btn{margin:0 0 .3rem}
-@media print{.palautus{display:none!important}}
+.palautus{margin:0 0 1.2rem}.palautus .palautus-btn{margin:0 0 .3rem}.palautus:not(:has(.palautus-btn)):has(.palautus-status:empty){display:none}.split-head>.palautus-btn{margin:.6rem 0 0}
+@media print{.palautus,.palautus-btn{display:none!important}}
 @media print{.pad-open,.pad-tools,.pad-note,.pad-save,.pad-saved,.pad .rich-text-editor-toolbar-root{display:none!important}}
 
 /* print: the lesson as a handout. lesson.js opens every collapsed block while printing. */

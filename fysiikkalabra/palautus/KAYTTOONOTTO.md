@@ -1,4 +1,13 @@
-# Palautuskokeilu FY3–1: käyttöönotto-ohje
+# Palautuskokeilu FY3: käyttöönotto-ohje
+
+> **Eduespoossa Apps Script on estetty (5.11.2026).** Tee lomake tämän ohjeen kohdan 1 mukaan ja tarkista
+> käyttöoikeudet (kohta 5), mutta arvioi paikallisella sivulla: [PAIKALLINEN-ARVIOINTI.md](PAIKALLINEN-ARVIOINTI.md).
+> Kohdat 2–4 (Apps Script) koskevat vain tilannetta, jossa kaupunki sallii Apps Scriptin.
+>
+> **Koko FY3 ja ryhmät (5.11.2026):** painike on kaikissa FY3:n luvuissa, ja opiskelija palauttaa jokaisen luvun
+> tiedoston (`fy3-<n>.ratkaisut.json`) erikseen. Tee **yksi lomake (ja Apps Script -versiossa yksi taulukko) ryhmää
+> kohti**. Silloin ryhmän palautukset ovat omassa kansiossaan. Arviointinäkymässä tehtävät näkyvät luvuittain, ja siinä
+> on opiskelijan pisteet luvuittain ja yhteensä. Alla mainittu FY3–1 tarkoittaa nyt mitä tahansa FY3:n lukua.
 
 Tällä ohjeella opettaja ottaa käyttöön FY3–1-luvun palautuksen ja arvioinnin:
 Google Forms → Drive-palautuskansio → Google Sheets → Sheetsiin sidottu Apps Script.
@@ -168,11 +177,11 @@ Lomakkeen, kansion ja taulukon omistaa yksi eduespoo-tili. Lisää vähintään 
 kaikkiin kolmeen. Sovi ennen pidempää käyttöä, siirretäänkö aineisto koulun jaettuun Driveen (jos kaupunki
 käyttää sellaista) tai kenelle omistajuus siirretään, kun omistaja lähtee.
 
-## 7. Toisen luvun käyttöönotto myöhemmin
+## 7. Toisen opintojakson käyttöönotto myöhemmin
 
-Kokeilu on rakennettu yhdelle luvulle. Uusi luku tarvitsee RuukkiLabraan rivin `build.py`:n
-`SUBMISSION_PAGES`-listaan ja `palautus_tasks.py`:n `PAGES`-listaan, uuden `Tehtavat.gs`:n ja oman lomakkeen ja
-taulukon. Tee tämä vasta, kun kokeilu on arvioitu.
+Kaikki FY3:n luvut ovat mukana. Toinen opintojakso tarvitsee rivin `build.py`:n `SUBMISSION_COURSES`-joukkoon,
+`palautus_tasks.py`:n `COURSE`-asetuksen (tai oman arviointisivun) ja omat lomakkeet. Tee tämä vasta, kun kokeilu
+on arvioitu.
 
 ## Poikkeamat ja havainnot käyttöönotossa
 

@@ -36,6 +36,13 @@ GAS = ROOT / "palautus/apps-script"
 fails = 0
 
 
+def go_back(pg):
+    """Back to the task list, waiting until the list is reloaded (the old rows stay visible meanwhile)."""
+    pg.click("#back")
+    pg.wait_for_function("!document.getElementById('home').hidden && document.getElementById('homeState').textContent !== 'Ladataan…'")
+    pg.wait_for_selector("#tasks tr.task-row")
+
+
 def expect(name, ok, detail=""):
     global fails
     print(("ok   " if ok else "FAIL ") + name + ("" if ok else f"\n     {detail}"))
@@ -63,8 +70,9 @@ threading.Thread(target=srv.serve_forever, daemon=True).start()
 BASE = f"http://127.0.0.1:{srv.server_port}/"
 
 # static: the script is on the trial page only
-pages_with = [p.relative_to(SITE).as_posix() for p in SITE.rglob("*.html") if "palautus.js" in p.read_text(errors="ignore")]
-expect("palautus.js is loaded on the Finnish FY3-1 page only", pages_with == ["fy3-1.html"], pages_with)
+pages_with = sorted(p.relative_to(SITE).as_posix() for p in SITE.rglob("*.html") if "palautus.js" in p.read_text(errors="ignore"))
+fy3 = sorted(p.name for p in SITE.glob("fy3-*.html") if re.fullmatch(r"fy3-\d+\.html", p.name))
+expect("palautus.js is loaded on every Finnish FY3 chapter page and nowhere else", len(fy3) >= 16 and pages_with == fy3, pages_with)
 
 OPEN = "document.querySelectorAll('#exercises details.level').forEach((d) => { d.open = true; })"
 
@@ -117,7 +125,8 @@ with sync_playwright() as p:
     panel = pg.locator("#exercises .palautus")
     expect("the panel is at the top of Tehtävät", panel.count() == 1 and pg.evaluate("(() => { const p = document.querySelector('#exercises .palautus').previousElementSibling; return !!p && (p.matches('h2') || p.matches('.split-head')); })()"))
     ptext = panel.inner_text().strip()
-    expect("only the button 'Lataa kaikki ratkaisut', no long instructions (teacher 2026-11-05)", ptext == "Lataa kaikki ratkaisut", ptext)
+    expect("only the button 'Lataa kaikki ratkaisut', no long instructions (teacher 2026-11-05)", ptext == "" and pg.locator("#exercises .palautus-btn").count() == 1 and pg.inner_text("#exercises .palautus-btn") == "Lataa kaikki ratkaisut", ptext)
+    expect("the button is in the heading row before 'Avaa tehtävät teorian viereen' (teacher 2026-11-05)", pg.evaluate("(() => { const b = document.querySelector('#exercises .palautus-btn'); return !!b && b.parentElement.matches('.split-head') && !!b.nextElementSibling && b.nextElementSibling.matches('.split-toggle'); })()"))
     expect("no separate image button (Ctrl+V only)", pg.locator(".pad-image").count() == 0)
     tasks = pg.evaluate("[...document.querySelectorAll('#exercises li[id]')].filter((li) => li.querySelector(':scope > .task')).map((li) => li.id)")
     # another chapter's solution in the same store must stay out
@@ -296,13 +305,13 @@ with sync_playwright() as p:
     rhead = (f"<script>{js('mock')}</script><script>MOCK.load({json.dumps(state)});</script>".replace("</script><script>MOCK", "</script><script>MOCK").replace(json.dumps(state), json.dumps(state).replace("</", "<\\/"))
              + f"<script>{js('Tehtavat.gs')}</script><script>{js('Code.gs')}</script><script>RL_CONFIG.SUBMISSION_FOLDER_ID = {json.dumps(FOLDER)};</script>")
     tp.set_content((GAS / "Review.html").read_text().replace("<head>", "<head>" + rhead, 1))
-    tp.wait_for_selector("#tasks tbody tr")
+    tp.wait_for_selector("#tasks tr.task-row")
     shot(tp, "arviointi-aloitus", full_page=True)
-    home = tp.inner_text("#home")
-    first = tp.locator("#tasks tbody tr").first.inner_text().split("\t")
+    home = tp.inner_text("#tasks tr.task-row")
+    first = tp.locator("#tasks tr.task-row").first.inner_text().split("\t")
     expect("task list: number, submissions, empty, graded (no class-size ratio)", first[0].strip() == "Tehtävä 1-1" and first[2:] == ["3", "0", "0"] and not re.search(r"\b\d+/\d+\b", home), (first, home[:300]))
     expect("the processing state lists invalid, duplicate and to-be-checked rows", all(w in tp.inner_text("#problems") for w in ["Virheellinen", "Kaksoiskappale", "Tarkistettava"]), tp.inner_text("#problems")[:200])
-    tp.locator("#tasks tbody tr").first.click()
+    tp.locator("#tasks tr.task-row").first.click()
     tp.wait_for_function("document.querySelector('#gAnswer .t')")
     tp.wait_for_timeout(200); shot(tp, "arviointi-vastaus", full_page=True)
     expect("one student at a time: 'Opiskelija 1/3', e-mail, time and version", tp.inner_text("#gPos") == "Opiskelija 1/3" and tp.inner_text("#gEmail") == A and "versio 2/2 (uusin)" in tp.inner_text("#gTime"), (tp.inner_text("#gPos"), tp.inner_text("#gEmail"), tp.inner_text("#gTime")))
@@ -355,15 +364,15 @@ with sync_playwright() as p:
     tp.keyboard.press("Escape"); tp.click("#next"); tp.wait_for_function("document.getElementById('gPos').textContent === 'Opiskelija 3/3'")
     expect("the buttons move too", True)
     # B's file in task 1: v1 content; check student 2 is C (empty there? no: C has v1 = answered)
-    tp.click("#back"); tp.wait_for_selector("#tasks tbody tr")
-    first = tp.locator("#tasks tbody tr").first.inner_text().split("\t")
+    go_back(tp)
+    first = tp.locator("#tasks tr.task-row").first.inner_text().split("\t")
     expect("graded count in the list", first[4] == "1", first)
     # "Vain arvioimattomat"
-    tp.check("#onlyOpen"); tp.locator("#tasks tbody tr").first.click(); tp.wait_for_function("document.getElementById('gPos').textContent !== ''")
+    tp.check("#onlyOpen"); tp.locator("#tasks tr.task-row").first.click(); tp.wait_for_function("document.getElementById('gPos').textContent !== ''")
     expect("Vain arvioimattomat leaves out graded students", tp.inner_text("#gPos") == "Opiskelija 1/2" and tp.inner_text("#gEmail") != A, (tp.inner_text("#gPos"), tp.inner_text("#gEmail")))
-    tp.click("#back"); tp.wait_for_selector("#tasks tbody tr"); tp.uncheck("#onlyOpen")
+    go_back(tp); tp.uncheck("#onlyOpen")
     # older version keeps its own points; the latest is the default
-    tp.locator("#tasks tbody tr").first.click(); tp.wait_for_function("!document.getElementById('points').disabled")
+    tp.locator("#tasks tr.task-row").first.click(); tp.wait_for_function("!document.getElementById('points').disabled")
     tp.select_option("#gVer", "0"); tp.wait_for_function("document.getElementById('gTime').textContent.indexOf('versio 1/2') >= 0")
     tp.wait_for_function("!document.getElementById('points').disabled")
     expect("the older version has no points of the newer", tp.input_value("#points") == "")
@@ -372,14 +381,125 @@ with sync_playwright() as p:
     expect("points are kept per version", sc.get((files["v1"]["submission_id"], tasks[0])) == 1 and sc.get((files["v2"]["submission_id"], tasks[0])) == 3, sc)
     # reorder the score sheet: points stay with their student and version
     E("() => { const d = MOCK.sheet('RL Pisteet').data; const head = d.shift(); d.reverse(); d.unshift(head); }")
-    tp.click("#back"); tp.wait_for_selector("#tasks tbody tr"); tp.locator("#tasks tbody tr").first.click(); tp.wait_for_function("!document.getElementById('points').disabled")
+    go_back(tp); tp.locator("#tasks tr.task-row").first.click(); tp.wait_for_function("!document.getElementById('points').disabled")
     expect("after reordering the rows the latest version still shows its own points", tp.input_value("#points") == "3", tp.input_value("#points"))
     # an empty task
-    tp.click("#back"); tp.wait_for_selector("#tasks tbody tr"); tp.locator("#tasks tbody tr").nth(1).click()
+    go_back(tp); tp.locator("#tasks tr.task-row").nth(1).click()
     tp.wait_for_function("document.querySelector('#gAnswer .empty, #gAnswer .t')")
     expect("an unanswered task says so", "jätti tehtävän tyhjäksi" in tp.inner_text("#gAnswer"), tp.inner_text("#gAnswer"))
     expect("no formulas were written to the sheets", not E("MOCK.formulas"), E("MOCK.formulas"))
     expect("no script errors in the grading view", not terr, terr)
+
+    # ---------------- the local grading page (eduespoo blocks Apps Script; teacher 2026-11-05) ----------------
+    # The whole course on one page; one Forms form, so one Drive folder and one zip, per group.
+    import zipfile, hashlib
+    gs = (GAS / "Tehtavat.gs").read_text()
+    course = json.loads(gs[gs.index("{"):gs.rindex(";")])
+    ch2 = [c for c in course["chapters"] if c["id"] == "fy3-2"][0]
+
+    def chapter_file(ch, text):
+        answers = [{"task": t["id"], "status": "answered" if i == 0 else "empty", "content": [{"type": "text", "text": text}] if i == 0 else []} for i, t in enumerate(ch["tasks"])]
+        canon = json.dumps(answers, ensure_ascii=False, separators=(",", ":"))
+        return json.dumps({"format": "ruukkilabra-palautus", "version": 1, "chapter": ch["id"], "lang": "fi", "submission_id": hashlib.md5(text.encode()).hexdigest(),
+                           "exported": "2026-11-05T12:00:00.000Z", "includes": "solution-editor", "content_sha256": hashlib.sha256(canon.encode()).hexdigest(), "answers": answers})
+
+    def make_zip(path, form, entries):
+        with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
+            for name, text, when in entries:
+                zi = zipfile.ZipInfo(f"{form} (File responses)/Palauta vastaukset (File responses)/" + name, date_time=when); zi.compress_type = zipfile.ZIP_DEFLATED
+                z.writestr(zi, text)
+    zpath, zpath2 = tmp / "ryhma-a.zip", tmp / "ryhma-b.zip"
+    make_zip(zpath, "FY3 ryhmä A", [
+        ("fy3-1.ratkaisut - Aino Opiskelija.json", json.dumps(files["v1"]), (2026, 11, 5, 10, 0, 0)),
+        ("fy3-1.ratkaisut (1) - Aino Opiskelija.json", json.dumps(files["v1"]), (2026, 11, 5, 10, 5, 0)),
+        ("fy3-1.ratkaisut - Bertta Opiskelija.json", json.dumps(files["v1"]), (2026, 11, 5, 10, 10, 0)),
+        ("fy3-1.ratkaisut (2) - Aino Opiskelija.json", json.dumps(files["v2"]), (2026, 11, 5, 11, 0, 0)),
+        ("fy3-2.ratkaisut - Aino Opiskelija.json", chapter_file(ch2, "Ainon työ ja energia"), (2026, 11, 5, 11, 15, 0)),
+        ("kuva - Cecilia Opiskelija.json", "<html><script>alert(1)</script></html>", (2026, 11, 5, 11, 30, 0))])
+    make_zip(zpath2, "FY3 ryhmä B", [("fy3-2.ratkaisut - Daniel Opiskelija.json", chapter_file(ch2, "Danielin työ ja energia"), (2026, 11, 6, 9, 0, 0))])
+    page = ROOT / "palautus/arviointi-fy3.html"
+    lctx = b.new_context(accept_downloads=True, viewport={"width": 1400, "height": 900}, bypass_csp=True)   # the test itself evaluates scripts; the page keeps its CSP for the teacher
+    lp = lctx.new_page(); lerr = []; net = []
+    lp.on("pageerror", lambda e: lerr.append(str(e)))
+    lp.on("request", lambda r: net.append(r.url) if not r.url.startswith(("file:", "data:", "blob:")) else None)
+    lp.on("dialog", lambda d: d.accept())
+    lmsg = lambda: lp.inner_text("#localMsg")
+
+    def load(zp, want="tiedostoa"):
+        lp.evaluate("document.getElementById('localMsg').textContent = ''")
+        lp.set_input_files("#pick", str(zp))
+        lp.wait_for_function("(w) => document.getElementById('localMsg').textContent.indexOf(w) >= 0", arg=want)
+        lp.wait_for_function("document.getElementById('homeState').textContent !== 'Ladataan…'")
+
+    def add_group(name):
+        lp.fill("#newGroup", name); lp.click("#addGroup")
+        lp.wait_for_function("(g) => document.getElementById('title').textContent.indexOf('ryhmä ' + g) >= 0", arg=name)
+    lp.goto(page.as_uri())
+    lp.wait_for_selector("#pick")
+    expect("local page: asks for a group first, no zip before it", "Lisää ensin ryhmä" in lmsg() and lp.is_disabled("#pick"), lmsg())
+    expect("local page: the whole course, chapters in teaching order", lp.locator("details.chapter").count() == len(course["chapters"]) >= 16
+           and lp.locator("details.chapter").nth(3).get_attribute("data-chapter") == "fy3-13", lp.locator("details.chapter").count())
+    add_group("FY3.1")
+    load(zpath)
+    msg = lmsg()
+    expect("local page: reads the group's Drive zip and imports (name from the Forms file name)", "Ryhmä FY3.1: luettu 6 tiedostoa" in msg and "hyväksyttyjä 3" in msg and "kaksoiskappaleita 1" in msg and "tarkistettavia 1" in msg and "virheellisiä 1" in msg, msg)
+    expect("local page: problems list with chapter, names and an accept button", "Bertta Opiskelija" in lp.inner_text("#problems") and "Luku 1" in lp.inner_text("#problems") and lp.locator("#problems button").count() >= 2, lp.inner_text("#problems")[:300])
+    lp.evaluate("[...document.querySelectorAll('#problems tbody tr')].find((r) => r.cells[2].textContent === 'Bertta Opiskelija').querySelector('button').click()")
+    lp.wait_for_function("document.querySelector('#problems') && document.querySelector('#problems').innerText.indexOf('Hyväksy · peru') >= 0")
+    first = lp.locator("#tasks tr.task-row").first.inner_text().split("\t")
+    expect("local page: accepted student joins the queue (Aino v2 + Bertta)", first[2] == "2", first)
+    c2 = lp.inner_text('details.chapter[data-chapter="fy3-2"] > summary')
+    expect("local page: chapters show their own submissions (chapter 2: Aino only), unsubmitted chapters closed", "palautuksia 1" in c2 and lp.evaluate("document.querySelector('details.chapter[data-chapter=\"fy3-2\"]').open")
+           and not lp.evaluate("document.querySelector('details.chapter[data-chapter=\"fy3-3\"]').open"), c2)
+    lp.locator("#tasks tr.task-row").first.click(); lp.wait_for_function("document.querySelector('#gAnswer .t')")
+    expect("local page: grading title names the chapter", lp.inner_text("#gTitle") == "FY3 · Luku 1 · Tehtävä 1-1", lp.inner_text("#gTitle"))
+    expect("local page: students in the order of their first accepted submission; picture and formula shown", lp.inner_text("#gEmail") == "Bertta Opiskelija" and "versio 1/1" in lp.inner_text("#gTime")
+           and lp.locator("#gAnswer img.shot").count() == 1 and lp.locator("#gAnswer img.math").count() == 1, (lp.inner_text("#gEmail"), lp.inner_text("#gTime")))
+    lp.evaluate("document.activeElement.blur()"); lp.keyboard.press("3"); lp.keyboard.press("ArrowDown")
+    lp.wait_for_function("document.getElementById('gPos').textContent === 'Opiskelija 2/2'")
+    lp.wait_for_function("!document.getElementById('points').disabled"); lp.keyboard.press("0"); lp.keyboard.press("ArrowUp")
+    lp.wait_for_function("document.getElementById('gPos').textContent === 'Opiskelija 1/2'")
+    go_back(lp)
+    # chapter 2, task 1: only Aino
+    lp.locator('details.chapter[data-chapter="fy3-2"] tr.task-row').first.click(); lp.wait_for_function("document.querySelector('#gAnswer .t')")
+    expect("local page: a chapter's queue has only the students who returned it", lp.inner_text("#gPos") == "Opiskelija 1/1" and lp.inner_text("#gEmail") == "Aino Opiskelija" and "Ainon työ" in lp.inner_text("#gAnswer"), (lp.inner_text("#gPos"), lp.inner_text("#gAnswer")))
+    lp.evaluate("document.activeElement.blur()"); lp.keyboard.press("2"); lp.keyboard.press("Enter")
+    lp.wait_for_function("document.getElementById('state').textContent.indexOf('Tallennettu') === 0")
+    go_back(lp)
+    summ = [r.split("\t") for r in lp.inner_text("#summary").split("\n") if r.strip()]
+    shot(lp, "arviointi-yhteenveto", full_page=True)
+    stext = lp.inner_text("#summary")
+    expect("local page: points per chapter and in total per student", "L1" in stext and "L2" in stext and "L3" not in stext and "Aino Opiskelija" in stext and "Bertta Opiskelija" in stext
+           and lp.evaluate("(() => { const r = [...document.querySelectorAll('#summary tbody tr')].map((tr) => [...tr.cells].map((c) => c.childNodes[0] ? c.childNodes[0].textContent : '')); return JSON.stringify(r); })()") == json.dumps([["Aino Opiskelija", "0", "2", "2"], ["Bertta Opiskelija", "3", "", "3"]], separators=(",", ":")), stext)
+    with lp.expect_download() as d: lp.click("#csv")
+    csv = [r.split(";") for r in pathlib.Path(d.value.path()).read_text(encoding="utf-8-sig").splitlines()]
+    n_ch = len(course["chapters"])
+    expect("local page: CSV per group: chapters, total, returned chapters (0 kept apart from not returned)", d.value.suggested_filename == "FY3-FY3.1-pisteet.csv" and csv[0][:3] == ["Opiskelija", "Luku 1 (max 60)", "Luku 2 (max 60)"]
+           and csv[0][n_ch + 1:] == ["Yhteensä", "Palautettuja lukuja", "Arvioitu"] and csv[1][:4] == ["Aino Opiskelija", "0", "2", ""] and csv[1][n_ch + 1:n_ch + 3] == ["2", "2"]
+           and csv[2][:3] == ["Bertta Opiskelija", "3", ""] and csv[2][n_ch + 1:n_ch + 3] == ["3", "1"], (d.value.suggested_filename, csv[:3]))
+    # another group's zip is not read into this group
+    load(zpath2, "Mitään ei luettu")
+    expect("local page: a zip from another group's form is refused", "FY3 ryhmä B" in lmsg() and "Daniel" not in lp.inner_text("#home"), lmsg())
+    # reopen: group, points and imports kept in this browser, files read again without duplicates
+    lp.reload(); lp.wait_for_selector("#tasks tr.task-row"); lp.wait_for_function("document.getElementById('homeState').textContent !== 'Ladataan…'")
+    first = lp.locator("#tasks tr.task-row").first.inner_text().split("\t")
+    expect("local page: after reopening the group, points and imports are kept", lp.input_value("#group") == "FY3.1" and first[2] == "2" and first[4] == "2", (lp.input_value("#group"), first))
+    lp.locator("#tasks tr.task-row").first.click(); lp.wait_for_function("document.querySelector('#gAnswer .err, #gAnswer .t')")
+    expect("local page: without the zip it asks to choose it again", "zip" in lp.inner_text("#gAnswer"), lp.inner_text("#gAnswer"))
+    go_back(lp)
+    load(zpath)
+    expect("local page: reading the same zip again adds nothing", "Uusia palautuksia 0" in lmsg(), lmsg())
+    # a second group: its own form, students and points
+    add_group("FY3.2")
+    expect("local page: a new group starts empty", "Aino" not in lp.inner_text("#home") and lp.is_hidden("#summary"), lp.inner_text("#home")[:200])
+    load(zpath2)
+    expect("local page: the second group has only its own students", "Daniel Opiskelija" in lp.inner_text("#summary") and "Aino" not in lp.inner_text("#summary"), lp.inner_text("#summary"))
+    lp.select_option("#group", "FY3.1"); lp.wait_for_function("document.getElementById('title').textContent.indexOf('ryhmä FY3.1') >= 0")
+    lp.wait_for_function("document.getElementById('homeState').textContent !== 'Ladataan…'")
+    expect("local page: switching back shows the first group's students and points only", "Aino Opiskelija" in lp.inner_text("#summary") and "Daniel" not in lp.inner_text("#summary"), lp.inner_text("#summary"))
+    expect("local page: nothing loaded from the network", not net, net)
+    expect("local page: no script errors", not lerr, lerr)
+    lctx.close()
     b.close()
 srv.shutdown()
 print("all ok" if not fails else f"{fails} failure(s)")
