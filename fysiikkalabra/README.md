@@ -239,6 +239,17 @@ Lessons are reviewed one by one; three small tools keep one physics idea the sam
   and place, in a packet of about 15–25 k tokens instead of the courses' 2 MB of sources; `changed` names the concepts a
   pull request touches, so a concept-wide correction gets one cross-chapter science review (`.claude/commands/lesson.md`).
 
+## Esimerkkikoe
+Each course may end with an example exam after Sovella itsenäisesti (teacher 2026-11-05): the same task format, key
+`<COURSE>/koe` (`content/<lang>/<COURSE>/koe/`, `lessons/<COURSE>/koe/`, ids `<slug>-k<n>`, page `<COURSE>-koe.html`),
+plus `"sections": [{"title": "Osa 2: …", "choose": 2, "tasks": ["fy1-k2", …]}]` (no `choose`: every task counts),
+`"max_points"` (checked against the selection rules), `"minutes"`, and multiple-choice parts
+`{"id": "a", "kind": "choice", "points": 2, "text": "…", "options": ["…", "…", "…", "…"], "correct": 1, "tag": "concept"}`
+whose solution is one `**Perustelu:**` step. The page scores multiple choice when its solution is opened and counts the
+exam total per section under its rule (templates/selfassess.js). Design brief: `docs/exam-guidelines.md`; command
+`/exam <COURSE>`; checks `python scripts/practice.py check <COURSE>/koe`; reviews as for Sovella
+(`practice.py packet <COURSE>/koe --role science|pedagogy|visual`).
+
 ## Sovella itsenäisesti
 Each course ends with a few independent, exam-style tasks (teacher 2026-10-28; principles in NOTES.md §9), a part of
 their own like an exercise set:
