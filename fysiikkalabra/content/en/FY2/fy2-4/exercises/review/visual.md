@@ -1,20 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 094b25cee3a6cbf1
+VERDICT: PASS
+CONTENT-HASH: eddb481aa99052bc
 Mode: delta
-Round: 1
+Round: 2
 
 ## Blocking
-- [Major] fy2-4-L2-08 (390 px render, solution and feedback open) — two formula chains are cut off at the right edge of the card: the feedback of the correct option ends "… = 0." with the rest (60 %) hidden (chain 438 px wide, text column ends 346 px), and Model answer line 2 "E_o = 2500 W · 240 s = 600 000 J =" loses its final "600 kJ" (right edge 406 px). Essential result values are not visible on a phone, the same class as the earlier Finnish phone-width problem — Split them: after the substitution write "so $E_\text{o} = 600\,000\,\text{J} = 600\,\text{kJ}$" on its own, and end the feedback chain at "= 0.60" followed by the percentage in words ("that is $60\,\%$").
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- Rendered at 390 px myself (Playwright, preview/en/fy2-4.html, level open, all feedback and solution open): fy2-4-L2-08, whole card, read in crops; measured every formula against its text column (katex errors: 0, page overflow: none).
-- Opened at 1280 px: fy2-4-open-exercises-L2-1280-10.png (en); formulas, fractions, answer pill and solution set cleanly there.
-- Not opened: the contact sheets and the other tasks of the chapter (unchanged since the earlier PASS); figures (none in the exercise set).
-- Read as text only: wording of the task, options, feedback and solution in English: clear, consistent voice; plain "kJ" in "their unit is kJ" names a unit without a number, not a finding.
-- Changed-text only for the delta: the new task, its solution, and the split-paragraph edit.
+- Round-1 Major confirmed fixed by a live render at 390 px (Playwright, rebuilt preview/en/fy2-4.html, level open, every feedback and the solution open): fy2-4-L2-08, the correct-option feedback (η chain, now "…, that is/eli … = 0.60, which is/eli 60 %") and the Model answer line 2 (now "E_o = 2500 W · 240 s, that is/eli E_o = 600 000 J = 600 kJ"). Read in crops; measured every formula against its text column: none overflows, no clipped chain, KaTeX errors 0, no page-level horizontal overflow.
+- The wrapped lines break after "eli"/"that is" or at an operator, not mid-formula; the solution's fraction chain "η = E_a/E_o = 360 kJ/600 kJ = 0.60 = 60 %" still fits on one row.
+- Not opened: the fresh review/shots 1280 px captures and contact sheets (my render replaces them for this fix), the other tasks of the chapter (unchanged), en language judged from the task text in the render only.
+
+- Hash at the start and at the end of my round: identical.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 5 (English) · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 (English) · accessibility 5
