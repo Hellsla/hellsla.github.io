@@ -534,17 +534,31 @@
    like display maths, instead of overflowing the page. Re-checked on resize and when a <details> opens. */
 (function () {
   const SKIP = '.katex-display,.eq-chain,svg,.sim-tex-layer,.fig-tex,#sim-root';
+  // The punctuation glued after a formula (lesson.html flGlueMath: "⁠." or inside a .math-glue span) cannot start
+  // a line, so it counts in the formula's width; when the formula goes onto its own line, the mark goes with it.
+  const host = k => { const h = k.parentNode; return h && h.nodeName === 'SPAN' && !h.className && h.childNodes.length === 1 ? h : k; };
+  const PUNCT = /^⁠?[,.;:!?)\]]+/;
   function fit(root) {
     const ks = [...(root || document).querySelectorAll('.katex')].filter(k => !k.closest(SKIP));
-    ks.forEach(k => k.classList.remove('kx-wide'));
+    ks.forEach(k => {
+      k.classList.remove('kx-wide');
+      const m = k.querySelector(':scope>.kx-punct');
+      if (m) { const h = host(k), n = h.nextSibling; if (n && n.nodeType === 3) n.data = m.dataset.text + n.data; else h.after(m.dataset.text); m.remove(); }
+    });
     const W = document.documentElement.clientWidth;
     ks.forEach(k => {
       if (!k.offsetParent) return;
       let box = k.parentElement.closest('p,li,td,th,dd,dt,div,summary,figcaption,blockquote,label,.steps,.stage');
       while (box && box.parentElement && getComputedStyle(box).display === 'inline-block') box = box.parentElement;   // an inline-block box grows with the formula (fy5-15 answer)
       const r = k.getBoundingClientRect();
+      const n = host(k).nextSibling, p = n && n.nodeType === 3 && n.data.match(PUNCT);
+      let end = r.right;
+      if (p) { const g = document.createRange(); g.setStart(n, 0); g.setEnd(n, p[0].length); end = Math.max(end, g.getBoundingClientRect().right); }
       const right = Math.min(W, box ? box.getBoundingClientRect().right : W);
-      if (r.right > right + 1 || (box && r.width > box.clientWidth + 1)) k.classList.add('kx-wide');
+      if (end > right + 1 || (box && r.width > box.clientWidth + 1)) {
+        k.classList.add('kx-wide');
+        if (p) { const s = document.createElement('span'); s.className = 'kx-punct'; s.dataset.text = p[0]; s.textContent = p[0].replace('⁠', ''); k.append(s); n.data = n.data.slice(p[0].length); }
+      }
     });
   }
   let t; const later = () => { clearTimeout(t); t = setTimeout(() => fit(), 150); };
