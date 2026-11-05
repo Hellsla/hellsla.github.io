@@ -25,7 +25,7 @@ A_sol = 100 / 0.50 * 0.01                              # solar park 100 : 0,50 =
 a["fy2-8-L3-02"] = A_bio / A_sol                       # ratio of areas: 100 : 2,0 = 50 times
 m_bussi = 30 * 36 * 74 / 25                            # bus per passenger: 30 l · 36 MJ/l · 74 g/MJ = 79 920 g, / 25 = 3196,8 g
 a["fy2-8-L3-03"] = m_bensa / m_bussi                   # car alone / bus per passenger = 13 248 / 3196,8 = 4,14 -> 4,1
-# Exercise bank additions (teacher 2026-11-04): L1-06, L1-07 and L2-07 are multiple choice (no number)
+# Exercise bank additions (teacher 2026-11-04): L1-06, L1-07, L2-07 and L2-08 are multiple choice (no number)
 a["fy2-8-L1-08"] = 12 * 40000 / 1e3                    # nuclear, school 40 000 kWh: m = 12 · 40 000 g = 480 000 g -> 480 kg
 a["fy2-8-L2-05"] = (414 - 380) / (2020 - 2005)          # CO2 data (NOAA, rounded): slope 34 ppm / 15 a = 2,27 -> 2,3 ppm/a
 m10, m20 = 30 + 12 + 10 + 6 + 3, 18 + 10 + 9 + 6 + 2   # sector data: totals 61 Mt and 45 Mt

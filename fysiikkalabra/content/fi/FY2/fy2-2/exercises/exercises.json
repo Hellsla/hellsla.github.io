@@ -98,30 +98,30 @@
     {
       "id": "fy2-2-L1-09",
       "level": 1,
-      "text": "Sähkölaskussa ja laitteiden tiedoissa käytetään monia yksiköitä. Mikä seuraavista on energian yksikkö?",
+      "text": "Pellettikattilan lämpöenergia on $1\\,\\text{MJ}$. Mikä seuraavista arvoista on yhtä suuri kuin $1\\,\\text{MJ}$?",
       "kind": [
         "concept"
       ],
-      "answer": "$\\text{kWh}$",
+      "answer": "$1000\\,\\text{kJ}$",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
-          "text": "$\\text{kW}$",
-          "feedback": "Kilowatti on tehon yksikkö, ei energian. Teho kertoo, kuinka nopeasti energiaa muuttuu muodosta toiseen, kun taas energian määrä mitataan jouleina tai niiden kerrannaisina."
+          "text": "$1000\\,\\text{J}$",
+          "feedback": "Tämä on yksi kilojoule, ei megajoule. Kilo tarkoittaa tuhatta, mutta mega tarkoittaa miljoonaa, joten $1\\,\\text{MJ} = 1\\,000\\,000\\,\\text{J}$."
         },
         {
-          "text": "$\\text{J/s}$",
-          "feedback": "Joule sekunnissa on energia jaettuna ajalla eli teho ($1\\,\\text{J/s} = 1\\,\\text{W}$). Energian yksikkö on pelkkä joule, ei joule aikayksikköä kohti."
+          "text": "$1\\,000\\,000\\,\\text{kJ}$",
+          "feedback": "Tässä miljoonakertainen kerroin on lisätty kilojouleihin, jotka ovat jo tuhatkertaisia. Tämä arvo on $1\\,\\text{GJ}$. Megajoule on tuhat kilojoulea."
         },
         {
-          "text": "$\\text{kW/h}$",
-          "feedback": "Tämä on teho jaettuna ajalla, ei energia. Sähköenergian yksikkö kirjoitetaan kertomalla: kilowatti kertaa tunti, $\\text{kWh}$. Jakaminen tunnilla antaisi aivan eri suureen."
-        },
-        {
-          "text": "$\\text{kWh}$",
-          "feedback": "Oikein: kilowattitunti on tehon ja ajan tulo, joten se on energian yksikkö. Se on $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3{,}6\\,\\text{MJ}$.",
+          "text": "$1000\\,\\text{kJ}$",
+          "feedback": "Oikein: kilo tarkoittaa tuhatta ja mega miljoonaa, joten $1\\,\\text{MJ} = 1\\,000\\,000\\,\\text{J} = 1000\\,\\text{kJ}$.",
           "correct": true
+        },
+        {
+          "text": "$1000\\,\\text{GJ}$",
+          "feedback": "Tässä etuliitteiden suunta on kääntynyt: giga on suurempi kuin mega, joten gigajoule on tuhat megajoulea. Tämä arvo on $1000\\,\\text{GJ} = 1\\,000\\,000\\,\\text{MJ}$."
         }
       ]
     }

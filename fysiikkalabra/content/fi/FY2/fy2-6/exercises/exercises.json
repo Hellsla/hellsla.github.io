@@ -113,7 +113,7 @@
     {
       "id": "fy2-6-L1-09",
       "level": 1,
-      "text": "Esimerkkinä olevan tuulivoimalan nimellisteho on $3{,}0\\,\\text{MW}$ ja sen keskiteho on vuoden aikana $33\\,\\%$ nimellistehosta.\n\nEsimerkkinä olevan omakotitalon sähkönkulutus on $5000\\,\\text{kWh}$ vuodessa.\n\nNoin kuinka monen omakotitalon vuosikulutuksen voimala tuottaa vuodessa ($8760\\,\\text{h}$)? Valitse suuruusluokaltaan oikea vastaus.",
+      "text": "Tuulivoimalan nimellisteho on $3{,}0\\,\\text{MW}$ ja sen keskiteho on vuoden aikana $33\\,\\%$ nimellistehosta.\n\nOmakotitalon sähkönkulutus on $5000\\,\\text{kWh}$ vuodessa.\n\nNoin kuinka monen omakotitalon vuosikulutuksen voimala tuottaa vuodessa ($8760\\,\\text{h}$)? Valitse lähin arvo.",
       "kind": [
         "reasoning"
       ],
@@ -135,8 +135,8 @@
           "correct": true
         },
         {
-          "text": "noin $20\\,000$ taloa",
-          "feedback": "Tämä saadaan, kun voimalan vuosienergia jaetaan talon kuukausikulutuksella, noin $420\\,\\text{kWh}$, vaikka annettu $5000\\,\\text{kWh}$ on koko vuoden kulutus. Silloin vuosi lasketaan kahteen kertaan, ja luku on yli kymmenen kertaa liian suuri."
+          "text": "noin $5000$ taloa",
+          "feedback": "Tämä saadaan, kun lasketaan nimellisteholla $3{,}0\\,\\text{MW}$ keskitehon $0{,}33 \\cdot 3{,}0\\,\\text{MW}$ sijaan. Silloin vuosienergia on noin $2{,}6 \\cdot 10^{7}\\,\\text{kWh}$ ja taloja tulee noin $5000$. Voimala ei kuitenkaan tuota nimellisteholla koko vuotta, koska tuuli ei puhalla koko ajan, vaan vuosienergia lasketaan keskiteholla."
         }
       ]
     }

@@ -253,7 +253,7 @@
     {
       "id": "fy2-4-L2-08",
       "level": 2,
-      "text": "Sähkömoottori ottaa sähköverkosta tehon $2{,}5\\,\\text{kW}$ ja käy $4{,}0\\,\\text{min}$. Sinä aikana se antaa liike-energiaa $360\\,\\text{kJ}$. Oppilas laski moottorin hyötysuhteen näin:\n\nRivi 1: $P_\\text{o} = 2{,}5\\,\\text{kW} = 2{,}5 \\cdot 1000\\,\\text{W} = 2500\\,\\text{W}$ ja $t = 4{,}0\\,\\text{min} = 4{,}0 \\cdot 60\\,\\text{s} = 240\\,\\text{s}$.\n\nRivi 2: $E_\\text{o} = P_\\text{o} \\cdot t = 2500\\,\\text{W} \\cdot 240\\,\\text{s} = 600\\,000\\,\\text{J} = 600\\,\\text{kJ}$.\n\nRivi 3: $E_\\text{h} = E_\\text{o} - E_\\text{a} = 600\\,\\text{kJ} - 360\\,\\text{kJ} = 240\\,\\text{kJ}$.\n\nRivi 4: $\\eta = E_\\text{o} : E_\\text{a} = 600\\,\\text{kJ} : 360\\,\\text{kJ} = 1{,}67 = 167\\,\\%$.\n\nMikä rivi on väärin?",
+      "text": "Sähkömoottori ottaa sähköverkosta tasaisesti tehon $2{,}5\\,\\text{kW}$ ja käy $4{,}0\\,\\text{min}$. Sinä aikana se antaa liike-energiaa $360\\,\\text{kJ}$. Oppilas laski moottorin hyötysuhteen näin:\n\nRivi 1: teho $P_\\text{o} = 2{,}5\\,\\text{kW} = 2500\\,\\text{W}$ ja aika $t = 4{,}0\\,\\text{min} = 240\\,\\text{s}$.\n\nRivi 2: otettu energia $E_\\text{o} = P_\\text{o} \\cdot t$, eli $E_\\text{o} = 2500\\,\\text{W} \\cdot 240\\,\\text{s}$, joten $E_\\text{o} = 600\\,\\text{kJ}$.\n\nRivi 3: häviöenergia $E_\\text{h} = E_\\text{o} - E_\\text{a}$, eli $E_\\text{h} = 600\\,\\text{kJ} - 360\\,\\text{kJ}$, joten $E_\\text{h} = 240\\,\\text{kJ}$.\n\nRivi 4: hyötysuhde $\\eta = E_\\text{o} : E_\\text{a}$, eli $\\eta = 600\\,\\text{kJ} : 360\\,\\text{kJ}$, joten $\\eta = 1{,}67 = 167\\,\\%$.\n\nMikä rivi on väärin?",
       "kind": [
         "error",
         "reasoning"

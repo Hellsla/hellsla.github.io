@@ -72,15 +72,19 @@
 ## fy2-6-L1-09
 **Kysytty:** noin kuinka monen omakotitalon vuosikulutuksen tuulivoimala tuottaa vuodessa, suuruusluokka
 **Periaate:** Voimala tuottaa energian $E = P_\text{ka}\, t$, ja tuulivoimalan keskiteho on annettu osuus nimellistehosta. Talojen määrä saadaan jakamalla voimalan vuosienergia yhden talon vuosikulutuksella, kun molemmat ovat samassa yksikössä.
-**Mallivastaus:** Keskiteho on $P_\text{ka} = 0{,}33 \cdot 3{,}0\,\text{MW} = 0{,}99\,\text{MW} = 990\,\text{kW}$.
+**Mallivastaus:** Keskiteho on
+$P_\text{ka} = 0{,}33 \cdot 3{,}0\,\text{MW}$,
+eli $P_\text{ka} = 0{,}99\,\text{MW} = 990\,\text{kW}$.
 
-Vuosienergia on $E = 990\,\text{kW} \cdot 8760\,\text{h} = 8{,}67 \cdot 10^{6}\,\text{kWh}$.
+Vuosienergia on $E = 990\,\text{kW} \cdot 8760\,\text{h}$,
+eli $E = 8{,}67 \cdot 10^{6}\,\text{kWh}$.
 
-Talojen määrä on $8{,}67 \cdot 10^{6}\,\text{kWh} : 5000\,\text{kWh} \approx 1700$ eli suuruusluokaltaan $2000$ taloa.
+Talojen määrä on $8{,}67 \cdot 10^{6}\,\text{kWh} : 5000\,\text{kWh}$,
+eli noin $1700$, joten lähin vaihtoehto on $2000$ taloa.
 
 Arvio pyöreillä luvuilla: keskiteho on noin $1\,\text{MW}$, joten vuosienergia on noin $1000\,\text{kW} \cdot 9000\,\text{h} = 9 \cdot 10^{6}\,\text{kWh}$, ja $9 \cdot 10^{6} : 5000 \approx 2000$.
 
-Muut vaihtoehdot: $2$ taloa syntyy, kun megawattitunnit ja kilowattitunnit jaetaan keskenään muuntamatta (tuhat kertaa liian pieni). $200$ taloa syntyy, kun osuus $33\,\%$ luetaan väärin kymmenesosaksi. $20\,000$ taloa syntyy, kun vuosienergia jaetaan kuukausikulutuksella. Jos käytettäisiin nimellistehoa, tulokseksi tulisi väärin noin $5000$ taloa, koska tuuli ei puhalla koko ajan.
+Muut vaihtoehdot: $2$ taloa syntyy, kun megawattitunnit ja kilowattitunnit jaetaan keskenään muuntamatta (tuhat kertaa liian pieni). $200$ taloa syntyy, kun osuus $33\,\%$ luetaan väärin kymmenesosaksi. $5000$ taloa syntyy, kun käytetään keskitehon sijaan nimellistehoa: $3{,}0\,\text{MW} \cdot 8760\,\text{h} : 5000\,\text{kWh} \approx 5300$. Se on väärin, koska tuuli ei puhalla koko ajan, joten energia lasketaan keskiteholla.
 
 ## fy2-6-L2-01
 **Annettu:** nimellisteho $P_\text{nim} = 25\,\text{MW}$, keskiteho $32\,\%$ nimellistehosta, aika $t = 8760\,\text{h}$

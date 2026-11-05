@@ -145,9 +145,14 @@
 **Järkevyys:** Megajoule on gigajoulea pienempi yksikkö, joten lukuarvon on kasvettava. Tulos on noin $350 : 32 \approx 11$ bensiinilitran energia, kun litrassa on $32\,\text{MJ}$.
 
 ## fy2-2-L1-09
-**Kysytty:** mikä neljästä yksiköstä on energian yksikkö.
-**Periaate:** Energian määrä ja teho ovat eri suureita. Energia kertoo, kuinka paljon energiaa muuttuu muodosta toiseen, ja sen yksikkö on joule tai sen kerrannainen. Teho kertoo, kuinka paljon energiaa muuttuu aikayksikössä, joten tehon yksikkö on energia jaettuna ajalla. Kun teho kerrotaan ajalla, tuloksena on taas energia.
-**Mallivastaus:** Yksikkö $\text{kW}$ on tehon yksikkö. Yksikkö $\text{J/s}$ on energia jaettuna ajalla, joten sekin on tehon yksikkö ($1\,\text{J/s} = 1\,\text{W}$). Yksikkö $\text{kW/h}$ on teho jaettuna ajalla, eikä se ole energian yksikkö. Yksikkö $\text{kWh}$ on teho kertaa aika, joten se on energian yksikkö: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3\,600\,000\,\text{J} = 3{,}6\,\text{MJ}$. Oikea vastaus on $\text{kWh}$.
+**Annettu:** energia $1\,\text{MJ}$
+**Kysytty:** mikä neljästä arvosta on yhtä suuri kuin $1\,\text{MJ}$.
+**Periaate:** Etuliite on kerroin, ja energia pysyy samana, kun sen ilmoitustapa vaihtuu. Kilo tarkoittaa tuhatta, mega miljoonaa ja giga miljardia, joten jokainen näistä on tuhat kertaa edellistä suurempi.
+**Kaava:** $1\,\text{kJ} = 1000\,\text{J}$ ja $1\,\text{MJ} = 1000\,\text{kJ}$
+**Muunnokset:** Megajoule muutetaan kilojouleiksi: $1\,\text{MJ} = 1\,000\,000\,\text{J} = 1\,000\,000 : 1000\,\text{kJ}$.
+**Sijoitus:** $1\,\text{MJ} = 1000\,\text{kJ}$
+**Vastaus:** Oikea vastaus on $1000\,\text{kJ}$. Arvo $1000\,\text{J}$ on vain $1\,\text{kJ}$, arvo $1\,000\,000\,\text{kJ}$ on $1\,\text{GJ}$ ja arvo $1000\,\text{GJ}$ on miljoona kertaa liian suuri.
+**Järkevyys:** Megajoule on suurempi yksikkö kuin kilojoule, joten sama energia on kilojouleina suurempi luku. Tarkistus: $1000\,\text{kJ} \cdot 1000 = 1\,000\,000\,\text{J}$.
 
 ## fy2-2-L2-05
 **Annettu:** taulukon ruoat: kaurapuuro $250\,\text{g}$ ($300\,\text{kJ}$ sadassa grammassa), banaani $120\,\text{g}$ ($400\,\text{kJ}$) ja appelsiinimehu $200\,\text{g}$ ($190\,\text{kJ}$); kävelyn kulutus $220\,\text{kJ}$ kilometriä kohti
