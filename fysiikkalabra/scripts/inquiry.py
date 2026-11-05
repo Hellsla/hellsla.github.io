@@ -1,7 +1,7 @@
 """Inquiry-based lesson structure: validation and rendering of content/<lang>/<course>/<id>/inquiry.json (format version 1).
 
-A lesson with inquiry.json is rendered as stages — Pohdinta → Ennusta → Tutki → Teoria → Harjoittele →
-Tarkista osaamisesi (Teoria and Harjoittele were Teoriatiivistelmä and Sovella until 2026-11-05) — each holding activities; stages may repeat, be omitted, or hold the lesson's existing
+A lesson with inquiry.json is rendered as stages — Pohdinta → Ennusta → Tutki → Teoria → Esimerkit →
+Tarkista osaamisesi (Teoria and Esimerkit were Teoriatiivistelmä and Sovella until 2026-11-05; Esimerkit was Harjoittele for a day, teacher: "pitää olla lyhyt") — each holding activities; stages may repeat, be omitted, or hold the lesson's existing
 parts (theory sections of lesson.md, the simulation, the exit ticket). The exit ticket opens Tarkista osaamisesi,
 before its checks, with no link of its own in the navigation (teacher 2026-11-04: one step fewer). The exercises always
 come last, in their own section "Tehtävät". A lesson without the file renders in the classic layout. See
@@ -46,10 +46,10 @@ SOURCES = ("measured", "statistics", "simulated", "model", "example")   # statis
 RESERVED_IDS = {"sim", "sim-root", "exercises", "exit", "teoria", "herata", "ennusta", "tutki", "selita", "sovella", "tarkista"}   # ids the page already uses
 
 
-# The stages Teoriatiivistelmä and Sovella were renamed Teoria and Harjoittele (teacher 2026-11-05: the theory stage holds
+# The stages Teoriatiivistelmä and Sovella were renamed Teoria and Esimerkit (teacher 2026-11-05: the theory stage holds
 # more than a summary, and Sovella holds a worked example and practice). The texts written before name them the old way
 # ("Palaute avautuu, kun olet lukenut Teoriatiivistelmän kohdan …"); the page shows the new names, so the reviewed
-# content (and its hash) stays as it is. New text names the stages Teoria / Harjoittele (Theory / Practice) directly.
+# content (and its hash) stays as it is. New text names the stages Teoria / Esimerkit (Theory / Examples) directly.
 _BACK = str.maketrans("äöÄÖ", "aoAO")             # tiivistelmä takes front-vowel endings, teoria back-vowel ones
 def _teoria(m):                                   # Teoriatiivistelmä(n) → Teoria(n); a place case → Teoria-osassa, not "teoriassa" (= in theory)
     end = m.group(2)
@@ -705,7 +705,7 @@ def render(folder, inquiry, parts, md):
             inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side">{act(items[si])}</div>'
                      f'<div class="lab-main">{flow(items[si + 1:])}</div></div>')
         else: inner = flow(items)
-        if sid == cards_at: inner += parts["cards"]       # the chapter's concept cards close Harjoittele (teacher 2026-11-05)
+        if sid == cards_at: inner += parts["cards"]       # the chapter's concept cards close Esimerkit (teacher 2026-11-05)
         if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
             k = sum(1 for a in items if a["type"] == "choice")
             inner = (f'<details class="fold" data-fold="{sid}"><summary><span class="fold-title">{T("inquiry.fold_title")}</span> '

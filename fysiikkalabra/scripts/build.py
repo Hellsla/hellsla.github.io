@@ -728,7 +728,7 @@ def build_language(lang):
             (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
         name = f"{meta['id']}.html"
         titles = chapter_titles(meta["course"])
-        kc_section = concept_cards.lesson_section(meta["course"], meta["id"], T, lang, titles)   # "Kertaa luvun käsitteet": the end of Harjoittele (teacher 2026-11-05)
+        kc_section = concept_cards.lesson_section(meta["course"], meta["id"], T, lang, titles)   # "Kertaa luvun käsitteet": the end of Esimerkit (teacher 2026-11-05)
         if inq is None:                                   # classic layout: theory (with the sim inside), exit ticket, exercises
             sim = sim.replace("<!--sim-info-->", "")
             if sim and "<!-- sim -->" in lesson_html: lesson_html = lesson_html.replace("<!-- sim -->", sim, 1)

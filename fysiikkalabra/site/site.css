@@ -547,7 +547,7 @@ h2.intro-h{margin:0 0 .45rem;font:700 var(--fs-small)/1.3 var(--sans);letter-spa
 .stage>h2{display:flex;align-items:center;gap:.7rem;margin:0 0 1.25rem;padding-top:1.1rem;border-top:2px solid var(--ink)}
 .stage-no{display:inline-grid;place-items:center;flex:none;width:2rem;height:2rem;border-radius:50%;background:var(--accent-deep);color:#fff;font:700 .95rem var(--sans)}
 .stage-practice>h2{border-top-color:var(--accent-deep)}
-.stage>.stage-lead{max-width:var(--measure);margin:-.4rem 0 1.4rem;font-size:var(--fs-ui);line-height:1.5;color:var(--ink-2)}   /* what Harjoittele and Tarkista osaamisesi are for (teacher 2026-11-05) */
+.stage>.stage-lead{max-width:var(--measure);margin:-.4rem 0 1.4rem;font-size:var(--fs-ui);line-height:1.5;color:var(--ink-2)}   /* what Esimerkit and Tarkista osaamisesi are for (teacher 2026-11-05) */
 /* Tasks beside the theory (teacher 2026-11-05, lesson.js part 9): not the default. From 1100 px "Avaa tehtävät teorian
    viereen" (or the Tehtävät link) turns #exercises into a panel on the right that scrolls on its own; the page (stage
    bar, lesson, footer) narrows to the left and keeps scrolling with the window. Its own container, so what is inside
