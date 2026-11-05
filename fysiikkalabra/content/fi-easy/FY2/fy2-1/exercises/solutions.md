@@ -112,7 +112,7 @@
 **Muunnokset:** Kaikki energiat ovat gigajouleina, joten muunnoksia ei tarvita. Osuus muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** Summa on $E_\text{yht} = 36{,}0\,\text{GJ} + 10{,}5\,\text{GJ} + 9{,}0\,\text{GJ} + 4{,}5\,\text{GJ} = 60{,}0\,\text{GJ}$, joten osuus on $\dfrac{36{,}0\,\text{GJ}}{60{,}0\,\text{GJ}} = 0{,}600 = 60{,}0\,\%$
 **Vastaus:** Lämmityksen osuus on $60\,\%$ kulutuksesta. Suurin säästökohde on tilojen lämmitys, koska siinä kuluu eniten energiaa. Kymmenen prosentin säästö lämmityksessä vähentäisi kulutusta $3{,}6\,\text{GJ}$. Sama säästö saunassa vähentäisi kulutusta vain $0{,}45\,\text{GJ}$.
-**Järkevyys:** Osuus on välillä $0$–$100\,\%$. Lämmitys on suurin erä, joten yli puolet on uskottava pohjoisessa asuinrakennuksessa. Tarkistus osuuksien summalla: $60\,\% + 17{,}5\,\% + 15\,\% + 7{,}5\,\% = 100\,\%$.
+**Järkevyys:** Osuus on välillä $0$–$100\,\%$. Lämmitys on suurin erä, joten yli puolet on uskottava pohjoisessa asuinrakennuksessa. Tarkistus osuuksien summalla: $60\,\% + 17{,}5\,\% = 77{,}5\,\%$ ja $15\,\% + 7{,}5\,\% = 22{,}5\,\%$, yhteensä $77{,}5\,\% + 22{,}5\,\% = 100\,\%$.
 
 ## fy2-1-L2-06
 **Annettu:** putoavan veden potentiaalienergian väheneminen $100\,\text{J}$ kierroksella, generaattorin sähköenergia $100\,\text{J}$, pumpun käyttämä sähköenergia $80\,\text{J}$, vesi palaa yläaltaaseen

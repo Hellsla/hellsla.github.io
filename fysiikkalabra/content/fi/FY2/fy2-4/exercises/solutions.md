@@ -196,6 +196,6 @@ Vuodessa lamppu ottaa energian $E_\text{o,v} = 0{,}0090\,\text{kW} \cdot 1095\,\
 **Kysytty:** mikä oppilaan laskun riveistä on väärin.
 **Periaate:** Hyötysuhde on hyötyenergian osuus otetusta energiasta, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, joten se on enintään $100\,\%$. Laskun voi tarkistaa rivi riviltä: yksikkömuunnokset, tasaisen tehon energia $E = P \cdot t$, energian säilyminen $E_\text{o} = E_\text{a} + E_\text{h}$ ja suhteen suunta.
 **Mallivastaus:** Rivi 1: $2{,}5\,\text{kW} = 2500\,\text{W}$ ja $4{,}0\,\text{min} = 240\,\text{s}$ ovat oikein.
-Rivi 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s} = 600\,000\,\text{J} = 600\,\text{kJ}$ on oikein.
+Rivi 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s}$, eli $E_\text{o} = 600\,000\,\text{J} = 600\,\text{kJ}$ on oikein.
 Rivi 3: $E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}$ on oikein.
 Rivi 4 on väärin, koska energiat on jaettu väärinpäin. Oikein $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{360\,\text{kJ}}{600\,\text{kJ}} = 0{,}60 = 60\,\%$. Tarkistus: hyötysuhde $167\,\%$ olisi yli $100\,\%$, ja oikea tulos sopii riviin 3, sillä $240\,\text{kJ} : 600\,\text{kJ} = 0{,}40$ ja $60\,\% + 40\,\% = 100\,\%$. Oikea vastaus on siis rivi 4.

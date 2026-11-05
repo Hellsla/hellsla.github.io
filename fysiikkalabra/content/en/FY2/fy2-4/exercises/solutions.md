@@ -196,6 +196,6 @@ In a year the lamp takes the energy $E_\text{o,y} = 0.0090\,\text{kW} \cdot 1095
 **Find:** which of the lines of the student's calculation is wrong.
 **Principle:** Efficiency is the share of the useful energy in the energy taken, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, so it is at most $100\,\%$. The calculation can be checked line by line: the unit conversions, the energy at steady power $E = P \cdot t$, the conservation of energy $E_\text{o} = E_\text{a} + E_\text{h}$, and the direction of the ratio.
 **Model answer:** Line 1: $2.5\,\text{kW} = 2500\,\text{W}$ and $4.0\,\text{min} = 240\,\text{s}$ are correct.
-Line 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s} = 600\,000\,\text{J} = 600\,\text{kJ}$ is correct.
+Line 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s}$, that is $E_\text{o} = 600\,000\,\text{J} = 600\,\text{kJ}$ is correct.
 Line 3: $E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}$ is correct.
 Line 4 is wrong, because the energies have been divided the wrong way round. The correct calculation is $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{360\,\text{kJ}}{600\,\text{kJ}} = 0.60 = 60\,\%$. Check: an efficiency of $167\,\%$ would be over $100\,\%$, and the correct result fits line 3, because $240\,\text{kJ} : 600\,\text{kJ} = 0.40$ and $60\,\% + 40\,\% = 100\,\%$. So the correct answer is line 4.

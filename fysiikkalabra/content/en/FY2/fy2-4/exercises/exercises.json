@@ -277,7 +277,7 @@
         {
           "text": "Line 4: calculating the efficiency",
           "correct": true,
-          "feedback": "Correct, this line is wrong: the numerator and the denominator have been swapped. Efficiency is the useful energy divided by the energy taken, $\\eta = E_\\text{a} : E_\\text{o} = 360\\,\\text{kJ} : 600\\,\\text{kJ} = 0.60 = 60\\,\\%$. The result $167\\,\\%$ alone is a sign of an error, because efficiency is at most $100\\,\\%$."
+          "feedback": "Correct, this line is wrong: the numerator and the denominator have been swapped. Efficiency is the useful energy divided by the energy taken, $\\eta = E_\\text{a} : E_\\text{o}$, that is $\\eta = 360\\,\\text{kJ} : 600\\,\\text{kJ} = 0.60$, which is $60\\,\\%$. The result $167\\,\\%$ alone is a sign of an error, because efficiency is at most $100\\,\\%$."
         },
         {
           "text": "There is no error in the calculation",
