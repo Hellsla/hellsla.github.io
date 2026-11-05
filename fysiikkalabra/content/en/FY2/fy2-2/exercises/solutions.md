@@ -151,7 +151,7 @@
 **Formula:** $1\,\text{kJ} = 1000\,\text{J}$ and $1\,\text{MJ} = 1000\,\text{kJ}$
 **Conversions:** The megajoule is converted to kilojoules: $1\,\text{MJ} = 1\,000\,000\,\text{J} = 1\,000\,000 : 1000\,\text{kJ}$.
 **Substitution:** $1\,\text{MJ} = 1000\,\text{kJ}$
-**Answer:** The correct answer is $1000\,\text{kJ}$. The value $1000\,\text{J}$ is only $1\,\text{kJ}$, the value $1\,000\,000\,\text{kJ}$ is $1\,\text{GJ}$, and the value $1000\,\text{GJ}$ is a million times too large.
+**Model answer:** The correct answer is $1000\,\text{kJ}$. The value $1000\,\text{J}$ is only $1\,\text{kJ}$, the value $1\,000\,000\,\text{kJ}$ is $1\,\text{GJ}$, and the value $1000\,\text{GJ}$ is a million times too large.
 **Reasonableness:** The megajoule is a larger unit than the kilojoule, so the same energy is a greater number in kilojoules. Check: $1000\,\text{kJ} \cdot 1000 = 1\,000\,000\,\text{J}$.
 
 ## fy2-2-L2-05

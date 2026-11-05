@@ -151,7 +151,7 @@
 **Kaava:** $1\,\text{kJ} = 1000\,\text{J}$ ja $1\,\text{MJ} = 1000\,\text{kJ}$
 **Muunnokset:** Megajoule muutetaan kilojouleiksi: $1\,\text{MJ} = 1\,000\,000\,\text{J} = 1\,000\,000 : 1000\,\text{kJ}$.
 **Sijoitus:** $1\,\text{MJ} = 1000\,\text{kJ}$
-**Vastaus:** Oikea vastaus on $1000\,\text{kJ}$. Arvo $1000\,\text{J}$ on vain $1\,\text{kJ}$. Arvo $1\,000\,000\,\text{kJ}$ on $1\,\text{GJ}$. Arvo $1000\,\text{GJ}$ on miljoona kertaa liian suuri.
+**Mallivastaus:** Oikea vastaus on $1000\,\text{kJ}$. Arvo $1000\,\text{J}$ on vain $1\,\text{kJ}$. Arvo $1\,000\,000\,\text{kJ}$ on $1\,\text{GJ}$. Arvo $1000\,\text{GJ}$ on miljoona kertaa liian suuri.
 **Järkevyys:** Megajoule on suurempi yksikkö kuin kilojoule. Sama energia on siis kilojouleina suurempi luku. Tarkistus: $1000\,\text{kJ} \cdot 1000 = 1\,000\,000\,\text{J}$.
 
 ## fy2-2-L2-05
