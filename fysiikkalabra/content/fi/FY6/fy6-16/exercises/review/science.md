@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 314a764bcc4556f0
+CONTENT-HASH: 81bbe5b3454f7162
+Round 2: full review of the exercise set after the round-1 fixes (commit f8abf016e, diff from d0ea57642).
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json:13 (L1-02) — the cable limits the current to 10 A on an ordinary socket, while the lesson says "yleensä noin 8 A". Consider 8 A, or say the cable is set to 10 A.
-- solutions.md:79 (L2-03) — a maximum of 11,96 A is rounded up to 12 A, which puts the phase at 25,04 A. Consider "enintään noin 12 A (11,96 A)".
+- solutions.md:155 (L2-05 Vastaus) — 10,45 kW is an upper limit, and rounding it up to 10,5 kW gives a power the main fuse no longer allows (10,5 kW → 25,1 A). Write "enintään noin $10{,}4\,\text{kW}$ (tarkasti $10{,}45\,\text{kW}$); ylärajaa ei pyöristetä ylöspäin".
+- docs/exercise-bank/FY6.md (fy6-16), carried from round 1 — the price comparison at different times (Taso 2) and the emission comparison (Taso 3; L3-04 has costs only) are not covered. The Taso 1 calculations (charging time; P = 3UI) are also replaced by L1-07 (W = Pt) and L1-08 (RI²). Update the plan, or add the parts.
+- exercises.json:74, :82 (L1-07, L1-08) — no `kind` field; the other new tasks have one. Add `"kind": ["reasoning"]` or what applies.
 
 ## Checked
-- Round 2, judged from the diff HEAD~1..HEAD: solutions.md and the lataus-ex figure code.
-- Round-1 blocking item (L3-02) is resolved: 156 % is now justified as an exact result because 10 A and 16 A are the charger's exact settings. The answer 156 and the tolerance 0,02 are unchanged and consistent.
-- L3-01's reasonableness check now names its bases (3260 kWh and 3660 kWh): 397,7 : 3660 ≈ 11 % and 397,7 : 3260 ≈ 12 %, so "10–12 %" holds.
-- L3-01's 82 % and 92 % now lie inside the lesson's stated typical range of 80–95 %.
-- lataus-ex: the y gridlines are now at 2, 4, 5,5, 8 and 11 kW, placed linearly (render checked at 1280 px). The values 11 kW and 5,5 kW can be read directly; the description states the same gridlines and values; no energy is written on the figure.
-- answers.py re-run: all 12 answers still match my own recomputation (41,6; 2,3; 15,94; 6,30; 88; 27,5; 10,87; 11,96; 6,528; 59,65; 156; 7,157).
-- The €/kWh notation edits in L1-04 and L3-01 change no number.
+- Hash 81bbe5b3454f7162 at start and end.
+- Round-1 Blocking resolved: L2-05 now states "Oletetaan, että talon teho pysyy kunkin tunnin ajan taulukon arvossa", and c) says the conclusion holds under that assumption and that peaks within an hour may still need load management.
+- Round-1 Polish fixed: L2-07 a) and b) are limited to the measured period 0–3,0 h; L2-05 Kysytty includes c); the L1-06 feedback gives 60 kWh : 11 kW ≈ 5,5 h without losses; the L3-04 rounding reason is the 2-digit electricity cost (390 €).
+- One script recomputed every new answer: L1-07 40,7 kWh; L1-08 64 W; L2-05 10,45 kW (limit 6,25 kW for 11 kW, only 19–20 exceeds it); L2-06 5,29 h; L2-07 22,85 kWh, 7,62 kW; L3-04 14 640 km, 390,4 €, 1760,5 €, 1370,1 €, public 1171,2 €; L3-05 7,61 A, 0,408 Ω, 23,6 W and 104 W. All agree.
+- L1-06: exactly one correct option, `answer` equals its text.
+- Levels 8/7/5, scope, units and tolerances fit.

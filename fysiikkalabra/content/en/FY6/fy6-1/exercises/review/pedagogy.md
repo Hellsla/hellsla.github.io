@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 52241406892bba8f
+CONTENT-HASH: aab8e734d01b85c6
 
 ## Blocking
 
+## Fixed
+Wording fixes listed in science.md.
+
 ## Polish
 
-
 ## Checked
-- Same exercises, levels and hints as Finnish; natural English; nothing dropped.
+- Task wording: situation first, question last, parts a-c as in fi; level, count and kinds unchanged.
+- Solutions follow step by step as in fi; model answers complete.
+- Reading level: natural English.

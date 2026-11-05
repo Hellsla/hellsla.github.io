@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 52241406892bba8f
+CONTENT-HASH: aab8e734d01b85c6
 
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-- open-exercises captures (L1, L2, L3) and stage-exercises: answer fields, hints, solutions and figures fit, maths renders. No Finnish.
+- Opened en captures fy6-1-open-exercises-1280-6 (L1-06/07), L2-1280-7 (L2-06), L3-1280-6 (L3-04/05): text, maths, tables and solutions render, no clipping, no Finnish.
+- Captures predate the small text fixes (L1-07 wording, terminal/base); layout unaffected.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

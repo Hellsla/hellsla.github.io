@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d98092f0c14ecbc1
+CONTENT-HASH: 012dc69df8b5c15b
+ROUND: 3
 
 ## Blocking
 
 ## Polish
-- solutions.md (L1-05) — 0,009935 → 0,01 → 0,010 V applies "first digit 1" to the already rounded value. The step is explained and matches the lesson. Keep the same wording in both places (carried over).
-- solutions.md (L1-04, L2-04, L3-01 Järkevyys) — the checks cite the lesson's sim values. They are correct, but checks based only on the task data would stand apart from the lesson (carried over).
+- L1-08 vs L1-01 (carried over) — L1-08 is still close to a duplicate of L1-01: same 20 V range, same ±(0,5 % + 2), a voltage reading, and only the U ± ΔU notation added. Add the plan's relative-error part, e.g. "Kuinka monta prosenttia lukemasta virheraja on?"
+- exercises.json:208 (L2-06 correct feedback, carried over) — "... koska mittarissa on erillinen liitin suurille virroille" gives the wrong reason for opening the circuit. Write "Virta katkaistaan tai piiri avataan ennen johdon siirtämistä, koska johtoa ei irroteta liittimestä virran kulkiessa; suurille virroille on mittarissa oma liittimensä."
+- exercises.json:220 (L2-07, carried over) — the rest voltage (lepojännite) is defined for a battery that has stood without load. Add "Auto on ollut sammutettuna useita tunteja", so that comparing with 12,60 V is valid.
+- solutions.md:179 (L3-04 Järkevyys, carried over) — "lähes kymmenesosan" should be "kymmenesosan": R₂ : R_m = 0,10 exactly, and 0,571 μA : 5,714 μA = 0,100.
 
 ## Checked
-- Round-1 blocker fixed: L2-01 Vastaus is now "noin 11 %, kaksi merkitsevää numeroa, koska ensimmäinen numero on 1". Recomputed: ΔI = 0,020 · 0,35 A + 3 · 0,01 A = 0,037 A, and 0,037 A : 0,35 A = 10,57 %. The rounded limit gives the same: 0,04 A : 0,35 A = 11 %.
-- The Vastaus, the Järkevyys ("lähes 11 %") and the answers.py:16 comment ("-> 11 % (first digit 1: 2 sf)") now agree.
-- exercises.json L2-01 has answer 10.57 and tolerance 0.08. The answer 11 is 4,1 % off, so it is accepted.
-- The diff touches only L2-01 in solutions.md and the answers.py comment. All other answers are unchanged and were recomputed in round 1 (L1-01 to L3-02 all agree).
-- The content hash is the same at the start and the end.
+- Hash 012dc69df8b5c15b at start and end (the packet gives the same). Counts 8/7/5.
+- Only change since round 2 (HEAD d48687e6): solutions.md:141, L1-08 Järkevyys.
+- Round-2 Blocking resolved: the line now says "noin kolmasosa alueesta 20 V (5,98 : 20 = 0,30)". 0,30 is right, and "noin kolmasosa" is a fair description.
+- Rest of the line is still right: ΔU = 0,0299 V + 0,02 V = 0,0499 V ≈ 0,05 V, which is 0,83 % of 5,98 V, so it is under 1 %. The two parts, 0,03 V and 0,02 V, are of the same order.
+- No other task changed, so the round-1/2 checks of the other 19 tasks still hold.

@@ -1,13 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: b6131b393ad33d64
+CONTENT-HASH: eda68d9188c67dc3
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
+(none)
+
+## Fixed
+- exercises.json L2-05 b): "Moninkertainenko" (awkward, abstract) changed to "Kuinka monta kertaa suurempi ..." (plain words, same meaning, no numbers touched).
 
 ## Polish
+(none)
 
 ## Checked
-- Delta judged in context: solutions.md, the reasonableness line of the 16 A, 0,20 Ω cord task.
-- Recomputed P = R I² = 0,20 Ω · (16 A)² = 51,2 ≈ 51 W; answer and two significant figures unchanged.
-- Fi-easy wording "siitä siirtyy huonosti lämpöä ympäristöön" says the same as the Finnish reference.
-- The new wording (a cord tightly wound on a reel loses energy as heat to the surroundings poorly, so it can get dangerously hot) names the real mechanism; the old "lämpö ei pääse pois" is gone. It fits the heat guardrail (heat is energy in transfer).
-- No number, symbol or condition changed; the rest of the set stands as in my PASS.
+- Script comparison with content/fi: ids, levels, kinds, answers, tolerances, correct flags, choices, data cells and every number in texts, feedback and solutions.md (684 numbers each, identical; decimal point in JSON/data, {,} in LaTeX). Units equal except the display unit "kertaa" (en: times, fi-easy: kertaa), as intended.
+- Plain Finnish: short sentences, terms explained (läpilyöntilujuus, vikavirta, suojausluokka).
+- Re-derived: L1-08 6.0 kV, L2-05 61.1x, L2-06 9.565 A, L2-07 115 mA, L3-04 20.5 A, L3-05 6.167 kOhm; all agree with fi.
+- check_i18n.py fi-easy: 0 errors.
+

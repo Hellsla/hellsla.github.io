@@ -1,22 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 83920706a91f4df7
+CONTENT-HASH: cf52e4c26916eaa1
+Round: 2
 
 ## Blocking
 
 ## Polish
-- exercises.json L2-01 (also check-2 and the example) — all three are Q = It with a time conversion, so L2-01 repeats the example's structure — make L2-01 ask for the current from a charge and a time in minutes or hours, or give mAh.
-- exercises.json L3-01 — still barely harder than L2-01 (t = Q/I with the same conversion; raised in round 1) — add a second step (two lamps with different currents, or a lamp plus a LED from the lesson's table).
-- exercises.json L3-02 — "Kuinka monta kertaa enemmän" with the answer 1,2 is ambiguous (1,2 times as much or 2,2 times) — "Kuinka moninkertaisen energian ..." or "Mikä on energioiden suhde E_1 : E_2?"
-- exercises.json L2-02 — the question is not last (the value of e follows it) — "Alkeisvaraus on e = ... Kuinka monta elektronia kulkee lampun läpi yhdessä sekunnissa?"
-- exercises.json L3-03 — the lesson never says that an ammeter goes in the loop; the task states it, so it is fair, but the lesson sentence suggested for the symbols section would make it learnable.
+- exercises.json L2-07 vs L2-05 c) and L2-06 — "virta ei kulu" is still the theme of L1-06, L1-07, L2-05 c), L2-06 and L2-07; vary one (e.g. L2-07 could test series lamps or current direction) if the set is revised again.
+- solutions.md L3-05 Vastaus c) — the added sentence ("lampun oman hehkulangan elektronit liikkuvat heti") is correct but could say plainly that the field/voltage spreads along the circuit at once; optional.
 
 ## Checked
-- Levels rise: L1 one step (I, Q, U, E, t), L2 conversions, electron count, mAh to energy, graph reading; L3 ratio and a drawing.
-- None repeats the example verbatim; goals (I = Q/t, Q = Ne, U = E/Q, diagrams) all practised, no more.
-- Every solution has principle, units, substitution and a sensible-result step; each can be followed from scratch.
-- L2-04: graph needed, values readable at 0,4 and 0,1 A, description gives the same data without the charge; solution reads it in steps.
-- L2-03: 39,96 kJ and "40 kJ" now consistent (round-1 item fixed).
-- L3-03: model answer matches kaavio-malli and the lesson's symbols; the figure appears only as the answer.
-- Everyday contexts (scooter, phone, bike light, car starter) are recognisable.
-- Finnish and case after number+unit correct (0,50 A:n, 12 V:n, 40 s:n).
-- Exercise captures readable; L2 graph and long solutions not clipped.
+- Round 1 had no Blocking items. Round 1 Polish resolved: L1-08 now 0,25 A, 1,0 min, plain units (answer 9,36e19 = 15 C : 1,602e-19 C; solution and sensible-result step updated), so it no longer outranks L2-02; L3-04 Vastaus a) drops the "13 Wh" clause (12,5 Wh); L2-06 b) solution names the short circuit; L2-07 uses "resoluutio" and the c) model answer now argues from differences of both signs within one step; L1-07 text no longer pretends a diagram is shown; L3-05 c) now explains why the lamp lights at once.
+- Recomputed: L1-08 9,36e19; L2-07 means 0,310 and 0,306 A; L3-05 1,92e-5 m/s, 14,5 h. Answer fields match solutions.
+- Counts 8/7/5 = 20, levels and kinds match docs/exercise-bank/FY6.md; no duplicate of existing tasks or of the worked example.
+- Every new solution still has principle, units, substitution and a sensible-result step.

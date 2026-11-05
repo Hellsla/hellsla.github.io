@@ -27,4 +27,16 @@ I_parallel = 230 / par(46, 46)                           # the same elements in 
 a["fy6-4-L3-02"] = I_parallel / I_series                 # 4 times the current
 S, P = 250, 60                                           # series 250 ohm, parallel 60 ohm: R1 + R2 = 250, R1 R2 = 60 * 250 = 15 000
 a["fy6-4-L3-03"] = (S + math.sqrt(S ** 2 - 4 * P * S)) / 2   # R^2 - 250 R + 15 000 = 0 -> R = 150 ohm or 100 ohm; the larger 150 ohm
+# Exercise bank additions (teacher 2026-11-04): L1-06 and L1-07 are multiple choice (no number)
+a["fy6-4-L1-08"] = 1 / (1 / 36 - 1 / 90)                  # 90 ohm || Rx = 36 ohm: 1/Rx = 1/36 - 1/90 = 1/60 -> 60 ohm
+a["fy6-4-L2-05"] = par(217, 328, 468)                     # example data: 1/R = 1/217 + 1/328 + 1/468 = 0,009794 1/ohm -> 102,1 ohm (series 1013 ohm; measured 1009 and 101,4 ohm within 1,5 %)
+a["fy6-4-L2-06"] = 5.98 / (30.2 / 1000)                   # R23 = U23 / I = 5,98 V / 0,0302 A = 198 ohm (expected 100 ohm: one 200 ohm branch is open)
+ratios = [2.0 / 83, 4.0 / 166, 6.0 / 247, 8.0 / 333, 10.0 / 414]   # U : I in V/mA = kohm, data of L2-07
+R_ka = sum(ratios) / 5 * 1000                             # mean 24,13 ohm
+a["fy6-4-L2-07"] = 1 / (1 / R_ka - 1 / 60)                # 1/Rx = 1/24,13 - 1/60 -> 40,4 ohm
+I_fix = 9.0 / (70 + par(110, 110))                        # L3-04 corrected board: 70 ohm + 55 ohm = 125 ohm, I = 0,072 A (faulty board: 70 + 110 = 180 ohm)
+a["fy6-4-L3-04"] = I_fix * par(110, 110) / 110 * 1000     # U23 = 0,072 A * 55 ohm = 3,96 V, I3 = 3,96 V / 110 ohm = 36 mA
+cand = [(abs(r - 470) / 470 * 100, k, x, y) for x, y in __import__("itertools").combinations([100, 390, 560, 1200, 1500, 2700, 5600], 2)
+        for k, r in (("s", x + y), ("p", par(x, y)))]     # L3-05: every pair in series and in parallel
+a["fy6-4-L3-05"] = min(cand)[0]                           # best: 560 ohm || 2700 ohm = 463,8 ohm, 1,32 % off 470 ohm (best series 100 + 390 = 490 ohm, 4,3 %)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
