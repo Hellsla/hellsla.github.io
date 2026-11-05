@@ -62,7 +62,20 @@ FASTEST = """() => { const own = new Set(Object.values(window.simAdapter.params)
 RUN = """() => { const b = document.querySelector('#sim-root button');   // the sim's main button comes first (NOTES 4)
   if (b && !b.disabled && !/…$/.test(b.textContent.trim())) { b.click(); return b.textContent.trim(); } return null; }"""
 CONTROL = "(k) => { const p = window.simAdapter.params[k]; return typeof p.input === 'string' ? document.querySelector(p.input) : p.input; }"
-OLD_NAMES = ("Herätä kiinnostus", "Lähtölippu", "Selitä")     # replaced by Pohdinta, Exit ticket, Teoriatiivistelmä (2026-10-26)
+OLD_NAMES = ("Herätä kiinnostus", "Lähtölippu", "Selitä", "Teoriatiivistelmä", "Theory summary")     # replaced by Pohdinta, Exit ticket, Teoriatiivistelmä (2026-10-26), then Teoria (2026-11-05)
+SPLIT = """async () => {   // lesson.js part 9: the exercises beside the theory, opened by the button, closed again (teacher 2026-11-05)
+  const ex = document.getElementById('exercises'), b = ex && ex.querySelector('.split-toggle');
+  if (!ex) return { none: true };
+  if (!b || !b.offsetParent) return { button: false };
+  const wait = () => new Promise((r) => setTimeout(r, 300));
+  const before = getComputedStyle(ex).position;
+  b.click(); await wait();
+  const r = ex.getBoundingClientRect(), m = document.querySelector('main').getBoundingClientRect();
+  const open = { position: getComputedStyle(ex).position, right: Math.round(window.innerWidth - r.right), beside: m.right <= r.left + 1,
+                 scrolls: getComputedStyle(ex).overflowY, over: document.documentElement.scrollWidth - document.documentElement.clientWidth };
+  b.click(); await wait();
+  return { button: true, before, open, after: getComputedStyle(ex).position };
+}"""
 NAMES = """() => [...document.querySelectorAll('nav.toc a, main h2, main h3, main summary')].map((e) => e.textContent.replace(/^\\d+/, '').trim())"""
 WIDE = """() => {      // the wide layout as rendered: which blocks sit side by side, and the widest paragraph
   const R = (e) => e.getBoundingClientRect(), beside = (a, b) => R(b).left >= R(a).right - 1 && Math.abs(R(a).top - R(b).top) < 400;
@@ -80,7 +93,13 @@ def page_form(pg, b, url, acts, page):
     """The lesson page form of 2026-10-26 (CLAUDE.md "Lesson page"), checked on the rendered page. pg is a 1280 px page."""
     names = pg.evaluate(NAMES)
     old = [n for n in names if any(n == o or n.startswith(o + " ") for o in OLD_NAMES)]
-    check("no old stage or section names in the nav or headings (Pohdinta, Teoriatiivistelmä, Exit ticket)", not old, str(old))
+    check("no old stage or section names in the nav or headings (Pohdinta, Teoria, Exit ticket)", not old, str(old))
+    check("the old stage names of the texts are shown as Teoria / Theory (inquiry.current_stage_names)",
+          not pg.evaluate("/Teoriatiivistelm|Theory summary/i.test(document.querySelector('main').textContent)"))
+    sp = pg.evaluate(SPLIT)
+    check("1280 px: 'Avaa tehtävät teorian viereen' puts the exercises in a panel on the right that scrolls on its own, beside the lesson, and closes back",
+          sp.get("none") or (sp.get("button") and sp["before"] == "static" and sp["open"]["position"] == "fixed" and sp["open"]["right"] == 0
+                             and sp["open"]["beside"] and sp["open"]["scrolls"] == "auto" and sp["open"]["over"] <= 0 and sp["after"] == "static"), str(sp))
     toc = pg.evaluate("[...document.querySelectorAll('nav.toc a')].map((a) => { const l = (a.querySelector('.toc-label') || a).cloneNode(true); l.querySelectorAll('.toc-rest').forEach((e) => e.remove()); return l.textContent; })")   # the short name; the side column adds the rest of a long title
     want = []
     for sid, t in inquiry.STAGES:
