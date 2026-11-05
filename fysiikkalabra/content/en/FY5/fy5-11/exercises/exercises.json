@@ -39,6 +39,74 @@
       "answer": 240,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L1-06",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "One end of a rope is tied firmly to a wall. An upward pulse is sent from the free end of the rope; it travels to the wall and is reflected from it.\n\nWhich statement about the return of the pulse is correct?",
+      "answer": "The pulse returns downwards, because the wall pulls the end of the rope down.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The pulse returns upwards, because reflection preserves the direction of the displacement.",
+          "feedback": "This happens at a free end, for example a ring sliding on a rod. An end fixed to a wall cannot move up, so the wall pulls the rope down and the pulse is inverted."
+        },
+        {
+          "text": "The pulse disappears, because the rigid wall damps it completely.",
+          "feedback": "From a rigid fixing the pulse is reflected almost completely, but inverted. The energy is not lost in the wall."
+        },
+        {
+          "text": "The pulse returns downwards, because the wall pulls the end of the rope down.",
+          "correct": true,
+          "feedback": "Correct: the fixed end cannot move, so the wall exerts on the rope a force opposite to the displacement of the pulse. The pulse is reflected inverted."
+        },
+        {
+          "text": "The pulse returns downwards, because reflection makes it travel faster.",
+          "feedback": "The pulse is indeed inverted, but the reason is not speed: the speed of the pulse is determined by the rope, and reflection does not change it."
+        }
+      ]
+    },
+    {
+      "id": "fy5-11-L1-07",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "In a ripple tank a plane wave passes through a gap in a barrier. The wavelength is $4.0\\,\\text{cm}$ and the width of the gap is $3.0\\,\\text{cm}$. The frequency is doubled, and the speed of the wave in the tank stays the same.\n\nWhich statement about the bending of the wave behind the gap is correct?",
+      "answer": "The bending weakens, because the wavelength becomes shorter compared with the width of the gap.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "The bending becomes stronger, because a higher frequency brings more energy to the wave.",
+          "feedback": "The strength of the bending depends on the ratio of the wavelength to the width of the gap, not on the energy of the wave."
+        },
+        {
+          "text": "The bending weakens, because the wavelength becomes shorter compared with the width of the gap.",
+          "correct": true,
+          "feedback": "Correct: by the equation $v = f\\lambda$ the wavelength is halved to $2.0\\,\\text{cm}$. The width of the gap compared with the wavelength grows from $0.75$ to $1.5$, so the bending weakens but is still clear."
+        },
+        {
+          "text": "The bending does not change, because the gap is still equally wide.",
+          "feedback": "The bending depends on the width of the gap compared with the wavelength. The wavelength changed, so the ratio and the bending change."
+        },
+        {
+          "text": "The wave no longer fits through the gap, because a shorter wave needs a wider gap.",
+          "feedback": "A shorter wave fits through the gap better, not worse. The wave passes through the gap at both frequencies; only the amount of bending changes."
+        }
+      ]
+    },
+    {
+      "id": "fy5-11-L1-08",
+      "level": 1,
+      "text": "The sonar of a fishing boat sends an ultrasound pulse towards the bottom of a lake. The bottom is at a depth of $36\\,\\text{m}$, and the speed of sound in water is $1500\\,\\text{m/s}$.\n\nHow long after the pulse is sent does the echo return? Give the answer in milliseconds.",
+      "answer": 48,
+      "unit": "ms",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +141,95 @@
       "answer": 380,
       "unit": "Hz",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "A student stands in front of a long wall of the school. An app on a phone plays a short beep and measures the time $t$ from the play command to the moment when it detects the echo returning from the wall. The student repeats the measurement at different distances $d$ from the wall.\n\nThe sound playback of the phone has an unknown but always equal delay $t_0$ between the play command and the departure of the sound, so every measured time $t$ is too long by the same amount (example data).\n\nDetermine the speed of sound using the first and the last measurement of the table. Give the answer in the unit $\\text{m/s}$.",
+      "answer": 343,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "The delay of the echo measured by the app at different distances, example data",
+        "columns": [
+          "$d\\,(\\text{m})$",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "0.157"
+          ],
+          [
+            "40.0",
+            "0.274"
+          ],
+          [
+            "60.0",
+            "0.390"
+          ],
+          [
+            "80.0",
+            "0.507"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-11-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "concept"
+      ],
+      "text": "Plane waves of frequency $12\\,\\text{Hz}$ are made in a ripple tank, and they travel at a speed of $0.216\\,\\text{m/s}$. The waves pass through a gap in a barrier. The width $b$ of the gap is changed, and from each picture it is recorded how the wave spreads behind the gap (example data).\n\na) Calculate the wavelength.\n\nb) How many times as wide as the wavelength is the gap in the measurement where the wave continued as an almost straight beam?\n\nc) Also calculate the ratio $\\tfrac{b}{\\lambda}$ of the other gaps and formulate a rule: when does the wave bend strongly behind the gap and when only a little?\n\nWrite the result of part b in the answer field.",
+      "answer": 8.0,
+      "unit": "times",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "The wave behind the gap at different gap widths, example data",
+        "columns": [
+          "$b\\,(\\text{cm})$",
+          "The wave behind the gap"
+        ],
+        "rows": [
+          [
+            "0.9",
+            "in every direction"
+          ],
+          [
+            "1.8",
+            "in every direction"
+          ],
+          [
+            "3.6",
+            "spreads clearly"
+          ],
+          [
+            "7.2",
+            "little bending"
+          ],
+          [
+            "14.4",
+            "almost a straight beam"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-11-L2-07",
+      "level": 2,
+      "kind": [
+        "error"
+      ],
+      "text": "In a ripple tank a plane wave is reflected from a straight wall. From a photograph it is measured that the incoming and the reflected ray form an angle of $64^\\circ$ with each other.\n\nThe student reasons: “The angle of incidence is the angle between the incoming and the reflected ray, so $\\alpha = 64^\\circ$.”\n\nFind the student’s error and calculate the correct angle of incidence.",
+      "answer": 32,
+      "unit": "°",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +256,86 @@
       "answer": 4.5,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "An angler drives a boat along a straight line on a lake and measures the depth of the bottom with a sonar at six points. The distance between the points is $20.0\\,\\text{m}$. The sonar sends a pulse straight down, and the delay of the echo is in the table (example data).\n\nThe speed of sound in the water of the lake is $1480\\,\\text{m/s}$. Assume that the pulse travels vertically down and that the bottom is straight between the measurement points.\n\na) Calculate the depth of the bottom at each point.\n\nb) Between which two successive points is the bottom steepest, and what is the angle of slope of the bottom to the horizontal there?\n\nc) Justify why the depth is obtained from the delay by halving, and why it is worth making additional measurements on a steep slope.\n\nWrite the angle of slope of part b in the answer field.",
+      "answer": 35,
+      "unit": "°",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "The delay of the echo from the bottom, example data",
+        "columns": [
+          "$x\\,(\\text{m})$",
+          "$t\\,(\\text{ms})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "54"
+          ],
+          [
+            "20.0",
+            "60"
+          ],
+          [
+            "40.0",
+            "71"
+          ],
+          [
+            "60.0",
+            "90"
+          ],
+          [
+            "80.0",
+            "97"
+          ],
+          [
+            "100.0",
+            "85"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-11-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "A valley is directly behind a mountain, and the mountain is $600\\,\\text{m}$ wide in the transverse direction. The transmitter masts are on the other side of the mountain, and their radio waves arrive straight towards the mountain. The speed of radio waves is $3.00 \\cdot 10^8\\,\\text{m/s}$, and the frequencies of the broadcasts are in the table (example data).\n\nConsider only the diffraction of the waves at the edges of the mountain. Do not take into account the effect of the atmosphere or the ground.\n\na) Calculate the wavelengths of the broadcasts.\n\nb) How many times as large as the wavelength of FM radio is the width of the mountain?\n\nc) Using the wavelengths, justify which broadcasts bend behind the mountain into the valley and which remain in the shadow of the mountain. Also explain why visible light, whose wavelength is about $550\\,\\text{nm}$, does not pass the mountain.\n\nWrite the result of part b in the answer field.",
+      "answer": 200,
+      "unit": "times",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "The frequencies of the broadcasts, example data",
+        "columns": [
+          "Broadcast",
+          "$f$"
+        ],
+        "rows": [
+          [
+            "AM radio",
+            "$900\\,\\text{kHz}$"
+          ],
+          [
+            "FM radio",
+            "$100\\,\\text{MHz}$"
+          ],
+          [
+            "Digital TV",
+            "$600\\,\\text{MHz}$"
+          ]
+        ]
+      }
     }
   ]
 }

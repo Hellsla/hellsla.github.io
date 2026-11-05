@@ -39,6 +39,74 @@
       "answer": 240,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L1-06",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "Köyden toinen pää on sidottu tiukasti seinään. Köyden vapaasta päästä lähetetään ylöspäin suuntautuva pulssi, joka etenee seinälle ja heijastuu siitä.\n\nMikä väite pulssin paluusta on oikein?",
+      "answer": "Pulssi palaa alaspäin, koska seinä vetää köyden päätä alas.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Pulssi palaa ylöspäin, koska heijastus säilyttää poikkeaman suunnan.",
+          "feedback": "Näin käy vapaassa päässä, esimerkiksi tangolla liukuvassa renkaassa. Seinään kiinnitetty pää ei pääse liikkumaan ylös, joten seinä vetää köyttä alas ja pulssi kääntyy."
+        },
+        {
+          "text": "Pulssi katoaa, koska jäykkä seinä vaimentaa sen kokonaan.",
+          "feedback": "Jäykästä kiinnityksestä pulssi heijastuu lähes kokonaan, mutta kääntyneenä. Energia ei häviä seinään."
+        },
+        {
+          "text": "Pulssi palaa alaspäin, koska seinä vetää köyden päätä alas.",
+          "correct": true,
+          "feedback": "Oikein: kiinteä pää ei pääse liikkumaan, joten seinä kohdistaa köyteen pulssin poikkeamaa vastaan suuntautuvan voiman. Pulssi heijastuu kääntyneenä."
+        },
+        {
+          "text": "Pulssi palaa alaspäin, koska heijastus nopeuttaa sen kulkua.",
+          "feedback": "Pulssi kyllä kääntyy, mutta syy ei ole nopeus: pulssin nopeus määräytyy köydestä, eikä heijastus muuta sitä."
+        }
+      ]
+    },
+    {
+      "id": "fy5-11-L1-07",
+      "level": 1,
+      "kind": [
+        "concept"
+      ],
+      "text": "Aaltoaltaassa tasoaalto kulkee esteessä olevan raon läpi. Aallonpituus on $4{,}0\\,\\text{cm}$ ja raon leveys $3{,}0\\,\\text{cm}$. Taajuus kaksinkertaistetaan, ja aallon nopeus altaassa pysyy samana.\n\nMikä väite aallon taipumisesta raon takana on oikein?",
+      "answer": "Taipuminen heikkenee, koska aallonpituus lyhenee raon leveyteen verrattuna.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Taipuminen voimistuu, koska korkeampi taajuus tuo mukanaan lisää energiaa aaltoon.",
+          "feedback": "Taipumisen voimakkuus riippuu aallonpituuden ja raon leveyden suhteesta, ei aallon energiasta."
+        },
+        {
+          "text": "Taipuminen heikkenee, koska aallonpituus lyhenee raon leveyteen verrattuna.",
+          "correct": true,
+          "feedback": "Oikein: yhtälön $v = f\\lambda$ mukaan aallonpituus puolittuu $2{,}0\\,\\text{cm}$:iin. Raon leveys aallonpituuteen verrattuna kasvaa $0{,}75$:stä $1{,}5$:een, joten taipuminen heikkenee mutta on yhä selvää."
+        },
+        {
+          "text": "Taipuminen ei muutu, koska rako on edelleen yhtä leveä.",
+          "feedback": "Taipuminen riippuu raon leveydestä aallonpituuteen verrattuna. Aallonpituus muuttui, joten suhde ja taipuminen muuttuvat."
+        },
+        {
+          "text": "Aalto ei mahdu enää raosta, koska lyhyempi aalto tarvitsee leveämmän raon.",
+          "feedback": "Lyhyempi aalto mahtuu raosta paremmin, ei huonommin. Aalto kulkee raosta kummallakin taajuudella; muuttuu vain se, kuinka paljon se taipuu."
+        }
+      ]
+    },
+    {
+      "id": "fy5-11-L1-08",
+      "level": 1,
+      "text": "Kalastusveneen kaikuluotain lähettää ultraäänipulssin kohti järven pohjaa. Pohja on $36\\,\\text{m}$:n syvyydessä, ja äänen nopeus vedessä on $1500\\,\\text{m/s}$.\n\nKuinka kauan pulssin lähettämisestä kuluu, kunnes kaiku palaa? Anna vastaus millisekunteina.",
+      "answer": 48,
+      "unit": "ms",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -73,6 +141,95 @@
       "answer": 380,
       "unit": "Hz",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L2-05",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment"
+      ],
+      "text": "Oppilas seisoo koulun pitkän seinän edessä. Puhelimen sovellus soittaa lyhyen äänimerkin ja mittaa ajan $t$ soittokäskystä siihen hetkeen, jolloin se havaitsee seinältä palaavan kaiun. Oppilas toistaa mittauksen eri etäisyyksillä $d$ seinästä.\n\nPuhelimen äänentoistolla on tuntematon mutta aina yhtä suuri viive $t_0$ soittokäskyn ja äänen lähdön välillä, joten jokainen mitattu aika $t$ on liian pitkä saman verran (esimerkkiaineisto).\n\nMääritä äänen nopeus käyttämällä taulukon ensimmäistä ja viimeistä mittausta. Anna vastaus yksikössä $\\text{m/s}$.",
+      "answer": 343,
+      "unit": "m/s",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Sovelluksen mittaama kaiun viive eri etäisyyksillä, esimerkkiaineisto",
+        "columns": [
+          "$d\\,(\\text{m})$",
+          "$t\\,(\\text{s})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "0.157"
+          ],
+          [
+            "40.0",
+            "0.274"
+          ],
+          [
+            "60.0",
+            "0.390"
+          ],
+          [
+            "80.0",
+            "0.507"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-11-L2-06",
+      "level": 2,
+      "kind": [
+        "data",
+        "concept"
+      ],
+      "text": "Aaltoaltaassa tehdään tasoaaltoja taajuudella $12\\,\\text{Hz}$, ja ne etenevät nopeudella $0{,}216\\,\\text{m/s}$. Aallot kulkevat esteessä olevan raon läpi. Raon leveyttä $b$ muutetaan, ja kustakin kuvasta kirjataan, miten aalto leviää raon takana (esimerkkiaineisto).\n\na) Laske aallonpituus.\n\nb) Kuinka moninkertainen rako on aallonpituuteen verrattuna siinä mittauksessa, jossa aalto jatkui lähes suorana keilana?\n\nc) Laske myös muiden rakojen suhde $\\tfrac{b}{\\lambda}$ ja muotoile sääntö: milloin aalto taipuu raon takana voimakkaasti ja milloin vähän?\n\nKirjoita vastauskenttään b-kohdan tulos.",
+      "answer": 8.0,
+      "unit": "kertaa",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Aalto raon takana eri rakoleveyksillä, esimerkkiaineisto",
+        "columns": [
+          "$b\\,(\\text{cm})$",
+          "Aalto raon takana"
+        ],
+        "rows": [
+          [
+            "0.9",
+            "joka suuntaan"
+          ],
+          [
+            "1.8",
+            "joka suuntaan"
+          ],
+          [
+            "3.6",
+            "leviää selvästi"
+          ],
+          [
+            "7.2",
+            "vähän taipumista"
+          ],
+          [
+            "14.4",
+            "lähes suora keila"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-11-L2-07",
+      "level": 2,
+      "kind": [
+        "error"
+      ],
+      "text": "Aaltoaltaassa tasoaalto heijastuu suorasta seinästä. Valokuvasta mitataan, että tuleva ja heijastunut säde muodostavat keskenään $64^\\circ$:n kulman.\n\nOpiskelija päättelee: ”Tulokulma on tulevan ja heijastuneen säteen välinen kulma, joten $\\alpha = 64^\\circ$.”\n\nEtsi opiskelijan virhe ja laske oikea tulokulma.",
+      "answer": 32,
+      "unit": "°",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -99,6 +256,86 @@
       "answer": 4.5,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-11-L3-04",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "Kalastaja ajaa veneellä suoraa linjaa pitkin järvellä ja mittaa kaikuluotaimella pohjan syvyyttä kuudessa pisteessä. Pisteiden väli on $20{,}0\\,\\text{m}$. Luotain lähettää pulssin suoraan alas, ja kaiun viive on taulukossa (esimerkkiaineisto).\n\nÄänen nopeus järven vedessä on $1480\\,\\text{m/s}$. Oleta, että pulssi kulkee pystysuoraan alas ja että pohja on suora mittauspisteiden välillä.\n\na) Laske pohjan syvyys jokaisessa pisteessä.\n\nb) Missä kahden peräkkäisen pisteen välissä pohja on jyrkin, ja kuinka suuri on pohjan kaltevuuskulma vaakatasoon nähden siinä?\n\nc) Perustele, miksi syvyys saadaan viiveestä puolittamalla, ja miksi jyrkässä rinteessä kannattaa tehdä lisämittauksia.\n\nKirjoita vastauskenttään b-kohdan kaltevuuskulma.",
+      "answer": 35,
+      "unit": "°",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Kaiun viive pohjasta, esimerkkiaineisto",
+        "columns": [
+          "$x\\,(\\text{m})$",
+          "$t\\,(\\text{ms})$"
+        ],
+        "rows": [
+          [
+            "0.0",
+            "54"
+          ],
+          [
+            "20.0",
+            "60"
+          ],
+          [
+            "40.0",
+            "71"
+          ],
+          [
+            "60.0",
+            "90"
+          ],
+          [
+            "80.0",
+            "97"
+          ],
+          [
+            "100.0",
+            "85"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy5-11-L3-05",
+      "level": 3,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "Laakso on suoraan vuoren takana, ja vuori on poikkisuunnassa $600\\,\\text{m}$ leveä. Lähetinmastot ovat vuoren toisella puolella, ja niiden radioaallot tulevat suoraan vuorta kohti. Radioaaltojen nopeus on $3{,}00 \\cdot 10^8\\,\\text{m/s}$, ja lähetysten taajuudet ovat taulukossa (esimerkkiaineisto).\n\nTarkastele vain aaltojen diffraktiota vuoren reunoilla. Älä ota huomioon ilmakehän tai maanpinnan vaikutusta.\n\na) Laske lähetysten aallonpituudet.\n\nb) Kuinka moninkertainen vuoren leveys on FM-radion aallonpituuteen verrattuna?\n\nc) Perustele aallonpituuksien avulla, mitkä lähetykset taipuvat vuoren taakse laaksoon ja mitkä jäävät vuoren varjoon. Selitä lisäksi, miksi näkyvä valo, jonka aallonpituus on noin $550\\,\\text{nm}$, ei kulje vuoren ohi.\n\nKirjoita vastauskenttään b-kohdan tulos.",
+      "answer": 200,
+      "unit": "kertaa",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Lähetysten taajuudet, esimerkkiaineisto",
+        "columns": [
+          "Lähetys",
+          "$f$"
+        ],
+        "rows": [
+          [
+            "AM-radio",
+            "$900\\,\\text{kHz}$"
+          ],
+          [
+            "FM-radio",
+            "$100\\,\\text{MHz}$"
+          ],
+          [
+            "Digi-tv",
+            "$600\\,\\text{MHz}$"
+          ]
+        ]
+      }
     }
   ]
 }

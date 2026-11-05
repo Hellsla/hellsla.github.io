@@ -1,13 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 9df7eefc70484f70
+CONTENT-HASH: e63affccfd49f16d
+Mode: full (translation review against the reviewed Finnish set)
+Round 1
 
 ## Blocking
 (none)
+
+## Fixed
+(none needed: numbers, ids, answers, flags and formulas already matched fi)
 
 ## Polish
 (none)
 
 ## Checked
-- exercises.json ja solutions.md verrattu lähteeseen: samat 12 tehtävää, id:t, vastaukset, yksiköt ja toleranssit; kaikki luvut identtiset (skriptivertailu); 103 lihavoitua vaihetta molemmissa.
-- Jokaisen ratkaisun periaate ja päättely säilyvät pilkottuina: L1-02 etumerkit, L2-01 ja L3-03 Pythagoras ja n = 0, L2-02 yksikkömuunnos, L2-03 erisuuret amplitudit, L2-04 2vt = s, L3-01 kolmioepäyhtälö ja N = 2k, L3-02 vähennyslasku Δs = v/(f2 − f1), L3-03 diffraktioperustelu.
-- Korjattu L1-01 Järkevyys: "suurempi kuin kumpikaan pulssi yksin, esimerkiksi 2,5 cm" (merkitys hämärtyi) → "suurempi kuin isomman pulssin poikkeama 2,5 cm yksin".
+- 20 tehtävää; id:t, vastaukset, yksiköt, toleranssit, kind-tagit, correct-liput ja vaihtoehtojen määrä samat kuin fi:ssä uusissa tehtävissä L1-06..08, L2-05..07, L3-04..05.
+- Kaikki luvut tehtävissä, vaihtoehdoissa, palautteissa ja taulukoissa verrattu skriptillä suomeen: identtiset.
+- Vastaukset laskettu uudelleen: 200 Hz, 680 Hz, 4,0 mm, 4,00 m ja 340 Hz, 850 Hz.
+- Ratkaisut säilyttävät perustelut: n = 0, Pythagoras, lambda/2-väli, energian säilyminen, vastamelukuulokkeet.
+- check_i18n fi-easy: 0 virhettä.
