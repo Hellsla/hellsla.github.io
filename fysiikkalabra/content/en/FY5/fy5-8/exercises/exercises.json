@@ -44,6 +44,7 @@
     {
       "id": "fy5-8-L1-06",
       "level": 1,
+      "core": true,
       "text": "The force stretching a spring is directly proportional to the extension of the spring, $F_\\text{v} = kx$. When does this expression describe a spring well?",
       "kind": [
         "concept"
@@ -104,6 +105,7 @@
     {
       "id": "fy5-8-L1-08",
       "level": 1,
+      "core": true,
       "text": "The graph shows the extension and the stretching force of two springs A and B. Read two points of the line of spring B (dashed line) from the graph. What is the spring constant of spring B?",
       "kind": [
         "graph"
@@ -118,6 +120,7 @@
     {
       "id": "fy5-8-L2-01",
       "level": 2,
+      "core": true,
       "text": "A spring is stretched $8.0\\,\\text{cm}$, and the force meter then reads $6.0\\,\\text{N}$. How much elastic potential energy is stored in the spring?",
       "answer": 0.24,
       "unit": "J",
@@ -151,6 +154,7 @@
     {
       "id": "fy5-8-L2-05",
       "level": 2,
+      "core": true,
       "text": "Students determined the spring constant of a spring by hanging masses on it and measuring the extension of the spring. The table shows example data from the measurement; $g = 9.81\\,\\text{m/s}^2$.\n\na) Which measurement points are in the linear range, where the force stretching the spring is directly proportional to the extension?\n\nb) Draw the $(x, F_\\text{v})$ graph and fit to the points of the linear range a line through the origin. What is the spring constant of the spring?\n\nGive the result of part b) in the answer box.",
       "kind": [
         "data",

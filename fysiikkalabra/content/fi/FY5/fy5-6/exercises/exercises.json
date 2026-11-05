@@ -3,6 +3,7 @@
     {
       "id": "fy5-6-L1-01",
       "level": 1,
+      "core": true,
       "text": "Sääsatelliitti NOAA-20 kiertää Maata lähes ympyrärataa, jonka säde on $7196\\,\\text{km}$. Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$. Laske satelliitin ratanopeus. Anna vastaus kilometreinä sekunnissa.",
       "answer": 7.44,
       "unit": "km/s",
@@ -43,6 +44,7 @@
     {
       "id": "fy5-6-L1-06",
       "level": 1,
+      "core": true,
       "text": "Astronautti leijuu avaruusasemalla, joka kiertää Maata $400\\,\\text{km}$:n korkeudella. Mikä seuraavista selittää leijumisen?",
       "kind": [
         "concept"
@@ -99,6 +101,7 @@
     {
       "id": "fy5-6-L2-02",
       "level": 2,
+      "core": true,
       "text": "Marsia kiertävä luotain kulkee ympyrärataa $400\\,\\text{km}$:n korkeudella Marsin pinnasta. Marsin massa on $6{,}42 \\cdot 10^{23}\\,\\text{kg}$ ja säde $3390\\,\\text{km}$. Laske luotaimen ratanopeus. Anna vastaus kilometreinä sekunnissa.",
       "answer": 3.36,
       "unit": "km/s",
@@ -123,6 +126,7 @@
     {
       "id": "fy5-6-L2-05",
       "level": 2,
+      "core": true,
       "text": "Taulukossa on Jupiterin neljän suurimman kuun ratasäde $r$ ja kiertoaika $T$ (esimerkkiaineisto, pyöristetty todellisista arvoista). Kuut kiertävät Jupiteria lähes ympyräratoja.\n\nYmpyräradan mallista seuraa $T^2 = \\dfrac{4\\pi^2}{\\gamma M} r^3$, missä $M$ on Jupiterin massa. Laske jokaiselle kuulle suhde $\\dfrac{r^3}{T^2}$ SI-yksiköissä ja totea, että suhde on lähes sama.\n\nMääritä Jupiterin massa suhteiden keskiarvosta. Anna vastaus yksikössä $10^{27}\\,\\text{kg}$.",
       "kind": [
         "data",

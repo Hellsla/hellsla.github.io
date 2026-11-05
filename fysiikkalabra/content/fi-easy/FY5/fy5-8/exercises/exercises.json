@@ -44,6 +44,7 @@
     {
       "id": "fy5-8-L1-06",
       "level": 1,
+      "core": true,
       "text": "Jousta venyttävä voima on suoraan verrannollinen jousen venymään: $F_\\text{v} = kx$. Milloin tämä lauseke kuvaa jousta hyvin?",
       "kind": [
         "concept"
@@ -104,6 +105,7 @@
     {
       "id": "fy5-8-L1-08",
       "level": 1,
+      "core": true,
       "text": "Kuvaajassa on kahden jousen, A:n ja B:n, venymä ja jousta venyttävä voima. Lue kuvaajasta jousen B suoran (katkoviiva) kaksi pistettä. Kuinka suuri on jousen B jousivakio?",
       "kind": [
         "graph"
@@ -118,6 +120,7 @@
     {
       "id": "fy5-8-L2-01",
       "level": 2,
+      "core": true,
       "text": "Jousta venytetään $8{,}0\\,\\text{cm}$, ja voimamittari näyttää silloin $6{,}0\\,\\text{N}$. Kuinka paljon jousen potentiaalienergiaa jouseen on varastoitunut?",
       "answer": 0.24,
       "unit": "J",
@@ -151,6 +154,7 @@
     {
       "id": "fy5-8-L2-05",
       "level": 2,
+      "core": true,
       "text": "Oppilaat mittasivat jousen jousivakion. He ripustivat jouseen punnuksia ja mittasivat jousen venymän. Taulukossa on esimerkkiaineisto mittauksesta; $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Mitkä mittauspisteet ovat lineaarisella alueella? Siellä jousta venyttävä voima on suoraan verrannollinen venymään.\n\nb) Piirrä $(x, F_\\text{v})$-kuvaaja. Sovita lineaarisen alueen pisteisiin suora, joka kulkee origon kautta. Kuinka suuri on jousen jousivakio?\n\nAnna kohdan b) tulos vastauslaatikkoon.",
       "kind": [
         "data",
