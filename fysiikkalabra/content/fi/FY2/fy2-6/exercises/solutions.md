@@ -84,7 +84,7 @@ eli noin $1700$, joten lähin vaihtoehto on $2000$ taloa.
 
 Arvio pyöreillä luvuilla: keskiteho on noin $1\,\text{MW}$, joten vuosienergia on noin $1000\,\text{kW} \cdot 9000\,\text{h} = 9 \cdot 10^{6}\,\text{kWh}$, ja $9 \cdot 10^{6} : 5000 \approx 2000$.
 
-Muut vaihtoehdot: $2$ taloa syntyy, kun megawattitunnit ja kilowattitunnit jaetaan keskenään muuntamatta (tuhat kertaa liian pieni). $200$ taloa syntyy, kun osuus $33\,\%$ luetaan väärin kymmenesosaksi. $5000$ taloa syntyy, kun käytetään keskitehon sijaan nimellistehoa: $3{,}0\,\text{MW} \cdot 8760\,\text{h} : 5000\,\text{kWh} \approx 5300$. Se on väärin, koska tuuli ei puhalla koko ajan, joten energia lasketaan keskiteholla.
+Muut vaihtoehdot: $2$ taloa syntyy, kun megawattitunnit ja kilowattitunnit jaetaan keskenään muuntamatta (tuhat kertaa liian pieni). $200$ taloa syntyy, kun osuus $33\,\%$ luetaan väärin kymmenesosaksi. $5000$ taloa syntyy, kun käytetään keskitehon sijaan nimellistehoa: $3{,}0\,\text{MW} \cdot 8760\,\text{h} : 5000\,\text{kWh}$, mikä on noin $5300$. Se on väärin, koska tuuli ei puhalla koko ajan, joten energia lasketaan keskiteholla.
 
 ## fy2-6-L2-01
 **Annettu:** nimellisteho $P_\text{nim} = 25\,\text{MW}$, keskiteho $32\,\%$ nimellistehosta, aika $t = 8760\,\text{h}$

@@ -94,9 +94,9 @@
 **Periaate:** Häviö on osuus verkkoon lähtevästä energiasta: $E_\text{häviö} = p\, E_\text{lähtö}$. Häviöprosentti ei yksin kerro häviävän energian määrää, koska verkkoihin lähtee eri määrät energiaa.
 **Mallivastaus:** Sähköverkossa häviää enemmän energiaa. Perustelu: häviö saadaan kertomalla lähtevä energia häviöosuudella, joten pienempi prosentti voi tuottaa suuremman häviön, kun lähtevää energiaa on paljon enemmän. Lasketaan molemmat:
 
-Sähköverkko: $E_\text{häviö} = 0{,}040 \cdot 1000\,\text{MWh} = 40\,\text{MWh}$
+Sähköverkko: $E_\text{häviö} = 0{,}040 \cdot 1000\,\text{MWh}$, eli $E_\text{häviö} = 40\,\text{MWh}$
 
-Kaukolämpöverkko: $E_\text{häviö} = 0{,}090 \cdot 300\,\text{MWh} = 27\,\text{MWh}$
+Kaukolämpöverkko: $E_\text{häviö} = 0{,}090 \cdot 300\,\text{MWh}$, eli $E_\text{häviö} = 27\,\text{MWh}$
 
 Sähköverkon häviö $40\,\text{MWh}$ on suurempi kuin kaukolämpöverkon $27\,\text{MWh}$, vaikka kaukolämpöverkon häviöprosentti on yli kaksinkertainen. Häviävä energia muuttuu lämmöksi ympäristöön, ei katoa.
 
