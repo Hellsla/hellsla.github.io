@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 612eb028465da8f9
+CONTENT-HASH: a8fbefe90565d098
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- exercises.json L1-06 — "kantaverkossa" unexplained for easy Finnish; now "kantaverkossa eli valtakunnan sähköverkossa".
+- exercises.json L2-08 reasons — first distractor was shortened against fi, leaving the correct reason longest by a margin (88 vs 110/108/98); restored "mitattuna", now 98 like fi, so lengths are fi-like.
 
 ## Polish
 - (none)
 
 ## Checked
-- New tasks L1-06..08, L2-05..07, L3-04..05: ids, answers, units, tolerances, correct flags, choices, feedback and table cells equal fi; numbers and formulas identical (decimal comma in LaTeX).
-- solutions.md numeric tokens equal fi per section; physics meaning unchanged (häviöosuus lasketaan lähtevästä energiasta).
-- check_i18n fi-easy: 0 errors.
+- New task L2-08 vs reviewed fi: id, kind, answer, tolerance, choices, reasons, correct flags identical; numbers 1000/300 MWh, 4,0/9,0 %, 40/27 MWh equal.
+- Selkosuomi per NOTES.md section 12: short sentences, feedback split into two sentences, no new terms; same physics as fi.
+- Length cue: reasons 98/110/108/98 characters (same as fi), no cue to the correct one; solutions L2-08 numerically equal fi.
+- check_i18n: nothing for fy2-7; build.py fy2-7 succeeds.

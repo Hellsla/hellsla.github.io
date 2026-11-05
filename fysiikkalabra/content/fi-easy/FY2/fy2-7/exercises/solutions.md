@@ -89,6 +89,17 @@
 **Vastaus:** $1200\,\text{kWh}$ eli $1{,}2 \cdot 10^3\,\text{kWh}$, kaksi merkitsevää numeroa kuten häviöprosentissa $20\,\%$ (epätarkin tieto).
 **Järkevyys:** Ilman häviötä energia olisi $40{,}0\,\text{kW} \cdot 24\,\text{h} = 960\,\text{kWh}$. Häviö on $1200\,\text{kWh} - 960\,\text{kWh} = 240\,\text{kWh}$ eli $20\,\%$ luvusta $1200\,\text{kWh}$. Tulos on $25\,\%$ suurempi kuin tarve.
 
+## fy2-7-L2-08
+**Kysytty:** kummassa verkossa häviää viikossa enemmän energiaa ja miksi.
+**Periaate:** Häviö on osuus verkkoon lähtevästä energiasta: $E_\text{häviö} = p\, E_\text{lähtö}$. Häviöprosentti ei yksin kerro häviävän energian määrää, koska verkkoihin lähtee eri määrät energiaa.
+**Mallivastaus:** Sähköverkossa häviää enemmän energiaa. Perustelu: häviö saadaan kertomalla lähtevä energia häviöosuudella. Pienempi prosentti voi siis antaa suuremman häviön, jos lähtevää energiaa on paljon enemmän. Lasketaan molemmat:
+
+Sähköverkko: $E_\text{häviö} = 0{,}040 \cdot 1000\,\text{MWh}$, eli $E_\text{häviö} = 40\,\text{MWh}$
+
+Kaukolämpöverkko: $E_\text{häviö} = 0{,}090 \cdot 300\,\text{MWh}$, eli $E_\text{häviö} = 27\,\text{MWh}$
+
+Sähköverkon häviö $40\,\text{MWh}$ on suurempi kuin kaukolämpöverkon $27\,\text{MWh}$. Näin on, vaikka kaukolämpöverkon häviöprosentti on yli kaksinkertainen. Häviävä energia muuttuu lämmöksi ympäristöön. Se ei katoa.
+
 ## fy2-7-L3-01
 **Annettu:** tarvittu energia perillä $E_\text{perille} = 600\,\text{MWh}$; häviö ennen $9{,}0\,\%$ ja jälkeen $6{,}0\,\%$ lähtevästä energiasta
 **Kysytty:** lämpölaitoksen syöttämän energian pieneneminen megawattitunteina

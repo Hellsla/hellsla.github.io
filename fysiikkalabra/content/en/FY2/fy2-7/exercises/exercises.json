@@ -234,6 +234,53 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy2-7-L2-08",
+      "level": 2,
+      "text": "In an example situation, $1000\\,\\text{MWh}$ of electrical energy is fed into the electricity grid per week, and $4.0\\,\\%$ of the energy sent out is lost there.\n\nIn the same area, $300\\,\\text{MWh}$ of thermal energy is fed into the district heating network per week, and $9.0\\,\\%$ of the energy sent out is lost there.\n\nIn which network is more energy lost per week?",
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "answer": "In the electricity grid",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "In the district heating network",
+          "feedback": "This compares only the loss percentages. The percentage tells the share of the energy sent out, but the energy lost also depends on how much energy is sent into the network."
+        },
+        {
+          "text": "In the electricity grid",
+          "feedback": "Correct: more than three times as much energy is sent into the electricity grid, so even a smaller share is larger as energy.",
+          "correct": true
+        },
+        {
+          "text": "The same in both",
+          "feedback": "The loss is the share times the energy sent out. In the electricity grid it is $0.040 \\cdot 1000\\,\\text{MWh} = 40\\,\\text{MWh}$ and in the district heating network $0.090 \\cdot 300\\,\\text{MWh} = 27\\,\\text{MWh}$, so the losses are not equal."
+        }
+      ],
+      "reason_prompt": "Which reason explains your answer?",
+      "reasons": [
+        {
+          "text": "The district heating network has the larger loss percentage, so its loss is also larger when it is measured as energy.",
+          "feedback": "This is a common misconception: a large percentage alone does not decide. The loss is a share of the energy sent out, so the amount of energy sent out matters too."
+        },
+        {
+          "text": "The loss is a share of the energy sent out, and much more energy goes into the electricity grid than into the heating network.",
+          "feedback": "Correct: the loss is the share times the energy sent out, so the amount of energy sent and the share together decide.",
+          "correct": true
+        },
+        {
+          "text": "The electricity grid has long power lines and the district heating network has short pipes, so more is lost in the electricity grid.",
+          "feedback": "The problem does not give any distances, and length alone does not decide. From the data of the problem, the loss is obtained by calculating from the energy sent out and the share."
+        },
+        {
+          "text": "Electrical energy travels at the speed of light, so more is lost in the electricity grid than in the district heating network.",
+          "feedback": "Energy does travel very fast in the electricity grid, but speed does not explain the size of the loss. The loss comes from heating, and its amount is obtained from the share and the energy sent out."
+        }
+      ]
     }
   ],
   "level3": [

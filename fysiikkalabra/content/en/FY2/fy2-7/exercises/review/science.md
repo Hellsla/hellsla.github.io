@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 01bbd76bd23df998
+CONTENT-HASH: 051ea6bef718bc5f
 Mode: full
-Round: 1
+Round: 2
 
 ## Blocking
 (none)
 
 ## Fixed
-- exercises.json L2-07 — "corrects the claim correctly" tautological; now "corrects the claim".
-- solutions.md L2-06 Principle — "same power line and same transmitted power ... stay the same" repeated "same"; reworded.
+- exercises.json L2-08 reasons — the correct reason was the longest (138 vs 107/132/126 characters), a length cue; shortened it to 126 and lengthened the first distractor to 118.
 
 ## Polish
 - (none)
 
 ## Checked
-- New tasks L1-06..08, L2-05..07, L3-04..05: ids, answers (4.8, 72, 9.62, 0.0625, 6.6, 4.1), units, tolerances, correct flags, choices and feedback, data table cells equal the Finnish; decimal point in JSON and LaTeX.
-- solutions.md: all numeric tokens equal fi per section (recomputed 4.8 %, 72 kW, 9.62 %, 0.0625 MW, 6.593 MWh, 42.09/1016 = 4.1 %).
-- Physics terms (transmission loss, loss power, efficiency, example data set) correct; Finnish Energy 2024 matches Energiateollisuus.
-- check_i18n en: 0 errors.
+- New task L2-08 (choice with reasons) vs reviewed fi: id, level, kind, answer, tolerance, three choices and four reasons, correct flags (grid; share-times-energy reason) identical.
+- Numbers equal fi: 1000 and 300 MWh, 4.0 and 9.0 %, 40 and 27 MWh recomputed (0.040*1000, 0.090*300); decimal point used in JSON and solutions.
+- Physics: loss = share times energy sent out; percentage alone does not decide; each distractor (percentage only, equal, distances, speed of light) is wrong and its feedback is right.
+- Length cue: reasons now 126 (correct), 118, 132, 126 chars; choices 31/23/16, correct in the middle; correct feedback is the shortest, as in fi.
+- check_i18n: nothing for fy2-7; build.py fy2-7 succeeds.
